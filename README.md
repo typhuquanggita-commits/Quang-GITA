@@ -15,6 +15,12 @@ theo **Bản Đồ Gia Đình Thịnh Vượng**.
 
 ---
 
+
+## Bắt đầu từ đâu
+
+Mọi việc thường ngày nằm ở **[docs/CACH_LAM.md](docs/CACH_LAM.md)** — một trang.
+Một lệnh làm hết: `node tools/phat-hanh.js`
+
 ## Chạy thử — ba cách
 
 | Cách | Làm gì | Dùng khi |

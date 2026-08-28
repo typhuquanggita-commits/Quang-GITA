@@ -66,7 +66,20 @@ function xoaBoKhoa() {
 fs.mkdirSync(RA, { recursive: true });
 const duong = path.join(RA, 'GITA_NapKhoa.gs');
 fs.writeFileSync(duong, noi);
-console.log('  Đã tạo: ' + path.relative(GOC, duong));
+
+/* Cách nhanh và an toàn hơn: dán thẳng vào ô Script Properties trên giao
+   diện Apps Script. Không có mã nào phải dán rồi xoá, nên không có nguy cơ
+   quên xoá. */
+const oValue = path.join(RA, 'GITA_KHOA_KHO.txt');
+fs.writeFileSync(oValue, JSON.stringify(bo));
+
 console.log('  Gói khoá: ' + Object.keys(bo).join(' '));
-console.log('\n  Dán vào Apps Script → chạy napBoKhoaMotLan() → XOÁ tệp khỏi dự án.');
-console.log('  ⚠ Tệp mang khoá thật. giay-phep/ nằm trong .gitignore.');
+console.log('\n  CÁCH 1 — nhanh và an toàn hơn, không phải dán mã rồi xoá:');
+console.log('    Apps Script → Project Settings → Script Properties → Add script property');
+console.log('      Property : GITA_KHOA_KHO');
+console.log('      Value    : dán toàn bộ nội dung ' + path.relative(GOC, oValue));
+console.log('    → Save script properties. Xong.');
+console.log('\n  CÁCH 2 — nếu quen chạy hàm hơn:');
+console.log('    Dán ' + path.relative(GOC, duong) + ' vào dự án → chạy napBoKhoaMotLan()');
+console.log('    → thấy log "Đã nạp ' + Object.keys(bo).length + ' khoá" → XOÁ TỆP ĐÓ khỏi dự án ngay.');
+console.log('\n  ⚠ Cả hai tệp đều mang khoá thật. giay-phep/ nằm trong .gitignore.');

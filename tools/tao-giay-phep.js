@@ -28,28 +28,81 @@ const RA = path.join(GOC, 'giay-phep');
 
 const TAT_CA = ['nen', 'nghe', 'tang1', 'tang2', 'tang3', 'tang4', 'tang5'];
 
-const dv = process.argv.slice(2);
-const nguoi = dv[0];
-if (!nguoi) {
-  console.error('Thiếu tên người được cấp.\n' +
-    '  node tools/tao-giay-phep.js "Tên người dùng" [số tháng] [gói…]');
-  process.exit(1);
-}
-const thang = Number(dv[1]) > 0 ? Number(dv[1]) : 24;
-const xin = dv.slice(2).filter(g => TAT_CA.indexOf(g) >= 0);
-const goi = xin.length ? xin : TAT_CA;
-
 if (!fs.existsSync(KHOA)) {
   console.error('Chưa có kho/khoa.json. Chạy trước: node tools/ma-hoa-kho.js');
   process.exit(1);
 }
 const bo = JSON.parse(fs.readFileSync(KHOA, 'utf8')).khoa;
-const thieu = goi.filter(g => !bo[g]);
-if (thieu.length) {
-  console.error('Bộ khoá thiếu gói: ' + thieu.join(', '));
-  process.exit(1);
+
+const dv = process.argv.slice(2);
+
+/* ─── Cấp hàng loạt từ một tệp CSV ───
+   Mỗi dòng: tên,số tháng,gói gói gói
+   Ví dụ:
+     Coach Minh,12,nen nghe tang1 tang2
+     Tư vấn Lan,12,nen nghe
+     Phụ huynh Hà,6,nen tang1
+   Dòng trống và dòng bắt đầu bằng # được bỏ qua. */
+const DS = dv.indexOf('--danh-sach');
+if (DS >= 0) {
+  const tep = dv[DS + 1];
+  if (!tep || !fs.existsSync(tep)) {
+    console.error('Không thấy tệp danh sách: ' + tep);
+    console.error('  node tools/tao-giay-phep.js --danh-sach doi-ngu.csv');
+    process.exit(1);
+  }
+  const dong = fs.readFileSync(tep, 'utf8').split('\n')
+    .map(d => d.trim()).filter(d => d && d[0] !== '#');
+  let n = 0, hong = 0;
+  console.log('  Cấp ' + dong.length + ' giấy phép từ ' + path.basename(tep) + '\n');
+  dong.forEach(d => {
+    const c = d.split(',').map(x => x.trim());
+    if (!c[0]) return;
+    const t = Number(c[1]) > 0 ? Number(c[1]) : 24;
+    const xin = (c[2] || '').split(/\s+/).filter(x => x);
+    const g = xin.filter(x => TAT_CA.indexOf(x) >= 0);
+    const la = xin.filter(x => TAT_CA.indexOf(x) < 0);
+    try {
+      /* Gõ sai tên gói thì DỪNG dòng đó. Không bao giờ im lặng rơi về
+         cấp toàn bộ — một lỗi gõ sẽ mở hết kho cho người không được phép. */
+      if (la.length) throw new Error('tên gói không có thật: ' + la.join(' '));
+      if (xin.length && !g.length) throw new Error('không gói nào hợp lệ');
+      const r = capMot(c[0], t, g.length ? g : TAT_CA);
+      console.log('  ✓ ' + r.so + '  ' + c[0].padEnd(24) + r.phamVi.join(' '));
+      n++;
+    } catch (e) {
+      console.log('  ✗ ' + c[0].padEnd(24) + e.message);
+      hong++;
+    }
+  });
+  console.log('\n  Đã cấp ' + n + ' giấy phép' + (hong ? ', ' + hong + ' dòng hỏng' : '') +
+    ' vào ' + path.relative(GOC, RA) + '/');
+  console.log('  ⚠ Mỗi tệp mang khoá thật và mang dấu truy nguồn riêng.');
+  console.log('    Gửi đúng một tệp cho đúng một người. Đừng gửi chung một tệp cho cả nhóm.');
+  process.exit(hong ? 1 : 0);
 }
 
+const nguoi = dv[0];
+if (!nguoi) {
+  console.error('Thiếu tên người được cấp.\n' +
+    '  node tools/tao-giay-phep.js "Tên người dùng" [số tháng] [gói…]\n' +
+    '  node tools/tao-giay-phep.js --danh-sach doi-ngu.csv');
+  process.exit(1);
+}
+const thang = Number(dv[1]) > 0 ? Number(dv[1]) : 24;
+const xinCLI = dv.slice(2).filter(g => g);
+const laCLI = xinCLI.filter(g => TAT_CA.indexOf(g) < 0);
+if (laCLI.length) {
+  console.error('Tên gói không có thật: ' + laCLI.join(' '));
+  console.error('Gói hợp lệ: ' + TAT_CA.join(' '));
+  process.exit(1);
+}
+const goi = xinCLI.length ? xinCLI : TAT_CA;
+
+
+function capMot(nguoi, thang, goi) {
+const thieu2 = goi.filter(g => !bo[g]);
+if (thieu2.length) throw new Error('Bộ khoá thiếu gói: ' + thieu2.join(', '));
 const hetHan = new Date();
 hetHan.setMonth(hetHan.getMonth() + thang);
 
@@ -72,11 +125,14 @@ const ten = 'giay-phep-' + nguoi.normalize('NFD').replace(/[̀-ͯ]/g, '')
   .replace(/đ/gi, 'd').replace(/[^A-Za-z0-9]+/g, '-').replace(/^-|-$/g, '').toLowerCase() + '.json';
 const duong = path.join(RA, ten);
 fs.writeFileSync(duong, JSON.stringify(gp, null, 2));
+return { so: gp.soGiayPhep, tep: duong, phamVi: goi, hetHan: hetHan };
+}
 
-console.log('  Đã cấp: ' + gp.soGiayPhep);
+const kq = capMot(nguoi, thang, goi);
+console.log('  Đã cấp: ' + kq.so);
 console.log('  Cho   : ' + nguoi);
 console.log('  Phạm vi: ' + goi.join(' '));
-console.log('  Hết hạn: ' + hetHan.toLocaleDateString('vi-VN'));
-console.log('  Tệp   : ' + path.relative(GOC, duong));
+console.log('  Hết hạn: ' + kq.hetHan.toLocaleDateString('vi-VN'));
+console.log('  Tệp   : ' + path.relative(GOC, kq.tep));
 console.log('\n  Mở ứng dụng máy tính → Trợ giúp → Nạp giấy phép → chọn tệp này.');
 console.log('  ⚠ giay-phep/ nằm trong .gitignore. Đừng đẩy tệp này lên kho mã.');
