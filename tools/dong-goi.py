@@ -57,9 +57,14 @@ html = html.replace('<script>\nG.boot();',
   'G.MAU_NHUNG = ' + mau + ';\n'
   'G.napKho = function(){ G.KHO.cheDoMau = true; G.KHO.daNap = [];\n'
   '  G.KICHBAN = G.MAU_NHUNG.KICHBAN || []; G.PHACDO = G.MAU_NHUNG.PHACDO || [];\n'
-  '  G.MOTHUC = G.MAU_NHUNG.MOTHUC || []; return Promise.resolve(); };\n'
+  '  Object.keys(G.MAU_NHUNG).forEach(function(k){ G[k] = G.MAU_NHUNG[k]; });\n'
+  '  G.MOTHUC = G.MAU_NHUNG.MOTHUC || []; G.TEST750 = G.MAU_NHUNG.TEST750 || [];\n'
+  '  return Promise.resolve(); };\n'
+  '/* Bản giới thiệu mở hết đường đi để xem được toàn bộ khung; màn hình nào\n'
+  '   cần nội dung đã cấp phép thì tự hiện màn xin cấp phép. */\n'
+  'G.coGoi = function(){ return true; };\n'
   'G.boot();')
 
-out = 'GITA365_v71_GIOI_THIEU.html'
+out = 'GITA365_v72_GIOI_THIEU.html'
 open(out, 'w', encoding='utf-8').write(html)
 print('%s · %d KB' % (out, os.path.getsize(out) // 1024))

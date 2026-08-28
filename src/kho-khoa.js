@@ -111,10 +111,9 @@ function napMau() {
   return fetch('kho/mau.json').then(function (r) { return r.json(); })
     .then(function (m) {
       G.KHO.cheDoMau = true;
-      G.KICHBAN = m.KICHBAN || [];
-      G.PHACDO = m.PHACDO || [];
-      G.MOTHUC = m.MOTHUC || [];
-      G.TEST750 = m.TEST750 || [];
+      Object.keys(m).forEach(function(k){ G[k] = m[k]; });
+      G.KICHBAN = m.KICHBAN || []; G.PHACDO = m.PHACDO || [];
+      G.MOTHUC = m.MOTHUC || []; G.TEST750 = m.TEST750 || [];
     })
     .catch(function () {
       G.KHO.cheDoMau = true; G.KICHBAN = []; G.PHACDO = []; G.MOTHUC = []; G.TEST750 = [];

@@ -369,8 +369,17 @@ function render(){
     var lK = document.getElementById('left'); if(lK) lK.innerHTML = leftNav();
     save(); return;
   }
-  var fn = G.VIEWS[G.S.view];
-  main.innerHTML = '<div class="view">' + fn() + '</div>';
+  /* Màn hình nào cũng phải dựng được. Thiếu nội dung đã cấp phép thì hiện
+     màn xin cấp phép, không bao giờ để trắng trang hoặc vỡ ứng dụng. */
+  var fn = G.VIEWS[G.S.view], noiDung;
+  try {
+    noiDung = fn();
+    if(!noiDung || String(noiDung).length < 40) throw new Error('Màn hình chưa có nội dung');
+  } catch(e) {
+    console.warn('[GITA] ' + G.S.view + ': ' + e.message);
+    noiDung = G.canCapPhep(goiCan || 'nen');
+  }
+  main.innerHTML = '<div class="view">' + noiDung + '</div>';
   if(G.watermark) G.watermark();
   if(G.dem) G.dem();
   try{ if(history.replaceState) history.replaceState(null,'','#'+G.S.view); }catch(e){}

@@ -78,8 +78,16 @@ fs.writeFileSync(path.join(RA, 'khoa.json'), JSON.stringify({
   khoa
 }, null, 2));
 
-/* ─── Gói mẫu công khai: đủ để xem giao diện, không lộ kho ─── */
+/* ─── Gói mẫu công khai: đủ để xem giao diện, không lộ kho ───
+   Chỉ những phần GITA 365 vẫn nói ra ngoài khi giới thiệu: câu chuyện
+   chuyển hoá, lộ trình năm tầng, kiến trúc trăm năm, chuỗi trải nghiệm,
+   cách ghi nhận và nhận diện thương hiệu. Phần nghề — 1.000 kịch bản,
+   220 phác đồ, 42 mô thức, ngôn từ dẫn dắt, tình huống, văn bản, tài
+   chính, quản trị — KHÔNG nằm ở đây. */
+const MO_RA = ['CHUYENDICH', 'LOTRINH', 'TIERS', 'TAMNHIN100', 'TANG100', 'WOW',
+  'NHATBAN', 'LEVELS', 'DIEM', 'HUYHIEU', 'QUA_DANG', 'BRAND', 'BAIHOC'];
 const mau = {
+  ...Object.fromEntries(MO_RA.map(k => [k, G[k]]).filter(([, v]) => v !== undefined)),
   KICHBAN: (G.KICHBAN || []).filter(k => k.tang === 'T1').slice(0, 8)
     .map(k => ({ ...k, mo: (k.mo || '').slice(0, 90) + '… [cần cấp phép]', chot: undefined, khong: undefined })),
   PHACDO: (G.PHACDO || []).slice(0, 6)
