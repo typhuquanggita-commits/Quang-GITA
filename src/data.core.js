@@ -314,7 +314,7 @@ G.NAV = [
     {v:'ngon-tu',     t:'Ngôn từ dẫn dắt',             h:'Sáu nhịp · mẫu câu dùng được ngay',  ic:'lightning', star:1, perm:'nghe_chung', capMo:'nghe'},
     {v:'nhan-dien',   t:'Bộ nhận diện GITA',            h:'Logo · ba màu · chữ · luật dùng',    ic:'star', capMo:'chung', star:1},
     {v:'thuong-hieu', t:'Nhận diện thương hiệu',       h:'Màu · chữ · giọng nói · điều cấm kỵ',ic:'star', perm:'nghe_chung', capMo:'nghe'},
-    {v:'tro-ly',      t:'Trợ lý GITA',                 h:'Hỏi bất cứ điều gì, trích dẫn nguồn',ic:'spark', perm:'nghe_chung', capMo:'nghe'}
+    {v:'tro-ly',      t:'Trợ lý GITA',                 h:'Hỏi bất cứ điều gì, trích dẫn nguồn',ic:'spark', capMo:'chung', star:1}
    ]},
 
   {id:'g4',no:'04',ic:'flame',c:'#E4232B',

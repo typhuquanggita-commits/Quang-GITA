@@ -856,6 +856,69 @@ const { chromium } = require(PW);
       may.slice(0, 2).join(' | ') || 'sạch');
   }
 
+  /* ═══════════ 16 · TRỢ LÝ GITA ═══════════
+     Trợ lý là đường có thể gây hại nếu hỏng: nó nói chuyện với gia đình
+     đang tổn thương. Mục này canh cả ba luật cứng và đường an toàn. */
+  console.log('\n16 · TRỢ LÝ GITA');
+  {
+    const r = await p.evaluate(() => {
+      const cu = G.S.roleObj;
+      function thu(vai, hoi){
+        G.S.roleObj = G.roleById(vai);
+        const d = G.aiTraLoi(hoi);
+        return {khan:d.khan, y:d.y && d.y.ma, n:d.nguon.length, loi:d.loi || '', chuaCo:d.chuaCo};
+      }
+      const ra = {
+        phVaoDuoc: (function(){ G.S.roleObj = G.roleById('R13');
+          const h = G.VIEWS['tro-ly'](); return /id="aiQ"/.test(h); })(),
+        dienThoai: thu('R13','con ôm điện thoại cả ngày'),
+        tuGiac:    thu('R13','con không tự giác phải nhắc mãi'),
+        khan1:     thu('R13','con tôi nói muốn chết'),
+        khan2:     thu('R13','con tôi rạch tay'),
+        khan3:     thu('R14','em muốn tự tử'),
+        vuVo:      thu('R13','xyzzy qwerty khong co gi'),
+        nghe:      thu('R07','phác đồ ôm điện thoại')
+      };
+      /* lưới an toàn phải chạy kể cả khi kho chưa mở */
+      const kb = G.KICHBAN_AI; G.KICHBAN_AI = null;
+      G.S.roleObj = G.roleById('R13');
+      const d = G.aiTraLoi('con tôi muốn chết');
+      ra.khanKhongKho = {khan:d.khan, coLoi:!!(d.loi && d.loi.length > 40)};
+      G.KICHBAN_AI = kb; G.S.roleObj = cu;
+      return ra;
+    });
+
+    bao(r.phVaoDuoc, 'phụ huynh mở được trợ lý — không khoá sau kho nghề');
+    bao(r.dienThoai.n >= 3 && r.tuGiac.n >= 3, 'trợ lý tìm được tư liệu cho câu hỏi thường ngày',
+      r.dienThoai.n + ' · ' + r.tuGiac.n + ' nguồn');
+    bao(!!r.dienThoai.y && !!r.tuGiac.y, 'trợ lý đọc được ý định câu hỏi',
+      r.dienThoai.y + ' · ' + r.tuGiac.y);
+
+    /* Ba câu có dấu hiệu khẩn: PHẢI dừng và chuyển người thật */
+    bao(r.khan1.khan && r.khan2.khan && r.khan3.khan,
+      'dấu hiệu khẩn thì DỪNG trả lời tự động, chuyển người thật');
+    bao(r.khan1.n === 0 && r.khan2.n === 0,
+      'câu khẩn KHÔNG kèm tư liệu — không để ai tự xử lý một mình');
+    bao(/08\.5555\.4688/.test(r.khan1.loi) && /115/.test(r.khan1.loi),
+      'câu khẩn có số gọi người thật và số cấp cứu');
+    bao(r.khanKhongKho.khan && r.khanKhongKho.coLoi,
+      'kho chưa mở vẫn bắt được dấu hiệu khẩn — lưới an toàn không phụ thuộc dữ liệu');
+
+    bao(r.vuVo.chuaCo, 'không có trong kho thì nói thẳng là chưa có, không đoán');
+    bao(r.nghe.n >= 3, 'người trong nghề tra được kho nghề', r.nghe.n + ' nguồn');
+
+    /* Bộ kịch bản phải nằm ở gói NỀN — mọi tài khoản đều cần, nhất là phần khẩn */
+    const fs5 = require('fs'), px5 = require('path');
+    const mh = fs5.readFileSync(px5.join(__dirname, 'ma-hoa-kho.js'), 'utf8');
+    const nen = mh.slice(mh.indexOf('const NEN'), mh.indexOf('const NGHE'));
+    bao(nen.indexOf('KICHBAN_AI') > 0, 'bộ kịch bản trợ lý nằm ở gói nền, mọi vai đều nhận được');
+
+    /* Trợ lý không được gọi ra mạng */
+    const tl = fs5.readFileSync(px5.join(__dirname, '..', 'src', 'tro-ly-ai.js'), 'utf8');
+    bao(!/fetch\(|XMLHttpRequest|WebSocket/.test(tl),
+      'trợ lý chạy hoàn toàn trong máy — không gọi ra mạng, không tốn phí API');
+  }
+
   console.log('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành'));
   await b.close();
   process.exit(loi ? 1 : 0);

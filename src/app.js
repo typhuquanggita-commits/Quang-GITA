@@ -519,6 +519,8 @@ function topBar(){
     '<button id="search" data-act="cmd">'+ic('search')+'<span>'+h(G.L('search'))+'</span><kbd>Ctrl K</kbd></button>'+
     '<span class="grow"></span>'+
     '<span class="chip deskonly" style="color:'+r.c+';border-color:'+r.c+'55">'+ic('shield','w-3 h-3')+h(r.short)+' · LV'+r.lv+'</span>'+
+    '<button class="tbtn" data-v="tro-ly" aria-label="Trợ lý GITA" title="Trợ lý GITA" '+
+      'style="color:var(--gita-ink);border-color:var(--gita-vien-1)">'+ic('spark')+'</button>'+
     '<button class="tbtn" data-act="doi-nen" aria-label="Đổi nền sáng tối" title="Đổi nền sáng / tối">'+
       ic(G.NEN==='toi'?'sun':'moon')+'</button>'+
     '<button class="tbtn" data-act="lang" aria-label="Language" style="font-size:11px;font-weight:800;letter-spacing:.04em">'+
@@ -622,95 +624,10 @@ function closeMobile(){
 }
 
 /* ═══════════════ TRỢ LÝ GITA ═══════════════ */
-G.ask = function(q){
-  q = String(q||'').trim();
-  var out = document.getElementById('aiOut'); if(!out) return;
-  if(!q){ out.innerHTML=''; return; }
-  var key = q.toLowerCase();
-  var hits = [];
-  (G.MOTHUC||[]).forEach(function(m){
-    if((m.title+' '+(m.keywords||[]).join(' ')).toLowerCase().indexOf(key.split(' ')[0])>=0)
-      hits.push({t:m.title, s:String(m.summary||'').slice(0,220), src:'Mô thức '+m.id, c:'#2166CE', go:'mo-thuc'});
-  });
-  G.BAIHOC.forEach(function(b){
-    if((b.ten+' '+(b.nguyenLy||'')).toLowerCase().indexOf(key.split(' ')[0])>=0)
-      hits.push({t:b.ten, s:String(b.nguyenLy||'').slice(0,220), src:'Bài học '+b.id, c:'#0B7350', go:'tu-duy'});
-  });
-  (G.PHACDO||[]).forEach(function(p){
-    if((p.ten||'').toLowerCase().indexOf(key.split(' ')[0])>=0)
-      hits.push({t:p.ten, s:(p.giaiPhap||p.nguyenNhan||''), src:'Phác đồ '+p.ma, c:'#2166CE', go:'phac-do'});
-  });
-  (G.KICHBAN||[]).forEach(function(k){
-    if((k.ten||'').toLowerCase().indexOf(key.split(' ')[0])>=0 && hits.length<40)
-      hits.push({t:k.ten, s:String(k.mo||k.muc||'').slice(0,220), src:'Kịch bản '+k.ma+' · '+k.tang, c:'#5140B4', go:'kich-ban'});
-  });
-  var f = G.myFamily(), t = G.tierOf(f.tier);
-  var head = '<div class="card mb" style="border-color:var(--gita-vien-1)">'+
-    '<div class="row mb"><span style="color:var(--gold-ink)">'+ic('spark','w-4 h-4')+'</span>'+
-    '<b>Trả lời trong phạm vi '+h(t.code+' · '+G.tname(t))+'</b></div>'+
-    '<p class="sm dim" style="line-height:1.7">'+h(t.note)+' '+
-    'Với câu hỏi của anh chị, hệ thống tìm thấy '+hits.length+' tư liệu liên quan trong kho. '+
-    'Chỗ nào kho chưa xác nhận, trợ lý nói rõ là chưa chắc chắn thay vì đoán.</p></div>';
+/* Trợ lý cũ chỉ so khớp TỪ ĐẦU TIÊN của câu hỏi nên gần như không tìm
+   được gì. Đã thay bằng src/tro-ly-ai.js — tách từ, bỏ dấu, chấm điểm. */
+G.ask = function(q){ if(G.aiHoi) G.aiHoi(q); };
 
-  /* Đọc miền G–I–T–A của câu hỏi và chuyển tới người phù hợp nhất */
-  var mienTu = {
-    I:['cãi','giận','chán','không muốn','bỏ cuộc','tự ti','sợ','buồn','niềm tin','động lực','khát khao'],
-    T:['cách','phương pháp','kỹ năng','học thế nào','không biết làm','hệ thống','kế hoạch','lịch'],
-    A:['điện thoại','bạn bè','môi trường','thói quen','nhắc','không gian','game','mạng xã hội'],
-    G:['mục tiêu','muốn gì','định hướng','tương lai','ước mơ','kỳ tích']
-  };
-  var mien = 'G', diem = 0;
-  Object.keys(mienTu).forEach(function(k){
-    var n = 0; mienTu[k].forEach(function(w){ if(key.indexOf(w)>=0) n++; });
-    if(n > diem){ diem = n; mien = k; }
-  });
-  var gapTu = ['cãi','xung đột','bỏ học','bỏ nhà','tuyệt vọng','không chịu nổi','đánh nhau','trầm cảm'];
-  var gap = gapTu.some(function(w){ return key.indexOf(w)>=0; });
-  var ung = (G.KPI||[]).filter(function(k2){
-    return k2.manh.indexOf(mien)>=0 && k2.tang.indexOf(t.code)>=0 && k2.tai < k2.tran;
-  });
-  if(!ung.length) ung = (G.KPI||[]).filter(function(k2){ return k2.manh.indexOf(mien)>=0 && k2.tai<k2.tran; });
-  if(!ung.length) ung = (G.KPI||[]).slice(0,1);
-  var best = ung.sort(function(a,b){ return (b.hailong+b.gonut-b.phanHoi) - (a.hailong+a.gonut-a.phanHoi); })[0];
-  var mm = G.GITA.filter(function(x){return x.k===mien;})[0] || G.GITA[0];
-
-  if(best){
-    head += '<div class="card mb" style="border-color:'+best.c+'40;background:'+best.c+'0d">'+
-      '<div class="row wrap" style="gap:8px;margin-bottom:9px">'+
-      '<span style="color:'+best.c+'">'+ic('users','w-4 h-4')+'</span>'+
-      '<b>'+(gap?'Câu này vượt phạm vi trợ lý — đã chuyển tới người thật ngay':'Đã báo cho người đồng hành phù hợp nhất')+'</b>'+
-      U.chip('Miền '+mien+' · '+mm.short, mm.c)+
-      (gap?U.chip('Độ gấp cao','#C2151C'):'')+'</div>'+
-      '<div class="row wrap" style="gap:14px">'+
-      '<div class="grow" style="min-width:180px"><b class="sm" style="display:block">'+h(best.ten)+'</b>'+
-      '<span class="tiny muted">'+h(best.vai)+' · '+h(best.note)+'</span></div>'+
-      '<div style="display:flex;gap:16px">'+
-      '<div class="center"><b class="mono" style="color:'+best.c+'">'+best.phanHoi+"'</b><div class=\"tiny muted\">PHẢN HỒI</div></div>"+
-      '<div class="center"><b class="mono" style="color:'+best.c+'">'+best.hailong+'</b><div class="tiny muted">HÀI LÒNG</div></div>'+
-      '<div class="center"><b class="mono" style="color:'+best.c+'">'+best.tai+'/'+best.tran+'</b><div class="tiny muted">TẢI</div></div>'+
-      '</div></div>'+
-      (gap?'<p class="sm mt2" style="color:var(--bad);line-height:1.6">Trợ lý không trả lời câu này. Việc đang leo thang cần người thật ngồi cùng — coach sẽ liên hệ trong hôm nay.</p>':'')+
-      '</div>';
-  }
-  if(gap){ out.innerHTML = head; return; }
-  if(!hits.length){
-    out.innerHTML = head + U.empty('Chưa tìm thấy tư liệu khớp',
-      'Thử một từ khoá ngắn hơn — ví dụ "thói quen", "điện thoại", "họp gia đình", "trao quyền".');
-    return;
-  }
-  out.innerHTML = head + hits.slice(0,8).map(function(x){
-    return '<div class="card pad-sm mb" style="border-color:'+x.c+'26">'+
-      '<div class="row" style="gap:8px;margin-bottom:6px">'+U.chip(x.src,x.c)+'</div>'+
-      '<b class="sm" style="display:block;margin-bottom:6px">'+h(x.t)+'</b>'+
-      '<p class="sm muted" style="line-height:1.6">'+h(x.s)+'…</p>'+
-      '<button class="btn ghost sm mt" data-go="'+h(x.go)+'">Mở kệ tư liệu '+ic('arrow')+'</button></div>';
-  }).join('');
-};
-
-/* ═══════════════ CỔNG IN — MỘT CỬA DUY NHẤT ═══════════════
-   Trước đây window.print() được gọi thẳng ở bốn chỗ mà không kiểm quyền,
-   nên phụ huynh và học viên in được hồ sơ chuyên môn. Nay mọi đường in
-   đều phải đi qua hàm này. */
 G.coTheIn = function(){ return G.can('xuat_pdf'); };
 G.inTrang = function(nhan){
   if(!G.coTheIn()){
@@ -1033,7 +950,7 @@ on('[data-act]', function(el){
     document.querySelectorAll('[data-journal]').forEach(function(t){ G.S.journal[t.getAttribute('data-journal')] = t.value; });
     save(); U.toast('Đã ghi nhật ký tối nay. Bảy tối là có một mô thức.','ok');
   }
-  else if(a==='ai-ask') G.ask(document.getElementById('aiQ').value);
+  else if(a==='ai-ask'){ var oq=document.getElementById('aiQ'); if(oq){ G.aiHoi(oq.value); oq.value=''; } }
   else if(a==='mic') G.mic();
   else if(a==='kb-more'){
     var list = document.getElementById('kbList');
@@ -1172,7 +1089,9 @@ function sparks(){
 /* ═══════════════ PHẠM VI CẤP PHÉP THEO MÀN HÌNH ═══════════════
    Màn hình nào cần gói nội dung nào. Không có gói thì hiện màn hình
    xin cấp phép, không hiện nội dung. */
-var GOI_NGHE = ['kho','phac-do','kich-ban','mo-thuc','sach','ngon-tu','tro-ly','diem-cham',
+/* 'tro-ly' KHÔNG nằm ở đây: trợ lý mở cho mọi vai, còn thứ nó trả về thì
+   đã lọc theo gói được cấp — chặn nội dung chứ không chặn cái cửa. */
+var GOI_NGHE = ['kho','phac-do','kich-ban','mo-thuc','sach','ngon-tu','diem-cham',
   'tuvan-deck','hai-long','tai-lieu-khach','kiem-thu','chuan-1000','ai-dieu-phoi',
   'an-toan-du-lieu','hoc-tu-lon','tang-quyen','vong-doi-tk','hang-tai-lieu','dau-mat','dong-chay',
   'tinh-huong','bando-tuvan','bando-coach','van-ban','tai-chinh-qt','thanh-tra',
