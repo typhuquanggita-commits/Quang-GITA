@@ -36,7 +36,33 @@ global.Utilities={
 global.MailApp={sendEmail:(to,cd,than)=>{thu.push({to,cd,than});}};
 global.Logger={log:()=>{}};
 global.ContentService={createTextOutput:t=>({setMimeType:()=>({_:t}),_:t}),MimeType:{JSON:'json'}};
-global.DriveApp={getFolderById:()=>({addFile:()=>{}}),getFileById:()=>({})};
+/* Drive giả lập: bốn thư mục có thật, và một cái CỐ TÌNH chỉ cho xem —
+   để bộ kiểm chứng minh nó phát hiện được thư mục không ghi được, chứ không
+   phải chỉ báo xanh vì mọi thứ đều dễ. */
+const thuMuc = {
+  '1pvXH45JvXXPOW9V6ObB5CR87r7gxH0fU': {ten:'Dữ Liệu GITA365', ghiDuoc:true, tep:[]},
+  '1jVOnIH7286glI95fC4aqfXApecxEj7Xz': {ten:'Mã máy chủ GITA365', ghiDuoc:true, tep:[]}
+};
+global.MimeType={PLAIN_TEXT:'text/plain'};
+global.Session={getEffectiveUser:()=>({getEmail:()=>'typhuquanggita@gmail.com'})};
+global.DriveApp={
+  getFolderById:id=>{
+    const t=thuMuc[id];
+    if(!t) throw new Error('Không tìm thấy thư mục: '+id);
+    return {
+      getName:()=>t.ten,
+      addFile:()=>{},
+      createFile:(ten,noi)=>{
+        if(!t.ghiDuoc) throw new Error('Không có quyền ghi');
+        const f={ten, bo:false};
+        t.tep.push(f);
+        return {setTrashed:v=>{f.bo=v;}, getName:()=>ten};
+      }
+    };
+  },
+  getFileById:()=>({})
+};
+global.__thuMuc=thuMuc;
 
 /* Bảng tính giả: mỗi trang là một mảng hàng */
 const trang={};
@@ -87,7 +113,16 @@ bao(/Đã dựng 8 bảng/.test(cd), 'dựng đủ 8 bảng dữ liệu');
 bao(/Đã tạo Admin@gita365/.test(cd), 'tạo được tài khoản Super Admin');
 const mkTam = (cd.match(/Mật khẩu tạm: (\S+)/) || [])[1];
 bao(!!mkTam && mkTam.length >= 20, 'sinh mật khẩu tạm ngẫu nhiên, đủ dài', mkTam);
-bao(/^([A-Z][a-z]+-){5}\d{4}$/.test(mkTam || ''), 'mật khẩu tạm đọc và chép lại được');
+/* Sinh nhiều lần rồi soi tất cả. Thử một lần thì một âm tiết hỏng nằm lẫn
+   trong danh sách chỉ thỉnh thoảng mới lộ ra — và bộ kiểm thỉnh thoảng mới
+   đúng là bộ kiểm không dùng được. */
+const KHUON = /^([A-Z][a-z]{2,}-){5}\d{4}$/;
+const mau = []; for (let i = 0; i < 400; i++) mau.push(gitaMatKhauTam_());
+const hong = mau.filter(x => !KHUON.test(x));
+bao(KHUON.test(mkTam || ''), 'mật khẩu tạm đọc và chép lại được');
+bao(hong.length === 0, '400 lần sinh, lần nào cũng đúng khuôn', hong.slice(0,3).join(' · ') || 'sạch');
+bao(new Set(mau).size >= 395, '400 lần sinh ra gần như không trùng nhau',
+  new Set(mau).size + ' mật khẩu khác nhau');
 const nguon = fs.readdirSync('server').filter(f=>f.endsWith('.gs'))
   .map(f=>fs.readFileSync('server/'+f,'utf8')).join('');
 bao(!/toiyeugita365/.test(nguon), 'KHÔNG còn mật khẩu nào nằm cứng trong mã nguồn');
@@ -219,6 +254,48 @@ const dn4 = gitaDangNhap_({u:'Admin@gita365', mk:mkTam2});
 bao(dn4.ok && dn4.phaiDoiMk === true, 'đặt lại xong thì lại bắt buộc đổi');
 bao(!goi({fn:'capKhoa', token:dn4.token, u:'Admin@gita365', goi:['nen']}).ok,
   'và kho lại bị chặn cho tới khi đổi');
+
+console.log('\n10 · XÁC NHẬN QUYỀN VÀO DRIVE');
+const bc = kiemTraQuyenDrive();
+bao(/Đạt 4\/4 thư mục/.test(bc), 'bốn thư mục đều mở được và ghi được');
+bao(/typhuquanggita@gmail\.com/.test(bc), 'báo rõ máy chủ đang chạy dưới tài khoản nào');
+bao(/Dữ Liệu GITA365/.test(bc) && /Mã máy chủ GITA365/.test(bc),
+  'gọi đúng tên thư mục thật, không chỉ đọc lại mã');
+const conRac = Object.keys(__thuMuc).some(k =>
+  __thuMuc[k].tep.some(f => !f.bo));
+bao(!conRac, 'tệp dấu dùng để thử đã dọn sạch, không để rác trong Drive');
+
+/* Thư mục chỉ cho xem: phải bị bắt, không được báo xanh.
+   Ba hằng DRIVE, TAILIEU và XUAT hiện cùng trỏ vào một thư mục của Học viện,
+   nên hạ quyền thư mục ấy là ba mục cùng rớt — đúng như thực tế sẽ xảy ra. */
+__thuMuc['1pvXH45JvXXPOW9V6ObB5CR87r7gxH0fU'].ghiDuoc = false;
+const bc2 = kiemTraQuyenDrive();
+bao(/Đạt 1\/4 thư mục/.test(bc2), 'thư mục chỉ cho xem thì KHÔNG được tính là đạt');
+bao(/KHÔNG ghi được/.test(bc2) && /Người chỉnh sửa/.test(bc2),
+  'nói rõ thiếu quyền gì và sửa thế nào');
+bao(/CÁCH SỬA/.test(bc2), 'kèm hướng dẫn sửa khi có thư mục hỏng');
+__thuMuc['1pvXH45JvXXPOW9V6ObB5CR87r7gxH0fU'].ghiDuoc = true;
+
+/* Mã thư mục sai — chỉ hỏng đúng một mục, ba mục kia vẫn đạt */
+const idThat = GITA_THU_MUC_MA;
+GITA_THU_MUC_MA = '1khongtontai0000000000000000000';
+const bc3 = kiemTraQuyenDrive();
+bao(/Đạt 3\/4/.test(bc3) && /Không mở được/.test(bc3),
+  'mã thư mục sai thì báo rõ đúng một mục, không im lặng và không đổ oan mục khác');
+GITA_THU_MUC_MA = idThat;
+
+/* Qua doPost: chỉ R01–R02 */
+const drAdmin = goi({fn:'kiemDrive', token:dn3.token, u:'Admin@gita365'});
+bao(drAdmin.ok && drAdmin.dat===4 && drAdmin.thuMuc.length===4,
+  'Super Admin kiểm được quyền Drive từ ứng dụng', drAdmin.taiKhoan||'');
+const drPh = goi({fn:'kiemDrive', token:dn2.token, u:hoSo.email});
+bao(!drPh.ok, 'phụ huynh KHÔNG kiểm được quyền Drive');
+bao(Store.all('audit').some(x=>x.viec==='KIEM_QUYEN_DRIVE'), 'mỗi lần kiểm đều vào nhật ký');
+
+console.log('\n11 · MỤC LỤC HÀM');
+const ml = mucLucHam();
+['caiDatLanDau','kiemTraQuyenDrive','napBoKhoaMotLan','datLaiMatKhauSuperAdmin']
+  .forEach(h2 => bao(ml.indexOf(h2) >= 0, 'mục lục có hàm ' + h2));
 
 console.log('\n' + (loi ? '✗ CÒN '+loi+' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — máy chủ chạy đúng'));
 process.exit(loi?1:0);

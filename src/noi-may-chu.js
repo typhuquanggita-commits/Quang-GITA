@@ -59,6 +59,23 @@ G.thuMayChu = function(){
     });
 };
 
+/* Xác nhận quyền vào Drive. Máy chủ thử thật: mở từng thư mục, tạo một tệp
+   dấu, xoá đi. Bấm Allow trên màn xin quyền của Google chỉ là bước đầu —
+   nó không nói được máy chủ có ghi đúng thư mục của Học viện hay không. */
+G.kiemQuyenDrive = function(){
+  if(!G.API_CAP_PHEP) return Promise.resolve({ok:false, ly:'Chưa nối máy chủ.'});
+  return fetch(G.API_CAP_PHEP, {
+    method:'POST', headers:{'Content-Type':'text/plain;charset=utf-8'},
+    body: JSON.stringify({fn:'kiemDrive', u:(G.S.acc && G.S.acc.u) || '',
+      token: G.PHIEN_TOKEN || ''})
+  }).then(function(r){ return r.json(); })
+    .then(function(d){
+      if(!d || !d.ok) return {ok:false, ly:(d && d.error) || 'Máy chủ không trả lời.'};
+      return d;
+    })
+    .catch(function(e){ return {ok:false, ly:'Không gọi được máy chủ: ' + (e && e.message || e)}; });
+};
+
 G.VIEWS['noi-may-chu'] = function(){
   var url = G.API_CAP_PHEP || '';
   var noi = !!url;
@@ -84,8 +101,10 @@ G.VIEWS['noi-may-chu'] = function(){
         'class="mono" autocomplete="off">'+
       '<button class="btn pri" data-act="mc-luu">'+ic('check','w-4 h-4')+'Lưu địa chỉ</button>'+
       '<button class="btn ghost" data-act="mc-thu">'+ic('pulse','w-4 h-4')+'Gọi thử</button>'+
+      (noi ? '<button class="btn ghost" data-act="mc-drive">'+ic('vault','w-4 h-4')+'Kiểm quyền Drive</button>' : '')+
       (noi ? '<button class="btn ghost" data-act="mc-bo">'+ic('x','w-4 h-4')+'Bỏ nối</button>' : '')+
     '</div>'+
+    '<div id="mcDrive" class="mt"></div>'+
     '<div id="mcKq" class="mt"></div>'+
     (G.KHO && G.KHO.lyDoTuChoi ?
       '<div class="card pad-sm mt" style="border-color:var(--gita-do)">'+
@@ -128,6 +147,21 @@ G.VIEWS['noi-may-chu'] = function(){
         '<p class="sm dim mt" style="line-height:1.65">'+h(x[1])+'</p></div>';
     }).join('')+'</div>';
 
+  o += U.sec('QUYỀN VÀO DRIVE CỦA HỌC VIỆN','Máy chủ đụng vào bốn thư mục — không thư mục nào ngoài bốn cái này');
+  o += U.tbl(['Thư mục','Máy chủ làm gì ở đó'], [
+    ['<b class="sm">Dữ Liệu GITA365</b><div class="tiny muted mono">1pvXH45JvXXPOW9V6ObB5CR87r7gxH0fU</div>',
+     '<span class="sm">Giữ sổ dữ liệu: tài khoản, hồ sơ học viên, phiên đăng nhập, nhật ký, thanh toán.</span>'],
+    ['<b class="sm">Nhận tài liệu</b><div class="tiny muted">cùng thư mục trên</div>',
+     '<span class="sm">Tài liệu và ảnh đội ngũ gửi lên, minh chứng nhiệm vụ của gia đình.</span>'],
+    ['<b class="sm">Xuất bảng tính</b><div class="tiny muted">cùng thư mục trên</div>',
+     '<span class="sm">Google Sheet do cấp quản lý xuất ra. Không xuất Excel, không xuất CSV.</span>'],
+    ['<b class="sm">Mã máy chủ GITA365</b><div class="tiny muted mono">1jVOnIH7286glI95fC4aqfXApecxEj7Xz</div>',
+     '<span class="sm">Mã nguồn và hướng dẫn dựng máy chủ.</span>']
+  ]);
+  o += '<p class="tiny muted mt" style="line-height:1.6">Bấm <b>Kiểm quyền Drive</b> ở trên để máy chủ '+
+    'thử thật: mở từng thư mục, tạo một tệp dấu, đọc lại, rồi xoá đi. Bấm Allow trên màn xin quyền của '+
+    'Google mới là bước đầu — nó không nói được máy chủ có ghi đúng thư mục của Học viện hay không.</p>';
+
   o += '<div class="card mt2"><div class="up mb" style="color:var(--gita-do-ink)">'+
     ic('shield','w-4 h-4')+' BỘ KHOÁ</div>'+
     '<p class="sm" style="line-height:1.7">Tệp <span class="mono">kho/khoa.json</span> là chìa của toàn '+
@@ -153,6 +187,36 @@ document.addEventListener('click', function(e){
     G.datMayChu('');
     U.toast('Đã bỏ nối. Ứng dụng quay về chế độ mẫu.','ok');
     G.render && G.render();
+  }
+  else if(a === 'mc-drive'){
+    var kd = document.getElementById('mcDrive');
+    if(kd) kd.innerHTML = '<p class="sm dim">Đang thử quyền trên từng thư mục…</p>';
+    G.kiemQuyenDrive().then(function(d){
+      if(!kd) return;
+      if(!d.ok){
+        kd.innerHTML = '<div class="card pad-sm" style="border-color:var(--gita-do)">'+
+          '<b class="sm" style="color:var(--gita-do-ink)">'+ic('x','w-4 h-4')+' Chưa kiểm được</b>'+
+          '<p class="sm mt">'+h(d.ly)+'</p></div>';
+        return;
+      }
+      var du = d.dat === d.tong;
+      kd.innerHTML = '<div class="card pad-sm" style="border-color:'+(du?'var(--ok)':'var(--gita-do)')+'">'+
+        '<b class="sm" style="color:'+(du?'var(--ok)':'var(--gita-do-ink)')+'">'+
+          ic(du?'check':'lock','w-4 h-4')+' Đạt '+d.dat+'/'+d.tong+' thư mục</b>'+
+        '<p class="tiny muted mt">Máy chủ đang chạy dưới tài khoản '+h(d.taiKhoan || '—')+'</p>'+
+        U.tbl(['Thư mục','Mở','Ghi','Dọn',''], d.thuMuc.map(function(t){
+          return ['<b class="sm">'+h(t.nhan)+'</b>'+
+                    '<div class="tiny muted">'+h(t.ten || '(không mở được)')+'</div>',
+            t.moDuoc ? '<span style="color:var(--ok)">✓</span>' : '<span style="color:var(--gita-do)">✕</span>',
+            t.ghiDuoc ? '<span style="color:var(--ok)">✓</span>' : '<span style="color:var(--gita-do)">✕</span>',
+            t.xoaDuoc ? '<span style="color:var(--ok)">✓</span>' : '<span class="muted">—</span>',
+            t.loi ? '<span class="tiny" style="color:var(--gita-do-ink)">'+h(t.loi)+'</span>' : ''];
+        }))+
+        (du ? '<p class="tiny muted mt">Tệp dấu đã dọn sạch, không để lại rác trong Drive.</p>'
+            : '<p class="tiny mt" style="color:var(--gita-do-ink)">Mã thư mục là phần sau /folders/ trong địa chỉ Drive. '+
+              'Thư mục phải thuộc chính tài khoản chạy Apps Script, hoặc được chia sẻ ở mức Người chỉnh sửa.</p>')+
+      '</div>';
+    });
   }
   else if(a === 'mc-thu'){
     if(kq) kq.innerHTML = '<p class="sm dim">Đang gọi máy chủ…</p>';

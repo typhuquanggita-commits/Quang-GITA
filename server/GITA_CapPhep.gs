@@ -88,7 +88,7 @@ function doPost(e) {
     if (y.fn === 'kichHoat')      return ra(gitaKichHoat_(y));
 
     var VIEC = ['capKhoa', 'xuatSheet', 'dongBo', 'doiMatKhau', 'napTaiLieu', 'duyetTaiLieu',
-                'nangTang', 'moCa', 'buocCa'];
+                'nangTang', 'kiemDrive'];
     if (VIEC.indexOf(y.fn) < 0) return ra({ ok: false, error: 'Yêu cầu không hợp lệ.' });
 
     // 1. Xác thực phiên — dùng đúng lớp bảo mật sẵn có của hệ thống
@@ -103,6 +103,7 @@ function doPost(e) {
     if (y.fn === 'napTaiLieu')  return ra(gitaNapTaiLieu_(y, hoSo));
     if (y.fn === 'duyetTaiLieu')return ra(gitaDuyetTaiLieu_(y, hoSo));
     if (y.fn === 'nangTang')    return ra(gitaNangTang_(y, hoSo));
+    if (y.fn === 'kiemDrive')   return ra(gitaKiemDrive_(y, hoSo));
 
     // 2. Mật khẩu tạm chưa đổi thì không mở kho
     if (hoSo.phaiDoiMk) {

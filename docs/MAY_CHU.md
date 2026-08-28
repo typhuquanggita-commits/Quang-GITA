@@ -40,6 +40,86 @@ Và một tệp thứ tám dùng xong thì xoá: `GITA_NapKhoa.gs` — mang bộ
 
 ---
 
+## Bảng hàm chạy tay trong Apps Script
+
+Bảy hàm này chọn ở thanh trên rồi bấm Run. Mọi việc khác đi qua `doPost` —
+ứng dụng gọi, không chạy tay ở đây.
+
+| Hàm | Khi nào chạy |
+|---|---|
+| `caiDatLanDau` | **Một lần**, ngay sau khi dán mã. Dựng sổ dữ liệu, tạo Super Admin, kiểm quyền Drive. |
+| `napBoKhoaMotLan` | **Một lần**, sau khi dán tệp bộ khoá. Chạy xong thì xoá tệp ấy đi. |
+| `kiemTraQuyenDrive` | Bất cứ lúc nào. Thử thật quyền vào bốn thư mục. Không đụng dữ liệu. |
+| `datLaiMatKhauSuperAdmin` | Khi lỡ mất mật khẩu tạm của `Admin@gita365`. |
+| `dungSoDuLieu` | Khi nghi thiếu bảng. `caiDatLanDau` đã gọi sẵn. |
+| `taoTaiKhoanKhoiDau` | Tạo riêng Super Admin. `caiDatLanDau` đã gọi sẵn. |
+| `mucLucHam` | Quên tên hàm nào thì chạy cái này. |
+
+## Bảng việc ứng dụng gọi qua doPost
+
+`doPost` là cửa vào duy nhất. Mọi yêu cầu đều là một `POST` mang `fn`.
+
+**Không cần phiên đăng nhập** — vì chúng xảy ra trước khi có phiên:
+
+| `fn` | Việc | Chốt chặn |
+|---|---|---|
+| `dangNhap` | Đăng nhập, cấp phiên 12 giờ | Sai tài khoản và sai mật khẩu trả lời y hệt nhau |
+| `dangXuat` | Đóng phiên | — |
+| `dangKy` | Nhận thông tin đăng ký, gửi OTP | Email đã có tài khoản: trả lời y hệt, không lộ danh sách khách |
+| `guiLaiOtp` | Xin mã mới | — |
+| `xacThucOtp` | Kiểm mã, gửi link kích hoạt | Mã lưu dạng băm · sống 15 phút · sai 5 lần là huỷ |
+| `kichHoat` | Đặt mật khẩu, sinh mã khách hàng | Link sống 24 giờ, dùng một lần |
+| `quenMatKhau` | Gửi mã đặt lại | — |
+| `datLaiMatKhau` | Đặt lại bằng mã | — |
+| `kiemBanMoi` | Bản cài trên máy hỏi có bản mới chưa | — |
+
+**Cần phiên hợp lệ:**
+
+| `fn` | Việc | Ai gọi được |
+|---|---|---|
+| `capKhoa` | Cấp khoá mở kho | Mọi vai — nhưng chỉ nhận gói đúng phạm vi của mình |
+| `doiMatKhau` | Đổi mật khẩu | Chính chủ |
+| `dongBo` | Đồng bộ hồ sơ và cài đặt | Mọi vai; ghi cài đặt hệ thống thì R01–R02 |
+| `napTaiLieu` | Gửi tài liệu, ảnh, minh chứng | Mọi vai · 30 tệp/ngày · 25 MB/tệp · không nhận tệp chạy được |
+| `duyetTaiLieu` | Kiểm duyệt tài liệu | R01–R02 |
+| `xuatSheet` | Đẩy Google Sheet về Drive | R01–R04 · 20 lượt/ngày |
+| `nangTang` | Nâng tầng gia đình | R01–R03 · cần KPI ≥ 80% **và** xác nhận thanh toán |
+| `kiemDrive` | Xác nhận quyền vào Drive | R01–R02 |
+
+## Xác nhận quyền vào Drive
+
+Máy chủ đụng vào **bốn thư mục**, không thư mục nào ngoài bốn cái này:
+
+| Thư mục | Mã | Máy chủ làm gì ở đó |
+|---|---|---|
+| Dữ Liệu GITA365 | `1pvXH45JvXXPOW9V6ObB5CR87r7gxH0fU` | Sổ dữ liệu: tài khoản, học viên, phiên, nhật ký, thanh toán |
+| Nhận tài liệu | *(cùng thư mục trên)* | Tài liệu và ảnh gửi lên, minh chứng nhiệm vụ |
+| Xuất bảng tính | *(cùng thư mục trên)* | Google Sheet cấp quản lý xuất ra |
+| [Mã máy chủ GITA365](https://drive.google.com/drive/u/0/folders/1jVOnIH7286glI95fC4aqfXApecxEj7Xz) | `1jVOnIH7286glI95fC4aqfXApecxEj7Xz` | Mã nguồn và hướng dẫn dựng máy chủ |
+
+Ba vai đầu hiện cùng trỏ vào một thư mục. Tách ra lúc nào cũng được — sửa
+`GITA_THU_MUC_TAILIEU` và `GITA_THU_MUC_XUAT`, không phải triển khai lại.
+
+**Kiểm bằng cách nào.** Bấm Allow trên màn xin quyền của Google mới là bước
+đầu; nó không nói được máy chủ có ghi đúng thư mục của Học viện hay không.
+Chạy `kiemTraQuyenDrive` — hoặc bấm **Kiểm quyền Drive** trong màn *Nối máy
+chủ* — máy chủ sẽ mở từng thư mục, tạo một tệp dấu, đọc lại, rồi xoá đi:
+
+```
+XÁC NHẬN QUYỀN VÀO DRIVE
+Máy chủ đang chạy dưới tài khoản: typhuquanggita@gmail.com
+Đạt 4/4 thư mục.
+
+  ✓ Dữ Liệu GITA365  ·  Dữ Liệu GITA365
+      Sổ dữ liệu: tài khoản, học viên, phiên, nhật ký, thanh toán
+      mã 1pvXH45...  ·  mở được  ·  ghi được  ·  dọn được
+  ...
+Cả bốn thư mục đều mở được và ghi được. Tệp dấu đã dọn sạch.
+```
+
+Thư mục nào chỉ cho xem, hoặc mã sai, thì nó nói rõ thư mục nào và thiếu
+quyền gì — không báo xanh cho qua chuyện.
+
 ## Sáu bước
 
 ### 1. Tạo dự án
@@ -158,7 +238,9 @@ node tools/thu-may-chu.js
 
 Bộ này dựng một bản giả lập Apps Script rồi chạy toàn bộ mã trong `server/` trên
 đó: đăng nhập, đăng ký, OTP, kích hoạt, nâng tầng, cấp khoá, nhật ký, và luật
-chặn kho khi còn dùng mật khẩu tạm. Sáu mươi tư điểm, phải xanh hết.
+chặn kho khi còn dùng mật khẩu tạm, và xác nhận quyền vào Drive. Tám mươi mốt
+điểm, phải xanh hết — trong đó có cả trường hợp một thư mục chỉ cho xem và một
+mã thư mục sai, để chắc rằng phần kiểm quyền không báo xanh cho qua chuyện.
 
 Thử luôn bản gộp một tệp — thứ thật sự được dán lên Apps Script:
 

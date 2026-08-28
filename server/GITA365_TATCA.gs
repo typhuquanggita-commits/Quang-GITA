@@ -77,7 +77,8 @@
  * ═══════════════════════════════════════════════════════════════
  */
 
-var GITA_THU_MUC_DRIVE = '1pvXH45JvXXPOW9V6ObB5CR87r7gxH0fU';
+var GITA_THU_MUC_DRIVE = '1pvXH45JvXXPOW9V6ObB5CR87r7gxH0fU';   /* Dữ Liệu GITA365 — sổ dữ liệu nằm ở đây */
+var GITA_THU_MUC_MA    = '1jVOnIH7286glI95fC4aqfXApecxEj7Xz';   /* Mã máy chủ GITA365 — mã và hướng dẫn */
 var GITA_EMAIL_HE_THONG = 'typhuquanggita@gmail.com';
 
 /** Tên bảng tính chứa toàn bộ dữ liệu. Tự tạo trong lần chạy đầu. */
@@ -335,23 +336,25 @@ function gitaDangXuat_(y) {
    hệ thống. Sau đó máy chủ KHÔNG mở kho cho tài khoản ấy cho tới khi mật
    khẩu được đổi — không phải nhắc nhở, mà chặn thật. */
 
-/* Bốn mươi tám âm tiết dễ đọc, dễ chép lại đúng, không dấu để khỏi lỗi gõ. */
-var GITA_TU_MK = ['an','binh','yen','nha','tam','sang','vung','ben','minh','tue',
-  'kien','tri','nhan','hoa','tho','lang','xanh','bien','nui','song','gio','mua',
-  'nang','trang','sao','lua','mam','re','than','canh','la','hoa2','qua','hat',
-  'duong','loi','cau','buoc','nhip','vong','tay','long','tam2','chi','y','luc',
-  'hanh','duc'];
+/* Bốn mươi âm tiết dễ đọc, dễ chép lại đúng. Không dấu để khỏi lỗi gõ, và
+   mỗi âm tiết ít nhất ba chữ cái — âm tiết một chữ đọc lên nghe không ra
+   tiếng, chép qua điện thoại hay sót. */
+var GITA_TU_MK = ['binh','yen','nha','tam','sang','vung','ben','minh','tue',
+  'kien','tri','nhan','hoa','tho','lang','xanh','bien','nui','song','gio',
+  'mua','nang','trang','sao','lua','mam','than','canh','qua','hat',
+  'duong','loi','cau','buoc','nhip','vong','tay','long','luc','hanh'];
 
 /**
  * Sinh mật khẩu tạm: năm âm tiết viết hoa chữ đầu, nối bằng gạch, thêm bốn số.
  * Ví dụ: Binh-Yen-Kien-Tri-Vung-4827
- * Khoảng mười nghìn tỉ khả năng — thừa cho một mật khẩu chỉ sống tới lần
- * đăng nhập đầu tiên, mà vẫn chép tay lại được không sai.
+ * Bốn mươi âm tiết chọn năm lần, thêm bốn chữ số: hơn một nghìn tỉ khả năng.
+ * Thừa cho một mật khẩu chỉ sống tới lần đăng nhập đầu tiên, mà vẫn chép tay
+ * lại được không sai.
  */
 function gitaMatKhauTam_() {
   var ra = [];
   for (var i = 0; i < 5; i++) {
-    var t = GITA_TU_MK[Math.floor(Math.random() * GITA_TU_MK.length)].replace(/\d/g, '');
+    var t = GITA_TU_MK[Math.floor(Math.random() * GITA_TU_MK.length)];
     ra.push(t.charAt(0).toUpperCase() + t.slice(1));
   }
   var so = '';
@@ -431,7 +434,10 @@ function gitaGuiThuMatKhauTam_(u, mk, dan) {
 function caiDatLanDau() {
   var a = dungSoDuLieu();
   var b = taoTaiKhoanKhoiDau();
-  return a + '\n\n' + b +
+  /* Kiểm quyền ngay trong lần cài đặt. Biết sớm một thư mục không ghi được
+     thì hơn là biết lúc phụ huynh đầu tiên gửi tài liệu lên và tệp mất tăm. */
+  var c = kiemTraQuyenDrive();
+  return a + '\n\n' + b + '\n\n' + c +
     '\n\nCòn một việc: dán bộ khoá vào napBoKhoaMotLan rồi chạy hàm đó.';
 }
 
@@ -474,6 +480,164 @@ function clearFail_(u) {
   try {
     CacheService.getScriptCache().remove('DANGNHAP_SAI_' + String(u).toLowerCase());
   } catch (e) {}
+}
+
+/* ═══════════════ XÁC NHẬN QUYỀN VÀO DRIVE ═══════════════
+
+   Khi bấm Allow trên màn xin quyền của Google, người ta chỉ biết mình vừa
+   đồng ý điều gì đó. Không ai biết máy chủ có thật sự ghi được vào đúng
+   thư mục của Học viện hay không — cho tới lúc một phụ huynh gửi tài liệu
+   lên và tệp biến mất.
+
+   Mục này trả lời trước câu đó. Nó không đọc cấu hình rồi báo "ổn". Nó
+   thử thật: mở từng thư mục, tạo một tệp dấu, đọc lại, rồi xoá đi. Thư mục
+   nào không vào được thì nói rõ thư mục nào và vì sao.
+
+   Chạy được hai đường:
+     · trong Apps Script — chọn hàm kiemTraQuyenDrive rồi Run
+     · từ ứng dụng — màn Nối máy chủ, nút "Kiểm quyền Drive" (R01–R02) */
+
+var GITA_THU_MUC_CAN = [
+  {ma: 'GITA_THU_MUC_DRIVE',   ten: 'Dữ Liệu GITA365',
+   viec: 'Sổ dữ liệu: tài khoản, học viên, phiên, nhật ký, thanh toán'},
+  {ma: 'GITA_THU_MUC_TAILIEU', ten: 'Thư mục nhận tài liệu',
+   viec: 'Tài liệu và ảnh đội ngũ gửi lên, minh chứng nhiệm vụ của gia đình'},
+  {ma: 'GITA_THU_MUC_XUAT',    ten: 'Thư mục xuất bảng tính',
+   viec: 'Google Sheet do cấp quản lý xuất ra'},
+  {ma: 'GITA_THU_MUC_MA',      ten: 'Mã máy chủ GITA365',
+   viec: 'Mã nguồn và hướng dẫn dựng máy chủ'}
+];
+
+function gitaIdThuMuc_(ma) {
+  /* Ba hằng kia nằm ở tệp khác. Đọc qua this để không nổ khi thiếu tệp nào. */
+  try {
+    if (ma === 'GITA_THU_MUC_DRIVE')   return GITA_THU_MUC_DRIVE;
+    if (ma === 'GITA_THU_MUC_MA')      return GITA_THU_MUC_MA;
+    if (ma === 'GITA_THU_MUC_TAILIEU') return GITA_THU_MUC_TAILIEU;
+    if (ma === 'GITA_THU_MUC_XUAT')    return GITA_THU_MUC_XUAT;
+  } catch (e) { return ''; }
+  return '';
+}
+
+/** Thử một thư mục: mở được chưa, ghi được chưa, xoá lại được chưa. */
+function gitaThuMotThuMuc_(id) {
+  var kq = {id: id, moDuoc: false, ten: '', ghiDuoc: false, xoaDuoc: false, loi: ''};
+  if (!id) { kq.loi = 'Chưa đặt mã thư mục.'; return kq; }
+
+  var tm;
+  try { tm = DriveApp.getFolderById(id); kq.ten = tm.getName(); kq.moDuoc = true; }
+  catch (e) {
+    kq.loi = 'Không mở được. Hoặc mã thư mục sai, hoặc tài khoản đang chạy ' +
+             'Apps Script không có quyền vào thư mục này.';
+    return kq;
+  }
+
+  var tep = null;
+  try {
+    tep = tm.createFile('GITA365_kiem_quyen_' + Date.now() + '.txt',
+      'Tệp dấu do máy chủ GITA 365 tạo để kiểm quyền ghi. Xoá ngay sau khi kiểm.',
+      MimeType.PLAIN_TEXT);
+    kq.ghiDuoc = true;
+  } catch (e) {
+    kq.loi = 'Mở được nhưng KHÔNG ghi được. Tài khoản chỉ có quyền xem — ' +
+             'cần quyền Người chỉnh sửa trên thư mục này.';
+    return kq;
+  }
+
+  try { tep.setTrashed(true); kq.xoaDuoc = true; }
+  catch (e) { kq.loi = 'Ghi được nhưng không xoá được tệp dấu. Xoá tay trong Drive.'; }
+
+  return kq;
+}
+
+/**
+ * Kiểm cả bốn thư mục. Trả về một bảng đọc được, và ghi vào nhật ký.
+ * Chạy lại bất cứ lúc nào — nó không đụng vào dữ liệu, chỉ tạo rồi xoá
+ * một tệp dấu trong mỗi thư mục.
+ */
+function kiemTraQuyenDrive() {
+  var ds = [], dat = 0;
+  GITA_THU_MUC_CAN.forEach(function (t) {
+    var r = gitaThuMotThuMuc_(gitaIdThuMuc_(t.ma));
+    r.nhan = t.ten; r.viec = t.viec; r.hang = t.ma;
+    r.dat = r.moDuoc && r.ghiDuoc;
+    if (r.dat) dat++;
+    ds.push(r);
+  });
+
+  var ai = '';
+  try { ai = Session.getEffectiveUser().getEmail(); } catch (e) { ai = '(chưa đọc được)'; }
+
+  var dong = ['XÁC NHẬN QUYỀN VÀO DRIVE',
+    'Máy chủ đang chạy dưới tài khoản: ' + ai,
+    'Đạt ' + dat + '/' + ds.length + ' thư mục.', ''];
+
+  ds.forEach(function (r) {
+    dong.push((r.dat ? '  ✓ ' : '  ✗ ') + r.nhan + '  ·  ' + (r.ten || '(không mở được)'));
+    dong.push('      ' + r.viec);
+    dong.push('      mã ' + (r.id || '(trống)') +
+      '  ·  mở ' + (r.moDuoc ? 'được' : 'KHÔNG') +
+      '  ·  ghi ' + (r.ghiDuoc ? 'được' : 'KHÔNG') +
+      '  ·  dọn ' + (r.xoaDuoc ? 'được' : 'KHÔNG'));
+    if (r.loi) dong.push('      → ' + r.loi);
+    dong.push('');
+  });
+
+  if (dat < ds.length) {
+    dong.push('CÁCH SỬA');
+    dong.push('  · Mã thư mục là phần sau /folders/ trong địa chỉ Drive.');
+    dong.push('  · Thư mục phải thuộc chính tài khoản đang chạy Apps Script,');
+    dong.push('    hoặc được chia sẻ cho tài khoản đó ở mức Người chỉnh sửa.');
+    dong.push('  · Sửa xong thì chạy lại hàm này. Không cần triển khai lại.');
+  } else {
+    dong.push('Cả bốn thư mục đều mở được và ghi được. Tệp dấu đã dọn sạch.');
+  }
+
+  var thongDiep = dong.join('\n');
+  audit_(null, 'KIEM_QUYEN_DRIVE', ai, 'Đạt ' + dat + '/' + ds.length + ' thư mục');
+  Logger.log(thongDiep);
+  return thongDiep;
+}
+
+/** Bản cho ứng dụng gọi qua doPost. Chỉ Super Admin và Admin hệ thống. */
+function gitaKiemDrive_(y, hoSo) {
+  var lv = (ROLES[hoSo.role] || {lv: 99}).lv;
+  if (lv > 2) return {ok: false, error: 'Chỉ Super Admin và Admin hệ thống kiểm được quyền Drive.'};
+
+  var ds = [], dat = 0;
+  GITA_THU_MUC_CAN.forEach(function (t) {
+    var r = gitaThuMotThuMuc_(gitaIdThuMuc_(t.ma));
+    r.nhan = t.ten; r.viec = t.viec;
+    r.dat = r.moDuoc && r.ghiDuoc;
+    if (r.dat) dat++;
+    ds.push(r);
+  });
+
+  var ai = '';
+  try { ai = Session.getEffectiveUser().getEmail(); } catch (e) {}
+  audit_(hoSo.phien, 'KIEM_QUYEN_DRIVE', ai, 'Đạt ' + dat + '/' + ds.length + ' thư mục');
+  return {ok: true, taiKhoan: ai, dat: dat, tong: ds.length, thuMuc: ds};
+}
+
+/* ═══════════════ MỤC LỤC HÀM ═══════════════
+   Chạy hàm này khi quên tên hàm nào làm việc gì. Không đụng vào dữ liệu. */
+function mucLucHam() {
+  var b = [
+    ['caiDatLanDau',             'Dựng sổ dữ liệu + tạo Super Admin. Chạy MỘT LẦN đầu tiên.'],
+    ['kiemTraQuyenDrive',        'Thử thật quyền vào bốn thư mục Drive. Chạy lại bất cứ lúc nào.'],
+    ['napBoKhoaMotLan',          'Nạp bộ khoá mở kho. Chạy một lần, rồi xoá tệp chứa khoá.'],
+    ['datLaiMatKhauSuperAdmin',  'Sinh mật khẩu tạm mới cho Admin@gita365 khi lỡ mất.'],
+    ['dungSoDuLieu',             'Dựng lại các bảng còn thiếu. caiDatLanDau đã gọi sẵn.'],
+    ['taoTaiKhoanKhoiDau',       'Tạo riêng tài khoản Super Admin. caiDatLanDau đã gọi sẵn.'],
+    ['mucLucHam',                'Chính bảng anh chị đang đọc.']
+  ];
+  var ra = ['BẢNG HÀM CHẠY TAY TRONG APPS SCRIPT', ''];
+  b.forEach(function (x) { ra.push('  ' + x[0] + Array(30 - x[0].length).join(' ') + x[1]); });
+  ra.push('');
+  ra.push('Mọi việc khác đi qua doPost — ứng dụng gọi, không chạy tay ở đây.');
+  var t = ra.join('\n');
+  Logger.log(t);
+  return t;
 }
 
 
@@ -572,7 +736,7 @@ function doPost(e) {
     if (y.fn === 'kichHoat')      return ra(gitaKichHoat_(y));
 
     var VIEC = ['capKhoa', 'xuatSheet', 'dongBo', 'doiMatKhau', 'napTaiLieu', 'duyetTaiLieu',
-                'nangTang', 'moCa', 'buocCa'];
+                'nangTang', 'kiemDrive'];
     if (VIEC.indexOf(y.fn) < 0) return ra({ ok: false, error: 'Yêu cầu không hợp lệ.' });
 
     // 1. Xác thực phiên — dùng đúng lớp bảo mật sẵn có của hệ thống
@@ -587,6 +751,7 @@ function doPost(e) {
     if (y.fn === 'napTaiLieu')  return ra(gitaNapTaiLieu_(y, hoSo));
     if (y.fn === 'duyetTaiLieu')return ra(gitaDuyetTaiLieu_(y, hoSo));
     if (y.fn === 'nangTang')    return ra(gitaNangTang_(y, hoSo));
+    if (y.fn === 'kiemDrive')   return ra(gitaKiemDrive_(y, hoSo));
 
     // 2. Mật khẩu tạm chưa đổi thì không mở kho
     if (hoSo.phaiDoiMk) {
