@@ -119,6 +119,47 @@ jobs:
             desktop/dist/*.AppImage
             desktop/dist/*.deb
 
+  # Mỗi lần đẩy nhánh phát triển: cập nhật bản tải mới nhất tại một
+  # đường dẫn cố định, để anh Quang lúc nào cũng tải được bộ cài Windows
+  # mà không phải đăng nhập vào tab Actions.
+  moi-nhat:
+    name: Cập nhật bản tải mới nhất
+    needs: dong-goi
+    if: github.ref_type == 'branch'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Tải bộ cài về
+        uses: actions/download-artifact@v4
+        with:
+          path: bo-cai
+          merge-multiple: true
+
+      - name: Cập nhật bản tải mới nhất
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: may-tinh-moi-nhat
+          name: GITA 365 — bản máy tính mới nhất
+          files: bo-cai/*
+          draft: false
+          prerelease: true
+          body: |
+            ## GITA 365 — bản máy tính mới nhất
+
+            Bản này được dựng lại sau mỗi lần cập nhật mã nguồn, từ nhánh
+            `${{ github.ref_name }}` (`${{ github.sha }}`).
+
+            | Máy | Tệp |
+            |---|---|
+            | Windows — bộ cài | `GITA365-*-win-x64.exe` |
+            | Windows — chạy ngay, không cài | `GITA365-*-ban-chay-ngay.exe` |
+
+            Sau khi cài, mở ứng dụng rồi vào **Trợ giúp → Nạp giấy phép** và
+            chọn tệp giấy phép do Học viện GITA cấp riêng cho máy này. Chưa
+            nạp giấy phép thì ứng dụng chạy ở chế độ mẫu.
+
+            Bộ cài chưa ký số nên Windows SmartScreen sẽ hỏi một lần ở lần mở
+            đầu: bấm **More info → Run anyway**. Xem `docs/CAI_DAT_MAY_TINH.md`.
+
   phat-hanh:
     name: Đưa lên Releases
     needs: dong-goi
