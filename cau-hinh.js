@@ -9,4 +9,4 @@ var G = window.G || {}; window.G = G;
 /* Dán URL triển khai của Apps Script (…/exec) vào đây.
    Để trống thì ứng dụng chạy ở CHẾ ĐỘ MẪU — xem được giao diện và phần
    giới thiệu, kho chuyên môn vẫn khoá. Xem docs/TRIEN_KHAI_WEB.md. */
-G.API_CAP_PHEP = 'http://127.0.0.1:8091';
+G.API_CAP_PHEP = '';

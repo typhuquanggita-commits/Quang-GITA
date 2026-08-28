@@ -110,6 +110,24 @@ CAM.forEach(function (c) {
   if (dinh.length) { ro++; console.log('  ✗ ' + c + ' đang nằm trong kho mã: ' + dinh.slice(0, 3).join(' ')); }
   else console.log('  ✓ ' + c.padEnd(16) + 'không lọt lên kho mã');
 });
+/* Cấu hình không được trỏ về máy nội bộ — dấu vết của một lần diễn tập
+   bị ngắt giữa chừng. Đẩy lên là bản web thật gọi về localhost và chết. */
+{
+  const cf = fs.readFileSync(path.join(GOC, 'cau-hinh.js'), 'utf8');
+  const m = cf.match(/G\.API_CAP_PHEP\s*=\s*'([^']*)'/);
+  const dc = m ? m[1] : '';
+  if (/127\.0\.0\.1|localhost|\[::1\]/.test(dc)) {
+    ro++; console.log('  ✗ cau-hinh.js đang trỏ về máy nội bộ: ' + dc);
+    console.log('    Trả lại bằng: git checkout -- cau-hinh.js');
+  } else if (!dc) {
+    console.log('  ✓ cau-hinh.js  ' + 'để trống — bản web sẽ chạy chế độ mẫu');
+  } else if (!/^https:\/\//.test(dc)) {
+    ro++; console.log('  ✗ cau-hinh.js phải là địa chỉ https: ' + dc);
+  } else {
+    console.log('  ✓ cau-hinh.js  trỏ đúng máy chủ cấp phép qua HTTPS');
+  }
+}
+
 /* Tệp .enc phải thật sự là dữ liệu đã mã hoá, không phải JSON đọc được */
 const encs = fs.readdirSync(path.join(GOC, 'kho')).filter(function (f) { return f.endsWith('.enc'); });
 let doc = 0;

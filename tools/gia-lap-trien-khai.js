@@ -90,6 +90,15 @@ function dungBanWeb() {
   return http.createServer((q, p) => {
     let d = decodeURIComponent(q.url.split('?')[0]);
     if (d === '/') d = '/index.html';
+    /* Vá địa chỉ máy chủ cấp phép NGAY TRONG BỘ NHỚ. Tuyệt đối không sửa
+       tệp trên đĩa: một lần bị ngắt giữa chừng là bản vá tạm lọt vào
+       commit và bản web thật sẽ trỏ về máy nội bộ. */
+    if (d === '/cau-hinh.js') {
+      const goc = fs.readFileSync(path.join(GOC, 'cau-hinh.js'), 'utf8');
+      p.writeHead(200, Object.assign({ 'Content-Type': KIEU['.js'] }, dau));
+      return p.end(goc.replace(/G\.API_CAP_PHEP = '[^']*';/,
+        "G.API_CAP_PHEP = 'http://127.0.0.1:8091';"));
+    }
     const bi = chan.filter(c => c.sao ? d.indexOf(c.mau) === 0 : d === c.mau)[0];
     if (bi) { p.writeHead(bi.ma, { 'Content-Type': 'text/plain' }); return p.end('Không phục vụ đường dẫn này.'); }
     const tep = path.join(GOC, d.replace(/^\/+/, ''));
@@ -107,16 +116,11 @@ A.listen(8091, '127.0.0.1', () => {
   B.listen(8092, '127.0.0.1', () => {
     console.log('  Máy chủ cấp phép giả lập : http://127.0.0.1:8091');
     console.log('  Bản web giả lập          : http://127.0.0.1:8092');
-    /* Điền tạm địa chỉ máy chủ vào cấu hình để kiểm cho đúng, xong trả lại */
-    const cf = path.join(GOC, 'cau-hinh.js');
-    const goc = fs.readFileSync(cf, 'utf8');
-    fs.writeFileSync(cf, goc.replace(/G\.API_CAP_PHEP = '[^']*';/, "G.API_CAP_PHEP = 'http://127.0.0.1:8091';"));
     /* Bộ kiểm phải chạy ở tiến trình riêng — chạy chặn ngay trong tiến
        trình này thì hai máy chủ trên không thể trả lời chính nó. */
     const con = spawn('node', [path.join(__dirname, 'kiem-trien-khai.js'),
       'http://127.0.0.1:8091', 'http://127.0.0.1:8092'], { stdio: 'inherit' });
     con.on('close', ma => {
-      fs.writeFileSync(cf, goc);
       /* Bản thật chạy HTTPS; bản diễn tập chạy HTTP nên điểm đó luôn trượt. */
       console.log('  Ghi chú: điểm "chạy trên HTTPS" luôn trượt khi diễn tập tại máy —');
       console.log('           Cloudflare Pages tự bật HTTPS nên bản thật sẽ đạt.\n');
