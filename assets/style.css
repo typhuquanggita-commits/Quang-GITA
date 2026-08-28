@@ -120,6 +120,7 @@ svg{width:1.15em;height:1.15em;flex:none;display:block}
 .btn.ghost{background:transparent;border-color:var(--line)}
 .btn.sm{padding:7px 14px;font-size:12.5px}
 .btn.blk{width:100%}
+.btn.off{opacity:.42;filter:saturate(.35);pointer-events:none}
 .btn svg{width:17px;height:17px;flex:none}
 
 /* ═══════════ THẺ ═══════════ */

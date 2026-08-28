@@ -11,12 +11,13 @@ var KEY = 'gita365.v7';
 G.S = {
   role:null, acc:null, roleObj:null,
   view:'ban-do', open:['g1'], rtab:'labon', rightOpen:true, leftOpen:false,
-  checks:{}, vision:{}, journal:{}, famId:'F-001', kbShown:60
+  checks:{}, vision:{}, journal:{}, test:{}, famId:'F-001', kbShown:60
 };
 function save(){
   try{ localStorage.setItem(KEY, JSON.stringify({
     role:G.S.role, u:G.S.acc && G.S.acc.u, view:G.S.view, open:G.S.open, rtab:G.S.rtab,
-    checks:G.S.checks, vision:G.S.vision, journal:G.S.journal, rightOpen:G.S.rightOpen, mood:G.S.mood
+    checks:G.S.checks, vision:G.S.vision, journal:G.S.journal, test:G.S.test,
+    rightOpen:G.S.rightOpen, mood:G.S.mood
   })); }catch(e){}
 }
 function load(){
@@ -24,6 +25,7 @@ function load(){
     var d = JSON.parse(localStorage.getItem(KEY) || 'null'); if(!d) return null;
     G.S.view = d.view || G.S.view; G.S.open = d.open || G.S.open; G.S.rtab = d.rtab || G.S.rtab;
     G.S.checks = d.checks || {}; G.S.vision = d.vision || {}; G.S.journal = d.journal || {};
+    G.S.test = d.test || {};
     G.S.mood = d.mood || null;
     if(d.rightOpen !== undefined) G.S.rightOpen = d.rightOpen;
     return d;
@@ -377,6 +379,8 @@ function render(){
   if(left) left.innerHTML = leftNav();
   save();
 }
+G.render = render;
+G.save   = save;
 
 G.go = function(v){
   if(!G.VIEWS[v]) return;
@@ -478,6 +482,78 @@ G.ask = function(q){
       '<p class="sm muted" style="line-height:1.6">'+h(x.s)+'…</p>'+
       '<button class="btn ghost sm mt" data-go="'+h(x.go)+'">Mở kệ tư liệu '+ic('arrow')+'</button></div>';
   }).join('');
+};
+
+/* ═══════════════ XUẤT DỮ LIỆU ═══════════════ */
+function taiVe(ten, noi, kieu){
+  try{
+    var b = new Blob(['\ufeff' + noi], {type: kieu + ';charset=utf-8'});
+    var u = URL.createObjectURL(b), a = document.createElement('a');
+    a.href = u; a.download = ten; document.body.appendChild(a); a.click();
+    setTimeout(function(){ URL.revokeObjectURL(u); a.remove(); }, 1500);
+    return true;
+  }catch(e){ return false; }
+}
+function csv(cot, dong){
+  var q = function(v){ v = String(v===undefined||v===null?'':v); 
+    return /[",\n;]/.test(v) ? '"' + v.replace(/"/g,'""') + '"' : v; };
+  return [cot.map(q).join(';')].concat(dong.map(function(r){ return r.map(q).join(';'); })).join('\r\n');
+}
+function dauBan(){
+  var d = new Date(), p = function(x){ return String(x).padStart(2,'0'); };
+  return 'GITA-' + (G.S.role||'--') + '-' + d.getFullYear() + p(d.getMonth()+1) + p(d.getDate()) +
+         '-' + p(d.getHours()) + p(d.getMinutes());
+}
+G.xuat = function(ma){
+  var l = (G.XUAT.loai||[]).filter(function(x){return x.ma===ma;})[0];
+  if(!l){ return; }
+  if(!G.can(l.quyen)){ U.toast('Vai này chưa được Admin cấp quyền xuất loại dữ liệu đó.','err'); return; }
+  var d = dauBan(), ok = false;
+
+  if(ma==='X1'){                       /* Hồ sơ gia đình · PDF */
+    U.toast('Đang mở hộp in — chọn "Lưu thành PDF" để xuất hồ sơ.','ok');
+    setTimeout(function(){ window.print(); }, 400);
+    ok = true;
+  }
+  else if(ma==='X2'){                  /* Danh sách khách hàng · CSV */
+    var fs = G.FAMILIES || [];
+    if(fs.length > 50) G.secLog && G.secLog('Xuất danh sách lớn', fs.length + ' dòng — cần lý do theo luật xuất số 3', 'Cảnh báo');
+    ok = taiVe(d + '-danh-sach-khach-hang.csv', csv(
+      ['Mã nhà','Học viên','Lớp','Người lớn','Tầng','Ngày','Coach','Nhắc/tuần','Tự chủ %','Vai giữ','Băng','Kỳ tích'],
+      fs.map(function(f){ return [f.id,f.hv,f.lop,f.ph,'T'+f.tier,f.ngay,f.coach,f.nhac,f.tuchu,f.vai+'/9',f.band,f.kyTich]; })
+    ), 'text/csv');
+  }
+  else if(ma==='X3'){                  /* Bảng số một gia đình · CSV */
+    var f2 = G.myFamily();
+    ok = taiVe(d + '-bang-so-' + U.slug(f2.nha) + '.csv', csv(
+      ['Chỉ số','Giá trị','Chuẩn'],
+      [['Mức tự chủ', f2.tuchu + '%', 'trên 80% cuối chặng 4'],
+       ['Số lần nhắc mỗi tuần', f2.nhac, 'giảm rõ so với mốc đầu năm'],
+       ['Vai có người giữ', f2.vai + '/9', 'đủ chín vai'],
+       ['Ngày đồng hành', f2.ngay, 'theo tầng ' + f2.tier],
+       ['Băng sức khoẻ', f2.band, 'XANH'],
+       ['Kỳ tích năm', f2.kyTich, 'có bằng chứng']]
+    ), 'text/csv');
+  }
+  else if(ma==='X4'){                  /* Đội ngũ và KPI · CSV */
+    ok = taiVe(d + '-doi-ngu-kpi.csv', csv(
+      ['Tài khoản','Họ tên','Vai','KPI %','Ngày mở','Chưa đăng nhập','Trạng thái'],
+      (G.TAIKHOAN_KPI||[]).map(function(x){ return [x.u,x.ten,x.vai,x.kpi,x.ngay,x.hd,x.trang]; })
+    ), 'text/csv');
+  }
+  else if(ma==='X5'){                  /* Nhật ký cấp phát · CSV */
+    ok = taiVe(d + '-nhat-ky-cap-phat.csv', csv(
+      ['Mã bản','Tài liệu','Người nhận','Lúc cấp'],
+      ((G.DAU_MAT&&G.DAU_MAT.mau)||[]).map(function(m){ return [m.ma,m.tl,m.ai,m.luc]; })
+    ), 'text/csv');
+  }
+
+  if(ok){
+    U.toast('Đã xuất ' + l.ten + '. Bản này mang mã ' + d + ' và đã ghi vào nhật ký.','ok');
+    if(G.secLog) G.secLog('Xuất dữ liệu', l.ten + ' · mã bản ' + d, 'Ghi nhận');
+  } else if(ma!=='X1'){
+    U.toast('Trình duyệt chặn tải tệp. Thử lại trên bản máy tính hoặc bản web.','err');
+  }
 };
 
 /* ═══════════════ NÓI VÀO MICRO ═══════════════ */
@@ -585,6 +661,25 @@ on('[data-check]', function(el){
   var k = el.getAttribute('data-check');
   G.S.checks[k] = !G.S.checks[k]; save(); render();
   if(G.S.checks[k]) U.toast('Ghi nhận. Một việc nhỏ làm được hôm nay hơn mười việc định làm.','ok');
+});
+on('[data-vb]', function(el){ G.vanBanModal(el.getAttribute('data-vb')); });
+on('[data-vbn]', function(el){
+  var n = el.getAttribute('data-vbn');
+  var d = document.querySelectorAll('#main .view .up');
+  for(var i=0;i<d.length;i++) if(d[i].textContent.indexOf(n)===0){ d[i].scrollIntoView({behavior:'smooth',block:'start'}); break; }
+});
+on('[data-th]', function(el){ G.tinhHuongModal(el.getAttribute('data-th')); });
+on('[data-thf]', function(el){
+  var f = el.getAttribute('data-thf');
+  document.querySelectorAll('[data-thf]').forEach(function(b){ b.classList.toggle('on', b===el); });
+  document.querySelectorAll('#thList [data-f]').forEach(function(c){
+    c.style.display = (f==='ALL' || c.getAttribute('data-f').indexOf(f)>=0) ? '' : 'none'; });
+});
+on('[data-qf]', function(el){
+  var f = el.getAttribute('data-qf');
+  document.querySelectorAll('[data-qf]').forEach(function(b){ b.classList.toggle('on', b===el); });
+  document.querySelectorAll('#qtList [data-f]').forEach(function(c){
+    c.style.display = (f==='ALL' || c.getAttribute('data-f').indexOf(f)>=0) ? '' : 'none'; });
 });
 on('[data-mood]', function(el){ G.S.mood = el.getAttribute('data-mood'); save(); render(); });
 on('[data-kh]', function(el){ G.khoangModal(el.getAttribute('data-kh')); });
@@ -706,6 +801,43 @@ on('[data-act]', function(el){
   else if(a==='duyet-mo') U.toast('Đã mở lại tài khoản. Hệ thống sẽ rà lại KPI sau 30 ngày.','ok');
   else if(a==='hoan-mo') U.toast('Đã hoãn và gửi yêu cầu bổ sung dữ liệu cho người xin mở.','ok');
   else if(a==='dat-lai') U.toast('Đã thu hồi khoá giải mã và gỡ vai. Dữ liệu gia đình giữ nguyên, không xoá.','ok');
+  else if(a==='th-more'){
+    var ds = G.TINHHUONG||[], l = document.getElementById('thList');
+    var n = G.S.thShown||48; G.S.thShown = Math.min(ds.length, n+48);
+    l.insertAdjacentHTML('beforeend', ds.slice(n, G.S.thShown).map(G.thCard).join(''));
+    document.getElementById('thCount').textContent = G.S.thShown;
+  }
+  else if(a==='qt-more'){
+    var qs = G.QUA1000||[], lq = document.getElementById('qtList');
+    var m = G.S.qtShown||60; G.S.qtShown = Math.min(qs.length, m+60);
+    lq.insertAdjacentHTML('beforeend', qs.slice(m, G.S.qtShown).map(G.qtCard).join(''));
+    document.getElementById('qtCount').textContent = G.S.qtShown;
+  }
+  else if(a==='xuat') G.xuat(el.getAttribute('data-ma'));
+  else if(a==='in-vanban'){ window.print(); }
+  else if(a==='chep-vanban'){
+    var m = document.getElementById('vbMau');
+    if(m && navigator.clipboard) navigator.clipboard.writeText(m.textContent)
+      .then(function(){ U.toast('Đã sao chép mẫu. Bản dán ra ngoài vẫn mang mật mã kín theo người xuất.','ok'); })
+      .catch(function(){ U.toast('Trình duyệt chưa cho phép sao chép.','err'); });
+  }
+  else if(a==='mo-fb'){
+    var fb = (G.LIENKET&&G.LIENKET.facebook)||'';
+    if(!fb){ U.toast('Chưa đặt đường dẫn group. Sửa ở G.LIENKET.facebook.','err'); return; }
+    if(G.secLog) G.secLog('Mở group Facebook', 'Kèm mã giới thiệu của tài khoản đang đăng nhập', 'Ghi nhận');
+    window.open(fb, '_blank', 'noopener');
+  }
+  else if(a==='mo-tg'){
+    var tg = (G.LIENKET&&G.LIENKET.telegram)||'';
+    if(!tg){ U.toast('Chưa đặt đường dẫn Telegram.','err'); return; }
+    window.open(tg, '_blank', 'noopener');
+  }
+  else if(a==='kiem-ban-moi'){
+    U.toast('Đang kiểm bản mới…','ok');
+    fetch('manifest.webmanifest', {cache:'no-store'})
+      .then(function(){ U.toast('Đang dùng bản mới nhất · v'+G.META.version+'. Kho đã cấp phép nằm sẵn trong máy.','ok'); })
+      .catch(function(){ U.toast('Chưa có mạng. Ứng dụng vẫn chạy đủ bằng dữ liệu trong máy.','err'); });
+  }
   else if(a==='doi-qua') U.toast('Đã ghi nhận. Quà sẽ được gửi sau khi coach xác nhận bằng chứng của mốc này.','ok');
   else if(a==='join-cuhich') U.toast('Đã ghi nhận. Coach sẽ mở cú hích này cùng nhà mình ở buổi gần nhất.','ok');
   else if(a==='join-event') U.toast('Đã giữ chỗ. Thư xác nhận sẽ tới hộp thư của anh chị.','ok');
@@ -759,10 +891,16 @@ function sparks(){
    xin cấp phép, không hiện nội dung. */
 var GOI_NGHE = ['kho','phac-do','kich-ban','mo-thuc','sach','ngon-tu','tro-ly','diem-cham',
   'tuvan-deck','hai-long','tai-lieu-khach','kiem-thu','chuan-1000','ai-dieu-phoi',
-  'an-toan-du-lieu','hoc-tu-lon','tang-quyen','vong-doi-tk','hang-tai-lieu','dau-mat','dong-chay'];
+  'an-toan-du-lieu','hoc-tu-lon','tang-quyen','vong-doi-tk','hang-tai-lieu','dau-mat','dong-chay',
+  'tinh-huong','bando-tuvan','bando-coach','van-ban','tai-chinh-qt','thanh-tra',
+  'ra-soat-kh','xuat-du-lieu','quy-trinh-tc'];
 var GOI_MO = ['toi','bat-dau'];
+/* Bộ test nhận diện nằm trong gói theo tầng: khách hàng đã được cấp phép
+   tầng nào thì làm được bài của tầng đó, không cần quyền nghề. */
+var GOI_RIENG = { 'bo-test':'tang1' };
 G.goiCanCho = function(v){
   if(GOI_MO.indexOf(v) >= 0) return null;
+  if(GOI_RIENG[v]) return GOI_RIENG[v];
   return GOI_NGHE.indexOf(v) >= 0 ? 'nghe' : 'nen';
 };
 G.coGoi = function(g){ return !g || G.KHO.daNap.indexOf(g) >= 0; };

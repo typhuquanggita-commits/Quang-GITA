@@ -30,21 +30,26 @@ const G = global.window.G;
 
 /* ─── Chia gói theo phạm vi cấp phép ─── */
 const NEN = ['VANHANH', 'CHUYENDICH', 'CHANDUNG', 'LOTRINH', 'FAMILIES', 'TEAM', 'CUHICH',
-  'NGHILE', 'SUKIEN', 'HEALTH', 'DUYET', 'AUDIT', 'TODAY', 'LEVELS', 'DIEM', 'HUYHIEU',
+  'NGHILE', 'SUKIEN', 'HEALTH', 'DUYET', 'AUDIT', 'TODAY', 'LEVELS', 'DIEM', 'HUYHIEU', 'KPI100',
   'QUA', 'HOAHONG', 'DANDAT', 'BRAND', 'RASOAT', 'TAMNHIN100', 'TANG100', 'WOW',
-  'NHATBAN', 'CHIPHI', 'NGONTU_RANH', 'DAISU', 'BAIHOC'];
+  'NHATBAN', 'CHIPHI', 'NGONTU_RANH', 'DAISU', 'BAIHOC', 'QUA1000', 'QUA_DANG', 'KETNOI', 'LIENKET'];
 
 const NGHE = ['MOTHUC', 'SACH', 'BANDO_A3', 'POSTER', 'SODO', 'PHACDO',
   'DIEMCHAM', 'NGONTU', 'NGONTU_TANG', 'THAYVI', 'MAUTHOAI', 'PERSONA',
   'CHUAN1000', 'HAILONG', 'TAILIEU', 'AIPOLICY', 'KPI', 'DINHTUYEN', 'AINANGCAP',
   'LACHAN', 'BENCH', 'BENCH_AI',
-  'LUAT_TK', 'TAIKHOAN_KPI', 'YEUCAU_MO', 'HANG_TL', 'DAU_MAT', 'QUYTRINH'];
+  'LUAT_TK', 'TAIKHOAN_KPI', 'YEUCAU_MO', 'HANG_TL', 'DAU_MAT', 'QUYTRINH',
+  'VANBAN', 'TAICHINH_QT', 'THANHTRA', 'RASOAT_KH', 'BANDO_TUVAN', 'BANDO_COACH',
+  'XUAT', 'TINHHUONG', 'KHUNG_T5', 'THANHTOAN'];
 
 const goi = {};
 goi.nen  = Object.fromEntries(NEN.map(k => [k, G[k]]).filter(([, v]) => v !== undefined));
 goi.nghe = Object.fromEntries(NGHE.map(k => [k, G[k]]).filter(([, v]) => v !== undefined));
 for (let t = 1; t <= 5; t++)
-  goi['tang' + t] = { KICHBAN: (G.KICHBAN || []).filter(k => k.tang === 'T' + t) };
+  goi['tang' + t] = {
+    KICHBAN: (G.KICHBAN || []).filter(k => k.tang === 'T' + t),
+    TEST750: (G.TEST750 || []).filter(b => b.tang === 'T' + t)
+  };
 
 /* ─── Mã hoá ─── */
 fs.mkdirSync(RA, { recursive: true });
@@ -80,7 +85,10 @@ const mau = {
   PHACDO: (G.PHACDO || []).slice(0, 6)
     .map(p => ({ ma: p.ma, nhom: p.nhom, nhomTen: p.nhomTen, ten: p.ten })),
   MOTHUC: (G.MOTHUC || []).slice(0, 4)
-    .map(m => ({ id: m.id, title: m.title, summary: (m.summary || '').slice(0, 120) + '… [cần cấp phép]' }))
+    .map(m => ({ id: m.id, title: m.title, summary: (m.summary || '').slice(0, 120) + '… [cần cấp phép]' })),
+  /* Một bài test rút gọn, đủ để thấy cách chấm và cách phân nhóm. */
+  TEST750: (G.TEST750 || []).filter(b => b.tang === 'T1').slice(0, 1)
+    .map(b => ({ ...b, mau: true, cau: b.cau.slice(0, 6) }))
 };
 fs.writeFileSync(path.join(RA, 'mau.json'), JSON.stringify(mau));
 

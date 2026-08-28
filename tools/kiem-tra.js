@@ -143,6 +143,48 @@ const { chromium } = require(PW);
   bao(pwa.display === 'standalone', 'mở toàn màn hình như ứng dụng thật');
   bao(pwa.tep >= 25, 'service worker phủ đủ tệp để chạy khi mất mạng', pwa.tep + ' tệp');
 
+  /* ── 5. Bộ test nhận diện và KPI về đích ── */
+  console.log('\n5 · BỘ TEST NHẬN DIỆN & KPI VỀ ĐÍCH');
+  await p.evaluate(() => window.G.doLogin('phuhuynh@gita365.vn'));
+  await p.waitForTimeout(2000);
+  const t5 = await p.evaluate(() => {
+    const G = window.G, T = G.TEST750 || [];
+    const soCau = T.reduce((a, b) => a + b.cau.length, 0);
+    const soChon = T.reduce((a, b) => a + b.cau.reduce((x, c) => x + c.chon.length, 0), 0);
+    const sai = T.filter(b => b.mien.length !== 6 || b.nhom.length !== 4 ||
+      b.cau.some(c => c.chon.length !== 4 || b.mien.indexOf(c.mien) < 0 ||
+        c.chon.map(x => x.muc).join() !== '1,2,3,4')).map(b => b.ma);
+    /* Chấm thử: chọn hết mức 1 phải ra ĐỎ, chọn hết mức 4 phải ra XANH */
+    const b0 = T[0];
+    const thap = {}, cao = {};
+    b0.cau.forEach(c => { thap[c.id] = 1; cao[c.id] = 4; });
+    const kThap = G.chamTest(b0, thap), kCao = G.chamTest(b0, cao);
+    /* Bài dở dang không được coi là xong */
+    const mot = {}; mot[b0.cau[0].id] = 3;
+    const kMot = G.chamTest(b0, mot);
+    const K = G.KPI100 || { diem: [] };
+    return {
+      soBo: T.length, soCau, soChon, sai,
+      tangDu: [...new Set(T.map(b => b.tang))].sort().join(','),
+      thap: kThap.diem, thapNhom: kThap.nhom.code,
+      cao: kCao.diem, caoNhom: kCao.nhom.code,
+      motMien: Object.keys(kMot.mien).filter(m => kMot.mien[m] === null).length,
+      soDiem: K.diem.length,
+      soTC: K.diem.reduce((a, d) => a + d.tc.length, 0),
+      lechTC: K.diem.filter(d => d.tc.length !== 10).map(d => d.no)
+    };
+  });
+  bao(t5.soBo === 25, 'đủ 25 bộ test — năm nhóm bài mỗi tầng', t5.soBo + ' bộ');
+  bao(t5.soCau === 750, 'đủ 750 câu — 150 câu mỗi tầng', t5.soCau + ' câu');
+  bao(t5.soChon === 3000, 'mỗi câu đúng bốn lựa chọn', t5.soChon + ' lựa chọn');
+  bao(!t5.sai.length, 'mọi bộ đủ 6 miền · 4 nhóm · mức 1–4', t5.sai.join(' ') || 'không bộ nào lệch');
+  bao(t5.tangDu === 'T1,T2,T3,T4,T5', 'phủ đủ năm tầng', t5.tangDu);
+  bao(t5.thap === 0 && t5.thapNhom === 'DO', 'chọn hết mức 1 rơi đúng nhóm ĐỎ', t5.thap + ' · ' + t5.thapNhom);
+  bao(t5.cao === 100 && t5.caoNhom === 'XANH', 'chọn hết mức 4 rơi đúng nhóm XANH', t5.cao + ' · ' + t5.caoNhom);
+  bao(t5.motMien === 5, 'miền chưa trả lời không bị chấm bừa', t5.motMien + ' miền bỏ trống');
+  bao(t5.soDiem === 10, 'đủ mười điểm mốc về đích', t5.soDiem + ' điểm');
+  bao(t5.soTC === 100 && !t5.lechTC.length, 'đủ một trăm tiêu chí, mỗi mốc mười', t5.soTC + ' tiêu chí');
+
   console.log('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành'));
   await b.close();
   process.exit(loi ? 1 : 0);

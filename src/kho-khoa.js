@@ -34,7 +34,9 @@ G.THUOC_CAP_PHEP = [
   'MOTHUC','SACH','BANDO_A3','POSTER','SODO','PHACDO','DIEMCHAM','NGONTU','NGONTU_TANG',
   'THAYVI','MAUTHOAI','PERSONA','CHUAN1000','HAILONG','TAILIEU','AIPOLICY','KPI','DINHTUYEN',
   'AINANGCAP','LACHAN','BENCH','BENCH_AI','KICHBAN',
-  'LUAT_TK','TAIKHOAN_KPI','YEUCAU_MO','HANG_TL','DAU_MAT','QUYTRINH'
+  'LUAT_TK','TAIKHOAN_KPI','YEUCAU_MO','HANG_TL','DAU_MAT','QUYTRINH',
+  'QUA1000','QUA_DANG','KETNOI','LIENKET','VANBAN','TAICHINH_QT','THANHTRA','RASOAT_KH',
+  'BANDO_TUVAN','BANDO_COACH','XUAT','TINHHUONG','KHUNG_T5','THANHTOAN','TEST750','KPI100'
 ];
 function donKho(){
   G.THUOC_CAP_PHEP.forEach(function(k){ try{ delete G[k]; }catch(e){ G[k] = undefined; } });
@@ -99,7 +101,7 @@ function moGoi(ten, khoaB64) {
 /* ── Gộp nội dung đã mở vào G, chỉ trong bộ nhớ ── */
 function gop(du) {
   Object.keys(du).forEach(function (k) {
-    if (k === 'KICHBAN') G.KICHBAN = (G.KICHBAN || []).concat(du[k]);
+    if (k === 'KICHBAN' || k === 'TEST750') G[k] = (G[k] || []).concat(du[k]);
     else G[k] = du[k];
   });
 }
@@ -112,15 +114,18 @@ function napMau() {
       G.KICHBAN = m.KICHBAN || [];
       G.PHACDO = m.PHACDO || [];
       G.MOTHUC = m.MOTHUC || [];
+      G.TEST750 = m.TEST750 || [];
     })
-    .catch(function () { G.KHO.cheDoMau = true; G.KICHBAN = []; G.PHACDO = []; G.MOTHUC = []; });
+    .catch(function () {
+      G.KHO.cheDoMau = true; G.KICHBAN = []; G.PHACDO = []; G.MOTHUC = []; G.TEST750 = [];
+    });
 }
 
 /* ── Nạp kho cho phiên làm việc hiện tại ── */
 G.napKho = function () {
   donKho();
   var ds = G.goiDuocCap();
-  G.KICHBAN = [];
+  G.KICHBAN = []; G.TEST750 = [];
   return xinKhoa(ds)
     .then(function (khoa) {
       if (!khoa) return napMau();

@@ -155,6 +155,19 @@ G.ITEM_EN = {
   'hang-tai-lieu':['Document ranking 1–100','KPI and rank unlock better material'],
   'dau-mat':['Hidden document marks','Five layers · trace any leak'],
   'dong-chay':['Information flows','The seven flows that feed the ecosystem'],
+  'tinh-huong':['250 field situations','Key code · 7-day challenge · KPI'],
+  'kho-qua':['1,000 gift documents','Stuck somewhere? Open exactly that one'],
+  'ket-noi':['Ecosystem links','Sync · Facebook · Telegram'],
+  'bando-tuvan':['Customer operating map','Seven stages · learn it in four weeks'],
+  'bo-test':['Five-tier assessment set','25 sets · 750 questions · four customer bands'],
+  'kpi-100':['Ten milestones to the finish','10 milestones · 100 measurable criteria'],
+  'bando-coach':['Coaching map','Six beats a session · six ways to sharpen it'],
+  'van-ban':['Standard documents','22 templates across five kinds of work'],
+  'tai-chinh-qt':['Financial governance','6 principles · 5 ledgers · 6 controls'],
+  'thanh-tra':['Inspection & alerts','6 cycles · 10 time-bound alerts'],
+  'ra-soat-kh':['The twelve-face review','Never miss what a family needs'],
+  'xuat-du-lieu':['Data export','PDF records · CSV lists · permissions'],
+  'quy-trinh-tc':['Financial processes','Payment · refund · performance pay'],
   'dong-hanh':['Your companion','The advisor who always listens']
 };
 

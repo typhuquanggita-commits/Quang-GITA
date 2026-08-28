@@ -1,0 +1,452 @@
+/* ═══════════════════════════════════════════════════════════════
+   GITA 365 · v7.1 — VĂN BẢN · TÀI CHÍNH · THANH TRA · RÀ SOÁT ·
+   TÌNH HUỐNG · BẢN ĐỒ TƯ VẤN · BẢN ĐỒ COACHING · KHO QUÀ ·
+   KẾT NỐI · XUẤT DỮ LIỆU
+   ═══════════════════════════════════════════════════════════════ */
+'use strict';
+var G = window.G || {}; window.G = G;
+G.VIEWS = G.VIEWS || {};
+(function(){
+var U = G.U, h = U.h, ic = U.ic;
+
+/* ═══════════════ BỘ VĂN BẢN CHUẨN ═══════════════ */
+G.VIEWS['van-ban'] = function(){
+  if(!G.can('pro_consult')) return U.lockCard();
+  var tong = G.VANBAN.reduce(function(a,n){return a+n.ban.length;},0);
+  var o = U.ph({eyebrow:'NHÓM 05 · QUẢN TRỊ', ic:'book', grad:1, t:'Bộ văn bản chuẩn',
+    lead:'Hai mươi hai mẫu văn bản cho năm nhóm việc. Mỗi mẫu ghi rõ ai ký, lưu ở đâu, giữ bao lâu, các trường bắt buộc, và điều dễ làm sai nhất.'});
+
+  o += '<div class="grid g5 mb">' + G.VANBAN.map(function(n){
+    return '<button class="card pad-sm lift" data-vbn="'+h(n.nhom)+'" style="text-align:left;border-color:'+n.c+'2a">'+
+      '<div style="color:'+n.c+';margin-bottom:7px">'+ic(n.ic,'w-5 h-5')+'</div>'+
+      '<b class="sm" style="display:block;color:'+n.c+'">'+h(n.nhom)+'</b>'+
+      '<span class="tiny muted">'+n.ban.length+' mẫu</span></button>';
+  }).join('') + '</div>';
+
+  o += G.VANBAN.map(function(n){
+    return '<div class="mt2"><div class="up mb" style="color:'+n.c+'">'+h(n.nhom)+'</div>'+
+      '<div class="grid g2">' + n.ban.map(function(b){
+        return '<button class="card lift" data-vb="'+h(b.ma)+'" style="text-align:left;border-color:'+n.c+'22">'+
+          '<div class="row wrap" style="gap:7px;margin-bottom:7px">'+U.chip(b.ma,n.c)+
+          '<span class="tiny muted">'+h(b.ky)+'</span></div>'+
+          '<b class="sm" style="display:block;line-height:1.4;margin-bottom:6px">'+h(b.ten)+'</b>'+
+          '<p class="tiny muted" style="line-height:1.55">'+h(b.khi)+'</p>'+
+          '<div class="tiny mt" style="color:var(--ink-4)">'+ic('lock','w-3 h-3')+' '+h(b.luu)+'</div></button>';
+      }).join('') + '</div></div>';
+  }).join('');
+
+  o += '<p class="tiny muted center mt2">Tổng '+tong+' mẫu · mọi bản in ra đều mang mật mã kín theo người nhận</p>';
+  return o;
+};
+G.vanBanModal = function(ma){
+  var nb = null, b = null;
+  G.VANBAN.forEach(function(n){ n.ban.forEach(function(x){ if(x.ma===ma){ nb=n; b=x; } }); });
+  if(!b) return;
+  U.modal('<div class="row wrap" style="gap:7px;margin-bottom:9px">'+U.chip(b.ma,nb.c)+U.chip(nb.nhom)+'</div>'+
+    '<h2 style="font-size:21px;font-weight:800;margin-bottom:12px">'+h(b.ten)+'</h2>'+
+    '<div class="grid g3" style="gap:10px;margin-bottom:14px">'+
+      '<div class="card pad-sm"><div class="tiny up muted mb">AI KÝ</div><p class="sm">'+h(b.ky)+'</p></div>'+
+      '<div class="card pad-sm"><div class="tiny up muted mb">LƯU Ở ĐÂU</div><p class="sm">'+h(b.luu)+'</p></div>'+
+      '<div class="card pad-sm"><div class="tiny up muted mb">KHI NÀO DÙNG</div><p class="sm">'+h(b.khi)+'</p></div>'+
+    '</div>'+
+    '<div class="up mb" style="color:'+nb.c+'">CÁC TRƯỜNG BẮT BUỘC</div>'+U.list(b.truong, nb.c)+
+    '<div class="up mt2 mb" style="color:'+nb.c+'">MẪU</div>'+
+    '<pre id="vbMau" style="white-space:pre-wrap;font-family:var(--font);font-size:13.5px;line-height:1.75;'+
+    'padding:16px;border-radius:14px;background:rgba(255,255,255,.04);border:1px solid var(--line)">'+h(b.mau)+'</pre>'+
+    '<div class="card pad-sm mt2" style="border-color:rgba(251,146,60,.35);background:rgba(251,146,60,.06)">'+
+    '<div class="tiny up mb" style="color:var(--alert)">DỄ LÀM SAI NHẤT</div><p class="sm">'+h(b.luuY)+'</p></div>'+
+    '<div class="row mt2" style="gap:8px"><button class="btn pri sm" data-act="in-vanban">'+ic('arrow')+'In hoặc lưu PDF</button>'+
+    '<button class="btn ghost sm" data-act="chep-vanban">Sao chép mẫu</button></div>');
+};
+
+/* ═══════════════ QUẢN TRỊ TÀI CHÍNH ═══════════════ */
+G.VIEWS['tai-chinh-qt'] = function(){
+  if(!G.can('fin_view')) return U.lockCard();
+  var T = G.TAICHINH_QT;
+  var o = U.ph({eyebrow:'NHÓM 05 · QUẢN TRỊ', ic:'chart', grad:1, t:'Hệ quản trị tài chính', lead:T.cot});
+
+  o += '<div class="grid g3 mb">' + T.chiSo.map(function(c){
+    return '<div class="card pad-sm" style="border-color:'+c.c+'26">'+
+      '<div class="row" style="align-items:baseline;gap:9px;margin-bottom:5px">'+
+      '<b class="mono" style="font-size:22px;color:'+c.c+'">'+h(c.v)+'</b>'+
+      '<span class="tiny muted">chuẩn: '+h(c.chuan)+'</span></div>'+
+      '<div class="up" style="color:var(--ink-4);margin-bottom:6px">'+h(c.k)+'</div>'+
+      '<p class="tiny muted" style="line-height:1.55">'+h(c.y)+'</p></div>';
+  }).join('') + '</div>';
+
+  o += U.sec('SÁU NGUYÊN TẮC','Không có ngoại lệ vì thân quen, vì gấp, hay vì số nhỏ');
+  o += '<div class="grid g2">' + T.nguyenTac.map(function(n,i){
+    return '<div class="card pad-sm"><div class="row" style="gap:9px;margin-bottom:6px">'+
+      '<span class="pill" style="background:rgba(245,185,66,.18);color:var(--gold)">0'+(i+1)+'</span>'+
+      '<b class="sm">'+h(n.t)+'</b></div>'+
+      '<p class="tiny muted" style="line-height:1.6;padding-left:34px">'+h(n.d)+'</p></div>';
+  }).join('') + '</div>';
+
+  o += U.sec('NĂM SỔ','Mỗi sổ một người giữ, một nhịp, một bộ chứng từ');
+  o += U.tbl(['Sổ','Gồm chứng từ','Người giữ','Nhịp'], T.so.map(function(s){
+    return ['<b class="sm">'+h(s.ten)+'</b>','<span class="sm muted">'+h(s.gom)+'</span>',
+      '<span class="chip">'+h(s.ai)+'</span>','<span class="sm">'+h(s.nhip)+'</span>'];
+  }));
+
+  o += U.sec('SÁU CHỐT KIỂM SOÁT','');
+  o += '<div class="card">' + T.kiemSoat.map(function(k,i){
+    return '<div class="rule"><span class="n">'+(i+1)+'</span><div class="tx"><b>'+h(k)+'</b></div></div>';
+  }).join('') + '</div>';
+
+  o += '<div class="row mt2" style="gap:8px"><button class="btn ghost" data-go="van-ban">'+ic('book')+'Mở năm mẫu văn bản tài chính</button>'+
+    '<button class="btn ghost" data-go="hoa-hong">'+ic('share')+'Cơ chế hoa hồng đại sứ</button></div>';
+  return o;
+};
+
+/* ═══════════════ THANH TRA & CẢNH BÁO ═══════════════ */
+G.VIEWS['thanh-tra'] = function(){
+  if(!G.can('pro_report')) return U.lockCard();
+  var T = G.THANHTRA;
+  var o = U.ph({eyebrow:'NHÓM 05 · QUẢN TRỊ', ic:'pulse', grad:1, t:'Thanh tra & cảnh báo', lead:T.cot});
+
+  o += U.sec('SÁU CHU KỲ THANH TRA','Mỗi chu kỳ một người chịu trách nhiệm và một đầu ra cụ thể');
+  o += '<div class="grid g3">' + T.chuKy.map(function(c){
+    return '<div class="card lift" style="border-color:'+c.c+'2a">'+
+      '<div class="row wrap" style="gap:7px;margin-bottom:8px">'+U.chip(c.ky,c.c)+U.chip(c['giờ'])+'</div>'+
+      '<div class="tiny up muted mb">NGƯỜI CHỊU TRÁCH NHIỆM</div>'+
+      '<b class="sm" style="display:block;margin-bottom:9px;color:'+c.c+'">'+h(c.ai)+'</b>'+
+      '<div class="tiny up muted mb">RÀ NHỮNG GÌ</div>'+U.list(c.soat, c.c)+
+      '<div class="mt2" style="padding:10px 12px;border-radius:11px;background:'+c.c+'0d;border-left:2px solid '+c.c+'">'+
+      '<span class="tiny up" style="color:'+c.c+'">ĐẦU RA</span><p class="sm mt">'+h(c.ra)+'</p></div></div>';
+  }).join('') + '</div>';
+
+  o += U.sec('MƯỜI CẢNH BÁO','Mỗi cảnh báo có mức, người nhận, thời hạn xử lý và việc phải làm');
+  var mm = {'ĐỎ':'#F87171','CAM':'#FF7A45','VÀNG':'#F59E0B','XANH':'#10B981'};
+  o += U.tbl(['Mã','Mức','Điều kiện bật','Ai nhận','Trong','Việc phải làm'], T.canhBao.map(function(c){
+    return ['<span class="mono sm">'+h(c.ma)+'</span>',
+      '<span class="chip" style="color:'+mm[c.muc]+';border-color:'+mm[c.muc]+'66;background:'+mm[c.muc]+'14">'+h(c.muc)+'</span>',
+      '<span class="sm">'+h(c.dieu)+'</span>','<span class="tiny">'+h(c.ai)+'</span>',
+      '<b class="tiny mono">'+h(c.trong)+'</b>','<span class="tiny muted">'+h(c.viec)+'</span>'];
+  }));
+  return o;
+};
+
+/* ═══════════════ RÀ SOÁT KHÔNG BỎ SÓT ═══════════════ */
+G.VIEWS['ra-soat-kh'] = function(){
+  if(!G.can('pro_coach')) return U.lockCard();
+  var R = G.RASOAT_KH;
+  var xong = R.mat.filter(function(m,i){ return G.S.checks['m'+i]; }).length;
+  var o = U.ph({eyebrow:'NHÓM 05 · QUẢN TRỊ', ic:'target', grad:1, t:'Rà soát mười hai mặt', lead:R.cot});
+
+  o += '<div class="card glow mb"><div class="row wrap" style="gap:24px;align-items:center">'+
+    U.ring(Math.round(xong/R.mat.length*100),'#10B981','ĐÃ CHẠM')+
+    '<div class="grow" style="min-width:250px"><b style="font-size:16px;display:block;margin-bottom:6px">'+
+    xong+' / '+R.mat.length+' mặt đã chạm</b>'+
+    '<p class="sm dim">'+h(R.nhip)+'</p>'+
+    '<p class="sm mt" style="color:var(--bad)">'+h(R.luat)+'</p></div></div></div>';
+
+  o += '<div class="grid g2">' + R.mat.map(function(m,i){
+    var d = !!G.S.checks['m'+i];
+    return '<button class="ck '+(d?'done':'')+'" data-check="m'+i+'" style="align-items:flex-start">'+
+      '<span class="bx">'+ic('check','w-3 h-3')+'</span>'+
+      '<span class="tx"><b>'+h(m.ma)+' · '+h(m.ten)+'</b>'+
+      '<span style="display:block;margin-top:4px;font-style:italic;color:var(--gold-2)">"'+h(m.hoi)+'"</span>'+
+      '<span style="display:block;margin-top:5px;color:var(--bad)">⚠ '+h(m.dau)+'</span></span></button>';
+  }).join('') + '</div>';
+  return o;
+};
+
+/* ═══════════════ 250 TÌNH HUỐNG THỰC CHIẾN ═══════════════ */
+G.VIEWS['tinh-huong'] = function(){
+  if(!G.can('pro_consult')) return U.lockCard();
+  var ds = G.TINHHUONG || [];
+  var o = U.ph({eyebrow:'NHÓM 03 · KHO BÁU VẬT', ic:'ritual', grad:1, t:'Tình huống thực chiến',
+    lead:'Hai trăm năm mươi tình huống có thật, chia đều năm tầng và năm mươi nhóm. Mỗi tình huống có mã Key, phân tích, điểm mấu chốt, giải pháp, thử thách bảy ngày và KPI hoàn thành.'});
+
+  o += '<div class="grid g5 mb">' + ['T1','T2','T3','T4','T5'].map(function(t,i){
+    var tt = G.TIERS[i], n = ds.filter(function(x){return x.tang===t;}).length;
+    return U.stat({k:tt.code+' · '+G.tname(tt), v:n, d:'tình huống', c:tt.c});
+  }).join('') + '</div>';
+
+  o += '<div class="row wrap mb" style="gap:6px">'+
+    '<button class="chip on" data-thf="ALL">Tất cả</button>'+
+    G.TIERS.map(function(t){return '<button class="chip" data-thf="'+t.code+'">'+t.code+'</button>';}).join('')+'</div>';
+  o += G.searchBox('Tìm theo tình huống, mã Key, nhóm…','th');
+
+  o += '<div class="grid g-auto-lg mt" id="thList">' + ds.slice(0,48).map(G.thCard).join('') + '</div>'+
+    '<div class="center mt2"><button class="btn" data-act="th-more">Hiện thêm 48 tình huống</button>'+
+    '<p class="tiny muted mt">Đang hiện <b id="thCount">48</b> / '+ds.length+'</p></div>';
+  return o;
+};
+G.thCard = function(x){
+  var t = G.TIERS.filter(function(v){return v.code===x.tang;})[0] || G.TIERS[0];
+  return '<button class="card pad-sm lift" data-th="'+h(x.tang+'-'+x.stt)+'" '+
+    'data-s="'+h(((x.th||'')+' '+(x.key||'')+' '+(x.nhom||'')).toLowerCase())+'" data-f="'+h(x.tang)+'" style="text-align:left;border-color:'+t.c+'22">'+
+    '<div class="row wrap" style="gap:5px;margin-bottom:7px">'+U.chip(x.tang,t.c)+
+    (x.key?U.chip(String(x.key).split('–')[0].trim()):'')+'</div>'+
+    '<b class="sm" style="display:block;line-height:1.4;margin-bottom:5px">'+h(x.th)+'</b>'+
+    '<span class="tiny muted">'+h(x.nhom)+'</span></button>';
+};
+G.tinhHuongModal = function(id){
+  var p = id.split('-'), x = (G.TINHHUONG||[]).filter(function(v){return v.tang===p[0] && String(v.stt)===p[1];})[0];
+  if(!x) return;
+  var t = G.TIERS.filter(function(v){return v.code===x.tang;})[0] || G.TIERS[0];
+  var b = [['MÔ TẢ TÌNH HUỐNG',x.mo,'#94A3B8'],['PHÂN TÍCH',x.pt,'#8B5CF6'],
+    ['ĐIỂM MẤU CHỐT',x.chot,'#F5B942'],['GIẢI PHÁP THEO TẦNG',x.gp,'#10B981'],
+    ['THỬ THÁCH 7 NGÀY',x.tt,'#06B6D4'],['KPI HOÀN THÀNH',x.kpi,'#FF7A45'],['MỤC TIÊU CẦN ĐẠT',x.dich,'#FB7185']];
+  U.modal('<div class="row wrap" style="gap:6px;margin-bottom:9px">'+U.chip(x.tang+' · '+G.tname(t),t.c)+
+    (x.key?U.chip(x.key,'#F5B942'):'')+U.chip(x.nhom)+'</div>'+
+    '<h2 style="font-size:21px;font-weight:800;line-height:1.3;margin-bottom:14px">'+h(x.th)+'</h2>'+
+    b.map(function(y){ return y[1] ? '<div class="card pad-sm mb" style="border-color:'+y[2]+'2a">'+
+      '<div class="tiny up mb" style="color:'+y[2]+'">'+y[0]+'</div>'+
+      '<p class="sm" style="line-height:1.7">'+h(y[1])+'</p></div>' : ''; }).join(''));
+};
+
+/* ═══════════════ BẢN ĐỒ VẬN HÀNH CHO TƯ VẤN ═══════════════ */
+G.VIEWS['bando-tuvan'] = function(){
+  if(!G.can('pro_consult')) return U.lockCard();
+  var B = G.BANDO_TUVAN;
+  var o = U.ph({eyebrow:'NHÓM 05 · VẬN HÀNH', ic:'compass', grad:1, t:'Bản đồ vận hành khách hàng', lead:B.cot});
+  o += B.chang.map(function(c){
+    return '<div class="card lift mb" style="border-color:'+c.c+'2e">'+
+      '<div class="row wrap" style="gap:11px;margin-bottom:11px">'+
+      '<span style="width:36px;height:36px;border-radius:12px;display:grid;place-items:center;font-weight:900;'+
+      'background:'+c.c+'22;color:'+c.c+'">'+c.no+'</span>'+
+      '<b style="font-size:16px;color:'+c.c+'">'+h(c.ten)+'</b>'+U.chip(c.phut)+'</div>'+
+      '<div class="grid g2" style="gap:12px;margin-bottom:11px">'+
+        '<div><div class="tiny up muted mb">LÀM GÌ</div>'+U.list(c.lam, c.c)+'</div>'+
+        '<div><div class="tiny up muted mb">DẤU HIỆU ĐÃ XONG</div>'+
+        '<p class="sm" style="color:var(--ok);line-height:1.6">'+h(c.xong)+'</p>'+
+        '<div class="tiny up muted mt2 mb">SAI THƯỜNG GẶP</div>'+
+        '<p class="sm" style="color:var(--bad);line-height:1.6">'+h(c.sai)+'</p></div>'+
+      '</div>'+
+      (c.noi!=='—' ? '<div style="padding:14px 16px;border-radius:14px;background:'+c.c+'0f;border-left:2px solid '+c.c+'">'+
+        '<span class="tiny up" style="color:'+c.c+'">CÂU PHẢI NÓI</span>'+
+        '<p class="serif mt" style="font-size:15.5px;font-style:italic;line-height:1.6">'+h(c.noi)+'</p></div>' : '')+
+      '</div>';
+  }).join('');
+  o += '<div class="card mt2" style="border-color:rgba(245,185,66,.3)">'+
+    '<div class="row mb"><span style="color:var(--gold)">'+ic('calendar','w-4 h-4')+'</span><b>Học thuộc trong bốn tuần</b></div>'+
+    '<p class="sm dim">'+h(B.hoc)+'</p></div>';
+  return o;
+};
+
+/* ═══════════════ BẢN ĐỒ COACHING ═══════════════ */
+G.VIEWS['bando-coach'] = function(){
+  if(!G.can('pro_coach')) return U.lockCard();
+  var B = G.BANDO_COACH;
+  var o = U.ph({eyebrow:'NHÓM 05 · VẬN HÀNH', ic:'flame', grad:1, t:'Bản đồ coaching', lead:B.cot});
+  o += '<div class="tl">' + B.buoi.map(function(b){
+    return '<div class="tl-i" style="color:'+b.c+'"><div class="card" style="border-color:'+b.c+'2a">'+
+      '<div class="row wrap" style="gap:8px;margin-bottom:9px">'+U.chip('NHỊP '+b.no,b.c)+U.chip(b.phut+' phút')+'</div>'+
+      '<b style="font-size:15.5px;display:block;margin-bottom:9px;color:'+b.c+'">'+h(b.ten)+'</b>'+
+      '<p class="sm dim" style="line-height:1.65;margin-bottom:10px">'+h(b.lam)+'</p>'+
+      (b.hoi!=='—' ? '<div style="padding:11px 13px;border-radius:12px;background:'+b.c+'0d;border-left:2px solid '+b.c+';margin-bottom:10px">'+
+        '<span class="tiny up" style="color:'+b.c+'">CÂU HỎI</span>'+
+        '<p class="sm mt" style="font-style:italic">'+h(b.hoi)+'</p></div>' : '')+
+      '<div style="padding:11px 13px;border-radius:12px;background:rgba(248,113,113,.06);border:1px solid rgba(248,113,113,.2)">'+
+      '<span class="tiny up" style="color:var(--bad)">TRÁNH</span><p class="sm mt">'+h(b.tranh)+'</p></div></div></div>';
+  }).join('') + '</div>';
+  o += U.sec('SÁU ĐIỀU LÀM MỘT BUỔI HIỆU QUẢ HƠN','Đo được, sửa được, không phải cảm nhận');
+  o += '<div class="grid g2">' + B.toiUu.map(function(x,i){
+    return '<div class="card pad-sm"><div class="row" style="gap:9px;margin-bottom:6px">'+
+      '<span class="pill" style="background:rgba(16,185,129,.18);color:var(--ok)">0'+(i+1)+'</span>'+
+      '<b class="sm">'+h(x.t)+'</b></div>'+
+      '<p class="tiny muted" style="line-height:1.6;padding-left:34px">'+h(x.d)+'</p></div>';
+  }).join('') + '</div>';
+  return o;
+};
+
+/* ═══════════════ KHO 1.000 TÀI LIỆU QUÀ TẶNG ═══════════════ */
+G.VIEWS['kho-qua'] = function(){
+  var ds = G.QUA1000 || [];
+  var o = U.ph({eyebrow:'NHÓM 04 · CÚ HÍCH & NHỊP SỐNG', ic:'crown', grad:1, t:'Kho quà tặng',
+    lead:'Một nghìn tài liệu, mỗi tài liệu gắn đúng một vấn đề có thật và một dạng chuẩn thương hiệu. Gia đình mắc ở đâu, mở đúng tài liệu ở đó — không phải đọc cả kho.'});
+
+  o += '<div class="grid g5 mb">' + (G.QUA_DANG||[]).map(function(d){
+    var n = ds.filter(function(x){return x.dang===d.ma;}).length;
+    return '<div class="card pad-sm"><div class="row" style="gap:7px;margin-bottom:6px">'+
+      U.chip(d.ma,'#F5B942')+'<b class="mono tiny">'+n+'</b></div>'+
+      '<b class="sm" style="display:block;margin-bottom:5px">'+h(d.ten)+'</b>'+
+      '<p class="tiny muted" style="line-height:1.5">'+h(d.mo)+'</p></div>';
+  }).join('') + '</div>';
+
+  o += '<div class="row wrap mb" style="gap:6px">'+
+    '<button class="chip on" data-qf="ALL">Tất cả</button>'+
+    G.TIERS.map(function(t){return '<button class="chip" data-qf="'+t.code+'">'+t.code+'</button>';}).join('')+
+    (G.QUA_DANG||[]).map(function(d){return '<button class="chip" data-qf="'+d.ma+'">'+h(d.ten)+'</button>';}).join('')+'</div>';
+  o += G.searchBox('Tìm tài liệu theo tên vấn đề hoặc nhóm…','qt');
+
+  o += '<div class="grid g-auto mt" id="qtList">' + ds.slice(0,60).map(G.qtCard).join('') + '</div>'+
+    '<div class="center mt2"><button class="btn" data-act="qt-more">Hiện thêm 60 tài liệu</button>'+
+    '<p class="tiny muted mt">Đang hiện <b id="qtCount">60</b> / '+ds.length+'</p></div>';
+  return o;
+};
+G.qtCard = function(q){
+  var t = G.TIERS.filter(function(v){return v.code===q.tang;})[0] || G.TIERS[0];
+  return '<div class="card pad-sm lift" data-s="'+h((q.ten+' '+q.nhom).toLowerCase())+'" '+
+    'data-f="'+h(q.tang+' '+q.dang)+'" style="border-color:'+t.c+'1f">'+
+    '<div class="row wrap" style="gap:5px;margin-bottom:6px">'+U.chip(q.ma)+U.chip(q.tang,t.c)+
+    '<span class="tiny mono" style="color:var(--gold)">'+q.diem+' điểm</span></div>'+
+    '<b class="sm" style="display:block;line-height:1.4;margin-bottom:5px">'+h(q.ten)+'</b>'+
+    '<span class="tiny muted">'+h(q.nv)+'</span></div>';
+};
+
+/* ═══════════════ KẾT NỐI HỆ SINH THÁI ═══════════════ */
+G.VIEWS['ket-noi'] = function(){
+  var K = G.KETNOI, L = G.LIENKET;
+  var o = U.ph({eyebrow:'NHÓM 05 · HỆ SINH THÁI', ic:'orbit', grad:1, t:'Kết nối hệ sinh thái', lead:K.cot});
+
+  o += '<div class="card glow mb"><div class="row wrap" style="gap:14px;align-items:center">'+
+    '<span style="width:44px;height:44px;border-radius:14px;display:grid;place-items:center;background:rgba(245,185,66,.18);color:var(--gold);flex:none">'+ic('pulse','w-5 h-5')+'</span>'+
+    '<div class="grow" style="min-width:230px"><b style="font-size:16px;display:block">'+h(K.dongBo.ten)+'</b>'+
+    '<p class="sm muted mt">Nhịp: '+h(K.dongBo.nhip)+'</p></div>'+
+    '<button class="btn pri" data-act="kiem-ban-moi">'+ic('arrow')+'Kiểm tra bản mới</button></div>'+
+    '<div class="mt2">' + K.dongBo.cach.map(function(c){
+      return '<div class="rule"><span class="n">'+c.b+'</span><div class="tx"><b>'+h(c.t)+'</b><p>'+h(c.d)+'</p></div></div>';
+    }).join('') + '</div></div>';
+
+  o += '<div class="grid g2">';
+  o += '<div class="card lift" style="border-color:'+K.facebook.c+'2e">'+
+    '<div class="row" style="gap:10px;margin-bottom:9px">'+
+    '<span style="width:36px;height:36px;border-radius:12px;display:grid;place-items:center;background:'+K.facebook.c+'22;color:'+K.facebook.c+'">'+ic('users','w-5 h-5')+'</span>'+
+    '<b style="font-size:15.5px;color:'+K.facebook.c+'">'+h(K.facebook.ten)+'</b></div>'+
+    '<p class="sm dim" style="line-height:1.65;margin-bottom:10px">'+h(K.facebook.lam)+'</p>'+
+    '<div class="tiny up muted mb">BỐN BƯỚC THAM GIA</div>'+U.list(K.facebook.buoc, K.facebook.c)+
+    '<div class="mt2" style="padding:11px 13px;border-radius:12px;background:rgba(248,113,113,.06);border:1px solid rgba(248,113,113,.2)">'+
+    '<p class="sm">'+h(K.facebook.luat)+'</p></div>'+
+    '<button class="btn pri blk mt2" data-act="mo-fb">'+ic('share')+'Đăng ký tham gia group</button>'+
+    '<p class="tiny muted mt center">'+h(L.facebook)+'</p></div>';
+
+  o += '<div class="card lift" style="border-color:'+K.telegram.c+'2e">'+
+    '<div class="row" style="gap:10px;margin-bottom:9px">'+
+    '<span style="width:36px;height:36px;border-radius:12px;display:grid;place-items:center;background:'+K.telegram.c+'22;color:'+K.telegram.c+'">'+ic('share','w-5 h-5')+'</span>'+
+    '<div><b style="font-size:15.5px;color:'+K.telegram.c+';display:block">'+h(K.telegram.ten)+'</b>'+
+    '<span class="mono tiny muted">'+h(K.telegram.sdt)+'</span></div></div>'+
+    '<p class="sm dim" style="line-height:1.65;margin-bottom:10px">'+h(K.telegram.lam)+'</p>'+
+    '<div class="tiny up muted mb">GHÉP NỐI</div>'+U.list(K.telegram.buoc, K.telegram.c)+
+    '<div class="tiny up muted mt2 mb">HỆ THỐNG GỬI GÌ</div>'+U.list(K.telegram.gui, K.telegram.c)+
+    '<div class="mt2" style="padding:11px 13px;border-radius:12px;background:rgba(248,113,113,.06);border:1px solid rgba(248,113,113,.2)">'+
+    '<p class="sm">'+h(K.telegram.luat)+'</p></div>'+
+    '<button class="btn pri blk mt2" data-act="mo-tg">'+ic('share')+'Mở Telegram GITA 365</button></div>';
+  o += '</div>';
+  return o;
+};
+
+/* ═══════════════ XUẤT DỮ LIỆU ═══════════════ */
+G.VIEWS['xuat-du-lieu'] = function(){
+  if(!G.can('pro_coach')) return U.lockCard();
+  var X = G.XUAT;
+  var o = U.ph({eyebrow:'NHÓM 05 · VẬN HÀNH', ic:'out', grad:1, t:'Xuất dữ liệu', lead:X.cot});
+
+  o += '<div class="grid g2">' + X.loai.map(function(l){
+    var duoc = G.can(l.quyen);
+    return '<div class="card '+(duoc?'lift':'')+'" style="border-color:'+l.c+(duoc?'2e':'14')+';'+(duoc?'':'opacity:.6')+'">'+
+      '<div class="row wrap" style="gap:8px;margin-bottom:8px">'+U.chip(l.ma,l.c)+
+      (duoc?'<span class="chip on">'+ic('check','w-3 h-3')+' được xuất</span>'
+           :'<span class="chip">'+ic('lock','w-3 h-3')+' cần quyền '+h(l.quyen)+'</span>')+'</div>'+
+      '<b style="font-size:15px;display:block;margin-bottom:8px;color:'+l.c+'">'+h(l.ten)+'</b>'+
+      '<div class="tiny up muted mb">GỒM</div><p class="sm dim" style="line-height:1.6;margin-bottom:9px">'+h(l.gom)+'</p>'+
+      '<div class="tiny up muted mb">DÙNG KHI NÀO</div><p class="sm muted" style="line-height:1.6">'+h(l.dung)+'</p>'+
+      (duoc ? '<button class="btn pri blk mt2" data-act="xuat" data-ma="'+h(l.ma)+'">'+ic('out')+'Xuất '+
+        (l.ten.indexOf('PDF')>=0?'PDF':'CSV')+'</button>'
+            : '<button class="btn ghost blk mt2" disabled style="opacity:.5">Ngoài phạm vi vai này</button>')+
+      '</div>';
+  }).join('') + '</div>';
+
+  o += U.sec('NĂM LUẬT XUẤT DỮ LIỆU','Admin chỉ định vai nào được xuất loại nào');
+  o += '<div class="card">' + X.luat.map(function(l,i){
+    return '<div class="rule"><span class="n">'+(i+1)+'</span><div class="tx"><b>'+h(l)+'</b></div></div>';
+  }).join('') + '</div>';
+
+  if(G.can('sys_manage_user')){
+    o += U.sec('PHÂN QUYỀN XUẤT THEO VAI','Bật hoặc tắt cho từng vai cấp thấp hơn mình');
+    o += U.tbl(['Loại xuất','Quyền cần','Vai được xuất'], X.loai.map(function(l){
+      var vai = G.ROLES.filter(function(r){ return r.lv <= G.PERM[l.quyen]; });
+      return ['<span class="sm">'+h(l.ten)+'</span>','<span class="mono tiny">'+h(l.quyen)+'</span>',
+        '<div class="row wrap" style="gap:4px">'+vai.map(function(r){return U.chip(r.short,r.c);}).join('')+'</div>'];
+    }));
+  }
+  return o;
+};
+})();
+
+/* ═══════════════ QUY TRÌNH TÀI CHÍNH ═══════════════ */
+(function(){
+var U = G.U, h = U.h, ic = U.ic;
+G.VIEWS['quy-trinh-tc'] = function(){
+  if(!G.can('fin_view')) return U.lockCard();
+  var T = G.THANHTOAN;
+  var o = U.ph({eyebrow:'NHÓM 05 · QUẢN TRỊ', ic:'chart', grad:1, t:'Quy trình tài chính',
+    lead:'Ba quy trình chạy suốt vòng đời một gia đình và một người dẫn dắt: tiền vào, tiền trả lại, và tiền trả cho người làm nghề. Cả ba đều có công thức công khai và mốc thời gian cam kết.'});
+
+  /* Thanh toán */
+  o += U.sec(T.quyTrinhThu.ten, T.quyTrinhThu.cot);
+  o += '<div class="card glow mb"><div class="row wrap" style="gap:22px;align-items:center">'+
+    '<div style="width:150px;flex:none;background:#fff;border-radius:16px;padding:10px;text-align:center">'+
+    '<img src="'+h(T.taiKhoan.qrOnline)+'" alt="Mã QR thanh toán GITA 365" '+
+    'style="width:100%;border-radius:10px" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'block\'">'+
+    '<div style="display:none;color:#1B5CB8;font-size:11px;padding:24px 6px;line-height:1.5">Mã QR cần mạng để dựng.<br>Dùng số tài khoản bên cạnh.</div></div>'+
+    '<div class="grow" style="min-width:230px">'+
+    '<div class="up muted">TÀI KHOẢN NHẬN</div>'+
+    '<b style="font-size:19px;display:block;margin:4px 0 2px">'+h(T.taiKhoan.chuTk)+'</b>'+
+    '<b class="mono" style="font-size:22px;color:var(--gold);display:block">'+h(T.taiKhoan.soTk)+'</b>'+
+    '<p class="sm dim mt">'+h(T.taiKhoan.nganHang)+'</p>'+
+    '<div class="mt2" style="padding:11px 13px;border-radius:12px;background:rgba(245,185,66,.09);border-left:2px solid var(--gold)">'+
+    '<span class="tiny up" style="color:var(--gold)">NỘI DUNG CHUYỂN KHOẢN</span>'+
+    '<p class="mono sm mt">'+h(T.noiDungCk.mau)+'</p>'+
+    '<p class="tiny muted mt">Ví dụ: '+h(T.noiDungCk.vd)+' — '+h(T.noiDungCk.vi)+'</p></div></div></div>'+
+    '<p class="tiny muted mt2">'+h(T.taiKhoan.luuY)+'</p></div>';
+
+  o += '<div class="grid g5 mb">' + T.quyTrinhThu.buoc.map(function(b){
+    return '<div class="card pad-sm"><div class="row" style="gap:8px;margin-bottom:6px">'+
+      '<span class="pill" style="background:rgba(59,130,246,.2);color:#3B82F6">B'+b.b+'</span>'+
+      U.chip(b.ai)+'</div>'+
+      '<b class="sm" style="display:block;margin-bottom:6px">'+h(b.t)+'</b>'+
+      '<p class="tiny muted" style="line-height:1.55;margin-bottom:7px">'+h(b.lam)+'</p>'+
+      '<div class="tiny" style="color:var(--ok)">→ '+h(b.ra)+'</div>'+
+      '<div class="tiny mt" style="color:var(--ink-4)">'+h(b.trong)+'</div></div>';
+  }).join('') + '</div>';
+  o += U.tbl(['Tầng','Mốc thanh toán'], T.quyTrinhThu.moc.map(function(m){
+    return ['<b class="sm">'+h(m.m)+'</b>','<span class="sm">'+h(m.k)+'</span>']; }));
+
+  /* Hoàn trả */
+  o += U.sec(T.quyTrinhHoan.ten, T.quyTrinhHoan.cot);
+  o += '<div class="grid g5 mb">' + T.quyTrinhHoan.bac.map(function(b){
+    return '<div class="card pad-sm" style="border-color:'+b.c+'2e">'+
+      '<b class="mono" style="font-size:24px;color:'+b.c+';display:block">'+h(b.hoan)+'</b>'+
+      '<b class="sm" style="display:block;margin:6px 0">'+h(b.khi)+'</b>'+
+      '<p class="tiny muted" style="line-height:1.55;margin-bottom:7px">'+h(b.dk)+'</p>'+
+      '<p class="tiny" style="color:'+b.c+';line-height:1.55">'+h(b.vi)+'</p></div>';
+  }).join('') + '</div>';
+  o += '<div class="card mb">' + T.quyTrinhHoan.buoc.map(function(b){
+    return '<div class="rule"><span class="n">'+b.b+'</span><div class="tx"><b>'+h(b.t)+'</b>'+
+      '<p>'+h(b.ai)+' · '+h(b.trong)+'</p></div></div>';
+  }).join('') + '</div>';
+  o += '<div class="card mb" style="border-color:rgba(52,211,153,.35)">'+
+    '<div class="row"><span style="color:var(--ok)">'+ic('check','w-4 h-4')+'</span><b>Cam kết thời gian</b></div>'+
+    '<p class="sm dim mt">'+h(T.quyTrinhHoan.camKet)+'</p></div>';
+
+  /* Lương thưởng */
+  var L = T.luongThuong;
+  o += U.sec(L.ten, L.cot);
+  o += '<div class="card glow mb" style="border-color:rgba(245,185,66,.4)">'+
+    '<div class="up mb" style="color:var(--gold)">CÔNG THỨC</div>'+
+    '<p class="mono" style="font-size:14.5px;line-height:1.8;color:var(--gold-2)">'+h(L.congThuc)+'</p></div>';
+  o += '<div class="grid g2 mb">' + L.thanhPhan.map(function(p){
+    return '<div class="card" style="border-color:'+p.c+'2a">'+
+      '<b style="font-size:15px;display:block;margin-bottom:8px;color:'+p.c+'">'+h(p.t)+'</b>'+
+      '<p class="sm dim" style="line-height:1.65;margin-bottom:9px">'+h(p.tinh)+'</p>'+
+      '<div class="tiny muted">Nguồn dữ liệu: '+h(p.nguon)+'</div>'+
+      '<div class="tiny mt" style="color:var(--warn)">⚠ '+h(p.ghi)+'</div></div>';
+  }).join('') + '</div>';
+
+  o += U.sec('KPI TÍNH TỰ ĐỘNG','Năm thành phần, lấy thẳng từ dữ liệu hệ thống — không ai tự chấm cho mình');
+  o += U.tbl(['Thành phần','Tỉ trọng','Đo bằng gì'], L.kpiTu.map(function(k){
+    return ['<b class="sm">'+h(k.t)+'</b>','<b class="mono" style="color:var(--gold)">'+h(k.ty)+'</b>',
+      '<span class="sm muted">'+h(k.d)+'</span>']; }));
+
+  o += '<div class="card mt2" style="border-color:rgba(248,113,113,.3)">'+
+    '<div class="row mb"><span style="color:var(--bad)">'+ic('shield','w-4 h-4')+'</span><b>Năm chốt chặn</b></div>'+
+    L.chotChan.map(function(c,i){
+      return '<div class="rule"><span class="n" style="background:rgba(248,113,113,.16);color:var(--bad)">'+(i+1)+'</span>'+
+        '<div class="tx"><b>'+h(c)+'</b></div></div>'; }).join('')+
+    '<p class="tiny muted mt">'+h(L.chuKy)+'</p></div>';
+  return o;
+};
+})();
