@@ -96,8 +96,82 @@ G.famTable = function(list){
 };
 
 /* ═══════════════ CỔNG VÀO ═══════════════ */
+/* ═══════════════ TẦM NHÌN VÀ BẢN ĐỒ Ở CỔNG VÀO ═══════════════
+   Người lạ mở app lần đầu cần thấy GITA 365 đi về đâu và con đường
+   trông thế nào — trước cả khi nghĩ tới chuyện đăng nhập. */
+function banDoSVG(){
+  var T = G.TIERS, n = T.length;
+  var W = 560, H = 330, L = 46, R = 24;
+  var yDau = 238, yCuoi = 92;                 /* T1 thấp, T5 cao */
+  var b = (W - L - R) / (n - 1);
+  var x = function(i){ return L + i * b; };
+  var y = function(i){ return yDau - (yDau - yCuoi) * i / (n - 1); };
+
+  var o = '<svg viewBox="0 0 ' + W + ' ' + H + '" role="img" '+
+    'aria-label="Bản đồ gia đình thịnh vượng — năm chặng từ nhận diện tới bứt phá">'+
+    '<defs><linearGradient id="gDuong" x1="0" y1="1" x2="1" y2="0">'+
+    T.map(function(t, i){ return '<stop offset="' + Math.round(i / (n - 1) * 100) + '%" stop-color="' + t.c + '"/>'; }).join('')+
+    '</linearGradient></defs>';
+
+  /* Đích, đặt trên cùng bên phải — cách hẳn chặng T5 */
+  o += '<text x="' + (W - R) + '" y="24" text-anchor="end" font-size="12" font-weight="800" fill="#F5B942">Nhà mình tự chạy</text>'+
+       '<text x="' + (W - R) + '" y="41" text-anchor="end" font-size="10" fill="#8B85A6">không cần ai canh</text>';
+
+  /* Đường đi lên */
+  var d = T.map(function(t, i){ return (i ? 'L' : 'M') + x(i).toFixed(1) + ' ' + y(i).toFixed(1); }).join(' ');
+  o += '<path d="' + d + '" fill="none" stroke="url(#gDuong)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity=".8"/>';
+
+  /* Năm chặng */
+  T.forEach(function(t, i){
+    var cx = x(i), cy = y(i);
+    o += '<circle cx="' + cx.toFixed(1) + '" cy="' + cy.toFixed(1) + '" r="16" fill="' + t.c + '" opacity=".18"/>'+
+      '<circle cx="' + cx.toFixed(1) + '" cy="' + cy.toFixed(1) + '" r="10" fill="' + t.c + '"/>'+
+      '<text x="' + cx.toFixed(1) + '" y="' + (cy + 3.6).toFixed(1) + '" text-anchor="middle" '+
+      'font-size="10" font-weight="800" fill="#070510">' + h(t.code) + '</text>'+
+      '<text x="' + cx.toFixed(1) + '" y="' + (cy - 23).toFixed(1) + '" text-anchor="middle" '+
+      'font-size="11" font-weight="800" letter-spacing=".03em" fill="' + t.c + '">' + h(t.name) + '</text>'+
+      '<text x="' + cx.toFixed(1) + '" y="' + (cy + 27).toFixed(1) + '" text-anchor="middle" '+
+      'font-size="9.5" fill="#8B85A6">' + h(t.days + ' ngày') + '</text>';
+  });
+
+  /* Bốn miền G–I–T–A: lăng kính nằm dưới cả năm chặng */
+  o += '<text x="' + L + '" y="286" font-size="9" letter-spacing=".1em" fill="#655F7E">ĐỌC QUA BỐN MIỀN</text>';
+  /* Nhãn rút gọn cho ô hẹp. Tên đầy đủ nằm ở màn hình Bản đồ G–I–T–A. */
+  var NHAN = { G:'MỤC TIÊU', I:'NỘI LỰC', T:'NĂNG LỰC', A:'HÀNH ĐỘNG' };
+  var G4 = G.GITA, bg = (W - L - R) / 4, wo = bg - 6;
+  G4.forEach(function(g, i){
+    var gx = L + i * bg;
+    var nh = (g.k + ' · ' + (NHAN[g.k] || g.short.toUpperCase()));
+    /* Ước lượng bề rộng rồi co chữ nếu vẫn tràn — nhãn dài về sau cũng không vỡ ô */
+    var co = 9.5;
+    while (co > 6.5 && nh.length * co * 0.58 > wo - 8) co -= 0.5;
+    o += '<rect x="' + gx.toFixed(1) + '" y="296" width="' + wo.toFixed(1) + '" height="20" rx="6" fill="' + g.c + '" opacity=".16"/>'+
+      '<text x="' + (gx + wo / 2).toFixed(1) + '" y="310" text-anchor="middle" '+
+      'font-size="' + co + '" font-weight="700" letter-spacing=".04em" fill="' + g.c + '">' + h(nh) + '</text>';
+  });
+  return o + '</svg>';
+}
+
+function tamNhinBanDo(){
+  var C = G.CULTURE, TN = C.tamNhin, SM = C.suMenh;
+  return '<div class="tn-khoi">'+
+    '<div class="tn-nhan">'+ic('compass','w-4 h-4')+'<span>'+h(G.L('gateVisionEyebrow'))+'</span></div>'+
+    '<h3 class="tn-tieu">'+h(G.L('gateVisionTitle'))+'</h3>'+
+    '<p class="tn-lon">'+h(G.LANG==='en' && C.EN && C.EN.tamNhin ? C.EN.tamNhin.big : TN.big)+'</p>'+
+    '<p class="tn-nho">'+h(G.LANG==='en' && C.EN && C.EN.tamNhin ? C.EN.tamNhin.sub : TN.sub)+'</p>'+
+
+    '<div class="tn-bando">'+
+      '<div class="tn-bd-nhan">'+h(G.L('gateMapTitle'))+'</div>'+
+      banDoSVG()+
+    '</div>'+
+
+    '<div class="tn-sm">'+
+      '<div class="tiny up" style="color:var(--gold);margin-bottom:5px">'+h(SM.t)+'</div>'+
+      '<p class="sm" style="line-height:1.7;color:var(--ink-2)">'+h(SM.big)+'</p>'+
+    '</div></div>';
+}
+
 function gate(){
-  var pick = G.ACCOUNTS[12];
   var o = '<div id="gate">'+
    '<div class="gate-top"><div class="brand"><span class="mark">GITA</span>'+
    '<div><div class="nm">GITA 365</div><div class="sub">'+h(G.L('brandSub'))+'</div></div></div>'+
@@ -124,15 +198,7 @@ function gate(){
     '</div></div>'+
 
     '<div class="gate-card" id="loginCard">'+
-     '<h3>'+h(G.L('loginTitle'))+'</h3>'+
-     '<p class="hint">'+h(G.L('loginHint'))+'</p>'+
-     '<div class="rolelist">' + G.ACCOUNTS.map(function(a){
-       var r = G.roleById(a.role);
-       return '<button class="rl'+(a.role===pick.role?' on':'')+'" data-login="'+h(a.u)+'">'+
-         '<span class="av" style="background:linear-gradient(135deg,'+r.c+',#FF7A45)">'+h(a.role)+'</span>'+
-         '<span class="tx"><b>'+h(r.n)+'</b><span>'+h(a.ten)+' · '+h(a.nha)+'</span></span>'+
-         '<span class="lv">LV'+r.lv+'</span></button>';
-     }).join('') + '</div>'+
+     tamNhinBanDo()+
      '<div class="mt2" style="padding-top:16px;border-top:1px solid var(--line)">'+
        '<div class="tiny up muted mb">'+h(G.L('orLogin'))+'</div>'+
        '<div class="card pad-sm mb" style="border-color:rgba(245,185,66,.32);background:rgba(245,185,66,.06)">'+

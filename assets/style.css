@@ -536,3 +536,26 @@ main{grid-column:2;padding:26px 30px 90px;min-width:0}
 #wm span{font-size:13px;font-weight:700;letter-spacing:.08em;color:#fff;
   transform:rotate(-24deg);white-space:nowrap;text-align:center;user-select:none}
 @media print{#wm{opacity:.16}}
+
+
+/* ═══════════ TẦM NHÌN VÀ BẢN ĐỒ Ở CỔNG VÀO ═══════════ */
+.tn-khoi{display:flex;flex-direction:column;gap:13px}
+.tn-nhan{display:flex;align-items:center;gap:7px;font-size:10.5px;font-weight:800;
+  letter-spacing:.14em;color:var(--gold);text-transform:uppercase}
+.tn-nhan svg{width:15px;height:15px;flex:none}
+.tn-tieu{font-family:var(--serif);font-size:25px;font-weight:600;line-height:1.2;
+  letter-spacing:-.01em;margin:0;text-wrap:balance}
+.tn-lon{font-size:14.5px;line-height:1.72;color:var(--ink-2);margin:0}
+.tn-nho{font-size:12.5px;line-height:1.65;color:var(--ink-3);margin:0;font-style:italic}
+.tn-bando{border:1px solid var(--line);border-radius:var(--r);padding:13px 11px 9px;
+  background:linear-gradient(160deg,rgba(245,185,66,.05),rgba(139,92,246,.05));overflow:hidden}
+.tn-bd-nhan{font-size:9.5px;font-weight:800;letter-spacing:.12em;color:var(--ink-4);
+  text-transform:uppercase;margin-bottom:9px}
+/* Luật svg toàn cục ở đầu tệp ép mọi biểu tượng về 1.15em — bản đồ phải thoát ra */
+.tn-bando svg{width:100%!important;height:auto!important;flex:initial}
+.tn-sm{padding:12px 14px;border-radius:var(--r-sm);
+  background:rgba(245,185,66,.07);border-left:2px solid var(--gold)}
+@media(max-width:600px){
+  .tn-tieu{font-size:21px}
+  .tn-lon{font-size:13.5px}
+}
