@@ -248,6 +248,10 @@ function gitaDangNhap_(y) {
   var p = taoPhien_(nd);
   audit_({uid: nd.id, username: nd.username}, 'DANG_NHAP', nd.username, '');
   return {ok: true, token: p.token, hetHan: new Date(p.exp).toISOString(),
+    /* Cờ này để ứng dụng đưa thẳng người dùng tới màn đổi mật khẩu.
+       Máy chủ không trông chờ ứng dụng nghe lời: nó chặn cấp khoá ở phía
+       mình. Cờ chỉ để người dùng biết vì sao kho chưa mở. */
+    phaiDoiMk: isTrue(nd.mustChangePw),
     hoSo: {u: nd.username, ten: nd.hoTen, role: nd.role,
            portal: nd.portal || (ROLES[nd.role] || {}).portal || '',
            maKhachHang: nd.maKhachHang || ''}};
@@ -259,31 +263,116 @@ function gitaDangXuat_(y) {
 }
 
 /* ═══════════════ TÀI KHOẢN KHỞI ĐẦU ═══════════════
-   Chạy MỘT LẦN sau khi dựng sổ. Tạo tài khoản Super Admin theo đúng
-   thông tin anh Quang đặt. Đổi mật khẩu ngay trong lần đăng nhập đầu. */
+
+   Không có mật khẩu nào nằm sẵn trong tệp này.
+
+   Lý do: mã nguồn đi qua kho mã, qua tin nhắn, qua email, qua màn hình
+   người khác nhìn thấy. Một mật khẩu đặt cứng trong mã là mật khẩu đã lộ
+   kể từ dòng đầu tiên nó được viết ra.
+
+   Thay vào đó, máy chủ tự sinh một mật khẩu ngẫu nhiên khi cài đặt, hiện
+   MỘT LẦN trong log của người đang chạy hàm, và gửi kèm một thư về địa chỉ
+   hệ thống. Sau đó máy chủ KHÔNG mở kho cho tài khoản ấy cho tới khi mật
+   khẩu được đổi — không phải nhắc nhở, mà chặn thật. */
+
+/* Bốn mươi tám âm tiết dễ đọc, dễ chép lại đúng, không dấu để khỏi lỗi gõ. */
+var GITA_TU_MK = ['an','binh','yen','nha','tam','sang','vung','ben','minh','tue',
+  'kien','tri','nhan','hoa','tho','lang','xanh','bien','nui','song','gio','mua',
+  'nang','trang','sao','lua','mam','re','than','canh','la','hoa2','qua','hat',
+  'duong','loi','cau','buoc','nhip','vong','tay','long','tam2','chi','y','luc',
+  'hanh','duc'];
+
+/**
+ * Sinh mật khẩu tạm: năm âm tiết viết hoa chữ đầu, nối bằng gạch, thêm bốn số.
+ * Ví dụ: Binh-Yen-Kien-Tri-Vung-4827
+ * Khoảng mười nghìn tỉ khả năng — thừa cho một mật khẩu chỉ sống tới lần
+ * đăng nhập đầu tiên, mà vẫn chép tay lại được không sai.
+ */
+function gitaMatKhauTam_() {
+  var ra = [];
+  for (var i = 0; i < 5; i++) {
+    var t = GITA_TU_MK[Math.floor(Math.random() * GITA_TU_MK.length)].replace(/\d/g, '');
+    ra.push(t.charAt(0).toUpperCase() + t.slice(1));
+  }
+  var so = '';
+  for (var j = 0; j < 4; j++) so += Math.floor(Math.random() * 10);
+  return ra.join('-') + '-' + so;
+}
+
+/**
+ * Tạo tài khoản Super Admin. Chạy một lần, sau khi dựng sổ dữ liệu.
+ * Trả về mật khẩu tạm — đây là lần duy nhất nó hiện ra.
+ */
 function taoTaiKhoanKhoiDau() {
   var co = Store.all('users').filter(function (x) {
     return String(x.username || '').toLowerCase() === 'admin@gita365';
   })[0];
-  if (co) return 'Tài khoản Admin@gita365 đã có rồi — không tạo lại.';
+  if (co) return 'Tài khoản Admin@gita365 đã có rồi — không tạo lại.\n' +
+    'Quên mật khẩu thì chạy hàm datLaiMatKhauSuperAdmin.';
 
+  var mkTam = gitaMatKhauTam_();
   var muoi = Utilities.getUuid();
   Store.insert('users', {
     id: gitaMaMoi_('U'), username: 'Admin@gita365', hoTen: 'Trương Nhật Quang',
     email: GITA_EMAIL_HE_THONG, dienThoai: '0855554688',
     role: 'R01', portal: 'admin', studentId: '',
-    pwSalt: muoi, pwHash: hashPw_('@toiyeugita365#', muoi),
+    pwSalt: muoi, pwHash: hashPw_(mkTam, muoi),
     active: 'TRUE', createdAt: new Date().toISOString(), updatedAt: '', deletedAt: '',
-    maKhachHang: 'GITA-0001', boTro: ''
+    maKhachHang: 'GITA-0001', boTro: '',
+    mustChangePw: 'TRUE', pwDoiLuc: ''
   });
-  return 'Đã tạo Admin@gita365. ĐỔI MẬT KHẨU NGAY trong lần đăng nhập đầu tiên.';
+
+  gitaGuiThuMatKhauTam_('Admin@gita365', mkTam, 'Tài khoản Super Admin vừa được tạo.');
+  audit_(null, 'TAO_SUPER_ADMIN', 'Admin@gita365', 'Mật khẩu tạm sinh ngẫu nhiên, bắt buộc đổi');
+
+  return 'Đã tạo Admin@gita365.\n' +
+    '  Mật khẩu tạm: ' + mkTam + '\n' +
+    '  Chép ngay — dòng này không hiện lại lần thứ hai.\n' +
+    '  Một bản đã gửi tới ' + GITA_EMAIL_HE_THONG + '.\n' +
+    '  Máy chủ KHÔNG mở kho cho tài khoản này cho tới khi mật khẩu được đổi.';
+}
+
+/** Đặt lại mật khẩu Super Admin khi lỡ mất. Chạy trong Apps Script, không qua mạng. */
+function datLaiMatKhauSuperAdmin() {
+  var nd = Store.all('users').filter(function (x) {
+    return String(x.username || '').toLowerCase() === 'admin@gita365';
+  })[0];
+  if (!nd) return 'Chưa có tài khoản Admin@gita365. Chạy caiDatLanDau trước.';
+
+  var mkTam = gitaMatKhauTam_();
+  var muoi = Utilities.getUuid();
+  Store.update('users', nd.id, {
+    pwSalt: muoi, pwHash: hashPw_(mkTam, muoi),
+    mustChangePw: 'TRUE', pwDoiLuc: '', updatedAt: new Date().toISOString()
+  });
+  gitaGuiThuMatKhauTam_('Admin@gita365', mkTam, 'Mật khẩu Super Admin vừa được đặt lại từ Apps Script.');
+  audit_(null, 'DAT_LAI_SUPER_ADMIN', 'Admin@gita365', 'Đặt lại trực tiếp trong Apps Script');
+
+  return 'Đã đặt lại mật khẩu Admin@gita365.\n' +
+    '  Mật khẩu tạm: ' + mkTam + '\n' +
+    '  Chép ngay. Một bản đã gửi tới ' + GITA_EMAIL_HE_THONG + '.';
+}
+
+function gitaGuiThuMatKhauTam_(u, mk, dan) {
+  try {
+    MailApp.sendEmail(GITA_EMAIL_HE_THONG, 'GITA 365 — mật khẩu tạm của ' + u,
+      dan + '\n\n' +
+      'Tên đăng nhập : ' + u + '\n' +
+      'Mật khẩu tạm  : ' + mk + '\n\n' +
+      'Mật khẩu này chỉ dùng cho lần đăng nhập đầu tiên. Máy chủ không mở kho\n' +
+      'cho tài khoản này cho tới khi anh chị đổi sang mật khẩu của riêng mình.\n\n' +
+      'Nếu không phải anh chị vừa chạy cài đặt, hãy chạy lại hàm\n' +
+      'datLaiMatKhauSuperAdmin trong Apps Script ngay.\n\n' +
+      'Học viện GITA · 08.5555.4688');
+  } catch (e) { /* chưa cấp quyền gửi thư — mật khẩu vẫn hiện trong log */ }
 }
 
 /** Dựng cả máy chủ trong một nút bấm: sổ dữ liệu + tài khoản đầu tiên. */
 function caiDatLanDau() {
   var a = dungSoDuLieu();
   var b = taoTaiKhoanKhoiDau();
-  return a + '\n' + b + '\nCòn một việc: dán kho/khoa.json vào napBoKhoaMotLan rồi chạy hàm đó.';
+  return a + '\n\n' + b +
+    '\n\nCòn một việc: dán bộ khoá vào napBoKhoaMotLan rồi chạy hàm đó.';
 }
 
 /* ═══════════════ MẬT KHẨU ═══════════════

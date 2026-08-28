@@ -23,7 +23,7 @@ var G = window.G || {}; window.G = G;
 /* Địa chỉ máy chủ cấp phép. Để trống thì ứng dụng chạy ở chế độ mẫu. */
 G.API_CAP_PHEP = G.API_CAP_PHEP || '';
 
-G.KHO = { daNap: [], dangNap: [], cheDoMau: false, hanKhoa: null };
+G.KHO = { daNap: [], dangNap: [], cheDoMau: false, hanKhoa: null, lyDoTuChoi: '', maTuChoi: '' };
 
 /* Mọi thuộc tính do kho cấp phép nạp vào. Đổi vai là xoá sạch rồi nạp lại
    theo đúng phạm vi của vai mới — không để sót nội dung của vai trước. */
@@ -83,7 +83,21 @@ function xinKhoa(danhSach) {
     })
   }).then(function (r) { return r.json(); })
     .then(function (d) {
-      if (!d || !d.ok) throw new Error(d && d.error || 'Máy chủ chưa cấp khoá');
+      if (!d || !d.ok) {
+        /* Máy chủ từ chối có lý do, và lý do ấy phải tới được người dùng.
+           Rơi thẳng về chế độ mẫu mà không nói gì là cách chắc chắn nhất
+           để một người ngồi hàng giờ tưởng ứng dụng hỏng. */
+        G.KHO.lyDoTuChoi = (d && d.error) || 'Máy chủ chưa cấp khoá';
+        G.KHO.maTuChoi   = (d && d.code) || '';
+        if (d && d.code === 'MUSTCHANGE' && G.U && G.U.toast)
+          setTimeout(function () {
+            G.U.toast('Kho chưa mở vì tài khoản còn dùng mật khẩu tạm. ' +
+              'Đổi mật khẩu rồi đăng nhập lại.', 'err');
+            if (G.moDoiMatKhau) G.moDoiMatKhau();
+          }, 400);
+        throw new Error(G.KHO.lyDoTuChoi);
+      }
+      G.KHO.lyDoTuChoi = ''; G.KHO.maTuChoi = '';
       G.KHO.hanKhoa = d.hetHan || null;
       return d.khoa;
     });

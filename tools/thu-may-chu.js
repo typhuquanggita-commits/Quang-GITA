@@ -85,13 +85,21 @@ console.log('1 · CÀI ĐẶT LẦN ĐẦU');
 const cd = caiDatLanDau();
 bao(/Đã dựng 8 bảng/.test(cd), 'dựng đủ 8 bảng dữ liệu');
 bao(/Đã tạo Admin@gita365/.test(cd), 'tạo được tài khoản Super Admin');
+const mkTam = (cd.match(/Mật khẩu tạm: (\S+)/) || [])[1];
+bao(!!mkTam && mkTam.length >= 20, 'sinh mật khẩu tạm ngẫu nhiên, đủ dài', mkTam);
+bao(/^([A-Z][a-z]+-){5}\d{4}$/.test(mkTam || ''), 'mật khẩu tạm đọc và chép lại được');
+const nguon = fs.readdirSync('server').filter(f=>f.endsWith('.gs'))
+  .map(f=>fs.readFileSync('server/'+f,'utf8')).join('');
+bao(!/toiyeugita365/.test(nguon), 'KHÔNG còn mật khẩu nào nằm cứng trong mã nguồn');
+bao(mkTam !== gitaMatKhauTam_(), 'hai lần sinh ra hai mật khẩu khác nhau');
 bao(/không tạo lại/.test(taoTaiKhoanKhoiDau()), 'chạy lại không tạo trùng tài khoản');
 
 console.log('\n2 · ĐĂNG NHẬP');
 bao(!gitaDangNhap_({u:'Admin@gita365', mk:'sai-mat-khau'}).ok, 'sai mật khẩu thì từ chối');
 bao(!gitaDangNhap_({u:'khongcó@gita365.vn', mk:'x'}).ok, 'tài khoản không có thì từ chối');
-const dn = gitaDangNhap_({u:'Admin@gita365', mk:'@toiyeugita365#'});
-bao(dn.ok && dn.token, 'đúng mật khẩu thì cấp phiên', dn.ok?dn.hoSo.role+' · '+dn.hoSo.maKhachHang:'');
+const dn = gitaDangNhap_({u:'Admin@gita365', mk:mkTam});
+bao(dn.ok && dn.token, 'mật khẩu tạm đăng nhập được', dn.ok?dn.hoSo.role+' · '+dn.hoSo.maKhachHang:'');
+bao(dn.phaiDoiMk === true, 'đăng nhập báo rõ đang dùng mật khẩu tạm');
 bao(!!readSession_(dn.token), 'phiên đọc lại được');
 bao(!readSession_('token-bia-dat'), 'token bịa đặt thì không có phiên');
 
@@ -184,6 +192,33 @@ bao(kq2.ok, 'nạp khoá rồi thì cấp được');
 bao(!kq2.khoa.nghe, 'phụ huynh KHÔNG nhận được khoá kho nghề');
 bao(!kq2.khoa.tang5, 'phụ huynh tầng 1 KHÔNG nhận được khoá tầng 5');
 bao(!!kq2.khoa.nen && !!kq2.khoa.tang1, 'nhận đúng gói nền và tầng 1', Object.keys(kq2.khoa).join(', '));
+
+console.log('\n9 · MẬT KHẨU TẠM CHẶN MỞ KHO');
+const chan = goi({fn:'capKhoa', token:dn.token, u:'Admin@gita365', goi:['nen']});
+bao(!chan.ok && chan.code==='MUSTCHANGE',
+  'Super Admin dùng mật khẩu tạm thì KHÔNG mở được kho', chan.error||'');
+bao(Store.all('audit').some(x=>x.viec==='CAP_KHOA_CHAN'), 'lần bị chặn có vào nhật ký');
+
+const mkMoi = 'MotNhaBinhYen2026';
+const doiSai = goi({fn:'doiMatKhau', token:dn.token, u:'Admin@gita365', cu:'sai', moi:mkMoi});
+bao(!doiSai.ok, 'đổi mật khẩu mà nhập sai mật khẩu cũ thì từ chối');
+const doi = goi({fn:'doiMatKhau', token:dn.token, u:'Admin@gita365', cu:mkTam, moi:mkMoi});
+bao(doi.ok, 'đổi được mật khẩu ngay cả khi kho đang bị chặn', doi.error||'');
+
+const dn3 = gitaDangNhap_({u:'Admin@gita365', mk:mkMoi});
+bao(dn3.ok && dn3.phaiDoiMk === false, 'đăng nhập lại bằng mật khẩu mới, không còn cờ phải đổi');
+bao(!gitaDangNhap_({u:'Admin@gita365', mk:mkTam}).ok, 'mật khẩu tạm hết dùng được');
+const mo = goi({fn:'capKhoa', token:dn3.token, u:'Admin@gita365', goi:['nen','nghe','tang5']});
+bao(mo.ok && Object.keys(mo.khoa).length===3, 'đổi xong thì kho mở đủ cho Super Admin',
+  Object.keys(mo.khoa||{}).join(', '));
+
+const dl = datLaiMatKhauSuperAdmin();
+const mkTam2 = (dl.match(/Mật khẩu tạm: (\S+)/) || [])[1];
+bao(!!mkTam2 && mkTam2 !== mkTam, 'đặt lại được mật khẩu Super Admin từ Apps Script');
+const dn4 = gitaDangNhap_({u:'Admin@gita365', mk:mkTam2});
+bao(dn4.ok && dn4.phaiDoiMk === true, 'đặt lại xong thì lại bắt buộc đổi');
+bao(!goi({fn:'capKhoa', token:dn4.token, u:'Admin@gita365', goi:['nen']}).ok,
+  'và kho lại bị chặn cho tới khi đổi');
 
 console.log('\n' + (loi ? '✗ CÒN '+loi+' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — máy chủ chạy đúng'));
 process.exit(loi?1:0);

@@ -87,6 +87,15 @@ G.VIEWS['noi-may-chu'] = function(){
       (noi ? '<button class="btn ghost" data-act="mc-bo">'+ic('x','w-4 h-4')+'Bỏ nối</button>' : '')+
     '</div>'+
     '<div id="mcKq" class="mt"></div>'+
+    (G.KHO && G.KHO.lyDoTuChoi ?
+      '<div class="card pad-sm mt" style="border-color:var(--gita-do)">'+
+        '<b class="sm" style="color:var(--gita-do-ink)">'+ic('lock','w-3 h-3')+
+        ' Máy chủ đang từ chối cấp khoá</b>'+
+        '<p class="sm mt">'+h(G.KHO.lyDoTuChoi)+'</p>'+
+        (G.KHO.maTuChoi === 'MUSTCHANGE' ?
+          '<button class="btn pri sm mt" data-act="doi-mk-mo">'+ic('lock','w-3 h-3')+
+          'Đổi mật khẩu ngay</button>' : '')+
+      '</div>' : '')+
     '<p class="tiny muted mt">Địa chỉ này ghi vào máy đang dùng. Máy khác phải dán lại — '+
       'cố tình như vậy, để địa chỉ máy chủ không đi kèm bản phát hành.</p>'+
   '</div>';

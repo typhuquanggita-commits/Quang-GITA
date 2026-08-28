@@ -76,8 +76,21 @@ Chạy xong, log phải báo:
 
 ```
 Đã dựng 8 bảng trong "GITA365 — Sổ dữ liệu". Mở Drive để xem.
-Đã tạo Admin@gita365. ĐỔI MẬT KHẨU NGAY trong lần đăng nhập đầu tiên.
+
+Đã tạo Admin@gita365.
+  Mật khẩu tạm: Binh-Yen-Kien-Tri-Vung-4827
+  Chép ngay — dòng này không hiện lại lần thứ hai.
+  Một bản đã gửi tới typhuquanggita@gmail.com.
+  Máy chủ KHÔNG mở kho cho tài khoản này cho tới khi mật khẩu được đổi.
 ```
+
+**Chép mật khẩu tạm ngay.** Nó do máy sinh ngẫu nhiên, mỗi lần cài đặt một
+khác, và không hiện lại. Lỡ mất thì chạy hàm `datLaiMatKhauSuperAdmin` để
+sinh mật khẩu mới.
+
+Không có mật khẩu nào nằm sẵn trong mã. Mã nguồn đi qua kho mã, qua tin nhắn,
+qua email, qua màn hình người khác nhìn thấy — một mật khẩu đặt cứng trong mã
+là mật khẩu đã lộ kể từ dòng đầu tiên nó được viết ra.
 
 ### 5. Nạp bộ khoá
 
@@ -144,8 +157,14 @@ node tools/thu-may-chu.js
 ```
 
 Bộ này dựng một bản giả lập Apps Script rồi chạy toàn bộ mã trong `server/` trên
-đó: đăng nhập, đăng ký, OTP, kích hoạt, nâng tầng, cấp khoá, nhật ký. Bốn mươi
-chín điểm, phải xanh hết.
+đó: đăng nhập, đăng ký, OTP, kích hoạt, nâng tầng, cấp khoá, nhật ký, và luật
+chặn kho khi còn dùng mật khẩu tạm. Sáu mươi tư điểm, phải xanh hết.
+
+Thử luôn bản gộp một tệp — thứ thật sự được dán lên Apps Script:
+
+```
+node tools/thu-may-chu.js --gop
+```
 
 Sau khi triển khai, mở thẳng địa chỉ `/exec` trong trình duyệt. Phải thấy:
 
@@ -159,8 +178,10 @@ Sau khi triển khai, mở thẳng địa chỉ `/exec` trong trình duyệt. Ph
 
 ## Sau khi nối
 
-1. **Đổi mật khẩu Admin@gita365 ngay.** Mật khẩu khởi đầu `@toiyeugita365#` chỉ
-   dùng cho lần đăng nhập đầu.
+1. **Đổi mật khẩu Admin@gita365.** Không phải lời nhắc — máy chủ chặn thật:
+   tài khoản đăng nhập được và đổi mật khẩu được, nhưng **không mở được kho**
+   cho tới khi đổi xong. Xin khoá lúc ấy trả về mã `MUSTCHANGE`, và lần bị
+   chặn vào nhật ký.
 2. Mở sổ dữ liệu trong Drive, xem bảng `users` và `audit` — mọi việc đều có dòng.
 3. Mỗi lần mã hoá lại kho (`node tools/ma-hoa-kho.js`) mà bộ khoá đổi thì phải
    nạp lại. Bộ hiện tại giữ nguyên bảy khoá cũ nên giấy phép đã cấp vẫn dùng được.
@@ -175,6 +196,8 @@ Sau khi triển khai, mở thẳng địa chỉ `/exec` trong trình duyệt. Ph
 | `daNapKhoa: 0` | Chưa chạy `napBoKhoaMotLan` |
 | Đăng ký báo chưa gửi được thư | Chưa cấp quyền gửi email, chạy lại `caiDatLanDau` và cấp quyền |
 | Kho vẫn khoá sau khi nối | Đăng xuất rồi đăng nhập lại — khoá cấp lúc mở phiên |
+| Báo `MUSTCHANGE` | Còn đang dùng mật khẩu tạm. Đổi mật khẩu rồi kho mở |
+| Mất mật khẩu tạm | Chạy hàm `datLaiMatKhauSuperAdmin` trong Apps Script |
 | Sửa mã xong không thấy đổi | Phải `Deploy` → `Manage deployments` → sửa version thành **New version** |
 
 Cần người thật: **08.5555.4688**

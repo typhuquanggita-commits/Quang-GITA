@@ -104,7 +104,9 @@ if (mayChu) { try { process.kill(-mayChu.pid); } catch (e) {} }
    Mã trong server/ không chạy được ở máy, nên nếu không thử ở đây thì chỗ
    duy nhất phát hiện lỗi là máy chủ thật, lúc khách hàng đang đăng ký. */
 tieuDe('THỬ MÃ MÁY CHỦ');
+chay('node', ['tools/gop-may-chu.js']);
 chay('node', ['tools/thu-may-chu.js']);
+chay('node', ['tools/thu-may-chu.js', '--gop']);
 
 /* ─── 5b. Thử bản máy tính ─── */
 tieuDe('THỬ BẢN MÁY TÍNH');

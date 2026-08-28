@@ -104,7 +104,17 @@ function doPost(e) {
     if (y.fn === 'duyetTaiLieu')return ra(gitaDuyetTaiLieu_(y, hoSo));
     if (y.fn === 'nangTang')    return ra(gitaNangTang_(y, hoSo));
 
-    // 2. Chặn rút khoá hàng loạt
+    // 2. Mật khẩu tạm chưa đổi thì không mở kho
+    if (hoSo.phaiDoiMk) {
+      ghiNhatKy_({ viec: 'CAP_KHOA_CHAN', u: hoSo.u, role: hoSo.role, tier: hoSo.tier,
+        goi: '', may: String(y.may || '').slice(0, 120), phien: hoSo.phien,
+        chiTiet: 'Mật khẩu tạm chưa đổi' });
+      return ra({ ok: false, code: 'MUSTCHANGE',
+        error: 'Tài khoản đang dùng mật khẩu tạm do máy sinh ra. ' +
+               'Đổi sang mật khẩu của riêng anh chị rồi kho mới mở.' });
+    }
+
+    // 3. Chặn rút khoá hàng loạt
     var soLan = gitaDemXinKhoa_(hoSo.u);
     if (soLan > GITA_TRAN_XIN_KHOA_GIO) {
       ghiNhatKy_({ viec: 'CAP_KHOA_CHAN', u: hoSo.u, role: hoSo.role, tier: hoSo.tier,
@@ -113,18 +123,18 @@ function doPost(e) {
       return ra({ ok: false, code: 'RATE', error: 'Xin khoá quá nhiều lần trong một giờ. Thử lại sau.' });
     }
 
-    // 3. Tính phạm vi được cấp, giao nhau với danh sách client xin
+    // 4. Tính phạm vi được cấp, giao nhau với danh sách client xin
     var duocCap = gitaPhamViCapPhep(hoSo);
     var xin = Array.isArray(y.goi) ? y.goi : duocCap;
     var cap = duocCap.filter(function (g) { return xin.indexOf(g) >= 0; });
 
-    // 4. Lấy khoá và chỉ trả đúng phần được cấp
+    // 5. Lấy khoá và chỉ trả đúng phần được cấp
     var kho = JSON.parse(PropertiesService.getScriptProperties().getProperty('GITA_KHOA_KHO') || '{}');
     if (!Object.keys(kho).length) return ra({ ok: false, code: 'NOKEY', error: 'Máy chủ chưa được nạp bộ khoá.' });
     var traVe = {};
     cap.forEach(function (g) { if (kho[g]) traVe[g] = kho[g]; });
 
-    // 5. Ghi nhật ký — ai, lúc nào, mở gói nào, trên máy nào
+    // 6. Ghi nhật ký — ai, lúc nào, mở gói nào, trên máy nào
     ghiNhatKy_({
       viec: 'CAP_KHOA', u: hoSo.u, role: hoSo.role, tier: hoSo.tier,
       goi: cap.join(','), may: String(y.may || '').slice(0, 120),
@@ -172,12 +182,17 @@ function kiemTraPhien_(token, u) {
   // Tên đăng nhập client gửi lên phải khớp phiên — chặn dùng token của người khác
   if (u && String(u).toLowerCase() !== String(s.username || '').toLowerCase()) return null;
 
-  var hoSo = { u: s.username, role: s.role, tier: 0, khoa: false, phien: s };
+  var hoSo = { u: s.username, role: s.role, tier: 0, khoa: false, phaiDoiMk: false, phien: s };
 
   // Tài khoản có còn hoạt động không
   var nd = null;
   try { nd = Store.find('users', s.uid); } catch (e) { nd = null; }
   if (!nd || !isTrue(nd.active) || nd.deletedAt) { hoSo.khoa = true; return hoSo; }
+
+  /* Mật khẩu tạm chưa đổi. Tài khoản vẫn đăng nhập và đổi mật khẩu được,
+     nhưng KHÔNG mở được kho — mật khẩu do máy sinh ra và đi qua log, qua
+     email, nên không được phép là chìa mở tài sản của Học viện. */
+  if (isTrue(nd.mustChangePw)) hoSo.phaiDoiMk = true;
   if (nd.role !== s.role) { hoSo.role = nd.role; }   // vai đổi sau khi mở phiên
 
   // Tầng đang học — lấy từ hồ sơ học viên gắn với tài khoản
