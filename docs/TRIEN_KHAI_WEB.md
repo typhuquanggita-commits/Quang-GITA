@@ -45,24 +45,42 @@ Máy chủ này chỉ làm một việc: sau khi tài khoản đăng nhập hợ
 **đúng** những khoá mà vai và tầng của tài khoản đó được cấp — không hơn
 một khoá nào.
 
+**Hai hàm nối vào hệ thống cũ đã được viết thật, không còn là chỗ trống.**
+`kiemTraPhien_` gọi `readSession_` trong `02_Security.gs`, đối chiếu
+`Store.find('users', …)` để biết tài khoản còn hoạt động, và
+`Store.find('students', …)` để biết con đang học tầng nào.
+`ghiNhatKy_` gọi thẳng `audit_`. Không phải sửa gì thêm.
+
 ```
 1. Mở dự án Apps Script của GITA 365 (cùng chỗ 00_Config.gs).
-2. Thêm tệp mới, dán toàn bộ server/GITA_CapPhep.gs vào.
-3. Nối hai hàm ở cuối tệp vào lớp sẵn có:
-     kiemTraPhien_(token, u)  →  SEC_kiemTraToken trong 02_Security.gs
-     ghiNhatKy_(muc)          →  JOB_ghiNhatKy   trong 09_Jobs.gs
-   ⚠ Chưa nối thì máy chủ tự ném lỗi và không cấp khoá — đúng ý đồ.
-4. Nạp bộ khoá MỘT LẦN:
-     - chạy node tools/ma-hoa-kho.js → sinh kho/khoa.json
-     - dán nội dung khoa.json vào hàm napBoKhoaMotLan()
-     - chạy hàm đó một lần
-     - XOÁ NGAY nội dung khoá khỏi hàm, lưu lại
+2. Thêm tệp mới, dán toàn bộ server/GITA_CapPhep.gs vào. Lưu.
+3. Nạp bộ khoá MỘT LẦN:
+     - chạy: node tools/tao-nap-khoa.js
+     - dán giay-phep/GITA_NapKhoa.gs vào dự án Apps Script
+     - chọn hàm napBoKhoaMotLan, bấm Run, cấp quyền khi Google hỏi
+     - log phải báo "Đã nạp 7 khoá"
+     - XOÁ TỆP GITA_NapKhoa.gs khỏi dự án ngay
    Khoá nay nằm trong Script Properties, không nằm trong mã nguồn.
-5. Deploy → New deployment → Web app
+4. Deploy → New deployment → Web app
      Execute as     : Me
      Who has access : Anyone
    Chép URL kết thúc bằng /exec.
+5. Mở URL đó bằng trình duyệt. Phải thấy:
+     {"ok":true,"ten":"GITA 365 — máy chủ cấp phép","daNapKhoa":7,...}
+   Thấy daNapKhoa:0 là chưa chạy bước 3.
 ```
+
+**Thử trước khi dán, không cần mạng:**
+
+```bash
+node tools/thu-may-chu-cap-phep.js <đường/dẫn/src-v69>
+```
+
+Chạy chính `server/GITA_CapPhep.gs` với `ROLES` thật của v6.9 và kiểm:
+token bịa không cấp khoá, không mượn được token người khác, tài khoản đã
+nghỉ hoặc hồ sơ bị khoá thì không cấp, mỗi vai chỉ nhận đúng gói của mình,
+phụ huynh không lấy được tầng con chưa học, quá 12 lượt xin trong một giờ
+thì bị chặn, và `doGet` không lộ khoá nào.
 
 ### Bước 3 — Nối hai đầu lại
 
@@ -148,8 +166,8 @@ ngoài là biết ngay của ai. `giay-phep/` nằm ngoài kho mã.
 
 Ba việc này không phải lỗi lập trình; chúng cần quyết định của chủ hệ thống.
 
-1. **Nối `kiemTraPhien_` vào `02_Security.gs`.** Trước khi nối, máy chủ cấp
-   phép không được phép chạy thật — và nó tự chặn mình.
+1. **Chuyển kho mã sang riêng tư** (Bước 0 ở trên). Đây là việc duy nhất
+   phải bấm tay trên giao diện GitHub — không có API nào làm thay được.
 2. **Điền pháp nhân vào `LICENSE` và `NOTICE`**: tên đầy đủ Học viện GITA,
    mã số thuế, địa chỉ. Bản quyền chỉ đòi được khi có pháp nhân đứng tên.
 3. **Chốt ngưỡng chuyển tuyến chuyên môn y tế — tâm lý.** Bộ test đã ghi rõ

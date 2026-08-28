@@ -40,10 +40,25 @@ function gitaPhamViCapPhep(hoSo) {
   }
   if (lv === 15) return ds;                 // CTV giới thiệu: chỉ phần nền
 
-  // Phụ huynh và học viên: chỉ tầng đang học và các tầng đã đi qua
-  var tang = Number(hoSo.tier || 1);
-  for (var j = 1; j <= Math.max(1, Math.min(5, tang)); j++) ds.push('tang' + j);
+  // Phụ huynh và học viên: chỉ tầng đang học và các tầng đã đi qua.
+  // Chưa gắn hồ sơ học viên hoặc chưa vào tầng nào thì chỉ có phần nền.
+  var tang = Number(hoSo.tier || 0);
+  if (!(tang >= 1)) return ds;
+  for (var j = 1; j <= Math.min(5, tang); j++) ds.push('tang' + j);
   return ds;
+}
+
+/* ═══════════════ CHỐNG XIN KHOÁ HÀNG LOẠT ═══════════════
+   Một tài khoản hợp lệ vẫn có thể bị dùng để rút khoá liên tục từ nhiều
+   máy. Mỗi tài khoản chỉ được cấp khoá một số lần giới hạn trong mỗi giờ. */
+var GITA_TRAN_XIN_KHOA_GIO = 12;
+
+function gitaDemXinKhoa_(u) {
+  var kho = CacheService.getScriptCache();
+  var k = 'CAPKHOA_' + String(u).toLowerCase();
+  var n = Number(kho.get(k) || 0) + 1;
+  kho.put(k, String(n), 3600);
+  return n;
 }
 
 /**
@@ -56,7 +71,7 @@ function doPost(e) {
       .setMimeType(ContentService.MimeType.JSON);
   };
   try {
-    var y = JSON.parse(e.postData.contents || '{}');
+    var y = JSON.parse((e && e.postData && e.postData.contents) || '{}');
     if (y.fn !== 'capKhoa') return ra({ ok: false, error: 'Yêu cầu không hợp lệ.' });
 
     // 1. Xác thực phiên — dùng đúng lớp bảo mật sẵn có của hệ thống
@@ -64,21 +79,31 @@ function doPost(e) {
     if (!hoSo) return ra({ ok: false, code: 'AUTH', error: 'Phiên không hợp lệ hoặc đã hết hạn.' });
     if (hoSo.khoa) return ra({ ok: false, code: 'LOCKED', error: 'Tài khoản đang bị khoá.' });
 
-    // 2. Tính phạm vi được cấp, giao nhau với danh sách client xin
+    // 2. Chặn rút khoá hàng loạt
+    var soLan = gitaDemXinKhoa_(hoSo.u);
+    if (soLan > GITA_TRAN_XIN_KHOA_GIO) {
+      ghiNhatKy_({ viec: 'CAP_KHOA_CHAN', u: hoSo.u, role: hoSo.role, tier: hoSo.tier,
+        goi: '', may: String(y.may || '').slice(0, 120), phien: hoSo.phien,
+        chiTiet: 'Vượt trần ' + GITA_TRAN_XIN_KHOA_GIO + ' lượt/giờ — lượt thứ ' + soLan });
+      return ra({ ok: false, code: 'RATE', error: 'Xin khoá quá nhiều lần trong một giờ. Thử lại sau.' });
+    }
+
+    // 3. Tính phạm vi được cấp, giao nhau với danh sách client xin
     var duocCap = gitaPhamViCapPhep(hoSo);
     var xin = Array.isArray(y.goi) ? y.goi : duocCap;
     var cap = duocCap.filter(function (g) { return xin.indexOf(g) >= 0; });
 
-    // 3. Lấy khoá và chỉ trả đúng phần được cấp
+    // 4. Lấy khoá và chỉ trả đúng phần được cấp
     var kho = JSON.parse(PropertiesService.getScriptProperties().getProperty('GITA_KHOA_KHO') || '{}');
+    if (!Object.keys(kho).length) return ra({ ok: false, code: 'NOKEY', error: 'Máy chủ chưa được nạp bộ khoá.' });
     var traVe = {};
     cap.forEach(function (g) { if (kho[g]) traVe[g] = kho[g]; });
 
-    // 4. Ghi nhật ký — ai, lúc nào, mở gói nào, trên máy nào
+    // 5. Ghi nhật ký — ai, lúc nào, mở gói nào, trên máy nào
     ghiNhatKy_({
       viec: 'CAP_KHOA', u: hoSo.u, role: hoSo.role, tier: hoSo.tier,
       goi: cap.join(','), may: String(y.may || '').slice(0, 120),
-      ip: (e.parameter && e.parameter.ip) || ''
+      phien: hoSo.phien, ip: (e && e.parameter && e.parameter.ip) || ''
     });
 
     return ra({
@@ -92,19 +117,66 @@ function doPost(e) {
   }
 }
 
+/** Kiểm tra máy chủ còn sống và đã nạp khoá chưa. Không trả khoá nào. */
+function doGet() {
+  var kho = {};
+  try { kho = JSON.parse(PropertiesService.getScriptProperties().getProperty('GITA_KHOA_KHO') || '{}'); } catch (e) {}
+  return ContentService.createTextOutput(JSON.stringify({
+    ok: true, ten: 'GITA 365 — máy chủ cấp phép',
+    daNapKhoa: Object.keys(kho).length, luc: new Date().toISOString()
+  })).setMimeType(ContentService.MimeType.JSON);
+}
+
 /* ───────────────────────────────────────────────────────────────
    Hai hàm dưới nối vào lớp sẵn có của hệ thống v6.9.
-   Thay phần thân bằng lời gọi thật trong 02_Security.gs và 09_Jobs.gs.
+   Đã nối thật — không còn là chỗ trống.
    ─────────────────────────────────────────────────────────────── */
 
-/** Trả về hồ sơ {u, role, tier, khoa} nếu phiên hợp lệ, ngược lại null. */
+/**
+ * Trả về hồ sơ {u, role, tier, khoa, phien} nếu phiên hợp lệ, ngược lại null.
+ *
+ * Nối vào 02_Security.gs:
+ *   readSession_(token) → {uid, username, role, portal, studentId, exp}
+ *   Store.find('users', uid)      → kiểm tài khoản còn hoạt động
+ *   Store.find('students', id)    → lấy tầng đang học
+ */
 function kiemTraPhien_(token, u) {
-  // return SEC_kiemTraToken(token, u);        // ← 02_Security.gs
-  throw new Error('Chưa nối kiemTraPhien_ vào 02_Security.gs — không được chạy thật khi chưa nối.');
+  var s = readSession_(token);
+  if (!s) return null;
+
+  // Tên đăng nhập client gửi lên phải khớp phiên — chặn dùng token của người khác
+  if (u && String(u).toLowerCase() !== String(s.username || '').toLowerCase()) return null;
+
+  var hoSo = { u: s.username, role: s.role, tier: 0, khoa: false, phien: s };
+
+  // Tài khoản có còn hoạt động không
+  var nd = null;
+  try { nd = Store.find('users', s.uid); } catch (e) { nd = null; }
+  if (!nd || !isTrue(nd.active) || nd.deletedAt) { hoSo.khoa = true; return hoSo; }
+  if (nd.role !== s.role) { hoSo.role = nd.role; }   // vai đổi sau khi mở phiên
+
+  // Tầng đang học — lấy từ hồ sơ học viên gắn với tài khoản
+  var maHV = nd.studentId || s.studentId || '';
+  if (maHV) {
+    var hv = null;
+    try { hv = Store.find('students', maHV); } catch (e) { hv = null; }
+    if (hv) {
+      if (String(hv.status || '').toLowerCase() === 'locked') { hoSo.khoa = true; return hoSo; }
+      hoSo.tier = Number(hv.tier) || 0;
+    }
+  }
+  return hoSo;
 }
 
 /** Ghi một dòng nhật ký chỉ thêm, không sửa, không xoá. */
 function ghiNhatKy_(muc) {
-  // JOB_ghiNhatKy('CAP_PHEP', muc);           // ← 09_Jobs.gs
-  Logger.log(JSON.stringify(muc));
+  try {
+    audit_(muc.phien || null, muc.viec || 'CAP_KHOA',
+      muc.goi || '',
+      'tang=' + (muc.tier || 0) + ' · may=' + (muc.may || '') +
+      (muc.ip ? ' · ip=' + muc.ip : '') +
+      (muc.chiTiet ? ' · ' + muc.chiTiet : ''));
+  } catch (e) {
+    Logger.log(JSON.stringify(muc));
+  }
 }
