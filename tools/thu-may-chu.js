@@ -62,16 +62,25 @@ const so={
 global.SpreadsheetApp={create:()=>so, openById:()=>so};
 
 /* Nạp mã máy chủ */
-for(const f of ['GITA_Nen.gs','GITA_CapPhep.gs','GITA_DangKy.gs','GITA_MatKhau.gs',
-                'GITA_TaiLieu.gs','GITA_DongBo.gs','GITA_XuatSheet.gs'])
-  eval(fs.readFileSync('server/'+f,'utf8'));
+/* Chạy được trên cả hai bản: bảy tệp rời, hoặc tệp gộp dán một lần.
+   node tools/thu-may-chu.js --gop  → thử bản gộp.
+   Bản gộp là thứ anh Quang dán lên Apps Script, nên nó phải được thử
+   bằng chính bộ này chứ không suy ra từ bản bảy tệp. */
+if (process.argv.indexOf('--gop') >= 0) {
+  eval(fs.readFileSync('server/GITA365_TATCA.gs', 'utf8'));
+} else {
+  for (const f of ['GITA_Nen.gs','GITA_CapPhep.gs','GITA_DangKy.gs','GITA_MatKhau.gs',
+                   'GITA_TaiLieu.gs','GITA_DongBo.gs','GITA_XuatSheet.gs'])
+    eval(fs.readFileSync('server/'+f,'utf8'));
+}
 
 const H={thu:()=>thu, xoaThu:()=>{thu=[];}, props, trang};
 
 let loi=0;
 const bao=(ok,ten,ct)=>{ if(!ok)loi++; console.log((ok?'  ✓ ':'  ✗ ')+ten+(ct?' — '+ct:'')); };
 
-console.log('\nTHỬ MÁY CHỦ GITA 365 TRÊN BẢN GIẢ LẬP\n');
+console.log('\nTHỬ MÁY CHỦ GITA 365 TRÊN BẢN GIẢ LẬP' +
+  (process.argv.indexOf('--gop') >= 0 ? ' · BẢN GỘP MỘT TỆP' : ' · BẢY TỆP RỜI') + '\n');
 console.log('1 · CÀI ĐẶT LẦN ĐẦU');
 const cd = caiDatLanDau();
 bao(/Đã dựng 8 bảng/.test(cd), 'dựng đủ 8 bảng dữ liệu');
