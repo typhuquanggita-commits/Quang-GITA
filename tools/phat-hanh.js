@@ -100,6 +100,12 @@ try {
 chay('node', ['tools/kiem-tra.js']);
 if (mayChu) { try { process.kill(-mayChu.pid); } catch (e) {} }
 
+/* ─── 5a-bis. Thử mã máy chủ trên bản giả lập Apps Script ───
+   Mã trong server/ không chạy được ở máy, nên nếu không thử ở đây thì chỗ
+   duy nhất phát hiện lỗi là máy chủ thật, lúc khách hàng đang đăng ký. */
+tieuDe('THỬ MÃ MÁY CHỦ');
+chay('node', ['tools/thu-may-chu.js']);
+
 /* ─── 5b. Thử bản máy tính ─── */
 tieuDe('THỬ BẢN MÁY TÍNH');
 if (co('desktop/node_modules/electron/dist/electron')) {

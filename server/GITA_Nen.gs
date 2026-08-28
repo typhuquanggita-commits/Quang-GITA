@@ -27,14 +27,15 @@ var GITA_TEN_SO = 'GITA365 — Sổ dữ liệu';
    Mỗi bảng là một trang trong bảng tính. Cột đầu luôn là id. */
 var GITA_BANG = {
   users:          ['id','username','hoTen','email','dienThoai','role','portal','studentId',
-                   'pwSalt','pwHash','active','createdAt','updatedAt','deletedAt','maKhachHang','boTro'],
+                   'pwSalt','pwHash','active','createdAt','updatedAt','deletedAt','maKhachHang','boTro',
+                   'mustChangePw','pwDoiLuc'],
   students:       ['id','hoTen','lop','tinh','tier','status','kpi','phuHuynhId','coach','createdAt'],
   sessions:       ['id','uid','username','role','portal','studentId','exp','createdAt'],
   dangKyCho:      ['id','email','hoTen','dienThoai','tenCon','lop','tinh','maGioiThieu',
                    'otpSalt','otpHash','otpHan','otpSai','tokenKichHoat','tokenHan','trangThai','createdAt'],
   audit:          ['id','luc','uid','username','viec','doiTuong','chiTiet'],
-  hosoApp:        ['id','uid','u','role','du','luc'],
-  hosoAppSaoLuu:  ['id','uid','du','luc'],
+  hosoApp:        ['id','uid','u','role','duLieu','moc','taoLuc','suaLuc'],
+  hosoAppSaoLuu:  ['id','uid','duLieu','luc'],
   thanhToan:      ['id','maKhachHang','tier','soTien','trangThai','nguoiDuyet','luc','ghiChu']
 };
 
@@ -283,4 +284,45 @@ function caiDatLanDau() {
   var a = dungSoDuLieu();
   var b = taoTaiKhoanKhoiDau();
   return a + '\n' + b + '\nCòn một việc: dán kho/khoa.json vào napBoKhoaMotLan rồi chạy hàm đó.';
+}
+
+/* ═══════════════ MẬT KHẨU ═══════════════
+   Bốn hàm mà GITA_MatKhau.gs gọi tới. Trước đây chúng được coi là "đã có
+   sẵn trong 02_Security.gs của v6.9". Dựng máy chủ mới thì không có gì
+   sẵn cả — nên chúng nằm ở đây. */
+
+/** Muối mới cho một lần đặt mật khẩu. */
+function newSalt_() { return Utilities.getUuid(); }
+
+/**
+ * Độ mạnh mật khẩu. Trả về true nếu đạt, hoặc một câu nói rõ thiếu gì.
+ * Không đòi ký tự đặc biệt cho đủ lệ: độ dài mới là thứ thật sự chặn được
+ * dò mật khẩu, nên mức sàn đặt ở 10 ký tự.
+ */
+function checkPwStrength_(mk) {
+  mk = String(mk || '');
+  if (mk.length < 10) return 'Mật khẩu cần ít nhất 10 ký tự.';
+  if (!/[a-zA-Z]/.test(mk)) return 'Mật khẩu cần ít nhất một chữ cái.';
+  if (!/[0-9]/.test(mk))    return 'Mật khẩu cần ít nhất một chữ số.';
+  if (/^(.)\1+$/.test(mk))  return 'Mật khẩu không được là một ký tự lặp lại.';
+
+  var de = ['123456789', 'password', 'matkhau', 'qwerty', 'abc123', 'gita365', '111111'];
+  var t = mk.toLowerCase();
+  for (var i = 0; i < de.length; i++)
+    if (t.indexOf(de[i]) >= 0) return 'Mật khẩu chứa chuỗi quá dễ đoán.';
+
+  return true;
+}
+
+/** Đóng một phiên. Dùng sau khi đổi mật khẩu — buộc đăng nhập lại. */
+function closeSession_(token) {
+  if (!token) return;
+  try { xoaPhien_(token); } catch (e) {}
+}
+
+/** Xoá bộ đếm đăng nhập sai của một tài khoản, sau khi đặt lại mật khẩu. */
+function clearFail_(u) {
+  try {
+    CacheService.getScriptCache().remove('DANGNHAP_SAI_' + String(u).toLowerCase());
+  } catch (e) {}
 }

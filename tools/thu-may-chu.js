@@ -1,0 +1,180 @@
+/* ═══════════════════════════════════════════════════════════════
+   GITA 365 — THỬ MÁY CHỦ TRƯỚC KHI ĐƯA LÊN GOOGLE
+
+       node tools/thu-may-chu.js
+
+   Máy chủ của GITA chạy trên Google Apps Script, mà Apps Script thì
+   không thử được ở máy: không có trình chạy, không có bước gỡ lỗi tử tế,
+   và mỗi lần sai là phải sửa trực tiếp trên bản đang chạy thật.
+
+   Tệp này dựng một bản giả lập tối thiểu của Apps Script — bảng tính,
+   Script Properties, Cache, thư điện tử — rồi chạy toàn bộ mã trong
+   thư mục server/ trên đó. Nhờ vậy luồng đăng ký, OTP, kích hoạt, nâng
+   tầng và cấp khoá đều được soi ở máy trước, thay vì soi trên đầu
+   khách hàng thật.
+
+   Đây KHÔNG thay thế một lần chạy thử trên máy chủ thật sau khi triển
+   khai. Nó chỉ bắt những lỗi bắt được sớm.
+   ═══════════════════════════════════════════════════════════════ */
+/* Cố ý KHÔNG bật 'use strict': mã Apps Script được nạp bằng eval và cần
+   khai báo hàm ra phạm vi chung, đúng như cách Apps Script nạp các tệp .gs. */
+const path = require('path');
+process.chdir(path.join(__dirname, '..'));
+const fs = require('fs'), crypto = require('crypto');
+const props={}, cache={};
+let thu=[];
+global.PropertiesService={getScriptProperties:()=>({
+  getProperty:k=>props[k]===undefined?null:props[k], setProperty:(k,v)=>{props[k]=String(v);}})};
+global.CacheService={getScriptCache:()=>({
+  get:k=>cache[k]===undefined?null:cache[k], put:(k,v)=>{cache[k]=String(v);}, remove:k=>{delete cache[k];}})};
+global.Utilities={
+  getUuid:()=>crypto.randomUUID(),
+  DigestAlgorithm:{SHA_256:'SHA-256'}, Charset:{UTF_8:'utf8'},
+  computeDigest:(a,s)=>Array.from(crypto.createHash('sha256').update(s,'utf8').digest())
+    .map(b=>b>127?b-256:b)
+};
+global.MailApp={sendEmail:(to,cd,than)=>{thu.push({to,cd,than});}};
+global.Logger={log:()=>{}};
+global.ContentService={createTextOutput:t=>({setMimeType:()=>({_:t}),_:t}),MimeType:{JSON:'json'}};
+global.DriveApp={getFolderById:()=>({addFile:()=>{}}),getFileById:()=>({})};
+
+/* Bảng tính giả: mỗi trang là một mảng hàng */
+const trang={};
+function moTrang(ten){
+  if(!trang[ten]) trang[ten]=[];
+  const t=trang[ten];
+  return {
+    getName:()=>ten,
+    appendRow:h=>{t.push(h.slice());},
+    getDataRange:()=>({getValues:()=>t.map(r=>r.slice())}),
+    getLastRow:()=>t.length,
+    setFrozenRows:()=>{},
+    getRange:(d,c,nr,nc)=>({setValues:v=>{t[d-1]=v[0].slice();}})
+  };
+}
+const so={
+  getId:()=>'SO-GIA-LAP',
+  getSheetByName:n=>trang[n]?moTrang(n):null,
+  insertSheet:n=>{trang[n]=[];return moTrang(n);},
+  getSheets:()=>Object.keys(trang).map(moTrang),
+  deleteSheet:s=>{delete trang[s.getName()];}
+};
+global.SpreadsheetApp={create:()=>so, openById:()=>so};
+
+/* Nạp mã máy chủ */
+for(const f of ['GITA_Nen.gs','GITA_CapPhep.gs','GITA_DangKy.gs','GITA_MatKhau.gs',
+                'GITA_TaiLieu.gs','GITA_DongBo.gs','GITA_XuatSheet.gs'])
+  eval(fs.readFileSync('server/'+f,'utf8'));
+
+const H={thu:()=>thu, xoaThu:()=>{thu=[];}, props, trang};
+
+let loi=0;
+const bao=(ok,ten,ct)=>{ if(!ok)loi++; console.log((ok?'  ✓ ':'  ✗ ')+ten+(ct?' — '+ct:'')); };
+
+console.log('\nTHỬ MÁY CHỦ GITA 365 TRÊN BẢN GIẢ LẬP\n');
+console.log('1 · CÀI ĐẶT LẦN ĐẦU');
+const cd = caiDatLanDau();
+bao(/Đã dựng 8 bảng/.test(cd), 'dựng đủ 8 bảng dữ liệu');
+bao(/Đã tạo Admin@gita365/.test(cd), 'tạo được tài khoản Super Admin');
+bao(/không tạo lại/.test(taoTaiKhoanKhoiDau()), 'chạy lại không tạo trùng tài khoản');
+
+console.log('\n2 · ĐĂNG NHẬP');
+bao(!gitaDangNhap_({u:'Admin@gita365', mk:'sai-mat-khau'}).ok, 'sai mật khẩu thì từ chối');
+bao(!gitaDangNhap_({u:'khongcó@gita365.vn', mk:'x'}).ok, 'tài khoản không có thì từ chối');
+const dn = gitaDangNhap_({u:'Admin@gita365', mk:'@toiyeugita365#'});
+bao(dn.ok && dn.token, 'đúng mật khẩu thì cấp phiên', dn.ok?dn.hoSo.role+' · '+dn.hoSo.maKhachHang:'');
+bao(!!readSession_(dn.token), 'phiên đọc lại được');
+bao(!readSession_('token-bia-dat'), 'token bịa đặt thì không có phiên');
+
+console.log('\n3 · ĐĂNG KÝ · OTP · KÍCH HOẠT');
+H.xoaThu();
+const hoSo={hoTen:'Nguyễn Văn A', email:'phuhuynh.thu@gmail.com', dienThoai:'0912345678',
+  tenCon:'Nguyễn Minh An', lop:'Lớp 9', tinh:'Hà Nội', maGioiThieu:'CTV-007'};
+bao(!gitaDangKy_({hoSo:Object.assign({},hoSo,{email:'sai-email'})}).ok, 'email sai định dạng thì từ chối');
+bao(!gitaDangKy_({hoSo:Object.assign({},hoSo,{dienThoai:'123'})}).ok, 'số điện thoại sai thì từ chối');
+const dk = gitaDangKy_({hoSo});
+bao(dk.ok, 'gửi đăng ký thành công');
+const thuOtp = H.thu().slice(-1)[0];
+const ma = (thuOtp.than.match(/là: (\d{6})/)||[])[1];
+bao(!!ma, 'thư OTP có mã sáu số', ma);
+bao(!/\b'+ma+'\b/.test(JSON.stringify(H.trang.dangKyCho)), 'mã KHÔNG lưu dạng đọc được trong bảng');
+
+bao(!gitaXacThucOtp_({email:hoSo.email, ma:'000000'}).ok, 'mã sai thì từ chối');
+for(let i=0;i<4;i++) gitaXacThucOtp_({email:hoSo.email, ma:'000000'});
+const huy = gitaXacThucOtp_({email:hoSo.email, ma:ma});
+bao(!huy.ok && /huỷ/.test(huy.error), 'sai năm lần thì mã bị huỷ', huy.error);
+
+const lai = gitaGuiLaiOtp_({email:hoSo.email});
+bao(lai.ok, 'xin lại được mã mới');
+const ma2 = (H.thu().slice(-1)[0].than.match(/của anh chị: (\d{6})/)||[])[1];
+const xt = gitaXacThucOtp_({email:hoSo.email, ma:ma2});
+bao(xt.ok, 'mã mới đúng thì qua', xt.thongBao);
+const lien = H.thu().slice(-1)[0].than.match(/#kichhoat=(\S+)/);
+bao(!!lien, 'thư kích hoạt có đường dẫn');
+
+bao(!gitaKichHoat_({token:lien[1], mk:'ngan'}).ok, 'mật khẩu ngắn thì không kích hoạt được');
+const kh = gitaKichHoat_({token:lien[1], mk:'GiaDinh2026#'});
+bao(kh.ok && /^GITA-\d{4}$/.test(kh.maKhachHang||''), 'kích hoạt xong có mã số khách hàng', kh.maKhachHang);
+bao(!gitaKichHoat_({token:lien[1], mk:'GiaDinh2026#'}).ok, 'đường dẫn dùng một lần, không dùng lại được');
+
+const dn2 = gitaDangNhap_({u:hoSo.email, mk:'GiaDinh2026#'});
+bao(dn2.ok && dn2.hoSo.role==='R13', 'tài khoản mới đăng nhập được, đúng vai phụ huynh');
+
+const trung = gitaDangKy_({hoSo});
+bao(trung.ok && /Nếu email này chưa có tài khoản/.test(trung.thongBao),
+  'email đã có tài khoản: trả lời y hệt, không lộ danh sách khách');
+
+console.log('\n4 · PHẠM VI CẤP PHÉP');
+const ph = kiemTraPhien_(dn2.token, hoSo.email);
+bao(ph && ph.role==='R13', 'đọc được hồ sơ phiên của phụ huynh');
+bao(gitaPhamViCapPhep({role:'R13', tier:0}).join()==='nen', 'nhà chưa vào tầng: chỉ gói nền');
+bao(gitaPhamViCapPhep({role:'R13', tier:2}).join()==='nen,tang1,tang2', 'nhà tầng 2: nền + tầng 1,2');
+bao(gitaPhamViCapPhep({role:'R07', tier:0}).length===7, 'Coach: đủ bảy gói');
+bao(gitaPhamViCapPhep({role:'R15', tier:5}).join()==='nen', 'cộng tác viên: chỉ gói nền');
+
+console.log('\n5 · NÂNG TẦNG');
+const hv = Store.all('students')[0];
+const admin = kiemTraPhien_(dn.token, 'Admin@gita365');
+let r = gitaNangTang_({maHocVien:hv.id, tang:1, maKhachHang:kh.maKhachHang}, admin);
+bao(!r.ok && /KPI/.test(r.error), 'KPI chưa đủ thì không nâng tầng', r.error);
+Store.update('students', hv.id, {kpi:88});
+r = gitaNangTang_({maHocVien:hv.id, tang:1, maKhachHang:kh.maKhachHang}, admin);
+bao(!r.ok && /thanh toán/.test(r.error), 'chưa xác nhận thanh toán thì không nâng tầng');
+Store.insert('thanhToan', {id:'TT1', maKhachHang:kh.maKhachHang, tier:1, soTien:5000000,
+  trangThai:'daXacNhan', nguoiDuyet:'Admin', luc:new Date().toISOString(), ghiChu:''});
+r = gitaNangTang_({maHocVien:hv.id, tang:1, maKhachHang:kh.maKhachHang}, admin);
+bao(r.ok && r.tang===1, 'đủ cả KPI và thanh toán thì nâng tầng');
+r = gitaNangTang_({maHocVien:hv.id, tang:3, maKhachHang:kh.maKhachHang}, admin);
+bao(!r.ok && /một tầng/.test(r.error), 'không nhảy tầng — mỗi lần một bậc');
+const tuVan = {role:'R11', phien:{uid:'x'}, u:'tv'};
+bao(!gitaNangTang_({maHocVien:hv.id, tang:2, maKhachHang:kh.maKhachHang}, tuVan).ok,
+  'Tư vấn không nâng tầng được — chỉ R01–R03');
+
+console.log('\n6 · MẬT KHẨU');
+bao(checkPwStrength_('abc')!==true, 'mật khẩu ngắn bị chặn');
+bao(checkPwStrength_('gita365abc1')!==true, 'mật khẩu chứa chuỗi dễ đoán bị chặn');
+bao(checkPwStrength_('MotNhaBinhYen2026')===true, 'mật khẩu đủ mạnh thì qua');
+bao(safeEqual_(hashPw_('a','m'), hashPw_('a','m')), 'băm ổn định với cùng muối');
+bao(!safeEqual_(hashPw_('a','m1'), hashPw_('a','m2')), 'muối khác thì băm khác');
+
+console.log('\n7 · NHẬT KÝ');
+bao(Store.all('audit').length>=5, 'mọi việc đều vào nhật ký', Store.all('audit').length+' dòng');
+bao(Store.all('audit').some(x=>x.viec==='DANG_KY_XONG'), 'có dòng đăng ký hoàn tất');
+bao(Store.all('audit').some(x=>x.viec==='NANG_TANG'), 'có dòng nâng tầng');
+
+console.log('\n8 · CỬA VÀO doPost');
+const goi = y => JSON.parse(doPost({postData:{contents:JSON.stringify(y)}})._);
+bao(!goi({fn:'viecLa'}).ok, 'việc không có trong danh sách thì từ chối');
+bao(!goi({fn:'capKhoa', token:'bia', u:'x'}).ok, 'xin khoá bằng token bịa thì từ chối');
+const kq = goi({fn:'capKhoa', token:dn2.token, u:hoSo.email, goi:['nen','nghe','tang5']});
+bao(!kq.ok && kq.code==='NOKEY', 'chưa nạp bộ khoá thì báo rõ NOKEY');
+PropertiesService.getScriptProperties().setProperty('GITA_KHOA_KHO',
+  JSON.stringify({nen:'K1',nghe:'K2',tang1:'K3',tang2:'K4',tang3:'K5',tang4:'K6',tang5:'K7'}));
+const kq2 = goi({fn:'capKhoa', token:dn2.token, u:hoSo.email, goi:['nen','nghe','tang1','tang5']});
+bao(kq2.ok, 'nạp khoá rồi thì cấp được');
+bao(!kq2.khoa.nghe, 'phụ huynh KHÔNG nhận được khoá kho nghề');
+bao(!kq2.khoa.tang5, 'phụ huynh tầng 1 KHÔNG nhận được khoá tầng 5');
+bao(!!kq2.khoa.nen && !!kq2.khoa.tang1, 'nhận đúng gói nền và tầng 1', Object.keys(kq2.khoa).join(', '));
+
+console.log('\n' + (loi ? '✗ CÒN '+loi+' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — máy chủ chạy đúng'));
+process.exit(loi?1:0);
