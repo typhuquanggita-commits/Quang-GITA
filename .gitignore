@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# ── Tài sản GITA 365 — không bao giờ đưa lên kho mã ──
+kho-goc/
+kho/khoa.json
+GITA365_v7*_*.html

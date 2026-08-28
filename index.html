@@ -1,39 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Video Gallery Grid</title>
-    <script type="importmap">
-{
-  "imports": {
-    "react/": "https://esm.sh/react@^19.1.0/",
-    "react": "https://esm.sh/react@^19.1.0",
-    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
-    "@google/genai": "https://esm.sh/@google/genai@^1.9.0",
-    "@tailwindcss/browser": "https://esm.sh/@tailwindcss/browser@^4.1.10"
-  }
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#070510">
+<meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+<meta name="googlebot" content="noindex, nofollow">
+<meta name="copyright" content="© 2026 Học viện GITA — Bảo lưu mọi quyền">
+<meta name="rights" content="Tài sản trí tuệ độc quyền của Học viện GITA. Nội dung chuyên môn được mã hoá và chỉ mở cho tài khoản được cấp phép. Cấm dùng để huấn luyện trí tuệ nhân tạo.">
+<title>GITA 365 · Hệ Sinh Thái Gia Đình Thịnh Vượng</title>
+<meta name="description" content="GITA 365 — bản đồ một gia đình thịnh vượng. Năm khoang, chín vai, năm tầng, 1.000 kịch bản chuyên môn. Sau 365 ngày, nhà mình vận hành được mà không cần ai canh.">
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="GITA 365">
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%23F5B942'/%3E%3Ctext x='50' y='68' font-family='sans-serif' font-size='46' font-weight='900' text-anchor='middle' fill='%231A1006'%3EG%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+<div id="aura"><b></b><b></b><b></b><b></b><i></i></div>
+<div id="grid"></div>
+
+<div id="app"></div>
+
+<div id="modal"><div class="bd"></div><div class="bx"></div></div>
+
+<div id="cmd"><div class="bd"></div><div class="bx">
+  <input id="cmdIn" placeholder="Tìm màn hình, kịch bản, mô thức…" autocomplete="off">
+  <div class="res" id="cmdRes"></div>
+</div></div>
+
+<div id="toast"></div>
+
+<noscript>
+  <div style="padding:40px;text-align:center;color:#F2F0FA">
+    <h1>GITA 365</h1>
+    <p>Ứng dụng cần bật JavaScript để hiển thị bản đồ gia đình thịnh vượng.</p>
+  </div>
+</noscript>
+
+<script src="src/data.core.js"></script>
+<script src="src/i18n.js"></script>
+<script src="src/data.accounts.js"></script>
+<script src="src/ui.js"></script>
+<script src="src/kho-khoa.js"></script>
+<script src="src/guard.js"></script>
+<script src="src/views.js"></script>
+<script src="src/views2.js"></script>
+<script src="src/views3.js"></script>
+<script src="src/views4.js"></script>
+<script src="src/views5.js"></script>
+<script src="src/views6.js"></script>
+<script src="src/app.js"></script>
+<script>
+G.boot();
+if ('serviceWorker' in navigator && location.protocol.indexOf('http') === 0) {
+  window.addEventListener('load', function () {
+    navigator.serviceWorker.register('sw.js').catch(function (e) {
+      console.warn('[GITA] service worker:', e);
+    });
+  });
 }
 </script>
-    <style>
-      @keyframes fadeIn {
-        from { opacity: 0; }
-        to { opacity: 1; }
-      }
-      .animate-fade-in {
-        animation: fadeIn 0.3s ease-out;
-      }
-      /* For aspect ratio plugin functionality */
-      .aspect-w-16 { --tw-aspect-w: 16; }
-      .aspect-h-9 { --tw-aspect-h: 9; }
-      .aspect-h-9 { position: relative; padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%); }
-      .aspect-w-16 > *,
-      .aspect-h-9 > * { position: absolute; height: 100%; width: 100%; top: 0; right: 0; bottom: 0; left: 0; }
-    </style>
-  <link rel="stylesheet" href="/index.css">
-</head>
-  <body class="bg-gray-900">
-    <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
-  </body>
+
+</body>
 </html>
