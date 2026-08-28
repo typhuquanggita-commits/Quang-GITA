@@ -95,7 +95,7 @@ G.VIEWS['referral'] = function(){
     '<div><div class="tiny up muted mb">NGƯỜI TRÌNH BÀY</div><p class="sm"><b>'+h(R.nguoi)+'</b> · '+h(R.donVi)+'</p></div>'+
     '<div><div class="tiny up muted mb">ĐỐI TƯỢNG TRỌNG TÂM</div><p class="sm">'+h(R.doiTuong)+'</p></div>'+
     '</div><p class="tiny muted mt">'+h(R.linhVuc)+'</p>'+
-    '<div class="center mt2"><b style="font-size:17px;color:var(--gold);letter-spacing:.02em">'+h(R.thongDiep)+'</b></div></div>';
+    '<div class="center mt2"><b style="font-size:17px;color:var(--gold-ink);letter-spacing:.02em">'+h(R.thongDiep)+'</b></div></div>';
 
   o += '<div class="grid g4 mb">'+R.bonBuoc.map(function(b,i){
     return '<div class="card pad-sm center"><div class="tiny muted mb">BƯỚC '+(i+1)+'</div><b class="sm">'+h(b)+'</b></div>';
@@ -124,8 +124,8 @@ G.VIEWS['referral'] = function(){
       '<p class="tiny dim" style="line-height:1.6">'+h(x.mo)+'</p></div>';
   }).join('')+'</div>';
   o += '<div class="card mt" style="border-color:rgba(245,185,66,.45);background:rgba(245,185,66,.07)">'+
-    '<div class="row mb" style="gap:8px"><span style="color:var(--gold)">'+ic('star','w-4 h-4')+'</span>'+
-    '<b style="color:var(--gold)">REFERRAL MƠ ƯỚC SỐ 1</b></div>'+
+    '<div class="row mb" style="gap:8px"><span style="color:var(--gold-ink)">'+ic('star','w-4 h-4')+'</span>'+
+    '<b style="color:var(--gold-ink)">REFERRAL MƠ ƯỚC SỐ 1</b></div>'+
     '<p class="sm dim" style="line-height:1.75">'+h(R.moUocSo1)+'</p></div>';
 
   o += U.sec('3 · REFERRAL KHÔNG PHÙ HỢP','Nói rõ từ đầu để không làm mất thời gian của ai.');
@@ -150,7 +150,7 @@ G.VIEWS['referral'] = function(){
 
   o += U.sec('6 · BA CÁCH MỞ LỜI','Dùng nguyên văn được. Sửa cho hợp giọng mình cũng được.');
   o += R.gioiThieu.map(function(g){
-    return '<div class="card mb"><div class="tiny up mb" style="color:var(--gold)">'+h(g.cach)+'</div>'+
+    return '<div class="card mb"><div class="tiny up mb" style="color:var(--gold-ink)">'+h(g.cach)+'</div>'+
       U.quote(g.loi)+'</div>';
   }).join('');
 
@@ -267,7 +267,7 @@ G.VIEWS['hang-vip'] = function(){
     o += U.sec('QUY TRÌNH PHÂN CÔNG','Sáu bước, không bỏ bước nào.');
     o += V.phanCong.map(function(b){
       return '<div class="card mb"><div class="row" style="gap:11px;align-items:flex-start">'+
-        '<span class="chip" style="flex:none;color:var(--gold);border-color:rgba(245,185,66,.4)">'+b.buoc+'</span>'+
+        '<span class="chip" style="flex:none;color:var(--gold-ink);border-color:rgba(245,185,66,.4)">'+b.buoc+'</span>'+
         '<div><b class="sm" style="display:block;margin-bottom:4px">'+h(b.ten)+'</b>'+
         '<p class="tiny dim" style="line-height:1.65">'+h(b.mo)+'</p></div></div></div>';
     }).join('');
@@ -275,7 +275,7 @@ G.VIEWS['hang-vip'] = function(){
     o += U.sec('TRỢ LÝ AI CHĂM SÓC VIP','Bảy việc trợ lý làm tự động, trong đúng giới hạn được cấp.');
     o += '<div class="grid g2">'+V.aiVip.map(function(a){
       return '<div class="card pad-sm" style="border-color:rgba(245,185,66,.22)">'+
-        '<div class="row mb" style="gap:8px"><span style="color:var(--gold)">'+ic('spark','w-4 h-4')+'</span>'+
+        '<div class="row mb" style="gap:8px"><span style="color:var(--gold-ink)">'+ic('spark','w-4 h-4')+'</span>'+
         '<b class="sm">'+h(a.ten)+'</b></div>'+
         '<p class="tiny dim" style="line-height:1.65">'+h(a.mo)+'</p></div>';
     }).join('')+'</div>';
@@ -293,7 +293,7 @@ G.VIEWS['cay-tien'] = function(){
     lead:C.nguon.luan});
 
   o += '<div class="card mb" style="border-color:rgba(245,185,66,.3)">'+
-    '<div class="row mb" style="gap:8px"><span style="color:var(--gold)">'+ic('book','w-4 h-4')+'</span>'+
+    '<div class="row mb" style="gap:8px"><span style="color:var(--gold-ink)">'+ic('book','w-4 h-4')+'</span>'+
     '<b>Nguồn luận điểm</b></div>'+
     '<p class="sm dim" style="line-height:1.75"><b>'+h(C.nguon.ten)+'</b> — '+h(C.nguon.tacGia)+
     ' · '+h(C.nguon.tuSach)+'</p>'+
@@ -314,7 +314,7 @@ G.VIEWS['cay-tien'] = function(){
   o += U.sec('ĐIỂM CÂY TIỀN', C.diemCay.cot);
   o += U.tbl(['Mã','Yếu tố','Trọng số','Cách tính'], C.diemCay.yeuTo.map(function(y){
     return [U.chip(y.ma,'#F5B942'), '<b class="sm">'+h(y.ten)+'</b>',
-            '<b class="sm" style="color:var(--gold)">'+y.trong+'%</b>', '<span class="tiny">'+h(y.cach)+'</span>'];
+            '<b class="sm" style="color:var(--gold-ink)">'+y.trong+'%</b>', '<span class="tiny">'+h(y.cach)+'</span>'];
   }));
   o += '<div class="grid g4 mt">'+C.diemCay.doc.map(function(d){
     return '<div class="card pad-sm" style="border-color:'+d.c+'44">'+

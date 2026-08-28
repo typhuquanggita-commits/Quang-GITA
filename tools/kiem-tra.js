@@ -511,6 +511,147 @@ const { chromium } = require(PW);
     }
   }
 
+  /* ═══════════ 11 · TỈ LỆ HIỂN THỊ THEO VỊ TRÍ ═══════════
+     Anh Quang đặt bậc thang: R01–R02 toàn bộ · R03 95% · R04 91% ·
+     R05–R12 89% · khách hàng và cộng tác viên hẹp hẳn lại. Mục này
+     đối chiếu số đếm thật với đích, lệch quá 2 điểm là dừng phát hành. */
+  console.log('\n11 · TỈ LỆ HIỂN THỊ THEO VỊ TRÍ');
+  {
+    const d = await p.evaluate(() => {
+      let tong = 0; G.NAV.forEach(g => tong += g.items.length);
+      const r = {};
+      G.ROLES.forEach(v => { let n = 0;
+        G.NAV.forEach(g => g.items.forEach(i => { if (!i.perm || G.vaiCo(v.id, i.perm)) n++; }));
+        r[v.id] = { man: n, pt: n * 100 / tong };
+      });
+      return { tong, r, tang: (G.TANG_HIENTHI || []).length };
+    });
+
+    const DICH = { R01:100, R02:99, R03:95, R04:90, R05:88, R06:88, R07:88, R08:88,
+      R09:88, R10:88, R11:88, R12:88, R13:31, R14:23, R15:17 };
+    let lech = [];
+    Object.keys(DICH).forEach(k => {
+      if (Math.abs(d.r[k].pt - DICH[k]) > 2) lech.push(k + ' ' + d.r[k].pt.toFixed(1) + '% (đích ' + DICH[k] + '%)');
+    });
+    bao(!lech.length, 'tỉ lệ hiển thị của cả 15 vị trí đúng đích', lech.join(' · ') ||
+      'R01 ' + d.r.R01.pt.toFixed(0) + '% · R03 ' + d.r.R03.pt.toFixed(0) + '% · R04 ' + d.r.R04.pt.toFixed(0) +
+      '% · R07 ' + d.r.R07.pt.toFixed(0) + '% · R13 ' + d.r.R13.pt.toFixed(0) + '% · R15 ' + d.r.R15.pt.toFixed(0) + '%');
+    bao(d.r.R01.man === d.tong, 'Super Admin thấy đủ 100% màn hình', d.r.R01.man + '/' + d.tong);
+
+    /* Tài chính CHỈ R01–R03 */
+    const fin = await p.evaluate(() => {
+      const ds = [];
+      G.NAV.forEach(g => g.items.forEach(i => { if (i.capMo === 'taichinh') ds.push(i.v); }));
+      const ai = G.ROLES.filter(r => G.vaiCo(r.id, 'fin_view')).map(r => r.id);
+      const donHang = G.ROLES.filter(r => G.vaiCo(r.id, 'fin_create_order')).map(r => r.id);
+      return { ds, ai, donHang };
+    });
+    bao(fin.ai.join() === 'R01,R02,R03', 'tài chính chỉ R01 – R03 nhìn thấy', fin.ai.join(' ') + ' · ' + fin.ds.length + ' màn');
+    bao(fin.donHang.join() === 'R01,R02,R03', 'tạo đơn thu cũng chỉ R01 – R03', fin.donHang.join(' '));
+
+    /* Quản trị trang CHỈ R01–R02 */
+    const qt = await p.evaluate(() => ({
+      ai: G.ROLES.filter(r => G.vaiCo(r.id, 'qt_trang')).map(r => r.id),
+      sua: G.ROLES.filter(r => G.vaiCo(r.id, 'sua_noi_dung')).map(r => r.id),
+      co: !!(G.NAV || []).filter(g => g.id === 'g6').length
+    }));
+    bao(qt.ai.join() === 'R01,R02', 'thư mục Quản trị trang chỉ R01 – R02', qt.ai.join(' '));
+    bao(qt.sua.join() === 'R01', 'sửa nội dung hiển thị chỉ Super Admin', qt.sua.join(' '));
+    bao(qt.co, 'có thư mục Quản trị trang trong thanh trái');
+
+    /* Mọi màn hình phải thuộc đúng MỘT tầng hiển thị — không sót, không mồ côi */
+    const tang = await p.evaluate(() => {
+      const hop = (G.TANG_HIENTHI || []).map(t => t.id), thieu = [], la = [];
+      G.NAV.forEach(g => g.items.forEach(i => {
+        if (!i.capMo) thieu.push(i.v);
+        else if (hop.indexOf(i.capMo) < 0) la.push(i.v + ':' + i.capMo);
+      }));
+      return { thieu, la, soTang: hop.length };
+    });
+    bao(!tang.thieu.length, 'mọi màn hình đều thuộc một tầng hiển thị', tang.thieu.join(' ') || tang.soTang + ' tầng');
+    bao(!tang.la.length, 'không màn hình nào mang tầng hiển thị lạ', tang.la.join(' ') || 'đúng cả');
+
+    /* Sửa nội dung: sửa được, trả về gốc được, và vai khác không sửa nổi */
+    const nd = await p.evaluate(() => {
+      const cu = G.S.roleObj, k = 'nav.ban-do.t';
+      G.S.roleObj = G.roleById('R01');
+      G.datND(k, 'Bản đồ nhà mình');
+      const sau = G.iname({ v: 'ban-do', t: 'Bản Đồ Gia Đình Thịnh Vượng' });
+      G.datND(k, '');
+      const tra = G.iname({ v: 'ban-do', t: 'Bản Đồ Gia Đình Thịnh Vượng' });
+      G.S.roleObj = G.roleById('R03');
+      const choi = G.datND(k, 'thử sửa trộm');
+      G.S.roleObj = cu;
+      return { sau, tra, choi, soMuc: G.mucSuaDuoc().length };
+    });
+    bao(nd.sau === 'Bản đồ nhà mình', 'Super Admin sửa được chữ hiển thị');
+    bao(nd.tra === 'Bản Đồ Gia Đình Thịnh Vượng', 'xoá ô trống là chữ gốc quay lại — bản gốc không bị ghi đè');
+    bao(nd.choi === false, 'vai không có quyền KHÔNG sửa được nội dung hiển thị');
+    bao(nd.soMuc > 200, 'danh mục chữ sửa được dựng từ chính dữ liệu', nd.soMuc + ' mục');
+  }
+
+  /* ═══════════ 12 · NỀN SÁNG ĐỌC ĐƯỢC ═══════════
+     Nền sáng chỉ có nghĩa nếu chữ vẫn đọc rõ. Mục này đo tương phản
+     thật của từng mã chữ trên ba nền hay gặp, và chặn mọi màu đen cứng
+     quay lại làm tối trang. */
+  console.log('\n12 · NỀN SÁNG ĐỌC ĐƯỢC');
+  {
+    const r = await p.evaluate(() => {
+      const cs = getComputedStyle(document.documentElement);
+      const hex = n => cs.getPropertyValue(n).trim();
+      function lum(h){ h = h.replace('#',''); 
+        const c = [0,2,4].map(i => parseInt(h.substr(i,2),16)/255)
+          .map(v => v <= .03928 ? v/12.92 : Math.pow((v+.055)/1.055, 2.4));
+        return .2126*c[0] + .7152*c[1] + .0722*c[2]; }
+      function cr(a,b){ const x = lum(a), y = lum(b), hi = Math.max(x,y), lo = Math.min(x,y);
+        return (hi+.05)/(lo+.05); }
+      const NEN = ['#FFFFFF', hex('--bg-0'), hex('--bg-2')];
+      const CHU = ['--ink','--ink-2','--ink-3','--ink-4','--gold-ink','--t1','--t2','--t3','--t4','--t5','--ok','--bad'];
+      const yeu = [];
+      CHU.forEach(k => { const v = hex(k);
+        NEN.forEach(n => { const t = cr(v, n); if (t < 4.5) yeu.push(k + ' trên ' + n + ' = ' + t.toFixed(2)); }); });
+      return { yeu, nen: hex('--bg-0'), macDinh: !document.documentElement.getAttribute('data-nen') };
+    });
+    bao(!r.yeu.length, 'mọi mã chữ đạt chuẩn AA trên cả ba nền sáng', r.yeu.join(' · ') || '12 mã × 3 nền đều ≥ 4,5:1');
+    bao(r.macDinh, 'ứng dụng mở ra là nền sáng', 'nền ' + r.nen);
+
+    /* Không được còn NỀN tối cứng nào ngoài các luật của nền tối.
+       Bóng đổ đen (box-shadow) là chuyện bình thường ở cả hai nền nên bỏ qua. */
+    const fs2 = require('fs'), px2 = require('path');
+    const css = fs2.readFileSync(px2.join(__dirname, '..', 'assets', 'style.css'), 'utf8');
+
+    /* Cắt TRỌN khối mã màu của nền tối, rồi bỏ nốt các luật riêng của nó
+       và mọi dòng bóng đổ — phần còn lại phải sạch màu tối. */
+    const b0 = css.indexOf(':root[data-nen="toi"]{');
+    const b1 = b0 < 0 ? -1 : css.indexOf('}', b0);
+    const conLai = (b0 < 0 ? css : css.slice(0, b0) + css.slice(b1 + 1));
+    const sach = conLai.split('\n')
+      .filter(d => d.indexOf('data-nen="toi"') < 0 && d.indexOf('box-shadow') < 0 && d.trim().indexOf('--shadow:') !== 0)
+      .join('\n');
+
+    const cung = (sach.match(/(background|fill)[^;]*rgba\(\s*(?:[0-9]|[1-3][0-9]),\s*(?:[0-9]|1[0-9]),\s*(?:[0-9]|[1-4][0-9])\s*,/g) || []);
+    bao(!cung.length, 'không còn nền tối cứng nằm ngoài bảng nền tối',
+      cung.length ? cung.length + ' chỗ: ' + cung.slice(0, 2).join(' | ') : 'sạch');
+
+    /* Lớp phủ trắng phải đi qua mã màu --phu-*, nếu không nền sáng sẽ vỡ.
+       Chỉ còn được phép ở nơi trắng là ĐÚNG: thanh trên, hộp nổi, màn sáng. */
+    const conTrang = (sach.match(/rgba\(255,\s*255,\s*255/g) || []).length;
+    bao(conTrang <= 5, 'lớp phủ trắng đã gom về mã màu --phu-*',
+      'còn ' + conTrang + ' chỗ, đều là nơi trắng đúng vai');
+
+    /* Đổi nền qua lại không hỏng */
+    const doi = await p.evaluate(() => {
+      const truoc = getComputedStyle(document.documentElement).getPropertyValue('--bg-0').trim();
+      G.datNen('toi');
+      const toi = getComputedStyle(document.documentElement).getPropertyValue('--bg-0').trim();
+      G.datNen('sang');
+      const lai = getComputedStyle(document.documentElement).getPropertyValue('--bg-0').trim();
+      return { truoc, toi, lai };
+    });
+    bao(doi.truoc !== doi.toi && doi.truoc === doi.lai, 'nút đổi nền sáng ↔ tối chạy đúng cả hai chiều',
+      doi.truoc + ' ↔ ' + doi.toi);
+  }
+
   console.log('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành'));
   await b.close();
   process.exit(loi ? 1 : 0);

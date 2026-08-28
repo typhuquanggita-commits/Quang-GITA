@@ -69,7 +69,7 @@ G.VIEWS['phuong-phap'] = function(){
         '<p class="sm">'+h(n.nguyenTac)+'</p></div>'+
         U.tbl(['Tầng','Mô thức GITA','Nhịp','Việc','Đo bằng'], n.tang.map(function(t){
           return ['<b class="sm" style="color:'+tc(t.t)+'">'+h(t.t)+'</b>',
-                  '<span class="tiny" style="color:var(--gold)"><b>'+h(t.mt||'')+'</b></span>',
+                  '<span class="tiny" style="color:var(--gold-ink)"><b>'+h(t.mt||'')+'</b></span>',
                   '<span class="tiny" style="color:#8B5CF6">'+h(t.nhip||'')+'</span>',
                   '<span class="tiny">'+h(t.viec)+'</span>',
                   '<span class="tiny muted">'+h(t.do)+'</span>'];
@@ -86,7 +86,7 @@ G.VIEWS['phuong-phap'] = function(){
         '<div class="row wrap mb" style="gap:8px">'+U.chip(b.vaiTro||'THAM KHẢO', b.c)+
         '<b style="color:'+b.c+'">'+h(b.ten)+'</b>'+
         '<span class="tiny muted">'+h(b.tacGia)+'</span></div>'+
-        (b.boTroCho ? '<p class="tiny mb" style="color:var(--gold)">Bổ trợ cho: '+h(b.boTroCho)+'</p>' : '')+
+        (b.boTroCho ? '<p class="tiny mb" style="color:var(--gold-ink)">Bổ trợ cho: '+h(b.boTroCho)+'</p>' : '')+
         '<p class="sm dim" style="line-height:1.7;margin-bottom:9px">'+h(b.khung)+'</p>'+
         '<div class="grid g2" style="gap:10px">'+
         '<div><div class="tiny up mb" style="color:'+b.c+'">NỘI DUNG LẤY ĐƯỢC</div>'+
@@ -95,7 +95,7 @@ G.VIEWS['phuong-phap'] = function(){
         U.list(b.bienSoan||[], '#10B981')+'</div></div>'+
         (b.themVao ? '<p class="tiny muted mt" style="line-height:1.6">'+h(b.themVao)+'</p>' : '')+
         '<div class="card pad-sm mt" style="border-color:rgba(245,185,66,.25)">'+
-        '<div class="tiny up mb" style="color:var(--gold)">GITA DÙNG THẾ NÀO</div>'+
+        '<div class="tiny up mb" style="color:var(--gold-ink)">GITA DÙNG THẾ NÀO</div>'+
         '<p class="tiny">'+h(b.gitaDung)+'</p></div></div>';
     }).join('');
     o += '<div class="card mt2" style="border-color:rgba(248,113,113,.3)">'+
@@ -160,7 +160,7 @@ G.VIEWS['chuyen-doi'] = function(){
     lead:C.cot});
 
   o += '<div class="card mb" style="border-color:rgba(245,185,66,.3)">'+
-    '<div class="tiny up mb" style="color:var(--gold)">LUẬT CHUNG</div>'+U.list(C.luatChung,'#F5B942')+'</div>';
+    '<div class="tiny up mb" style="color:var(--gold-ink)">LUẬT CHUNG</div>'+U.list(C.luatChung,'#F5B942')+'</div>';
 
   o += C.cong.map(function(x){
     return '<div class="card mb" style="border-color:'+x.c+'2a">'+

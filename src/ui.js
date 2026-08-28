@@ -44,6 +44,7 @@ U.P = {
   star:'m12 3.5 2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9L12 3.5Z',
   lock:'M6 11h12v9H6v-9Zm2.5 0V7.5a3.5 3.5 0 1 1 7 0V11',
   arrow:'M4 12h15m-6-6 6 6-6 6',
+  moon:'M20.5 14.8A8.6 8.6 0 1 1 9.2 3.5a7.1 7.1 0 0 0 11.3 11.3Z',
   sun:'M12 16.5a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9ZM12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8m10.6 10.6 1.8 1.8M19.1 4.9l-1.8 1.8M6.7 17.3l-1.8 1.8',
   home:'M4 11 12 4l8 7v9h-5v-6H9v6H4v-9Z',
   pulse:'M3 12h4l2.5-7 4 14L16 12h5',
@@ -81,12 +82,21 @@ U.stat = function(o){
 U.ring = function(v,c,lb){
   var r=42, C=2*Math.PI*r, off=C*(1-U.clamp(v,0,100)/100);
   return '<div class="ring"><svg viewBox="0 0 96 96">'+
-    '<circle cx="48" cy="48" r="'+r+'" fill="none" stroke="rgba(255,255,255,.09)" stroke-width="7"/>'+
+    '<circle cx="48" cy="48" r="'+r+'" fill="none" stroke="var(--phu-4)" stroke-width="7"/>'+
     '<circle cx="48" cy="48" r="'+r+'" fill="none" stroke="'+(c||'#F5B942')+'" stroke-width="7" '+
     'stroke-linecap="round" stroke-dasharray="'+C.toFixed(1)+'" stroke-dashoffset="'+off.toFixed(1)+'"/></svg>'+
     '<div class="tx"><b>'+U.h(v)+'</b><span>'+U.h(lb||'')+'</span></div></div>';
 };
 U.ph = function(o){
+  /* Tiêu đề, dòng nhãn và câu dẫn của mỗi màn đều sửa được từ màn
+     "Sửa nội dung hiển thị". Khoá gắn theo màn đang mở. */
+  if(G.nd && G.S && G.S.view){
+    var v = G.S.view;
+    o = {ic:o.ic, grad:o.grad,
+      eyebrow: G.nd('man.'+v+'.eyebrow', o.eyebrow),
+      t:       G.nd('man.'+v+'.t',       o.t),
+      lead:    G.nd('man.'+v+'.lead',    o.lead)};
+  }
   return '<header class="ph"><div class="eyebrow">'+
     (o.ic?U.ic(o.ic,'w-4 h-4'):'')+'<span>'+U.h(o.eyebrow||'')+'</span></div>'+
     '<h1>'+(o.grad?'<span class="grad-text">'+U.h(o.t)+'</span>':U.h(o.t))+'</h1>'+

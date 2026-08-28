@@ -192,7 +192,7 @@ G.canCapPhep = function (goi) {
 
   /* 1 · Khoá phần nào */
   o += '<div class="card" style="border-color:rgba(245,185,66,.34)">' +
-    '<div class="row mb"><span style="color:var(--gold)">' + U.ic('vault', 'w-4 h-4') + '</span>' +
+    '<div class="row mb"><span style="color:var(--gold-ink)">' + U.ic('vault', 'w-4 h-4') + '</span>' +
     '<b>1 · Màn hình này nằm trong ' + h(tenGoi) + '</b></div>' +
     '<p class="sm" style="line-height:1.75;color:var(--ink-2)">Nội dung chuyên môn của GITA 365 được mã hoá và chia thành bảy gói. ' +
     'Mỗi tài khoản chỉ nhận khoá của những gói thuộc vai và tầng của mình — không thừa một gói nào.</p></div>';

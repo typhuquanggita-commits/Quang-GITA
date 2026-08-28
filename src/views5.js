@@ -14,7 +14,7 @@ G.VIEWS['kien-truc-100'] = function(){
   var o = U.ph({eyebrow:'NHÓM 02 · HÀNH TRÌNH', ic:'sun', grad:1, t:'Kiến trúc một trăm năm',
     lead:T.cau});
 
-  o += '<div class="card glow mb"><div class="row"><span style="color:var(--gold)">'+ic('pulse','w-4 h-4')+'</span>'+
+  o += '<div class="card glow mb"><div class="row"><span style="color:var(--gold-ink)">'+ic('pulse','w-4 h-4')+'</span>'+
     '<b>Quy luật tăng trưởng của hệ thống</b></div>'+
     '<p class="sm dim mt" style="line-height:1.75">'+h(T.quyLuat)+'</p></div>';
 
@@ -99,7 +99,7 @@ G.VIEWS['chuan-nhat'] = function(){
   o += U.sec('BỐN CAM KẾT KHÔNG ĐÁNH ĐỔI','Đây là chỗ phân biệt một hệ thống làm chắc với một hệ thống làm nhanh');
   o += '<div class="grid g2">' + N.camKet.map(function(c,i){
     return '<div class="card pad-sm"><div class="row" style="gap:9px;margin-bottom:6px">'+
-      '<span class="pill" style="background:rgba(245,185,66,.18);color:var(--gold)">0'+(i+1)+'</span>'+
+      '<span class="pill" style="background:rgba(245,185,66,.18);color:var(--gold-ink)">0'+(i+1)+'</span>'+
       '<b class="sm">'+h(c.t)+'</b></div>'+
       '<p class="tiny muted" style="line-height:1.6;padding-left:34px">'+h(c.d)+'</p></div>';
   }).join('') + '</div>';
@@ -114,7 +114,7 @@ G.VIEWS['ai-dieu-phoi'] = function(){
     lead:'Trợ lý không thay người dẫn dắt. Nó làm ba việc: trả lời trong đúng phạm vi tầng, chuyển đúng câu hỏi tới đúng người, và nói cho người dẫn dắt biết họ cần nâng cấp gì để theo kịp lộ trình của gia đình mình.'});
 
   o += '<div class="card mb" style="border-color:rgba(245,185,66,.3)">'+
-    '<div class="row"><span style="color:var(--gold)">'+ic('shield','w-4 h-4')+'</span><b>Giới hạn cốt lõi</b></div>'+
+    '<div class="row"><span style="color:var(--gold-ink)">'+ic('shield','w-4 h-4')+'</span><b>Giới hạn cốt lõi</b></div>'+
     '<p class="sm dim mt" style="line-height:1.7">'+h(P.cot)+'</p></div>';
 
   o += U.sec('GIỚI HẠN THEO TỪNG TẦNG','Trợ lý biết mình được nói gì và không được nói gì ở mỗi tầng');
@@ -244,7 +244,7 @@ G.VIEWS['hoc-tu-lon'] = function(){
     return '<div class="card lift mb" style="border-color:'+x.c+'2e">'+
       '<div class="row wrap" style="gap:11px;margin-bottom:11px">'+
         '<b style="font-size:18px;color:'+x.c+'">'+h(x.ten)+'</b>'+U.chip(x.linh, x.c)+'</div>'+
-      '<div style="padding:12px 14px;border-radius:13px;background:rgba(255,255,255,.035);margin-bottom:12px">'+
+      '<div style="padding:12px 14px;border-radius:13px;background:var(--phu-2);margin-bottom:12px">'+
         '<span class="tiny up muted">CƠ CHẾ LÕI</span>'+
         '<p class="sm mt" style="line-height:1.65">'+h(x.coche)+'</p>'+
         '<p class="tiny mt" style="color:'+x.c+'">→ '+h(x.manh)+'</p></div>'+
@@ -255,8 +255,8 @@ G.VIEWS['hoc-tu-lon'] = function(){
         '<div style="padding:12px 14px;border-radius:13px;background:rgba(248,113,113,.06);border:1px solid rgba(248,113,113,.2)">'+
           '<div class="tiny up" style="color:var(--bad)">GITA TỪ CHỐI</div>'+
           '<p class="sm mt" style="line-height:1.6">'+h(x.bo)+'</p></div></div>'+
-      '<div class="row mt2" style="gap:9px;align-items:flex-start;padding-top:11px;border-top:1px dashed rgba(255,255,255,.1)">'+
-        '<span style="color:var(--gold);flex:none;margin-top:3px">'+ic('arrow','w-4 h-4')+'</span>'+
+      '<div class="row mt2" style="gap:9px;align-items:flex-start;padding-top:11px;border-top:1px dashed var(--phu-4)">'+
+        '<span style="color:var(--gold-ink);flex:none;margin-top:3px">'+ic('arrow','w-4 h-4')+'</span>'+
         '<span class="sm dim"><b style="color:var(--ink)">Việc cụ thể:</b> '+h(x.viec)+'</span></div></div>';
   }).join('');
 
@@ -281,8 +281,8 @@ G.VIEWS['hoc-tu-lon'] = function(){
           '<div class="tiny up" style="color:var(--ok)">GITA LẤY</div><p class="sm mt" style="line-height:1.6">'+h(x.lay)+'</p></div>'+
         '<div style="padding:12px 14px;border-radius:13px;background:rgba(248,113,113,.06);border:1px solid rgba(248,113,113,.2)">'+
           '<div class="tiny up" style="color:var(--bad)">GITA TỪ CHỐI</div><p class="sm mt" style="line-height:1.6">'+h(x.bo)+'</p></div></div>'+
-      '<div class="row mt2" style="gap:9px;align-items:flex-start;padding-top:11px;border-top:1px dashed rgba(255,255,255,.1)">'+
-        '<span style="color:var(--gold);flex:none;margin-top:3px">'+ic('arrow','w-4 h-4')+'</span>'+
+      '<div class="row mt2" style="gap:9px;align-items:flex-start;padding-top:11px;border-top:1px dashed var(--phu-4)">'+
+        '<span style="color:var(--gold-ink);flex:none;margin-top:3px">'+ic('arrow','w-4 h-4')+'</span>'+
         '<span class="sm dim"><b style="color:var(--ink)">Việc cụ thể:</b> '+h(x.viec)+'</span></div></div>';
   }).join('');
 
@@ -352,7 +352,7 @@ G.VIEWS['chi-phi'] = function(){
       '<span class="tiny muted">/ tháng</span></div>'+
       '<p class="sm dim" style="line-height:1.6;margin-bottom:11px">'+h(g.mo)+'</p>'+
       U.list(g.gom, g.c)+
-      '<div class="mt2" style="padding-top:11px;border-top:1px dashed rgba(255,255,255,.1)">'+
+      '<div class="mt2" style="padding-top:11px;border-top:1px dashed var(--phu-4)">'+
       '<span class="tiny up muted">HỢP VỚI</span><p class="sm mt">'+h(g.hop)+'</p></div></div>';
   }).join('') + '</div>';
 
@@ -378,7 +378,7 @@ G.VIEWS['chi-phi'] = function(){
   }).join('') + '</div>';
 
   o += '<div class="card mt2" style="border-color:rgba(245,185,66,.3)">'+
-    '<div class="row mb"><span style="color:var(--gold)">'+ic('shield','w-4 h-4')+'</span>'+
+    '<div class="row mb"><span style="color:var(--gold-ink)">'+ic('shield','w-4 h-4')+'</span>'+
     '<b>Điều kiện để giữ được mức này</b></div>'+
     '<p class="sm muted" style="line-height:1.7">Kho tri thức phải giữ dạng tệp tĩnh, không chuyển sang cơ sở dữ liệu chỉ để đọc. '+
     'Mọi tính năng mới hỏi trước một câu: việc này chạy được trong máy người dùng không? Chạy được thì không đưa lên máy chủ. '+

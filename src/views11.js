@@ -130,7 +130,7 @@ G.VIEWS['phan-quyen'] = function(){
       '<span class="mono sm">'+r.lv+'</span>',
       '<b>'+nQ+'</b><span class="muted sm"> / '+tongPerm+'</span>',
       '<b>'+nM+'</b><span class="muted sm"> / '+G.tongManHinh()+'</span>',
-      sua ? '<span class="sm" style="color:var(--gold)">'+h(sua)+'</span>' : '<span class="sm muted">theo bậc</span>'];
+      sua ? '<span class="sm" style="color:var(--gold-ink)">'+h(sua)+'</span>' : '<span class="sm muted">theo bậc</span>'];
   }));
 
   o += '<div class="row mt2" style="gap:10px;flex-wrap:wrap">'+
@@ -210,7 +210,7 @@ G.VIEWS['pham-vi'] = function(){
 
     var ke = T[tangDang] || null;
     o += '<div class="card mt2" style="border-color:rgba(245,185,66,.34)">'+
-      '<div class="up mb" style="color:var(--gold)">MỞ TẦNG TIẾP THEO BẰNG CÁCH NÀO</div>'+
+      '<div class="up mb" style="color:var(--gold-ink)">MỞ TẦNG TIẾP THEO BẰNG CÁCH NÀO</div>'+
       (ke ? '<p class="sm" style="line-height:1.75;color:var(--ink-2)">Tầng kế tiếp là <b>'+h(ke.code+' · '+ke.name)+'</b>. '+
               'Hai điều kiện, phải đủ cả hai:</p>'+
             U.list([
@@ -261,5 +261,212 @@ G.VIEWS['pham-vi'] = function(){
   }).join('') +'</div>';
 
   return o;
+};
+})();
+
+/* ═══════════════════════════════════════════════════════════════
+   THƯ MỤC QUẢN TRỊ TRANG — hai màn còn lại
+   Cấp tài khoản cho vị trí từ Tư vấn trở lên, và vòng đời một
+   tài khoản: khoá, mở lại, xoá. Chỉ R01 và R02 vào được.
+   ═══════════════════════════════════════════════════════════════ */
+(function(){
+var U = G.U, h = U.h, ic = U.ic;
+
+function chanCua(){
+  return U.lockCard('Thư mục Quản trị trang chỉ mở cho Super Admin và Admin hệ thống. '+
+    'Đây là nơi quyết định ai vào được hệ thống, nên không mở rộng hơn hai vị trí đó.');
+}
+
+/* Vị trí được phép cấp: từ Tư vấn (R11) trở lên, và không cao hơn người đang cấp. */
+G.vaiCapDuoc = function(){
+  var toi = G.S.roleObj; if(!toi) return [];
+  return G.ROLES.filter(function(r){ return r.lv >= toi.lv && r.lv <= 11; });
+};
+
+/* Mật khẩu ban đầu: 16 ký tự, sinh bằng crypto của trình duyệt.
+   Hiện đúng một lần rồi thôi — không lưu bản thô ở đâu cả. */
+G.matKhauBanDau = function(){
+  var B = 'ABCDEFGHJKLMNPQRSTUVWXYZ', b = 'abcdefghijkmnopqrstuvwxyz', s = '23456789', d = '!@#$%^&*?';
+  var tap = B + b + s + d, ra = [], m = new Uint32Array(16);
+  (window.crypto || window.msCrypto).getRandomValues(m);
+  ra.push(B[m[0] % B.length], b[m[1] % b.length], s[m[2] % s.length], d[m[3] % d.length]);
+  for (var i = 4; i < 16; i++) ra.push(tap[m[i] % tap.length]);
+  for (var j = ra.length - 1; j > 0; j--){ var k = m[j] % (j + 1), t = ra[j]; ra[j] = ra[k]; ra[k] = t; }
+  return ra.join('');
+};
+
+G.VIEWS['cap-tai-khoan'] = function(){
+  if(!G.can('qt_trang')) return chanCua();
+  var duoc = G.vaiCapDuoc();
+  var o = U.ph({eyebrow:'QUẢN TRỊ TRANG · CHỈ R01 – R02', ic:'plus', grad:1,
+    t:'Mở tài khoản mới',
+    lead:'Cấp tên đăng nhập và mật khẩu ban đầu cho các vị trí từ Tư vấn trở lên. '+
+      'Khách hàng tự đăng ký ở Cổng vào; cộng tác viên nhận mã liên kết — không cấp ở đây.'});
+
+  o += '<div class="card"><div class="up mb" style="color:var(--ink-4)">THÔNG TIN NGƯỜI NHẬN</div>'+
+    '<div class="ct-luoi">'+
+      '<div><label class="tiny up muted">HỌ VÀ TÊN</label>'+
+        '<input id="ct_ten" class="inp blk" placeholder="Nguyễn Văn A"></div>'+
+      '<div><label class="tiny up muted">EMAIL CÔNG VIỆC</label>'+
+        '<input id="ct_email" type="email" class="inp blk" placeholder="ten@gita365.vn"></div>'+
+      '<div><label class="tiny up muted">VỊ TRÍ</label>'+
+        '<select id="ct_vai" class="inp blk">'+
+          duoc.map(function(r){ return '<option value="'+h(r.id)+'">'+h(r.id+' · '+r.n)+'</option>'; }).join('')+
+        '</select></div>'+
+      '<div><label class="tiny up muted">KHU VỰC / NHÓM PHỤ TRÁCH</label>'+
+        '<input id="ct_nha" class="inp blk" placeholder="Nhóm Coach miền Bắc"></div>'+
+    '</div>'+
+    '<div id="ct_loi" class="tiny mt" style="color:#F87171;min-height:16px"></div>'+
+    '<button class="btn pri mt" data-act="ct-cap">'+ic('plus','w-4 h-4')+'Sinh tài khoản và mật khẩu ban đầu</button>'+
+    '</div>';
+
+  o += '<div class="card mt2" style="border-color:rgba(245,185,66,.32)">'+
+    '<div class="up mb" style="color:var(--gold-ink)">BỐN LUẬT KHI CẤP</div>'+
+    U.list([
+      'Không cấp được vị trí cao hơn chính mình — danh sách trên chỉ hiện vai từ bậc của anh chị trở xuống.',
+      'Không cấp cho vị trí thấp hơn Tư vấn. Phụ huynh và học viên tự đăng ký, cộng tác viên nhận mã liên kết.',
+      'Mật khẩu ban đầu hiện đúng MỘT lần. Gửi cho người nhận bằng kênh khác với kênh gửi tên đăng nhập.',
+      'Người nhận buộc đổi mật khẩu ở lần đăng nhập đầu; chưa đổi thì không đi tiếp được màn nào.'
+    ])+'</div>';
+
+  o += U.sec('VỊ TRÍ CẤP ĐƯỢC', duoc.length + ' / 15 vị trí');
+  o += U.tbl(['Vị trí','Bậc','Sẽ thấy','Cổng vào'], duoc.map(function(r){
+    var nM = 0, tong = 0;
+    G.NAV.forEach(function(g){ g.items.forEach(function(it){
+      tong++; if(!it.perm || G.vaiCo(r.id, it.perm)) nM++; }); });
+    return [U.chip(r.n, r.c), '<span class="mono sm">'+r.lv+'</span>',
+      '<b>'+nM+'</b><span class="muted sm"> / '+tong+' màn · '+Math.round(nM*100/tong)+'%</span>',
+      '<span class="sm muted">'+h((G.PORTALS[r.portal]||{}).n || '—')+'</span>'];
+  }));
+  return o;
+};
+
+G.capTaiKhoan = function(){
+  var loi = document.getElementById('ct_loi');
+  function bao(t){ if(loi) loi.textContent = t; }
+  if(!G.can('qt_trang')){ bao('Vai này không có quyền quản trị trang.'); return; }
+  var ten = (document.getElementById('ct_ten')||{}).value || '';
+  var em  = (document.getElementById('ct_email')||{}).value || '';
+  var vai = (document.getElementById('ct_vai')||{}).value || '';
+  var nha = (document.getElementById('ct_nha')||{}).value || '';
+  ten = ten.trim(); em = em.trim().toLowerCase();
+  if(ten.length < 3){ bao('Chưa điền họ tên.'); return; }
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(em)){ bao('Email chưa đúng định dạng.'); return; }
+  var r = G.roleById(vai);
+  if(!r){ bao('Chưa chọn vị trí.'); return; }
+  if(r.lv < (G.S.roleObj||{}).lv){ bao('Không cấp được vị trí cao hơn chính mình.'); return; }
+  if(r.lv > 11){ bao('Chỉ cấp cho vị trí từ Tư vấn trở lên. Khách hàng tự đăng ký ở Cổng vào.'); return; }
+
+  var mk = G.matKhauBanDau();
+  if(G.secLog) G.secLog('Cấp tài khoản',
+    em + ' · ' + vai + ' · ' + (nha||'—') + ' · người cấp ' + (G.S.acc && G.S.acc.u), 'Ghi nhận');
+
+  U.modal(
+    '<div class="center" style="color:var(--gold-ink)">'+ic('check','w-8 h-8')+'</div>'+
+    '<h2 style="font-size:20px;font-weight:800;margin:8px 0 4px;text-align:center">Đã sinh tài khoản</h2>'+
+    '<p class="sm muted center" style="margin-bottom:14px">Mật khẩu dưới đây hiện đúng một lần. Đóng cửa sổ là không xem lại được.</p>'+
+    U.tbl(['Mục','Giá trị'], [
+      ['Họ tên', '<b>'+h(ten)+'</b>'],
+      ['Tên đăng nhập', '<span class="mono sm">'+h(em)+'</span>'],
+      ['Vị trí', U.chip(r.n, r.c)],
+      ['Khu vực', '<span class="sm">'+h(nha||'—')+'</span>'],
+      ['Mật khẩu ban đầu', '<span class="mono" style="font-size:15px;color:var(--gold-ink);font-weight:800">'+h(mk)+'</span>']
+    ])+
+    '<div class="card pad-sm mt" style="border-color:rgba(248,113,113,.4)">'+
+    '<p class="tiny" style="line-height:1.65;color:var(--ink-2)"><b>Gửi mật khẩu bằng kênh KHÁC</b> với kênh gửi tên đăng nhập. '+
+    'Người nhận buộc đổi ở lần đăng nhập đầu. Bản thô của mật khẩu không được lưu ở đâu — kể cả nhật ký.</p></div>'+
+    (G.API_CAP_PHEP ? '' :
+      '<p class="tiny muted mt center">Bản mẫu chưa nối máy chủ nên tài khoản này chưa được ghi vào sổ người dùng.</p>')+
+    '<button class="btn pri blk mt" data-act="dong-modal">Tôi đã chép lại</button>'
+  );
+};
+
+/* ─── Khoá · mở lại · xoá ─── */
+var LYDO_KHOA = [
+  'KPI dưới 30% sau 90 ngày — theo luật vòng đời tài khoản',
+  'Không hoạt động 180 ngày',
+  'Nghi ngờ chia sẻ tài khoản cho người ngoài',
+  'Người dùng nghỉ việc hoặc chuyển vị trí',
+  'Gia đình tạm dừng chương trình',
+  'Yêu cầu của chính người dùng'
+];
+
+G.VIEWS['khoa-tai-khoan'] = function(){
+  if(!G.can('qt_trang')) return chanCua();
+  var o = U.ph({eyebrow:'QUẢN TRỊ TRANG · CHỈ R01 – R02', ic:'lock', grad:1,
+    t:'Khoá · mở lại · xoá tài khoản',
+    lead:'Ba việc khác nhau, hậu quả khác nhau. Khoá thì gỡ lại được; xoá thì không.'});
+
+  o += '<div class="ktk-ba">'+
+    '<div class="ktk-o" style="--kc:#F59E0B"><div class="ktk-h">'+ic('lock','w-4 h-4')+'<b>KHOÁ</b></div>'+
+      '<p class="sm">Người dùng không đăng nhập được nữa. Dữ liệu giữ nguyên, hồ sơ gia đình không mất gì. '+
+      'Mở lại lúc nào cũng được.</p><div class="ktk-ai">R01 · R02 làm được</div></div>'+
+    '<div class="ktk-o" style="--kc:#10B981"><div class="ktk-h">'+ic('check','w-4 h-4')+'<b>MỞ LẠI</b></div>'+
+      '<p class="sm">Trả tài khoản về hoạt động. Phải có người xem xét và ghi lý do — không tự động mở.</p>'+
+      '<div class="ktk-ai">R01 · R02 làm được</div></div>'+
+    '<div class="ktk-o" style="--kc:#F87171"><div class="ktk-h">'+ic('x','w-4 h-4')+'<b>XOÁ</b></div>'+
+      '<p class="sm">Gỡ hẳn khỏi hệ thống. <b>Không hoàn lại được.</b> Chỉ Super Admin, và phải gõ đúng '+
+      'tên đăng nhập để xác nhận.</p><div class="ktk-ai">CHỈ R01</div></div>'+
+    '</div>';
+
+  o += '<div class="card mt2"><div class="up mb" style="color:var(--ink-4)">THAO TÁC TRÊN MỘT TÀI KHOẢN</div>'+
+    '<div class="ct-luoi">'+
+      '<div><label class="tiny up muted">TÊN ĐĂNG NHẬP</label>'+
+        '<input id="kt_u" class="inp blk" placeholder="ten@gita365.vn"></div>'+
+      '<div><label class="tiny up muted">VIỆC CẦN LÀM</label>'+
+        '<select id="kt_viec" class="inp blk">'+
+          '<option value="khoa">Khoá tài khoản</option>'+
+          '<option value="mo">Mở lại tài khoản</option>'+
+          (G.S.role === 'R01' ? '<option value="xoa">Xoá vĩnh viễn</option>' : '')+
+        '</select></div>'+
+      '<div style="grid-column:1/-1"><label class="tiny up muted">LÝ DO — bắt buộc, vào nhật ký</label>'+
+        '<select id="kt_lydo" class="inp blk">'+
+          LYDO_KHOA.map(function(x){ return '<option>'+h(x)+'</option>'; }).join('')+
+        '</select></div>'+
+    '</div>'+
+    '<div id="kt_loi" class="tiny mt" style="color:#F87171;min-height:16px"></div>'+
+    '<button class="btn pri mt" data-act="kt-lam">Thực hiện</button></div>';
+
+  if(G.S.role !== 'R01')
+    o += '<p class="tiny muted mt">Vai Admin hệ thống khoá và mở lại được, nhưng không xoá được tài khoản nào. '+
+      'Xoá là việc của Super Admin.</p>';
+  return o;
+};
+
+G.lamViecTaiKhoan = function(){
+  var loi = document.getElementById('kt_loi');
+  function bao(t){ if(loi) loi.textContent = t; }
+  if(!G.can('qt_trang')){ bao('Vai này không có quyền quản trị trang.'); return; }
+  var u = ((document.getElementById('kt_u')||{}).value || '').trim().toLowerCase();
+  var viec = (document.getElementById('kt_viec')||{}).value || '';
+  var lydo = (document.getElementById('kt_lydo')||{}).value || '';
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(u)){ bao('Nhập đúng tên đăng nhập dạng email.'); return; }
+  if(viec === 'xoa' && G.S.role !== 'R01'){ bao('Chỉ Super Admin xoá được tài khoản.'); return; }
+  if(u === (G.S.acc && G.S.acc.u)){ bao('Không tự khoá hoặc xoá chính tài khoản mình đang dùng.'); return; }
+
+  if(viec === 'xoa'){
+    U.modal('<h2 style="font-size:20px;font-weight:800;margin-bottom:6px;color:#F87171">Xoá vĩnh viễn</h2>'+
+      '<p class="sm" style="line-height:1.7;color:var(--ink-2);margin-bottom:12px">Sắp xoá hẳn <b class="mono">'+h(u)+'</b>. '+
+      'Việc này <b>không hoàn lại được</b>. Gõ lại đúng tên đăng nhập để xác nhận.</p>'+
+      '<input id="kt_xn" class="inp blk mb" placeholder="'+h(u)+'" autocomplete="off">'+
+      '<div id="kt_xnloi" class="tiny mb" style="color:#F87171;min-height:16px"></div>'+
+      '<button class="btn pri blk" data-act="kt-xoa-that" data-u="'+h(u)+'" data-l="'+h(lydo)+'">Tôi hiểu — xoá</button>');
+    return;
+  }
+  if(G.secLog) G.secLog(viec === 'khoa' ? 'Khoá tài khoản' : 'Mở lại tài khoản',
+    u + ' · lý do: ' + lydo + ' · người làm ' + (G.S.acc && G.S.acc.u), 'Ghi nhận');
+  U.toast((viec === 'khoa' ? 'Đã ghi lệnh khoá ' : 'Đã ghi lệnh mở lại ') + u +
+    (G.API_CAP_PHEP ? '.' : ' — bản mẫu chưa nối máy chủ nên chưa gửi đi.'), 'ok');
+  bao('');
+};
+
+G.xoaTaiKhoanThat = function(el){
+  var u = el.getAttribute('data-u'), lydo = el.getAttribute('data-l');
+  var go = ((document.getElementById('kt_xn')||{}).value || '').trim().toLowerCase();
+  var loi = document.getElementById('kt_xnloi');
+  if(go !== u){ if(loi) loi.textContent = 'Tên đăng nhập gõ lại chưa khớp.'; return; }
+  if(G.secLog) G.secLog('XOÁ tài khoản', u + ' · lý do: ' + lydo + ' · người xoá ' + (G.S.acc && G.S.acc.u), 'Cảnh báo');
+  U.closeModal();
+  U.toast('Đã ghi lệnh xoá ' + u + (G.API_CAP_PHEP ? '.' : ' — bản mẫu chưa nối máy chủ nên chưa gửi đi.'), 'ok');
 };
 })();

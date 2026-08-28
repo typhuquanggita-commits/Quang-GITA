@@ -66,7 +66,7 @@ G.VIEWS['phac-do'] = function(){
     lead:'Mỗi vấn đề có đường đi riêng qua năm tầng. Đây là chỉ mục vấn đề — mở một mục để thấy nguyên nhân, giải pháp và việc của từng vai.'});
   o += G.searchBox('Tìm theo tên vấn đề hoặc nhóm…','pd');
   o += '<div id="pdList">' + keys.map(function(k){
-    return '<div class="mt2"><div class="up mb" style="color:var(--gold)">'+h(k)+
+    return '<div class="mt2"><div class="up mb" style="color:var(--gold-ink)">'+h(k)+
       ' <span class="muted">· '+nhom[k].length+' mục</span></div>'+
       '<div class="grid g-auto">' + nhom[k].map(function(p){
         return '<button class="card pad-sm lift" data-pd="'+h(p.ma)+'" data-s="'+h((p.ten+' '+k).toLowerCase())+'" style="text-align:left">'+
@@ -148,7 +148,7 @@ G.VIEWS['mo-thuc'] = function(){
   o += G.searchBox('Tìm mô thức theo tên hoặc từ khoá…','mt');
   o += '<div class="grid g-auto mt" id="mtList">' + G.MOTHUC.map(function(m){
     return '<button class="card lift" data-mt="'+h(m.id)+'" data-s="'+h(((m.title||'')+' '+(m.keywords||[]).join(' ')).toLowerCase())+'" style="text-align:left">'+
-      '<div class="row" style="gap:7px;margin-bottom:7px"><span class="pill" style="background:rgba(245,185,66,.18);color:var(--gold)">'+h(m.id)+'</span>'+
+      '<div class="row" style="gap:7px;margin-bottom:7px"><span class="pill" style="background:rgba(245,185,66,.18);color:var(--gold-ink)">'+h(m.id)+'</span>'+
       (m.tiers?U.chip((m.tiers||[]).join(' · ')):'')+'</div>'+
       '<b class="sm" style="display:block;line-height:1.4;margin-bottom:6px">'+h(m.title)+'</b>'+
       '<p class="tiny muted" style="line-height:1.55">'+h(String(m.summary||'').slice(0,120))+'…</p></button>';
@@ -192,7 +192,7 @@ G.baiHocModal = function(id){
     '<h2 style="font-size:21px;font-weight:800;line-height:1.3;margin-bottom:12px">'+h(b.ten)+'</h2>'+
     '<div class="card pad-sm mb"><div class="tiny up muted mb">NGUYÊN LÝ</div><p class="sm" style="line-height:1.7">'+h(b.nguyenLy)+'</p></div>';
   if(b.dungKhiNao) o += '<div class="card pad-sm mb"><div class="tiny up muted mb">DÙNG KHI NÀO</div><p class="sm">'+h(b.dungKhiNao)+'</p></div>';
-  if(b.cachDan) o += '<div class="card pad-sm mb" style="border-color:rgba(245,185,66,.3)"><div class="tiny up mb" style="color:var(--gold)">CÁCH DẪN</div><p class="sm" style="line-height:1.7">'+h(b.cachDan)+'</p></div>';
+  if(b.cachDan) o += '<div class="card pad-sm mb" style="border-color:rgba(245,185,66,.3)"><div class="tiny up mb" style="color:var(--gold-ink)">CÁCH DẪN</div><p class="sm" style="line-height:1.7">'+h(b.cachDan)+'</p></div>';
   if(b.viDuVietNam) o += '<div class="card pad-sm mb"><div class="tiny up muted mb">VÍ DỤ VIỆT NAM</div><p class="sm" style="line-height:1.7">'+h(b.viDuVietNam)+'</p></div>';
   if(b.doNot) o += '<div class="card pad-sm mb" style="border-color:rgba(248,113,113,.3);background:rgba(248,113,113,.05)">'+
     '<div class="tiny up mb" style="color:var(--bad)">KHÔNG LÀM</div><p class="sm">'+h(Array.isArray(b.doNot)?b.doNot.join(' · '):b.doNot)+'</p></div>';
@@ -208,7 +208,7 @@ G.VIEWS['sach'] = function(){
   o += U.sec('SÁU QUYỂN SÁCH GỐC','Toàn văn đã cắt thành đoạn tra cứu được');
   o += '<div class="grid g3">' + G.SACH.map(function(s){
     return '<div class="card lift"><div class="row" style="gap:9px;margin-bottom:8px">'+
-      '<span style="color:var(--gold)">'+ic('book','w-5 h-5')+'</span><b class="sm">'+h(s.title)+'</b></div>'+
+      '<span style="color:var(--gold-ink)">'+ic('book','w-5 h-5')+'</span><b class="sm">'+h(s.title)+'</b></div>'+
       '<p class="tiny muted" style="line-height:1.6">'+h(String(s.summary||'').slice(0,190))+'</p>'+
       '<div class="row mt2 tiny mono" style="gap:12px;color:var(--ink-4)">'+
       (s.sectionCount?'<span>'+s.sectionCount+' đoạn</span>':'')+
@@ -287,7 +287,7 @@ G.VIEWS['ngon-tu'] = function(){
       '<div style="display:flex;flex-direction:column;gap:10px">' + m.thoai.map(function(d){
         var me = d.ai!=='KH' && d.ai!=='HS' && d.ai!=='PH';
         return '<div style="display:flex;gap:10px;'+(me?'':'')+'">'+
-          '<span class="pill" style="flex:none;margin-top:3px;background:'+(me?m.c+'22;color:'+m.c:'rgba(255,255,255,.07);color:var(--ink-3)')+'">'+
+          '<span class="pill" style="flex:none;margin-top:3px;background:'+(me?m.c+'22;color:'+m.c:'var(--phu-3);color:var(--ink-3)')+'">'+
             h(d.ai==='KH'?'KHÁCH':(d.ai==='HS'?'CON':(d.ai==='PH'?'MẸ':'GITA')))+'</span>'+
           '<div style="flex:1"><p class="sm" style="line-height:1.65'+(me?'':';color:var(--ink-2)')+'">'+h(d.t)+'</p>'+
           (d.ky?'<div class="tiny mt" style="color:'+m.c+';opacity:.85;display:flex;gap:6px"><span style="flex:none">⌁</span><span>'+h(d.ky)+'</span></div>':'')+
@@ -308,7 +308,7 @@ G.VIEWS['tro-ly'] = function(){
 
   o += '<div class="card"><div class="row wrap" style="gap:10px;margin-bottom:14px">'+
     '<input id="aiQ" placeholder="Hỏi bất cứ điều gì về hành trình của nhà mình…" '+
-    'style="flex:1;min-width:220px;background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:99px;padding:13px 20px;font-size:14px;outline:none">'+
+    'style="flex:1;min-width:220px;background:var(--phu-2);border:1px solid var(--line);border-radius:99px;padding:13px 20px;font-size:14px;outline:none">'+
     '<button class="tbtn" id="micBtn" data-act="mic" aria-label="Nói vào micro" '+
     'style="width:46px;height:46px;border-radius:50%">'+ic('pulse','w-5 h-5')+'</button>'+
     '<button class="btn pri" data-act="ai-ask">'+ic('spark')+'Hỏi</button></div>'+
@@ -419,13 +419,13 @@ G.VIEWS['cu-hich'] = function(){
       U.chip(c.ngay+' ngày')+'</div>'+
       '<b style="font-size:16.5px;display:block;margin-bottom:9px;color:'+c.c+'">'+h(c.ten)+'</b>'+
       '<p class="sm dim" style="line-height:1.65;margin-bottom:12px">'+h(c.hua)+'</p>'+
-      '<div style="padding:11px 13px;border-radius:12px;background:rgba(255,255,255,.035);margin-bottom:12px">'+
+      '<div style="padding:11px 13px;border-radius:12px;background:var(--phu-2);margin-bottom:12px">'+
         '<span class="tiny up muted">VÌ SAO CÚ HÍCH NÀY MẠNH</span>'+
         '<p class="sm mt" style="line-height:1.6">'+h(c.vi)+'</p></div>'+
       '<div class="row" style="gap:10px;margin-bottom:8px"><span class="tiny muted">Đã tham gia</span>'+
         '<b class="mono" style="color:'+c.c+'">'+c.thamgia+' gia đình</b></div>'+
       U.bar(pct,c.c)+
-      '<div class="row mt2" style="gap:9px"><span style="color:var(--gold)">'+ic('crown','w-4 h-4')+'</span>'+
+      '<div class="row mt2" style="gap:9px"><span style="color:var(--gold-ink)">'+ic('crown','w-4 h-4')+'</span>'+
         '<span class="sm">'+h(c.thuong)+'</span></div>'+
       '<button class="btn pri blk mt" data-act="join-cuhich" data-ma="'+h(c.ma)+'">Đưa nhà mình vào cú hích này</button>'+
     '</div>';
@@ -459,7 +459,7 @@ G.VIEWS['bang-so'] = function(){
     ['T3','T4','T5','T6','T7','T8'].map(function(m,i){
       var v = [34,42,51,58,66,f.tuchu][i];
       return '<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:8px;height:100%;justify-content:flex-end">'+
-        '<b class="mono tiny" style="color:var(--gold)">'+v+'</b>'+
+        '<b class="mono tiny" style="color:var(--gold-ink)">'+v+'</b>'+
         '<div style="width:100%;max-width:52px;height:'+v+'%;border-radius:9px 9px 3px 3px;'+
         'background:linear-gradient(180deg,#F5B942,#FF7A45);box-shadow:0 0 22px -6px rgba(245,185,66,.8)"></div>'+
         '<span class="tiny muted">'+m+'</span></div>';
@@ -474,13 +474,13 @@ G.VIEWS['vinh-danh'] = function(){
     lead:'Chuyện tốt trong nhà phải được kể lại. Ghi nhận đúng việc, có bằng chứng, đúng lúc — và ghi nhận cả phần của người lớn.'});
 
   o += '<div class="card mb" style="border-color:rgba(245,185,66,.3)">'+
-    '<div class="row mb"><span style="color:var(--gold)">'+ic('star','w-4 h-4')+'</span><b>Công thức ghi nhận ba bước</b></div>'+
+    '<div class="row mb"><span style="color:var(--gold-ink)">'+ic('star','w-4 h-4')+'</span><b>Công thức ghi nhận ba bước</b></div>'+
     '<div class="grid g3" style="gap:12px">'+
     [['THẤY GÌ','Nêu đúng sự việc quan sát được, có mốc thời gian.'],
      ['HỌ ĐÃ TỰ LÀM GÌ','Phần do chính người đó làm, không phải phần hệ thống làm hộ.'],
      ['ĐIỀU ĐÓ GIÚP AI','Tác động thật lên một người cụ thể trong hoặc ngoài nhà.']].map(function(x,i){
       return '<div style="padding:12px;border-radius:13px;background:rgba(245,185,66,.07)">'+
-        '<div class="tiny up" style="color:var(--gold)">BƯỚC '+(i+1)+' · '+h(x[0])+'</div>'+
+        '<div class="tiny up" style="color:var(--gold-ink)">BƯỚC '+(i+1)+' · '+h(x[0])+'</div>'+
         '<p class="sm mt">'+h(x[1])+'</p></div>';
     }).join('') + '</div>'+
     '<p class="tiny muted mt2">Ghi nhận không có bằng chứng chỉ là lời khen cho vui — nó gãy ở lần vấp đầu tiên.</p></div>';

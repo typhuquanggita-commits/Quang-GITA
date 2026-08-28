@@ -215,12 +215,12 @@ G.kichHoat = function(){
 G.moDangKyXong = function(ma, email){
   try{ history.replaceState(null,'',location.pathname); }catch(e){}
   U().modal(
-    '<div class="center" style="padding:6px 0 2px;color:var(--gold)">'+G.U.ic('crown','w-9 h-9')+'</div>'+
+    '<div class="center" style="padding:6px 0 2px;color:var(--gold-ink)">'+G.U.ic('crown','w-9 h-9')+'</div>'+
     '<h2 style="font-size:22px;font-weight:800;margin:8px 0 4px;text-align:center">Đăng ký thành công</h2>'+
     '<p class="sm muted center" style="margin-bottom:16px">Gia đình mình đã có mặt trong hệ sinh thái GITA 365.</p>'+
     '<div class="card center" style="padding:20px;border-color:rgba(245,185,66,.4);background:rgba(245,185,66,.06)">'+
       '<div class="tiny up muted mb">MÃ SỐ KHÁCH HÀNG</div>'+
-      '<div class="mono" style="font-size:22px;font-weight:800;color:var(--gold);letter-spacing:.06em">'+h(ma||'—')+'</div>'+
+      '<div class="mono" style="font-size:22px;font-weight:800;color:var(--gold-ink);letter-spacing:.06em">'+h(ma||'—')+'</div>'+
       '<p class="tiny muted mt">Mã này đi theo gia đình suốt năm tầng. Giữ lại khi cần liên hệ Học viện.</p></div>'+
     '<div class="card pad-sm mt"><div class="tiny up muted mb">BƯỚC TIẾP THEO</div>'+
     '<p class="tiny" style="line-height:1.65;color:var(--ink-2)">Đăng nhập bằng '+h(email||'email vừa đăng ký')+

@@ -21,7 +21,9 @@ G.tx = function(o, f){
 };
 G.L = function(k){
   var d = G.UI[G.LANG] || G.UI.vi;
-  return (d[k] !== undefined) ? d[k] : (G.UI.vi[k] !== undefined ? G.UI.vi[k] : k);
+  var goc = (d[k] !== undefined) ? d[k] : (G.UI.vi[k] !== undefined ? G.UI.vi[k] : k);
+  /* Super Admin sửa được chữ giao diện ngay trong ứng dụng — xem src/sua-noi-dung.js */
+  return G.nd ? G.nd('chu.' + k, goc) : goc;
 };
 
 /* ══════════ CHUỖI GIAO DIỆN ══════════ */
@@ -40,14 +42,14 @@ G.UI = {
     heroH1a:'Bảy ngày đầu, mình', heroH1b:'chưa sửa gì cả.', heroH1c:'Mình chỉ', heroH1d:'nhìn cho đúng.',
     heroLead:'Anh chị không cần tin điều gì hôm nay. Chỉ cần nhìn thử tấm bản đồ này một lần — và tự thấy nhà mình đang đứng ở khoang nào.\n\nGITA 365 không hứa con sẽ ngoan hơn sau một tháng. GITA 365 làm một việc: sau 365 ngày, nhà mình vận hành được mà không cần ai canh.',
     heroBtn1:'Bước vào bản đồ', heroBtn2:'Xem 15 tài khoản trải nghiệm',
-    prf1:'KỊCH BẢN CHUYÊN MÔN', prf2:'PHÁC ĐỒ × 5 TẦNG', prf3:'MÔ THỨC GỐC', prf4:'VAI GIỮ TRONG NHÀ',
-    loginTitle:'Bước vào bằng vai của mình',
     loginHint:'Chọn một vị trí để xem hệ thống đúng như vị trí đó nhìn thấy. Đổi vai bất cứ lúc nào.',
     orLogin:'HOẶC ĐĂNG NHẬP BẰNG TÀI KHOẢN',
     signUp:'Chưa có tài khoản? Đăng ký',
-    gateArtCaption:'Đích đến không phải một đứa trẻ ngoan hơn — là một mái nhà mà ai cũng muốn về.',
     gateVisionEyebrow:'TẦM NHÌN GITA 365',
-    gateVisionTitle:'Về một gia đình thịnh vượng',
+    gateVisionTitle:'Một gia đình biết cách học cùng nhau',
+    gateVisionBig:'GITA 365 tin rằng năng lực học tập của một đứa trẻ lớn lên nhanh nhất khi cả nhà cùng học — cha mẹ học cách dẫn, con học cách tự đi, và cả hai cùng giữ một nhịp.',
+    gateVisionSub:'Đích của chúng tôi không phải một đứa trẻ ngoan hơn. Là một gia đình tự vận hành được việc học của mình.',
+    gateMission:'Trao cho mỗi gia đình một bản đồ, một nhịp và một người đồng hành — để sau 365 ngày, nhà ấy tự chạy được mà không cần ai canh.',
     gateMapTitle:'BẢN ĐỒ GIA ĐÌNH THỊNH VƯỢNG · NĂM CHẶNG',
     loginHint:'Chưa biết mật khẩu? Mở danh sách để xem đủ mười lăm tài khoản kèm mật khẩu, và bấm Vào là đăng nhập ngay.',
     seePw:'Xem tài khoản và mật khẩu',
@@ -76,14 +78,14 @@ G.UI = {
     heroH1a:'For the first seven days, we', heroH1b:'fix nothing.', heroH1c:'We only', heroH1d:'learn to see clearly.',
     heroLead:'You do not have to believe anything today. Just look at this map once — and see for yourself which chamber your family is standing in.\n\nGITA 365 does not promise a better-behaved child in a month. GITA 365 does one thing: after 365 days, your household runs without anyone standing guard.',
     heroBtn1:'Enter the map', heroBtn2:'See 15 trial accounts',
-    prf1:'PROFESSIONAL SESSIONS', prf2:'PROTOCOLS × 5 TIERS', prf3:'ORIGINAL MODELS', prf4:'ROLES HELD AT HOME',
-    loginTitle:'Enter through your own role',
     loginHint:'Pick a position to see the system exactly as that position sees it. Switch any time.',
     orLogin:'OR SIGN IN WITH AN ACCOUNT',
     signUp:'No account yet? Sign up',
-    gateArtCaption:'The destination is not a better-behaved child — it is a home everyone wants to come back to.',
     gateVisionEyebrow:'GITA 365 VISION',
-    gateVisionTitle:'On a prosperous family',
+    gateVisionTitle:'A family that learns together',
+    gateVisionBig:'GITA 365 holds that a child learns fastest when the whole household learns too — parents learning to guide, children learning to walk on their own, both keeping one rhythm.',
+    gateVisionSub:'Our aim is not a better-behaved child. It is a family that can run its own learning.',
+    gateMission:'Give every family a map, a rhythm and a companion — so that after 365 days the household runs without anyone standing guard.',
     gateMapTitle:'THE PROSPEROUS FAMILY MAP · FIVE STAGES',
     loginHint:'Don\u2019t know the password? Open the list to see all fifteen accounts with their passwords, and hit Enter to sign in.',
     seePw:'See accounts and passwords',

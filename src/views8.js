@@ -141,7 +141,7 @@ function manThuVien(T){
   }).join('') + '</div>';
 
   o += '<div class="card mt2" style="border-color:rgba(245,185,66,.3)">'+
-    '<div class="row mb"><span style="color:var(--gold)">'+ic('shield','w-4 h-4')+'</span><b>Ranh giới của bộ test</b></div>'+
+    '<div class="row mb"><span style="color:var(--gold-ink)">'+ic('shield','w-4 h-4')+'</span><b>Ranh giới của bộ test</b></div>'+
     '<p class="sm dim" style="line-height:1.75">'+h(mau.gioiHan)+'</p></div>';
 
   o += U.sec('CHỌN BÀI', 'Bấm vào một bài để làm. Kết quả lưu trong máy này và gửi được cho người đồng hành.');

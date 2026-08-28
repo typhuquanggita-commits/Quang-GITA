@@ -33,15 +33,41 @@ function load(){
 }
 
 /* ─────────── Tiện ích hệ thống ─────────── */
+/* ══════════ NỀN SÁNG / NỀN TỐI ══════════
+   Mặc định nền sáng — hợp môi trường giáo dục và đọc lâu không mỏi.
+   Ai quen nền tối thì bấm một nút; lựa chọn nhớ theo máy. */
+var KEY_NEN = 'gita365_nen';
+G.datNen = function(n){
+  G.NEN = (n === 'toi') ? 'toi' : 'sang';
+  if(G.NEN === 'toi') document.documentElement.setAttribute('data-nen','toi');
+  else document.documentElement.removeAttribute('data-nen');
+  var m = document.querySelector('meta[name="theme-color"]');
+  if(m) m.setAttribute('content', G.NEN === 'toi' ? '#1E1842' : '#F6F3FC');
+  try{ localStorage.setItem(KEY_NEN, G.NEN); }catch(e){}
+};
+G.doiNen = function(){
+  G.datNen(G.NEN === 'toi' ? 'sang' : 'toi');
+  if(G.S.acc){ var t = document.getElementById('top'); if(t) t.innerHTML = topBar(); }
+  else gate();
+};
+(function(){
+  var n = null;
+  try{ n = localStorage.getItem(KEY_NEN); }catch(e){}
+  G.datNen(n || 'sang');
+})();
+
 G.roleById = function(id){
   var r = G.ROLES.filter(function(x){return x.id===id;})[0];
   return r || G.ROLES[12];
 };
-G.gname = function(g){ var e=G.NAV_EN[g.id]; return (G.LANG==='en'&&e)?e.t:g.t; };
-G.gsub  = function(g){ var e=G.NAV_EN[g.id]; return (G.LANG==='en'&&e)?e.s:g.s; };
-G.gess  = function(g){ var e=G.NAV_EN[g.id]; return (G.LANG==='en'&&e)?e.e:g.essence; };
-G.iname = function(it){ var e=G.ITEM_EN[it.v]; return (G.LANG==='en'&&e)?e[0]:it.t; };
-G.ihint = function(it){ var e=G.ITEM_EN[it.v]; return (G.LANG==='en'&&e)?e[1]:it.h; };
+/* Mọi chữ hiển thị đi qua G.nd để Super Admin sửa được ngay trong ứng dụng.
+   Chưa nạp mô-đun sửa nội dung thì nd trả về bản gốc — không hỏng gì. */
+function nd(k, goc){ return G.nd ? G.nd(k, goc) : goc; }
+G.gname = function(g){ var e=G.NAV_EN[g.id]; return nd('nhom.'+g.id+'.t', (G.LANG==='en'&&e)?e.t:g.t); };
+G.gsub  = function(g){ var e=G.NAV_EN[g.id]; return nd('nhom.'+g.id+'.s', (G.LANG==='en'&&e)?e.s:g.s); };
+G.gess  = function(g){ var e=G.NAV_EN[g.id]; return nd('nhom.'+g.id+'.e', (G.LANG==='en'&&e)?e.e:g.essence); };
+G.iname = function(it){ var e=G.ITEM_EN[it.v]; return nd('nav.'+it.v+'.t', (G.LANG==='en'&&e)?e[0]:it.t); };
+G.ihint = function(it){ var e=G.ITEM_EN[it.v]; return nd('nav.'+it.v+'.h', (G.LANG==='en'&&e)?e[1]:it.h); };
 G.tname = function(t){ var e=G.TIER_EN[t.code]; return (G.LANG==='en'&&e)?e.name:t.name; };
 G.tq    = function(t){ var e=G.TIER_EN[t.code]; return (G.LANG==='en'&&e)?e.q:t.q; };
 G.tfeel = function(t){ var e=G.TIER_EN[t.code]; return (G.LANG==='en'&&e)?e.feel:t.feel; };
@@ -126,7 +152,7 @@ G.searchBox = function(ph, key){
   return '<div class="row" style="gap:10px"><div style="flex:1;position:relative">'+
     '<span style="position:absolute;left:16px;top:50%;transform:translateY(-50%);color:var(--ink-4)">'+ic('search','w-4 h-4')+'</span>'+
     '<input data-search="'+h(key)+'" placeholder="'+h(ph)+'" '+
-    'style="width:100%;background:rgba(255,255,255,.045);border:1px solid var(--line);border-radius:99px;'+
+    'style="width:100%;background:var(--phu-2);border:1px solid var(--line);border-radius:99px;'+
     'padding:12px 20px 12px 44px;font-size:13.5px;outline:none"></div></div>';
 };
 G.famTable = function(list){
@@ -175,7 +201,7 @@ function banDoSVG(){
     o += '<circle cx="' + cx.toFixed(1) + '" cy="' + cy.toFixed(1) + '" r="16" fill="' + t.c + '" opacity=".18"/>'+
       '<circle cx="' + cx.toFixed(1) + '" cy="' + cy.toFixed(1) + '" r="10" fill="' + t.c + '"/>'+
       '<text x="' + cx.toFixed(1) + '" y="' + (cy + 3.6).toFixed(1) + '" text-anchor="middle" '+
-      'font-size="10" font-weight="800" fill="#070510">' + h(t.code) + '</text>'+
+      'font-size="10" font-weight="800" fill="#FFFFFF">' + h(t.code) + '</text>'+
       '<text x="' + cx.toFixed(1) + '" y="' + (cy - 23).toFixed(1) + '" text-anchor="middle" '+
       'font-size="11" font-weight="800" letter-spacing=".03em" fill="' + t.c + '">' + h(t.name) + '</text>'+
       '<text x="' + cx.toFixed(1) + '" y="' + (cy + 27).toFixed(1) + '" text-anchor="middle" '+
@@ -201,20 +227,12 @@ function banDoSVG(){
 }
 
 function tamNhinBanDo(){
-  var C = G.CULTURE, TN = C.tamNhin, SM = C.suMenh;
-  var en = G.LANG==='en' && C.EN && C.EN.tamNhin;
+  var C = G.CULTURE || {}, SM = C.suMenh || {};
   return '<div class="tn-khoi">'+
-
-    /* Bức tranh nhà mình — thứ người ta nhìn thấy trước khi đọc một chữ nào */
-    '<figure class="tn-anh">'+
-      (G.anhGiaDinh ? G.anhGiaDinh() : '')+
-      '<figcaption class="tn-anh-cap">'+h(G.L('gateArtCaption'))+'</figcaption>'+
-    '</figure>'+
-
     '<div class="tn-nhan">'+ic('compass','w-4 h-4')+'<span>'+h(G.L('gateVisionEyebrow'))+'</span></div>'+
     '<h3 class="tn-tieu">'+h(G.L('gateVisionTitle'))+'</h3>'+
-    '<p class="tn-lon">'+h(en ? C.EN.tamNhin.big : TN.big)+'</p>'+
-    '<p class="tn-nho">'+h(en ? C.EN.tamNhin.sub : TN.sub)+'</p>'+
+    '<p class="tn-lon">'+h(G.L('gateVisionBig'))+'</p>'+
+    '<p class="tn-nho">'+h(G.L('gateVisionSub'))+'</p>'+
 
     '<div class="tn-bando">'+
       '<div class="tn-bd-nhan">'+h(G.L('gateMapTitle'))+'</div>'+
@@ -222,8 +240,8 @@ function tamNhinBanDo(){
     '</div>'+
 
     '<div class="tn-sm">'+
-      '<div class="tiny up" style="color:var(--gold);margin-bottom:5px">'+h(SM.t)+'</div>'+
-      '<p class="sm" style="line-height:1.7;color:var(--ink-2)">'+h(SM.big)+'</p>'+
+      '<div class="tiny up" style="color:var(--gold-ink);margin-bottom:5px">'+h(SM.t || 'SỨ MỆNH')+'</div>'+
+      '<p class="sm" style="line-height:1.7;color:var(--ink-2)">'+h(G.L('gateMission'))+'</p>'+
     '</div></div>';
 }
 
@@ -246,12 +264,7 @@ function gate(){
     '<div class="row wrap" style="gap:10px">'+
       '<button class="btn pri" data-act="scroll-login">'+ic('arrow')+h(G.L('heroBtn1'))+'</button>'+
       '<button class="btn ghost" data-act="show-accounts">'+ic('users')+h(G.L('heroBtn2'))+'</button></div>'+
-    '<div class="prf">'+
-      '<div><b class="grad-text">'+G.META.soKichBan.toLocaleString('vi-VN')+'</b><span>'+h(G.L('prf1'))+'</span></div>'+
-      '<div><b class="grad-text">'+G.META.soPhacDo+'</b><span>'+h(G.L('prf2'))+'</span></div>'+
-      '<div><b class="grad-text">'+G.META.soMoThuc+'</b><span>'+h(G.L('prf3'))+'</span></div>'+
-      '<div><b class="grad-text">9</b><span>'+h(G.L('prf4'))+'</span></div>'+
-    '</div></div>'+
+    '</div>'+
 
     '<div class="gate-card" id="loginCard">'+
      tamNhinBanDo()+
@@ -262,9 +275,9 @@ function gate(){
          '<button class="btn ghost sm mt" data-act="show-accounts" style="width:100%">'+ic('users')+h(G.L('seePw'))+'</button>'+
        '</div>'+
        '<input id="inU" placeholder="name@gita365.vn" autocomplete="username" '+
-       'style="width:100%;background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:13px;padding:11px 15px;font-size:13.5px;outline:none;margin-bottom:8px">'+
+       'style="width:100%;background:var(--phu-2);border:1px solid var(--line);border-radius:13px;padding:11px 15px;font-size:13.5px;outline:none;margin-bottom:8px">'+
        '<input id="inP" type="password" placeholder="'+h(G.L('pw'))+'" autocomplete="current-password" '+
-       'style="width:100%;background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:13px;padding:11px 15px;font-size:13.5px;outline:none">'+
+       'style="width:100%;background:var(--phu-2);border:1px solid var(--line);border-radius:13px;padding:11px 15px;font-size:13.5px;outline:none">'+
        '<button class="btn pri blk mt" data-act="do-login">'+ic('arrow')+h(G.L('login'))+'</button>'+
        '<button class="btn ghost blk mt" data-act="mo-dang-ky">'+ic('plus')+h(G.L('signUp'))+'</button>'+
        '<button class="btn ghost blk mt" data-act="quen-mk" style="font-size:12.5px">'+h(G.L('forgot'))+'</button>'+
@@ -274,25 +287,55 @@ function gate(){
 }
 
 G.accountsModal = function(){
-  var rows = G.ACCOUNTS.map(function(a){
-    var r = G.roleById(a.role);
-    return [U.chip(r.n, r.c)+'<div class="tiny muted mt">'+h(a.ten)+'</div>',
-      '<span class="mono sm">'+h(a.u)+'</span>',
-      '<span class="mono sm" style="color:var(--gold)">'+h(a.p)+'</span>',
-      '<button class="btn sm" data-login="'+h(a.u)+'">Vào</button>'];
+  /* Bảng tài khoản xếp theo BA TẦNG QUYỀN, không đổ một danh sách phẳng.
+     Mỗi dòng nói thẳng vai này vào thấy bao nhiêu phần trăm hệ thống —
+     để anh chị kiểm được phân quyền ngay từ màn đăng nhập. */
+  var tong = 0; G.NAV.forEach(function(g){ tong += g.items.length; });
+  function pt(vai){
+    var n = 0;
+    G.NAV.forEach(function(g){ g.items.forEach(function(it){
+      if(!it.perm || G.vaiCo(vai, it.perm)) n++; }); });
+    return {n:n, p:Math.round(n*100/tong)};
+  }
+  var KHOI = [
+    {t:'BAN ĐIỀU HÀNH', c:'#F5B942', lv:[1,4],
+     mo:'Thấy gần như toàn bộ hệ thống. Chỉ R01 và R02 có thư mục Quản trị trang; tài chính dừng ở R03.'},
+    {t:'ĐỘI NGŨ DẪN DẮT', c:'#8B5CF6', lv:[5,12],
+     mo:'Toàn bộ kho nghề và công cụ dẫn dắt. Không thấy tài chính, điều hành toàn hệ và quản trị trang.'},
+    {t:'KHÁCH HÀNG & CỘNG TÁC', c:'#10B981', lv:[13,15],
+     mo:'Chỉ thấy phần thuộc về mình. Ba vai này khác nhau rõ rệt, không dùng chung một danh sách.'}
+  ];
+
+  var o = '<h2 style="font-size:21px;font-weight:800;margin-bottom:4px">Tài khoản trải nghiệm</h2>'+
+    '<p class="sm muted" style="margin-bottom:6px">Mười lăm vị trí, xếp theo ba tầng quyền. '+
+    'Cột <b>Thấy được</b> là số màn hình vai đó mở được trên tổng '+tong+' màn — bấm <b>Vào</b> để kiểm ngay.</p>'+
+    '<p class="tiny muted" style="margin-bottom:16px">Đây là lớp đăng nhập demo chạy trong trình duyệt để kiểm giao diện và phạm vi từng vai — không phải hệ thống xác thực thật.</p>';
+
+  KHOI.forEach(function(k){
+    var ds = G.ACCOUNTS.filter(function(a){
+      var r = G.roleById(a.role); return r && r.lv >= k.lv[0] && r.lv <= k.lv[1];
+    });
+    if(!ds.length) return;
+    o += '<div class="tk-khoi" style="--kc:'+k.c+'">'+
+      '<div class="tk-h"><b>'+h(k.t)+'</b><span>'+ds.length+' vị trí</span></div>'+
+      '<p class="tk-mo">'+h(k.mo)+'</p></div>';
+    o += U.tbl(['Vị trí','Tài khoản','Mật khẩu','Thấy được',''], ds.map(function(a){
+      var r = G.roleById(a.role), d = pt(a.role);
+      return [U.chip(r.n, r.c)+'<div class="tiny muted mt">'+h(a.ten)+'</div>',
+        '<span class="mono sm">'+h(a.u)+'</span>',
+        '<span class="mono sm" style="color:var(--gold-ink)">'+h(a.p)+'</span>',
+        '<b>'+d.p+'%</b><span class="muted sm"> · '+d.n+' màn</span>',
+        '<button class="btn sm" data-login="'+h(a.u)+'">Vào</button>'];
+    }));
   });
-  var rows2 = G.AUDITORS.map(function(a){
+
+  o += U.sec('BỐN CHUYÊN GIA PHẢN BIỆN','Đăng nhập để chấm hệ thống từ góc nhìn của họ');
+  o += U.tbl(['Vai kiểm thử','Tài khoản','Mật khẩu',''], G.AUDITORS.map(function(a){
     return [U.chip(a.ten,'#FB7185'), '<span class="mono sm">'+h(a.u)+'</span>',
-      '<span class="mono sm" style="color:var(--gold)">'+h(a.p)+'</span>',
+      '<span class="mono sm" style="color:var(--gold-ink)">'+h(a.p)+'</span>',
       '<button class="btn sm" data-login="'+h(a.u)+'">Vào</button>'];
-  });
-  U.modal('<h2 style="font-size:21px;font-weight:800;margin-bottom:6px">Tài khoản trải nghiệm</h2>'+
-    '<p class="sm muted mb">Mười lăm vị trí trong hệ thống, cộng bốn chuyên gia phản biện. '+
-    'Đây là lớp đăng nhập demo chạy trong trình duyệt để kiểm tra giao diện và phạm vi của từng vai — '+
-    'không phải hệ thống xác thực thật.</p>'+
-    U.tbl(['Vị trí','Tài khoản','Mật khẩu',''], rows)+
-    U.sec('BỐN CHUYÊN GIA PHẢN BIỆN','Đăng nhập để chấm hệ thống từ góc nhìn của họ')+
-    U.tbl(['Vai kiểm thử','Tài khoản','Mật khẩu',''], rows2));
+  }));
+  U.modal(o);
 };
 
 function doLogin(u, p){
@@ -362,7 +405,7 @@ function leftNav(){
         var on = it.v===G.S.view;
         return '<button class="nav-i'+(on?' on':'')+(duoc?'':' lock')+'" data-v="'+h(it.v)+'"'+(duoc?'':' disabled')+'>'+
           ic(duoc?it.ic:'lock')+'<span class="lb">'+h(G.iname(it))+'</span>'+
-          (duoc && it.star?'<span style="color:var(--gold)">'+ic('star','w-3 h-3')+'</span>':'')+'</button>';
+          (duoc && it.star?'<span style="color:var(--gold-ink)">'+ic('star','w-3 h-3')+'</span>':'')+'</button>';
       }
       return '<div class="grp'+(open?' open':'')+'">'+
         '<button class="grp-h" data-grp="'+h(g.id)+'">'+
@@ -475,9 +518,11 @@ function topBar(){
     '<button id="search" data-act="cmd">'+ic('search')+'<span>'+h(G.L('search'))+'</span><kbd>Ctrl K</kbd></button>'+
     '<span class="grow"></span>'+
     '<span class="chip deskonly" style="color:'+r.c+';border-color:'+r.c+'55">'+ic('shield','w-3 h-3')+h(r.short)+' · LV'+r.lv+'</span>'+
+    '<button class="tbtn" data-act="doi-nen" aria-label="Đổi nền sáng tối" title="Đổi nền sáng / tối">'+
+      ic(G.NEN==='toi'?'sun':'moon')+'</button>'+
     '<button class="tbtn" data-act="lang" aria-label="Language" style="font-size:11px;font-weight:800;letter-spacing:.04em">'+
       h(G.LANG.toUpperCase())+'</button>'+
-    (G.INSTALL ? '<button class="tbtn" data-act="install" aria-label="Cài đặt ứng dụng" style="color:var(--gold);border-color:rgba(245,185,66,.45)">'+ic('plus')+'</button>' : '')+
+    (G.INSTALL ? '<button class="tbtn" data-act="install" aria-label="Cài đặt ứng dụng" style="color:var(--gold-ink);border-color:rgba(245,185,66,.45)">'+ic('plus')+'</button>' : '')+
     '<button class="tbtn" data-act="toggle-right" aria-label="'+h(G.L('compass'))+'">'+ic('compass')+'</button>'+
     '<button class="who" data-v="toi">'+
       '<div class="tx deskonly"><b>'+h(a.ten)+'</b><span>'+h(a.nha)+'</span></div>'+
@@ -600,7 +645,7 @@ G.ask = function(q){
   });
   var f = G.myFamily(), t = G.tierOf(f.tier);
   var head = '<div class="card mb" style="border-color:rgba(245,185,66,.3)">'+
-    '<div class="row mb"><span style="color:var(--gold)">'+ic('spark','w-4 h-4')+'</span>'+
+    '<div class="row mb"><span style="color:var(--gold-ink)">'+ic('spark','w-4 h-4')+'</span>'+
     '<b>Trả lời trong phạm vi '+h(t.code+' · '+G.tname(t))+'</b></div>'+
     '<p class="sm dim" style="line-height:1.7">'+h(t.note)+' '+
     'Với câu hỏi của anh chị, hệ thống tìm thấy '+hits.length+' tư liệu liên quan trong kho. '+
@@ -924,7 +969,7 @@ on('[data-dscap]', function(el){
   var c = ((G.DAISU && G.DAISU.capDo)||[])[Number(el.getAttribute('data-dscap'))]; if(!c) return;
   U.modal('<h2 style="font-size:20px;font-weight:800;margin-bottom:12px">'+h(c.ten)+'</h2>'+
     '<div class="card pad-sm mb"><div class="tiny up muted mb">ĐIỀU KIỆN</div><p class="sm" style="line-height:1.7">'+h(c.dieuKien)+'</p></div>'+
-    (c.quyenLoi?'<div class="up mb" style="color:var(--gold)">QUYỀN LỢI</div>'+U.list(c.quyenLoi):''));
+    (c.quyenLoi?'<div class="up mb" style="color:var(--gold-ink)">QUYỀN LỢI</div>'+U.list(c.quyenLoi):''));
 });
 on('[data-cd]', function(el){
   var f = el.getAttribute('data-cd');
@@ -942,7 +987,11 @@ on('[data-kbf]', function(el){
 });
 on('[data-act]', function(el){
   var a = el.getAttribute('data-act');
+  if(a==='doi-nen') return G.doiNen();
   if(a==='pq-dat-lai') return G.datLaiPhanQuyen();
+  if(a==='ct-cap') return G.capTaiKhoan();
+  if(a==='kt-lam') return G.lamViecTaiKhoan();
+  if(a==='kt-xoa-that') return G.xoaTaiKhoanThat(el);
   if(a==='mo-dang-ky') return G.moDangKy();
   if(a==='gui-dang-ky') return G.guiDangKy();
   if(a==='gui-otp') return G.guiOTP();
@@ -1000,8 +1049,8 @@ on('[data-act]', function(el){
     kq.innerHTML = '<div class="card pad-sm" style="border-color:'+(hien||an?'rgba(245,185,66,.4)':'rgba(148,163,184,.3)')+'">'+
       '<div class="up mb" style="color:'+(hien||an?'var(--gold)':'var(--ink-4)')+'">KẾT QUẢ QUÉT</div>'+
       '<div class="stack">'+
-      '<div class="sm">Lớp 1 · mã hiện: '+(hien?'<b style="color:var(--gold)">'+U.h(hien[0])+'</b>':'<span class="muted">không thấy</span>')+'</div>'+
-      '<div class="sm">Lớp 2 · ký tự ẩn: '+(an?'<b style="color:var(--gold)">'+an+' dấu</b>':'<span class="muted">không thấy</span>')+'</div>'+
+      '<div class="sm">Lớp 1 · mã hiện: '+(hien?'<b style="color:var(--gold-ink)">'+U.h(hien[0])+'</b>':'<span class="muted">không thấy</span>')+'</div>'+
+      '<div class="sm">Lớp 2 · ký tự ẩn: '+(an?'<b style="color:var(--gold-ink)">'+an+' dấu</b>':'<span class="muted">không thấy</span>')+'</div>'+
       '<div class="sm">Lớp 3 · vân ngắt dòng: <b>'+van3+' dòng</b> — đối chiếu với sơ đồ đã cấp</div>'+
       '</div>'+
       (tim ? '<div class="mt2" style="padding:12px 14px;border-radius:12px;background:rgba(248,113,113,.08);border-left:2px solid var(--bad)">'+

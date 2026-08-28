@@ -79,7 +79,7 @@ G.VIEWS['bat-dau'] = function(){
   }).join('');
 
   if(done===list.length)
-    o += '<div class="card glow center mt2"><div style="color:var(--gold);margin-bottom:10px">'+ic('crown','w-9 h-9')+'</div>'+
+    o += '<div class="card glow center mt2"><div style="color:var(--gold-ink);margin-bottom:10px">'+ic('crown','w-9 h-9')+'</div>'+
       '<b style="font-size:17px">Xong năm bước đầu tiên.</b>'+
       '<p class="sm muted mt" style="max-width:56ch;margin-inline:auto">Từ đây hệ thống không dẫn theo bước nữa — nó dẫn theo nhịp. '+
       'Mỗi ngày một check-in, mỗi tuần một buổi ngồi lại, mỗi 21 ngày một đêm rà đòn bẩy.</p>'+
@@ -169,7 +169,7 @@ G.VIEWS['phan-thuong'] = function(){
       '<div class="row" style="gap:10px;align-items:baseline;margin:3px 0 6px">'+
       '<b style="font-size:24px;color:'+lv.c+'">LV'+lv.lv+' · '+h(lv.ten)+'</b></div>'+
       '<p class="sm dim">'+h(lv.mo)+'</p>'+
-      '<p class="sm mt" style="color:var(--gold)"><b class="mono">'+diem.toLocaleString('vi-VN')+'</b> điểm · còn '+
+      '<p class="sm mt" style="color:var(--gold-ink)"><b class="mono">'+diem.toLocaleString('vi-VN')+'</b> điểm · còn '+
       '<b class="mono">'+(next.diem-diem).toLocaleString('vi-VN')+'</b> điểm để lên <b>'+h(next.ten)+'</b></p>'+
       '<div class="mt">'+U.bar(pct, lv.c)+'</div></div></div></div>';
 
@@ -188,7 +188,7 @@ G.VIEWS['phan-thuong'] = function(){
   o += '<div class="grid g2 mt2" style="gap:20px"><div>';
   o += U.sec('CÁCH TÍCH ĐIỂM','Minh bạch tuyệt đối — không có điểm ẩn');
   o += '<div class="card">' + G.DIEM.map(function(d){
-    return '<div style="display:flex;gap:10px;align-items:center;padding:9px 0;border-bottom:1px dashed rgba(255,255,255,.07)">'+
+    return '<div style="display:flex;gap:10px;align-items:center;padding:9px 0;border-bottom:1px dashed var(--phu-3)">'+
       '<span class="dot" style="color:'+d.c+';flex:none"></span>'+
       '<span class="sm grow">'+h(d.viec)+'</span>'+
       '<span class="tiny muted">'+h(d.nhip)+'</span>'+
@@ -242,7 +242,7 @@ G.VIEWS['nguoi-dan-dat'] = function(){
   o += U.sec('SÁU VIỆC NUÔI LỬA NGƯỜI DẪN DẮT','Người dẫn cạn thì gia đình cũng cạn theo');
   o += '<div class="grid g2">' + D.nuoiLua.map(function(x,i){
     return '<div class="card pad-sm"><div class="row" style="gap:9px;margin-bottom:5px">'+
-      '<span class="pill" style="background:rgba(245,185,66,.18);color:var(--gold)">0'+(i+1)+'</span>'+
+      '<span class="pill" style="background:rgba(245,185,66,.18);color:var(--gold-ink)">0'+(i+1)+'</span>'+
       '<b class="sm">'+h(x.t)+'</b></div>'+
       '<p class="tiny muted" style="line-height:1.6">'+h(x.d)+'</p></div>';
   }).join('') + '</div>';
@@ -328,7 +328,7 @@ G.VIEWS['thuong-hieu'] = function(){
   o += U.sec('BẢNG MÀU','Màu năm tầng giữ nguyên mã của hệ thống v6.9 — không đổi khi in, khi chiếu hay khi làm ảnh');
   o += '<div class="grid g3">' + B.mau.map(function(m){
     return '<div class="card pad-sm"><div class="row" style="gap:11px">'+
-      '<span style="width:46px;height:46px;border-radius:14px;background:'+m.hex+';flex:none;border:1px solid rgba(255,255,255,.15)"></span>'+
+      '<span style="width:46px;height:46px;border-radius:14px;background:'+m.hex+';flex:none;border:1px solid var(--phu-5)"></span>'+
       '<div><b class="sm" style="display:block">'+h(m.k)+'</b>'+
       '<span class="mono tiny" style="color:'+m.hex+'">'+h(m.hex)+'</span></div></div>'+
       '<p class="tiny muted mt" style="line-height:1.5">'+h(m.d)+'</p></div>';

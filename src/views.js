@@ -18,10 +18,10 @@ G.VIEWS['ban-do'] = function(){
   o += U.sec('ĐẦU VÀO — ba thứ phải có trước khi khởi động năm', V.dauVao.ten);
   o += '<div class="grid g3">' + V.dauVao.muc.map(function(m,i){
     return '<div class="card lift"><div class="row" style="margin-bottom:9px">'+
-      '<span class="pill" style="background:rgba(245,185,66,.16);color:var(--gold)">VÀO '+(i+1)+'</span></div>'+
+      '<span class="pill" style="background:rgba(245,185,66,.16);color:var(--gold-ink)">VÀO '+(i+1)+'</span></div>'+
       '<b style="font-size:14.5px;display:block;margin-bottom:7px">'+h(m.ten)+'</b>'+
       '<p class="sm muted" style="line-height:1.6">'+h(m.lam)+'</p>'+
-      (m.raGi?'<div class="mt" style="padding-top:10px;border-top:1px dashed rgba(255,255,255,.09)">'+
+      (m.raGi?'<div class="mt" style="padding-top:10px;border-top:1px dashed var(--phu-4)">'+
         '<div class="tiny up" style="color:var(--ink-4);margin-bottom:4px">RA ĐƯỢC GÌ</div>'+
         '<p class="sm dim">'+h(m.raGi)+'</p></div>':'')+'</div>';
   }).join('') + '</div>';
@@ -45,7 +45,7 @@ G.VIEWS['ban-do'] = function(){
   o += U.sec('BĂNG NỀN — tám việc chạy dưới cả năm khoang', V.bangNen.nguyenTac);
   o += '<div class="grid g4">' + V.bangNen.viec.map(function(v){
     return '<div class="card pad-sm lift"><div class="row" style="gap:8px;margin-bottom:6px">'+
-      '<span class="mono b" style="color:var(--gold);font-size:12px">0'+v.no+'</span>'+
+      '<span class="mono b" style="color:var(--gold-ink);font-size:12px">0'+v.no+'</span>'+
       '<b style="font-size:13px">'+h(v.ten)+'</b></div>'+
       '<p class="tiny muted" style="line-height:1.55">'+h(v.lam)+'</p>'+
       '<div class="tiny mt" style="color:var(--ink-4)">Nhịp: '+h(v.khi)+'</div>'+
@@ -56,7 +56,7 @@ G.VIEWS['ban-do'] = function(){
   /* Đầu ra */
   o += U.sec('ĐẦU RA — gia đình thành công, hạnh phúc', V.dauRa.nguyenTac);
   o += '<div class="card glow"><div class="grid g2" style="gap:10px">' + V.dauRa.chiSo.map(function(c){
-    return '<div style="display:flex;gap:10px;padding:11px;border-radius:12px;background:rgba(255,255,255,.035)">'+
+    return '<div style="display:flex;gap:10px;padding:11px;border-radius:12px;background:var(--phu-2)">'+
       '<span style="color:var(--ok);flex:none">'+ic('check','w-4 h-4')+'</span>'+
       '<div><b style="font-size:13px;display:block">'+h(c.ten)+'</b>'+
       '<span class="tiny muted">'+h(c.chuan)+'</span></div></div>';
@@ -138,7 +138,7 @@ G.VIEWS['chan-dung-nha'] = function(){
 
   o += U.sec('KHOANG 1 — THẤU HIỂU THÀNH VIÊN', V.khoang[0].kpi);
   o += '<div class="card">'+U.list(V.khoang[0].viecCuThe, '#3B82F6')+
-    '<div class="mt2" style="padding-top:14px;border-top:1px dashed rgba(255,255,255,.1)">'+
+    '<div class="mt2" style="padding-top:14px;border-top:1px dashed var(--phu-4)">'+
     '<span class="tiny up" style="color:var(--alert)">CẢNH BÁO</span>'+
     '<p class="sm dim mt">'+h(V.khoang[0].canhBao)+'</p></div></div>';
   return o;
@@ -200,7 +200,7 @@ G.VIEWS['tam-nhin'] = function(){
       '<div class="up" style="color:'+m.c+';margin-bottom:6px">'+m.t+'</div>'+
       '<p class="tiny muted" style="margin-bottom:10px;font-style:italic">'+h(m.g)+'</p>'+
       '<textarea data-vision="'+m.k+'" rows="7" placeholder="Viết bằng lời của chính mình…" '+
-      'style="width:100%;background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:12px;'+
+      'style="width:100%;background:var(--phu-2);border:1px solid var(--line);border-radius:12px;'+
       'padding:12px;font-size:13px;line-height:1.6;resize:vertical;outline:none">'+h(val)+'</textarea>'+
       '</div>';
   }).join('') + '</div>';
@@ -213,7 +213,7 @@ G.VIEWS['tam-nhin'] = function(){
     var done = i===0 && !!(G.S.vision && G.S.vision.nam5);
     return '<div class="card '+(done?'glow':'')+'"><div class="row" style="gap:9px;margin-bottom:8px">'+
       '<span style="width:26px;height:26px;border-radius:8px;display:grid;place-items:center;'+
-      (done?'background:var(--ok);color:#04241A':'background:rgba(255,255,255,.08);color:var(--ink-3)')+'">'+
+      (done?'background:var(--ok);color:#04241A':'background:var(--phu-3);color:var(--ink-3)')+'">'+
       (done?ic('check','w-3 h-3'):(i+1))+'</span><b class="sm">'+h(m.ten)+'</b></div>'+
       '<p class="tiny muted" style="line-height:1.55">'+h(m.raGi||m.lam)+'</p></div>';
   }).join('') + '</div>';
@@ -235,8 +235,8 @@ G.VIEWS['chuyen-hoa'] = function(){
       U.ba(c.dau, c.khat) +
       '<div class="grid g2 mt2" style="gap:12px">'+
         '<div style="padding:13px;border-radius:14px;background:rgba(245,185,66,.07);border:1px solid rgba(245,185,66,.2)">'+
-          '<div class="tiny up" style="color:var(--gold)">ĐÒN BẨY</div><p class="sm mt" style="line-height:1.6">'+h(c.don)+'</p></div>'+
-        '<div style="padding:13px;border-radius:14px;background:rgba(255,255,255,.035);border:1px solid var(--line)">'+
+          '<div class="tiny up" style="color:var(--gold-ink)">ĐÒN BẨY</div><p class="sm mt" style="line-height:1.6">'+h(c.don)+'</p></div>'+
+        '<div style="padding:13px;border-radius:14px;background:var(--phu-2);border:1px solid var(--line)">'+
           '<div class="tiny up muted">BẰNG CHỨNG ĐÃ QUA</div><p class="sm mt" style="line-height:1.6">'+h(c.bang)+'</p></div>'+
       '</div></div>';
   }).join('');
@@ -270,9 +270,9 @@ G.VIEWS['hanh-trinh-con'] = function(){
         G.fromTo('NGƯỜI LỚN', c.phuHuynhTuGi, c.phuHuynhSangGi)+
       '</div>'+
       '<div class="grid g2 mt" style="gap:9px">'+
-        '<div class="tiny" style="padding:9px 11px;border-radius:10px;background:rgba(255,255,255,.04)">'+
+        '<div class="tiny" style="padding:9px 11px;border-radius:10px;background:var(--phu-2)">'+
           '<span class="up muted">QUYỀN ĐIỀU HÀNH</span><p class="mt" style="color:var(--ink-2);line-height:1.5">'+h(c.quyenDieuHanh)+'</p></div>'+
-        '<div class="tiny" style="padding:9px 11px;border-radius:10px;background:rgba(255,255,255,.04)">'+
+        '<div class="tiny" style="padding:9px 11px;border-radius:10px;background:var(--phu-2)">'+
           '<span class="up muted">MỨC HỖ TRỢ</span><p class="mt" style="color:var(--ink-2);line-height:1.5">'+h(c.mucHoTro)+'</p></div>'+
       '</div>'+
       (c.dauHieuNhanBiet?'<div class="mt sm" style="color:var(--ok);display:flex;gap:8px"><span style="flex:none;margin-top:3px">'+ic('check','w-3 h-3')+'</span><span>Dấu hiệu nhận biết: '+h(c.dauHieuNhanBiet)+'</span></div>':'')+
@@ -287,9 +287,9 @@ G.VIEWS['hanh-trinh-con'] = function(){
 G.fromTo = function(lb, from, to){
   if(!from && !to) return '';
   return '<div style="display:flex;gap:10px;align-items:flex-start;font-size:12.5px;line-height:1.55">'+
-    '<span class="pill" style="background:rgba(255,255,255,.07);color:var(--ink-3);flex:none;margin-top:2px">'+h(lb)+'</span>'+
+    '<span class="pill" style="background:var(--phu-3);color:var(--ink-3);flex:none;margin-top:2px">'+h(lb)+'</span>'+
     '<span style="color:var(--ink-3);text-decoration:line-through;opacity:.75">'+h(from)+'</span>'+
-    '<span style="color:var(--gold);flex:none">→</span>'+
+    '<span style="color:var(--gold-ink);flex:none">→</span>'+
     '<span style="color:var(--ink)">'+h(to)+'</span></div>';
 };
 
@@ -437,7 +437,7 @@ G.VIEWS['chu-ky'] = function(){
   o += U.sec('ĐÊM RÀ ĐÒN BẨY — mỗi 21 ngày', 'Giữ cho gia đình không rơi vào bẫy làm nhiều mà không dịch chuyển');
   var nl = G.NGHILE[2];
   o += '<div class="card" style="border-color:'+nl.c+'33">'+U.list(nl.buoc, nl.c)+
-    '<p class="sm dim mt2" style="padding-top:12px;border-top:1px dashed rgba(255,255,255,.1)">'+h(nl.qua)+'</p></div>';
+    '<p class="sm dim mt2" style="padding-top:12px;border-top:1px dashed var(--phu-4)">'+h(nl.qua)+'</p></div>';
   return o;
 };
 
@@ -453,7 +453,7 @@ G.VIEWS['nhiem-vu'] = function(){
     '<div class="grow" style="min-width:200px"><div class="up muted">VAI ĐANG DÙNG</div>'+
     '<h2 style="font-size:22px;font-weight:800;margin:4px 0">'+h(G.S.roleObj.n)+'</h2>'+
     '<p class="sm dim">'+h(G.S.roleObj.ln)+'</p>'+
-    '<p class="sm mt" style="color:var(--gold)">'+done+' / '+list.length+' việc đã xong</p></div></div></div>';
+    '<p class="sm mt" style="color:var(--gold-ink)">'+done+' / '+list.length+' việc đã xong</p></div></div></div>';
 
   o += '<div class="grid g2" style="gap:20px"><div>'+
     U.sec('VIỆC CỦA HÔM NAY','Bấm để đánh dấu đã xong');
@@ -474,7 +474,7 @@ G.VIEWS['nhiem-vu'] = function(){
   o += '<div class="card">' + rows.map(function(r){
     return '<div style="margin-bottom:12px"><div class="tiny up muted mb">'+h(r.t)+'</div>'+
       '<input data-journal="'+r.k+'" value="'+h((G.S.journal||{})[r.k]||'')+'" placeholder="'+h(r.p)+'" '+
-      'style="width:100%;background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:11px;'+
+      'style="width:100%;background:var(--phu-2);border:1px solid var(--line);border-radius:11px;'+
       'padding:10px 13px;font-size:13.5px;outline:none"></div>';
   }).join('') +
   '<button class="btn pri blk mt" data-act="save-journal">'+ic('check')+'Ghi nhật ký tối nay</button>'+

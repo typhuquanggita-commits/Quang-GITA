@@ -25,13 +25,13 @@ G.VIEWS['ve-tinh'] = function(){
     'border-radius:50%;display:grid;place-items:center;text-align:center;'+
     'background:radial-gradient(circle,rgba(245,185,66,.28),rgba(245,185,66,.05));'+
     'border:1px solid rgba(245,185,66,.4);box-shadow:0 0 70px -14px rgba(245,185,66,.7)">'+
-    '<div><div class="tiny up" style="color:var(--gold)">TRUNG TÂM</div>'+
+    '<div><div class="tiny up" style="color:var(--gold-ink)">TRUNG TÂM</div>'+
     '<b style="font-size:15px;display:block;margin-top:3px">'+h(G.myFamily().nha)+'</b>'+
     '<span class="tiny muted">'+h(G.S.acc.ten)+'</span></div></div>'+
     [1,2].map(function(r){
       var size = r===1?270:400;
       return '<div style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:'+size+'px;height:'+size+'px;'+
-        'border-radius:50%;border:1px dashed rgba(255,255,255,.12)"></div>';
+        'border-radius:50%;border:1px dashed var(--phu-5)"></div>';
     }).join('') +
     G.FAMILIES.slice(0,9).map(function(f,i){
       var inner = i<4, R = inner?135:200, n = inner?4:5, k = inner?i:i-4;
@@ -139,7 +139,7 @@ G.VIEWS['coach-deck'] = function(){
   o += U.sec('TÁM VIỆC BĂNG NỀN','Chạy dưới cả năm khoang, từ ngày đầu tới ngày cuối');
   o += '<div class="grid g4">' + G.VANHANH.bangNen.viec.map(function(v){
     return '<div class="card pad-sm"><div class="row" style="gap:7px;margin-bottom:5px">'+
-      '<span class="mono b tiny" style="color:var(--gold)">0'+v.no+'</span><b class="sm">'+h(v.ten)+'</b></div>'+
+      '<span class="mono b tiny" style="color:var(--gold-ink)">0'+v.no+'</span><b class="sm">'+h(v.ten)+'</b></div>'+
       '<p class="tiny muted" style="line-height:1.5">'+h(v.khi)+'</p></div>';
   }).join('') + '</div>';
   return o;
@@ -244,7 +244,7 @@ G.VIEWS['dieu-hanh'] = function(){
   o += '<div class="card"><div style="display:flex;align-items:flex-end;gap:16px;height:200px">'+
     H.thang.map(function(m){
       return '<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:7px;height:100%;justify-content:flex-end">'+
-        '<b class="mono tiny" style="color:var(--gold)">'+m.nha+'</b>'+
+        '<b class="mono tiny" style="color:var(--gold-ink)">'+m.nha+'</b>'+
         '<div style="width:100%;max-width:56px;height:'+Math.round(m.nha/1300*100)+'%;border-radius:9px 9px 3px 3px;'+
         'background:linear-gradient(180deg,#F5B942,#FF7A45)"></div>'+
         '<span class="tiny muted">'+h(m.m)+'</span>'+
@@ -296,7 +296,7 @@ G.VIEWS['nguoi-dung'] = function(){
     G.ACCOUNTS.map(function(a){
       var r = G.roleById(a.role);
       return [U.chip(r.n, r.c), '<span class="mono sm">'+h(a.u)+'</span>',
-        '<span class="mono sm" style="color:var(--gold)">'+h(a.p)+'</span>',
+        '<span class="mono sm" style="color:var(--gold-ink)">'+h(a.p)+'</span>',
         '<span class="sm">'+h(a.ten)+'</span><div class="tiny muted">'+h(a.nha)+'</div>'];
     }));
   return o;
@@ -397,7 +397,7 @@ G.VIEWS['hai-long'] = function(){
   o += '<div class="card"><div style="display:flex;align-items:flex-end;gap:12px;height:180px">'+
     H.tuan.map(function(w){
       return '<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:7px;height:100%;justify-content:flex-end">'+
-        '<b class="mono tiny" style="color:var(--gold)">'+w.v+'</b>'+
+        '<b class="mono tiny" style="color:var(--gold-ink)">'+w.v+'</b>'+
         '<div style="width:100%;max-width:48px;height:'+((w.v-75)/20*100)+'%;border-radius:8px 8px 3px 3px;'+
         'background:linear-gradient(180deg,#F5B942,#FF7A45)"></div>'+
         '<span class="tiny muted">'+h(w.w)+'</span></div>';
@@ -420,7 +420,7 @@ G.VIEWS['hai-long'] = function(){
       '<div class="row wrap" style="gap:8px;margin-bottom:9px">'+U.chip(g.loai,g.c)+U.chip(g.nha)+
       '<span class="tiny muted mono">'+h(g.d)+'</span></div>'+
       '<p class="serif" style="font-size:15.5px;font-style:italic;line-height:1.65;color:var(--ink)">"'+h(g.t)+'"</p>'+
-      '<div class="row mt2" style="gap:8px;padding-top:11px;border-top:1px dashed rgba(255,255,255,.1)">'+
+      '<div class="row mt2" style="gap:8px;padding-top:11px;border-top:1px dashed var(--phu-4)">'+
       '<span style="color:'+g.c+';flex:none">'+ic('arrow','w-4 h-4')+'</span>'+
       '<span class="sm dim">'+h(g.trang)+'</span></div></div>';
   }).join('');
@@ -447,7 +447,7 @@ G.VIEWS['tai-lieu-khach'] = function(){
         '<div class="row wrap" style="gap:7px;margin-bottom:7px">'+U.chip(m.nha,m.c)+U.chip(m.loai)+
         '<span class="tiny muted mono">'+h(m.ngay)+'</span></div>'+
         '<b style="font-size:15.5px;display:block;margin-bottom:9px">'+h(m.ten)+'</b>'+
-        '<div style="padding:11px 13px;border-radius:12px;background:rgba(255,255,255,.035);margin-bottom:10px">'+
+        '<div style="padding:11px 13px;border-radius:12px;background:var(--phu-2);margin-bottom:10px">'+
           '<span class="tiny up muted">HỆ THỐNG ĐỌC ĐƯỢC GÌ</span>'+
           '<p class="sm mt" style="line-height:1.6">'+h(m.doc)+'</p></div>'+
         '<div style="padding:11px 13px;border-radius:12px;background:'+m.c+'0f;border-left:2px solid '+m.c+'">'+
@@ -492,7 +492,7 @@ G.VIEWS['kiem-thu'] = function(){
         '<span class="tiny muted">'+h(p.vai)+'</span></div>'+
         '<div style="text-align:right"><b class="mono" style="font-size:26px;color:'+p.c+'">'+p.cham+'</b>'+
         '<div class="tiny muted">điểm chạm</div></div></div>'+
-      '<div style="padding:11px 13px;border-radius:12px;background:rgba(255,255,255,.035);margin-bottom:14px">'+
+      '<div style="padding:11px 13px;border-radius:12px;background:var(--phu-2);margin-bottom:14px">'+
         '<span class="tiny up muted">CÁCH NGƯỜI NÀY DÙNG HỆ THỐNG</span>'+
         '<p class="sm mt">'+h(p.cach)+'</p></div>'+
       '<div class="grid g2" style="gap:14px">'+
@@ -508,10 +508,10 @@ G.VIEWS['kiem-thu'] = function(){
       '<div class="mt2" style="padding:14px 16px;border-radius:14px;background:'+p.c+'0f;border-left:2px solid '+p.c+'">'+
         '<span class="tiny up" style="color:'+p.c+'">KẾT LUẬN</span>'+
         '<p class="serif mt" style="font-size:15.5px;font-style:italic;line-height:1.6">"'+h(p.ket)+'"</p></div>'+
-      '<div class="row mt2" style="gap:9px;padding-top:12px;border-top:1px dashed rgba(255,255,255,.1)">'+
+      '<div class="row mt2" style="gap:9px;padding-top:12px;border-top:1px dashed var(--phu-4)">'+
         '<span class="tiny muted">Đăng nhập bằng vai này:</span>'+
-        '<span class="mono tiny" style="color:var(--gold)">'+h(p.tk)+'</span>'+
-        '<span class="mono tiny" style="color:var(--gold)">'+h(p.mk)+'</span></div></div>';
+        '<span class="mono tiny" style="color:var(--gold-ink)">'+h(p.tk)+'</span>'+
+        '<span class="mono tiny" style="color:var(--gold-ink)">'+h(p.mk)+'</span></div></div>';
   }).join('');
   return o;
 };
@@ -544,7 +544,7 @@ G.VIEWS['chuan-1000'] = function(){
       U.bar(c.diem, c.c)+
       '<div class="mt2">' + c.y.map(function(y){
         var full = y.d>=y.m;
-        return '<div style="display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px dashed rgba(255,255,255,.06)">'+
+        return '<div style="display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px dashed var(--phu-3)">'+
           '<span style="flex:none;margin-top:2px;color:'+(full?'var(--ok)':'var(--warn)')+'">'+
           ic(full?'check':'pulse','w-4 h-4')+'</span>'+
           '<span class="sm grow">'+h(y.t)+'</span>'+
@@ -588,7 +588,7 @@ G.VIEWS['toi'] = function(){
       '<div class="row" style="gap:9px"><span style="width:30px;height:30px;border-radius:9px;display:grid;place-items:center;'+
       'font-weight:900;font-size:10.5px;background:'+x.c+'22;color:'+x.c+'">'+h(x.id)+'</span>'+
       '<div class="grow" style="min-width:0"><b class="sm" style="display:block">'+h(x.n)+'</b>'+
-      '<span class="tiny muted">Cấp '+x.lv+'</span></div>'+(cur?'<span style="color:var(--gold)">'+ic('check','w-4 h-4')+'</span>':'')+'</div></button>';
+      '<span class="tiny muted">Cấp '+x.lv+'</span></div>'+(cur?'<span style="color:var(--gold-ink)">'+ic('check','w-4 h-4')+'</span>':'')+'</div></button>';
   }).join('') + '</div>';
   return o;
 };

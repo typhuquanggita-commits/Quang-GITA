@@ -52,7 +52,7 @@ G.vanBanModal = function(ma){
     '<div class="up mb" style="color:'+nb.c+'">CÁC TRƯỜNG BẮT BUỘC</div>'+U.list(b.truong, nb.c)+
     '<div class="up mt2 mb" style="color:'+nb.c+'">MẪU</div>'+
     '<pre id="vbMau" style="white-space:pre-wrap;font-family:var(--font);font-size:13.5px;line-height:1.75;'+
-    'padding:16px;border-radius:14px;background:rgba(255,255,255,.04);border:1px solid var(--line)">'+h(b.mau)+'</pre>'+
+    'padding:16px;border-radius:14px;background:var(--phu-2);border:1px solid var(--line)">'+h(b.mau)+'</pre>'+
     '<div class="card pad-sm mt2" style="border-color:rgba(251,146,60,.35);background:rgba(251,146,60,.06)">'+
     '<div class="tiny up mb" style="color:var(--alert)">DỄ LÀM SAI NHẤT</div><p class="sm">'+h(b.luuY)+'</p></div>'+
     '<div class="row mt2" style="gap:8px"><button class="btn pri sm" data-act="in-vanban">'+ic('arrow')+'In hoặc lưu PDF</button>'+
@@ -77,7 +77,7 @@ G.VIEWS['tai-chinh-qt'] = function(){
   o += U.sec('SÁU NGUYÊN TẮC','Không có ngoại lệ vì thân quen, vì gấp, hay vì số nhỏ');
   o += '<div class="grid g2">' + T.nguyenTac.map(function(n,i){
     return '<div class="card pad-sm"><div class="row" style="gap:9px;margin-bottom:6px">'+
-      '<span class="pill" style="background:rgba(245,185,66,.18);color:var(--gold)">0'+(i+1)+'</span>'+
+      '<span class="pill" style="background:rgba(245,185,66,.18);color:var(--gold-ink)">0'+(i+1)+'</span>'+
       '<b class="sm">'+h(n.t)+'</b></div>'+
       '<p class="tiny muted" style="line-height:1.6;padding-left:34px">'+h(n.d)+'</p></div>';
   }).join('') + '</div>';
@@ -221,7 +221,7 @@ G.VIEWS['bando-tuvan'] = function(){
       '</div>';
   }).join('');
   o += '<div class="card mt2" style="border-color:rgba(245,185,66,.3)">'+
-    '<div class="row mb"><span style="color:var(--gold)">'+ic('calendar','w-4 h-4')+'</span><b>Học thuộc trong bốn tuần</b></div>'+
+    '<div class="row mb"><span style="color:var(--gold-ink)">'+ic('calendar','w-4 h-4')+'</span><b>Học thuộc trong bốn tuần</b></div>'+
     '<p class="sm dim">'+h(B.hoc)+'</p></div>';
   return o;
 };
@@ -282,7 +282,7 @@ G.qtCard = function(q){
   return '<div class="card pad-sm lift" data-s="'+h((q.ten+' '+q.nhom).toLowerCase())+'" '+
     'data-f="'+h(q.tang+' '+q.dang)+'" style="border-color:'+t.c+'1f">'+
     '<div class="row wrap" style="gap:5px;margin-bottom:6px">'+U.chip(q.ma)+U.chip(q.tang,t.c)+
-    '<span class="tiny mono" style="color:var(--gold)">'+q.diem+' điểm</span></div>'+
+    '<span class="tiny mono" style="color:var(--gold-ink)">'+q.diem+' điểm</span></div>'+
     '<b class="sm" style="display:block;line-height:1.4;margin-bottom:5px">'+h(q.ten)+'</b>'+
     '<span class="tiny muted">'+h(q.nv)+'</span></div>';
 };
@@ -293,7 +293,7 @@ G.VIEWS['ket-noi'] = function(){
   var o = U.ph({eyebrow:'NHÓM 05 · HỆ SINH THÁI', ic:'orbit', grad:1, t:'Kết nối hệ sinh thái', lead:K.cot});
 
   o += '<div class="card glow mb"><div class="row wrap" style="gap:14px;align-items:center">'+
-    '<span style="width:44px;height:44px;border-radius:14px;display:grid;place-items:center;background:rgba(245,185,66,.18);color:var(--gold);flex:none">'+ic('pulse','w-5 h-5')+'</span>'+
+    '<span style="width:44px;height:44px;border-radius:14px;display:grid;place-items:center;background:rgba(245,185,66,.18);color:var(--gold-ink);flex:none">'+ic('pulse','w-5 h-5')+'</span>'+
     '<div class="grow" style="min-width:230px"><b style="font-size:16px;display:block">'+h(K.dongBo.ten)+'</b>'+
     '<p class="sm muted mt">Nhịp: '+h(K.dongBo.nhip)+'</p></div>'+
     '<button class="btn pri" data-act="kiem-ban-moi">'+ic('arrow')+'Kiểm tra bản mới</button></div>'+
@@ -412,10 +412,10 @@ G.VIEWS['quy-trinh-tc'] = function(){
     '<div class="grow" style="min-width:230px">'+
     '<div class="up muted">TÀI KHOẢN NHẬN</div>'+
     '<b style="font-size:19px;display:block;margin:4px 0 2px">'+h(T.taiKhoan.chuTk)+'</b>'+
-    '<b class="mono" style="font-size:22px;color:var(--gold);display:block">'+h(T.taiKhoan.soTk)+'</b>'+
+    '<b class="mono" style="font-size:22px;color:var(--gold-ink);display:block">'+h(T.taiKhoan.soTk)+'</b>'+
     '<p class="sm dim mt">'+h(T.taiKhoan.nganHang)+'</p>'+
     '<div class="mt2" style="padding:11px 13px;border-radius:12px;background:rgba(245,185,66,.09);border-left:2px solid var(--gold)">'+
-    '<span class="tiny up" style="color:var(--gold)">NỘI DUNG CHUYỂN KHOẢN</span>'+
+    '<span class="tiny up" style="color:var(--gold-ink)">NỘI DUNG CHUYỂN KHOẢN</span>'+
     '<p class="mono sm mt">'+h(T.noiDungCk.mau)+'</p>'+
     '<p class="tiny muted mt">Ví dụ: '+h(T.noiDungCk.vd)+' — '+h(T.noiDungCk.vi)+'</p></div>'+
     (T.taiKhoan.canQuetThu ? '<p class="tiny mt" style="color:var(--alert);line-height:1.6">'+
@@ -456,7 +456,7 @@ G.VIEWS['quy-trinh-tc'] = function(){
   var L = T.luongThuong;
   o += U.sec(L.ten, L.cot);
   o += '<div class="card glow mb" style="border-color:rgba(245,185,66,.4)">'+
-    '<div class="up mb" style="color:var(--gold)">CÔNG THỨC</div>'+
+    '<div class="up mb" style="color:var(--gold-ink)">CÔNG THỨC</div>'+
     '<p class="mono" style="font-size:14.5px;line-height:1.8;color:var(--gold-2)">'+h(L.congThuc)+'</p></div>';
   o += '<div class="grid g2 mb">' + L.thanhPhan.map(function(p){
     return '<div class="card" style="border-color:'+p.c+'2a">'+
@@ -468,7 +468,7 @@ G.VIEWS['quy-trinh-tc'] = function(){
 
   o += U.sec('KPI TÍNH TỰ ĐỘNG','Năm thành phần, lấy thẳng từ dữ liệu hệ thống — không ai tự chấm cho mình');
   o += U.tbl(['Thành phần','Tỉ trọng','Đo bằng gì'], L.kpiTu.map(function(k){
-    return ['<b class="sm">'+h(k.t)+'</b>','<b class="mono" style="color:var(--gold)">'+h(k.ty)+'</b>',
+    return ['<b class="sm">'+h(k.t)+'</b>','<b class="mono" style="color:var(--gold-ink)">'+h(k.ty)+'</b>',
       '<span class="sm muted">'+h(k.d)+'</span>']; }));
 
   o += '<div class="card mt2" style="border-color:rgba(248,113,113,.3)">'+

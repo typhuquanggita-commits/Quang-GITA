@@ -36,7 +36,7 @@ G.VIEWS['tang-quyen'] = function(){
           var ok = r.lv <= lv;
           return '<td style="text-align:center;padding:6px">'+
             (ok ? '<span style="display:inline-block;width:9px;height:9px;border-radius:3px;background:'+r.c+';box-shadow:0 0 8px '+r.c+'99"></span>'
-                : '<span style="display:inline-block;width:9px;height:9px;border-radius:3px;background:rgba(255,255,255,.07)"></span>')+'</td>';
+                : '<span style="display:inline-block;width:9px;height:9px;border-radius:3px;background:var(--phu-3)"></span>')+'</td>';
         }).join('') + '</tr>';
     }).join('') + '</tbody></table></div>';
 
@@ -115,7 +115,7 @@ G.VIEWS['vong-doi-tk'] = function(){
       U.chip('Lần '+y.lan, ba?'#F87171':'#F5B942')+
       '<span class="tiny muted mono">'+h(y.ngay)+'</span></div>'+
       '<p class="serif" style="font-size:15px;font-style:italic;line-height:1.6;color:var(--ink)">"'+h(y.ly)+'"</p>'+
-      '<div class="mt2" style="padding:11px 13px;border-radius:12px;background:rgba(255,255,255,.035)">'+
+      '<div class="mt2" style="padding:11px 13px;border-radius:12px;background:var(--phu-2)">'+
       '<span class="tiny up muted">ĐỀ XUẤT CỦA HỆ THỐNG</span><p class="sm mt">'+h(y.dx)+'</p></div>'+
       '<div class="row mt2" style="gap:8px">'+
       '<button class="btn pri sm" data-act="duyet-mo" data-u="'+h(y.u)+'">Đồng ý mở</button>'+
@@ -139,7 +139,7 @@ G.VIEWS['hang-tai-lieu'] = function(){
     '<div class="grow" style="min-width:250px">'+
     '<div class="up muted">VAI VÀ CẤP ĐANG GIỮ</div>'+
     '<b style="font-size:18px;display:block;margin:3px 0 6px;color:'+toi.c+'">'+h(toi.n)+' · cấp '+toi.lv+'</b>'+
-    '<p class="sm dim">Với cấp '+toi.lv+' và KPI '+kpiToi+'%, anh chị đang mở được <b style="color:var(--gold)">'+
+    '<p class="sm dim">Với cấp '+toi.lv+' và KPI '+kpiToi+'%, anh chị đang mở được <b style="color:var(--gold-ink)">'+
     H.bac.filter(function(b){return toi.lv<=b.lv && kpiToi>=b.kpi;}).length+' / '+H.bac.length+' bậc tài liệu</b>. '+
     'Lên bậc nghề hoặc nâng KPI là mở thêm — không có đường tắt nào khác.</p></div></div></div>';
 
@@ -155,10 +155,10 @@ G.VIEWS['hang-tai-lieu'] = function(){
           : '<span class="chip">'+ic('lock','w-3 h-3')+' chưa đủ điều kiện</span>')+'</div>'+
       '<p class="sm dim" style="line-height:1.6;margin-bottom:11px">'+h(b.mo)+'</p>'+
       '<div class="grid g2" style="gap:12px;margin-bottom:11px">'+
-        '<div style="padding:11px 13px;border-radius:12px;background:rgba(255,255,255,.035)">'+
+        '<div style="padding:11px 13px;border-radius:12px;background:var(--phu-2)">'+
         '<span class="tiny up muted">ĐIỀU KIỆN CẤP BẬC</span>'+
         '<p class="sm mt">Cấp '+b.lv+' trở lên'+(toi.lv<=b.lv?' <span style="color:var(--ok)">✓ đạt</span>':' <span style="color:var(--bad)">✕ chưa đạt</span>')+'</p></div>'+
-        '<div style="padding:11px 13px;border-radius:12px;background:rgba(255,255,255,.035)">'+
+        '<div style="padding:11px 13px;border-radius:12px;background:var(--phu-2)">'+
         '<span class="tiny up muted">ĐIỀU KIỆN KPI</span>'+
         '<p class="sm mt">Từ '+b.kpi+'% trở lên'+(kpiToi>=b.kpi?' <span style="color:var(--ok)">✓ đạt</span>':' <span style="color:var(--bad)">✕ chưa đạt</span>')+'</p></div>'+
       '</div>'+
@@ -180,7 +180,7 @@ G.VIEWS['hang-tai-lieu'] = function(){
     }));
 
   o += '<div class="card mt2" style="border-color:rgba(245,185,66,.3)">'+
-    '<div class="row mb"><span style="color:var(--gold)">'+ic('shield','w-4 h-4')+'</span><b>Luật L5 — thăng cấp mới mở tài liệu tương ứng</b></div>'+
+    '<div class="row mb"><span style="color:var(--gold-ink)">'+ic('shield','w-4 h-4')+'</span><b>Luật L5 — thăng cấp mới mở tài liệu tương ứng</b></div>'+
     '<p class="sm muted">'+h(G.LUAT_TK[4].viSao)+' '+h(G.LUAT_TK[4].canhBao)+'</p></div>';
   return o;
 };
@@ -193,7 +193,7 @@ G.VIEWS['dau-mat'] = function(){
     lead:D.cot});
 
   o += '<div class="card mb" style="border-color:rgba(245,185,66,.3)">'+
-    '<div class="row"><span style="color:var(--gold)">'+ic('lock','w-4 h-4')+'</span><b>Cấu trúc mã</b></div>'+
+    '<div class="row"><span style="color:var(--gold-ink)">'+ic('lock','w-4 h-4')+'</span><b>Cấu trúc mã</b></div>'+
     '<p class="mono mt" style="font-size:15px;color:var(--gold-2);letter-spacing:.04em">'+h(D.cauTruc)+'</p></div>';
 
   o += U.sec('NĂM LỚP MÃ','Xoá được lớp này vẫn còn lớp kia — muốn xoá sạch phải gõ lại toàn bộ tài liệu');
@@ -208,7 +208,7 @@ G.VIEWS['dau-mat'] = function(){
   o += U.sec('QUÉT MỘT ĐOẠN VĂN','Dán đoạn nghi ngờ vào đây — hệ thống dò cả ba lớp mã và trả về tài khoản đã nhận bản đó');
   o += '<div class="card">'+
     '<textarea id="quetVan" rows="5" placeholder="Dán đoạn văn bản nghi ngờ bị rò ra ngoài…" '+
-    'style="width:100%;background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:12px;'+
+    'style="width:100%;background:var(--phu-2);border:1px solid var(--line);border-radius:12px;'+
     'padding:12px;font-size:13px;line-height:1.6;resize:vertical;outline:none"></textarea>'+
     '<button class="btn pri mt" data-act="quet-dau">'+ic('search')+'Quét mật mã kín</button>'+
     '<div id="quetKQ" class="mt2"></div>'+
@@ -216,7 +216,7 @@ G.VIEWS['dau-mat'] = function(){
 
   o += U.sec('BẢN ĐÃ CẤP GẦN ĐÂY','Mỗi bản một mã riêng, truy được về đúng người và đúng giờ');
   o += U.tbl(['Mã bản','Tài liệu','Người nhận','Lúc cấp'], D.mau.map(function(m){
-    return ['<span class="mono sm" style="color:var(--gold)">'+h(m.ma)+'</span>',
+    return ['<span class="mono sm" style="color:var(--gold-ink)">'+h(m.ma)+'</span>',
       '<span class="sm">'+h(m.tl)+'</span>','<span class="sm">'+h(m.ai)+'</span>',
       '<span class="mono tiny muted">'+h(m.luc)+'</span>'];
   }));
@@ -237,7 +237,7 @@ G.VIEWS['dong-chay'] = function(){
       'background:'+d.c+'22;color:'+d.c+'">'+d.no+'</span>'+
       '<b style="font-size:16px;color:'+d.c+'">'+h(d.ten)+'</b></div>'+
       '<div class="row wrap" style="gap:10px;align-items:center;margin-bottom:12px">'+
-        '<div style="flex:1;min-width:150px;padding:11px 13px;border-radius:12px;background:rgba(255,255,255,.035)">'+
+        '<div style="flex:1;min-width:150px;padding:11px 13px;border-radius:12px;background:var(--phu-2)">'+
         '<span class="tiny up muted">TỪ</span><p class="sm mt">'+h(d.tu)+'</p></div>'+
         '<span style="color:'+d.c+'">'+ic('arrow','w-4 h-4')+'</span>'+
         '<div style="flex:1.4;min-width:180px"><div class="row wrap" style="gap:5px">'+
