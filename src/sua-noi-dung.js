@@ -41,7 +41,7 @@ G.nd = function(khoa, goc){
 
 G.luuNoiDung = function(){
   try{ localStorage.setItem(KEY, JSON.stringify(G.SUA_ND)); }catch(e){}
-  if(G.danhDau) G.danhDau('noidung','chu');
+  if(G.danhDauCaiDat) G.danhDauCaiDat('noidung');
 };
 
 G.datND = function(khoa, giaTri){

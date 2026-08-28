@@ -456,6 +456,22 @@ const { chromium } = require(PW);
     });
     bao(!thu, 'không vai bậc thấp nào thấy nhiều hơn vai bậc cao hơn', thu || 'thứ tự đúng');
 
+    /* Hai vị trí đầu KHÔNG bị khoá bất cứ thứ gì */
+    const day = await p.evaluate(() => {
+      let tong = 0; G.NAV.forEach(g => tong += g.items.length);
+      const dem = v => { let n = 0;
+        G.NAV.forEach(g => g.items.forEach(i => { if (!i.perm || G.vaiCo(v, i.perm)) n++; })); return n; };
+      const thieu = q => { const ra = [];
+        G.NAV.forEach(g => g.items.forEach(i => { if (i.perm && !G.vaiCo(q, i.perm)) ra.push(i.v); })); return ra; };
+      return { tong, r1: dem('R01'), r2: dem('R02'), t1: thieu('R01'), t2: thieu('R02'),
+               khoaR03: thieu('R03').length };
+    });
+    bao(day.r1 === day.tong && !day.t1.length, 'Super Admin không bị khoá màn nào', day.r1 + '/' + day.tong);
+    bao(day.r2 === day.tong && !day.t2.length, 'Admin hệ thống không bị khoá màn nào', day.r2 + '/' + day.tong);
+    const pt20 = day.khoaR03 * 100 / day.tong;
+    bao(Math.abs(pt20 - 20) <= 2, 'phần khoá với Giám đốc trở xuống đúng 20%',
+      day.khoaR03 + '/' + day.tong + ' = ' + pt20.toFixed(0) + '%');
+
     /* Bảng phân quyền: bốn luật chặn */
     const luat = await p.evaluate(() => {
       const cu = G.S.roleObj;
@@ -530,8 +546,11 @@ const { chromium } = require(PW);
     /* Bậc thang anh Quang đặt, đo trên tổng số màn hiện tại.
        R03 ở 94% thay vì 95% vì màn Kiểm duyệt tài liệu chỉ mở cho R01–R02
        — đúng luật đã đặt, nên đây là con số thật chứ không phải lệch. */
-    const DICH = { R01:100, R02:99, R03:94, R04:89, R05:87, R06:87, R07:87, R08:87,
-      R09:87, R10:87, R11:87, R12:87, R13:33, R14:25, R15:19 };
+    /* Luật anh Quang chốt: R01 và R02 không bị khoá gì; từ Giám đốc xuống
+       Tư vấn khoá đúng 20% quan trọng của hai vị trí đầu. R05 trở xuống
+       thấp hơn 80% vì còn mất tài chính và điều hành toàn hệ. */
+    const DICH = { R01:100, R02:100, R03:80, R04:80, R05:74, R06:74, R07:74, R08:74,
+      R09:74, R10:74, R11:74, R12:74, R13:32, R14:24, R15:18 };
     let lech = [];
     Object.keys(DICH).forEach(k => {
       if (Math.abs(d.r[k].pt - DICH[k]) > 2) lech.push(k + ' ' + d.r[k].pt.toFixed(1) + '% (đích ' + DICH[k] + '%)');
@@ -547,10 +566,17 @@ const { chromium } = require(PW);
       G.NAV.forEach(g => g.items.forEach(i => { if (i.capMo === 'taichinh') ds.push(i.v); }));
       const ai = G.ROLES.filter(r => G.vaiCo(r.id, 'fin_view')).map(r => r.id);
       const donHang = G.ROLES.filter(r => G.vaiCo(r.id, 'fin_create_order')).map(r => r.id);
-      return { ds, ai, donHang };
+      const chi = G.ROLES.filter(r => G.vaiCo(r.id, 'fin_payout')).map(r => r.id);
+      const luong = G.ROLES.filter(r => G.vaiCo(r.id, 'fin_payroll')).map(r => r.id);
+      return { ds, ai, donHang, chi, luong };
     });
-    bao(fin.ai.join() === 'R01,R02,R03', 'tài chính chỉ R01 – R03 nhìn thấy', fin.ai.join(' ') + ' · ' + fin.ds.length + ' màn');
-    bao(fin.donHang.join() === 'R01,R02,R03', 'tạo đơn thu cũng chỉ R01 – R03', fin.donHang.join(' '));
+    /* XEM tài chính mở tới R04 (chỉ đọc, để đo lường và giám sát).
+       ĐỘNG vào tiền — duyệt chi, bảng lương, tạo đơn thu — vẫn dừng ở R03. */
+    bao(fin.ai.join() === 'R01,R02,R03,R04', 'xem tài chính: R01 – R04, R04 chỉ đọc',
+      fin.ai.join(' ') + ' · ' + fin.ds.length + ' màn');
+    bao(fin.donHang.join() === 'R01,R02,R03', 'tạo đơn thu vẫn chỉ R01 – R03', fin.donHang.join(' '));
+    bao(fin.chi.join() === 'R01,R02,R03' && fin.luong.join() === 'R01,R02,R03',
+      'R04 KHÔNG duyệt chi và KHÔNG xem bảng lương', 'duyệt chi ' + fin.chi.join(' '));
 
     /* Quản trị trang CHỈ R01–R02 */
     const qt = await p.evaluate(() => ({
@@ -559,7 +585,7 @@ const { chromium } = require(PW);
       co: !!(G.NAV || []).filter(g => g.id === 'g6').length
     }));
     bao(qt.ai.join() === 'R01,R02', 'thư mục Quản trị trang chỉ R01 – R02', qt.ai.join(' '));
-    bao(qt.sua.join() === 'R01', 'sửa nội dung hiển thị chỉ Super Admin', qt.sua.join(' '));
+    bao(qt.sua.join() === 'R01,R02', 'sửa nội dung và bố cục: Super Admin và Admin hệ thống', qt.sua.join(' '));
     bao(qt.co, 'có thư mục Quản trị trang trong thanh trái');
 
     /* Mọi màn hình phải thuộc đúng MỘT tầng hiển thị — không sót, không mồ côi */

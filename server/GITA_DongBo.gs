@@ -24,6 +24,35 @@ function gitaKhoaHoSo_(uid) { return 'HOSO_' + uid; }
  * Trả về:
  *   { ok, keo: {...}, mocTruong: {...}, mocMayChu: <ISO>, boQua: [] }
  */
+/* Cài đặt của chủ hệ thống — bố cục, chữ hiển thị, bảng phân quyền.
+   Đồng bộ theo cả cụm: ai sửa sau thì bản đó thắng. Chỉ vai bậc ≤ 2
+   được ghi; vai khác chỉ NHẬN về, không đẩy lên. */
+function gitaCaiDat_(y, hoSo) {
+  var kho = PropertiesService.getScriptProperties();
+  var cu = {};
+  try { cu = JSON.parse(kho.getProperty('GITA_CAI_DAT') || '{}'); } catch (e) { cu = {}; }
+  var lv = (ROLES[hoSo.role] || { lv: 99 }).lv;
+  var gui = y.caiDat || {}, doi = 0;
+  if (lv <= 2) {
+    Object.keys(gui).forEach(function (k) {
+      if (['sapxep', 'noidung', 'phanquyen'].indexOf(k) < 0) return;
+      var v = gui[k];
+      if (!v || typeof v !== 'object' || !v.du) return;
+      if (Number(v.luc || 0) <= Number((cu[k] || {}).luc || 0)) return;
+      cu[k] = { luc: Number(v.luc), du: v.du, boi: hoSo.u };
+      doi++;
+    });
+    if (doi) {
+      var tho = JSON.stringify(cu);
+      if (tho.length > 400000) return cu;          /* quá lớn thì không ghi, giữ bản cũ */
+      kho.setProperty('GITA_CAI_DAT', tho);
+      ghiNhatKy_({ viec: 'DONG_BO_CAI_DAT', u: hoSo.u, role: hoSo.role,
+        chiTiet: 'Cập nhật ' + doi + ' cụm cài đặt' });
+    }
+  }
+  return cu;
+}
+
 function gitaDongBo_(y, hoSo) {
   var uid = hoSo.phien.uid;
 
@@ -78,7 +107,7 @@ function gitaDongBo_(y, hoSo) {
     chiTiet: Math.round(co / 1024) + ' KB · ' + Object.keys(day).join(',') +
              (boQua.length ? ' · bỏ qua: ' + boQua.join(',') : '') });
 
-  return { ok: true, keo: duLieu, mocTruong: moc, mocMayChu: ban.suaLuc, boQua: boQua };
+  return { ok: true, caiDat: gitaCaiDat_(y, hoSo), keo: duLieu, mocTruong: moc, mocMayChu: ban.suaLuc, boQua: boQua };
 }
 
 /**

@@ -66,6 +66,53 @@ function nhanVe(keo, mocChu){
   return doi;
 }
 
+/* ══════════ CÀI ĐẶT CỦA CHỦ HỆ THỐNG ══════════
+   Bố cục thư mục, chữ hiển thị và bảng phân quyền không nằm trong G.S
+   mà có kho riêng. Ba thứ này đồng bộ theo CẢ CỤM, ai sửa sau thì bản
+   đó thắng — vì một bố cục chỉ có nghĩa khi trọn vẹn, không ghép nửa
+   bản này với nửa bản kia. */
+var CAI_DAT = {
+  sapxep:   {kho:'gita365_sapxep',    lay:function(){ return G.SAP_XEP; },   dat:function(v){ G.SAP_XEP = v; }},
+  noidung:  {kho:'gita365_sua_noidung',lay:function(){ return G.SUA_ND; },   dat:function(v){ G.SUA_ND = v; }},
+  phanquyen:{kho:'gita365_phanquyen', lay:function(){ return G.PHANQUYEN; }, dat:function(v){ G.PHANQUYEN = v; }}
+};
+var KEY_CD_MOC = 'gita365_caidat_moc';
+
+function mocCaiDat(){
+  try{ return JSON.parse(localStorage.getItem(KEY_CD_MOC) || '{}'); }catch(e){ return {}; }
+}
+function ghiMocCaiDat(m){
+  try{ localStorage.setItem(KEY_CD_MOC, JSON.stringify(m)); }catch(e){}
+}
+/* Gọi mỗi khi chủ hệ thống sửa một trong ba thứ trên */
+G.danhDauCaiDat = function(ten){
+  if(!CAI_DAT[ten]) return;
+  var m = mocCaiDat(); m[ten] = Date.now(); ghiMocCaiDat(m);
+};
+function goiCaiDat(){
+  var m = mocCaiDat(), ra = {};
+  Object.keys(CAI_DAT).forEach(function(k){
+    if(m[k]) ra[k] = {luc: m[k], du: CAI_DAT[k].lay()};
+  });
+  return ra;
+}
+function nhanCaiDat(cd){
+  if(!cd || typeof cd !== 'object') return 0;
+  var m = mocCaiDat(), doi = 0;
+  Object.keys(CAI_DAT).forEach(function(k){
+    var v = cd[k];
+    if(!v || typeof v !== 'object' || !v.du) return;
+    if(Number(v.luc || 0) <= Number(m[k] || 0)) return;   /* bản mình mới hơn thì giữ */
+    try{
+      CAI_DAT[k].dat(v.du);
+      localStorage.setItem(CAI_DAT[k].kho, JSON.stringify(v.du));
+      m[k] = Number(v.luc); doi++;
+    }catch(e){}
+  });
+  ghiMocCaiDat(m);
+  return doi;
+}
+
 /* ─── Một vòng đồng bộ ─── */
 G.dongBo = function(tuTay){
   if(!G.API_CAP_PHEP){
@@ -88,11 +135,12 @@ G.dongBo = function(tuTay){
   return fetch(G.API_CAP_PHEP, {
     method:'POST', headers:{'Content-Type':'text/plain;charset=utf-8'},
     body: JSON.stringify({ fn:'dongBo', u:G.S.acc.u, token:G.PHIEN_TOKEN||'',
-      day:g.day, mocTruong:g.mocDay, may:navigator.userAgent.slice(0,120) })
+      day:g.day, mocTruong:g.mocDay, caiDat:goiCaiDat(),
+      may:navigator.userAgent.slice(0,120) })
   }).then(function(r){ return r.json(); })
     .then(function(d){
       if(!d || !d.ok) throw new Error(d && d.error || 'Máy chủ từ chối');
-      var ve = nhanVe(d.keo, d.mocTruong);
+      var ve = nhanVe(d.keo, d.mocTruong) + nhanCaiDat(d.caiDat);
       try{ localStorage.setItem(KEY_HANG, String(batDau)); }catch(e){}
       G.DONGBO.trangThai = 'xong';
       G.DONGBO.lanCuoi = new Date();

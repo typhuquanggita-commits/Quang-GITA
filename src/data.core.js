@@ -58,7 +58,10 @@ G.PERM = {
   /* TÀI CHÍNH — chỉ R01, R02, R03. Trước đây fin_create_order mở tới bậc 11
      nên Tư vấn tạo được đơn thu; nay đóng lại theo đúng luật anh Quang đặt:
      chỉ ba vị trí đầu nhìn thấy tiền, để đo lường và giám sát. */
-  fin_view:3, fin_payout:3, fin_payroll:3, fin_create_order:3,
+  /* Xem tài chính mở tới Quản lý chuyên môn (R04) ở mức CHỈ ĐỌC — để
+     đo lường và giám sát hiệu quả hoạt động. Việc động vào tiền (duyệt
+     chi, bảng lương, tạo đơn thu) vẫn dừng ở R03. */
+  fin_view:4, fin_payout:3, fin_payroll:3, fin_create_order:3,
   pro_approve:4, pro_report:4, pro_override:4, pro_assign:5, pro_coach:8, pro_assess:10,
   pro_view_all:4, pro_consult:11,
   usr_self_data:15, usr_do_test:15, usr_referral:15,
@@ -98,7 +101,7 @@ G.PERM = {
   /* Sửa chữ hiển thị trên toàn hệ thống — mặc định CHỈ Super Admin.
      Chữ trên màn hình là thứ hàng nghìn gia đình đọc, nên chỉ một
      người được đổi, và mọi lần đổi đều vào nhật ký. */
-  sua_noi_dung:1,
+  sua_noi_dung:2,
 
   /* Xuất tài sản ra ngoài — chỉ người của GITA 365 từ cấp quản lý.
      Khách hàng (R13 phụ huynh, R14 học viên) và CTV (R15) KHÔNG có hai quyền này,
@@ -111,7 +114,7 @@ G.PERM_TEN = {
   sys_config:'Cấu hình hệ thống',        sys_delete_user:'Xoá tài khoản',
   sys_restore:'Khôi phục dữ liệu',       sys_manage_user:'Quản trị người dùng',
   sys_audit:'Nhật ký hệ thống',          sys_fraud:'Cảnh báo gian lận',
-  fin_view:'Xem tài chính',              fin_payout:'Duyệt chi',
+  fin_view:'Xem tài chính (chỉ đọc)',    fin_payout:'Duyệt chi',
   fin_payroll:'Bảng lương',              fin_create_order:'Tạo đơn thu',
   pro_approve:'Nghiệm thu chuyên môn',   pro_report:'Báo cáo toàn hệ',
   pro_override:'Vượt quyết định chuyên môn', pro_assign:'Phân công đội ngũ',
@@ -185,14 +188,15 @@ G.TANG_HIENTHI = [
 /* Tỉ lệ hiển thị mong muốn theo vị trí — bộ kiểm phát hành đối chiếu
    với số đếm thật, lệch quá biên là dừng phát hành. */
 G.TAM_NHIN = [
-  {vai:['R01','R02'],                     pt:100, ghi:'Toàn bộ, gồm thư mục Quản trị trang'},
-  {vai:['R03'],                           pt:94,  ghi:'Trừ Quản trị trang. Có tài chính.'},
-  {vai:['R04'],                           pt:89,  ghi:'Trừ Quản trị trang và Tài chính'},
-  {vai:['R05','R06','R07','R08','R09','R10','R11','R12'], pt:87,
-   ghi:'Kho nghề đầy đủ, trừ điều hành toàn hệ, tài chính và quản trị'},
-  {vai:['R13'],                           pt:33,  ghi:'Nhà mình, hành trình của con, gửi tài liệu và minh chứng'},
-  {vai:['R14'],                           pt:25,  ghi:'Hành trình của con, gửi tài liệu và minh chứng'},
-  {vai:['R15'],                           pt:19,  ghi:'Phần giới thiệu, hoa hồng, gửi tài liệu'}
+  {vai:['R01','R02'], pt:100,
+   ghi:'Toàn bộ, không khoá gì. Super Admin và Admin hệ thống thấy mọi thứ.'},
+  {vai:['R03','R04'], pt:80,
+   ghi:'Khoá đúng 20% quan trọng của R01–R02: quản trị tài khoản, phân quyền, bảo mật, nhật ký, kiểm duyệt.'},
+  {vai:['R05','R06','R07','R08','R09','R10','R11','R12'], pt:74,
+   ghi:'Khoá 20% ấy, thêm tài chính và điều hành toàn hệ.'},
+  {vai:['R13'], pt:32, ghi:'Nhà mình, hành trình của con, gửi tài liệu và minh chứng'},
+  {vai:['R14'], pt:24, ghi:'Hành trình của con, gửi tài liệu và minh chứng'},
+  {vai:['R15'], pt:18, ghi:'Phần giới thiệu, hoa hồng, gửi tài liệu'}
 ];
 
 /* Sáu chân dung người dùng — lời mời bước vào, hiển thị ở Cổng vào */
@@ -304,6 +308,7 @@ G.NAV = [
     {v:'tinh-huong',  t:'250 tình huống thực chiến',   h:'Mã Key · thử thách 7 ngày · KPI',    ic:'target', perm:'nghe_chung', capMo:'nghe'},
     {v:'mo-thuc',     t:'25 mô thức huấn luyện',       h:'Bộ công cụ gốc của người sáng lập',  ic:'brain', perm:'nghe_chung', capMo:'nghe'},
     {v:'tu-duy',      t:'Hệ tư duy mới',               h:'14 bài học đổi cách nhìn trong nhà', ic:'lightning', perm:'nghe_chung', capMo:'nghe'},
+    {v:'tai-lieu-goc',t:'Tài liệu gốc Học viện',        h:'5 bộ · 161 bảng · 1.647 dòng dữ liệu', ic:'vault', perm:'nghe_chung', capMo:'nghe', star:1},
     {v:'sach',        t:'Sách gốc & tư liệu Học viện', h:'11 chương · 515 đoạn · tra cứu được',ic:'book', perm:'nghe_chung', capMo:'nghe'},
     {v:'nhan-dien-loi',t:'Bộ nhận diện ngôn từ',       h:'GITA nói thế nào · 10 dấu hiệu câu máy viết', ic:'book', perm:'nghe_chung', capMo:'nghe', star:1},
     {v:'ngon-tu',     t:'Ngôn từ dẫn dắt',             h:'Sáu nhịp · mẫu câu dùng được ngay',  ic:'lightning', star:1, perm:'nghe_chung', capMo:'nghe'},
@@ -349,7 +354,7 @@ G.NAV = [
     {v:'van-ban',     t:'Bộ văn bản chuẩn',            h:'22 mẫu · giao việc, bàn giao, quyết định',ic:'book', perm:'nghe_chung', capMo:'nghe'},
     {v:'tai-chinh-qt',t:'Hệ quản trị tài chính',       h:'6 nguyên tắc · 5 sổ · 6 chốt kiểm soát',ic:'chart', perm:'fin_view', capMo:'taichinh'},
     {v:'quy-trinh-tc',t:'Quy trình tài chính',         h:'Thanh toán · hoàn trả · lương thưởng',ic:'target', perm:'fin_view', capMo:'taichinh'},
-    {v:'thanh-tra',   t:'Thanh tra & cảnh báo',        h:'6 chu kỳ · 10 cảnh báo có thời hạn', ic:'pulse', perm:'nghe_chung', capMo:'nghe'},
+    {v:'thanh-tra',   t:'Thanh tra & cảnh báo',        h:'6 chu kỳ · 10 cảnh báo có thời hạn', ic:'pulse', perm:'qt_trang', capMo:'quantri'},
     {v:'ra-soat-kh',  t:'Rà soát mười hai mặt',        h:'Không bỏ sót nhu cầu của gia đình',  ic:'target', perm:'nghe_chung', capMo:'nghe'},
     {v:'xuat-du-lieu',t:'Xuất dữ liệu',                h:'PDF hồ sơ · CSV danh sách · phân quyền',ic:'out', perm:'nghe_chung', capMo:'nghe'},
     {v:'do-luong-kh', t:'Hệ đo lường khách hàng',      h:'7 chỉ số · 6 nhịp · vòng cải tiến',  ic:'pulse', perm:'nghe_chung', capMo:'nghe'},
@@ -358,22 +363,22 @@ G.NAV = [
     {v:'cay-tien',    t:'Cây tiền — chăm sóc VIP',     h:'4 việc · điểm cây tiền · 12 nhịp',   ic:'seed', perm:'nghe_chung', capMo:'nghe'},
     {v:'ai-cham',     t:'Trợ lý chăm sóc tự động',     h:'16 luật chạy nền · ranh giới rõ',    ic:'spark', perm:'nghe_chung', capMo:'nghe'},
     {v:'nhan-su-tt',  t:'Tệp nhân sự trung thành',     h:'5 bậc · 7 chỉ số · 5 luật',          ic:'users', perm:'nghe_chung', capMo:'nghe'},
-    {v:'tang-quyen',  t:'Tầng quyền truy cập',         h:'Ma trận 15 vai × 21 quyền',          ic:'shield', perm:'nghe_chung', capMo:'nghe'},
-    {v:'vong-doi-tk', t:'Vòng đời tài khoản',          h:'KPI · khoá · mở lại · đặt lại',      ic:'pulse', perm:'nghe_chung', capMo:'nghe'},
-    {v:'hang-tai-lieu',t:'Xếp hạng tài liệu 1–100',    h:'KPI và cấp bậc mới mở tài liệu hay', ic:'crown', perm:'nghe_chung', capMo:'nghe'},
-    {v:'dau-mat',     t:'Mật mã kín trên tài liệu',    h:'Năm lớp mã · quét truy nguồn rò rỉ', ic:'lock', perm:'nghe_chung', capMo:'nghe'},
-    {v:'dong-chay',   t:'Dòng chảy thông tin',         h:'Bảy dòng nuôi hệ sinh thái',         ic:'orbit', perm:'nghe_chung', capMo:'nghe'},
-    {v:'kiem-duyet',  t:'Kiểm duyệt kho báu vật',      h:'Chuẩn nghề trước khi xuất bản',      ic:'check', perm:'nghe_chung', capMo:'nghe'},
+    {v:'tang-quyen',  t:'Tầng quyền truy cập',         h:'Ma trận 15 vai × 21 quyền',          ic:'shield', perm:'qt_trang', capMo:'quantri'},
+    {v:'vong-doi-tk', t:'Vòng đời tài khoản',          h:'KPI · khoá · mở lại · đặt lại',      ic:'pulse', perm:'qt_trang', capMo:'quantri'},
+    {v:'hang-tai-lieu',t:'Xếp hạng tài liệu 1–100',    h:'KPI và cấp bậc mới mở tài liệu hay', ic:'crown', perm:'qt_trang', capMo:'quantri'},
+    {v:'dau-mat',     t:'Mật mã kín trên tài liệu',    h:'Năm lớp mã · quét truy nguồn rò rỉ', ic:'lock', perm:'qt_trang', capMo:'quantri'},
+    {v:'dong-chay',   t:'Dòng chảy thông tin',         h:'Bảy dòng nuôi hệ sinh thái',         ic:'orbit', perm:'qt_trang', capMo:'quantri'},
+    {v:'kiem-duyet',  t:'Kiểm duyệt kho báu vật',      h:'Chuẩn nghề trước khi xuất bản',      ic:'check', perm:'qt_trang', capMo:'quantri'},
     {v:'tang-truong', t:'Tài chính & tăng trưởng',     h:'Dòng tiền nuôi được sứ mệnh',        ic:'chart', perm:'fin_view', capMo:'taichinh'},
     {v:'chi-phi',     t:'Kiến trúc chi phí',           h:'Trần 500.000đ/tháng · nặng ở máy',   ic:'target', perm:'fin_view', capMo:'taichinh'},
     {v:'hai-long',    t:'Chỉ số hài lòng & góp ý',     h:'Mục tiêu 90% · nghe khách nói thật', ic:'heart', perm:'nghe_chung', capMo:'nghe'},
     {v:'tai-lieu-khach',t:'Tài liệu gia đình gửi lên',  h:'Đọc sự sáng tạo để nâng cấp lộ trình',ic:'seed', perm:'nghe_chung', capMo:'nghe'},
-    {v:'kiem-thu',    t:'Phòng kiểm thử 4 chuyên gia',  h:'Khó tính · Hiểu biết · Kỹ sư · Ngôn từ',ic:'target', perm:'nghe_chung', capMo:'nghe'},
-    {v:'chuan-1000',  t:'Chuẩn 1000 điểm',             h:'Mười nhóm · từng chi tiết một',      ic:'star', perm:'nghe_chung', capMo:'nghe'},
+    {v:'kiem-thu',    t:'Phòng kiểm thử 4 chuyên gia',  h:'Khó tính · Hiểu biết · Kỹ sư · Ngôn từ',ic:'target', perm:'qt_trang', capMo:'quantri'},
+    {v:'chuan-1000',  t:'Chuẩn 1000 điểm',             h:'Mười nhóm · từng chi tiết một',      ic:'star', perm:'qt_trang', capMo:'quantri'},
     {v:'ai-dieu-phoi',t:'AI điều phối',               h:'Giới hạn tầng · định tuyến KPI · nâng cấp nghề',ic:'brain', perm:'nghe_chung', capMo:'nghe'},
-    {v:'an-toan-du-lieu',t:'Lá chắn dữ liệu',          h:'Chống sao chép · chống giả khách',    ic:'lock', perm:'nghe_chung', capMo:'nghe'},
-    {v:'hoc-tu-lon',  t:'Học từ những hệ thống lớn',   h:'TikTok · Google · Toyota · Apple…',   ic:'target', perm:'nghe_chung', capMo:'nghe'},
-    {v:'ra-soat',     t:'Rà soát hệ thống',            h:'Bảo mật · mã · dữ liệu · thương hiệu',ic:'shield', perm:'nghe_chung', capMo:'nghe'},
+    {v:'an-toan-du-lieu',t:'Lá chắn dữ liệu',          h:'Chống sao chép · chống giả khách',    ic:'lock', perm:'qt_trang', capMo:'quantri'},
+    {v:'hoc-tu-lon',  t:'Học từ những hệ thống lớn',   h:'TikTok · Google · Toyota · Apple…',   ic:'target', perm:'qt_trang', capMo:'quantri'},
+    {v:'ra-soat',     t:'Rà soát hệ thống',            h:'Bảo mật · mã · dữ liệu · thương hiệu',ic:'shield', perm:'qt_trang', capMo:'quantri'},
    ]},
 
   /* ══════════ 06 · QUẢN TRỊ TRANG — CHỈ R01 VÀ R02 ══════════
@@ -384,13 +389,14 @@ G.NAV = [
    t:'QUẢN TRỊ TRANG', s:'Ai được vào, vào tới đâu, và ai đã làm gì.',
    essence:'Nơi cấp quyền, mở và khoá tài khoản. Mọi thao tác ở đây đều vào nhật ký kèm tên người làm.',
    items:[
-    {v:'phan-quyen',   t:'Phân công & cấp quyền',      h:'15 vị trí × 31 quyền · bấm ô để đổi', ic:'shield', perm:'qt_trang', capMo:'quantri', star:1},
-    {v:'cap-tai-khoan',t:'Mở tài khoản mới',           h:'Cấp cho vị trí từ Tư vấn trở lên',    ic:'plus',   perm:'qt_trang', capMo:'quantri', star:1},
-    {v:'khoa-tai-khoan',t:'Khoá · mở lại · xoá',       h:'Vòng đời một tài khoản, có lý do',    ic:'lock',   perm:'qt_trang', capMo:'quantri'},
-    {v:'nguoi-dung',   t:'Danh bạ người dùng',         h:'Ai đang ở vị trí nào, hoạt động ra sao',ic:'users',perm:'qt_trang', capMo:'quantri'},
-    {v:'sua-hien-thi', t:'Sửa nội dung hiển thị',      h:'Chữ nào chưa hợp lý thì sửa ngay',   ic:'book',   perm:'sua_noi_dung', capMo:'quantri', star:1},
-    {v:'duyet-tai-lieu',t:'Kiểm duyệt tài liệu',        h:'Xem · chấm chuẩn hoá · duyệt hoặc trả lại',ic:'shield', perm:'tl_duyet', capMo:'quantri', star:1},
-    {v:'nhat-ky-ht',  t:'Nhật ký hệ thống',            h:'Mọi thao tác đều để lại dấu vết',    ic:'book', perm:'dh_toan_he', capMo:'dieuhanh'}
+    {v:'phan-quyen',   t:'Phân công & cấp quyền',      h:'15 vị trí × 31 quyền · bấm ô để đổi', ic:'shield', star:1, perm:'qt_trang', capMo:'quantri'},
+    {v:'cap-tai-khoan',t:'Mở tài khoản mới',           h:'Cấp cho vị trí từ Tư vấn trở lên',    ic:'plus', star:1, perm:'qt_trang', capMo:'quantri'},
+    {v:'khoa-tai-khoan',t:'Khoá · mở lại · xoá',       h:'Vòng đời một tài khoản, có lý do',    ic:'lock', perm:'qt_trang', capMo:'quantri'},
+    {v:'nguoi-dung',   t:'Danh bạ người dùng',         h:'Ai đang ở vị trí nào, hoạt động ra sao',ic:'users', perm:'qt_trang', capMo:'quantri'},
+    {v:'sap-xep',     t:'Sắp xếp thư mục',              h:'Đổi thứ tự · ẩn bớt · thêm thư mục mới', ic:'orbit', star:1, perm:'qt_trang', capMo:'quantri'},
+    {v:'sua-hien-thi', t:'Sửa nội dung hiển thị',      h:'Chữ nào chưa hợp lý thì sửa ngay',   ic:'book', star:1, perm:'qt_trang', capMo:'quantri'},
+    {v:'duyet-tai-lieu',t:'Kiểm duyệt tài liệu',        h:'Xem · chấm chuẩn hoá · duyệt hoặc trả lại',ic:'shield', star:1, perm:'qt_trang', capMo:'quantri'},
+    {v:'nhat-ky-ht',  t:'Nhật ký hệ thống',            h:'Mọi thao tác đều để lại dấu vết',    ic:'book', perm:'qt_trang', capMo:'quantri'}
    ]}
 ];
 

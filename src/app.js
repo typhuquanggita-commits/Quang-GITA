@@ -112,7 +112,7 @@ G.PHANQUYEN = (function(){
 
 G.luuPhanQuyen = function(){
   try{ localStorage.setItem(KEY_PQ, JSON.stringify(G.PHANQUYEN)); }catch(e){}
-  if(G.danhDau) G.danhDau('phanquyen','bang');
+  if(G.danhDauCaiDat) G.danhDauCaiDat('phanquyen');
 };
 
 /* Vai này có quyền kia không — dùng được cho cả vai đang đăng nhập lẫn vai khác. */
@@ -380,8 +380,9 @@ function visible(it){ return !it.perm || G.can(it.perm); }
 
 function leftNav(){
   var r = G.S.roleObj || {};
+  var NAV = G.navDung ? G.navDung() : G.NAV;
   var tongMo = 0, tongKhoa = 0;
-  G.NAV.forEach(function(g){ g.items.forEach(function(it){ visible(it) ? tongMo++ : tongKhoa++; }); });
+  NAV.forEach(function(g){ g.items.forEach(function(it){ visible(it) ? tongMo++ : tongKhoa++; }); });
 
   /* Dải phạm vi — nhìn một cái là biết đang đăng nhập bằng vai nào và
      vai đó mở được bao nhiêu màn. Trước đây mọi vai trông như nhau. */
@@ -394,7 +395,7 @@ function leftNav(){
 
   return '<div class="scroll">'+ dai +
     '<div class="nav-eyebrow">'+h(G.L('fiveGroups'))+'</div>' +
-    G.NAV.map(function(g){
+    NAV.map(function(g){
       var mo   = g.items.filter(visible);
       var khoa = g.items.filter(function(it){ return !visible(it); });
       if(!mo.length) return '';                 /* nhóm không mở được mục nào thì không hiện */
@@ -421,13 +422,15 @@ function leftNav(){
         '</div></div>';
     }).join('') + '</div>'+
     '<div class="foot"><button class="nav-i" data-v="toi">'+ic('home')+'<span class="lb">'+h(G.L('myAccount'))+'</span></button>'+
-    (G.can('sys_manage_user') ? '<button class="nav-i" data-v="phan-quyen">'+ic('lock')+
-      '<span class="lb">Bảng phân quyền</span></button>' : '')+
+    (G.can('sua_noi_dung') ? '<button class="nav-i" data-v="sap-xep">'+ic('orbit')+
+      '<span class="lb">Sắp xếp thư mục</span></button>' : '')+
     '<button class="nav-i" data-act="doi-mk-mo">'+ic('lock')+'<span class="lb">'+h(G.L('changePw'))+'</span></button>'+
     (G.API_CAP_PHEP ? '<button class="nav-i" data-act="dong-bo">'+ic('orbit')+'<span class="lb">'+h(G.L('sync'))+
       (G.DONGBO && G.DONGBO.choBaoNhieu ? ' ('+G.DONGBO.choBaoNhieu+')' : '')+'</span></button>' : '')+
     '<button class="nav-i" data-act="logout">'+ic('out')+'<span class="lb">'+h(G.L('logout'))+'</span></button></div>';
 }
+
+G.leftNav = leftNav;
 
 var RTABS = [
   {k:'labon',  l:'tabLaban'}, {k:'giatri', l:'tabGiatri'}, {k:'vanhoa', l:'tabVanhoa'},
@@ -987,6 +990,10 @@ on('[data-act]', function(el){
   var a = el.getAttribute('data-act');
   if(a==='doi-nen') return G.doiNen();
   if(a==='pq-dat-lai') return G.datLaiPhanQuyen();
+  if(a==='sx-them') return G.themNhom();
+  if(a==='sx-tra') return G.traBoCuc();
+  if(a==='gp-mo') return G.moNapGiayPhep();
+  if(a==='gp-nap') return G.napGiayPhep();
   if(a==='ct-cap') return G.capTaiKhoan();
   if(a==='tl-gui') return G.guiTaiLieu();
   if(a==='mc-gui') return G.guiMinhChung();

@@ -243,8 +243,21 @@ G.canCapPhep = function (goi) {
         'nhịp sống và nghi lễ gia đình, cú hích, cách ghi nhận và trao quà, sáu ranh giới an toàn, ' +
         'chương trình đại sứ, sự kiện, và một bài test rút gọn.') + '</p>' +
     '<div class="row mt" style="gap:9px;flex-wrap:wrap">' +
+      (G.napDuocGiayPhep && G.napDuocGiayPhep()
+        ? '<button class="btn pri sm" data-act="gp-mo">' + U.ic('vault','w-4 h-4') + 'Nạp giấy phép để mở kho</button>' : '') +
       '<button class="btn ghost sm" data-v="pham-vi">Xem đầy đủ phạm vi của tôi</button>' +
       '<button class="btn ghost sm" data-v="lo-trinh">Lộ trình năm tầng</button></div></div>';
+
+  /* Người của Học viện thì nói thẳng đường mở, đừng để họ mắc ở đây */
+  if (G.napDuocGiayPhep && G.napDuocGiayPhep())
+    o += '<div class="card mt2" style="border-color:var(--gita-vien-1);background:var(--gita-mo-1)">' +
+      '<div class="row mb"><span style="color:var(--gita-ink)">' + U.ic('shield', 'w-4 h-4') + '</span>' +
+      '<b>Anh chị là người của Học viện — mở được ngay</b></div>' +
+      '<p class="sm" style="line-height:1.75;color:var(--ink-2)">Bấm <b>Nạp giấy phép</b> ở trên và chọn tệp ' +
+      '<span class="mono">giay-phep-….json</span> Học viện cấp cho máy này. Kho mở ngay trong phiên làm việc, ' +
+      'đủ cả bảy gói nếu giấy phép cấp đủ — không cần chờ nối máy chủ.</p>' +
+      '<p class="tiny muted mt">Chưa có tệp giấy phép: chạy <span class="mono">node tools/tao-giay-phep.js "Tên anh chị" 24</span> ' +
+      'trên máy dựng, tệp ra ở thư mục <span class="mono">giay-phep/</span>.</p></div>';
   return o;
 };
 

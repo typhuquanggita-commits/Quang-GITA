@@ -66,18 +66,18 @@ G.logoGita = function(cao){
 
   /* Ba nét mở về bên phải: bắt đầu dưới phải, vòng qua trái, vút lên trên phải.
      Nét ngoài dài và dày nhất, vào trong ngắn dần; nét đỏ nằm trên cùng. */
-  o += net(250, 138, 218, 116, 66, 352, 30, m.sau);
-  o += net(250, 138, 182,  95, 82, 348, 25, m.giua);
-  o += net(250, 138, 148,  74, 104, 344, 21, m.do);
+  o += net(250, 140, 224, 118, 58, 356, 25, m.sau);
+  o += net(250, 138, 190,  98, 74, 352, 21, m.giua);
+  o += net(250, 132, 158,  78, 96, 350, 18, m.do);
   o += '</g>';
 
   /* Năm ngôi sao vút lên góc trên bên phải — bốn xanh, một đỏ */
-  [[372,34,15],[409,26,13.5],[442,32,12],[469,45,10],[489,62,8]]
+  [[366,30,14],[404,22,13],[440,28,12],[470,42,10.5],[492,60,8.5]]
     .forEach(function(s, i){ o += sao(s[0], s[1], s[2], i === 4 ? m.do : m.giua, .1); });
 
   /* Chữ GITA — nằm trong lòng ba nét, dùng bộ chữ đã nhúng sẵn */
-  o += '<text x="256" y="182" font-family="var(--serif), Georgia, serif" ' +
-    'font-size="92" font-weight="800" letter-spacing="-1" fill="' + m.sau + '">GITA</text>';
+  o += '<text x="252" y="188" font-family="Georgia, \'Times New Roman\', serif" ' +
+    'font-size="104" font-weight="700" letter-spacing="-2" fill="' + m.giua + '">GITA</text>';
 
   return o + '</svg>';
 };
