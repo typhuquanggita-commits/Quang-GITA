@@ -24,9 +24,19 @@ G.SUA_ND = (function(){
 })();
 
 /* Chữ hiển thị đi qua đây. Bản sửa rỗng coi như chưa sửa. */
+/* Ba lớp, theo đúng thứ tự:
+     1. Bản Super Admin sửa tay — cao nhất, ai sửa thì thắng
+     2. Lời nhà mình — khi người đang đăng nhập là phụ huynh, học viên
+        hoặc cộng tác viên
+     3. Lời nghề — bản gốc trong mã nguồn                              */
 G.nd = function(khoa, goc){
   var v = G.SUA_ND[khoa];
-  return (typeof v === 'string' && v.length) ? v : goc;
+  if(typeof v === 'string' && v.length) return v;
+  if(G.LA_KHACH && G.LA_KHACH() && G.NOI_KHACH){
+    var k = G.NOI_KHACH[khoa];
+    if(typeof k === 'string' && k.length) return k;
+  }
+  return goc;
 };
 
 G.luuNoiDung = function(){
@@ -57,6 +67,9 @@ G.mucSuaDuoc = function(){
     g.items.forEach(function(it){
       ds.push({k:'nav.'+it.v+'.t', nhom:'Tên mục',  ten:it.v, goc:it.t, v:it.v});
       ds.push({k:'nav.'+it.v+'.h', nhom:'Mô tả mục',ten:it.v, goc:it.h, v:it.v});
+      if(G.NOI_KHACH && G.NOI_KHACH['nav.'+it.v+'.t'])
+        ds.push({k:'nav.'+it.v+'.t', nhom:'Lời nhà mình — tên mục', ten:it.v,
+                 goc:G.NOI_KHACH['nav.'+it.v+'.t'], v:it.v, khach:1});
     });
   });
   var L = (G.UI && (G.UI[G.LANG] || G.UI.vi)) || {};

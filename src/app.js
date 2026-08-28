@@ -351,8 +351,8 @@ function doLogin(u, p){
   manCho('Đang mở kho theo phạm vi được cấp phép…');
   G.napKho().then(function(){
     shell();
-    U.toast('Chào ' + a.ten + ' · ' + G.S.roleObj.n +
-      (G.KHO.cheDoMau ? ' · chế độ mẫu' : ' · đã mở ' + G.KHO.daNap.length + ' gói'), 'ok');
+    U.toast(G.LOI_CHAO ? G.LOI_CHAO(a.ten)
+      : ('Chào ' + a.ten + ' · ' + G.S.roleObj.n), 'ok');
     if(G.batDongBo) G.batDongBo();
     if(G.kiemBanMoi) G.kiemBanMoi();
   });
@@ -385,12 +385,12 @@ function leftNav(){
 
   /* Dải phạm vi — nhìn một cái là biết đang đăng nhập bằng vai nào và
      vai đó mở được bao nhiêu màn. Trước đây mọi vai trông như nhau. */
+  var L = G.LOI_PHAM_VI ? G.LOI_PHAM_VI(tongMo, tongKhoa)
+        : {nhan:r.n||'—', phu:'bậc '+(r.lv||'—'), so:'<b>'+tongMo+'</b> màn hình mở'};
   var dai = '<div class="pv-dai" style="--pv:'+(r.c||'var(--gita)')+'">'+
-    '<div class="pv-vai">'+ic('shield','w-4 h-4')+'<b>'+h(r.n||'—')+'</b>'+
-      '<span class="pv-bac">bậc '+h(r.lv||'—')+'</span></div>'+
-    '<div class="pv-so"><b>'+tongMo+'</b> màn hình mở'+
-      (tongKhoa? ' · <span class="pv-khoa">'+tongKhoa+' màn ngoài phạm vi</span>' : ' · toàn quyền')+'</div>'+
-    '</div>';
+    '<div class="pv-vai">'+ic('shield','w-4 h-4')+'<b>'+h(L.nhan)+'</b>'+
+      (L.phu ? '<span class="pv-bac">'+h(L.phu)+'</span>' : '')+'</div>'+
+    '<div class="pv-so">'+L.so+'</div></div>';
 
   return '<div class="scroll">'+ dai +
     '<div class="nav-eyebrow">'+h(G.L('fiveGroups'))+'</div>' +

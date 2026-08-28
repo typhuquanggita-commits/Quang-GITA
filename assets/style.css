@@ -788,3 +788,12 @@ input[type=file].inp::file-selector-button{margin-right:11px;padding:6px 13px;bo
   border:1px solid var(--gita-vien-1);background:var(--gita-mo-2);color:var(--gita-ink);
   font:inherit;font-size:12px;font-weight:700;cursor:pointer}
 textarea.inp{resize:vertical;min-height:70px;line-height:1.6}
+
+/* Cặp nói thế này — không nói thế kia */
+.lt-cap{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px}
+.lt-o{border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:var(--surface)}
+.lt-khong,.lt-nen{display:flex;gap:9px;padding:11px 13px;font-size:12.5px;line-height:1.6}
+.lt-khong{color:var(--ink-4);background:var(--phu-1);border-bottom:1px solid var(--line)}
+.lt-khong svg{color:var(--gita-do-ink);flex:none;margin-top:3px}
+.lt-nen{color:var(--ink-2)}
+.lt-nen svg{color:var(--ok);flex:none;margin-top:3px}

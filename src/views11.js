@@ -554,3 +554,78 @@ G.VIEWS['nhan-dien'] = function(){
   return o;
 };
 })();
+
+/* ═══════════════════════════════════════════════════════════════
+   BỘ NHẬN DIỆN NGÔN TỪ — màn hình chuẩn
+   Song sinh với bộ nhận diện hình ảnh. Mở cho đội ngũ từ Tư vấn
+   trở lên, vì đây là công cụ nghề: viết cho khách hàng đọc.
+   ═══════════════════════════════════════════════════════════════ */
+(function(){
+var U = G.U, h = U.h, ic = U.ic;
+
+G.VIEWS['nhan-dien-loi'] = function(){
+  var N = G.NHAN_DIEN_LOI;
+  if(!N) return U.empty('Chưa nạp được bộ nhận diện ngôn từ','Phần này nằm trong gói nền.');
+
+  var o = U.ph({eyebrow:'BỘ NHẬN DIỆN NGÔN TỪ', ic:'book', grad:1,
+    t:'GITA nói như thế nào', lead:N.cot});
+
+  /* Hai hệ ngôn ngữ */
+  o += U.sec('1 · HAI HỆ NGÔN NGỮ','Cùng một màn hình, hai cách gọi tên — máy tự đổi theo người đăng nhập');
+  o += '<div class="row wrap" style="gap:12px;align-items:stretch">'+
+    N.haiHe.map(function(x){
+      return '<div class="card" style="flex:1;min-width:280px;border-color:'+
+        (x.id==='nha'?'var(--gita-vien-1)':'var(--line)')+'">'+
+        '<div class="up mb" style="color:'+(x.id==='nha'?'var(--gita-ink)':'var(--ink-4)')+'">'+h(x.ten)+'</div>'+
+        '<div class="tiny muted mb">'+h(x.ai)+'</div>'+
+        '<p class="sm" style="line-height:1.7;color:var(--ink-2)">'+h(x.cot)+'</p>'+
+        '<div class="tiny up muted" style="margin:12px 0 6px">DÙNG</div>'+
+        '<div class="row wrap" style="gap:6px">'+ x.dung.map(function(t){
+          return '<span class="chip" style="border-color:var(--gita-vien-1);color:var(--gita-ink)">'+h(t)+'</span>'; }).join('') +'</div>'+
+        '<div class="tiny up muted" style="margin:12px 0 6px">TRÁNH</div>'+
+        '<div class="row wrap" style="gap:6px">'+ x.tranh.map(function(t){
+          return '<span class="chip" style="border-color:var(--line);color:var(--ink-4);text-decoration:line-through">'+h(t)+'</span>'; }).join('') +'</div>'+
+        '</div>';
+    }).join('') +'</div>';
+
+  /* Sáu nhịp */
+  o += U.sec('2 · SÁU NHỊP','Xương sống của mọi cuộc nói chuyện, từ tin nhắn tới buổi coaching');
+  o += U.tbl(['Nhịp','Làm gì'], N.sauNhip.map(function(n){
+    return ['<b style="color:var(--gita-ink)">'+h(n.ma)+' · '+h(n.ten)+'</b>',
+      '<span class="sm">'+h(n.lam)+'</span>'];
+  }));
+
+  /* Dấu hiệu câu do máy viết */
+  o += U.sec('3 · MƯỜI DẤU HIỆU CÂU DO MÁY VIẾT','Bộ soi trước khi phát hành bất cứ câu nào ra ngoài');
+  o += '<div class="card pad-sm mb" style="border-color:var(--gita-vien-1)">'+
+    '<p class="sm" style="line-height:1.7;color:var(--ink-2)">Câu nào dính từ <b>hai dấu hiệu trở lên</b> thì viết lại. '+
+    'Không phải vì máy viết là sai, mà vì gia đình đọc ra ngay — và cái họ đọc ra là mình không thật sự ngồi cạnh họ.</p></div>';
+  o += U.tbl(['Dấu hiệu','Vì sao phải sửa'], N.dauHieuMay.map(function(d, i){
+    return ['<div class="pq-ten"><b>'+(i+1)+' · '+h(d.d)+'</b></div>',
+      '<span class="sm">'+h(d.v)+'</span>'];
+  }));
+
+  /* Mười hai cặp */
+  o += U.sec('4 · NÓI THẾ NÀY, KHÔNG NÓI THẾ KIA', N.thayVi.length + ' cặp — chép thẳng mà dùng');
+  o += '<div class="lt-cap">'+ N.thayVi.map(function(c){
+    return '<div class="lt-o">'+
+      '<div class="lt-khong">'+ic('x','w-3 h-3')+'<span>'+h(c.khong)+'</span></div>'+
+      '<div class="lt-nen">'+ic('check','w-3 h-3')+'<span>'+h(c.nen)+'</span></div></div>';
+  }).join('') +'</div>';
+
+  /* Xưng hô */
+  o += U.sec('5 · CÁCH XƯNG HÔ','Gọi sai một chữ là mất khoảng cách đúng');
+  o += U.tbl(['Nói với ai','Gọi họ','Tự xưng','Ghi chú'], N.xungHo.map(function(x){
+    return ['<b>'+h(x.voi)+'</b>','<span class="mono sm" style="color:var(--gita-ink)">'+h(x.he)+'</span>',
+      '<span class="mono sm">'+h(x.minh)+'</span>','<span class="sm muted">'+h(x.ghi)+'</span>'];
+  }));
+
+  /* Ranh giới */
+  o += U.sec('6 · SÁU RANH GIỚI NGÔN TỪ','Không thương lượng, kể cả khi khách hàng yêu cầu');
+  o += '<div class="card" style="border-color:var(--gita-vien-1)">'+
+    '<div class="up mb" style="color:var(--gita-do-ink)">'+ic('shield','w-4 h-4')+' KHÔNG BAO GIỜ</div>'+
+    U.list(N.ranhGioi, 'var(--gita-do)')+'</div>';
+
+  return o;
+};
+})();

@@ -769,6 +769,67 @@ const { chromium } = require(PW);
     }
   }
 
+  /* ═══════════ 15 · HAI HỆ NGÔN NGỮ ═══════════
+     Khách hàng không được nghe thuật ngữ hệ thống; đội ngũ phải giữ
+     nguyên thuật ngữ để làm việc với nhau. Mục này canh cả hai chiều. */
+  console.log('\n15 · HAI HỆ NGÔN NGỮ');
+  {
+    const r = await p.evaluate(() => {
+      const cu = G.S.roleObj;
+      function doc(vai){
+        G.S.roleObj = G.roleById(vai);
+        const ra = [];
+        G.NAV.forEach(g => g.items.forEach(i => {
+          if (!i.perm || G.can(i.perm)) ra.push(G.iname(i) + ' ' + G.ihint(i));
+        }));
+        return ra.join(' | ');
+      }
+      const kh = doc('R13'), hv = doc('R14'), nghe = doc('R07');
+      G.S.roleObj = cu;
+      return { kh, hv, nghe, soCau: Object.keys(G.NOI_KHACH || {}).length,
+               coBo: !!G.NHAN_DIEN_LOI,
+               soDauHieu: G.NHAN_DIEN_LOI ? G.NHAN_DIEN_LOI.dauHieuMay.length : 0,
+               soCap: G.NHAN_DIEN_LOI ? G.NHAN_DIEN_LOI.thayVi.length : 0 };
+    });
+
+    /* Thuật ngữ hệ thống không được lọt xuống khách hàng */
+    const CAM = ['phạm vi cấp phép','tầng quyền','gói nội dung','đồng bộ','KPI','mô thức',
+      'phác đồ','ma trận','nghiệm thu','kiểm duyệt','minh chứng','chuẩn hoá','PDCA','T1 → T5'];
+    const lot = CAM.filter(t => r.kh.toLowerCase().indexOf(t.toLowerCase()) >= 0 ||
+                                r.hv.toLowerCase().indexOf(t.toLowerCase()) >= 0);
+    bao(!lot.length, 'không thuật ngữ hệ thống nào lọt xuống phụ huynh và học viên',
+      lot.join(' · ') || CAM.length + ' thuật ngữ đều đã dịch');
+
+    /* Đội ngũ vẫn giữ nguyên thuật ngữ để làm việc */
+    const giu = ['mô thức','phác đồ','ma trận','nghiệm thu'].filter(t => r.nghe.toLowerCase().indexOf(t) >= 0);
+    bao(giu.length >= 3, 'đội ngũ từ Tư vấn trở lên vẫn giữ nguyên thuật ngữ nghề', giu.join(' · '));
+
+    /* Hai hệ phải KHÁC nhau thật, không phải cùng một bản */
+    bao(r.kh !== r.nghe, 'lời nhà mình và lời nghề là hai bản khác nhau');
+    bao(r.soCau >= 60, 'mỗi câu dành cho khách hàng đều viết tay, không dịch máy', r.soCau + ' câu');
+
+    /* Bộ nhận diện ngôn từ */
+    bao(r.coBo, 'có bộ nhận diện ngôn từ đọc được bằng máy');
+    bao(r.soDauHieu >= 10, 'có bộ soi dấu hiệu câu do máy viết', r.soDauHieu + ' dấu hiệu');
+    bao(r.soCap >= 12, 'có bảng nói thế này — không nói thế kia', r.soCap + ' cặp');
+
+    /* Chính lời khách hàng phải sạch dấu hiệu văn máy */
+    const may = await p.evaluate(() => {
+      const v = Object.keys(G.NOI_KHACH || {})
+        .filter(k => k.indexOf('nav.') === 0).map(k => G.NOI_KHACH[k]);
+      const xau = [];
+      v.forEach(t => {
+        if (/^(Hãy|Khám phá|Trải nghiệm)/i.test(t)) xau.push('mở đầu quảng cáo: ' + t);
+        if (/toàn diện|tối ưu|đột phá|vượt trội/i.test(t)) xau.push('tính từ rỗng: ' + t);
+        if ((t.match(/·/g) || []).length >= 3) xau.push('ba dấu chấm giữa trở lên: ' + t);
+        if (/\bbạn\b/.test(t)) xau.push('gọi khách hàng là "bạn": ' + t);
+      });
+      return xau;
+    });
+    bao(!may.length, 'lời nhà mình không dính dấu hiệu văn máy nào',
+      may.slice(0, 2).join(' | ') || 'sạch');
+  }
+
   console.log('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành'));
   await b.close();
   process.exit(loi ? 1 : 0);
