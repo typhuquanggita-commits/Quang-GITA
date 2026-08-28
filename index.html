@@ -4,6 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#070510">
+<!-- Lớp bảo vệ đi theo trang, không phụ thuộc máy chủ đặt tiêu đề hay không.
+     GitHub Pages không đặt được tiêu đề HTTP nên phần này là chốt chặn duy nhất ở đó.
+     connect-src chỉ mở đúng hai tên miền của Apps Script — không nơi nào khác.
+     frame-ancestors không đặt được bằng thẻ meta; nó nằm ở _headers, cần máy chủ
+     đặt được tiêu đề (Cloudflare). Xem docs/TEN_MIEN.md. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self' https://script.google.com https://script.googleusercontent.com; media-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
 <meta name="googlebot" content="noindex, nofollow">
 <meta name="copyright" content="© 2026 Học viện GITA — Bảo lưu mọi quyền">

@@ -1,0 +1,109 @@
+# ═══════════════════════════════════════════════════════════════
+# GITA 365 — ĐƯA BẢN WEB LÊN GITHUB PAGES
+#
+# Chỉ đẩy đúng phần ứng dụng cần để chạy. Công cụ, mã máy chủ,
+# tài liệu nội bộ và mọi thứ mang khoá đều KHÔNG lên trang web.
+#
+# Trang chạy ở https://gita.edu.vn sau khi trỏ DNS — xem
+# docs/TEN_MIEN.md để biết đúng bốn bản ghi cần thêm.
+# ═══════════════════════════════════════════════════════════════
+name: Đưa bản web lên GitHub Pages
+
+on:
+  push:
+    branches: ['claude/**', 'main']
+    paths:
+      - 'index.html'
+      - 'cau-hinh.js'
+      - 'manifest.webmanifest'
+      - 'sw.js'
+      - 'robots.txt'
+      - 'src/**'
+      - 'assets/**'
+      - 'kho/**'
+      - '.github/workflows/trang-web.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Một lần dựng một lúc; lần mới huỷ lần đang chạy dở
+concurrency:
+  group: trang-web
+  cancel-in-progress: true
+
+jobs:
+  dung:
+    name: Gom phần chạy được
+    runs-on: ubuntu-latest
+    steps:
+      - name: Lấy mã nguồn
+        uses: actions/checkout@v4
+
+      - name: Gom đúng phần ứng dụng cần
+        run: |
+          set -e
+          mkdir -p trang
+          # Chỉ những thứ trình duyệt thật sự cần
+          cp index.html cau-hinh.js manifest.webmanifest sw.js robots.txt trang/
+          cp -r src assets kho trang/
+          # Tên miền riêng
+          echo "gita.edu.vn" > trang/CNAME
+          # GitHub Pages bỏ qua thư mục bắt đầu bằng dấu gạch dưới nếu không có tệp này
+          touch trang/.nojekyll
+          # Trang 404 dùng chung, để mọi đường dẫn lạ không lộ cấu trúc thư mục
+          cat > trang/404.html <<'HTML'
+          <!doctype html><html lang="vi"><head><meta charset="utf-8">
+          <meta name="viewport" content="width=device-width,initial-scale=1">
+          <meta name="robots" content="noindex,nofollow"><title>Không có trang này</title>
+          <style>body{margin:0;min-height:100vh;display:grid;place-items:center;background:#070510;
+          color:#F2F0FA;font:15px/1.6 system-ui,-apple-system,'Segoe UI',sans-serif;text-align:center;padding:24px}
+          a{color:#F5B942}</style></head><body><div>
+          <p style="font-size:44px;margin:0 0 8px;color:#F5B942">404</p>
+          <p style="margin:0 0 6px"><b>Không có trang này.</b></p>
+          <p style="opacity:.7;margin:0 0 18px">Có thể đường dẫn đã đổi, hoặc phần này cần đăng nhập.</p>
+          <a href="/">Về trang chính GITA 365</a></div></body></html>
+          HTML
+
+      - name: Soát không để lọt tài sản ra trang web
+        run: |
+          set -e
+          ro=0
+          for x in kho-goc tools server docs giay-phep desktop .github; do
+            if [ -e "trang/$x" ]; then echo "✗ $x lọt lên trang web"; ro=1; fi
+          done
+          for f in "trang/kho/khoa.json" "trang/kho/khoa.txt"; do
+            if [ -e "$f" ]; then echo "✗ $f lọt lên trang web"; ro=1; fi
+          done
+          # Tệp .enc phải thật sự không đọc được
+          for f in trang/kho/*.enc; do
+            if head -c 400 "$f" | tail -c 372 | grep -qE '"(ma|ten|tang)"'; then
+              echo "✗ $f đọc được bằng mắt — chưa mã hoá đúng"; ro=1
+            fi
+          done
+          # Cấu hình không được trỏ về máy nội bộ
+          if grep -qE "127\.0\.0\.1|localhost" trang/cau-hinh.js; then
+            echo "✗ cau-hinh.js trỏ về máy nội bộ"; ro=1
+          fi
+          [ "$ro" = "0" ] || { echo "DỪNG — có tài sản sắp lọt ra ngoài."; exit 1; }
+          echo "✓ Không có tài sản nào lọt ra trang web"
+          echo "  $(find trang -type f | wc -l) tệp · $(du -sh trang | cut -f1)"
+
+      - name: Đóng gói cho Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: trang
+
+  phat-hanh:
+    name: Đưa lên gita.edu.vn
+    needs: dung
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.len.outputs.page_url }}
+    steps:
+      - name: Đưa lên GitHub Pages
+        id: len
+        uses: actions/deploy-pages@v4

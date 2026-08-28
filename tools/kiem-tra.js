@@ -370,6 +370,56 @@ const { chromium } = require(PW);
   bao(t8.coQuenMK, 'có đủ hàm lấy lại mật khẩu qua email');
   bao(t8.mkYeu && t8.mkManh, 'bộ kiểm mật khẩu chặn mật khẩu yếu và nhận mật khẩu đạt chuẩn');
 
+  /* ── 9. Đưa lên mạng: không gọi ra ngoài, không lọt tài sản ── */
+  console.log('\n9 · ĐƯA LÊN MẠNG');
+  {
+    const fsx = require('fs'), px = require('path');
+    const goc = px.join(__dirname, '..');
+
+    /* Trang không được gọi ra bất kỳ tên miền ngoài nào, trừ máy chủ cấp phép.
+       Một ảnh hay một phông gọi ra ngoài là một đường rò: bên đó biết ai đang
+       mở màn hình nào, và bản ngoại tuyến thì hỏng. */
+    const NGOAI = /https?:\/\/(?!script\.google\.com|script\.googleusercontent\.com|www\.facebook\.com|t\.me|drive\.google\.com|github\.com)[a-z0-9.-]+\.[a-z]{2,}/gi;
+    const rong = [];
+    for (const t of fsx.readdirSync(px.join(goc, 'src')).filter(f => f.endsWith('.js'))) {
+      const noi = fsx.readFileSync(px.join(goc, 'src', t), 'utf8');
+      for (const m of noi.matchAll(/<(?:img|script|link|iframe)[^>]*?(?:src|href)="(https?:\/\/[^"]+)"/gi)) rong.push(t + ': ' + m[1]);
+    }
+    const html = fsx.readFileSync(px.join(goc, 'index.html'), 'utf8');
+    for (const m of html.matchAll(/(?:src|href)="(https?:\/\/[^"]+)"/gi)) rong.push('index.html: ' + m[1]);
+    bao(!rong.length, 'trang không tải tài nguyên nào từ tên miền ngoài', rong.slice(0, 3).join(' · ') || 'tự chứa hoàn toàn');
+
+    /* Chính sách nội dung phải có và phải khoá đúng chỗ */
+    const csp = (html.match(/Content-Security-Policy" content="([^"]+)"/) || [])[1] || '';
+    bao(/default-src 'self'/.test(csp), 'chính sách nội dung khoá về chính trang');
+    bao(/connect-src[^;]*script\.google\.com/.test(csp) && !/connect-src[^;]*\*/.test(csp),
+      'chỉ cho gọi ra đúng máy chủ cấp phép, không mở dấu sao');
+    bao(/object-src 'none'/.test(csp) && /base-uri 'self'/.test(csp), 'chặn nhúng đối tượng lạ và đổi thẻ base');
+
+    /* Luồng đưa lên Pages phải soát tài sản */
+    const wf = px.join(goc, '.github', 'workflows', 'trang-web.yml');
+    if (fsx.existsSync(wf)) {
+      const y = fsx.readFileSync(wf, 'utf8');
+      const canSoat = ['kho-goc', 'tools', 'server', 'giay-phep', 'khoa.json'];
+      const thieu = canSoat.filter(x => y.indexOf(x) < 0);
+      bao(!thieu.length, 'luồng đưa lên mạng có soát đủ đường lọt tài sản', thieu.join(' ') || '5 đường đều soát');
+      bao(/gita\.edu\.vn/.test(y) && fsx.existsSync(px.join(goc, 'CNAME')), 'có khai báo tên miền riêng');
+    }
+
+    /* Mã QR chuyển khoản: phải là ảnh trong máy, và chuỗi phải đúng CRC */
+    const qr = px.join(goc, 'assets', 'brand', 'qr-thanh-toan.txt');
+    if (fsx.existsSync(qr)) {
+      const c = fsx.readFileSync(qr, 'utf8').trim();
+      const crc16 = t => { let x = 0xFFFF;
+        for (const b of Buffer.from(t, 'utf8')) { x ^= b << 8;
+          for (let i = 0; i < 8; i++) x = (x & 0x8000) ? ((x << 1) ^ 0x1021) & 0xFFFF : (x << 1) & 0xFFFF; } 
+        return x.toString(16).toUpperCase().padStart(4, '0'); };
+      bao(crc16(c.slice(0, -4)) === c.slice(-4), 'mã QR chuyển khoản đúng CRC', c.slice(-4));
+      bao(c.indexOf('8878719979') > 0 && c.indexOf('970418') > 0, 'mã QR mang đúng số tài khoản và mã ngân hàng');
+      bao(fsx.existsSync(px.join(goc, 'assets', 'brand', 'qr-thanh-toan.svg')), 'ảnh QR nằm trong ứng dụng, không gọi ra mạng');
+    }
+  }
+
   console.log('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành'));
   await b.close();
   process.exit(loi ? 1 : 0);

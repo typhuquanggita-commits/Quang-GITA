@@ -406,9 +406,9 @@ G.VIEWS['quy-trinh-tc'] = function(){
   o += U.sec(T.quyTrinhThu.ten, T.quyTrinhThu.cot);
   o += '<div class="card glow mb"><div class="row wrap" style="gap:22px;align-items:center">'+
     '<div style="width:150px;flex:none;background:#fff;border-radius:16px;padding:10px;text-align:center">'+
-    '<img src="'+h(T.taiKhoan.qrOnline)+'" alt="Mã QR thanh toán GITA 365" '+
+    '<img src="'+h(T.taiKhoan.qr)+'" alt="Mã QR chuyển khoản '+h(T.taiKhoan.chuTk)+' · '+h(T.taiKhoan.soTk)+'" '+
     'style="width:100%;border-radius:10px" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'block\'">'+
-    '<div style="display:none;color:#1B5CB8;font-size:11px;padding:24px 6px;line-height:1.5">Mã QR cần mạng để dựng.<br>Dùng số tài khoản bên cạnh.</div></div>'+
+    '<div style="display:none;color:#1B5CB8;font-size:11px;padding:24px 6px;line-height:1.5">Chưa thấy ảnh mã QR.<br>Dùng số tài khoản bên cạnh.</div></div>'+
     '<div class="grow" style="min-width:230px">'+
     '<div class="up muted">TÀI KHOẢN NHẬN</div>'+
     '<b style="font-size:19px;display:block;margin:4px 0 2px">'+h(T.taiKhoan.chuTk)+'</b>'+
@@ -417,7 +417,10 @@ G.VIEWS['quy-trinh-tc'] = function(){
     '<div class="mt2" style="padding:11px 13px;border-radius:12px;background:rgba(245,185,66,.09);border-left:2px solid var(--gold)">'+
     '<span class="tiny up" style="color:var(--gold)">NỘI DUNG CHUYỂN KHOẢN</span>'+
     '<p class="mono sm mt">'+h(T.noiDungCk.mau)+'</p>'+
-    '<p class="tiny muted mt">Ví dụ: '+h(T.noiDungCk.vd)+' — '+h(T.noiDungCk.vi)+'</p></div></div></div>'+
+    '<p class="tiny muted mt">Ví dụ: '+h(T.noiDungCk.vd)+' — '+h(T.noiDungCk.vi)+'</p></div>'+
+    (T.taiKhoan.canQuetThu ? '<p class="tiny mt" style="color:var(--alert);line-height:1.6">'+
+      ic('shield','w-3 h-3')+' '+h(T.taiKhoan.canQuetThu)+'</p>' : '')+
+    '</div></div>'+
     '<p class="tiny muted mt2">'+h(T.taiKhoan.luuY)+'</p></div>';
 
   o += '<div class="grid g5 mb">' + T.quyTrinhThu.buoc.map(function(b){

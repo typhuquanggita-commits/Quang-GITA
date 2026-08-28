@@ -79,7 +79,10 @@ Sửa đúng một dòng trong `cau-hinh.js`:
 G.API_CAP_PHEP = 'https://script.google.com/macros/s/…/exec';
 ```
 
-### 5. Đưa bản web lên Cloudflare Pages
+### 5. Đưa bản web lên mạng
+
+Gắn tên miền riêng `gita.edu.vn` — ba cách, có bảng so sánh và đủ bản ghi
+DNS ở **[docs/TEN_MIEN.md](TEN_MIEN.md)**. Bản rút gọn:
 
 ```
 dash.cloudflare.com → Workers & Pages → Create → Pages → Connect to Git
