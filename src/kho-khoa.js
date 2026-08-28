@@ -168,17 +168,83 @@ G.napKho = function () {
     });
 };
 
-/* ── Màn hình khi nội dung chưa được cấp phép ── */
+/* ── Màn hình khi nội dung chưa được cấp phép ──
+   Không chỉ nói "bị khoá". Nói rõ ba điều khách hàng cần biết ngay:
+   khoá cái gì, vì sao, và mở nó bằng cách nào — kèm những thứ đang
+   dùng được ngay bây giờ để không ai bị bỏ lại ở một trang cụt. */
+var TEN_GOI = {
+  nen:  'Gói nền — mô hình, lộ trình, nhịp sống nhà mình',
+  nghe: 'Gói nghề — kịch bản, phác đồ, mô thức, hệ VIP',
+  tang1:'Gói tầng 1 — NHẬN DIỆN', tang2:'Gói tầng 2 — GIẢI MÃ',
+  tang3:'Gói tầng 3 — KIẾN TẠO',  tang4:'Gói tầng 4 — CHUYỂN HOÁ',
+  tang5:'Gói tầng 5 — BỨT PHÁ'
+};
+
 G.canCapPhep = function (goi) {
   var U = G.U, h = U.h;
-  return U.ph({ eyebrow: 'NỘI DUNG CÓ BẢN QUYỀN', ic: 'lock', t: 'Phần này cần được cấp phép',
-    lead: 'Kho chuyên môn của GITA 365 được mã hoá và chỉ mở cho tài khoản đã đăng nhập, trong đúng phạm vi vai và tầng được cấp.' }) +
-    '<div class="card" style="border-color:rgba(245,185,66,.3)">' +
-    '<div class="row mb"><span style="color:var(--gold)">' + U.ic('shield', 'w-4 h-4') + '</span>' +
-    '<b>Vì sao anh chị đang thấy màn hình này</b></div>' +
-    '<p class="sm dim" style="line-height:1.75">Ứng dụng đang chạy ở <b>chế độ mẫu</b>: chưa nối với máy chủ cấp phép, ' +
-    'nên chỉ mở được phần giao diện và một ít nội dung minh hoạ. Gói cần cho màn hình này là <b class="mono">' + h(goi) + '</b>.</p>' +
-    '<p class="sm muted mt">Nối máy chủ cấp phép rồi đăng nhập lại là mở đủ. Xem <b>docs/BAO_VE_TAI_SAN.md</b>.</p></div>' +
-    '<div class="card mt2"><div class="up mb" style="color:var(--ink-4)">ĐANG CÓ TRONG PHIÊN NÀY</div>' +
-    '<p class="sm dim">' + (G.KHO.daNap.length ? h(G.KHO.daNap.join(' · ')) : 'chưa mở gói nào — chế độ mẫu') + '</p></div>';
+  var mau = G.KHO && G.KHO.cheDoMau;
+  var laTang = /^tang(\d)$/.test(String(goi));
+  var soTang = laTang ? Number(String(goi).slice(4)) : 0;
+  var tenGoi = TEN_GOI[goi] || goi;
+
+  var o = U.ph({ eyebrow: 'PHẦN NÀY CHƯA MỞ', ic: 'lock', t: 'Chưa tới lượt màn hình này',
+    lead: 'Không phải lỗi, và cũng không phải anh chị làm sai. Dưới đây là đúng ba điều: khoá phần nào, vì sao, và mở bằng cách nào.' });
+
+  /* 1 · Khoá phần nào */
+  o += '<div class="card" style="border-color:rgba(245,185,66,.34)">' +
+    '<div class="row mb"><span style="color:var(--gold)">' + U.ic('vault', 'w-4 h-4') + '</span>' +
+    '<b>1 · Màn hình này nằm trong ' + h(tenGoi) + '</b></div>' +
+    '<p class="sm" style="line-height:1.75;color:var(--ink-2)">Nội dung chuyên môn của GITA 365 được mã hoá và chia thành bảy gói. ' +
+    'Mỗi tài khoản chỉ nhận khoá của những gói thuộc vai và tầng của mình — không thừa một gói nào.</p></div>';
+
+  /* 2 · Vì sao */
+  o += '<div class="card mt2">' +
+    '<div class="row mb"><span style="color:var(--ink-3)">' + U.ic('shield', 'w-4 h-4') + '</span>' +
+    '<b>2 · Vì sao đang khoá</b></div>' +
+    (mau
+      ? '<p class="sm" style="line-height:1.75;color:var(--ink-2)">Ứng dụng đang chạy <b>chế độ mẫu</b> — chưa nối với máy chủ cấp phép ' +
+        'nên chưa có khoá của gói nào. Đây là trạng thái của bản dùng thử và bản cài chưa kích hoạt.</p>'
+      : laTang
+        ? '<p class="sm" style="line-height:1.75;color:var(--ink-2)">Nhà mình chưa vào <b>tầng ' + soTang + '</b>. ' +
+          'Tầng mở dần theo hành trình, không mở hết một lượt — vì học tầng sau khi chưa xong tầng trước thì hỏng nhịp, ' +
+          'không phải vì tiếc nội dung.</p>'
+        : '<p class="sm" style="line-height:1.75;color:var(--ink-2)">Gói này thuộc phạm vi của đội ngũ dẫn dắt GITA 365. ' +
+          'Vai hiện tại không được cấp — đó là cách giữ cho hồ sơ từng gia đình không rơi sang tay người không phụ trách.</p>') +
+    '</div>';
+
+  /* 3 · Mở bằng cách nào */
+  o += '<div class="card mt2" style="border-color:rgba(16,185,129,.36)">' +
+    '<div class="row mb"><span style="color:var(--ok)">' + U.ic('arrow', 'w-4 h-4') + '</span>' +
+    '<b>3 · Mở bằng cách nào</b></div>' +
+    (mau
+      ? U.list([
+          'Nối ứng dụng với máy chủ cấp phép của Học viện, rồi đăng nhập lại.',
+          'Bản cài trên máy tính: nạp tệp giấy phép được cấp cho đúng máy đó.',
+          'Chưa có tài khoản: đăng ký ở Cổng vào, xác nhận email, rồi hệ thống cấp mã số khách hàng.'
+        ])
+      : laTang
+        ? U.list([
+            'Hoàn thành KPI của tầng đang học — hệ thống đếm từ dữ liệu anh chị đã ghi.',
+            'Xác nhận thanh toán thành công — kế toán đối chiếu sao kê rồi ghi nhận.',
+            'Đủ cả hai thì hệ thống nâng tầng và mở gói này ở lần đăng nhập kế tiếp.'
+          ])
+        : U.list([
+            'Phần này dành cho đội ngũ GITA 365. Nếu anh chị là người của đội ngũ, đề nghị Admin cấp đúng vị trí.',
+            'Nếu là gia đình đang học, Coach phụ trách sẽ mang phần cần thiết vào buổi đồng hành.'
+          ])) +
+    '</div>';
+
+  /* Đang dùng được gì — để không ai đứng ở trang cụt */
+  o += '<div class="card mt2"><div class="up mb" style="color:var(--ink-4)">ĐANG DÙNG ĐƯỢC NGAY BÂY GIỜ</div>' +
+    '<p class="sm dim" style="line-height:1.7">' +
+    (G.KHO.daNap.length
+      ? 'Gói đã mở: <b class="mono">' + h(G.KHO.daNap.join(' · ')) + '</b>.'
+      : 'Bản mẫu công khai: mô hình năm khoang chín vai, lộ trình năm tầng, mười chân dung thành công, ' +
+        'nhịp sống và nghi lễ gia đình, cú hích, cách ghi nhận và trao quà, sáu ranh giới an toàn, ' +
+        'chương trình đại sứ, sự kiện, và một bài test rút gọn.') + '</p>' +
+    '<div class="row mt" style="gap:9px;flex-wrap:wrap">' +
+      '<button class="btn ghost sm" data-v="pham-vi">Xem đầy đủ phạm vi của tôi</button>' +
+      '<button class="btn ghost sm" data-v="lo-trinh">Lộ trình năm tầng</button></div></div>';
+  return o;
 };
+

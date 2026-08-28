@@ -100,8 +100,30 @@ fs.writeFileSync(path.join(RA, 'khoa.json'), JSON.stringify({
    cách ghi nhận và nhận diện thương hiệu. Phần nghề — 1.000 kịch bản,
    220 phác đồ, 42 mô thức, ngôn từ dẫn dắt, tình huống, văn bản, tài
    chính, quản trị — KHÔNG nằm ở đây. */
-const MO_RA = ['CHUYENDICH', 'LOTRINH', 'TIERS', 'TAMNHIN100', 'TANG100', 'WOW',
-  'NHATBAN', 'LEVELS', 'DIEM', 'HUYHIEU', 'QUA_DANG', 'BRAND', 'BAIHOC'];
+const MO_RA = [
+  /* Phần GITA vẫn nói ra ngoài khi giới thiệu */
+  'CHUYENDICH', 'LOTRINH', 'TIERS', 'TAMNHIN100', 'TANG100', 'WOW',
+  'NHATBAN', 'LEVELS', 'DIEM', 'HUYHIEU', 'QUA_DANG', 'BRAND', 'BAIHOC',
+  /* Mở thêm ở v7.6 — mô hình công khai và nhịp sống nhà mình.
+     Lý do: khoá những phần này làm gia đình không dùng được ứng dụng
+     hằng ngày, trong khi chúng đã nằm trong tài liệu giới thiệu và
+     trang web của Học viện. Phần NGHỀ vẫn khoá nguyên: 1.000 kịch bản
+     đầy đủ, 220 phác đồ, 42 mô thức, ngôn từ dẫn dắt, 250 tình huống,
+     ma trận, xương sống phương pháp, hệ VIP và Cây Tiền, toàn bộ quản
+     trị và tài chính. */
+  'VANHANH',      /* 5 khoang · 9 vai — mô hình lõi, đã công bố */
+  'CHANDUNG',     /* mười chân dung thành công */
+  'CUHICH',       /* cú hích lớn trong nhà */
+  'NGHILE',       /* thói quen và nghi lễ gia đình */
+  'SUKIEN',       /* sự kiện và lửa trại */
+  'KETNOI',       /* kết nối hệ sinh thái */
+  'LIENKET',      /* liên kết giữa các phần */
+  'DAISU',        /* chương trình đại sứ — điều kiện công khai */
+  'HOAHONG',      /* bốn cấp và trần hoa hồng 10% — điều khoản thương mại công khai */
+  'NGONTU_RANH',  /* sáu ranh giới — luật an toàn, càng nhiều người biết càng tốt */
+  'QUA',          /* cách ghi nhận và trao quà */
+  'DANDAT'        /* hành trình người dẫn dắt — phần giới thiệu nghề */
+];
 const mau = {
   ...Object.fromEntries(MO_RA.map(k => [k, G[k]]).filter(([, v]) => v !== undefined)),
   KICHBAN: (G.KICHBAN || []).filter(k => k.tang === 'T1').slice(0, 8)

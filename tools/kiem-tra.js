@@ -420,6 +420,97 @@ const { chromium } = require(PW);
     }
   }
 
+  /* ═══════════ 10 · PHÂN HOÁ VAI & BẢNG PHÂN QUYỀN ═══════════
+     Sinh ra từ một lỗi thật của v7.5: phụ huynh, học viên và cộng tác
+     viên cùng bậc nên nhìn thấy y hệt nhau. Bộ kiểm này chặn nó quay lại. */
+  console.log('\n10 · PHÂN HOÁ VAI & BẢNG PHÂN QUYỀN');
+  {
+    const dem = await p.evaluate(() => {
+      const r = {};
+      G.ROLES.forEach(v => {
+        let man = 0;
+        G.NAV.forEach(g => g.items.forEach(i => { if (!i.perm || G.vaiCo(v.id, i.perm)) man++; }));
+        r[v.id] = { man, quyen: G.demQuyen(v.id) };
+      });
+      return r;
+    });
+
+    /* Ba vai khách hàng phải KHÁC nhau, không chỉ khác một chút */
+    const ph = dem.R13, hv = dem.R14, ctv = dem.R15;
+    bao(ph.man !== hv.man && hv.man !== ctv.man && ph.man !== ctv.man,
+      'phụ huynh · học viên · cộng tác viên thấy số màn KHÁC nhau',
+      'PH ' + ph.man + ' · HV ' + hv.man + ' · CTV ' + ctv.man);
+    bao(ph.quyen !== hv.quyen && hv.quyen !== ctv.quyen,
+      'ba vai khách hàng có bộ quyền khác nhau',
+      'PH ' + ph.quyen + ' · HV ' + hv.quyen + ' · CTV ' + ctv.quyen);
+    bao(ph.man > hv.man && hv.man > ctv.man,
+      'phạm vi giảm dần đúng thứ tự phụ huynh → học viên → cộng tác viên');
+
+    /* Bậc càng cao phải thấy càng nhiều, không có chỗ nào đảo ngược */
+    const thu = await p.evaluate(() => {
+      const v = G.ROLES.slice().sort((a, b) => a.lv - b.lv);
+      const d = v.map(r => { let n = 0;
+        G.NAV.forEach(g => g.items.forEach(i => { if (!i.perm || G.vaiCo(r.id, i.perm)) n++; })); return n; });
+      for (let i = 1; i < d.length; i++) if (d[i] > d[i - 1]) return v[i].id;
+      return null;
+    });
+    bao(!thu, 'không vai bậc thấp nào thấy nhiều hơn vai bậc cao hơn', thu || 'thứ tự đúng');
+
+    /* Bảng phân quyền: bốn luật chặn */
+    const luat = await p.evaluate(() => {
+      const cu = G.S.roleObj;
+      G.S.roleObj = G.roleById('R02');                       /* đóng vai Admin hệ thống */
+      const r = {
+        vaiCaoHon: G.suaDuocO('R01', 'pro_coach'),
+        tuThuQuyen: G.suaDuocO('R02', 'sys_manage_user'),
+        capQuyenKhongCo: G.suaDuocO('R07', 'sys_config'),
+        binhThuong: G.suaDuocO('R07', 'pro_coach')
+      };
+      G.S.roleObj = cu;
+      return r;
+    });
+    bao(luat.vaiCaoHon !== true, 'không sửa được quyền của vai cao hơn mình');
+    bao(luat.tuThuQuyen !== true, 'không tự thu quyền quản trị của chính mình');
+    bao(luat.capQuyenKhongCo !== true, 'không cấp được quyền mà chính mình không có');
+    bao(luat.binhThuong === true, 'vẫn sửa được ô hợp lệ');
+
+    /* Vai không có quyền quản trị thì màn bảng phân quyền phải từ chối */
+    const choi = await p.evaluate(() => {
+      const cu = G.S.roleObj;
+      G.S.roleObj = G.roleById('R13');
+      const h = G.VIEWS['phan-quyen']();
+      G.S.roleObj = cu;
+      return /data-pq=/.test(h);
+    });
+    bao(!choi, 'phụ huynh mở bảng phân quyền không thấy ô sửa nào');
+
+    /* Chế độ mẫu phải mở được phần nền, nhưng KHÔNG mở kho nghề */
+    const mau = await p.evaluate(() => ({
+      nen: G.coGoi('nen'), nghe: G.coGoi('nghe'), t3: G.coGoi('tang3'), mau: G.KHO.cheDoMau
+    }));
+    if (mau.mau) {
+      bao(mau.nen === true, 'chế độ mẫu mở được phần nền — bản dùng thử không còn trống');
+      bao(mau.nghe === false, 'chế độ mẫu KHÔNG mở kho nghề');
+      bao(mau.t3 === false, 'chế độ mẫu KHÔNG mở gói tầng 3');
+    }
+
+    /* Gói mẫu công khai không được chứa phần nghề */
+    const fsm = require('fs'), pxm = require('path');
+    const gocm = pxm.join(__dirname, '..');
+    const pm = pxm.join(gocm, 'kho', 'mau.json');
+    if (fsm.existsSync(pm)) {
+      const m = JSON.parse(fsm.readFileSync(pm, 'utf8'));
+      const CAM = ['NGONTU', 'TINHHUONG', 'CAYTIEN', 'HOSO_VIP', 'CHUYENDOI', 'PHANHANG',
+        'CHUAN_VIP', 'MATRAN', 'XUONG_SONG', 'PHUONGPHAP', 'VANTAY', 'AICHAM',
+        'TAICHINH_QT', 'VANBAN', 'THANHTRA', 'LUAT_TK', 'DAU_MAT'];
+      const lot = CAM.filter(k => m[k] !== undefined);
+      bao(!lot.length, 'gói mẫu công khai không chứa phần nghề nào', lot.join(' ') || Object.keys(m).length + ' bộ, đều là phần công khai');
+      bao((m.KICHBAN || []).length <= 10 && (m.PHACDO || []).length <= 10 && (m.MOTHUC || []).length <= 6,
+        'kịch bản · phác đồ · mô thức trong gói mẫu vẫn chỉ là mẫu rút gọn',
+        (m.KICHBAN || []).length + ' kịch bản · ' + (m.PHACDO || []).length + ' phác đồ · ' + (m.MOTHUC || []).length + ' mô thức');
+    }
+  }
+
   console.log('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành'));
   await b.close();
   process.exit(loi ? 1 : 0);

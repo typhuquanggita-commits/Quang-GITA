@@ -59,10 +59,62 @@ G.PERM = {
   pro_approve:4, pro_report:4, pro_override:4, pro_assign:5, pro_coach:8, pro_assess:10,
   pro_view_all:4, pro_consult:11,
   usr_self_data:15, usr_do_test:15, usr_referral:15,
+
+  /* Ba vai cuối cùng bậc nhưng KHÁC việc. Nếu chỉ so bậc thì phụ huynh,
+     học viên và cộng tác viên nhìn thấy y hệt nhau — đó là lỗi của v7.5.
+     Bậc tách được phụ huynh khỏi học viên; phần còn lại do bảng phân
+     quyền theo vai bên dưới quyết định. */
+  kh_gia_dinh:13,     /* hồ sơ nhà, bảng số, nhịp sống — phụ huynh trở lên */
+  kh_hanh_trinh:14,   /* hành trình của con, nhiệm vụ, bài test — học viên trở lên */
+  kh_qua_tang:14,     /* kho quà mở theo tầng đã học */
+  ctv_lien_ket:15,    /* mã liên kết và danh sách nhà mình giới thiệu */
+  ctv_hoa_hong:15,    /* hoa hồng và số tài khoản nhận tiền */
+
   /* Xuất tài sản ra ngoài — chỉ người của GITA 365 từ cấp quản lý.
      Khách hàng (R13 phụ huynh, R14 học viên) và CTV (R15) KHÔNG có hai quyền này,
      nên không in được PDF và không đẩy được bảng tính lên Drive. */
   xuat_pdf:5, xuat_sheet:4
+};
+
+/* Tên tiếng Việt của từng quyền — bảng điều khiển phân quyền đọc từ đây. */
+G.PERM_TEN = {
+  sys_config:'Cấu hình hệ thống',        sys_delete_user:'Xoá tài khoản',
+  sys_restore:'Khôi phục dữ liệu',       sys_manage_user:'Quản trị người dùng',
+  sys_audit:'Nhật ký hệ thống',          sys_fraud:'Cảnh báo gian lận',
+  fin_view:'Xem tài chính',              fin_payout:'Duyệt chi',
+  fin_payroll:'Bảng lương',              fin_create_order:'Tạo đơn thu',
+  pro_approve:'Nghiệm thu chuyên môn',   pro_report:'Báo cáo toàn hệ',
+  pro_override:'Vượt quyết định chuyên môn', pro_assign:'Phân công đội ngũ',
+  pro_coach:'Công cụ Coach',             pro_assess:'Chấm đánh giá',
+  pro_view_all:'Xem toàn bộ hồ sơ nhà',  pro_consult:'Công cụ tư vấn',
+  usr_self_data:'Dữ liệu của chính mình',usr_do_test:'Làm bài test',
+  usr_referral:'Giới thiệu người quen',
+  kh_gia_dinh:'Hồ sơ và nhịp sống nhà mình', kh_hanh_trinh:'Hành trình của con',
+  kh_qua_tang:'Kho quà theo tầng',
+  ctv_lien_ket:'Mã liên kết cộng tác viên', ctv_hoa_hong:'Hoa hồng và tài khoản nhận tiền',
+  xuat_pdf:'Xuất bản in PDF',            xuat_sheet:'Đẩy Google Sheet về Drive'
+};
+
+/* Nhóm quyền — để bảng điều khiển xếp cột cho dễ đọc. */
+G.PERM_NHOM = [
+  {id:'sys', t:'HỆ THỐNG',   c:'#F5B942', ds:['sys_config','sys_delete_user','sys_restore','sys_manage_user','sys_audit','sys_fraud']},
+  {id:'fin', t:'TÀI CHÍNH',  c:'#10B981', ds:['fin_view','fin_payout','fin_payroll','fin_create_order']},
+  {id:'pro', t:'CHUYÊN MÔN', c:'#8B5CF6', ds:['pro_approve','pro_report','pro_override','pro_assign','pro_coach','pro_assess','pro_view_all','pro_consult']},
+  {id:'kh',  t:'KHÁCH HÀNG', c:'#06B6D4', ds:['usr_self_data','usr_do_test','usr_referral','kh_gia_dinh','kh_hanh_trinh','kh_qua_tang']},
+  {id:'ctv', t:'CỘNG TÁC',   c:'#FB7185', ds:['ctv_lien_ket','ctv_hoa_hong']},
+  {id:'out', t:'XUẤT RA NGOÀI', c:'#FF7A45', ds:['xuat_pdf','xuat_sheet']}
+];
+
+/* ══════════ BẢNG PHÂN QUYỀN THEO VAI ══════════
+   Bậc quyết định phần lớn. Bảng này ghi đè cho những chỗ bậc không nói được:
+   cho  = cấp thêm quyền mà bậc chưa cho
+   cam  = thu lại quyền mà bậc đã cho
+   Super Admin và Admin hệ thống sửa bảng này ở màn hình "Bảng phân quyền".
+   Mặc định dưới đây là điểm khởi đầu, không phải thứ bất biến. */
+G.PHANQUYEN_GOC = {
+  R13:{cho:[], cam:['ctv_lien_ket','ctv_hoa_hong']},
+  R14:{cho:[], cam:['ctv_lien_ket','ctv_hoa_hong']},
+  R15:{cho:['ctv_lien_ket','ctv_hoa_hong'], cam:['kh_gia_dinh','kh_hanh_trinh','kh_qua_tang','usr_self_data']}
 };
 
 /* Sáu chân dung người dùng — lời mời bước vào, hiển thị ở Cổng vào */
@@ -132,13 +184,14 @@ G.NAV = [
    essence:'Nơi mọi thứ bắt đầu: nhìn cho đúng trước khi sửa bất cứ điều gì.',
    items:[
     {v:'bat-dau',     t:'Bắt đầu ở đây',               h:'Năm bước đầu tiên, đúng thứ tự',     ic:'seed', star:1},
+    {v:'pham-vi',     t:'Phạm vi của tôi',             h:'Mình mở tới đâu · còn gì chưa mở',   ic:'compass', star:1},
     {v:'ban-do',      t:'Bản Đồ Gia Đình Thịnh Vượng', h:'5 khoang · 9 vai · băng nền 8 việc', ic:'map', star:1},
-    {v:'chan-dung-nha',t:'Chân dung nhà mình',         h:'Từng thành viên thật sự là ai',      ic:'users'},
-    {v:'dinh-vi',     t:'Định vị hôm nay',             h:'Bảng số trung thực, không cảm giác', ic:'pulse'},
-    {v:'tam-nhin',    t:'Tầm nhìn 5 – 20 năm',         h:'Cả nhà viết, không ai viết hộ ai',   ic:'sun'},
+    {v:'chan-dung-nha',t:'Chân dung nhà mình',         h:'Từng thành viên thật sự là ai',      ic:'users', perm:'kh_gia_dinh'},
+    {v:'dinh-vi',     t:'Định vị hôm nay',             h:'Bảng số trung thực, không cảm giác', ic:'pulse', perm:'kh_gia_dinh'},
+    {v:'tam-nhin',    t:'Tầm nhìn 5 – 20 năm',         h:'Cả nhà viết, không ai viết hộ ai',   ic:'sun', perm:'kh_gia_dinh'},
     {v:'chuyen-hoa',  t:'Từ nỗi đau đến khát khao',    h:'Bảy chuyển dịch làm nên một gia đình khác', ic:'flame'},
-    {v:'hanh-trinh-con',t:'Hành trình của con',        h:'Từ nhiều vấn đề đến niềm tự hào',    ic:'star'},
-    {v:'diem-cham',   t:'Bản đồ điểm chạm cảm xúc',   h:'Chín khoảnh khắc quyết định họ ở lại', ic:'heart'},
+    {v:'hanh-trinh-con',t:'Hành trình của con',        h:'Từ nhiều vấn đề đến niềm tự hào',    ic:'star', perm:'kh_hanh_trinh'},
+    {v:'diem-cham',   t:'Bản đồ điểm chạm cảm xúc',   h:'Chín khoảnh khắc quyết định họ ở lại', ic:'heart', perm:'kh_hanh_trinh'},
     {v:'dong-hanh',   t:'Người đồng hành',             h:'Cố vấn luôn lắng nghe, có mặt mọi lúc',ic:'heart', star:1},
     {v:'wow',         t:'Chuỗi WOW',                   h:'Bảy khoảnh khắc đáng nhớ của hành trình',ic:'spark'}
    ]},
@@ -149,13 +202,13 @@ G.NAV = [
    items:[
     {v:'lo-trinh',    t:'Lộ trình T1 → T5',            h:'Năm chặng, mỗi chặng một câu hỏi',   ic:'compass', star:1},
     {v:'gita-map',    t:'Bản đồ G – I – T – A',        h:'Bốn miền để đọc đúng nguyên nhân',   ic:'brain'},
-    {v:'chu-ky',      t:'Chu kỳ 21 / 90 ngày',         h:'PDCA và cổng nghiệm thu từng chặng', ic:'ritual'},
-    {v:'nhiem-vu',    t:'Nhiệm vụ & Nhật ký 365',      h:'Việc của hôm nay, ghi lại được',     ic:'check'},
+    {v:'chu-ky',      t:'Chu kỳ 21 / 90 ngày',         h:'PDCA và cổng nghiệm thu từng chặng', ic:'ritual', perm:'kh_hanh_trinh'},
+    {v:'nhiem-vu',    t:'Nhiệm vụ & Nhật ký 365',      h:'Việc của hôm nay, ghi lại được',     ic:'check', perm:'kh_hanh_trinh'},
     {v:'chan-dung-tc',t:'Mười chân dung thành công',   h:'Người đi trước trông như thế nào',   ic:'crown'},
     {v:'cong-nghiem-thu',t:'Cổng nghiệm thu',          h:'Qua chặng bằng bằng chứng, không bằng lời', ic:'shield', perm:'pro_approve'},
-    {v:'bo-test',     t:'Bộ test nhận diện 5 tầng',    h:'25 bộ · 750 câu · phân bốn nhóm',    ic:'target', star:1},
-    {v:'kpi-100',     t:'Mười điểm về đích',           h:'10 điểm mốc · 100 tiêu chí đo được', ic:'crown', star:1},
-    {v:'kien-truc-100',t:'Kiến trúc một trăm năm',     h:'100 tầng giá trị · 5 thời kỳ · mỗi năm +3–5%',ic:'sun', star:1}
+    {v:'bo-test',     t:'Bộ test nhận diện 5 tầng',    h:'25 bộ · 750 câu · phân bốn nhóm',    ic:'target', star:1, perm:'kh_hanh_trinh'},
+    {v:'kpi-100',     t:'Mười điểm về đích',           h:'10 điểm mốc · 100 tiêu chí đo được', ic:'crown', star:1, perm:'kh_hanh_trinh'},
+    {v:'kien-truc-100',t:'Kiến trúc một trăm năm',     h:'100 tầng giá trị · 5 thời kỳ · mỗi năm +3–5%',ic:'sun', star:1, perm:'pro_consult'}
    ]},
 
   {id:'g3',no:'03',ic:'vault',c:'#06B6D4',
@@ -165,15 +218,15 @@ G.NAV = [
     {v:'kho',         t:'Kho báu vật',                 h:'Toàn cảnh những gì anh chị đang có', ic:'vault', star:1},
     {v:'phac-do',     t:'220 phác đồ × 5 tầng',        h:'Vấn đề nào cũng có đường đi',        ic:'book',  perm:'pro_coach'},
     {v:'kich-ban',    t:'1.000 kịch bản chuyên môn',   h:'Tư vấn và coaching, đủ cả năm tầng', ic:'ritual',perm:'pro_consult'},
-    {v:'phuong-phap', t:'Xương sống phương pháp',       h:'42 mô thức GITA · 6 nhịp ngôn ngữ',  ic:'brain', perm:'pro_coach', star:1},
+    {v:'phuong-phap', t:'Xương sống phương pháp',       h:'42 mô thức GITA · 6 nhịp ngôn ngữ',  ic:'brain', perm:'pro_consult', star:1},
     {v:'van-tay',     t:'Sinh trắc học vân tay',        h:'Quan điểm thống nhất của GITA',      ic:'shield',perm:'pro_consult'},
-    {v:'ma-tran',     t:'Ma trận 220 vấn đề × 5 tầng', h:'11 nhóm · 8 cột sâu mỗi tầng',       ic:'map', star:1},
+    {v:'ma-tran',     t:'Ma trận 220 vấn đề × 5 tầng', h:'11 nhóm · 8 cột sâu mỗi tầng',       ic:'map', star:1, perm:'pro_consult'},
     {v:'tinh-huong',  t:'250 tình huống thực chiến',   h:'Mã Key · thử thách 7 ngày · KPI',    ic:'target',perm:'pro_consult'},
     {v:'mo-thuc',     t:'25 mô thức huấn luyện',       h:'Bộ công cụ gốc của người sáng lập',  ic:'brain', perm:'pro_coach'},
     {v:'tu-duy',      t:'Hệ tư duy mới',               h:'14 bài học đổi cách nhìn trong nhà', ic:'lightning'},
     {v:'sach',        t:'Sách gốc & tư liệu Học viện', h:'11 chương · 515 đoạn · tra cứu được',ic:'book'},
-    {v:'ngon-tu',     t:'Ngôn từ dẫn dắt',             h:'Sáu nhịp · mẫu câu dùng được ngay',  ic:'lightning', star:1},
-    {v:'thuong-hieu', t:'Nhận diện thương hiệu',       h:'Màu · chữ · giọng nói · điều cấm kỵ',ic:'star'},
+    {v:'ngon-tu',     t:'Ngôn từ dẫn dắt',             h:'Sáu nhịp · mẫu câu dùng được ngay',  ic:'lightning', star:1, perm:'pro_consult'},
+    {v:'thuong-hieu', t:'Nhận diện thương hiệu',       h:'Màu · chữ · giọng nói · điều cấm kỵ',ic:'star', perm:'pro_consult'},
     {v:'tro-ly',      t:'Trợ lý GITA',                 h:'Hỏi bất cứ điều gì, trích dẫn nguồn',ic:'spark'}
    ]},
 
@@ -181,15 +234,15 @@ G.NAV = [
    t:'CÚ HÍCH & NHỊP SỐNG', s:'Làm gì hôm nay để nhà mình khác đi?',
    essence:'Thói quen, nghi lễ, vai giữ và những cú hích đủ lớn để cả nhà bật lên.',
    items:[
-    {v:'chin-vai',    t:'Chín vai giữ trong nhà',      h:'Ai giữ gì, ai đang bị bỏ ra ngoài',  ic:'users', star:1},
-    {v:'thoi-quen',   t:'Thói quen & nghi lễ',         h:'Bốn nghi lễ giữ nhịp cả năm',        ic:'ritual'},
-    {v:'cu-hich',     t:'Cú hích lớn',                 h:'Chiến dịch tạo bước nhảy, không bước đi', ic:'lightning'},
-    {v:'bang-so',     t:'Bảng số gia đình',            h:'Bảy chỉ số đầu ra của mô hình',      ic:'chart'},
-    {v:'phan-thuong', t:'Ghi nhận · Cấp độ · Quà tặng',h:'10 cấp · huy hiệu · đổi điểm lấy quà',ic:'crown', star:1},
-    {v:'kho-qua',     t:'Kho 1.000 tài liệu quà tặng', h:'Mắc ở đâu, mở đúng tài liệu ở đó',   ic:'book'},
+    {v:'chin-vai',    t:'Chín vai giữ trong nhà',      h:'Ai giữ gì, ai đang bị bỏ ra ngoài',  ic:'users', star:1, perm:'kh_gia_dinh'},
+    {v:'thoi-quen',   t:'Thói quen & nghi lễ',         h:'Bốn nghi lễ giữ nhịp cả năm',        ic:'ritual', perm:'kh_gia_dinh'},
+    {v:'cu-hich',     t:'Cú hích lớn',                 h:'Chiến dịch tạo bước nhảy, không bước đi', ic:'lightning', perm:'kh_gia_dinh'},
+    {v:'bang-so',     t:'Bảng số gia đình',            h:'Bảy chỉ số đầu ra của mô hình',      ic:'chart', perm:'kh_gia_dinh'},
+    {v:'phan-thuong', t:'Ghi nhận · Cấp độ · Quà tặng',h:'10 cấp · huy hiệu · đổi điểm lấy quà',ic:'crown', star:1, perm:'kh_hanh_trinh'},
+    {v:'kho-qua',     t:'Kho 1.000 tài liệu quà tặng', h:'Mắc ở đâu, mở đúng tài liệu ở đó',   ic:'book', perm:'kh_qua_tang'},
     {v:'vinh-danh',   t:'Vinh danh & kỳ tích năm',     h:'Chuyện tốt trong nhà phải được kể',  ic:'crown'},
     {v:'ranh-gioi',   t:'Sáu ranh giới',               h:'Những điều không bao giờ được làm',  ic:'shield'},
-    {v:'chuan-nhat',  t:'Chuẩn vận hành',              h:'Kaizen · Monozukuri · Omotenashi · Shokunin',ic:'target'}
+    {v:'chuan-nhat',  t:'Chuẩn vận hành',              h:'Kaizen · Monozukuri · Omotenashi · Shokunin',ic:'target', perm:'pro_consult'}
    ]},
 
   {id:'g5',no:'05',ic:'orbit',c:'#10B981',
@@ -201,7 +254,7 @@ G.NAV = [
     {v:'referral',    t:'Phiếu chỉ dẫn referral',      h:'5 chân dung · 12 dấu hiệu · PAIN GOAL GAP', ic:'share', perm:'pro_consult', star:1},
     {v:'chan-dung-kh',t:'Sáu chân dung khách hàng',    h:'Đọc đúng nhà để gửi đúng lộ trình',  ic:'users', perm:'pro_consult'},
     {v:'chuyen-doi',  t:'Chín cổng chuyển đổi',         h:'Người lạ → đại sứ → cộng tác → đối tác',ic:'compass',perm:'pro_consult', star:1},
-    {v:'hoa-hong',    t:'Cơ chế tài chính đại sứ',     h:'4 cấp · trần hoa hồng 10%',          ic:'chart'},
+    {v:'hoa-hong',    t:'Cơ chế tài chính đại sứ',     h:'4 cấp · trần hoa hồng 10%',          ic:'chart', perm:'ctv_hoa_hong'},
     {v:'su-kien',     t:'Sự kiện & Lửa trại',          h:'Nơi cả hệ sinh thái gặp nhau',       ic:'calendar'},
     {v:'ket-noi',     t:'Kết nối hệ sinh thái',        h:'Đồng bộ · Facebook · Telegram',      ic:'orbit'},
     {v:'coach-deck',  t:'Buồng lái Coach',             h:'Gia đình nào cần chạm trước hôm nay',ic:'flame',  perm:'pro_coach'},

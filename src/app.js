@@ -58,10 +58,58 @@ G.tierOf = function(id){
 G.bandColor = function(b){
   return ({XANH:'#10B981', VANG:'#F59E0B', CAM:'#FF7A45', DO:'#F87171'})[b] || '#94A3B8';
 };
-G.can = function(perm){
-  if(!G.S.roleObj) return false;
+/* ══════════ PHÂN QUYỀN ══════════
+   Hai lớp, theo đúng thứ tự:
+     1. Bảng phân quyền theo vai — thứ Super Admin và Admin sửa được
+     2. Bậc của vai — nền mặc định khi bảng không nói gì
+   Lớp 1 đi trước nên "cấm" luôn thắng, kể cả với vai bậc cao. */
+var KEY_PQ = 'gita365_phanquyen';
+
+G.PHANQUYEN = (function(){
+  var g = {};
+  Object.keys(G.PHANQUYEN_GOC || {}).forEach(function(k){
+    g[k] = {cho:(G.PHANQUYEN_GOC[k].cho||[]).slice(), cam:(G.PHANQUYEN_GOC[k].cam||[]).slice()};
+  });
+  try{
+    var d = JSON.parse(localStorage.getItem(KEY_PQ) || 'null');
+    if(d && typeof d === 'object'){
+      Object.keys(d).forEach(function(k){
+        if(!G.roleById(k)) return;                       /* vai lạ thì bỏ */
+        var cho = (d[k].cho||[]).filter(function(x){ return G.PERM[x] !== undefined; });
+        var cam = (d[k].cam||[]).filter(function(x){ return G.PERM[x] !== undefined; });
+        g[k] = {cho:cho, cam:cam};
+      });
+    }
+  }catch(e){}
+  return g;
+})();
+
+G.luuPhanQuyen = function(){
+  try{ localStorage.setItem(KEY_PQ, JSON.stringify(G.PHANQUYEN)); }catch(e){}
+  if(G.danhDau) G.danhDau('phanquyen','bang');
+};
+
+/* Vai này có quyền kia không — dùng được cho cả vai đang đăng nhập lẫn vai khác. */
+G.vaiCo = function(vai, perm){
+  if(!vai) return false;
+  var r = (typeof vai === 'string') ? G.roleById(vai) : vai;
+  if(!r) return false;
+  var ov = G.PHANQUYEN[r.id];
+  if(ov){
+    if(ov.cam.indexOf(perm) >= 0) return false;
+    if(ov.cho.indexOf(perm) >= 0) return true;
+  }
   var need = G.PERM[perm];
-  return need !== undefined && G.S.roleObj.lv <= need;
+  return need !== undefined && r.lv <= need;
+};
+
+G.can = function(perm){ return G.vaiCo(G.S.roleObj, perm); };
+
+/* Đếm để so hai vai với nhau — bảng điều khiển và màn "Tôi" dùng. */
+G.demQuyen = function(vai){
+  var n = 0, r = (typeof vai === 'string') ? G.roleById(vai) : vai;
+  Object.keys(G.PERM).forEach(function(k){ if(G.vaiCo(r,k)) n++; });
+  return n;
 };
 G.myPortal = function(){ return G.S.roleObj ? G.S.roleObj.portal : 'ph'; };
 var NHA_TRONG = {id:'—',nha:'Chưa mở hồ sơ',hv:'—',lop:'—',ph:'—',tier:1,ngay:0,
@@ -154,11 +202,19 @@ function banDoSVG(){
 
 function tamNhinBanDo(){
   var C = G.CULTURE, TN = C.tamNhin, SM = C.suMenh;
+  var en = G.LANG==='en' && C.EN && C.EN.tamNhin;
   return '<div class="tn-khoi">'+
+
+    /* Bức tranh nhà mình — thứ người ta nhìn thấy trước khi đọc một chữ nào */
+    '<figure class="tn-anh">'+
+      (G.anhGiaDinh ? G.anhGiaDinh() : '')+
+      '<figcaption class="tn-anh-cap">'+h(G.L('gateArtCaption'))+'</figcaption>'+
+    '</figure>'+
+
     '<div class="tn-nhan">'+ic('compass','w-4 h-4')+'<span>'+h(G.L('gateVisionEyebrow'))+'</span></div>'+
     '<h3 class="tn-tieu">'+h(G.L('gateVisionTitle'))+'</h3>'+
-    '<p class="tn-lon">'+h(G.LANG==='en' && C.EN && C.EN.tamNhin ? C.EN.tamNhin.big : TN.big)+'</p>'+
-    '<p class="tn-nho">'+h(G.LANG==='en' && C.EN && C.EN.tamNhin ? C.EN.tamNhin.sub : TN.sub)+'</p>'+
+    '<p class="tn-lon">'+h(en ? C.EN.tamNhin.big : TN.big)+'</p>'+
+    '<p class="tn-nho">'+h(en ? C.EN.tamNhin.sub : TN.sub)+'</p>'+
 
     '<div class="tn-bando">'+
       '<div class="tn-bd-nhan">'+h(G.L('gateMapTitle'))+'</div>'+
@@ -210,6 +266,7 @@ function gate(){
        '<input id="inP" type="password" placeholder="'+h(G.L('pw'))+'" autocomplete="current-password" '+
        'style="width:100%;background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:13px;padding:11px 15px;font-size:13.5px;outline:none">'+
        '<button class="btn pri blk mt" data-act="do-login">'+ic('arrow')+h(G.L('login'))+'</button>'+
+       '<button class="btn ghost blk mt" data-act="mo-dang-ky">'+ic('plus')+h(G.L('signUp'))+'</button>'+
        '<button class="btn ghost blk mt" data-act="quen-mk" style="font-size:12.5px">'+h(G.L('forgot'))+'</button>'+
        '<p class="tiny muted mt center">'+h(G.L('auditorsNote'))+'</p>'+
      '</div></div></div></div>';
@@ -281,26 +338,50 @@ function groupOf(v){
 function visible(it){ return !it.perm || G.can(it.perm); }
 
 function leftNav(){
-  return '<div class="scroll"><div class="nav-eyebrow">'+h(G.L('fiveGroups'))+'</div>' +
+  var r = G.S.roleObj || {};
+  var tongMo = 0, tongKhoa = 0;
+  G.NAV.forEach(function(g){ g.items.forEach(function(it){ visible(it) ? tongMo++ : tongKhoa++; }); });
+
+  /* Dải phạm vi — nhìn một cái là biết đang đăng nhập bằng vai nào và
+     vai đó mở được bao nhiêu màn. Trước đây mọi vai trông như nhau. */
+  var dai = '<div class="pv-dai" style="--pv:'+(r.c||'#F5B942')+'">'+
+    '<div class="pv-vai">'+ic('shield','w-4 h-4')+'<b>'+h(r.n||'—')+'</b>'+
+      '<span class="pv-bac">bậc '+h(r.lv||'—')+'</span></div>'+
+    '<div class="pv-so"><b>'+tongMo+'</b> màn hình mở'+
+      (tongKhoa? ' · <span class="pv-khoa">'+tongKhoa+' màn ngoài phạm vi</span>' : ' · toàn quyền')+'</div>'+
+    '</div>';
+
+  return '<div class="scroll">'+ dai +
+    '<div class="nav-eyebrow">'+h(G.L('fiveGroups'))+'</div>' +
     G.NAV.map(function(g){
-      var items = g.items.filter(visible);
+      var mo   = g.items.filter(visible);
+      var khoa = g.items.filter(function(it){ return !visible(it); });
+      if(!mo.length) return '';                 /* nhóm không mở được mục nào thì không hiện */
       var open = G.S.open.indexOf(g.id)>=0;
+      function nut(it, duoc){
+        var on = it.v===G.S.view;
+        return '<button class="nav-i'+(on?' on':'')+(duoc?'':' lock')+'" data-v="'+h(it.v)+'"'+(duoc?'':' disabled')+'>'+
+          ic(duoc?it.ic:'lock')+'<span class="lb">'+h(G.iname(it))+'</span>'+
+          (duoc && it.star?'<span style="color:var(--gold)">'+ic('star','w-3 h-3')+'</span>':'')+'</button>';
+      }
       return '<div class="grp'+(open?' open':'')+'">'+
         '<button class="grp-h" data-grp="'+h(g.id)+'">'+
           '<span class="ic" style="background:'+g.c+'1f;color:'+g.c+';border-color:'+g.c+'3a">'+ic(g.ic)+'</span>'+
           '<span class="tx"><b>'+h(G.gname(g))+'</b><span>'+h(G.gsub(g))+'</span></span>'+
-          '<span class="no">'+h(g.no)+'</span>'+ic('chev','cv')+'</button>'+
+          '<span class="no">'+mo.length+'</span>'+ic('chev','cv')+'</button>'+
         '<div class="grp-b">'+
           '<p class="tiny muted" style="padding:2px 10px 9px;line-height:1.5">'+h(G.gess(g))+'</p>'+
-          g.items.map(function(it){
-            var ok = visible(it), on = it.v===G.S.view;
-            return '<button class="nav-i'+(on?' on':'')+(ok?'':' lock')+'" data-v="'+h(it.v)+'"'+(ok?'':' disabled')+'>'+
-              ic(ok?it.ic:'lock')+'<span class="lb">'+h(G.iname(it))+'</span>'+
-              (it.star?'<span style="color:var(--gold)">'+ic('star','w-3 h-3')+'</span>':'')+'</button>';
-          }).join('')+
+          mo.map(function(it){ return nut(it,true); }).join('')+
+          (khoa.length ?
+            '<details class="nav-khoa"><summary>'+ic('lock','w-3 h-3')+
+              '<span>'+khoa.length+' mục ngoài phạm vi vai này</span></summary>'+
+              khoa.map(function(it){ return nut(it,false); }).join('')+
+            '</details>' : '')+
         '</div></div>';
     }).join('') + '</div>'+
     '<div class="foot"><button class="nav-i" data-v="toi">'+ic('home')+'<span class="lb">'+h(G.L('myAccount'))+'</span></button>'+
+    (G.can('sys_manage_user') ? '<button class="nav-i" data-v="phan-quyen">'+ic('lock')+
+      '<span class="lb">Bảng phân quyền</span></button>' : '')+
     '<button class="nav-i" data-act="doi-mk-mo">'+ic('lock')+'<span class="lb">'+h(G.L('changePw'))+'</span></button>'+
     (G.API_CAP_PHEP ? '<button class="nav-i" data-act="dong-bo">'+ic('orbit')+'<span class="lb">'+h(G.L('sync'))+
       (G.DONGBO && G.DONGBO.choBaoNhieu ? ' ('+G.DONGBO.choBaoNhieu+')' : '')+'</span></button>' : '')+
@@ -769,6 +850,10 @@ function on(sel, fn){
   });
 }
 on('[data-login]', function(el){ doLogin(el.getAttribute('data-login')); });
+on('[data-pq]', function(el){
+  var p = el.getAttribute('data-pq').split('|');
+  G.doiO(p[0], p[1]);
+});
 on('[data-lang]', function(el){ G.setLang(el.getAttribute('data-lang')); });
 on('[data-v]', function(el){ G.go(el.getAttribute('data-v')); });
 on('[data-go]', function(el){ document.getElementById('cmd').classList.remove('on'); G.go(el.getAttribute('data-go')); });
@@ -857,6 +942,13 @@ on('[data-kbf]', function(el){
 });
 on('[data-act]', function(el){
   var a = el.getAttribute('data-act');
+  if(a==='pq-dat-lai') return G.datLaiPhanQuyen();
+  if(a==='mo-dang-ky') return G.moDangKy();
+  if(a==='gui-dang-ky') return G.guiDangKy();
+  if(a==='gui-otp') return G.guiOTP();
+  if(a==='xin-lai-otp') return G.xinLaiOTP();
+  if(a==='kich-hoat') return G.kichHoat();
+  if(a==='dong-modal') return U.closeModal();
   if(a==='do-login') doLogin(document.getElementById('inU').value, document.getElementById('inP').value);
   else if(a==='show-accounts') G.accountsModal();
   else if(a==='scroll-login'){ var c=document.getElementById('loginCard'); if(c) c.scrollIntoView({behavior:'smooth',block:'center'}); }
@@ -1040,7 +1132,19 @@ G.goiCanCho = function(v){
   if(GOI_RIENG[v]) return GOI_RIENG[v];
   return GOI_NGHE.indexOf(v) >= 0 ? 'nghe' : 'nen';
 };
-G.coGoi = function(g){ return !g || G.KHO.daNap.indexOf(g) >= 0; };
+/* Gói mẫu công khai đã có sẵn nội dung cho phần nền và phần T1 rút gọn.
+   Chặn ở cửa theo tên gói làm mọi màn hình đều báo "cần cấp phép" dù dữ
+   liệu đã nằm trong máy — đó là lỗi của v7.5, khiến bản dùng thử gần như
+   trống. Nay chế độ mẫu để từng màn hình tự dựng: màn nào có nội dung thì
+   hiện, màn nào thật sự thiếu sẽ tự hiện thẻ giải thích rõ vì sao.
+   Gói NGHỀ và các gói tầng 2–5 vẫn chặn ngay ở cửa, không nới. */
+var MAU_MO = ['nen', 'tang1'];
+G.coGoi = function(g){
+  if(!g) return true;
+  if(G.KHO.daNap.indexOf(g) >= 0) return true;
+  if(G.KHO.cheDoMau && MAU_MO.indexOf(g) >= 0) return true;
+  return false;
+};
 
 /* ═══════════════ CÀI ĐẶT ỨNG DỤNG (PWA) ═══════════════ */
 window.addEventListener('beforeinstallprompt', function(e){
@@ -1079,6 +1183,8 @@ window.addEventListener('hashchange', function(){
 
 /* ═══════════════ KHỞI ĐỘNG ═══════════════ */
 G.boot = function(){
+  if(G.batMaGioiThieu) G.batMaGioiThieu();
+  if(G.batLinkKichHoat) G.batLinkKichHoat();
   sparks();
   try{ var lg = localStorage.getItem('gita365.lang'); if(lg && G.UI[lg]) G.LANG = lg; }catch(e){}
   /* Trên màn hình hẹp, thanh phải mở dạng ngăn kéo — đóng sẵn để không che nội dung */
