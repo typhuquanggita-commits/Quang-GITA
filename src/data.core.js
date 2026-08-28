@@ -80,6 +80,21 @@ G.PERM = {
      Ba mức này cộng với tài chính (R01–R03) tạo ra đúng bậc thang:
      100% · 95% · 91% · 90% — xem G.TAM_NHIN bên dưới. */
   qt_trang:2, dh_toan_he:4, nghe_chung:12,
+
+  /* ══ THƯ VIỆN TÀI LIỆU ══
+     Mọi vị trí đều được gửi tài liệu lên làm giàu kho chung — đó là
+     cách kho lớn lên. Nhưng chỉ Super Admin và Admin hệ thống được
+     kiểm duyệt, và chỉ tài liệu đã duyệt mới vào kho thật. */
+  tl_gui:15,       /* gửi tài liệu lên — tất cả các vị trí */
+  tl_xem_het:4,    /* xem toàn bộ tài liệu của mọi người */
+  tl_duyet:2,      /* duyệt · yêu cầu chỉnh sửa · từ chối */
+
+  /* ══ MINH CHỨNG NHIỆM VỤ ══
+     Phụ huynh và học viên nộp ảnh, báo cáo hoặc tệp để xác nhận đã
+     làm nhiệm vụ. Coach và giáo viên xác nhận. Khác thư viện: đây là
+     bằng chứng của một nhà, không vào kho chung. */
+  mc_gui:15,       /* nộp minh chứng — tất cả, gồm phụ huynh và học viên */
+  mc_duyet:8,      /* xác nhận minh chứng — giáo viên, Coach trở lên */
   /* Sửa chữ hiển thị trên toàn hệ thống — mặc định CHỈ Super Admin.
      Chữ trên màn hình là thứ hàng nghìn gia đình đọc, nên chỉ một
      người được đổi, và mọi lần đổi đều vào nhật ký. */
@@ -108,6 +123,11 @@ G.PERM_TEN = {
   kh_qua_tang:'Kho quà theo tầng',
   ctv_lien_ket:'Mã liên kết cộng tác viên', ctv_hoa_hong:'Hoa hồng và tài khoản nhận tiền',
   qt_trang:'Quản trị trang — tài khoản và phân quyền',
+  tl_gui:'Gửi tài liệu lên thư viện',
+  tl_xem_het:'Xem toàn bộ tài liệu đã gửi',
+  tl_duyet:'Kiểm duyệt tài liệu',
+  mc_gui:'Nộp minh chứng nhiệm vụ',
+  mc_duyet:'Xác nhận minh chứng',
   sua_noi_dung:'Sửa nội dung hiển thị',
   dh_toan_he:'Điều hành toàn hệ và nhật ký',
   nghe_chung:'Kho nghề và công cụ dẫn dắt',
@@ -116,10 +136,10 @@ G.PERM_TEN = {
 
 /* Nhóm quyền — để bảng điều khiển xếp cột cho dễ đọc. */
 G.PERM_NHOM = [
-  {id:'sys', t:'HỆ THỐNG',   c:'#2166CE', ds:['sys_config','sys_delete_user','sys_restore','sys_manage_user','sys_audit','sys_fraud','qt_trang','sua_noi_dung']},
+  {id:'sys', t:'HỆ THỐNG',   c:'#2166CE', ds:['sys_config','sys_delete_user','sys_restore','sys_manage_user','sys_audit','sys_fraud','qt_trang','sua_noi_dung','tl_duyet','tl_xem_het']},
   {id:'fin', t:'TÀI CHÍNH',  c:'#0B7350', ds:['fin_view','fin_payout','fin_payroll','fin_create_order']},
-  {id:'pro', t:'CHUYÊN MÔN', c:'#5140B4', ds:['pro_approve','pro_report','pro_override','pro_assign','pro_coach','pro_assess','pro_view_all','pro_consult','dh_toan_he','nghe_chung']},
-  {id:'kh',  t:'KHÁCH HÀNG', c:'#0B6675', ds:['usr_self_data','usr_do_test','usr_referral','kh_gia_dinh','kh_hanh_trinh','kh_qua_tang']},
+  {id:'pro', t:'CHUYÊN MÔN', c:'#5140B4', ds:['pro_approve','pro_report','pro_override','pro_assign','pro_coach','pro_assess','pro_view_all','pro_consult','dh_toan_he','nghe_chung','mc_duyet']},
+  {id:'kh',  t:'KHÁCH HÀNG', c:'#0B6675', ds:['usr_self_data','usr_do_test','usr_referral','kh_gia_dinh','kh_hanh_trinh','kh_qua_tang','tl_gui','mc_gui']},
   {id:'ctv', t:'CỘNG TÁC',   c:'#C2151C', ds:['ctv_lien_ket','ctv_hoa_hong']},
   {id:'out', t:'XUẤT RA NGOÀI', c:'#E4232B', ds:['xuat_pdf','xuat_sheet']}
 ];
@@ -166,13 +186,13 @@ G.TANG_HIENTHI = [
    với số đếm thật, lệch quá biên là dừng phát hành. */
 G.TAM_NHIN = [
   {vai:['R01','R02'],                     pt:100, ghi:'Toàn bộ, gồm thư mục Quản trị trang'},
-  {vai:['R03'],                           pt:95,  ghi:'Trừ Quản trị trang. Có tài chính.'},
-  {vai:['R04'],                           pt:91,  ghi:'Trừ Quản trị trang và Tài chính'},
-  {vai:['R05','R06','R07','R08','R09','R10','R11','R12'], pt:89,
+  {vai:['R03'],                           pt:94,  ghi:'Trừ Quản trị trang. Có tài chính.'},
+  {vai:['R04'],                           pt:89,  ghi:'Trừ Quản trị trang và Tài chính'},
+  {vai:['R05','R06','R07','R08','R09','R10','R11','R12'], pt:87,
    ghi:'Kho nghề đầy đủ, trừ điều hành toàn hệ, tài chính và quản trị'},
-  {vai:['R13'],                           pt:31,  ghi:'Nhà mình và hành trình của con'},
-  {vai:['R14'],                           pt:24,  ghi:'Hành trình của con'},
-  {vai:['R15'],                           pt:17,  ghi:'Phần giới thiệu và hoa hồng'}
+  {vai:['R13'],                           pt:33,  ghi:'Nhà mình, hành trình của con, gửi tài liệu và minh chứng'},
+  {vai:['R14'],                           pt:25,  ghi:'Hành trình của con, gửi tài liệu và minh chứng'},
+  {vai:['R15'],                           pt:19,  ghi:'Phần giới thiệu, hoa hồng, gửi tài liệu'}
 ];
 
 /* Sáu chân dung người dùng — lời mời bước vào, hiển thị ở Cổng vào */
@@ -273,6 +293,8 @@ G.NAV = [
    t:'KHO BÁU VẬT', s:'Cần bí kíp nào cho đúng tình huống này?',
    essence:'1.000 kịch bản · 220 phác đồ · 25 mô thức · toàn văn sách gốc — mở khoá theo tiến trình.',
    items:[
+    {v:'thu-vien',    t:'Thư viện tài liệu',           h:'Gửi tài liệu lên · kho lớn lên từ đây', ic:'book', capMo:'chung', star:1},
+    {v:'minh-chung',  t:'Minh chứng nhiệm vụ',         h:'Nộp ảnh, báo cáo xác nhận đã làm',   ic:'check', capMo:'chung', star:1},
     {v:'kho',         t:'Kho báu vật',                 h:'Toàn cảnh những gì anh chị đang có', ic:'vault', star:1, perm:'nghe_chung', capMo:'nghe'},
     {v:'phac-do',     t:'220 phác đồ × 5 tầng',        h:'Vấn đề nào cũng có đường đi',        ic:'book', perm:'nghe_chung', capMo:'nghe'},
     {v:'kich-ban',    t:'1.000 kịch bản chuyên môn',   h:'Tư vấn và coaching, đủ cả năm tầng', ic:'ritual', perm:'nghe_chung', capMo:'nghe'},
@@ -366,6 +388,7 @@ G.NAV = [
     {v:'khoa-tai-khoan',t:'Khoá · mở lại · xoá',       h:'Vòng đời một tài khoản, có lý do',    ic:'lock',   perm:'qt_trang', capMo:'quantri'},
     {v:'nguoi-dung',   t:'Danh bạ người dùng',         h:'Ai đang ở vị trí nào, hoạt động ra sao',ic:'users',perm:'qt_trang', capMo:'quantri'},
     {v:'sua-hien-thi', t:'Sửa nội dung hiển thị',      h:'Chữ nào chưa hợp lý thì sửa ngay',   ic:'book',   perm:'sua_noi_dung', capMo:'quantri', star:1},
+    {v:'duyet-tai-lieu',t:'Kiểm duyệt tài liệu',        h:'Xem · chấm chuẩn hoá · duyệt hoặc trả lại',ic:'shield', perm:'tl_duyet', capMo:'quantri', star:1},
     {v:'nhat-ky-ht',  t:'Nhật ký hệ thống',            h:'Mọi thao tác đều để lại dấu vết',    ic:'book', perm:'dh_toan_he', capMo:'dieuhanh'}
    ]}
 ];

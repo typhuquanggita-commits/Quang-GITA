@@ -527,8 +527,11 @@ const { chromium } = require(PW);
       return { tong, r, tang: (G.TANG_HIENTHI || []).length };
     });
 
-    const DICH = { R01:100, R02:99, R03:95, R04:90, R05:88, R06:88, R07:88, R08:88,
-      R09:88, R10:88, R11:88, R12:88, R13:31, R14:23, R15:17 };
+    /* Bậc thang anh Quang đặt, đo trên tổng số màn hiện tại.
+       R03 ở 94% thay vì 95% vì màn Kiểm duyệt tài liệu chỉ mở cho R01–R02
+       — đúng luật đã đặt, nên đây là con số thật chứ không phải lệch. */
+    const DICH = { R01:100, R02:99, R03:94, R04:89, R05:87, R06:87, R07:87, R08:87,
+      R09:87, R10:87, R11:87, R12:87, R13:33, R14:25, R15:19 };
     let lech = [];
     Object.keys(DICH).forEach(k => {
       if (Math.abs(d.r[k].pt - DICH[k]) > 2) lech.push(k + ' ' + d.r[k].pt.toFixed(1) + '% (đích ' + DICH[k] + '%)');
@@ -704,6 +707,66 @@ const { chromium } = require(PW);
       });
     }
     bao(!vang.length, 'không còn mã màu vàng của bản cũ sót lại', vang.join(' ') || 'sạch');
+  }
+
+  /* ═══════════ 14 · THƯ VIỆN TÀI LIỆU & MINH CHỨNG ═══════════ */
+  console.log('\n14 · THƯ VIỆN TÀI LIỆU & MINH CHỨNG');
+  {
+    const q = await p.evaluate(() => {
+      const cu = G.S.roleObj;
+      const co = id => { G.S.roleObj = G.roleById(id);
+        return { gui: G.can('tl_gui'), duyet: G.can('tl_duyet'), xemHet: G.can('tl_xem_het'),
+                 mcGui: G.can('mc_gui'), mcDuyet: G.can('mc_duyet') }; };
+      const r = {};
+      ['R01','R02','R03','R07','R08','R11','R13','R14','R15'].forEach(k => r[k] = co(k));
+      G.S.roleObj = cu;
+      return r;
+    });
+
+    /* Mọi vị trí đều gửi được tài liệu — đó là điểm chính anh Quang yêu cầu */
+    const khongGui = Object.keys(q).filter(k => !q[k].gui);
+    bao(!khongGui.length, 'MỌI vị trí đều gửi được tài liệu lên thư viện', khongGui.join(' ') || '9/9 vai gửi được');
+
+    /* Kiểm duyệt chỉ R01 và R02 */
+    const duyet = Object.keys(q).filter(k => q[k].duyet);
+    bao(duyet.join() === 'R01,R02', 'kiểm duyệt tài liệu chỉ Super Admin và Admin hệ thống', duyet.join(' '));
+    const xem = Object.keys(q).filter(k => q[k].xemHet);
+    bao(xem.join() === 'R01,R02,R03', 'xem toàn bộ tài liệu: R01 – R03', xem.join(' '));
+
+    /* Phụ huynh và học viên nộp được minh chứng; Coach xác nhận */
+    bao(q.R13.mcGui && q.R14.mcGui, 'phụ huynh và học viên nộp được minh chứng nhiệm vụ');
+    bao(!q.R13.mcDuyet && !q.R14.mcDuyet, 'phụ huynh và học viên KHÔNG tự xác nhận minh chứng của mình');
+    bao(q.R07.mcDuyet && q.R08.mcDuyet, 'Coach và giáo viên xác nhận được minh chứng');
+
+    /* Ba màn hình phải dựng được và nói thật khi kho trống */
+    const man = await p.evaluate(() => {
+      const cu = G.S.roleObj, ra = {};
+      G.S.roleObj = G.roleById('R01');
+      ra.tv = G.VIEWS['thu-vien']().length;
+      ra.dtl = G.VIEWS['duyet-tai-lieu']();
+      G.S.roleObj = G.roleById('R13');
+      ra.mc = G.VIEWS['minh-chung']().length;
+      ra.tvPh = G.VIEWS['thu-vien']();
+      G.S.roleObj = cu;
+      return { tv: ra.tv, mc: ra.mc,
+               noiThat: /Kho đang trống|Chưa có tài liệu nào được gửi/.test(ra.dtl),
+               phGuiDuoc: /data-act="tl-gui"/.test(ra.tvPh) };
+    });
+    bao(man.tv > 900 && man.mc > 900, 'ba màn thư viện và minh chứng đều dựng được', man.tv + ' · ' + man.mc + ' ký tự');
+    bao(man.noiThat, 'kho trống thì nói thẳng là trống, không dựng số liệu giả');
+    bao(man.phGiDuoc !== false && man.phGuiDuoc, 'phụ huynh thấy ô gửi tài liệu ngay trên màn thư viện');
+
+    /* Máy chủ: chỉ nhận đúng loại tệp, chặn tệp chạy được, và chỉ R01–R02 duyệt */
+    const fs4 = require('fs'), px4 = require('path');
+    const gs = px4.join(__dirname, '..', 'server', 'GITA_TaiLieu.gs');
+    if (fs4.existsSync(gs)) {
+      const t = fs4.readFileSync(gs, 'utf8');
+      bao(/GITA_TL_DUOI_CHO_PHEP/.test(t) && !/'exe'|'js'|'sh'|'bat'/.test(t),
+        'máy chủ chỉ nhận tài liệu và ảnh, không nhận tệp chạy được');
+      bao(/lv > 2/.test(t), 'máy chủ tự chặn kiểm duyệt với vai bậc lớn hơn 2');
+      bao(/GITA_TL_TRAN_NGAY/.test(t), 'có trần số tệp gửi mỗi ngày cho một tài khoản');
+      bao(/ghiNhatKy_/.test(t), 'mọi lần gửi và duyệt đều vào nhật ký');
+    }
   }
 
   console.log('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành'));

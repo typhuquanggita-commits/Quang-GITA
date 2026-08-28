@@ -772,3 +772,19 @@ select.inp option{background:var(--bg-1);color:var(--ink)}
   color:var(--ink);margin:0;text-wrap:pretty;
   padding-left:15px;border-left:3px solid var(--gita)}
 @media(max-width:600px){ .tn-tam-nhin{font-size:17px;padding-left:12px} }
+
+/* ═══════════ THƯ VIỆN & MINH CHỨNG ═══════════ */
+.tl-the{padding:16px 18px;border-radius:var(--r);border:1px solid var(--line);
+  background:var(--surface);margin-bottom:12px}
+.tl-the-h{display:flex;gap:12px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}
+.tl-the-h b{font-size:14.5px;line-height:1.35}
+.tl-chuan-o{margin-top:10px;padding:10px 12px;border-radius:var(--r-sm);background:var(--phu-1);
+  border:1px solid var(--line)}
+.tl-ghi{margin-top:10px;display:flex;flex-direction:column;gap:6px}
+.tl-ghi-d{padding:8px 11px;border-radius:var(--r-sm);background:var(--gita-mo-1);
+  border-left:2px solid var(--gita);font-size:12px;line-height:1.55;color:var(--ink-2)}
+input[type=file].inp{padding:9px 12px;font-size:12.5px;cursor:pointer}
+input[type=file].inp::file-selector-button{margin-right:11px;padding:6px 13px;border-radius:9px;
+  border:1px solid var(--gita-vien-1);background:var(--gita-mo-2);color:var(--gita-ink);
+  font:inherit;font-size:12px;font-weight:700;cursor:pointer}
+textarea.inp{resize:vertical;min-height:70px;line-height:1.6}

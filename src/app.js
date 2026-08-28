@@ -988,6 +988,8 @@ on('[data-act]', function(el){
   if(a==='doi-nen') return G.doiNen();
   if(a==='pq-dat-lai') return G.datLaiPhanQuyen();
   if(a==='ct-cap') return G.capTaiKhoan();
+  if(a==='tl-gui') return G.guiTaiLieu();
+  if(a==='mc-gui') return G.guiMinhChung();
   if(a==='kt-lam') return G.lamViecTaiKhoan();
   if(a==='kt-xoa-that') return G.xoaTaiKhoanThat(el);
   if(a==='mo-dang-ky') return G.moDangKy();

@@ -78,7 +78,7 @@ function doPost(e) {
     if (y.fn === 'datLaiMatKhau') return ra(gitaDatLaiMatKhau_(y));
     if (y.fn === 'kiemBanMoi')    return ra(gitaKiemBanMoi_(y));
 
-    var VIEC = ['capKhoa', 'xuatSheet', 'dongBo', 'doiMatKhau'];
+    var VIEC = ['capKhoa', 'xuatSheet', 'dongBo', 'doiMatKhau', 'napTaiLieu', 'duyetTaiLieu'];
     if (VIEC.indexOf(y.fn) < 0) return ra({ ok: false, error: 'Yêu cầu không hợp lệ.' });
 
     // 1. Xác thực phiên — dùng đúng lớp bảo mật sẵn có của hệ thống
@@ -90,6 +90,8 @@ function doPost(e) {
     if (y.fn === 'xuatSheet')   return ra(gitaXuatSheet_(y, hoSo));
     if (y.fn === 'dongBo')      return ra(gitaDongBo_(y, hoSo));
     if (y.fn === 'doiMatKhau')  return ra(gitaDoiMatKhau_(y, hoSo));
+    if (y.fn === 'napTaiLieu')  return ra(gitaNapTaiLieu_(y, hoSo));
+    if (y.fn === 'duyetTaiLieu')return ra(gitaDuyetTaiLieu_(y, hoSo));
 
     // 2. Chặn rút khoá hàng loạt
     var soLan = gitaDemXinKhoa_(hoSo.u);
