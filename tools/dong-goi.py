@@ -65,6 +65,6 @@ html = html.replace('<script>\nG.boot();',
   'G.coGoi = function(){ return true; };\n'
   'G.boot();')
 
-out = 'GITA365_v72_GIOI_THIEU.html'
+out = 'GITA365_v75_GIOI_THIEU.html'
 open(out, 'w', encoding='utf-8').write(html)
 print('%s · %d KB' % (out, os.path.getsize(out) // 1024))
