@@ -13,7 +13,7 @@ G.CONSENT = false;
 
 /* Màn hình mang tài sản chuyên môn — được canh chặt hơn */
 var CANH = ['phac-do','kich-ban','mo-thuc','sach','tu-duy','ngon-tu','chan-dung-tc',
-            'kiem-duyet','nguoi-dung','tang-truong','ra-soat','chuan-1000','bo-test','tinh-huong'];
+            'kiem-duyet','nguoi-dung','tang-truong','ra-soat','chuan-1000','bo-test','tinh-huong','ma-tran','cay-tien','chan-dung-kh'];
 G.isCanh = function(v){ return CANH.indexOf(v) >= 0; };
 
 function ghi(loai, chiTiet, mucdo){

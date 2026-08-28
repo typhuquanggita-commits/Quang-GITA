@@ -10,7 +10,7 @@ window.G = G;
 
 G.META = {
   name: 'GITA 365',
-  version: '7.2',
+  version: '7.3',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -161,6 +161,7 @@ G.NAV = [
     {v:'kho',         t:'Kho báu vật',                 h:'Toàn cảnh những gì anh chị đang có', ic:'vault', star:1},
     {v:'phac-do',     t:'220 phác đồ × 5 tầng',        h:'Vấn đề nào cũng có đường đi',        ic:'book',  perm:'pro_coach'},
     {v:'kich-ban',    t:'1.000 kịch bản chuyên môn',   h:'Tư vấn và coaching, đủ cả năm tầng', ic:'ritual',perm:'pro_consult'},
+    {v:'ma-tran',     t:'Ma trận 220 vấn đề × 5 tầng', h:'11 nhóm · 8 cột sâu mỗi tầng',       ic:'map', star:1},
     {v:'tinh-huong',  t:'250 tình huống thực chiến',   h:'Mã Key · thử thách 7 ngày · KPI',    ic:'target',perm:'pro_consult'},
     {v:'mo-thuc',     t:'25 mô thức huấn luyện',       h:'Bộ công cụ gốc của người sáng lập',  ic:'brain', perm:'pro_coach'},
     {v:'tu-duy',      t:'Hệ tư duy mới',               h:'14 bài học đổi cách nhìn trong nhà', ic:'lightning'},
@@ -191,6 +192,8 @@ G.NAV = [
    items:[
     {v:'ve-tinh',     t:'Vệ tinh của tôi',             h:'Những người tuyệt vời quanh mình',   ic:'orbit', star:1},
     {v:'dai-su',      t:'Đại sứ GITA 365',             h:'4 cấp · 20 nhiệm vụ · 13 quy tắc',   ic:'share'},
+    {v:'referral',    t:'Phiếu chỉ dẫn referral',      h:'5 chân dung · 12 dấu hiệu · PAIN GOAL GAP', ic:'share', perm:'pro_consult', star:1},
+    {v:'chan-dung-kh',t:'Sáu chân dung khách hàng',    h:'Đọc đúng nhà để gửi đúng lộ trình',  ic:'users', perm:'pro_consult'},
     {v:'hoa-hong',    t:'Cơ chế tài chính đại sứ',     h:'4 cấp · trần hoa hồng 10%',          ic:'chart'},
     {v:'su-kien',     t:'Sự kiện & Lửa trại',          h:'Nơi cả hệ sinh thái gặp nhau',       ic:'calendar'},
     {v:'ket-noi',     t:'Kết nối hệ sinh thái',        h:'Đồng bộ · Facebook · Telegram',      ic:'orbit'},
@@ -208,6 +211,10 @@ G.NAV = [
     {v:'thanh-tra',   t:'Thanh tra & cảnh báo',        h:'6 chu kỳ · 10 cảnh báo có thời hạn', ic:'pulse',  perm:'pro_report'},
     {v:'ra-soat-kh',  t:'Rà soát mười hai mặt',        h:'Không bỏ sót nhu cầu của gia đình',  ic:'target', perm:'pro_coach'},
     {v:'xuat-du-lieu',t:'Xuất dữ liệu',                h:'PDF hồ sơ · CSV danh sách · phân quyền',ic:'out', perm:'pro_coach'},
+    {v:'do-luong-kh', t:'Hệ đo lường khách hàng',      h:'7 chỉ số · 6 nhịp · vòng cải tiến',  ic:'pulse',  perm:'pro_consult'},
+    {v:'hang-vip',    t:'Phân hạng VIP & VVIP',        h:'4 hạng · chuẩn phục vụ · AI chăm sóc',ic:'crown', perm:'pro_consult', star:1},
+    {v:'cay-tien',    t:'Cây tiền — chăm sóc VIP',     h:'4 việc · điểm cây tiền · 12 nhịp',   ic:'seed',   perm:'pro_consult'},
+    {v:'nhan-su-tt',  t:'Tệp nhân sự trung thành',     h:'5 bậc · 7 chỉ số · 5 luật',          ic:'users',  perm:'pro_consult'},
     {v:'tang-quyen',  t:'Tầng quyền truy cập',         h:'Ma trận 15 vai × 21 quyền',          ic:'shield', perm:'sys_manage_user'},
     {v:'vong-doi-tk', t:'Vòng đời tài khoản',          h:'KPI · khoá · mở lại · đặt lại',      ic:'pulse',  perm:'sys_manage_user'},
     {v:'hang-tai-lieu',t:'Xếp hạng tài liệu 1–100',    h:'KPI và cấp bậc mới mở tài liệu hay', ic:'crown',  perm:'pro_consult'},

@@ -185,6 +185,65 @@ const { chromium } = require(PW);
   bao(t5.soDiem === 10, 'đủ mười điểm mốc về đích', t5.soDiem + ' điểm');
   bao(t5.soTC === 100 && !t5.lechTC.length, 'đủ một trăm tiêu chí, mỗi mốc mười', t5.soTC + ' tiêu chí');
 
+  /* ── 6. Ma trận 5 tầng · chân dung khách hàng · phân hạng VIP ── */
+  /* Một thuộc tính data-* chỉ được một tệp đăng ký xử lý. Trùng tên là hai
+     hàm cùng chạy trên một cú bấm — lỗi rất khó thấy bằng mắt. */
+  {
+    const fsx = require('fs'), px = require('path');
+    const thuMuc = px.join(__dirname, '..', 'src');
+    const chu = {};
+    for (const t of fsx.readdirSync(thuMuc).filter(f => f.endsWith('.js'))) {
+      const noi = fsx.readFileSync(px.join(thuMuc, t), 'utf8');
+      for (const m of noi.matchAll(/on\('\[(data-[a-z0-9-]+)\]'/g))
+        (chu[m[1]] = chu[m[1]] || new Set()).add(t);
+    }
+    const trung = Object.keys(chu).filter(k => chu[k].size > 1);
+    bao(!trung.length, 'không thuộc tính data-* nào bị hai tệp cùng xử lý',
+      trung.length ? trung.map(k => k + ' ← ' + [...chu[k]].join(' + ')).join(' · ') : Object.keys(chu).length + ' thuộc tính, mỗi cái một chủ');
+  }
+
+  console.log('\n6 · MA TRẬN 5 TẦNG & HỆ KHÁCH HÀNG');
+  await p.evaluate(() => window.G.doLogin('superadmin@gita365.vn'));
+  await p.waitForTimeout(3000);
+  const t6 = await p.evaluate(() => {
+    const G = window.G, M = G.MATRAN || { vande: [], nhom: [] };
+    const tang = ['T1','T2','T3','T4','T5'];
+    const thieu = [];
+    M.vande.forEach(v => tang.forEach(t => {
+      const a = G['MATRAN_' + t] || [];
+      const d = a.filter(x => x.ma === v.ma)[0];
+      if (!d || !d.lo || !d.hs || !d.ph || !d.tv || !d.coach || !d.dich || !d.hoSo) thieu.push(v.ma + '/' + t);
+    }));
+    const P = G.PHANHANG || { hang: [] }, V = G.CHUAN_VIP || {}, C = G.CAYTIEN || { diemCay: { yeuTo: [] } };
+    return {
+      soVanDe: M.vande.length, soNhom: M.nhom.length,
+      soTang: tang.filter(t => (G['MATRAN_' + t] || []).length === 220).length,
+      thieu: thieu.slice(0, 6), soThieu: thieu.length,
+      chanDung: (G.CHANDUNG_KH || []).length,
+      chiSo: ((G.DOLUONG_KH || {}).chiSo || []).length,
+      hang: P.hang.map(x => x.ma).join(','),
+      thieuHang: P.hang.filter(x => !x.vao || !x.taiLieu || !x.nguoi || !x.sla || !x.ai || !x.cham).map(x => x.ma),
+      aiVip: (V.aiVip || []).length,
+      trongSo: (C.diemCay.yeuTo || []).reduce((a, y) => a + y.trong, 0),
+      nhip: (C.nhipChamSoc || []).length,
+      thieuNhip: (C.nhipChamSoc || []).filter(n => !n.vip || !n.vvip).length,
+      nhanSu: ((G.NHANSU_TT || {}).bac || []).length,
+      dauHieu: ((G.REFERRAL || {}).dauHieu || []).length
+    };
+  });
+  bao(t6.soVanDe === 220 && t6.soNhom === 11, 'ma trận đủ 220 vấn đề trong 11 nhóm', t6.soVanDe + ' vấn đề · ' + t6.soNhom + ' nhóm');
+  bao(t6.soTang === 5, 'đủ năm tầng, mỗi tầng 220 vấn đề', t6.soTang + '/5 tầng');
+  bao(!t6.soThieu, 'không ô nội dung nào bỏ trống', t6.soThieu ? t6.soThieu + ' ô thiếu: ' + t6.thieu.join(' ') : '1100 bản ghi đủ 8 cột');
+  bao(t6.chanDung === 6, 'đủ sáu chân dung khách hàng', t6.chanDung + ' chân dung');
+  bao(t6.chiSo === 7, 'đủ bảy chỉ số đo lường khách hàng', t6.chiSo + ' chỉ số');
+  bao(t6.hang === 'KH,UT,VIP,VVIP', 'đủ bốn hạng khách hàng', t6.hang);
+  bao(!t6.thieuHang.length, 'mỗi hạng đủ điều kiện vào, tài liệu, người, SLA, AI, điểm chạm', t6.thieuHang.join(' ') || 'đủ cả bốn hạng');
+  bao(t6.aiVip >= 7, 'trợ lý AI có đủ việc chăm sóc VIP', t6.aiVip + ' việc');
+  bao(t6.trongSo === 100, 'trọng số điểm cây tiền cộng đủ 100%', t6.trongSo + '%');
+  bao(t6.nhip === 12 && !t6.thieuNhip, 'mười hai nhịp chăm sóc đủ cả cột VIP và VVIP', t6.nhip + ' nhịp');
+  bao(t6.nhanSu === 5, 'đủ năm bậc nhân sự trung thành', t6.nhanSu + ' bậc');
+  bao(t6.dauHieu === 12, 'đủ mười hai dấu hiệu nhận biết referral', t6.dauHieu + ' dấu hiệu');
+
   console.log('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành'));
   await b.close();
   process.exit(loi ? 1 : 0);

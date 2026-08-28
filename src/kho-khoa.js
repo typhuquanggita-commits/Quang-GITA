@@ -23,7 +23,7 @@ var G = window.G || {}; window.G = G;
 /* Địa chỉ máy chủ cấp phép. Để trống thì ứng dụng chạy ở chế độ mẫu. */
 G.API_CAP_PHEP = G.API_CAP_PHEP || '';
 
-G.KHO = { daNap: [], cheDoMau: false, hanKhoa: null };
+G.KHO = { daNap: [], dangNap: [], cheDoMau: false, hanKhoa: null };
 
 /* Mọi thuộc tính do kho cấp phép nạp vào. Đổi vai là xoá sạch rồi nạp lại
    theo đúng phạm vi của vai mới — không để sót nội dung của vai trước. */
@@ -36,11 +36,13 @@ G.THUOC_CAP_PHEP = [
   'AINANGCAP','LACHAN','BENCH','BENCH_AI','KICHBAN',
   'LUAT_TK','TAIKHOAN_KPI','YEUCAU_MO','HANG_TL','DAU_MAT','QUYTRINH',
   'QUA1000','QUA_DANG','KETNOI','LIENKET','VANBAN','TAICHINH_QT','THANHTRA','RASOAT_KH',
-  'BANDO_TUVAN','BANDO_COACH','XUAT','TINHHUONG','KHUNG_T5','THANHTOAN','TEST750','KPI100'
+  'BANDO_TUVAN','BANDO_COACH','XUAT','TINHHUONG','KHUNG_T5','THANHTOAN','TEST750','KPI100',
+  'MATRAN','MATRAN_T1','MATRAN_T2','MATRAN_T3','MATRAN_T4','MATRAN_T5',
+  'REFERRAL','CHANDUNG_KH','DOLUONG_KH','PHANHANG','CHUAN_VIP','NHANSU_TT','CAYTIEN'
 ];
 function donKho(){
   G.THUOC_CAP_PHEP.forEach(function(k){ try{ delete G[k]; }catch(e){ G[k] = undefined; } });
-  G.KHO.daNap = []; G.KHO.cheDoMau = false; G.KHO.hanKhoa = null;
+  G.KHO.daNap = []; G.KHO.dangNap = []; G.KHO.cheDoMau = false; G.KHO.hanKhoa = null;
 }
 G.donKho = donKho;
 
@@ -128,16 +130,35 @@ G.napKho = function () {
   return xinKhoa(ds)
     .then(function (khoa) {
       if (!khoa) return napMau();
-      var viec = ds.filter(function (t) { return khoa[t]; })
-        .map(function (t) {
-          return moGoi(t, khoa[t]).then(function (du) { gop(du); G.KHO.daNap.push(t); })
-            .catch(function (e) { console.warn('[GITA] gói ' + t + ': ' + e.message); });
-        });
-      return Promise.all(viec).then(function () {
-        if (!G.KHO.daNap.length) return napMau();
+      var co = ds.filter(function (t) { return khoa[t]; });
+      /* Gói nền và gói nghề mở trước — có chúng là dùng được ngay.
+         Gói theo tầng nặng hơn nhiều nên mở tiếp ở nền, xong gói nào
+         thì màn hình đang mở tự dựng lại. Người dùng không phải chờ. */
+      var truoc = co.filter(function (t) { return t === 'nen' || t === 'nghe'; });
+      var sau   = co.filter(function (t) { return truoc.indexOf(t) < 0; });
+
+      function mo(t) {
+        return moGoi(t, khoa[t]).then(function (du) { gop(du); G.KHO.daNap.push(t); })
+          .catch(function (e) { console.warn('[GITA] gói ' + t + ': ' + e.message); })
+          .then(function () {
+            var i = G.KHO.dangNap.indexOf(t);
+            if (i >= 0) G.KHO.dangNap.splice(i, 1);
+          });
+      }
+
+      G.KHO.dangNap = co.slice();
+      return Promise.all(truoc.map(mo)).then(function () {
+        if (!G.KHO.daNap.length && !sau.length) return napMau();
         G.KHO.cheDoMau = false;
         if (G.secLog) G.secLog('Mở kho', 'Đã mở ' + G.KHO.daNap.length + ' gói theo phạm vi cấp phép: ' +
           G.KHO.daNap.join(', '), 'Ghi nhận');
+        /* Không chờ phần này — để nó chạy ở nền */
+        sau.forEach(function (t) {
+          mo(t).then(function () {
+            if (G.render && G.S.acc && !G.coGoi(G.goiCanCho(G.S.view))) return;
+            if (G.render && G.S.acc && G.goiCanCho(G.S.view) === t) G.render();
+          });
+        });
       });
     })
     .catch(function (e) {

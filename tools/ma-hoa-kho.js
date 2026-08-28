@@ -30,7 +30,7 @@ const G = global.window.G;
 
 /* ─── Chia gói theo phạm vi cấp phép ─── */
 const NEN = ['VANHANH', 'CHUYENDICH', 'CHANDUNG', 'LOTRINH', 'FAMILIES', 'TEAM', 'CUHICH',
-  'NGHILE', 'SUKIEN', 'HEALTH', 'DUYET', 'AUDIT', 'TODAY', 'LEVELS', 'DIEM', 'HUYHIEU', 'KPI100',
+  'NGHILE', 'SUKIEN', 'HEALTH', 'DUYET', 'AUDIT', 'TODAY', 'LEVELS', 'DIEM', 'HUYHIEU', 'KPI100', 'MATRAN',
   'QUA', 'HOAHONG', 'DANDAT', 'BRAND', 'RASOAT', 'TAMNHIN100', 'TANG100', 'WOW',
   'NHATBAN', 'CHIPHI', 'NGONTU_RANH', 'DAISU', 'BAIHOC', 'QUA1000', 'QUA_DANG', 'KETNOI', 'LIENKET'];
 
@@ -40,7 +40,8 @@ const NGHE = ['MOTHUC', 'SACH', 'BANDO_A3', 'POSTER', 'SODO', 'PHACDO',
   'LACHAN', 'BENCH', 'BENCH_AI',
   'LUAT_TK', 'TAIKHOAN_KPI', 'YEUCAU_MO', 'HANG_TL', 'DAU_MAT', 'QUYTRINH',
   'VANBAN', 'TAICHINH_QT', 'THANHTRA', 'RASOAT_KH', 'BANDO_TUVAN', 'BANDO_COACH',
-  'XUAT', 'TINHHUONG', 'KHUNG_T5', 'THANHTOAN'];
+  'XUAT', 'TINHHUONG', 'KHUNG_T5', 'THANHTOAN',
+  'REFERRAL', 'CHANDUNG_KH', 'DOLUONG_KH', 'PHANHANG', 'CHUAN_VIP', 'NHANSU_TT', 'CAYTIEN'];
 
 const goi = {};
 goi.nen  = Object.fromEntries(NEN.map(k => [k, G[k]]).filter(([, v]) => v !== undefined));
@@ -48,7 +49,8 @@ goi.nghe = Object.fromEntries(NGHE.map(k => [k, G[k]]).filter(([, v]) => v !== u
 for (let t = 1; t <= 5; t++)
   goi['tang' + t] = {
     KICHBAN: (G.KICHBAN || []).filter(k => k.tang === 'T' + t),
-    TEST750: (G.TEST750 || []).filter(b => b.tang === 'T' + t)
+    TEST750: (G.TEST750 || []).filter(b => b.tang === 'T' + t),
+    ['MATRAN_T' + t]: G['MATRAN_T' + t] || []
   };
 
 /* ─── Mã hoá ─── */

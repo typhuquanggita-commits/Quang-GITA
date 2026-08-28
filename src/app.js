@@ -352,6 +352,14 @@ G.allowed = function(v){
   return !it || !it.perm || G.can(it.perm);
 };
 
+function dangMoKho(goi){
+  return U.ph({eyebrow:'ĐANG MỞ KHO', ic:'vault', t:'Đang mở gói nội dung của tầng',
+    lead:'Gói này nặng hơn phần nền nên được mở ở nền sau khi đăng nhập. Xong là màn hình tự hiện ra, không phải bấm gì thêm.'}) +
+    '<div class="card center" style="padding:36px">' + U.bar(60,'var(--gold)') +
+    '<p class="sm muted mt">Đang mở <b class="mono">' + U.h(goi) + '</b> · ' +
+    U.h(String((G.KHO.daNap||[]).length)) + ' gói đã mở xong</p></div>';
+}
+
 function render(){
   var main = document.getElementById('main');
   if(!G.VIEWS[G.S.view]) G.S.view = 'ban-do';
@@ -365,7 +373,9 @@ function render(){
   }
   var goiCan = G.goiCanCho(G.S.view);
   if(!G.coGoi(goiCan)){
-    main.innerHTML = '<div class="view">' + G.canCapPhep(goiCan) + '</div>';
+    /* Gói đang mở ở nền: nói thật là đang mở, không nói là chưa được cấp phép. */
+    var dang = G.KHO.dangNap && G.KHO.dangNap.indexOf(goiCan) >= 0;
+    main.innerHTML = '<div class="view">' + (dang ? dangMoKho(goiCan) : G.canCapPhep(goiCan)) + '</div>';
     var lK = document.getElementById('left'); if(lK) lK.innerHTML = leftNav();
     save(); return;
   }
@@ -902,7 +912,8 @@ var GOI_NGHE = ['kho','phac-do','kich-ban','mo-thuc','sach','ngon-tu','tro-ly','
   'tuvan-deck','hai-long','tai-lieu-khach','kiem-thu','chuan-1000','ai-dieu-phoi',
   'an-toan-du-lieu','hoc-tu-lon','tang-quyen','vong-doi-tk','hang-tai-lieu','dau-mat','dong-chay',
   'tinh-huong','bando-tuvan','bando-coach','van-ban','tai-chinh-qt','thanh-tra',
-  'ra-soat-kh','xuat-du-lieu','quy-trinh-tc'];
+  'ra-soat-kh','xuat-du-lieu','quy-trinh-tc',
+  'referral','chan-dung-kh','do-luong-kh','hang-vip','cay-tien','nhan-su-tt'];
 var GOI_MO = ['toi','bat-dau'];
 /* Bộ test nhận diện nằm trong gói theo tầng: khách hàng đã được cấp phép
    tầng nào thì làm được bài của tầng đó, không cần quyền nghề. */
