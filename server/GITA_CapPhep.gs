@@ -73,12 +73,22 @@ function doPost(e) {
   try {
     var y = JSON.parse((e && e.postData && e.postData.contents) || '{}');
 
-    /* ── Hai việc KHÔNG cần phiên: quên mật khẩu và đặt lại bằng mã ── */
+    /* ── Những việc KHÔNG cần phiên ──
+       Đăng nhập, đăng ký và lấy lại mật khẩu đều xảy ra TRƯỚC khi có phiên,
+       nên không thể đòi phiên ở đây. Mỗi hàm tự lo phần chặt của mình:
+       đếm số lần sai, băm mã, và không bao giờ tiết lộ email nào đã đăng ký. */
+    if (y.fn === 'dangNhap')      return ra(gitaDangNhap_(y));
+    if (y.fn === 'dangXuat')      return ra(gitaDangXuat_(y));
     if (y.fn === 'quenMatKhau')   return ra(gitaQuenMatKhau_(y));
     if (y.fn === 'datLaiMatKhau') return ra(gitaDatLaiMatKhau_(y));
     if (y.fn === 'kiemBanMoi')    return ra(gitaKiemBanMoi_(y));
+    if (y.fn === 'dangKy')        return ra(gitaDangKy_(y));
+    if (y.fn === 'guiLaiOtp')     return ra(gitaGuiLaiOtp_(y));
+    if (y.fn === 'xacThucOtp')    return ra(gitaXacThucOtp_(y));
+    if (y.fn === 'kichHoat')      return ra(gitaKichHoat_(y));
 
-    var VIEC = ['capKhoa', 'xuatSheet', 'dongBo', 'doiMatKhau', 'napTaiLieu', 'duyetTaiLieu'];
+    var VIEC = ['capKhoa', 'xuatSheet', 'dongBo', 'doiMatKhau', 'napTaiLieu', 'duyetTaiLieu',
+                'nangTang', 'moCa', 'buocCa'];
     if (VIEC.indexOf(y.fn) < 0) return ra({ ok: false, error: 'Yêu cầu không hợp lệ.' });
 
     // 1. Xác thực phiên — dùng đúng lớp bảo mật sẵn có của hệ thống
@@ -92,6 +102,7 @@ function doPost(e) {
     if (y.fn === 'doiMatKhau')  return ra(gitaDoiMatKhau_(y, hoSo));
     if (y.fn === 'napTaiLieu')  return ra(gitaNapTaiLieu_(y, hoSo));
     if (y.fn === 'duyetTaiLieu')return ra(gitaDuyetTaiLieu_(y, hoSo));
+    if (y.fn === 'nangTang')    return ra(gitaNangTang_(y, hoSo));
 
     // 2. Chặn rút khoá hàng loạt
     var soLan = gitaDemXinKhoa_(hoSo.u);

@@ -10,3 +10,12 @@ var G = window.G || {}; window.G = G;
    Để trống thì ứng dụng chạy ở CHẾ ĐỘ MẪU — xem được giao diện và phần
    giới thiệu, kho chuyên môn vẫn khoá. Xem docs/TRIEN_KHAI_WEB.md. */
 G.API_CAP_PHEP = '';
+
+/* Không phải ai cũng sửa được tệp này — bản cài trên máy Windows nằm trong
+   thư mục chương trình. Nên Super Admin còn một đường thứ hai: vào màn
+   "Nối máy chủ" trong ứng dụng, dán địa chỉ, bấm thử. Địa chỉ dán ở đó
+   được ghi vào máy này và thắng giá trị đặt trong tệp. */
+try {
+  var _dat = localStorage.getItem('gita365_may_chu');
+  if (_dat && /^https:\/\//.test(_dat)) G.API_CAP_PHEP = _dat;
+} catch (e) {}

@@ -116,7 +116,7 @@ G.VIEWS['thanh-tra'] = function(){
   }).join('') + '</div>';
 
   o += U.sec('MƯỜI CẢNH BÁO','Mỗi cảnh báo có mức, người nhận, thời hạn xử lý và việc phải làm');
-  var mm = {'ĐỎ':'#C2151C','CAM':'var(--gita-do)','VÀNG':'#C2151C','XANH':'#0B7350'};
+  var mm = {'ĐỎ':'#BE0E16','CAM':'var(--gita-do)','VÀNG':'#BE0E16','XANH':'#0B7350'};
   o += U.tbl(['Mã','Mức','Điều kiện bật','Ai nhận','Trong','Việc phải làm'], T.canhBao.map(function(c){
     return ['<span class="mono sm">'+h(c.ma)+'</span>',
       '<span class="chip" style="color:'+mm[c.muc]+';border-color:'+mm[c.muc]+'66;background:'+mm[c.muc]+'14">'+h(c.muc)+'</span>',
@@ -188,7 +188,7 @@ G.tinhHuongModal = function(id){
   var t = G.TIERS.filter(function(v){return v.code===x.tang;})[0] || G.TIERS[0];
   var b = [['MÔ TẢ TÌNH HUỐNG',x.mo,'#665E88'],['PHÂN TÍCH',x.pt,'#5140B4'],
     ['ĐIỂM MẤU CHỐT',x.chot,'var(--gita)'],['GIẢI PHÁP THEO TẦNG',x.gp,'#0B7350'],
-    ['THỬ THÁCH 7 NGÀY',x.tt,'#0B6675'],['KPI HOÀN THÀNH',x.kpi,'var(--gita-do)'],['MỤC TIÊU CẦN ĐẠT',x.dich,'#C2151C']];
+    ['THỬ THÁCH 7 NGÀY',x.tt,'#0B6675'],['KPI HOÀN THÀNH',x.kpi,'var(--gita-do)'],['MỤC TIÊU CẦN ĐẠT',x.dich,'#BE0E16']];
   U.modal('<div class="row wrap" style="gap:6px;margin-bottom:9px">'+U.chip(x.tang+' · '+G.tname(t),t.c)+
     (x.key?U.chip(x.key,'var(--gita)'):'')+U.chip(x.nhom)+'</div>'+
     '<h2 style="font-size:21px;font-weight:800;line-height:1.3;margin-bottom:14px">'+h(x.th)+'</h2>'+
@@ -348,7 +348,7 @@ G.VIEWS['xuat-du-lieu'] = function(){
 
   if(X.daBo){
     o += '<div class="card mb" style="border-color:rgba(248,113,113,.3)">'+
-      '<div class="tiny up mb" style="color:#C2151C">'+h(X.daBo.ten)+'</div>'+
+      '<div class="tiny up mb" style="color:#BE0E16">'+h(X.daBo.ten)+'</div>'+
       '<p class="sm dim" style="line-height:1.7">'+h(X.daBo.vi)+'</p></div>';
   }
   if(X.driveAdmin){
@@ -425,7 +425,7 @@ G.VIEWS['quy-trinh-tc'] = function(){
 
   o += '<div class="grid g5 mb">' + T.quyTrinhThu.buoc.map(function(b){
     return '<div class="card pad-sm"><div class="row" style="gap:8px;margin-bottom:6px">'+
-      '<span class="pill" style="background:rgba(59,130,246,.2);color:#2166CE">B'+b.b+'</span>'+
+      '<span class="pill" style="background:rgba(59,130,246,.2);color:#2A72C6">B'+b.b+'</span>'+
       U.chip(b.ai)+'</div>'+
       '<b class="sm" style="display:block;margin-bottom:6px">'+h(b.t)+'</b>'+
       '<p class="tiny muted" style="line-height:1.55;margin-bottom:7px">'+h(b.lam)+'</p>'+

@@ -87,7 +87,7 @@ G.moDangKy = function(){
   o += '<label class="dk-dy"><input id="dk_dongY" type="checkbox"> '+
     '<span class="tiny" style="line-height:1.6;color:var(--ink-2)">Tôi đồng ý để Học viện GITA lưu và dùng thông tin trên '+
     'cho việc học của gia đình tôi. GITA không thu thập tôn giáo, tình trạng sức khoẻ, thu nhập hay chuyện riêng của vợ chồng.</span></label>'+
-    '<div id="dk_loi" class="tiny mb" style="color:#C2151C;min-height:16px"></div>'+
+    '<div id="dk_loi" class="tiny mb" style="color:#BE0E16;min-height:16px"></div>'+
     '<button class="btn pri blk" data-act="gui-dang-ky">Gửi và nhận mã xác nhận</button>'+
     '<p class="tiny muted mt center">Đã có tài khoản? Đóng cửa sổ này và đăng nhập ở ô bên dưới.</p>';
   U().modal(o);
@@ -125,7 +125,7 @@ G.moNhapOTP = function(email, thongBao){
     '<label class="tiny up muted">MÃ SÁU SỐ</label>'+
     '<input id="otp_ma" inputmode="numeric" maxlength="6" placeholder="------" '+
       'class="inp blk mb mono" style="letter-spacing:.5em;text-align:center;font-size:20px">'+
-    '<div id="otp_loi" class="tiny mb" style="color:#C2151C;min-height:16px"></div>'+
+    '<div id="otp_loi" class="tiny mb" style="color:#BE0E16;min-height:16px"></div>'+
     '<button class="btn pri blk" data-act="gui-otp">Xác nhận</button>'+
     '<button class="btn ghost blk mt" data-act="xin-lai-otp" style="font-size:12.5px">Chưa nhận được thư — gửi lại mã</button>'+
     '<p class="tiny muted mt center">Sai năm lần thì mã bị huỷ và phải xin mã mới.</p>'
@@ -149,7 +149,7 @@ G.xinLaiOTP = function(){
   var email = (document.getElementById('otp_email')||{}).value || '';
   goi({ fn:'guiLaiOtp', email:email })
     .then(function(x){ if(loi){ loi.style.color = '#0B7350'; loi.textContent = x.thongBao || 'Đã gửi lại mã.'; } })
-    .catch(function(e){ if(loi){ loi.style.color = '#C2151C'; loi.textContent = e.message === 'CHUA_NOI' ? 'Bản mẫu chưa nối máy chủ.' : e.message; } });
+    .catch(function(e){ if(loi){ loi.style.color = '#BE0E16'; loi.textContent = e.message === 'CHUA_NOI' ? 'Bản mẫu chưa nối máy chủ.' : e.message; } });
 };
 
 /* ═════════ BƯỚC 4 · ĐÃ GỬI LIÊN KẾT KÍCH HOẠT ═════════ */
@@ -184,7 +184,7 @@ G.moKichHoat = function(token){
     '<p id="kh_goi" class="tiny muted" style="margin:6px 0 12px">Ít nhất mười ký tự, có chữ hoa, chữ thường, chữ số và ký tự đặc biệt.</p>'+
     '<label class="tiny up muted">NHẬP LẠI MẬT KHẨU</label>'+
     '<input id="kh_lai" type="password" autocomplete="new-password" class="inp blk mb">'+
-    '<div id="kh_loi" class="tiny mb" style="color:#C2151C;min-height:16px"></div>'+
+    '<div id="kh_loi" class="tiny mb" style="color:#BE0E16;min-height:16px"></div>'+
     '<button class="btn pri blk" data-act="kich-hoat">Hoàn tất đăng ký</button>'
   );
   var o = document.getElementById('kh_mk');

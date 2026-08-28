@@ -40,7 +40,7 @@ G.VIEWS['phuong-phap'] = function(){
         '<p class="sm" style="line-height:1.7;margin-bottom:8px"><b>'+h(x.vai)+'</b></p>'+
         '<div class="grid g2" style="gap:10px">'+
         '<div class="card pad-sm"><div class="tiny up muted mb">DÙNG ĐỂ</div><p class="tiny">'+h(x.dung)+'</p></div>'+
-        '<div class="card pad-sm" style="border-color:rgba(248,113,113,.28)"><div class="tiny up mb" style="color:#C2151C">KHÔNG DÙNG</div><p class="tiny">'+h(x.khong)+'</p></div>'+
+        '<div class="card pad-sm" style="border-color:rgba(248,113,113,.28)"><div class="tiny up mb" style="color:#BE0E16">KHÔNG DÙNG</div><p class="tiny">'+h(x.khong)+'</p></div>'+
         '</div></div>';
     }).join('');
   }
@@ -99,8 +99,8 @@ G.VIEWS['phuong-phap'] = function(){
         '<p class="tiny">'+h(b.gitaDung)+'</p></div></div>';
     }).join('');
     o += '<div class="card mt2" style="border-color:rgba(248,113,113,.3)">'+
-      '<div class="tiny up mb" style="color:#C2151C">LUẬT DÙNG SÁCH THAM KHẢO</div>'+
-      U.list(X.luatThamKhao,'#C2151C')+'</div>';
+      '<div class="tiny up mb" style="color:#BE0E16">LUẬT DÙNG SÁCH THAM KHẢO</div>'+
+      U.list(X.luatThamKhao,'#BE0E16')+'</div>';
   }
   return o;
 };
@@ -115,12 +115,12 @@ G.VIEWS['hoso-vip'] = function(){
     lead:H.cot});
 
   o += '<div class="card mb" style="border-color:rgba(248,113,113,.35);background:rgba(248,113,113,.05)">'+
-    '<div class="row mb" style="gap:8px"><span style="color:#C2151C">'+ic('shield','w-4 h-4')+'</span>'+
-    '<b style="color:#C2151C">'+h(H.ranhGioi.tieu)+'</b></div>'+
+    '<div class="row mb" style="gap:8px"><span style="color:#BE0E16">'+ic('shield','w-4 h-4')+'</span>'+
+    '<b style="color:#BE0E16">'+h(H.ranhGioi.tieu)+'</b></div>'+
     U.tbl(['KHÔNG ghi vào hồ sơ','Vì sao'], H.ranhGioi.khongGhi.map(function(x){
       return ['<b class="sm">'+h(x.muc)+'</b>','<span class="tiny">'+h(x.vi)+'</span>'];
     }))+
-    '<div class="mt">'+U.list(H.ranhGioi.luat,'#C2151C')+'</div></div>';
+    '<div class="mt">'+U.list(H.ranhGioi.luat,'#BE0E16')+'</div></div>';
 
   o += U.sec('BẢY PHẦN CỦA HỒ SƠ','Đối chiếu với mẫu hồ sơ khách hàng lớn trong sách Cây Tiền, đã lọc lại cho ngành giáo dục.');
   o += H.phan.map(function(p){
@@ -177,7 +177,7 @@ G.VIEWS['chuyen-doi'] = function(){
       '<p class="sm">'+h(x.dua)+'</p></div>'+
       '<div class="tiny up mt mb" style="color:'+x.c+'">VIỆC PHẢI LÀM</div>'+U.list(x.lam,x.c)+
       '<div class="card pad-sm mt" style="border-color:rgba(248,113,113,.3)">'+
-      '<div class="tiny up mb" style="color:#C2151C">CẤM</div><p class="tiny">'+h(x.cam)+'</p></div></div>';
+      '<div class="tiny up mb" style="color:#BE0E16">CẤM</div><p class="tiny">'+h(x.cam)+'</p></div></div>';
   }).join('');
 
   o += U.sec('BA VÒNG GIỮ CHÂN','Sách nói sự vô tâm mới đuổi khách đi, không phải chuẩn thấp.');
@@ -228,8 +228,8 @@ G.VIEWS['ai-cham'] = function(){
   o += '<div class="grid g2 mt2">'+
     '<div class="card" style="border-color:rgba(16,185,129,.3)"><div class="up mb" style="color:#0B7350">TRỢ LÝ ĐƯỢC LÀM</div>'+
     U.list(A.duocLam,'#0B7350')+'</div>'+
-    '<div class="card" style="border-color:rgba(248,113,113,.3)"><div class="up mb" style="color:#C2151C">TUYỆT ĐỐI KHÔNG</div>'+
-    U.list(A.khongDuocLam,'#C2151C')+'</div></div>';
+    '<div class="card" style="border-color:rgba(248,113,113,.3)"><div class="up mb" style="color:#BE0E16">TUYỆT ĐỐI KHÔNG</div>'+
+    U.list(A.khongDuocLam,'#BE0E16')+'</div></div>';
 
   o += U.sec('VÌ SAO CHẠY ĐƯỢC TRONG 500.000Đ/THÁNG', A.chiPhi.cot);
   o += U.tbl(['Loại việc','Chạy ở đâu','Chi phí'], A.chiPhi.tach.map(function(t){
@@ -250,17 +250,17 @@ G.VIEWS['van-tay'] = function(){
     lead:'Câu hỏi này đến từ phụ huynh gần như mỗi tuần. Đây là câu trả lời thống nhất của GITA.'});
 
   o += '<div class="card mb" style="border-color:rgba(248,113,113,.4);background:rgba(248,113,113,.06)">'+
-    '<div class="row mb" style="gap:8px"><span style="color:#C2151C">'+ic('x','w-5 h-5')+'</span>'+
-    '<b style="color:#C2151C;font-size:16px">Kết luận</b></div>'+
+    '<div class="row mb" style="gap:8px"><span style="color:#BE0E16">'+ic('x','w-5 h-5')+'</span>'+
+    '<b style="color:#BE0E16;font-size:16px">Kết luận</b></div>'+
     '<p class="sm" style="line-height:1.8"><b>'+h(V.ketLuan)+'</b></p></div>';
 
   o += U.sec('VÌ SAO','Năm lý do, xếp theo mức quan trọng.');
-  o += '<div class="card">'+U.list(V.viSao,'#C2151C')+'</div>';
+  o += '<div class="card">'+U.list(V.viSao,'#BE0E16')+'</div>';
 
   o += U.sec(V.thayVao.tieu, V.thayVao.y);
   o += U.tbl(['Mặt so sánh','Sinh trắc vân tay','Bộ test nhận diện GITA'], V.thayVao.doSanh.map(function(d){
     return ['<b class="sm">'+h(d.mat)+'</b>',
-            '<span class="tiny" style="color:#C2151C">'+h(d.vt)+'</span>',
+            '<span class="tiny" style="color:#BE0E16">'+h(d.vt)+'</span>',
             '<span class="tiny" style="color:#0B7350">'+h(d.gita)+'</span>'];
   }));
 
@@ -268,7 +268,7 @@ G.VIEWS['van-tay'] = function(){
   o += '<div class="card">'+U.list(V.neuKhachHoi.cach,'#0B6675')+'</div>';
 
   o += '<div class="card mt2" style="border-color:rgba(248,113,113,.35)">'+
-    '<div class="tiny up mb" style="color:#C2151C">LUẬT CỨNG</div>'+U.list(V.luatCung,'#C2151C')+'</div>';
+    '<div class="tiny up mb" style="color:#BE0E16">LUẬT CỨNG</div>'+U.list(V.luatCung,'#BE0E16')+'</div>';
   return o;
 };
 })();

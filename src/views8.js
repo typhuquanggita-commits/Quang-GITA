@@ -124,7 +124,7 @@ function manThuVien(T){
     'Bài này không xếp loại ai — nó chỉ nói cho cả nhà biết mình đang đứng ở đâu, để gửi đúng lộ trình và đúng tài liệu.'});
 
   o += '<div class="grid g4 mb">'+
-    U.stat({k:'Bộ bài',   v:String(T.length),   d:'năm nhóm mỗi tầng', c:'#2166CE'})+
+    U.stat({k:'Bộ bài',   v:String(T.length),   d:'năm nhóm mỗi tầng', c:'#185AB4'})+
     U.stat({k:'Câu hỏi',  v:String(soCau),      d:'mỗi câu bốn lựa chọn', c:'#5140B4'})+
     U.stat({k:'Lựa chọn', v:String(soCau*4),    d:'đã quy ước mức điểm', c:'#0B6675'})+
     U.stat({k:'Đã làm',   v:String(xong),       d:'bài trong máy này', c:'#0B7350'})+
@@ -244,7 +244,7 @@ function manKetQua(b, kq){
   o += U.sec('ĐIỂM TỪNG MIỀN', 'Nhìn miền thấp nhất trước. Đó là nơi chạm đầu tiên, không phải chỗ để trách nhau.');
   o += '<div class="card">' + b.mien.map(function(m){
     var d = kq.mien[m];
-    var mc = d===null ? 'var(--ink-4)' : d<33 ? '#dc2626' : d<58 ? '#C2151C' : d<83 ? '#d97706' : '#0B7350';
+    var mc = d===null ? 'var(--ink-4)' : d<33 ? '#dc2626' : d<58 ? '#BE0E16' : d<83 ? '#d97706' : '#0B7350';
     return '<div style="margin-bottom:13px">'+
       '<div class="row" style="justify-content:space-between;margin-bottom:5px">'+
       '<span class="sm">'+h(m)+'</span>'+
@@ -255,7 +255,7 @@ function manKetQua(b, kq){
   if(kq.canhBao && kq.canhBao.length){
     o += U.sec('CẢNH BÁO ĐÃ BẬT', 'Những mẫu này chỉ bật khi số liệu thật rơi vào ngưỡng — không bật vu vơ.');
     o += kq.canhBao.map(function(cb){
-      var sc = cb.severity==='high' ? '#dc2626' : cb.severity==='medium' ? '#C2151C' : '#d97706';
+      var sc = cb.severity==='high' ? '#dc2626' : cb.severity==='medium' ? '#BE0E16' : '#d97706';
       return '<div class="card mb" style="border-color:'+sc+'44;background:'+sc+'0a">'+
         '<div class="row mb" style="gap:8px"><span style="color:'+sc+'">'+ic('pulse','w-4 h-4')+'</span>'+
         U.chip(cb.severity==='high'?'ƯU TIÊN CAO':cb.severity==='medium'?'CẦN THEO DÕI':'GHI NHẬN', sc)+'</div>'+
@@ -322,7 +322,7 @@ G.VIEWS['kpi-100'] = function(){
     lead:K.cot});
 
   o += '<div class="grid g4 mb">'+
-    U.stat({k:'Điểm mốc đã qua', v:qua+'/10',  d:'qua khi đạt 8/10 tiêu chí', c:'#2166CE'})+
+    U.stat({k:'Điểm mốc đã qua', v:qua+'/10',  d:'qua khi đạt 8/10 tiêu chí', c:'#185AB4'})+
     U.stat({k:'Tiêu chí đã đạt', v:dat+'/100', d:'về đích tối thiểu 80', c:'#0B7350'})+
     U.stat({k:'Còn lại',         v:String(100-dat), d:'tiêu chí chưa tích', c:'#5140B4'})+
     U.stat({k:'Tình trạng',      v:qua>=10?'VỀ ĐÍCH':'ĐANG ĐI', d:qua>=10?'đủ mười điểm mốc':'còn '+(10-qua)+' điểm mốc', c:qua>=10?'#0B7350':'#0B6675'})+

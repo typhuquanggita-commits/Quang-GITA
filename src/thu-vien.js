@@ -49,7 +49,7 @@ var CHUAN = [
 
 var TRANG_THAI = {
   'cho-duyet':   {t:'Chờ duyệt',            c:'#96500A'},
-  'yeu-cau-sua': {t:'Yêu cầu chỉnh sửa',    c:'#C2151C'},
+  'yeu-cau-sua': {t:'Yêu cầu chỉnh sửa',    c:'#BE0E16'},
   'da-duyet':    {t:'Đã duyệt — vào kho',   c:'#0B7350'},
   'tu-choi':     {t:'Không nhận',           c:'#665E88'}
 };
@@ -341,7 +341,7 @@ function luu(){
 var TT = {
   'da-nop':   {t:'Đã nộp — chờ xác nhận', c:'#96500A'},
   'xac-nhan': {t:'Đã xác nhận',            c:'#0B7350'},
-  'nop-lai':  {t:'Cần nộp lại',            c:'#C2151C'}
+  'nop-lai':  {t:'Cần nộp lại',            c:'#BE0E16'}
 };
 
 function maMC(){

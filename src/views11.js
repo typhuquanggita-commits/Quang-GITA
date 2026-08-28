@@ -316,7 +316,7 @@ G.VIEWS['cap-tai-khoan'] = function(){
       '<div><label class="tiny up muted">KHU VỰC / NHÓM PHỤ TRÁCH</label>'+
         '<input id="ct_nha" class="inp blk" placeholder="Nhóm Coach miền Bắc"></div>'+
     '</div>'+
-    '<div id="ct_loi" class="tiny mt" style="color:#C2151C;min-height:16px"></div>'+
+    '<div id="ct_loi" class="tiny mt" style="color:#BE0E16;min-height:16px"></div>'+
     '<button class="btn pri mt" data-act="ct-cap">'+ic('plus','w-4 h-4')+'Sinh tài khoản và mật khẩu ban đầu</button>'+
     '</div>';
 
@@ -398,13 +398,13 @@ G.VIEWS['khoa-tai-khoan'] = function(){
     lead:'Ba việc khác nhau, hậu quả khác nhau. Khoá thì gỡ lại được; xoá thì không.'});
 
   o += '<div class="ktk-ba">'+
-    '<div class="ktk-o" style="--kc:#C2151C"><div class="ktk-h">'+ic('lock','w-4 h-4')+'<b>KHOÁ</b></div>'+
+    '<div class="ktk-o" style="--kc:#BE0E16"><div class="ktk-h">'+ic('lock','w-4 h-4')+'<b>KHOÁ</b></div>'+
       '<p class="sm">Người dùng không đăng nhập được nữa. Dữ liệu giữ nguyên, hồ sơ gia đình không mất gì. '+
       'Mở lại lúc nào cũng được.</p><div class="ktk-ai">R01 · R02 làm được</div></div>'+
     '<div class="ktk-o" style="--kc:#0B7350"><div class="ktk-h">'+ic('check','w-4 h-4')+'<b>MỞ LẠI</b></div>'+
       '<p class="sm">Trả tài khoản về hoạt động. Phải có người xem xét và ghi lý do — không tự động mở.</p>'+
       '<div class="ktk-ai">R01 · R02 làm được</div></div>'+
-    '<div class="ktk-o" style="--kc:#C2151C"><div class="ktk-h">'+ic('x','w-4 h-4')+'<b>XOÁ</b></div>'+
+    '<div class="ktk-o" style="--kc:#BE0E16"><div class="ktk-h">'+ic('x','w-4 h-4')+'<b>XOÁ</b></div>'+
       '<p class="sm">Gỡ hẳn khỏi hệ thống. <b>Không hoàn lại được.</b> Chỉ Super Admin, và phải gõ đúng '+
       'tên đăng nhập để xác nhận.</p><div class="ktk-ai">CHỈ R01</div></div>'+
     '</div>';
@@ -424,7 +424,7 @@ G.VIEWS['khoa-tai-khoan'] = function(){
           LYDO_KHOA.map(function(x){ return '<option>'+h(x)+'</option>'; }).join('')+
         '</select></div>'+
     '</div>'+
-    '<div id="kt_loi" class="tiny mt" style="color:#C2151C;min-height:16px"></div>'+
+    '<div id="kt_loi" class="tiny mt" style="color:#BE0E16;min-height:16px"></div>'+
     '<button class="btn pri mt" data-act="kt-lam">Thực hiện</button></div>';
 
   if(G.S.role !== 'R01')
@@ -445,11 +445,11 @@ G.lamViecTaiKhoan = function(){
   if(u === (G.S.acc && G.S.acc.u)){ bao('Không tự khoá hoặc xoá chính tài khoản mình đang dùng.'); return; }
 
   if(viec === 'xoa'){
-    U.modal('<h2 style="font-size:20px;font-weight:800;margin-bottom:6px;color:#C2151C">Xoá vĩnh viễn</h2>'+
+    U.modal('<h2 style="font-size:20px;font-weight:800;margin-bottom:6px;color:#BE0E16">Xoá vĩnh viễn</h2>'+
       '<p class="sm" style="line-height:1.7;color:var(--ink-2);margin-bottom:12px">Sắp xoá hẳn <b class="mono">'+h(u)+'</b>. '+
       'Việc này <b>không hoàn lại được</b>. Gõ lại đúng tên đăng nhập để xác nhận.</p>'+
       '<input id="kt_xn" class="inp blk mb" placeholder="'+h(u)+'" autocomplete="off">'+
-      '<div id="kt_xnloi" class="tiny mb" style="color:#C2151C;min-height:16px"></div>'+
+      '<div id="kt_xnloi" class="tiny mb" style="color:#BE0E16;min-height:16px"></div>'+
       '<button class="btn pri blk" data-act="kt-xoa-that" data-u="'+h(u)+'" data-l="'+h(lydo)+'">Tôi hiểu — xoá</button>');
     return;
   }
@@ -638,8 +638,14 @@ G.VIEWS['nhan-dien-loi'] = function(){
 var U = G.U, h = U.h, ic = U.ic;
 
 G.VIEWS['tai-lieu-goc'] = function(){
-  var D = G.TAILIEU_GOC;
-  if(!D || !D.length) return U.empty('Chưa mở được tài liệu gốc',
+  /* Hai nguồn, một màn hình: năm tệp Word gốc và mười tài liệu trên Drive. */
+  var D = (G.TAILIEU_GOC || []).concat(
+    (G.TAILIEU_DRIVE || []).map(function(x){
+      return {ma:x.ma, ten:x.ten, mo:x.mo, soChu:x.soChu, danY:x.danY,
+              bang:(x.bang||[]).map(function(b){ return {muc:'', cot:b.cot, hang:b.hang}; }),
+              doan:x.doan || []};
+    }));
+  if(!D.length) return U.empty('Chưa mở được tài liệu gốc',
     'Năm bộ tài liệu gốc nằm trong kho nghề. Đăng nhập bằng vai được cấp để mở.');
 
   var chon = G.S.tlgChon || D[0].ma;
@@ -678,7 +684,14 @@ G.VIEWS['tai-lieu-goc'] = function(){
     }).join('') +'</div>';
   }
 
-  o += U.sec('BẢNG DỮ LIỆU', t.bang.length + ' bảng');
+  if(t.doan && t.doan.length){
+    o += U.sec('NỘI DUNG', t.doan.length + ' đoạn — giữ nguyên văn');
+    o += '<div class="tlg-doan">'+ t.doan.slice(0, 60).map(function(d){
+      return '<p>'+h(d)+'</p>'; }).join('') +
+      (t.doan.length > 60 ? '<p class="tiny muted">… còn '+(t.doan.length-60)+' đoạn, tra bằng Trợ lý GITA.</p>' : '')+
+      '</div>';
+  }
+  if(t.bang.length) o += U.sec('BẢNG DỮ LIỆU', t.bang.length + ' bảng');
   t.bang.forEach(function(b, i){
     o += '<div class="tlg-b">'+
       '<div class="tlg-b-h">'+ic('chart','w-3 h-3')+

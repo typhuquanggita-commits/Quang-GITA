@@ -702,19 +702,29 @@ const { chromium } = require(PW);
       };
     });
 
-    bao(b.gita === '#2166CE', 'màu chủ đạo đúng xanh GITA của logo', b.gita);
-    bao(b.sau === '#174C9E' && b.sang === '#4A8FE0', 'đủ xanh sâu và xanh sáng của logo', b.sau + ' · ' + b.sang);
-    bao(b.do === '#E4232B', 'đỏ GITA đúng màu nét đỏ và ngôi sao đỏ', b.do);
-    bao(b.t1 === b.gita, 'tầng 1 mang màu xanh GITA — chặng đầu là màu logo', b.t1);
-    bao(b.t5 === b.doInk, 'tầng 5 mang màu đỏ GITA — đích đến là ngôi sao đỏ', b.t5);
+    bao(b.gita === '#2A72C6', 'màu chủ đạo đúng mã lấy từ tệp logo gốc', b.gita);
+    bao(b.sau === '#185AB4', 'xanh sâu đúng mã nét ngoài và chữ GITA trong logo', b.sau);
+    bao(b.do === '#F61824', 'đỏ GITA đúng mã nét đỏ trong logo', b.do);
+    bao(b.t1 === b.sau || b.t1 === b.gita,
+      'tầng 1 mang một trong hai màu xanh thật của logo', b.t1);
+    bao(b.t5 === b.doInk, 'tầng 5 mang màu đỏ logo — đích đến là ngôi sao đỏ', b.t5);
 
-    bao(b.coLogo, 'logo dựng bằng vector ngay trong ứng dụng');
-    bao(b.svg.indexOf('<svg') === 0 && b.svg.length > 1200, 'logo đầy đủ dựng ra hình thật', b.svg.length + ' ký tự');
-    bao(b.dau.indexOf('<svg') === 0, 'dấu vuông dựng ra hình thật');
-    /* Ba nét và năm sao — đếm từ chính hình dựng ra */
-    const netVaSao = (b.svg.match(/<path /g) || []).length;
-    bao(netVaSao >= 8, 'logo đủ ba nét vòng cung và năm ngôi sao', netVaSao + ' hình');
-    bao(b.svg.indexOf('#E4232B') > 0 || b.svg.indexOf(b.do) > 0, 'logo có nét đỏ và ngôi sao đỏ');
+    /* Logo là TỆP GỐC của Học viện, không phải hình vẽ lại */
+    bao(b.coLogo, 'ứng dụng dựng được logo và dấu vuông');
+    bao(/assets\/brand\/logo-gita\.png|data:image\/png/.test(b.svg),
+      'logo dùng đúng tệp gốc của Học viện, không phải hình vẽ lại');
+    bao(/<img /.test(b.svg) && /<img /.test(b.dau), 'logo và dấu vuông đều là ảnh thật');
+
+    const fsL = require('fs'), pxL = require('path'), gocL = pxL.join(__dirname, '..');
+    ['logo-gita.png', 'dau-gita.png'].forEach(function (t) {
+      const d = pxL.join(gocL, 'assets', 'brand', t);
+      bao(fsL.existsSync(d), 'có tệp ' + t + ' trong ứng dụng',
+        fsL.existsSync(d) ? Math.round(fsL.statSync(d).size / 1024) + ' KB' : 'thiếu');
+    });
+    /* Không còn ai vẽ lại logo bằng tay nữa */
+    const lg = fsL.readFileSync(pxL.join(gocL, 'src', 'logo-gita.js'), 'utf8');
+    bao(!/<path |<svg |<circle /.test(lg),
+      'không còn hình vẽ lại logo trong mã nguồn — chỉ dùng tệp gốc');
 
     bao(b.nd, 'có bộ nhận diện đọc được bằng máy');
     bao(b.soCam >= 5, 'bộ nhận diện ghi rõ điều KHÔNG được làm với logo', b.soCam + ' điều cấm');
@@ -917,6 +927,282 @@ const { chromium } = require(PW);
     const tl = fs5.readFileSync(px5.join(__dirname, '..', 'src', 'tro-ly-ai.js'), 'utf8');
     bao(!/fetch\(|XMLHttpRequest|WebSocket/.test(tl),
       'trợ lý chạy hoàn toàn trong máy — không gọi ra mạng, không tốn phí API');
+  }
+
+  /* ═══════════ 17 · KHO TÀI LIỆU ĐÃ BIÊN SOẠN ═══════════
+     Hai kho chữ được rút thẳng từ tệp gốc của Học viện: năm tệp Word
+     và mười tệp trên Drive. Mục này canh cho kho không bị hụt, không bị
+     rỗng, và trợ lý đọc được cả hai. */
+  console.log('\n17 · KHO TÀI LIỆU ĐÃ BIÊN SOẠN');
+  {
+    const r = await p.evaluate(() => {
+      const goc   = G.TAILIEU_GOC   || [];
+      const drive = G.TAILIEU_DRIVE || [];
+      function dem(ds, truong){
+        return ds.reduce((t, d) => t + ((d[truong] || []).length), 0);
+      }
+      const cu = G.S.roleObj;
+      G.S.roleObj = G.roleById('R01');
+      const man = (G.VIEWS['tai-lieu-goc'] ? G.VIEWS['tai-lieu-goc']() : '');
+      G.S.roleObj = G.roleById('R07');
+      const tra = G.aiTraLoi('mô thức huấn luyện GITA');
+      G.S.roleObj = cu;
+      return {
+        nGoc: goc.length, nDrive: drive.length,
+        chuGoc:   goc.reduce((t, d) => t + (d.soChu || 0), 0),
+        chuDrive: drive.reduce((t, d) => t + (d.soChu || 0), 0),
+        bangGoc:   dem(goc, 'bang'),
+        doanDrive: dem(drive, 'doan'),
+        thieuMa:  goc.concat(drive).filter(d => !d.ma || !d.ten).length,
+        rong:     goc.concat(drive).filter(d => !(d.soChu > 0)).length,
+        manDai:   man.length,
+        manCoDrive: /DR-0/.test(man),
+        manCoGoc:   /TG-0/.test(man),
+        traDuoc:  tra.nguon.length
+      };
+    });
+
+    bao(r.nGoc === 5,  'đủ năm tệp Word gốc của Học viện', r.nGoc + ' tệp');
+    bao(r.nDrive === 10, 'đủ mười tệp tài liệu trên Drive', r.nDrive + ' tệp');
+    bao(r.thieuMa === 0, 'mọi tài liệu đều có mã và tên', r.thieuMa + ' bản ghi thiếu');
+    bao(r.rong === 0,    'không tài liệu nào rỗng chữ');
+    bao(r.chuGoc > 500000, 'kho Word giữ đủ chữ đã rút', r.chuGoc.toLocaleString('vi-VN') + ' chữ');
+    bao(r.chuDrive > 400000, 'kho Drive giữ đủ chữ đã rút', r.chuDrive.toLocaleString('vi-VN') + ' chữ');
+    bao(r.bangGoc >= 100,  'bảng trong tệp Word được cắt ra dùng được', r.bangGoc + ' bảng');
+    bao(r.doanDrive >= 500, 'đoạn nội dung trên Drive được cắt ra dùng được', r.doanDrive + ' đoạn');
+    bao(r.manCoGoc && r.manCoDrive, 'màn tài liệu gốc hiện cả hai kho', r.manDai + ' ký tự');
+    bao(r.traDuoc >= 3, 'trợ lý tra được kho vừa biên soạn', r.traDuoc + ' nguồn');
+  }
+
+  /* ═══════════ 18 · TRÒ CHUYỆN · TRẦN 30% · CỬA KPI 80% ═══════════
+     Ba luật anh Quang đặt, kiểm bằng số chứ không bằng lời hứa:
+       · gia đình mở sẵn tối đa 30% kho
+       · phần còn lại đi qua Tư vấn hoặc Coach, không tự mở
+       · cửa mở phần thêm là KPI 80% */
+  console.log('\n18 · TRÒ CHUYỆN · TRẦN 30% · CỬA KPI 80%');
+  {
+    const r = await p.evaluate(() => {
+      const cu = G.S.roleObj, cuAcc = G.S.acc;
+      G.KHACH_THEM = {}; G.XIN_THEM = [];
+      G.S.roleObj = G.roleById('R13');
+      G.S.acc = {u:'phuhuynh@gita365.vn', ten:'Trần Quốc Bảo'};
+
+      const dem = G.demKho(), nha = G.khoCuaNha();
+
+      /* Đếm thật trên toàn kho: gia đình mở được bao nhiêu phần */
+      let tong = 0, mo = 0;
+      [['Mô thức', G.MOTHUC, x=>x.id], ['Phác đồ', G.PHACDO, x=>x.ma],
+       ['Kịch bản', G.KICHBAN, x=>x.ma], ['Tình huống', G.TINHHUONG, x=>(x.key||x.ma||('TH-'+x.stt))],
+       ['Bài học', G.BAIHOC, x=>x.id]].forEach(([l, kho, ma]) => {
+        (kho || []).forEach(x => { tong++; if (G.khachMoDuoc(l, ma(x))) mo++; });
+      });
+
+      /* Khung trò chuyện */
+      G.CHAT = [];
+      G.chatHoi('con ôm điện thoại cả ngày');
+      const man = G.VIEWS['tro-ly']();
+      const dap = G.CHAT[G.CHAT.length - 1].dap;
+      let nMo = 0, nCho = 0;
+      dap.nguon.forEach(n => { G.khachMoDuoc(n.loai, n.ma) ? nMo++ : nCho++; });
+
+      /* Câu khẩn trong khung chat vẫn phải dừng và không kèm tư liệu */
+      G.CHAT = [];
+      G.chatHoi('con tôi nói muốn chết');
+      const khan = G.CHAT[G.CHAT.length - 1].dap;
+
+      /* Cửa KPI: nhà chưa đạt 80% thì Tư vấn cũng không gửi được */
+      const kpiThat = G.kpiCuaToi();
+      const xin = G.xinThemTuLieu('Kịch bản', 'ZZ-TEST-01', 'Tư liệu thử');
+      const idXin = G.XIN_THEM.length ? G.XIN_THEM[G.XIN_THEM.length - 1].id : '';
+
+      /* Gia đình KHÔNG tự gửi được cho chính mình */
+      const tuCap = G.capThemTuLieu(idXin);
+
+      /* Tư vấn gửi: chặn khi KPI thấp, cho khi KPI đủ */
+      G.S.roleObj = G.roleById('R11');
+      G.S.acc = {u:'tuvan@gita365.vn', ten:'Phan Đức Thắng'};
+      G.XIN_THEM[G.XIN_THEM.length - 1].kpi = 55;
+      const capThap = G.capThemTuLieu(idXin);
+      G.XIN_THEM[G.XIN_THEM.length - 1].kpi = 88;
+      const capDu = G.capThemTuLieu(idXin);
+      const manQueue = G.VIEWS['gui-tu-lieu']();
+
+      /* Sau khi được gửi, gia đình mở được đúng tư liệu đó */
+      G.S.roleObj = G.roleById('R13');
+      const moSauKhiGui = G.khachMoDuoc('Kịch bản', 'ZZ-TEST-01');
+
+      /* Người trong nghề không bị trần 30% chạm tới */
+      G.S.roleObj = G.roleById('R07');
+      let ngheMo = 0, ngheTong = 0;
+      (G.KICHBAN || []).slice(0, 200).forEach(x => { ngheTong++; if (G.khachMoDuoc('Kịch bản', x.ma)) ngheMo++; });
+
+      G.KHACH_THEM = {}; G.XIN_THEM = []; G.CHAT = [];
+      G.S.roleObj = cu; G.S.acc = cuAcc;
+      return {demTong:dem.tong, tong, mo, pt: tong ? mo / tong : 0,
+        nhaPt: nha.phanTramNen, kpiThat,
+        coKhung:/id="chKhung"/.test(man), coBong:/ch-bong-ai/.test(man),
+        coGoiY:/data-aiq=/.test(man), coXin:/data-xin=/.test(man),
+        nMo, nCho, khanDung: khan.khan, khanKhongNguon: khan.nguon.length === 0,
+        xinOk: xin.ok, tuCapChan: !tuCap.ok, capThapChan: !capThap.ok,
+        capThapLy: capThap.ly || '', capDuOk: capDu.ok,
+        queueCoNha: /Trần 30%/.test(manQueue) && /KPI/.test(manQueue),
+        moSauKhiGui, nghePt: ngheTong ? ngheMo / ngheTong : 0};
+    });
+
+    bao(r.coKhung && r.coBong, 'trợ lý hiện dưới dạng khung trò chuyện, có bóng nói hai bên');
+    bao(r.coGoiY, 'khung trò chuyện có sẵn câu gợi ý để gia đình bấm là hỏi được');
+    bao(r.nMo + r.nCho > 0 && r.nCho > 0 && r.coXin,
+      'tư liệu ngoài phần nền vẫn hiện tên và có nút nhờ Tư vấn gửi',
+      r.nMo + ' mở ngay · ' + r.nCho + ' qua người thật');
+    bao(r.khanDung && r.khanKhongNguon,
+      'trong khung trò chuyện, câu khẩn vẫn DỪNG và không kèm tư liệu');
+
+    bao(r.pt > 0 && r.pt <= 0.31, 'gia đình mở sẵn tối đa 30% kho',
+      Math.round(r.pt * 1000) / 10 + '% · ' + r.mo.toLocaleString('vi-VN') + ' / ' + r.tong.toLocaleString('vi-VN'));
+    bao(r.nhaPt <= 30, 'màn hình báo đúng con số phần nền', r.nhaPt + '%');
+    bao(r.nghePt > 0.99, 'người trong nghề KHÔNG bị trần 30% chạm tới',
+      Math.round(r.nghePt * 100) + '% kho nghề');
+
+    bao(r.tuCapChan, 'gia đình KHÔNG tự gửi tư liệu cho chính mình');
+    bao(r.capThapChan && /80/.test(r.capThapLy),
+      'KPI dưới 80% thì Tư vấn cũng không gửi được — máy chặn, không phải người nhớ');
+    bao(r.capDuOk, 'KPI từ 80% trở lên thì Tư vấn gửi được');
+    bao(r.moSauKhiGui, 'tư liệu đã gửi thì gia đình mở ra đọc được ngay');
+    bao(r.queueCoNha, 'màn Tư vấn nói rõ luật trần 30% và cửa KPI');
+
+    /* Không có đường tải xuống nào cho gia đình */
+    const fs6 = require('fs'), px6 = require('path');
+    const srcAll = fs6.readdirSync(px6.join(__dirname, '..', 'src'))
+      .filter(f => f.endsWith('.js'))
+      .map(f => fs6.readFileSync(px6.join(__dirname, '..', 'src', f), 'utf8')).join('\n');
+    bao(!/createObjectURL|<a[^>]+download|\.zip"|showSaveFilePicker/.test(srcAll),
+      'không có nút tải xuống và không có tệp nén — mọi thứ đọc thẳng trên ứng dụng');
+  }
+
+  /* ═══════════ 19 · QUY TRÌNH RÀNG BUỘC · 5 CẤP ĐỘ ═══════════
+     Chỗ này phải KHOÁ thật, không phải cảnh báo rồi vẫn cho qua.
+     Mỗi điểm dưới đây thử một đường lách và bắt hệ thống chặn lại. */
+  console.log('\n19 · QUY TRÌNH RÀNG BUỘC · 5 CẤP ĐỘ');
+  {
+    const r = await p.evaluate(() => {
+      const cu = G.S.roleObj, cuAcc = G.S.acc;
+      G.CA = [];
+      G.S.roleObj = G.roleById('R13');
+      G.S.acc = {u:'phuhuynh@gita365.vn', ten:'Trần Quốc Bảo'};
+      const phMo = G.moCa('Nhà Minh An', 'Thử mở ca từ tài khoản phụ huynh');
+
+      G.S.roleObj = G.roleById('R07');
+      G.S.acc = {u:'coach@gita365.vn', ten:'Đặng Hoàng Nam'};
+
+      const cut  = G.moCa('Nhà A', 'ngắn');            /* tóm tắt quá ngắn */
+      const mo   = G.moCa('Nhà Minh An', 'Con ôm điện thoại, phụ huynh nhắc mãi không chuyển');
+      const id   = mo.ok ? mo.ca.id : '';
+
+      /* RB1 — chưa có bằng chứng thì không đi tiếp */
+      const nhay = G.buocTiep(id);
+
+      /* điền đủ B1 rồi đi tiếp */
+      G.ghiCa(id, 'nguonCa', 'Phụ huynh nhắn qua Zalo');
+      G.ghiCa(id, 'loiGoc', 'Chị nói: cháu cầm điện thoại từ lúc đi học về tới đêm, nhắc thì cáu.');
+      const b1 = G.buocTiep(id);
+
+      /* B1 → B2: thiếu độ dài tối thiểu vẫn phải chặn */
+      G.ghiCa(id, 'bangChung', 'ngắn quá');
+      G.ghiCa(id, 'khoangThoiGian', 'Khoảng 4 tháng');
+      const ngan = G.buocTiep(id);
+      G.ghiCa(id, 'bangChung', 'Đã xem nhật ký hai tuần và ảnh màn hình thời gian dùng máy của cháu.');
+      const b2 = G.buocTiep(id);
+
+      /* RB3 — báo có dấu hiệu nguy hiểm, đang theo dõi, chưa ghi ai theo dõi */
+      G.ghiCa(id, 'nhomCa', 'Tự giác — tự quản việc học');
+      G.ghiCa(id, 'tangCa', 'T2');
+      G.ghiCa(id, 'nguyHiem', 'Có — đang theo dõi sát');
+      const chanNH = G.buocTiep(id);
+      G.ghiCa(id, 'aiTheoDoi', 'Coach Nam gọi mỗi tối, phụ huynh ghi nhật ký hằng ngày.');
+      const b3 = G.buocTiep(id);
+
+      /* RB4 — phác đồ tầng 4 cho nhà tầng 2 */
+      G.ghiCa(id, 'moThuc', 'Mô thức tự khởi động');
+      G.ghiCa(id, 'phacDo', 'PD-T4-012');
+      G.ghiCa(id, 'viSao', 'Chọn vì điểm nghẽn nằm ở khâu bắt đầu, không nằm ở năng lực học.');
+      G.ghiCa(id, 'capDo', 'C2');
+      const vuotTang = G.buocTiep(id);
+      G.ghiCa(id, 'phacDo', 'PD-T2-007');
+      const b4 = G.buocTiep(id);
+
+      /* đi nốt tới khi đóng ca */
+      G.ghiCa(id, 'motViec', 'Mỗi tối con tự bắt đầu một phiên học, không chờ ai gọi.');
+      G.ghiCa(id, 'mocDo', 'Đếm số tối tự bắt đầu, chốt vào chủ nhật');
+      G.ghiCa(id, 'aiLam', 'Con giữ việc, mẹ ghi nhật ký');
+      const b5 = G.buocTiep(id);
+      G.ghiCa(id, 'ketQua', 'Năm trên bảy tối con tự bắt đầu, không cần ai nhắc.');
+      G.ghiCa(id, 'nhaNoiGi', 'Mẹ nói nhẹ hẳn, không phải cãi nhau mỗi tối nữa.');
+      G.ghiCa(id, 'chenhLech', 'Đạt');
+      const b6 = G.buocTiep(id);
+      G.ghiCa(id, 'ketLuan', 'Xong — chuyển chặng tiếp');
+      G.ghiCa(id, 'hocDuocGi', 'Điểm nghẽn nằm ở khâu bắt đầu chứ không ở năng lực. Đo bằng số tối tự bắt đầu là đủ.');
+      const b7 = G.buocTiep(id);
+
+      const ca = G.CA.filter(x => x.id === id)[0];
+      const sauKhiDong = G.ghiCa(id, 'ketQua', 'sửa lại sau khi đóng');
+
+      /* Quá hạn: đẩy mốc thời gian lùi lại rồi xem có nổi lên không */
+      const mo2 = G.moCa('Nhà B', 'Ca để thử ràng buộc quá hạn của hệ thống');
+      const c2 = G.CA.filter(x => x.id === mo2.ca.id)[0];
+      c2.doiLuc = Date.now() - 100 * 3600e3;
+      const tre = G.quaHan(c2);
+      const d = G.doLuongCa();
+
+      /* Màn hình */
+      const manCa = G.VIEWS['xu-ly-ca']();
+      const manVD = G.VIEWS['van-dung']();
+      const gan = G.VIEWS['phac-do']();
+      G.S.roleObj = G.roleById('R13');
+      const ganKhach = G.VIEWS['phac-do']();
+
+      G.CA = []; G.S.roleObj = cu; G.S.acc = cuAcc;
+      return {
+        phMoChan: !phMo.ok, cutChan: !cut.ok, moOk: mo.ok,
+        nhayChan: !nhay.ok, nganChan: !ngan.ok,
+        b1: b1.ok, b2: b2.ok, b3: b3.ok, b4: b4.ok, b5: b5.ok, b6: b6.ok,
+        chanNH: !chanNH.ok, chanNHLy: chanNH.ly || '',
+        vuotTangChan: !vuotTang.ok, vuotLy: vuotTang.ly || '',
+        dong: !!(b7.ok && b7.dong), caXong: !!(ca && ca.xong),
+        moc: ca ? ca.nhatKy.length : 0,
+        khoaSauDong: !sauKhiDong.ok,
+        tre: tre, doTre: d.treo,
+        soCapDo: (G.CAPDO_VANDUNG || []).length,
+        soLoai: (G.VANDUNG || []).length,
+        soBuoc: (G.QUYTRINH_XL || []).length,
+        soRB: (G.RANG_BUOC || []).length,
+        manCaDai: manCa.length, manVDDai: manVD.length,
+        ganVaoTaiLieu: /Vận dụng phác đồ/.test(gan),
+        khongGanChoKhach: !/Vận dụng phác đồ/.test(ganKhach)
+      };
+    });
+
+    bao(r.soCapDo === 5, 'có đủ năm cấp độ vận dụng', r.soCapDo + ' cấp');
+    bao(r.soLoai >= 5, 'mỗi loại tài liệu đều có phần vận dụng riêng', r.soLoai + ' loại');
+    bao(r.soBuoc === 7 && r.soRB === 4, 'quy trình đủ bảy bước và bốn ràng buộc',
+      r.soBuoc + ' bước · ' + r.soRB + ' ràng buộc');
+    bao(r.ganVaoTaiLieu, 'khối vận dụng gắn thẳng vào màn tài liệu, không bắt ai đi tìm');
+    bao(r.khongGanChoKhach, 'phần hướng dẫn nghề KHÔNG hiện với gia đình');
+
+    bao(r.phMoChan, 'gia đình không mở được ca — quy trình là việc của đội ngũ');
+    bao(r.cutChan && r.moOk, 'tóm tắt ca quá ngắn thì không mở được');
+    bao(r.nhayChan, 'RB1 · chưa có bằng chứng thì KHÔNG đi tiếp được');
+    bao(r.nganChan, 'bằng chứng dưới độ dài tối thiểu cũng bị chặn — không nhận cho có');
+    bao(r.b1 && r.b2 && r.b3 && r.b4 && r.b5 && r.b6, 'đủ bằng chứng thì đi tiếp trơn tru qua từng bước');
+    bao(r.chanNH && /theo dõi/.test(r.chanNHLy),
+      'RB3 · dấu hiệu nguy hiểm chưa ghi người theo dõi thì ca đứng lại');
+    bao(r.vuotTangChan && /tầng/.test(r.vuotLy),
+      'RB4 · phác đồ tầng trên cho nhà tầng dưới bị chặn', r.vuotLy.slice(0, 60));
+    bao(r.tre > 0 && r.doTre > 0, 'RB2 · quá hạn thì ca nổi lên bảng đo lường', r.tre + ' giờ');
+    bao(r.dong && r.caXong, 'đi hết bảy bước thì ca đóng lại, có kết luận');
+    bao(r.moc >= 7, 'mọi bước đều để lại mốc trong nhật ký ca — truy vết được', r.moc + ' mốc');
+    bao(r.khoaSauDong, 'ca đã đóng thì không sửa được nữa — hồ sơ giữ nguyên để soi lại');
+    bao(r.manCaDai > 2000 && r.manVDDai > 2000, 'hai màn quy trình và vận dụng đều dựng được',
+      r.manCaDai + ' · ' + r.manVDDai + ' ký tự');
   }
 
   console.log('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành'));

@@ -39,11 +39,15 @@ G.THUOC_CAP_PHEP = [
   'BANDO_TUVAN','BANDO_COACH','XUAT','TINHHUONG','KHUNG_T5','THANHTOAN','TEST750','KPI100',
   'MATRAN','MATRAN_T1','MATRAN_T2','MATRAN_T3','MATRAN_T4','MATRAN_T5',
   'REFERRAL','CHANDUNG_KH','DOLUONG_KH','PHANHANG','CHUAN_VIP','NHANSU_TT','CAYTIEN',
-  'HOSO_VIP','CHUYENDOI','XUONG_SONG','NGUON_VAITRO','SACH_THAMKHAO','PHUONGPHAP','VANTAY','AICHAM'
+  'HOSO_VIP','CHUYENDOI','XUONG_SONG','NGUON_VAITRO','SACH_THAMKHAO','PHUONGPHAP','VANTAY','AICHAM','SOTAY_NHANDIEN','CAPDO_VANDUNG','VANDUNG','QUYTRINH_XL','RANG_BUOC'
 ];
 function donKho(){
   G.THUOC_CAP_PHEP.forEach(function(k){ try{ delete G[k]; }catch(e){ G[k] = undefined; } });
   G.KHO.daNap = []; G.KHO.dangNap = []; G.KHO.cheDoMau = false; G.KHO.hanKhoa = null;
+  /* Bảng thứ hạng của trần 30% tính từ chính kho đang mở. Đổi vai là kho
+     đổi, nên bảng cũ phải bỏ đi — không thì nhà mình được tính theo kho
+     của vai trước. */
+  if (G.quenBangHang) G.quenBangHang();
 }
 G.donKho = donKho;
 
@@ -117,9 +121,11 @@ function napMau() {
       Object.keys(m).forEach(function(k){ G[k] = m[k]; });
       G.KICHBAN = m.KICHBAN || []; G.PHACDO = m.PHACDO || [];
       G.MOTHUC = m.MOTHUC || []; G.TEST750 = m.TEST750 || [];
+      if (G.quenBangHang) G.quenBangHang();
     })
     .catch(function () {
       G.KHO.cheDoMau = true; G.KICHBAN = []; G.PHACDO = []; G.MOTHUC = []; G.TEST750 = [];
+      if (G.quenBangHang) G.quenBangHang();
     });
 }
 
@@ -139,7 +145,12 @@ G.napKho = function () {
       var sau   = co.filter(function (t) { return truoc.indexOf(t) < 0; });
 
       function mo(t) {
-        return moGoi(t, khoa[t]).then(function (du) { gop(du); G.KHO.daNap.push(t); })
+        return moGoi(t, khoa[t])
+          .then(function (du) {
+            gop(du); G.KHO.daNap.push(t);
+            /* Kho vừa lớn thêm một gói — tính lại thứ hạng cho trần 30% */
+            if (G.quenBangHang) G.quenBangHang();
+          })
           .catch(function (e) { console.warn('[GITA] gói ' + t + ': ' + e.message); })
           .then(function () {
             var i = G.KHO.dangNap.indexOf(t);

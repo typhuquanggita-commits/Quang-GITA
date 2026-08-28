@@ -91,7 +91,7 @@ G.VIEWS['bat-dau'] = function(){
 G.VIEWS['dong-hanh'] = function(){
   var moods = [
     {k:'met',  t:'Mệt',       c:'#F87175', d:'Hôm nay nhà mình đuối'},
-    {k:'roi',  t:'Rối',       c:'#C2151C', d:'Không biết bắt đầu từ đâu'},
+    {k:'roi',  t:'Rối',       c:'#BE0E16', d:'Không biết bắt đầu từ đâu'},
     {k:'thuong',t:'Bình thường',c:'#38BDF8',d:'Vẫn đang đi'},
     {k:'sang', t:'Sáng',      c:'#0B7350', d:'Có chuyện tốt muốn kể'}
   ];
@@ -271,10 +271,10 @@ G.VIEWS['hoa-hong'] = function(){
     lead:'Bốn cấp, trần 10%, công bố trước khi ký và không đàm phán riêng với ai. Hoa hồng gắn với việc gia đình được giới thiệu đi được bao xa — không gắn với chữ ký hợp đồng.'});
 
   o += '<div class="grid g4 mb">'+
-    U.stat({k:'TRẦN HOA HỒNG', v:H.tran+'%', d:'toàn hệ thống · không ngoại lệ', c:'#2166CE'})+
+    U.stat({k:'TRẦN HOA HỒNG', v:H.tran+'%', d:'toàn hệ thống · không ngoại lệ', c:'#185AB4'})+
     U.stat({k:'CẤP ĐẠI SỨ', v:H.cap.length, d:'3% · 5% · 8% · 10%', c:'#5140B4'})+
     U.stat({k:'MỐC CHI ĐẦU', v:'Ngày 30', d:'khi nhà được giới thiệu còn giữ nhịp', c:'#0B7350'})+
-    U.stat({k:'THƯỞNG THEO LƯỢT CHỐT', v:'0', d:'thưởng theo chất lượng, không theo số', c:'#C2151C'})+
+    U.stat({k:'THƯỞNG THEO LƯỢT CHỐT', v:'0', d:'thưởng theo chất lượng, không theo số', c:'#BE0E16'})+
   '</div>';
 
   o += U.sec('BỐN CẤP VÀ TỈ LỆ','Lên cấp bằng việc đã làm — không bằng doanh số');
@@ -373,7 +373,7 @@ G.VIEWS['ra-soat'] = function(){
   var vaRoi = all.filter(function(m){ return m.trang.indexOf('ĐÃ VÁ')===0; }).length;
   var conHo = all.filter(function(m){ return m.trang.indexOf('CÒN HỞ')===0; }).length;
   var canMC = all.filter(function(m){ return m.trang.indexOf('CẦN MÁY CHỦ')===0; }).length;
-  var mau = {'ĐÃ VÁ':'#0B7350','CÒN HỞ':'#C2151C','CẦN MÁY CHỦ':'#C2151C','KHỚP 100%':'#0B7350',
+  var mau = {'ĐÃ VÁ':'#0B7350','CÒN HỞ':'#BE0E16','CẦN MÁY CHỦ':'#BE0E16','KHỚP 100%':'#0B7350',
     'ĐỦ':'#0B7350','ĐẠT':'#0B7350','ĐÃ CHỐT':'#0B7350','ĐANG GIỮ ĐÚNG':'#0B7350',
     'ĐANG CHẶN ĐÚNG':'#0B7350','ĐÃ KIỂM · AN TOÀN':'#0B7350','CHỜ CHỦ HỆ THỐNG':'#5140B4',
     'ĐÃ MỞ MỘT PHẦN':'#0B6675'};
@@ -384,8 +384,8 @@ G.VIEWS['ra-soat'] = function(){
   o += '<div class="grid g4 mb">'+
     U.stat({k:'ĐIỂM ĐÃ RÀ', v:all.length, d:'trên sáu nhóm', c:'#5140B4'})+
     U.stat({k:'ĐÃ VÁ TRONG BẢN NÀY', v:vaRoi, d:'lỗi thật, đã kiểm lại', c:'#0B7350'})+
-    U.stat({k:'CÒN HỞ', v:conHo, d:'cần quyết định của chủ hệ thống', c:'#C2151C'})+
-    U.stat({k:'CẦN MÁY CHỦ', v:canMC, d:'không vá được bằng mã trình duyệt', c:'#C2151C'})+
+    U.stat({k:'CÒN HỞ', v:conHo, d:'cần quyết định của chủ hệ thống', c:'#BE0E16'})+
+    U.stat({k:'CẦN MÁY CHỦ', v:canMC, d:'không vá được bằng mã trình duyệt', c:'#BE0E16'})+
   '</div>';
 
   o += '<div class="card mb" style="border-color:rgba(248,113,113,.35);background:rgba(248,113,113,.05)">'+
@@ -405,7 +405,7 @@ G.VIEWS['ra-soat'] = function(){
         return '<div class="card mb" style="border-color:'+c+'26">'+
           '<div class="row wrap" style="gap:9px;margin-bottom:8px">'+
           '<b class="grow" style="font-size:14.5px;min-width:200px">'+h(m.t)+'</b>'+
-          (m.mucdo && m.mucdo!=='—' ? U.chip(m.mucdo, m.mucdo==='Nghiêm trọng'?'#C2151C':(m.mucdo==='Trung bình'?'#C2151C':'#665E88')) : '')+
+          (m.mucdo && m.mucdo!=='—' ? U.chip(m.mucdo, m.mucdo==='Nghiêm trọng'?'#BE0E16':(m.mucdo==='Trung bình'?'#BE0E16':'#665E88')) : '')+
           '<span class="chip" style="color:'+c+';border-color:'+c+'55;background:'+c+'14">'+h(m.trang)+'</span></div>'+
           '<p class="sm muted" style="line-height:1.6;margin-bottom:9px">'+h(m.mo)+'</p>'+
           '<div style="padding:11px 13px;border-radius:12px;background:'+c+'0d;border-left:2px solid '+c+'">'+

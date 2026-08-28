@@ -41,7 +41,7 @@ G.navDung = function(){
     return {id:g.id, no:g.no, ic:g.ic, c:g.c, t:g.t, s:g.s, essence:g.essence, items:[]};
   });
   S.nhomThem.forEach(function(n){
-    goc.push({id:n.id, no:n.no || '＋', ic:n.ic || 'star', c:n.c || '#2166CE',
+    goc.push({id:n.id, no:n.no || '＋', ic:n.ic || 'star', c:n.c || '#2A72C6',
       t:n.t, s:n.s || '', essence:n.essence || '', items:[], them:1});
   });
   var theoId = {};
@@ -137,7 +137,7 @@ G.themNhom = function(){
   if(t.length < 3){ U.toast('Đặt tên thư mục dài hơn một chút.','err'); return; }
   var id = 'gx' + (G.SAP_XEP.nhomThem.length + 1) + '-' + Date.now().toString(36).slice(-4);
   G.SAP_XEP.nhomThem.push({id:id, t:t.toUpperCase(),
-    s:(document.getElementById('sx_hoi')||{}).value || '', ic:'star', c:'#2166CE', no:'＋'});
+    s:(document.getElementById('sx_hoi')||{}).value || '', ic:'star', c:'#2A72C6', no:'＋'});
   ghi('Thêm thư mục', t);
 };
 

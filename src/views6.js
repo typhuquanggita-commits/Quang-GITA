@@ -70,8 +70,8 @@ G.VIEWS['vong-doi-tk'] = function(){
 
   o += '<div class="grid g4 mb">'+
     U.stat({k:'ĐANG HOẠT ĐỘNG', v:ds.filter(function(x){return x.trang==='Hoạt động';}).length, d:'KPI đạt chuẩn', c:'#0B7350'})+
-    U.stat({k:'SẮP KHOÁ', v:sap, d:'KPI dưới 30% · gần mốc 90 ngày', c:'#C2151C'})+
-    U.stat({k:'ĐÃ KHOÁ', v:khoa, d:'theo luật L1', c:'#C2151C'})+
+    U.stat({k:'SẮP KHOÁ', v:sap, d:'KPI dưới 30% · gần mốc 90 ngày', c:'#BE0E16'})+
+    U.stat({k:'ĐÃ KHOÁ', v:khoa, d:'theo luật L1', c:'#BE0E16'})+
     U.stat({k:'CHỜ ĐẶT LẠI', v:reset, d:'không hoạt động trên 180 ngày · L3', c:'#5140B4'})+
   '</div>';
 
@@ -79,7 +79,7 @@ G.VIEWS['vong-doi-tk'] = function(){
   o += '<div class="grid g2">' + G.LUAT_TK.map(function(l){
     return '<div class="card" style="border-color:'+l.c+'2a">'+
       '<div class="row wrap" style="gap:8px;margin-bottom:8px">'+U.chip(l.ma,l.c)+
-      U.chip(l.tuDong?'Tự động':'Cần người xem xét', l.tuDong?'#0B7350':'#C2151C')+'</div>'+
+      U.chip(l.tuDong?'Tự động':'Cần người xem xét', l.tuDong?'#0B7350':'#BE0E16')+'</div>'+
       '<b style="font-size:14.5px;display:block;margin-bottom:8px;color:'+l.c+'">'+h(l.ten)+'</b>'+
       '<p class="sm dim" style="line-height:1.6;margin-bottom:10px">'+h(l.luat)+'</p>'+
       '<div style="padding:11px 13px;border-radius:12px;background:'+l.c+'0d;border-left:2px solid '+l.c+'">'+
@@ -92,7 +92,7 @@ G.VIEWS['vong-doi-tk'] = function(){
   o += U.tbl(['Tài khoản','Vai','KPI','Ngày mở','Chưa vào','Trạng thái','Việc'],
     ds.slice().sort(function(a,b){return a.kpi-b.kpi;}).map(function(x){
       var r = G.roleById(x.vai);
-      var c = x.kpi>=70?'#0B7350':(x.kpi>=30?'#C2151C':'#C2151C');
+      var c = x.kpi>=70?'#0B7350':(x.kpi>=30?'#BE0E16':'#BE0E16');
       var kh = x.trang.indexOf('Đã khoá')===0, rs = x.trang.indexOf('Chờ')===0, sp = x.trang.indexOf('Sắp')===0;
       return ['<b class="sm">'+h(x.ten)+'</b><div class="tiny muted mono">'+h(x.u)+'</div>',
         U.chip(r.short, r.c),
@@ -112,7 +112,7 @@ G.VIEWS['vong-doi-tk'] = function(){
     return '<div class="card mb" style="border-color:'+(ba?'rgba(248,113,113,.3)':'var(--gita-mo-3)')+'">'+
       '<div class="row wrap" style="gap:9px;margin-bottom:9px">'+
       '<b>'+h(y.ten)+'</b><span class="mono tiny muted">'+h(y.u)+'</span>'+
-      U.chip('Lần '+y.lan, ba?'#C2151C':'var(--gita)')+
+      U.chip('Lần '+y.lan, ba?'#BE0E16':'var(--gita)')+
       '<span class="tiny muted mono">'+h(y.ngay)+'</span></div>'+
       '<p class="serif" style="font-size:15px;font-style:italic;line-height:1.6;color:var(--ink)">"'+h(y.ly)+'"</p>'+
       '<div class="mt2" style="padding:11px 13px;border-radius:12px;background:var(--phu-2)">'+

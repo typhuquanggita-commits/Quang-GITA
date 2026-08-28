@@ -38,6 +38,13 @@ def b64(p):
     return 'data:image/png;base64,' + base64.b64encode(open(p, 'rb').read()).decode()
 html = html.replace('href="assets/icons/icon-192.png"', 'href="%s"' % b64('assets/icons/icon-192.png'))
 
+# 2b. Nhúng logo chuẩn — bản một tệp không có thư mục assets đi kèm nên
+#     ảnh phải nằm ngay trong tệp, nếu không logo sẽ vỡ khi gửi cho khách.
+for _ten in ('logo-gita.png', 'dau-gita.png'):
+    _d = os.path.join('assets', 'brand', _ten)
+    if os.path.exists(_d):
+        html = html.replace("assets/brand/" + _ten, b64(_d))
+
 # 3. Bỏ phần chỉ dùng cho bản nhiều tệp
 html = html.replace('<link rel="manifest" href="manifest.webmanifest">', '')
 html = re.sub(r"if \('serviceWorker' in navigator.*?\n\}\n", '', html, flags=re.S)
@@ -47,7 +54,13 @@ def nhung(m):
     p = m.group(1)
     if not os.path.exists(p):
         sys.exit('Thiếu tệp: ' + p)
-    return '<script>\n/* ── %s ── */\n%s\n</script>' % (p, open(p, encoding='utf-8').read())
+    ma = open(p, encoding='utf-8').read()
+    if p.endswith('logo-gita.js'):
+        for _t in ('logo-gita.png', 'dau-gita.png'):
+            _d = os.path.join('assets', 'brand', _t)
+            if os.path.exists(_d):
+                ma = ma.replace("assets/brand/" + _t, b64(_d))
+    return '<script>\n/* ── %s ── */\n%s\n</script>' % (p, ma)
 html = re.sub(r'<script src="([^"]+)"></script>', nhung, html)
 
 # 5. Chế độ mẫu: nhúng sẵn gói mẫu, không có kho, không có khoá

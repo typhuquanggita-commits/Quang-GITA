@@ -38,7 +38,7 @@ function tachTu(s){
 /* ─── Nguồn tra cứu: mỗi nguồn khai trường nào đáng cân nặng bao nhiêu ─── */
 function nguon(){
   return [
-    {kho:G.MOTHUC,   loai:'Mô thức',   mau:'#2166CE', go:'mo-thuc',
+    {kho:G.MOTHUC,   loai:'Mô thức',   mau:'#2A72C6', go:'mo-thuc',
      ma:function(x){ return x.id; }, ten:function(x){ return x.title; },
      than:function(x){ return [x.title, (x.keywords||[]).join(' '), x.summary]; }},
     {kho:G.PHACDO,   loai:'Phác đồ',   mau:'#5140B4', go:'phac-do',
@@ -47,9 +47,13 @@ function nguon(){
     {kho:G.KICHBAN,  loai:'Kịch bản',  mau:'#0B6675', go:'kich-ban',
      ma:function(x){ return x.ma; }, ten:function(x){ return x.ten; },
      than:function(x){ return [x.ten, x.mo, x.muc, x.tang]; }},
+    /* Kho 250 tình huống dùng tên trường riêng: th · mo · pt · gp · key.
+       Bản trước đọc x.ten và x.tinhHuong nên không bao giờ trúng — cả kho
+       này im lặng suốt. Đọc đúng trường thì nó trả lời được. */
     {kho:G.TINHHUONG,loai:'Tình huống',mau:'#0B7350', go:'tinh-huong',
-     ma:function(x){ return x.ma || x.id; }, ten:function(x){ return x.ten || x.tinhHuong; },
-     than:function(x){ return [x.ten, x.tinhHuong, x.moTa, x.xuLy, x.giaiPhap]; }},
+     ma:function(x){ return x.key || x.ma || ('TH-' + x.stt); },
+     ten:function(x){ return x.th || x.ten || x.tinhHuong; },
+     than:function(x){ return [x.th, x.mo, x.pt, x.gp, x.chot]; }},
     {kho:G.BAIHOC,   loai:'Bài học',   mau:'#0B7350', go:'tu-duy',
      ma:function(x){ return x.id; }, ten:function(x){ return x.ten; },
      than:function(x){ return [x.ten, x.nguyenLy, x.apDung]; }}
@@ -59,6 +63,25 @@ function nguon(){
 /* Tài liệu gốc: 1.647 dòng bảng — tra riêng vì cấu trúc khác */
 function traTaiLieuGoc(tu){
   var ra = [];
+  /* Tài liệu Drive: tra cả bảng lẫn đoạn văn */
+  (G.TAILIEU_DRIVE || []).forEach(function(d){
+    (d.doan || []).forEach(function(v){
+      var chu = boDau(v), d2 = 0;
+      tu.forEach(function(t){ if(chu.indexOf(t) >= 0) d2 += 2; });
+      if(d2 >= 6) ra.push({
+        diem: d2, loai: 'Tài liệu Học viện', mau: '#185AB4', go: 'tai-lieu-goc',
+        ma: d.ma, ten: d.ten, tom: v.slice(0, 280), muc: d.mo});
+    });
+    (d.bang || []).forEach(function(b){
+      b.hang.forEach(function(h2){
+        var chu = boDau(h2.join(' ')), d2 = 0;
+        tu.forEach(function(t){ if(chu.indexOf(t) >= 0) d2 += 2; });
+        if(d2 >= 6) ra.push({
+          diem: d2, loai: 'Tài liệu Học viện', mau: '#185AB4', go: 'tai-lieu-goc',
+          ma: d.ma, ten: h2[0] || d.ten, tom: h2.slice(1, 3).join(' — ').slice(0, 260), muc: d.ten});
+      });
+    });
+  });
   (G.TAILIEU_GOC || []).forEach(function(d){
     d.bang.forEach(function(b){
       b.hang.forEach(function(h){
@@ -66,7 +89,7 @@ function traTaiLieuGoc(tu){
         var d2 = 0;
         tu.forEach(function(t){ if(chu.indexOf(t) >= 0) d2 += 2; });
         if(d2 >= 4) ra.push({
-          diem: d2, loai: 'Tài liệu gốc', mau: '#C2151C', go: 'tai-lieu-goc',
+          diem: d2, loai: 'Tài liệu gốc', mau: '#BE0E16', go: 'tai-lieu-goc',
           ma: d.ma + '·' + (h[0] || ''), ten: h[1] || h[0],
           tom: h.slice(2, 4).join(' — ').slice(0, 260), muc: b.muc || d.ten
         });

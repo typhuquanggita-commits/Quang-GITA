@@ -74,7 +74,14 @@ function nhanVe(keo, mocChu){
 var CAI_DAT = {
   sapxep:   {kho:'gita365_sapxep',    lay:function(){ return G.SAP_XEP; },   dat:function(v){ G.SAP_XEP = v; }},
   noidung:  {kho:'gita365_sua_noidung',lay:function(){ return G.SUA_ND; },   dat:function(v){ G.SUA_ND = v; }},
-  phanquyen:{kho:'gita365_phanquyen', lay:function(){ return G.PHANQUYEN; }, dat:function(v){ G.PHANQUYEN = v; }}
+  phanquyen:{kho:'gita365_phanquyen', lay:function(){ return G.PHANQUYEN; }, dat:function(v){ G.PHANQUYEN = v; }},
+  /* Tư liệu Tư vấn và Coach đã gửi thêm cho từng nhà, cùng những lời xin
+     đang chờ. Đi chung đường đồng bộ để nhà mình mở máy nào cũng thấy. */
+  khothem:  {kho:'gita365_khach_them', lay:function(){ return G.KHACH_THEM; }, dat:function(v){ G.KHACH_THEM = v; }},
+  xinthem:  {kho:'gita365_xin_them',   lay:function(){ return G.XIN_THEM; },   dat:function(v){ if(Array.isArray(v)) G.XIN_THEM = v; }},
+  /* Hồ sơ ca xử lý. Đây là thứ phải truy được về sau, nên nó đi lên máy chủ
+     chứ không nằm lại một máy. */
+  ca:       {kho:'gita365_ca_xu_ly',   lay:function(){ return G.CA; },        dat:function(v){ if(Array.isArray(v)) G.CA = v; }}
 };
 var KEY_CD_MOC = 'gita365_caidat_moc';
 

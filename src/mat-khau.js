@@ -41,7 +41,7 @@ G.moDoiMatKhau = function(){
     '<p id="mkGoi" class="tiny muted" style="margin:6px 0 12px">Ít nhất mười ký tự, có chữ hoa, chữ thường, chữ số và ký tự đặc biệt.</p>'+
     '<label class="tiny up muted">NHẬP LẠI MẬT KHẨU MỚI</label>'+
     '<input id="mkLai" type="password" autocomplete="new-password" class="inp blk mb">'+
-    '<div id="mkLoi" class="tiny mb" style="color:#C2151C"></div>'+
+    '<div id="mkLoi" class="tiny mb" style="color:#BE0E16"></div>'+
     '<button class="btn pri blk" data-act="doi-mk">Đổi mật khẩu</button>'
   );
   var o = document.getElementById('mkMoi');
@@ -92,14 +92,14 @@ G.moQuenMatKhau = function(){
       '<input id="qmLai" type="password" autocomplete="new-password" class="inp blk mb">'+
       '<button class="btn pri blk" data-act="dat-lai-mk">Đặt lại mật khẩu</button>'+
     '</div>'+
-    '<div id="qmLoi" class="tiny mt" style="color:#C2151C"></div>'
+    '<div id="qmLoi" class="tiny mt" style="color:#BE0E16"></div>'
   );
 };
 
 G.xinMa = function(){
   var loi = document.getElementById('qmLoi');
   var u = ((document.getElementById('qmU')||{}).value || '').trim();
-  function bao(t, c){ if(loi){ loi.textContent = t; loi.style.color = c || '#C2151C'; } }
+  function bao(t, c){ if(loi){ loi.textContent = t; loi.style.color = c || '#BE0E16'; } }
   if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(u)){ bao('Nhập đúng dạng địa chỉ email.'); return; }
   bao('Đang gửi…','var(--ink-3)');
   goi({ fn:'quenMatKhau', u:u })
@@ -118,7 +118,7 @@ G.datLaiMatKhau = function(){
   var ma = ((document.getElementById('qmMa')||{}).value || '').trim();
   var moi = (document.getElementById('qmMoi')||{}).value || '';
   var lai = (document.getElementById('qmLai')||{}).value || '';
-  function bao(t, c){ if(loi){ loi.textContent = t; loi.style.color = c || '#C2151C'; } }
+  function bao(t, c){ if(loi){ loi.textContent = t; loi.style.color = c || '#BE0E16'; } }
   if(!/^\d{6}$/.test(ma)){ bao('Mã gồm đúng sáu chữ số.'); return; }
   if(moi !== lai){ bao('Hai lần nhập mật khẩu mới không khớp.'); return; }
   var r = G.kiemMatKhau(moi);

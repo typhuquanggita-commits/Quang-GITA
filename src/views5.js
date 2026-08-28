@@ -133,7 +133,7 @@ G.VIEWS['ai-dieu-phoi'] = function(){
       '<p class="serif" style="font-size:15.5px;font-style:italic;color:var(--ink);margin-bottom:11px">"'+h(d.hoi)+'"</p>'+
       '<div class="row wrap" style="gap:7px;margin-bottom:11px">'+
         U.chip('Miền '+d.mien+' · '+m.short, m.c)+U.chip('Tầng '+d.tang)+
-        U.chip('Độ gấp: '+d.gap, d.gap==='Cao'?'#C2151C':(d.gap==='Vừa'?'#C2151C':'#665E88'))+'</div>'+
+        U.chip('Độ gấp: '+d.gap, d.gap==='Cao'?'#BE0E16':(d.gap==='Vừa'?'#BE0E16':'#665E88'))+'</div>'+
       '<div class="row wrap" style="gap:14px;padding:12px 14px;border-radius:13px;background:'+k.c+'0f">'+
         '<span style="width:34px;height:34px;border-radius:11px;display:grid;place-items:center;background:'+k.c+'26;color:'+k.c+';flex:none">'+ic('users','w-4 h-4')+'</span>'+
         '<div class="grow" style="min-width:170px"><b class="sm" style="display:block">'+h(k.ten)+'</b>'+
@@ -234,9 +234,9 @@ G.VIEWS['hoc-tu-lon'] = function(){
 
   o += '<div class="grid g4 mb">'+
     U.stat({k:'HỆ THỐNG ĐÃ ĐỌC', v:B.he.length, d:'mạng xã hội · công nghệ · sản xuất', c:'#5140B4'})+
-    U.stat({k:'VIỆC RÚT RA', v:B.viec71.length, d:'cho bản 7.0 và 7.1', c:'#2166CE'})+
+    U.stat({k:'VIỆC RÚT RA', v:B.viec71.length, d:'cho bản 7.0 và 7.1', c:'#185AB4'})+
     U.stat({k:'ĐÃ ĐƯA VÀO BẢN NÀY', v:daLam+'/'+B.viec71.length, d:'chạy được ngay hôm nay', c:'#0B7350'})+
-    U.stat({k:'DỨT KHOÁT KHÔNG LẤY', v:B.khongLay.length, d:'phá ranh giới của mô hình', c:'#C2151C'})+
+    U.stat({k:'DỨT KHOÁT KHÔNG LẤY', v:B.khongLay.length, d:'phá ranh giới của mô hình', c:'#BE0E16'})+
   '</div>';
 
   o += U.sec('MƯỜI HỆ THỐNG · CƠ CHẾ LÕI','Lấy phần làm nên sức mạnh, từ chối phần chỉ phục vụ chỉ số');

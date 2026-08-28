@@ -82,7 +82,7 @@ G.tierOf = function(id){
   return G.TIERS.filter(function(t){return t.id===Number(id);})[0] || G.TIERS[0];
 };
 G.bandColor = function(b){
-  return ({XANH:'#0B7350', VANG:'#C2151C', CAM:'var(--gita-do)', DO:'#C2151C'})[b] || '#665E88';
+  return ({XANH:'#0B7350', VANG:'#BE0E16', CAM:'var(--gita-do)', DO:'#BE0E16'})[b] || '#665E88';
 };
 /* ══════════ PHÂN QUYỀN ══════════
    Hai lớp, theo đúng thứ tự:
@@ -296,7 +296,7 @@ G.accountsModal = function(){
     return {n:n, p:Math.round(n*100/tong)};
   }
   var KHOI = [
-    {t:'BAN ĐIỀU HÀNH', c:'#2166CE', lv:[1,4],
+    {t:'BAN ĐIỀU HÀNH', c:'#2A72C6', lv:[1,4],
      mo:'Thấy gần như toàn bộ hệ thống. Chỉ R01 và R02 có thư mục Quản trị trang; tài chính dừng ở R03.'},
     {t:'ĐỘI NGŨ DẪN DẮT', c:'#5140B4', lv:[5,12],
      mo:'Toàn bộ kho nghề và công cụ dẫn dắt. Không thấy tài chính, điều hành toàn hệ và quản trị trang.'},
@@ -329,7 +329,7 @@ G.accountsModal = function(){
 
   o += U.sec('BỐN CHUYÊN GIA PHẢN BIỆN','Đăng nhập để chấm hệ thống từ góc nhìn của họ');
   o += U.tbl(['Vai kiểm thử','Tài khoản','Mật khẩu',''], G.AUDITORS.map(function(a){
-    return [U.chip(a.ten,'#C2151C'), '<span class="mono sm">'+h(a.u)+'</span>',
+    return [U.chip(a.ten,'#BE0E16'), '<span class="mono sm">'+h(a.u)+'</span>',
       '<span class="mono sm" style="color:var(--gold-ink)">'+h(a.p)+'</span>',
       '<button class="btn sm" data-login="'+h(a.u)+'">Vào</button>'];
   }));
@@ -744,7 +744,7 @@ G.mic = function(){
   r.interimResults = true;
   r.continuous = false;
   G.REC = r;
-  if(btn){ btn.style.color = '#C2151C'; btn.style.borderColor = 'rgba(248,113,113,.6)'; }
+  if(btn){ btn.style.color = '#BE0E16'; btn.style.borderColor = 'rgba(248,113,113,.6)'; }
   U.toast(G.LANG==='en' ? 'Listening… speak now.' : 'Đang nghe… anh chị nói ạ.','ok');
   r.onresult = function(e){
     var txt = '';
@@ -950,6 +950,7 @@ on('[data-act]', function(el){
     document.querySelectorAll('[data-journal]').forEach(function(t){ G.S.journal[t.getAttribute('data-journal')] = t.value; });
     save(); U.toast('Đã ghi nhật ký tối nay. Bảy tối là có một mô thức.','ok');
   }
+  else if(a==='chat-xoa'){ G.chatXoa && G.chatXoa(); }
   else if(a==='ai-ask'){ var oq=document.getElementById('aiQ'); if(oq){ G.aiHoi(oq.value); oq.value=''; } }
   else if(a==='mic') G.mic();
   else if(a==='kb-more'){

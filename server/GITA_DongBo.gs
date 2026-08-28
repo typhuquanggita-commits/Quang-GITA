@@ -33,6 +33,31 @@ function gitaCaiDat_(y, hoSo) {
   try { cu = JSON.parse(kho.getProperty('GITA_CAI_DAT') || '{}'); } catch (e) { cu = {}; }
   var lv = (ROLES[hoSo.role] || { lv: 99 }).lv;
   var gui = y.caiDat || {}, doi = 0;
+
+  /* Hai cụm khác luật: tư liệu Tư vấn và Coach gửi thêm cho từng nhà, và
+     những lời xin đang chờ. Ghi được từ Tư vấn trở lên (bậc ≤ 11) — vì
+     chính họ là người đứng giữa kho và gia đình. Gia đình chỉ đặt lời xin
+     qua cụm xinthem, không bao giờ tự ghi vào cụm khothem. */
+  var CUM_NGHE = ['khothem', 'xinthem', 'ca'];
+  if (lv <= 11) {
+    Object.keys(gui).forEach(function (k) {
+      if (CUM_NGHE.indexOf(k) < 0) return;
+      var v = gui[k];
+      if (!v || typeof v !== 'object' || !v.du) return;
+      if (Number(v.luc || 0) <= Number((cu[k] || {}).luc || 0)) return;
+      cu[k] = { luc: Number(v.luc), du: v.du, boi: hoSo.u };
+      doi++;
+    });
+  } else {
+    /* Gia đình và cộng tác viên: chỉ được đẩy lời XIN lên, không hơn. */
+    var vx = gui.xinthem;
+    if (vx && typeof vx === 'object' && vx.du &&
+        Number(vx.luc || 0) > Number((cu.xinthem || {}).luc || 0)) {
+      cu.xinthem = { luc: Number(vx.luc), du: vx.du, boi: hoSo.u };
+      doi++;
+    }
+  }
+
   if (lv <= 2) {
     Object.keys(gui).forEach(function (k) {
       if (['sapxep', 'noidung', 'phanquyen'].indexOf(k) < 0) return;
@@ -42,13 +67,14 @@ function gitaCaiDat_(y, hoSo) {
       cu[k] = { luc: Number(v.luc), du: v.du, boi: hoSo.u };
       doi++;
     });
-    if (doi) {
-      var tho = JSON.stringify(cu);
-      if (tho.length > 400000) return cu;          /* quá lớn thì không ghi, giữ bản cũ */
-      kho.setProperty('GITA_CAI_DAT', tho);
-      ghiNhatKy_({ viec: 'DONG_BO_CAI_DAT', u: hoSo.u, role: hoSo.role,
-        chiTiet: 'Cập nhật ' + doi + ' cụm cài đặt' });
-    }
+  }
+
+  if (doi) {
+    var tho = JSON.stringify(cu);
+    if (tho.length > 400000) return cu;            /* quá lớn thì không ghi, giữ bản cũ */
+    kho.setProperty('GITA_CAI_DAT', tho);
+    ghiNhatKy_({ viec: 'DONG_BO_CAI_DAT', u: hoSo.u, role: hoSo.role,
+      chiTiet: 'Cập nhật ' + doi + ' cụm cài đặt' });
   }
   return cu;
 }

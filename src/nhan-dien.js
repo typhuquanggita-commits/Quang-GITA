@@ -15,18 +15,18 @@ G.NHAN_DIEN = {
   /* ─── 1 · MÀU ─── */
   mau: {
     chinh: [
-      {ma:'--gita',      hex:'#2166CE', ten:'Xanh GITA',      vai:'Màu chủ đạo. Nét chính của logo, nút chính, viền, biểu tượng.'},
-      {ma:'--gita-sau',  hex:'#174C9E', ten:'Xanh sâu',       vai:'Chữ GITA trong logo, nét ngoài cùng, chữ xanh trên nền sáng.'},
+      {ma:'--gita',      hex:'#2A72C6', ten:'Xanh GITA',      vai:'Màu chủ đạo. Nét chính của logo, nút chính, viền, biểu tượng.'},
+      {ma:'--gita-sau',  hex:'#185AB4', ten:'Xanh sâu',       vai:'Chữ GITA trong logo, nét ngoài cùng, chữ xanh trên nền sáng.'},
       {ma:'--gita-sang', hex:'#4A8FE0', ten:'Xanh sáng',      vai:'Nét trong của logo, chuyển sắc, trạng thái nhẹ.'},
-      {ma:'--gita-do',   hex:'#E4232B', ten:'Đỏ GITA',        vai:'Nét đỏ và ngôi sao đỏ. Dùng ĐIỂM, không dùng mảng lớn.'},
-      {ma:'--gita-do-ink',hex:'#C2151C',ten:'Đỏ đậm',         vai:'Chữ đỏ trên nền sáng, cảnh báo, điều cấm.'}
+      {ma:'--gita-do',   hex:'#F61824', ten:'Đỏ GITA',        vai:'Nét đỏ và ngôi sao đỏ. Dùng ĐIỂM, không dùng mảng lớn.'},
+      {ma:'--gita-do-ink',hex:'#BE0E16',ten:'Đỏ đậm',         vai:'Chữ đỏ trên nền sáng, cảnh báo, điều cấm.'}
     ],
     tang: [
-      {ma:'--t1', hex:'#2166CE', ten:'T1 Nhận diện'},
+      {ma:'--t1', hex:'#2A72C6', ten:'T1 Nhận diện'},
       {ma:'--t2', hex:'#5140B4', ten:'T2 Giải mã'},
       {ma:'--t3', hex:'#0B6675', ten:'T3 Kiến tạo'},
       {ma:'--t4', hex:'#0B7350', ten:'T4 Chuyển hoá'},
-      {ma:'--t5', hex:'#C2151C', ten:'T5 Bứt phá'}
+      {ma:'--t5', hex:'#BE0E16', ten:'T5 Bứt phá'}
     ],
     yNghia: 'Năm tầng đi từ XANH GITA tới ĐỎ GITA — đúng hai màu của logo. '+
             'Chặng đầu mang màu nét xanh, đích đến mang màu ngôi sao đỏ.',
@@ -96,3 +96,68 @@ G.NHAN_DIEN = {
     {b:'Quản trị',   m:'--gita-sau',  mo:'Khu quản trị dùng xanh sâu để tách khỏi khu học tập.'}
   ]
 };
+
+/* ═══════════════════════════════════════════════════════════════
+   MÀN HÌNH · SỔ TAY NHẬN DIỆN GITA
+   Bản viết rõ, đọc thẳng trên ứng dụng. Không nút tải xuống, không
+   tệp nén: mọi thao tác diễn ra ngay tại đây.
+   ═══════════════════════════════════════════════════════════════ */
+(function(){
+var U = G.U, h = U.h, ic = U.ic;
+/* Tệp này nạp trước các tệp màn hình, nên phải tự dựng sổ VIEWS. */
+G.VIEWS = G.VIEWS || {};
+
+G.VIEWS['so-tay-nhan-dien'] = function(){
+  var S = G.SOTAY_NHANDIEN;
+  if(!S) return G.manChuaCapPhep ? G.manChuaCapPhep('so-tay-nhan-dien') :
+    '<div class="card"><p class="sm dim">Phần này mở khi kho nghề được cấp phép.</p></div>';
+
+  var o = U.ph({eyebrow:'BIÊN SOẠN CHUẨN', ic:'book', grad:1,
+    t: S.ten, lead: S.dan});
+
+  /* Mục lục — đọc dài thì phải nhảy được */
+  o += '<div class="card mt2"><div class="tiny up mb">BẢY CHƯƠNG</div>'+
+    '<div class="row wrap" style="gap:8px">'+
+      S.chuong.map(function(c){
+        return '<a class="chip" href="#sotay-'+h(c.so)+'">'+h(c.so)+' · '+h(c.ten)+'</a>';
+      }).join('')+'</div>'+
+    '<p class="tiny muted mt">Toàn bộ nội dung nằm ngay trên trang này. '+
+      'Không có bản tải xuống — tài sản của Học viện chỉ đọc khi đã đăng nhập.</p></div>';
+
+  S.chuong.forEach(function(c){
+    o += '<div class="card mt2" id="sotay-'+h(c.so)+'" style="border-color:var(--gita-vien-1)">'+
+      '<div class="row" style="gap:10px;align-items:baseline;flex-wrap:wrap">'+
+        '<span class="mono" style="font-size:22px;font-weight:800;color:var(--gita)">'+h(c.so)+'</span>'+
+        '<b style="font-size:17px;flex:1;min-width:200px">'+h(c.ten)+'</b>'+
+        (c.nhip ? '<span class="ai-nhip" style="margin:0">'+ic('compass','w-3 h-3')+
+          '<span>'+h(c.nhip)+'</span></span>' : '')+
+      '</div>'+
+      '<div class="tlg-doan mt" style="max-height:none;border:0;padding:14px 0 0;background:none">'+
+        (c.doan || []).map(function(d){ return '<p>'+h(d)+'</p>'; }).join('')+
+      '</div>';
+
+    if(c.bang)
+      o += '<div class="mt">'+U.tbl(c.bang.cot, c.bang.hang.map(function(r){
+        return r.map(function(v, i){
+          return i === 0 ? '<b class="sm">'+h(v)+'</b>' : '<span class="sm">'+h(v)+'</span>';
+        });
+      }))+'</div>';
+
+    if(c.luat)
+      o += '<div class="mt" style="border-left:3px solid var(--gita);padding-left:14px">'+
+        '<div class="tiny up mb" style="color:var(--gita-ink)">LUẬT CỦA CHƯƠNG NÀY</div>'+
+        U.list(c.luat)+'</div>';
+
+    o += '</div>';
+  });
+
+  o += '<div class="card mt2" style="border-color:var(--gita-do)">'+
+    '<div class="up mb" style="color:var(--gita-do-ink)">'+ic('shield','w-4 h-4')+' TÀI SẢN CỦA HỌC VIỆN</div>'+
+    '<p class="sm" style="line-height:1.7">Cuốn sổ này, cùng toàn bộ kho tài liệu, kịch bản và phác đồ '+
+    'trong ứng dụng, là tài sản số của Học viện GITA. Người được cấp tài khoản đọc trong phạm vi vai '+
+    'mình được cấp phép. Không sao chép ra ngoài, không chuyển cho bên thứ ba, không dùng cho mục đích '+
+    'khác khi chưa có sự đồng ý của GITA.</p></div>';
+
+  return o;
+};
+})();

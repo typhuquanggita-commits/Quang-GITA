@@ -9,7 +9,7 @@ var U = G.U, h = U.h, ic = U.ic;
 
 /* ══════════════════ 01 · BẢN ĐỒ GIA ĐÌNH THỊNH VƯỢNG ══════════════════ */
 G.VIEWS['ban-do'] = function(){
-  var V = G.VANHANH, C = ['#2166CE','#5140B4','#0B6675','#0B7350','#C2151C'];
+  var V = G.VANHANH, C = ['#2A72C6','#5140B4','#0B6675','#0B7350','#BE0E16'];
   var o = U.ph({eyebrow:'NHÓM 01 · KHỞI NGUỒN', ic:'map', grad:1,
     t:'Bản Đồ Gia Đình Thịnh Vượng',
     lead:V.summary});
@@ -72,7 +72,7 @@ G.VIEWS['ban-do'] = function(){
 G.khoangModal = function(id){
   var k = (G.VANHANH.khoang||[]).filter(function(x){return x.id===id;})[0];
   if(!k) return;
-  var C = {K1:'#2166CE',K2:'#5140B4',K3:'#0B6675',K4:'#0B7350',K5:'#C2151C'}, c = C[id]||'var(--gita)';
+  var C = {K1:'#2A72C6',K2:'#5140B4',K3:'#0B6675',K4:'#0B7350',K5:'#BE0E16'}, c = C[id]||'var(--gita)';
   var o = '<div class="up" style="color:'+c+'">KHOANG '+k.no+'</div>'+
     '<h2 style="font-size:24px;font-weight:800;margin:6px 0 8px">'+h(k.ten)+'</h2>'+
     '<p class="serif" style="font-size:17px;font-style:italic;color:'+c+';margin-bottom:16px">'+h(k.cauHoi)+'</p>'+
@@ -115,10 +115,10 @@ G.VIEWS['chan-dung-nha'] = function(){
     '</div></div></div>';
 
   o += '<div class="grid g4 mt2">'+
-    U.stat({k:'SỐ LẦN NHẮC / TUẦN', v:f.nhac, d:'mốc đầu năm: 6 lần', c:'#C2151C'})+
+    U.stat({k:'SỐ LẦN NHẮC / TUẦN', v:f.nhac, d:'mốc đầu năm: 6 lần', c:'#BE0E16'})+
     U.stat({k:'MỨC TỰ CHỦ', v:f.tuchu+'%', d:'chuẩn cuối chặng 4: trên 80%', c:'#0B7350'})+
     U.stat({k:'VAI CÓ NGƯỜI GIỮ', v:f.vai+'/9', d:'không ai giữ quá 4 vai', c:'#5140B4'})+
-    U.stat({k:'NGÀY ĐỒNG HÀNH', v:f.ngay, d:'tầng '+f.tier+' · '+G.tierOf(f.tier).days+' ngày', c:'#2166CE'})+
+    U.stat({k:'NGÀY ĐỒNG HÀNH', v:f.ngay, d:'tầng '+f.tier+' · '+G.tierOf(f.tier).days+' ngày', c:'#185AB4'})+
   '</div>';
 
   o += U.sec('BỐN MIỀN G – I – T – A CỦA NHÀ MÌNH', 'Đọc nguyên nhân theo bốn miền thay vì đoán bằng cảm giác');
@@ -137,7 +137,7 @@ G.VIEWS['chan-dung-nha'] = function(){
   }).join('') + '</div>';
 
   o += U.sec('KHOANG 1 — THẤU HIỂU THÀNH VIÊN', V.khoang[0].kpi);
-  o += '<div class="card">'+U.list(V.khoang[0].viecCuThe, '#2166CE')+
+  o += '<div class="card">'+U.list(V.khoang[0].viecCuThe, '#2A72C6')+
     '<div class="mt2" style="padding-top:14px;border-top:1px dashed var(--phu-4)">'+
     '<span class="tiny up" style="color:var(--alert)">CẢNH BÁO</span>'+
     '<p class="sm dim mt">'+h(V.khoang[0].canhBao)+'</p></div></div>';
@@ -160,7 +160,7 @@ G.VIEWS['dinh-vi'] = function(){
   o += '<div class="grid g2">' + V.dauRa.chiSo.map(function(c,i){
     var v = [f.tuchu, 100-f.tuchu, Math.round(f.nhac/6*100), 100-Math.min(95,f.ngay/4),
              f.tier>=4?85:35, f.tier>=5?70:20, Math.round(f.vai/9*100)][i];
-    var cl = ['#0B7350','#5140B4','#C2151C','#0B6675','var(--gita)','#C2151C','#2166CE'][i];
+    var cl = ['#0B7350','#5140B4','#BE0E16','#0B6675','var(--gita)','#BE0E16','#2A72C6'][i];
     return '<div class="card lift"><div class="row"><div class="grow"><b style="font-size:14px">'+h(c.ten)+'</b>'+
       '<p class="tiny muted mt" style="line-height:1.5">Chuẩn: '+h(c.chuan)+'</p></div>'+
       '<b class="mono" style="font-size:22px;color:'+cl+'">'+Math.round(v)+'</b></div>'+
@@ -182,9 +182,9 @@ G.VIEWS['dinh-vi'] = function(){
 G.VIEWS['tam-nhin'] = function(){
   var f = G.myFamily();
   var moc = [
-    {k:'nam5', t:'5 NĂM NỮA', c:'#2166CE', g:'Nhà mình sẽ là một gia đình thế nào?'},
+    {k:'nam5', t:'5 NĂM NỮA', c:'#185AB4', g:'Nhà mình sẽ là một gia đình thế nào?'},
     {k:'nam10',t:'10 NĂM NỮA',c:'#5140B4', g:'Con sẽ đang làm gì, và nhà mình đang giữ điều gì?'},
-    {k:'nam20',t:'20 NĂM NỮA',c:'#2166CE', g:'Điều gì của nhà mình sẽ còn lại và truyền tiếp?'}
+    {k:'nam20',t:'20 NĂM NỮA',c:'#185AB4', g:'Điều gì của nhà mình sẽ còn lại và truyền tiếp?'}
   ];
   var o = U.ph({eyebrow:'NHÓM 01 · KHỞI NGUỒN', ic:'sun', t:'Bảng tầm nhìn gia đình',
     lead:'Cả nhà ngồi đủ mặt, viết gia đình mình muốn trở thành gia đình thế nào trong 5, 10 và 20 năm tới. Viết bằng lời của từng người — không ai viết hộ ai.'});
@@ -300,9 +300,9 @@ G.VIEWS['diem-cham'] = function(){
 
   var avg = Math.round(G.DIEMCHAM.reduce(function(a,x){return a+x.muc;},0)/G.DIEMCHAM.length);
   o += '<div class="grid g4 mb">'+
-    U.stat({k:'ĐIỂM CHẠM', v:'9', d:'trên toàn hành trình', c:'#C2151C'})+
-    U.stat({k:'MỨC CHẠM TRUNG BÌNH', v:avg, d:'thang 0 – 100', c:'#2166CE'})+
-    U.stat({k:'MẠNH NHẤT', v:'DC-07', d:'chiến thắng đầu tiên · 99', c:'#2166CE'})+
+    U.stat({k:'ĐIỂM CHẠM', v:'9', d:'trên toàn hành trình', c:'#BE0E16'})+
+    U.stat({k:'MỨC CHẠM TRUNG BÌNH', v:avg, d:'thang 0 – 100', c:'#185AB4'})+
+    U.stat({k:'MẠNH NHẤT', v:'DC-07', d:'chiến thắng đầu tiên · 99', c:'#185AB4'})+
     U.stat({k:'CẦN NÂNG', v:'DC-09', d:'muốn lan toả · 92', c:'#0B7350'})+
   '</div>';
 
@@ -404,9 +404,9 @@ G.VIEWS['gita-map'] = function(){
 G.VIEWS['chu-ky'] = function(){
   var f = G.myFamily();
   var pdca = [
-    {k:'P',t:'PLAN — Chốt một đòn bẩy',c:'#2166CE',d:'Chọn đúng MỘT điểm chạm nhỏ nhất tạo thay đổi lớn nhất cho 21 ngày tới. Không chọn hai.'},
+    {k:'P',t:'PLAN — Chốt một đòn bẩy',c:'#185AB4',d:'Chọn đúng MỘT điểm chạm nhỏ nhất tạo thay đổi lớn nhất cho 21 ngày tới. Không chọn hai.'},
     {k:'D',t:'DO — Chạy đủ 21 ngày',c:'#5140B4',d:'Mỗi vòng bảy ngày chỉ thay một biến. Ghi lại cả ngày làm được và ngày không.'},
-    {k:'C',t:'CHECK — Đọc bằng số',c:'#C2151C',d:'So với chính nhà mình ba tuần trước. Tìm ngoại lệ tốt: hôm nào khác, và khác vì đâu.'},
+    {k:'C',t:'CHECK — Đọc bằng số',c:'#BE0E16',d:'So với chính nhà mình ba tuần trước. Tìm ngoại lệ tốt: hôm nào khác, và khác vì đâu.'},
     {k:'A',t:'ACT — Giữ, bỏ hoặc nâng',c:'#0B7350',d:'Việc nối được về tầm nhìn thì giữ. Việc không nối được thì bỏ, dù nó tốt.'}
   ];
   var o = U.ph({eyebrow:'NHÓM 02 · HÀNH TRÌNH', ic:'ritual', t:'Chu kỳ 21 / 90 ngày',
@@ -424,7 +424,7 @@ G.VIEWS['chu-ky'] = function(){
   var chang = ['Có cấu trúc','Tự điều hành','Thích ứng','Chuyển giao'];
   o += '<div class="grid g4">' + chang.map(function(c,i){
     var done = f.ngay > (i+1)*90, cur = !done && f.ngay > i*90;
-    var col = ['#2166CE','#5140B4','#0B6675','#0B7350'][i];
+    var col = ['#2A72C6','#5140B4','#0B6675','#0B7350'][i];
     return '<div class="card '+(cur?'glow':'')+'" style="border-color:'+col+(cur?'66':'22')+'">'+
       '<div class="row" style="gap:8px;margin-bottom:8px">'+
         '<span class="pill" style="background:'+col+'22;color:'+col+'">CHẶNG '+(i+1)+'</span>'+
@@ -514,7 +514,7 @@ G.chanDungModal = function(id){
     '<h2 style="font-size:21px;font-weight:800;line-height:1.3;margin-bottom:10px">'+h(c.tieuDe)+'</h2>'+
     '<p class="serif" style="font-size:16px;font-style:italic;color:'+t.c+';margin-bottom:18px">"'+h(c.cauChotLoi)+'"</p>';
   if(c.tuDuyDoi) o += '<div class="card pad-sm mb">'+G.fromTo('TƯ DUY', c.tuDuyDoi.tu, c.tuDuyDoi.sang)+'</div>';
-  var blocks = [['TRƯỚC KHI VÀO', c.truocKhiVao, '#C2151C'],['SAU KHI RA', c.sauKhiRa, '#0B7350'],
+  var blocks = [['TRƯỚC KHI VÀO', c.truocKhiVao, '#BE0E16'],['SAU KHI RA', c.sauKhiRa, '#0B7350'],
     ['TRÍ TUỆ MỚI', c.triTueMoi, '#5140B4'],['HÀNH VI MỚI', c.hanhViMoi, '#0B6675'],
     ['NGƯỜI KHÁC THẤY GÌ', c.nguoiKhacThay, 'var(--gita)'],['BẰNG CHỨNG QUA CHẶNG', c.bangChung, '#0B7350'],
     ['CHƯA PHẢI LÀ', c.chuaPhaiLa, '#FB923C']];

@@ -14,9 +14,9 @@ G.VIEWS['ve-tinh'] = function(){
 
   o += '<div class="grid g4 mb">'+
     U.stat({k:'NHÀ TRONG VỆ TINH', v:'9', d:'nhà biết tới GITA từ chuyện của mình', c:'#0B7350'})+
-    U.stat({k:'ĐÃ BƯỚC VÀO HÀNH TRÌNH', v:'6', d:'4 nhà đang ở Tầng 2 trở lên', c:'#2166CE'})+
+    U.stat({k:'ĐÃ BƯỚC VÀO HÀNH TRÌNH', v:'6', d:'4 nhà đang ở Tầng 2 trở lên', c:'#185AB4'})+
     U.stat({k:'BUỔI NGỒI CÙNG', v:'23', d:'trong 90 ngày gần nhất', c:'#5140B4'})+
-    U.stat({k:'CÂU CHUYỆN ĐÃ KỂ', v:'14', d:'kể cả chỗ mình vấp', c:'#C2151C'})+
+    U.stat({k:'CÂU CHUYỆN ĐÃ KỂ', v:'14', d:'kể cả chỗ mình vấp', c:'#BE0E16'})+
   '</div>';
 
   /* Vòng quỹ đạo */
@@ -60,7 +60,7 @@ G.VIEWS['dai-su'] = function(){
 
   o += U.sec('BỐN CẤP ĐẠI SỨ','Lên cấp bằng việc đã làm, không bằng số người đã mời');
   o += '<div class="grid g4">' + D.capDo.map(function(c,i){
-    var col = ['#2166CE','#5140B4','var(--gita)','#0B7350'][i];
+    var col = ['#2A72C6','#5140B4','var(--gita)','#0B7350'][i];
     return '<div class="card lift" style="border-color:'+col+'2e">'+
       '<div class="row" style="gap:8px;margin-bottom:8px">'+
       '<span style="width:32px;height:32px;border-radius:10px;display:grid;place-items:center;font-weight:900;background:'+col+'22;color:'+col+'">'+c.cap+'</span>'+
@@ -73,7 +73,7 @@ G.VIEWS['dai-su'] = function(){
 
   o += U.sec('HAI MƯƠI NHIỆM VỤ','Mỗi nhiệm vụ là một câu chuyện thật, không phải một bài quảng cáo');
   o += '<div class="grid g-auto">' + D.nhiemVu.map(function(n){
-    var col = ['#2166CE','#5140B4','var(--gita)','#0B7350'][(n.capDo||1)-1];
+    var col = ['#2A72C6','#5140B4','var(--gita)','#0B7350'][(n.capDo||1)-1];
     return '<div class="card pad-sm lift" style="border-color:'+col+'22">'+
       '<div class="row wrap" style="gap:5px;margin-bottom:7px">'+U.chip(n.ma,col)+U.chip('Cấp '+n.capDo)+
       (n.audience?U.chip(n.audience==='HS'?'Học viên':'Phụ huynh'):'')+'</div>'+
@@ -119,9 +119,9 @@ G.VIEWS['coach-deck'] = function(){
 
   o += '<div class="grid g4 mb">'+
     U.stat({k:'GIA ĐÌNH PHỤ TRÁCH', v:G.FAMILIES.length, d:'trải năm tầng', c:'#5140B4'})+
-    U.stat({k:'CẦN CHẠM TRONG 48 GIỜ', v:alert.length, d:'băng CAM và ĐỎ', c:'#C2151C'})+
+    U.stat({k:'CẦN CHẠM TRONG 48 GIỜ', v:alert.length, d:'băng CAM và ĐỎ', c:'#BE0E16'})+
     U.stat({k:'CỔNG SẮP MỞ', v:'3', d:'chuẩn bị bằng chứng trước', c:'#0B7350'})+
-    U.stat({k:'GIỜ ĐỒNG HÀNH THÁNG', v:'186', d:'tỉ lệ nghe 7 khuyên 3', c:'#2166CE'})+
+    U.stat({k:'GIỜ ĐỒNG HÀNH THÁNG', v:'186', d:'tỉ lệ nghe 7 khuyên 3', c:'#185AB4'})+
   '</div>';
 
   o += U.sec('CẦN CHẠM TRƯỚC','Xếp theo băng, không theo thứ tự bảng chữ cái');
@@ -152,9 +152,9 @@ G.VIEWS['tuvan-deck'] = function(){
     lead:'Người đối diện chưa cần nghe mình giỏi thế nào. Họ cần thấy nhà mình trong tấm bản đồ này — rồi tự quyết định.'});
 
   o += '<div class="grid g4 mb">'+
-    U.stat({k:'ĐANG CHỜ PHIÊN MỞ CỬA', v:'3', d:'nhà mới trong tuần', c:'#C2151C'})+
+    U.stat({k:'ĐANG CHỜ PHIÊN MỞ CỬA', v:'3', d:'nhà mới trong tuần', c:'#BE0E16'})+
     U.stat({k:'ĐÃ MỞ CỬA QUÝ NÀY', v:'14', d:'gia đình bước vào Tầng 1', c:'#0B7350'})+
-    U.stat({k:'TỪ GIỚI THIỆU', v:'78%', d:'không từ quảng cáo', c:'#C2151C'})+
+    U.stat({k:'TỪ GIỚI THIỆU', v:'78%', d:'không từ quảng cáo', c:'#BE0E16'})+
     U.stat({k:'MỨC HÀI LÒNG PHIÊN ĐẦU', v:'95', d:'điểm chạm DC-03 được lắng nghe', c:'#5140B4'})+
   '</div>';
 
@@ -209,16 +209,16 @@ G.VIEWS['dieu-hanh'] = function(){
     lead:'Toàn cảnh sức khoẻ hệ sinh thái. Số ở đây để ra quyết định phân bổ nguồn lực — không bao giờ để xếp hạng gia đình.'});
 
   o += '<div class="grid g4 mb">'+
-    U.stat({k:'GIA ĐÌNH ĐỒNG HÀNH', v:H.giaDinh.v.toLocaleString('vi-VN'), d:H.giaDinh.d, c:'#2166CE'})+
+    U.stat({k:'GIA ĐÌNH ĐỒNG HÀNH', v:H.giaDinh.v.toLocaleString('vi-VN'), d:H.giaDinh.d, c:'#185AB4'})+
     U.stat({k:'ĐANG GIỮ NHỊP', v:H.dangHoatDong.v.toLocaleString('vi-VN'), d:H.dangHoatDong.d, c:'#0B7350'})+
-    U.stat({k:'CẦN CHẠM 48 GIỜ', v:H.canhBao.v, d:H.canhBao.d, c:'#C2151C'})+
+    U.stat({k:'CẦN CHẠM 48 GIỜ', v:H.canhBao.v, d:H.canhBao.d, c:'#BE0E16'})+
     U.stat({k:'CỔNG ĐÃ QUA / QUÝ', v:H.cuaNghiemThu.v, d:H.cuaNghiemThu.d, c:'#5140B4'})+
   '</div>';
   o += '<div class="grid g4 mb">'+
     U.stat({k:'COACH ĐANG HOẠT ĐỘNG', v:H.coach.v, d:H.coach.d, c:'#0B6675'})+
-    U.stat({k:'ĐẠI SỨ', v:H.daiSu.v, d:H.daiSu.d, c:'#E4232B'})+
-    U.stat({k:'LƯỢT MỞ KỊCH BẢN', v:H.kichBanDung.v.toLocaleString('vi-VN'), d:H.kichBanDung.d, c:'#2166CE'})+
-    U.stat({k:'DOANH THU QUÝ', v:H.doanhThu.v, d:H.doanhThu.d, c:'#C2151C'})+
+    U.stat({k:'ĐẠI SỨ', v:H.daiSu.v, d:H.daiSu.d, c:'#F61824'})+
+    U.stat({k:'LƯỢT MỞ KỊCH BẢN', v:H.kichBanDung.v.toLocaleString('vi-VN'), d:H.kichBanDung.d, c:'#185AB4'})+
+    U.stat({k:'DOANH THU QUÝ', v:H.doanhThu.v, d:H.doanhThu.d, c:'#BE0E16'})+
   '</div>';
 
   o += '<div class="grid g2">'+
@@ -307,7 +307,7 @@ G.VIEWS['kiem-duyet'] = function(){
   if(!G.can('pro_approve')) return U.lockCard();
   var o = U.ph({eyebrow:'NHÓM 05 · VẬN HÀNH', ic:'check', t:'Kiểm duyệt kho báu vật',
     lead:'Chuẩn nghề trước khi xuất bản. Một bài vi phạm quy tắc an toàn hình ảnh trẻ em bị chặn, không phải bị nhắc nhở.'});
-  var mau = {'Chờ duyệt':'#C2151C','Cần sửa':'#C2151C','Đã duyệt':'#0B7350','Chờ xác nhận':'#5140B4'};
+  var mau = {'Chờ duyệt':'#BE0E16','Cần sửa':'#BE0E16','Đã duyệt':'#0B7350','Chờ xác nhận':'#5140B4'};
   o += U.tbl(['Mã','Loại','Người gửi','Ngày','Trạng thái','Ghi chú chuyên môn'],
     G.DUYET.map(function(d){
       return ['<span class="mono sm">'+h(d.ma)+'</span>', '<span class="sm">'+h(d.loai)+'</span>',
@@ -336,7 +336,7 @@ G.VIEWS['tang-truong'] = function(){
   var o = U.ph({eyebrow:'NHÓM 05 · VẬN HÀNH', ic:'chart', t:'Tài chính & tăng trưởng',
     lead:'Dòng tiền tồn tại để nuôi được sứ mệnh, không phải ngược lại. Bảy mươi tám phần trăm doanh thu đến từ giới thiệu — đó là chỉ số chất lượng thật.'});
   o += '<div class="grid g4 mb">'+
-    U.stat({k:'DOANH THU QUÝ', v:'6,84 tỷ', d:'+18% so với quý trước', c:'#2166CE'})+
+    U.stat({k:'DOANH THU QUÝ', v:'6,84 tỷ', d:'+18% so với quý trước', c:'#185AB4'})+
     U.stat({k:'TỪ GIỚI THIỆU', v:'78%', d:'không chi cho quảng cáo tìm khách', c:'#0B7350'})+
     U.stat({k:'CHI PHÍ MỖI GIA ĐÌNH MỚI', v:'1,4 tr', d:'giảm 34% nhờ vệ tinh đại sứ', c:'#5140B4'})+
     U.stat({k:'GIỮ CHÂN 12 THÁNG', v:'89,3%', d:'chỉ số sống còn của mô hình', c:'#0B6675'})+
@@ -390,7 +390,7 @@ G.VIEWS['hai-long'] = function(){
     '<div style="display:flex;gap:22px">'+
       '<div class="center"><b class="mono" style="font-size:24px;color:#5140B4">'+H.nps+'</b><div class="tiny muted">NPS</div></div>'+
       '<div class="center"><b class="mono" style="font-size:24px;color:#0B7350">'+H.giuNhip+'%</b><div class="tiny muted">GIỮ NHỊP</div></div>'+
-      '<div class="center"><b class="mono" style="font-size:24px;color:#C2151C">'+H.gioiThieu+'%</b><div class="tiny muted">GIỚI THIỆU</div></div>'+
+      '<div class="center"><b class="mono" style="font-size:24px;color:#BE0E16">'+H.gioiThieu+'%</b><div class="tiny muted">GIỚI THIỆU</div></div>'+
     '</div></div></div>';
 
   o += U.sec('BẢY TUẦN GẦN NHẤT','');
@@ -407,7 +407,7 @@ G.VIEWS['hai-long'] = function(){
 
   o += U.sec('HÀI LÒNG THEO TỪNG ĐIỂM CHẠM','Chỗ nào dưới 85 là chỗ đang mất người');
   o += '<div class="grid g3">' + H.theoDiemCham.map(function(d){
-    var c = d.v>=90?'#0B7350':(d.v>=85?'var(--gita)':'#C2151C');
+    var c = d.v>=90?'#0B7350':(d.v>=85?'var(--gita)':'#BE0E16');
     return '<div class="card pad-sm"><div class="row" style="margin-bottom:6px">'+
       '<span class="mono tiny muted">'+h(d.ma)+'</span><span class="grow"></span>'+
       '<b class="mono" style="color:'+c+'">'+d.v+'</b></div>'+
@@ -539,7 +539,7 @@ G.VIEWS['chuan-1000'] = function(){
       '<div class="row wrap" style="gap:12px;margin-bottom:12px">'+
         '<span class="pill" style="background:'+c.c+'22;color:'+c.c+'">'+h(c.ma)+'</span>'+
         '<b class="grow" style="font-size:15px;min-width:180px">'+h(c.ten)+'</b>'+
-        '<b class="mono" style="font-size:19px;color:'+(c.diem>=95?'#0B7350':(c.diem>=88?'var(--gita)':'#C2151C'))+'">'+c.diem+'</b>'+
+        '<b class="mono" style="font-size:19px;color:'+(c.diem>=95?'#0B7350':(c.diem>=88?'var(--gita)':'#BE0E16'))+'">'+c.diem+'</b>'+
         '<span class="muted">/ '+c.max+'</span></div>'+
       U.bar(c.diem, c.c)+
       '<div class="mt2">' + c.y.map(function(y){

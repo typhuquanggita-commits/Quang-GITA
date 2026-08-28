@@ -24,7 +24,7 @@ G.VIEWS['ma-tran'] = function(){
 
   o += '<div class="grid g4 mb">'+
     U.stat({k:'Nhóm vấn đề', v:String(M.nhom.length), d:'13.1 đến 13.11', c:'#0B6675'})+
-    U.stat({k:'Vấn đề',      v:String(M.vande.length), d:'20 vấn đề mỗi nhóm', c:'#2166CE'})+
+    U.stat({k:'Vấn đề',      v:String(M.vande.length), d:'20 vấn đề mỗi nhóm', c:'#185AB4'})+
     U.stat({k:'Tầng đã mở',  v:co.length+'/5', d:co.length<5?'gói tầng còn lại đang mở ở nền':'đủ năm tầng', c:'#0B7350'})+
     U.stat({k:'Ô nội dung',  v:String(M.vande.length*co.length*8), d:'8 cột sâu mỗi tầng', c:'#5140B4'})+
     '</div>';
@@ -129,7 +129,7 @@ G.VIEWS['referral'] = function(){
     '<p class="sm dim" style="line-height:1.75">'+h(R.moUocSo1)+'</p></div>';
 
   o += U.sec('3 · REFERRAL KHÔNG PHÙ HỢP','Nói rõ từ đầu để không làm mất thời gian của ai.');
-  o += '<div class="card" style="border-color:rgba(248,113,113,.3)">'+U.list(R.khongPhuHop,'#C2151C')+'</div>';
+  o += '<div class="card" style="border-color:rgba(248,113,113,.3)">'+U.list(R.khongPhuHop,'#BE0E16')+'</div>';
 
   o += U.sec('4 · DẤU HIỆU NHẬN BIẾT','Nghe phụ huynh nói một trong những câu này thì nghĩ ngay đến GITA.');
   o += '<div class="grid g2">'+R.dauHieu.map(function(d,i){
@@ -140,7 +140,7 @@ G.VIEWS['referral'] = function(){
 
   o += U.sec('5 · BA CÂU HỎI XÁC ĐỊNH REFERRAL','Đủ PAIN + GOAL + GAP mới là một referral chất lượng.');
   o += R.baCauHoi.map(function(q){
-    var c = q.bat==='PAIN'?'#C2151C':q.bat==='GOAL'?'var(--gita)':'#0B6675';
+    var c = q.bat==='PAIN'?'#BE0E16':q.bat==='GOAL'?'var(--gita)':'#0B6675';
     return '<div class="card mb" style="border-color:'+c+'33">'+
       '<div class="row wrap mb" style="gap:8px">'+U.chip(q.bat,c)+'</div>'+
       '<p class="sm" style="line-height:1.7;margin-bottom:6px"><b>'+h('“'+q.hoi+'”')+'</b></p>'+
@@ -323,8 +323,8 @@ G.VIEWS['cay-tien'] = function(){
       '<p class="tiny dim" style="line-height:1.6">'+h(d.y)+'</p></div>';
   }).join('')+'</div>';
   o += '<div class="card mt" style="border-color:rgba(248,113,113,.28)">'+
-    '<div class="tiny up mb" style="color:#C2151C">RANH GIỚI CỦA ĐIỂM SỐ NÀY</div>'+
-    U.list(C.diemCay.luat,'#C2151C')+'</div>';
+    '<div class="tiny up mb" style="color:#BE0E16">RANH GIỚI CỦA ĐIỂM SỐ NÀY</div>'+
+    U.list(C.diemCay.luat,'#BE0E16')+'</div>';
 
   o += U.sec('PHÉP Ô LƯỚI', C.oLuoi.cot);
   o += '<div class="card"><div class="grid g2 mb" style="gap:10px">'+
@@ -382,7 +382,7 @@ G.VIEWS['nhan-su-tt'] = function(){
       '<div class="grid g3" style="gap:10px">'+
       '<div class="card pad-sm"><div class="tiny up muted mb">DẤU HIỆU</div><p class="tiny">'+h(b.dau)+'</p></div>'+
       '<div class="card pad-sm" style="border-color:'+b.c+'33"><div class="tiny up mb" style="color:'+b.c+'">GIỮ BẰNG GÌ</div><p class="tiny">'+h(b.giu)+'</p></div>'+
-      '<div class="card pad-sm" style="border-color:rgba(248,113,113,.28)"><div class="tiny up mb" style="color:#C2151C">MẤT VÌ GÌ</div><p class="tiny">'+h(b.roi)+'</p></div>'+
+      '<div class="card pad-sm" style="border-color:rgba(248,113,113,.28)"><div class="tiny up mb" style="color:#BE0E16">MẤT VÌ GÌ</div><p class="tiny">'+h(b.roi)+'</p></div>'+
       '</div></div>';
   }).join('');
 

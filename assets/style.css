@@ -27,16 +27,18 @@
   /* ══ MÀU THƯƠNG HIỆU — lấy từ logo chuẩn GITA ══
      Logo có ba nét: xanh ngoài đậm, xanh trong sáng, và một nét đỏ; kèm
      năm ngôi sao — bốn xanh, một đỏ. Phần nhận diện chỉ dùng ba màu đó. */
-  --gita:#2166CE;        /* xanh GITA — nét chính, nền, viền, biểu tượng */
-  --gita-sang:#4A8FE0;   /* xanh sáng — nét trong của logo */
-  --gita-sau:#174C9E;    /* xanh sâu — chữ GITA trong logo */
-  --gita-ink:#174C9E;    /* chữ xanh trên nền sáng — 8,19:1 */
-  --gita-do:#E4232B;     /* đỏ GITA — nét đỏ và ngôi sao đỏ */
-  --gita-do-ink:#C2151C; /* chữ đỏ trên nền sáng — 6,14:1 */
+  /* Ba màu lấy THẲNG từ tệp logo gốc bằng cách đếm điểm ảnh, không ước lượng:
+     #185AB4 nét ngoài và chữ GITA · #2A72C6 nét trong · #F61824 nét đỏ. */
+  --gita:#2A72C6;        /* xanh GITA — nét trong của logo, nút và viền */
+  --gita-sang:#5C9BE0;   /* xanh sáng — chuyển sắc, trạng thái nhẹ */
+  --gita-sau:#185AB4;    /* xanh sâu — nét ngoài và chữ GITA trong logo */
+  --gita-ink:#14509E;    /* chữ xanh trên nền sáng — 7,86:1 */
+  --gita-do:#F61824;     /* đỏ GITA — nét đỏ và ngôi sao đỏ, đúng mã logo */
+  --gita-do-ink:#BE0E16; /* chữ đỏ trên nền sáng — 6,43:1 */
 
-  --gita-mo-1:rgba(33,102,206,.07);   --gita-mo-2:rgba(33,102,206,.14);
-  --gita-mo-3:rgba(33,102,206,.22);   --gita-vien-1:rgba(33,102,206,.34);
-  --gita-vien-2:rgba(33,102,206,.50); --gita-day:rgba(33,102,206,.90);
+  --gita-mo-1:rgba(42,114,198,.07);   --gita-mo-2:rgba(42,114,198,.14);
+  --gita-mo-3:rgba(42,114,198,.22);   --gita-vien-1:rgba(42,114,198,.34);
+  --gita-vien-2:rgba(42,114,198,.50); --gita-day:rgba(42,114,198,.90);
 
   /* Tên cũ giữ lại để mã sẵn có không gãy — đều trỏ về màu GITA */
   --gold:var(--gita);  --gold-2:var(--gita-sang);  --gold-ink:var(--gita-ink);
@@ -45,8 +47,8 @@
   /* Năm tầng — đậm lại một nấc để đọc rõ trên giấy */
   /* Năm tầng đi từ XANH GITA tới ĐỎ GITA — đúng hai màu của logo.
      Chặng đầu là màu nét xanh, đích đến là màu ngôi sao đỏ. */
-  --t1:#2166CE;  --t2:#5140B4;  --t3:#0B6675;  --t4:#0B7350;  --t5:#C2151C;
-  --g:#2166CE;  --i:#5140B4;  --t:#0B7350;  --a:#C2151C;
+  --t1:#185AB4;  --t2:#5140B4;  --t3:#0B6675;  --t4:#0B7350;  --t5:#BE0E16;
+  --g:#185AB4;  --i:#5140B4;  --t:#0B7350;  --a:#BE0E16;
 
   --ok:#036B4D; --warn:#8A4A08; --alert:#9A2E07; --bad:#B91C1C;
 
@@ -74,7 +76,7 @@
   --phu-3:rgba(255,255,255,.08);  --phu-4:rgba(255,255,255,.11);
   --phu-5:rgba(255,255,255,.16);  --phu-6:rgba(255,255,255,.24);
   --ink:#F2F0FA;  --ink-2:#C8C2DE;  --ink-3:#A79FC4;  --ink-4:#9992B4;
-  --gita:#4A8FE0;        --gita-sang:#8FBEF2;   --gita-sau:#2166CE;
+  --gita:#4A8FE0;        --gita-sang:#8FBEF2;   --gita-sau:#2A72C6;
   --gita-ink:#7FB0F0;    --gita-do:#FF5A5F;     --gita-do-ink:#FF8A8E;
   --gita-mo-1:rgba(122,168,235,.10);  --gita-mo-2:rgba(122,168,235,.18);
   --gita-mo-3:rgba(122,168,235,.26);  --gita-vien-1:rgba(122,168,235,.38);
@@ -245,9 +247,9 @@ svg{width:1.15em;height:1.15em;flex:none;display:block}
 .brand .mark{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;
   overflow:hidden;box-shadow:0 8px 22px -10px var(--gita-day);flex:none;
   border:1px solid var(--gita-vien-1);background:#FFFFFF}
-.brand .mark svg{width:100%!important;height:100%!important;flex:none;display:block}
-/* Logo lớn — luật svg toàn cục ép mọi biểu tượng về 1.15em nên phải thoát ra */
-.logo-gita{width:100%!important;height:auto!important;flex:initial;display:block}
+.brand .mark img{width:100%;height:100%;object-fit:contain;display:block}
+.logo-gita{width:100%;height:auto;display:block}
+.dau-gita{width:100%;height:100%;object-fit:contain;display:block}
 .brand .nm{font-weight:800;font-size:15px;letter-spacing:.02em;line-height:1.15}
 .brand .sub{font-size:10.5px;color:var(--ink-3);letter-spacing:.1em;text-transform:uppercase}
 
@@ -748,7 +750,7 @@ select.inp option{background:var(--bg-1);color:var(--ink)}
 .nd-logo-p{flex:none;width:96px}
 .nd-dau{width:68px;height:68px;margin:0 auto;border-radius:18px;overflow:hidden;
   border:1px solid var(--gita-vien-1);box-shadow:0 10px 24px -12px var(--gita-day)}
-.nd-dau svg{width:100%!important;height:100%!important;display:block;flex:none}
+.nd-dau img{width:100%;height:100%;object-fit:contain;display:block}
 .nd-mau{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
 .nd-o{display:flex;gap:13px;padding:13px;border-radius:var(--r);border:1px solid var(--line);background:var(--surface)}
 .nd-o-mau{width:52px;height:52px;border-radius:13px;flex:none;background:var(--mc);
@@ -873,3 +875,43 @@ textarea.inp{resize:vertical;min-height:70px;line-height:1.6}
   border-radius:99px;padding:12px 20px;font-size:13.5px;outline:none;color:var(--ink)}
 .ai-go input:focus{border-color:var(--gita)}
 @media(max-width:600px){ .ai-ds{grid-template-columns:1fr} .ai-hoi{max-width:92%} }
+
+/* ═══════════ KHUNG TRÒ CHUYỆN ═══════════ */
+.ch-hop{padding:0;overflow:hidden}
+.ch-dau{display:flex;align-items:center;justify-content:space-between;gap:10px;
+  padding:12px 20px;border-bottom:1px solid var(--line);background:var(--phu-1)}
+.ch-dau-t{display:flex;align-items:center;gap:8px;font-size:13px}
+.ch-dau-t svg{color:var(--gita)}
+.ch-trangthai{display:inline-flex;align-items:center;gap:4px;margin-left:6px;font-size:10.5px;
+  font-weight:700;letter-spacing:.04em;color:var(--ok);text-transform:uppercase}
+.ch-trangthai svg{color:var(--ok)}
+.ch-khung{min-height:280px;max-height:min(56vh,560px);overflow-y:auto;padding:20px;
+  display:flex;flex-direction:column;gap:16px;scroll-behavior:smooth}
+.ch-luot{display:flex;gap:10px;align-items:flex-start}
+.ch-toi{justify-content:flex-end}
+.ch-anh{width:30px;height:30px;border-radius:10px;flex:none;display:grid;place-items:center;
+  font-size:12px;font-weight:800}
+.ch-anh-ai{background:var(--gita-mo-2);color:var(--gita-ink);border:1px solid var(--gita-vien-1)}
+.ch-anh-toi{background:var(--gita);color:#fff}
+.ch-bong{max-width:78%;padding:11px 16px;border-radius:18px 18px 5px 18px;
+  background:var(--gita);color:#fff;font-size:13.5px;line-height:1.65}
+.ch-bong-ai{max-width:88%;background:var(--phu-1);color:var(--ink);
+  border:1px solid var(--line);border-radius:18px 18px 18px 5px;padding:14px 17px}
+.ch-bong-ai .ai-loi{margin-bottom:10px}
+.ch-bong-ai > :last-child{margin-bottom:0}
+.ch-go{display:flex;gap:9px;padding:14px 20px;border-top:1px solid var(--line);background:var(--phu-1)}
+.ch-go input{flex:1;min-width:0;background:var(--surface);border:1px solid var(--line);
+  border-radius:99px;padding:12px 20px;font-size:13.5px;outline:none;color:var(--ink)}
+.ch-go input:focus{border-color:var(--gita)}
+.ch-goiy{gap:6px;padding:0 20px 16px}
+.ai-nguon-cho{color:var(--gita-do-ink)}
+.ai-n-cho{background:var(--phu-1);opacity:.96;cursor:default}
+.ai-n-cho b{color:var(--ink-2)}
+.ai-n-cho-loi{display:block;font-size:11.5px;line-height:1.55;color:var(--ink-3);margin:5px 0 8px}
+.ai-n-cho-loi svg{display:inline;vertical-align:-2px;margin-right:3px;color:var(--gita-do-ink)}
+@media(max-width:600px){ .ch-bong{max-width:88%} .ch-bong-ai{max-width:94%} }
+
+.tlg-doan{max-height:520px;overflow-y:auto;padding:16px 18px;border:1px solid var(--line);
+  border-radius:var(--r);background:var(--surface)}
+.tlg-doan p{font-size:13px;line-height:1.75;color:var(--ink-2);margin-bottom:12px}
+.tlg-doan p:last-child{margin-bottom:0}
