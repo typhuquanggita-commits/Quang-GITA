@@ -21,6 +21,8 @@ theo **Bản Đồ Gia Đình Thịnh Vượng**.
 Mọi việc thường ngày nằm ở **[docs/CACH_LAM.md](docs/CACH_LAM.md)** — một trang.
 Một lệnh làm hết: `node tools/phat-hanh.js`
 
+Không đăng nhập được? **[docs/DANG_NHAP.md](docs/DANG_NHAP.md)** — bấm thẳng vào một vai là vào, không cần mật khẩu.
+
 ## Chạy thử — ba cách
 
 | Cách | Làm gì | Dùng khi |

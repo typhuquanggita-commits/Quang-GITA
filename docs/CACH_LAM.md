@@ -130,6 +130,20 @@ Thay cho bảng bảy dòng phải tự soi bằng mắt.
 
 ---
 
+## Đăng nhập — bắt đầu từ đâu
+
+**Muốn vào app ngay:** mở app → cột phải → **bấm thẳng vào một vai**, vào
+luôn không cần mật khẩu. Hoặc bấm **Xem tài khoản và mật khẩu** ngay trên
+ô đăng nhập.
+
+Đủ 19 tài khoản, mật khẩu, và mỗi vai thấy được gì: **[docs/DANG_NHAP.md](DANG_NHAP.md)**.
+
+> Có **hai bộ tài khoản**. Bộ trong app chạy ngay, dùng để xem thử. Bộ trên
+> máy chủ (sinh bằng `tao-tai-khoan.js`) chỉ chạy sau khi dựng xong máy chủ,
+> và mới là bộ vận hành thật. Đừng lẫn hai bộ.
+
+---
+
 ## Bộ tài khoản khởi đầu
 
 ```bash

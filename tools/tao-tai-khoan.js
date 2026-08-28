@@ -129,6 +129,26 @@ const md = `# GITA 365 — BÀN GIAO BỘ TÀI KHOẢN KHỞI ĐẦU
 
 Sinh lúc: ${new Date().toLocaleString('vi-VN')} · ${tatCa.length} tài khoản
 
+## ĐỌC KỸ CHỖ NÀY TRƯỚC — có HAI bộ tài khoản khác nhau
+
+| | Bộ A — **chạy ngay** | Bộ B — **bảng dưới đây** |
+|---|---|---|
+| Nằm ở đâu | Sẵn trong app và bản web | Máy chủ Apps Script |
+| Dùng được khi nào | **Ngay bây giờ**, không cần làm gì | **Chỉ sau khi** nạp lên máy chủ và nối <code>cau-hinh.js</code> |
+| Mật khẩu | <code>Gita#Super01</code>, <code>Gita#Coach07</code>… — xem ngay trong app | Bảng dưới đây |
+| Để làm gì | Xem thử, kiểm tra giao diện, kiểm phạm vi từng vai | Vận hành thật với dữ liệu thật |
+
+**Muốn vào app ngay bây giờ thì KHÔNG dùng bảng dưới đây.** Làm thế này:
+
+> Mở app → ở cột phải, **bấm thẳng vào một vai** (ví dụ *R01 Super Admin*) →
+> vào luôn, không cần mật khẩu.
+>
+> Hoặc bấm **Xem tài khoản và mật khẩu** để thấy đủ 15 tài khoản kèm mật khẩu.
+
+Bảng dưới đây chỉ dùng tới ở **bước cuối**, khi anh đã dựng xong máy chủ.
+
+---
+
 > ⚠ **Tệp này mang mật khẩu thật.** Phát cho từng người theo kênh riêng —
 > nhắn riêng hoặc đưa tận tay. Đừng gửi cả bảng vào nhóm chat.
 > Người nhận **buộc phải đổi mật khẩu ngay lần đăng nhập đầu**;
@@ -157,7 +177,14 @@ ${hang.slice(15).map(dong).join('\n')}
 Khách hàng muốn có bản giấy thì Coach hoặc quản lý in gửi. Không có
 đường nào cho khách tự xuất hồ sơ.
 
-## Ba việc cần làm ngay
+## Khi nào dùng bảng này
+
+Chỉ sau khi đã xong ba bước trong <code>docs/CACH_LAM.md</code>:
+dán bốn tệp <code>server/*.gs</code> vào Apps Script → nạp bộ khoá → Deploy Web app →
+điền URL vào <code>cau-hinh.js</code>. Chưa xong ba bước đó thì mật khẩu trong bảng
+này chưa có chỗ nào kiểm được.
+
+## Ba việc cần làm khi tới lúc
 
 1. **Nạp tài khoản**: dán \`giay-phep/GITA_NapTaiKhoan.gs\` vào Apps Script →
    chạy \`napTaiKhoanMotLan()\` → thấy log "Đã nạp ${tatCa.length} tài khoản" →

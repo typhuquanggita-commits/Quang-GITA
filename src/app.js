@@ -135,6 +135,10 @@ function gate(){
      }).join('') + '</div>'+
      '<div class="mt2" style="padding-top:16px;border-top:1px solid var(--line)">'+
        '<div class="tiny up muted mb">'+h(G.L('orLogin'))+'</div>'+
+       '<div class="card pad-sm mb" style="border-color:rgba(245,185,66,.32);background:rgba(245,185,66,.06)">'+
+         '<p class="tiny" style="line-height:1.65;color:var(--ink-2)">'+h(G.L('loginHint'))+'</p>'+
+         '<button class="btn ghost sm mt" data-act="show-accounts" style="width:100%">'+ic('users')+h(G.L('seePw'))+'</button>'+
+       '</div>'+
        '<input id="inU" placeholder="name@gita365.vn" autocomplete="username" '+
        'style="width:100%;background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:13px;padding:11px 15px;font-size:13.5px;outline:none;margin-bottom:8px">'+
        '<input id="inP" type="password" placeholder="'+h(G.L('pw'))+'" autocomplete="current-password" '+
