@@ -94,6 +94,14 @@ const mau = {
     .map(p => ({ ma: p.ma, nhom: p.nhom, nhomTen: p.nhomTen, ten: p.ten })),
   MOTHUC: (G.MOTHUC || []).slice(0, 4)
     .map(m => ({ id: m.id, title: m.title, summary: (m.summary || '').slice(0, 120) + '… [cần cấp phép]' })),
+  /* Mười điểm về đích: mở tên và ý nghĩa, mở đủ tiêu chí của điểm mốc
+     đầu tiên. Chín mốc còn lại chỉ đếm số tiêu chí, không mở nội dung. */
+  KPI100: G.KPI100 && {
+    ...G.KPI100,
+    diem: G.KPI100.diem.map((d, i) => ({
+      ...d, tc: i === 0 ? d.tc : d.tc.map(() => '[Tiêu chí mở khi được cấp phép]')
+    }))
+  },
   /* Một bài test rút gọn, đủ để thấy cách chấm và cách phân nhóm. */
   TEST750: (G.TEST750 || []).filter(b => b.tang === 'T1').slice(0, 1)
     .map(b => ({ ...b, mau: true, cau: b.cau.slice(0, 6) }))

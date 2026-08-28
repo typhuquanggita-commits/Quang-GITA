@@ -6,7 +6,7 @@ const path = require('path');
 
 const GOC = path.join(__dirname, '..');
 const DICH = path.join(__dirname, 'app');
-const LAY = ['index.html', 'src', 'assets', 'manifest.webmanifest', 'kho'];
+const LAY = ['index.html', 'cau-hinh.js', 'src', 'assets', 'manifest.webmanifest', 'kho'];
 
 function chep(tu, den) {
   const st = fs.statSync(tu);

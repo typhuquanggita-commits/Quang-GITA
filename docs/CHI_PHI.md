@@ -13,11 +13,11 @@ và số lượt hỏi trợ lý.
 | | |
 |---|---|
 | Lần mở đầu (đã nén) | **178 KB** |
-| Toàn bộ app gồm 1.000 kịch bản + 220 phác đồ | **348 KB** |
+| Toàn bộ app gồm 1.000 kịch bản, 220 phác đồ, 750 câu test | **348 KB** |
 | Lần mở thứ hai trở đi | **0 KB** — chạy từ máy, kể cả mất mạng |
 | Máy chủ xử lý mỗi lần mở màn hình | **0 ms** — giao diện dựng trong máy |
 
-Kho chuyên môn 955 KB không tải ở lần mở đầu; nó được nạp lúc máy rảnh hoặc
+Kho chuyên môn 2,3 MB (đã mã hoá, bảy gói) không tải ở lần mở đầu; nó được nạp lúc máy rảnh hoặc
 đúng lúc người dùng mở một kệ cần tới.
 
 ## Bảng chi phí — gói khuyến nghị
@@ -45,6 +45,9 @@ Còn dư **225.000đ** so với trần 500.000đ.
 | 5.000 gia đình | ≈ 1,8 GB | 0đ | ≈ 150.000đ | ≈ 275.000đ |
 | 10.000 gia đình | ≈ 3,5 GB | 0đ | ≈ 300.000đ | ≈ 425.000đ |
 | 50.000 gia đình | ≈ 17 GB | 0đ | cần trần riêng | tách ngân sách AI |
+
+Các bước triển khai đầy đủ — kể cả máy chủ cấp phép — nằm ở
+`docs/TRIEN_KHAI_WEB.md`. Phần dưới là bản rút gọn.
 
 ## Triển khai — 20 phút, 0đ hosting
 
