@@ -120,6 +120,10 @@ svg{width:1.15em;height:1.15em;flex:none;display:block}
 .btn.ghost{background:transparent;border-color:var(--line)}
 .btn.sm{padding:7px 14px;font-size:12.5px}
 .btn.blk{width:100%}
+.inp{width:100%;background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:13px;
+  padding:11px 15px;font-size:13.5px;outline:none;color:var(--ink)}
+.inp:focus{border-color:rgba(245,185,66,.5)}
+.inp.blk{display:block;margin-bottom:8px}
 .btn.off{opacity:.42;filter:saturate(.35);pointer-events:none}
 .btn svg{width:17px;height:17px;flex:none}
 

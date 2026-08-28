@@ -100,6 +100,20 @@ try {
 chay('node', ['tools/kiem-tra.js']);
 if (mayChu) { try { process.kill(-mayChu.pid); } catch (e) {} }
 
+/* ─── 5b. Thử bản máy tính ─── */
+tieuDe('THỬ BẢN MÁY TÍNH');
+if (co('desktop/node_modules/electron/dist/electron')) {
+  chay('node', ['desktop/chuan-bi.js']);
+  try {
+    execFileSync('xvfb-run', ['-a', 'node', 'tools/thu-ban-may-tinh.js'], { cwd: GOC, stdio: 'inherit' });
+  } catch (e) {
+    try { chay('node', ['tools/thu-ban-may-tinh.js']); }
+    catch (e2) { console.error('\n✗ DỪNG Ở BƯỚC ' + buoc + ' — bản máy tính không đạt.'); process.exit(1); }
+  }
+} else {
+  console.log('  ⚠ Bỏ qua — chưa cài Electron. Chạy: cd desktop && npm ci');
+}
+
 /* ─── 6. Soát tài sản trước khi đẩy ─── */
 tieuDe('SOÁT TÀI SẢN TRƯỚC KHI ĐẨY');
 let ro = 0;

@@ -10,7 +10,7 @@ window.G = G;
 
 G.META = {
   name: 'GITA 365',
-  version: '7.4',
+  version: '7.5',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -58,7 +58,11 @@ G.PERM = {
   fin_view:3, fin_payout:3, fin_payroll:3, fin_create_order:11,
   pro_approve:4, pro_report:4, pro_override:4, pro_assign:5, pro_coach:8, pro_assess:10,
   pro_view_all:4, pro_consult:11,
-  usr_self_data:15, usr_do_test:15, usr_referral:15
+  usr_self_data:15, usr_do_test:15, usr_referral:15,
+  /* Xuất tài sản ra ngoài — chỉ người của GITA 365 từ cấp quản lý.
+     Khách hàng (R13 phụ huynh, R14 học viên) và CTV (R15) KHÔNG có hai quyền này,
+     nên không in được PDF và không đẩy được bảng tính lên Drive. */
+  xuat_pdf:5, xuat_sheet:4
 };
 
 /* Sáu chân dung người dùng — lời mời bước vào, hiển thị ở Cổng vào */

@@ -416,5 +416,5 @@ on('[data-mtt]', function(el){
   document.querySelectorAll('[data-mtp]').forEach(function(p){
     p.style.display = p.getAttribute('data-mtp')===t ? 'block' : 'none'; });
 });
-on('[data-mtin]', function(){ window.print(); });
+on('[data-mtin]', function(){ G.inTrang('Phác đồ ma trận'); });
 })();

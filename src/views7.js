@@ -334,6 +334,33 @@ G.VIEWS['xuat-du-lieu'] = function(){
   var X = G.XUAT;
   var o = U.ph({eyebrow:'NHÓM 05 · VẬN HÀNH', ic:'out', grad:1, t:'Xuất dữ liệu', lead:X.cot});
 
+  /* Hai đường ra, và một đường đã bị gỡ bỏ */
+  o += '<div class="grid g2 mb">' + (X.duong||[]).map(function(d){
+    var duoc = G.can(d.quyen);
+    return '<div class="card" style="border-color:'+d.c+'44;background:'+d.c+'0a">'+
+      '<div class="row wrap mb" style="gap:8px">'+U.chip(d.ma,d.c)+
+      (duoc?'<span class="chip on">'+ic('check','w-3 h-3')+' vai này được dùng</span>'
+           :'<span class="chip">'+ic('lock','w-3 h-3')+' ngoài phạm vi vai này</span>')+'</div>'+
+      '<b style="color:'+d.c+';font-size:15px;display:block;margin-bottom:7px">'+h(d.ten)+'</b>'+
+      '<p class="tiny dim mb" style="line-height:1.6">'+h(d.cach)+'</p>'+
+      '<div class="tiny" style="color:var(--ink-4)">'+ic('users','w-3 h-3')+' '+h(d.ai)+'</div></div>';
+  }).join('') + '</div>';
+
+  if(X.daBo){
+    o += '<div class="card mb" style="border-color:rgba(248,113,113,.3)">'+
+      '<div class="tiny up mb" style="color:#F87171">'+h(X.daBo.ten)+'</div>'+
+      '<p class="sm dim" style="line-height:1.7">'+h(X.daBo.vi)+'</p></div>';
+  }
+  if(X.driveAdmin){
+    o += '<div class="card mb" style="border-color:rgba(16,185,129,.32)">'+
+      '<div class="row mb" style="gap:8px"><span style="color:#10B981">'+ic('vault','w-4 h-4')+'</span>'+
+      '<b>'+h(X.driveAdmin.ten)+'</b></div>'+
+      '<p class="sm dim mb" style="line-height:1.7">'+h(X.driveAdmin.y)+'</p>'+
+      '<a class="btn ghost sm" href="'+h(X.driveAdmin.url)+'" target="_blank" rel="noopener">'+
+      ic('arrow')+'Mở thư mục Drive</a></div>';
+  }
+
+  o += U.sec('NĂM LOẠI DỮ LIỆU','Bấm để xuất. Loại nào ngoài phạm vi vai thì nút khoá.');
   o += '<div class="grid g2">' + X.loai.map(function(l){
     var duoc = G.can(l.quyen);
     return '<div class="card '+(duoc?'lift':'')+'" style="border-color:'+l.c+(duoc?'2e':'14')+';'+(duoc?'':'opacity:.6')+'">'+
@@ -343,13 +370,13 @@ G.VIEWS['xuat-du-lieu'] = function(){
       '<b style="font-size:15px;display:block;margin-bottom:8px;color:'+l.c+'">'+h(l.ten)+'</b>'+
       '<div class="tiny up muted mb">GỒM</div><p class="sm dim" style="line-height:1.6;margin-bottom:9px">'+h(l.gom)+'</p>'+
       '<div class="tiny up muted mb">DÙNG KHI NÀO</div><p class="sm muted" style="line-height:1.6">'+h(l.dung)+'</p>'+
-      (duoc ? '<button class="btn pri blk mt2" data-act="xuat" data-ma="'+h(l.ma)+'">'+ic('out')+'Xuất '+
-        (l.ten.indexOf('PDF')>=0?'PDF':'CSV')+'</button>'
+      (duoc ? '<button class="btn pri blk mt2" data-act="xuat" data-ma="'+h(l.ma)+'">'+ic('out')+
+        (l.dang==='PDF' ? 'In hoặc lưu PDF' : 'Đẩy lên Drive của Admin')+'</button>'
             : '<button class="btn ghost blk mt2" disabled style="opacity:.5">Ngoài phạm vi vai này</button>')+
       '</div>';
   }).join('') + '</div>';
 
-  o += U.sec('NĂM LUẬT XUẤT DỮ LIỆU','Admin chỉ định vai nào được xuất loại nào');
+  o += U.sec('SÁU LUẬT XUẤT DỮ LIỆU','Admin chỉ định vai nào được xuất loại nào');
   o += '<div class="card">' + X.luat.map(function(l,i){
     return '<div class="rule"><span class="n">'+(i+1)+'</span><div class="tx"><b>'+h(l)+'</b></div></div>';
   }).join('') + '</div>';

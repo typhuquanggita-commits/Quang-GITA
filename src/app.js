@@ -140,6 +140,7 @@ function gate(){
        '<input id="inP" type="password" placeholder="'+h(G.L('pw'))+'" autocomplete="current-password" '+
        'style="width:100%;background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:13px;padding:11px 15px;font-size:13.5px;outline:none">'+
        '<button class="btn pri blk mt" data-act="do-login">'+ic('arrow')+h(G.L('login'))+'</button>'+
+       '<button class="btn ghost blk mt" data-act="quen-mk" style="font-size:12.5px">'+h(G.L('forgot'))+'</button>'+
        '<p class="tiny muted mt center">'+h(G.L('auditorsNote'))+'</p>'+
      '</div></div></div></div>';
   document.getElementById('app').innerHTML = o;
@@ -184,6 +185,8 @@ function doLogin(u, p){
     shell();
     U.toast('Chào ' + a.ten + ' · ' + G.S.roleObj.n +
       (G.KHO.cheDoMau ? ' · chế độ mẫu' : ' · đã mở ' + G.KHO.daNap.length + ' gói'), 'ok');
+    if(G.batDongBo) G.batDongBo();
+    if(G.kiemBanMoi) G.kiemBanMoi();
   });
 }
 G.doLogin = doLogin;
@@ -228,6 +231,9 @@ function leftNav(){
         '</div></div>';
     }).join('') + '</div>'+
     '<div class="foot"><button class="nav-i" data-v="toi">'+ic('home')+'<span class="lb">'+h(G.L('myAccount'))+'</span></button>'+
+    '<button class="nav-i" data-act="doi-mk-mo">'+ic('lock')+'<span class="lb">'+h(G.L('changePw'))+'</span></button>'+
+    (G.API_CAP_PHEP ? '<button class="nav-i" data-act="dong-bo">'+ic('orbit')+'<span class="lb">'+h(G.L('sync'))+
+      (G.DONGBO && G.DONGBO.choBaoNhieu ? ' ('+G.DONGBO.choBaoNhieu+')' : '')+'</span></button>' : '')+
     '<button class="nav-i" data-act="logout">'+ic('out')+'<span class="lb">'+h(G.L('logout'))+'</span></button></div>';
 }
 
@@ -400,6 +406,7 @@ function render(){
 }
 G.render = render;
 G.save   = save;
+G.dangXuat = function(){ var b=document.querySelector('[data-act="logout"]'); if(b) b.click(); };
 
 G.go = function(v){
   if(!G.VIEWS[v]) return;
@@ -503,76 +510,109 @@ G.ask = function(q){
   }).join('');
 };
 
-/* ═══════════════ XUẤT DỮ LIỆU ═══════════════ */
-function taiVe(ten, noi, kieu){
-  try{
-    var b = new Blob(['\ufeff' + noi], {type: kieu + ';charset=utf-8'});
-    var u = URL.createObjectURL(b), a = document.createElement('a');
-    a.href = u; a.download = ten; document.body.appendChild(a); a.click();
-    setTimeout(function(){ URL.revokeObjectURL(u); a.remove(); }, 1500);
-    return true;
-  }catch(e){ return false; }
-}
-function csv(cot, dong){
-  var q = function(v){ v = String(v===undefined||v===null?'':v); 
-    return /[",\n;]/.test(v) ? '"' + v.replace(/"/g,'""') + '"' : v; };
-  return [cot.map(q).join(';')].concat(dong.map(function(r){ return r.map(q).join(';'); })).join('\r\n');
-}
+/* ═══════════════ CỔNG IN — MỘT CỬA DUY NHẤT ═══════════════
+   Trước đây window.print() được gọi thẳng ở bốn chỗ mà không kiểm quyền,
+   nên phụ huynh và học viên in được hồ sơ chuyên môn. Nay mọi đường in
+   đều phải đi qua hàm này. */
+G.coTheIn = function(){ return G.can('xuat_pdf'); };
+G.inTrang = function(nhan){
+  if(!G.coTheIn()){
+    U.toast('Chỉ người của GITA 365 từ cấp quản lý mới xuất được bản in. Tài khoản này không có quyền đó.','err');
+    if(G.secLog) G.secLog('Chặn in', (nhan||G.S.view) + ' — vai ' + (G.S.role||'?') + ' không có quyền xuat_pdf', 'Đã chặn');
+    return false;
+  }
+  if(G.secLog) G.secLog('In trang', (nhan||G.S.view) + ' · mã bản ' + dauBan(), 'Ghi nhận');
+  U.toast('Đang mở hộp in. Bản in mang mã ' + dauBan() + ' và đã ghi vào nhật ký.','ok');
+  setTimeout(function(){ window.print(); }, 400);
+  return true;
+};
+
+/* ═══════════════ XUẤT DỮ LIỆU ═══════════════
+   Không còn tải tệp về máy. Hai đường duy nhất:
+     · PDF  — in ra, chỉ vai có quyền xuat_pdf
+     · SHEET— đẩy thẳng lên Google Sheet trong thư mục Drive của Admin,
+              chỉ vai có quyền xuat_sheet. Không đi qua máy người dùng
+              nên không có tệp nào nằm lại trong thư mục Tải về. */
 function dauBan(){
   var d = new Date(), p = function(x){ return String(x).padStart(2,'0'); };
   return 'GITA-' + (G.S.role||'--') + '-' + d.getFullYear() + p(d.getMonth()+1) + p(d.getDate()) +
          '-' + p(d.getHours()) + p(d.getMinutes());
 }
+G.dauBan = dauBan;
+
+/* Gom dữ liệu của một loại xuất thành {cot, dong} */
+function bangXuat(ma){
+  if(ma==='X2'){
+    var fs = G.FAMILIES || [];
+    return { ten:'Danh sách khách hàng',
+      cot:['Mã nhà','Học viên','Lớp','Người lớn','Tầng','Ngày','Coach','Nhắc/tuần','Tự chủ %','Vai giữ','Băng','Kỳ tích'],
+      dong: fs.map(function(f){ return [f.id,f.hv,f.lop,f.ph,'T'+f.tier,f.ngay,f.coach,f.nhac,f.tuchu,f.vai+'/9',f.band,f.kyTich]; }) };
+  }
+  if(ma==='X3'){
+    var f2 = G.myFamily();
+    return { ten:'Bảng số ' + f2.nha,
+      cot:['Chỉ số','Giá trị','Chuẩn'],
+      dong:[['Mức tự chủ', f2.tuchu + '%', 'trên 80% cuối chặng 4'],
+            ['Số lần nhắc mỗi tuần', f2.nhac, 'giảm rõ so với mốc đầu năm'],
+            ['Vai có người giữ', f2.vai + '/9', 'đủ chín vai'],
+            ['Ngày đồng hành', f2.ngay, 'theo tầng ' + f2.tier],
+            ['Băng sức khoẻ', f2.band, 'XANH'],
+            ['Kỳ tích năm', f2.kyTich, 'có bằng chứng']] };
+  }
+  if(ma==='X4'){
+    return { ten:'Đội ngũ và KPI',
+      cot:['Tài khoản','Họ tên','Vai','KPI %','Ngày mở','Chưa đăng nhập','Trạng thái'],
+      dong:(G.TAIKHOAN_KPI||[]).map(function(x){ return [x.u,x.ten,x.vai,x.kpi,x.ngay,x.hd,x.trang]; }) };
+  }
+  if(ma==='X5'){
+    return { ten:'Nhật ký cấp phát',
+      cot:['Mã bản','Tài liệu','Người nhận','Lúc cấp'],
+      dong:((G.DAU_MAT&&G.DAU_MAT.mau)||[]).map(function(m){ return [m.ma,m.tl,m.ai,m.luc]; }) };
+  }
+  return null;
+}
+
 G.xuat = function(ma){
   var l = (G.XUAT.loai||[]).filter(function(x){return x.ma===ma;})[0];
-  if(!l){ return; }
+  if(!l) return;
   if(!G.can(l.quyen)){ U.toast('Vai này chưa được Admin cấp quyền xuất loại dữ liệu đó.','err'); return; }
-  var d = dauBan(), ok = false;
 
-  if(ma==='X1'){                       /* Hồ sơ gia đình · PDF */
-    U.toast('Đang mở hộp in — chọn "Lưu thành PDF" để xuất hồ sơ.','ok');
-    setTimeout(function(){ window.print(); }, 400);
-    ok = true;
-  }
-  else if(ma==='X2'){                  /* Danh sách khách hàng · CSV */
-    var fs = G.FAMILIES || [];
-    if(fs.length > 50) G.secLog && G.secLog('Xuất danh sách lớn', fs.length + ' dòng — cần lý do theo luật xuất số 3', 'Cảnh báo');
-    ok = taiVe(d + '-danh-sach-khach-hang.csv', csv(
-      ['Mã nhà','Học viên','Lớp','Người lớn','Tầng','Ngày','Coach','Nhắc/tuần','Tự chủ %','Vai giữ','Băng','Kỳ tích'],
-      fs.map(function(f){ return [f.id,f.hv,f.lop,f.ph,'T'+f.tier,f.ngay,f.coach,f.nhac,f.tuchu,f.vai+'/9',f.band,f.kyTich]; })
-    ), 'text/csv');
-  }
-  else if(ma==='X3'){                  /* Bảng số một gia đình · CSV */
-    var f2 = G.myFamily();
-    ok = taiVe(d + '-bang-so-' + U.slug(f2.nha) + '.csv', csv(
-      ['Chỉ số','Giá trị','Chuẩn'],
-      [['Mức tự chủ', f2.tuchu + '%', 'trên 80% cuối chặng 4'],
-       ['Số lần nhắc mỗi tuần', f2.nhac, 'giảm rõ so với mốc đầu năm'],
-       ['Vai có người giữ', f2.vai + '/9', 'đủ chín vai'],
-       ['Ngày đồng hành', f2.ngay, 'theo tầng ' + f2.tier],
-       ['Băng sức khoẻ', f2.band, 'XANH'],
-       ['Kỳ tích năm', f2.kyTich, 'có bằng chứng']]
-    ), 'text/csv');
-  }
-  else if(ma==='X4'){                  /* Đội ngũ và KPI · CSV */
-    ok = taiVe(d + '-doi-ngu-kpi.csv', csv(
-      ['Tài khoản','Họ tên','Vai','KPI %','Ngày mở','Chưa đăng nhập','Trạng thái'],
-      (G.TAIKHOAN_KPI||[]).map(function(x){ return [x.u,x.ten,x.vai,x.kpi,x.ngay,x.hd,x.trang]; })
-    ), 'text/csv');
-  }
-  else if(ma==='X5'){                  /* Nhật ký cấp phát · CSV */
-    ok = taiVe(d + '-nhat-ky-cap-phat.csv', csv(
-      ['Mã bản','Tài liệu','Người nhận','Lúc cấp'],
-      ((G.DAU_MAT&&G.DAU_MAT.mau)||[]).map(function(m){ return [m.ma,m.tl,m.ai,m.luc]; })
-    ), 'text/csv');
-  }
+  /* PDF — qua cổng in duy nhất */
+  if(l.dang === 'PDF'){ G.inTrang(l.ten); return; }
 
-  if(ok){
-    U.toast('Đã xuất ' + l.ten + '. Bản này mang mã ' + d + ' và đã ghi vào nhật ký.','ok');
-    if(G.secLog) G.secLog('Xuất dữ liệu', l.ten + ' · mã bản ' + d, 'Ghi nhận');
-  } else if(ma!=='X1'){
-    U.toast('Trình duyệt chặn tải tệp. Thử lại trên bản máy tính hoặc bản web.','err');
+  /* SHEET — đẩy lên Drive của Admin, không tải về máy */
+  if(!G.can('xuat_sheet')){
+    U.toast('Chỉ Ban điều hành mới đẩy được bảng tính lên Drive. Tài khoản này chưa được cấp.','err');
+    if(G.secLog) G.secLog('Chặn xuất bảng tính', l.ten + ' — vai ' + G.S.role + ' thiếu quyền xuat_sheet', 'Đã chặn');
+    return;
   }
+  var b = bangXuat(ma);
+  if(!b || !b.dong.length){ U.toast('Chưa có dữ liệu để xuất.','err'); return; }
+  if(!G.API_CAP_PHEP){
+    U.toast('Chưa nối máy chủ nên chưa đẩy được lên Drive. Xem docs/TRIEN_KHAI_WEB.md.','err');
+    return;
+  }
+  var maBan = dauBan();
+  U.toast('Đang tạo bảng tính trên Drive…','ok');
+  fetch(G.API_CAP_PHEP, {
+    method:'POST', headers:{'Content-Type':'text/plain;charset=utf-8'},
+    body: JSON.stringify({ fn:'xuatSheet', u:G.S.acc && G.S.acc.u, token:G.PHIEN_TOKEN||'',
+      loai:ma, ten:b.ten, maBan:maBan, cot:b.cot, dong:b.dong })
+  }).then(function(r){ return r.json(); })
+    .then(function(d){
+      if(!d || !d.ok) throw new Error(d && d.error || 'Máy chủ từ chối');
+      G.SHEET_MOI = { ten:b.ten, url:d.url, luc:new Date().toLocaleString('vi-VN'), ma:maBan };
+      U.modal('<h2 style="font-size:20px;font-weight:800;margin-bottom:10px">Đã tạo bảng tính trên Drive</h2>'+
+        '<p class="sm dim" style="line-height:1.75;margin-bottom:12px">Bảng <b>'+U.h(b.ten)+'</b> · '+b.dong.length+
+        ' dòng đã nằm trong thư mục Drive của Admin. Không có tệp nào tải về máy này.</p>'+
+        '<div class="card pad-sm mb"><div class="tiny up muted mb">MÃ BẢN</div><p class="sm mono">'+U.h(maBan)+'</p></div>'+
+        '<a class="btn pri sm" href="'+U.h(d.url)+'" target="_blank" rel="noopener">Mở bảng tính</a>');
+      if(G.secLog) G.secLog('Xuất bảng tính', l.ten + ' · ' + b.dong.length + ' dòng · mã bản ' + maBan, 'Ghi nhận');
+    })
+    .catch(function(e){
+      U.toast('Không đẩy được lên Drive: ' + e.message, 'err');
+      if(G.secLog) G.secLog('Xuất bảng tính hỏng', l.ten + ' · ' + e.message, 'Cảnh báo');
+    });
 };
 
 /* ═══════════════ NÓI VÀO MICRO ═══════════════ */
@@ -678,7 +718,7 @@ on('[data-switch]', function(el){
 });
 on('[data-check]', function(el){
   var k = el.getAttribute('data-check');
-  G.S.checks[k] = !G.S.checks[k]; save(); render();
+  G.S.checks[k] = !G.S.checks[k]; save(); if(G.danhDau) G.danhDau('checks', k); render();
   if(G.S.checks[k]) U.toast('Ghi nhận. Một việc nhỏ làm được hôm nay hơn mười việc định làm.','ok');
 });
 on('[data-vb]', function(el){ G.vanBanModal(el.getAttribute('data-vb')); });
@@ -700,7 +740,7 @@ on('[data-qf]', function(el){
   document.querySelectorAll('#qtList [data-f]').forEach(function(c){
     c.style.display = (f==='ALL' || c.getAttribute('data-f').indexOf(f)>=0) ? '' : 'none'; });
 });
-on('[data-mood]', function(el){ G.S.mood = el.getAttribute('data-mood'); save(); render(); });
+on('[data-mood]', function(el){ G.S.mood = el.getAttribute('data-mood'); save(); if(G.danhDau) G.danhDau('mood','mood'); render(); });
 on('[data-kh]', function(el){ G.khoangModal(el.getAttribute('data-kh')); });
 on('[data-vai]', function(el){ G.vaiModal(el.getAttribute('data-vai')); });
 on('[data-pd]', function(el){ G.phacDoModal(el.getAttribute('data-pd')); });
@@ -833,7 +873,13 @@ on('[data-act]', function(el){
     document.getElementById('qtCount').textContent = G.S.qtShown;
   }
   else if(a==='xuat') G.xuat(el.getAttribute('data-ma'));
-  else if(a==='in-vanban'){ window.print(); }
+  else if(a==='in-vanban'){ G.inTrang('Văn bản mẫu'); }
+  else if(a==='quen-mk'){ G.moQuenMatKhau && G.moQuenMatKhau(); }
+  else if(a==='xin-ma'){ G.xinMa && G.xinMa(); }
+  else if(a==='dat-lai-mk'){ G.datLaiMatKhau && G.datLaiMatKhau(); }
+  else if(a==='doi-mk-mo'){ G.moDoiMatKhau && G.moDoiMatKhau(); }
+  else if(a==='doi-mk'){ G.doiMatKhau && G.doiMatKhau(); }
+  else if(a==='dong-bo'){ G.dongBo && G.dongBo(true); }
   else if(a==='chep-vanban'){
     var m = document.getElementById('vbMau');
     if(m && navigator.clipboard) navigator.clipboard.writeText(m.textContent)
@@ -975,7 +1021,7 @@ G.boot = function(){
       var hv = location.hash.replace('#','');
       if(hv && G.VIEWS[hv]) G.S.view = hv;
       manCho('Đang mở kho theo phạm vi được cấp phép…');
-      G.napKho().then(function(){ shell(); });
+      G.napKho().then(function(){ shell(); if(G.batDongBo) G.batDongBo(); if(G.kiemBanMoi) G.kiemBanMoi(); });
       return;
     }
   }

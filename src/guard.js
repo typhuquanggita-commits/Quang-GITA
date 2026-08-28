@@ -66,13 +66,26 @@ document.addEventListener('copy', function(e){
   }
 });
 
-/* ─── Lớp 2b: chặn lưu trang và in khi chưa có đồng ý ─── */
+/* ─── Lớp 2b: chặn lưu trang và in ───
+   Hai tầng, không phải một:
+   1. Vai không có quyền xuat_pdf thì chặn in ở MỌI màn hình, không chỉ màn
+      chuyên môn — khách hàng không được xuất hồ sơ ra ngoài.
+   2. Vai có quyền vẫn phải qua bước xin đồng ý khi ở màn chuyên môn. */
 document.addEventListener('keydown', function(e){
-  if(!G.S || !G.S.acc || !G.isCanh(G.S.view)) return;
+  if(!G.S || !G.S.acc) return;
   var k = (e.key||'').toLowerCase();
-  if((e.ctrlKey||e.metaKey) && (k==='s' || k==='p') && !G.CONSENT){
+  if(!((e.ctrlKey||e.metaKey) && (k==='s' || k==='p'))) return;
+  var viec = k==='s' ? 'Lưu trang' : 'In trang';
+
+  if(!G.can('xuat_pdf')){
     e.preventDefault();
-    ghi(k==='s'?'Lưu trang':'In trang', 'Chặn '+(k==='s'?'lưu':'in')+' màn hình chuyên môn khi chưa có đồng ý.', 'Đã chặn');
+    ghi(viec, 'Vai ' + G.S.role + ' không có quyền xuat_pdf — chặn ' + (k==='s'?'lưu':'in') + ' ở mọi màn hình.', 'Đã chặn');
+    G.U.toast('Tài khoản này không có quyền xuất bản in. Chỉ người của GITA 365 từ cấp quản lý mới xuất được.','err');
+    return;
+  }
+  if(G.isCanh(G.S.view) && !G.CONSENT){
+    e.preventDefault();
+    ghi(viec, 'Chặn '+(k==='s'?'lưu':'in')+' màn hình chuyên môn khi chưa có đồng ý.', 'Đã chặn');
     G.U.toast('Màn hình chuyên môn cần bước xin đồng ý trước khi xuất ra ngoài.','err');
   }
 });
@@ -106,6 +119,13 @@ G.throttled = function(){
 
 /* ─── Đồng ý xuất dữ liệu ─── */
 G.xinDongY = function(){
+  /* Trước đây đây là công tắc ai bấm cũng bật được, kể cả phụ huynh —
+     bật xong là mở luôn khoá chặn Ctrl+P và sao chép khối lớn. */
+  if(!G.CONSENT && !G.can('xuat_pdf')){
+    ghi('Xin đồng ý xuất dữ liệu', 'Vai ' + (G.S.role||'?') + ' không có quyền xuat_pdf — từ chối mở.', 'Đã chặn');
+    G.U.toast('Tài khoản này không có quyền xuất dữ liệu. Liên hệ Admin nếu cần được cấp.','err');
+    return;
+  }
   G.CONSENT = !G.CONSENT;
   ghi('Đồng ý xuất dữ liệu', G.CONSENT ? 'Bật quyền xuất trong phiên này — mọi thao tác xuất đều được ghi lại.'
                                        : 'Tắt quyền xuất dữ liệu.', G.CONSENT?'Đã mở':'Đã đóng');

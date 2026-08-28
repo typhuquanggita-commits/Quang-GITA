@@ -141,8 +141,31 @@ function di(man) {
     `window.G && G.S && G.S.acc ? G.go(${JSON.stringify(man)}) : null`).catch(() => {});
 }
 
+/* Hỏi chính ứng dụng xem vai đang đăng nhập có quyền xuất bản in không.
+   Trình đơn của tiến trình chính không biết vai, nên phải hỏi sang. */
+async function coQuyenIn() {
+  try {
+    return await cuaSo.webContents.executeJavaScript(
+      '(function(){ try{ return !!(window.G && window.G.S && window.G.S.acc && window.G.coTheIn && window.G.coTheIn()); }catch(e){ return false; } })()',
+      true);
+  } catch (e) { return false; }
+}
+
 async function xuatPDF() {
   if (!cuaSo) return;
+  if (!(await coQuyenIn())) {
+    dialog.showMessageBox(cuaSo, {
+      type: 'warning', message: 'Tài khoản này không xuất được bản in',
+      detail: 'Chỉ người của Học viện GITA từ cấp quản lý mới xuất được PDF. ' +
+              'Khách hàng muốn có bản giấy thì Coach hoặc quản lý in gửi.',
+      buttons: ['Đã hiểu']
+    });
+    try {
+      await cuaSo.webContents.executeJavaScript(
+        "window.G && window.G.secLog && window.G.secLog('Chặn in', 'Trình đơn Xuất PDF của bản máy tính — vai không có quyền xuat_pdf', 'Đã chặn')", true);
+    } catch (e) {}
+    return;
+  }
   const { canceled, filePath } = await dialog.showSaveDialog(cuaSo, {
     title: 'Xuất màn hình này ra PDF',
     defaultPath: path.join(app.getPath('documents'), 'GITA365-' + Date.now() + '.pdf'),
@@ -162,6 +185,15 @@ async function xuatPDF() {
 
 async function saoLuu() {
   if (!cuaSo) return;
+  if (!(await coQuyenIn())) {
+    dialog.showMessageBox(cuaSo, {
+      type: 'warning', message: 'Tài khoản này không sao lưu ra tệp được',
+      detail: 'Sao lưu là một đường đưa dữ liệu ra khỏi hệ thống nên cũng theo quyền xuất. ' +
+              'Dữ liệu của nhà mình vẫn được giữ trong máy và đồng bộ lên máy chủ khi có mạng.',
+      buttons: ['Đã hiểu']
+    });
+    return;
+  }
   const du = await cuaSo.webContents.executeJavaScript(
     `JSON.stringify({v:'7.0', luc:new Date().toISOString(),
       trangThai: localStorage.getItem('gita365.v7'), ngonNgu: localStorage.getItem('gita365.lang')})`);

@@ -294,6 +294,82 @@ const { chromium } = require(PW);
   bao(t7.camAI >= 8, 'trợ lý có danh sách việc tuyệt đối không được làm', t7.camAI + ' điều cấm');
   bao(t7.vanTayTuChoi, 'GITA nêu rõ không dùng sinh trắc vân tay để xác định năng lực');
 
+  /* ── 8. Quyền xuất · đồng bộ · mật khẩu ── */
+  console.log('\n8 · QUYỀN XUẤT · ĐỒNG BỘ · MẬT KHẨU');
+
+  /* Không còn đường tải tệp về máy trong toàn bộ mã nguồn */
+  {
+    const fsx = require('fs'), px = require('path');
+    const thuMuc = px.join(__dirname, '..', 'src');
+    const xau = [];
+    for (const t of fsx.readdirSync(thuMuc).filter(f => f.endsWith('.js'))) {
+      const noi = fsx.readFileSync(px.join(thuMuc, t), 'utf8');
+      if (/a\.download\s*=|text\/csv|createObjectURL/.test(noi)) xau.push(t);
+    }
+    bao(!xau.length, 'không tệp nào còn đường tải CSV hay Excel về máy', xau.join(' ') || 'đã gỡ sạch');
+    /* Lệnh in chỉ được gọi ở đúng một chỗ: cổng in.
+       Bỏ chú thích trước khi đếm — nếu không thì một dòng ghi chú cũng
+       làm phép kiểm này báo sai. */
+    const boChuThich = t => t.replace(/\/\*[\s\S]*?\*\//g, '').replace(/^[ \t]*\/\/.*$/gm, '');
+    let inTruc = 0;
+    for (const t of fsx.readdirSync(thuMuc).filter(f => f.endsWith('.js'))) {
+      const noi = boChuThich(fsx.readFileSync(px.join(thuMuc, t), 'utf8'));
+      inTruc += (noi.match(/window\.print\(\)/g) || []).length;
+    }
+    bao(inTruc === 1, 'lệnh in chỉ gọi ở đúng một chỗ — cổng in G.inTrang', inTruc + ' lần gọi');
+  }
+
+  const t8 = await p.evaluate(async () => {
+    const G = window.G, ra = { in: {}, sheet: {} };
+    const cu = G.S.acc && G.S.acc.u;
+    const thu = ['superadmin@gita365.vn', 'chuyenmon@gita365.vn', 'truongcoach@gita365.vn',
+                 'coach@gita365.vn', 'tuvan@gita365.vn', 'phuhuynh@gita365.vn',
+                 'hocvien@gita365.vn', 'daisu@gita365.vn'];
+    for (const u of thu) {
+      const a = G.ACCOUNTS.filter(x => x.u === u)[0];
+      G.S.acc = a; G.S.role = a.role; G.S.roleObj = G.roleById(a.role);
+      ra.in[u] = G.can('xuat_pdf');
+      ra.sheet[u] = G.can('xuat_sheet');
+    }
+    /* Vai không có quyền: cổng in phải từ chối, và xinDongY phải không bật được */
+    const ph = G.ACCOUNTS.filter(x => x.u === 'phuhuynh@gita365.vn')[0];
+    G.S.acc = ph; G.S.role = ph.role; G.S.roleObj = G.roleById(ph.role);
+    G.CONSENT = false;
+    const inDuoc = G.inTrang('thử');
+    G.xinDongY();
+    const batDuocConsent = G.CONSENT;
+    G.CONSENT = false;
+    if (cu) { const a = G.ACCOUNTS.filter(x => x.u === cu)[0]; if (a) { G.S.acc = a; G.S.role = a.role; G.S.roleObj = G.roleById(a.role); } }
+    return {
+      ...ra, phuHuynhInDuoc: inDuoc, phuHuynhBatDuocConsent: batDuocConsent,
+      coDongBo: typeof G.dongBo === 'function' && typeof G.danhDau === 'function',
+      coDoiMK: typeof G.moDoiMatKhau === 'function' && typeof G.doiMatKhau === 'function',
+      coQuenMK: typeof G.moQuenMatKhau === 'function' && typeof G.datLaiMatKhau === 'function',
+      mkYeu: G.kiemMatKhau('gita1234') !== true && G.kiemMatKhau('abcdefghij') !== true,
+      mkManh: G.kiemMatKhau('Kiy3xc#iz7Y2@') === true,
+      dangXuat: ((G.XUAT || {}).loai || []).map(l => l.dang).join(','),
+      driveId: ((G.XUAT || {}).driveAdmin || {}).id || ''
+    };
+  });
+  const CHO_IN = { 'superadmin@gita365.vn':1, 'chuyenmon@gita365.vn':1, 'truongcoach@gita365.vn':1,
+    'coach@gita365.vn':0, 'tuvan@gita365.vn':0, 'phuhuynh@gita365.vn':0, 'hocvien@gita365.vn':0, 'daisu@gita365.vn':0 };
+  const lechIn = Object.keys(CHO_IN).filter(u => !!t8.in[u] !== !!CHO_IN[u]);
+  bao(!lechIn.length, 'quyền in PDF đúng: chỉ R01–R05, khách hàng KHÔNG in được',
+    lechIn.join(' ') || 'tám vai đều đúng');
+  const CHO_SHEET = { 'superadmin@gita365.vn':1, 'chuyenmon@gita365.vn':1, 'truongcoach@gita365.vn':0,
+    'coach@gita365.vn':0, 'phuhuynh@gita365.vn':0, 'hocvien@gita365.vn':0, 'daisu@gita365.vn':0 };
+  const lechSheet = Object.keys(CHO_SHEET).filter(u => !!t8.sheet[u] !== !!CHO_SHEET[u]);
+  bao(!lechSheet.length, 'quyền đẩy Google Sheet đúng: chỉ Ban điều hành R01–R04',
+    lechSheet.join(' ') || 'bảy vai đều đúng');
+  bao(t8.phuHuynhInDuoc === false, 'cổng in TỪ CHỐI phụ huynh');
+  bao(t8.phuHuynhBatDuocConsent === false, 'phụ huynh KHÔNG tự bật được đồng ý xuất dữ liệu');
+  bao(t8.dangXuat === 'PDF,SHEET,SHEET,SHEET,SHEET', 'năm loại dữ liệu chỉ còn hai dạng PDF và SHEET', t8.dangXuat);
+  bao(t8.driveId === '1pvXH45JvXXPOW9V6ObB5CR87r7gxH0fU', 'đúng thư mục Drive của Admin', t8.driveId);
+  bao(t8.coDongBo, 'có đủ hàm đồng bộ App ↔ Web');
+  bao(t8.coDoiMK, 'có đủ hàm đổi mật khẩu');
+  bao(t8.coQuenMK, 'có đủ hàm lấy lại mật khẩu qua email');
+  bao(t8.mkYeu && t8.mkManh, 'bộ kiểm mật khẩu chặn mật khẩu yếu và nhận mật khẩu đạt chuẩn');
+
   console.log('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành'));
   await b.close();
   process.exit(loi ? 1 : 0);

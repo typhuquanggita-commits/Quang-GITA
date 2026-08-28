@@ -72,12 +72,24 @@ function doPost(e) {
   };
   try {
     var y = JSON.parse((e && e.postData && e.postData.contents) || '{}');
-    if (y.fn !== 'capKhoa') return ra({ ok: false, error: 'Yêu cầu không hợp lệ.' });
+
+    /* ── Hai việc KHÔNG cần phiên: quên mật khẩu và đặt lại bằng mã ── */
+    if (y.fn === 'quenMatKhau')   return ra(gitaQuenMatKhau_(y));
+    if (y.fn === 'datLaiMatKhau') return ra(gitaDatLaiMatKhau_(y));
+    if (y.fn === 'kiemBanMoi')    return ra(gitaKiemBanMoi_(y));
+
+    var VIEC = ['capKhoa', 'xuatSheet', 'dongBo', 'doiMatKhau'];
+    if (VIEC.indexOf(y.fn) < 0) return ra({ ok: false, error: 'Yêu cầu không hợp lệ.' });
 
     // 1. Xác thực phiên — dùng đúng lớp bảo mật sẵn có của hệ thống
     var hoSo = kiemTraPhien_(y.token, y.u);
     if (!hoSo) return ra({ ok: false, code: 'AUTH', error: 'Phiên không hợp lệ hoặc đã hết hạn.' });
     if (hoSo.khoa) return ra({ ok: false, code: 'LOCKED', error: 'Tài khoản đang bị khoá.' });
+
+    /* ── Ba việc cần phiên hợp lệ, xử lý ở tệp riêng ── */
+    if (y.fn === 'xuatSheet')   return ra(gitaXuatSheet_(y, hoSo));
+    if (y.fn === 'dongBo')      return ra(gitaDongBo_(y, hoSo));
+    if (y.fn === 'doiMatKhau')  return ra(gitaDoiMatKhau_(y, hoSo));
 
     // 2. Chặn rút khoá hàng loạt
     var soLan = gitaDemXinKhoa_(hoSo.u);

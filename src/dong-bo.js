@@ -1,0 +1,156 @@
+/* ═══════════════════════════════════════════════════════════════
+   GITA 365 · v7.5 — ĐỒNG BỘ APP ↔ WEB APP
+   Máy giữ dữ liệu và chạy được khi mất mạng. Có mạng thì đẩy phần
+   đã đổi lên máy chủ Admin và kéo phần mới về. Xung đột giải theo
+   mốc thời gian TỪNG TRƯỜNG — hai máy sửa hai việc khác nhau thì
+   giữ được cả hai.
+   ═══════════════════════════════════════════════════════════════ */
+'use strict';
+var G = window.G || {}; window.G = G;
+
+var KEY_MOC = 'gita365.moc';       // mốc sửa từng trường
+var KEY_HANG = 'gita365.hangcho';  // hàng chờ khi mất mạng
+var NHOM = ['checks', 'journal', 'vision', 'test', 'mood'];
+
+G.DONGBO = { trangThai: 'chua', lanCuoi: null, choBaoNhieu: 0, loi: null };
+
+/* ─── Mốc sửa từng trường ─── */
+function docMoc(){ try{ return JSON.parse(localStorage.getItem(KEY_MOC) || '{}'); }catch(e){ return {}; } }
+function ghiMoc(m){ try{ localStorage.setItem(KEY_MOC, JSON.stringify(m)); }catch(e){} }
+
+/* Gọi mỗi khi người dùng sửa một thứ. Rẻ, chỉ ghi một con số. */
+G.danhDau = function(nhom, khoa){
+  if(NHOM.indexOf(nhom) < 0) return;
+  var m = docMoc(); m[nhom + '.' + khoa] = Date.now(); ghiMoc(m);
+  G.DONGBO.choBaoNhieu = demCho();
+};
+
+function demCho(){
+  var m = docMoc(), lan = Number(localStorage.getItem(KEY_HANG) || 0), n = 0;
+  Object.keys(m).forEach(function(k){ if(m[k] > lan) n++; });
+  return n;
+}
+
+/* ─── Gom phần đã đổi kể từ lần đồng bộ cuối ─── */
+function gomThayDoi(){
+  var m = docMoc(), lan = Number(localStorage.getItem(KEY_HANG) || 0);
+  var day = {}, mocDay = {};
+  Object.keys(m).forEach(function(k){
+    if(m[k] <= lan) return;
+    var i = k.indexOf('.'), nhom = k.slice(0, i), khoa = k.slice(i + 1);
+    if(NHOM.indexOf(nhom) < 0) return;
+    var nguon = G.S[nhom];
+    if(!nguon || typeof nguon !== 'object') return;
+    day[nhom] = day[nhom] || {};
+    day[nhom][khoa] = nguon[khoa];
+    mocDay[k] = m[k];
+  });
+  return { day: day, mocDay: mocDay, so: Object.keys(mocDay).length };
+}
+
+/* ─── Nhận phần máy chủ trả về, ghi đè đúng những trường máy chủ mới hơn ─── */
+function nhanVe(keo, mocChu){
+  if(!keo) return 0;
+  var m = docMoc(), doi = 0;
+  NHOM.forEach(function(nhom){
+    var v = keo[nhom];
+    if(!v || typeof v !== 'object') return;
+    G.S[nhom] = G.S[nhom] || {};
+    Object.keys(v).forEach(function(k){
+      var khoa = nhom + '.' + k;
+      var tChu = Number((mocChu || {})[khoa] || 0), tMay = Number(m[khoa] || 0);
+      if(tChu > tMay){ G.S[nhom][k] = v[k]; m[khoa] = tChu; doi++; }
+    });
+  });
+  ghiMoc(m);
+  return doi;
+}
+
+/* ─── Một vòng đồng bộ ─── */
+G.dongBo = function(tuTay){
+  if(!G.API_CAP_PHEP){
+    G.DONGBO.trangThai = 'chua-noi';
+    if(tuTay) G.U.toast('Chưa nối máy chủ nên chưa đồng bộ được. Xem docs/TRIEN_KHAI_WEB.md.','err');
+    return Promise.resolve(false);
+  }
+  if(!G.S.acc){ return Promise.resolve(false); }
+  if(!navigator.onLine){
+    G.DONGBO.trangThai = 'mat-mang';
+    if(tuTay) G.U.toast('Đang mất mạng. Dữ liệu vẫn ghi trong máy, có mạng lại là tự đẩy lên.','err');
+    return Promise.resolve(false);
+  }
+  if(G.DONGBO.trangThai === 'dang') return Promise.resolve(false);
+
+  var g = gomThayDoi();
+  G.DONGBO.trangThai = 'dang';
+  var batDau = Date.now();
+
+  return fetch(G.API_CAP_PHEP, {
+    method:'POST', headers:{'Content-Type':'text/plain;charset=utf-8'},
+    body: JSON.stringify({ fn:'dongBo', u:G.S.acc.u, token:G.PHIEN_TOKEN||'',
+      day:g.day, mocTruong:g.mocDay, may:navigator.userAgent.slice(0,120) })
+  }).then(function(r){ return r.json(); })
+    .then(function(d){
+      if(!d || !d.ok) throw new Error(d && d.error || 'Máy chủ từ chối');
+      var ve = nhanVe(d.keo, d.mocTruong);
+      try{ localStorage.setItem(KEY_HANG, String(batDau)); }catch(e){}
+      G.DONGBO.trangThai = 'xong';
+      G.DONGBO.lanCuoi = new Date();
+      G.DONGBO.choBaoNhieu = demCho();
+      G.DONGBO.loi = null;
+      if(G.secLog) G.secLog('Đồng bộ', 'Đẩy ' + g.so + ' thay đổi, nhận về ' + ve, 'Ghi nhận');
+      if(tuTay) G.U.toast('Đã đồng bộ. Đẩy lên ' + g.so + ' thay đổi, nhận về ' + ve + '.','ok');
+      if(ve && G.render) G.render();
+      return true;
+    })
+    .catch(function(e){
+      G.DONGBO.trangThai = 'loi';
+      G.DONGBO.loi = e.message;
+      if(tuTay) G.U.toast('Đồng bộ hỏng: ' + e.message + '. Dữ liệu vẫn nguyên trong máy.','err');
+      return false;
+    });
+};
+
+/* ─── Tự chạy: khi mở, khi có mạng lại, và mỗi sáu giờ ─── */
+G.batDongBo = function(){
+  if(!G.API_CAP_PHEP) return;
+  setTimeout(function(){ G.dongBo(); }, 4000);
+  window.addEventListener('online', function(){
+    G.U.toast('Có mạng trở lại — đang đồng bộ phần đã ghi khi ngoại tuyến.','ok');
+    G.dongBo();
+  });
+  window.addEventListener('offline', function(){
+    G.DONGBO.trangThai = 'mat-mang';
+    G.U.toast('Mất mạng. Ứng dụng vẫn chạy bình thường, dữ liệu ghi trong máy.','err');
+  });
+  setInterval(function(){ G.dongBo(); }, 6 * 3600 * 1000);
+  /* Rời trang thì cố đẩy nốt phần còn lại */
+  window.addEventListener('pagehide', function(){
+    var g = gomThayDoi();
+    if(!g.so || !navigator.onLine || !G.API_CAP_PHEP || !G.S.acc) return;
+    try{
+      navigator.sendBeacon(G.API_CAP_PHEP, new Blob([JSON.stringify({
+        fn:'dongBo', u:G.S.acc.u, token:G.PHIEN_TOKEN||'',
+        day:g.day, mocTruong:g.mocDay, may:'pagehide'
+      })], {type:'text/plain;charset=utf-8'}));
+    }catch(e){}
+  });
+};
+
+/* ─── Kiểm bản mới của ứng dụng ─── */
+G.kiemBanMoi = function(){
+  if(!G.API_CAP_PHEP || !navigator.onLine) return Promise.resolve(null);
+  return fetch(G.API_CAP_PHEP, {
+    method:'POST', headers:{'Content-Type':'text/plain;charset=utf-8'},
+    body: JSON.stringify({ fn:'kiemBanMoi', banApp:(G.META && G.META.version) || '' })
+  }).then(function(r){ return r.json(); })
+    .then(function(d){
+      if(!d || !d.ok || !d.banMoiNhat) return null;
+      if(d.banMoiNhat !== ((G.META && G.META.version) || '')) {
+        G.BAN_MOI = d;
+        G.U.toast('Có bản mới ' + d.banMoiNhat + '. Mở mục Kết nối hệ sinh thái để tải.','ok');
+      }
+      return d;
+    })
+    .catch(function(){ return null; });
+};

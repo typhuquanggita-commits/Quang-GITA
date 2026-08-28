@@ -432,6 +432,6 @@ on('[data-txoa]', function(el){
   U.toast('Đã xoá câu trả lời của bài này.','ok');
   lai();
 });
-on('[data-tin]', function(){ window.print(); });
-on('[data-kpiin]', function(){ window.print(); });
+on('[data-tin]', function(){ G.inTrang('Kết quả bộ test'); });
+on('[data-kpiin]', function(){ G.inTrang('Bảng KPI về đích'); });
 })();
