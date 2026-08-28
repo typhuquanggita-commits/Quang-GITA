@@ -83,7 +83,7 @@ U.ring = function(v,c,lb){
   var r=42, C=2*Math.PI*r, off=C*(1-U.clamp(v,0,100)/100);
   return '<div class="ring"><svg viewBox="0 0 96 96">'+
     '<circle cx="48" cy="48" r="'+r+'" fill="none" stroke="var(--phu-4)" stroke-width="7"/>'+
-    '<circle cx="48" cy="48" r="'+r+'" fill="none" stroke="'+(c||'#F5B942')+'" stroke-width="7" '+
+    '<circle cx="48" cy="48" r="'+r+'" fill="none" stroke="'+(c||'var(--gita)')+'" stroke-width="7" '+
     'stroke-linecap="round" stroke-dasharray="'+C.toFixed(1)+'" stroke-dashoffset="'+off.toFixed(1)+'"/></svg>'+
     '<div class="tx"><b>'+U.h(v)+'</b><span>'+U.h(lb||'')+'</span></div></div>';
 };

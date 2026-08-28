@@ -46,9 +46,7 @@ G.UI = {
     orLogin:'HOẶC ĐĂNG NHẬP BẰNG TÀI KHOẢN',
     signUp:'Chưa có tài khoản? Đăng ký',
     gateVisionEyebrow:'TẦM NHÌN GITA 365',
-    gateVisionTitle:'Một gia đình biết cách học cùng nhau',
-    gateVisionBig:'GITA 365 tin rằng năng lực học tập của một đứa trẻ lớn lên nhanh nhất khi cả nhà cùng học — cha mẹ học cách dẫn, con học cách tự đi, và cả hai cùng giữ một nhịp.',
-    gateVisionSub:'Đích của chúng tôi không phải một đứa trẻ ngoan hơn. Là một gia đình tự vận hành được việc học của mình.',
+    gateVisionTitle:'Kiến tạo một hệ sinh thái gia đình phát triển bền vững, nơi mỗi người biết hiểu mình, rèn mình, làm chủ cuộc đời và cùng nhau kiến tạo hạnh phúc, thành công, thịnh vượng qua nhiều thế hệ.',
     gateMission:'Trao cho mỗi gia đình một bản đồ, một nhịp và một người đồng hành — để sau 365 ngày, nhà ấy tự chạy được mà không cần ai canh.',
     gateMapTitle:'BẢN ĐỒ GIA ĐÌNH THỊNH VƯỢNG · NĂM CHẶNG',
     loginHint:'Chưa biết mật khẩu? Mở danh sách để xem đủ mười lăm tài khoản kèm mật khẩu, và bấm Vào là đăng nhập ngay.',
@@ -82,9 +80,7 @@ G.UI = {
     orLogin:'OR SIGN IN WITH AN ACCOUNT',
     signUp:'No account yet? Sign up',
     gateVisionEyebrow:'GITA 365 VISION',
-    gateVisionTitle:'A family that learns together',
-    gateVisionBig:'GITA 365 holds that a child learns fastest when the whole household learns too — parents learning to guide, children learning to walk on their own, both keeping one rhythm.',
-    gateVisionSub:'Our aim is not a better-behaved child. It is a family that can run its own learning.',
+    gateVisionTitle:'To build an ecosystem of families that grow for the long run — where each person comes to understand themselves, train themselves, take charge of their own life, and together create happiness, success and prosperity across generations.',
     gateMission:'Give every family a map, a rhythm and a companion — so that after 365 days the household runs without anyone standing guard.',
     gateMapTitle:'THE PROSPEROUS FAMILY MAP · FIVE STAGES',
     loginHint:'Don\u2019t know the password? Open the list to see all fifteen accounts with their passwords, and hit Enter to sign in.',
@@ -235,13 +231,13 @@ G.CULTURE_EN = {
     {n:'06',t:'The adults change first',d:'The parents’ own change must be presentable at the year-end family conference. Without it, the child’s stage stands on sand.'}
   ],
   giaTri:[
-    {k:'TRUTH',c:'#3B82F6',t:'Honest with the data',d:'Speak in numbers with a date, a time, a count. An off day is a data point, never a verdict.',nen:'Record even the worst night.',khong:'Prettify a report so it reads well.'},
-    {k:'CARE',c:'#FB7185',t:'Unconditional respect',d:'No labels, no rankings, no comparing one child to another. Each person is measured only against their own last stage.',nen:'Listen seven, advise three.',khong:'Use data to prove someone wrong.'},
-    {k:'STANDARD',c:'#F5B942',t:'Hold the professional standard',d:'Every session has a script, a protocol, an acceptance gate. Improvisation is a risk borne by someone else’s family.',nen:'Open the right script for the right tier.',khong:'Improvise off-standard because it feels familiar.'},
-    {k:'ENDURANCE',c:'#10B981',t:'Rhythm over intensity',d:'21 days makes a level, 90 days makes a stage. A week of blazing then nothing builds no capability.',nen:'Keep the appointment even when it is short.',khong:'Cram a month into one session.'},
-    {k:'CLARITY',c:'#8B5CF6',t:'Transparent to the end',d:'Who holds which role, who can see which data, where the money goes — said plainly up front and written down.',nen:'Say the inconvenient part first.',khong:'Let a family guess about rights and costs.'},
-    {k:'HANDOVER',c:'#06B6D4',t:'Authority with responsibility',d:'Every right handed over comes with a matching responsibility. Support decreases — but never to zero.',nen:'Let the child decide what the child can carry.',khong:'Drop all support and call it independence.'},
-    {k:'PROSPERITY',c:'#FF7A45',t:'Prosperity means everyone grows',d:'The goal is not one child’s achievement. It is a family system in which every member is still growing.',nen:'Measure the adults’ change too.',khong:'Use the child’s grades as the family’s measure.'}
+    {k:'TRUTH',c:'#2166CE',t:'Honest with the data',d:'Speak in numbers with a date, a time, a count. An off day is a data point, never a verdict.',nen:'Record even the worst night.',khong:'Prettify a report so it reads well.'},
+    {k:'CARE',c:'#C2151C',t:'Unconditional respect',d:'No labels, no rankings, no comparing one child to another. Each person is measured only against their own last stage.',nen:'Listen seven, advise three.',khong:'Use data to prove someone wrong.'},
+    {k:'STANDARD',c:'#2166CE',t:'Hold the professional standard',d:'Every session has a script, a protocol, an acceptance gate. Improvisation is a risk borne by someone else’s family.',nen:'Open the right script for the right tier.',khong:'Improvise off-standard because it feels familiar.'},
+    {k:'ENDURANCE',c:'#0B7350',t:'Rhythm over intensity',d:'21 days makes a level, 90 days makes a stage. A week of blazing then nothing builds no capability.',nen:'Keep the appointment even when it is short.',khong:'Cram a month into one session.'},
+    {k:'CLARITY',c:'#5140B4',t:'Transparent to the end',d:'Who holds which role, who can see which data, where the money goes — said plainly up front and written down.',nen:'Say the inconvenient part first.',khong:'Let a family guess about rights and costs.'},
+    {k:'HANDOVER',c:'#0B6675',t:'Authority with responsibility',d:'Every right handed over comes with a matching responsibility. Support decreases — but never to zero.',nen:'Let the child decide what the child can carry.',khong:'Drop all support and call it independence.'},
+    {k:'PROSPERITY',c:'#E4232B',t:'Prosperity means everyone grows',d:'The goal is not one child’s achievement. It is a family system in which every member is still growing.',nen:'Measure the adults’ change too.',khong:'Use the child’s grades as the family’s measure.'}
   ],
   noiQuy:[
     {t:'On time is respect',d:'Show up on the rhythm you committed to. If you cannot, say so beforehand — never go silent.'},
@@ -270,11 +266,11 @@ G.CULTURE_EN = {
     {n:'A community safe enough for the truth',d:'Where telling your stumble is not judged, and telling your win is not envied.'}
   ],
   nhip:[
-    {k:'EVERY DAY',t:'One check-in, three lines of journal',c:'#3B82F6'},
-    {k:'EVERY WEEK',t:'One full-house sitting: LISTEN – ACKNOWLEDGE – CLARIFY – GUIDE',c:'#8B5CF6'},
-    {k:'EVERY 21 DAYS',t:'One learning level · review the lever in use',c:'#06B6D4'},
-    {k:'EVERY 90 DAYS',t:'One stage · one acceptance gate backed by evidence',c:'#10B981'},
-    {k:'EVERY 365 DAYS',t:'Family conference · the year’s feat · a new vision board',c:'#F59E0B'}
+    {k:'EVERY DAY',t:'One check-in, three lines of journal',c:'#2166CE'},
+    {k:'EVERY WEEK',t:'One full-house sitting: LISTEN – ACKNOWLEDGE – CLARIFY – GUIDE',c:'#5140B4'},
+    {k:'EVERY 21 DAYS',t:'One learning level · review the lever in use',c:'#0B6675'},
+    {k:'EVERY 90 DAYS',t:'One stage · one acceptance gate backed by evidence',c:'#0B7350'},
+    {k:'EVERY 365 DAYS',t:'Family conference · the year’s feat · a new vision board',c:'#C2151C'}
   ],
   camNiem:[
     {t:'We compare our house to no one. Only to our house yesterday.',by:'Boundary 1'},

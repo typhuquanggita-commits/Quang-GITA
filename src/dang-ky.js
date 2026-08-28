@@ -76,7 +76,7 @@ G.moDangKy = function(){
   if(!G.API_CAP_PHEP) o += bangMau();
   if(gt) o += '<div class="card pad-sm mb" style="border-color:rgba(16,185,129,.4);background:rgba(16,185,129,.07)">'+
     '<div class="tiny up muted">NGƯỜI BẢO TRỢ</div>'+
-    '<div class="sm mt" style="color:var(--ink-1)">Mã liên kết <b class="mono" style="color:#10B981">'+h(gt)+'</b> — '+
+    '<div class="sm mt" style="color:var(--ink-1)">Mã liên kết <b class="mono" style="color:#0B7350">'+h(gt)+'</b> — '+
     'gia đình mình vào GITA qua lời giới thiệu của cộng tác viên này. Mã đi theo hồ sơ và không sửa được sau khi đăng ký.</div>'+
     '</div>';
   o += TRUONG.map(function(t){
@@ -87,7 +87,7 @@ G.moDangKy = function(){
   o += '<label class="dk-dy"><input id="dk_dongY" type="checkbox"> '+
     '<span class="tiny" style="line-height:1.6;color:var(--ink-2)">Tôi đồng ý để Học viện GITA lưu và dùng thông tin trên '+
     'cho việc học của gia đình tôi. GITA không thu thập tôn giáo, tình trạng sức khoẻ, thu nhập hay chuyện riêng của vợ chồng.</span></label>'+
-    '<div id="dk_loi" class="tiny mb" style="color:#F87171;min-height:16px"></div>'+
+    '<div id="dk_loi" class="tiny mb" style="color:#C2151C;min-height:16px"></div>'+
     '<button class="btn pri blk" data-act="gui-dang-ky">Gửi và nhận mã xác nhận</button>'+
     '<p class="tiny muted mt center">Đã có tài khoản? Đóng cửa sổ này và đăng nhập ở ô bên dưới.</p>';
   U().modal(o);
@@ -125,7 +125,7 @@ G.moNhapOTP = function(email, thongBao){
     '<label class="tiny up muted">MÃ SÁU SỐ</label>'+
     '<input id="otp_ma" inputmode="numeric" maxlength="6" placeholder="------" '+
       'class="inp blk mb mono" style="letter-spacing:.5em;text-align:center;font-size:20px">'+
-    '<div id="otp_loi" class="tiny mb" style="color:#F87171;min-height:16px"></div>'+
+    '<div id="otp_loi" class="tiny mb" style="color:#C2151C;min-height:16px"></div>'+
     '<button class="btn pri blk" data-act="gui-otp">Xác nhận</button>'+
     '<button class="btn ghost blk mt" data-act="xin-lai-otp" style="font-size:12.5px">Chưa nhận được thư — gửi lại mã</button>'+
     '<p class="tiny muted mt center">Sai năm lần thì mã bị huỷ và phải xin mã mới.</p>'
@@ -148,8 +148,8 @@ G.xinLaiOTP = function(){
   var loi = document.getElementById('otp_loi');
   var email = (document.getElementById('otp_email')||{}).value || '';
   goi({ fn:'guiLaiOtp', email:email })
-    .then(function(x){ if(loi){ loi.style.color = '#10B981'; loi.textContent = x.thongBao || 'Đã gửi lại mã.'; } })
-    .catch(function(e){ if(loi){ loi.style.color = '#F87171'; loi.textContent = e.message === 'CHUA_NOI' ? 'Bản mẫu chưa nối máy chủ.' : e.message; } });
+    .then(function(x){ if(loi){ loi.style.color = '#0B7350'; loi.textContent = x.thongBao || 'Đã gửi lại mã.'; } })
+    .catch(function(e){ if(loi){ loi.style.color = '#C2151C'; loi.textContent = e.message === 'CHUA_NOI' ? 'Bản mẫu chưa nối máy chủ.' : e.message; } });
 };
 
 /* ═════════ BƯỚC 4 · ĐÃ GỬI LIÊN KẾT KÍCH HOẠT ═════════ */
@@ -184,14 +184,14 @@ G.moKichHoat = function(token){
     '<p id="kh_goi" class="tiny muted" style="margin:6px 0 12px">Ít nhất mười ký tự, có chữ hoa, chữ thường, chữ số và ký tự đặc biệt.</p>'+
     '<label class="tiny up muted">NHẬP LẠI MẬT KHẨU</label>'+
     '<input id="kh_lai" type="password" autocomplete="new-password" class="inp blk mb">'+
-    '<div id="kh_loi" class="tiny mb" style="color:#F87171;min-height:16px"></div>'+
+    '<div id="kh_loi" class="tiny mb" style="color:#C2151C;min-height:16px"></div>'+
     '<button class="btn pri blk" data-act="kich-hoat">Hoàn tất đăng ký</button>'
   );
   var o = document.getElementById('kh_mk');
   if(o) o.addEventListener('input', function(){
     var r = G.kiemMatKhau(o.value), g = document.getElementById('kh_goi');
     if(!g) return;
-    if(r === true){ g.textContent = 'Mật khẩu đạt chuẩn.'; g.style.color = '#10B981'; }
+    if(r === true){ g.textContent = 'Mật khẩu đạt chuẩn.'; g.style.color = '#0B7350'; }
     else { g.textContent = r; g.style.color = 'var(--ink-3)'; }
   });
 };
@@ -218,7 +218,7 @@ G.moDangKyXong = function(ma, email){
     '<div class="center" style="padding:6px 0 2px;color:var(--gold-ink)">'+G.U.ic('crown','w-9 h-9')+'</div>'+
     '<h2 style="font-size:22px;font-weight:800;margin:8px 0 4px;text-align:center">Đăng ký thành công</h2>'+
     '<p class="sm muted center" style="margin-bottom:16px">Gia đình mình đã có mặt trong hệ sinh thái GITA 365.</p>'+
-    '<div class="card center" style="padding:20px;border-color:rgba(245,185,66,.4);background:rgba(245,185,66,.06)">'+
+    '<div class="card center" style="padding:20px;border-color:var(--gita-vien-2);background:var(--gita-mo-1)">'+
       '<div class="tiny up muted mb">MÃ SỐ KHÁCH HÀNG</div>'+
       '<div class="mono" style="font-size:22px;font-weight:800;color:var(--gold-ink);letter-spacing:.06em">'+h(ma||'—')+'</div>'+
       '<p class="tiny muted mt">Mã này đi theo gia đình suốt năm tầng. Giữ lại khi cần liên hệ Học viện.</p></div>'+

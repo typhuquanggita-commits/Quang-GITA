@@ -191,7 +191,7 @@ G.canCapPhep = function (goi) {
     lead: 'Không phải lỗi, và cũng không phải anh chị làm sai. Dưới đây là đúng ba điều: khoá phần nào, vì sao, và mở bằng cách nào.' });
 
   /* 1 · Khoá phần nào */
-  o += '<div class="card" style="border-color:rgba(245,185,66,.34)">' +
+  o += '<div class="card" style="border-color:var(--gita-vien-1)">' +
     '<div class="row mb"><span style="color:var(--gold-ink)">' + U.ic('vault', 'w-4 h-4') + '</span>' +
     '<b>1 · Màn hình này nằm trong ' + h(tenGoi) + '</b></div>' +
     '<p class="sm" style="line-height:1.75;color:var(--ink-2)">Nội dung chuyên môn của GITA 365 được mã hoá và chia thành bảy gói. ' +

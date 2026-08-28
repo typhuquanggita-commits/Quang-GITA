@@ -69,17 +69,17 @@ G.VIEWS['vong-doi-tk'] = function(){
     lead:'Tài khoản mở ra là một cánh cửa vào kho tri thức. Cửa không ai đi qua thì phải đóng — không phải để phạt, mà để hỏi xem chuyện gì đang xảy ra.'});
 
   o += '<div class="grid g4 mb">'+
-    U.stat({k:'ĐANG HOẠT ĐỘNG', v:ds.filter(function(x){return x.trang==='Hoạt động';}).length, d:'KPI đạt chuẩn', c:'#10B981'})+
-    U.stat({k:'SẮP KHOÁ', v:sap, d:'KPI dưới 30% · gần mốc 90 ngày', c:'#F59E0B'})+
-    U.stat({k:'ĐÃ KHOÁ', v:khoa, d:'theo luật L1', c:'#F87171'})+
-    U.stat({k:'CHỜ ĐẶT LẠI', v:reset, d:'không hoạt động trên 180 ngày · L3', c:'#8B5CF6'})+
+    U.stat({k:'ĐANG HOẠT ĐỘNG', v:ds.filter(function(x){return x.trang==='Hoạt động';}).length, d:'KPI đạt chuẩn', c:'#0B7350'})+
+    U.stat({k:'SẮP KHOÁ', v:sap, d:'KPI dưới 30% · gần mốc 90 ngày', c:'#C2151C'})+
+    U.stat({k:'ĐÃ KHOÁ', v:khoa, d:'theo luật L1', c:'#C2151C'})+
+    U.stat({k:'CHỜ ĐẶT LẠI', v:reset, d:'không hoạt động trên 180 ngày · L3', c:'#5140B4'})+
   '</div>';
 
   o += U.sec('NĂM LUẬT VÒNG ĐỜI','Ba luật chạy tự động, hai luật cần người xem xét');
   o += '<div class="grid g2">' + G.LUAT_TK.map(function(l){
     return '<div class="card" style="border-color:'+l.c+'2a">'+
       '<div class="row wrap" style="gap:8px;margin-bottom:8px">'+U.chip(l.ma,l.c)+
-      U.chip(l.tuDong?'Tự động':'Cần người xem xét', l.tuDong?'#10B981':'#F59E0B')+'</div>'+
+      U.chip(l.tuDong?'Tự động':'Cần người xem xét', l.tuDong?'#0B7350':'#C2151C')+'</div>'+
       '<b style="font-size:14.5px;display:block;margin-bottom:8px;color:'+l.c+'">'+h(l.ten)+'</b>'+
       '<p class="sm dim" style="line-height:1.6;margin-bottom:10px">'+h(l.luat)+'</p>'+
       '<div style="padding:11px 13px;border-radius:12px;background:'+l.c+'0d;border-left:2px solid '+l.c+'">'+
@@ -92,7 +92,7 @@ G.VIEWS['vong-doi-tk'] = function(){
   o += U.tbl(['Tài khoản','Vai','KPI','Ngày mở','Chưa vào','Trạng thái','Việc'],
     ds.slice().sort(function(a,b){return a.kpi-b.kpi;}).map(function(x){
       var r = G.roleById(x.vai);
-      var c = x.kpi>=70?'#10B981':(x.kpi>=30?'#F59E0B':'#F87171');
+      var c = x.kpi>=70?'#0B7350':(x.kpi>=30?'#C2151C':'#C2151C');
       var kh = x.trang.indexOf('Đã khoá')===0, rs = x.trang.indexOf('Chờ')===0, sp = x.trang.indexOf('Sắp')===0;
       return ['<b class="sm">'+h(x.ten)+'</b><div class="tiny muted mono">'+h(x.u)+'</div>',
         U.chip(r.short, r.c),
@@ -109,10 +109,10 @@ G.VIEWS['vong-doi-tk'] = function(){
   o += U.sec('YÊU CẦU MỞ LẠI','Xem xét trong ba ngày làm việc · lần thứ ba trong năm phải do Giám đốc duyệt');
   o += G.YEUCAU_MO.map(function(y){
     var ba = y.lan >= 3;
-    return '<div class="card mb" style="border-color:'+(ba?'rgba(248,113,113,.3)':'rgba(245,185,66,.26)')+'">'+
+    return '<div class="card mb" style="border-color:'+(ba?'rgba(248,113,113,.3)':'var(--gita-mo-3)')+'">'+
       '<div class="row wrap" style="gap:9px;margin-bottom:9px">'+
       '<b>'+h(y.ten)+'</b><span class="mono tiny muted">'+h(y.u)+'</span>'+
-      U.chip('Lần '+y.lan, ba?'#F87171':'#F5B942')+
+      U.chip('Lần '+y.lan, ba?'#C2151C':'var(--gita)')+
       '<span class="tiny muted mono">'+h(y.ngay)+'</span></div>'+
       '<p class="serif" style="font-size:15px;font-style:italic;line-height:1.6;color:var(--ink)">"'+h(y.ly)+'"</p>'+
       '<div class="mt2" style="padding:11px 13px;border-radius:12px;background:var(--phu-2)">'+
@@ -135,7 +135,7 @@ G.VIEWS['hang-tai-lieu'] = function(){
     lead:H.cot});
 
   o += '<div class="card glow mb"><div class="row wrap" style="gap:24px;align-items:center">'+
-    U.ring(kpiToi, '#F5B942', 'KPI CỦA TÔI')+
+    U.ring(kpiToi, 'var(--gita)', 'KPI CỦA TÔI')+
     '<div class="grow" style="min-width:250px">'+
     '<div class="up muted">VAI VÀ CẤP ĐANG GIỮ</div>'+
     '<b style="font-size:18px;display:block;margin:3px 0 6px;color:'+toi.c+'">'+h(toi.n)+' · cấp '+toi.lv+'</b>'+
@@ -179,7 +179,7 @@ G.VIEWS['hang-tai-lieu'] = function(){
         mo?'<span class="chip on">đang mở</span>':'<span class="chip">'+ic('lock','w-3 h-3')+'</span>'];
     }));
 
-  o += '<div class="card mt2" style="border-color:rgba(245,185,66,.3)">'+
+  o += '<div class="card mt2" style="border-color:var(--gita-vien-1)">'+
     '<div class="row mb"><span style="color:var(--gold-ink)">'+ic('shield','w-4 h-4')+'</span><b>Luật L5 — thăng cấp mới mở tài liệu tương ứng</b></div>'+
     '<p class="sm muted">'+h(G.LUAT_TK[4].viSao)+' '+h(G.LUAT_TK[4].canhBao)+'</p></div>';
   return o;
@@ -192,7 +192,7 @@ G.VIEWS['dau-mat'] = function(){
   var o = U.ph({eyebrow:'NHÓM 05 · QUẢN TRỊ', ic:'shield', grad:1, t:'Mật mã kín trên tài liệu',
     lead:D.cot});
 
-  o += '<div class="card mb" style="border-color:rgba(245,185,66,.3)">'+
+  o += '<div class="card mb" style="border-color:var(--gita-vien-1)">'+
     '<div class="row"><span style="color:var(--gold-ink)">'+ic('lock','w-4 h-4')+'</span><b>Cấu trúc mã</b></div>'+
     '<p class="mono mt" style="font-size:15px;color:var(--gold-2);letter-spacing:.04em">'+h(D.cauTruc)+'</p></div>';
 

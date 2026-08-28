@@ -82,7 +82,7 @@ G.tierOf = function(id){
   return G.TIERS.filter(function(t){return t.id===Number(id);})[0] || G.TIERS[0];
 };
 G.bandColor = function(b){
-  return ({XANH:'#10B981', VANG:'#F59E0B', CAM:'#FF7A45', DO:'#F87171'})[b] || '#94A3B8';
+  return ({XANH:'#0B7350', VANG:'#C2151C', CAM:'var(--gita-do)', DO:'#C2151C'})[b] || '#665E88';
 };
 /* ══════════ PHÂN QUYỀN ══════════
    Hai lớp, theo đúng thứ tự:
@@ -162,7 +162,7 @@ G.famTable = function(list){
       return ['<b>'+h(f.nha)+'</b><div class="tiny muted">'+h(f.hv)+' · '+h(f.lop)+'</div>',
         U.chip(t.code, t.c), '<span class="mono">'+f.ngay+'</span>',
         '<span class="mono">'+f.nhac+'</span>',
-        '<div style="min-width:88px">'+U.bar(f.tuchu,'#10B981')+'<span class="tiny mono muted">'+f.tuchu+'%</span></div>',
+        '<div style="min-width:88px">'+U.bar(f.tuchu,'#0B7350')+'<span class="tiny mono muted">'+f.tuchu+'%</span></div>',
         '<span class="mono">'+f.vai+'/9</span>',
         '<span class="chip" style="color:'+G.bandColor(f.band)+';border-color:'+G.bandColor(f.band)+'55">'+h(f.band)+'</span>',
         '<span class="sm">'+h(f.coach)+'</span>'];
@@ -188,7 +188,7 @@ function banDoSVG(){
     '</linearGradient></defs>';
 
   /* Đích, đặt trên cùng bên phải — cách hẳn chặng T5 */
-  o += '<text x="' + (W - R) + '" y="24" text-anchor="end" font-size="12" font-weight="800" fill="#F5B942">Nhà mình tự chạy</text>'+
+  o += '<text x="' + (W - R) + '" y="24" text-anchor="end" font-size="12" font-weight="800" fill="var(--gita)">Nhà mình tự chạy</text>'+
        '<text x="' + (W - R) + '" y="41" text-anchor="end" font-size="10" fill="#8B85A6">không cần ai canh</text>';
 
   /* Đường đi lên */
@@ -230,9 +230,7 @@ function tamNhinBanDo(){
   var C = G.CULTURE || {}, SM = C.suMenh || {};
   return '<div class="tn-khoi">'+
     '<div class="tn-nhan">'+ic('compass','w-4 h-4')+'<span>'+h(G.L('gateVisionEyebrow'))+'</span></div>'+
-    '<h3 class="tn-tieu">'+h(G.L('gateVisionTitle'))+'</h3>'+
-    '<p class="tn-lon">'+h(G.L('gateVisionBig'))+'</p>'+
-    '<p class="tn-nho">'+h(G.L('gateVisionSub'))+'</p>'+
+    '<p class="tn-tam-nhin">'+h(G.L('gateVisionTitle'))+'</p>'+
 
     '<div class="tn-bando">'+
       '<div class="tn-bd-nhan">'+h(G.L('gateMapTitle'))+'</div>'+
@@ -240,14 +238,14 @@ function tamNhinBanDo(){
     '</div>'+
 
     '<div class="tn-sm">'+
-      '<div class="tiny up" style="color:var(--gold-ink);margin-bottom:5px">'+h(SM.t || 'SỨ MỆNH')+'</div>'+
+      '<div class="tiny up" style="color:var(--gita-ink);margin-bottom:5px">'+h(SM.t || 'SỨ MỆNH')+'</div>'+
       '<p class="sm" style="line-height:1.7;color:var(--ink-2)">'+h(G.L('gateMission'))+'</p>'+
     '</div></div>';
 }
 
 function gate(){
   var o = '<div id="gate">'+
-   '<div class="gate-top"><div class="brand"><span class="mark">GITA</span>'+
+   '<div class="gate-top"><div class="brand"><span class="mark">'+G.dauGita()+'</span>'+
    '<div><div class="nm">GITA 365</div><div class="sub">'+h(G.L('brandSub'))+'</div></div></div>'+
    '<span class="grow"></span>'+
    G.LANGS.map(function(l){
@@ -270,7 +268,7 @@ function gate(){
      tamNhinBanDo()+
      '<div class="mt2" style="padding-top:16px;border-top:1px solid var(--line)">'+
        '<div class="tiny up muted mb">'+h(G.L('orLogin'))+'</div>'+
-       '<div class="card pad-sm mb" style="border-color:rgba(245,185,66,.32);background:rgba(245,185,66,.06)">'+
+       '<div class="card pad-sm mb" style="border-color:var(--gita-vien-1);background:var(--gita-mo-1)">'+
          '<p class="tiny" style="line-height:1.65;color:var(--ink-2)">'+h(G.L('loginHint'))+'</p>'+
          '<button class="btn ghost sm mt" data-act="show-accounts" style="width:100%">'+ic('users')+h(G.L('seePw'))+'</button>'+
        '</div>'+
@@ -298,11 +296,11 @@ G.accountsModal = function(){
     return {n:n, p:Math.round(n*100/tong)};
   }
   var KHOI = [
-    {t:'BAN ĐIỀU HÀNH', c:'#F5B942', lv:[1,4],
+    {t:'BAN ĐIỀU HÀNH', c:'#2166CE', lv:[1,4],
      mo:'Thấy gần như toàn bộ hệ thống. Chỉ R01 và R02 có thư mục Quản trị trang; tài chính dừng ở R03.'},
-    {t:'ĐỘI NGŨ DẪN DẮT', c:'#8B5CF6', lv:[5,12],
+    {t:'ĐỘI NGŨ DẪN DẮT', c:'#5140B4', lv:[5,12],
      mo:'Toàn bộ kho nghề và công cụ dẫn dắt. Không thấy tài chính, điều hành toàn hệ và quản trị trang.'},
-    {t:'KHÁCH HÀNG & CỘNG TÁC', c:'#10B981', lv:[13,15],
+    {t:'KHÁCH HÀNG & CỘNG TÁC', c:'#0B7350', lv:[13,15],
      mo:'Chỉ thấy phần thuộc về mình. Ba vai này khác nhau rõ rệt, không dùng chung một danh sách.'}
   ];
 
@@ -331,7 +329,7 @@ G.accountsModal = function(){
 
   o += U.sec('BỐN CHUYÊN GIA PHẢN BIỆN','Đăng nhập để chấm hệ thống từ góc nhìn của họ');
   o += U.tbl(['Vai kiểm thử','Tài khoản','Mật khẩu',''], G.AUDITORS.map(function(a){
-    return [U.chip(a.ten,'#FB7185'), '<span class="mono sm">'+h(a.u)+'</span>',
+    return [U.chip(a.ten,'#C2151C'), '<span class="mono sm">'+h(a.u)+'</span>',
       '<span class="mono sm" style="color:var(--gold-ink)">'+h(a.p)+'</span>',
       '<button class="btn sm" data-login="'+h(a.u)+'">Vào</button>'];
   }));
@@ -365,10 +363,10 @@ function manCho(loi){
   document.getElementById('app').innerHTML =
     '<div style="min-height:100vh;display:grid;place-items:center;text-align:center;padding:30px">'+
     '<div><div style="width:64px;height:64px;border-radius:20px;margin:0 auto 18px;display:grid;place-items:center;'+
-    'background:linear-gradient(135deg,var(--gold),var(--ember));color:#1A1006;font-weight:900">GITA</div>'+
+    'overflow:hidden;border:1px solid var(--gita-vien-1);background:#fff">'+G.dauGita()+'</div>'+
     '<b style="font-size:16px;display:block;margin-bottom:6px">'+h(loi)+'</b>'+
     '<p class="sm muted">Nội dung chuyên môn được mã hoá — chỉ mở đúng phần vai này được cấp.</p>'+
-    '<div style="width:220px;margin:16px auto 0">'+U.bar(100,'#F5B942')+'</div></div></div>';
+    '<div style="width:220px;margin:16px auto 0">'+U.bar(100,'var(--gita)')+'</div></div></div>';
 }
 
 /* ═══════════════ KHUNG ỨNG DỤNG ═══════════════ */
@@ -387,7 +385,7 @@ function leftNav(){
 
   /* Dải phạm vi — nhìn một cái là biết đang đăng nhập bằng vai nào và
      vai đó mở được bao nhiêu màn. Trước đây mọi vai trông như nhau. */
-  var dai = '<div class="pv-dai" style="--pv:'+(r.c||'#F5B942')+'">'+
+  var dai = '<div class="pv-dai" style="--pv:'+(r.c||'var(--gita)')+'">'+
     '<div class="pv-vai">'+ic('shield','w-4 h-4')+'<b>'+h(r.n||'—')+'</b>'+
       '<span class="pv-bac">bậc '+h(r.lv||'—')+'</span></div>'+
     '<div class="pv-so"><b>'+tongMo+'</b> màn hình mở'+
@@ -446,8 +444,8 @@ function rightPanel(){
 
   if(G.S.rtab==='labon'){
     o += '<div class="rblock"><h4>'+h(G.L('vision'))+'</h4>'+
-      '<p class="serif" style="font-size:15.5px;line-height:1.6;color:var(--gold-2)">'+h(C.tamNhin.big)+'</p>'+
-      '<p class="tiny muted mt">'+h(C.tamNhin.sub)+'</p></div>'+
+      /* Câu tầm nhìn chính thức — cùng một nguồn với Cổng vào, sửa một chỗ là đổi cả hai */
+      '<p class="serif" style="font-size:15px;line-height:1.62;color:var(--gita-ink)">'+h(G.L('gateVisionTitle'))+'</p></div>'+
       '<div class="rblock"><h4>'+h(G.L('mission'))+'</h4>'+
       '<p class="sm" style="line-height:1.65;color:var(--ink-2)">'+h(C.suMenh.big)+'</p>'+
       '<p class="tiny muted mt">'+h(C.suMenh.sub)+'</p></div>'+
@@ -513,7 +511,7 @@ function topBar(){
   var r = G.S.roleObj, a = G.S.acc;
   return '<div class="brand"><button class="tbtn mobonly" data-act="toggle-left" aria-label="Menu">'+ic('menu')+'</button>'+
     '<button class="brand" data-v="'+h((G.PORTALS[r.portal]||{}).home||'ban-do')+'" style="gap:11px">'+
-    '<span class="mark">GITA</span><div class="deskonly" style="text-align:left">'+
+    '<span class="mark">'+G.dauGita()+'</span><div class="deskonly" style="text-align:left">'+
     '<div class="nm">GITA 365</div><div class="sub">'+h(G.L('brandSub'))+'</div></div></button></div>'+
     '<button id="search" data-act="cmd">'+ic('search')+'<span>'+h(G.L('search'))+'</span><kbd>Ctrl K</kbd></button>'+
     '<span class="grow"></span>'+
@@ -522,11 +520,11 @@ function topBar(){
       ic(G.NEN==='toi'?'sun':'moon')+'</button>'+
     '<button class="tbtn" data-act="lang" aria-label="Language" style="font-size:11px;font-weight:800;letter-spacing:.04em">'+
       h(G.LANG.toUpperCase())+'</button>'+
-    (G.INSTALL ? '<button class="tbtn" data-act="install" aria-label="Cài đặt ứng dụng" style="color:var(--gold-ink);border-color:rgba(245,185,66,.45)">'+ic('plus')+'</button>' : '')+
+    (G.INSTALL ? '<button class="tbtn" data-act="install" aria-label="Cài đặt ứng dụng" style="color:var(--gold-ink);border-color:var(--gita-vien-2)">'+ic('plus')+'</button>' : '')+
     '<button class="tbtn" data-act="toggle-right" aria-label="'+h(G.L('compass'))+'">'+ic('compass')+'</button>'+
     '<button class="who" data-v="toi">'+
       '<div class="tx deskonly"><b>'+h(a.ten)+'</b><span>'+h(a.nha)+'</span></div>'+
-      '<span class="av" style="background:linear-gradient(135deg,'+r.c+',#FF7A45)">'+
+      '<span class="av" style="background:linear-gradient(135deg,'+r.c+',var(--gita-do))">'+
       h(a.ten.split(' ').slice(-1)[0].slice(0,2).toUpperCase())+'</span></button>';
 }
 
@@ -629,22 +627,22 @@ G.ask = function(q){
   var hits = [];
   (G.MOTHUC||[]).forEach(function(m){
     if((m.title+' '+(m.keywords||[]).join(' ')).toLowerCase().indexOf(key.split(' ')[0])>=0)
-      hits.push({t:m.title, s:String(m.summary||'').slice(0,220), src:'Mô thức '+m.id, c:'#F5B942', go:'mo-thuc'});
+      hits.push({t:m.title, s:String(m.summary||'').slice(0,220), src:'Mô thức '+m.id, c:'#2166CE', go:'mo-thuc'});
   });
   G.BAIHOC.forEach(function(b){
     if((b.ten+' '+(b.nguyenLy||'')).toLowerCase().indexOf(key.split(' ')[0])>=0)
-      hits.push({t:b.ten, s:String(b.nguyenLy||'').slice(0,220), src:'Bài học '+b.id, c:'#10B981', go:'tu-duy'});
+      hits.push({t:b.ten, s:String(b.nguyenLy||'').slice(0,220), src:'Bài học '+b.id, c:'#0B7350', go:'tu-duy'});
   });
   (G.PHACDO||[]).forEach(function(p){
     if((p.ten||'').toLowerCase().indexOf(key.split(' ')[0])>=0)
-      hits.push({t:p.ten, s:(p.giaiPhap||p.nguyenNhan||''), src:'Phác đồ '+p.ma, c:'#3B82F6', go:'phac-do'});
+      hits.push({t:p.ten, s:(p.giaiPhap||p.nguyenNhan||''), src:'Phác đồ '+p.ma, c:'#2166CE', go:'phac-do'});
   });
   (G.KICHBAN||[]).forEach(function(k){
     if((k.ten||'').toLowerCase().indexOf(key.split(' ')[0])>=0 && hits.length<40)
-      hits.push({t:k.ten, s:String(k.mo||k.muc||'').slice(0,220), src:'Kịch bản '+k.ma+' · '+k.tang, c:'#8B5CF6', go:'kich-ban'});
+      hits.push({t:k.ten, s:String(k.mo||k.muc||'').slice(0,220), src:'Kịch bản '+k.ma+' · '+k.tang, c:'#5140B4', go:'kich-ban'});
   });
   var f = G.myFamily(), t = G.tierOf(f.tier);
-  var head = '<div class="card mb" style="border-color:rgba(245,185,66,.3)">'+
+  var head = '<div class="card mb" style="border-color:var(--gita-vien-1)">'+
     '<div class="row mb"><span style="color:var(--gold-ink)">'+ic('spark','w-4 h-4')+'</span>'+
     '<b>Trả lời trong phạm vi '+h(t.code+' · '+G.tname(t))+'</b></div>'+
     '<p class="sm dim" style="line-height:1.7">'+h(t.note)+' '+
@@ -679,7 +677,7 @@ G.ask = function(q){
       '<span style="color:'+best.c+'">'+ic('users','w-4 h-4')+'</span>'+
       '<b>'+(gap?'Câu này vượt phạm vi trợ lý — đã chuyển tới người thật ngay':'Đã báo cho người đồng hành phù hợp nhất')+'</b>'+
       U.chip('Miền '+mien+' · '+mm.short, mm.c)+
-      (gap?U.chip('Độ gấp cao','#F87171'):'')+'</div>'+
+      (gap?U.chip('Độ gấp cao','#C2151C'):'')+'</div>'+
       '<div class="row wrap" style="gap:14px">'+
       '<div class="grow" style="min-width:180px"><b class="sm" style="display:block">'+h(best.ten)+'</b>'+
       '<span class="tiny muted">'+h(best.vai)+' · '+h(best.note)+'</span></div>'+
@@ -826,7 +824,7 @@ G.mic = function(){
   r.interimResults = true;
   r.continuous = false;
   G.REC = r;
-  if(btn){ btn.style.color = '#F87171'; btn.style.borderColor = 'rgba(248,113,113,.6)'; }
+  if(btn){ btn.style.color = '#C2151C'; btn.style.borderColor = 'rgba(248,113,113,.6)'; }
   U.toast(G.LANG==='en' ? 'Listening… speak now.' : 'Đang nghe… anh chị nói ạ.','ok');
   r.onresult = function(e){
     var txt = '';
@@ -960,8 +958,8 @@ on('[data-sat]', function(el){
     '<h2 style="font-size:22px;font-weight:800;margin-bottom:6px">'+h(f.nha)+'</h2>'+
     '<p class="sm muted mb">'+h(f.hv)+' · '+h(f.lop)+' · Coach '+h(f.coach)+'</p>'+
     '<div class="grid g2" style="gap:10px">'+
-    U.stat({k:'MỨC TỰ CHỦ',v:f.tuchu+'%',d:'',c:'#10B981'})+
-    U.stat({k:'VAI CÓ NGƯỜI GIỮ',v:f.vai+'/9',d:'',c:'#8B5CF6'})+'</div>'+
+    U.stat({k:'MỨC TỰ CHỦ',v:f.tuchu+'%',d:'',c:'#0B7350'})+
+    U.stat({k:'VAI CÓ NGƯỜI GIỮ',v:f.vai+'/9',d:'',c:'#5140B4'})+'</div>'+
     '<div class="card pad-sm mt"><div class="tiny up muted mb">KỲ TÍCH ĐANG CHẠY</div>'+
     '<p class="sm">'+h(f.kyTich)+'</p></div>');
 });
@@ -1046,7 +1044,7 @@ on('[data-act]', function(el){
       return m.ma.replace(/[^0-9A-Za-z]/g,'').toLowerCase()
         .indexOf(hien[0].replace(/[^0-9A-Za-z]/g,'').toLowerCase().slice(4,8)) >= 0; })[0] : null;
     if(!van.trim()){ kq.innerHTML = ''; return; }
-    kq.innerHTML = '<div class="card pad-sm" style="border-color:'+(hien||an?'rgba(245,185,66,.4)':'rgba(148,163,184,.3)')+'">'+
+    kq.innerHTML = '<div class="card pad-sm" style="border-color:'+(hien||an?'var(--gita-vien-2)':'rgba(148,163,184,.3)')+'">'+
       '<div class="up mb" style="color:'+(hien||an?'var(--gold)':'var(--ink-4)')+'">KẾT QUẢ QUÉT</div>'+
       '<div class="stack">'+
       '<div class="sm">Lớp 1 · mã hiện: '+(hien?'<b style="color:var(--gold-ink)">'+U.h(hien[0])+'</b>':'<span class="muted">không thấy</span>')+'</div>'+
@@ -1156,8 +1154,8 @@ function sparks(){
     s.style.animationDuration = (12+Math.random()*16)+'s';
     s.style.animationDelay = (Math.random()*18)+'s';
     s.style.opacity = 0;
-    if(i%3===0) s.style.background = '#8B5CF6', s.style.boxShadow = '0 0 12px 2px rgba(139,92,246,.8)';
-    if(i%4===0) s.style.background = '#10B981', s.style.boxShadow = '0 0 12px 2px rgba(16,185,129,.8)';
+    if(i%3===0) s.style.background = '#5140B4', s.style.boxShadow = '0 0 12px 2px rgba(139,92,246,.8)';
+    if(i%4===0) s.style.background = '#0B7350', s.style.boxShadow = '0 0 12px 2px rgba(16,185,129,.8)';
     document.body.appendChild(s);
   }
 }

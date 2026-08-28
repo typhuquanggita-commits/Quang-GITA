@@ -20,35 +20,35 @@ G.META = {
 
 /* ══════════ 1. VAI TRÒ — lv càng nhỏ càng nhiều quyền ══════════ */
 G.ROLES = [
-  {id:'R01',lv:1, n:'Super Admin',         short:'Super Admin',portal:'admin', c:'#F5B942',
+  {id:'R01',lv:1, n:'Super Admin',         short:'Super Admin',portal:'admin', c:'#2166CE',
    ln:'Người giữ chìa khoá gốc của hệ sinh thái.'},
-  {id:'R02',lv:2, n:'Admin hệ thống',      short:'Admin',      portal:'admin', c:'#F5B942',
+  {id:'R02',lv:2, n:'Admin hệ thống',      short:'Admin',      portal:'admin', c:'#2166CE',
    ln:'Kiến trúc sư vận hành — dựng chuẩn, mở đường, giữ lửa.'},
-  {id:'R03',lv:3, n:'Giám đốc',            short:'Giám đốc',   portal:'admin', c:'#FF7A45',
+  {id:'R03',lv:3, n:'Giám đốc',            short:'Giám đốc',   portal:'admin', c:'#E4232B',
    ln:'Người cầm tầm nhìn và chịu trách nhiệm tăng trưởng.'},
-  {id:'R04',lv:4, n:'Quản lý chuyên môn',  short:'QLCM',       portal:'admin', c:'#FF7A45',
+  {id:'R04',lv:4, n:'Quản lý chuyên môn',  short:'QLCM',       portal:'admin', c:'#E4232B',
    ln:'Người giữ chuẩn nghề của toàn bộ đội ngũ dẫn dắt.'},
-  {id:'R05',lv:5, n:'Trưởng nhóm Coach',   short:'TN Coach',   portal:'coach', c:'#8B5CF6',
+  {id:'R05',lv:5, n:'Trưởng nhóm Coach',   short:'TN Coach',   portal:'coach', c:'#5140B4',
    ln:'Người tạo ra Coach giỏi, không chỉ làm Coach giỏi.'},
-  {id:'R06',lv:6, n:'Senior Coach',        short:'S.Coach',    portal:'coach', c:'#8B5CF6',
+  {id:'R06',lv:6, n:'Senior Coach',        short:'S.Coach',    portal:'coach', c:'#5140B4',
    ln:'Người gỡ được những nút thắt mà người khác chưa gỡ nổi.'},
-  {id:'R07',lv:7, n:'Coach',               short:'Coach',      portal:'coach', c:'#8B5CF6',
+  {id:'R07',lv:7, n:'Coach',               short:'Coach',      portal:'coach', c:'#5140B4',
    ln:'Người thắp lửa chuyển hoá cho từng gia đình.'},
-  {id:'R08',lv:8, n:'Giáo viên',           short:'Giáo viên',  portal:'coach', c:'#06B6D4',
+  {id:'R08',lv:8, n:'Giáo viên',           short:'Giáo viên',  portal:'coach', c:'#0B6675',
    ln:'Người dạy đúng thứ học viên đang cần để đi tiếp.'},
-  {id:'R09',lv:9, n:'Mentor',              short:'Mentor',     portal:'coach', c:'#06B6D4',
+  {id:'R09',lv:9, n:'Mentor',              short:'Mentor',     portal:'coach', c:'#0B6675',
    ln:'Người chạy tám việc băng nền dưới cả năm khoang.'},
-  {id:'R10',lv:10,n:'Chuyên gia đánh giá', short:'Assessor',   portal:'coach', c:'#06B6D4',
+  {id:'R10',lv:10,n:'Chuyên gia đánh giá', short:'Assessor',   portal:'coach', c:'#0B6675',
    ln:'Người trả lại sự thật bằng dữ liệu, không bằng cảm giác.'},
-  {id:'R11',lv:11,n:'Chuyên gia tư vấn',   short:'Tư vấn',     portal:'tuvan', c:'#F59E0B',
+  {id:'R11',lv:11,n:'Chuyên gia tư vấn',   short:'Tư vấn',     portal:'tuvan', c:'#C2151C',
    ln:'Người mở cánh cửa cho gia đình đang tìm đường.'},
-  {id:'R12',lv:12,n:'Phân tích dữ liệu',   short:'Phân tích',  portal:'admin', c:'#3B82F6',
+  {id:'R12',lv:12,n:'Phân tích dữ liệu',   short:'Phân tích',  portal:'admin', c:'#2166CE',
    ln:'Người đọc ra mô thức trước khi nó thành vấn đề.'},
-  {id:'R13',lv:13,n:'Phụ huynh',           short:'Phụ huynh',  portal:'ph',    c:'#10B981',
+  {id:'R13',lv:13,n:'Phụ huynh',           short:'Phụ huynh',  portal:'ph',    c:'#0B7350',
    ln:'Chủ nhân thật sự của bản đồ gia đình thịnh vượng.'},
-  {id:'R14',lv:14,n:'Học viên',            short:'Học viên',   portal:'hs',    c:'#3B82F6',
+  {id:'R14',lv:14,n:'Học viên',            short:'Học viên',   portal:'hs',    c:'#2166CE',
    ln:'Người đang viết chương hay nhất của đời mình.'},
-  {id:'R15',lv:15,n:'CTV giới thiệu',      short:'Đại sứ',     portal:'ctv',   c:'#FB7185',
+  {id:'R15',lv:15,n:'CTV giới thiệu',      short:'Đại sứ',     portal:'ctv',   c:'#C2151C',
    ln:'Người mang ánh sáng này tới nhà tiếp theo.'}
 ];
 
@@ -116,12 +116,12 @@ G.PERM_TEN = {
 
 /* Nhóm quyền — để bảng điều khiển xếp cột cho dễ đọc. */
 G.PERM_NHOM = [
-  {id:'sys', t:'HỆ THỐNG',   c:'#F5B942', ds:['sys_config','sys_delete_user','sys_restore','sys_manage_user','sys_audit','sys_fraud','qt_trang','sua_noi_dung']},
-  {id:'fin', t:'TÀI CHÍNH',  c:'#10B981', ds:['fin_view','fin_payout','fin_payroll','fin_create_order']},
-  {id:'pro', t:'CHUYÊN MÔN', c:'#8B5CF6', ds:['pro_approve','pro_report','pro_override','pro_assign','pro_coach','pro_assess','pro_view_all','pro_consult','dh_toan_he','nghe_chung']},
-  {id:'kh',  t:'KHÁCH HÀNG', c:'#06B6D4', ds:['usr_self_data','usr_do_test','usr_referral','kh_gia_dinh','kh_hanh_trinh','kh_qua_tang']},
-  {id:'ctv', t:'CỘNG TÁC',   c:'#FB7185', ds:['ctv_lien_ket','ctv_hoa_hong']},
-  {id:'out', t:'XUẤT RA NGOÀI', c:'#FF7A45', ds:['xuat_pdf','xuat_sheet']}
+  {id:'sys', t:'HỆ THỐNG',   c:'#2166CE', ds:['sys_config','sys_delete_user','sys_restore','sys_manage_user','sys_audit','sys_fraud','qt_trang','sua_noi_dung']},
+  {id:'fin', t:'TÀI CHÍNH',  c:'#0B7350', ds:['fin_view','fin_payout','fin_payroll','fin_create_order']},
+  {id:'pro', t:'CHUYÊN MÔN', c:'#5140B4', ds:['pro_approve','pro_report','pro_override','pro_assign','pro_coach','pro_assess','pro_view_all','pro_consult','dh_toan_he','nghe_chung']},
+  {id:'kh',  t:'KHÁCH HÀNG', c:'#0B6675', ds:['usr_self_data','usr_do_test','usr_referral','kh_gia_dinh','kh_hanh_trinh','kh_qua_tang']},
+  {id:'ctv', t:'CỘNG TÁC',   c:'#C2151C', ds:['ctv_lien_ket','ctv_hoa_hong']},
+  {id:'out', t:'XUẤT RA NGOÀI', c:'#E4232B', ds:['xuat_pdf','xuat_sheet']}
 ];
 
 /* ══════════ BẢNG PHÂN QUYỀN THEO VAI ══════════
@@ -177,39 +177,39 @@ G.TAM_NHIN = [
 
 /* Sáu chân dung người dùng — lời mời bước vào, hiển thị ở Cổng vào */
 G.PORTALS = {
-  admin:{n:'Trung Tâm Điều Hành', ic:'shield', c:'#F5B942', home:'dieu-hanh',
+  admin:{n:'Trung Tâm Điều Hành', ic:'shield', c:'#2166CE', home:'dieu-hanh',
     say:'Anh nhìn thấy toàn bộ trường năng lượng: từng gia đình đang ở đâu, đội ngũ đang giữ lửa thế nào, kho báu vật đang được dùng ra sao.'},
-  coach:{n:'Buồng Lái Của Coach', ic:'flame', c:'#8B5CF6', home:'coach-deck',
+  coach:{n:'Buồng Lái Của Coach', ic:'flame', c:'#5140B4', home:'coach-deck',
     say:'Mỗi buổi anh chị bước vào là một gia đình đổi hướng. Đây là nơi anh chị thấy rõ nên chạm vào đâu trước.'},
-  tuvan:{n:'Khoang Mở Cửa', ic:'compass', c:'#F59E0B', home:'tuvan-deck',
+  tuvan:{n:'Khoang Mở Cửa', ic:'compass', c:'#C2151C', home:'tuvan-deck',
     say:'Người đối diện chưa cần nghe anh chị giỏi thế nào. Họ cần thấy nhà mình trong tấm bản đồ này.'},
-  ph:{n:'Bản Đồ Nhà Mình', ic:'home', c:'#10B981', home:'bat-dau',
+  ph:{n:'Bản Đồ Nhà Mình', ic:'home', c:'#0B7350', home:'bat-dau',
     say:'Đây là bản đồ của chính gia đình anh chị. Không ai viết hộ. Hệ thống chỉ giữ chuẩn và soi đường.'},
-  hs:{n:'Hành Trình Của Con', ic:'star', c:'#3B82F6', home:'bat-dau',
+  hs:{n:'Hành Trình Của Con', ic:'star', c:'#2166CE', home:'bat-dau',
     say:'Đây là hành trình của em. Mỗi ngày em đi thêm một bước, bản đồ này sáng thêm một chỗ.'},
-  ctv:{n:'Vệ Tinh Lan Toả', ic:'share', c:'#FB7185', home:'dai-su',
+  ctv:{n:'Vệ Tinh Lan Toả', ic:'share', c:'#C2151C', home:'dai-su',
     say:'Câu chuyện thật của anh chị là thứ mở được cánh cửa mà không quảng cáo nào mở nổi.'}
 };
 
 /* ══════════ 2. NĂM TẦNG ══════════ */
 G.TIERS = [
-  {id:1,code:'T1',name:'NHẬN DIỆN',q:'Đang có vấn đề gì?',days:7,c:'#3B82F6',
+  {id:1,code:'T1',name:'NHẬN DIỆN',q:'Đang có vấn đề gì?',days:7,c:'#2166CE',
    goal:'Lập baseline trung thực, phát hiện mô thức, hình thành 1–3 giả thuyết G–I–T–A.',
    note:'Tầng 1 KHÔNG chữa vấn đề. Chỉ quan sát, ghi dữ liệu, tìm mô thức.',
    feel:'Lần đầu cả nhà nhìn thấy sự thật mà không cãi nhau.'},
-  {id:2,code:'T2',name:'GIẢI MÃ',q:'Vì sao vấn đề xảy ra?',days:21,c:'#8B5CF6',
+  {id:2,code:'T2',name:'GIẢI MÃ',q:'Vì sao vấn đề xảy ra?',days:21,c:'#5140B4',
    goal:'Kiểm chứng giả thuyết qua 3 vòng 7 ngày, chốt cơ chế ưu tiên.',
    note:'Mỗi vòng chỉ thay ít biến, ghi bằng chứng ủng hộ và phản bác.',
    feel:'Hết đổ lỗi. Bắt đầu hiểu cơ chế.'},
-  {id:3,code:'T3',name:'KIẾN TẠO',q:'Cần làm gì và làm thế nào?',days:90,c:'#06B6D4',
+  {id:3,code:'T3',name:'KIẾN TẠO',q:'Cần làm gì và làm thế nào?',days:90,c:'#0B6675',
    goal:'4 chuỗi 21 ngày: có cấu trúc → tự điều hành → thích ứng → chuyển giao.',
    note:'Mỗi cấp có PDCA và cổng nghiệm thu.',
    feel:'Nhà mình có một hệ thống chạy được, do chính mình dựng.'},
-  {id:4,code:'T4',name:'CHUYỂN HÓA',q:'Làm sao duy trì thay đổi thành năng lực?',days:365,c:'#10B981',
+  {id:4,code:'T4',name:'CHUYỂN HÓA',q:'Làm sao duy trì thay đổi thành năng lực?',days:365,c:'#0B7350',
    goal:'4 chu kỳ 90 ngày: năng lực nền → ổn định → thích ứng → chuyển giao.',
    note:'Tăng dần độ khó, giảm dần hỗ trợ Coach.',
    feel:'Quyền điều hành việc học đã nằm trong tay con.'},
-  {id:5,code:'T5',name:'BỨT PHÁ',q:'Gia đình có thể phát triển tới đâu?',days:365,c:'#F59E0B',
+  {id:5,code:'T5',name:'BỨT PHÁ',q:'Gia đình có thể phát triển tới đâu?',days:365,c:'#C2151C',
    goal:'Đồng bộ học viên – phụ huynh – gia đình. Từ tự quản sang tạo giá trị.',
    note:'Coach đồng hành cả gia đình. Đích: hệ thống tự vận hành sau 365 ngày.',
    feel:'Một gia đình vận hành được mà không cần ai canh.'}
@@ -217,19 +217,19 @@ G.TIERS = [
 
 /* ══════════ 3. MÔ THỨC G–I–T–A ══════════ */
 G.GITA = [
-  {k:'G',name:'Goal — Hệ thống mục tiêu',short:'Mục tiêu',c:'#3B82F6',
+  {k:'G',name:'Goal — Hệ thống mục tiêu',short:'Mục tiêu',c:'#2166CE',
    desc:'Học viên có mục tiêu rõ, có ý nghĩa, do chính mình sở hữu không?',
    probe:'Con muốn điều gì? Điều đó là của con hay của người lớn? Đạt được thì khác đi thế nào?',
    inc:['Mục tiêu','Kết quả','Kỳ tích','Nguyện vọng','Thành quả']},
-  {k:'I',name:'Inspirits — Nội lực',short:'Nội lực',c:'#8B5CF6',
+  {k:'I',name:'Inspirits — Nội lực',short:'Nội lực',c:'#5140B4',
    desc:'Khát khao và niềm tin bên trong có đủ để duy trì hành động không?',
    probe:'Điều gì khiến con muốn làm? Con tin mình làm được tới đâu? Khi thất bại con nghĩ gì?',
    inc:['Khát khao','Động lực','Cảm hứng','Giá trị','Đam mê','Tầm nhìn','Thái độ','Hệ thống niềm tin']},
-  {k:'T',name:'Talent — Hệ thống tài năng',short:'Năng lực',c:'#10B981',
+  {k:'T',name:'Talent — Hệ thống tài năng',short:'Năng lực',c:'#0B7350',
    desc:'Học viên có đủ năng lực, phương pháp và kỹ năng để làm được không?',
    probe:'Con biết cách làm chưa? Con mạnh nhất ở đâu? Cách làm nào đã hiệu quả với con?',
    inc:['Tài năng','Điểm mạnh','Sở trường','Tư duy','Phương pháp','Kỹ năng xuất sắc']},
-  {k:'A',name:'Academy & Action — Hệ sinh thái và hành động',short:'Môi trường & Hành động',c:'#F59E0B',
+  {k:'A',name:'Academy & Action — Hệ sinh thái và hành động',short:'Môi trường & Hành động',c:'#C2151C',
    desc:'Môi trường, quan hệ, thói quen và hệ thống vận hành có nâng đỡ hành động không?',
    probe:'Ai quanh con? Không gian và nhịp sống thế nào? Con đang dùng hệ thống nào để vận hành?',
    inc:['Quan hệ chất lượng','Mentor và nhóm trí tuệ','Hệ thống thói quen','Quy tắc','Đo lường','PDCA','Tháp học tập']}
@@ -237,7 +237,7 @@ G.GITA = [
 
 /* ══════════ 4. NĂM NHÓM CHÍNH — thanh tab bên trái ══════════ */
 G.NAV = [
-  {id:'g1',no:'01',ic:'map',c:'#F5B942',
+  {id:'g1',no:'01',ic:'map',c:'#2166CE',
    t:'BẢN ĐỒ THỊNH VƯỢNG', s:'Nhà mình đang ở đâu, và sẽ thành gì?',
    essence:'Nơi mọi thứ bắt đầu: nhìn cho đúng trước khi sửa bất cứ điều gì.',
    items:[
@@ -254,7 +254,7 @@ G.NAV = [
     {v:'wow',         t:'Chuỗi WOW',                   h:'Bảy khoảnh khắc đáng nhớ của hành trình',ic:'spark', capMo:'chung'}
    ]},
 
-  {id:'g2',no:'02',ic:'compass',c:'#8B5CF6',
+  {id:'g2',no:'02',ic:'compass',c:'#5140B4',
    t:'HÀNH TRÌNH 5 TẦNG', s:'Đi theo thứ tự nào để không vỡ trận?',
    essence:'Bảy ngày nhìn đúng · 21 ngày hiểu cơ chế · 90 ngày dựng hệ thống · 365 ngày trao quyền.',
    items:[
@@ -269,7 +269,7 @@ G.NAV = [
     {v:'kien-truc-100',t:'Kiến trúc một trăm năm',     h:'100 tầng giá trị · 5 thời kỳ · mỗi năm +3–5%',ic:'sun', star:1, perm:'nghe_chung', capMo:'nghe'}
    ]},
 
-  {id:'g3',no:'03',ic:'vault',c:'#06B6D4',
+  {id:'g3',no:'03',ic:'vault',c:'#0B6675',
    t:'KHO BÁU VẬT', s:'Cần bí kíp nào cho đúng tình huống này?',
    essence:'1.000 kịch bản · 220 phác đồ · 25 mô thức · toàn văn sách gốc — mở khoá theo tiến trình.',
    items:[
@@ -284,11 +284,12 @@ G.NAV = [
     {v:'tu-duy',      t:'Hệ tư duy mới',               h:'14 bài học đổi cách nhìn trong nhà', ic:'lightning', perm:'nghe_chung', capMo:'nghe'},
     {v:'sach',        t:'Sách gốc & tư liệu Học viện', h:'11 chương · 515 đoạn · tra cứu được',ic:'book', perm:'nghe_chung', capMo:'nghe'},
     {v:'ngon-tu',     t:'Ngôn từ dẫn dắt',             h:'Sáu nhịp · mẫu câu dùng được ngay',  ic:'lightning', star:1, perm:'nghe_chung', capMo:'nghe'},
+    {v:'nhan-dien',   t:'Bộ nhận diện GITA',            h:'Logo · ba màu · chữ · luật dùng',    ic:'star', capMo:'chung', star:1},
     {v:'thuong-hieu', t:'Nhận diện thương hiệu',       h:'Màu · chữ · giọng nói · điều cấm kỵ',ic:'star', perm:'nghe_chung', capMo:'nghe'},
     {v:'tro-ly',      t:'Trợ lý GITA',                 h:'Hỏi bất cứ điều gì, trích dẫn nguồn',ic:'spark', perm:'nghe_chung', capMo:'nghe'}
    ]},
 
-  {id:'g4',no:'04',ic:'flame',c:'#FF7A45',
+  {id:'g4',no:'04',ic:'flame',c:'#E4232B',
    t:'CÚ HÍCH & NHỊP SỐNG', s:'Làm gì hôm nay để nhà mình khác đi?',
    essence:'Thói quen, nghi lễ, vai giữ và những cú hích đủ lớn để cả nhà bật lên.',
    items:[
@@ -303,7 +304,7 @@ G.NAV = [
     {v:'chuan-nhat',  t:'Chuẩn vận hành',              h:'Kaizen · Monozukuri · Omotenashi · Shokunin',ic:'target', perm:'nghe_chung', capMo:'nghe'}
    ]},
 
-  {id:'g5',no:'05',ic:'orbit',c:'#10B981',
+  {id:'g5',no:'05',ic:'orbit',c:'#0B7350',
    t:'HỆ SINH THÁI & VẬN HÀNH', s:'Quanh nhà mình có ai, và hệ thống đang chạy ra sao?',
    essence:'Vệ tinh những người tuyệt vời, đội ngũ dẫn dắt và trung tâm điều hành của cả hệ sinh thái.',
    items:[
@@ -356,7 +357,7 @@ G.NAV = [
      Thư mục riêng cho việc quản trị chính trang: phân công cấp quyền,
      mở tài khoản mới, khoá – mở lại – xoá tài khoản, và nhật ký.
      Vai từ R03 trở xuống không thấy thư mục này. */
-  {id:'g6',no:'06',ic:'lock',c:'#F5B942',
+  {id:'g6',no:'06',ic:'lock',c:'#2166CE',
    t:'QUẢN TRỊ TRANG', s:'Ai được vào, vào tới đâu, và ai đã làm gì.',
    essence:'Nơi cấp quyền, mở và khoá tài khoản. Mọi thao tác ở đây đều vào nhật ký kèm tên người làm.',
    items:[
@@ -403,25 +404,25 @@ G.CULTURE = {
 
   /* Bảy giá trị cốt lõi */
   giaTri:[
-    {k:'THẬT', c:'#3B82F6', t:'Trung thực với dữ liệu',
+    {k:'THẬT', c:'#2166CE', t:'Trung thực với dữ liệu',
      d:'Nói bằng số có ngày, có giờ, có số lần. Một ngày lệch nhịp là một dữ kiện, không phải một bản án.',
      nen:'Ghi đúng cả hôm tệ nhất.', khong:'Làm đẹp báo cáo để dễ nhìn.'},
-    {k:'THƯƠNG', c:'#FB7185', t:'Tôn trọng vô điều kiện',
+    {k:'THƯƠNG', c:'#C2151C', t:'Tôn trọng vô điều kiện',
      d:'Không dán nhãn, không xếp hạng, không so đứa này với đứa kia. Mỗi người chỉ so với chính mình chặng trước.',
      nen:'Nghe bảy, khuyên ba.', khong:'Dùng dữ liệu để chứng minh ai đó sai.'},
-    {k:'CHUẨN', c:'#F5B942', t:'Giữ chuẩn nghề',
+    {k:'CHUẨN', c:'#2166CE', t:'Giữ chuẩn nghề',
      d:'Mọi buổi làm việc đều có kịch bản, có phác đồ, có cổng nghiệm thu. Ngẫu hứng là rủi ro của gia đình khác.',
      nen:'Mở đúng kịch bản cho đúng tầng.', khong:'Ứng biến ngoài chuẩn vì thấy quen tay.'},
-    {k:'BỀN', c:'#10B981', t:'Nhịp hơn cường độ',
+    {k:'BỀN', c:'#0B7350', t:'Nhịp hơn cường độ',
      d:'21 ngày một cấp độ, 90 ngày một chặng. Bùng lên một tuần rồi tắt không tạo ra năng lực nào.',
      nen:'Giữ đúng hẹn dù hôm đó ngắn.', khong:'Dồn việc cả tháng vào một buổi.'},
-    {k:'TỎ', c:'#8B5CF6', t:'Minh bạch tới tận cùng',
+    {k:'TỎ', c:'#5140B4', t:'Minh bạch tới tận cùng',
      d:'Ai giữ vai gì, ai xem được dữ liệu nào, tiền đi đường nào — nói rõ ngay từ đầu và ghi lại.',
      nen:'Nói trước cả điều bất lợi.', khong:'Để gia đình tự đoán về quyền và chi phí.'},
-    {k:'TRAO', c:'#06B6D4', t:'Trao quyền kèm trách nhiệm',
+    {k:'TRAO', c:'#0B6675', t:'Trao quyền kèm trách nhiệm',
      d:'Mỗi lần trao một quyền là kèm một trách nhiệm tương ứng. Hỗ trợ giảm dần, nhưng không bao giờ ép về không.',
      nen:'Để con quyết việc con làm được.', khong:'Buông hết rồi gọi đó là tự lập.'},
-    {k:'THỊNH', c:'#FF7A45', t:'Thịnh vượng là cả nhà cùng lớn',
+    {k:'THỊNH', c:'#E4232B', t:'Thịnh vượng là cả nhà cùng lớn',
      d:'Đích không phải thành tích của một đứa trẻ. Đích là một hệ gia đình mà mỗi người trong đó đều đang lớn lên.',
      nen:'Đo cả phần thay đổi của người lớn.', khong:'Lấy điểm số của con làm thước đo gia đình.'}
   ],
@@ -460,11 +461,11 @@ G.CULTURE = {
 
   /* Nhịp sống của hệ sinh thái */
   nhip:[
-    {k:'MỖI NGÀY',   t:'Một lần check-in, ba dòng nhật ký', c:'#3B82F6'},
-    {k:'MỖI TUẦN',   t:'Một buổi ngồi lại đủ mặt, bốn nhịp NGHE – CÔNG NHẬN – LÀM RÕ – DẪN ĐƯỜNG', c:'#8B5CF6'},
-    {k:'21 NGÀY',    t:'Một cấp độ học tập · rà lại đòn bẩy đang dùng', c:'#06B6D4'},
-    {k:'90 NGÀY',    t:'Một chặng · một cổng nghiệm thu có bằng chứng', c:'#10B981'},
-    {k:'365 NGÀY',   t:'Hội nghị gia đình · kỳ tích năm · bảng tầm nhìn bản mới', c:'#F59E0B'}
+    {k:'MỖI NGÀY',   t:'Một lần check-in, ba dòng nhật ký', c:'#2166CE'},
+    {k:'MỖI TUẦN',   t:'Một buổi ngồi lại đủ mặt, bốn nhịp NGHE – CÔNG NHẬN – LÀM RÕ – DẪN ĐƯỜNG', c:'#5140B4'},
+    {k:'21 NGÀY',    t:'Một cấp độ học tập · rà lại đòn bẩy đang dùng', c:'#0B6675'},
+    {k:'90 NGÀY',    t:'Một chặng · một cổng nghiệm thu có bằng chứng', c:'#0B7350'},
+    {k:'365 NGÀY',   t:'Hội nghị gia đình · kỳ tích năm · bảng tầm nhìn bản mới', c:'#C2151C'}
   ],
 
   /* Khẩu hiệu ngắn — hiện luân phiên */

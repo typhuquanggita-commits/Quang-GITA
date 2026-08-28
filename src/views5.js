@@ -58,7 +58,7 @@ G.VIEWS['wow'] = function(){
     lead:'Bảy khoảnh khắc khiến một gia đình thốt lên "thật tuyệt vời" — và mỗi khoảnh khắc đều là một thứ họ nhận được, không phải một thứ được hứa.'});
 
   o += '<div class="card glow mb"><div class="row wrap" style="gap:24px;align-items:center">'+
-    U.ring(7,'#F5B942','WOW') +
+    U.ring(7,'var(--gita)','WOW') +
     '<div class="grow" style="min-width:250px"><b style="font-size:17px;display:block;margin-bottom:6px">Giá trị nhận được lớn hơn nhiều lần số tiền bỏ ra</b>'+
     '<p class="sm dim" style="line-height:1.7">Ba trong bảy khoảnh khắc WOW xảy ra trước khi gia đình trả bất cứ khoản nào. '+
     'Bốn khoảnh khắc còn lại nằm trong lộ trình và không tính thêm phí. Một nhà đi hết năm tầng nhận về nhiều hơn hẳn phần họ đầu tư — '+
@@ -71,7 +71,7 @@ G.VIEWS['wow'] = function(){
         'background:'+w.c+'22;color:'+w.c+'">'+(i+1)+'</span>'+
         '<div class="grow" style="min-width:190px"><b style="font-size:15.5px;display:block">'+h(w.t)+'</b>'+
         '<span class="tiny muted">'+h(w.khi)+'</span></div>'+
-        U.chip(w.gia, w.gia==='Miễn phí'?'#10B981':'#94A3B8')+'</div>'+
+        U.chip(w.gia, w.gia==='Miễn phí'?'#0B7350':'#665E88')+'</div>'+
       '<div style="padding:15px 18px;border-radius:15px;background:'+w.c+'0f;border-left:2px solid '+w.c+'">'+
       '<p class="serif" style="font-size:16.5px;font-style:italic;line-height:1.6;color:var(--ink)">'+h(w.w)+'</p></div>'+
       '<div class="row mt2" style="gap:9px;align-items:flex-start"><span style="color:'+w.c+';flex:none;margin-top:3px">'+ic('spark','w-4 h-4')+'</span>'+
@@ -99,7 +99,7 @@ G.VIEWS['chuan-nhat'] = function(){
   o += U.sec('BỐN CAM KẾT KHÔNG ĐÁNH ĐỔI','Đây là chỗ phân biệt một hệ thống làm chắc với một hệ thống làm nhanh');
   o += '<div class="grid g2">' + N.camKet.map(function(c,i){
     return '<div class="card pad-sm"><div class="row" style="gap:9px;margin-bottom:6px">'+
-      '<span class="pill" style="background:rgba(245,185,66,.18);color:var(--gold-ink)">0'+(i+1)+'</span>'+
+      '<span class="pill" style="background:var(--gita-mo-2);color:var(--gold-ink)">0'+(i+1)+'</span>'+
       '<b class="sm">'+h(c.t)+'</b></div>'+
       '<p class="tiny muted" style="line-height:1.6;padding-left:34px">'+h(c.d)+'</p></div>';
   }).join('') + '</div>';
@@ -113,7 +113,7 @@ G.VIEWS['ai-dieu-phoi'] = function(){
   var o = U.ph({eyebrow:'NHÓM 05 · VẬN HÀNH', ic:'brain', grad:1, t:'AI điều phối',
     lead:'Trợ lý không thay người dẫn dắt. Nó làm ba việc: trả lời trong đúng phạm vi tầng, chuyển đúng câu hỏi tới đúng người, và nói cho người dẫn dắt biết họ cần nâng cấp gì để theo kịp lộ trình của gia đình mình.'});
 
-  o += '<div class="card mb" style="border-color:rgba(245,185,66,.3)">'+
+  o += '<div class="card mb" style="border-color:var(--gita-vien-1)">'+
     '<div class="row"><span style="color:var(--gold-ink)">'+ic('shield','w-4 h-4')+'</span><b>Giới hạn cốt lõi</b></div>'+
     '<p class="sm dim mt" style="line-height:1.7">'+h(P.cot)+'</p></div>';
 
@@ -133,7 +133,7 @@ G.VIEWS['ai-dieu-phoi'] = function(){
       '<p class="serif" style="font-size:15.5px;font-style:italic;color:var(--ink);margin-bottom:11px">"'+h(d.hoi)+'"</p>'+
       '<div class="row wrap" style="gap:7px;margin-bottom:11px">'+
         U.chip('Miền '+d.mien+' · '+m.short, m.c)+U.chip('Tầng '+d.tang)+
-        U.chip('Độ gấp: '+d.gap, d.gap==='Cao'?'#F87171':(d.gap==='Vừa'?'#F59E0B':'#94A3B8'))+'</div>'+
+        U.chip('Độ gấp: '+d.gap, d.gap==='Cao'?'#C2151C':(d.gap==='Vừa'?'#C2151C':'#665E88'))+'</div>'+
       '<div class="row wrap" style="gap:14px;padding:12px 14px;border-radius:13px;background:'+k.c+'0f">'+
         '<span style="width:34px;height:34px;border-radius:11px;display:grid;place-items:center;background:'+k.c+'26;color:'+k.c+';flex:none">'+ic('users','w-4 h-4')+'</span>'+
         '<div class="grow" style="min-width:170px"><b class="sm" style="display:block">'+h(k.ten)+'</b>'+
@@ -233,10 +233,10 @@ G.VIEWS['hoc-tu-lon'] = function(){
     lead:B.cot});
 
   o += '<div class="grid g4 mb">'+
-    U.stat({k:'HỆ THỐNG ĐÃ ĐỌC', v:B.he.length, d:'mạng xã hội · công nghệ · sản xuất', c:'#8B5CF6'})+
-    U.stat({k:'VIỆC RÚT RA', v:B.viec71.length, d:'cho bản 7.0 và 7.1', c:'#F5B942'})+
-    U.stat({k:'ĐÃ ĐƯA VÀO BẢN NÀY', v:daLam+'/'+B.viec71.length, d:'chạy được ngay hôm nay', c:'#10B981'})+
-    U.stat({k:'DỨT KHOÁT KHÔNG LẤY', v:B.khongLay.length, d:'phá ranh giới của mô hình', c:'#F87171'})+
+    U.stat({k:'HỆ THỐNG ĐÃ ĐỌC', v:B.he.length, d:'mạng xã hội · công nghệ · sản xuất', c:'#5140B4'})+
+    U.stat({k:'VIỆC RÚT RA', v:B.viec71.length, d:'cho bản 7.0 và 7.1', c:'#2166CE'})+
+    U.stat({k:'ĐÃ ĐƯA VÀO BẢN NÀY', v:daLam+'/'+B.viec71.length, d:'chạy được ngay hôm nay', c:'#0B7350'})+
+    U.stat({k:'DỨT KHOÁT KHÔNG LẤY', v:B.khongLay.length, d:'phá ranh giới của mô hình', c:'#C2151C'})+
   '</div>';
 
   o += U.sec('MƯỜI HỆ THỐNG · CƠ CHẾ LÕI','Lấy phần làm nên sức mạnh, từ chối phần chỉ phục vụ chỉ số');
@@ -319,7 +319,7 @@ G.VIEWS['chi-phi'] = function(){
     lead:C.cot});
 
   o += '<div class="card glow mb"><div class="row wrap" style="gap:26px;align-items:center">'+
-    U.ring(Math.round(khuyen.tong/C.tran*100), '#10B981', 'CỦA TRẦN')+
+    U.ring(Math.round(khuyen.tong/C.tran*100), '#0B7350', 'CỦA TRẦN')+
     '<div class="grow" style="min-width:250px">'+
     '<div class="up muted">TỔNG CHI PHÍ VẬN HÀNH THÁNG</div>'+
     '<div class="row" style="gap:10px;align-items:baseline;margin:3px 0 6px">'+
@@ -328,7 +328,7 @@ G.VIEWS['chi-phi'] = function(){
     '<p class="sm dim">Còn dư <b style="color:var(--ok)">'+vnd(C.tran-khuyen.tong)+'</b> so với trần. '+
     'Hosting, máy chủ dữ liệu, sao lưu và trợ lý tra cứu đều ở mức <b>0đ</b> — '+
     'phần trả tiền duy nhất là tên miền riêng và trợ lý đối thoại, cả hai đều có trần cứng.</p>'+
-    '<div class="mt">'+U.bar(khuyen.tong/C.tran*100,'#10B981')+'</div></div></div></div>';
+    '<div class="mt">'+U.bar(khuyen.tong/C.tran*100,'#0B7350')+'</div></div></div></div>';
 
   o += '<div class="grid g4 mb">' + C.soDo.map(function(s){
     return U.stat({k:s.k, v:s.v, d:s.d, c:s.c});
@@ -345,7 +345,7 @@ G.VIEWS['chi-phi'] = function(){
   o += '<div class="grid g3">' + C.goi.map(function(g,i){
     return '<div class="card lift '+(i===1?'glow':'')+'" style="border-color:'+g.c+(i===1?'66':'26')+'">'+
       '<div class="row" style="gap:8px;margin-bottom:8px">'+
-      (i===1?U.chip('KHUYẾN NGHỊ','#F5B942',1):'')+'</div>'+
+      (i===1?U.chip('KHUYẾN NGHỊ','var(--gita)',1):'')+'</div>'+
       '<b style="font-size:15px;display:block;color:'+g.c+'">'+h(g.ten)+'</b>'+
       '<div class="row" style="gap:8px;align-items:baseline;margin:6px 0 10px">'+
       '<b class="mono" style="font-size:26px;color:'+g.c+'">'+vnd(g.tong)+'</b>'+
@@ -377,7 +377,7 @@ G.VIEWS['chi-phi'] = function(){
     return '<div class="rule"><span class="n">'+(i+1)+'</span><div class="tx"><b>'+h(v)+'</b></div></div>';
   }).join('') + '</div>';
 
-  o += '<div class="card mt2" style="border-color:rgba(245,185,66,.3)">'+
+  o += '<div class="card mt2" style="border-color:var(--gita-vien-1)">'+
     '<div class="row mb"><span style="color:var(--gold-ink)">'+ic('shield','w-4 h-4')+'</span>'+
     '<b>Điều kiện để giữ được mức này</b></div>'+
     '<p class="sm muted" style="line-height:1.7">Kho tri thức phải giữ dạng tệp tĩnh, không chuyển sang cơ sở dữ liệu chỉ để đọc. '+

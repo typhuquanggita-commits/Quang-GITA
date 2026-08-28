@@ -13,18 +13,18 @@ G.VIEWS['ve-tinh'] = function(){
     lead:'Quanh một gia đình đang lớn lên phải có những gia đình khác cũng đang lớn lên. Đây là bản đồ những người tuyệt vời quanh nhà mình.'});
 
   o += '<div class="grid g4 mb">'+
-    U.stat({k:'NHÀ TRONG VỆ TINH', v:'9', d:'nhà biết tới GITA từ chuyện của mình', c:'#10B981'})+
-    U.stat({k:'ĐÃ BƯỚC VÀO HÀNH TRÌNH', v:'6', d:'4 nhà đang ở Tầng 2 trở lên', c:'#F5B942'})+
-    U.stat({k:'BUỔI NGỒI CÙNG', v:'23', d:'trong 90 ngày gần nhất', c:'#8B5CF6'})+
-    U.stat({k:'CÂU CHUYỆN ĐÃ KỂ', v:'14', d:'kể cả chỗ mình vấp', c:'#FB7185'})+
+    U.stat({k:'NHÀ TRONG VỆ TINH', v:'9', d:'nhà biết tới GITA từ chuyện của mình', c:'#0B7350'})+
+    U.stat({k:'ĐÃ BƯỚC VÀO HÀNH TRÌNH', v:'6', d:'4 nhà đang ở Tầng 2 trở lên', c:'#2166CE'})+
+    U.stat({k:'BUỔI NGỒI CÙNG', v:'23', d:'trong 90 ngày gần nhất', c:'#5140B4'})+
+    U.stat({k:'CÂU CHUYỆN ĐÃ KỂ', v:'14', d:'kể cả chỗ mình vấp', c:'#C2151C'})+
   '</div>';
 
   /* Vòng quỹ đạo */
   o += '<div class="card" style="padding:34px 22px"><div style="position:relative;height:420px;max-width:640px;margin:0 auto">'+
     '<div style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:150px;height:150px;'+
     'border-radius:50%;display:grid;place-items:center;text-align:center;'+
-    'background:radial-gradient(circle,rgba(245,185,66,.28),rgba(245,185,66,.05));'+
-    'border:1px solid rgba(245,185,66,.4);box-shadow:0 0 70px -14px rgba(245,185,66,.7)">'+
+    'background:radial-gradient(circle,var(--gita-mo-3),var(--gita-mo-1));'+
+    'border:1px solid var(--gita-vien-2);box-shadow:0 0 70px -14px var(--gita-day)">'+
     '<div><div class="tiny up" style="color:var(--gold-ink)">TRUNG TÂM</div>'+
     '<b style="font-size:15px;display:block;margin-top:3px">'+h(G.myFamily().nha)+'</b>'+
     '<span class="tiny muted">'+h(G.S.acc.ten)+'</span></div></div>'+
@@ -60,7 +60,7 @@ G.VIEWS['dai-su'] = function(){
 
   o += U.sec('BỐN CẤP ĐẠI SỨ','Lên cấp bằng việc đã làm, không bằng số người đã mời');
   o += '<div class="grid g4">' + D.capDo.map(function(c,i){
-    var col = ['#3B82F6','#8B5CF6','#F5B942','#10B981'][i];
+    var col = ['#2166CE','#5140B4','var(--gita)','#0B7350'][i];
     return '<div class="card lift" style="border-color:'+col+'2e">'+
       '<div class="row" style="gap:8px;margin-bottom:8px">'+
       '<span style="width:32px;height:32px;border-radius:10px;display:grid;place-items:center;font-weight:900;background:'+col+'22;color:'+col+'">'+c.cap+'</span>'+
@@ -73,7 +73,7 @@ G.VIEWS['dai-su'] = function(){
 
   o += U.sec('HAI MƯƠI NHIỆM VỤ','Mỗi nhiệm vụ là một câu chuyện thật, không phải một bài quảng cáo');
   o += '<div class="grid g-auto">' + D.nhiemVu.map(function(n){
-    var col = ['#3B82F6','#8B5CF6','#F5B942','#10B981'][(n.capDo||1)-1];
+    var col = ['#2166CE','#5140B4','var(--gita)','#0B7350'][(n.capDo||1)-1];
     return '<div class="card pad-sm lift" style="border-color:'+col+'22">'+
       '<div class="row wrap" style="gap:5px;margin-bottom:7px">'+U.chip(n.ma,col)+U.chip('Cấp '+n.capDo)+
       (n.audience?U.chip(n.audience==='HS'?'Học viên':'Phụ huynh'):'')+'</div>'+
@@ -118,10 +118,10 @@ G.VIEWS['coach-deck'] = function(){
     lead:'Mỗi buổi anh chị bước vào là một gia đình đổi hướng. Đây là nơi thấy rõ nên chạm vào đâu trước — và chạm bằng gì.'});
 
   o += '<div class="grid g4 mb">'+
-    U.stat({k:'GIA ĐÌNH PHỤ TRÁCH', v:G.FAMILIES.length, d:'trải năm tầng', c:'#8B5CF6'})+
-    U.stat({k:'CẦN CHẠM TRONG 48 GIỜ', v:alert.length, d:'băng CAM và ĐỎ', c:'#FB7185'})+
-    U.stat({k:'CỔNG SẮP MỞ', v:'3', d:'chuẩn bị bằng chứng trước', c:'#10B981'})+
-    U.stat({k:'GIỜ ĐỒNG HÀNH THÁNG', v:'186', d:'tỉ lệ nghe 7 khuyên 3', c:'#F5B942'})+
+    U.stat({k:'GIA ĐÌNH PHỤ TRÁCH', v:G.FAMILIES.length, d:'trải năm tầng', c:'#5140B4'})+
+    U.stat({k:'CẦN CHẠM TRONG 48 GIỜ', v:alert.length, d:'băng CAM và ĐỎ', c:'#C2151C'})+
+    U.stat({k:'CỔNG SẮP MỞ', v:'3', d:'chuẩn bị bằng chứng trước', c:'#0B7350'})+
+    U.stat({k:'GIỜ ĐỒNG HÀNH THÁNG', v:'186', d:'tỉ lệ nghe 7 khuyên 3', c:'#2166CE'})+
   '</div>';
 
   o += U.sec('CẦN CHẠM TRƯỚC','Xếp theo băng, không theo thứ tự bảng chữ cái');
@@ -152,10 +152,10 @@ G.VIEWS['tuvan-deck'] = function(){
     lead:'Người đối diện chưa cần nghe mình giỏi thế nào. Họ cần thấy nhà mình trong tấm bản đồ này — rồi tự quyết định.'});
 
   o += '<div class="grid g4 mb">'+
-    U.stat({k:'ĐANG CHỜ PHIÊN MỞ CỬA', v:'3', d:'nhà mới trong tuần', c:'#F59E0B'})+
-    U.stat({k:'ĐÃ MỞ CỬA QUÝ NÀY', v:'14', d:'gia đình bước vào Tầng 1', c:'#10B981'})+
-    U.stat({k:'TỪ GIỚI THIỆU', v:'78%', d:'không từ quảng cáo', c:'#FB7185'})+
-    U.stat({k:'MỨC HÀI LÒNG PHIÊN ĐẦU', v:'95', d:'điểm chạm DC-03 được lắng nghe', c:'#8B5CF6'})+
+    U.stat({k:'ĐANG CHỜ PHIÊN MỞ CỬA', v:'3', d:'nhà mới trong tuần', c:'#C2151C'})+
+    U.stat({k:'ĐÃ MỞ CỬA QUÝ NÀY', v:'14', d:'gia đình bước vào Tầng 1', c:'#0B7350'})+
+    U.stat({k:'TỪ GIỚI THIỆU', v:'78%', d:'không từ quảng cáo', c:'#C2151C'})+
+    U.stat({k:'MỨC HÀI LÒNG PHIÊN ĐẦU', v:'95', d:'điểm chạm DC-03 được lắng nghe', c:'#5140B4'})+
   '</div>';
 
   o += U.sec('SÁU NHỊP CHO PHIÊN MỞ CỬA','Đi đúng thứ tự — nhảy sang nhịp năm khi chưa qua nhịp ba là mất người');
@@ -195,7 +195,7 @@ G.VIEWS['doi-ngu'] = function(){
         U.chip(r.short, r.c),
         t.nha ? '<span class="mono">'+t.nha+'</span>' : '<span class="muted">—</span>',
         t.gio ? '<span class="mono">'+t.gio+'h</span>' : '<span class="muted">—</span>',
-        '<div style="min-width:96px">'+U.bar(t.diem,'#10B981')+'<span class="tiny mono muted">'+t.diem+'/100</span></div>',
+        '<div style="min-width:96px">'+U.bar(t.diem,'#0B7350')+'<span class="tiny mono muted">'+t.diem+'/100</span></div>',
         '<span class="tiny muted">'+h(t.note)+'</span>'];
     }));
   return o;
@@ -209,16 +209,16 @@ G.VIEWS['dieu-hanh'] = function(){
     lead:'Toàn cảnh sức khoẻ hệ sinh thái. Số ở đây để ra quyết định phân bổ nguồn lực — không bao giờ để xếp hạng gia đình.'});
 
   o += '<div class="grid g4 mb">'+
-    U.stat({k:'GIA ĐÌNH ĐỒNG HÀNH', v:H.giaDinh.v.toLocaleString('vi-VN'), d:H.giaDinh.d, c:'#F5B942'})+
-    U.stat({k:'ĐANG GIỮ NHỊP', v:H.dangHoatDong.v.toLocaleString('vi-VN'), d:H.dangHoatDong.d, c:'#10B981'})+
-    U.stat({k:'CẦN CHẠM 48 GIỜ', v:H.canhBao.v, d:H.canhBao.d, c:'#FB7185'})+
-    U.stat({k:'CỔNG ĐÃ QUA / QUÝ', v:H.cuaNghiemThu.v, d:H.cuaNghiemThu.d, c:'#8B5CF6'})+
+    U.stat({k:'GIA ĐÌNH ĐỒNG HÀNH', v:H.giaDinh.v.toLocaleString('vi-VN'), d:H.giaDinh.d, c:'#2166CE'})+
+    U.stat({k:'ĐANG GIỮ NHỊP', v:H.dangHoatDong.v.toLocaleString('vi-VN'), d:H.dangHoatDong.d, c:'#0B7350'})+
+    U.stat({k:'CẦN CHẠM 48 GIỜ', v:H.canhBao.v, d:H.canhBao.d, c:'#C2151C'})+
+    U.stat({k:'CỔNG ĐÃ QUA / QUÝ', v:H.cuaNghiemThu.v, d:H.cuaNghiemThu.d, c:'#5140B4'})+
   '</div>';
   o += '<div class="grid g4 mb">'+
-    U.stat({k:'COACH ĐANG HOẠT ĐỘNG', v:H.coach.v, d:H.coach.d, c:'#06B6D4'})+
-    U.stat({k:'ĐẠI SỨ', v:H.daiSu.v, d:H.daiSu.d, c:'#FF7A45'})+
-    U.stat({k:'LƯỢT MỞ KỊCH BẢN', v:H.kichBanDung.v.toLocaleString('vi-VN'), d:H.kichBanDung.d, c:'#3B82F6'})+
-    U.stat({k:'DOANH THU QUÝ', v:H.doanhThu.v, d:H.doanhThu.d, c:'#F59E0B'})+
+    U.stat({k:'COACH ĐANG HOẠT ĐỘNG', v:H.coach.v, d:H.coach.d, c:'#0B6675'})+
+    U.stat({k:'ĐẠI SỨ', v:H.daiSu.v, d:H.daiSu.d, c:'#E4232B'})+
+    U.stat({k:'LƯỢT MỞ KỊCH BẢN', v:H.kichBanDung.v.toLocaleString('vi-VN'), d:H.kichBanDung.d, c:'#2166CE'})+
+    U.stat({k:'DOANH THU QUÝ', v:H.doanhThu.v, d:H.doanhThu.d, c:'#C2151C'})+
   '</div>';
 
   o += '<div class="grid g2">'+
@@ -246,7 +246,7 @@ G.VIEWS['dieu-hanh'] = function(){
       return '<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:7px;height:100%;justify-content:flex-end">'+
         '<b class="mono tiny" style="color:var(--gold-ink)">'+m.nha+'</b>'+
         '<div style="width:100%;max-width:56px;height:'+Math.round(m.nha/1300*100)+'%;border-radius:9px 9px 3px 3px;'+
-        'background:linear-gradient(180deg,#F5B942,#FF7A45)"></div>'+
+        'background:linear-gradient(180deg,var(--gita),var(--gita-do))"></div>'+
         '<span class="tiny muted">'+h(m.m)+'</span>'+
         '<span class="tiny mono" style="color:var(--ok)">'+m.giu+'%</span></div>';
     }).join('') + '</div></div>';
@@ -273,7 +273,7 @@ G.VIEWS['nguoi-dung'] = function(){
       '<span style="width:34px;height:34px;border-radius:10px;display:grid;place-items:center;font-weight:900;font-size:11px;background:'+r.c+'22;color:'+r.c+'">'+h(r.id)+'</span>'+
       '<div class="grow"><b class="sm" style="display:block">'+h(r.n)+'</b>'+
       '<span class="tiny muted">Cấp '+r.lv+' · cổng '+h(r.portal)+'</span></div>'+
-      (cur?U.chip('ĐANG DÙNG','#F5B942',1):'')+'</div>'+
+      (cur?U.chip('ĐANG DÙNG','var(--gita)',1):'')+'</div>'+
       '<p class="tiny muted" style="line-height:1.55;margin-bottom:9px">'+h(r.ln)+'</p>'+
       '<button class="btn ghost sm" data-switch="'+h(r.id)+'" style="width:100%">Xem hệ thống bằng vai này</button></div>';
   }).join('') + '</div>';
@@ -307,12 +307,12 @@ G.VIEWS['kiem-duyet'] = function(){
   if(!G.can('pro_approve')) return U.lockCard();
   var o = U.ph({eyebrow:'NHÓM 05 · VẬN HÀNH', ic:'check', t:'Kiểm duyệt kho báu vật',
     lead:'Chuẩn nghề trước khi xuất bản. Một bài vi phạm quy tắc an toàn hình ảnh trẻ em bị chặn, không phải bị nhắc nhở.'});
-  var mau = {'Chờ duyệt':'#F59E0B','Cần sửa':'#F87171','Đã duyệt':'#10B981','Chờ xác nhận':'#8B5CF6'};
+  var mau = {'Chờ duyệt':'#C2151C','Cần sửa':'#C2151C','Đã duyệt':'#0B7350','Chờ xác nhận':'#5140B4'};
   o += U.tbl(['Mã','Loại','Người gửi','Ngày','Trạng thái','Ghi chú chuyên môn'],
     G.DUYET.map(function(d){
       return ['<span class="mono sm">'+h(d.ma)+'</span>', '<span class="sm">'+h(d.loai)+'</span>',
         '<span class="sm">'+h(d.nguoi)+'</span>', '<span class="mono sm">'+h(d.ngay)+'</span>',
-        U.chip(d.trang, mau[d.trang]||'#94A3B8'),
+        U.chip(d.trang, mau[d.trang]||'#665E88'),
         '<span class="tiny muted">'+h(d.note)+'</span>'];
     }));
   o += U.sec('SÁU ĐIỂM CHƯA XÁC NHẬN CỦA KHO MÔ THỨC','Bản chép từ chữ viết tay — trợ lý AI bị chặn không được khẳng định những chỗ này');
@@ -336,16 +336,16 @@ G.VIEWS['tang-truong'] = function(){
   var o = U.ph({eyebrow:'NHÓM 05 · VẬN HÀNH', ic:'chart', t:'Tài chính & tăng trưởng',
     lead:'Dòng tiền tồn tại để nuôi được sứ mệnh, không phải ngược lại. Bảy mươi tám phần trăm doanh thu đến từ giới thiệu — đó là chỉ số chất lượng thật.'});
   o += '<div class="grid g4 mb">'+
-    U.stat({k:'DOANH THU QUÝ', v:'6,84 tỷ', d:'+18% so với quý trước', c:'#F5B942'})+
-    U.stat({k:'TỪ GIỚI THIỆU', v:'78%', d:'không chi cho quảng cáo tìm khách', c:'#10B981'})+
-    U.stat({k:'CHI PHÍ MỖI GIA ĐÌNH MỚI', v:'1,4 tr', d:'giảm 34% nhờ vệ tinh đại sứ', c:'#8B5CF6'})+
-    U.stat({k:'GIỮ CHÂN 12 THÁNG', v:'89,3%', d:'chỉ số sống còn của mô hình', c:'#06B6D4'})+
+    U.stat({k:'DOANH THU QUÝ', v:'6,84 tỷ', d:'+18% so với quý trước', c:'#2166CE'})+
+    U.stat({k:'TỪ GIỚI THIỆU', v:'78%', d:'không chi cho quảng cáo tìm khách', c:'#0B7350'})+
+    U.stat({k:'CHI PHÍ MỖI GIA ĐÌNH MỚI', v:'1,4 tr', d:'giảm 34% nhờ vệ tinh đại sứ', c:'#5140B4'})+
+    U.stat({k:'GIỮ CHÂN 12 THÁNG', v:'89,3%', d:'chỉ số sống còn của mô hình', c:'#0B6675'})+
   '</div>';
   o += U.tbl(['Nguồn','Số gia đình','Tỉ trọng','Ghi chú'], [
-    ['Giới thiệu từ gia đình đang học','<span class="mono">742</span>','<div style="min-width:120px">'+U.bar(58,'#10B981')+'</div>','Chi phí thấp nhất, giữ chân cao nhất'],
-    ['Đại sứ GITA','<span class="mono">256</span>','<div style="min-width:120px">'+U.bar(20,'#F5B942')+'</div>','Ghi nhận theo việc đã làm, không theo lượt chốt'],
-    ['Sự kiện & lửa trại','<span class="mono">179</span>','<div style="min-width:120px">'+U.bar(14,'#8B5CF6')+'</div>','Phiên mở cửa miễn phí hàng tuần'],
-    ['Tìm đến trực tiếp','<span class="mono">107</span>','<div style="min-width:120px">'+U.bar(8,'#06B6D4')+'</div>','Chủ yếu sau khi đọc chuyện thật trong nhóm']
+    ['Giới thiệu từ gia đình đang học','<span class="mono">742</span>','<div style="min-width:120px">'+U.bar(58,'#0B7350')+'</div>','Chi phí thấp nhất, giữ chân cao nhất'],
+    ['Đại sứ GITA','<span class="mono">256</span>','<div style="min-width:120px">'+U.bar(20,'var(--gita)')+'</div>','Ghi nhận theo việc đã làm, không theo lượt chốt'],
+    ['Sự kiện & lửa trại','<span class="mono">179</span>','<div style="min-width:120px">'+U.bar(14,'#5140B4')+'</div>','Phiên mở cửa miễn phí hàng tuần'],
+    ['Tìm đến trực tiếp','<span class="mono">107</span>','<div style="min-width:120px">'+U.bar(8,'#0B6675')+'</div>','Chủ yếu sau khi đọc chuyện thật trong nhóm']
   ]);
   o += '<div class="card mt2" style="border-color:rgba(248,113,113,.3)">'+
     '<div class="row mb"><span style="color:var(--bad)">'+ic('shield','w-4 h-4')+'</span>'+
@@ -377,20 +377,20 @@ G.VIEWS['hai-long'] = function(){
     lead:'Mục tiêu 90% hài lòng. Cách duy nhất tới đó là nghe khách nói thật — kể cả câu khó nghe — rồi đưa thẳng vào hàng chờ cải tiến.'});
 
   o += '<div class="card glow mb"><div class="row wrap" style="gap:26px;align-items:center">'+
-    U.ring(Math.round(H.hienTai), H.hienTai>=H.muc?'#10B981':'#F5B942', 'HÀI LÒNG')+
+    U.ring(Math.round(H.hienTai), H.hienTai>=H.muc?'#0B7350':'var(--gita)', 'HÀI LÒNG')+
     '<div class="grow" style="min-width:240px">'+
       '<div class="up muted">MỤC TIÊU</div>'+
       '<div class="row" style="gap:10px;align-items:baseline"><b class="mono" style="font-size:30px">'+H.hienTai+'%</b>'+
       '<span class="muted">/ '+H.muc+'%</span>'+
       '<span class="chip" style="color:var(--warn);border-color:rgba(251,191,36,.35)">còn '+(H.muc-H.hienTai).toFixed(1)+' điểm</span></div>'+
-      '<div class="mt">'+U.bar(H.hienTai/H.muc*100, '#F5B942')+'</div>'+
+      '<div class="mt">'+U.bar(H.hienTai/H.muc*100, 'var(--gita)')+'</div>'+
       '<p class="sm muted mt">Tăng đều bảy tuần liền, từ 81,2% lên '+H.hienTai+'%. Hai điểm chạm đang kéo chỉ số xuống: '+
       '<b style="color:var(--ink-2)">an tâm về ranh giới (83)</b> và <b style="color:var(--ink-2)">muốn lan toả (79)</b>.</p>'+
     '</div>'+
     '<div style="display:flex;gap:22px">'+
-      '<div class="center"><b class="mono" style="font-size:24px;color:#8B5CF6">'+H.nps+'</b><div class="tiny muted">NPS</div></div>'+
-      '<div class="center"><b class="mono" style="font-size:24px;color:#10B981">'+H.giuNhip+'%</b><div class="tiny muted">GIỮ NHỊP</div></div>'+
-      '<div class="center"><b class="mono" style="font-size:24px;color:#FB7185">'+H.gioiThieu+'%</b><div class="tiny muted">GIỚI THIỆU</div></div>'+
+      '<div class="center"><b class="mono" style="font-size:24px;color:#5140B4">'+H.nps+'</b><div class="tiny muted">NPS</div></div>'+
+      '<div class="center"><b class="mono" style="font-size:24px;color:#0B7350">'+H.giuNhip+'%</b><div class="tiny muted">GIỮ NHỊP</div></div>'+
+      '<div class="center"><b class="mono" style="font-size:24px;color:#C2151C">'+H.gioiThieu+'%</b><div class="tiny muted">GIỚI THIỆU</div></div>'+
     '</div></div></div>';
 
   o += U.sec('BẢY TUẦN GẦN NHẤT','');
@@ -399,7 +399,7 @@ G.VIEWS['hai-long'] = function(){
       return '<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:7px;height:100%;justify-content:flex-end">'+
         '<b class="mono tiny" style="color:var(--gold-ink)">'+w.v+'</b>'+
         '<div style="width:100%;max-width:48px;height:'+((w.v-75)/20*100)+'%;border-radius:8px 8px 3px 3px;'+
-        'background:linear-gradient(180deg,#F5B942,#FF7A45)"></div>'+
+        'background:linear-gradient(180deg,var(--gita),var(--gita-do))"></div>'+
         '<span class="tiny muted">'+h(w.w)+'</span></div>';
     }).join('') +
     '<div style="position:relative;width:0"></div></div>'+
@@ -407,7 +407,7 @@ G.VIEWS['hai-long'] = function(){
 
   o += U.sec('HÀI LÒNG THEO TỪNG ĐIỂM CHẠM','Chỗ nào dưới 85 là chỗ đang mất người');
   o += '<div class="grid g3">' + H.theoDiemCham.map(function(d){
-    var c = d.v>=90?'#10B981':(d.v>=85?'#F5B942':'#FB7185');
+    var c = d.v>=90?'#0B7350':(d.v>=85?'var(--gita)':'#C2151C');
     return '<div class="card pad-sm"><div class="row" style="margin-bottom:6px">'+
       '<span class="mono tiny muted">'+h(d.ma)+'</span><span class="grow"></span>'+
       '<b class="mono" style="color:'+c+'">'+d.v+'</b></div>'+
@@ -477,7 +477,7 @@ G.VIEWS['kiem-thu'] = function(){
   }).join('') + '</div>';
 
   o += '<div class="card glow mb"><div class="row wrap" style="gap:24px;align-items:center">'+
-    U.ring(avg,'#F5B942','TRUNG BÌNH')+
+    U.ring(avg,'var(--gita)','TRUNG BÌNH')+
     '<div class="grow" style="min-width:230px"><b style="font-size:17px;display:block;margin-bottom:6px">Mức điểm chạm tổng hợp: '+avg+'/100</b>'+
     '<p class="sm dim">Bốn góc nhìn khác nhau hoàn toàn, nhưng cùng chỉ vào một chỗ: hệ thống mạnh ở chiều sâu và ở ngôn từ, '+
     'còn yếu ở ba chỗ — bằng chứng pháp lý, xác thực thật ở máy chủ, và mốc chuyển tuyến chuyên khoa.</p></div>'+
@@ -524,7 +524,7 @@ G.VIEWS['chuan-1000'] = function(){
     lead:'Mười nhóm, mỗi nhóm năm tiêu chí, mỗi tiêu chí hai mươi điểm. Không làm tròn, không tự cho điểm đẹp — chỗ nào chưa đạt thì ghi rõ còn thiếu gì.'});
 
   o += '<div class="card glow mb"><div class="row wrap" style="gap:26px;align-items:center">'+
-    U.ring(Math.round(tong/10),'#F5B942','TRÊN 1000')+
+    U.ring(Math.round(tong/10),'var(--gita)','TRÊN 1000')+
     '<div class="grow" style="min-width:250px">'+
     '<div class="row" style="gap:10px;align-items:baseline"><b class="mono grad-text" style="font-size:38px">'+tong+'</b>'+
     '<span class="muted" style="font-size:18px">/ 1000</span></div>'+
@@ -532,14 +532,14 @@ G.VIEWS['chuan-1000'] = function(){
     '<b style="color:var(--ink-2)">xác thực ở máy chủ (10/20)</b>, '+
     '<b style="color:var(--ink-2)">nhãn cho trình đọc màn hình (12/20)</b>, '+
     '<b style="color:var(--ink-2)">lưu tiến trình thật giữa các phiên (14/20)</b>.</p>'+
-    '<div class="mt">'+U.bar(tong/10,'#F5B942')+'</div></div></div></div>';
+    '<div class="mt">'+U.bar(tong/10,'var(--gita)')+'</div></div></div></div>';
 
   o += G.CHUAN1000.map(function(c){
     return '<div class="card mb" style="border-color:'+c.c+'26">'+
       '<div class="row wrap" style="gap:12px;margin-bottom:12px">'+
         '<span class="pill" style="background:'+c.c+'22;color:'+c.c+'">'+h(c.ma)+'</span>'+
         '<b class="grow" style="font-size:15px;min-width:180px">'+h(c.ten)+'</b>'+
-        '<b class="mono" style="font-size:19px;color:'+(c.diem>=95?'#10B981':(c.diem>=88?'#F5B942':'#FB7185'))+'">'+c.diem+'</b>'+
+        '<b class="mono" style="font-size:19px;color:'+(c.diem>=95?'#0B7350':(c.diem>=88?'var(--gita)':'#C2151C'))+'">'+c.diem+'</b>'+
         '<span class="muted">/ '+c.max+'</span></div>'+
       U.bar(c.diem, c.c)+
       '<div class="mt2">' + c.y.map(function(y){
@@ -561,7 +561,7 @@ G.VIEWS['toi'] = function(){
     lead:'Vai đang dùng quyết định anh chị nhìn thấy gì. Đổi vai bất cứ lúc nào để kiểm tra mức hiện diện của từng vị trí.'});
   o += '<div class="card glow mb"><div class="row wrap" style="gap:18px;align-items:center">'+
     '<span style="width:64px;height:64px;border-radius:20px;display:grid;place-items:center;font-weight:900;font-size:19px;'+
-    'background:linear-gradient(135deg,'+r.c+',#FF7A45);color:#1A1006;flex:none">'+h(a.ten.split(' ').slice(-1)[0].slice(0,2).toUpperCase())+'</span>'+
+    'background:linear-gradient(135deg,'+r.c+',var(--gita-do));color:#1A1006;flex:none">'+h(a.ten.split(' ').slice(-1)[0].slice(0,2).toUpperCase())+'</span>'+
     '<div class="grow" style="min-width:220px"><b style="font-size:20px;display:block">'+h(a.ten)+'</b>'+
     '<span class="sm muted">'+h(a.u)+'</span>'+
     '<div class="row wrap mt" style="gap:6px">'+U.chip(r.n, r.c)+U.chip('Cấp '+r.lv)+U.chip(h(a.nha))+'</div></div>'+
@@ -574,7 +574,7 @@ G.VIEWS['toi'] = function(){
     '<b>'+h(p.n)+'</b></div><p class="sm dim" style="line-height:1.65">'+h(p.say)+'</p></div>'+
     '<div class="card"><div class="up mb" style="color:var(--ink-4)">QUYỀN ĐANG CÓ</div>'+
     '<div class="row wrap" style="gap:5px">'+Object.keys(G.PERM).map(function(k){
-      return G.can(k)?U.chip(k,'#10B981'):'';
+      return G.can(k)?U.chip(k,'#0B7350'):'';
     }).join('')+'</div>'+
     '<div class="up mt2 mb" style="color:var(--ink-4)">NGOÀI PHẠM VI</div>'+
     '<div class="row wrap" style="gap:5px">'+Object.keys(G.PERM).map(function(k){

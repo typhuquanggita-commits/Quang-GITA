@@ -652,6 +652,60 @@ const { chromium } = require(PW);
       doi.truoc + ' ↔ ' + doi.toi);
   }
 
+  /* ═══════════ 13 · NHẬN DIỆN THƯƠNG HIỆU GITA ═══════════
+     Logo là tài sản nhận diện — sai một mã màu là sai cả hệ. Mục này
+     khoá bảng màu về đúng logo và chặn màu vàng của bản cũ quay lại. */
+  console.log('\n13 · NHẬN DIỆN THƯƠNG HIỆU GITA');
+  {
+    const b = await p.evaluate(() => {
+      const cs = getComputedStyle(document.documentElement);
+      const g = n => cs.getPropertyValue(n).trim().toUpperCase();
+      return {
+        gita: g('--gita'), sau: g('--gita-sau'), sang: g('--gita-sang'),
+        do: g('--gita-do'), doInk: g('--gita-do-ink'),
+        t1: g('--t1'), t5: g('--t5'),
+        coLogo: typeof G.logoGita === 'function' && typeof G.dauGita === 'function',
+        svg: typeof G.logoGita === 'function' ? G.logoGita() : '',
+        dau: typeof G.dauGita === 'function' ? G.dauGita() : '',
+        nd: !!G.NHAN_DIEN,
+        soCam: G.NHAN_DIEN ? G.NHAN_DIEN.logo.cam.length : 0,
+        soLuatMau: G.NHAN_DIEN ? G.NHAN_DIEN.mau.luat.length : 0
+      };
+    });
+
+    bao(b.gita === '#2166CE', 'màu chủ đạo đúng xanh GITA của logo', b.gita);
+    bao(b.sau === '#174C9E' && b.sang === '#4A8FE0', 'đủ xanh sâu và xanh sáng của logo', b.sau + ' · ' + b.sang);
+    bao(b.do === '#E4232B', 'đỏ GITA đúng màu nét đỏ và ngôi sao đỏ', b.do);
+    bao(b.t1 === b.gita, 'tầng 1 mang màu xanh GITA — chặng đầu là màu logo', b.t1);
+    bao(b.t5 === b.doInk, 'tầng 5 mang màu đỏ GITA — đích đến là ngôi sao đỏ', b.t5);
+
+    bao(b.coLogo, 'logo dựng bằng vector ngay trong ứng dụng');
+    bao(b.svg.indexOf('<svg') === 0 && b.svg.length > 1200, 'logo đầy đủ dựng ra hình thật', b.svg.length + ' ký tự');
+    bao(b.dau.indexOf('<svg') === 0, 'dấu vuông dựng ra hình thật');
+    /* Ba nét và năm sao — đếm từ chính hình dựng ra */
+    const netVaSao = (b.svg.match(/<path /g) || []).length;
+    bao(netVaSao >= 8, 'logo đủ ba nét vòng cung và năm ngôi sao', netVaSao + ' hình');
+    bao(b.svg.indexOf('#E4232B') > 0 || b.svg.indexOf(b.do) > 0, 'logo có nét đỏ và ngôi sao đỏ');
+
+    bao(b.nd, 'có bộ nhận diện đọc được bằng máy');
+    bao(b.soCam >= 5, 'bộ nhận diện ghi rõ điều KHÔNG được làm với logo', b.soCam + ' điều cấm');
+    bao(b.soLuatMau >= 5, 'bộ nhận diện ghi rõ luật dùng màu', b.soLuatMau + ' luật');
+
+    /* Màu vàng của bản trước v7.7 không được sót lại chỗ nào */
+    const fs3 = require('fs'), px3 = require('path'), goc3 = px3.join(__dirname, '..');
+    let vang = [];
+    for (const th of ['assets/style.css', 'src', 'index.html']) {
+      const d = px3.join(goc3, th);
+      const ds = fs3.statSync(d).isDirectory()
+        ? fs3.readdirSync(d).filter(x => x.endsWith('.js')).map(x => px3.join(d, x)) : [d];
+      ds.forEach(f => {
+        const t = fs3.readFileSync(f, 'utf8');
+        if (/#F5B942|#FFD98A|#FF7A45|rgba\(245,\s*185,\s*66/i.test(t)) vang.push(px3.basename(f));
+      });
+    }
+    bao(!vang.length, 'không còn mã màu vàng của bản cũ sót lại', vang.join(' ') || 'sạch');
+  }
+
   console.log('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành'));
   await b.close();
   process.exit(loi ? 1 : 0);

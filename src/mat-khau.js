@@ -41,14 +41,14 @@ G.moDoiMatKhau = function(){
     '<p id="mkGoi" class="tiny muted" style="margin:6px 0 12px">Ít nhất mười ký tự, có chữ hoa, chữ thường, chữ số và ký tự đặc biệt.</p>'+
     '<label class="tiny up muted">NHẬP LẠI MẬT KHẨU MỚI</label>'+
     '<input id="mkLai" type="password" autocomplete="new-password" class="inp blk mb">'+
-    '<div id="mkLoi" class="tiny mb" style="color:#F87171"></div>'+
+    '<div id="mkLoi" class="tiny mb" style="color:#C2151C"></div>'+
     '<button class="btn pri blk" data-act="doi-mk">Đổi mật khẩu</button>'
   );
   var o = document.getElementById('mkMoi');
   if(o) o.addEventListener('input', function(){
     var r = G.kiemMatKhau(o.value), g = document.getElementById('mkGoi');
     if(!g) return;
-    if(r === true){ g.textContent = 'Mật khẩu đạt chuẩn.'; g.style.color = '#10B981'; }
+    if(r === true){ g.textContent = 'Mật khẩu đạt chuẩn.'; g.style.color = '#0B7350'; }
     else { g.textContent = r; g.style.color = 'var(--ink-3)'; }
   });
 };
@@ -92,19 +92,19 @@ G.moQuenMatKhau = function(){
       '<input id="qmLai" type="password" autocomplete="new-password" class="inp blk mb">'+
       '<button class="btn pri blk" data-act="dat-lai-mk">Đặt lại mật khẩu</button>'+
     '</div>'+
-    '<div id="qmLoi" class="tiny mt" style="color:#F87171"></div>'
+    '<div id="qmLoi" class="tiny mt" style="color:#C2151C"></div>'
   );
 };
 
 G.xinMa = function(){
   var loi = document.getElementById('qmLoi');
   var u = ((document.getElementById('qmU')||{}).value || '').trim();
-  function bao(t, c){ if(loi){ loi.textContent = t; loi.style.color = c || '#F87171'; } }
+  function bao(t, c){ if(loi){ loi.textContent = t; loi.style.color = c || '#C2151C'; } }
   if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(u)){ bao('Nhập đúng dạng địa chỉ email.'); return; }
   bao('Đang gửi…','var(--ink-3)');
   goi({ fn:'quenMatKhau', u:u })
     .then(function(d){
-      bao(d.thongBao || 'Đã gửi mã nếu tài khoản có thật.','#10B981');
+      bao(d.thongBao || 'Đã gửi mã nếu tài khoản có thật.','#0B7350');
       var b1 = document.getElementById('qmB1'), b2 = document.getElementById('qmB2');
       if(b1) b1.style.display = 'none';
       if(b2) b2.style.display = 'block';
@@ -118,7 +118,7 @@ G.datLaiMatKhau = function(){
   var ma = ((document.getElementById('qmMa')||{}).value || '').trim();
   var moi = (document.getElementById('qmMoi')||{}).value || '';
   var lai = (document.getElementById('qmLai')||{}).value || '';
-  function bao(t, c){ if(loi){ loi.textContent = t; loi.style.color = c || '#F87171'; } }
+  function bao(t, c){ if(loi){ loi.textContent = t; loi.style.color = c || '#C2151C'; } }
   if(!/^\d{6}$/.test(ma)){ bao('Mã gồm đúng sáu chữ số.'); return; }
   if(moi !== lai){ bao('Hai lần nhập mật khẩu mới không khớp.'); return; }
   var r = G.kiemMatKhau(moi);

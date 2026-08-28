@@ -9,7 +9,7 @@ var U = G.U, h = U.h, ic = U.ic;
 
 /* ══════════════════ 01 · BẢN ĐỒ GIA ĐÌNH THỊNH VƯỢNG ══════════════════ */
 G.VIEWS['ban-do'] = function(){
-  var V = G.VANHANH, C = ['#3B82F6','#8B5CF6','#06B6D4','#10B981','#F59E0B'];
+  var V = G.VANHANH, C = ['#2166CE','#5140B4','#0B6675','#0B7350','#C2151C'];
   var o = U.ph({eyebrow:'NHÓM 01 · KHỞI NGUỒN', ic:'map', grad:1,
     t:'Bản Đồ Gia Đình Thịnh Vượng',
     lead:V.summary});
@@ -18,7 +18,7 @@ G.VIEWS['ban-do'] = function(){
   o += U.sec('ĐẦU VÀO — ba thứ phải có trước khi khởi động năm', V.dauVao.ten);
   o += '<div class="grid g3">' + V.dauVao.muc.map(function(m,i){
     return '<div class="card lift"><div class="row" style="margin-bottom:9px">'+
-      '<span class="pill" style="background:rgba(245,185,66,.16);color:var(--gold-ink)">VÀO '+(i+1)+'</span></div>'+
+      '<span class="pill" style="background:var(--gita-mo-2);color:var(--gold-ink)">VÀO '+(i+1)+'</span></div>'+
       '<b style="font-size:14.5px;display:block;margin-bottom:7px">'+h(m.ten)+'</b>'+
       '<p class="sm muted" style="line-height:1.6">'+h(m.lam)+'</p>'+
       (m.raGi?'<div class="mt" style="padding-top:10px;border-top:1px dashed var(--phu-4)">'+
@@ -72,7 +72,7 @@ G.VIEWS['ban-do'] = function(){
 G.khoangModal = function(id){
   var k = (G.VANHANH.khoang||[]).filter(function(x){return x.id===id;})[0];
   if(!k) return;
-  var C = {K1:'#3B82F6',K2:'#8B5CF6',K3:'#06B6D4',K4:'#10B981',K5:'#F59E0B'}, c = C[id]||'#F5B942';
+  var C = {K1:'#2166CE',K2:'#5140B4',K3:'#0B6675',K4:'#0B7350',K5:'#C2151C'}, c = C[id]||'var(--gita)';
   var o = '<div class="up" style="color:'+c+'">KHOANG '+k.no+'</div>'+
     '<h2 style="font-size:24px;font-weight:800;margin:6px 0 8px">'+h(k.ten)+'</h2>'+
     '<p class="serif" style="font-size:17px;font-style:italic;color:'+c+';margin-bottom:16px">'+h(k.cauHoi)+'</p>'+
@@ -115,10 +115,10 @@ G.VIEWS['chan-dung-nha'] = function(){
     '</div></div></div>';
 
   o += '<div class="grid g4 mt2">'+
-    U.stat({k:'SỐ LẦN NHẮC / TUẦN', v:f.nhac, d:'mốc đầu năm: 6 lần', c:'#F59E0B'})+
-    U.stat({k:'MỨC TỰ CHỦ', v:f.tuchu+'%', d:'chuẩn cuối chặng 4: trên 80%', c:'#10B981'})+
-    U.stat({k:'VAI CÓ NGƯỜI GIỮ', v:f.vai+'/9', d:'không ai giữ quá 4 vai', c:'#8B5CF6'})+
-    U.stat({k:'NGÀY ĐỒNG HÀNH', v:f.ngay, d:'tầng '+f.tier+' · '+G.tierOf(f.tier).days+' ngày', c:'#3B82F6'})+
+    U.stat({k:'SỐ LẦN NHẮC / TUẦN', v:f.nhac, d:'mốc đầu năm: 6 lần', c:'#C2151C'})+
+    U.stat({k:'MỨC TỰ CHỦ', v:f.tuchu+'%', d:'chuẩn cuối chặng 4: trên 80%', c:'#0B7350'})+
+    U.stat({k:'VAI CÓ NGƯỜI GIỮ', v:f.vai+'/9', d:'không ai giữ quá 4 vai', c:'#5140B4'})+
+    U.stat({k:'NGÀY ĐỒNG HÀNH', v:f.ngay, d:'tầng '+f.tier+' · '+G.tierOf(f.tier).days+' ngày', c:'#2166CE'})+
   '</div>';
 
   o += U.sec('BỐN MIỀN G – I – T – A CỦA NHÀ MÌNH', 'Đọc nguyên nhân theo bốn miền thay vì đoán bằng cảm giác');
@@ -137,7 +137,7 @@ G.VIEWS['chan-dung-nha'] = function(){
   }).join('') + '</div>';
 
   o += U.sec('KHOANG 1 — THẤU HIỂU THÀNH VIÊN', V.khoang[0].kpi);
-  o += '<div class="card">'+U.list(V.khoang[0].viecCuThe, '#3B82F6')+
+  o += '<div class="card">'+U.list(V.khoang[0].viecCuThe, '#2166CE')+
     '<div class="mt2" style="padding-top:14px;border-top:1px dashed var(--phu-4)">'+
     '<span class="tiny up" style="color:var(--alert)">CẢNH BÁO</span>'+
     '<p class="sm dim mt">'+h(V.khoang[0].canhBao)+'</p></div></div>';
@@ -151,7 +151,7 @@ G.VIEWS['dinh-vi'] = function(){
   var o = U.ph({eyebrow:'NHÓM 01 · KHỞI NGUỒN', ic:'pulse', t:'Định vị hôm nay',
     lead:'Biết gia đình đang thật sự ở đâu trước khi bàn đi đâu. Đo bằng dữ liệu, không bằng cảm giác — đây là việc băng nền số một.'});
 
-  o += '<div class="card" style="border-color:rgba(245,185,66,.3)">'+
+  o += '<div class="card" style="border-color:var(--gita-vien-1)">'+
     '<div class="row" style="gap:10px;margin-bottom:6px">'+ic('shield','w-4 h-4')+
     '<b>Bảng số này chỉ so với chính nhà mình ở chặng trước</b></div>'+
     '<p class="sm muted">Không so với nhà khác, không xếp hạng, không dùng để chứng minh ai sai. Đây là ranh giới số một của mô hình.</p></div>';
@@ -160,7 +160,7 @@ G.VIEWS['dinh-vi'] = function(){
   o += '<div class="grid g2">' + V.dauRa.chiSo.map(function(c,i){
     var v = [f.tuchu, 100-f.tuchu, Math.round(f.nhac/6*100), 100-Math.min(95,f.ngay/4),
              f.tier>=4?85:35, f.tier>=5?70:20, Math.round(f.vai/9*100)][i];
-    var cl = ['#10B981','#8B5CF6','#F59E0B','#06B6D4','#F5B942','#FB7185','#3B82F6'][i];
+    var cl = ['#0B7350','#5140B4','#C2151C','#0B6675','var(--gita)','#C2151C','#2166CE'][i];
     return '<div class="card lift"><div class="row"><div class="grow"><b style="font-size:14px">'+h(c.ten)+'</b>'+
       '<p class="tiny muted mt" style="line-height:1.5">Chuẩn: '+h(c.chuan)+'</p></div>'+
       '<b class="mono" style="font-size:22px;color:'+cl+'">'+Math.round(v)+'</b></div>'+
@@ -182,9 +182,9 @@ G.VIEWS['dinh-vi'] = function(){
 G.VIEWS['tam-nhin'] = function(){
   var f = G.myFamily();
   var moc = [
-    {k:'nam5', t:'5 NĂM NỮA', c:'#3B82F6', g:'Nhà mình sẽ là một gia đình thế nào?'},
-    {k:'nam10',t:'10 NĂM NỮA',c:'#8B5CF6', g:'Con sẽ đang làm gì, và nhà mình đang giữ điều gì?'},
-    {k:'nam20',t:'20 NĂM NỮA',c:'#F5B942', g:'Điều gì của nhà mình sẽ còn lại và truyền tiếp?'}
+    {k:'nam5', t:'5 NĂM NỮA', c:'#2166CE', g:'Nhà mình sẽ là một gia đình thế nào?'},
+    {k:'nam10',t:'10 NĂM NỮA',c:'#5140B4', g:'Con sẽ đang làm gì, và nhà mình đang giữ điều gì?'},
+    {k:'nam20',t:'20 NĂM NỮA',c:'#2166CE', g:'Điều gì của nhà mình sẽ còn lại và truyền tiếp?'}
   ];
   var o = U.ph({eyebrow:'NHÓM 01 · KHỞI NGUỒN', ic:'sun', t:'Bảng tầm nhìn gia đình',
     lead:'Cả nhà ngồi đủ mặt, viết gia đình mình muốn trở thành gia đình thế nào trong 5, 10 và 20 năm tới. Viết bằng lời của từng người — không ai viết hộ ai.'});
@@ -234,7 +234,7 @@ G.VIEWS['chuyen-hoa'] = function(){
         U.chip(c.linh)+U.chip('Miền '+c.mien+' · '+m.short, c.c)+'</div>'+
       U.ba(c.dau, c.khat) +
       '<div class="grid g2 mt2" style="gap:12px">'+
-        '<div style="padding:13px;border-radius:14px;background:rgba(245,185,66,.07);border:1px solid rgba(245,185,66,.2)">'+
+        '<div style="padding:13px;border-radius:14px;background:var(--gita-mo-1);border:1px solid var(--gita-mo-2)">'+
           '<div class="tiny up" style="color:var(--gold-ink)">ĐÒN BẨY</div><p class="sm mt" style="line-height:1.6">'+h(c.don)+'</p></div>'+
         '<div style="padding:13px;border-radius:14px;background:var(--phu-2);border:1px solid var(--line)">'+
           '<div class="tiny up muted">BẰNG CHỨNG ĐÃ QUA</div><p class="sm mt" style="line-height:1.6">'+h(c.bang)+'</p></div>'+
@@ -263,7 +263,7 @@ G.VIEWS['hanh-trinh-con'] = function(){
     return '<div class="tl-i" style="color:'+t.c+'">'+
       '<div class="card '+(cur?'glow':'')+'" style="border-color:'+t.c+(cur?'66':'22')+'">'+
       '<div class="row wrap" style="gap:8px;margin-bottom:8px">'+U.chip(t.code, t.c)+
-      (cur?U.chip('ĐANG Ở ĐÂY','#F5B942',1):'')+'</div>'+
+      (cur?U.chip('ĐANG Ở ĐÂY','var(--gita)',1):'')+'</div>'+
       '<b style="font-size:15px;display:block;margin-bottom:8px;color:'+t.c+'">'+h(c.ten)+'</b>'+
       '<div class="mt" style="display:flex;flex-direction:column;gap:9px">'+
         G.fromTo('CON', c.hocVienTuGi, c.hocVienSangGi)+
@@ -300,10 +300,10 @@ G.VIEWS['diem-cham'] = function(){
 
   var avg = Math.round(G.DIEMCHAM.reduce(function(a,x){return a+x.muc;},0)/G.DIEMCHAM.length);
   o += '<div class="grid g4 mb">'+
-    U.stat({k:'ĐIỂM CHẠM', v:'9', d:'trên toàn hành trình', c:'#FB7185'})+
-    U.stat({k:'MỨC CHẠM TRUNG BÌNH', v:avg, d:'thang 0 – 100', c:'#F5B942'})+
-    U.stat({k:'MẠNH NHẤT', v:'DC-07', d:'chiến thắng đầu tiên · 99', c:'#3B82F6'})+
-    U.stat({k:'CẦN NÂNG', v:'DC-09', d:'muốn lan toả · 92', c:'#10B981'})+
+    U.stat({k:'ĐIỂM CHẠM', v:'9', d:'trên toàn hành trình', c:'#C2151C'})+
+    U.stat({k:'MỨC CHẠM TRUNG BÌNH', v:avg, d:'thang 0 – 100', c:'#2166CE'})+
+    U.stat({k:'MẠNH NHẤT', v:'DC-07', d:'chiến thắng đầu tiên · 99', c:'#2166CE'})+
+    U.stat({k:'CẦN NÂNG', v:'DC-09', d:'muốn lan toả · 92', c:'#0B7350'})+
   '</div>';
 
   o += G.DIEMCHAM.map(function(d){
@@ -347,7 +347,7 @@ G.VIEWS['lo-trinh'] = function(){
       '<div class="row" style="gap:7px;margin-bottom:8px">'+
         '<span style="width:30px;height:30px;border-radius:9px;display:grid;place-items:center;font-weight:900;font-size:12px;background:'+t.c+'22;color:'+t.c+'">'+t.code+'</span>'+
         (done?'<span style="color:var(--ok)">'+ic('check','w-4 h-4')+'</span>':'')+
-        (cur?U.chip('ĐANG Ở','#F5B942',1):'')+'</div>'+
+        (cur?U.chip('ĐANG Ở','var(--gita)',1):'')+'</div>'+
       '<b style="font-size:14px;display:block;color:'+t.c+'">'+h(t.name)+'</b>'+
       '<p class="tiny muted mt" style="font-style:italic">'+h(t.q)+'</p>'+
       '<div class="mono tiny mt2" style="color:var(--ink-4)">'+t.days+' ngày</div>'+
@@ -404,10 +404,10 @@ G.VIEWS['gita-map'] = function(){
 G.VIEWS['chu-ky'] = function(){
   var f = G.myFamily();
   var pdca = [
-    {k:'P',t:'PLAN — Chốt một đòn bẩy',c:'#3B82F6',d:'Chọn đúng MỘT điểm chạm nhỏ nhất tạo thay đổi lớn nhất cho 21 ngày tới. Không chọn hai.'},
-    {k:'D',t:'DO — Chạy đủ 21 ngày',c:'#8B5CF6',d:'Mỗi vòng bảy ngày chỉ thay một biến. Ghi lại cả ngày làm được và ngày không.'},
-    {k:'C',t:'CHECK — Đọc bằng số',c:'#F59E0B',d:'So với chính nhà mình ba tuần trước. Tìm ngoại lệ tốt: hôm nào khác, và khác vì đâu.'},
-    {k:'A',t:'ACT — Giữ, bỏ hoặc nâng',c:'#10B981',d:'Việc nối được về tầm nhìn thì giữ. Việc không nối được thì bỏ, dù nó tốt.'}
+    {k:'P',t:'PLAN — Chốt một đòn bẩy',c:'#2166CE',d:'Chọn đúng MỘT điểm chạm nhỏ nhất tạo thay đổi lớn nhất cho 21 ngày tới. Không chọn hai.'},
+    {k:'D',t:'DO — Chạy đủ 21 ngày',c:'#5140B4',d:'Mỗi vòng bảy ngày chỉ thay một biến. Ghi lại cả ngày làm được và ngày không.'},
+    {k:'C',t:'CHECK — Đọc bằng số',c:'#C2151C',d:'So với chính nhà mình ba tuần trước. Tìm ngoại lệ tốt: hôm nào khác, và khác vì đâu.'},
+    {k:'A',t:'ACT — Giữ, bỏ hoặc nâng',c:'#0B7350',d:'Việc nối được về tầm nhìn thì giữ. Việc không nối được thì bỏ, dù nó tốt.'}
   ];
   var o = U.ph({eyebrow:'NHÓM 02 · HÀNH TRÌNH', ic:'ritual', t:'Chu kỳ 21 / 90 ngày',
     lead:'Hai mươi mốt ngày làm nên một cấp độ học tập. Chín mươi ngày làm nên một chặng. Mỗi chặng kết bằng một cổng nghiệm thu có bằng chứng.'});
@@ -424,7 +424,7 @@ G.VIEWS['chu-ky'] = function(){
   var chang = ['Có cấu trúc','Tự điều hành','Thích ứng','Chuyển giao'];
   o += '<div class="grid g4">' + chang.map(function(c,i){
     var done = f.ngay > (i+1)*90, cur = !done && f.ngay > i*90;
-    var col = ['#3B82F6','#8B5CF6','#06B6D4','#10B981'][i];
+    var col = ['#2166CE','#5140B4','#0B6675','#0B7350'][i];
     return '<div class="card '+(cur?'glow':'')+'" style="border-color:'+col+(cur?'66':'22')+'">'+
       '<div class="row" style="gap:8px;margin-bottom:8px">'+
         '<span class="pill" style="background:'+col+'22;color:'+col+'">CHẶNG '+(i+1)+'</span>'+
@@ -449,7 +449,7 @@ G.VIEWS['nhiem-vu'] = function(){
     lead:'Đúng một nhóm việc cho vai của anh chị hôm nay. Không dài hơn. Hào hứng hôm nay không trả nổi hoá đơn của ngày thứ tư.'});
 
   o += '<div class="card glow mb"><div class="row wrap" style="gap:20px">'+
-    U.ring(Math.round(done/list.length*100), '#10B981', 'HÔM NAY')+
+    U.ring(Math.round(done/list.length*100), '#0B7350', 'HÔM NAY')+
     '<div class="grow" style="min-width:200px"><div class="up muted">VAI ĐANG DÙNG</div>'+
     '<h2 style="font-size:22px;font-weight:800;margin:4px 0">'+h(G.S.roleObj.n)+'</h2>'+
     '<p class="sm dim">'+h(G.S.roleObj.ln)+'</p>'+
@@ -514,9 +514,9 @@ G.chanDungModal = function(id){
     '<h2 style="font-size:21px;font-weight:800;line-height:1.3;margin-bottom:10px">'+h(c.tieuDe)+'</h2>'+
     '<p class="serif" style="font-size:16px;font-style:italic;color:'+t.c+';margin-bottom:18px">"'+h(c.cauChotLoi)+'"</p>';
   if(c.tuDuyDoi) o += '<div class="card pad-sm mb">'+G.fromTo('TƯ DUY', c.tuDuyDoi.tu, c.tuDuyDoi.sang)+'</div>';
-  var blocks = [['TRƯỚC KHI VÀO', c.truocKhiVao, '#F87171'],['SAU KHI RA', c.sauKhiRa, '#34D399'],
-    ['TRÍ TUỆ MỚI', c.triTueMoi, '#8B5CF6'],['HÀNH VI MỚI', c.hanhViMoi, '#06B6D4'],
-    ['NGƯỜI KHÁC THẤY GÌ', c.nguoiKhacThay, '#F5B942'],['BẰNG CHỨNG QUA CHẶNG', c.bangChung, '#10B981'],
+  var blocks = [['TRƯỚC KHI VÀO', c.truocKhiVao, '#C2151C'],['SAU KHI RA', c.sauKhiRa, '#0B7350'],
+    ['TRÍ TUỆ MỚI', c.triTueMoi, '#5140B4'],['HÀNH VI MỚI', c.hanhViMoi, '#0B6675'],
+    ['NGƯỜI KHÁC THẤY GÌ', c.nguoiKhacThay, 'var(--gita)'],['BẰNG CHỨNG QUA CHẶNG', c.bangChung, '#0B7350'],
     ['CHƯA PHẢI LÀ', c.chuaPhaiLa, '#FB923C']];
   o += blocks.map(function(b){
     if(!b[1] || !b[1].length) return '';

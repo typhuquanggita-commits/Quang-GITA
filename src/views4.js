@@ -56,7 +56,7 @@ G.VIEWS['bat-dau'] = function(){
     lead:'Không phải năm mươi màn hình. Chỉ năm bước, đúng thứ tự, cho đúng vai của anh chị. Làm xong bước một rồi hãy nhìn bước hai.'});
 
   o += '<div class="card glow mb"><div class="row wrap" style="gap:24px">'+
-    U.ring(Math.round(done/list.length*100), '#F5B942', 'ĐÃ XONG')+
+    U.ring(Math.round(done/list.length*100), 'var(--gita)', 'ĐÃ XONG')+
     '<div class="grow" style="min-width:230px"><div class="up muted">ĐANG ĐI VỚI VAI</div>'+
     '<h2 style="font-size:22px;font-weight:800;margin:4px 0 6px">'+h(G.S.roleObj.n)+'</h2>'+
     '<p class="sm dim">'+h((G.PORTALS[p]||{}).say||'')+'</p></div></div></div>';
@@ -67,12 +67,12 @@ G.VIEWS['bat-dau'] = function(){
       '<div class="row wrap" style="gap:14px;align-items:flex-start">'+
       '<button class="bx" data-check="b'+i+'" style="width:34px;height:34px;border-radius:11px;'+
       'border:1.5px solid '+(d?'transparent':'var(--line-2)')+';display:grid;place-items:center;flex:none;'+
-      (d?'background:linear-gradient(135deg,var(--ok),#10B981);color:#04241A':'color:var(--ink-4)')+'">'+
+      (d?'background:linear-gradient(135deg,var(--ok),#0B7350);color:#04241A':'color:var(--ink-4)')+'">'+
       (d?ic('check','w-4 h-4'):'<b style="font-size:13px">'+(i+1)+'</b>')+'</button>'+
       '<div class="grow" style="min-width:220px">'+
         '<div class="row wrap" style="gap:8px;margin-bottom:5px">'+
         '<b style="font-size:15.5px">'+h(x.t)+'</b>'+U.chip(x.p)+
-        (next?U.chip('BƯỚC TIẾP THEO','#F5B942',1):'')+'</div>'+
+        (next?U.chip('BƯỚC TIẾP THEO','var(--gita)',1):'')+'</div>'+
         '<p class="sm dim" style="line-height:1.6">'+h(x.d)+'</p></div>'+
       '<button class="btn '+(next?'pri':'ghost')+' sm" data-go="'+h(x.v)+'">Mở '+ic('arrow')+'</button>'+
       '</div></div>';
@@ -91,9 +91,9 @@ G.VIEWS['bat-dau'] = function(){
 G.VIEWS['dong-hanh'] = function(){
   var moods = [
     {k:'met',  t:'Mệt',       c:'#F87175', d:'Hôm nay nhà mình đuối'},
-    {k:'roi',  t:'Rối',       c:'#F59E0B', d:'Không biết bắt đầu từ đâu'},
+    {k:'roi',  t:'Rối',       c:'#C2151C', d:'Không biết bắt đầu từ đâu'},
     {k:'thuong',t:'Bình thường',c:'#38BDF8',d:'Vẫn đang đi'},
-    {k:'sang', t:'Sáng',      c:'#10B981', d:'Có chuyện tốt muốn kể'}
+    {k:'sang', t:'Sáng',      c:'#0B7350', d:'Có chuyện tốt muốn kể'}
   ];
   var cur = G.S.mood;
   var traLoi = {
@@ -115,7 +115,7 @@ G.VIEWS['dong-hanh'] = function(){
     }).join('') + '</div>';
   if(cur && traLoi[cur]){
     var r = traLoi[cur];
-    o += '<div class="mt2" style="padding:18px 20px;border-radius:16px;background:rgba(245,185,66,.08);border-left:2px solid var(--gold)">'+
+    o += '<div class="mt2" style="padding:18px 20px;border-radius:16px;background:var(--gita-mo-1);border-left:2px solid var(--gold)">'+
       '<b class="serif" style="font-size:17px;font-style:italic;color:var(--gold-2);display:block;margin-bottom:8px">'+h(r.t)+'</b>'+
       '<p class="sm" style="line-height:1.7">'+h(r.d)+'</p>'+
       '<button class="btn pri sm mt2" data-go="'+h(r.v)+'">'+h(r.b)+' '+ic('arrow')+'</button></div>';
@@ -242,7 +242,7 @@ G.VIEWS['nguoi-dan-dat'] = function(){
   o += U.sec('SÁU VIỆC NUÔI LỬA NGƯỜI DẪN DẮT','Người dẫn cạn thì gia đình cũng cạn theo');
   o += '<div class="grid g2">' + D.nuoiLua.map(function(x,i){
     return '<div class="card pad-sm"><div class="row" style="gap:9px;margin-bottom:5px">'+
-      '<span class="pill" style="background:rgba(245,185,66,.18);color:var(--gold-ink)">0'+(i+1)+'</span>'+
+      '<span class="pill" style="background:var(--gita-mo-2);color:var(--gold-ink)">0'+(i+1)+'</span>'+
       '<b class="sm">'+h(x.t)+'</b></div>'+
       '<p class="tiny muted" style="line-height:1.6">'+h(x.d)+'</p></div>';
   }).join('') + '</div>';
@@ -271,10 +271,10 @@ G.VIEWS['hoa-hong'] = function(){
     lead:'Bốn cấp, trần 10%, công bố trước khi ký và không đàm phán riêng với ai. Hoa hồng gắn với việc gia đình được giới thiệu đi được bao xa — không gắn với chữ ký hợp đồng.'});
 
   o += '<div class="grid g4 mb">'+
-    U.stat({k:'TRẦN HOA HỒNG', v:H.tran+'%', d:'toàn hệ thống · không ngoại lệ', c:'#F5B942'})+
-    U.stat({k:'CẤP ĐẠI SỨ', v:H.cap.length, d:'3% · 5% · 8% · 10%', c:'#8B5CF6'})+
-    U.stat({k:'MỐC CHI ĐẦU', v:'Ngày 30', d:'khi nhà được giới thiệu còn giữ nhịp', c:'#10B981'})+
-    U.stat({k:'THƯỞNG THEO LƯỢT CHỐT', v:'0', d:'thưởng theo chất lượng, không theo số', c:'#FB7185'})+
+    U.stat({k:'TRẦN HOA HỒNG', v:H.tran+'%', d:'toàn hệ thống · không ngoại lệ', c:'#2166CE'})+
+    U.stat({k:'CẤP ĐẠI SỨ', v:H.cap.length, d:'3% · 5% · 8% · 10%', c:'#5140B4'})+
+    U.stat({k:'MỐC CHI ĐẦU', v:'Ngày 30', d:'khi nhà được giới thiệu còn giữ nhịp', c:'#0B7350'})+
+    U.stat({k:'THƯỞNG THEO LƯỢT CHỐT', v:'0', d:'thưởng theo chất lượng, không theo số', c:'#C2151C'})+
   '</div>';
 
   o += U.sec('BỐN CẤP VÀ TỈ LỆ','Lên cấp bằng việc đã làm — không bằng doanh số');
@@ -318,7 +318,7 @@ G.VIEWS['thuong-hieu'] = function(){
 
   o += '<div class="card glow mb"><div class="row wrap" style="gap:24px;align-items:center">'+
     '<span style="width:96px;height:96px;border-radius:28px;display:grid;place-items:center;font-weight:900;font-size:22px;'+
-    'background:linear-gradient(135deg,#F5B942,#FF7A45);color:#1A1006;flex:none;box-shadow:0 18px 46px -14px rgba(245,185,66,.85)">GITA</span>'+
+    'background:linear-gradient(135deg,var(--gita),var(--gita-do));color:#1A1006;flex:none;box-shadow:0 18px 46px -14px var(--gita-day)">GITA</span>'+
     '<div class="grow" style="min-width:250px">'+
     '<h2 style="font-size:26px;font-weight:800">'+h(B.ten)+'</h2>'+
     '<p class="up" style="color:var(--ink-4);margin:2px 0 10px">'+h(B.dinhVi)+'</p>'+
@@ -373,19 +373,19 @@ G.VIEWS['ra-soat'] = function(){
   var vaRoi = all.filter(function(m){ return m.trang.indexOf('ĐÃ VÁ')===0; }).length;
   var conHo = all.filter(function(m){ return m.trang.indexOf('CÒN HỞ')===0; }).length;
   var canMC = all.filter(function(m){ return m.trang.indexOf('CẦN MÁY CHỦ')===0; }).length;
-  var mau = {'ĐÃ VÁ':'#10B981','CÒN HỞ':'#F87171','CẦN MÁY CHỦ':'#F59E0B','KHỚP 100%':'#10B981',
-    'ĐỦ':'#10B981','ĐẠT':'#10B981','ĐÃ CHỐT':'#10B981','ĐANG GIỮ ĐÚNG':'#10B981',
-    'ĐANG CHẶN ĐÚNG':'#10B981','ĐÃ KIỂM · AN TOÀN':'#10B981','CHỜ CHỦ HỆ THỐNG':'#8B5CF6',
-    'ĐÃ MỞ MỘT PHẦN':'#06B6D4'};
+  var mau = {'ĐÃ VÁ':'#0B7350','CÒN HỞ':'#C2151C','CẦN MÁY CHỦ':'#C2151C','KHỚP 100%':'#0B7350',
+    'ĐỦ':'#0B7350','ĐẠT':'#0B7350','ĐÃ CHỐT':'#0B7350','ĐANG GIỮ ĐÚNG':'#0B7350',
+    'ĐANG CHẶN ĐÚNG':'#0B7350','ĐÃ KIỂM · AN TOÀN':'#0B7350','CHỜ CHỦ HỆ THỐNG':'#5140B4',
+    'ĐÃ MỞ MỘT PHẦN':'#0B6675'};
 
   var o = U.ph({eyebrow:'NHÓM 05 · VẬN HÀNH', ic:'shield', grad:1, t:'Biên bản rà soát hệ thống',
     lead:R.tomTat});
 
   o += '<div class="grid g4 mb">'+
-    U.stat({k:'ĐIỂM ĐÃ RÀ', v:all.length, d:'trên sáu nhóm', c:'#8B5CF6'})+
-    U.stat({k:'ĐÃ VÁ TRONG BẢN NÀY', v:vaRoi, d:'lỗi thật, đã kiểm lại', c:'#10B981'})+
-    U.stat({k:'CÒN HỞ', v:conHo, d:'cần quyết định của chủ hệ thống', c:'#F87171'})+
-    U.stat({k:'CẦN MÁY CHỦ', v:canMC, d:'không vá được bằng mã trình duyệt', c:'#F59E0B'})+
+    U.stat({k:'ĐIỂM ĐÃ RÀ', v:all.length, d:'trên sáu nhóm', c:'#5140B4'})+
+    U.stat({k:'ĐÃ VÁ TRONG BẢN NÀY', v:vaRoi, d:'lỗi thật, đã kiểm lại', c:'#0B7350'})+
+    U.stat({k:'CÒN HỞ', v:conHo, d:'cần quyết định của chủ hệ thống', c:'#C2151C'})+
+    U.stat({k:'CẦN MÁY CHỦ', v:canMC, d:'không vá được bằng mã trình duyệt', c:'#C2151C'})+
   '</div>';
 
   o += '<div class="card mb" style="border-color:rgba(248,113,113,.35);background:rgba(248,113,113,.05)">'+
@@ -401,11 +401,11 @@ G.VIEWS['ra-soat'] = function(){
   o += R.nhom.map(function(n){
     return '<div class="mt2"><div class="up mb" style="color:'+n.c+'">'+h(n.n)+' <span class="muted">· '+n.muc.length+' điểm</span></div>'+
       n.muc.map(function(m){
-        var c = mau[m.trang] || '#94A3B8';
+        var c = mau[m.trang] || '#665E88';
         return '<div class="card mb" style="border-color:'+c+'26">'+
           '<div class="row wrap" style="gap:9px;margin-bottom:8px">'+
           '<b class="grow" style="font-size:14.5px;min-width:200px">'+h(m.t)+'</b>'+
-          (m.mucdo && m.mucdo!=='—' ? U.chip(m.mucdo, m.mucdo==='Nghiêm trọng'?'#F87171':(m.mucdo==='Trung bình'?'#F59E0B':'#94A3B8')) : '')+
+          (m.mucdo && m.mucdo!=='—' ? U.chip(m.mucdo, m.mucdo==='Nghiêm trọng'?'#C2151C':(m.mucdo==='Trung bình'?'#C2151C':'#665E88')) : '')+
           '<span class="chip" style="color:'+c+';border-color:'+c+'55;background:'+c+'14">'+h(m.trang)+'</span></div>'+
           '<p class="sm muted" style="line-height:1.6;margin-bottom:9px">'+h(m.mo)+'</p>'+
           '<div style="padding:11px 13px;border-radius:12px;background:'+c+'0d;border-left:2px solid '+c+'">'+

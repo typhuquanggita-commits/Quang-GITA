@@ -89,7 +89,7 @@ G.VIEWS['phan-quyen'] = function(){
     '<span><i class="pq-ic cam">'+ic('x','w-3 h-3')+'</i> đã thu lại</span>'+
     '<span><i class="pq-ic khong"></i> bậc không cho, chưa cấp thêm</span></div>';
 
-  o += '<div class="card pad-sm mb" style="border-color:rgba(245,185,66,.3)">'+
+  o += '<div class="card pad-sm mb" style="border-color:var(--gita-vien-1)">'+
     '<p class="sm" style="line-height:1.7;color:var(--ink-2)">'+
     '<b>Bốn điều bảng này không cho làm:</b> không sửa quyền của vai cao hơn mình; '+
     'không cấp quyền mà chính mình không có; không tự thu quyền quản trị của chính mình; '+
@@ -209,7 +209,7 @@ G.VIEWS['pham-vi'] = function(){
     }).join('') + '</div>';
 
     var ke = T[tangDang] || null;
-    o += '<div class="card mt2" style="border-color:rgba(245,185,66,.34)">'+
+    o += '<div class="card mt2" style="border-color:var(--gita-vien-1)">'+
       '<div class="up mb" style="color:var(--gold-ink)">MỞ TẦNG TIẾP THEO BẰNG CÁCH NÀO</div>'+
       (ke ? '<p class="sm" style="line-height:1.75;color:var(--ink-2)">Tầng kế tiếp là <b>'+h(ke.code+' · '+ke.name)+'</b>. '+
               'Hai điều kiện, phải đủ cả hai:</p>'+
@@ -316,11 +316,11 @@ G.VIEWS['cap-tai-khoan'] = function(){
       '<div><label class="tiny up muted">KHU VỰC / NHÓM PHỤ TRÁCH</label>'+
         '<input id="ct_nha" class="inp blk" placeholder="Nhóm Coach miền Bắc"></div>'+
     '</div>'+
-    '<div id="ct_loi" class="tiny mt" style="color:#F87171;min-height:16px"></div>'+
+    '<div id="ct_loi" class="tiny mt" style="color:#C2151C;min-height:16px"></div>'+
     '<button class="btn pri mt" data-act="ct-cap">'+ic('plus','w-4 h-4')+'Sinh tài khoản và mật khẩu ban đầu</button>'+
     '</div>';
 
-  o += '<div class="card mt2" style="border-color:rgba(245,185,66,.32)">'+
+  o += '<div class="card mt2" style="border-color:var(--gita-vien-1)">'+
     '<div class="up mb" style="color:var(--gold-ink)">BỐN LUẬT KHI CẤP</div>'+
     U.list([
       'Không cấp được vị trí cao hơn chính mình — danh sách trên chỉ hiện vai từ bậc của anh chị trở xuống.',
@@ -398,13 +398,13 @@ G.VIEWS['khoa-tai-khoan'] = function(){
     lead:'Ba việc khác nhau, hậu quả khác nhau. Khoá thì gỡ lại được; xoá thì không.'});
 
   o += '<div class="ktk-ba">'+
-    '<div class="ktk-o" style="--kc:#F59E0B"><div class="ktk-h">'+ic('lock','w-4 h-4')+'<b>KHOÁ</b></div>'+
+    '<div class="ktk-o" style="--kc:#C2151C"><div class="ktk-h">'+ic('lock','w-4 h-4')+'<b>KHOÁ</b></div>'+
       '<p class="sm">Người dùng không đăng nhập được nữa. Dữ liệu giữ nguyên, hồ sơ gia đình không mất gì. '+
       'Mở lại lúc nào cũng được.</p><div class="ktk-ai">R01 · R02 làm được</div></div>'+
-    '<div class="ktk-o" style="--kc:#10B981"><div class="ktk-h">'+ic('check','w-4 h-4')+'<b>MỞ LẠI</b></div>'+
+    '<div class="ktk-o" style="--kc:#0B7350"><div class="ktk-h">'+ic('check','w-4 h-4')+'<b>MỞ LẠI</b></div>'+
       '<p class="sm">Trả tài khoản về hoạt động. Phải có người xem xét và ghi lý do — không tự động mở.</p>'+
       '<div class="ktk-ai">R01 · R02 làm được</div></div>'+
-    '<div class="ktk-o" style="--kc:#F87171"><div class="ktk-h">'+ic('x','w-4 h-4')+'<b>XOÁ</b></div>'+
+    '<div class="ktk-o" style="--kc:#C2151C"><div class="ktk-h">'+ic('x','w-4 h-4')+'<b>XOÁ</b></div>'+
       '<p class="sm">Gỡ hẳn khỏi hệ thống. <b>Không hoàn lại được.</b> Chỉ Super Admin, và phải gõ đúng '+
       'tên đăng nhập để xác nhận.</p><div class="ktk-ai">CHỈ R01</div></div>'+
     '</div>';
@@ -424,7 +424,7 @@ G.VIEWS['khoa-tai-khoan'] = function(){
           LYDO_KHOA.map(function(x){ return '<option>'+h(x)+'</option>'; }).join('')+
         '</select></div>'+
     '</div>'+
-    '<div id="kt_loi" class="tiny mt" style="color:#F87171;min-height:16px"></div>'+
+    '<div id="kt_loi" class="tiny mt" style="color:#C2151C;min-height:16px"></div>'+
     '<button class="btn pri mt" data-act="kt-lam">Thực hiện</button></div>';
 
   if(G.S.role !== 'R01')
@@ -445,11 +445,11 @@ G.lamViecTaiKhoan = function(){
   if(u === (G.S.acc && G.S.acc.u)){ bao('Không tự khoá hoặc xoá chính tài khoản mình đang dùng.'); return; }
 
   if(viec === 'xoa'){
-    U.modal('<h2 style="font-size:20px;font-weight:800;margin-bottom:6px;color:#F87171">Xoá vĩnh viễn</h2>'+
+    U.modal('<h2 style="font-size:20px;font-weight:800;margin-bottom:6px;color:#C2151C">Xoá vĩnh viễn</h2>'+
       '<p class="sm" style="line-height:1.7;color:var(--ink-2);margin-bottom:12px">Sắp xoá hẳn <b class="mono">'+h(u)+'</b>. '+
       'Việc này <b>không hoàn lại được</b>. Gõ lại đúng tên đăng nhập để xác nhận.</p>'+
       '<input id="kt_xn" class="inp blk mb" placeholder="'+h(u)+'" autocomplete="off">'+
-      '<div id="kt_xnloi" class="tiny mb" style="color:#F87171;min-height:16px"></div>'+
+      '<div id="kt_xnloi" class="tiny mb" style="color:#C2151C;min-height:16px"></div>'+
       '<button class="btn pri blk" data-act="kt-xoa-that" data-u="'+h(u)+'" data-l="'+h(lydo)+'">Tôi hiểu — xoá</button>');
     return;
   }
@@ -468,5 +468,89 @@ G.xoaTaiKhoanThat = function(el){
   if(G.secLog) G.secLog('XOÁ tài khoản', u + ' · lý do: ' + lydo + ' · người xoá ' + (G.S.acc && G.S.acc.u), 'Cảnh báo');
   U.closeModal();
   U.toast('Đã ghi lệnh xoá ' + u + (G.API_CAP_PHEP ? '.' : ' — bản mẫu chưa nối máy chủ nên chưa gửi đi.'), 'ok');
+};
+})();
+
+/* ═══════════════════════════════════════════════════════════════
+   HỆ NHẬN DIỆN THƯƠNG HIỆU GITA — màn hình chuẩn
+   Mở cho mọi người trong hệ: ai cũng cần biết dùng logo và màu
+   thế nào cho đúng. Phần sửa vẫn chỉ Super Admin.
+   ═══════════════════════════════════════════════════════════════ */
+(function(){
+var U = G.U, h = U.h, ic = U.ic;
+
+G.VIEWS['nhan-dien'] = function(){
+  var N = G.NHAN_DIEN;
+  if(!N) return U.empty('Chưa nạp được bộ nhận diện','Bộ nhận diện nằm trong gói nền.');
+
+  var o = U.ph({eyebrow:'BỘ NHẬN DIỆN THƯƠNG HIỆU', ic:'star', grad:1,
+    t:'Hệ nhận diện GITA', lead:N.goc});
+
+  /* Logo */
+  o += U.sec('1 · LOGO','Bản dựng vector nằm trong ứng dụng — mọi nơi đều gọi từ một chỗ');
+  o += '<div class="nd-logo"><div class="nd-logo-o">'+ (G.logoGita ? G.logoGita() : '') +'</div>'+
+    '<div class="nd-logo-p"><div class="nd-dau">'+ (G.dauGita ? G.dauGita() : '') +'</div>'+
+    '<div class="tiny muted" style="text-align:center;margin-top:8px">Dấu vuông</div></div></div>';
+  o += U.tbl(['Bản dựng','Dùng ở đâu','Cỡ nhỏ nhất'], N.logo.banDung.map(function(b){
+    return ['<b>'+h(b.ten)+'</b>','<span class="sm">'+h(b.dung)+'</span>',
+      '<span class="mono sm">'+h(b.toiThieu)+'</span>'];
+  }));
+  o += '<div class="card mt2"><div class="up mb" style="color:var(--ink-4)">CẤU TẠO</div>'+
+    U.list(N.logo.cauTao)+
+    '<div class="up mb mt2" style="color:var(--ink-4)">KHOẢNG THỞ</div>'+
+    '<p class="sm" style="line-height:1.7;color:var(--ink-2)">'+h(N.logo.khoangTho)+'</p></div>';
+  o += '<div class="card mt2" style="border-color:var(--gita-vien-1)">'+
+    '<div class="up mb" style="color:var(--gita-do-ink)">'+ic('x','w-4 h-4')+' NĂM ĐIỀU KHÔNG ĐƯỢC LÀM VỚI LOGO</div>'+
+    U.list(N.logo.cam, 'var(--gita-do)')+'</div>';
+
+  /* Màu */
+  o += U.sec('2 · MÀU','Ba màu thương hiệu và năm màu tầng');
+  o += '<div class="nd-mau">'+ N.mau.chinh.map(function(m){
+    return '<div class="nd-o" style="--mc:'+m.hex+'">'+
+      '<div class="nd-o-mau"></div>'+
+      '<div class="nd-o-tx"><b>'+h(m.ten)+'</b>'+
+        '<span class="mono">'+h(m.hex)+'</span>'+
+        '<span class="mono tiny muted">'+h(m.ma)+'</span>'+
+        '<p>'+h(m.vai)+'</p></div></div>';
+  }).join('') +'</div>';
+
+  o += '<div class="nd-tang mt2">'+ N.mau.tang.map(function(t){
+    return '<div class="nd-t" style="--mc:'+t.hex+'"><span class="nd-t-o"></span>'+
+      '<div><b>'+h(t.ten)+'</b><span class="mono">'+h(t.hex)+'</span></div></div>';
+  }).join('') +'</div>';
+  o += '<p class="sm mt" style="line-height:1.7;color:var(--ink-2)">'+h(N.mau.yNghia)+'</p>';
+  o += '<div class="card mt2"><div class="up mb" style="color:var(--ink-4)">LUẬT DÙNG MÀU</div>'+
+    U.list(N.mau.luat)+'</div>';
+
+  /* Chữ */
+  o += U.sec('3 · CHỮ','Hai bộ chữ, nhúng sẵn trong ứng dụng');
+  o += U.tbl(['Bộ chữ','Dùng làm gì'], [
+    ['<b style="font-family:var(--font)">'+h(N.chu.chinh.ten)+'</b>','<span class="sm">'+h(N.chu.chinh.vai)+'</span>'],
+    ['<b style="font-family:var(--serif);font-size:17px">'+h(N.chu.nhanManh.ten)+'</b>','<span class="sm">'+h(N.chu.nhanManh.vai)+'</span>']
+  ]);
+  o += '<div class="card mt"><div class="up mb" style="color:var(--ink-4)">LUẬT DÙNG CHỮ</div>'+U.list(N.chu.luat)+'</div>';
+
+  /* Tài liệu */
+  o += U.sec('4 · ÁP VÀO TÀI LIỆU','Mỗi tài liệu phát hành đều phải đủ năm phần');
+  o += '<div class="row wrap" style="gap:12px;align-items:stretch">'+
+    '<div class="card" style="flex:1;min-width:260px;border-color:var(--gita-vien-1)">'+
+      '<div class="up mb" style="color:var(--gita-ink)">'+ic('check','w-4 h-4')+' BẮT BUỘC CÓ</div>'+
+      U.list(N.taiLieu.batBuoc)+'</div>'+
+    '<div class="card" style="flex:1;min-width:260px">'+
+      '<div class="up mb" style="color:var(--gita-do-ink)">'+ic('x','w-4 h-4')+' KHÔNG ĐƯỢC</div>'+
+      U.list(N.taiLieu.cam, 'var(--gita-do)')+'</div></div>';
+
+  /* Quy trình */
+  o += U.sec('5 · ÁP VÀO QUY TRÌNH','Màu đi theo việc, không đi theo sở thích');
+  o += U.tbl(['Chặng','Màu dùng','Vì sao'], N.quyTrinh.map(function(q){
+    var hex = q.m.indexOf('--') === 0
+      ? getComputedStyle(document.documentElement).getPropertyValue(q.m).trim() : '';
+    return ['<b>'+h(q.b)+'</b>',
+      hex ? '<span class="nd-cham" style="--mc:'+hex+'"></span><span class="mono sm">'+h(q.m)+'</span>'
+          : '<span class="sm muted">'+h(q.m)+'</span>',
+      '<span class="sm">'+h(q.mo)+'</span>'];
+  }));
+
+  return o;
 };
 })();

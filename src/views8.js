@@ -124,10 +124,10 @@ function manThuVien(T){
     'Bài này không xếp loại ai — nó chỉ nói cho cả nhà biết mình đang đứng ở đâu, để gửi đúng lộ trình và đúng tài liệu.'});
 
   o += '<div class="grid g4 mb">'+
-    U.stat({k:'Bộ bài',   v:String(T.length),   d:'năm nhóm mỗi tầng', c:'#F5B942'})+
-    U.stat({k:'Câu hỏi',  v:String(soCau),      d:'mỗi câu bốn lựa chọn', c:'#8B5CF6'})+
-    U.stat({k:'Lựa chọn', v:String(soCau*4),    d:'đã quy ước mức điểm', c:'#06B6D4'})+
-    U.stat({k:'Đã làm',   v:String(xong),       d:'bài trong máy này', c:'#10B981'})+
+    U.stat({k:'Bộ bài',   v:String(T.length),   d:'năm nhóm mỗi tầng', c:'#2166CE'})+
+    U.stat({k:'Câu hỏi',  v:String(soCau),      d:'mỗi câu bốn lựa chọn', c:'#5140B4'})+
+    U.stat({k:'Lựa chọn', v:String(soCau*4),    d:'đã quy ước mức điểm', c:'#0B6675'})+
+    U.stat({k:'Đã làm',   v:String(xong),       d:'bài trong máy này', c:'#0B7350'})+
     '</div>';
 
   /* Quy ước bốn nhóm — lấy đúng từ bộ dữ liệu, không viết lại. */
@@ -140,7 +140,7 @@ function manThuVien(T){
       '<p class="tiny dim" style="line-height:1.6">'+h(n.meaning)+'</p></div>';
   }).join('') + '</div>';
 
-  o += '<div class="card mt2" style="border-color:rgba(245,185,66,.3)">'+
+  o += '<div class="card mt2" style="border-color:var(--gita-vien-1)">'+
     '<div class="row mb"><span style="color:var(--gold-ink)">'+ic('shield','w-4 h-4')+'</span><b>Ranh giới của bộ test</b></div>'+
     '<p class="sm dim" style="line-height:1.75">'+h(mau.gioiHan)+'</p></div>';
 
@@ -186,7 +186,7 @@ function manLamBai(b){
     '<span class="tiny muted">'+b.phut+' phút · trả lời theo bảy ngày gần nhất</span></div>'+
     U.bar(Math.round(da/tong*100), c)+'</div>';
 
-  o += '<div class="card mt" style="border-color:rgba(245,185,66,.25)">'+
+  o += '<div class="card mt" style="border-color:var(--gita-mo-3)">'+
     '<p class="sm dim" style="line-height:1.75">Chọn câu <b>đúng với thực tế</b>, không chọn câu nghe hay hơn. '+
     'Bài này không chấm điểm người — nó chỉ định vị điểm xuất phát. Chọn sai thì lộ trình gửi về cũng sai.</p></div>';
 
@@ -244,7 +244,7 @@ function manKetQua(b, kq){
   o += U.sec('ĐIỂM TỪNG MIỀN', 'Nhìn miền thấp nhất trước. Đó là nơi chạm đầu tiên, không phải chỗ để trách nhau.');
   o += '<div class="card">' + b.mien.map(function(m){
     var d = kq.mien[m];
-    var mc = d===null ? 'var(--ink-4)' : d<33 ? '#dc2626' : d<58 ? '#ea580c' : d<83 ? '#d97706' : '#059669';
+    var mc = d===null ? 'var(--ink-4)' : d<33 ? '#dc2626' : d<58 ? '#C2151C' : d<83 ? '#d97706' : '#0B7350';
     return '<div style="margin-bottom:13px">'+
       '<div class="row" style="justify-content:space-between;margin-bottom:5px">'+
       '<span class="sm">'+h(m)+'</span>'+
@@ -255,7 +255,7 @@ function manKetQua(b, kq){
   if(kq.canhBao && kq.canhBao.length){
     o += U.sec('CẢNH BÁO ĐÃ BẬT', 'Những mẫu này chỉ bật khi số liệu thật rơi vào ngưỡng — không bật vu vơ.');
     o += kq.canhBao.map(function(cb){
-      var sc = cb.severity==='high' ? '#dc2626' : cb.severity==='medium' ? '#ea580c' : '#d97706';
+      var sc = cb.severity==='high' ? '#dc2626' : cb.severity==='medium' ? '#C2151C' : '#d97706';
       return '<div class="card mb" style="border-color:'+sc+'44;background:'+sc+'0a">'+
         '<div class="row mb" style="gap:8px"><span style="color:'+sc+'">'+ic('pulse','w-4 h-4')+'</span>'+
         U.chip(cb.severity==='high'?'ƯU TIÊN CAO':cb.severity==='medium'?'CẦN THEO DÕI':'GHI NHẬN', sc)+'</div>'+
@@ -269,8 +269,8 @@ function manKetQua(b, kq){
       return (i+1)+'. '+m+' — đang ở '+kq.mien[m]+'/100';
     }), c)+'</div>';
   } else {
-    o += '<div class="card mt2" style="border-color:#05966944">'+
-      '<div class="row mb"><span style="color:#059669">'+ic('check','w-4 h-4')+'</span><b>Không miền nào dưới ngưỡng</b></div>'+
+    o += '<div class="card mt2" style="border-color:#0B735044">'+
+      '<div class="row mb"><span style="color:#0B7350">'+ic('check','w-4 h-4')+'</span><b>Không miền nào dưới ngưỡng</b></div>'+
       '<p class="sm dim">Giữ nguyên nhịp hiện tại làm nền và chuyển trọng tâm sang độ khó của nhiệm vụ.</p></div>';
   }
 
@@ -322,15 +322,15 @@ G.VIEWS['kpi-100'] = function(){
     lead:K.cot});
 
   o += '<div class="grid g4 mb">'+
-    U.stat({k:'Điểm mốc đã qua', v:qua+'/10',  d:'qua khi đạt 8/10 tiêu chí', c:'#F5B942'})+
-    U.stat({k:'Tiêu chí đã đạt', v:dat+'/100', d:'về đích tối thiểu 80', c:'#10B981'})+
-    U.stat({k:'Còn lại',         v:String(100-dat), d:'tiêu chí chưa tích', c:'#8B5CF6'})+
-    U.stat({k:'Tình trạng',      v:qua>=10?'VỀ ĐÍCH':'ĐANG ĐI', d:qua>=10?'đủ mười điểm mốc':'còn '+(10-qua)+' điểm mốc', c:qua>=10?'#059669':'#06B6D4'})+
+    U.stat({k:'Điểm mốc đã qua', v:qua+'/10',  d:'qua khi đạt 8/10 tiêu chí', c:'#2166CE'})+
+    U.stat({k:'Tiêu chí đã đạt', v:dat+'/100', d:'về đích tối thiểu 80', c:'#0B7350'})+
+    U.stat({k:'Còn lại',         v:String(100-dat), d:'tiêu chí chưa tích', c:'#5140B4'})+
+    U.stat({k:'Tình trạng',      v:qua>=10?'VỀ ĐÍCH':'ĐANG ĐI', d:qua>=10?'đủ mười điểm mốc':'còn '+(10-qua)+' điểm mốc', c:qua>=10?'#0B7350':'#0B6675'})+
     '</div>';
 
   o += '<div class="card mb"><div class="row" style="justify-content:space-between;margin-bottom:7px">'+
     '<b class="sm">Đường về đích</b><span class="tiny muted">'+dat+'/100 tiêu chí</span></div>'+
-    U.bar(dat, qua>=10?'#059669':'#F5B942')+
+    U.bar(dat, qua>=10?'#0B7350':'var(--gita)')+
     '<p class="tiny muted mt">'+h(K.cham)+'</p></div>';
 
   o += U.sec('MƯỜI ĐIỂM MỐC', 'Bấm vào từng tiêu chí để tích. Trạng thái lưu trong máy này.');
@@ -341,10 +341,10 @@ G.VIEWS['kpi-100'] = function(){
       '<div class="row wrap" style="gap:8px">'+
       U.chip('ĐIỂM '+d.no, d.c)+U.chip(d.tang)+
       '<b style="color:'+d.c+';font-size:15px">'+h(d.ten)+'</b></div>'+
-      '<span class="chip" style="color:'+(ok?'#059669':'var(--ink-4)')+';border-color:'+(ok?'#05966955':'var(--line)')+'">'+
+      '<span class="chip" style="color:'+(ok?'#0B7350':'var(--ink-4)')+';border-color:'+(ok?'#0B735055':'var(--line)')+'">'+
       (ok?'ĐÃ QUA':'')+' '+n+'/10</span></div>'+
       '<p class="sm dim" style="line-height:1.7;margin-bottom:10px">'+h(d.mo)+'</p>'+
-      U.bar(n*10, ok?'#059669':d.c)+
+      U.bar(n*10, ok?'#0B7350':d.c)+
       '<div style="display:flex;flex-direction:column;gap:6px;margin-top:11px">'+
       d.tc.map(function(t,i){
         var k = 'kpi-'+d.no+'-'+i, on = !!S[k];
@@ -357,7 +357,7 @@ G.VIEWS['kpi-100'] = function(){
   }).join('');
 
   o += U.sec('LUẬT CHẤM', 'Năm luật này không thương lượng.');
-  o += '<div class="card">'+U.list(K.luat, '#F5B942')+'</div>';
+  o += '<div class="card">'+U.list(K.luat, 'var(--gita)')+'</div>';
 
   o += '<div class="row wrap mt2" style="gap:8px">'+
     '<button class="btn ghost sm" data-v="bo-test">'+ic('target')+'Làm bộ test nhận diện</button>'+

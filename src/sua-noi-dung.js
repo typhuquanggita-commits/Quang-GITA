@@ -87,7 +87,7 @@ G.VIEWS['sua-hien-thi'] = function(){
     '<div class="pv-th"><b>'+daSua.length+'</b><span>ĐANG DÙNG BẢN SỬA</span></div>'+
     '<div class="pv-th"><b>'+(ds.length-daSua.length)+'</b><span>GIỮ BẢN GỐC</span></div></div>';
 
-  o += '<div class="card mt2 pad-sm" style="border-color:rgba(245,185,66,.3)">'+
+  o += '<div class="card mt2 pad-sm" style="border-color:var(--gita-vien-1)">'+
     '<p class="sm" style="line-height:1.7;color:var(--ink-2)">'+
     '<b>Ba điều nên biết:</b> sửa xong là thấy ngay, không phải dựng lại ứng dụng. '+
     'Bản gốc không bị ghi đè — xoá ô trống là chữ gốc quay lại. '+
