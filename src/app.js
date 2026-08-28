@@ -913,7 +913,8 @@ var GOI_NGHE = ['kho','phac-do','kich-ban','mo-thuc','sach','ngon-tu','tro-ly','
   'an-toan-du-lieu','hoc-tu-lon','tang-quyen','vong-doi-tk','hang-tai-lieu','dau-mat','dong-chay',
   'tinh-huong','bando-tuvan','bando-coach','van-ban','tai-chinh-qt','thanh-tra',
   'ra-soat-kh','xuat-du-lieu','quy-trinh-tc',
-  'referral','chan-dung-kh','do-luong-kh','hang-vip','cay-tien','nhan-su-tt'];
+  'referral','chan-dung-kh','do-luong-kh','hang-vip','cay-tien','nhan-su-tt',
+  'phuong-phap','van-tay','chuyen-doi','hoso-vip','ai-cham'];
 var GOI_MO = ['toi','bat-dau'];
 /* Bộ test nhận diện nằm trong gói theo tầng: khách hàng đã được cấp phép
    tầng nào thì làm được bài của tầng đó, không cần quyền nghề. */

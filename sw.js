@@ -3,7 +3,7 @@
    Cài một lần, dùng được cả khi mất mạng. Toàn bộ kho tri thức
    nằm trong máy — không cần đường truyền để mở bản đồ nhà mình.
    ═══════════════════════════════════════════════════════════════ */
-const CACHE = 'gita365-v7-3-0';
+const CACHE = 'gita365-v7-4-0';
 const FILES = [
   './', './index.html', './manifest.webmanifest',
   './assets/style.css', './kho/mau.json',
@@ -28,7 +28,7 @@ const FILES = [
   './assets/icons/icon-192.png', './assets/icons/icon-512.png', './assets/icons/maskable-512.png',
   './src/data.core.js', './src/i18n.js', './src/data.accounts.js',
   './src/ui.js', './src/kho-khoa.js', './src/guard.js',
-  './cau-hinh.js', './src/views.js', './src/views2.js', './src/views3.js', './src/views4.js', './src/views5.js', './src/views6.js', './src/views7.js', './src/views8.js', './src/views9.js',
+  './cau-hinh.js', './src/views.js', './src/views2.js', './src/views3.js', './src/views4.js', './src/views5.js', './src/views6.js', './src/views7.js', './src/views8.js', './src/views9.js', './src/views10.js',
   './src/app.js'
 ];
 
