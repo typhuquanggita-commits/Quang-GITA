@@ -53,14 +53,27 @@ for (let t = 1; t <= 5; t++)
     ['MATRAN_T' + t]: G['MATRAN_T' + t] || []
   };
 
-/* ─── Mã hoá ─── */
+/* ─── Mã hoá ───
+   Khoá được GIỮ NGUYÊN giữa các lần mã hoá lại. Đổi khoá là mọi giấy
+   phép đã cấp cho khách và cho đội ngũ đều hết dùng được ngay lập tức.
+   Muốn đổi khoá thật (khi nghi rò rỉ) thì chạy:  node tools/ma-hoa-kho.js --doi-khoa
+   rồi cấp lại giấy phép cho toàn bộ người đang dùng. */
 fs.mkdirSync(RA, { recursive: true });
+const doiKhoa = process.argv.includes('--doi-khoa');
+let khoaCu = {};
+if (!doiKhoa) {
+  try { khoaCu = JSON.parse(fs.readFileSync(path.join(RA, 'khoa.json'), 'utf8')).khoa || {}; }
+  catch { khoaCu = {}; }
+}
+if (doiKhoa) console.log('  ⚠ ĐỔI KHOÁ: mọi giấy phép đã cấp sẽ hết hiệu lực. Phải cấp lại toàn bộ.\n');
 const khoa = {};
 let tong = 0;
+let giu = 0;
 
 for (const [ten, du] of Object.entries(goi)) {
   const ro = Buffer.from(JSON.stringify(du), 'utf8');
-  const k = crypto.randomBytes(32);
+  const k = khoaCu[ten] ? Buffer.from(khoaCu[ten], 'base64') : crypto.randomBytes(32);
+  if (khoaCu[ten] && k.length === 32) giu++; else if (khoaCu[ten]) throw new Error('Khoá cũ của gói ' + ten + ' không đúng 32 byte.');
   const iv = crypto.randomBytes(12);
   const c = crypto.createCipheriv('aes-256-gcm', k, iv);
   const ma = Buffer.concat([c.update(ro), c.final()]);
@@ -112,4 +125,5 @@ fs.writeFileSync(path.join(RA, 'mau.json'), JSON.stringify(mau));
 
 console.log('\n  Tổng ' + Math.round(tong / 1024) + ' KB đã mã hoá · ' +
   Object.keys(khoa).length + ' gói · khoá ghi vào kho/khoa.json');
+console.log('  Giữ nguyên ' + giu + ' khoá cũ' + (giu ? ' — giấy phép đã cấp vẫn dùng được.' : '.'));
 console.log('  ⚠ kho/khoa.json và kho-goc/ đều nằm trong .gitignore — kiểm lại trước khi đẩy.');
