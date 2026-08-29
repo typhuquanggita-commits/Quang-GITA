@@ -143,6 +143,55 @@ They are not adequate for reporting a score anyone should act on.
 The machinery that replaces them ships with the platform, in
 `src/engine/calibration.ts`. What is missing is response data, not code.
 
+### Running one: the calibration console
+
+`#/calibration`, gated on `bank.publish` (head of programme, administrator).
+
+**It refuses to pretend.** There is no server, so the responses on any one
+device belong to one learner. MMLE integrates ability out over a population;
+given one examinee there is no population, and the estimator will still return
+numbers — precise to two decimals and meaningless. The readiness panel reports
+the evidence that exists and names why it is not a sample: fewer than 50
+examinees, no item at the 200-response acceptance floor, less than half the
+bank covered.
+
+**The path that works.** Collect a cohort's responses elsewhere and import the
+matrix:
+
+```json
+{
+  "itemIds": ["rw_ci_001", "ma_al_001"],
+  "rows": [[1, 0], [null, 1]],
+  "groups": [0, 1]
+}
+```
+
+The parser is strict. A malformed row coerced to nulls would calibrate without
+complaint and produce parameters describing a file rather than a cohort — a
+defect that reaches a score report before anyone notices. Row length, cell
+values, duplicate ids, and group-label length are all refused with the reason.
+
+**It runs in a worker.** MMLE-EM over 166 items and 400 examinees takes about
+twenty seconds here. On the main thread that is not a slow screen, it is a
+browser that has stopped answering — no scrolling, no cancel, no clock. The
+worker reports every EM iteration, so the console shows progress and delta and
+stays cancellable.
+
+**It reports what a reader has to check.** Convergence (a non-converged run is
+called out as unusable — the parameters were still moving when it stopped),
+accepted versus rejected with rejection reasons grouped by kind, per-item a,
+b, n, p-value, point-biserial, infit and outfit, and the mean–sigma linking
+constants against the shipped parameters. Only items clearing every threshold
+export.
+
+**DIF only where a group was actually declared.** The fairness screen runs when
+the import carries group labels and not otherwise. Inventing a split — on
+median ability, say — would produce a fairness report about a distinction
+nobody drew, which is worse than none.
+
+Gate logic tested in `tests/calibration-console.test.ts`; the estimator itself
+in `tests/calibration.test.ts`.
+
 ### The estimator
 
 Marginal maximum likelihood via the EM algorithm.

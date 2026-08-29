@@ -27,6 +27,7 @@ import {
   IconMenu,
   IconRefresh,
   IconSettings,
+  IconSigma,
   IconSparkle,
   IconTarget,
 } from '../../components/ui/icons.tsx';
@@ -77,6 +78,9 @@ const TeacherConsole = lazy(() =>
 );
 const StudentDetail = lazy(() =>
   import('../console/StudentDetail.tsx').then((m) => ({ default: m.StudentDetail })),
+);
+const CalibrationConsole = lazy(() =>
+  import('../calibration/CalibrationConsole.tsx').then((m) => ({ default: m.CalibrationConsole })),
 );
 const Settings = lazy(() =>
   import('../settings/Settings.tsx').then((m) => ({ default: m.Settings })),
@@ -205,6 +209,11 @@ function Shell(): React.ReactElement {
           route: { name: 'console' },
           label: locale === 'vi' ? 'Giảng dạy' : 'Teaching',
           icon: <IconClipboard size={18} />,
+        },
+        {
+          route: { name: 'calibration' },
+          label: locale === 'vi' ? 'Hiệu chuẩn' : 'Calibration',
+          icon: <IconSigma size={18} />,
         },
         { route: { name: 'settings' }, label: t('nav.settings'), icon: <IconSettings size={18} /> },
       ],
@@ -394,6 +403,8 @@ function RouteView({
       return <TeacherConsole navigate={navigate} />;
     case 'student':
       return <StudentDetail accountId={route.accountId} navigate={navigate} />;
+    case 'calibration':
+      return <CalibrationConsole />;
     case 'settings':
       return <Settings />;
     default:

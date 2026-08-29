@@ -279,6 +279,34 @@ try {
   await page.waitForTimeout(300);
   check('viewing it was audited', await page.getByText('student.record.viewed').first().isVisible());
 
+  /* ---------------- Calibration ---------------- */
+  group('Calibration console');
+  check(
+    'calibration is offered to a head of programme',
+    (await page.getByRole('button', { name: 'Hiệu chuẩn', exact: true }).count()) === 1,
+  );
+  await page.getByRole('button', { name: 'Hiệu chuẩn', exact: true }).first().click();
+  await page.waitForTimeout(600);
+  check('the console opens', (await title()).includes('Hiệu chuẩn ngân hàng'));
+  // One learner is not a population, and the console has to say so rather than
+  // calibrating anyway and returning confident, meaningless numbers.
+  check(
+    'local data is declared unusable',
+    (await page.getByText(/không có quần thể/).count()) >= 1,
+  );
+  await page.getByRole('tab', { name: 'Chạy hiệu chuẩn' }).click();
+  await page.waitForTimeout(300);
+  check(
+    'a run cannot start without an imported matrix',
+    (await page.getByText(/Chưa có ma trận nào được nhập/).count()) === 1,
+  );
+  await page.getByRole('tab', { name: 'Công bằng (DIF)' }).click();
+  await page.waitForTimeout(300);
+  check(
+    'DIF is not invented from an unlabelled cohort',
+    (await page.getByText(/Cần nhãn nhóm trong tệp nhập/).count()) === 1,
+  );
+
   await page.evaluate(() => { window.location.hash = '#/settings'; });
   await page.waitForTimeout(400);
   await page.locator('select').first().selectOption('student');

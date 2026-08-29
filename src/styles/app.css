@@ -655,3 +655,20 @@ mark.hl[data-note='true'] { border-bottom: 2px dotted currentColor; cursor: poin
 }
 .lesson-trap-name { font-weight: var(--weight-semibold); }
 .lesson-trap-why { font-size: var(--text-sm); line-height: var(--leading-normal); }
+
+/* ================================================================== */
+/* Calibration console                                                 */
+/* ================================================================== */
+
+.code-block {
+  margin: 0;
+  padding: var(--space-3);
+  border-radius: var(--radius-md);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  overflow-x: auto;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: var(--text-xs);
+  line-height: var(--leading-normal);
+  white-space: pre;
+}

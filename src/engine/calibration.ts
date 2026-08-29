@@ -48,6 +48,12 @@ export interface CalibrationOptions {
   /** Bounds keep a poorly-determined item from running away. */
   aBounds?: [number, number];
   bBounds?: [number, number];
+  /**
+   * Called after each EM iteration. A calibration over a real bank takes tens
+   * of seconds, so the caller needs to be able to show that it is working
+   * rather than hung — and, off the main thread, to report how far along.
+   */
+  onIteration?(progress: { iteration: number; delta: number; maxIterations: number }): void;
 }
 
 export interface ItemCalibration {
@@ -140,6 +146,7 @@ export function calibrate(
     tolerance = 1e-4,
     aBounds = [0.2, 4],
     bBounds = [-5, 5],
+    onIteration,
   } = options;
 
   const { nodes, weights } = quadrature(nodeCount, range);
@@ -206,6 +213,8 @@ export function calibrate(
       delta = Math.max(delta, Math.abs(after.a - before.a), Math.abs(after.b - before.b));
       params[j] = after;
     }
+
+    onIteration?.({ iteration: iterations + 1, delta, maxIterations });
   }
 
   /* ---- Ability estimates under the final parameters ---- */

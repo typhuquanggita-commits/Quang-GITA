@@ -26,6 +26,7 @@ export type Route =
   | { name: 'analytics' }
   | { name: 'console' }
   | { name: 'student'; accountId: string }
+  | { name: 'calibration' }
   | { name: 'settings' };
 
 export type RouteName = Route['name'];
@@ -46,6 +47,7 @@ export const ROUTE_PERMISSION: Partial<Record<RouteName, Permission>> = {
   analytics: 'analytics.own',
   console: 'roster.view',
   student: 'student.analytics.view',
+  calibration: 'bank.publish',
 };
 
 export function routeToHash(route: Route): string {
@@ -98,6 +100,8 @@ export function hashToRoute(hash: string): Route {
       return { name: 'console' };
     case 'student':
       return param ? { name: 'student', accountId: param } : { name: 'console' };
+    case 'calibration':
+      return { name: 'calibration' };
     case 'settings':
       return { name: 'settings' };
     default:
