@@ -46,6 +46,8 @@ import {
 } from '../../components/ui/icons.tsx';
 import { formatClock, formatDate, isoDate } from '../../lib/util.ts';
 import { SHEET_META } from './sheetMeta.ts';
+import { tacticsForSkill } from '../../data/tactics.ts';
+import { TacticCard } from '../tactics/TacticLibrary.tsx';
 import { DocumentFrame, type PillarId } from '../../brand/DocumentFrame.tsx';
 import type { Route } from '../shell/routes.ts';
 
@@ -301,6 +303,7 @@ function MethodSheet({ packet, locale }: { packet: Packet; locale: 'vi' | 'en' }
   const vi = locale === 'vi';
   const { lesson } = packet;
   const worked = lesson.worked;
+  const tactics = tacticsForSkill(packet.skill, packet.section);
 
   return (
     <div className="stack gap-5">
@@ -343,6 +346,28 @@ function MethodSheet({ packet, locale }: { packet: Packet; locale: 'vi' | 'en' }
           ))}
         </ul>
       </Card>
+
+      {/*
+        The tactics that pay best on this topic, at the point of use. A
+        treasury a learner has to remember to visit is a treasury they visit
+        once; the same entries beside the method are the ones they use.
+      */}
+      {tactics.length > 0 && (
+        <Card
+          title={vi ? 'Bí kíp dùng được cho chuyên đề này' : 'Tactics that pay on this topic'}
+          subtitle={
+            vi
+              ? 'Những nước đi này dùng được ở nhiều chuyên đề khác nữa — xem toàn bộ trong Kho bí kíp.'
+              : 'These moves transfer to other topics as well — the full set is in the tactics treasury.'
+          }
+        >
+          <div className="stack gap-4">
+            {tactics.slice(0, 3).map((tactic) => (
+              <TacticCard key={tactic.id} tactic={tactic} locale={locale} />
+            ))}
+          </div>
+        </Card>
+      )}
     </div>
   );
 }

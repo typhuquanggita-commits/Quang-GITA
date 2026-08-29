@@ -205,6 +205,47 @@ try {
   await page.locator('input[type="search"]').fill('');
   await page.waitForTimeout(350);
 
+  /* ---------------- Tactics and papers ---------------- */
+  group('Tactics treasury');
+  await page.getByRole('button', { name: 'Kho bí kíp', exact: true }).first().click();
+  await page.waitForTimeout(600);
+  check('the treasury opens', (await title()).includes('Kho bí kíp'));
+  const tacticCards = await page.locator('.tactic-card').count();
+  check('tactics are listed', tacticCards >= 10, `${tacticCards}`);
+  // A tactic without its cost is a slogan, so every card must carry one.
+  const triggers = await page.locator('.tactic-trigger').count();
+  const costs = await page.locator('.tactic-cost').count();
+  check('every tactic states when to use it and what it costs', triggers === tacticCards && costs === tacticCards, `${triggers}/${costs}/${tacticCards}`);
+
+  group('Published papers');
+  await page.getByRole('button', { name: 'Bộ đề công bố', exact: true }).first().click();
+  await page.waitForTimeout(600);
+  check('the paper library opens', (await title()).includes('Bộ đề công bố'));
+  check('papers are listed', (await page.locator('.lesson-row').count()) >= 5);
+
+  await page.locator('.lesson-row').first().click();
+  await page.waitForTimeout(700);
+  check('a paper opens on its question paper', (await page.locator('.sheet-question').count()) > 40);
+  check(
+    'the three documents are not to be handed out together',
+    (await page.getByText(/không phát cùng nhau/).count()) === 1,
+  );
+  check('the paper carries a document frame', (await page.locator('.doc-masthead').count()) >= 1);
+
+  await page.getByRole('tab', { name: 'Barem' }).click();
+  await page.waitForTimeout(500);
+  const schemeRows = await page.locator('.scheme-table tbody tr').count();
+  check('the mark scheme covers every raw score', schemeRows === 51 + 41, `${schemeRows}`);
+  // The flat ends of the curve are bounds, not points.
+  check(
+    'the unidentifiable extremes are marked as bounds',
+    (await page.locator('.scheme-table tbody tr[data-bounded]').count()) >= 2,
+  );
+
+  await page.getByRole('tab', { name: 'Lời giải' }).click();
+  await page.waitForTimeout(600);
+  check('the solutions carry explanations', (await page.locator('.explain').count()) > 40);
+
   /* ---------------- Topic packets ---------------- */
   group('Topic packets');
   await page.getByRole('button', { name: 'Bộ phiếu', exact: true }).first().click();
@@ -267,6 +308,21 @@ try {
   await page.waitForTimeout(400);
   check('arenas are gated at tier 1', (await page.getByText(/Mở ở tầng/).count()) >= 2);
   check('the coach playbook is hidden from a student', (await page.getByRole('tab', { name: 'Sổ tay coach' }).count()) === 0);
+
+  /* ---------------- Document identity ---------------- */
+  group('Document identity');
+  await page.evaluate(() => { window.location.hash = '#/brand'; });
+  await page.waitForTimeout(600);
+  check('the identity page opens', (await title()).includes('Nhận diện'));
+  check('the mark renders in three treatments', (await page.locator('.brand-swatch-block').count()) === 3);
+  check('the four pillars are shown', (await page.locator('.pillar-swatch').count()) === 4);
+  // The contrast figures are recomputed, so a colour that fails for text must
+  // be shown as failing rather than quietly listed.
+  check(
+    'contrast is reported rather than claimed',
+    (await page.getByText(/không đủ cho chữ/).count()) >= 1,
+  );
+  check('the document frame is demonstrated', (await page.locator('.doc-limits').count()) >= 1);
 
   /* ---------------- Access control ---------------- */
   group('Access control');

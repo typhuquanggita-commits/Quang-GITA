@@ -10,6 +10,7 @@ import { BANK, bankStats } from '../src/data/bank.ts';
 import { DOMAINS, SECTION_SPEC } from '../src/data/blueprint.ts';
 import { sprToNumber } from '../src/engine/scoring.ts';
 import { LESSONS, TOPICS } from '../src/data/lesson-index.ts';
+import { TACTICS } from '../src/data/tactics.ts';
 
 const problems: string[] = [];
 const seen = new Set<string>();
@@ -125,6 +126,32 @@ for (const skill of topicSkills) {
   if (!skillIds.has(skill)) problems.push(`topics: topic data for unknown skill "${skill}"`);
 }
 
+/*
+ * Tactics: a tactic without its cost is a slogan.
+ *
+ * The costs field is what separates this treasury from a list of tips, and it
+ * is the field most likely to be left thin when a new entry is added in a
+ * hurry. So it is checked rather than trusted.
+ */
+for (const tactic of TACTICS) {
+  const where = `tactic ${tactic.id}`;
+  if (tactic.costs.trim().length < 60) problems.push(`${where}: costs field too thin to be a real caveat`);
+  if (tactic.costsVi.trim().length < 40) problems.push(`${where}: no Vietnamese costs field`);
+  if (tactic.move.length < 2) problems.push(`${where}: a single step is not a method`);
+  if (tactic.move.length !== tactic.moveVi.length) problems.push(`${where}: the two languages give different steps`);
+  if (tactic.demo.working.length !== tactic.demo.workingVi.length) {
+    problems.push(`${where}: the worked demo differs between languages`);
+  }
+  if (tactic.sections.length === 0) problems.push(`${where}: applies to no section`);
+  for (const skill of tactic.skills) {
+    if (!skillIds.has(skill)) problems.push(`${where}: names unknown skill "${skill}"`);
+  }
+}
+
+const tacticIds = new Set(TACTICS.map((t) => t.id));
+if (tacticIds.size !== TACTICS.length) problems.push('tactics: duplicate id');
+
+console.log(`Tactics: ${TACTICS.length} across ${new Set(TACTICS.map((t) => t.family)).size} families`);
 console.log(`Lessons: ${LESSONS.length} for ${skillIds.size} skills`);
 console.log(`Topics:  ${TOPICS.length} with ${TOPICS.reduce((n, t) => n + t.types.length, 0)} question types`);
 console.log(`Bank: ${stats.total} items (${stats.bySection.rw} R&W, ${stats.bySection.math} Math)`);

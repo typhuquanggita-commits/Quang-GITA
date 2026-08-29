@@ -895,3 +895,77 @@ mark.hl[data-note='true'] { border-bottom: 2px dotted currentColor; cursor: poin
 }
 .pillar-name { font-weight: var(--weight-semibold); }
 .pillar-role { font-size: var(--text-sm); color: var(--text-muted); line-height: var(--leading-normal); }
+
+/* ================================================================== */
+/* Tactics treasury                                                    */
+/* ================================================================== */
+
+.tactic-family {
+  margin: 0;
+  font-size: var(--text-lg);
+  letter-spacing: -0.01em;
+  padding-bottom: var(--space-2);
+  border-bottom: 2px solid var(--border);
+}
+
+.tactic-trigger,
+.tactic-cost {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--space-3);
+  align-items: start;
+  padding: var(--space-3);
+  border-radius: var(--radius-md);
+  line-height: var(--leading-normal);
+}
+.tactic-trigger { background: var(--primary-soft); color: var(--primary-soft-text); }
+.tactic-cost { background: var(--warning-soft); color: var(--warning); }
+.tactic-trigger p,
+.tactic-cost p { margin-top: 2px; max-width: 66ch; }
+
+.tactic-heading {
+  margin: 0 0 var(--space-2);
+  font-size: var(--text-2xs);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+.tactic-demo {
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+}
+
+.tactic-skill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px var(--space-2);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  font-size: var(--text-xs);
+  cursor: pointer;
+}
+.tactic-skill:hover:not(:disabled) { border-color: var(--primary); }
+.tactic-skill:disabled { cursor: default; }
+
+/* ================================================================== */
+/* Published papers                                                    */
+/* ================================================================== */
+
+.paper-section-head {
+  margin: 0;
+  padding-bottom: var(--space-2);
+  border-bottom: 2px solid var(--border);
+  font-size: var(--text-lg);
+}
+
+/* A mark scheme is read by finding a row, so the rows have to be scannable. */
+.scheme-table td { font-variant-numeric: tabular-nums; }
+.scheme-table tbody tr:nth-child(even) { background: var(--surface-2); }
+/* Bounded rows are the flat ends of the curve, where a raw score does not
+   identify an ability. Marked so a marker does not read them as points. */
+.scheme-table tbody tr[data-bounded] { color: var(--text-muted); font-style: italic; }

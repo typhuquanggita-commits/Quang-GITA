@@ -86,6 +86,15 @@ const TeacherConsole = lazy(() =>
 const StudentDetail = lazy(() =>
   import('../console/StudentDetail.tsx').then((m) => ({ default: m.StudentDetail })),
 );
+const PaperLibrary = lazy(() =>
+  import('../papers/PaperLibrary.tsx').then((m) => ({ default: m.PaperLibrary })),
+);
+const PaperView = lazy(() =>
+  import('../papers/PaperView.tsx').then((m) => ({ default: m.PaperView })),
+);
+const TacticLibrary = lazy(() =>
+  import('../tactics/TacticLibrary.tsx').then((m) => ({ default: m.TacticLibrary })),
+);
 const TopicLibrary = lazy(() =>
   import('../packets/TopicLibrary.tsx').then((m) => ({ default: m.TopicLibrary })),
 );
@@ -212,6 +221,11 @@ function Shell(): React.ReactElement {
           label: locale === 'vi' ? 'Bộ phiếu' : 'Packets',
           icon: <IconClipboard size={18} />,
         },
+        {
+          route: { name: 'tactics' },
+          label: locale === 'vi' ? 'Kho bí kíp' : 'Tactics',
+          icon: <IconLightning size={18} />,
+        },
         { route: { name: 'plan' }, label: t('nav.plan'), icon: <IconCalendar size={18} /> },
         { route: { name: 'gita' }, label: t('nav.gita'), icon: <IconSparkle size={18} /> },
       ],
@@ -220,6 +234,11 @@ function Shell(): React.ReactElement {
       label: t('nav.assess'),
       items: [
         { route: { name: 'tests' }, label: t('nav.tests'), icon: <IconTarget size={18} /> },
+        {
+          route: { name: 'papers' },
+          label: locale === 'vi' ? 'Bộ đề công bố' : 'Papers',
+          icon: <IconClipboard size={18} />,
+        },
         {
           route: { name: 'review' },
           label: t('nav.review'),
@@ -432,6 +451,12 @@ function RouteView({
       return <LessonView skill={route.skill} navigate={navigate} />;
     case 'topics':
       return <TopicLibrary navigate={navigate} />;
+    case 'tactics':
+      return <TacticLibrary navigate={navigate} />;
+    case 'papers':
+      return <PaperLibrary navigate={navigate} />;
+    case 'paper':
+      return <PaperView paperId={route.paperId} navigate={navigate} />;
     case 'packet':
       return <PacketView skill={route.skill} navigate={navigate} />;
     case 'plan':

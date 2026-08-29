@@ -201,6 +201,64 @@ export interface AssembleFormOptions {
  * candidate second-stage modules — so routing at run time is instantaneous
  * and the unchosen pathway is simply never delivered.
  */
+/**
+ * A linear form: one routing-difficulty module and one blended second module
+ * per section, with no pathway split.
+ *
+ * `assembleForm` builds both stage-2 pathways, because an adaptive delivery
+ * chooses between them at run time and a candidate sees exactly one. A printed
+ * paper cannot do that — there is no second module to choose, so all of them
+ * would be printed, and an item appearing in both pathways would be asked
+ * twice of the same person. A test caught exactly that before these papers
+ * shipped.
+ *
+ * So a published paper gets its own assembly: two modules a section, both at
+ * the routing target, drawn without reuse across the whole paper. It measures
+ * a little less precisely than the adaptive delivery — the second module
+ * cannot narrow in on the candidate — and in exchange it is a sheet of paper.
+ */
+export function assembleLinearForm(options: AssembleFormOptions): TestForm {
+  const { scope, bank, label } = options;
+  const seed = options.seed ?? hashString(`${label}:linear`);
+  const rng = makeRng(seed);
+  const formId = `paper_${seed.toString(36)}`;
+
+  const sections: SectionId[] = scope === 'full' ? ['rw', 'math'] : [scope];
+  const modules: TestModule[] = [];
+  // One exclusion set for the whole paper, so nothing repeats anywhere in it.
+  const used = new Set<string>();
+
+  for (const section of sections) {
+    const spec = SECTION_SPEC[section];
+
+    for (const stage of [1, 2] as const) {
+      const items = assembleModuleItems({
+        section,
+        pathway: 'routing',
+        count: spec.questionsPerModule,
+        exclude: used,
+        bank,
+        rng,
+      });
+      for (const item of items) used.add(item.id);
+
+      const pretestIds = items.slice(-spec.pretestPerModule).map((q) => q.id);
+      modules.push({
+        id: `${formId}_${section}_${stage}`,
+        section,
+        stage,
+        // 'routing' throughout: a linear paper has no pathways to route to.
+        pathway: 'routing',
+        durationSeconds: spec.moduleSeconds,
+        questionIds: items.map((q) => q.id),
+        pretestIds,
+      });
+    }
+  }
+
+  return { id: formId, label, createdAt: 0, modules, breakSeconds: scope === 'full' ? 600 : 0 };
+}
+
 export function assembleForm(options: AssembleFormOptions): TestForm {
   const { scope, bank, label, diagnostic = false } = options;
   const seed = options.seed ?? hashString(`${label}:${Date.now()}`);

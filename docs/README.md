@@ -15,6 +15,7 @@ that is a defect in this index — please fix it rather than working around it.
 | [PACKETS.md](PACKETS.md) | What are the seven sheets per topic, and how is a packet assembled honestly from a thin bank? | Teachers, item writers, engineers |
 | [AUTOPILOT.md](AUTOPILOT.md) | How does the automated coach decide, and how do I audit a decision it made? | Coaches, engineers |
 | [SOLUTIONS.md](SOLUTIONS.md) | After a test, what does a learner see, and how is their personalised route derived? | Learners, coaches, engineers |
+| [PAPERS.md](PAPERS.md) | How are published papers, mark schemes, tactics, and the document identity built? | Programme leads, invigilators, designers |
 
 ## Platform
 
