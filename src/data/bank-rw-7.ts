@@ -1,0 +1,438 @@
+/**
+ * Reading and Writing item bank — Inferences.
+ *
+ * The distinction this skill lives or dies on: an inference is *forced* by the
+ * text, never merely consistent with it. So every item here carries at least
+ * one distractor that is entirely reasonable, probably true in the world, and
+ * not established by the passage. That option is the item. A student who can
+ * reject it has the skill; one who cannot has been rewarded for general
+ * knowledge, which is the opposite of what is being measured.
+ */
+
+import type { Question } from '../types.ts';
+
+export const RW_BANK_7: Question[] = [
+  /* ================= Easy ================= */
+  {
+    id: 'rw_inf_101', section: 'rw', domain: 'information-ideas', skill: 'inferences',
+    format: 'mcq', band: 'easy', irt: { a: 1.02, b: -1.1 }, targetSeconds: 64,
+    stimulus: { text: 'The seeds of the Australian mountain ash will not germinate unless the surrounding soil has been heated past a threshold that only fire reaches. Stands of the tree are therefore all one age: every individual in a grove dates from the same burn. A grove with trees of mixed ages would indicate that _______' },
+    prompt: 'Which choice most logically completes the text?',
+    choices: [
+      { id: 'A', text: 'more than one fire had passed through it.' },
+      { id: 'B', text: 'the trees had been planted rather than seeded naturally.' },
+      { id: 'C', text: 'the soil there retains heat longer than elsewhere.' },
+      { id: 'D', text: 'mountain ash grows more slowly in that location.' },
+    ],
+    answer: 'A',
+    explanation: 'The passage establishes one rule: germination requires a fire, so one fire produces one age class. Mixed ages therefore require more than one germination event, which means more than one fire. That is forced by the stated rule; nothing else in the options is.',
+    distractorNotes: {
+      B: 'Plausible in the world and not derivable here — the passage says nothing about planting, and a planted grove would still need heat to germinate by the rule given.',
+      C: 'Heat retention would not create a second age class; the rule concerns whether the threshold is reached, not for how long.',
+      D: 'Growth rate affects size, not age. The passage ties age to the timing of germination.',
+    },
+  },
+  {
+    id: 'rw_inf_102', section: 'rw', domain: 'information-ideas', skill: 'inferences',
+    format: 'mcq', band: 'easy', irt: { a: 1.0, b: -1.0 }, targetSeconds: 64,
+    stimulus: { text: 'Medieval scribes copying manuscripts sometimes reproduced a predecessor’s error along with the text, and occasionally introduced one of their own. Scholars use these shared errors to group surviving copies: two manuscripts carrying the same unusual mistake are unlikely to have arrived at it independently. It follows that such a pair _______' },
+    prompt: 'Which choice most logically completes the text?',
+    choices: [
+      { id: 'A', text: 'descends from a common source that already contained the error.' },
+      { id: 'B', text: 'was produced by the same scribe working in two sittings.' },
+      { id: 'C', text: 'is older than manuscripts that do not contain the error.' },
+      { id: 'D', text: 'was copied more carelessly than other surviving manuscripts.' },
+    ],
+    answer: 'A',
+    explanation: 'The passage states that errors are inherited by copying and that independent arrival at the same unusual mistake is unlikely. The only remaining route is a shared ancestor already carrying it. That is what the reasoning forces.',
+    distractorNotes: {
+      B: 'A single scribe is one way to share an error but not the one the passage sets up, and it does not follow from "unlikely to be independent".',
+      C: 'Carrying an inherited error says nothing about age — a late copy inherits it as readily as an early one.',
+      D: 'One shared error does not establish comparative carelessness, and the passage attributes it to inheritance rather than to care.',
+    },
+  },
+  {
+    id: 'rw_inf_103', section: 'rw', domain: 'information-ideas', skill: 'inferences',
+    format: 'mcq', band: 'easy', irt: { a: 1.05, b: -0.95 }, targetSeconds: 65,
+    stimulus: { text: 'The pitcher plant Nepenthes lowii produces almost no digestive fluid. Its pitchers are shaped so that a tree shrew feeding at the nectar gland on the lid sits directly above the opening, and analysis of the pitcher contents finds them composed largely of shrew droppings rather than insect remains. For this species, the pitcher functions primarily as _______' },
+    prompt: 'Which choice most logically completes the text?',
+    choices: [
+      { id: 'A', text: 'a collector of nutrients deposited by a visiting animal.' },
+      { id: 'B', text: 'a trap that drowns insects more efficiently than related species.' },
+      { id: 'C', text: 'a store of water for use during dry periods.' },
+      { id: 'D', text: 'a defence against animals that would otherwise eat the plant.' },
+    ],
+    answer: 'A',
+    explanation: 'Three facts point one way: almost no digestive fluid, a shape that positions a shrew over the opening, and contents that are droppings rather than insects. Together they force the collecting function and rule out digestion of prey.',
+    distractorNotes: {
+      B: 'Contradicted twice over — there is almost no fluid to drown anything in, and the contents are not insect remains.',
+      C: 'Water storage is never mentioned, and the near-absence of fluid points away from it.',
+      D: 'The shrew is accommodated rather than repelled; the shape invites it to sit there.',
+    },
+  },
+  {
+    id: 'rw_inf_104', section: 'rw', domain: 'information-ideas', skill: 'inferences',
+    format: 'mcq', band: 'easy', irt: { a: 1.0, b: -0.88 }, targetSeconds: 65,
+    stimulus: { text: 'Every letter Emily Dickinson sent after 1862 that survives in her own hand uses the dash where a comma would be conventional. The poems copied out by her sister after her death regularise this punctuation into commas and full stops. A reader working only from those transcriptions would therefore _______' },
+    prompt: 'Which choice most logically completes the text?',
+    choices: [
+      { id: 'A', text: 'be unable to see a feature present throughout the original documents.' },
+      { id: 'B', text: 'find the poems more difficult to interpret than the letters.' },
+      { id: 'C', text: 'conclude that Dickinson wrote very few letters after 1862.' },
+      { id: 'D', text: 'have access to more poems than a reader of the manuscripts.' },
+    ],
+    answer: 'A',
+    explanation: 'The dash is stated to be present throughout the surviving originals and removed in the transcriptions. A reader with only the transcriptions therefore cannot see it. That is the direct consequence of the two stated facts.',
+    distractorNotes: {
+      B: 'Regularised punctuation would if anything read more easily; the passage makes no comparison of difficulty.',
+      C: 'Nothing about the number of letters follows from how they are punctuated.',
+      D: 'The number of poems available is never discussed — only how they were punctuated.',
+    },
+  },
+  {
+    id: 'rw_inf_105', section: 'rw', domain: 'information-ideas', skill: 'inferences',
+    format: 'mcq', band: 'easy', irt: { a: 1.02, b: -0.8 }, targetSeconds: 66,
+    stimulus: { text: 'Radiocarbon dating measures the decay of an isotope that organisms stop taking in at death. Because the method depends on that intake ceasing, it can date a wooden beam but not the stone wall the beam supports. An archaeologist who dates a beam and reports the result as the date of the building is therefore assuming that _______' },
+    prompt: 'Which choice most logically completes the text?',
+    choices: [
+      { id: 'A', text: 'the timber was felled at about the time the building was constructed.' },
+      { id: 'B', text: 'the stone and the timber came from the same region.' },
+      { id: 'C', text: 'radiocarbon dating is more accurate for wood than for other materials.' },
+      { id: 'D', text: 'the building was never repaired after its original construction.' },
+    ],
+    answer: 'A',
+    explanation: 'The measurement dates the death of the tree. Reporting it as the date of the building requires the extra assumption that felling and building were close in time — reused or long-stored timber would break the inference.',
+    distractorNotes: {
+      B: 'Geographic origin has no bearing on when the tree died relative to construction.',
+      C: 'Relative accuracy is not at issue; the passage says stone cannot be dated by this method at all, which is a different point.',
+      D: 'A tempting near-miss: repair would matter, but the assumption needed is about felling and construction being contemporaneous, which covers original timber too.',
+    },
+  },
+  {
+    id: 'rw_inf_106', section: 'rw', domain: 'information-ideas', skill: 'inferences',
+    format: 'mcq', band: 'easy', irt: { a: 1.05, b: -0.75 }, targetSeconds: 66,
+    stimulus: { text: 'A pilot programme paid residents of one district to compost household waste and measured a fall in the district’s landfill tonnage. Residents had to register to take part, and about one household in six did. Any estimate of what the scheme would achieve if extended to the whole city must account for the fact that _______' },
+    prompt: 'Which choice most logically completes the text?',
+    choices: [
+      { id: 'A', text: 'the households that registered may differ from those that did not.' },
+      { id: 'B', text: 'landfill tonnage is measured less accurately in larger districts.' },
+      { id: 'C', text: 'composting reduces waste more in some seasons than in others.' },
+      { id: 'D', text: 'the payment offered would need to be larger in a citywide scheme.' },
+    ],
+    answer: 'A',
+    explanation: 'Participation was voluntary, so the one-in-six who registered were self-selected. Extending the result to everyone assumes the other five are like them, and the passage supplies exactly the fact — registration — that puts that in doubt.',
+    distractorNotes: {
+      B: 'Measurement accuracy by district size is never mentioned and does not follow from anything stated.',
+      C: 'Seasonal variation is outside the text; the passage gives no time information.',
+      D: 'A plausible policy point, not something the passage establishes.',
+    },
+  },
+  {
+    id: 'rw_inf_107', section: 'rw', domain: 'information-ideas', skill: 'inferences',
+    format: 'mcq', band: 'easy', irt: { a: 1.0, b: -0.7 }, targetSeconds: 66,
+    stimulus: { text: 'The Andean condor can remain airborne for hours while flapping for only about one percent of its flight time. Trackers fitted to wild birds record almost all of the flapping in the seconds after take-off. The energetic cost of a condor’s day is therefore determined largely by _______' },
+    prompt: 'Which choice most logically completes the text?',
+    choices: [
+      { id: 'A', text: 'how often it lands and takes off again.' },
+      { id: 'B', text: 'the total distance it covers in the air.' },
+      { id: 'C', text: 'the altitude at which it chooses to soar.' },
+      { id: 'D', text: 'the weight of the food it carries in flight.' },
+    ],
+    answer: 'A',
+    explanation: 'Flapping is the expensive act, and the trackers place almost all of it immediately after take-off. The number of take-offs therefore drives the cost — which is what the two facts jointly force.',
+    distractorNotes: {
+      B: 'Distance is covered by soaring, which the passage identifies as the cheap ninety-nine percent.',
+      C: 'Altitude is never linked to cost anywhere in the text.',
+      D: 'Carried weight is outside the passage entirely.',
+    },
+  },
+  {
+    id: 'rw_inf_108', section: 'rw', domain: 'information-ideas', skill: 'inferences',
+    format: 'mcq', band: 'easy', irt: { a: 1.05, b: -0.62 }, targetSeconds: 67,
+    stimulus: { text: 'The Venetian glassmakers of Murano were forbidden on pain of severe penalty to leave the republic, and the ban was enforced for three centuries. Historians note that the technique for producing clear cristallo appears in no other European centre until the 1600s. The length of that gap is usually taken as evidence that _______' },
+    prompt: 'Which choice most logically completes the text?',
+    choices: [
+      { id: 'A', text: 'the restriction on movement was effective at keeping the method contained.' },
+      { id: 'B', text: 'no glassmaker outside Venice was capable of developing the method.' },
+      { id: 'C', text: 'the penalties described were rarely actually imposed.' },
+      { id: 'D', text: 'cristallo was of little commercial interest elsewhere in Europe.' },
+    ],
+    answer: 'A',
+    explanation: 'The passage pairs an enforced ban on movement with a three-century absence of the technique elsewhere and says the gap is taken as evidence. What it is evidence *of* is that the containment worked — the mechanism the passage has just described.',
+    distractorNotes: {
+      B: 'Overstates into a claim about capability. The passage offers a restriction on people, not a limit on ability.',
+      C: 'The passage says the ban was enforced, so rare imposition contradicts it.',
+      D: 'Lack of interest would make the ban unnecessary; the passage’s framing implies the opposite.',
+    },
+  },
+
+  /* ================= Medium ================= */
+  {
+    id: 'rw_inf_109', section: 'rw', domain: 'information-ideas', skill: 'inferences',
+    format: 'mcq', band: 'medium', irt: { a: 1.15, b: -0.05 }, targetSeconds: 74,
+    stimulus: { text: 'A study of restaurant reviews found that ratings written on mobile phones are systematically lower than those written on desktop computers, and that the gap persists after controlling for the restaurant, the reviewer, and the time of day. The researchers suggest the difference lies in the effort of composition rather than in the experience being described. If they are right, the same pattern should appear _______' },
+    prompt: 'Which choice most logically completes the text?',
+    choices: [
+      { id: 'A', text: 'in reviews of products the reviewer never physically visited.' },
+      { id: 'B', text: 'only in reviews written immediately after the meal.' },
+      { id: 'C', text: 'in restaurants that receive few reviews of any kind.' },
+      { id: 'D', text: 'among reviewers who rarely use mobile phones.' },
+    ],
+    answer: 'A',
+    explanation: 'The hypothesis locates the cause in the effort of typing, not in the experience. A prediction that tests it must hold the experience constant or remove it — reviews of products never visited do exactly that, so the pattern should persist if composition is the driver.',
+    distractorNotes: {
+      B: 'Time of day was already controlled, and immediacy concerns the experience rather than composition.',
+      C: 'Review volume is unrelated to the effort of writing any single review.',
+      D: 'Infrequent phone users are a subgroup, not a test of whether the cause is composition.',
+    },
+  },
+  {
+    id: 'rw_inf_110', section: 'rw', domain: 'information-ideas', skill: 'inferences',
+    format: 'mcq', band: 'medium', irt: { a: 1.18, b: 0.05 }, targetSeconds: 75,
+    stimulus: { text: 'Coral polyps expel their symbiotic algae under heat stress, and a bleached colony is not dead: it can recover if the water cools before its reserves are exhausted. Surveys of a reef bleached in two successive years found lower mortality in the second event than in the first among colonies that had survived the first. This suggests that surviving one bleaching _______' },
+    prompt: 'Which choice most logically completes the text?',
+    choices: [
+      { id: 'A', text: 'selects for or confers some tolerance of the next.' },
+      { id: 'B', text: 'exhausts a colony’s reserves and leaves it more vulnerable.' },
+      { id: 'C', text: 'has no bearing on how a colony responds to later heat stress.' },
+      { id: 'D', text: 'prevents a colony from expelling its algae a second time.' },
+    ],
+    answer: 'A',
+    explanation: 'Lower mortality in the second event among first-event survivors is the observation. It supports either selection (the vulnerable already died) or acquired tolerance, and choice A is careful enough to hold both without asserting which.',
+    distractorNotes: {
+      B: 'Predicts higher mortality in the second event, the opposite of what was found.',
+      C: 'Contradicted by the difference in mortality between the two events.',
+      D: 'Far stronger than the data support: lower mortality is not the same as no bleaching, and the passage never says the second expulsion did not occur.',
+    },
+  },
+  {
+    id: 'rw_inf_111', section: 'rw', domain: 'information-ideas', skill: 'inferences',
+    format: 'mcq', band: 'medium', irt: { a: 1.15, b: 0.12 }, targetSeconds: 76,
+    stimulus: { text: 'Zora Neale Hurston recorded folktales in the Florida communities she had grown up in, and she wrote in her field notes that the same teller gave her different versions of a tale depending on who else was present. She published a single version of each. A reader treating her published collection as a fixed record of the tradition would therefore _______' },
+    prompt: 'Which choice most logically completes the text?',
+    choices: [
+      { id: 'A', text: 'mistake one performance for the whole range the tradition contained.' },
+      { id: 'B', text: 'conclude that Hurston had invented the tales she published.' },
+      { id: 'C', text: 'find the published versions less vivid than the field notes.' },
+      { id: 'D', text: 'be unable to determine which community each tale came from.' },
+    ],
+    answer: 'A',
+    explanation: 'Two facts drive it: the tales varied by audience, and she published one version each. A fixed reading of a single published version therefore substitutes one performance for a range the notes show existed.',
+    distractorNotes: {
+      B: 'Selecting among recorded versions is not invention, and nothing suggests fabrication.',
+      C: 'Relative vividness is never discussed; the difference described is in variation, not in quality.',
+      D: 'The passage says she recorded in communities she knew, and provenance is not what is at issue.',
+    },
+  },
+  {
+    id: 'rw_inf_112', section: 'rw', domain: 'information-ideas', skill: 'inferences',
+    format: 'mcq', band: 'medium', irt: { a: 1.2, b: 0.2 }, targetSeconds: 76,
+    stimulus: { text: 'Superconductivity in most known materials appears only within a few degrees of absolute zero, and every proposed room-temperature superconductor so far has required pressures found only deep inside planets. A material that superconducted at ordinary temperature *and* ordinary pressure would be transformative, but the two requirements have never yet been met together, which suggests that _______' },
+    prompt: 'Which choice most logically completes the text?',
+    choices: [
+      { id: 'A', text: 'the conditions that enable the effect have so far come at the cost of one another.' },
+      { id: 'B', text: 'room-temperature superconductivity is physically impossible.' },
+      { id: 'C', text: 'the materials tested at high pressure were of poor quality.' },
+      { id: 'D', text: 'low-temperature superconductors have no practical applications.' },
+    ],
+    answer: 'A',
+    explanation: 'The passage reports a trade: relax the temperature requirement and the pressure requirement becomes extreme. That pattern — the two never met together — is exactly what choice A states, without claiming more.',
+    distractorNotes: {
+      B: 'An absence of success is not a demonstration of impossibility, and the passage calls such a material transformative rather than ruled out.',
+      C: 'Material quality is never mentioned; the constraint described is one of conditions.',
+      D: 'Practical application of low-temperature superconductors is outside the text entirely.',
+    },
+  },
+  {
+    id: 'rw_inf_113', section: 'rw', domain: 'information-ideas', skill: 'inferences',
+    format: 'mcq', band: 'medium', irt: { a: 1.15, b: 0.28 }, targetSeconds: 77,
+    stimulus: { text: 'The Chinese astronomical record notes a "guest star" bright enough to be seen in daylight in the year 1054. European chronicles of the same year, which record comets and eclipses in detail, say nothing about it. Historians of astronomy generally resist reading the European silence as evidence that nothing appeared, because _______' },
+    prompt: 'Which choice most logically completes the text?',
+    choices: [
+      { id: 'A', text: 'what a chronicle records reflects what its keepers thought worth recording.' },
+      { id: 'B', text: 'European chronicles from the eleventh century have almost all been lost.' },
+      { id: 'C', text: 'the event would not have been visible from European latitudes.' },
+      { id: 'D', text: 'Chinese astronomers had instruments that European observers lacked.' },
+    ],
+    answer: 'A',
+    explanation: 'The passage sets up a puzzle — recorded in one tradition, absent from another that did record comets and eclipses. The reason for resisting the silence must explain why an absence is weak evidence, and selection in what gets recorded does exactly that.',
+    distractorNotes: {
+      B: 'Contradicted by the passage, which says European chronicles of that year record other events in detail.',
+      C: 'A daylight-visible star would not be latitude-restricted in the way this implies, and the passage offers no such fact.',
+      D: 'Instruments are irrelevant to something bright enough to see in daylight, and none are mentioned.',
+    },
+  },
+  {
+    id: 'rw_inf_114', section: 'rw', domain: 'information-ideas', skill: 'inferences',
+    format: 'mcq', band: 'medium', irt: { a: 1.18, b: 0.34 }, targetSeconds: 77,
+    stimulus: { text: 'An economist compared towns that received a rail connection in the 1880s with towns that were surveyed for one and then bypassed when the route changed for engineering reasons. Sixty years later the connected towns were substantially larger. The comparison is informative precisely because the bypassed towns _______' },
+    prompt: 'Which choice most logically completes the text?',
+    choices: [
+      { id: 'A', text: 'had been judged suitable for a connection on the same grounds as the connected ones.' },
+      { id: 'B', text: 'were smaller than the connected towns before the railway was built.' },
+      { id: 'C', text: 'eventually received rail connections of their own.' },
+      { id: 'D', text: 'were located in regions with different industries.' },
+    ],
+    answer: 'A',
+    explanation: 'The design works only if the two groups were alike beforehand. Being surveyed for a connection and then bypassed for engineering reasons unrelated to prospects is what makes them comparable — that is why the passage mentions the survey at all.',
+    distractorNotes: {
+      B: 'A pre-existing size difference would undermine the comparison rather than make it informative.',
+      C: 'Later connections would blur the contrast, weakening rather than strengthening the design.',
+      D: 'Different industries would introduce exactly the confound the design is meant to remove.',
+    },
+  },
+  {
+    id: 'rw_inf_115', section: 'rw', domain: 'information-ideas', skill: 'inferences',
+    format: 'mcq', band: 'medium', irt: { a: 1.15, b: 0.4 }, targetSeconds: 78,
+    stimulus: { text: 'The architect Lina Bo Bardi raised the São Paulo Museum of Art on four columns, leaving the ground beneath it empty. The city had promised the site’s previous owners that the view toward the valley would never be built over. Bo Bardi’s solution is often praised as a formal gesture, but the design also _______' },
+    prompt: 'Which choice most logically completes the text?',
+    choices: [
+      { id: 'A', text: 'satisfied a constraint the site carried before she began.' },
+      { id: 'B', text: 'increased the amount of exhibition space the museum could offer.' },
+      { id: 'C', text: 'reduced the cost of construction relative to conventional methods.' },
+      { id: 'D', text: 'was the first use of elevated construction in the city.' },
+    ],
+    answer: 'A',
+    explanation: 'The passage places a promise about the view alongside a building that leaves the ground empty. The word "also" asks what the design did beyond the formal gesture, and honouring the pre-existing promise is what the two facts jointly establish.',
+    distractorNotes: {
+      B: 'Exhibition space is never discussed, and lifting a building does not itself add any.',
+      C: 'Elevating a structure on columns has no stated cost implication here.',
+      D: 'A claim about firsts that the passage does not make.',
+    },
+  },
+  {
+    id: 'rw_inf_116', section: 'rw', domain: 'information-ideas', skill: 'inferences',
+    format: 'mcq', band: 'medium', irt: { a: 1.2, b: 0.46 }, targetSeconds: 78,
+    stimulus: { text: 'Antibiotic resistance genes are carried on plasmids that bacteria exchange directly, without reproducing. Because the exchange does not require descent, resistance can appear in a population that has never been exposed to the drug in question, provided it has contact with a population that has. A survey finding resistance in an isolated environment therefore _______' },
+    prompt: 'Which choice most logically completes the text?',
+    choices: [
+      { id: 'A', text: 'does not by itself establish that the drug was ever used there.' },
+      { id: 'B', text: 'shows that the drug must have been used there in the past.' },
+      { id: 'C', text: 'indicates that the bacteria reproduced unusually quickly.' },
+      { id: 'D', text: 'means the environment was not in fact isolated from any other.' },
+    ],
+    answer: 'A',
+    explanation: 'The mechanism described breaks the link between resistance and exposure: a population can acquire the gene by contact rather than by selection under the drug. So resistance is not evidence of local use — which is precisely what choice A says and no more.',
+    distractorNotes: {
+      B: 'Exactly the inference the passage’s mechanism blocks.',
+      C: 'Plasmid exchange is described as occurring without reproduction, so reproductive rate is not at issue.',
+      D: 'Overreaches: contact is one route, but the passage does not license concluding that contact must have occurred rather than local use.',
+    },
+  },
+  {
+    id: 'rw_inf_117', section: 'rw', domain: 'information-ideas', skill: 'inferences',
+    format: 'mcq', band: 'medium', irt: { a: 1.15, b: 0.5 }, targetSeconds: 78,
+    stimulus: { text: 'In several languages of the Pacific Northwest, the word for a salmon changes according to where the fish is in its life cycle and its journey upriver, and the terms are not related to one another as a root and its variants. A speaker asked to name "salmon" in the abstract will often ask which one is meant. This suggests that in these languages the category _______' },
+    prompt: 'Which choice most logically completes the text?',
+    choices: [
+      { id: 'A', text: 'is organised around stages rather than around the animal as a single kind.' },
+      { id: 'B', text: 'includes fish that speakers of other languages would not call salmon.' },
+      { id: 'C', text: 'has fewer terms available to it than the English category does.' },
+      { id: 'D', text: 'was borrowed from a neighbouring language group.' },
+    ],
+    answer: 'A',
+    explanation: 'Unrelated terms for each stage, plus a speaker’s difficulty naming the abstract category, point to a system organised by stage rather than by species. That is what the two observations force.',
+    distractorNotes: {
+      B: 'The extension of the category to other animals is never discussed.',
+      C: 'The passage implies more terms, not fewer, and makes no count.',
+      D: 'Borrowing is outside the text; the passage says the terms are unrelated to one another, not to another language.',
+    },
+  },
+
+  /* ================= Hard ================= */
+  {
+    id: 'rw_inf_118', section: 'rw', domain: 'information-ideas', skill: 'inferences',
+    format: 'mcq', band: 'hard', irt: { a: 1.28, b: 0.95 }, targetSeconds: 86,
+    stimulus: { text: 'A screening test is applied to a population in which the condition is rare. Even a test that is right ninety-nine times in a hundred will, in such a population, return more false positives than true ones, because the small number of genuine cases is swamped by the small proportion of errors drawn from a very large healthy group. It follows that the predictive value of a positive result _______' },
+    prompt: 'Which choice most logically completes the text?',
+    choices: [
+      { id: 'A', text: 'depends on how common the condition is and not on the test’s accuracy alone.' },
+      { id: 'B', text: 'falls as the accuracy of the test improves.' },
+      { id: 'C', text: 'is the same in every population to which the test is applied.' },
+      { id: 'D', text: 'can be raised only by increasing the size of the group screened.' },
+    ],
+    answer: 'A',
+    explanation: 'The passage explains the result entirely through the interaction of accuracy with base rate: the same test behaves differently as the condition becomes rarer. That forces the conclusion that prevalence enters the calculation, which is choice A.',
+    distractorNotes: {
+      B: 'Reverses the relationship. Higher accuracy improves predictive value; it is the rarity that degrades it.',
+      C: 'The direct contradiction of the passage, which describes a result specific to a rare condition.',
+      D: 'A larger group changes neither the prevalence nor the error rate, so it does not help.',
+    },
+  },
+  {
+    id: 'rw_inf_119', section: 'rw', domain: 'information-ideas', skill: 'inferences',
+    format: 'mcq', band: 'hard', irt: { a: 1.3, b: 1.05 }, targetSeconds: 88,
+    stimulus: { text: 'A frequent argument for preserving a threatened language is that each one encodes a distinct way of organising experience. Critics observe that the argument, taken strictly, would justify preserving a language against the wishes of the last people who speak it, since the encoded structure is what is said to have value rather than any speaker’s use of it. The force of this objection depends on _______' },
+    prompt: 'Which choice most logically completes the text?',
+    choices: [
+      { id: 'A', text: 'whether the value claimed for a language is separable from the people who use it.' },
+      { id: 'B', text: 'how many languages are currently at risk of disappearing.' },
+      { id: 'C', text: 'whether linguists can fully document a language before it is lost.' },
+      { id: 'D', text: 'how distinct one language’s structure actually is from another’s.' },
+    ],
+    answer: 'A',
+    explanation: 'The objection works by isolating value in the structure and setting it against speakers’ wishes. Whether it lands therefore turns on whether that separation is legitimate — the exact hinge choice A names.',
+    distractorNotes: {
+      B: 'The number at risk changes the scale of the issue, not whether the objection is valid.',
+      C: 'Documentation would preserve the record, but the objection is about whose wishes count, not about whether a record can be made.',
+      D: 'Degree of distinctness bears on the original argument’s premise, not on the objection’s structure.',
+    },
+  },
+  {
+    id: 'rw_inf_120', section: 'rw', domain: 'information-ideas', skill: 'inferences',
+    format: 'mcq', band: 'hard', irt: { a: 1.28, b: 1.12 }, targetSeconds: 88,
+    stimulus: { text: 'Fossilisation requires rapid burial, which happens far more often in some environments than others: river deltas and shallow seas preserve; upland forests almost never do. A census of fossil species is therefore not a census of past life but of past life in depositional settings. A period that appears to show low diversity might in fact _______' },
+    prompt: 'Which choice most logically completes the text?',
+    choices: [
+      { id: 'A', text: 'have left fewer of the settings in which anything is preserved.' },
+      { id: 'B', text: 'have contained fewer species that lived near water.' },
+      { id: 'C', text: 'have lasted for a shorter span than periods appearing more diverse.' },
+      { id: 'D', text: 'be more thoroughly studied than periods appearing more diverse.' },
+    ],
+    answer: 'A',
+    explanation: 'The passage makes the fossil record a sample of depositional environments rather than of life. An apparent dip in diversity therefore has an alternative explanation that does not involve life at all: fewer preserving settings. That is what the argument forces.',
+    distractorNotes: {
+      B: 'This would be a real drop in a particular group, which is a claim about life rather than about the sampling artefact the passage sets up.',
+      C: 'Duration is a separate consideration and does not follow from the depositional argument given.',
+      D: 'More study would tend to reveal more, not less, and study effort is never mentioned.',
+    },
+  },
+  {
+    id: 'rw_inf_121', section: 'rw', domain: 'information-ideas', skill: 'inferences',
+    format: 'mcq', band: 'hard', irt: { a: 1.3, b: 1.2 }, targetSeconds: 90,
+    stimulus: { text: 'Machado de Assis narrates "Dom Casmurro" through a man who accuses his late wife of infidelity and presents his own recollections as the evidence. The novel supplies no independent testimony. Readers who find the accusation persuasive and readers who find it self-serving are both working from the same pages, which suggests that the book’s subject is less the wife’s conduct than _______' },
+    prompt: 'Which choice most logically completes the text?',
+    choices: [
+      { id: 'A', text: 'the conditions under which a reader decides to believe a narrator.' },
+      { id: 'B', text: 'the difficulty of establishing facts about the nineteenth century.' },
+      { id: 'C', text: 'the narrator’s inability to recall the events accurately.' },
+      { id: 'D', text: 'the legal standards of evidence in the society the novel describes.' },
+    ],
+    answer: 'A',
+    explanation: 'The passage’s key observation is that opposite conclusions come from identical text with no independent testimony. What varies is therefore the reader, not the evidence — which makes the act of believing the narrator the book’s real subject.',
+    distractorNotes: {
+      C: 'Inaccurate recall is one explanation a reader might adopt, and the passage’s point is that the text does not settle which explanation is right.',
+      B: 'Historical fact-finding is not what the passage describes; the difficulty is internal to the novel’s construction.',
+      D: 'Legal standards appear nowhere in the text.',
+    },
+  },
+  {
+    id: 'rw_inf_122', section: 'rw', domain: 'information-ideas', skill: 'inferences',
+    format: 'mcq', band: 'hard', irt: { a: 1.32, b: 1.25 }, targetSeconds: 90,
+    stimulus: { text: 'A model trained to predict which job applicants will succeed is evaluated only on applicants who were hired, since no outcome exists for the rest. If the original hiring decisions were themselves biased, the applicants excluded from the evaluation are exactly those the model most needs to be tested on. This means that a model performing well on the available data _______' },
+    prompt: 'Which choice most logically completes the text?',
+    choices: [
+      { id: 'A', text: 'may be reproducing the original decisions rather than improving on them.' },
+      { id: 'B', text: 'must have been trained on an unusually small sample.' },
+      { id: 'C', text: 'would perform better if it were given more applicant characteristics.' },
+      { id: 'D', text: 'is being evaluated against a standard that is too demanding.' },
+    ],
+    answer: 'A',
+    explanation: 'The evaluation set is produced by the decisions under scrutiny, so agreement with it cannot distinguish a good model from one that has learned the original bias. Choice A states that limit exactly, and hedges as the passage does.',
+    distractorNotes: {
+      B: 'Sample size is not the issue; the problem is which applicants are in the sample, not how many.',
+      C: 'More features do not help when the evaluation itself is contaminated.',
+      D: 'The standard is too *permissive*, not too demanding — that is the whole point.',
+    },
+  },
+];

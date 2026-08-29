@@ -13,6 +13,10 @@ import { RW_BANK_3 } from './bank-rw-3.ts';
 import { RW_BANK_4 } from './bank-rw-4.ts';
 import { RW_BANK_5 } from './bank-rw-5.ts';
 import { RW_BANK_6 } from './bank-rw-6.ts';
+import { RW_BANK_7 } from './bank-rw-7.ts';
+import { RW_BANK_8 } from './bank-rw-8.ts';
+import { RW_BANK_9 } from './bank-rw-9.ts';
+import { RW_BANK_10 } from './bank-rw-10.ts';
 import { MATH_BANK_1 } from './bank-math-1.ts';
 import { MATH_BANK_2 } from './bank-math-2.ts';
 import { generateMathItems } from './generators.ts';
@@ -24,6 +28,10 @@ const AUTHORED: Question[] = [
   ...RW_BANK_4,
   ...RW_BANK_5,
   ...RW_BANK_6,
+  ...RW_BANK_7,
+  ...RW_BANK_8,
+  ...RW_BANK_9,
+  ...RW_BANK_10,
   ...MATH_BANK_1,
   ...MATH_BANK_2,
 ];
