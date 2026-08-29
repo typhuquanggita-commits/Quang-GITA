@@ -68,20 +68,32 @@ export const PRODUCTION_PIPELINE = {
   oneLine:
     'Kịch bản là dữ liệu, audio là thứ dựng ra từ dữ liệu đó. Sửa một câu trong kịch bản rồi chạy lại lệnh là có bản mới, không phải hẹn phòng thu.',
   commands: [
-    {cmd: 'node tools/make-podcast.mjs', desc: 'Dựng toàn bộ tập bằng TTS ngoại tuyến'},
+    {cmd: 'bash tools/fetch-voices.sh', desc: 'Tải model giọng Piper — chạy một lần, ~235 MB'},
+    {cmd: 'node tools/make-podcast.mjs', desc: 'Dựng toàn bộ tập bằng Piper (neural, ngoại tuyến)'},
     {cmd: 'node tools/make-podcast.mjs --ep ep01', desc: 'Dựng đúng một tập'},
-    {cmd: 'node tools/make-podcast.mjs --tts google', desc: 'Chất lượng phát hành (cần GOOGLE_TTS_KEY)'},
+    {cmd: 'node tools/make-podcast.mjs --tts google', desc: 'Cloud TTS Neural2 (cần GOOGLE_TTS_KEY)'},
     {cmd: 'node tools/make-podcast.mjs --tts gemini', desc: 'Giọng tự nhiên nhất (cần GEMINI_API_KEY)'},
     {cmd: 'node tools/make-podcast.mjs --rss', desc: 'Sinh thêm feed RSS để đăng lên nền tảng podcast'},
   ],
   backends: [
     {
+      id: 'piper',
+      name: 'Piper — MẶC ĐỊNH',
+      cost: 'Miễn phí, chạy ngoại tuyến, không cần khoá',
+      quality:
+        'Neural. Giọng Mỹ en-us-ryan-high cho câu mẫu tiếng Anh, giọng Việt cho phần dẫn. Đủ tốt để phát hành.',
+      useFor:
+        'Mặc định cho toàn series. Sinh giọng theo lô nên dựng 6 tập chỉ mất khoảng hai phút.',
+      setup: 'pip install piper-tts && bash tools/fetch-voices.sh',
+    },
+    {
       id: 'espeak',
       name: 'espeak-ng',
       cost: 'Miễn phí, chạy ngoại tuyến',
-      quality: 'Giọng máy, nghe rõ nhưng không tự nhiên',
+      quality:
+        'Bộ tổng hợp formant — giọng máy, về bản chất không thể tự nhiên.',
       useFor:
-        'Duyệt kịch bản và canh thời lượng trước khi thu thật. Nghe bản này để biết chỗ nào lê thê, chỗ nào hụt, trước khi tốn tiền thu.',
+        'Chỉ dùng khi không tải được model Piper. KHÔNG dùng cho câu mẫu tiếng Anh: học viên shadowing theo sẽ bắt chước sai nhịp và sai trọng âm.',
       setup: 'apt-get install -y espeak-ng ffmpeg',
     },
     {

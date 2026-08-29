@@ -5,15 +5,19 @@
  *
  * ENGWILL RADIO — công cụ dựng podcast từ kịch bản.
  *
- *   node tools/make-podcast.mjs                  # dựng tất cả tập, backend espeak
+ *   node tools/make-podcast.mjs                  # dựng tất cả tập, backend piper (neural)
  *   node tools/make-podcast.mjs --ep ep01        # dựng một tập
  *   node tools/make-podcast.mjs --tts google     # chất lượng phát hành (cần GOOGLE_TTS_KEY)
  *   node tools/make-podcast.mjs --tts gemini     # giọng tự nhiên nhất (cần GEMINI_API_KEY)
  *   node tools/make-podcast.mjs --rss            # sinh thêm feed RSS để đăng podcast
  *
  * Backend:
- *   espeak  — chạy ngoại tuyến, không cần key, không tốn tiền. Giọng máy, dùng để
- *             duyệt kịch bản và canh thời lượng trước khi thu thật.
+ *   piper   — MẶC ĐỊNH. Neural, chạy ngoại tuyến, không cần key, không tốn tiền.
+ *             Giọng Mỹ ryan-high cho mọi câu tiếng Anh; giọng Việt cho phần dẫn.
+ *             Cài: pip install piper-tts, rồi tải model (xem audio/README.md).
+ *   espeak  — bộ tổng hợp formant, giọng máy. Chỉ dùng khi không tải được model
+ *             piper. Không nên dùng cho câu mẫu tiếng Anh: học viên shadowing theo
+ *             sẽ bắt chước sai nhịp và sai trọng âm.
  *   google  — Google Cloud Text-to-Speech. Giọng Neural2 cho cả tiếng Việt và tiếng Anh.
  *   gemini  — Gemini TTS. Giọng tự nhiên nhất hiện có, hợp với định dạng đối thoại.
  */
@@ -28,6 +32,9 @@ const SCRIPTS = join(ROOT, 'content', 'podcast-scripts.json');
 const OUT = join(ROOT, 'audio');
 const TMP = join(OUT, '.tmp');
 const RATE = 22050;
+const PIPER_DIR =
+  process.env.PIPER_VOICES ||
+  join(process.env.HOME || '/root', '.local', 'share', 'piper-voices');
 
 /* ----------------------------- tham số dòng lệnh ------------------------- */
 
@@ -40,7 +47,7 @@ const arg = (name, fallback) => {
 };
 const flag = (name) => argv.includes(`--${name}`);
 
-const TTS = arg('tts', 'espeak');
+const TTS = arg('tts', 'piper');
 const ONLY = arg('ep', null);
 
 /* ------------------------------ tiện ích --------------------------------- */
@@ -67,16 +74,23 @@ const secs = (n) => `${Math.floor(n / 60)}:${String(Math.round(n % 60)).padStart
  */
 const VOICES = {
   DẪN: {
+    piper: {model: 'vi-25hours-single-low', length: 1.0, pitchShift: 1.0},
     espeak: {voice: 'vi+f3', speed: 148, pitch: 58},
     google: {name: 'vi-VN-Neural2-A', lang: 'vi-VN', rate: 0.96, pitch: 1.0},
     gemini: 'Kore',
   },
   'CỐ VẤN': {
+    // Cùng model với người dẫn nhưng chậm hơn và hạ cao độ 9% — cho ra một giọng
+    // thứ hai phân biệt được mà vẫn giữ nguyên chất lượng của model tốt nhất.
+    piper: {model: 'vi-25hours-single-low', length: 1.13, pitchShift: 0.91},
     espeak: {voice: 'vi+m3', speed: 136, pitch: 32},
     google: {name: 'vi-VN-Neural2-D', lang: 'vi-VN', rate: 0.9, pitch: -2.0},
     gemini: 'Charon',
   },
   ANH: {
+    // Giọng Mỹ chất lượng cao. Đây là giọng học viên sẽ shadowing theo, nên
+    // không bao giờ được thay bằng giọng tổng hợp kém tự nhiên.
+    piper: {model: 'en-us-ryan-high', length: 1.04, pitchShift: 1.0},
     espeak: {voice: 'en-gb', speed: 142, pitch: 45},
     google: {name: 'en-GB-Neural2-B', lang: 'en-GB', rate: 0.92, pitch: 0.0},
     gemini: 'Puck',
@@ -84,6 +98,65 @@ const VOICES = {
 };
 
 /* ------------------------------ backend TTS ------------------------------ */
+
+/** Mô tả một câu cần dựng bằng piper — dùng cho lô. */
+function piperJob(line, out, dir) {
+  const v = VOICES[line.s]?.piper ?? VOICES['DẪN'].piper;
+  const model = join(PIPER_DIR, `${v.model}.onnx`);
+  if (!existsSync(model)) {
+    throw new Error(
+      `Thiếu model ${v.model}.onnx trong ${PIPER_DIR} — chạy: bash tools/fetch-voices.sh`,
+    );
+  }
+  return {
+    job: {
+      model,
+      text: line.t,
+      out: join(dir, `${out}-piper.wav`),
+      length: v.length,
+      noise: 0.6,
+      noise_w: 0.75,
+    },
+    pitchShift: v.pitchShift ?? 1.0,
+  };
+}
+
+/**
+ * Dựng cả lô trong MỘT tiến trình Python. Piper nạp model mất vài giây; nếu gọi
+ * lại tiến trình cho từng câu thì một tập ba mươi câu phải nạp ba mươi lần.
+ * Gộp lô đưa số lần nạp về đúng bằng số model dùng trong tập.
+ */
+function piperBatch(jobs) {
+  if (!jobs.length) return;
+  const helper = join(dirname(fileURLToPath(import.meta.url)), 'piper_batch.py');
+  execFileSync('python3', [helper], {
+    input: JSON.stringify(jobs),
+    stdio: ['pipe', 'pipe', 'pipe'],
+    maxBuffer: 1 << 24,
+  });
+}
+
+/** Hạ cao độ mà giữ nguyên thời lượng, để tách giọng cố vấn khỏi giọng dẫn. */
+function pitchShift(inFile, outFile, factor) {
+  const sr = Number(
+    String(
+      sh('ffprobe', [
+        '-v', 'error',
+        '-select_streams', 'a',
+        '-show_entries', 'stream=sample_rate',
+        '-of', 'csv=p=0',
+        inFile,
+      ]),
+    ).trim(),
+  );
+  sh('ffmpeg', [
+    '-y', '-loglevel', 'error',
+    '-i', inFile,
+    '-af',
+    `asetrate=${Math.round(sr * factor)},aresample=${sr},atempo=${(1 / factor).toFixed(4)}`,
+    outFile,
+  ]);
+}
 
 function ttsEspeak(line, out) {
   const v = VOICES[line.s]?.espeak ?? VOICES['DẪN'].espeak;
@@ -205,8 +278,23 @@ async function buildEpisode(ep, series, format) {
   mkdirSync(dir, {recursive: true});
 
   const parts = [];
+  const isPiper = TTS === 'piper';
   const synth = BACKENDS[TTS];
-  if (!synth) throw new Error(`Backend không hợp lệ: ${TTS}`);
+  if (!isPiper && !synth) throw new Error(`Backend không hợp lệ: ${TTS}`);
+
+  // Với piper, sinh toàn bộ giọng của tập trong một tiến trình duy nhất.
+  const shifts = new Map();
+  if (isPiper) {
+    const jobs = [];
+    ep.lines.forEach((line, i) => {
+      if (line.s === 'LẶNG' || !line.t.trim()) return;
+      const n = String(i).padStart(3, '0');
+      const {job, pitchShift: f} = piperJob(line, n, dir);
+      jobs.push(job);
+      shifts.set(n, f);
+    });
+    piperBatch(jobs);
+  }
 
   for (let i = 0; i < ep.lines.length; i++) {
     const line = ep.lines[i];
@@ -215,7 +303,17 @@ async function buildEpisode(ep, series, format) {
     if (line.s !== 'LẶNG' && line.t.trim()) {
       const raw = join(dir, `${n}-raw.wav`);
       const norm = join(dir, `${n}.wav`);
-      await synth(line, raw);
+      if (isPiper) {
+        const src = join(dir, `${n}-piper.wav`);
+        const f = shifts.get(n) ?? 1.0;
+        if (f !== 1.0) {
+          pitchShift(src, raw, f);
+        } else {
+          sh('ffmpeg', ['-y', '-loglevel', 'error', '-i', src, raw]);
+        }
+      } else {
+        await synth(line, raw);
+      }
       normalise(raw, norm);
       parts.push(norm);
     }
@@ -309,6 +407,24 @@ ${items}
   if (TTS === 'espeak' && !has('espeak-ng')) {
     console.error('Thiếu espeak-ng. Cài bằng: apt-get install -y espeak-ng');
     process.exit(1);
+  }
+  if (TTS === 'piper') {
+    try {
+      execFileSync('python3', ['-m', 'piper', '--help'], {stdio: 'ignore'});
+    } catch {
+      console.error('Thiếu piper. Cài bằng: pip install piper-tts');
+      process.exit(1);
+    }
+    const need = [...new Set(Object.values(VOICES).map((v) => v.piper.model))];
+    const missing = need.filter(
+      (m) => !existsSync(join(PIPER_DIR, `${m}.onnx`)),
+    );
+    if (missing.length) {
+      console.error(`\n  Thiếu model giọng trong ${PIPER_DIR}:`);
+      missing.forEach((m) => console.error(`    ${m}.onnx`));
+      console.error('\n  Tải bằng: bash tools/fetch-voices.sh\n');
+      process.exit(1);
+    }
   }
   if (!existsSync(SCRIPTS)) {
     console.error(`Không tìm thấy kịch bản: ${SCRIPTS}`);

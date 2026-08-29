@@ -46,14 +46,20 @@ Giải Mã Lỗi · Đối Thoại Cố Vấn · Lập Trình Tư Duy · Shadowi
 Kịch bản là **dữ liệu**, audio là thứ dựng ra từ dữ liệu đó:
 
 ```bash
-apt-get install -y espeak-ng ffmpeg
-node tools/make-podcast.mjs --rss          # → 6 file MP3 + feed.xml, ~30 giây
+apt-get install -y ffmpeg && pip install piper-tts
+bash tools/fetch-voices.sh                 # model giọng, ~235 MB, tải một lần
+node tools/make-podcast.mjs --rss          # → 6 file MP3 + feed.xml, ~2 phút
 ```
 
-Ba backend TTS cắm được: `espeak` (ngoại tuyến, miễn phí, dùng để duyệt kịch bản),
-`google` (Neural2, chất lượng phát hành), `gemini` (tự nhiên nhất). Output đã chuẩn
-hoá -16 LUFS, có thẻ ID3, kèm RSS để đăng lên nền tảng podcast. Sửa một câu trong
-kịch bản rồi chạy lại lệnh là có bản mới — không phải hẹn phòng thu.
+Mặc định dùng **Piper** — TTS neural chạy ngoại tuyến, miễn phí. Giọng Mỹ
+`en-us-ryan-high` cho mọi câu mẫu tiếng Anh (đây là giọng học viên shadowing theo,
+nên không dùng giọng tổng hợp kém tự nhiên); giọng Việt cho phần dẫn, tách thành
+hai vai bằng cách hạ cao độ 9% cho vai cố vấn.
+
+Ba backend khác cắm được: `google` (Cloud TTS Neural2), `gemini` (Gemini TTS),
+`espeak` (formant — chỉ dùng khi không tải được model piper). Output đã chuẩn hoá
+-16 LUFS, có thẻ ID3, kèm RSS. Sửa một câu trong kịch bản rồi chạy lại lệnh là có
+bản mới — không phải hẹn phòng thu.
 
 ### 🎥 Xưởng học liệu
 **11 bản thiết kế sản xuất** — bản vẽ kỹ thuật để ê-kíp quay dựng, không phải file media:
@@ -177,7 +183,9 @@ content/
   podcast-scripts.json Kịch bản podcast — nguồn dùng chung cho app và công cụ dựng
 
 tools/
-  make-podcast.mjs     Dựng MP3 + RSS từ kịch bản (espeak / google / gemini)
+  make-podcast.mjs     Dựng MP3 + RSS từ kịch bản (piper / google / gemini / espeak)
+  piper_batch.py       Sinh giọng theo lô — nạp mỗi model một lần, nhanh gấp 6
+  fetch-voices.sh      Tải model giọng Piper
 
 audio/                 Sản phẩm dựng ra, không commit — xem audio/README.md
   charter.ts           LA BÀN — 11 mục hiến chương cá nhân + tuyên ngôn
