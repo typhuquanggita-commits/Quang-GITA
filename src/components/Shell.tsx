@@ -4,6 +4,7 @@ import { BRAND, BRAND_TRACK_STYLE } from '@/data/brand';
 import { currentRole, isTeacher, suggestRoleUpgrade, applyRole } from '@/lib/auth';
 import { ROLES } from '@/data/roles';
 import { progressOverview } from '@/lib/engine';
+import { GitaLogo } from '@/components/Logo';
 
 export interface NavItem {
   path: string;
@@ -24,7 +25,7 @@ export const NAV: NavItem[] = [
   { path: '/playbook', label: 'Bí kíp & Thói quen', icon: '★', group: 'Nội dung' },
   { path: '/library', label: 'Kiến trúc tài liệu', icon: '❐', group: 'Nội dung' },
   { path: '/gita', label: 'Mô thức GITA', icon: '◈', group: 'Hệ thống' },
-  { path: '/brand', label: 'Nhận diện MATH365', icon: '∑', group: 'Hệ thống' },
+  { path: '/brand', label: 'Nhận diện MATH365', icon: '◈', group: 'Hệ thống' },
   { path: '/roles', label: 'Phân quyền', icon: '⚿', group: 'Hệ thống' },
   { path: '/classes', label: 'Quản lý lớp', icon: '⛁', group: 'Hệ thống', teacherOnly: true },
 ];
@@ -56,8 +57,8 @@ export function Shell({ children, active }: { children: React.ReactNode; active:
             setOpen(false);
           }}
         >
-          <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-brand-700 text-2xl font-bold text-white">
-            ∑
+          <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-white ring-1 ring-slate-200">
+            <GitaLogo size={30} variant="mark" />
           </span>
           <span>
             <span className="block text-[15px] font-extrabold tracking-tight text-slate-900">

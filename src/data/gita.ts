@@ -27,7 +27,7 @@ export const PILLARS: Pillar[] = [
     name: 'GOAL · Hệ thống mục tiêu',
     nameEn: 'Goal',
     question: 'Đích đến xuất sắc của mình là gì, và đo bằng gì?',
-    color: '#4338CA',
+    color: '#1B4F9C',
     principle:
       'Goal là hệ thống mục tiêu — không phải một mong muốn đơn lẻ. Mục tiêu lớn được chẻ thành kết quả từng giai đoạn, từng tuần, từng phiếu luyện, để mỗi buổi học đều biết mình đang tiến về đâu.',
     actions: [
@@ -64,7 +64,7 @@ export const PILLARS: Pillar[] = [
     name: 'INSPIRITS · Nội lực & Khát khao',
     nameEn: 'Inspirits',
     question: 'Điều gì khiến mình bền bỉ khi việc học trở nên khó?',
-    color: '#BE123C',
+    color: '#E01B24',
     principle:
       'Inspirits là phần động lực bên trong: khát khao, đam mê, niềm tin và bản lĩnh. Đây là thứ quyết định học sinh có đi hết lộ trình hay bỏ cuộc giữa chừng — và là thứ không thể thay thế bằng kỷ luật ép buộc từ bên ngoài.',
     actions: [
@@ -104,7 +104,7 @@ export const PILLARS: Pillar[] = [
     name: 'TALENT · Tài năng & Thế mạnh',
     nameEn: 'Talent',
     question: 'Thế mạnh riêng của mình là gì, và làm sao đẩy nó lên mức vượt trội?',
-    color: '#B45309',
+    color: '#F0A21B',
     principle:
       'Talent không phải thứ trời cho cố định. Đó là điểm mạnh, sở trường, tốc độ, khả năng tập trung và tư duy xuất sắc — tất cả đều được nhận diện bằng dữ liệu rồi khuếch đại bằng luyện tập có chủ đích.',
     actions: [
@@ -228,7 +228,7 @@ export const ACTION_LEVELS: ActionLevel[] = [
       'Mỗi tuần chọn đúng một nút thắt để xử lý dứt điểm, thay vì sửa mười thứ cùng lúc.',
     daily: ['Một phiếu đúng vùng yếu', 'Làm lại dạng đã sai sau 3 ngày', 'Giảng lại một dạng cho bạn'],
     signal: 'Lỗi lặp lại giảm rõ rệt qua từng tuần.',
-    color: '#4338CA',
+    color: '#1B4F9C',
   },
   {
     id: 4,
@@ -349,7 +349,7 @@ export const TIERS: AbsorptionTier[] = [
     materials: ['Phiếu luyện theo mức', 'Bộ bài tập tăng dần độ khó', 'Bảng lỗi thường gặp'],
     teacherMove: 'Giao lượng vừa đủ, phản hồi nhanh, sửa theo nguyên nhân lỗi.',
     exitCriteria: 'Đạt KPI 90% ở hai phiếu liên tiếp cùng mức.',
-    color: '#4338CA',
+    color: '#1B4F9C',
   },
   {
     id: 4,
@@ -443,7 +443,7 @@ export const PRO_LEVELS: ProLevel[] = [
       'Dạy thử 3 buổi được P4 dự giờ và duyệt.',
       'Ít nhất một lớp có KPI trung bình ≥ 85% sau một giai đoạn.',
     ],
-    color: '#4338CA',
+    color: '#1B4F9C',
   },
   {
     id: 'P4',
@@ -538,7 +538,7 @@ export const ENVIRONMENTS: Environment[] = [
     id: 'nha-truong',
     name: 'GITA trong nhà trường',
     goal: 'Đưa mô thức vào nhịp dạy – học chính khoá để tạo hiệu quả cộng hưởng.',
-    color: '#4338CA',
+    color: '#1B4F9C',
     protocols: [
       {
         name: 'Vào lớp 5 phút gợi nhớ',

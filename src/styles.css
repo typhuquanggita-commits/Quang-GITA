@@ -4,23 +4,30 @@
   --font-sans: 'Be Vietnam Pro', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
   --font-serif: 'Lora', Georgia, serif;
 
-  /* Brand: indigo/violet academic */
-  --color-brand-50: #eef2ff;
-  --color-brand-100: #e0e7ff;
-  --color-brand-200: #c7d2fe;
-  --color-brand-300: #a5b4fc;
-  --color-brand-400: #818cf8;
-  --color-brand-500: #6366f1;
-  --color-brand-600: #4f46e5;
-  --color-brand-700: #4338ca;
-  --color-brand-800: #3730a3;
-  --color-brand-900: #312e81;
+  /* Brand: GITA Blue — rút từ chữ GITA và cung xanh của logo */
+  --color-brand-50: #eff6ff;
+  --color-brand-100: #dbeafe;
+  --color-brand-200: #bcd7f7;
+  --color-brand-300: #8fbcee;
+  --color-brand-400: #5b98de;
+  --color-brand-500: #2e6fbf;
+  --color-brand-600: #1f5fae;
+  --color-brand-700: #1b4f9c;
+  --color-brand-800: #143c78;
+  --color-brand-900: #0e2c58;
 
-  /* Accent: warm amber for "chuyên" track */
+  /* GITA Red — cung đỏ của logo */
+  --color-gita-50: #fef2f2;
+  --color-gita-100: #fee2e2;
+  --color-gita-500: #e01b24;
+  --color-gita-600: #c41520;
+  --color-gita-700: #9e101a;
+
+  /* Accent: Star Gold — chùm sao trên logo */
   --color-accent-50: #fffbeb;
   --color-accent-100: #fef3c7;
   --color-accent-300: #fcd34d;
-  --color-accent-500: #f59e0b;
+  --color-accent-500: #f0a21b;
   --color-accent-600: #d97706;
   --color-accent-700: #b45309;
 
@@ -117,8 +124,8 @@
   }
   .grid-paper {
     background-image:
-      linear-gradient(rgba(99, 102, 241, 0.07) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(99, 102, 241, 0.07) 1px, transparent 1px);
+      linear-gradient(rgba(46, 111, 191, 0.07) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(46, 111, 191, 0.07) 1px, transparent 1px);
     background-size: 26px 26px;
   }
   .text-balance {

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 120" width="520" height="240" role="img" aria-label="GITA">
+  <title>GITA</title>
+  <g transform="rotate(-24 104 62)">
+    <path d="M104 20 a72 34 0 0 1 0 84" fill="none" stroke="#2E6FBF" stroke-width="11" stroke-linecap="round"/>
+    <path d="M104 104 a72 34 0 0 1 0 -84" fill="none" stroke="#E01B24" stroke-width="11" stroke-linecap="round"/>
+  </g>
+  <polygon points="196.00,13.00 199.06,22.42 208.97,22.42 200.95,28.24 204.02,37.66 196.00,31.83 187.98,37.66 191.05,28.24 183.03,22.42 192.94,22.42" fill="#1B4F9C"/>
+  <polygon points="222.00,36.00 224.12,42.52 230.98,42.52 225.43,46.55 227.55,53.08 222.00,49.05 216.45,53.08 218.57,46.55 213.02,42.52 219.88,42.52" fill="#E01B24"/>
+  <polygon points="172.00,7.00 173.65,12.07 178.98,12.07 174.67,15.21 176.31,20.28 172.00,17.15 167.69,20.28 169.33,15.21 165.02,12.07 170.35,12.07" fill="#E01B24"/>
+  <polygon points="206.00,48.00 207.41,52.35 211.98,52.35 208.28,55.03 209.69,59.38 206.00,56.69 202.31,59.38 203.72,55.03 200.02,52.35 204.59,52.35" fill="#2E6FBF"/>
+  <text x="46" y="82" fill="#1B4F9C" font-family="'Be Vietnam Pro', ui-sans-serif, system-ui, sans-serif" font-size="52" font-weight="800" letter-spacing="1.5">GITA</text>
+</svg>
