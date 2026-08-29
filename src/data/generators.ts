@@ -14,61 +14,21 @@
  * authored size without ever shipping an item whose key was typed by hand.
  */
 
-import type { DifficultyBand, Question } from '../types.ts';
+import type { Question } from '../types.ts';
 import { makeRng } from '../lib/util.ts';
+import { makeChoices, randInt, pick, type Generator } from './generator-kit.ts';
+import { ALGEBRA_GENERATORS } from './generators-algebra.ts';
+import { ADVANCED_GENERATORS } from './generators-advanced.ts';
+import { DATA_GENERATORS } from './generators-data.ts';
+import { GEOMETRY_GENERATORS } from './generators-geometry.ts';
 
-interface GenContext {
-  rng: () => number;
-  /** Deterministic index, used to build stable ids. */
-  index: number;
-}
 
-type Generator = {
-  id: string;
-  skill: string;
-  domain: Question['domain'];
-  band: DifficultyBand;
-  irt: { a: number; b: number };
-  targetSeconds: number;
-  build(ctx: GenContext): Omit<Question, 'id' | 'section' | 'domain' | 'skill' | 'band' | 'irt' | 'targetSeconds'>;
-};
 
-/** Random integer in [min, max]. */
-function randInt(rng: () => number, min: number, max: number): number {
-  return min + Math.floor(rng() * (max - min + 1));
-}
-
-function pick<T>(rng: () => number, items: readonly T[]): T {
-  return items[Math.floor(rng() * items.length)];
-}
-
-/** Builds four labelled choices from [key, ...wrong], shuffled deterministically. */
-function makeChoices(
-  rng: () => number,
-  key: string,
-  wrong: readonly string[],
-  notes: readonly string[],
-): { choices: Question['choices']; answer: string; distractorNotes: Record<string, string> } {
-  const entries = [{ text: key, note: null as string | null }, ...wrong.map((text, i) => ({ text, note: notes[i] ?? '' }))];
-  // Fisher–Yates on a copy.
-  for (let i = entries.length - 1; i > 0; i -= 1) {
-    const j = Math.floor(rng() * (i + 1));
-    [entries[i], entries[j]] = [entries[j], entries[i]];
-  }
-  const ids = ['A', 'B', 'C', 'D'];
-  const choices = entries.map((entry, i) => ({ id: ids[i], text: entry.text }));
-  const answer = ids[entries.findIndex((e) => e.note === null)];
-  const distractorNotes: Record<string, string> = {};
-  entries.forEach((entry, i) => {
-    if (entry.note !== null) distractorNotes[ids[i]] = entry.note;
-  });
-  return { choices, answer, distractorNotes };
-}
 
 const GENERATORS: Generator[] = [
   /* ---------- Linear equation in one variable ---------- */
   {
-    id: 'gen_lin1',
+    id: 'gen_lin1_easy',
     skill: 'linear-equations-1var',
     domain: 'algebra',
     band: 'easy',
@@ -103,7 +63,7 @@ const GENERATORS: Generator[] = [
 
   /* ---------- Slope from two points ---------- */
   {
-    id: 'gen_slope',
+    id: 'gen_slope_easy',
     skill: 'linear-equations-2var',
     domain: 'algebra',
     band: 'easy',
@@ -131,14 +91,14 @@ const GENERATORS: Generator[] = [
           'Inverts the ratio, computing run over rise.',
           'Uses only the vertical change, omitting the division.',
         ]),
-        explanation: `Slope = (${y2} − ${y1}) / (${x2} − ${x1}) = ${y2 - y1} / ${run} = ${slope}.`,
+        explanation: `Slope is the change in y divided by the change in x: (${y2} − ${y1}) / (${x2} − ${x1}) = ${y2 - y1} / ${run} = ${slope}. The order matters only in that it must be consistent — subtracting both coordinates in the same direction. Reversing one but not the other flips the sign, which is the most common slip here.`,
       };
     },
   },
 
   /* ---------- Systems of two linear equations ---------- */
   {
-    id: 'gen_system',
+    id: 'gen_system_med',
     skill: 'linear-systems',
     domain: 'algebra',
     band: 'medium',
@@ -173,7 +133,7 @@ const GENERATORS: Generator[] = [
 
   /* ---------- Quadratic: sum and product of roots ---------- */
   {
-    id: 'gen_quad_roots',
+    id: 'gen_quad_roots_med',
     skill: 'nonlinear-equations',
     domain: 'advanced-math',
     band: 'medium',
@@ -206,7 +166,7 @@ const GENERATORS: Generator[] = [
 
   /* ---------- Percent change ---------- */
   {
-    id: 'gen_percent',
+    id: 'gen_percent_med',
     skill: 'percentages',
     domain: 'problem-solving-data',
     band: 'medium',
@@ -238,7 +198,7 @@ const GENERATORS: Generator[] = [
 
   /* ---------- Rate and unit conversion ---------- */
   {
-    id: 'gen_rate',
+    id: 'gen_rate_easy',
     skill: 'ratios-rates-units',
     domain: 'problem-solving-data',
     band: 'easy',
@@ -264,14 +224,14 @@ const GENERATORS: Generator[] = [
           'Computes the output for one hour only.',
           'Halves the correct total.',
         ]),
-        explanation: `${hours} hours is ${minutes} minutes, and ${perMinute} × ${minutes} = ${total.toLocaleString('en-US')} units.`,
+        explanation: `Convert before applying the rate: ${hours} hours is ${hours} × 60 = ${minutes} minutes, and ${perMinute} × ${minutes} = ${total.toLocaleString('en-US')} units. Writing the conversion as a fraction makes it check itself — the minutes cancel and units remain, which is the signal that the setup is right before any arithmetic happens.`,
       };
     },
   },
 
   /* ---------- Right triangle: Pythagorean triple ---------- */
   {
-    id: 'gen_pyth',
+    id: 'gen_pyth_med',
     skill: 'right-triangles-trig',
     domain: 'geometry-trigonometry',
     band: 'medium',
@@ -302,7 +262,7 @@ const GENERATORS: Generator[] = [
 
   /* ---------- Exponential growth ---------- */
   {
-    id: 'gen_exponential',
+    id: 'gen_exponential_hard',
     skill: 'nonlinear-functions',
     domain: 'advanced-math',
     band: 'hard',
@@ -335,7 +295,7 @@ const GENERATORS: Generator[] = [
 
   /* ---------- Circle: area and circumference ---------- */
   {
-    id: 'gen_circle',
+    id: 'gen_circle_easy',
     skill: 'circles',
     domain: 'geometry-trigonometry',
     band: 'easy',
@@ -353,20 +313,22 @@ const GENERATORS: Generator[] = [
         calculatorUseful: false,
         prompt: `A circle has a radius of ${r}. What is its ${askArea ? 'area' : 'circumference'}?`,
         ...makeChoices(rng, key, wrong, [
-          askArea ? 'Uses the circumference formula 2πr.' : 'Uses the area formula πr².',
-          'Omits the squaring or the factor of 2.',
-          'Doubles the correct result.',
+          askArea
+            ? 'Applied the circumference formula 2πr, which measures a length rather than a region.'
+            : 'Applied the area formula πr², which measures a region rather than a length.',
+          'Dropped the squaring, or the factor of 2, from the formula.',
+          'Doubled the correct result, usually by applying the factor of 2 twice.',
         ]),
         explanation: askArea
-          ? `Area = πr² = π(${r}²) = ${r * r}π.`
-          : `Circumference = 2πr = 2π(${r}) = ${2 * r}π.`,
+          ? `Area = πr² = π(${r})² = ${r * r}π. Both formulas are on the reference sheet, so the work here is choosing between them rather than recalling them: area is a region and comes out in square units, circumference is a distance around the edge.`
+          : `Circumference = 2πr = 2π(${r}) = ${2 * r}π. Both formulas are on the reference sheet, so the work here is choosing between them rather than recalling them: circumference is a distance around the edge, area is the region enclosed.`,
       };
     },
   },
 
   /* ---------- Mean of a data set (SPR) ---------- */
   {
-    id: 'gen_mean',
+    id: 'gen_mean_med',
     skill: 'one-variable-data',
     domain: 'problem-solving-data',
     band: 'medium',
@@ -398,7 +360,7 @@ const GENERATORS: Generator[] = [
 
   /* ---------- Linear inequality with a constraint ---------- */
   {
-    id: 'gen_inequality',
+    id: 'gen_inequality_med',
     skill: 'linear-inequalities',
     domain: 'algebra',
     band: 'medium',
@@ -428,7 +390,7 @@ const GENERATORS: Generator[] = [
 
   /* ---------- Probability from a two-way table ---------- */
   {
-    id: 'gen_probability',
+    id: 'gen_probability_med',
     skill: 'probability',
     domain: 'problem-solving-data',
     band: 'medium',
@@ -470,6 +432,22 @@ const GENERATORS: Generator[] = [
   },
 ];
 
+/* ------------------------------------------------------------------ */
+/* The full catalogue                                                  */
+/*                                                                     */
+/* Split by domain so each file stays readable; composed here so there  */
+/* is exactly one list the emitter walks. A generator appearing in two  */
+/* lists would emit its items twice under two sets of ids.              */
+/* ------------------------------------------------------------------ */
+
+export const ALL_GENERATORS: Generator[] = [
+  ...GENERATORS,
+  ...ALGEBRA_GENERATORS,
+  ...ADVANCED_GENERATORS,
+  ...DATA_GENERATORS,
+  ...GEOMETRY_GENERATORS,
+];
+
 /**
  * Why a generated item can still be invalid.
  *
@@ -479,12 +457,33 @@ const GENERATORS: Generator[] = [
  * that impossible, each draw is validated and rejected draws are re-rolled
  * with the next seed. An item only reaches the bank if it passes.
  */
+/**
+ * Canonical form of a choice, for detecting options that differ only in how a
+ * number was formatted.
+ *
+ * "2.00π" and "2.0π" are the same option wearing two costumes, and a
+ * text-equality check waves both through — which is how an item shipped with
+ * two identical distractors and, effectively, a one-in-three guess. Every
+ * numeric token is normalised to its value so the comparison is on meaning.
+ */
+function canonicalChoice(text: string): string {
+  return text
+    .trim()
+    .replace(/\u2212/g, '-')
+    .replace(/-?\d+(?:\.\d+)?/g, (n) => String(Number(n)))
+    .replace(/\s+/g, ' ');
+}
+
 export function validateGenerated(item: Question): string | null {
   if (item.format === 'mcq') {
     if (!item.choices || item.choices.length !== 4) return 'expected exactly four choices';
     const texts = item.choices.map((c) => c.text.trim());
     if (texts.some((t) => t === '')) return 'empty choice text';
     if (new Set(texts).size !== texts.length) return 'duplicate choice text';
+    const canonical = texts.map(canonicalChoice);
+    if (new Set(canonical).size !== canonical.length) {
+      return 'two choices are the same value formatted differently';
+    }
     if (!item.choices.some((c) => c.id === item.answer)) return 'key not among choices';
   } else {
     const answers = Array.isArray(item.answer) ? item.answer : [item.answer];
@@ -499,16 +498,19 @@ export function validateGenerated(item: Question): string | null {
 
 const MAX_REROLLS = 60;
 
+/** Half-width of the difficulty spread applied within one template's band. */
+const BAND_SPREAD = 0.32;
+
 /**
  * Emits `perGenerator` items from every template, with ids and content fully
  * determined by `seed` so the bank is identical on every device and reload.
  * A template that cannot produce a valid item within `MAX_REROLLS` draws is
  * skipped rather than allowed to ship something broken.
  */
-export function generateMathItems(seed = 20260801, perGenerator = 4): Question[] {
+export function generateMathItems(seed = 20260801, perGenerator = 10): Question[] {
   const out: Question[] = [];
 
-  GENERATORS.forEach((generator, gi) => {
+  ALL_GENERATORS.forEach((generator, gi) => {
     for (let i = 0; i < perGenerator; i += 1) {
       for (let attempt = 0; attempt < MAX_REROLLS; attempt += 1) {
         const rng = makeRng(seed + gi * 9973 + i * 131 + attempt * 7717);
@@ -522,7 +524,17 @@ export function generateMathItems(seed = 20260801, perGenerator = 4): Question[]
             // Spread difficulty slightly within the template so a module drawn
             // entirely from generated items is not artificially flat.
             a: generator.irt.a,
-            b: generator.irt.b + (i - (perGenerator - 1) / 2) * 0.28,
+            /*
+             * Spread difficulty within the template so a module drawn entirely
+             * from generated items is not artificially flat — but bounded, so a
+             * template emitting ten items does not push its extremes out of the
+             * band it is labelled with.
+             */
+            b:
+              generator.irt.b +
+              (perGenerator > 1
+                ? ((i - (perGenerator - 1) / 2) / ((perGenerator - 1) / 2)) * BAND_SPREAD
+                : 0),
           },
           targetSeconds: generator.targetSeconds,
           provenance: { author: 'SAT365 generator', reviewed: true, added: '2026-08-01' },
@@ -540,4 +552,7 @@ export function generateMathItems(seed = 20260801, perGenerator = 4): Question[]
   return out;
 }
 
-export const GENERATOR_COUNT = GENERATORS.length;
+export const GENERATOR_COUNT = ALL_GENERATORS.length;
+
+export type { GenContext, Generator } from './generator-kit.ts';
+export { makeChoices, randInt, pick } from './generator-kit.ts';

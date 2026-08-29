@@ -9,7 +9,7 @@ beyond React.
 ```bash
 npm run dev          # dev server on :3000
 npm run typecheck    # tsc --noEmit
-npm test             # 232 unit tests (node --test, native TS stripping)
+npm test             # 242 unit tests (node --test, native TS stripping)
 npm run check:bank   # item bank invariants
 npm run build        # typecheck then production build
 npm run test:browser # 87 checks against the built app via Playwright
