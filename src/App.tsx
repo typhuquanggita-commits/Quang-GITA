@@ -14,6 +14,7 @@ import { TopicList, TopicDetail } from '@/pages/Topics';
 import Exams from '@/pages/Exams';
 import { PaperList, PaperView } from '@/pages/Papers';
 import Playbook from '@/pages/Playbook';
+import Formulas from '@/pages/Formulas';
 import Gita from '@/pages/Gita';
 import Library from '@/pages/Library';
 import Roles from '@/pages/Roles';
@@ -71,6 +72,9 @@ export default function App() {
       break;
     case 'playbook':
       page = <Playbook />;
+      break;
+    case 'formulas':
+      page = <Formulas />;
       break;
     case 'gita':
       page = <Gita />;
