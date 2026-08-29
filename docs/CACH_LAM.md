@@ -295,6 +295,18 @@ ENGWIN365 · MATH365 · SAT365 · HSA365 dùng chung năm tầng của GITA365,
 riêng tín hiệu vào bốn băng. Xem trạng thái sáu mốc của từng tuyến ở màn
 **Bốn tuyến chuyên môn** (Super Admin · Admin hệ thống).
 
+### Học phí và hợp đồng của một tuyến
+
+**Học phí riêng.** Kho `HP_*` chỉ của GITA365. Tuyến mới đặt kho riêng
+`<MÃ TUYẾN>_HOCPHI`, không sửa vào `HP_*`.
+
+**Hợp đồng riêng.** Đặt kho `<MÃ TUYẾN>_HOPDONG`, mỗi bản ghi mang trường
+`ma` khớp mã điều trong `G.HD_CHUAN` (HD-01 … HD-14). Thiếu điều nào thì
+màn *Bốn tuyến chuyên môn* liệt kê ra đúng điều ấy, và mốc M7 chưa đạt.
+
+Bảy điều ở `G.HD_RIENG` là phần tuyến tự quyết — **không chép từ tuyến
+khác**. Bản chuẩn là danh sách kiểm, không thay luật sư.
+
 ### Mang chuẩn một tuyến về
 
 1. Viết vào `kho-goc/data.<tên tuyến>.js`, đặt tên kho theo tiền tố mã

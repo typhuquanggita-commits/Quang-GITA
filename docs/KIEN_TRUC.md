@@ -267,6 +267,45 @@ của nó vào `MO_RA` trong cùng một lần sửa. Ngược lại, một màn
 nghề thì cứ để nó hiện thẻ xin cấp phép — thẻ ấy còn nói được là khoá ở
 đâu và mở bằng cách nào, hơn hẳn một cái khung rỗng.
 
+## Học phí và hợp đồng — riêng từng tuyến, không mượn của nhau
+
+Chủ Học viện chốt hai điều, và cả hai được khoá vào dữ liệu chứ không
+chỉ ghi trong tài liệu:
+
+**1. Tuyến nào có chính sách học phí độc lập tuyến đó.** Kho `HP_*` là
+học phí của **riêng GITA365** — chương trình năm tầng đã lập trình từ
+đầu. `G.HP_PHAM_VI` khai rõ điều ấy, và màn *Học phí năm tầng* in nó
+ngay đầu màn, trước cả bảng giá. Tuyến mới có học phí thì đặt kho riêng
+theo tiền tố (`MATH365_HOCPHI`), không sửa vào `HP_*`.
+
+Vì sao phải ghi phạm vi: hệ đã có bốn tuyến chạy song song. Một bảng giá
+không ghi phạm vi thì tới lúc bán tuyến khác, người tư vấn mở đúng bảng
+này ra đọc — và **đọc sai giá cho khách là chuyện không rút lại được.**
+
+**2. Tuyến nào biên soạn hợp đồng theo quy định riêng tuyến đó.** Mốc
+**M7** của một tuyến. `G.HD_CHUAN` là **danh sách kiểm**, không phải hợp
+đồng: mười bốn điều mà hợp đồng của bất kỳ tuyến nào cũng phải có, mỗi
+điều kèm *thiếu thì rủi ro gì*. `G.HD_RIENG` là bảy điều mỗi tuyến **tự
+quyết** — học phí, danh mục giao, mốc nghiệm thu, điều kiện hoàn, nhịp
+buổi, ai được dẫn, ngưỡng chuyển tuyến. Chép phần B giữa các tuyến là
+sai ngay từ gốc.
+
+**Vì sao không viết sẵn điều khoản.** Điều khoản có hiệu lực phải do
+người có thẩm quyền pháp lý soạn và gắn với pháp nhân đứng tên — mà pháp
+nhân hiện còn để trống trong `LICENSE` và `NOTICE`. Viết sẵn một bản hợp
+đồng đọc như thật rồi để đó là tạo ra thứ nguy hiểm nhất: **một văn bản
+trông có hiệu lực mà không có.**
+
+### Đạt rỗng — bẫy gặp ngay khi dựng phần này
+
+Bản đầu của `G.hdConThieu()` lọc trên `G.HD_CHUAN || []`. Với tài khoản
+chưa được cấp phép kho nghề, `HD_CHUAN` không tồn tại, nên phép lọc chạy
+trên mảng rỗng và trả về **"không thiếu điều nào"** — bài kiểm xanh vì
+không có gì để kiểm, chứ không phải vì hợp đồng đã đủ.
+
+Nay hàm trả `null` khi bản chuẩn chưa nạp, và bộ kiểm có một mục chỉ để
+canh đúng chuyện đó: tạm xoá `HD_CHUAN` rồi hỏi lại, phải nhận `null`.
+
 ## Chiều sâu năm lớp — mỗi mô thức, năm cấp nghề làm được năm việc
 
 Hệ thống có sẵn hai trục, và cả hai đã được đặt đúng từ trước:

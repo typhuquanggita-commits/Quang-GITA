@@ -74,7 +74,13 @@ const NGHE = [
   /* Chiều sâu năm lớp: nói rõ ở cấp nghề nào thì làm được gì và CHƯA làm
      được gì. Đây là bản đồ năng lực nội bộ của Học viện — mở ra công khai
      là chỉ cho đối thủ đúng cách dựng đội ngũ. Ở gói NGHỀ. */
-  'MT_SAU', 'SAU_BOICANH', 'SAU_TRUONG_CAP', 'SAU_TRUONG_CHUNG', 'SAU_LUAT','MOTHUC', 'SACH', 'BANDO_A3', 'POSTER', 'SODO', 'PHACDO',
+  'MT_SAU', 'SAU_BOICANH', 'SAU_TRUONG_CAP', 'SAU_TRUONG_CHUNG', 'SAU_LUAT',
+  /* Chuẩn hợp đồng theo tuyến: nó liệt kê mọi điều khoản Học viện tự
+     buộc mình phải có, kèm rủi ro khi thiếu. Đưa ra công khai là đưa cho
+     đối thủ bản đồ pháp lý và cho bên tranh chấp danh sách chỗ yếu. */
+  'HD_CHUAN', 'HD_RIENG', 'HD_LUAT',
+  /* Phạm vi học phí: nói rõ bảng giá này chỉ của GITA365. */
+  'HP_PHAM_VI','MOTHUC', 'SACH', 'BANDO_A3', 'POSTER', 'SODO', 'PHACDO',
   'DIEMCHAM', 'NGONTU', 'NGONTU_TANG', 'THAYVI', 'MAUTHOAI', 'PERSONA',
   'CHUAN1000', 'HAILONG', 'TAILIEU', 'AIPOLICY', 'KPI', 'DINHTUYEN', 'AINANGCAP',
   'LACHAN', 'BENCH', 'BENCH_AI',

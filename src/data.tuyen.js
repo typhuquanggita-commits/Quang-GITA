@@ -167,9 +167,12 @@ G.TUYEN_MOC = [
   { ma:'M5', ten:'Gói cấp phép đã mã hoá',
     y:'Nội dung tuyến phải nằm trong gói .enc riêng, để bán tuyến này mà không mở tuyến kia.',
     do:'goi' },
-  { ma:'M6', ten:'Học phí đã chốt',
-    y:'Chưa có giá thì Tư vấn không nói chuyện tiền được, và tuyến mở ra là mở nửa vời.',
-    do:'hocphi' }
+  { ma:'M6', ten:'Học phí riêng của tuyến',
+    y:'Mỗi tuyến một chính sách học phí ĐỘC LẬP — không dùng bảng giá của tuyến khác. Chưa có giá của chính tuyến này thì Tư vấn không nói chuyện tiền được, và mở ra là mở nửa vời.',
+    do:'hocphi' },
+  { ma:'M7', ten:'Hợp đồng riêng của tuyến',
+    y:'Mỗi tuyến biên soạn hợp đồng theo quy định của chính tuyến ấy: mười bốn điều chung ở G.HD_CHUAN không được bỏ điều nào, bảy điều riêng ở G.HD_RIENG phải do người phụ trách tuyến tự quyết. Nhận tiền của gia đình khi chưa có văn bản ghi rõ giao gì và hoàn thế nào là đặt cả hai bên vào chỗ không có đường lui.',
+    do:'hopdong' }
 ];
 
 /* ══════════ D · HÌNH DẠNG CHUẨN BĂNG PHẢI CÓ ══════════
@@ -218,8 +221,47 @@ G.tuyenDatMoc = function(maTuyen){
     kichban: goc ? true : !!G[t.ma + '_KICHBAN'],
     do:      goc ? true : !!G[t.ma + '_DO'],
     goi:     daNap.indexOf(G.goiNghe(maTuyen)) >= 0,
-    hocphi:  goc ? G.hpDaCoGia ? G.hpDaCoGia() : false : !!G[t.ma + '_HOCPHI']
+    /* Học phí: tuyến gốc đọc kho HP_* (chương trình năm tầng đã lập trình
+       từ đầu, chỉ áp cho GITA365); tuyến mới đọc kho riêng của nó. Không
+       tuyến nào mượn bảng giá của tuyến nào. */
+    hocphi:  goc ? (G.hpDaCoGia ? G.hpDaCoGia() : false) : !!G[t.ma + '_HOCPHI'],
+    /* Hợp đồng: phải có kho riêng của tuyến VÀ phủ đủ mười bốn điều chuẩn.
+       Có kho mà thiếu điều là chưa đạt — thiếu một điều là bỏ một lớp bảo
+       vệ, và lớp bị bỏ luôn là lớp cần tới đúng lúc khó nhất. */
+    hopdong: G.hdDuChuan ? G.hdDuChuan(maTuyen) : false
   };
+};
+
+/* Hợp đồng của một tuyến đã phủ đủ mười bốn điều chuẩn chưa.
+   Kho hợp đồng của tuyến đặt tên theo tiền tố: GITA365_HOPDONG,
+   MATH365_HOPDONG… mỗi bản ghi mang trường `ma` khớp mã điều chuẩn. */
+G.hdDuChuan = function(maTuyen){
+  var t = G.tuyen(maTuyen); if(!t) return false;
+  var hd = G[t.ma + '_HOPDONG'];
+  if(!hd || !hd.length) return false;
+  var can = (G.HD_CHUAN || []).map(function(x){ return x.ma; });
+  if(!can.length) return false;
+  var co = {};
+  hd.forEach(function(x){ if(x && x.ma) co[x.ma] = true; });
+  for(var i = 0; i < can.length; i++) if(!co[can[i]]) return false;
+  return true;
+};
+
+/* Điều nào của bản chuẩn mà hợp đồng tuyến này còn thiếu.
+
+   Trả về NULL khi chưa nạp được bản chuẩn — không trả mảng rỗng. Bản
+   chuẩn nằm trong kho nghề, nên tài khoản chưa được cấp phép sẽ không
+   có nó; lọc trên một mảng rỗng cho ra "không thiếu điều nào", và đó là
+   ĐẠT RỖNG: bài kiểm xanh vì không có gì để kiểm, chứ không phải vì mọi
+   thứ đã đủ. */
+G.hdConThieu = function(maTuyen){
+  var can = G.HD_CHUAN;
+  if(!can || !can.length) return null;
+  var t = G.tuyen(maTuyen);
+  if(!t) return can.map(function(x){ return x.ma; });
+  var hd = G[t.ma + '_HOPDONG'] || [], co = {};
+  hd.forEach(function(x){ if(x && x.ma) co[x.ma] = true; });
+  return can.filter(function(x){ return !co[x.ma]; }).map(function(x){ return x.ma; });
 };
 
 /* ══════════ E · TUYẾN CỦA MỘT TÀI KHOẢN ══════════

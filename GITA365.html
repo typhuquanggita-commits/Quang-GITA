@@ -1197,7 +1197,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '7.9',
+  version: '8.0',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -2346,9 +2346,12 @@ G.TUYEN_MOC = [
   { ma:'M5', ten:'Gói cấp phép đã mã hoá',
     y:'Nội dung tuyến phải nằm trong gói .enc riêng, để bán tuyến này mà không mở tuyến kia.',
     do:'goi' },
-  { ma:'M6', ten:'Học phí đã chốt',
-    y:'Chưa có giá thì Tư vấn không nói chuyện tiền được, và tuyến mở ra là mở nửa vời.',
-    do:'hocphi' }
+  { ma:'M6', ten:'Học phí riêng của tuyến',
+    y:'Mỗi tuyến một chính sách học phí ĐỘC LẬP — không dùng bảng giá của tuyến khác. Chưa có giá của chính tuyến này thì Tư vấn không nói chuyện tiền được, và mở ra là mở nửa vời.',
+    do:'hocphi' },
+  { ma:'M7', ten:'Hợp đồng riêng của tuyến',
+    y:'Mỗi tuyến biên soạn hợp đồng theo quy định của chính tuyến ấy: mười bốn điều chung ở G.HD_CHUAN không được bỏ điều nào, bảy điều riêng ở G.HD_RIENG phải do người phụ trách tuyến tự quyết. Nhận tiền của gia đình khi chưa có văn bản ghi rõ giao gì và hoàn thế nào là đặt cả hai bên vào chỗ không có đường lui.',
+    do:'hopdong' }
 ];
 
 /* ══════════ D · HÌNH DẠNG CHUẨN BĂNG PHẢI CÓ ══════════
@@ -2397,8 +2400,47 @@ G.tuyenDatMoc = function(maTuyen){
     kichban: goc ? true : !!G[t.ma + '_KICHBAN'],
     do:      goc ? true : !!G[t.ma + '_DO'],
     goi:     daNap.indexOf(G.goiNghe(maTuyen)) >= 0,
-    hocphi:  goc ? G.hpDaCoGia ? G.hpDaCoGia() : false : !!G[t.ma + '_HOCPHI']
+    /* Học phí: tuyến gốc đọc kho HP_* (chương trình năm tầng đã lập trình
+       từ đầu, chỉ áp cho GITA365); tuyến mới đọc kho riêng của nó. Không
+       tuyến nào mượn bảng giá của tuyến nào. */
+    hocphi:  goc ? (G.hpDaCoGia ? G.hpDaCoGia() : false) : !!G[t.ma + '_HOCPHI'],
+    /* Hợp đồng: phải có kho riêng của tuyến VÀ phủ đủ mười bốn điều chuẩn.
+       Có kho mà thiếu điều là chưa đạt — thiếu một điều là bỏ một lớp bảo
+       vệ, và lớp bị bỏ luôn là lớp cần tới đúng lúc khó nhất. */
+    hopdong: G.hdDuChuan ? G.hdDuChuan(maTuyen) : false
   };
+};
+
+/* Hợp đồng của một tuyến đã phủ đủ mười bốn điều chuẩn chưa.
+   Kho hợp đồng của tuyến đặt tên theo tiền tố: GITA365_HOPDONG,
+   MATH365_HOPDONG… mỗi bản ghi mang trường `ma` khớp mã điều chuẩn. */
+G.hdDuChuan = function(maTuyen){
+  var t = G.tuyen(maTuyen); if(!t) return false;
+  var hd = G[t.ma + '_HOPDONG'];
+  if(!hd || !hd.length) return false;
+  var can = (G.HD_CHUAN || []).map(function(x){ return x.ma; });
+  if(!can.length) return false;
+  var co = {};
+  hd.forEach(function(x){ if(x && x.ma) co[x.ma] = true; });
+  for(var i = 0; i < can.length; i++) if(!co[can[i]]) return false;
+  return true;
+};
+
+/* Điều nào của bản chuẩn mà hợp đồng tuyến này còn thiếu.
+
+   Trả về NULL khi chưa nạp được bản chuẩn — không trả mảng rỗng. Bản
+   chuẩn nằm trong kho nghề, nên tài khoản chưa được cấp phép sẽ không
+   có nó; lọc trên một mảng rỗng cho ra "không thiếu điều nào", và đó là
+   ĐẠT RỖNG: bài kiểm xanh vì không có gì để kiểm, chứ không phải vì mọi
+   thứ đã đủ. */
+G.hdConThieu = function(maTuyen){
+  var can = G.HD_CHUAN;
+  if(!can || !can.length) return null;
+  var t = G.tuyen(maTuyen);
+  if(!t) return can.map(function(x){ return x.ma; });
+  var hd = G[t.ma + '_HOPDONG'] || [], co = {};
+  hd.forEach(function(x){ if(x && x.ma) co[x.ma] = true; });
+  return can.filter(function(x){ return !co[x.ma]; }).map(function(x){ return x.ma; });
 };
 
 /* ══════════ E · TUYẾN CỦA MỘT TÀI KHOẢN ══════════
@@ -15025,6 +15067,18 @@ G.VIEWS['hoc-phi'] = function(){
     t:'Học phí năm tầng và cách nói chuyện tiền',
     lead:'Năm tầng, mỗi tầng gồm gì và thu theo nhịp nào. Bảy luật nói chuyện tiền. Mười tám kịch bản dùng được ngay: khách hỏi giá quá sớm, khách kêu đắt, khách xin giảm, khách so giá, khách đòi cam kết kết quả, khách chậm đóng, khách xin dừng giữa chặng.'});
 
+  /* Phạm vi đứng TRƯỚC mọi thứ khác: hệ đã có bốn tuyến, và một bảng giá
+     không ghi phạm vi thì người tư vấn sẽ mở đúng bảng này ra báo giá cho
+     tuyến khác. Đọc sai giá cho khách là chuyện không rút lại được. */
+  var PV = G.HP_PHAM_VI;
+  if(PV)
+    o += '<div class="card mb" style="border-left:3px solid var(--gita)">'+
+      '<div class="row" style="gap:9px;align-items:baseline;flex-wrap:wrap">'+
+        '<span class="tiny up muted">CHỈ ÁP CHO</span>'+
+        U.chip(PV.tuyen, 'var(--gita)')+
+        '<b class="sm" style="flex:1;min-width:200px">'+h(PV.ten)+'</b></div>'+
+      '<p class="sm mt" style="line-height:1.7">'+h(PV.y)+'</p></div>';
+
   /* Cảnh báo khi chưa điền giá — hiện ngay đầu màn, không giấu ở cuối */
   if(!coGia){
     o += '<div class="card mb" style="border-color:rgba(251,146,60,.45);background:rgba(251,146,60,.07)">'+
@@ -15476,6 +15530,10 @@ function o1(dat){
   return dat ? '<span style="color:var(--ok);font-weight:700">✓</span>'
              : '<span style="color:var(--gita-do-ink);font-weight:700">✕</span>';
 }
+function o1x(dat){
+  return dat ? '<span class="chip" style="color:var(--ok);border-color:var(--ok)">đã có</span>'
+             : '<span class="chip" style="color:var(--gita-do-ink);border-color:var(--gita-do)">chưa có</span>';
+}
 
 G.VIEWS['tuyen'] = function(){
   /* Bảng này lộ toàn bộ kế hoạch sản phẩm của Học viện — tuyến nào sắp
@@ -15543,6 +15601,63 @@ G.VIEWS['tuyen'] = function(){
               '<span class="mono sm">'+h(G.goiNghe(t.ma))+'</span>',
               '<span class="mono sm">'+h(G.goiTang(t.ma,1))+' … '+h(G.goiTang(t.ma,5))+'</span>'];
     })) +'</div>';
+
+  /* ── HỢP ĐỒNG RIÊNG TỪNG TUYẾN ── */
+  o += U.sec('HỢP ĐỒNG RIÊNG CỦA TỪNG TUYẾN',
+    'Mỗi tuyến biên soạn hợp đồng theo quy định của chính tuyến ấy — mười bốn điều chung không bỏ điều nào, bảy điều riêng không chép từ tuyến khác');
+
+  o += '<div class="card" style="border-left:3px solid var(--gita-do-ink)">'+
+    '<p class="sm" style="line-height:1.75">Bảng dưới đếm theo <b>kho hợp đồng của chính tuyến</b> '+
+    '(<span class="mono">&lt;MÃ TUYẾN&gt;_HOPDONG</span>), đối chiếu với mười bốn điều ở bản chuẩn. '+
+    'Chưa có kho thì thiếu cả mười bốn.</p>'+
+    '<p class="sm mt" style="line-height:1.75"><b>Bản chuẩn không thay luật sư.</b> Nó là danh sách kiểm. '+
+    'Điều khoản có hiệu lực phải do người có thẩm quyền pháp lý soạn và gắn với pháp nhân đứng tên — '+
+    'mà pháp nhân hiện còn để trống trong <span class="mono">LICENSE</span> và <span class="mono">NOTICE</span>.</p></div>';
+
+  o += U.tbl(['Tuyến','Học phí riêng','Hợp đồng riêng','Điều còn thiếu'],
+    DS.map(function(t){
+      var d = G.tuyenDatMoc(t.ma);
+      var thieu = G.hdConThieu(t.ma);
+      var coChuan = thieu !== null;
+      return ['<b class="sm" style="color:'+t.c+'">'+h(t.ma)+'</b>',
+              o1x(d.hocphi),
+              o1x(d.hopdong),
+              !coChuan
+                ? '<span class="tiny muted">chưa mở được bản chuẩn</span>'
+                : (thieu.length
+                    ? '<span class="tiny mono" style="color:var(--gita-do-ink)">'+
+                      thieu.length+'/14 · '+h(thieu.slice(0,6).join(' '))+
+                      (thieu.length > 6 ? '…' : '')+'</span>'
+                    : '<span class="tiny" style="color:var(--ok)">đủ mười bốn điều</span>')];
+    }));
+
+  o += '<div class="card mt2"><div class="tiny up muted mb">MƯỜI BỐN ĐIỀU CHUNG — KHÔNG TUYẾN NÀO ĐƯỢC BỎ</div>'+
+    (G.HD_CHUAN || []).map(function(x, i){
+      return '<div style="'+(i ? 'border-top:1px solid var(--line);padding-top:13px;margin-top:13px' : '')+'">'+
+        '<div class="row" style="gap:9px;align-items:baseline;flex-wrap:wrap">'+
+          '<b class="mono" style="color:var(--gita)">'+h(x.ma)+'</b>'+
+          U.chip(x.nhom)+
+          '<b class="sm" style="flex:1;min-width:200px">'+h(x.t)+'</b></div>'+
+        '<p class="sm mt" style="line-height:1.7">'+h(x.y)+'</p>'+
+        '<p class="sm mt" style="line-height:1.7;color:var(--gita-do-ink)"><b>Thiếu thì:</b> '+h(x.rui)+'</p></div>';
+    }).join('') +'</div>';
+
+  o += '<div class="card mt2" style="border-color:var(--gita-vien-1)">'+
+    '<div class="tiny up muted mb">BẢY ĐIỀU MỖI TUYẾN TỰ QUYẾT — KHÔNG CHÉP TỪ TUYẾN KHÁC</div>'+
+    (G.HD_RIENG || []).map(function(x, i){
+      return '<div class="row'+(i ? ' mt2' : '')+'" style="gap:10px;align-items:flex-start">'+
+        '<span style="color:var(--gita);font-weight:700;flex:none">'+(i+1)+'</span>'+
+        '<div style="flex:1"><b class="sm">'+h(x.t)+'</b>'+
+        '<p class="sm muted mt" style="line-height:1.7">'+h(x.y)+'</p></div></div>';
+    }).join('') +'</div>';
+
+  o += '<div class="card mt2" style="border-color:var(--gita-do)">'+
+    '<div class="tiny up mb" style="color:var(--gita-do-ink)">NĂM LUẬT</div>'+
+    (G.HD_LUAT || []).map(function(x, i){
+      return '<div style="'+(i ? 'border-top:1px solid var(--line);padding-top:12px;margin-top:12px' : '')+'">'+
+        '<b class="sm">'+h(x.t)+'</b>'+
+        '<p class="sm muted mt" style="line-height:1.7">'+h(x.y)+'</p></div>';
+    }).join('') +'</div>';
 
   /* Hình dạng chuẩn băng — để lúc mang chuẩn về là cắm vào được ngay */
   o += U.sec('CHUẨN BĂNG PHẢI CÓ ĐÚNG NHỮNG TRƯỜNG NÀY','Cùng hình dạng với băng của GITA365 thì hợp nhất là ghép, không phải nắn lại');

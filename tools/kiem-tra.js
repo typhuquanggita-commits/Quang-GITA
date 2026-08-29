@@ -2844,6 +2844,45 @@ const { chromium } = require(PW);
       (thieuSw.length ? 'sw thiếu: ' + thieuSw.join(' ') + ' ' : '') +
       (thuaSw.length ? 'sw thừa: ' + thuaSw.join(' ') : '') || dsIdx.length + ' tệp, khớp cả hai bên');
 
+    /* ── Học phí và hợp đồng: RIÊNG từng tuyến, không mượn của nhau ──
+       Chủ Học viện chốt: tuyến nào có chính sách học phí độc lập tuyến
+       đó, và tuyến nào biên soạn hợp đồng theo quy định riêng tuyến đó.
+       Bài kiểm giữ đúng hai điều ấy ở mức cấu trúc — nội dung là việc
+       của người phụ trách tuyến. */
+    const hd = await p.evaluate(() => {
+      const G = window.G;
+      return {
+        soMoc:   (G.TUYEN_MOC || []).map(m => m.ma),
+        soChuan: (G.HD_CHUAN || []).length,
+        soRieng: (G.HD_RIENG || []).length,
+        pvHP:    (G.HP_PHAM_VI || {}).tuyen,
+        /* Chưa tuyến nào có kho hợp đồng, nên tuyến nào cũng phải báo
+           thiếu đủ mười bốn điều. Báo 0 thiếu ở đây là đạt rỗng. */
+        thieu:   (G.TUYEN || []).map(t => ({
+                   ma: t.ma,
+                   n: (G.hdConThieu(t.ma) || []).length,
+                   du: G.hdDuChuan(t.ma) })),
+        /* Hàm phải trả null khi chưa nạp bản chuẩn — không trả mảng rỗng */
+        rongLaNull: (function(){
+          const giu = G.HD_CHUAN; G.HD_CHUAN = [];
+          const r = G.hdConThieu('GITA365'); G.HD_CHUAN = giu;
+          return r === null; })()
+      };
+    });
+    bao(hd.soMoc.indexOf('M7') >= 0,
+      'bảng mốc có M7 — hợp đồng riêng của tuyến là điều kiện mở tuyến', hd.soMoc.join(' '));
+    bao(hd.soChuan === 14 && hd.soRieng === 7,
+      'bản chuẩn hợp đồng đủ mười bốn điều chung và bảy điều riêng',
+      hd.soChuan + ' chung · ' + hd.soRieng + ' riêng');
+    bao(hd.pvHP === 'GITA365',
+      'bảng học phí năm tầng ghi rõ chỉ áp cho GITA365 — không tuyến nào mượn bảng giá của tuyến nào',
+      hd.pvHP || 'KHÔNG GHI PHẠM VI');
+    bao(hd.thieu.every(x => x.n === 14 && x.du === false),
+      'chưa tuyến nào có hợp đồng riêng, và hệ báo đúng là thiếu cả mười bốn điều',
+      hd.thieu.map(x => x.ma + ':' + x.n).join(' '));
+    bao(hd.rongLaNull,
+      'bản chuẩn chưa nạp thì báo NULL, không báo "không thiếu điều nào" — đạt rỗng là kiểu hỏng nguy hiểm nhất');
+
     /* ── Bốn trụ GITA giữ đủ thành tố của bản chuẩn ──
        Danh sách thành tố dài có chủ ý: nó là thứ phân biệt mô thức này
        với bốn chữ cái viết tắt của nơi khác. Một lần "dọn cho gọn giao

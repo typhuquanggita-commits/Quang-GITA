@@ -123,6 +123,18 @@ G.VIEWS['hoc-phi'] = function(){
     t:'Học phí năm tầng và cách nói chuyện tiền',
     lead:'Năm tầng, mỗi tầng gồm gì và thu theo nhịp nào. Bảy luật nói chuyện tiền. Mười tám kịch bản dùng được ngay: khách hỏi giá quá sớm, khách kêu đắt, khách xin giảm, khách so giá, khách đòi cam kết kết quả, khách chậm đóng, khách xin dừng giữa chặng.'});
 
+  /* Phạm vi đứng TRƯỚC mọi thứ khác: hệ đã có bốn tuyến, và một bảng giá
+     không ghi phạm vi thì người tư vấn sẽ mở đúng bảng này ra báo giá cho
+     tuyến khác. Đọc sai giá cho khách là chuyện không rút lại được. */
+  var PV = G.HP_PHAM_VI;
+  if(PV)
+    o += '<div class="card mb" style="border-left:3px solid var(--gita)">'+
+      '<div class="row" style="gap:9px;align-items:baseline;flex-wrap:wrap">'+
+        '<span class="tiny up muted">CHỈ ÁP CHO</span>'+
+        U.chip(PV.tuyen, 'var(--gita)')+
+        '<b class="sm" style="flex:1;min-width:200px">'+h(PV.ten)+'</b></div>'+
+      '<p class="sm mt" style="line-height:1.7">'+h(PV.y)+'</p></div>';
+
   /* Cảnh báo khi chưa điền giá — hiện ngay đầu màn, không giấu ở cuối */
   if(!coGia){
     o += '<div class="card mb" style="border-color:rgba(251,146,60,.45);background:rgba(251,146,60,.07)">'+
