@@ -44,7 +44,7 @@ G.THUOC_CAP_PHEP = [
   'BANG_GAINS','BANG_REF','REF16','REF_GIAIDOAN','REF_LOI5','CHUOI10','BANDAP',
   'KHACHLON_NGUON','KHACH_TANG','NAM_TANG_PHUCVU','TAM_NAM_TANG','NAC_QUANHE',
   'NAC_TRUNGTHANH','TAM_MATXICH','HOSO68','MUOIHAI_NGUYENTAC','NHANTANG',
-  'NAM_BUOC_KHIEUNAI','GIU124','VISAO_ROIDI','KHACHLON_CAU'
+  'NAM_BUOC_KHIEUNAI','GIU124','VISAO_ROIDI','KHACHLON_CAU','LUAT_LAMVIEC'
 ];
 function donKho(){
   G.THUOC_CAP_PHEP.forEach(function(k){ try{ delete G[k]; }catch(e){ G[k] = undefined; } });
@@ -242,8 +242,56 @@ G.canCapPhep = function (goi) {
   var soTang = laTang ? Number(String(goi).slice(4)) : 0;
   var tenGoi = TEN_GOI[goi] || goi;
 
-  var o = U.ph({ eyebrow: 'PHẦN NÀY CHƯA MỞ', ic: 'lock', t: 'Chưa tới lượt màn hình này',
-    lead: 'Không phải lỗi, và cũng không phải anh chị làm sai. Dưới đây là đúng ba điều: khoá phần nào, vì sao, và mở bằng cách nào.' });
+  /* Người đọc màn này đang muốn LÀM MỘT VIỆC, không muốn đọc một bài giải
+     thích. Nên nút mở đứng trước, giải thích đứng sau — và nút phải hợp với
+     đúng vai đang đăng nhập, không đưa ba lựa chọn để họ tự đoán. */
+  var laChu = G.can && G.can('qt_trang');          /* Super Admin · Admin hệ thống */
+  /* Nạp tệp giấy phép chạy được cả trên web lẫn bản cài — chỉ cần vai được
+     phép. Trước đây tôi gán nhầm là chỉ bản cài mới có. */
+  var napDuoc = !!(G.napDuocGiayPhep && G.napDuocGiayPhep());
+
+  var o = U.ph({ eyebrow: 'PHẦN NÀY CHƯA MỞ', ic: 'lock',
+    t: mau ? 'Bấm một nút là mở' : 'Chưa tới lượt màn hình này',
+    lead: mau
+      ? 'Ứng dụng đang chạy bản mẫu nên kho chuyên môn chưa mở. Chọn đúng một việc bên dưới.'
+      : 'Không phải lỗi, và cũng không phải anh chị làm sai. Dưới đây là đúng ba điều: khoá phần nào, vì sao, và mở bằng cách nào.' });
+
+  /* ── Hàng nút, đặt NGAY ĐẦU màn ── */
+  if(mau){
+    var nut = [];
+    if(napDuoc) nut.push({t:'Nạp tệp giấy phép', act:'gp-mo', pri:1,
+      y:'Tệp .json Học viện cấp. Chọn tệp là mở kho ngay, không cần mạng, không cần máy chủ. '+
+        'Đây là đường nhanh nhất.'});
+    if(laChu) nut.push({t:'Nối máy chủ cấp phép', v:'noi-may-chu', pri:!napDuoc,
+      y:'Dán địa chỉ máy chủ một lần. Từ đó về sau mọi tài khoản đăng nhập là có khoá.'});
+    nut.push({t:'Đăng nhập lại', act:'logout',
+      y:'Đã nối máy chủ rồi mà vẫn khoá thì đăng xuất và vào lại — khoá cấp lúc mở phiên.'});
+    if(!laChu && !napDuoc) nut.push({t:"Đăng ký tài khoản", act:"mo-dang-ky",
+      y:'Chưa có tài khoản thì đăng ký ở Cổng vào, xác nhận email, hệ thống cấp mã số khách hàng.'});
+
+    o += '<div class="card" style="border-color:var(--gita);background:var(--gita-mo-1)">'+
+      '<div class="up mb" style="color:var(--gita-ink)">'+U.ic('arrow','w-4 h-4')+' MỞ NGAY BÂY GIỜ</div>'+
+      nut.map(function(n, j){
+        return '<div class="row" style="gap:12px;align-items:flex-start;'+
+          (j ? 'margin-top:12px;padding-top:12px;border-top:1px solid var(--line)' : '')+'">'+
+          '<button class="btn '+(n.pri ? 'pri' : 'ghost')+'" style="flex:none;min-width:190px"'+
+            (n.v ? ' data-v="'+h(n.v)+'"' : '')+(n.act ? ' data-act="'+h(n.act)+'"' : '')+'>'+
+            h(n.t)+'</button>'+
+          '<p class="sm dim" style="flex:1;min-width:200px;line-height:1.6;margin-top:9px">'+h(n.y)+'</p>'+
+        '</div>';
+      }).join('')+
+      (laChu ? '<p class="tiny muted mt2">Anh chị đang ở vai quản trị — nối máy chủ một lần là mở cho toàn hệ, '+
+               'không phải làm lại trên từng máy.</p>' : '')+
+    '</div>';
+  }
+  else if(!laTang){
+    /* Không phải chế độ mẫu: vai không đủ. Chỉ có một việc làm được. */
+    o += '<div class="card" style="border-color:var(--gita-vien-1)">'+
+      '<div class="row" style="gap:12px;align-items:center;flex-wrap:wrap">'+
+        '<button class="btn ghost" data-act="logout">Đăng nhập bằng vai khác</button>'+
+        '<p class="sm dim" style="flex:1;min-width:220px;line-height:1.6">Gói này thuộc phạm vi vai khác. '+
+        'Cần dùng thật thì nhắn Admin hệ thống cấp thêm quyền cho vai của anh chị.</p></div></div>';
+  }
 
   /* 1 · Khoá phần nào */
   o += '<div class="card" style="border-color:var(--gita-vien-1)">' +

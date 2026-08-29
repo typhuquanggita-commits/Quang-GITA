@@ -155,8 +155,26 @@ G.VIEWS['theo-doi-tai-nguyen'] = function(){
 
   o += U.sec('MỨC DÙNG TÀI NGUYÊN', ds.length ? ds.length + ' tài khoản' : 'Chưa có dữ liệu');
   if(!ds.length){
-    o += '<div class="card"><p class="sm dim">Chưa tài khoản nào được ghi nhận. '+
-      'Số liệu bắt đầu tích khi đội ngũ mở tư liệu trong kho.</p></div>';
+    o += G.khungTrong({
+      ten:'Mức dùng tài nguyên', ic:'chart',
+      seCo:'Mỗi tài khoản trong đội ngũ, số tư liệu KHÁC NHAU đã chạm trong 30 ngày, và tỉ lệ trên tổng kho. '+
+           'Ai vượt ' + Math.round(NGUONG*100) + '% thì hiện cảnh báo kèm mốc thời gian.',
+      khiNao:'Số liệu bắt đầu tích ngay khi một người trong đội ngũ tra kho lần đầu.',
+      aiLam:'Máy đếm tự động. Chỉ Super Admin và Admin hệ thống xem được bảng này.',
+      viSao:'Có một khoảng cách giữa "mở nhiều vì làm nhiều" và "gom cả kho về máy mình". '+
+            'Khoảng cách ấy không nhìn thấy bằng mắt — cả hai đều là những lần bấm mở bình thường. '+
+            'Chỉ tổng lượng và nhịp mới phân biệt được.',
+      viDu:{tieu:'Một dòng cảnh báo trông như thế này', dong:[
+        ['Tài khoản','tuvan@gita365.vn · Tư vấn'],
+        ['Đã chạm','341 / 1.526 tư liệu khác nhau'],
+        ['Tỉ lệ','22,3% — trên ngưỡng ' + Math.round(NGUONG*100) + '%'],
+        ['Trong','30 ngày gần nhất'],
+        ['Việc của Admin','Mở nhật ký xem NHỊP: trải đều theo tuần, hay dồn trong vài buổi']
+      ]},
+      lam:[{t:'Mở nhật ký hệ thống', v:'nhat-ky-ht'},
+           {t:'Xem bảng phân quyền', v:'phan-quyen'}],
+      ghi:'Trên ngưỡng không có nghĩa là làm sai. Gọi một cuộc hỏi trước khi kết luận.'
+    });
   } else {
     o += U.tbl(['Tài khoản','Vai','Đã chạm','Tỉ lệ','Tình trạng'], ds.map(function(x){
       var pt = Math.round(x.ti * 1000) / 10;

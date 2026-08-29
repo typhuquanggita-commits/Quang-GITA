@@ -599,7 +599,10 @@ function render(){
     console.warn('[GITA] ' + G.S.view + ': ' + e.message);
     noiDung = G.canCapPhep(goiCan || 'nen');
   }
-  main.innerHTML = '<div class="view">' + noiDung + '</div>';
+  /* Thanh nhắc đứng trước nội dung: có việc trễ nhịp thì thấy ngay, không
+     phải đi tìm. Không có việc trễ thì không chiếm chỗ. */
+  var nhac = (G.thanhNhac && G.S.view !== 'vong-nhac') ? G.thanhNhac() : '';
+  main.innerHTML = '<div class="view">' + nhac + noiDung + '</div>';
   if(G.watermark) G.watermark();
   /* Khoá sao chép cho tài khoản khách hàng: bật lớp thân trang và gỡ mọi
      đường tải xuống vừa được dựng ra. Phải chạy SAU khi màn hình đã vào

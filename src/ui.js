@@ -136,9 +136,39 @@ U.list = function(arr, c){
         '<span>'+U.h(typeof x==='string'?x:(x.ten||x.t||JSON.stringify(x)))+'</span></li>';
     }).join('')+'</ul>';
 };
-U.empty = function(t,s){
-  return '<div class="card center" style="padding:44px"><div style="opacity:.4;margin-bottom:12px">'+
-    U.ic('seed','w-9 h-9')+'</div><b>'+U.h(t)+'</b>'+(s?'<p class="sm muted mt">'+U.h(s)+'</p>':'')+'</div>';
+/* Màn chưa mở kho: KHÔNG để một dòng "Phần này nằm trong kho nghề" rồi thôi.
+   Người đọc dòng ấy không biết phải làm gì tiếp, và kết luận là hệ thống chưa
+   xong. Nên U.empty nay tự dựng luôn hàng nút mở — đúng nút hợp với vai đang
+   đăng nhập, không đưa ba lựa chọn để người ta tự đoán. */
+U.empty = function(t, s, khongNut){
+  var G = window.G || {};
+  var o = '<div class="card center" style="padding:38px 30px">'+
+    '<div style="opacity:.4;margin-bottom:12px">'+U.ic('seed','w-9 h-9')+'</div>'+
+    '<b style="font-size:16px">'+U.h(t)+'</b>'+
+    (s ? '<p class="sm muted mt" style="max-width:56ch;margin-inline:auto">'+U.h(s)+'</p>' : '')+
+  '</div>';
+
+  if(khongNut || !G.S || !G.S.acc) return o;
+
+  var mau = G.KHO && G.KHO.cheDoMau;
+  if(!mau) return o;
+
+  var napDuoc = !!(G.napDuocGiayPhep && G.napDuocGiayPhep());
+  var laChu   = !!(G.can && G.can('qt_trang'));
+  var nut = [];
+  if(napDuoc) nut.push('<button class="btn pri" data-act="gp-mo">'+U.ic('vault','w-4 h-4')+'Nạp tệp giấy phép</button>');
+  if(laChu)   nut.push('<button class="btn '+(napDuoc?'ghost':'pri')+'" data-v="noi-may-chu">'+
+                       U.ic('orbit','w-4 h-4')+'Nối máy chủ</button>');
+  nut.push('<button class="btn ghost" data-act="logout">'+U.ic('out','w-4 h-4')+'Đăng nhập lại</button>');
+
+  return o + '<div class="card mt2" style="border-color:var(--gita);background:var(--gita-mo-1)">'+
+    '<div class="row" style="gap:11px;align-items:center;flex-wrap:wrap">'+
+      '<b class="sm" style="color:var(--gita-ink)">'+U.ic('arrow','w-4 h-4')+' Mở ngay:</b>'+
+      nut.join('')+
+    '</div>'+
+    '<p class="tiny muted mt">Ứng dụng đang chạy bản mẫu nên bảy gói kho đều chưa có khoá. '+
+    (napDuoc ? 'Nạp tệp giấy phép là đường nhanh nhất — chọn tệp là mở ngay, không cần mạng.'
+             : 'Nhắn Admin hệ thống để được cấp quyền hoặc nối máy chủ.')+'</p></div>';
 };
 U.lockCard = function(msg){
   return '<div class="card center" style="padding:40px"><div style="color:var(--ink-4);margin-bottom:10px">'+

@@ -26,12 +26,21 @@ G.SUA_ND = (function(){
 /* Chữ hiển thị đi qua đây. Bản sửa rỗng coi như chưa sửa. */
 /* Ba lớp, theo đúng thứ tự:
      1. Bản Super Admin sửa tay — cao nhất, ai sửa thì thắng
-     2. Lời nhà mình — khi người đang đăng nhập là phụ huynh, học viên
-        hoặc cộng tác viên
-     3. Lời nghề — bản gốc trong mã nguồn                              */
+     2. Lời học viên — khi người đang đăng nhập là học viên (R14)
+     3. Lời nhà mình — phụ huynh (R13) và cộng tác viên (R15)
+     4. Lời nghề — bản gốc trong mã nguồn
+
+   Bậc 2 rơi xuống bậc 3 chứ không rơi thẳng xuống bậc 4: thiếu một câu ở
+   lời học viên thì em đọc lời nhà mình, không bao giờ đọc phải thuật ngữ
+   nghề.                                                               */
 G.nd = function(khoa, goc){
   var v = G.SUA_ND[khoa];
   if(typeof v === 'string' && v.length) return v;
+
+  if(G.LA_HOC_VIEN && G.LA_HOC_VIEN() && G.NOI_HOCVIEN){
+    var e = G.NOI_HOCVIEN[khoa];
+    if(typeof e === 'string' && e.length) return e;
+  }
   if(G.LA_KHACH && G.LA_KHACH() && G.NOI_KHACH){
     var k = G.NOI_KHACH[khoa];
     if(typeof k === 'string' && k.length) return k;

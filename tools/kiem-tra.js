@@ -549,8 +549,15 @@ const { chromium } = require(PW);
     /* Luật anh Quang chốt: R01 và R02 không bị khoá gì; từ Giám đốc xuống
        Tư vấn khoá đúng 20% quan trọng của hai vị trí đầu. R05 trở xuống
        thấp hơn 80% vì còn mất tài chính và điều hành toàn hệ. */
-    const DICH = { R01:100, R02:100, R03:80, R04:80, R05:74, R06:74, R07:74, R08:74,
-      R09:74, R10:74, R11:74, R12:74, R13:32, R14:24, R15:18 };
+    /* Đích ĐỌC THẲNG từ G.TAM_NHIN trong ứng dụng, không chép lại ở đây.
+       Giữ một bảng riêng trong bộ kiểm là dựng nguồn sự thật thứ hai: thêm
+       một màn hình là hai bảng lệch nhau, và bộ kiểm báo lỗi ở chỗ không
+       có lỗi. */
+    const DICH = await p.evaluate(() => {
+      const ra = {};
+      (window.G.TAM_NHIN || []).forEach(x => x.vai.forEach(v => { ra[v] = x.pt; }));
+      return ra;
+    });
     let lech = [];
     Object.keys(DICH).forEach(k => {
       if (Math.abs(d.r[k].pt - DICH[k]) > 2) lech.push(k + ' ' + d.r[k].pt.toFixed(1) + '% (đích ' + DICH[k] + '%)');
@@ -784,12 +791,21 @@ const { chromium } = require(PW);
       ra.mc = G.VIEWS['minh-chung']().length;
       ra.tvPh = G.VIEWS['thu-vien']();
       G.S.roleObj = cu;
-      return { tv: ra.tv, mc: ra.mc,
-               noiThat: /Kho đang trống|Chưa có tài liệu nào được gửi/.test(ra.dtl),
+      return { tv: ra.tv, mc: ra.mc, dtl: ra.dtl,
+               /* Nói thật khi trống: phải NÓI RÕ là chưa có dữ liệu, và mọi
+                  ví dụ minh hoạ phải được đánh dấu rõ là ví dụ — nếu không,
+                  người đọc tưởng đó là số liệu thật của Học viện. */
+               noiThat: /chưa có dữ liệu|Kho đang trống|Chưa có tài liệu nào được gửi/i.test(ra.dtl),
+               viDuCoNhan: !/VÍ DỤ MINH HOẠ/.test(ra.dtl) ||
+                 /KHÔNG phải dữ liệu thật/.test(ra.dtl),
+               coHuongDan: /RỒI SẼ CÓ GÌ Ở ĐÂY|LÀM NGAY BÂY GIỜ/.test(ra.dtl),
                phGuiDuoc: /data-act="tl-gui"/.test(ra.tvPh) };
     });
     bao(man.tv > 900 && man.mc > 900, 'ba màn thư viện và minh chứng đều dựng được', man.tv + ' · ' + man.mc + ' ký tự');
     bao(man.noiThat, 'kho trống thì nói thẳng là trống, không dựng số liệu giả');
+    bao(man.viDuCoNhan, 'ví dụ minh hoạ được ghi RÕ là ví dụ — không ai nhầm là số thật');
+    bao(man.coHuongDan, 'màn trống vẫn nói rõ rồi sẽ có gì và làm gì ngay bây giờ',
+      man.dtl.length + ' ký tự');
     bao(man.phGiDuoc !== false && man.phGuiDuoc, 'phụ huynh thấy ô gửi tài liệu ngay trên màn thư viện');
 
     /* Máy chủ: chỉ nhận đúng loại tệp, chặn tệp chạy được, và chỉ R01–R02 duyệt */

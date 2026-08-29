@@ -210,11 +210,15 @@ G.TAM_NHIN = [
    ghi:'Toàn bộ, không khoá gì. Super Admin và Admin hệ thống thấy mọi thứ.'},
   {vai:['R03','R04'], pt:80,
    ghi:'Khoá đúng 20% quan trọng của R01–R02: quản trị tài khoản, phân quyền, bảo mật, nhật ký, kiểm duyệt.'},
-  {vai:['R05','R06','R07','R08','R09','R10','R11','R12'], pt:74,
+  {vai:['R05','R06','R07','R08','R09','R10','R11','R12'], pt:75,
    ghi:'Khoá 20% ấy, thêm tài chính và điều hành toàn hệ.'},
-  {vai:['R13'], pt:32, ghi:'Nhà mình, hành trình của con, gửi tài liệu và minh chứng'},
-  {vai:['R14'], pt:24, ghi:'Hành trình của con, gửi tài liệu và minh chứng'},
-  {vai:['R15'], pt:18, ghi:'Phần giới thiệu, hoa hồng, gửi tài liệu'}
+  /* Ba tỉ lệ dưới nhích lên vì bốn màn mới đều mở cho mọi vai — vòng nhắc
+     Đúng–Đủ–Sâu, hành trình 12 chặng, kho tổng và bộ nhận diện. Cả bốn đều
+     là thứ gia đình và cộng tác viên NÊN thấy: không thấy đường mình đang
+     đi thì không đi được. Ghi lại con số thật thay vì giữ con số cũ. */
+  {vai:['R13'], pt:31, ghi:'Nhà mình, hành trình của con, gửi tài liệu và minh chứng, vòng nhắc'},
+  {vai:['R14'], pt:25, ghi:'Chặng đường của em, nhiệm vụ, minh chứng, vòng nhắc'},
+  {vai:['R15'], pt:20, ghi:'Phần giới thiệu, hoa hồng, gửi tài liệu, vòng nhắc'}
 ];
 
 /* Sáu chân dung người dùng — lời mời bước vào, hiển thị ở Cổng vào */
@@ -322,7 +326,9 @@ G.NAV = [
     /* Đặt đầu thư mục: đây là cửa nhìn toàn cảnh, ai vào cũng nên thấy trước.
        Không gắn perm — mọi vai đều thấy TÊN các kho, còn mở được hay không
        thì bảng bên trong nói rõ từng dòng. */
+    {v:'vong-nhac',   t:'Vòng nhắc Đúng – Đủ – Sâu',      h:'Xem không phải là làm · ba nấc mỗi việc', ic:'orbit', capMo:'chung', star:1},
     {v:'hanh-trinh-12',t:'Hành trình 12 chặng của học viên', h:'4 trụ · ai chịu trách nhiệm · điểm chạm WOW', ic:'map', capMo:'chung', star:1},
+    {v:'luat-lam-viec',t:'Luật làm việc với gia đình',    h:'Đi qua hệ thống · vi phạm hạ 50% KPI 3 tháng', ic:'shield', perm:'nghe_chung', capMo:'nghe', star:1},
     {v:'ref-gita',    t:'Hệ thống một nhà giới thiệu một nhà', h:'Chân dung Ref · 30s-60s-8p · 16 bước', ic:'share', perm:'nghe_chung', capMo:'nghe', star:1},
     {v:'khach-lon',   t:'Chăm sóc khách hàng lớn',        h:'4 tầng · nhịp chạm · hồ sơ 68 điểm', ic:'crown', perm:'nghe_chung', capMo:'nghe', star:1},
     {v:'kho-tong',    t:'Kho tổng — toàn cảnh',        h:'9 nhóm · hơn 50 kho · số đếm thật', ic:'vault', capMo:'chung', star:1},

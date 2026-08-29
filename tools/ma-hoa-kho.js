@@ -50,7 +50,7 @@ const NGHE = ['MOTHUC', 'SACH', 'BANDO_A3', 'POSTER', 'SODO', 'PHACDO',
   'REF_LOI5', 'CHUOI10', 'BANDAP',
   'KHACHLON_NGUON', 'KHACH_TANG', 'NAM_TANG_PHUCVU', 'TAM_NAM_TANG', 'NAC_QUANHE',
   'NAC_TRUNGTHANH', 'TAM_MATXICH', 'HOSO68', 'MUOIHAI_NGUYENTAC', 'NHANTANG',
-  'NAM_BUOC_KHIEUNAI', 'GIU124', 'VISAO_ROIDI', 'KHACHLON_CAU'];
+  'NAM_BUOC_KHIEUNAI', 'GIU124', 'VISAO_ROIDI', 'KHACHLON_CAU', 'LUAT_LAMVIEC'];
 
 const goi = {};
 goi.nen  = Object.fromEntries(NEN.map(k => [k, G[k]]).filter(([, v]) => v !== undefined));

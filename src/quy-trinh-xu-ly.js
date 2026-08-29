@@ -105,10 +105,20 @@ G.ghiCa = function(id, khoa, giaTri){
   if(!G.duocXuLyCa()) return {ok:false, ly:'Không đủ quyền ghi vào ca.'};
   if(c.xong) return {ok:false, ly:'Ca đã đóng. Muốn sửa thì mở ca mới và dẫn về ca này.'};
   c.du = c.du || {};
-  c.du[khoa] = String(giaTri == null ? '' : giaTri);
+  var v = String(giaTri == null ? '' : giaTri);
+
+  /* Soi trước khi ghi: nội dung trong ca là thứ gia đình đọc lại được, nên
+     số điện thoại cá nhân hay lời rủ ra ngoài hệ thống lọt vào đây là lọt
+     thẳng tới nhà. Máy cảnh báo và ghi lại, người quyết định. */
+  var soi = G.soiLuat ? G.soiLuat(v, 'Ghi vào ca ' + c.id + ' · trường ' + khoa) : {sach:true};
+
+  c.du[khoa] = v;
   c.doiLuc = Date.now();
   ghi();
-  return {ok:true};
+  if(!soi.sach && G.U)
+    G.U.toast('Nội dung này có ' + soi.thay.map(function(x){ return x.ten.toLowerCase(); }).join(', ') +
+      '. Luật LV-01: mọi trao đổi đi qua hệ thống. Lượt này đã vào nhật ký.', 'err');
+  return {ok:true, soi:soi};
 };
 
 /* ═══════════ ĐI TIẾP ═══════════ */
@@ -279,7 +289,26 @@ G.VIEWS['xu-ly-ca'] = function(){
 
   o += U.sec('CA ĐANG CHẠY', dang.length ? dang.length + ' ca' : 'Chưa có ca nào');
   if(!dang.length)
-    o += '<div class="card"><p class="sm dim">Chưa có ca đang chạy. Mở ca ở ô bên trên khi có một nhà cần xử lý.</p></div>';
+    o += G.khungTrong({
+      ten:'Ca đang chạy', ic:'shield',
+      seCo:'Mỗi ca là một chuyện của một nhà, đi qua bảy bước. Ở đây anh chị thấy ca đang ở bước nào, '+
+           'còn thiếu bằng chứng gì, và ca nào đã quá hạn.',
+      khiNao:'Ngay khi anh chị mở ca đầu tiên ở ô bên trên.',
+      aiLam:'Tư vấn, Coach và cấp quản lý mở và đẩy ca. Gia đình không mở ca — đây là việc của đội ngũ.',
+      viSao:'Xử lý theo bản năng thì không đo được, không truy được, và khi hỏng thì không ai biết hỏng ở '+
+            'bước nào. Ba tháng sau mở hồ sơ ra, bảy bước này là thứ duy nhất còn nói được sự thật.',
+      viDu:{tieu:'Một ca đang chạy trông như thế này', dong:[
+        ['Mã ca','CM8K2F1A'],
+        ['Nhà','Nhà Minh An'],
+        ['Tóm tắt','Con ôm điện thoại, phụ huynh nhắc mãi không chuyển'],
+        ['Đang ở bước','B4 Chọn đường đi · hạn 72 giờ'],
+        ['Còn thiếu','Vì sao chọn đường này (cần ít nhất 40 ký tự)'],
+        ['Người mở','Coach Đặng Hoàng Nam']
+      ]},
+      lam:[{t:'Xem bảy bước và bốn ràng buộc', v:'van-dung'},
+           {t:'Mở bản đồ coaching', v:'bando-coach'}],
+      ghi:'Mở ca ngay từ cuộc gọi đầu tiên, đừng đợi tới lúc chuyện đã lớn.'
+    });
   else
     dang.sort(function(a,b2){ return G.quaHan(b2) - G.quaHan(a); }).forEach(function(c){ o += theCa(c); });
 

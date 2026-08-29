@@ -216,6 +216,7 @@ G.tuChoiThem = function(id, ly){
   if(!x) return {ok:false, ly:'Không tìm thấy lời xin này.'};
   x.trangThai = 'hoanLai';
   x.loiNhan   = String(ly || '').slice(0, 400);
+  if(G.soiLuat) G.soiLuat(x.loiNhan, 'Lời nhắn hoãn lời xin ' + x.id);
   x.nguoiGui  = (G.S.acc && G.S.acc.ten) || '';
   x.lucGui    = new Date().toISOString();
   ghi();
@@ -264,8 +265,25 @@ G.VIEWS['gui-tu-lieu'] = function(){
 
   o += U.sec('LỜI XIN ĐANG CHỜ', cho.length ? cho.length + ' nhà đang đợi' : 'Chưa có nhà nào đang đợi');
   if(!cho.length){
-    o += '<div class="card"><p class="sm dim">Chưa có lời xin nào. Khi một nhà hỏi trợ lý và '+
-      'chạm phải phần nằm ngoài kho nền, lời xin sẽ hiện ở đây.</p></div>';
+    o += G.khungTrong({
+      ten:'Lời xin tư liệu', ic:'share',
+      seCo:'Từng lời xin của các nhà, kèm tên nhà, tư liệu họ chạm phải, KPI hiện tại và Coach phụ trách. '+
+           'Anh chị đọc rồi gửi, hoặc hoãn lại kèm lý do.',
+      khiNao:'Khi một nhà hỏi trợ lý và chạm phải phần nằm ngoài kho nền 30% của họ.',
+      aiLam:'Gia đình đặt lời xin — không tự mở được. Tư vấn, Coach và cấp quản lý là người gửi.',
+      viSao:'Đây là chỗ CÓ NGƯỜI THẬT trong đường đi của tài liệu. Bỏ bước này thì tư liệu tới nhà mình '+
+            'một mình, không ai giải thích, và phần lớn sẽ không được dùng tới.',
+      viDu:{tieu:'Một lời xin trông như thế này', dong:[
+        ['Nhà','Nhà Minh An · Coach Nguyễn Thu Trang'],
+        ['Tư liệu','Phác đồ · PD-T3-014 Khi con mất động lực giữa chặng'],
+        ['KPI hiện tại','88% — đã qua cửa 80%'],
+        ['Lúc gửi','Hôm nay, 20:14'],
+        ['Việc của anh chị','Gửi kèm một buổi hẹn, đừng gửi trống']
+      ]},
+      lam:[{t:'Xem năm cấp độ vận dụng', v:'van-dung'},
+           {t:'Mở buồng lái Coach', v:'coach-deck'}],
+      ghi:'Tư liệu gửi đi một mình thì ít khi được dùng. Luôn hẹn một buổi để đọc cùng.'
+    });
   }else{
     o += U.tbl(['Nhà','Tư liệu','KPI','Lúc gửi',''], cho.map(function(x){
       var dat = x.kpi >= G.KPI_XIN_THEM;

@@ -88,7 +88,12 @@ const moiTruong = {
 
 const nguon = fs.readFileSync(path.join(GOC, 'server', 'GITA_CapPhep.gs'), 'utf8');
 const ten = Object.keys(moiTruong);
-const chay = new Function(...ten, nguon + '\n; return { doPost: doPost, doGet: doGet, kiemTraPhien_: kiemTraPhien_, gitaPhamViCapPhep: gitaPhamViCapPhep };');
+/* doGet nay là bộ định tuyến trong GITA_BanWeb.gs; hàm trả JSON tình trạng đã
+   đổi tên thành gitaTrangThai_ vì Apps Script chỉ cho phép một doGet. */
+const TRA = '; return { doPost: doPost, kiemTraPhien_: kiemTraPhien_, '
+  + 'gitaPhamViCapPhep: gitaPhamViCapPhep, '
+  + 'doGet: (typeof gitaTrangThai_ === "function" ? gitaTrangThai_ : function(){}) };';
+const chay = new Function(...ten, nguon + TRA);
 const S = chay(...ten.map(k => moiTruong[k]));
 
 function xin(token, u, goi) {

@@ -213,11 +213,27 @@ G.VIEWS['duyet-tai-lieu'] = function(){
     '<div class="pv-th"><b>'+xong.length+'</b><span>ĐÃ VÀO KHO</span></div></div>';
 
   if(!G.THUVIEN.length){
-    o += '<div class="card mt2"><div class="row mb"><span style="color:var(--ink-3)">'+ic('seed','w-4 h-4')+'</span>'+
-      '<b>Chưa có tài liệu nào được gửi lên</b></div>'+
-      '<p class="sm" style="line-height:1.75;color:var(--ink-2)">Hàng chờ trống vì kho đóng góp mới mở. '+
-      'Khi đội ngũ bắt đầu gửi tài liệu, từng bản sẽ nằm ở đây kèm bảy điểm chuẩn hoá để anh chị chấm.</p>'+
-      '<button class="btn ghost sm mt" data-v="thu-vien">Mở thư viện để gửi thử một bản</button></div>';
+    o += G.khungTrong({
+      ten:'Kiểm duyệt tài liệu', ic:'shield',
+      seCo:'Từng tài liệu đội ngũ gửi lên sẽ nằm ở đây, kèm bảy điểm chuẩn hoá người gửi đã tự chấm, '+
+           'mức tầng, loại tài liệu và tệp đính kèm. Anh chị đọc rồi chọn một trong ba: duyệt vào kho, '+
+           'yêu cầu chỉnh sửa kèm điều cần bổ sung, hoặc không nhận kèm lý do.',
+      khiNao:'Ngay khi một người trong đội ngũ gửi bản đầu tiên qua màn Thư viện tài liệu.',
+      aiLam:'Mọi vị trí đều gửi được — đó là cách kho lớn lên. Nhưng chỉ Super Admin và Admin hệ thống duyệt.',
+      viSao:'Tài liệu chưa duyệt mà đã đưa cho gia đình dùng là chỗ sai lan nhanh nhất: một bản sai được '+
+            'chép lại mười lần trước khi có ai phát hiện. Hàng chờ này là cửa duy nhất vào kho thật.',
+      viDu:{tieu:'Một bản chờ duyệt trông như thế này', dong:[
+        ['Mã','TL-K3F2A9'],
+        ['Tên','Bảng theo dõi giờ ngủ 21 ngày'],
+        ['Loại','Quy trình · Tầng 1'],
+        ['Người gửi','coach@gita365.vn · Coach'],
+        ['Tự chấm chuẩn hoá','5 / 7 điểm — thiếu mã tra cứu và nguồn gốc'],
+        ['Trạng thái','Chờ duyệt · gửi 2 giờ trước']
+      ]},
+      lam:[{t:'Mở thư viện để gửi thử một bản', v:'thu-vien'},
+           {t:'Xem bảy điểm chuẩn hoá', v:'hang-tai-lieu'}],
+      ghi:'Gửi thử một bản là cách nhanh nhất để thấy màn này chạy — bản thử duyệt xong xoá được.'
+    });
     return o;
   }
 
@@ -435,12 +451,45 @@ G.VIEWS['minh-chung'] = function(){
   }
 
   if(!ds.length){
-    o += '<div class="card mt2"><div class="row mb"><span style="color:var(--ink-3)">'+ic('seed','w-4 h-4')+'</span>'+
-      '<b>Chưa có minh chứng nào</b></div>'+
-      '<p class="sm" style="line-height:1.75;color:var(--ink-2)">'+
-      (duyetDuoc ? 'Khi các gia đình bắt đầu nộp ảnh và báo cáo, từng bản sẽ nằm ở đây để anh chị xác nhận.'
-                 : 'Làm xong một nhiệm vụ thì chụp lại và nộp ở ô trên. Coach xác nhận là việc đó được tính vào KPI.')+
-      '</p></div>';
+    o += duyetDuoc
+      ? G.khungTrong({
+          ten:'Minh chứng nhiệm vụ', ic:'check',
+          seCo:'Ảnh, báo cáo và ghi chép các gia đình nộp lên để chứng minh đã làm xong nhiệm vụ. '+
+               'Mỗi bản gắn với đúng một nhiệm vụ, có ngày nộp, lời nhà mình tự kể và tệp đính kèm.',
+          khiNao:'Ngay khi một nhà nộp bản đầu tiên. Thường là trong tuần thứ hai của chặng.',
+          aiLam:'Phụ huynh và học viên nộp. Coach, giáo viên và cấp quản lý xác nhận — '+
+                'người nộp KHÔNG tự xác nhận minh chứng của chính mình.',
+          viSao:'Không có minh chứng thì KPI của một nhà chỉ dựa vào lời kể. Lời kể thì ai cũng nói được, '+
+                'và ba tháng sau không ai nhớ nhà nào đã thật sự làm gì. Đây là chỗ biến lời hứa thành bằng chứng.',
+          viDu:{tieu:'Một bản minh chứng trông như thế này', dong:[
+            ['Nhà','Nhà Minh An · Trần Minh An, lớp 9'],
+            ['Nhiệm vụ','Tự bắt đầu một phiên học mỗi tối, không chờ ai gọi'],
+            ['Nhà mình kể','Tuần này con tự vào bàn 5/7 tối. Hai tối còn lại đi học thêm về muộn.'],
+            ['Đính kèm','Ảnh bảng theo dõi treo ở góc học tập'],
+            ['Trạng thái','Đã nộp — chờ Coach xác nhận']
+          ]},
+          lam:[{t:'Xem danh sách nhiệm vụ đang giao', v:'nhiem-vu'},
+               {t:'Mở buồng lái Coach', v:'coach-deck'}],
+          ghi:'Nhắc gia đình nộp minh chứng là việc của buổi 1-1, không phải việc của tin nhắn tự động.'
+        })
+      : G.khungTrong({
+          ten:'Minh chứng của nhà mình', ic:'check',
+          seCo:'Những việc nhà mình đã làm xong, có ảnh hoặc ghi chép kèm theo. '+
+               'Coach xem và xác nhận, rồi việc đó mới được tính vào chặng của nhà mình.',
+          khiNao:'Ngay sau khi anh chị nộp bản đầu tiên ở ô bên trên.',
+          aiLam:'Nhà mình nộp. Coach của nhà mình xác nhận — không ai khác trong hệ thống nhìn thấy ảnh này.',
+          viSao:'Làm rồi mà không ghi lại thì ba tuần sau chính nhà mình cũng quên. '+
+                'Và khi nhìn lại cuối chặng, không có gì để thấy mình đã đi được bao xa.',
+          viDu:{tieu:'Một bản nhà mình nộp trông như thế này', dong:[
+            ['Việc đã làm','Con tự vào bàn học 5 trên 7 tối trong tuần'],
+            ['Kể lại','Hai tối còn lại con đi học thêm về muộn, mẹ không nhắc'],
+            ['Ảnh kèm','Bảng theo dõi treo ở góc học tập'],
+            ['Sau đó','Coach xem trong vòng một ngày làm việc và xác nhận']
+          ]},
+          lam:[{t:'Xem nhiệm vụ của nhà mình', v:'nhiem-vu'},
+               {t:'Bản đồ nhà mình đang ở đâu', v:'ban-do'}],
+          ghi:'Chụp bằng điện thoại là đủ. Không cần đẹp, cần thật.'
+        });
     return o;
   }
 
