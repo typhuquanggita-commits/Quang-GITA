@@ -969,3 +969,47 @@ mark.hl[data-note='true'] { border-bottom: 2px dotted currentColor; cursor: poin
 /* Bounded rows are the flat ends of the curve, where a raw score does not
    identify an ability. Marked so a marker does not read them as points. */
 .scheme-table tbody tr[data-bounded] { color: var(--text-muted); font-style: italic; }
+
+/* ================================================================== */
+/* Keyboard shortcuts sheet                                            */
+/* ================================================================== */
+
+.kbd {
+  display: inline-block;
+  min-width: 1.9em;
+  padding: 2px 8px;
+  border: 1px solid var(--border-strong);
+  border-bottom-width: 2px;
+  border-radius: var(--radius-sm);
+  background: var(--surface-2);
+  color: var(--text);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.shortcut-keys { display: inline-flex; align-items: center; gap: var(--space-2); flex-wrap: wrap; }
+.shortcut-joiner { color: var(--text-muted); font-size: var(--text-xs); }
+
+.shortcut-table { width: 100%; }
+.shortcut-table th {
+  padding: 0 var(--space-3) var(--space-2) 0;
+  text-align: left;
+  font-size: var(--text-2xs);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  font-weight: var(--weight-semibold);
+}
+.shortcut-table td {
+  padding: var(--space-3) var(--space-3) var(--space-3) 0;
+  border-top: 1px solid var(--border);
+  vertical-align: baseline;
+  line-height: var(--leading-normal);
+}
+.shortcut-table td:first-child { width: 1%; white-space: nowrap; }
+
+.shortcut-limits { list-style: none; }
+.shortcut-limits li { align-items: start; line-height: var(--leading-normal); max-width: 76ch; }
+.shortcut-limits svg { flex: none; margin-top: 3px; color: var(--warning); }

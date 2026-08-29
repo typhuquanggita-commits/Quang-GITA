@@ -21,6 +21,7 @@ import { isCorrect, scoreAttempt } from '../../engine/scoring.ts';
 import { useStore } from '../../state/store.tsx';
 import { useT, useLocale } from '../../i18n/index.ts';
 import { cx, formatClock } from '../../lib/util.ts';
+import { EXAM_BINDING } from '../shortcuts/shortcuts.ts';
 import { Button, Modal } from '../../components/ui/primitives.tsx';
 import { AnswerArea, StimulusView } from '../../components/ui/QuestionView.tsx';
 import {
@@ -346,13 +347,18 @@ export function ExamPlayer({
       if (event.target instanceof HTMLInputElement || event.target instanceof HTMLTextAreaElement) return;
       if (event.metaKey || event.ctrlKey || event.altKey) return;
 
-      if (event.key === 'ArrowRight') { event.preventDefault(); goTo(index + 1); }
-      else if (event.key === 'ArrowLeft') { event.preventDefault(); goTo(index - 1); }
-      else if (event.key.toLowerCase() === 'f') { event.preventDefault(); toggleFlag(); }
-      else if (event.key.toLowerCase() === 'n') { event.preventDefault(); setNavOpen((v) => !v); }
-      else if (['a', 'b', 'c', 'd'].includes(event.key.toLowerCase()) && question?.format === 'mcq') {
+      // The bindings come from the shortcuts catalogue rather than from key
+      // strings written here, so the sheet a learner reads cannot fall out of
+      // step with the keys this handler actually listens for.
+      const key = event.key.length === 1 ? event.key.toLowerCase() : event.key;
+
+      if (key === EXAM_BINDING.next) { event.preventDefault(); goTo(index + 1); }
+      else if (key === EXAM_BINDING.previous) { event.preventDefault(); goTo(index - 1); }
+      else if (key === EXAM_BINDING.flag) { event.preventDefault(); toggleFlag(); }
+      else if (key === EXAM_BINDING.navigator) { event.preventDefault(); setNavOpen((v) => !v); }
+      else if ((EXAM_BINDING.choices as readonly string[]).includes(key) && question?.format === 'mcq') {
         event.preventDefault();
-        setAnswer(event.key.toUpperCase());
+        setAnswer(key.toUpperCase());
       }
     }
     window.addEventListener('keydown', onKeyDown);

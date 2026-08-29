@@ -37,6 +37,7 @@ export type Route =
   | { name: 'calibration' }
   | { name: 'metrics' }
   | { name: 'brand' }
+  | { name: 'shortcuts' }
   | { name: 'settings' };
 
 export type RouteName = Route['name'];
@@ -149,6 +150,8 @@ export function hashToRoute(hash: string): Route {
       return { name: 'metrics' };
     case 'brand':
       return { name: 'brand' };
+    case 'shortcuts':
+      return { name: 'shortcuts' };
     case 'settings':
       return { name: 'settings' };
     default:

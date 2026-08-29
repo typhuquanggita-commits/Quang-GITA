@@ -12,6 +12,7 @@ import { LocaleContext, useLocale, useT } from '../../i18n/index.ts';
 import { can, type Principal } from '../../auth/roles.ts';
 import { accountById } from '../../auth/model.ts';
 import { hashToRoute, routeToHash, ROUTE_PERMISSION, type Route, type RouteName } from './routes.ts';
+import { HELP_KEY } from '../shortcuts/shortcuts.ts';
 import { Badge, Button, Empty } from '../../components/ui/primitives.tsx';
 import { GitaMark } from '../../brand/Brandmark.tsx';
 import {
@@ -24,6 +25,7 @@ import {
   IconChevronRight,
   IconClipboard,
   IconHome,
+  IconKeyboard,
   IconLightning,
   IconMenu,
   IconRefresh,
@@ -107,6 +109,9 @@ const Dossier = lazy(() =>
 const BrandBook = lazy(() =>
   import('../../brand/BrandBook.tsx').then((m) => ({ default: m.BrandBook })),
 );
+const Shortcuts = lazy(() =>
+  import('../shortcuts/Shortcuts.tsx').then((m) => ({ default: m.Shortcuts })),
+);
 const OrgMetrics = lazy(() =>
   import('../metrics/OrgMetrics.tsx').then((m) => ({ default: m.OrgMetrics })),
 );
@@ -165,6 +170,35 @@ function Shell(): React.ReactElement {
     window.addEventListener('hashchange', onHashChange);
     if (!window.location.hash) window.location.hash = '#/today';
     return () => window.removeEventListener('hashchange', onHashChange);
+  }, []);
+
+  /*
+   * The one global shortcut: ? opens the shortcuts sheet.
+   *
+   * It is deliberately inert while a test is running. Leaving the exam screen
+   * mid-section is not something a stray keystroke should be able to do, and a
+   * student typing into a grid-in field is typing an answer, not a command.
+   */
+  useEffect(() => {
+    function onKeyDown(event: KeyboardEvent) {
+      if (event.key !== HELP_KEY) return;
+      if (event.metaKey || event.ctrlKey || event.altKey) return;
+      const target = event.target;
+      if (
+        target instanceof HTMLInputElement ||
+        target instanceof HTMLTextAreaElement ||
+        (target instanceof HTMLElement && target.isContentEditable)
+      ) {
+        return;
+      }
+      if (hashToRoute(window.location.hash).name === 'exam') return;
+
+      event.preventDefault();
+      window.location.hash = routeToHash({ name: 'shortcuts' });
+      setRoute({ name: 'shortcuts' });
+    }
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
   }, []);
 
   const navigate = useMemo(
@@ -275,6 +309,11 @@ function Shell(): React.ReactElement {
           route: { name: 'brand' },
           label: locale === 'vi' ? 'Nhận diện' : 'Identity',
           icon: <IconSparkle size={18} />,
+        },
+        {
+          route: { name: 'shortcuts' },
+          label: locale === 'vi' ? 'Phím tắt' : 'Shortcuts',
+          icon: <IconKeyboard size={18} />,
         },
         { route: { name: 'settings' }, label: t('nav.settings'), icon: <IconSettings size={18} /> },
       ],
@@ -487,6 +526,8 @@ function RouteView({
       return <OrgMetrics navigate={navigate} />;
     case 'brand':
       return <BrandBook />;
+    case 'shortcuts':
+      return <Shortcuts />;
     case 'settings':
       return <Settings />;
     default:

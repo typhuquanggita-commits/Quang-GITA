@@ -268,6 +268,13 @@ export function Settings(): React.ReactElement {
             onChange={(reduceMotion) => dispatch({ type: 'prefs/update', patch: { reduceMotion } })}
             label={t('settings.reduceMotion')}
           />
+          <p className="text-sm secondary">
+            {locale === 'vi'
+              ? 'Toàn bộ ứng dụng dùng được bằng bàn phím. Nhấn phím ? ở bất kỳ màn hình nào (trừ khi đang thi) để mở bảng phím tắt, hoặc '
+              : 'The whole application can be driven from the keyboard. Press ? on any screen outside an exam to open the shortcuts sheet, or '}
+            <a href="#/shortcuts">{locale === 'vi' ? 'mở bảng phím tắt' : 'open the shortcuts sheet'}</a>
+            {locale === 'vi' ? '.' : '.'}
+          </p>
         </div>
       </Card>
 
@@ -330,11 +337,19 @@ export function Settings(): React.ReactElement {
             </Button>
           </div>
 
+          {/*
+            * The visible Import button opens this input, so the input itself
+            * must not be a second, unlabelled tab stop: .sr-only hides it
+            * visually but leaves it in the focus order, which is how it
+            * reached a keyboard user as a file field with no name.
+            */}
           <input
             ref={fileRef}
             type="file"
             accept="application/json"
             className="sr-only"
+            tabIndex={-1}
+            aria-label={t('settings.importData')}
             onChange={async (event) => {
               const file = event.target.files?.[0];
               if (!file) return;

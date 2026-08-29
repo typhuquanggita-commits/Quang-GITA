@@ -47,6 +47,7 @@ export function Card({
   children,
   className,
   bodyClassName,
+  level = 2,
 }: {
   title?: React.ReactNode;
   subtitle?: React.ReactNode;
@@ -54,13 +55,22 @@ export function Card({
   children?: React.ReactNode;
   className?: string;
   bodyClassName?: string;
+  /*
+   * Heading level for the card title. A card directly under the page title is
+   * an h2; a card that sits under a section heading of its own passes 3. The
+   * level is a prop rather than a fixed tag because heading order is how a
+   * screen-reader user moves through a page, and a page whose only headings
+   * are h1 followed by h3 has a hole in its outline.
+   */
+  level?: 2 | 3;
 }): React.ReactElement {
+  const Heading = (level === 3 ? 'h3' : 'h2') as 'h2' | 'h3';
   return (
     <section className={cx('card', className)}>
       {(title || action) && (
         <header className="card-header">
           <div>
-            {title && <h3 className="card-title">{title}</h3>}
+            {title && <Heading className="card-title">{title}</Heading>}
             {subtitle && <p className="card-sub">{subtitle}</p>}
           </div>
           {action}

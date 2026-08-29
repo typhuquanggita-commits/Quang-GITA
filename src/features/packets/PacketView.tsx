@@ -244,10 +244,11 @@ function TheorySheet({
 
   return (
     <div className="stack gap-5">
-      <Card title={vi ? 'Ý cốt lõi' : 'The core idea'}>
+      <Card level={3} title={vi ? 'Ý cốt lõi' : 'The core idea'}>
         <p className="lesson-idea">{vi ? lesson.ideaVi : lesson.idea}</p>
       </Card>
       <Card
+        level={3}
         title={vi ? 'Bài giảng đầy đủ' : 'The full lesson'}
         subtitle={
           vi
@@ -275,6 +276,7 @@ function RecognitionSheet({ packet, locale }: { packet: Packet; locale: 'vi' | '
 
   return (
     <Card
+      level={3}
       title={vi ? 'Các dạng bài và cách đọc vị' : 'The question types and how to read them'}
       subtitle={
         vi
@@ -307,7 +309,7 @@ function MethodSheet({ packet, locale }: { packet: Packet; locale: 'vi' | 'en' }
 
   return (
     <div className="stack gap-5">
-      <Card title={vi ? 'Các bước, theo thứ tự' : 'The steps, in order'}>
+      <Card level={3} title={vi ? 'Các bước, theo thứ tự' : 'The steps, in order'}>
         <ol className="lesson-method">
           {(vi ? lesson.methodVi : lesson.method).map((step, i) => (
             <li key={i}>{step}</li>
@@ -316,6 +318,7 @@ function MethodSheet({ packet, locale }: { packet: Packet; locale: 'vi' | 'en' }
       </Card>
 
       <Card
+        level={3}
         title={vi ? 'Ví dụ giải mẫu' : 'Worked example'}
         subtitle={
           vi
@@ -334,7 +337,7 @@ function MethodSheet({ packet, locale }: { packet: Packet; locale: 'vi' | 'en' }
         </p>
       </Card>
 
-      <Card title={vi ? 'Bẫy thường gặp' : 'The traps'}>
+      <Card level={3} title={vi ? 'Bẫy thường gặp' : 'The traps'}>
         <ul className="lesson-traps">
           {lesson.traps.map((trap, i) => (
             <li key={i}>
@@ -354,6 +357,7 @@ function MethodSheet({ packet, locale }: { packet: Packet; locale: 'vi' | 'en' }
       */}
       {tactics.length > 0 && (
         <Card
+          level={3}
           title={vi ? 'Bí kíp dùng được cho chuyên đề này' : 'Tactics that pay on this topic'}
           subtitle={
             vi
@@ -436,6 +440,7 @@ function PracticeSheet({
         the question is being attempted is not a solution — it is the answer.
       */}
       <Card
+        level={3}
         title={vi ? 'Đề bài' : 'The questions'}
         subtitle={
           vi
@@ -515,6 +520,7 @@ function SolutionSheet({ sheet, locale }: { sheet: Sheet; locale: 'vi' | 'en' })
   return (
     <div className="stack gap-5">
       <Card
+        level={3}
         title={vi ? 'Phiếu lời giải' : 'Solution sheet'}
         subtitle={
           vi
@@ -543,6 +549,7 @@ function SolutionSheet({ sheet, locale }: { sheet: Sheet; locale: 'vi' | 'en' })
       </Card>
 
       <Card
+        level={3}
         title={vi ? 'Bảng phân tích chuyên sâu' : 'Deep analysis'}
         subtitle={
           vi
@@ -600,6 +607,7 @@ function ConsolidationSheet({ packet, locale }: { packet: Packet; locale: 'vi' |
   return (
     <div className="stack gap-5">
       <Card
+        level={3}
         title={vi ? 'Khi nào coi là đã ôn chắc' : 'When the topic is secure'}
         subtitle={
           vi
@@ -618,6 +626,7 @@ function ConsolidationSheet({ packet, locale }: { packet: Packet; locale: 'vi' |
       </Card>
 
       <Card
+        level={3}
         title={vi ? 'Chuyên đề này suy giảm như thế nào' : 'How this topic decays'}
         subtitle={
           vi
@@ -630,7 +639,7 @@ function ConsolidationSheet({ packet, locale }: { packet: Packet; locale: 'vi' |
         </p>
       </Card>
 
-      <Card title={vi ? 'Nguồn câu hỏi cho chuyên đề này' : 'Item supply for this topic'}>
+      <Card level={3} title={vi ? 'Nguồn câu hỏi cho chuyên đề này' : 'Item supply for this topic'}>
         <div className="row gap-3 wrap">
           <Badge>{vi ? 'Dễ' : 'Easy'}: {packet.supply.easy}</Badge>
           <Badge>{vi ? 'Trung bình' : 'Medium'}: {packet.supply.medium}</Badge>

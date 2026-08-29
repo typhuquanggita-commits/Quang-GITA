@@ -58,9 +58,12 @@ jobs:
       - name: Install
         run: npm ci
 
-      - name: Install Playwright and Chromium
+      # axe-core rides along with Playwright: both are test-only, and neither
+      # belongs in the dependency graph of an application that ships with React
+      # and nothing else.
+      - name: Install Playwright, axe-core and Chromium
         run: |
-          npm install --no-save playwright
+          npm install --no-save playwright axe-core
           npx playwright install --with-deps chromium
 
       - name: Build

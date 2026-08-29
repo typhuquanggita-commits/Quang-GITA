@@ -95,7 +95,13 @@
 
   --text: #14192b;
   --text-secondary: #4c5570;
-  --text-muted: #6d7690;
+  /*
+   * Darkened from #6d7690, which measured 4.22:1 on --bg and 4.32:1 on
+   * --surface-2 — below AA for body text, and the single most common
+   * violation the axe pass found. This value clears 4.5:1 on every light
+   * surface in this file, the inset included.
+   */
+  --text-muted: #5f6884;
   --text-inverse: #ffffff;
 
   --primary: #2f4fd4;

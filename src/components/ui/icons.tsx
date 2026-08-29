@@ -40,6 +40,9 @@ export const IconTarget = (p: IconProps) => (
 export const IconBook = (p: IconProps) => (
   <Icon {...p}><path d="M4 4.5h6a3 3 0 0 1 3 3V20a2.5 2.5 0 0 0-2.5-2.5H4Z" /><path d="M20 4.5h-6a3 3 0 0 0-3 3V20a2.5 2.5 0 0 1 2.5-2.5H20Z" /></Icon>
 );
+export const IconKeyboard = (p: IconProps) => (
+  <Icon {...p}><rect x="2.5" y="6" width="19" height="12" rx="2" /><path d="M6.5 9.5h.01M10 9.5h.01M13.5 9.5h.01M17 9.5h.01M6.5 12.5h.01M10 12.5h.01M13.5 12.5h.01M17 12.5h.01M8 15.5h8" /></Icon>
+);
 export const IconCards = (p: IconProps) => (
   <Icon {...p}><rect x="3" y="6" width="14" height="13" rx="2" /><path d="M7 3h11a2 2 0 0 1 2 2v11" /></Icon>
 );

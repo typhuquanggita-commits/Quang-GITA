@@ -10,7 +10,12 @@
  */
 
 import { spawn } from 'node:child_process';
+import { createRequire } from 'node:module';
+import { readFileSync } from 'node:fs';
 import { chromium } from 'playwright';
+
+const require = createRequire(import.meta.url);
+const AXE_SOURCE = readFileSync(require.resolve('axe-core/axe.min.js'), 'utf8');
 
 const PORT = Number(process.env.PORT ?? 4319);
 const BASE = `http://127.0.0.1:${PORT}/`;
@@ -28,6 +33,51 @@ function check(name, ok, detail = '') {
   steps.push({ group: currentGroup, name, ok });
   const mark = ok ? '  ok  ' : '  FAIL';
   console.log(`${mark} ${name}${detail ? ` — ${detail}` : ''}`);
+}
+
+/* ---------------- Accessibility ---------------- */
+
+/*
+ * An axe pass over the routes a learner actually spends time on.
+ *
+ * Only serious and critical violations fail the run. That is not a way of
+ * ignoring the rest: minor and moderate findings are printed with their node
+ * counts so a regression is visible, but a rule like "landmark-unique" firing
+ * on a page that is otherwise operable should not block a content change,
+ * while a missing form label or a contrast failure should.
+ *
+ * axe covers roughly a third of WCAG by machine. Passing it means no automated
+ * violation was found, not that the page is accessible — which is why the
+ * keyboard paths below are exercised by hand as well.
+ */
+const SERIOUS = new Set(['serious', 'critical']);
+
+async function auditPage(name) {
+  await page.evaluate(AXE_SOURCE);
+  const result = await page.evaluate(async () => {
+    const run = await window.axe.run(document, {
+      resultTypes: ['violations'],
+      runOnly: { type: 'tag', values: ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'best-practice'] },
+    });
+    return run.violations.map((v) => ({
+      id: v.id,
+      impact: v.impact,
+      nodes: v.nodes.length,
+      help: v.help,
+    }));
+  });
+
+  const blocking = result.filter((v) => SERIOUS.has(v.impact));
+  const advisory = result.filter((v) => !SERIOUS.has(v.impact));
+
+  check(
+    `${name} has no serious or critical violations`,
+    blocking.length === 0,
+    blocking.map((v) => `${v.id} (${v.nodes})`).join(', '),
+  );
+  if (advisory.length > 0) {
+    console.log(`       advisory: ${advisory.map((v) => `${v.id} (${v.nodes})`).join(', ')}`);
+  }
 }
 
 /* ---------------- Server ---------------- */
@@ -606,6 +656,86 @@ try {
   await page.waitForTimeout(300);
   await page.locator('.modal').getByRole('button', { name: 'Thoát' }).click();
   await page.waitForTimeout(600);
+
+  /* ---------------- Accessibility ---------------- */
+  group('Accessibility');
+
+  for (const [name, hash] of [
+    ['the dashboard', '#/dashboard'],
+    ['today', '#/today'],
+    ['the lesson library', '#/lessons'],
+    ['the topic packets', '#/topics'],
+    ['the tactics treasury', '#/tactics'],
+    ['the papers shelf', '#/papers'],
+    ['the shortcuts sheet', '#/shortcuts'],
+    ['settings', '#/settings'],
+  ]) {
+    await page.evaluate((h) => { window.location.hash = h; }, hash);
+    await page.waitForTimeout(600);
+    await auditPage(name);
+  }
+
+  // The dark and high-contrast palettes are separate colour systems, and
+  // contrast is the failure they can introduce without touching the markup.
+  await page.evaluate(() => { window.location.hash = '#/today'; });
+  await page.waitForTimeout(600);
+  for (const theme of ['dark', 'high-contrast']) {
+    await page.evaluate((t) => { document.documentElement.dataset.theme = t; }, theme);
+    await page.waitForTimeout(300);
+    await auditPage(`the ${theme} theme on today`);
+  }
+  await page.evaluate(() => { delete document.documentElement.dataset.theme; });
+  await page.waitForTimeout(200);
+
+  /* ---------------- Keyboard ---------------- */
+  group('Keyboard');
+
+  await page.evaluate(() => { window.location.hash = '#/today'; });
+  await page.waitForTimeout(500);
+  await page.keyboard.press('Shift+Slash');
+  await page.waitForTimeout(500);
+  check('? opens the shortcuts sheet', (await page.evaluate(() => window.location.hash)) === '#/shortcuts');
+
+  check(
+    'the sheet documents the exam keys',
+    (await page.locator('.shortcut-table kbd').allInnerTexts()).includes('F'),
+  );
+
+  await page.evaluate(() => { window.location.hash = '#/lessons'; });
+  await page.waitForTimeout(500);
+  await page.locator('.lesson-search input').first().click().catch(() => {});
+  await page.keyboard.type('?');
+  await page.waitForTimeout(300);
+  check(
+    '? typed into a search box does not navigate',
+    (await page.evaluate(() => window.location.hash)) === '#/lessons',
+  );
+
+  /*
+   * Reloaded rather than navigated. Blurring the search box above does not
+   * move the browser's sequential-focus starting point, so a Tab press would
+   * resume from where that box used to be — which would test the harness's
+   * focus history rather than the page's tab order.
+   */
+  await page.evaluate(() => { window.location.hash = '#/today'; });
+  await page.reload({ waitUntil: 'networkidle' });
+  await page.waitForTimeout(800);
+  await page.keyboard.press('Tab');
+  const firstStop = await page.evaluate(() => {
+    const active = document.activeElement;
+    return active instanceof HTMLElement ? active.className : '';
+  });
+  check('the first tab stop is the skip link', firstStop.includes('skip-link'));
+
+  await page.keyboard.press('Enter');
+  await page.waitForTimeout(300);
+  check(
+    'the skip link moves focus past the sidebar',
+    await page.evaluate(() => {
+      const active = document.activeElement;
+      return !!active && !active.closest('.sidebar');
+    }),
+  );
 
   /* ---------------- Appearance and persistence ---------------- */
   group('Appearance and persistence');

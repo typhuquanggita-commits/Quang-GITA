@@ -120,6 +120,7 @@ export function TacticCard({
 
   return (
     <Card
+      level={3}
       className="tactic-card"
       title={vi ? tactic.nameVi : tactic.name}
       action={
