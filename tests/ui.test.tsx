@@ -1,5 +1,5 @@
 import { describe, expect, it, beforeEach, vi } from 'vitest';
-import { PERMISSIONS } from '../src/data/roles';
+import { PERMISSIONS, ROLES } from '../src/data/roles';
 import { render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { App } from '../src/App';
@@ -77,6 +77,12 @@ describe('phân quyền trên giao diện', () => {
     // van dung thay vi hong mot cach vo nghia.
     const total = PERMISSIONS.length;
     expect(screen.getByText(`${total}/${total}`)).toBeInTheDocument();
+
+    // Man hinh Phan quyen vua la cong cu vua la tai lieu: no phai in ra du moi
+    // vai tro ma ma nguon dang dung, khong duoc thieu vai tro nao.
+    for (const role of ROLES) {
+      expect(screen.getAllByText(role.name).length, role.id).toBeGreaterThan(0);
+    }
     await user.click(screen.getByRole('link', { name: /Thi thử/ }));
   });
 });

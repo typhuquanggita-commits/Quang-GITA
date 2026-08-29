@@ -256,8 +256,9 @@ Chi tiết: [`docs/KIEN-TRUC.md`](docs/KIEN-TRUC.md).
   giữa "một lỗi nhỏ" và "mất sạch tiến độ".
 - **Bảo mật ở những chỗ client vẫn phải làm đúng** — khóa Gemini bị loại khỏi tệp
   xuất; tệp nhập vào bị chuẩn hóa vai trò, cấp bậc, giai đoạn và cài đặt; đổi vai trò
-  không để lại cấp bậc cũ; nội dung đề bài được khử HTML rồi mới mở lại đúng danh
-  sách thẻ định dạng cho phép. Bốn điều này đều có test riêng, xem
+  không để lại cấp bậc cũ; trang khai báo CSP ghim mọi kết nối ra ngoài về đúng
+  endpoint Gemini; nội dung đề bài được khử HTML rồi mới mở lại đúng danh sách thẻ
+  định dạng cho phép. Xem
   [`docs/PHAN-QUYEN.md`](docs/PHAN-QUYEN.md).
 - **Kiểm tra nội dung** — một câu hỏi sai đáp án gây hại hơn mọi lỗi kỹ thuật khác,
   nên nó bị chặn ngay ở tầng test: đáp án phải nằm trong phương án, phương án không

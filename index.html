@@ -3,6 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <!--
+      Chinh sach bao mat noi dung.
+
+      Dong quan trong nhat la `connect-src`: no ghim moi ket noi ra ngoai ve dung
+      mot dich — endpoint Gemini. Ke ca khi co ai chen duoc ma vao trang, du lieu
+      hoc tap cung khong the gui di dau khac. `object-src`, `base-uri` va
+      `form-action` deu dong lai vi ung dung nay khong dung den chung.
+
+      `script-src` con 'unsafe-inline' vi doan dat chu de ben duoi phai chay
+      TRUOC khi React dung cay, neu khong se nhay trang o che do toi. Day la
+      danh doi co y thuc, khong phai bo sot: khi trien khai that co may chu, hay
+      thay bang CSP gui qua header kem nonce cho dung doan script do.
+    -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+               script-src 'self' 'unsafe-inline';
+               style-src 'self' 'unsafe-inline';
+               img-src 'self' data:;
+               font-src 'self';
+               connect-src 'self' https://generativelanguage.googleapis.com;
+               worker-src 'self';
+               manifest-src 'self';
+               object-src 'none';
+               base-uri 'self';
+               form-action 'none'"
+    />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
     <meta name="theme-color" content="#0b1120" media="(prefers-color-scheme: dark)" />
     <meta name="theme-color" content="#f6f7fb" media="(prefers-color-scheme: light)" />
     <title>HSA365 — Luyện thi Đánh giá năng lực HSA</title>
@@ -21,7 +49,10 @@
           var root = document.documentElement;
           if (theme === 'system') root.removeAttribute('data-theme');
           else root.setAttribute('data-theme', theme);
-          if (settings.fontScale) root.style.setProperty('--font-scale', String(settings.fontScale));
+          // Chan trong dung khoang cua Cai dat: mot gia tri la trong localStorage
+          // khong duoc phep lam co chu vo hinh hay tran man hinh.
+          var scale = Number(settings.fontScale);
+          if (scale >= 0.875 && scale <= 1.375) root.style.setProperty('--font-scale', String(scale));
           if (settings.reducedMotion) root.setAttribute('data-motion', 'reduced');
         } catch (e) {
           document.documentElement.removeAttribute('data-theme');

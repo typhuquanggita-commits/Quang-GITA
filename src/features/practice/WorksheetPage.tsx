@@ -87,6 +87,7 @@ export function WorksheetPage() {
     return (
       <main className="mx-auto max-w-2xl px-4 py-20">
         <EmptyState
+          heading="h1"
           title="Không tìm thấy phiếu luyện"
           description="Mã phiếu không tồn tại hoặc đường dẫn đã cũ. Hãy quay lại thư viện phiếu để chọn lại."
           action={

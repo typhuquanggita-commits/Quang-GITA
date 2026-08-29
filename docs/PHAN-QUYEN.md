@@ -143,7 +143,14 @@ Nói "không phải ranh giới bảo mật" không có nghĩa là được phé
 3. **Đổi vai trò không để lại cấp bậc cũ.** Mọi cập nhật hồ sơ đều đi qua
    `sanitizeProfile` trong reducer, nên chuyển từ vai trò 3 bậc sang vai trò 1 bậc không
    thể giữ lại bậc 3 — đó là một kẽ hở leo thang quyền rất kín đáo.
-4. **Nội dung câu hỏi được khử mã trước khi hiển thị.** Đề bài cho phép vài thẻ định
+4. **Trang khai báo Content-Security-Policy.** Dòng quan trọng nhất là `connect-src`:
+   nó ghim mọi kết nối ra ngoài về đúng một đích — endpoint Gemini. Kể cả khi có ai chèn
+   được mã vào trang, dữ liệu học tập cũng không thể gửi đi đâu khác. `object-src`,
+   `base-uri` và `form-action` đều đóng lại vì ứng dụng không dùng đến chúng.
+   `script-src` vẫn còn `'unsafe-inline'` cho đoạn đặt chủ đề phải chạy trước khi React
+   dựng cây — đây là đánh đổi có ý thức, và khi triển khai thật có máy chủ thì thay bằng
+   CSP gửi qua header kèm nonce.
+5. **Nội dung câu hỏi được khử mã trước khi hiển thị.** Đề bài cho phép vài thẻ định
    dạng (`<b>`, `<sup>`, `<sub>`…), nên nó được khử toàn bộ HTML trước rồi mới mở lại
    đúng danh sách thẻ cho phép — không thẻ nào mang được thuộc tính.
 

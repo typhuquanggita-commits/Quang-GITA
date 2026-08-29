@@ -41,6 +41,7 @@ export function SolutionsPage() {
   if (!source || entries.length === 0) {
     return (
       <EmptyState
+        heading="h1"
         icon="📄"
         title="Không tìm thấy bài làm"
         description="Đường dẫn không trỏ tới lượt làm nào, hoặc dữ liệu của lượt đó đã bị xóa. Mở hồ sơ học viên để chọn lại một bài đã làm."

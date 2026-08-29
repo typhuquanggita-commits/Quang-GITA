@@ -496,21 +496,33 @@ export function useToast() {
 
 /* ── Trạng thái rỗng ───────────────────────────────────────────────────── */
 
+/**
+ * Trang thai rong.
+ *
+ * `heading` mac dinh la h3 vi phan lon truong hop no nam trong mot trang da co
+ * h1. Nhung khi trang thai rong CHIEM CA MAN HINH, no phai la h1: khong co h1
+ * thi nguoi dung trinh doc man hinh khong biet minh dang o dau, va cap tieu de
+ * nhay thang tu khong len h3.
+ */
 export function EmptyState({
   title,
   description,
   action,
   icon,
+  heading: Heading = 'h3',
 }: {
   title: string;
   description: string;
   action?: ReactNode;
   icon?: ReactNode;
+  heading?: 'h1' | 'h2' | 'h3';
 }) {
   return (
     <div className="flex flex-col items-center gap-3 rounded-xl border border-dashed border-line px-6 py-12 text-center">
       {icon && <div className="text-3xl">{icon}</div>}
-      <h3 className="text-base font-semibold text-fg">{title}</h3>
+      <Heading className={cn('font-semibold text-fg', Heading === 'h1' ? 'text-xl' : 'text-base')}>
+        {title}
+      </Heading>
       <p className="max-w-md text-sm text-fg-muted">{description}</p>
       {action}
     </div>

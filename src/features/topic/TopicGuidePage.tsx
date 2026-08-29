@@ -41,6 +41,7 @@ export function TopicGuidePage() {
   if (!guide) {
     return (
       <EmptyState
+        heading="h1"
         icon="📘"
         title="Chọn một chuyên đề"
         description="Mỗi chuyên đề có một phiếu hướng dẫn ôn chắc riêng: kiến thức phải nắm, lộ trình sáu loại phiếu, danh sách kiểm và kế hoạch bảy ngày."

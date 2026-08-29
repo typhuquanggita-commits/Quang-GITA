@@ -77,6 +77,7 @@ function AnalyticsContent() {
   if (!hasData) {
     return (
       <EmptyState
+        heading="h1"
         icon="📊"
         title="Chưa có dữ liệu để phân tích"
         description="Hoàn thành ít nhất một phiếu luyện hoặc một đề thi thử, hệ thống sẽ dựng bản đồ năng lực chi tiết theo từng chuyên đề."
