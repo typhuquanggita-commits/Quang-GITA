@@ -197,7 +197,7 @@ const NAV: Nav[] = [
     id: 'resources',
     icon: '📚',
     label: 'Tài liệu',
-    hint: '37 nguồn đã sàng lọc',
+    hint: '45 nguồn đã sàng lọc',
     group: 'learner',
     render: () => <Resources />,
   },

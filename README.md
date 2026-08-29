@@ -307,7 +307,7 @@ Kết thúc bằng **Tuyên ngôn** 8 dòng — in ra, dán lên bàn học.
 | **Bài giảng** | 268 bài / 10 chuỗi | Foundation · Fluency · Academic · IELTS · Mindset |
 | **Luyện tập** | 31 bài luyện | Mỗi bài có mục tiêu, các bước, dấu hiệu thành công, đường nâng cấp |
 | **Bí kíp** | 24 chiến thuật | Bí mật + nước đi + bằng chứng + phản mẫu |
-| **Tài liệu** | 37 nguồn | Phân theo xương sống / hỗ trợ / tuỳ chọn, kèm hướng dẫn dùng ở tháng nào |
+| **Tài liệu** | 45 nguồn | Phân theo xương sống / hỗ trợ / tuỳ chọn, kèm hướng dẫn dùng ở tháng nào |
 | **Thói quen** | 12 thói quen · 6 nghi thức | Tín hiệu → hành vi → phần thưởng, kèm phiên bản 2 phút |
 | **Tư duy** | 10 mô-đun | Câu chuyện cũ ✕ → câu chuyện mới ✓ + nghi thức thực hành |
 | **Club** | 7 câu lạc bộ | Kèm luật vận hành và kịch bản cho người dẫn |
@@ -322,6 +322,29 @@ CEFR  Pre-A1  B1      B2+     C1+
 Từ     300   3.000   6.800  10.000
 Input    0h    450h  1.080h  1.800h
 ```
+
+## 🔍 Chống rỗng ruột và khai khống
+
+Hai dạng rỗng ruột nguy hiểm nhất trong một hệ thống lớn, và cách hệ này chặn:
+
+**Khai khống** — app tự khai một con số mà dữ liệu không có. Người dùng tin vào
+con số đó nên không ai kiểm bằng mắt: con số nào cũng trông hợp lý. Thanh điều
+hướng từng ghi *"37 nguồn đã sàng lọc"* trong khi kho có **45**.
+
+**Mục có vỏ mà không có ruột** — 268 bài giảng từng chỉ có tiêu đề và kết quả,
+trung bình **15 chữ mỗi bài**, và **235/268 bài không nối bài luyện nào**: học
+xong không biết phải làm gì. Nay cả 268 bài đều có bài luyện đúng chủ đề, nêu rõ
+**bẫy thường gặp tại đúng điểm đó**, và 138 bài kèm mã phác đồ lỗi.
+
+```bash
+npm run test:so    # đối chiếu mọi con số app tự khai với dữ liệu thật
+```
+
+Bài kiểm này canh bốn thứ: mọi con số trong thanh điều hướng khớp dữ liệu; mọi
+chuỗi bài giảng khai đúng số bài; mọi bài giảng có bài luyện hợp lệ và nêu bẫy;
+không mảng nào rỗng, không trường nội dung nào trống. Nó cũng tự phát hiện khi
+chính luật kiểm của nó đã lỗi thời — luật không còn khớp nhãn tab nào thì báo
+hỏng, vì bảng kiểm chết là bảng không kiểm gì cả.
 
 ## 🎯 Luyện thi chuyên Anh & lớp chất lượng cao vào 10 — Hà Nội
 

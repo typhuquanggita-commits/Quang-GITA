@@ -14,7 +14,7 @@
     "test:desktop": "npm run build && xvfb-run -a electron --no-sandbox desktop/smoke.cjs",
     "test": "npm run test:vault && npm run test:desktop",
     "test:web": "node tools/kiem-ban-web.mjs",
-    "audit": "npx tsc --noEmit && npm run build && python3 tools/kiem-tham-chieu.py && python3 tools/kiem-chinh-ta.py",
+    "audit": "npx tsc --noEmit && npm run build && npx tsx tools/kiem-so-khai.ts && python3 tools/kiem-tham-chieu.py && python3 tools/kiem-chinh-ta.py && npx tsx tools/kiem-gita.ts && npx tsx tools/kiem-chuyen.ts && npx tsx tools/kiem-dao-tao.ts && npx tsx tools/kiem-danh-gia.ts",
     "test:voice": "python3 tools/khop-giong.test.py",
     "test:ui": "node tools/kiem-tuong-tac.mjs",
     "test:training": "npx tsx tools/kiem-dao-tao.ts",
@@ -22,7 +22,8 @@
     "test:assistant": "node tools/kiem-tro-ly.mjs",
     "test:gita": "npx tsx tools/kiem-gita.ts",
     "test:chuyen": "npx tsx tools/kiem-chuyen.ts",
-    "test:diem": "node tools/kiem-may-tinh-diem.mjs"
+    "test:diem": "node tools/kiem-may-tinh-diem.mjs",
+    "test:so": "npx tsx tools/kiem-so-khai.ts"
   },
   "devDependencies": {
     "@tailwindcss/browser": "^4.1.10",

@@ -156,7 +156,12 @@ export interface Lesson {
   title: string;
   minutes: number;
   outcome: string;
+  /** Bài luyện gắn với bài giảng này. Mọi bài đều phải có — học xong phải biết làm gì. */
   drillId?: string;
+  /** Lỗi hay mắc đúng ở điểm này, để người dạy biết phải canh chỗ nào. */
+  trap?: string;
+  /** Mã lỗi trong thư viện 20 phác đồ, khi bẫy này đã có phác đồ sẵn. */
+  remedyCode?: string;
 }
 
 export interface LectureSeries {
