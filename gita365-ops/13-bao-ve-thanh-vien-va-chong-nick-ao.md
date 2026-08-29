@@ -35,8 +35,8 @@ LỚP 7  Chủ quyền dữ liệu  → chuyển tài sản khỏi Facebook, gi�
 
 | Thiết lập | Giá trị | Vì sao |
 |---|---|---|
-| Quyền riêng tư nhóm | **Riêng tư** (cả G1 và G2) | Nội dung không bị công cụ bên ngoài đọc/lưu trữ |
-| Hiển thị | G1: **Ẩn**; G2: **Hiện** (vì cần thu hút, nhưng nội dung vẫn riêng tư) | Cân bằng tăng trưởng và an toàn |
+| Quyền riêng tư nhóm | **G1: Riêng tư · G2: Công khai (bằng cơ chế chuyển đổi)** — xem `17.2` | Nhóm chuyển đổi giữ kín toàn bộ nội dung cũ **và khóa danh sách thành viên chỉ admin/mod thấy** — chặn đúng phần mềm quét nhóm, đồng thời mở được tìm kiếm |
+| Hiển thị | **Cả hai nhóm: Hiển thị.** Không dùng chế độ Ẩn | Chế độ Ẩn không bảo vệ thêm gì so với Riêng tư, nhưng lấy đi toàn bộ khả năng được tìm thấy (`17.2`) |
 | Ai được duyệt thành viên | Chỉ quản trị viên & người kiểm duyệt được chỉ định | Chặn cửa hậu |
 | Ai được thêm thành viên | **Tắt tính năng thành viên tự thêm người** — mọi người phải qua cổng | Đây là lỗ hổng số 1 để nick ảo tràn vào |
 | Duyệt bài | Bật cho tất cả thành viên mới; bật vĩnh viễn với người từng vi phạm | |
@@ -170,10 +170,15 @@ Dùng chung cho toàn cụm nhóm — bị chặn ở một nhóm là bị chặ
 
 ## 13.10. LỚP 7: Chủ quyền dữ liệu — điều quan trọng nhất về dài hạn
 
-**Sự thật cần chấp nhận:** không có cách nào chặn tuyệt đối việc một thành viên hợp lệ ghi lại
-tên những người khác trong nhóm. Facebook cho phép mọi thành viên xem danh sách thành viên,
-và không có công cụ nào của nền tảng chặn được điều đó. Mọi lời quảng cáo "chặn 100% phần mềm
-quét nhóm" đều là nói quá.
+**Cập nhật 11/2025 — đã có một cách chặn thật sự:** khi một nhóm **chuyển từ riêng tư sang
+công khai** bằng cơ chế mới của Facebook, **danh sách thành viên chỉ còn quản trị viên và người
+kiểm duyệt xem được**. Đây là biện pháp mạnh nhất hiện có để chống quét danh sách — và nghịch lý
+là nó đến từ việc *công khai* nhóm, không phải từ việc đóng kín. Chi tiết và điều kiện đi kèm ở `17.2`.
+
+**Với nhóm vẫn để riêng tư (G1):** không có cách nào chặn tuyệt đối việc một thành viên hợp lệ
+ghi lại tên những người khác. Facebook cho phép mọi thành viên xem danh sách thành viên trong
+nhóm riêng tư, và không có công cụ nào của nền tảng chặn được điều đó. Mọi lời quảng cáo
+"chặn 100% phần mềm quét nhóm" đều là nói quá.
 
 **Vì vậy chiến lược đúng không phải là "xây tường cao hơn" mà là "làm cho danh sách trở nên vô giá trị
 với kẻ trộm, và chuyển tài sản thật sang nơi mình sở hữu":**
