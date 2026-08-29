@@ -56,7 +56,7 @@ await p.goto(B, {waitUntil: 'networkidle'});
 console.log('\n  KIỂM TIẾP CẬN — WCAG 2.1 mức A và AA\n');
 
 const tabs = await p.$$eval('aside nav button[data-tab]', (es) => es.map((e) => e.dataset.tab));
-const CAN_QUET = 37;
+const CAN_QUET = 39;
 if (tabs.length !== CAN_QUET) {
   console.log(
     `  ✗ thấy ${tabs.length} mục, cần đủ ${CAN_QUET} — hoặc bộ chọn lỗi thời, ` +

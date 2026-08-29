@@ -1536,6 +1536,105 @@ export interface CauHoi {
   bayNo?: number;
 }
 
+/* ==========================================================================
+   BỘ ĐỀ — BẢY CHIỀU PHÂN TÍCH CHO MỖI PHIẾU
+   ========================================================================== */
+
+/** Cách chấm một phần của đề, kèm barem. */
+export interface BaremPhan {
+  ma: string;
+  ten: string;
+  soCau: number;
+  trong: number;
+  cachCham: string;
+  barem: string;
+  /** Trừ điểm ở đâu — chỗ người chấm hay châm chước rồi thành bất công. */
+  truDiem: string;
+}
+
+/** Một đề trong bộ 2.000, kèm đáp án và bảng phân tích bảy chiều. */
+export interface BoDe {
+  id: string;
+  phieuId: string;
+  no: number;
+  dangId: string;
+  dangTen: string;
+  skill: SkillId;
+  levelId: string;
+  tenCap: string;
+  tier: number;
+  ten: string;
+  /** 1. Đề này thật sự kiểm những điểm kiến thức nào. */
+  kienThuc: string[];
+  /** 2. Dạng bài: hỏi cái gì, ra dưới hình thức nào ở tầng này. */
+  dangBai: string;
+  /** 3. Đọc vị: dấu hiệu nhận ra dạng này khi gặp trong đề lạ. */
+  docVi: string[];
+  /** 4. Phương pháp làm: cách tiếp cận tổng thể, khác nhau theo tầng. */
+  phuongPhap: string;
+  /** 5. Bước giải: quy trình nghĩ, áp được cho mọi câu cùng dạng. */
+  buocGiai: string[];
+  /** 6. Mẹo xử lý và nhận diện bẫy. */
+  meoXuLy: string[];
+  /** 7. Bí kíp: một câu chốt mang đi được, dùng lại ở mọi câu cùng dạng. */
+  biKip: string;
+  barem: BaremPhan[];
+  tongDiem: number;
+  nguongDat: number;
+  /** Cách tự kiểm trước khi nộp. */
+  tuKiem: string;
+  neuSai: string;
+}
+
+/* ==========================================================================
+   ĐỀ THI MẪU TRỌN VẸN
+   ========================================================================== */
+
+/** Một câu trong đề thi mẫu, có đáp án và lời giải riêng. */
+export interface CauDeThi {
+  no: number;
+  deBai: string;
+  /** Bốn lựa chọn cho câu trắc nghiệm; bỏ trống với câu tự luận. */
+  luaChon?: [string, string, string, string];
+  dapAn: string;
+  loiGiai: string;
+  diem: number;
+  /** Dạng bài trong hệ thống mà câu này thuộc về, để tra bộ giải. */
+  dangId?: string;
+}
+
+/** Một phần của đề thi mẫu. */
+export interface PhanDeThi {
+  no: number;
+  ten: string;
+  huongDan: string;
+  phut: number;
+  diem: number;
+  /** Ngữ liệu dùng chung cho cả phần: bài đọc, kịch bản nghe. */
+  nguLieu?: string;
+  cau: CauDeThi[];
+  barem: string;
+}
+
+/** Một đề thi mẫu trọn vẹn theo đúng cấu trúc một kỳ thi có thật. */
+export interface DeThiMau {
+  id: string;
+  ten: string;
+  kyThi: string;
+  /** Nguồn của cấu trúc, và lời nhắc phải đối chiếu lại trước mỗi mùa. */
+  theoCauTruc: string;
+  phut: number;
+  tongDiem: number;
+  soCau: number;
+  phan: PhanDeThi[];
+  /** Thứ tự làm bài được khuyến nghị, và vì sao. */
+  thuTuLam: string;
+  /** Cách phân bổ thời gian, tính từ tổng số phút của đề. */
+  chiaThoiGian: string[];
+  baremChung: string;
+  canhBao: string;
+}
+
 /** Một lần làm phiếu đã lưu vào hồ sơ. */
 export interface LanLam {
   id: string;

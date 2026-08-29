@@ -627,6 +627,63 @@ ngữ pháp lớn, bài đọc dài, phần biến đổi câu), không dựa tr
 Mỗi bài nối tới đúng một phiếu luyện. *Bài giảng không có phiếu đi kèm là bài giảng chỉ
 để nghe cho sướng tai.*
 
+## 📑 Bộ 2.000 đề — bảy chiều phân tích
+
+Mỗi phiếu luyện có một bảng phân tích riêng trả lời bảy câu hỏi mà học viên vừa làm xong
+thật sự cần: **kiến thức · dạng bài · đọc vị · phương pháp làm · bước giải · mẹo xử lý và
+nhận diện bẫy · bí kíp**. Cộng **10.000 dòng barem** — mỗi đề năm phần.
+
+**Nói thẳng đây là gì và KHÔNG là gì.** Đây **không** phải 2.000 đề với 40.000 câu viết
+tay riêng từng câu. Viết bằng ấy câu thì mỗi câu dùng được đúng một lần, phần lớn lặp
+nhau, và không ai đọc hết được. Thứ chuyển giao được là **cách đọc vị dạng bài và quy
+trình nghĩ** — cái đó dùng lại được ở mọi câu cùng dạng, kể cả câu chưa gặp. Câu cụ thể
+bấm được nằm ở **ngân hàng câu hỏi**; đề trọn vẹn nằm ở **đề thi mẫu**. Ba tầng, ba việc.
+
+**Đếm cho đúng, đừng để con số 2.000 nói quá.** Cả 2.000 bảng đều khác nhau — có bài kiểm
+đếm. Nhưng không phải chiều nào cũng có 2.000 biến thể: *kiến thức* và *dạng bài* biến
+theo từng **cấp** (25 bản khác nhau trong một dạng), còn *phương pháp*, *mẹo theo tầng* và
+*bí kíp* biến theo **tầng** — chỉ **5** biến thể. Đó là chủ ý: năm cấp trong cùng một tầng
+thì đúng là nên làm bài giống nhau. Bài kiểm ép creed phải nói ra điều này.
+
+**Chuẩn chấm nghiêm dần theo tầng, và có bài kiểm giữ chiều đó.** Tầng 1 chưa trừ điểm
+trình bày; tầng 5 trừ mọi lỗi, không châm chước. Nếu tầng 5 chấm dễ hơn tầng 1 thì thước
+đo đi ngược — học viên lên tầng lại thấy điểm cao hơn dù làm kém đi.
+
+Barem nói rõ **trừ điểm ở đâu**, không chỉ nói cho điểm ở đâu. Chỗ người chấm hay châm
+chước chính là chỗ thành bất công giữa hai học viên.
+
+## 📄 Bốn đề thi mẫu trọn vẹn
+
+Hệ thống trước đây mới có **ma trận** đề. Ma trận dạy được cách chia giờ nhưng không cho
+cái cảm giác ngồi trước một đề thật từ câu một tới câu cuối.
+
+**58 câu · 58 lời giải riêng · 10 phần · 10 barem · 2 bài đọc.**
+
+| Đề | Kỳ thi | Cấu trúc thật | Bản mẫu |
+|---|---|---|---|
+| Chuyên Anh Sở Hà Nội | Vào 10 chuyên | 120 phút · ~86 câu · 5 phần | 28 câu, phủ đủ 5 phần |
+| Ngoại ngữ chung Hà Nội | Vào 10 công lập | 60 phút · 40 câu · 24 mã đề | 12 câu, có cả 5 dạng thực tế mới |
+| Chuyên KHTN vòng 2 | Chuyên KHTN | 90 phút · nặng suy luận | 8 câu, đúng các cấu trúc vòng 2 hay ra |
+| Tốt nghiệp THPT | Tốt nghiệp | 50 phút · 40 câu · 3 khối | 10 câu, phủ đủ 3 khối |
+
+Mỗi đề có: **thứ tự làm bài khuyến nghị** kèm lý do, **cách chia giờ** từng phần, **barem
+chấm** từng phần, và một **cảnh báo riêng** cho kỳ thi đó. Mỗi câu neo về một dạng bài
+trong hệ thống, nên làm sai là tra ngay được bộ giải đề của dạng đó.
+
+**Vì sao rút gọn, và nói ra thay vì giấu.** Câu thứ hai mươi cùng một dạng gần như không
+dạy thêm gì; một dạng chưa gặp thì dạy rất nhiều. Nên mỗi đề mẫu ít câu hơn đề thật nhưng
+**phủ đủ mọi dạng** của phần đó, và số câu thật được ghi ngay trong đề.
+
+**Không dùng để đoán đề.** Cấu trúc và công thức điểm thay đổi theo từng năm và từng
+trường. Đề mẫu để luyện cảm giác và luyện phân bổ giờ. Trước mỗi mùa thi **phải** đối
+chiếu lại với đề án tuyển sinh chính thức — mỗi đề tự mang lời nhắc đó, và có bài kiểm ép
+lời nhắc phải còn ở đó.
+
+Bài kiểm `tools/kiem-dethi.ts` bắt được **bốn lỗi thật** trong chính bản soạn đầu: một
+barem cụt, một bài đọc quá ngắn so với số câu hỏi, và hai đề quên ghi mình là bản rút gọn.
+Nó cũng soát đáp án có rải đều bốn ô không — dồn vào một ô là thí sinh đoán trúng mà
+không hiểu.
+
 ## 🛡 Bảo mật — bốn lỗ hổng đã bịt
 
 Rà soát toàn bộ bản máy tính và bản web, tìm ra bốn chỗ hổng thật và bịt cả bốn. Mỗi

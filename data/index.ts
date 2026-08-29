@@ -45,3 +45,5 @@ export * from './hoso';
 export * from './chuyende';
 export * from './nganhang';
 export * from './phien';
+export * from './bode';
+export * from './dethi';

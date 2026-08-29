@@ -258,9 +258,16 @@ ok('làm lại giữ nguyên lịch sử đã lưu', /trung bình/i.test(lai));
   const co = async (pg, id) =>
     (await pg.locator(`aside nav button[data-tab="${id}"]`).count()) > 0;
 
+  /*
+   * Không gõ cứng con số. Thêm một thẻ mới là con số đổi, và một bài kiểm
+   * đỏ vì lý do đó chỉ dạy người ta sửa con số cho xanh. Cái đáng giữ là
+   * QUAN HỆ: vai mặc định phải mở ÍT hơn tổng số thẻ, còn vai chủ nhiệm
+   * chuyên môn phải mở ĐỦ. Quan hệ đó vỡ thì mới là phân quyền hỏng thật.
+   */
+  const tongThe = await p.locator('aside nav button[data-tab]').count();
   const soMacDinh = await dem(p2);
-  ok('vai mặc định KHÔNG mở đủ 37 thẻ — phân quyền có tác dụng thật',
-     soMacDinh === 32, `thấy ${soMacDinh}`);
+  ok('vai mặc định mở ít thẻ hơn tổng — phân quyền có tác dụng thật',
+     soMacDinh > 0 && soMacDinh < tongThe, `mặc định ${soMacDinh} / tổng ${tongThe}`);
   ok('vai mặc định KHÔNG thấy thẻ Chấm bài', !(await co(p2, 'grading')));
   ok('vai mặc định KHÔNG thấy thẻ Xưởng học liệu', !(await co(p2, 'studio')));
   ok('vai mặc định vẫn thấy thẻ học của mình', await co(p2, 'phieu'));
@@ -273,7 +280,8 @@ ok('làm lại giữ nguyên lịch sử đã lưu', /trung bình/i.test(lai));
   // Dải vai phải nói rõ đang ẩn bao nhiêu, không ẩn lặng lẽ.
   const dai = await p2.locator('aside').innerText();
   ok('dải vai nói rõ vai đang dùng', /Vai đang dùng/i.test(dai));
-  ok('dải vai đếm đúng số thẻ đang ẩn', /ẩn 5/.test(dai), dai.slice(0, 200));
+  ok('dải vai đếm đúng số thẻ đang ẩn',
+     new RegExp(`ẩn ${tongThe - soMacDinh}`).test(dai), dai.slice(0, 200));
 
   // Đổi sang vai chủ nhiệm chuyên môn thì mở đủ 37.
   await p2.getByRole('button', {name: 'Đổi vai'}).click();
@@ -281,7 +289,8 @@ ok('làm lại giữ nguyên lịch sử đã lưu', /trung bình/i.test(lai));
   await p2.locator('button[data-vai="gv-5"]').click();
   await p2.waitForTimeout(500);
   const soGv5 = await dem(p2);
-  ok('đổi sang CHỦ NHIỆM CHUYÊN MÔN thì mở đủ 37 thẻ', soGv5 === 37, `thấy ${soGv5}`);
+  ok('đổi sang CHỦ NHIỆM CHUYÊN MÔN thì mở ĐỦ mọi thẻ',
+     soGv5 === tongThe, `thấy ${soGv5} / tổng ${tongThe}`);
   ok('vai gv-5 thấy được thẻ Chấm bài', await co(p2, 'grading'));
 
   // SUPER ADMIN phải thấy ÍT thẻ hơn coach — quyền kỹ thuật không kèm quyền
