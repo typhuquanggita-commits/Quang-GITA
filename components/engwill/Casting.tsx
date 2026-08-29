@@ -5,6 +5,7 @@
 import React, {useState} from 'react';
 import {
   CASTING_NOTE,
+  VIETNAMESE_TTS_LIMIT,
   VOICE_ROSTER,
   MC_DELIVERY,
   ACCENT_STANDARD,
@@ -23,6 +24,43 @@ export const Casting: React.FC = () => {
         title="10 giọng học viên chọn được"
         lead="Tuyển từ 904 giọng bằng bộ sàng lọc âm học, rồi mới nghe để chốt. Học viên chọn giọng nào thì toàn bộ nội dung phát bằng giọng đó — người nghe hai mươi phút mỗi ngày trong ba tháng cần một giọng hợp tai mình."
       />
+
+      <Card className="mb-6 border-rose-500/40 bg-rose-500/[0.04]">
+        <div className="flex flex-wrap items-center gap-2">
+          <span className="text-lg">⚠</span>
+          <h3 className="text-sm font-bold text-rose-200">
+            Giọng Việt ngoại tuyến KHÔNG có thanh điệu
+          </h3>
+        </div>
+        <p className="mt-2 text-xs font-semibold leading-relaxed text-rose-100">
+          {VIETNAMESE_TTS_LIMIT.finding}
+        </p>
+        <dl className="mt-3 space-y-2 text-[11px] leading-relaxed">
+          <div>
+            <dt className="font-semibold text-slate-300">Vì sao</dt>
+            <dd className="text-slate-400">{VIETNAMESE_TTS_LIMIT.why}</dd>
+          </div>
+          <div>
+            <dt className="font-semibold text-slate-300">Bằng chứng</dt>
+            <dd className="text-slate-400">{VIETNAMESE_TTS_LIMIT.evidence}</dd>
+          </div>
+          <div>
+            <dt className="font-semibold text-slate-300">Không sửa được bằng hậu kỳ</dt>
+            <dd className="text-slate-400">{VIETNAMESE_TTS_LIMIT.notFixable}</dd>
+          </div>
+          <div>
+            <dt className="font-semibold text-slate-300">Vấn đề thứ hai</dt>
+            <dd className="text-slate-400">{VIETNAMESE_TTS_LIMIT.secondIssue}</dd>
+          </div>
+          <div>
+            <dt className="font-semibold text-emerald-300">Lối ra</dt>
+            <dd className="text-slate-300">{VIETNAMESE_TTS_LIMIT.fix}</dd>
+          </div>
+        </dl>
+        <code className="mt-3 block rounded-lg bg-slate-950 px-3 py-2 font-mono text-[11px] text-emerald-300">
+          {VIETNAMESE_TTS_LIMIT.verify}
+        </code>
+      </Card>
 
       <Card className="mb-8 border-emerald-500/25">
         <Field label="Tuyển bằng số đo trước, bằng tai sau">

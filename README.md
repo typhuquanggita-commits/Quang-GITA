@@ -30,6 +30,51 @@ GIEO ĐÊM 4′. Ba câu mục tiêu của ngày xuất hiện ở cả sáu kh�
 > hoá truy xuất · củng cố trong giấc ngủ (ôn *trước* khi ngủ) · giãn cách trong ngày.
 > Tab Chu kỳ ghi rõ ba tuyên bố phổ biến bị loại bỏ và lý do.
 
+## ⚠ Giọng Việt ngoại tuyến không có thanh điệu
+
+Đây là giới hạn kỹ thuật quan trọng nhất của phần âm thanh. Ghi lại để không
+ai đi lại con đường đã dò.
+
+**Phát hiện.** Không model Piper tiếng Việt nào biểu diễn được thanh điệu. Sáu
+từ `ma · mà · mả · mã · má · mạ` đi vào model như một.
+
+**Vì sao.** Piper dùng một bảng ký hiệu IPA chung **130 ký tự cho mọi ngôn
+ngữ**, và trong đó không có ký hiệu thanh điệu nào. espeak-ng *có* phiên âm
+thanh điệu, mã hoá bằng chữ số:
+
+```
+"ma mà mả mã má mạ"  →  mˈaː7  mˌaː2  mˈaː4  mˈaː5  mˈaːɜ  mˈaː6
+                            ↑      ↑      ↑      ↑             ↑
+                        chỉ chữ số phân biệt sáu thanh — và bị loại hết
+```
+
+**Bằng chứng đo được.** 17% âm vị bị bỏ qua, trong đó 44 lần là dấu thanh.
+Dựng riêng sáu từ một thanh: `mà` là thanh huyền phải **đi xuống** thì lại đi
+lên 225→232 Hz; `má` là thanh sắc phải **lên gắt** thì gần như phẳng 198→200 Hz.
+
+**Không sửa được bằng hậu kỳ.** Thông tin thanh điệu chưa từng đi vào model,
+kể cả lúc huấn luyện. Không bộ lọc hay bộ chỉnh cao độ nào tạo lại được thứ
+chưa bao giờ tồn tại.
+
+**Vấn đề thứ hai.** Cả hai model tiếng Việt xuất ở **16 kHz** — mất toàn bộ
+dải trên 8 kHz. Đo trên bản dựng thật: chỉ **1%** năng lượng nằm trên 8 kHz.
+Model tiếng Anh là 22 kHz, nên phần tiếng Anh nghe hẳn hơn phần tiếng Việt —
+chênh lệch đó không do cách trộn.
+
+**Lối ra.**
+
+```bash
+export GOOGLE_TTS_KEY=...
+node tools/make-podcast.mjs --tts google    # vi-VN-Neural2-A/D · 24 kHz · có thanh điệu
+```
+
+Hoặc `--tts gemini`, hoặc thu giọng người thật. Cả hai backend đã có sẵn trong
+pipeline, chỉ cần khoá API.
+
+```bash
+python3 tools/kiem-am-viet.py    # tự kiểm chứng toàn bộ phát hiện trên
+```
+
 ## 🎚 Khớp giọng mẫu
 
 Có một giọng thật mà bạn muốn dàn giọng nghe giống? Đưa file audio vào:
@@ -443,6 +488,7 @@ tools/
   dac_trung_giong.py   Trích MFCC — đặc trưng nhận dạng giọng nói
   khop-giong.py        Khớp một giọng mẫu có thật với dàn 10 giọng
   khop-giong.test.py   Đo độ chính xác của công cụ khớp giọng
+  kiem-am-viet.py      Kiểm model có biểu diễn được thanh điệu tiếng Việt không
 
 desktop/               Bản máy tính (Electron)
   main.cjs             Tiến trình chính — cách ly, CSP, giao thức app://, 9 kênh IPC

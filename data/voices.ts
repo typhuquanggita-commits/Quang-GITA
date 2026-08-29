@@ -99,6 +99,28 @@ export const VOICE_ROSTER: VoiceProfile[] = [
 
 /* ------------------- CHUẨN CHẤT GIỌNG: MC TRUYỀN HÌNH -------------------- */
 
+/* ------------------ GIỚI HẠN CỦA GIỌNG VIỆT NGOẠI TUYẾN ------------------ */
+
+/**
+ * Đây là giới hạn kỹ thuật quan trọng nhất của phần âm thanh, và nó không sửa
+ * được bằng hậu kỳ. Ghi ở đây để không ai đi lại con đường đã dò.
+ */
+export const VIETNAMESE_TTS_LIMIT = {
+  finding:
+    'Không model Piper tiếng Việt nào biểu diễn được thanh điệu. Sáu từ ma, mà, mả, mã, má, mạ đi vào model như một.',
+  why:
+    'Piper dùng một bảng ký hiệu IPA chung 130 ký tự cho mọi ngôn ngữ. Trong bảng đó không có ký hiệu thanh điệu nào. espeak-ng phiên âm tiếng Việt CÓ kèm thanh, mã hoá bằng chữ số — nhưng mọi chữ số bị loại im lặng trước khi vào model, chiếm khoảng 14% tổng số âm vị của một câu.',
+  evidence:
+    'Đo trên sáu câu thử: 17% âm vị bị bỏ qua, trong đó 44 lần là dấu thanh. Dựng riêng sáu từ một thanh cho thấy đường cao độ không khớp thanh nào: "mà" là thanh huyền phải đi xuống thì lại đi lên 225→232 Hz, "má" là thanh sắc phải lên gắt thì gần như phẳng 198→200 Hz.',
+  notFixable:
+    'Thông tin thanh điệu chưa từng đi vào model, kể cả lúc huấn luyện. Không có bộ lọc, bộ chỉnh cao độ hay kỹ thuật hậu kỳ nào tạo lại được thứ chưa bao giờ tồn tại.',
+  secondIssue:
+    'Cả hai model tiếng Việt còn xuất ở 16 kHz, nghĩa là mất toàn bộ dải trên 8 kHz. Đo trên bản dựng thật: chỉ 1% năng lượng nằm trên 8 kHz. Model tiếng Anh dùng trong hệ thống là 22 kHz, nên phần tiếng Anh nghe hẳn hơn phần tiếng Việt — chênh lệch đó không phải do cách trộn.',
+  fix:
+    'Muốn giọng Việt chuẩn thanh điệu, phải đổi nguồn tổng hợp: Google Cloud TTS (vi-VN-Neural2-A giọng nữ, vi-VN-Neural2-D giọng nam, 24 kHz) hoặc Gemini TTS. Cả hai đã có sẵn trong pipeline, chỉ cần khoá API. Ngoài ra là thu giọng người thật.',
+  verify: 'python3 tools/kiem-am-viet.py',
+};
+
 export const MC_DELIVERY: DeliverySpec[] = [
   {
     id: 'd-rate',

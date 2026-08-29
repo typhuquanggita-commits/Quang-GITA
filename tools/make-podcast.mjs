@@ -31,7 +31,10 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const SCRIPTS = join(ROOT, 'content', 'podcast-scripts.json');
 const OUT = join(ROOT, 'audio');
 const TMP = join(OUT, '.tmp');
-const RATE = 22050;
+// 24 kHz là tần số gốc của Google Neural2 và Gemini TTS. Chốt ở 22050 như
+// trước sẽ ép hai nguồn đó hạ mẫu, mất chất lượng ngay từ đầu. Model Piper
+// tiếng Anh 22050 thì nâng lên 24000 là vô hại.
+const RATE = 24000;
 const PIPER_DIR =
   process.env.PIPER_VOICES ||
   join(process.env.HOME || '/root', '.local', 'share', 'piper-voices');
@@ -49,6 +52,26 @@ const flag = (name) => argv.includes(`--${name}`);
 
 const TTS = arg('tts', 'piper');
 const ONLY = arg('ep', null);
+
+/*
+ * Chặn cờ lạ. Trước đây gõ nhầm "--only ep01" thay vì "--ep ep01" thì cờ bị
+ * bỏ qua im lặng và công cụ dựng cả sáu tập — mất năm phút mới biết mình gõ
+ * sai. Cờ không nhận ra thì dừng ngay, đừng đoán ý người dùng.
+ */
+const CO_HOP_LE = new Set(['tts', 'ep', 'rss']);
+for (let i = 0; i < argv.length; i++) {
+  const a = argv[i];
+  if (!a.startsWith('--')) continue;
+  const ten = a.slice(2);
+  if (!CO_HOP_LE.has(ten)) {
+    console.error(
+      `\n  Không có cờ "${a}".\n` +
+        `  Cờ hợp lệ: ${[...CO_HOP_LE].map((x) => '--' + x).join(', ')}\n` +
+        `  Dựng một tập là: --ep ep01\n`,
+    );
+    process.exit(1);
+  }
+}
 
 /* ------------------------------ tiện ích --------------------------------- */
 
@@ -290,6 +313,36 @@ async function ttsGemini(line, out) {
 
 const BACKENDS = {espeak: ttsEspeak, google: ttsGoogle, gemini: ttsGemini};
 
+/*
+ * Cảnh báo về thanh điệu tiếng Việt.
+ *
+ * Bảng ký hiệu của Piper là bảng IPA dùng chung 130 ký tự cho mọi ngôn ngữ và
+ * KHÔNG có ký hiệu thanh điệu nào. espeak-ng phiên âm tiếng Việt có kèm thanh
+ * bằng chữ số, nhưng mọi chữ số đó bị loại trước khi vào model — khoảng 14%
+ * tổng số âm vị. Model chưa từng nhận được thông tin thanh điệu, kể cả lúc
+ * huấn luyện, nên không hậu kỳ nào sửa được.
+ *
+ * Kiểm chứng: python3 tools/kiem-am-viet.py
+ */
+let daCanhBaoThanh = false;
+
+function canhBaoThanhDieu(eps) {
+  if (daCanhBaoThanh) return;
+  const coTiengViet = eps.some((e) =>
+    e.lines.some((l) => l.l === 'vi' && l.s !== 'LẶNG' && l.t),
+  );
+  if (!coTiengViet) return;
+  daCanhBaoThanh = true;
+  console.log(
+    '\n  ⚠ CẢNH BÁO — GIỌNG VIỆT KHÔNG CÓ THANH ĐIỆU\n' +
+      '    Backend piper đang dựng các dòng tiếng Việt bằng model không biểu\n' +
+      '    diễn được thanh điệu. Sáu từ ma/mà/mả/mã/má/mạ đi vào model như\n' +
+      '    một. Người nghe bản ngữ sẽ thấy sai ngay.\n' +
+      '    Muốn giọng Việt chuẩn: --tts google  (cần GOOGLE_TTS_KEY)\n' +
+      '    Kiểm chứng vấn đề:     python3 tools/kiem-am-viet.py\n',
+  );
+}
+
 /* ------------------------------- dựng tập -------------------------------- */
 
 /**
@@ -527,6 +580,8 @@ ${items}
     console.error(`Không có tập nào khớp: ${ONLY}`);
     process.exit(1);
   }
+
+  if (TTS === 'piper' || TTS === 'espeak') canhBaoThanhDieu(eps);
 
   mkdirSync(OUT, {recursive: true});
   mkdirSync(TMP, {recursive: true});
