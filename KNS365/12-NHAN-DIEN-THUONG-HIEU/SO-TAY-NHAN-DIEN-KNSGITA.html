@@ -1,0 +1,817 @@
+<title>Sổ tay nhận diện KNSGITA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=IBM+Plex+Mono:wght@400;600&family=Noto+Serif:ital,wght@0,400;0,600;1,400&display=swap">
+<style>
+:root{
+  --paper:#FAFBFD; --surface:#EEF2F8; --surface-2:#E3EAF4; --ink:#131A29; --ink-2:#3A4459;
+  --muted:#59637A; --line:#D7DFEC; --line-2:#C2CDE0;
+  --blue:#1C4F9C; --blue-lite:#4A86C8; --red:#E1251B; --gold:#F2A900;
+  --ui-blue:#1C4F9C; --ui-red:#C81C13; --ui-gold:#9A6B00; --ui-green:#1F7A45;
+  --shadow:0 1px 2px rgba(19,26,41,.05), 0 8px 24px -12px rgba(19,26,41,.18);
+  --sans:"Be Vietnam Pro",-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --serif:"Noto Serif",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#0A1020; --surface:#141D30; --surface-2:#1D2941; --ink:#E6ECF7; --ink-2:#C3CEE2;
+    --muted:#94A1BA; --line:#24314B; --line-2:#31405D;
+    --ui-blue:#7FB0E4; --ui-red:#FF7A6E; --ui-gold:#F2A900; --ui-green:#4FBE7E;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -14px rgba(0,0,0,.7);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0A1020; --surface:#141D30; --surface-2:#1D2941; --ink:#E6ECF7; --ink-2:#C3CEE2;
+  --muted:#94A1BA; --line:#24314B; --line-2:#31405D;
+  --ui-blue:#7FB0E4; --ui-red:#FF7A6E; --ui-gold:#F2A900; --ui-green:#4FBE7E;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -14px rgba(0,0,0,.7);
+}
+*{box-sizing:border-box}
+body{
+  background:var(--paper); color:var(--ink); font-family:var(--sans);
+  font-size:16px; line-height:1.65; margin:0; -webkit-font-smoothing:antialiased;
+}
+/* ---- GITA spine ---- */
+.spine{position:fixed; left:0; top:0; bottom:0; width:10px; display:flex; flex-direction:column; z-index:50}
+.spine i{flex:1; display:block}
+.spine i:nth-child(1){background:#1C4F9C}
+.spine i:nth-child(2){background:#E1251B}
+.spine i:nth-child(3){background:#F2A900}
+.spine i:nth-child(4){background:#4A86C8}
+.wrap{max-width:1080px; margin:0 auto; padding:0 24px 0 34px}
+.col{max-width:720px}
+h1,h2,h3,h4{text-wrap:balance; margin:0}
+a{color:var(--ui-blue)}
+:focus-visible{outline:2px solid var(--ui-blue); outline-offset:3px; border-radius:3px}
+
+/* ---- hero ---- */
+.hero{padding:clamp(48px,7vw,96px) 0 40px; border-bottom:1px solid var(--line)}
+.eyebrow{font-size:11px; font-weight:600; letter-spacing:.16em; text-transform:uppercase; color:var(--muted); margin:0 0 20px}
+.wordmark{font-size:clamp(44px,9vw,86px); font-weight:800; letter-spacing:.06em; line-height:1; color:var(--ui-blue); margin:0}
+.hero p.lede{font-size:clamp(17px,2.2vw,20px); color:var(--ink-2); max-width:56ch; margin:20px 0 0; line-height:1.55}
+.gitabar{display:flex; height:10px; width:min(100%,520px); margin:32px 0 0; border-radius:1px; overflow:hidden}
+.gitabar span{flex:1}
+.gitabar-labels{display:flex; width:min(100%,520px); margin-top:8px; font:600 10px/1 var(--mono); letter-spacing:.14em; color:var(--muted)}
+.gitabar-labels span{flex:1}
+.meta{display:flex; flex-wrap:wrap; gap:8px 28px; margin-top:36px; font-size:13px; color:var(--muted)}
+.meta b{color:var(--ink); font-weight:600}
+
+/* ---- section index ---- */
+.index{position:sticky; top:0; z-index:40; background:color-mix(in srgb,var(--paper) 92%, transparent);
+  backdrop-filter:blur(8px); border-bottom:1px solid var(--line); margin-bottom:0}
+.index-in{max-width:1080px; margin:0 auto; padding:0 24px 0 34px; display:flex; gap:2px; overflow-x:auto; scrollbar-width:thin}
+.index a{display:block; white-space:nowrap; padding:12px 12px; font-size:12.5px; font-weight:500;
+  color:var(--muted); text-decoration:none; border-bottom:2px solid transparent}
+.index a:hover{color:var(--ink); border-bottom-color:var(--line-2)}
+.index a b{font-family:var(--mono); font-weight:600; font-size:11px; color:var(--ui-blue); margin-right:6px}
+
+/* ---- sections ---- */
+section{padding:clamp(48px,6vw,76px) 0; border-bottom:1px solid var(--line)}
+.snum{font:600 11px/1 var(--mono); letter-spacing:.14em; color:var(--ui-blue); display:block; margin-bottom:12px}
+h2{font-size:clamp(26px,4vw,36px); font-weight:800; letter-spacing:-.02em; line-height:1.15}
+.sublede{color:var(--muted); margin:14px 0 0; max-width:62ch; font-size:15.5px}
+h3{font-size:15px; font-weight:700; letter-spacing:.01em; margin:44px 0 14px; padding-bottom:8px; border-bottom:1px solid var(--line)}
+h4{font-size:13px; font-weight:700; margin:0 0 8px}
+p{margin:0 0 14px}
+.note{font-size:13.5px; color:var(--muted)}
+
+/* ---- generic blocks ---- */
+.card{background:var(--surface); border:1px solid var(--line); border-radius:8px; padding:20px}
+.grid{display:grid; gap:14px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.g4{grid-template-columns:repeat(auto-fit,minmax(158px,1fr))}
+.scroll{overflow-x:auto; -webkit-overflow-scrolling:touch}
+table{border-collapse:collapse; width:100%; font-size:14px; min-width:520px}
+th{background:var(--ui-blue); color:#fff; font-weight:600; font-size:12.5px; text-align:left; padding:9px 12px; letter-spacing:.01em}
+td{padding:9px 12px; border-bottom:1px solid var(--line); vertical-align:top}
+tbody tr:nth-child(even) td{background:var(--surface)}
+td b{font-weight:600}
+.mono{font-family:var(--mono); font-size:12.5px; font-variant-numeric:tabular-nums}
+
+/* ---- phase chips ---- */
+.chip{display:inline-flex; align-items:center; justify-content:center; width:26px; height:26px;
+  border-radius:5px; color:#fff; font-weight:800; font-size:14px; flex:none}
+.cG{background:#1C4F9C} .cI{background:#E1251B} .cT{background:#F2A900} .cA{background:#4A86C8}
+.chiprow{display:flex; gap:10px; align-items:center; flex-wrap:wrap}
+
+/* ---- logo panel ---- */
+.logopanel{background:var(--surface); border:1px solid var(--line); border-radius:8px; padding:28px; display:grid; gap:24px;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); align-items:center}
+.logostage{display:flex; align-items:center; justify-content:center; background:var(--paper);
+  border:1px dashed var(--line-2); border-radius:6px; padding:18px; min-height:190px}
+svg.mark{width:100%; max-width:340px; height:auto; display:block}
+.mark .draw{stroke-dasharray:1200; stroke-dashoffset:1200; animation:draw 1.5s cubic-bezier(.4,0,.2,1) forwards}
+.mark .draw.d2{animation-delay:.18s} .mark .draw.d3{animation-delay:.34s}
+.mark .st{opacity:0; animation:pop .5s ease forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes pop{to{opacity:1}}
+@media (prefers-reduced-motion:reduce){
+  .mark .draw{animation:none; stroke-dashoffset:0}
+  .mark .st{animation:none; opacity:1}
+}
+.caption{font-size:12.5px; color:var(--muted); margin-top:10px; line-height:1.5}
+
+/* ---- swatches ---- */
+.sw{border:1px solid var(--line); border-radius:8px; overflow:hidden; background:var(--surface)}
+.sw .chipblock{height:88px; display:block}
+.sw .info{padding:12px 14px}
+.sw .nm{font-weight:700; font-size:14px; display:block}
+.sw .hx{font-family:var(--mono); font-size:12px; color:var(--muted); display:block; margin-top:3px}
+.sw .use{font-size:12px; color:var(--muted); display:block; margin-top:6px; line-height:1.45}
+.dots{display:flex; gap:10px; flex-wrap:wrap; align-items:center}
+.dot{display:flex; align-items:center; gap:8px; font-size:13px; background:var(--surface);
+  border:1px solid var(--line); border-radius:999px; padding:5px 12px 5px 6px}
+.dot i{width:18px; height:18px; border-radius:50%; display:block; flex:none}
+
+/* ---- type specimens ---- */
+.spec{border:1px solid var(--line); border-radius:8px; padding:20px 22px; background:var(--surface); margin-bottom:12px}
+.spec .lbl{font:600 10.5px/1 var(--mono); letter-spacing:.14em; color:var(--muted); text-transform:uppercase; margin-bottom:12px}
+.spec .s1{font-size:34px; font-weight:800; letter-spacing:-.02em; line-height:1.15; color:var(--ui-blue)}
+.spec .s2{font-family:var(--serif); font-size:17px; line-height:1.7; color:var(--ink-2)}
+.spec .s3{font-family:var(--mono); font-size:15px; letter-spacing:.02em}
+
+/* ---- callout boxes (live specimens) ---- */
+.box{border-radius:6px; padding:14px 16px; margin-bottom:12px; font-size:14.5px; line-height:1.6; background:var(--surface)}
+.box b{display:block; font-size:12px; letter-spacing:.08em; text-transform:uppercase; margin-bottom:5px}
+.box-goal{border-left:4px solid #1C4F9C} .box-goal b{color:var(--ui-blue)}
+.box-fire{border-left:4px solid #E1251B; background:color-mix(in srgb,#E1251B 7%, var(--paper))} .box-fire b{color:var(--ui-red)}
+.box-safe{border:2px solid #E1251B; background:var(--paper)} .box-safe b{color:var(--ui-red)}
+.box-ref{border-left:4px solid var(--line-2)} .box-ref b{color:var(--muted)}
+.box-say{border:0; background:none; padding:6px 0 6px 18px; border-left:2px solid var(--line-2);
+  font-style:italic; color:var(--ui-blue); font-size:15px}
+
+/* ---- template blueprints ---- */
+.bp{background:var(--paper); border:1px solid var(--line-2); border-radius:4px; overflow:hidden;
+  box-shadow:var(--shadow); font-size:11px; line-height:1.4}
+.bp-h{display:flex; align-items:center; gap:8px; padding:8px 10px; border-bottom:1px solid var(--line)}
+.bp-h .lg{font-weight:800; font-size:10px; letter-spacing:.1em; color:var(--ui-blue)}
+.bp-h .sec{margin-left:auto; font:600 9px/1 var(--mono); padding:3px 6px; border-radius:3px; color:#fff}
+.bp-body{padding:12px 14px 16px}
+.bp-title{font-weight:800; font-size:15px; color:var(--ui-blue); letter-spacing:-.01em}
+.bp-code{font-family:var(--mono); font-size:10.5px; color:var(--muted)}
+.bp-rule{height:1px; background:var(--line); margin:9px 0}
+.bp-line{height:8px; background:var(--surface-2); border-radius:2px; margin:6px 0}
+.bp-line.w60{width:60%} .bp-line.w80{width:80%} .bp-line.w40{width:40%}
+.bp-layer{display:flex; gap:8px; align-items:flex-start; margin:9px 0}
+.bp-layer .bar{width:3px; align-self:stretch; border-radius:2px; flex:none; min-height:26px}
+.bp-layer .t{flex:1}
+.bp-layer .t span{font-weight:700; font-size:10.5px}
+.bp-cover{background:#1C4F9C; color:#fff; padding:16px 14px 14px; min-height:210px; display:flex; flex-direction:column}
+.bp-cover .bar4{display:flex; height:6px; margin:-16px -14px 20px}
+.bp-cover .bar4 span{flex:1}
+.bp-cover .wm{font-weight:800; font-size:20px; letter-spacing:.12em; margin-top:auto}
+.bp-cover .sb{font-size:10.5px; opacity:.85; margin-top:4px; line-height:1.5}
+.bp-cover .ft{font-size:9px; opacity:.7; margin-top:14px; border-top:1px solid rgba(255,255,255,.28); padding-top:8px}
+.bar-m{display:flex; align-items:center; gap:6px; margin:4px 0; font-size:10px}
+.bar-m .track{flex:1; height:7px; background:var(--surface-2); border-radius:99px; overflow:hidden}
+.bar-m .fill{height:100%; background:var(--ui-blue); display:block}
+.bar-m .k{width:22px; font-family:var(--mono); font-size:9.5px; color:var(--muted)}
+.bar-m .v{width:20px; font:600 9.5px/1 var(--mono); color:var(--ink-2); text-align:right}
+
+/* ---- 7-part rail ---- */
+.rail{display:flex; align-items:flex-start; gap:0; overflow-x:auto; padding:6px 0 2px}
+.rail .st{display:flex; flex-direction:column; align-items:center; min-width:76px; position:relative; flex:1}
+.rail .st::before{content:""; position:absolute; top:9px; left:-50%; width:100%; height:2px; background:var(--line-2)}
+.rail .st:first-child::before{display:none}
+.rail .st.done::before{background:var(--ui-blue)}
+.rail .bul{width:20px; height:20px; border-radius:50%; border:2px solid var(--line-2); background:var(--paper); position:relative; z-index:1}
+.rail .st.done .bul{border-color:transparent}
+.rail .p{font:600 11px/1 var(--mono); margin-top:9px}
+.rail .n{font-size:10.5px; color:var(--muted); margin-top:4px; text-align:center; line-height:1.35}
+
+/* ---- do / don't ---- */
+.vs{display:grid; gap:0; grid-template-columns:1fr 1fr; border:1px solid var(--line); border-radius:8px; overflow:hidden}
+.vs>div{padding:13px 15px; font-size:14px; line-height:1.55}
+.vs .no{background:color-mix(in srgb,#E1251B 6%, var(--paper)); border-right:1px solid var(--line)}
+.vs .yes{background:color-mix(in srgb,#1F7A45 7%, var(--paper))}
+.vs .hd{font:600 10.5px/1 var(--mono); letter-spacing:.12em; text-transform:uppercase; margin-bottom:6px}
+.vs .no .hd{color:var(--ui-red)} .vs .yes .hd{color:var(--ui-green)}
+@media (max-width:620px){ .vs{grid-template-columns:1fr} .vs .no{border-right:0; border-bottom:1px solid var(--line)} }
+
+/* ---- checklist ---- */
+.chk{display:grid; gap:8px; grid-template-columns:repeat(auto-fit,minmax(310px,1fr)); list-style:none; padding:0; margin:0}
+.chk li{display:flex; gap:10px; align-items:flex-start; font-size:14px; background:var(--surface);
+  border:1px solid var(--line); border-radius:6px; padding:10px 13px; line-height:1.5}
+.chk li .n{font:600 11px/1.5 var(--mono); color:var(--muted); flex:none; width:18px}
+.chk li.crit{border-color:#E1251B; background:color-mix(in srgb,#E1251B 6%, var(--paper))}
+.chk li.crit .n{color:var(--ui-red)}
+.chkhd{font:600 11px/1 var(--mono); letter-spacing:.14em; text-transform:uppercase; color:var(--muted); margin:26px 0 12px}
+
+/* ---- misuse ---- */
+.bad{display:grid; gap:8px; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); list-style:none; padding:0; margin:0}
+.bad li{font-size:13.5px; padding:10px 13px 10px 34px; background:var(--surface); border:1px solid var(--line);
+  border-radius:6px; position:relative; line-height:1.5}
+.bad li::before{content:"×"; position:absolute; left:13px; top:9px; color:var(--ui-red); font-weight:800; font-size:15px}
+
+footer{padding:44px 0 60px; font-size:13px; color:var(--muted)}
+footer b{color:var(--ink)}
+</style>
+
+<div class="spine" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+
+<div class="wrap">
+  <header class="hero">
+    <p class="eyebrow">Bộ nhận diện thương hiệu tài liệu · Học viện GITA</p>
+    <h1 class="wordmark">KNSGITA</h1>
+    <p class="lede">Hệ nhận diện cho toàn bộ học liệu Kỹ năng sống KNS365 — 288 chuyên đề, lớp 1 đến lớp 12. Mỗi yếu tố nhận diện ở đây là một lần nhắc lại mô thức GITA, không phải một lớp trang trí.</p>
+    <div class="gitabar" aria-hidden="true">
+      <span style="background:#1C4F9C"></span><span style="background:#E1251B"></span>
+      <span style="background:#F2A900"></span><span style="background:#4A86C8"></span>
+    </div>
+    <div class="gitabar-labels" aria-hidden="true"><span>GOAL</span><span>INSPIRITS</span><span>TALENT</span><span>ACTION</span></div>
+    <div class="meta">
+      <span><b>Chương trình</b> KNS365 · hệ GEN VIỆT</span>
+      <span><b>Đồng bộ</b> GITA365</span>
+      <span><b>Phiên bản</b> v1.0 · 2026</span>
+    </div>
+  </header>
+</div>
+
+<nav class="index" aria-label="Mục lục">
+  <div class="index-in">
+    <a href="#kt"><b>01</b>Kiến trúc</a>
+    <a href="#logo"><b>02</b>Logo</a>
+    <a href="#mau"><b>03</b>Màu</a>
+    <a href="#chu"><b>04</b>Chữ</a>
+    <a href="#bieutuong"><b>05</b>Biểu tượng</a>
+    <a href="#mau-tl"><b>06</b>Mẫu tài liệu</a>
+    <a href="#giong"><b>07</b>Giọng</a>
+    <a href="#so"><b>08</b>Nhận diện số</a>
+    <a href="#check"><b>09</b>Checklist</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+<!-- 01 -->
+<section id="kt">
+  <div class="col">
+    <span class="snum">01</span>
+    <h2>Kiến trúc thương hiệu</h2>
+    <p class="sublede">Bốn tên gọi, một thứ tự đọc duy nhất. Đảo thứ tự là làm hỏng cách người ngoài hiểu hệ thống.</p>
+  </div>
+  <div class="grid g4" style="margin-top:28px">
+    <div class="card"><h4 style="color:var(--ui-blue)">Học viện GITA</h4><p class="note" style="margin:0">Thương hiệu mẹ. Chủ sở hữu mọi tài liệu, mọi logo.</p></div>
+    <div class="card"><h4 style="color:var(--ui-blue)">Mô thức GITA</h4><p class="note" style="margin:0">Tài sản tri thức lõi: Goal · Inspirits · Talent · Action/Academy. Chi phối 100% nội dung.</p></div>
+    <div class="card"><h4 style="color:var(--ui-blue)">hệ GEN VIỆT</h4><p class="note" style="margin:0">Hệ sinh thái 5 trụ. KNS365 là chương trình lõi; GITA365 là nền tảng đo lường.</p></div>
+    <div class="card" style="border-color:var(--line-2)"><h4 style="color:var(--ui-blue)">KNSGITA</h4><p class="note" style="margin:0"><b>Nhãn xuất bản của mọi học liệu.</b> Đối tượng của sổ tay này.</p></div>
+  </div>
+  <h3>Viết đúng tên</h3>
+  <div class="scroll"><table>
+    <thead><tr><th style="width:26%">Viết đúng</th><th style="width:34%">Viết sai thường gặp</th><th>Ghi chú</th></tr></thead>
+    <tbody>
+      <tr><td><b>Học viện GITA</b></td><td>Học Viện Gita · GITA Academy</td><td>Tên pháp nhân trong văn bản tiếng Việt</td></tr>
+      <tr><td><b>GITA</b></td><td>G.I.T.A · Gita · G-I-T-A</td><td>Bốn chữ viết liền, in hoa</td></tr>
+      <tr><td><b>hệ GEN VIỆT</b></td><td>Gen Việt · GENVIET</td><td>“hệ” viết thường, “GEN VIỆT” in hoa</td></tr>
+      <tr><td><b>KNS365</b> · <b>KNSGITA</b> · <b>GITA365</b></td><td>KNS 365 · KNS-GITA · Gita365</td><td>Luôn viết liền, không dấu cách, không gạch nối</td></tr>
+      <tr><td><b>chuyên đề</b></td><td>bài học · module</td><td>Đơn vị nội dung của KNS365</td></tr>
+      <tr><td><b>huấn luyện viên (HLV)</b></td><td>giáo viên dạy kỹ năng</td><td>Trong tài liệu nội bộ dùng HLV</td></tr>
+    </tbody>
+  </table></div>
+  <div class="box box-ref" style="margin-top:20px"><b>Khoá đọc trên mọi bìa</b>KNSGITA <span class="mono">→</span> KNS365 <span class="mono">→</span> hệ GEN VIỆT <span class="mono">→</span> Học viện GITA. Không bao giờ đảo thứ tự này.</div>
+</section>
+
+<!-- 02 -->
+<section id="logo">
+  <div class="col">
+    <span class="snum">02</span>
+    <h2>Logo</h2>
+    <p class="sublede">Logo GITA không phải hình trang trí — nó là mô thức GITA vẽ ra được. Đây là cách đọc thống nhất khi giới thiệu với phụ huynh, đối tác và học sinh.</p>
+  </div>
+
+  <div class="logopanel" style="margin-top:28px">
+    <div>
+      <div class="logostage">
+        <svg class="mark" viewBox="0 0 470 250" role="img" aria-label="Sơ đồ cấu trúc logo GITA: vòng quỹ đạo kép, chữ GITA ở tâm, chùm sao góc trên phải">
+          <defs>
+            <path id="star" d="M0,-1 L0.2245,-0.309 L0.951,-0.309 L0.3633,0.118 L0.5878,0.809 L0,0.382 L-0.5878,0.809 L-0.3633,0.118 L-0.951,-0.309 L-0.2245,-0.309 Z"/>
+          </defs>
+          <g fill="none" stroke-linecap="round">
+            <path class="draw" d="M 44 168 A 196 92 -8 0 0 430 146" stroke="#4A86C8" stroke-width="23"/>
+            <path class="draw d2" d="M 74 172 A 158 72 -8 0 0 398 152" stroke="#1C4F9C" stroke-width="19"/>
+            <path class="draw d3" d="M 60 128 A 190 86 -14 0 1 404 106" stroke="#E1251B" stroke-width="15"/>
+          </g>
+          <text x="238" y="160" text-anchor="middle" font-family="Be Vietnam Pro, sans-serif"
+                font-weight="800" font-size="72" letter-spacing="2" fill="#1C4F9C">GITA</text>
+          <g>
+            <use class="st" href="#star" transform="translate(330,44) scale(9)"  fill="#E1251B" style="animation-delay:.85s"/>
+            <use class="st" href="#star" transform="translate(360,32) scale(10)" fill="#E1251B" style="animation-delay:.95s"/>
+            <use class="st" href="#star" transform="translate(392,24) scale(11)" fill="#1C4F9C" style="animation-delay:1.05s"/>
+            <use class="st" href="#star" transform="translate(424,20) scale(11)" fill="#1C4F9C" style="animation-delay:1.15s"/>
+            <use class="st" href="#star" transform="translate(452,26) scale(9)"  fill="#4A86C8" style="animation-delay:1.25s"/>
+          </g>
+        </svg>
+      </div>
+      <p class="caption"><b>Sơ đồ dựng lại</b> từ logo gửi kèm, chỉ dùng để minh hoạ cấu trúc và quy tắc khoảng cách. Khi triển khai <b>bắt buộc dùng file vector gốc</b> (.ai / .eps / .svg) do Học viện phát hành — chữ “GITA” trong logo thật là <i>logotype</i> riêng, không phải phông chữ.</p>
+    </div>
+    <div>
+      <h4 style="margin-bottom:12px">Đọc logo theo mô thức</h4>
+      <div class="chiprow" style="align-items:flex-start; margin-bottom:14px">
+        <span class="chip cA">A</span>
+        <div style="font-size:14px; line-height:1.55"><b>Vòng quỹ đạo kép</b> — lộ trình rèn luyện là một quỹ đạo có hướng, không phải đường thẳng. Dải xanh là kỷ luật &amp; hệ thống; dải đỏ là sức bật vượt lên.</div>
+      </div>
+      <div class="chiprow" style="align-items:flex-start; margin-bottom:14px">
+        <span class="chip cG">G</span>
+        <div style="font-size:14px; line-height:1.55"><b>Chữ GITA ở tâm</b> — đích nằm ở tâm của mọi chuyển động. Chân chữ dày: nền tảng vững, không nghiêng.</div>
+      </div>
+      <div class="chiprow" style="align-items:flex-start; margin-bottom:14px">
+        <span class="chip cT">T</span>
+        <div style="font-size:14px; line-height:1.55"><b>Chùm sao</b> — tài năng bừng sáng khi đi đủ lâu trên quỹ đạo.</div>
+      </div>
+      <div class="chiprow" style="align-items:flex-start">
+        <span class="chip cI">I</span>
+        <div style="font-size:14px; line-height:1.55"><b>Hướng sao vươn lên</b> — ngọn lửa đưa người học vượt khỏi quỹ đạo cũ.</div>
+      </div>
+      <div class="box box-say" style="margin-top:18px">“Vòng xanh là lộ trình. Vạch đỏ là sức bật. Chữ GITA ở giữa là đích. Và chùm sao là điều xảy ra khi một đứa trẻ đi đủ lâu trên quỹ đạo đó — em ấy toả sáng.”</div>
+    </div>
+  </div>
+
+  <h3>Tám biến thể bắt buộc có</h3>
+  <div class="scroll"><table>
+    <thead><tr><th style="width:110px">Mã</th><th style="width:34%">Biến thể</th><th>Dùng khi</th></tr></thead>
+    <tbody>
+      <tr><td class="mono">LOGO-01</td><td><b>Đủ màu / nền trắng</b> — bản chính</td><td>Mặc định cho mọi tài liệu in và số</td></tr>
+      <tr><td class="mono">LOGO-02</td><td>Đủ màu / nền Xanh GITA, chữ &amp; sao trắng</td><td>Bìa, trang tiêu đề, slide nền tối</td></tr>
+      <tr><td class="mono">LOGO-03</td><td>Một màu Xanh GITA</td><td>In một màu, dấu mộc</td></tr>
+      <tr><td class="mono">LOGO-04</td><td>Bóc trắng</td><td>Nền ảnh, nền màu đậm</td></tr>
+      <tr><td class="mono">LOGO-05</td><td>Đen 100%</td><td>Photocopy, văn bản hành chính</td></tr>
+      <tr><td class="mono">LOGO-06</td><td>Khoá ngang có dòng định danh</td><td>Đầu trang tài liệu chính thức</td></tr>
+      <tr><td class="mono">LOGO-07</td><td>Khoá dọc có dòng định danh</td><td>Bìa, chứng nhận, backdrop</td></tr>
+      <tr><td class="mono">LOGO-08</td><td>Dấu rút gọn — quỹ đạo + sao, không chữ</td><td>Ảnh đại diện, con dấu Hộ chiếu, watermark</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>Vùng an toàn &amp; kích thước nhỏ nhất</h3>
+  <div class="grid g2">
+    <div class="card">
+      <h4>Vùng an toàn = X</h4>
+      <p class="note" style="margin:0 0 14px"><b>X = chiều cao chữ “G”.</b> Không đặt bất kỳ chữ, hình hay đường viền nào vào vùng này — kể cả logo đơn vị đối tác.</p>
+      <svg viewBox="0 0 300 150" style="width:100%;height:auto" role="img" aria-label="Sơ đồ vùng an toàn quanh logo bằng chiều cao chữ G">
+        <rect x="6" y="6" width="288" height="138" fill="none" stroke="var(--line-2)" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <rect x="56" y="42" width="188" height="66" fill="var(--surface-2)" stroke="var(--line-2)" stroke-width="1"/>
+        <text x="150" y="84" text-anchor="middle" font-family="Be Vietnam Pro, sans-serif" font-weight="800" font-size="26" fill="#1C4F9C">GITA</text>
+        <g stroke="#E1251B" stroke-width="1.2">
+          <line x1="6" y1="24" x2="56" y2="24"/><line x1="244" y1="126" x2="294" y2="126"/>
+          <line x1="30" y1="6" x2="30" y2="42"/><line x1="270" y1="108" x2="270" y2="144"/>
+        </g>
+        <text x="31" y="20" font-family="IBM Plex Mono, monospace" font-size="11" fill="#E1251B">X</text>
+        <text x="269" y="138" font-family="IBM Plex Mono, monospace" font-size="11" fill="#E1251B">X</text>
+      </svg>
+    </div>
+    <div class="card">
+      <h4>Kích thước nhỏ nhất</h4>
+      <div class="scroll"><table style="min-width:0">
+        <thead><tr><th>Trường hợp</th><th style="width:92px">Tối thiểu</th></tr></thead>
+        <tbody>
+          <tr><td>In — logo đủ chữ</td><td class="mono">20 mm</td></tr>
+          <tr><td>In — dấu rút gọn <span class="mono">LOGO-08</span></td><td class="mono">8 mm</td></tr>
+          <tr><td>Màn hình — logo đủ chữ</td><td class="mono">96 px</td></tr>
+          <tr><td>Màn hình — dấu rút gọn</td><td class="mono">32 px</td></tr>
+          <tr><td>Con dấu Hộ chiếu GITA</td><td class="mono">Ø 18 mm</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+  </div>
+
+  <h3>Mười hai lỗi cấm</h3>
+  <ul class="bad">
+    <li>Kéo giãn, bóp méo không giữ tỷ lệ</li>
+    <li>Xoay nghiêng — quỹ đạo có hướng</li>
+    <li>Đổi màu ngoài 5 biến thể đã duyệt</li>
+    <li>Đổ bóng, viền ngoài, chữ nổi, gradient lạ</li>
+    <li>Đặt lên nền ảnh rối, tương phản thấp</li>
+    <li>Viết lại chữ “GITA” bằng phông khác</li>
+    <li>Tách chùm sao ra dùng riêng làm logo</li>
+    <li>Đóng logo trong khung không thuộc bộ nhận diện</li>
+    <li>Đặt dính sát logo đơn vị khác</li>
+    <li>Lặp logo làm hoa văn nền</li>
+    <li>Dùng ảnh logo chụp màn hình thay file gốc</li>
+    <li><b>Đặt logo cạnh ảnh nhận diện học sinh khi chưa có phiếu đồng ý</b></li>
+  </ul>
+</section>
+
+<!-- 03 -->
+<section id="mau">
+  <div class="col">
+    <span class="snum">03</span>
+    <h2>Màu</h2>
+    <p class="sublede">Bốn màu lõi, kỷ luật tuyệt đối. Mọi màu khác trong hệ đều là <i>màu chức năng</i> — dùng để mã hoá thông tin, không phải để làm đẹp.</p>
+  </div>
+
+  <h3>Màu lõi</h3>
+  <div class="grid g4">
+    <div class="sw"><span class="chipblock" style="background:#1C4F9C"></span><span class="info"><span class="nm">Xanh GITA</span><span class="hx">#1C4F9C · 28·79·156</span><span class="use">Chủ đạo · tiêu đề · logo — <b>60%</b> diện tích màu</span></span></div>
+    <div class="sw"><span class="chipblock" style="background:#E1251B"></span><span class="info"><span class="nm">Đỏ GITA</span><span class="hx">#E1251B · 225·37·27</span><span class="use">Pha I · cảnh báo an toàn · nhãn D3 — <b>10%</b></span></span></div>
+    <div class="sw"><span class="chipblock" style="background:#4A86C8"></span><span class="info"><span class="nm">Xanh Quỹ Đạo</span><span class="hx">#4A86C8 · 74·134·200</span><span class="use">Màu phụ · nền nhạt · pha A — <b>15%</b></span></span></div>
+    <div class="sw"><span class="chipblock" style="background:#FFFFFF; border-bottom:1px solid var(--line-2)"></span><span class="info"><span class="nm">Trắng Giấy</span><span class="hx">#FFFFFF</span><span class="use">Nền và khoảng thở — tối thiểu 15% diện tích trang</span></span></div>
+  </div>
+
+  <h3>Màu bốn chữ GITA</h3>
+  <p class="note" style="max-width:62ch; margin-top:-4px">Hệ mã màu bắt buộc, dùng thống nhất ở mọi tài liệu in, mọi màn hình, và ở cả GITA365. Học sinh học <b>một</b> ngôn ngữ màu cho suốt 12 năm.</p>
+  <div class="grid g4" style="margin-top:16px">
+    <div class="sw"><span class="chipblock" style="background:#1C4F9C; display:flex; align-items:center; justify-content:center"><span style="color:#fff;font-weight:800;font-size:34px">G</span></span><span class="info"><span class="nm">Xanh Đích</span><span class="hx">#1C4F9C</span><span class="use">Goal — đích đến, nền tảng vững. Thẻ pha G, mục tiêu, Vòng Đích</span></span></div>
+    <div class="sw"><span class="chipblock" style="background:#E1251B; display:flex; align-items:center; justify-content:center"><span style="color:#fff;font-weight:800;font-size:34px">I</span></span><span class="info"><span class="nm">Đỏ Lửa</span><span class="hx">#E1251B</span><span class="use">Inspirits — nội lực, khát khao. Trải nghiệm, Nhật ký Bằng Chứng</span></span></div>
+    <div class="sw"><span class="chipblock" style="background:#F2A900; display:flex; align-items:center; justify-content:center"><span style="color:#1A1000;font-weight:800;font-size:34px">T</span></span><span class="info"><span class="nm">Vàng Sao</span><span class="hx">#F2A900</span><span class="use">Talent — tài năng bừng sáng. T-DRILL, huy hiệu tài năng</span></span></div>
+    <div class="sw"><span class="chipblock" style="background:#4A86C8; display:flex; align-items:center; justify-content:center"><span style="color:#fff;font-weight:800;font-size:34px">A</span></span><span class="info"><span class="nm">Xanh Quỹ Đạo</span><span class="hx">#4A86C8</span><span class="use">Action — chuyển động, thói quen. Sứ mệnh, Showcase</span></span></div>
+  </div>
+  <div class="box box-goal" style="margin-top:18px"><b>Vì sao được thêm Vàng Sao</b>Đây là màu mở rộng <i>duy nhất</i> ngoài bảng lõi, và nó có nguồn gốc ngay trong logo — chùm sao. Vàng Sao chỉ dùng cho chữ T và huy hiệu tài năng; không dùng làm màu nền hay màu tiêu đề chung, và không đặt chữ vàng trên nền trắng.</div>
+
+  <h3>Thanh GITA — dấu hiệu nhận diện mạnh nhất</h3>
+  <div class="card">
+    <div class="gitabar" style="width:100%; margin:0; height:14px" aria-hidden="true">
+      <span style="background:#1C4F9C"></span><span style="background:#E1251B"></span>
+      <span style="background:#F2A900"></span><span style="background:#4A86C8"></span>
+    </div>
+    <p class="note" style="margin:14px 0 0">Bốn đoạn <b>luôn bằng nhau</b> — không đổi theo tỷ trọng G·I·T·A của chuyên đề. Đặt ở: gáy trái mọi trang · đầu trang bìa · chân slide · viền chứng nhận. Bề dày <span class="mono">4 mm</span> khi in, <span class="mono">6 px</span> trên màn hình.</p>
+  </div>
+
+  <h3>Màu chức năng</h3>
+  <h4 style="margin-top:22px">8 mạch năng lực</h4>
+  <div class="dots">
+    <span class="dot"><i style="background:#1C4F9C"></i>M1 Tự chủ</span>
+    <span class="dot"><i style="background:#E1251B"></i>M2 An toàn &amp; Sức khoẻ</span>
+    <span class="dot"><i style="background:#E8752A"></i>M3 Cảm xúc &amp; Sức bật</span>
+    <span class="dot"><i style="background:#F2A900"></i>M4 Giao tiếp &amp; Hợp tác</span>
+    <span class="dot"><i style="background:#7A4FA3"></i>M5 Tư duy &amp; GQVĐ</span>
+    <span class="dot"><i style="background:#0E7C7B"></i>M6 Học tập xuất sắc</span>
+    <span class="dot"><i style="background:#3A6EA5"></i>M7 Công dân số</span>
+    <span class="dot"><i style="background:#2E8B4F"></i>M8 Tài chính · Khởi tạo · Phụng sự</span>
+  </div>
+
+  <h4 style="margin-top:26px">6 đai GITA</h4>
+  <div class="dots">
+    <span class="dot"><i style="background:#FFFFFF; box-shadow:inset 0 0 0 1px #A8AEBC"></i>Trắng — Người Khởi Hành</span>
+    <span class="dot"><i style="background:#F2C200"></i>Vàng — Người Gieo Hạt</span>
+    <span class="dot"><i style="background:#2E8B4F"></i>Xanh Lá — Người Bén Rễ</span>
+    <span class="dot"><i style="background:#1C4F9C"></i>Xanh Dương — Người Vươn Cành</span>
+    <span class="dot"><i style="background:#E1251B"></i>Đỏ — Người Dẫn Dắt</span>
+    <span class="dot"><i style="background:linear-gradient(135deg,#E8CE72,#C9A227 55%,#9C7A15)"></i>Kim — Người Cất Cánh</span>
+  </div>
+
+  <h4 style="margin-top:26px">Thang GITA-4 &amp; 4 giai đoạn</h4>
+  <div class="grid g2">
+    <div class="card">
+      <div class="dots">
+        <span class="dot"><i style="background:#A8AEBC"></i>◔ KM — Khởi Mở</span>
+        <span class="dot"><i style="background:#4A86C8"></i>◑ ĐH — Định Hình</span>
+        <span class="dot"><i style="background:#1C4F9C"></i>◕ TT — Thành Thạo</span>
+        <span class="dot"><i style="background:#F2A900"></i>● DD — Dẫn Dắt</span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="dots">
+        <span class="dot"><i style="background:#7BC67B"></i>Khởi Mầm · L1–3</span>
+        <span class="dot"><i style="background:#2E8B4F"></i>Bén Rễ · L4–5</span>
+        <span class="dot"><i style="background:#1C4F9C"></i>Vươn Cành · L6–9</span>
+        <span class="dot"><i style="background:#123A76"></i>Cất Cánh · L10–12</span>
+      </div>
+    </div>
+  </div>
+
+  <h4 style="margin-top:26px">Nhãn mức bảo mật — bắt buộc ở đầu mọi trang</h4>
+  <div class="chiprow">
+    <span class="mono" style="background:#EEF1F6;color:#1A2233;padding:4px 11px;border-radius:4px;font-weight:600;font-size:11.5px">D1 CÔNG KHAI</span>
+    <span class="mono" style="background:#4A86C8;color:#fff;padding:4px 11px;border-radius:4px;font-weight:600;font-size:11.5px">D2 NỘI BỘ</span>
+    <span class="mono" style="background:#E1251B;color:#fff;padding:4px 11px;border-radius:4px;font-weight:600;font-size:11.5px">D3 DỮ LIỆU HỌC SINH</span>
+    <span class="mono" style="background:#1A2233;color:#fff;padding:4px 11px;border-radius:4px;font-weight:600;font-size:11.5px;box-shadow:0 0 0 2px #E1251B">D4 NHẠY CẢM ĐẶC BIỆT</span>
+  </div>
+  <p class="note" style="margin-top:12px">Tài liệu không có nhãn mức bảo mật <b>không được lưu hành</b>. Quy định đầy đủ ở phân hệ 11 — Phân quyền &amp; Bảo mật.</p>
+
+  <h3>Sáu quy tắc màu bắt buộc</h3>
+  <ol style="font-size:14.5px; line-height:1.7; padding-left:20px; margin:0">
+    <li><b>Tương phản chữ trên nền ≥ 4,5:1</b> (chữ ≥18pt: 3:1). Chữ Vàng Sao không đặt trên nền trắng.</li>
+    <li><b>Màu không bao giờ là kênh thông tin duy nhất</b> — luôn kèm chữ hoặc ký hiệu. Có học sinh và phụ huynh mù màu, và tài liệu sẽ bị photocopy đen trắng.</li>
+    <li><b>Đỏ GITA chỉ dùng cho pha I, cảnh báo an toàn và nhãn D3.</b> Không dùng đỏ để nhấn mạnh tuỳ hứng.</li>
+    <li>Một trang không quá <b>3 màu</b>, chưa kể trung tính.</li>
+    <li>Nền màu đậm chỉ dùng ở bìa, trang phân cách và ô tiêu đề — <b>không dùng cho vùng học sinh viết vào</b>.</li>
+    <li>Trước khi phát hành, <b>chuyển xám để kiểm tra</b>: tài liệu phải đọc được khi in đen trắng.</li>
+  </ol>
+</section>
+
+<!-- 04 -->
+<section id="chu">
+  <div class="col">
+    <span class="snum">04</span>
+    <h2>Chữ</h2>
+    <p class="sublede">Bốn phông, tất cả đều có giấy phép mở SIL OFL và dấu tiếng Việt đầy đủ — cài được trên máy mọi giáo viên mà không phát sinh chi phí bản quyền.</p>
+  </div>
+
+  <div style="margin-top:26px">
+    <div class="spec">
+      <div class="lbl">Be Vietnam Pro · ExtraBold — tiêu đề &amp; nhấn</div>
+      <div class="s1">Con biết tự bảo vệ mình</div>
+      <p class="note" style="margin:12px 0 0">Thiết kế riêng cho tiếng Việt: dấu rõ ở cỡ nhỏ, dáng khoẻ khớp với logo. Thay thế khi không cài được: Montserrat → Arial Bold.</p>
+    </div>
+    <div class="spec">
+      <div class="lbl">Noto Serif · Regular — nội dung in dài</div>
+      <div class="s2">Vòng xanh là lộ trình. Vạch đỏ là sức bật. Chữ GITA ở giữa là đích. Và chùm sao là điều xảy ra khi một đứa trẻ đi đủ lâu trên quỹ đạo đó.</div>
+      <p class="note" style="margin:12px 0 0">Chân chữ giúp đọc liên tục nhiều trang giấy. Thay thế: Times New Roman.</p>
+    </div>
+    <div class="spec">
+      <div class="lbl">IBM Plex Mono — mã &amp; số liệu</div>
+      <div class="s3">K07-M4-02 · PTH-K01-M2-01 · R-PHS-11 · 0 O 1 l 5 S</div>
+      <p class="note" style="margin:12px 0 0">Phân biệt rõ <span class="mono">0/O</span> và <span class="mono">1/l</span> — quan trọng khi HLV đọc mã chuyên đề giữa buổi. Thay thế: Consolas.</p>
+    </div>
+  </div>
+
+  <h3>Cỡ chữ theo cấp học — tài liệu học sinh viết vào</h3>
+  <p class="note" style="margin-top:-4px">Đây là bảng bị bỏ qua nhiều nhất, và là nguyên nhân số một khiến phiếu thực hành của lớp 1 không dùng được.</p>
+  <div class="scroll"><table>
+    <thead><tr><th>Cấp học</th><th style="width:110px">Cỡ nội dung</th><th style="width:100px">Giãn dòng</th><th style="width:130px">Dòng kẻ viết</th><th>Ghi chú</th></tr></thead>
+    <tbody>
+      <tr><td><b>Lớp 1–2</b></td><td class="mono">16 pt</td><td class="mono">1,8</td><td class="mono">Ô ly 5 mm</td><td>Câu ≤ 10 từ · nhiều hình, ít chữ</td></tr>
+      <tr><td><b>Lớp 3–5</b></td><td class="mono">14 pt</td><td class="mono">1,7</td><td class="mono">Dòng 8 mm</td><td>Câu ≤ 15 từ</td></tr>
+      <tr><td><b>Lớp 6–9</b></td><td class="mono">12 pt</td><td class="mono">1,6</td><td class="mono">Dòng 7 mm</td><td>—</td></tr>
+      <tr><td><b>Lớp 10–12</b></td><td class="mono">11 pt</td><td class="mono">1,5</td><td class="mono">Dòng 6 mm</td><td>—</td></tr>
+      <tr><td>Tài liệu HLV / phụ huynh</td><td class="mono">11 pt</td><td class="mono">1,5</td><td>—</td><td>—</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>Sáu quy tắc chữ tiếng Việt</h3>
+  <div class="grid g2">
+    <div class="card"><h4>Giãn dòng tối thiểu 1,5</h4><p class="note" style="margin:0">Dấu tiếng Việt cần chiều cao. Dòng chật làm dấu chồng lên nhau.</p></div>
+    <div class="card"><h4>Không viết hoa cả câu dài</h4><p class="note" style="margin:0">Dấu bị mất, khó đọc. Viết hoa chỉ dùng cho nhãn ngắn ≤ 4 từ.</p></div>
+    <div class="card"><h4>Không giãn hay nén chữ ngang</h4><p class="note" style="margin:0">Muốn vừa khung thì rút gọn chữ hoặc đổi cỡ, không bóp phông.</p></div>
+    <div class="card"><h4>Không gạch chân để nhấn mạnh</h4><p class="note" style="margin:0">Học sinh nhầm với đường kẻ điền. Dùng in đậm.</p></div>
+    <div class="card"><h4>Dòng dài 45–75 ký tự</h4><p class="note" style="margin:0">Dài hơn thì mắt lạc dòng khi xuống hàng.</p></div>
+    <div class="card"><h4>Số và mã dùng phông mono</h4><p class="note" style="margin:0">Canh phải trong bảng để các chữ số thẳng cột.</p></div>
+  </div>
+</section>
+
+<!-- 05 -->
+<section id="bieutuong">
+  <div class="col">
+    <span class="snum">05</span>
+    <h2>Biểu tượng &amp; hộp chú ý</h2>
+    <p class="sublede">Bộ ký hiệu đã chuẩn hoá toàn hệ. HLV học một lần rồi dùng suốt — nên tuyệt đối không đổi.</p>
+  </div>
+
+  <h3>Thẻ pha GITA</h3>
+  <div class="chiprow" style="gap:16px">
+    <span class="chiprow" style="gap:8px"><span class="chip cG">G</span><span class="note">Định đích</span></span>
+    <span class="chiprow" style="gap:8px"><span class="chip cI">I</span><span class="note">Thắp lửa</span></span>
+    <span class="chiprow" style="gap:8px"><span class="chip cT">T</span><span class="note">Luyện kỹ năng</span></span>
+    <span class="chiprow" style="gap:8px"><span class="chip cA">A</span><span class="note">Hành động</span></span>
+  </div>
+  <p class="note" style="margin-top:12px">Ô vuông bo góc 4 px, chữ trắng đậm, cạnh 20 px trên màn hình / 6 mm khi in. Cấm đổi thứ tự, cấm dùng chữ thường, cấm bỏ màu. Mọi hoạt động trong tiến trình buổi học đều phải mang thẻ pha.</p>
+
+  <h3>Năm hộp chú ý chuẩn</h3>
+  <div class="box box-goal"><b>🎯 Hộp Đích</b>Mục tiêu và hai vạch ĐẠT / XUẤT SẮC. Viền trái 4 px Xanh Đích, nền xám nhạt.</div>
+  <div class="box box-fire"><b>🔥 Hộp Lửa</b>Câu chuyện, khơi động lực, lời dẫn cảm xúc. Viền trái 4 px Đỏ Lửa.</div>
+  <div class="box box-safe"><b>⚠️ Hộp An Toàn</b>Quy tắc an toàn và bảo vệ trẻ em. Viền toàn khung 2 px Đỏ GITA — <b>bắt buộc là thứ nổi bật nhất trang</b>.</div>
+  <div class="box box-ref"><b>📎 Hộp Tham Chiếu</b>Dẫn sang tài liệu khác trong bộ. Viền trái 4 px xám.</div>
+  <div class="box box-say">🎤 Hộp Lời Dẫn — lời HLV nói gần nguyên văn. Không viền, chữ nghiêng Xanh GITA, thụt lề 8 mm.</div>
+
+  <h3>Ký hiệu kịch bản</h3>
+  <div class="scroll"><table>
+    <thead><tr><th style="width:60px">Ký hiệu</th><th>Nghĩa</th><th style="width:60px">Ký hiệu</th><th>Nghĩa</th></tr></thead>
+    <tbody>
+      <tr><td>🎤</td><td>Lời HLV nói</td><td>⏱️</td><td>Bấm giờ</td></tr>
+      <tr><td>👥</td><td>Việc học sinh làm</td><td>⚠️</td><td>Điểm rủi ro</td></tr>
+      <tr><td>🧑‍🤝‍🧑</td><td>Việc trợ giảng ACT làm</td><td>🔁</td><td>Phương án dự phòng</td></tr>
+      <tr><td>🔔</td><td>Tín hiệu điều phối</td><td>🛑</td><td>Dừng hình / chốt chặn</td></tr>
+      <tr><td>📄</td><td>Phát hoặc thu phiếu</td><td>🤚</td><td>Quyền “pass”</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>Huy hiệu</h3>
+  <div class="grid g2">
+    <div class="card"><h4>Đai GITA</h4><p class="note" style="margin:0">Vòng tròn viền màu đai, giữa là dấu rút gọn <span class="mono">LOGO-08</span>. In trên Hộ chiếu và chứng nhận.</p></div>
+    <div class="card" style="border-color:#E1251B"><h4>Tầng năng lực HS-T1 → HS-T5</h4><p class="note" style="margin:0">Chùm 1–5 ngôi sao Vàng Sao. <b>Chỉ hiển thị trong hồ sơ cá nhân và với phụ huynh của chính em đó</b> — cấm dán bảng, cấm xếp hạng công khai.</p></div>
+    <div class="card"><h4>Mạch năng lực</h4><p class="note" style="margin:0">Ô tròn chữ <span class="mono">M1…M8</span>, màu theo bảng mạch. Dùng làm tab và nhãn gáy.</p></div>
+    <div class="card"><h4>Con dấu Hộ chiếu</h4><p class="note" style="margin:0">Dấu tròn Ø 18 mm: vành ngoài ghi mã chuyên đề, giữa là <span class="mono">LOGO-08</span>. Một chuyên đề — một dấu.</p></div>
+  </div>
+</section>
+
+<!-- 06 -->
+<section id="mau-tl">
+  <div class="col">
+    <span class="snum">06</span>
+    <h2>Mẫu tài liệu</h2>
+    <p class="sublede">Mười hai mẫu dựng sẵn phủ hết vòng đời một chuyên đề. Ba mẫu tiêu biểu dựng thu nhỏ dưới đây; bản vẽ bố cục đầy đủ nằm trong tài liệu <span class="mono">12/03</span>.</p>
+  </div>
+
+  <div class="grid g3" style="margin-top:28px; align-items:start">
+
+    <div>
+      <div class="bp">
+        <div class="bp-cover">
+          <div class="bar4" aria-hidden="true"><span style="background:#4A86C8"></span><span style="background:#E1251B"></span><span style="background:#F2A900"></span><span style="background:#7FB0E4"></span></div>
+          <div style="font-size:11px;opacity:.85;letter-spacing:.14em;font-weight:600">HỌC VIỆN GITA</div>
+          <div class="wm">KNSGITA</div>
+          <div class="sb">Chương trình Kỹ năng sống KNS365<br>Lớp 1 → Lớp 12 · 288 chuyên đề</div>
+          <div class="ft">hệ GEN VIỆT · v2.1 · 2026</div>
+        </div>
+      </div>
+      <p class="caption"><b>Mẫu 01 — Bìa bộ tài liệu.</b> Nền Xanh GITA đặc, không dùng ảnh nền. Logo trắng <span class="mono">LOGO-02</span> rộng 55 mm. Thanh GITA sát mép trên, cao 8 mm.</p>
+    </div>
+
+    <div>
+      <div class="bp">
+        <div class="bp-h">
+          <span class="lg">KNSGITA</span>
+          <span class="bp-code">PHIẾU KỸ NĂNG SỐNG</span>
+          <span class="sec" style="background:#E1251B">D3</span>
+        </div>
+        <div class="bp-body">
+          <div class="bp-code">PTH-K07-M4-02</div>
+          <div class="bp-title" style="font-size:13px">NÓI TRƯỚC ĐÁM ĐÔNG</div>
+          <div class="bp-rule"></div>
+          <div class="bp-layer"><span class="bar" style="background:#1C4F9C"></span><span class="t"><span>① NHẬN BIẾT</span> — “Là gì?”<div class="bp-line w80"></div></span></div>
+          <div class="bp-layer"><span class="bar" style="background:#E1251B"></span><span class="t"><span>② THẤU HIỂU</span> — “Vì sao?”<div class="bp-line w60"></div></span></div>
+          <div class="bp-layer"><span class="bar" style="background:#F2A900"></span><span class="t"><span>③ THỰC HÀNH</span> — “Làm được chưa?”<div class="bp-code" style="margin-top:4px">☐ V1 ☐ V2 ☐ V3 ☐ V4</div></span></div>
+          <div class="bp-layer"><span class="bar" style="background:#4A86C8"></span><span class="t"><span>④ SOI CHIẾU</span> — “Mình ở đâu?”<div class="bp-code" style="margin-top:4px">◔ KM ◑ ĐH ◕ TT ● DD</div></span></div>
+          <div class="bp-layer"><span class="bar" style="background:#F2A900"></span><span class="t"><span>⑤ CHUYỂN HOÁ</span> — “Mang đi đâu?”<div class="bp-line w40"></div><div class="bp-code" style="margin-top:5px">Người chứng: ______ Ký: ______</div></span></div>
+        </div>
+      </div>
+      <p class="caption"><b>Mẫu 05 — Phiếu KNS 5 lớp chiều sâu.</b> Lớp ⑤ luôn có ô chữ ký người chứng: không có chữ ký thì Sứ mệnh chưa được tính hoàn thành.</p>
+    </div>
+
+    <div>
+      <div class="bp">
+        <div class="bp-h">
+          <span class="lg">KNSGITA</span>
+          <span class="bp-code">BÁO CÁO TIẾN BỘ</span>
+          <span class="sec" style="background:#E1251B">D3</span>
+        </div>
+        <div class="bp-body">
+          <div class="bp-code">Học sinh: ________ · Lớp: ____ · Kỳ: ____</div>
+          <div class="bp-rule"></div>
+          <div style="font-weight:700;font-size:11px;color:var(--ui-blue);margin-bottom:4px">🎯 CON ĐÃ LÀM ĐƯỢC</div>
+          <div class="bp-line w80"></div><div class="bp-line w60"></div>
+          <div style="font-weight:700;font-size:11px;color:var(--ui-blue);margin:12px 0 6px">📊 8 MẠCH NĂNG LỰC</div>
+          <div class="bar-m"><span class="k">M1</span><span class="track"><span class="fill" style="width:78%"></span></span><span class="v">TT</span></div>
+          <div class="bar-m"><span class="k">M2</span><span class="track"><span class="fill" style="width:96%"></span></span><span class="v">DD</span></div>
+          <div class="bar-m"><span class="k">M3</span><span class="track"><span class="fill" style="width:56%"></span></span><span class="v">ĐH</span></div>
+          <div class="bar-m"><span class="k">M4</span><span class="track"><span class="fill" style="width:78%"></span></span><span class="v">TT</span></div>
+          <div style="font-weight:700;font-size:11px;color:var(--ui-red);margin:12px 0 4px">🔧 MỘT ĐIỀU DUY NHẤT CẦN CHỈNH</div>
+          <div class="bp-line w80"></div>
+          <div class="bp-rule"></div>
+          <div class="bp-code" style="line-height:1.5">Câu hỏi nên hỏi con mỗi tối: <i>“Hôm nay con làm được điều gì mà hôm qua chưa làm được?”</i></div>
+        </div>
+      </div>
+      <p class="caption"><b>Mẫu 10 — Báo cáo phụ huynh.</b> Luôn mở bằng điều con làm được, và chỉ nêu <b>một</b> điều cần chỉnh. Cấm thứ hạng trong lớp, cấm nhận xét tính cách.</p>
+    </div>
+  </div>
+
+  <h3>Bảng tra nhanh — mẫu nào cho tài liệu nào</h3>
+  <div class="scroll"><table>
+    <thead><tr><th>Tài liệu</th><th style="width:70px">Mẫu</th><th style="width:150px">Nhãn bảo mật</th><th style="width:150px">Khổ</th></tr></thead>
+    <tbody>
+      <tr><td>Bìa bộ chương trình</td><td class="mono">01</td><td>D1</td><td>A4 dọc</td></tr>
+      <tr><td>Giáo án (bìa + ruột)</td><td class="mono">02 + 03</td><td>D2</td><td>A4 dọc</td></tr>
+      <tr><td>Kịch bản đào tạo</td><td class="mono">04</td><td>D2</td><td>A4 dọc, in 1 mặt, gáy xoắn</td></tr>
+      <tr><td>Phiếu thực hành <span class="mono">PTH</span></td><td class="mono">05</td><td><b>D3</b></td><td>A4 dọc</td></tr>
+      <tr><td>Rubric &amp; phiếu đánh giá</td><td class="mono">06</td><td><b>D3</b></td><td>A4 dọc</td></tr>
+      <tr><td>Phiếu sứ mệnh <span class="mono">PSM</span></td><td class="mono">07</td><td><b>D3</b></td><td>A5 ngang</td></tr>
+      <tr><td>Hộ chiếu GITA</td><td class="mono">08</td><td><b>D3</b></td><td>A5, 8 trang</td></tr>
+      <tr><td>Chứng nhận đai</td><td class="mono">09</td><td>D2</td><td>A4 ngang</td></tr>
+      <tr><td>Báo cáo phụ huynh</td><td class="mono">10</td><td><b>D3</b></td><td>A4 dọc</td></tr>
+      <tr><td>Thẻ bỏ túi HLV</td><td class="mono">11</td><td>D2</td><td>A6 ép plastic</td></tr>
+      <tr><td>Slide lớp học</td><td class="mono">12</td><td>D2</td><td>16:9</td></tr>
+      <tr><td>Hồ sơ bảo vệ trẻ em</td><td>mẫu riêng của vai TV</td><td><b>D4</b></td><td>—</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<!-- 07 -->
+<section id="giong">
+  <div class="col">
+    <span class="snum">07</span>
+    <h2>Giọng điệu</h2>
+    <p class="sublede">Giọng KNSGITA là giọng huấn luyện viên — không phải giọng sách giáo khoa, cũng không phải giọng quảng cáo. Rõ ràng · Tôn trọng · Có bằng chứng · Ấm nhưng không mềm.</p>
+  </div>
+
+  <h3>Viết lại như thế nào</h3>
+  <div style="display:grid; gap:10px">
+    <div class="vs"><div class="no"><div class="hd">Không viết</div>“Em phải cố gắng hơn.”</div><div class="yes"><div class="hd">Viết</div>“Lần này con chỉ chỉnh một điều: quay người đi ngay.”</div></div>
+    <div class="vs"><div class="no"><div class="hd">Không viết</div>“Bài này rất quan trọng.”</div><div class="yes"><div class="hd">Viết</div>“Kỹ năng này dùng ngay khi con phát biểu môn Tiếng Việt, đo bằng số giây phản xạ.”</div></div>
+    <div class="vs"><div class="no"><div class="hd">Không viết</div>“Học sinh yếu.”</div><div class="yes"><div class="hd">Viết</div>“Học sinh đang ở mức Khởi Mở.”</div></div>
+    <div class="vs"><div class="no"><div class="hd">Không viết</div>“Chương trình đẳng cấp quốc tế.”</div><div class="yes"><div class="hd">Viết</div>“Đối sánh với CASEL, OECD 2030, UNESCO LSCE — bảng đối chiếu ở phân hệ 00.”</div></div>
+    <div class="vs"><div class="no"><div class="hd">Không viết</div>“Con giỏi lắm!”</div><div class="yes"><div class="hd">Viết</div>“Con nói KHÔNG rất to — cô đứng cách 5 mét vẫn nghe rõ.”</div></div>
+    <div class="vs"><div class="no"><div class="hd">Không viết</div>“Giúp con thành công.”</div><div class="yes"><div class="hd">Viết</div>“Sau 12 tuần con làm được A, bằng chứng là B.”</div></div>
+  </div>
+
+  <h3>Năm điều không bao giờ xuất hiện trong tài liệu KNSGITA</h3>
+  <ul class="bad">
+    <li>Ảnh nhận diện học sinh thật khi chưa có phiếu đồng ý đúng mục đích</li>
+    <li>Bảng xếp hạng học sinh công khai, dưới mọi hình thức</li>
+    <li>So sánh học sinh với nhau trong ví dụ, tình huống hay lời dẫn</li>
+    <li>Cam kết kết quả tuyệt đối — “đảm bảo đỗ”, “chắc chắn thành công”</li>
+    <li>Hình ảnh khó khăn của người yếu thế dùng để gây xúc động</li>
+  </ul>
+</section>
+
+<!-- 08 -->
+<section id="so">
+  <div class="col">
+    <span class="snum">08</span>
+    <h2>Nhận diện số &amp; đồng bộ GITA365</h2>
+    <p class="sublede">Học viện vận hành hai nền tảng dùng chung một hồ sơ người học. Chúng phân biệt nhau bằng <i>dòng định danh</i>, không phải bằng đổi màu giao diện.</p>
+  </div>
+
+  <div class="grid g2" style="margin-top:26px">
+    <div class="card" style="border-left:4px solid #1C4F9C">
+      <div style="font-weight:800; letter-spacing:.08em; color:var(--ui-blue)">KNSGITA</div>
+      <div class="note" style="margin-top:2px">Kỹ năng sống KNS365</div>
+      <div class="bp-rule"></div>
+      <p class="note" style="margin:0">Chương trình học theo lớp · 288 chuyên đề · 2 buổi × 180′ · vai chính là <b>TRN</b> (HLV đứng lớp).</p>
+    </div>
+    <div class="card" style="border-left:4px solid #4A86C8">
+      <div style="font-weight:800; letter-spacing:.08em; color:var(--ui-blue)">GITA365</div>
+      <div class="note" style="margin-top:2px">Đánh giá &amp; Lộ trình 90 ngày</div>
+      <div class="bp-rule"></div>
+      <p class="note" style="margin:0">Assessment 5A–5F · lộ trình cá nhân · nhiệm vụ &amp; minh chứng · vai chính là <b>COACH</b>.</p>
+    </div>
+  </div>
+
+  <h3>Tám quy tắc đồng bộ</h3>
+  <ol style="font-size:14.5px; line-height:1.7; padding-left:20px; margin:0">
+    <li><b>Một logo mẹ duy nhất.</b> Hai nền tảng không có logo riêng — chỉ khác dòng định danh dưới logo.</li>
+    <li><b>Cùng bảng màu lõi.</b> Không nền tảng nào được thêm màu chủ đạo riêng.</li>
+    <li><b>Màu bốn chữ GITA thống nhất tuyệt đối</b> ở cả hai nơi.</li>
+    <li><b>Cùng hệ chữ</b> — Be Vietnam Pro · Noto Serif · IBM Plex Mono.</li>
+    <li><b>Cùng thang GITA-4.</b> Người học chỉ học một ngôn ngữ đánh giá cho cả 12 năm.</li>
+    <li><b>Cùng mã người học (GITA ID)</b> — hồ sơ, đai và Talent Portfolio hiển thị nhất quán.</li>
+    <li><b>Cùng quy tắc phân quyền</b> — vai và quyền không đổi khi chuyển nền tảng.</li>
+    <li>Phân biệt hai nền tảng bằng <b>dải định danh mảnh ở chân màn hình</b>.</li>
+  </ol>
+
+  <h3>Thanh tiến trình 7 phần — nhận diện chính của màn hình học</h3>
+  <div class="card">
+    <div class="rail">
+      <div class="st done"><span class="bul" style="background:#1C4F9C"></span><span class="p">P1</span><span class="n">Kiến thức</span></div>
+      <div class="st done"><span class="bul" style="background:#E1251B"></span><span class="p">P2</span><span class="n">Trải nghiệm</span></div>
+      <div class="st done"><span class="bul" style="background:#F2A900"></span><span class="p">P3</span><span class="n">Thực hành</span></div>
+      <div class="st"><span class="bul"></span><span class="p">P4</span><span class="n">Tích luỹ</span></div>
+      <div class="st"><span class="bul"></span><span class="p">P5</span><span class="n">Vận dụng</span></div>
+      <div class="st"><span class="bul"></span><span class="p">P6</span><span class="n">Đánh giá</span></div>
+      <div class="st"><span class="bul"></span><span class="p">P7</span><span class="n">Audio</span></div>
+    </div>
+    <div class="box box-goal" style="margin:18px 0 0"><b>Trạng thái khoá phải nói rõ lý do</b>“Phần 4 mở sau khi con nộp Phần 3 — vì Phần 4 chứa kết luận, và cô muốn con tự rút ra trước đã.” Đây vừa là quy tắc kỹ thuật, vừa là giọng thương hiệu.</div>
+  </div>
+
+  <h3>Bốn thứ cấm tuyệt đối trên nền tảng số</h3>
+  <ul class="bad">
+    <li>Bảng xếp hạng công khai</li>
+    <li>Điểm số hiện cạnh tên trong danh sách lớp</li>
+    <li>Phần thưởng ngẫu nhiên và cơ chế gây nghiện</li>
+    <li>Thông báo tạo áp lực — “Bạn đang tụt lại phía sau!”</li>
+  </ul>
+  <div class="box box-safe" style="margin-top:16px"><b>Quy tắc phủ quyết</b>Nền tảng <b>không được có chức năng nhắn tin riêng 1-1</b> giữa nhân sự và người học dưới 16 tuổi. Mọi kênh trao đổi là nhóm có ít nhất hai người lớn hoặc có phụ huynh, nội dung lưu trong hệ thống. Nút “Cần trợ giúp” hiện ở mọi màn hình, dẫn tới HLV, cán bộ tâm lý và tổng đài <b>111</b>.</div>
+</section>
+
+<!-- 09 -->
+<section id="check">
+  <div class="col">
+    <span class="snum">09</span>
+    <h2>Checklist trước khi phát hành</h2>
+    <p class="sublede">Người duyệt tick đủ 20 ô mới ký phát hành. Thiếu bất kỳ ô nào trong nhóm An toàn &amp; pháp lý là <b>không phát hành</b>.</p>
+  </div>
+
+  <div class="chkhd">Nhận diện</div>
+  <ul class="chk">
+    <li><span class="n">01</span><span>Logo dùng file vector gốc, đúng biến thể, đủ vùng an toàn</span></li>
+    <li><span class="n">02</span><span>Thanh GITA đúng thứ tự G-I-T-A, bốn đoạn bằng nhau</span></li>
+    <li><span class="n">03</span><span>Đầu trang có logo + loại + mã; chân trang có phiên bản + số trang</span></li>
+    <li><span class="n">04</span><span>Chỉ dùng màu trong bảng đã duyệt; một trang không quá 3 màu</span></li>
+    <li><span class="n">05</span><span>Đúng bộ 4 phông chính thức, đã nhúng vào PDF</span></li>
+  </ul>
+
+  <div class="chkhd">Nội dung &amp; mô thức</div>
+  <ul class="chk">
+    <li><span class="n">06</span><span>Mã tài liệu đúng cấu trúc <span class="mono">KNSGITA-&lt;loại&gt;-&lt;mã&gt;-&lt;phiên bản&gt;-&lt;năm&gt;</span></span></li>
+    <li><span class="n">07</span><span>Mọi hoạt động trong tiến trình đều có thẻ pha GITA</span></li>
+    <li><span class="n">08</span><span>Mục tiêu có đủ hai vạch ĐẠT / XUẤT SẮC</span></li>
+    <li><span class="n">09</span><span>Có nêu cách đo cho từng mục tiêu</span></li>
+    <li><span class="n">10</span><span>Tổng thời gian buổi bằng 180 phút, cột cộng dồn khớp</span></li>
+    <li><span class="n">11</span><span>Mã tham chiếu <span class="mono">PTH · PDG · PSM · TC · DC-KIT · R-</span> đều tồn tại trong kho</span></li>
+  </ul>
+
+  <div class="chkhd" style="color:var(--ui-red)">An toàn &amp; pháp lý — bắt buộc</div>
+  <ul class="chk">
+    <li class="crit"><span class="n">12</span><span>Có nhãn mức bảo mật D1–D4 ở đầu trang</span></li>
+    <li class="crit"><span class="n">13</span><span>Chuyên đề nhạy cảm: không có ảnh người thật</span></li>
+    <li class="crit"><span class="n">14</span><span>Ảnh có mặt học sinh: ghi mã phiếu đồng ý ở chú thích</span></li>
+    <li class="crit"><span class="n">15</span><span>Không có bảng xếp hạng học sinh dưới mọi hình thức</span></li>
+    <li class="crit"><span class="n">16</span><span>Có quyền “pass” và hotline 111 ở tài liệu chạm nội dung cá nhân</span></li>
+    <li class="crit"><span class="n">17</span><span>Không cam kết kết quả tuyệt đối, không so sánh học sinh</span></li>
+  </ul>
+
+  <div class="chkhd">Kỹ thuật</div>
+  <ul class="chk">
+    <li><span class="n">18</span><span>Tương phản ≥ 4,5:1; thử bản xám vẫn đọc được</span></li>
+    <li><span class="n">19</span><span>Cỡ chữ và giãn dòng đúng cấp học; vùng viết đủ rộng</span></li>
+    <li><span class="n">20</span><span>Đã soát chính tả tiếng Việt và có người thứ hai đọc lại</span></li>
+  </ul>
+</section>
+
+<footer>
+  <p><b>Sổ tay nhận diện KNSGITA · v1.0 · 2026.</b> Thuộc bộ KNS365 — hệ GEN VIỆT, phân hệ 12. Tài liệu đầy đủ gồm bốn phần: hệ nhận diện · chuẩn trình bày · bộ mẫu tài liệu · nhận diện số &amp; đồng bộ GITA365.</p>
+  <p>Mã màu trên trang này đọc từ logo gửi kèm. <b>Trước lần in số lượng lớn đầu tiên, đối chiếu với file vector gốc và bản in thử, cập nhật lại mã nếu lệch</b> — với in offset, luôn ưu tiên mã Pantone do nhà in xác nhận. Việc đăng ký nhãn hiệu và soạn điều khoản cấp phép logo cần luật sư sở hữu trí tuệ thực hiện.</p>
+  <p style="margin-bottom:0">© 2026 Học viện GITA. Bảo lưu mọi quyền.</p>
+</footer>
+
+</div>

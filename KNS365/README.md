@@ -26,7 +26,7 @@
 
 ---
 
-## 2. Bản đồ hệ sinh thái (12 phân hệ)
+## 2. Bản đồ hệ sinh thái (13 phân hệ)
 
 ```
                          ┌──────────────────────────────┐
@@ -72,6 +72,14 @@
                      │ học sinh · chính sách dữ liệu trẻ em │
                      │ · nhật ký kiểm toán chỉ-thêm         │
                      │ ⟲ bao trùm toàn bộ 00→10             │
+                     └───────────────┬──────────────────────┘
+                                     ▼
+                     ┌──────────────────────────────────────┐
+                     │ NHẬN DIỆN THƯƠNG HIỆU (12)           │
+                     │ KNSGITA · logo · màu GITA 4 chữ ·    │
+                     │ chữ · biểu tượng · 12 mẫu tài liệu · │
+                     │ nhận diện số & đồng bộ GITA365       │
+                     │ ⟲ áp cho mọi ấn phẩm của 00→11       │
                      └──────────────────────────────────────┘
 ```
 
@@ -145,6 +153,15 @@
 | [03-CHINH-SACH-BAO-MAT-DU-LIEU.md](11-PHAN-QUYEN-BAO-MAT/03-CHINH-SACH-BAO-MAT-DU-LIEU.md) | **Sổ đăng ký 16 lỗ hổng đã bịt (L-01→L-16)**, phân loại dữ liệu D1–D4, vòng đời dữ liệu, chuẩn bảo mật nền tảng online cho trẻ em, quy trình ứng phó sự cố |
 | [04-NHAT-KY-KIEM-TOAN-VA-KIEM-SOAT.md](11-PHAN-QUYEN-BAO-MAT/04-NHAT-KY-KIEM-TOAN-VA-KIEM-SOAT.md) | Nhật ký **chỉ-thêm**, danh mục hành động bắt buộc ghi vết, 12 dấu hiệu bất thường, lịch rà soát định kỳ, chỉ số hiệu lực kiểm soát, mẫu biên bản rà quyền 90 ngày |
 
+### 🎨 12 – NHẬN DIỆN THƯƠNG HIỆU TÀI LIỆU **KNSGITA**
+| Tệp | Nội dung |
+|---|---|
+| [01-HE-NHAN-DIEN-KNSGITA.md](12-NHAN-DIEN-THUONG-HIEU/01-HE-NHAN-DIEN-KNSGITA.md) | Kiến trúc thương hiệu · đọc logo theo mô thức GITA · 8 biến thể logo · vùng an toàn · **12 lỗi cấm** · bảng màu lõi + **màu 4 chữ GITA** + màu chức năng (8 mạch · 4 giai đoạn · 6 đai · GITA-4 · D1–D4) · hệ chữ tiếng Việt · hệ biểu tượng · giọng điệu · hệ mã tài liệu |
+| [02-CHUAN-TRINH-BAY-TAI-LIEU.md](12-NHAN-DIEN-THUONG-HIEU/02-CHUAN-TRINH-BAY-TAI-LIEU.md) | Khổ & lề · lưới 6 cột · **gáy GITA 4 màu** · đầu–chân trang · cấp tiêu đề · bảng · vùng học sinh viết · hình ảnh · in ấn · tệp số · **checklist 20 mục trước khi phát hành** |
+| [03-BO-MAU-TAI-LIEU.md](12-NHAN-DIEN-THUONG-HIEU/03-BO-MAU-TAI-LIEU.md) | **12 mẫu dựng sẵn**: bìa bộ · bìa giáo án · trang tiến trình · kịch bản · phiếu KNS 5 lớp · rubric · `PSM` · Hộ chiếu GITA · chứng nhận đai · báo cáo phụ huynh · thẻ bỏ túi HLV · slide |
+| **[SO-TAY-NHAN-DIEN-KNSGITA.html](12-NHAN-DIEN-THUONG-HIEU/SO-TAY-NHAN-DIEN-KNSGITA.html)** | 🎨 **Sổ tay nhận diện bản trực quan** — mở bằng trình duyệt: xem được màu thật, chữ thật, thẻ pha, hộp chú ý và 3 mẫu tài liệu dựng thu nhỏ |
+| [04-NHAN-DIEN-SO-VA-DONG-BO-GITA365.md](12-NHAN-DIEN-THUONG-HIEU/04-NHAN-DIEN-SO-VA-DONG-BO-GITA365.md) | 8 quy tắc đồng bộ KNSGITA ↔ GITA365 · thanh tiến trình 7 phần · giao diện theo cấp học · video · audio · huy hiệu số · thông báo · mạng xã hội · **bộ tệp nguồn cần sản xuất** · bảo vệ thương hiệu |
+
 ---
 
 ## 4. Nguyên tắc đọc bộ tài liệu
@@ -152,7 +169,8 @@
 1. **Đọc theo trục dọc** (một khối): `KHOI-XX.md` → chọn chuyên đề → mở `MAU-GIAO-AN` → `MAU-KICH-BAN` → lấy trò chơi ở kho 04, dụng cụ ở kho 05, phiếu thực hành ở kho 06, phiếu đánh giá ở kho 07.
 2. **Đọc theo trục ngang** (một mạch năng lực xuyên 12 năm): `BAN-DO-CHUONG-TRINH-288.md` → lọc theo mã mạch `M1…M8`.
 3. **Mọi tài liệu đều gắn mã.** Mã chuyên đề dạng `K07-M4-02` = Khối 7 · Mạch 4 (Giao tiếp & Hợp tác) · Chuyên đề thứ 2 của mạch.
-4. **Trước khi triển khai bất kỳ phần nào, đọc phân hệ 11.** Quy định phân quyền và bảo vệ dữ liệu trẻ em ở `11-PHAN-QUYEN-BAO-MAT` **cao hơn** mọi hướng dẫn nghiệp vụ ở các phân hệ khác; khi có mâu thuẫn, áp dụng phân hệ 11.
+4. **Mọi ấn phẩm phát hành ra ngoài đều theo phân hệ 12.** Trước khi in hoặc đăng tải, chạy hết **checklist 20 mục** ở `12-NHAN-DIEN-THUONG-HIEU/02`.
+5. **Trước khi triển khai bất kỳ phần nào, đọc phân hệ 11.** Quy định phân quyền và bảo vệ dữ liệu trẻ em ở `11-PHAN-QUYEN-BAO-MAT` **cao hơn** mọi hướng dẫn nghiệp vụ ở các phân hệ khác; khi có mâu thuẫn, áp dụng phân hệ 11.
 
 ---
 
