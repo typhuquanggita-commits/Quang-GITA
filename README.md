@@ -46,6 +46,9 @@ Mô thức xuyên suốt mọi tầng: thư mục tài liệu, quy trình, giả
 | Ma trận đề | 7 kỳ thi / trường |
 | Đề mẫu trọn vẹn | **7/7 ma trận** đều có đề (79 câu + 16 ý đúng/sai), đủ lời giải – barem – bảng phân tích |
 | Bí kíp · thói quen · phương pháp | 30 · 8 · 8 |
+| Sổ tay công thức | **195** công thức trong 23 nhóm, 163 mục bắt buộc thuộc, 33 cảnh báo bẫy |
+| Tài liệu học viện giáo viên | 3 giáo án · 27 khối thời gian · 12 nước đi sư phạm · 8 kịch bản nhận xét · 5 nghi thức · bảng dự giờ 6 tiêu chí |
+| Chỉ số tìm kiếm | **2.937** mục tra cứu được bằng một ô tìm kiếm, gõ có dấu hay không dấu đều được |
 | Vai trò phân quyền | 8 vai trò (4 học sinh · 3 giáo viên · 1 quản trị) |
 
 ### Bộ phiếu theo chuyên đề
@@ -108,6 +111,27 @@ Chạy `npm run smoke` để sinh toàn bộ 16.664 câu và kiểm tra tính h�
 
 ---
 
+## Nhịp học hằng ngày
+
+Trang **Hôm nay** (`/today`) trả lời đúng một câu hỏi: *hôm nay làm gì*. Hệ thống hợp nhất ba nguồn việc theo đúng quỹ thời gian mỗi ngày suy ra từ cam kết giờ/tuần:
+
+1. **Ôn lại đến hạn** theo bốn mốc **1 – 3 – 7 – 21 ngày**. Mốc đang chờ của mỗi phiếu suy ra từ số ngày khác nhau đã làm phiếu đó; qua đủ bốn mốc thì coi như đã vào trí nhớ dài hạn.
+2. **Lỗi sai chưa xử lí**, gom theo chuyên đề và xếp trước phiếu mới.
+3. **Nhiệm vụ tiếp theo** từ lộ trình tối ưu, lấp cho đủ quỹ thời gian.
+
+Kèm theo: chuỗi ngày học và nhịp bảy ngày, đếm ngược kỳ thi với bốn giai đoạn *nền tảng → tăng tốc → tổng duyệt → nước rút*, một **việc chốt 20/80** cho ngày hôm đó, và một thói quen xoay vòng.
+
+**Báo cáo gia đình** (`/report`) là một trang A4 in ra được, viết cho người không dạy Toán: tuần này bằng số và so với tuần trước, ba chuyên đề đang vững, ba chuyên đề cần chú ý, ba việc của tuần tới, việc gia đình làm được ngay — và một mục riêng nói rõ **báo cáo không đo được điều gì**.
+
+---
+
+## Tra cứu và tìm kiếm
+
+- **Sổ tay công thức** (`/formulas`) — 195 công thức, mỗi mục trả lời ba câu: viết thế nào (kèm điều kiện), dùng khi nào (dấu hiệu trong đề), sai ở đâu. 163 mục đánh dấu ★ là danh sách tối thiểu phải thuộc trước phòng thi.
+- **Tìm kiếm toàn hệ thống** (`/search`, hoặc ô tìm kiếm trên thanh trên cùng) — 2.937 mục gồm chuyên đề, nhiệm vụ, công thức, đề mẫu và từng câu trong đề, bài mẫu, bí kíp, thói quen, kỳ thi, thư mục tài liệu, mô thức GITA và tài liệu học viện. Gõ có dấu hay không dấu đều ra kết quả.
+
+---
+
 ## Vòng lặp luyện tập
 
 ```
@@ -125,6 +149,17 @@ Chọn chuyên đề → Bộ phiếu (LT → DB → KN → NC → OT → TH)
 
 - Đạt **KPI ≥ 90%** ở **2 phiếu** cùng mức độ → mở khoá **Level** kế tiếp.
 - Đạt chuẩn ở **15 nhiệm vụ** của một giai đoạn, với KPI trung bình 5 lượt gần nhất ≥ 90% → mở khoá **Giai đoạn** mới.
+
+---
+
+## Học viện giáo viên
+
+Trang `/academy` là chữ **A · Academy** của mô thức GITA viết thành công cụ vận hành lớp:
+
+- **3 giáo án chuẩn** (kiến thức mới 90′, luyện nâng cao 120′, thi thử và chữa đề 150′), chia tới từng khối thời gian với mục đích, việc của giáo viên, việc của học sinh, dấu hiệu quan sát được cho biết đã đạt, và lỗi giáo viên hay mắc.
+- **12 nước đi sư phạm** có tên gọi, để tổ chuyên môn nói cùng một ngôn ngữ khi dự giờ.
+- **8 kịch bản nhận xét** theo tình huống thật — nói gì, rồi làm gì, và không bao giờ nói gì.
+- **5 nghi thức lớp** và **bảng dự giờ 6 tiêu chí × 4 mức**, gắn với năm cấp độ chuyên môn P1–P5.
 
 ---
 
@@ -171,14 +206,19 @@ src/
     playbook.ts      Kho bí kíp, thói quen, phương pháp học
     roles.ts         Ma trận phân quyền
     brand.ts         Bộ nhận diện GITA365 / MATH365 và quy chuẩn tài liệu
+    formulas.ts      Sổ tay 195 công thức: viết thế nào · dùng khi nào · sai ở đâu
+    academy.ts       Giáo án, nước đi sư phạm, kịch bản nhận xét, nghi thức, bảng dự giờ
     papers/          Đề mẫu trọn vẹn theo từng ma trận đề (đề · lời giải · barem · phân tích)
   lib/
     rng.ts           Bộ sinh ngẫu nhiên có hạt giống + tiện ích số học
     engine.ts        Chấm điểm, chẩn đoán, định hướng, thăng cấp
     roadmap.ts       Sinh lộ trình cá nhân hoá
     auth.ts          Kiểm tra quyền phía client
+    review.ts        Lịch ôn lại 1–3–7–21, chuỗi ngày học, đếm ngược kỳ thi, kế hoạch Hôm nay
+    report.ts        Báo cáo tuần gửi gia đình
+    search.ts        Chỉ số tìm kiếm toàn hệ thống
     storage.ts       Lưu trạng thái vào localStorage
-  pages/           19 trang giao diện (gồm Bộ giải đề, Hồ sơ học viên, Phiếu hướng dẫn)
+  pages/           24 trang giao diện (gồm Bộ giải đề, Hồ sơ học viên, Phiếu hướng dẫn)
   components/      Thư viện UI + biểu đồ SVG tự vẽ
 ```
 

@@ -162,12 +162,13 @@ export function Shell({ children, active }: { children: React.ReactNode; active:
           >
             ☰
           </button>
-          <div className="min-w-0 flex-1">
+          <div className="min-w-0 flex-1 xl:flex-none">
             <div className="truncate text-[13px] font-bold text-slate-800">
               {state.profile?.name || 'Khách'} · {BRAND_TRACK_STYLE[track].label}
             </div>
             <div className="truncate text-[11.5px] text-slate-500">{BRAND.tagline}</div>
           </div>
+          <TopSearch />
           <div className="hidden items-center gap-4 sm:flex">
             <MiniStat label="Level" value={`${ov.level}/5`} />
             <MiniStat label="Giai đoạn" value={`${ov.stage}/5`} />
@@ -193,5 +194,32 @@ function MiniStat({ label, value }: { label: string; value: string }) {
       <div className="text-[10px] font-semibold uppercase tracking-wide text-slate-400">{label}</div>
       <div className="text-[13px] font-extrabold tabular-nums text-slate-800">{value}</div>
     </div>
+  );
+}
+
+
+/** Ô tìm kiếm toàn hệ thống trên thanh trên cùng. */
+function TopSearch() {
+  const [q, setQ] = useState('');
+  const submit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const v = q.trim();
+    go(v ? `/search/${encodeURIComponent(v)}` : '/search');
+    setQ('');
+  };
+  return (
+    <form onSubmit={submit} className="hidden min-w-0 flex-1 xl:block">
+      <label className="relative block">
+        <span className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-[13px] text-slate-400">
+          ⌕
+        </span>
+        <input
+          className="w-full rounded-xl border border-slate-200 bg-slate-50 py-2 pl-8 pr-3 text-[13px] outline-none transition focus:border-brand-400 focus:bg-white"
+          placeholder="Tìm chuyên đề, công thức, đề mẫu, bí kíp…"
+          value={q}
+          onChange={(e) => setQ(e.target.value)}
+        />
+      </label>
+    </form>
   );
 }

@@ -21,6 +21,7 @@ import Library from '@/pages/Library';
 import Roles from '@/pages/Roles';
 import Classes from '@/pages/Classes';
 import Academy from '@/pages/Academy';
+import Search from '@/pages/Search';
 import Brand from '@/pages/Brand';
 
 export default function App() {
@@ -95,6 +96,9 @@ export default function App() {
       break;
     case 'academy':
       page = <Academy />;
+      break;
+    case 'search':
+      page = <Search initial={param} />;
       break;
     case 'brand':
       page = <Brand />;
