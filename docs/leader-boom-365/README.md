@@ -21,6 +21,8 @@
 | [`../he-thong-huan-luyen-gita/`](../he-thong-huan-luyen-gita/README.md) | **Vận hành thế nào** — tuyển sinh, hậu cần, tài chính, di chuyển, 90/365 ngày | Toàn bộ vận hành |
 | [`../thu-vien-chuyen-mon-gita/`](../thu-vien-chuyen-mon-gita/README.md) | **Xử lý ca cụ thể thế nào** — 220 phác đồ, 18 năng lực, biểu mẫu | Tư vấn, Coach, Giáo viên |
 | [`../an-toan-va-phan-quyen/`](../an-toan-va-phan-quyen/README.md) | **Ai được xem gì, làm gì** — phân quyền, bảo mật, dữ liệu trẻ em | Công nghệ, BLĐ, toàn bộ nhân sự |
+| [`../nhan-dien-thuong-hieu/`](../nhan-dien-thuong-hieu/README.md) | **Trông và nói như thế nào** — logo, màu, chữ, giọng nói thương hiệu | Truyền thông, Thiết kế, Đối tác |
+| [`../nhuong-quyen-leader-boom/`](../nhuong-quyen-leader-boom/README.md) | **Chuyển giao cho đơn vị khác thế nào** — chuẩn nhượng quyền, kiểm định, pháp lý | BLĐ, Pháp chế, Đối tác |
 
 **Quy ước ký hiệu dùng chung toàn hệ** — xem [`../he-thong-huan-luyen-gita/README.md`](../he-thong-huan-luyen-gita/README.md) §3:
 **T1–T5** tầng chuyên môn · **G1–G5** gói dịch vụ · **L1–L5** cấp độ năng lực · **N01–N11** nhóm vấn đề.

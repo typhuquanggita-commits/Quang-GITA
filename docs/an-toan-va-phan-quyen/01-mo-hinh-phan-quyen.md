@@ -24,7 +24,7 @@
 
 ---
 
-## 2. Bảy phạm vi quan hệ
+## 2. Bảy phạm vi quan hệ + một phạm vi tổng hợp
 
 Vai trò trả lời *"được làm gì"*. Phạm vi trả lời *"với hồ sơ của ai"*. Thiếu phạm vi là lỗ hổng
 phổ biến nhất trong hệ thống giáo dục: một Coach có quyền `read:report` mà không giới hạn phạm vi
@@ -39,6 +39,12 @@ sẽ đọc được báo cáo của **toàn bộ** học viên.
 | `class` | Học viên lớp mình dạy | TEACHER | Danh sách lớp của học kỳ hiện tại |
 | `referred` | Ca đã được chuyển tới đúng quy trình | SPECIALIST, COUNSELOR | Bản ghi chuyển ca có phê duyệt |
 | `org` | Toàn tổ chức | SUPER_ADMIN, SYSTEM_ADMIN, EXEC_DIRECTOR, CSO | Mặc định, nhưng **luôn kèm giới hạn mức nhạy cảm** |
+| `agg` | **Chỉ dữ liệu tổng hợp**, không gắn với cá nhân nào | EXEC_DIRECTOR, PRODUCT_ADMIN | `!resource.ownerId` — hồ sơ có chủ sở hữu **không bao giờ** thoả `agg` |
+
+> **`agg` không phải phạm vi quan hệ** — nó là phạm vi *loại dữ liệu*. Đây là cơ chế cho phép
+> Giám đốc điều hành xem số liệu toàn hệ thống mà **không** đọc được hồ sơ của bất kỳ đứa trẻ nào.
+> Bất biến **BB-07**: hàm `can()` chỉ gán `agg` khi tài nguyên không có `ownerId`. Nới quy tắc này
+> là mở lại đúng lỗ hổng đã được vá — xem [`04-kiem-soat-an-ninh.md`](04-kiem-soat-an-ninh.md).
 
 **Quy tắc hết hiệu lực:** khi phân công kết thúc, khi học viên đổi lớp, khi ca đóng, quyền
 phải **tự động mất trong 24 giờ**. Quyền còn sót lại sau khi quan hệ đã chấm dứt là dạng lỗ hổng

@@ -4,7 +4,7 @@
 
 | Tệp | Nội dung |
 |---|---|
-| [`src/auth/types.ts`](../../src/auth/types.ts) | 13 vai trò · 9 hành động · 7 phạm vi · 4 mức nhạy cảm · 32 loại tài nguyên |
+| [`src/auth/types.ts`](../../src/auth/types.ts) | 13 vai trò · 9 hành động · 8 phạm vi · 4 mức nhạy cảm · 34 loại tài nguyên |
 | [`src/auth/policy.ts`](../../src/auth/policy.ts) | Ma trận quyền · danh sách trắng P3 · cổng cấp độ L · cổng gói G |
 | [`src/auth/can.ts`](../../src/auth/can.ts) | Hàm `can()` theo thuật toán 10 bước · `resolveScopes()` · `filterReadable()` |
 | [`src/auth/audit.ts`](../../src/auth/audit.ts) | Hợp đồng nhật ký kiểm toán |

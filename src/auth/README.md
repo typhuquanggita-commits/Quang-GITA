@@ -6,7 +6,7 @@
 
 | Tệp | Vai trò |
 |---|---|
-| `types.ts` | Kiểu dữ liệu: 13 vai trò · 9 hành động · 7 phạm vi · 4 mức nhạy cảm · 32 loại tài nguyên |
+| `types.ts` | Kiểu dữ liệu: 13 vai trò · 9 hành động · 8 phạm vi · 4 mức nhạy cảm · 34 loại tài nguyên |
 | `policy.ts` | **Ma trận quyền** · danh sách trắng P3 · cổng cấp độ học viên · cổng gói dịch vụ |
 | `can.ts` | **Hàm quyết định `can()`** theo thuật toán 10 bước · `resolveScopes()` · `filterReadable()` |
 | `audit.ts` | Hợp đồng nhật ký kiểm toán · bộ ghi trong bộ nhớ dùng cho kiểm thử |

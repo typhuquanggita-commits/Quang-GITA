@@ -11,6 +11,8 @@
 | `he-thong-huan-luyen-gita/` | **Vận hành thế nào** — ai làm gì, khi nào, tiền ở đâu | Toàn bộ vận hành |
 | **`thu-vien-chuyen-mon-gita/`** (bộ này) | **Xử lý ca cụ thể thế nào** — tra vấn đề, chọn giải pháp, chấm năng lực, in biểu mẫu | Tư vấn, Coach, Trainer, Giáo viên |
 | [`an-toan-va-phan-quyen/`](../an-toan-va-phan-quyen/README.md) | **Ai được xem gì, làm gì** — 13 vai trò, ma trận quyền, phân loại dữ liệu, bảo mật | Công nghệ, BLĐ, toàn bộ nhân sự |
+| [`nhan-dien-thuong-hieu/`](../nhan-dien-thuong-hieu/README.md) | **Trông và nói như thế nào** — logo, màu, chữ, giọng nói | Truyền thông, Thiết kế |
+| [`nhuong-quyen-leader-boom/`](../nhuong-quyen-leader-boom/README.md) | **Chuyển giao cho đơn vị khác thế nào** — chuẩn nhượng quyền, kiểm định | BLĐ, Pháp chế, Đối tác |
 
 Đây là bộ được mở ra **hằng ngày khi làm việc với một học viên cụ thể**, không phải bộ đọc một lần.
 

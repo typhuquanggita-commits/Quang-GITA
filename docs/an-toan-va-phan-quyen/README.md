@@ -20,14 +20,21 @@ từ đầu, mô hình mặc định luôn là "ai cũng xem được gần hế
 | # | Tài liệu | Nội dung | Ai bắt buộc đọc |
 |---|---|---|---|
 | 00 | `README.md` | Bản đồ, mười bất biến an ninh | Tất cả |
-| 01 | [`01-mo-hinh-phan-quyen.md`](01-mo-hinh-phan-quyen.md) | 13 vai trò · 7 phạm vi quan hệ · tầng năng lực L · gói G · thuật toán quyết định | Công nghệ, BLĐ |
-| 02 | [`02-ma-tran-quyen.md`](02-ma-tran-quyen.md) | **Ma trận quyền đầy đủ** — 27 tài nguyên × 10 hành động × 13 vai trò | Công nghệ |
+| 01 | [`01-mo-hinh-phan-quyen.md`](01-mo-hinh-phan-quyen.md) | 13 vai trò · 7 phạm vi quan hệ + phạm vi tổng hợp · tầng năng lực L · gói G · thuật toán quyết định | Công nghệ, BLĐ |
+| 02 | [`02-ma-tran-quyen.md`](02-ma-tran-quyen.md) | **Ma trận quyền đầy đủ** — 34 loại tài nguyên × 9 hành động × 13 vai trò | Công nghệ |
 | 03 | [`03-phan-loai-du-lieu.md`](03-phan-loai-du-lieu.md) | 4 mức nhạy cảm · vòng đời dữ liệu · đồng ý và rút đồng ý · lưu trữ và xoá | Công nghệ, Pháp chế |
 | 04 | [`04-kiem-soat-an-ninh.md`](04-kiem-soat-an-ninh.md) | Mô hình đe doạ · 24 biện pháp kiểm soát · **3 lỗ hổng đã phát hiện và đã vá** · ứng phó sự cố | Công nghệ, BLĐ |
 | 05 | [`05-trien-khai-ky-thuat.md`](05-trien-khai-ky-thuat.md) | Hướng dẫn triển khai · break-glass · lược đồ nhật ký kiểm toán · bộ kiểm thử | Công nghệ |
 
 **Bản cài đặt tham chiếu bằng mã nguồn:** [`../../src/auth/`](../../src/auth/) — định nghĩa vai trò,
 ma trận chính sách, hàm quyết định `can()`, hợp đồng nhật ký kiểm toán và bộ tự kiểm.
+
+**Bộ tài liệu liên quan:** [`../leader-boom-365/`](../leader-boom-365/README.md) chuyên môn trại ·
+[`../he-thong-huan-luyen-gita/`](../he-thong-huan-luyen-gita/README.md) vận hành ·
+[`../thu-vien-chuyen-mon-gita/`](../thu-vien-chuyen-mon-gita/README.md) thư viện tác nghiệp ·
+[`../nhan-dien-thuong-hieu/`](../nhan-dien-thuong-hieu/README.md) nhận diện thương hiệu ·
+[`../nhuong-quyen-leader-boom/`](../nhuong-quyen-leader-boom/README.md) **nhượng quyền** — mọi đơn vị
+nhận quyền phải áp dụng nguyên bộ phân quyền này, không được tự dựng hệ riêng (NQ-06).
 
 ---
 
