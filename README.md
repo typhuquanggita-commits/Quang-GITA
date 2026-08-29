@@ -1,8 +1,8 @@
-# ENGWILL365
+# ENGWIN365
 
 **Hệ thống học tiếng Anh cá nhân hoá — từ số 0 đến IELTS 8.0 trong 36 tháng.**
 
-> ENGlish + WILL + 365 — Tiếng Anh không phải tài năng, là Ý CHÍ nhân với 365 ngày.
+> ENGlish + WIN + 365 — Tiếng Anh không phải tài năng, là 365 lần THẮNG chính mình.
 
 Một ứng dụng web trình bày trọn vẹn một hệ thống học tiếng Anh 3 năm: lộ trình theo cột
 mốc, thư viện phương pháp đã kiểm chứng, chuỗi bài giảng, bài luyện hằng ngày, bí kíp,
@@ -206,7 +206,7 @@ chữ, luật khoảng cách, luật dùng logo và brief nhiếp ảnh.
 Thêm một cấp độ vào `data/levels.ts` là có thêm huy hiệu; đổi một mã màu trong
 `data/brand.ts` là cả 59 file đổi theo — bộ nhận diện không bao giờ lệch khỏi nội dung.
 
-### 🎙 Podcast — ENGWILL RADIO
+### 🎙 Podcast — ENGWIN RADIO
 **6 tập có kịch bản đầy đủ từng câu**, 5 định dạng chương trình (5 Phút Mỗi Sáng ·
 Giải Mã Lỗi · Đối Thoại Cố Vấn · Lập Trình Tư Duy · Shadowing Lab).
 
@@ -321,6 +321,48 @@ Band  0.0    5.0     6.5     8.0
 CEFR  Pre-A1  B1      B2+     C1+
 Từ     300   3.000   6.800  10.000
 Input    0h    450h  1.080h  1.800h
+```
+
+## 🤖 Trợ lý AI của học viện
+
+Trả lời câu hỏi khó nhất mỗi sáng — **hôm nay tôi làm gì** — bằng dữ liệu của
+chính học viên, không bằng lời khuyên chung chung.
+
+> Trợ lý có **đúng một việc**: đưa người học tới buổi luyện tiếp theo. Một trợ
+> lý trả lời hay mọi câu hỏi mà học viên vẫn không luyện là một trợ lý đã thất
+> bại.
+
+**Bản giao việc hôm nay** — tab Trợ lý AI có bản chạy thật, không phải ảnh minh
+hoạ: đổi ngày, quỹ thời gian, cấp độ, gói và triệu chứng, xem đúng thứ trợ lý
+sẽ trả về. Nội dung dựng từ hồ sơ 365 ngày, 25 cấp độ và kho 1.000 đơn kê.
+
+Bản giao việc gồm đúng sáu phần và **không có bốn thứ**: không quá một màn
+hình, không có lựa chọn nào để người học phải quyết, không có lời động viên
+chung chung, không hiện tiến độ của người khác.
+
+**Phạm vi theo gói.** Ba gói — Tự học, Có kèm, Kèm sâu — mỗi gói ghi rõ trợ lý
+được làm gì và **không** được làm gì. Không gói nào cho trợ lý chấm bài nói,
+bài viết tự luận, hay xét lên tầng.
+
+**11 kho tri thức**, mỗi kho kèm giới hạn riêng. Ví dụ: kho 1.000 đơn kê chỉ
+được lấy đơn đúng cấp độ học viên đang ở, kể cả khi đơn của cấp khác nghe hợp
+lý hơn.
+
+**10 việc làm được**, mỗi việc có rào chắn. Đáng chú ý là hai việc cuối: *từ
+chối đúng cách* (nói thẳng không làm được, vì sao, và ai làm được) và *dừng và
+gọi người* (gặp dấu hiệu kiệt sức hay khủng hoảng thì dừng giao bài ngay,
+không trấn an, chuyển coach mà không chờ học viên đồng ý).
+
+**6 tín hiệu thói quen** đo bằng dữ liệu chứ không hỏi cảm nhận. Chỉ số dự báo
+bỏ cuộc mạnh nhất là **tốc độ quay lại** sau khi đứt chuỗi, không phải độ dài
+chuỗi.
+
+**Thang giữ chân 5 nấc.** Bỏ một ngày → trợ lý **im lặng**. Bỏ bảy ngày → trợ
+lý **dừng nhắc hoàn toàn** và chuyển người. Khi quay lại → **không nhắc gì tới
+quãng nghỉ**, vì nhắc lại là cách nhanh nhất để họ nghỉ tiếp.
+
+```bash
+node tools/kiem-tro-ly.mjs   # quét 54 tổ hợp ngày × quỹ thời gian
 ```
 
 ## 🎓 Đào tạo nâng cao · kèm cặp 1–1 · thang nghề coach
@@ -482,8 +524,8 @@ Sinh ra hai tệp trong `release/`:
 
 | Tệp | Dùng khi nào |
 |---|---|
-| `ENGWILL365-1.0.0-windows-x64.exe` | Bộ cài đặt — tạo lối tắt, có gỡ cài đặt |
-| `ENGWILL365-1.0.0-windows-portable.exe` | Bản chạy thẳng, không cần cài |
+| `ENGWIN365-1.0.0-windows-x64.exe` | Bộ cài đặt — tạo lối tắt, có gỡ cài đặt |
+| `ENGWIN365-1.0.0-windows-portable.exe` | Bản chạy thẳng, không cần cài |
 
 Bản máy tính khác bản web ở một điểm: nó có **két dữ liệu mã hoá**. Lần mở đầu
 tiên sẽ hỏi đặt mã khoá; hồ sơ học tập được mã hoá bằng AES-256-GCM với khoá
@@ -512,7 +554,7 @@ data/                  Toàn bộ nội dung hệ thống, tách khỏi giao di�
   levels.ts            25 cấp độ (5 tầng × 5 cấp)
   feedback.ts          Khung chấm bài 4 phần + thư viện 20 phác đồ lỗi
   production.ts        11 bản thiết kế sản xuất học liệu + trình tự triển khai
-  podcast.ts           Engwill Radio — 5 định dạng, 6 tập, cấu hình pipeline
+  podcast.ts           Engwin Radio — 5 định dạng, 6 tập, cấu hình pipeline
   brand.ts             Hệ thống nhận diện — màu, chữ, khoảng cách, luật logo
   sprint.ts            Chu kỳ 21/90 ngày + 5 cơ chế học có bằng chứng
   voices.ts            Dàn 10 giọng · chuẩn MC · đối chiếu Anh-Anh/Anh-Mỹ
@@ -522,6 +564,7 @@ data/                  Toàn bộ nội dung hệ thống, tách khỏi giao di�
   assess.ts            4 bộ đề định kỳ · 8 luật liêm chính · 6 bậc thưởng · quy trình AI
   solutions.ts         40 triệu chứng → kho 1.000 đơn kê, sinh bằng hàm thuần
   training.ts          Kèm cặp 1–1 · 5 bậc coach · 4 khoá nâng cao · lộ trình xuất sắc
+  assistant.ts         Trợ lý AI — 3 gói · 11 kho tri thức · 10 việc · thang giữ chân
   nhip.ts              Suy ra nhịp học từ tổng giờ và số tuần
 
 content/
@@ -563,9 +606,9 @@ audio/                 Sản phẩm dựng ra, không commit — xem audio/READM
   mindset.ts           10 mô-đun lập trình tư duy
   clubs.ts             7 câu lạc bộ + 12 cổng kiểm định
 
-components/engwill/    Một component cho mỗi tab
+components/engwin/    Một component cho mỗi tab
 types.ts               Kiểu dữ liệu lõi
-docs/ENGWILL365.md     Sổ tay vận hành — bản rút gọn để dùng hằng ngày
+docs/ENGWIN365.md     Sổ tay vận hành — bản rút gọn để dùng hằng ngày
 ```
 
 Nội dung nằm hoàn toàn trong `data/` dưới dạng dữ liệu có kiểu. Muốn cá nhân hoá lộ
@@ -580,7 +623,7 @@ giao diện tự cập nhật theo.
 2. Sang tab **La Bàn**. Dành 45 phút viết cho xong **mục 01 (Tại sao)**
    và **mục 11 (Điểm mạnh)** bằng câu trả lời thật của bạn — đây là hai mục quyết
    định bạn có đi hết 3 năm hay không.
-3. Đọc [`docs/ENGWILL365.md`](docs/ENGWILL365.md) — sổ tay vận hành, 10 phút.
+3. Đọc [`docs/ENGWIN365.md`](docs/ENGWIN365.md) — sổ tay vận hành, 10 phút.
 4. Sang tab **Lộ trình**, mở đúng cột mốc xuất phát mà hệ thống đã tính cho bạn.
 5. Làm đúng buổi học của ngày mai.
 

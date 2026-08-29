@@ -3,7 +3,7 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  *
- * ENGWILL365 — dựng bộ nhận diện.
+ * ENGWIN365 — dựng bộ nhận diện.
  *
  *   node tools/make-brand.mjs            # dựng tất cả, SVG + PNG
  *   node tools/make-brand.mjs --only logo
@@ -159,7 +159,7 @@ ${m.body}
 }
 
 function wordmark(x, y, fs, dark = true) {
-  return `<text x="${x}" y="${y}" font-family="Inter Display, Inter, sans-serif" font-size="${fs}" font-weight="800" letter-spacing="${(-0.03 * fs).toFixed(2)}" fill="${dark ? BRIGHT : INK}">ENGWILL<tspan fill="url(#ringGrad)">365</tspan></text>`;
+  return `<text x="${x}" y="${y}" font-family="Inter Display, Inter, sans-serif" font-size="${fs}" font-weight="800" letter-spacing="${(-0.03 * fs).toFixed(2)}" fill="${dark ? BRIGHT : INK}">ENGWIN<tspan fill="url(#ringGrad)">365</tspan></text>`;
 }
 
 function logoHorizontal(dark = true) {
@@ -187,9 +187,9 @@ function logoStacked(dark = true) {
 <g transform="translate(${(W - mark) / 2} 40)">${m.body}</g>
 <g text-anchor="middle">
 ${wordmark(W / 2, 445, 62, dark).replace('<text ', '<text text-anchor="middle" ')}
-<text x="${W / 2}" y="482" font-family="Inter, sans-serif" font-size="16" font-weight="500" letter-spacing="3" fill="${MUTED}">ENGLISH + WILL + 365</text>
+<text x="${W / 2}" y="482" font-family="Inter, sans-serif" font-size="16" font-weight="500" letter-spacing="3" fill="${MUTED}">ENGLISH + WIN + 365</text>
 <text x="${W / 2}" y="546" font-family="Inter, sans-serif" font-size="19" font-weight="400" fill="${dark ? '#94A3B8' : '#475569'}">Tiếng Anh không phải tài năng,</text>
-<text x="${W / 2}" y="574" font-family="Inter, sans-serif" font-size="19" font-weight="400" fill="${dark ? '#94A3B8' : '#475569'}">là Ý CHÍ nhân với 365 ngày.</text>
+<text x="${W / 2}" y="574" font-family="Inter, sans-serif" font-size="19" font-weight="400" fill="${dark ? '#94A3B8' : '#475569'}">là 365 lần thắng chính mình.</text>
 </g>
 </svg>`;
 }
@@ -288,7 +288,7 @@ function podcastCover(title, subtitle, tierIdx, big) {
 <rect width="${S}" height="${S}" fill="url(#bg)"/>
 <rect width="${S}" height="${S}" fill="url(#halo)"/>
 <g transform="translate(${(S - 620) / 2} 300)">${m.body}</g>
-<text x="${S / 2}" y="1200" text-anchor="middle" font-family="Inter Display, Inter, sans-serif" font-size="150" font-weight="900" letter-spacing="-4" fill="${BRIGHT}">ENGWILL<tspan fill="url(#acc)">365</tspan></text>
+<text x="${S / 2}" y="1200" text-anchor="middle" font-family="Inter Display, Inter, sans-serif" font-size="150" font-weight="900" letter-spacing="-4" fill="${BRIGHT}">ENGWIN<tspan fill="url(#acc)">365</tspan></text>
 <text x="${S / 2}" y="1310" text-anchor="middle" font-family="Inter, sans-serif" font-size="62" font-weight="600" letter-spacing="22" fill="${MUTED}">RADIO</text>
 <rect x="${S / 2 - 120}" y="1420" width="240" height="10" rx="5" fill="url(#acc)"/>
 ${lines
@@ -491,7 +491,7 @@ function quoteCard(text, source, tierIdx, portrait = false) {
 ${lines.map((l, i) => `<text x="96" y="${startY + i * 78}" font-family="Inter Display, Inter, sans-serif" font-size="62" font-weight="800" letter-spacing="-1.5" fill="${BRIGHT}">${esc(l)}</text>`).join('\n')}
 <text x="96" y="${startY + lines.length * 78 + 62}" font-family="Inter, sans-serif" font-size="28" font-weight="400" fill="${MUTED}">${esc(source)}</text>
 <g transform="translate(96 ${H - 150})">${m.body}</g>
-<text x="206" y="${H - 92}" font-family="Inter Display, Inter, sans-serif" font-size="34" font-weight="800" letter-spacing="-1" fill="${BRIGHT}">ENGWILL<tspan fill="url(#q)">365</tspan></text>
+<text x="206" y="${H - 92}" font-family="Inter Display, Inter, sans-serif" font-size="34" font-weight="800" letter-spacing="-1" fill="${BRIGHT}">ENGWIN<tspan fill="url(#q)">365</tspan></text>
 </svg>`;
 }
 
@@ -524,7 +524,7 @@ const groups = {
   },
   podcast() {
     raster(
-      write('podcast/cover-series.svg', podcastCover('ENGWILL RADIO', 'Podcast đồng hành', 2, true)),
+      write('podcast/cover-series.svg', podcastCover('ENGWIN RADIO', 'Podcast đồng hành', 2, true)),
       1400,
     );
     FORMATS.forEach((f, i) =>
@@ -577,7 +577,7 @@ if (!svgOnly) {
 }
 
 mkdirSync(OUT, {recursive: true});
-console.log('\n  ENGWILL365 — dựng bộ nhận diện\n');
+console.log('\n  ENGWIN365 — dựng bộ nhận diện\n');
 
 const todo = only ? [only] : Object.keys(groups);
 for (const g of todo) {

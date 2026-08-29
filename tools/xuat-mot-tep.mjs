@@ -20,11 +20,11 @@ import {fileURLToPath} from 'node:url';
 
 const ROOT = fileURLToPath(new URL('..', import.meta.url));
 const NGUON = path.join(ROOT, 'dist', 'index.html');
-const DICH = path.join(ROOT, 'engwill365-artifact.html');
+const DICH = path.join(ROOT, 'engwin365-artifact.html');
 
 // Tên sản phẩm, không kèm lời giải thích. Đây là tên hiện trên thẻ trình duyệt
 // và trong thư viện Artifact, nên nó phải là MỘT CÁI TÊN.
-const TIEU_DE = 'ENGWILL365';
+const TIEU_DE = 'ENGWIN365';
 
 const NEN = `<title>${TIEU_DE}</title>
 <style>

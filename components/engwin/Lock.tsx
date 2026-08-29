@@ -21,7 +21,7 @@ const Shell: React.FC<{children: React.ReactNode}> = ({children}) => (
           GITA365
         </p>
         <h1 className="mt-2 text-3xl font-bold tracking-tight text-slate-100">
-          ENGWILL<span className="text-sky-400">365</span>
+          ENGWIN<span className="text-sky-400">365</span>
         </h1>
       </div>
       {children}
@@ -61,7 +61,7 @@ export const Lock: React.FC<{onUnlocked: () => void}> = ({onUnlocked}) => {
   const [busy, setBusy] = useState(false);
 
   useEffect(() => {
-    const bridge = window.engwill;
+    const bridge = window.engwin;
     if (!bridge) {
       setPhase('xong');
       return;
@@ -77,7 +77,7 @@ export const Lock: React.FC<{onUnlocked: () => void}> = ({onUnlocked}) => {
   }, [onUnlocked]);
 
   const submitCreate = async () => {
-    const v = window.engwill!.vault;
+    const v = window.engwin!.vault;
     setError(null);
     if (pass !== again) {
       setError('Hai lần nhập không khớp');
@@ -104,7 +104,7 @@ export const Lock: React.FC<{onUnlocked: () => void}> = ({onUnlocked}) => {
   const submitUnlock = async () => {
     setError(null);
     setBusy(true);
-    const r = await window.engwill!.vault.unlock(pass);
+    const r = await window.engwin!.vault.unlock(pass);
     setBusy(false);
     if (!r.ok) {
       setError(

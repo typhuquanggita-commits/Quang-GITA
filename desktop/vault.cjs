@@ -20,7 +20,7 @@ const path = require('node:path');
 
 const SCRYPT = {N: 1 << 17, r: 8, p: 1, maxmem: 256 * 1024 * 1024};
 const KEYLEN = 32;
-const PROBE = 'engwill365-vault-v1';
+const PROBE = 'engwin365-vault-v1';
 
 class Vault {
   constructor(dir) {
@@ -173,7 +173,7 @@ function validate(p) {
   if (!/[a-zA-Z]/.test(s)) return 'Mã khoá phải có ít nhất một chữ cái';
   if (!/[0-9]/.test(s)) return 'Mã khoá phải có ít nhất một chữ số';
   if (/^(.)\1+$/.test(s)) return 'Mã khoá không được là một ký tự lặp lại';
-  const weak = ['12345678', 'password', 'engwill1', 'qwerty12', '11111111'];
+  const weak = ['12345678', 'password', 'engwin1', 'qwerty12', '11111111'];
   if (weak.includes(s.toLowerCase())) return 'Mã khoá quá dễ đoán';
   return null;
 }

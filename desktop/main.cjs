@@ -2,7 +2,7 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  *
- * Tiến trình chính của bản máy tính ENGWILL365.
+ * Tiến trình chính của bản máy tính ENGWIN365.
  *
  * Nguyên tắc bảo mật áp dụng ở đây:
  *   - contextIsolation bật: mã của trang không chạm được vào Node.
@@ -44,7 +44,7 @@ protocol.registerSchemesAsPrivileged([
   },
 ]);
 
-const APP_ORIGIN = 'app://engwill';
+const APP_ORIGIN = 'app://engwin';
 
 function serveDist(request) {
   const {pathname} = new URL(request.url);
@@ -70,7 +70,7 @@ function createWindow() {
     minWidth: 1024,
     minHeight: 700,
     backgroundColor: '#020617',
-    title: 'ENGWILL365',
+    title: 'ENGWIN365',
     show: false,
     webPreferences: {
       preload: path.join(__dirname, 'preload.cjs'),

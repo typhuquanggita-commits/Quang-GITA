@@ -3,9 +3,9 @@
 <rect width="520" height="620" fill="#020617"/>
 <g transform="translate(110 40)"><path d="M 128.12 25.91 A 126 126 0 1 1 53.48 69.01" fill="none" stroke="url(#ringGrad)" stroke-width="22.50" stroke-linecap="round"/><rect x="73.20" y="163.50" width="21.60" height="33.00" rx="10.80" fill="url(#tier1)"/><rect x="106.20" y="147.00" width="21.60" height="49.50" rx="10.80" fill="url(#tier2)"/><rect x="139.20" y="130.50" width="21.60" height="66.00" rx="10.80" fill="url(#tier3)"/><rect x="172.20" y="114.00" width="21.60" height="82.50" rx="10.80" fill="url(#tier4)"/><rect x="205.20" y="97.50" width="21.60" height="99.00" rx="10.80" fill="url(#tier5)"/></g>
 <g text-anchor="middle">
-<text text-anchor="middle" x="260" y="445" font-family="Inter Display, Inter, sans-serif" font-size="62" font-weight="800" letter-spacing="-1.86" fill="#F1F5F9">ENGWILL<tspan fill="url(#ringGrad)">365</tspan></text>
-<text x="260" y="482" font-family="Inter, sans-serif" font-size="16" font-weight="500" letter-spacing="3" fill="#64748B">ENGLISH + WILL + 365</text>
+<text text-anchor="middle" x="260" y="445" font-family="Inter Display, Inter, sans-serif" font-size="62" font-weight="800" letter-spacing="-1.86" fill="#F1F5F9">ENGWIN<tspan fill="url(#ringGrad)">365</tspan></text>
+<text x="260" y="482" font-family="Inter, sans-serif" font-size="16" font-weight="500" letter-spacing="3" fill="#64748B">ENGLISH + WIN + 365</text>
 <text x="260" y="546" font-family="Inter, sans-serif" font-size="19" font-weight="400" fill="#94A3B8">Tiếng Anh không phải tài năng,</text>
-<text x="260" y="574" font-family="Inter, sans-serif" font-size="19" font-weight="400" fill="#94A3B8">là Ý CHÍ nhân với 365 ngày.</text>
+<text x="260" y="574" font-family="Inter, sans-serif" font-size="19" font-weight="400" fill="#94A3B8">là 365 lần thắng chính mình.</text>
 </g>
 </svg>

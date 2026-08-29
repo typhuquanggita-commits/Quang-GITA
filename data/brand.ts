@@ -4,15 +4,15 @@
  */
 
 /* ==========================================================================
-   ENGWILL365 — HỆ THỐNG NHẬN DIỆN
+   ENGWIN365 — HỆ THỐNG NHẬN DIỆN
    Đây là nguồn duy nhất cho mọi giá trị thiết kế. Công cụ tools/make-brand.mjs
    đọc chính các hằng này để dựng logo, huy hiệu và sơ đồ, nên đổi một mã màu ở
    đây là toàn bộ ấn phẩm đổi theo.
    ========================================================================== */
 
 export const BRAND_IDEA = {
-  name: 'ENGWILL365',
-  meaning: 'ENGlish + WILL + 365',
+  name: 'ENGWIN365',
+  meaning: 'ENGlish + WIN + 365',
   positioning:
     'Không phải trung tâm dạy tiếng Anh. Là hệ thống giúp một người trưởng thành đi hết 1.095 ngày mà không bỏ cuộc.',
   bigIdea:
@@ -125,7 +125,7 @@ export const LOGO_RULES = {
     {id: 'wordmark', name: 'Chữ đơn', use: 'Khi đã có dấu hiệu ở chỗ khác trong cùng khung'},
   ],
   clearSpace:
-    'Khoảng trống quanh logo tối thiểu bằng chiều cao chữ E trong ENGWILL. Không đặt bất kỳ thứ gì vào vùng đó.',
+    'Khoảng trống quanh logo tối thiểu bằng chiều cao chữ E trong ENGWIN. Không đặt bất kỳ thứ gì vào vùng đó.',
   minSize: 'Dấu hiệu tối thiểu 24px. Bản nằm ngang tối thiểu 120px chiều rộng.',
   donts: [
     'Không xoay, không nghiêng, không bóp méo tỉ lệ.',

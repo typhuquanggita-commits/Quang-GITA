@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Chấm một file audio theo CHUẨN DẪN của ENGWILL365.
+Chấm một file audio theo CHUẨN DẪN của ENGWIN365.
 
     python3 tools/do-chuan-dan.py audio/ep01-*.mp3 --gioi nam
     python3 tools/do-chuan-dan.py audio/*.mp3 --gioi nam --gon

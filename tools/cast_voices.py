@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Tuyển giọng cho ENGWILL RADIO.
+Tuyển giọng cho ENGWIN RADIO.
 
     python3 tools/cast_voices.py --scan 140      # sàng lọc 140 ứng viên
     python3 tools/cast_voices.py --reel          # dựng băng audition từ danh sách đã lọc

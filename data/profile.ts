@@ -781,7 +781,7 @@ export function derivePlan(p: Profile): DerivedPlan {
   };
 }
 
-export const PROFILE_STORAGE_KEY = 'engwill365.profile.v1';
+export const PROFILE_STORAGE_KEY = 'engwin365.profile.v1';
 
 export function loadProfile(): Profile | null {
   try {

@@ -10,5 +10,5 @@
 <text x="96" y="960" font-family="Inter Display, Inter, sans-serif" font-size="62" font-weight="800" letter-spacing="-1.5" fill="#F1F5F9">hơn hiểu 100% và bỏ cuộc.</text>
 <text x="96" y="1100" font-family="Inter, sans-serif" font-size="28" font-weight="400" fill="#64748B">Mô-đun tư duy — Mơ hồ</text>
 <g transform="translate(96 1770)"><path d="M 39.29 7.95 A 38.64 38.64 0 1 1 16.40 21.16" fill="none" stroke="url(#ringGrad)" stroke-width="6.90" stroke-linecap="round"/><rect x="22.45" y="50.14" width="6.62" height="10.12" rx="3.31" fill="url(#tier1)"/><rect x="32.57" y="45.08" width="6.62" height="15.18" rx="3.31" fill="url(#tier2)"/><rect x="42.69" y="40.02" width="6.62" height="20.24" rx="3.31" fill="url(#tier3)"/><rect x="52.81" y="34.96" width="6.62" height="25.30" rx="3.31" fill="url(#tier4)"/><rect x="62.93" y="29.90" width="6.62" height="30.36" rx="3.31" fill="url(#tier5)"/></g>
-<text x="206" y="1828" font-family="Inter Display, Inter, sans-serif" font-size="34" font-weight="800" letter-spacing="-1" fill="#F1F5F9">ENGWILL<tspan fill="url(#q)">365</tspan></text>
+<text x="206" y="1828" font-family="Inter Display, Inter, sans-serif" font-size="34" font-weight="800" letter-spacing="-1" fill="#F1F5F9">ENGWIN<tspan fill="url(#q)">365</tspan></text>
 </svg>

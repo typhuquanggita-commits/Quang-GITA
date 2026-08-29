@@ -13,11 +13,11 @@ import {
 } from '../types';
 
 /* ==========================================================================
-   HỌC VIỆN ENGWILL — TRIẾT LÝ GỐC RỄ
+   HỌC VIỆN ENGWIN — TRIẾT LÝ GỐC RỄ
    ========================================================================== */
 
 export const ACADEMY_CREED = {
-  name: 'HỌC VIỆN ENGWILL',
+  name: 'HỌC VIỆN ENGWIN',
   oneLine: 'Chúng tôi không dạy tiếng Anh. Chúng tôi tạo điều kiện để tiếng Anh tự mọc lên.',
   root:
     'Mọi đứa trẻ trên đời đều thành thạo tiếng mẹ đẻ mà không cần một buổi học ngữ pháp nào. Không có đứa trẻ nào trượt tiếng mẹ đẻ. Điều đó chứng minh: con người không có "năng khiếu ngoại ngữ" — con người có bộ máy tiếp thu ngôn ngữ, và nó chỉ cần đúng ba thứ để chạy: đầu vào hiểu được, nhu cầu diễn đạt có thật, và một môi trường không sợ hãi. Toàn bộ học viện này chỉ làm một việc: tái tạo ba điều kiện đó cho người trưởng thành.',

@@ -5,7 +5,7 @@
 import {DossierQuarter, DossierDay, DossierBlock} from '../types';
 
 /* ==========================================================================
-   HỒ SƠ ENGWILL 365 NGÀY — NĂM THỨ NHẤT
+   HỒ SƠ ENGWIN 365 NGÀY — NĂM THỨ NHẤT
    Lộ trình 36 tháng trả lời "đi đâu". Chu kỳ 21 ngày trả lời "ba tuần tới
    làm gì". Hồ sơ này trả lời câu hỏi khó nhất: "SÁNG MAI TÔI LÀM GÌ".
    Ba trăm sáu mươi lăm ngày, không ngày nào để trống, không ngày nào phải

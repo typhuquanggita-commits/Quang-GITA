@@ -4,32 +4,33 @@
  */
 import React, {useState, lazy, Suspense} from 'react';
 import {NORTH_STAR} from './data';
-const Charter = lazy(() => import('./components/engwill/Charter').then((m) => ({default: m.Charter})));
-const MyPlan = lazy(() => import('./components/engwill/MyPlan').then((m) => ({default: m.MyPlan})));
-const Overview = lazy(() => import('./components/engwill/Overview').then((m) => ({default: m.Overview})));
-const Roadmap = lazy(() => import('./components/engwill/Roadmap').then((m) => ({default: m.Roadmap})));
-const Methods = lazy(() => import('./components/engwill/Methods').then((m) => ({default: m.Methods})));
-const Drills = lazy(() => import('./components/engwill/Drills').then((m) => ({default: m.Drills})));
-const Lectures = lazy(() => import('./components/engwill/Lectures').then((m) => ({default: m.Lectures})));
-const Playbooks = lazy(() => import('./components/engwill/Playbooks').then((m) => ({default: m.Playbooks})));
-const Habits = lazy(() => import('./components/engwill/Habits').then((m) => ({default: m.Habits})));
-const Mindset = lazy(() => import('./components/engwill/Mindset').then((m) => ({default: m.Mindset})));
-const Clubs = lazy(() => import('./components/engwill/Clubs').then((m) => ({default: m.Clubs})));
-const Resources = lazy(() => import('./components/engwill/Resources').then((m) => ({default: m.Resources})));
-const Academy = lazy(() => import('./components/engwill/Academy').then((m) => ({default: m.Academy})));
-const Levels = lazy(() => import('./components/engwill/Levels').then((m) => ({default: m.Levels})));
-const Grading = lazy(() => import('./components/engwill/Grading').then((m) => ({default: m.Grading})));
-const Studio = lazy(() => import('./components/engwill/Studio').then((m) => ({default: m.Studio})));
-const Podcast = lazy(() => import('./components/engwill/Podcast').then((m) => ({default: m.Podcast})));
-const Brand = lazy(() => import('./components/engwill/Brand').then((m) => ({default: m.Brand})));
-const Sprint = lazy(() => import('./components/engwill/Sprint').then((m) => ({default: m.Sprint})));
-const Training = lazy(() => import('./components/engwill/Training').then((m) => ({default: m.Training})));
-const Assess = lazy(() => import('./components/engwill/Assess').then((m) => ({default: m.Assess})));
-const Dossier = lazy(() => import('./components/engwill/Dossier').then((m) => ({default: m.Dossier})));
-import {Lock} from './components/engwill/Lock';
-const Casting = lazy(() => import('./components/engwill/Casting').then((m) => ({default: m.Casting})));
-const Exams = lazy(() => import('./components/engwill/Exams').then((m) => ({default: m.Exams})));
-const Certify = lazy(() => import('./components/engwill/Certify').then((m) => ({default: m.Certify})));
+const Charter = lazy(() => import('./components/engwin/Charter').then((m) => ({default: m.Charter})));
+const MyPlan = lazy(() => import('./components/engwin/MyPlan').then((m) => ({default: m.MyPlan})));
+const Overview = lazy(() => import('./components/engwin/Overview').then((m) => ({default: m.Overview})));
+const Roadmap = lazy(() => import('./components/engwin/Roadmap').then((m) => ({default: m.Roadmap})));
+const Methods = lazy(() => import('./components/engwin/Methods').then((m) => ({default: m.Methods})));
+const Drills = lazy(() => import('./components/engwin/Drills').then((m) => ({default: m.Drills})));
+const Lectures = lazy(() => import('./components/engwin/Lectures').then((m) => ({default: m.Lectures})));
+const Playbooks = lazy(() => import('./components/engwin/Playbooks').then((m) => ({default: m.Playbooks})));
+const Habits = lazy(() => import('./components/engwin/Habits').then((m) => ({default: m.Habits})));
+const Mindset = lazy(() => import('./components/engwin/Mindset').then((m) => ({default: m.Mindset})));
+const Clubs = lazy(() => import('./components/engwin/Clubs').then((m) => ({default: m.Clubs})));
+const Resources = lazy(() => import('./components/engwin/Resources').then((m) => ({default: m.Resources})));
+const Academy = lazy(() => import('./components/engwin/Academy').then((m) => ({default: m.Academy})));
+const Levels = lazy(() => import('./components/engwin/Levels').then((m) => ({default: m.Levels})));
+const Grading = lazy(() => import('./components/engwin/Grading').then((m) => ({default: m.Grading})));
+const Studio = lazy(() => import('./components/engwin/Studio').then((m) => ({default: m.Studio})));
+const Podcast = lazy(() => import('./components/engwin/Podcast').then((m) => ({default: m.Podcast})));
+const Brand = lazy(() => import('./components/engwin/Brand').then((m) => ({default: m.Brand})));
+const Sprint = lazy(() => import('./components/engwin/Sprint').then((m) => ({default: m.Sprint})));
+const Assistant = lazy(() => import('./components/engwin/Assistant').then((m) => ({default: m.Assistant})));
+const Training = lazy(() => import('./components/engwin/Training').then((m) => ({default: m.Training})));
+const Assess = lazy(() => import('./components/engwin/Assess').then((m) => ({default: m.Assess})));
+const Dossier = lazy(() => import('./components/engwin/Dossier').then((m) => ({default: m.Dossier})));
+import {Lock} from './components/engwin/Lock';
+const Casting = lazy(() => import('./components/engwin/Casting').then((m) => ({default: m.Casting})));
+const Exams = lazy(() => import('./components/engwin/Exams').then((m) => ({default: m.Exams})));
+const Certify = lazy(() => import('./components/engwin/Certify').then((m) => ({default: m.Certify})));
 
 interface Nav {
   id: string;
@@ -77,6 +78,14 @@ const NAV: Nav[] = [
     hint: '365 ngày viết sẵn',
     group: 'learner',
     render: () => <Dossier />,
+  },
+  {
+    id: 'assistant',
+    icon: '🤖',
+    label: 'Trợ lý AI',
+    hint: 'Hôm nay làm gì · 6 bước · 3 gói',
+    group: 'learner',
+    render: () => <Assistant />,
   },
   {
     id: 'assess',
@@ -202,7 +211,7 @@ const NAV: Nav[] = [
     id: 'podcast',
     icon: '🎙',
     label: 'Podcast',
-    hint: 'Engwill Radio · 6 tập',
+    hint: 'Engwin Radio · 6 tập',
     group: 'academy',
     render: () => <Podcast />,
   },
@@ -265,7 +274,7 @@ export const App: React.FC = () => {
   const [tab, setTab] = useState('charter');
   const [menuOpen, setMenuOpen] = useState(false);
   // Trên web thì không có két, vào thẳng. Trên bản máy tính phải mở khoá trước.
-  const [unlocked, setUnlocked] = useState(!window.engwill);
+  const [unlocked, setUnlocked] = useState(!window.engwin);
   const active = NAV.find((n) => n.id === tab)!;
 
   if (!unlocked) return <Lock onUnlocked={() => setUnlocked(true)} />;
@@ -315,17 +324,17 @@ export const App: React.FC = () => {
         <aside className="sticky top-0 hidden h-screen w-64 shrink-0 flex-col border-r border-slate-800 p-5 lg:flex">
           <div className="mb-6">
             <p className="bg-gradient-to-r from-sky-400 to-violet-400 bg-clip-text text-xl font-black tracking-tight text-transparent">
-              ENGWILL365
+              ENGWIN365
             </p>
             <p className="mt-1 text-[11px] leading-snug text-slate-500">
               0 → IELTS 8.0 trong 1.095 ngày
             </p>
           </div>
           <div className="flex-1 overflow-y-auto">{NavList}</div>
-          {window.engwill && (
+          {window.engwin && (
             <button
               onClick={async () => {
-                await window.engwill!.vault.lock();
+                await window.engwin!.vault.lock();
                 setUnlocked(false);
               }}
               className="mt-3 w-full rounded-lg border border-slate-800 py-1.5 text-[11px] font-medium text-slate-500 transition hover:border-slate-700 hover:text-slate-300">
@@ -342,7 +351,7 @@ export const App: React.FC = () => {
           {/* Mobile header */}
           <header className="sticky top-0 z-20 flex items-center justify-between border-b border-slate-800 bg-slate-950/90 px-4 py-3 backdrop-blur lg:hidden">
             <p className="bg-gradient-to-r from-sky-400 to-violet-400 bg-clip-text text-lg font-black tracking-tight text-transparent">
-              ENGWILL365
+              ENGWIN365
             </p>
             <button
               onClick={() => setMenuOpen(!menuOpen)}
@@ -360,7 +369,7 @@ export const App: React.FC = () => {
             <Suspense fallback={<DangTai />}>{active.render()}</Suspense>
             <footer className="mt-16 border-t border-slate-800 pt-6 text-xs leading-relaxed text-slate-600">
               <p className="font-semibold text-slate-500">
-                ENGWILL365 — {NORTH_STAR.meaning}
+                ENGWIN365 — {NORTH_STAR.meaning}
               </p>
               <p className="mt-2 max-w-3xl">
                 Hệ thống này là một bản thiết kế, không phải một lời hứa. Nó chỉ

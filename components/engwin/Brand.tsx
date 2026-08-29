@@ -112,7 +112,7 @@ export const Brand: React.FC = () => (
           <div className="flex h-24 items-center justify-center">
             {v.id === 'wordmark' ? (
               <span className="text-2xl font-black tracking-tight text-slate-100">
-                ENGWILL
+                ENGWIN
                 <span className="bg-gradient-to-r from-sky-400 to-violet-400 bg-clip-text text-transparent">
                   365
                 </span>
@@ -121,7 +121,7 @@ export const Brand: React.FC = () => (
               <span className="flex items-center gap-2">
                 <Monogram size={44} id={`v${i}`} />
                 <span className="text-lg font-black tracking-tight text-slate-100">
-                  ENGWILL
+                  ENGWIN
                   <span className="bg-gradient-to-r from-sky-400 to-violet-400 bg-clip-text text-transparent">
                     365
                   </span>
@@ -131,7 +131,7 @@ export const Brand: React.FC = () => (
               <span className="flex flex-col items-center gap-1">
                 <Monogram size={52} id={`v${i}`} />
                 <span className="text-sm font-black tracking-tight text-slate-100">
-                  ENGWILL
+                  ENGWIN
                   <span className="bg-gradient-to-r from-sky-400 to-violet-400 bg-clip-text text-transparent">
                     365
                   </span>

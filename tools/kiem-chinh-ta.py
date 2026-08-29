@@ -67,7 +67,7 @@ def prose():
             if l['l'] == 'vi' and l['t']:
                 yield f"podcast:{e['id']}", i + 1, l['t']
     yield from scan_markdown(
-        ['README.md', 'BAOMAT.md', 'docs/ENGWILL365.md', 'audio/README.md',
+        ['README.md', 'BAOMAT.md', 'docs/ENGWIN365.md', 'audio/README.md',
          'brand/README.md']
     )
 

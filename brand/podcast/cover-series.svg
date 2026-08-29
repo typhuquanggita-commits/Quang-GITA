@@ -7,10 +7,10 @@
 <rect width="3000" height="3000" fill="url(#bg)"/>
 <rect width="3000" height="3000" fill="url(#halo)"/>
 <g transform="translate(1190 300)"><path d="M 264.78 53.56 A 260.4 260.4 0 1 1 110.52 142.62" fill="none" stroke="url(#ringGrad)" stroke-width="46.50" stroke-linecap="round"/><rect x="151.28" y="337.90" width="44.64" height="68.20" rx="22.32" fill="url(#tier1)"/><rect x="219.48" y="303.80" width="44.64" height="102.30" rx="22.32" fill="url(#tier2)"/><rect x="287.68" y="269.70" width="44.64" height="136.40" rx="22.32" fill="url(#tier3)"/><rect x="355.88" y="235.60" width="44.64" height="170.50" rx="22.32" fill="url(#tier4)"/><rect x="424.08" y="201.50" width="44.64" height="204.60" rx="22.32" fill="url(#tier5)"/></g>
-<text x="1500" y="1200" text-anchor="middle" font-family="Inter Display, Inter, sans-serif" font-size="150" font-weight="900" letter-spacing="-4" fill="#F1F5F9">ENGWILL<tspan fill="url(#acc)">365</tspan></text>
+<text x="1500" y="1200" text-anchor="middle" font-family="Inter Display, Inter, sans-serif" font-size="150" font-weight="900" letter-spacing="-4" fill="#F1F5F9">ENGWIN<tspan fill="url(#acc)">365</tspan></text>
 <text x="1500" y="1310" text-anchor="middle" font-family="Inter, sans-serif" font-size="62" font-weight="600" letter-spacing="22" fill="#64748B">RADIO</text>
 <rect x="1380" y="1420" width="240" height="10" rx="5" fill="url(#acc)"/>
-<text x="1500" y="1680" text-anchor="middle" font-family="Inter Display, Inter, sans-serif" font-size="190" font-weight="800" letter-spacing="-4" fill="url(#acc)">ENGWILL RADIO</text>
+<text x="1500" y="1680" text-anchor="middle" font-family="Inter Display, Inter, sans-serif" font-size="190" font-weight="800" letter-spacing="-4" fill="url(#acc)">ENGWIN RADIO</text>
 <text x="1500" y="1970" text-anchor="middle" font-family="Inter, sans-serif" font-size="72" font-weight="400" fill="#94A3B8">Podcast đồng hành</text>
 <text x="1500" y="2810" text-anchor="middle" font-family="Inter, sans-serif" font-size="58" font-weight="400" fill="#64748B">Podcast đồng hành — nghe khi đi đường, ngấm khi ngủ dậy</text>
 </svg>

@@ -12,7 +12,7 @@ const fs = require('node:fs');
 const os = require('node:os');
 
 // Dùng thư mục dữ liệu tạm để không đụng vào két thật của người dùng.
-const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'engwill-smoke-'));
+const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'engwin-smoke-'));
 app.setPath('userData', tmp);
 
 let failed = 0;
@@ -50,15 +50,15 @@ async function chay() {
   const wc = win.webContents;
 
   const url = wc.getURL();
-  ok('nạp qua giao thức app://', url.startsWith('app://engwill'), url);
+  ok('nạp qua giao thức app://', url.startsWith('app://engwin'), url);
 
   const rootLen = await wc.executeJavaScript(
     "document.getElementById('root').innerHTML.length",
   );
   ok('React đã dựng được giao diện', rootLen > 500, `chỉ có ${rootLen} ký tự`);
 
-  const hasBridge = await wc.executeJavaScript('!!window.engwill');
-  ok('cầu nối engwill có mặt', hasBridge);
+  const hasBridge = await wc.executeJavaScript('!!window.engwin');
+  ok('cầu nối engwin có mặt', hasBridge);
 
   const noNode = await wc.executeJavaScript(
     "typeof require === 'undefined' && typeof process === 'undefined'",
@@ -66,7 +66,7 @@ async function chay() {
   ok('trang KHÔNG chạm được vào Node', noNode);
 
   const noIpc = await wc.executeJavaScript(
-    "typeof window.engwill?.vault?.invoke === 'undefined' && !('ipcRenderer' in window)",
+    "typeof window.engwin?.vault?.invoke === 'undefined' && !('ipcRenderer' in window)",
   );
   ok('trang KHÔNG có ipcRenderer thô', noIpc);
 
@@ -80,34 +80,34 @@ async function chay() {
   const run = (js) => wc.executeJavaScript(js);
   ok(
     'két báo chưa khởi tạo',
-    (await run('window.engwill.vault.status()')).initialised === false,
+    (await run('window.engwin.vault.status()')).initialised === false,
   );
   ok(
     'từ chối mã yếu qua IPC',
-    (await run("window.engwill.vault.create('123')")).ok === false,
+    (await run("window.engwin.vault.create('123')")).ok === false,
   );
   ok(
     'tạo được két qua IPC',
-    (await run("window.engwill.vault.create('Engwill365!')")).ok === true,
+    (await run("window.engwin.vault.create('Engwin365!')")).ok === true,
   );
   ok(
     'ghi được hồ sơ qua IPC',
-    (await run("window.engwill.vault.write({ngay: 21, ghiChu: 'bài ra vòng'})")).ok === true,
+    (await run("window.engwin.vault.write({ngay: 21, ghiChu: 'bài ra vòng'})")).ok === true,
   );
-  const read = await run('window.engwill.vault.read()');
+  const read = await run('window.engwin.vault.read()');
   ok('đọc lại đúng hồ sơ', read.ok && read.data.ngay === 21);
-  await run('window.engwill.vault.lock()');
+  await run('window.engwin.vault.lock()');
   ok(
     'khoá rồi thì không đọc được',
-    (await run('window.engwill.vault.read()')).ok === false,
+    (await run('window.engwin.vault.read()')).ok === false,
   );
   ok(
     'sai mã thì không mở được',
-    (await run("window.engwill.vault.unlock('SaiMa1234')")).ok === false,
+    (await run("window.engwin.vault.unlock('SaiMa1234')")).ok === false,
   );
   ok(
     'đúng mã thì mở được',
-    (await run("window.engwill.vault.unlock('Engwill365!')")).ok === true,
+    (await run("window.engwin.vault.unlock('Engwin365!')")).ok === true,
   );
 
   // Tệp trên đĩa phải là bản mã, không phải bản rõ.
@@ -143,7 +143,7 @@ async function chay() {
      (await run("document.querySelectorAll('h4').length")) === 90);
 
   // Khoá lại rồi nạp lại: BẮT BUỘC phải hỏi mã khoá. Đây mới là ranh giới thật.
-  await run('window.engwill.vault.lock()');
+  await run('window.engwin.vault.lock()');
   wc.reload();
   await new Promise((r) => wc.once('did-finish-load', r));
   await new Promise((r) => setTimeout(r, 2000));
@@ -151,15 +151,15 @@ async function chay() {
   ok('khoá rồi nạp lại thì phải hỏi mã khoá', sauKhoa.includes('Mở khoá'), sauKhoa);
   ok('khoá rồi thì giao diện chính KHÔNG dựng',
      (await run("document.querySelectorAll('aside nav button').length")) === 0);
-  await run("window.engwill.vault.unlock('Engwill365!')");
+  await run("window.engwin.vault.unlock('Engwin365!')");
 
   // Giao thức app:// không được cho đọc ra ngoài thư mục dist.
   // Dạng %2e%2e là dạng nguy hiểm thật: giao thức chuẩn không tự rút gọn nó,
   // nên nó đi thẳng tới bộ xử lý và chỉ bị chặn nhờ kiểm tra đường dẫn ở đó.
   for (const attack of [
-    'app://engwill/../package.json',
-    'app://engwill/%2e%2e/package.json',
-    'app://engwill/%2e%2e%2f%2e%2e%2fetc%2fpasswd',
+    'app://engwin/../package.json',
+    'app://engwin/%2e%2e/package.json',
+    'app://engwin/%2e%2e%2f%2e%2e%2fetc%2fpasswd',
   ]) {
     const r = await run(
       `fetch(${JSON.stringify(attack)}).then(async r => r.ok ? await r.text() : 'chặn:' + r.status).catch(() => 'chặn:lỗi')`,

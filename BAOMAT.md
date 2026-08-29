@@ -1,4 +1,4 @@
-# Bảo mật và mật khẩu — ENGWILL365
+# Bảo mật và mật khẩu — ENGWIN365
 
 Tài liệu này nói rõ hệ thống bảo vệ cái gì, bằng cách nào, và **cái gì nó
 không bảo vệ được**. Phần cuối cùng quan trọng nhất.
@@ -7,7 +7,7 @@ không bảo vệ được**. Phần cuối cùng quan trọng nhất.
 
 ## 1. Điều cần biết trước tiên: mật khẩu trên web tĩnh là bảo mật giả
 
-Bản web của ENGWILL365 là một trang tĩnh. Toàn bộ mã và nội dung được gửi
+Bản web của ENGWIN365 là một trang tĩnh. Toàn bộ mã và nội dung được gửi
 xuống trình duyệt của người xem trước khi có bất cứ đoạn mã nào chạy.
 
 Nghĩa là: **nếu đặt một màn hình đăng nhập viết bằng JavaScript ngay trong
@@ -75,7 +75,7 @@ Cụ thể:
 Trang chỉ nói chuyện với két qua đúng **chín kênh IPC đã khai báo sẵn**. Không
 có kênh động — trang không thể gọi một kênh không nằm trong danh sách.
 
-Nội dung được phục vụ qua giao thức riêng `app://engwill` thay vì `file://`.
+Nội dung được phục vụ qua giao thức riêng `app://engwin` thay vì `file://`.
 Có hai lý do: ES module không nạp được qua `file://` (gốc của trang là `null`,
 vi phạm chính sách cùng nguồn), và một gốc thật làm cho `'self'` trong CSP có
 nghĩa. Bộ xử lý giao thức chặn mọi đường dẫn thoát ra ngoài thư mục `dist` —
@@ -127,13 +127,13 @@ Người chưa đăng nhập không nhận được một byte nào của trang.
 ```nginx
 server {
     listen 443 ssl http2;
-    server_name engwill.gita365.vn;
+    server_name engwin.gita365.vn;
 
-    root /var/www/engwill365/dist;
+    root /var/www/engwin365/dist;
     index index.html;
 
-    auth_basic           "ENGWILL365";
-    auth_basic_user_file /etc/nginx/.htpasswd-engwill;
+    auth_basic           "ENGWIN365";
+    auth_basic_user_file /etc/nginx/.htpasswd-engwin;
 
     add_header X-Frame-Options        DENY              always;
     add_header X-Content-Type-Options nosniff           always;
@@ -149,7 +149,7 @@ server {
 Tạo tệp mật khẩu:
 
 ```bash
-htpasswd -B -c /etc/nginx/.htpasswd-engwill quang   # -B = bcrypt
+htpasswd -B -c /etc/nginx/.htpasswd-engwin quang   # -B = bcrypt
 ```
 
 Xác thực cơ bản chỉ an toàn khi chạy trên HTTPS — nếu không, mật khẩu đi qua

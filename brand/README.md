@@ -1,4 +1,4 @@
-# Bộ nhận diện ENGWILL365
+# Bộ nhận diện ENGWIN365
 
 File `.png` trong thư mục này **không được commit** — chúng là sản phẩm dựng ra từ
 dữ liệu. Bản `.svg` thì có commit vì đó là bản gốc vector.

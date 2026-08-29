@@ -9,7 +9,7 @@ set -euo pipefail
 DIR="${PIPER_VOICES:-$HOME/.local/share/piper-voices}"
 BASE="https://github.com/rhasspy/piper/releases/download/v0.0.2"
 
-# Giọng dùng trong ENGWILL RADIO. Thêm bớt ở đây rồi sửa hằng VOICES
+# Giọng dùng trong ENGWIN RADIO. Thêm bớt ở đây rồi sửa hằng VOICES
 # trong tools/make-podcast.mjs cho khớp.
 VOICES=(
   "voice-en-us-ryan-high"                    # Mỹ nam, chất lượng cao — vai ANH

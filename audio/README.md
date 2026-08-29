@@ -1,4 +1,4 @@
-# ENGWILL RADIO — thư mục audio
+# ENGWIN RADIO — thư mục audio
 
 File `.mp3` trong thư mục này **không được commit** (xem `.gitignore`) vì chúng là
 sản phẩm dựng ra từ kịch bản, không phải nguồn. Nguồn nằm ở

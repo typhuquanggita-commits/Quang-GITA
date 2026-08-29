@@ -35,7 +35,7 @@ THANH = set("123456")
 
 CAU_THU = [
     "Tôi học tiếng Anh mỗi ngày.",
-    "Chào bạn, đây là Engwill Radio.",
+    "Chào bạn, đây là Engwin Radio.",
     "Vì sao bạn nghe không ra, dù biết hết các từ?",
     "Hôm nay chúng ta sẽ nói về một câu hỏi rất nhiều người gặp phải.",
     "Bảy ngày liên tiếp, mỗi ngày hai mươi phút.",

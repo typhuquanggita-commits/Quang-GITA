@@ -12,7 +12,7 @@
 
 const {contextBridge, ipcRenderer} = require('electron');
 
-contextBridge.exposeInMainWorld('engwill', {
+contextBridge.exposeInMainWorld('engwin', {
   isDesktop: true,
   platform: process.platform,
   vault: {

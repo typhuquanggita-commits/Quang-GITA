@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Khớp một giọng mẫu có thật với dàn giọng của ENGWILL RADIO.
+Khớp một giọng mẫu có thật với dàn giọng của ENGWIN RADIO.
 
     python3 tools/khop-giong.py mau-giong-nu.mp3 --gioi nu
     python3 tools/khop-giong.py mau-nam.m4a --gioi nam --tu 0:03 --den 0:18

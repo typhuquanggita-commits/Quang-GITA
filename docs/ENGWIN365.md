@@ -1,6 +1,6 @@
-# ENGWILL365 — Sổ tay vận hành
+# ENGWIN365 — Sổ tay vận hành
 
-> **ENG**lish + **WILL** + **365** — Tiếng Anh không phải tài năng, là Ý CHÍ nhân với 365 ngày.
+> **ENG**lish + **WIN** + **365** — Tiếng Anh không phải tài năng, là 365 lần THẮNG chính mình.
 >
 > Từ con số 0 đến IELTS 8.0 trong 36 tháng, bằng một hệ thống vận hành hằng ngày — không dựa vào cảm hứng.
 

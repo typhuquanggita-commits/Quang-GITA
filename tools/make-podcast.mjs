@@ -3,7 +3,7 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  *
- * ENGWILL RADIO — công cụ dựng podcast từ kịch bản.
+ * ENGWIN RADIO — công cụ dựng podcast từ kịch bản.
  *
  *   node tools/make-podcast.mjs                  # dựng tất cả tập, backend piper (neural)
  *   node tools/make-podcast.mjs --ep ep01        # dựng một tập
@@ -517,7 +517,7 @@ function buildRss(series, built) {
       <description>${esc(b.ep.takeaway)}</description>
       <itunes:duration>${secs(b.seconds)}</itunes:duration>
       <itunes:episode>${b.ep.no}</itunes:episode>
-      <guid isPermaLink="false">engwill-${b.ep.id}</guid>
+      <guid isPermaLink="false">engwin-${b.ep.id}</guid>
       <enclosure url="REPLACE_BASE_URL/${b.file.split('/').pop()}" type="audio/mpeg" length="0"/>
     </item>`,
     )

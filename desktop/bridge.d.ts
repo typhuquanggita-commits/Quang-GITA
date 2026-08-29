@@ -13,7 +13,7 @@ export interface VaultResult {
   data?: unknown;
 }
 
-export interface EngwillBridge {
+export interface EngwinBridge {
   isDesktop: true;
   platform: string;
   vault: {
@@ -31,7 +31,7 @@ export interface EngwillBridge {
 
 declare global {
   interface Window {
-    engwill?: EngwillBridge;
+    engwin?: EngwinBridge;
   }
 }
 

@@ -1,5 +1,5 @@
 {
-  "name": "engwill365",
+  "name": "engwin365",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -18,7 +18,8 @@
     "test:voice": "python3 tools/khop-giong.test.py",
     "test:ui": "node tools/kiem-tuong-tac.mjs",
     "test:training": "npx tsx tools/kiem-dao-tao.ts",
-    "build:single": "SINGLE=1 vite build && node tools/xuat-mot-tep.mjs"
+    "build:single": "SINGLE=1 vite build && node tools/xuat-mot-tep.mjs",
+    "test:assistant": "node tools/kiem-tro-ly.mjs"
   },
   "devDependencies": {
     "@tailwindcss/browser": "^4.1.10",
@@ -36,11 +37,11 @@
     "vite": "^6.2.0",
     "vite-plugin-singlefile": "^2.3.3"
   },
-  "description": "ENGWILL365 — Hệ thống học tiếng Anh từ số 0 đến IELTS 8.0 trong 36 tháng",
+  "description": "ENGWIN365 — Hệ thống học tiếng Anh từ số 0 đến IELTS 8.0 trong 36 tháng",
   "main": "desktop/main.cjs",
   "build": {
-    "appId": "vn.gita365.engwill365",
-    "productName": "ENGWILL365",
+    "appId": "vn.gita365.engwin365",
+    "productName": "ENGWIN365",
     "copyright": "GITA365",
     "directories": {
       "output": "release",
@@ -68,7 +69,7 @@
           ]
         }
       ],
-      "artifactName": "ENGWILL365-${version}-windows-${arch}.${ext}"
+      "artifactName": "ENGWIN365-${version}-windows-${arch}.${ext}"
     },
     "nsis": {
       "oneClick": false,
@@ -76,7 +77,7 @@
       "allowToChangeInstallationDirectory": true,
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true,
-      "shortcutName": "ENGWILL365"
+      "shortcutName": "ENGWIN365"
     },
     "linux": {
       "target": [
@@ -85,7 +86,7 @@
       "category": "Education"
     },
     "portable": {
-      "artifactName": "ENGWILL365-${version}-windows-portable.${ext}"
+      "artifactName": "ENGWIN365-${version}-windows-portable.${ext}"
     },
     "electronLanguages": [
       "vi",

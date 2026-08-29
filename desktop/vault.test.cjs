@@ -21,7 +21,7 @@ const ok = (name, cond, extra = '') => {
   }
 };
 
-const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'engwill-vault-'));
+const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'engwin-vault-'));
 console.log(`\n  KIỂM TRA KÉT DỮ LIỆU — ${dir}\n`);
 
 // 1. Quy tắc mã khoá
@@ -30,16 +30,16 @@ ok('từ chối mã không có chữ số', validate('abcdefgh') !== null);
 ok('từ chối mã không có chữ cái', validate('12345678') !== null);
 ok('từ chối một ký tự lặp lại', validate('aaaaaaaa') !== null);
 ok('từ chối mã dễ đoán', validate('password') !== null);
-ok('chấp nhận mã hợp lệ', validate('Engwill365!') === null);
+ok('chấp nhận mã hợp lệ', validate('Engwin365!') === null);
 
 // 2. Khởi tạo
 const v = new Vault(dir);
 ok('két chưa khởi tạo', v.isInitialised === false);
 ok('không tạo được bằng mã yếu', v.create('1234').ok === false);
-ok('tạo được bằng mã hợp lệ', v.create('Engwill365!').ok === true);
+ok('tạo được bằng mã hợp lệ', v.create('Engwin365!').ok === true);
 ok('két đã khởi tạo', v.isInitialised === true);
 ok('két đang mở sau khi tạo', v.isUnlocked === true);
-ok('không tạo lại được', v.create('Engwill365!').ok === false);
+ok('không tạo lại được', v.create('Engwin365!').ok === false);
 
 // 3. Ghi / đọc
 const HO_SO = {ten: 'Quang', muc_tieu: 'IELTS 8.0', ngay: 1, ghiChu: 'Bí mật — không được lộ'};
@@ -56,15 +56,15 @@ ok('khoá rồi thì không ghi được', v.write({x: 1}).ok === false);
 // 5. Mở khoá
 ok('sai mã thì không mở được', v.unlock('SaiMaKhoa9').ok === false);
 ok('sai mã vẫn giữ két khoá', v.isUnlocked === false);
-ok('đúng mã thì mở được', v.unlock('Engwill365!').ok === true);
+ok('đúng mã thì mở được', v.unlock('Engwin365!').ok === true);
 ok('mở rồi đọc lại đúng', JSON.stringify(v.read().data) === JSON.stringify(HO_SO));
 
 // 6. Đổi mã khoá
 ok('đổi mã sai mã cũ → hỏng', v.change('SaiMaKhoa9', 'MaMoi2026!').ok === false);
-ok('đổi sang mã yếu → hỏng', v.change('Engwill365!', 'abc').ok === false);
-ok('đổi mã thành công', v.change('Engwill365!', 'MaMoi2026!').ok === true);
+ok('đổi sang mã yếu → hỏng', v.change('Engwin365!', 'abc').ok === false);
+ok('đổi mã thành công', v.change('Engwin365!', 'MaMoi2026!').ok === true);
 v.lock();
-ok('mã cũ không còn dùng được', v.unlock('Engwill365!').ok === false);
+ok('mã cũ không còn dùng được', v.unlock('Engwin365!').ok === false);
 ok('mã mới mở được', v.unlock('MaMoi2026!').ok === true);
 ok('dữ liệu còn nguyên sau khi đổi mã', JSON.stringify(v.read().data) === JSON.stringify(HO_SO));
 
@@ -74,7 +74,7 @@ const onDisk = [
   fs.readFileSync(path.join(dir, 'profile.enc'), 'utf8'),
 ].join('\n');
 ok('không có bản rõ trên đĩa', !onDisk.includes('Bí mật') && !onDisk.includes('IELTS 8.0'));
-ok('không lưu mã khoá trên đĩa', !onDisk.includes('MaMoi2026') && !onDisk.includes('Engwill365!'));
+ok('không lưu mã khoá trên đĩa', !onDisk.includes('MaMoi2026') && !onDisk.includes('Engwin365!'));
 
 // 8. Quyền tệp 0600
 for (const f of ['vault.json', 'profile.enc']) {

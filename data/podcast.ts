@@ -5,7 +5,7 @@
 import raw from '../content/podcast-scripts.json';
 
 /* ==========================================================================
-   ENGWILL RADIO — podcast đồng hành
+   ENGWIN RADIO — podcast đồng hành
    Kịch bản nằm ở content/podcast-scripts.json, dùng chung cho cả ứng dụng này
    lẫn công cụ dựng audio tools/make-podcast.mjs. Một nguồn dữ liệu duy nhất.
    ========================================================================== */

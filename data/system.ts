@@ -5,12 +5,12 @@
 import {Pillar} from '../types';
 
 /* ==========================================================================
-   ENGWILL365 — Hiến chương hệ thống
+   ENGWIN365 — Hiến chương hệ thống
    ========================================================================== */
 
 export const NORTH_STAR = {
-  name: 'ENGWILL365',
-  meaning: 'ENGlish + WILL + 365 — Tiếng Anh không phải tài năng, là Ý CHÍ nhân với 365 ngày.',
+  name: 'ENGWIN365',
+  meaning: 'ENGlish + WIN + 365 — Tiếng Anh không phải tài năng, là 365 lần THẮNG chính mình.',
   promise:
     'Từ con số 0 đến IELTS 8.0 trong 36 tháng, bằng một hệ thống vận hành hằng ngày — không dựa vào cảm hứng.',
   bigBet:

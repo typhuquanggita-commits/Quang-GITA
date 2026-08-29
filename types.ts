@@ -4,7 +4,7 @@
  */
 
 /* ==========================================================================
-   ENGWILL365 — Kiểu dữ liệu lõi của hệ thống học tiếng Anh 0 → IELTS 8.0
+   ENGWIN365 — Kiểu dữ liệu lõi của hệ thống học tiếng Anh 0 → IELTS 8.0
    ========================================================================== */
 
 export type Cefr =
@@ -948,4 +948,60 @@ export interface ExcellenceShift {
   excellence: string;
   why: string;
   cost: string;
+}
+
+/* ==========================================================================
+   TRỢ LÝ AI CỦA HỌC VIỆN
+   ========================================================================== */
+
+/** Một gói khoá học — quyết định trợ lý được làm gì cho người này. */
+export interface Package {
+  id: string;
+  name: string;
+  who: string;
+  humanContact: string;
+  aiScope: string[];
+  aiCannot: string[];
+  upgradeWhen: string;
+}
+
+/** Một kho tri thức trợ lý được đọc, và giới hạn khi dùng nó. */
+export interface KnowledgeSource {
+  id: string;
+  store: string;
+  holds: string;
+  usedFor: string;
+  mustNot: string;
+}
+
+/** Một việc trợ lý làm được trong hội thoại. */
+export interface DialogueAct {
+  id: string;
+  name: string;
+  trigger: string;
+  does: string;
+  needs: string[];
+  guardrail: string;
+  handoff: string;
+}
+
+/** Một tín hiệu thói quen đo được. */
+export interface HabitSignal {
+  id: string;
+  name: string;
+  measures: string;
+  source: string;
+  healthy: string;
+  warning: string;
+  action: string;
+}
+
+/** Một nấc trên thang giữ chân khi học viên đang tuột. */
+export interface PersistRung {
+  no: number;
+  trigger: string;
+  name: string;
+  aiDoes: string;
+  tone: string;
+  humanAt: string;
 }
