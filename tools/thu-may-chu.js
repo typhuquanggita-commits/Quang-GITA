@@ -335,6 +335,15 @@ bao(/GITA_NGUON_KHO/.test(banWeb) && /API_CAP_PHEP/.test(banWeb),
 bao(banWeb.indexOf('<head>') < banWeb.indexOf('GITA_NGUON_KHO'),
   'tiêm ngay sau <head>, chạy trước mọi mã của ứng dụng');
 
+/* ?dangnhap=1 — đường ra màn đăng nhập cho bản chạy trong khung sandbox */
+const raNgoai = doGet({parameter:{dangnhap:'1'}})._;
+bao(/GITA_RA_NGOAI\s*=\s*true/.test(raNgoai),
+  'mở /exec?dangnhap=1 thì trang được bảo bỏ phiên, ra màn đăng nhập');
+bao(!/GITA_RA_NGOAI/.test(banWeb),
+  'mở /exec bình thường thì KHÔNG bỏ phiên — vào thẳng như cũ');
+bao(/GITA_CUA_DANG_NHAP/.test(banWeb),
+  'trang luôn biết địa chỉ để quay về màn đăng nhập');
+
 const ts = JSON.parse(doGet({parameter:{viec:'trangthai'}})._);
 bao(ts.ok && ts.daNapKhoa === 7, 'đường ?viec=trangthai vẫn trả JSON tình trạng', ts.daNapKhoa+' khoá');
 

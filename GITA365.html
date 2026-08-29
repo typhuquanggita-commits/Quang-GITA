@@ -12155,6 +12155,11 @@ function topBar(){
       h(G.LANG.toUpperCase())+'</button>'+
     (G.INSTALL ? '<button class="tbtn" data-act="install" aria-label="Cài đặt ứng dụng" style="color:var(--gold-ink);border-color:var(--gita-vien-2)">'+ic('plus')+'</button>' : '')+
     '<button class="tbtn" data-act="toggle-right" aria-label="'+h(G.L('compass'))+'">'+ic('compass')+'</button>'+
+    /* Đăng xuất phải nằm ngay trên thanh, không chỉ dưới đáy thanh trái —
+       trên điện thoại thanh trái là ngăn kéo đóng sẵn, người dùng có thể
+       không tìm ra và tưởng phần đăng nhập biến mất. */
+    '<button class="tbtn" data-act="logout" aria-label="'+h(G.L('logout'))+'" title="'+h(G.L('logout'))+'">'+
+      ic('out')+'</button>'+
     '<button class="who" data-v="toi">'+
       '<div class="tx deskonly"><b>'+h(a.ten)+'</b><span>'+h(a.nha)+'</span></div>'+
       '<span class="av" style="background:linear-gradient(135deg,'+r.c+',var(--gita-do))">'+
@@ -12553,7 +12558,7 @@ on('[data-act]', function(el){
   if(a==='do-login') doLogin(document.getElementById('inU').value, document.getElementById('inP').value);
   else if(a==='show-accounts') G.accountsModal();
   else if(a==='scroll-login'){ var c=document.getElementById('loginCard'); if(c) c.scrollIntoView({behavior:'smooth',block:'center'}); }
-  else if(a==='logout'){ G.S.acc=null; G.S.role=null; G.S.roleObj=null; save(); gate(); }
+  else if(a==='logout'){ G.raNgoai(); }
   else if(a==='toggle-right'){
     G.S.rightOpen = !G.S.rightOpen;
     document.getElementById('shell').classList.toggle('no-right', !G.S.rightOpen);
@@ -12780,12 +12785,38 @@ G.install = function(){
   });
 };
 
+/* Sáu cách viết đều đưa về màn đăng nhập. Đặt ở đây vì cả bộ bắt hashchange
+   bên dưới lẫn G.boot đều cần. */
+var CUA_DANG_NHAP = ['dangnhap', 'dang-nhap', 'login', 'dangxuat', 'dang-xuat', 'logout'];
+
 window.addEventListener('hashchange', function(){
   var v = location.hash.replace('#','');
+  /* Gõ #dangnhap vào cuối địa chỉ của trang ĐANG MỞ không nạp lại trang, nên
+     G.boot không chạy lại. Phải bắt ở đây, nếu không người dùng gõ xong thấy
+     màn hình không nhúc nhích. */
+  if(CUA_DANG_NHAP.indexOf(v.toLowerCase()) >= 0){ G.raNgoai(); return; }
   if(v && G.VIEWS[v] && G.S.acc && v!==G.S.view) G.go(v);
 });
 
 /* ═══════════════ KHỞI ĐỘNG ═══════════════ */
+/* ── Về màn đăng nhập ──
+   Gọi được từ nút Đăng xuất, và từ địa chỉ .../#dangnhap.
+
+   Vì sao cần đường thứ hai: sau khi đăng nhập một lần, phiên nằm trong bộ
+   nhớ trình duyệt, nên mở lại trang là vào thẳng ứng dụng — màn đăng nhập
+   không hiện ra nữa. Nút Đăng xuất nằm dưới cùng thanh trái, mà trên điện
+   thoại thanh trái là ngăn kéo đóng sẵn. Người dùng có thể không tìm ra và
+   tưởng phần đăng nhập biến mất.
+
+   Gõ thêm #dangnhap vào cuối địa chỉ là về được, dù đang kẹt ở đâu. */
+G.raNgoai = function(){
+  G.S.acc = null; G.S.role = null; G.S.roleObj = null;
+  if(G.donKho) G.donKho();          /* nội dung đã giải mã không ở lại trong bộ nhớ */
+  save();
+  try{ history.replaceState(null, '', location.pathname + location.search); }catch(e){}
+  gate();
+};
+
 G.boot = function(){
   if(G.batMaGioiThieu) G.batMaGioiThieu();
   if(G.batLinkKichHoat) G.batLinkKichHoat();
@@ -12793,6 +12824,20 @@ G.boot = function(){
   try{ var lg = localStorage.getItem('gita365.lang'); if(lg && G.UI[lg]) G.LANG = lg; }catch(e){}
   /* Trên màn hình hẹp, thanh phải mở dạng ngăn kéo — đóng sẵn để không che nội dung */
   if(window.innerWidth < 1180) G.S.rightOpen = false;
+  /* Đọc trước khi khôi phục phiên: có dấu hiệu xin về màn đăng nhập thì bỏ
+     phiên cũ đi, không vào thẳng ứng dụng. */
+  var dau = (location.hash || '').replace('#', '').toLowerCase();
+  /* window.GITA_RA_NGOAI do máy chủ Apps Script tiêm vào khi mở
+     .../exec?dangnhap=1 — bản đó chạy trong khung sandbox nên không dùng
+     được dấu # trên thanh địa chỉ. */
+  if(window.GITA_RA_NGOAI || CUA_DANG_NHAP.indexOf(dau) >= 0){
+    G.S.acc = null; G.S.role = null; G.S.roleObj = null;
+    save();
+    try{ history.replaceState(null, '', location.pathname + location.search); }catch(e){}
+    gate();
+    return;
+  }
+
   var d = load();
   if(d && d.u){
     var a = G.ACCOUNTS.concat(G.AUDITORS).filter(function(x){return x.u===d.u;})[0];

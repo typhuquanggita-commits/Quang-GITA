@@ -1205,6 +1205,82 @@ const { chromium } = require(PW);
       r.manCaDai + ' · ' + r.manVDDai + ' ký tự');
   }
 
+  /* ═══════════ 20 · LẤY LẠI MÀN ĐĂNG NHẬP ═══════════
+     Sau khi đăng nhập một lần, phiên nằm trong bộ nhớ trình duyệt nên mở
+     lại trang là vào thẳng ứng dụng. Trên bản đã phát hành, người dùng có
+     thể tưởng phần đăng nhập biến mất. Ba đường phải luôn về được. */
+  console.log('\n20 · LẤY LẠI MÀN ĐĂNG NHẬP');
+  {
+    /* Bắt đầu sạch, rồi đăng nhập thật */
+    await p.goto(URL, { waitUntil: 'networkidle' });
+    await p.evaluate(() => localStorage.clear());
+    await p.reload({ waitUntil: 'networkidle' });
+    await p.waitForTimeout(400);
+
+    const coGate = () => p.evaluate(() =>
+      !!document.getElementById('inU') && !!document.querySelector('[data-act="do-login"]'));
+
+    bao(await coGate(), 'lần đầu vào là thấy màn đăng nhập');
+
+    await p.evaluate(() => window.G.doLogin('superadmin@gita365.vn'));
+    await p.waitForTimeout(2500);
+    bao(!(await coGate()) && await p.evaluate(() => !!document.getElementById('top')),
+      'đăng nhập xong thì vào ứng dụng');
+
+    /* Tải lại: phiên được nhớ — đây chính là lúc màn đăng nhập "biến mất" */
+    await p.reload({ waitUntil: 'networkidle' });
+    await p.waitForTimeout(2500);
+    bao(!(await coGate()), 'tải lại trang thì vào thẳng ứng dụng — phiên được nhớ');
+
+    /* Đường 1 · nút đăng xuất trên thanh trên, thấy ngay không phải mở ngăn kéo */
+    const nutTren = await p.evaluate(() => {
+      const t = document.getElementById('top');
+      return !!(t && t.querySelector('[data-act="logout"]'));
+    });
+    bao(nutTren, 'có nút đăng xuất ngay trên thanh trên, không nấp trong ngăn kéo');
+
+    /* Đường 2 · địa chỉ #dangnhap — dùng được kể cả khi không tìm thấy nút nào */
+    await p.goto(URL + '#dangnhap', { waitUntil: 'networkidle' });
+    await p.waitForTimeout(1200);
+    bao(await coGate(), 'gõ #dangnhap vào cuối địa chỉ là về được màn đăng nhập');
+    bao(await p.evaluate(() => !location.hash),
+      'về xong thì xoá dấu #dangnhap khỏi địa chỉ, không kẹt lại');
+
+    /* Đường 3 · bấm nút đăng xuất */
+    await p.evaluate(() => window.G.doLogin('coach@gita365.vn'));
+    await p.waitForTimeout(2500);
+    await p.evaluate(() => document.querySelector('#top [data-act="logout"]').click());
+    await p.waitForTimeout(600);
+    bao(await coGate(), 'bấm nút đăng xuất thì về màn đăng nhập');
+
+    /* Đăng xuất phải dọn kho đã giải mã khỏi bộ nhớ */
+    bao(await p.evaluate(() => !window.G.KICHBAN || !window.G.KICHBAN.length),
+      'đăng xuất dọn luôn nội dung đã giải mã khỏi bộ nhớ');
+
+    /* Bốn cách viết khác nhau đều nhận */
+    for (const d of ['dang-nhap', 'login', 'dangxuat', 'logout']) {
+      await p.evaluate(() => window.G.doLogin('phuhuynh@gita365.vn'));
+      await p.waitForTimeout(1800);
+      await p.goto(URL + '#' + d, { waitUntil: 'networkidle' });
+      await p.waitForTimeout(900);
+      bao(await coGate(), 'địa chỉ #' + d + ' cũng về được màn đăng nhập');
+    }
+
+    /* Tệp 404 mà _redirects trỏ tới phải có thật */
+    const fs7 = require('fs'), px7 = require('path');
+    const t404 = px7.join(__dirname, '..', '404.html');
+    bao(fs7.existsSync(t404), 'có 404.html — _redirects không trỏ vào tệp rỗng');
+    if (fs7.existsSync(t404)) {
+      const n = fs7.readFileSync(t404, 'utf8');
+      bao(/#dangnhap/.test(n), 'trang 404 có lối về màn đăng nhập');
+    }
+
+    /* Trả trạng thái sạch cho các mục sau */
+    await p.goto(URL, { waitUntil: 'networkidle' });
+    await p.evaluate(() => window.G.doLogin('superadmin@gita365.vn'));
+    await p.waitForTimeout(2500);
+  }
+
   console.log('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành'));
   await b.close();
   process.exit(loi ? 1 : 0);

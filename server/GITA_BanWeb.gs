@@ -52,11 +52,14 @@ function doGet(e) {
 
   if (t.viec === 'trangthai') return gitaTrangThai_();
   if (t.goi) return gitaTraGoi_(String(t.goi));
-  return gitaTrangWeb_();
+  /* ?dangnhap=1 — bỏ phiên đang nhớ và ra thẳng màn đăng nhập.
+     Bản Apps Script chạy trong khung sandbox, nên gõ #dangnhap vào thanh
+     địa chỉ không chạm tới được trang bên trong. Phải có đường qua máy chủ. */
+  return gitaTrangWeb_(!!(t.dangnhap || t.dangxuat));
 }
 
 /* ═══════════════ TRẢ BẢN WEB ═══════════════ */
-function gitaTrangWeb_() {
+function gitaTrangWeb_(raNgoai) {
   var tep = gitaTimTep_(GITA_TEP_WEB);
   if (!tep) return HtmlService.createHtmlOutput(gitaTrangHuongDan_())
     .setTitle('GITA 365 — chưa đặt bản web');
@@ -71,6 +74,8 @@ function gitaTrangWeb_() {
     'window.G = window.G || {};' +
     'window.G.API_CAP_PHEP = ' + JSON.stringify(diaChi) + ';' +
     'window.GITA_NGUON_KHO = ' + JSON.stringify(diaChi + '?goi=') + ';' +
+    'window.GITA_CUA_DANG_NHAP = ' + JSON.stringify(diaChi + '?dangnhap=1') + ';' +
+    (raNgoai ? 'window.GITA_RA_NGOAI = true;' : '') +
     '</script>';
 
   /* Chèn ngay sau <head> nếu có, không thì lên đầu tệp. */
