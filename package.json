@@ -24,7 +24,8 @@
     "test:chuyen": "npx tsx tools/kiem-chuyen.ts",
     "test:diem": "node tools/kiem-may-tinh-diem.mjs",
     "test:so": "npx tsx tools/kiem-so-khai.ts",
-    "test:tuyen": "npx tsx tools/kiem-tuyen.ts"
+    "test:tuyen": "npx tsx tools/kiem-tuyen.ts",
+    "test:thanh": "python3 tools/do-thanh-dieu.py --tu-kiem"
   },
   "devDependencies": {
     "@tailwindcss/browser": "^4.1.10",

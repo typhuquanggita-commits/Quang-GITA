@@ -39,3 +39,4 @@ release/
 
 # Bản xuất một-tệp để đăng Artifact — dựng lại bằng npm run build:single
 engwin365-artifact.html
+__pycache__/

@@ -1,0 +1,108 @@
+# Đóng gói và phát hành bản Windows.
+#
+# Vì sao dựng trên máy Windows thật chứ không dựng trên Linux qua wine: bản .exe
+# này là thứ học viên tải về và chạy trên máy của họ. Dựng qua lớp giả lập thì
+# vẫn ra tệp, nhưng mọi khác biệt của trình đóng gói NSIS trên nền thật đều
+# không được kiểm. Bản phát hành phải dựng đúng trên nền nó sẽ chạy.
+#
+# Kích hoạt: đẩy một thẻ dạng v* (ví dụ v1.0.0), hoặc bấm chạy tay khi tệp này
+# đã có trên nhánh mặc định.
+
+name: Phát hành bản Windows
+
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  dong-goi:
+    name: Dựng .exe và phát hành
+    runs-on: windows-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Lấy mã nguồn
+        uses: actions/checkout@v4
+
+      - name: Cài Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: Cài gói
+        run: npm ci
+
+      # Cổng chặn: không đóng gói một bản đã hỏng. Hai bài này chạy được trên
+      # Windows mà không cần trình duyệt hay Python, nên đặt đúng ở đây.
+      - name: Kiểm kiểu dữ liệu
+        run: npx tsc --noEmit
+
+      - name: Kiểm két mật khẩu
+        run: npm run test:vault
+
+      - name: Dựng bản web
+        run: npm run build
+
+      - name: Dựng bản web một tệp
+        shell: pwsh
+        run: |
+          $env:SINGLE = '1'
+          npx vite build
+          node tools/xuat-mot-tep.mjs
+
+      - name: Dựng lại bản thường cho phần đóng gói
+        run: npm run build
+
+      - name: Đóng gói .exe
+        run: npx electron-builder --win --x64 --publish never
+
+      - name: Tính mã băm SHA-256
+        shell: pwsh
+        run: |
+          $tep = Get-ChildItem release -Filter *.exe
+          if ($tep.Count -lt 2) { throw "Chỉ thấy $($tep.Count) tệp .exe, phải có 2" }
+          $dong = foreach ($t in $tep) {
+            $bam = (Get-FileHash $t.FullName -Algorithm SHA256).Hash.ToLower()
+            "$bam  $($t.Name)"
+          }
+          $dong | Set-Content -Path release/SHA256SUMS.txt -Encoding utf8
+          Get-Content release/SHA256SUMS.txt
+
+      - name: Tạo bản phát hành
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          $ver = (Get-Content package.json -Raw | ConvertFrom-Json).version
+          $the = "v$ver"
+          $bam = (Get-Content release/SHA256SUMS.txt -Raw).Trim()
+          # Ghi chú phát hành nằm ở tệp riêng, không nhúng vào YAML: chuỗi
+          # nhiều dòng của PowerShell bắt buộc đóng ở đầu dòng, mà YAML lại
+          # bắt buộc thụt lề — hai luật đó không sống chung được.
+          $mau = Get-Content .github/ghi-chu-phat-hanh.md -Raw
+          $mau = $mau.Replace('{VER}', $ver).Replace('{SHA}', $env:GITHUB_SHA).Replace('{BAM}', $bam)
+          $mau | Set-Content -Path ghi-chu-phat-hanh.md -Encoding utf8
+
+          $tep = @(
+            "release/ENGWIN365-$ver-windows-x64.exe",
+            "release/ENGWIN365-$ver-windows-portable.exe",
+            "release/SHA256SUMS.txt",
+            "engwin365-artifact.html"
+          )
+          foreach ($t in $tep) { if (-not (Test-Path $t)) { throw "Thiếu tệp $t" } }
+
+          $tieuDe = "ENGWIN365 $the - ban may tinh Windows"
+          gh release view $the 2>$null
+          if ($LASTEXITCODE -eq 0) {
+            Write-Host "Ban phat hanh $the da co - cap nhat ghi chu va ghi de tep."
+            gh release edit $the --title $tieuDe --notes-file ghi-chu-phat-hanh.md
+            gh release upload $the @tep --clobber
+          } else {
+            gh release create $the --target $env:GITHUB_SHA --title $tieuDe --notes-file ghi-chu-phat-hanh.md @tep
+          }
+          gh release view $the --json url --jq .url

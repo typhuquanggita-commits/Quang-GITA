@@ -48,6 +48,22 @@ Sửa trong hằng `MIX` ở đầu `tools/make-podcast.mjs`:
 4. **Hậu kỳ dễ nghe.** Cắt ù <70Hz · hạ 180Hz cho bớt đục · nhấc 3kHz cho rõ phụ
    âm · nén nhẹ · chuẩn hoá -16 LUFS.
 
+## Chọn nguồn giọng — tài liệu quyết định
+
+[`docs/GIONG-NOI.md`](../docs/GIONG-NOI.md) so sánh bốn nhóm phương án bằng số đo
+chứ không bằng lời quảng cáo, và khuyến nghị chia theo từng phần của sản phẩm.
+
+Chấm bất kỳ nguồn ứng viên nào trên cùng một thước:
+
+```bash
+python3 tools/do-thanh-dieu.py --tu-kiem          # kiểm chính bộ đo trước
+python3 tools/do-thanh-dieu.py --rieng --ten "Tên nguồn" 1.wav 2.wav 3.wav 4.wav 5.wav 6.wav
+```
+
+Sáu file là sáu âm tiết `ma mà mả mã má mạ` đọc rời, đúng thứ tự đó. Hai model
+tiếng Việt của Piper hiện đạt **2/6** hướng thanh đúng — ngang mức đoán mò — và
+cặp thanh gần nhau nhất chỉ cách **0,16 nửa cung**.
+
 ## Giọng Hà Nội chuẩn — giới hạn hiện tại
 
 Model tiếng Việt của Piper **không khai báo dataset**, nên không xác minh được
