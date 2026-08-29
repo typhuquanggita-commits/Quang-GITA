@@ -34,7 +34,9 @@ ma trận chính sách, hàm quyết định `can()`, hợp đồng nhật ký k
 [`../thu-vien-chuyen-mon-gita/`](../thu-vien-chuyen-mon-gita/README.md) thư viện tác nghiệp ·
 [`../nhan-dien-thuong-hieu/`](../nhan-dien-thuong-hieu/README.md) nhận diện thương hiệu ·
 [`../nhuong-quyen-leader-boom/`](../nhuong-quyen-leader-boom/README.md) **nhượng quyền** — mọi đơn vị
-nhận quyền phải áp dụng nguyên bộ phân quyền này, không được tự dựng hệ riêng (NQ-06).
+nhận quyền phải áp dụng nguyên bộ phân quyền này, không được tự dựng hệ riêng (NQ-06) ·
+[`../cong-dong-leader-boom/`](../cong-dong-leader-boom/README.md) **cộng đồng** — ranh giới dữ liệu
+giữa nền tảng riêng và mạng xã hội, xem TL 01 §1 và TL 02 của bộ đó.
 
 ---
 

@@ -1,5 +1,9 @@
 # 13 · HỆ THỐNG QUẢN LÝ THÓI QUEN 90 NGÀY
 
+> **Tầng xã hội của hệ thống này** — squad 5–8 người, cộng đồng, thử thách 21 ngày mở —
+> nằm ở [`../cong-dong-leader-boom/`](../cong-dong-leader-boom/README.md). Squad rút thời gian
+> phát hiện học viên tụt từ 3 ngày (cảnh báo Vàng §8) xuống còn 1 ngày.
+
 > Đây là nơi thay đổi thật sự xảy ra. Bảy ngày trại tạo **đột phá nhận thức**; chín mươi ngày này
 > tạo **thay đổi hành vi**. Nếu chỉ giữ được một phần của toàn bộ chương trình, hãy giữ phần này.
 

@@ -60,7 +60,7 @@ và là điều kiện bắt buộc của **cổng C2**.
 
 | Loại phí | Hình thức A · Liên kết | Hình thức B · Đơn vị | Hình thức C · Vùng | Bao gồm gì |
 |---|---|---|---|---|
-| **Phí ban đầu** | Thấp *(chủ yếu bù chi phí đào tạo)* | Trung bình | Cao | Đào tạo 10 ngày · 55 tài liệu · bộ tài sản thương hiệu · khoá thương hiệu địa phương · đồng hành khoá đầu |
+| **Phí ban đầu** | Thấp *(chủ yếu bù chi phí đào tạo)* | Trung bình | Cao | Đào tạo 10 ngày · 66 tài liệu · bộ tài sản thương hiệu · khoá thương hiệu địa phương · đồng hành khoá đầu |
 | **Phí bản quyền định kỳ** | Học viện hưởng phần lớn lợi nhuận chuyên môn | **6–8% doanh thu** | 5–7% doanh thu | Tái đào tạo hằng năm · cập nhật tài liệu · hỗ trợ chuyên môn · nền tảng số |
 | **Quỹ marketing chung** | — | **1–2% doanh thu** | 1–2% | Truyền thông thương hiệu cấp quốc gia · bộ nội dung chuẩn · báo cáo hiệu quả toàn hệ |
 | **Phí kiểm định** | Học viện chịu | Theo lượt, tính vào phí định kỳ | Theo lượt | Kiểm định viên hiện trường |
@@ -71,7 +71,7 @@ và là điều kiện bắt buộc của **cổng C2**.
 | Căn cứ | Lập luận |
 |---|---|
 | **So với lợi nhuận gộp** | 7% doanh thu ≈ **21% lợi nhuận gộp** của đơn vị — nằm trong vùng hợp lý của nhượng quyền dịch vụ |
-| **So với giá trị nhận được** | Đơn vị nhận 55 tài liệu, đào tạo, nền tảng số, thương hiệu đã có uy tín, và **giảm được rủi ro vận hành lớn nhất** |
+| **So với giá trị nhận được** | Đơn vị nhận 66 tài liệu, đào tạo, nền tảng số, thương hiệu đã có uy tín, và **giảm được rủi ro vận hành lớn nhất** |
 | **So với chi phí Học viện bỏ ra** | Kiểm định hiện trường mỗi khoá, tái đào tạo, cập nhật tài liệu, vận hành nền tảng đều là chi phí thật và định kỳ |
 | **Ngưỡng chịu đựng** | Trên 10% sẽ khiến đơn vị cắt góc ở chỗ khó thấy nhất — thường là an toàn và nhân sự chuyên trách |
 

@@ -14,9 +14,15 @@ và phần thứ tư — đồng hành khoá đầu — là phần quyết đị
 | Thư viện chuyên môn | 220 phác đồ · 18 năng lực · công cụ đánh giá · 20 biểu mẫu · thư viện hoạt động · giáo án lớp · đồng hành phụ huynh · nền tảng số · 5 gói dịch vụ · quản trị chất lượng | 11 |
 | An toàn và phân quyền | 13 vai trò · ma trận quyền · phân loại dữ liệu · kiểm soát an ninh · triển khai kỹ thuật | 6 |
 | Nhận diện thương hiệu | Nền tảng · logo · màu · chữ · ứng dụng · giọng nói · đồng thương hiệu | 8 |
-| **Tổng** | | **55 tài liệu** |
+| Cộng đồng và thử thách sau trại | Kiến trúc 3 vòng · an toàn trẻ em trên mạng · squad · thử thách 21/90 ngày · huy hiệu · đo lường · 90 mẫu bài | 11 |
+| **Tổng** | | **66 tài liệu** |
 
 Bản mềm có đóng dấu, cấp theo tài khoản định danh, **không được sao chép ra ngoài**.
+
+> **Về bộ cộng đồng:** đơn vị nhận quyền **không lập group riêng dưới tên Leader Boom** —
+> học viên của đơn vị tham gia **cộng đồng tập trung của Học viện**, cùng logic với việc dữ liệu
+> học viên nằm trên nền tảng tập trung (NQ-06, chuẩn D3, D5). Đơn vị được cử người làm quản trị
+> viên và Coach dẫn squad cho học viên của mình, sau khi qua kiểm tra lý lịch tư pháp và tập huấn.
 
 ### Phần 2 · Bộ tài sản thương hiệu
 
@@ -58,7 +64,7 @@ KÝ HĐ      ĐÀO TẠO     TUYỂN SINH   CHUẨN BỊ   KHOÁ ĐẦU  BÀN GI
 |---|---|---|
 | Ký hợp đồng và các phụ lục | Hai bên | Hợp đồng có hiệu lực |
 | Cấp tài khoản nền tảng số, phân quyền theo vai trò | Học viện | Tài khoản hoạt động |
-| Bàn giao 55 tài liệu + bộ tài sản thương hiệu | Học viện | Biên bản bàn giao |
+| Bàn giao 66 tài liệu + bộ tài sản thương hiệu | Học viện | Biên bản bàn giao |
 | Thiết kế khoá thương hiệu địa phương | Học viện | Tệp khoá riêng |
 | Đơn vị hoàn tất **hồ sơ pháp lý địa phương** theo Thông tư 04/2014/TT-BGDĐT | Đối tác | Hồ sơ nộp cơ quan quản lý |
 | Đơn vị tuyển đủ **4 vị trí chuyên trách** | Đối tác | Hợp đồng lao động, chứng chỉ |

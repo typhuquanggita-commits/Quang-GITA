@@ -37,7 +37,7 @@ Xếp theo thứ tự ưu tiên. Cột "Vì sao" giải thích rủi ro nếu b�
 | **2** | **Nhãn hiệu kết hợp** chữ + hình (bộ khoá logo đầy đủ) | Đăng ký nhãn hiệu — Nhóm 41 | Đây là dạng dùng thực tế nhiều nhất |
 | **2** | **`GITA`, `GITA 365`** | Đăng ký nhãn hiệu — Nhóm 41 (+ Nhóm 42 nếu có nền tảng số) | Thương hiệu mẹ; bảo vệ kiến trúc hai tầng |
 | **3** | **Mở rộng nhóm**: 16 (ấn phẩm, học liệu in), 25 (áo, mũ đồng phục), 35 (quảng cáo, quản trị kinh doanh), 42 (phần mềm, nền tảng) | Đăng ký nhãn hiệu | Đơn vị nhận quyền sẽ in áo, in sổ tay, chạy quảng cáo. Không đăng ký nhóm tương ứng thì bên thứ ba làm được |
-| **3** | **Toàn bộ bộ tài liệu chuyên môn** (6 bộ, giáo án, phác đồ, biểu mẫu, rubric) | Quyền tác giả — tác phẩm viết. **Nên đăng ký** để dễ chứng minh khi tranh chấp | Đây là **tài sản giá trị nhất thực sự** của hệ thống. Logo có thể vẽ lại; 220 phác đồ thì không |
+| **3** | **Toàn bộ bộ tài liệu chuyên môn** (7 bộ, giáo án, phác đồ, biểu mẫu, rubric) | Quyền tác giả — tác phẩm viết. **Nên đăng ký** để dễ chứng minh khi tranh chấp | Đây là **tài sản giá trị nhất thực sự** của hệ thống. Logo có thể vẽ lại; 220 phác đồ thì không |
 | **3** | **Tên miền** `leaderboom.vn`, `.com`, `leaderboom.edu.vn` và các biến thể gõ sai phổ biến | Đăng ký tên miền | Chi phí rất nhỏ so với chi phí mua lại từ người đầu cơ |
 | **4** | **Bí mật kinh doanh**: dữ liệu hiệu quả 90/365 ngày, quy trình chấm điểm nội bộ, danh sách khách hàng | Không đăng ký — bảo vệ bằng **NDA + phân quyền kỹ thuật** | Xem `../an-toan-va-phan-quyen/` |
 
