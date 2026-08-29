@@ -665,6 +665,7 @@ try {
     ['today', '#/today'],
     ['the lesson library', '#/lessons'],
     ['the vocabulary deck', '#/vocab'],
+    ['the guardian report', '#/guardian-report'],
     ['the topic packets', '#/topics'],
     ['the tactics treasury', '#/tactics'],
     ['the papers shelf', '#/papers'],
@@ -700,6 +701,25 @@ try {
   check(
     'the sheet documents the exam keys',
     (await page.locator('.shortcut-table kbd').allInnerTexts()).includes('F'),
+  );
+
+  /*
+   * The guardian report's whole value is that it refuses to call a change
+   * inside measurement error "progress". A regression there would be silent
+   * and would reach a family, so it is checked here rather than only in the
+   * unit tests.
+   */
+  await page.evaluate(() => { window.location.hash = '#/guardian-report'; });
+  await page.waitForTimeout(800);
+  check('the guardian report renders', (await page.locator('.doc-masthead').count()) === 1);
+  const reportText = await page.locator('.doc').innerText();
+  check(
+    'the report always states what it cannot tell you',
+    reportText.includes('KHÔNG nói được') || reportText.includes('cannot tell you'),
+  );
+  check(
+    'the report never omits the limits list',
+    (await page.locator('.report-limits li').count()) >= 2,
   );
 
   await page.evaluate(() => { window.location.hash = '#/vocab'; });

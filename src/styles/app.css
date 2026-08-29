@@ -1116,3 +1116,87 @@ mark.hl[data-note='true'] { border-bottom: 2px dotted currentColor; cursor: poin
 @media (max-width: 720px) {
   .vocab-row-head { grid-template-columns: 1fr; gap: var(--space-2); }
 }
+
+/* ================================================================== */
+/* Guardian report                                                     */
+/* ================================================================== */
+
+.report-scores,
+.report-effort {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: var(--space-4);
+}
+
+.report-score {
+  display: grid;
+  gap: var(--space-1);
+  align-content: start;
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-md);
+  background: var(--surface-2);
+}
+.report-score strong { font-size: var(--text-2xl); line-height: 1.1; }
+.report-score-label {
+  font-size: var(--text-2xs);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  font-weight: var(--weight-semibold);
+}
+
+/*
+ * The verdict line is the sentence a guardian will actually read, so it is
+ * given the weight of a pull quote. Its tone is carried by a left rule and by
+ * the words themselves, never by colour alone.
+ */
+.report-verdict {
+  padding: var(--space-4);
+  border-left: 3px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  background: var(--surface-2);
+  line-height: var(--leading-normal);
+  max-width: 76ch;
+}
+.report-verdict[data-tone='good'] { border-left-color: var(--success); background: var(--success-soft); color: var(--success); }
+.report-verdict[data-tone='bad'] { border-left-color: var(--danger); background: var(--danger-soft); color: var(--danger); }
+
+.report-heading {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-2xs);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  font-weight: var(--weight-semibold);
+}
+
+.report-movement { list-style: none; display: grid; gap: var(--space-2); }
+.report-movement li {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-4);
+  align-items: baseline;
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--border-strong);
+  background: var(--surface-2);
+}
+.report-movement li[data-tone='good'] { border-left-color: var(--success); }
+.report-movement li[data-tone='bad'] { border-left-color: var(--danger); }
+.report-movement-skill { font-weight: var(--weight-semibold); }
+.report-movement-figures { font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+.report-actions { display: grid; gap: var(--space-3); padding-left: var(--space-5); }
+.report-actions li { line-height: var(--leading-normal); max-width: 76ch; }
+
+.report-limits { list-style: none; display: grid; gap: var(--space-3); }
+.report-limits li {
+  display: flex;
+  gap: var(--space-3);
+  align-items: start;
+  line-height: var(--leading-normal);
+  max-width: 76ch;
+}
+.report-limits svg { flex: none; margin-top: 3px; color: var(--text-muted); }

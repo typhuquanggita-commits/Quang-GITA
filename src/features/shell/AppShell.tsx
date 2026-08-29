@@ -112,6 +112,9 @@ const BrandBook = lazy(() =>
 const Shortcuts = lazy(() =>
   import('../shortcuts/Shortcuts.tsx').then((m) => ({ default: m.Shortcuts })),
 );
+const GuardianReport = lazy(() =>
+  import('../report/GuardianReport.tsx').then((m) => ({ default: m.GuardianReport })),
+);
 const OrgMetrics = lazy(() =>
   import('../metrics/OrgMetrics.tsx').then((m) => ({ default: m.OrgMetrics })),
 );
@@ -261,6 +264,11 @@ function Shell(): React.ReactElement {
           icon: <IconLightning size={18} />,
         },
         { route: { name: 'plan' }, label: t('nav.plan'), icon: <IconCalendar size={18} /> },
+        {
+          route: { name: 'guardian-report' },
+          label: locale === 'vi' ? 'Phiếu báo phụ huynh' : 'Guardian report',
+          icon: <IconClipboard size={18} />,
+        },
         { route: { name: 'gita' }, label: t('nav.gita'), icon: <IconSparkle size={18} /> },
       ],
     },
@@ -528,6 +536,8 @@ function RouteView({
       return <BrandBook />;
     case 'shortcuts':
       return <Shortcuts />;
+    case 'guardian-report':
+      return <GuardianReport />;
     case 'settings':
       return <Settings />;
     default:

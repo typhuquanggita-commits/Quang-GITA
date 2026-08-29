@@ -22,6 +22,7 @@ that is a defect in this index — please fix it rather than working around it.
 | Document | Answers | For |
 | --- | --- | --- |
 | [ARCHITECTURE.md](ARCHITECTURE.md) | How is the system put together, and why this way? | Engineers |
+| [GUARDIAN-REPORT.md](GUARDIAN-REPORT.md) | What does a family get told, and what does the report refuse to claim? | Teachers, centre owners |
 | [VOCABULARY.md](VOCABULARY.md) | What does the deck teach, and why is it built around second meanings? | Teachers, content authors |
 | [ACCESSIBILITY.md](ACCESSIBILITY.md) | What accessibility standard does this meet, and how is it verified? | Engineers, compliance |
 | [SECURITY.md](SECURITY.md) | What does test integrity actually guarantee, and what must move server-side? | Engineers, programme leads |
