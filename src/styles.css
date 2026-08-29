@@ -10,6 +10,16 @@
    ──────────────────────────────────────────────────────────────────────── */
 
 @theme {
+  /* Bang mau nguyen ban cua logo GITA. Cac token ngu nghia ben duoi tro toi
+     day; dung truc tiep cac bien nay CHI khi ve lai dau hieu. */
+  --color-gita-blue-800: #123c6e;
+  --color-gita-blue-700: #16457e;
+  --color-gita-blue-600: #1c5ba8;
+  --color-gita-blue-500: #2e6fbf;
+  --color-gita-blue-400: #5b9bd8;
+  --color-gita-red-600: #c42017;
+  --color-gita-red-500: #e02b20;
+
   --color-canvas: var(--c-canvas);
   --color-canvas-2: var(--c-canvas-2);
   --color-surface: var(--c-surface);
@@ -65,10 +75,12 @@
   --c-fg-subtle: #7c8aa0;
   --c-fg-invert: #ffffff;
 
-  --c-brand: #4f46e5;
-  --c-brand-hover: #4338ca;
-  --c-brand-soft: #eef2ff;
-  --c-brand-line: #c7d2fe;
+  /* Mau thuong hieu lay tu logo GITA. Xem src/brand/tokens.ts de biet ti le
+     tuong phan cua tung ma — co bai test canh giu cac nguong do. */
+  --c-brand: #1c5ba8;
+  --c-brand-hover: #16457e;
+  --c-brand-soft: #eaf1fa;
+  --c-brand-line: #b8d2ee;
 
   --c-ok: #047857;
   --c-ok-soft: #ecfdf5;
@@ -110,10 +122,10 @@
     --c-fg-subtle: #6b7d9c;
     --c-fg-invert: #070b16;
 
-    --c-brand: #818cf8;
-    --c-brand-hover: #a5b4fc;
-    --c-brand-soft: #1b2350;
-    --c-brand-line: #3b3f8f;
+    --c-brand: #5b9bd8;
+    --c-brand-hover: #8fbde8;
+    --c-brand-soft: #10294a;
+    --c-brand-line: #24507f;
 
     --c-ok: #34d399;
     --c-ok-soft: #06281f;
@@ -152,10 +164,10 @@
   --c-fg-subtle: #6b7d9c;
   --c-fg-invert: #070b16;
 
-  --c-brand: #818cf8;
-  --c-brand-hover: #a5b4fc;
-  --c-brand-soft: #1b2350;
-  --c-brand-line: #3b3f8f;
+  --c-brand: #5b9bd8;
+  --c-brand-hover: #8fbde8;
+  --c-brand-soft: #10294a;
+  --c-brand-line: #24507f;
 
   --c-ok: #34d399;
   --c-ok-soft: #06281f;
@@ -310,12 +322,123 @@ body {
 }
 
 /* Nội dung in ra: bỏ điều hướng, giữ nội dung bài làm. */
+/* ────────────────────────────────────────────────────────────────────────
+   HỆ TÀI LIỆU IN
+
+   Phần lớn phiếu được in ở nhà hoặc ở tiệm photo, thường là đen trắng. Nên
+   mọi thứ dưới đây tuân một luật: **thông tin không bao giờ chỉ được mã hóa
+   bằng màu** — mã màu nào cũng đi kèm chữ hoặc ký hiệu.
+   ──────────────────────────────────────────────────────────────────────── */
+
+.doc {
+  --doc-accent: var(--c-brand);
+  color: var(--c-fg);
+}
+
+.doc-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--doc-accent);
+}
+
+.doc-code {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  color: var(--c-fg-muted);
+}
+
+.doc-foot {
+  margin-top: 1.5rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--c-line);
+  font-size: 0.75rem;
+  color: var(--c-fg-subtle);
+}
+
+@page {
+  size: A4;
+  margin: 16mm 14mm 18mm;
+}
+
 @media print {
   .no-print {
     display: none !important;
   }
+
+  html,
   body {
-    background: #fff;
-    color: #000;
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  /* Bản in luôn dùng bảng màu sáng, kể cả khi màn hình đang ở chế độ tối:
+     in nền tối ra giấy vừa tốn mực vừa không đọc được. */
+  :root {
+    --c-canvas: #ffffff;
+    --c-canvas-2: #ffffff;
+    --c-surface: #ffffff;
+    --c-surface-2: #f5f7fa;
+    --c-line: #c8d2df;
+    --c-line-strong: #9aa8bb;
+    --c-fg: #10161f;
+    --c-fg-muted: #3b475a;
+    --c-fg-subtle: #5a6779;
+    --c-brand: #16457e;
+    --c-brand-soft: #eef3fa;
+    --c-brand-line: #b8d2ee;
+  }
+
+  body {
+    font-size: 10.5pt;
+    line-height: 1.55;
+  }
+
+  h1 {
+    font-size: 20pt;
+    line-height: 1.25;
+  }
+  h2 {
+    font-size: 13pt;
+    line-height: 1.3;
+  }
+  h3 {
+    font-size: 11pt;
+    line-height: 1.35;
+  }
+
+  .card,
+  .doc-block {
+    border: 1px solid #c8d2df !important;
+    box-shadow: none !important;
+    break-inside: avoid;
+  }
+
+  /* Không bao giờ để một tiêu đề đứng một mình ở cuối trang. */
+  h1,
+  h2,
+  h3 {
+    break-after: avoid;
+  }
+
+  table,
+  figure,
+  blockquote,
+  li {
+    break-inside: avoid;
+  }
+
+  .doc-break {
+    break-before: page;
+  }
+
+  /* Liên kết in ra giấy thì mất đích đến — trả lại địa chỉ ở dạng chữ. */
+  .doc a[href^='http']::after {
+    content: ' (' attr(href) ')';
+    font-size: 0.85em;
+    color: #5a6779;
   }
 }

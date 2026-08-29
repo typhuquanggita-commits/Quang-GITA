@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState, type ReactNode } from 'react';
 import { APP_NAME } from '../../config';
+import { GitaMark } from '../../brand/Logo';
 import { cn } from '../../lib/cn';
 import { useHotkeys } from '../../lib/hotkeys';
 import { Link, useRoute } from '../../lib/router';
@@ -8,6 +9,7 @@ import { dueNow, streakOf } from '../../store/selectors';
 import { Badge, Button } from '../ui/primitives';
 import { CommandPalette } from './CommandPalette';
 import {
+  IconBadge,
   IconBook,
   IconChart,
   IconCompass,
@@ -54,6 +56,7 @@ export function AppShell({ children }: { children: ReactNode }) {
       { href: '/profile', label: 'Hồ sơ học viên', icon: IconProfile },
       { href: '/roadmap', label: 'Lộ trình', icon: IconRoute },
       { href: '/gita', label: 'Mô thức GITA', icon: IconSpark },
+      { href: '/brand', label: 'Nhận diện', icon: IconBadge },
       { href: '/roles', label: 'Phân quyền', icon: IconShield },
       { href: '/settings', label: 'Cài đặt', icon: IconSettings },
     ],
@@ -103,9 +106,7 @@ export function AppShell({ children }: { children: ReactNode }) {
       >
         <div className="flex h-16 items-center justify-between px-5">
           <Link to="/" className="flex items-center gap-2.5 font-semibold tracking-tight">
-            <span className="grid size-8 place-items-center rounded-lg bg-brand text-sm font-bold text-white">
-              H
-            </span>
+            <GitaMark className="h-7 w-auto shrink-0" title="GITA" />
             <span>
               {APP_NAME}
               <span className="ml-1.5 align-middle text-[10px] font-medium uppercase tracking-wider text-fg-subtle">

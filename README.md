@@ -45,7 +45,7 @@ Các lệnh khác:
 
 ```bash
 npm run verify       # typecheck + toàn bộ test + build
-npm run test         # 200 bài test
+npm run test         # 212 bài test
 npm run build        # dựng bản phát hành vào dist/
 npm run preview      # xem thử bản đã dựng
 npm run catalogue    # xuất 2000 phiếu + 2000 nhiệm vụ + 30 phiếu hướng dẫn ra catalogue/*.csv
@@ -239,7 +239,7 @@ src/
   store/                 Reducer + context, mọi thay đổi trạng thái đi qua đây
   components/            Hệ thống thiết kế, biểu đồ SVG tự vẽ, khung ứng dụng
   features/              Từng màn hình
-tests/                   200 bài test cho toàn bộ tầng lib, data và giao diện
+tests/                   212 bài test cho toàn bộ tầng lib, data và giao diện
 ```
 
 Nguyên tắc: **mọi quy tắc nghiệp vụ nằm trong `lib/` dưới dạng hàm thuần** — chấm
@@ -253,6 +253,7 @@ Chi tiết: [`docs/KIEN-TRUC.md`](docs/KIEN-TRUC.md).
 | Thư mục | Nội dung |
 |---|---|
 | [`docs/GITA/`](docs/GITA/) | 11 tài liệu về mô thức: khung, tầng hấp thu, cấp chuyên môn, ba môi trường, thói quen, quy trình vận hành, nhận diện, tiêu chuẩn chất lượng, đội nhóm |
+| [`docs/NHAN-DIEN.md`](docs/NHAN-DIEN.md) | Bộ nhận diện HSA365 · GITA: dấu hiệu, bảng màu, hệ chữ, hệ tài liệu, bản in |
 | [`docs/CHUONG-TRINH.md`](docs/CHUONG-TRINH.md) | Cách sinh 2.000 phiếu và quy tắc tiến độ |
 | [`docs/PHAN-QUYEN.md`](docs/PHAN-QUYEN.md) | Ba tầng quyết định quyền và ranh giới bảo mật |
 | [`docs/KIEN-TRUC.md`](docs/KIEN-TRUC.md) | Quyết định kỹ thuật và lý do đằng sau |
@@ -263,7 +264,7 @@ Chi tiết: [`docs/KIEN-TRUC.md`](docs/KIEN-TRUC.md).
 
 - **TypeScript nghiêm ngặt** — bật `strict`, `noUncheckedIndexedAccess`,
   `exactOptionalPropertyTypes`, `noUnusedLocals`. Không có `any` trong mã sản phẩm.
-- **200 bài test** phủ chấm điểm, chuẩn hóa đáp án, mô hình Rasch, ôn tập ngắt quãng,
+- **212 bài test** phủ chấm điểm, chuẩn hóa đáp án, mô hình Rasch, ôn tập ngắt quãng,
   di trú dữ liệu, phân quyền, tiến độ, tính toàn vẹn ngân hàng câu hỏi và khung
   chương trình, mô thức GITA và quy tắc 20/80, cộng với test giao diện đầu-cuối.
 - **Không có màn hình trắng** — `ErrorBoundary` ở gốc bắt mọi lỗi hiển thị và đưa ra

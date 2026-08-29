@@ -14,6 +14,9 @@ import { WorksheetPage } from './features/practice/WorksheetPage';
 const PlacementPage = lazy(() =>
   import('./features/placement/PlacementPage').then((m) => ({ default: m.PlacementPage })),
 );
+const BrandPage = lazy(() =>
+  import('./features/brand/BrandPage').then((m) => ({ default: m.BrandPage })),
+);
 const ExamPage = lazy(() => import('./features/exam/ExamPage').then((m) => ({ default: m.ExamPage })));
 const PracticePage = lazy(() =>
   import('./features/practice/PracticePage').then((m) => ({ default: m.PracticePage })),
@@ -80,6 +83,8 @@ function Routes({ path }: { path: string }) {
       return <SolutionsPage />;
     case '/gita':
       return <GitaPage />;
+    case '/brand':
+      return <BrandPage />;
     case '/roles':
       return <RolesPage />;
     case '/settings':
