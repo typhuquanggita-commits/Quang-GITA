@@ -22,6 +22,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "04-cong-cu" / "data"))
 from nhom_chuyen_de import NHOM, TU_DUY  # noqa: E402
 from ban_do_kien_thuc import BAN_DO  # noqa: E402
+from loai_phieu import LOAI, CHUOI_BUOI  # noqa: E402
 
 OUT_DIR = ROOT / "09-online" / "data"
 MOC_DAP_AN = "## HƯỚNG DẪN GIẢI VÀ ĐÁP ÁN"
@@ -141,14 +142,29 @@ def doc_test(path: Path) -> dict:
 def main() -> None:
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     chi_muc = json.loads((ROOT / "02-chi-muc" / "index-master.json").read_text(encoding="utf-8"))
-    gon = [{"ma": r["ma_phieu"], "t": r["tuyen"], "l": r["lop"], "n": r["so_thu_tu"],
-            "g": r["nhom_ma"], "ten": r["ten_phieu"], "hk": r["hoc_ky"],
-            "tuan": r["tuan"], "loai": r["loai"], "moc": r["moc_kiem_tra"]} for r in chi_muc]
+    gon = [{"ma": r["ma"], "t": r["tuyen"], "l": r["lop"], "cum": r["cum"],
+            "cum_ten": r["cum_ten"], "lp": r["loai"], "lp_ten": r["loai_ten"],
+            "g": r["nhom_ma"], "ten": r["ten"], "hk": r["hoc_ky"], "tuan": r["tuan"],
+            "stt": r["stt"], "moc": r["moc_kiem_tra"], "hoc": r["la_buoi_hoc"],
+            "buoi": r.get("buoi_trong_cum"),
+            "kem": r.get("kem_theo")} for r in chi_muc]
+
+    # Danh mục cụm chuyên đề tách riêng để không lặp danh sách dạng bài 13 lần
+    cum_ds, da_co = [], set()
+    for r in chi_muc:
+        khoa = (r["lop"], r["tuyen"], r["cum"])
+        if not r["cum"] or khoa in da_co:
+            continue
+        da_co.add(khoa)
+        cum_ds.append({"khoa": f"L{r['lop']}-{r['tuyen']}-C{r['cum']:02d}",
+                       "l": r["lop"], "t": r["tuyen"], "cum": r["cum"],
+                       "ten": r["cum_ten"], "g": r["nhom_ma"], "hk": r["hoc_ky"],
+                       "tuan": r["tuan"], "dang_bai": r["dang_bai"]})
 
     phieu = {}
     for p in sorted((ROOT / "03-phieu").rglob("GITA-*.md")):
         d = doc_phieu(p)
-        phieu[d["meta"]["ma_phieu"]] = d
+        phieu[d["meta"]["ma"]] = d
 
     test = {}
     for p in sorted((ROOT / "08-test-dau-vao").glob("test-dau-vao-*.md")):
@@ -171,12 +187,18 @@ def main() -> None:
     data = {
         "meta": {"ten": "Hệ thống Toán Tiểu học CLC — Học viện GITA",
                  "phien_ban": "1.0",
-                 "tong_phieu_thiet_ke": len(gon),
+                 "tong_tai_lieu": len(gon),
+                 "tong_phieu_hoc": sum(1 for r in gon if r["hoc"]),
+                 "tong_cum": sum(1 for r in gon if r["lp"] == "HD"),
                  "phieu_da_bien_soan": len(phieu)},
+        "loai": {k: {"ten": v["ten"], "giao_an": v["giao_an"], "muc_tieu": v["muc_tieu"],
+                     "cau_truc": v["cau_truc"]} for k, v in LOAI.items()},
+        "chuoi_buoi": CHUOI_BUOI,
         "nhom": {k: {"ten": v["ten"], "mo_ta": v["mo_ta"], "td": v["td"], "mau": v["mau"]}
                  for k, v in NHOM.items()},
         "tu_duy": TU_DUY,
         "chi_muc": gon,
+        "cum": cum_ds,
         "ban_do": ban_do,
         "mach": mach,
         "phieu": phieu,
@@ -187,7 +209,7 @@ def main() -> None:
     kb = out.stat().st_size / 1024
     print(f"✔ {out.relative_to(ROOT)} — {kb:.0f} KB")
     print(f"  chỉ mục: {len(gon)} phiếu · đã biên soạn: {len(phieu)} · test: {len(test)}"
-          f" · bản đồ: {len(ban_do)} · mạch kiến thức: {len(mach)}")
+          f" · bản đồ: {len(ban_do)} · mạch: {len(mach)} · cụm: {len(cum_ds)}")
     for ma, d in phieu.items():
         n_bai = sum(len(p["bai"]) for p in d["phan"])
         print(f"  · {ma}: {len(d['phan'])} phần · {n_bai} bài · {d['tong_y']} ý")

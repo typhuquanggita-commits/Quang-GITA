@@ -260,10 +260,11 @@ input[type=search]{min-width:230px}
       <div class="nav-h">Học tập</div>
       <button data-v="tong-quan">Tổng quan<span class="k">1</span></button>
       <button data-v="lo-trinh">Lộ trình của tôi<span class="k">2</span></button>
-      <button data-v="thu-vien">Thư viện 600 phiếu<span class="k">3</span></button>
+      <button data-v="thu-vien">Thư viện tài liệu<span class="k">3</span></button>
       <div class="nav-h">Kiến thức</div>
       <button data-v="ban-do">Bản đồ kiến thức<span class="k">4</span></button>
       <button data-v="chuyen-de">8 nhóm chuyên đề<span class="k">5</span></button>
+      <button data-v="cum">96 cụm chuyên đề<span class="k">8</span></button>
       <div class="nav-h">Đánh giá</div>
       <button data-v="test">Test đầu vào<span class="k">6</span></button>
       <button data-v="ho-so">Hồ sơ học viên<span class="k">7</span></button>
@@ -272,6 +273,7 @@ input[type=search]{min-width:230px}
     <div class="rail-foot">
       <button class="themebtn" id="themebtn" type="button">◐ Giao diện</button>
       <div id="syncnote">Hồ sơ lưu trên máy này</div>
+      <div>gita.edu.vn</div>
     </div>
   </aside>
 
@@ -461,8 +463,9 @@ function veTongQuan() {
   <div class="page-h">
     <div><div class="eyebrow">Học viện GITA</div>
       <h1>${h.ten ? "Chào " + esc(h.ten) : "Bảng điều khiển học tập"}</h1>
-      <p class="sub">Tư duy xuất sắc — Bản lĩnh dẫn đầu. Hệ thống ${DATA.meta.tong_phieu_thiet_ke} phiếu,
-      mỗi phiếu 90 phút, 5 phần × 5 bài, thang 100 điểm.</p></div>
+      <p class="sub">Tư duy xuất sắc — Bản lĩnh dẫn đầu. ${DATA.meta.tong_cum} cụm chuyên đề,
+      mỗi cụm dạy trọn 6 buổi <b>LT → DB → KN → NC → OT → TH</b>;
+      ${DATA.meta.tong_phieu_hoc} phiếu học 90 phút, mỗi phiếu 5 phần × 5 bài, thang 100 điểm.</p></div>
     <div class="row">
       <button class="btn btn-p" data-go="lo-trinh">Tiếp tục lộ trình</button>
       <button class="btn" data-go="thu-vien">Thư viện phiếu</button></div>
@@ -496,7 +499,9 @@ function veTongQuan() {
       <div style="margin-top:14px">
         <div class="eyebrow" style="margin-bottom:6px">Kho nội dung</div>
         <div class="row"><span class="chip">${daBienSoan} phiếu có nội dung đầy đủ</span>
-        <span class="chip">${DATA.meta.tong_phieu_thiet_ke} phiếu trong chỉ mục</span>
+        <span class="chip">${DATA.meta.tong_cum} cụm chuyên đề</span>
+        <span class="chip">${DATA.meta.tong_phieu_hoc} phiếu học trong chỉ mục</span>
+        <span class="chip">${DATA.meta.tong_tai_lieu} tài liệu toàn hệ thống</span>
         <span class="chip">${DATA.ban_do.length} bản đồ kiến thức</span>
         <span class="chip">${Object.keys(DATA.test).length} đề test đầu vào</span></div>
       </div>
@@ -520,19 +525,19 @@ function tinhLoTrinh() {
   const h = HoSo.d, mn = HoSo.mucNhom(), daLam = new Set(Object.keys(h.lam_bai || {}));
   const uuTien = Object.keys(DATA.nhom).sort((a, b) => (mn[a] ?? -1) - (mn[b] ?? -1));
   const hang = {}; uuTien.forEach((g, i) => hang[g] = i);
-  const ds = DATA.chi_muc.filter(c => c.l === h.lop && c.t === h.tuyen && !daLam.has(c.ma));
+  const ds = DATA.chi_muc.filter(c => c.l === h.lop && c.t === h.tuyen && c.hoc && !daLam.has(c.ma));
   const coND = ma => !!DATA.phieu[ma];
   const diemUu = c => {
     let s = 0;
-    if (c.loai === "DV") s -= 40;                       // phiếu định vị luôn ưu tiên
+    if (c.lp === "MOC") s -= 40;                         // phiếu mốc luôn ưu tiên
     s += (hang[c.g] ?? 8) * 10;                          // nhóm yếu lên trước
     if (coND(c.ma)) s -= 25;                             // phiếu đã có nội dung để làm ngay
-    s += Math.abs(c.n - (h.tuan - 1) * 3) * 0.4;         // gần tuần hiện tại
+    s += Math.abs((c.stt || 0) - (h.tuan - 1) * 3) * 0.4;
     return s;
   };
   return ds.map(c => ({ ...c, s: diemUu(c) })).sort((a, b) => a.s - b.s).slice(0, 12)
     .map(c => ({
-      ...c, ly_do: c.loai === "DV" ? "Mốc kiểm tra định vị — đo lại mức 9 phiếu trước"
+      ...c, ly_do: c.lp === "MOC" ? "Phiếu kiểm tra mốc — đo lại toàn bộ các cụm đã học"
         : (mn[c.g] == null ? `Nhóm ${c.g} chưa từng được đo` :
           `Nhóm ${c.g} đang ở ${mucTuPhanTram(mn[c.g])} (${mn[c.g]}%) — nhóm cần nâng nhất`)
     }));
@@ -564,12 +569,16 @@ function veLoTrinh() {
   </div>` : ""}
 
   <div class="tw"><table>
-    <thead><tr><th>#</th><th>Phiếu</th><th>Nhóm</th><th>Vì sao xếp ở đây</th><th>Trạng thái</th></tr></thead>
+    <thead><tr><th>#</th><th>Phiếu</th><th>Cụm · Buổi</th><th>Nhóm</th><th>Vì sao xếp ở đây</th><th>Trạng thái</th></tr></thead>
     <tbody>${lt.map((c, i) => `<tr>
       <td class="n">${i + 1}</td>
       <td><a href="#/phieu/${c.ma}"><span class="mono">${c.ma}</span></a>
         <div style="font-size:12.5px;margin-top:2px">${esc(c.ten)}</div>
-        <div class="muted" style="font-size:11.5px">Tuần ${c.tuan} · ${c.hk} · ${c.moc}</div></td>
+        <div class="muted" style="font-size:11.5px">Phiếu số ${c.stt} · tuần ${c.tuan} · ${c.hk} · ${c.moc}</div></td>
+      <td>${c.cum ? `<a href="#/cum/L${c.l}-${c.t}-C${String(c.cum).padStart(2, "0")}"
+        ><span class="mono">C${String(c.cum).padStart(2, "0")}</span></a>
+        <div class="muted" style="font-size:11.5px">Buổi ${c.buoi}/6 · ${esc(c.lp_ten.replace("Phiếu ", ""))}</div>`
+        : `<span class="chip">Phiếu mốc</span>`}</td>
       <td>${chipNhom(c.g)}</td>
       <td style="font-size:12.5px">${esc(c.ly_do)}</td>
       <td>${DATA.phieu[c.ma] ? '<span class="tag t-ok">Làm được ngay</span>'
@@ -585,18 +594,20 @@ function veLoTrinh() {
 }
 
 /* ============================ TRANG: THƯ VIỆN ============================ */
-const LOC = { lop: "", tuyen: "", nhom: "", hk: "", q: "", chiCoND: false };
+const LOC = { lop: "", tuyen: "", nhom: "", hk: "", lp: "", q: "", chiCoND: false };
 function veThuVien() {
   const ds = DATA.chi_muc.filter(c =>
     (!LOC.lop || c.l == LOC.lop) && (!LOC.tuyen || c.t === LOC.tuyen) &&
     (!LOC.nhom || c.g === LOC.nhom) && (!LOC.hk || c.hk === LOC.hk) &&
+    (LOC.lp ? c.lp === LOC.lp : c.hoc) &&
     (!LOC.chiCoND || DATA.phieu[c.ma]) &&
     (!LOC.q || (c.ten + " " + c.ma).toLowerCase().includes(LOC.q.toLowerCase())));
   MAIN().innerHTML = `
   <div class="page-h"><div><div class="eyebrow">Kho tài liệu</div>
-    <h1>Thư viện ${DATA.meta.tong_phieu_thiet_ke} phiếu</h1>
-    <p class="sub">Ba lớp × hai tuyến × 100 phiếu. Phiếu số 10, 20, … 100 của mỗi khối là
-    phiếu kiểm tra định vị, tổng ôn 9 phiếu liền trước.</p></div></div>
+    <h1>Thư viện ${DATA.meta.tong_tai_lieu} tài liệu</h1>
+    <p class="sub">Ba lớp × hai tuyến × 16 cụm chuyên đề. Mỗi cụm dạy trọn 6 buổi
+    <b>LT → DB → KN → NC → OT → TH</b>, kèm 6 phiếu Lời giải &amp; Phân tích chuyên sâu
+    và 1 phiếu Hướng dẫn ôn chắc. Bốn phiếu mốc nằm ở phiếu số 25, 50, 75 và 100.</p></div></div>
   <div class="filters">
     <select id="fLop"><option value="">Mọi lớp</option>${[3, 4, 5].map(l =>
     `<option value="${l}" ${LOC.lop == l ? "selected" : ""}>Lớp ${l}</option>`).join("")}</select>
@@ -608,17 +619,23 @@ function veThuVien() {
     <select id="fHk"><option value="">Cả năm</option>
       <option value="HK1" ${LOC.hk === "HK1" ? "selected" : ""}>Học kỳ I</option>
       <option value="HK2" ${LOC.hk === "HK2" ? "selected" : ""}>Học kỳ II</option></select>
-    <input type="search" id="fQ" placeholder="Tìm chuyên đề hoặc mã phiếu…" value="${esc(LOC.q)}">
+    <select id="fLp"><option value="">Chỉ phiếu học (6 buổi + mốc)</option>${Object.entries(DATA.loai).map(([k, v]) =>
+      `<option value="${k}" ${LOC.lp === k ? "selected" : ""}>${k} — ${esc(v.ten)}</option>`).join("")}
+      <option value="MOC" ${LOC.lp === "MOC" ? "selected" : ""}>MOC — Phiếu kiểm tra mốc</option></select>
+    <input type="search" id="fQ" placeholder="Tìm cụm, chuyên đề hoặc mã phiếu…" value="${esc(LOC.q)}">
     <label class="chip" style="cursor:pointer"><input type="checkbox" id="fND" ${LOC.chiCoND ? "checked" : ""}>
       Chỉ phiếu làm được ngay</label>
     <span class="muted" style="font-size:12.5px;margin-left:auto">${ds.length} phiếu</span>
   </div>
   <div class="tw"><table>
-    <thead><tr><th>Mã</th><th>Chuyên đề</th><th>Nhóm</th><th class="n">Tuần</th><th>Mốc</th><th></th></tr></thead>
+    <thead><tr><th>Mã</th><th>Tên tài liệu</th><th>Cụm</th><th>Loại</th><th>Nhóm</th><th class="n">Tuần</th><th></th></tr></thead>
     <tbody>${ds.slice(0, 300).map(c => `<tr>
       <td><span class="mono">${c.ma}</span></td>
-      <td>${esc(c.ten)}</td><td>${chipNhom(c.g)}</td>
-      <td class="n">${c.tuan}</td><td style="font-size:12px">${c.moc}</td>
+      <td>${esc(c.ten)}</td>
+      <td>${c.cum ? `<a href="#/cum/L${c.l}-${c.t}-C${String(c.cum).padStart(2, "0")}"
+        ><span class="mono">C${String(c.cum).padStart(2, "0")}</span></a>` : "—"}</td>
+      <td><span class="chip">${c.lp}</span></td><td>${chipNhom(c.g)}</td>
+      <td class="n">${c.tuan}</td>
       <td>${DATA.phieu[c.ma] ? `<a class="btn btn-g" style="padding:4px 11px;font-size:12.5px"
         href="#/phieu/${c.ma}">Làm bài</a>` : '<span class="tag t-warn">Đang biên soạn</span>'}</td></tr>`).join("")}
     </tbody></table></div>
@@ -626,7 +643,8 @@ function veThuVien() {
   const g = (id, k, num) => $(id).addEventListener("change", e => {
     LOC[k] = num ? e.target.checked : e.target.value; veThuVien();
   });
-  g("#fLop", "lop"); g("#fTuyen", "tuyen"); g("#fNhom", "nhom"); g("#fHk", "hk"); g("#fND", "chiCoND", true);
+  g("#fLop", "lop"); g("#fTuyen", "tuyen"); g("#fNhom", "nhom"); g("#fHk", "hk");
+  g("#fLp", "lp"); g("#fND", "chiCoND", true);
   $("#fQ").addEventListener("input", e => {
     LOC.q = e.target.value; const p = e.target.selectionStart; veThuVien();
     const n = $("#fQ"); n.focus(); n.setSelectionRange(p, p);
@@ -661,8 +679,9 @@ function diemPhan(p) {
   return s;
 }
 function vePhieu() {
-  const p = DATA.phieu[LB.ma], m = p.meta, ci = DATA.chi_muc.find(c => c.ma === LB.ma);
+  const p = DATA.phieu[LB.ma], m = p.meta;
   const phan = p.phan[LB.phan];
+  const khoaCum = m.cum ? `L${m.lop}-${m.tuyen}-C${String(m.cum).padStart(2, "0")}` : null;
   MAIN().innerHTML = `
   <div class="row" style="margin-bottom:12px">
     <button class="btn" data-go="thu-vien">← Thư viện</button>
@@ -672,12 +691,17 @@ function vePhieu() {
   <div class="paper">
     <div class="paper-h">
       <div class="row" style="justify-content:space-between;align-items:flex-start">
-        <div><div class="eyebrow">Học viện GITA · ${m.tuyen === "T1" ? "Tuyến 1 — Nền tảng đến Nâng cao"
+        <div><div class="eyebrow">Học viện Phát triển Tài năng Toàn cầu — GITA ·
+          ${m.tuyen === "T1" ? "Tuyến 1 — Nền tảng đến Nâng cao"
       : "Tuyến 2 — Nâng cao thi CLC & thi Chuyên"}</div>
-          <h2 style="margin-top:5px">${esc(m.ten_phieu)}</h2>
+          <h2 style="margin-top:5px">${esc(m.trong_tam || m.ten)}</h2>
+          ${khoaCum ? `<p class="sub" style="margin-top:4px">Cụm
+            <a href="#/cum/${khoaCum}"><b>C${String(m.cum).padStart(2, "0")} — ${esc(m.cum_ten)}</b></a>
+            · buổi ${m.buoi_trong_cum}/6 · <b>${esc(m.loai_ten)}</b></p>` : ""}
           <div class="row" style="margin-top:8px">
-            <span class="mono chip">${esc(m.ma_phieu)}</span>${chipNhom(m.nhom_ma)}
-            <span class="chip">Lớp ${m.lop}</span><span class="chip">Tuần ${m.tuan} · ${m.hoc_ky}</span>
+            <span class="mono chip">${esc(m.ma)}</span>${chipNhom(m.nhom_ma)}
+            <span class="chip">Lớp ${m.lop}</span>
+            <span class="chip">Phiếu số ${m.stt} · tuần ${m.tuan} · ${m.hoc_ky}</span>
             <span class="chip">90 phút · 100 điểm</span><span class="chip">${p.tong_y} ý</span></div></div>
         <div style="width:130px">${bacThang(p.phan.map(x => {
         const t = tienDoPhan(x); return t.t ? t.d / t.t * 100 : 0; }))}
@@ -750,8 +774,11 @@ function veSol(b) {
   const mach = DATA.mach.filter(x => x.lop === m.lop && x.nhom === m.nhom_ma &&
     (m.hoc_ky ? x.ky === m.hoc_ky : true));
   const machKhac = mach.length ? mach : DATA.mach.filter(x => x.lop === m.lop && x.nhom === m.nhom_ma);
+  const cungCum = DATA.chi_muc.filter(c => c.l === m.lop && c.t === m.tuyen &&
+    c.cum === m.cum && c.hoc && c.ma !== m.ma);
   const cungNhom = DATA.chi_muc.filter(c => c.l === m.lop && c.t === m.tuyen &&
-    c.g === m.nhom_ma && c.ma !== m.ma_phieu).slice(0, 5);
+    c.g === m.nhom_ma && c.hoc && c.cum !== m.cum).slice(0, 5);
+  const cumNay = DATA.cum.find(c => c.l === m.lop && c.t === m.tuyen && c.cum === m.cum);
   const nh = DATA.nhom[m.nhom_ma];
   const congThuc = [...new Set(machKhac.flatMap(x => x.phai_thuoc))];
   const loiMach = [...new Set(machKhac.flatMap(x => x.loi))];
@@ -770,13 +797,19 @@ function veSol(b) {
     <h4>Kiến thức liên quan</h4>
     <p style="font-size:13.5px;margin-bottom:8px"><b>Nhóm ${m.nhom_ma} — ${esc(nh.ten)}.</b>
       <span class="muted">${esc(nh.mo_ta)}</span></p>
+    ${cumNay ? `<p style="font-size:13px;margin-bottom:6px"><b>Dạng bài của cụm C${String(m.cum).padStart(2, "0")}:</b>
+      ${cumNay.dang_bai.map(d => esc(d)).join(" · ")}</p>` : ""}
     ${machKhac.length ? `<p style="font-size:13px;margin-bottom:4px"><b>Mạch kiến thức trong bản đồ:</b>
       ${machKhac.map(x => esc(x.ten)).join(" · ")}</p>` : ""}
     ${congThuc.length ? `<p style="font-size:13px;margin:8px 0 3px"><b>Công thức, quy tắc phải thuộc:</b></p>
       <ul>${congThuc.map(c => `<li>${esc(c)}</li>`).join("")}</ul>` : ""}
     ${loiMach.length ? `<p style="font-size:13px;margin:8px 0 3px"><b>Lỗi kinh điển của mạch này:</b></p>
       <ul>${loiMach.map(c => `<li>${esc(c)}</li>`).join("")}</ul>` : ""}
-    ${cungNhom.length ? `<p style="font-size:13px;margin:8px 0 3px"><b>Luyện thêm cùng nhóm:</b></p>
+    ${cungCum.length ? `<p style="font-size:13px;margin:8px 0 3px"><b>Các buổi khác của cụm này:</b></p>
+      <ul>${cungCum.map(c => `<li><span class="chip">${c.lp}</span>
+        <a href="#/phieu/${c.ma}"><span class="mono">${c.ma}</span></a> — ${esc(c.lp_ten)}
+        ${DATA.phieu[c.ma] ? '<span class="tag t-ok">có nội dung</span>' : ""}</li>`).join("")}</ul>` : ""}
+    ${cungNhom.length ? `<p style="font-size:13px;margin:8px 0 3px"><b>Luyện thêm cùng nhóm chuyên đề:</b></p>
       <ul>${cungNhom.map(c => `<li><a href="#/phieu/${c.ma}"><span class="mono">${c.ma}</span></a> — ${esc(c.ten)}
         ${DATA.phieu[c.ma] ? '<span class="tag t-ok">có nội dung</span>' : ""}</li>`).join("")}</ul>` : ""}
   </div>`;
@@ -867,9 +900,10 @@ async function veKetQua(chiXem) {
   }
   if (!chiXem) {
     HoSo.d.lam_bai[LB.ma] = {
-      ma: LB.ma, ten: m.ten_phieu, ngay: Date.now(), dap: LB.dap, cham: LB.cham,
+      ma: LB.ma, ten: m.trong_tam || m.ten, ngay: Date.now(), dap: LB.dap, cham: LB.cham,
       diem_phan: dsPhan.map(x => x.dat), tong, tong_y: tongY, dung_y: dungY,
-      td, v_thu: vThu, v_giao: vGiao, lop: m.lop, tuyen: m.tuyen, nhom: m.nhom_ma
+      td, v_thu: vThu, v_giao: vGiao, lop: m.lop, tuyen: m.tuyen, nhom: m.nhom_ma,
+      cum: m.cum, loai: m.loai
     };
     HoSo.d.lop = m.lop; HoSo.d.tuyen = m.tuyen;
     await HoSo.luu();
@@ -878,14 +912,15 @@ async function veKetQua(chiXem) {
   MAIN().innerHTML = `
   <div class="row" style="margin-bottom:12px">
     <button class="btn" id="quayLai">← Quay lại phiếu</button>
+    ${m.cum ? `<a class="btn" href="#/cum/L${m.lop}-${m.tuyen}-C${String(m.cum).padStart(2, "0")}">Cụm C${String(m.cum).padStart(2, "0")}</a>` : ""}
     <button class="btn" data-go="lo-trinh">Lộ trình tiếp theo</button>
     <button class="btn" data-go="tong-quan">Tổng quan</button>
   </div>
   <div class="card pad" style="margin-bottom:16px">
     <div class="row" style="justify-content:space-between;align-items:flex-start">
       <div><div class="eyebrow">Kết quả phiếu</div>
-        <h1 style="font-size:24px;margin-top:4px">${esc(m.ten_phieu)}</h1>
-        <div class="row" style="margin-top:8px"><span class="mono chip">${esc(m.ma_phieu)}</span>
+        <h1 style="font-size:24px;margin-top:4px">${esc(m.trong_tam || m.ten)}</h1>
+        <div class="row" style="margin-top:8px"><span class="mono chip">${esc(m.ma)}</span>
           ${chipNhom(m.nhom_ma)}<span class="chip">${dungY}/${tongY} ý đúng</span></div></div>
       <div style="text-align:right">
         <div style="font-size:44px;font-weight:800;line-height:1" class="num">${tong}<small
@@ -968,21 +1003,23 @@ function veBanDo(ma) {
 function veChuyenDe() {
   MAIN().innerHTML = `
   <div class="page-h"><div><div class="eyebrow">Khung chương trình</div><h1>Tám nhóm chuyên đề gốc</h1>
-    <p class="sub">Dùng chung cho cả ba lớp và cả hai tuyến. Mọi phiếu, mọi bài, mọi mức năng lực
-    đều quy về tám nhóm này — đó là tám trục của hồ sơ tài năng.</p></div></div>
+    <p class="sub">Dùng chung cho cả ba lớp và cả hai tuyến. Mỗi nhóm được chia thành các
+    <b>cụm chuyên đề</b>; mỗi cụm dạy trọn 6 buổi. Mọi phiếu, mọi bài, mọi mức năng lực
+    đều quy về tám nhóm này — đó là tám trục của hồ sơ tài năng.</p></div>
+    <div class="row"><button class="btn" data-go="cum">Xem 96 cụm chuyên đề</button></div></div>
   <div class="grid g2">${Object.entries(DATA.nhom).map(([k, n]) => {
     const dem = {};
     for (const l of [3, 4, 5]) for (const t of ["T1", "T2"])
-      dem[l + t] = DATA.chi_muc.filter(c => c.l === l && c.t === t && c.g === k).length;
+      dem[l + t] = DATA.cum.filter(c => c.l === l && c.t === t && c.g === k).length;
     const tong = Object.values(dem).reduce((a, b) => a + b, 0);
     return `<div class="card pad" style="border-top:3px solid ${n.mau}">
       <div class="row" style="justify-content:space-between">
         <h3 style="font-size:16px"><span class="mono" style="color:${n.mau}">${k}</span> — ${esc(n.ten)}</h3>
-        <span class="chip num">${tong} phiếu</span></div>
+        <span class="chip num">${tong} cụm · ${tong * 6} phiếu</span></div>
       <p class="sub" style="margin:8px 0 12px">${esc(n.mo_ta)}</p>
       <div class="row" style="margin-bottom:12px">${n.td.map(t =>
         `<span class="chip">${t} · ${esc(DATA.tu_duy[t])}</span>`).join("")}</div>
-      <div class="tw"><table><thead><tr><th></th><th class="n">Lớp 3</th><th class="n">Lớp 4</th><th class="n">Lớp 5</th></tr></thead>
+      <div class="tw"><table><thead><tr><th>Số cụm</th><th class="n">Lớp 3</th><th class="n">Lớp 4</th><th class="n">Lớp 5</th></tr></thead>
         <tbody><tr><td>Tuyến 1</td>${[3, 4, 5].map(l => `<td class="n">${dem[l + "T1"]}</td>`).join("")}</tr>
         <tr><td>Tuyến 2</td>${[3, 4, 5].map(l => `<td class="n">${dem[l + "T2"]}</td>`).join("")}</tr></tbody></table></div>
       <div style="margin-top:12px"><button class="btn" data-nhom="${k}">Xem phiếu nhóm ${k}</button></div>
@@ -990,6 +1027,80 @@ function veChuyenDe() {
   $$("[data-nhom]").forEach(b => b.addEventListener("click", () => {
     LOC.nhom = b.dataset.nhom; location.hash = "#/thu-vien";
   }));
+}
+
+/* ============================ TRANG: CỤM CHUYÊN ĐỀ ============================ */
+let LOC_CUM = { lop: 4, tuyen: "T1" };
+function veDanhSachCum() {
+  const ds = DATA.cum.filter(c => c.l === LOC_CUM.lop && c.t === LOC_CUM.tuyen)
+    .sort((a, b) => a.cum - b.cum);
+  MAIN().innerHTML = `
+  <div class="page-h"><div><div class="eyebrow">Đơn vị biên soạn</div><h1>96 cụm chuyên đề</h1>
+    <p class="sub">Mỗi khối có 16 cụm. Một cụm là một chương, dạy trọn trong 6 buổi 90 phút
+    theo chuỗi bất biến <b>LT → DB → KN → NC → OT → TH</b>, kèm phiếu Hướng dẫn ôn chắc.</p></div>
+    <div class="row">
+      <select id="cLop">${[3, 4, 5].map(l => `<option value="${l}" ${LOC_CUM.lop === l ? "selected" : ""}>Lớp ${l}</option>`).join("")}</select>
+      <select id="cTuyen"><option value="T1" ${LOC_CUM.tuyen === "T1" ? "selected" : ""}>Tuyến 1</option>
+        <option value="T2" ${LOC_CUM.tuyen === "T2" ? "selected" : ""}>Tuyến 2</option></select></div>
+  </div>
+  <div class="grid g2">${ds.map(c => `<a class="card pad" href="#/cum/${c.khoa}"
+      style="text-decoration:none;color:inherit;display:block;border-left:4px solid ${DATA.nhom[c.g].mau}">
+      <div class="row" style="justify-content:space-between">
+        <span class="mono" style="font-weight:600">C${String(c.cum).padStart(2, "0")}</span>
+        <span class="chip">${c.hk} · tuần ${c.tuan}</span></div>
+      <h4 style="font-size:15px;margin:7px 0 8px">${esc(c.ten)}</h4>
+      <div class="row">${chipNhom(c.g)}<span class="chip">${c.dang_bai.length} dạng bài</span></div>
+    </a>`).join("")}</div>`;
+  $("#cLop").addEventListener("change", e => { LOC_CUM.lop = +e.target.value; veDanhSachCum(); });
+  $("#cTuyen").addEventListener("change", e => { LOC_CUM.tuyen = e.target.value; veDanhSachCum(); });
+}
+function veCum(khoa) {
+  const c = DATA.cum.find(x => x.khoa === khoa);
+  if (!c) return veDanhSachCum();
+  const phieu = DATA.chi_muc.filter(r => r.l === c.l && r.t === c.t && r.cum === c.cum);
+  const hoc = phieu.filter(r => r.hoc).sort((a, b) => a.stt - b.stt);
+  const hd = phieu.find(r => r.lp === "HD");
+  const mach = DATA.mach.filter(x => x.lop === c.l && x.nhom === c.g);
+  MAIN().innerHTML = `
+  <div class="row" style="margin-bottom:12px"><button class="btn" data-go="cum">← Tất cả cụm</button>
+    <button class="btn" data-go="thu-vien">Thư viện</button></div>
+  <div class="card pad" style="border-top:4px solid ${DATA.nhom[c.g].mau};margin-bottom:16px">
+    <div class="eyebrow">Cụm chuyên đề · Lớp ${c.l} · ${c.t === "T1" ? "Tuyến 1" : "Tuyến 2"}</div>
+    <h1 style="font-size:24px;margin:6px 0 8px"><span class="mono">C${String(c.cum).padStart(2, "0")}</span>
+      — ${esc(c.ten)}</h1>
+    <div class="row">${chipNhom(c.g)}<span class="chip">${c.dang_bai.length} dạng bài</span>
+      <span class="chip">6 buổi × 90 phút</span><span class="chip">${c.hk} · tuần ${c.tuan}</span></div>
+  </div>
+
+  <div class="grid g2">
+    <div class="card pad"><h3 style="font-size:15px;margin-bottom:10px">Sáu buổi của cụm</h3>
+      <div class="tw"><table><thead><tr><th>Buổi</th><th>Phiếu</th><th>Loại</th><th></th></tr></thead>
+      <tbody>${hoc.map(r => `<tr><td class="n">${r.buoi || "—"}</td>
+        <td><span class="mono">${r.ma}</span>
+          <div class="muted" style="font-size:11.5px">phiếu số ${r.stt} · tuần ${r.tuan}</div></td>
+        <td>${esc(r.lp_ten)}<div class="muted" style="font-size:11.5px">Lời giải: <span class="mono">${r.ma}-GP</span></div></td>
+        <td>${DATA.phieu[r.ma] ? `<a class="btn btn-g" style="padding:4px 10px;font-size:12.5px"
+          href="#/phieu/${r.ma}">Làm bài</a>` : '<span class="tag t-warn">Đang biên soạn</span>'}</td></tr>`).join("")}
+      </tbody></table></div>
+      ${hd ? `<p class="sub" style="margin-top:10px">Phiếu hướng dẫn ôn chắc chuyên đề:
+        <span class="mono">${hd.ma}</span></p>` : ""}
+    </div>
+    <div class="card pad"><h3 style="font-size:15px;margin-bottom:10px">Danh sách dạng bài</h3>
+      <ol style="padding-left:20px;font-size:13.5px;line-height:1.7">${c.dang_bai.map(d =>
+      `<li>${esc(d)}</li>`).join("")}</ol>
+      ${mach.length ? `<div style="margin-top:14px"><div class="eyebrow" style="margin-bottom:6px">Mạch kiến thức liên quan</div>
+        <ul style="padding-left:18px;font-size:13px;line-height:1.6">${mach.map(x =>
+        `<li>${esc(x.ten)} <span class="muted">(${x.ky})</span></li>`).join("")}</ul></div>` : ""}
+    </div>
+  </div>
+
+  <div class="card pad" style="margin-top:16px">
+    <div class="eyebrow">Điều kiện đóng cụm</div>
+    <p style="margin-top:6px;font-size:14.5px">Đạt <b>≥ 80/100</b> ở phiếu <span class="mono">TH</span>
+    của cụm <b>và</b> <b>≥ 90%</b> checklist trong phiếu <span class="mono">HD</span>.
+    Chưa đạt thì làm lại phiếu <span class="mono">NC</span> và bài tương tự trong phiếu
+    <span class="mono">GP</span> — không mở cụm mới.</p>
+  </div>`;
 }
 
 /* ============================ TRANG: TEST ĐẦU VÀO ============================ */
@@ -1169,7 +1280,8 @@ function veHoSo() {
 /* ============================== ĐIỀU HƯỚNG ============================== */
 const TRANG = {
   "tong-quan": veTongQuan, "lo-trinh": veLoTrinh, "thu-vien": veThuVien,
-  "ban-do": veBanDo, "chuyen-de": veChuyenDe, "test": veTest, "ho-so": veHoSo
+  "ban-do": veBanDo, "chuyen-de": veChuyenDe, "cum": veDanhSachCum,
+  "test": veTest, "ho-so": veHoSo
 };
 function dinhTuyen() {
   clearInterval(DONG_HO);
@@ -1177,6 +1289,7 @@ function dinhTuyen() {
   const [v, a] = h.split("/");
   $$("#nav button").forEach(b => b.setAttribute("aria-current", b.dataset.v === v));
   if (v === "phieu" && a) { moPhieu(decodeURIComponent(a)); }
+  else if (v === "cum" && a) { veCum(decodeURIComponent(a)); }
   else if (v === "ban-do") { veBanDo(a); }
   else (TRANG[v] || veTongQuan)();
   MAIN().focus({ preventScroll: true });
@@ -1205,7 +1318,8 @@ $("#themebtn").addEventListener("click", () => {
 });
 document.addEventListener("keydown", e => {
   if (e.target.matches("input,select,textarea")) return;
-  const map = { 1: "tong-quan", 2: "lo-trinh", 3: "thu-vien", 4: "ban-do", 5: "chuyen-de", 6: "test", 7: "ho-so" };
+  const map = { 1: "tong-quan", 2: "lo-trinh", 3: "thu-vien", 4: "ban-do", 5: "chuyen-de",
+    6: "test", 7: "ho-so", 8: "cum" };
   if (map[e.key]) location.hash = "#/" + map[e.key];
 });
 
