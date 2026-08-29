@@ -91,6 +91,21 @@ def chon(rng: random.Random, ds):
     return rng.choice(ds)
 
 
+def luan_phien(rng: random.Random, ds, n: int) -> list:
+    """Lấy n phần tử từ ds sao cho các loại được dùng luân phiên, đều tay.
+
+    Dùng thay cho việc gọi `rng.choice` n lần trong một vòng lặp: cách đó hay
+    cho ra một bài gồm bốn năm ý giống hệt nhau về kiểu, làm phiếu nghèo nàn.
+    """
+    ra, kho = [], []
+    while len(ra) < n:
+        if not kho:
+            kho = list(ds)
+            rng.shuffle(kho)
+        ra.append(kho.pop())
+    return ra
+
+
 def hai_ten(rng: random.Random) -> tuple[str, str]:
     a, b = rng.sample(TEN, 2)
     return a, b
