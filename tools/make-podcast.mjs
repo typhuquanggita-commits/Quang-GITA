@@ -74,7 +74,7 @@ const secs = (n) => `${Math.floor(n / 60)}:${String(Math.round(n % 60)).padStart
  */
 const VOICES = {
   DẪN: {
-    piper: {model: 'vi-25hours-single-low', length: 1.0, pitchShift: 1.0},
+    piper: {model: 'vi-25hours-single-low', length: 1.02, pitchShift: 1.0},
     espeak: {voice: 'vi+f3', speed: 148, pitch: 58},
     google: {name: 'vi-VN-Neural2-A', lang: 'vi-VN', rate: 0.96, pitch: 1.0},
     gemini: 'Kore',
@@ -87,14 +87,56 @@ const VOICES = {
     google: {name: 'vi-VN-Neural2-D', lang: 'vi-VN', rate: 0.9, pitch: -2.0},
     gemini: 'Charon',
   },
+  // Giọng Mỹ mặc định cho câu mẫu. Đọc chậm hơn nhịp thường 8% vì học viên
+  // shadowing theo — nhanh quá thì không bám kịp.
   ANH: {
-    // Giọng Mỹ chất lượng cao. Đây là giọng học viên sẽ shadowing theo, nên
-    // không bao giờ được thay bằng giọng tổng hợp kém tự nhiên.
-    piper: {model: 'en-us-ryan-high', length: 1.04, pitchShift: 1.0},
-    espeak: {voice: 'en-gb', speed: 142, pitch: 45},
-    google: {name: 'en-GB-Neural2-B', lang: 'en-GB', rate: 0.92, pitch: 0.0},
+    piper: {model: 'en-us-ryan-high', length: 1.08, pitchShift: 1.0},
+    espeak: {voice: 'en-us', speed: 138, pitch: 45},
+    google: {name: 'en-US-Neural2-D', lang: 'en-US', rate: 0.9, pitch: 0.0},
     gemini: 'Puck',
   },
+  // Giọng Mỹ nữ — dùng khi cần hai người đối thoại bằng tiếng Anh.
+  'ANH-NỮ': {
+    piper: {model: 'en-us-libritts-high', speaker: 92, length: 1.08, pitchShift: 1.0},
+    espeak: {voice: 'en-us+f3', speed: 138, pitch: 55},
+    google: {name: 'en-US-Neural2-F', lang: 'en-US', rate: 0.9, pitch: 0.0},
+    gemini: 'Aoede',
+  },
+  // Giọng Anh-Anh. IELTS dùng cả hai giọng nên học viên phải quen cả hai.
+  'ANH-ANH': {
+    piper: {model: 'en-gb-southern_english_female-low', length: 1.06, pitchShift: 1.0},
+    espeak: {voice: 'en-gb-x-rp', speed: 138, pitch: 50},
+    google: {name: 'en-GB-Neural2-A', lang: 'en-GB', rate: 0.9, pitch: 0.0},
+    gemini: 'Kore',
+  },
+  'ANH-ANH-NAM': {
+    piper: {model: 'en-gb-alan-low', length: 1.06, pitchShift: 1.0},
+    espeak: {voice: 'en-gb', speed: 138, pitch: 42},
+    google: {name: 'en-GB-Neural2-B', lang: 'en-GB', rate: 0.9, pitch: 0.0},
+    gemini: 'Charon',
+  },
+};
+
+/* --------------------------- tinh chỉnh nghe -----------------------------
+ * Ba con số quyết định độ "liền mạch" của bản dựng. Sửa ở đây rồi dựng lại là
+ * nghe khác ngay, không phải sửa kịch bản.
+ * ------------------------------------------------------------------------ */
+const MIX = {
+  /* Kịch bản ghi khoảng nghỉ theo nhịp đọc của espeak (nhanh). Piper đọc chậm
+   * và tự nhiên hơn nên giữ nguyên con số cũ sẽ thành lê thê. Nhân hệ số này. */
+  pauseScale: TTS === 'piper' ? 0.68 : 1.0,
+  /* Khoảng nghỉ tối thiểu và tối đa, tính bằng giây — chặn hai đầu cực đoan. */
+  pauseMin: 0.22,
+  pauseMax: 2.2,
+  /* Khoảng lặng trong phòng thu không bao giờ là im lặng tuyệt đối. Nền nhiễu
+   * cực nhỏ này không nghe thấy được nhưng xoá đi cảm giác "chết máy" giữa các
+   * câu — đây là khác biệt lớn nhất giữa bản nghe như máy đọc và bản nghe như
+   * podcast thật. */
+  roomTone: -68,
+  /* Vuốt đầu và cuối mỗi mảnh để không có tiếng tạch khi ghép. */
+  fade: 0.014,
+  /* Ngưỡng cắt khoảng lặng thừa mà piper tự chèn vào đầu và cuối mỗi câu. */
+  trimThreshold: '-50dB',
 };
 
 /* ------------------------------ backend TTS ------------------------------ */
@@ -114,8 +156,11 @@ function piperJob(line, out, dir) {
       text: line.t,
       out: join(dir, `${out}-piper.wav`),
       length: v.length,
-      noise: 0.6,
-      noise_w: 0.75,
+      // noise thấp hơn mặc định cho giọng đều và ít rung — dễ nghe hơn khi
+      // nghe liên tục hai mươi phút.
+      noise: 0.55,
+      noise_w: 0.7,
+      speaker: v.speaker ?? 0,
     },
     pitchShift: v.pitchShift ?? 1.0,
   };
@@ -242,21 +287,44 @@ const BACKENDS = {espeak: ttsEspeak, google: ttsGoogle, gemini: ttsGemini};
 
 /* ------------------------------- dựng tập -------------------------------- */
 
+/**
+ * Khoảng nghỉ giữa các câu. Dùng nền nhiễu nâu cực nhỏ thay cho im lặng tuyệt
+ * đối: tai người nghe ra ngay sự khác biệt giữa "phòng thu yên tĩnh" và "âm
+ * thanh bị tắt", và chính chỗ đó tạo cảm giác đứt quãng.
+ */
 function silence(seconds, out) {
   sh('ffmpeg', [
     '-y', '-loglevel', 'error',
     '-f', 'lavfi',
-    '-i', `anullsrc=r=${RATE}:cl=mono`,
+    '-i', `anoisesrc=color=brown:sample_rate=${RATE}:amplitude=1`,
     '-t', String(seconds),
+    '-af', `volume=${MIX.roomTone}dB`,
+    '-ac', '1',
     out,
   ]);
 }
 
-/** Chuẩn hoá mọi mảnh về cùng tần số lấy mẫu và số kênh trước khi ghép. */
+/**
+ * Chuẩn hoá một mảnh giọng trước khi ghép.
+ *
+ * Bốn việc, theo đúng thứ tự:
+ *   1. Cắt khoảng lặng thừa ở đầu và cuối — piper tự chèn khoảng 76ms mỗi câu,
+ *      cộng với khoảng nghỉ trong kịch bản thành nghỉ đúp, nghe rời rạc.
+ *   2. Vuốt 14ms hai đầu để chỗ ghép không có tiếng tạch.
+ *   3. Cắt tần số dưới 75Hz — không có gì hữu ích ở đó, chỉ có ù nền.
+ *   4. Đưa về cùng tần số lấy mẫu và một kênh.
+ *
+ * Mẹo areverse: ffmpeg chỉ vuốt được từ đầu file nếu không biết độ dài. Lật
+ * ngược, vuốt đầu, lật lại — thành ra vuốt được cuối mà không cần đo độ dài.
+ */
 function normalise(inFile, outFile) {
+  const trim = `silenceremove=start_periods=1:start_threshold=${MIX.trimThreshold}:start_silence=0.02:detection=peak`;
+  const fade = `afade=t=in:st=0:d=${MIX.fade}`;
   sh('ffmpeg', [
     '-y', '-loglevel', 'error',
     '-i', inFile,
+    '-af',
+    [trim, 'areverse', trim, fade, 'areverse', fade, 'highpass=f=75'].join(','),
     '-ar', String(RATE), '-ac', '1',
     outFile,
   ]);
@@ -318,7 +386,14 @@ async function buildEpisode(ep, series, format) {
       parts.push(norm);
     }
 
-    const pause = line.p ?? 0.4;
+    // Khoảng lặng ở dòng LẶNG là chủ đích của kịch bản — học viên cần đúng
+    // mười lăm tới hai mươi giây để tự trả lời. Không co, không chặn trần.
+    // Chỉ khoảng nghỉ giữa các câu nói mới bị căn lại theo nhịp đọc.
+    const raw = line.p ?? 0.4;
+    const pause =
+      line.s === 'LẶNG'
+        ? raw
+        : Math.min(MIX.pauseMax, Math.max(MIX.pauseMin, raw * MIX.pauseScale));
     if (pause > 0) {
       const sil = join(dir, `${n}-sil.wav`);
       silence(pause, sil);
@@ -337,7 +412,17 @@ async function buildEpisode(ep, series, format) {
   sh('ffmpeg', [
     '-y', '-loglevel', 'error',
     '-i', merged,
-    '-af', 'loudnorm=I=-16:TP=-1.5:LRA=11',
+    // Cắt ù dưới 70Hz · nhấc nhẹ dải hiện diện 2–4kHz cho rõ phụ âm · nén nhẹ
+    // để chênh lệch to nhỏ giữa các câu không làm người nghe phải chỉnh loa ·
+    // chuẩn hoá về -16 LUFS theo chuẩn podcast.
+    '-af',
+    [
+      'highpass=f=70',
+      'equalizer=f=3000:t=q:w=1.1:g=2.2',
+      'equalizer=f=180:t=q:w=1.0:g=-1.4',
+      'acompressor=threshold=-20dB:ratio=2.4:attack=8:release=180:makeup=1.5',
+      'loudnorm=I=-16:TP=-1.5:LRA=9',
+    ].join(','),
     '-codec:a', 'libmp3lame', '-b:a', '128k', '-ar', '44100',
     '-metadata', `title=${ep.no}. ${ep.title}`,
     '-metadata', `artist=${series.name}`,

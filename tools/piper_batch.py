@@ -29,9 +29,10 @@ def main() -> int:
         voice = cache[path]
 
         cfg = SynthesisConfig(
+            speaker_id=job.get("speaker", 0),
             length_scale=job.get("length", 1.0),
-            noise_scale=job.get("noise", 0.6),
-            noise_w_scale=job.get("noise_w", 0.75),
+            noise_scale=job.get("noise", 0.55),
+            noise_w_scale=job.get("noise_w", 0.7),
             normalize_audio=True,
         )
 

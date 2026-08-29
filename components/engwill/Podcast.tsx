@@ -9,6 +9,8 @@ import {
   PODCAST_EPISODES,
   estimateSeconds,
   PRODUCTION_PIPELINE,
+  VOICE_ROLES,
+  MIX_NOTES,
 } from '../../data';
 import {Card, Chip, Field, SectionHeader, Filters, Accordion} from './ui';
 
@@ -101,6 +103,47 @@ export const Podcast: React.FC = () => {
           </p>
         </Field>
       </Card>
+
+      {/* Giọng */}
+      <h3 className="mb-3 text-sm font-semibold uppercase tracking-wider text-slate-400">
+        Sáu vai giọng
+      </h3>
+      <div className="mb-6 grid gap-2.5 md:grid-cols-2 lg:grid-cols-3">
+        {VOICE_ROLES.map((v) => (
+          <Card key={v.role}>
+            <div className="mb-1.5 flex flex-wrap items-center gap-2">
+              <span
+                className={`text-xs font-bold uppercase tracking-wider ${SPEAKER_STYLE[v.role] ?? (v.role.startsWith('ANH') ? 'text-emerald-300' : 'text-slate-300')}`}>
+                {v.role}
+              </span>
+              <Chip tone="slate">{v.lang}</Chip>
+            </div>
+            <p className="text-xs leading-relaxed text-slate-400">{v.desc}</p>
+          </Card>
+        ))}
+      </div>
+
+      {/* Chuỗi xử lý */}
+      <h3 className="mb-3 text-sm font-semibold uppercase tracking-wider text-slate-400">
+        Bốn việc làm cho bản dựng liền mạch và dễ nghe
+      </h3>
+      <div className="mb-10 grid gap-2.5 md:grid-cols-2">
+        {MIX_NOTES.map((m, i) => (
+          <Card key={m.name} className="border-l-2 border-l-emerald-500/50">
+            <div className="flex gap-3">
+              <span className="text-sm font-bold text-emerald-400">
+                {String(i + 1).padStart(2, '0')}
+              </span>
+              <div className="min-w-0">
+                <p className="text-sm font-semibold text-slate-100">{m.name}</p>
+                <p className="mt-1 text-xs leading-relaxed text-slate-400">
+                  {m.what}
+                </p>
+              </div>
+            </div>
+          </Card>
+        ))}
+      </div>
 
       {/* Định dạng */}
       <h3 className="mb-3 text-sm font-semibold uppercase tracking-wider text-slate-400">

@@ -72,10 +72,14 @@ bash tools/fetch-voices.sh                 # model giọng, ~235 MB, tải một
 node tools/make-podcast.mjs --rss          # → 6 file MP3 + feed.xml, ~2 phút
 ```
 
-Mặc định dùng **Piper** — TTS neural chạy ngoại tuyến, miễn phí. Giọng Mỹ
-`en-us-ryan-high` cho mọi câu mẫu tiếng Anh (đây là giọng học viên shadowing theo,
-nên không dùng giọng tổng hợp kém tự nhiên); giọng Việt cho phần dẫn, tách thành
-hai vai bằng cách hạ cao độ 9% cho vai cố vấn.
+Mặc định dùng **Piper** — TTS neural chạy ngoại tuyến, miễn phí. **Sáu vai giọng**:
+Anh–Mỹ nam/nữ, Anh–Anh nam/nữ (IELTS dùng cả hai giọng nên học viên phải quen cả
+hai), và hai vai tiếng Việt tách nhau bằng cao độ.
+
+Chuỗi hậu kỳ làm bản dựng liền mạch: cắt lặng thừa piper tự chèn (nguyên nhân
+chính gây rời rạc), căn lại nhịp nghỉ theo tốc độ đọc thật, nền phòng -68dB thay
+im lặng tuyệt đối, EQ và nén nhẹ trước khi chuẩn hoá -16 LUFS. Khoảng lặng 15–20
+giây trong bài lập trình tư duy được giữ nguyên vì đó là chủ đích.
 
 Ba backend khác cắm được: `google` (Cloud TTS Neural2), `gemini` (Gemini TTS),
 `espeak` (formant — chỉ dùng khi không tải được model piper). Output đã chuẩn hoá

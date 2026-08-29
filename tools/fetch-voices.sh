@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Tải model giọng cho Piper — chạy một lần, khoảng 260 MB.
+# Tải model giọng cho Piper — chạy một lần, khoảng 510 MB.
 #
 #   bash tools/fetch-voices.sh
 #
@@ -12,9 +12,12 @@ BASE="https://github.com/rhasspy/piper/releases/download/v0.0.2"
 # Giọng dùng trong ENGWILL RADIO. Thêm bớt ở đây rồi sửa hằng VOICES
 # trong tools/make-podcast.mjs cho khớp.
 VOICES=(
-  "voice-en-us-ryan-high"        # Mỹ, nam, chất lượng cao — mọi câu mẫu tiếng Anh
-  "voice-vi-25hours-single-low"  # Việt — người dẫn và cố vấn
-  "voice-en-us-lessac-medium"    # Mỹ, nữ — dự phòng, đổi giọng cho đa dạng
+  "voice-en-us-ryan-high"                    # Mỹ nam, chất lượng cao — vai ANH
+  "voice-en-us-libritts-high"                # Mỹ, 904 giọng — vai ANH-NỮ
+  "voice-en-gb-southern_english_female-low"  # Anh-Anh nữ — vai ANH-ANH
+  "voice-en-gb-alan-low"                     # Anh-Anh nam — vai ANH-ANH-NAM
+  "voice-vi-25hours-single-low"              # Việt, một giọng — vai DẪN và CỐ VẤN
+  "voice-vi-vivos-x-low"                     # Việt, 65 giọng — để chọn giọng vùng miền
 )
 
 mkdir -p "$DIR"

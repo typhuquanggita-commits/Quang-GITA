@@ -63,6 +63,36 @@ export function estimateSeconds(ep: PodcastEpisode): number {
   return words / 2.2 + pauses;
 }
 
+/** Sáu vai giọng. Kịch bản gọi theo tên vai, công cụ tra sang model tương ứng. */
+export const VOICE_ROLES = [
+  {role: 'DẪN', lang: 'Tiếng Việt', desc: 'Người dẫn — nhịp bình thường, vai người bạn đồng hành.'},
+  {role: 'CỐ VẤN', lang: 'Tiếng Việt', desc: 'Cố vấn — chậm hơn 13%, hạ cao độ 9%, vai người đi trước.'},
+  {role: 'ANH', lang: 'Anh–Mỹ nam', desc: 'Giọng mẫu mặc định. Đọc chậm hơn nhịp thường 8% để học viên bám kịp khi shadowing.'},
+  {role: 'ANH-NỮ', lang: 'Anh–Mỹ nữ', desc: 'Dùng khi cần hai người đối thoại bằng tiếng Anh.'},
+  {role: 'ANH-ANH', lang: 'Anh–Anh nữ', desc: 'Giọng Anh chuẩn. IELTS dùng cả hai giọng nên học viên phải quen cả hai.'},
+  {role: 'ANH-ANH-NAM', lang: 'Anh–Anh nam', desc: 'Giọng Anh nam, dùng xen kẽ cho đa dạng.'},
+];
+
+/** Bốn thông số quyết định độ liền mạch — sửa trong MIX ở tools/make-podcast.mjs. */
+export const MIX_NOTES = [
+  {
+    name: 'Cắt lặng thừa',
+    what: 'Piper tự chèn khoảng 76ms lặng ở đầu và cuối mỗi câu. Cộng với khoảng nghỉ trong kịch bản thành nghỉ đúp — đây là nguyên nhân chính gây cảm giác rời rạc. Chuỗi mới cắt sạch rồi mới chèn đúng khoảng nghỉ đã định.',
+  },
+  {
+    name: 'Căn lại nhịp nghỉ',
+    what: 'Khoảng nghỉ trong kịch bản vốn chỉnh theo espeak đọc nhanh. Piper đọc chậm và tự nhiên hơn nên giữ nguyên sẽ thành lê thê. Nhân hệ số 0,68 và chặn trong khoảng 0,22 đến 2,2 giây. Riêng dòng LẶNG giữ nguyên vì đó là chủ đích của bài tư duy.',
+  },
+  {
+    name: 'Nền phòng thay im lặng tuyệt đối',
+    what: 'Phòng thu thật không bao giờ im lặng hoàn toàn. Nền nhiễu nâu ở -68dB không nghe thấy được nhưng xoá đi cảm giác "chết máy" giữa các câu.',
+  },
+  {
+    name: 'Hậu kỳ dễ nghe',
+    what: 'Cắt ù dưới 70Hz, hạ 180Hz cho bớt đục, nhấc 3kHz cho rõ phụ âm, nén nhẹ để không phải chỉnh loa giữa chừng, rồi chuẩn hoá -16 LUFS theo chuẩn podcast.',
+  },
+];
+
 export const PRODUCTION_PIPELINE = {
   title: 'Dựng audio từ kịch bản',
   oneLine:

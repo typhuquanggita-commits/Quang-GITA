@@ -16,17 +16,50 @@ node tools/make-podcast.mjs --rss
 Khoảng 2 phút cho 6 tập. Kết quả: 6 file MP3 128kbps, âm lượng đã chuẩn hoá về
 -16 LUFS (chuẩn podcast), có sẵn thẻ ID3, kèm `feed.xml` để đăng lên nền tảng.
 
-## Giọng đang dùng
+## Sáu vai giọng
 
 | Vai | Model | Ghi chú |
 |-----|-------|---------|
-| ANH | `en-us-ryan-high` | Giọng Mỹ, chất lượng cao. Đây là giọng học viên shadowing theo — không thay bằng giọng kém tự nhiên hơn. |
-| DẪN | `vi-25hours-single-low` | Giọng Việt, nhịp bình thường. |
-| CỐ VẤN | `vi-25hours-single-low` | Cùng model nhưng chậm hơn 13% và hạ cao độ 9% — cho ra giọng thứ hai phân biệt được mà vẫn giữ chất lượng của model tốt nhất. |
+| `ANH` | `en-us-ryan-high` | Anh–Mỹ nam. Giọng mẫu mặc định — học viên shadowing theo nên đọc chậm hơn nhịp thường 8%. |
+| `ANH-NỮ` | `en-us-libritts-high` (giọng 92) | Anh–Mỹ nữ. Dùng khi cần hai người đối thoại bằng tiếng Anh. |
+| `ANH-ANH` | `en-gb-southern_english_female-low` | Anh–Anh nữ. IELTS dùng cả hai giọng nên học viên phải quen cả hai. |
+| `ANH-ANH-NAM` | `en-gb-alan-low` | Anh–Anh nam, dùng xen kẽ cho đa dạng. |
+| `DẪN` | `vi-25hours-single-low` | Tiếng Việt, nhịp bình thường. |
+| `CỐ VẤN` | `vi-25hours-single-low` | Cùng model nhưng chậm hơn 13% và hạ cao độ 9% — giọng thứ hai phân biệt được mà vẫn giữ chất lượng model tốt nhất. |
 
-Đổi giọng cho toàn series bằng cách sửa hằng `VOICES` ở đầu
-[`tools/make-podcast.mjs`](../tools/make-podcast.mjs). Script `fetch-voices.sh`
-cũng tải sẵn `en-us-lessac-medium` (giọng nữ Mỹ) để dự phòng.
+Kịch bản gọi theo tên vai; công cụ tra sang model. Đổi giọng cho toàn series bằng
+cách sửa hằng `VOICES` ở đầu [`tools/make-podcast.mjs`](../tools/make-podcast.mjs).
+
+`vi-vivos-x-low` có **65 giọng** khác nhau — nếu cần đổi giọng vùng miền, thêm
+`speaker: <số>` vào cấu hình vai và thử các số khác nhau.
+
+## Bốn việc làm cho bản dựng liền mạch
+
+Sửa trong hằng `MIX` ở đầu `tools/make-podcast.mjs`:
+
+1. **Cắt lặng thừa.** Piper tự chèn ~76ms lặng ở hai đầu mỗi câu. Cộng với khoảng
+   nghỉ trong kịch bản thành nghỉ đúp — đây là nguyên nhân chính gây rời rạc.
+2. **Căn lại nhịp nghỉ.** Khoảng nghỉ trong kịch bản vốn chỉnh theo espeak đọc
+   nhanh; piper đọc chậm hơn nên nhân hệ số `pauseScale` 0,68 và chặn trong khoảng
+   0,22–2,2 giây. **Riêng dòng `LẶNG` giữ nguyên** vì khoảng lặng 15–20 giây trong
+   bài lập trình tư duy là chủ đích, không được co.
+3. **Nền phòng thay im lặng tuyệt đối.** Nhiễu nâu ở -68dB, không nghe thấy được
+   nhưng xoá cảm giác "chết máy" giữa các câu.
+4. **Hậu kỳ dễ nghe.** Cắt ù <70Hz · hạ 180Hz cho bớt đục · nhấc 3kHz cho rõ phụ
+   âm · nén nhẹ · chuẩn hoá -16 LUFS.
+
+## Giọng Hà Nội chuẩn — giới hạn hiện tại
+
+Model tiếng Việt của Piper **không khai báo dataset**, nên không xác minh được
+giọng vùng nào. Nếu cần bảo đảm giọng Bắc chuẩn Hà Nội ở mức phát thanh, dùng
+Google Cloud TTS — `vi-VN-Neural2-A` và `vi-VN-Neural2-D` là giọng Bắc chuẩn:
+
+```bash
+export GOOGLE_TTS_KEY=...
+node tools/make-podcast.mjs --tts google --rss
+```
+
+Cấu hình vai đã trỏ sẵn sang hai giọng đó, chỉ cần khoá.
 
 ## Vì sao không dùng espeak nữa
 
