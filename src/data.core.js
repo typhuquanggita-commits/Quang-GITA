@@ -210,8 +210,18 @@ G.TAM_NHIN = [
    ghi:'Toàn bộ, không khoá gì. Super Admin và Admin hệ thống thấy mọi thứ.'},
   {vai:['R03','R04'], pt:80,
    ghi:'Khoá đúng 20% quan trọng của R01–R02: quản trị tài khoản, phân quyền, bảo mật, nhật ký, kiểm duyệt.'},
-  {vai:['R05','R06','R07','R08','R09','R10','R11','R12'], pt:75,
+  {vai:['R05','R06','R07','R08','R09','R10','R11'], pt:75,
    ghi:'Khoá 20% ấy, thêm tài chính và điều hành toàn hệ.'},
+  /* R12 tách ra một dòng riêng, và con số thấp hơn là ĐÚNG chứ không phải
+     thiệt thòi. Phân tích dữ liệu đọc được toàn bộ kho nghề và mọi màn số
+     liệu tổng hợp, nhưng KHÔNG mở những màn chứa hồ sơ của một nhà cụ thể
+     và những buồng lái thao tác với gia đình: hồ sơ VIP, tài liệu gia đình
+     gửi lên, khoang mở cửa của Tư vấn, rà soát từng nhà.
+     Trước đây trình đơn của R12 vẫn hiện những mục ấy rồi bấm vào chỉ ra
+     một thẻ khoá — mười bốn mục chết. Nay ẩn đi, và con số tụt từ 75%
+     xuống đúng mức thật. Ít mục hơn nhưng không mục nào chết. */
+  {vai:['R12'], pt:61,
+   ghi:'Toàn bộ kho nghề và màn số liệu tổng hợp · không mở hồ sơ từng nhà và buồng lái thao tác'},
   /* ═══ Ba tỉ lệ dưới: nói cho rõ kẻo lẫn với trần 30% ═══
      Đây là tỉ lệ SỐ MÀN HÌNH mở được, không phải tỉ lệ NỘI DUNG. Hai thứ
      khác hẳn nhau, và trần 30% anh Quang đặt là trần nội dung:
@@ -329,7 +339,7 @@ G.NAV = [
     {v:'chu-ky',      t:'Chu kỳ 21 / 90 ngày',         h:'PDCA và cổng nghiệm thu từng chặng', ic:'ritual', perm:'kh_hanh_trinh', capMo:'con'},
     {v:'nhiem-vu',    t:'Nhiệm vụ & Nhật ký 365',      h:'Việc của hôm nay, ghi lại được',     ic:'check', perm:'kh_hanh_trinh', capMo:'con'},
     {v:'chan-dung-tc',t:'Mười chân dung thành công',   h:'Người đi trước trông như thế nào',   ic:'crown', perm:'nghe_chung', capMo:'nghe'},
-    {v:'cong-nghiem-thu',t:'Cổng nghiệm thu',          h:'Qua chặng bằng bằng chứng, không bằng lời', ic:'shield', perm:'nghe_chung', capMo:'nghe'},
+    {v:'cong-nghiem-thu',t:'Cổng nghiệm thu',          h:'Qua chặng bằng bằng chứng, không bằng lời', ic:'shield', perm:'pro_approve', capMo:'nghe'},
     {v:'bo-test',     t:'Bộ test nhận diện 5 tầng',    h:'25 bộ · 750 câu · phân bốn nhóm',    ic:'target', star:1, perm:'kh_hanh_trinh', capMo:'con'},
     {v:'kpi-100',     t:'Mười điểm về đích',           h:'10 điểm mốc · 100 tiêu chí đo được', ic:'crown', star:1, perm:'kh_hanh_trinh', capMo:'con'},
     {v:'kien-truc-100',t:'Kiến trúc một trăm năm',     h:'100 tầng giá trị · 5 thời kỳ · mỗi năm +3–5%',ic:'sun', star:1, perm:'nghe_chung', capMo:'nghe'}
@@ -405,25 +415,25 @@ G.NAV = [
     {v:'hoa-hong',    t:'Cơ chế tài chính đại sứ',     h:'4 cấp · trần hoa hồng 10%',          ic:'chart', perm:'ctv_hoa_hong', capMo:'ctv'},
     {v:'su-kien',     t:'Sự kiện & Lửa trại',          h:'Nơi cả hệ sinh thái gặp nhau',       ic:'calendar', capMo:'chung'},
     {v:'ket-noi',     t:'Kết nối hệ sinh thái',        h:'Đồng bộ · Facebook · Telegram',      ic:'orbit', capMo:'chung'},
-    {v:'coach-deck',  t:'Buồng lái Coach',             h:'Gia đình nào cần chạm trước hôm nay',ic:'flame', perm:'nghe_chung', capMo:'nghe'},
-    {v:'tuvan-deck',  t:'Khoang mở cửa',               h:'Người đang tìm đường và bước kế tiếp',ic:'compass', perm:'nghe_chung', capMo:'nghe'},
-    {v:'bando-tuvan', t:'Bản đồ vận hành khách hàng',  h:'Bảy chặng · học thuộc trong 4 tuần', ic:'map', perm:'nghe_chung', capMo:'nghe'},
-    {v:'bando-coach', t:'Bản đồ coaching',             h:'Sáu nhịp một buổi · sáu điều tối ưu',ic:'flame', perm:'nghe_chung', capMo:'nghe'},
-    {v:'nguoi-dan-dat',t:'Hành trình người dẫn dắt',   h:'Lớn lên bằng chính nghề mình làm',   ic:'flame', perm:'nghe_chung', capMo:'nghe'},
-    {v:'doi-ngu',     t:'Đội ngũ dẫn dắt',             h:'Ai đang giữ lửa cho những nhà nào',  ic:'users', perm:'nghe_chung', capMo:'nghe'},
+    {v:'coach-deck',  t:'Buồng lái Coach',             h:'Gia đình nào cần chạm trước hôm nay',ic:'flame', perm:'pro_coach', capMo:'nghe'},
+    {v:'tuvan-deck',  t:'Khoang mở cửa',               h:'Người đang tìm đường và bước kế tiếp',ic:'compass', perm:'pro_consult', capMo:'nghe'},
+    {v:'bando-tuvan', t:'Bản đồ vận hành khách hàng',  h:'Bảy chặng · học thuộc trong 4 tuần', ic:'map', perm:'pro_consult', capMo:'nghe'},
+    {v:'bando-coach', t:'Bản đồ coaching',             h:'Sáu nhịp một buổi · sáu điều tối ưu',ic:'flame', perm:'pro_coach', capMo:'nghe'},
+    {v:'nguoi-dan-dat',t:'Hành trình người dẫn dắt',   h:'Lớn lên bằng chính nghề mình làm',   ic:'flame', perm:'pro_consult', capMo:'nghe'},
+    {v:'doi-ngu',     t:'Đội ngũ dẫn dắt',             h:'Ai đang giữ lửa cho những nhà nào',  ic:'users', perm:'pro_consult', capMo:'nghe'},
     {v:'dieu-hanh',   t:'Trung tâm điều hành',         h:'Toàn cảnh sức khoẻ hệ sinh thái',    ic:'shield', perm:'dh_toan_he', capMo:'dieuhanh'},
-    {v:'van-ban',     t:'Bộ văn bản chuẩn',            h:'22 mẫu · giao việc, bàn giao, quyết định',ic:'book', perm:'nghe_chung', capMo:'nghe'},
+    {v:'van-ban',     t:'Bộ văn bản chuẩn',            h:'22 mẫu · giao việc, bàn giao, quyết định',ic:'book', perm:'pro_consult', capMo:'nghe'},
     {v:'tai-chinh-qt',t:'Hệ quản trị tài chính',       h:'6 nguyên tắc · 5 sổ · 6 chốt kiểm soát',ic:'chart', perm:'fin_view', capMo:'taichinh'},
     {v:'quy-trinh-tc',t:'Quy trình tài chính',         h:'Thanh toán · hoàn trả · lương thưởng',ic:'target', perm:'fin_view', capMo:'taichinh'},
     {v:'thanh-tra',   t:'Thanh tra & cảnh báo',        h:'6 chu kỳ · 10 cảnh báo có thời hạn', ic:'pulse', perm:'qt_trang', capMo:'quantri'},
-    {v:'ra-soat-kh',  t:'Rà soát mười hai mặt',        h:'Không bỏ sót nhu cầu của gia đình',  ic:'target', perm:'nghe_chung', capMo:'nghe'},
-    {v:'xuat-du-lieu',t:'Xuất dữ liệu',                h:'PDF hồ sơ · CSV danh sách · phân quyền',ic:'out', perm:'nghe_chung', capMo:'nghe'},
-    {v:'do-luong-kh', t:'Hệ đo lường khách hàng',      h:'7 chỉ số · 6 nhịp · vòng cải tiến',  ic:'pulse', perm:'nghe_chung', capMo:'nghe'},
-    {v:'hang-vip',    t:'Phân hạng VIP & VVIP',        h:'4 hạng · chuẩn phục vụ · AI chăm sóc',ic:'crown', star:1, perm:'nghe_chung', capMo:'nghe'},
-    {v:'hoso-vip',    t:'Chuẩn hồ sơ VIP & VVIP',      h:'7 phần · 30 trường · ba mươi giây',  ic:'book', star:1, perm:'nghe_chung', capMo:'nghe'},
-    {v:'cay-tien',    t:'Cây tiền — chăm sóc VIP',     h:'4 việc · điểm cây tiền · 12 nhịp',   ic:'seed', perm:'nghe_chung', capMo:'nghe'},
+    {v:'ra-soat-kh',  t:'Rà soát mười hai mặt',        h:'Không bỏ sót nhu cầu của gia đình',  ic:'target', perm:'pro_consult', capMo:'nghe'},
+    {v:'xuat-du-lieu',t:'Xuất dữ liệu',                h:'PDF hồ sơ · CSV danh sách · phân quyền',ic:'out', perm:'pro_coach', capMo:'nghe'},
+    {v:'do-luong-kh', t:'Hệ đo lường khách hàng',      h:'7 chỉ số · 6 nhịp · vòng cải tiến',  ic:'pulse', perm:'pro_consult', capMo:'nghe'},
+    {v:'hang-vip',    t:'Phân hạng VIP & VVIP',        h:'4 hạng · chuẩn phục vụ · AI chăm sóc',ic:'crown', star:1, perm:'pro_consult', capMo:'nghe'},
+    {v:'hoso-vip',    t:'Chuẩn hồ sơ VIP & VVIP',      h:'7 phần · 30 trường · ba mươi giây',  ic:'book', star:1, perm:'pro_consult', capMo:'nghe'},
+    {v:'cay-tien',    t:'Cây tiền — chăm sóc VIP',     h:'4 việc · điểm cây tiền · 12 nhịp',   ic:'seed', perm:'pro_consult', capMo:'nghe'},
     {v:'ai-cham',     t:'Trợ lý chăm sóc tự động',     h:'16 luật chạy nền · ranh giới rõ',    ic:'spark', perm:'nghe_chung', capMo:'nghe'},
-    {v:'nhan-su-tt',  t:'Tệp nhân sự trung thành',     h:'5 bậc · 7 chỉ số · 5 luật',          ic:'users', perm:'nghe_chung', capMo:'nghe'},
+    {v:'nhan-su-tt',  t:'Tệp nhân sự trung thành',     h:'5 bậc · 7 chỉ số · 5 luật',          ic:'users', perm:'pro_consult', capMo:'nghe'},
     {v:'tang-quyen',  t:'Tầng quyền truy cập',         h:'Ma trận 15 vai × 21 quyền',          ic:'shield', perm:'qt_trang', capMo:'quantri'},
     {v:'vong-doi-tk', t:'Vòng đời tài khoản',          h:'KPI · khoá · mở lại · đặt lại',      ic:'pulse', perm:'qt_trang', capMo:'quantri'},
     {v:'hang-tai-lieu',t:'Xếp hạng tài liệu 1–100',    h:'KPI và cấp bậc mới mở tài liệu hay', ic:'crown', perm:'qt_trang', capMo:'quantri'},
@@ -433,7 +443,7 @@ G.NAV = [
     {v:'tang-truong', t:'Tài chính & tăng trưởng',     h:'Dòng tiền nuôi được sứ mệnh',        ic:'chart', perm:'fin_view', capMo:'taichinh'},
     {v:'chi-phi',     t:'Kiến trúc chi phí',           h:'Trần 500.000đ/tháng · nặng ở máy',   ic:'target', perm:'fin_view', capMo:'taichinh'},
     {v:'hai-long',    t:'Chỉ số hài lòng & góp ý',     h:'Mục tiêu 90% · nghe khách nói thật', ic:'heart', perm:'nghe_chung', capMo:'nghe'},
-    {v:'tai-lieu-khach',t:'Tài liệu gia đình gửi lên',  h:'Đọc sự sáng tạo để nâng cấp lộ trình',ic:'seed', perm:'nghe_chung', capMo:'nghe'},
+    {v:'tai-lieu-khach',t:'Tài liệu gia đình gửi lên',  h:'Đọc sự sáng tạo để nâng cấp lộ trình',ic:'seed', perm:'pro_consult', capMo:'nghe'},
     {v:'kiem-thu',    t:'Phòng kiểm thử 4 chuyên gia',  h:'Khó tính · Hiểu biết · Kỹ sư · Ngôn từ',ic:'target', perm:'qt_trang', capMo:'quantri'},
     {v:'chuan-1000',  t:'Chuẩn 1000 điểm',             h:'Mười nhóm · từng chi tiết một',      ic:'star', perm:'qt_trang', capMo:'quantri'},
     {v:'ai-dieu-phoi',t:'AI điều phối',               h:'Giới hạn tầng · định tuyến KPI · nâng cấp nghề',ic:'brain', perm:'nghe_chung', capMo:'nghe'},

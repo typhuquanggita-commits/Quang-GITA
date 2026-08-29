@@ -11,7 +11,11 @@ function tc(t){ var x=(G.TIERS||[]).filter(function(y){return y.code===t;})[0]; 
 
 /* ═══════════════ XƯƠNG SỐNG PHƯƠNG PHÁP ═══════════════ */
 G.VIEWS['phuong-phap'] = function(){
-  if(!G.can('pro_coach')) return U.lockCard();
+  /* Kho nghề, không phải công cụ Coach: Tư vấn phải đọc được xương sống
+     phương pháp thì mới nói đúng với gia đình ở buổi mở cửa. Trước đây khoá
+     ở pro_coach nên Tư vấn thấy mục này trong trình đơn mà bấm vào chỉ ra
+     một thẻ khoá — một mục chết. */
+  if(!G.can('nghe_chung')) return U.lockCard();
   var X = G.XUONG_SONG, P = G.PHUONGPHAP, S = G.SACH_THAMKHAO, V = G.NGUON_VAITRO;
   if(!X) return U.empty('Chưa mở được phần phương pháp','Phần này nằm trong kho nghề.');
 
@@ -152,7 +156,14 @@ G.VIEWS['hoso-vip'] = function(){
 
 /* ═══════════════ CHIẾN LƯỢC CHUYỂN ĐỔI ═══════════════ */
 G.VIEWS['chuyen-doi'] = function(){
-  if(!G.can('pro_consult')) return U.lockCard();
+  /* Kho tra cứu của nghề, không phải công cụ thao tác với gia đình.
+     Bảng PERM đã nói rõ: nghe_chung mở cho R01–R12 — "toàn bộ kho nghề".
+     Khoá ở pro_coach hoặc pro_consult thì Chuyên gia đánh giá, Chuyên gia
+     tư vấn và Phân tích dữ liệu thấy mục này trong trình đơn mà bấm vào
+     chỉ nhận được một thẻ khoá — đúng loại mục chết anh Quang đã bảo dẹp.
+     Quyền THAO TÁC (buồng lái Coach, cổng nghiệm thu, xuất dữ liệu) vẫn
+     giữ nguyên ở pro_coach và pro_approve. */
+  if(!G.can('nghe_chung')) return U.lockCard();
   var C = G.CHUYENDOI;
   if(!C) return U.empty('Chưa mở được chiến lược chuyển đổi','Phần này nằm trong kho nghề.');
 
@@ -202,7 +213,11 @@ G.VIEWS['chuyen-doi'] = function(){
 
 /* ═══════════════ TRỢ LÝ CHĂM SÓC TỰ ĐỘNG ═══════════════ */
 G.VIEWS['ai-cham'] = function(){
-  if(!G.can('pro_consult')) return U.lockCard();
+  /* Chính sách và số liệu tổng hợp, không phải hồ sơ của một nhà cụ thể.
+     Phân tích dữ liệu (R12) phải đọc được thì mới phân tích được — mà bảng
+     PERM vốn đã xếp R12 trong nghe_chung. Khoá ở pro_consult chỉ tạo ra một
+     mục chết trong trình đơn của họ. */
+  if(!G.can('nghe_chung')) return U.lockCard();
   var A = G.AICHAM;
   if(!A) return U.empty('Chưa mở được đặc tả trợ lý','Phần này nằm trong kho nghề.');
 
@@ -242,7 +257,14 @@ G.VIEWS['ai-cham'] = function(){
 
 /* ═══════════════ SINH TRẮC HỌC VÂN TAY ═══════════════ */
 G.VIEWS['van-tay'] = function(){
-  if(!G.can('pro_consult')) return U.lockCard();
+  /* Kho tra cứu của nghề, không phải công cụ thao tác với gia đình.
+     Bảng PERM đã nói rõ: nghe_chung mở cho R01–R12 — "toàn bộ kho nghề".
+     Khoá ở pro_coach hoặc pro_consult thì Chuyên gia đánh giá, Chuyên gia
+     tư vấn và Phân tích dữ liệu thấy mục này trong trình đơn mà bấm vào
+     chỉ nhận được một thẻ khoá — đúng loại mục chết anh Quang đã bảo dẹp.
+     Quyền THAO TÁC (buồng lái Coach, cổng nghiệm thu, xuất dữ liệu) vẫn
+     giữ nguyên ở pro_coach và pro_approve. */
+  if(!G.can('nghe_chung')) return U.lockCard();
   var V = G.VANTAY;
   if(!V) return U.empty('Chưa mở được phần này','Phần này nằm trong kho nghề.');
 

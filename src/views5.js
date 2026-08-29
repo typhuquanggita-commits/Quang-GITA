@@ -108,7 +108,10 @@ G.VIEWS['chuan-nhat'] = function(){
 
 /* ═══════════════ AI ĐIỀU PHỐI ═══════════════ */
 G.VIEWS['ai-dieu-phoi'] = function(){
-  if(!G.can('pro_coach')) return U.lockCard();
+  /* Chính sách điều phối trợ lý, không phải hồ sơ của nhà nào. Tư vấn dùng
+     trợ lý với gia đình từ buổi đầu; Phân tích dữ liệu cần đọc để đánh giá
+     trợ lý đang trả lời ra sao. Cả hai đều nằm trong nghe_chung. */
+  if(!G.can('nghe_chung')) return U.lockCard();
   var P = G.AIPOLICY;
   var o = U.ph({eyebrow:'NHÓM 05 · VẬN HÀNH', ic:'brain', grad:1, t:'AI điều phối',
     lead:'Trợ lý không thay người dẫn dắt. Nó làm ba việc: trả lời trong đúng phạm vi tầng, chuyển đúng câu hỏi tới đúng người, và nói cho người dẫn dắt biết họ cần nâng cấp gì để theo kịp lộ trình của gia đình mình.'});

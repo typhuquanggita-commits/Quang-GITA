@@ -371,7 +371,11 @@ G.VIEWS['nhat-ky-ht'] = function(){
 };
 /* ═══════════════ 05 · CHỈ SỐ HÀI LÒNG & GÓP Ý ═══════════════ */
 G.VIEWS['hai-long'] = function(){
-  if(!G.can('pro_consult')) return U.lockCard();
+  /* Chính sách và số liệu tổng hợp, không phải hồ sơ của một nhà cụ thể.
+     Phân tích dữ liệu (R12) phải đọc được thì mới phân tích được — mà bảng
+     PERM vốn đã xếp R12 trong nghe_chung. Khoá ở pro_consult chỉ tạo ra một
+     mục chết trong trình đơn của họ. */
+  if(!G.can('nghe_chung')) return U.lockCard();
   var H = G.HAILONG;
   var o = U.ph({eyebrow:'NHÓM 05 · VẬN HÀNH', ic:'heart', grad:1, t:'Chỉ số hài lòng & góp ý',
     lead:'Mục tiêu 90% hài lòng. Cách duy nhất tới đó là nghe khách nói thật — kể cả câu khó nghe — rồi đưa thẳng vào hàng chờ cải tiến.'});
@@ -429,7 +433,9 @@ G.VIEWS['hai-long'] = function(){
 
 /* ═══════════════ 05 · TÀI LIỆU GIA ĐÌNH GỬI LÊN ═══════════════ */
 G.VIEWS['tai-lieu-khach'] = function(){
-  if(!G.can('pro_coach')) return U.lockCard();
+  /* Tư vấn cũng nhận và soát tài liệu gia đình gửi lên — đó là việc của
+     khâu mở cửa, không riêng của Coach. */
+  if(!G.can('pro_consult')) return U.lockCard();
   var T = G.TAILIEU;
   var o = U.ph({eyebrow:'NHÓM 05 · VẬN HÀNH', ic:'seed', grad:1, t:'Tài liệu gia đình gửi lên',
     lead:T.nguyenTac});

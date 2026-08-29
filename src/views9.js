@@ -83,7 +83,14 @@ G.maTranModal = function(ma){
 
 /* ═══════════════ PHIẾU CHỈ DẪN REFERRAL ═══════════════ */
 G.VIEWS['referral'] = function(){
-  if(!G.can('pro_consult')) return U.lockCard();
+  /* Kho tra cứu của nghề, không phải công cụ thao tác với gia đình.
+     Bảng PERM đã nói rõ: nghe_chung mở cho R01–R12 — "toàn bộ kho nghề".
+     Khoá ở pro_coach hoặc pro_consult thì Chuyên gia đánh giá, Chuyên gia
+     tư vấn và Phân tích dữ liệu thấy mục này trong trình đơn mà bấm vào
+     chỉ nhận được một thẻ khoá — đúng loại mục chết anh Quang đã bảo dẹp.
+     Quyền THAO TÁC (buồng lái Coach, cổng nghiệm thu, xuất dữ liệu) vẫn
+     giữ nguyên ở pro_coach và pro_approve. */
+  if(!G.can('nghe_chung')) return U.lockCard();
   var R = G.REFERRAL;
   if(!R) return U.empty('Chưa mở được phiếu referral','Phần này nằm trong kho nghề.');
 
@@ -163,7 +170,14 @@ G.VIEWS['referral'] = function(){
 
 /* ═══════════════ CHÂN DUNG TỆP KHÁCH HÀNG ═══════════════ */
 G.VIEWS['chan-dung-kh'] = function(){
-  if(!G.can('pro_consult')) return U.lockCard();
+  /* Kho tra cứu của nghề, không phải công cụ thao tác với gia đình.
+     Bảng PERM đã nói rõ: nghe_chung mở cho R01–R12 — "toàn bộ kho nghề".
+     Khoá ở pro_coach hoặc pro_consult thì Chuyên gia đánh giá, Chuyên gia
+     tư vấn và Phân tích dữ liệu thấy mục này trong trình đơn mà bấm vào
+     chỉ nhận được một thẻ khoá — đúng loại mục chết anh Quang đã bảo dẹp.
+     Quyền THAO TÁC (buồng lái Coach, cổng nghiệm thu, xuất dữ liệu) vẫn
+     giữ nguyên ở pro_coach và pro_approve. */
+  if(!G.can('nghe_chung')) return U.lockCard();
   var C = G.CHANDUNG_KH;
   if(!C) return U.empty('Chưa mở được chân dung khách hàng','Phần này nằm trong kho nghề.');
 

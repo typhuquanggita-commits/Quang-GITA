@@ -58,7 +58,14 @@ G.VIEWS['kho'] = function(){
 
 /* ══════════════════ 03 · 220 PHÁC ĐỒ ══════════════════ */
 G.VIEWS['phac-do'] = function(){
-  if(!G.can('pro_coach')) return U.lockCard();
+  /* Kho tra cứu của nghề, không phải công cụ thao tác với gia đình.
+     Bảng PERM đã nói rõ: nghe_chung mở cho R01–R12 — "toàn bộ kho nghề".
+     Khoá ở pro_coach hoặc pro_consult thì Chuyên gia đánh giá, Chuyên gia
+     tư vấn và Phân tích dữ liệu thấy mục này trong trình đơn mà bấm vào
+     chỉ nhận được một thẻ khoá — đúng loại mục chết anh Quang đã bảo dẹp.
+     Quyền THAO TÁC (buồng lái Coach, cổng nghiệm thu, xuất dữ liệu) vẫn
+     giữ nguyên ở pro_coach và pro_approve. */
+  if(!G.can('nghe_chung')) return U.lockCard();
   var nhom = {};
   G.PHACDO.forEach(function(p){ (nhom[p.nhomTen||'Khác'] = nhom[p.nhomTen||'Khác'] || []).push(p); });
   var keys = Object.keys(nhom).sort();
@@ -91,7 +98,14 @@ G.phacDoModal = function(ma){
 
 /* ══════════════════ 03 · 1.000 KỊCH BẢN ══════════════════ */
 G.VIEWS['kich-ban'] = function(){
-  if(!G.can('pro_consult')) return U.lockCard();
+  /* Kho tra cứu của nghề, không phải công cụ thao tác với gia đình.
+     Bảng PERM đã nói rõ: nghe_chung mở cho R01–R12 — "toàn bộ kho nghề".
+     Khoá ở pro_coach hoặc pro_consult thì Chuyên gia đánh giá, Chuyên gia
+     tư vấn và Phân tích dữ liệu thấy mục này trong trình đơn mà bấm vào
+     chỉ nhận được một thẻ khoá — đúng loại mục chết anh Quang đã bảo dẹp.
+     Quyền THAO TÁC (buồng lái Coach, cổng nghiệm thu, xuất dữ liệu) vẫn
+     giữ nguyên ở pro_coach và pro_approve. */
+  if(!G.can('nghe_chung')) return U.lockCard();
   var o = U.ph({eyebrow:'NHÓM 03 · KHO BÁU VẬT', ic:'ritual', t:'Một nghìn kịch bản chuyên môn',
     lead:'Năm trăm kịch bản tư vấn và năm trăm kịch bản coaching, phủ đủ năm tầng. Mỗi buổi có câu mở đúng nhịp, câu chốt và điều tuyệt đối không được làm.'});
   o += '<div class="row wrap mb" style="gap:6px">'+
@@ -139,7 +153,14 @@ G.kichBanModal = function(ma){
 
 /* ══════════════════ 03 · 42 MÔ THỨC ══════════════════ */
 G.VIEWS['mo-thuc'] = function(){
-  if(!G.can('pro_coach')) return U.lockCard();
+  /* Kho tra cứu của nghề, không phải công cụ thao tác với gia đình.
+     Bảng PERM đã nói rõ: nghe_chung mở cho R01–R12 — "toàn bộ kho nghề".
+     Khoá ở pro_coach hoặc pro_consult thì Chuyên gia đánh giá, Chuyên gia
+     tư vấn và Phân tích dữ liệu thấy mục này trong trình đơn mà bấm vào
+     chỉ nhận được một thẻ khoá — đúng loại mục chết anh Quang đã bảo dẹp.
+     Quyền THAO TÁC (buồng lái Coach, cổng nghiệm thu, xuất dữ liệu) vẫn
+     giữ nguyên ở pro_coach và pro_approve. */
+  if(!G.can('nghe_chung')) return U.lockCard();
   var o = U.ph({eyebrow:'NHÓM 03 · KHO BÁU VẬT', ic:'brain', grad:1, t:'Mô thức huấn luyện gốc',
     lead:'Chép lại từ sổ tay viết tay của người sáng lập Học viện GITA. Đây là bộ công cụ chẩn đoán và can thiệp của Tầng 5 — mạnh, và vì mạnh nên đi kèm ranh giới nghề nghiệp.'});
   o += '<div class="card mb" style="border-color:rgba(251,146,60,.32)">'+

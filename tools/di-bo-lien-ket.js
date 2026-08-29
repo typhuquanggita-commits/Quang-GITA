@@ -56,7 +56,7 @@ const URL = process.env.GITA_URL || 'http://127.0.0.1:8099/index.html';
       G.NAV.forEach(g => g.items.forEach(i => { if (!i.perm || G.can(i.perm)) nav.push(i); }));
 
       const thayDuoc = new Set(nav.map(i => i.v));
-      const hong = { manThieu: [], nutChet: [], manRong: [], thieuTieuDe: [], mucChet: [] };
+      const hong = { manThieu: [], nutChet: [], manRong: [], thieuTieuDe: [], mucChet: [], theKhoa: [] };
       const actThay = new Set();
 
       /* Mọi hành động có người nghe: quét chuỗi data-act trong toàn bộ mã đã nạp */
@@ -75,6 +75,13 @@ const URL = process.env.GITA_URL || 'http://127.0.0.1:8099/index.html';
           return;
         }
         if (!html || html.length < 200) { hong.manRong.push(muc.v + ' (' + (html || '').length + ' ký tự)'); return; }
+        /* Cửa thứ hai của cùng một lỗi: mục qua được G.allowed, gói đã cấp,
+           nhưng thân màn tự khoá bằng G.can(...) và trả về đúng một thẻ
+           "Vai hiện tại chưa mở mục này". Với người dùng thì bấm vào và
+           không có gì — giống hệt một mục chết. */
+        if (html.trim().indexOf('<div class="card center" style="padding:40px">') === 0) {
+          hong.theKhoa.push(muc.v); return;
+        }
         if (!/<h1|class="ph-t"|class="up |<b/.test(html)) hong.thieuTieuDe.push(muc.v);
 
         /* Nút trỏ sang màn khác */
@@ -111,10 +118,11 @@ const URL = process.env.GITA_URL || 'http://127.0.0.1:8099/index.html';
     r.act.forEach(a => moiAct.add(a));
     tongMuc += r.soMuc;
     const h = r.hong;
-    const xau = h.manThieu.length + h.nutChet.length + h.manRong.length + h.mucChet.length;
+    const xau = h.manThieu.length + h.nutChet.length + h.manRong.length + h.mucChet.length + h.theKhoa.length;
     bao(xau === 0, r.vai + ' ' + r.ten,
       r.soNhom + ' thư mục · ' + r.soMuc + ' mục' +
-      (xau ? ' · HỎNG: ' + [...h.manThieu, ...h.nutChet, ...h.manRong, ...h.mucChet].slice(0, 3).join(' | ') : ''));
+      (xau ? ' · HỎNG: ' + [...h.manThieu, ...h.nutChet, ...h.manRong, ...h.mucChet,
+        ...h.theKhoa.map(v => v + ' (chỉ ra thẻ khoá)')].slice(0, 8).join(' | ') : ''));
   }
   console.log('    ' + tongMuc + ' lượt mở màn · ' + moiAct.size + ' hành động khác nhau');
 

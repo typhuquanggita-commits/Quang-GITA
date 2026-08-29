@@ -128,7 +128,9 @@ G.VIEWS['thanh-tra'] = function(){
 
 /* ═══════════════ RÀ SOÁT KHÔNG BỎ SÓT ═══════════════ */
 G.VIEWS['ra-soat-kh'] = function(){
-  if(!G.can('pro_coach')) return U.lockCard();
+  /* Rà soát mười hai mặt là việc chung của người làm với gia đình, gồm cả
+     Tư vấn. Khoá ở pro_coach thì Tư vấn thấy mục mà không mở được. */
+  if(!G.can('pro_consult')) return U.lockCard();
   var R = G.RASOAT_KH;
   var xong = R.mat.filter(function(m,i){ return G.S.checks['m'+i]; }).length;
   var o = U.ph({eyebrow:'NHÓM 05 · QUẢN TRỊ', ic:'target', grad:1, t:'Rà soát mười hai mặt', lead:R.cot});
@@ -153,7 +155,14 @@ G.VIEWS['ra-soat-kh'] = function(){
 
 /* ═══════════════ 250 TÌNH HUỐNG THỰC CHIẾN ═══════════════ */
 G.VIEWS['tinh-huong'] = function(){
-  if(!G.can('pro_consult')) return U.lockCard();
+  /* Kho tra cứu của nghề, không phải công cụ thao tác với gia đình.
+     Bảng PERM đã nói rõ: nghe_chung mở cho R01–R12 — "toàn bộ kho nghề".
+     Khoá ở pro_coach hoặc pro_consult thì Chuyên gia đánh giá, Chuyên gia
+     tư vấn và Phân tích dữ liệu thấy mục này trong trình đơn mà bấm vào
+     chỉ nhận được một thẻ khoá — đúng loại mục chết anh Quang đã bảo dẹp.
+     Quyền THAO TÁC (buồng lái Coach, cổng nghiệm thu, xuất dữ liệu) vẫn
+     giữ nguyên ở pro_coach và pro_approve. */
+  if(!G.can('nghe_chung')) return U.lockCard();
   var ds = G.TINHHUONG || [];
   var o = U.ph({eyebrow:'NHÓM 03 · KHO BÁU VẬT', ic:'ritual', grad:1, t:'Tình huống thực chiến',
     lead:'Hai trăm năm mươi tình huống có thật, chia đều năm tầng và năm mươi nhóm. Mỗi tình huống có mã Key, phân tích, điểm mấu chốt, giải pháp, thử thách bảy ngày và KPI hoàn thành.'});

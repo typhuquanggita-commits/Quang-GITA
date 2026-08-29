@@ -1389,8 +1389,18 @@ G.TAM_NHIN = [
    ghi:'Toàn bộ, không khoá gì. Super Admin và Admin hệ thống thấy mọi thứ.'},
   {vai:['R03','R04'], pt:80,
    ghi:'Khoá đúng 20% quan trọng của R01–R02: quản trị tài khoản, phân quyền, bảo mật, nhật ký, kiểm duyệt.'},
-  {vai:['R05','R06','R07','R08','R09','R10','R11','R12'], pt:75,
+  {vai:['R05','R06','R07','R08','R09','R10','R11'], pt:75,
    ghi:'Khoá 20% ấy, thêm tài chính và điều hành toàn hệ.'},
+  /* R12 tách ra một dòng riêng, và con số thấp hơn là ĐÚNG chứ không phải
+     thiệt thòi. Phân tích dữ liệu đọc được toàn bộ kho nghề và mọi màn số
+     liệu tổng hợp, nhưng KHÔNG mở những màn chứa hồ sơ của một nhà cụ thể
+     và những buồng lái thao tác với gia đình: hồ sơ VIP, tài liệu gia đình
+     gửi lên, khoang mở cửa của Tư vấn, rà soát từng nhà.
+     Trước đây trình đơn của R12 vẫn hiện những mục ấy rồi bấm vào chỉ ra
+     một thẻ khoá — mười bốn mục chết. Nay ẩn đi, và con số tụt từ 75%
+     xuống đúng mức thật. Ít mục hơn nhưng không mục nào chết. */
+  {vai:['R12'], pt:61,
+   ghi:'Toàn bộ kho nghề và màn số liệu tổng hợp · không mở hồ sơ từng nhà và buồng lái thao tác'},
   /* ═══ Ba tỉ lệ dưới: nói cho rõ kẻo lẫn với trần 30% ═══
      Đây là tỉ lệ SỐ MÀN HÌNH mở được, không phải tỉ lệ NỘI DUNG. Hai thứ
      khác hẳn nhau, và trần 30% anh Quang đặt là trần nội dung:
@@ -1508,7 +1518,7 @@ G.NAV = [
     {v:'chu-ky',      t:'Chu kỳ 21 / 90 ngày',         h:'PDCA và cổng nghiệm thu từng chặng', ic:'ritual', perm:'kh_hanh_trinh', capMo:'con'},
     {v:'nhiem-vu',    t:'Nhiệm vụ & Nhật ký 365',      h:'Việc của hôm nay, ghi lại được',     ic:'check', perm:'kh_hanh_trinh', capMo:'con'},
     {v:'chan-dung-tc',t:'Mười chân dung thành công',   h:'Người đi trước trông như thế nào',   ic:'crown', perm:'nghe_chung', capMo:'nghe'},
-    {v:'cong-nghiem-thu',t:'Cổng nghiệm thu',          h:'Qua chặng bằng bằng chứng, không bằng lời', ic:'shield', perm:'nghe_chung', capMo:'nghe'},
+    {v:'cong-nghiem-thu',t:'Cổng nghiệm thu',          h:'Qua chặng bằng bằng chứng, không bằng lời', ic:'shield', perm:'pro_approve', capMo:'nghe'},
     {v:'bo-test',     t:'Bộ test nhận diện 5 tầng',    h:'25 bộ · 750 câu · phân bốn nhóm',    ic:'target', star:1, perm:'kh_hanh_trinh', capMo:'con'},
     {v:'kpi-100',     t:'Mười điểm về đích',           h:'10 điểm mốc · 100 tiêu chí đo được', ic:'crown', star:1, perm:'kh_hanh_trinh', capMo:'con'},
     {v:'kien-truc-100',t:'Kiến trúc một trăm năm',     h:'100 tầng giá trị · 5 thời kỳ · mỗi năm +3–5%',ic:'sun', star:1, perm:'nghe_chung', capMo:'nghe'}
@@ -1584,25 +1594,25 @@ G.NAV = [
     {v:'hoa-hong',    t:'Cơ chế tài chính đại sứ',     h:'4 cấp · trần hoa hồng 10%',          ic:'chart', perm:'ctv_hoa_hong', capMo:'ctv'},
     {v:'su-kien',     t:'Sự kiện & Lửa trại',          h:'Nơi cả hệ sinh thái gặp nhau',       ic:'calendar', capMo:'chung'},
     {v:'ket-noi',     t:'Kết nối hệ sinh thái',        h:'Đồng bộ · Facebook · Telegram',      ic:'orbit', capMo:'chung'},
-    {v:'coach-deck',  t:'Buồng lái Coach',             h:'Gia đình nào cần chạm trước hôm nay',ic:'flame', perm:'nghe_chung', capMo:'nghe'},
-    {v:'tuvan-deck',  t:'Khoang mở cửa',               h:'Người đang tìm đường và bước kế tiếp',ic:'compass', perm:'nghe_chung', capMo:'nghe'},
-    {v:'bando-tuvan', t:'Bản đồ vận hành khách hàng',  h:'Bảy chặng · học thuộc trong 4 tuần', ic:'map', perm:'nghe_chung', capMo:'nghe'},
-    {v:'bando-coach', t:'Bản đồ coaching',             h:'Sáu nhịp một buổi · sáu điều tối ưu',ic:'flame', perm:'nghe_chung', capMo:'nghe'},
-    {v:'nguoi-dan-dat',t:'Hành trình người dẫn dắt',   h:'Lớn lên bằng chính nghề mình làm',   ic:'flame', perm:'nghe_chung', capMo:'nghe'},
-    {v:'doi-ngu',     t:'Đội ngũ dẫn dắt',             h:'Ai đang giữ lửa cho những nhà nào',  ic:'users', perm:'nghe_chung', capMo:'nghe'},
+    {v:'coach-deck',  t:'Buồng lái Coach',             h:'Gia đình nào cần chạm trước hôm nay',ic:'flame', perm:'pro_coach', capMo:'nghe'},
+    {v:'tuvan-deck',  t:'Khoang mở cửa',               h:'Người đang tìm đường và bước kế tiếp',ic:'compass', perm:'pro_consult', capMo:'nghe'},
+    {v:'bando-tuvan', t:'Bản đồ vận hành khách hàng',  h:'Bảy chặng · học thuộc trong 4 tuần', ic:'map', perm:'pro_consult', capMo:'nghe'},
+    {v:'bando-coach', t:'Bản đồ coaching',             h:'Sáu nhịp một buổi · sáu điều tối ưu',ic:'flame', perm:'pro_coach', capMo:'nghe'},
+    {v:'nguoi-dan-dat',t:'Hành trình người dẫn dắt',   h:'Lớn lên bằng chính nghề mình làm',   ic:'flame', perm:'pro_consult', capMo:'nghe'},
+    {v:'doi-ngu',     t:'Đội ngũ dẫn dắt',             h:'Ai đang giữ lửa cho những nhà nào',  ic:'users', perm:'pro_consult', capMo:'nghe'},
     {v:'dieu-hanh',   t:'Trung tâm điều hành',         h:'Toàn cảnh sức khoẻ hệ sinh thái',    ic:'shield', perm:'dh_toan_he', capMo:'dieuhanh'},
-    {v:'van-ban',     t:'Bộ văn bản chuẩn',            h:'22 mẫu · giao việc, bàn giao, quyết định',ic:'book', perm:'nghe_chung', capMo:'nghe'},
+    {v:'van-ban',     t:'Bộ văn bản chuẩn',            h:'22 mẫu · giao việc, bàn giao, quyết định',ic:'book', perm:'pro_consult', capMo:'nghe'},
     {v:'tai-chinh-qt',t:'Hệ quản trị tài chính',       h:'6 nguyên tắc · 5 sổ · 6 chốt kiểm soát',ic:'chart', perm:'fin_view', capMo:'taichinh'},
     {v:'quy-trinh-tc',t:'Quy trình tài chính',         h:'Thanh toán · hoàn trả · lương thưởng',ic:'target', perm:'fin_view', capMo:'taichinh'},
     {v:'thanh-tra',   t:'Thanh tra & cảnh báo',        h:'6 chu kỳ · 10 cảnh báo có thời hạn', ic:'pulse', perm:'qt_trang', capMo:'quantri'},
-    {v:'ra-soat-kh',  t:'Rà soát mười hai mặt',        h:'Không bỏ sót nhu cầu của gia đình',  ic:'target', perm:'nghe_chung', capMo:'nghe'},
-    {v:'xuat-du-lieu',t:'Xuất dữ liệu',                h:'PDF hồ sơ · CSV danh sách · phân quyền',ic:'out', perm:'nghe_chung', capMo:'nghe'},
-    {v:'do-luong-kh', t:'Hệ đo lường khách hàng',      h:'7 chỉ số · 6 nhịp · vòng cải tiến',  ic:'pulse', perm:'nghe_chung', capMo:'nghe'},
-    {v:'hang-vip',    t:'Phân hạng VIP & VVIP',        h:'4 hạng · chuẩn phục vụ · AI chăm sóc',ic:'crown', star:1, perm:'nghe_chung', capMo:'nghe'},
-    {v:'hoso-vip',    t:'Chuẩn hồ sơ VIP & VVIP',      h:'7 phần · 30 trường · ba mươi giây',  ic:'book', star:1, perm:'nghe_chung', capMo:'nghe'},
-    {v:'cay-tien',    t:'Cây tiền — chăm sóc VIP',     h:'4 việc · điểm cây tiền · 12 nhịp',   ic:'seed', perm:'nghe_chung', capMo:'nghe'},
+    {v:'ra-soat-kh',  t:'Rà soát mười hai mặt',        h:'Không bỏ sót nhu cầu của gia đình',  ic:'target', perm:'pro_consult', capMo:'nghe'},
+    {v:'xuat-du-lieu',t:'Xuất dữ liệu',                h:'PDF hồ sơ · CSV danh sách · phân quyền',ic:'out', perm:'pro_coach', capMo:'nghe'},
+    {v:'do-luong-kh', t:'Hệ đo lường khách hàng',      h:'7 chỉ số · 6 nhịp · vòng cải tiến',  ic:'pulse', perm:'pro_consult', capMo:'nghe'},
+    {v:'hang-vip',    t:'Phân hạng VIP & VVIP',        h:'4 hạng · chuẩn phục vụ · AI chăm sóc',ic:'crown', star:1, perm:'pro_consult', capMo:'nghe'},
+    {v:'hoso-vip',    t:'Chuẩn hồ sơ VIP & VVIP',      h:'7 phần · 30 trường · ba mươi giây',  ic:'book', star:1, perm:'pro_consult', capMo:'nghe'},
+    {v:'cay-tien',    t:'Cây tiền — chăm sóc VIP',     h:'4 việc · điểm cây tiền · 12 nhịp',   ic:'seed', perm:'pro_consult', capMo:'nghe'},
     {v:'ai-cham',     t:'Trợ lý chăm sóc tự động',     h:'16 luật chạy nền · ranh giới rõ',    ic:'spark', perm:'nghe_chung', capMo:'nghe'},
-    {v:'nhan-su-tt',  t:'Tệp nhân sự trung thành',     h:'5 bậc · 7 chỉ số · 5 luật',          ic:'users', perm:'nghe_chung', capMo:'nghe'},
+    {v:'nhan-su-tt',  t:'Tệp nhân sự trung thành',     h:'5 bậc · 7 chỉ số · 5 luật',          ic:'users', perm:'pro_consult', capMo:'nghe'},
     {v:'tang-quyen',  t:'Tầng quyền truy cập',         h:'Ma trận 15 vai × 21 quyền',          ic:'shield', perm:'qt_trang', capMo:'quantri'},
     {v:'vong-doi-tk', t:'Vòng đời tài khoản',          h:'KPI · khoá · mở lại · đặt lại',      ic:'pulse', perm:'qt_trang', capMo:'quantri'},
     {v:'hang-tai-lieu',t:'Xếp hạng tài liệu 1–100',    h:'KPI và cấp bậc mới mở tài liệu hay', ic:'crown', perm:'qt_trang', capMo:'quantri'},
@@ -1612,7 +1622,7 @@ G.NAV = [
     {v:'tang-truong', t:'Tài chính & tăng trưởng',     h:'Dòng tiền nuôi được sứ mệnh',        ic:'chart', perm:'fin_view', capMo:'taichinh'},
     {v:'chi-phi',     t:'Kiến trúc chi phí',           h:'Trần 500.000đ/tháng · nặng ở máy',   ic:'target', perm:'fin_view', capMo:'taichinh'},
     {v:'hai-long',    t:'Chỉ số hài lòng & góp ý',     h:'Mục tiêu 90% · nghe khách nói thật', ic:'heart', perm:'nghe_chung', capMo:'nghe'},
-    {v:'tai-lieu-khach',t:'Tài liệu gia đình gửi lên',  h:'Đọc sự sáng tạo để nâng cấp lộ trình',ic:'seed', perm:'nghe_chung', capMo:'nghe'},
+    {v:'tai-lieu-khach',t:'Tài liệu gia đình gửi lên',  h:'Đọc sự sáng tạo để nâng cấp lộ trình',ic:'seed', perm:'pro_consult', capMo:'nghe'},
     {v:'kiem-thu',    t:'Phòng kiểm thử 4 chuyên gia',  h:'Khó tính · Hiểu biết · Kỹ sư · Ngôn từ',ic:'target', perm:'qt_trang', capMo:'quantri'},
     {v:'chuan-1000',  t:'Chuẩn 1000 điểm',             h:'Mười nhóm · từng chi tiết một',      ic:'star', perm:'qt_trang', capMo:'quantri'},
     {v:'ai-dieu-phoi',t:'AI điều phối',               h:'Giới hạn tầng · định tuyến KPI · nâng cấp nghề',ic:'brain', perm:'nghe_chung', capMo:'nghe'},
@@ -5123,7 +5133,14 @@ G.VIEWS['kho'] = function(){
 
 /* ══════════════════ 03 · 220 PHÁC ĐỒ ══════════════════ */
 G.VIEWS['phac-do'] = function(){
-  if(!G.can('pro_coach')) return U.lockCard();
+  /* Kho tra cứu của nghề, không phải công cụ thao tác với gia đình.
+     Bảng PERM đã nói rõ: nghe_chung mở cho R01–R12 — "toàn bộ kho nghề".
+     Khoá ở pro_coach hoặc pro_consult thì Chuyên gia đánh giá, Chuyên gia
+     tư vấn và Phân tích dữ liệu thấy mục này trong trình đơn mà bấm vào
+     chỉ nhận được một thẻ khoá — đúng loại mục chết anh Quang đã bảo dẹp.
+     Quyền THAO TÁC (buồng lái Coach, cổng nghiệm thu, xuất dữ liệu) vẫn
+     giữ nguyên ở pro_coach và pro_approve. */
+  if(!G.can('nghe_chung')) return U.lockCard();
   var nhom = {};
   G.PHACDO.forEach(function(p){ (nhom[p.nhomTen||'Khác'] = nhom[p.nhomTen||'Khác'] || []).push(p); });
   var keys = Object.keys(nhom).sort();
@@ -5156,7 +5173,14 @@ G.phacDoModal = function(ma){
 
 /* ══════════════════ 03 · 1.000 KỊCH BẢN ══════════════════ */
 G.VIEWS['kich-ban'] = function(){
-  if(!G.can('pro_consult')) return U.lockCard();
+  /* Kho tra cứu của nghề, không phải công cụ thao tác với gia đình.
+     Bảng PERM đã nói rõ: nghe_chung mở cho R01–R12 — "toàn bộ kho nghề".
+     Khoá ở pro_coach hoặc pro_consult thì Chuyên gia đánh giá, Chuyên gia
+     tư vấn và Phân tích dữ liệu thấy mục này trong trình đơn mà bấm vào
+     chỉ nhận được một thẻ khoá — đúng loại mục chết anh Quang đã bảo dẹp.
+     Quyền THAO TÁC (buồng lái Coach, cổng nghiệm thu, xuất dữ liệu) vẫn
+     giữ nguyên ở pro_coach và pro_approve. */
+  if(!G.can('nghe_chung')) return U.lockCard();
   var o = U.ph({eyebrow:'NHÓM 03 · KHO BÁU VẬT', ic:'ritual', t:'Một nghìn kịch bản chuyên môn',
     lead:'Năm trăm kịch bản tư vấn và năm trăm kịch bản coaching, phủ đủ năm tầng. Mỗi buổi có câu mở đúng nhịp, câu chốt và điều tuyệt đối không được làm.'});
   o += '<div class="row wrap mb" style="gap:6px">'+
@@ -5204,7 +5228,14 @@ G.kichBanModal = function(ma){
 
 /* ══════════════════ 03 · 42 MÔ THỨC ══════════════════ */
 G.VIEWS['mo-thuc'] = function(){
-  if(!G.can('pro_coach')) return U.lockCard();
+  /* Kho tra cứu của nghề, không phải công cụ thao tác với gia đình.
+     Bảng PERM đã nói rõ: nghe_chung mở cho R01–R12 — "toàn bộ kho nghề".
+     Khoá ở pro_coach hoặc pro_consult thì Chuyên gia đánh giá, Chuyên gia
+     tư vấn và Phân tích dữ liệu thấy mục này trong trình đơn mà bấm vào
+     chỉ nhận được một thẻ khoá — đúng loại mục chết anh Quang đã bảo dẹp.
+     Quyền THAO TÁC (buồng lái Coach, cổng nghiệm thu, xuất dữ liệu) vẫn
+     giữ nguyên ở pro_coach và pro_approve. */
+  if(!G.can('nghe_chung')) return U.lockCard();
   var o = U.ph({eyebrow:'NHÓM 03 · KHO BÁU VẬT', ic:'brain', grad:1, t:'Mô thức huấn luyện gốc',
     lead:'Chép lại từ sổ tay viết tay của người sáng lập Học viện GITA. Đây là bộ công cụ chẩn đoán và can thiệp của Tầng 5 — mạnh, và vì mạnh nên đi kèm ranh giới nghề nghiệp.'});
   o += '<div class="card mb" style="border-color:rgba(251,146,60,.32)">'+
@@ -5978,7 +6009,11 @@ G.VIEWS['nhat-ky-ht'] = function(){
 };
 /* ═══════════════ 05 · CHỈ SỐ HÀI LÒNG & GÓP Ý ═══════════════ */
 G.VIEWS['hai-long'] = function(){
-  if(!G.can('pro_consult')) return U.lockCard();
+  /* Chính sách và số liệu tổng hợp, không phải hồ sơ của một nhà cụ thể.
+     Phân tích dữ liệu (R12) phải đọc được thì mới phân tích được — mà bảng
+     PERM vốn đã xếp R12 trong nghe_chung. Khoá ở pro_consult chỉ tạo ra một
+     mục chết trong trình đơn của họ. */
+  if(!G.can('nghe_chung')) return U.lockCard();
   var H = G.HAILONG;
   var o = U.ph({eyebrow:'NHÓM 05 · VẬN HÀNH', ic:'heart', grad:1, t:'Chỉ số hài lòng & góp ý',
     lead:'Mục tiêu 90% hài lòng. Cách duy nhất tới đó là nghe khách nói thật — kể cả câu khó nghe — rồi đưa thẳng vào hàng chờ cải tiến.'});
@@ -6036,7 +6071,9 @@ G.VIEWS['hai-long'] = function(){
 
 /* ═══════════════ 05 · TÀI LIỆU GIA ĐÌNH GỬI LÊN ═══════════════ */
 G.VIEWS['tai-lieu-khach'] = function(){
-  if(!G.can('pro_coach')) return U.lockCard();
+  /* Tư vấn cũng nhận và soát tài liệu gia đình gửi lên — đó là việc của
+     khâu mở cửa, không riêng của Coach. */
+  if(!G.can('pro_consult')) return U.lockCard();
   var T = G.TAILIEU;
   var o = U.ph({eyebrow:'NHÓM 05 · VẬN HÀNH', ic:'seed', grad:1, t:'Tài liệu gia đình gửi lên',
     lead:T.nguyenTac});
@@ -6740,7 +6777,10 @@ G.VIEWS['chuan-nhat'] = function(){
 
 /* ═══════════════ AI ĐIỀU PHỐI ═══════════════ */
 G.VIEWS['ai-dieu-phoi'] = function(){
-  if(!G.can('pro_coach')) return U.lockCard();
+  /* Chính sách điều phối trợ lý, không phải hồ sơ của nhà nào. Tư vấn dùng
+     trợ lý với gia đình từ buổi đầu; Phân tích dữ liệu cần đọc để đánh giá
+     trợ lý đang trả lời ra sao. Cả hai đều nằm trong nghe_chung. */
+  if(!G.can('nghe_chung')) return U.lockCard();
   var P = G.AIPOLICY;
   var o = U.ph({eyebrow:'NHÓM 05 · VẬN HÀNH', ic:'brain', grad:1, t:'AI điều phối',
     lead:'Trợ lý không thay người dẫn dắt. Nó làm ba việc: trả lời trong đúng phạm vi tầng, chuyển đúng câu hỏi tới đúng người, và nói cho người dẫn dắt biết họ cần nâng cấp gì để theo kịp lộ trình của gia đình mình.'});
@@ -7420,7 +7460,9 @@ G.VIEWS['thanh-tra'] = function(){
 
 /* ═══════════════ RÀ SOÁT KHÔNG BỎ SÓT ═══════════════ */
 G.VIEWS['ra-soat-kh'] = function(){
-  if(!G.can('pro_coach')) return U.lockCard();
+  /* Rà soát mười hai mặt là việc chung của người làm với gia đình, gồm cả
+     Tư vấn. Khoá ở pro_coach thì Tư vấn thấy mục mà không mở được. */
+  if(!G.can('pro_consult')) return U.lockCard();
   var R = G.RASOAT_KH;
   var xong = R.mat.filter(function(m,i){ return G.S.checks['m'+i]; }).length;
   var o = U.ph({eyebrow:'NHÓM 05 · QUẢN TRỊ', ic:'target', grad:1, t:'Rà soát mười hai mặt', lead:R.cot});
@@ -7445,7 +7487,14 @@ G.VIEWS['ra-soat-kh'] = function(){
 
 /* ═══════════════ 250 TÌNH HUỐNG THỰC CHIẾN ═══════════════ */
 G.VIEWS['tinh-huong'] = function(){
-  if(!G.can('pro_consult')) return U.lockCard();
+  /* Kho tra cứu của nghề, không phải công cụ thao tác với gia đình.
+     Bảng PERM đã nói rõ: nghe_chung mở cho R01–R12 — "toàn bộ kho nghề".
+     Khoá ở pro_coach hoặc pro_consult thì Chuyên gia đánh giá, Chuyên gia
+     tư vấn và Phân tích dữ liệu thấy mục này trong trình đơn mà bấm vào
+     chỉ nhận được một thẻ khoá — đúng loại mục chết anh Quang đã bảo dẹp.
+     Quyền THAO TÁC (buồng lái Coach, cổng nghiệm thu, xuất dữ liệu) vẫn
+     giữ nguyên ở pro_coach và pro_approve. */
+  if(!G.can('nghe_chung')) return U.lockCard();
   var ds = G.TINHHUONG || [];
   var o = U.ph({eyebrow:'NHÓM 03 · KHO BÁU VẬT', ic:'ritual', grad:1, t:'Tình huống thực chiến',
     lead:'Hai trăm năm mươi tình huống có thật, chia đều năm tầng và năm mươi nhóm. Mỗi tình huống có mã Key, phân tích, điểm mấu chốt, giải pháp, thử thách bảy ngày và KPI hoàn thành.'});
@@ -8310,7 +8359,14 @@ G.maTranModal = function(ma){
 
 /* ═══════════════ PHIẾU CHỈ DẪN REFERRAL ═══════════════ */
 G.VIEWS['referral'] = function(){
-  if(!G.can('pro_consult')) return U.lockCard();
+  /* Kho tra cứu của nghề, không phải công cụ thao tác với gia đình.
+     Bảng PERM đã nói rõ: nghe_chung mở cho R01–R12 — "toàn bộ kho nghề".
+     Khoá ở pro_coach hoặc pro_consult thì Chuyên gia đánh giá, Chuyên gia
+     tư vấn và Phân tích dữ liệu thấy mục này trong trình đơn mà bấm vào
+     chỉ nhận được một thẻ khoá — đúng loại mục chết anh Quang đã bảo dẹp.
+     Quyền THAO TÁC (buồng lái Coach, cổng nghiệm thu, xuất dữ liệu) vẫn
+     giữ nguyên ở pro_coach và pro_approve. */
+  if(!G.can('nghe_chung')) return U.lockCard();
   var R = G.REFERRAL;
   if(!R) return U.empty('Chưa mở được phiếu referral','Phần này nằm trong kho nghề.');
 
@@ -8390,7 +8446,14 @@ G.VIEWS['referral'] = function(){
 
 /* ═══════════════ CHÂN DUNG TỆP KHÁCH HÀNG ═══════════════ */
 G.VIEWS['chan-dung-kh'] = function(){
-  if(!G.can('pro_consult')) return U.lockCard();
+  /* Kho tra cứu của nghề, không phải công cụ thao tác với gia đình.
+     Bảng PERM đã nói rõ: nghe_chung mở cho R01–R12 — "toàn bộ kho nghề".
+     Khoá ở pro_coach hoặc pro_consult thì Chuyên gia đánh giá, Chuyên gia
+     tư vấn và Phân tích dữ liệu thấy mục này trong trình đơn mà bấm vào
+     chỉ nhận được một thẻ khoá — đúng loại mục chết anh Quang đã bảo dẹp.
+     Quyền THAO TÁC (buồng lái Coach, cổng nghiệm thu, xuất dữ liệu) vẫn
+     giữ nguyên ở pro_coach và pro_approve. */
+  if(!G.can('nghe_chung')) return U.lockCard();
   var C = G.CHANDUNG_KH;
   if(!C) return U.empty('Chưa mở được chân dung khách hàng','Phần này nằm trong kho nghề.');
 
@@ -8662,7 +8725,11 @@ function tc(t){ var x=(G.TIERS||[]).filter(function(y){return y.code===t;})[0]; 
 
 /* ═══════════════ XƯƠNG SỐNG PHƯƠNG PHÁP ═══════════════ */
 G.VIEWS['phuong-phap'] = function(){
-  if(!G.can('pro_coach')) return U.lockCard();
+  /* Kho nghề, không phải công cụ Coach: Tư vấn phải đọc được xương sống
+     phương pháp thì mới nói đúng với gia đình ở buổi mở cửa. Trước đây khoá
+     ở pro_coach nên Tư vấn thấy mục này trong trình đơn mà bấm vào chỉ ra
+     một thẻ khoá — một mục chết. */
+  if(!G.can('nghe_chung')) return U.lockCard();
   var X = G.XUONG_SONG, P = G.PHUONGPHAP, S = G.SACH_THAMKHAO, V = G.NGUON_VAITRO;
   if(!X) return U.empty('Chưa mở được phần phương pháp','Phần này nằm trong kho nghề.');
 
@@ -8803,7 +8870,14 @@ G.VIEWS['hoso-vip'] = function(){
 
 /* ═══════════════ CHIẾN LƯỢC CHUYỂN ĐỔI ═══════════════ */
 G.VIEWS['chuyen-doi'] = function(){
-  if(!G.can('pro_consult')) return U.lockCard();
+  /* Kho tra cứu của nghề, không phải công cụ thao tác với gia đình.
+     Bảng PERM đã nói rõ: nghe_chung mở cho R01–R12 — "toàn bộ kho nghề".
+     Khoá ở pro_coach hoặc pro_consult thì Chuyên gia đánh giá, Chuyên gia
+     tư vấn và Phân tích dữ liệu thấy mục này trong trình đơn mà bấm vào
+     chỉ nhận được một thẻ khoá — đúng loại mục chết anh Quang đã bảo dẹp.
+     Quyền THAO TÁC (buồng lái Coach, cổng nghiệm thu, xuất dữ liệu) vẫn
+     giữ nguyên ở pro_coach và pro_approve. */
+  if(!G.can('nghe_chung')) return U.lockCard();
   var C = G.CHUYENDOI;
   if(!C) return U.empty('Chưa mở được chiến lược chuyển đổi','Phần này nằm trong kho nghề.');
 
@@ -8853,7 +8927,11 @@ G.VIEWS['chuyen-doi'] = function(){
 
 /* ═══════════════ TRỢ LÝ CHĂM SÓC TỰ ĐỘNG ═══════════════ */
 G.VIEWS['ai-cham'] = function(){
-  if(!G.can('pro_consult')) return U.lockCard();
+  /* Chính sách và số liệu tổng hợp, không phải hồ sơ của một nhà cụ thể.
+     Phân tích dữ liệu (R12) phải đọc được thì mới phân tích được — mà bảng
+     PERM vốn đã xếp R12 trong nghe_chung. Khoá ở pro_consult chỉ tạo ra một
+     mục chết trong trình đơn của họ. */
+  if(!G.can('nghe_chung')) return U.lockCard();
   var A = G.AICHAM;
   if(!A) return U.empty('Chưa mở được đặc tả trợ lý','Phần này nằm trong kho nghề.');
 
@@ -8893,7 +8971,14 @@ G.VIEWS['ai-cham'] = function(){
 
 /* ═══════════════ SINH TRẮC HỌC VÂN TAY ═══════════════ */
 G.VIEWS['van-tay'] = function(){
-  if(!G.can('pro_consult')) return U.lockCard();
+  /* Kho tra cứu của nghề, không phải công cụ thao tác với gia đình.
+     Bảng PERM đã nói rõ: nghe_chung mở cho R01–R12 — "toàn bộ kho nghề".
+     Khoá ở pro_coach hoặc pro_consult thì Chuyên gia đánh giá, Chuyên gia
+     tư vấn và Phân tích dữ liệu thấy mục này trong trình đơn mà bấm vào
+     chỉ nhận được một thẻ khoá — đúng loại mục chết anh Quang đã bảo dẹp.
+     Quyền THAO TÁC (buồng lái Coach, cổng nghiệm thu, xuất dữ liệu) vẫn
+     giữ nguyên ở pro_coach và pro_approve. */
+  if(!G.can('nghe_chung')) return U.lockCard();
   var V = G.VANTAY;
   if(!V) return U.empty('Chưa mở được phần này','Phần này nằm trong kho nghề.');
 
