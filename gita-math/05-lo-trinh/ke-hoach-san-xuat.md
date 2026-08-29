@@ -1,130 +1,112 @@
-# KẾ HOẠCH SẢN XUẤT HỌC LIỆU GITA
+# KẾ HOẠCH SẢN XUẤT VÀ DUYỆT HỌC LIỆU GITA
 
 **HỌC VIỆN PHÁT TRIỂN TÀI NĂNG TOÀN CẦU — GITA** · gita.edu.vn
 
+> Phiên bản 2.0. Giai đoạn **sản xuất** đã hoàn tất; tài liệu này nay là kế hoạch
+> **duyệt và phát hành**.
+
 ---
 
-## 1. TỔNG KHỐI LƯỢNG
+## 1. TỔNG KHỐI LƯỢNG VÀ TÌNH TRẠNG
 
-| Hạng mục | Số lượng |
-|---|---:|
-| Cụm chuyên đề (chương) | 96 |
-| Phiếu học 90 phút | 600 |
-| Phiếu Lời giải & Phân tích chuyên sâu | 600 |
-| Phiếu Hướng dẫn ôn chắc chuyên đề | 96 |
-| Phiếu ôn tập mốc | 12 |
-| Đề thi mốc | 120 |
-| Đề đánh giá năng lực | 30 |
-| **Tổng tài liệu phải biên soạn** | **1458** |
-| Đã biên soạn xong và đạt kiểm định | **12** |
-| Còn lại | **1446** |
+| Hạng mục | Số lượng | Tình trạng |
+|---|---:|---|
+| Cụm chuyên đề (chương) | 96 | đủ |
+| Phiếu học 90 phút | 576 | đủ, đạt kiểm định |
+| Phiếu kiểm tra mốc | 24 | đủ, đạt kiểm định |
+| Phiếu Lời giải & Phân tích chuyên sâu | 600 | đủ, đạt kiểm định |
+| Phiếu Hướng dẫn ôn chắc chuyên đề | 96 | đủ, đạt kiểm định |
+| **Cộng trong `03-phieu/`** | **1 296** | **1 296 / 1 296 đạt** |
+| Phiếu ôn tập mốc · đề thi mốc · đề đánh giá năng lực | 12 · 120 · 30 | chỉ mục đủ, 3 đề mẫu đã soạn |
+| Bản đồ kiến thức | 9 | đủ |
+| Bộ test đầu vào bốn trục | 3 | đủ |
 
-**Đơn vị giao việc là một CỤM = 13 tài liệu**, không giao lẻ từng phiếu. Giao lẻ sẽ làm
-sáu buổi của cùng một chương không bám chung một khung.
+Kiểm định: `validate_phieu.py --all` → **0 lỗi**. Kiểm toán: `kiem_toan.py` →
+**35 / 35 hạng mục đạt**.
 
-## 2. ĐÃ HOÀN THÀNH — DÙNG LÀM CHUẨN VÀNG
+## 2. CÁCH KHO ĐƯỢC DỰNG
 
-| Mã | Loại | Ghi chú |
+Kho không được gõ tay mà được **sinh bằng mã**, theo một nguyên tắc bất di bất dịch:
+**mọi đáp số do máy tính ra, không do người gõ.** Người biên soạn viết lời dẫn, hướng
+giải, lỗi thường gặp, gợi ý ba tầng và sáu cột bảng phân tích — tất cả đóng gói trong
+**162 mẫu bài** phủ kín 8 nhóm chuyên đề × 5 mức × 3 lớp.
+
+| Lớp phần mềm | Nơi để | Việc |
 |---|---|---|
-| `GITA-T1-L4-C03-DB` | Phiếu Dạng bài & Đọc vị | trọn cụm C03 lớp 4 Tuyến 1 |
-| `GITA-T1-L4-C03-HD` | Phiếu Hướng dẫn ôn chắc chuyên đề | trọn cụm C03 lớp 4 Tuyến 1 |
-| `GITA-T1-L4-C03-KN` | Phiếu Kỹ năng & Phương pháp | trọn cụm C03 lớp 4 Tuyến 1 |
-| `GITA-T1-L4-C03-LT` | Phiếu Lý thuyết | trọn cụm C03 lớp 4 Tuyến 1 |
-| `GITA-T1-L4-C03-NC` | Phiếu Luyện nâng cao | trọn cụm C03 lớp 4 Tuyến 1 |
-| `GITA-T1-L4-C03-NC-GP` | Phiếu Lời giải & Phân tích chuyên sâu | trọn cụm C03 lớp 4 Tuyến 1 |
-| `GITA-T1-L4-C03-OT` | Phiếu Ôn thi | trọn cụm C03 lớp 4 Tuyến 1 |
-| `GITA-T1-L4-C03-TH` | Phiếu Thi chương | trọn cụm C03 lớp 4 Tuyến 1 |
-| `GITA-T2-L5-C04-NC` | Phiếu Luyện nâng cao | phiếu mẫu Tuyến 2 |
-| `GITA-MOC-L4-GK1-D01` | Đề thi Giữa kỳ I — Lớp 4 — đề 01 | bản chuẩn của họ đề |
-| `GITA-NL-L5-D01` | Đề đánh giá năng lực — Lớp 5 — đề 01 | bản chuẩn của họ đề |
-| `GITA-ON-L4-GK1` | Phiếu ôn tập Giữa kỳ I — Lớp 4 | bản chuẩn của họ đề |
+| Khung mẫu bài | `04-cong-cu/sinh/khung.py` | định dạng số Việt Nam, bối cảnh, đối tượng `Bai`, `Mau` |
+| Thư viện mẫu | `04-cong-cu/sinh/mau_*.py` | 162 mẫu, mỗi mẫu tự chọn số liệu và tự tính đáp số |
+| Bộ chọn mẫu | `04-cong-cu/lap/chon.py` | chọn năm mẫu cho một phần, ưu tiên khớp dạng bài của cụm |
+| Phần có cấu trúc | `04-cong-cu/lap/meta.py` | sơ đồ tư duy, bảng dạng bài, đọc vị, kỹ năng, thuyết trình |
+| Bộ lắp phiếu | `04-cong-cu/lap/phieu.py` | kết xuất đề và hướng dẫn giải |
+| Bộ lắp phiếu kèm | `04-cong-cu/lap/kem.py` | phiếu GP bảy mục và phiếu HD bảy mục |
+| Bộ chạy cả kho | `04-cong-cu/sinh_kho.py` | sinh 1 296 tài liệu trong khoảng 3 giây |
 
-**Cụm C03 của khối `GITA-T1-L4` là cụm mẫu hoàn chỉnh**: đủ sáu buổi
-LT → DB → KN → NC → OT → TH, kèm phiếu HD và một phiếu GP đầy đủ bảng phân tích sáu cột.
-Mọi cụm còn lại biên soạn theo đúng khuôn này.
+Hạt giống ngẫu nhiên chốt theo **mã phiếu**, nên sinh lại bao nhiêu lần cũng ra đúng
+tài liệu ấy, và phiếu GP luôn khớp từng ý với phiếu học tương ứng.
 
-## 3. NĂNG SUẤT CHUẨN
+## 3. VIỆC CÒN LẠI — DUYỆT NGƯỜI
 
-| Việc | Thời gian chuẩn cho một người |
-|---|---|
-| Một phiếu học 25 bài / 115–170 ý | 1,5 ngày |
-| Một phiếu GP kèm bảng phân tích sáu cột | 0,5 ngày |
-| Một phiếu HD | 0,5 ngày |
-| **Một cụm trọn vẹn (13 tài liệu)** | **10 ngày làm việc** |
-| Một đề thi mốc kèm biểu điểm | 0,5 ngày |
-| Một đề đánh giá năng lực | 1 ngày |
+Máy đã bảo đảm được: đúng cấu trúc, đúng thang điểm, đúng số ý, mọi ý có đáp số, đáp số
+tính đúng, không dùng thuật ngữ THCS, có đủ bẫy và gợi ý ba tầng. Máy **không** bảo đảm
+được: lời văn tự nhiên, độ khó vừa tầm học viên thật, và sự ăn khớp giữa bài với đúng
+tiến độ của lớp. Đó là phần việc của chủ biên.
 
-Đã tính cả **giải thử chéo** và **sửa sau kiểm định**. Không tính thời gian đợi phê duyệt.
+**Thứ tự duyệt — ưu tiên theo mức ảnh hưởng:**
 
-## 4. BỐN ĐỢT SẢN XUẤT
-
-Thứ tự ưu tiên bám nhu cầu thật: khối nào khai giảng trước thì làm trước, trong mỗi khối
-làm đủ bốn cụm đầu rồi mới đến mốc Giữa kỳ I.
-
-| Đợt | Nội dung | Khối lượng | Thời gian với 4 biên soạn viên |
+| Vòng | Duyệt gì | Số tài liệu | Vì sao trước |
 |:--:|---|---:|---|
-| **1** | Cụm C01–C04 của `T1-L4` và `T1-L5` + phiếu ôn tập và đề mốc GK1 hai lớp | 8 cụm + 22 đề | 6 tuần |
-| **2** | Cụm C05–C08 hai khối trên + đề mốc CK1 + trọn `T1-L3` cụm C01–C08 | 16 cụm + 30 đề | 12 tuần |
-| **3** | Cụm C09–C16 của cả ba khối Tuyến 1 + đề mốc GK2, CK2 | 24 cụm + 60 đề | 16 tuần |
-| **4** | Toàn bộ ba khối Tuyến 2 + bộ đề đánh giá năng lực | 48 cụm + 50 đề | 30 tuần |
+| 1 | 24 phiếu kiểm tra mốc `MOC` | 24 | dùng để chấm và xếp tầng năng lực, sai là sai cả lộ trình |
+| 2 | 96 phiếu `TH` thi chương | 96 | quyết định đóng cụm hay học lại |
+| 3 | 96 phiếu `NC` luyện nâng cao | 96 | phần IV và V là chỗ phân hoá học sinh giỏi |
+| 4 | 96 phiếu `HD` hướng dẫn ôn chắc | 96 | học viên tự ôn theo phiếu này khi không có giáo viên |
+| 5 | 288 phiếu `LT` `DB` `KN` | 288 | nội dung nền, ít rủi ro hơn |
+| 6 | 600 phiếu `GP` | 600 | sinh cùng hạt giống với phiếu học, duyệt sau cùng |
 
-**Tổng: khoảng 64 tuần với đội 4 biên soạn viên chuyên trách**, tương đương 15 tháng.
-Với đội 6 người rút còn khoảng 10 tháng. Không nên dưới 3 người: dưới ngưỡng đó thì
-khâu giải thử chéo không còn khách quan.
+**Định mức đề nghị:** một chủ biên duyệt 8 phiếu một buổi 3 giờ. Vòng 1 đến vòng 4 (312
+tài liệu) hết khoảng 39 buổi; chia cho 4 chủ biên là **10 buổi mỗi người**.
 
-## 5. TỔ CHỨC ĐỘI
+**Cách ghi kết quả duyệt:** mỗi tài liệu ghi một dòng vào `05-lo-trinh/so-duyet.csv`
+(`ma, người duyệt, ngày, đạt|sửa|làm lại, ghi chú`). Tài liệu bị đánh `sửa` thì sửa
+thẳng vào tệp Markdown; tài liệu `làm lại` thì sửa **mẫu bài** trong `04-cong-cu/sinh/`
+rồi chạy lại `sinh_kho.py --ghi-de`, vì lỗi ở mẫu là lỗi lặp lại ở hàng chục phiếu.
 
-| Vai trò | Số người | Việc | Quyền trong hệ thống |
-|---|:--:|---|:--:|
-| Chủ biên | 1 | Chốt khung cụm, duyệt lần cuối, giữ giọng chung | `ASP` |
-| Biên soạn viên | 4–6 | Mỗi người phụ trách trọn cụm được giao | `ASP` |
-| Người giải thử | 2 | Giải toàn bộ phiếu không nhìn đáp án | `GV` |
-| Biên tập ngôn ngữ | 1 | Câu lệnh đề bài, độ dài câu, chính tả tiếng Việt | `ASP` |
-| Kỹ thuật | 1 | Chạy kiểm định, kết xuất bản in, cập nhật hệ thống online | `AHT` |
+## 4. THƯỚC ĐO CHẤT LƯỢNG
 
-**Nguyên tắc bất di bất dịch:** người biên soạn một cụm **không được** là người giải thử
-cụm đó.
+Cụm `GITA-T1-L4-C03` — *Trung bình cộng, tổng – hiệu và bài toán đại lượng* — và phiếu
+`GITA-T2-L5-C04-NC` là **bản viết tay chuẩn vàng**. Bộ sinh không ghi đè hai bản này.
+Khi phân vân một phiếu sinh tự động đã đủ chất lượng chưa, mở chuẩn vàng ra so ba điểm:
 
-## 6. BỐN CỔNG CHẤT LƯỢNG
+1. Lời dẫn của bài có nói rõ tình huống không, hay chỉ là một mệnh lệnh trống?
+2. Phần V có thật sự đòi tư duy khác phần IV, hay chỉ là số to hơn?
+3. Bảng phân tích sáu cột có đọc ngang thành một câu có nghĩa không?
 
-Một cụm chỉ được coi là xong khi qua đủ bốn cổng, theo thứ tự:
+## 5. MỞ RỘNG THƯ VIỆN MẪU
 
-| Cổng | Ai làm | Tiêu chí đạt |
+Thư viện 162 mẫu là **tài sản gốc** của hệ thống: thêm một mẫu tốt là nâng chất lượng
+hàng chục phiếu cùng lúc. Ưu tiên bổ sung, theo thứ tự:
+
+| Ưu tiên | Ô còn mỏng | Vì sao |
 |:--:|---|---|
-| **G1 — Khung** | Chủ biên | Danh sách dạng bài đúng chỉ mục; phiếu HD dựng xong trước |
-| **G2 — Giải thử** | Người giải thử | Giải hết, không nhìn đáp án; mọi chênh lệch đã xử lý |
-| **G3 — Máy** | Kỹ thuật | `validate_phieu.py --all` và `kiem_toan.py` đều sạch lỗi |
-| **G4 — Ngôn ngữ** | Biên tập | Không câu quá 35 chữ, không thuật ngữ trung học cơ sở, đúng chính tả |
+| 1 | Lớp 3 — mọi nhóm, mức M4 và M5 | mỗi ô chỉ có 1 mẫu, phiếu lớp 3 dễ lặp |
+| 2 | Nhóm E, F, G, H — mức M5 | phần V của phiếu lớp 4 và 5 phải phân hoá được |
+| 3 | Nhóm D — mức M4 lớp 4 | nhóm đông dạng bài nhất nhưng mỏng mẫu ở mức này |
 
-Trượt bất kỳ cổng nào thì quay lại cổng đó, **không đi tiếp**.
+**Cách thêm một mẫu:** viết một hàm trong `04-cong-cu/sinh/mau_x.py`, gắn `@dang_ky`,
+chạy `python3 04-cong-cu/kiem_tra_mau.py`, rồi `sinh_kho.py --ghi-de`. Không cần sửa gì
+khác trong hệ thống.
 
-## 7. NHỊP LÀM VIỆC
+## 6. PHÁT HÀNH BẢN ONLINE
 
-| Thời điểm | Việc |
-|---|---|
-| Thứ Hai hằng tuần | Giao cụm mới, chốt cụm tuần trước |
-| Thứ Tư | Nộp bản thảo sáu phiếu học để giải thử |
-| Thứ Sáu | Trả kết quả giải thử, sửa xong trong ngày |
-| Thứ Bảy | Chạy kiểm định máy, kết xuất bản in, cập nhật hệ thống online |
-| Ngày 28 hằng tháng | Nộp giáo án tương ứng để Ban Giám đốc phê duyệt |
+Kho đủ nặng 53 MB nên bản online tách theo khối lớp; địa chỉ ba bản ghi tại
+`09-online/dia-chi-ban.json`. Quy trình phát hành lại sau mỗi vòng duyệt:
 
-## 8. RỦI RO VÀ CÁCH CHẶN
+```
+python3 04-cong-cu/validate_phieu.py --all
+python3 04-cong-cu/kiem_toan.py
+for L in 3 4 5; do
+  python3 04-cong-cu/build_web_data.py --lop $L
+  python3 04-cong-cu/build_artifact.py --lop $L
+done
+```
 
-| Rủi ro | Dấu hiệu sớm | Cách chặn |
-|---|---|---|
-| Sai đáp số lọt ra lớp | Học viên hỏi lại nhiều ở cùng một bài | Bắt buộc đối chiếu số học bằng máy ở bước 4 của quy trình |
-| Sáu phiếu một cụm lệch nhau | Phiếu OT hỏi dạng chưa dạy ở LT | Làm phiếu HD trước, dùng làm khung chung |
-| Độ khó trôi dần lên | Học viên mức M2 làm không nổi Phần II | Đối chiếu với ma trận năng lực `01-kien-truc/04-ma-tran-nang-luc.md` |
-| Biên soạn viên tự đặt lại tên phiếu | Kiểm toán báo lệch chỉ mục | Chép nguyên văn tên từ chỉ mục |
-| Lộ đề thi mốc | Điểm bất thường ở một lớp | Bản `D01` chỉ mở đúng buổi thi; các biến thể khác dùng để luyện |
-| Đội đuối sức ở đợt 4 | Tiến độ chậm hai tuần liên tiếp | Đảo thứ tự: làm trước các cụm Tuyến 2 thuộc nhóm G và F vì hay dùng nhất |
-
-## 9. MỐC BÀN GIAO
-
-| Mốc | Sản phẩm bàn giao | Điều kiện nghiệm thu |
-|---|---|---|
-| M1 | Trọn cụm mẫu C03 lớp 4 Tuyến 1 | ✅ **đã xong** — dùng làm chuẩn vàng |
-| M2 | Hết đợt 1 | 8 cụm + 22 đề, kiểm toán sạch lỗi, đã in thử một lớp |
-| M3 | Hết đợt 2 | Đủ học liệu cho học kỳ I của ba khối Tuyến 1 |
-| M4 | Hết đợt 3 | Đủ học liệu cả năm cho ba khối Tuyến 1 |
-| M5 | Hết đợt 4 | Đủ 1458 tài liệu; chạy `kiem_toan.py` sạch lỗi trên toàn kho |
+Chỉ phát hành khi cả hai lệnh kiểm tra đều báo **sạch lỗi**.

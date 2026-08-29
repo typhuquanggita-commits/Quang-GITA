@@ -205,8 +205,9 @@ def main() -> None:
     ap.add_argument("--lop", type=int, choices=(3, 4, 5),
                     help="chỉ nhúng trọn nội dung của khối lớp này (chỉ mục vẫn đủ)")
     ap.add_argument("--ra", type=Path, help="đường dẫn tệp JSON đầu ra")
-    ap.add_argument("--lien-ket", default="{}",
-                    help='JSON {"3": "https://…", "5": "https://…"} — địa chỉ bản của khối khác')
+    ap.add_argument("--lien-ket",
+                    help='JSON {"3": "https://…", "5": "https://…"} — địa chỉ bản của khối '
+                         'khác; bỏ trống thì đọc 09-online/dia-chi-ban.json')
     a = ap.parse_args()
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     chi_muc = json.loads((ROOT / "02-chi-muc" / "index-master.json").read_text(encoding="utf-8"))
@@ -303,7 +304,10 @@ def main() -> None:
         data["phieu"] = {k: v for k, v in phieu.items() if v["meta"]["lop"] == a.lop}
         data["kem"] = {k: v for k, v in kem.items() if v["meta"]["lop"] == a.lop}
         data["meta"]["khoi_lop"] = a.lop
-    data["lien_ket_khoi"] = json.loads(a.lien_ket)
+    dc = ROOT / "09-online" / "dia-chi-ban.json"
+    data["lien_ket_khoi"] = (json.loads(a.lien_ket) if a.lien_ket
+                             else (json.loads(dc.read_text(encoding="utf-8"))
+                                   if dc.exists() else {}))
     data = nen_chuoi(data)
     out = a.ra or (OUT_DIR / (f"gita-data-L{a.lop}.json" if a.lop else "gita-data.json"))
     out.write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")

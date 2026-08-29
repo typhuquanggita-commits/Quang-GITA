@@ -35,6 +35,9 @@ def main() -> None:
     # Riêng "</" phải thoát để dữ liệu không đóng sớm thẻ script.
     an_toan = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
     out = moc.sub(lambda m: an_toan, app, count=1)
+    if a.lop:                       # mỗi bản một tên riêng để phân biệt trong thư viện
+        out = out.replace("<title>Học viện GITA</title>",
+                          f"<title>GITA Toán lớp {a.lop}</title>", 1)
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(out, encoding="utf-8")
     print(f"✔ {OUT.relative_to(ROOT)} — {OUT.stat().st_size/1024:.0f} KB")
