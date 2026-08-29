@@ -129,17 +129,25 @@ G.soatChatLuong = function(){
 };
 
 /* ═══════════ PHÉP SOÁT 4 · DỰNG THỬ MỌI MÀN ═══════════ */
+/* Màn nào gọi lại G.soatTatCa() trong lúc dựng thì phải nằm ở đây. */
+var TU_GOI = ['soat-day-du', 'tu-van-hanh'];
+G.TU_GOI_SOAT = TU_GOI;
+
 G.soatManHinh = function(){
   var KHOA = '<div class="card center" style="padding:40px">';
   var CHAN = /kho nghề|cấp phép|chưa mở được|chưa có|Đăng nhập lại|chưa thao tác được|dành cho/i;
   var man = [];
   (G.NAV||[]).forEach(function(g){ (g.items||[]).forEach(function(i){
-    /* BỎ CHÍNH MÀN NÀY RA. Không bỏ thì soat-day-du dựng thử soat-day-du,
-       mà lần dựng ấy lại dựng thử soat-day-du — đệ quy vô tận, trình duyệt
-       treo. Lỗi này đã làm bộ kiểm phát hành đứng im ở mục 2. Màn tự soát
-       không tự soát chính nó được; phần kiểm nó nằm ở mục 34 của
+    /* BỎ MỌI MÀN TỰ GỌI LẠI BỘ SOÁT. Không bỏ thì soat-day-du dựng thử
+       soat-day-du, mà lần dựng ấy lại dựng thử soat-day-du — đệ quy vô
+       tận, trình duyệt treo. Lỗi này đã làm bộ kiểm phát hành đứng im ở
+       mục 2, và tái diễn ở v8.4 khi màn tu-van-hanh gọi G.soatTatCa()
+       trong lúc dựng.
+
+       Danh sách này phải mở rộng mỗi lần có màn mới gọi bộ soát. Màn tự
+       soát không tự soát chính nó được; phần kiểm chúng nằm ở mục 34 của
        tools/kiem-tra.js, chạy từ bên ngoài. */
-    if(i.v !== 'soat-day-du') man.push(i.v);
+    if(TU_GOI.indexOf(i.v) < 0) man.push(i.v);
   }); });
   var loi = [], rong = [], khoa = 0, ok = 0;
   man.forEach(function(v){
@@ -161,6 +169,9 @@ G.soatManHinh = function(){
    khác — không được chạy lại cả bộ. Nút "Soát lại ngay" xoá đệm rồi dựng. */
 var dem = null;
 G.soatXoaDem = function(){ dem = null; };
+/* Đã có kết quả trong bộ đệm chưa. Màn khác hỏi trước khi đọc, để không
+   vô tình ép bộ soát chạy giữa lúc chính nó đang dựng màn. */
+G.soatCoSan = function(){ return dem != null; };
 G.soatTatCa = function(batBuocLai){
   if(dem && !batBuocLai) return dem;
   dem = soatThat();

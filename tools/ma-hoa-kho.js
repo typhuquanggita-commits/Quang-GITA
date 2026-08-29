@@ -85,6 +85,10 @@ const NGHE = [
   /* Bảng quy trình toàn hệ: nó vẽ ra cách Học viện vận hành, gồm cả
      luồng giữ tài sản và luồng thanh tra. Đây là bản đồ nội bộ. */
   'QT_LUONG', 'QT_RIENG', 'QT_LUAT',
+  /* Tự vận hành: danh mục canh, ngưỡng, và những việc máy tự làm. Đây là
+     bản đồ phòng thủ của hệ — mở ra công khai là chỉ cho người muốn dò
+     biết đúng ngưỡng nào chưa bị canh. */
+  'TD_MUC', 'TD_CANH', 'TD_TRITHUC', 'TD_MAYCHU', 'TD_KHONG', 'TD_THAT',
   /* Gốc NLP và trạng thái bằng chứng: đây là chuẩn nghề — nó nói rõ chỗ
      nào Học viện đang nói chắc hơn bằng chứng cho phép. Ở kho nghề. */
   'NLP_GOC', 'NLP_MUC', 'NLP_CAITIEN', 'NLP_LUAT',

@@ -2918,6 +2918,56 @@ const { chromium } = require(PW);
       'phụ huynh KHÔNG mở hết được dù cờ bị đặt — công tắc là quyền, không phải biến',
       'được:' + khachMoHet.duoc + ' bật:' + khachMoHet.bat + ' danh sách:' + khachMoHet.ds);
 
+    /* ── Tự vận hành: quét thật, và KHÔNG đệ quy ──
+       Màn tu-van-hanh gọi lại bộ tự soát. Bộ tự soát dựng thử mọi màn,
+       trong đó có chính màn ấy. Không chặn thì trình duyệt treo — đã xảy
+       ra một lần với soat-day-du và tái diễn ở v8.4.
+
+       Mục này canh ba điều: màn dựng được trong thời gian hợp lý (đệ quy
+       thì nó không bao giờ xong), danh sách màn tự gọi có đủ tên, và
+       phép quét trả về số thật. */
+    const tvh = await p.evaluate(() => {
+      const G = window.G;
+      if (!G.tdQuet) return { co:false };
+      /* Mở màn tự soát trước để có số trong bộ đệm, đúng như người dùng làm */
+      G.S.view = 'soat-day-du'; G.render();
+      const t0 = performance.now();
+      G.S.view = 'tu-van-hanh'; G.render();
+      const ms = Math.round(performance.now() - t0);
+      const q = G.tdQuet();
+      return { co:true, ms, doDuoc:q.doDuoc, dat:q.dat,
+               hong:q.hong.map(x => x.ma + ':' + x.so),
+               canh:(G.TD_CANH || []).length,
+               muc:(G.TD_MUC || []).length,
+               khong:(G.TD_KHONG || []).length,
+               that:(G.TD_THAT || []).length,
+               tuGoi:(G.TU_GOI_SOAT || []).slice().sort().join(' '),
+               triMay:(G.TD_TRITHUC || []).filter(x => x.may).length,
+               triNguoi:(G.TD_TRITHUC || []).filter(x => !x.may).length,
+               mcThat:((G.TD_MAYCHU || {}).that || '').length };
+    });
+    bao(tvh.co, 'có phép quét tự vận hành để kiểm');
+    if (tvh.co) {
+      bao(tvh.ms < 3000,
+        'màn tự vận hành dựng xong nhanh — đệ quy thì nó không bao giờ xong', tvh.ms + 'ms');
+      bao(tvh.tuGoi === 'soat-day-du tu-van-hanh',
+        'danh sách màn tự gọi bộ soát có đủ tên — thiếu một tên là treo trình duyệt', tvh.tuGoi);
+      bao(tvh.doDuoc >= 6 && tvh.dat === tvh.doDuoc,
+        'mọi mục canh đo được ở trình duyệt đều đang đạt',
+        tvh.dat + '/' + tvh.doDuoc + (tvh.hong.length ? ' · hỏng: ' + tvh.hong.join(' ') : ''));
+      bao(tvh.canh === 10 && tvh.muc === 4,
+        'đủ mười mục canh và bốn mức tự động', tvh.canh + ' canh · ' + tvh.muc + ' mức');
+      bao(tvh.triMay === 3 && tvh.triNguoi === 1,
+        'đường cập nhật kiến thức: máy đi ba chặng, chặng nhập kho phải có người duyệt',
+        tvh.triMay + ' máy · ' + tvh.triNguoi + ' người');
+      bao(tvh.khong >= 6,
+        'có danh sách việc KHÔNG BAO GIỜ tự động — tự động hoá phần chịu trách nhiệm là bỏ tay lái',
+        tvh.khong + ' việc');
+      bao(tvh.that === 3 && tvh.mcThat >= 100,
+        'hệ thống tự nói ra phần nó KHÔNG làm được, không hứa tuyệt đối',
+        tvh.that + ' chữ được nói thật · ranh giới máy chủ ' + tvh.mcThat + ' ký tự');
+    }
+
     /* ── Ma trận băng PHẢI ghép được thật ──
        Lớp 4.400 phiếu từng nằm im suốt nhiều đợt phát hành: G.MT_BANG_TANG
        lưu tang là 'T1' còn người gọi truyền số 1, nên phép so sánh === luôn

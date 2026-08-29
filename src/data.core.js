@@ -18,7 +18,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '8.3',
+  version: '8.4',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -579,6 +579,7 @@ G.NAV = [
     {v:'tuyen',      t:'Bốn tuyến chuyên môn',       h:'Engwin · Math · SAT · HSA · bảy mốc trước khi hợp nhất', ic:'orbit', star:1, perm:'qt_trang', capMo:'quantri'},
     {v:'quy-trinh-toan-he',t:'Quy trình toàn Web App', h:'8 luồng · từng bước một màn · quyền của cấp quản trị', ic:'map', star:1, perm:'qt_trang', capMo:'quantri'},
     {v:'kiem-theo-vai',t:'Kiểm thử theo vai',        h:'Ma trận màn × vai · một cú bấm vào vai bất kỳ', ic:'users', star:1, perm:'qt_trang', capMo:'quantri'},
+    {v:'tu-van-hanh', t:'Tự vận hành · tự vá · tự học', h:'4 mức tự động · 10 mục canh · quét thật lúc mở màn', ic:'pulse', star:1, perm:'qt_trang', capMo:'quantri'},
     {v:'nhat-ky-ht',  t:'Nhật ký hệ thống',            h:'Mọi thao tác đều để lại dấu vết',    ic:'book', perm:'qt_trang', capMo:'quantri'}
    ]}
 ];
