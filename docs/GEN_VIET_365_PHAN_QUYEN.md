@@ -2,6 +2,9 @@
 
 **Tập 4.** Ai thấy gì, vì sao, và hàng rào thật nằm ở đâu.
 
+Tập 5 — [`GEN_VIET_365_THU_VIEN.md`](GEN_VIET_365_THU_VIEN.md) — thư viện Gen Việt, phần nội
+dung mà bảng quyền dưới đây cũng chia tầng như mọi phần khác.
+
 Kế thừa nguyên tắc phân quyền của GITA 365 v8 — *bậc càng nhỏ càng nhiều quyền; mỗi quyền
 ghi bậc tối đa được dùng nó; bảng ghi đè xử những chỗ bậc không nói được* — và thêm một
 trục thứ hai mà GITA 365 không có: **bậc năng lực của học viên**.
@@ -137,7 +140,7 @@ im lặng.
 
 ```bash
 node genviet365/dong-goi-artifact.cjs --vai=R16 --bac=B1 hoc-vien.html
-# Bản cắt cho R16 bậc B1: giữ 28/65 màn · 34/103 khoá tra.
+# Bản cắt cho R16 bậc B1: giữ 36/74 màn · 45/115 khoá tra.
 # Kho gốc KHÔNG nằm trong tệp ra.
 ```
 
@@ -170,17 +173,17 @@ Mã thoát khác 0 nghĩa là **không được phát hành**. Bốn lớp:
 |---|---|
 | **Tĩnh** | Màn thiếu · điều hướng trỏ sai · mã màn trùng · khối lạ · khoá tra hỏng hoặc mồ côi · bảng lệch cột · ô rỗng · chữ tạm · mã màu sai · màn chưa gắn quyền · vai không mở được màn nào · tỉ lệ hiển thị lệch · vỏ hoặc bộ gộp thiếu tệp · thiếu CSP · có `eval` · trường dữ liệu vào HTML chưa thoát |
 | **Bản cắt** | Dựng 5 bản cho vai thấp rồi soi: tệp có còn mang theo tiêu đề hay dữ liệu của màn ngoài quyền không (so **số lần xuất hiện**, để không báo nhầm chỗ được nhắc hợp lệ) |
-| **Chạy** | Dựng thật 65 màn bằng Chromium: lỗi JS · màn rỗng ruột · dấu hiệu dựng hỏng |
+| **Chạy** | Dựng thật 74 màn bằng Chromium: lỗi JS · màn rỗng ruột · dấu hiệu dựng hỏng |
 | **Cổng** | Với 8 cấu hình vai, thử **vào thẳng bằng `#hash`** vào từng màn ngoài quyền — phải ra thẻ khoá, không được ra nội dung, và mục ấy không được còn trong mục lục |
 
 Lần chạy gần nhất:
 
 ```
 BẢN CẮT   · dựng 5 bản cho vai thấp và soi rò rỉ nội dung ngoài quyền
-LỚP CHẠY  · dựng thử 65 màn với vai Super Admin
-CỔNG      · thử vào thẳng 213 màn ngoài quyền, trên 8 cấu hình vai · không chỗ nào lọt
+LỚP CHẠY  · dựng thử 74 màn với vai Super Admin
+CỔNG      · thử vào thẳng 216 màn ngoài quyền, trên 8 cấu hình vai · không chỗ nào lọt
 KHỔ MÀN   · soi tràn ngang ở 1400, 900 và 390 điểm ảnh
-KIỂM TĨNH · 65 màn · 65 mục điều hướng · 42 loại khối · 103 khoá tra
+KIỂM TĨNH · 74 màn · 74 mục điều hướng · 45 loại khối · 115 khoá tra
 
 Không lỗi. Đạt.
 ```

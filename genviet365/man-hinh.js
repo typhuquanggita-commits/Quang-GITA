@@ -1,6 +1,6 @@
 /* ═══════════════════════════════════════════════════════════════
    GEN VIỆT 365 · ĐỊNH NGHĨA MÀN HÌNH
-   Mười hai nhóm · 65 màn. Mỗi màn là một danh sách KHỐI; lớp giao diện biết
+   Mười ba nhóm · 74 màn. Mỗi màn là một danh sách KHỐI; lớp giao diện biết
    dựng từng loại khối. Thêm màn mới thì thêm ở đây, không đụng vào
    giao-dien.js — trừ khi cần một loại khối chưa từng có.
    Trong khối "van", dấu *…* thành chữ đậm.
@@ -110,6 +110,18 @@ GV.NHOM = [
       { v: 'nam-dau', t: 'Năm đầu tiên', h: 'Bốn quý, có số' },
       { v: 'ba-muoi-nam', t: 'Ba mươi năm', h: 'Sáu chặng, sáu cổng' },
       { v: 'nguon', t: 'Nguồn', h: 'Tài liệu đã dùng' }
+    ]},
+  { id: 'g13', no: '13', t: 'THƯ VIỆN GEN VIỆT', s: 'Bộ sách sáu quyển về người Việt xuất sắc', mau: '#BE0E16',
+    ds: [
+      { v: 'thu-vien', t: 'Bộ sách Gen Việt', h: 'Sáu quyển · bảy nguyên tắc biên soạn' },
+      { v: 'q1-giu-nuoc', t: 'Quyển 1 · Giữ nước', h: 'Tám danh tướng và nghệ thuật của bên yếu hơn' },
+      { v: 'q2-dung-nuoc', t: 'Quyển 2 · Dựng nước', h: 'Chín nhà kiến quốc và cải cách' },
+      { v: 'q3-hien-tai', t: 'Quyển 3 · Hiền tài', h: 'Bảy kẻ sĩ · người tài không được dùng thì làm gì' },
+      { v: 'q4-khoa-hoc', t: 'Quyển 4 · Trí tuệ khoa học', h: 'Chín nhà khoa học và thầy thuốc' },
+      { v: 'q5-van-hien', t: 'Quyển 5 · Văn hiến', h: 'Bảy người làm nên phần hồn' },
+      { v: 'q6-duong-thoi', t: 'Quyển 6 · Người đương thời', h: 'Chân dung tập thể và trang để trống' },
+      { v: 'mo-thuc-viet', t: 'Mười hai mô thức Việt', h: 'Phần dùng được hằng tuần' },
+      { v: 'dung-thu-vien', t: 'Cách dùng bộ sách', h: 'Chi hội · trại · gia đình · dự án' }
     ]}
 ];
 
@@ -119,7 +131,7 @@ GV.MAN = {
 'tong-quan': { q: 'chung', k: 'Mở đầu', t: 'Hệ này là gì, và vì sao phải dựng nó bây giờ',
   p: 'Học viện GITA đã có một hệ giải pháp năm tầng chạy được trên gia đình thật. Cái còn thiếu là hệ chịu trách nhiệm về mười, hai mươi, ba mươi năm tiếp theo của những em giỏi nhất đi qua đó.',
   khoi: [
-    { k: 'so', ds: [{ b: '12', t: 'nhóm nội dung' }, { b: '65', t: 'màn' }, { b: '6', t: 'bậc nhân tài' },
+    { k: 'so', ds: [{ b: '13', t: 'nhóm nội dung' }, { b: '74', t: 'màn' }, { b: '6', t: 'bậc nhân tài' },
                     { b: '12', t: 'trục năng lực' }, { b: '30', t: 'năm · 6 chặng' }] },
     { k: 'van', t: 'GEN VIỆT 365 không phải một chương trình học. Nó là *hệ điều hành phát triển con người* của Học viện: nơi một em bé bảy tuổi bước vào ở bậc Hạt, và ba mươi năm sau có thể ngồi trong Hội đồng Chuẩn quyết định điều gì là đúng cho thế hệ tiếp theo.' },
     { k: 'trich', t: 'GITA không huấn luyện một hành vi đơn lẻ. GITA kiến tạo một hệ điều hành phát triển cá nhân.', n: 'Hệ thống giải pháp GITA · Chương 13' },
@@ -133,7 +145,8 @@ GV.MAN = {
       'Nhóm 01 — nền móng: nếu chỉ đọc được một nhóm thì đọc nhóm này.',
       'Nhóm 03 và 04 — chi hội và bốn môi trường: phần chạm vào đời sống thật hằng tuần, và là phần khởi động được ngay.',
       'Nhóm 05 — đo và nghiệm thu: phần giữ cho hệ không trôi thành phong trào.',
-      'Nhóm 08 — triển khai: đọc cuối, nhưng làm đầu tiên.'
+      'Nhóm 08 — triển khai: đọc cuối, nhưng làm đầu tiên.',
+      'Nhóm 13 — Thư viện Gen Việt: bộ sách sáu quyển, dùng hằng tuần trong bảy phút Hạt giống tri thức.'
     ]}
   ]},
 
@@ -661,6 +674,65 @@ GV.MAN = {
 
 
 
+/* ══════════ NHÓM 13 · THƯ VIỆN GEN VIỆT ══════════ */
+'thu-vien': { q: 'chung', k: 'Lớp L2 · kho', t: 'Bộ sách Gen Việt',
+  p: 'Sáu quyển về những người mang bộ gen Việt xuất sắc nhất — danh tướng, nhà kiến quốc, hiền tài, nhà khoa học, người làm nên văn hiến. Bốn mươi lăm chân dung, mười hai mô thức tư duy rút ra từ họ.',
+  khoi: [
+    { k: 'so', ds: [{ b: '6', t: 'quyển' }, { b: '45', t: 'chân dung' }, { b: '12', t: 'mô thức tư duy' },
+                    { b: '7', t: 'nguyên tắc biên soạn' }] },
+    { k: 'van', t: 'Đây *không phải* một danh sách tấm gương. Mỗi chân dung phải trả lời được bốn câu: người ấy đứng trước quyết định gì · chọn thế nào · mô thức rút ra là gì · và tuần này học viên làm được việc gì từ đó. Chân dung nào không trả lời được cả bốn thì chưa vào sách.' },
+    { k: 'muc', t: 'Bảy nguyên tắc biên soạn' },
+    { k: 'luoi', c: 2, tu: 'TV_NGUYEN_TAC' },
+    { k: 'muc', t: 'Sáu quyển' },
+    { k: 'quyen', tu: 'TV_QUYEN' },
+    { k: 'muc', t: 'Bảng phẩm chất — chân dung nào nuôi phẩm chất nào' },
+    { k: 'bang', cot: ['Phẩm chất', 'Chân dung', 'Câu hỏi để cả chi hội cùng nghĩ'], tu: 'TV_PC_BANG' },
+    { k: 'muc', t: 'Nguồn và cách tra' },
+    { k: 'bang', cot: ['Loại nguồn', 'Cụ thể'], tu: 'TV_NGUON' }
+  ]},
+
+'q1-giu-nuoc': { q: 'chung', k: 'Quyển 1', t: 'Giữ nước',
+  p: 'Nghệ thuật quân sự Việt Nam gần như luôn là bài toán của bên yếu hơn. Chính vì thế nó là kho tàng về cách chọn nơi, chọn lúc, chọn đòn bẩy — thứ dùng được cho mọi bài toán mà nguồn lực không đủ.',
+  khoi: [{ k: 'nhanvat', tu: 'TV_Q1' }] },
+
+'q2-dung-nuoc': { q: 'chung', k: 'Quyển 2', t: 'Dựng nước',
+  p: 'Từ Chiếu dời đô tới bộ luật Hồng Đức: những người hiểu rằng một quyết định đúng chưa đủ, phải dựng được thể chế để cái đúng ấy tự chạy khi mình không còn.',
+  khoi: [{ k: 'nhanvat', tu: 'TV_Q2' }] },
+
+'q3-hien-tai': { q: 'chung', k: 'Quyển 3', t: 'Hiền tài',
+  p: 'Người từ quan đi dạy học, người dâng điều trần không được nghe, người mù vẫn mở trường. Quyển khó nhất và cần nhất, vì phần lớn đời người ta ở trong hoàn cảnh ấy.',
+  khoi: [{ k: 'nhanvat', tu: 'TV_Q3' }] },
+
+'q4-khoa-hoc': { q: 'chung', k: 'Quyển 4', t: 'Trí tuệ khoa học',
+  p: 'Từ "Nam dược trị Nam nhân" tới bổ đề cơ bản. Điểm chung: không chờ điều kiện đủ mới bắt đầu, và không sao chép nguyên xi lời giải của nơi khác.',
+  khoi: [{ k: 'nhanvat', tu: 'TV_Q4' }] },
+
+'q5-van-hien': { q: 'chung', k: 'Quyển 5', t: 'Văn hiến',
+  p: 'Chữ nghĩa, âm nhạc, tiếng nói. Thứ mềm nhất lại là thứ sống lâu nhất — và là thứ làm nên phần "Việt" trong bộ gen Việt.',
+  khoi: [{ k: 'nhanvat', tu: 'TV_Q5' }] },
+
+'q6-duong-thoi': { q: 'chung', k: 'Quyển 6', t: 'Người đương thời',
+  p: 'Quyển viết theo luật riêng: không dựng tượng người đang sống. Ghi việc, ghi chân dung tập thể, và để ngỏ chỗ cho chính học viên viết tiếp.',
+  khoi: [
+    { k: 'nhanvat', tu: 'TV_Q6' },
+    { k: 'van', t: 'Chân dung cuối cùng là *một trang để trống*. Một bộ sách chỉ sống nếu người đọc trở thành người viết — và đây là chỗ Thư viện Gen Việt nối vào bậc 5, khi em bắt đầu tạo ra thứ người khác dùng được.' }
+  ]},
+
+'mo-thuc-viet': { q: 'kh_hanh_trinh', k: 'Rút ra', t: 'Mười hai mô thức tư duy Việt',
+  p: 'Phần dùng được hằng tuần. Bốn mươi lăm chân dung phía trước là bằng chứng cho mười hai dòng này.',
+  khoi: [
+    { k: 'mothuc', tu: 'TV_MO_THUC' },
+    { k: 'van', t: 'Mười hai mô thức này *không thay thế* 100 chiến lược trong kho nghề — chúng đứng ở tầng cao hơn. Chiến lược trả lời "làm thế nào"; mô thức trả lời "nghĩ theo hướng nào". Một Coach giỏi dùng cả hai: mô thức để chọn hướng, chiến lược để đi.' }
+  ]},
+
+'dung-thu-vien': { q: 'kh_gia_dinh', k: 'Cách dùng', t: 'Đưa bộ sách vào nhịp tuần',
+  p: 'Một bộ sách để trên giá là một bộ sách chết. Sáu chỗ dưới đây là nơi nó chạm vào đời sống thật của chi hội, của trại và của gia đình.',
+  khoi: [
+    { k: 'bang', cot: ['Ở đâu', 'Nhịp', 'Làm thế nào', 'Kiểm bằng gì'], tu: 'TV_CACH_DUNG' },
+    { k: 'van', t: 'Cách kể quyết định phần lớn kết quả. *Ba phút kể quyết định then chốt, hai phút rút mô thức, hai phút giao việc* — không kể tiểu sử. Một chân dung kể thành mười phút tiểu sử là một chân dung bị lãng phí.' },
+    { k: 'van', t: 'Và một điều phải giữ: đọc xong mỗi chân dung, *câu hỏi phản biện là bắt buộc*. Bộ sách này nuôi lòng tự trọng, không nuôi lòng tự tôn — mà lòng tự trọng thì phải chịu được câu hỏi.' }
+  ]},
+
 'nguon': { q: 'chung', k: 'Nguồn', t: 'Tài liệu đã dùng',
   p: 'Phần chuyên môn rút trọn vẹn từ kho tài liệu sẵn có của Học viện. Thứ duy nhất mượn từ bên ngoài là khung tổ chức chi hội của BNI — mượn cấu trúc vận hành, không mượn động cơ kinh tế.',
   khoi: [
@@ -815,6 +887,16 @@ GV.TU = {
   TY_LE_BANG: GV.TY_LE.map(function (r) { return [r.vai.join(' · '), r.pt + '%', r.ghi]; }),
   LUAT_QUYEN: GV.LUAT_QUYEN,
 
+
+  /* nhóm 13 · thư viện Gen Việt */
+  TV_NGUYEN_TAC: GV.TV_NGUYEN_TAC,
+  TV_QUYEN: GV.TV_QUYEN,
+  TV_Q1: GV.TV_Q1, TV_Q2: GV.TV_Q2, TV_Q3: GV.TV_Q3,
+  TV_Q4: GV.TV_Q4, TV_Q5: GV.TV_Q5, TV_Q6: GV.TV_Q6,
+  TV_MO_THUC: GV.TV_MO_THUC,
+  TV_PC_BANG: GV.TV_PHAM_CHAT.map(function (r) { return [r.pc, r.ai, r.hoi]; }),
+  TV_CACH_DUNG: GV.TV_CACH_DUNG.map(function (r) { return [r.noi, r.nhip, r.lam, r.kiem]; }),
+  TV_NGUON: GV.TV_NGUON.map(function (r) { return [r.t, r.l]; }),
 
   /* nhóm 12 · triển khai */
   NGAY_90: GV.NGAY_90.map(function (r) { return [r.tuan, r.viec, r.ai, r.ra]; }),

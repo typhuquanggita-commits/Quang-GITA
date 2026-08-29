@@ -21,7 +21,7 @@ var vm = require('vm');
 
 var GOC = path.join(__dirname, '..');
 var TEP = ['du-lieu.js', 'du-lieu-daotao.js', 'du-lieu-vanhanh.js', 'du-lieu-kythuat.js',
-           'du-lieu-chuyenmon.js', 'du-lieu-congdong.js', 'du-lieu-quyen.js',
+           'du-lieu-chuyenmon.js', 'du-lieu-congdong.js', 'du-lieu-thuvien.js', 'du-lieu-quyen.js',
            'quyen.js', 'man-hinh.js'];
 var MAY = [];
 
@@ -188,6 +188,23 @@ if (!G.VAI || !G.QUYEN_MAX) {
   Object.keys(G.MAN).forEach(function (v) { dungQ[G.MAN[v].q] = true; });
   Object.keys(G.QUYEN_MAX).forEach(function (q) {
     if (!dungQ[q]) C('Quyền khai báo nhưng không màn nào dùng: ' + q);
+  });
+}
+
+/* ── 6b. Thư viện: số chân dung khai báo phải khớp số thật ── */
+if (G.TV_QUYEN) {
+  var maQ = ['TV_Q1', 'TV_Q2', 'TV_Q3', 'TV_Q4', 'TV_Q5', 'TV_Q6'];
+  G.TV_QUYEN.forEach(function (q, i) {
+    var that = (G[maQ[i]] || []).length;
+    if (q.so !== that)
+      L('Thư viện: ' + q.q + ' khai ' + q.so + ' chân dung nhưng kho có ' + that);
+  });
+  maQ.forEach(function (k2) {
+    (G[k2] || []).forEach(function (n, j) {
+      ['ten', 'nam', 'danh', 'viec', 'quyet', 'mothuc', 'tru', 'pc', 'lam', 'hoi'].forEach(function (f) {
+        if (!n[f]) L('Chân dung ' + k2 + '[' + j + '] (' + (n.ten || '?') + ') thiếu trường ' + f);
+      });
+    });
   });
 }
 

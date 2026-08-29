@@ -463,6 +463,47 @@
         : '<p class="van">Vai này mở toàn bộ hệ thống, không khoá màn nào.</p>');
   };
 
+  /* chân dung trong Thư viện Gen Việt */
+  K.nhanvat = function (o) {
+    return ds(lay(o), function (x) {
+      return '<article class="nv">' +
+        '<div class="nv-dau"><h3>' + e(x.ten) + '</h3><span class="nam">' + e(x.nam) + '</span></div>' +
+        '<div class="danh">' + e(x.danh) + '</div>' +
+        '<div class="nv-than">' +
+          '<div class="o"><b>Việc lớn nhất</b>' + e(x.viec) + '</div>' +
+          '<div class="o qd"><b>Quyết định then chốt</b>' + e(x.quyet) + '</div>' +
+          '<div class="o mt"><b>Mô thức rút ra</b>' + e(x.mothuc) + '</div>' +
+          '<div class="hang"><span class="chip">Trụ ' + e(x.tru) + '</span>' +
+            '<span class="chip">' + e(x.pc) + '</span></div>' +
+          '<div class="o lam"><b>Tuần này em làm được</b>' + e(x.lam) + '</div>' +
+          '<div class="o hoi"><b>Câu hỏi phản biện</b>' + e(x.hoi) + '</div>' +
+          (x.luu ? '<div class="luu">' + e(x.luu) + '</div>' : '') +
+        '</div></article>';
+    });
+  };
+
+  /* sáu quyển của bộ sách */
+  K.quyen = function (o) {
+    return '<div class="luoi hai">' + ds(lay(o), function (x) {
+      return '<div class="qs" style="--c:' + mau(x.mau) + '">' +
+        '<div class="q-d"><span class="q">' + e(x.q) + '</span><b>' + e(x.t) + '</b>' +
+        '<span class="so">' + e(x.so) + ' chân dung</span></div>' +
+        '<div class="hoi">' + e(x.hoi) + '</div>' +
+        '<p>' + e(x.n) + '</p></div>';
+    }) + '</div>';
+  };
+
+  /* mười hai mô thức */
+  K.mothuc = function (o) {
+    return '<div class="mtv">' + ds(lay(o), function (x) {
+      return '<div class="m1"><span class="s">' + e(x.so) + '</span>' +
+        '<div class="noi"><b>' + e(x.t) + '</b>' +
+        '<span class="tu">' + e(x.tu) + '</span>' +
+        '<span class="y">' + e(x.n) + '</span>' +
+        '<span class="nay">Hôm nay: ' + e(x.nay) + '</span></div></div>';
+    }) + '</div>';
+  };
+
   /* ── dựng một màn ────────────────────────────────── */
   function veMan(v) {
     var m = G.MAN[v];

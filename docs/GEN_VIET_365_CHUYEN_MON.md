@@ -7,7 +7,10 @@ cách một gia đình bước vào hệ, cách hệ giữ người ở lại, v
 Tập 4 — [`GEN_VIET_365_PHAN_QUYEN.md`](GEN_VIET_365_PHAN_QUYEN.md) — nói ai được thấy
 phần nào trong tập này, và vì sao.
 
-Bản trực quan đầy đủ (12 nhóm · 65 màn): mở `genviet365/index.html`.
+Tập 5 — [`GEN_VIET_365_THU_VIEN.md`](GEN_VIET_365_THU_VIEN.md) — thư viện Gen Việt: 45 chân
+dung và 12 mô thức tư duy, phần *chất liệu* mà nghề này dùng để nuôi chí cho học viên.
+
+Bản trực quan đầy đủ (13 nhóm · 74 màn): mở `genviet365/index.html`.
 
 ---
 

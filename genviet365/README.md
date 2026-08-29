@@ -3,13 +3,14 @@
 Ứng dụng trình bày **toàn bộ** hệ thống GEN VIỆT 365 của Học viện GITA: kiến trúc, giáo
 trình, mô hình chi hội, bộ đo, biểu mẫu, dữ liệu và lộ trình 30 năm (2026 – 2056).
 
-**12 nhóm · 65 màn · 17 vai.** Không cần cài gì, không có bước dựng.
+**13 nhóm · 74 màn · 17 vai.** Không cần cài gì, không có bước dựng.
 
 Bản viết đầy đủ:
 - [`../docs/GEN_VIET_365.md`](../docs/GEN_VIET_365.md) — tập 1 · kiến trúc
 - [`../docs/GEN_VIET_365_VAN_HANH.md`](../docs/GEN_VIET_365_VAN_HANH.md) — tập 2 · vận hành
 - [`../docs/GEN_VIET_365_CHUYEN_MON.md`](../docs/GEN_VIET_365_CHUYEN_MON.md) — tập 3 · chuyên môn và đội ngũ
 - [`../docs/GEN_VIET_365_PHAN_QUYEN.md`](../docs/GEN_VIET_365_PHAN_QUYEN.md) — tập 4 · phân quyền và bảo mật
+- [`../docs/GEN_VIET_365_THU_VIEN.md`](../docs/GEN_VIET_365_THU_VIEN.md) — tập 5 · thư viện Gen Việt (bản sinh ra)
 
 ## Chạy
 
@@ -40,7 +41,7 @@ node genviet365/dong-goi-artifact.cjs --vai=R16 --bac=B1 ra.html  # BẢN CẮT
 thanh đổi vai bị khoá. Đây là hàng rào thật của một trang tĩnh: *thứ không gửi đi là thứ
 không lộ được.*
 
-Sinh ra một trang tự chứa (CSS và tám tệp JS nhúng sẵn, chỉ còn phông chữ gọi ra ngoài)
+Sinh ra một trang tự chứa (CSS và mười một tệp JS nhúng sẵn, chỉ còn phông chữ gọi ra ngoài)
 để đăng làm Artifact, gửi qua thư hoặc mở trên máy không có kho mã. Tệp gộp là **bản sinh
 ra** — không sửa tay; sửa xong nguồn thì gộp lại.
 
@@ -53,14 +54,16 @@ ra** — không sửa tay; sửa xong nguồn thì gộp lại.
 | `du-lieu-vanhanh.js` | Lịch năm 52 tuần · sổ tay 6 vai · sổ tay 3 môi trường · cổng nghiệm thu 100 điểm · 4 báo cáo · 14 biểu mẫu · an toàn và đạo đức · năm đầu tiên |
 | `du-lieu-chuyenmon.js` | Ma trận 8 × 8 · quy trình 10 bước · 11 nhóm giải pháp · thư viện 100 chiến lược · thang mức hỗ trợ · cơ chế xử lý tự động theo KPI |
 | `du-lieu-congdong.js` | Đường vào 6 bước · mạch tư vấn · buổi tư vấn đầu · 4 chân dung gia đình · đại sứ · bảng thay-vì · nghi lễ · hệ ghi nhận · chuỗi WOW · nghề Coach · 7 năng lực · tuyển và thử việc · chuẩn dự giờ |
+| `du-lieu-thuvien.js` | Thư viện Gen Việt: 7 nguyên tắc biên soạn · 6 quyển · 45 chân dung danh nhân, danh tướng, hiền tài, nhà khoa học, người đương thời · 12 mô thức tư duy Việt · bảng phẩm chất · cách đưa vào nhịp tuần · nguồn |
 | `du-lieu-quyen.js` | 17 vai · 13 tầng hiển thị · bảng ghi đè · bậc năng lực học viên → bậc quyền · tỉ lệ hiển thị mong muốn · 6 luật phân quyền |
 | `quyen.js` | **Bộ máy quyền** — một nguồn sự thật cho ứng dụng, bộ gộp và bộ kiểm: `duocPhep()` · `lyDoKhoa()` · `demMan()` |
+| `tools/sinh-thu-vien.cjs` | Sinh `docs/GEN_VIET_365_THU_VIEN.md` từ kho thư viện — bản markdown là **bản sinh ra**, sửa kho rồi chạy lại |
 | `tools/kiem-tra.cjs` | **Bộ kiểm phát hành** — bốn lớp: tĩnh · bản cắt · chạy thật · cổng phân quyền |
 | `du-lieu-kythuat.js` | Cấu trúc hộ chiếu JSON · 5 luật ghi dữ liệu · 12 bảng lưu · 9 đường máy chủ · 10 quyền · 7 nguyên tắc dựng phần mềm |
-| `man-hinh.js` | `GV.NHOM` (12 nhóm điều hướng) · `GV.MAN` (63 màn, mỗi màn là danh sách KHỐI) · `GV.TU` (bảng tra nối khối tới dữ liệu) |
-| `giao-dien.js` | Lớp dựng: 33 loại khối · vỏ ứng dụng · định tuyến theo hash · nhớ màn đang đọc |
+| `man-hinh.js` | `GV.NHOM` (13 nhóm điều hướng) · `GV.MAN` (74 màn, mỗi màn là danh sách KHỐI) · `GV.TU` (bảng tra nối khối tới dữ liệu) |
+| `giao-dien.js` | Lớp dựng: 45 loại khối · vỏ ứng dụng · định tuyến theo hash · nhớ màn đang đọc |
 | `style.css` | Bảng màu lấy từ nhận diện GITA · kiểu chữ · bố cục · sáng và tối |
-| `index.html` | Vỏ — nạp phông rồi nạp tám tệp JS theo đúng thứ tự |
+| `index.html` | Vỏ — nạp phông rồi nạp mười một tệp JS theo đúng thứ tự |
 | `dong-goi-artifact.cjs` | Gộp tất cả thành một trang tự chứa |
 
 ## Quy tắc
@@ -80,5 +83,5 @@ Cùng quy ước với hệ thống GITA 365 v8: không thư viện ngoài, mọ
 node --check genviet365/*.js
 ```
 
-Rồi mở thử toàn bộ 63 màn ở cả hai chế độ sáng và tối, và ở khổ điện thoại — bộ kiểm cần
+Rồi mở thử toàn bộ 74 màn ở cả hai chế độ sáng và tối, và ở khổ điện thoại — bộ kiểm cần
 bắt được ba thứ: màn dựng ra quá ngắn, khối thiếu loại, và trang tràn ngang.

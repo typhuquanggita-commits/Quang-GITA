@@ -116,7 +116,7 @@ GV.GHI_DE = {
 GV.BAC_MO = [
   { bac: 'B1', lv: 16, t: 'HẠT',           mo: 'Hành trình của em, chi hội, nhịp tuần, bốn môi trường.' },
   { bac: 'B2', lv: 16, t: 'MẦM',           mo: 'Thêm sáu vòng chiều sâu và toàn bộ khoá nền.' },
-  { bac: 'B3', lv: 15, t: 'THÂN',          mo: 'Thêm tổ mũi nhọn, sổ tay vai, biểu mẫu, bảng ngôn ngữ.' },
+  { bac: 'B3', lv: 15, t: 'THÂN',          mo: 'Thêm tổ mũi nhọn, sổ tay vai, biểu mẫu, bảng ngôn ngữ, cách dùng Thư viện.' },
   { bac: 'B4', lv: 14, t: 'TRỤ',           mo: 'Thêm phần điều hành chi hội: bảy ghế, lịch năm, mở chi hội.' },
   { bac: 'B5', lv: 13, t: 'NGƯỜI DẪN',     mo: 'MỞ KHO NGHỀ: ma trận 8×8, phác đồ, 100 chiến lược. Em đã là Mentor.' },
   { bac: 'B6', lv: 11, t: 'KIẾN TRÚC SƯ',  mo: 'Thêm cổng nghiệm thu và báo cáo. Em đang giữ chuẩn.' }
@@ -130,18 +130,18 @@ GV.BAC_SO = { B1: 1, B2: 2, B3: 3, B4: 4, B5: 5, B6: 6 };
    dừng phát hành — vì lệch nghĩa là có màn bị gắn nhầm quyền.       */
 GV.TY_LE = [
   { vai: ['R01', 'R02'], pt: 100, ghi: 'Toàn bộ, không khoá gì.' },
-  { vai: ['R03'],        pt: 98,  ghi: 'Khoá bảng phân quyền.' },
+  { vai: ['R03'],        pt: 99,  ghi: 'Khoá bảng phân quyền.' },
   { vai: ['R04'],        pt: 97,  ghi: 'Khoá quản trị trang và tài chính.' },
-  { vai: ['R05'],        pt: 86,  ghi: 'Giữ kho nội dung. Khoá tiền, điều hành toàn hệ, nghiệm thu và quản trị trang.' },
-  { vai: ['R06'],        pt: 83,  ghi: 'Thêm chuẩn nghề: lộ trình Coach và dự giờ.' },
-  { vai: ['R07', 'R08', 'R09', 'R10', 'R11'], pt: 80,
-    ghi: 'Kho nghề, tư vấn, nghiệm thu, chi hội, gia đình, hành trình.' },
-  { vai: ['R12'],        pt: 77,  ghi: 'Như trên, trừ nghiệm thu.' },
-  { vai: ['R13'],        pt: 72,  ghi: 'Kho nghề và chỉ số tổng hợp; không mở khoang tư vấn.' },
-  { vai: ['R14'],        pt: 58,  ghi: 'Chi hội, gia đình, hành trình học viên.' },
-  { vai: ['R15'],        pt: 54,  ghi: 'Phần gia đình và hành trình của con.' },
-  { vai: ['R16'],        pt: 43,  ghi: 'Học viên bậc 1. Lên bậc mở thêm: B3 → 54%, B5 → 71%, B6 → 80%.' },
-  { vai: ['R17'],        pt: 23,  ghi: 'Chỉ phần chung và phần cộng đồng.' }
+  { vai: ['R05'],        pt: 88,  ghi: 'Giữ kho nội dung. Khoá tiền, điều hành toàn hệ, nghiệm thu và quản trị trang.' },
+  { vai: ['R06'],        pt: 85,  ghi: 'Thêm chuẩn nghề: lộ trình Coach và dự giờ.' },
+  { vai: ['R07', 'R08', 'R09', 'R10', 'R11'], pt: 82,
+    ghi: 'Kho nghề, tư vấn, nghiệm thu, chi hội, gia đình, hành trình, thư viện.' },
+  { vai: ['R12'],        pt: 80,  ghi: 'Như trên, trừ nghiệm thu.' },
+  { vai: ['R13'],        pt: 76,  ghi: 'Kho nghề và chỉ số tổng hợp; không mở khoang tư vấn.' },
+  { vai: ['R14'],        pt: 64,  ghi: 'Chi hội, gia đình, hành trình học viên, thư viện.' },
+  { vai: ['R15'],        pt: 59,  ghi: 'Phần gia đình, hành trình của con, và toàn bộ thư viện.' },
+  { vai: ['R16'],        pt: 49,  ghi: 'Học viên bậc 1. Lên bậc mở thêm: B3 → 59%, B5 → 74%, B6 → 82%.' },
+  { vai: ['R17'],        pt: 30,  ghi: 'Phần chung, phần cộng đồng và toàn bộ Thư viện Gen Việt.' }
 ];
 
 /* ══════════ SÁU LUẬT PHÂN QUYỀN ══════════ */
