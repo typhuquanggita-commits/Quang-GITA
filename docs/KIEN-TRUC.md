@@ -103,6 +103,26 @@ Người học xuất và nhập lại toàn bộ tiến độ bằng JSON trong
   lần dựng lại giao diện.
 - Thư viện Gemini được nạp động, nên người không dùng AI không phải tải 290 KB đó.
 - Biểu đồ tự vẽ, không thư viện.
+- **Chia gói theo màn hình.** Chỉ *Tổng quan* và *Phiếu luyện* được nạp sẵn: một là màn
+  hình đầu tiên ai cũng thấy, một là mặt làm bài — không được phép có nhịp chờ nào. Các
+  màn hình còn lại nạp khi cần, nên lần mở đầu không phải tải những trang người học có
+  thể không bao giờ vào.
+- **Ngân hàng câu hỏi nằm ở gói riêng.** Nội dung gần như không đổi khi sửa mã nguồn, nên
+  tách ra thì người học quay lại chỉ tải phần mã đã đổi, còn khoảng 300 KB nội dung vẫn
+  nằm trong bộ nhớ đệm. Không gói nào vượt 300 KB.
+
+## Khi giao diện gặp lỗi
+
+Một ứng dụng giữ toàn bộ tiến độ trong `localStorage` thì màn hình trắng là tình huống tệ
+nhất có thể: người học không hiểu chuyện gì xảy ra, không lấy lại được dữ liệu, và rất dễ
+xóa sạch dữ liệu trình duyệt để "cho nó chạy lại". `ErrorBoundary` ở gốc cây React bắt mọi
+lỗi hiển thị và đưa ra ba đường thoát, theo đúng thứ tự đó:
+
+1. **Tải dữ liệu về máy** — luôn là nút đầu tiên, trước cả tải lại trang.
+2. **Tải lại trang** — phần lớn lỗi hiển thị là lỗi một lần.
+3. **Đặt lại dữ liệu** — chỉ khi hai cách trên không ăn thua, và nói rõ là không hoàn tác.
+
+Lỗi được ghi ra console cho người phát triển, không gửi đi đâu cả.
 
 ## Thêm nội dung mới
 

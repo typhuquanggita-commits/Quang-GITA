@@ -1,20 +1,41 @@
-import { useEffect } from 'react';
+import { Suspense, lazy, useEffect } from 'react';
 import { AppShell } from './components/layout/AppShell';
 import { useRoute } from './lib/router';
 import { useAppState } from './store/AppStore';
 import { DashboardPage } from './features/dashboard/DashboardPage';
-import { ExamPage } from './features/exam/ExamPage';
-import { PracticePage } from './features/practice/PracticePage';
 import { WorksheetPage } from './features/practice/WorksheetPage';
-import { ReviewPage } from './features/review/ReviewPage';
-import { AnalyticsPage } from './features/analytics/AnalyticsPage';
-import { RoadmapPage } from './features/roadmap/RoadmapPage';
-import { SettingsPage } from './features/settings/SettingsPage';
-import { RolesPage } from './features/roles/RolesPage';
-import { GitaPage } from './features/gita/GitaPage';
-import { SolutionsPage } from './features/solutions/SolutionsPage';
-import { ProfilePage } from './features/profile/ProfilePage';
-import { TopicGuidePage } from './features/topic/TopicGuidePage';
+
+/**
+ * Hai man hinh duoc nap SAN: Tong quan (man hinh dau tien ai cung thay) va
+ * Phieu luyen (mat lam bai — khong duoc phep co mot nhip cho nao). Cac man
+ * hinh con lai nap khi can, nen lan mo dau khong phai tai ca nhung trang ma
+ * nguoi hoc co the khong bao gio vao.
+ */
+const ExamPage = lazy(() => import('./features/exam/ExamPage').then((m) => ({ default: m.ExamPage })));
+const PracticePage = lazy(() =>
+  import('./features/practice/PracticePage').then((m) => ({ default: m.PracticePage })),
+);
+const ReviewPage = lazy(() => import('./features/review/ReviewPage').then((m) => ({ default: m.ReviewPage })));
+const AnalyticsPage = lazy(() =>
+  import('./features/analytics/AnalyticsPage').then((m) => ({ default: m.AnalyticsPage })),
+);
+const RoadmapPage = lazy(() =>
+  import('./features/roadmap/RoadmapPage').then((m) => ({ default: m.RoadmapPage })),
+);
+const SettingsPage = lazy(() =>
+  import('./features/settings/SettingsPage').then((m) => ({ default: m.SettingsPage })),
+);
+const RolesPage = lazy(() => import('./features/roles/RolesPage').then((m) => ({ default: m.RolesPage })));
+const GitaPage = lazy(() => import('./features/gita/GitaPage').then((m) => ({ default: m.GitaPage })));
+const SolutionsPage = lazy(() =>
+  import('./features/solutions/SolutionsPage').then((m) => ({ default: m.SolutionsPage })),
+);
+const ProfilePage = lazy(() =>
+  import('./features/profile/ProfilePage').then((m) => ({ default: m.ProfilePage })),
+);
+const TopicGuidePage = lazy(() =>
+  import('./features/topic/TopicGuidePage').then((m) => ({ default: m.TopicGuidePage })),
+);
 
 export function App() {
   const route = useRoute();
@@ -25,7 +46,9 @@ export function App() {
 
   return (
     <AppShell>
-      <Routes path={route.path} />
+      <Suspense fallback={<RouteSkeleton />}>
+        <Routes path={route.path} />
+      </Suspense>
     </AppShell>
   );
 }
@@ -59,6 +82,28 @@ function Routes({ path }: { path: string }) {
     default:
       return <NotFound path={path} />;
   }
+}
+
+/**
+ * Khung cho trong luc nap man hinh.
+ *
+ * Co y KHONG dung vong xoay: mot vong xoay noi "dang ban" ma khong noi sap ra
+ * cai gi. Khung xam giu dung hinh dang trang sap hien, nen mat khong bi giat
+ * khi noi dung vao cho. `aria-busy` de trinh doc man hinh biet ma cho.
+ */
+function RouteSkeleton() {
+  return (
+    <div className="space-y-6" aria-busy="true" aria-live="polite">
+      <span className="sr-only">Đang mở màn hình…</span>
+      <div className="h-8 w-56 animate-pulse rounded-lg bg-surface-2" />
+      <div className="grid gap-4 sm:grid-cols-3">
+        {[0, 1, 2].map((i) => (
+          <div key={i} className="h-24 animate-pulse rounded-xl bg-surface-2" />
+        ))}
+      </div>
+      <div className="h-64 animate-pulse rounded-2xl bg-surface-2" />
+    </div>
+  );
 }
 
 function NotFound({ path }: { path: string }) {

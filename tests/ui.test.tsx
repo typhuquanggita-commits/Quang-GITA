@@ -1,10 +1,11 @@
-import { describe, expect, it, beforeEach } from 'vitest';
+import { describe, expect, it, beforeEach, vi } from 'vitest';
 import { PERMISSIONS } from '../src/data/roles';
 import { render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { App } from '../src/App';
 import { AppStoreProvider } from '../src/store/AppStore';
 import { ToastProvider } from '../src/components/ui/primitives';
+import { ErrorBoundary } from '../src/components/ErrorBoundary';
 import { createInitialState } from '../src/lib/storage';
 import type { PersistedState } from '../src/types';
 
@@ -112,5 +113,31 @@ describe('phiếu luyện', () => {
     await user.click(options[0] as HTMLElement);
     expect(options[0]).toHaveAttribute('aria-checked', 'true');
     expect(screen.getByRole('button', { name: /Câu tiếp theo|Sang chặng/ })).toBeInTheDocument();
+  });
+});
+
+describe('ranh giới lỗi', () => {
+  it('lỗi hiển thị cho ra đường thoát chứ không phải màn hình trắng', () => {
+    // React in loi ra console khi mot component nem — chan lai de ban ghi test
+    // khong bi lap day boi mot loi ma chinh test nay co y tao ra.
+    const quiet = vi.spyOn(console, 'error').mockImplementation(() => {});
+
+    function Broken(): never {
+      throw new Error('hỏng có chủ đích');
+    }
+
+    render(
+      <ErrorBoundary>
+        <Broken />
+      </ErrorBoundary>,
+    );
+
+    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('HSA365 gặp lỗi hiển thị');
+    // Nut dau tien phai la cuu du lieu, truoc ca tai lai trang.
+    expect(screen.getByRole('button', { name: 'Tải dữ liệu về máy' })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'Tải lại trang' })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'Đặt lại dữ liệu' })).toBeInTheDocument();
+
+    quiet.mockRestore();
   });
 });

@@ -53,9 +53,16 @@ export default defineConfig(({ mode }) => {
       sourcemap: true,
       rollupOptions: {
         output: {
-          manualChunks: {
-            react: ['react', 'react-dom'],
-            genai: ['@google/genai'],
+          manualChunks(id) {
+            if (id.includes('node_modules/react')) return 'react';
+            if (id.includes('node_modules/@google/genai')) return 'genai';
+            // Ngan hang cau hoi va ngu lieu gan nhu khong doi khi sua ma nguon.
+            // Tach rieng thi nguoi hoc quay lai chi phai tai lai phan ma da doi,
+            // con ~300 KB noi dung van nam trong bo nho dem.
+            if (id.includes('/src/data/questions/') || id.includes('/src/data/passages')) {
+              return 'noi-dung';
+            }
+            return undefined;
           },
         },
       },

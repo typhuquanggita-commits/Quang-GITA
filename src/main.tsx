@@ -2,6 +2,7 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { App } from './App';
 import { AppStoreProvider } from './store/AppStore';
+import { ErrorBoundary } from './components/ErrorBoundary';
 import { ToastProvider } from './components/ui/primitives';
 import './styles.css';
 
@@ -10,10 +11,12 @@ if (!container) throw new Error('Không tìm thấy phần tử #root trong inde
 
 createRoot(container).render(
   <StrictMode>
-    <AppStoreProvider>
-      <ToastProvider>
-        <App />
-      </ToastProvider>
-    </AppStoreProvider>
+    <ErrorBoundary>
+      <AppStoreProvider>
+        <ToastProvider>
+          <App />
+        </ToastProvider>
+      </AppStoreProvider>
+    </ErrorBoundary>
   </StrictMode>,
 );

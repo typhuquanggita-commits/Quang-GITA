@@ -45,7 +45,7 @@ Các lệnh khác:
 
 ```bash
 npm run verify       # typecheck + toàn bộ test + build
-npm run test         # 186 bài test
+npm run test         # 187 bài test
 npm run build        # dựng bản phát hành vào dist/
 npm run preview      # xem thử bản đã dựng
 npm run catalogue    # xuất 2000 phiếu + 2000 nhiệm vụ + 30 phiếu hướng dẫn ra catalogue/*.csv
@@ -223,7 +223,7 @@ src/
   store/                 Reducer + context, mọi thay đổi trạng thái đi qua đây
   components/            Hệ thống thiết kế, biểu đồ SVG tự vẽ, khung ứng dụng
   features/              Từng màn hình
-tests/                   186 bài test cho toàn bộ tầng lib, data và giao diện
+tests/                   187 bài test cho toàn bộ tầng lib, data và giao diện
 ```
 
 Nguyên tắc: **mọi quy tắc nghiệp vụ nằm trong `lib/` dưới dạng hàm thuần** — chấm
@@ -247,9 +247,13 @@ Chi tiết: [`docs/KIEN-TRUC.md`](docs/KIEN-TRUC.md).
 
 - **TypeScript nghiêm ngặt** — bật `strict`, `noUncheckedIndexedAccess`,
   `exactOptionalPropertyTypes`, `noUnusedLocals`. Không có `any` trong mã sản phẩm.
-- **186 bài test** phủ chấm điểm, chuẩn hóa đáp án, mô hình Rasch, ôn tập ngắt quãng,
+- **187 bài test** phủ chấm điểm, chuẩn hóa đáp án, mô hình Rasch, ôn tập ngắt quãng,
   di trú dữ liệu, phân quyền, tiến độ, tính toàn vẹn ngân hàng câu hỏi và khung
   chương trình, mô thức GITA và quy tắc 20/80, cộng với test giao diện đầu-cuối.
+- **Không có màn hình trắng** — `ErrorBoundary` ở gốc bắt mọi lỗi hiển thị và đưa ra
+  ba đường thoát theo đúng thứ tự: tải dữ liệu về máy, tải lại trang, rồi mới đến đặt
+  lại dữ liệu. Với một ứng dụng giữ toàn bộ tiến độ trong trình duyệt, đây là khác biệt
+  giữa "một lỗi nhỏ" và "mất sạch tiến độ".
 - **Bảo mật ở những chỗ client vẫn phải làm đúng** — khóa Gemini bị loại khỏi tệp
   xuất; tệp nhập vào bị chuẩn hóa vai trò, cấp bậc, giai đoạn và cài đặt; đổi vai trò
   không để lại cấp bậc cũ; nội dung đề bài được khử HTML rồi mới mở lại đúng danh
