@@ -51,10 +51,14 @@ python3 tools/dong-goi.py        # ra GITA365_v75_GIOI_THIEU.html
 ```
 
 Mở thẳng bằng trình duyệt, gửi qua email, chép vào USB. Không cần mạng,
-không cần cài gì. Chạy **chế độ mẫu**: đi được cả 124 màn, xem được toàn bộ
-khung — nhưng 33 màn lấy dữ liệu từ kho mã hoá sẽ hiện màn xin cấp phép,
-vì tệp này **không kèm kho tri thức và không kèm khoá**. Đó là chủ ý: tệp
-này để gửi ra ngoài.
+không cần cài gì. Chạy **chế độ mẫu**: đi được cả 124 màn, trong đó **98
+màn có ruột đầy** — gồm toàn bộ phần giới thiệu Học viện, bản đồ, đường
+vào sáu bước và nhịp sống hằng ngày. **26 màn** còn lại lấy dữ liệu từ kho
+nghề nên hiện thẻ xin cấp phép, vì tệp này **không kèm kho tri thức và
+không kèm khoá**. Đó là chủ ý: tệp này để gửi ra ngoài.
+
+Con số 98/124 được bộ kiểm phát hành canh ở mục 35 — nó mở đúng tệp này
+và đếm chữ thật, nên không màn nào mở cho tất cả mà lại rỗng ruột.
 
 Muốn mở đủ ngay trên tệp ấy thì bấm **Nạp tệp giấy phép** và chọn tệp
 `.json` do Học viện cấp — xem mục *Cấp giấy phép cho đội ngũ* bên dưới.

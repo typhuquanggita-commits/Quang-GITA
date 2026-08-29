@@ -212,6 +212,94 @@ lý do thì nó chỉ là một chỗ trống được tha.
 rỗng và bài kiểm trông như đã đạt. Mọi phép lọc trong bộ kiểm đều kèm
 một phép đếm — đó là cách chặn "đạt rỗng".
 
+## Cửa trước không được rỗng ruột — mục 35 của bộ kiểm
+
+Ba mươi bốn mục đầu của bộ kiểm phát hành đều chạy **với kho đã cấp
+phép**. Nên chúng không nhìn thấy thứ mà **người lạ** nhìn thấy.
+
+Một mục điều hướng khai `capMo:'chung'` là màn mở cho tất cả. Nhưng nếu
+nội dung của nó nằm trong gói NỀN thì trên bản giới thiệu một tệp và
+trên trang web công khai, màn ấy chỉ dựng ra tiêu đề mục — không có chữ
+nào bên trong, không lỗi, không cảnh báo.
+
+Đó là chuyện đã xảy ra với chính **cửa trước** của Học viện. Màn
+`gioi-thieu` khai `capMo:'chung'`, nhưng kho `GT_*` chỉ nằm ở gói NỀN.
+Kết quả: người đầu tiên mở GITA365 ra nhìn thấy một cái khung 1.658 ký
+tự gồm mười hai tiêu đề rỗng — trong khi bộ kiểm 34 mục vẫn xanh hết, vì
+nó có khoá trong tay.
+
+**Hai việc đã làm:**
+
+1. `GT_*` được đưa vào `MO_RA` — gói mẫu công khai. Đây vốn là thứ Học
+   viện nói ra ngoài: sứ mệnh, tầm nhìn, mục tiêu có mốc, năm tầng, văn
+   hoá, cách đồng hành, và cả sáu điều Học viện *không* làm. Khoá nó lại
+   là khoá đúng cái cửa mình đang mời người ta bước qua. Phần nghề vẫn
+   khoá nguyên, `HP_*` học phí cũng vậy.
+
+2. Mục 35 của bộ kiểm mở **đúng cái tệp khách nhận được**
+   (`GITA365_v75_GIOI_THIEU.html`, qua `file://`), đăng nhập, dựng các
+   màn cửa trước và đếm chữ thật. Dưới 700 ký tự là dừng phát hành.
+   Ngưỡng 700 dùng chung với `tools/ra-soat-day-du.js`.
+
+**Danh sách cửa trước được đặt tên, không lọc theo `capMo`.** Bản đầu
+tiên của mục 35 lọc mọi màn khai `capMo:'chung'` — và sai. `capMo` là
+**tầng hiển thị theo vai** (`G.TANG_HIENTHI`), nghĩa của `'chung'` là
+*"ai đăng nhập cũng thấy"*, không phải *"ai trên mạng cũng thấy"*. Lọc
+như thế thì bài kiểm đòi cả màn *Khoá đào tạo* của đội ngũ phải mở công
+khai — tức là bắt hệ thống mở kho nghề ra để cho bài kiểm xanh. Một bài
+kiểm ép sản phẩm hỏng đi để mình đạt là bài kiểm phải sửa, không phải
+sản phẩm phải sửa.
+
+Nên cửa trước là một danh sách viết thẳng trong mục 35:
+
+```js
+const CUA_TRUOC = ['gioi-thieu','bat-dau','tham-gia','pham-vi','ban-do','hanh-trinh-12'];
+```
+
+Đây là quyết định kinh doanh — mời người lạ nhìn thấy tới đâu — nên nó
+được viết ra thành tên, và thêm bớt một tên là một lần cân nhắc có ý
+thức. Kèm theo là một cái sàn: bản giới thiệu phải có ít nhất **95/124**
+màn đủ ruột, để bản dùng thử không âm thầm rỗng dần qua từng bản phát
+hành.
+
+**Quy tắc rút ra:** đưa thêm một màn vào `CUA_TRUOC` thì phải đưa kho
+của nó vào `MO_RA` trong cùng một lần sửa. Ngược lại, một màn cần kho
+nghề thì cứ để nó hiện thẻ xin cấp phép — thẻ ấy còn nói được là khoá ở
+đâu và mở bằng cách nào, hơn hẳn một cái khung rỗng.
+
+## Tầm nhìn và sứ mệnh — một bản gốc, không hai
+
+Trước v7.7 câu **tầm nhìn** có hai bản khác nhau chạy song song:
+
+| Ở đâu | Câu gì |
+|---|---|
+| `G.CULTURE.tamNhin` (`src/data.core.js`) | "Đến năm 2030, một triệu người Việt…" |
+| `G.UI.vi.gateVisionTitle` (`src/i18n.js`) | "Kiến tạo một hệ sinh thái gia đình phát triển bền vững…" |
+
+Cổng đăng nhập và thanh la bàn bên phải đọc bản thứ hai; màn *GITA 365 là
+gì* đọc bản thứ nhất. Kết quả: **cả hai cùng hiện trên một màn hình** —
+thanh phải nói một đằng, thân màn nói một nẻo, về cùng một Học viện.
+
+Cách chữa:
+
+1. `G.CULTURE.tamNhin` giữ **câu tầm nhìn** (bản "kiến tạo hệ sinh
+   thái…"), vì đó là câu đã đứng ở cổng — bề mặt nhiều người nhìn nhất.
+2. Con số có hạn tách ra thành `G.CULTURE.moc2030`. Tầm nhìn nói *loại
+   thế giới muốn tạo ra*; mốc nói *con số và hạn*. Gộp rồi gọi chung là
+   "tầm nhìn" thì cái nào cũng đọc không rõ. Màn giới thiệu hiện cả hai,
+   nhưng gọi đúng tên từng cái.
+3. `src/i18n.js` **thôi viết tay** hai chuỗi ấy. Cuối tệp có khối gán
+   `G.UI.vi.gateVisionTitle = G.CULTURE.tamNhin.big` (i18n nạp sau
+   `data.core.js`). Khối `en` vẫn giữ bản dịch riêng — dịch là việc của
+   người, không suy ra được từ bản tiếng Việt.
+4. Mục 35 của bộ kiểm chốt lại: `G.UI.vi.gateVisionTitle` phải bằng đúng
+   `G.CULTURE.tamNhin.big`, và `moc2030` phải khác `tamNhin`. Gõ tay lại
+   chuỗi vào i18n là bài kiểm đỏ ngay.
+
+**Quy tắc rút ra:** một câu mà sản phẩm nói ra ngoài thì chỉ được có một
+chỗ viết nó. Chép sang chỗ thứ hai "cho tiện" là hai bản sẽ lệch nhau ở
+lần sửa đầu tiên, và không ai biết bản nào mới.
+
 ## Bài kiểm phải đo đúng thứ nó định đo
 
 Hai bài kiểm trong dự án này từng đo sai thứ, và cả hai đều đỏ khi hệ

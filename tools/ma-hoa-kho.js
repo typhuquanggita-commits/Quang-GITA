@@ -49,7 +49,7 @@ const NEN = ['VANHANH', 'CHUYENDICH', 'CHANDUNG', 'LOTRINH', 'FAMILIES', 'TEAM',
   'TG_NGUNG_GIAY', 'TG_LOAI', 'TG_XEP', 'TG_NHIEMVU', 'TG_THUONG', 'TG_PHAT', 'TG_QUYDOI',
   /* Bản giới thiệu Học viện và hồ sơ giọng đọc: mọi vai đều đọc được. */
   'GT_MOT_CAU', 'GT_VISAO', 'GT_HUA', 'GT_KHONG', 'GT_CHANG', 'GT_TANG', 'GT_VAI',
-  'GT_HOI', 'GT_SO', 'GT_BUOC',
+  'GT_HOI', 'GT_SO', 'GT_BUOC', 'GT_MUCTIEU', 'GT_MUCTIEU_RANH', 'GT_DONGHANH',
   'AD_THUMUC', 'AD_DUOI', 'AD_TRANGTHAI', 'AD_GIONG', 'AD_DIEUKHOAN', 'AD_KYTHUAT', 'AD_KHUNG',
   /* Bộ sát hạch và khoá đào tạo tự động. Ở gói NỀN vì cả sáu vai đều thi,
      kể cả học viên và phụ huynh — bài của ai thì màn hình lọc theo vai. */
@@ -178,7 +178,29 @@ const MO_RA = [
      đang cân nhắc phải xem được con đường trước khi quyết định bước
      vào — khoá nó lại là khoá đúng cái cửa mình đang mời người ta qua.
      Phần học phí (HP_*) thì ngược lại: vẫn khoá trong kho nghề. */
-  'DV_BUOC', 'DV_CHAN', 'DV_HOI'
+  'DV_BUOC', 'DV_CHAN', 'DV_HOI',
+  /* Bản giới thiệu Học viện. Cùng một lý do với DV_* và mạnh hơn: màn
+     "GITA 365 là gì" mở cho MỌI người (capMo:'chung') — đó là cửa trước.
+     Nhưng kho GT_* lại chỉ nằm ở gói NỀN, nên trên bản giới thiệu một tệp
+     và trên trang web công khai, màn ấy dựng ra đúng mười hai cái tiêu đề
+     mục và không có chữ nào bên trong. Người đầu tiên nhìn thấy GITA365
+     nhìn thấy một cái khung rỗng.
+
+     Nội dung này vốn đã là thứ Học viện nói ra ngoài: sứ mệnh, tầm nhìn,
+     mục tiêu có mốc, năm tầng, văn hoá, cách đồng hành, và cả sáu điều
+     Học viện KHÔNG làm. Khoá nó lại là khoá đúng cái cửa mình đang mời
+     người ta bước qua.
+
+     Phần nghề vẫn khoá nguyên: 1.000 kịch bản, 220 phác đồ, 42 mô thức,
+     250 tình huống, ma trận, và toàn bộ HP_* học phí. */
+  'GT_MOT_CAU', 'GT_VISAO', 'GT_HUA', 'GT_KHONG', 'GT_CHANG', 'GT_TANG',
+  'GT_VAI', 'GT_HOI', 'GT_SO', 'GT_BUOC', 'GT_MUCTIEU', 'GT_MUCTIEU_RANH',
+  'GT_DONGHANH',
+  /* Hành trình 12 chặng: con số "12 chặng" đã nằm ngay trong bảng số liệu
+     giới thiệu, và một gia đình đang cân nhắc cần nhìn thấy con đường
+     trước khi quyết bước vào. Giấu chính tấm bản đồ mình đang mời người
+     ta đi thì lời mời không có nghĩa gì. */
+  'HANHTRINH12', 'TRU_GITA'
   /* SOAT_* KHÔNG nằm ở đây. Chuẩn soát liệt kê tên mọi kho nội bộ, trường
      bắt buộc của từng kho và số bản ghi phải có — đưa vào gói mẫu công khai
      là vẽ sẵn bản đồ kho cho người chưa được cấp phép. Nó ở gói NỀN. */

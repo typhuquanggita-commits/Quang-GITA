@@ -46,8 +46,11 @@ G.UI = {
     orLogin:'HOẶC ĐĂNG NHẬP BẰNG TÀI KHOẢN',
     signUp:'Chưa có tài khoản? Đăng ký',
     gateVisionEyebrow:'TẦM NHÌN GITA 365',
-    gateVisionTitle:'Kiến tạo một hệ sinh thái gia đình phát triển bền vững, nơi mỗi người biết hiểu mình, rèn mình, làm chủ cuộc đời và cùng nhau kiến tạo hạnh phúc, thành công, thịnh vượng qua nhiều thế hệ.',
-    gateMission:'Trao cho mỗi gia đình một bản đồ, một nhịp và một người đồng hành — để sau 365 ngày, nhà ấy tự chạy được mà không cần ai canh.',
+    /* Hai chuỗi tầm nhìn · sứ mệnh KHÔNG viết ở đây. Chúng được gán từ
+       G.CULTURE ở cuối tệp này — xem khối "MỘT BẢN GỐC" phía dưới. Để
+       chỗ giữ chỗ ở đây cho khối vi vẫn đọc được liền mạch. */
+    gateVisionTitle:'',
+    gateMission:'',
     gateMapTitle:'BẢN ĐỒ GIA ĐÌNH THỊNH VƯỢNG · NĂM CHẶNG',
     loginHint:'Chưa biết mật khẩu? Mở danh sách để xem đủ mười lăm tài khoản kèm mật khẩu, và bấm Vào là đăng nhập ngay.',
     seePw:'Xem tài khoản và mật khẩu',
@@ -98,6 +101,22 @@ G.UI = {
     lock:'Your current role has not unlocked this section.'
   }
 };
+
+/* ══════════ MỘT BẢN GỐC CHO TẦM NHÌN VÀ SỨ MỆNH ══════════
+   Trước v7.7 câu tầm nhìn có hai bản khác nhau: một ở G.CULTURE, một
+   viết tay trong khối vi ở trên. Cổng đăng nhập và thanh la bàn đọc bản
+   này, màn "GITA 365 là gì" đọc bản kia — nên trên cùng một màn hình
+   người dùng nhìn thấy hai tầm nhìn khác nhau của cùng một Học viện.
+
+   Nay bản gốc chỉ có một, nằm ở G.CULTURE trong src/data.core.js (nạp
+   trước tệp này). Khối 'en' vẫn giữ bản dịch riêng, vì dịch là việc của
+   người, không suy ra được từ bản tiếng Việt. */
+(function(){
+  var C = G.CULTURE;
+  if(!C || !G.UI || !G.UI.vi) return;
+  if(C.tamNhin && C.tamNhin.big) G.UI.vi.gateVisionTitle = C.tamNhin.big;
+  if(C.suMenh  && C.suMenh.big)  G.UI.vi.gateMission     = C.suMenh.big;
+})();
 
 /* ══════════ NĂM NHÓM & 42 MỤC ══════════ */
 G.NAV_EN = {
@@ -189,7 +208,7 @@ G.ITEM_EN = {
   'soat-day-du':['Completeness self-audit','5 checks · counted live from loaded data'],
   /* Ba mươi tư mục dưới đây trước nay chỉ có tiếng Việt: bản tiếng Anh
      rơi vào ô trống nên giao diện EN hiện mã màn hình thay cho tên. */
-  'gioi-thieu':['What GITA 365 is','What it does · what it will not do · what a family goes through'],
+  'gioi-thieu':['What GITA 365 is','Mission · vision · goals · values · five tiers · culture · how we stay with you'],
   'pham-vi':['My scope','How far my access goes · what is still closed'],
   'ban-do-ca-nhan':['Personal blueprint · 11 blocks','Why → talent, then loop back and revise the path'],
   'vong-nhac':['Right – Enough – Deep loop','Reading is not doing · three rungs per task'],

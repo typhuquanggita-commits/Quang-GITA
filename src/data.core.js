@@ -319,7 +319,7 @@ G.NAV = [
    t:'BẢN ĐỒ THỊNH VƯỢNG', s:'Nhà mình đang ở đâu, và sẽ thành gì?',
    essence:'Nơi mọi thứ bắt đầu: nhìn cho đúng trước khi sửa bất cứ điều gì.',
    items:[
-    {v:'gioi-thieu',  t:'GITA 365 là gì',              h:'Làm được gì · không làm gì · một nhà đi qua những gì', ic:'seed', star:1, capMo:'chung'},
+    {v:'gioi-thieu',  t:'GITA 365 là gì',              h:'Sứ mệnh · tầm nhìn · mục tiêu · giá trị · năm tầng · văn hoá · cách đồng hành', ic:'seed', star:1, capMo:'chung'},
     {v:'bat-dau',     t:'Bắt đầu ở đây',               h:'Năm bước đầu tiên, đúng thứ tự',     ic:'seed', star:1, capMo:'chung'},
     {v:'tham-gia',    t:'Đường vào — sáu bước',         h:'Giới thiệu → đăng ký → test → hồ sơ → định hướng → 7 ngày', ic:'compass', star:1, capMo:'chung'},
     {v:'pham-vi',     t:'Phạm vi của tôi',             h:'Mình mở tới đâu · còn gì chưa mở',   ic:'compass', star:1, capMo:'chung'},
@@ -497,8 +497,21 @@ G.CULTURE = {
   slogan:'Một gia đình vận hành được — không cần ai canh.',
   sloganSub:'GITA 365 · Hệ Sinh Thái Gia Đình Thịnh Vượng',
 
+  /* TẦM NHÌN và SỨ MỆNH là bản gốc DUY NHẤT của hai câu này. Cổng đăng
+     nhập và thanh la bàn đều đọc từ đây qua G.UI.vi (xem cuối src/i18n.js),
+     nên sửa ở đây là mọi nơi đổi theo. Trước v7.7 có hai bản tầm nhìn khác
+     nhau chạy song song — một ở đây, một ở i18n — và người dùng nhìn thấy
+     cả hai cùng lúc trên một màn hình. */
   tamNhin:{
     t:'TẦM NHÌN',
+    big:'Kiến tạo một hệ sinh thái gia đình phát triển bền vững, nơi mỗi người biết hiểu mình, rèn mình, làm chủ cuộc đời và cùng nhau kiến tạo hạnh phúc, thành công, thịnh vượng qua nhiều thế hệ.',
+    sub:'Nhiều thế hệ, không phải một khoá học. Đích đo bằng đời người, không đo bằng học kỳ.'
+  },
+  /* Mốc 2030 tách khỏi TẦM NHÌN có chủ ý: tầm nhìn nói về loại thế giới
+     muốn tạo ra, mốc nói con số và hạn. Gộp hai thứ vào một chỗ rồi gọi
+     chung là "tầm nhìn" thì cái nào cũng đọc không rõ. */
+  moc2030:{
+    t:'MỐC 2030',
     big:'Đến năm 2030, một triệu người Việt lớn lên trong một gia đình vận hành được — nơi đứa trẻ tự cầm lái đời mình và người lớn cũng đang lớn lên mỗi ngày.',
     sub:'Không phải một triệu đứa trẻ ngoan hơn. Là một triệu gia đình khác đi.'
   },

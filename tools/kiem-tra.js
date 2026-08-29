@@ -2666,6 +2666,102 @@ const { chromium } = require(PW);
     bao(!lot.length, 'chuẩn soát không lọt ra gói mẫu công khai', lot.join(' '));
   }
 
+  /* ═══════════ 35 · CỬA TRƯỚC KHÔNG ĐƯỢC RỖNG RUỘT ═══════════
+
+     Ba mươi bốn mục trên đều chạy VỚI kho đã cấp phép, nên không mục nào
+     nhìn thấy thứ mà người lạ nhìn thấy. Bản giới thiệu một tệp — cũng
+     chính là bản trang web công khai phục vụ — chạy chế độ mẫu: nó chỉ
+     có gói MO_RA, không có kho. Màn nào lấy dữ liệu ngoài gói ấy sẽ dựng
+     ra mấy cái tiêu đề mục và không có chữ nào bên trong.
+
+     Đó là chuyện đã xảy ra với chính cửa trước: kho GT_* chỉ ở gói NỀN,
+     nên màn "GITA 365 là gì" là một cái khung 1.658 ký tự gồm mười hai
+     tiêu đề rỗng — trong khi bộ kiểm 34 mục vẫn xanh hết.
+
+     DANH SÁCH ĐẶT TÊN, KHÔNG LỌC THEO capMo. Bản đầu tiên của mục này
+     lọc mọi màn khai capMo:'chung' — sai, vì capMo là TẦNG HIỂN THỊ THEO
+     VAI ("ai đăng nhập cũng thấy"), không phải "ai trên mạng cũng thấy".
+     Lọc như thế thì mục này đòi cả màn Khoá đào tạo của đội ngũ phải mở
+     công khai — tức là bắt hệ thống mở kho nghề ra để cho bài kiểm xanh.
+     Cửa trước là một quyết định kinh doanh, nên nó được viết ra thành
+     tên, và thêm bớt tên là một lần cân nhắc có ý thức. */
+  console.log('\n35 · CỬA TRƯỚC KHÔNG ĐƯỢC RỖNG RUỘT');
+  {
+    /* Những màn một người LẠ được mời vào trước khi có tài khoản */
+    const CUA_TRUOC = ['gioi-thieu', 'bat-dau', 'tham-gia', 'pham-vi', 'ban-do', 'hanh-trinh-12'];
+    const SAN = 95;   /* bản giới thiệu phải có ít nhất chừng này màn đủ ruột */
+    const NGAN = 700; /* dùng chung ngưỡng với tools/ra-soat-day-du.js */
+
+    const fs35 = require('fs'), px35 = require('path');
+    const tep = px35.join(__dirname, '..', 'GITA365_v75_GIOI_THIEU.html');
+    if (!fs35.existsSync(tep)) {
+      bao(false, 'có bản giới thiệu một tệp để kiểm',
+        'thiếu ' + px35.basename(tep) + ' — chạy python3 tools/dong-goi.py');
+    } else {
+      const p35 = await b.newPage();
+      const loi35 = [];
+      p35.on('pageerror', e => loi35.push(e.message));
+      await p35.goto('file://' + tep, { waitUntil: 'networkidle' });
+      await p35.waitForFunction(() => window.G && window.G.VIEWS, null, { timeout: 20000 });
+      await p35.evaluate(() => window.G.doLogin('superadmin@gita365.vn'));
+      await p35.waitForTimeout(2200);
+
+      const r35 = await p35.evaluate(opt => {
+        const G = window.G;
+        const dem = v => { G.S.view = v; G.render();
+          const m = document.getElementById('main');
+          return (m ? m.innerText : '').trim().length; };
+
+        const mong = [], laVIEW = [];
+        opt.cua.forEach(v => {
+          if (!G.VIEWS[v]) { laVIEW.push(v); return; }
+          const n = dem(v);
+          if (n < opt.ngan) mong.push(v + ' (' + n + ')');
+        });
+
+        const man = []; G.NAV.forEach(g => g.items.forEach(i => man.push(i.v)));
+        let day = 0; man.forEach(v => { if (dem(v) >= opt.ngan) day++; });
+
+        /* Tầm nhìn và sứ mệnh chỉ được có MỘT bản gốc. Trước v7.7 có hai
+           bản tầm nhìn khác nhau — một ở G.CULTURE, một viết tay trong
+           i18n — và cả hai cùng hiện trên một màn hình: thanh la bàn bên
+           phải nói một đằng, thân màn "GITA 365 là gì" nói một nẻo. */
+        const C = G.CULTURE || {}, UIv = (G.UI || {}).vi || {};
+        const mot = {
+          tamNhin: !!(C.tamNhin && C.tamNhin.big) && UIv.gateVisionTitle === C.tamNhin.big,
+          suMenh:  !!(C.suMenh  && C.suMenh.big)  && UIv.gateMission     === C.suMenh.big,
+          moc2030: !!(C.moc2030 && C.moc2030.big),
+          khac:    !!(C.tamNhin && C.moc2030) && C.tamNhin.big !== C.moc2030.big
+        };
+
+        return { mau: !!(G.KHO && G.KHO.cheDoMau), mong: mong, laVIEW: laVIEW,
+                 tong: man.length, day: day, gt: dem('gioi-thieu'), mot: mot };
+      }, { cua: CUA_TRUOC, ngan: NGAN });
+
+      bao(r35.mau === true,
+        'bản giới thiệu chạy đúng chế độ mẫu — không kèm kho, không kèm khoá');
+      bao(!r35.laVIEW.length,
+        'mọi màn trong danh sách cửa trước đều có thật', r35.laVIEW.join(' '));
+      bao(!r35.mong.length,
+        'cả ' + CUA_TRUOC.length + ' màn cửa trước đều có ruột thật trên bản khách nhận được',
+        r35.mong.join(' · '));
+      bao(r35.gt >= 8000,
+        'cửa trước "GITA 365 là gì" đủ dày: sứ mệnh · tầm nhìn · mục tiêu · giá trị · năm tầng · văn hoá · cách đồng hành',
+        r35.gt.toLocaleString('vi-VN') + ' ký tự');
+      bao(r35.day >= SAN,
+        'bản dùng thử không rỗng: phần lớn màn hình xem được ngay, không cần cấp phép',
+        r35.day + '/' + r35.tong + ' màn đủ ruột · sàn ' + SAN);
+      bao(r35.mot.tamNhin && r35.mot.suMenh,
+        'tầm nhìn và sứ mệnh chỉ có một bản gốc — cổng đăng nhập, thanh la bàn và màn giới thiệu nói cùng một câu',
+        (r35.mot.tamNhin ? '' : 'tầm nhìn lệch ') + (r35.mot.suMenh ? '' : 'sứ mệnh lệch'));
+      bao(r35.mot.moc2030 && r35.mot.khac,
+        'mốc 2030 tách riêng khỏi tầm nhìn — con số có hạn không bị gọi nhầm là tầm nhìn',
+        r35.mot.moc2030 ? '' : 'thiếu G.CULTURE.moc2030');
+      bao(!loi35.length, 'bản giới thiệu chạy không văng lỗi nào', loi35.slice(0, 2).join(' | '));
+      await p35.close();
+    }
+  }
+
   console.log('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành'));
   await b.close();
   process.exit(loi ? 1 : 0);
