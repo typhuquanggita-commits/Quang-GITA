@@ -236,14 +236,12 @@ export const GITA_CADENCES: readonly CadenceSpec[] = [
 
 /** Dạng phiếu luyện phục vụ trụ cột nào. */
 export const PILLAR_OF_KIND: Record<WorksheetKind, GitaPillarId> = {
-  warmup: 'goal',
-  skill: 'talent',
-  speed: 'talent',
-  accuracy: 'talent',
-  mixed: 'talent',
-  review: 'action',
-  challenge: 'inspirits',
-  boss: 'inspirits',
+  theory: 'talent',
+  patterns: 'talent',
+  method: 'talent',
+  advanced: 'inspirits',
+  revision: 'action',
+  test: 'inspirits',
 };
 
 /* ── Năm cấp độ hành động theo quy tắc 20/80 ───────────────────────────── */

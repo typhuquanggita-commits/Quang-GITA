@@ -56,16 +56,26 @@ export function CommandPalette({ open, onClose }: { open: boolean; onClose: () =
       { id: 'mock.full', title: 'Thi thử full 3 phần (195 phút)', group: 'Bắt đầu nhanh', href: '#/exam?start=full' },
     ];
 
-    const topics = TOPICS.filter(
+    const relevant = TOPICS.filter(
       (t) => t.section !== 'science' || t.subject === state.settings.scienceSubject,
-    ).map((t) => ({
+    );
+
+    const topics = relevant.map((t) => ({
       id: `topic.${t.id}`,
       title: t.name,
       group: 'Luyện chuyên đề',
       href: `#/practice?topic=${encodeURIComponent(t.id)}`,
     }));
 
-    return [...base, ...topics];
+    const guides = relevant.map((t) => ({
+      id: `guide.${t.id}`,
+      title: `Ôn chắc: ${t.name}`,
+      group: 'Phiếu hướng dẫn',
+      href: `#/topic?id=${encodeURIComponent(t.id)}`,
+      keywords: 'huong dan on chac chuyen de kien thuc',
+    }));
+
+    return [...base, ...topics, ...guides];
   }, [state.settings.scienceSubject]);
 
   const results = useMemo(() => {

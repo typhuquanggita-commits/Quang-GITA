@@ -137,3 +137,11 @@ export const IconProfile = (p: SVGProps<SVGSVGElement>) => (
     <path d="M8.5 19a3.5 3.5 0 0 1 7 0" />
   </Icon>
 );
+
+export const IconBook = (p: SVGProps<SVGSVGElement>) => (
+  <Icon {...p}>
+    <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H19v15H6.5A2.5 2.5 0 0 0 4 20.5z" />
+    <path d="M4 20.5A2.5 2.5 0 0 1 6.5 18H19v3H6.5" />
+    <path d="M8.5 7.5h7M8.5 11h5" />
+  </Icon>
+);

@@ -282,15 +282,18 @@ export interface WorksheetPart {
   seconds: number;
 }
 
+/**
+ * Sau loai phieu cua moi chuyen de, theo dung thu tu su pham:
+ * ly thuyet → dang bai & doc vi → ky nang & phuong phap → nang cao →
+ * on thi → phieu thi.
+ */
 export type WorksheetKind =
-  | 'warmup'
-  | 'skill'
-  | 'speed'
-  | 'accuracy'
-  | 'mixed'
-  | 'review'
-  | 'challenge'
-  | 'boss';
+  | 'theory'
+  | 'patterns'
+  | 'method'
+  | 'advanced'
+  | 'revision'
+  | 'test';
 
 /**
  * Phieu luyen — don vi tai lieu nho nhat cua chuong trinh.
@@ -311,6 +314,12 @@ export interface Worksheet {
   /** 1..3 */
   stage: number;
   kind: WorksheetKind;
+  /** Ma viet tat cua loai phieu: LT, DB, KN, NC, OT, PT. */
+  kindCode: string;
+  /** Ma cua phieu loi giai + bang phan tich di kem (LG-…). */
+  solutionCode: string;
+  /** Ma phieu huong dan on chac chuyen de (HD-…). */
+  guideCode: string;
   parts: WorksheetPart[];
   questionCount: number;
   /** Tong thoi gian khuyen nghi (giay). */

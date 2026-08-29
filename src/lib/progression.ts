@@ -318,7 +318,7 @@ export function prescribe(
 
 /* ── Định hướng bước tiếp theo ─────────────────────────────────────────── */
 
-export type NextKind = 'retry' | 'reinforce' | 'next' | 'challenge' | 'levelup';
+export type NextKind = 'retry' | 'reinforce' | 'next' | 'test' | 'levelup';
 
 export interface NextStep {
   kind: NextKind;
@@ -349,12 +349,12 @@ export function nextStep(
     };
   }
 
-  if (sheet.kind === 'boss' && outcome.mastered && level < MAX_LEVEL) {
+  if (sheet.kind === 'test' && outcome.mastered && level < MAX_LEVEL) {
     return {
       kind: 'levelup',
       title: `Đủ điều kiện lên cấp ${level + 1}`,
       detail:
-        'Bạn đã vượt ải của cấp hiện tại. Cấp tiếp theo có câu khó hơn và thời gian siết lại — đúng thứ bạn cần lúc này.',
+        'Bạn đã qua phiếu thi của cấp hiện tại. Cấp tiếp theo có câu khó hơn và thời gian siết lại — đúng thứ bạn cần lúc này.',
     };
   }
 
@@ -371,8 +371,11 @@ export function nextStep(
 
   if (following) {
     return {
-      kind: following.kind === 'boss' || following.kind === 'challenge' ? 'challenge' : 'next',
-      title: following.kind === 'boss' ? 'Vào ải cuối của cấp này' : `Sang phiếu tiếp theo: ${following.title}`,
+      kind: following.kind === 'test' ? 'test' : 'next',
+      title:
+        following.kind === 'test'
+          ? 'Vào phiếu thi chốt cấp độ này'
+          : `Sang phiếu tiếp theo: ${following.title}`,
       detail: following.objective,
       worksheetId: following.id,
     };
@@ -404,8 +407,8 @@ export function trackStatus(state: PersistedState, topicId: string): TrackStatus
     (s) => s.topicId === topicId && s.level === level,
   );
   const mastered = chain.filter((s) => state.worksheets[s.id]?.mastered).length;
-  const boss = chain.find((s) => s.kind === 'boss');
-  const bossMastered = boss ? Boolean(state.worksheets[boss.id]?.mastered) : false;
+  const finalTest = chain.find((s) => s.kind === 'test');
+  const bossMastered = finalTest ? Boolean(state.worksheets[finalTest.id]?.mastered) : false;
   const passed = chain.filter((s) => state.worksheets[s.id]?.passed).length;
 
   return {

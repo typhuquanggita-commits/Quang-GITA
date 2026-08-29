@@ -139,101 +139,170 @@ export const LEVEL_SHARE: Record<number, number> = {
   6: 0.12,
 };
 
+export interface KindPart {
+  name: string;
+  goal: string;
+}
+
 export interface KindSpec {
   kind: WorksheetKind;
+  /** Ten day du nhu tren tai lieu in. */
   name: string;
-  /** Muc tieu su pham cua dang phieu nay. */
+  /** Ma viet tat dung trong ma phieu, vi du LT, DB, KN. */
+  code: string;
+  /** Muc tieu su pham cua loai phieu nay. */
   goal: string;
+  /** Nguoi hoc nen o dau trong chuyen de khi lam phieu nay. */
+  whenToUse: string;
   /** Rang buoc rieng khi giao thanh nhiem vu. */
   constraint: string;
-  /** He so thoi gian so voi muc chuan (phieu toc do siet thoi gian lai). */
+  /** Tieu chi coi la da nam duoc loai phieu nay. */
+  masteryCue: string;
+  /** He so thoi gian so voi muc chuan. */
   timeFactor: number;
   /** Dich do kho so voi cap do: -1 de hon, +1 kho hon. */
   difficultyShift: number;
   xpFactor: number;
+  /** Ten va muc tieu ba chang, rieng cho tung loai phieu. */
+  parts: readonly [KindPart, KindPart, KindPart];
 }
 
 /**
- * Tam dang phieu. Chuoi nay lap lai trong moi tuyen — nho vay hoc sinh luon
- * luan phien giua "hieu", "nhanh", "chinh xac" va "tong hop" thay vi lam mai
- * mot kieu bai roi tuong minh da gioi.
+ * SAU LOAI PHIEU CUA MOI CHUYEN DE
+ *
+ * Day khong phai sau bien the cua cung mot thu. Moi loai phieu tra loi mot cau
+ * hoi khac nhau, va thu tu giua chung la thu tu su pham chu khong phai thu tu
+ * tuy y:
+ *
+ *   1. Ly thuyet          — Toi co nam dung khai niem va cong thuc khong?
+ *   2. Dang bai & doc vi  — Nhin de la biet ngay day la dang gi chua?
+ *   3. Ky nang & phuong phap — Toi co lam gon va dung quy trinh khong?
+ *   4. Luyen nang cao     — Toi xu ly duoc cau nhieu buoc va co bay khong?
+ *   5. On thi             — Tron moi dang, toi con nhan ra duoc khong?
+ *   6. Phieu thi          — Duoi ap luc thoi gian that, toi duoc bao nhieu?
+ *
+ * Bo qua buoc 2 la ly do pho bien nhat khien nguoi hoc "hieu bai ma khong lam
+ * duoc": ho biet cach giai nhung khong nhan ra khi nao thi dung cach nao.
+ *
+ * Moi phieu deu di kem hai tai lieu rieng:
+ *   - Phieu loi giai + bang phan tich chuyen sau (ma LG-…), sinh tu chinh bo cau
+ *   - Phieu huong dan on chac chuyen de (ma HD-…), mot phieu cho moi chuyen de
  */
 export const KINDS: readonly KindSpec[] = [
   {
-    kind: 'warmup',
-    name: 'Khởi động',
-    goal: 'Nhắc lại công thức và nhận diện dạng bài trước khi vào phần nặng.',
-    constraint: 'Không giới hạn thời gian. Mục tiêu là làm đúng, chưa cần nhanh.',
-    timeFactor: 1.25,
+    kind: 'theory',
+    name: 'Phiếu lý thuyết',
+    code: 'LT',
+    goal: 'Kiểm tra và chốt lại phần nền: định nghĩa, công thức, điều kiện áp dụng. Không phải để làm khó, mà để không còn chỗ hổng nào ở tầng dưới cùng.',
+    whenToUse: 'Mở đầu chuyên đề, hoặc khi bảng phân tích cho thấy lỗi kiến thức chiếm ưu thế.',
+    constraint: 'Không giới hạn thời gian. Sai câu nào thì đọc ngay phần lý thuyết của câu đó trước khi đi tiếp.',
+    masteryCue: 'Viết lại được công thức và nêu được điều kiện áp dụng mà không cần nhìn tài liệu.',
+    timeFactor: 1.3,
     difficultyShift: -1,
-    xpFactor: 0.7,
+    xpFactor: 0.8,
+    parts: [
+      { name: 'Chặng 1 — Khái niệm', goal: 'Nhận diện đúng khái niệm và thuật ngữ của chuyên đề.' },
+      { name: 'Chặng 2 — Công thức', goal: 'Áp dụng trực tiếp công thức vào tình huống đơn giản nhất.' },
+      { name: 'Chặng 3 — Điều kiện & ngoại lệ', goal: 'Nhận ra khi nào công thức KHÔNG dùng được — chỗ mất điểm phổ biến nhất.' },
+    ],
   },
   {
-    kind: 'skill',
-    name: 'Rèn kỹ năng',
-    goal: 'Làm chắc một kỹ năng lõi qua các biến thể liên tiếp của cùng một dạng.',
-    constraint: 'Hoàn thành đủ 3 chặng trong một lượt, không rời phiếu giữa chừng.',
-    timeFactor: 1,
-    difficultyShift: 0,
-    xpFactor: 1,
-  },
-  {
-    kind: 'speed',
-    name: 'Tốc độ',
-    goal: 'Rút ngắn thời gian trên mỗi câu mà vẫn giữ được độ chính xác.',
-    constraint: 'Thời gian bị siết còn 75% mức chuẩn. Quá giờ vẫn chấm nhưng không tính thành thạo.',
-    timeFactor: 0.75,
-    difficultyShift: -1,
-    xpFactor: 1.1,
-  },
-  {
-    kind: 'accuracy',
-    name: 'Chính xác',
-    goal: 'Loại bỏ lỗi ẩu và các bẫy quen thuộc trong chuyên đề.',
-    constraint: 'Sai quá 2 câu là phải làm lại phiếu trước khi đi tiếp.',
+    kind: 'patterns',
+    name: 'Phiếu dạng bài & đọc vị',
+    code: 'DB',
+    goal: 'Rèn phản xạ nhìn đề là biết dạng. Đây là mắt xích bị bỏ qua nhiều nhất: người học biết cách giải nhưng không nhận ra khi nào thì dùng cách nào.',
+    whenToUse: 'Ngay sau phiếu lý thuyết, trước khi luyện số lượng.',
+    constraint: 'Với mỗi câu, gọi tên dạng bài trong đầu TRƯỚC khi tính. Nếu không gọi được tên, đó là câu cần đánh dấu.',
+    masteryCue: 'Đọc xong đề trong 10 giây là nói được đây là dạng gì và sẽ đi theo hướng nào.',
     timeFactor: 1.15,
-    difficultyShift: 0,
-    xpFactor: 1.1,
+    difficultyShift: -1,
+    xpFactor: 1,
+    parts: [
+      { name: 'Chặng 1 — Dấu hiệu nhận biết', goal: 'Bắt đúng từ khóa và cấu trúc đề báo hiệu dạng bài.' },
+      { name: 'Chặng 2 — Phân loại dạng', goal: 'Xếp đúng câu vào dạng và chọn hướng giải tương ứng.' },
+      { name: 'Chặng 3 — Dạng lai & dễ nhầm', goal: 'Phân biệt các dạng trông giống nhau nhưng giải khác nhau.' },
+    ],
   },
   {
-    kind: 'mixed',
-    name: 'Tổng hợp',
-    goal: 'Trộn nhiều dạng trong cùng chuyên đề để rèn phản xạ nhận diện.',
-    constraint: 'Không được biết trước dạng bài của từng câu.',
+    kind: 'method',
+    name: 'Phiếu kỹ năng & phương pháp',
+    code: 'KN',
+    goal: 'Chuẩn hóa quy trình giải: đi đúng thứ tự bước, không bỏ bước, và rút gọn được thao tác thừa.',
+    whenToUse: 'Khi đã nhận ra dạng nhưng còn sai bước hoặc còn chậm.',
+    constraint: 'Làm đủ ba chặng trong một lượt. Ghi ra quy trình từng bước ở chặng 1 rồi bám theo đúng quy trình đó.',
+    masteryCue: 'Làm được trong thời gian mục tiêu mà không phải nghĩ xem bước tiếp theo là gì.',
     timeFactor: 1,
     difficultyShift: 0,
-    xpFactor: 1.15,
+    xpFactor: 1.1,
+    parts: [
+      { name: 'Chặng 1 — Quy trình chuẩn', goal: 'Đi đúng thứ tự các bước, chưa cần nhanh.' },
+      { name: 'Chặng 2 — Luyện thành thạo', goal: 'Lặp lại quy trình trên các biến thể của cùng một dạng.' },
+      { name: 'Chặng 3 — Rút gọn thao tác', goal: 'Bỏ bước thừa, dùng mẹo tính nhanh phù hợp áp lực phòng thi.' },
+    ],
   },
   {
-    kind: 'review',
-    name: 'Ôn lại',
-    goal: 'Quay lại các câu từng sai để kiến thức không phai theo thời gian.',
-    constraint: 'Nên làm sau buổi học chính ít nhất một ngày.',
-    timeFactor: 1.1,
-    difficultyShift: 0,
-    xpFactor: 0.9,
-  },
-  {
-    kind: 'challenge',
-    name: 'Thử thách',
-    goal: 'Đẩy lên mức khó hơn cấp hiện tại để chuẩn bị lên cấp.',
-    constraint: 'Đạt từ 85% mới được tính là vượt thử thách.',
+    kind: 'advanced',
+    name: 'Phiếu luyện nâng cao',
+    code: 'NC',
+    goal: 'Xử lý câu nhiều bước, có bẫy và có yếu tố phân loại — nhóm câu quyết định khoảng cách giữa điểm khá và điểm dẫn đầu.',
+    whenToUse: 'Khi phiếu kỹ năng đã đạt mức thành thạo.',
+    constraint: 'Đạt từ 85% mới tính là vượt. Mỗi câu sai bắt buộc đọc phần bẫy trong phiếu lời giải.',
+    masteryCue: 'Nhận ra bẫy trước khi mắc, thay vì nhận ra sau khi xem đáp án.',
     timeFactor: 1,
     difficultyShift: 1,
     xpFactor: 1.4,
+    parts: [
+      { name: 'Chặng 1 — Khởi động', goal: 'Lấy nhịp bằng câu đúng mức của cấp hiện tại.' },
+      { name: 'Chặng 2 — Nhiều bước', goal: 'Ghép nhiều kỹ thuật trong cùng một câu.' },
+      { name: 'Chặng 3 — Câu phân loại', goal: 'Câu khó nhất của chuyên đề ở cấp này.' },
+    ],
   },
   {
-    kind: 'boss',
-    name: 'Vượt ải',
-    goal: 'Bài kiểm tra chốt cấp độ của tuyến chuyên đề.',
-    constraint: 'Phải đạt từ 90% để mở khóa cấp độ tiếp theo của tuyến này.',
+    kind: 'revision',
+    name: 'Phiếu ôn thi',
+    code: 'OT',
+    goal: 'Trộn mọi dạng của chuyên đề theo đúng phân bố của đề thật, để kiểm tra phản xạ nhận diện khi không biết trước dạng bài.',
+    whenToUse: 'Cuối mỗi cấp độ, trước khi vào phiếu thi.',
+    constraint: 'Không xem lại lý thuyết trong lúc làm. Sai ở đâu thì đó chính là chỗ chưa chắc thật.',
+    masteryCue: 'Kết quả ở phiếu ôn thi không thấp hơn phiếu kỹ năng — nghĩa là bạn nhận dạng được, không chỉ giải được.',
     timeFactor: 0.95,
+    difficultyShift: 0,
+    xpFactor: 1.2,
+    parts: [
+      { name: 'Chặng 1 — Rà kiến thức', goal: 'Quét nhanh các công thức và điều kiện đã học.' },
+      { name: 'Chặng 2 — Trộn dạng', goal: 'Các dạng xuất hiện xen kẽ, không báo trước.' },
+      { name: 'Chặng 3 — Mô phỏng đề', goal: 'Phân bố độ khó giống một lát cắt của đề thật.' },
+    ],
+  },
+  {
+    kind: 'test',
+    name: 'Phiếu thi',
+    code: 'PT',
+    goal: 'Bài kiểm tra chốt chuyên đề ở cấp độ này, làm trong điều kiện thời gian như phòng thi.',
+    whenToUse: 'Khi đã qua năm loại phiếu trước của cùng cấp độ.',
+    constraint: 'Phải đạt từ 90% để mở khóa cấp độ tiếp theo của tuyến này. Không tạm dừng giữa chừng.',
+    masteryCue: 'Đạt 90% trong đúng thời gian quy định, không cần đến phút bù.',
+    timeFactor: 0.85,
     difficultyShift: 1,
     xpFactor: 1.8,
+    parts: [
+      { name: 'Chặng 1 — Phần dễ ăn điểm', goal: 'Lấy trọn điểm nhóm câu cơ bản, nhanh và chắc.' },
+      { name: 'Chặng 2 — Phần lõi', goal: 'Nhóm câu quyết định điểm số của chuyên đề.' },
+      { name: 'Chặng 3 — Phần phân loại', goal: 'Nhóm câu tách nhóm dẫn đầu khỏi phần còn lại.' },
+    ],
   },
 ];
 
 export const KIND_BY_ID = new Map(KINDS.map((k) => [k.kind, k]));
+
+/** Thu tu su pham cua nam loai phieu dau; phieu thi luon dat o cuoi moi cap do. */
+export const KIND_SEQUENCE: readonly WorksheetKind[] = [
+  'theory',
+  'patterns',
+  'method',
+  'advanced',
+  'revision',
+];
 
 /** Ba chang co dinh trong moi phieu luyen. */
 export const PART_TEMPLATE = [

@@ -75,7 +75,7 @@ describe('dòng chảy sau khi nộp', () => {
     const state = createInitialState();
     const outcome = gradeWorksheet(sheet, answerAll(sheet, 1));
     const step = nextStep(state, sheet, outcome);
-    expect(step.kind === 'next' || step.kind === 'challenge' || step.kind === 'levelup').toBe(true);
+    expect(step.kind === 'next' || step.kind === 'test' || step.kind === 'levelup').toBe(true);
   });
 });
 
@@ -124,13 +124,13 @@ describe('tiến độ và KPI', () => {
     const chain = getWorksheets().filter(
       (s) => s.topicId === sheet.topicId && s.level === 1,
     );
-    for (const item of chain.filter((s) => s.kind !== 'boss').slice(0, 3)) {
+    for (const item of chain.filter((s) => s.kind !== 'test').slice(0, 3)) {
       state = submit(state, item, 1);
     }
     expect(trackStatus(state, sheet.topicId).canLevelUp).toBe(false);
 
-    const boss = chain.find((s) => s.kind === 'boss');
-    if (boss) state = submit(state, boss, 1);
+    const finalTest = chain.find((s) => s.kind === 'test');
+    if (finalTest) state = submit(state, finalTest, 1);
     expect(trackStatus(state, sheet.topicId).canLevelUp).toBe(true);
 
     state = reducer(state, { type: 'track/levelUp', topicId: sheet.topicId });

@@ -8,6 +8,7 @@ import { dueNow, streakOf } from '../../store/selectors';
 import { Badge, Button } from '../ui/primitives';
 import { CommandPalette } from './CommandPalette';
 import {
+  IconBook,
   IconChart,
   IconClose,
   IconExam,
@@ -45,6 +46,7 @@ export function AppShell({ children }: { children: ReactNode }) {
       { href: '/', label: 'Tổng quan', icon: IconHome },
       { href: '/exam', label: 'Thi thử', icon: IconExam },
       { href: '/practice', label: 'Luyện tập', icon: IconTarget },
+      { href: '/topic', label: 'Ôn chắc chuyên đề', icon: IconBook },
       { href: '/review', label: 'Sổ tay lỗi sai', icon: IconNotebook, badge: due },
       { href: '/analytics', label: 'Phân tích', icon: IconChart },
       { href: '/profile', label: 'Hồ sơ học viên', icon: IconProfile },

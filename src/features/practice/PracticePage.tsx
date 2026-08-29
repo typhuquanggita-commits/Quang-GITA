@@ -70,9 +70,11 @@ function PracticeContent() {
         <h1 className="text-2xl font-semibold tracking-tight">Thư viện phiếu luyện</h1>
         <p className="mt-1.5 max-w-3xl text-sm text-fg-muted">
           {formatNumber(TOTAL_WORKSHEETS)} phiếu luyện và {formatNumber(TOTAL_MISSIONS)} nhiệm vụ, chia đều cho ba
-          phần thi theo đúng tỉ trọng của đề thật. Mỗi phiếu gồm 3 chặng và có ngưỡng hoàn thành, ngưỡng thành
-          thạo riêng. Chương trình của bạn gồm {formatNumber(sheets.length)} phiếu (đã lọc theo môn tự chọn{' '}
-          {SUBJECT_NAME[subject]}).
+          phần thi theo đúng tỉ trọng của đề thật. Mỗi chuyên đề có đủ sáu loại phiếu theo thứ tự sư phạm —{' '}
+          <strong className="text-fg">lý thuyết → dạng bài &amp; đọc vị → kỹ năng &amp; phương pháp → luyện nâng
+          cao → ôn thi → phiếu thi</strong> — mỗi phiếu kèm một phiếu lời giải và bảng phân tích chuyên sâu riêng,
+          cộng một phiếu hướng dẫn ôn chắc cho cả chuyên đề. Chương trình của bạn gồm{' '}
+          {formatNumber(sheets.length)} phiếu (đã lọc theo môn tự chọn {SUBJECT_NAME[subject]}).
         </p>
       </header>
 
@@ -305,16 +307,20 @@ function TrackCard({ topicId, onPick }: { topicId: string; onPick: () => void })
         {status.bossMastered ? ' · đã vượt ải' : ' · chưa vượt ải'}
       </p>
 
-      {status.canLevelUp && (
-        <Button
-          variant="success"
-          size="sm"
-          className="mt-3 w-full"
-          onClick={() => dispatch({ type: 'track/levelUp', topicId })}
-        >
-          Lên cấp {status.level + 1}
+      <div className="mt-3 flex flex-wrap gap-1.5">
+        <Button size="sm" onClick={() => navigate(`/topic?id=${encodeURIComponent(topicId)}`)}>
+          Phiếu ôn chắc
         </Button>
-      )}
+        {status.canLevelUp && (
+          <Button
+            variant="success"
+            size="sm"
+            onClick={() => dispatch({ type: 'track/levelUp', topicId })}
+          >
+            Lên cấp {status.level + 1}
+          </Button>
+        )}
+      </div>
     </div>
   );
 }
@@ -340,7 +346,12 @@ function WorksheetCard({ sheet, highlight = false }: { sheet: Worksheet; highlig
       <div className="flex items-start justify-between gap-2">
         <div className="min-w-0">
           <p className="truncate text-xs font-medium tabular-nums text-fg-subtle">{sheet.code}</p>
-          <h3 className="mt-0.5 text-sm font-semibold text-fg">{kind?.name}</h3>
+          <h3 className="mt-0.5 text-sm font-semibold text-fg">
+            <span className="mr-1.5 rounded bg-brand-soft px-1.5 py-0.5 text-[10px] font-bold text-brand">
+              {sheet.kindCode}
+            </span>
+            {kind?.name}
+          </h3>
         </div>
         <span
           className="mt-1 size-2.5 shrink-0 rounded-full"
@@ -375,15 +386,33 @@ function WorksheetCard({ sheet, highlight = false }: { sheet: Worksheet; highlig
       </div>
 
       <div className="mt-3 flex-1" />
-      <Button
-        variant={highlight ? 'primary' : 'secondary'}
-        size="sm"
-        disabled={!unlocked}
-        title={unlocked ? undefined : (worksheetRequirementLabel(sheet) ?? undefined)}
-        onClick={() => navigate(`/worksheet?id=${encodeURIComponent(sheet.id)}`)}
-      >
-        {progress ? 'Làm lại' : 'Bắt đầu'}
-      </Button>
+      <div className="flex flex-wrap gap-1.5">
+        <Button
+          variant={highlight ? 'primary' : 'secondary'}
+          size="sm"
+          disabled={!unlocked}
+          title={unlocked ? undefined : (worksheetRequirementLabel(sheet) ?? undefined)}
+          onClick={() => navigate(`/worksheet?id=${encodeURIComponent(sheet.id)}`)}
+        >
+          {progress ? 'Làm lại' : 'Bắt đầu'}
+        </Button>
+        <Button
+          variant="ghost"
+          size="sm"
+          title={`Phiếu lời giải ${sheet.solutionCode}`}
+          onClick={() => navigate(`/solutions?worksheet=${encodeURIComponent(sheet.id)}`)}
+        >
+          Lời giải
+        </Button>
+        <Button
+          variant="ghost"
+          size="sm"
+          title={`Phiếu hướng dẫn ôn chắc ${sheet.guideCode}`}
+          onClick={() => navigate(`/topic?id=${encodeURIComponent(sheet.topicId)}`)}
+        >
+          Ôn chắc
+        </Button>
+      </div>
       {!unlocked && (
         <p className="mt-1.5 text-xs text-fg-subtle">{worksheetRequirementLabel(sheet)}</p>
       )}

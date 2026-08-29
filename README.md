@@ -17,10 +17,12 @@ Tư duy định lượng (Toán, 50 câu / 75 phút), Tư duy định tính (Ng�
 | Khối | Nội dung |
 |---|---|
 | **Mô thức GITA** | Bốn trụ cột Goal — Inspirits — Talent — Action, ba nhịp áp dụng, năm tầng hấp thu, năm cấp chuyên môn, năm cấp độ hành động 20/80, mười hai thói quen, ba môi trường |
-| **Chương trình học** | **2.000 phiếu luyện** và **2.000 nhiệm vụ**, 6 cấp độ, 3 giai đoạn, phân bổ theo đúng tỉ trọng đề thi |
+| **Chương trình học** | **2.000 phiếu luyện** và **2.000 nhiệm vụ**, 6 loại phiếu cho mỗi chuyên đề, 6 cấp độ, 3 giai đoạn, phân bổ theo đúng tỉ trọng đề thi |
+| **Tài liệu đi kèm** | Mỗi phiếu có một **phiếu lời giải + bảng phân tích chuyên sâu** riêng; mỗi chuyên đề có một **phiếu hướng dẫn ôn chắc** |
 | **Dòng chảy học tập** | Làm từng chặng → chấm → báo kết quả → nhận xét → giải pháp → định hướng → xét lên cấp |
 | **Thi thử** | Đề mô phỏng full 3 phần và theo từng phần, đồng hồ riêng cho mỗi phần, chấm và quy đổi về thang 150 |
 | **Sổ tay lỗi sai** | Ôn tập ngắt quãng (SM-2 hiệu chỉnh) cho câu sai, câu đoán trúng và câu làm quá chậm |
+| **Hồ sơ học viên** | Lưu nguyên vẹn từng lượt làm, phân loại lỗi kiến thức / kỹ năng / chiến thuật, sinh lộ trình cá nhân hóa |
 | **Phân tích năng lực** | Mô hình Rasch (IRT 1 tham số), điểm dự báo, chỉ số sẵn sàng 5 trụ cột, hiệu chuẩn mức tự tin |
 | **Lộ trình** | Giai đoạn theo ngày thi, mốc theo tuần, thứ tự ưu tiên chuyên đề |
 | **Phân quyền** | 5 vai trò × cấp bậc, 22 quyền, cộng thêm cổng mở tính năng theo cấp độ học viên |
@@ -43,10 +45,10 @@ Các lệnh khác:
 
 ```bash
 npm run verify       # typecheck + toàn bộ test + build
-npm run test         # 128 bài test
+npm run test         # 175 bài test
 npm run build        # dựng bản phát hành vào dist/
 npm run preview      # xem thử bản đã dựng
-npm run catalogue    # xuất 2000 phiếu + 2000 nhiệm vụ ra catalogue/*.csv
+npm run catalogue    # xuất 2000 phiếu + 2000 nhiệm vụ + 30 phiếu hướng dẫn ra catalogue/*.csv
 ```
 
 **Gia sư AI (tùy chọn).** Ứng dụng chạy đầy đủ khi không có khóa API. Muốn bật, đặt
@@ -114,6 +116,28 @@ bằng xây dựng và có bài test canh giữ:
 
 Chi tiết: [`docs/CHUONG-TRINH.md`](docs/CHUONG-TRINH.md).
 
+### Sáu loại phiếu của mỗi chuyên đề
+
+| Mã | Loại phiếu | Trả lời câu hỏi |
+|---|---|---|
+| **LT** | Phiếu lý thuyết | Tôi có nắm đúng khái niệm và công thức không? |
+| **DB** | Phiếu dạng bài & đọc vị | Nhìn đề là biết ngay đây là dạng gì chưa? |
+| **KN** | Phiếu kỹ năng & phương pháp | Tôi có làm gọn và đúng quy trình không? |
+| **NC** | Phiếu luyện nâng cao | Tôi xử lý được câu nhiều bước và có bẫy không? |
+| **OT** | Phiếu ôn thi | Trộn mọi dạng, tôi còn nhận ra được không? |
+| **PT** | Phiếu thi | Dưới áp lực thời gian thật, tôi được bao nhiêu? |
+
+Bỏ qua bước **DB** là lý do phổ biến nhất khiến người học "hiểu bài mà không làm
+được": họ biết cách giải nhưng không nhận ra khi nào thì dùng cách nào.
+
+Mỗi phiếu đi kèm hai tài liệu riêng:
+
+```
+PL-TOA-STA-L3-004   Phiếu luyện     — bài để làm
+LG-TOA-STA-L3-004   Phiếu lời giải  — lời giải đầy đủ + bảng phân tích chuyên sâu
+HD-TOA-STA          Phiếu hướng dẫn — một phiếu ôn chắc cho cả chuyên đề
+```
+
 ### Dòng chảy một phiếu
 
 ```
@@ -172,7 +196,7 @@ src/
   store/                 Reducer + context, mọi thay đổi trạng thái đi qua đây
   components/            Hệ thống thiết kế, biểu đồ SVG tự vẽ, khung ứng dụng
   features/              Từng màn hình
-tests/                   128 bài test cho toàn bộ tầng lib, data và giao diện
+tests/                   175 bài test cho toàn bộ tầng lib, data và giao diện
 ```
 
 Nguyên tắc: **mọi quy tắc nghiệp vụ nằm trong `lib/` dưới dạng hàm thuần** — chấm
@@ -196,7 +220,7 @@ Chi tiết: [`docs/KIEN-TRUC.md`](docs/KIEN-TRUC.md).
 
 - **TypeScript nghiêm ngặt** — bật `strict`, `noUncheckedIndexedAccess`,
   `exactOptionalPropertyTypes`, `noUnusedLocals`. Không có `any` trong mã sản phẩm.
-- **128 bài test** phủ chấm điểm, chuẩn hóa đáp án, mô hình Rasch, ôn tập ngắt quãng,
+- **175 bài test** phủ chấm điểm, chuẩn hóa đáp án, mô hình Rasch, ôn tập ngắt quãng,
   di trú dữ liệu, phân quyền, tiến độ, tính toàn vẹn ngân hàng câu hỏi và khung
   chương trình, mô thức GITA và quy tắc 20/80, cộng với test giao diện đầu-cuối.
 - **Kiểm tra nội dung** — một câu hỏi sai đáp án gây hại hơn mọi lỗi kỹ thuật khác,

@@ -7,7 +7,15 @@ import type {
   WorksheetKind,
   WorksheetPart,
 } from '../types';
-import { KINDS, LEVELS, LEVEL_SHARE, PART_TEMPLATE, MASTERY_RATIO, PASS_RATIO } from './curriculum';
+import {
+  KINDS,
+  KIND_SEQUENCE,
+  LEVELS,
+  LEVEL_SHARE,
+  MASTERY_RATIO,
+  PART_TEMPLATE,
+  PASS_RATIO,
+} from './curriculum';
 import { questionsOf, questionsOfTopic } from './questions';
 import { TOPICS } from './topics';
 
@@ -87,17 +95,27 @@ function buildSlots(): Slot[] {
 }
 
 /**
- * Phan bo so phieu cho tung o theo phuong phap so du lon nhat.
- * Bao dam tong dung bang `total` va khong o nao bi bo trong.
+ * So phieu toi thieu cho moi o (chuyen de x cap do).
+ *
+ * Bang dung so loai phieu: moi cap do cua moi chuyen de phai co du ca sau loai
+ * — ly thuyet, dang bai, ky nang, nang cao, on thi, phieu thi. Neu mot o chi
+ * nhan 4 phieu thi hai loai bi thieu, va nguoi hoc mat han mot mat xich cua
+ * mach su pham.
  */
-export function apportion(weights: readonly number[], total: number): number[] {
+export const MIN_SHEETS_PER_SLOT = KIND_SEQUENCE.length + 1;
+
+/**
+ * Phan bo so phieu cho tung o theo phuong phap so du lon nhat.
+ * Bao dam tong dung bang `total` va moi o nhan it nhat `minimum` phieu.
+ */
+export function apportion(weights: readonly number[], total: number, minimum = 1): number[] {
   const sum = weights.reduce((a, b) => a + b, 0);
   if (sum <= 0 || weights.length === 0) return weights.map(() => 0);
 
   const exact = weights.map((w) => (w / sum) * total);
-  // San toi thieu 1 phieu cho moi o — nhung chi khi con du phieu de san.
-  // Neu it hon so o, quay ve chia thuan tuy theo phan nguyen.
-  const floor = total >= weights.length ? 1 : 0;
+  // San toi thieu cho moi o — nhung chi khi con du phieu de san.
+  // Neu khong du, quay ve chia thuan tuy theo phan nguyen.
+  const floor = total >= weights.length * minimum ? minimum : 0;
   const counts = exact.map((value) => Math.max(floor, Math.floor(value)));
   let assigned = counts.reduce((a, b) => a + b, 0);
 
@@ -135,12 +153,16 @@ export function apportion(weights: readonly number[], total: number): number[] {
   return counts;
 }
 
-/** Chon dang phieu theo vi tri trong chuoi cua mot o. */
+/**
+ * Chon loai phieu theo vi tri trong chuoi cua mot o (chuyen de x cap do).
+ *
+ * Nam loai dau lap lai theo dung thu tu su pham; phieu thi LUON dat o cuoi de
+ * chot cap do. Nho vay du mot o co 4 phieu hay 14 phieu, nguoi hoc van di qua
+ * dung mach: ly thuyet → doc vi → ky nang → nang cao → on thi → thi.
+ */
 function kindFor(index: number, count: number): WorksheetKind {
-  if (index === count - 1) return 'boss';
-  if (count > 2 && index === count - 2) return 'challenge';
-  const rotation: WorksheetKind[] = ['warmup', 'skill', 'speed', 'accuracy', 'mixed', 'review'];
-  return rotation[index % rotation.length] as WorksheetKind;
+  if (index === count - 1) return 'test';
+  return KIND_SEQUENCE[index % KIND_SEQUENCE.length] as WorksheetKind;
 }
 
 function clampDifficulty(value: number): Difficulty {
@@ -255,6 +277,7 @@ function buildWorksheets(): Worksheet[] {
   const counts = apportion(
     slots.map((s) => s.weight),
     TOTAL_WORKSHEETS,
+    MIN_SHEETS_PER_SLOT,
   );
 
   const poolCache = new Map<string, Question[]>();
@@ -304,12 +327,15 @@ function buildWorksheets(): Worksheet[] {
       );
       const selection = selectSheetQuestions(pool, sectionPool, targets, partCounts, i * 3);
 
-      const parts: WorksheetPart[] = PART_TEMPLATE.map((template, partIndex) => {
+      const parts: WorksheetPart[] = PART_TEMPLATE.map((_template, partIndex) => {
         const questionIds = selection[partIndex] ?? [];
+        // Ten va muc tieu chang lay theo LOAI PHIEU: chang 3 cua phieu ly thuyet
+        // ("dieu kien & ngoai le") khac han chang 3 cua phieu thi ("phan loai").
+        const spec = kindSpec.parts[partIndex] ?? kindSpec.parts[0];
         return {
           order: partIndex + 1,
-          name: template.name,
-          goal: template.goal,
+          name: spec.name,
+          goal: spec.goal,
           questionIds,
           seconds: Math.round(questionIds.length * levelSpec.secondsPerQuestion * kindSpec.timeFactor),
         };
@@ -327,11 +353,14 @@ function buildWorksheets(): Worksheet[] {
         level: slot.level,
         stage: levelSpec.stage,
         kind,
+        kindCode: kindSpec.code,
+        solutionCode: solutionCodeOf(code),
+        guideCode: guideCodeOf(slot.topicId),
         parts,
         questionCount: parts.reduce((n, p) => n + p.questionIds.length, 0),
         seconds: parts.reduce((n, p) => n + p.seconds, 0),
         passRatio: PASS_RATIO,
-        masteryRatio: kind === 'boss' ? 0.9 : kind === 'challenge' ? 0.85 : MASTERY_RATIO,
+        masteryRatio: kind === 'test' ? 0.9 : kind === 'advanced' ? 0.88 : MASTERY_RATIO,
         xp: Math.round(levelSpec.xp * kindSpec.xpFactor),
         ...(slot.subject ? { subject: slot.subject } : {}),
         ...(previous ? { requires: previous } : {}),
@@ -348,6 +377,23 @@ function buildWorksheets(): Worksheet[] {
 function previousLevelBoss(lastOfSlot: Map<string, string>, slot: Slot): string | undefined {
   if (slot.level <= 1) return undefined;
   return lastOfSlot.get(`${slot.topicId}:${slot.level - 1}`);
+}
+
+/**
+ * Ma phieu loi giai di kem. Moi phieu luyen PL-… co dung mot phieu loi giai
+ * LG-… — cung bo cau, nhung la mot tai lieu rieng gom loi giai day du va bang
+ * phan tich chuyen sau.
+ */
+export function solutionCodeOf(worksheetCode: string): string {
+  return worksheetCode.replace(/^PL-/, 'LG-');
+}
+
+/** Ma phieu huong dan on chac chuyen de — mot phieu cho moi chuyen de. */
+export function guideCodeOf(topicId: string): string {
+  const parts = topicId.split('.');
+  const slug = (parts[parts.length - 1] ?? 'gen').slice(0, 3).toUpperCase();
+  const prefix = parts.length === 3 ? (SUBJECT_CODE[parts[1] as ScienceSubject] ?? 'KHO') : SECTION_CODE[parts[0] as SectionId];
+  return `HD-${prefix}-${slug}`;
 }
 
 let cache: Worksheet[] | null = null;

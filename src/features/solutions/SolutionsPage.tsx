@@ -57,29 +57,54 @@ export function SolutionsPage() {
     <div className="space-y-6">
       <header className="flex flex-wrap items-start justify-between gap-4">
         <div className="min-w-0">
-          <Badge tone="brand">{source.kindLabel}</Badge>
+          <Badge tone="brand">
+            {source.kindLabel}
+            {source.code ? ` · ${source.code}` : ''}
+          </Badge>
           <h1 className="mt-2 text-2xl font-semibold tracking-tight">{source.title}</h1>
           <p className="mt-1 text-sm text-fg-muted">
-            {formatDateTime(source.submittedAt)} · {analysis.correct}/{analysis.total} câu ·{' '}
-            {formatPercent(analysis.ratio, 1)}
+            {source.attempted && source.submittedAt !== null
+              ? `${formatDateTime(source.submittedAt)} · ${analysis.correct}/${analysis.total} câu · ${formatPercent(analysis.ratio, 1)}`
+              : `${entries.length} câu · tài liệu lời giải đi kèm phiếu luyện`}
             {source.subtitle ? ` · ${source.subtitle}` : ''}
           </p>
         </div>
         <div className="flex flex-wrap gap-2">
-          <Segmented
-            label="Chế độ xem"
-            value={tab}
-            onChange={setTab}
-            options={[
-              { value: 'analysis', label: 'Bảng phân tích' },
-              { value: 'solutions', label: 'Xem đáp án' },
-            ]}
-          />
+          {source.attempted && (
+            <Segmented
+              label="Chế độ xem"
+              value={tab}
+              onChange={setTab}
+              options={[
+                { value: 'analysis', label: 'Bảng phân tích' },
+                { value: 'solutions', label: 'Xem đáp án' },
+              ]}
+            />
+          )}
           <Button onClick={() => navigate('/profile')}>Hồ sơ học viên</Button>
         </div>
       </header>
 
-      {tab === 'analysis' ? (
+      {!source.attempted && (
+        <Card className="border-warn/40 bg-warn-soft">
+          <h2 className="text-base font-semibold text-warn">Bạn chưa làm phiếu này</h2>
+          <p className="mt-2 text-sm leading-relaxed text-fg">
+            Đây là phiếu lời giải đi kèm, mở được như một tài liệu độc lập. Nhưng đọc lời giải trước khi làm sẽ
+            xóa mất giá trị chẩn đoán: hệ thống không thể biết bạn sai vì kiến thức, vì kỹ năng hay vì chiến
+            thuật. Bảng phân tích chuyên sâu vì vậy chỉ mở sau khi bạn nộp bài lần đầu.
+          </p>
+          <p className="mt-3">
+            <Button
+              variant="primary"
+              onClick={() => navigate(`/worksheet?id=${encodeURIComponent(route.params.get('worksheet') ?? '')}`)}
+            >
+              Làm phiếu trước
+            </Button>
+          </p>
+        </Card>
+      )}
+
+      {source.attempted && tab === 'analysis' ? (
         <>
           <AnalysisPanel analysis={analysis} entries={entries} />
           <Card className="border-brand-line bg-brand-soft">
@@ -105,7 +130,11 @@ interface SolutionSource {
   title: string;
   subtitle?: string;
   kindLabel: string;
-  submittedAt: number;
+  /** Ma cua phieu loi giai, vi du LG-TOA-ARI-L1-001. */
+  code: string | null;
+  submittedAt: number | null;
+  /** false = mo phieu loi giai nhu mot tai lieu, chua tung lam bai. */
+  attempted: boolean;
   questionIds: string[];
   responses: Record<string, Response>;
 }
@@ -128,6 +157,8 @@ function resolveSource(
         .map((s) => SECTION_BY_ID[s.section].shortName)
         .join(' · '),
       kindLabel: 'Bài thi thử',
+      code: null,
+      attempted: true,
       submittedAt: result?.submittedAt ?? attempt.submittedAt ?? attempt.createdAt,
       questionIds: attempt.sections.flatMap((s) => s.questionIds),
       responses: attempt.responses,
@@ -140,18 +171,39 @@ function resolveSource(
       ? [...state.worksheetRuns].reverse().find((r) => r.worksheetId === worksheetParam)
       : undefined);
 
-  if (!run) return null;
-  const sheet = worksheetById(run.worksheetId);
-  const mission = missionForWorksheet(run.worksheetId);
+  if (run) {
+    const sheet = worksheetById(run.worksheetId);
+    const mission = missionForWorksheet(run.worksheetId);
+    return {
+      title: sheet?.title ?? run.worksheetId,
+      subtitle: [sheet?.code, mission?.code].filter(Boolean).join(' · '),
+      kindLabel: 'Phiếu luyện',
+      code: sheet?.solutionCode ?? null,
+      attempted: true,
+      submittedAt: run.submittedAt,
+      questionIds: sheet
+        ? sheet.parts.flatMap((p) => p.questionIds)
+        : Object.keys(run.responses).filter((id) => findQuestion(id)),
+      responses: run.responses,
+    };
+  }
 
-  return {
-    title: sheet?.title ?? run.worksheetId,
-    subtitle: [sheet?.code, mission?.code].filter(Boolean).join(' · '),
-    kindLabel: 'Phiếu luyện',
-    submittedAt: run.submittedAt,
-    questionIds: sheet
-      ? sheet.parts.flatMap((p) => p.questionIds)
-      : Object.keys(run.responses).filter((id) => findQuestion(id)),
-    responses: run.responses,
-  };
+  // Chua tung lam phieu nay: van mo duoc phieu loi giai nhu mot TAI LIEU rieng,
+  // nhung khong co du lieu ca nhan nen bang phan tich bi tat.
+  if (worksheetParam) {
+    const sheet = worksheetById(worksheetParam);
+    if (!sheet) return null;
+    return {
+      title: sheet.title,
+      subtitle: [sheet.code, missionForWorksheet(sheet.id)?.code].filter(Boolean).join(' · '),
+      kindLabel: 'Phiếu lời giải',
+      code: sheet.solutionCode,
+      attempted: false,
+      submittedAt: null,
+      questionIds: sheet.parts.flatMap((p) => p.questionIds),
+      responses: {},
+    };
+  }
+
+  return null;
 }

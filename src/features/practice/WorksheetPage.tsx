@@ -610,7 +610,7 @@ function ReportView({
               variant="primary"
               onClick={() => navigate(`/worksheet?id=${encodeURIComponent(step.worksheetId as string)}`)}
             >
-              {step.kind === 'challenge' ? 'Nhận thử thách' : 'Làm phiếu tiếp theo'}
+              {step.kind === 'test' ? 'Vào phiếu thi' : 'Làm phiếu tiếp theo'}
             </Button>
           )}
           <Button onClick={onRetry}>Làm lại phiếu này</Button>
