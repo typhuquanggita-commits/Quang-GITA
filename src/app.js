@@ -11,12 +11,12 @@ var KEY = 'gita365.v7';
 G.S = {
   role:null, acc:null, roleObj:null,
   view:'ban-do', open:['g1'], rtab:'labon', rightOpen:true, leftOpen:false,
-  checks:{}, vision:{}, journal:{}, test:{}, famId:'F-001', kbShown:60
+  checks:{}, vision:{}, journal:{}, test:{}, bando:{}, famId:'F-001', kbShown:60
 };
 function save(){
   try{ localStorage.setItem(KEY, JSON.stringify({
     role:G.S.role, u:G.S.acc && G.S.acc.u, view:G.S.view, open:G.S.open, rtab:G.S.rtab,
-    checks:G.S.checks, vision:G.S.vision, journal:G.S.journal, test:G.S.test,
+    checks:G.S.checks, vision:G.S.vision, journal:G.S.journal, test:G.S.test, bando:G.S.bando,
     rightOpen:G.S.rightOpen, mood:G.S.mood
   })); }catch(e){}
 }
@@ -26,6 +26,7 @@ function load(){
     G.S.view = d.view || G.S.view; G.S.open = d.open || G.S.open; G.S.rtab = d.rtab || G.S.rtab;
     G.S.checks = d.checks || {}; G.S.vision = d.vision || {}; G.S.journal = d.journal || {};
     G.S.test = d.test || {};
+    G.S.bando = d.bando || {};
     G.S.mood = d.mood || null;
     if(d.rightOpen !== undefined) G.S.rightOpen = d.rightOpen;
     return d;

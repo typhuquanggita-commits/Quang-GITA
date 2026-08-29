@@ -35,7 +35,10 @@ const NEN = ['VANHANH', 'CHUYENDICH', 'CHANDUNG', 'LOTRINH', 'FAMILIES', 'TEAM',
   'NHATBAN', 'CHIPHI', 'NGONTU_RANH', 'DAISU', 'BAIHOC', 'QUA1000', 'QUA_DANG', 'KETNOI', 'LIENKET', 'KICHBAN_AI',
   /* Hành trình 12 chặng mở cho MỌI vai — gia đình cũng phải thấy mình đang
      ở đâu trên đường. Nên nó nằm ở gói nền, không nằm sau kho nghề. */
-  'TRU_GITA', 'HANHTRINH12', 'LOI_HUA_GITA'];
+  'TRU_GITA', 'HANHTRINH12', 'LOI_HUA_GITA',
+  /* Bản đồ cá nhân 11 ô: mọi vai đều có một bản của riêng mình — học viên,
+     phụ huynh, cộng tác viên, đội ngũ — nên nó thuộc gói nền. */
+  'BDCN_MA', 'BDCN', 'BDCN_MUOI_VIEC', 'BDCN_QUY_TAC', 'BDCN_NHIP'];
 
 const NGHE = ['MOTHUC', 'SACH', 'BANDO_A3', 'POSTER', 'SODO', 'PHACDO',
   'DIEMCHAM', 'NGONTU', 'NGONTU_TANG', 'THAYVI', 'MAUTHOAI', 'PERSONA',

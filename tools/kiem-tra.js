@@ -1521,6 +1521,143 @@ const { chromium } = require(PW);
     bao(/role:\s*'paste'/.test(dm), 'vẫn giữ Dán — khách cần dán khi điền biểu mẫu');
   }
 
+  /* ── 24. Bản đồ cá nhân mười một ô ── */
+  console.log('\n24 · BẢN ĐỒ CÁ NHÂN 11 Ô');
+  {
+    const dangNhap = async (u) => {
+      await p.evaluate(() => { localStorage.clear(); });
+      await p.reload({ waitUntil: 'networkidle' });
+      await p.waitForTimeout(400);
+      await p.evaluate(x => window.G.doLogin(x), u);
+      await p.waitForTimeout(1500);
+    };
+
+    await dangNhap('coach@gita365.vn');
+    const bd = await p.evaluate(() => {
+      const G = window.G, r = {};
+      r.soO = (G.BDCN || []).length;
+      r.duMa = (G.BDCN || []).every(b => b.ma && b.so && b.ic && b.c);
+      r.duBaGiong = (G.BDCN || []).every(b => b.ten && b.ten.ng && b.ten.ph && b.ten.hv &&
+        b.hoi && b.hoi.ng && b.hoi.ph && b.hoi.hv && b.viDu && b.viDu.ng && b.viDu.ph && b.viDu.hv);
+      r.duNamCap = (G.BDCN || []).every(b => Array.isArray(b.sau) && b.sau.length === 5);
+      r.duRanhGioi = (G.BDCN || []).every(b => b.xong && b.chua && Array.isArray(b.lam) && b.lam.length >= 3);
+      r.manCoThat = (G.BDCN || []).every(b => !b.noi || !!G.VIEWS[b.noi.v]);
+      r.oTrung = (G.BDCN || []).flatMap(b => (b.o || []).map(x => x.k))
+        .filter((v, i, a) => a.indexOf(v) !== i);
+      r.mauDuMuoi = ['hv', 'ph', 'ng'].every(k => (G.BDCN_MUOI_VIEC[k] || []).length === 10);
+      r.mauDuBay  = ['hv', 'ph', 'ng'].every(k => (G.BDCN_QUY_TAC[k] || []).length === 7);
+      r.mauManThat = Object.values(G.BDCN_MUOI_VIEC).flat()
+        .filter(x => x.v && !G.VIEWS[x.v]).map(x => x.v);
+      r.luatKhoa = (G.BDCN_QUY_TAC.ng || []).filter(x => x.khoa).length;
+      r.trongVongNhac = (G.VIEC_NHAC || []).filter(x => x.v === 'ban-do-ca-nhan').length;
+      r.dai = G.VIEWS['ban-do-ca-nhan']().length;
+      r.batDauTuKhong = G.bdcnPhanTram();
+      return r;
+    });
+    bao(bd.soO === 11, 'đủ mười một ô', bd.soO + ' ô');
+    bao(bd.duMa, 'ô nào cũng có mã, số thứ tự, biểu tượng và màu');
+    bao(bd.duBaGiong, 'ô nào cũng có đủ ba hệ ngôn từ: học viên · phụ huynh · đội ngũ');
+    bao(bd.duNamCap, 'ô nào cũng đọc được ở năm cấp độ C1 → C5');
+    bao(bd.duRanhGioi, 'ô nào cũng có ranh giới đạt · chưa đạt và ít nhất ba bước làm');
+    bao(bd.manCoThat, 'mọi màn nối tiếp đều có thật');
+    bao(!bd.oTrung.length, 'không khoá ô nhập nào bị trùng', bd.oTrung.join(', '));
+    bao(bd.mauDuMuoi, 'bản mẫu mười việc đủ cho cả ba nhóm người');
+    bao(bd.mauDuBay, 'bản mẫu bảy quy tắc đủ cho cả ba nhóm người');
+    bao(!bd.mauManThat.length, 'việc mẫu nào có màn hình thì màn đó có thật', bd.mauManThat.join(', '));
+    bao(bd.luatKhoa === 4, 'bốn quy tắc LV-01 của đội ngũ bị khoá, không sửa được', bd.luatKhoa + ' điều');
+    bao(bd.trongVongNhac === 2, 'bản đồ đã nằm trong vòng nhắc Đúng – Đủ – Sâu, cả nhà lẫn nghề');
+    bao(bd.dai > 6000, 'màn dựng ra nội dung thật, không phải một dòng trống', bd.dai + ' ký tự');
+    bao(bd.batDauTuKhong === 0, 'tài khoản mới bắt đầu ở 0% — không tự tính là đã xong');
+
+    /* Viết thật vào ô 1 rồi đọc lại, và kiểm nó đi vào đường đồng bộ */
+    const viet = await p.evaluate(async () => {
+      const G = window.G;
+      G.S.view = 'ban-do-ca-nhan'; G.render();
+      document.querySelector('[data-bd-mo="B01"]').click();
+      await new Promise(r => setTimeout(r, 200));
+      const t = document.querySelector('[data-bdo="b01a"]');
+      if (!t) return { mo: false };
+      t.value = 'Tôi làm việc này vì tôi không muốn lần sau lại ngồi im như lần trước.';
+      t.dispatchEvent(new Event('change', { bubbles: true }));
+      const t2 = document.querySelector('[data-bdo="b01b"]');
+      t2.value = 'Tháng ba năm ngoái, một nhà hỏi tôi một câu mà tôi không trả lời được.';
+      t2.dispatchEvent(new Event('change', { bubbles: true }));
+      return {
+        mo: true,
+        trongS: G.S.bando.b01a || '',
+        pt: G.bdcnPhanTram(),
+        tiep: (G.bdcnOTiep() || {}).ma,
+        moc: Object.keys(JSON.parse(localStorage.getItem('gita365.moc') || '{}'))
+               .filter(k => k.indexOf('bando.') === 0),
+        tren_dia: (JSON.parse(localStorage.getItem('gita365.v7') || '{}').bando || {}).b01a || ''
+      };
+    });
+    bao(viet.mo, 'bấm vào ô 1 là mở ra ô nhập thật');
+    bao(/không muốn lần sau/.test(viet.trongS), 'chữ vừa gõ nằm trong hồ sơ của tài khoản');
+    bao(/không muốn lần sau/.test(viet.tren_dia), 'rời ô nhập là đã ghi xuống đĩa, không cần bấm nút');
+    bao(viet.moc.length >= 2, 'đã đánh mốc để đẩy lên máy chủ theo từng trường', viet.moc.join(', '));
+    bao(viet.pt === 9, 'xong ô 1 thì bản đồ đầy 9% — một phần mười một', viet.pt + '%');
+    bao(viet.tiep === 'B02', 'chỉ đúng ô kế tiếp cần viết', viet.tiep);
+
+    /* Lấy mười việc mẫu và bộ quy tắc mẫu */
+    const mau = await p.evaluate(async () => {
+      const G = window.G;
+      document.querySelector('[data-bd-mo="B06"]').click();
+      await new Promise(r => setTimeout(r, 200));
+      document.querySelector('[data-bd-mau="viec"]').click();
+      await new Promise(r => setTimeout(r, 200));
+      const truoc = G.S.bando.viec1 && G.S.bando.viec1.t;
+      /* Không được đè lên chữ người ta đã viết */
+      G.bdcnGhi('viec1', { t: 'Việc của riêng tôi', n: 'ngay', sao: 1 });
+      document.querySelector('[data-bd-mau="viec"]').click();
+      await new Promise(r => setTimeout(r, 150));
+      const sauKhiLay = G.S.bando.viec1.t;
+      document.querySelector('[data-bd-mo="B09"]').click();
+      await new Promise(r => setTimeout(r, 200));
+      document.querySelector('[data-bd-mau="quytac"]').click();
+      await new Promise(r => setTimeout(r, 200));
+      const oKhoa = document.querySelector('[data-bdqt="1"]');
+      return {
+        viecDay: truoc && truoc.length > 5,
+        khongDe: sauKhiLay === 'Việc của riêng tôi',
+        soQt: [1,2,3,4,5,6,7].filter(i => (G.S.bando['qt'+i] || {}).t).length,
+        khoaODau: !!(oKhoa && oKhoa.readOnly),
+        giaKhoa: (G.S.bando.qt1 || {}).g || ''
+      };
+    });
+    bao(mau.viecDay, 'bấm một nút là có mười việc mẫu đúng vai của mình');
+    bao(mau.khongDe, 'bản mẫu KHÔNG đè lên dòng người ta đã tự viết');
+    bao(mau.soQt === 7, 'bấm một nút là có đủ bảy quy tắc', mau.soQt + ' điều');
+    bao(mau.khoaODau, 'quy tắc lấy từ Luật LV-01 không sửa được trên giao diện');
+    bao(/50% KPI/.test(mau.giaKhoa), 'quy tắc khoá ghi rõ cái giá: hạ 50% KPI ba tháng');
+
+    /* Ba hệ ngôn từ phải ra ba màn khác nhau */
+    const ba = {};
+    for (const [ten, u] of [['hv', 'hocvien@gita365.vn'], ['ph', 'phuhuynh@gita365.vn'],
+                            ['ng', 'coach@gita365.vn']]) {
+      await dangNhap(u);
+      ba[ten] = await p.evaluate(() => {
+        const G = window.G;
+        return { dai: G.VIEWS['ban-do-ca-nhan']().length,
+                 dau: G.VIEWS['ban-do-ca-nhan']().slice(0, 4000),
+                 mau: (G.BDCN_MUOI_VIEC[G.NHOM_NGONNGU() === 'hocvien' ? 'hv'
+                        : (G.NHOM_NGONNGU() === 'phuhuynh' ? 'ph' : 'ng')] || [])[0].t };
+      });
+    }
+    bao(/của riêng em/.test(ba.hv.dau), 'học viên đọc bản đồ bằng giọng nói với em');
+    bao(/của riêng nhà mình/.test(ba.ph.dau), 'phụ huynh và cộng tác viên đọc giọng nhà mình');
+    bao(/Bản đồ cá nhân của tôi/.test(ba.ng.dau), 'đội ngũ đọc giọng nghề');
+    bao(ba.hv.mau !== ba.ph.mau && ba.ph.mau !== ba.ng.mau,
+      'mười việc mẫu khác nhau theo từng nhóm người');
+    bao(ba.hv.dai > 6000 && ba.ph.dai > 6000 && ba.ng.dai > 6000,
+      'cả ba nhóm đều thấy màn đầy đủ, không nhóm nào ra màn trống');
+    bao(!/veVanDung|Dùng bản đồ này với một gia đình/.test(ba.ph.dau),
+      'phần hướng dẫn cho đội ngũ KHÔNG lộ ra với gia đình');
+    const nghe = await p.evaluate(() => window.G.VIEWS['ban-do-ca-nhan']());
+    bao(/Dùng bản đồ này với một gia đình/.test(nghe),
+      'đội ngũ có phần hướng dẫn vận dụng đi kèm');
+  }
+
   console.log('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành'));
   await b.close();
   process.exit(loi ? 1 : 0);

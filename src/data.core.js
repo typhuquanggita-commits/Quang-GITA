@@ -293,6 +293,10 @@ G.NAV = [
     {v:'chan-dung-nha',t:'Chân dung nhà mình',         h:'Từng thành viên thật sự là ai',      ic:'users', perm:'kh_gia_dinh', capMo:'nha'},
     {v:'dinh-vi',     t:'Định vị hôm nay',             h:'Bảng số trung thực, không cảm giác', ic:'pulse', perm:'kh_gia_dinh', capMo:'nha'},
     {v:'tam-nhin',    t:'Tầm nhìn 5 – 20 năm',         h:'Cả nhà viết, không ai viết hộ ai',   ic:'sun', perm:'kh_gia_dinh', capMo:'nha'},
+    /* Bản đồ cá nhân 11 ô. Không gắn perm: mọi vai đều có một bản đồ của
+       riêng mình, và nó nằm trong hồ sơ tài khoản chứ không nằm trong gói
+       tư liệu nào — nên không có gì để cấp phép. */
+    {v:'ban-do-ca-nhan',t:'Bản đồ cá nhân 11 ô',        h:'Tại sao → tài năng · rồi vòng lại sửa lộ trình', ic:'compass', star:1, capMo:'chung'},
     {v:'chuyen-hoa',  t:'Từ nỗi đau đến khát khao',    h:'Bảy chuyển dịch làm nên một gia đình khác', ic:'flame', capMo:'chung'},
     {v:'hanh-trinh-con',t:'Hành trình của con',        h:'Từ nhiều vấn đề đến niềm tự hào',    ic:'star', perm:'kh_hanh_trinh', capMo:'con'},
     /* Màn này viết cho ĐỘI NGŨ — chín khoảnh khắc quyết định một nhà có ở lại

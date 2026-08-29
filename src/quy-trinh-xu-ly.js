@@ -475,6 +475,8 @@ var GAN = {
   'tinh-huong':   'Tình huống',
   'tai-lieu-goc': 'Tài liệu Học viện'
 };
+/* Bản đồ cá nhân tự gọi G.veVanDung trong thân màn, chỉ hiện với đội ngũ —
+   không gắn qua GAN để tránh gắn hai lần. */
 Object.keys(GAN).forEach(function(v){
   var goc = G.VIEWS[v];
   if(typeof goc !== 'function') return;

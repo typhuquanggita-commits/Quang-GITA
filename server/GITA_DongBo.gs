@@ -15,7 +15,7 @@ var GITA_TRAN_DONGBO_KB = 512;
 /** Những nhóm dữ liệu được phép đồng bộ. Ngoài danh sách này là từ chối. */
 /* Phải khớp đúng NHOM trong src/dong-bo.js. Lệch một tên là dữ liệu đi lên
    rồi bị bỏ vào danh sách "bỏ qua" mà người dùng không thấy gì bất thường. */
-var GITA_NHOM_DONGBO = ['checks', 'journal', 'vision', 'test', 'mood', 'thuvien', 'minhchung'];
+var GITA_NHOM_DONGBO = ['checks', 'journal', 'vision', 'test', 'mood', 'thuvien', 'minhchung', 'bando'];
 
 function gitaKhoaHoSo_(uid) { return 'HOSO_' + uid; }
 
