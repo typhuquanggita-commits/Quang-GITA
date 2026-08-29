@@ -45,7 +45,7 @@ Các lệnh khác:
 
 ```bash
 npm run verify       # typecheck + toàn bộ test + build
-npm run test         # 212 bài test
+npm run test         # 222 bài test
 npm run build        # dựng bản phát hành vào dist/
 npm run preview      # xem thử bản đã dựng
 npm run catalogue    # xuất 2000 phiếu + 2000 nhiệm vụ + 30 phiếu hướng dẫn ra catalogue/*.csv
@@ -154,6 +154,37 @@ Hai giới hạn được tuyên bố thẳng trên màn hình thay vì giấu �
 **phần thi, không phải từng chuyên đề** (12 câu không đủ định vị 10 chuyên đề riêng biệt),
 và nó chỉ xếp tới **tối đa cấp 4** — cấp cao hơn phải chứng minh bằng phiếu thật.
 
+### Kho bí kíp — tầng sâu của bộ giải đề
+
+Bộ kiến thức trả lời *"phải ôn lại cái gì"*. Kho bí kíp trả lời ba câu hỏi khó hơn nhiều:
+
+1. **Đọc vị** — nhìn vào đâu trên đề là biết ngay đây là dạng nào?
+2. **Phương pháp** — dạng này giải bằng đường lối gì, và **vì sao** là đường đó?
+3. **Bước giải** — làm gì trước, làm gì sau, và mỗi bước **để làm gì**?
+
+Kèm theo là mẹo xử lý nhanh và sai lầm đặc trưng của riêng từng dạng.
+
+| | |
+|---|---|
+| 30 chuyên đề | mỗi chuyên đề một "câu hỏi lớn" |
+| **90 dạng bài** | mỗi dạng có phương pháp riêng |
+| **194 dấu hiệu đọc vị** | đều là thứ **nhìn thấy được trên đề** |
+| **362 bước giải** | mỗi bước nói được nó để làm gì |
+| **90 bí kíp** | kèm điều kiện "dùng khi nào" |
+
+Vì sao tách thành một tầng riêng: lời giải của *một* câu chỉ dạy được câu đó. Người học
+đọc xong gật gù "hiểu rồi", hôm sau gặp câu tương tự vẫn tắc — vì thứ họ thiếu không phải
+phép biến đổi mà là **cái nhìn đầu tiên**: đề này thuộc dạng gì. Đó là thứ giáo viên giỏi
+có sau vài nghìn đề, và gần như không bao giờ được viết ra.
+
+Và vì **cả 2.000 phiếu đều soạn bộ giải đề từ đây**, viết một lần là 2.000 phiếu cùng sâu
+— thay vì vài phiếu được viết tay kỹ lưỡng còn lại thì sơ sài.
+
+Có test canh giữ chất lượng chứ không chỉ canh số lượng: mỗi bước giải **bắt buộc** nói
+được mục đích (một bước không giải thích được mục đích là một bước học thuộc, và học thuộc
+thì quên ngay trong phòng thi); mỗi dấu hiệu đọc vị phải đủ cụ thể; mỗi bí kíp phải nói rõ
+lúc nào thì dùng.
+
 ### Ngân hàng câu hỏi
 
 Phiếu chỉ tốt bằng ngân hàng câu hỏi đứng sau nó. Hiện có **455 câu** trải đều 30
@@ -239,7 +270,7 @@ src/
   store/                 Reducer + context, mọi thay đổi trạng thái đi qua đây
   components/            Hệ thống thiết kế, biểu đồ SVG tự vẽ, khung ứng dụng
   features/              Từng màn hình
-tests/                   212 bài test cho toàn bộ tầng lib, data và giao diện
+tests/                   222 bài test cho toàn bộ tầng lib, data và giao diện
 ```
 
 Nguyên tắc: **mọi quy tắc nghiệp vụ nằm trong `lib/` dưới dạng hàm thuần** — chấm
@@ -264,7 +295,7 @@ Chi tiết: [`docs/KIEN-TRUC.md`](docs/KIEN-TRUC.md).
 
 - **TypeScript nghiêm ngặt** — bật `strict`, `noUncheckedIndexedAccess`,
   `exactOptionalPropertyTypes`, `noUnusedLocals`. Không có `any` trong mã sản phẩm.
-- **212 bài test** phủ chấm điểm, chuẩn hóa đáp án, mô hình Rasch, ôn tập ngắt quãng,
+- **222 bài test** phủ chấm điểm, chuẩn hóa đáp án, mô hình Rasch, ôn tập ngắt quãng,
   di trú dữ liệu, phân quyền, tiến độ, tính toàn vẹn ngân hàng câu hỏi và khung
   chương trình, mô thức GITA và quy tắc 20/80, cộng với test giao diện đầu-cuối.
 - **Không có màn hình trắng** — `ErrorBoundary` ở gốc bắt mọi lỗi hiển thị và đưa ra

@@ -7,6 +7,7 @@
  *   - phieu-luyen.csv                2000 phieu luyen, day du dac ta
  *   - nhiem-vu.csv                   2000 nhiem vu tuong ung
  *   - phieu-huong-dan-on-chac.csv    30 phieu huong dan on chac chuyen de
+ *   - kho-bi-kip.csv                 90 dang bai: doc vi, phuong phap, buoc giai, meo
  *   - chuong-trinh.json              khung chuong trinh day du (may doc)
  *
  * Vi bo phieu duoc SINH RA tu dac ta chu khong go tay, tep xuat ra luon dong bo
@@ -29,6 +30,7 @@ import { bankCoverage, getWorksheets, guideCodeOf } from '../src/data/worksheets
 import { buildTopicGuide } from '../src/lib/topicGuide';
 import { knowledgeFor } from '../src/data/knowledge';
 import { TOPICS } from '../src/data/topics';
+import { PLAYBOOKS } from '../src/data/playbook';
 import { createInitialState } from '../src/lib/storage';
 import { SECTION_BY_ID, SUBJECT_NAME } from '../src/config';
 
@@ -142,6 +144,52 @@ writeFileSync(
         k?.timing ?? '',
         (guide?.criteria ?? []).map((c) => c.label).join(' | '),
       ];
+    }),
+  ),
+  'utf8',
+);
+
+/* Kho bi kip — mot dong cho moi DANG BAI, khong phai moi chuyen de. Day la
+   tang ma bo giai de cua ca 2000 phieu deu soan tu do. */
+writeFileSync(
+  join(OUT, 'kho-bi-kip.csv'),
+  toCsv(
+    [
+      'Chuyên đề', 'Câu hỏi lớn của chuyên đề', 'Mã dạng', 'Dạng bài',
+      'Đọc vị — dấu hiệu trên đề', 'Phương pháp', 'Bước giải (việc → mục đích)',
+      'Mẹo xử lý', 'Sai lầm đặc trưng',
+    ],
+    PLAYBOOKS.flatMap((book) => {
+      const topic = TOPICS.find((t) => t.id === book.topicId);
+      return book.patterns.map((pattern) => [
+        topic?.name ?? book.topicId,
+        book.bigQuestion,
+        pattern.id,
+        pattern.name,
+        pattern.tell.join(' | '),
+        pattern.method,
+        pattern.steps.map((st, i) => `${i + 1}. ${st.action} → ${st.why}`).join(' | '),
+        pattern.trick ?? '',
+        pattern.pitfall ?? '',
+      ]);
+    }),
+  ),
+  'utf8',
+);
+
+/* Bi kip cap chuyen de — nhung thu chi biet duoc sau nhieu de. */
+writeFileSync(
+  join(OUT, 'bi-kip-chuyen-de.csv'),
+  toCsv(
+    ['Chuyên đề', 'Bí kíp', 'Nội dung', 'Dùng khi'],
+    PLAYBOOKS.flatMap((book) => {
+      const topic = TOPICS.find((t) => t.id === book.topicId);
+      return book.secrets.map((secret) => [
+        topic?.name ?? book.topicId,
+        secret.title,
+        secret.body,
+        secret.when,
+      ]);
     }),
   ),
   'utf8',

@@ -5,6 +5,7 @@ import { ERROR_LABEL, ERROR_MEANING, type SolutionEntry } from '../../lib/soluti
 import { findQuestion } from '../../data/questions';
 import type { ErrorType } from '../../types';
 import { Badge, Card, CardHeader, Segmented, type Tone } from '../../components/ui/primitives';
+import { PlaybookPanel } from './PlaybookPanel';
 import { IconClock } from '../../components/layout/icons';
 import { QuestionView } from '../exam/QuestionView';
 
@@ -195,6 +196,8 @@ function SolutionCard({
           )}
         </div>
       )}
+
+      <PlaybookPanel topicId={entry.question.topicId} topicLabel={entry.topicLabel} />
 
       {entry.similarIds.length > 0 && (
         <div className="mt-4">

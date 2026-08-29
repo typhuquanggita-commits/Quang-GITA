@@ -1,4 +1,6 @@
 import { useMemo } from 'react';
+import { PLAYBOOK_BY_TOPIC } from '../../data/playbook';
+import { PatternDetail } from '../solutions/PlaybookPanel';
 import { KINDS } from '../../data/curriculum';
 import { TOPICS } from '../../data/topics';
 import { cn } from '../../lib/cn';
@@ -33,6 +35,7 @@ export function TopicGuidePage() {
   const state = useAppState();
   const topicId = route.params.get('id') ?? '';
   const guide = useMemo(() => buildTopicGuide(state, topicId), [state, topicId]);
+  const playbook = topicId ? PLAYBOOK_BY_TOPIC.get(topicId) : undefined;
 
   const topics = TOPICS.filter(
     (t) => t.section !== 'science' || t.subject === state.settings.scienceSubject,
@@ -240,6 +243,37 @@ export function TopicGuidePage() {
           <p className="mt-5 rounded-lg border-l-4 border-l-brand bg-surface-2 p-3.5 text-sm leading-relaxed text-fg">
             <strong>Chiến thuật thời gian:</strong> {guide.knowledge.timing}
           </p>
+        </Card>
+      )}
+
+      {playbook && (
+        <Card>
+          <CardHeader
+            title="Kho bí kíp của chuyên đề"
+            subtitle={playbook.bigQuestion}
+            action={<Badge tone="brand">{playbook.patterns.length} dạng bài</Badge>}
+          />
+          <div className="space-y-6">
+            {playbook.patterns.map((pattern) => (
+              <section key={pattern.id} className="rounded-xl border border-line bg-surface-2 p-4">
+                <h3 className="text-sm font-semibold text-fg">{pattern.name}</h3>
+                <div className="mt-3">
+                  <PatternDetail pattern={pattern} />
+                </div>
+              </section>
+            ))}
+          </div>
+
+          <h3 className="mt-6 text-sm font-semibold text-fg">Bí kíp dùng cho cả chuyên đề</h3>
+          <ul className="mt-2 space-y-3">
+            {playbook.secrets.map((secret) => (
+              <li key={secret.title} className="rounded-lg border border-line bg-surface-2 p-3">
+                <p className="text-sm font-medium text-fg">{secret.title}</p>
+                <p className="mt-1 text-sm text-fg-muted">{secret.body}</p>
+                <p className="mt-1.5 text-xs text-fg-subtle">Dùng khi: {secret.when}</p>
+              </li>
+            ))}
+          </ul>
         </Card>
       )}
 
