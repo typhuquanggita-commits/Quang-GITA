@@ -43,7 +43,10 @@ const NEN = ['VANHANH', 'CHUYENDICH', 'CHANDUNG', 'LOTRINH', 'FAMILIES', 'TEAM',
      vì vai nào cũng phải có kho của cấp mình; màn hình lọc theo vai. */
   'CH_MACH', 'CH_CAP', 'ROHN', 'CHUYEN',
   /* Sổ nhật ký từng vị trí và bốn mốc thi viết: mọi vai đều dùng. */
-  'NK_NHIP', 'NK_O', 'THI_VIET', 'THI_LUAT'];
+  'NK_NHIP', 'NK_O', 'THI_VIET', 'THI_LUAT',
+  /* Chuẩn thời gian, chuẩn hoàn thành, thang thưởng và phạt: mọi vai đều
+     phải đọc được, vì luật mà không ai đọc được thì không phải luật. */
+  'TG_NGUNG_GIAY', 'TG_LOAI', 'TG_XEP', 'TG_NHIEMVU', 'TG_THUONG', 'TG_PHAT', 'TG_QUYDOI'];
 
 const NGHE = ['MOTHUC', 'SACH', 'BANDO_A3', 'POSTER', 'SODO', 'PHACDO',
   'DIEMCHAM', 'NGONTU', 'NGONTU_TANG', 'THAYVI', 'MAUTHOAI', 'PERSONA',

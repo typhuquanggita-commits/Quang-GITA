@@ -381,6 +381,7 @@ G.NAV = [
     {v:'chuyen-cam-hung',t:'Chuyện truyền cảm hứng', h:'100 chuyện cho cấp của mình · 10 mạch · mỗi nhiệm vụ một chuyện', ic:'flame', star:1, capMo:'chung'},
     {v:'nhat-ky-vi-tri',t:'Sổ nhật ký của tôi',    h:'Ngày · tuần · tháng · ô ghi riêng cho từng vị trí', ic:'book', star:1, capMo:'chung'},
     {v:'thi-viet',    t:'Cuộc thi viết 7 – 21 – 90 – 365', h:'Bài đạt mốc 90 và 365 nhận học bổng 10%', ic:'crown', star:1, capMo:'chung'},
+    {v:'do-thoi-gian',t:'Thời gian · thưởng · phạt', h:'Đồng hồ thật · ba ngưỡng · chuẩn hoàn thành · quy đổi điểm', ic:'pulse', star:1, capMo:'chung'},
     {v:'chin-vai',    t:'Chín vai giữ trong nhà',      h:'Ai giữ gì, ai đang bị bỏ ra ngoài',  ic:'users', star:1, perm:'kh_gia_dinh', capMo:'nha'},
     {v:'thoi-quen',   t:'Thói quen & nghi lễ',         h:'Bốn nghi lễ giữ nhịp cả năm',        ic:'ritual', perm:'kh_gia_dinh', capMo:'nha'},
     {v:'cu-hich',     t:'Cú hích lớn',                 h:'Chiến dịch tạo bước nhảy, không bước đi', ic:'lightning', perm:'kh_gia_dinh', capMo:'nha'},

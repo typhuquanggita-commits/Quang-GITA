@@ -1876,6 +1876,96 @@ const { chromium } = require(PW);
       'ô ghi khác nhau thật theo từng vị trí, không dùng chung một mẫu');
   }
 
+  /* ── 27. Đo thời gian · chuẩn hoàn thành · thưởng phạt ── */
+  console.log('\n27 · ĐO THỜI GIAN · THƯỞNG VÀ PHẠT');
+  {
+    await p.evaluate(() => { localStorage.clear(); });
+    await p.reload({ waitUntil: 'networkidle' });
+    await p.waitForTimeout(400);
+    await p.evaluate(() => window.G.doLogin('phuhuynh@gita365.vn'));
+    await p.waitForTimeout(1500);
+
+    const tgd = await p.evaluate(() => {
+      const G = window.G, r = {};
+      r.soLoai = (G.TG_LOAI || []).length;
+      r.thangDung = (G.TG_LOAI || []).every(x => x.toiThieu < x.chuan && x.chuan < x.tran);
+      r.duY = (G.TG_LOAI || []).every(x => x.y && x.vd);
+      /* Mọi màn được xếp loại phải trỏ tới một loại có thật, và màn có thật */
+      const loai = (G.TG_LOAI || []).map(x => x.ma);
+      r.loaiLa = [...new Set(Object.values(G.TG_XEP).filter(x => loai.indexOf(x) < 0))];
+      r.manLa = Object.keys(G.TG_XEP).filter(v => !G.VIEWS[v]);
+      r.macDinh = G.tgLoaiCua('mot-man-khong-co-that') === 'xem';
+      /* Ba ngưỡng xếp đúng */
+      r.luot = G.tgXep('mo-thuc', 10).ma;
+      r.du   = G.tgXep('mo-thuc', 360).ma;
+      r.mac  = G.tgXep('mo-thuc', 5000).ma;
+      /* Chuẩn hoàn thành: sớm phải nhỏ hơn hạn */
+      r.nvDung = (G.TG_NHIEMVU || []).every(x => x.som < x.han && x.phat && x.vd);
+      r.soNV = (G.TG_NHIEMVU || []).length;
+      /* Thưởng và phạt */
+      r.soThuong = (G.TG_THUONG || []).length;
+      r.thuongDuY = (G.TG_THUONG || []).every(x => x.cho && x.vi && x.diem > 0);
+      r.soPhat = (G.TG_PHAT || []).length;
+      r.phatDuGo = (G.TG_PHAT || []).every(x => x.muc && x.gio && x.vi);
+      r.coLV01 = (G.TG_PHAT || []).some(x => /50%/.test(x.muc) && /ba tháng/i.test(x.muc));
+      /* Quy đổi: phải tăng dần và có cả ba loại */
+      const qd = G.TG_QUYDOI || [];
+      r.qdTang = qd.every((x, i) => i === 0 || x.diem > qd[i-1].diem);
+      r.qdLoai = [...new Set(qd.map(x => x.loai))].sort().join(',');
+      r.dai = G.VIEWS['do-thoi-gian']().length;
+      return r;
+    });
+    bao(tgd.soLoai === 6, 'đủ sáu loại màn có chuẩn thời gian riêng', tgd.soLoai + ' loại');
+    bao(tgd.thangDung, 'ba ngưỡng của loại nào cũng tăng dần: tối thiểu < chuẩn < trần');
+    bao(tgd.duY, 'loại nào cũng nói rõ gồm màn gì và vì sao đặt ngưỡng như vậy');
+    bao(!tgd.loaiLa.length, 'không màn nào được xếp vào loại không có thật', tgd.loaiLa.join(', '));
+    bao(!tgd.manLa.length, 'bảng xếp loại không trỏ tới màn không tồn tại', tgd.manLa.join(', '));
+    bao(tgd.macDinh, 'màn chưa khai loại thì rơi về loại nhìn tổng quan, không vỡ');
+    bao(tgd.luot === 'luot' && tgd.du === 'du' && tgd.mac === 'mac',
+      'xếp đúng ba ngưỡng lướt · đủ · đang mắc', tgd.luot + ' ' + tgd.du + ' ' + tgd.mac);
+    bao(tgd.soNV === 6 && tgd.nvDung, 'sáu chuẩn hoàn thành, xong sớm luôn nhỏ hơn hạn');
+    bao(tgd.soThuong >= 7 && tgd.thuongDuY, 'thang thưởng đủ mức, mức nào cũng nói rõ được gì và vì sao');
+    bao(tgd.soPhat >= 7 && tgd.phatDuGo, 'thang phạt đủ mức, mức nào cũng có đường gỡ và lý do');
+    bao(tgd.coLV01, 'có mức hạ 50% KPI ba tháng của luật LV-01');
+    bao(tgd.qdTang, 'thang quy đổi điểm tăng dần, không có bậc lộn xộn');
+    bao(tgd.qdLoai === 'người,tri thức,vật chất',
+      'quy đổi có cả ba loại: tri thức · người · vật chất', tgd.qdLoai);
+    bao(tgd.dai > 8000, 'màn thời gian dựng ra nội dung thật', tgd.dai + ' ký tự');
+
+    /* Đồng hồ chạy thật, và dừng đúng lúc */
+    const dh = await p.evaluate(async () => {
+      const G = window.G;
+      G.go('nhiem-vu');
+      await new Promise(r => setTimeout(r, 100));
+      /* Giả lập có thao tác rồi ép chốt bằng cách đổi màn */
+      document.dispatchEvent(new Event('click'));
+      await new Promise(r => setTimeout(r, 1200));
+      G.go('ban-do');
+      await new Promise(r => setTimeout(r, 100));
+      const d = G.tgNgay();
+      return { coSo: Number(d['nhiem-vu']) > 0, tong: Number(d.__tong) > 0,
+               trenDia: !!((JSON.parse(localStorage.getItem('gita365.v7') || '{}').thoigian || {})['ng|' +
+                 new Date().toISOString().slice(0,10)]),
+               moc: Object.keys(JSON.parse(localStorage.getItem('gita365.moc') || '{}'))
+                      .filter(k => k.indexOf('thoigian.') === 0).length };
+    });
+    bao(dh.coSo, 'đồng hồ ghi được thời gian thật của một màn');
+    bao(dh.tong, 'có tổng thời gian trong ngày');
+    bao(dh.trenDia, 'số liệu thời gian ghi xuống đĩa, không mất khi đóng tab');
+    bao(dh.moc >= 1, 'đã đánh mốc để đẩy lên máy chủ theo từng trường', dh.moc + ' mốc');
+
+    /* Xoá kho trình duyệt rồi tải lại thì KHÔNG được dựng lại phiên cũ */
+    await p.evaluate(() => { localStorage.clear(); });
+    await p.reload({ waitUntil: 'networkidle' });
+    await p.waitForTimeout(500);
+    const sach = await p.evaluate(() => ({
+      gate: !!document.getElementById('inU'),
+      con: !!localStorage.getItem('gita365.v7')
+    }));
+    bao(sach.gate && !sach.con,
+      'xoá kho trình duyệt rồi tải lại thì về màn đăng nhập — đồng hồ không dựng lại phiên vừa xoá');
+  }
+
   console.log('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành'));
   await b.close();
   process.exit(loi ? 1 : 0);
