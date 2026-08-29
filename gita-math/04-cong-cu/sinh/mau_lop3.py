@@ -10,7 +10,7 @@ from __future__ import annotations
 
 from fractions import Fraction
 
-from .khung import (Bai, TEN, TO_DOI, bo_so_tbc, cap_tong_hieu, dang_ky,
+from .khung import (Bai, hoa, TEN, TO_DOI, bo_so_tbc, cap_tong_hieu, dang_ky,
                     luan_phien, ps, sv)
 
 L3 = (3,)
@@ -394,7 +394,7 @@ def d3_m3_01(rng, lop):
         a = rng.randint(6, 60)
         k = rng.randint(2, 6)
         t1, t2 = rng.sample(TO_DOI, 2)
-        y.append((f"{t1.capitalize()} trồng được {sv(a)} cây. {t2.capitalize()} trồng "
+        y.append((f"{hoa(t1)} trồng được {sv(a)} cây. {hoa(t2)} trồng "
                   f"được gấp {sv(k)} lần {t1}. Hỏi cả hai tổ trồng được bao nhiêu cây?",
                   sv(a + a * k) + " cây"))
     return Bai(

@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from fractions import Fraction
 
-from .khung import (Bai, HANG_HOA, LOP_HOC, NOI_CHON, TO_DOI, bo_so_tbc,
+from .khung import (Bai, hoa, HANG_HOA, LOP_HOC, NOI_CHON, TO_DOI, bo_so_tbc,
                     cap_tong_hieu, dang_ky, hai_ten, luan_phien, ps, sv)
 
 
@@ -181,13 +181,13 @@ def d_m2_01(rng, lop):
         elif boi == "kho":
             k1, k2 = rng.sample(NOI_CHON, 2)
             hang, dv = rng.choice(HANG_HOA)
-            y.append((f"{k1.capitalize()} và {k2} chứa tất cả {sv(tong)} {dv} {hang}. "
-                      f"{k1.capitalize()} chứa nhiều hơn {k2} {sv(hieu)} {dv}. "
+            y.append((f"{hoa(k1)} và {k2} chứa tất cả {sv(tong)} {dv} {hang}. "
+                      f"{hoa(k1)} chứa nhiều hơn {k2} {sv(hieu)} {dv}. "
                       f"Mỗi nơi chứa bao nhiêu {dv}?",
                       f"{k1}: {sv(lon)} {dv}, {k2}: {sv(be)} {dv}"))
         else:
             t1, t2 = rng.sample(TO_DOI, 2)
-            y.append((f"{t1.capitalize()} và {t2} trồng được {sv(tong)} cây. {t1.capitalize()} "
+            y.append((f"{hoa(t1)} và {t2} trồng được {sv(tong)} cây. {hoa(t1)} "
                       f"trồng nhiều hơn {t2} {sv(hieu)} cây. Mỗi tổ trồng bao nhiêu cây?",
                       f"{t1}: {sv(lon)} cây, {t2}: {sv(be)} cây"))
     return Bai(
@@ -339,7 +339,7 @@ def d_m3_01(rng, lop):
         be, lon = a * phan, b * phan
         tong = be + lon
         t1, t2 = rng.sample(TO_DOI, 2)
-        y.append((f"{t1.capitalize()} và {t2} trồng được tất cả {sv(tong)} cây. "
+        y.append((f"{hoa(t1)} và {t2} trồng được tất cả {sv(tong)} cây. "
                   f"Số cây của {t1} bằng {ps(Fraction(a, b))} số cây của {t2}. "
                   f"Mỗi tổ trồng được bao nhiêu cây?",
                   f"{t1}: {sv(be)} cây, {t2}: {sv(lon)} cây"))
@@ -377,7 +377,7 @@ def d_m3_02(rng, lop):
         hieu = lon - be
         n1, n2 = rng.sample(NOI_CHON, 2)
         hang, dv = rng.choice(HANG_HOA)
-        y.append((f"{n2.capitalize()} chứa nhiều hơn {n1} {sv(hieu)} {dv} {hang}. "
+        y.append((f"{hoa(n2)} chứa nhiều hơn {n1} {sv(hieu)} {dv} {hang}. "
                   f"Số {hang} ở {n1} bằng {ps(Fraction(a, b))} số {hang} ở {n2}. "
                   f"Mỗi nơi chứa bao nhiêu {dv}?",
                   f"{n1}: {sv(be)} {dv}, {n2}: {sv(lon)} {dv}"))
@@ -587,7 +587,7 @@ def d_m4_03(rng, lop):
             phan += 1
         x, z = a * phan, b * phan          # x bé, z lớn
         t1, t2 = rng.sample(TO_DOI, 2)
-        y.append((f"{t1.capitalize()} có {sv(z)} quyển sách, {t2} có {sv(x)} quyển. "
+        y.append((f"{hoa(t1)} có {sv(z)} quyển sách, {t2} có {sv(x)} quyển. "
                   f"Hỏi phải chuyển bao nhiêu quyển từ {t1} sang {t2} để số sách hai "
                   f"tổ bằng nhau?", sv((z - x) // 2) + " quyển"))
     return Bai(

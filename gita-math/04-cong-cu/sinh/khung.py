@@ -31,6 +31,15 @@ def sv(n) -> str:
     return ("-" if am else "") + s
 
 
+def hoa(s: str) -> str:
+    """Viết hoa chữ cái đầu, giữ nguyên phần còn lại.
+
+    Khác `str.capitalize()` — hàm dựng sẵn ấy hạ chữ thường toàn bộ phần sau nên
+    biến "nhóm Hoa Phượng" thành "Nhóm hoa phượng".
+    """
+    return s[:1].upper() + s[1:] if s else s
+
+
 def nam(n: int) -> str:
     """Năm dương lịch viết liền, không tách nhóm nghìn: 1975 chứ không 1 975."""
     return str(int(n))
@@ -159,6 +168,7 @@ class Bai:
     muc: str = ""                                 # mức M1..M5
     thuc_te: bool = False                         # có phải bài bối cảnh thực tế
     lien_ket: str = ""                            # nhóm chuyên đề được liên kết
+    ma_mau: str = ""                              # mã mẫu đã sinh ra bài này
 
     @property
     def so_y(self) -> int:
@@ -188,6 +198,7 @@ class Mau:
         b.nhom = self.nhom
         b.muc = self.muc
         b.thuc_te = self.thuc_te
+        b.ma_mau = self.ma
         if self.bay and not b.bay:
             b.bay = self.bay
         return b

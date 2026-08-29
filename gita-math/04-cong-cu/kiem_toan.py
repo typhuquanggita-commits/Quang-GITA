@@ -169,43 +169,89 @@ def kiem_phieu():
 
 
 # ────────────────── 4. DỮ LIỆU WEB ──────────────────
+DAU_NEN = chr(2)
+
+
+def tep_web() -> list:
+    """Ba bản dữ liệu web, mỗi bản trọn nội dung một khối lớp."""
+    return sorted((ROOT / "09-online" / "data").glob("gita-data-L*.json"))
+
+
+def giai_nen(d: dict) -> dict:
+    """Trả lại nguyên văn dữ liệu đã nén bằng bảng chuỗi (xem build_web_data)."""
+    bang = d.get("bang_chuoi")
+    if not bang:
+        return d
+
+    def mo(x):
+        if isinstance(x, str):
+            return bang[int(x[1:])] if x[:1] == DAU_NEN else x
+        if isinstance(x, list):
+            return [mo(i) for i in x]
+        if isinstance(x, dict):
+            return {k: mo(v) for k, v in x.items()}
+        return x
+
+    ra = {k: mo(v) for k, v in d.items() if k != "bang_chuoi"}
+    for v in ra.get("kem", {}).values():
+        if isinstance(v.get("md"), list):
+            v["md"] = "\n".join("| " + " | ".join(x) + " |" if isinstance(x, list) else x
+                                 for x in v["md"])
+    return ra
+
+
 def kiem_web():
     muc("4. Dữ liệu hệ thống online")
-    f = ROOT / "09-online" / "data" / "gita-data.json"
-    if not f.exists():
-        E("Chưa sinh 09-online/data/gita-data.json.")
+    tep = tep_web()
+    if not tep:
+        E("Chưa sinh 09-online/data/gita-data-L*.json.")
         return
-    d = json.loads(f.read_text(encoding="utf-8"))
-    for khoa in ("meta", "nhom", "tu_duy", "loai", "chi_muc", "cum", "ban_do",
-                 "mach", "phieu", "kem", "test"):
-        if khoa not in d:
-            E(f"Dữ liệu web thiếu khoá `{khoa}`.")
-    if len(d.get("chi_muc", [])) != len(rows):
-        E("Chỉ mục trong dữ liệu web lệch chỉ mục gốc.")
-    thieu = []
-    for ma, p in d.get("phieu", {}).items():
-        n_phan = len(p["phan"])
-        n_bai = sum(len(x["bai"]) for x in p["phan"])
-        if n_phan != 5:
-            E(f"{ma}: dữ liệu web đọc được {n_phan} phần.")
-        if n_bai != 25:
-            E(f"{ma}: dữ liệu web đọc được {n_bai} bài.")
-        for ph in p["phan"]:
-            for b in ph["bai"]:
-                for y in b["y"]:
-                    if not y.get("dap_so"):
-                        thieu.append(f"{ma} {b['ma']}{y['ma']}")
-    if thieu:
-        E(f"{len(thieu)} ý chưa map được đáp số, ví dụ {thieu[:5]}")
+    if len(tep) != 3:
+        E(f"Phải có đủ ba bản dữ liệu web (lớp 3, 4, 5), đang có {len(tep)}.")
+    tong_phieu = tong_kem = 0
+    for f in tep:
+        d = giai_nen(json.loads(f.read_text(encoding="utf-8")))
+        for khoa in ("meta", "nhom", "tu_duy", "loai", "chi_muc", "cum", "ban_do",
+                     "mach", "phieu", "kem", "test"):
+            if khoa not in d:
+                E(f"{f.name} thiếu khoá `{khoa}`.")
+        if len(d.get("chi_muc", [])) != len(rows):
+            E(f"{f.name}: chỉ mục lệch chỉ mục gốc.")
+        khoi = d["meta"].get("khoi_lop")
+        thieu = []
+        for ma, ph in d.get("phieu", {}).items():
+            if ph["meta"]["lop"] != khoi:
+                E(f"{f.name}: {ma} không thuộc khối lớp {khoi}.")
+            if len(ph["phan"]) != 5:
+                E(f"{ma}: dữ liệu web đọc được {len(ph['phan'])} phần.")
+            n_bai = sum(len(x["bai"]) for x in ph["phan"])
+            if n_bai != 25:
+                E(f"{ma}: dữ liệu web đọc được {n_bai} bài.")
+            for x in ph["phan"]:
+                for b in x["bai"]:
+                    for y in b["y"]:
+                        if not y.get("dap_so"):
+                            thieu.append(f"{ma} {b['ma']}{y['ma']}")
+        if thieu:
+            E(f"{f.name}: {len(thieu)} ý chưa map được đáp số, ví dụ {thieu[:3]}")
+        tong_phieu += len(d.get("phieu", {}))
+        tong_kem += len(d.get("kem", {}))
+        kb = f.stat().st_size / 1024
+        if kb > 15000:
+            E(f"{f.name} {kb:.0f} KB — vượt hạn mức 16 MB của trang xuất bản.")
+    if tong_phieu != 600 or tong_kem != 696:
+        E(f"Ba bản web nhúng {tong_phieu} phiếu học và {tong_kem} phiếu kèm, "
+          f"phải là 600 và 696.")
     else:
-        tong_y = sum(len(b["y"]) for p in d["phieu"].values()
-                     for ph in p["phan"] for b in ph["bai"])
-        OK(f"{len(d['phieu'])} phiếu × 5 phần × 25 bài; {tong_y}/{tong_y} ý đều có đáp số.")
-    kb = f.stat().st_size / 1024
-    if kb > 15000:
-        E(f"Dữ liệu web {kb:.0f} KB — vượt hạn mức 16 MB của trang xuất bản.")
-    else:
-        OK(f"Kích thước dữ liệu web {kb:.0f} KB, an toàn dưới hạn mức.")
+        OK(f"Ba bản web nhúng trọn 600 phiếu học và 696 phiếu kèm, mỗi ý đều có đáp số.")
+    lon = max(f.stat().st_size for f in tep) / 1024
+    if lon <= 15000:
+        OK(f"Bản dữ liệu web lớn nhất {lon:.0f} KB, an toàn dưới hạn mức 16 MB.")
+    for h in sorted((ROOT / "09-online" / "dist").glob("gita-online-L*.html")):
+        mb = h.stat().st_size / 1024 / 1024
+        if mb > 15.5:
+            E(f"{h.name} {mb:.1f} MB — vượt hạn mức trang xuất bản.")
+    OK("Ba trang xuất bản đều dưới hạn mức dung lượng.")
 
 
 # ────────────────── 5. LIÊN KẾT CHÉO & 6. MÃ LỖI THỜI ──────────────────
@@ -349,7 +395,7 @@ def kiem_bao_mat():
             E(f"App có vẻ nhúng {ten} — tuyệt đối không nhúng bí mật vào trang tĩnh.")
     OK("Không có khoá, mật khẩu hay token nhúng trong trang.")
     # 10.5 dữ liệu web không được chứa thông tin cá nhân
-    dw = ROOT / "09-online" / "data" / "gita-data.json"
+    dw = tep_web()[0] if tep_web() else ROOT / "09-online" / "data" / "khong-co.json"
     if dw.exists():
         t = dw.read_text(encoding="utf-8")
         if re.search(r"[\w.+-]+@[\w-]+\.[\w.]+", t):
@@ -454,7 +500,7 @@ def kiem_rieng_tu():
     else:
         E("App có thể nhận họ tên từ kho dữ liệu chung — rủi ro lộ định danh.")
     # dữ liệu nhúng không được chứa hồ sơ học viên
-    dw = (ROOT / "09-online" / "data" / "gita-data.json").read_text(encoding="utf-8")
+    dw = "".join(f.read_text(encoding="utf-8") for f in tep_web())
     if '"lam_bai"' in dw or '"hs_id"' in dw:
         E("Dữ liệu nhúng trong trang chứa hồ sơ học viên — phải gỡ.")
     else:

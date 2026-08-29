@@ -380,9 +380,10 @@ def c_m3_03(rng, lop):
           sv(ds[5] - ds[3]))]
     return Bai(
         tieu_de="Dãy số cho bởi quy tắc truy hồi",
-        dan=f"Dãy số được lập như sau: số hạng đầu bằng {sv(a)}; kể từ số hạng thứ hai, "
-            f"số hạng ở **vị trí chẵn** bằng số hạng liền trước nhân 2 rồi cộng {sv(b)}, "
-            f"số hạng ở **vị trí lẻ** bằng số hạng liền trước cộng {sv(b)} nhân với số "
+        dan=f"Dãy số được lập theo ba quy tắc sau.\n\n"
+            f"- Số hạng đầu bằng {sv(a)}.\n"
+            f"- Số hạng ở **vị trí chẵn** bằng số hạng liền trước nhân 2 rồi cộng {sv(b)}.\n"
+            f"- Số hạng ở **vị trí lẻ** bằng số hạng liền trước cộng {sv(b)} nhân với số "
             f"thứ tự của số hạng liền trước.",
         y=y,
         huong_giai="Lập bảng và tính lần lượt từng số hạng theo đúng quy tắc, không nhảy "

@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from fractions import Fraction
 
-from .khung import Bai, LOP_HOC, TO_DOI, dang_ky, luan_phien, ps, sv
+from .khung import Bai, hoa, LOP_HOC, TO_DOI, dang_ky, luan_phien, ps, sv
 
 MON_HOC = ["Toán", "Tiếng Việt", "Tiếng Anh", "Khoa học", "Lịch sử"]
 
@@ -267,7 +267,7 @@ def h_m3_01(rng, lop):
         tu = rng.randint(1, mau - 1)
         tong = mau * rng.randint(4, 40)
         t1, t2 = rng.sample(TO_DOI, 2)
-        y.append((f"{t1.capitalize()} trồng được {sv(tong)} cây. Số cây của {t2} bằng "
+        y.append((f"{hoa(t1)} trồng được {sv(tong)} cây. Số cây của {t2} bằng "
                   f"{ps(Fraction(tu, mau))} số cây của {t1}. Hỏi {t2} trồng được bao "
                   f"nhiêu cây?", sv(tong * tu // mau) + " cây"))
     return Bai(

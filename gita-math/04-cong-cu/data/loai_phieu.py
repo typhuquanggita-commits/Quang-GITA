@@ -117,6 +117,24 @@ LOAI = {
             ("V", "PHÂN HOÁ ĐIỂM 10", 18, 15, "Mức M5."),
         ],
     },
+    "MOC": {
+        "ten": "Phiếu kiểm tra mốc",
+        "giao_an": "Mẫu giáo án KIỂM TRA MỐC",
+        "muc_tieu": "Đo mức đạt được của học viên sau một chặng nhiều cụm chuyên đề, "
+                    "trước khi bước vào chặng tiếp theo.",
+        "cau_truc": [
+            ("I", "NHẬN BIẾT — TRẢI KHẮP CÁC CỤM ĐÃ HỌC", 12, 15,
+             "5 bài mức M1, mỗi bài lấy từ một nhóm chuyên đề khác nhau."),
+            ("II", "THÔNG HIỂU", 15, 20,
+             "5 bài mức M2, tiếp tục trải đều các nhóm chuyên đề của chặng."),
+            ("III", "VẬN DỤNG", 20, 25,
+             "5 bài mức M3, có bài liên kết giữa hai nhóm chuyên đề."),
+            ("IV", "VẬN DỤNG CAO", 25, 25,
+             "5 bài mức M4, có gợi ý ba tầng cho huấn luyện viên."),
+            ("V", "PHÂN HOÁ ĐIỂM 10", 18, 15,
+             "5 bài mức M5, dành cho học viên hướng tới điểm tuyệt đối."),
+        ],
+    },
     "GP": {
         "ten": "Phiếu Lời giải & Phân tích chuyên sâu",
         "giao_an": "Phát sau khi học viên đã nộp bài",

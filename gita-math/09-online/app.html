@@ -65,6 +65,9 @@ button{font:inherit;color:inherit}
 .brand{display:flex;flex-direction:column;gap:6px;align-items:flex-start;padding:2px 6px}
 .brand .logo{width:150px;height:auto;color:#fff}
 .brand span{font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:#AFC9E8}
+.khoi{display:flex;gap:5px;align-items:center;flex-wrap:wrap;font-size:11.5px;color:#AFC9E8}
+.khoi b{background:rgba(255,255,255,.16);border-radius:6px;padding:1px 7px;color:#fff;font-weight:700}
+.khoi a{color:#DCE9F8;text-decoration:underline;text-underline-offset:2px}
 .nav{display:flex;flex-direction:column;gap:2px}
 .nav-h{font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:#7F9CC4;padding:10px 10px 4px}
 .nav button{display:flex;align-items:center;gap:9px;width:100%;text-align:left;background:none;border:0;
@@ -268,6 +271,7 @@ input[type=search]{min-width:230px}
         <text x="176" y="172" font-family="Bitter, Bookman, Georgia, serif" font-weight="800" font-size="84" letter-spacing="1.5" fill="currentColor">GITA</text>
       </svg>
       <span>Toán tiểu học CLC</span>
+      <div class="khoi" id="khoi"></div>
     </div>
 
     <nav class="nav" id="nav">
@@ -307,7 +311,28 @@ input[type=search]{min-width:230px}
    HỌC VIỆN GITA — hệ thống làm bài online
    Dữ liệu sinh từ 04-cong-cu/build_web_data.py (chèn ở dòng dưới).
    ========================================================================== */
-const DATA = /*__GITA_DATA__*/{"meta":{},"nhom":{},"tu_duy":{},"chi_muc":[],"ban_do":[],"mach":[],"phieu":{},"test":{}}/*__END__*/;
+/* Dữ liệu web được nhúng dưới dạng **chuỗi JSON**, không phải object literal:
+   trình duyệt phân tích một chuỗi JSON 9 MB nhanh hơn nhiều lần so với việc biên
+   dịch một object literal cùng cỡ. Mọi câu lặp lại đã được thay bằng tham chiếu
+   vào `bang_chuoi` (xem build_web_data.py); hàm reviver dưới đây trả lại nguyên
+   văn ngay trong một lượt duyệt duy nhất của JSON.parse. */
+const RAW = /*__GITA_DATA__*/"{}"/*__END__*/;
+const DATA = (() => {
+  let bang = null;
+  const d = JSON.parse(RAW, (k, v) => {
+    if (k === "bang_chuoi") { bang = v; return v; }
+    if (typeof v === "string" && v.charCodeAt(0) === 2 && bang) return bang[+v.slice(1)];
+    return v;
+  });
+  delete d.bang_chuoi;
+  for (const k in (d.kem || {})) {          // dòng bảng Markdown được tách thành ô
+    const m = d.kem[k].md;
+    if (Array.isArray(m)) {
+      d.kem[k].md = m.map(x => Array.isArray(x) ? "| " + x.join(" | ") + " |" : x).join("\n");
+    }
+  }
+  return d;
+})();
 
 /* ------------------------------ tiện ích ------------------------------ */
 const $ = (s, r = document) => r.querySelector(s);
@@ -567,6 +592,23 @@ function tuChamY(traLoi, dapSo) {
 }
 
 /* --------------------------- mảnh giao diện --------------------------- */
+function khoiCua(ma) {
+  const r = DATA.chi_muc.find(x => x.ma === ma);
+  return r ? r.l : null;
+}
+function chuaPhatHanh(ma, veDau, nhan) {
+  const lop = khoiCua(ma), khoi = DATA.meta.khoi_lop, lk = DATA.lien_ket_khoi || {};
+  const khac = lop && khoi && lop !== khoi;
+  const dia_chi = khac ? lk[String(lop)] : null;
+  return `<div class="empty"><h3>${khac ? `Tài liệu này thuộc khối lớp ${lop}`
+    : "Tài liệu này đang được biên soạn"}</h3>
+    <p>Mã <span class="mono">${esc(ma)}</span> ${khac
+      ? `nằm trong bản dành cho khối lớp ${lop}. Bản đang mở là bản khối lớp ${khoi}.`
+      : "đã có trong chỉ mục nhưng nội dung chưa phát hành."}</p>
+    ${dia_chi ? `<p style="margin-top:12px"><a class="btn btn-p" href="${esc(dia_chi)}"
+      target="_blank" rel="noopener">Mở bản khối lớp ${lop}</a></p>` : ""}
+    <p style="margin-top:12px"><button class="btn" data-go="${veDau}">${nhan}</button></p></div>`;
+}
 function chipNhom(g) {
   if (g === "*") return `<span class="chip"><span class="dot" style="background:#5B6C86"></span>Định vị</span>`;
   const n = DATA.nhom[g]; if (!n) return "";
@@ -800,9 +842,7 @@ function moPhieu(ma) {
     if (!g.mo) { MAIN().innerHTML = chanTruyCap(g.vi); return; }
   }
   const p = DATA.phieu[ma];
-  if (!p) { MAIN().innerHTML = `<div class="empty"><h3>Phiếu này đang được biên soạn</h3>
-    <p>Mã <span class="mono">${esc(ma)}</span> đã có trong chỉ mục nhưng nội dung chưa phát hành.</p>
-    <p style="margin-top:12px"><button class="btn" data-go="thu-vien">Về thư viện</button></p></div>`; return; }
+  if (!p) { MAIN().innerHTML = chuaPhatHanh(ma, "thu-vien", "Về thư viện"); return; }
   const cu = HoSo.d.lam_bai[ma];
   LB = { ma, phan: 0, dap: cu ? { ...cu.dap } : {}, cham: cu ? { ...cu.cham } : {},
          daNop: !!cu, hint: {}, moDA: new Set(), batDau: Date.now() };
@@ -1190,9 +1230,7 @@ function veKem(ma) {
     MAIN().innerHTML = chanTruyCap("Vai trò này không xem được phiếu hướng dẫn ôn chắc."); return;
   }
   const d = DATA.kem[ma];
-  if (!d) { MAIN().innerHTML = `<div class="empty"><h3>Tài liệu này đang được biên soạn</h3>
-    <p>Mã <span class="mono">${esc(ma)}</span> đã có trong chỉ mục nhưng nội dung chưa phát hành.</p>
-    <p style="margin-top:12px"><button class="btn" data-go="cum">Về danh sách cụm</button></p></div>`; return; }
+  if (!d) { MAIN().innerHTML = chuaPhatHanh(ma, "cum", "Về danh sách cụm"); return; }
   const m = d.meta, maCum = m.cum ? `L${m.lop}-${m.tuyen}-C${String(m.cum).padStart(2, "0")}` : null;
   MAIN().innerHTML = `<div class="row" style="margin-bottom:12px">
       ${maCum ? `<a class="btn" href="#/cum/${maCum}">← Cụm C${String(m.cum).padStart(2, "0")}</a>` : ""}
@@ -1650,7 +1688,7 @@ function veChonVai() {
 function capNhatGhiChuVai() {
   const t = Quyen.tang();
   $("#vaiNote").innerHTML = Quyen.laHS()
-    ? `Tầng năng lực: <b style="color:var(--do)">${t.ma} — ${esc(t.ten)}</b>`
+    ? `Tầng năng lực: <b style="color:#FFD2D4">${t.ma} — ${esc(t.ten)}</b>`
     : `Phạm vi: ${esc(DATA.phan_quyen.vai_tro[Quyen.vai].pham_vi)}`;
 }
 /* Ẩn mục điều hướng mà vai trò hiện tại không có quyền xem */
@@ -1682,10 +1720,22 @@ document.addEventListener("keydown", e => {
   if (map[e.key]) location.hash = "#/" + map[e.key];
 });
 
+/* ------------------------------ bản của khối lớp nào ------------------------------ */
+function veKhoi() {
+  const o = $("#khoi"); if (!o) return;
+  const khoi = DATA.meta.khoi_lop, lk = DATA.lien_ket_khoi || {};
+  if (!khoi) { o.innerHTML = `<b>Đủ 3 khối</b>`; return; }
+  const khac = [3, 4, 5].filter(l => l !== khoi).map(l => lk[String(l)]
+    ? `<a href="${esc(lk[String(l)])}" target="_blank" rel="noopener">Lớp ${l}</a>`
+    : `<span title="Bản khối lớp ${l} phát hành riêng">Lớp ${l}</span>`).join(" · ");
+  o.innerHTML = `<b>Khối lớp ${khoi}</b> ${khac}`;
+}
+
 /* ------------------------------ khởi động ------------------------------ */
 (async () => {
   try { datTheme(localStorage.getItem(KHOA_THEME) || "auto"); } catch (e) { datTheme("auto"); }
   Quyen.nap();
+  veKhoi();
   await HoSo.nap();
   veChonVai();
   loc_nav_theo_quyen();

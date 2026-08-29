@@ -68,7 +68,9 @@ def kiem_tra_kem(path: Path, fm: dict, than: str, index) -> Ket_qua:
     """Kiểm định phiếu đi kèm: GP (Lời giải & Phân tích) và HD (Hướng dẫn ôn chắc)."""
     kq = Ket_qua(path.name)
     for t in TRUONG_KEM:
-        if not fm.get(t):
+        # `cum` của phiếu đi kèm phiếu mốc bằng 0 — số 0 là giá trị hợp lệ,
+        # chỉ thiếu khi trường vắng mặt hoặc rỗng.
+        if t not in fm or fm[t] in (None, ""):
             kq.E(f"Front-matter thiếu trường bắt buộc: `{t}`.")
     loai = fm.get("loai")
     can = MUC_GP if loai == "GP" else MUC_HD

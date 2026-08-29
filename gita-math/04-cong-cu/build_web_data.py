@@ -13,7 +13,7 @@
   - test      : 3 đề test đầu vào (dạng đọc + đáp án)
 """
 from __future__ import annotations
-import json, re, sys
+import argparse, collections, json, re, sys
 from pathlib import Path
 
 import yaml
@@ -36,6 +36,66 @@ RE_Y = re.compile(r"^\s{0,3}([a-z])\)\s+(.*)$")
 RE_DA_BAI = re.compile(r"^###\s+Bài\s+([A-EIVX]+)\.(\d+)\s*$", re.M)
 MUC_DA = ["Đáp số", "Hướng giải", "Nhãn tư duy", "Lỗi thường gặp", "Gợi ý 3 tầng"]
 LA_MA = ["I", "II", "III", "IV", "V"]
+
+
+RE_HANG_BANG = re.compile(r"^\|(.*)\|\s*$")
+DAU_NEN = chr(2)          # tiền tố đánh dấu một tham chiếu vào bảng chuỗi
+
+
+def tach_dong_md(md: str):
+    """Tách Markdown thành mảng dòng; dòng bảng tách tiếp thành mảng ô.
+
+    Nhờ vậy bộ nén chuỗi bên dưới gom được những ô lặp lại hàng nghìn lần trong
+    bảng phân tích chuyên sâu của 600 phiếu lời giải.
+    """
+    ra = []
+    for dong in md.split("\n"):
+        m = RE_HANG_BANG.match(dong)
+        if m and set(dong) - set("|-: "):
+            ra.append([c.strip() for c in m.group(1).split("|")])
+        else:
+            ra.append(dong)
+    return ra
+
+
+def nen_chuoi(data: dict) -> dict:
+    """Thay mọi chuỗi lặp lại bằng tham chiếu vào một bảng chuỗi dùng chung.
+
+    Nội dung 1 296 tài liệu dùng đi dùng lại vài nghìn câu giống hệt nhau (hướng
+    giải, điểm chốt, sáu cột phân tích của cùng một mẫu bài). Gom lại một bảng
+    giúp dữ liệu web nhỏ đi khoảng ba lần mà không mất bất kỳ chữ nào.
+    """
+    dem = collections.Counter()
+
+    def duyet(x):
+        if isinstance(x, str):
+            if len(x) >= 12:
+                dem[x] += 1
+        elif isinstance(x, list):
+            for i in x:
+                duyet(i)
+        elif isinstance(x, dict):
+            for i in x.values():
+                duyet(i)
+
+    duyet(data)
+    bang = [s for s, c in dem.items() if c >= 2]
+    chi_so = {s: i for i, s in enumerate(bang)}
+
+    def thay(x):
+        if isinstance(x, str):
+            return DAU_NEN + str(chi_so[x]) if x in chi_so else x
+        if isinstance(x, list):
+            return [thay(i) for i in x]
+        if isinstance(x, dict):
+            return {k: thay(v) for k, v in x.items()}
+        return x
+
+    # Bảng chuỗi phải là khoá **đầu tiên**: bộ đọc phía trình duyệt dùng
+    # JSON.parse với hàm reviver, mà reviver chỉ tra được bảng nếu bảng đã dựng xong.
+    ra = {"bang_chuoi": bang}
+    ra.update(thay(data))
+    return ra
 
 
 def tach_front_matter(text: str):
@@ -141,6 +201,13 @@ def doc_test(path: Path) -> dict:
 
 
 def main() -> None:
+    ap = argparse.ArgumentParser(description="Dựng dữ liệu web cho hệ thống GITA")
+    ap.add_argument("--lop", type=int, choices=(3, 4, 5),
+                    help="chỉ nhúng trọn nội dung của khối lớp này (chỉ mục vẫn đủ)")
+    ap.add_argument("--ra", type=Path, help="đường dẫn tệp JSON đầu ra")
+    ap.add_argument("--lien-ket", default="{}",
+                    help='JSON {"3": "https://…", "5": "https://…"} — địa chỉ bản của khối khác')
+    a = ap.parse_args()
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     chi_muc = json.loads((ROOT / "02-chi-muc" / "index-master.json").read_text(encoding="utf-8"))
     gon = [{"ma": r["ma"], "t": r["tuyen"], "l": r["lop"], "cum": r["cum"],
@@ -167,7 +234,7 @@ def main() -> None:
         text = p.read_text(encoding="utf-8")
         fm, than = tach_front_matter(text)
         if fm.get("loai") in ("GP", "HD"):
-            kem[fm["ma"]] = {"meta": fm, "md": than.strip()}
+            kem[fm["ma"]] = {"meta": fm, "md": tach_dong_md(than.strip())}
             continue
         d = doc_phieu(p)
         phieu[d["meta"]["ma"]] = d
@@ -232,16 +299,22 @@ def main() -> None:
         "de_thi": de_thi,
         "de_soan": de_soan,
     }
-    out = OUT_DIR / "gita-data.json"
+    if a.lop:
+        data["phieu"] = {k: v for k, v in phieu.items() if v["meta"]["lop"] == a.lop}
+        data["kem"] = {k: v for k, v in kem.items() if v["meta"]["lop"] == a.lop}
+        data["meta"]["khoi_lop"] = a.lop
+    data["lien_ket_khoi"] = json.loads(a.lien_ket)
+    data = nen_chuoi(data)
+    out = a.ra or (OUT_DIR / (f"gita-data-L{a.lop}.json" if a.lop else "gita-data.json"))
     out.write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    phieu, kem = data["phieu"], data["kem"]
     kb = out.stat().st_size / 1024
-    print(f"✔ {out.relative_to(ROOT)} — {kb:.0f} KB")
+    print(f"✔ {out.relative_to(ROOT)} — {kb:.0f} KB · bảng chuỗi {len(data['bang_chuoi'])} mục")
     print(f"  chỉ mục: {len(gon)} phiếu · đã biên soạn: {len(phieu)} · test: {len(test)}"
           f" · kèm (GP/HD): {len(kem)} · bản đồ: {len(ban_do)} · mạch: {len(mach)}"
           f" · cụm: {len(cum_ds)} · đề thi: {len(de_thi)} (đã soạn {len(de_soan)})")
-    for ma, d in phieu.items():
-        n_bai = sum(len(p["bai"]) for p in d["phan"])
-        print(f"  · {ma}: {len(d['phan'])} phần · {n_bai} bài · {d['tong_y']} ý")
+    print(f"  nhúng trọn nội dung: {len(phieu)} phiếu học + {len(kem)} phiếu kèm"
+          + (f" (khối lớp {a.lop})" if a.lop else " (toàn bộ ba khối)"))
 
 
 if __name__ == "__main__":

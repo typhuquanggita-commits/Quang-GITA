@@ -1,0 +1,5 @@
+# Dữ liệu web và bản in đều sinh lại được trong vài chục giây từ 03-phieu/
+# và các bộ dựng trong 04-cong-cu/, nên không đưa vào lịch sử kho.
+09-online/data/*.json
+04-cong-cu/ban-in/*.html
+**/__pycache__/
