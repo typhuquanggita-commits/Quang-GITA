@@ -36,6 +36,9 @@ const NEN = ['VANHANH', 'CHUYENDICH', 'CHANDUNG', 'LOTRINH', 'FAMILIES', 'TEAM',
   /* Hành trình 12 chặng mở cho MỌI vai — gia đình cũng phải thấy mình đang
      ở đâu trên đường. Nên nó nằm ở gói nền, không nằm sau kho nghề. */
   'TRU_GITA', 'HANHTRINH12', 'LOI_HUA_GITA',
+  /* Kênh cộng đồng chính thức: phụ huynh chưa là khách hàng cũng phải
+     thấy được nhóm. Đây là cửa trước, cùng lý do với GT_* và DV_*. */
+  'KENH_DS', 'KENH_CHANG', 'KENH_LUAT',
   /* Bản đồ cá nhân 11 ô: mọi vai đều có một bản của riêng mình — học viên,
      phụ huynh, cộng tác viên, đội ngũ — nên nó thuộc gói nền. */
   'BDCN_MA', 'BDCN', 'BDCN_MUOI_VIEC', 'BDCN_QUY_TAC', 'BDCN_NHIP',
@@ -82,6 +85,9 @@ const NGHE = [
   /* Bảng quy trình toàn hệ: nó vẽ ra cách Học viện vận hành, gồm cả
      luồng giữ tài sản và luồng thanh tra. Đây là bản đồ nội bộ. */
   'QT_LUONG', 'QT_RIENG', 'QT_LUAT',
+  /* Gốc NLP và trạng thái bằng chứng: đây là chuẩn nghề — nó nói rõ chỗ
+     nào Học viện đang nói chắc hơn bằng chứng cho phép. Ở kho nghề. */
+  'NLP_GOC', 'NLP_MUC', 'NLP_CAITIEN', 'NLP_LUAT',
   /* Phạm vi học phí: nói rõ bảng giá này chỉ của GITA365. */
   'HP_PHAM_VI','MOTHUC', 'SACH', 'BANDO_A3', 'POSTER', 'SODO', 'PHACDO',
   'DIEMCHAM', 'NGONTU', 'NGONTU_TANG', 'THAYVI', 'MAUTHOAI', 'PERSONA',
@@ -256,7 +262,8 @@ const MO_RA = [
      giới thiệu, và một gia đình đang cân nhắc cần nhìn thấy con đường
      trước khi quyết bước vào. Giấu chính tấm bản đồ mình đang mời người
      ta đi thì lời mời không có nghĩa gì. */
-  'HANHTRINH12', 'TRU_GITA'
+  'HANHTRINH12', 'TRU_GITA',
+  'KENH_DS', 'KENH_CHANG', 'KENH_LUAT'
   /* SOAT_* KHÔNG nằm ở đây. Chuẩn soát liệt kê tên mọi kho nội bộ, trường
      bắt buộc của từng kho và số bản ghi phải có — đưa vào gói mẫu công khai
      là vẽ sẵn bản đồ kho cho người chưa được cấp phép. Nó ở gói NỀN. */

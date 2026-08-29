@@ -37,6 +37,29 @@ let html = fs.readFileSync(ip, 'utf8');
 html = html.replace(/if \('serviceWorker' in navigator[\s\S]*?\n\}\n/, '');
 fs.writeFileSync(ip, html);
 
+/* ─── Số bản: một nguồn sự thật ───
+   package.json của bản máy tính từng ghi cứng "7.5.0" trong khi ứng dụng
+   đã đi tới v8.2. Tên tệp cài ra thành GITA365-7.5.0-win-x64.exe — người
+   nhận tưởng mình đang cài bản cũ, hoặc tệ hơn, cài đè bản mới bằng bản
+   cũ mà không biết vì tên trùng.
+
+   Nay số bản đọc thẳng từ G.META.version trong src/data.core.js, đúng
+   cùng một nguồn mà giao diện và tên tệp bản web dùng. */
+const banMeta = (fs.readFileSync(path.join(GOC, 'src', 'data.core.js'), 'utf8')
+  .match(/version:\s*'([^']+)'/) || [])[1];
+if (!banMeta) { console.error('Không đọc được G.META.version trong src/data.core.js'); process.exit(1); }
+const banDayDu = /^\d+\.\d+\.\d+$/.test(banMeta) ? banMeta : banMeta + '.0';
+
+const pkgP = path.join(__dirname, 'package.json');
+const pkg = JSON.parse(fs.readFileSync(pkgP, 'utf8'));
+if (pkg.version !== banDayDu) {
+  console.log('Số bản: ' + pkg.version + ' → ' + banDayDu + ' (theo G.META.version)');
+  pkg.version = banDayDu;
+  fs.writeFileSync(pkgP, JSON.stringify(pkg, null, 2) + '\n');
+} else {
+  console.log('Số bản đã khớp G.META.version: ' + banDayDu);
+}
+
 let n = 0;
 (function dem(d) { for (const t of fs.readdirSync(d)) {
   const p = path.join(d, t);

@@ -300,6 +300,122 @@ mục chạy đúng phép thử ấy.
 Đo được: màn Mô thức dài thêm **5.976 ký tự**, Sách gốc thêm 1.508, Đại
 sứ thêm 1.443.
 
+## Ba lỗi im lặng — và ba phép canh mới
+
+Đợt v8.3 bắt được ba lỗi mà **không lỗi nào làm màn hình văng, không lỗi
+nào bị bài kiểm cũ chặn**. Ghi lại vì cả ba đều là loại dễ tái diễn.
+
+### 1. Bốn nghìn tư trăm phiếu ma trận nằm im vì một phép so sánh kiểu
+
+`G.MT_BANG_TANG[].tang` lưu là `'T1'`. Người gọi — kể cả chính
+`G.mtPhieu` — truyền số `1`. Phép `===` giữa `1` và `'T1'` luôn sai, nên
+`mtBangTang` trả `null`, kéo theo `mtPhieu` trả `null` cho **cả 4.400
+phiếu**. `layTang` cùng bệnh: nó ghép `'MATRAN_' + 1` thành `MATRAN_1` —
+một kho không tồn tại.
+
+Vì sao không ai thấy: `mtPhieu` trả `null` *gọn gàng*, màn hình xử lý
+`null` đúng cách và hiện thẻ "chưa mở được". Không lỗi, không cảnh báo.
+Và **không bài kiểm nào gọi thẳng `mtPhieu`** — chúng chỉ dựng màn.
+
+Chữa: `chuanTang()` nhận cả `1` lẫn `'T1'`. Canh: bộ kiểm nay **gọi
+thẳng** `mtPhieu` cho đủ 220 × 5 × 4 và đòi cả 4.400 phiếu có đủ bốn
+lớp. Chạy hết trong 17ms.
+
+**Bài học:** một bài kiểm chỉ dựng màn thì không chạm tới lớp ghép dữ
+liệu bên dưới. Lớp nào có hàm ghép thì phải có bài gọi thẳng hàm ấy.
+
+### 2. Hai tệp cùng đặt tên một kho — kho nạp sau ghi đè kho nạp trước
+
+`G.CD_LUAT` là sáu luật về **chân dung khách hàng**. Tệp kênh cộng đồng
+mới cũng đặt `G.CD_LUAT` cho sáu luật về **kênh**, và nó nạp sau theo thứ
+tự chữ cái nên ghi đè. Màn chân dung sau đó dựng ra sáu thẻ rỗng và sáu
+chữ `undefined` — nội dung của kho khác hiện lên chỗ của mình.
+
+Chữa: đổi tiền tố thành `KENH_`. Canh: bộ kiểm quét `kho-goc/` tìm mọi
+tên kho bị hai tệp cùng **gán đè**.
+
+### 3. Phép canh ấy suýt sai vì `\s*` lùi lại được
+
+Bản đầu của phép quét viết `\s*=\s*(?!G\.\1\s*\|\|)` để bỏ qua dạng
+`G.X = G.X || []` — cách chia một kho ra nhiều tệp có chủ ý, dùng cho
+`G.CHUYEN` và `G.SH_HOI`.
+
+Nó báo nhầm cả mười một dòng nối thêm. Lý do: `\s*` đứng **trước** tiên
+đoán nên **lùi lại được** — nó nhả khoảng trắng ra, tiên đoán soi vào dấu
+cách thay vì soi vào `G.X ||`, thấy không khớp nên phủ định thành công.
+
+Chữa: đưa khoảng trắng vào **trong** tiên đoán —
+`\s*=(?!\s*G\.\1\s*\|\|)`. Kết quả: 239 kho, không tên nào bị gán đè.
+
+**Bài học:** một phép canh sai theo hướng báo nhầm cũng nguy hiểm, vì
+cách chữa dễ dãi là nới nó ra — và nới xong thì nó không canh gì nữa.
+
+## Gốc NLP và trạng thái bằng chứng — `NLP_GOC`
+
+Nhiều mô thức của GITA có gốc từ NLP và tâm lý học nhận thức. Trước
+v8.3, gốc ấy không ghi ở đâu — người dùng mô thức không biết mình đứng
+trên nền nào, và Học viện không biết chỗ nào mình đang **nói chắc hơn
+bằng chứng cho phép**.
+
+NLP là một tập hợp **không đồng đều**. Gộp cả ba loại vào một chữ "mô
+thức" rồi dùng như nhau là chỗ một hệ thống giáo dục dễ mất uy tín nhất.
+Nên mỗi gốc mang một mức:
+
+| Mức | Nghĩa | Số mô thức |
+|---|---|---|
+| `chac` | Nền nghiên cứu vững, dùng được như cơ chế | 3 |
+| `motphan` | Cơ chế có bằng chứng, tuyên bố mạnh thì không | 4 |
+| `mong` | Dùng rộng nhưng nghiên cứu không ủng hộ | 2 |
+
+**Chỗ phải nói thẳng nhất — N08, ba kiểu suy nghĩ VAK.** Giả thuyết "dạy
+theo kiểu học của người học thì học tốt hơn" đã được kiểm nhiều lần và
+không tìm thấy hiệu quả. GITA giữ nó ở đúng chỗ dùng được — chọn **từ
+ngữ** cho dễ vào trong một cuộc nói chuyện — và **bỏ hẳn** phần xếp học
+viên vào một kiểu rồi dạy theo kiểu ấy. Điều cấm được viết thành chữ:
+không nói với phụ huynh rằng con học kém vì "dạy sai kiểu của cháu".
+
+**Một cải tiến phương pháp, không chỉ một ghi chú.** `NLP_CAITIEN` ghi
+chỗ nghiên cứu nói ngược lại cách làm phổ biến: hình dung kết quả tốt
+**một mình** thường *làm giảm* nỗ lực. Cách hiệu quả là đối chiếu — hình
+dung kết quả, rồi hình dung trở ngại thật bên trong mình, rồi chốt một
+câu *nếu… thì…*. Điều đáng nói: câu nếu–thì ấy **đã có sẵn** trong hệ
+GITA dưới tên *"mức tối thiểu của ngày mệt"*. Học viện đã làm đúng ở chỗ
+này rồi, chỉ chưa nối nó vào bước hình dung.
+
+`NLP_*` nằm ở gói **nghề**. Bảng này nói rõ chỗ nào Học viện đang nói
+chắc hơn bằng chứng — đó là chuẩn nghề nội bộ, và nó ghi rõ chính nó cần
+Hội đồng chuyên môn rà trước khi trích ra ngoài.
+
+## Kênh cộng đồng chính thức — `KENH_DS`
+
+Ba kênh: nhóm **Gia Đình Thịnh Vượng** (phụ huynh), nhóm **Đại sứ**, và
+**Trang Học viện**. Khai thành dữ liệu, không dán đường dẫn vào giao
+diện — vì hai lý do.
+
+**Lý do một: nó va vào một luật đang chạy.** Bộ dò rò rỉ trong
+`G.LUAT_LAMVIEC` coi chữ `facebook` là dấu hiệu D3 — Tư vấn kéo khách ra
+ngoài hệ thống. Không khai thì Tư vấn mời gia đình vào nhóm **chính
+thức** — việc đúng — lại bị máy báo vi phạm; còn Tư vấn đưa nhóm **riêng**
+của mình thì lẫn vào đó không ai phân biệt được. Nay ba chuỗi nhận dạng
+kênh chính thức nằm trong `ngoaiLe`; kênh riêng vẫn là vi phạm như cũ,
+chế tài giữ nguyên.
+
+**Lý do hai: ranh giới dữ liệu phải viết thành chữ.** Nhóm nằm trên nền
+tảng của người khác. Mỗi kênh khai rõ `cho` và `khong` — và cột `khong`
+là cột quan trọng: không hồ sơ gia đình nào (kể cả ẩn danh), không bảng
+số, không kết quả test, không tài liệu đã cấp phép, không tư vấn ca cụ
+thể trong bình luận công khai, không chốt học phí.
+
+Nhóm là **bước số không** của đường vào — trước cả bước một. Giao diện
+nối vào ba màn đã có (`gioi-thieu`, `tham-gia`, `ket-noi`) chứ **không
+thêm mục điều hướng**: một đường dẫn ra ngoài không xứng một mục trong
+trình đơn, và đặt cạnh các mục nội dung sẽ làm người dùng tưởng bấm vào
+là mở một màn trong ứng dụng. Mọi liên kết ra ngoài đều `target="_blank"`
+kèm `rel="noopener noreferrer nofollow"` và nhãn *"↗ rời ứng dụng"*.
+
+`KENH_*` nằm ở gói **nền** và cả gói **mẫu công khai** — phụ huynh chưa là
+khách hàng cũng phải thấy được nhóm. Cùng lý do với `GT_*` và `DV_*`.
+
 ## Kiểm thử theo vai — `kiem-theo-vai`
 
 Trước màn này, kiểm xem một vai nhìn thấy gì phải làm bằng tay: đăng

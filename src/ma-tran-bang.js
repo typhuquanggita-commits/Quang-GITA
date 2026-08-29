@@ -33,9 +33,26 @@ G.mtBang = function(ma){
   for(var i=0;i<a.length;i++) if(a[i].ma===ma) return a[i];
   return null;
 };
+/* Tầng nhận cả hai dạng: số 1 và chuỗi 'T1'.
+
+   Đây là mắt xích đã gãy suốt từ lúc dựng lớp băng mà không ai thấy:
+   G.MT_BANG_TANG lưu tang là 'T1', còn người gọi — kể cả G.mtPhieu —
+   truyền số. So sánh === giữa 1 và 'T1' luôn sai, nên mtBangTang trả
+   null, kéo theo mtPhieu trả null cho CẢ 4.400 phiếu.
+
+   Không màn nào văng lỗi vì mtPhieu trả null gọn gàng, và không bài kiểm
+   nào bắt được vì không bài nào gọi thẳng mtPhieu. Một lớp dữ liệu đầy
+   đủ nằm im vì một phép so sánh kiểu. */
+function chuanTang(t){
+  if(typeof t === 'number') return 'T' + t;
+  var s = String(t == null ? '' : t).trim().toUpperCase();
+  return /^[1-5]$/.test(s) ? 'T' + s : s;
+}
+G.mtChuanTang = chuanTang;
+
 G.mtBangTang = function(tang, bang){
-  var a = G.MT_BANG_TANG || [];
-  for(var i=0;i<a.length;i++) if(a[i].tang===tang && a[i].bang===bang) return a[i];
+  var a = G.MT_BANG_TANG || [], t = chuanTang(tang);
+  for(var i=0;i<a.length;i++) if(chuanTang(a[i].tang)===t && a[i].bang===bang) return a[i];
   return null;
 };
 G.mtBangNhom = function(nhom, bang){
@@ -48,7 +65,9 @@ G.mtDo = function(ma){
   for(var i=0;i<a.length;i++) if(a[i].ma===ma) return a[i];
   return null;
 };
-function layTang(t, ma){ var a=G['MATRAN_'+t]||[]; for(var i=0;i<a.length;i++) if(a[i].ma===ma) return a[i]; return null; }
+/* Cùng một bệnh với mtBangTang: kho tên là MATRAN_T1 nhưng người gọi
+   truyền số 1, thành ra đọc MATRAN_1 — một kho không tồn tại. */
+function layTang(t, ma){ var a=G['MATRAN_'+chuanTang(t)]||[]; for(var i=0;i<a.length;i++) if(a[i].ma===ma) return a[i]; return null; }
 function layVan(ma){ var a=(G.MATRAN&&G.MATRAN.vande)||[]; for(var i=0;i<a.length;i++) if(a[i].ma===ma) return a[i]; return null; }
 
 /* ─── Ghép một phiếu (vấn đề × tầng × băng) ───

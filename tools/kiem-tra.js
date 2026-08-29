@@ -2918,6 +2918,118 @@ const { chromium } = require(PW);
       'phụ huynh KHÔNG mở hết được dù cờ bị đặt — công tắc là quyền, không phải biến',
       'được:' + khachMoHet.duoc + ' bật:' + khachMoHet.bat + ' danh sách:' + khachMoHet.ds);
 
+    /* ── Ma trận băng PHẢI ghép được thật ──
+       Lớp 4.400 phiếu từng nằm im suốt nhiều đợt phát hành: G.MT_BANG_TANG
+       lưu tang là 'T1' còn người gọi truyền số 1, nên phép so sánh === luôn
+       sai và mtPhieu trả null cho MỌI tổ hợp. Không màn nào văng lỗi (null
+       được trả gọn gàng) và không bài kiểm nào bắt được, vì không bài nào
+       gọi thẳng mtPhieu. Mục này gọi thẳng. */
+    const mtr = await p.evaluate(() => {
+      const G = window.G;
+      if (!G.mtPhieu || !G.PHACDO) return { co:false };
+      const BANG = ['XANH','VANG','CAM','DO'];
+      let ok = 0, hong = [];
+      const t0 = performance.now();
+      G.PHACDO.forEach(pd => {
+        for (let t = 1; t <= 5; t++) BANG.forEach(bg => {
+          const x = G.mtPhieu(pd.ma, t, bg);
+          if (x && x.oTang && x.bang && x.do) ok++;
+          else if (hong.length < 5) hong.push(pd.ma + '/T' + t + '/' + bg);
+        });
+      });
+      const ms = Math.round(performance.now() - t0);
+      /* Tầng nhận cả số lẫn chuỗi — hai người gọi khác nhau vẫn ra một kết quả */
+      const soVaChuoi = !!(G.mtBangTang(1,'XANH') && G.mtBangTang('T1','XANH')) &&
+        G.mtBangTang(1,'XANH') === G.mtBangTang('T1','XANH');
+      return { co:true, ok, tong: G.PHACDO.length * 20, hong, ms, soVaChuoi };
+    });
+    bao(mtr.co, 'có hàm ghép phiếu ma trận để kiểm');
+    if (mtr.co) {
+      bao(mtr.ok === mtr.tong,
+        'cả ' + mtr.tong.toLocaleString('vi-VN') + ' phiếu ma trận ghép được đủ bốn lớp — 220 vấn đề × 5 tầng × 4 băng',
+        mtr.hong.length ? ('hỏng: ' + mtr.hong.join(' ')) : (mtr.ok + ' phiếu · ' + mtr.ms + 'ms'));
+      bao(mtr.soVaChuoi,
+        'tra cứu tầng nhận cả số 1 lẫn chuỗi T1 và ra cùng một kết quả');
+      bao(mtr.ms < 2000, 'ghép toàn bộ phiếu ma trận dưới hai giây', mtr.ms + 'ms');
+    }
+
+    /* ── Không kho nào bị hai tệp cùng đặt tên ──
+       G.CD_LUAT của sáu chân dung khách hàng từng bị tệp kênh cộng đồng
+       ghi đè, vì nó nạp sau theo thứ tự chữ cái. Màn chân dung sau đó
+       dựng ra sáu thẻ rỗng và sáu chữ "undefined" — không lỗi, không
+       cảnh báo, chỉ là nội dung của kho khác hiện lên chỗ của mình. */
+    {
+      const fsC = require('fs'), pxC = require('path');
+      const dC = pxC.join(__dirname, '..', 'kho-goc');
+      const chu = {}, dung = [];
+      if (fsC.existsSync(dC)) {
+        for (const f of fsC.readdirSync(dC).filter(x => x.endsWith('.js'))) {
+          const vb = fsC.readFileSync(pxC.join(dC, f), 'utf8');
+          /* Chỉ bắt GÁN ĐÈ. Dạng "G.X = G.X || []" rồi push là cách chia
+             một kho ra nhiều tệp có chủ ý — G.CHUYEN và G.SH_HOI đều dùng
+             nó. Bắt cả dạng ấy thì bài kiểm đỏ ở chỗ hệ thống làm đúng, và
+             nới nó ra thì mất luôn tác dụng canh. */
+          /* Khoảng trắng nằm TRONG tiên đoán, không nằm trước nó.
+             Viết "\\s*=\\s*(?!G\\.\\1...)" thì \\s* lùi lại được: nó nhả
+             khoảng trắng ra, tiên đoán soi vào dấu cách thay vì soi vào
+             "G.X ||", thấy không khớp nên phủ định thành công — và mọi
+             dòng nối thêm đều bị báo nhầm là gán đè. */
+          const re = /^G\.([A-Z][A-Z0-9_]{2,})\s*=(?!\s*G\.\1\s*\|\|)/gm;
+          let m;
+          while ((m = re.exec(vb))) {
+            if (chu[m[1]] && chu[m[1]] !== f) dung.push(m[1] + ' (' + chu[m[1]] + ' ↔ ' + f + ')');
+            else chu[m[1]] = f;
+          }
+        }
+      }
+      bao(!dung.length,
+        'không kho nào bị hai tệp cùng đặt tên — kho nạp sau ghi đè kho nạp trước trong im lặng',
+        dung.length ? dung.join(' · ') : Object.keys(chu).length + ' kho, tên không trùng');
+    }
+
+    /* ── Kênh cộng đồng và gốc NLP ── */
+    const cdn = await p.evaluate(() => {
+      const G = window.G;
+      const nhom = (G.KENH_DS || [])[0] || {};
+      /* Kênh chính thức PHẢI nằm trong ngoại lệ của bộ dò rò rỉ. Không có
+         thì Tư vấn mời gia đình vào nhóm chính thức — việc đúng — lại bị
+         máy báo là kéo khách ra ngoài hệ thống. */
+      const nl = ((G.LUAT_LAMVIEC || {}).ngoaiLe || []).join(' ');
+      const boDo = ((G.LUAT_LAMVIEC || {}).dauHieu || [])
+        .filter(d => new RegExp(d.re, 'i').test(nhom.url || ''));
+      const thaDuoc = boDo.every(d => nl.indexOf('groups/giadinhthinhvuong') >= 0);
+      return {
+        kenh: (G.KENH_DS || []).length,
+        luat: (G.KENH_LUAT || []).length,
+        url: nhom.url || '',
+        https: /^https:\/\//.test(nhom.url || ''),
+        cho: (nhom.cho || []).length, khong: (nhom.khong || []).length,
+        boDo: boDo.map(d => d.ma), thaDuoc,
+        nlp: (G.NLP_GOC || []).length,
+        muc: (G.NLP_MUC || []).map(m => m.ma).sort().join(' '),
+        mong: (G.NLP_GOC || []).filter(x => x.bang === 'mong').map(x => x.ma),
+        camDu: (G.NLP_GOC || []).every(x => (x.cam || '').length >= 40),
+        mtCo: (G.NLP_GOC || []).every(x => (x.mt || []).every(id =>
+          (G.MOTHUC || []).some(m => m.id === id)))
+      };
+    });
+    bao(cdn.kenh === 3 && cdn.luat === 6,
+      'ba kênh cộng đồng chính thức, sáu luật kèm theo', cdn.kenh + ' kênh · ' + cdn.luat + ' luật');
+    bao(cdn.https, 'đường dẫn nhóm dùng https', cdn.url);
+    bao(cdn.khong >= 4,
+      'nhóm ghi rõ những gì KHÔNG được đăng — hồ sơ và kho nghề ở lại trong ứng dụng',
+      cdn.khong + ' điều cấm · ' + cdn.cho + ' điều được đăng');
+    bao(cdn.thaDuoc,
+      'kênh chính thức nằm trong ngoại lệ của bộ dò rò rỉ — mời vào nhóm chính thức không bị báo vi phạm',
+      cdn.boDo.length ? ('bộ dò khớp ' + cdn.boDo.join(' ') + ', đã tha') : 'bộ dò không khớp');
+    bao(cdn.nlp >= 9 && cdn.muc === 'chac mong motphan',
+      'gốc NLP có đủ ba mức bằng chứng — vững · vững một phần · mỏng',
+      cdn.nlp + ' mô thức gốc · mức: ' + cdn.muc);
+    bao(cdn.mong.length >= 1,
+      'có ghi thẳng những chỗ bằng chứng MỎNG, không giấu đi', cdn.mong.join(' '));
+    bao(cdn.camDu, 'mỗi gốc NLP đều ghi rõ điều KHÔNG được tuyên bố');
+    bao(cdn.mtCo, 'mọi mã mô thức trong bảng gốc NLP đều có thật trong kho mô thức');
+
     /* ── Ma trận màn × vai ──
        Bảng phân quyền lệch khỏi ứng dụng là kiểu hỏng không ai phát hiện
        cho tới lúc một vai nhìn thấy thứ đáng lẽ không được nhìn. Ma trận
