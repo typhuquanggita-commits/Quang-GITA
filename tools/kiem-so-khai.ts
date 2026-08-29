@@ -27,8 +27,17 @@ const ROOT = fileURLToPath(new URL('..', import.meta.url));
 const MONG: {tab: RegExp; don: RegExp; that: number; nguon: string}[] = [
   {tab: /Phương pháp/, don: /phương pháp/i, that: (D.METHODS as any[]).length, nguon: 'METHODS'},
   {tab: /Luyện tập/, don: /bài/i, that: (D.DRILLS as any[]).length, nguon: 'DRILLS'},
-  {tab: /Bài giảng/, don: /chuỗi/i, that: (D.LECTURE_SERIES as any[]).length, nguon: 'LECTURE_SERIES'},
-  {tab: /Bài giảng/, don: /bài/i, that: (D.LECTURE_SERIES as any[]).reduce((s, x: any) => s + x.lessons.length, 0), nguon: 'tổng bài giảng'},
+  // Neo đúng nhãn "Bài giảng", không để nó bắt luôn "Bài giảng chuyên sâu" —
+  // hai tab khác nhau, hai kho nội dung khác nhau.
+  {tab: /^Bài giảng$/, don: /chuỗi/i, that: (D.LECTURE_SERIES as any[]).length, nguon: 'LECTURE_SERIES'},
+  {tab: /^Bài giảng$/, don: /bài/i, that: (D.LECTURE_SERIES as any[]).reduce((s, x: any) => s + x.lessons.length, 0), nguon: 'tổng bài giảng'},
+  {tab: /Bài giảng chuyên sâu/, don: /trụ/i, that: (D as any).TRU.length, nguon: 'TRU'},
+  {tab: /Bài giảng chuyên sâu/, don: /bài/i, that: (D as any).GIANG_SAU_SO.soBai, nguon: 'bài giảng chuyên sâu'},
+  {tab: /Phiếu luyện/, don: /phiếu/i, that: (D as any).PHIEU_SO.soPhieu, nguon: 'PHIEU_SO.soPhieu'},
+  {tab: /Phiếu luyện/, don: /nhiệm vụ/i, that: (D as any).PHIEU_SO.soNhiemVu, nguon: 'PHIEU_SO.soNhiemVu'},
+  {tab: /Phân quyền/, don: /quyền/i, that: (D as any).QUYEN_SO.soQuyen, nguon: 'QUYEN_SO.soQuyen'},
+  {tab: /Phân quyền/, don: /bậc/i, that: (D as any).QUYEN_SO.soBac, nguon: 'QUYEN_SO.soBac'},
+  {tab: /Phân quyền/, don: /thang/i, that: (D as any).QUYEN_SO.soThang, nguon: 'QUYEN_SO.soThang'},
   {tab: /Bí kíp/, don: /chiến thuật/i, that: (D.PLAYBOOKS as any[]).length, nguon: 'PLAYBOOKS'},
   {tab: /Thói quen/, don: /thói quen/i, that: (D.HABITS as any[]).length, nguon: 'HABITS'},
   {tab: /Thói quen/, don: /nghi thức/i, that: (D.RITUALS as any[]).length, nguon: 'RITUALS'},

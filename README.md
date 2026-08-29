@@ -402,6 +402,79 @@ Phần lọc không viết tay:
 con số viết trong văn xuôi so với số tính được từ dữ liệu đề — "25 câu", "trọng số
 2,9", "16 câu biến đổi câu", "30 trên 50 điểm xét tuyển". Lệch một chỗ là hỏng.
 
+## 🧾 Hai nghìn phiếu luyện và hai nghìn nhiệm vụ chia sẻ
+
+**80 dạng bài × 25 cấp độ = 2.000 phiếu**, mỗi phiếu **20 câu** — tổng **40.000 câu**.
+Mỗi phiếu kèm đúng một **nhiệm vụ chia sẻ**, chia về một phần luyện trong hệ thống.
+
+Năm phần nối nhau thành một chuỗi, **không đảo được**:
+
+| Phần | Câu | Trọng số | Vai trò |
+|---|---|---|---|
+| KHỞI | 2 | 10% | Gọi lại cái đã biết để có chỗ móc cái mới vào |
+| MẪU | 3 | 15% | Xem một mẫu làm sẵn, chép lại đúng cách làm |
+| DẪN | 5 | 25% | Tự làm nhưng còn giàn giáo đỡ |
+| TỰ | 8 | 35% | Bỏ giàn giáo, tự làm sạch |
+| CHUỖI | 2 | 15% | Nối tất cả thành một sản phẩm liền mạch |
+
+Không cho nhảy phần: làm phần TỰ khi chưa qua phần MẪU thì học viên đoán mò, và cái
+sai đầu tiên được lặp lại suốt phần còn lại.
+
+**Luồng 10 bước** — nhận phiếu → làm từng phần → hoàn thành chuỗi câu → chấm → báo kết
+quả → nhận xét tình hình → đưa giải pháp tối ưu → định hướng → nhiệm vụ chia sẻ → xét
+nâng giai đoạn. Mỗi bước ghi rõ ai làm, ra cái gì, và **chặn khi nào**.
+
+**KPI 90% có hai điều kiện, không phải một.** Phải làm tối thiểu 8 phiếu, VÀ từ 90% số
+phiếu đạt ngưỡng. Chỉ xét trung bình thì một chuỗi `95, 92, 90, 91, 88, 94, 96, 93` có
+trung bình 92,4% — nhưng chỉ 87,5% số phiếu đạt, và một phiếu tệ bị che mất. Hai điều
+kiện cùng lúc chặn đúng chỗ đó.
+
+## 📚 Hai nghìn bài giảng chuyên sâu
+
+**4 trụ × 20 chủ đề × 25 cấp độ = 2.000 bài**, tổng **613 giờ** nội dung.
+
+| Trụ | Vai trò | Thiếu thì sao |
+|---|---|---|
+| **TƯ DUY** | Vì sao mình học, và điều gì làm mình bỏ cuộc | Bỏ giữa chừng, dù kỹ thuật rất tốt |
+| **KIẾN THỨC** | Thứ phải biết, không thể tự suy ra | Trần thấp — luyện mãi vẫn kẹt vì thiếu nguyên liệu |
+| **KỸ NĂNG** | Thứ chỉ có qua lặp lại, không qua đọc hiểu | Biết mà không làm được, và điểm không lên |
+| **PHƯƠNG PHÁP** | Cách học sao cho mỗi giờ sinh lợi nhiều nhất | Cày nhiều mà đi chậm, rồi kết luận sai rằng mình không có năng khiếu |
+
+Cùng chủ đề "nối âm" ở cấp 1 là **nhận ra** hiện tượng; ở cấp 25 là **tự điều chỉnh**
+theo tốc độ người nghe. Câu hỏi lõi không đổi; học liệu, độ sâu và việc sau bài thì đổi.
+
+**Ưu tiên cho hai trường khó nhất.** Chuyên Anh của Sư phạm và của Ngoại ngữ nhiều năm
+liền có điểm chuẩn cao nhất Hà Nội. **775 bài** được đánh dấu trọng yếu cho hai kỳ thi
+ấy, và tuyến chuyên đi theo **ưu tiên** chứ không theo số thứ tự — vì họ chỉ có 22 tháng
+và một ngày thi duy nhất. Đánh dấu này dựa trên đặc điểm **ổn định** của đề chuyên (khối
+ngữ pháp lớn, bài đọc dài, phần biến đổi câu), không dựa trên đề của một năm cụ thể.
+
+Mỗi bài nối tới đúng một phiếu luyện. *Bài giảng không có phiếu đi kèm là bài giảng chỉ
+để nghe cho sướng tai.*
+
+## 🔐 Phân quyền theo cấp độ học viên và cấp độ giáo viên
+
+**34 quyền · 14 bậc · 5 thang.** Hai thang song song: học viên lên theo **5 tầng năng
+lực**, người dạy lên theo **5 nấc nghề** lấy thẳng từ thang coach có sẵn.
+
+**Nói trước một điều:** phân quyền ở giao diện **không phải bảo mật**. Ai mở công cụ nhà
+phát triển đều đổi được vai của mình. Nó ngăn nhầm lẫn, không ngăn được người cố ý —
+hiệu lực thật chỉ có khi máy chủ kiểm lại vai ở từng thao tác. Tệp này là bản thiết kế
+cho tầng đó và bản mô tả cho vận hành học viện, không phải bản thay thế.
+
+Bốn nguyên tắc, và mỗi cái đều có bài kiểm giữ:
+
+1. **Đặc quyền tối thiểu** — mỗi quyền phải trả lời được "vì sao nó bị chặn". Quyền nào
+   không trả lời được thì mở cho tất cả.
+2. **Không ai tự nâng mình** — học viên tầng 5 vẫn không nâng cấp độ được cho ai.
+3. **Việc không đảo ngược cần hai người** — 10 việc, và cả 10 đều đồng thời ghi nhật ký.
+4. **Quyền kỹ thuật không kèm quyền chuyên môn** — quản trị hệ thống gán được quyền
+   nhưng **không** chấm bài, **không** nâng cấp độ, **không** cấp chứng nhận. Trộn hai
+   thứ này là lỗi thiết kế phổ biến nhất của các hệ quản lý học tập.
+
+Bài kiểm `tools/kiem-quyen.ts` ép thừa kế phải **đơn điệu** — bậc trên luôn có đủ mọi
+quyền của bậc dưới — và soát 17 cặp tách bạch trách nhiệm bằng khẳng định cụ thể.
+
 ## 🎯 Luyện thi chuyên Anh & lớp chất lượng cao vào 10 — Hà Nội
 
 Vào từ **lớp 8**, thi tháng 6 cuối lớp 9. **Hai mươi hai tháng.** Đích: đỗ chuyên

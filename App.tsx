@@ -36,6 +36,9 @@ const Exams = lazy(() => import('./components/engwin/Exams').then((m) => ({defau
 const Certify = lazy(() => import('./components/engwin/Certify').then((m) => ({default: m.Certify})));
 const Tuyen = lazy(() => import('./components/engwin/Tuyen').then((m) => ({default: m.Tuyen})));
 const TimKiem = lazy(() => import('./components/engwin/TimKiem').then((m) => ({default: m.TimKiem})));
+const Phieu = lazy(() => import('./components/engwin/Phieu').then((m) => ({default: m.Phieu})));
+const GiangSau = lazy(() => import('./components/engwin/GiangSau').then((m) => ({default: m.GiangSau})));
+const Quyen = lazy(() => import('./components/engwin/Quyen').then((m) => ({default: m.Quyen})));
 
 /** Bối cảnh truyền xuống tab. Hầu hết tab không cần, nên chúng bỏ qua tham số. */
 interface NavCtx {
@@ -187,6 +190,22 @@ const NAV: Nav[] = [
     render: () => <Lectures />,
   },
   {
+    id: 'phieu',
+    icon: '🧾',
+    label: 'Phiếu luyện',
+    hint: '2.000 phiếu · 2.000 nhiệm vụ',
+    group: 'learner',
+    render: () => <Phieu />,
+  },
+  {
+    id: 'giangsau',
+    icon: '📚',
+    label: 'Bài giảng chuyên sâu',
+    hint: '4 trụ · 2.000 bài',
+    group: 'learner',
+    render: () => <GiangSau />,
+  },
+  {
     id: 'playbooks',
     icon: '🗝',
     label: 'Bí kíp',
@@ -225,6 +244,14 @@ const NAV: Nav[] = [
     hint: '45 nguồn đã sàng lọc',
     group: 'learner',
     render: () => <Resources />,
+  },
+  {
+    id: 'quyen',
+    icon: '🔐',
+    label: 'Phân quyền',
+    hint: '34 quyền · 14 bậc · 5 thang',
+    group: 'academy',
+    render: () => <Quyen />,
   },
   {
     id: 'academy',

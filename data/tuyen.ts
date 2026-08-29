@@ -109,6 +109,8 @@ export const TAB_TUYEN: Record<string, TuyenId[]> = {
   methods: ['ielts', 'chuyen'],
   drills: ['ielts', 'chuyen'],
   lectures: ['ielts', 'chuyen'],
+  phieu: ['ielts', 'chuyen'],
+  giangsau: ['ielts', 'chuyen'],
   playbooks: ['ielts'],
   habits: ['ielts', 'chuyen'],
   mindset: ['ielts', 'chuyen'],
@@ -116,6 +118,7 @@ export const TAB_TUYEN: Record<string, TuyenId[]> = {
   resources: ['ielts', 'chuyen'],
   // Bốn mục dưới đây App xếp vào nhóm vận hành học viện, không phải nhóm
   // học viên, nên chúng không mang tuyến — bộ lọc tuyến cũng không đụng tới.
+  quyen: [],
   academy: [],
   levels: [],
   grading: [],

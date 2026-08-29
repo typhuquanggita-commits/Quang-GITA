@@ -34,3 +34,6 @@ export * from './certify';
 export * from './exams';
 export * from './tuyen';
 export * from './timkiem';
+export * from './phieu';
+export * from './phanquyen';
+export * from './giangsau';

@@ -1213,3 +1213,177 @@ export interface TinhTuy {
   catBo: {viec: string; vi: string}[];
   chanDuong: ChanDuong[];
 }
+
+/* ==========================================================================
+   PHIẾU LUYỆN VÀ NHIỆM VỤ CHIA SẺ
+   ========================================================================== */
+
+/** Một phần trong phiếu. Năm phần nối nhau thành một chuỗi, không đảo được. */
+export interface PhanPhieu {
+  no: number;
+  ma: 'KHOI' | 'MAU' | 'DAN' | 'TU' | 'CHUOI';
+  ten: string;
+  soCau: number;
+  phut: number;
+  lam: string;
+  chuan: string;
+  /** Phần trăm phần này đóng vào điểm phiếu. */
+  trong: number;
+}
+
+/** Một phiếu luyện. */
+export interface Phieu {
+  id: string;
+  no: number;
+  skill: SkillId;
+  dangId: string;
+  dangTen: string;
+  levelId: string;
+  tier: number;
+  capTrongTang: number;
+  ten: string;
+  mucTieu: string;
+  hocLieu: string;
+  phan: PhanPhieu[];
+  tongCau: number;
+  tongPhut: number;
+  nguongDat: number;
+  drillId: string;
+  nhiemVuId: string;
+  bayHayMac: string;
+}
+
+/** Nhiệm vụ chia sẻ đi kèm một phiếu. */
+export interface NhiemVu {
+  id: string;
+  no: number;
+  phieuId: string;
+  /** Phần luyện trong hệ thống mà nhiệm vụ này được chia về. */
+  phanLuyen: string;
+  ten: string;
+  viec: string;
+  chiaSe: string;
+  bangChung: string;
+  phut: number;
+  hanGio: string;
+  diem: number;
+}
+
+/** Một bước trong luồng làm phiếu. */
+export interface BuocLam {
+  no: number;
+  ma: string;
+  ten: string;
+  ai: 'học viên' | 'hệ thống' | 'trợ lý AI' | 'cố vấn';
+  lam: string;
+  raGi: string;
+  chanNeu: string;
+}
+
+/** Kết quả chấm một phần. */
+export interface DiemPhan {
+  ma: string;
+  ten: string;
+  dung: number;
+  soCau: number;
+  tiLe: number;
+  dat: boolean;
+}
+
+/** Kết quả chấm cả phiếu. */
+export interface KetQuaPhieu {
+  phieuId: string;
+  tungPhan: DiemPhan[];
+  tiLe: number;
+  datKpi: boolean;
+  phanYeuNhat: string;
+  nhanXet: string;
+  giaiPhap: string;
+  dinhHuong: 'làm lại' | 'thử thách tiếp' | 'nâng cấp độ';
+  buocKe: string;
+}
+
+/** Kết quả xét nâng giai đoạn theo KPI. */
+export interface XetNangCap {
+  soPhieu: number;
+  trungBinh: number;
+  soPhieuDat: number;
+  tiLeDat: number;
+  duDieuKien: boolean;
+  vuongO: string;
+  ketLuan: string;
+}
+
+/* ==========================================================================
+   PHÂN QUYỀN
+   ========================================================================== */
+
+export type NhomQuyen =
+  | 'học'
+  | 'chấm'
+  | 'hồ sơ'
+  | 'lộ trình'
+  | 'nội dung'
+  | 'chứng nhận'
+  | 'vận hành';
+
+/** Một quyền cụ thể trong hệ thống. */
+export interface Quyen {
+  id: string;
+  nhom: NhomQuyen;
+  ten: string;
+  lam: string;
+  /** Vì sao quyền này phải chặn, chứ không mở cho tất cả. */
+  viSaoChan: string;
+  /** Cần hai người ký thì mới thực hiện được. */
+  haiNguoi?: boolean;
+  /** Phải ghi nhật ký kiểm toán. */
+  ghiNhatKy?: boolean;
+}
+
+/** Một bậc quyền — một vai trò ở một nấc cụ thể. */
+export interface BacQuyen {
+  id: string;
+  thang: 'học viên' | 'giảng dạy' | 'gia đình' | 'kinh doanh' | 'vận hành';
+  no: number;
+  ten: string;
+  ai: string;
+  vao: string;
+  /** Quyền được cấp thêm ở chính bậc này, ngoài những gì thừa kế từ bậc dưới. */
+  themQuyen: string[];
+  /** Bậc dưới liền kề trong cùng thang, nếu có. */
+  keThua?: string;
+  chuaDuoc: string;
+}
+
+/* ==========================================================================
+   BÀI GIẢNG CHUYÊN SÂU
+   ========================================================================== */
+
+export type TruId = 'tu-duy' | 'kien-thuc' | 'ky-nang' | 'phuong-phap';
+
+/** Một bài giảng chuyên sâu, sinh từ chủ đề × cấp độ. */
+export interface BaiGiangSau {
+  id: string;
+  no: number;
+  truId: TruId;
+  truTen: string;
+  chuDeId: string;
+  ten: string;
+  levelId: string;
+  tier: number;
+  /** Câu hỏi mà cả bài này tồn tại để trả lời. */
+  cauHoiLoi: string;
+  loi: string;
+  viDu: string;
+  hocLieu: string;
+  phut: number;
+  viecSauBai: string;
+  tuKiem: string;
+  bay: string;
+  tuyen: ('ielts' | 'chuyen')[];
+  /** 0 = bình thường, 1 = trọng yếu cho chuyên, 2 = trọng yếu cho hai trường khó nhất. */
+  uuTien: 0 | 1 | 2;
+  drillId: string;
+  phieuDangId: string;
+}
