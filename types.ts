@@ -354,3 +354,87 @@ export interface Archetype {
   blindSpot: string;
   strategy: string[];
 }
+
+/* ==========================================================================
+   CÁ NHÂN HOÁ — bộ câu hỏi và bộ máy suy dẫn kế hoạch riêng
+   ========================================================================== */
+
+export interface ProfileOption {
+  id: string;
+  label: string;
+  hint?: string;
+  /** Điểm cộng cho từng nguyên mẫu người học (chỉ dùng ở câu trắc nghiệm tính cách). */
+  weights?: Record<string, number>;
+}
+
+export interface ProfileQuestion {
+  id: string;
+  section: string;
+  question: string;
+  help?: string;
+  kind: 'single' | 'multi';
+  options: ProfileOption[];
+}
+
+/** Câu trả lời của người dùng: id câu hỏi → id lựa chọn (hoặc mảng id). */
+export type Profile = Record<string, string | string[]>;
+
+export interface FeasibilityVerdict {
+  status: 'du-da' | 'vua-khit' | 'cang' | 'khong-kha-thi';
+  label: string;
+  tone: 'emerald' | 'sky' | 'amber' | 'rose';
+  message: string;
+  levers: {name: string; detail: string}[];
+}
+
+export interface DerivedBlock {
+  time: string;
+  task: string;
+  minutes: number;
+  pillar: string;
+}
+
+export interface DerivedPlan {
+  /* Định vị */
+  entryMilestoneId: string;
+  entryMilestoneName: string;
+  bankedHours: number;
+  targetBand: number;
+  targetHours: number;
+  hoursNeeded: number;
+  monthsNeeded: number;
+  deadlineMonths: number | null;
+  feasibility: FeasibilityVerdict;
+
+  /* Con người */
+  primaryArchetypeId: string;
+  secondaryArchetypeId: string | null;
+  archetypeScores: {id: string; score: number}[];
+
+  /* Ngân sách */
+  dailyMinutes: number;
+  /** Quỹ đã trừ 5 phút nghi thức — phần thật sự chia cho bốn trụ cột. */
+  learningMinutes: number;
+  /** Tổng phút nạp mỗi ngày, dùng để viết lại việc số 2 trong danh sách 10. */
+  inputMinutes: number;
+  commuteMinutes: number;
+  effectiveMinutes: number;
+  weeklyHours: number;
+  allocation: {pillar: string; minutes: number; note: string}[];
+
+  /* Nhịp */
+  fullDay: DerivedBlock[];
+  busyDay: DerivedBlock[];
+  busyDayLabels: string[];
+  clubsPerWeek: number;
+
+  /* Nội dung */
+  firstNarrowTopic: string;
+  resourceIds: string[];
+  excludedResourceIds: string[];
+  dailyTenIds: number[];
+
+  /* Rủi ro */
+  risks: {level: 'cao' | 'trung' | 'thap'; title: string; why: string; fix: string}[];
+  archetypeAdjustments: string[];
+}

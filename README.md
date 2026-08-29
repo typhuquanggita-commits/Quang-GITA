@@ -8,6 +8,34 @@ Một ứng dụng web trình bày trọn vẹn một hệ thống học tiếng
 mốc, thư viện phương pháp đã kiểm chứng, chuỗi bài giảng, bài luyện hằng ngày, bí kíp,
 kiến trúc thói quen, lập trình tư duy, hệ thống câu lạc bộ và cơ chế kiểm định.
 
+## Cá nhân hoá — tab **Kế hoạch của tôi**
+
+Trả lời 13 câu (~5 phút), hệ thống tính lại lộ trình bằng **phép toán giờ học**
+lấy từ chính quỹ đạo trong `data/system.ts`, không phải bằng lời động viên:
+
+- **Cột mốc xuất phát** — theo trình độ thật, bỏ qua những mốc bạn đã vượt
+- **Số giờ còn thiếu & số tháng thật sự cần** — `(giờ đích − giờ đã có) ÷ quỹ ngày`
+- **Phán quyết khả thi** — Dư dả / Vừa khít / Căng / **Không khả thi**, kèm ba đòn bẩy
+  có số cụ thể (tăng lên bao nhiêu phút · giãn thêm bao nhiêu tháng · mức band thực tế đạt được)
+- **Nguyên mẫu người học** — chấm điểm từ 12 phát biểu hành vi, ra siêu năng lực + điểm mù
+- **Phân bổ 4 trụ cột** — chỉnh theo nguyên mẫu (người đọc được đẩy Đầu ra, người
+  giao tiếp được đẩy Ghi nhớ…)
+- **Nhịp Ngày Đủ / Ngày Bận** — xếp vào đúng khung giờ đỉnh bạn chọn, tổng khớp
+  chính xác quỹ thời gian bạn khai
+- **10 việc/ngày rút gọn** theo quỹ thật (45 phút → còn 7 việc)
+- **Bộ tài liệu đã lọc** theo trình độ + ngân sách + kiểu học, kèm danh sách tạm loại bỏ
+- **Rủi ro riêng** — ngân sách 0đ làm hở Luật số 4, không nói to được ở nhà,
+  đã bỏ dở ≥ 3 lần, mục tiêu lệch quỹ thời gian… mỗi rủi ro kèm cách bịt cụ thể
+
+Câu trả lời lưu trong `localStorage` của trình duyệt, không gửi đi đâu.
+
+> Bộ máy này được thiết kế để **nói thẳng**. Ví dụ thật: mất gốc + mục tiêu 8.0 +
+> hạn 12 tháng + 45 phút/ngày → *"Cần khoảng 52 tháng nhưng bạn chỉ có 12 tháng —
+> chênh gấp 4,3 lần. Không có phương pháp nào rút ngắn được khoảng cách này, vì
+> tiếp thu ngôn ngữ bị chặn bởi số giờ tiếp xúc chứ không bởi kỹ thuật."*
+
+---
+
 Hệ thống có **hai tầng**. Tầng **La Bàn** trả lời *vì ai và vì sao*. Tầng
 **Lộ trình** trả lời *làm gì và làm thế nào*. Thiếu tầng thứ nhất, tầng thứ hai
 chỉ là một thời khoá biểu — và thời khoá biểu nào cũng bị bỏ ở tháng thứ tư.
@@ -77,6 +105,7 @@ npm run preview  # xem thử bản build
 
 ```
 data/                  Toàn bộ nội dung hệ thống, tách khỏi giao diện
+  profile.ts           13 câu hỏi + bộ máy suy dẫn kế hoạch cá nhân (hàm thuần)
   charter.ts           LA BÀN — 11 mục hiến chương cá nhân + tuyên ngôn
   system.ts            Hiến chương: 5 luật, 7 trụ cột, quỹ đạo, ngân sách thời gian
   roadmap.ts           12 cột mốc × 36 tháng
@@ -100,12 +129,15 @@ giao diện tự cập nhật theo.
 
 ## Bắt đầu từ đâu
 
-1. Mở ứng dụng, vào tab **La Bàn**. Dành 45 phút viết cho xong **mục 01 (Tại sao)**
+1. Mở ứng dụng, vào tab **Kế hoạch của tôi**, trả lời 13 câu (~5 phút). Trả lời
+   thật, kể cả khi khó nghe — chọn trình độ hoặc quỹ thời gian cao hơn thực tế
+   chỉ khiến kế hoạch sụp ở tuần thứ ba.
+2. Sang tab **La Bàn**. Dành 45 phút viết cho xong **mục 01 (Tại sao)**
    và **mục 11 (Điểm mạnh)** bằng câu trả lời thật của bạn — đây là hai mục quyết
    định bạn có đi hết 3 năm hay không.
-2. Đọc [`docs/ENGWILL365.md`](docs/ENGWILL365.md) — sổ tay vận hành, 10 phút.
-3. Sang tab **Lộ trình**, chọn cột mốc **Y1Q1**.
-4. Làm đúng buổi học của ngày mai.
+3. Đọc [`docs/ENGWILL365.md`](docs/ENGWILL365.md) — sổ tay vận hành, 10 phút.
+4. Sang tab **Lộ trình**, mở đúng cột mốc xuất phát mà hệ thống đã tính cho bạn.
+5. Làm đúng buổi học của ngày mai.
 
 Hệ thống này là một bản thiết kế, không phải một lời hứa. Nó chỉ tạo ra kết quả khi được
 vận hành mỗi ngày.

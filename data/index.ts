@@ -13,3 +13,4 @@ export * from './habits';
 export * from './mindset';
 export * from './clubs';
 export * from './charter';
+export * from './profile';

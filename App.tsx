@@ -5,6 +5,7 @@
 import React, {useState} from 'react';
 import {NORTH_STAR} from './data';
 import {Charter} from './components/engwill/Charter';
+import {MyPlan} from './components/engwill/MyPlan';
 import {Overview} from './components/engwill/Overview';
 import {Roadmap} from './components/engwill/Roadmap';
 import {Methods} from './components/engwill/Methods';
@@ -31,6 +32,13 @@ const NAV: Nav[] = [
     label: 'La Bàn',
     hint: 'Hiến chương cá nhân',
     render: () => <Charter />,
+  },
+  {
+    id: 'myplan',
+    icon: '🎯',
+    label: 'Kế hoạch của tôi',
+    hint: 'Cá nhân hoá — 13 câu',
+    render: () => <MyPlan />,
   },
   {
     id: 'overview',

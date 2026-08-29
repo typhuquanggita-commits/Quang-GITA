@@ -15,10 +15,16 @@ chạy `npm run dev` để mở.
 
 | Tầng | Trả lời câu hỏi | Ở đâu |
 |------|-----------------|-------|
+| **Kế hoạch của tôi** | Lộ trình này áp vào ĐÚNG tôi thì ra gì? | Tab **Kế hoạch của tôi** — 13 câu, ~5 phút |
 | **La Bàn** | Vì ai? Vì sao? Tôi trở thành ai? | Tab **La Bàn** trong ứng dụng — 11 mục |
 | **Lộ trình** | Làm gì? Làm thế nào? Khi nào? | 9 tab còn lại + tài liệu này |
 
-Làm La Bàn **trước**. Cụ thể: mục 01 (Tại sao) và mục 11 (Điểm mạnh) là hai mục
+Làm **Kế hoạch của tôi** trước tiên — nó cho bạn biết cột mốc xuất phát, số tháng
+thật sự cần với quỹ thời gian của bạn, và những rủi ro riêng của hoàn cảnh bạn.
+Bảng quỹ đạo ở mục 3 dưới đây là bản chuẩn cho người bắt đầu từ số 0 với ~105
+phút/ngày; nếu quỹ của bạn khác, hãy lấy con số mà tab đó tính ra.
+
+Rồi làm La Bàn **trước khi** bắt đầu học. Cụ thể: mục 01 (Tại sao) và mục 11 (Điểm mạnh) là hai mục
 không ai viết hộ được — dành 45 phút viết tay cho xong trước khi bắt đầu ngày học
 đầu tiên. Người bỏ qua bước này thường dừng ở tháng thứ tư, không phải vì phương
 pháp sai mà vì không có lý do đủ sâu để đi tiếp khi hết hào hứng.
