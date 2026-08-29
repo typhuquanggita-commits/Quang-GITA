@@ -18,7 +18,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '7.8',
+  version: '7.9',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -302,24 +302,44 @@ G.TIERS = [
 ];
 
 /* ══════════ 3. MÔ THỨC G–I–T–A ══════════ */
+/* ══════════ MÔ THỨC HUẤN LUYỆN GITA — BỐN TRỤ ══════════
+
+   BẢN CHUẨN, chép từ định nghĩa của chủ Học viện. Đây là tài sản trí tuệ
+   gốc của GITA; mọi màn hình đọc bốn trụ đều đọc từ đây, không nơi nào
+   được viết lại một bản khác.
+
+   `inc` là danh sách thành tố của trụ — nó dài có chủ ý. Rút gọn cho gọn
+   giao diện là làm mất chính thứ phân biệt mô thức này với bốn chữ cái
+   viết tắt của nơi khác. Màn hình nào chật thì cắt ở màn hình, không cắt
+   ở kho.                                                                */
 G.GITA = [
   {k:'G',name:'Goal — Hệ thống mục tiêu',short:'Mục tiêu',c:'#185AB4',
-   desc:'Học viên có mục tiêu rõ, có ý nghĩa, do chính mình sở hữu không?',
+   desc:'Học viên có hệ thống mục tiêu rõ, hướng tới kết quả xuất sắc, và đó có phải đích đến của chính quá trình học tập rèn luyện của em không?',
    probe:'Con muốn điều gì? Điều đó là của con hay của người lớn? Đạt được thì khác đi thế nào?',
-   inc:['Mục tiêu','Kết quả','Kỳ tích','Nguyện vọng','Thành quả']},
+   inc:['Hệ thống mục tiêu','Kết quả xuất sắc','Đích đến của quá trình học tập rèn luyện',
+        'Kỳ tích','Nguyện vọng','Thành quả']},
+
   {k:'I',name:'Inspirits — Nội lực',short:'Nội lực',c:'#5140B4',
-   desc:'Khát khao và niềm tin bên trong có đủ để duy trì hành động không?',
+   desc:'Động lực, khát khao và niềm tin bên trong có đủ để em theo đuổi mục tiêu tới cùng, kể cả khi khó?',
    probe:'Điều gì khiến con muốn làm? Con tin mình làm được tới đâu? Khi thất bại con nghĩ gì?',
-   inc:['Khát khao','Động lực','Cảm hứng','Giá trị','Đam mê','Tầm nhìn','Thái độ','Hệ thống niềm tin']},
+   inc:['Động lực','Khát khao','Đam mê','Mong muốn','Nội lực','Sự khác biệt',
+        'Niềm tin','Bản lĩnh theo đuổi mục tiêu']},
+
   {k:'T',name:'Talent — Hệ thống tài năng',short:'Năng lực',c:'#0B7350',
-   desc:'Học viên có đủ năng lực, phương pháp và kỹ năng để làm được không?',
+   desc:'Em có tài năng, điểm mạnh và tư duy xuất sắc để làm được không — và em có nhanh, có tập trung, có hướng đi rõ không?',
    probe:'Con biết cách làm chưa? Con mạnh nhất ở đâu? Cách làm nào đã hiệu quả với con?',
-   inc:['Tài năng','Điểm mạnh','Sở trường','Tư duy','Phương pháp','Kỹ năng xuất sắc']},
-  {k:'A',name:'Academy & Action — Hệ sinh thái và hành động',short:'Môi trường & Hành động',c:'#BE0E16',
-   desc:'Môi trường, quan hệ, thói quen và hệ thống vận hành có nâng đỡ hành động không?',
+   inc:['Tài năng','Điểm mạnh','Sở trường','Tư duy xuất sắc','Sự khác biệt',
+        'Tốc độ','Tập trung','Khả năng vượt trội','Định hướng xuất sắc']},
+
+  {k:'A',name:'Action & Academy — Hành động và hệ sinh thái',short:'Hành động & Môi trường',c:'#BE0E16',
+   desc:'Em có hành động quyết đoán, kiên trì và tối ưu không — và môi trường quanh em có nâng đỡ hành động ấy không?',
    probe:'Ai quanh con? Không gian và nhịp sống thế nào? Con đang dùng hệ thống nào để vận hành?',
-   inc:['Quan hệ chất lượng','Mentor và nhóm trí tuệ','Hệ thống thói quen','Quy tắc','Đo lường','PDCA','Tháp học tập']}
+   inc:['Hành động quyết đoán','Kiên trì','Sáng tạo','Chăm chỉ','Cẩn thận','Tối ưu',
+        'Lộ trình rèn luyện theo thói quen thành công','Cấp độ hành động theo quy tắc 20/80',
+        'Môi trường thi đua rèn luyện','Thiết kế khác biệt',
+        'Nhóm bạn xuất sắc theo team work','Học tập gắn phát triển bản thân']}
 ];
+
 
 /* ══════════ 4. NĂM NHÓM CHÍNH — thanh tab bên trái ══════════ */
 G.NAV = [
@@ -395,6 +415,7 @@ G.NAV = [
     {v:'nhan-dien-loi',t:'Bộ nhận diện ngôn từ',       h:'GITA nói thế nào · 10 dấu hiệu câu máy viết', ic:'book', perm:'nghe_chung', capMo:'nghe', star:1},
     {v:'ngon-tu',     t:'Ngôn từ dẫn dắt',             h:'Sáu nhịp · mẫu câu dùng được ngay',  ic:'lightning', star:1, perm:'nghe_chung', capMo:'nghe'},
     {v:'so-tay-nhan-dien',t:'Sổ tay nhận diện GITA',   h:'7 chương viết rõ · đọc thẳng, không tải xuống', ic:'book', perm:'nghe_chung', capMo:'nghe', star:1},
+    {v:'chieu-sau',   t:'Chiều sâu năm lớp',            h:'Mỗi mô thức, năm cấp nghề làm được năm việc khác nhau', ic:'chart', perm:'nghe_chung', capMo:'nghe', star:1},
     {v:'nhan-dien',   t:'Bộ nhận diện GITA',            h:'Logo · ba màu · chữ · luật dùng',    ic:'star', capMo:'chung', star:1},
     {v:'thuong-hieu', t:'Nhận diện thương hiệu',       h:'Màu · chữ · giọng nói · điều cấm kỵ',ic:'star', perm:'nghe_chung', capMo:'nghe'},
     {v:'van-dung',    t:'Năm cấp độ vận dụng',           h:'Chiều sâu nghề · giới hạn tầng · báo cáo', ic:'brain', perm:'nghe_chung', capMo:'nghe', star:1},

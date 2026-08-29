@@ -267,6 +267,78 @@ của nó vào `MO_RA` trong cùng một lần sửa. Ngược lại, một màn
 nghề thì cứ để nó hiện thẻ xin cấp phép — thẻ ấy còn nói được là khoá ở
 đâu và mở bằng cách nào, hơn hẳn một cái khung rỗng.
 
+## Chiều sâu năm lớp — mỗi mô thức, năm cấp nghề làm được năm việc
+
+Hệ thống có sẵn hai trục, và cả hai đã được đặt đúng từ trước:
+
+| Trục | Kho | Nội dung |
+|---|---|---|
+| Tầng hấp thu của khách | `G.TIERS` | T1 NHẬN DIỆN → T5 BỨT PHÁ |
+| Cấp độ chuyên môn | `G.CAPDO_VANDUNG` | C1 Làm theo · C2 Hiểu vì sao · C3 Chọn được · C4 Ghép được · C5 Dạy lại được |
+
+Trục C1–C5 được mô tả rất kỹ — mỗi cấp có `docThayGi`, `nguoiHuongDan`,
+`dauHieuDuVao`, `dauHieuChua`, `loiThuongGap`. Nhưng **không tài nguyên
+nghề nào gắn vào nó**: đo ra 0 trên 12 kho. Nghĩa là một Tư vấn vừa nhận
+việc và một Senior Coach mở cùng một mô thức thì nhìn thấy y hệt nhau.
+
+Đó không phải thiếu chữ. Đó là thiếu **tầng**.
+
+### Hợp đồng
+
+`G.MT_SAU[id]` — mỗi mô thức, sáu trường chung cộng năm lớp × bốn trường:
+
+```
+nha · truong · xaHoi      ba bối cảnh GITA hoá
+thoiQuen                  thói quen mô thức này dựng nên
+di                        nhóm trong tầm nhìn trăm năm (TANG100)
+tuLieu                    tài liệu bổ trợ
+
+c.C1…c.C5 × { lam · chua · viec · len }
+```
+
+**Vì sao ba bối cảnh là bắt buộc.** Đích đặt ra là GITA hoá vào gia đình,
+vào việc học ở trường, và vào ứng dụng xã hội. Một mô thức chỉ dùng được
+trong buổi coach thì nó là kỹ thuật nghề, không phải mô thức sống. Bắt
+mỗi mô thức nói được cả ba bối cảnh là cách duy nhất để cái đích ấy không
+dừng ở một câu khẩu hiệu.
+
+**Vì sao `chua` là bắt buộc.** Thang năng lực nào cũng có phần "cấp này
+chưa làm được gì", và phần này hay bị bỏ vì nó không đẹp. Bỏ nó thì người
+ở C2 tưởng mình đã C4, nhận ca quá tầm, và gia đình trả giá. Kể cả C5
+cũng phải có `chua` — nói ra chỗ mình chưa làm được là điều giữ cho một
+hệ thống trung thực.
+
+### Luật đo được, không phải luật treo tường
+
+Luật "năm lớp phải THẬT SỰ khác nhau" chỉ có nghĩa khi đo được, nên
+`G.sauLopKhacNhau()` chạy hai phép:
+
+- hai lớp bất kỳ của cùng một mô thức không được có phần `lam` trùng nhau
+  — trùng nghĩa là viết dài hơn chứ không sâu hơn;
+- không trường nào dưới 40 ký tự — ngưỡng dùng chung với chuẩn câu mở
+  trong kho kịch bản.
+
+`G.sauDoPhu()` đếm độ phủ và **màn hình hiện cả phần chưa viết**. Một
+bảng chỉ khoe phần đã xong thì không điều hành được.
+
+Hiện trạng: **42/42 mô thức · 210 lớp · 1.092 trường**, không trường nào
+trống, không câu nào dưới 40 ký tự, không hai lớp nào của cùng một mô
+thức làm được cùng một việc.
+
+### Viết tiếp cho kho khác
+
+Phác đồ (220), tình huống (250) và ma trận (220×5) chưa có chiều sâu.
+Khi viết, giữ nguyên hợp đồng: cùng sáu trường chung, cùng năm lớp bốn
+trường. Cùng hình dạng thì một phép đo dùng được cho mọi kho, và màn
+`chieu-sau` chỉ cần thêm một bảng chứ không phải dựng lại.
+
+### Chiều sâu là kho NGHỀ
+
+`MT_SAU` và `SAU_*` nằm ở gói `nghe`, không vào gói mẫu công khai. Đây là
+bản đồ năng lực nội bộ: nó nói rõ ở cấp nào thì Học viện làm được gì và
+chưa làm được gì. Mở ra công khai là chỉ cho đối thủ đúng cách dựng đội
+ngũ.
+
 ## Bốn tuyến chuyên môn — đường ghép, dựng trước khi cần
 
 Học viện chạy thêm bốn tuyến: **ENGWIN365 · MATH365 · SAT365 · HSA365**.

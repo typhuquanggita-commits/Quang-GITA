@@ -223,6 +223,7 @@ G.ITEM_EN = {
   'tai-lieu-goc':['Academy source documents','5 sets · 161 tables · 1,647 data rows'],
   'nhan-dien-loi':['Voice and wording guide','How GITA speaks · 10 signs of machine-written prose'],
   'so-tay-nhan-dien':['GITA identity handbook','7 written chapters · read here, no download'],
+  'chieu-sau':['Five layers of depth','One model, five practice levels, five different things you can do'],
   'nhan-dien':['GITA brand identity','Logo · three colours · type · usage rules'],
   'van-dung':['Five levels of application','Depth of craft · tier limits · reporting'],
   'xu-ly-ca':['Case handling process','7 steps · evidence required · 4 constraints'],

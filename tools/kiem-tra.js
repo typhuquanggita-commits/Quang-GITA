@@ -2844,6 +2844,24 @@ const { chromium } = require(PW);
       (thieuSw.length ? 'sw thiếu: ' + thieuSw.join(' ') + ' ' : '') +
       (thuaSw.length ? 'sw thừa: ' + thuaSw.join(' ') : '') || dsIdx.length + ' tệp, khớp cả hai bên');
 
+    /* ── Bốn trụ GITA giữ đủ thành tố của bản chuẩn ──
+       Danh sách thành tố dài có chủ ý: nó là thứ phân biệt mô thức này
+       với bốn chữ cái viết tắt của nơi khác. Một lần "dọn cho gọn giao
+       diện" là mất luôn phần làm nên khác biệt, và mất trong im lặng vì
+       màn hình vẫn đẹp. Ngưỡng đặt theo bản chủ Học viện đưa. */
+    const tru = await p.evaluate(() => (window.G.GITA || []).map(g => ({
+      k: g.k, so: (g.inc || []).length, ten: g.name, mo: (g.desc || '').length })));
+    const canCo = { G: 6, I: 8, T: 9, A: 12 };
+    const hut = tru.filter(t => t.so < (canCo[t.k] || 0))
+      .map(t => t.k + ' ' + t.so + '/' + canCo[t.k]);
+    bao(tru.length === 4, 'đủ bốn trụ G · I · T · A', tru.map(t => t.k).join(''));
+    bao(!hut.length,
+      'bốn trụ giữ đủ thành tố của bản chuẩn — không trụ nào bị rút gọn cho vừa giao diện',
+      hut.length ? hut.join(' · ') : tru.reduce((a, t) => a + t.so, 0) + ' thành tố');
+    bao(tru.every(t => t.mo >= 60),
+      'trụ nào cũng có câu hỏi chẩn đoán đủ dài để dùng thật',
+      tru.map(t => t.k + ':' + t.mo).join(' '));
+
     /* ── Số bản phải nhích khi phát hành ── */
     const banMeta = (doc('src/data.core.js').match(/version:\s*'([^']+)'/) || [])[1];
     const banSw = (doc('sw.js').match(/CACHE = 'gita365-v([\d-]+)'/) || [])[1];

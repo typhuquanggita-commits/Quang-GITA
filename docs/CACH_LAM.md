@@ -272,6 +272,23 @@ cấp phép và khoá riêng.
 
 ---
 
+## Chiều sâu năm lớp
+
+Mỗi mô thức có năm lớp C1 → C5: cùng một công cụ, năm cấp nghề **làm
+được năm việc khác nhau**. Xem ở màn **Chiều sâu năm lớp** (từ Tư vấn trở
+lên).
+
+Mỗi lớp trả lời bốn câu — làm được gì · chưa làm được gì · việc thực hành
+· dấu hiệu lên cấp — và mỗi mô thức thêm sáu câu chung: ba bối cảnh GITA
+hoá (nhà · trường · xã hội), thói quen nó dựng nên, nhóm trong tầm nhìn
+trăm năm, và tài liệu bổ trợ.
+
+Viết tiếp thì giữ nguyên hình dạng ấy. Màn hình tự đếm độ phủ và tự bắt
+hai lỗi: hai lớp làm được cùng một việc (là chữ, không phải tầng), và câu
+dưới 40 ký tự.
+
+---
+
 ## Bốn tuyến chuyên môn
 
 ENGWIN365 · MATH365 · SAT365 · HSA365 dùng chung năm tầng của GITA365,
