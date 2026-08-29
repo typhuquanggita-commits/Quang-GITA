@@ -22,6 +22,8 @@ import {Grading} from './components/engwill/Grading';
 import {Studio} from './components/engwill/Studio';
 import {Podcast} from './components/engwill/Podcast';
 import {Brand} from './components/engwill/Brand';
+import {Sprint} from './components/engwill/Sprint';
+import {Casting} from './components/engwill/Casting';
 
 interface Nav {
   id: string;
@@ -53,6 +55,14 @@ const NAV: Nav[] = [
     hint: 'Cá nhân hoá — 13 câu',
     group: 'learner',
     render: () => <MyPlan />,
+  },
+  {
+    id: 'sprint',
+    icon: '⚡',
+    label: 'Chu kỳ 21·90',
+    hint: 'Lớp tăng tốc · 6 khối/ngày',
+    group: 'learner',
+    render: () => <Sprint />,
   },
   {
     id: 'overview',
@@ -167,6 +177,14 @@ const NAV: Nav[] = [
     render: () => <Podcast />,
   },
   {
+    id: 'casting',
+    icon: '🎚',
+    label: 'Dàn giọng',
+    hint: '10 giọng · 2 chuẩn phát âm',
+    group: 'academy',
+    render: () => <Casting />,
+  },
+  {
     id: 'brand',
     icon: '◈',
     label: 'Nhận diện',
@@ -204,19 +222,19 @@ export const App: React.FC = () => {
                 setMenuOpen(false);
                 window.scrollTo({top: 0});
               }}
-              className={`flex w-full items-center gap-2.5 rounded-lg px-3 py-1.5 text-left transition ${
+              className={`flex w-full items-center gap-2.5 rounded-lg px-2.5 py-1 text-left transition ${
                 tab === n.id
                   ? g === 'academy'
                     ? 'bg-emerald-500/10 text-emerald-300 ring-1 ring-inset ring-emerald-500/30'
                     : 'bg-sky-500/10 text-sky-300 ring-1 ring-inset ring-sky-500/30'
                   : 'text-slate-400 hover:bg-slate-800/60 hover:text-slate-200'
               }`}>
-              <span className="w-5 shrink-0 text-center text-base">{n.icon}</span>
+              <span className="w-4 shrink-0 text-center text-sm">{n.icon}</span>
               <span className="min-w-0">
-                <span className="block truncate text-sm font-medium">
+                <span className="block truncate text-[13px] font-medium leading-tight">
                   {n.label}
                 </span>
-                <span className="block truncate text-[11px] text-slate-600">
+                <span className="block truncate text-[10px] leading-tight text-slate-600">
                   {n.hint}
                 </span>
               </span>

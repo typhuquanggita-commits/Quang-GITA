@@ -8,6 +8,44 @@ Một ứng dụng web trình bày trọn vẹn một hệ thống học tiếng
 mốc, thư viện phương pháp đã kiểm chứng, chuỗi bài giảng, bài luyện hằng ngày, bí kíp,
 kiến trúc thói quen, lập trình tư duy, hệ thống câu lạc bộ và cơ chế kiểm định.
 
+## ⚡ Chu kỳ tăng tốc 21 · 90 ngày
+
+Lớp tăng tốc đặt **lên trên** lộ trình 36 tháng, không thay thế nó. Bốn vòng 21 ngày
+cộng 6 ngày hợp nhất thành 90 ngày. Mỗi vòng chỉ tấn công **một** kỹ năng hẹp:
+
+| Vòng | Ngày | Hứa | Cổng thoát |
+|------|------|-----|------------|
+| MỞ TAI | 1–21 | Tai tách được ranh giới từ | Chép chính tả 45s đạt >85% |
+| BẬT PHẢN XẠ | 22–42 | 40 tình huống dưới 1,5 giây | Độ trễ trung bình <1,5s |
+| DÀI HƠI | 43–63 | Nói 2 phút không sập câu | <3 từ đệm/phút |
+| RA THẾ GIỚI | 64–84 | 21 nhiệm vụ thật | ≥7 nhiệm vụ với người lạ |
+
+**Một ngày = 6 khối, 89 phút**, giãn cách từ lúc mở mắt tới trước khi ngủ: MỒI 3′ →
+NẠP 20′ (lúc đi lại) → PHẢN XẠ 7′ (trưa, app đo độ trễ) → NHIỆM VỤ 5′ → ĐẦU RA 10′ →
+GIEO ĐÊM 4′. Ba câu mục tiêu của ngày xuất hiện ở cả sáu khối.
+
+> **Về "học bằng tiềm thức":** nghe khi ngủ đã bị bác bỏ — não không mã hoá ngôn ngữ
+> mới trong giấc ngủ sâu. Hệ thống xây trên **năm cơ chế có bằng chứng** tạo ra đúng
+> trải nghiệm "ngấm mà không phải cố": học ngầm theo thống kê · mồi ngữ cảnh · tự động
+> hoá truy xuất · củng cố trong giấc ngủ (ôn *trước* khi ngủ) · giãn cách trong ngày.
+> Tab Chu kỳ ghi rõ ba tuyên bố phổ biến bị loại bỏ và lý do.
+
+## 🎚 Dàn 10 giọng & hai chuẩn phát âm
+
+Tuyển từ **904 giọng** bằng bộ sàng lọc âm học rồi mới nghe để chốt:
+
+```bash
+python3 tools/cast_voices.py --scan 140 --reel   # → audio/casting/audition-10-giong-anh.mp3
+```
+
+Sàng theo tần số cơ bản (nam 110–140Hz, nữ 190–215Hz — vùng giọng 20–28 tuổi), độ sáng
+phổ (~1.700Hz, phụ âm rõ), biến thiên cao độ (~26, dẫn sinh động), dải động (~17dB).
+
+Kèm **chuẩn chất giọng MC bản tin** (tốc độ, cao độ, năng lượng, độ rõ, thái độ, nhịp
+nghỉ — mỗi mục có câu chỉ đạo cho người đọc) và **bảng đối chiếu Anh–Anh / Anh–Mỹ**
+8 đặc điểm: rhoticity, nhóm BATH, /t/ chớp, nhóm LOT, yod-dropping, trọng âm, ngữ điệu,
+từ vựng — mỗi đặc điểm ghi rõ dạy ở cấp độ nào và vì sao quan trọng.
+
 ## Tầng vận hành học viện
 
 Bốn tab dành cho người **triển khai** hệ thống cho học viên, tách khỏi phần dành cho người học:
@@ -204,6 +242,8 @@ data/                  Toàn bộ nội dung hệ thống, tách khỏi giao di�
   production.ts        11 bản thiết kế sản xuất học liệu + trình tự triển khai
   podcast.ts           Engwill Radio — 5 định dạng, 6 tập, cấu hình pipeline
   brand.ts             Hệ thống nhận diện — màu, chữ, khoảng cách, luật logo
+  sprint.ts            Chu kỳ 21/90 ngày + 5 cơ chế học có bằng chứng
+  voices.ts            Dàn 10 giọng · chuẩn MC · đối chiếu Anh-Anh/Anh-Mỹ
 
 content/
   podcast-scripts.json Kịch bản podcast — nguồn dùng chung cho app và công cụ dựng
@@ -213,6 +253,7 @@ tools/
   piper_batch.py       Sinh giọng theo lô — nạp mỗi model một lần, nhanh gấp 6
   fetch-voices.sh      Tải model giọng Piper
   make-brand.mjs       Dựng 59 ấn phẩm nhận diện (SVG + PNG) từ dữ liệu
+  cast_voices.py       Sàng lọc giọng bằng âm học + dựng băng audition
 
 brand/                 Ấn phẩm — SVG có commit, PNG dựng lại được
 

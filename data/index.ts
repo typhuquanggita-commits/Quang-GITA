@@ -20,3 +20,5 @@ export * from './feedback';
 export * from './production';
 export * from './podcast';
 export * from './brand';
+export * from './sprint';
+export * from './voices';

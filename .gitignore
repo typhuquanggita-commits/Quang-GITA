@@ -30,3 +30,6 @@ audio/.tmp/
 
 # Ấn phẩm PNG dựng ra từ SVG — chạy lại: node tools/make-brand.mjs
 brand/**/*.png
+
+# Băng audition dựng lại được: python3 tools/cast_voices.py --scan 140 --reel
+audio/casting/

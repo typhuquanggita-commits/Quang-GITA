@@ -569,3 +569,70 @@ export interface ProductionSpec {
   specs: string[];
   reusableAssets: string;
 }
+
+/* ==========================================================================
+   CHU KỲ TỐC ĐỘ 21/90 NGÀY · DÀN GIỌNG · CHUẨN PHÁT ÂM ANH–ANH / ANH–MỸ
+   ========================================================================== */
+
+export interface SprintCycle {
+  id: string;
+  no: number;
+  name: string;
+  days: string;
+  promise: string;
+  focus: string;
+  dailyMinutes: number;
+  mechanism: string;
+  exitTest: string;
+}
+
+export interface SprintDay {
+  slot: string;
+  clock: string;
+  name: string;
+  minutes: number;
+  what: string;
+  mechanism: string;
+  appAction: string;
+}
+
+export interface LearningMechanism {
+  id: string;
+  name: string;
+  claim: string;
+  evidence: string;
+  howWeUse: string;
+  notThis: string;
+}
+
+export interface VoiceProfile {
+  id: string;
+  no: number;
+  stageName: string;
+  gender: 'nam' | 'nữ';
+  accent: 'Anh–Mỹ' | 'Anh–Anh' | 'Tiếng Việt';
+  age: string;
+  character: string;
+  bestFor: string;
+  model: string;
+  speaker: number;
+  measured?: {f0: number; centroid: number; variation: number};
+}
+
+export interface DeliverySpec {
+  id: string;
+  aspect: string;
+  target: string;
+  why: string;
+  howToDirect: string;
+}
+
+export interface AccentContrast {
+  id: string;
+  feature: string;
+  gb: string;
+  us: string;
+  example: string;
+  teachAt: string;
+  matters: string;
+}
