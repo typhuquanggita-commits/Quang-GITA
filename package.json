@@ -14,7 +14,8 @@
     "test:desktop": "npm run build && xvfb-run -a electron --no-sandbox desktop/smoke.cjs",
     "test": "npm run test:vault && npm run test:desktop",
     "test:web": "node tools/kiem-ban-web.mjs",
-    "audit": "npx tsc --noEmit && npm run build && python3 tools/kiem-tham-chieu.py && python3 tools/kiem-chinh-ta.py"
+    "audit": "npx tsc --noEmit && npm run build && python3 tools/kiem-tham-chieu.py && python3 tools/kiem-chinh-ta.py",
+    "test:voice": "python3 tools/khop-giong.test.py"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",

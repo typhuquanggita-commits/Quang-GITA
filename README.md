@@ -30,6 +30,37 @@ GIEO ĐÊM 4′. Ba câu mục tiêu của ngày xuất hiện ở cả sáu kh�
 > hoá truy xuất · củng cố trong giấc ngủ (ôn *trước* khi ngủ) · giãn cách trong ngày.
 > Tab Chu kỳ ghi rõ ba tuyên bố phổ biến bị loại bỏ và lý do.
 
+## 🎚 Khớp giọng mẫu
+
+Có một giọng thật mà bạn muốn dàn giọng nghe giống? Đưa file audio vào:
+
+```bash
+python3 tools/khop-giong.py mau-giong-nu.mp3 --gioi nu
+python3 tools/khop-giong.py mau-nam.m4a --gioi nam --tu 0:03 --den 0:18
+```
+
+Công cụ đo giọng mẫu rồi xếp hạng dàn giọng theo độ gần, và nói rõ khi hạng
+nhất với hạng nhì sát nhau tới mức số đo không tách được.
+
+**Cách làm, và một kết quả phản trực giác.** Bản đầu dùng ba con số — cao độ,
+độ sáng phổ, biến thiên cao độ — và chỉ đúng **3/10**, gần bằng đoán mò (2/10).
+Lý do đo được: cho cùng một người nói năm câu khác nhau, cao độ trung vị xê
+dịch tới 27–42 Hz, trong khi cả năm giọng nữ của dàn chỉ nằm trong 20 Hz —
+nhiễu lớn hơn tín hiệu.
+
+Bản hiện tại dùng **MFCC**, mô tả hình dạng bao phổ tức là các cộng hưởng riêng
+của khoang miệng và thanh quản từng người. Đo lại trên đúng phép thử cũ:
+**10/10 đúng hạng nhất** (9/10 với một câu thử khác). Cao độ vẫn dùng, nhưng
+đúng việc của nó: tách nam/nữ, không xếp hạng trong cùng một giới.
+
+```bash
+python3 tools/khop-giong.test.py    # tự đo lại độ chính xác
+```
+
+> Công cụ khớp **chất giọng**, không khớp **giọng vùng miền** hay ngữ điệu. Nó
+> không biết một giọng có chuẩn Hà Nội hay không, cũng không biết chuẩn Anh-Anh
+> hay Anh-Mỹ. Kết quả là danh sách rút gọn để bạn nghe, không phải phán quyết.
+
 ## 🎚 Dàn 10 giọng & hai chuẩn phát âm
 
 Tuyển từ **904 giọng** bằng bộ sàng lọc âm học rồi mới nghe để chốt:
@@ -357,6 +388,9 @@ tools/
   kiem-tham-chieu.py   Soi tham chiếu chéo giữa các tệp dữ liệu
   kiem-chinh-ta.py     Soi chính tả tiếng Việt trên toàn bộ văn xuôi
   kiem-ban-web.mjs     Kiểm tra bản web đã dựng bằng trình duyệt thật
+  dac_trung_giong.py   Trích MFCC — đặc trưng nhận dạng giọng nói
+  khop-giong.py        Khớp một giọng mẫu có thật với dàn 10 giọng
+  khop-giong.test.py   Đo độ chính xác của công cụ khớp giọng
 
 desktop/               Bản máy tính (Electron)
   main.cjs             Tiến trình chính — cách ly, CSP, giao thức app://, 9 kênh IPC
