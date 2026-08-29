@@ -183,6 +183,7 @@ G.ITEM_EN = {
   'hoso-vip':['VIP & VVIP profile standard','7 sections · 30 fields · thirty seconds'],
   'ai-cham':['Automated care assistant','16 background rules · clear limits'],
   'ma-tran':['220-problem matrix × 5 tiers','11 groups · 8 deep columns per tier'],
+  'ma-tran-bang':['Matrix × 4 customer bands','GREEN · AMBER · ORANGE · RED within each tier'],
   'referral':['Referral trigger sheet','5 portraits · 12 signals · PAIN GOAL GAP'],
   'chan-dung-kh':['Six customer portraits','Read the family right, send the right path'],
   'do-luong-kh':['Customer measurement system','7 metrics · 6 cadences · improvement loop'],

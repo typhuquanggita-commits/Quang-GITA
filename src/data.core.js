@@ -367,6 +367,7 @@ G.NAV = [
     {v:'phuong-phap', t:'Xương sống phương pháp',       h:'42 mô thức GITA · 6 nhịp ngôn ngữ',  ic:'brain', star:1, perm:'nghe_chung', capMo:'nghe'},
     {v:'van-tay',     t:'Sinh trắc học vân tay',        h:'Quan điểm thống nhất của GITA',      ic:'shield', perm:'nghe_chung', capMo:'nghe'},
     {v:'ma-tran',     t:'Ma trận 220 vấn đề × 5 tầng', h:'11 nhóm · 8 cột sâu mỗi tầng',       ic:'map', star:1, perm:'nghe_chung', capMo:'nghe'},
+    {v:'ma-tran-bang',t:'Ma trận × 4 nhóm khách hàng',  h:'XANH · VÀNG · CAM · ĐỎ trong mỗi tầng', ic:'orbit', star:1, perm:'nghe_chung', capMo:'nghe'},
     {v:'tinh-huong',  t:'250 tình huống thực chiến',   h:'Mã Key · thử thách 7 ngày · KPI',    ic:'target', perm:'nghe_chung', capMo:'nghe'},
     {v:'mo-thuc',     t:'25 mô thức huấn luyện',       h:'Bộ công cụ gốc của người sáng lập',  ic:'brain', perm:'nghe_chung', capMo:'nghe'},
     {v:'tu-duy',      t:'Hệ tư duy mới',               h:'14 bài học đổi cách nhìn trong nhà', ic:'lightning', perm:'nghe_chung', capMo:'nghe'},

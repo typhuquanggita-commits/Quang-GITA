@@ -2363,6 +2363,146 @@ const { chromium } = require(PW);
     bao(doc.moc >= 1, 'dấu đã đọc đi lên đường đồng bộ theo tài khoản', doc.moc + ' mốc');
   }
 
+
+  /* ── 31. MA TRẬN 220 × 5 TẦNG × 4 NHÓM KHÁCH HÀNG ── */
+  console.log('\n31 · MA TRẬN × BỐN NHÓM KHÁCH HÀNG');
+  if (!coKhoa) {
+    console.log('  (bỏ qua — cần bộ khoá để mở gói nền)');
+  } else {
+    const mb = await p.evaluate(() => {
+      const G = window.G;
+      if (!G.MT_BANG) return { co: false };
+      const van = (G.MATRAN && G.MATRAN.vande) || [];
+      const tang = ['T1','T2','T3','T4','T5'].filter(t => (G['MATRAN_' + t] || []).length);
+      let du = 0; const thieu = [];
+      van.forEach(v => tang.forEach(t => G.MT_BANG_MA.forEach(b => {
+        const x = G.mtPhieu(v.ma, t, b);
+        if (x && x.do && x.oTang && x.oNhom && x.nguong) du++;
+        else thieu.push(v.ma + '/' + t + '/' + b);
+      })));
+      /* Mỗi vấn đề phải có chỉ số riêng — không được dùng chung một chỉ số */
+      const dv = {}; (G.MT_DO || []).forEach(d => { dv[d.ma] = (d.cach || '').trim(); });
+      const trung = {};
+      Object.keys(dv).forEach(k => { trung[dv[k]] = (trung[dv[k]] || 0) + 1; });
+      const cachTrung = Object.keys(trung).filter(k => trung[k] > 1).length;
+      /* Trần việc giao phải giảm dần từ XANH xuống ĐỎ ở mọi tầng */
+      let tranSai = 0;
+      tang.forEach(t => {
+        const v4 = G.MT_BANG_MA.map(b => G.mtTran(t, b));
+        for (let i = 1; i < v4.length; i++) if (!(v4[i] <= v4[i - 1])) tranSai++;
+      });
+      return { co: true, du, thieu: thieu.length, viDu: thieu.slice(0, 3).join(' '),
+        soDo: (G.MT_DO || []).length, soO: (G.MT_BANG_TANG || []).length,
+        soNhomO: (G.MT_BANG_NHOM || []).length, cachTrung, tranSai,
+        soTang: tang.length,
+        /* Mọi mã trong MT_DO phải là mã có thật trong ma trận, và ngược lại */
+        lechMa: (G.MT_DO || []).filter(d => !van.some(v => v.ma === d.ma)).length +
+                van.filter(v => !(G.MT_DO || []).some(d => d.ma === v.ma)).length };
+    });
+    bao(mb.co, 'lớp bốn băng nạp được từ gói nền');
+    if (mb.co) {
+      bao(mb.soDo === 220, 'đủ 220 chỉ số riêng, mỗi vấn đề một chỉ số', mb.soDo + '');
+      bao(mb.lechMa === 0, 'mã chỉ số khớp đúng 220 mã vấn đề của ma trận', mb.lechMa + ' lệch');
+      bao(mb.soO === mb.soTang * 4 || mb.soO === 20, 'đủ 5 tầng × 4 băng = 20 ô', mb.soO + '');
+      bao(mb.soNhomO === 44, 'đủ 11 nhóm × 4 băng = 44 ô', mb.soNhomO + '');
+      bao(mb.thieu === 0, 'ghép đủ ' + (220 * mb.soTang * 4) + ' phiếu, không phiếu nào thiếu lớp',
+        mb.thieu ? mb.viDu : mb.du + ' phiếu');
+      bao(mb.cachTrung === 0,
+        'không vấn đề nào dùng chung cách đo với vấn đề khác — nếu trùng thì bốn nghìn phiếu chỉ khác nhau ở cái nhãn màu',
+        mb.cachTrung + ' cách đo bị dùng lại');
+      bao(mb.tranSai === 0, 'trần việc giao giảm dần từ XANH xuống ĐỎ ở mọi tầng', mb.tranSai + ' chỗ sai');
+    }
+
+    /* Xếp băng phải chạy bằng số, và học viên/phụ huynh không được vào màn này */
+    const xep = await p.evaluate(() => {
+      const G = window.G;
+      return { day: [G.mtXepBang(95, 20, 0), G.mtXepBang(70, 9, 0),
+                     G.mtXepBang(50, 4, 0), G.mtXepBang(20, 1, 2)].join('/'),
+               trot: G.mtXepBang(95, 20, 2) };
+    });
+    bao(xep.day === 'XANH/VANG/CAM/DO', 'xếp băng bằng số cho đúng bốn mức', xep.day);
+    bao(xep.trot === 'DO', 'trượt cổng hai lần là xuống ĐỎ dù dữ liệu và nhịp đều đẹp', xep.trot);
+  }
+
+  /* ── 32. REFERRAL ĐẦY ĐỦ · SÁU CHÂN DUNG · KHO TƯ LIỆU ── */
+  console.log('\n32 · REFERRAL · CHÂN DUNG · KHO TƯ LIỆU');
+  if (!coKhoa) {
+    console.log('  (bỏ qua — cần bộ khoá để mở gói nghề)');
+  } else {
+    /* Các mục trước có đăng nhập bằng nhiều vai khác nhau. Gói NGHỀ chỉ nạp
+       cho vai được cấp phép, nên phải đăng nhập lại vai cao nhất trước khi đo
+       — không thì mọi phép đếm đều ra 0 và mọi phép lọc đều "đạt" một cách
+       rỗng tuếch. */
+    await p.evaluate(() => window.G.doLogin('superadmin@gita365.vn'));
+    await p.waitForTimeout(2000);
+    const kt = await p.evaluate(() => {
+      const G = window.G;
+      const van = {}; ((G.MATRAN && G.MATRAN.vande) || []).forEach(v => { van[v.ma] = 1; });
+      const nhom = {}; ((G.MATRAN && G.MATRAN.nhom) || []).forEach(n => { nhom[n.ma] = 1; });
+      const maSai = [];
+      (G.CD_BO || []).forEach(x => {
+        x.vanDe.forEach(m => { if (!van[m]) maSai.push(x.ma + ':' + m); });
+        x.nhom.forEach(m => { if (!nhom[m]) maSai.push(x.ma + ' nhóm ' + m); });
+      });
+      const cdThieu = (G.CHANDUNG_KH || []).filter(g => !(G.CD_BO || []).some(x => x.ma === g.ma)).map(g => g.ma);
+      const tongDiem = (G.REF_CHAM || []).reduce((a, c) => a + c.diem, 0);
+      return {
+        ref30: (G.REF_30S || []).length, gains: (G.REF_GAINS_GITA || []).length,
+        m121: (G.REF_121 || []).length, tt: (G.REF_TRANGTHAI || []).length,
+        khong: (G.REF_KHONG || []).length, hoi: (G.REF_HOI || []).length,
+        tongDiem, cd: (G.CD_BO || []).length, cdThieu: cdThieu.join(' '), maSai: maSai.join(' '),
+        ke: (G.TL_KE || []).length, duong: (G.TL_DUONG || []).length,
+        luat: (G.TL_LUAT || []).length,
+        /* Mỗi chặng đọc phải có việc làm sau khi đọc — đọc suông không tính */
+        changRong: (G.TL_DUONG || []).reduce((a, d) =>
+          a + d.chang.filter(c => !c.lam || !c.xong).length, 0),
+        /* Mỗi chân dung phải đủ bộ làm việc */
+        boThieu: (G.CD_BO || []).filter(x =>
+          x.ba.length < 3 || x.hoi.length < 5 || x.gui.length < 4 || x.roi.length < 3 ||
+          !x.kpi30 || !x.kpi90 || !x.cam || !x.tien || !x.len || !x.nguoi).map(x => x.ma).join(' ')
+      };
+    });
+    bao(kt.ref30 === 3, 'ba bản ba mươi giây', kt.ref30 + '');
+    bao(kt.gains === 6, 'bảng GAINS của GITA đủ sáu ô', kt.gains + '');
+    bao(kt.m121 === 6, 'buổi 1–1 đủ sáu chặng', kt.m121 + '');
+    bao(kt.tongDiem === 100, 'thang chấm lời giới thiệu cộng đúng 100 điểm', kt.tongDiem + '');
+    bao(kt.tt === 7, 'bảy trạng thái của một Ref', kt.tt + '');
+    bao(kt.khong === 10 && kt.hoi === 12, 'mười điều cấm và mười hai câu khó',
+      kt.khong + ' · ' + kt.hoi);
+    bao(kt.cd === 6, 'sáu chân dung đều có bộ làm việc', kt.cd + '');
+    /* Ba phép dưới đây là phép LỌC: kho rỗng thì lọc ra cũng rỗng và trông
+       như đã đạt. Nên phải kèm điều kiện kho đã nạp, không thì là đạt rỗng. */
+    bao(kt.cd === 6 && !kt.cdThieu, 'không chân dung nào trong danh sách gốc bị bỏ sót', kt.cdThieu);
+    bao(kt.cd === 6 && !kt.boThieu, 'bộ làm việc nào cũng đủ ba buổi, năm câu chối, KPI, điều cấm và khung tiền', kt.boThieu);
+    bao(kt.cd === 6 && !kt.maSai, 'mã vấn đề và mã nhóm trong chân dung đều có thật trong ma trận', kt.maSai);
+    bao(kt.ke === 6 && kt.duong === 6, 'sáu kệ tư liệu và sáu lộ trình đọc',
+      kt.ke + ' · ' + kt.duong);
+    bao(kt.luat === 7, 'bảy luật giữ kho', kt.luat + '');
+    bao(kt.duong === 6 && kt.changRong === 0,
+      'chặng đọc nào cũng có việc làm sau khi đọc và mốc xong — đọc suông không tính là đã đọc',
+      kt.changRong + ' chặng rỗng');
+
+    /* Ba màn hình được nối dài vẫn phải giữ nguyên cổng phân quyền */
+    const cong = await p.evaluate(async () => {
+      const G = window.G, ra = {};
+      for (const em of ['hocvien@gita365.vn', 'phuhuynh@gita365.vn']) {
+        G.doLogin(em);
+        await new Promise(r => setTimeout(r, 1200));
+        ra[em] = ['referral', 'chan-dung-kh', 'ma-tran-bang'].map(v => {
+          let x; try { x = G.VIEWS[v](); } catch (e) { x = 'LOI'; }
+          return (typeof x === 'string' &&
+            x.trim().indexOf('<div class="card center" style="padding:40px">') === 0) ? 1 : 0;
+        }).reduce((a, b) => a + b, 0);
+      }
+      G.doLogin('superadmin@gita365.vn');
+      await new Promise(r => setTimeout(r, 1800));
+      return ra;
+    });
+    bao(cong['hocvien@gita365.vn'] === 3 && cong['phuhuynh@gita365.vn'] === 3,
+      'nối dài màn hình không mở thêm cửa: học viên và phụ huynh vẫn bị khoá cả ba màn kho nghề',
+      'HV ' + cong['hocvien@gita365.vn'] + '/3 · PH ' + cong['phuhuynh@gita365.vn'] + '/3');
+  }
+
   console.log('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành'));
   await b.close();
   process.exit(loi ? 1 : 0);

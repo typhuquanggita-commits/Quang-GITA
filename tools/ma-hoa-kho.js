@@ -57,7 +57,11 @@ const NEN = ['VANHANH', 'CHUYENDICH', 'CHANDUNG', 'LOTRINH', 'FAMILIES', 'TEAM',
   'KH_LOTRINH', 'KH_BAI', 'KH_LUAT',
   /* Kho chuyện người thật — người có thật, việc có thật, ghi chép công khai.
      Ở gói nền vì mọi vai đều đọc được. */
-  'TG_LINH', 'CHUYEN_TG'];
+  'TG_LINH', 'CHUYEN_TG',
+  /* Lớp băng của ma trận: bốn nhóm khách hàng trong mỗi tầng. Ở gói nền
+     vì bảng định nghĩa băng và luật xếp băng thì vai nào cũng phải đọc
+     được; phần kế hoạch chi tiết vẫn nằm trong gói tầng như cũ. */
+  'MT_BANG', 'MT_BANG_MA', 'MT_BANG_TANG', 'MT_BANG_NHOM', 'MT_DO', 'MT_BANG_LUAT'];
 
 const NGHE = ['MOTHUC', 'SACH', 'BANDO_A3', 'POSTER', 'SODO', 'PHACDO',
   'DIEMCHAM', 'NGONTU', 'NGONTU_TANG', 'THAYVI', 'MAUTHOAI', 'PERSONA',
@@ -70,6 +74,13 @@ const NGHE = ['MOTHUC', 'SACH', 'BANDO_A3', 'POSTER', 'SODO', 'PHACDO',
   'HOSO_VIP', 'CHUYENDOI', 'XUONG_SONG', 'NGUON_VAITRO', 'SACH_THAMKHAO', 'PHUONGPHAP', 'VANTAY', 'AICHAM', 'TAILIEU_GOC', 'TAILIEU_DRIVE', 'SOTAY_NHANDIEN', 'CAPDO_VANDUNG', 'VANDUNG', 'QUYTRINH_XL', 'RANG_BUOC',
   'TN7', 'LOI5', 'REF_CHUAN', 'TRUYENTHONG3', 'BANG_GAINS', 'BANG_REF', 'REF16', 'REF_GIAIDOAN',
   'REF_LOI5', 'CHUOI10', 'BANDAP',
+  /* Phiếu chỉ dẫn referral bản đầy đủ, bộ làm việc sáu chân dung, và lớp
+     tra cứu kho tư liệu. Ở gói NGHỀ vì đây là tài sản chuyên môn: người
+     giới thiệu và đội ngũ dùng, khách hàng không thấy. */
+  'REF_30S', 'REF_GAINS_GITA', 'REF_121', 'REF_CHAM', 'REF_CHAM_MUC', 'REF_TRANGTHAI',
+  'REF_BANGIAO', 'REF_CAMON', 'REF_KHONG', 'REF_HOI', 'REF_KPI', 'REF_LOI',
+  'CD_BO', 'CD_LUAT',
+  'TL_KE', 'TL_DUONG', 'TL_LUAT', 'TL_TRICH', 'TL_BAOQUAN',
   'KHACHLON_NGUON', 'KHACH_TANG', 'NAM_TANG_PHUCVU', 'TAM_NAM_TANG', 'NAC_QUANHE',
   'NAC_TRUNGTHANH', 'TAM_MATXICH', 'HOSO68', 'MUOIHAI_NGUYENTAC', 'NHANTANG',
   'NAM_BUOC_KHIEUNAI', 'GIU124', 'VISAO_ROIDI', 'KHACHLON_CAU', 'LUAT_LAMVIEC'];

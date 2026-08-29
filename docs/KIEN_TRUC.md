@@ -104,3 +104,48 @@ node tools/kiem-tra.js
 ```
 Kiểm toàn vẹn liên kết · phân quyền 19 vai × 56 màn hình · chống tiêm mã ·
 khả năng cài đặt. Chạy trước mỗi lần phát hành.
+
+## Ma trận 220 × 5 tầng × 4 nhóm khách hàng — ghép chứ không lưu
+
+Ba trục nhân với nhau ra **4.400 phiếu làm việc**. Không lưu 4.400 bản ghi:
+lưu bốn lớp rồi ghép lúc hiển thị. Sửa một chuẩn là 4.400 phiếu cùng đúng;
+viết tay 4.400 bản thì sửa một chuẩn phải sửa 4.400 chỗ.
+
+| Lớp | Ở đâu | Bao nhiêu | Giữ gì |
+|---|---|---|---|
+| Kế hoạch theo (vấn đề × tầng) | `kho-goc/data.matran.t1..t5.js` | 1.100 | lộ trình · việc của bốn vai · đích · hồ sơ |
+| Băng làm gì ở tầng nào | `G.MT_BANG_TANG` | 5 × 4 = 20 | giao gì · giữ lại gì · cổng đòi gì · rủi ro |
+| Băng trông thế nào ở nhóm nào | `G.MT_BANG_NHOM` | 11 × 4 = 44 | trông thế nào · làm trước tiên · **khi nào dừng và chuyển tuyến** |
+| Chỉ số riêng từng vấn đề | `G.MT_DO` | 220 × 4 ngưỡng | đơn vị · cách lấy số · ngưỡng XANH/VÀNG/CAM/ĐỎ |
+
+Bốn băng **XANH · VÀNG · CAM · ĐỎ** không phải nhãn mới: hệ thống đã phân
+loại gia đình bằng chúng từ đầu (trường `band` trong `G.FAMILIES`, buồng lái
+Coach, chuẩn NV-CHAM "băng ĐỎ chạm trong 48 giờ"). Băng độc lập với tầng —
+nhà tầng 5 vẫn có thể ở ĐỎ, nhà tầng 1 vẫn có thể ở XANH.
+Không dùng `G.KHACH_TANG` (Bạch kim – Vàng – Thép – Chì) làm trục này vì
+bảng đó ánh xạ thẳng sang tầng: lấy nó làm trục thứ ba là đếm tầng hai lần.
+
+Hàm ghép: `G.mtPhieu(maVấnĐề, tầng, băng)` trong `src/ma-tran-bang.js`.
+Xếp băng bằng số, không bằng cảm nhận: `G.mtXepBang(m1, m2, sốCổngTrượt)`.
+
+## Hàm phải nằm ở `src/`, không nằm ở `kho-goc/`
+
+`tools/ma-hoa-kho.js` đóng gói kho bằng `JSON.stringify` — **JSON bỏ hàm**.
+Hàm định nghĩa trong `kho-goc/*.js` sẽ biến mất sau khi mã hoá và màn hình
+vỡ ngay khi chạy bản có cấp phép, dù bản chưa mã hoá chạy tốt.
+Quy tắc: **dữ liệu ở `kho-goc/`, hàm ở `src/`.**
+
+## Nối dài một màn hình đã có
+
+Muốn làm đầy một màn hình mà không thêm mục vào trình đơn thì bọc hàm cũ
+(xem `src/tu-lieu-day-du.js`). Bắt buộc kiểm thẻ khoá trước khi nối:
+
+```js
+function biKhoa(html){
+  return typeof html !== 'string' ||
+    html.trim().indexOf('<div class="card center" style="padding:40px">') === 0;
+}
+```
+
+Hàm cũ trả về thẻ khoá thì giữ nguyên thẻ khoá — không thì phần nối lọt qua
+cổng phân quyền và mở cửa cho vai không được phép.

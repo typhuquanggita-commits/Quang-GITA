@@ -11,7 +11,7 @@ var KEY = 'gita365.v7';
 G.S = {
   role:null, acc:null, roleObj:null,
   view:'ban-do', open:['g1'], rtab:'labon', rightOpen:true, leftOpen:false,
-  checks:{}, vision:{}, journal:{}, test:{}, bando:{}, nhatky:{}, baithi:{}, thoigian:{}, sathach:{}, khoahoc:{}, famId:'F-001', kbShown:60
+  checks:{}, vision:{}, journal:{}, test:{}, bando:{}, nhatky:{}, baithi:{}, thoigian:{}, sathach:{}, khoahoc:{}, mtb:{}, famId:'F-001', kbShown:60
 };
 function save(){
   try{ localStorage.setItem(KEY, JSON.stringify({
