@@ -16,7 +16,9 @@
     "test:web": "node tools/kiem-ban-web.mjs",
     "audit": "npx tsc --noEmit && npm run build && python3 tools/kiem-tham-chieu.py && python3 tools/kiem-chinh-ta.py",
     "test:voice": "python3 tools/khop-giong.test.py",
-    "test:ui": "node tools/kiem-tuong-tac.mjs"
+    "test:ui": "node tools/kiem-tuong-tac.mjs",
+    "test:training": "npx tsx tools/kiem-dao-tao.ts",
+    "build:single": "SINGLE=1 vite build && node tools/xuat-mot-tep.mjs"
   },
   "devDependencies": {
     "@tailwindcss/browser": "^4.1.10",

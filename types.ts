@@ -729,6 +729,8 @@ export interface TrainingCourse {
   level: string;
   name: string;
   totalHours: number;
+  /** Số tuần của khoá. Nhịp học được SUY RA từ đây và totalHours. */
+  weeks: number;
   cadence: string;
   promise: string;
   modules: TrainingModule[];
@@ -881,4 +883,69 @@ export interface AiStep {
   /** Chỗ bắt buộc con người quyết, AI không được tự quyết. */
   humanGate: string;
   limit: string;
+}
+
+/* ==========================================================================
+   ĐÀO TẠO NÂNG CAO · KÈM CẶP 1-1 · THANG COACH · LỘ TRÌNH XUẤT SẮC
+   ========================================================================== */
+
+/** Một khối trong buổi kèm cặp một kèm một. */
+export interface MentorBlock {
+  slot: string;
+  minutes: number;
+  who: 'học viên nói' | 'cố vấn nói' | 'cả hai';
+  what: string;
+  why: string;
+}
+
+/** Nhịp kèm cặp thay đổi theo chặng — kèm dày lúc đầu, thưa dần về sau. */
+export interface MentorStage {
+  no: number;
+  name: string;
+  when: string;
+  frequency: string;
+  focus: string;
+  handover: string;
+}
+
+/** Một bậc trên thang nghề coach. */
+export interface CoachRung {
+  no: number;
+  name: string;
+  epithet: string;
+  entry: string;
+  caseLoad: string;
+  supervisedHours: number;
+  soloHours: number;
+  mustShow: string[];
+  gate: string;
+  canDo: string;
+  cannotYet: string;
+}
+
+/** Một khoá đào tạo nâng cao cho bậc 4–5. */
+export interface AdvancedCourse {
+  id: string;
+  role: string;
+  level: string;
+  name: string;
+  entry: string;
+  totalHours: number;
+  /** Số tuần của khoá. Nhịp học được SUY RA từ đây và totalHours. */
+  weeks: number;
+  cadence: string;
+  promise: string;
+  modules: TrainingModule[];
+  capstone: string;
+  certification: string;
+}
+
+/** Một khác biệt của lộ trình xuất sắc so với lộ trình chuẩn. */
+export interface ExcellenceShift {
+  no: number;
+  dimension: string;
+  standard: string;
+  excellence: string;
+  why: string;
+  cost: string;
 }

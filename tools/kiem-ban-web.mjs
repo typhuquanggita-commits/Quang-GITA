@@ -35,7 +35,7 @@ await page.goto(BASE, {waitUntil: 'networkidle'});
 await page.waitForTimeout(1200);
 
 const tabs = await page.locator('aside nav button').count();
-ok('mọi thẻ điều hướng đều dựng được', tabs >= 24, `chỉ có ${tabs}`);
+ok('mọi thẻ điều hướng đều dựng được', tabs >= 25, `chỉ có ${tabs}`);
 
 ok('web KHÔNG hiện màn hình mã khoá', (await page.getByText('Đặt mã khoá').count()) === 0);
 

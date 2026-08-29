@@ -23,6 +23,7 @@ const Studio = lazy(() => import('./components/engwill/Studio').then((m) => ({de
 const Podcast = lazy(() => import('./components/engwill/Podcast').then((m) => ({default: m.Podcast})));
 const Brand = lazy(() => import('./components/engwill/Brand').then((m) => ({default: m.Brand})));
 const Sprint = lazy(() => import('./components/engwill/Sprint').then((m) => ({default: m.Sprint})));
+const Training = lazy(() => import('./components/engwill/Training').then((m) => ({default: m.Training})));
 const Assess = lazy(() => import('./components/engwill/Assess').then((m) => ({default: m.Assess})));
 const Dossier = lazy(() => import('./components/engwill/Dossier').then((m) => ({default: m.Dossier})));
 import {Lock} from './components/engwill/Lock';
@@ -228,6 +229,14 @@ const NAV: Nav[] = [
     hint: '59 ấn phẩm sinh tự động',
     group: 'academy',
     render: () => <Brand />,
+  },
+  {
+    id: 'training',
+    icon: '🎓',
+    label: 'Đào tạo nâng cao',
+    hint: 'Kèm 1–1 · thang coach · xuất sắc',
+    group: 'academy',
+    render: () => <Training />,
   },
   {
     id: 'studio',

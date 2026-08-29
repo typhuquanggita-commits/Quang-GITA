@@ -3,6 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 import {GraduationExam, TrainingCourse} from '../types';
+import {nhipHoc} from './nhip';
 
 /* ==========================================================================
    BỘ ĐỀ TỐT NGHIỆP — cuối mỗi vòng 21 ngày và cuối mỗi tầng của tháp học tập
@@ -212,8 +213,9 @@ export const TRAINING_COURSES: TrainingCourse[] = [
     role: 'CỘNG TÁC VIÊN',
     level: 'Bậc 1–2 · Nhập môn tới Sàng lọc',
     name: 'Nói đúng về hệ thống',
-    totalHours: 12,
-    cadence: '4 tuần · 45 phút mỗi ngày trong app',
+    totalHours: 11,
+    weeks: 4,
+    cadence: nhipHoc(11, 4),
     promise:
       'Sau khoá, bạn giới thiệu đúng về GITA365 mà không hứa vượt, và sàng lọc được nhu cầu thật của khách trong 10 phút đầu.',
     modules: [
@@ -234,8 +236,9 @@ export const TRAINING_COURSES: TrainingCourse[] = [
     role: 'TƯ VẤN',
     level: 'Bậc 1–3 · Tập sự tới Kê lộ trình',
     name: 'Tư vấn trung thực và cá nhân hoá',
-    totalHours: 24,
-    cadence: '8 tuần · 45 phút mỗi ngày',
+    totalHours: 20,
+    weeks: 8,
+    cadence: nhipHoc(20, 8),
     promise:
       'Sau khoá, bạn kê được ba lộ trình khác nhau cho ba hồ sơ khác nhau và bảo vệ được từng lựa chọn bằng số liệu giờ học.',
     modules: [
@@ -257,8 +260,9 @@ export const TRAINING_COURSES: TrainingCourse[] = [
     role: 'COACH',
     level: 'Bậc 1–3 · Tập sự tới Chẩn đoán',
     name: 'Đặt câu hỏi thay vì giảng',
-    totalHours: 30,
-    cadence: '10 tuần · 45 phút mỗi ngày',
+    totalHours: 27,
+    weeks: 10,
+    cadence: nhipHoc(27, 10),
     promise:
       'Sau khoá, bạn giữ được tỉ lệ học viên nói trên 70% trong buổi 1-1, và chẩn đoán được nguyên nhân gốc thay vì xử lý triệu chứng.',
     modules: [
@@ -282,8 +286,9 @@ export const TRAINING_COURSES: TrainingCourse[] = [
     role: 'GIÁO VIÊN',
     level: 'Bậc 1–3 · Trợ giảng tới Chấm chuẩn',
     name: 'Dạy đúng vùng và chấm đúng tiêu chí',
-    totalHours: 36,
-    cadence: '12 tuần · 45 phút mỗi ngày',
+    totalHours: 37,
+    weeks: 12,
+    cadence: nhipHoc(37, 12),
     promise:
       'Sau khoá, bạn dạy được theo vùng i+1 của người đang ngồi đó, và chấm Writing lệch dưới 0,5 band so với hội đồng.',
     modules: [

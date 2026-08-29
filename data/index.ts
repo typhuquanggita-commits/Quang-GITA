@@ -24,6 +24,7 @@ export * from './sprint';
 export * from './dossier';
 export * from './assess';
 export * from './solutions';
+export * from './training';
 export * from './voices';
 export * from './certify';
 export * from './exams';

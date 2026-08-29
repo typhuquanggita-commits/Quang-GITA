@@ -323,6 +323,55 @@ Từ     300   3.000   6.800  10.000
 Input    0h    450h  1.080h  1.800h
 ```
 
+## 🎓 Đào tạo nâng cao · kèm cặp 1–1 · thang nghề coach
+
+Bốn khoá nhập môn tạo ra **người làm được việc**. Tầng này tạo ra **người nhân
+bản được năng lực đó sang người khác** — vì một học viện chỉ lớn được bằng tốc
+độ đào tạo người dạy, không phải bằng tốc độ tuyển học viên.
+
+> Không phải ai làm giỏi cũng dạy được. Đây là hai năng lực khác nhau, và hệ
+> thống nói thẳng điều đó thay vì thăng chức cho người giỏi việc rồi để họ thất
+> bại ở vai mới.
+
+**Kèm cặp 1–1.** Sáu mươi phút, sáu khối. Học viên nói **35 phút**, cố vấn nói
+**15 phút** — cố vấn luôn nói ít hơn, và điều đó có bài kiểm tra tự động canh.
+Mỗi buổi chốt đúng **một** điều cần sửa, không bao giờ hai. Nhịp kèm giãn dần
+qua 4 chặng và **có ngày kết thúc**: mục tiêu là học viên không cần cố vấn nữa.
+
+**Thang nghề coach — 5 bậc.** Trợ giảng → Coach tập sự → Coach → Coach dẫn dắt
+→ Chủ nhiệm chuyên môn. Giờ giám sát **tăng rồi giảm về 0** (bậc 1 chỉ ngồi
+xem nên cần ít giám sát hơn bậc 2 là bậc bắt đầu tự dẫn), giờ tự đứng tăng đơn
+điệu. Mỗi bậc ghi rõ **điều chưa được làm**, không chỉ điều được làm. Cổng lên
+bậc 4 đo bằng kết quả của **người khác**: hai coach mình kèm phải lên bậc.
+
+**Bốn khoá nâng cao bậc 4–5** cho CTV, Tư vấn, Coach, Giáo viên. Mọi bài tốt
+nghiệp đều đo bằng kết quả của người khác, không đo bằng bài của chính mình.
+
+## ⭐ Lộ trình xuất sắc
+
+Rút 36 tháng xuống khoảng 24 — nhưng **không phải bằng cách học nhiều giờ hơn**.
+Sáu khác biệt, không cái nào là tăng thời lượng, và mỗi cái đều nêu **cái giá
+phải trả**:
+
+| | Chuẩn | Xuất sắc |
+|---|---|---|
+| Vùng luyện | đúng ~80% | đúng ~60% — sai nhiều hơn quen |
+| Độ trễ phản hồi | 24–48 giờ | vài giây tới vài phút |
+| Nguồn nội dung | học liệu biên soạn | nội dung thật chưa biên tập |
+| Đầu ra | nộp cho coach | công khai, có người thật đọc |
+| Nhịp ôn | lịch cố định | điều chỉnh theo độ trễ đo được |
+| Người đồng hành | cố vấn + CLB | đồng cấp mỗi tuần + người giỏi hơn hẳn mỗi tháng |
+
+**Bốn điều kiện vào, không ngoại lệ** — trong đó có điều kiện *đã từng đứt
+chuỗi và tự kéo mình về*: người chưa từng gãy thì chưa biết mình gãy kiểu gì.
+
+**Bốn lối ra**, và quay về lộ trình chuẩn **không tính là thất bại** — đi hết
+36 tháng vẫn hơn bỏ ở tháng 8.
+
+```bash
+npx tsx tools/kiem-dao-tao.ts   # kiểm mọi con số của tầng đào tạo
+```
+
 ## 📊 Đánh giá định kỳ & kho 1.000 giải pháp
 
 Ba nhịp đo lồng nhau, mỗi nhịp trả lời một câu hỏi khác nhau:
@@ -472,6 +521,8 @@ data/                  Toàn bộ nội dung hệ thống, tách khỏi giao di�
   dossier.ts           Hồ sơ 365 ngày — 4 quý, 16 vòng, sinh bằng hàm thuần
   assess.ts            4 bộ đề định kỳ · 8 luật liêm chính · 6 bậc thưởng · quy trình AI
   solutions.ts         40 triệu chứng → kho 1.000 đơn kê, sinh bằng hàm thuần
+  training.ts          Kèm cặp 1–1 · 5 bậc coach · 4 khoá nâng cao · lộ trình xuất sắc
+  nhip.ts              Suy ra nhịp học từ tổng giờ và số tuần
 
 content/
   podcast-scripts.json Kịch bản podcast — nguồn dùng chung cho app và công cụ dựng
