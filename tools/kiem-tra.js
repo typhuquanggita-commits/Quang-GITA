@@ -2262,6 +2262,107 @@ const { chromium } = require(PW);
     bao(Object.values(vaiKhac).every(v => v.dai > 6000), 'không vai nào mở ra màn sát hạch trống');
   }
 
+  /* ── 30. Kho chuyện người thật ── */
+  console.log('\n30 · KHO CHUYỆN NGƯỜI THẬT');
+  {
+    await p.evaluate(() => { localStorage.clear(); });
+    await p.reload({ waitUntil: 'networkidle' });
+    await p.waitForTimeout(400);
+    await p.evaluate(() => window.G.doLogin('hocvien@gita365.vn'));
+    await p.waitForTimeout(1600);
+
+    const tg = await p.evaluate(() => {
+      const G = window.G, C = G.CHUYEN_TG || [], r = {};
+      r.tong = C.length;
+      r.thieu = C.filter(x => !x.ten || !x.nuoc || !x.nam || !x.viec || !x.kho ||
+        !x.lam || !x.hoc || !x.vd || !x.mach || !x.linh).length;
+      r.trung = C.map(x => x.ma).filter((v, i, a) => a.indexOf(v) !== i);
+      const linh = (G.TG_LINH || []).map(x => x.ma);
+      r.linhLa = [...new Set(C.map(x => x.linh).filter(y => linh.indexOf(y) < 0))];
+      const mach = (G.CH_MACH || []).map(x => x.ma);
+      r.machLa = [...new Set(C.map(x => x.mach).filter(y => mach.indexOf(y) < 0))];
+      r.soLinh = linh.length;
+      r.coVN = C.filter(x => x.linh === 'VN').length;
+      r.coLuu = C.filter(x => x.luu).length;
+      /* Mỗi lĩnh vực phải có người, không lĩnh vực nào trống */
+      r.linhTrong = linh.filter(l => !C.some(x => x.linh === l));
+      const html = G.VIEWS['chuyen-the-gioi']();
+      r.dai = html.length;
+      r.noiRoKhac = html.indexOf('dựng ra để dạy') >= 0 && html.indexOf('người có thật') >= 0;
+      r.hienLuu = html.indexOf('NÓI CHO ĐÚNG') >= 0;
+      r.homNay = !!G.tgHomNay();
+      /* Chọn người của hôm nay phải ổn định trong cùng một ngày */
+      r.onDinh = (G.tgHomNay() || {}).ma === (G.tgHomNay() || {}).ma;
+      return r;
+    });
+    bao(tg.tong >= 70, 'kho có đủ số người', tg.tong + ' người');
+    bao(tg.thieu === 0,
+      'người nào cũng đủ nước · thời kỳ · việc đã làm · chỗ khó · đã làm gì · điều rút ra · việc làm ngay',
+      tg.thieu + ' bản ghi thiếu');
+    bao(!tg.trung.length, 'không mã nào trùng', tg.trung.join(', '));
+    bao(!tg.linhLa.length && !tg.machLa.length, 'không mã lĩnh vực hay mạch lạ',
+      [...tg.linhLa, ...tg.machLa].join(', '));
+    bao(!tg.linhTrong.length, 'sáu lĩnh vực đều có người, không lĩnh vực nào trống',
+      tg.linhTrong.join(', '));
+    bao(tg.coVN >= 15, 'có phần người Việt Nam đủ dày', tg.coVN + ' người');
+    bao(tg.coLuu >= 5,
+      'có ghi chú NÓI CHO ĐÚNG ở những chuyện mà bản kể phổ biến đã bị thổi lên',
+      tg.coLuu + ' chuyện');
+    bao(tg.hienLuu, 'ghi chú thận trọng hiện ra trên màn, không giấu trong dữ liệu');
+    bao(tg.noiRoKhac,
+      'màn nói rõ kho này khác kho 600 chuyện dựng ra thế nào — ngay đầu màn');
+    bao(tg.dai > 8000, 'màn dựng ra nội dung thật', tg.dai + ' ký tự');
+    bao(tg.homNay && tg.onDinh, 'có người của hôm nay, và chọn ổn định trong cùng một ngày');
+
+    /* Lọc thật trên giao diện, và nhánh không có ai khớp phải nói rõ cách gỡ */
+    const loc = await p.evaluate(async () => {
+      const G = window.G;
+      G.S.view = 'chuyen-the-gioi'; G.render();
+      await new Promise(r => setTimeout(r, 150));
+      const nutVN = document.querySelector('[data-tglinh="VN"]');
+      if (!nutVN) return { mo: false };
+      nutVN.click();
+      await new Promise(r => setTimeout(r, 150));
+      const chiVN = G.VIEWS['chuyen-the-gioi']();
+      /* Ghép thêm một mạch hiếm để ép vào nhánh không có ai khớp */
+      const machIt = (G.CH_MACH || []).map(m => m.ma).find(m =>
+        !(G.CHUYEN_TG || []).some(x => x.linh === 'VN' && x.mach === m));
+      let trong = '';
+      if (machIt) {
+        const nutM = document.querySelector('[data-tgmach="' + machIt + '"]');
+        if (nutM) { nutM.click(); await new Promise(r => setTimeout(r, 150)); }
+        trong = G.VIEWS['chuyen-the-gioi']();
+      }
+      return { mo: true,
+        chiVN: chiVN.indexOf('Nguyễn Ngọc Ký') >= 0 || chiVN.indexOf('Ngô Bảo Châu') >= 0,
+        machIt: machIt || '',
+        trongNoiRo: !machIt || trong.indexOf('Bỏ bớt một trong hai bộ lọc') >= 0 };
+    });
+    bao(loc.mo, 'bấm lọc lĩnh vực là lọc thật');
+    bao(loc.chiVN, 'lọc người Việt Nam ra đúng người Việt Nam');
+    bao(loc.trongNoiRo,
+      'lọc ra không còn ai thì màn nói rõ cách gỡ, không để trắng', loc.machIt);
+
+    /* Đánh dấu đã đọc và đi lên đường đồng bộ */
+    const doc = await p.evaluate(async () => {
+      const G = window.G;
+      G.S.view = 'chuyen-the-gioi'; G.render();
+      await new Promise(r => setTimeout(r, 150));
+      const n = document.querySelector('[data-tgdoc]');
+      if (!n) return { co: false };
+      const ma = n.getAttribute('data-tgdoc');
+      n.click();
+      await new Promise(r => setTimeout(r, 200));
+      return { co: true, daDoc: G.tgDaDoc(ma),
+        trenDia: !!(JSON.parse(localStorage.getItem('gita365_tg_da_doc') || '{}'))[ma],
+        moc: Object.keys(JSON.parse(localStorage.getItem('gita365.moc') || '{}'))
+               .filter(k => k.indexOf('tgdoc.') === 0).length };
+    });
+    bao(doc.co && doc.daDoc, 'đánh dấu đã đọc chạy được');
+    bao(doc.trenDia, 'dấu đã đọc ghi xuống đĩa');
+    bao(doc.moc >= 1, 'dấu đã đọc đi lên đường đồng bộ theo tài khoản', doc.moc + ' mốc');
+  }
+
   console.log('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành'));
   await b.close();
   process.exit(loi ? 1 : 0);

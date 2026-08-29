@@ -14,7 +14,7 @@ var KEY_HANG = 'gita365.hangcho';  // hàng chờ khi mất mạng
    này, nhưng chúng không nằm trong danh sách nên mốc bị bỏ ngay ở cửa — sổ
    thư viện và minh chứng nhiệm vụ nằm lại đúng một trình duyệt. Phụ huynh
    nộp minh chứng trên điện thoại, Coach mở máy mình thì không có gì. */
-var NHOM = ['checks', 'journal', 'vision', 'test', 'mood', 'thuvien', 'minhchung', 'bando', 'chuyen', 'nhatky', 'baithi', 'thoigian', 'sathach', 'khoahoc'];
+var NHOM = ['checks', 'journal', 'vision', 'test', 'mood', 'thuvien', 'minhchung', 'bando', 'chuyen', 'nhatky', 'baithi', 'thoigian', 'sathach', 'khoahoc', 'tgdoc'];
 
 /* ─── Nhóm nào lấy dữ liệu ở đâu ───
    Trước đây gomThayDoi luôn đọc G.S[nhom]. Nhưng sổ thư viện nằm ở
@@ -26,6 +26,11 @@ var NGUON = {
   minhchung: {lay:function(){ return G.MINHCHUNG; }, dat:function(v){ if(Array.isArray(v)) G.MINHCHUNG = v; }},
   /* Dấu đã đọc của kho chuyện nằm ở G.CHUYEN_DOC, có kho localStorage riêng
      để đọc được ngay khi mở trang, trước cả lần đồng bộ đầu tiên. */
+  tgdoc:     {lay:function(){ return G.TG_DOC; }, dat:function(v){
+                if(v && typeof v === 'object'){
+                  G.TG_DOC = v;
+                  try{ localStorage.setItem('gita365_tg_da_doc', JSON.stringify(v)); }catch(e){}
+                }}},
   chuyen:    {lay:function(){ return G.CHUYEN_DOC; }, dat:function(v){
                 if(v && typeof v === 'object'){
                   G.CHUYEN_DOC = v;

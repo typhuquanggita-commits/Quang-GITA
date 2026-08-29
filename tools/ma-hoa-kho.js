@@ -54,7 +54,10 @@ const NEN = ['VANHANH', 'CHUYENDICH', 'CHANDUNG', 'LOTRINH', 'FAMILIES', 'TEAM',
   /* Bộ sát hạch và khoá đào tạo tự động. Ở gói NỀN vì cả sáu vai đều thi,
      kể cả học viên và phụ huynh — bài của ai thì màn hình lọc theo vai. */
   'SH_TRUC', 'SH_TRONGSO', 'SH_VAI', 'SH_TANG', 'SH_TOTNGHIEP', 'SH_LUAT', 'SH_HOI',
-  'KH_LOTRINH', 'KH_BAI', 'KH_LUAT'];
+  'KH_LOTRINH', 'KH_BAI', 'KH_LUAT',
+  /* Kho chuyện người thật — người có thật, việc có thật, ghi chép công khai.
+     Ở gói nền vì mọi vai đều đọc được. */
+  'TG_LINH', 'CHUYEN_TG'];
 
 const NGHE = ['MOTHUC', 'SACH', 'BANDO_A3', 'POSTER', 'SODO', 'PHACDO',
   'DIEMCHAM', 'NGONTU', 'NGONTU_TANG', 'THAYVI', 'MAUTHOAI', 'PERSONA',

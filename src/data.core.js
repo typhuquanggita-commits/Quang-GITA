@@ -390,6 +390,7 @@ G.NAV = [
     /* Chuyện truyền cảm hứng: mỗi cấp tài khoản một kho trăm chuyện.
        Không gắn perm — vai nào cũng có kho của mình, màn hình tự lọc. */
     {v:'chuyen-cam-hung',t:'Chuyện truyền cảm hứng', h:'100 chuyện cho cấp của mình · 10 mạch · mỗi nhiệm vụ một chuyện', ic:'flame', star:1, capMo:'chung'},
+    {v:'chuyen-the-gioi',t:'Chuyện người thật',      h:'Doanh nhân · khoa học · nghệ thuật · thể thao · người Việt', ic:'crown', star:1, capMo:'chung'},
     {v:'giong-doc',   t:'Đọc hoặc nghe · giọng đọc',  h:'Bản quyền giọng · chuẩn phòng thu · kịch bản dẫn', ic:'quote', capMo:'chung'},
     {v:'nhat-ky-vi-tri',t:'Sổ nhật ký của tôi',    h:'Ngày · tuần · tháng · ô ghi riêng cho từng vị trí', ic:'book', star:1, capMo:'chung'},
     {v:'thi-viet',    t:'Cuộc thi viết 7 – 21 – 90 – 365', h:'Bài đạt mốc 90 và 365 nhận học bổng 10%', ic:'crown', star:1, capMo:'chung'},
