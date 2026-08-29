@@ -1039,6 +1039,221 @@ export const DRILL_ANALYSIS: Record<string, DrillAnalysis> = {
       'Hiểu cơ chế này thay đổi hẳn chiến thuật làm bài: bước từ 3 ý lên 4 ý đáng 0,50 điểm, gấp đôi bước từ 2 lên 3. Câu nào đã chắc 3 ý thì phải dồn sức xử lý nốt ý cuối.',
     mastery: 'Trong phòng thi biết ngay nên dồn thời gian vào câu nào của Phần II.',
   },
+
+  /* ==================== BỔ SUNG: CHUYÊN ĐỀ NÂNG CAO & KỸ NĂNG ==================== */
+  'g-khong-doi-tiep-tuyen': {
+    recognize:
+      'Có một điểm chạy trên đường tròn và đề hỏi một tích, tổng hoặc góc “có phụ thuộc vị trí điểm đó không”.',
+    method: [
+      'Vẽ hình ở một vị trí bất kỳ của điểm chạy, ghi đủ giả thiết lên hình.',
+      'Khai thác tính chất hai tiếp tuyến cắt nhau để chuyển các đoạn về cùng một tam giác.',
+      'Chỉ ra tam giác vuông và đường cao tương ứng, rồi dùng hệ thức lượng.',
+      'Kết luận đại lượng chỉ phụ thuộc các yếu tố cố định (thường là R), nên không đổi.',
+    ],
+    traps: [
+      'Chỉ thử một vị trí đặc biệt của M rồi kết luận — đó là dự đoán, không phải chứng minh.',
+      'Quên chứng minh OC ⊥ OD trước khi dùng hệ thức đường cao.',
+      'Nhầm CM = CB thay vì CM = CA.',
+    ],
+    transfer:
+      'Đây là ý 3 của Bài IV đề vào 10 Hà Nội — 1,0 điểm quyết định khoảng cách giữa 9 và 10.',
+    mastery: 'Nhìn thấy “điểm chạy + hỏi đại lượng” là tự động đi tìm yếu tố cố định của bài toán.',
+  },
+  'g-khoang-cach-day': {
+    recognize: 'Đề cho bán kính và độ dài một dây, hỏi khoảng cách từ tâm đến dây (hoặc ngược lại).',
+    method: [
+      'Kẻ OH vuông góc với dây tại H.',
+      'Dùng tính chất: đường kính vuông góc với dây thì đi qua trung điểm dây ⇒ HA = AB/2.',
+      'Áp dụng Pythagore cho tam giác OHA vuông tại H.',
+      'Khai căn và ghi đơn vị.',
+    ],
+    traps: [
+      'Dùng cả độ dài dây AB thay vì một nửa của nó.',
+      'Lấy hiệu R − AB/2 thay vì hiệu bình phương.',
+    ],
+    transfer:
+      'Bước trung gian rất hay dùng trong Bài IV, đặc biệt ở các bài về vị trí tương đối và cực trị độ dài dây.',
+    mastery: 'Viết ngay được hệ thức R² = d² + (AB/2)² mà không cần vẽ lại hình.',
+  },
+  'g-phan-nguyen-dem': {
+    recognize: 'Bài đếm có dạng “bao nhiêu số không vượt quá N và chia hết cho k”.',
+    method: [
+      'Viết số cần đếm dưới dạng k·q.',
+      'Ràng buộc k·q ≤ N ⇒ q ≤ N/k.',
+      'Số giá trị q nguyên dương thoả mãn chính là [N/k].',
+    ],
+    traps: [
+      'Cộng thêm 1 theo thói quen đếm “từ a đến b” — ở đây q bắt đầu từ 1 nên không cộng.',
+      'Làm tròn N/k thay vì lấy phần nguyên.',
+    ],
+    transfer:
+      'Nền của các bài đếm trong đề chuyên và của công thức Legendre về số mũ trong giai thừa.',
+    mastery: 'Chuyển bài đếm bội thành một biểu thức phần nguyên chỉ trong một dòng.',
+  },
+  'g-so-mu-giai-thua': {
+    recognize: 'Hỏi số chữ số 0 tận cùng của n!, hoặc số mũ của một số nguyên tố trong n!.',
+    method: [
+      'Nhận ra mỗi chữ số 0 tận cùng ứng với một cặp thừa số 2 và 5.',
+      'Trong n! thừa số 2 luôn dư so với thừa số 5, nên chỉ cần đếm thừa số 5.',
+      'Áp dụng công thức Legendre: [n/5] + [n/25] + [n/125] + …',
+      'Cộng đến khi lũy thừa vượt quá n.',
+    ],
+    traps: [
+      'Chỉ lấy [n/5] mà quên các số chia hết cho 25, 125 (chúng đóng góp thêm thừa số 5).',
+      'Đếm thừa số 2 thay vì thừa số 5.',
+    ],
+    transfer:
+      'Dạng kinh điển của đề chuyên và học sinh giỏi; cũng là ví dụ chuẩn mực cho ứng dụng của phần nguyên.',
+    mastery: 'Tính được số chữ số 0 của 100! trong đầu trong dưới 30 giây.',
+  },
+  'g-menelaus-ti-so': {
+    recognize:
+      'Tam giác có một cát tuyến cắt ba đường thẳng chứa ba cạnh, đề hỏi một tỉ số độ dài.',
+    method: [
+      'Chọn tam giác và cát tuyến sao cho ba giao điểm nằm trên ba đường thẳng chứa cạnh.',
+      'Viết hệ thức Menelaus: tích ba tỉ số bằng 1, đi vòng theo đúng thứ tự đỉnh.',
+      'Thay hai tỉ số đã biết, rút ra tỉ số cần tìm.',
+      'Đổi về đúng chiều tỉ số mà đề hỏi (AF/FC hay CF/FA).',
+    ],
+    traps: [
+      'Chọn sai tam giác hoặc sai cát tuyến, dẫn tới hệ thức vô nghĩa.',
+      'Đảo chiều tỉ số ở bước cuối.',
+      'Dùng BD/DC trong khi hệ thức cần DB/BC — hai tỉ số khác nhau.',
+    ],
+    transfer:
+      'Ý cuối bài hình của đề chuyên KHTN và Ams. Cách 2 không dùng Menelaus (kẻ đường song song) vẫn luôn khả thi ở cấp THCS.',
+    mastery: 'Viết đúng hệ thức Menelaus ngay lần đầu và kiểm chứng lại bằng một cách khác.',
+  },
+  'g-ti-so-dien-tich': {
+    recognize: 'Hai tam giác có chung một đỉnh và hai đáy nằm trên cùng một đường thẳng.',
+    method: [
+      'Xác định đường cao chung hạ từ đỉnh chung xuống đường thẳng chứa hai đáy.',
+      'Tỉ số diện tích bằng tỉ số hai cạnh đáy.',
+      'Quy đổi tỉ số đề cho (BM/MC) sang tỉ số cần dùng (BM/BC).',
+    ],
+    traps: [
+      'Dùng luôn BM/MC làm tỉ số diện tích — sai vì mẫu số phải là cả cạnh BC.',
+      'Áp dụng khi hai tam giác không chung đường cao.',
+    ],
+    transfer:
+      'Công cụ chuyển đổi cực mạnh trong bài hình đề chuyên: đưa bài toán tỉ số độ dài về tỉ số diện tích và ngược lại.',
+    mastery: 'Tự chuyển qua lại giữa tỉ số đáy và tỉ số diện tích mà không cần nghĩ.',
+  },
+  'g-cuc-han-tong': {
+    recognize:
+      'Đề hỏi giá trị nhỏ nhất (hoặc lớn nhất) của một cấu hình thoả ràng buộc rời rạc.',
+    method: [
+      'Sắp xếp các đối tượng theo thứ tự tăng dần.',
+      'Chặn từng phần tử bởi giá trị nhỏ nhất có thể của nó.',
+      'Cộng các chặn để có chặn dưới cho tổng.',
+      'Chỉ ra một cấu hình cụ thể đạt được chặn đó — bước này bắt buộc, nếu thiếu thì chưa xong bài.',
+    ],
+    traps: [
+      'Chỉ chứng minh chặn dưới mà quên chỉ ra cấu hình đạt được.',
+      'Quên điều kiện “đôi một khác nhau” nên chặn quá thấp.',
+    ],
+    transfer:
+      'Nguyên lí cực hạn là công cụ cho bài chốt tổ hợp của đề chuyên — thường ít thí sinh làm trọn vẹn.',
+    mastery: 'Luôn tự hỏi “cấu hình cực trị trông như thế nào” trước khi bắt đầu tính.',
+  },
+  'g-dirichlet-hieu-chia-het': {
+    recognize:
+      'Đề hỏi “cần ít nhất bao nhiêu đối tượng để chắc chắn tồn tại hai đối tượng có quan hệ nào đó”.',
+    method: [
+      'Tìm cách phân loại các đối tượng thành hữu hạn nhóm — đây là bước “xây chuồng”.',
+      'Với quan hệ chia hết cho k, chuồng tự nhiên là k lớp số dư khi chia cho k.',
+      'Số cần tìm bằng số chuồng cộng 1.',
+      'Chỉ ra một cấu hình với đúng số chuồng phần tử mà không thoả — để chứng minh con số đó là nhỏ nhất.',
+    ],
+    traps: [
+      'Trả lời bằng số chuồng thay vì số chuồng cộng 1.',
+      'Quên phần chứng minh tính nhỏ nhất (phản ví dụ với k phần tử).',
+    ],
+    transfer:
+      'Dạng Dirichlet cơ bản nhất, xuất hiện đều trong đề chuyên KHTN và các kỳ học sinh giỏi.',
+    mastery: 'Thiết kế được “chuồng” cho cả những bài chưa từng gặp, không chỉ bài về số dư.',
+  },
+  'g-barem-trinh-bay': {
+    recognize: 'Câu hỏi về cách trình bày, về bước bắt buộc, hoặc về quy tắc chấm điểm.',
+    method: [
+      'Nhớ nguyên tắc: barem tự luận cho điểm theo từng bước có căn cứ, không chỉ theo đáp số.',
+      'Xác định bước nào trong dạng bài đó được barem tính điểm riêng.',
+      'Ưu tiên các bước “hình thức” hay bị bỏ quên: điều kiện xác định, đặt ẩn kèm đơn vị, đối chiếu điều kiện, câu kết luận.',
+    ],
+    traps: [
+      'Coi trình bày là chuyện phụ — thực tế đây là phần lấy điểm rẻ nhất.',
+      'Bỏ trống ý chưa xong thay vì viết hướng làm đã nghĩ ra.',
+    ],
+    transfer:
+      'Áp dụng cho mọi bài tự luận của đề vào 10 và đề chuyên. Cùng một lời giải, trình bày chuẩn có thể hơn 0,5–1,0 điểm.',
+    mastery: 'Viết lời giải mà giám khảo tìm được từng ý điểm chỉ bằng cách đọc lướt.',
+  },
+  'g-chien-thuat-thoi-gian': {
+    recognize: 'Câu hỏi về phân bổ thời gian, tỉ trọng điểm hoặc thứ tự làm bài.',
+    method: [
+      'Nhớ ma trận đề: mỗi phần chiếm bao nhiêu điểm.',
+      'Phân bổ thời gian tỉ lệ với số điểm, cộng thêm biên cho phần khó.',
+      'Đặt trần thời gian cho từng phần; chạm trần thì chuyển phần và đánh dấu.',
+      'Chừa 5–8 phút cuối để soát bài.',
+    ],
+    traps: [
+      'Làm tuần tự cứng nhắc từ đầu tới cuối, không phân loại độ khó trước.',
+      'Sa lầy vào một ý ít điểm — cách mất điểm đắt nhất trong phòng thi.',
+    ],
+    transfer:
+      'Quyết định khoảng cách giữa “năng lực có” và “điểm số đạt được”. Nhiều học sinh 9 điểm ở nhà chỉ được 7,5 khi thi vì lý do này.',
+    mastery: 'Trước khi thi đã biết mình sẽ dành bao nhiêu phút cho từng bài, và bám được kế hoạch đó.',
+  },
+  'gq-the-tich-chop': {
+    recognize: 'Đề cho diện tích đáy và chiều cao của một khối chóp.',
+    method: [
+      'Xác định rõ đâu là mặt đáy và đâu là chiều cao (khoảng cách từ đỉnh đến mặt đáy).',
+      'Áp dụng V = (1/3) · S_đáy · h.',
+      'Thay số và ghi đơn vị khối.',
+    ],
+    traps: [
+      'Quên hệ số 1/3 — công thức S·h là của khối lăng trụ, không phải khối chóp.',
+      'Lấy cạnh bên làm chiều cao khi cạnh bên không vuông góc với đáy.',
+    ],
+    transfer:
+      'Câu chắc điểm ở Phần I đề tốt nghiệp, và là bước cuối của rất nhiều bài hình không gian phức tạp hơn.',
+    mastery: 'Xác định đúng chiều cao trong hình vẽ, kể cả khi đỉnh không nằm trên trục đối xứng.',
+  },
+  'gq-goc-duong-mat': {
+    recognize:
+      'Hình chóp có một cạnh bên vuông góc với đáy, đề hỏi góc giữa một đường thẳng và mặt phẳng đáy.',
+    method: [
+      'Xác định hình chiếu vuông góc của điểm đầu mút lên mặt phẳng — đây là bước quyết định.',
+      'Góc cần tìm là góc giữa đường thẳng và hình chiếu của nó.',
+      'Đưa về một tam giác vuông và tính tang của góc.',
+      'Đối chiếu với bảng giá trị đặc biệt để suy ra số đo góc.',
+    ],
+    traps: [
+      'Xác định sai hình chiếu vuông góc — nguyên nhân sai số một của chương này.',
+      'Nhầm góc giữa đường và mặt với góc giữa hai đường thẳng.',
+      'Quên rằng góc giữa đường và mặt luôn nằm trong khoảng từ 0° đến 90°.',
+    ],
+    transfer:
+      'Xuất hiện đều ở Phần II đề tốt nghiệp và trong hầu hết các bài kiểm tra hình không gian lớp 11.',
+    mastery: 'Nhìn hình là chỉ ra ngay hình chiếu và góc cần tính, không cần thử.',
+  },
+  'gq-diem-tong-ket': {
+    recognize: 'Bài toán tính điểm trung bình môn với các loại điểm có hệ số khác nhau.',
+    method: [
+      'Xác định số điểm thường xuyên (hệ số 1), điểm giữa kỳ (hệ số 2), điểm cuối kỳ (hệ số 3).',
+      'Tử số = tổng điểm thường xuyên + 2 × giữa kỳ + 3 × cuối kỳ.',
+      'Mẫu số = số điểm thường xuyên + 5.',
+      'Chia và làm tròn theo yêu cầu.',
+    ],
+    traps: [
+      'Lấy trung bình cộng đơn thuần, bỏ qua hệ số.',
+      'Quên cộng 5 vào mẫu số (5 = 2 + 3 là tổng hệ số của giữa kỳ và cuối kỳ).',
+      'Làm tròn sai số chữ số thập phân theo yêu cầu.',
+    ],
+    transfer:
+      'Trực tiếp phục vụ mục tiêu Top 1 tổng kết: biết công thức thì tính được mình cần bao nhiêu điểm ở bài kiểm tra sắp tới.',
+    mastery: 'Tự tính được “cần bao nhiêu điểm cuối kỳ để đạt tổng kết 9,0” trước khi thi.',
+  },
 };
 
 export const analysisFor = (generatorId: string): DrillAnalysis | undefined =>

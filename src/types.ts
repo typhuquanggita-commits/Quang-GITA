@@ -192,23 +192,6 @@ export interface Resource {
   official?: boolean;
 }
 
-export interface ExamPaper {
-  id: string;
-  schoolId: SchoolId;
-  title: string;
-  minutes: number;
-  totalPoints: number;
-  note: string;
-  problems: {
-    label: string;
-    points: number;
-    strand: StrandId;
-    statement: string;
-    parts?: { label: string; points: number; statement: string }[];
-    guide: string[];
-  }[];
-}
-
 /* ---------- Trạng thái người dùng (localStorage) ---------- */
 
 export interface Profile {

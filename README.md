@@ -28,11 +28,12 @@ Mô thức xuyên suốt mọi tầng: thư mục tài liệu, quy trình, giả
 | Hạng mục | Số lượng |
 | --- | --- |
 | Phiếu luyện | **2.000** (600 chuyên · 600 vào 10 · 800 THPT 10–12) |
-| Bộ phiếu chuyên đề | **45** chuyên đề × 6 loại phiếu × nhiều đợt |
+| Bộ phiếu chuyên đề | **47/47** chuyên đề đều có bộ 6 phiếu × nhiều đợt |
 | Nhiệm vụ | **2.000** (1 nhiệm vụ ↔ 1 phiếu, có KPI và điều kiện mở khoá riêng) |
 | Câu hỏi sinh ra | **16.664**, mỗi câu có lời giải từng bước + bảng phân tích dạng bài |
-| Dạng bài tham số hoá | **64** bộ sinh đề, **64** hồ sơ phân tích chuyên sâu |
-| Chuyên đề | 56, phân theo 10 mạch kiến thức và 5 tầng hấp thu |
+| Bài mẫu tự luận | **54** bài có lời giải trình bày chuẩn và barem chấm |
+| Dạng bài tham số hoá | **77** bộ sinh đề, **77** hồ sơ phân tích chuyên sâu (phủ 100%) |
+| Chuyên đề | 47, phân theo 10 mạch kiến thức và 5 tầng hấp thu |
 | Thư mục tài liệu | 408 thư mục · 1.097 đầu tài liệu bổ trợ |
 | Ma trận đề | 7 kỳ thi / trường |
 | Bí kíp · thói quen · phương pháp | 30 · 8 · 8 |
@@ -126,11 +127,13 @@ src/
     topics-qg.ts     Cây chuyên đề THPT lớp 10–12
     generators.ts    Bộ sinh đề luồng chuyên & vào 10
     generators-qg.ts Bộ sinh đề luồng THPT 10–12
+    generators-extra.ts Bộ sinh đề cho các chuyên đề nâng cao & kỹ năng phòng thi
     sheets.ts        6 loại phiếu + 2 phiếu đi kèm
     catalog.ts       15 giai đoạn · bộ phiếu theo chuyên đề · 2.000 phiếu / nhiệm vụ
     analysis.ts      64 hồ sơ phân tích chuyên sâu theo dạng bài
     recognition.ts   Bộ sinh câu "đọc vị đề" và "kỹ năng – phương pháp"
-    questions.ts     Bài mẫu viết tay có lời giải và barem
+    questions.ts     54 bài mẫu tự luận có lời giải và barem
+    questions-extra.ts Bài mẫu bổ sung phủ nốt các chuyên đề còn trống
     gita.ts          Mô thức GITA, tầng hấp thu, cấp chuyên môn, môi trường
     library-tree.ts  Kiến trúc thư mục tài liệu
     playbook.ts      Kho bí kíp, thói quen, phương pháp học

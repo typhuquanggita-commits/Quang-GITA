@@ -1,10 +1,11 @@
 import type { Question } from '@/types';
+import { QUESTIONS_EXTRA } from './questions-extra';
 
 /**
  * Ngân hàng bài tập có lời giải chi tiết.
  * Ký hiệu: dùng Unicode toán học; `^{...}` và `_{...}` được render thành mũ/chỉ số.
  */
-export const QUESTIONS: Question[] = [
+const QUESTIONS_CORE: Question[] = [
   /* ---------------- ĐẠI SỐ ---------------- */
   {
     id: 'q-ds-01',
@@ -547,6 +548,8 @@ export const QUESTIONS: Question[] = [
     answer: 'P ≥ 3/2, dấu “=” khi a = b = c = 1',
   },
 ];
+
+export const QUESTIONS: Question[] = [...QUESTIONS_CORE, ...QUESTIONS_EXTRA];
 
 export const questionById = (id: string) => QUESTIONS.find((q) => q.id === id);
 export const questionsByTopic = (topicId: string) => QUESTIONS.filter((q) => q.topicId === topicId);
