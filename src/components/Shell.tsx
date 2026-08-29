@@ -31,6 +31,7 @@ export const NAV: NavItem[] = [
   { path: '/gita', label: 'Mô thức GITA', icon: '◈', group: 'Hệ thống' },
   { path: '/brand', label: 'Nhận diện MATH365', icon: '◈', group: 'Hệ thống' },
   { path: '/roles', label: 'Phân quyền', icon: '⚿', group: 'Hệ thống' },
+  { path: '/academy', label: 'Học viện giáo viên', icon: '⌘', group: 'Hệ thống' },
   { path: '/classes', label: 'Quản lý lớp', icon: '⛁', group: 'Hệ thống', teacherOnly: true },
 ];
 

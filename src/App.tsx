@@ -20,6 +20,7 @@ import Gita from '@/pages/Gita';
 import Library from '@/pages/Library';
 import Roles from '@/pages/Roles';
 import Classes from '@/pages/Classes';
+import Academy from '@/pages/Academy';
 import Brand from '@/pages/Brand';
 
 export default function App() {
@@ -91,6 +92,9 @@ export default function App() {
       break;
     case 'classes':
       page = <Classes />;
+      break;
+    case 'academy':
+      page = <Academy />;
       break;
     case 'brand':
       page = <Brand />;
