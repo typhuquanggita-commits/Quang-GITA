@@ -1,0 +1,302 @@
+/*
+ * SAT365 design tokens.
+ *
+ * Every colour pair used for text on a surface meets WCAG 2.1 AA (4.5:1 for
+ * body text, 3:1 for large text and UI boundaries). The high-contrast theme
+ * targets 7:1 (AAA) throughout.
+ */
+
+:root {
+  /* ---- Type scale (1.200 minor third, 16px base) ---- */
+  --font-sans: 'Inter var', 'Inter', ui-sans-serif, system-ui, -apple-system,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+  --font-serif: 'Source Serif 4', 'Iowan Old Style', 'Palatino Linotype',
+    Palatino, Georgia, 'Times New Roman', serif;
+  --font-mono: ui-monospace, 'SF Mono', 'Cascadia Mono', 'Roboto Mono',
+    Menlo, Consolas, monospace;
+
+  --text-2xs: 0.6875rem;
+  --text-xs: 0.75rem;
+  --text-sm: 0.8125rem;
+  --text-base: 0.9375rem;
+  --text-md: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.375rem;
+  --text-2xl: 1.75rem;
+  --text-3xl: 2.25rem;
+  --text-4xl: 3rem;
+
+  --leading-tight: 1.2;
+  --leading-snug: 1.35;
+  --leading-normal: 1.55;
+  --leading-relaxed: 1.75;
+
+  --weight-normal: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  /* ---- Spacing (4px base) ---- */
+  --space-0: 0;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+
+  /* ---- Radii ---- */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+  --radius-full: 999px;
+
+  /* ---- Motion ---- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 120ms;
+  --dur-base: 200ms;
+  --dur-slow: 340ms;
+
+  /* ---- Layout ---- */
+  --shell-sidebar: 244px;
+  --shell-topbar: 60px;
+  --measure: 68ch;
+
+  /* ---- Z-index ---- */
+  --z-sticky: 20;
+  --z-drawer: 40;
+  --z-modal: 60;
+  --z-toast: 80;
+}
+
+/* ================= Light (default) ================= */
+:root,
+[data-theme='light'] {
+  color-scheme: light;
+
+  --bg: #f6f7fb;
+  --bg-subtle: #eceff6;
+  --surface: #ffffff;
+  --surface-2: #f9fafc;
+  --surface-3: #f1f3f9;
+  --surface-inset: #eef1f7;
+
+  --border: #dde1ec;
+  --border-strong: #c3c9da;
+  --border-focus: #3557d8;
+
+  --text: #14192b;
+  --text-secondary: #4c5570;
+  --text-muted: #6d7690;
+  --text-inverse: #ffffff;
+
+  --primary: #2f4fd4;
+  --primary-hover: #2742b4;
+  --primary-active: #1f3695;
+  --primary-soft: #e7ecfd;
+  --primary-soft-text: #22378f;
+  --on-primary: #ffffff;
+
+  --accent: #b0530f;
+  --accent-soft: #fdeee0;
+
+  --success: #14724a;
+  --success-soft: #e0f5eb;
+  --warning: #8a5d00;
+  --warning-soft: #fdf1d8;
+  --danger: #b3261e;
+  --danger-soft: #fce8e6;
+  --info: #0f5f86;
+  --info-soft: #e0f2fb;
+
+  /* Section identity */
+  --rw: #6234b0;
+  --rw-soft: #f0e9fb;
+  --math: #0d6a72;
+  --math-soft: #dff3f4;
+
+  /* Highlighter palette — chosen to keep black text at 4.5:1 or better */
+  --hl-yellow: #ffe37a;
+  --hl-blue: #a8d8f7;
+  --hl-pink: #f9bcd4;
+  --hl-green: #a9e6b8;
+
+  --shadow-sm: 0 1px 2px rgb(20 25 43 / 0.06), 0 1px 1px rgb(20 25 43 / 0.04);
+  --shadow-md: 0 4px 10px -2px rgb(20 25 43 / 0.08), 0 2px 4px -2px rgb(20 25 43 / 0.05);
+  --shadow-lg: 0 14px 34px -8px rgb(20 25 43 / 0.16), 0 6px 12px -6px rgb(20 25 43 / 0.08);
+  --shadow-focus: 0 0 0 3px rgb(47 79 212 / 0.28);
+}
+
+/* ================= Dark ================= */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']):not([data-theme='high-contrast']) {
+    color-scheme: dark;
+
+    --bg: #0c0f1a;
+    --bg-subtle: #0f1322;
+    --surface: #151a2b;
+    --surface-2: #1b2135;
+    --surface-3: #222941;
+    --surface-inset: #10141f;
+
+    --border: #2b3350;
+    --border-strong: #3d476b;
+    --border-focus: #7d9bff;
+
+    --text: #eef1f9;
+    --text-secondary: #b3bcd4;
+    --text-muted: #8b95b2;
+    --text-inverse: #0c0f1a;
+
+    --primary: #7d9bff;
+    --primary-hover: #93aaff;
+    --primary-active: #a9bcff;
+    --primary-soft: #1e2748;
+    --primary-soft-text: #b8c8ff;
+    --on-primary: #0b1230;
+
+    --accent: #f0a35e;
+    --accent-soft: #33220f;
+
+    --success: #62d3a0;
+    --success-soft: #10291f;
+    --warning: #f0c060;
+    --warning-soft: #2e2410;
+    --danger: #ff8f85;
+    --danger-soft: #331a18;
+    --info: #6fc7f0;
+    --info-soft: #10262f;
+
+    --rw: #b79bf0;
+    --rw-soft: #241a3a;
+    --math: #62c9d1;
+    --math-soft: #0f2a2d;
+
+    --hl-yellow: #7a651c;
+    --hl-blue: #1d4c6b;
+    --hl-pink: #6b2942;
+    --hl-green: #1e5230;
+
+    --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.4);
+    --shadow-md: 0 4px 12px -2px rgb(0 0 0 / 0.5);
+    --shadow-lg: 0 16px 40px -10px rgb(0 0 0 / 0.62);
+    --shadow-focus: 0 0 0 3px rgb(125 155 255 / 0.4);
+  }
+}
+
+[data-theme='dark'] {
+  color-scheme: dark;
+
+  --bg: #0c0f1a;
+  --bg-subtle: #0f1322;
+  --surface: #151a2b;
+  --surface-2: #1b2135;
+  --surface-3: #222941;
+  --surface-inset: #10141f;
+
+  --border: #2b3350;
+  --border-strong: #3d476b;
+  --border-focus: #7d9bff;
+
+  --text: #eef1f9;
+  --text-secondary: #b3bcd4;
+  --text-muted: #8b95b2;
+  --text-inverse: #0c0f1a;
+
+  --primary: #7d9bff;
+  --primary-hover: #93aaff;
+  --primary-active: #a9bcff;
+  --primary-soft: #1e2748;
+  --primary-soft-text: #b8c8ff;
+  --on-primary: #0b1230;
+
+  --accent: #f0a35e;
+  --accent-soft: #33220f;
+
+  --success: #62d3a0;
+  --success-soft: #10291f;
+  --warning: #f0c060;
+  --warning-soft: #2e2410;
+  --danger: #ff8f85;
+  --danger-soft: #331a18;
+  --info: #6fc7f0;
+  --info-soft: #10262f;
+
+  --rw: #b79bf0;
+  --rw-soft: #241a3a;
+  --math: #62c9d1;
+  --math-soft: #0f2a2d;
+
+  --hl-yellow: #7a651c;
+  --hl-blue: #1d4c6b;
+  --hl-pink: #6b2942;
+  --hl-green: #1e5230;
+
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.4);
+  --shadow-md: 0 4px 12px -2px rgb(0 0 0 / 0.5);
+  --shadow-lg: 0 16px 40px -10px rgb(0 0 0 / 0.62);
+  --shadow-focus: 0 0 0 3px rgb(125 155 255 / 0.4);
+}
+
+/* ================= High contrast (WCAG AAA) ================= */
+[data-theme='high-contrast'] {
+  color-scheme: dark;
+
+  --bg: #000000;
+  --bg-subtle: #000000;
+  --surface: #0a0a0a;
+  --surface-2: #141414;
+  --surface-3: #1e1e1e;
+  --surface-inset: #000000;
+
+  --border: #8a8a8a;
+  --border-strong: #ffffff;
+  --border-focus: #ffe600;
+
+  --text: #ffffff;
+  --text-secondary: #e8e8e8;
+  --text-muted: #cccccc;
+  --text-inverse: #000000;
+
+  --primary: #7fd4ff;
+  --primary-hover: #a6e2ff;
+  --primary-active: #c8eeff;
+  --primary-soft: #002233;
+  --primary-soft-text: #a6e2ff;
+  --on-primary: #000000;
+
+  --accent: #ffc46b;
+  --accent-soft: #241800;
+
+  --success: #7dffb0;
+  --success-soft: #002d17;
+  --warning: #ffe600;
+  --warning-soft: #2b2600;
+  --danger: #ff9a90;
+  --danger-soft: #380f0b;
+  --info: #7fd4ff;
+  --info-soft: #002233;
+
+  --rw: #d9b6ff;
+  --rw-soft: #1c0d2e;
+  --math: #7fe8ee;
+  --math-soft: #002b2e;
+
+  --hl-yellow: #6b5a00;
+  --hl-blue: #003a5c;
+  --hl-pink: #58122f;
+  --hl-green: #00401f;
+
+  --shadow-sm: none;
+  --shadow-md: none;
+  --shadow-lg: 0 0 0 1px #ffffff;
+  --shadow-focus: 0 0 0 3px #ffe600;
+}

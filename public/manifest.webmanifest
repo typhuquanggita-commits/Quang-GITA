@@ -1,0 +1,21 @@
+{
+  "name": "SAT365 — Lộ trình 1600",
+  "short_name": "SAT365",
+  "description": "Nền tảng luyện thi Digital SAT theo chuẩn quốc tế: đề thích ứng hai giai đoạn, chấm điểm IRT 400–1600, phân tích kỹ năng và ôn tập giãn cách.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f6f7fb",
+  "theme_color": "#2f4fd4",
+  "lang": "vi",
+  "categories": ["education", "productivity"],
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
