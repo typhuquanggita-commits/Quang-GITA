@@ -48,7 +48,7 @@ const TinhNguoc: React.FC = () => {
           max={max}
           step={step}
           value={v}
-          onChange={(e) => set(Number(e.target.value))}
+          onChange={(e) => set(Number(e.currentTarget.value))}
           className="mt-1 w-full rounded-lg border border-slate-700 bg-slate-900 px-3 py-1.5 text-xs tabular-nums text-slate-200 focus:border-sky-500 focus:outline-none"
         />
       </div>

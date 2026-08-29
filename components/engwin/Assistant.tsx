@@ -134,7 +134,7 @@ const HomNay: React.FC = () => {
               min={1}
               max={365}
               value={day}
-              onChange={(e) => setDay(Number(e.target.value) || 1)}
+              onChange={(e) => setDay(Number(e.currentTarget.value) || 1)}
               className="mt-1 w-full rounded-lg border border-slate-700 bg-slate-900 px-3 py-1.5 text-xs text-slate-200 focus:border-sky-500 focus:outline-none"
             />
           </div>
@@ -145,7 +145,7 @@ const HomNay: React.FC = () => {
             <select
               id="a-budget"
               value={budget}
-              onChange={(e) => setBudget(Number(e.target.value))}
+              onChange={(e) => setBudget(Number(e.currentTarget.value))}
               className="mt-1 w-full rounded-lg border border-slate-700 bg-slate-900 px-3 py-1.5 text-xs text-slate-200 focus:border-sky-500 focus:outline-none">
               {[10, 20, 30, 45, 60, 90].map((m) => (
                 <option key={m} value={m}>
@@ -161,7 +161,7 @@ const HomNay: React.FC = () => {
             <select
               id="a-level"
               value={levelId}
-              onChange={(e) => setLevelId(e.target.value)}
+              onChange={(e) => setLevelId(e.currentTarget.value)}
               className="mt-1 w-full rounded-lg border border-slate-700 bg-slate-900 px-3 py-1.5 text-xs text-slate-200 focus:border-sky-500 focus:outline-none">
               {LEVELS.map((l) => (
                 <option key={l.id} value={l.id}>
@@ -177,7 +177,7 @@ const HomNay: React.FC = () => {
             <select
               id="a-pkg"
               value={pkg}
-              onChange={(e) => setPkg(e.target.value)}
+              onChange={(e) => setPkg(e.currentTarget.value)}
               className="mt-1 w-full rounded-lg border border-slate-700 bg-slate-900 px-3 py-1.5 text-xs text-slate-200 focus:border-sky-500 focus:outline-none">
               {PACKAGES.map((p) => (
                 <option key={p.id} value={p.id}>
@@ -194,7 +194,7 @@ const HomNay: React.FC = () => {
           <select
             id="a-sym"
             value={symptomId}
-            onChange={(e) => setSymptomId(e.target.value)}
+            onChange={(e) => setSymptomId(e.currentTarget.value)}
             className="mt-1 w-full rounded-lg border border-slate-700 bg-slate-900 px-3 py-1.5 text-xs text-slate-200 focus:border-sky-500 focus:outline-none">
             {SYMPTOMS.map((s) => (
               <option key={s.id} value={s.id}>

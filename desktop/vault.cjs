@@ -21,6 +21,52 @@ const path = require('node:path');
 const SCRYPT = {N: 1 << 17, r: 8, p: 1, maxmem: 256 * 1024 * 1024};
 const KEYLEN = 32;
 const PROBE = 'engwin365-vault-v1';
+/* Trần số mũ của thời gian chờ. Xem ghi chú "KHÔNG KHOÁ VĨNH VIỄN" dưới. */
+const MU_CHO_TOI_DA = 10;
+
+/*
+ * GHI NGUYÊN TỬ
+ *
+ * fs.writeFileSync ghi thẳng lên tệp đích. Máy mất điện giữa chừng thì
+ * profile.enc còn lại một nửa, và AES-GCM sẽ từ chối giải mã cả tệp — hồ sơ
+ * mất vĩnh viễn, không phải mất một phần. Ghi vào tệp tạm rồi đổi tên thì
+ * đổi tên là thao tác nguyên tử trên cùng một phân vùng: hoặc tệp cũ còn
+ * nguyên, hoặc tệp mới đã đủ, không có trạng thái ở giữa.
+ *
+ * fsync trước khi đổi tên để dữ liệu thật sự nằm trên đĩa chứ không chỉ nằm
+ * trong bộ đệm của hệ điều hành.
+ */
+const NEW = '.new';
+
+/*
+ * PHỤC HỒI SAU KHI MẤT ĐIỆN GIỮA LÚC ĐỔI MÃ KHOÁ
+ * Luật quyết định, không đoán — xem ghi chú dài ở change().
+ */
+function phucHoiDoiKhoa(metaPath, dataPath) {
+  const metaMoi = fs.existsSync(metaPath + NEW);
+  const hoSoMoi = fs.existsSync(dataPath + NEW);
+  if (!metaMoi && !hoSoMoi) return null;
+  if (hoSoMoi) {
+    // Chưa đổi tên tệp nào — lùi về bản cũ còn nguyên.
+    for (const p of [dataPath + NEW, metaPath + NEW]) if (fs.existsSync(p)) fs.rmSync(p);
+    return 'đã lùi lại';
+  }
+  // Hồ sơ đã sang khoá mới, chỉ còn thiếu bước đổi tên vault.json.
+  fs.renameSync(metaPath + NEW, metaPath);
+  return 'đã đổi xong';
+}
+
+function ghiNguyenTu(dich, noiDung) {
+  const tam = `${dich}.tmp-${process.pid}-${Date.now()}`;
+  const fd = fs.openSync(tam, 'w', 0o600);
+  try {
+    fs.writeFileSync(fd, noiDung);
+    fs.fsyncSync(fd);
+  } finally {
+    fs.closeSync(fd);
+  }
+  fs.renameSync(tam, dich);
+}
 
 class Vault {
   constructor(dir) {
@@ -29,6 +75,7 @@ class Vault {
     this.dataPath = path.join(dir, 'profile.enc');
     this.key = null;
     fs.mkdirSync(dir, {recursive: true});
+    this.phucHoi = phucHoiDoiKhoa(this.metaPath, this.dataPath);
   }
 
   get isInitialised() {
@@ -74,7 +121,10 @@ class Vault {
 
     const salt = crypto.randomBytes(32);
     const key = this.#derive(passcode, salt);
-    fs.writeFileSync(
+    // 0600 chỉ có tác dụng trên Linux và macOS. Windows không có mode bit;
+    // ở đó két được bảo vệ bằng ACL của %APPDATA%, vốn chỉ mở cho chính
+    // người dùng, SYSTEM và nhóm quản trị. Xem BAOMAT.md.
+    ghiNguyenTu(
       this.metaPath,
       JSON.stringify(
         {
@@ -84,20 +134,57 @@ class Vault {
           salt: salt.toString('base64'),
           probe: this.#seal(key, PROBE),
           createdAt: new Date().toISOString(),
+          saiLienTiep: 0,
         },
         null,
         2,
       ),
-      // 0600 chỉ có tác dụng trên Linux và macOS. Windows không có mode bit;
-      // ở đó két được bảo vệ bằng ACL của %APPDATA%, vốn chỉ mở cho chính
-      // người dùng, SYSTEM và nhóm quản trị. Xem BAOMAT.md.
-      {mode: 0o600},
     );
     this.key = key;
     return {ok: true};
   }
 
-  /** Mở khoá. Sai mã thì không tiết lộ gì thêm ngoài việc sai. */
+  /* Số lần nhập sai liên tiếp, đọc từ đĩa. Xem ghi chú ở unlock(). */
+  get soLanSai() {
+    try {
+      const n = JSON.parse(fs.readFileSync(this.metaPath, 'utf8')).saiLienTiep;
+      return Number.isInteger(n) && n >= 0 ? n : 0;
+    } catch {
+      return 0;
+    }
+  }
+
+  #ghiSoLanSai(n) {
+    try {
+      const meta = JSON.parse(fs.readFileSync(this.metaPath, 'utf8'));
+      if (meta.saiLienTiep === n) return;
+      meta.saiLienTiep = n;
+      ghiNguyenTu(this.metaPath, JSON.stringify(meta, null, 2));
+    } catch {
+      // Không ghi được thì thôi; thời gian chờ trong bộ nhớ vẫn còn tác dụng.
+    }
+  }
+
+  /**
+   * Mở khoá. Sai mã thì không tiết lộ gì thêm ngoài việc sai.
+   *
+   * ĐẾM SỐ LẦN SAI PHẢI NẰM TRÊN ĐĨA
+   * Bản trước đếm số lần nhập sai trong một biến của tiến trình chính. Người
+   * dò mã chỉ cần tắt ứng dụng rồi mở lại là thời gian chờ về không — tức là
+   * gần như không có thời gian chờ nào cả. Đếm trên đĩa thì tắt mở lại không
+   * xoá được dấu vết.
+   *
+   * KHÔNG KHOÁ VĨNH VIỄN, VÀ ĐÂY LÀ LỰA CHỌN CÓ CHỦ Ý
+   * Nhiều hệ thống xoá dữ liệu sau N lần sai. Ở đây không có máy chủ, không
+   * có đường khôi phục, nên khoá vĩnh viễn nghĩa là một đứa trẻ nghịch bàn
+   * phím xoá được cả hồ sơ ba năm của anh chị nó. Thay vào đó thời gian chờ
+   * tăng theo luỹ thừa tới trần 30 giây và không bao giờ tự về không —
+   * chậm đủ để việc dò mã là vô vọng, mà không cầm tù chính chủ.
+   *
+   * Hàng rào thật vẫn là scrypt N=2^17: mỗi lần thử tốn cỡ vài trăm mili
+   * giây CPU, kể cả khi kẻ tấn công bỏ qua ứng dụng này và tấn công thẳng
+   * vào tệp trên đĩa — chỗ mà mọi thời gian chờ ở đây đều vô nghĩa.
+   */
   unlock(passcode) {
     if (!this.isInitialised) return {ok: false, error: 'Chưa đặt mã khoá'};
     let meta;
@@ -107,13 +194,28 @@ class Vault {
       return {ok: false, error: 'Tệp két hỏng'};
     }
     const key = this.#derive(passcode, Buffer.from(meta.salt, 'base64'));
+    let dung = false;
     try {
-      if (this.#open(key, meta.probe) !== PROBE) throw new Error();
+      const ra = Buffer.from(this.#open(key, meta.probe), 'utf8');
+      const mong = Buffer.from(PROBE, 'utf8');
+      dung = ra.length === mong.length && crypto.timingSafeEqual(ra, mong);
     } catch {
+      dung = false;
+    }
+    if (!dung) {
+      key.fill(0);
+      this.#ghiSoLanSai(Math.min(this.soLanSai + 1, 1_000_000));
       return {ok: false, error: 'Mã khoá không đúng'};
     }
+    this.#ghiSoLanSai(0);
     this.key = key;
     return {ok: true};
+  }
+
+  /** Thời gian phải chờ trước lần thử tiếp theo, tính bằng mili giây. */
+  get choMs() {
+    const n = this.soLanSai;
+    return n < 3 ? 0 : Math.min(30_000, 2 ** Math.min(n - 2, MU_CHO_TOI_DA) * 1000);
   }
 
   lock() {
@@ -133,29 +235,61 @@ class Vault {
 
   write(data) {
     if (!this.key) return {ok: false, error: 'Két đang khoá'};
-    fs.writeFileSync(this.dataPath, this.#seal(this.key, JSON.stringify(data)), {
-      mode: 0o600,
-    });
+    ghiNguyenTu(this.dataPath, this.#seal(this.key, JSON.stringify(data)));
     return {ok: true};
   }
 
-  /** Đổi mã khoá: giải mã bằng mã cũ, mã hoá lại bằng mã mới. */
+  /**
+   * Đổi mã khoá: giải mã bằng mã cũ, mã hoá lại bằng mã mới.
+   *
+   * ĐỔI MÃ KHOÁ CHẠM VÀO HAI TỆP, VÀ ĐÓ LÀ CHỖ MẤT DỮ LIỆU
+   * Bản trước ghi vault.json bằng khoá mới TRƯỚC rồi mới mã hoá lại
+   * profile.enc. Mất điện giữa hai bước đó thì két có khoá mới nhưng hồ sơ
+   * vẫn đang nằm dưới khoá cũ — mở được két mà không đọc được gì, và không
+   * có đường lùi vì mã khoá cũ đã hết hiệu lực.
+   *
+   * Hai tệp thì không có cách nào đổi tên cùng lúc, nên ở đây dàn sẵn cả
+   * hai bản mới rồi đổi tên theo một thứ tự cố định, và để lại dấu vết đủ
+   * để phục hồi lần chạy sau:
+   *   1. dàn profile.enc.new  (hồ sơ đã mã hoá bằng khoá MỚI)
+   *   2. dàn vault.json.new   (salt và bản xác minh MỚI)
+   *   3. đổi tên hồ sơ trước
+   *   4. đổi tên vault.json sau
+   * Mất điện trước bước 3: còn cả hai tệp .new, hai tệp thật vẫn là bản cũ
+   * nguyên vẹn — lần sau lùi lại bằng cách xoá hai tệp .new.
+   * Mất điện giữa bước 3 và 4: profile.enc.new đã biến mất còn
+   * vault.json.new còn — lần sau tiến tới bằng cách đổi nốt tên.
+   * Sự có mặt của profile.enc.new là thứ phân biệt hai trường hợp, nên
+   * luật phục hồi quyết định được, không phải đoán.
+   */
   change(oldPass, newPass) {
     const u = this.unlock(oldPass);
     if (!u.ok) return u;
     const check = validate(newPass);
     if (check) return {ok: false, error: check};
 
+    const coHoSo = fs.existsSync(this.dataPath);
     const current = this.read();
+    // Hồ sơ có mà đọc không ra thì DỪNG. Đổi khoá lúc này là chôn vĩnh viễn
+    // một tệp có thể vẫn cứu được bằng mã khoá cũ.
+    if (coHoSo && !current.ok) {
+      return {ok: false, error: 'Không đọc được hồ sơ hiện tại nên chưa đổi mã khoá'};
+    }
+
     const salt = crypto.randomBytes(32);
     const key = this.#derive(newPass, salt);
     const meta = JSON.parse(fs.readFileSync(this.metaPath, 'utf8'));
     meta.salt = salt.toString('base64');
     meta.probe = this.#seal(key, PROBE);
     meta.changedAt = new Date().toISOString();
-    fs.writeFileSync(this.metaPath, JSON.stringify(meta, null, 2), {mode: 0o600});
+    meta.saiLienTiep = 0;
+
+    if (coHoSo) ghiNguyenTu(this.dataPath + NEW, this.#seal(key, JSON.stringify(current.data)));
+    ghiNguyenTu(this.metaPath + NEW, JSON.stringify(meta, null, 2));
+    if (coHoSo) fs.renameSync(this.dataPath + NEW, this.dataPath);
+    fs.renameSync(this.metaPath + NEW, this.metaPath);
+
     this.key = key;
-    if (current.ok && current.data) this.write(current.data);
     return {ok: true};
   }
 

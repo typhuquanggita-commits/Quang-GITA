@@ -254,7 +254,7 @@ const BaiHoc: React.FC = () => {
           <select
             id="g-step"
             value={step}
-            onChange={(e) => setStep(e.target.value)}
+            onChange={(e) => setStep(e.currentTarget.value)}
             className="mt-1.5 w-full rounded-lg border border-slate-700 bg-slate-900 px-3 py-2 text-xs text-slate-200 focus:border-sky-500 focus:outline-none">
             {GITA_JOURNEY.map((s) => (
               <option key={s.no} value={String(s.no)}>
@@ -270,7 +270,7 @@ const BaiHoc: React.FC = () => {
           <select
             id="g-theme"
             value={theme}
-            onChange={(e) => setTheme(e.target.value)}
+            onChange={(e) => setTheme(e.currentTarget.value)}
             className="mt-1.5 w-full rounded-lg border border-slate-700 bg-slate-900 px-3 py-2 text-xs text-slate-200 focus:border-sky-500 focus:outline-none">
             <option value="all">Cả năm chủ đề · 25 bài</option>
             {THEMES.map((t) => (

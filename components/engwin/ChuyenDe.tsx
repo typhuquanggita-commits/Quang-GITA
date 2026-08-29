@@ -89,7 +89,7 @@ export const ChuyenDe: React.FC = () => {
         <select
           id="cd-pick"
           value={chon}
-          onChange={(e) => {setCd(e.target.value); setMoGiai(null);}}
+          onChange={(e) => {setCd(e.currentTarget.value); setMoGiai(null);}}
           className="max-w-full rounded-lg border border-slate-700 bg-slate-900 px-3 py-1.5 text-xs text-slate-200 focus:border-sky-500 focus:outline-none">
           {ds.map((d) => (
             <option key={d.id} value={d.id}>{d.id} · {d.ten}</option>

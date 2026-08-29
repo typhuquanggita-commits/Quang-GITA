@@ -60,7 +60,26 @@ const kiem: [string, string, boolean, string][] = [
   ['qt-2', 'q-cham-chinh-thuc', false, 'quản trị hệ thống KHÔNG được chấm bài lấy điểm'],
   ['qt-2', 'q-nang-cap-do', false, 'quản trị hệ thống KHÔNG được nâng cấp độ học viên'],
   ['qt-2', 'q-cap-chung-nhan', false, 'quản trị hệ thống KHÔNG được cấp chứng nhận'],
-  ['qt-2', 'q-gan-quyen', true, 'quản trị hệ thống mới được gán quyền'],
+  ['qt-3', 'q-gan-quyen', true, 'chỉ SUPER ADMIN mới được gán quyền'],
+  ['qt-2', 'q-gan-quyen', false, 'ADMIN HỆ THỐNG KHÔNG được gán quyền'],
+  ['qt-2', 'q-xoa-ho-so', false, 'ADMIN HỆ THỐNG KHÔNG xoá được hồ sơ'],
+  /*
+   * Ba dòng dưới là luật quan trọng nhất của cả bảng: bậc kỹ thuật cao nhất
+   * KHÔNG có quyền chuyên môn nào. Một người vừa sửa được điểm vừa xoá được
+   * dấu vết mình vừa sửa thì mọi con số của học viện đều mất giá trị.
+   */
+  ['qt-3', 'q-cham-chinh-thuc', false, 'SUPER ADMIN KHÔNG chấm bài'],
+  ['qt-3', 'q-nang-cap-do', false, 'SUPER ADMIN KHÔNG nâng cấp độ'],
+  ['qt-3', 'q-cap-chung-nhan', false, 'SUPER ADMIN KHÔNG cấp chứng nhận'],
+  ['dh-1', 'q-gan-quyen', false, 'GIÁM ĐỐC ĐIỀU HÀNH KHÔNG gán quyền'],
+  ['dh-1', 'q-doi-cau-hinh-he-thong', false, 'GIÁM ĐỐC ĐIỀU HÀNH KHÔNG đổi cấu hình kỹ thuật'],
+  ['dh-1', 'q-cham-chinh-thuc', false, 'GIÁM ĐỐC ĐIỀU HÀNH KHÔNG chấm bài'],
+  ['dh-1', 'q-xem-bao-cao-dieu-hanh', true, 'GIÁM ĐỐC ĐIỀU HÀNH xem được báo cáo điều hành'],
+  ['sp-1', 'q-xem-ho-so-toan-truong', false, 'ADMIN SẢN PHẨM KHÔNG xem hồ sơ học viên'],
+  ['sp-1', 'q-sua-noi-dung-chuan', false, 'ADMIN SẢN PHẨM duyệt chứ KHÔNG tự sửa bộ chuẩn'],
+  ['sp-1', 'q-duyet-noi-dung', true, 'ADMIN SẢN PHẨM duyệt được nội dung'],
+  ['kd-1', 'q-xep-cap-dau-vao', false, 'CỘNG TÁC VIÊN KHÔNG xếp cấp đầu vào'],
+  ['kd-2', 'q-xep-cap-dau-vao', true, 'TƯ VẤN xếp được cấp đầu vào'],
   ['gv-5', 'q-gan-quyen', false, 'chủ nhiệm chuyên môn KHÔNG được gán quyền hệ thống'],
   ['gv-5', 'q-kiem-dinh-nguoi-day', true, 'chủ nhiệm chuyên môn mới được kiểm định người dạy'],
   ['gv-1', 'q-cham-chinh-thuc', false, 'trợ giảng chưa được chấm bài lấy điểm'],

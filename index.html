@@ -3,6 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--
+      Chính sách nội dung cho BẢN WEB.
+
+      Bản máy tính nhận CSP qua đầu trang HTTP ở desktop/main.cjs. Bản web
+      không có máy chủ của riêng nó nên phải tự mang chính sách theo trong
+      thẻ meta, nếu không thì nó chạy hoàn toàn không có CSP — đúng chỗ mà
+      một lỗi XSS trở thành chạy mã tuỳ ý.
+
+      script-src KHÔNG có 'unsafe-inline': bản dựng Vite chỉ sinh một thẻ
+      script có src. Bản một tệp (SINGLE=1) thì mọi thứ nội tuyến theo đúng
+      định nghĩa, nên tools/xuat-mot-tep.mjs thay dòng này bằng bản dành
+      riêng cho nó và nói rõ vì sao.
+
+      frame-ancestors không có hiệu lực trong thẻ meta — trình duyệt bỏ qua.
+      Muốn chặn nhúng trang vào iframe thì phải đặt ở đầu trang HTTP, việc
+      này thuộc về nơi đăng bản web. Ghi ra đây thay vì để tưởng là đã có.
+    -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; media-src 'self'; font-src 'self' data:; connect-src 'self'; worker-src 'self'; frame-src 'none'; form-action 'none'; object-src 'none'; base-uri 'none'"
+    />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <title>ENGWIN365 — Lộ trình 0 → IELTS 8.0 trong 3 năm</title>
     <style>

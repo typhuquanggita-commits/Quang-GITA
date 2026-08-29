@@ -12,10 +12,27 @@
  * Chạy:  BASE=http://localhost:4173 node tools/kiem-tuong-tac.mjs
  */
 import {chromium} from 'playwright';
+import {moXemTruoc} from './mo-xem-truoc.mjs';
 
-const B = process.env.BASE || 'http://localhost:4173';
+// Tự dựng máy chủ xem trước nếu chưa có. Đặt BASE=<địa chỉ> để dùng máy
+// chủ có sẵn. Xem tools/mo-xem-truoc.mjs.
+const {base: B, dong: dongXemTruoc} = await moXemTruoc();
 const b=await chromium.launch({executablePath:'/opt/pw-browsers/chromium'});
-const p=await b.newPage({viewport:{width:1440,height:1000}});
+/*
+ * Phân quyền đã được BẬT, nên vai mặc định chỉ mở 32 trên 37 thẻ. Bài kiểm
+ * chạy bằng vai mặc định sẽ bỏ sót năm thẻ vận hành mà không báo gì. Đặt
+ * vai chủ nhiệm chuyên môn — vai duy nhất mở đủ 37 thẻ — trước khi trang
+ * dựng, để phạm vi kiểm không bị phân quyền thu hẹp trong im lặng.
+ */
+const ctx = await b.newContext({viewport:{width:1440,height:1000}});
+await ctx.addInitScript(() => {
+  try {
+    localStorage.setItem('engwin365.vai.v1', 'gv-5');
+  } catch {
+    /* chặn ghi thì chạy bằng vai mặc định; bài kiểm sẽ báo thiếu thẻ */
+  }
+});
+const p = await ctx.newPage();
 const errs=[]; p.on('pageerror',e=>errs.push(e.message.slice(0,150)));
 p.on('console',m=>m.type()==='error'&&errs.push(m.text().slice(0,150)));
 let bad=0;
@@ -229,7 +246,71 @@ const lai = await p.locator('main').innerText();
 ok('làm lại xoá hết đáp án đã mở', !/Lời giải —/.test(lai));
 ok('làm lại giữ nguyên lịch sử đã lưu', /trung bình/i.test(lai));
 
+// 13. PHÂN QUYỀN ĐANG BẬT THẬT, KHÔNG PHẢI CHỈ MÔ TẢ.
+//     Bài kiểm này chạy trên MỘT TRÌNH DUYỆT RIÊNG với vai mặc định, vì
+//     phiên hiện tại đã đặt vai gv-5 để quét đủ thẻ.
+{
+  const ctx2 = await b.newContext({viewport: {width: 1440, height: 1000}});
+  const p2 = await ctx2.newPage();
+  await p2.goto(B, {waitUntil: 'networkidle'});
+
+  const dem = async (pg) => (await pg.locator('aside nav button[data-tab]').count());
+  const co = async (pg, id) =>
+    (await pg.locator(`aside nav button[data-tab="${id}"]`).count()) > 0;
+
+  const soMacDinh = await dem(p2);
+  ok('vai mặc định KHÔNG mở đủ 37 thẻ — phân quyền có tác dụng thật',
+     soMacDinh === 32, `thấy ${soMacDinh}`);
+  ok('vai mặc định KHÔNG thấy thẻ Chấm bài', !(await co(p2, 'grading')));
+  ok('vai mặc định KHÔNG thấy thẻ Xưởng học liệu', !(await co(p2, 'studio')));
+  ok('vai mặc định vẫn thấy thẻ học của mình', await co(p2, 'phieu'));
+
+  // Thẻ bị chặn phải KHÔNG được dựng, chứ không phải dựng rồi che đi.
+  const html = await p2.content();
+  ok('thẻ bị chặn không nằm trong cây DOM dưới dạng bị ẩn',
+     !html.includes('data-tab="grading"'));
+
+  // Dải vai phải nói rõ đang ẩn bao nhiêu, không ẩn lặng lẽ.
+  const dai = await p2.locator('aside').innerText();
+  ok('dải vai nói rõ vai đang dùng', /Vai đang dùng/i.test(dai));
+  ok('dải vai đếm đúng số thẻ đang ẩn', /ẩn 5/.test(dai), dai.slice(0, 200));
+
+  // Đổi sang vai chủ nhiệm chuyên môn thì mở đủ 37.
+  await p2.getByRole('button', {name: 'Đổi vai'}).click();
+  await p2.waitForTimeout(300);
+  await p2.locator('button[data-vai="gv-5"]').click();
+  await p2.waitForTimeout(500);
+  const soGv5 = await dem(p2);
+  ok('đổi sang CHỦ NHIỆM CHUYÊN MÔN thì mở đủ 37 thẻ', soGv5 === 37, `thấy ${soGv5}`);
+  ok('vai gv-5 thấy được thẻ Chấm bài', await co(p2, 'grading'));
+
+  // SUPER ADMIN phải thấy ÍT thẻ hơn coach — quyền kỹ thuật không kèm quyền
+  // chuyên môn. Đây là luật quan trọng nhất của bảng, nên phải có bài kiểm.
+  await p2.getByRole('button', {name: 'Đổi vai'}).click();
+  await p2.waitForTimeout(300);
+  await p2.locator('button[data-vai="qt-3"]').click();
+  await p2.waitForTimeout(500);
+  const soSuper = await dem(p2);
+  ok('SUPER ADMIN thấy ít thẻ hơn CHỦ NHIỆM CHUYÊN MÔN',
+     soSuper < soGv5, `super ${soSuper} vs coach ${soGv5}`);
+  ok('SUPER ADMIN KHÔNG thấy thẻ Chấm bài', !(await co(p2, 'grading')));
+  ok('SUPER ADMIN KHÔNG thấy thẻ Làm bài', !(await co(p2, 'lambai')));
+
+  // Vai phải sống qua lần nạp lại trang.
+  await p2.reload({waitUntil: 'networkidle'});
+  ok('vai còn nguyên sau khi nạp lại trang', (await dem(p2)) === soSuper);
+
+  // Và phải nói thẳng đây không phải bảo mật.
+  await p2.getByRole('button', {name: 'Đổi vai'}).click();
+  await p2.waitForTimeout(300);
+  const loiCanhBao = await p2.locator('aside').innerText();
+  ok('nói thẳng đổi vai KHÔNG phải đổi quyền thật',
+     /không phải đổi quyền thật/i.test(loiCanhBao));
+
+  await ctx2.close();
+}
+
 ok('không có lỗi trên bảng điều khiển', errs.length===0, errs.slice(0,2).join(' | '));
 console.log(`\n  ${bad===0?'ĐẠT':`HỎNG — ${bad} lỗi`}\n`);
 await b.close();
-process.exit(bad?1:0);
+dongXemTruoc(), process.exit(bad?1:0);

@@ -1325,6 +1325,8 @@ export type NhomQuyen =
   | 'lộ trình'
   | 'nội dung'
   | 'chứng nhận'
+  | 'sản phẩm'
+  | 'điều hành'
   | 'vận hành';
 
 /** Một quyền cụ thể trong hệ thống. */
@@ -1344,7 +1346,14 @@ export interface Quyen {
 /** Một bậc quyền — một vai trò ở một nấc cụ thể. */
 export interface BacQuyen {
   id: string;
-  thang: 'học viên' | 'giảng dạy' | 'gia đình' | 'kinh doanh' | 'vận hành';
+  thang:
+    | 'học viên'
+    | 'giảng dạy'
+    | 'gia đình'
+    | 'kinh doanh'
+    | 'sản phẩm'
+    | 'điều hành'
+    | 'vận hành';
   no: number;
   ten: string;
   ai: string;

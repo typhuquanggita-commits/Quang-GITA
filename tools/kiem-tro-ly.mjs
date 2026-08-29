@@ -12,13 +12,30 @@
  * Chạy: BASE=http://localhost:4173 node tools/kiem-tro-ly.mjs
  */
 import {chromium} from 'playwright';
+import {moXemTruoc} from './mo-xem-truoc.mjs';
 
-const B = process.env.BASE || 'http://localhost:4173';
+// Tự dựng máy chủ xem trước nếu chưa có. Đặt BASE=<địa chỉ> để dùng máy
+// chủ có sẵn. Xem tools/mo-xem-truoc.mjs.
+const {base: B, dong: dongXemTruoc} = await moXemTruoc();
 const QUY = [10, 20, 30, 45, 60, 90];
 const NGAY = [1, 23, 63, 87, 111, 200, 291, 356, 363];
 
 const b = await chromium.launch({executablePath: '/opt/pw-browsers/chromium'});
-const p = await b.newPage({viewport: {width: 1440, height: 1000}});
+/*
+ * Phân quyền đã được BẬT, nên vai mặc định chỉ mở 32 trên 37 thẻ. Bài kiểm
+ * chạy bằng vai mặc định sẽ bỏ sót năm thẻ vận hành mà không báo gì. Đặt
+ * vai chủ nhiệm chuyên môn — vai duy nhất mở đủ 37 thẻ — trước khi trang
+ * dựng, để phạm vi kiểm không bị phân quyền thu hẹp trong im lặng.
+ */
+const ctx = await b.newContext({viewport: {width: 1440, height: 1000}});
+await ctx.addInitScript(() => {
+  try {
+    localStorage.setItem('engwin365.vai.v1', 'gv-5');
+  } catch {
+    /* chặn ghi thì chạy bằng vai mặc định; bài kiểm sẽ báo thiếu thẻ */
+  }
+});
+const p = await ctx.newPage();
 const errs = [];
 p.on('pageerror', (e) => errs.push(e.message.slice(0, 150)));
 
@@ -94,4 +111,4 @@ ok('đổi gói thì phạm vi trợ lý đổi theo', tuhoc !== kemsau);
 ok('không có lỗi trên bảng điều khiển', errs.length === 0, errs.slice(0, 2).join(' | '));
 console.log(`\n  ${bad === 0 ? 'ĐẠT' : `HỎNG — ${bad} lỗi`}\n`);
 await b.close();
-process.exit(bad ? 1 : 0);
+dongXemTruoc(), process.exit(bad ? 1 : 0);

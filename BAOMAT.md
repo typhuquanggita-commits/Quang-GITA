@@ -181,6 +181,63 @@ mạng dưới dạng gần như bản rõ.
 
 ---
 
+## 4b. Bốn lỗ hổng đã bịt trong đợt rà soát
+
+Bốn chỗ dưới đây từng có thật trong kho này. Mỗi chỗ nay có bài kiểm giữ —
+`npm run test:baomat` đọc thẳng mã nguồn, không tin lời khai.
+
+| Lỗ hổng | Trước | Nay |
+|---|---|---|
+| CSP cho script nội tuyến | `script-src 'self' 'unsafe-inline'` trong khi bản dựng không có script nội tuyến nào | `script-src 'self'`; bài kiểm **đếm** script nội tuyến để giữ điều kiện đó |
+| Bản web không có CSP | không có thẻ meta nào, và không máy chủ nào đặt hộ | mang chính sách trong thẻ meta của `index.html` |
+| Quyền `media` mở cả camera | `cb(permission === 'media')` — `media` gộp micro **và** webcam | xét `mediaTypes`: chỉ nhận khi có audio và không có video, chặn ở **cả hai cửa** |
+| Đổi mã khoá mất hồ sơ khi mất điện | ghi `vault.json` bằng khoá mới trước, mã hoá lại hồ sơ sau | dàn hai bản mới rồi đổi tên theo thứ tự cố định, kèm luật phục hồi |
+| Chờ chống dò mã về không khi tắt ứng dụng | đếm trong biến của tiến trình | đếm trong `vault.json`, tắt mở lại không xoá được |
+
+### Vì sao KHÔNG khoá vĩnh viễn sau N lần sai
+
+Nhiều hệ thống xoá dữ liệu sau mấy lần nhập sai. Ở đây **không** làm thế, và đó
+là lựa chọn có chủ ý: bản máy tính không có máy chủ, không có đường khôi phục,
+nên khoá vĩnh viễn nghĩa là một đứa trẻ nghịch bàn phím xoá được cả hồ sơ ba năm
+của anh chị nó. Thay vào đó thời gian chờ tăng luỹ thừa tới trần 30 giây và
+không bao giờ tự về không.
+
+Hàng rào thật vẫn là **scrypt N=2¹⁷**: mỗi lần thử tốn vài trăm mili giây CPU, kể
+cả khi kẻ tấn công bỏ qua ứng dụng và tấn công thẳng vào tệp trên đĩa — chỗ mà
+mọi thời gian chờ trong ứng dụng đều vô nghĩa.
+
+### Ghi nguyên tử và phục hồi sau mất điện
+
+Mọi lần ghi xuống két đều qua tệp tạm → `fsync` → đổi tên. Đổi tên là thao tác
+nguyên tử trên cùng phân vùng: hoặc tệp cũ còn nguyên, hoặc tệp mới đã đủ, không
+có trạng thái ở giữa. `fs.writeFileSync` thẳng lên tệp đích thì mất điện giữa
+chừng làm AES-GCM từ chối giải mã **cả tệp** — mất hồ sơ vĩnh viễn, không phải
+mất một phần.
+
+Đổi mã khoá chạm hai tệp nên không đổi tên cùng lúc được. Luật phục hồi quyết
+định được, không đoán:
+
+- còn `profile.enc.new` → chưa đổi tên tệp nào → **lùi lại**, xoá hai tệp dàn sẵn
+- chỉ còn `vault.json.new` → hồ sơ đã sang khoá mới → **tiến tới**, đổi nốt tên
+
+Và nếu hồ sơ đang hỏng thì hệ thống **từ chối đổi mã khoá** — đổi lúc đó là chôn
+vĩnh viễn một tệp có thể vẫn cứu được bằng mã cũ.
+
+## 4c. Phân quyền: chỗ nào là thật, chỗ nào không
+
+Nói thẳng để không ai hiểu nhầm:
+
+- **Trên bản web, phân quyền KHÔNG phải bảo mật.** Vai nằm trong bộ nhớ trình
+  duyệt; ai mở công cụ nhà phát triển cũng đổi được. Nó ngăn **nhầm lẫn** — người
+  tư vấn không mở nhầm màn hình chấm bài — chứ không ngăn được người cố ý.
+- **Trên bản máy tính, vai nằm trong két đã mã hoá.** Muốn đổi phải mở được két,
+  tức là phải có mã khoá. Đây là chỗ **duy nhất** phân quyền có hàng rào thật, và
+  nó chỉ tồn tại vì bản máy tính có két.
+- **Hiệu lực đầy đủ cần máy chủ:** vai gắn với phiên đăng nhập, và **mọi** thao
+  tác đọc ghi đều kiểm lại vai ở phía máy chủ, không tin bất cứ điều gì trình
+  duyệt gửi lên. `data/phanquyen.ts` là bản thiết kế cho tầng đó, không phải bản
+  thay thế nó.
+
 ## 5. Những gì hệ thống này KHÔNG bảo vệ
 
 Nói thẳng để bạn không tin nhầm:

@@ -2,7 +2,7 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  *
- * Kiểm TIẾP CẬN của bản web bằng axe-core, quét đủ cả 29 mục.
+ * Kiểm TIẾP CẬN của bản web bằng axe-core, quét đủ cả 37 thẻ.
  *
  * VÌ SAO CÓ BÀI NÀY
  *   Lần quét đầu tiên tìm ra 3.356 chỗ chữ không đủ tương phản, trải khắp 29
@@ -17,22 +17,53 @@
  * Chạy:  BASE=http://localhost:4173 node tools/kiem-tiep-can.mjs
  */
 import {chromium} from 'playwright';
+import {moXemTruoc} from './mo-xem-truoc.mjs';
 import {readFileSync} from 'node:fs';
 
-const B = process.env.BASE || 'http://localhost:4173';
+// Tự dựng máy chủ xem trước nếu chưa có. Đặt BASE=<địa chỉ> để dùng máy
+// chủ có sẵn. Xem tools/mo-xem-truoc.mjs.
+const {base: B, dong: dongXemTruoc} = await moXemTruoc();
 const axe = readFileSync('node_modules/axe-core/axe.min.js', 'utf8');
 
+/*
+ * bypassCSP CHỈ CHO TRÌNH DUYỆT CỦA BÀI KIỂM, KHÔNG PHẢI CHO SẢN PHẨM.
+ *
+ * Bản web mang chính sách script-src 'self', nên trình duyệt từ chối mọi
+ * script nội tuyến — kể cả script mà bài kiểm bơm vào để chạy axe-core.
+ * Đó là CSP làm đúng việc của nó. Nới CSP để bài kiểm chạy được là bán rẻ
+ * lớp chặn XSS mạnh nhất của trang để lấy một con số xanh; ở đây làm ngược
+ * lại: trang giữ nguyên chính sách, chỉ phiên trình duyệt của bài kiểm mới
+ * được phép bơm mã. tools/kiem-bao-mat.mjs kiểm rằng chính sách của trang
+ * vẫn còn nguyên.
+ *
+ * VAI GV-5 ĐỂ QUÉT ĐỦ MỌI THẺ
+ * Phân quyền đã được bật, nên vai mặc định chỉ mở 32 trên 37 thẻ. Quét
+ * bằng vai mặc định thì năm thẻ vận hành không bao giờ được soi. Đặt vai
+ * chủ nhiệm chuyên môn — vai duy nhất mở đủ 37 thẻ — trước khi trang dựng.
+ */
 const b = await chromium.launch({executablePath: '/opt/pw-browsers/chromium'});
-const p = await b.newPage({viewport: {width: 1440, height: 1000}});
+const ctx = await b.newContext({viewport: {width: 1440, height: 1000}, bypassCSP: true});
+await ctx.addInitScript(() => {
+  try {
+    localStorage.setItem('engwin365.vai.v1', 'gv-5');
+  } catch {
+    /* chặn ghi thì quét bằng vai mặc định, số thẻ sẽ ít hơn và bài kiểm báo */
+  }
+});
+const p = await ctx.newPage();
 await p.goto(B, {waitUntil: 'networkidle'});
 
 console.log('\n  KIỂM TIẾP CẬN — WCAG 2.1 mức A và AA\n');
 
 const tabs = await p.$$eval('aside nav button[data-tab]', (es) => es.map((e) => e.dataset.tab));
-if (tabs.length < 20) {
-  console.log(`  ✗ chỉ thấy ${tabs.length} mục — bộ chọn đã lỗi thời\n`);
+const CAN_QUET = 37;
+if (tabs.length !== CAN_QUET) {
+  console.log(
+    `  ✗ thấy ${tabs.length} mục, cần đủ ${CAN_QUET} — hoặc bộ chọn lỗi thời, ` +
+      `hoặc vai gv-5 không đặt được nên còn thẻ chưa quét\n`,
+  );
   await b.close();
-  process.exit(1);
+  dongXemTruoc(), process.exit(1);
 }
 
 const gop = {};
@@ -75,4 +106,4 @@ if (tong === 0) {
   console.log(`\n  HỎNG — ${tong} chỗ vi phạm\n`);
 }
 await b.close();
-process.exit(tong === 0 ? 0 : 1);
+dongXemTruoc(), process.exit(tong === 0 ? 0 : 1);

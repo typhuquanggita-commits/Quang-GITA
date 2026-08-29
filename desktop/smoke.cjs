@@ -153,6 +153,39 @@ async function chay() {
      (await run("document.querySelectorAll('aside nav button').length")) === 0);
   await run("window.engwin.vault.unlock('Engwin365!')");
 
+  /* ------------------- VAI NẰM TRONG KÉT, KHÔNG PHẢI TRONG localStorage ----
+   * data/phien.ts khai rằng trên bản máy tính, vai được cất trong két đã mã
+   * hoá nên đổi vai phải mở được két. Lời khai đó chỉ đáng tin nếu có chỗ
+   * chứng minh nó chạy thật — đây là chỗ đó.
+   *
+   * Phép thử: ghi vai vào két, xoá sạch localStorage (mô phỏng người dùng
+   * sửa tay hoặc đổi máy), nạp lại trang, rồi xem giao diện có lấy lại đúng
+   * vai từ két không.
+   */
+  await run("window.engwin.vault.write({vai: 'qt-3'})");
+  await run('localStorage.clear()');
+  wc.reload();
+  await new Promise((r) => wc.once('did-finish-load', r));
+  await new Promise((r) => setTimeout(r, 2500));
+  const vaiSauNap = await run("localStorage.getItem('engwin365.vai.v1')");
+  ok('vai lấy lại được từ KÉT sau khi localStorage bị xoá sạch',
+     vaiSauNap === 'qt-3', String(vaiSauNap));
+  const soTheSuper = await run("document.querySelectorAll('aside nav button[data-tab]').length");
+  ok('vai từ két được thi hành thật — SUPER ADMIN chỉ mở 26 thẻ',
+     soTheSuper === 26, String(soTheSuper));
+  ok('SUPER ADMIN KHÔNG thấy thẻ chấm bài trên bản máy tính',
+     (await run("document.querySelectorAll('aside nav button[data-tab=\"grading\"]').length")) === 0);
+
+  // Két khoá lại thì không đọc được vai nữa — đó chính là hàng rào.
+  await run('window.engwin.vault.lock()');
+  const docKhiKhoa = await run(
+    '(async () => (await window.engwin.vault.read()).ok)()',
+  );
+  ok('két khoá thì KHÔNG đọc được vai ra nữa', docKhiKhoa === false);
+  await run("window.engwin.vault.unlock('Engwin365!')");
+  await run("window.engwin.vault.write({})");
+  await run('localStorage.clear()');
+
   // Giao thức app:// không được cho đọc ra ngoài thư mục dist.
   // Dạng %2e%2e là dạng nguy hiểm thật: giao thức chuẩn không tự rút gọn nó,
   // nên nó đi thẳng tới bộ xử lý và chỉ bị chặn nhờ kiểm tra đường dẫn ở đó.

@@ -44,3 +44,4 @@ export * from './giaide';
 export * from './hoso';
 export * from './chuyende';
 export * from './nganhang';
+export * from './phien';

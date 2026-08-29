@@ -85,7 +85,7 @@ export const GiangSau: React.FC = () => {
         <select
           id="gs-cap"
           value={cap}
-          onChange={(e) => {setCap(e.target.value); setMo(null);}}
+          onChange={(e) => {setCap(e.currentTarget.value); setMo(null);}}
           className="rounded-lg border border-slate-700 bg-slate-900 px-3 py-1.5 text-xs text-slate-200 focus:border-sky-500 focus:outline-none">
           {LEVELS.map((l) => (
             <option key={l.id} value={l.id}>{l.id} · {l.name}</option>

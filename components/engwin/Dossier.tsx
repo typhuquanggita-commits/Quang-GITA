@@ -236,7 +236,7 @@ export const Dossier: React.FC = () => {
           min={1}
           max={365}
           value={jump}
-          onChange={(e) => setJump(e.target.value)}
+          onChange={(e) => setJump(e.currentTarget.value)}
           placeholder="1–365"
           className="w-28 rounded-lg border border-slate-700 bg-slate-900 px-3 py-1.5 text-xs text-slate-200 placeholder:text-slate-400 focus:border-sky-500 focus:outline-none"
         />

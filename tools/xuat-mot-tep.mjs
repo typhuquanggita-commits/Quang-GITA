@@ -75,7 +75,29 @@ let head = lay('head')
   // Artifact tự gắn biểu tượng, và ./favicon.svg không tồn tại ở đó.
   .replace(/<link rel="icon"[^>]*>\s*/g, '')
   // Tiêu đề được đặt lại ở khối NEN bên dưới.
-  .replace(/<title>[\s\S]*?<\/title>\s*/g, '');
+  .replace(/<title>[\s\S]*?<\/title>\s*/g, '')
+  /*
+   * CSP CỦA BẢN MỘT TỆP KHÁC CSP CỦA BẢN WEB, VÀ PHẢI NÓI RÕ VÌ SAO.
+   *
+   * index.html mang chính sách script-src 'self' vì bản dựng thường chỉ có
+   * một thẻ script có src. Bản một tệp thì gộp CẢ CSS lẫn JS vào trong
+   * trang theo đúng định nghĩa của nó, nên 'self' sẽ chặn chính mã của
+   * trang và cửa sổ trắng trơn.
+   *
+   * Đây là nới lỏng thật, không phải hình thức: trong tệp này 'unsafe-inline'
+   * cho script nghĩa là CSP không còn chặn được XSS. Bù lại, tệp một-tệp
+   * không nạp gì từ bên ngoài — default-src, connect-src và img-src vẫn
+   * chặn mọi đường ra Internet, nên dữ liệu không rời khỏi trang được.
+   * Bản để CÀI ĐẶT là bản máy tính và bản web, cả hai đều giữ script-src
+   * 'self'; tệp một-tệp chỉ dùng để xem nhanh.
+   */
+  .replace(
+    /<meta\s+http-equiv="Content-Security-Policy"[\s\S]*?\/>/,
+    '<meta http-equiv="Content-Security-Policy" content="' +
+      "default-src 'self'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; " +
+      "img-src 'self' data:; media-src 'self'; font-src 'self' data:; " +
+      "connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'\" />",
+  );
 
 const out = `<title>${TIEU_DE}</title>\n${head}\n${NEN}\n${lay('body')}`;
 

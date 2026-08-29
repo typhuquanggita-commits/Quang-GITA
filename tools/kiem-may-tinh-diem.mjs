@@ -10,10 +10,27 @@
  * Chạy: BASE=http://localhost:4173 node tools/kiem-may-tinh-diem.mjs
  */
 import {chromium} from 'playwright';
+import {moXemTruoc} from './mo-xem-truoc.mjs';
 
-const B = process.env.BASE || 'http://localhost:4173';
+// Tự dựng máy chủ xem trước nếu chưa có. Đặt BASE=<địa chỉ> để dùng máy
+// chủ có sẵn. Xem tools/mo-xem-truoc.mjs.
+const {base: B, dong: dongXemTruoc} = await moXemTruoc();
 const browser = await chromium.launch({executablePath: '/opt/pw-browsers/chromium'});
-const p = await browser.newPage({viewport: {width: 1440, height: 1050}});
+/*
+ * Phân quyền đã được BẬT, nên vai mặc định chỉ mở 32 trên 37 thẻ. Bài kiểm
+ * chạy bằng vai mặc định sẽ bỏ sót năm thẻ vận hành mà không báo gì. Đặt
+ * vai chủ nhiệm chuyên môn — vai duy nhất mở đủ 37 thẻ — trước khi trang
+ * dựng, để phạm vi kiểm không bị phân quyền thu hẹp trong im lặng.
+ */
+const ctx = await browser.newContext({viewport: {width: 1440, height: 1050}});
+await ctx.addInitScript(() => {
+  try {
+    localStorage.setItem('engwin365.vai.v1', 'gv-5');
+  } catch {
+    /* chặn ghi thì chạy bằng vai mặc định; bài kiểm sẽ báo thiếu thẻ */
+  }
+});
+const p = await ctx.newPage();
 const errs = [];
 p.on('pageerror', (e) => errs.push(e.message.slice(0, 150)));
 
@@ -89,4 +106,4 @@ ok('số câu cần đúng không bao giờ vượt số câu có', vuot === 0, 
 ok('không lỗi trên bảng điều khiển', errs.length === 0, errs[0]);
 console.log(`\n  ${bad === 0 ? 'ĐẠT' : `HỎNG — ${bad} lỗi`}\n`);
 await browser.close();
-process.exit(bad ? 1 : 0);
+dongXemTruoc(), process.exit(bad ? 1 : 0);

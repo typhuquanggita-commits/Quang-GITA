@@ -96,7 +96,7 @@ const TraPhieu: React.FC = () => {
         <select
           id="ph-cap"
           value={cap}
-          onChange={(e) => {setCap(e.target.value); setMo(0);}}
+          onChange={(e) => {setCap(e.currentTarget.value); setMo(0);}}
           className="rounded-lg border border-slate-700 bg-slate-900 px-3 py-1.5 text-xs text-slate-200 focus:border-sky-500 focus:outline-none">
           {LEVELS.map((l) => (
             <option key={l.id} value={l.id}>{l.id} · {l.name}</option>
@@ -221,7 +221,7 @@ const ThuCham: React.FC = () => {
                 aria-label={`Số câu đúng phần ${f.ten}`}
                 onChange={(e) => {
                   const v = [...dung];
-                  v[i] = Number(e.target.value);
+                  v[i] = Number(e.currentTarget.value);
                   setDung(v);
                   setDaLuu(false);
                 }}
@@ -313,7 +313,7 @@ const ThuCham: React.FC = () => {
         <input
           id="ph-lichsu"
           value={lichSu}
-          onChange={(e) => setLichSu(e.target.value)}
+          onChange={(e) => setLichSu(e.currentTarget.value)}
           aria-label="Điểm các phiếu đã làm"
           className="mt-3 w-full rounded-lg border border-slate-700 bg-slate-900 px-3 py-2 text-sm text-slate-200 placeholder:text-slate-400 focus:border-sky-500 focus:outline-none"
         />
@@ -355,7 +355,7 @@ const BoGiai: React.FC<{dangId?: string}> = ({dangId}) => {
         <select
           id="gi-dang"
           value={chon}
-          onChange={(e) => setChon(e.target.value)}
+          onChange={(e) => setChon(e.currentTarget.value)}
           className="max-w-full rounded-lg border border-slate-700 bg-slate-900 px-3 py-1.5 text-xs text-slate-200 focus:border-sky-500 focus:outline-none">
           {DANG_BAI.map((d) => (
             <option key={d.id} value={d.id}>{d.id} · {d.ten}</option>

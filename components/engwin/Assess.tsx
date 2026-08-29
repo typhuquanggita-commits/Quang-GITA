@@ -252,7 +252,7 @@ const Kho: React.FC = () => {
           <select
             id="sy-pick"
             value={symptomId}
-            onChange={(e) => setSymptomId(e.target.value)}
+            onChange={(e) => setSymptomId(e.currentTarget.value)}
             className="mt-1.5 w-full rounded-lg border border-slate-700 bg-slate-900 px-3 py-2 text-xs text-slate-200 focus:border-sky-500 focus:outline-none">
             {shown.map((s) => (
               <option key={s.id} value={s.id}>
@@ -268,7 +268,7 @@ const Kho: React.FC = () => {
           <select
             id="lv-pick"
             value={levelId}
-            onChange={(e) => setLevelId(e.target.value)}
+            onChange={(e) => setLevelId(e.currentTarget.value)}
             className="mt-1.5 w-full rounded-lg border border-slate-700 bg-slate-900 px-3 py-2 text-xs text-slate-200 focus:border-sky-500 focus:outline-none">
             {LEVELS.map((l) => (
               <option key={l.id} value={l.id}>

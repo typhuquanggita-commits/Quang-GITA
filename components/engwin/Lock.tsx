@@ -46,7 +46,7 @@ const Input: React.FC<{
       type="password"
       value={value}
       autoFocus={autoFocus}
-      onChange={(e) => onChange(e.target.value)}
+      onChange={(e) => onChange(e.currentTarget.value)}
       onKeyDown={(e) => e.key === 'Enter' && onEnter?.()}
       className="mt-1.5 w-full rounded-lg border border-slate-700 bg-slate-900 px-3.5 py-2.5 text-sm text-slate-100 focus:border-sky-500 focus:outline-none"
     />

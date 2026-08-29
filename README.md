@@ -627,10 +627,122 @@ ngữ pháp lớn, bài đọc dài, phần biến đổi câu), không dựa tr
 Mỗi bài nối tới đúng một phiếu luyện. *Bài giảng không có phiếu đi kèm là bài giảng chỉ
 để nghe cho sướng tai.*
 
+## 🛡 Bảo mật — bốn lỗ hổng đã bịt
+
+Rà soát toàn bộ bản máy tính và bản web, tìm ra bốn chỗ hổng thật và bịt cả bốn. Mỗi
+chỗ đều có bài kiểm giữ (`npm run test:baomat`, 38 phép kiểm đọc thẳng mã nguồn).
+
+1. **CSP cho script nội tuyến.** Bản máy tính chạy `script-src 'self' 'unsafe-inline'`
+   trong khi bản dựng **không có thẻ script nội tuyến nào** — tức là đang tự bỏ đi lớp
+   chặn XSS mạnh nhất mà CSP có, đổi lấy không gì cả. Nay là `script-src 'self'`, và
+   bài kiểm **đếm** số script nội tuyến trong bản dựng để chứng minh điều kiện đó vẫn
+   đúng. **Bản web trước đó không có CSP nào cả** — không máy chủ nào đặt hộ đầu trang
+   cho nó — nay mang chính sách trong thẻ meta.
+2. **Quyền `media` mở cả webcam.** Trong Electron, `media` gộp micro **và** camera; trả
+   `true` cho `media` mà không xét `mediaTypes` là mở luôn webcam — thứ khối PHẢN XẠ
+   không cần đến bao giờ. Nay chỉ chấp thuận khi yêu cầu có audio và không có video, và
+   chặn ở **cả hai cửa** (`setPermissionRequestHandler` lẫn `setPermissionCheckHandler`
+   — chỉ đặt một cửa là còn cửa kia mở). Thêm: từ chối mọi thiết bị HID/USB/cổng nối
+   tiếp, và chặn `will-attach-webview` ở tầng ứng dụng.
+3. **Đổi mã khoá làm mất hồ sơ khi mất điện.** Bản cũ ghi `vault.json` bằng khoá mới
+   **trước** rồi mới mã hoá lại `profile.enc`. Mất điện giữa hai bước đó thì két có
+   khoá mới còn hồ sơ vẫn nằm dưới khoá cũ — mở được két mà không đọc được gì, và
+   không có đường lùi. Nay hai bản mới được dàn sẵn rồi đổi tên theo thứ tự cố định,
+   kèm **luật phục hồi quyết định được** cho cả hai trạng thái dở dang. Mọi lần ghi
+   xuống két đều qua `ghi nguyên tử` (tệp tạm + `fsync` + đổi tên). Và nếu hồ sơ đang
+   hỏng thì hệ thống **từ chối đổi mã khoá**, thay vì chôn vĩnh viễn một tệp có thể
+   vẫn cứu được bằng mã cũ.
+4. **Thời gian chờ chống dò mã về không khi tắt ứng dụng.** Số lần nhập sai nằm trong
+   một biến của tiến trình chính, nên người dò mã chỉ cần tắt rồi mở lại. Nay nó nằm
+   trong `vault.json`. Cố ý **không** khoá vĩnh viễn sau N lần sai: ở đây không có máy
+   chủ, không có đường khôi phục, nên khoá vĩnh viễn nghĩa là một đứa trẻ nghịch bàn
+   phím xoá được cả hồ sơ ba năm. Thời gian chờ tăng luỹ thừa tới trần 30 giây và
+   không bao giờ tự về không.
+
+Két nay có **60 phép kiểm** (trước là 36), gồm cả hai kịch bản mất điện dựng lại thật.
+
+**Còn nguyên và vẫn nói thẳng:** chưa có chứng chỉ ký mã (~200–400 USD/năm) nên
+Windows vẫn cảnh báo SmartScreen; và chưa có ISO 27001 / SOC 2.
+
+## 🧯 Bật `strict` cho TypeScript
+
+Kho này chạy `strict: false` từ đầu. Bật lên thì ra **5.235 lỗi** — nhưng 4.973 trong
+số đó là TS7026, tức là TypeScript không tìm thấy khai báo kiểu của React, chứ không
+phải lỗi mã. Trỏ `paths` về `preact/compat` (đúng thứ **thật sự chạy** lúc chạy) thì
+còn **41 lỗi thật**:
+
+- **19 chỗ `e.target.value`** — dưới kiểu của preact, `e.target` là `EventTarget | null`.
+  Đổi sang `e.currentTarget.value`: vừa đúng kiểu, vừa đúng ngữ nghĩa (với ô nhập có
+  điều khiển thì `currentTarget` mới là phần tử gắn handler; `target` có thể là con).
+- **2 chỗ `possibly undefined`** — chính là lỗi tôi vừa tạo ra khi làm thẻ có thể bị
+  chặn. Sửa bằng một màn hình dự phòng nói rõ chuyện gì xảy ra, không phải bằng `!`.
+
+Nay **`strict: true`, 0 lỗi**.
+
+## 🔧 Mọi script tự chạy được
+
+Năm bài kiểm chạy bằng trình duyệt vốn nối cứng tới `localhost:4173` và cho rằng có
+người đã bật máy chủ sẵn. Ai chạy `npm run test:web` mà chưa bật thì nhận về một vệt
+`ERR_CONNECTION_REFUSED` — không nói được là thiếu máy chủ, và trông hệt như phần mềm
+hỏng. Nay `tools/mo-xem-truoc.mjs` tự dựng máy chủ trên **cổng còn trống** (không phải
+cổng cố định: hai bài kiểm chạy song song trên cùng cổng thì cái sau nối vào bản dựng
+của cái trước và cho kết quả sai mà vẫn xanh), đợi tới khi nó trả lời thật, rồi dọn đi
+— kể cả khi bài kiểm hỏng giữa chừng.
+
 ## 🔐 Phân quyền theo cấp độ học viên và cấp độ giáo viên
 
-**34 quyền · 14 bậc · 5 thang.** Hai thang song song: học viên lên theo **5 tầng năng
-lực**, người dạy lên theo **5 nấc nghề** lấy thẳng từ thang coach có sẵn.
+**39 quyền · 18 bậc · 7 thang — và nay đã được BẬT, không chỉ mô tả.**
+
+Tám nhóm vai theo đúng quy định quyền của GITA365:
+
+| Thang | Bậc | Mở được |
+|---|---|---|
+| Học viên | 5 tầng năng lực (KHAI NHĨ → TINH LUYỆN) | 30 → 32 thẻ |
+| Giảng dạy | TRỢ GIẢNG → COACH TẬP SỰ → COACH → COACH DẪN DẮT → CHỦ NHIỆM CHUYÊN MÔN | 32 → **37** thẻ |
+| Gia đình | PHỤ HUYNH | 26 thẻ |
+| Kinh doanh | CỘNG TÁC VIÊN → TƯ VẤN | 26 thẻ |
+| Sản phẩm | **ADMIN SẢN PHẨM** | 30 thẻ |
+| Điều hành | **GIÁM ĐỐC ĐIỀU HÀNH** | 27 thẻ |
+| Vận hành | QUẢN TRỊ HỌC VỤ → **ADMIN HỆ THỐNG** → **SUPER ADMIN** | 26 thẻ |
+
+**Con số đáng chú ý nhất trong bảng trên: SUPER ADMIN mở được ÍT thẻ hơn một COACH.**
+Đó không phải lỗi — đó là cả thiết kế. Super Admin gán được quyền, xoá được hồ sơ, khôi
+phục được dữ liệu, đóng băng được hệ thống; và **không** chấm bài, **không** nâng hạ cấp
+độ, **không** cấp chứng nhận, **không** quyết định chính sách học thuật. Một người vừa
+sửa được điểm vừa xoá được dấu vết mình vừa sửa thì mọi con số của học viện đều mất giá
+trị. Có bài kiểm ở **cả hai tầng** — bảng quyền và tầng thi hành — vì một luật chỉ được
+kiểm ở một chỗ là một luật dễ vỡ.
+
+Ba tách bạch khác cùng loại:
+
+- **ADMIN SẢN PHẨM duyệt và phát hành, nhưng KHÔNG tự sửa bộ chuẩn.** Gộp quyền soạn với
+  quyền duyệt vào một vai là bỏ luôn giá trị của bước duyệt. Vai này cũng **không xem hồ
+  sơ học viên** — người làm nội dung không cần dữ liệu từng em để làm tốt việc của mình.
+- **GIÁM ĐỐC ĐIỀU HÀNH đặt chính sách học thuật nhưng KHÔNG có tay kỹ thuật để tự sửa
+  con số trong cấu hình.** Không ai vừa đặt luật vừa tự tay sửa luật.
+- **ADMIN HỆ THỐNG lo kỹ thuật hằng ngày nhưng KHÔNG gán quyền, KHÔNG xoá hồ sơ.** Hai
+  việc không đảo ngược đó nằm ở bậc trên.
+
+### Bật thật nghĩa là gì
+
+Thẻ không thuộc quyền của vai thì **không được dựng** — nó không nằm trong cây DOM dưới
+dạng bị ẩn. Dựng rồi che đi là kiểu chặn giả. Bài kiểm giao diện xác nhận đúng điều đó,
+và xác nhận rằng vai mặc định mở 32/37 thẻ chứ không phải 37 — nếu mọi vai đều mở được
+mọi thẻ thì tầng này chỉ là trang trí.
+
+**Không thẻ nào biến mất lặng lẽ.** Dải vai trên đầu màn hình luôn hiện vai đang dùng,
+số quyền, số thẻ mở và số thẻ ẩn. Ẩn mà không nói là cách chắc chắn để người dùng tưởng
+phần mềm hỏng.
+
+### Một chỗ mạnh hơn giao diện, và đúng một chỗ
+
+Trên **bản máy tính**, vai được cất trong **chính cái két đã mã hoá** đang giữ hồ sơ.
+Muốn đổi vai phải mở được két, tức là phải có mã khoá. Bài kiểm khói chứng minh điều đó
+chạy thật: ghi vai vào két, **xoá sạch localStorage**, nạp lại trang — giao diện lấy
+lại đúng vai từ két và thi hành nó; khoá két lại thì không đọc được vai nữa.
+
+Trên **bản web** thì vai nằm trong bộ nhớ trình duyệt và đổi được bằng tay. Điều đó
+được ghi thẳng ra màn hình, ngay trong bảng đổi vai, chứ không giấu.
 
 **Nói trước một điều:** phân quyền ở giao diện **không phải bảo mật**. Ai mở công cụ nhà
 phát triển đều đổi được vai của mình. Nó ngăn nhầm lẫn, không ngăn được người cố ý —
@@ -642,13 +754,17 @@ Bốn nguyên tắc, và mỗi cái đều có bài kiểm giữ:
 1. **Đặc quyền tối thiểu** — mỗi quyền phải trả lời được "vì sao nó bị chặn". Quyền nào
    không trả lời được thì mở cho tất cả.
 2. **Không ai tự nâng mình** — học viên tầng 5 vẫn không nâng cấp độ được cho ai.
-3. **Việc không đảo ngược cần hai người** — 10 việc, và cả 10 đều đồng thời ghi nhật ký.
-4. **Quyền kỹ thuật không kèm quyền chuyên môn** — quản trị hệ thống gán được quyền
-   nhưng **không** chấm bài, **không** nâng cấp độ, **không** cấp chứng nhận. Trộn hai
-   thứ này là lỗi thiết kế phổ biến nhất của các hệ quản lý học tập.
+3. **Việc không đảo ngược cần hai người** — 13 việc, và cả 13 đều đồng thời ghi nhật ký.
+   Ngoại lệ duy nhất là **đóng băng hệ thống khẩn cấp**: một người kéo được thì mới kịp,
+   bù lại nó ghi nhật ký và phải giải trình trong 24 giờ.
+4. **Quyền kỹ thuật không kèm quyền chuyên môn** — xem bảng trên.
 
-Bài kiểm `tools/kiem-quyen.ts` ép thừa kế phải **đơn điệu** — bậc trên luôn có đủ mọi
-quyền của bậc dưới — và soát 17 cặp tách bạch trách nhiệm bằng khẳng định cụ thể.
+`tools/kiem-quyen.ts` ép thừa kế phải **đơn điệu** — bậc trên luôn có đủ mọi quyền của
+bậc dưới — và soát 32 cặp tách bạch trách nhiệm bằng khẳng định cụ thể.
+`tools/kiem-phien.ts` kiểm tầng thi hành: mọi thẻ trong `App.tsx` phải được neo vào một
+quyền **có thật** (thẻ quên khai báo sẽ bị khoá với *mọi* vai — phải đỏ lên ở đây chứ
+không phải để người dùng phát hiện), mọi vai phải mở được ít nhất một thẻ, và mọi lần
+bị chặn phải nói được **vì sao** cùng **vai nào mở được**.
 
 ## 🎯 Luyện thi chuyên Anh & lớp chất lượng cao vào 10 — Hà Nội
 

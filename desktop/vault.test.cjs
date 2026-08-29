@@ -121,6 +121,112 @@ ok('xoá được két', v.destroy().ok === true);
 ok('xoá xong thì coi như chưa khởi tạo', v.isInitialised === false);
 ok('xoá xong thì tệp không còn', !fs.existsSync(path.join(dir, 'profile.enc')));
 
+/* ===================================================================== *
+ * 11. THỜI GIAN CHỜ PHẢI SỐNG SÓT QUA VIỆC TẮT MỞ ỨNG DỤNG
+ * Đây là lỗ hổng thật của bản trước: đếm số lần sai trong bộ nhớ tiến trình
+ * nên tắt mở lại là về không. Bài kiểm dựng một đối tượng Vault MỚI hoàn
+ * toàn — đúng cái xảy ra khi mở lại ứng dụng — rồi kiểm số đếm còn nguyên.
+ * ===================================================================== */
+const dir2 = fs.mkdtempSync(path.join(os.tmpdir(), 'engwin-vault-cho-'));
+const v2 = new Vault(dir2);
+v2.create('Engwin365!');
+ok('mới tạo thì không phải chờ', v2.choMs === 0 && v2.soLanSai === 0);
+for (let i = 0; i < 4; i++) v2.unlock('SaiRoi123');
+ok('nhập sai bốn lần thì đếm đủ bốn', v2.soLanSai === 4, `thấy ${v2.soLanSai}`);
+ok('nhập sai bốn lần thì phải chờ', v2.choMs > 0, `chờ ${v2.choMs}ms`);
+const v2b = new Vault(dir2);
+ok('tắt mở lại KHÔNG xoá được số lần sai', v2b.soLanSai === 4, `thấy ${v2b.soLanSai}`);
+ok('tắt mở lại vẫn phải chờ', v2b.choMs > 0, `chờ ${v2b.choMs}ms`);
+ok('chờ có trần 30 giây', (() => {
+  for (let i = 0; i < 40; i++) v2b.unlock('SaiRoi123');
+  return v2b.choMs === 30_000;
+})(), `chờ ${v2b.choMs}ms`);
+ok('nhập đúng thì số lần sai về không', v2b.unlock('Engwin365!').ok === true && v2b.soLanSai === 0);
+ok('sai nhiều lần KHÔNG khoá vĩnh viễn két', v2b.isUnlocked === true);
+
+/* ===================================================================== *
+ * 12. GHI NGUYÊN TỬ — KHÔNG ĐỂ LẠI TỆP TẠM
+ * ===================================================================== */
+v2b.write({a: 1});
+const rac = fs.readdirSync(dir2).filter((f) => f.includes('.tmp-'));
+ok('ghi xong không để lại tệp tạm', rac.length === 0, rac.join(', '));
+
+/* ===================================================================== *
+ * 13. ĐỔI MÃ KHOÁ — HỒ SƠ PHẢI SANG ĐƯỢC KHOÁ MỚI
+ * ===================================================================== */
+v2b.write({dulieu: 'quan trọng', n: 42});
+ok('đổi mã khoá thành công', v2b.change('Engwin365!', 'Engwin366?').ok === true);
+ok('đổi xong đọc lại đúng dữ liệu cũ', v2b.read().data?.n === 42);
+ok('đổi xong mã cũ KHÔNG mở được', (() => {
+  v2b.lock();
+  return v2b.unlock('Engwin365!').ok === false;
+})());
+ok('đổi xong mã mới mở được', v2b.unlock('Engwin366?').ok === true);
+ok('đổi mã khoá không để lại tệp dàn sẵn',
+   !fs.existsSync(path.join(dir2, 'vault.json.new')) &&
+   !fs.existsSync(path.join(dir2, 'profile.enc.new')));
+
+/* Hồ sơ hỏng thì PHẢI từ chối đổi mã khoá, không được chôn nó vĩnh viễn. */
+const nguyen = fs.readFileSync(path.join(dir2, 'profile.enc'), 'utf8');
+fs.writeFileSync(path.join(dir2, 'profile.enc'), 'khong-phai-base64-hop-le');
+const thu = v2b.change('Engwin366?', 'Engwin367#');
+ok('hồ sơ hỏng thì từ chối đổi mã khoá', thu.ok === false, JSON.stringify(thu));
+ok('từ chối rồi thì mã khoá cũ vẫn còn hiệu lực', (() => {
+  fs.writeFileSync(path.join(dir2, 'profile.enc'), nguyen);
+  v2b.lock();
+  return v2b.unlock('Engwin366?').ok === true && v2b.read().data?.n === 42;
+})());
+
+/* ===================================================================== *
+ * 14. PHỤC HỒI SAU KHI MẤT ĐIỆN GIỮA LÚC ĐỔI MÃ KHOÁ
+ * Dựng lại đúng hai trạng thái dở dang rồi kiểm luật phục hồi.
+ * ===================================================================== */
+// (a) Mất điện TRƯỚC khi đổi tên tệp nào: còn cả hai tệp .new → phải lùi lại.
+fs.writeFileSync(path.join(dir2, 'profile.enc.new'), 'do-dang');
+fs.writeFileSync(path.join(dir2, 'vault.json.new'), '{"do":"dang"}');
+const v3 = new Vault(dir2);
+ok('mất điện trước bước đổi tên thì lùi lại', v3.phucHoi === 'đã lùi lại');
+ok('lùi lại thì hai tệp dàn sẵn bị xoá',
+   !fs.existsSync(path.join(dir2, 'profile.enc.new')) &&
+   !fs.existsSync(path.join(dir2, 'vault.json.new')));
+ok('lùi lại thì mã khoá cũ vẫn mở được', v3.unlock('Engwin366?').ok === true);
+ok('lùi lại thì hồ sơ còn nguyên', v3.read().data?.n === 42);
+
+// (b) Mất điện GIỮA hai bước đổi tên: chỉ còn vault.json.new → phải tiến tới.
+//     Dựng bằng cách đổi khoá thật rồi chặn lại đúng ở giữa.
+const dir3 = fs.mkdtempSync(path.join(os.tmpdir(), 'engwin-vault-nua-'));
+const v4 = new Vault(dir3);
+v4.create('Engwin365!');
+v4.write({n: 7});
+{
+  // Mô phỏng: hồ sơ ĐÃ sang khoá mới, vault.json thì chưa.
+  const crypto = require('node:crypto');
+  const meta = JSON.parse(fs.readFileSync(path.join(dir3, 'vault.json'), 'utf8'));
+  const saltMoi = crypto.randomBytes(32);
+  const khoaMoi = crypto.scryptSync(Buffer.from('Engwin999#', 'utf8'), saltMoi, 32, {
+    N: 1 << 17, r: 8, p: 1, maxmem: 256 * 1024 * 1024,
+  });
+  const seal = (key, txt) => {
+    const iv = crypto.randomBytes(12);
+    const c = crypto.createCipheriv('aes-256-gcm', key, iv);
+    const enc = Buffer.concat([c.update(txt, 'utf8'), c.final()]);
+    return Buffer.concat([iv, c.getAuthTag(), enc]).toString('base64');
+  };
+  fs.writeFileSync(path.join(dir3, 'profile.enc'), seal(khoaMoi, JSON.stringify({n: 7})));
+  meta.salt = saltMoi.toString('base64');
+  meta.probe = seal(khoaMoi, 'engwin365-vault-v1');
+  meta.saiLienTiep = 0;
+  fs.writeFileSync(path.join(dir3, 'vault.json.new'), JSON.stringify(meta, null, 2));
+}
+const v5 = new Vault(dir3);
+ok('mất điện giữa hai bước đổi tên thì tiến tới', v5.phucHoi === 'đã đổi xong');
+ok('tiến tới thì mã khoá MỚI mở được', v5.unlock('Engwin999#').ok === true);
+ok('tiến tới thì đọc lại đúng hồ sơ', v5.read().data?.n === 7);
+ok('tiến tới thì không còn tệp dàn sẵn', !fs.existsSync(path.join(dir3, 'vault.json.new')));
+
+fs.rmSync(dir2, {recursive: true, force: true});
+fs.rmSync(dir3, {recursive: true, force: true});
+
 fs.rmSync(dir, {recursive: true, force: true});
 console.log(`\n  ${fail === 0 ? '\x1b[32mĐẠT\x1b[0m' : '\x1b[31mHỎNG\x1b[0m'} — ${pass} đúng, ${fail} sai\n`);
 process.exit(fail === 0 ? 0 : 1);

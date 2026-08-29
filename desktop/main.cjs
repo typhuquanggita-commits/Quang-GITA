@@ -58,9 +58,13 @@ function serveDist(request) {
 }
 const vault = new Vault(path.join(app.getPath('userData'), 'vault'));
 
-/* Đếm số lần nhập sai để làm chậm dần — chống dò mã bằng cách thử liên tục. */
-let wrongTries = 0;
-const delayFor = (n) => (n < 3 ? 0 : Math.min(30_000, 2 ** (n - 2) * 1000));
+/*
+ * Thời gian chờ giữa các lần thử mã khoá nằm trong két, không nằm ở đây.
+ *
+ * Bản trước đếm số lần sai bằng một biến của tiến trình này, nên tắt ứng
+ * dụng rồi mở lại là xoá sạch thời gian chờ. Nay số lần sai được ghi vào
+ * vault.json, và két tự tính thời gian phải chờ.
+ */
 const wait = (ms) => new Promise((r) => setTimeout(r, ms));
 
 function createWindow() {
@@ -115,13 +119,26 @@ app.whenReady().then(() => {
       responseHeaders: {
         ...details.responseHeaders,
         'Content-Security-Policy': [
+          /*
+           * script-src KHÔNG có 'unsafe-inline'.
+           *
+           * Bản dựng Vite chỉ sinh đúng một thẻ script có src, không có thẻ
+           * script nội tuyến nào — có bài kiểm đếm lại điều đó ở
+           * tools/kiem-bao-mat.mjs. Khi không cần thì để 'unsafe-inline'
+           * trong script-src là tự bỏ đi lớp chặn XSS mạnh nhất mà CSP có.
+           * style-src vẫn cần vì trang có khối <style> nội tuyến và vì
+           * thuộc tính style của React.
+           */
           "default-src 'self'; " +
-            "script-src 'self' 'unsafe-inline'; " +
+            "script-src 'self'; " +
             "style-src 'self' 'unsafe-inline'; " +
             "img-src 'self' data:; " +
             "media-src 'self'; " +
             "font-src 'self' data:; " +
             "connect-src 'self'; " +
+            "worker-src 'self'; " +
+            "frame-src 'none'; " +
+            "form-action 'none'; " +
             "object-src 'none'; " +
             "frame-ancestors 'none'; " +
             "base-uri 'none'",
@@ -130,16 +147,68 @@ app.whenReady().then(() => {
     });
   });
 
-  // Từ chối mọi yêu cầu quyền hệ thống trừ micro — micro cần cho khối PHẢN XẠ.
-  session.defaultSession.setPermissionRequestHandler((_wc, permission, cb) => {
-    cb(permission === 'media');
+  /*
+   * QUYỀN HỆ THỐNG: CHỈ MICRO, VÀ PHẢI CHẶN Ở CẢ HAI CỬA
+   *
+   * Trong Electron, quyền 'media' gộp CẢ micro LẪN camera. Trả về true cho
+   * 'media' mà không xét mediaTypes là mở luôn webcam — đúng thứ mà khối
+   * PHẢN XẠ không cần đến bao giờ. Ở đây chỉ chấp thuận khi yêu cầu có
+   * audio và KHÔNG có video.
+   *
+   * Và phải đặt cả hai cửa: setPermissionRequestHandler cho lời hỏi có hộp
+   * thoại, setPermissionCheckHandler cho lời hỏi đồng bộ mà trang gọi thẳng
+   * (navigator.permissions.query, getUserMedia trong vài đường). Chỉ đặt
+   * một cửa là còn cửa kia mở.
+   */
+  const chiMicro = (permission, details) => {
+    if (permission !== 'media') return false;
+    const loai = details?.mediaTypes;
+    // Không khai loại thì không đoán hộ — từ chối.
+    if (!Array.isArray(loai) || loai.length === 0) return false;
+    return loai.includes('audio') && !loai.includes('video');
+  };
+
+  session.defaultSession.setPermissionRequestHandler((_wc, permission, cb, details) => {
+    cb(chiMicro(permission, details));
   });
+
+  session.defaultSession.setPermissionCheckHandler((_wc, permission, _origin, details) =>
+    chiMicro(permission, details),
+  );
+
+  // Không thiết bị ngoài nào: HID, cổng nối tiếp, USB. Ứng dụng không dùng.
+  session.defaultSession.setDevicePermissionHandler(() => false);
+  session.defaultSession.setUSBProtectedClassesHandler(() => []);
 
   createWindow();
 
   app.on('activate', () => {
     if (BrowserWindow.getAllWindows().length === 0) createWindow();
   });
+});
+
+/*
+ * Chặn ở tầng ứng dụng, không chỉ ở cửa sổ đã tạo.
+ *
+ * createWindow() gắn setWindowOpenHandler và will-navigate cho ĐÚNG cửa sổ
+ * nó tạo ra. Bất kỳ webContents nào sinh ra bằng đường khác — cửa sổ thứ
+ * hai thêm về sau, một webview lọt lưới — sẽ không có hai lớp chặn đó.
+ * Móc này áp cùng luật cho mọi webContents, kể cả cái chưa tồn tại lúc
+ * viết dòng này.
+ */
+app.on('web-contents-created', (_e, wc) => {
+  wc.setWindowOpenHandler(({url}) => {
+    if (/^https:\/\//.test(url)) shell.openExternal(url);
+    return {action: 'deny'};
+  });
+  wc.on('will-navigate', (e, url) => {
+    if (!url.startsWith(APP_ORIGIN)) {
+      e.preventDefault();
+      if (/^https:\/\//.test(url)) shell.openExternal(url);
+    }
+  });
+  // Gắn webview là con đường chạy mã ngoài tầm CSP của trang. Không dùng.
+  wc.on('will-attach-webview', (e) => e.preventDefault());
 });
 
 app.on('window-all-closed', () => {
@@ -161,10 +230,9 @@ ipcMain.handle('vault:validate', (_e, passcode) => ({
 ipcMain.handle('vault:create', (_e, passcode) => vault.create(passcode));
 
 ipcMain.handle('vault:unlock', async (_e, passcode) => {
-  await wait(delayFor(wrongTries));
+  await wait(vault.choMs);
   const r = vault.unlock(passcode);
-  wrongTries = r.ok ? 0 : wrongTries + 1;
-  return r.ok ? r : {...r, waitMs: delayFor(wrongTries)};
+  return r.ok ? r : {...r, waitMs: vault.choMs};
 });
 
 ipcMain.handle('vault:lock', () => {

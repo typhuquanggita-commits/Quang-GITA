@@ -61,7 +61,7 @@ export const TimKiem: React.FC<{
       ?.scrollIntoView({block: 'nearest'});
   }, [chon]);
 
-  const phim = (e: React.KeyboardEvent) => {
+  const phim = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === 'Escape') return onDong();
     if (!ketQua.length) return;
     if (e.key === 'ArrowDown') {
@@ -94,7 +94,7 @@ export const TimKiem: React.FC<{
           <input
             ref={oNhap}
             value={cau}
-            onChange={(e) => setCau(e.target.value)}
+            onChange={(e) => setCau(e.currentTarget.value)}
             onKeyDown={phim}
             placeholder="Tìm bài luyện, cột mốc, triệu chứng, ngày trong hồ sơ…"
             aria-label="Từ khoá tìm kiếm"

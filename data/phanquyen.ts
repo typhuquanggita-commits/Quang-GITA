@@ -185,6 +185,29 @@ export const QUYEN: Quyen[] = [
     'Đổi ngưỡng KPI, số phiếu tối thiểu, cấu trúc đề, chính sách sao lưu.',
     'Hạ ngưỡng KPI là làm hỏng thước đo của cả học viện mà không ai thấy ngay.',
     {haiNguoi: true, ghiNhatKy: true}),
+  Q('q-khoi-phuc-du-lieu', 'vận hành', 'Khôi phục dữ liệu từ bản sao lưu',
+    'Đưa hệ thống về một bản sao lưu trước đó.',
+    'Khôi phục là ghi đè lên hiện tại. Mọi việc học viên làm sau mốc sao lưu sẽ biến mất, nên phải có người thứ hai và phải báo trước.',
+    {haiNguoi: true, ghiNhatKy: true}),
+  Q('q-dong-bang-he-thong', 'vận hành', 'Đóng băng hệ thống khẩn cấp',
+    'Chặn mọi thao tác ghi trên toàn hệ thống khi nghi có sự cố dữ liệu.',
+    'Đây là cái phanh tay. Một người kéo được thì mới kịp, nên đây là ngoại lệ duy nhất KHÔNG cần hai người — bù lại nó ghi nhật ký và phải giải trình trong 24 giờ.',
+    {ghiNhatKy: true}),
+
+  /* ------------------------- SẢN PHẨM --------------------------------- */
+  Q('q-quan-ly-phien-ban', 'sản phẩm', 'Phát hành phiên bản sản phẩm',
+    'Quyết định bản nào được đưa tới máy người dùng và bản nào bị thu về.',
+    'Một bản lỗi phát ra là lỗi tới tay mọi học viên cùng lúc. Người phát hành phải khác người viết.',
+    {haiNguoi: true, ghiNhatKy: true}),
+
+  /* ------------------------- ĐIỀU HÀNH -------------------------------- */
+  Q('q-xem-bao-cao-dieu-hanh', 'điều hành', 'Xem báo cáo điều hành',
+    'Xem số liệu tổng hợp toàn học viện: tỉ lệ đạt, tỉ lệ bỏ học, hiệu quả từng lớp.',
+    'Báo cáo tổng hợp KHÔNG kèm danh tính học viên. Muốn xem hồ sơ từng em thì phải có quyền hồ sơ riêng, và lần nào cũng ghi nhật ký.'),
+  Q('q-quyet-dinh-chinh-sach-hoc-thuat', 'điều hành', 'Quyết định chính sách học thuật',
+    'Đặt ngưỡng KPI, chuẩn đầu ra, và điều kiện tốt nghiệp của học viện.',
+    'Đây là quyết định VỀ chính sách, khác với quyền kỹ thuật để đổi con số trong cấu hình. Tách hai thứ đó ra để không ai vừa đặt luật vừa tự tay sửa luật.',
+    {haiNguoi: true, ghiNhatKy: true}),
 ];
 
 export const QUYEN_BY_ID = Object.fromEntries(QUYEN.map((q) => [q.id, q])) as Record<string, Quyen>;
@@ -240,7 +263,9 @@ const THANG_HOC_VIEN: BacQuyen[] = TEN_TANG.map((ten, i) => {
 
 /** Thang nghề dạy: năm nấc, lấy đúng năm nấc của thang coach có sẵn. */
 const THEM_NGHE: Record<number, string[]> = {
-  1: ['q-xem-lo-trinh', 'q-xem-ho-so-minh', 'q-xem-ho-so-lop', 'q-tu-cham', 'q-de-xuat-chung-nhan'],
+  // q-lam-phieu có mặt từ nấc 1: người dạy phải tự làm chính bộ phiếu mình
+  // sẽ giao. Không tự làm thì không biết chỗ nào học viên sẽ gãy.
+  1: ['q-xem-lo-trinh', 'q-lam-phieu', 'q-xem-ho-so-minh', 'q-xem-ho-so-lop', 'q-tu-cham', 'q-de-xuat-chung-nhan'],
   2: ['q-cham-chinh-thuc', 'q-mo-kho-giai-phap'],
   3: ['q-cham-thi-cap-do', 'q-nang-cap-do', 'q-tao-phieu-rieng', 'q-xep-cap-dau-vao', 'q-mo-khoa-tang'],
   4: ['q-doi-tuyen-hoc-vien', 'q-duyet-noi-dung', 'q-ha-cap-do', 'q-quan-ly-kho-giong', 'q-sua-diem-da-chot'],
@@ -259,7 +284,7 @@ const THANG_NGHE: BacQuyen[] = COACH_LADDER.map((r) => ({
   chuaDuoc: r.cannotYet,
 }));
 
-/** Ba vai ngoài hai thang trên. */
+/** Sáu vai ngoài hai thang học viên và giảng dạy. */
 const VAI_KHAC: BacQuyen[] = [
   {
     id: 'ph-1', thang: 'gia đình', no: 1, ten: 'PHỤ HUYNH',
@@ -270,12 +295,45 @@ const VAI_KHAC: BacQuyen[] = [
       'Không chấm bài, không đổi lộ trình, không nâng hạ cấp độ. Phụ huynh thấy được tiến độ nhưng không đứng vào chỗ của người dạy.',
   },
   {
-    id: 'kd-1', thang: 'kinh doanh', no: 1, ten: 'TƯ VẤN VÀ CỘNG TÁC VIÊN',
-    ai: 'Người tư vấn lộ trình, chốt chương trình, giới thiệu học viên.',
-    vao: 'Qua khoá tư vấn và bài kiểm tra hiểu đúng lộ trình.',
-    themQuyen: ['q-xem-lo-trinh', 'q-xep-cap-dau-vao', 'q-xep-lop'],
+    id: 'kd-1', thang: 'kinh doanh', no: 1, ten: 'CỘNG TÁC VIÊN',
+    ai: 'Người giới thiệu học viên và đồng hành ở giai đoạn đầu.',
+    vao: 'Qua buổi định hướng và bài kiểm tra hiểu đúng lộ trình.',
+    themQuyen: ['q-xem-lo-trinh'],
+    chuaDuoc:
+      'Không xếp cấp, không xếp lớp, không chấm bài, không xem hồ sơ của bất kỳ học viên nào. Cộng tác viên giới thiệu người, không đứng vào bất cứ khâu chuyên môn nào.',
+  },
+  {
+    id: 'kd-2', thang: 'kinh doanh', no: 2, ten: 'TƯ VẤN',
+    ai: 'Người tư vấn lộ trình và chốt chương trình học.',
+    vao: 'Qua khoá tư vấn, và phải đạt bài kiểm định xếp cấp đầu vào.',
+    themQuyen: ['q-xep-cap-dau-vao', 'q-xep-lop'],
+    keThua: 'kd-1',
     chuaDuoc:
       'Không chấm bài, không nâng cấp độ, không xem hồ sơ chi tiết của học viên không do mình phụ trách. Tư vấn bán chương trình, không quyết định chuyên môn.',
+  },
+  {
+    id: 'sp-1', thang: 'sản phẩm', no: 1, ten: 'ADMIN SẢN PHẨM',
+    ai: 'Người chịu trách nhiệm bộ nội dung chuẩn và các bản phát hành.',
+    vao: 'Do giám đốc điều hành chỉ định, sau khi đã qua bậc giảng dạy từ nấc 3.',
+    themQuyen: [
+      'q-xem-lo-trinh', 'q-xem-ho-so-minh', 'q-duyet-noi-dung',
+      'q-quan-ly-kho-giong', 'q-quan-ly-phien-ban',
+    ],
+    chuaDuoc:
+      'KHÔNG xem hồ sơ học viên, không chấm bài, không nâng hạ cấp độ, không gán quyền. Và KHÔNG sửa bộ nội dung chuẩn: admin sản phẩm DUYỆT và PHÁT HÀNH, còn người soạn ra bộ chuẩn là chủ nhiệm chuyên môn. Gộp quyền soạn với quyền duyệt vào một vai là bỏ luôn giá trị của bước duyệt.',
+  },
+  {
+    id: 'dh-1', thang: 'điều hành', no: 1, ten: 'GIÁM ĐỐC ĐIỀU HÀNH',
+    ai: 'Người chịu trách nhiệm kết quả và uy tín của học viện.',
+    vao: 'Do chủ sở hữu học viện bổ nhiệm.',
+    themQuyen: [
+      'q-xem-lo-trinh', 'q-xem-ho-so-minh', 'q-xem-bao-cao-dieu-hanh',
+      'q-quyet-dinh-chinh-sach-hoc-thuat', 'q-xem-ho-so-toan-truong',
+      'q-cap-chung-nhan', 'q-thu-hoi-chung-nhan', 'q-kiem-dinh-nguoi-day',
+      'q-xuat-du-lieu', 'q-xem-nhat-ky',
+    ],
+    chuaDuoc:
+      'KHÔNG chấm bài, không nâng hạ cấp độ của từng học viên, không gán quyền, không đổi cấu hình kỹ thuật, không xoá hồ sơ. Điều hành đặt chuẩn và chịu trách nhiệm về kết quả; chuyên môn từng em thuộc về người dạy, còn tay kỹ thuật thuộc về quản trị hệ thống.',
   },
   {
     id: 'qt-1', thang: 'vận hành', no: 1, ten: 'QUẢN TRỊ HỌC VỤ',
@@ -286,13 +344,22 @@ const VAI_KHAC: BacQuyen[] = [
       'Không chấm bài, không nâng hạ cấp độ, không sửa nội dung chuẩn. Quản trị học vụ lo đường đi của lớp, không lo chuyên môn của lớp.',
   },
   {
-    id: 'qt-2', thang: 'vận hành', no: 2, ten: 'QUẢN TRỊ HỆ THỐNG',
-    ai: 'Người chịu trách nhiệm kỹ thuật và an toàn dữ liệu.',
+    id: 'qt-2', thang: 'vận hành', no: 2, ten: 'ADMIN HỆ THỐNG',
+    ai: 'Người chịu trách nhiệm kỹ thuật và an toàn dữ liệu hằng ngày.',
     vao: 'Do chủ sở hữu học viện chỉ định, và chỉ nên có hai người.',
-    themQuyen: ['q-gan-quyen', 'q-xem-nhat-ky', 'q-doi-cau-hinh-he-thong', 'q-xoa-ho-so'],
+    themQuyen: ['q-xem-nhat-ky', 'q-doi-cau-hinh-he-thong'],
     keThua: 'qt-1',
     chuaDuoc:
-      'Không chấm bài, không nâng cấp độ, không cấp chứng nhận. Quyền kỹ thuật lớn nhất KHÔNG kèm theo quyền chuyên môn — trộn hai thứ đó là lỗi thiết kế phổ biến nhất của các hệ quản lý học tập.',
+      'Không chấm bài, không nâng cấp độ, không cấp chứng nhận, KHÔNG gán quyền và KHÔNG xoá hồ sơ. Quyền kỹ thuật hằng ngày không kèm theo hai việc không đảo ngược được — hai việc đó nằm ở bậc trên.',
+  },
+  {
+    id: 'qt-3', thang: 'vận hành', no: 3, ten: 'SUPER ADMIN',
+    ai: 'Người giữ khoá cuối của hệ thống. Nên có đúng hai người, không hơn.',
+    vao: 'Do chủ sở hữu học viện bổ nhiệm bằng văn bản, và phải công khai danh tính trong nội bộ.',
+    themQuyen: ['q-gan-quyen', 'q-xoa-ho-so', 'q-khoi-phuc-du-lieu', 'q-dong-bang-he-thong'],
+    keThua: 'qt-2',
+    chuaDuoc:
+      'KHÔNG chấm bài, không nâng hạ cấp độ, không cấp chứng nhận, không quyết định chính sách học thuật. Đây là điều quan trọng nhất của cả bảng: bậc kỹ thuật cao nhất vẫn KHÔNG có quyền chuyên môn nào. Trộn hai thứ đó lại là lỗi thiết kế phổ biến nhất của các hệ quản lý học tập, và nó cho một người vừa sửa được điểm vừa xoá được dấu vết mình đã sửa.',
   },
 ];
 
