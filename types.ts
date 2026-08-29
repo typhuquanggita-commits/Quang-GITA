@@ -1063,3 +1063,61 @@ export interface Lesson300 {
   deliverable: string;
   measure: string;
 }
+
+/* ==========================================================================
+   LỘ TRÌNH LUYỆN THI CHUYÊN ANH VÀ LỚP CHẤT LƯỢNG CAO VÀO 10
+   ========================================================================== */
+
+/** Một phần của đề thi chuyên. */
+export interface ExamPart {
+  no: number;
+  name: string;
+  items: number;
+  minutes: number;
+  weight: number;
+  whatItTests: string;
+  commonLoss: string;
+}
+
+/** Một bậc năng lực sau bài test đầu vào. */
+export interface Band {
+  id: string;
+  name: string;
+  entryScore: string;
+  months: number;
+  feasible: string;
+  focus: string[];
+  dailyMinutes: number;
+  honestNote: string;
+}
+
+/** Một giai đoạn của lộ trình 22 tháng. */
+export interface ChuyenPhase {
+  no: number;
+  name: string;
+  grade: string;
+  months: string;
+  goal: string;
+  weekly: {block: string; sessions: number; minutes: number; what: string}[];
+  exitGate: string;
+  mock: string;
+}
+
+/** Một cấp phải vượt trên đường tới phòng thi. */
+export interface ChuyenLevel {
+  no: number;
+  name: string;
+  target: string;
+  criteria: string[];
+  ifStuck: string;
+}
+
+/** Một phác đồ nâng cấp cho phần đang yếu. */
+export interface UpgradePlan {
+  part: string;
+  symptom: string;
+  rootCause: string;
+  drill: string;
+  weeks: number;
+  gain: string;
+}

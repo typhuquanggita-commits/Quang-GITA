@@ -323,6 +323,62 @@ Từ     300   3.000   6.800  10.000
 Input    0h    450h  1.080h  1.800h
 ```
 
+## 🎯 Luyện thi chuyên Anh & lớp chất lượng cao vào 10 — Hà Nội
+
+Vào từ **lớp 8**, thi tháng 6 cuối lớp 9. **Hai mươi hai tháng.** Đích: đỗ chuyên
+với **biên an toàn 0,5–1,0 điểm** trên điểm chuẩn, bài chuyên **từ 7,0**.
+
+> **Vì sao nhắm trên điểm chuẩn.** Điểm chuẩn đổi theo từng năm và không ai
+> đoán được; nhắm đúng bằng điểm chuẩn năm ngoái là đặt cả hai năm ôn luyện vào
+> tay may rủi.
+
+> ⚠ **Cấu trúc đề và công thức điểm THAY ĐỔI theo từng năm và từng trường.** Các
+> con số trong hệ thống theo cấu trúc những năm gần đây của đề chuyên Sở Hà Nội.
+> Trước mỗi mùa thi phải đối chiếu lại với đề án tuyển sinh chính thức rồi sửa
+> hằng `EXAM_SPEC` — cả lộ trình tự cập nhật theo.
+
+**Máy tính ngược từ đích** — nhập điểm chuẩn dự kiến, biên an toàn muốn có, và
+điểm ba môn chung; hệ thống tính ra bài chuyên phải đạt bao nhiêu và **cần đúng
+bao nhiêu câu ở từng phần**. Bài chuyên nhân hệ số hai, nên mỗi điểm ở đây đáng
+gấp đôi một điểm ở môn chung.
+
+| Phần đề chuyên | Câu | Phút | Điểm |
+|---|---|---|---|
+| Nghe | 20 | 25 | 2,3 |
+| Ngữ âm | 5 | 5 | 0,6 |
+| Từ vựng – Ngữ pháp | 25 | 25 | 2,9 |
+| Đọc | 20 | 35 | 2,3 |
+| Viết | 16 | 30 | 1,9 |
+
+**Test đầu vào 150 phút** rồi chia **4 bậc năng lực**. Bậc D được khuyên **không
+nhắm chuyên** trong 22 tháng — đây là lời khuyên trung thực, vì nhận một em bậc
+D vào lớp luyện chuyên là lấy tiền của gia đình để bán một xác suất rất thấp.
+
+Phỏng vấn phụ huynh **riêng**, không có mặt học sinh: hai bên thường trả lời
+khác nhau về cùng một câu hỏi — *ai là người muốn thi chuyên*.
+
+**5 giai đoạn / 22 tháng**, phủ liền mạch không hở:
+
+| GĐ | Lớp | Tháng | Mục tiêu |
+|---|---|---|---|
+| 1 | 8 · HK I | 1–5 | Dựng nền âm và từ — chưa đụng đề thi |
+| 2 | 8 · HK II | 6–10 | Ngữ pháp lõi thành phản xạ, đọc đủ nhanh |
+| 3 | Hè 8→9 | 11–12 | **Tăng tốc** — chỗ bậc B quyết định đỗ hay trượt |
+| 4 | 9 · HK I | 13–18 | Vào đề có hệ thống |
+| 5 | 9 · HK II | 19–22 | Về đích và giữ biên |
+
+**7 cấp phải vượt** (Mở tai → Vốn cụm → Ngữ pháp phản xạ → Đọc không sợ dài →
+Viết ăn điểm chắc → Đủ điểm → **Giữ biên**), mỗi cấp có lối gỡ khi tắc.
+
+**9 phác đồ nâng cấp** theo từng phần đề, mỗi phác đồ nêu nguyên nhân gốc, số
+tuần, và mức lên dự kiến. Ví dụ: *bỏ trống phần biến đổi câu vì hết giờ* → làm
+biến đổi câu **trước** đoạn luận → lấy lại 1,0–1,5 điểm mà không cần giỏi hơn.
+
+```bash
+npx tsx tools/kiem-chuyen.ts             # kiểm cấu trúc đề, bậc, 22 tháng, phác đồ
+node tools/kiem-may-tinh-diem.mjs        # kiểm số học của máy tính điểm
+```
+
 ## 🧬 Mô thức GITA — 12 bước và 300 bài định hướng
 
 Toàn bộ phần này lấy từ **tài liệu gốc của học viện**: sơ đồ hành trình 12
@@ -624,6 +680,7 @@ data/                  Toàn bộ nội dung hệ thống, tách khỏi giao di�
   assistant.ts         Trợ lý AI — 3 gói · 11 kho tri thức · 10 việc · thang giữ chân
   gita.ts              Mô thức GITA gốc — 12 bước · bàn đạp · 4 phễu · 5 lối BNI
   lessons300.ts        300 bài định hướng, sinh từ 12 bước × 5 chủ đề × 5 nấc
+  chuyenanh.ts         Lộ trình chuyên Anh & CLC vào 10 — 22 tháng, tính ngược từ đích
   nhip.ts              Suy ra nhịp học từ tổng giờ và số tuần
 
 content/

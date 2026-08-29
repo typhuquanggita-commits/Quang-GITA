@@ -23,6 +23,7 @@ const Studio = lazy(() => import('./components/engwin/Studio').then((m) => ({def
 const Podcast = lazy(() => import('./components/engwin/Podcast').then((m) => ({default: m.Podcast})));
 const Brand = lazy(() => import('./components/engwin/Brand').then((m) => ({default: m.Brand})));
 const Sprint = lazy(() => import('./components/engwin/Sprint').then((m) => ({default: m.Sprint})));
+const Chuyen = lazy(() => import('./components/engwin/Chuyen').then((m) => ({default: m.Chuyen})));
 const Gita = lazy(() => import('./components/engwin/Gita').then((m) => ({default: m.Gita})));
 const Assistant = lazy(() => import('./components/engwin/Assistant').then((m) => ({default: m.Assistant})));
 const Training = lazy(() => import('./components/engwin/Training').then((m) => ({default: m.Training})));
@@ -119,6 +120,14 @@ const NAV: Nav[] = [
     hint: '12 cột mốc / 36 tháng',
     group: 'learner',
     render: () => <Roadmap />,
+  },
+  {
+    id: 'chuyen',
+    icon: '🎯',
+    label: 'Luyện thi chuyên Anh',
+    hint: 'Vào 10 CLC & chuyên · 22 tháng',
+    group: 'learner',
+    render: () => <Chuyen />,
   },
   {
     id: 'exams',

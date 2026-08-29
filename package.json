@@ -20,7 +20,9 @@
     "test:training": "npx tsx tools/kiem-dao-tao.ts",
     "build:single": "SINGLE=1 vite build && node tools/xuat-mot-tep.mjs",
     "test:assistant": "node tools/kiem-tro-ly.mjs",
-    "test:gita": "npx tsx tools/kiem-gita.ts"
+    "test:gita": "npx tsx tools/kiem-gita.ts",
+    "test:chuyen": "npx tsx tools/kiem-chuyen.ts",
+    "test:diem": "node tools/kiem-may-tinh-diem.mjs"
   },
   "devDependencies": {
     "@tailwindcss/browser": "^4.1.10",

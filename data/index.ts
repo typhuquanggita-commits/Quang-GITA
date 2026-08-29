@@ -28,6 +28,7 @@ export * from './training';
 export * from './assistant';
 export * from './gita';
 export * from './lessons300';
+export * from './chuyenanh';
 export * from './voices';
 export * from './certify';
 export * from './exams';
