@@ -266,11 +266,19 @@ input[type=search]{min-width:230px}
       <button data-v="chuyen-de">8 nhóm chuyên đề<span class="k">5</span></button>
       <button data-v="cum">96 cụm chuyên đề<span class="k">8</span></button>
       <div class="nav-h">Đánh giá</div>
+      <button data-v="de-thi">Bộ đề thi<span class="k">9</span></button>
       <button data-v="test">Test đầu vào<span class="k">6</span></button>
       <button data-v="ho-so">Hồ sơ học viên<span class="k">7</span></button>
+      <div class="nav-h">Quản trị</div>
+      <button data-v="phan-quyen">Phân quyền &amp; bảo mật<span class="k">0</span></button>
     </nav>
 
     <div class="rail-foot">
+      <label style="display:block">
+        <span style="font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:#7F9CC4">Chế độ xem</span>
+        <select id="vaiSel" style="width:100%;margin-top:4px;font-size:12.5px"></select>
+      </label>
+      <div id="vaiNote" style="line-height:1.45"></div>
       <button class="themebtn" id="themebtn" type="button">◐ Giao diện</button>
       <div id="syncnote">Hồ sơ lưu trên máy này</div>
       <div>gita.edu.vn</div>
@@ -367,19 +375,42 @@ function mdToHtml(md) {
 
 /* --------------------------- hồ sơ học viên --------------------------- */
 const KHOA = "gita.hoso.v1";
+const KHOA_ID = "gita.hoso.id";
 const HoSo = {
-  d: null, db: null,
+  d: null, db: null, hsId: null,
   moi() { return { ten: "", lop: 5, tuyen: "T2", tuan: 1, test: null, lam_bai: {}, tao: Date.now() }; },
+  /* Mã hồ sơ ngẫu nhiên, chỉ nằm trên máy này. Kho dữ liệu chung không bao giờ
+     nhận họ tên — xem 01-kien-truc/07-phan-quyen-va-bao-mat.md mục 7. */
+  layId() {
+    let id = null;
+    try { id = localStorage.getItem(KHOA_ID); } catch (e) { }
+    if (!id) {
+      id = (crypto?.randomUUID?.() || String(Date.now()) + Math.random().toString(36).slice(2))
+        .replace(/[^a-z0-9]/gi, "").slice(0, 24);
+      try { localStorage.setItem(KHOA_ID, id); } catch (e) { }
+    }
+    return id;
+  },
+  /* Bản đẩy lên kho dữ liệu: bỏ mọi trường định danh */
+  banAnDanh() {
+    const { ten, ...conLai } = this.d;
+    return { ...conLai, hs_id: this.hsId };
+  },
   async nap() {
+    this.hsId = this.layId();
     try { this.d = JSON.parse(localStorage.getItem(KHOA) || "null"); } catch (e) { this.d = null; }
-    if (!this.d) this.d = this.moi();
+    if (!this.d || typeof this.d !== "object" || Array.isArray(this.d)) this.d = this.moi();
+    if (typeof this.d.lam_bai !== "object" || !this.d.lam_bai) this.d.lam_bai = {};
     try {
       this.db = await window.claude?.use?.("db");
       if (this.db) {
-        const doc = await this.db.doc("hoso/chinh").get();
+        const doc = await this.db.doc("hoso/" + this.hsId).get();
         const xa = doc?.data;
-        if (xa && (!this.d.tao || (xa.capNhat || 0) > (this.d.capNhat || 0))) this.d = xa;
-        $("#syncnote").textContent = "Hồ sơ đồng bộ trên mọi thiết bị";
+        if (xa && typeof xa === "object" && (xa.capNhat || 0) > (this.d.capNhat || 0)) {
+          const ten = this.d.ten;      // họ tên luôn lấy từ máy này, không lấy từ kho chung
+          this.d = { ...xa, ten };
+        }
+        $("#syncnote").textContent = "Kết quả học tập đồng bộ · họ tên chỉ lưu trên máy này";
       }
     } catch (e) { /* chạy ngoại tuyến vẫn dùng được */ }
     return this.d;
@@ -387,7 +418,9 @@ const HoSo = {
   async luu() {
     this.d.capNhat = Date.now();
     try { localStorage.setItem(KHOA, JSON.stringify(this.d)); } catch (e) { }
-    if (this.db) { try { await this.db.doc("hoso/chinh").set(this.d); } catch (e) { } }
+    if (this.db) {
+      try { await this.db.doc("hoso/" + this.hsId).set(this.banAnDanh()); } catch (e) { }
+    }
   },
   cacLan() { return Object.values(this.d.lam_bai || {}).sort((a, b) => b.ngay - a.ngay); },
   mucNhom() {
@@ -413,6 +446,89 @@ const HoSo = {
     return { G, I, T, A, soLan: ls.length };
   }
 };
+
+/* --------------------------- phân quyền --------------------------- */
+const KHOA_VAI = "gita.vai.v1";
+const BAC_MUC = { M1: 1, M2: 2, M3: 3, M4: 4, M5: 5 };
+const Quyen = {
+  vai: "HS",
+  nap() {
+    try { this.vai = localStorage.getItem(KHOA_VAI) || "HS"; } catch (e) { this.vai = "HS"; }
+    if (!DATA.phan_quyen.vai_tro[this.vai]) this.vai = "HS";
+  },
+  dat(v) {
+    if (!DATA.phan_quyen.vai_tro[v]) return;
+    this.vai = v;
+    try { localStorage.setItem(KHOA_VAI, v); } catch (e) { }
+  },
+  ten() { return DATA.phan_quyen.vai_tro[this.vai].ten; },
+  laHS() { return this.vai === "HS"; },
+  ma(tn) { return (DATA.phan_quyen.quyen[tn] || {})[this.vai]?.[0] || "X"; },
+  dieuKien(tn) { return (DATA.phan_quyen.quyen[tn] || {})[this.vai]?.[1] || ""; },
+  co(tn) { return this.ma(tn) !== "X"; },
+  suaDuoc(tn) { return ["RW", "RWD", "A"].includes(this.ma(tn)); },
+  /* Tầng năng lực: trung bình ba phiếu gần nhất */
+  tang() {
+    if (!this.laHS()) return DATA.phan_quyen.tang[DATA.phan_quyen.tang.length - 1];
+    const ls = HoSo.cacLan().slice(0, 3);
+    if (!ls.length) return DATA.phan_quyen.tang[0];
+    const tb = ls.reduce((s, x) => s + x.tong, 0) / ls.length;
+    let ra = DATA.phan_quyen.tang[0];
+    for (const t of DATA.phan_quyen.tang) if (tb >= t.nguong) ra = t;
+    return ra;
+  },
+  /* Một phiếu học có mở cho vai trò hiện tại không */
+  moPhieu(c) {
+    if (!this.co("phieu_de")) return { mo: false, vi: "Vai trò này không xem được đề phiếu." };
+    if (!this.laHS()) return { mo: true, vi: "" };
+    const t = this.tang();
+    if (c.lp === "MOC") {
+      return t.de_moc.length
+        ? { mo: true, vi: "" }
+        : { mo: false, vi: `Phiếu mốc mở từ tầng M2. Em đang ở tầng ${t.ma}.` };
+    }
+    if (!t.mo.includes(c.lp))
+      return { mo: false, vi: `Phiếu loại ${c.lp} mở từ tầng cao hơn. Em đang ở tầng ${t.ma} — ${t.ten}.` };
+    if (c.t === "T2") {
+      if (t.tuyen.includes("T2")) return { mo: true, vi: "" };
+      if (t.tuyen.includes("T2*")) {
+        const m = HoSo.mucNhom()[c.g];
+        if (m != null && BAC_MUC[mucTuPhanTram(m)] >= 4) return { mo: true, vi: "" };
+        return { mo: false, vi: `Tuyến 2 mở ở nhóm chuyên đề em đã đạt M4. Nhóm ${c.g} chưa đạt.` };
+      }
+      return { mo: false, vi: `Tuyến 2 mở từ tầng M4. Em đang ở tầng ${t.ma}.` };
+    }
+    return { mo: true, vi: "" };
+  },
+  /* Phiếu lời giải & phân tích */
+  moGP(maPhieuHoc) {
+    if (!this.co("phieu_gp")) return { mo: false, vi: "Vai trò này không được xem phiếu lời giải." };
+    if (!this.laHS()) return { mo: true, vi: "" };
+    return HoSo.d.lam_bai[maPhieuHoc]
+      ? { mo: true, vi: "" }
+      : { mo: false, vi: "Phiếu lời giải chỉ mở sau khi em đã nộp bài phiếu này." };
+  },
+  /* Một đề trong bộ đề thi */
+  moDe(d) {
+    const tn = d.ho === "NL" ? "de_nl" : d.ho === "ON" ? "phieu_hd" : "de_moc";
+    if (!this.co(tn)) return { mo: false, vi: "Vai trò này không xem được loại đề này." };
+    if (!this.laHS()) return { mo: true, vi: "" };
+    const t = this.tang();
+    if (d.ho === "ON") return { mo: true, vi: "" };
+    if (d.ho === "NL")
+      return t.de_nl ? { mo: true, vi: "" }
+        : { mo: false, vi: `Bộ đề đánh giá năng lực mở từ tầng M5. Em đang ở tầng ${t.ma}.` };
+    return t.de_moc.includes(d.bt)
+      ? { mo: true, vi: "" }
+      : { mo: false, vi: `Biến thể ${d.bt} chưa mở ở tầng ${t.ma}. Các biến thể đang mở: ${t.de_moc.join(", ") || "chưa có"}.` };
+  },
+};
+function chanTruyCap(vi) {
+  return `<div class="empty"><h3>Nội dung này chưa mở</h3><p>${esc(vi)}</p>
+    <p class="muted" style="margin-top:10px;font-size:12.5px">Giáo viên có thể mở sớm cho em
+    nếu thấy cần. Đổi chế độ xem ở góc dưới bên trái nếu bạn là giáo viên hoặc quản trị.</p>
+    <p style="margin-top:14px"><button class="btn" data-go="lo-trinh">Về lộ trình</button></p></div>`;
+}
 
 /* --------------------------- chấm bài --------------------------- */
 function chuanHoa(s) {
@@ -636,8 +752,15 @@ function veThuVien() {
         ><span class="mono">C${String(c.cum).padStart(2, "0")}</span></a>` : "—"}</td>
       <td><span class="chip">${c.lp}</span></td><td>${chipNhom(c.g)}</td>
       <td class="n">${c.tuan}</td>
-      <td>${DATA.phieu[c.ma] ? `<a class="btn btn-g" style="padding:4px 11px;font-size:12.5px"
-        href="#/phieu/${c.ma}">Làm bài</a>` : '<span class="tag t-warn">Đang biên soạn</span>'}</td></tr>`).join("")}
+      <td>${(() => {
+        const g = c.hoc ? Quyen.moPhieu(c) : { mo: true, vi: "" };
+        if (!g.mo) return `<span class="tag t-bad" title="${esc(g.vi)}">🔒 Chưa mở</span>`;
+        if (c.lp === "GP" || c.lp === "HD")
+          return DATA.kem[c.ma] ? `<a class="btn" style="padding:4px 11px;font-size:12.5px"
+            href="#/kem/${c.ma}">Mở</a>` : '<span class="tag t-warn">Đang biên soạn</span>';
+        return DATA.phieu[c.ma] ? `<a class="btn btn-g" style="padding:4px 11px;font-size:12.5px"
+          href="#/phieu/${c.ma}">Làm bài</a>` : '<span class="tag t-warn">Đang biên soạn</span>';
+      })()}</td></tr>`).join("")}
     </tbody></table></div>
   ${ds.length > 300 ? '<p class="sub" style="margin-top:10px">Hiển thị 300 dòng đầu — hãy lọc thêm để thu hẹp.</p>' : ""}`;
   const g = (id, k, num) => $(id).addEventListener("change", e => {
@@ -654,6 +777,11 @@ function veThuVien() {
 /* ============================ TRANG: LÀM PHIẾU ============================ */
 let LB = null, DONG_HO = null;
 function moPhieu(ma) {
+  const ci = DATA.chi_muc.find(c => c.ma === ma);
+  if (ci) {
+    const g = Quyen.moPhieu(ci);
+    if (!g.mo) { MAIN().innerHTML = chanTruyCap(g.vi); return; }
+  }
   const p = DATA.phieu[ma];
   if (!p) { MAIN().innerHTML = `<div class="empty"><h3>Phiếu này đang được biên soạn</h3>
     <p>Mã <span class="mono">${esc(ma)}</span> đã có trong chỉ mục nhưng nội dung chưa phát hành.</p>
@@ -842,6 +970,8 @@ function ganSuKienPhieu() {
   }));
   $$("[data-sol]").forEach(btn => btn.addEventListener("click", () => {
     const ma = btn.dataset.sol;
+    const g = Quyen.moGP(LB.ma);
+    if (!LB.moDA.has(ma) && !g.mo) { toast(g.vi); return; }
     if (!LB.moDA.has(ma) && !LB.daNop && !tienDoBai(ma)) {
       if (!confirm("Em chưa điền ý nào của bài này. Xem đáp án bây giờ sẽ mất cơ hội tự nghĩ.\n\nVẫn xem?")) return;
     }
@@ -911,6 +1041,7 @@ async function veKetQua(chiXem) {
     };
     HoSo.d.lop = m.lop; HoSo.d.tuyen = m.tuyen;
     await HoSo.luu();
+    capNhatGhiChuVai();
   }
   const hh = huyHieu(tong);
   MAIN().innerHTML = `
@@ -1035,13 +1166,19 @@ function veChuyenDe() {
 
 /* ==================== TRANG: TÀI LIỆU KÈM (GP / HD) ==================== */
 function veKem(ma) {
+  if (/-GP$/.test(ma)) {
+    const g = Quyen.moGP(ma.replace(/-GP$/, ""));
+    if (!g.mo) { MAIN().innerHTML = chanTruyCap(g.vi); return; }
+  } else if (!Quyen.co("phieu_hd")) {
+    MAIN().innerHTML = chanTruyCap("Vai trò này không xem được phiếu hướng dẫn ôn chắc."); return;
+  }
   const d = DATA.kem[ma];
   if (!d) { MAIN().innerHTML = `<div class="empty"><h3>Tài liệu này đang được biên soạn</h3>
     <p>Mã <span class="mono">${esc(ma)}</span> đã có trong chỉ mục nhưng nội dung chưa phát hành.</p>
     <p style="margin-top:12px"><button class="btn" data-go="cum">Về danh sách cụm</button></p></div>`; return; }
-  const m = d.meta, khoa = m.cum ? `L${m.lop}-${m.tuyen}-C${String(m.cum).padStart(2, "0")}` : null;
+  const m = d.meta, maCum = m.cum ? `L${m.lop}-${m.tuyen}-C${String(m.cum).padStart(2, "0")}` : null;
   MAIN().innerHTML = `<div class="row" style="margin-bottom:12px">
-      ${khoa ? `<a class="btn" href="#/cum/${khoa}">← Cụm C${String(m.cum).padStart(2, "0")}</a>` : ""}
+      ${maCum ? `<a class="btn" href="#/cum/${maCum}">← Cụm C${String(m.cum).padStart(2, "0")}</a>` : ""}
       ${m.kem_theo ? `<a class="btn" href="#/phieu/${m.kem_theo}">Mở phiếu ${m.kem_theo}</a>` : ""}
       <span class="chip">${esc(m.loai_ten)}</span></div>
     <div class="card pad md">${mdToHtml(d.md)}</div>`;
@@ -1072,8 +1209,8 @@ function veDanhSachCum() {
   $("#cLop").addEventListener("change", e => { LOC_CUM.lop = +e.target.value; veDanhSachCum(); });
   $("#cTuyen").addEventListener("change", e => { LOC_CUM.tuyen = e.target.value; veDanhSachCum(); });
 }
-function veCum(khoa) {
-  const c = DATA.cum.find(x => x.khoa === khoa);
+function veCum(maCum) {
+  const c = DATA.cum.find(x => x.khoa === maCum);
   if (!c) return veDanhSachCum();
   const phieu = DATA.chi_muc.filter(r => r.l === c.l && r.t === c.t && r.cum === c.cum);
   const hoc = phieu.filter(r => r.hoc).sort((a, b) => a.stt - b.stt);
@@ -1099,8 +1236,12 @@ function veCum(khoa) {
         <td>${esc(r.lp_ten)}<div class="muted" style="font-size:11.5px">Lời giải:
           ${DATA.kem[r.ma + "-GP"] ? `<a href="#/kem/${r.ma}-GP"><span class="mono">${r.ma}-GP</span></a>`
         : `<span class="mono">${r.ma}-GP</span>`}</div></td>
-        <td>${DATA.phieu[r.ma] ? `<a class="btn btn-g" style="padding:4px 10px;font-size:12.5px"
-          href="#/phieu/${r.ma}">Làm bài</a>` : '<span class="tag t-warn">Đang biên soạn</span>'}</td></tr>`).join("")}
+        <td>${(() => {
+          const g = Quyen.moPhieu(r);
+          if (!g.mo) return `<span class="tag t-bad" title="${esc(g.vi)}">🔒 Chưa mở</span>`;
+          return DATA.phieu[r.ma] ? `<a class="btn btn-g" style="padding:4px 10px;font-size:12.5px"
+            href="#/phieu/${r.ma}">Làm bài</a>` : '<span class="tag t-warn">Đang biên soạn</span>';
+        })()}</td></tr>`).join("")}
       </tbody></table></div>
       ${hd ? `<p class="sub" style="margin-top:10px">Phiếu hướng dẫn ôn chắc chuyên đề:
         ${DATA.kem[hd.ma] ? `<a href="#/kem/${hd.ma}"><span class="mono">${hd.ma}</span></a>
@@ -1231,14 +1372,160 @@ function veKqTest(r, t) {
   <ul style="font-size:13px;padding-left:18px;line-height:1.6">${r.gc.map(g => `<li>${esc(g)}</li>`).join("")}</ul></div>`;
 }
 
+/* ============================ TRANG: BỘ ĐỀ THI ============================ */
+const LOC_DE = { lop: "", ho: "", moc: "" };
+function veDeThi() {
+  const ds = DATA.de_thi.filter(d => (!LOC_DE.lop || d.lop == LOC_DE.lop) &&
+    (!LOC_DE.ho || d.ho === LOC_DE.ho) && (!LOC_DE.moc || d.moc === LOC_DE.moc));
+  const t = Quyen.tang();
+  MAIN().innerHTML = `
+  <div class="page-h"><div><div class="eyebrow">Đo năng lực</div><h1>Bộ đề thi</h1>
+    <p class="sub">162 đề, tách khỏi 100 phiếu học của mỗi khối:
+    <b>12 phiếu ôn tập mốc</b> · <b>120 đề thi mốc</b> (10 biến thể mỗi mốc) ·
+    <b>30 đề đánh giá năng lực</b> theo format vào lớp 6 của các trường CLC Hà Nội.</p></div></div>
+  ${Quyen.laHS() ? `<div class="card pad" style="margin-bottom:14px;border-left:4px solid var(--gold)">
+    <div class="eyebrow">Tầng năng lực của em: ${t.ma} — ${esc(t.ten)}</div>
+    <p style="margin-top:6px;font-size:14px">Biến thể đề mốc đang mở:
+    <b>${t.de_moc.join(", ") || "chưa có"}</b> · Bộ đánh giá năng lực:
+    <b>${t.de_nl ? "đã mở" : "mở từ tầng M5"}</b>.</p></div>` : ""}
+  <div class="filters">
+    <select id="dLop"><option value="">Mọi lớp</option>${[3, 4, 5].map(l =>
+    `<option value="${l}" ${LOC_DE.lop == l ? "selected" : ""}>Lớp ${l}</option>`).join("")}</select>
+    <select id="dHo"><option value="">Cả ba họ</option>
+      <option value="ON" ${LOC_DE.ho === "ON" ? "selected" : ""}>ON — Phiếu ôn tập mốc</option>
+      <option value="MOC" ${LOC_DE.ho === "MOC" ? "selected" : ""}>MOC — Đề thi mốc</option>
+      <option value="NL" ${LOC_DE.ho === "NL" ? "selected" : ""}>NL — Đánh giá năng lực</option></select>
+    <select id="dMoc"><option value="">Mọi mốc</option>${["GK1", "CK1", "GK2", "CK2", "NL"].map(m =>
+      `<option value="${m}" ${LOC_DE.moc === m ? "selected" : ""}>${m}</option>`).join("")}</select>
+    <span class="muted" style="font-size:12.5px;margin-left:auto">${ds.length} đề</span>
+  </div>
+  <div class="tw"><table>
+    <thead><tr><th>Mã đề</th><th>Tên</th><th>Phạm vi</th><th class="n">Phút</th><th class="n">Thang</th><th></th></tr></thead>
+    <tbody>${ds.slice(0, 220).map(d => {
+      const g = Quyen.moDe(d);
+      return `<tr><td><span class="mono">${d.ma}</span></td>
+        <td>${esc(d.ten)}</td><td style="font-size:12.5px">${esc(d.pham_vi)}</td>
+        <td class="n">${d.thoi_luong}</td><td class="n">${d.thang_diem}</td>
+        <td>${!g.mo ? `<span class="tag t-bad" title="${esc(g.vi)}">🔒 Chưa mở</span>`
+        : (DATA.de_soan[d.ma] ? `<a class="btn btn-g" style="padding:4px 11px;font-size:12.5px"
+            href="#/de/${d.ma}">Mở đề</a>` : '<span class="tag t-warn">Đang biên soạn</span>')}</td></tr>`;
+    }).join("")}</tbody></table></div>`;
+  const g = (id, k) => $(id).addEventListener("change", e => { LOC_DE[k] = e.target.value; veDeThi(); });
+  g("#dLop", "lop"); g("#dHo", "ho"); g("#dMoc", "moc");
+}
+function veDe(ma) {
+  const d = DATA.de_soan[ma], ci = DATA.de_thi.find(x => x.ma === ma);
+  if (ci) { const g = Quyen.moDe(ci); if (!g.mo) { MAIN().innerHTML = chanTruyCap(g.vi); return; } }
+  if (!d) { MAIN().innerHTML = chanTruyCap(`Đề ${ma} đã có trong chỉ mục nhưng chưa biên soạn xong.`); return; }
+  MAIN().innerHTML = `<div class="row" style="margin-bottom:12px">
+      <button class="btn" data-go="de-thi">← Bộ đề thi</button>
+      <span class="chip mono">${esc(ma)}</span>
+      <span class="chip">${d.meta.thoi_luong} phút · thang ${d.meta.thang_diem}</span></div>
+    <div class="card pad md">${mdToHtml(d.de_md)}</div>
+    <div style="margin:14px 0"><button class="btn btn-g" id="moDA">Xem đáp án và biểu điểm</button></div>
+    <div class="card pad md" id="daBox" style="display:none">${mdToHtml(d.dap_an_md)}</div>`;
+  $("#moDA").addEventListener("click", () => {
+    const b = $("#daBox"), mo = b.style.display === "none";
+    if (mo && Quyen.laHS() &&
+      !confirm("Em đã làm xong đề này chưa?\n\nXem đáp án trước khi làm hết là tự lấy mất cơ hội của mình.")) return;
+    b.style.display = mo ? "" : "none";
+    $("#moDA").textContent = mo ? "Ẩn đáp án" : "Xem đáp án và biểu điểm";
+  });
+}
+
+/* ==================== TRANG: PHÂN QUYỀN & BẢO MẬT ==================== */
+function vePhanQuyen() {
+  const pq = DATA.phan_quyen, t = Quyen.tang();
+  const nhan = { "X": ["Không", "var(--muted)"], "R": ["Xem", "var(--ok)"],
+    "R!": ["Xem có điều kiện", "var(--warn)"], "R°": ["Xem rút gọn", "var(--warn)"],
+    "RW": ["Xem, sửa", "var(--navy)"], "RWD": ["Xem, sửa, xoá", "var(--navy)"],
+    "A": ["Toàn quyền", "var(--bad)"] };
+  MAIN().innerHTML = `
+  <div class="page-h"><div><div class="eyebrow">Quản trị</div><h1>Phân quyền &amp; bảo mật</h1>
+    <p class="sub">Tám vai trò × mười sáu nhóm tài nguyên = 128 ô quyền, cộng năm tầng năng lực
+    học viên. Bảng này và phần mềm dùng chung một nguồn dữ liệu nên không bao giờ lệch nhau.</p></div>
+    <div class="row"><span class="chip">Đang xem với vai trò
+      <b>${esc(Quyen.ten())}</b></span></div></div>
+
+  <div class="card pad" style="margin-bottom:16px;border-left:4px solid var(--bad)">
+    <div class="eyebrow">Ranh giới bảo mật thật sự — đọc trước khi dùng</div>
+    <p style="margin-top:8px;font-size:14.5px">Bản online này là <b>một trang chạy trên máy
+    người xem</b>. Phân quyền trong trang ngăn được <b>nhầm lẫn</b>, nhưng
+    <b>không ngăn được người cố tình</b>: ai mở công cụ nhà phát triển của trình duyệt đều
+    đọc được dữ liệu nhúng trong trang, kể cả đáp án.</p>
+    <ul style="margin:10px 0 0;padding-left:20px;font-size:13.5px;line-height:1.7">
+      <li>Ranh giới thật đang có: <b>quyền chia sẻ trang</b> (không được chia sẻ thì không mở được)
+        và <b>luật ghi của kho dữ liệu</b> (người chỉ có quyền xem không ghi được vào vùng dữ liệu chung).</li>
+      <li><b>Không dùng bản online làm nơi thi thật.</b> Thi thật dùng bản in, hoặc chờ hệ thống
+        có máy chủ.</li>
+      <li>Họ tên học viên <b>chỉ lưu trên máy này</b>, không đẩy lên kho dữ liệu chung.
+        Kết quả học tập đẩy lên được gắn với một mã hồ sơ ngẫu nhiên.</li>
+    </ul>
+    <p class="muted" style="margin-top:10px;font-size:12.5px">Chi tiết đầy đủ và lộ trình lên
+    hệ thống có máy chủ: <span class="mono">01-kien-truc/07-phan-quyen-va-bao-mat.md</span></p>
+  </div>
+
+  <h3 style="font-size:15px;margin-bottom:10px">Tám vai trò</h3>
+  <div class="tw" style="margin-bottom:18px"><table>
+    <thead><tr><th>Mã</th><th>Vai trò</th><th class="n">Bậc</th><th>Phạm vi dữ liệu</th><th>Mô tả</th></tr></thead>
+    <tbody>${Object.entries(pq.vai_tro).sort((a, b) => a[1].bac - b[1].bac).map(([k, v]) =>
+    `<tr${k === Quyen.vai ? ' style="background:var(--surface-2)"' : ""}>
+      <td><span class="mono"><b>${k}</b></span></td><td>${esc(v.ten)}</td>
+      <td class="n">${v.bac}</td><td style="font-size:12.5px">${esc(v.pham_vi)}</td>
+      <td style="font-size:12.5px">${esc(v.mo_ta)}</td></tr>`).join("")}</tbody></table></div>
+
+  <h3 style="font-size:15px;margin-bottom:4px">Ma trận quyền</h3>
+  <p class="sub" style="margin-bottom:10px">Cột của vai trò đang xem được tô đậm.</p>
+  <div class="tw" style="margin-bottom:18px"><table>
+    <thead><tr><th>Tài nguyên</th>${Object.keys(pq.vai_tro).map(v =>
+      `<th class="n"${v === Quyen.vai ? ' style="color:var(--gold)"' : ""}>${v}</th>`).join("")}</tr></thead>
+    <tbody>${Object.entries(pq.tai_nguyen).map(([tn, ten]) => `<tr>
+      <td style="font-size:12.5px">${esc(ten)}</td>
+      ${Object.keys(pq.vai_tro).map(v => {
+        const [q, dk] = pq.quyen[tn][v]; const n = nhan[q] || [q, "var(--muted)"];
+        return `<td class="n"${v === Quyen.vai ? ' style="background:var(--surface-2)"' : ""}>
+          <span class="tag" style="background:${n[1]}1f;color:${n[1]}"
+            title="${esc(n[0] + (dk ? " — " + dk : ""))}">${q}</span></td>`;
+      }).join("")}</tr>`).join("")}</tbody></table></div>
+
+  <div class="grid g2">
+    <div class="card pad"><h3 style="font-size:15px;margin-bottom:4px">Năm tầng năng lực học viên</h3>
+      <p class="sub" style="margin-bottom:10px">Tính lại sau mỗi lần nộp bài, lấy trung bình
+      ba phiếu gần nhất. ${Quyen.laHS() ? `Em đang ở tầng <b>${t.ma} — ${esc(t.ten)}</b>.` : ""}</p>
+      <div class="tw"><table><thead><tr><th>Tầng</th><th class="n">Ngưỡng</th><th>Mở loại phiếu</th><th>Tuyến</th></tr></thead>
+      <tbody>${pq.tang.map(x => `<tr${x.ma === t.ma && Quyen.laHS() ? ' style="background:var(--surface-2)"' : ""}>
+        <td><b>${x.ma}</b> ${esc(x.ten)}</td><td class="n">${x.nguong}%</td>
+        <td class="mono" style="font-size:11.5px">${x.mo.join(" ")}</td>
+        <td class="mono" style="font-size:11.5px">${x.tuyen.join(" ")}</td></tr>`).join("")}</tbody></table></div>
+      <p class="muted" style="font-size:12px;margin-top:8px"><b>T2*</b> nghĩa là chỉ mở Tuyến 2
+      ở đúng nhóm chuyên đề học viên đã đạt M4.</p>
+    </div>
+    <div class="card pad"><h3 style="font-size:15px;margin-bottom:10px">Chín quy tắc bất biến</h3>
+      <p class="sub" style="margin-bottom:10px">Không vai trò nào — kể cả Super Admin — được
+      cấu hình để phá các quy tắc sau.</p>
+      <ol style="padding-left:20px;font-size:13px;line-height:1.65">${pq.bat_bien.map(r =>
+      `<li>${esc(r)}</li>`).join("")}</ol></div>
+  </div>`;
+}
+
 /* ============================ TRANG: HỒ SƠ ============================ */
 function veHoSo() {
   const h = HoSo.d, ls = HoSo.cacLan(), sc = HoSo.scorecard();
   MAIN().innerHTML = `
   <div class="page-h"><div><div class="eyebrow">Dữ liệu học tập</div><h1>Hồ sơ học viên</h1>
     <p class="sub">Mọi lần làm bài, mọi đáp án, mọi kết quả chấm đều được lưu vào hồ sơ này và dùng
-    để xếp lại lộ trình. Hồ sơ nằm trên thiết bị của em; khi hệ thống đồng bộ hoạt động thì
-    hồ sơ theo em sang mọi thiết bị.</p></div></div>
+    để xếp lại lộ trình.</p></div></div>
+
+  <div class="card pad" style="margin-bottom:16px;border-left:4px solid var(--ok)">
+    <div class="eyebrow">Dữ liệu của em được giữ thế nào</div>
+    <ul style="margin:8px 0 0;padding-left:20px;font-size:13.5px;line-height:1.7">
+      <li><b>Họ tên chỉ nằm trên máy này</b>, không bao giờ được đẩy lên kho dữ liệu dùng chung.</li>
+      <li>Kết quả học tập đồng bộ lên kho dữ liệu được gắn với <b>một mã hồ sơ ngẫu nhiên</b>
+        (<span class="mono">${esc((HoSo.hsId || "").slice(0, 8))}…</span>), không gắn với tên.</li>
+      <li>Hệ thống chỉ lưu những gì phục vụ việc học. Không thu thập địa chỉ, số điện thoại hay hình ảnh.</li>
+      <li>Em có thể <b>sao chép toàn bộ hồ sơ</b> hoặc <b>xoá sạch</b> bất cứ lúc nào bằng hai nút bên dưới.</li>
+    </ul>
+  </div>
 
   <div class="grid g2" style="margin-bottom:16px">
     <div class="card pad"><h3 style="font-size:15px;margin-bottom:12px">Thông tin học viên</h3>
@@ -1302,7 +1589,7 @@ function veHoSo() {
 const TRANG = {
   "tong-quan": veTongQuan, "lo-trinh": veLoTrinh, "thu-vien": veThuVien,
   "ban-do": veBanDo, "chuyen-de": veChuyenDe, "cum": veDanhSachCum,
-  "test": veTest, "ho-so": veHoSo
+  "de-thi": veDeThi, "phan-quyen": vePhanQuyen, "test": veTest, "ho-so": veHoSo
 };
 function dinhTuyen() {
   clearInterval(DONG_HO);
@@ -1312,6 +1599,7 @@ function dinhTuyen() {
   if (v === "phieu" && a) { moPhieu(decodeURIComponent(a)); }
   else if (v === "cum" && a) { veCum(decodeURIComponent(a)); }
   else if (v === "kem" && a) { veKem(decodeURIComponent(a)); }
+  else if (v === "de" && a) { veDe(decodeURIComponent(a)); }
   else if (v === "ban-do") { veBanDo(a); }
   else (TRANG[v] || veTongQuan)();
   MAIN().focus({ preventScroll: true });
@@ -1325,6 +1613,38 @@ $("#nav").addEventListener("click", e => {
   const b = e.target.closest("button[data-v]"); if (b) location.hash = "#/" + b.dataset.v;
 });
 window.addEventListener("hashchange", dinhTuyen);
+
+/* ------------------------------ chọn chế độ xem ------------------------------ */
+function veChonVai() {
+  const sel = $("#vaiSel");
+  sel.innerHTML = Object.entries(DATA.phan_quyen.vai_tro)
+    .sort((a, b) => a[1].bac - b[1].bac)
+    .map(([k, v]) => `<option value="${k}" ${k === Quyen.vai ? "selected" : ""}>${k} — ${esc(v.ten)}</option>`)
+    .join("");
+  capNhatGhiChuVai();
+  sel.addEventListener("change", e => {
+    Quyen.dat(e.target.value);
+    capNhatGhiChuVai();
+    loc_nav_theo_quyen();
+    dinhTuyen();
+    toast("Đã chuyển sang chế độ " + Quyen.ten());
+  });
+}
+function capNhatGhiChuVai() {
+  const t = Quyen.tang();
+  $("#vaiNote").innerHTML = Quyen.laHS()
+    ? `Tầng năng lực: <b style="color:#F2A81D">${t.ma} — ${esc(t.ten)}</b>`
+    : `Phạm vi: ${esc(DATA.phan_quyen.vai_tro[Quyen.vai].pham_vi)}`;
+}
+/* Ẩn mục điều hướng mà vai trò hiện tại không có quyền xem */
+const NAV_QUYEN = { "de-thi": "de_moc", "ho-so": "ho_so_minh", "thu-vien": "chi_muc",
+  "ban-do": "ban_do", "chuyen-de": "chi_muc", "cum": "chi_muc", "test": "test_dv" };
+function loc_nav_theo_quyen() {
+  $$("#nav button[data-v]").forEach(b => {
+    const tn = NAV_QUYEN[b.dataset.v];
+    b.hidden = !!(tn && !Quyen.co(tn));
+  });
+}
 
 /* ------------------------------ giao diện sáng / tối ------------------------------ */
 const KHOA_THEME = "gita.theme";
@@ -1341,14 +1661,17 @@ $("#themebtn").addEventListener("click", () => {
 document.addEventListener("keydown", e => {
   if (e.target.matches("input,select,textarea")) return;
   const map = { 1: "tong-quan", 2: "lo-trinh", 3: "thu-vien", 4: "ban-do", 5: "chuyen-de",
-    6: "test", 7: "ho-so", 8: "cum" };
+    6: "test", 7: "ho-so", 8: "cum", 9: "de-thi", 0: "phan-quyen" };
   if (map[e.key]) location.hash = "#/" + map[e.key];
 });
 
 /* ------------------------------ khởi động ------------------------------ */
 (async () => {
   try { datTheme(localStorage.getItem(KHOA_THEME) || "auto"); } catch (e) { datTheme("auto"); }
+  Quyen.nap();
   await HoSo.nap();
+  veChonVai();
+  loc_nav_theo_quyen();
   dinhTuyen();
 })();
 </script>

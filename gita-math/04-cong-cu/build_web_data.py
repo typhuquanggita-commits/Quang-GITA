@@ -23,6 +23,7 @@ sys.path.insert(0, str(ROOT / "04-cong-cu" / "data"))
 from nhom_chuyen_de import NHOM, TU_DUY  # noqa: E402
 from ban_do_kien_thuc import BAN_DO  # noqa: E402
 from loai_phieu import LOAI, CHUOI_BUOI  # noqa: E402
+from phan_quyen import VAI_TRO, TAI_NGUYEN, QUYEN, TANG, BAT_BIEN  # noqa: E402
 
 OUT_DIR = ROOT / "09-online" / "data"
 MOC_DAP_AN = "## HƯỚNG DẪN GIẢI VÀ ĐÁP ÁN"
@@ -171,6 +172,20 @@ def main() -> None:
         d = doc_phieu(p)
         phieu[d["meta"]["ma"]] = d
 
+    de_thi_idx = json.loads((ROOT / "07-de-thi" / "index-de-thi.json").read_text(encoding="utf-8"))
+    de_thi = [{"ma": d["ma"], "ho": d["ho"], "lop": d["lop"], "moc": d["moc"],
+               "moc_ten": d["moc_ten"], "ten": d["ten"], "pham_vi": d["pham_vi"],
+               "thoi_luong": d["thoi_luong"], "thang_diem": d["thang_diem"],
+               "bt": d["ma"].rsplit("-", 1)[-1] if d["ho"] != "ON" else None}
+              for d in de_thi_idx]
+    de_soan = {}
+    for f in (ROOT / "07-de-thi").rglob("GITA-*.md"):
+        t = f.read_text(encoding="utf-8")
+        fm, than = tach_front_matter(t)
+        moc_da = "## ĐÁP ÁN VÀ BIỂU ĐIỂM"
+        de, da = than.split(moc_da, 1) if moc_da in than else (than, "")
+        de_soan[f.stem] = {"meta": fm, "de_md": de.strip(), "dap_an_md": da.strip()}
+
     test = {}
     for p in sorted((ROOT / "08-test-dau-vao").glob("test-dau-vao-*.md")):
         d = doc_test(p)
@@ -200,6 +215,10 @@ def main() -> None:
         "loai": {k: {"ten": v["ten"], "giao_an": v["giao_an"], "muc_tieu": v["muc_tieu"],
                      "cau_truc": v["cau_truc"]} for k, v in LOAI.items()},
         "chuoi_buoi": CHUOI_BUOI,
+        "phan_quyen": {"vai_tro": VAI_TRO, "tai_nguyen": TAI_NGUYEN,
+                       "quyen": {t: {v: list(QUYEN[t][v]) for v in VAI_TRO}
+                                 for t in TAI_NGUYEN},
+                       "tang": TANG, "bat_bien": BAT_BIEN},
         "nhom": {k: {"ten": v["ten"], "mo_ta": v["mo_ta"], "td": v["td"], "mau": v["mau"]}
                  for k, v in NHOM.items()},
         "tu_duy": TU_DUY,
@@ -210,6 +229,8 @@ def main() -> None:
         "phieu": phieu,
         "kem": kem,
         "test": test,
+        "de_thi": de_thi,
+        "de_soan": de_soan,
     }
     out = OUT_DIR / "gita-data.json"
     out.write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
@@ -217,7 +238,7 @@ def main() -> None:
     print(f"✔ {out.relative_to(ROOT)} — {kb:.0f} KB")
     print(f"  chỉ mục: {len(gon)} phiếu · đã biên soạn: {len(phieu)} · test: {len(test)}"
           f" · kèm (GP/HD): {len(kem)} · bản đồ: {len(ban_do)} · mạch: {len(mach)}"
-          f" · cụm: {len(cum_ds)}")
+          f" · cụm: {len(cum_ds)} · đề thi: {len(de_thi)} (đã soạn {len(de_soan)})")
     for ma, d in phieu.items():
         n_bai = sum(len(p["bai"]) for p in d["phan"])
         print(f"  · {ma}: {len(d['phan'])} phần · {n_bai} bài · {d['tong_y']} ý")
