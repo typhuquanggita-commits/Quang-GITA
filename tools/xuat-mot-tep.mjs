@@ -24,10 +24,14 @@ const DICH = path.join(ROOT, 'engwin365-artifact.html');
 
 // Tên sản phẩm, không kèm lời giải thích. Đây là tên hiện trên thẻ trình duyệt
 // và trong thư viện Artifact, nên nó phải là MỘT CÁI TÊN.
+//
+// Thẻ <title> PHẢI nằm ở đầu tệp: bên đăng chỉ quét 8 KB đầu để tìm tên. Bản
+// dựng một-tệp nhét cả CSS lẫn JS vào <head>, nên nếu để tiêu đề đi sau phần
+// đầu ấy thì nó nằm ở byte thứ một triệu và thư viện Artifact sẽ lấy tên tệp
+// làm tên sản phẩm.
 const TIEU_DE = 'ENGWIN365';
 
-const NEN = `<title>${TIEU_DE}</title>
-<style>
+const NEN = `<style>
   /* App cam kết một giao diện tối duy nhất. Khung của Artifact đặt nền sáng và
      phông hệ thống 14px, nên phải ghi đè rõ ràng ở đây — để trống thì trang sẽ
      mượn nền của vật chủ và chữ thành không đọc được. */
@@ -73,7 +77,7 @@ let head = lay('head')
   // Tiêu đề được đặt lại ở khối NEN bên dưới.
   .replace(/<title>[\s\S]*?<\/title>\s*/g, '');
 
-const out = `${head}\n${NEN}\n${lay('body')}`;
+const out = `<title>${TIEU_DE}</title>\n${head}\n${NEN}\n${lay('body')}`;
 
 const cam = ['<!doctype', '<html', '<head', '<body'].filter((t) =>
   out.toLowerCase().includes(t),
@@ -84,6 +88,17 @@ if (cam.length) {
 }
 if (!out.includes('<title>')) {
   console.error('  Thiếu thẻ <title>');
+  process.exit(1);
+}
+// Bên đăng chỉ quét 8 KB đầu để tìm tên. Nếu tiêu đề rơi ra ngoài cửa sổ ấy,
+// bản đăng sẽ mang tên tệp thay vì tên sản phẩm — lỗi thầm lặng, không báo.
+const CUA_SO = 8 * 1024;
+const viTri = Buffer.byteLength(out.slice(0, out.indexOf('<title>')), 'utf8');
+if (viTri >= CUA_SO) {
+  console.error(
+    `  Thẻ <title> nằm ở byte ${viTri}, quá cửa sổ quét ${CUA_SO} byte.\n` +
+      '  Đưa thẻ <title> lên đầu tệp.\n',
+  );
   process.exit(1);
 }
 
