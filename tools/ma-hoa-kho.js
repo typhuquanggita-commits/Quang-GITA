@@ -46,7 +46,15 @@ const NEN = ['VANHANH', 'CHUYENDICH', 'CHANDUNG', 'LOTRINH', 'FAMILIES', 'TEAM',
   'NK_NHIP', 'NK_O', 'THI_VIET', 'THI_LUAT',
   /* Chuẩn thời gian, chuẩn hoàn thành, thang thưởng và phạt: mọi vai đều
      phải đọc được, vì luật mà không ai đọc được thì không phải luật. */
-  'TG_NGUNG_GIAY', 'TG_LOAI', 'TG_XEP', 'TG_NHIEMVU', 'TG_THUONG', 'TG_PHAT', 'TG_QUYDOI'];
+  'TG_NGUNG_GIAY', 'TG_LOAI', 'TG_XEP', 'TG_NHIEMVU', 'TG_THUONG', 'TG_PHAT', 'TG_QUYDOI',
+  /* Bản giới thiệu Học viện và hồ sơ giọng đọc: mọi vai đều đọc được. */
+  'GT_MOT_CAU', 'GT_VISAO', 'GT_HUA', 'GT_KHONG', 'GT_CHANG', 'GT_TANG', 'GT_VAI',
+  'GT_HOI', 'GT_SO', 'GT_BUOC',
+  'AD_THUMUC', 'AD_DUOI', 'AD_TRANGTHAI', 'AD_GIONG', 'AD_DIEUKHOAN', 'AD_KYTHUAT', 'AD_KHUNG',
+  /* Bộ sát hạch và khoá đào tạo tự động. Ở gói NỀN vì cả sáu vai đều thi,
+     kể cả học viên và phụ huynh — bài của ai thì màn hình lọc theo vai. */
+  'SH_TRUC', 'SH_TRONGSO', 'SH_VAI', 'SH_TANG', 'SH_TOTNGHIEP', 'SH_LUAT', 'SH_HOI',
+  'KH_LOTRINH', 'KH_BAI', 'KH_LUAT'];
 
 const NGHE = ['MOTHUC', 'SACH', 'BANDO_A3', 'POSTER', 'SODO', 'PHACDO',
   'DIEMCHAM', 'NGONTU', 'NGONTU_TANG', 'THAYVI', 'MAUTHOAI', 'PERSONA',

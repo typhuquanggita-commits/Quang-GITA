@@ -1091,8 +1091,13 @@ const { chromium } = require(PW);
     const srcAll = fs6.readdirSync(px6.join(__dirname, '..', 'src'))
       .filter(f => f.endsWith('.js'))
       .map(f => fs6.readFileSync(px6.join(__dirname, '..', 'src', f), 'utf8')).join('\n');
-    bao(!/createObjectURL|<a[^>]+download|\.zip"|showSaveFilePicker/.test(srcAll),
+    /* <a\s: bắt buộc có khoảng trắng ngay sau <a, nếu không thì thẻ <audio
+       của trình phát — vốn mang controlsList="nodownload" để TẮT nút tải —
+       lại bị chính bộ kiểm bắt nhầm là một đường tải xuống. */
+    bao(!/<a\s[^>]*\sdownload|createObjectURL|\.zip"|showSaveFilePicker/.test(srcAll),
       'không có nút tải xuống và không có tệp nén — mọi thứ đọc thẳng trên ứng dụng');
+    bao(/controlsList="nodownload/.test(srcAll),
+      'trình phát audio tắt nút tải của trình duyệt — nghe được nhưng không tải được');
   }
 
   /* ═══════════ 19 · QUY TRÌNH RÀNG BUỘC · 5 CẤP ĐỘ ═══════════
@@ -1964,6 +1969,297 @@ const { chromium } = require(PW);
     }));
     bao(sach.gate && !sach.con,
       'xoá kho trình duyệt rồi tải lại thì về màn đăng nhập — đồng hồ không dựng lại phiên vừa xoá');
+  }
+
+  /* ── 28. Màn giới thiệu · đọc hoặc nghe ── */
+  console.log('\n28 · GIỚI THIỆU GITA365 · ĐỌC HOẶC NGHE');
+  {
+    await p.evaluate(() => { localStorage.clear(); });
+    await p.reload({ waitUntil: 'networkidle' });
+    await p.waitForTimeout(400);
+    await p.evaluate(() => window.G.doLogin('phuhuynh@gita365.vn'));
+    await p.waitForTimeout(1600);
+
+    const gt = await p.evaluate(() => {
+      const G = window.G, r = {};
+      const html = G.VIEWS['gioi-thieu']();
+      r.dai = html.length;
+      r.coKhong = html.indexOf('SÁU ĐIỀU HỌC VIỆN KHÔNG LÀM') >= 0;
+      r.soKhong = (G.GT_KHONG || []).length;
+      r.soHua = (G.GT_HUA || []).length;
+      r.soChang = (G.GT_CHANG || []).length;
+      r.soHoi = (G.GT_HOI || []).length;
+      r.buocThat = (G.GT_BUOC || []).filter(x => !G.VIEWS[x.v]).map(x => x.v);
+      /* Phần dành riêng đội ngũ không được lộ ra với gia đình */
+      r.loDoiNgu = html.indexOf('DÙNG BẢN NÀY KHI NGỒI TRƯỚC GIA ĐÌNH') >= 0;
+      /* Không hứa điểm số, không hứa nhanh — hai câu này phải có mặt */
+      r.khongHuaDiem = (G.GT_KHONG || []).some(x => /không cam kết con lên mấy điểm/i.test(x));
+      r.khongNhanh = (G.GT_KHONG || []).some(x => /Không nhanh/i.test(x));
+      return r;
+    });
+    bao(gt.dai > 8000, 'màn giới thiệu dựng ra nội dung thật', gt.dai + ' ký tự');
+    bao(gt.soHua === 4 && gt.soChang === 4 && gt.soHoi >= 8,
+      'đủ bốn điều làm được, bốn chặng và tám câu hỏi hay gặp');
+    bao(gt.coKhong && gt.soKhong === 6,
+      'sáu điều KHÔNG làm được đặt ngay trong màn, không giấu xuống cuối', gt.soKhong + ' điều');
+    bao(gt.khongHuaDiem && gt.khongNhanh,
+      'nói rõ không cam kết điểm số và không hứa nhanh');
+    bao(!gt.buocThat.length, 'mọi bước tiếp theo đều trỏ tới màn có thật', gt.buocThat.join(', '));
+    bao(!gt.loDoiNgu, 'phần bản nói dành cho đội ngũ KHÔNG lộ ra với gia đình');
+
+    const nghe = await p.evaluate(() => {
+      const G = window.G, r = {};
+      /* Không giọng nào được coi là hợp lệ khi chưa có đủ tên, hợp đồng, hạn */
+      r.giongTrong = (G.AD_GIONG || []).filter(g => G.adGiongHopLe(g)).length;
+      r.soGiong = (G.AD_GIONG || []).length;
+      /* Lấy đúng một chuyện của kho Học viên: thứ tự trong gói đã mã hoá
+         không theo thứ tự tệp nguồn, nên không được lấy phần tử đầu tiên. */
+      const c = (G.CHUYEN || []).filter(x => x.cap === 'HS')[0];
+      r.tt = G.adTrangThai(c).ma;
+      /* Giả lập ký hợp đồng: đủ ba ô và còn hạn thì phát được */
+      const g = (G.AD_GIONG || []).filter(x => x.cap === 'HS')[0];
+      const luu = { ten: g.ten, hopDong: g.hopDong, den: g.den };
+      g.ten = 'Người dẫn thử'; g.hopDong = 'HD-THU-01'; g.den = '2099-12-31';
+      r.ttSauKy = G.adTrangThai(c).ma;
+      r.coTen = G.adTrinhPhat(c).indexOf('Người dẫn thử') >= 0;
+      r.coChanTai = G.adTrinhPhat(c).indexOf('nodownload') >= 0;
+      /* Hết hạn thì tự gỡ, không đợi ai nhớ */
+      g.den = '2020-01-01';
+      r.ttHetHan = G.adTrangThai(c).ma;
+      r.hetHanKhongPhat = G.adTrinhPhat(c).indexOf('<audio') < 0;
+      Object.assign(g, luu);
+      /* Kịch bản dẫn ghép đủ sáu phần từ chính nội dung chuyện */
+      const kb = G.adKichBan(c);
+      r.kbDu = ['[MỞ', '[KỂ', '[CHỖ XOAY', '[ĐIỀU RÚT RA', '[VIỆC LÀM NGAY']
+        .every(x => kb.indexOf(x) >= 0);
+      r.kbCoNoiDung = kb.indexOf(c.ke) >= 0 && kb.indexOf(c.hoc) >= 0 && kb.indexOf(c.lam) >= 0;
+      /* Nút chuyển Đọc / Nghe có mặt trên mọi chỗ hiện chuyện */
+      r.coNut = G.veChuyen(c).indexOf('data-adche="nghe"') >= 0;
+      r.daiGiongDoc = G.VIEWS['giong-doc']().length;
+      r.noiThang = G.VIEWS['giong-doc']().indexOf('mạo danh') >= 0;
+      return r;
+    });
+    bao(nghe.giongTrong === 0 && nghe.soGiong === 4,
+      'bốn hồ sơ giọng đã dựng, chưa hồ sơ nào có hợp đồng — đúng thực tế');
+    bao(nghe.tt === 'chua', 'chưa có hợp đồng thì báo là chưa có bản thu, không giả vờ có', nghe.tt);
+    bao(nghe.ttSauKy === 'song' && nghe.coTen,
+      'điền đủ tên, hợp đồng và hạn thì audio lên ngay, kèm tên người dẫn');
+    bao(nghe.coChanTai, 'trình phát tắt nút tải xuống của trình duyệt');
+    bao(nghe.ttHetHan === 'hethan' && nghe.hetHanKhongPhat,
+      'hết hạn hợp đồng thì hệ thống TỰ gỡ khỏi trình phát, không đợi ai nhớ');
+    bao(nghe.kbDu && nghe.kbCoNoiDung,
+      'kịch bản dẫn ghép đủ các phần, lấy đúng nội dung chuyện, không thêm bớt');
+    bao(nghe.coNut, 'mọi chỗ hiện chuyện đều có nút chuyển Đọc ↔ Nghe');
+    bao(nghe.daiGiongDoc > 6000, 'màn hồ sơ giọng đọc dựng ra nội dung thật',
+      nghe.daiGiongDoc + ' ký tự');
+    bao(nghe.noiThang, 'màn nói thẳng vì sao chưa có bản thu, không vòng vo');
+
+    /* Đội ngũ THÌ thấy phần bản nói */
+    await p.evaluate(() => { localStorage.clear(); });
+    await p.reload({ waitUntil: 'networkidle' });
+    await p.waitForTimeout(400);
+    await p.evaluate(() => window.G.doLogin('tuvan@gita365.vn'));
+    await p.waitForTimeout(1600);
+    const dn = await p.evaluate(() => window.G.VIEWS['gioi-thieu']());
+    bao(dn.indexOf('DÙNG BẢN NÀY KHI NGỒI TRƯỚC GIA ĐÌNH') >= 0,
+      'đội ngũ có bản nói lại cho gọn khi ngồi trước gia đình');
+    bao(dn.indexOf('Đừng hứa nhanh hơn để chốt cho được') >= 0,
+      'bản nói của đội ngũ cấm hứa nhanh hơn để chốt');
+  }
+
+  /* ── 29. Sát hạch năng lực · khoá đào tạo tự động ── */
+  console.log('\n29 · SÁT HẠCH NĂNG LỰC · KHOÁ ĐÀO TẠO TỰ ĐỘNG');
+  {
+    await p.evaluate(() => { localStorage.clear(); });
+    await p.reload({ waitUntil: 'networkidle' });
+    await p.waitForTimeout(400);
+    await p.evaluate(() => window.G.doLogin('coach@gita365.vn'));
+    await p.waitForTimeout(1800);
+
+    const kho = await p.evaluate(() => {
+      const G = window.G, r = {};
+      const H = G.SH_HOI || [];
+      r.tong = H.length;
+      r.hong = H.filter(x => !x.h || !Array.isArray(x.p) || x.p.length !== 4 ||
+        typeof x.d !== 'number' || x.d < 0 || x.d > 3 || !x.vs || !x.truc || !x.vai || !x.tang).length;
+      r.trung = H.map(x => x.ma).filter((v, i, a) => a.indexOf(v) !== i);
+      const truc = (G.SH_TRUC || []).map(x => x.ma);
+      r.trucLa = [...new Set(H.map(x => x.truc).filter(t => truc.indexOf(t) < 0))];
+      const tang = (G.SH_TANG || []).map(x => x.ma);
+      r.tangLa = [...new Set(H.map(x => x.tang).filter(t => tang.indexOf(t) < 0))];
+      const vai = (G.SH_VAI || []).map(x => x.ma);
+      r.vaiLa = [...new Set(H.map(x => x.vai).filter(v => vai.indexOf(v) < 0))];
+      /* Số câu mỗi bài phải NHỎ HƠN kho của tầng ấy, nếu không thì mọi lần
+         thi ra cùng một đề và luật bốc ngẫu nhiên chỉ là chữ */
+      r.deQuaTo = [];
+      vai.forEach(v => (G.SH_TANG || []).forEach(t => {
+        const n = H.filter(x => x.vai === v && x.tang === t.ma).length;
+        if (n <= t.cau) r.deQuaTo.push(v + '/' + t.ma + ' kho ' + n + ' ≤ đề ' + t.cau);
+      }));
+      /* Trọng số mỗi vai cộng lại đúng 100 */
+      r.tsLech = Object.keys(G.SH_TRONGSO || {}).filter(k =>
+        Object.values(G.SH_TRONGSO[k]).reduce((a, b) => a + b, 0) !== 100);
+      r.soTruc = (G.SH_TRUC || []).length;
+      r.soTang = (G.SH_TANG || []).length;
+      r.soTN = (G.SH_TOTNGHIEP || []).length;
+      r.soVai = vai.length;
+      return r;
+    });
+    bao(kho.tong >= 300, 'kho câu hỏi đủ lớn', kho.tong + ' câu');
+    bao(kho.hong === 0, 'câu nào cũng đủ bốn phương án, một đáp án, một trục, một tầng và phần vì sao',
+      kho.hong + ' câu hỏng');
+    bao(!kho.trung.length, 'không mã câu hỏi nào trùng', kho.trung.join(', '));
+    bao(!kho.trucLa.length && !kho.tangLa.length && !kho.vaiLa.length,
+      'không có mã trục, tầng hay vai lạ trong kho',
+      [...kho.trucLa, ...kho.tangLa, ...kho.vaiLa].join(', '));
+    bao(kho.soTruc === 8 && kho.soTang === 5 && kho.soTN === 4 && kho.soVai === 6,
+      'đủ tám trục · năm tầng · bốn bài tốt nghiệp · sáu vai được sát hạch');
+    bao(!kho.deQuaTo.length,
+      'mỗi bài đều nhỏ hơn kho của tầng ấy — đề bốc ngẫu nhiên mới có nghĩa', kho.deQuaTo.join(' · '));
+    bao(!kho.tsLech.length, 'trọng số tám trục của mỗi vai cộng lại đúng 100', kho.tsLech.join(', '));
+
+    /* Làm thật một bài và kiểm máy chấm */
+    const thi = await p.evaluate(async () => {
+      const G = window.G, r = {};
+      r.vai = G.shVaiCuaToi();
+      r.capDau = G.shCapCuaToi();
+      /* Không nhảy tầng */
+      r.b2Khoa = !G.shMoDuoc('B2');
+      const de = G.shDe('B1', 12345);
+      r.deDung = de.length === 8 && de.every(x => x.vai === r.vai && x.tang === 'B1');
+      /* Bốc ổn định với cùng hạt, khác nhau với hạt khác */
+      const de2 = G.shDe('B1', 12345), de3 = G.shDe('B1', 99999);
+      r.onDinh = de.map(x => x.ma).join() === de2.map(x => x.ma).join();
+      r.khacHat = de.map(x => x.ma).join() !== de3.map(x => x.ma).join();
+      /* Chấm: trả lời đúng hết thì phải đạt */
+      const dung = G.shCham('B1', de, de.map(x => x.d));
+      r.dungHet = dung.diem === 100 && dung.dat === true;
+      /* Trả lời sai hết thì không đạt và mọi trục đều vào danh sách yếu */
+      const sai = G.shCham('B1', de, de.map(x => (x.d + 1) % 4));
+      r.saiHet = sai.diem === 0 && sai.dat === false && sai.trucYeu.length > 0;
+      return r;
+    });
+    bao(thi.vai === 'COACH', 'Coach được xếp đúng bộ đề của vai mình', thi.vai);
+    bao(thi.capDau === 'C0', 'tài khoản mới chưa có cấp độ hành nghề nào', thi.capDau);
+    bao(thi.b2Khoa, 'chưa đạt B1 thì B2 không mở — không nhảy tầng');
+    bao(thi.deDung, 'đề bốc đúng số câu, đúng vai, đúng tầng');
+    bao(thi.onDinh && thi.khacHat,
+      'cùng một lượt thi thì đề không đổi; lượt khác thì đề khác');
+    bao(thi.dungHet, 'đúng hết thì 100% và đạt');
+    bao(thi.saiHet, 'sai hết thì 0%, không đạt, và mọi trục vào danh sách cần học');
+
+    /* Đi hết một lượt thi thật trên giao diện */
+    const lam = await p.evaluate(async () => {
+      const G = window.G;
+      G.S.view = 'sat-hach'; G.render();
+      await new Promise(r => setTimeout(r, 150));
+      const nut = document.querySelector('[data-shthi="B1"]');
+      if (!nut) return { mo: false };
+      nut.click();
+      await new Promise(r => setTimeout(r, 200));
+      /* Trả lời SAI hết, để kiểm nhánh chưa đạt và nhánh tự mở khoá học.
+         Phải đi theo chỉ số câu: sau mỗi lần bấm màn vẽ lại, nên lấy phần
+         tử đầu tiên mỗi vòng thì chỉ bấm đi bấm lại đúng câu số một. */
+      const soCau = document.querySelectorAll('[data-shchon]').length / 4;
+      for (let i = 0; i < soCau; i++) {
+        const nutA = document.querySelector('[data-shchon="' + i + '-0"]');
+        if (nutA) nutA.click();   /* phương án A — sai với hầu hết câu trong kho */
+        await new Promise(r => setTimeout(r, 25));
+      }
+      const coNop = !!document.querySelector('[data-shnop]');
+      if (coNop) { document.querySelector('[data-shnop]').click(); await new Promise(r => setTimeout(r, 200)); }
+      const kq = (G.S.sathach || {})['bai|B1'];
+      return {
+        mo: true, coNop: coNop, coKq: !!kq, lan: G.shSoLanThi('B1'),
+        trenDia: !!((JSON.parse(localStorage.getItem('gita365.v7') || '{}').sathach || {})['bai|B1']),
+        manKq: (G.VIEWS['sat-hach']() || '').indexOf('TÁM TRỤC · KẾT QUẢ TỪNG TRỤC') >= 0,
+        yeu: (kq && kq.trucYeu || []).length
+      };
+    });
+    bao(lam.mo && lam.coNop, 'bấm thi là mở ra đề thật, chọn đủ thì hiện nút nộp');
+    bao(lam.coKq && lam.lan === 1, 'nộp xong có kết quả và đếm đúng số lần thi');
+    bao(lam.trenDia, 'kết quả thi ghi xuống đĩa, không mất khi đóng tab');
+    bao(lam.manKq, 'màn kết quả hiện kết quả từng trục trong tám trục');
+
+    /* Khoá đào tạo: trục yếu mở đúng bài của trục đó */
+    const kdt = await p.evaluate(() => {
+      const G = window.G, r = {};
+      const ds = G.khBaiCuaToi();
+      r.soBai = ds.length;
+      r.duBaPhan = ds.every(x => x.hoc && x.lam && x.nop);
+      r.loTrinh = (G.khLoTrinh() || {}).vai;
+      r.yeu = Object.keys(G.khTrucYeu()).length;
+      /* Bài của trục yếu phải mở ngay, không phải xếp hàng */
+      const yeu = Object.keys(G.khTrucYeu());
+      const baiYeu = ds.filter(x => yeu.indexOf(x.truc) >= 0);
+      r.baiYeuMo = baiYeu.length > 0 && baiYeu.every(x => G.khMoDuoc(x.ma));
+      /* Bài cuối cùng của một trục KHÔNG yếu thì phải còn khoá */
+      const khac = ds.filter(x => yeu.indexOf(x.truc) < 0);
+      r.coKhoa = khac.some(x => !G.khMoDuoc(x.ma));
+      r.dai = G.VIEWS['khoa-dao-tao']().length;
+      r.soLuat = (G.KH_LUAT || []).length;
+      return r;
+    });
+    bao(kdt.soBai > 0 && kdt.duBaPhan,
+      'bài nào cũng đủ ba phần Học · Làm · Nộp', kdt.soBai + ' bài');
+    bao(kdt.loTrinh === 'COACH', 'mở đúng lộ trình của vai đang đăng nhập', kdt.loTrinh);
+    bao(kdt.yeu > 0 && kdt.baiYeuMo,
+      'trục bài thi chỉ ra còn yếu thì bài của trục đó mở NGAY, không xếp hàng', kdt.yeu + ' trục');
+    bao(kdt.coKhoa, 'bài không thuộc trục yếu vẫn khoá cho tới khi nộp bài liền trước');
+    bao(kdt.dai > 6000, 'màn khoá đào tạo dựng ra nội dung thật', kdt.dai + ' ký tự');
+    bao(kdt.soLuat >= 6, 'có bộ luật học', kdt.soLuat + ' điều');
+
+    /* Nộp bằng chứng quá ngắn thì bị chặn */
+    const nop = await p.evaluate(async () => {
+      const G = window.G;
+      G.S.view = 'khoa-dao-tao'; G.render();
+      await new Promise(r => setTimeout(r, 150));
+      const mo = document.querySelector('[data-khmo]');
+      if (!mo) return { mo: false };
+      const ma = mo.getAttribute('data-khmo');
+      mo.click();
+      await new Promise(r => setTimeout(r, 200));
+      const o = document.querySelector('[data-khnop]');
+      if (!o) return { mo: false };
+      o.value = 'ngắn quá';
+      document.querySelector('[data-khxong]').click();
+      await new Promise(r => setTimeout(r, 150));
+      const chan = G.khTrangThai(ma) !== 'xong';
+      const o2 = document.querySelector('[data-khnop]');
+      o2.value = 'Đã làm với ba nhà trong tuần này, mỗi nhà một bảng ba dòng cụ thể, có ghi ngày.';
+      document.querySelector('[data-khxong]').click();
+      await new Promise(r => setTimeout(r, 200));
+      return { mo: true, chan: chan, xong: G.khTrangThai(ma) === 'xong',
+               trenDia: !!((JSON.parse(localStorage.getItem('gita365.v7') || '{}').khoahoc || {})['bai|' + ma]) };
+    });
+    bao(nop.mo, 'mở được một bài học thật trên giao diện');
+    bao(nop.chan, 'bằng chứng quá ngắn thì bị chặn — không nhận bài làm cho xong');
+    bao(nop.xong && nop.trenDia, 'nộp bằng chứng thật thì bài tính là xong và ghi xuống đĩa');
+
+    /* Vai khác thì bộ đề và lộ trình khác */
+    const vaiKhac = {};
+    for (const [ten, u] of [['ctv', 'daisu@gita365.vn'], ['gv', 'giaovien@gita365.vn'],
+                            ['hs', 'hocvien@gita365.vn']]) {
+      await p.evaluate(() => { localStorage.clear(); });
+      await p.reload({ waitUntil: 'networkidle' });
+      await p.waitForTimeout(400);
+      await p.evaluate(x => window.G.doLogin(x), u);
+      await p.waitForTimeout(1500);
+      vaiKhac[ten] = await p.evaluate(() => ({
+        vai: window.G.shVaiCuaToi(),
+        soCau: window.G.shKhoCua(window.G.shVaiCuaToi()).length,
+        lo: (window.G.khLoTrinh() || {}).ma || '',
+        dai: window.G.VIEWS['sat-hach']().length
+      }));
+    }
+    bao(vaiKhac.ctv.vai === 'CTV' && vaiKhac.gv.vai === 'GV' && vaiKhac.hs.vai === 'HS',
+      'mỗi vai được xếp đúng bộ sát hạch của mình');
+    bao(Object.values(vaiKhac).every(v => v.soCau >= 55),
+      'vai nào cũng có kho đề riêng đủ lớn');
+    bao(vaiKhac.ctv.lo === 'LT-CTV' && vaiKhac.gv.lo === 'LT-GV',
+      'cộng tác viên và giáo viên mở đúng lộ trình đào tạo của mình');
+    bao(vaiKhac.hs.lo === '', 'học viên không có lộ trình đào tạo nghề — đúng, đó là bốn vai làm nghề');
+    bao(Object.values(vaiKhac).every(v => v.dai > 6000), 'không vai nào mở ra màn sát hạch trống');
   }
 
   console.log('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành'));

@@ -238,9 +238,9 @@ G.TAM_NHIN = [
      chính cấp mình, sổ nhật ký và cuộc thi viết. Thêm một màn như thế
      không mở thêm một dòng tư liệu nghề nào. Ghi con số thật ở đây, và
      giữ nguyên trần nội dung ở chỗ của nó. */
-  {vai:['R13'], pt:33, ghi:'Nhà mình, hành trình của con, gửi tài liệu và minh chứng, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết'},
-  {vai:['R14'], pt:27, ghi:'Chặng đường của em, nhiệm vụ, minh chứng, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết'},
-  {vai:['R15'], pt:23, ghi:'Phần giới thiệu, hoa hồng, gửi tài liệu, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết'}
+  {vai:['R13'], pt:35, ghi:'Nhà mình, hành trình của con, gửi tài liệu và minh chứng, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, giới thiệu Học viện, đọc hoặc nghe'},
+  {vai:['R14'], pt:29, ghi:'Chặng đường của em, nhiệm vụ, minh chứng, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết'},
+  {vai:['R15'], pt:25, ghi:'Phần giới thiệu, hoa hồng, gửi tài liệu, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết'}
 ];
 
 /* Sáu chân dung người dùng — lời mời bước vào, hiển thị ở Cổng vào */
@@ -309,6 +309,7 @@ G.NAV = [
    t:'BẢN ĐỒ THỊNH VƯỢNG', s:'Nhà mình đang ở đâu, và sẽ thành gì?',
    essence:'Nơi mọi thứ bắt đầu: nhìn cho đúng trước khi sửa bất cứ điều gì.',
    items:[
+    {v:'gioi-thieu',  t:'GITA 365 là gì',              h:'Làm được gì · không làm gì · một nhà đi qua những gì', ic:'seed', star:1, capMo:'chung'},
     {v:'bat-dau',     t:'Bắt đầu ở đây',               h:'Năm bước đầu tiên, đúng thứ tự',     ic:'seed', star:1, capMo:'chung'},
     {v:'pham-vi',     t:'Phạm vi của tôi',             h:'Mình mở tới đâu · còn gì chưa mở',   ic:'compass', star:1, capMo:'chung'},
     {v:'ban-do',      t:'Bản Đồ Gia Đình Thịnh Vượng', h:'5 khoang · 9 vai · băng nền 8 việc', ic:'map', star:1, capMo:'chung'},
@@ -389,8 +390,11 @@ G.NAV = [
     /* Chuyện truyền cảm hứng: mỗi cấp tài khoản một kho trăm chuyện.
        Không gắn perm — vai nào cũng có kho của mình, màn hình tự lọc. */
     {v:'chuyen-cam-hung',t:'Chuyện truyền cảm hứng', h:'100 chuyện cho cấp của mình · 10 mạch · mỗi nhiệm vụ một chuyện', ic:'flame', star:1, capMo:'chung'},
+    {v:'giong-doc',   t:'Đọc hoặc nghe · giọng đọc',  h:'Bản quyền giọng · chuẩn phòng thu · kịch bản dẫn', ic:'quote', capMo:'chung'},
     {v:'nhat-ky-vi-tri',t:'Sổ nhật ký của tôi',    h:'Ngày · tuần · tháng · ô ghi riêng cho từng vị trí', ic:'book', star:1, capMo:'chung'},
     {v:'thi-viet',    t:'Cuộc thi viết 7 – 21 – 90 – 365', h:'Bài đạt mốc 90 và 365 nhận học bổng 10%', ic:'crown', star:1, capMo:'chung'},
+    {v:'sat-hach',    t:'Sát hạch năng lực',          h:'5 tầng · 4 bài tốt nghiệp · 8 trục đánh giá', ic:'shield', star:1, capMo:'chung'},
+    {v:'khoa-dao-tao',t:'Khoá đào tạo của tôi',       h:'Học · Làm · Nộp · bài kế tiếp tự mở', ic:'book', star:1, capMo:'chung'},
     {v:'do-thoi-gian',t:'Thời gian · thưởng · phạt', h:'Đồng hồ thật · ba ngưỡng · chuẩn hoàn thành · quy đổi điểm', ic:'pulse', star:1, capMo:'chung'},
     {v:'chin-vai',    t:'Chín vai giữ trong nhà',      h:'Ai giữ gì, ai đang bị bỏ ra ngoài',  ic:'users', star:1, perm:'kh_gia_dinh', capMo:'nha'},
     {v:'thoi-quen',   t:'Thói quen & nghi lễ',         h:'Bốn nghi lễ giữ nhịp cả năm',        ic:'ritual', perm:'kh_gia_dinh', capMo:'nha'},

@@ -11,12 +11,12 @@ var KEY = 'gita365.v7';
 G.S = {
   role:null, acc:null, roleObj:null,
   view:'ban-do', open:['g1'], rtab:'labon', rightOpen:true, leftOpen:false,
-  checks:{}, vision:{}, journal:{}, test:{}, bando:{}, nhatky:{}, baithi:{}, thoigian:{}, famId:'F-001', kbShown:60
+  checks:{}, vision:{}, journal:{}, test:{}, bando:{}, nhatky:{}, baithi:{}, thoigian:{}, sathach:{}, khoahoc:{}, famId:'F-001', kbShown:60
 };
 function save(){
   try{ localStorage.setItem(KEY, JSON.stringify({
     role:G.S.role, u:G.S.acc && G.S.acc.u, view:G.S.view, open:G.S.open, rtab:G.S.rtab,
-    checks:G.S.checks, vision:G.S.vision, journal:G.S.journal, test:G.S.test, bando:G.S.bando, nhatky:G.S.nhatky, baithi:G.S.baithi, thoigian:G.S.thoigian,
+    checks:G.S.checks, vision:G.S.vision, journal:G.S.journal, test:G.S.test, bando:G.S.bando, nhatky:G.S.nhatky, baithi:G.S.baithi, thoigian:G.S.thoigian, sathach:G.S.sathach, khoahoc:G.S.khoahoc,
     rightOpen:G.S.rightOpen, mood:G.S.mood
   })); }catch(e){}
 }
@@ -30,6 +30,8 @@ function load(){
     G.S.nhatky = d.nhatky || {};
     G.S.baithi = d.baithi || {};
     G.S.thoigian = d.thoigian || {};
+    G.S.sathach = d.sathach || {};
+    G.S.khoahoc = d.khoahoc || {};
     G.S.mood = d.mood || null;
     if(d.rightOpen !== undefined) G.S.rightOpen = d.rightOpen;
     return d;
@@ -612,6 +614,9 @@ function render(){
      đường tải xuống vừa được dựng ra. Phải chạy SAU khi màn hình đã vào
      DOM, nên đặt cạnh đóng dấu chìm. */
   if(G.batKhoaChep) G.batKhoaChep();
+  /* Trình phát audio: gỡ nút tải của trình duyệt sau mỗi lần vẽ lại.
+     Phải chạy SAU khoá sao chép, vì lớp ấy quét lại toàn bộ màn. */
+  if(G.adDonTrinhPhat) G.adDonTrinhPhat();
   if(G.dem) G.dem();
   /* Đồng hồ đo thời gian thật: báo cho nó biết đang ở màn nào. Nó tự lo
      phần dừng khi tab chạy nền hoặc khi người dùng đứng yên. */

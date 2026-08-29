@@ -14,7 +14,7 @@ var KEY_HANG = 'gita365.hangcho';  // hàng chờ khi mất mạng
    này, nhưng chúng không nằm trong danh sách nên mốc bị bỏ ngay ở cửa — sổ
    thư viện và minh chứng nhiệm vụ nằm lại đúng một trình duyệt. Phụ huynh
    nộp minh chứng trên điện thoại, Coach mở máy mình thì không có gì. */
-var NHOM = ['checks', 'journal', 'vision', 'test', 'mood', 'thuvien', 'minhchung', 'bando', 'chuyen', 'nhatky', 'baithi', 'thoigian'];
+var NHOM = ['checks', 'journal', 'vision', 'test', 'mood', 'thuvien', 'minhchung', 'bando', 'chuyen', 'nhatky', 'baithi', 'thoigian', 'sathach', 'khoahoc'];
 
 /* ─── Nhóm nào lấy dữ liệu ở đâu ───
    Trước đây gomThayDoi luôn đọc G.S[nhom]. Nhưng sổ thư viện nằm ở
