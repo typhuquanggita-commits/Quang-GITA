@@ -26,7 +26,7 @@
 
 ---
 
-## 2. Bản đồ hệ sinh thái (13 phân hệ)
+## 2. Bản đồ hệ sinh thái (15 phân hệ)
 
 ```
                          ┌──────────────────────────────┐
@@ -80,7 +80,16 @@
                      │ chữ · biểu tượng · 12 mẫu tài liệu · │
                      │ nhận diện số & đồng bộ GITA365       │
                      │ ⟲ áp cho mọi ấn phẩm của 00→11       │
-                     └──────────────────────────────────────┘
+                     └───────────────┬──────────────────────┘
+                                     ▼
+     ┌───────────────────────────────────┬──────────────────────────────────┐
+     │ TRẢI NGHIỆM & DỊCH VỤ (13)        │ ĐO LƯỜNG TÁC ĐỘNG (14)           │
+     │ Hành trình 3 nhân vật · 12 khoảnh │ 4 tầng bằng chứng · 18 chỉ số ·  │
+     │ khắc WOW · chuẩn SLA · kịch bản   │ thiết kế đo trước–sau · hiệu     │
+     │ tư vấn · khiếu nại LEAD · giữ     │ chuẩn người chấm · chống thiên   │
+     │ chân · trải nghiệm đội ngũ        │ lệch · báo cáo tác động 3 cấp    │
+     └───────────────────────────────────┴──────────────────────────────────┘
+              ▲  biến chương trình thành DỊCH VỤ       ▲  biến lời hứa thành BẰNG CHỨNG
 ```
 
 ---
@@ -129,6 +138,7 @@
 | [KHO-TRO-CHOI-TEAMWORK-160.md](04-KHO-HOAT-DONG-TRO-CHOI/KHO-TRO-CHOI-TEAMWORK-160.md) | 160 trò chơi & hoạt động nhóm phân theo pha GITA, độ tuổi, mục tiêu |
 | [KHO-CONG-CU-DUNG-CU.md](05-KHO-CONG-CU-DUNG-CU/KHO-CONG-CU-DUNG-CU.md) | Danh mục vật tư, bộ kit lớp học, công cụ tư duy, công nghệ, dự toán |
 | [KHO-PHIEU-THUC-HANH.md](06-KHO-PHIEU-THUC-HANH/KHO-PHIEU-THUC-HANH.md) | 60 mẫu phiếu thực hành theo cấp học |
+| **[BO-RUBRIC-CHI-TIET-19-HO.md](07-KHO-PHIEU-DANH-GIA/BO-RUBRIC-CHI-TIET-19-HO.md)** | ⭐ **19 rubric gốc viết đầy đủ 4 mức** — mỗi họ năng lực một cái · chuẩn viết rubric GITA · quy đổi TT27/2020 & TT22/2021 · quy trình dùng khuôn để viết 269 rubric còn lại |
 | [KHO-PHIEU-DANH-GIA.md](07-KHO-PHIEU-DANH-GIA/KHO-PHIEU-DANH-GIA.md) | Rubric, phiếu quan sát, tự đánh giá, đánh giá đồng đẳng, phiếu phụ huynh, báo cáo tiến bộ |
 
 ### 📓 08 – CẨM NANG 3 BÊN
@@ -160,6 +170,19 @@
 | [02-CHUAN-TRINH-BAY-TAI-LIEU.md](12-NHAN-DIEN-THUONG-HIEU/02-CHUAN-TRINH-BAY-TAI-LIEU.md) | Khổ & lề · lưới 6 cột · **gáy GITA 4 màu** · đầu–chân trang · cấp tiêu đề · bảng · vùng học sinh viết · hình ảnh · in ấn · tệp số · **checklist 20 mục trước khi phát hành** |
 | [03-BO-MAU-TAI-LIEU.md](12-NHAN-DIEN-THUONG-HIEU/03-BO-MAU-TAI-LIEU.md) | **12 mẫu dựng sẵn**: bìa bộ · bìa giáo án · trang tiến trình · kịch bản · phiếu KNS 5 lớp · rubric · `PSM` · Hộ chiếu GITA · chứng nhận đai · báo cáo phụ huynh · thẻ bỏ túi HLV · slide |
 | **[SO-TAY-NHAN-DIEN-KNSGITA.html](12-NHAN-DIEN-THUONG-HIEU/SO-TAY-NHAN-DIEN-KNSGITA.html)** | 🎨 **Sổ tay nhận diện bản trực quan** — mở bằng trình duyệt: xem được màu thật, chữ thật, thẻ pha, hộp chú ý và 3 mẫu tài liệu dựng thu nhỏ |
+
+### 💛 13 – TRẢI NGHIỆM KHÁCH HÀNG & CHUẨN DỊCH VỤ
+| Tệp | Nội dung |
+|---|---|
+| [01-BAN-DO-HANH-TRINH-VA-KHOANH-KHAC-WOW.md](13-TRAI-NGHIEM-DICH-VU/01-BAN-DO-HANH-TRINH-VA-KHOANH-KHAC-WOW.md) | Hành trình 3 nhân vật *(học sinh · phụ huynh · nhà trường)* · 7 giai đoạn phụ huynh · **12 khoảnh khắc WOW đặc tả thi công** *(người làm, hạn, chi phí, nơi kiểm đếm)* · 5 khoảnh khắc phải đúng với học sinh · món quà dữ liệu cho nhà trường |
+| [02-CHUAN-DICH-VU-TU-VAN-VA-KHIEU-NAI.md](13-TRAI-NGHIEM-DICH-VU/02-CHUAN-DICH-VU-TU-VAN-VA-KHIEU-NAI.md) | **Cam kết SLA 10 loại việc** · 6 cam kết chất lượng + điều **không** cam kết · **kịch bản tư vấn 5 bước** · **10 phản đối thường gặp** · quy trình khiếu nại **LEAD** · 5 tình huống khó · 10 chỉ số chất lượng dịch vụ |
+| [03-GIU-CHAN-GIOI-THIEU-VA-TRAI-NGHIEM-DOI-NGU.md](13-TRAI-NGHIEM-DICH-VU/03-GIU-CHAN-GIOI-THIEU-VA-TRAI-NGHIEM-DOI-NGU.md) | **Hệ cảnh báo sớm rời bỏ 8 dấu hiệu có chấm điểm** · 4 nguyên nhân rời bỏ thật · **chương trình giới thiệu không dùng hoa hồng tiền mặt** · 7 cam kết với huấn luyện viên · chống kiệt sức · bảng điều khiển trải nghiệm 1 trang |
+
+### 📈 14 – ĐO LƯỜNG TÁC ĐỘNG & MINH CHỨNG
+| Tệp | Nội dung |
+|---|---|
+| [01-KHUNG-DO-LUONG-VA-BO-CHI-SO.md](14-DO-LUONG-TAC-DONG/01-KHUNG-DO-LUONG-VA-BO-CHI-SO.md) | **4 tầng bằng chứng** *(phản ứng → học được → **chuyển giao** → tác động)* · thiết kế đo nền–giữa–cuối · **3 bài đo hành vi 12 phút** · **hiệu chuẩn người chấm ≥80%** · quy tắc trung thực về nhân quả · **5 thiên lệch và cách chống** · **18 chỉ số lõi** · lịch đo cả năm · 5 quy tắc đạo đức đo lường |
+| [02-BO-BAO-CAO-TAC-DONG-3-CAP.md](14-DO-LUONG-TAC-DONG/02-BO-BAO-CAO-TAC-DONG-3-CAP.md) | 8 quy tắc trình bày số liệu trung thực · **báo cáo phụ huynh 1 trang** *(mở bằng câu bố mẹ nói tháng 9)* · **báo cáo nhà trường 4 trang** *(có trang đối sánh CT GDPT 2018 dùng lại được)* · **báo cáo hội đồng 8 trang** *(có trang tự nêu hạn chế)* · ngân hàng câu nói về số liệu |
 | [04-NHAN-DIEN-SO-VA-DONG-BO-GITA365.md](12-NHAN-DIEN-THUONG-HIEU/04-NHAN-DIEN-SO-VA-DONG-BO-GITA365.md) | 8 quy tắc đồng bộ KNSGITA ↔ GITA365 · thanh tiến trình 7 phần · giao diện theo cấp học · video · audio · huy hiệu số · thông báo · mạng xã hội · **bộ tệp nguồn cần sản xuất** · bảo vệ thương hiệu |
 
 ---
@@ -169,8 +192,9 @@
 1. **Đọc theo trục dọc** (một khối): `KHOI-XX.md` → chọn chuyên đề → mở `MAU-GIAO-AN` → `MAU-KICH-BAN` → lấy trò chơi ở kho 04, dụng cụ ở kho 05, phiếu thực hành ở kho 06, phiếu đánh giá ở kho 07.
 2. **Đọc theo trục ngang** (một mạch năng lực xuyên 12 năm): `BAN-DO-CHUONG-TRINH-288.md` → lọc theo mã mạch `M1…M8`.
 3. **Mọi tài liệu đều gắn mã.** Mã chuyên đề dạng `K07-M4-02` = Khối 7 · Mạch 4 (Giao tiếp & Hợp tác) · Chuyên đề thứ 2 của mạch.
-4. **Mọi ấn phẩm phát hành ra ngoài đều theo phân hệ 12.** Trước khi in hoặc đăng tải, chạy hết **checklist 20 mục** ở `12-NHAN-DIEN-THUONG-HIEU/02`.
-5. **Trước khi triển khai bất kỳ phần nào, đọc phân hệ 11.** Quy định phân quyền và bảo vệ dữ liệu trẻ em ở `11-PHAN-QUYEN-BAO-MAT` **cao hơn** mọi hướng dẫn nghiệp vụ ở các phân hệ khác; khi có mâu thuẫn, áp dụng phân hệ 11.
+4. **Chương trình chỉ thành dịch vụ khi có phân hệ 13, và chỉ thành bằng chứng khi có phân hệ 14.** Nội dung hay mà giá trị không đến được nhà thì phụ huynh vẫn rời đi — trong im lặng.
+5. **Mọi ấn phẩm phát hành ra ngoài đều theo phân hệ 12.** Trước khi in hoặc đăng tải, chạy hết **checklist 20 mục** ở `12-NHAN-DIEN-THUONG-HIEU/02`.
+6. **Trước khi triển khai bất kỳ phần nào, đọc phân hệ 11.** Quy định phân quyền và bảo vệ dữ liệu trẻ em ở `11-PHAN-QUYEN-BAO-MAT` **cao hơn** mọi hướng dẫn nghiệp vụ ở các phân hệ khác; khi có mâu thuẫn, áp dụng phân hệ 11.
 
 ---
 
