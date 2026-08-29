@@ -456,7 +456,7 @@ function thanhMuc(g, p) {
 /* ============================ TRANG: TỔNG QUAN ============================ */
 function veTongQuan() {
   const h = HoSo.d, sc = HoSo.scorecard(), ls = HoSo.cacLan(), mn = HoSo.mucNhom();
-  const daBienSoan = Object.keys(DATA.phieu).length;
+  const daBienSoan = Object.keys(DATA.phieu).length + Object.keys(DATA.kem || {}).length;
   const chuan = [["G", "Đạt đích phiếu", sc.G, "%", "≥ 70%"], ["I", "Chỉ số bền bỉ", sc.I, "%", "≥ 80%"],
   ["T", "Nhóm đạt M4+", sc.T, `/8`, "≥ 6/8"], ["A", "Độ chính xác", sc.A, "%", "≥ 90%"]];
   MAIN().innerHTML = `
@@ -793,6 +793,10 @@ function veSol(b) {
   ${da.loi_thuong_gap ? `<div class="blk"><h4>Lỗi thường gặp ở bài này</h4>
     <div class="txt">${mdToHtml(da.loi_thuong_gap)}</div></div>` : ""}
   ${da.goi_y ? `<div class="blk"><h4>Gợi ý ba tầng</h4><div class="txt">${mdToHtml(da.goi_y)}</div></div>` : ""}
+  ${DATA.kem[m.ma + "-GP"] ? `<div class="blk"><h4>Phiếu lời giải &amp; phân tích chuyên sâu</h4>
+    <p style="font-size:13.5px"><a href="#/kem/${m.ma}-GP"><b>Mở phiếu ${m.ma}-GP</b></a> —
+    đáp số toàn phiếu, lời giải đầy đủ, bảng phân tích sáu cột, nhãn tư duy, lỗi thường gặp,
+    gợi ý ba tầng và bài tương tự tự luyện.</p></div>` : ""}
   <div class="blk rel">
     <h4>Kiến thức liên quan</h4>
     <p style="font-size:13.5px;margin-bottom:8px"><b>Nhóm ${m.nhom_ma} — ${esc(nh.ten)}.</b>
@@ -1029,6 +1033,20 @@ function veChuyenDe() {
   }));
 }
 
+/* ==================== TRANG: TÀI LIỆU KÈM (GP / HD) ==================== */
+function veKem(ma) {
+  const d = DATA.kem[ma];
+  if (!d) { MAIN().innerHTML = `<div class="empty"><h3>Tài liệu này đang được biên soạn</h3>
+    <p>Mã <span class="mono">${esc(ma)}</span> đã có trong chỉ mục nhưng nội dung chưa phát hành.</p>
+    <p style="margin-top:12px"><button class="btn" data-go="cum">Về danh sách cụm</button></p></div>`; return; }
+  const m = d.meta, khoa = m.cum ? `L${m.lop}-${m.tuyen}-C${String(m.cum).padStart(2, "0")}` : null;
+  MAIN().innerHTML = `<div class="row" style="margin-bottom:12px">
+      ${khoa ? `<a class="btn" href="#/cum/${khoa}">← Cụm C${String(m.cum).padStart(2, "0")}</a>` : ""}
+      ${m.kem_theo ? `<a class="btn" href="#/phieu/${m.kem_theo}">Mở phiếu ${m.kem_theo}</a>` : ""}
+      <span class="chip">${esc(m.loai_ten)}</span></div>
+    <div class="card pad md">${mdToHtml(d.md)}</div>`;
+}
+
 /* ============================ TRANG: CỤM CHUYÊN ĐỀ ============================ */
 let LOC_CUM = { lop: 4, tuyen: "T1" };
 function veDanhSachCum() {
@@ -1078,12 +1096,15 @@ function veCum(khoa) {
       <tbody>${hoc.map(r => `<tr><td class="n">${r.buoi || "—"}</td>
         <td><span class="mono">${r.ma}</span>
           <div class="muted" style="font-size:11.5px">phiếu số ${r.stt} · tuần ${r.tuan}</div></td>
-        <td>${esc(r.lp_ten)}<div class="muted" style="font-size:11.5px">Lời giải: <span class="mono">${r.ma}-GP</span></div></td>
+        <td>${esc(r.lp_ten)}<div class="muted" style="font-size:11.5px">Lời giải:
+          ${DATA.kem[r.ma + "-GP"] ? `<a href="#/kem/${r.ma}-GP"><span class="mono">${r.ma}-GP</span></a>`
+        : `<span class="mono">${r.ma}-GP</span>`}</div></td>
         <td>${DATA.phieu[r.ma] ? `<a class="btn btn-g" style="padding:4px 10px;font-size:12.5px"
           href="#/phieu/${r.ma}">Làm bài</a>` : '<span class="tag t-warn">Đang biên soạn</span>'}</td></tr>`).join("")}
       </tbody></table></div>
       ${hd ? `<p class="sub" style="margin-top:10px">Phiếu hướng dẫn ôn chắc chuyên đề:
-        <span class="mono">${hd.ma}</span></p>` : ""}
+        ${DATA.kem[hd.ma] ? `<a href="#/kem/${hd.ma}"><span class="mono">${hd.ma}</span></a>
+          <span class="tag t-ok">có nội dung</span>` : `<span class="mono">${hd.ma}</span>`}</p>` : ""}
     </div>
     <div class="card pad"><h3 style="font-size:15px;margin-bottom:10px">Danh sách dạng bài</h3>
       <ol style="padding-left:20px;font-size:13.5px;line-height:1.7">${c.dang_bai.map(d =>
@@ -1290,6 +1311,7 @@ function dinhTuyen() {
   $$("#nav button").forEach(b => b.setAttribute("aria-current", b.dataset.v === v));
   if (v === "phieu" && a) { moPhieu(decodeURIComponent(a)); }
   else if (v === "cum" && a) { veCum(decodeURIComponent(a)); }
+  else if (v === "kem" && a) { veKem(decodeURIComponent(a)); }
   else if (v === "ban-do") { veBanDo(a); }
   else (TRANG[v] || veTongQuan)();
   MAIN().focus({ preventScroll: true });

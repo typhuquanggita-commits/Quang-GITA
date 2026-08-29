@@ -28,11 +28,11 @@ OUT_DIR = ROOT / "09-online" / "data"
 MOC_DAP_AN = "## HƯỚNG DẪN GIẢI VÀ ĐÁP ÁN"
 
 RE_PHAN = re.compile(
-    r"^##\s+PHẦN\s+([IVX]+)\s*—\s*(.+?)\s*·\s*Mức\s+(\S+)\s*·\s*(\d+)\s*phút\s*·\s*(\d+)\s*điểm\s*$",
-    re.M)
+    r"^##\s+PHẦN\s+([A-EIVX]+)\s*—\s*(.+?)\s*·\s*(?:Mức\s+(\S+)\s*·\s*)?"
+    r"(\d+)\s*phút\s*·\s*(\d+)\s*điểm\s*$", re.M)
 RE_BAI = re.compile(r"^###\s+Bài\s+(\d+)\.\s*\((\d+)\s*điểm\)\s*(.*)$", re.M)
 RE_Y = re.compile(r"^\s{0,3}([a-z])\)\s+(.*)$")
-RE_DA_BAI = re.compile(r"^###\s+Bài\s+([IVX]+)\.(\d+)\s*$", re.M)
+RE_DA_BAI = re.compile(r"^###\s+Bài\s+([A-EIVX]+)\.(\d+)\s*$", re.M)
 MUC_DA = ["Đáp số", "Hướng giải", "Nhãn tư duy", "Lỗi thường gặp", "Gợi ý 3 tầng"]
 LA_MA = ["I", "II", "III", "IV", "V"]
 
@@ -124,7 +124,7 @@ def doc_phieu(path: Path) -> dict:
                 "tieu_de": b.group(3).strip(), "dan": dan, "y": ys, "dap_an": da_bai,
             })
         phan_list.append({
-            "so": m.group(1), "ten": m.group(2), "muc": m.group(3),
+            "so": m.group(1), "ten": m.group(2), "muc": m.group(3) or "",
             "phut": int(m.group(4)), "diem": int(m.group(5)), "bai": bai_list,
         })
     return {"meta": fm, "phan": phan_list,
@@ -161,8 +161,13 @@ def main() -> None:
                        "ten": r["cum_ten"], "g": r["nhom_ma"], "hk": r["hoc_ky"],
                        "tuan": r["tuan"], "dang_bai": r["dang_bai"]})
 
-    phieu = {}
+    phieu, kem = {}, {}
     for p in sorted((ROOT / "03-phieu").rglob("GITA-*.md")):
+        text = p.read_text(encoding="utf-8")
+        fm, than = tach_front_matter(text)
+        if fm.get("loai") in ("GP", "HD"):
+            kem[fm["ma"]] = {"meta": fm, "md": than.strip()}
+            continue
         d = doc_phieu(p)
         phieu[d["meta"]["ma"]] = d
 
@@ -190,7 +195,8 @@ def main() -> None:
                  "tong_tai_lieu": len(gon),
                  "tong_phieu_hoc": sum(1 for r in gon if r["hoc"]),
                  "tong_cum": sum(1 for r in gon if r["lp"] == "HD"),
-                 "phieu_da_bien_soan": len(phieu)},
+                 "phieu_da_bien_soan": len(phieu),
+                 "tai_lieu_kem_da_bien_soan": len(kem)},
         "loai": {k: {"ten": v["ten"], "giao_an": v["giao_an"], "muc_tieu": v["muc_tieu"],
                      "cau_truc": v["cau_truc"]} for k, v in LOAI.items()},
         "chuoi_buoi": CHUOI_BUOI,
@@ -202,6 +208,7 @@ def main() -> None:
         "ban_do": ban_do,
         "mach": mach,
         "phieu": phieu,
+        "kem": kem,
         "test": test,
     }
     out = OUT_DIR / "gita-data.json"
@@ -209,7 +216,8 @@ def main() -> None:
     kb = out.stat().st_size / 1024
     print(f"✔ {out.relative_to(ROOT)} — {kb:.0f} KB")
     print(f"  chỉ mục: {len(gon)} phiếu · đã biên soạn: {len(phieu)} · test: {len(test)}"
-          f" · bản đồ: {len(ban_do)} · mạch: {len(mach)} · cụm: {len(cum_ds)}")
+          f" · kèm (GP/HD): {len(kem)} · bản đồ: {len(ban_do)} · mạch: {len(mach)}"
+          f" · cụm: {len(cum_ds)}")
     for ma, d in phieu.items():
         n_bai = sum(len(p["bai"]) for p in d["phan"])
         print(f"  · {ma}: {len(d['phan'])} phần · {n_bai} bài · {d['tong_y']} ý")
