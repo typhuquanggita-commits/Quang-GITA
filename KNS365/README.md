@@ -1,5 +1,6 @@
 # KNS365 – HỆ SINH THÁI GIÁO DỤC KỸ NĂNG SỐNG LỚP 1 → LỚP 12
-## Vận hành bằng Mô thức Huấn luyện **GITA** – Thương hiệu **KNSGITA**
+## Chương trình lõi của **hệ GEN VIỆT** · Vận hành bằng Mô thức Huấn luyện **GITA** · Thương hiệu **KNSGITA**
+### *"Thế hệ Việt tiên phong trong Kỷ nguyên vươn mình của dân tộc"*
 
 > **Tuyên ngôn:** *KNSGITA không dạy kỹ năng sống như một môn học phụ. KNSGITA huấn luyện con người – bằng một mô thức lặp lại 365 ngày, 12 năm, 288 chuyên đề – để mỗi học sinh Việt Nam rời ghế nhà trường với một **bộ năng lực sống có thể chứng minh được**, một **hồ sơ tài năng có thể trình bày được**, và một **bệ phóng có thể cất cánh được**.*
 
@@ -10,6 +11,7 @@
 | Hạng mục | Thông số |
 |---|---|
 | Tên chương trình | **KNS365** – Kỹ Năng Sống 365 |
+| Hệ đào tạo | **GEN VIỆT** (Học viện GITA) |
 | Thương hiệu huấn luyện | **KNSGITA** |
 | Mô thức lõi | **GITA** – *Goal → Inspirits → Talent → Action/Academy* |
 | Phạm vi | Lớp 1 → Lớp 12 (12 khối) |
@@ -67,7 +69,8 @@
 | [03-KHUNG-NANG-LUC-KNS365.md](00-KHUNG-NEN-TANG/03-KHUNG-NANG-LUC-KNS365.md) | 8 mạch năng lực × 40 năng lực thành phần × 4 mức độ thành thạo |
 | [04-LO-TRINH-BE-PHONG-TAI-NANG.md](00-KHUNG-NEN-TANG/04-LO-TRINH-BE-PHONG-TAI-NANG.md) | Lộ trình 12 năm, 4 giai đoạn, 6 đai GITA, Hộ chiếu năng lực, Hồ sơ tài năng |
 | [05-CHUAN-DAU-RA-THEO-KHOI.md](00-KHUNG-NEN-TANG/05-CHUAN-DAU-RA-THEO-KHOI.md) | Chuẩn đầu ra (Exit Profile) từng khối 1→12 |
-| [06-QUY-CHUAN-CHAT-LUONG-GITA-QC.md](00-KHUNG-NEN-TANG/06-QUY-CHUAN-CHAT-LUONG-GITA-QC.md) | Bộ 40 tiêu chí kiểm định chất lượng một buổi huấn luyện GITA |
+| [06-QUY-CHUAN-CHAT-LUONG-GITA-QC.md](00-KHUNG-NEN-TANG/06-QUY-CHUAN-CHAT-LUONG-GITA-QC.md) | Bộ 49 tiêu chí kiểm định chất lượng một buổi huấn luyện GITA |
+| [07-HE-GEN-VIET.md](00-KHUNG-NEN-TANG/07-HE-GEN-VIET.md) | Kiến trúc hệ GEN VIỆT: 5 trụ, gắn Kỷ nguyên vươn mình, quy chuẩn thành viên, tổ chức TRN–ACT–QLHV–Leader, GITA hoá ba sân |
 
 ### 📗 01 – CHƯƠNG TRÌNH KHUNG (288 chuyên đề)
 | Tệp | Nội dung |
