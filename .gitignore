@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Tep chuong trinh dang may doc — sinh lai bang `npm run catalogue`
+catalogue/chuong-trinh.json
+coverage

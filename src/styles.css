@@ -1,0 +1,321 @@
+@import 'tailwindcss';
+
+/* ────────────────────────────────────────────────────────────────────────
+   HỆ THỐNG THIẾT KẾ HSA365
+
+   Mọi màu trong ứng dụng đều đi qua một token ngữ nghĩa (canvas, surface,
+   fg, border…) chứ không dùng thẳng bảng màu của Tailwind. Nhờ vậy chế độ
+   sáng/tối chỉ là một tập giá trị khác của cùng bộ token, và không có màn
+   hình nào bị "quên" đổi màu.
+   ──────────────────────────────────────────────────────────────────────── */
+
+@theme {
+  --color-canvas: var(--c-canvas);
+  --color-canvas-2: var(--c-canvas-2);
+  --color-surface: var(--c-surface);
+  --color-surface-2: var(--c-surface-2);
+  --color-line: var(--c-line);
+  --color-line-strong: var(--c-line-strong);
+
+  --color-fg: var(--c-fg);
+  --color-fg-muted: var(--c-fg-muted);
+  --color-fg-subtle: var(--c-fg-subtle);
+  --color-fg-invert: var(--c-fg-invert);
+
+  --color-brand: var(--c-brand);
+  --color-brand-hover: var(--c-brand-hover);
+  --color-brand-soft: var(--c-brand-soft);
+  --color-brand-line: var(--c-brand-line);
+
+  --color-ok: var(--c-ok);
+  --color-ok-soft: var(--c-ok-soft);
+  --color-warn: var(--c-warn);
+  --color-warn-soft: var(--c-warn-soft);
+  --color-bad: var(--c-bad);
+  --color-bad-soft: var(--c-bad-soft);
+
+  /* Bảng màu biểu đồ. Ba khe phân loại đã được kiểm định bằng
+     scripts/validate_palette.js cho cả hai chế độ màu (tách biệt với
+     người mù màu deutan/protan/tritan và đủ tương phản với nền). */
+  --color-viz-1: var(--c-viz-1);
+  --color-viz-2: var(--c-viz-2);
+  --color-viz-3: var(--c-viz-3);
+
+  --font-sans:
+    'Inter var', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
+    'Noto Sans', 'Liberation Sans', Arial, sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', 'JetBrains Mono', 'Cascadia Code', Menlo, monospace;
+
+  --radius-card: 1rem;
+  --shadow-card: 0 1px 2px rgb(2 6 23 / 0.04), 0 8px 24px -12px rgb(2 6 23 / 0.12);
+  --shadow-pop: 0 12px 40px -12px rgb(2 6 23 / 0.28);
+}
+
+/* Bảng màu chế độ sáng ------------------------------------------------- */
+:root {
+  --c-canvas: #f6f7fb;
+  --c-canvas-2: #eef1f7;
+  --c-surface: #ffffff;
+  --c-surface-2: #f8fafc;
+  --c-line: #e2e8f0;
+  --c-line-strong: #cbd5e1;
+
+  --c-fg: #0f172a;
+  --c-fg-muted: #475569;
+  --c-fg-subtle: #7c8aa0;
+  --c-fg-invert: #ffffff;
+
+  --c-brand: #4f46e5;
+  --c-brand-hover: #4338ca;
+  --c-brand-soft: #eef2ff;
+  --c-brand-line: #c7d2fe;
+
+  --c-ok: #047857;
+  --c-ok-soft: #ecfdf5;
+  --c-warn: #b45309;
+  --c-warn-soft: #fffbeb;
+  --c-bad: #be123c;
+  --c-bad-soft: #fff1f2;
+
+  /* Khe phân loại: xanh dương — cam — ngọc (thứ tự cố định, không xoay vòng). */
+  --c-viz-1: #2a78d6;
+  --c-viz-2: #eb6834;
+  --c-viz-3: #1baf7a;
+
+  /* Thang liên tục một sắc, nhạt → đậm, dùng cho bản đồ nhiệt lịch học. */
+  --c-ramp-0: #eef2f7;
+  --c-ramp-1: #cde2fb;
+  --c-ramp-2: #9ec5f4;
+  --c-ramp-3: #5598e7;
+  --c-ramp-4: #2a78d6;
+  --c-ramp-5: #184f95;
+
+  --c-grid: #e8edf4;
+
+  color-scheme: light;
+}
+
+/* Bảng màu chế độ tối --------------------------------------------------- */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --c-canvas: #070b16;
+    --c-canvas-2: #0b1120;
+    --c-surface: #0f172a;
+    --c-surface-2: #16203a;
+    --c-line: #1e293b;
+    --c-line-strong: #334155;
+
+    --c-fg: #e8eefc;
+    --c-fg-muted: #9fb0cc;
+    --c-fg-subtle: #6b7d9c;
+    --c-fg-invert: #070b16;
+
+    --c-brand: #818cf8;
+    --c-brand-hover: #a5b4fc;
+    --c-brand-soft: #1b2350;
+    --c-brand-line: #3b3f8f;
+
+    --c-ok: #34d399;
+    --c-ok-soft: #06281f;
+    --c-warn: #fbbf24;
+    --c-warn-soft: #2a1f05;
+    --c-bad: #fb7185;
+    --c-bad-soft: #2c0a15;
+
+    --c-viz-1: #3987e5;
+    --c-viz-2: #d95926;
+    --c-viz-3: #199e70;
+
+    --c-ramp-0: #16203a;
+    --c-ramp-1: #0d366b;
+    --c-ramp-2: #104281;
+    --c-ramp-3: #184f95;
+    --c-ramp-4: #256abf;
+    --c-ramp-5: #3987e5;
+
+    --c-grid: #1b2740;
+
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme='dark'] {
+  --c-canvas: #070b16;
+  --c-canvas-2: #0b1120;
+  --c-surface: #0f172a;
+  --c-surface-2: #16203a;
+  --c-line: #1e293b;
+  --c-line-strong: #334155;
+
+  --c-fg: #e8eefc;
+  --c-fg-muted: #9fb0cc;
+  --c-fg-subtle: #6b7d9c;
+  --c-fg-invert: #070b16;
+
+  --c-brand: #818cf8;
+  --c-brand-hover: #a5b4fc;
+  --c-brand-soft: #1b2350;
+  --c-brand-line: #3b3f8f;
+
+  --c-ok: #34d399;
+  --c-ok-soft: #06281f;
+  --c-warn: #fbbf24;
+  --c-warn-soft: #2a1f05;
+  --c-bad: #fb7185;
+  --c-bad-soft: #2c0a15;
+
+  --c-viz-1: #3987e5;
+  --c-viz-2: #d95926;
+  --c-viz-3: #199e70;
+
+  --c-ramp-0: #16203a;
+  --c-ramp-1: #0d366b;
+  --c-ramp-2: #104281;
+  --c-ramp-3: #184f95;
+  --c-ramp-4: #256abf;
+  --c-ramp-5: #3987e5;
+
+  --c-grid: #1b2740;
+
+  color-scheme: dark;
+}
+
+/* Nền tảng -------------------------------------------------------------- */
+html {
+  /* Người học chỉnh cỡ chữ trong Cài đặt; mọi đơn vị rem đều theo giá trị này. */
+  font-size: calc(16px * var(--font-scale, 1));
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  background-color: var(--c-canvas);
+  color: var(--c-fg);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Tôn trọng thiết lập hệ thống, đồng thời cho phép người dùng tự tắt hiệu ứng. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:root[data-motion='reduced'] *,
+:root[data-motion='reduced'] *::before,
+:root[data-motion='reduced'] *::after {
+  animation-duration: 0.001ms !important;
+  transition-duration: 0.001ms !important;
+}
+
+/* Viền tiêu điểm luôn hiện rõ trên cả hai chế độ màu — bắt buộc cho bàn phím. */
+:where(a, button, input, select, textarea, [tabindex]):focus-visible {
+  outline: 2px solid var(--c-brand);
+  outline-offset: 2px;
+  border-radius: 0.5rem;
+}
+
+::selection {
+  background: var(--c-brand);
+  color: var(--c-fg-invert);
+}
+
+/* Thanh cuộn hài hòa với chủ đề, không "cháy trắng" trong chế độ tối. */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--c-line-strong) transparent;
+}
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+*::-webkit-scrollbar-thumb {
+  background: var(--c-line-strong);
+  border-radius: 999px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+
+/* Tiện ích dùng lại -------------------------------------------------------- */
+@utility card {
+  background-color: var(--c-surface);
+  border: 1px solid var(--c-line);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+}
+
+@utility skip-link {
+  position: absolute;
+  left: 0.75rem;
+  top: -3rem;
+  z-index: 100;
+  padding: 0.5rem 0.875rem;
+  border-radius: 0.5rem;
+  background: var(--c-brand);
+  color: var(--c-fg-invert);
+  transition: top 0.15s ease;
+}
+
+.skip-link:focus {
+  top: 0.75rem;
+}
+
+@keyframes hsa-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.animate-in {
+  animation: hsa-fade-up 0.24s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes hsa-pulse-ring {
+  0% {
+    box-shadow: 0 0 0 0 color-mix(in oklab, var(--c-bad) 55%, transparent);
+  }
+  70% {
+    box-shadow: 0 0 0 10px transparent;
+  }
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+}
+
+.pulse-danger {
+  animation: hsa-pulse-ring 1.4s ease-out infinite;
+}
+
+/* Chỉ hiện cho trình đọc màn hình. */
+.sr-only-focusable:not(:focus):not(:focus-within) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* Nội dung in ra: bỏ điều hướng, giữ nội dung bài làm. */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: #fff;
+    color: #000;
+  }
+}
