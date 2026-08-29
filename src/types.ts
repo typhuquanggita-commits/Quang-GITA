@@ -434,4 +434,21 @@ export interface AppState {
   bookmarks: string[];
   /** Aggregate seconds studied per ISO date, for the streak/heatmap. */
   activity: Record<string, number>;
+  /** Which skill lessons have been read, keyed by skill id. */
+  lessons: Record<SkillId, LessonProgress>;
+}
+
+/**
+ * A learner's history with one lesson.
+ *
+ * Kept because instruction and practice are different acts: knowing that a
+ * learner has drilled Transitions forty times says nothing about whether
+ * anyone ever explained Transitions to them, and the coach needs to be able
+ * to tell those apart before it prescribes a fifth round of the same drill.
+ */
+export interface LessonProgress {
+  /** Local calendar date the lesson was first read to the end. */
+  firstReadAt: string;
+  lastReadAt: string;
+  reads: number;
 }

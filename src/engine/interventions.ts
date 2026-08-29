@@ -71,6 +71,12 @@ export interface RuleContext {
   errors: { concept: number; careless: number; timeout: number; omitted: number };
   /** Skills with the least demonstrated mastery, weakest first. */
   weakSkills: Array<{ skill: SkillId; section: SectionId; mastery: number; attempted: number }>;
+  /**
+   * Skills whose lesson the learner has read. Carried as a fact rather than a
+   * judgement so a rule can tell "drilled this badly forty times" apart from
+   * "was never taught this", which call for opposite prescriptions.
+   */
+  lessonsRead: SkillId[];
   /** Domains with fewer than a healthy number of responses. */
   underCoveredDomains: Array<{ domain: string; section: SectionId; count: number }>;
 
@@ -100,6 +106,7 @@ export interface RuleContext {
 
 export type BlockKind =
   | 'diagnostic'
+  | 'lesson'
   | 'drill'
   | 'review'
   | 'vocab'
@@ -599,6 +606,47 @@ export const RULES: Rule[] = [
           evidence('Share of all errors', 'Tỉ lệ trên tổng lỗi', pctText(rushed)),
         ],
         blocks: [{ kind: 'drill', minutes: 25, difficulty: 'edge', questionCount: 18 }],
+      };
+    },
+  },
+
+  {
+    id: 'r-untaught-weak-skill',
+    priority: 51.5,
+    pillar: 'talent',
+    rationale:
+      'A skill the learner has never been taught should not be drilled harder. Repetition without instruction rehearses the misconception; the lesson is cheap and comes first.',
+    rationaleVi:
+      'Kỹ năng chưa từng được dạy thì không nên luyện thêm cho nặng. Lặp lại mà không có hướng dẫn chỉ củng cố cách hiểu sai; đọc bài giảng tốn ít thời gian và phải đi trước.',
+    evaluate(ctx) {
+      const untaught = ctx.weakSkills.filter((s) => !ctx.lessonsRead.includes(s.skill));
+      if (untaught.length === 0) return null;
+      const target = untaught[0];
+      return {
+        summary: `${target.skill} is the weakest skill with enough evidence, and its lesson has never been read.`,
+        summaryVi: `${target.skill} là kỹ năng yếu nhất có đủ bằng chứng, và bài giảng của nó chưa từng được đọc.`,
+        action: 'Read the lesson, then drill the same skill.',
+        actionVi: 'Đọc bài giảng, rồi luyện đúng kỹ năng đó.',
+        evidence: [
+          evidence(
+            `Mastery: ${target.skill}`,
+            `Mức thành thạo: ${target.skill}`,
+            pctText(target.mastery),
+          ),
+          evidence('Questions attempted', 'Số câu đã làm', target.attempted),
+          evidence('Lesson read', 'Đã đọc bài giảng', 'no / chưa'),
+        ],
+        blocks: [
+          { kind: 'lesson', minutes: 8, section: target.section, skills: [target.skill] },
+          {
+            kind: 'drill',
+            minutes: 15,
+            section: target.section,
+            skills: [target.skill],
+            difficulty: 'edge',
+            questionCount: 8,
+          },
+        ],
       };
     },
   },

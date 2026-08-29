@@ -43,9 +43,12 @@ argue with should not be trusted for long.
    daily commitment, producing a minute budget.
 
 4. **Blocks are materialised into the budget.** They are ordered by kind, not
-   by which rule produced them. Divisible blocks are shortened to fit;
-   a full-length rehearsal and a rest day are all-or-nothing. A drill with
-   nothing left to serve is dropped rather than sent as an empty session.
+   by which rule produced them — a `lesson` always precedes the `drill` it
+   explains, since instruction that arrives after the practice teaches
+   nothing the practice has not already guessed at. Divisible blocks are
+   shortened to fit; a full-length rehearsal and a rest day are
+   all-or-nothing. A drill with nothing left to serve is dropped rather than
+   sent as an empty session.
 
 5. **Items are selected.** Drills arrive with their questions already chosen
    by the same maximum-information selector the practice surface uses, with
@@ -73,6 +76,7 @@ rationale written for a human reader.
 | 40 | `r-assignment-due` | Set work due within two days |
 | 50 | `r-careless-dominant` | Careless errors are the largest share |
 | 51 | `r-pacing-dominant` | Rushed and omitted answers are the largest share |
+| 51.5 | `r-untaught-weak-skill` | The weakest measured skill has a lesson that was never read |
 | 52 | `r-weak-skill-drill` | The default: work the weakest measured skills |
 | 53 | `r-coverage-gap` | A domain has almost no responses |
 | 60 | `r-adherence-slide` | Adherence has fallen sharply in the last week |

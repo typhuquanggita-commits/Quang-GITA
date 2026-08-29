@@ -22,16 +22,18 @@ import {
 import { thetaToScaled } from '../../engine/scoring.ts';
 import { useStore } from '../../state/store.tsx';
 import { useLocale, useT } from '../../i18n/index.ts';
-import { Badge, Card, Empty, Segmented, Tabs } from '../../components/ui/primitives.tsx';
+import { Badge, Button, Card, Empty, Segmented, Tabs } from '../../components/ui/primitives.tsx';
 import { BarChart, Donut, LineChart, MasteryBars, PacingChart } from '../../components/charts/charts.tsx';
-import { IconChart } from '../../components/ui/icons.tsx';
+import { IconBook, IconChart } from '../../components/ui/icons.tsx';
+import { lessonFor } from '../../data/lesson-index.ts';
+import type { Route } from '../shell/routes.ts';
 import { formatClock, formatDate, isoDate, pct } from '../../lib/util.ts';
 
 type Tab = 'overview' | 'skills' | 'pacing' | 'errors';
 
 const MIN_RESPONSES = 12;
 
-export function Analytics(): React.ReactElement {
+export function Analytics({ navigate }: { navigate(route: Route): void }): React.ReactElement {
   const t = useT();
   const locale = useLocale();
   const { state } = useStore();
@@ -101,7 +103,7 @@ export function Analytics(): React.ReactElement {
       />
 
       {tab === 'overview' && <Overview section={section} records={records} allRecords={allRecords} />}
-      {tab === 'skills' && <Skills records={records} />}
+      {tab === 'skills' && <Skills records={records} navigate={navigate} />}
       {tab === 'pacing' && <Pacing records={records} />}
       {tab === 'errors' && <Errors records={records} />}
     </div>
@@ -203,7 +205,13 @@ function Overview({ section, records, allRecords }: ViewProps): React.ReactEleme
   );
 }
 
-function Skills({ records }: { records: ResponseRecord[] }): React.ReactElement {
+function Skills({
+  records,
+  navigate,
+}: {
+  records: ResponseRecord[];
+  navigate(route: Route): void;
+}): React.ReactElement {
   const t = useT();
   const locale = useLocale();
   const stats = useMemo(() => skillStats(records), [records]);
@@ -211,7 +219,14 @@ function Skills({ records }: { records: ResponseRecord[] }): React.ReactElement 
 
   if (sufficient.length === 0) return <Empty title={t('analytics.needsData')} />;
 
+  // Naming a weakest skill and then offering nothing but more of the same
+  // questions is where this screen used to stop. The lesson is the answer to
+  // the question the bar chart raises.
+  const weakest = sufficient.reduce((low, s) => (s.mastery < low.mastery ? s : low));
+  const lesson = lessonFor(weakest.skill);
+
   return (
+    <div className="stack gap-5">
     <Card
       title={t('analytics.mastery')}
       subtitle={
@@ -229,7 +244,23 @@ function Skills({ records }: { records: ResponseRecord[] }): React.ReactElement 
           }${skill.trend !== 0 ? ` · ${skill.trend > 0 ? '↑' : '↓'} ${Math.abs(Math.round(skill.trend * 100))}%` : ''}`,
         }))}
       />
-    </Card>
+      </Card>
+
+      {lesson && (
+        <Card
+          title={t('lessons.weakest')}
+          subtitle={skillLabel(weakest.skill, locale)}
+          action={
+            <Button onClick={() => navigate({ name: 'lesson', skill: weakest.skill })}>
+              <IconBook size={16} /> {t('lessons.read')}
+            </Button>
+          }
+        >
+          <p>{locale === 'vi' ? lesson.ideaVi : lesson.idea}</p>
+          <p className="muted small">{t('lessons.weakestHint')}</p>
+        </Card>
+      )}
+    </div>
   );
 }
 

@@ -15,6 +15,8 @@ export type Route =
   | { name: 'practice' }
   | { name: 'practice-session'; sessionId: string }
   | { name: 'vocab' }
+  | { name: 'lessons' }
+  | { name: 'lesson'; skill: string }
   | { name: 'plan' }
   | { name: 'gita' }
   | { name: 'tests' }
@@ -33,6 +35,8 @@ export const ROUTE_PERMISSION: Partial<Record<RouteName, Permission>> = {
   practice: 'practice.run',
   'practice-session': 'practice.run',
   vocab: 'vocab.own',
+  lessons: 'practice.run',
+  lesson: 'practice.run',
   plan: 'plan.own',
   gita: 'plan.own',
   tests: 'test.take',
@@ -48,6 +52,8 @@ export function routeToHash(route: Route): string {
       return `#/practice/${route.sessionId}`;
     case 'exam':
       return `#/exam/${route.attemptId}`;
+    case 'lesson':
+      return `#/lesson/${route.skill}`;
     case 'result':
       return `#/result/${route.attemptId}`;
     default:
@@ -70,6 +76,10 @@ export function hashToRoute(hash: string): Route {
       return { name: 'today' };
     case 'vocab':
       return { name: 'vocab' };
+    case 'lessons':
+      return { name: 'lessons' };
+    case 'lesson':
+      return param ? { name: 'lesson', skill: param } : { name: 'lessons' };
     case 'plan':
       return { name: 'plan' };
     case 'gita':

@@ -121,6 +121,7 @@ try {
     ['Tổng quan', 'Nguyễn Minh'],
     ['Luyện tập', 'Luyện tập thích ứng'],
     ['Từ vựng', 'Từ vựng học thuật'],
+    ['Bài giảng', 'Thư viện bài giảng'],
     ['Kế hoạch', 'Kế hoạch học tập'],
     ['GITA', 'GITA'],
     ['Bài thi thử', 'Chọn bài thi'],
@@ -133,6 +134,40 @@ try {
     const heading = await title();
     check(`route: ${label}`, heading.includes(marker), heading);
   }
+
+  /* ---------------- Lesson library ---------------- */
+  group('Lesson library');
+  await page.getByRole('button', { name: 'Bài giảng', exact: true }).first().click();
+  await page.waitForTimeout(500);
+  const lessonRows = await page.locator('.lesson-row').count();
+  check('every skill is listed', lessonRows === 30, `${lessonRows}`);
+  check('nothing is marked read yet', (await page.locator('.lesson-read').count()) === 0);
+
+  await page.locator('.lesson-row').first().click();
+  await page.waitForTimeout(500);
+  check('a lesson opens', (await page.locator('.lesson-idea').count()) === 1);
+  check('the method is a numbered procedure', (await page.locator('.lesson-method li').count()) >= 3);
+  check('the traps say why they are tempting', (await page.locator('.lesson-trap-why').count()) >= 2);
+
+  await page.getByRole('button', { name: /Đã đọc xong/ }).click();
+  await page.waitForTimeout(400);
+  check('reading is recorded', (await page.getByText(/Đã đọc ngày/).count()) >= 1);
+
+  // Reading is only recorded when the learner says so, and it has to survive
+  // the debounced write — the store flushes on hide, so a reload must find it.
+  await page.reload();
+  await page.waitForTimeout(900);
+  check('the record survives a reload', (await page.getByText(/Đã đọc ngày/).count()) >= 1);
+
+  await page.evaluate(() => { window.location.hash = '#/lessons'; });
+  await page.waitForTimeout(500);
+  check('the library shows it as read', (await page.locator('.lesson-read').count()) === 1);
+
+  await page.locator('input[type="search"]').fill('zzzz-no-such-skill');
+  await page.waitForTimeout(350);
+  check('search can return nothing rather than everything', (await page.locator('.lesson-row').count()) === 0);
+  await page.locator('input[type="search"]').fill('');
+  await page.waitForTimeout(350);
 
   /* ---------------- GITA ---------------- */
   group('GITA');

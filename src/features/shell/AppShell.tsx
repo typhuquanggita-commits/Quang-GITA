@@ -15,6 +15,7 @@ import { hashToRoute, routeToHash, ROUTE_PERMISSION, type Route, type RouteName 
 import { Badge, Button, Empty } from '../../components/ui/primitives.tsx';
 import {
   IconAlert,
+  IconBook,
   IconCards,
   IconCalendar,
   IconChart,
@@ -46,6 +47,12 @@ const PracticeSession = lazy(() =>
 );
 const VocabTrainer = lazy(() =>
   import('../vocab/VocabTrainer.tsx').then((m) => ({ default: m.VocabTrainer })),
+);
+const LessonLibrary = lazy(() =>
+  import('../lessons/LessonLibrary.tsx').then((m) => ({ default: m.LessonLibrary })),
+);
+const LessonView = lazy(() =>
+  import('../lessons/LessonView.tsx').then((m) => ({ default: m.LessonView })),
 );
 const StudyPlanView = lazy(() =>
   import('../plan/StudyPlanView.tsx').then((m) => ({ default: m.StudyPlanView })),
@@ -170,6 +177,7 @@ function Shell(): React.ReactElement {
         { route: { name: 'dashboard' }, label: t('nav.dashboard'), icon: <IconHome size={18} /> },
         { route: { name: 'practice' }, label: t('nav.practice'), icon: <IconTarget size={18} /> },
         { route: { name: 'vocab' }, label: t('nav.vocab'), icon: <IconCards size={18} /> },
+        { route: { name: 'lessons' }, label: t('nav.lessons'), icon: <IconBook size={18} /> },
         { route: { name: 'plan' }, label: t('nav.plan'), icon: <IconCalendar size={18} /> },
         { route: { name: 'gita' }, label: t('nav.gita'), icon: <IconSparkle size={18} /> },
       ],
@@ -363,6 +371,10 @@ function RouteView({
       return <PracticeSession />;
     case 'vocab':
       return <VocabTrainer />;
+    case 'lessons':
+      return <LessonLibrary navigate={navigate} />;
+    case 'lesson':
+      return <LessonView skill={route.skill} navigate={navigate} />;
     case 'plan':
       return <StudyPlanView />;
     case 'gita':
@@ -374,7 +386,7 @@ function RouteView({
     case 'review':
       return <ReviewCentre />;
     case 'analytics':
-      return <Analytics />;
+      return <Analytics navigate={navigate} />;
     case 'console':
       return <TeacherConsole />;
     case 'settings':

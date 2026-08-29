@@ -9,10 +9,10 @@ beyond React.
 ```bash
 npm run dev          # dev server on :3000
 npm run typecheck    # tsc --noEmit
-npm test             # 167 unit tests (node --test, native TS stripping)
+npm test             # 179 unit tests (node --test, native TS stripping)
 npm run check:bank   # item bank invariants
 npm run build        # typecheck then production build
-npm run test:browser # 51 checks against the built app via Playwright
+npm run test:browser # 61 checks against the built app via Playwright
 ```
 
 In this sandbox the browser test needs an explicit path:
@@ -25,7 +25,7 @@ CHROMIUM_PATH=/opt/pw-browsers/chromium npm run test:browser
 
 ```
 src/lib/          dates, RNG, expression parser — no dependencies
-src/data/         blueprint, item bank, generators, vocabulary
+src/data/         blueprint, item bank, generators, vocabulary, lessons
 src/engine/       IRT, scoring, adaptive delivery, SRS, analytics,
                   calibration, the automated coach and its rule catalogue
 src/gita/         the training model: pillars, tiers, habits, arenas
@@ -86,6 +86,7 @@ to rely on a number deserves to know before they act, not after.
 | How is that turned into a session? | `src/engine/autopilot.ts` |
 | Who is allowed to do what? | `src/auth/roles.ts` |
 | What is the GITA model? | `src/gita/framework.ts` |
+| How is a skill taught, not just measured? | `src/data/lessons.ts`, `src/data/lessons-math.ts` |
 
 ## Known limits
 

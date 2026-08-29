@@ -126,6 +126,7 @@ export function useAutopilot(): AutopilotView {
       theta: { rw: state.sectionAbility.rw.theta, math: state.sectionAbility.math.theta },
       errors: errorMix(records),
       weakSkills,
+      lessonsRead: Object.keys(state.lessons),
       domainCounts,
       dueCards,
       overdueCards,

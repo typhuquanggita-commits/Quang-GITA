@@ -43,6 +43,9 @@ function sources(overrides: Partial<ContextSources> = {}): ContextSources {
       { skill: 'transitions', section: 'rw', mastery: 0.35, attempted: 9 },
       { skill: 'circles', section: 'math', mastery: 0.4, attempted: 7 },
     ],
+    // Both weak skills have been taught, so the default learner exercises the
+    // drill rule rather than the untaught-skill rule.
+    lessonsRead: ['transitions', 'circles'],
     domainCounts: DOMAINS.map((d) => ({ domain: d.id, section: d.section, count: 40 })),
     dueCards: 6,
     overdueCards: 0,
@@ -324,6 +327,44 @@ test('weak skills are drilled and the block carries those skills', () => {
   const drill = p.blocks.find((b) => b.skills && b.skills.length > 0);
   assert.ok(drill, 'no skill-targeted drill');
   assert.ok(drill!.skills!.includes('transitions'));
+});
+
+test('a weak skill that was never taught gets the lesson before the drill', () => {
+  const p = programme({ lessonsRead: [] });
+  assert.ok(ruleFired(p, 'r-untaught-weak-skill'));
+
+  const lesson = p.blocks.find((b) => b.kind === 'lesson');
+  assert.ok(lesson, 'no lesson block');
+  assert.deepEqual(lesson!.skills, ['transitions']);
+
+  // Instruction has to reach the learner before the practice it explains,
+  // otherwise the block order teaches nothing the drill has not already
+  // guessed at.
+  const lessonAt = p.blocks.findIndex((b) => b.kind === 'lesson');
+  const drillAt = p.blocks.findIndex((b) => b.kind === 'drill');
+  assert.ok(drillAt === -1 || lessonAt < drillAt, 'the drill came before the lesson');
+});
+
+test('a weak skill whose lesson has been read is drilled, not re-taught', () => {
+  const p = programme();
+  assert.ok(!ruleFired(p, 'r-untaught-weak-skill'));
+  assert.ok(ruleFired(p, 'r-weak-skill-drill'));
+});
+
+test('having read an unrelated lesson does not count as having been taught', () => {
+  // Reading the Circles lesson says nothing about Transitions. A rule that
+  // treated any lesson as coverage would silently stop prescribing the one
+  // the learner actually needs.
+  const p = programme({ lessonsRead: ['circles'] });
+  assert.ok(ruleFired(p, 'r-untaught-weak-skill'));
+  const lesson = p.blocks.find((b) => b.kind === 'lesson');
+  assert.deepEqual(lesson!.skills, ['transitions']);
+});
+
+test('no weak skill with enough evidence means no lesson is prescribed', () => {
+  const p = programme({ weakSkills: [], lessonsRead: [] });
+  assert.ok(!ruleFired(p, 'r-untaught-weak-skill'));
+  assert.ok(!p.blocks.some((b) => b.kind === 'lesson'));
 });
 
 test('an under-covered domain is sampled', () => {

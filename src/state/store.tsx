@@ -103,6 +103,7 @@ function initialState(): AppState {
     plan: null,
     bookmarks: [],
     activity: {},
+    lessons: {},
     org: seedOrg('', ''),
     gita: {
       // A new learner starts at tier 1, whose habits are the only two that
@@ -144,6 +145,7 @@ export type Action =
   | { type: 'plan/toggleTask'; taskId: string }
   | { type: 'bookmark/toggle'; questionId: string }
   | { type: 'activity/log'; seconds: number }
+  | { type: 'lesson/read'; skill: SkillId }
   | { type: 'org/seed'; name: string; email: string }
   | { type: 'org/switchAccount'; accountId: string }
   | { type: 'org/upsertAccount'; account: Account }
@@ -342,6 +344,22 @@ export function reducer(state: AppState, action: Action): AppState {
       return {
         ...state,
         activity: { ...state.activity, [today]: (state.activity[today] ?? 0) + action.seconds },
+      };
+    }
+
+    case 'lesson/read': {
+      const today = isoDate();
+      const prior = state.lessons[action.skill];
+      return {
+        ...state,
+        lessons: {
+          ...state.lessons,
+          [action.skill]: {
+            firstReadAt: prior?.firstReadAt ?? today,
+            lastReadAt: today,
+            reads: (prior?.reads ?? 0) + 1,
+          },
+        },
       };
     }
 
@@ -652,6 +670,7 @@ function loadInitial(): AppState {
     sectionAbility: { ...base.sectionAbility, ...((migrated as Partial<AppState>).sectionAbility ?? {}) },
     gita: { ...base.gita, ...((migrated as Partial<AppState>).gita ?? {}) },
     autopilot: { ...base.autopilot, ...((migrated as Partial<AppState>).autopilot ?? {}) },
+    lessons: { ...base.lessons, ...((migrated as Partial<AppState>).lessons ?? {}) },
     version: SCHEMA_VERSION,
   };
 }
@@ -745,6 +764,7 @@ export function StoreProvider({ children }: { children: React.ReactNode }): Reac
         preferences: { ...base.preferences, ...((migrated as Partial<AppState>).preferences ?? {}) },
         gita: { ...base.gita, ...((migrated as Partial<AppState>).gita ?? {}) },
         autopilot: { ...base.autopilot, ...((migrated as Partial<AppState>).autopilot ?? {}) },
+    lessons: { ...base.lessons, ...((migrated as Partial<AppState>).lessons ?? {}) },
         version: SCHEMA_VERSION,
       } as AppState,
     });

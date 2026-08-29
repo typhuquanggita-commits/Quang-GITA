@@ -110,6 +110,7 @@ const BLOCK_ORDER: BlockKind[] = [
   'full-test',
   'assignment',
   'review',
+  'lesson',
   'drill',
   'vocab',
   'rest',
@@ -321,6 +322,7 @@ export interface ContextSources {
   theta: Record<SectionId, number>;
   errors: RuleContext['errors'];
   weakSkills: RuleContext['weakSkills'];
+  lessonsRead: SkillId[];
   domainCounts: Array<{ domain: DomainId; section: SectionId; count: number }>;
   dueCards: number;
   overdueCards: number;
@@ -374,6 +376,7 @@ export function buildContext(sources: ContextSources): RuleContext {
 
     errors: sources.errors,
     weakSkills: sources.weakSkills,
+    lessonsRead: sources.lessonsRead,
     underCoveredDomains: underCovered,
 
     dueCards: sources.dueCards,

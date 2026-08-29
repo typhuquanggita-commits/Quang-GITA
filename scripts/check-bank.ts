@@ -9,6 +9,7 @@
 import { BANK, bankStats } from '../src/data/bank.ts';
 import { DOMAINS, SECTION_SPEC } from '../src/data/blueprint.ts';
 import { sprToNumber } from '../src/engine/scoring.ts';
+import { LESSONS } from '../src/data/lesson-index.ts';
 
 const problems: string[] = [];
 const seen = new Set<string>();
@@ -65,6 +66,27 @@ for (const section of ['rw', 'math'] as const) {
   }
 }
 
+/*
+ * Coverage: every skill the platform can measure must also be teachable.
+ * A skill that can be drilled but not explained sends a learner told it is
+ * their weakest back to the same questions with nothing new to try.
+ */
+const lessonSkills = new Set(LESSONS.map((lesson) => lesson.skill));
+for (const skill of skillIds) {
+  if (!lessonSkills.has(skill)) problems.push(`lessons: no lesson for skill "${skill}"`);
+}
+for (const skill of lessonSkills) {
+  if (!skillIds.has(skill)) problems.push(`lessons: lesson for unknown skill "${skill}"`);
+}
+{
+  const counts = new Map<string, number>();
+  for (const lesson of LESSONS) counts.set(lesson.skill, (counts.get(lesson.skill) ?? 0) + 1);
+  for (const [skill, n] of counts) {
+    if (n > 1) problems.push(`lessons: ${n} lessons for skill "${skill}"`);
+  }
+}
+
+console.log(`Lessons: ${LESSONS.length} for ${skillIds.size} skills`);
 console.log(`Bank: ${stats.total} items (${stats.bySection.rw} R&W, ${stats.bySection.math} Math)`);
 console.log(`Formats: ${stats.total - stats.sprCount} multiple choice, ${stats.sprCount} grid-in`);
 console.log(`Bands: ${Object.entries(stats.byBand).map(([k, v]) => `${k} ${v}`).join(', ')}`);

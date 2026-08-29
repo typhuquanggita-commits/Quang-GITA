@@ -27,6 +27,7 @@ import {
   IconInfo,
   IconLightning,
   IconRefresh,
+  IconBook,
   IconSparkle,
   IconTarget,
 } from '../../components/ui/icons.tsx';
@@ -50,6 +51,7 @@ const BLOCK_META: Record<
   'full-test': { vi: 'Thi thử full-length', en: 'Full-length test', color: 'var(--rw)', icon: <IconTarget size={18} /> },
   assignment: { vi: 'Bài giáo viên giao', en: 'Set by your teacher', color: 'var(--danger)', icon: <IconClipboard size={18} /> },
   review: { vi: 'Ôn lỗi sai', en: 'Review', color: 'var(--math)', icon: <IconRefresh size={18} /> },
+  lesson: { vi: 'Đọc bài giảng', en: 'Read the lesson', color: 'var(--accent)', icon: <IconBook size={18} /> },
   drill: { vi: 'Luyện tập', en: 'Drill', color: 'var(--primary)', icon: <IconLightning size={18} /> },
   vocab: { vi: 'Từ vựng', en: 'Vocabulary', color: 'var(--success)', icon: <IconCards size={18} /> },
   rest: { vi: 'Nghỉ', en: 'Rest', color: 'var(--text-muted)', icon: <IconCheck size={18} /> },
@@ -304,6 +306,15 @@ export function TodayView({ navigate }: { navigate(route: Route): void }): React
         break;
       case 'reflect':
         navigate({ name: 'gita' });
+        break;
+      case 'lesson':
+        // The block names the skill it is about, so it opens that lesson
+        // rather than the library index the learner would have to search.
+        navigate(
+          block.skills && block.skills.length > 0
+            ? { name: 'lesson', skill: block.skills[0] }
+            : { name: 'lessons' },
+        );
         break;
       case 'assignment':
       case 'drill':
