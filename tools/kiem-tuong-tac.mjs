@@ -75,6 +75,48 @@ const radio=p.locator('input[type=radio], button').filter({hasText:/./});
 const btns=await p.locator('main button, div.min-w-0 button').count();
 ok('tab kế hoạch dựng được điều khiển', btns>5, `${btns} nút`);
 
+// 7. Bộ lọc tuyến phải THẬT SỰ ẩn mục, không chỉ đổi màu nút
+//    Lưu ý: innerText trả về chữ đã hoa theo CSS uppercase, nên các biểu thức
+//    so khớp tiêu đề bên dưới đều dùng cờ i.
+const hv=()=>p.locator('aside nav > div').first().locator('button').count();
+const co=async id=>(await p.locator(`aside nav button[data-tab="${id}"]`).count())>0;
+const locTuyen=async n=>{await p.locator('aside').getByRole('button',{name:n,exact:true}).click();await p.waitForTimeout(400);};
+
+const caHai=await hv();
+ok('mặc định hiện đủ mục học viên', caHai>=20, `thấy ${caHai}`);
+ok('có bộ lọc tuyến trên thanh bên', await p.locator('aside').getByText('Tuyến của tôi').count()>0);
+
+await locTuyen('Chuyên Anh');
+const chuyenN=await hv();
+ok('chọn tuyến chuyên thì số mục giảm', chuyenN<caHai, `${chuyenN} so với ${caHai}`);
+ok('tuyến chuyên vẫn thấy mục luyện thi chuyên', await co('chuyen'));
+ok('tuyến chuyên ẩn mục Lộ trình 36 tháng', !(await co('roadmap')));
+ok('tuyến chuyên ẩn mục Hồ sơ 365 ngày', !(await co('dossier')));
+ok('có báo số mục đang ẩn', await p.locator('aside').getByText(/Đang ẩn \d+ mục/).count()>0);
+
+await locTuyen('IELTS 8.0');
+ok('tuyến IELTS thấy lại mục Lộ trình', await co('roadmap'));
+ok('tuyến IELTS ẩn mục luyện thi chuyên', !(await co('chuyen')));
+ok('tuyến IELTS ẩn mục Thi tốt nghiệp', !(await co('exams')));
+
+await locTuyen('Cả hai');
+ok('bỏ lọc thì mục quay lại đủ', (await hv())===caHai);
+
+// 8. Tab Hai tuyến — bảng phân kỳ và phần tinh tuý
+await tab('Hai tuyến');
+ok('bảng phân kỳ có đủ 10 trục', (await p.locator('table tbody tr').count())===10, `${await p.locator('table tbody tr').count()} dòng`);
+await p.locator('main').getByRole('button',{name:'Phần dùng chung',exact:true}).click(); await p.waitForTimeout(400);
+ok('phần dùng chung có 7 mục', (await p.locator('main h3').count())===7, `${await p.locator('main h3').count()}`);
+await p.locator('main').getByRole('button',{name:'Phần tinh tuý',exact:true}).click(); await p.waitForTimeout(500);
+const tuyIelts=await p.locator('main').innerText();
+ok('tinh tuý IELTS ghi lõi 55 phút', /Lõi ngày — 55 phút/i.test(tuyIelts));
+ok('tinh tuý IELTS có 7 đòn bẩy', /7 đòn bẩy/i.test(tuyIelts));
+await p.locator('main').getByRole('button',{name:/TUYẾN CHUYÊN ANH/}).click(); await p.waitForTimeout(500);
+const tuyChuyen=await p.locator('main').innerText();
+ok('đổi sang tuyến chuyên thì lõi thành 70 phút', /Lõi ngày — 70 phút/i.test(tuyChuyen));
+ok('tinh tuý chuyên có 9 đòn bẩy', /9 đòn bẩy/i.test(tuyChuyen));
+ok('tinh tuý chuyên hiện nhịp bốn bậc', /90\s*phút\/ngày/.test(tuyChuyen));
+
 ok('không có lỗi trên bảng điều khiển', errs.length===0, errs.slice(0,2).join(' | '));
 console.log(`\n  ${bad===0?'ĐẠT':`HỎNG — ${bad} lỗi`}\n`);
 await b.close();

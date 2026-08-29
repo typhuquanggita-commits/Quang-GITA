@@ -346,6 +346,62 @@ không mảng nào rỗng, không trường nội dung nào trống. Nó cũng t
 chính luật kiểm của nó đã lỗi thời — luật không còn khớp nhãn tab nào thì báo
 hỏng, vì bảng kiểm chết là bảng không kiểm gì cả.
 
+## 🔀 Hai tuyến, một động cơ
+
+Hệ thống chở **hai lộ trình khác nhau**, và trước bản này chúng nằm lẫn trong cùng
+một dãy tab — gia đình mở app lên không biết mục nào là của con mình. Tab **Hai
+tuyến** tách chúng ra, và thanh bên có bộ lọc **Tuyến của tôi** ẩn hẳn những mục
+không thuộc tuyến đã chọn.
+
+| | 🎯 Tuyến IELTS 8.0 | 🏛 Tuyến chuyên Anh vào 10 |
+|---|---|---|
+| Đích | Band 8.0, không kỹ năng nào dưới 7.0 | Đỗ chuyên, biên an toàn 0,5–1,0 điểm, bài chuyên từ 7,0 |
+| Thời lượng | 36 tháng | 22 tháng |
+| Cách đo | **Tuyệt đối** — band không phụ thuộc thí sinh khác | **Tương đối** — phải vượt điểm chuẩn do thí sinh khác đẩy lên |
+| Thi lại | Không giới hạn | **Một lần duy nhất** |
+| Nói | Chiếm ¼ điểm, phỏng vấn 11–14 phút | Không có trong đề viết của Sở |
+| Ngữ pháp | Không hỏi riêng, chấm gián tiếp | Khối lớn nhất: 25 câu, trọng số 2,9 |
+| Lõi ngày | 55 phút, giữ nguyên suốt 36 tháng | 60 / 70 / 90 phút theo bậc đầu vào |
+| Bậc thang | 25 cấp trong 5 tầng | 7 cấp |
+
+**Khác biệt sâu nhất không nằm ở đề thi mà ở cách đo.** IELTS thi lại được, nên tối
+ưu cho *đỉnh*. Chuyên có đúng một ngày, nên tối ưu cho *biên an toàn và độ ổn định*
+— thà 7,2 ở cả ba đề còn hơn 8,0 rồi 6,0, vì ngày thi có thể rơi vào đề thứ hai.
+Mọi khác biệt còn lại chảy ra từ đó, và bảng phân kỳ trong app liệt kê đủ **10 trục**.
+
+**Bảy phần lõi hai tuyến làm giống hệt nhau** — chuỗi ngày, bảng IPA, học theo cụm,
+ôn giãn cách, nghe có nhiệm vụ, sổ lỗi, và luật "chưa đủ nền thì chưa vào đề". Đây
+là lý do đổi tuyến ở tháng 12 **không mất năm đầu**, chỉ đổi phần trên.
+
+**Sáu kiểu lẫn tuyến, mỗi kiểu kèm cái giá tính được.** Ví dụ đắt nhất: học sinh
+tuyến chuyên luyện Writing Task 2 kiểu IELTS, viết bốn đoạn trong khối viết 30 phút
+vốn đã gánh 16 câu biến đổi câu — bỏ trống đúng phần cho điểm chắc nhất, mất 1,0–1,5
+điểm. Ngược lại, người tuyến IELTS cày trắc nghiệm ngữ pháp 40 câu trong khi IELTS
+không có phần hỏi ngữ pháp riêng. Cảnh báo phủ **cả hai chiều**, không thiên vị tuyến nào.
+
+### Phần tinh tuý — lọc từ dữ liệu, không chọn bằng cảm tính
+
+Mỗi tuyến có một bản rút gọn: bản một trang, **lõi ngày** không được cắt, **đòn bẩy**,
+**việc phải cắt bỏ**, và **chặn đường** — những mốc phải dừng lại trả lời thật.
+
+Phần lọc không viết tay:
+
+- **Đòn bẩy tuyến chuyên** lấy nguyên 9 phác đồ nâng cấp trong hệ thống, sắp theo số
+  tuần tăng dần — còn ít thời gian thì làm từ trên xuống. Rẻ nhất là quy tắc trọng âm
+  theo hậu tố (2 tuần) và đổi thứ tự làm bài phần viết (2 tuần).
+- **Xương sống tuyến IELTS** đếm tần suất bài luyện qua 12 mùa: `d-errorreview` và
+  `d-task2` có mặt ở 7 mùa, `d-anki` 6 mùa. Nhưng tần suất đo *độ trải*, không đo độ
+  quan trọng — `d-phonics` chỉ xuất hiện một mùa mà bỏ thì hỏng cả ba năm, nên phần
+  đòn bẩy lấy cả hai loại và nói rõ vì sao.
+- **Lõi ngày tuyến chuyên** tính ra từ nhịp của từng bậc: ba khối cố định 40 phút, toàn
+  bộ chênh lệch dồn vào một khối theo giai đoạn. Tổng luôn khớp đúng 60/70/90/60 phút
+  của bốn bậc, không thể lệch khi ai đó sửa số ở một chỗ.
+
+`npx tsx tools/kiem-tuyen.ts` đối chiếu bản đồ tab với thanh điều hướng thật trong
+`App.tsx` theo cả hai chiều, kiểm mọi mã bài luyện được nhắc tới có thật, và soát các
+con số viết trong văn xuôi so với số tính được từ dữ liệu đề — "25 câu", "trọng số
+2,9", "16 câu biến đổi câu", "30 trên 50 điểm xét tuyển". Lệch một chỗ là hỏng.
+
 ## 🎯 Luyện thi chuyên Anh & lớp chất lượng cao vào 10 — Hà Nội
 
 Vào từ **lớp 8**, thi tháng 6 cuối lớp 9. **Hai mươi hai tháng.** Đích: đỗ chuyên

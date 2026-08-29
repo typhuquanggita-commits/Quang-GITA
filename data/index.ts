@@ -32,3 +32,4 @@ export * from './chuyenanh';
 export * from './voices';
 export * from './certify';
 export * from './exams';
+export * from './tuyen';

@@ -1126,3 +1126,90 @@ export interface UpgradePlan {
   weeks: number;
   gain: string;
 }
+
+/* ==========================================================================
+   HAI TUYẾN — tách lộ trình IELTS 8.0 khỏi lộ trình chuyên Anh vào 10
+   ========================================================================== */
+
+export type TuyenId = 'ielts' | 'chuyen';
+
+/** Một tuyến học: đích riêng, đồng hồ riêng, hệ đo riêng. */
+export interface Tuyen {
+  id: TuyenId;
+  icon: string;
+  ten: string;
+  phuDe: string;
+  dich: string;
+  doiTuong: string;
+  batDau: string;
+  soThang: number;
+  nhipNgay: string;
+  heDo: string;
+  kyThi: string;
+  /** Đo tuyệt đối (điểm không phụ thuộc thí sinh khác) hay tương đối (phải vượt điểm chuẩn). */
+  kieuDo: 'tuyệt đối' | 'tương đối';
+  thiLai: string;
+  bacThang: string;
+  mau: string;
+}
+
+/** Một trục mà hai tuyến đi khác nhau. */
+export interface PhanKy {
+  truc: string;
+  ielts: string;
+  chuyen: string;
+  heQua: string;
+}
+
+/** Một phần lõi mà hai tuyến làm giống hệt nhau. */
+export interface LoiChung {
+  no: number;
+  ten: string;
+  vi: string;
+  drillIds: string[];
+}
+
+/** Một kiểu lẫn tuyến, kèm cái giá phải trả. */
+export interface NhamLan {
+  ai: TuyenId;
+  sai: string;
+  vi: string;
+  gia: string;
+  dung: string;
+}
+
+/** Một đòn bẩy: việc nhỏ nhất tạo chênh lệch lớn nhất. */
+export interface DonBay {
+  ten: string;
+  lam: string;
+  vi: string;
+  tuan: number;
+  duoc: string;
+  bo: string;
+}
+
+/** Một khối bắt buộc trong lõi ngày. */
+export interface KhoiNgay {
+  khoi: string;
+  phut: number;
+  lam: string;
+  drillId?: string;
+}
+
+/** Một chặn đường: mốc phải dừng lại và trả lời thật. */
+export interface ChanDuong {
+  khi: string;
+  hoi: string;
+  neuKhong: string;
+}
+
+/** Phần tinh tuý đã lọc của một tuyến. */
+export interface TinhTuy {
+  tuyen: TuyenId;
+  motTrang: string;
+  loiNgay: KhoiNgay[];
+  vongNgoai: string;
+  donBay: DonBay[];
+  catBo: {viec: string; vi: string}[];
+  chanDuong: ChanDuong[];
+}

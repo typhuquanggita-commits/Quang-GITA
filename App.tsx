@@ -3,7 +3,8 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 import React, {useState, lazy, Suspense} from 'react';
-import {NORTH_STAR} from './data';
+import {NORTH_STAR, TAB_TUYEN, TUYEN} from './data';
+import type {TuyenId} from './types';
 const Charter = lazy(() => import('./components/engwin/Charter').then((m) => ({default: m.Charter})));
 const MyPlan = lazy(() => import('./components/engwin/MyPlan').then((m) => ({default: m.MyPlan})));
 const Overview = lazy(() => import('./components/engwin/Overview').then((m) => ({default: m.Overview})));
@@ -33,6 +34,13 @@ import {Lock} from './components/engwin/Lock';
 const Casting = lazy(() => import('./components/engwin/Casting').then((m) => ({default: m.Casting})));
 const Exams = lazy(() => import('./components/engwin/Exams').then((m) => ({default: m.Exams})));
 const Certify = lazy(() => import('./components/engwin/Certify').then((m) => ({default: m.Certify})));
+const Tuyen = lazy(() => import('./components/engwin/Tuyen').then((m) => ({default: m.Tuyen})));
+
+/** Bối cảnh truyền xuống tab. Hầu hết tab không cần, nên chúng bỏ qua tham số. */
+interface NavCtx {
+  tuyen: LocTuyen;
+  setTuyen: (t: LocTuyen) => void;
+}
 
 interface Nav {
   id: string;
@@ -40,7 +48,7 @@ interface Nav {
   label: string;
   hint: string;
   group: 'learner' | 'academy';
-  render: () => React.ReactNode;
+  render: (ctx: NavCtx) => React.ReactNode;
 }
 
 const GROUP_LABEL: Record<string, string> = {
@@ -48,7 +56,23 @@ const GROUP_LABEL: Record<string, string> = {
   academy: 'Vận hành học viện',
 };
 
+/** 'ca-hai' nghĩa là không lọc: hiện đủ cả hai tuyến. */
+type LocTuyen = TuyenId | 'ca-hai';
+
+const LOC: {id: LocTuyen; label: string}[] = [
+  {id: 'ca-hai', label: 'Cả hai'},
+  ...TUYEN.map((t) => ({id: t.id as LocTuyen, label: t.id === 'ielts' ? 'IELTS 8.0' : 'Chuyên Anh'})),
+];
+
 const NAV: Nav[] = [
+  {
+    id: 'tuyen',
+    icon: '🔀',
+    label: 'Hai tuyến',
+    hint: 'Tách lộ trình · phần tinh tuý',
+    group: 'learner',
+    render: (c) => <Tuyen tuyen={c.tuyen} onTuyen={c.setTuyen} />,
+  },
   {
     id: 'gita',
     icon: '🧬',
@@ -289,11 +313,22 @@ const DangTai: React.FC = () => (
 );
 
 export const App: React.FC = () => {
-  const [tab, setTab] = useState('charter');
+  const [tab, setTab] = useState('tuyen');
   const [menuOpen, setMenuOpen] = useState(false);
+  // Bộ lọc tuyến: 'ca-hai' hiện đủ mục, chọn một tuyến thì ẩn mục không thuộc
+  // tuyến đó. Mục vận hành học viện không bị lọc vì không thuộc tuyến nào.
+  const [tuyen, setTuyen] = useState<LocTuyen>('ca-hai');
   // Trên web thì không có két, vào thẳng. Trên bản máy tính phải mở khoá trước.
   const [unlocked, setUnlocked] = useState(!window.engwin);
-  const active = NAV.find((n) => n.id === tab)!;
+
+  const hienTab = (n: Nav) =>
+    tuyen === 'ca-hai' || n.group === 'academy' || (TAB_TUYEN[n.id] ?? []).includes(tuyen);
+
+  // Đang đứng ở mục vừa bị bộ lọc ẩn thì đưa về mục Hai tuyến, không để
+  // màn hình trắng.
+  const tabHopLe = hienTab(NAV.find((n) => n.id === tab)!) ? tab : 'tuyen';
+  const active = NAV.find((n) => n.id === tabHopLe)!;
+  const soAn = NAV.filter((n) => n.group === 'learner' && !hienTab(n)).length;
 
   if (!unlocked) return <Lock onUnlocked={() => setUnlocked(true)} />;
 
@@ -304,16 +339,17 @@ export const App: React.FC = () => {
           <p className="px-3 pb-1 text-[10px] font-semibold uppercase tracking-[0.15em] text-slate-600">
             {GROUP_LABEL[g]}
           </p>
-          {NAV.filter((n) => n.group === g).map((n) => (
+          {NAV.filter((n) => n.group === g && hienTab(n)).map((n) => (
             <button
               key={n.id}
+              data-tab={n.id}
               onClick={() => {
                 setTab(n.id);
                 setMenuOpen(false);
                 window.scrollTo({top: 0});
               }}
               className={`flex w-full items-center gap-2.5 rounded-lg px-2.5 py-1 text-left transition ${
-                tab === n.id
+                tabHopLe === n.id
                   ? g === 'academy'
                     ? 'bg-emerald-500/10 text-emerald-300 ring-1 ring-inset ring-emerald-500/30'
                     : 'bg-sky-500/10 text-sky-300 ring-1 ring-inset ring-sky-500/30'
@@ -330,9 +366,37 @@ export const App: React.FC = () => {
               </span>
             </button>
           ))}
+          {g === 'learner' && soAn > 0 && (
+            <p className="px-3 pt-1.5 text-[10px] leading-snug text-slate-700">
+              Đang ẩn {soAn} mục không thuộc tuyến đã chọn.
+            </p>
+          )}
         </div>
       ))}
     </nav>
+  );
+
+  const LocTuyenBar = (
+    <div className="mb-4">
+      <p className="px-1 pb-1.5 text-[10px] font-semibold uppercase tracking-[0.15em] text-slate-600">
+        Tuyến của tôi
+      </p>
+      <div className="flex gap-1 rounded-lg bg-slate-900 p-1">
+        {LOC.map((l) => (
+          <button
+            key={l.id}
+            onClick={() => setTuyen(l.id)}
+            aria-pressed={tuyen === l.id}
+            className={`flex-1 rounded-md px-1.5 py-1 text-[11px] font-medium transition ${
+              tuyen === l.id
+                ? 'bg-slate-700 text-slate-100'
+                : 'text-slate-500 hover:text-slate-300'
+            }`}>
+            {l.label}
+          </button>
+        ))}
+      </div>
+    </div>
   );
 
   return (
@@ -345,10 +409,15 @@ export const App: React.FC = () => {
               ENGWIN365
             </p>
             <p className="mt-1 text-[11px] leading-snug text-slate-500">
-              0 → IELTS 8.0 trong 1.095 ngày
+              {tuyen === 'chuyen'
+                ? 'Lớp 8 → đỗ chuyên Anh trong 22 tháng'
+                : '0 → IELTS 8.0 trong 1.095 ngày'}
             </p>
           </div>
-          <div className="flex-1 overflow-y-auto">{NavList}</div>
+          <div className="flex-1 overflow-y-auto">
+            {LocTuyenBar}
+            {NavList}
+          </div>
           {window.engwin && (
             <button
               onClick={async () => {
@@ -379,12 +448,15 @@ export const App: React.FC = () => {
           </header>
           {menuOpen && (
             <div className="border-b border-slate-800 bg-slate-900 p-4 lg:hidden">
+              {LocTuyenBar}
               {NavList}
             </div>
           )}
 
           <main className="px-4 py-8 md:px-8 lg:px-10 lg:py-10">
-            <Suspense fallback={<DangTai />}>{active.render()}</Suspense>
+            <Suspense fallback={<DangTai />}>
+              {active.render({tuyen, setTuyen})}
+            </Suspense>
             <footer className="mt-16 border-t border-slate-800 pt-6 text-xs leading-relaxed text-slate-600">
               <p className="font-semibold text-slate-500">
                 ENGWIN365 — {NORTH_STAR.meaning}
@@ -394,11 +466,12 @@ export const App: React.FC = () => {
                 tạo ra kết quả khi được vận hành mỗi ngày. Nếu bạn chỉ đọc nó
                 một lần rồi đóng lại, nó không khác gì 100 bài viết “bí quyết
                 IELTS” bạn đã đọc trước đây. Hãy bắt đầu ở tab{' '}
-                <span className="font-medium text-slate-400">La Bàn</span> — viết
-                cho xong mục 01 và mục 11 bằng câu trả lời thật của bạn. Sau đó
-                sang tab{' '}
-                <span className="font-medium text-slate-400">Lộ trình</span>, mở
-                cột mốc Y1Q1, và làm đúng buổi học của ngày mai.
+                <span className="font-medium text-slate-400">Hai tuyến</span> —
+                chọn tuyến của mình rồi đọc phần tinh tuý, vì hai tuyến khác
+                nhau ở mười trục và đi nhầm thì mất hàng trăm giờ. Sau đó sang
+                tab <span className="font-medium text-slate-400">La Bàn</span>,
+                viết cho xong mục 01 và mục 11 bằng câu trả lời thật của bạn, và
+                làm đúng buổi học của ngày mai.
               </p>
             </footer>
           </main>
