@@ -1,194 +1,189 @@
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
-*/
-import React, {useState} from 'react';
-import {EditVideoPage} from './components/EditVideoPage';
-import {ErrorModal} from './components/ErrorModal';
-import {VideoCameraIcon} from './components/icons';
-import {SavingProgressPage} from './components/SavingProgressPage';
-import {VideoGrid} from './components/VideoGrid';
-import {VideoPlayer} from './components/VideoPlayer';
-import {MOCK_VIDEOS} from './constants';
-import {Video} from './types';
-
-import {GeneratedVideo, GoogleGenAI} from '@google/genai';
-
-const VEO3_MODEL_NAME = 'veo-3.1-fast-generate-preview';
-
-const ai = new GoogleGenAI({apiKey: process.env.API_KEY});
-
-// ---
-
-function bloblToBase64(blob: Blob) {
-  return new Promise<string>(async (resolve) => {
-    const reader = new FileReader();
-    reader.onload = () => {
-      const url = reader.result as string;
-      resolve(url.split(',')[1]);
-    };
-    reader.readAsDataURL(blob);
-  });
-}
-
-// ---
-
-async function generateVideoFromText(
-  prompt: string,
-  numberOfVideos = 1,
-): Promise<string[]> {
-  let operation = await ai.models.generateVideos({
-    model: VEO3_MODEL_NAME,
-    prompt,
-    config: {
-      numberOfVideos,
-      aspectRatio: '16:9',
-    },
-  });
-
-  while (!operation.done) {
-    await new Promise((resolve) => setTimeout(resolve, 10000));
-    console.log('...Generating...');
-    operation = await ai.operations.getVideosOperation({operation});
-  }
-
-  if (operation?.response) {
-    const videos = operation.response?.generatedVideos;
-    if (videos === undefined || videos.length === 0) {
-      throw new Error('No videos generated');
-    }
-
-    return await Promise.all(
-      videos.map(async (generatedVideo: GeneratedVideo) => {
-        const url = decodeURIComponent(generatedVideo.video.uri);
-        const res = await fetch(`${url}&key=${process.env.API_KEY}`);
-        if (!res.ok) {
-          throw new Error(
-            `Failed to fetch video: ${res.status} ${res.statusText}`,
-          );
-        }
-        const blob = await res.blob();
-        return bloblToBase64(blob);
-      }),
-    );
-  } else {
-    throw new Error('No videos generated');
-  }
-  return [];
-}
-
-/**
- * Main component for the Veo3 Gallery app.
- * It manages the state of videos, playing videos, editing videos and error handling.
  */
+import React, {useState} from 'react';
+import {NORTH_STAR} from './data';
+import {Overview} from './components/engwill/Overview';
+import {Roadmap} from './components/engwill/Roadmap';
+import {Methods} from './components/engwill/Methods';
+import {Drills} from './components/engwill/Drills';
+import {Lectures} from './components/engwill/Lectures';
+import {Playbooks} from './components/engwill/Playbooks';
+import {Habits} from './components/engwill/Habits';
+import {Mindset} from './components/engwill/Mindset';
+import {Clubs} from './components/engwill/Clubs';
+import {Resources} from './components/engwill/Resources';
+
+interface Nav {
+  id: string;
+  icon: string;
+  label: string;
+  hint: string;
+  render: () => React.ReactNode;
+}
+
+const NAV: Nav[] = [
+  {
+    id: 'overview',
+    icon: '◎',
+    label: 'Tổng quan',
+    hint: 'Hiến chương & quỹ đạo',
+    render: () => <Overview />,
+  },
+  {
+    id: 'roadmap',
+    icon: '⛰',
+    label: 'Lộ trình',
+    hint: '12 cột mốc / 36 tháng',
+    render: () => <Roadmap />,
+  },
+  {
+    id: 'methods',
+    icon: '🧪',
+    label: 'Phương pháp',
+    hint: '28 phương pháp thế giới',
+    render: () => <Methods />,
+  },
+  {
+    id: 'drills',
+    icon: '🏋',
+    label: 'Luyện tập',
+    hint: '31 bài luyện chuẩn hoá',
+    render: () => <Drills />,
+  },
+  {
+    id: 'lectures',
+    icon: '🎬',
+    label: 'Bài giảng',
+    hint: '10 chuỗi · 268 bài',
+    render: () => <Lectures />,
+  },
+  {
+    id: 'playbooks',
+    icon: '🗝',
+    label: 'Bí kíp',
+    hint: '24 chiến thuật',
+    render: () => <Playbooks />,
+  },
+  {
+    id: 'habits',
+    icon: '⚙',
+    label: 'Thói quen',
+    hint: '12 thói quen · 6 nghi thức',
+    render: () => <Habits />,
+  },
+  {
+    id: 'mindset',
+    icon: '🧭',
+    label: 'Tư duy',
+    hint: '10 mô-đun lập trình',
+    render: () => <Mindset />,
+  },
+  {
+    id: 'clubs',
+    icon: '🤝',
+    label: 'Club',
+    hint: '7 CLB · 12 cổng kiểm định',
+    render: () => <Clubs />,
+  },
+  {
+    id: 'resources',
+    icon: '📚',
+    label: 'Tài liệu',
+    hint: '37 nguồn đã sàng lọc',
+    render: () => <Resources />,
+  },
+];
+
 export const App: React.FC = () => {
-  const [videos, setVideos] = useState<Video[]>(MOCK_VIDEOS);
-  const [playingVideo, setPlayingVideo] = useState<Video | null>(null);
-  const [editingVideo, setEditingVideo] = useState<Video | null>(null);
-  const [isSaving, setIsSaving] = useState(false);
-  const [generationError, setGenerationError] = useState<string[] | null>(null);
+  const [tab, setTab] = useState('overview');
+  const [menuOpen, setMenuOpen] = useState(false);
+  const active = NAV.find((n) => n.id === tab)!;
 
-  const handlePlayVideo = (video: Video) => {
-    setPlayingVideo(video);
-  };
-
-  const handleClosePlayer = () => {
-    setPlayingVideo(null);
-  };
-
-  const handleStartEdit = (video: Video) => {
-    setPlayingVideo(null); // Close player
-    setEditingVideo(video); // Open edit page
-  };
-
-  const handleCancelEdit = () => {
-    setEditingVideo(null); // Close edit page, return to grid
-  };
-
-  const handleSaveEdit = async (originalVideo: Video) => {
-    setEditingVideo(null);
-    setIsSaving(true);
-    setGenerationError(null);
-
-    try {
-      const promptText = originalVideo.description;
-      console.log('Generating video...', promptText);
-      const videoObjects = await generateVideoFromText(promptText);
-
-      if (!videoObjects || videoObjects.length === 0) {
-        throw new Error('Video generation returned no data.');
-      }
-
-      console.log('Generated video data received.');
-
-      const mimeType = 'video/mp4';
-      const videoSrc = videoObjects[0];
-      const src = `data:${mimeType};base64,${videoSrc}`;
-
-      const newVideo: Video = {
-        id: self.crypto.randomUUID(),
-        title: `Remix of "${originalVideo.title}"`,
-        description: originalVideo.description,
-        videoUrl: src,
-      };
-
-      setVideos((currentVideos) => [newVideo, ...currentVideos]);
-      setPlayingVideo(newVideo); // Go to the new video
-    } catch (error) {
-      console.error('Video generation failed:', error);
-      setGenerationError([
-        'Veo 3 is only available on the Paid Tier.',
-        'Please select your Cloud Project to get started',
-      ]);
-    } finally {
-      setIsSaving(false);
-    }
-  };
-
-  if (isSaving) {
-    return <SavingProgressPage />;
-  }
+  const NavList = (
+    <nav className="space-y-1">
+      {NAV.map((n) => (
+        <button
+          key={n.id}
+          onClick={() => {
+            setTab(n.id);
+            setMenuOpen(false);
+            window.scrollTo({top: 0});
+          }}
+          className={`flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-left transition ${
+            tab === n.id
+              ? 'bg-sky-500/10 text-sky-300 ring-1 ring-inset ring-sky-500/30'
+              : 'text-slate-400 hover:bg-slate-800/60 hover:text-slate-200'
+          }`}>
+          <span className="w-5 shrink-0 text-center text-base">{n.icon}</span>
+          <span className="min-w-0">
+            <span className="block truncate text-sm font-medium">{n.label}</span>
+            <span className="block truncate text-[11px] text-slate-600">
+              {n.hint}
+            </span>
+          </span>
+        </button>
+      ))}
+    </nav>
+  );
 
   return (
-    <div className="min-h-screen bg-gray-900 text-gray-100 font-sans">
-      {editingVideo ? (
-        <EditVideoPage
-          video={editingVideo}
-          onSave={handleSaveEdit}
-          onCancel={handleCancelEdit}
-        />
-      ) : (
-        <div className="mx-auto max-w-[1080px]">
-          <header className="p-6 md:p-8 text-center">
-            <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-transparent bg-clip-text inline-flex items-center gap-4">
-              <VideoCameraIcon className="w-10 h-10 md:w-12 md:h-12" />
-              <span>Veo Gallery</span>
-            </h1>
-            <p className="text-gray-400 mt-2 text-lg">
-              Select a video to generate your own variations
+    <div className="min-h-screen bg-slate-950 font-sans text-slate-200 antialiased">
+      <div className="mx-auto flex max-w-[1400px]">
+        {/* Sidebar — desktop */}
+        <aside className="sticky top-0 hidden h-screen w-64 shrink-0 flex-col border-r border-slate-800 p-5 lg:flex">
+          <div className="mb-6">
+            <p className="bg-gradient-to-r from-sky-400 to-violet-400 bg-clip-text text-xl font-black tracking-tight text-transparent">
+              ENGWILL365
             </p>
+            <p className="mt-1 text-[11px] leading-snug text-slate-500">
+              0 → IELTS 8.0 trong 1.095 ngày
+            </p>
+          </div>
+          <div className="flex-1 overflow-y-auto">{NavList}</div>
+          <p className="mt-4 border-t border-slate-800 pt-4 text-[10px] leading-relaxed text-slate-600">
+            {NORTH_STAR.bigBet}
+          </p>
+        </aside>
+
+        {/* Main */}
+        <div className="min-w-0 flex-1">
+          {/* Mobile header */}
+          <header className="sticky top-0 z-20 flex items-center justify-between border-b border-slate-800 bg-slate-950/90 px-4 py-3 backdrop-blur lg:hidden">
+            <p className="bg-gradient-to-r from-sky-400 to-violet-400 bg-clip-text text-lg font-black tracking-tight text-transparent">
+              ENGWILL365
+            </p>
+            <button
+              onClick={() => setMenuOpen(!menuOpen)}
+              className="rounded-lg border border-slate-700 px-3 py-1.5 text-sm text-slate-300">
+              {menuOpen ? '✕' : '☰'} {active.label}
+            </button>
           </header>
-          <main className="px-4 md:px-8 pb-8">
-            <VideoGrid videos={videos} onPlayVideo={handlePlayVideo} />
+          {menuOpen && (
+            <div className="border-b border-slate-800 bg-slate-900 p-4 lg:hidden">
+              {NavList}
+            </div>
+          )}
+
+          <main className="px-4 py-8 md:px-8 lg:px-10 lg:py-10">
+            {active.render()}
+            <footer className="mt-16 border-t border-slate-800 pt-6 text-xs leading-relaxed text-slate-600">
+              <p className="font-semibold text-slate-500">
+                ENGWILL365 — {NORTH_STAR.meaning}
+              </p>
+              <p className="mt-2 max-w-3xl">
+                Hệ thống này là một bản thiết kế, không phải một lời hứa. Nó chỉ
+                tạo ra kết quả khi được vận hành mỗi ngày. Nếu bạn chỉ đọc nó
+                một lần rồi đóng lại, nó không khác gì 100 bài viết “bí quyết
+                IELTS” bạn đã đọc trước đây. Hãy bắt đầu ở tab{' '}
+                <span className="font-medium text-slate-400">Lộ trình</span>, mở
+                cột mốc Y1Q1, và làm đúng buổi học của ngày mai.
+              </p>
+            </footer>
           </main>
         </div>
-      )}
-
-      {playingVideo && (
-        <VideoPlayer
-          video={playingVideo}
-          onClose={handleClosePlayer}
-          onEdit={handleStartEdit}
-        />
-      )}
-
-      {generationError && (
-        <ErrorModal
-          message={generationError}
-          onClose={() => setGenerationError(null)}
-          onSelectKey={async () => await window.aistudio?.openSelectKey()}
-        />
-      )}
+      </div>
     </div>
   );
 };

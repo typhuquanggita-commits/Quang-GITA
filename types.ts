@@ -1,14 +1,243 @@
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
-*/
-/**
- * Interface defining the structure of a video object, including its ID, URL,
- * title, and description.
  */
-export interface Video {
+
+/* ==========================================================================
+   ENGWILL365 — Kiểu dữ liệu lõi của hệ thống học tiếng Anh 0 → IELTS 8.0
+   ========================================================================== */
+
+export type Cefr =
+  | 'Pre-A1'
+  | 'A1'
+  | 'A2'
+  | 'A2+'
+  | 'B1'
+  | 'B1+'
+  | 'B2'
+  | 'B2+'
+  | 'C1'
+  | 'C1+'
+  | 'C2';
+
+export type SkillId =
+  | 'listening'
+  | 'speaking'
+  | 'reading'
+  | 'writing'
+  | 'vocabulary'
+  | 'grammar'
+  | 'pronunciation'
+  | 'mindset';
+
+export type PillarId =
+  | 'input'
+  | 'output'
+  | 'memory'
+  | 'sound'
+  | 'thinking'
+  | 'habit'
+  | 'community';
+
+/** Một trụ cột nền tảng của hệ thống. */
+export interface Pillar {
+  id: PillarId;
+  name: string;
+  motto: string;
+  why: string;
+  law: string;
+  dailyShare: string;
+  icon: string;
+}
+
+/** Một phương pháp học đã được kiểm chứng trên thế giới. */
+export interface Method {
   id: string;
-  videoUrl: string;
+  name: string;
+  vnName: string;
+  origin: string;
+  evidence: string;
+  what: string;
+  how: string[];
+  bestFor: SkillId[];
+  phases: string[];
+  costMinutes: number;
+  power: 1 | 2 | 3 | 4 | 5;
+  pitfall: string;
+}
+
+/** Một khối luyện tập cụ thể trong tuần. */
+export interface WeeklyBlock {
+  day: string;
+  slot: string;
+  minutes: number;
+  drillId: string;
+  note?: string;
+}
+
+export interface Kpi {
+  label: string;
+  target: string;
+  how: string;
+}
+
+/** Một cột mốc 3 tháng trong hành trình 36 tháng. */
+export interface Milestone {
+  id: string;
+  year: 1 | 2 | 3;
+  quarter: 1 | 2 | 3 | 4;
+  months: string;
+  codename: string;
+  tagline: string;
+  cefrFrom: Cefr;
+  cefrTo: Cefr;
+  bandFrom: number;
+  bandTo: number;
+  vocabTarget: number;
+  inputHours: number;
+  dailyMinutes: [number, number];
+  color: string;
+  bigIdea: string;
+  focus: string[];
+  methodIds: string[];
+  drillIds: string[];
+  resourceIds: string[];
+  lectureIds: string[];
+  habitIds: string[];
+  mindsetIds: string[];
+  clubIds: string[];
+  weeklyPlan: WeeklyBlock[];
+  exitCriteria: string[];
+  traps: string[];
+  kpis: Kpi[];
+}
+
+/** Một bài luyện (drill) trong thư viện luyện tập. */
+export interface Drill {
+  id: string;
+  name: string;
+  skill: SkillId;
+  minutes: number;
+  level: Cefr[];
+  goal: string;
+  steps: string[];
+  methodIds: string[];
+  successLooksLike: string;
+  progression: string;
+}
+
+/** Tài liệu: sách, app, kênh, podcast, đề thi... */
+export type ResourceKind =
+  | 'book'
+  | 'app'
+  | 'channel'
+  | 'podcast'
+  | 'website'
+  | 'exam'
+  | 'series'
+  | 'tool';
+
+export interface Resource {
+  id: string;
+  name: string;
+  kind: ResourceKind;
+  author: string;
+  level: Cefr[];
+  skills: SkillId[];
+  why: string;
+  howToUse: string;
+  free: boolean;
+  tier: 'core' | 'support' | 'optional';
+}
+
+/** Một bài giảng trong chuỗi bài giảng. */
+export interface Lesson {
+  no: number;
   title: string;
-  description: string;
+  minutes: number;
+  outcome: string;
+  drillId?: string;
+}
+
+export interface LectureSeries {
+  id: string;
+  name: string;
+  track: 'Foundation' | 'Fluency' | 'Academic' | 'IELTS' | 'Mindset';
+  season: string;
+  format: string;
+  totalLessons: number;
+  cadence: string;
+  promise: string;
+  lessons: Lesson[];
+}
+
+/** Bí kíp — chiến thuật cô đọng, áp dụng được ngay. */
+export interface Playbook {
+  id: string;
+  title: string;
+  skill: SkillId;
+  band: string;
+  secret: string;
+  moves: string[];
+  proof: string;
+  antiPattern: string;
+}
+
+/** Thói quen cần cài đặt. */
+export interface Habit {
+  id: string;
+  name: string;
+  cue: string;
+  routine: string;
+  reward: string;
+  twoMinuteVersion: string;
+  identity: string;
+  installWeek: string;
+  metric: string;
+}
+
+/** Lập trình tư duy. */
+export interface MindsetModule {
+  id: string;
+  name: string;
+  principle: string;
+  science: string;
+  oldStory: string;
+  newStory: string;
+  ritual: string[];
+  affirmation: string;
+}
+
+/** Club — cộng đồng luyện tập. */
+export interface Club {
+  id: string;
+  name: string;
+  frequency: string;
+  size: string;
+  level: Cefr[];
+  format: string[];
+  rules: string[];
+  outcome: string;
+  hostScript: string;
+}
+
+/** Mốc kiểm tra năng lực. */
+export interface Checkpoint {
+  id: string;
+  at: string;
+  name: string;
+  test: string;
+  passBand: string;
+  actions: { ifPass: string; ifFail: string };
+}
+
+/** Nhịp sinh hoạt: ngày / tuần / tháng / quý. */
+export interface Ritual {
+  id: string;
+  scope: 'day' | 'week' | 'month' | 'quarter';
+  name: string;
+  when: string;
+  minutes: number;
+  steps: string[];
+  why: string;
 }
