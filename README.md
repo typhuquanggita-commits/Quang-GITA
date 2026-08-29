@@ -402,6 +402,74 @@ Phần lọc không viết tay:
 con số viết trong văn xuôi so với số tính được từ dữ liệu đề — "25 câu", "trọng số
 2,9", "16 câu biến đổi câu", "30 trên 50 điểm xét tuyển". Lệch một chỗ là hỏng.
 
+## 🧭 Bốn chữ G · I · T · A
+
+Bốn chữ theo **định nghĩa gốc của học viện**, giữ nguyên **31 thành tố**, không rút gọn
+và không diễn giải lại:
+
+| Chữ | | Thành tố |
+|---|---|---|
+| **G** | Goal — HỆ THỐNG MỤC TIÊU | Hệ thống mục tiêu · Kết quả xuất sắc · Đích đến của quá trình học tập rèn luyện |
+| **I** | Inspirits — NỘI LỰC VÀ KHÁT KHAO | Động lực · Khát khao · Đam mê · Mong muốn · Nội lực · Sự khác biệt · Niềm tin · Bản lĩnh |
+| **T** | Talent — TÀI NĂNG VÀ THẾ MẠNH | Tài năng · Điểm mạnh · Sở trường · Tư duy xuất sắc · Sự khác biệt · Tốc độ · Tập trung · Khả năng vượt trội · Định hướng xuất sắc |
+| **A** | Action/Academy — HÀNH ĐỘNG VÀ MÔI TRƯỜNG | Quyết đoán · Kiên trì · Sáng tạo · Chăm chỉ · Cẩn thận · Tối ưu · Lộ trình theo thói quen thành công · Cấp độ hành động 20/80 · Môi trường thi đua · Nhóm bạn xuất sắc teamwork · Học tập gắn phát triển bản thân |
+
+**Phân biệt hai trục, vì rất dễ lẫn.** Bốn **CHỮ** chạy **song song** suốt hành trình —
+không chữ nào xong trước chữ nào. Bốn **PHA** của 12 bước (HIỂU MÌNH · RÈN MÌNH · BỨT
+PHÁ · TRƯỞNG THÀNH) đi **tuần tự** theo thời gian. Ở pha nào cũng có đủ bốn chữ, chỉ
+khác trọng số. Có bài kiểm ép hai trục không được lẫn vào nhau.
+
+Mỗi chữ ghi cả **dấu hiệu khi CÓ** lẫn **dấu hiệu khi THIẾU** — không có hai dấu hiệu
+này thì cả bảng chỉ là khẩu hiệu — cộng cách đo và ít nhất ba chỗ nó nối vào hệ thống.
+
+**Bốn cấp hành động theo 20/80:** LÀM ĐỦ (100% công sức → 40% kết quả) → LÀM ĐÚNG CHỖ
+(60% → 70%) → LÀM SỚM (60% → 85%) → LÀM CÙNG NGƯỜI KHÁC (70% → 100%). Kèm lời nói thẳng:
+*hai mươi và tám mươi là cách nói, không phải kết quả đo; cái đúng là nguyên tắc, không
+phải con số.*
+
+**Năm luật thiết kế môi trường:** thi đua với chính mình trước · nhóm bốn người không
+nhóm mười · ghép lệch một bậc không ghép ngang · sai công khai được phép · mỗi tuần một
+sản phẩm ra ngoài nhóm.
+
+## 🏡 GITA hoá ba sân — 36 ô
+
+Một học sinh sống ba nơi. Mô thức chỉ chạy ở lớp thì hai nơi còn lại vẫn theo luật cũ,
+và em phải đổi người mỗi lần bước qua cửa — **chính chỗ đổi người đó là nơi phần lớn
+tiến bộ bị mất.**
+
+**12 bước × 3 sân (gia đình · trường học · xã hội) = 36 ô.** Mỗi ô nói bốn thứ: bước ấy
+trông như thế nào ở sân đó, người lớn làm gì, học sinh làm gì, và **hai dấu hiệu** để
+biết nó đang chạy hay đang hỏng. 36 dấu hiệu hỏng đều khác nhau, có bài kiểm ép điều đó.
+
+**Nói thẳng:** học viện *không kiểm soát được* sân gia đình và sân xã hội. Bảng này là
+thứ **đề nghị**, không phải thứ bắt buộc — nên mỗi ô viết ở dạng một việc làm được trong
+một tuần, chứ không phải một triết lý cần tin.
+
+**5 tầng hấp thu của khách hàng × 6 cấp chuyên môn của người phục vụ.** Mỗi tầng ghi rõ
+nhận gì, chiều sâu tới đâu, đo bằng gì, và **chưa hợp với gì**. Mỗi cấp chuyên môn ghi
+rõ giao được tới tầng nào, làm được gì, **chưa làm được gì**, và nâng cấp bằng bằng chứng
+nào.
+
+## 🏅 Đối chiếu chuẩn quốc tế — 16 chuẩn
+
+"Chất lượng quốc tế" là một câu nói, không phải một bằng chứng. Bảng này đổi câu nói ấy
+thành thứ kiểm được: **16 chuẩn có tên, có nguồn**, mỗi chuẩn một kết luận thẳng kèm bằng
+chứng và kèm phần còn thiếu.
+
+| | Chuẩn |
+|---|---|
+| **Đạt (9)** | WCAG 2.1 AA · CEFR · Bloom sửa đổi · Kim tự tháp Miller · Thiết kế ngược (UbD) · Học theo mức thành thạo · Luyện tập có chủ đích · Nhớ chủ động & ôn giãn cách · Dựng bản phát hành kiểm chứng được |
+| **Đạt một phần (6)** | Section 508 / ADA · UDL (CAST) · ACTFL · Khung Danielson · FERPA · COPPA |
+| **Chưa đạt (1)** | ISO/IEC 27001 và SOC 2 |
+
+**Luật của bảng:** chỉ ghi *đạt* khi có một bài kiểm tự động, một con số, hoặc một tệp cụ
+thể chứng minh được — và có bài kiểm ép đúng luật đó. Không có bằng chứng thì ghi *đạt
+một phần* hoặc *chưa đạt*, kể cả khi cảm thấy đã làm tốt.
+
+**Một bảng đối chiếu mà chỗ nào cũng đạt là một bảng quảng cáo.** Bảng này có chuẩn chưa
+đạt và chúng được để nguyên. Và đối chiếu chuẩn **không phải chứng nhận** — chưa có tổ
+chức nào ngoài học viện kiểm lại nó.
+
 ## 🧾 Hai nghìn phiếu luyện và hai nghìn nhiệm vụ chia sẻ
 
 **80 dạng bài × 25 cấp độ = 2.000 phiếu**, mỗi phiếu **20 câu** — tổng **40.000 câu**.

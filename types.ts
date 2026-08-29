@@ -1387,3 +1387,89 @@ export interface BaiGiangSau {
   drillId: string;
   phieuDangId: string;
 }
+
+/* ==========================================================================
+   GITA HOÁ — đưa mô thức vào gia đình, trường học, xã hội
+   ========================================================================== */
+
+export type SanId = 'gia-dinh' | 'truong-hoc' | 'xa-hoi';
+
+/** Một bước GITA khi được đặt vào một sân cụ thể. */
+export interface GitaHoa {
+  buocNo: number;
+  buocTen: string;
+  phase: string;
+  san: SanId;
+  sanTen: string;
+  bieuHien: string;
+  viecNguoiLon: string;
+  viecHocSinh: string;
+  dangChay: string;
+  dangHong: string;
+}
+
+/** Một tầng hấp thu của khách hàng. */
+export interface TangHapThu {
+  no: number;
+  id: string;
+  ten: string;
+  ai: string;
+  nhanGi: string;
+  chieuSau: string;
+  doDuoc: string;
+  chuaHop: string;
+}
+
+/** Một cấp chuyên môn của người phục vụ, và độ sâu họ giao được. */
+export interface CapChuyenMon {
+  no: number;
+  id: string;
+  vaiTro: 'tư vấn' | 'giáo viên' | 'coach';
+  ten: string;
+  giaoDuocToiTang: number;
+  lamDuoc: string[];
+  chuaLamDuoc: string;
+  nangCapBang: string;
+}
+
+/** Một chuẩn quốc tế mà hệ thống đối chiếu. */
+export interface ChuanQuocTe {
+  id: string;
+  ten: string;
+  nguon: string;
+  noiLaGi: string;
+  hethongLamGi: string;
+  datToiDau: 'đạt' | 'đạt một phần' | 'chưa đạt';
+  bangChung: string;
+  conThieu: string;
+}
+
+/* ==========================================================================
+   BỐN CHỮ CỦA MÔ THỨC GITA
+   ========================================================================== */
+
+/** Một chữ trong mô thức GITA, theo định nghĩa gốc của học viện. */
+export interface ChuGita {
+  chu: 'G' | 'I' | 'T' | 'A';
+  tenAnh: string;
+  tenViet: string;
+  /** Các thành tố, giữ nguyên theo tài liệu gốc. */
+  thanhTo: string[];
+  laGi: string;
+  viSaoCan: string;
+  khiCo: string;
+  khiThieu: string;
+  doBang: string;
+  noiVaoHeThong: string[];
+}
+
+/** Một cấp hành động theo quy tắc 20/80. */
+export interface CapHanhDong {
+  no: number;
+  ten: string;
+  moTa: string;
+  phanTramCongSuc: number;
+  phanTramKetQua: number;
+  viDu: string;
+  dauHieuSai: string;
+}

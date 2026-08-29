@@ -37,3 +37,6 @@ export * from './timkiem';
 export * from './phieu';
 export * from './phanquyen';
 export * from './giangsau';
+export * from './gitahoa';
+export * from './chuanquocte';
+export * from './gitachu';

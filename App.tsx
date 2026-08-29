@@ -39,6 +39,8 @@ const TimKiem = lazy(() => import('./components/engwin/TimKiem').then((m) => ({d
 const Phieu = lazy(() => import('./components/engwin/Phieu').then((m) => ({default: m.Phieu})));
 const GiangSau = lazy(() => import('./components/engwin/GiangSau').then((m) => ({default: m.GiangSau})));
 const Quyen = lazy(() => import('./components/engwin/Quyen').then((m) => ({default: m.Quyen})));
+const ChuGita = lazy(() => import('./components/engwin/ChuGita').then((m) => ({default: m.ChuGita})));
+const Chuan = lazy(() => import('./components/engwin/Chuan').then((m) => ({default: m.Chuan})));
 
 /** Bối cảnh truyền xuống tab. Hầu hết tab không cần, nên chúng bỏ qua tham số. */
 interface NavCtx {
@@ -76,6 +78,14 @@ const NAV: Nav[] = [
     hint: 'Tách lộ trình · phần tinh tuý',
     group: 'learner',
     render: (c) => <Tuyen tuyen={c.tuyen} onTuyen={c.setTuyen} />,
+  },
+  {
+    id: 'chugita',
+    icon: '🧭',
+    label: 'Bốn chữ GITA',
+    hint: '4 chữ · 31 thành tố · 36 ô ba sân',
+    group: 'learner',
+    render: () => <ChuGita />,
   },
   {
     id: 'gita',
@@ -244,6 +254,14 @@ const NAV: Nav[] = [
     hint: '45 nguồn đã sàng lọc',
     group: 'learner',
     render: () => <Resources />,
+  },
+  {
+    id: 'chuan',
+    icon: '🏅',
+    label: 'Chuẩn quốc tế',
+    hint: '16 chuẩn · 5 tầng hấp thu',
+    group: 'academy',
+    render: () => <Chuan />,
   },
   {
     id: 'quyen',

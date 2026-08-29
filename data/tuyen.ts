@@ -95,6 +95,7 @@ export const TUYEN_BY_ID = Object.fromEntries(TUYEN.map((t) => [t.id, t])) as Re
  */
 export const TAB_TUYEN: Record<string, TuyenId[]> = {
   tuyen: ['ielts', 'chuyen'],
+  chugita: ['ielts', 'chuyen'],
   gita: ['ielts', 'chuyen'],
   charter: ['ielts', 'chuyen'],
   myplan: ['ielts', 'chuyen'],
@@ -118,6 +119,7 @@ export const TAB_TUYEN: Record<string, TuyenId[]> = {
   resources: ['ielts', 'chuyen'],
   // Bốn mục dưới đây App xếp vào nhóm vận hành học viện, không phải nhóm
   // học viên, nên chúng không mang tuyến — bộ lọc tuyến cũng không đụng tới.
+  chuan: [],
   quyen: [],
   academy: [],
   levels: [],
