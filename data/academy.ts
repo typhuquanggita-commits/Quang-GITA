@@ -281,7 +281,7 @@ export const GITA_PHASES: GitaPhase[] = [
   {
     letter: 'I',
     code: 'IMMERSE',
-    name: 'ĐẮM — Đắm mình trong đầu vào và cảm xúc tích cực',
+    name: 'ĐẮM — Đắm mình trong đầu vào và cảm súc tích cực',
     intent:
       'Tạo dòng chảy đầu vào dễ hiểu trong trạng thái cảm xúc an toàn. Đây là pha dài nhất và ít can thiệp nhất.',
     advisorStance:
@@ -685,7 +685,7 @@ export const CYCLE_STEPS: CycleStep[] = [
   {
     no: 3,
     phase: 'GIEO',
-    name: 'CẢM XÚC TÍCH CỰC',
+    name: 'CẢM SÚC TÍCH CỰC',
     purpose:
       'Đưa hệ thần kinh vào trạng thái an toàn và hứng khởi, rồi neo trạng thái đó lại để gọi về sau.',
     advisorScript:

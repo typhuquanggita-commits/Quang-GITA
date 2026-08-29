@@ -716,3 +716,68 @@ export interface TrainingCourse {
   certification: string;
   autoRemediation: string;
 }
+
+/* ==========================================================================
+   HỒ SƠ 365 NGÀY
+   ========================================================================== */
+
+export interface DossierCycle {
+  no: number;
+  name: string;
+  dayFrom: number;
+  dayTo: number;
+  narrowSkill: string;
+  promise: string;
+  mechanism: string;
+  exitTest: string;
+  dailyMinutes: number;
+  missions: string[];
+  /** Mã bài thi tốt nghiệp vòng trong data/exams.ts, nếu vòng đó đã có đề. */
+  examId?: string;
+}
+
+export interface DossierQuarter {
+  no: number;
+  name: string;
+  dayFrom: number;
+  dayTo: number;
+  cefrFrom: Cefr;
+  cefrTo: Cefr;
+  bigPromise: string;
+  identityShift: string;
+  cycles: DossierCycle[];
+  consolidation: {name: string; dayFrom: number; dayTo: number; plan: string[]};
+  graduation: {examId: string; note: string};
+}
+
+export type DossierDayKind =
+  | 'luyện'
+  | 'đối chiếu'
+  | 'hợp nhất'
+  | 'kiểm tra'
+  | 'trắng';
+
+export interface DossierBlock {
+  slot: string;
+  minutes: number;
+  what: string;
+}
+
+export interface DossierDay {
+  day: number;
+  quarter: number;
+  cycle: number;
+  dayInCycle: number;
+  week: number;
+  weekday: string;
+  kind: DossierDayKind;
+  title: string;
+  focus: string;
+  targets: string;
+  blocks: DossierBlock[];
+  mission: string;
+  measure: string;
+  evidence: string;
+  reviewDays: number[];
+  minutes: number;
+}

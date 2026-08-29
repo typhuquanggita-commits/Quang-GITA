@@ -23,6 +23,8 @@ import {Studio} from './components/engwill/Studio';
 import {Podcast} from './components/engwill/Podcast';
 import {Brand} from './components/engwill/Brand';
 import {Sprint} from './components/engwill/Sprint';
+import {Dossier} from './components/engwill/Dossier';
+import {Lock} from './components/engwill/Lock';
 import {Casting} from './components/engwill/Casting';
 import {Exams} from './components/engwill/Exams';
 import {Certify} from './components/engwill/Certify';
@@ -65,6 +67,14 @@ const NAV: Nav[] = [
     hint: 'Lớp tăng tốc · 6 khối/ngày',
     group: 'learner',
     render: () => <Sprint />,
+  },
+  {
+    id: 'dossier',
+    icon: '📔',
+    label: 'Hồ sơ 365 ngày',
+    hint: '365 ngày viết sẵn',
+    group: 'learner',
+    render: () => <Dossier />,
   },
   {
     id: 'overview',
@@ -223,7 +233,11 @@ const NAV: Nav[] = [
 export const App: React.FC = () => {
   const [tab, setTab] = useState('charter');
   const [menuOpen, setMenuOpen] = useState(false);
+  // Trên web thì không có két, vào thẳng. Trên bản máy tính phải mở khoá trước.
+  const [unlocked, setUnlocked] = useState(!window.engwill);
   const active = NAV.find((n) => n.id === tab)!;
+
+  if (!unlocked) return <Lock onUnlocked={() => setUnlocked(true)} />;
 
   const NavList = (
     <nav className="space-y-1">
@@ -277,6 +291,16 @@ export const App: React.FC = () => {
             </p>
           </div>
           <div className="flex-1 overflow-y-auto">{NavList}</div>
+          {window.engwill && (
+            <button
+              onClick={async () => {
+                await window.engwill!.vault.lock();
+                setUnlocked(false);
+              }}
+              className="mt-3 w-full rounded-lg border border-slate-800 py-1.5 text-[11px] font-medium text-slate-500 transition hover:border-slate-700 hover:text-slate-300">
+              🔒 Khoá lại
+            </button>
+          )}
           <p className="mt-3 hidden border-t border-slate-800 pt-3 text-[10px] leading-relaxed text-slate-600 2xl:block">
             {NORTH_STAR.bigBet}
           </p>

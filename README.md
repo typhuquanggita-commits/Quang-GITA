@@ -247,6 +247,29 @@ Từ     300   3.000   6.800  10.000
 Input    0h    450h  1.080h  1.800h
 ```
 
+## 📔 Hồ sơ 365 ngày
+
+Ba trăm sáu mươi lăm ngày đã được viết sẵn: mỗi ngày một tiêu điểm, một nhiệm
+vụ đời thật, một thước đo, một bằng chứng phải nộp. Người học không phải tự
+nghĩ ra việc cho ngày mai — vì mỗi lần phải tự quyết định là một lần có cơ hội
+trì hoãn.
+
+| | |
+|---|---|
+| Cấu trúc | 4 quý × 90 ngày + 5 ngày trắng |
+| Mỗi quý | 4 vòng 21 ngày + 6 ngày hợp nhất |
+| Mỗi ngày | 6 khối: MỒI · NẠP · PHẢN XẠ · NHIỆM VỤ · ĐẦU RA · GIEO ĐÊM |
+| Tổng thời lượng năm 1 | 286 giờ, trung bình 47 phút/ngày |
+| Bài ra vòng | 16 (mỗi vòng một bài) |
+| Bằng chứng phải nộp | 360 |
+
+Toàn bộ 365 ngày được **sinh ra từ cấu trúc** bằng hàm thuần `buildYear()`
+trong `data/dossier.ts`, không phải gõ tay 365 lần. Cùng đầu vào luôn cho cùng
+kết quả, nên hồ sơ in ra hôm nay và hồ sơ in ra sang năm là một.
+
+Lịch ôn theo giãn cách: mỗi ngày ôn lại các ngày cách đó 1, 3, 7, 14, 30 và 60
+ngày.
+
 ## Chạy ứng dụng
 
 **Yêu cầu:** Node.js 18+
@@ -257,11 +280,53 @@ npm run dev      # mở http://localhost:3000
 ```
 
 ```bash
-npm run build    # build production vào dist/
-npm run preview  # xem thử bản build
+npm run build    # dựng bản web vào dist/
+npm run preview  # xem thử bản đã dựng
 ```
 
-Ứng dụng chạy hoàn toàn tĩnh — không cần API key, không gọi mạng.
+Ứng dụng chạy hoàn toàn tĩnh — không cần API key, không gọi mạng. Bản dựng
+không tham chiếu tới bất kỳ tên miền bên ngoài nào; điều này được kiểm chứng
+tự động bằng `npm run test:web`.
+
+## Xuất bản web
+
+`npm run build` sinh ra thư mục `dist/` — tải thẳng lên Netlify, Cloudflare
+Pages, Vercel, hoặc bất kỳ máy chủ tĩnh nào. Tệp `dist/_headers` đã có sẵn các
+tiêu đề bảo mật cho Netlify và Cloudflare Pages.
+
+Muốn giới hạn ai xem được, phải chặn ở **tầng máy chủ** — xem
+[BAOMAT.md](BAOMAT.md). Đừng đặt màn hình đăng nhập bằng JavaScript vào trang
+tĩnh: đó là bảo mật giả, ai mở công cụ nhà phát triển cũng bỏ qua được.
+
+## Xuất bản máy tính (Windows)
+
+```bash
+npm run pack:win     # dựng bản web rồi đóng gói .exe vào release/
+```
+
+Sinh ra hai tệp trong `release/`:
+
+| Tệp | Dùng khi nào |
+|---|---|
+| `ENGWILL365-1.0.0-windows-x64.exe` | Bộ cài đặt — tạo lối tắt, có gỡ cài đặt |
+| `ENGWILL365-1.0.0-windows-portable.exe` | Bản chạy thẳng, không cần cài |
+
+Bản máy tính khác bản web ở một điểm: nó có **két dữ liệu mã hoá**. Lần mở đầu
+tiên sẽ hỏi đặt mã khoá; hồ sơ học tập được mã hoá bằng AES-256-GCM với khoá
+dẫn xuất từ mã đó bằng scrypt. Mã khoá không được lưu ở đâu cả — mất mã là mất
+hồ sơ. Chi tiết trong [BAOMAT.md](BAOMAT.md).
+
+> Đóng gói trên Linux cần `wine`. Trên Windows thì không cần gì thêm.
+> Tệp cài đặt chưa được ký số nên SmartScreen sẽ cảnh báo ở lần cài đầu tiên.
+
+## Kiểm tra tự động
+
+```bash
+npm run audit         # kiểu dữ liệu · dựng · tham chiếu chéo · chính tả tiếng Việt
+npm run test:vault    # 36 phép thử két dữ liệu
+npm run test:desktop  # 19 phép thử bản máy tính
+npm run test:web      # kiểm tra bản web bằng trình duyệt thật
+```
 
 ## Cấu trúc mã nguồn
 
@@ -278,6 +343,7 @@ data/                  Toàn bộ nội dung hệ thống, tách khỏi giao di�
   voices.ts            Dàn 10 giọng · chuẩn MC · đối chiếu Anh-Anh/Anh-Mỹ
   certify.ts           8 trục · 5 tầng Miller · 6 vai × 5 bậc · quy tắc chấm
   exams.ts             9 bài thi tốt nghiệp + 4 khoá đào tạo tự động
+  dossier.ts           Hồ sơ 365 ngày — 4 quý, 16 vòng, sinh bằng hàm thuần
 
 content/
   podcast-scripts.json Kịch bản podcast — nguồn dùng chung cho app và công cụ dựng
@@ -288,6 +354,16 @@ tools/
   fetch-voices.sh      Tải model giọng Piper
   make-brand.mjs       Dựng 59 ấn phẩm nhận diện (SVG + PNG) từ dữ liệu
   cast_voices.py       Sàng lọc giọng bằng âm học + dựng băng audition
+  kiem-tham-chieu.py   Soi tham chiếu chéo giữa các tệp dữ liệu
+  kiem-chinh-ta.py     Soi chính tả tiếng Việt trên toàn bộ văn xuôi
+  kiem-ban-web.mjs     Kiểm tra bản web đã dựng bằng trình duyệt thật
+
+desktop/               Bản máy tính (Electron)
+  main.cjs             Tiến trình chính — cách ly, CSP, giao thức app://, 9 kênh IPC
+  preload.cjs          Cầu nối duy nhất giữa trang và tiến trình chính
+  vault.cjs            Két dữ liệu — scrypt + AES-256-GCM
+  vault.test.cjs       36 phép thử két
+  smoke.cjs            19 phép thử bản máy tính chạy trên Electron thật
 
 brand/                 Ấn phẩm — SVG có commit, PNG dựng lại được
 

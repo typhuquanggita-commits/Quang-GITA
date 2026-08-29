@@ -33,3 +33,6 @@ brand/**/*.png
 
 # Băng audition dựng lại được: python3 tools/cast_voices.py --scan 140 --reel
 audio/casting/
+
+# Sản phẩm đóng gói — quá lớn để đưa vào kho mã, dựng lại bằng npm run pack:win
+release/

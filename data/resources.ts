@@ -186,6 +186,20 @@ export const RESOURCES: Resource[] = [
     tier: 'core',
   },
   {
+    id: 'r-voa',
+    name: 'VOA Learning English',
+    kind: 'website',
+    author: 'Voice of America — learningenglish.voanews.com',
+    level: ['A2', 'B1'],
+    skills: ['listening', 'reading', 'vocabulary'],
+    why:
+      'Tin thật, đọc chậm hơn tốc độ thường khoảng một phần ba, dùng vốn từ giới hạn 1.500 từ. Giải đúng bài toán của giai đoạn A2–B1: nội dung người lớn quan tâm mà vẫn nằm trong vùng hiểu được.',
+    howToUse:
+      'Tháng 4–12: mỗi ngày một bài. Có sẵn transcript và bản audio cho từng bài. Nghe vòng một không nhìn chữ, vòng hai nhìn transcript, vòng ba chép chính tả 45 giây khó nhất.',
+    free: true,
+    tier: 'support',
+  },
+  {
     id: 'r-bbc-sounds',
     name: 'BBC Learning English — Pronunciation (bảng âm tương tác)',
     kind: 'channel',
