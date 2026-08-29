@@ -1,29 +1,31 @@
 <title>Học viện GITA</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:wght@700;800&family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
 <style>
 /* ============================================================
    HỌC VIỆN GITA — hệ thống làm bài online
-   Bảng màu dẫn xuất từ brand book GITA: Navy #0B2C5C, Gold #F2A81D.
-   Trung tính lệch xanh navy để cả trang thuộc về một họ màu.
+   Bảng màu lấy từ logo GITA: Xanh đậm #1B5EA8 · Xanh #2E7BC4 ·
+   Xanh sáng #5AA0DC · Đỏ #E0242A. Xem 00-thuong-hieu/01-nhan-dien-thuong-hieu.md.
+   Trung tính lệch xanh để cả trang thuộc về một họ màu.
    ============================================================ */
 :root{
-  --navy:#0B2C5C; --navy-2:#123A73; --gold:#F2A81D; --gold-ink:#8A5A02;
+  --xanh:#1B5EA8; --xanh-2:#2E7BC4; --xanh-3:#5AA0DC; --do:#E0242A; --do-ink:#A31B20;
   --ground:#F3F6FA; --surface:#FFFFFF; --surface-2:#EAF0F8; --surface-3:#DFE8F4;
   --ink:#0D1B2E; --ink-2:#27384F; --muted:#5B6C86; --line:#D6E0EE; --line-2:#C2D0E4;
   --ok:#15794F; --ok-bg:#E4F3EC; --bad:#B71D31; --bad-bg:#FBE7E9;
   --warn:#8A5A02; --warn-bg:#FCF1DC;
-  --shadow:0 1px 2px rgba(11,44,92,.06), 0 8px 24px -12px rgba(11,44,92,.18);
-  --shadow-lg:0 2px 4px rgba(11,44,92,.06), 0 24px 48px -20px rgba(11,44,92,.28);
+  --shadow:0 1px 2px rgba(27,94,168,.07), 0 8px 24px -12px rgba(27,94,168,.20);
+  --shadow-lg:0 2px 4px rgba(27,94,168,.07), 0 24px 48px -20px rgba(27,94,168,.30);
   --r:12px; --r-sm:8px; --r-lg:18px;
+  --display:"Bitter",Bookman,Georgia,"Times New Roman",serif;
   --sans:"Be Vietnam Pro",system-ui,"Segoe UI",Roboto,Arial,sans-serif;
   --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
   --mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
 }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
-    --navy:#4E86D6; --navy-2:#6BA0E8; --gold:#F5B437; --gold-ink:#F5B437;
+    --xanh:#6FA8E4; --xanh-2:#8CBDEE; --xanh-3:#A9D0F5; --do:#FF6B70; --do-ink:#FF9AA0;
     --ground:#070F1B; --surface:#0E1928; --surface-2:#152337; --surface-3:#1D2F47;
     --ink:#E8EFF9; --ink-2:#C3D1E4; --muted:#8FA2BE; --line:#1E2E46; --line-2:#2A3D59;
     --ok:#4FD1A0; --ok-bg:#0F2A22; --bad:#FF8A96; --bad-bg:#2C1319;
@@ -33,7 +35,7 @@
   }
 }
 :root[data-theme="dark"]{
-  --navy:#4E86D6; --navy-2:#6BA0E8; --gold:#F5B437; --gold-ink:#F5B437;
+  --xanh:#6FA8E4; --xanh-2:#8CBDEE; --xanh-3:#A9D0F5; --do:#FF6B70; --do-ink:#FF9AA0;
   --ground:#070F1B; --surface:#0E1928; --surface-2:#152337; --surface-3:#1D2F47;
   --ink:#E8EFF9; --ink-2:#C3D1E4; --muted:#8FA2BE; --line:#1E2E46; --line-2:#2A3D59;
   --ok:#4FD1A0; --ok-bg:#0F2A22; --bad:#FF8A96; --bad-bg:#2C1319;
@@ -46,28 +48,29 @@ body{background:var(--ground);color:var(--ink);font-family:var(--sans);
   font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
 h1,h2,h3,h4{margin:0;text-wrap:balance;letter-spacing:-.012em;line-height:1.25}
 p{margin:0}
-a{color:var(--navy);text-decoration-thickness:1px;text-underline-offset:2px}
+a{color:var(--xanh);text-decoration-thickness:1px;text-underline-offset:2px}
 button{font:inherit;color:inherit}
-:focus-visible{outline:2.5px solid var(--gold);outline-offset:2px;border-radius:4px}
+:focus-visible{outline:2.5px solid var(--do);outline-offset:2px;border-radius:4px}
+/* vùng nội dung được lấy nét bằng mã khi đổi trang — không vẽ viền lấy nét */
+#main:focus,#main:focus-visible{outline:none}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 
 /* ---------- khung ứng dụng ---------- */
 .shell{display:grid;grid-template-columns:238px minmax(0,1fr);min-height:100vh}
-.rail{background:var(--navy);color:#fff;padding:20px 14px;display:flex;flex-direction:column;gap:22px;
+.rail{background:var(--xanh);color:#fff;padding:20px 14px;display:flex;flex-direction:column;gap:22px;
   position:sticky;top:0;height:100vh;overflow-y:auto}
 :root[data-theme="dark"] .rail,
 :root:not([data-theme="light"]) .rail{background:#0A1626}
-@media (prefers-color-scheme:light){:root:not([data-theme="dark"]) .rail{background:var(--navy)}}
-.brand{display:flex;gap:11px;align-items:center;padding:0 6px}
-.brand svg{flex:none}
-.brand b{font-size:19px;font-weight:800;letter-spacing:.02em;display:block;line-height:1.1}
-.brand span{font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:#9FB8D9}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]) .rail{background:var(--xanh)}}
+.brand{display:flex;flex-direction:column;gap:6px;align-items:flex-start;padding:2px 6px}
+.brand .logo{width:150px;height:auto;color:#fff}
+.brand span{font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:#AFC9E8}
 .nav{display:flex;flex-direction:column;gap:2px}
 .nav-h{font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:#7F9CC4;padding:10px 10px 4px}
 .nav button{display:flex;align-items:center;gap:9px;width:100%;text-align:left;background:none;border:0;
   color:#CFDEF2;padding:8px 10px;border-radius:var(--r-sm);cursor:pointer;font-size:13.5px;font-weight:500}
 .nav button:hover{background:rgba(255,255,255,.09);color:#fff}
-.nav button[aria-current="true"]{background:var(--gold);color:#1A1204;font-weight:700}
+.nav button[aria-current="true"]{background:var(--do);color:#fff;font-weight:700}
 .nav .k{font-family:var(--mono);font-size:11px;opacity:.65;margin-left:auto}
 .rail-foot{margin-top:auto;font-size:11px;color:#7F9CC4;padding:0 8px;display:flex;flex-direction:column;gap:8px}
 .themebtn{background:rgba(255,255,255,.1);border:0;color:#CFDEF2;border-radius:99px;padding:6px 11px;
@@ -99,12 +102,12 @@ main{padding:26px 30px 80px;max-width:1180px;width:100%}
 .muted{color:var(--muted)}
 .btn{border:1px solid var(--line-2);background:var(--surface);border-radius:var(--r-sm);padding:8px 14px;
   cursor:pointer;font-size:13.5px;font-weight:600;display:inline-flex;gap:7px;align-items:center}
-.btn:hover{background:var(--surface-2);border-color:var(--navy)}
-.btn-p{background:var(--navy);border-color:var(--navy);color:#fff}
-.btn-p:hover{background:var(--navy-2);border-color:var(--navy-2);color:#fff}
+.btn:hover{background:var(--surface-2);border-color:var(--xanh)}
+.btn-p{background:var(--xanh);border-color:var(--xanh);color:#fff}
+.btn-p:hover{background:var(--xanh-2);border-color:var(--xanh-2);color:#fff}
 :root[data-theme="dark"] .btn-p,:root:not([data-theme="light"]) .btn-p{color:#07121F}
 @media (prefers-color-scheme:light){:root:not([data-theme="dark"]) .btn-p{color:#fff}}
-.btn-g{background:var(--gold);border-color:var(--gold);color:#22190A}
+.btn-g{background:var(--do);border-color:var(--do);color:#fff}
 .btn-g:hover{filter:brightness(1.07);color:#22190A}
 .btn:disabled{opacity:.45;cursor:not-allowed}
 .chip{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:700;padding:3px 9px;
@@ -115,14 +118,16 @@ main{padding:26px 30px 80px;max-width:1180px;width:100%}
 .t-bad{background:var(--bad-bg);color:var(--bad)}
 .t-warn{background:var(--warn-bg);color:var(--warn)}
 
-/* ---------- bậc thang: mô-típ nhận diện, mã hoá tiến độ 5 phần ---------- */
-.stair{display:flex;align-items:flex-end;gap:4px;height:44px}
-.stair i{flex:1;border-radius:4px 4px 2px 2px;background:var(--surface-3);position:relative;overflow:hidden;
-  border:1px solid var(--line)}
-.stair i:nth-child(1){height:38%}.stair i:nth-child(2){height:52%}.stair i:nth-child(3){height:66%}
-.stair i:nth-child(4){height:82%}.stair i:nth-child(5){height:100%}
-.stair i b{position:absolute;inset:auto 0 0 0;display:block;background:var(--navy);border-radius:0 0 2px 2px}
-.stair.g i b{background:var(--gold)}
+/* ---------- cung năm sao: mô-típ nhận diện, mã hoá tiến độ 5 phần ---------- */
+.sao{display:flex;align-items:flex-end;gap:5px;height:46px}
+.sao i{flex:1;max-width:26px;aspect-ratio:1;background:var(--surface-3);position:relative;overflow:hidden;
+  clip-path:polygon(50% 0%,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%)}
+.sao i:nth-child(1){margin-bottom:0}.sao i:nth-child(2){margin-bottom:5px}
+.sao i:nth-child(3){margin-bottom:10px}.sao i:nth-child(4){margin-bottom:15px}
+.sao i:nth-child(5){margin-bottom:20px}
+.sao i b{position:absolute;inset:auto 0 0 0;display:block;background:var(--xanh)}
+.sao i:nth-child(4) b,.sao i:nth-child(5) b{background:var(--do)}
+.sao.nhan i b{background:var(--do)}
 
 /* ---------- thẻ chỉ số ---------- */
 .kpi{padding:14px 15px;border-radius:var(--r);background:var(--surface);border:1px solid var(--line)}
@@ -159,27 +164,29 @@ input[type=search]{min-width:230px}
 /* ---------- phiếu / làm bài ---------- */
 .paper{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);box-shadow:var(--shadow-lg);
   overflow:hidden}
-.paper-h{padding:20px 22px;border-bottom:2px solid var(--gold);background:linear-gradient(180deg,var(--surface-2),var(--surface))}
-.paper-h h2{font-size:21px;font-weight:800}
+.paper-h{padding:20px 22px;border-bottom:2px solid var(--do);background:linear-gradient(180deg,var(--surface-2),var(--surface))}
+.paper-h h2{font-family:var(--display);font-size:21px;font-weight:800;letter-spacing:0}
 .gita4{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin-top:14px}
 .gita4 div{border-left:3px solid var(--line-2);padding:2px 0 2px 10px}
 .gita4 b{display:block;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;margin-bottom:2px}
 .gita4 span{font-size:12.5px;color:var(--muted);line-height:1.45}
-.gita4 div:nth-child(1){border-color:#1E88E5}.gita4 div:nth-child(1) b{color:#1E88E5}
-.gita4 div:nth-child(2){border-color:#FF6B4A}.gita4 div:nth-child(2) b{color:#FF6B4A}
-.gita4 div:nth-child(3){border-color:#7B4BC4}.gita4 div:nth-child(3) b{color:#7B4BC4}
-.gita4 div:nth-child(4){border-color:#1F9D6B}.gita4 div:nth-child(4) b{color:#1F9D6B}
+/* G = xanh đậm · I = đỏ · T = xanh sáng · A = xanh (mục 3.2 brand book).
+   Viền dùng đúng màu logo; chữ dùng sắc đậm hơn để đạt tương phản AA. */
+.gita4 div:nth-child(1){border-color:#1B5EA8}.gita4 div:nth-child(1) b{color:#0E3E70}
+.gita4 div:nth-child(2){border-color:#E0242A}.gita4 div:nth-child(2) b{color:#B3181D}
+.gita4 div:nth-child(3){border-color:#5AA0DC}.gita4 div:nth-child(3) b{color:#1B5EA8}
+.gita4 div:nth-child(4){border-color:#2E7BC4}.gita4 div:nth-child(4) b{color:#2B72B6}
 .parts{display:flex;gap:6px;padding:10px 22px;border-bottom:1px solid var(--line);background:var(--surface-2);
   position:sticky;top:0;z-index:5;overflow-x:auto}
 .parts button{border:1px solid var(--line-2);background:var(--surface);border-radius:99px;padding:6px 13px;
   font-size:12.5px;font-weight:600;cursor:pointer;white-space:nowrap;display:flex;gap:7px;align-items:center}
-.parts button[aria-current="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
+.parts button[aria-current="true"]{background:var(--xanh);border-color:var(--xanh);color:#fff}
 :root[data-theme="dark"] .parts button[aria-current="true"],
 :root:not([data-theme="light"]) .parts button[aria-current="true"]{color:#07121F}
 @media (prefers-color-scheme:light){:root:not([data-theme="dark"]) .parts button[aria-current="true"]{color:#fff}}
 .parts .pc{font-family:var(--mono);font-size:10.5px;opacity:.75}
 .part-head{padding:16px 22px 4px}
-.part-head h3{font-size:16px;font-weight:800;color:var(--navy)}
+.part-head h3{font-size:16px;font-weight:800;color:var(--xanh)}
 .bai{margin:14px 22px;border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
 .bai-h{display:flex;gap:10px;align-items:baseline;padding:12px 15px;background:var(--surface-2);flex-wrap:wrap}
 .bai-h b{font-size:14px;font-weight:800}
@@ -191,7 +198,7 @@ input[type=search]{min-width:230px}
 .y{display:grid;grid-template-columns:24px minmax(0,1fr) 150px 60px;gap:9px;align-items:start}
 @media (max-width:640px){.y{grid-template-columns:24px minmax(0,1fr);}
   .y .ans,.y .vd{grid-column:2}}
-.y .lb{font-family:var(--mono);font-weight:600;color:var(--gold-ink);padding-top:6px;font-size:12.5px}
+.y .lb{font-family:var(--mono);font-weight:600;color:var(--do-ink);padding-top:6px;font-size:12.5px}
 .y .q{font-family:var(--serif);font-size:14.5px;padding-top:4px;line-height:1.5}
 .y .ans input{width:100%;font-family:var(--mono);font-size:13px}
 .y .vd{display:flex;gap:4px;padding-top:4px}
@@ -212,7 +219,7 @@ input[type=search]{min-width:230px}
 .hint{border:1px dashed var(--line-2);border-radius:var(--r-sm);padding:9px 11px;font-family:var(--serif);
   font-size:14px;background:var(--surface)}
 .hint.locked{color:var(--muted);font-style:italic;font-family:var(--sans);font-size:12.5px}
-.rel{border-left:3px solid var(--gold);padding-left:12px}
+.rel{border-left:3px solid var(--do);padding-left:12px}
 .rel ul{margin:6px 0 0;padding-left:18px;font-size:13px;line-height:1.6}
 .actions{display:flex;gap:8px;flex-wrap:wrap;padding:0 15px 14px}
 .submitbar{position:sticky;bottom:0;background:var(--surface);border-top:1px solid var(--line);
@@ -223,12 +230,12 @@ input[type=search]{min-width:230px}
 /* ---------- markdown ---------- */
 .md{font-family:var(--serif);font-size:14.5px;line-height:1.65}
 .md h1{font-family:var(--sans);font-size:22px;font-weight:800;margin:0 0 12px}
-.md h2{font-family:var(--sans);font-size:17px;font-weight:800;margin:24px 0 8px;color:var(--navy)}
+.md h2{font-family:var(--sans);font-size:17px;font-weight:800;margin:24px 0 8px;color:var(--xanh)}
 .md h3{font-family:var(--sans);font-size:14.5px;font-weight:700;margin:18px 0 6px}
 .md p{margin:0 0 10px}
 .md ul,.md ol{margin:0 0 12px;padding-left:22px}
 .md li{margin-bottom:4px}
-.md blockquote{margin:0 0 12px;padding:9px 14px;border-left:3px solid var(--gold);background:var(--surface-2);
+.md blockquote{margin:0 0 12px;padding:9px 14px;border-left:3px solid var(--do);background:var(--surface-2);
   border-radius:0 var(--r-sm) var(--r-sm) 0}
 .md pre{background:var(--surface-2);border:1px solid var(--line);border-radius:var(--r-sm);padding:12px;
   overflow-x:auto;font-family:var(--mono);font-size:12px;line-height:1.5;margin:0 0 12px}
@@ -237,7 +244,7 @@ input[type=search]{min-width:230px}
 .md table{margin-bottom:12px;font-family:var(--sans)}
 .md hr{border:0;border-top:1px solid var(--line);margin:20px 0}
 .md .tw{margin-bottom:12px}
-.toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%);background:var(--navy);color:#fff;
+.toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%);background:var(--xanh);color:#fff;
   padding:11px 18px;border-radius:99px;font-size:13.5px;font-weight:600;box-shadow:var(--shadow-lg);z-index:99}
 :root[data-theme="dark"] .toast,:root:not([data-theme="light"]) .toast{background:#1D2F47;color:var(--ink)}
 </style>
@@ -245,15 +252,22 @@ input[type=search]{min-width:230px}
 <div class="shell">
   <aside class="rail">
     <div class="brand">
-      <svg width="34" height="34" viewBox="0 0 120 120" aria-hidden="true">
-        <path d="M60 4 L108 20 v44c0 26-20 43-48 52C32 107 12 90 12 64V20Z" fill="#123A73"/>
-        <path d="M60 4 L108 20 v44c0 26-20 43-48 52C32 107 12 90 12 64V20Z" fill="none" stroke="#F2A81D" stroke-width="3"/>
-        <rect x="26" y="76" width="15" height="16" rx="2.5" fill="#1E88E5"/>
-        <rect x="45" y="65" width="15" height="27" rx="2.5" fill="#FF6B4A"/>
-        <rect x="64" y="52" width="15" height="40" rx="2.5" fill="#7B4BC4"/>
-        <rect x="83" y="37" width="15" height="55" rx="2.5" fill="#1F9D6B"/>
+<svg class="logo" viewBox="0 0 470 250" width="470" height="250" aria-hidden="true" fill="currentColor">
+        <g>
+    <path d="M 158.8,244.1 L 128.4,243.6 L 100.6,239.5 L 76.1,232.4 L 55.3,222.6 L 38.9,210.3 L 27.4,195.8 L 21.0,179.7 L 20.0,162.2 L 24.3,143.8 L 34.0,125.1 L 48.7,106.5 L 68.1,88.5 L 91.7,71.6 L 118.9,56.2 L 149.0,42.8 L 181.2,31.6 L 214.8,23.1 L 248.8,17.2 L 282.4,14.3 L 314.7,14.4 L 344.9,17.4 L 372.2,23.2 L 395.9,31.6 L 415.5,42.4 L 430.2,55.4 L 439.2,70.2 L 439.2,70.2 L 426.9,57.3 L 410.9,46.2 L 390.8,37.3 L 367.3,30.8 L 340.7,26.8 L 311.7,25.5 L 281.1,26.7 L 249.5,30.4 L 217.7,36.6 L 186.4,45.1 L 156.3,55.5 L 128.3,67.8 L 102.8,81.6 L 80.6,96.6 L 62.1,112.5 L 47.8,128.8 L 38.1,145.2 L 33.2,161.5 L 33.2,177.1 L 38.1,191.7 L 47.9,205.1 L 62.4,216.8 L 81.2,226.7 L 103.9,234.5 L 130.0,240.2 L 158.8,244.1 Z" fill="currentColor"/>
+    <path d="M 144.3,226.2 L 119.3,224.0 L 97.3,218.5 L 78.7,210.6 L 63.9,200.4 L 53.4,188.3 L 47.6,174.7 L 46.5,159.8 L 50.2,144.0 L 58.7,127.9 L 71.7,111.9 L 88.9,96.3 L 109.9,81.7 L 134.1,68.3 L 160.8,56.7 L 189.5,47.0 L 219.3,39.5 L 249.4,34.4 L 279.1,31.9 L 307.5,31.9 L 334.0,34.5 L 357.8,39.6 L 378.3,46.9 L 394.9,56.3 L 406.6,67.7 L 406.6,67.7 L 392.2,58.4 L 374.6,50.8 L 353.9,45.3 L 330.5,42.0 L 305.0,41.0 L 277.9,42.2 L 249.9,45.6 L 221.7,51.1 L 193.9,58.5 L 167.2,67.7 L 142.2,78.4 L 119.5,90.4 L 99.8,103.3 L 83.3,117.0 L 70.6,131.1 L 62.0,145.2 L 57.7,159.1 L 57.7,172.4 L 62.2,184.9 L 71.0,196.2 L 84.0,206.1 L 100.9,214.5 L 121.2,221.0 L 144.3,226.2 Z" fill="currentColor"/>
+    <path d="M 129.0,206.8 L 110.6,202.7 L 95.5,196.0 L 83.8,187.4 L 76.0,177.2 L 72.0,165.7 L 72.2,153.2 L 76.5,140.0 L 84.8,126.5 L 97.0,113.2 L 112.6,100.3 L 131.4,88.1 L 152.8,77.2 L 176.3,67.6 L 201.2,59.8 L 227.0,53.8 L 252.9,49.8 L 278.2,47.9 L 302.4,48.2 L 324.7,50.6 L 344.6,55.0 L 361.4,61.3 L 374.4,69.6 L 374.4,69.6 L 359.1,63.7 L 341.5,59.3 L 321.7,56.7 L 300.0,55.9 L 277.0,57.0 L 253.0,59.8 L 228.8,64.3 L 204.9,70.4 L 181.8,77.9 L 160.0,86.7 L 140.0,96.5 L 122.4,107.1 L 107.5,118.3 L 95.6,129.8 L 87.2,141.5 L 82.2,153.0 L 81.0,164.1 L 83.6,174.6 L 89.8,184.2 L 99.7,192.8 L 112.9,200.3 L 129.0,206.8 Z" fill="currentColor"/>
+    <path d="M 322.0,39.0 L 323.1,42.5 L 326.8,42.5 L 323.8,44.6 L 324.9,48.0 L 322.0,45.9 L 319.1,48.0 L 320.2,44.6 L 317.2,42.5 L 320.9,42.5 Z" fill="currentColor"/>
+    <path d="M 339.9,35.5 L 341.2,39.5 L 345.4,39.5 L 342.0,41.9 L 343.3,45.9 L 339.9,43.5 L 336.5,45.9 L 337.8,41.9 L 334.4,39.5 L 338.6,39.5 Z" fill="currentColor"/>
+    <path d="M 357.8,30.9 L 359.3,35.5 L 364.1,35.5 L 360.2,38.3 L 361.7,42.9 L 357.8,40.0 L 353.9,42.9 L 355.4,38.3 L 351.5,35.5 L 356.3,35.5 Z" fill="currentColor"/>
+    <path d="M 375.7,25.6 L 377.4,30.9 L 382.9,30.9 L 378.5,34.1 L 380.2,39.4 L 375.7,36.1 L 371.2,39.4 L 372.9,34.1 L 368.5,30.9 L 374.0,30.9 Z" fill="currentColor"/>
+    <path d="M 393.6,19.8 L 395.6,25.9 L 401.9,25.9 L 396.8,29.6 L 398.7,35.6 L 393.6,31.9 L 388.5,35.6 L 390.4,29.6 L 385.3,25.9 L 391.6,25.9 Z" fill="currentColor"/>
+    <path d="M 411.5,13.5 L 413.8,20.5 L 421.1,20.5 L 415.2,24.8 L 417.4,31.7 L 411.5,27.4 L 405.6,31.7 L 407.8,24.8 L 401.9,20.5 L 409.2,20.5 Z" fill="currentColor"/>
+    <path d="M 429.4,6.8 L 432.0,14.8 L 440.4,14.8 L 433.6,19.7 L 436.2,27.7 L 429.4,22.8 L 422.6,27.7 L 425.2,19.7 L 418.4,14.8 L 426.8,14.8 Z" fill="currentColor"/>
+        </g>
+        <text x="176" y="172" font-family="Bitter, Bookman, Georgia, serif" font-weight="800" font-size="84" letter-spacing="1.5" fill="currentColor">GITA</text>
       </svg>
-      <div><b>GITA</b><span>Toán tiểu học CLC</span></div>
+      <span>Toán tiểu học CLC</span>
     </div>
 
     <nav class="nav" id="nav">
@@ -308,9 +322,12 @@ function toast(msg) {
 }
 const LA_MA = ["I", "II", "III", "IV", "V"];
 const MUC_TEN = { M1: "Nhận biết", M2: "Thông hiểu", M3: "Vận dụng", M4: "Vận dụng cao", M5: "Sáng tạo" };
+/* Hệ huy hiệu cung năm sao — brand book mục 7: [ngưỡng, tên, màu, số sao] */
 const HUY_HIEU = [
-  [98, "Điểm 10 GITA", "#D7263D"], [90, "Vượt ngưỡng", "#7B4BC4"], [80, "Xuất sắc", "#F2A81D"],
-  [65, "Thành thạo", "#1F9D6B"], [50, "Vững nền", "#1E88E5"], [0, "Chưa đạt", "#5B6C86"]];
+  [98, "Ngôi sao GITA", "#E0242A", 5], [90, "Vượt ngưỡng", "#E0242A", 4],
+  [80, "Xuất sắc", "#1B5EA8", 3], [65, "Thành thạo", "#2E7BC4", 2],
+  [50, "Vững nền", "#5AA0DC", 1], [0, "Chưa đạt", "#5B6C86", 0]];
+const saoCua = p => "★".repeat(huyHieu(p)[3]) + "☆".repeat(5 - huyHieu(p)[3]);
 const huyHieu = p => HUY_HIEU.find(h => p >= h[0]);
 function mucTuPhanTram(p) {
   return p >= 90 ? "M5" : p >= 75 ? "M4" : p >= 60 ? "M3" : p >= 40 ? "M2" : "M1";
@@ -555,8 +572,8 @@ function chipNhom(g) {
   const n = DATA.nhom[g]; if (!n) return "";
   return `<span class="chip" title="${esc(n.mo_ta)}"><span class="dot" style="background:${n.mau}"></span>${g} · ${esc(n.ten)}</span>`;
 }
-function bacThang(dsPhanTram, vang) {
-  return `<div class="stair ${vang ? "g" : ""}">` + dsPhanTram.map(p =>
+function cungSao(dsPhanTram, nhan) {
+  return `<div class="sao ${nhan ? "nhan" : ""}">` + dsPhanTram.map(p =>
     `<i><b style="height:${Math.max(0, Math.min(100, p || 0))}%"></b></i>`).join("") + `</div>`;
 }
 function thanhMuc(g, p) {
@@ -677,7 +694,7 @@ function veLoTrinh() {
     </div>
   </div>
 
-  ${yeu ? `<div class="card pad" style="margin-bottom:16px;border-left:4px solid var(--gold)">
+  ${yeu ? `<div class="card pad" style="margin-bottom:16px;border-left:4px solid var(--do)">
     <div class="eyebrow">Một tháng — một đòn bẩy</div>
     <p style="margin-top:6px;font-size:14.5px">Bốn tuần tới hãy dồn 20% thời gian luyện thêm vào nhóm
     <b>${yeu} — ${esc(DATA.nhom[yeu].ten)}</b>, đang là nhóm thấp nhất của em
@@ -831,9 +848,9 @@ function vePhieu() {
             <span class="chip">Lớp ${m.lop}</span>
             <span class="chip">Phiếu số ${m.stt} · tuần ${m.tuan} · ${m.hoc_ky}</span>
             <span class="chip">90 phút · 100 điểm</span><span class="chip">${p.tong_y} ý</span></div></div>
-        <div style="width:130px">${bacThang(p.phan.map(x => {
+        <div style="width:130px">${cungSao(p.phan.map(x => {
         const t = tienDoPhan(x); return t.t ? t.d / t.t * 100 : 0; }))}
-          <div class="muted" style="font-size:11px;text-align:center;margin-top:5px">5 phần · bậc thang</div></div>
+          <div class="muted" style="font-size:11px;text-align:center;margin-top:5px">5 phần · cung năm sao</div></div>
       </div>
       <div class="gita4">
         <div><b>G — Mục tiêu</b><span>${esc(m.muc_tieu_G || "")}</span></div>
@@ -916,7 +933,7 @@ function veSol(b) {
   ${da.huong_giai ? `<div class="blk"><h4>Hướng giải</h4><div class="txt">${mdToHtml(da.huong_giai)}</div></div>` : ""}
   ${da.nhan_tu_duy ? `<div class="blk"><h4>Năng lực tư duy &amp; điểm chốt</h4>
     <div class="row" style="margin-bottom:6px">${tds.map(t =>
-      `<span class="chip"><span class="dot" style="background:var(--gold)"></span>${t} · ${esc(DATA.tu_duy[t] || "")}</span>`).join("")}</div>
+      `<span class="chip"><span class="dot" style="background:var(--do)"></span>${t} · ${esc(DATA.tu_duy[t] || "")}</span>`).join("")}</div>
     <div class="txt">${mdToHtml(da.nhan_tu_duy)}</div></div>` : ""}
   ${da.loi_thuong_gap ? `<div class="blk"><h4>Lỗi thường gặp ở bài này</h4>
     <div class="txt">${mdToHtml(da.loi_thuong_gap)}</div></div>` : ""}
@@ -1062,7 +1079,7 @@ async function veKetQua(chiXem) {
           style="font-size:17px;color:var(--muted)">/100</small></div>
         <div class="tag" style="background:${hh[2]}22;color:${hh[2]};font-size:12.5px;margin-top:6px">${hh[1]}</div>
       </div></div>
-    <div style="max-width:340px;margin-top:16px">${bacThang(dsPhan.map(x => x.dat / x.toi_da * 100), true)}</div>
+    <div style="max-width:340px;margin-top:16px">${cungSao(dsPhan.map(x => x.dat / x.toi_da * 100), true)}</div>
   </div>
 
   <div class="grid g2">
@@ -1076,7 +1093,7 @@ async function veKetQua(chiXem) {
       <div class="bars">${Object.keys(DATA.tu_duy).filter(c => td[c]).map(c => {
         const pc = Math.round(td[c].d / td[c].t * 100);
         return `<div class="bar"><div class="g">${c}</div>
-          <div><div class="track"><div class="fill" style="width:${pc}%;background:var(--navy)"></div></div>
+          <div><div class="track"><div class="fill" style="width:${pc}%;background:var(--xanh)"></div></div>
           <div class="nm">${esc(DATA.tu_duy[c])}</div></div>
           <div class="lv">${pc}%</div></div>`; }).join("")}</div>
     </div>
@@ -1322,7 +1339,7 @@ function veTest() {
 
   <h3 style="font-size:15px;margin-bottom:10px">Đề test đầu vào</h3>
   <div class="grid g3" style="margin-bottom:16px">${Object.entries(DATA.test).map(([ma, d]) =>
-    `<button class="card pad" data-de="${ma}" style="text-align:left;cursor:pointer;border-color:${TEST_DE === ma ? "var(--gold)" : "var(--line)"}">
+    `<button class="card pad" data-de="${ma}" style="text-align:left;cursor:pointer;border-color:${TEST_DE === ma ? "var(--do)" : "var(--line)"}">
       <div class="eyebrow">${esc(d.meta.loai)}</div>
       <h4 style="font-size:15px;margin:6px 0 8px">Vào lớp ${d.meta.lop_dang_ky}</h4>
       <div class="row"><span class="chip">${d.meta.thoi_luong_phut} phút</span>
@@ -1361,7 +1378,7 @@ function veKqTest(r, t) {
   <p class="sub" style="margin-bottom:12px">Tổng <b class="num">${r.S}/100</b></p>
   <div class="bars" style="margin-bottom:14px">${["N", "K", "P", "T"].map(k => `<div class="bar">
     <div class="g">${k}</div><div><div class="track"><div class="fill"
-      style="width:${t[k] / 25 * 100}%;background:var(--navy)"></div></div>
+      style="width:${t[k] / 25 * 100}%;background:var(--xanh)"></div></div>
       <div class="nm">${TEN[k]}</div></div><div class="lv">${t[k]}/25 · ${r.m[k]}</div></div>`).join("")}</div>
   <table style="font-size:13.5px"><tbody>
     <tr><td class="muted">Tuyến</td><td><b>${r.tuyen === "T2" ? "Tuyến 2 — CLC &amp; Chuyên" : "Tuyến 1 — Nền tảng đến Nâng cao"}</b></td></tr>
@@ -1383,7 +1400,7 @@ function veDeThi() {
     <p class="sub">162 đề, tách khỏi 100 phiếu học của mỗi khối:
     <b>12 phiếu ôn tập mốc</b> · <b>120 đề thi mốc</b> (10 biến thể mỗi mốc) ·
     <b>30 đề đánh giá năng lực</b> theo format vào lớp 6 của các trường CLC Hà Nội.</p></div></div>
-  ${Quyen.laHS() ? `<div class="card pad" style="margin-bottom:14px;border-left:4px solid var(--gold)">
+  ${Quyen.laHS() ? `<div class="card pad" style="margin-bottom:14px;border-left:4px solid var(--do)">
     <div class="eyebrow">Tầng năng lực của em: ${t.ma} — ${esc(t.ten)}</div>
     <p style="margin-top:6px;font-size:14px">Biến thể đề mốc đang mở:
     <b>${t.de_moc.join(", ") || "chưa có"}</b> · Bộ đánh giá năng lực:
@@ -1438,7 +1455,7 @@ function vePhanQuyen() {
   const pq = DATA.phan_quyen, t = Quyen.tang();
   const nhan = { "X": ["Không", "var(--muted)"], "R": ["Xem", "var(--ok)"],
     "R!": ["Xem có điều kiện", "var(--warn)"], "R°": ["Xem rút gọn", "var(--warn)"],
-    "RW": ["Xem, sửa", "var(--navy)"], "RWD": ["Xem, sửa, xoá", "var(--navy)"],
+    "RW": ["Xem, sửa", "var(--xanh)"], "RWD": ["Xem, sửa, xoá", "var(--xanh)"],
     "A": ["Toàn quyền", "var(--bad)"] };
   MAIN().innerHTML = `
   <div class="page-h"><div><div class="eyebrow">Quản trị</div><h1>Phân quyền &amp; bảo mật</h1>
@@ -1478,7 +1495,7 @@ function vePhanQuyen() {
   <p class="sub" style="margin-bottom:10px">Cột của vai trò đang xem được tô đậm.</p>
   <div class="tw" style="margin-bottom:18px"><table>
     <thead><tr><th>Tài nguyên</th>${Object.keys(pq.vai_tro).map(v =>
-      `<th class="n"${v === Quyen.vai ? ' style="color:var(--gold)"' : ""}>${v}</th>`).join("")}</tr></thead>
+      `<th class="n"${v === Quyen.vai ? ' style="color:var(--do)"' : ""}>${v}</th>`).join("")}</tr></thead>
     <tbody>${Object.entries(pq.tai_nguyen).map(([tn, ten]) => `<tr>
       <td style="font-size:12.5px">${esc(ten)}</td>
       ${Object.keys(pq.vai_tro).map(v => {
@@ -1633,7 +1650,7 @@ function veChonVai() {
 function capNhatGhiChuVai() {
   const t = Quyen.tang();
   $("#vaiNote").innerHTML = Quyen.laHS()
-    ? `Tầng năng lực: <b style="color:#F2A81D">${t.ma} — ${esc(t.ten)}</b>`
+    ? `Tầng năng lực: <b style="color:var(--do)">${t.ma} — ${esc(t.ten)}</b>`
     : `Phạm vi: ${esc(DATA.phan_quyen.vai_tro[Quyen.vai].pham_vi)}`;
 }
 /* Ẩn mục điều hướng mà vai trò hiện tại không có quyền xem */

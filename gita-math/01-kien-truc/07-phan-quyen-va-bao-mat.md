@@ -115,7 +115,7 @@ Tầng được tính lại sau **mỗi lần nộp bài**, lấy trung bình ba
 | **M2** | Thành thạo | ≥ 40% | LT, DB, KN, HD, NC | T1 | D06 | — |
 | **M3** | Vận dụng | ≥ 60% | LT, DB, KN, HD, NC, OT | T1 | D02, D06 | — |
 | **M4** | Vượt ngưỡng | ≥ 75% | LT, DB, KN, HD, NC, OT, TH | T1, T2* | D01, D02, D03, D04, D06, D07, D08 | — |
-| **M5** | Điểm 10 GITA | ≥ 90% | LT, DB, KN, HD, NC, OT, TH | T1, T2 | D01, D02, D03, D04, D05, D06, D07, D08, D09, D10 | có |
+| **M5** | Ngôi sao GITA | ≥ 90% | LT, DB, KN, HD, NC, OT, TH | T1, T2 | D01, D02, D03, D04, D05, D06, D07, D08, D09, D10 | có |
 
 `T2*` nghĩa là **chỉ mở Tuyến 2 ở đúng nhóm chuyên đề mà học viên đã đạt M4**, không mở toàn bộ Tuyến 2.
 
@@ -125,7 +125,7 @@ Tầng được tính lại sau **mỗi lần nộp bài**, lấy trung bình ba
 - **M2 — Thành thạo:** Trung bình ba phiếu gần nhất từ 40% trở lên.
 - **M3 — Vận dụng:** Trung bình ba phiếu gần nhất từ 60% trở lên.
 - **M4 — Vượt ngưỡng:** Từ 75% trở lên. Mở Tuyến 2 ở đúng nhóm chuyên đề đã đạt M4.
-- **M5 — Điểm 10 GITA:** Từ 90% trở lên. Mở toàn bộ Tuyến 2 và bộ đề đánh giá năng lực.
+- **M5 — Ngôi sao GITA:** Từ 90% trở lên. Mở toàn bộ Tuyến 2 và bộ đề đánh giá năng lực.
 
 
 ---

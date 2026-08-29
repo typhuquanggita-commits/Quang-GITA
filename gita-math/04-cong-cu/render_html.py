@@ -28,47 +28,53 @@ CSS = """
 body{font-family:"Be Vietnam Pro","Segoe UI",Arial,sans-serif;font-size:11.5pt;
   line-height:1.5;color:#111827;margin:0;background:#fff}
 .wrap{max-width:182mm;margin:0 auto}
-header{border-bottom:2.5pt solid #F2A81D;padding-bottom:6pt;margin-bottom:10pt;
+header{border-bottom:2.5pt solid #1B5EA8;padding-bottom:6pt;margin-bottom:10pt;
   display:flex;gap:10pt;align-items:flex-start}
 header svg{flex:none}
 header .id{font-size:8.5pt;letter-spacing:.12em;text-transform:uppercase;color:#4B5563;font-weight:700}
-header h1{font-size:15pt;margin:2pt 0 3pt;color:#0B2C5C;font-weight:800;line-height:1.2}
+header h1{font-family:"Bitter",Bookman,Georgia,serif;font-size:15pt;margin:2pt 0 3pt;color:#1B5EA8;font-weight:800;line-height:1.2}
 header .meta{font-size:9pt;color:#4B5563;line-height:1.45}
-header .ma{font-family:"IBM Plex Mono",Consolas,monospace;font-size:9pt;color:#0B2C5C;font-weight:600}
-.hs{border:1pt solid #D1D5DB;border-radius:3pt;padding:5pt 8pt;margin:8pt 0 12pt;font-size:10pt}
-h2{font-size:12pt;color:#0B2C5C;margin:14pt 0 6pt;padding:4pt 7pt;background:#EAF0F8;
-  border-left:3pt solid #0B2C5C;border-radius:0 3pt 3pt 0;page-break-after:avoid}
+header .ma{font-family:"IBM Plex Mono",Consolas,monospace;font-size:9pt;color:#1B5EA8;font-weight:600}
+.hs{border:1pt solid #D6DFEA;border-radius:3pt;padding:5pt 8pt;margin:8pt 0 12pt;font-size:10pt}
+h2{font-size:12pt;color:#1B5EA8;margin:14pt 0 6pt;padding:4pt 7pt;background:#EAF2FA;
+  border-left:3pt solid #2E7BC4;border-radius:0 3pt 3pt 0;page-break-after:avoid}
 h3{font-size:11pt;margin:10pt 0 4pt;page-break-after:avoid}
 h4{font-size:9pt;letter-spacing:.1em;text-transform:uppercase;color:#4B5563;margin:8pt 0 3pt}
 p{margin:0 0 5pt}
 ul,ol{margin:0 0 6pt;padding-left:16pt}
 li{margin-bottom:2pt}
-blockquote{margin:0 0 8pt;padding:5pt 9pt;background:#F8FAFC;border-left:2.5pt solid #F2A81D;
+blockquote{margin:0 0 8pt;padding:5pt 9pt;background:#F5F8FC;border-left:2.5pt solid #5AA0DC;
   border-radius:0 3pt 3pt 0;font-size:10.5pt}
 table{border-collapse:collapse;width:100%;font-size:9.5pt;margin:0 0 8pt}
-th,td{border:0.6pt solid #D1D5DB;padding:3pt 5pt;text-align:left;vertical-align:top}
-th{background:#EAF0F8;font-size:8.5pt;text-transform:uppercase;letter-spacing:.06em}
-pre{background:#F8FAFC;border:0.6pt solid #D1D5DB;border-radius:3pt;padding:6pt;
+th,td{border:0.6pt solid #D6DFEA;padding:3pt 5pt;text-align:left;vertical-align:top}
+th{background:#EAF2FA;font-size:8.5pt;text-transform:uppercase;letter-spacing:.06em}
+pre{background:#F5F8FC;border:0.6pt solid #D6DFEA;border-radius:3pt;padding:6pt;
   font-family:"IBM Plex Mono",Consolas,monospace;font-size:8.5pt;line-height:1.4;
   overflow-x:auto;white-space:pre-wrap}
 code{font-family:"IBM Plex Mono",Consolas,monospace;font-size:.9em}
-hr{border:0;border-top:0.6pt solid #D1D5DB;margin:10pt 0}
+hr{border:0;border-top:0.6pt solid #D6DFEA;margin:10pt 0}
 .bai{page-break-inside:avoid;margin-bottom:9pt}
 .y{margin:2pt 0 2pt 14pt}
 .ke{border-bottom:0.6pt dotted #9CA3AF;display:inline-block;min-width:38mm;height:11pt}
 footer{position:fixed;bottom:6mm;left:0;right:0;text-align:center;font-size:8pt;color:#6B7280}
 .badge{display:inline-block;font-size:8pt;font-weight:700;padding:1pt 6pt;border-radius:8pt;
-  background:#0B2C5C;color:#fff;letter-spacing:.05em}
-.badge.da{background:#D7263D}
+  background:#1B5EA8;color:#fff;letter-spacing:.05em}
+.badge.da{background:#E0242A}
 @media print{ .noprint{display:none} }
 """
 
-LOGO = ('<svg width="30" height="30" viewBox="0 0 120 120">'
-        '<path d="M60 4 L108 20 v44c0 26-20 43-48 52C32 107 12 90 12 64V20Z" fill="#123A73"/>'
-        '<rect x="26" y="76" width="15" height="16" rx="2.5" fill="#1E88E5"/>'
-        '<rect x="45" y="65" width="15" height="27" rx="2.5" fill="#FF6B4A"/>'
-        '<rect x="64" y="52" width="15" height="40" rx="2.5" fill="#7B4BC4"/>'
-        '<rect x="83" y="37" width="15" height="55" rx="2.5" fill="#1F9D6B"/></svg>')
+LOGO = ('<svg width="56" height="17.8" viewBox="14 2 452 144" aria-hidden="true">'
+        '<path d="M 158.8,244.1 L 128.4,243.6 L 100.6,239.5 L 76.1,232.4 L 55.3,222.6 L 38.9,210.3 L 27.4,195.8 L 21.0,179.7 L 20.0,162.2 L 24.3,143.8 L 34.0,125.1 L 48.7,106.5 L 68.1,88.5 L 91.7,71.6 L 118.9,56.2 L 149.0,42.8 L 181.2,31.6 L 214.8,23.1 L 248.8,17.2 L 282.4,14.3 L 314.7,14.4 L 344.9,17.4 L 372.2,23.2 L 395.9,31.6 L 415.5,42.4 L 430.2,55.4 L 439.2,70.2 L 439.2,70.2 L 426.9,57.3 L 410.9,46.2 L 390.8,37.3 L 367.3,30.8 L 340.7,26.8 L 311.7,25.5 L 281.1,26.7 L 249.5,30.4 L 217.7,36.6 L 186.4,45.1 L 156.3,55.5 L 128.3,67.8 L 102.8,81.6 L 80.6,96.6 L 62.1,112.5 L 47.8,128.8 L 38.1,145.2 L 33.2,161.5 L 33.2,177.1 L 38.1,191.7 L 47.9,205.1 L 62.4,216.8 L 81.2,226.7 L 103.9,234.5 L 130.0,240.2 L 158.8,244.1 Z" fill="#1B5EA8"/>'
+        '    <path d="M 144.3,226.2 L 119.3,224.0 L 97.3,218.5 L 78.7,210.6 L 63.9,200.4 L 53.4,188.3 L 47.6,174.7 L 46.5,159.8 L 50.2,144.0 L 58.7,127.9 L 71.7,111.9 L 88.9,96.3 L 109.9,81.7 L 134.1,68.3 L 160.8,56.7 L 189.5,47.0 L 219.3,39.5 L 249.4,34.4 L 279.1,31.9 L 307.5,31.9 L 334.0,34.5 L 357.8,39.6 L 378.3,46.9 L 394.9,56.3 L 406.6,67.7 L 406.6,67.7 L 392.2,58.4 L 374.6,50.8 L 353.9,45.3 L 330.5,42.0 L 305.0,41.0 L 277.9,42.2 L 249.9,45.6 L 221.7,51.1 L 193.9,58.5 L 167.2,67.7 L 142.2,78.4 L 119.5,90.4 L 99.8,103.3 L 83.3,117.0 L 70.6,131.1 L 62.0,145.2 L 57.7,159.1 L 57.7,172.4 L 62.2,184.9 L 71.0,196.2 L 84.0,206.1 L 100.9,214.5 L 121.2,221.0 L 144.3,226.2 Z" fill="#5AA0DC"/>'
+        '    <path d="M 129.0,206.8 L 110.6,202.7 L 95.5,196.0 L 83.8,187.4 L 76.0,177.2 L 72.0,165.7 L 72.2,153.2 L 76.5,140.0 L 84.8,126.5 L 97.0,113.2 L 112.6,100.3 L 131.4,88.1 L 152.8,77.2 L 176.3,67.6 L 201.2,59.8 L 227.0,53.8 L 252.9,49.8 L 278.2,47.9 L 302.4,48.2 L 324.7,50.6 L 344.6,55.0 L 361.4,61.3 L 374.4,69.6 L 374.4,69.6 L 359.1,63.7 L 341.5,59.3 L 321.7,56.7 L 300.0,55.9 L 277.0,57.0 L 253.0,59.8 L 228.8,64.3 L 204.9,70.4 L 181.8,77.9 L 160.0,86.7 L 140.0,96.5 L 122.4,107.1 L 107.5,118.3 L 95.6,129.8 L 87.2,141.5 L 82.2,153.0 L 81.0,164.1 L 83.6,174.6 L 89.8,184.2 L 99.7,192.8 L 112.9,200.3 L 129.0,206.8 Z" fill="#E0242A"/>'
+        '<path d="M 322.0,39.0 L 323.1,42.5 L 326.8,42.5 L 323.8,44.6 L 324.9,48.0 L 322.0,45.9 L 319.1,48.0 L 320.2,44.6 L 317.2,42.5 L 320.9,42.5 Z" fill="#1B5EA8"/>'
+        '    <path d="M 339.9,35.5 L 341.2,39.5 L 345.4,39.5 L 342.0,41.9 L 343.3,45.9 L 339.9,43.5 L 336.5,45.9 L 337.8,41.9 L 334.4,39.5 L 338.6,39.5 Z" fill="#1B5EA8"/>'
+        '    <path d="M 357.8,30.9 L 359.3,35.5 L 364.1,35.5 L 360.2,38.3 L 361.7,42.9 L 357.8,40.0 L 353.9,42.9 L 355.4,38.3 L 351.5,35.5 L 356.3,35.5 Z" fill="#1B5EA8"/>'
+        '    <path d="M 375.7,25.6 L 377.4,30.9 L 382.9,30.9 L 378.5,34.1 L 380.2,39.4 L 375.7,36.1 L 371.2,39.4 L 372.9,34.1 L 368.5,30.9 L 374.0,30.9 Z" fill="#1B5EA8"/>'
+        '    <path d="M 393.6,19.8 L 395.6,25.9 L 401.9,25.9 L 396.8,29.6 L 398.7,35.6 L 393.6,31.9 L 388.5,35.6 L 390.4,29.6 L 385.3,25.9 L 391.6,25.9 Z" fill="#1B5EA8"/>'
+        '    <path d="M 411.5,13.5 L 413.8,20.5 L 421.1,20.5 L 415.2,24.8 L 417.4,31.7 L 411.5,27.4 L 405.6,31.7 L 407.8,24.8 L 401.9,20.5 L 409.2,20.5 Z" fill="#1B5EA8"/>'
+        '    <path d="M 429.4,6.8 L 432.0,14.8 L 440.4,14.8 L 433.6,19.7 L 436.2,27.7 L 429.4,22.8 L 422.6,27.7 L 425.2,19.7 L 418.4,14.8 L 426.8,14.8 Z" fill="#1B5EA8"/>'
+        '</svg>')
 
 
 # ───────────────────── bộ dựng Markdown tối giản ─────────────────────
@@ -167,7 +173,7 @@ def trang(fm: dict, tieu_de: str, than: str, la_dap_an: bool) -> str:
     return f"""<!DOCTYPE html><html lang="vi"><head><meta charset="utf-8">
 <title>{html.escape(ma)} — {'Đáp án' if la_dap_an else 'Đề'}</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:wght@700;800&family=Be+Vietnam+Pro:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;600&display=swap">
 <style>{CSS}</style></head><body><div class="wrap">
 <header>{LOGO}<div>
   <div class="id">Học viện Phát triển Tài năng Toàn cầu — GITA · gita.edu.vn</div>
@@ -177,7 +183,7 @@ def trang(fm: dict, tieu_de: str, than: str, la_dap_an: bool) -> str:
 {'ĐÁP ÁN — HLV' if la_dap_an else 'ĐỀ — HỌC VIÊN'}</span></div></header>
 {hs}
 {than}
-<footer>GITA · Mỗi phiếu một bậc thang · {html.escape(ma)} ·
+<footer>GITA · Mỗi phiếu một ngôi sao · {html.escape(ma)} ·
 {'Bản dành cho huấn luyện viên — không phát cho học viên' if la_dap_an else 'Bản phát cho học viên'}</footer>
 </div></body></html>"""
 

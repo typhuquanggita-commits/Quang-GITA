@@ -124,7 +124,7 @@ TANG = [
      "mo": ["LT", "DB", "KN", "HD", "NC", "OT", "TH"], "tuyen": ["T1", "T2*"],
      "de_moc": ["D01", "D02", "D03", "D04", "D06", "D07", "D08"], "de_nl": False,
      "mo_ta": "Từ 75% trở lên. Mở Tuyến 2 ở đúng nhóm chuyên đề đã đạt M4."},
-    {"ma": "M5", "ten": "Điểm 10 GITA", "nguong": 90,
+    {"ma": "M5", "ten": "Ngôi sao GITA", "nguong": 90,
      "mo": ["LT", "DB", "KN", "HD", "NC", "OT", "TH"], "tuyen": ["T1", "T2"],
      "de_moc": ["D01", "D02", "D03", "D04", "D05", "D06", "D07", "D08", "D09", "D10"],
      "de_nl": True,

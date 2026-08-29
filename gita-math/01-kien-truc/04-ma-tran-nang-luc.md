@@ -92,8 +92,8 @@
 
 | Mức đạt được | Huy hiệu tương ứng | Hành động khuyến nghị |
 |:--:|---|---|
-| M1 | 🟦 Vững nền | Ở lại Tuyến 1; tăng lượng Phần I–II. |
-| M2 | 🟩 Thành thạo | Tuyến 1 bình thường; bắt đầu chạm Phần IV. |
-| M3 | 🟨 Xuất sắc | Bổ sung phiếu Tuyến 2 cùng nhóm chuyên đề (cách B). |
-| M4 | 🟪 Vượt ngưỡng | Chuyển nhóm chuyên đề này sang Tuyến 2 (cách C). |
-| M5 | 🟥 Điểm 10 GITA | Giao bài sao + cho giảng lại cho lớp (A5). |
+| M1 | ★☆☆☆☆ Vững nền | Ở lại Tuyến 1; tăng lượng Phần I–II. |
+| M2 | ★★☆☆☆ Thành thạo | Tuyến 1 bình thường; bắt đầu chạm Phần IV. |
+| M3 | ★★★☆☆ Xuất sắc | Bổ sung phiếu Tuyến 2 cùng nhóm chuyên đề (cách B). |
+| M4 | ★★★★☆ Vượt ngưỡng | Chuyển nhóm chuyên đề này sang Tuyến 2 (cách C). |
+| M5 | ★★★★★ Ngôi sao GITA | Giao bài sao + cho giảng lại cho lớp (A5). |
