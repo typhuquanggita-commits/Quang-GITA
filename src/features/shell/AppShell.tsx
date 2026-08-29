@@ -85,6 +85,12 @@ const TeacherConsole = lazy(() =>
 const StudentDetail = lazy(() =>
   import('../console/StudentDetail.tsx').then((m) => ({ default: m.StudentDetail })),
 );
+const TopicLibrary = lazy(() =>
+  import('../packets/TopicLibrary.tsx').then((m) => ({ default: m.TopicLibrary })),
+);
+const PacketView = lazy(() =>
+  import('../packets/PacketView.tsx').then((m) => ({ default: m.PacketView })),
+);
 const Dossier = lazy(() =>
   import('../dossier/Dossier.tsx').then((m) => ({ default: m.Dossier })),
 );
@@ -194,6 +200,11 @@ function Shell(): React.ReactElement {
         { route: { name: 'practice' }, label: t('nav.practice'), icon: <IconTarget size={18} /> },
         { route: { name: 'vocab' }, label: t('nav.vocab'), icon: <IconCards size={18} /> },
         { route: { name: 'lessons' }, label: t('nav.lessons'), icon: <IconBook size={18} /> },
+        {
+          route: { name: 'topics' },
+          label: locale === 'vi' ? 'Bộ phiếu' : 'Packets',
+          icon: <IconClipboard size={18} />,
+        },
         { route: { name: 'plan' }, label: t('nav.plan'), icon: <IconCalendar size={18} /> },
         { route: { name: 'gita' }, label: t('nav.gita'), icon: <IconSparkle size={18} /> },
       ],
@@ -401,6 +412,10 @@ function RouteView({
       return <LessonLibrary navigate={navigate} />;
     case 'lesson':
       return <LessonView skill={route.skill} navigate={navigate} />;
+    case 'topics':
+      return <TopicLibrary navigate={navigate} />;
+    case 'packet':
+      return <PacketView skill={route.skill} navigate={navigate} />;
     case 'plan':
       return <StudyPlanView />;
     case 'gita':

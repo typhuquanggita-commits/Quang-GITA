@@ -205,6 +205,47 @@ try {
   await page.locator('input[type="search"]').fill('');
   await page.waitForTimeout(350);
 
+  /* ---------------- Topic packets ---------------- */
+  group('Topic packets');
+  await page.getByRole('button', { name: 'Bộ phiếu', exact: true }).first().click();
+  await page.waitForTimeout(600);
+  check('every topic has a packet', (await page.locator('.lesson-row').count()) === 30);
+  const pips = await page.locator('.lesson-row').first().locator('.packet-pips > i').count();
+  check('each packet shows its seven sheets', pips === 7, `${pips}`);
+
+  await page.locator('.lesson-row').first().click();
+  await page.waitForTimeout(600);
+  check('a packet opens on its theory sheet', (await page.getByText('Phiếu lý thuyết').count()) >= 1);
+
+  await page.getByRole('tab', { name: /dạng bài và đọc vị/ }).click();
+  await page.waitForTimeout(400);
+  const types = await page.locator('.type-card').count();
+  check('the đọc-vị sheet lists the question types', types >= 2, `${types}`);
+
+  await page.getByRole('tab', { name: /Phiếu thi/ }).click();
+  await page.waitForTimeout(400);
+  // The solution sheet is behind a toggle: a solution visible while the
+  // question is being attempted is not a solution, it is the answer.
+  check('solutions are not shown beside the questions', (await page.locator('.explain').count()) === 0);
+  await page.getByRole('button', { name: /Xem phiếu lời giải/ }).click();
+  await page.waitForTimeout(400);
+  check('the solution sheet opens', (await page.locator('.explain').count()) >= 1);
+  check('and carries the deep analysis', (await page.getByText('Bảng phân tích chuyên sâu').count()) === 1);
+
+  await page.getByRole('tab', { name: /ôn chắc chuyên đề/ }).click();
+  await page.waitForTimeout(400);
+  const criteria = await page.locator('.secure-list > li').count();
+  check('consolidation is stated as observable criteria', criteria >= 3, `${criteria}`);
+
+  await page.getByRole('button', { name: 'Đánh dấu đã hoàn thành' }).click();
+  await page.waitForTimeout(400);
+  // Sheets are a sequence: finishing the last one must send the learner back
+  // to the first unfinished sheet, not carry them past it.
+  check(
+    'an out-of-order completion sends the learner back',
+    (await page.getByText(/Phiếu tiếp theo chưa hoàn thành/).count()) === 1,
+  );
+
   /* ---------------- GITA ---------------- */
   group('GITA');
   await page.getByRole('button', { name: 'GITA', exact: true }).first().click();

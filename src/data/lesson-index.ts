@@ -13,6 +13,8 @@
 import type { SectionId, SkillId } from '../types.ts';
 import { RW_LESSONS, type Lesson } from './lessons.ts';
 import { MATH_LESSONS } from './lessons-math.ts';
+import { RW_TOPICS, type Topic } from './topics.ts';
+import { MATH_TOPICS } from './topics-math.ts';
 
 export type { Lesson, Trap, WorkedExample } from './lessons.ts';
 
@@ -33,4 +35,20 @@ export function lessonsForSection(section: SectionId): Lesson[] {
 /** Total reading time, used to set expectations before a learner commits. */
 export function totalMinutes(lessons: Lesson[] = LESSONS): number {
   return lessons.reduce((sum, lesson) => sum + lesson.minutes, 0);
+}
+
+/* ------------------------------------------------------------------ */
+/* Topics                                                              */
+/* ------------------------------------------------------------------ */
+
+export type { Topic, QuestionType } from './topics.ts';
+
+export const TOPICS: Topic[] = [...RW_TOPICS, ...MATH_TOPICS];
+
+export const TOPIC_BY_SKILL: Record<SkillId, Topic> = Object.fromEntries(
+  TOPICS.map((topic) => [topic.skill, topic]),
+);
+
+export function topicFor(skill: SkillId | undefined): Topic | undefined {
+  return skill ? TOPIC_BY_SKILL[skill] : undefined;
 }

@@ -9,7 +9,7 @@
 import { BANK, bankStats } from '../src/data/bank.ts';
 import { DOMAINS, SECTION_SPEC } from '../src/data/blueprint.ts';
 import { sprToNumber } from '../src/engine/scoring.ts';
-import { LESSONS } from '../src/data/lesson-index.ts';
+import { LESSONS, TOPICS } from '../src/data/lesson-index.ts';
 
 const problems: string[] = [];
 const seen = new Set<string>();
@@ -86,7 +86,21 @@ for (const skill of lessonSkills) {
   }
 }
 
+/*
+ * Topic coverage: a skill that can be taught must also be recognisable and
+ * consolidatable. A packet missing its đọc-vị sheet is a packet that teaches a
+ * method without teaching when to reach for it.
+ */
+const topicSkills = new Set(TOPICS.map((topic) => topic.skill));
+for (const skill of skillIds) {
+  if (!topicSkills.has(skill)) problems.push(`topics: no topic data for skill "${skill}"`);
+}
+for (const skill of topicSkills) {
+  if (!skillIds.has(skill)) problems.push(`topics: topic data for unknown skill "${skill}"`);
+}
+
 console.log(`Lessons: ${LESSONS.length} for ${skillIds.size} skills`);
+console.log(`Topics:  ${TOPICS.length} with ${TOPICS.reduce((n, t) => n + t.types.length, 0)} question types`);
 console.log(`Bank: ${stats.total} items (${stats.bySection.rw} R&W, ${stats.bySection.math} Math)`);
 console.log(`Formats: ${stats.total - stats.sprCount} multiple choice, ${stats.sprCount} grid-in`);
 console.log(`Bands: ${Object.entries(stats.byBand).map(([k, v]) => `${k} ${v}`).join(', ')}`);

@@ -773,3 +773,80 @@ mark.hl[data-note='true'] { border-bottom: 2px dotted currentColor; cursor: poin
 }
 
 .pathway-step p em { color: var(--text); font-style: normal; font-weight: var(--weight-semibold); }
+
+/* ================================================================== */
+/* Topic packets                                                       */
+/* ================================================================== */
+
+.packet-pips { display: inline-flex; gap: 4px; margin-top: 6px; }
+.packet-pips > i {
+  width: 1.5rem;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--border);
+}
+.packet-pips > i[data-done] { background: var(--success); }
+
+.sheet-head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: var(--space-4);
+  border-radius: var(--radius-lg);
+  border-inline-start: 3px solid var(--primary);
+  background: var(--primary-soft);
+}
+.sheet-title { margin: 0; font-size: var(--text-lg); }
+.sheet-purpose { margin-top: var(--space-2); max-width: 68ch; line-height: var(--leading-normal); }
+
+/* Recognition sheet */
+.type-list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-4); counter-reset: type; }
+.type-card {
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: var(--surface);
+}
+.type-name { font-weight: var(--weight-semibold); margin-bottom: var(--space-3); }
+.type-detail { display: grid; grid-template-columns: auto 1fr; gap: var(--space-2) var(--space-4); margin: 0; }
+.type-detail dt {
+  font-size: var(--text-2xs);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  font-weight: var(--weight-semibold);
+  white-space: nowrap;
+  padding-top: 2px;
+}
+.type-detail dd { margin: 0; line-height: var(--leading-normal); }
+
+/* Practice sheet questions */
+.sheet-questions { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-6); }
+.sheet-question { padding-bottom: var(--space-5); border-bottom: 1px solid var(--border); }
+.sheet-questions > li:last-child { border-bottom: 0; padding-bottom: 0; }
+
+/* Consolidation criteria */
+.secure-list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-3); }
+.secure-list > li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--space-3);
+  align-items: start;
+  padding: var(--space-3);
+  border-radius: var(--radius-sm);
+  background: var(--success-soft);
+  color: var(--success);
+  line-height: var(--leading-normal);
+}
+
+.linklike {
+  background: none;
+  border: 0;
+  padding: 0;
+  color: inherit;
+  font: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+}

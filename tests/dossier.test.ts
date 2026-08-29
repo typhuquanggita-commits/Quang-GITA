@@ -31,6 +31,8 @@ function base(over: Partial<Parameters<typeof buildDossier>[0]> = {}) {
     lessonsRead: [] as string[],
     lessonsTotal: LESSONS.length,
     teachableSkills: TEACHABLE,
+    packetsStarted: [] as string[],
+    packetsConsolidated: [] as string[],
     today: TODAY,
     ...over,
   };
@@ -182,6 +184,34 @@ test('poor attendance is addressed before any content step', () => {
 test('good attendance raises no rhythm step', () => {
   const dossier = buildDossier(base({ attempts: [scored(1200, TODAY, 'a1')], activeDays28: 22 }));
   assert.equal(dossier.pathway.find((s) => s.kind === 'habit'), undefined);
+});
+
+test('a skill still weak after the whole packet is escalated, not repeated', () => {
+  // Seven sheets have been worked and mastery has not moved. Sending the
+  // learner back through the same sheets would repeat what already failed.
+  const dossier = buildDossier(
+    base({
+      attempts: [scored(1200, TODAY, 'a1'), attemptFor('transitions', 1, 7, 'a2')],
+      lessonsRead: ['transitions'],
+      packetsStarted: ['transitions'],
+      packetsConsolidated: ['transitions'],
+    }),
+  );
+
+  const escalate = dossier.pathway.find((s) => s.kind === 'review' && s.skill === 'transitions');
+  assert.ok(escalate, 'a consolidated but still weak skill must be raised with a person');
+  assert.match(escalate!.because, /already not worked/);
+
+  assert.equal(dossier.pathway.find((s) => s.kind === 'learn' && s.skill === 'transitions'), undefined);
+  assert.equal(dossier.pathway.find((s) => s.kind === 'drill' && s.skill === 'transitions'), undefined);
+});
+
+test('packet counts are reported without being inferred', () => {
+  const dossier = buildDossier(
+    base({ packetsStarted: ['transitions', 'boundaries'], packetsConsolidated: ['boundaries'] }),
+  );
+  assert.equal(dossier.packetsStarted, 2);
+  assert.equal(dossier.packetsConsolidated, 1);
 });
 
 test('the score history is chronological and the movement needs two points', () => {

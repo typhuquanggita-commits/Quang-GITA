@@ -443,6 +443,8 @@ export interface AppState {
   activity: Record<string, number>;
   /** Which skill lessons have been read, keyed by skill id. */
   lessons: Record<SkillId, LessonProgress>;
+  /** Sheets completed per topic packet, keyed by skill id. */
+  packets: Record<SkillId, PacketProgressRecord>;
 }
 
 /**
@@ -453,6 +455,20 @@ export interface AppState {
  * anyone ever explained Transitions to them, and the coach needs to be able
  * to tell those apart before it prescribes a fifth round of the same drill.
  */
+/**
+ * A learner's progress through one topic packet.
+ *
+ * Held as the set of sheets finished rather than a position, because the
+ * sheets are worked as a sequence and a learner who skipped one should be sent
+ * back to it rather than carried past it.
+ */
+export interface PacketProgressRecord {
+  /** Sheet kinds completed. */
+  done: string[];
+  /** Local calendar date of the most recent sheet finished. */
+  lastWorkedAt: string;
+}
+
 export interface LessonProgress {
   /** Local calendar date the lesson was first read to the end. */
   firstReadAt: string;

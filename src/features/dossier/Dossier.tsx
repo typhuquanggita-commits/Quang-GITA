@@ -20,6 +20,7 @@ import React, { useMemo } from 'react';
 import { QUESTION_BY_ID } from '../../data/bank.ts';
 import { skillLabel, sectionLabel } from '../../data/blueprint.ts';
 import { LESSONS, lessonFor } from '../../data/lesson-index.ts';
+import { packetProgress, type SheetKind } from '../../engine/packets.ts';
 import {
   buildDossier,
   gapToTarget,
@@ -80,8 +81,20 @@ export function Dossier({ navigate }: { navigate(route: Route): void }): React.R
         lessonsRead: Object.keys(state.lessons),
         lessonsTotal: LESSONS.length,
         teachableSkills: new Set(LESSONS.map((l) => l.skill)),
+        packetsStarted: Object.keys(state.packets),
+        packetsConsolidated: Object.entries(state.packets)
+          .filter(([, record]) => packetProgress(record.done as SheetKind[]).next === null)
+          .map(([skill]) => skill),
       }),
-    [state.attempts, state.profile.targetScore, state.profile.testDate, state.activity, activeDays28, state.lessons],
+    [
+      state.attempts,
+      state.profile.targetScore,
+      state.profile.testDate,
+      state.activity,
+      activeDays28,
+      state.lessons,
+      state.packets,
+    ],
   );
 
   const gap = gapToTarget(dossier);
@@ -274,8 +287,8 @@ export function Dossier({ navigate }: { navigate(route: Route): void }): React.R
           title={vi ? 'Kỹ năng' : 'Skills'}
           subtitle={
             vi
-              ? `Chỉ hiện kỹ năng đã có đủ dữ liệu. ${dossier.lessonsRead}/${dossier.lessonsTotal} bài giảng đã đọc.`
-              : `Only skills with enough data are shown. ${dossier.lessonsRead} of ${dossier.lessonsTotal} lessons read.`
+              ? `Chỉ hiện kỹ năng đã có đủ dữ liệu. ${dossier.lessonsRead}/${dossier.lessonsTotal} bài giảng đã đọc · ${dossier.packetsConsolidated}/${dossier.packetsStarted} bộ phiếu đã ôn chắc trên số đã bắt đầu.`
+              : `Only skills with enough data are shown. ${dossier.lessonsRead} of ${dossier.lessonsTotal} lessons read · ${dossier.packetsConsolidated} of ${dossier.packetsStarted} started packets consolidated.`
           }
         >
           <MasteryBars

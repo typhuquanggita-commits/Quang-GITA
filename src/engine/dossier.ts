@@ -83,6 +83,9 @@ export interface Dossier {
   activeDays28: number;
   lessonsRead: number;
   lessonsTotal: number;
+  /** Topic packets started and finished, so consolidation is visible. */
+  packetsStarted: number;
+  packetsConsolidated: number;
   /* ---- The route ---- */
   pathway: PathwayStep[];
   /** Signals with no evidence behind them yet, named so the reader knows. */
@@ -115,6 +118,10 @@ export interface DossierInput {
   lessonsTotal: number;
   /** Skills the lesson library covers, so a route only names ones it can teach. */
   teachableSkills: ReadonlySet<SkillId>;
+  /** Skills whose topic packet has been worked at all. */
+  packetsStarted: readonly SkillId[];
+  /** Skills whose topic packet is finished — every sheet, including the guide. */
+  packetsConsolidated: readonly SkillId[];
   today?: string;
 }
 
@@ -166,12 +173,15 @@ export function buildDossier(input: DossierInput): Dossier {
     activeDays28: input.activeDays28,
     lessonsRead: input.lessonsRead.length,
     lessonsTotal: input.lessonsTotal,
+    packetsStarted: input.packetsStarted.length,
+    packetsConsolidated: input.packetsConsolidated.length,
     pathway: buildPathway({
       records,
       scores,
       skills,
       errors,
       teachableSkills: input.teachableSkills,
+      consolidated: new Set(input.packetsConsolidated),
       daysToTest: input.testDate ? daysBetween(today, input.testDate) : null,
       activeDays28: input.activeDays28,
     }),
@@ -253,6 +263,7 @@ function buildPathway(input: {
   skills: SkillLine[];
   errors: Record<ErrorKind, number>;
   teachableSkills: ReadonlySet<SkillId>;
+  consolidated: ReadonlySet<SkillId>;
   daysToTest: number | null;
   activeDays28: number;
 }): PathwayStep[] {
@@ -317,7 +328,9 @@ function buildPathway(input: {
 
   /* ---- Teach, then drill ---- */
   const weak = input.skills.filter((s) => s.mastery < WEAK_AT);
-  const untaught = weak.filter((s) => !s.taught && input.teachableSkills.has(s.skill));
+  const untaught = weak.filter(
+    (s) => !s.taught && input.teachableSkills.has(s.skill) && !input.consolidated.has(s.skill),
+  );
 
   for (const [index, skill] of untaught.slice(0, 3).entries()) {
     steps.push({
@@ -331,7 +344,26 @@ function buildPathway(input: {
     });
   }
 
-  const taughtButWeak = weak.filter((s) => s.taught);
+  /*
+   * A skill that is still weak after its whole packet was worked is not a
+   * teaching gap and not a practice gap. Sending the learner back through the
+   * same seven sheets would repeat what has already failed, so it is named as
+   * something to raise with a person instead.
+   */
+  const stillWeakAfterPacket = weak.filter((s) => input.consolidated.has(s.skill));
+  for (const [index, skill] of stillWeakAfterPacket.slice(0, 2).entries()) {
+    steps.push({
+      kind: 'review',
+      order: 15 + index,
+      skill: skill.skill,
+      title: `Take ${skill.skill} to a teacher`,
+      titleVi: `Mang ${skill.skill} tới hỏi giáo viên`,
+      because: `The whole packet has been worked and mastery is still ${Math.round(skill.mastery * 100)}% across ${skill.attempted} responses. Repeating the same seven sheets would repeat what has already not worked.`,
+      becauseVi: `Đã làm hết bộ phiếu mà mức thành thạo vẫn ${Math.round(skill.mastery * 100)}% trên ${skill.attempted} câu. Lặp lại đúng bảy phiếu đó là lặp lại điều đã không hiệu quả.`,
+    });
+  }
+
+  const taughtButWeak = weak.filter((s) => s.taught && !input.consolidated.has(s.skill));
   for (const [index, skill] of taughtButWeak.slice(0, 3).entries()) {
     steps.push({
       kind: 'drill',

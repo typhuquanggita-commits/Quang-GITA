@@ -104,6 +104,7 @@ function initialState(): AppState {
     bookmarks: [],
     activity: {},
     lessons: {},
+    packets: {},
     org: seedOrg('', ''),
     gita: {
       // A new learner starts at tier 1, whose habits are the only two that
@@ -146,6 +147,8 @@ export type Action =
   | { type: 'bookmark/toggle'; questionId: string }
   | { type: 'activity/log'; seconds: number }
   | { type: 'lesson/read'; skill: SkillId }
+  | { type: 'packet/sheetDone'; skill: SkillId; sheet: string }
+  | { type: 'packet/reset'; skill: SkillId }
   | { type: 'org/seed'; name: string; email: string }
   | { type: 'org/switchAccount'; accountId: string }
   | { type: 'org/upsertAccount'; account: Account }
@@ -345,6 +348,25 @@ export function reducer(state: AppState, action: Action): AppState {
         ...state,
         activity: { ...state.activity, [today]: (state.activity[today] ?? 0) + action.seconds },
       };
+    }
+
+    case 'packet/sheetDone': {
+      const today = isoDate();
+      const prior = state.packets[action.skill];
+      // A set, not a list: finishing the same sheet twice is a revisit, not a
+      // second completion, and must not inflate progress.
+      const done = prior?.done.includes(action.sheet)
+        ? prior.done
+        : [...(prior?.done ?? []), action.sheet];
+      return {
+        ...state,
+        packets: { ...state.packets, [action.skill]: { done, lastWorkedAt: today } },
+      };
+    }
+
+    case 'packet/reset': {
+      const { [action.skill]: _removed, ...rest } = state.packets;
+      return { ...state, packets: rest };
     }
 
     case 'lesson/read': {
@@ -671,6 +693,7 @@ function loadInitial(): AppState {
     gita: { ...base.gita, ...((migrated as Partial<AppState>).gita ?? {}) },
     autopilot: { ...base.autopilot, ...((migrated as Partial<AppState>).autopilot ?? {}) },
     lessons: { ...base.lessons, ...((migrated as Partial<AppState>).lessons ?? {}) },
+    packets: { ...base.packets, ...((migrated as Partial<AppState>).packets ?? {}) },
     version: SCHEMA_VERSION,
   };
 }
@@ -765,6 +788,7 @@ export function StoreProvider({ children }: { children: React.ReactNode }): Reac
         gita: { ...base.gita, ...((migrated as Partial<AppState>).gita ?? {}) },
         autopilot: { ...base.autopilot, ...((migrated as Partial<AppState>).autopilot ?? {}) },
     lessons: { ...base.lessons, ...((migrated as Partial<AppState>).lessons ?? {}) },
+    packets: { ...base.packets, ...((migrated as Partial<AppState>).packets ?? {}) },
         version: SCHEMA_VERSION,
       } as AppState,
     });
