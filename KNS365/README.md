@@ -22,10 +22,11 @@
 | Mạch năng lực | **8 mạch × 3 chuyên đề/mạch/khối** |
 | Giai đoạn phát triển | 4 giai đoạn: Khởi Mầm → Bén Rễ → Vươn Cành → Cất Cánh |
 | Hệ đai năng lực | 6 đai GITA: Trắng → Vàng → Xanh Lá → Xanh Dương → Đỏ → Kim |
+| Giáo trình online | **7 phần/chuyên đề** · phiếu KNS **5 lớp chiều sâu** · ~88 phút online + 360 phút trực tiếp |
 
 ---
 
-## 2. Bản đồ hệ sinh thái (10 phân hệ)
+## 2. Bản đồ hệ sinh thái (11 phân hệ)
 
 ```
                          ┌──────────────────────────────┐
@@ -54,6 +55,15 @@
                      ┌──────────────────────────────────────┐
                      │ VẬN HÀNH – TRIỂN KHAI (09)           │
                      │ Chuẩn lớp · Đào tạo GV · Kiểm định   │
+                     └───────────────┬──────────────────────┘
+                                     ▼
+                     ┌──────────────────────────────────────┐
+                     │ GIÁO TRÌNH ONLINE (10)               │
+                     │ 288 chuyên đề × 7 phần               │
+                     │ Kiến thức · Trải nghiệm · Thực hành  │
+                     │ Tích luỹ · Vận dụng · Đánh giá ·      │
+                     │ Audio chuyên sâu                     │
+                     │ + Phiếu KNS 5 lớp chiều sâu          │
                      └──────────────────────────────────────┘
 ```
 
@@ -104,6 +114,14 @@
 
 ### 📔 09 – VẬN HÀNH & TRIỂN KHAI
 [Sổ tay triển khai trường học](09-VAN-HANH-TRIEN-KHAI/SO-TAY-TRIEN-KHAI.md) · [Chuẩn đào tạo & cấp chứng nhận Huấn luyện viên GITA](09-VAN-HANH-TRIEN-KHAI/CHUAN-HUAN-LUYEN-VIEN-GITA.md)
+
+### 💻 10 – GIÁO TRÌNH ONLINE *(số hoá 288 chuyên đề)*
+| Tệp | Nội dung |
+|---|---|
+| [01-KIEN-TRUC-GIAO-TRINH-ONLINE.md](10-GIAO-TRINH-ONLINE/01-KIEN-TRUC-GIAO-TRINH-ONLINE.md) | Kiến trúc **7 phần**: Kiến thức · Trải nghiệm · Nhiệm vụ thực hành · Bài học tích luỹ · Vận dụng thực tiễn · Đánh giá bài học · **Audio bài giảng chuyên sâu**; mô hình học kết hợp; chuẩn nền tảng số & an toàn dữ liệu trẻ em |
+| [02-CHUAN-PHIEU-KNS-5-PHAN.md](10-GIAO-TRINH-ONLINE/02-CHUAN-PHIEU-KNS-5-PHAN.md) | Chuẩn **phiếu kỹ năng sống 5 lớp chiều sâu**: Nhận biết → Thấu hiểu → Thực hành → Soi chiếu → Chuyển hoá |
+| [03-MAU-CHUYEN-DE-ONLINE-7-PHAN.md](10-GIAO-TRINH-ONLINE/03-MAU-CHUYEN-DE-ONLINE-7-PHAN.md) | Mẫu biên soạn để số hoá bất kỳ chuyên đề nào trong 288 chuyên đề |
+| [04-VI-DU-CHUYEN-DE-ONLINE-HOAN-CHINH.md](10-GIAO-TRINH-ONLINE/04-VI-DU-CHUYEN-DE-ONLINE-HOAN-CHINH.md) | Ví dụ mẫu hoàn chỉnh: `K06-M1-02 · Bảng Đòn Bẩy 20/80` – đủ 7 phần, kịch bản audio 16 phút |
 
 ---
 
