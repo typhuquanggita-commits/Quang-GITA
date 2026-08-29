@@ -15,6 +15,7 @@ import {
   studentRankForLevel,
 } from '../../lib/permissions';
 import { useAppState, useDispatch } from '../../store/AppStore';
+import type { RoleFamily, RoleSpec } from '../../data/roles';
 import type { Permission, Role } from '../../types';
 import { Badge, Button, Card, CardHeader, Select, Stat } from '../../components/ui/primitives';
 import { IconCheck, IconClose } from '../../components/layout/icons';
@@ -36,6 +37,12 @@ export function RolesPage() {
   const roleSpec = ROLE_BY_ID.get(state.profile.role);
   const level = highestLevel(state);
   const suggestedRank = studentRankForLevel(level);
+
+  const families = useMemo(() => {
+    const map = new Map<RoleFamily, RoleSpec[]>();
+    for (const role of ROLES) map.set(role.family, [...(map.get(role.family) ?? []), role]);
+    return [...map.entries()];
+  }, []);
 
   const groups = useMemo(() => {
     const map = new Map<string, typeof PERMISSIONS>();
@@ -79,10 +86,14 @@ export function RolesPage() {
               value={state.profile.role}
               onChange={(e) => dispatch({ type: 'profile/update', patch: { role: e.target.value as Role, rank: 1 } })}
             >
-              {ROLES.map((role) => (
-                <option key={role.id} value={role.id}>
-                  {role.name}
-                </option>
+              {families.map(([family, roles]) => (
+                <optgroup key={family} label={family}>
+                  {roles.map((role) => (
+                    <option key={role.id} value={role.id}>
+                      {role.name}
+                    </option>
+                  ))}
+                </optgroup>
               ))}
             </Select>
           </label>
@@ -169,27 +180,34 @@ export function RolesPage() {
           title="Bậc thang vai trò"
           subtitle="Quyền cộng dồn theo bậc: lên bậc chỉ thêm quyền, không bao giờ mất quyền đã có."
         />
-        <div className="grid gap-4 lg:grid-cols-2">
-          {ROLES.map((role) => (
-            <div key={role.id} className="rounded-xl border border-line bg-surface-2 p-4">
-              <div className="flex items-center justify-between gap-2">
-                <h3 className="text-sm font-semibold text-fg">{role.name}</h3>
-                {role.id === state.profile.role && <Badge tone="brand">Bạn</Badge>}
-              </div>
-              <p className="mt-1 text-xs text-fg-muted">{role.summary}</p>
-              <ol className="mt-3 space-y-2">
-                {role.ranks.map((rank) => (
-                  <li key={rank.rank} className="text-xs">
-                    <span className="font-medium text-fg">
-                      Bậc {rank.rank} — {rank.name}
-                    </span>
-                    <p className="text-fg-muted">{rank.note}</p>
-                  </li>
-                ))}
-              </ol>
+        {families.map(([family, roles]) => (
+          <section key={family} className="mt-5 first:mt-0">
+            <h3 className="mb-3 text-xs font-semibold uppercase tracking-wide text-fg-subtle">
+              Họ vai trò: {family}
+            </h3>
+            <div className="grid gap-4 lg:grid-cols-2">
+              {roles.map((role) => (
+                <div key={role.id} className="rounded-xl border border-line bg-surface-2 p-4">
+                  <div className="flex items-center justify-between gap-2">
+                    <h4 className="text-sm font-semibold text-fg">{role.name}</h4>
+                    {role.id === state.profile.role && <Badge tone="brand">Bạn</Badge>}
+                  </div>
+                  <p className="mt-1 text-xs text-fg-muted">{role.summary}</p>
+                  <ol className="mt-3 space-y-2">
+                    {role.ranks.map((rank) => (
+                      <li key={rank.rank} className="text-xs">
+                        <span className="font-medium text-fg">
+                          Bậc {rank.rank} — {rank.name}
+                        </span>
+                        <p className="text-fg-muted">{rank.note}</p>
+                      </li>
+                    ))}
+                  </ol>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
+          </section>
+        ))}
       </Card>
 
       <Card>
@@ -198,13 +216,15 @@ export function RolesPage() {
           subtitle="Số trong ô là bậc tối thiểu của vai trò đó được cấp quyền. Dấu gạch nghĩa là không bao giờ."
         />
         <div className="overflow-x-auto">
-          <table className="w-full min-w-[52rem] border-collapse text-left text-sm">
+          <table className="w-full min-w-[74rem] border-collapse text-left text-sm">
             <thead>
               <tr className="border-b border-line text-xs uppercase tracking-wide text-fg-subtle">
                 <th scope="col" className="px-2 py-2">Quyền</th>
                 {ROLES.map((role) => (
                   <th key={role.id} scope="col" className="px-2 py-2 text-center">
-                    {role.name}
+                    <abbr title={role.name} className="no-underline">
+                      {role.short}
+                    </abbr>
                   </th>
                 ))}
                 <th scope="col" className="px-2 py-2 text-center">Bạn</th>

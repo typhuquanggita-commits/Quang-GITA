@@ -34,9 +34,27 @@ function readDraft(worksheetId: string): WorksheetRun | null {
   try {
     const raw = sessionStorage.getItem(DRAFT_PREFIX + worksheetId);
     if (!raw) return null;
-    const parsed = JSON.parse(raw) as WorksheetRun;
-    if (typeof parsed?.partIndex !== 'number' || typeof parsed.responses !== 'object') return null;
-    return parsed;
+    const parsed = JSON.parse(raw) as WorksheetRun | null;
+    // Ban nhap co the do phien ban cu de lai hoac bi sua tay. Kiem tra du de
+    // mot ban nhap hong khong lam trang man hinh giua buoi lam bai.
+    if (
+      !parsed ||
+      typeof parsed !== 'object' ||
+      typeof parsed.partIndex !== 'number' ||
+      typeof parsed.questionIndex !== 'number' ||
+      typeof parsed.responses !== 'object' ||
+      parsed.responses === null ||
+      Array.isArray(parsed.responses)
+    ) {
+      return null;
+    }
+    return {
+      ...parsed,
+      partIndex: Math.max(0, Math.trunc(parsed.partIndex)),
+      questionIndex: Math.max(0, Math.trunc(parsed.questionIndex)),
+      startedAt: typeof parsed.startedAt === 'number' ? parsed.startedAt : Date.now(),
+      partStartedAt: typeof parsed.partStartedAt === 'number' ? parsed.partStartedAt : Date.now(),
+    };
   } catch {
     return null;
   }

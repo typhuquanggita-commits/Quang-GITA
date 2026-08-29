@@ -168,7 +168,18 @@ describe('cấp chuyên môn', () => {
     expect(practitionerLevelOf('teacher', 3)).toBe('P3');
     expect(practitionerLevelOf('headTeacher', 1)).toBe('P4');
     expect(practitionerLevelOf('headTeacher', 2)).toBe('P5');
-    expect(practitionerLevelOf('admin', 1)).toBe('P5');
+    expect(practitionerLevelOf('coach', 1)).toBe('P3');
+    expect(practitionerLevelOf('coach', 3)).toBe('P3');
+    expect(practitionerLevelOf('consultant', 1)).toBe('P4');
+    expect(practitionerLevelOf('consultant', 2)).toBe('P4');
+    expect(practitionerLevelOf('productAdmin', 1)).toBe('P5');
+    expect(practitionerLevelOf('superAdmin', 1)).toBe('P5');
+  });
+
+  it('vai trò vận hành thuần túy không được xếp bậc chuyên môn', () => {
+    // Xep bua mot bac cho admin he thong se lam thang do nang luc mat y nghia.
+    expect(practitionerLevelOf('sysAdmin', 2)).toBeNull();
+    expect(practitionerLevelOf('executive', 1)).toBeNull();
   });
 });
 

@@ -476,10 +476,24 @@ export function practitionerLevelOf(role: Role, rank: number): PractitionerLevel
       return 'P1';
     case 'teacher':
       return rank >= 3 ? 'P3' : 'P2';
+    case 'coach':
+      // Coach nam tron tren nac P3 — nac so huu tru Inspirits. Bac trong vai
+      // tro la do sau tren nac do, khong phai nac khac.
+      return 'P3';
+    case 'consultant':
+      // Nghe tu van chinh la nac P4 "Co van lo trinh": lam viec voi muc tieu
+      // va voi gia dinh, khong phai voi tung cau hoi.
+      return 'P4';
     case 'headTeacher':
       return rank >= 2 ? 'P5' : 'P4';
-    case 'admin':
+    case 'productAdmin':
+    case 'superAdmin':
       return 'P5';
+    case 'sysAdmin':
+    case 'executive':
+      // Hai vai tro van hanh nay khong dung lop, nen khong nam tren truc nang
+      // luc chuyen mon. Xep bua mot bac o day se lam thang do mat y nghia.
+      return null;
     default:
       return null;
   }

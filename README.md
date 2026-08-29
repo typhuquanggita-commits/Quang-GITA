@@ -25,7 +25,7 @@ Tư duy định lượng (Toán, 50 câu / 75 phút), Tư duy định tính (Ng�
 | **Hồ sơ học viên** | Lưu nguyên vẹn từng lượt làm, phân loại lỗi kiến thức / kỹ năng / chiến thuật, sinh lộ trình cá nhân hóa |
 | **Phân tích năng lực** | Mô hình Rasch (IRT 1 tham số), điểm dự báo, chỉ số sẵn sàng 5 trụ cột, hiệu chuẩn mức tự tin |
 | **Lộ trình** | Giai đoạn theo ngày thi, mốc theo tuần, thứ tự ưu tiên chuyên đề |
-| **Phân quyền** | 5 vai trò × cấp bậc, 22 quyền, cộng thêm cổng mở tính năng theo cấp độ học viên |
+| **Phân quyền** | 10 vai trò × cấp bậc, 30 quyền, tách đặc quyền theo nguyên tắc tối thiểu, cộng cổng mở tính năng theo cấp độ học viên |
 | **Gia sư AI** | Tùy chọn (Gemini): giảng lại cách khác, gợi ý không lộ đáp án, ra câu tương tự, tư vấn kế hoạch tuần |
 | **Tài liệu bổ trợ** | 11 tài liệu trong `docs/GITA/`, phân theo vai trò và theo tầng, dùng chung nguồn dữ liệu với sản phẩm |
 
@@ -45,7 +45,7 @@ Các lệnh khác:
 
 ```bash
 npm run verify       # typecheck + toàn bộ test + build
-npm run test         # 175 bài test
+npm run test         # 186 bài test
 npm run build        # dựng bản phát hành vào dist/
 npm run preview      # xem thử bản đã dựng
 npm run catalogue    # xuất 2000 phiếu + 2000 nhiệm vụ + 30 phiếu hướng dẫn ra catalogue/*.csv
@@ -174,13 +174,30 @@ Ba tầng quyết định một người làm được gì: **vai trò** → **c
 **cấp độ học**. Quyền cộng dồn theo bậc, nên lên bậc chỉ thêm quyền chứ không bao giờ
 mất quyền đã có — điều này được một bài test canh giữ.
 
+Mười vai trò chia làm hai họ. **Họ chuyên môn** đứng trực tiếp với người học:
+
 | Vai trò | Bậc | Tóm tắt |
 |---|---|---|
 | Học viên | 3 | Tính năng mở dần theo cấp độ: cấp 3 mở thi thử theo phần và Gia sư AI, cấp 5 mở đề full, cấp 6 mở nhảy cấp |
 | Trợ giảng | 2 | Theo sát một lớp, nhận xét bài làm; bậc 2 được giao nhiệm vụ |
-| Giáo viên | 3 | Giao nhiệm vụ, duyệt lên cấp, biên soạn câu hỏi; bậc 3 duyệt chuyển giai đoạn và quản lý lớp |
+| Giáo viên | 3 | Giao nhiệm vụ, duyệt lên cấp, biên soạn câu hỏi; bậc 3 duyệt chuyển giai đoạn, quản lý lớp và dẫn buổi huấn luyện |
+| Coach GITA | 3 | Mục tiêu, động lực, thói quen, kỷ luật hành động; bậc 2 kê lộ trình cá nhân, bậc 3 duyệt lên cấp |
+| Tư vấn | 2 | Đọc hồ sơ năng lực và đề xuất lộ trình cho gia đình; bậc 2 lập đề xuất và xem báo cáo toàn hệ thống |
 | Chủ nhiệm chuyên môn | 2 | Thẩm định nội dung, theo dõi mọi lớp; bậc 2 sửa khung chương trình và phát hành |
-| Quản trị hệ thống | 1 | Toàn quyền kỹ thuật |
+
+**Họ vận hành** lo hệ thống, và được tách ra theo nguyên tắc đặc quyền tối thiểu:
+
+| Vai trò | Bậc | Có | Cố ý **không** có |
+|---|---|---|---|
+| Admin sản phẩm | 2 | Nội dung, khung chương trình, phát hành | Tạo tài khoản, cấu hình phân quyền |
+| Admin hệ thống | 2 | Tài khoản, nhật ký, ma trận phân quyền | Sửa nội dung, duyệt tiến độ |
+| Giám đốc điều hành | 1 | Mọi báo cáo và nhật ký, **chỉ đọc** | Mọi quyền ghi |
+| Super Admin | 1 | Toàn quyền, gồm thao tác nguy hiểm | — |
+
+Gộp bốn vai này thành một "quản trị viên" là cách nhanh nhất để tạo ra một tài khoản mà
+khi bị chiếm đoạt thì mất tất cả. Tách ra thì **người giữ chìa khóa không đồng thời là
+người chấm bài**, và **người sửa nội dung không tự cấp được quyền cho mình**. Bốn bất
+biến này đều có test canh giữ.
 
 Màn hình **Phân quyền** in ra đúng ma trận mà mã nguồn đang dùng, nên tài liệu không
 bao giờ lệch khỏi hành vi thật. Chi tiết: [`docs/PHAN-QUYEN.md`](docs/PHAN-QUYEN.md).
@@ -206,7 +223,7 @@ src/
   store/                 Reducer + context, mọi thay đổi trạng thái đi qua đây
   components/            Hệ thống thiết kế, biểu đồ SVG tự vẽ, khung ứng dụng
   features/              Từng màn hình
-tests/                   175 bài test cho toàn bộ tầng lib, data và giao diện
+tests/                   186 bài test cho toàn bộ tầng lib, data và giao diện
 ```
 
 Nguyên tắc: **mọi quy tắc nghiệp vụ nằm trong `lib/` dưới dạng hàm thuần** — chấm
@@ -230,9 +247,14 @@ Chi tiết: [`docs/KIEN-TRUC.md`](docs/KIEN-TRUC.md).
 
 - **TypeScript nghiêm ngặt** — bật `strict`, `noUncheckedIndexedAccess`,
   `exactOptionalPropertyTypes`, `noUnusedLocals`. Không có `any` trong mã sản phẩm.
-- **175 bài test** phủ chấm điểm, chuẩn hóa đáp án, mô hình Rasch, ôn tập ngắt quãng,
+- **186 bài test** phủ chấm điểm, chuẩn hóa đáp án, mô hình Rasch, ôn tập ngắt quãng,
   di trú dữ liệu, phân quyền, tiến độ, tính toàn vẹn ngân hàng câu hỏi và khung
   chương trình, mô thức GITA và quy tắc 20/80, cộng với test giao diện đầu-cuối.
+- **Bảo mật ở những chỗ client vẫn phải làm đúng** — khóa Gemini bị loại khỏi tệp
+  xuất; tệp nhập vào bị chuẩn hóa vai trò, cấp bậc, giai đoạn và cài đặt; đổi vai trò
+  không để lại cấp bậc cũ; nội dung đề bài được khử HTML rồi mới mở lại đúng danh
+  sách thẻ định dạng cho phép. Bốn điều này đều có test riêng, xem
+  [`docs/PHAN-QUYEN.md`](docs/PHAN-QUYEN.md).
 - **Kiểm tra nội dung** — một câu hỏi sai đáp án gây hại hơn mọi lỗi kỹ thuật khác,
   nên nó bị chặn ngay ở tầng test: đáp án phải nằm trong phương án, phương án không
   trùng nhau, lời giải đủ dài, bẫy không được chú thích cho đáp án đúng.

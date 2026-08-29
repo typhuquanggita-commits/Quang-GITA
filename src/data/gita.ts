@@ -577,14 +577,14 @@ export const PRACTITIONER_LEVELS: readonly PractitionerLevel[] = [
     order: 3,
     name: 'Huấn luyện viên GITA',
     englishName: 'Coach',
-    roles: ['teacher'],
+    roles: ['coach', 'teacher'],
     ownsPillar: 'inspirits',
     competencies: [
       'Dẫn một cuộc trò chuyện huấn luyện: hỏi trước khi giảng.',
       'Xử lý được vấn đề động lực và thói quen, không chỉ vấn đề kiến thức.',
       'Đọc được hiệu chuẩn mức tự tin và làm việc với lỗ hổng "không biết là mình không biết".',
     ],
-    authority: ['class.approveStage', 'class.manage', 'content.review'],
+    authority: ['coach.session', 'coach.habit', 'coach.plan'],
     evidence: [
       'Dẫn 10 học viên qua ít nhất một lần chuyển tầng hấp thu.',
       'Hồ sơ 5 ca huấn luyện có biên bản trước — trong — sau.',
@@ -601,14 +601,14 @@ export const PRACTITIONER_LEVELS: readonly PractitionerLevel[] = [
     order: 4,
     name: 'Cố vấn lộ trình',
     englishName: 'Mentor / Consultant',
-    roles: ['headTeacher'],
+    roles: ['headTeacher', 'consultant'],
     ownsPillar: 'goal',
     competencies: [
       'Thiết kế lộ trình cá nhân từ ngày bắt đầu tới ngày thi cho hồ sơ phức tạp.',
       'Làm việc được với gia đình: chuyển kỳ vọng của cha mẹ thành hỗ trợ cụ thể.',
       'Đánh giá và cải thiện chất lượng của cả một đội ngũ chuyên môn.',
     ],
-    authority: ['class.viewAll', 'content.review'],
+    authority: ['consult.profile', 'consult.roadmap', 'coach.plan', 'class.viewAll'],
     evidence: [
       'Cố vấn thành công 3 hồ sơ có ràng buộc đặc biệt: thời gian ngắn, nền yếu, hoặc mục tiêu rất cao.',
       'Kèm cặp ít nhất 2 người lên cấp P2 hoặc P3.',
@@ -625,7 +625,7 @@ export const PRACTITIONER_LEVELS: readonly PractitionerLevel[] = [
     order: 5,
     name: 'Kiến trúc sư chương trình',
     englishName: 'Program Architect',
-    roles: ['headTeacher', 'admin'],
+    roles: ['headTeacher', 'productAdmin', 'superAdmin'],
     ownsPillar: 'goal',
     competencies: [
       'Thiết kế và hiệu chỉnh khung chương trình: cấp độ, ngưỡng KPI, phân bổ phiếu.',

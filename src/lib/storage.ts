@@ -1,5 +1,7 @@
 import { DEFAULT_TARGET_SCORE, STORAGE_KEY, STORAGE_VERSION } from '../config';
-import type { PersistedState, Settings } from '../types';
+import { STAGES } from '../data/curriculum';
+import { ROLE_BY_ID } from '../data/roles';
+import type { PersistedState, Profile, Role, ScienceSubject, Settings } from '../types';
 
 /**
  * Luu tru cuc bo, co danh phien ban.
@@ -101,8 +103,8 @@ function reconcile(raw: Record<string, unknown>): PersistedState {
 
   return {
     version: STORAGE_VERSION,
-    profile: { ...base.profile, ...(candidate.profile ?? {}) },
-    settings: sanitizeSettings({ ...base.settings, ...(candidate.settings ?? {}) }),
+    profile: sanitizeProfile({ ...base.profile, ...(isRecord(candidate.profile) ? candidate.profile : {}) }),
+    settings: sanitizeSettings({ ...base.settings, ...(isRecord(candidate.settings) ? candidate.settings : {}) }),
     attempts: Array.isArray(candidate.attempts) ? candidate.attempts : [],
     results: Array.isArray(candidate.results) ? candidate.results : [],
     srs: isRecord(candidate.srs) ? candidate.srs : {},
@@ -111,8 +113,8 @@ function reconcile(raw: Record<string, unknown>): PersistedState {
     seen: isRecord(candidate.seen) ? candidate.seen : {},
     worksheets: isRecord(candidate.worksheets) ? candidate.worksheets : {},
     tracks: isRecord(candidate.tracks) ? candidate.tracks : {},
-    stage: typeof candidate.stage === 'number' ? candidate.stage : 1,
-    xp: typeof candidate.xp === 'number' ? candidate.xp : 0,
+    stage: clampInt(candidate.stage, 1, STAGES.length, 1),
+    xp: clampInt(candidate.xp, 0, Number.MAX_SAFE_INTEGER, 0),
     habits: isRecord(candidate.habits) ? candidate.habits : {},
     worksheetRuns: Array.isArray(candidate.worksheetRuns) ? candidate.worksheetRuns : [],
   };
@@ -122,17 +124,68 @@ function isRecord<T>(value: unknown): value is Record<string, T> {
   return typeof value === 'object' && value !== null && !Array.isArray(value);
 }
 
+const THEMES: readonly Settings['theme'][] = ['system', 'light', 'dark'];
+const SCIENCE_SUBJECTS: readonly ScienceSubject[] = ['physics', 'chemistry', 'history', 'geography', 'english'];
+
+/**
+ * Chuan hoa cai dat.
+ *
+ * Moi truong duoc ep ve dung kieu va dung mien gia tri. Ly do: tep nhap vao co
+ * the do nguoi dung sua tay hoac do mot phien ban khac sinh ra — mot gia tri
+ * la o day se lan ra khap giao dien va rat kho lan nguoc ve nguon.
+ */
 export function sanitizeSettings(settings: Settings): Settings {
   return {
-    ...settings,
     targetScore: clamp(Number(settings.targetScore) || DEFAULT_TARGET_SCORE, 50, 150),
+    examDate: typeof settings.examDate === 'string' && settings.examDate.length <= 32 ? settings.examDate : null,
+    scienceSubject: SCIENCE_SUBJECTS.includes(settings.scienceSubject) ? settings.scienceSubject : 'english',
+    theme: THEMES.includes(settings.theme) ? settings.theme : 'system',
     fontScale: clamp(Number(settings.fontScale) || 1, 0.875, 1.375),
+    reducedMotion: settings.reducedMotion === true,
     dailyGoal: Math.round(clamp(Number(settings.dailyGoal) || 30, 5, 300)),
+    soundCues: settings.soundCues === true,
+    // Khoa API chi la chuoi; cat do dai de mot tep hong khong bom day localStorage.
+    aiApiKey: typeof settings.aiApiKey === 'string' ? settings.aiApiKey.trim().slice(0, 200) : '',
   };
+}
+
+/**
+ * Chuan hoa ho so.
+ *
+ * Quan trong nhat la VAI TRO: mot vai tro khong co trong danh muc se lam
+ * `permissionsOf` tra ve tap rong, tuc nguoi dung bi khoa khoi chinh du lieu
+ * cua minh ma khong hieu vi sao. Gia tri la duoc dua ve `student`.
+ */
+export function sanitizeProfile(profile: Profile): Profile {
+  const role: Role = ROLE_BY_ID.has(profile.role) ? profile.role : 'student';
+  const maxRank = ROLE_BY_ID.get(role)?.ranks.length ?? 1;
+  return {
+    // Khong trim o day: o nhap ten la input duoc dieu khien, trim moi lan go
+    // se lam nguoi dung khong danh duoc dau cach giua ten.
+    displayName: text(profile.displayName, 60),
+    createdAt: Number.isFinite(profile.createdAt) ? Number(profile.createdAt) : Date.now(),
+    role,
+    rank: clampInt(profile.rank, 1, maxRank, 1),
+    classId: text(profile.classId, 40),
+  };
+}
+
+/** Ten hien thi — o nhap co the de trong, nhung man hinh thi khong. */
+export function displayNameOf(profile: Profile): string {
+  return profile.displayName.trim() || 'Bạn';
+}
+
+function text(value: unknown, max: number): string {
+  return typeof value === 'string' ? value.slice(0, max) : '';
 }
 
 function clamp(value: number, min: number, max: number): number {
   return Math.min(max, Math.max(min, value));
+}
+
+function clampInt(value: unknown, min: number, max: number, fallback: number): number {
+  const n = Math.round(Number(value));
+  return Number.isFinite(n) ? clamp(n, min, max) : fallback;
 }
 
 export function loadState(storage: Storage | undefined = safeStorage()): PersistedState {
@@ -172,8 +225,20 @@ export function safeStorage(): Storage | undefined {
   }
 }
 
+/**
+ * Xuat du lieu hoc tap ra JSON.
+ *
+ * KHOA API KHONG BAO GIO DUOC XUAT. Tep nay duoc nguoi hoc sao luu, gui cho
+ * giao vien, dinh kem qua chat — mot khoa Gemini nam trong do la ro ri thong
+ * tin xac thuc that, va nguoi xuat gan nhu chac chan khong biet no o trong do.
+ */
 export function exportState(state: PersistedState): string {
-  return JSON.stringify({ ...state, exportedAt: new Date().toISOString() }, null, 2);
+  const { aiApiKey: _secret, ...settings } = state.settings;
+  return JSON.stringify(
+    { ...state, settings, exportedAt: new Date().toISOString() },
+    null,
+    2,
+  );
 }
 
 export function importState(json: string): PersistedState {

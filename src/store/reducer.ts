@@ -6,7 +6,7 @@ import { updateMastery } from '../lib/analytics';
 import { dayKey } from '../lib/format';
 import { gradeAttempt, isCorrect } from '../lib/scoring';
 import { createCard, schedule, type Grade } from '../lib/srs';
-import { sanitizeSettings } from '../lib/storage';
+import { sanitizeProfile, sanitizeSettings } from '../lib/storage';
 import type {
   Attempt,
   Confidence,
@@ -69,7 +69,9 @@ export function reducer(state: PersistedState, action: Action): PersistedState {
       return { ...state, settings: sanitizeSettings({ ...state.settings, ...action.patch }) };
 
     case 'profile/update':
-      return { ...state, profile: { ...state.profile, ...action.patch } };
+      // Di qua sanitize de doi vai tro khong bao gio de lai cap bac cao hon so
+      // bac ma vai tro moi co — do la mot ke ho leo thang quyen kin dao.
+      return { ...state, profile: sanitizeProfile({ ...state.profile, ...action.patch }) };
 
     case 'attempt/start': {
       // Bai dang lam do dang truoc do duoc danh dau bo, khong xoa —

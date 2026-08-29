@@ -1,4 +1,5 @@
 import { useMemo } from 'react';
+import { displayNameOf } from '../../lib/storage';
 import { MAX_TOTAL_SCORE, SECTION_BY_ID } from '../../config';
 import { STAGES } from '../../data/curriculum';
 import { topicName } from '../../data/topics';
@@ -81,7 +82,7 @@ export function DashboardPage() {
       <header className="flex flex-wrap items-end justify-between gap-4">
         <div>
           <h1 className="text-2xl font-semibold tracking-tight">
-            Chào {state.profile.displayName}
+            Chào {displayNameOf(state.profile)}
           </h1>
           <p className="mt-1.5 text-sm text-fg-muted">
             {plan.daysLeft === null

@@ -196,8 +196,24 @@ export interface Settings {
   aiApiKey: string;
 }
 
-/** Vai tro trong he thong. Xem src/data/roles.ts de biet ma tran quyen. */
-export type Role = 'student' | 'mentor' | 'teacher' | 'headTeacher' | 'admin';
+/**
+ * Vai tro trong he thong. Xem src/data/roles.ts de biet ma tran quyen.
+ *
+ * Hai nhom: nhom CHUYEN MON dung truc tiep voi nguoi hoc (hoc vien, tro giang,
+ * giao vien, coach, tu van, chu nhiem) va nhom VAN HANH lo he thong (admin san
+ * pham, admin he thong, giam doc dieu hanh, super admin).
+ */
+export type Role =
+  | 'student'
+  | 'mentor'
+  | 'teacher'
+  | 'coach'
+  | 'consultant'
+  | 'headTeacher'
+  | 'productAdmin'
+  | 'sysAdmin'
+  | 'executive'
+  | 'superAdmin';
 
 /** Ma quyen. Danh muc day du nam trong src/data/roles.ts. */
 export type Permission =
@@ -219,10 +235,18 @@ export type Permission =
   | 'content.review'
   | 'content.curriculum'
   | 'content.publish'
+  | 'coach.session'
+  | 'coach.habit'
+  | 'coach.plan'
+  | 'consult.profile'
+  | 'consult.roadmap'
+  | 'report.org'
+  | 'report.quality'
   | 'system.users'
   | 'system.roles'
   | 'system.export'
-  | 'system.audit';
+  | 'system.audit'
+  | 'system.danger';
 
 export interface Profile {
   displayName: string;

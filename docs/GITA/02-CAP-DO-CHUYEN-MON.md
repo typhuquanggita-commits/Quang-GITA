@@ -11,9 +11,9 @@
 |---|---|---|---|---|
 | **P1** | Trợ giảng GITA | Trợ giảng | Action | H1, H2 |
 | **P2** | Giáo viên GITA | Giáo viên bậc 1–2 | Talent | H2, H3 |
-| **P3** | Huấn luyện viên GITA | Giáo viên bậc 3 | Inspirits | H3, H4, H5 |
-| **P4** | Cố vấn lộ trình | Chủ nhiệm chuyên môn bậc 1 | Goal | H1, H4, H5 |
-| **P5** | Kiến trúc sư chương trình | Chủ nhiệm bậc 2 / Quản trị | Goal | H4, H5 |
+| **P3** | Huấn luyện viên GITA | Coach GITA · Giáo viên bậc 3 | Inspirits | H3, H4, H5 |
+| **P4** | Cố vấn lộ trình | Tư vấn · Chủ nhiệm chuyên môn bậc 1 | Goal | H1, H4, H5 |
+| **P5** | Kiến trúc sư chương trình | Chủ nhiệm bậc 2 · Admin sản phẩm · Super Admin | Goal | H4, H5 |
 
 Ánh xạ sang vai trò được định nghĩa ở `practitionerLevelOf()` trong
 [`src/lib/gita.ts`](../../src/lib/gita.ts), và một bài test canh giữ rằng mọi
@@ -58,7 +58,7 @@ rà tuần.
 
 Nhầm ba loại này là nguyên nhân phổ biến nhất khiến việc dạy thêm không có tác dụng.
 
-**Quyền trong hệ thống.** Giao nhiệm vụ · Duyệt lên cấp · Biên soạn câu hỏi.
+**Quyền trong hệ thống.** Giao nhiệm vụ · Duyệt lên cấp · Biên soạn câu hỏi · Thiết kế thói quen.
 
 **Bằng chứng công nhận**
 - Dẫn trọn một giai đoạn cho một lớp, KPI lớp đạt từ 80%.
@@ -87,7 +87,7 @@ mà giảng bài không giải quyết được.
 4. *Điều gì sẽ khiến em không làm được điều đó?* — lường trước rào cản.
 5. *Em muốn ai biết về cam kết này?* — tạo trách nhiệm xã hội.
 
-**Quyền trong hệ thống.** Duyệt lên giai đoạn · Quản lý lớp · Thẩm định nội dung.
+**Quyền trong hệ thống.** Ghi buổi huấn luyện · Thiết kế thói quen · Kê lộ trình cá nhân.
 
 **Bằng chứng công nhận**
 - Dẫn 10 học viên qua ít nhất một lần chuyển tầng hấp thu.
@@ -116,7 +116,7 @@ không phù hợp.
 3. **Điểm cao nhưng chững**: hầu như luôn là vấn đề Inspirits hoặc chiến thuật,
    không phải kiến thức. Chuyển sang P3 nếu là vấn đề động lực.
 
-**Quyền trong hệ thống.** Xem mọi lớp · Thẩm định nội dung.
+**Quyền trong hệ thống.** Xem hồ sơ tư vấn · Đề xuất lộ trình · Kê lộ trình cá nhân · Xem mọi lớp.
 
 **Bằng chứng công nhận**
 - Cố vấn thành công 3 hồ sơ có ràng buộc đặc biệt.
@@ -163,3 +163,7 @@ dung ba vòng · Báo cáo hiệu chỉnh chương trình.
 3. **Cấp cao không thay thế cấp thấp.** Một P5 giỏi thiết kế chương trình không
    nhất thiết giỏi ngồi cạnh một bạn H1. Phân công theo *phục vụ tầng nào*, không
    theo *cấp ai cao hơn*.
+4. **Không phải vai trò nào cũng nằm trên trục này.** Admin hệ thống và Giám đốc
+   điều hành không đứng lớp, nên họ không có bậc P nào cả. Xếp bừa một bậc cho
+   người không làm chuyên môn sẽ làm cả thang đo mất ý nghĩa — và đó là cách
+   nhanh nhất để một chứng chỉ nội bộ trở thành hình thức.

@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react';
+import { displayNameOf } from '../../lib/storage';
 import { MAX_TOTAL_SCORE } from '../../config';
 import { cn } from '../../lib/cn';
 import { formatDateTime, formatNumber, formatPercent, formatScore } from '../../lib/format';
@@ -52,7 +53,7 @@ export function ProfilePage() {
     <div className="space-y-8">
       <header className="max-w-3xl">
         <Badge tone="brand">Hồ sơ học viên</Badge>
-        <h1 className="mt-3 text-3xl font-semibold tracking-tight">{state.profile.displayName}</h1>
+        <h1 className="mt-3 text-3xl font-semibold tracking-tight">{displayNameOf(state.profile)}</h1>
         <p className="mt-2 text-sm leading-relaxed text-fg-muted">
           Mọi lượt làm phiếu và bài thi thử đều được lưu lại đầy đủ — đề, đáp án bạn đã chọn, thời gian từng câu.
           Nhờ vậy bạn mở lại bộ giải đề của một phiếu đã làm ba tháng trước và vẫn thấy đúng bộ câu, đúng phương án

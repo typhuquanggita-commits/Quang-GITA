@@ -269,7 +269,8 @@ export function SettingsPage() {
         </div>
         <p className="mt-3 text-xs text-fg-subtle">
           Tệp xuất ra chứa toàn bộ tiến độ. Hãy dùng nó để chuyển máy hoặc sao lưu trước khi xóa dữ liệu trình
-          duyệt.
+          duyệt. <strong className="text-fg">Khóa Gemini không bao giờ nằm trong tệp xuất</strong> — tệp này
+          thường được gửi cho giáo viên hoặc lưu trên đám mây, nên nó phải an toàn khi chia sẻ.
         </p>
       </Card>
 

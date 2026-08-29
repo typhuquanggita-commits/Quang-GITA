@@ -17,9 +17,67 @@ describe('phân quyền', () => {
     }
   });
 
-  it('quản trị hệ thống có toàn bộ quyền', () => {
-    const admin = permissionsOf({ role: 'admin', rank: 1, level: 1 });
+  it('Super Admin có toàn bộ quyền', () => {
+    const admin = permissionsOf({ role: 'superAdmin', rank: 1, level: 1 });
     expect(admin.size).toBe(PERMISSIONS.length);
+  });
+
+  it('không vai trò nào ngoài Super Admin giữ toàn quyền', () => {
+    // Mot tai khoan bi chiem doat khong duoc phep keo theo ca he thong.
+    for (const role of ROLES) {
+      if (role.id === 'superAdmin') continue;
+      const all = permissionsOf({ role: role.id, rank: role.ranks.length, level: 6 });
+      expect(all.size, role.id).toBeLessThan(PERMISSIONS.length);
+    }
+  });
+
+  it('quyền nguy hiểm chỉ thuộc về Super Admin', () => {
+    const owners = ROLES.filter((role) =>
+      can({ role: role.id, rank: role.ranks.length, level: 6 }, 'system.danger'),
+    ).map((r) => r.id);
+    expect(owners).toEqual(['superAdmin']);
+  });
+
+  it('admin hệ thống không sửa được nội dung, admin sản phẩm không tạo được tài khoản', () => {
+    // Tach nhiem vu: nguoi giu chia khoa khong dong thoi la nguoi cham bai.
+    const sys = { role: 'sysAdmin' as const, rank: maxRank('sysAdmin'), level: 6 };
+    expect(can(sys, 'content.author')).toBe(false);
+    expect(can(sys, 'content.curriculum')).toBe(false);
+    expect(can(sys, 'class.approveLevel')).toBe(false);
+    expect(can(sys, 'system.users')).toBe(true);
+
+    const product = { role: 'productAdmin' as const, rank: maxRank('productAdmin'), level: 6 };
+    expect(can(product, 'system.users')).toBe(false);
+    expect(can(product, 'system.roles')).toBe(false);
+    expect(can(product, 'content.publish')).toBe(true);
+  });
+
+  it('giám đốc điều hành chỉ đọc, không có bất kỳ quyền ghi nào', () => {
+    const readOnly: readonly Permission[] = [
+      'class.viewAll',
+      'report.org',
+      'report.quality',
+      'system.audit',
+      'system.export',
+    ];
+    const granted = permissionsOf({ role: 'executive', rank: 1, level: 6 });
+    expect([...granted].sort()).toEqual([...readOnly].sort());
+  });
+
+  it('tư vấn đọc được hồ sơ nhưng không chấm bài, không sửa nội dung', () => {
+    const actor = { role: 'consultant' as const, rank: maxRank('consultant'), level: 6 };
+    expect(can(actor, 'consult.profile')).toBe(true);
+    expect(can(actor, 'consult.roadmap')).toBe(true);
+    expect(can(actor, 'class.comment')).toBe(false);
+    expect(can(actor, 'content.author')).toBe(false);
+  });
+
+  it('coach giữ trục thói quen và huấn luyện, không giữ trục nội dung', () => {
+    const actor = { role: 'coach' as const, rank: maxRank('coach'), level: 6 };
+    expect(can(actor, 'coach.session')).toBe(true);
+    expect(can(actor, 'coach.habit')).toBe(true);
+    expect(can(actor, 'coach.plan')).toBe(true);
+    expect(can(actor, 'content.curriculum')).toBe(false);
   });
 
   it('học viên mới chưa mở đề full 3 phần', () => {

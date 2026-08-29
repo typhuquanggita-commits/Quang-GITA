@@ -1,4 +1,5 @@
 import { describe, expect, it, beforeEach } from 'vitest';
+import { PERMISSIONS } from '../src/data/roles';
 import { render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { App } from '../src/App';
@@ -60,10 +61,10 @@ describe('phân quyền trên giao diện', () => {
     expect(await screen.findByText('Đề full 3 phần chưa mở')).toBeInTheDocument();
   });
 
-  it('đổi vai trò sang quản trị thì mở đủ mọi quyền', async () => {
+  it('đổi vai trò sang Super Admin thì mở đủ mọi quyền', async () => {
     const user = userEvent.setup();
     const state = createInitialState();
-    state.profile = { ...state.profile, role: 'admin', rank: 1 };
+    state.profile = { ...state.profile, role: 'superAdmin', rank: 1 };
     renderApp(state);
 
     window.location.hash = '#/roles';
@@ -71,7 +72,10 @@ describe('phân quyền trên giao diện', () => {
 
     const heading = await screen.findByRole('heading', { level: 1, name: 'Phân quyền hệ thống' });
     expect(heading).toBeInTheDocument();
-    expect(screen.getByText('22/22')).toBeInTheDocument();
+    // Lay tu danh muc quyen thay vi go cung con so — them quyen moi thi test
+    // van dung thay vi hong mot cach vo nghia.
+    const total = PERMISSIONS.length;
+    expect(screen.getByText(`${total}/${total}`)).toBeInTheDocument();
     await user.click(screen.getByRole('link', { name: /Thi thử/ }));
   });
 });
