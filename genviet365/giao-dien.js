@@ -1,486 +1,476 @@
-/* GEN VIỆT 365 · lớp dựng giao diện.
-   Không thư viện ngoài. Đọc GV từ du-lieu.js rồi dựng ra HTML.
-   Quy tắc: mọi chuỗi đi vào HTML đều qua e() — kể cả chuỗi của chính mình,
-   vì kho sẽ được người khác biên tập trong ba mươi năm tới. */
+/* ═══════════════════════════════════════════════════════════════
+   GEN VIỆT 365 · LỚP GIAO DIỆN
+   Không thư viện ngoài. Đọc GV.NHOM và GV.MAN rồi dựng ra ứng dụng.
+   Quy tắc: mọi chuỗi đi vào HTML đều qua e() — kể cả chuỗi của chính
+   mình, vì kho sẽ được người khác biên tập trong ba mươi năm tới.
+   Thêm nội dung thì sửa man-hinh.js; chỉ sửa tệp này khi cần một LOẠI
+   khối chưa từng có.
+   ═══════════════════════════════════════════════════════════════ */
 'use strict';
 (function () {
   var G = window.GV;
 
+  /* ── tiện ích ────────────────────────────────────── */
   function e(s) {
     return String(s == null ? '' : s)
       .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
       .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
   }
+  /* Đậm bằng *…* — đánh dấu tối thiểu, cố ý không mở rộng thêm.
+     Chạy SAU e() nên nội dung vẫn được thoát đầy đủ. */
+  function dm(s) { return e(s).replace(/\*([^*]+)\*/g, '<strong>$1</strong>'); }
   function ds(a, f) { return (a || []).map(f).join(''); }
+  function lay(o) { return o.tu ? G.TU[o.tu] : o.ds; }
 
-  /* ── mào đầu ─────────────────────────────────────── */
-  function mao() {
+  /* ── các loại khối ───────────────────────────────── */
+  var K = {};
+
+  K.van = function (o) { return '<p class="van">' + dm(o.tu ? G.TU[o.tu] : o.t) + '</p>'; };
+
+  K.muc = function (o) { return '<h3 class="muc-con">' + e(o.t) + '</h3>'; };
+
+  K.trich = function (o) {
+    return '<blockquote class="trich">' + e(o.t) +
+      (o.n ? '<cite>' + e(o.n) + '</cite>' : '') + '</blockquote>';
+  };
+
+  K.so = function (o) {
+    return '<div class="so">' + ds(lay(o), function (r) {
+      return '<div><b>' + e(r.b) + '</b><span>' + e(r.t) + '</span></div>';
+    }) + '</div>';
+  };
+
+  K.bang = function (o) {
+    return '<div class="cuon"><table><thead><tr>' +
+      ds(o.cot, function (c) { return '<th>' + e(c) + '</th>'; }) +
+      '</tr></thead><tbody>' + ds(o.tu ? G.TU[o.tu] : o.hang, function (h) {
+        return '<tr>' + h.map(function (o2, i) {
+          return i === 0 ? '<td><strong>' + e(o2) + '</strong></td>'
+                         : '<td class="mo">' + e(o2) + '</td>';
+        }).join('') + '</tr>';
+      }) + '</tbody></table></div>';
+  };
+
+  K.ds = function (o) {
+    var t = o.so ? 'ol' : 'ul';
+    return '<' + t + ' class="ds' + (o.so ? ' ds-so' : '') + '">' +
+      ds(lay(o), function (x) { return '<li>' + dm(x) + '</li>'; }) + '</' + t + '>';
+  };
+
+  K.the = function (o) {
+    var d = o.tu ? G.TU[o.tu] : o;
+    if (typeof d === 'string') d = { t: o.t, n: d };
+    return '<div class="the">' + (d.t ? '<h3>' + e(d.t) + '</h3>' : '') +
+      (d.n ? '<p>' + dm(d.n) + '</p>' : '') +
+      (d.vi ? '<p class="vi">' + dm(d.vi) + '</p>' : '') + '</div>';
+  };
+
+  K.luoi = function (o) {
+    return '<div class="luoi ' + (o.c === 3 ? 'ba' : 'hai') + '">' + ds(lay(o), function (x) {
+      return '<div class="the"><h3>' + e(x.t) + '</h3><p>' + dm(x.n) + '</p>' +
+        (x.vi ? '<p class="vi">' + dm(x.vi) + '</p>' : '') + '</div>';
+    }) + '</div>';
+  };
+
+  K.ly = function (o) {
+    return '<div class="luoi hai">' + ds(lay(o), function (x) {
+      return '<div class="the ly"><div class="stt">' + x.so + '</div>' +
+        '<div><h3>' + e(x.t) + '</h3><p>' + e(x.n) + '</p>' +
+        '<p class="vi">' + e(x.v) + '</p></div></div>';
+    }) + '</div>';
+  };
+
+  K.thap = function (o) {
+    return '<div class="thap">' + ds(lay(o), function (x) {
+      return '<div class="tang"><div class="ma">' + e(x.ma) + '</div>' +
+        '<div class="noi"><div class="hang"><h3>' + e(x.t) + '</h3>' +
+        '<span class="toc">' + e(x.toc) + '</span></div>' +
+        '<div class="giu">' + e(x.giu) + '</div>' +
+        '<div class="ai">Người giữ: ' + e(x.ai) + '</div>' +
+        '<div class="chi">' + e(x.chi) + '</div></div></div>';
+    }) + '</div>';
+  };
+
+  K.bac = function (o) {
+    return '<div class="luoi hai">' + ds(lay(o), function (x) {
+      return '<article class="bac" style="--c:' + e(x.mau) + '">' +
+        '<div class="top"><div class="hang"><span class="m">' + e(x.ma) + '</span>' +
+          '<h3>' + e(x.t) + '</h3><span class="tuoi">' + e(x.tuoi) + '</span></div>' +
+          '<div class="hoi">' + e(x.hoi) + '</div></div><dl>' +
+        '<div><dt>Đích của bậc</dt><dd class="manh">' + e(x.dich) + '</dd></div>' +
+        '<div><dt>Trục trọng tâm</dt><dd>' + e(x.truc) + '</dd></div>' +
+        '<div><dt>Bằng chứng</dt><dd>' + e(x.bang) + '</dd></div>' +
+        '<div><dt>Cổng nghiệm thu</dt><dd>' + e(x.cong) + '</dd></div>' +
+        '<div><dt>Tối thiểu · người chịu trách nhiệm</dt><dd>' + e(x.toi) + ' · ' + e(x.ai) + '</dd></div>' +
+        '</dl></article>';
+    }) + '</div>';
+  };
+
+  K.tru = function (o) {
+    return '<div class="luoi hai">' + ds(lay(o), function (x) {
+      return '<div class="tru" style="--c:' + e(x.mau) + '">' +
+        '<div class="dinh"><div class="k">' + e(x.k) + '</div><h3>' + e(x.t) + '</h3>' +
+        '<div class="hoi">' + e(x.hoi) + '</div></div><ul>' +
+        ds(x.truc, function (t) {
+          return '<li><span class="n">' + t.so + '</span><div><b>' + e(t.t) + '</b>' +
+            '<span>' + e(t.do) + ' · ' + e(t.bang) + ' · ' + e(t.ky) + '</span></div></li>';
+        }) + '</ul></div>';
+    }) + '</div>';
+  };
+
+  K.thang = function (o) {
+    return '<div class="thang">' + ds(lay(o), function (x) {
+      return '<div class="nac"><div class="m">' + x.m + '</div><div class="noi">' +
+        '<b>' + e(x.t) + '</b><span>Quyền điều hành: ' + e(x.quyen) + '</span>' +
+        '<span>Mức hỗ trợ: ' + e(x.ho) + '</span><span>Bằng chứng: ' + e(x.bang) + '</span>' +
+        '</div></div>';
+    }) + '</div>';
+  };
+
+  K.pc = function (o) {
+    return '<div class="luoi hai">' + ds(lay(o), function (x) {
+      return '<div class="pc" style="--c:' + e(x.mau) + '">' +
+        '<div class="dinh"><span class="k">' + e(x.k) + '</span><h3>' + e(x.t) + '</h3>' +
+        '<span class="tru-n">trụ ' + e(x.tru) + '</span></div>' +
+        '<div class="than"><p>' + e(x.n) + '</p>' +
+        '<div class="ren"><b>Rèn ở đâu</b>' + e(x.ren) + '</div>' +
+        '<div class="do"><b>Đo bằng gì</b>' + e(x.do) + '</div></div></div>';
+    }) + '</div>';
+  };
+
+  K.nhip = function (o) {
+    return '<div class="the khung-nhip">' + ds(lay(o), function (x) {
+      return '<div class="nhip"><div class="cot">' + e(x.chu) + '</div>' +
+        '<div class="noi"><b>' + e(x.viec) + '</b>' +
+        '<span class="ai">' + e(x.ai) + ' → ' + e(x.ra) + '</span>' +
+        '<span class="vi">' + e(x.vi) + '</span></div></div>';
+    }) + '</div>';
+  };
+
+  /* nhịp rút gọn: hai cột, không có dòng ý đồ */
+  K.nhip2 = function (o) {
+    return '<div class="the khung-nhip">' + ds(lay(o), function (x) {
+      return '<div class="nhip"><div class="cot">' + e(x.a) + '</div>' +
+        '<div class="noi"><b>' + e(x.b) + '</b></div></div>';
+    }) + '</div>';
+  };
+
+  K.lich = function (o) {
+    return '<div class="lich">' + ds(lay(o), function (x) {
+      return '<div class="muc-l"><span class="p">' + e(x.p) + '</span>' +
+        '<div class="noi"><b>' + e(x.m) + '</b>' +
+        (x.ai ? '<span class="ai">' + e(x.ai) + '</span>' : '') +
+        '<span class="y">' + e(x.y) + '</span></div></div>';
+    }) + '</div>';
+  };
+
+  K.buoc = function (o) {
+    return '<div class="vong">' + ds(lay(o), function (x) {
+      return '<div class="buoc"><span class="v">' + e(x.v) + '</span>' +
+        '<div class="noi"><h3>' + e(x.t) + '</h3>' +
+        '<span class="dk">Điều kiện: ' + e(x.dk) + '</span>' +
+        '<span class="duoc">' + e(x.duoc) + '</span></div>' +
+        '<span class="bmap">' + e(x.bac) + '</span></div>';
+    }) + '</div>';
+  };
+
+  K.mau = function (o) {
+    return '<div class="bang">' + ds(lay(o), function (x) {
+      return '<div class="o" style="--c:' + e(x.mau) + '"><div class="dai"></div><div class="noi">' +
+        '<b>' + e(x.b) + '</b><p>' + e(x.n) + '</p>' +
+        '<p class="dam">' + e(x.lam) + '</p>' +
+        '<div class="cham">Nhịp chạm: ' + e(x.cham) + '</div></div></div>';
+    }) + '</div>';
+  };
+
+  K.mt = function (o) {
+    return '<div class="luoi mot">' + ds(lay(o), function (x) {
+      return '<div class="mt" style="--c:' + e(x.mau) + '">' +
+        '<div class="hang"><span class="m">' + e(x.ma) + '</span><h3>' + e(x.t) + '</h3>' +
+        '<span class="truc">' + e(x.truc) + '</span></div>' +
+        '<p>' + e(x.n) + '</p>' +
+        '<div class="lam"><strong>Làm gì:</strong> ' + e(x.lam) + '</div>' +
+        '<div class="xn">Ai xác nhận: ' + e(x.xn) + '</div>' +
+        '<div class="vi">' + e(x.vi) + '</div></div>';
+    }) + '</div>';
+  };
+
+  K.rui = function (o) {
+    return '<div class="the">' + ds(lay(o), function (x) {
+      return '<div class="rui"><div class="cham"></div><div>' +
+        '<h3>' + e(x.t) + '</h3><span class="dh">Dấu hiệu: ' + e(x.dau) + '</span>' +
+        '<div class="phanh"><b>Phanh</b>' + e(x.phanh) + '</div></div></div>';
+    }) + '</div>';
+  };
+
+  K.chang = function (o) {
+    return '<div class="tram">' + ds(lay(o), function (x) {
+      return '<article class="chang" style="--c:' + e(x.mau) + '">' +
+        '<div class="top"><div class="hang"><span class="m">' + e(x.ma) + '</span>' +
+        '<h3>' + e(x.t) + '</h3><span class="nam">' + e(x.nam) + '</span></div>' +
+        '<div class="hoi">' + e(x.hoi) + '</div></div><div class="than-c">' +
+        '<div><h4>Việc lõi</h4><ul>' + ds(x.lam, function (y) { return '<li>' + e(y) + '</li>'; }) + '</ul></div>' +
+        '<div><h4>Đích</h4><div class="dich">' + ds(x.dich, function (y) { return '<span>' + e(y) + '</span>'; }) + '</div></div>' +
+        '<div><h4>Cổng sang chặng sau</h4><div class="cong">' + e(x.cong) + '</div></div>' +
+        '<div class="rui-c">Rủi ro chính: ' + e(x.rui) + '</div></div></article>';
+    }) + '</div>';
+  };
+
+  K.luat = function (o) {
+    return '<div class="the"><ol class="luat">' + ds(lay(o), function (x) {
+      return '<li><span>' + dm(x) + '</span></li>';
+    }) + '</ol></div>';
+  };
+
+  /* một điều luật đứng riêng, cỡ lớn */
+  K.luat1 = function (o) {
+    var d = G.TU[o.tu];
+    return '<div class="the luat1"><h3>' + e(d.t) + '</h3><p>' + dm(d.n) + '</p></div>';
+  };
+
+  K.ma = function (o) {
+    return '<div class="cuon-ma"><pre><code>' + e(G.TU[o.tu]) + '</code></pre></div>';
+  };
+
+  /* lộ trình bậc — mỗi bậc một khối chu kỳ */
+  K.ck = function (o) {
+    return ds(lay(o), function (b) {
+      return '<div class="lt" style="--c:' + e(b.mau) + '">' +
+        '<div class="lt-dau"><span class="m">' + e(b.bac) + '</span><h3>' + e(b.t) + '</h3>' +
+        '<span class="tong">' + e(b.tong) + '</span></div>' +
+        '<div class="lt-than">' + ds(b.ck, function (c) {
+          return '<div class="cky"><div class="cky-dau"><span class="n">' + e(c.n) + '</span>' +
+            '<b>' + e(c.t) + '</b><span class="ng">' + e(c.ngay) + '</span></div>' +
+            '<ul>' + ds(c.viec, function (v) { return '<li>' + e(v) + '</li>'; }) + '</ul>' +
+            '<div class="ra"><b>Đầu ra</b>' + e(c.ra) + '</div>' +
+            '<div class="cg"><b>Cổng</b>' + e(c.cong) + '</div></div>';
+        }) + '</div></div>';
+    });
+  };
+
+  /* khoá nền — tám buổi */
+  K.buoi = function (o) {
+    return '<div class="luoi hai">' + ds(lay(o), function (x) {
+      return '<div class="the buoi"><div class="b-dau"><span class="n">Buổi ' + x.b + '</span>' +
+        '<h3>' + e(x.t) + '</h3></div>' +
+        '<div class="dich-b">' + e(x.dich) + '</div>' +
+        '<div class="d"><b>Trên lớp</b>' + e(x.lop) + '</div>' +
+        '<div class="d"><b>Về nhà</b>' + e(x.nha) + '</div>' +
+        '<div class="d kiem"><b>Kiểm bằng</b>' + e(x.kiem) + '</div></div>';
+    }) + '</div>';
+  };
+
+  /* 24 chuyên đề — bốn nhóm sáu */
+  K.cd = function (o) {
+    return '<div class="luoi hai">' + ds(lay(o), function (n) {
+      return '<div class="cdn" style="--c:' + e(n.mau) + '"><h3>' + e(n.nhom) + '</h3><ol>' +
+        ds(n.ds, function (x) {
+          return '<li><b>' + e(x.t) + '</b><span>' + e(x.lam) + '</span></li>';
+        }) + '</ol></div>';
+    }) + '</div>';
+  };
+
+  K.trai = function (o) {
+    return '<div class="luoi hai">' + ds(lay(o), function (x) {
+      return '<div class="the trai"><div class="b-dau"><h3>' + e(x.t) + '</h3>' +
+        '<span class="n">' + e(x.ngay) + '</span></div>' +
+        '<div class="meta">' + e(x.ai) + ' · ' + e(x.quy) + ' · trục ' + e(x.truc) + '</div>' +
+        '<p class="dich-b">' + e(x.dich) + '</p>' +
+        '<b class="nhan-n">Sáu khoảnh khắc bắt buộc</b><ol class="ds ds-so">' +
+        ds(x.khoanh, function (y) { return '<li>' + e(y) + '</li>'; }) + '</ol></div>';
+    }) + '</div>';
+  };
+
+  K.bm = function (o) {
+    return '<div class="luoi hai">' + ds(lay(o), function (x) {
+      return '<div class="the bm"><div class="b-dau"><span class="n">' + e(x.m) + '</span>' +
+        '<h3>' + e(x.t) + '</h3></div>' +
+        '<div class="ai-bm">' + e(x.ai) + '</div>' +
+        '<div class="tr">' + e(x.truong) + '</div></div>';
+    }) + '</div>';
+  };
+
+  /* bảng điểm cổng — sáu cột với thanh tỷ trọng */
+  K.diem = function (o) {
+    var t = lay(o), tong = 0, i;
+    for (i = 0; i < t.length; i++) tong += t[i].d;
+    return '<div class="the diem">' + ds(t, function (x) {
+      return '<div class="hang-d"><span class="t">' + e(x.t) + '</span>' +
+        '<span class="d">' + x.d + '</span>' +
+        '<div class="thanh"><i style="width:' + (x.d / tong * 100) + '%"></i></div>' +
+        '<span class="n">' + e(x.n) + '</span></div>';
+    }) + '<div class="tong-d">Tổng ' + tong + ' điểm · ngưỡng đạt 85</div></div>';
+  };
+
+  K.quy = function (o) {
+    return '<div class="luoi hai">' + ds(lay(o), function (x) {
+      return '<div class="quy" style="--c:' + e(x.mau) + '">' +
+        '<div class="q-dau"><span class="q">' + e(x.q) + '</span>' +
+        '<b>' + e(x.chu) + '</b><span class="tu">' + e(x.tuan) + '</span></div><ul class="moc">' +
+        ds(x.moc, function (m) {
+          return '<li><span class="t">' + e(m.t) + '</span><span>' + e(m.v) + '</span></li>';
+        }) + '</ul></div>';
+    }) + '</div>';
+  };
+
+  K.nam = function (o) {
+    return '<div class="luoi hai">' + ds(lay(o), function (x) {
+      return '<div class="quy" style="--c:' + e(x.mau) + '">' +
+        '<div class="q-dau"><span class="q">' + e(x.q) + '</span><b>' + e(x.chu) + '</b></div>' +
+        '<ul class="viec">' + ds(x.viec, function (v) { return '<li>' + e(v) + '</li>'; }) + '</ul>' +
+        '<div class="dich">' + ds(x.so, function (s) { return '<span>' + e(s) + '</span>'; }) + '</div></div>';
+    }) + '</div>';
+  };
+
+  K.vai = function (o) {
+    return '<div class="luoi hai">' + ds(lay(o), function (n) {
+      return '<div class="the"><span class="nhan">' + e(n.nhom) + '</span><ul class="vai">' +
+        ds(n.ds, function (v) {
+          return '<li><b>' + e(v.v) + '</b>' +
+            (v.moi ? ' <span class="nhan nhat">mới</span>' : '') +
+            '<br><span>' + e(v.l) + '</span></li>';
+        }) + '</ul></div>';
+    }) + '</div>';
+  };
+
+  K.stmt = function (o) {
+    return ds(lay(o), function (x) {
+      return '<div class="mt st" style="--c:' + e(x.mau) + '">' +
+        '<div class="hang"><span class="m">' + e(x.m) + '</span><h3>' + e(x.t) + '</h3></div>' +
+        '<p>' + e(x.n) + '</p><div class="viec-mt">' +
+        ds(x.viec, function (v) {
+          return '<div class="v"><b>' + e(v.t) + '</b><span>' + e(v.v) + '</span></div>';
+        }) + '</div>' +
+        '<div class="xn">Ai xác nhận: ' + e(x.xn) + '</div>' +
+        '<div class="vi">' + e(x.bay) + '</div></div>';
+    });
+  };
+
+  K.stv = function (o) {
+    return '<div class="luoi hai">' + ds(lay(o), function (x) {
+      return '<div class="stv" style="--c:' + e(x.mau) + '"><h3>' + e(x.v) + '</h3>' +
+        '<div class="k"><b>Hằng tuần</b><ul>' + ds(x.tuan, function (y) { return '<li>' + e(y) + '</li>'; }) + '</ul></div>' +
+        '<div class="k"><b>Hằng tháng</b><ul>' + ds(x.thang, function (y) { return '<li>' + e(y) + '</li>'; }) + '</ul></div>' +
+        '<div class="k khong"><b>Không được làm</b><ul>' + ds(x.khong, function (y) { return '<li>' + e(y) + '</li>'; }) + '</ul></div>' +
+        '<div class="do-stv"><b>Đo bằng</b>' + e(x.do) + '</div></div>';
+    }) + '</div>';
+  };
+
+  K.moc = function (o) {
+    return '<div class="luoi ba">' + ds(lay(o), function (x) {
+      return '<div class="the"><span class="nhan">' + e(x.m) + '</span><h3 class="sau">' + e(x.t) + '</h3>' +
+        '<ul class="ds">' + ds(x.v, function (y) { return '<li>' + e(y) + '</li>'; }) + '</ul></div>';
+    }) + '</div>';
+  };
+
+  K.canh = function (o) {
+    return '<div class="the canh"><ul>' + ds(lay(o), function (x) {
+      return '<li>' + e(x) + '</li>';
+    }) + '</ul></div>';
+  };
+
+  /* ── dựng một màn ────────────────────────────────── */
+  function veMan(v) {
+    var m = G.MAN[v];
+    if (!m) return '<div class="the"><p>Chưa có màn ' + e(v) + '.</p></div>';
+    var html = '<div class="dau"><span class="k">' + e(m.k) + '</span><h2>' + e(m.t) + '</h2>' +
+      (m.p ? '<p>' + dm(m.p) + '</p>' : '') + '</div>';
+    html += ds(m.khoi, function (o) {
+      var f = K[o.k];
+      return f ? f(o) : '<p class="van">[thiếu loại khối: ' + e(o.k) + ']</p>';
+    });
+    return html;
+  }
+
+  /* danh sách phẳng để đi tới / lui */
+  var PHANG = [];
+  (G.NHOM || []).forEach(function (n) {
+    n.ds.forEach(function (i) { PHANG.push({ v: i.v, t: i.t, nhom: n.t }); });
+  });
+
+  function dieuHuong(v) {
+    var i = -1, k;
+    for (k = 0; k < PHANG.length; k++) if (PHANG[k].v === v) i = k;
+    var truoc = i > 0 ? PHANG[i - 1] : null;
+    var sau = i > -1 && i < PHANG.length - 1 ? PHANG[i + 1] : null;
+    return '<nav class="di" aria-label="Chuyển màn">' +
+      (truoc ? '<a href="#' + e(truoc.v) + '" class="tr"><span>← Trước</span><b>' + e(truoc.t) + '</b></a>' : '<span></span>') +
+      '<span class="dem">' + (i + 1) + ' / ' + PHANG.length + '</span>' +
+      (sau ? '<a href="#' + e(sau.v) + '" class="sa"><span>Sau →</span><b>' + e(sau.t) + '</b></a>' : '<span></span>') +
+      '</nav>';
+  }
+
+  /* ── vỏ ứng dụng ─────────────────────────────────── */
+  function veVo() {
     var m = G.META;
-    return '<header class="mao">' +
-      '<div class="day"><span>' + e(m.ten) + '</span><b>' + e(m.phu) + '</b>' +
-        '<b>Bản ' + e(m.ban) + '</b><b>' + e(m.tam) + '</b></div>' +
-      '<h1>Kiến trúc một hệ thống <em>tự tái tạo</em> nhân tài Việt</h1>' +
-      '<p class="dan">' + e(m.motCau) + '</p>' +
-      '<div class="so">' +
-        '<div><b>7</b><span>lớp kiến trúc</span></div>' +
-        '<div><b>6</b><span>bậc nhân tài</span></div>' +
-        '<div><b>12</b><span>trục năng lực</span></div>' +
-        '<div><b>5</b><span>hình thái huấn luyện</span></div>' +
-        '<div><b>30</b><span>năm · 6 chặng</span></div>' +
-      '</div></header>';
-  }
-
-  /* ── mục lục ─────────────────────────────────────── */
-  function mucLuc() {
-    return '<nav class="muc" aria-label="Mục lục">' + ds(G.MUC_LUC, function (o, i) {
-      return '<a href="#' + e(o.id) + '" data-di="' + e(o.id) + '">' +
-        '<span class="n">' + (i < 9 ? '0' : '') + (i + 1) + '</span>' +
-        '<span class="t">' + e(o.t) + '</span>' +
-        '<span class="p">' + e(o.p) + '</span></a>';
-    }) + '</nav>';
-  }
-
-  function dau(k, t, p) {
-    return '<div class="dau"><span class="k">' + e(k) + '</span><h2>' + e(t) + '</h2>' +
-      (p ? '<p>' + e(p) + '</p>' : '') + '</div>';
-  }
-
-  /* ── 1 · mở đầu ──────────────────────────────────── */
-  function moDau() {
-    return '<section id="mo-dau">' +
-      dau('Mở đầu', 'Hệ này là gì, và vì sao phải dựng nó bây giờ',
-        'Học viện GITA đã có một hệ giải pháp năm tầng chạy được trên gia đình thật. Cái còn thiếu là hệ chịu trách nhiệm về mười, hai mươi, ba mươi năm tiếp theo của những em giỏi nhất đi qua đó.') +
-      '<p>GEN VIỆT 365 không phải một chương trình học. Nó là <strong>hệ điều hành phát triển con người</strong> của Học viện: nơi một em bé bảy tuổi bước vào ở bậc Hạt, và ba mươi năm sau có thể ngồi trong Hội đồng Chuẩn quyết định điều gì là đúng cho thế hệ tiếp theo. Toàn bộ kiến trúc dưới đây phục vụ đúng một vòng lặp ấy — và phục vụ nó tới mức hệ thống không cần người sáng lập để chạy tiếp.</p>' +
-      '<blockquote class="trich">GITA không huấn luyện một hành vi đơn lẻ. GITA kiến tạo một hệ điều hành phát triển cá nhân.<cite>Hệ thống giải pháp GITA · Chương 13</cite></blockquote>' +
-      '<p>Bản thiết kế này lấy toàn bộ tài sản đã có làm nền: mô thức G–I–T–A, ma trận 8 × 8, năm tầng T1–T5, 1.000 kịch bản, 220 phác đồ, 550 tình huống, bộ sách <em>Nôi Nuôi Dưỡng Nhân Tài</em>, bộ quy chuẩn CLB Gen Việt và mã nguồn hệ thống v8.0. Không có gì bị bỏ đi. Thứ được thêm vào là <strong>chiều dọc thời gian</strong> — thứ mà một hệ xử lý ca, dù chặt tới đâu, cũng không tự có.</p>' +
-      '</section>';
-  }
-
-  /* ── 2 · định vị ─────────────────────────────────── */
-  function dinhVi() {
-    var d = G.DINH_VI;
-    return '<section id="dinh-vi">' +
-      dau('Định vị', 'Hai hệ, hai câu hỏi', d.ly) +
-      '<div class="cuon"><table><thead><tr>' +
-        '<th>Trục so sánh</th><th>GITA 365 — hệ giải pháp</th><th>GEN VIỆT 365 — hệ huấn luyện</th>' +
-      '</tr></thead><tbody>' + ds(d.bang, function (r) {
-        return '<tr><td><strong>' + e(r.truc) + '</strong></td>' +
-          '<td class="mo">' + e(r.gita) + '</td><td>' + e(r.gv) + '</td></tr>';
-      }) + '</tbody></table></div>' +
-      '<p>Hai hệ dùng chung một kho, chung một bảng phân quyền, chung một mô thức. Chúng khác nhau ở <strong>đơn vị công việc</strong>: một bên đóng ca, một bên không bao giờ đóng.</p>' +
-      '</section>';
-  }
-
-  /* ── 3 · nguyên lý ───────────────────────────────── */
-  function nguyenLy() {
-    return '<section id="nguyen-ly">' +
-      dau('Lớp L0', 'Bảy nguyên lý bất biến',
-        'Đây là lớp đổi chậm nhất. Mọi thứ khác trong ba mươi năm tới được phép đổi; bảy điều này chỉ đổi bởi Hội đồng Chuẩn, và mỗi lần đổi phải ghi lý do vào Sổ Chuẩn.') +
-      '<div class="luoi hai">' + ds(G.NGUYEN_LY, function (o) {
-        return '<div class="the ly">' +
-          '<div class="stt">' + o.so + '</div>' +
-          '<div><h3>' + e(o.t) + '</h3><p>' + e(o.n) + '</p>' +
-          '<p class="vi">' + e(o.v) + '</p></div></div>';
-      }) + '</div></section>';
-  }
-
-  /* ── 4 · kiến trúc ───────────────────────────────── */
-  function kienTruc() {
-    var td = G.TRUC_DOC;
-    return '<section id="kien-truc">' +
-      dau('Kiến trúc', 'Bảy lớp, xếp theo tốc độ đổi',
-        'Nguyên tắc duy nhất giữ cho một hệ thống ba mươi năm không rối: lớp đổi nhanh được phép phụ thuộc lớp đổi chậm, không bao giờ ngược lại.') +
-      '<div class="thap">' + ds(G.LOP, function (o) {
-        return '<div class="tang"><div class="ma">' + e(o.ma) + '</div>' +
-          '<div class="noi"><div class="hang"><h3>' + e(o.t) + '</h3>' +
-          '<span class="toc">' + e(o.toc) + '</span></div>' +
-          '<div class="giu">' + e(o.giu) + '</div>' +
-          '<div class="ai">Người giữ: ' + e(o.ai) + '</div>' +
-          '<div class="chi">' + e(o.chi) + '</div></div></div>';
-      }) + '</div>' +
-      '<div class="the"><span class="nhan">Trục dọc xuyên bảy lớp</span>' +
-        '<h3 style="margin-top:10px">' + e(td.t) + '</h3><p>' + e(td.n) + '</p>' +
-        '<div class="cuon" style="margin-top:14px"><table><thead><tr><th>Trường</th><th>Nội dung</th></tr></thead><tbody>' +
-        ds(td.truong, function (r) {
-          return '<tr><td><strong>' + e(r.k) + '</strong></td><td class="mo">' + e(r.v) + '</td></tr>';
-        }) + '</tbody></table></div></div>' +
-      '</section>';
-  }
-
-  /* ── 5 · sáu bậc ─────────────────────────────────── */
-  function bac() {
-    return '<section id="bac">' +
-      dau('Dòng chảy người', 'Sáu bậc nhân tài',
-        'Bậc không lên theo tuổi và không lên theo thời gian ở lại. Bậc lên theo bằng chứng, và bằng chứng ở mỗi bậc là một loại khác nhau.') +
-      '<div class="luoi hai">' + ds(G.BAC, function (o) {
-        return '<article class="bac" style="--c:' + e(o.mau) + '">' +
-          '<div class="top"><div class="hang"><span class="m">' + e(o.ma) + '</span>' +
-            '<h3>' + e(o.t) + '</h3><span class="tuoi">' + e(o.tuoi) + '</span></div>' +
-            '<div class="hoi">' + e(o.hoi) + '</div></div>' +
-          '<dl>' +
-            '<div><dt>Đích của bậc</dt><dd class="manh">' + e(o.dich) + '</dd></div>' +
-            '<div><dt>Trục trọng tâm</dt><dd>' + e(o.truc) + '</dd></div>' +
-            '<div><dt>Bằng chứng</dt><dd>' + e(o.bang) + '</dd></div>' +
-            '<div><dt>Cổng nghiệm thu</dt><dd>' + e(o.cong) + '</dd></div>' +
-            '<div><dt>Thời gian tối thiểu · người chịu trách nhiệm</dt><dd>' + e(o.toi) + ' · ' + e(o.ai) + '</dd></div>' +
-          '</dl></article>';
-      }) + '</div>' +
-      '<p><strong>Điểm gập của toàn bộ kiến trúc nằm ở bậc 5.</strong> Từ bậc này trở đi, sản phẩm của hệ thống trở thành lực lượng của chính hệ thống. Đó là lý do một tầm nhìn ba mươi năm khả thi: không phải vì tuyển được nhiều hơn, mà vì mỗi người bậc 5 rèn được người tiếp theo — và chỉ số quan trọng nhất của cả hệ là <em>hệ số tự tái tạo</em>.</p>' +
-      '</section>';
-  }
-
-  /* ── 6 · khung năng lực ──────────────────────────── */
-  function nangLuc() {
-    return '<section id="nang-luc">' +
-      dau('Lớp L1', 'Khung năng lực: bốn trụ × mười hai trục × năm mức',
-        'Mười hai trục lấy nguyên từ hệ KPI nâng cao Tầng 5, xếp lại dưới bốn trụ G–I–T–A để nhìn một dòng là biết nó thuộc miền nào.') +
-      '<div class="luoi hai">' + ds(G.TRU, function (o) {
-        return '<div class="tru" style="--c:' + e(o.mau) + '">' +
-          '<div class="dinh"><div class="k">' + e(o.k) + '</div>' +
-            '<h3>' + e(o.t) + '</h3><div class="hoi">' + e(o.hoi) + '</div></div>' +
-          '<ul>' + ds(o.truc, function (t) {
-            return '<li><span class="n">' + t.so + '</span><div><b>' + e(t.t) + '</b>' +
-              '<span>' + e(t.do) + ' · ' + e(t.bang) + ' · ' + e(t.ky) + '</span></div></li>';
-          }) + '</ul></div>';
-      }) + '</div>' +
-      '<h3 style="margin:8px 0 0; font-size:15px">Thang năm mức — dùng chung cho cả mười hai trục</h3>' +
-      '<div class="thang">' + ds(G.MUC, function (o) {
-        return '<div class="nac"><div class="m">' + o.m + '</div><div class="noi">' +
-          '<b>' + e(o.t) + '</b><span>Quyền điều hành: ' + e(o.quyen) + '</span>' +
-          '<span>Mức hỗ trợ: ' + e(o.ho) + '</span><span>Bằng chứng: ' + e(o.bang) + '</span>' +
-          '</div></div>';
-      }) + '</div>' +
-      '<h3 style="margin:8px 0 0; font-size:15px">Cổng định lượng: bậc nào đòi hồ sơ nào</h3>' +
-      '<div class="cuon"><table><thead><tr><th>Bậc</th><th>Đòi hỏi tối thiểu</th><th>Điều kiện trục chính</th></tr></thead><tbody>' +
-      ds(G.BAC_MUC, function (r) {
-        return '<tr><td class="co">' + e(r.bac) + '</td><td>' + e(r.doi) + '</td><td class="mo">' + e(r.chinh) + '</td></tr>';
-      }) + '</tbody></table></div>' +
-      '<p>Bảng này là thứ khiến hệ thống <strong>chấm được bởi người thứ ba</strong>. Một Assessor chưa từng gặp học viên vẫn nghiệm thu được, vì mọi ô đều có đơn vị đo và bằng chứng đi kèm — đó là điều kiện cần để chuẩn không loãng khi mở ra mười vùng.</p>' +
-      '</section>';
-  }
-
-  /* ── 7 · nhịp ────────────────────────────────────── */
-  function nhip() {
-    return '<section id="nhip">' +
-      dau('Lớp L3', 'Nhịp 365 — đồng hồ của hệ thống',
-        'Bảy chu kỳ lồng vào nhau. Mỗi chu kỳ có đúng một đầu ra, và đầu ra của chu kỳ nhỏ là nguyên liệu của chu kỳ lớn.') +
-      '<div class="the" style="padding:4px 22px">' + ds(G.NHIP, function (o) {
-        return '<div class="nhip"><div class="cot">' + e(o.chu) + '</div>' +
-          '<div class="noi"><b>' + e(o.viec) + '</b>' +
-          '<span class="ai">' + e(o.ai) + ' → ' + e(o.ra) + '</span>' +
-          '<span class="vi">' + e(o.vi) + '</span></div></div>';
-      }) + '</div></section>';
-  }
-
-  /* ── 8 · hình thái ───────────────────────────────── */
-  function hinhThai() {
-    return '<section id="hinh-thai">' +
-      dau('Lớp L3', 'Năm hình thái huấn luyện',
-        'Không thay nhau — chồng lên nhau. Một học viên bậc 3 thường nằm trong bốn hình thái cùng lúc. Gia đình không phải hình thái thứ sáu; nó là môi trường bao trùm cả năm.') +
-      '<div class="cuon"><table><thead><tr>' +
-        '<th>Mã</th><th>Hình thái</th><th>Nhịp</th><th>Mạnh ở</th><th>Yếu ở</th><th>Dùng khi</th><th>Bậc</th>' +
-      '</tr></thead><tbody>' + ds(G.HINH_THAI, function (o) {
-        return '<tr><td class="co">' + e(o.ma) + '</td><td><strong>' + e(o.t) + '</strong></td>' +
-          '<td class="mo">' + e(o.nhip) + '</td><td class="mo">' + e(o.manh) + '</td>' +
-          '<td class="mo">' + e(o.yeu) + '</td><td class="mo">' + e(o.dung) + '</td>' +
-          '<td class="co">' + e(o.bac) + '</td></tr>';
-      }) + '</tbody></table></div>' +
-      '<p>Câu lạc bộ Gen Việt là <strong>xương sống</strong>, không phải hoạt động phụ. Trại tạo bước ngoặt, kèm 1-1 gỡ nút thắt, nhưng thứ giữ người qua các chu kỳ và tạo chỗ cho bậc 5 thực tập dẫn dắt là nhịp tuần của câu lạc bộ — với bộ quy chuẩn trang phục, nhận diện và giao tiếp đã có sẵn.</p>' +
-      '</section>';
-  }
-
-  /* ── 9 · hệ đo ───────────────────────────────────── */
-  function doLuong() {
-    return '<section id="do-luong">' +
-      dau('Hệ đo', 'Băng màu cho từng nhà · chỉ số cho toàn hệ',
-        'Bốn băng đo tình trạng một gia đình ngay lúc này. Bảy chỉ số hệ đo xem cả hệ thống có đang đi đúng hướng ba mươi năm hay không.') +
-      '<div class="bang">' + ds(G.BANG_MAU, function (o) {
-        return '<div class="o" style="--c:' + e(o.mau) + '"><div class="dai"></div><div class="noi">' +
-          '<b>' + e(o.b) + '</b><p>' + e(o.n) + '</p>' +
-          '<p style="color:var(--muc)">' + e(o.lam) + '</p>' +
-          '<div class="cham">Nhịp chạm: ' + e(o.cham) + '</div></div></div>';
-      }) + '</div>' +
-      '<p>Băng <strong>độc lập với bậc</strong>: một nhà ở bậc 4 vẫn có thể rơi xuống ĐỎ, một nhà bậc 1 vẫn có thể XANH. Trộn hai trục này là lỗi thường gặp nhất khi đọc bảng số.</p>' +
-      '<h3 style="margin:8px 0 0; font-size:15px">Bảy chỉ số của hệ thống</h3>' +
-      '<div class="cuon"><table><thead><tr><th>Chỉ số</th><th>Vì sao đo</th><th>Đơn vị</th></tr></thead><tbody>' +
-      ds(G.KPI_HE, function (r) {
-        return '<tr><td><strong>' + e(r.t) + '</strong></td><td class="mo">' + e(r.vi) + '</td>' +
-          '<td class="co so-cot">' + e(r.dv) + '</td></tr>';
-      }) + '</tbody></table></div>' +
-      '<blockquote class="trich">Không nâng cấp theo thời gian; nâng theo bằng chứng năng lực.<cite>GITA Tầng 4 · nguyên tắc gốc, giữ nguyên cho toàn bộ sáu bậc</cite></blockquote>' +
-      '</section>';
-  }
-
-  /* ── 10 · mã hoá & dữ liệu ───────────────────────── */
-  function maHoa() {
-    var g = G.GHEP_KHONG_LUU;
-    return '<section id="ma-hoa">' +
-      dau('Lớp L2', 'Mã hoá và dữ liệu — xương sống kỹ thuật',
-        'Một mã phải đọc được bằng mắt, không cần tra bảng. Đây là thứ giữ cho một kho ba mươi năm không biến thành đống tài liệu vô danh.') +
-      '<div class="cuon"><table><thead><tr><th>Mã mẫu</th><th>Là gì</th><th>Đọc thế nào</th></tr></thead><tbody>' +
-      ds(G.MA_HOA, function (r) {
-        return '<tr><td class="co">' + e(r.ma) + '</td><td><strong>' + e(r.la) + '</strong></td>' +
-          '<td class="mo">' + e(r.gt) + '</td></tr>';
-      }) + '</tbody></table></div>' +
-      '<div class="the"><span class="nhan">Nguyên tắc kho</span><h3 style="margin-top:10px">' + e(g.t) + '</h3>' +
-        '<p>' + e(g.n) + '</p><p class="vi">' + e(g.vi) + '</p></div>' +
-      '<h3 style="margin:8px 0 0; font-size:15px">Ba tầng lưu trữ</h3>' +
-      '<div class="luoi ba">' + ds(G.LUU_BA_TANG, function (o) {
-        return '<div class="the"><h3>' + e(o.t) + '</h3><p>' + e(o.gi) + '</p>' +
-          '<p class="vi">' + e(o.mat) + '</p></div>';
-      }) + '</div>' +
-      '<h3 style="margin:8px 0 0; font-size:15px">Lộ trình công nghệ ba chặng</h3>' +
-      '<div class="cuon"><table><thead><tr><th>Chặng</th><th>Làm gì</th><th>Được</th><th>Hạn</th><th>Điều kiện bắt buộc</th></tr></thead><tbody>' +
-      ds(G.CONG_NGHE, function (r) {
-        return '<tr><td><strong>' + e(r.ten) + '</strong><br><span class="co">' + e(r.chang) + '</span></td>' +
-          '<td class="mo">' + e(r.lam) + '</td><td class="mo">' + e(r.duoc) + '</td>' +
-          '<td class="mo">' + e(r.han) + '</td><td>' + e(r.phai) + '</td></tr>';
-      }) + '</tbody></table></div>' +
-      '</section>';
-  }
-
-  /* ── 11 · vận hành ───────────────────────────────── */
-  function vanHanh() {
-    var t = G.TAI_CHINH;
-    return '<section id="van-hanh">' +
-      dau('Lớp L4', 'Vận hành: ai làm gì, và tiền đi đường nào',
-        'Mười lăm vai của hệ thống hiện tại giữ nguyên. Năm vai mới được thêm vào — tất cả đều thuộc phần mà một hệ huấn luyện nhân tài cần mà hệ xử lý ca không cần.') +
-      '<div class="luoi hai">' + ds(G.VAI, function (n) {
-        return '<div class="the"><span class="nhan">' + e(n.nhom) + '</span>' +
-          '<ul style="list-style:none;margin:12px 0 0;padding:0;display:grid;gap:9px">' +
-          ds(n.ds, function (v) {
-            return '<li style="font-size:13.5px"><b>' + e(v.v) + '</b>' +
-              (v.moi ? ' <span class="nhan" style="background:var(--the3);color:var(--muc2)">mới</span>' : '') +
-              '<br><span style="color:var(--muc2);font-size:12.5px">' + e(v.l) + '</span></li>';
-          }) + '</ul></div>';
-      }) + '</div>' +
-      '<div class="the" style="border-left:3px solid var(--lua)">' +
-        '<h3 style="font-family:var(--tit);font-size:21px">' + e(t.luat) + '</h3>' +
-        '<p>' + e(t.vi) + '</p></div>' +
-      '<div class="cuon"><table><thead><tr><th>Dòng tiền</th><th>Vai trò trong hệ</th><th>Tỷ trọng mục tiêu</th></tr></thead><tbody>' +
-      ds(t.dong, function (r) {
-        return '<tr><td><strong>' + e(r.t) + '</strong></td><td class="mo">' + e(r.vai) + '</td>' +
-          '<td class="so-cot">' + e(r.ty) + '</td></tr>';
-      }) + '</tbody></table></div>' +
-      '<div class="the"><span class="nhan">' + e(t.quy.t) + '</span>' +
-        '<p style="margin-top:10px"><strong>' + e(t.quy.n) + '</strong></p>' +
-        '<p>' + e(t.quy.dung) + '</p><p class="vi">' + e(t.quy.vi) + '</p></div>' +
-      '</section>';
-  }
-
-  /* ── 12 · rủi ro ─────────────────────────────────── */
-  function ruiRo() {
-    return '<section id="rui-ro">' +
-      dau('Lớp L6', 'Bảy rủi ro và phanh tương ứng',
-        'Một tầm nhìn ba mươi năm không chết vì thiếu ý tưởng. Nó chết vì bảy thứ dưới đây, và mỗi thứ chỉ dừng được bằng một cái phanh cụ thể, đặt sẵn từ trước.') +
-      '<div class="the">' + ds(G.RUI_RO, function (o) {
-        return '<div class="rui"><div class="cham"></div><div>' +
-          '<h3>' + e(o.t) + '</h3><span class="dh">Dấu hiệu: ' + e(o.dau) + '</span>' +
-          '<div class="phanh"><b>Phanh</b>' + e(o.phanh) + '</div></div></div>';
-      }) + '</div></section>';
-  }
-
-  /* ── 13 · ba mươi năm ────────────────────────────── */
-  function loTrinh() {
-    return '<section id="lo-trinh">' +
-      dau('Tầm nhìn', 'Ba mươi năm, sáu chặng',
-        'Mỗi chặng có một câu hỏi trung tâm và một cổng. Không qua cổng thì không sang chặng sau — kể cả khi lịch đã tới.') +
-      '<div class="tram">' + ds(G.CHANG, function (o) {
-        return '<article class="chang" style="--c:' + e(o.mau) + '">' +
-          '<div class="top"><div class="hang"><span class="m">' + e(o.ma) + '</span>' +
-            '<h3>' + e(o.t) + '</h3><span class="nam">' + e(o.nam) + '</span></div>' +
-            '<div class="hoi">' + e(o.hoi) + '</div></div>' +
-          '<div class="than">' +
-            '<div><h4>Việc lõi</h4><ul>' + ds(o.lam, function (x) { return '<li>' + e(x) + '</li>'; }) + '</ul></div>' +
-            '<div><h4>Đích</h4><div class="dich">' + ds(o.dich, function (x) { return '<span>' + e(x) + '</span>'; }) + '</div></div>' +
-            '<div><h4>Cổng sang chặng sau</h4><div class="cong">' + e(o.cong) + '</div></div>' +
-            '<div class="rui-c">Rủi ro chính: ' + e(o.rui) + '</div>' +
-          '</div></article>';
-      }) + '</div>' +
-      '<p>Ba lần chuyển giao thế hệ người dẫn nằm ở chặng 2, chặng 4 và chặng 6. <strong>Lần đầu phải bắt đầu ở chặng 2, không phải chặng 6.</strong> Một tổ chức bắt đầu nghĩ về kế thừa khi người sáng lập sắp nghỉ là một tổ chức đã muộn mười lăm năm.</p>' +
-      '</section>';
-  }
-
-  /* ── 14 · 90 ngày ────────────────────────────────── */
-  function batTay() {
-    return '<section id="bat-tay">' +
-      dau('Làm ngay', 'Chín mươi ngày đầu tiên',
-        'Không có phần nào dưới đây cần thêm người, thêm tiền hay thêm phần mềm. Toàn bộ chạy được bằng đội ngũ và hệ thống hiện có.') +
-      '<div class="cuon"><table><thead><tr><th>Mốc</th><th>Việc</th><th>Ai</th><th>Đầu ra</th></tr></thead><tbody>' +
-      ds(G.NGAY_90, function (r) {
-        return '<tr><td class="co">' + e(r.tuan) + '</td><td>' + e(r.viec) + '</td>' +
-          '<td class="mo">' + e(r.ai) + '</td><td><strong>' + e(r.ra) + '</strong></td></tr>';
-      }) + '</tbody></table></div>' +
-      '<p>Thứ tự trong bảng là bắt buộc. Đánh mã kho trước khi khoá bảng chuẩn năng lực thì phải đánh lại lần hai; xếp bậc trước khi có cổng mẫu thì mỗi Coach xếp một kiểu, và bản đồ bậc đầu tiên của cả hệ sẽ sai ngay từ ngày lập ra.</p>' +
-      '</section>';
-  }
-
-  /* ── 15 · nguồn ──────────────────────────────────── */
-  function nguon() {
-    return '<section id="nguon">' +
-      dau('Nguồn', 'Tài liệu đã dùng để dựng bản thiết kế này',
-        'Phần chuyên môn rút trọn vẹn từ kho tài liệu sẵn có của Học viện. Thứ duy nhất mượn từ bên ngoài là khung tổ chức chi hội của BNI — mượn cấu trúc vận hành, không mượn động cơ kinh tế.') +
-      '<div class="cuon"><table><thead><tr><th>Tài liệu</th><th>Phần được dùng</th></tr></thead><tbody>' +
-      ds(G.NGUON, function (r) {
-        return '<tr><td><strong>' + e(r.t) + '</strong></td><td class="mo">' + e(r.l) + '</td></tr>';
-      }) + '</tbody></table></div></section>';
-  }
-
-  function chan() {
-    var m = G.META;
-    return '<footer class="chan"><b>' + e(m.ten) + '</b>' +
-      '<span>Bản ' + e(m.ban) + ' · ' + e(m.tam) + '</span>' +
-      '<span>' + e(m.hocVien) + '</span>' +
+    return '<a href="#noi-dung" class="bo-qua">Tới nội dung</a>' +
+      '<header class="mao">' +
+        '<div class="hieu"><span class="ten">' + e(m.ten) + '</span>' +
+          '<span class="phu">' + e(m.phu) + '</span></div>' +
+        '<div class="ban">Bản ' + e(m.ban) + ' · ' + e(m.tam) + '</div>' +
+        '<button class="nut-muc" type="button" aria-expanded="false">Mục lục</button>' +
+      '</header>' +
+      '<div class="khung">' +
+        '<nav class="muc" aria-label="Mục lục">' + ds(G.NHOM, function (n) {
+          return '<div class="nhom" style="--c:' + e(n.mau) + '">' +
+            '<div class="n-dau"><span class="no">' + e(n.no) + '</span>' +
+            '<span class="t">' + e(n.t) + '</span><span class="s">' + e(n.s) + '</span></div>' +
+            '<ul>' + ds(n.ds, function (i) {
+              return '<li><a href="#' + e(i.v) + '" data-v="' + e(i.v) + '">' +
+                '<b>' + e(i.t) + '</b><span>' + e(i.h) + '</span></a></li>';
+            }) + '</ul></div>';
+        }) + '</nav>' +
+        '<main id="noi-dung" class="chinh" tabindex="-1"></main>' +
+      '</div>' +
+      '<footer class="chan"><b>' + e(m.ten) + '</b><span>' + e(m.hocVien) + '</span>' +
       '<span>' + e(m.suMenh) + '</span></footer>';
   }
 
-  /* ── 7 · năm phẩm chất ───────────────────────────── */
-  function phamChat() {
-    return '<section id="pham-chat">' +
-      dau('Đích của con người', 'Năm phẩm chất Gen Việt',
-        'Đức · Dũng · Trí · Chủ · Chí. Mỗi phẩm chất phải có chỗ rèn cụ thể hằng tuần và một cách đo — nếu không thì nó chỉ là khẩu hiệu treo tường.') +
-      '<div class="luoi hai">' + ds(G.PHAM_CHAT, function (o) {
-        return '<div class="pc" style="--c:' + e(o.mau) + '">' +
-          '<div class="dinh"><span class="k">' + e(o.k) + '</span><h3>' + e(o.t) + '</h3>' +
-            '<span class="tru">trụ ' + e(o.tru) + '</span></div>' +
-          '<div class="than"><p>' + e(o.n) + '</p>' +
-            '<div class="ren"><b>Rèn ở đâu</b>' + e(o.ren) + '</div>' +
-            '<div class="do"><b>Đo bằng gì</b>' + e(o.do) + '</div></div></div>';
-      }) + '</div>' +
-      '<p>Năm phẩm chất không phải trục thứ mười ba. Chúng là <strong>cách đọc mười hai trục theo chiều đạo đức</strong>: một em đạt mức 5 cả mười hai trục mà thiếu Đức thì hệ thống đã tạo ra một người giỏi nguy hiểm, không phải một nhân tài.</p>' +
-      '</section>';
-  }
+  var goc, chinh, nut;
 
-  /* ── 10 · chi hội Gen Việt ───────────────────────── */
-  function clb() {
-    var C = G.CLB;
-    return '<section id="clb">' +
-      dau('Lớp L5 · hạt nhân vận hành', 'Chi hội Gen Việt — mô hình chiều sâu',
-        'Câu lạc bộ không phải sinh hoạt ngoại khoá. Nó là đơn vị vận hành nhỏ nhất của cả hệ thống, và được tổ chức theo khung đã chứng minh được độ bền qua bốn mươi năm: khung chi hội của BNI, dịch toàn bộ sang mục đích rèn người trẻ.') +
-      '<div class="the"><h3>' + e(C.goc.t) + '</h3><p>' + e(C.goc.n) + '</p>' +
-        '<p class="vi">' + e(C.goc.khac) + '</p></div>' +
-      '<div class="cuon"><table><thead><tr><th>Điểm chốt</th><th>Chuẩn</th></tr></thead><tbody>' +
-      ds(C.quyMo, function (r) {
-        return '<tr><td><strong>' + e(r.c) + '</strong></td><td class="mo">' + e(r.v) + '</td></tr>';
-      }) + '</tbody></table></div>' +
+  function nho(v) { try { localStorage.setItem('genviet365.man', v); } catch (x) {} }
+  function nhoLai() { try { return localStorage.getItem('genviet365.man'); } catch (x) { return null; } }
 
-      '<h3 style="margin:8px 0 0; font-size:15px">Sáu vòng chiều sâu — đường đi trong một chi hội</h3>' +
-      '<div class="vong">' + ds(C.vong, function (o) {
-        return '<div class="buoc"><span class="v">' + e(o.v) + '</span>' +
-          '<div class="noi"><h3>' + e(o.t) + '</h3>' +
-            '<span class="dk">Điều kiện: ' + e(o.dk) + '</span>' +
-            '<span class="duoc">' + e(o.duoc) + '</span></div>' +
-          '<span class="bmap">' + e(o.bac) + '</span></div>';
-      }) + '</div>' +
-      '<p>Vòng trong chi hội và bậc nhân tài là <strong>hai thang khác nhau nhưng khớp vào nhau</strong>: vòng đo vị trí của em trong cộng đồng, bậc đo năng lực của em trong hộ chiếu. Không được lấy vòng thay cho bậc — một em rất được yêu quý trong chi hội vẫn có thể chưa đủ bằng chứng để lên bậc.</p>' +
-
-      '<h3 style="margin:8px 0 0; font-size:15px">Kịch bản buổi sinh hoạt — 90 phút, không đổi</h3>' +
-      '<div class="lich">' + ds(C.kichBan, function (o) {
-        return '<div class="muc-l"><span class="p">' + e(o.p) + '</span>' +
-          '<div class="noi"><b>' + e(o.m) + '</b><span class="ai">' + e(o.ai) + '</span>' +
-          '<span class="y">' + e(o.y) + '</span></div></div>';
-      }) + '</div>' +
-      '<p>Kịch bản cố định là thứ khiến một chi hội ở Hà Nội và một chi hội ở Sơn La chạy giống nhau. <strong>Ban điều hành không được phép sửa kịch bản</strong> — chỉ Hội đồng Gen Việt sửa, và mỗi lần sửa áp cho toàn quốc.</p>' +
-
-      '<h3 style="margin:8px 0 0; font-size:15px">Bảng số tuần — bảy cột</h3>' +
-      '<div class="cuon"><table><thead><tr><th>Cột</th><th>Đo gì</th><th>Đơn vị</th><th>Luật</th></tr></thead><tbody>' +
-      ds(C.bangSo, function (r) {
-        return '<tr><td class="co">' + e(r.c) + '</td><td><strong>' + e(r.t) + '</strong></td>' +
-          '<td class="mo">' + e(r.d) + '</td><td class="mo">' + e(r.n) + '</td></tr>';
-      }) + '</tbody></table></div>' +
-      '<p>Bảng số xếp mỗi thành viên vào một trong bốn băng <strong>XANH · VÀNG · CAM · ĐỎ</strong> — cùng bốn băng hệ thống đã dùng cho gia đình, nên một Coach nhìn là hiểu ngay. Gọi tên người ở băng ĐỎ giữa buổi họp là để cả chi hội giúp, không phải để phạt.</p>' +
-
-      '<h3 style="margin:8px 0 0; font-size:15px">Bảy ghế ban điều hành — nhiệm kỳ 6 tháng</h3>' +
-      '<div class="cuon"><table><thead><tr><th>Ghế</th><th>Làm gì</th><th>KPI của ghế</th></tr></thead><tbody>' +
-      ds(C.ban, function (r) {
-        return '<tr><td><strong>' + e(r.g) + '</strong></td><td class="mo">' + e(r.l) + '</td><td>' + e(r.kpi) + '</td></tr>';
-      }) + '</tbody></table></div>' +
-      '<p>Mọi thành viên <strong>phải qua ít nhất một ghế</strong> trước khi được xét bậc 4. Đây là chỗ một người trẻ học lãnh đạo bằng cách chịu trách nhiệm thật, trước những người bạn có quyền bỏ phiếu thay mình.</p>' +
-
-      '<div class="luoi hai">' +
-        '<div class="the"><span class="nhan">' + e(C.to.t) + '</span><p style="margin-top:10px">' + e(C.to.n) + '</p>' +
-          '<ul style="margin:12px 0 0;padding-left:18px;display:grid;gap:5px;font-size:13px;color:var(--muc2)">' +
-          ds(C.to.ds, function (x) { return '<li>' + e(x) + '</li>'; }) + '</ul></div>' +
-        '<div class="the"><span class="nhan">' + e(C.moMoi.t) + '</span>' +
-          '<ol style="margin:12px 0 0;padding-left:18px;display:grid;gap:5px;font-size:13px;color:var(--muc2)">' +
-          ds(C.moMoi.b, function (x) { return '<li>' + e(x) + '</li>'; }) + '</ol>' +
-          '<p class="vi">' + e(C.moMoi.n) + '</p></div>' +
-      '</div>' +
-
-      '<h3 style="margin:8px 0 0; font-size:15px">Mười điều luật chi hội</h3>' +
-      '<div class="the"><ol class="luat">' + ds(C.luat, function (x) {
-        return '<li><span>' + e(x) + '</span></li>';
-      }) + '</ol></div>' +
-
-      '<h3 style="margin:8px 0 0; font-size:15px">Ba tầng tổ chức</h3>' +
-      '<div class="luoi ba">' + ds(C.baTang, function (o) {
-        return '<div class="the"><h3>' + e(o.t) + '</h3>' +
-          '<p style="color:var(--muc3);font-family:var(--ma);font-size:11px">' + e(o.qm) + ' · ' + e(o.nhip) + '</p>' +
-          '<p style="margin-top:8px">' + e(o.lam) + '</p></div>';
-      }) + '</div></section>';
-  }
-
-  /* ── 11 · bốn môi trường ─────────────────────────── */
-  function moiTruong() {
-    return '<section id="moi-truong">' +
-      dau('Nơi năng lực bị kiểm', 'Bốn môi trường thực tiễn',
-        'Chi hội là nơi RÈN. Bốn môi trường dưới đây là nơi THI. Chi hội không được tự cấp bằng chứng cho chính mình — mọi cổng bậc đều đòi bằng chứng từ ít nhất hai môi trường.') +
-      '<div class="luoi" style="gap:12px">' + ds(G.MOI_TRUONG, function (o) {
-        return '<div class="mt" style="--c:' + e(o.mau) + '">' +
-          '<div class="hang"><span class="m">' + e(o.ma) + '</span><h3>' + e(o.t) + '</h3>' +
-            '<span class="truc">' + e(o.truc) + '</span></div>' +
-          '<p>' + e(o.n) + '</p>' +
-          '<div class="lam"><strong>Làm gì:</strong> ' + e(o.lam) + '</div>' +
-          '<div class="xn">Ai xác nhận: ' + e(o.xn) + '</div>' +
-          '<div class="vi">' + e(o.vi) + '</div></div>';
-      }) + '</div>' +
-      '<h3 style="margin:8px 0 0; font-size:15px">Vòng bảy ngày của một thành viên</h3>' +
-      '<div class="the" style="padding:4px 22px">' + ds(G.TUAN, function (o) {
-        return '<div class="nhip"><div class="cot">' + e(o.ng) + '</div>' +
-          '<div class="noi"><b>' + e(o.v) + '</b></div></div>';
-      }) + '</div>' +
-      '<p>Bảy ngày ấy là thứ biến toàn bộ kiến trúc phía trên thành đời sống thật của một đứa trẻ. <strong>Nếu một tuần không chạy được, thì ba mươi năm cũng không chạy được</strong> — nên đây là đơn vị phải thử trước tiên, trước khi bàn tới vùng, tới quy mô, tới quốc gia.</p>' +
-      '</section>';
-  }
-
-  /* ── dựng ────────────────────────────────────────── */
-  function dung(goc) {
-    goc.className = 'khung';
-    goc.innerHTML = mao() + mucLuc() + '<main class="chinh">' +
-      moDau() + dinhVi() + nguyenLy() + kienTruc() + bac() + nangLuc() +
-      phamChat() + nhip() + hinhThai() + clb() + moiTruong() +
-      doLuong() + maHoa() + vanHanh() + ruiRo() +
-      loTrinh() + batTay() + nguon() + '</main>' + chan();
-
-    /* Mục lục sáng theo phần đang đọc. Không có thư viện, chỉ một
-       IntersectionObserver — và có nhánh dự phòng cho trình duyệt cũ. */
-    var neo = {};
+  function ve() {
+    var v = location.hash.replace(/^#/, '');
+    if (v === 'noi-dung') return;
+    if (!v || !G.MAN[v]) v = PHANG.length ? PHANG[0].v : '';
+    chinh.innerHTML = veMan(v) + dieuHuong(v);
     Array.prototype.forEach.call(goc.querySelectorAll('.muc a'), function (a) {
-      neo[a.getAttribute('data-di')] = a;
+      var o = a.getAttribute('data-v') === v;
+      a.classList.toggle('oo', o);
+      if (o) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
     });
-    if (!window.IntersectionObserver) return;
-    var dang = null;
-    var soi = new IntersectionObserver(function (mucs) {
-      mucs.forEach(function (m) {
-        if (!m.isIntersecting) return;
-        var a = neo[m.target.id];
-        if (!a || a === dang) return;
-        if (dang) dang.classList.remove('oo');
-        a.classList.add('oo');
-        dang = a;
-      });
-    }, { rootMargin: '-10% 0px -70% 0px', threshold: 0 });
-    Array.prototype.forEach.call(goc.querySelectorAll('section[id]'), function (s) { soi.observe(s); });
+    nho(v);
+    goc.classList.remove('mo');
+    if (nut) nut.setAttribute('aria-expanded', 'false');
+    window.scrollTo(0, 0);
+  }
+
+  function dung(g) {
+    goc = g;
+    goc.className = 'ung';
+    goc.innerHTML = veVo();
+    chinh = goc.querySelector('.chinh');
+    nut = goc.querySelector('.nut-muc');
+    nut.addEventListener('click', function () {
+      var mo = goc.classList.toggle('mo');
+      nut.setAttribute('aria-expanded', mo ? 'true' : 'false');
+    });
+    window.addEventListener('hashchange', ve);
+    if (!location.hash) {
+      var cu = nhoLai();
+      if (cu && G.MAN[cu]) { location.hash = cu; return; }
+    }
+    ve();
   }
 
   window.GVdung = dung;
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', function () {
-      var g = document.getElementById('ung-dung');
-      if (g) dung(g);
-    });
-  } else {
+  function batDau() {
     var g = document.getElementById('ung-dung');
     if (g) dung(g);
   }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', batDau);
+  } else { batDau(); }
 })();

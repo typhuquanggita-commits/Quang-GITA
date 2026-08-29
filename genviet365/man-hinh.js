@@ -1,0 +1,554 @@
+/* ═══════════════════════════════════════════════════════════════
+   GEN VIỆT 365 · ĐỊNH NGHĨA MÀN HÌNH
+   Tám nhóm · 45 màn. Mỗi màn là một danh sách KHỐI; lớp giao diện biết
+   dựng từng loại khối. Thêm màn mới thì thêm ở đây, không đụng vào
+   giao-dien.js — trừ khi cần một loại khối chưa từng có.
+   Trong khối "van", dấu *…* thành chữ đậm.
+   ═══════════════════════════════════════════════════════════════ */
+'use strict';
+var GV = window.GV || {};
+window.GV = GV;
+
+GV.NHOM = [
+  { id: 'g1', no: '01', t: 'NỀN MÓNG', s: 'Hệ này là gì và dựng trên gì', mau: '#185AB4',
+    ds: [
+      { v: 'tong-quan', t: 'Tổng quan hệ thống', h: 'Định vị · vì sao cần hệ thứ hai' },
+      { v: 'nguyen-ly', t: 'Bảy nguyên lý bất biến', h: 'Lớp L0 — đổi chậm nhất' },
+      { v: 'kien-truc', t: 'Bảy lớp kiến trúc', h: 'Xếp theo tốc độ đổi' },
+      { v: 'ho-chieu', t: 'Hộ chiếu nhân tài', h: 'Trục dọc xuyên bảy lớp' },
+      { v: 'bac', t: 'Sáu bậc nhân tài', h: 'Dòng chảy người' },
+      { v: 'nang-luc', t: 'Khung năng lực', h: '4 trụ × 12 trục × 5 mức' },
+      { v: 'pham-chat', t: 'Năm phẩm chất', h: 'Đức · Dũng · Trí · Chủ · Chí' }
+    ]},
+  { id: 'g2', no: '02', t: 'HUẤN LUYỆN', s: 'Rèn bằng cách nào, theo nhịp nào', mau: '#5140B4',
+    ds: [
+      { v: 'nhip', t: 'Nhịp 365', h: 'Đồng hồ của hệ thống' },
+      { v: 'hinh-thai', t: 'Năm hình thái', h: 'Kèm · lớp · trại · chi hội · dự án' },
+      { v: 'lo-trinh-bac', t: 'Lộ trình từng bậc', h: 'Chu kỳ 90 ngày từ B1 tới B6' },
+      { v: 'khoa-nen', t: 'Khoá nền 8 buổi', h: 'Bắt buộc với thành viên thử' },
+      { v: 'chuyen-de', t: '24 chuyên đề', h: 'Hạt giống tri thức 7 phút' },
+      { v: 'trai', t: 'Thiết kế trại', h: 'Gen Alpha · Leader Boom · 21 ngày hậu trại' },
+      { v: 'bo-test', t: 'Bộ test nhận diện', h: 'Năm bộ đầu vào và cách đọc' }
+    ]},
+  { id: 'g3', no: '03', t: 'CHI HỘI', s: 'Hạt nhân vận hành hằng tuần', mau: '#0B6675',
+    ds: [
+      { v: 'chi-hoi', t: 'Mô hình chi hội', h: 'Vì sao mượn khung BNI' },
+      { v: 'vong', t: 'Sáu vòng chiều sâu', h: 'V0 khách mời → V5 cố vấn' },
+      { v: 'kich-ban', t: 'Kịch bản 90 phút', h: 'Chín mục, không đổi' },
+      { v: 'bang-so', t: 'Bảng số bảy cột', h: 'C · Đ · T · G · K · B · P' },
+      { v: 'ban-dieu-hanh', t: 'Bảy ghế và nhiệm kỳ', h: 'Luân phiên 6 tháng · sổ ghế' },
+      { v: 'to-mui-nhon', t: 'Tổ mũi nhọn', h: 'Nơi mũi nhọn được mài' },
+      { v: 'luat-chi-hoi', t: 'Mười điều luật', h: 'Và cách xử vi phạm' },
+      { v: 'mo-chi-hoi', t: 'Mở chi hội mới', h: 'Ba tầng tổ chức · năm bước' },
+      { v: 'lich-nam', t: 'Lịch năm 52 tuần', h: 'Bốn quý · mốc chung toàn quốc' }
+    ]},
+  { id: 'g4', no: '04', t: 'THỰC TIỄN', s: 'Nơi năng lực bị kiểm', mau: '#0B7350',
+    ds: [
+      { v: 'moi-truong', t: 'Bốn môi trường', h: 'Lớp · trường · gia đình · xã hội' },
+      { v: 'vong-tuan', t: 'Vòng bảy ngày', h: 'Một tuần của một thành viên' },
+      { v: 'so-tay-mt', t: 'Sổ tay môi trường', h: 'M1 · M3 · M4 làm gì cụ thể' },
+      { v: 'so-tay-vai', t: 'Sổ tay từng vai', h: 'Sáu vai · tuần · tháng · không làm gì' }
+    ]},
+  { id: 'g5', no: '05', t: 'ĐO VÀ NGHIỆM THU', s: 'Không có bằng chứng thì không có điểm', mau: '#BE0E16',
+    ds: [
+      { v: 'bang-mau', t: 'Bốn băng màu', h: 'Tình trạng ngay lúc này' },
+      { v: 'kpi', t: 'Bảy chỉ số hệ thống', h: 'Hệ số tự tái tạo và bạn của nó' },
+      { v: 'cong-nghiem-thu', t: 'Cổng 100 điểm', h: 'Sáu cột · ngưỡng 85' },
+      { v: 'bao-cao', t: 'Bốn báo cáo', h: 'Tuần · tháng · quý · năm' },
+      { v: 'bieu-mau', t: 'Mười bốn biểu mẫu', h: 'Bộ giấy tờ vận hành' }
+    ]},
+  { id: 'g6', no: '06', t: 'DỮ LIỆU', s: 'Xương sống kỹ thuật', mau: '#185AB4',
+    ds: [
+      { v: 'ma-hoa', t: 'Hệ mã hoá', h: 'Đọc được bằng mắt, không tra bảng' },
+      { v: 'ho-so-json', t: 'Mô hình hộ chiếu', h: 'Cấu trúc JSON và năm luật' },
+      { v: 'bang-luu', t: 'Bảng lưu và máy chủ', h: '12 bảng · 9 đường · 10 quyền' },
+      { v: 'cong-nghe', t: 'Lộ trình công nghệ', h: 'Ba chặng · ba tầng lưu' },
+      { v: 'nguyen-tac-kt', t: 'Bảy nguyên tắc dựng', h: 'Cho phần mềm sống ba mươi năm' }
+    ]},
+  { id: 'g7', no: '07', t: 'VẬN HÀNH', s: 'Người, tiền, và ranh giới', mau: '#5140B4',
+    ds: [
+      { v: 'vai-tro', t: 'Hai mươi vai', h: '15 vai cũ · 5 vai mới' },
+      { v: 'tai-chinh', t: 'Tài chính và quỹ', h: 'Tiền không mua bậc' },
+      { v: 'an-toan', t: 'An toàn và đạo đức', h: 'Bảy luật · dấu hiệu chuyển tuyến' },
+      { v: 'rui-ro', t: 'Bảy rủi ro', h: 'Và phanh tương ứng' }
+    ]},
+  { id: 'g8', no: '08', t: 'TRIỂN KHAI', s: 'Từ hôm nay tới 2056', mau: '#A8801F',
+    ds: [
+      { v: 'ngay-90', t: 'Chín mươi ngày đầu', h: 'Thứ tự bắt buộc' },
+      { v: 'nam-dau', t: 'Năm đầu tiên', h: 'Bốn quý, có số' },
+      { v: 'ba-muoi-nam', t: 'Ba mươi năm', h: 'Sáu chặng, sáu cổng' },
+      { v: 'nguon', t: 'Nguồn', h: 'Tài liệu đã dùng' }
+    ]}
+];
+
+GV.MAN = {
+
+/* ══════════ NHÓM 1 · NỀN MÓNG ══════════ */
+'tong-quan': { k: 'Mở đầu', t: 'Hệ này là gì, và vì sao phải dựng nó bây giờ',
+  p: 'Học viện GITA đã có một hệ giải pháp năm tầng chạy được trên gia đình thật. Cái còn thiếu là hệ chịu trách nhiệm về mười, hai mươi, ba mươi năm tiếp theo của những em giỏi nhất đi qua đó.',
+  khoi: [
+    { k: 'so', ds: [{ b: '8', t: 'lớp nội dung' }, { b: '45', t: 'màn' }, { b: '6', t: 'bậc nhân tài' },
+                    { b: '12', t: 'trục năng lực' }, { b: '30', t: 'năm · 6 chặng' }] },
+    { k: 'van', t: 'GEN VIỆT 365 không phải một chương trình học. Nó là *hệ điều hành phát triển con người* của Học viện: nơi một em bé bảy tuổi bước vào ở bậc Hạt, và ba mươi năm sau có thể ngồi trong Hội đồng Chuẩn quyết định điều gì là đúng cho thế hệ tiếp theo.' },
+    { k: 'trich', t: 'GITA không huấn luyện một hành vi đơn lẻ. GITA kiến tạo một hệ điều hành phát triển cá nhân.', n: 'Hệ thống giải pháp GITA · Chương 13' },
+    { k: 'muc', t: 'Hai hệ, hai câu hỏi' },
+    { k: 'van', t: 'Một hệ giỏi chữa và kiến tạo cho từng nhà vẫn có thể để mất người giỏi sau khi ca đóng — bởi không ai chịu trách nhiệm về mười năm tiếp theo của em ấy. GEN VIỆT 365 là hệ chịu trách nhiệm phần đó.' },
+    { k: 'bang', cot: ['Trục so sánh', 'GITA 365 — hệ giải pháp', 'GEN VIỆT 365 — hệ huấn luyện'],
+      tu: 'DINH_VI_BANG' },
+    { k: 'van', t: 'Hai hệ dùng chung một kho, chung một bảng phân quyền, chung một mô thức. Chúng khác nhau ở *đơn vị công việc*: một bên đóng ca, một bên không bao giờ đóng.' },
+    { k: 'muc', t: 'Đọc bản thiết kế này theo thứ tự nào' },
+    { k: 'ds', so: true, ds: [
+      'Nhóm 01 — nền móng: nếu chỉ đọc được một nhóm thì đọc nhóm này.',
+      'Nhóm 03 và 04 — chi hội và bốn môi trường: phần chạm vào đời sống thật hằng tuần, và là phần khởi động được ngay.',
+      'Nhóm 05 — đo và nghiệm thu: phần giữ cho hệ không trôi thành phong trào.',
+      'Nhóm 08 — triển khai: đọc cuối, nhưng làm đầu tiên.'
+    ]}
+  ]},
+
+'nguyen-ly': { k: 'Lớp L0', t: 'Bảy nguyên lý bất biến',
+  p: 'Lớp đổi chậm nhất. Ba mươi năm tới, mọi thứ khác được phép đổi; bảy điều này chỉ đổi bởi Hội đồng Chuẩn, và mỗi lần đổi phải ghi lý do vào Sổ Chuẩn.',
+  khoi: [{ k: 'ly', tu: 'NGUYEN_LY' }] },
+
+'kien-truc': { k: 'Kiến trúc', t: 'Bảy lớp, xếp theo tốc độ đổi',
+  p: 'Nguyên tắc duy nhất giữ cho một hệ thống ba mươi năm không rối: lớp đổi nhanh được phép phụ thuộc lớp đổi chậm, không bao giờ ngược lại.',
+  khoi: [
+    { k: 'thap', tu: 'LOP' },
+    { k: 'van', t: '*L2 chỉ lớn lên bằng ca thật đã nghiệm thu.* Không nhận nội dung chưa từng chạy trên một gia đình. Đây là điều phân biệt một kho nghề với một thư viện mẹo.' },
+    { k: 'van', t: 'Vi phạm chiều phụ thuộc là cách một hệ thống ba mươi năm chết ở năm thứ tám: khi một quyết định vận hành (L4) buộc phải sửa chuẩn (L1), hoặc khi một tính năng phần mềm quyết định thay cho nguyên lý (L0).' }
+  ]},
+
+'ho-chieu': { k: 'Trục dọc', t: 'Hộ chiếu nhân tài',
+  p: 'Một người — một hồ sơ — suốt ba mươi năm. Không thuộc về gói dịch vụ, không mất khi ca đóng, không phải làm lại khi đổi Coach hay đổi vùng.',
+  khoi: [
+    { k: 'bang', cot: ['Trường', 'Nội dung'], tu: 'HO_CHIEU_TRUONG' },
+    { k: 'van', t: 'Trường *"người em ấy đã rèn"* là trường khiến hộ chiếu này khác mọi học bạ: nó biến một hồ sơ cá nhân thành một mắt xích đo được của mạng lưới. Cộng tất cả các trường ấy lại chính là hệ số tự tái tạo của toàn hệ.' },
+    { k: 'the', t: 'Xem chi tiết kỹ thuật', n: 'Cấu trúc JSON, năm luật ghi dữ liệu, bảng lưu và giao diện máy chủ nằm ở nhóm 06 · Dữ liệu.' }
+  ]},
+
+'bac': { k: 'Dòng chảy người', t: 'Sáu bậc nhân tài',
+  p: 'Bậc không lên theo tuổi và không lên theo thời gian ở lại. Bậc lên theo bằng chứng, và bằng chứng ở mỗi bậc là một loại khác nhau.',
+  khoi: [
+    { k: 'bac', tu: 'BAC' },
+    { k: 'van', t: '*Điểm gập của toàn bộ kiến trúc nằm ở bậc 5.* Từ bậc này trở đi, sản phẩm của hệ thống trở thành lực lượng của chính hệ thống. Đó là lý do một tầm nhìn ba mươi năm khả thi: không phải vì tuyển được nhiều hơn, mà vì mỗi người bậc 5 rèn được người tiếp theo.' },
+    { k: 'muc', t: 'Cổng định lượng: bậc nào đòi hồ sơ nào' },
+    { k: 'bang', cot: ['Bậc', 'Đòi hỏi tối thiểu', 'Điều kiện trục chính'], tu: 'BAC_MUC' }
+  ]},
+
+'nang-luc': { k: 'Lớp L1', t: 'Khung năng lực: bốn trụ × mười hai trục × năm mức',
+  p: 'Mười hai trục lấy nguyên từ hệ KPI nâng cao Tầng 5 của GITA 365, xếp lại dưới bốn trụ G–I–T–A để nhìn một dòng là biết nó thuộc miền nào.',
+  khoi: [
+    { k: 'tru', tu: 'TRU' },
+    { k: 'muc', t: 'Thang năm mức — dùng chung cho cả mười hai trục' },
+    { k: 'thang', tu: 'MUC' },
+    { k: 'van', t: 'Bảng này là thứ khiến hệ thống *chấm được bởi người thứ ba*. Một Assessor chưa từng gặp học viên vẫn nghiệm thu được, vì mọi ô đều có đơn vị đo và bằng chứng đi kèm — đó là điều kiện cần để chuẩn không loãng khi mở ra mười vùng.' }
+  ]},
+
+'pham-chat': { k: 'Đích của con người', t: 'Năm phẩm chất Gen Việt',
+  p: 'Đức · Dũng · Trí · Chủ · Chí. Mỗi phẩm chất phải có chỗ rèn cụ thể hằng tuần và một cách đo — nếu không thì nó chỉ là khẩu hiệu treo tường.',
+  khoi: [
+    { k: 'pc', tu: 'PHAM_CHAT' },
+    { k: 'van', t: 'Năm phẩm chất *không phải trục thứ mười ba*. Chúng là cách đọc mười hai trục theo chiều đạo đức: một em đạt mức 5 cả mười hai trục mà thiếu Đức thì hệ thống đã tạo ra một người giỏi nguy hiểm, không phải một nhân tài.' }
+  ]},
+
+/* ══════════ NHÓM 2 · HUẤN LUYỆN ══════════ */
+'nhip': { k: 'Lớp L3', t: 'Nhịp 365 — đồng hồ của hệ thống',
+  p: 'Bảy chu kỳ lồng vào nhau. Mỗi chu kỳ có đúng một đầu ra, và đầu ra của chu kỳ nhỏ là nguyên liệu của chu kỳ lớn.',
+  khoi: [
+    { k: 'nhip', tu: 'NHIP' },
+    { k: 'van', t: 'Năm ngày cuối mỗi năm — *Hội nghị Phát triển Gia đình* — là nghi lễ quan trọng nhất trong năm: học viên bảo vệ hồ sơ, phụ huynh trình bày thay đổi của chính mình, Coach nghiệm thu hệ thống chứ không nghiệm thu điểm số.' }
+  ]},
+
+'hinh-thai': { k: 'Lớp L3', t: 'Năm hình thái huấn luyện',
+  p: 'Không thay nhau — chồng lên nhau. Một học viên bậc 3 thường nằm trong bốn hình thái cùng lúc. Gia đình không phải hình thái thứ sáu; nó là môi trường bao trùm cả năm.',
+  khoi: [
+    { k: 'bang', cot: ['Mã', 'Hình thái', 'Nhịp', 'Mạnh ở', 'Yếu ở', 'Dùng khi', 'Bậc'], tu: 'HINH_THAI' },
+    { k: 'van', t: 'Câu lạc bộ Gen Việt là *xương sống*, không phải hoạt động phụ. Trại tạo bước ngoặt, kèm 1-1 gỡ nút thắt, nhưng thứ giữ người qua các chu kỳ và tạo chỗ cho bậc 5 thực tập dẫn dắt là nhịp tuần của câu lạc bộ.' }
+  ]},
+
+'lo-trinh-bac': { k: 'Lộ trình', t: 'Từng bậc đi qua những chu kỳ nào',
+  p: 'Chu kỳ 90 ngày là đơn vị nhỏ nhất có cổng; bậc là đơn vị có hồ sơ. Không chu kỳ nào được kéo dài quá 90 ngày để chờ em ấy sẵn sàng — chưa đạt thì đóng chu kỳ, ghi nhận thật, mở chu kỳ mới với cùng đích.',
+  khoi: [
+    { k: 'ck', tu: 'LO_TRINH' },
+    { k: 'van', t: 'Kéo dài một chu kỳ vô hạn là cách giấu một thất bại — và là cách chắc chắn nhất để mất niềm tin của gia đình vào lần nghiệm thu tiếp theo.' }
+  ]},
+
+'khoa-nen': { k: 'Đào tạo', t: 'Khoá nền — tám buổi trong sáu mươi ngày',
+  p: 'Bắt buộc với mọi thành viên thử V1. Không xong khoá nền thì không lên V2, bất kể em ấy dễ thương tới đâu. Mỗi buổi 60 phút, dạy bởi Trưởng ban Đào tạo hoặc một thành viên V3 trở lên.',
+  khoi: [
+    { k: 'buoi', tu: 'KHOA_NEN' },
+    { k: 'van', t: 'Khoá nền là chỗ chi hội tự đào tạo người của mình. *Người dạy khoá nền học được nhiều hơn người học* — nên đây cũng là bài tập đầu tiên của một thành viên V3 muốn tiến tới ghế ban điều hành.' }
+  ]},
+
+'chuyen-de': { k: 'Đào tạo', t: 'Hai mươi bốn chuyên đề Hạt giống tri thức',
+  p: 'Bảy phút mỗi buổi sinh hoạt. Một năm bốn mươi tám tuần thì chạy hai vòng, vòng sau sâu hơn vòng trước. Mỗi chuyên đề phải kèm một việc làm được ngay trong tuần.',
+  khoi: [
+    { k: 'cd', tu: 'CHUYEN_DE' },
+    { k: 'van', t: 'Bảy phút giảng đạo lý là bảy phút bị mất. Cách kiểm một chuyên đề có đạt hay không rất đơn giản: *tuần sau, hỏi xem có bao nhiêu em đã làm việc được giao.* Dưới một nửa thì chuyên đề ấy phải viết lại, không phải học viên phải cố hơn.' }
+  ]},
+
+'trai': { k: 'Hình thái H3', t: 'Thiết kế trại',
+  p: 'Trại là một nhịp nén: ba tới bảy ngày để tạo một bước ngoặt mà nhịp tuần thường không tạo nổi. Bước ngoặt ấy tan trong khoảng ba tuần nếu không có nhịp giữ ở nhà.',
+  khoi: [
+    { k: 'ds', ds: null, tu: 'TRAI_LY' },
+    { k: 'trai', tu: 'TRAI_DS' },
+    { k: 'muc', t: 'Khung một ngày trại' },
+    { k: 'lich', tu: 'TRAI_NGAY' },
+    { k: 'muc', t: 'Hai mươi mốt ngày hậu trại — phần bắt buộc' },
+    { k: 'nhip2', tu: 'TRAI_HAU' },
+    { k: 'van', t: 'Nếu 21 ngày hậu trại không chạy, lỗi thuộc về *thiết kế trại*, không thuộc về đứa trẻ. Ghi vào hồ sơ thiết kế và sửa cho kỳ sau.' }
+  ]},
+
+'bo-test': { k: 'Đầu vào', t: 'Bộ test nhận diện',
+  p: 'Năm bộ, mỗi bộ ba mươi câu, thang một tới năm. Không dùng để dán nhãn — dùng để có một baseline trung thực và để chọn đúng câu hỏi cho buổi đầu tiên.',
+  khoi: [
+    { k: 'ds', tu: 'TEST_LUAT' },
+    { k: 'bang', cot: ['Mã', 'Bộ', 'Đo gì', 'Đầu ra'], tu: 'TEST_DS' },
+    { k: 'muc', t: 'Đọc kết quả — năm dạng thường gặp' },
+    { k: 'bang', cot: ['Dạng', 'Nghĩa là gì và làm gì tiếp'], tu: 'TEST_DOC' }
+  ]},
+
+/* ══════════ NHÓM 3 · CHI HỘI ══════════ */
+'chi-hoi': { k: 'Lớp L5 · hạt nhân vận hành', t: 'Chi hội Gen Việt — mô hình chiều sâu',
+  p: 'Câu lạc bộ không phải sinh hoạt ngoại khoá. Nó là đơn vị vận hành nhỏ nhất của cả hệ thống, tổ chức theo khung chi hội của BNI, dịch toàn bộ sang mục đích rèn người trẻ.',
+  khoi: [
+    { k: 'the', tu: 'CLB_GOC' },
+    { k: 'bang', cot: ['Điểm chốt', 'Chuẩn'], tu: 'CLB_QUYMO' },
+    { k: 'van', t: 'Bốn thứ mượn từ BNI — kịch bản không đổi, bảng số hằng tuần, ghế luân phiên, ban thành viên gác chuẩn — đều nằm ở các màn tiếp theo của nhóm này.' }
+  ]},
+
+'vong': { k: 'Chi hội', t: 'Sáu vòng chiều sâu',
+  p: 'Đường đi của một người trong chi hội, từ khách mời tới cố vấn.',
+  khoi: [
+    { k: 'buoc', tu: 'CLB_VONG' },
+    { k: 'van', t: 'Vòng trong chi hội và bậc nhân tài là *hai thang khác nhau nhưng khớp vào nhau*: vòng đo vị trí của em trong cộng đồng, bậc đo năng lực của em trong hộ chiếu. Không được lấy vòng thay cho bậc — một em rất được yêu quý trong chi hội vẫn có thể chưa đủ bằng chứng để lên bậc.' }
+  ]},
+
+'kich-ban': { k: 'Chi hội', t: 'Kịch bản buổi sinh hoạt — 90 phút, không đổi',
+  p: 'Chín mục, cố định. Đây là thứ khiến một chi hội ở Hà Nội và một chi hội ở Sơn La chạy giống nhau.',
+  khoi: [
+    { k: 'lich', tu: 'CLB_KICHBAN' },
+    { k: 'van', t: '*Ban điều hành không được phép sửa kịch bản.* Chỉ Hội đồng Gen Việt sửa, và mỗi lần sửa áp cho toàn quốc. Một chi hội thấy mục nào không hợp thì gửi đề nghị lên vùng, không tự bỏ.' },
+    { k: 'van', t: 'Kết thúc đúng phút thứ 90 là điều khó nhất và đáng giá nhất trong cả kịch bản. Một buổi kéo dài thêm mười lăm phút mỗi tuần là mười ba giờ bị lấy mất của mỗi thành viên trong một năm.' }
+  ]},
+
+'bang-so': { k: 'Chi hội', t: 'Bảng số tuần — bảy cột',
+  p: 'Thành viên tự ghi, tự chịu trách nhiệm. Thư ký công bố trong 24 giờ. Số thật, không sửa.',
+  khoi: [
+    { k: 'bang', cot: ['Cột', 'Đo gì', 'Đơn vị', 'Luật'], tu: 'CLB_BANGSO' },
+    { k: 'van', t: 'Bảng số xếp mỗi thành viên vào một trong bốn băng — cùng bốn băng hệ thống đã dùng cho gia đình, nên một Coach nhìn là hiểu ngay.' },
+    { k: 'mau', tu: 'BANG_MAU' },
+    { k: 'van', t: 'Gọi tên người ở băng ĐỎ giữa buổi họp là *để cả chi hội giúp, không phải để phạt*. Ranh giới này mỏng và rất dễ trượt: một đội trưởng gọi tên bằng giọng trách móc sẽ giết cột trung thực của cả chi hội trong ba tuần.' }
+  ]},
+
+'ban-dieu-hanh': { k: 'Chi hội', t: 'Bảy ghế và nhiệm kỳ sáu tháng',
+  p: 'Mọi thành viên phải qua ít nhất một ghế trước khi được xét bậc 4. Đây là chỗ một người trẻ học lãnh đạo bằng cách chịu trách nhiệm thật, trước những người bạn có quyền bỏ phiếu thay mình.',
+  khoi: [
+    { k: 'bang', cot: ['Ghế', 'Làm gì', 'KPI của ghế'], tu: 'CLB_BAN' },
+    { k: 'muc', t: 'Ba mốc đào tạo bắt buộc mỗi nhiệm kỳ' },
+    { k: 'van', tu: 'BDH_N' },
+    { k: 'moc', tu: 'BDH_DS' },
+    { k: 'the', t: 'Sổ ghế', tu: 'BDH_SO' }
+  ]},
+
+'to-mui-nhon': { k: 'Chi hội', t: 'Tổ mũi nhọn',
+  p: 'Bốn đến sáu thành viên có hướng bổ trợ nhau, gặp riêng hai tuần một lần và cùng nhận một dự án.',
+  khoi: [
+    { k: 'van', tu: 'TO_N' },
+    { k: 'ds', tu: 'TO_DS' },
+    { k: 'van', t: 'Luật *một mũi nhọn một người* áp trong chi hội, không áp trong tổ: một tổ Truyền thông có thể có sáu em, nhưng mỗi em giữ một mũi khác nhau — viết, ảnh, dựng phim, dẫn chương trình, thiết kế, phân phối. Đây là cách chi hội có đủ mũi mà không ai phải tranh sân của ai.' }
+  ]},
+
+'luat-chi-hoi': { k: 'Chi hội', t: 'Mười điều luật',
+  p: 'Đọc trong buổi đầu tiên của mọi thành viên mới, và nhắc lại mỗi khi có người vi phạm — nhắc luật, không nhắc tên.',
+  khoi: [
+    { k: 'luat', tu: 'CLB_LUAT' },
+    { k: 'muc', t: 'Xử vi phạm — ba nấc' },
+    { k: 'bang', cot: ['Nấc', 'Khi nào', 'Ai xử', 'Hệ quả'], hang: [
+      ['Nhắc riêng', 'Vi phạm lần đầu, không cố ý', 'Đội trưởng hoặc Trưởng ban Thành viên', 'Nói riêng, không nêu trước chi hội. Ghi vào sổ, không ghi vào hồ sơ'],
+      ['Nhắc trước ban', 'Lặp lại lần hai, hoặc ảnh hưởng tới người khác', 'Ban Thành viên', 'Gặp có phụ huynh. Đặt một cam kết cụ thể có thời hạn 30 ngày'],
+      ['Dừng tư cách', 'Khai gian bảng số · ba lần vắng không phép · vi phạm an toàn', 'Ban Thành viên biểu quyết', 'Ra khỏi chi hội. Được quay lại sau sáu tháng nếu có đơn và có người bảo trợ']
+    ]},
+    { k: 'van', t: 'Một điều luật không bao giờ được thực thi thì tệ hơn là không có điều luật ấy: nó dạy cả chi hội rằng luật ở đây là thứ nói cho vui.' }
+  ]},
+
+'mo-chi-hoi': { k: 'Chi hội', t: 'Mở chi hội mới và ba tầng tổ chức',
+  p: 'Chi hội mở chi hội — không phải Học viện mở chi hội. Đây là cơ chế nhân bản duy nhất giữ được chuẩn, vì người đi mở đã sống trong chuẩn ấy nhiều năm.',
+  khoi: [
+    { k: 'ds', so: true, tu: 'CLB_MOMOI_B' },
+    { k: 'van', tu: 'CLB_MOMOI_N' },
+    { k: 'muc', t: 'Ba tầng tổ chức' },
+    { k: 'bang', cot: ['Tầng', 'Quy mô', 'Nhịp', 'Làm gì'], tu: 'CLB_BATANG' },
+    { k: 'van', t: 'Liên chi hội vùng tồn tại vì đúng một lý do: *chấm chéo*. Không có ai từ bên ngoài chấm, mọi chi hội đều tin là mình đang chạy đúng chuẩn — và sau ba năm, mười chi hội thành mười chuẩn khác nhau.' }
+  ]},
+
+'lich-nam': { k: 'Chi hội', t: 'Lịch năm — năm mươi hai tuần',
+  p: 'Bốn quý, mỗi quý mười ba tuần. Lịch này là lịch chung toàn quốc: chi hội không tự đổi mốc, để liên chi hội chấm chéo được và để mọi nơi cùng nhịp.',
+  khoi: [
+    { k: 'quy', tu: 'LICH_NAM' },
+    { k: 'van', t: 'Ba mốc không được bỏ trong bất cứ hoàn cảnh nào: *bầu ban điều hành* (T1 và T26), *ngày mở cửa* (mỗi quý một lần), và *đại hội* (T52). Bỏ mốc thứ nhất thì chi hội thành sở hữu của một người; bỏ mốc thứ hai thì chi hội khép kín; bỏ mốc thứ ba thì không ai còn nhìn thấy mình thuộc về cái gì lớn hơn.' }
+  ]},
+
+/* ══════════ NHÓM 4 · THỰC TIỄN ══════════ */
+'moi-truong': { k: 'Nơi năng lực bị kiểm', t: 'Bốn môi trường thực tiễn',
+  p: 'Chi hội là nơi RÈN. Bốn môi trường này là nơi THI. Chi hội không được tự cấp bằng chứng cho chính mình — mọi cổng bậc đều đòi bằng chứng từ ít nhất hai môi trường.',
+  khoi: [
+    { k: 'mt', tu: 'MOI_TRUONG' },
+    { k: 'van', t: 'Từ bậc 3 trở lên, *không có bằng chứng M4 thì không qua cổng*. Đây là điều phân biệt một học sinh giỏi với một người trẻ có ích, và là điều khiến hệ thống này không trở thành một lò luyện thành tích kiểu mới.' }
+  ]},
+
+'vong-tuan': { k: 'Thực tiễn', t: 'Vòng bảy ngày của một thành viên',
+  p: 'Nơi bốn môi trường và chi hội khớp vào nhau thành một tuần sống được.',
+  khoi: [
+    { k: 'nhip2', tu: 'TUAN' },
+    { k: 'van', t: 'Bảy ngày ấy là thứ biến toàn bộ kiến trúc thành đời sống thật của một đứa trẻ. *Nếu một tuần không chạy được thì ba mươi năm cũng không chạy được* — nên đây là đơn vị phải thử trước tiên, trước khi bàn tới vùng, tới quy mô, tới quốc gia.' },
+    { k: 'van', t: 'Tổng thời gian hệ thống đòi của một em: khoảng *bốn tiếng rưỡi mỗi tuần* — 90 phút chi hội, 30 phút cặp đôi rèn, 30 phút hội đồng gia đình, và phần còn lại nằm trong việc em vốn đã phải làm ở lớp và ở nhà. Nếu con số phình lên quá sáu tiếng, hệ thống đang lấn sang chỗ của việc học và phải cắt bớt.' }
+  ]},
+
+'so-tay-mt': { k: 'Thực tiễn', t: 'Sổ tay ba môi trường',
+  p: 'M1 lớp học · M3 gia đình · M4 xã hội — làm gì cụ thể, ai xác nhận, và cái bẫy thường gặp của mỗi môi trường.',
+  khoi: [{ k: 'stmt', tu: 'SO_TAY_MT' }] },
+
+'so-tay-vai': { k: 'Thực tiễn', t: 'Sổ tay từng vai',
+  p: 'Sáu vai chạm trực tiếp vào người học. Mỗi vai: việc hằng tuần, việc hằng tháng, những gì không được làm, và đo bằng gì.',
+  khoi: [
+    { k: 'stv', tu: 'SO_TAY' },
+    { k: 'van', t: 'Cột *không được làm* quan trọng ngang cột việc phải làm. Phần lớn hỏng hóc trong một hệ đào tạo không đến từ việc người ta làm thiếu, mà từ việc người ta làm thêm những thứ tưởng là tốt: làm hộ, nhắc thêm, hứa thưởng, giữ ca.' }
+  ]},
+
+/* ══════════ NHÓM 5 · ĐO VÀ NGHIỆM THU ══════════ */
+'bang-mau': { k: 'Hệ đo', t: 'Bốn băng màu',
+  p: 'Đo tình trạng một người hoặc một nhà ngay lúc này. Băng độc lập với bậc: một nhà bậc 4 vẫn có thể ở ĐỎ, một nhà bậc 1 vẫn có thể XANH.',
+  khoi: [
+    { k: 'mau', tu: 'BANG_MAU' },
+    { k: 'van', t: 'Trộn hai trục này là lỗi thường gặp nhất khi đọc bảng số. *Bậc là năng lực tích luỹ; băng là tình trạng hiện thời.* Một người có thể mất băng XANH trong hai tuần, nhưng không mất bậc — bậc chỉ mất khi có gian dối.' },
+    { k: 'van', t: 'Chuẩn chạm băng ĐỎ trong 48 giờ áp cho cả chi hội lẫn Coach. Không ai được để một người ở ĐỎ qua một cuối tuần mà không có ai gọi.' }
+  ]},
+
+'kpi': { k: 'Hệ đo', t: 'Bảy chỉ số của hệ thống',
+  p: 'Không đo số học viên đăng ký. Đo xem hệ thống có đang tự lớn lên được không.',
+  khoi: [
+    { k: 'bang', cot: ['Chỉ số', 'Vì sao đo', 'Đơn vị'], tu: 'KPI_HE' },
+    { k: 'trich', t: 'Không nâng cấp theo thời gian; nâng theo bằng chứng năng lực.', n: 'GITA Tầng 4 · nguyên tắc gốc, giữ nguyên cho toàn bộ sáu bậc' },
+    { k: 'van', t: 'Trong bảy chỉ số, *hệ số tự tái tạo* là chỉ số duy nhất quyết định tầm nhìn ba mươi năm có khả thi hay không. Dưới 1,0 nghĩa là hệ phải tuyển mới để bù hao hụt; trên 2,0 nghĩa là hệ tự lớn dù không quảng cáo thêm một đồng nào.' }
+  ]},
+
+'cong-nghiem-thu': { k: 'Hệ đo', t: 'Cổng nghiệm thu — một trăm điểm',
+  p: 'Sáu cột, ngưỡng đạt 85. Người chấm không được là người dạy.',
+  khoi: [
+    { k: 'ds', tu: 'CONG_LUAT' },
+    { k: 'diem', tu: 'CONG_BANG' },
+    { k: 'muc', t: 'Quyết định sau khi chấm' },
+    { k: 'bang', cot: ['Điểm', 'Quyết định'], tu: 'CONG_QUYET' },
+    { k: 'van', t: 'Dưới 85 *không phải là trượt em ấy* — là chưa đủ bằng chứng. Cách nói ở buổi công bố quyết định phần lớn kết quả của chu kỳ sau: "em còn thiếu bằng chứng ở cột này" mở ra một chu kỳ; "em chưa đạt" đóng lại một đứa trẻ.' }
+  ]},
+
+'bao-cao': { k: 'Hệ đo', t: 'Bốn báo cáo',
+  p: 'Tuần · tháng · quý · năm. Mỗi báo cáo có một người làm, một nơi nhận và một hạn — không có báo cáo nào "gửi cho mọi người khi nào xong".',
+  khoi: [
+    { k: 'bang', cot: ['Chu kỳ', 'Ai làm', 'Gửi ai', 'Hạn', 'Gồm gì'], tu: 'BAO_CAO' },
+    { k: 'van', t: 'Báo cáo năm được *công bố công khai*. Một hệ thống dám công bố hệ số tự tái tạo và tỷ lệ giữ 5 năm của chính mình là hệ thống khó nói dối về chất lượng — kể cả nói dối chính mình.' }
+  ]},
+
+'bieu-mau': { k: 'Hệ đo', t: 'Mười bốn biểu mẫu',
+  p: 'Bộ giấy tờ vận hành. Mỗi biểu mẫu có mã, có người lập, có người nhận. Đây là thứ biến chuẩn thành thói quen hằng tuần.',
+  khoi: [
+    { k: 'bm', tu: 'BIEU_MAU' },
+    { k: 'van', t: 'Nguyên tắc thiết kế biểu mẫu ở đây: *ngắn tới mức điền được trong ba phút*. Một biểu mẫu dài mười phút sẽ được điền cho có sau tuần thứ tư, và từ đó mọi số liệu phía sau đều sai.' }
+  ]},
+
+/* ══════════ NHÓM 6 · DỮ LIỆU ══════════ */
+'ma-hoa': { k: 'Lớp L2', t: 'Hệ mã hoá',
+  p: 'Một mã phải đọc được bằng mắt, không cần tra bảng. Đây là thứ giữ cho một kho ba mươi năm không biến thành đống tài liệu vô danh.',
+  khoi: [
+    { k: 'bang', cot: ['Mã mẫu', 'Là gì', 'Đọc thế nào'], tu: 'MA_HOA' },
+    { k: 'the', tu: 'GHEP' }
+  ]},
+
+'ho-so-json': { k: 'Lớp L2', t: 'Mô hình hộ chiếu nhân tài',
+  p: 'Bản gốc là JSON, vì JSON là thứ đọc được sau ba mươi năm mà không cần phần mềm nào của hôm nay còn tồn tại. Mọi định dạng khác đều là bản sao phục vụ tốc độ.',
+  khoi: [
+    { k: 'ma', tu: 'HO_CHIEU_JSON' },
+    { k: 'muc', t: 'Năm luật ghi dữ liệu' },
+    { k: 'luoi', c: 2, tu: 'HO_CHIEU_LUAT' }
+  ]},
+
+'bang-luu': { k: 'Lớp L2', t: 'Bảng lưu, đường máy chủ và quyền',
+  p: 'Mười hai bảng, chín đường, mười quyền. Nối thẳng vào bảng phân quyền sẵn có của hệ thống v8 — một nguồn sự thật duy nhất cho cả hai bên.',
+  khoi: [
+    { k: 'bang', cot: ['Bảng', 'Cột chính', 'Ghi chú'], tu: 'BANG_LUU' },
+    { k: 'muc', t: 'Giao diện máy chủ' },
+    { k: 'bang', cot: ['Đường', 'Làm gì'], tu: 'API' },
+    { k: 'muc', t: 'Quyền mới cần thêm' },
+    { k: 'bang', cot: ['Mã quyền', 'Cho phép', 'Ai có'], tu: 'QUYEN' },
+    { k: 'van', t: 'Quyền *gv_cong_cham* có một luật riêng: hệ thống phải từ chối khi người chấm trùng với người dạy chính ca đó. Không dựa vào người dùng tự giữ ranh giới — máy chủ chặn.' }
+  ]},
+
+'cong-nghe': { k: 'Lớp L2', t: 'Lộ trình công nghệ và ba tầng lưu',
+  p: 'Ba chặng, mỗi chặng có một điều kiện bắt buộc không được bỏ qua để sang chặng sau.',
+  khoi: [
+    { k: 'bang', cot: ['Chặng', 'Làm gì', 'Được', 'Hạn', 'Điều kiện bắt buộc'], tu: 'CONG_NGHE' },
+    { k: 'muc', t: 'Ba tầng lưu trữ' },
+    { k: 'luoi', c: 3, tu: 'LUU_BA_TANG' }
+  ]},
+
+'nguyen-tac-kt': { k: 'Lớp L2', t: 'Bảy nguyên tắc dựng phần mềm',
+  p: 'Cho một hệ phải chạy ba mươi năm, đổi người viết ít nhất ba lần.',
+  khoi: [
+    { k: 'luoi', c: 2, tu: 'NGUYEN_TAC_KT' },
+    { k: 'van', t: 'Cả bảy nguyên tắc đều đã được kiểm chứng trên chính hệ thống GITA 365 v8 — kể cả nguyên tắc về số bản, vốn ra đời từ một lần chủ Học viện mở nhầm tệp cũ và tưởng phần sửa chưa chạy.' }
+  ]},
+
+/* ══════════ NHÓM 7 · VẬN HÀNH ══════════ */
+'vai-tro': { k: 'Lớp L4', t: 'Hai mươi vai',
+  p: 'Mười lăm vai của hệ thống hiện tại giữ nguyên. Năm vai mới thuộc phần mà một hệ huấn luyện nhân tài cần mà hệ xử lý ca không cần.',
+  khoi: [
+    { k: 'vai', tu: 'VAI' },
+    { k: 'van', t: 'Vai *Mentor học viên (bậc 5)* là vai quan trọng nhất trong năm vai mới: nó là cửa duy nhất để sản phẩm của hệ trở thành lực lượng của hệ. Không có vai này, hệ số tự tái tạo vĩnh viễn bằng không.' }
+  ]},
+
+'tai-chinh': { k: 'Lớp L4', t: 'Tài chính và Quỹ Nhân tài',
+  p: 'Một luật không thương lượng, bốn dòng tiền, và năm phần trăm trích cố định.',
+  khoi: [
+    { k: 'luat1', tu: 'TC_LUAT' },
+    { k: 'bang', cot: ['Dòng tiền', 'Vai trò trong hệ', 'Tỷ trọng mục tiêu'], tu: 'TC_DONG' },
+    { k: 'the', tu: 'TC_QUY' },
+    { k: 'van', t: 'Ngưỡng cảnh báo: không dòng nào vượt *70% doanh thu*. Vượt hai quý liên tiếp thì kế hoạch năm sau bắt buộc phải có dòng thứ hai — chi tiết ở màn Bảy rủi ro.' }
+  ]},
+
+'an-toan': { k: 'Lớp L6', t: 'An toàn và đạo đức',
+  p: 'Phần này không được rút gọn cho vừa trang. Một hệ thống làm việc với trẻ em mà phần này mỏng thì mọi phần khác đều không có giá trị.',
+  khoi: [
+    { k: 'luoi', c: 2, tu: 'AT_LUAT' },
+    { k: 'muc', t: 'Dấu hiệu phải chuyển tuyến trong 24 giờ' },
+    { k: 'canh', tu: 'AT_DAU' },
+    { k: 'muc', t: 'Quy trình khi gặp dấu hiệu' },
+    { k: 'ds', so: true, tu: 'AT_QUY' },
+    { k: 'van', t: 'Gen Việt là hệ huấn luyện phát triển, *không phải nơi trị liệu tâm lý*. Giữ một ca vượt ranh giới chuyên môn vì tiếc doanh thu hoặc vì tin mình xử lý được là sai lầm nghiêm trọng nhất mà một Coach có thể mắc.' }
+  ]},
+
+'rui-ro': { k: 'Lớp L6', t: 'Bảy rủi ro và phanh',
+  p: 'Một tầm nhìn ba mươi năm không chết vì thiếu ý tưởng. Nó chết vì bảy thứ dưới đây, và mỗi thứ chỉ dừng được bằng một cái phanh cụ thể, đặt sẵn từ trước.',
+  khoi: [{ k: 'rui', tu: 'RUI_RO' }] },
+
+/* ══════════ NHÓM 8 · TRIỂN KHAI ══════════ */
+'ngay-90': { k: 'Làm ngay', t: 'Chín mươi ngày đầu tiên',
+  p: 'Không phần nào cần thêm người, thêm tiền hay thêm phần mềm. Toàn bộ chạy được bằng đội ngũ và hệ thống hiện có.',
+  khoi: [
+    { k: 'bang', cot: ['Mốc', 'Việc', 'Ai', 'Đầu ra'], tu: 'NGAY_90' },
+    { k: 'van', t: 'Thứ tự là *bắt buộc*. Đánh mã kho trước khi khoá bảng chuẩn thì phải đánh lại lần hai; xếp bậc trước khi có cổng mẫu thì mỗi Coach xếp một kiểu, và bản đồ bậc đầu tiên của cả hệ sẽ sai ngay từ ngày lập ra.' }
+  ]},
+
+'nam-dau': { k: 'Triển khai', t: 'Năm đầu tiên — bốn quý',
+  p: 'Mỗi quý một đích, có số. Cuối năm phải có hai chi hội, không phải hai mươi — nhân bản đúng quan trọng hơn nhân bản nhanh.',
+  khoi: [
+    { k: 'nam', tu: 'NAM_DAU' },
+    { k: 'van', t: 'Quý 2 là quý quyết định: một chi hội chạy đúng kịch bản mười hai tuần liền và được quay lại toàn bộ. *Mười hai buổi ấy trở thành tài liệu đào tạo tốt hơn bất cứ thứ gì viết ra trên giấy* — và là thứ chi hội thứ hai sẽ học theo.' }
+  ]},
+
+'ba-muoi-nam': { k: 'Tầm nhìn', t: 'Ba mươi năm, sáu chặng',
+  p: 'Mỗi chặng có một câu hỏi trung tâm và một cổng. Không qua cổng thì không sang chặng sau — kể cả khi lịch đã tới.',
+  khoi: [
+    { k: 'chang', tu: 'CHANG' },
+    { k: 'van', t: 'Ba lần chuyển giao thế hệ người dẫn nằm ở chặng 2, chặng 4 và chặng 6. *Lần đầu phải bắt đầu ở chặng 2, không phải chặng 6.* Một tổ chức bắt đầu nghĩ về kế thừa khi người sáng lập sắp nghỉ là một tổ chức đã muộn mười lăm năm.' }
+  ]},
+
+'nguon': { k: 'Nguồn', t: 'Tài liệu đã dùng',
+  p: 'Phần chuyên môn rút trọn vẹn từ kho tài liệu sẵn có của Học viện. Thứ duy nhất mượn từ bên ngoài là khung tổ chức chi hội của BNI — mượn cấu trúc vận hành, không mượn động cơ kinh tế.',
+  khoi: [
+    { k: 'bang', cot: ['Tài liệu', 'Phần được dùng'], tu: 'NGUON' },
+    { k: 'the', t: 'Phần chưa đọc được',
+      n: 'Thư mục Drive 1m9VQM4bWzS67kRdUehUernmw49wFsWkU (đường dẫn /u/2/) không mở được bằng tài khoản đang kết nối. Nếu thư mục ấy chứa tài liệu khác với danh sách trên, cần chia sẻ lại để bổ sung vào bản thiết kế.' }
+  ]}
+
+};
+
+/* ══════════ BẢNG TRA — nối khối "tu" tới dữ liệu thật ══════════
+   Khối trong GV.MAN không ôm dữ liệu; nó trỏ tới một khoá ở đây. Nhờ vậy
+   một bộ dữ liệu dùng được ở nhiều màn mà không phải chép lần thứ hai. */
+GV.TU = {
+  /* nhóm 1 */
+  DINH_VI_BANG: GV.DINH_VI.bang.map(function (r) { return [r.truc, r.gita, r.gv]; }),
+  NGUYEN_LY: GV.NGUYEN_LY,
+  LOP: GV.LOP,
+  HO_CHIEU_TRUONG: GV.TRUC_DOC.truong.map(function (r) { return [r.k, r.v]; }),
+  BAC: GV.BAC,
+  BAC_MUC: GV.BAC_MUC.map(function (r) { return [r.bac, r.doi, r.chinh]; }),
+  TRU: GV.TRU,
+  MUC: GV.MUC,
+  PHAM_CHAT: GV.PHAM_CHAT,
+
+  /* nhóm 2 */
+  NHIP: GV.NHIP,
+  HINH_THAI: GV.HINH_THAI.map(function (r) { return [r.ma, r.t, r.nhip, r.manh, r.yeu, r.dung, r.bac]; }),
+  LO_TRINH: GV.LO_TRINH,
+  KHOA_NEN: GV.KHOA_NEN,
+  CHUYEN_DE: GV.CHUYEN_DE,
+  TRAI_LY: GV.TRAI.ly,
+  TRAI_DS: GV.TRAI.ds,
+  TRAI_NGAY: GV.TRAI.ngay,
+  TRAI_HAU: GV.TRAI.hau.map(function (r) { return { a: r.n, b: r.v }; }),
+  TEST_LUAT: GV.BO_TEST.luat,
+  TEST_DS: GV.BO_TEST.ds.map(function (r) { return [r.m, r.t, r.do, r.ra]; }),
+  TEST_DOC: GV.BO_TEST.doc.map(function (r) { return [r.d, r.y]; }),
+
+  /* nhóm 3 */
+  CLB_GOC: { t: GV.CLB.goc.t, n: GV.CLB.goc.n, vi: GV.CLB.goc.khac },
+  CLB_QUYMO: GV.CLB.quyMo.map(function (r) { return [r.c, r.v]; }),
+  CLB_VONG: GV.CLB.vong,
+  CLB_KICHBAN: GV.CLB.kichBan,
+  CLB_BANGSO: GV.CLB.bangSo.map(function (r) { return [r.c, r.t, r.d, r.n]; }),
+  CLB_BAN: GV.CLB.ban.map(function (r) { return [r.g, r.l, r.kpi]; }),
+  BDH_N: GV.DAO_TAO_BDH.n,
+  BDH_DS: GV.DAO_TAO_BDH.ds,
+  BDH_SO: GV.DAO_TAO_BDH.soGhe,
+  TO_N: GV.CLB.to.n,
+  TO_DS: GV.CLB.to.ds,
+  CLB_LUAT: GV.CLB.luat,
+  CLB_MOMOI_B: GV.CLB.moMoi.b,
+  CLB_MOMOI_N: GV.CLB.moMoi.n,
+  CLB_BATANG: GV.CLB.baTang.map(function (r) { return [r.t, r.qm, r.nhip, r.lam]; }),
+  LICH_NAM: GV.LICH_NAM,
+
+  /* nhóm 4 */
+  MOI_TRUONG: GV.MOI_TRUONG,
+  TUAN: GV.TUAN.map(function (r) { return { a: r.ng, b: r.v }; }),
+  SO_TAY_MT: GV.SO_TAY_MT,
+  SO_TAY: GV.SO_TAY,
+
+  /* nhóm 5 */
+  BANG_MAU: GV.BANG_MAU,
+  KPI_HE: GV.KPI_HE.map(function (r) { return [r.t, r.vi, r.dv]; }),
+  CONG_LUAT: GV.CONG.luat,
+  CONG_BANG: GV.CONG.bang,
+  CONG_QUYET: GV.CONG.quyet.map(function (r) { return [r.d, r.q]; }),
+  BAO_CAO: GV.BAO_CAO.map(function (r) { return [r.c, r.ai, r.gui, r.han, r.gom]; }),
+  BIEU_MAU: GV.BIEU_MAU,
+
+  /* nhóm 6 */
+  MA_HOA: GV.MA_HOA.map(function (r) { return [r.ma, r.la, r.gt]; }),
+  GHEP: { t: GV.GHEP_KHONG_LUU.t, n: GV.GHEP_KHONG_LUU.n, vi: GV.GHEP_KHONG_LUU.vi },
+  HO_CHIEU_JSON: GV.HO_CHIEU_JSON,
+  HO_CHIEU_LUAT: GV.HO_CHIEU_LUAT,
+  BANG_LUU: GV.BANG_LUU.map(function (r) { return [r.b, r.k, r.n]; }),
+  API: GV.API.map(function (r) { return [r.d, r.v]; }),
+  QUYEN: GV.QUYEN.map(function (r) { return [r.q, r.v, r.ai]; }),
+  CONG_NGHE: GV.CONG_NGHE.map(function (r) { return [r.ten + ' — ' + r.chang, r.lam, r.duoc, r.han, r.phai]; }),
+  LUU_BA_TANG: GV.LUU_BA_TANG.map(function (r) { return { t: r.t, n: r.gi, vi: r.mat }; }),
+  NGUYEN_TAC_KT: GV.NGUYEN_TAC_KT,
+
+  /* nhóm 7 */
+  VAI: GV.VAI,
+  TC_LUAT: { t: GV.TAI_CHINH.luat, n: GV.TAI_CHINH.vi },
+  TC_DONG: GV.TAI_CHINH.dong.map(function (r) { return [r.t, r.vai, r.ty]; }),
+  TC_QUY: { t: GV.TAI_CHINH.quy.t, n: GV.TAI_CHINH.quy.n + ' ' + GV.TAI_CHINH.quy.dung, vi: GV.TAI_CHINH.quy.vi },
+  AT_LUAT: GV.AN_TOAN.luat,
+  AT_DAU: GV.AN_TOAN.dau,
+  AT_QUY: GV.AN_TOAN.quy.map(function (r) { return r.v; }),
+  RUI_RO: GV.RUI_RO,
+
+  /* nhóm 8 */
+  NGAY_90: GV.NGAY_90.map(function (r) { return [r.tuan, r.viec, r.ai, r.ra]; }),
+  NAM_DAU: GV.NAM_DAU,
+  CHANG: GV.CHANG,
+  NGUON: GV.NGUON.map(function (r) { return [r.t, r.l]; })
+};
