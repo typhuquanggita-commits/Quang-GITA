@@ -35,6 +35,7 @@ import type {
   ThemeMode,
 } from '../types.ts';
 import { loadRaw, makeDebouncedSaver, migrate, SCHEMA_VERSION, clearAll } from '../lib/storage.ts';
+import { own } from '../lib/record.ts';
 import { addDays, isoDate, uid } from '../lib/util.ts';
 import { estimateAbility } from '../engine/irt.ts';
 import { newCard, review as reviewCard, type Grade } from '../engine/srs.ts';
@@ -267,7 +268,7 @@ export function reducer(state: AppState, action: Action): AppState {
       // Incremental Bayesian update: treat the current estimate as the prior
       // and fold in the single new response. Cheap, and it converges to the
       // same place as re-estimating over the whole history.
-      const priorSkill = state.ability[action.skill] ?? { theta: 0, se: 1, n: 0, updatedAt: 0 };
+      const priorSkill = own(state.ability, action.skill) ?? { theta: 0, se: 1, n: 0, updatedAt: 0 };
       const skillResult = estimateAbility(
         [{ item: action.question.irt, correct: action.correct }],
         { mean: priorSkill.theta, sd: Math.max(0.35, priorSkill.se) },
@@ -306,7 +307,7 @@ export function reducer(state: AppState, action: Action): AppState {
       return { ...state, srs: { ...state.srs, [action.card.ref]: action.card } };
 
     case 'srs/review': {
-      const card = state.srs[action.ref] ?? newCard(action.ref);
+      const card = own(state.srs, action.ref) ?? newCard(action.ref);
       return { ...state, srs: { ...state.srs, [action.ref]: reviewCard(card, action.grade) } };
     }
 
@@ -352,7 +353,7 @@ export function reducer(state: AppState, action: Action): AppState {
 
     case 'packet/sheetDone': {
       const today = isoDate();
-      const prior = state.packets[action.skill];
+      const prior = own(state.packets, action.skill);
       // A set, not a list: finishing the same sheet twice is a revisit, not a
       // second completion, and must not inflate progress.
       const done = prior?.done.includes(action.sheet)
@@ -371,7 +372,7 @@ export function reducer(state: AppState, action: Action): AppState {
 
     case 'lesson/read': {
       const today = isoDate();
-      const prior = state.lessons[action.skill];
+      const prior = own(state.lessons, action.skill);
       return {
         ...state,
         lessons: {

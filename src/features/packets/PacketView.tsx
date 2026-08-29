@@ -19,6 +19,7 @@
  */
 
 import React, { useMemo, useState } from 'react';
+import { own } from '../../lib/record.ts';
 import type { Question } from '../../types.ts';
 import { BANK } from '../../data/bank.ts';
 import { sectionLabel, skillLabel } from '../../data/blueprint.ts';
@@ -59,7 +60,8 @@ export function PacketView({
   const { state, dispatch } = useStore();
 
   const packet = useMemo(() => buildPacket(skill, BANK), [skill]);
-  const done = (state.packets[skill]?.done ?? []) as SheetKind[];
+  // `skill` comes from the URL, so the lookup must not inherit.
+  const done = (own(state.packets, skill)?.done ?? []) as SheetKind[];
   const progress = packetProgress(done);
   const [sheet, setSheet] = useState<SheetKind>(() => progress.next ?? 'theory');
 

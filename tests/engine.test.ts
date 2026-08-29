@@ -934,8 +934,18 @@ test('each teacher rank grants exactly what it should', () => {
 
   const head = { role: 'teacher' as const, rank: 'head' as const };
   assert.ok(can(head, 'teacher.promote'));
-  assert.ok(can(head, 'bank.publish'));
   assert.ok(can(head, 'audit.view'));
+
+  // Publishing item parameters changes the basis on which every score in the
+  // system is computed. That is a psychometric act, not a teaching one, and it
+  // sits with the product administrator — no teaching rank reaches it.
+  for (const rank of TEACHER_RANK_ORDER) {
+    assert.ok(
+      !can({ role: 'teacher', rank }, 'bank.publish'),
+      `a ${rank} can publish item parameters`,
+    );
+  }
+  assert.ok(can({ role: 'product-admin' }, 'bank.publish'));
 });
 
 test('a teacher may still study', () => {
@@ -945,7 +955,7 @@ test('a teacher may still study', () => {
 });
 
 test('an administrator holds every permission', () => {
-  const admin = { role: 'admin' as const };
+  const admin = { role: 'super-admin' as const };
   assert.ok(can(admin, 'org.settings'));
   assert.ok(can(admin, 'teacher.promote'));
   assert.ok(can(admin, 'practice.run'));
@@ -955,7 +965,7 @@ test('class permissions are scoped to the classes a teacher teaches', () => {
   const teacher = { role: 'teacher' as const, rank: 'senior' as const, classIds: ['cls_a'] };
   assert.ok(canForClass(teacher, 'class.edit', 'cls_a'));
   assert.ok(!canForClass(teacher, 'class.edit', 'cls_b'), 'a teacher must not edit a class they do not teach');
-  assert.ok(canForClass({ role: 'admin' }, 'class.edit', 'cls_b'), 'an administrator is unscoped');
+  assert.ok(canForClass({ role: 'super-admin' }, 'class.edit', 'cls_b'), 'a super administrator is unscoped');
 });
 
 test('reading another learner requires a shared class', () => {

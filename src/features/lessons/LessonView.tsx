@@ -12,6 +12,7 @@
  */
 
 import React, { useMemo } from 'react';
+import { own } from '../../lib/record.ts';
 import type { Question } from '../../types.ts';
 import { BANK } from '../../data/bank.ts';
 import { lessonFor } from '../../data/lesson-index.ts';
@@ -39,7 +40,8 @@ export function LessonView({
   const { state, dispatch } = useStore();
 
   const lesson = lessonFor(skill);
-  const progress = state.lessons[skill] ?? null;
+  // `skill` comes from the URL, so the lookup must not inherit.
+  const progress = own(state.lessons, skill) ?? null;
 
   const drill = useMemo((): Question[] => {
     if (!lesson) return [];

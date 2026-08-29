@@ -13,6 +13,7 @@
  */
 
 import React, { useMemo, useState } from 'react';
+import { own } from '../../lib/record.ts';
 import type { SectionId, SkillId } from '../../types.ts';
 import { LESSONS, type Lesson } from '../../data/lesson-index.ts';
 import { sectionLabel, skillLabel } from '../../data/blueprint.ts';
@@ -51,11 +52,11 @@ export function LessonLibrary({ navigate }: { navigate(route: Route): void }): R
         return haystack.includes(needle);
       })
       .map((lesson) => {
-        const estimate = state.ability[lesson.skill];
+        const estimate = own(state.ability, lesson.skill);
         // An ability estimate from two responses is noise wearing the costume
         // of a measurement; it must not decide what a learner reads first.
         const theta = estimate && estimate.n >= MIN_FOR_RANK ? estimate.theta : null;
-        return { lesson, theta, progress: state.lessons[lesson.skill] ?? null };
+        return { lesson, theta, progress: own(state.lessons, lesson.skill) ?? null };
       })
       .sort((a, b) => {
         if (a.theta === null && b.theta === null) return 0;
@@ -65,7 +66,7 @@ export function LessonLibrary({ navigate }: { navigate(route: Route): void }): R
       });
   }, [scope, query, state.ability, state.lessons]);
 
-  const readCount = LESSONS.filter((lesson) => state.lessons[lesson.skill]).length;
+  const readCount = LESSONS.filter((lesson) => own(state.lessons, lesson.skill)).length;
 
   return (
     <div className="page stack gap-6">

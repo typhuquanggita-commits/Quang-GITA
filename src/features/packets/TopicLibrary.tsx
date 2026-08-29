@@ -8,6 +8,7 @@
  */
 
 import React, { useMemo, useState } from 'react';
+import { own } from '../../lib/record.ts';
 import type { SectionId } from '../../types.ts';
 import { LESSONS } from '../../data/lesson-index.ts';
 import { BANK } from '../../data/bank.ts';
@@ -36,10 +37,10 @@ export function TopicLibrary({ navigate }: { navigate(route: Route): void }): Re
       LESSONS.filter((lesson) => scope === 'both' || lesson.section === scope)
         .map((lesson) => {
           const packet = buildPacket(lesson.skill, BANK);
-          const estimate = state.ability[lesson.skill];
+          const estimate = own(state.ability, lesson.skill);
           const theta = estimate && estimate.n >= MIN_FOR_RANK ? estimate.theta : null;
           const progress = packetProgress(
-            (state.packets[lesson.skill]?.done ?? []) as SheetKind[],
+            (own(state.packets, lesson.skill)?.done ?? []) as SheetKind[],
           );
           return { lesson, packet, theta, progress };
         })

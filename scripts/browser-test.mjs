@@ -274,8 +274,14 @@ try {
 
   await page.evaluate(() => { window.location.hash = '#/settings'; });
   await page.waitForTimeout(500);
+  const roleOptions = await page.locator('select').first().locator('option').count();
+  check('every role is offered, not just three', roleOptions === 8, `${roleOptions}`);
   await page.locator('select').first().selectOption('teacher');
   await page.waitForTimeout(300);
+  check(
+    'the selected role explains what it is for',
+    (await page.getByText(/Dạy các lớp được phân công/).count()) === 1,
+  );
   await page.locator('select').nth(1).selectOption('head');
   await page.waitForTimeout(500);
   check('teaching nav appears for a teacher', (await page.getByRole('button', { name: 'Giảng dạy', exact: true }).count()) === 1);
@@ -340,11 +346,64 @@ try {
   await page.waitForTimeout(300);
   check('viewing it was audited', await page.getByText('student.record.viewed').first().isVisible());
 
+  /* ---------------- Role boundaries ---------------- */
+  group('Role boundaries');
+  // A head of programme runs classes and never touches the item bank's
+  // calibration; a product administrator is the reverse. Each must see its own
+  // surfaces and not the other's.
+  // Publishing item parameters changes the basis of every score, so it sits
+  // with the product administrator rather than on the teaching ladder.
+  check(
+    'a head of programme cannot publish item parameters',
+    (await page.getByRole('button', { name: 'Hiệu chuẩn', exact: true }).count()) === 0,
+  );
+
+  await page.evaluate(() => { window.location.hash = '#/settings'; });
+  await page.waitForTimeout(500);
+  await page.locator('select').first().selectOption('executive');
+  await page.waitForTimeout(500);
+  check(
+    'an executive sees organisation metrics',
+    (await page.getByRole('button', { name: 'Chỉ số tổ chức', exact: true }).count()) === 1,
+  );
+  // The decision most likely to be questioned, so it is checked in the browser
+  // too: seniority is not a reason to read a child's record.
+  check(
+    'an executive is not offered the teaching console',
+    (await page.getByRole('button', { name: 'Giảng dạy', exact: true }).count()) === 0,
+  );
+
+  await page.getByRole('button', { name: 'Chỉ số tổ chức', exact: true }).first().click();
+  await page.waitForTimeout(600);
+  check('the metrics page opens', (await title()).includes('Chỉ số tổ chức'));
+  check(
+    'it states that no learner is named',
+    (await page.getByText(/Không có học sinh nào được nêu tên/).count()) >= 1,
+  );
+  check(
+    'a cohort too small to hide in is suppressed, not reported',
+    (await page.getByText(/để công bố/).count()) >= 1,
+  );
+
+  await page.evaluate(() => { window.location.hash = '#/settings'; });
+  await page.waitForTimeout(500);
+  await page.locator('select').first().selectOption('super-admin');
+  await page.waitForTimeout(500);
+
   /* ---------------- Calibration ---------------- */
   group('Calibration console');
+  // Calibration belongs to the role that owns the bank.
+  await page.evaluate(() => { window.location.hash = '#/settings'; });
+  await page.waitForTimeout(500);
+  await page.locator('select').first().selectOption('product-admin');
+  await page.waitForTimeout(500);
   check(
-    'calibration is offered to a head of programme',
+    'calibration is offered to the product administrator',
     (await page.getByRole('button', { name: 'Hiệu chuẩn', exact: true }).count()) === 1,
+  );
+  check(
+    'and the product administrator gets no roster',
+    (await page.getByRole('button', { name: 'Giảng dạy', exact: true }).count()) === 0,
   );
   await page.getByRole('button', { name: 'Hiệu chuẩn', exact: true }).first().click();
   await page.waitForTimeout(600);

@@ -24,6 +24,8 @@ import {
   rankAtLeast,
   rankLabel,
   roleLabel,
+  assignableRoles,
+  canAssignRole,
   studentLevelLabel,
   STUDENT_LEVELS,
   STUDENT_LEVEL_SPECS,
@@ -65,8 +67,8 @@ export function TeacherConsole({ navigate }: { navigate(route: Route): void }): 
           title={locale === 'vi' ? 'Không có quyền truy cập' : 'No access'}
           body={
             locale === 'vi'
-              ? 'Bảng điều khiển giảng dạy chỉ dành cho tài khoản giáo viên. Bạn có thể đổi vai trò trong Cài đặt nếu bạn quản lý thiết bị này.'
-              : 'The teaching console is available to teacher accounts. You can change the role in Settings if you administer this device.'
+              ? 'Bảng điều khiển giảng dạy dành cho các vai trò làm việc trực tiếp với học sinh — giáo viên, coach, tư vấn — và cho admin hệ thống. Các vai trò khác cố ý không có quyền vào đây. Bạn có thể đổi vai trò trong Cài đặt nếu bạn quản lý thiết bị này.'
+              : 'The teaching console is for the roles that work with learners — teacher, coach, consultant — and for system administration. Other roles are deliberately kept out of it. You can change the role in Settings if you administer this device.'
           }
         />
       </div>
@@ -639,8 +641,19 @@ function AssignmentsPanel({ classes, me }: { classes: ClassRoom[]; me: Account }
 function PeoplePanel({ me }: { me: Account }): React.ReactElement {
   const t = useT();
   const locale = useLocale();
-  const { state, dispatch, allows, audit } = useStore();
+  const { state, dispatch, allows, audit, principal } = useStore();
   const org = state.org;
+
+  /*
+   * What this principal may actually issue. Deriving the picker from the same
+   * predicate the handler re-checks means the interface cannot offer an option
+   * the policy will refuse — an offered-then-refused control teaches a user
+   * that the rules are arbitrary.
+   */
+  const assignable = assignableRoles(principal);
+  // A teacher created here starts at the lowest rank; seniority is granted
+  // afterwards, deliberately, rather than conferred at the moment of invite.
+  const inviteRoles = assignable.length > 0 ? assignable : (['student'] as RoleId[]);
 
   const [inviting, setInviting] = useState(false);
   const [name, setName] = useState('');
@@ -688,7 +701,64 @@ function PeoplePanel({ me }: { me: Account }): React.ReactElement {
                     </div>
                     <div className="text-xs muted">{account.email || '—'}</div>
                   </td>
-                  <td>{roleLabel(account.role, locale)}</td>
+                  <td>
+                    {assignable.length > 0 &&
+                    canAssignRole(principal, {
+                      selfId: me.id,
+                      targetId: account.id,
+                      targetCurrentRole: account.role,
+                      nextRole: account.role,
+                    }) ? (
+                      <select
+                        className="select"
+                        style={{ minHeight: 30, padding: '2px 8px' }}
+                        value={account.role}
+                        aria-label={`${account.name} role`}
+                        onChange={(e) => {
+                          const next = e.target.value as RoleId;
+                          // Re-checked here, not merely filtered in the picker:
+                          // a select is a suggestion, and the policy decides.
+                          if (
+                            !canAssignRole(principal, {
+                              selfId: me.id,
+                              targetId: account.id,
+                              targetCurrentRole: account.role,
+                              nextRole: next,
+                            })
+                          ) {
+                            audit({
+                              action: 'permission.denied',
+                              targetId: account.id,
+                              detail: `role.assign → ${next}`,
+                            });
+                            return;
+                          }
+                          dispatch({
+                            type: 'org/setRole',
+                            accountId: account.id,
+                            role: next,
+                            rank: next === 'teacher' ? 'assistant' : undefined,
+                          });
+                          audit({
+                            action: 'role.switched',
+                            targetId: account.id,
+                            detail: `${account.role} → ${next}`,
+                          });
+                        }}
+                      >
+                        <option value={account.role}>{roleLabel(account.role, locale)}</option>
+                        {assignable
+                          .filter((r) => r !== account.role)
+                          .map((r) => (
+                            <option key={r} value={r}>
+                              {roleLabel(r, locale)}
+                            </option>
+                          ))}
+                      </select>
+                    ) : (
+                      roleLabel(account.role, locale)
+                    )}
+                  </td>
                   <td>
                     {account.role === 'teacher' && account.rank ? (
                       allows('teacher.promote') && account.id !== me.id ? (
@@ -790,8 +860,11 @@ function PeoplePanel({ me }: { me: Account }): React.ReactElement {
           <Field label={locale === 'vi' ? 'Vai trò' : 'Role'}>
             {(id) => (
               <select id={id} className="select" value={role} onChange={(e) => setRole(e.target.value as RoleId)}>
-                <option value="student">{roleLabel('student', locale)}</option>
-                <option value="teacher">{roleLabel('teacher', locale)}</option>
+                {inviteRoles.map((r) => (
+                  <option key={r} value={r}>
+                    {roleLabel(r, locale)}
+                  </option>
+                ))}
               </select>
             )}
           </Field>

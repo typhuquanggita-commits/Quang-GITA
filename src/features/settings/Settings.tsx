@@ -12,6 +12,8 @@ import {
   permissionLabel,
   rankLabel,
   roleLabel,
+  ROLE_ORDER,
+  ROLE_PURPOSE,
   TEACHER_RANK_ORDER,
   type Permission,
   type RoleId,
@@ -141,12 +143,25 @@ export function Settings(): React.ReactElement {
                     audit({ action: 'role.switched', targetId: me.id, detail: `${me.role} → ${role}` });
                   }}
                 >
-                  <option value="student">{roleLabel('student', locale)}</option>
-                  <option value="teacher">{roleLabel('teacher', locale)}</option>
-                  <option value="admin">{roleLabel('admin', locale)}</option>
+                  {ROLE_ORDER.map((role) => (
+                    <option key={role} value={role}>
+                      {roleLabel(role, locale)}
+                    </option>
+                  ))}
                 </select>
               )}
             </Field>
+
+            {me && (
+              <div className="stack gap-2">
+                <span className="text-xs muted semibold" style={{ textTransform: 'uppercase', letterSpacing: '0.06em' }}>
+                  {locale === 'vi' ? 'Vai trò này dùng để làm gì' : 'What this role is for'}
+                </span>
+                <p className="text-sm">
+                  {locale === 'vi' ? ROLE_PURPOSE[me.role].vi : ROLE_PURPOSE[me.role].en}
+                </p>
+              </div>
+            )}
 
             {me?.role === 'teacher' && (
               <Field label={locale === 'vi' ? 'Cấp giáo viên' : 'Teacher rank'}>

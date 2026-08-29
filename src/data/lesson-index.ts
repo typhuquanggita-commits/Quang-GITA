@@ -11,6 +11,7 @@
  */
 
 import type { SectionId, SkillId } from '../types.ts';
+import { bareRecord, own } from '../lib/record.ts';
 import { RW_LESSONS, type Lesson } from './lessons.ts';
 import { MATH_LESSONS } from './lessons-math.ts';
 import { RW_TOPICS, type Topic } from './topics.ts';
@@ -20,12 +21,17 @@ export type { Lesson, Trap, WorkedExample } from './lessons.ts';
 
 export const LESSONS: Lesson[] = [...RW_LESSONS, ...MATH_LESSONS];
 
-export const LESSON_BY_SKILL: Record<SkillId, Lesson> = Object.fromEntries(
-  LESSONS.map((lesson) => [lesson.skill, lesson]),
+/*
+ * Null-prototype, so `LESSON_BY_SKILL['constructor']` is undefined rather than
+ * the Object constructor. The skill id arrives from the URL on the lesson
+ * route, and an inherited hit crashed the view.
+ */
+export const LESSON_BY_SKILL: Record<SkillId, Lesson> = bareRecord(
+  LESSONS.map((lesson) => [lesson.skill, lesson] as const),
 );
 
 export function lessonFor(skill: SkillId | undefined): Lesson | undefined {
-  return skill ? LESSON_BY_SKILL[skill] : undefined;
+  return own(LESSON_BY_SKILL, skill);
 }
 
 export function lessonsForSection(section: SectionId): Lesson[] {
@@ -45,10 +51,10 @@ export type { Topic, QuestionType } from './topics.ts';
 
 export const TOPICS: Topic[] = [...RW_TOPICS, ...MATH_TOPICS];
 
-export const TOPIC_BY_SKILL: Record<SkillId, Topic> = Object.fromEntries(
-  TOPICS.map((topic) => [topic.skill, topic]),
+export const TOPIC_BY_SKILL: Record<SkillId, Topic> = bareRecord(
+  TOPICS.map((topic) => [topic.skill, topic] as const),
 );
 
 export function topicFor(skill: SkillId | undefined): Topic | undefined {
-  return skill ? TOPIC_BY_SKILL[skill] : undefined;
+  return own(TOPIC_BY_SKILL, skill);
 }

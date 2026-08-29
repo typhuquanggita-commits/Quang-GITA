@@ -11,10 +11,58 @@ kept strictly apart.
 
 ## Roles
 
-`student`, `teacher`, `admin`.
+Eight roles in two families. The delivery roles work with learners; the
+operating roles run the platform. A person in an operating role is **not**
+automatically able to read a learner's record — `student.analytics.view` is
+granted where the job needs it and withheld where it does not.
 
-Everyone — teachers included — holds the learner permissions. A teacher who
-cannot sit a practice test cannot honestly advise on one.
+| Role | Vietnamese | For |
+| --- | --- | --- |
+| `student` | Học sinh | Studies. Sees their own work and nobody else's. |
+| `teacher` | Giáo viên | Teaches named classes. Authority widens by rank and stays inside those classes. |
+| `coach` | Coach | Works on method and rhythm with named learners. Reads their evidence; administers nothing. |
+| `consultant` | Tư vấn | Designs programmes, reports to families. Sees the shape of progress, not every answer. |
+| `product-admin` | Admin sản phẩm | Owns the item bank and calibration. No access to learner records. |
+| `system-admin` | Admin hệ thống | Runs accounts, classes and settings across the organisation. |
+| `executive` | Giám đốc điều hành | Sees the organisation in aggregate. Holds no access to individual records. |
+| `super-admin` | Super Admin | Every permission, destructive ones included. Should be very few people. |
+
+### Three decisions worth defending
+
+**An executive sees the organisation, not the people in it.** `metrics.aggregate`
+yes; `student.analytics.view` no. A director who needs one learner's record can
+be granted a delivery role, which is auditable. What they must not have is
+standing access to every learner's record by virtue of seniority. Seniority is
+not a reason to read a child's data.
+
+**A consultant sees progress, not transcripts.** They hold
+`student.analytics.view` and not `student.responses.view`: designing a
+programme needs the shape of a learner's progress, not a record of every answer
+they have ever given.
+
+**Publishing item parameters left the teaching ladder.** `bank.publish` changes
+the basis on which every score in the system is computed. That is a
+psychometric act, not a teaching one, so it belongs to the product
+administrator. A head of programme may author items; publishing them is
+somebody else's signature. Held by *each teacher rank grants exactly what it
+should* in `tests/engine.test.ts`.
+
+### The escalation ceiling
+
+`role.assign` without a ceiling is equivalent to super-admin, because the first
+thing anyone holding it would do is manufacture a peer. So `canAssignRole`
+refuses three things:
+
+- assigning a role **at or above** the assigner's own position;
+- changing a target who **already holds** a role at or above the assigner's —
+  demoting a peer removes the check they represent, which is as much an
+  escalation as promoting one;
+- changing **your own** role, whatever you hold.
+
+`assignableRoles` derives the picker from the same predicate the handler
+re-checks, so the interface cannot offer an option the policy will refuse. The
+handler re-checks anyway and writes `permission.denied` if it fires: a select
+element is a suggestion, and the policy decides.
 
 ## Teacher ranks
 

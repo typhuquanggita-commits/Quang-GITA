@@ -94,6 +94,9 @@ const PacketView = lazy(() =>
 const Dossier = lazy(() =>
   import('../dossier/Dossier.tsx').then((m) => ({ default: m.Dossier })),
 );
+const OrgMetrics = lazy(() =>
+  import('../metrics/OrgMetrics.tsx').then((m) => ({ default: m.OrgMetrics })),
+);
 const CalibrationConsole = lazy(() =>
   import('../calibration/CalibrationConsole.tsx').then((m) => ({ default: m.CalibrationConsole })),
 );
@@ -234,6 +237,11 @@ function Shell(): React.ReactElement {
           route: { name: 'console' },
           label: locale === 'vi' ? 'Giảng dạy' : 'Teaching',
           icon: <IconClipboard size={18} />,
+        },
+        {
+          route: { name: 'metrics' },
+          label: locale === 'vi' ? 'Chỉ số tổ chức' : 'Metrics',
+          icon: <IconChart size={18} />,
         },
         {
           route: { name: 'calibration' },
@@ -440,6 +448,8 @@ function RouteView({
       return <StudentDetail accountId={route.accountId} navigate={navigate} />;
     case 'calibration':
       return <CalibrationConsole />;
+    case 'metrics':
+      return <OrgMetrics navigate={navigate} />;
     case 'settings':
       return <Settings />;
     default:

@@ -3,6 +3,7 @@
  */
 
 import React, { useMemo, useState } from 'react';
+import { own } from '../../lib/record.ts';
 import { VOCABULARY, VOCAB_BY_ID } from '../../data/vocabulary.ts';
 import { dueCards, newCard, GRADE_AGAIN, GRADE_EASY, GRADE_GOOD, GRADE_HARD, type Grade } from '../../engine/srs.ts';
 import { useStore } from '../../state/store.tsx';
@@ -26,7 +27,7 @@ export function VocabTrainer(): React.ReactElement {
   );
 
   const unseen = useMemo(
-    () => VOCABULARY.filter((word) => !state.srs[`v:${word.id}`]).sort((a, b) => a.tier - b.tier),
+    () => VOCABULARY.filter((word) => !own(state.srs, `v:${word.id}`)).sort((a, b) => a.tier - b.tier),
     [state.srs],
   );
 
@@ -50,7 +51,7 @@ export function VocabTrainer(): React.ReactElement {
     }
 
     const grade = (g: Grade) => {
-      if (!state.srs[ref]) dispatch({ type: 'srs/upsert', card: newCard(ref) });
+      if (!own(state.srs, ref)) dispatch({ type: 'srs/upsert', card: newCard(ref) });
       dispatch({ type: 'srs/review', ref, grade: g });
       dispatch({ type: 'activity/log', seconds: 12 });
       setIndex(index + 1);
@@ -170,7 +171,7 @@ export function VocabTrainer(): React.ReactElement {
             </thead>
             <tbody>
               {VOCABULARY.map((word) => {
-                const card = state.srs[`v:${word.id}`];
+                const card = own(state.srs, `v:${word.id}`);
                 return (
                   <tr key={word.id}>
                     <td className="semibold">{word.word}</td>

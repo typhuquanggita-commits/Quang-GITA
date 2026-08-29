@@ -7,6 +7,7 @@
  */
 
 import React, { useMemo, useState } from 'react';
+import { own } from '../../lib/record.ts';
 import type { Question } from '../../types.ts';
 import { QUESTION_BY_ID } from '../../data/bank.ts';
 import { sectionLabel, skillLabel } from '../../data/blueprint.ts';
@@ -66,7 +67,7 @@ export function ReviewCentre(): React.ReactElement {
         ? upcoming.map((c) => ({ card: c, question: QUESTION_BY_ID.get(c.ref.slice(2)) }))
         : tab === 'mastered'
           ? mastered
-          : missed.map((q) => ({ card: state.srs[`q:${q.id}`], question: q }));
+          : missed.map((q) => ({ card: own(state.srs, `q:${q.id}`), question: q }));
 
   return (
     <div className="page stack gap-6">

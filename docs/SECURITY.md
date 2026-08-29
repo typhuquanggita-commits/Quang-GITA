@@ -114,3 +114,82 @@ running it through the same migration chain as stored state, so a backup from
 an incompatible version is rejected rather than partially applied.
 
 Erasing data clears storage and resets state in one action.
+
+## Findings from the audit, and what was done
+
+A full pass over the codebase in August 2026. Each finding below was reachable,
+not hypothetical, and each now has a test.
+
+### Prototype pollution through a URL parameter — fixed
+
+`Record<string, T>` is an ordinary object, so `record['constructor']` returns
+the `Object` constructor: a truthy value with none of T's fields. The lesson
+and packet routes take a skill id straight from the URL hash, so
+`#/lesson/constructor` handed the view the `Object` constructor as a lesson and
+crashed it on `lesson.method.map`. `#/packet/toString` did the same, and the
+per-skill progress records restored from storage had the same shape.
+
+Fixed with `src/lib/record.ts`. `own()` returns a value only for an own
+property and is now the only way this codebase indexes a record by a key it did
+not itself produce; `bareRecord()` builds the static indexes with a null
+prototype so nothing is inherited to begin with. Held by *a skill id from the
+URL cannot return an inherited object* in `tests/security.test.ts`.
+
+### A permission could vanish from the administrator's set — fixed
+
+`ALL_PERMISSIONS` is assembled from the grant tables. A permission added to the
+`Permission` union and to no table dropped out of it silently, and the
+super-admin's set — which is built from it — quietly did not include it. The
+failure is invisible: the feature simply never appears, for anyone, with
+nothing to see in a diff. `tests/security.test.ts` now transcribes the union
+independently and asserts the two agree.
+
+### `role.assign` was equivalent to super-admin — fixed by design
+
+Any permission to assign roles is, without a ceiling, the permission to become
+anything: the first thing a holder would do is manufacture a peer. See the
+escalation ceiling in [ROLES.md](ROLES.md). Demotion of a peer is refused for
+the same reason as promotion — removing a check is an escalation.
+
+### An over-grant on the teaching ladder — fixed
+
+A head of programme held `bank.publish`, which changes the basis on which every
+score in the system is computed. Moved to the product administrator.
+
+### Aggregate reporting could identify individuals — fixed
+
+A percentage over four students is not an aggregate; anyone who knows one
+member of a four-person cohort reads the other three off a "75%". Organisation
+metrics now suppress any figure resting on fewer than `DISCLOSURE_FLOOR` (5)
+records, and suppression is a distinct state from absence: `Disclosed<T>` is a
+tagged union, because a caller handed `null` renders a dash and a dash reads as
+"no data" when the truth is "withheld to protect the people in it".
+
+### Checked and found sound
+
+- **No injection surface.** No `dangerouslySetInnerHTML`, no `innerHTML`, no
+  `eval` of strings, no `document.write`, no `target="_blank"`. Item content is
+  rendered as React text and therefore escaped. The `eval` identifiers in
+  `src/lib/expr.ts` are the expression parser's own AST node method.
+- **The calibration import cannot pollute `Object.prototype`.** `JSON.parse`
+  creates own properties, and the parsed payload is never merged into an
+  existing object. Held by a test.
+- **One storage key, no secrets in it.** Learner data never leaves the device.
+
+## What remains true, and is not fixable here
+
+**Authorisation is client-side.** This is the honest headline. The policy in
+`src/auth/roles.ts` is the right model to enforce on a server, and it is not
+enforced by one. A person who owns the device owns the data on it and can edit
+their own role in Settings — that control exists deliberately so one person can
+walk the product from every vantage point, and it is audited, but it is not a
+security boundary. In a hosted deployment role assignment must be a server-side
+action requiring `role.assign`, and every check in this file must be re-run on
+the server.
+
+**Proctoring observes; it does not prevent.** The integrity log records window
+blurs and fullscreen exits. It cannot stop a second device.
+
+**The audit log lives beside the data it audits.** Anyone who can edit the
+state can edit the log. Server-side, it must be append-only and held
+separately.
