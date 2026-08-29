@@ -26,28 +26,116 @@ function napBoKhoaMotLan() {
 var GITA_HAN_KHOA_GIO = 12;
 
 /**
+ * ═══════════════ BỐN TUYẾN ═══════════════
+ * BẢN CHÉP của G.TUYEN trong src/data.tuyen.js. Apps Script không đọc
+ * được tệp trong kho mã nên phải chép; bộ kiểm phát hành (mục 36) đối
+ * chiếu hai bản mỗi lần chạy và dừng phát hành nếu lệch.
+ *
+ * Sửa ở đây thì phải sửa cả src/data.tuyen.js, và ngược lại.
+ *
+ * trangThai: 'chay' — đang phục vụ khách · 'chuan' — còn đang dựng chuẩn.
+ * goiCu: tuyến gốc giữ nguyên tên gói cũ (nghe · tang1…tang5) để mọi
+ * giấy phép đã cấp trước v7.8 vẫn dùng được.
+ */
+var GITA_TUYEN = [
+  { ma: 'GITA365',   trangThai: 'chay',  goiCu: true },
+  { ma: 'ENGWIN365', trangThai: 'chuan', goiCu: false },
+  { ma: 'MATH365',   trangThai: 'chuan', goiCu: false },
+  { ma: 'SAT365',    trangThai: 'chuan', goiCu: false },
+  { ma: 'HSA365',    trangThai: 'chuan', goiCu: false }
+];
+var GITA_SO_TANG = 5;
+
+function gitaTuyen_(ma) {
+  for (var i = 0; i < GITA_TUYEN.length; i++)
+    if (GITA_TUYEN[i].ma === ma) return GITA_TUYEN[i];
+  return null;
+}
+function gitaGoiNghe_(ma) {
+  var t = gitaTuyen_(ma);
+  return t ? (t.goiCu ? 'nghe' : ma.toLowerCase() + '-nghe') : '';
+}
+function gitaGoiTang_(ma, tang) {
+  var t = gitaTuyen_(ma);
+  if (!t || !(tang >= 1 && tang <= GITA_SO_TANG)) return '';
+  return t.goiCu ? 'tang' + tang : ma.toLowerCase() + '-t' + tang;
+}
+
+/**
+ * Tuyến của một tài khoản. Cột "tuyen" trong bảng tài khoản, các mã cách
+ * nhau bằng dấu phẩy. Để trống nghĩa là chỉ GITA365 — nhờ vậy mọi tài
+ * khoản có trước v7.8 giữ nguyên phạm vi cũ mà không phải sửa gì.
+ * Chỉ tuyến ĐANG CHẠY mới được cấp: tuyến đang dựng chuẩn chưa có khoá.
+ */
+function gitaTuyenCuaTK_(hoSo) {
+  var tho = String((hoSo && hoSo.tuyen) || '').trim();
+  /* Ô TRỐNG nghĩa là GITA365 — nhờ vậy mọi tài khoản có trước v7.8 giữ
+     nguyên phạm vi cũ mà không phải điền gì thêm. */
+  if (!tho) return gitaTuyen_('GITA365').trangThai === 'chay' ? ['GITA365'] : [];
+
+  var xin = tho.split(/[,;\s]+/), ra = [], la = [];
+  for (var i = 0; i < xin.length; i++) {
+    var ten = String(xin[i]).toUpperCase(), t = gitaTuyen_(ten);
+    if (!t) { la.push(ten); continue; }
+    if (t.trangThai === 'chay' && ra.indexOf(t.ma) < 0) ra.push(t.ma);
+  }
+
+  /* Ô CÓ CHỮ nhưng không nhận ra tuyến nào thì KHÔNG rơi về GITA365. Gõ
+     sai "MATH36" mà vẫn cấp GITA365 là phục vụ sai nội dung trong im
+     lặng — người dùng không biết mình đang xem nhầm tuyến, và người quản
+     trị không biết mình gõ sai. Trả về rỗng thì tài khoản chỉ còn gói
+     nền, gặp ngay màn xin cấp phép, và lỗi được sửa trong ngày. */
+  if (la.length) gitaGhiNhat_('TUYEN_LA', hoSo, la.join(' '));
+  return ra;
+}
+
+/** Ghi một dòng vào nhật ký khi có thể; không có bảng thì thôi, đừng để
+ *  việc ghi nhật ký làm hỏng việc cấp khoá. */
+function gitaGhiNhat_(loai, hoSo, ghiChu) {
+  try {
+    if (typeof gitaNhatKy === 'function')
+      gitaNhatKy(loai, (hoSo && hoSo.u) || '', ghiChu);
+  } catch (e) { /* nhật ký hỏng không được chặn đăng nhập */ }
+}
+
+/**
  * Phạm vi cấp phép — nguồn sự thật duy nhất.
  * lv lấy từ ROLES trong 00_Config.gs: càng nhỏ càng nhiều quyền.
+ * Ba chiều: VAI × TẦNG × TUYẾN.
  */
 function gitaPhamViCapPhep(hoSo) {
   var ds = ['nen'];                        // mọi tài khoản đã đăng nhập
   var lv = (ROLES[hoSo.role] || { lv: 99 }).lv;
+  var tuyen = gitaTuyenCuaTK_(hoSo);
+  var i, j, k;
 
   /* Tới bậc 12 — khớp với G.PERM.nghe_chung trong ứng dụng. Lệch một bậc ở
      đây thì R12 thấy mục trong trình đơn nhưng máy chủ không cấp khoá. */
   if (lv <= 12) {                           // tư vấn, coach, quản lý, quản trị, phân tích
-    ds.push('nghe');
-    for (var i = 1; i <= 5; i++) ds.push('tang' + i);
-    return ds;
+    for (k = 0; k < tuyen.length; k++) {
+      ds.push(gitaGoiNghe_(tuyen[k]));
+      for (i = 1; i <= GITA_SO_TANG; i++) ds.push(gitaGoiTang_(tuyen[k], i));
+    }
+    return gitaGon_(ds);
   }
   if (lv === 15) return ds;                 // CTV giới thiệu: chỉ phần nền
 
-  // Phụ huynh và học viên: chỉ tầng đang học và các tầng đã đi qua.
-  // Chưa gắn hồ sơ học viên hoặc chưa vào tầng nào thì chỉ có phần nền.
+  // Phụ huynh và học viên: chỉ tầng đang học và các tầng đã đi qua,
+  // và chỉ trong những tuyến tài khoản được cấp.
   var tang = Number(hoSo.tier || 0);
   if (!(tang >= 1)) return ds;
-  for (var j = 1; j <= Math.min(5, tang); j++) ds.push('tang' + j);
-  return ds;
+  for (k = 0; k < tuyen.length; k++)
+    for (j = 1; j <= Math.min(GITA_SO_TANG, tang); j++)
+      ds.push(gitaGoiTang_(tuyen[k], j));
+  return gitaGon_(ds);
+}
+
+/** Bỏ tên rỗng và tên trùng — danh sách cấp phép không được có rác. */
+function gitaGon_(ds) {
+  var ra = [];
+  for (var i = 0; i < ds.length; i++)
+    if (ds[i] && ra.indexOf(ds[i]) < 0) ra.push(ds[i]);
+  return ra;
 }
 
 /* ═══════════════ CHỐNG XIN KHOÁ HÀNG LOẠT ═══════════════

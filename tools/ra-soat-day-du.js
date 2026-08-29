@@ -143,7 +143,14 @@ const NGAN = 700;
   const kho = await p.evaluate(() => {
     const G = window.G;
     /* Trường được phép để trống, kèm lý do — mỗi ngoại lệ phải có lý do,
-       không thì nó chỉ là chỗ trống được tha. */
+       không thì nó chỉ là chỗ trống được tha.
+
+       NGUỒN GỐC là G.SOAT_THA trong kho (kho-goc/data.soat-day-du.js) —
+       cùng bảng mà màn tự soát trong ứng dụng dùng. Bảng dưới đây chỉ
+       BỔ SUNG những ngoại lệ mà bảng kia chưa có, và được gộp vào ở
+       ngay dưới. Trước v7.8 hai bảng nằm rời nhau, nên thêm một ngoại lệ
+       ở một bên là bên kia vẫn đỏ — đúng chuyện đã xảy ra với
+       TUYEN.doBang. */
     const THA = {
       'AD_GIONG.ten':      'hồ sơ giọng đọc để trống có chủ đích: chưa ký hợp đồng thu âm thì không được điền tên ai',
       'AD_GIONG.hopDong':  'như trên — số hợp đồng chỉ điền khi đã ký thật',
@@ -163,6 +170,9 @@ const NGAN = 700;
       'TANG_HIENTHI.perm': 'nhóm "chung cho mọi tài khoản" không có điều kiện quyền — perm null là đúng nghĩa',
       'KHACH_TANG.nhipDonVi':'hạng Chì không có nhịp thăm hỏi định kỳ, nên không có đơn vị nhịp'
     };
+    /* Gộp bảng ngoại lệ của kho vào — một ngoại lệ khai một lần là cả
+       màn tự soát lẫn bộ rà soát này cùng biết. */
+    (G.SOAT_THA || []).forEach(x => { if (x && x.o && !THA[x.o]) THA[x.o] = x.y || ''; });
     const thieu = [], rong = [];
     Object.keys(G).forEach(k => {
       if (!/^[A-Z][A-Z0-9_]*$/.test(k)) return;      /* chỉ soi kho dữ liệu */

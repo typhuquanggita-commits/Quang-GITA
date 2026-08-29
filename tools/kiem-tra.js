@@ -2693,7 +2693,11 @@ const { chromium } = require(PW);
     const NGAN = 700; /* dùng chung ngưỡng với tools/ra-soat-day-du.js */
 
     const fs35 = require('fs'), px35 = require('path');
-    const tep = px35.join(__dirname, '..', 'GITA365_v75_GIOI_THIEU.html');
+    /* Tên tệp mang số bản, nên đọc số bản ra rồi ghép — gõ cứng "v75" là
+       lý do anh Quang từng mở nhầm bản cũ. */
+    const ban35 = (fs35.readFileSync(px35.join(__dirname, '..', 'src', 'data.core.js'), 'utf8')
+      .match(/version:\s*'([^']+)'/) || [])[1];
+    const tep = px35.join(__dirname, '..', 'GITA365-v' + ban35 + '-gioi-thieu.html');
     if (!fs35.existsSync(tep)) {
       bao(false, 'có bản giới thiệu một tệp để kiểm',
         'thiếu ' + px35.basename(tep) + ' — chạy python3 tools/dong-goi.py');
@@ -2760,6 +2764,92 @@ const { chromium } = require(PW);
       bao(!loi35.length, 'bản giới thiệu chạy không văng lỗi nào', loi35.slice(0, 2).join(' | '));
       await p35.close();
     }
+  }
+
+  /* ═══════════ 36 · BỐN TUYẾN VÀ HAI BẢN CHÉP ═══════════
+
+     Hai danh sách trong dự án này buộc phải có bản chép, vì chúng chạy ở
+     hai môi trường khác nhau, và bản chép nào cũng lệch được trong im
+     lặng:
+
+       · Bảng tuyến: src/data.tuyen.js (trình duyệt + công cụ Node) và
+         server/GITA_CapPhep.gs (Apps Script — không require được).
+         Lệch nhau thì máy chủ cấp khoá cho gói mà ứng dụng không biết
+         xin, hoặc ứng dụng xin gói mà máy chủ không có.
+
+       · Danh sách tệp: index.html và sw.js. Lệch nhau thì bản đã cài
+         chạy thiếu tệp khi mất mạng — màn hình văng lỗi mà chỉ người
+         dùng offline gặp. Đúng ba tệp đã từng thiếu như thế:
+         duong-vao.js, soat-day-du.js, tuyen.js. */
+  console.log('\n36 · BỐN TUYẾN VÀ HAI BẢN CHÉP');
+  {
+    const fs36 = require('fs'), px36 = require('path'), goc36 = px36.join(__dirname, '..');
+    const doc = f => fs36.readFileSync(px36.join(goc36, f), 'utf8');
+
+    /* ── Bảng tuyến: hai bản phải khớp từng dòng ── */
+    const maTuyen = t => (t.match(/ma:\s*'([A-Z0-9]+)'/) || [])[1];
+    const tuTep = (vb, re) => {
+      const ra = [];
+      let m; const r = new RegExp(re, 'g');
+      while ((m = r.exec(vb))) ra.push({ ma: m[1], trangThai: m[2], goiCu: m[3] === 'true' });
+      return ra;
+    };
+    const ung = tuTep(doc('src/data.tuyen.js'),
+      "ma:'([A-Z0-9]+)'[\\s\\S]{0,400}?trangThai:'(\\w+)', goiCu:(true|false)");
+    const may = tuTep(doc('server/GITA_CapPhep.gs'),
+      "ma: '([A-Z0-9]+)',\\s*trangThai: '(\\w+)',\\s*goiCu: (true|false)");
+
+    bao(ung.length >= 5, 'ứng dụng khai đủ năm tuyến', ung.map(t => t.ma).join(' '));
+    bao(may.length === ung.length && ung.every((t, i) =>
+        may[i] && may[i].ma === t.ma && may[i].trangThai === t.trangThai && may[i].goiCu === t.goiCu),
+      'bảng tuyến ở máy chủ cấp phép khớp đúng bảng tuyến trong ứng dụng',
+      may.map(t => t.ma + ':' + t.trangThai).join(' '));
+
+    /* ── Tên gói cũ không được đổi: giấy phép đã cấp phải còn dùng được ── */
+    const goc = ung.filter(t => t.goiCu);
+    bao(goc.length === 1 && goc[0].ma === 'GITA365',
+      'đúng một tuyến giữ tên gói cũ, và đó là GITA365 — mọi giấy phép đã cấp vẫn dùng được',
+      goc.map(t => t.ma).join(' '));
+
+    const tuyenApp = await p.evaluate(() => ({
+      goi: (window.G.moiGoi ? G.moiGoi() : []),
+      gocNghe: G.goiNghe ? G.goiNghe('GITA365') : '',
+      gocTang: G.goiTang ? G.goiTang('GITA365', 3) : '',
+      moiNghe: G.goiNghe ? G.goiNghe('MATH365') : '',
+      tkTrong: G.tuyenCuaTK ? G.tuyenCuaTK({}) : [],
+      tkBia:   G.tuyenCuaTK ? G.tuyenCuaTK({ tuyen: ['BIA365'] }) : ['x'],
+      bangChuaCo: G.bangCuaTuyen ? G.bangCuaTuyen('MATH365') : 'x'
+    }));
+    bao(tuyenApp.gocNghe === 'nghe' && tuyenApp.gocTang === 'tang3',
+      'gói của tuyến gốc vẫn mang đúng tên cũ', tuyenApp.gocNghe + ' · ' + tuyenApp.gocTang);
+    bao(tuyenApp.moiNghe === 'math365-nghe',
+      'gói của tuyến mới mang tiền tố riêng — bán tuyến này không mở tuyến kia', tuyenApp.moiNghe);
+    bao(tuyenApp.tkTrong.length === 1 && tuyenApp.tkTrong[0] === 'GITA365',
+      'tài khoản không khai tuyến vẫn là GITA365 — bản cũ chạy y nguyên', tuyenApp.tkTrong.join(' '));
+    bao(Array.isArray(tuyenApp.tkBia) && tuyenApp.tkBia.length === 0,
+      'khai tuyến không có thật thì KHÔNG rơi về GITA365 — sai phải thấy được, không phục vụ nhầm trong im lặng',
+      JSON.stringify(tuyenApp.tkBia));
+    bao(tuyenApp.bangChuaCo === null,
+      'tuyến chưa có chuẩn băng thì báo trống, không mượn tạm băng của GITA365');
+
+    /* ── index.html và sw.js phải liệt kê cùng một bộ tệp ── */
+    const dsIdx = (doc('index.html').match(/<script src="src\/[^"]+"><\/script>/g) || [])
+      .map(x => x.replace(/.*src="(src\/[^"]+)".*/, '$1'));
+    const dsSw = (doc('sw.js').match(/'\.\/src\/[^']+'/g) || [])
+      .map(x => x.replace(/'\.\/(src\/[^']+)'/, '$1'));
+    const thieuSw = dsIdx.filter(f => dsSw.indexOf(f) < 0);
+    const thuaSw = dsSw.filter(f => dsIdx.indexOf(f) < 0);
+    bao(!thieuSw.length && !thuaSw.length,
+      'bản đã cài nạp đúng bộ tệp mà trang web nạp — không tệp nào thiếu khi mất mạng',
+      (thieuSw.length ? 'sw thiếu: ' + thieuSw.join(' ') + ' ' : '') +
+      (thuaSw.length ? 'sw thừa: ' + thuaSw.join(' ') : '') || dsIdx.length + ' tệp, khớp cả hai bên');
+
+    /* ── Số bản phải nhích khi phát hành ── */
+    const banMeta = (doc('src/data.core.js').match(/version:\s*'([^']+)'/) || [])[1];
+    const banSw = (doc('sw.js').match(/CACHE = 'gita365-v([\d-]+)'/) || [])[1];
+    bao(!!banMeta && !!banSw && banSw.replace(/-/g, '.').indexOf(banMeta) === 0,
+      'số bản trong ứng dụng và trong bộ nhớ đệm nói cùng một bản — mở nhầm bản cũ là lỗi tốn nhất',
+      'ứng dụng v' + banMeta + ' · đệm ' + banSw);
   }
 
   console.log('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành'));

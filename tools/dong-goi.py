@@ -78,7 +78,15 @@ html = html.replace('<script>\nG.boot();',
   'G.coGoi = function(){ return true; };\n'
   'G.boot();')
 
-out = 'GITA365_v75_GIOI_THIEU.html'
+# Tên tệp mang SỐ BẢN THẬT, đọc từ G.META.version trong src/data.core.js.
+# Trước đây tên tệp gõ cứng là "v75" nên ba lần phát hành liên tiếp cho ra
+# ba tệp trùng tên; người nhận mở nhầm bản cũ và tưởng phần sửa chưa chạy.
+_ban = re.search(r"version:\s*'([^']+)'",
+                 open('src/data.core.js', encoding='utf-8').read())
+if not _ban:
+    sys.exit('Không đọc được G.META.version trong src/data.core.js')
+BAN = _ban.group(1)
+out = 'GITA365-v%s-gioi-thieu.html' % BAN
 open(out, 'w', encoding='utf-8').write(html)
 print('%s · %d KB' % (out, os.path.getsize(out) // 1024))
 

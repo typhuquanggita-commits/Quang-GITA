@@ -105,6 +105,49 @@ for (let t = 1; t <= 5; t++)
     ['MATRAN_T' + t]: G['MATRAN_T' + t] || []
   };
 
+/* ─── Gói của bốn tuyến chuyên môn ───
+   ENGWIN365 · MATH365 · SAT365 · HSA365 dùng chung năm tầng của GITA365
+   nhưng có kho riêng và băng riêng, nên mỗi tuyến có gói cấp phép riêng:
+   bán MATH365 mà không mở SAT365.
+
+   Quy ước đặt tên kho của một tuyến: tiền tố là mã tuyến, ví dụ
+   MATH365_BANG · MATH365_KICHBAN · MATH365_TANG · MATH365_DO. Đặt tên
+   như thế thì chỗ này không phải liệt kê tay từng kho — thêm một tệp
+   kho-goc/data.math365.js là gói tự có nội dung.
+
+   CHỈ dựng gói khi tuyến ĐÃ CÓ nội dung. Dựng gói rỗng thì bộ khoá có
+   thêm một khoá mở ra một cái hộp không có gì, và người cấp giấy phép
+   tưởng tuyến ấy đã sẵn sàng. */
+{
+  global.window = global.window || {};
+  require(path.join(GOC, 'src', 'data.tuyen.js'));
+  const T = global.window.G;
+  /* data.tuyen.js gán vào cùng một window.G nên G ở trên đã có sẵn các
+     hàm tên gói; lấy lại cho rõ ý là đang dùng bảng tuyến. */
+  const boQua = [];
+  for (const t of T.TUYEN) {
+    if (t.goiCu) continue;                       /* GITA365 đã dựng ở trên */
+    const tienTo = t.ma + '_';
+    const kho = Object.keys(G).filter(k => k.indexOf(tienTo) === 0);
+    if (!kho.length) { boQua.push(t.ma); continue; }
+
+    /* Kho chung của tuyến (băng, chuẩn đo, luật) đi vào gói nghề; nội
+       dung theo tầng tách ra đúng tầng của nó. */
+    goi[T.goiNghe(t.ma)] = Object.fromEntries(
+      kho.filter(k => !/_T[1-5]$/.test(k)).map(k => [k, G[k]]));
+    for (let n = 1; n <= T.TUYEN_SO_TANG; n++) {
+      const rieng = kho.filter(k => k.endsWith('_T' + n));
+      if (!rieng.length) continue;
+      goi[T.goiTang(t.ma, n)] = Object.fromEntries(rieng.map(k => [k, G[k]]));
+    }
+    if (t.trangThai !== 'chay')
+      console.log('  ⚠ ' + t.ma + ' có nội dung nhưng trangThai vẫn là "chuan" — ' +
+        'đổi sang "chay" trong src/data.tuyen.js và server/GITA_CapPhep.gs thì khách mới mở được.');
+  }
+  if (boQua.length)
+    console.log('  Chưa dựng gói cho: ' + boQua.join(' ') + ' — chưa có kho nào mang tiền tố ấy.\n');
+}
+
 /* ─── Mã hoá ───
    Khoá được GIỮ NGUYÊN giữa các lần mã hoá lại. Đổi khoá là mọi giấy
    phép đã cấp cho khách và cho đội ngũ đều hết dùng được ngay lập tức.

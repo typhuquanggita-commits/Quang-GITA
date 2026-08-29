@@ -3,7 +3,7 @@
    Cài một lần, dùng được cả khi mất mạng. Toàn bộ kho tri thức
    nằm trong máy — không cần đường truyền để mở bản đồ nhà mình.
    ═══════════════════════════════════════════════════════════════ */
-const CACHE = 'gita365-v7-7-0';
+const CACHE = 'gita365-v7-8-0';
 /* Danh sách này phải khớp với thứ tự thẻ <script> trong index.html.
    Thiếu tệp thì lần cài đầu vẫn chạy — trình xử lý fetch bên dưới cache
    lại mọi thứ tải về — nhưng mất mạng ngay sau khi cài thì vỡ. */
@@ -29,7 +29,7 @@ const FILES = [
   './assets/fonts/playfairdisplay-600-normal-latin.woff2',
   './assets/fonts/playfairdisplay-600-normal-vietnamese.woff2',
   './assets/icons/icon-192.png', './assets/icons/icon-512.png', './assets/icons/maskable-512.png',
-  './src/data.core.js', './src/i18n.js', './src/data.accounts.js',
+  './src/data.core.js', './src/i18n.js', './src/data.tuyen.js', './src/data.accounts.js',
   './src/ui.js', './cau-hinh.js', './src/logo-gita.js',
   './src/nhan-dien.js', './src/nhan-dien-loi.js', './src/loi-khach.js',
   './src/loi-hoc-vien.js', './src/quy-trinh.js', './src/mat-khau.js',
@@ -47,6 +47,7 @@ const FILES = [
   './src/views-hanh-trinh.js', './src/theo-doi-tai-nguyen.js', './src/kho-tong.js',
   './src/noi-may-chu.js', './src/kho-khach.js', './src/quy-trinh-xu-ly.js',
   './src/tro-ly-ai.js', './src/tro-ly-chat.js', './src/thu-vien.js',
+  './src/duong-vao.js', './src/soat-day-du.js', './src/tuyen.js',
   './src/app.js'
 ];
 

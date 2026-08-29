@@ -56,21 +56,39 @@ function donKho(){
 }
 G.donKho = donKho;
 
-/* ── Phạm vi cấp phép: vai nào, tầng nào, được mở gói nào ── */
+/* ── Phạm vi cấp phép: vai nào, tầng nào, TUYẾN nào, được mở gói nào ── */
 G.goiDuocCap = function () {
   /* Đây chỉ là DANH SÁCH XIN. Quyết định cấp hay không là của máy chủ:
-     máy chủ đọc hồ sơ tài khoản, biết vai và tầng thật, rồi chỉ trả khoá
-     của những gói tài khoản đó được cấp phép. Client không tự phong quyền. */
+     máy chủ đọc hồ sơ tài khoản, biết vai, tầng và tuyến thật, rồi chỉ trả
+     khoá của những gói tài khoản đó được cấp phép. Client không tự phong
+     quyền — nên chỗ này xin rộng cũng không mở thêm được gì.
+
+     Từ v7.8 phạm vi có ba chiều thay vì hai: VAI × TẦNG × TUYẾN. Tài khoản
+     không khai tuyến thì G.tuyenCuaTK trả về đúng GITA365, nên mọi tài
+     khoản và mọi giấy phép có trước v7.8 xin y hệt như cũ. */
   var r = G.S.roleObj, ds = ['nen'];
   if (!r) return ds;
-  /* Bậc 12 chứ không phải 11. Ba bảng khác đều nói kho nghề mở tới R12
-     (G.PERM.nghe_chung = 12, G.TANG_HIENTHI, và bảng tỉ lệ hiển thị), nhưng
-     chỗ này từng dừng ở 11 — nên Chuyên viên phân tích thấy mục "Kho báu vật"
-     và "Sách gốc" trong trình đơn mà bấm vào chỉ ra màn xin cấp phép. */
-  if (r.lv <= 12) ds.push('nghe');
-  if (r.lv <= 12 || r.portal === 'ph' || r.portal === 'hs')
-    for (var i = 1; i <= 5; i++) ds.push('tang' + i);
-  return ds;
+
+  /* Chỉ xin gói của tuyến ĐANG CHẠY. Tuyến còn đang dựng chuẩn thì chưa
+     có tệp .enc nào mang tên gói của nó; xin một tên không tồn tại làm
+     máy chủ ghi một dòng từ chối mỗi lần đăng nhập, và người đọc nhật ký
+     sẽ tưởng có ai đang dò khoá. */
+  var tuyen = (G.tuyenCuaTK ? G.tuyenCuaTK(G.S.acc) : ['GITA365'])
+    .filter(function (mt) { var t = G.tuyen && G.tuyen(mt); return t && t.trangThai === 'chay'; });
+  var moTang = (r.lv <= 12 || r.portal === 'ph' || r.portal === 'hs');
+
+  tuyen.forEach(function (mt) {
+    /* Bậc 12 chứ không phải 11. Ba bảng khác đều nói kho nghề mở tới R12
+       (G.PERM.nghe_chung = 12, G.TANG_HIENTHI, và bảng tỉ lệ hiển thị),
+       nhưng chỗ này từng dừng ở 11 — nên Chuyên viên phân tích thấy mục
+       "Kho báu vật" và "Sách gốc" trong trình đơn mà bấm vào chỉ ra màn
+       xin cấp phép. */
+    if (r.lv <= 12) ds.push(G.goiNghe(mt));
+    if (moTang)
+      for (var i = 1; i <= G.TUYEN_SO_TANG; i++) ds.push(G.goiTang(mt, i));
+  });
+
+  return ds.filter(function (g, i) { return g && ds.indexOf(g) === i; });
 };
 
 /* ── Xin khoá ── */
@@ -235,12 +253,25 @@ var TEN_GOI = {
   tang5:'Gói tầng 5 — BỨT PHÁ'
 };
 
+/* Gói của tuyến mới không viết tay vào bảng trên — tên gọi suy ra từ
+   G.TUYEN, nên thêm một tuyến là có ngay tên đọc được, không phải nhớ
+   sửa thêm chỗ này. */
+function tenGoi_(g){
+  if(TEN_GOI[g]) return TEN_GOI[g];
+  var d = G.doiGoi && G.doiGoi(g);
+  if(!d || !d.tuyen) return g;
+  var t = G.tuyen(d.tuyen); if(!t) return g;
+  if(d.loai === 'nghe') return 'Gói nghề ' + t.ten + ' — kịch bản và phác đồ của tuyến';
+  var bac = (G.TIERS || []).filter(function(x){ return x.id === d.tang; })[0];
+  return 'Gói tầng ' + d.tang + ' ' + t.ten + (bac ? ' — ' + bac.name : '');
+}
+
 G.canCapPhep = function (goi) {
   var U = G.U, h = U.h;
   var mau = G.KHO && G.KHO.cheDoMau;
   var laTang = /^tang(\d)$/.test(String(goi));
   var soTang = laTang ? Number(String(goi).slice(4)) : 0;
-  var tenGoi = TEN_GOI[goi] || goi;
+  var tenGoi = tenGoi_(goi);
 
   /* Người đọc màn này đang muốn LÀM MỘT VIỆC, không muốn đọc một bài giải
      thích. Nên nút mở đứng trước, giải thích đứng sau — và nút phải hợp với

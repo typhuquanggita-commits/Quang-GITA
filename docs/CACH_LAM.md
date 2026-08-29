@@ -47,7 +47,7 @@ phác đồ, 250 tình huống. Đây là đường duy nhất thấy hết ru�
 ### Đường 2 · Một tệp HTML gửi đi được — mở phần vỏ
 
 ```bash
-python3 tools/dong-goi.py        # ra GITA365_v75_GIOI_THIEU.html
+python3 tools/dong-goi.py        # ra GITA365-v7.8-gioi-thieu.html
 ```
 
 Mở thẳng bằng trình duyệt, gửi qua email, chép vào USB. Không cần mạng,
@@ -269,6 +269,41 @@ Bấm tay được ở thanh trái → **Đồng bộ**, có hiện số thay đ
 Trần 512 KB mỗi lần đẩy. Chỉ năm nhóm được đồng bộ: `checks`, `journal`,
 `vision`, `test`, `mood`. Kho chuyên môn **không** đi đường này — nó có đường
 cấp phép và khoá riêng.
+
+---
+
+## Bốn tuyến chuyên môn
+
+ENGWIN365 · MATH365 · SAT365 · HSA365 dùng chung năm tầng của GITA365,
+riêng tín hiệu vào bốn băng. Xem trạng thái sáu mốc của từng tuyến ở màn
+**Bốn tuyến chuyên môn** (Super Admin · Admin hệ thống).
+
+### Mang chuẩn một tuyến về
+
+1. Viết vào `kho-goc/data.<tên tuyến>.js`, đặt tên kho theo tiền tố mã
+   tuyến: `MATH365_BANG`, `MATH365_KICHBAN`, `MATH365_DO`… Nội dung
+   riêng của một tầng thì kết thúc bằng `_T1`…`_T5`.
+2. `node tools/ma-hoa-kho.js` — packer tự dựng gói `math365-nghe`,
+   `math365-t1`… Chưa có kho nào mang tiền tố thì nó bỏ qua và nói rõ.
+3. Đủ sáu mốc thì đổi `trangThai` từ `'chuan'` sang `'chay'` **ở cả hai
+   chỗ**: `src/data.tuyen.js` và `server/GITA_CapPhep.gs`. Lệch nhau thì
+   bộ kiểm mục 36 dừng phát hành.
+
+### Cấp giấy phép theo tuyến
+
+```bash
+node tools/tao-giay-phep.js "Cô Lan" 12 --tuyen MATH365
+```
+
+Không ghi tuyến nào thì cấp mặc định: gói nền cộng toàn bộ gói của những
+tuyến **đang chạy** — hôm nay là đúng bảy gói cũ, y như trước.
+
+### Gắn tuyến cho một tài khoản
+
+Cột `tuyen` trong bảng tài khoản, các mã cách nhau bằng dấu phẩy:
+`GITA365,MATH365`. **Để trống nghĩa là GITA365** — nên mọi tài khoản cũ
+giữ nguyên phạm vi, không phải sửa gì. Gõ sai tên tuyến thì tài khoản chỉ
+còn gói nền và gặp màn xin cấp phép ngay: sai thấy được là sai sửa được.
 
 ---
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """GITA 365 — dựng BẢN XEM THỬ để chủ hệ thống mở bằng đường dẫn web.
 
-Vào: GITA365_v75_GIOI_THIEU.html (bản giới thiệu một tệp, chế độ mẫu —
+Vào: GITA365-v<số bản>-gioi-thieu.html (bản giới thiệu một tệp, chế độ mẫu —
 không kèm kho tri thức, không kèm khoá; đúng bản mà trang-web.yml vẫn
 đưa lên GitHub Pages).
 
@@ -16,7 +16,11 @@ import os, re, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
 
-VAO = 'GITA365_v75_GIOI_THIEU.html'
+_ban = re.search(r"version:\s*'([^']+)'",
+                 open('src/data.core.js', encoding='utf-8').read())
+if not _ban:
+    sys.exit('Không đọc được G.META.version trong src/data.core.js')
+VAO = 'GITA365-v%s-gioi-thieu.html' % _ban.group(1)
 if not os.path.exists(VAO):
     sys.exit('Thiếu %s — chạy python3 tools/dong-goi.py trước.' % VAO)
 

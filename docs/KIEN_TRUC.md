@@ -237,7 +237,7 @@ nó có khoá trong tay.
    khoá nguyên, `HP_*` học phí cũng vậy.
 
 2. Mục 35 của bộ kiểm mở **đúng cái tệp khách nhận được**
-   (`GITA365_v75_GIOI_THIEU.html`, qua `file://`), đăng nhập, dựng các
+   (`GITA365-v<số bản>-gioi-thieu.html`, qua `file://`), đăng nhập, dựng các
    màn cửa trước và đếm chữ thật. Dưới 700 ký tự là dừng phát hành.
    Ngưỡng 700 dùng chung với `tools/ra-soat-day-du.js`.
 
@@ -266,6 +266,75 @@ hành.
 của nó vào `MO_RA` trong cùng một lần sửa. Ngược lại, một màn cần kho
 nghề thì cứ để nó hiện thẻ xin cấp phép — thẻ ấy còn nói được là khoá ở
 đâu và mở bằng cách nào, hơn hẳn một cái khung rỗng.
+
+## Bốn tuyến chuyên môn — đường ghép, dựng trước khi cần
+
+Học viện chạy thêm bốn tuyến: **ENGWIN365 · MATH365 · SAT365 · HSA365**.
+Chuẩn từng tuyến dựng riêng, hợp nhất vào GITA365 sau. `src/data.tuyen.js`
+là chỗ khai tuyến; nó **không chứa chuẩn của tuyến nào**.
+
+### Hai quyết định đã chốt
+
+| | |
+|---|---|
+| **Năm tầng dùng chung** | Cả bốn tuyến đi theo T1 → T5. Ma trận, cổng nghiệm thu, chuẩn thời gian và cách đồng hành dùng lại nguyên — hợp nhất là ghép dữ liệu, không viết lại khung. |
+| **Băng riêng từng tuyến** | Bốn băng giữ nguyên tên và nguyên **ý nghĩa hành động**; chỉ **tín hiệu vào** là riêng. SAT365 đo bằng điểm thi thử, GITA365 đo bằng mức tự chủ. |
+
+Ý nghĩa hành động phải giữ chung, nếu không thì một Coach chạy hai tuyến
+sẽ hiểu "học viên băng CAM" theo hai kiểu — và ở tuyến này thì giảm tải,
+ở tuyến kia lại giao thêm việc.
+
+### Ba chỗ dễ làm hỏng
+
+**1. Tên gói cũ là ràng buộc cứng.** `nen · nghe · tang1…tang5` **không
+được đổi tên**: giấy phép đã cấp cho đội ngũ và cho máy khách đang dùng
+đúng những tên ấy, đổi là mọi giấy phép đã phát ra thành giấy lộn. Nên
+GITA365 mang cờ `goiCu: true` và giữ tên cũ; tuyến mới mang tiền tố —
+`math365-nghe`, `math365-t1`. Bộ kiểm mục 36 chốt: đúng một tuyến được
+mang `goiCu`, và đó phải là GITA365.
+
+**2. Khai tuyến sai thì KHÔNG rơi về GITA365.** Ô trống nghĩa là GITA365
+(nhờ vậy mọi tài khoản có trước v7.8 giữ nguyên phạm vi). Nhưng ô *có
+chữ* mà không nhận ra tuyến nào thì trả về rỗng — tài khoản chỉ còn gói
+nền và gặp ngay màn xin cấp phép. Gõ sai `MATH36` mà vẫn cấp GITA365 là
+phục vụ sai nội dung trong im lặng: người dùng không biết mình xem nhầm
+tuyến, người quản trị không biết mình gõ sai. Cùng một luật ở cả hai
+phía — `G.tuyenCuaTK` và `gitaTuyenCuaTK_`.
+
+**3. Tuyến chưa có chuẩn băng thì báo trống.** `G.bangCuaTuyen()` trả
+`null`, không mượn tạm băng của GITA365. Mượn tạm cho đỡ trống là cách
+chắc chắn nhất để một tuyến chạy sai chuẩn suốt nhiều tháng mà không ai
+biết.
+
+### Đặt tên kho của một tuyến
+
+Tiền tố là mã tuyến: `MATH365_BANG`, `MATH365_KICHBAN`, `MATH365_TANG`,
+`MATH365_DO`, và nội dung theo tầng thì kết thúc bằng `_T1`…`_T5`. Đặt
+đúng quy ước thì `tools/ma-hoa-kho.js` **tự dựng gói**, không phải liệt
+kê tay từng kho: thêm một tệp `kho-goc/data.math365.js` là gói có nội
+dung ngay. Chưa có kho nào mang tiền tố ấy thì packer bỏ qua tuyến và
+nói rõ — **không dựng gói rỗng**, vì một khoá mở ra cái hộp không có gì
+làm người cấp giấy phép tưởng tuyến đã sẵn sàng.
+
+### Hai bản chép buộc phải có — và bài kiểm giữ chúng khớp
+
+`server/GITA_CapPhep.gs` chạy trên Apps Script, không `require` được tệp
+trong kho mã, nên bảng tuyến phải chép sang đó. Lệch nhau thì máy chủ cấp
+khoá cho gói mà ứng dụng không biết xin, hoặc ngược lại. **Mục 36 của bộ
+kiểm đối chiếu hai bản mỗi lần chạy** và dừng phát hành nếu lệch.
+
+Mục 36 cũng giữ **`index.html` và `sw.js` liệt kê cùng một bộ tệp**. Đây
+là lỗi đã xảy ra thật: ba tệp (`duong-vao.js`, `soat-day-du.js`,
+`tuyen.js`) có trong `index.html` mà thiếu trong `sw.js`, nên bản đã cài
+chạy thiếu tệp khi mất mạng — và chỉ người dùng offline mới gặp.
+
+### Sáu mốc trước khi một tuyến mở cho khách
+
+Màn **Bốn tuyến chuyên môn** (`src/tuyen.js`, chỉ R01–R02) đo sáu mốc
+bằng dữ liệu đang có trong máy, không bằng cờ ai đó tự bật: bốn băng có
+tín hiệu vào · năm tầng có nội dung · kịch bản dẫn dắt · bộ đo đầu vào ·
+gói cấp phép đã mã hoá · học phí đã chốt. Đủ sáu mốc mới đổi `trangThai`
+từ `'chuan'` sang `'chay'` — **ở cả hai bản chép**.
 
 ## Tầm nhìn và sứ mệnh — một bản gốc, không hai
 
