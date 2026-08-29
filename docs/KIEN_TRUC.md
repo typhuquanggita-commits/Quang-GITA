@@ -149,3 +149,70 @@ function biKhoa(html){
 
 Hàm cũ trả về thẻ khoá thì giữ nguyên thẻ khoá — không thì phần nối lọt qua
 cổng phân quyền và mở cửa cho vai không được phép.
+
+## Bộ rà soát chỗ trống — `tools/ra-soat-day-du.js`
+
+Bộ kiểm phát hành hỏi **"màn hình có chạy không"**. Bộ này hỏi câu khác:
+**"màn hình có RỖNG chỗ nào không"**. Hai câu hỏi khác nhau, và câu thứ
+hai là câu bắt được thứ mà mắt người bỏ sót: một kho có nhan đề mà không
+có nội dung vẫn chạy tốt, vẫn xanh hết mọi bài kiểm cũ.
+
+```bash
+npx http-server -p 8099 -s .
+node tools/ra-soat-day-du.js
+```
+
+Chạy hết mọi màn hình của mọi vai rồi soi bảy loại chỗ trống:
+
+| # | Bắt gì | Vì sao đáng bắt |
+|---|---|---|
+| 1 | Màn dựng ra quá ngắn | Có khung mà không có ruột |
+| 2 | Chữ tạm — TODO, "đang cập nhật", "sắp có" | Chỗ trống được viết bằng chữ |
+| 3 | Ô rỗng trên màn | Nhãn có, nội dung không |
+| 4 | Bản ghi thiếu trường bắt buộc | Kho có ô để trống |
+| 5 | Mảng khai báo mà rỗng | Biến có tên, không có gì bên trong |
+| 6 | Chuỗi chưa dịch | Giao diện EN hiện mã màn hình thay cho tên |
+| 7 | Nút bấm không có bộ nhận | Bấm vào không tới đâu |
+
+**Mỗi ngoại lệ phải có lý do viết ra.** Bảng `THA` trong tệp ghi từng
+trường được phép để trống kèm lý do — ví dụ `AD_GIONG.ten` để trống vì
+chưa ký hợp đồng thu âm thì không được điền tên ai, `HP_TANG.gia` để
+trống vì mức học phí là quyết định của chủ Học viện. Ngoại lệ không có
+lý do thì nó chỉ là một chỗ trống được tha.
+
+**Phép LỌC phải kèm điều kiện kho đã nạp.** Kho rỗng thì lọc ra cũng
+rỗng và bài kiểm trông như đã đạt. Mọi phép lọc trong bộ kiểm đều kèm
+một phép đếm — đó là cách chặn "đạt rỗng".
+
+## Bài kiểm phải đo đúng thứ nó định đo
+
+Hai bài kiểm trong dự án này từng đo sai thứ, và cả hai đều đỏ khi hệ
+thống tốt lên chứ không phải khi hệ thống hỏng đi:
+
+- **"Phần khoá với Giám đốc đúng 20% ± 2"** — tử số là số màn quản trị
+  (gần như không đổi), mẫu số là tổng số màn (tăng mỗi đợt thêm nội dung
+  cho gia đình). Thêm một màn cho phụ huynh là bài kiểm đỏ. Đã thay bằng
+  phép đo đúng: *màn nào khoá với Giám đốc cũng phải vì một quyền quản
+  trị hệ thống, và mọi màn đòi quyền ấy đều thật sự khoá.*
+- **"Câu mở dài trên 60 ký tự"** — phạt lối viết gọn. Câu mở hay nhất
+  trong kho dài 51 ký tự và không thừa chữ nào. Ngưỡng hạ xuống 40: dưới
+  40 thì không thể là câu thật, trên 40 thì phải đọc mới biết và bài
+  kiểm tự động không đọc thay người được.
+
+Khi một bài kiểm đỏ, hỏi trước: *hệ thống hỏng, hay bài kiểm đo sai?*
+Nới dung sai để cho qua là cách chắc chắn nhất để bài kiểm mất tác dụng.
+
+## Vá dữ liệu sinh sẵn — thứ tự nạp theo chữ cái
+
+`tools/ma-hoa-kho.js` nạp `kho-goc/*.js` theo thứ tự chữ cái. Tệp vá
+phải nạp SAU tệp gốc, và dấu gạch ngang xếp TRƯỚC dấu chấm:
+
+```
+data.tinhhuong-t5-dich.js   ✗ chạy TRƯỚC data.tinhhuong.js — vá vào mảng chưa tồn tại
+data.tinhhuong.t5-dich.js   ✓ chạy SAU
+```
+
+Mẫu vá dùng trong `data.scripts.tuvan-ruot.js` và
+`data.tinhhuong.t5-dich.js`: chỉ điền trường đang trống, không đụng
+trường đã có, và để lại một hàm đếm phần còn nợ (`G.tvConNo()` ở
+`src/duong-vao.js`) để bộ rà soát báo đỏ tới khi con số về 0.

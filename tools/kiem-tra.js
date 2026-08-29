@@ -2531,6 +2531,65 @@ const { chromium } = require(PW);
       'HV ' + cong['hocvien@gita365.vn'] + '/3 · PH ' + cong['phuhuynh@gita365.vn'] + '/3');
   }
 
+
+  /* ── 33. KHO KỊCH BẢN VÀ KHO TÌNH HUỐNG ĐỦ RUỘT ── */
+  console.log('\n33 · KHO KỊCH BẢN · KHO TÌNH HUỐNG ĐỦ RUỘT');
+  if (!coKhoa) {
+    console.log('  (bỏ qua — cần bộ khoá để mở kho nghề)');
+  } else {
+    await p.evaluate(() => window.G.doLogin('superadmin@gita365.vn'));
+    await p.waitForTimeout(2000);
+    const ruot = await p.evaluate(() => {
+      const G = window.G;
+      const K = G.KICHBAN || [], TH = G.TINHHUONG || [];
+      const thieu = k => !k.mo || !k.chot || !k.muc || !k.phut;
+      const theoLoai = {};
+      K.forEach(k => {
+        theoLoai[k.loai] = theoLoai[k.loai] || { tong: 0, du: 0 };
+        theoLoai[k.loai].tong++;
+        if (!thieu(k)) theoLoai[k.loai].du++;
+      });
+      /* Ruột phải là nội dung THẬT, không phải một dấu chấm cho qua bài kiểm.
+         Ngưỡng câu mở là 40 chứ không phải 60: có những câu mở hay nhất trong
+         kho lại rất ngắn — "Nghiệm thu. Bốn tiêu chí và một câu hỏi về động
+         cơ." dài 51 ký tự và không thừa chữ nào. Ngưỡng phải bắt được chỗ
+         TRỐNG, không được phạt lối viết gọn. Dưới 40 ký tự thì không thể là
+         một câu mở thật; trên 40 thì phải đọc mới biết, và bài kiểm tự động
+         không đọc thay người được. */
+      const quaNgan = K.filter(k => !thieu(k) &&
+        (String(k.mo).length < 40 || String(k.chot).length < 60 || String(k.muc).length < 40));
+      /* Câu mở và câu chốt phải khác nhau giữa các kịch bản — nếu chép đi chép lại
+         thì kho một nghìn bản chỉ là một bản nhân lên một nghìn lần */
+      const moTrung = {}; K.forEach(k => { if (k.mo) moTrung[k.mo] = (moTrung[k.mo] || 0) + 1; });
+      const soMoTrung = Object.keys(moTrung).filter(x => moTrung[x] > 1).length;
+      return {
+        tong: K.length, thieu: K.filter(thieu).length,
+        theoLoai, quaNgan: quaNgan.length, viDuNgan: quaNgan.slice(0, 3).map(k => k.ma).join(' '),
+        soMoTrung, tongTH: TH.length,
+        thThieuDich: TH.filter(x => !x.dich || !String(x.dich).trim()).length,
+        conNo: G.tvConNo ? G.tvConNo() : -1
+      };
+    });
+    bao(ruot.thieu === 0,
+      'cả 1.000 kịch bản đều đủ bốn trường thời lượng · mục tiêu · câu mở · câu chốt',
+      ruot.thieu + '/' + ruot.tong + ' còn trống');
+    Object.keys(ruot.theoLoai).forEach(loai => {
+      const x = ruot.theoLoai[loai];
+      bao(x.du === x.tong, 'kịch bản ' + loai + ' đủ ruột', x.du + '/' + x.tong);
+    });
+    bao(ruot.conNo === 0, 'G.tvConNo() báo về 0 — không còn kịch bản tư vấn nào nợ ruột',
+      ruot.conNo + ' bản');
+    bao(ruot.quaNgan === 0,
+      'không bản nào lấp ruột bằng một câu cụt cho qua bài kiểm',
+      ruot.quaNgan + ' bản quá ngắn: ' + ruot.viDuNgan);
+    bao(ruot.soMoTrung === 0,
+      'không câu mở nào bị dùng lại ở kịch bản khác — nghìn bản là nghìn tình huống thật',
+      ruot.soMoTrung + ' câu bị lặp');
+    bao(ruot.thThieuDich === 0,
+      'cả 250 tình huống năm tầng đều có đích để biết lúc nào là xong',
+      ruot.thThieuDich + '/' + ruot.tongTH + ' thiếu đích');
+  }
+
   console.log('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành'));
   await b.close();
   process.exit(loi ? 1 : 0);
