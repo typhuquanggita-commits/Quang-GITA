@@ -23,6 +23,7 @@ const Studio = lazy(() => import('./components/engwill/Studio').then((m) => ({de
 const Podcast = lazy(() => import('./components/engwill/Podcast').then((m) => ({default: m.Podcast})));
 const Brand = lazy(() => import('./components/engwill/Brand').then((m) => ({default: m.Brand})));
 const Sprint = lazy(() => import('./components/engwill/Sprint').then((m) => ({default: m.Sprint})));
+const Assess = lazy(() => import('./components/engwill/Assess').then((m) => ({default: m.Assess})));
 const Dossier = lazy(() => import('./components/engwill/Dossier').then((m) => ({default: m.Dossier})));
 import {Lock} from './components/engwill/Lock';
 const Casting = lazy(() => import('./components/engwill/Casting').then((m) => ({default: m.Casting})));
@@ -75,6 +76,14 @@ const NAV: Nav[] = [
     hint: '365 ngày viết sẵn',
     group: 'learner',
     render: () => <Dossier />,
+  },
+  {
+    id: 'assess',
+    icon: '📊',
+    label: 'Đánh giá định kỳ',
+    hint: '4 bộ đề · kho 1.000 đơn',
+    group: 'learner',
+    render: () => <Assess />,
   },
   {
     id: 'overview',

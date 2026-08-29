@@ -800,3 +800,85 @@ export interface DossierDay {
   reviewDays: number[];
   minutes: number;
 }
+
+/* ==========================================================================
+   ĐÁNH GIÁ ĐỊNH KỲ — TUẦN · 21 NGÀY · 90 NGÀY · CẢ HÀNH TRÌNH
+   ========================================================================== */
+
+export type AssessCadence = 'tuần' | '21 ngày' | '90 ngày' | 'hành trình';
+
+export interface AssessItem {
+  no: number;
+  name: string;
+  minutes: number;
+  what: string;
+  /** Ai chấm. Máy chấm được thì để máy — người chấm dành cho thứ máy không đo được. */
+  scoredBy: 'máy' | 'người' | 'máy + người';
+  evidence: string;
+  passMark: string;
+}
+
+export interface AssessBattery {
+  id: string;
+  cadence: AssessCadence;
+  name: string;
+  when: string;
+  totalMinutes: number;
+  purpose: string;
+  items: AssessItem[];
+  /** Điểm rơi vào dải nào thì làm gì tiếp — quyết định, không phải nhận xét. */
+  decision: {band: string; verdict: string; action: string}[];
+}
+
+/** Một cách gian lận, và cách hệ thống bắt được nó. */
+export interface IntegrityRule {
+  id: string;
+  risk: string;
+  signal: string;
+  check: string;
+  response: string;
+}
+
+export interface RewardTier {
+  id: string;
+  trigger: string;
+  reward: string;
+  why: string;
+  /** Điều không thể đạt được bằng cách đi tắt. */
+  cannotFake: string;
+}
+
+/** Một triệu chứng học viên gặp — mô tả theo cách họ tự nói ra. */
+export interface Symptom {
+  id: string;
+  skill: SkillId;
+  name: string;
+  saidAs: string;
+  rootCause: string;
+  metric: string;
+}
+
+/** Một đơn kê: triệu chứng này, ở cấp độ này, làm gì. */
+export interface Solution {
+  id: string;
+  symptomId: string;
+  levelId: string;
+  tier: number;
+  diagnose: string;
+  today: string;
+  sevenDay: string;
+  remeasure: string;
+  escalate: string;
+}
+
+/** Một bước trong quy trình trợ lý AI. */
+export interface AiStep {
+  no: number;
+  name: string;
+  input: string;
+  does: string;
+  output: string;
+  /** Chỗ bắt buộc con người quyết, AI không được tự quyết. */
+  humanGate: string;
+  limit: string;
+}

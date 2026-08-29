@@ -22,6 +22,8 @@ export * from './podcast';
 export * from './brand';
 export * from './sprint';
 export * from './dossier';
+export * from './assess';
+export * from './solutions';
 export * from './voices';
 export * from './certify';
 export * from './exams';

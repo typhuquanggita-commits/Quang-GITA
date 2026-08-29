@@ -278,6 +278,55 @@ Từ     300   3.000   6.800  10.000
 Input    0h    450h  1.080h  1.800h
 ```
 
+## 📊 Đánh giá định kỳ & kho 1.000 giải pháp
+
+Ba nhịp đo lồng nhau, mỗi nhịp trả lời một câu hỏi khác nhau:
+
+| Nhịp | Thời lượng | Trả lời câu hỏi | Ai chấm |
+|---|---|---|---|
+| **Tuần** | 15 phút | Tuần này có thật sự bỏ công không? | Chủ yếu máy |
+| **21 ngày** | 45 phút | Kỹ năng hẹp đã tự động chưa? | Máy + người |
+| **90 ngày** | 150 phút | Năng lực đã đổi bậc chưa? | Người, không phải người dạy mình |
+| **Hành trình** | 240 phút | Có dùng được tiếng Anh trong đời thật không? | Người + việc thật |
+
+Một người có thể qua bài tuần mà vẫn trượt bài 21 ngày. Đó không phải lỗi hệ
+thống — đó chính là lý do phải có ba nhịp: **nỗ lực không tự thành kỹ năng, và
+kỹ năng hẹp không tự thành năng lực.**
+
+**Không có ô tự chấm nào ảnh hưởng tới quyết định.** Tự đánh giá là công cụ tốt
+để phản tỉnh nhưng là dữ liệu tồi để ra quyết định.
+
+**Chống học giả:** 8 luật, mỗi luật nêu rõ cách gian lận, dấu hiệu, cách kiểm
+và cách xử lý. Trong đó có một mục không phải gian lận mà là bi kịch phổ biến
+nhất — *cày nhiều giờ mà không tiến bộ* — và cách xử lý là đổi phương pháp chứ
+không tăng giờ.
+
+**Phần thưởng** gắn với bằng chứng khó làm giả hơn là làm thật. Huy hiệu hiếm
+nhất hệ thống là **QUAY LẠI**: chỉ người từng đứt chuỗi rồi quay lại mới có.
+
+### Kho 1.000 giải pháp
+
+`40 triệu chứng × 25 cấp độ = 1.000 đơn kê`, sinh bằng hàm thuần.
+
+Nói thẳng cách kho này được tạo: đây **không** phải 1.000 đoạn văn viết tay rời
+rạc — đó sẽ là 1.000 đoạn na ná nhau và không ai kiểm được. Mỗi triệu chứng
+được viết kỹ **một** lần (nguyên nhân gốc, việc phải làm, bài luyện, cách đo
+lại), rồi đặt vào từng cấp độ: **tầng** quyết định học liệu và liều, **cấp**
+quyết định ngưỡng. Cùng một triệu chứng "nghe hụt âm cuối" cần đơn khác hẳn ở
+tầng 1 (đoạn 45 giây có hình) so với tầng 5 (bài giảng học thuật 8 phút).
+
+Trợ lý AI chạy 6 bước: **THU → ĐO → CHẨN → KÊ → THEO → CHUYỂN**. Hai cửa cứng:
+
+- Chẩn tối đa **ba** triệu chứng một lúc. Kê nhiều hơn là cách chắc chắn để
+  không đơn nào được làm.
+- Hai đơn liên tiếp không tác dụng thì AI **dừng kê** và giao hồ sơ cho cố vấn
+  người thật. Nó không được thử đơn thứ ba — khi hai lần đều trượt, vấn đề gần
+  như luôn nằm ngoài phạm vi nó nhìn thấy: sức khoẻ, công việc, gia đình, động lực.
+
+```bash
+npx tsx tools/kiem-danh-gia.ts   # kiểm kho 1.000 đơn và 4 bộ đề
+```
+
 ## 📔 Hồ sơ 365 ngày
 
 Ba trăm sáu mươi lăm ngày đã được viết sẵn: mỗi ngày một tiêu điểm, một nhiệm
@@ -357,6 +406,7 @@ npm run audit         # kiểu dữ liệu · dựng · tham chiếu chéo · ch
 npm run test:vault    # 36 phép thử két dữ liệu
 npm run test:desktop  # 19 phép thử bản máy tính
 npm run test:web      # kiểm tra bản web bằng trình duyệt thật
+npx tsx tools/kiem-danh-gia.ts   # kiểm kho 1.000 đơn và 4 bộ đề
 ```
 
 ## Cấu trúc mã nguồn
@@ -375,6 +425,8 @@ data/                  Toàn bộ nội dung hệ thống, tách khỏi giao di�
   certify.ts           8 trục · 5 tầng Miller · 6 vai × 5 bậc · quy tắc chấm
   exams.ts             9 bài thi tốt nghiệp + 4 khoá đào tạo tự động
   dossier.ts           Hồ sơ 365 ngày — 4 quý, 16 vòng, sinh bằng hàm thuần
+  assess.ts            4 bộ đề định kỳ · 8 luật liêm chính · 6 bậc thưởng · quy trình AI
+  solutions.ts         40 triệu chứng → kho 1.000 đơn kê, sinh bằng hàm thuần
 
 content/
   podcast-scripts.json Kịch bản podcast — nguồn dùng chung cho app và công cụ dựng
