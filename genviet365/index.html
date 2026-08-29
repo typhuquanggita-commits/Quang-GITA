@@ -4,8 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kiến trúc Gen Việt 365</title>
-<meta name="description" content="Hệ thống huấn luyện nhân tài GEN VIỆT 365 — kiến trúc bảy lớp, sáu bậc nhân tài, mô hình chi hội và lộ trình ba mươi năm của Học viện GITA.">
+<meta name="description" content="Hệ thống huấn luyện nhân tài GEN VIỆT 365 — kiến trúc bảy lớp, sáu bậc nhân tài, mô hình chi hội, bảng phân quyền và lộ trình ba mươi năm của Học viện GITA.">
 <meta name="color-scheme" content="light dark">
+<!-- Khoá chặt nguồn: chỉ mã của chính trang, phông từ Google Fonts.
+     style-src cần 'unsafe-inline' vì các khối tô màu bằng thuộc tính
+     style="--c:#rrggbb"; giá trị ấy được lọc bằng regex trong
+     giao-dien.js (hàm mau()) trước khi ghép vào thuộc tính. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'">
+<meta name="referrer" content="no-referrer">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,600;1,600&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -19,6 +25,8 @@
 <script src="du-lieu-kythuat.js"></script>
 <script src="du-lieu-chuyenmon.js"></script>
 <script src="du-lieu-congdong.js"></script>
+<script src="du-lieu-quyen.js"></script>
+<script src="quyen.js"></script>
 <script src="man-hinh.js"></script>
 <script src="giao-dien.js"></script>
 </body>

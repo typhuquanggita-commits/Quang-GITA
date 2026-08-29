@@ -7,7 +7,7 @@ hội hay một phụ huynh cầm lên và làm theo được từ tuần sau.
 Tập 3 — [`GEN_VIET_365_CHUYEN_MON.md`](GEN_VIET_365_CHUYEN_MON.md) — là phần nghề: cách
 đọc một ca, cách chọn giải pháp, tư vấn, ngôn ngữ và đội ngũ.
 
-Bản trực quan đầy đủ (12 nhóm · 63 màn): mở `genviet365/index.html`.
+Bản trực quan đầy đủ (12 nhóm · 65 màn): mở `genviet365/index.html`.
 
 ---
 

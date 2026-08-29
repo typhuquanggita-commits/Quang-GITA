@@ -22,6 +22,33 @@
   function ds(a, f) { return (a || []).map(f).join(''); }
   function lay(o) { return o.tu ? G.TU[o.tu] : o.ds; }
 
+  /* Màu đi thẳng vào thuộc tính style. Thoát ký tự thôi chưa đủ: một
+     giá trị như "red;background:url(...)" vẫn chèn được khai báo CSS
+     mới. Nên chỉ nhận đúng dạng #rrggbb, sai thì rơi về màu chữ. */
+  function mau(s) { return /^#[0-9A-Fa-f]{6}$/.test(s) ? s : 'currentColor'; }
+
+  /* ── tài khoản đang xem ──────────────────────────── */
+  var VAI = 'R01', BAC = 'B1';
+  function docTT() {
+    /* Bản cắt (dong-goi-artifact.cjs --vai=) đã bỏ hẳn phần nội dung
+       ngoài quyền khỏi tệp. Khoá luôn thanh đổi vai để không tạo ảo
+       giác rằng đổi vai sẽ mở thêm được gì. */
+    if (G.KHOA_VAI) { VAI = G.KHOA_VAI; BAC = G.KHOA_BAC || 'B1'; return; }
+    try {
+      var v = localStorage.getItem('genviet365.vai');
+      var b = localStorage.getItem('genviet365.bac');
+      if (v && G.timVai(v)) VAI = v;
+      if (b && G.BAC_SO[b]) BAC = b;
+    } catch (x) {}
+  }
+  function luuTT() {
+    try {
+      localStorage.setItem('genviet365.vai', VAI);
+      localStorage.setItem('genviet365.bac', BAC);
+    } catch (x) {}
+  }
+  G.vaiHienTai = function () { return { vai: VAI, bac: BAC }; };
+
   /* ── các loại khối ───────────────────────────────── */
   var K = {};
 
@@ -74,7 +101,7 @@
 
   K.ly = function (o) {
     return '<div class="luoi hai">' + ds(lay(o), function (x) {
-      return '<div class="the ly"><div class="stt">' + x.so + '</div>' +
+      return '<div class="the ly"><div class="stt">' + e(x.so) + '</div>' +
         '<div><h3>' + e(x.t) + '</h3><p>' + e(x.n) + '</p>' +
         '<p class="vi">' + e(x.v) + '</p></div></div>';
     }) + '</div>';
@@ -93,7 +120,7 @@
 
   K.bac = function (o) {
     return '<div class="luoi hai">' + ds(lay(o), function (x) {
-      return '<article class="bac" style="--c:' + e(x.mau) + '">' +
+      return '<article class="bac" style="--c:' + mau(x.mau) + '">' +
         '<div class="top"><div class="hang"><span class="m">' + e(x.ma) + '</span>' +
           '<h3>' + e(x.t) + '</h3><span class="tuoi">' + e(x.tuoi) + '</span></div>' +
           '<div class="hoi">' + e(x.hoi) + '</div></div><dl>' +
@@ -108,11 +135,11 @@
 
   K.tru = function (o) {
     return '<div class="luoi hai">' + ds(lay(o), function (x) {
-      return '<div class="tru" style="--c:' + e(x.mau) + '">' +
+      return '<div class="tru" style="--c:' + mau(x.mau) + '">' +
         '<div class="dinh"><div class="k">' + e(x.k) + '</div><h3>' + e(x.t) + '</h3>' +
         '<div class="hoi">' + e(x.hoi) + '</div></div><ul>' +
         ds(x.truc, function (t) {
-          return '<li><span class="n">' + t.so + '</span><div><b>' + e(t.t) + '</b>' +
+          return '<li><span class="n">' + e(t.so) + '</span><div><b>' + e(t.t) + '</b>' +
             '<span>' + e(t.do) + ' · ' + e(t.bang) + ' · ' + e(t.ky) + '</span></div></li>';
         }) + '</ul></div>';
     }) + '</div>';
@@ -120,7 +147,7 @@
 
   K.thang = function (o) {
     return '<div class="thang">' + ds(lay(o), function (x) {
-      return '<div class="nac"><div class="m">' + x.m + '</div><div class="noi">' +
+      return '<div class="nac"><div class="m">' + e(x.m) + '</div><div class="noi">' +
         '<b>' + e(x.t) + '</b><span>Quyền điều hành: ' + e(x.quyen) + '</span>' +
         '<span>Mức hỗ trợ: ' + e(x.ho) + '</span><span>Bằng chứng: ' + e(x.bang) + '</span>' +
         '</div></div>';
@@ -129,7 +156,7 @@
 
   K.pc = function (o) {
     return '<div class="luoi hai">' + ds(lay(o), function (x) {
-      return '<div class="pc" style="--c:' + e(x.mau) + '">' +
+      return '<div class="pc" style="--c:' + mau(x.mau) + '">' +
         '<div class="dinh"><span class="k">' + e(x.k) + '</span><h3>' + e(x.t) + '</h3>' +
         '<span class="tru-n">trụ ' + e(x.tru) + '</span></div>' +
         '<div class="than"><p>' + e(x.n) + '</p>' +
@@ -176,7 +203,7 @@
 
   K.mau = function (o) {
     return '<div class="bang">' + ds(lay(o), function (x) {
-      return '<div class="o" style="--c:' + e(x.mau) + '"><div class="dai"></div><div class="noi">' +
+      return '<div class="o" style="--c:' + mau(x.mau) + '"><div class="dai"></div><div class="noi">' +
         '<b>' + e(x.b) + '</b><p>' + e(x.n) + '</p>' +
         '<p class="dam">' + e(x.lam) + '</p>' +
         '<div class="cham">Nhịp chạm: ' + e(x.cham) + '</div></div></div>';
@@ -185,7 +212,7 @@
 
   K.mt = function (o) {
     return '<div class="luoi mot">' + ds(lay(o), function (x) {
-      return '<div class="mt" style="--c:' + e(x.mau) + '">' +
+      return '<div class="mt" style="--c:' + mau(x.mau) + '">' +
         '<div class="hang"><span class="m">' + e(x.ma) + '</span><h3>' + e(x.t) + '</h3>' +
         '<span class="truc">' + e(x.truc) + '</span></div>' +
         '<p>' + e(x.n) + '</p>' +
@@ -205,7 +232,7 @@
 
   K.chang = function (o) {
     return '<div class="tram">' + ds(lay(o), function (x) {
-      return '<article class="chang" style="--c:' + e(x.mau) + '">' +
+      return '<article class="chang" style="--c:' + mau(x.mau) + '">' +
         '<div class="top"><div class="hang"><span class="m">' + e(x.ma) + '</span>' +
         '<h3>' + e(x.t) + '</h3><span class="nam">' + e(x.nam) + '</span></div>' +
         '<div class="hoi">' + e(x.hoi) + '</div></div><div class="than-c">' +
@@ -235,7 +262,7 @@
   /* lộ trình bậc — mỗi bậc một khối chu kỳ */
   K.ck = function (o) {
     return ds(lay(o), function (b) {
-      return '<div class="lt" style="--c:' + e(b.mau) + '">' +
+      return '<div class="lt" style="--c:' + mau(b.mau) + '">' +
         '<div class="lt-dau"><span class="m">' + e(b.bac) + '</span><h3>' + e(b.t) + '</h3>' +
         '<span class="tong">' + e(b.tong) + '</span></div>' +
         '<div class="lt-than">' + ds(b.ck, function (c) {
@@ -251,7 +278,7 @@
   /* khoá nền — tám buổi */
   K.buoi = function (o) {
     return '<div class="luoi hai">' + ds(lay(o), function (x) {
-      return '<div class="the buoi"><div class="b-dau"><span class="n">Buổi ' + x.b + '</span>' +
+      return '<div class="the buoi"><div class="b-dau"><span class="n">Buổi ' + e(x.b) + '</span>' +
         '<h3>' + e(x.t) + '</h3></div>' +
         '<div class="dich-b">' + e(x.dich) + '</div>' +
         '<div class="d"><b>Trên lớp</b>' + e(x.lop) + '</div>' +
@@ -263,7 +290,7 @@
   /* 24 chuyên đề — bốn nhóm sáu */
   K.cd = function (o) {
     return '<div class="luoi hai">' + ds(lay(o), function (n) {
-      return '<div class="cdn" style="--c:' + e(n.mau) + '"><h3>' + e(n.nhom) + '</h3><ol>' +
+      return '<div class="cdn" style="--c:' + mau(n.mau) + '"><h3>' + e(n.nhom) + '</h3><ol>' +
         ds(n.ds, function (x) {
           return '<li><b>' + e(x.t) + '</b><span>' + e(x.lam) + '</span></li>';
         }) + '</ol></div>';
@@ -298,8 +325,8 @@
     for (i = 0; i < t.length; i++) if (t[i].d > toi) toi = t[i].d;
     return '<div class="the diem">' + ds(t, function (x) {
       return '<div class="hang-d"><span class="t">' + e(x.t) + '</span>' +
-        '<span class="d">' + x.d + '</span>' +
-        '<div class="thanh"><i style="width:' + (x.d / toi * 100) + '%"></i></div>' +
+        '<span class="d">' + e(x.d) + '</span>' +
+        '<div class="thanh"><i style="width:' + (Number(x.d) / toi * 100).toFixed(2) + '%"></i></div>' +
         '<span class="n">' + e(x.n) + '</span></div>';
     }) + '<div class="tong-d">Tổng ' + tong + ' điểm · ngưỡng đạt ' +
       e(o.nguong == null ? 85 : o.nguong) + '</div></div>';
@@ -307,7 +334,7 @@
 
   K.quy = function (o) {
     return '<div class="luoi hai">' + ds(lay(o), function (x) {
-      return '<div class="quy" style="--c:' + e(x.mau) + '">' +
+      return '<div class="quy" style="--c:' + mau(x.mau) + '">' +
         '<div class="q-dau"><span class="q">' + e(x.q) + '</span>' +
         '<b>' + e(x.chu) + '</b><span class="tu">' + e(x.tuan) + '</span></div><ul class="moc">' +
         ds(x.moc, function (m) {
@@ -318,7 +345,7 @@
 
   K.nam = function (o) {
     return '<div class="luoi hai">' + ds(lay(o), function (x) {
-      return '<div class="quy" style="--c:' + e(x.mau) + '">' +
+      return '<div class="quy" style="--c:' + mau(x.mau) + '">' +
         '<div class="q-dau"><span class="q">' + e(x.q) + '</span><b>' + e(x.chu) + '</b></div>' +
         '<ul class="viec">' + ds(x.viec, function (v) { return '<li>' + e(v) + '</li>'; }) + '</ul>' +
         '<div class="dich">' + ds(x.so, function (s) { return '<span>' + e(s) + '</span>'; }) + '</div></div>';
@@ -338,7 +365,7 @@
 
   K.stmt = function (o) {
     return ds(lay(o), function (x) {
-      return '<div class="mt st" style="--c:' + e(x.mau) + '">' +
+      return '<div class="mt st" style="--c:' + mau(x.mau) + '">' +
         '<div class="hang"><span class="m">' + e(x.m) + '</span><h3>' + e(x.t) + '</h3></div>' +
         '<p>' + e(x.n) + '</p><div class="viec-mt">' +
         ds(x.viec, function (v) {
@@ -351,7 +378,7 @@
 
   K.stv = function (o) {
     return '<div class="luoi hai">' + ds(lay(o), function (x) {
-      return '<div class="stv" style="--c:' + e(x.mau) + '"><h3>' + e(x.v) + '</h3>' +
+      return '<div class="stv" style="--c:' + mau(x.mau) + '"><h3>' + e(x.v) + '</h3>' +
         '<div class="k"><b>Hằng tuần</b><ul>' + ds(x.tuan, function (y) { return '<li>' + e(y) + '</li>'; }) + '</ul></div>' +
         '<div class="k"><b>Hằng tháng</b><ul>' + ds(x.thang, function (y) { return '<li>' + e(y) + '</li>'; }) + '</ul></div>' +
         '<div class="k khong"><b>Không được làm</b><ul>' + ds(x.khong, function (y) { return '<li>' + e(y) + '</li>'; }) + '</ul></div>' +
@@ -387,7 +414,7 @@
   /* thư viện chiến lược — mười nhóm, mỗi nhóm một bảng mười dòng */
   K.cl = function (o) {
     return ds(lay(o), function (n) {
-      return '<div class="clg" style="--c:' + e(n.mau) + '">' +
+      return '<div class="clg" style="--c:' + mau(n.mau) + '">' +
         '<h3>' + e(n.nhom) + '</h3>' +
         '<div class="cuon"><table><thead><tr><th>#</th><th>Chiến lược</th>' +
         '<th>Cơ chế</th><th>Trụ</th><th>Đo bằng</th></tr></thead><tbody>' +
@@ -402,12 +429,38 @@
   /* bốn chân dung gia đình */
   K.cd4 = function (o) {
     return '<div class="luoi hai">' + ds(lay(o), function (x) {
-      return '<div class="cd4" style="--c:' + e(x.mau) + '"><h3>' + e(x.t) + '</h3>' +
+      return '<div class="cd4" style="--c:' + mau(x.mau) + '"><h3>' + e(x.t) + '</h3>' +
         '<div class="d"><b>Dấu hiệu</b>' + e(x.dh) + '</div>' +
         '<div class="d"><b>Họ cần gì</b>' + e(x.can) + '</div>' +
         '<div class="d lam"><b>Mình làm gì</b>' + e(x.lam) + '</div>' +
         '<div class="d bay"><b>Bẫy</b>' + e(x.bay) + '</div></div>';
     }) + '</div>';
+  };
+
+  /* phạm vi của vai đang xem — khối duy nhất đọc trạng thái chạy */
+  K.phamvi = function () {
+    var v = G.timVai(VAI) || {}, tong = Object.keys(G.MAN).length;
+    var mo = G.demMan(VAI, BAC), khoa = G.manBiKhoa(VAI, BAC);
+    var pt = Math.round(mo / tong * 100);
+    var theoBac = !!v.theoBac;
+    var bacMo = null;
+    (G.BAC_MO || []).forEach(function (b) { if (b.bac === BAC) bacMo = b; });
+    return '<div class="so"><div><b>' + e(v.ma) + '</b><span>mã vai</span></div>' +
+      '<div><b>' + e(v.lv) + '</b><span>bậc quyền</span></div>' +
+      (theoBac ? '<div><b>' + e(BAC) + '</b><span>bậc năng lực</span></div>' +
+                 '<div><b>' + e(G.lvHieuLuc(VAI, BAC)) + '</b><span>bậc hiệu lực</span></div>' : '') +
+      '<div><b>' + mo + '/' + tong + '</b><span>màn mở được</span></div>' +
+      '<div><b>' + pt + '%</b><span>tỉ lệ hiển thị</span></div></div>' +
+      '<div class="the"><h3>' + e(v.t) + '</h3><p>' + e(v.ln) + '</p>' +
+      (theoBac && bacMo ? '<p class="vi">Bậc ' + e(bacMo.bac) + ' · ' + e(bacMo.t) + ' — ' + e(bacMo.mo) + '</p>' : '') +
+      '</div>' +
+      (khoa.length
+        ? '<h3 class="muc-con">' + khoa.length + ' màn chưa mở</h3><div class="cuon"><table>' +
+          '<thead><tr><th>Màn</th><th>Vì sao chưa mở</th></tr></thead><tbody>' +
+          ds(khoa, function (k) {
+            return '<tr><td><strong>' + e(k.t) + '</strong></td><td class="mo">' + e(k.ly.n) + '</td></tr>';
+          }) + '</tbody></table></div>'
+        : '<p class="van">Vai này mở toàn bộ hệ thống, không khoá màn nào.</p>');
   };
 
   /* ── dựng một màn ────────────────────────────────── */
@@ -423,11 +476,28 @@
     return html;
   }
 
-  /* danh sách phẳng để đi tới / lui */
+  /* Thẻ khoá — nói đúng lý do, không nói chung chung. */
+  function theKhoa(v) {
+    var m = G.MAN[v] || {}, ly = G.lyDoKhoa(VAI, BAC, v), r = G.timVai(VAI) || {};
+    return '<div class="dau"><span class="k">Chưa mở</span><h2>' + e(m.t || v) + '</h2></div>' +
+      '<div class="the khoa"><h3>Đang xem với vai: ' + e(r.t || VAI) +
+      (r.theoBac ? ' · bậc ' + e(BAC) : '') + '</h3>' +
+      '<p>' + e(ly.n) + '</p>' +
+      '<p class="vi">Đổi vai ở thanh trên để xem hệ thống từ chỗ người khác. ' +
+      'Trong bản chạy thật, phần này KHÔNG được gửi xuống máy của vai không có quyền — ' +
+      'ẩn ở trình duyệt chỉ để giao diện đúng vai, không phải để giữ bí mật.</p></div>';
+  }
+
+  /* danh sách phẳng để đi tới / lui — chỉ gồm màn vai này mở được */
   var PHANG = [];
-  (G.NHOM || []).forEach(function (n) {
-    n.ds.forEach(function (i) { PHANG.push({ v: i.v, t: i.t, nhom: n.t }); });
-  });
+  function dungPhang() {
+    PHANG = [];
+    (G.NHOM || []).forEach(function (n) {
+      n.ds.forEach(function (i) {
+        if (G.duocPhep(VAI, BAC, i.v)) PHANG.push({ v: i.v, t: i.t, nhom: n.t });
+      });
+    });
+  }
 
   function dieuHuong(v) {
     var i = -1, k;
@@ -436,38 +506,67 @@
     var sau = i > -1 && i < PHANG.length - 1 ? PHANG[i + 1] : null;
     return '<nav class="di" aria-label="Chuyển màn">' +
       (truoc ? '<a href="#' + e(truoc.v) + '" class="tr"><span>← Trước</span><b>' + e(truoc.t) + '</b></a>' : '<span></span>') +
-      '<span class="dem">' + (i + 1) + ' / ' + PHANG.length + '</span>' +
+      '<span class="dem">' + (i > -1 ? (i + 1) + ' / ' + PHANG.length : 'ngoài phạm vi') + '</span>' +
       (sau ? '<a href="#' + e(sau.v) + '" class="sa"><span>Sau →</span><b>' + e(sau.t) + '</b></a>' : '<span></span>') +
       '</nav>';
   }
 
   /* ── vỏ ứng dụng ─────────────────────────────────── */
+  function veChonVai() {
+    var r = G.timVai(VAI) || {};
+    return '<div class="chon">' +
+      '<label for="o-vai">Vai</label>' +
+      '<select id="o-vai">' + ds(G.VAI, function (v) {
+        return '<option value="' + e(v.ma) + '"' + (v.ma === VAI ? ' selected' : '') + '>' +
+          e(v.ma) + ' · ' + e(v.t) + '</option>';
+      }) + '</select>' +
+      '<label for="o-bac"' + (r.theoBac ? '' : ' hidden') + '>Bậc</label>' +
+      '<select id="o-bac"' + (r.theoBac ? '' : ' hidden') + '>' + ds(G.BAC_MO, function (b) {
+        return '<option value="' + e(b.bac) + '"' + (b.bac === BAC ? ' selected' : '') + '>' +
+          e(b.bac) + ' · ' + e(b.t) + '</option>';
+      }) + '</select></div>';
+  }
+
+  function veVaiKhoa() {
+    var r = G.timVai(VAI) || {};
+    return '<div class="chon khoa-vai"><span class="nhan">Bản cắt cho ' + e(r.t || VAI) +
+      (r.theoBac ? ' · bậc ' + e(BAC) : '') + '</span></div>';
+  }
+
+  function veMucLuc() {
+    return ds(G.NHOM, function (n) {
+      var muc = n.ds.filter(function (i) { return G.duocPhep(VAI, BAC, i.v); });
+      if (!muc.length) return '';
+      return '<div class="nhom" style="--c:' + mau(n.mau) + '">' +
+        '<div class="n-dau"><span class="no">' + e(n.no) + '</span>' +
+        '<span class="t">' + e(n.t) + '</span><span class="s">' + e(n.s) + '</span></div>' +
+        '<ul>' + ds(muc, function (i) {
+          return '<li><a href="#' + e(i.v) + '" data-v="' + e(i.v) + '">' +
+            '<b>' + e(i.t) + '</b><span>' + e(i.h) + '</span></a></li>';
+        }) + '</ul></div>';
+    });
+  }
+
   function veVo() {
     var m = G.META;
     return '<a href="#noi-dung" class="bo-qua">Tới nội dung</a>' +
       '<header class="mao">' +
         '<div class="hieu"><span class="ten">' + e(m.ten) + '</span>' +
           '<span class="phu">' + e(m.phu) + '</span></div>' +
-        '<div class="ban">Bản ' + e(m.ban) + ' · ' + e(m.tam) + '</div>' +
+        '<div class="ban">Bản ' + e(m.ban) + '</div>' +
+        (G.KHOA_VAI ? veVaiKhoa() : veChonVai()) +
         '<button class="nut-muc" type="button" aria-expanded="false">Mục lục</button>' +
       '</header>' +
       '<div class="khung">' +
-        '<nav class="muc" aria-label="Mục lục">' + ds(G.NHOM, function (n) {
-          return '<div class="nhom" style="--c:' + e(n.mau) + '">' +
-            '<div class="n-dau"><span class="no">' + e(n.no) + '</span>' +
-            '<span class="t">' + e(n.t) + '</span><span class="s">' + e(n.s) + '</span></div>' +
-            '<ul>' + ds(n.ds, function (i) {
-              return '<li><a href="#' + e(i.v) + '" data-v="' + e(i.v) + '">' +
-                '<b>' + e(i.t) + '</b><span>' + e(i.h) + '</span></a></li>';
-            }) + '</ul></div>';
-        }) + '</nav>' +
+        '<nav class="muc" aria-label="Mục lục"></nav>' +
         '<main id="noi-dung" class="chinh" tabindex="-1"></main>' +
       '</div>' +
+      '<p class="doc-to" role="status" aria-live="polite"></p>' +
       '<footer class="chan"><b>' + e(m.ten) + '</b><span>' + e(m.hocVien) + '</span>' +
       '<span>' + e(m.suMenh) + '</span></footer>';
   }
 
-  var goc, chinh, nut;
+  var goc, chinh, nut, mucNav, docTo;
 
   function nho(v) { try { localStorage.setItem('genviet365.man', v); } catch (x) {} }
   function nhoLai() { try { return localStorage.getItem('genviet365.man'); } catch (x) { return null; } }
@@ -475,9 +574,14 @@
   function ve() {
     var v = location.hash.replace(/^#/, '');
     if (v === 'noi-dung') return;
-    if (!v || !G.MAN[v]) v = PHANG.length ? PHANG[0].v : '';
-    chinh.innerHTML = veMan(v) + dieuHuong(v);
-    Array.prototype.forEach.call(goc.querySelectorAll('.muc a'), function (a) {
+    if (!v || !G.MAN[v]) v = PHANG.length ? PHANG[0].v : 'tong-quan';
+
+    /* CỔNG LỚP HAI — chạy trước mọi lần dựng, nên vào thẳng bằng
+       liên kết hay bằng trạng thái đã lưu đều bị chặn như nhau. */
+    var duoc = G.duocPhep(VAI, BAC, v);
+    chinh.innerHTML = (duoc ? veMan(v) : theKhoa(v)) + dieuHuong(v);
+
+    Array.prototype.forEach.call(mucNav.querySelectorAll('a'), function (a) {
       var o = a.getAttribute('data-v') === v;
       a.classList.toggle('oo', o);
       if (o) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
@@ -485,20 +589,67 @@
     nho(v);
     goc.classList.remove('mo');
     if (nut) nut.setAttribute('aria-expanded', 'false');
+    if (docTo) docTo.textContent = (duoc ? '' : 'Chưa mở: ') + ((G.MAN[v] || {}).t || v);
     window.scrollTo(0, 0);
+  }
+
+  function dungLai() {
+    dungPhang();
+    mucNav.innerHTML = veMucLuc();
+    ve();
+  }
+
+  function doiVai(v, b) {
+    if (v) VAI = v;
+    if (b) BAC = b;
+    luuTT();
+    var r = G.timVai(VAI) || {};
+    var oBac = goc.querySelector('#o-bac');
+    var nBac = goc.querySelector('label[for="o-bac"]');
+    if (oBac) oBac.hidden = !r.theoBac;
+    if (nBac) nBac.hidden = !r.theoBac;
+    dungLai();
   }
 
   function dung(g) {
     goc = g;
+    docTT();
     goc.className = 'ung';
     goc.innerHTML = veVo();
     chinh = goc.querySelector('.chinh');
+    mucNav = goc.querySelector('.muc');
     nut = goc.querySelector('.nut-muc');
+    docTo = goc.querySelector('.doc-to');
+
     nut.addEventListener('click', function () {
       var mo = goc.classList.toggle('mo');
       nut.setAttribute('aria-expanded', mo ? 'true' : 'false');
     });
+    var oVai = goc.querySelector('#o-vai'), oBac = goc.querySelector('#o-bac');
+    if (oVai) oVai.addEventListener('change', function (ev) { doiVai(ev.target.value, null); });
+    if (oBac) oBac.addEventListener('change', function (ev) { doiVai(null, ev.target.value); });
     window.addEventListener('hashchange', ve);
+
+    /* mũi tên trái phải để lật màn — bỏ qua khi đang gõ hoặc đang
+       chọn trong danh sách, và khi người dùng đang giữ phím tắt */
+    document.addEventListener('keydown', function (ev) {
+      if (ev.ctrlKey || ev.metaKey || ev.altKey) return;
+      var t = ev.target || {};
+      var the = (t.tagName || '').toLowerCase();
+      if (the === 'input' || the === 'select' || the === 'textarea' || t.isContentEditable) return;
+      if (ev.key !== 'ArrowLeft' && ev.key !== 'ArrowRight') return;
+      var i = -1, k;
+      var hien = location.hash.replace(/^#/, '');
+      for (k = 0; k < PHANG.length; k++) if (PHANG[k].v === hien) i = k;
+      var j = ev.key === 'ArrowLeft' ? i - 1 : i + 1;
+      if (i > -1 && j >= 0 && j < PHANG.length) {
+        ev.preventDefault();
+        location.hash = PHANG[j].v;
+      }
+    });
+
+    dungPhang();
+    mucNav.innerHTML = veMucLuc();
     if (!location.hash) {
       var cu = nhoLai();
       if (cu && G.MAN[cu]) { location.hash = cu; return; }

@@ -498,3 +498,31 @@ ul.vai li span{color:var(--muc2); font-size:12.5px}
           color:var(--muc3); display:block; margin-bottom:2px}
 .cd4 .d.lam{color:var(--muc); padding-left:11px; border-left:2px solid var(--c)}
 .cd4 .d.bay{color:var(--lua); padding-top:9px; border-top:1px dashed var(--vien2)}
+
+/* ── thanh chọn vai ──────────────────────────────────── */
+.chon{display:flex; align-items:center; gap:7px; flex-wrap:wrap}
+.chon label{font-family:var(--ma); font-size:10px; letter-spacing:.12em;
+            text-transform:uppercase; color:var(--muc3)}
+.chon select{
+  font-family:var(--chu); font-size:12.5px; color:var(--muc); background:var(--the2);
+  border:1px solid var(--vien); border-radius:7px; padding:5px 8px; max-width:210px;
+}
+.chon select:hover{border-color:var(--son)}
+@media(max-width:1039px){ .chon select{max-width:130px} .chon label{display:none} }
+
+/* ── thẻ khoá ────────────────────────────────────────── */
+.the.khoa{border-left:4px solid var(--vang); background:var(--the2)}
+.the.khoa h3{color:var(--vang)}
+
+/* ── vùng đọc to cho trình đọc màn hình ─────────────── */
+.doc-to{position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0);
+        white-space:nowrap; margin:-1px; padding:0; border:0}
+
+/* ── bản in ──────────────────────────────────────────── */
+@media print{
+  .mao,.muc,.di,.chan,.bo-qua{display:none!important}
+  .khung{display:block; max-width:none; padding:0}
+  .the,.cuon,.thap,.vong,.bso,.lt{box-shadow:none; break-inside:avoid}
+  table{min-width:0}
+  body{background:#fff; color:#000}
+}

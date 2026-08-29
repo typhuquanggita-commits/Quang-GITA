@@ -4,7 +4,10 @@
 phần chạy được ngay. Tập này là **phần nghề**: cách đọc một ca, cách chọn giải pháp,
 cách một gia đình bước vào hệ, cách hệ giữ người ở lại, và cách tạo ra người dẫn.
 
-Bản trực quan đầy đủ (12 nhóm · 63 màn): mở `genviet365/index.html`.
+Tập 4 — [`GEN_VIET_365_PHAN_QUYEN.md`](GEN_VIET_365_PHAN_QUYEN.md) — nói ai được thấy
+phần nào trong tập này, và vì sao.
+
+Bản trực quan đầy đủ (12 nhóm · 65 màn): mở `genviet365/index.html`.
 
 ---
 

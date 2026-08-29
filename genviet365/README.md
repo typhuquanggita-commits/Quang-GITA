@@ -3,12 +3,13 @@
 Ứng dụng trình bày **toàn bộ** hệ thống GEN VIỆT 365 của Học viện GITA: kiến trúc, giáo
 trình, mô hình chi hội, bộ đo, biểu mẫu, dữ liệu và lộ trình 30 năm (2026 – 2056).
 
-**12 nhóm · 63 màn.** Không cần cài gì, không có bước dựng.
+**12 nhóm · 65 màn · 17 vai.** Không cần cài gì, không có bước dựng.
 
 Bản viết đầy đủ:
 - [`../docs/GEN_VIET_365.md`](../docs/GEN_VIET_365.md) — tập 1 · kiến trúc
 - [`../docs/GEN_VIET_365_VAN_HANH.md`](../docs/GEN_VIET_365_VAN_HANH.md) — tập 2 · vận hành
 - [`../docs/GEN_VIET_365_CHUYEN_MON.md`](../docs/GEN_VIET_365_CHUYEN_MON.md) — tập 3 · chuyên môn và đội ngũ
+- [`../docs/GEN_VIET_365_PHAN_QUYEN.md`](../docs/GEN_VIET_365_PHAN_QUYEN.md) — tập 4 · phân quyền và bảo mật
 
 ## Chạy
 
@@ -18,11 +19,26 @@ Mở thẳng `genviet365/index.html`, hoặc:
 npx http-server -p 8099 -s .
 ```
 
+## Trước khi phát hành — chạy bộ kiểm
+
+```bash
+node genviet365/tools/kiem-tra.cjs
+```
+
+Mã thoát khác 0 nghĩa là **không được phát hành**. Bộ kiểm soi bốn lớp: cấu trúc kho, rò rỉ
+ở bản cắt, dựng thật bằng Chromium, và cổng phân quyền (thử vào thẳng bằng `#hash` vào từng
+màn ngoài quyền).
+
 ## Gộp thành một tệp để gửi đi
 
 ```bash
-node genviet365/dong-goi-artifact.cjs [đường-dẫn-ra]
+node genviet365/dong-goi-artifact.cjs [đường-dẫn-ra]              # bản đầy đủ
+node genviet365/dong-goi-artifact.cjs --vai=R16 --bac=B1 ra.html  # BẢN CẮT
 ```
+
+**Bản cắt** chỉ đóng gói phần nội dung vai ấy có quyền — kho gốc không nằm trong tệp ra, và
+thanh đổi vai bị khoá. Đây là hàng rào thật của một trang tĩnh: *thứ không gửi đi là thứ
+không lộ được.*
 
 Sinh ra một trang tự chứa (CSS và tám tệp JS nhúng sẵn, chỉ còn phông chữ gọi ra ngoài)
 để đăng làm Artifact, gửi qua thư hoặc mở trên máy không có kho mã. Tệp gộp là **bản sinh
@@ -37,6 +53,9 @@ ra** — không sửa tay; sửa xong nguồn thì gộp lại.
 | `du-lieu-vanhanh.js` | Lịch năm 52 tuần · sổ tay 6 vai · sổ tay 3 môi trường · cổng nghiệm thu 100 điểm · 4 báo cáo · 14 biểu mẫu · an toàn và đạo đức · năm đầu tiên |
 | `du-lieu-chuyenmon.js` | Ma trận 8 × 8 · quy trình 10 bước · 11 nhóm giải pháp · thư viện 100 chiến lược · thang mức hỗ trợ · cơ chế xử lý tự động theo KPI |
 | `du-lieu-congdong.js` | Đường vào 6 bước · mạch tư vấn · buổi tư vấn đầu · 4 chân dung gia đình · đại sứ · bảng thay-vì · nghi lễ · hệ ghi nhận · chuỗi WOW · nghề Coach · 7 năng lực · tuyển và thử việc · chuẩn dự giờ |
+| `du-lieu-quyen.js` | 17 vai · 13 tầng hiển thị · bảng ghi đè · bậc năng lực học viên → bậc quyền · tỉ lệ hiển thị mong muốn · 6 luật phân quyền |
+| `quyen.js` | **Bộ máy quyền** — một nguồn sự thật cho ứng dụng, bộ gộp và bộ kiểm: `duocPhep()` · `lyDoKhoa()` · `demMan()` |
+| `tools/kiem-tra.cjs` | **Bộ kiểm phát hành** — bốn lớp: tĩnh · bản cắt · chạy thật · cổng phân quyền |
 | `du-lieu-kythuat.js` | Cấu trúc hộ chiếu JSON · 5 luật ghi dữ liệu · 12 bảng lưu · 9 đường máy chủ · 10 quyền · 7 nguyên tắc dựng phần mềm |
 | `man-hinh.js` | `GV.NHOM` (12 nhóm điều hướng) · `GV.MAN` (63 màn, mỗi màn là danh sách KHỐI) · `GV.TU` (bảng tra nối khối tới dữ liệu) |
 | `giao-dien.js` | Lớp dựng: 33 loại khối · vỏ ứng dụng · định tuyến theo hash · nhớ màn đang đọc |
