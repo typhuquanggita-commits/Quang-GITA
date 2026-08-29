@@ -91,6 +91,34 @@ G.goiDuocCap = function () {
   return ds.filter(function (g, i) { return g && ds.indexOf(g) === i; });
 };
 
+/* ── Bảng cấp phát cho MÁY CHỦ đọc ──
+   Khi máy của chủ hệ thống phục vụ máy khác (desktop/may-chu.js), máy chủ
+   phải tự quyết định mỗi tài khoản được mở gói nào. Nó KHÔNG được tin cái
+   vai mà máy khách khai — máy khách nào cũng khai được "R01".
+
+   Nên máy chủ tra bảng này theo TÊN ĐĂNG NHẬP. Bảng dựng bằng chính
+   G.goiDuocCap() ở trên, không chép lại luật lần thứ hai: sửa phạm vi cấp
+   phép một chỗ là cả hai đường đi theo. */
+G.bangCapPhat = function () {
+  var ra = {};
+  var ds = (G.ACCOUNTS || []).concat(G.AUDITORS || []);
+  var giuAcc = G.S.acc, giuRole = G.S.role, giuRo = G.S.roleObj;
+  try {
+    for (var i = 0; i < ds.length; i++) {
+      var a = ds[i];
+      if (!a || !a.u) continue;
+      G.S.acc = a; G.S.role = a.role; G.S.roleObj = G.roleById(a.role);
+      ra[String(a.u).toLowerCase()] = { vai: a.role, ten: a.ten || '', goi: G.goiDuocCap() };
+    }
+  } finally {
+    /* Phải trả trạng thái về đúng như cũ. Bảng này dựng ngay trong phiên
+       của chủ hệ thống đang mở màn hình — để sót là chủ hệ thống bị đổi
+       vai thành người cuối danh sách mà không hiểu vì sao. */
+    G.S.acc = giuAcc; G.S.role = giuRole; G.S.roleObj = giuRo;
+  }
+  return ra;
+};
+
 /* ── Xin khoá ── */
 function xinKhoa(danhSach) {
   /* Giấy phép cục bộ: bản máy tính đã kích hoạt nạp khoá qua đường này,
@@ -126,6 +154,11 @@ function xinKhoa(danhSach) {
       }
       G.KHO.lyDoTuChoi = ''; G.KHO.maTuChoi = '';
       G.KHO.hanKhoa = d.hetHan || null;
+      /* Máy chủ của chủ hệ thống (desktop/may-chu.js) trả kèm mã phiên.
+         Gói của phiên nào chỉ lấy được bằng mã phiên ấy, nên phải giữ lại
+         và gửi kèm ở layGoi. Máy chủ Apps Script không trả trường này —
+         khi ấy chuỗi rỗng, và layGoi gọi y như cũ. */
+      G.KHO.maPhien = d.phien || '';
       return d.khoa;
     });
 }
@@ -138,10 +171,16 @@ function xinKhoa(danhSach) {
 function layGoi(ten) {
   var nguon = window.GITA_NGUON_KHO;
   if (nguon)
-    return fetch(nguon + encodeURIComponent(ten))
+    return fetch(nguon + encodeURIComponent(ten) +
+        (G.KHO.maPhien ? '?p=' + encodeURIComponent(G.KHO.maPhien) : ''))
       .then(function (r) { return r.json(); })
       .then(function (d) {
-        if (!d || !d.ok) throw new Error((d && d.error) || 'Máy chủ không trả gói ' + ten);
+        if (!d || !d.ok) {
+          /* Chủ hệ thống cắt quyền máy này giữa chừng thì đường này là chỗ
+             đầu tiên biết. Không nói ra thì người dùng chỉ thấy màn trắng. */
+          if (G.MAY_KHACH_BI_CAT) G.MAY_KHACH_BI_CAT(d && d.error);
+          throw new Error((d && d.error) || 'Máy chủ không trả gói ' + ten);
+        }
         return Uint8Array.from(atob(d.du), function (c) { return c.charCodeAt(0); });
       });
 

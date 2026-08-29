@@ -304,13 +304,25 @@ const { chromium } = require(PW);
     const xau = [];
     for (const t of fsx.readdirSync(thuMuc).filter(f => f.endsWith('.js'))) {
       const noi = fsx.readFileSync(px.join(thuMuc, t), 'utf8');
-      if (/a\.download\s*=|text\/csv|createObjectURL/.test(noi)) xau.push(t);
+      /* createObjectURL\s*\( — tức là GỌI nó để tạo một tệp tải về.
+         Gán đè lên nó (URL.createObjectURL = ...) là việc ngược lại: đó là
+         cách src/may-khach.js CẮT đường tải trên máy khách. Bản kiểm cũ bắt
+         cả hai vì chỉ tìm tên hàm, nên lớp chặn vừa dựng xong đã bị chính
+         bộ kiểm báo là lỗ hổng. Bài kiểm phải đo đúng thứ nó định đo. */
+      if (/a\.download\s*=|text\/csv|createObjectURL\s*\(/.test(noi)) xau.push(t);
     }
     bao(!xau.length, 'không tệp nào còn đường tải CSV hay Excel về máy', xau.join(' ') || 'đã gỡ sạch');
     /* Lệnh in chỉ được gọi ở đúng một chỗ: cổng in.
        Bỏ chú thích trước khi đếm — nếu không thì một dòng ghi chú cũng
        làm phép kiểm này báo sai. */
-    const boChuThich = t => t.replace(/\/\*[\s\S]*?\*\//g, '').replace(/^[ \t]*\/\/.*$/gm, '');
+    /* Bỏ cả chú thích LẪN chuỗi ký tự trước khi đếm.
+       Một dòng nhật ký ghi 'chặn window.print() trên máy khách' là CHỮ, không
+       phải lệnh in — đếm nó vào là bắt nhầm đúng cái tệp đang đi chặn. */
+    const boChuThich = t => t
+      .replace(/\/\*[\s\S]*?\*\//g, '')
+      .replace(/^[ \t]*\/\/.*$/gm, '')
+      .replace(/'(?:\\.|[^'\\\n])*'/g, "''")
+      .replace(/"(?:\\.|[^"\\\n])*"/g, '""');
     let inTruc = 0;
     for (const t of fsx.readdirSync(thuMuc).filter(f => f.endsWith('.js'))) {
       const noi = boChuThich(fsx.readFileSync(px.join(thuMuc, t), 'utf8'));
@@ -1122,7 +1134,7 @@ const { chromium } = require(PW);
     /* <a\s: bắt buộc có khoảng trắng ngay sau <a, nếu không thì thẻ <audio
        của trình phát — vốn mang controlsList="nodownload" để TẮT nút tải —
        lại bị chính bộ kiểm bắt nhầm là một đường tải xuống. */
-    bao(!/<a\s[^>]*\sdownload|createObjectURL|\.zip"|showSaveFilePicker/.test(srcAll),
+    bao(!/<a\s[^>]*\sdownload|createObjectURL\s*\(|\.zip"|showSaveFilePicker/.test(srcAll),
       'không có nút tải xuống và không có tệp nén — mọi thứ đọc thẳng trên ứng dụng');
     bao(/controlsList="nodownload/.test(srcAll),
       'trình phát audio tắt nút tải của trình duyệt — nghe được nhưng không tải được');
@@ -3212,6 +3224,281 @@ const { chromium } = require(PW);
     bao(!!banMeta && !!banSw && banSw.replace(/-/g, '.').indexOf(banMeta) === 0,
       'số bản trong ứng dụng và trong bộ nhớ đệm nói cùng một bản — mở nhầm bản cũ là lỗi tốn nhất',
       'ứng dụng v' + banMeta + ' · đệm ' + banSw);
+  }
+
+
+  /* ═══════════ 37 · MÁY CHỦ LÀ MÁY CỦA CHỦ ═══════════
+     Chủ hệ thống yêu cầu: dữ liệu ở máy của anh ấy; máy khác chỉ được
+     dùng, không được lưu hay tải về.
+
+     Mục này KHÔNG đọc chính sách. Nó dựng máy chủ thật ở desktop/may-chu.js
+     bằng bộ khoá thật và bảy tệp kho thật, rồi đóng vai một máy khách đi
+     xin — vì một chính sách viết đúng mà mã chặn sai thì bản kiểm nào chỉ
+     đọc chữ cũng xanh.
+
+     Bỏ qua khi không có kho/khoa.json (máy dựng bản công khai). */
+  const fs37 = require('fs'), px37 = require('path'), cr37 = require('crypto');
+  const goc37 = px37.join(__dirname, '..');
+  const tepKhoa37 = px37.join(goc37, 'kho', 'khoa.json');
+  const appDich37 = px37.join(goc37, 'desktop', 'app');
+
+  console.log('\n37 · MÁY CHỦ LÀ MÁY CỦA CHỦ — MÁY KHÁC CHỈ ĐƯỢC DÙNG');
+  if (!fs37.existsSync(tepKhoa37) || !fs37.existsSync(px37.join(appDich37, 'index.html'))) {
+    console.log('  · bỏ qua — máy này không có bộ khoá hoặc chưa chạy desktop/chuan-bi.js');
+  } else {
+    const mc37 = require(px37.join(goc37, 'desktop', 'may-chu.js'));
+    const khoa37 = JSON.parse(fs37.readFileSync(tepKhoa37, 'utf8')).khoa;
+    const bang37 = { 'ph@thu.vn': { vai: 'R13', goi: ['nen', 'tang1'] } };
+    const nk37 = [];
+    const CONG37 = 8377;
+    const U37 = 'http://127.0.0.1:' + CONG37;
+    const UA37 = { 'user-agent': 'Mozilla/5.0 (Windows NT 10.0) Chrome/130' };
+    const tepQuen37 = px37.join(require('os').tmpdir(), 'gita-kiem-may-khach.json');
+    try { fs37.rmSync(tepQuen37, { force: true }); } catch (e) {}
+
+    try {
+      await mc37.bat({
+        goc: appDich37, cong: CONG37, tepMayQuen: tepQuen37,
+        layKhoaGoc: () => khoa37, layBangCap: () => bang37,
+        ghiNhatKy: d => nk37.push(d)
+      });
+
+      /* ── Kho gốc không rời máy chủ ──
+         Bốn đường này là bốn cách người ta thử. Đường thứ ba có ../ để
+         chắc rằng chặn không phải bằng cách so chuỗi đầu đường dẫn. */
+      const chan37 = [];
+      for (const d of ['/kho/nen.enc', '/kho/khoa.json', '/src/../kho/nghe.enc', '/kho/mau.json']) {
+        const r = await fetch(U37 + d, { headers: UA37 });
+        if (r.status !== 403) chan37.push(d + ':' + r.status);
+      }
+      bao(!chan37.length, 'không đường nào lấy được kho gốc hoặc bộ khoá từ máy khách',
+        chan37.length ? chan37.join(' ') : '4 đường thử đều 403');
+
+      /* ── Máy lạ phải được duyệt ── */
+      let r37 = await fetch(U37 + '/cap-phep', { method: 'POST', headers: UA37,
+        body: JSON.stringify({ fn: 'capKhoa', u: 'ph@thu.vn', vai: 'R13', goi: ['nen'] }) });
+      let d37 = await r37.json();
+      bao(!d37.ok && d37.code === 'CHODUYET',
+        'máy lạ nằm ở hàng chờ, không lấy được gì cho tới khi chủ hệ thống duyệt',
+        d37.code || JSON.stringify(d37).slice(0, 60));
+
+      const ds37 = mc37.danhSachMay();
+      bao(ds37.length === 1 && ds37[0].duyet === 'cho',
+        'chủ hệ thống thấy máy đang chờ, kèm tên máy và tài khoản',
+        ds37.length ? ds37[0].ten : 'không thấy máy nào');
+      if (ds37.length) mc37.datMay(ds37[0].van, 'thuan');
+
+      /* ── Khoá cấp ra phải là khoá DÙNG MỘT LẦN ──
+         Đây là điều làm cho "khoá không rời máy chủ" thành sự thật đo được,
+         chứ không phải một câu trong tài liệu. */
+      r37 = await fetch(U37 + '/cap-phep', { method: 'POST', headers: UA37,
+        body: JSON.stringify({ fn: 'capKhoa', u: 'ph@thu.vn', vai: 'R13', goi: ['nen', 'tang1'] }) });
+      d37 = await r37.json();
+      const phien37 = d37.phien;
+      bao(!!d37.ok && !!phien37 && Object.keys(d37.khoa || {}).length === 2,
+        'duyệt rồi thì cấp đủ gói trong phạm vi, kèm mã phiên',
+        Object.keys(d37.khoa || {}).join(' ') || (d37.error || ''));
+      bao(Object.keys(d37.khoa || {}).every(t => d37.khoa[t] !== khoa37[t]),
+        'KHÔNG một khoá gốc nào rời máy chủ — mỗi phiên một khoá mới',
+        'so từng khoá cấp ra với khoá gốc');
+
+      /* ── Máy khách khai vai gì cũng không mở thêm được ── */
+      r37 = await fetch(U37 + '/cap-phep', { method: 'POST', headers: UA37,
+        body: JSON.stringify({ fn: 'capKhoa', u: 'ph@thu.vn', vai: 'R01', goi: ['nen', 'nghe', 'tang5'] }) });
+      const d2 = await r37.json();
+      const co37 = Object.keys(d2.khoa || {});
+      bao(co37.indexOf('nghe') < 0 && co37.indexOf('tang5') < 0,
+        'máy khách khai vai R01 cũng không mở thêm gói nào — phạm vi do máy chủ tra theo tài khoản',
+        'chỉ được ' + (co37.join(' ') || '—'));
+      r37 = await fetch(U37 + '/kho-phuc-vu/nghe?p=' + encodeURIComponent(d2.phien), { headers: UA37 });
+      bao(r37.status === 403, 'xin thẳng gói ngoài phạm vi cũng bị từ chối', r37.status);
+
+      /* ── Bản mã phục vụ KHÔNG mở được bằng khoá gốc ──
+         Nếu mở được thì máy chủ đang phục vụ lại đúng bảy tệp .enc của bản
+         phát hành, và ai giữ được một khoá gốc là giữ được vĩnh viễn. */
+      r37 = await fetch(U37 + '/kho-phuc-vu/nen?p=' + encodeURIComponent(phien37), { headers: UA37 });
+      const g37 = await r37.json();
+      const b37 = Buffer.from(g37.du || '', 'base64');
+      const mo37 = (buf, k) => {
+        const de = cr37.createDecipheriv('aes-256-gcm', Buffer.from(k, 'base64'), buf.subarray(0, 12));
+        de.setAuthTag(buf.subarray(12, 28));
+        return Buffer.concat([de.update(buf.subarray(28)), de.final()]).toString('utf8');
+      };
+      let mogoc37 = false;
+      try { mo37(b37, khoa37.nen); mogoc37 = true; } catch (e) {}
+      bao(!mogoc37, 'khoá gốc KHÔNG mở được gói máy chủ phục vụ — bản mã đã đổi khoá thật');
+      let dung37 = false;
+      try { dung37 = mo37(b37, d37.khoa.nen).length > 100; } catch (e) {}
+      bao(dung37, 'khoá phiên mở được đúng gói của phiên ấy — máy khách vẫn dùng được bình thường');
+
+      /* ── Cắt quyền là cắt NGAY ──
+         Chặn mà chỉ có hiệu lực ở lần xin sau thì người đang ngồi đó vẫn
+         dùng tiếp tới tám tiếng. Đó không phải là cắt. */
+      mc37.datMay(mc37.danhSachMay()[0].van, 'chan');
+      r37 = await fetch(U37 + '/kho-phuc-vu/nen?p=' + encodeURIComponent(phien37), { headers: UA37 });
+      bao(r37.status === 401, 'cắt quyền là cắt ngay phiên đang mở, không đợi hết hạn', r37.status);
+
+      /* ── Trang cho máy khách ── */
+      r37 = await fetch(U37 + '/', { headers: UA37 });
+      const html37 = await r37.text();
+      const iCo = html37.indexOf('GITA_MAY_KHACH'), iMa = html37.indexOf('src/kho-khoa.js');
+      bao(iCo >= 0 && iMa >= 0 && iCo < iMa,
+        'cờ máy khách được tiêm TRƯỚC mọi mã ứng dụng — chặn muộn là không chặn');
+      bao(!/serviceWorker' in navigator/.test(html37),
+        'trang cho máy khách không đăng ký service worker — không có bộ đệm nằm lại');
+      bao((r37.headers.get('cache-control') || '').includes('no-store'),
+        'mọi đường trả về đều no-store', r37.headers.get('cache-control') || 'không có');
+
+      /* ── Lớp chặn phía máy khách phải có thật ── */
+      const mk37 = fs37.readFileSync(px37.join(goc37, 'src', 'may-khach.js'), 'utf8');
+      const canCo37 = [
+        ['createObjectURL', 'cắt đường tạo tệp tải về'],
+        ['a[download]', 'chặn thẻ tải về'],
+        ['window.print', 'chặn lệnh in'],
+        ['BI_KHOA_CHEP', 'khoá sao chép cho mọi vai'],
+        ['localStorage', 'không ghi gì ra đĩa máy khách'],
+        ['unregister', 'gỡ bộ đệm cũ nếu máy ấy từng cài bản web']
+      ].filter(x => mk37.indexOf(x[0]) < 0);
+      bao(!canCo37.length, 'lớp chặn ở máy khách đủ sáu đường',
+        canCo37.length ? 'thiếu: ' + canCo37.map(x => x[1]).join(', ') : 'tải · thẻ tải · in · chép · đĩa · bộ đệm');
+      bao(/<script src="src\/may-khach\.js">/.test(fs37.readFileSync(px37.join(goc37, 'index.html'), 'utf8')),
+        'lớp chặn máy khách được nạp trong index.html');
+      /* ── Chặn mà vẫn để sẵn đường vòng thì không phải chặn ──
+         Bản đầu của may-khach.js giữ lại hàm createObjectURL gốc trong một
+         biến "để phòng khi cần". Đó là đúng cái lỗ vừa bịt, chỉ đổi tên.
+         Mục này chốt lại: hàm gốc không được cất ở đâu cả. */
+      bao(!/(?:var|let|const)\s+\w+\s*=\s*URL\.createObjectURL|G\.\w+\s*=\s*URL\.createObjectURL/.test(mk37),
+        'lớp chặn KHÔNG cất lại hàm tạo tệp gốc ở đâu — không có đường vòng');
+
+      /* ── Xin có gói mà mở được không gói nào là HỎNG, không phải xong ──
+         Cùng kiểu hỏng đã bắt ở G.hdConThieu: đạt rỗng. Ở đây nó nguy hơn,
+         vì máy khách sẽ lặng lẽ rơi về chế độ mẫu còn chủ hệ thống thì
+         tưởng máy chủ đang phục vụ tử tế. */
+      mc37.datMay(mc37.danhSachMay()[0].van, 'thuan');
+      const khoaHong = { nen: Buffer.alloc(32).toString('base64'), tang1: Buffer.alloc(32).toString('base64') };
+      mc37.tat();
+      await mc37.bat({
+        goc: appDich37, cong: CONG37 + 1, tepMayQuen: tepQuen37,
+        layKhoaGoc: () => khoaHong, layBangCap: () => bang37, ghiNhatKy: d => nk37.push(d)
+      });
+      const U38 = 'http://127.0.0.1:' + (CONG37 + 1);
+      r37 = await fetch(U38 + '/cap-phep', { method: 'POST', headers: UA37,
+        body: JSON.stringify({ fn: 'capKhoa', u: 'ph@thu.vn', vai: 'R13', goi: ['nen', 'tang1'] }) });
+      d37 = await r37.json();
+      bao(!d37.ok && d37.code === 'KHONGMO',
+        'khoá sai thì máy chủ BÁO HỎNG, không trả "xong" với bộ khoá rỗng',
+        d37.code || 'trả ' + JSON.stringify(d37).slice(0, 60));
+      mc37.tat();
+
+      bao(nk37.some(x => x.viec === 'Chặn tải kho') && nk37.length >= 8,
+        'máy chủ ghi nhật ký đủ để truy lại về sau', nk37.length + ' dòng');
+    } catch (e) {
+      bao(false, 'máy chủ của chủ hệ thống chạy được', String(e && e.message || e));
+      try { mc37.tat(); } catch (e2) {}
+    }
+
+    /* ── Chính sách phải khớp phần đã dựng ── */
+    const mcData = await p.evaluate(() => window.G.TD_MAYCHU || {});
+    bao((mcData.daChay || []).length >= 8,
+      'bảng chính sách liệt đủ phần ĐÃ CHẠY THẬT', (mcData.daChay || []).length + ' mục');
+    bao((mcData.chuaLam || []).length >= 3,
+      'và ghi thẳng phần CHƯA LÀM thay vì để trống', (mcData.chuaLam || []).length + ' mục');
+    bao((mcData.chuaLam || []).some(x => /mật khẩu/i.test(x.t + ' ' + x.y)),
+      'nói rõ mật khẩu vẫn kiểm ở máy khách — chỗ yếu nhất phải được gọi tên');
+  }
+
+
+  /* ═══════════ 38 · CHUYỆN PHẢI TỚI CHỖ NGƯỜI TA ĐANG ĐỨNG ═══════════
+     Kho có 600 chuyện theo cấp và 77 chuyện người thật. Trước v8.5 chúng
+     chỉ nằm ở ba màn kho; ai không chủ động đi tìm thì không bao giờ đọc.
+
+     Mục này đo phần lồng ghép, và đo bằng cách DỰNG THẬT từng màn rồi
+     tìm chuỗi tiêu đề trong đó — không đọc bảng khai. Bảng khai đúng mà
+     hàm nối hỏng thì bản kiểm đọc bảng vẫn xanh. */
+  console.log('\n38 · CHUYỆN LỒNG VÀO MÀN — ĐỦ CẤP, ĐÚNG MẠCH, ĐỨNG YÊN TRONG NGÀY');
+  {
+    const lg = await p.evaluate(() => {
+      const G = window.G, s = G.clgSoat();
+      let hien = 0; const im = [];
+      G.CLG_BANG.forEach(d => {
+        const f = (G.VIEWS || {})[d.man]; if (!f) return;
+        let o = ''; try { o = f(); } catch (e) { o = 'LOI'; }
+        if (o.indexOf('CHUYỆN CHO CHỖ NÀY') >= 0) hien++;
+        else im.push(d.man + (o === 'LOI' ? '(lỗi)' : (G.thayMan && !G.thayMan(d.man) ? '(khoá)' : '(HỤT)')));
+      });
+      /* Đứng yên trong ngày: dựng cùng một màn hai lần phải ra cùng một chuyện */
+      const a = G.clgChon('ban-do'), b = G.clgChon('ban-do');
+      /* Hai màn khác nhau thì không được ra cùng một chuyện — nếu ra cùng thì
+         hạt giống không thật sự có tên màn, và cả ba mươi màn sẽ kể một chuyện */
+      const c = G.clgChon('nhiem-vu');
+      /* Đúng mạch: chuyện chọn cho một màn phải thuộc mạch màn ấy khai,
+         trừ khi kho của cấp này không có chuyện nào thuộc mạch đó */
+      const cap = G.chCapCuaToi();
+      const khoCap = (G.CHUYEN || []).filter(x => x.cap === cap);
+      const lech = [];
+      G.CLG_BANG.forEach(d => {
+        const ch = G.clgChon(d.man); if (!ch) return;
+        const coMach = khoCap.some(x => x.mach === d.mach);
+        if (coMach && ch.mach !== d.mach) lech.push(d.man);
+      });
+      /* Đúng cấp: không màn nào được đưa chuyện của cấp khác */
+      const saiCap = G.CLG_BANG.map(d => G.clgChon(d.man)).filter(x => x && x.cap !== cap).length;
+      return { ...s, hien, im, yen: !!a && !!b && a.ma === b.ma, khac: !!a && !!c && a.ma !== c.ma,
+        lech, saiCap, cap, tru: G.CLG_BANG.map(d => d.tru) };
+    });
+
+    bao(lg.soDong >= 40, 'đủ số màn được gắn chuyện — không phải một hai chỗ làm mẫu', lg.soDong + ' màn');
+    bao(lg.daNoi === lg.soDong, 'mọi dòng trong bảng đều nối được vào màn có thật',
+      lg.daNoi + '/' + lg.soDong);
+    bao(!lg.thieuMan.length, 'không dòng nào trỏ tới màn không tồn tại',
+      lg.thieuMan.join(' ') || 'bảng khớp ứng dụng');
+    bao(!lg.thieuChuyen.length, 'màn nào cũng chọn ra được một chuyện — không ô trống',
+      lg.thieuChuyen.join(' ') || 'đủ cả ' + lg.soDong);
+
+    const hut = lg.im.filter(x => x.indexOf('(HỤT)') >= 0 || x.indexOf('(lỗi)') >= 0);
+    bao(!hut.length,
+      'màn nào vai này mở được thì đều thật sự hiện chuyện — màn khoá thì để nguyên, đúng luật',
+      hut.length ? hut.join(' ') : lg.hien + ' màn hiện · số còn lại là màn khoá');
+
+    /* Ba luật của tầng lồng ghép, đo từng cái */
+    bao(lg.yen, 'chuyện đứng yên trong ngày — mở lại màn không ra chuyện khác');
+    bao(lg.khac, 'hai màn khác nhau kể hai chuyện khác nhau — hạt giống có tên màn thật');
+    bao(!lg.saiCap, 'không màn nào đưa chuyện của cấp tài khoản khác',
+      lg.saiCap ? lg.saiCap + ' chỗ lệch' : 'cả ' + lg.soDong + ' màn đúng cấp ' + lg.cap);
+    bao(!lg.lech.length, 'chuyện chọn ra thuộc đúng mạch màn ấy khai',
+      lg.lech.length ? lg.lech.join(' ') : 'khớp mạch');
+
+    /* Gắn trụ GITA: đây là chỗ phân biệt "kể chuyện cho vui" với
+       "dẫn dắt theo mô thức". Thiếu một trụ là mô thức khuyết một chân. */
+    const truCo = {}; lg.tru.forEach(t => truCo[t] = (truCo[t] || 0) + 1);
+    bao(['G', 'I', 'T', 'A'].every(k => truCo[k] >= 5),
+      'bốn trụ G · I · T · A đều được chuyện nuôi, không trụ nào bỏ trống',
+      ['G', 'I', 'T', 'A'].map(k => k + ':' + (truCo[k] || 0)).join(' '));
+
+    bao(lg.soChuyen === 600, 'đủ sáu trăm chuyện theo cấp tài khoản', String(lg.soChuyen));
+    bao(lg.soNguoiThat >= 70, 'đủ kho chuyện người thật', lg.soNguoiThat + ' người');
+
+    /* Bốn cấp khách hàng khác nhau phải nhận bốn kho khác nhau. Cùng một
+       chuyện cho cả học viên lớp 9 lẫn Coach là hỏng cả tầng lồng ghép. */
+    const theoVai = {};
+    for (const [u, ten] of [['hocvien@gita365.vn', 'HS'], ['phuhuynh@gita365.vn', 'PH'],
+                            ['coach@gita365.vn', 'COACH'], ['daisu@gita365.vn', 'CTV']]) {
+      await p.evaluate(x => window.G.doLogin(x), u);
+      await p.waitForTimeout(1800);
+      theoVai[ten] = await p.evaluate(() => {
+        const G = window.G, c = G.clgChon('ban-do');
+        return { cap: G.chCapCuaToi(), ma: c && c.ma };
+      });
+    }
+    const capDung = Object.keys(theoVai).every(k => theoVai[k].cap === k);
+    bao(capDung, 'bốn cấp tài khoản đọc bốn kho chuyện của riêng mình',
+      Object.keys(theoVai).map(k => k + '→' + theoVai[k].cap).join(' '));
+    const ma = Object.keys(theoVai).map(k => theoVai[k].ma);
+    bao(new Set(ma).size === ma.length,
+      'cùng một màn nhưng bốn cấp nhận bốn chuyện khác nhau', ma.join(' '));
+
+    await p.evaluate(() => window.G.doLogin('superadmin@gita365.vn'));
+    await p.waitForTimeout(2000);
   }
 
   console.log('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành'));

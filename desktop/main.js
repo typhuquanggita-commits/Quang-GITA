@@ -7,11 +7,14 @@ const { app, BrowserWindow, Menu, dialog, shell, protocol, net, ipcMain } = requ
 const path = require('node:path');
 const fs = require('node:fs');
 const url = require('node:url');
+const mayChu = require('./may-chu');
 
 const GOC = path.join(__dirname, 'app');
 const DEV = !app.isPackaged;
 const HO_SO = path.join(app.getPath('userData'), 'cua-so.json');
 const GIAY_PHEP = path.join(app.getPath('userData'), 'giay-phep.json');
+const MAY_KHACH = path.join(app.getPath('userData'), 'may-khach.json');
+const NHATKY_CHU = path.join(app.getPath('userData'), 'nhat-ky-may-chu.jsonl');
 
 /* Một origin ổn định cho dữ liệu trong máy — không dùng file:// */
 protocol.registerSchemesAsPrivileged([{
@@ -302,6 +305,141 @@ function veUngDung() {
   });
 }
 
+
+/* ═══════════════════════════════════════════════════════════════
+   MÁY CHỦ LÀ MÁY CỦA CHỦ — phần nối vào ứng dụng
+
+   Chủ hệ thống yêu cầu: dữ liệu nằm trên máy của mình; máy khác chỉ
+   được dùng, không được lưu hoặc tải về. Máy chủ nhỏ ở desktop/may-chu.js
+   làm phần chạy; chỗ này là ba việc nối nó vào ứng dụng:
+
+     1. Đưa cho nó bộ khoá gốc — đọc từ giấy phép trên MÁY NÀY, không
+        bao giờ gửi đi đâu.
+     2. Đưa cho nó bảng cấp phát — hỏi thẳng giao diện đang mở, để luật
+        phạm vi chỉ viết một lần ở src/kho-khoa.js.
+     3. Nhận nhật ký của nó, ghi ra tệp và đẩy vào màn nhật ký an ninh
+        của ứng dụng để chủ hệ thống nhìn thấy ngay.
+   ═══════════════════════════════════════════════════════════════ */
+
+/* Bảng cấp phát hỏi một lần rồi giữ lại: hỏi mỗi lượt đăng nhập thì một
+   máy khách xin liên tục sẽ làm giao diện của chủ hệ thống giật. */
+let bangCapNho = null;
+async function napBangCap() {
+  if (!cuaSo) return null;
+  try {
+    const b = await cuaSo.webContents.executeJavaScript(
+      '(function(){ try{ return window.G && G.bangCapPhat ? JSON.stringify(G.bangCapPhat()) : null; }catch(e){ return null; } })()',
+      true);
+    bangCapNho = b ? JSON.parse(b) : null;
+  } catch (e) { bangCapNho = null; }
+  return bangCapNho;
+}
+
+function ghiNhatKyChu(d) {
+  try { fs.appendFileSync(NHATKY_CHU, JSON.stringify(d) + '\n'); } catch { /* nhật ký hỏng không được làm sập phục vụ */ }
+  if (cuaSo && !cuaSo.isDestroyed())
+    cuaSo.webContents.executeJavaScript(
+      'window.G && G.secLog && G.secLog(' + JSON.stringify('Máy chủ · ' + d.viec) + ',' +
+      JSON.stringify(d.chiTiet) + ',' + JSON.stringify(d.ket) + ')', true).catch(() => {});
+}
+
+async function batPhucVu() {
+  if (mayChu.dangChay()) return danhSachMayKhach();
+  if (!docGiayPhep()) {
+    dialog.showMessageBox(cuaSo, {
+      type: 'warning', message: 'Máy này chưa kích hoạt giấy phép',
+      detail: 'Máy chủ phải tự mở được kho thì mới phục vụ máy khác được.\n' +
+              'Vào Tệp ▸ Kích hoạt giấy phép… trước đã.', buttons: ['Đã hiểu']
+    });
+    return;
+  }
+  await napBangCap();
+  if (!bangCapNho) {
+    dialog.showMessageBox(cuaSo, {
+      type: 'warning', message: 'Chưa đọc được bảng cấp phát',
+      detail: 'Đăng nhập vào ứng dụng trên máy này trước, rồi bật phục vụ lại.', buttons: ['Đã hiểu']
+    });
+    return;
+  }
+  try {
+    const kq = await mayChu.bat({
+      goc: GOC,
+      tepMayQuen: MAY_KHACH,
+      layKhoaGoc: () => { const gp = docGiayPhep(); return gp && gp.khoa; },
+      layBangCap: () => bangCapNho,
+      ghiNhatKy: ghiNhatKyChu
+    });
+    dialog.showMessageBox(cuaSo, {
+      type: 'info', title: 'Đang phục vụ máy khác',
+      message: 'Máy khác mở trình duyệt và gõ địa chỉ này',
+      detail: kq.diaChi.join('\n') + '\n\n' +
+        'Máy lạ vào lần đầu sẽ nằm ở hàng chờ. Vào Máy chủ ▸ Máy đang dùng… để duyệt.\n\n' +
+        'Máy khách KHÔNG nhận được: bảy tệp kho, bộ khoá gốc, gói ngoài phạm vi vai,\n' +
+        'và không giữ lại được bản nào để dùng lần sau.',
+      buttons: ['Xong']
+    });
+  } catch (e) {
+    dialog.showErrorBox('Chưa bật được máy chủ',
+      String(e && e.message || e) + '\n\nThường là do cổng ' + mayChu.CONG_MAC_DINH + ' đã có chương trình khác dùng.');
+  }
+}
+
+function tatPhucVu() {
+  if (!mayChu.dangChay()) return;
+  mayChu.tat();
+  dialog.showMessageBox(cuaSo, {
+    type: 'info', message: 'Đã dừng phục vụ máy khác',
+    detail: 'Mọi phiên bị cắt. Bản mã tạm trong bộ nhớ đã xoá — máy khách tải lại là trắng.',
+    buttons: ['Xong']
+  });
+}
+
+/* Danh sách máy: duyệt, cắt, hoặc quên. Một hộp thoại cho mỗi máy đang chờ,
+   vì đây là quyết định chủ hệ thống phải nhìn từng cái rồi mới bấm. */
+async function danhSachMayKhach() {
+  if (!mayChu.dangChay()) {
+    dialog.showMessageBox(cuaSo, { type: 'info', message: 'Chưa bật phục vụ máy khác',
+      detail: 'Vào Máy chủ ▸ Phục vụ máy khác… để bật.', buttons: ['Xong'] });
+    return;
+  }
+  const ds = mayChu.danhSachMay();
+  if (!ds.length) {
+    dialog.showMessageBox(cuaSo, { type: 'info', message: 'Chưa máy nào xin vào',
+      detail: 'Địa chỉ để đọc cho máy khác gõ:\n\n' + mayChu.diaChi().join('\n'), buttons: ['Xong'] });
+    return;
+  }
+  const cho = ds.filter(m => m.duyet === 'cho');
+  for (const m of cho) {
+    const tra = await dialog.showMessageBox(cuaSo, {
+      type: 'question', buttons: ['Để đó đã', 'Cắt quyền', 'Cho dùng'], defaultId: 0, cancelId: 0,
+      message: 'Máy này xin vào: ' + m.ten,
+      detail: 'Tài khoản đăng nhập: ' + (m.taiKhoan || 'chưa rõ') + '\n' +
+              'Xin lúc: ' + new Date(m.luc).toLocaleString('vi-VN') + '\n\n' +
+              'Cho dùng thì máy ấy đọc được nội dung trong phạm vi vai của tài khoản đó, ' +
+              'nhưng không tải được gì về. Cắt quyền lúc nào cũng được.'
+    });
+    if (tra.response === 2) mayChu.datMay(m.van, 'thuan');
+    else if (tra.response === 1) mayChu.datMay(m.van, 'chan');
+  }
+  const con = mayChu.danhSachMay().filter(m => m.duyet !== 'cho');
+  if (!con.length) return;
+  const dong = con.map(m =>
+    (m.duyet === 'thuan' ? '  ✓ ' : '  ✕ ') + m.ten +
+    '  ·  ' + (m.taiKhoan || '?') +
+    (m.dangMo ? '  ·  đang mở ' + m.dangMo + ' phiên' : '') +
+    '  ·  ' + m.soPhien + ' lượt');
+  const tra = await dialog.showMessageBox(cuaSo, {
+    type: 'info', buttons: ['Xong', 'Cắt hết mọi máy'], defaultId: 0, cancelId: 0,
+    message: 'Máy đã biết (' + con.length + ')',
+    detail: dong.join('\n') + '\n\nĐịa chỉ máy chủ:\n' + mayChu.diaChi().join('\n')
+  });
+  if (tra.response === 1) {
+    for (const m of con) mayChu.datMay(m.van, 'chan');
+    dialog.showMessageBox(cuaSo, { type: 'info', message: 'Đã cắt hết',
+      detail: 'Mọi máy khách bị cắt ngay lập tức. Muốn cho dùng lại thì duyệt từng máy.', buttons: ['Xong'] });
+  }
+}
+
 /* ─────────── Trình đơn tiếng Việt ─────────── */
 function dungTrinhDon() {
   const mac = process.platform === 'darwin';
@@ -361,6 +499,16 @@ function dungTrinhDon() {
     },
     { label: 'Đi tới', submenu: nhom },
     {
+      /* Chủ hệ thống: "dữ liệu ở máy tôi, máy khác chỉ được dùng."
+         Ba mục này là chỗ bật, xem và tắt điều đó. */
+      label: 'Máy chủ',
+      submenu: [
+        { label: 'Phục vụ máy khác…', click: batPhucVu },
+        { label: 'Máy đang dùng…', click: danhSachMayKhach },
+        { label: 'Dừng phục vụ', click: tatPhucVu }
+      ]
+    },
+    {
       label: 'Xem',
       submenu: [
         { role: 'reload', label: 'Tải lại' },
@@ -404,6 +552,9 @@ if (!app.requestSingleInstanceLock()) {
     app.on('activate', () => { if (BrowserWindow.getAllWindows().length === 0) moCuaSo(); });
   });
 
+  /* Đóng ứng dụng là cắt phục vụ. Để máy chủ chạy tiếp sau khi cửa sổ đóng
+     là để một cổng mở mà không ai nhìn — đúng kiểu lỗ hổng lặng lẽ nhất. */
+  app.on('before-quit', () => { try { mayChu.tat(); } catch {} });
   app.on('window-all-closed', () => { if (process.platform !== 'darwin') app.quit(); });
 }
 

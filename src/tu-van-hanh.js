@@ -190,6 +190,30 @@ G.VIEWS['tu-van-hanh'] = function(){
       '<div class="tiny up mb" style="color:var(--alert)">NÓI THẲNG PHẦN KHÔNG CHẶN ĐƯỢC</div>'+
       '<p class="sm" style="line-height:1.75">'+h(MC.that || '')+'</p></div></div>';
 
+  /* ── Đã chạy thật / chưa làm ──
+     Trước v8.5 cả mục này mới là chính sách viết ra giấy. Nay phần chạy
+     thật nằm ở desktop/may-chu.js và src/may-khach.js, nên phải tách rõ
+     hai cột: cái đã có hàng rào, và cái mới có lời hứa. Gộp chung là
+     đúng kiểu làm người đọc yên tâm nhầm chỗ. */
+  o += '<div class="row wrap mt2" style="gap:14px;align-items:flex-start">'+
+    '<div class="card" style="flex:1;min-width:300px;border-color:var(--ok)">'+
+      '<div class="tiny up mb" style="color:var(--ok)">ĐÃ CHẠY THẬT — CÓ MỤC KIỂM ĐỨNG SAU</div>'+
+      (MC.daChay || []).map(function(x, i){
+        return '<div class="row'+(i ? ' mt2' : '')+'" style="gap:10px;align-items:flex-start">'+
+          '<span style="color:var(--ok);font-weight:700;flex:none">✓</span>'+
+          '<div style="flex:1"><b class="sm">'+h(x.t)+'</b>'+
+          '<p class="sm muted mt" style="line-height:1.7">'+h(x.y)+'</p></div></div>';
+      }).join('')+'</div>'+
+    '<div class="card" style="flex:1;min-width:300px;border-color:var(--alert)">'+
+      '<div class="tiny up mb" style="color:var(--alert)">CHƯA LÀM — GHI RA THAY VÌ GIẤU ĐI</div>'+
+      (MC.chuaLam || []).map(function(x, i){
+        return '<div class="row'+(i ? ' mt2' : '')+'" style="gap:10px;align-items:flex-start">'+
+          '<span style="color:var(--alert);font-weight:700;flex:none">○</span>'+
+          '<div style="flex:1"><b class="sm">'+h(x.t)+'</b>'+
+          '<p class="sm muted mt" style="line-height:1.7">'+h(x.y)+'</p></div></div>';
+      }).join('')+'</div>'+
+  '</div>';
+
   /* Không bao giờ tự động */
   o += U.sec('SÁU VIỆC KHÔNG BAO GIỜ TỰ ĐỘNG','Tự động hoá phần chịu trách nhiệm không phải tiến bộ — là bỏ tay lái');
   o += '<div class="card" style="border-color:var(--gita-do)">'+ (G.TD_KHONG || []).map(function(x, i){

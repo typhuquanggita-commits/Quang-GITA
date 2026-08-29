@@ -3,7 +3,7 @@
    Cài một lần, dùng được cả khi mất mạng. Toàn bộ kho tri thức
    nằm trong máy — không cần đường truyền để mở bản đồ nhà mình.
    ═══════════════════════════════════════════════════════════════ */
-const CACHE = 'gita365-v8-4-0';
+const CACHE = 'gita365-v8-5-0';
 /* Danh sách này phải khớp với thứ tự thẻ <script> trong index.html.
    Thiếu tệp thì lần cài đầu vẫn chạy — trình xử lý fetch bên dưới cache
    lại mọi thứ tải về — nhưng mất mạng ngay sau khi cài thì vỡ. */
@@ -48,7 +48,9 @@ const FILES = [
   './src/noi-may-chu.js', './src/kho-khach.js', './src/quy-trinh-xu-ly.js',
   './src/tro-ly-ai.js', './src/tro-ly-chat.js', './src/thu-vien.js',
   './src/duong-vao.js', './src/soat-day-du.js', './src/tuyen.js', './src/chieu-sau.js', './src/quy-trinh-toan-he.js', './src/kiem-theo-vai.js', './src/cong-dong.js', './src/tu-van-hanh.js',
-  './src/app.js'
+  './src/app.js',
+  './src/chuyen-long-ghep.js',
+  './src/may-khach.js'
 ];
 
 self.addEventListener('install', e => {
