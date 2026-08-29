@@ -121,7 +121,7 @@ export interface ScoringContext {
  * answering easy items correctly does not read as mastery. Expressed as the
  * modelled probability of success on a medium-difficulty item of the skill.
  */
-function masteryFromResponses(responses: ScoredResponse[]): number {
+export function masteryFromResponses(responses: ScoredResponse[]): number {
   if (responses.length === 0) return 0;
   const { theta } = estimateAbility(responses);
   return pCorrect(theta, { a: 1.0, b: 0.0 });

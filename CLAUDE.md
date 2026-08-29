@@ -9,10 +9,10 @@ beyond React.
 ```bash
 npm run dev          # dev server on :3000
 npm run typecheck    # tsc --noEmit
-npm test             # 193 unit tests (node --test, native TS stripping)
+npm test             # 215 unit tests (node --test, native TS stripping)
 npm run check:bank   # item bank invariants
 npm run build        # typecheck then production build
-npm run test:browser # 74 checks against the built app via Playwright
+npm run test:browser # 78 checks against the built app via Playwright
 ```
 
 In this sandbox the browser test needs an explicit path:

@@ -135,6 +135,26 @@ try {
     check(`route: ${label}`, heading.includes(marker), heading);
   }
 
+  /* ---------------- Dossier ---------------- */
+  group('Learner dossier');
+  await page.evaluate(() => { window.location.hash = '#/dossier'; });
+  await page.waitForTimeout(600);
+  check('the dossier opens', (await title()).includes('Hồ sơ học viên'));
+  // Nothing has been scored, so the route must be the single honest step of
+  // getting measured rather than a plausible-looking plan built from nothing.
+  // Nothing scored yet, so the route is exactly one step — get measured — and
+  // not a plausible-looking plan elaborated out of nothing.
+  const steps = await page.locator('.pathway-step').count();
+  check('an unmeasured learner gets exactly one step', steps === 1, `${steps}`);
+  check(
+    'and that step is to sit a test',
+    (await page.getByText(/Làm một bài thi thử full-length/).count()) >= 1,
+  );
+  check(
+    'and the document names what it does not know',
+    (await page.getByText(/Chưa có bài thi thử full-length nào được chấm/).count()) >= 1,
+  );
+
   /* ---------------- Forecast ---------------- */
   group('Score forecast');
   await page.evaluate(() => { window.location.hash = '#/plan'; });

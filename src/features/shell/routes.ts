@@ -22,6 +22,9 @@ export type Route =
   | { name: 'tests' }
   | { name: 'exam'; attemptId: string }
   | { name: 'result'; attemptId: string }
+  | { name: 'attempt-review'; attemptId: string }
+  | { name: 'attempt-analysis'; attemptId: string }
+  | { name: 'dossier' }
   | { name: 'review' }
   | { name: 'analytics' }
   | { name: 'console' }
@@ -44,6 +47,9 @@ export const ROUTE_PERMISSION: Partial<Record<RouteName, Permission>> = {
   tests: 'test.take',
   exam: 'test.take',
   review: 'review.own',
+  'attempt-review': 'review.own',
+  'attempt-analysis': 'analytics.own',
+  dossier: 'analytics.own',
   analytics: 'analytics.own',
   console: 'roster.view',
   student: 'student.analytics.view',
@@ -60,6 +66,10 @@ export function routeToHash(route: Route): string {
       return `#/lesson/${route.skill}`;
     case 'student':
       return `#/student/${route.accountId}`;
+    case 'attempt-review':
+      return `#/solutions/${route.attemptId}`;
+    case 'attempt-analysis':
+      return `#/analysis/${route.attemptId}`;
     case 'result':
       return `#/result/${route.attemptId}`;
     default:
@@ -94,6 +104,12 @@ export function hashToRoute(hash: string): Route {
       return { name: 'tests' };
     case 'review':
       return { name: 'review' };
+    case 'solutions':
+      return param ? { name: 'attempt-review', attemptId: param } : { name: 'tests' };
+    case 'analysis':
+      return param ? { name: 'attempt-analysis', attemptId: param } : { name: 'analytics' };
+    case 'dossier':
+      return { name: 'dossier' };
     case 'analytics':
       return { name: 'analytics' };
     case 'console':

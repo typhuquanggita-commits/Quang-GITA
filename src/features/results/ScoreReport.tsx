@@ -17,7 +17,7 @@ import { useStore } from '../../state/store.tsx';
 import { useLocale, useT } from '../../i18n/index.ts';
 import { Badge, Bar, Button, Card, Empty, Ring } from '../../components/ui/primitives.tsx';
 import { MasteryBars, PacingChart } from '../../components/charts/charts.tsx';
-import { IconCheck, IconAlert, IconPrint, IconDownload } from '../../components/ui/icons.tsx';
+import { IconCheck, IconAlert, IconBook, IconChart, IconPrint, IconDownload } from '../../components/ui/icons.tsx';
 import { download, formatClock, formatDate, isoDate } from '../../lib/util.ts';
 import type { Route } from '../shell/routes.ts';
 
@@ -257,13 +257,27 @@ export function ScoreReport({
         </Card>
       )}
 
-      {wrongQuestions.length > 0 && (
-        <div className="row no-print">
-          <Button variant="primary" onClick={() => navigate({ name: 'review' })}>
+      {/*
+        The most important control on this page. Every item carries a worked
+        explanation and a note on each distractor; before this button existed
+        none of it was reachable once an attempt was submitted, and two hours
+        of work produced a number and nothing to learn from.
+      */}
+      <div className="row gap-3 wrap no-print">
+        <Button variant="primary" onClick={() => navigate({ name: 'attempt-review', attemptId })}>
+          <IconBook size={16} />
+          {locale === 'vi' ? 'Xem đáp án và phân tích' : 'See answers and analysis'}
+        </Button>
+        <Button onClick={() => navigate({ name: 'attempt-analysis', attemptId })}>
+          <IconChart size={16} />
+          {locale === 'vi' ? 'Bảng phân tích chi tiết' : 'Detailed analysis'}
+        </Button>
+        {wrongQuestions.length > 0 && (
+          <Button variant="ghost" onClick={() => navigate({ name: 'review' })}>
             {t('result.reviewMistakes')} ({wrongQuestions.length})
           </Button>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 }

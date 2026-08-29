@@ -67,6 +67,12 @@ const ExamPlayer = lazy(() =>
 const ScoreReport = lazy(() =>
   import('../results/ScoreReport.tsx').then((m) => ({ default: m.ScoreReport })),
 );
+const AttemptReview = lazy(() =>
+  import('../solutions/AttemptReview.tsx').then((m) => ({ default: m.AttemptReview })),
+);
+const AttemptAnalysis = lazy(() =>
+  import('../solutions/AttemptAnalysis.tsx').then((m) => ({ default: m.AttemptAnalysis })),
+);
 const ReviewCentre = lazy(() =>
   import('../review/ReviewCentre.tsx').then((m) => ({ default: m.ReviewCentre })),
 );
@@ -78,6 +84,9 @@ const TeacherConsole = lazy(() =>
 );
 const StudentDetail = lazy(() =>
   import('../console/StudentDetail.tsx').then((m) => ({ default: m.StudentDetail })),
+);
+const Dossier = lazy(() =>
+  import('../dossier/Dossier.tsx').then((m) => ({ default: m.Dossier })),
 );
 const CalibrationConsole = lazy(() =>
   import('../calibration/CalibrationConsole.tsx').then((m) => ({ default: m.CalibrationConsole })),
@@ -200,6 +209,11 @@ function Shell(): React.ReactElement {
           badge: due > 0 ? due : undefined,
         },
         { route: { name: 'analytics' }, label: t('nav.analytics'), icon: <IconChart size={18} /> },
+        {
+          route: { name: 'dossier' },
+          label: locale === 'vi' ? 'Hồ sơ học viên' : 'Dossier',
+          icon: <IconClipboard size={18} />,
+        },
       ],
     },
     {
@@ -395,6 +409,12 @@ function RouteView({
       return <TestCenter navigate={navigate} />;
     case 'result':
       return <ScoreReport attemptId={route.attemptId} navigate={navigate} />;
+    case 'attempt-review':
+      return <AttemptReview attemptId={route.attemptId} navigate={navigate} />;
+    case 'attempt-analysis':
+      return <AttemptAnalysis attemptId={route.attemptId} navigate={navigate} />;
+    case 'dossier':
+      return <Dossier navigate={navigate} />;
     case 'review':
       return <ReviewCentre />;
     case 'analytics':

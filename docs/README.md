@@ -13,6 +13,7 @@ that is a defect in this index — please fix it rather than working around it.
 | [CONTENT.md](CONTENT.md) | How is an item authored, reviewed, and accepted into the bank? | Item writers, content leads |
 | [LESSONS.md](LESSONS.md) | How is a skill taught rather than only measured, and when does the coach prescribe a lesson? | Item writers, coaches, engineers |
 | [AUTOPILOT.md](AUTOPILOT.md) | How does the automated coach decide, and how do I audit a decision it made? | Coaches, engineers |
+| [SOLUTIONS.md](SOLUTIONS.md) | After a test, what does a learner see, and how is their personalised route derived? | Learners, coaches, engineers |
 
 ## Platform
 
