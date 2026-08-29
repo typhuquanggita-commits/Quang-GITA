@@ -19,7 +19,8 @@
     "test:ui": "node tools/kiem-tuong-tac.mjs",
     "test:training": "npx tsx tools/kiem-dao-tao.ts",
     "build:single": "SINGLE=1 vite build && node tools/xuat-mot-tep.mjs",
-    "test:assistant": "node tools/kiem-tro-ly.mjs"
+    "test:assistant": "node tools/kiem-tro-ly.mjs",
+    "test:gita": "npx tsx tools/kiem-gita.ts"
   },
   "devDependencies": {
     "@tailwindcss/browser": "^4.1.10",

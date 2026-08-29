@@ -1005,3 +1005,61 @@ export interface PersistRung {
   tone: string;
   humanAt: string;
 }
+
+/* ==========================================================================
+   MÔ THỨC GITA THẬT — lấy từ tài liệu gốc của học viện
+   ========================================================================== */
+
+/** Một bước trong hành trình 12 bước của học viên GITA. */
+export interface GitaStep {
+  no: number;
+  phase: 'HIỂU MÌNH' | 'RÈN MÌNH' | 'BỨT PHÁ' | 'TRƯỞNG THÀNH';
+  name: string;
+  /** Tên một hai chữ, để tiêu đề 300 bài quét mắt được thay vì na ná nhau. */
+  shortName: string;
+  points: string[];
+  months: string;
+  englishRole: string;
+}
+
+/** Một luồng trong sơ đồ tư duy gốc: từ bàn đạp tới kỷ luật. */
+export interface ThinkingLane {
+  id: string;
+  from: string;
+  chain: string[];
+  meaning: string;
+}
+
+/** Một phễu lọc — nơi thông điệp của cố vấn bị biến dạng trước khi tới học viên. */
+export interface Filter {
+  no: number;
+  name: string;
+  distorts: string;
+  coachMove: string;
+}
+
+/** Một lối chiến lược rút từ mô hình BNI, chuyển sang bối cảnh học viện. */
+export interface StrategicThread {
+  no: number;
+  bni: string;
+  gita: string;
+  what: string;
+  fails: string;
+}
+
+/** Một bài định hướng trong bộ 300. */
+export interface Lesson300 {
+  no: number;
+  step: number;
+  phase: string;
+  theme: string;
+  rung: number;
+  rungName: string;
+  months: string;
+  title: string;
+  why: string;
+  filter: string;
+  blocks: {slot: string; minutes: number; what: string}[];
+  deliverable: string;
+  measure: string;
+}

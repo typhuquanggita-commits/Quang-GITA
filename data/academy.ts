@@ -253,7 +253,7 @@ export const PYRAMID: PyramidTier[] = [
 export const GITA_MODEL = {
   name: 'MÔ THỨC HUẤN LUYỆN GITA',
   note:
-    'Đây là bản dựng theo nghĩa cố vấn dẫn đường — bốn pha của một chu trình huấn luyện. Nếu học viện đã có mô thức GITA riêng, thay nội dung trong data/academy.ts (hằng GITA_PHASES) là toàn bộ hệ thống cập nhật theo, không phải sửa chỗ nào khác.',
+    'Bốn pha này lấy từ tài liệu gốc của học viện: HIỂU MÌNH → RÈN MÌNH → BỨT PHÁ → TRƯỞNG THÀNH. Bản trước của hệ thống có bốn pha G–I–T–A do tôi tự dựng khi chưa có tài liệu gốc và đã ghi rõ là bản tạm — nay đã thay. GITA là TÊN HỌC VIỆN, không phải viết tắt của bốn pha.',
   core:
     'Cố vấn không đi trước để kéo, cũng không đi sau để đẩy. Cố vấn đi bên cạnh, nhìn thấy khúc quanh trước học viên một nhịp, và đặt đúng câu hỏi vào đúng lúc.',
   rhythm: 'Mỗi cấp độ chạy trọn một vòng G → I → T → A. Hai mươi lăm cấp độ là hai mươi lăm vòng.',
@@ -261,78 +261,79 @@ export const GITA_MODEL = {
 
 export const GITA_PHASES: GitaPhase[] = [
   {
-    letter: 'G',
-    code: 'GIEO',
-    name: 'GIEO — Gieo niềm tin và bối cảnh',
+    letter: 'H',
+    code: 'HIỂU MÌNH',
+    name: 'HIỂU MÌNH — để biết điểm mạnh và tiềm năng',
     intent:
-      'Trước khi dạy bất cứ điều gì, phải cài lại niềm tin. Học viên tin mình không có năng khiếu thì mọi kỹ thuật đều trượt.',
+      'Trước khi dạy bất cứ điều gì, phải biết người này đang đứng ở đâu và vì sao họ tới. Bỏ pha này là lý do lớp đông người mà chỉ vài người tiến bộ.',
     advisorStance:
-      'Người khơi. Không thuyết phục bằng lý lẽ — dẫn học viên tới một bằng chứng tự thân khiến niềm tin cũ tự sụp.',
+      'Người lắng nghe. Buổi đầu không dạy chữ nào — chỉ để biết ai đang thật sự muốn điều này, em hay bố mẹ em.',
     moves: [
-      'Hỏi về niềm tin hiện tại: "Điều gì khiến bạn nghĩ mình không học được?"',
-      'Tìm phản chứng trong chính đời họ: một việc khó họ đã từng làm được.',
-      'Cho một chiến thắng nhỏ trong 10 phút đầu — bằng chứng thắng lý lẽ.',
-      'Chốt bối cảnh: vì sao học điều này, dùng ở đâu trong đời họ.',
+      'Lắng nghe câu chuyện của học viên trước khi nói về lộ trình.',
+      'Test định hướng năng lực, tìm nguyên nhân gốc chứ không chỉ xếp trình độ.',
+      'Định hướng lộ trình cá nhân hoá 90 ngày và 365 ngày, có số đo.',
+      'Coaching 1–1: học viên nói nhiều hơn cố vấn.',
     ],
-    nlpTools: ['reframing', 'wellformed', 'anchoring'],
+    nlpTools: ['pacing', 'wellformed', 'metamodel'],
     failureMode:
-      'Bỏ qua pha này vì "mất thời gian, vào bài luôn cho kịp". Đó là lý do lớp đông người mà chỉ vài người tiến bộ.',
+      'Nhận mọi học viên rồi cho chung một lộ trình. Người chưa đủ nền sẽ gãy ở tháng thứ tư.',
   },
   {
-    letter: 'I',
-    code: 'IMMERSE',
-    name: 'ĐẮM — Đắm mình trong đầu vào và cảm súc tích cực',
+    letter: 'R',
+    code: 'RÈN MÌNH',
+    name: 'RÈN MÌNH — để xây thói quen và bản lĩnh',
     intent:
-      'Tạo dòng chảy đầu vào dễ hiểu trong trạng thái cảm xúc an toàn. Đây là pha dài nhất và ít can thiệp nhất.',
+      'Kỷ luật không phải điểm xuất phát mà là KẾT QUẢ của ba luồng chạy song song: thói quen, hành động, trải nghiệm. Đây là chỗ hầu hết chương trình hiểu ngược.',
     advisorStance:
-      'Người giữ cửa. Việc chính là canh đúng vùng i+1 và giữ bộ lọc cảm xúc thấp, không phải giảng.',
+      'Người giữ nhịp. Không thúc bằng cảm giác tội lỗi — giữ chuỗi bằng cách hạ ngưỡng vào những ngày xấu.',
     moves: [
-      'Khởi động bằng một câu ai cũng nói được — đưa hệ thần kinh vào trạng thái an toàn.',
-      'Cấp đúng tài liệu cho đúng người, hiểu 90–98%.',
-      'Không sửa lỗi trong pha này. Ghi lại, để dành cho pha T.',
-      'Neo trạng thái: gắn cảm giác "hiểu được" với một tín hiệu lặp lại.',
+      'Ba trục song song: Toán, Tiếng Anh, Tư duy, cộng kỹ năng học giỏi.',
+      'Tư vấn tâm lý học đường khi áp lực vượt ngưỡng — việc này của người, không của máy.',
+      'Trại huấn luyện mỗi quý: đưa năng lực ra khỏi bàn học.',
+      'Mỗi buổi chốt đúng một điều cần sửa, không bao giờ hai.',
     ],
-    nlpTools: ['anchoring', 'state', 'pacing'],
+    nlpTools: ['anchoring', 'chunking', 'state'],
     failureMode:
-      'Sửa lỗi giữa pha đắm mình. Một lần ngắt lời làm bộ lọc cảm xúc dựng lên và phá hỏng cả buổi.',
+      'Tăng thời lượng khi thấy chậm tiến bộ. Cày nhiều giờ trong vùng thoải mái chỉ tạo mệt mỏi, không tạo năng lực.',
+  },
+  {
+    letter: 'B',
+    code: 'BỨT PHÁ',
+    name: 'BỨT PHÁ — để vượt qua giới hạn và chinh phục mục tiêu',
+    intent:
+      'Tiến bộ sinh ra ở rìa khả năng. Pha này cố ý đặt học viên vào trạng thái sai nhiều hơn đúng, và nói rõ cái giá của điều đó.',
+    advisorStance:
+      'Người đẩy tới rìa. Biết chính xác khi nào đẩy và khi nào phải kéo về, dựa trên số liệu chứ không cảm tính.',
+    moves: [
+      'Đồng hành tạo kỳ tích: theo sát tiến độ, hỗ trợ kịp thời.',
+      'Nuôi dưỡng đam mê — chuyển học liệu sang đúng lĩnh vực học viên mê.',
+      'Học viên bắt đầu tạo giá trị: kèm lại người mới.',
+      'Đầu ra công khai, có người thật đọc và phản hồi.',
+    ],
+    nlpTools: ['modeling', 'reframing', 'future'],
+    failureMode:
+      'Đẩy người chưa đủ điều kiện vào pha này. Bốn điều kiện vào của lộ trình xuất sắc tồn tại chính vì lý do đó.',
   },
   {
     letter: 'T',
-    code: 'THỬ THÁCH',
-    name: 'THỬ — Đẩy ra khoảng hở và trao phản hồi',
+    code: 'TRƯỞNG THÀNH',
+    name: 'TRƯỞNG THÀNH — để sống hạnh phúc và tạo giá trị cho cuộc đời',
     intent:
-      'Đặt học viên vào nhiệm vụ hơi vượt khả năng để họ chạm vào khoảng hở, rồi trao đúng thứ họ vừa phát hiện mình thiếu.',
+      'Đích không phải điểm số mà là một chân dung cụ thể: trí tuệ, thể chất, cảm xúc, xã hội, nhân cách, kỹ năng.',
     advisorStance:
-      'Người đặt bài. Chịu được sự khó chịu của học viên khi họ bí — vì chính chỗ bí đó là nơi học xảy ra.',
+      'Người lùi lại. Chuyển dần quyền quyết định sang học viên cho tới khi họ không cần cố vấn nữa.',
     moves: [
-      'Giao nhiệm vụ thật, có người thật ở đầu bên kia.',
-      'Để học viên bí. Không lấp hố trước khi họ rơi vào.',
-      'Trả phản hồi theo khung 4 phần trong 48 giờ.',
-      'Chốt đúng MỘT lỗi mục tiêu cho chu kỳ tới, không chốt năm lỗi.',
+      'Phát triển toàn diện, không chỉ một môn.',
+      'Bàn giao lại cho người đi sau những gì đã học được về CÁCH HỌC.',
+      'Học viên tự lập kế hoạch và bảo vệ được kế hoạch của mình.',
+      'Sẵn sàng cho tương lai: tự tin bước đi mà không cần ai dẫn.',
     ],
-    nlpTools: ['metamodel', 'modeling', 'chunking'],
+    nlpTools: ['identity', 'future', 'modeling'],
     failureMode:
-      'Giảng quá kỹ để học viên không phải bí. Buổi học dễ chịu, và không ai học được gì.',
-  },
-  {
-    letter: 'A',
-    code: 'ASCEND',
-    name: 'THĂNG — Về đích, ghi nhận và mở đường tiếp',
-    intent:
-      'Đóng vòng bằng một chiến thắng có thể nhìn thấy, gắn nó vào bản sắc, rồi mở cánh cửa cấp độ kế tiếp khi động lực đang ở đỉnh.',
-    advisorStance:
-      'Người xác nhận. Nói ra thành tựu bằng ngôn ngữ bản sắc, không bằng ngôn ngữ điểm số.',
-    moves: [
-      'Đối chiếu bằng chứng: bản ghi âm hôm nay so với bản của chu kỳ trước.',
-      'Trao huy hiệu cấp độ và ghi nhận công khai trong cộng đồng.',
-      'Chuyển từ "bạn làm tốt" sang "bạn đang trở thành người…" — khen bản sắc, không khen kết quả.',
-      'Mở cấp độ kế tiếp ngay trong buổi, khi cảm xúc còn cao.',
-    ],
-    nlpTools: ['anchoring', 'future', 'identity'],
-    failureMode:
-      'Chấm điểm rồi chuyển bài luôn. Bỏ pha ghi nhận là cắt mất vòng lặp thói quen ở đúng khâu phần thưởng.',
+      'Coi tốt nghiệp là điểm kết thúc. Học viên về đích mà không kèm ai là học viên chưa khép vòng.',
   },
 ];
+
 
 /* ------------------------------- NLP ------------------------------------- */
 

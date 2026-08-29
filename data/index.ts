@@ -26,6 +26,8 @@ export * from './assess';
 export * from './solutions';
 export * from './training';
 export * from './assistant';
+export * from './gita';
+export * from './lessons300';
 export * from './voices';
 export * from './certify';
 export * from './exams';

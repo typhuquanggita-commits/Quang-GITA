@@ -23,6 +23,7 @@ const Studio = lazy(() => import('./components/engwin/Studio').then((m) => ({def
 const Podcast = lazy(() => import('./components/engwin/Podcast').then((m) => ({default: m.Podcast})));
 const Brand = lazy(() => import('./components/engwin/Brand').then((m) => ({default: m.Brand})));
 const Sprint = lazy(() => import('./components/engwin/Sprint').then((m) => ({default: m.Sprint})));
+const Gita = lazy(() => import('./components/engwin/Gita').then((m) => ({default: m.Gita})));
 const Assistant = lazy(() => import('./components/engwin/Assistant').then((m) => ({default: m.Assistant})));
 const Training = lazy(() => import('./components/engwin/Training').then((m) => ({default: m.Training})));
 const Assess = lazy(() => import('./components/engwin/Assess').then((m) => ({default: m.Assess})));
@@ -47,6 +48,14 @@ const GROUP_LABEL: Record<string, string> = {
 };
 
 const NAV: Nav[] = [
+  {
+    id: 'gita',
+    icon: '🧬',
+    label: 'Mô thức GITA',
+    hint: '12 bước · 300 bài định hướng',
+    group: 'learner',
+    render: () => <Gita />,
+  },
   {
     id: 'charter',
     icon: '🧿',

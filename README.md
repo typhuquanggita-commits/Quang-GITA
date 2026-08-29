@@ -323,6 +323,63 @@ Từ     300   3.000   6.800  10.000
 Input    0h    450h  1.080h  1.800h
 ```
 
+## 🧬 Mô thức GITA — 12 bước và 300 bài định hướng
+
+Toàn bộ phần này lấy từ **tài liệu gốc của học viện**: sơ đồ hành trình 12
+bước, sơ đồ tư duy viết tay, và hai sơ đồ BNI của Trương Nhật Quang.
+
+> **Một đính chính.** Bản trước của hệ thống có bốn pha **G–I–T–A**
+> (GIEO · IN · THẤM · ÁP) do tôi tự dựng khi chưa có tài liệu gốc, và đã ghi rõ
+> là bản tạm. Tài liệu gốc cho thấy **GITA là tên học viện, không phải viết tắt
+> của bốn pha**. Bốn pha thật là **HIỂU MÌNH → RÈN MÌNH → BỨT PHÁ → TRƯỞNG
+> THÀNH**. Bốn pha bịa đã được thay, và có phép kiểm tự động canh để điều đó
+> không lặp lại.
+
+**Hành trình 12 bước** — mỗi bước ghi rõ các điểm chính từ tài liệu gốc, mốc
+tháng, và **tiếng Anh nằm ở đâu trong bước đó**. Tiếng Anh không phải môn tách
+rời: nó là một trong ba trục của bước 05, và là nơi mười một bước còn lại được
+kiểm chứng.
+
+**Bàn đạp phát triển cá nhân** — ba luồng chạy song song từ sơ đồ viết tay:
+
+| Luồng | Chuỗi |
+|---|---|
+| THÓI QUEN | → tiêu chí lựa chọn → nguồn lực hệ thống → giải pháp → **tài năng** |
+| HÀNH ĐỘNG | → đòn bẩy → công cụ, dụng cụ → **nghị lực** |
+| TRẢI NGHIỆM | → tốc độ → niềm tin → **hành vi** |
+
+Cả ba đổ về **KỶ LUẬT**. Kỷ luật là *kết quả*, không phải điểm xuất phát — đó là
+chỗ hầu hết chương trình hiểu ngược.
+
+**Bốn phễu lọc** — Ngôn ngữ, Trải nghiệm, Ký ức, Niềm tin: nơi thông điệp của cố
+vấn bị méo trước khi tới học viên. Mỗi phễu nêu rõ nó làm méo gì và cố vấn phải
+làm gì để đi xuyên qua.
+
+**Năm lối chiến lược** chuyển từ BNI: Givers Gain, đúng người → đúng thông điệp
+→ đúng quy trình → WOW trải nghiệm → nhân tầng. BNI dựng hệ thống để *một lời
+giới thiệu sinh ra lời giới thiệu tiếp theo*; học viện cần đúng cấu trúc đó cho
+việc *một học viên thành công sinh ra học viên thành công tiếp theo*.
+
+### 300 bài định hướng
+
+`12 bước × 5 chủ đề × 5 nấc = 300`, sinh bằng hàm thuần.
+
+- **5 chủ đề** xuyên suốt: Nhận thức · Niềm tin · Thói quen · Hành động · Kết nối
+- **5 nấc thấm**: Biết → Hiểu → Làm được → Thành thói quen → **Dạy lại**
+
+Bài định hướng **khác** bài học. Hệ thống đã có 268 bài giảng dạy kiến thức;
+300 bài này là buổi **chỉnh hướng** 20 phút: vì sao đang làm việc này, đang ở
+đâu, bước kế tiếp là gì. Mỗi bài kết thúc bằng một việc làm được ngay, không
+phải một điều để suy ngẫm.
+
+```bash
+npx tsx tools/kiem-gita.ts   # kiểm 12 bước, 4 phễu, 5 lối, và 300 bài
+```
+
+**Hai chỗ tôi chưa đọc chắc trong tài liệu gốc** — được ghi công khai trong app
+thay vì đoán bừa: tiêu đề ghi *"4 Phễu Lọc"* nhưng liệt kê **năm** tên; và dòng
+*"3 an + Độ"* tôi chưa ra nghĩa nên chưa đưa vào hệ thống.
+
 ## 🤖 Trợ lý AI của học viện
 
 Trả lời câu hỏi khó nhất mỗi sáng — **hôm nay tôi làm gì** — bằng dữ liệu của
@@ -565,6 +622,8 @@ data/                  Toàn bộ nội dung hệ thống, tách khỏi giao di�
   solutions.ts         40 triệu chứng → kho 1.000 đơn kê, sinh bằng hàm thuần
   training.ts          Kèm cặp 1–1 · 5 bậc coach · 4 khoá nâng cao · lộ trình xuất sắc
   assistant.ts         Trợ lý AI — 3 gói · 11 kho tri thức · 10 việc · thang giữ chân
+  gita.ts              Mô thức GITA gốc — 12 bước · bàn đạp · 4 phễu · 5 lối BNI
+  lessons300.ts        300 bài định hướng, sinh từ 12 bước × 5 chủ đề × 5 nấc
   nhip.ts              Suy ra nhịp học từ tổng giờ và số tuần
 
 content/
