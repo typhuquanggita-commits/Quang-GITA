@@ -1281,6 +1281,65 @@ const { chromium } = require(PW);
     await p.waitForTimeout(2500);
   }
 
+  /* ═══════════ 21 · QUÊN MẬT KHẨU · PHÍA ỨNG DỤNG ═══════════ */
+  console.log('\n21 · QUÊN MẬT KHẨU · PHÍA ỨNG DỤNG');
+  {
+    const r = await p.evaluate(() => {
+      const cu = G.S.acc;
+      G.S.acc = null; G.S.role = null; G.S.roleObj = null;
+      G.moQuenMatKhau();
+      const m = document.getElementById('modal');
+      const o = m ? m.innerHTML : '';
+      const inp = document.getElementById('qmU');
+      const kieu = inp ? inp.getAttribute('type') : '';
+
+      /* Gõ tên đăng nhập không phải email — phải qua được ô kiểm phía ứng dụng */
+      let loiTen = '';
+      if (inp) {
+        inp.value = 'Admin@gita365';
+        G.xinMa();
+        const l = document.getElementById('qmLoi');
+        loiTen = l ? l.textContent : '';
+      }
+      let loiNgan = '';
+      if (inp) {
+        inp.value = 'ab';
+        G.xinMa();
+        const l = document.getElementById('qmLoi');
+        loiNgan = l ? l.textContent : '';
+      }
+      if (G.U && G.U.closeModal) G.U.closeModal();
+      G.S.acc = cu;
+      return {coO: !!inp, kieu: kieu, dai: o.length,
+        coNutXinMa: /data-act="xin-ma"/.test(o),
+        coBuoc2: /data-act="dat-lai-mk"/.test(o),
+        loiTen: loiTen, loiNgan: loiNgan};
+    });
+
+    bao(r.coO && r.coNutXinMa && r.coBuoc2, 'màn quên mật khẩu dựng đủ hai bước', r.dai + ' ký tự');
+    bao(r.kieu === 'text',
+      'ô nhập là text, không phải email — Admin@gita365 không có dấu chấm sau @', 'type=' + r.kieu);
+    bao(!/dạng địa chỉ email/.test(r.loiTen),
+      'gõ tên đăng nhập không phải email vẫn gửi đi được', r.loiTen || 'không báo lỗi');
+    bao(/email hoặc tên đăng nhập/i.test(r.loiNgan),
+      'gõ quá ngắn thì nhắc rõ nhập gì', r.loiNgan);
+
+    /* Màn đăng nhập phải có lối vào phần quên mật khẩu */
+    const coLoi = await p.evaluate(() => {
+      const cu = G.S.acc;
+      G.S.acc = null; G.S.role = null; G.S.roleObj = null;
+      G.raNgoai();
+      const co = !!document.querySelector('[data-act="quen-mk"]');
+      G.S.acc = cu;
+      return co;
+    });
+    bao(coLoi, 'màn đăng nhập có sẵn lối vào phần quên mật khẩu');
+
+    await p.goto(URL, { waitUntil: 'networkidle' });
+    await p.evaluate(() => window.G.doLogin('superadmin@gita365.vn'));
+    await p.waitForTimeout(2500);
+  }
+
   console.log('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành'));
   await b.close();
   process.exit(loi ? 1 : 0);

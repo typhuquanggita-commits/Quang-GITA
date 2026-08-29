@@ -32,7 +32,8 @@ global.Utilities={
   DigestAlgorithm:{SHA_256:'SHA-256'}, Charset:{UTF_8:'utf8'},
   computeDigest:(a,s)=>Array.from(crypto.createHash('sha256').update(s,'utf8').digest())
     .map(b=>b>127?b-256:b),
-  base64Encode:by=>Buffer.from(by.map?by.map(x=>x<0?x+256:x):by).toString('base64')
+  base64Encode:by=>Buffer.from(by.map?by.map(x=>x<0?x+256:x):by).toString('base64'),
+  formatDate:(d,tz,f)=>new Date(d).toISOString()
 };
 global.MailApp={sendEmail:(to,cd,than)=>{thu.push({to,cd,than});}};
 global.Logger={log:()=>{}};
@@ -363,6 +364,76 @@ const thieuGoi = (() => { delete tmMa.kho['tang3.enc'];
   return JSON.parse(doGet({parameter:{goi:'tang3'}})._); })();
 bao(!thieuGoi.ok && /tang3\.enc/.test(thieuGoi.error),
   'thiếu một gói thì nói rõ thiếu tệp nào, không im lặng');
+
+console.log('\n13 · QUÊN MẬT KHẨU — NHẬN MÃ QUA EMAIL');
+{
+  H.xoaThu();
+  const em = hoSo.email;   /* phuhuynh.thu@gmail.com — username trùng email */
+
+  /* Tài khoản không có thật: trả lời y hệt, không lộ danh sách */
+  const la = goi({fn:'quenMatKhau', u:'khongcoai@gmail.com'});
+  bao(la.ok && /Nếu tài khoản có thật/.test(la.thongBao),
+    'tài khoản không có thật vẫn trả lời y hệt — không dò được ai đã đăng ký');
+  bao(H.thu().length === 0, 'và KHÔNG gửi thư đi đâu cả');
+
+  const q = goi({fn:'quenMatKhau', u:em});
+  bao(q.ok, 'xin mã lấy lại mật khẩu bằng email đăng nhập');
+  const thuMa = H.thu().slice(-1)[0];
+  bao(!!thuMa && thuMa.to === em, 'thư gửi đúng địa chỉ email đã đăng ký', thuMa && thuMa.to);
+  const maQ = thuMa && (thuMa.than.match(/\n\s+(\d{6})\n/) || [])[1];
+  bao(!!maQ, 'thư có mã sáu số', maQ);
+  bao(thuMa && !/Chào\s*,/.test(thuMa.than), 'thư gọi đúng tên người nhận, không bỏ trống');
+  bao(!JSON.stringify(H.trang.users||[]).includes(maQ||'zzz'),
+    'mã KHÔNG lưu dạng đọc được — chỉ giữ bản băm trong bộ nhớ tạm');
+
+  /* Sai mã */
+  const sai1 = goi({fn:'datLaiMatKhau', u:em, ma:'000000', moi:'NhaBinhYen2027'});
+  bao(!sai1.ok && /Còn 4 lần/.test(sai1.error), 'sai mã thì đếm ngược số lần còn lại', sai1.error);
+
+  /* Mật khẩu mới quá yếu */
+  const yeu = goi({fn:'datLaiMatKhau', u:em, ma:maQ, moi:'abc'});
+  bao(!yeu.ok && yeu.code === 'WEAK', 'mật khẩu mới quá yếu thì từ chối, mã chưa bị tiêu');
+
+  /* Đặt lại thật */
+  H.xoaThu();
+  const dl = goi({fn:'datLaiMatKhau', u:em, ma:maQ, moi:'NhaBinhYen2027'});
+  bao(dl.ok, 'đúng mã và mật khẩu đủ mạnh thì đặt lại được', dl.error||'');
+  bao(H.thu().some(t2 => /đã được đặt lại/.test(t2.cd)),
+    'đặt lại xong có thư báo về hòm thư — chủ tài khoản biết ngay nếu không phải mình làm');
+
+  const dnMoi = gitaDangNhap_({u:em, mk:'NhaBinhYen2027'});
+  bao(dnMoi.ok, 'đăng nhập được bằng mật khẩu vừa đặt');
+  bao(!gitaDangNhap_({u:em, mk:'GiaDinh2026#'}).ok, 'mật khẩu cũ hết dùng được');
+
+  /* Mã dùng một lần */
+  const lai = goi({fn:'datLaiMatKhau', u:em, ma:maQ, moi:'MotNhaKhac2027'});
+  bao(!lai.ok, 'mã đã dùng thì không dùng lại được');
+
+  /* Sai năm lần thì huỷ mã */
+  goi({fn:'quenMatKhau', u:em});
+  let cuoi = null;
+  for (let i = 0; i < 5; i++) cuoi = goi({fn:'datLaiMatKhau', u:em, ma:'111111', moi:'NhaBinhYen2028'});
+  bao(!cuoi.ok && cuoi.code === 'LOCKED', 'sai năm lần thì mã bị huỷ', cuoi.error);
+
+  /* Trần số lần xin mã mỗi giờ */
+  let chan = 0;
+  for (let i = 0; i < 12; i++) { H.xoaThu(); goi({fn:'quenMatKhau', u:em}); if (!H.thu().length) chan++; }
+  bao(chan > 0, 'xin mã quá nhiều lần trong một giờ thì bị chặn', chan + ' lượt bị chặn');
+
+  /* Tài khoản đăng nhập bằng TÊN, không phải email — như Admin@gita365 */
+  H.xoaThu();
+  const qAdmin = goi({fn:'quenMatKhau', u:'Admin@gita365'});
+  bao(qAdmin.ok && H.thu().length > 0,
+    'tài khoản có tên đăng nhập không phải email vẫn xin mã được',
+    (H.thu()[0]||{}).to || 'KHÔNG GỬI ĐƯỢC');
+
+  /* Gõ ĐỊA CHỈ EMAIL của tài khoản đó — đường người dùng hay đi nhất */
+  H.xoaThu();
+  const qEmail = goi({fn:'quenMatKhau', u:'typhuquanggita@gmail.com'});
+  bao(qEmail.ok && H.thu().length > 0,
+    'gõ địa chỉ email cũng xin được mã, không bắt nhớ đúng tên đăng nhập',
+    (H.thu()[0]||{}).to || 'KHÔNG GỬI ĐƯỢC');
+}
 
 console.log('\n' + (loi ? '✗ CÒN '+loi+' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — máy chủ chạy đúng'));
 process.exit(loi?1:0);

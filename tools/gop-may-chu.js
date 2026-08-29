@@ -101,6 +101,30 @@ fs.writeFileSync(RA, ra);
 try { new Function(ra); }
 catch (e) { console.error('  ✗ Tệp gộp sai cú pháp: ' + e.message); process.exit(1); }
 
+/* Đọc một trường mà bảng không có cột thì Store trả undefined — không nổ,
+   chỉ im lặng sai. Thư gửi khách hàng từng mở đầu bằng "Chào ," vì đúng lỗi
+   này. Soi ở đây để không tái diễn. */
+{
+  const m = ra.match(/var GITA_BANG = \{[\s\S]*?\n\};/);
+  if (m) {
+    const cot = {};
+    for (const x of m[0].matchAll(/(\w+):\s*\[([\s\S]*?)\]/g))
+      cot[x[1]] = (x[2].match(/'[^']+'/g) || []).map(t => t.slice(1, -1));
+    const BO_QUA = new Set(['id','_dong','length','filter','map','forEach','toLowerCase',
+      'indexOf','replace','slice','match','trim','split','push','test','ma','ten','ok','error']);
+    const CANH = [['nd','users'],['ndTim','users'],['hv','students'],['tt','thanhToan']];
+    const ban = new Set();
+    for (const [bien, bang] of CANH)
+      for (const x of ra.matchAll(new RegExp('\\b' + bien + '\\.([a-zA-Z_][\\w]*)', 'g')))
+        if (!BO_QUA.has(x[1]) && cot[bang] && !cot[bang].includes(x[1]))
+          ban.add(bien + '.' + x[1] + ' — bảng ' + bang + ' không có cột này');
+    if (ban.size) {
+      console.error('  ✗ Đọc trường không có trong bảng:\n     ' + [...ban].join('\n     '));
+      process.exit(1);
+    }
+  }
+}
+
 const lo = /toiyeugita365|password\s*=\s*['"]|pwHash:\s*hashPw_\(['"][^'"]{4,}['"]/.exec(ra);
 if (lo) { console.error('  ✗ Có mật khẩu nằm cứng trong mã: ' + lo[0]); process.exit(1); }
 
@@ -116,4 +140,5 @@ if (lo) { console.error('  ✗ Có mật khẩu nằm cứng trong mã: ' + lo[0
 
 console.log('  ✓ server/GITA365_TATCA.gs — ' + PHAN.length + ' phần · ' +
   ra.split('\n').length + ' dòng · ' + Math.round(ra.length / 1024) + ' KB');
-console.log('  ✓ cú pháp chạy được · đúng một doGet và một doPost · không mật khẩu nằm cứng');
+console.log('  ✓ cú pháp chạy được · đúng một doGet và một doPost');
+console.log('  ✓ không mật khẩu nằm cứng · không trường nào đọc sai cột bảng');

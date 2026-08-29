@@ -50,7 +50,7 @@ function gitaDoiMatKhau_(y, hoSo) {
     chiTiet: 'Đổi mật khẩu thành công, đã đóng phiên' });
   try {
     MailApp.sendEmail(nd.email || nd.username, 'GITA 365 — mật khẩu đã được đổi',
-      'Chào ' + (nd.fullName || '') + ',\n\n' +
+      'Chào ' + (nd.hoTen || 'anh chị') + ',\n\n' +
       'Mật khẩu tài khoản ' + nd.username + ' vừa được đổi lúc ' +
       Utilities.formatDate(new Date(), 'GMT+7', 'HH:mm dd/MM/yyyy') + '.\n\n' +
       'Nếu không phải anh chị đổi, báo ngay cho Học viện GITA theo số 08.5555.4688.\n\n' +
@@ -77,10 +77,15 @@ function gitaQuenMatKhau_(y) {
     return traLoi;
   }
 
+  /* Nhận CẢ tên đăng nhập LẪN địa chỉ email — giống hệt lúc đăng nhập.
+     Người quên mật khẩu thường cũng không nhớ chính xác tên đăng nhập; bắt
+     họ nhớ đúng một trong hai là dựng thêm một cánh cửa khoá nữa ngay lúc
+     họ đang bí. */
   var nd = null;
   try {
     nd = Store.all('users').filter(function (x) {
-      return String(x.username || '').toLowerCase() === u;
+      return String(x.username || '').toLowerCase() === u ||
+             String(x.email || '').toLowerCase() === u;
     })[0];
   } catch (e) { nd = null; }
   if (!nd || !isTrue(nd.active) || nd.deletedAt) return traLoi;
@@ -88,16 +93,20 @@ function gitaQuenMatKhau_(y) {
   var email = nd.email || nd.username;
   if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) return traLoi;
 
+  /* Khoá lưu mã đi theo TÊN ĐĂNG NHẬP thật, không theo chuỗi người dùng gõ.
+     Nếu không, xin mã bằng email rồi đặt lại bằng tên đăng nhập sẽ không khớp. */
+  var uThat = String(nd.username || '').toLowerCase();
+
   var ma = gitaMaSauSo_();
   var muoi = newSalt_();
-  kho.put(gitaKhoaMa_(u), JSON.stringify({
+  kho.put(gitaKhoaMa_(uThat), JSON.stringify({
     hash: hashPw_(ma, muoi), salt: muoi, uid: nd.id,
     het: Date.now() + GITA_HAN_MA_PHUT * 60000, sai: 0
   }), GITA_HAN_MA_PHUT * 60);
 
   try {
     MailApp.sendEmail(email, 'GITA 365 — mã lấy lại mật khẩu',
-      'Chào ' + (nd.fullName || '') + ',\n\n' +
+      'Chào ' + (nd.hoTen || 'anh chị') + ',\n\n' +
       'Mã lấy lại mật khẩu của tài khoản ' + nd.username + ' là:\n\n' +
       '        ' + ma + '\n\n' +
       'Mã sống ' + GITA_HAN_MA_PHUT + ' phút và chỉ dùng được một lần.\n\n' +
@@ -119,6 +128,17 @@ function gitaDatLaiMatKhau_(y) {
   var ma = String(y.ma || '').trim();
   var moi = String(y.moi || '');
   if (!u || !ma || !moi) return { ok: false, error: 'Thiếu tên đăng nhập, mã hoặc mật khẩu mới.' };
+
+  /* Người dùng có thể xin mã bằng email rồi đặt lại bằng tên đăng nhập, hoặc
+     ngược lại. Quy cả hai về đúng một tài khoản trước khi tìm mã. */
+  var ndTim = null;
+  try {
+    ndTim = Store.all('users').filter(function (x) {
+      return String(x.username || '').toLowerCase() === u ||
+             String(x.email || '').toLowerCase() === u;
+    })[0];
+  } catch (e) { ndTim = null; }
+  if (ndTim) u = String(ndTim.username || '').toLowerCase();
 
   var kho = CacheService.getScriptCache();
   var raw = kho.get(gitaKhoaMa_(u));

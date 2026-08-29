@@ -79,9 +79,12 @@ G.moQuenMatKhau = function(){
   var U = G.U;
   U.modal(
     '<h2 style="font-size:20px;font-weight:800;margin-bottom:6px">Lấy lại mật khẩu</h2>'+
-    '<p class="sm muted" style="margin-bottom:14px">Nhập tên đăng nhập. Hệ thống gửi mã sáu số tới email đã đăng ký. Mã sống mười lăm phút.</p>'+
-    '<label class="tiny up muted">TÊN ĐĂNG NHẬP</label>'+
-    '<input id="qmU" type="email" autocomplete="username" class="inp blk mb" placeholder="ten@gita365.vn">'+
+    '<p class="sm muted" style="margin-bottom:14px">Nhập email hoặc tên đăng nhập. Hệ thống gửi mã sáu số '+
+      'tới email đã đăng ký. Mã sống mười lăm phút và chỉ dùng được một lần.</p>'+
+    '<label class="tiny up muted">EMAIL HOẶC TÊN ĐĂNG NHẬP</label>'+
+    /* type="text" chứ không phải "email": tài khoản Admin@gita365 không có dấu
+       chấm sau @, trình duyệt sẽ chặn ngay trước khi gửi đi. */
+    '<input id="qmU" type="text" autocomplete="username" class="inp blk mb" placeholder="ten@gita365.vn">'+
     '<div id="qmB1"><button class="btn pri blk" data-act="xin-ma">Gửi mã về email</button></div>'+
     '<div id="qmB2" style="display:none">'+
       '<label class="tiny up muted">MÃ SÁU SỐ TRONG EMAIL</label>'+
@@ -100,7 +103,10 @@ G.xinMa = function(){
   var loi = document.getElementById('qmLoi');
   var u = ((document.getElementById('qmU')||{}).value || '').trim();
   function bao(t, c){ if(loi){ loi.textContent = t; loi.style.color = c || '#BE0E16'; } }
-  if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(u)){ bao('Nhập đúng dạng địa chỉ email.'); return; }
+  /* Nhận cả địa chỉ email lẫn tên đăng nhập — máy chủ tra được cả hai.
+     Ép đúng dạng email ở đây thì tài khoản Admin@gita365 không xin mã được,
+     vì sau dấu @ không có dấu chấm. */
+  if(u.length < 4){ bao('Nhập email hoặc tên đăng nhập của anh chị.'); return; }
   bao('Đang gửi…','var(--ink-3)');
   goi({ fn:'quenMatKhau', u:u })
     .then(function(d){
