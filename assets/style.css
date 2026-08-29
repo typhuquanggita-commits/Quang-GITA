@@ -876,6 +876,57 @@ textarea.inp{resize:vertical;min-height:70px;line-height:1.6}
 .ai-go input:focus{border-color:var(--gita)}
 @media(max-width:600px){ .ai-ds{grid-template-columns:1fr} .ai-hoi{max-width:92%} }
 
+/* ═══════════ KHOÁ SAO CHÉP CHO TÀI KHOẢN KHÁCH HÀNG ═══════════
+   Bôi đen là cửa gốc: trợ lý đọc màn hình, lệnh sao chép bằng giọng nói và
+   mọi thao tác chép bằng chuột đều phải bôi đen được văn bản trước. Đóng
+   cửa này là đóng cả ba đường. Ô để gõ vẫn mở, nếu không thì khách không
+   đăng ký, không viết nhật ký, không hỏi trợ lý được. */
+body.khoa-chep{
+  -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none;
+  -webkit-touch-callout:none;          /* tắt menu giữ-lâu trên điện thoại */
+  -webkit-tap-highlight-color:transparent;
+}
+body.khoa-chep input,
+body.khoa-chep textarea,
+body.khoa-chep select,
+body.khoa-chep [contenteditable="true"],
+body.khoa-chep .cho-chep{
+  -webkit-user-select:text; -moz-user-select:text; -ms-user-select:text; user-select:text;
+  -webkit-touch-callout:default;
+}
+body.khoa-chep ::selection{background:transparent}
+body.khoa-chep ::-moz-selection{background:transparent}
+body.khoa-chep input::selection,
+body.khoa-chep textarea::selection{background:var(--gita-mo-3)}
+body.khoa-chep img{-webkit-user-drag:none; user-drag:none; pointer-events:none}
+
+/* ── Chặn in ở tầng bản in ──
+   Chặn Ctrl+P chỉ bịt được phím tắt. Trình đơn của trình duyệt (⋮ ▸ In) và
+   lệnh in của hệ điều hành không đi qua bàn phím, nên bộ nghe phím không
+   với tới. Tầng này thì với tới: khi trình duyệt dựng bản in, toàn bộ nội
+   dung bị ẩn và chỉ còn lại một trang báo. Ai bấm in ra giấy hay in ra PDF
+   đều nhận đúng trang ấy. */
+@media print{
+  body.khoa-chep #app,
+  body.khoa-chep #shell,
+  body.khoa-chep #top,
+  body.khoa-chep #left,
+  body.khoa-chep #right,
+  body.khoa-chep #main,
+  body.khoa-chep #wm,
+  body.khoa-chep #modal,
+  body.khoa-chep #toast{ display:none !important }
+
+  body.khoa-chep::after{
+    content:'GITA 365 — Nội dung này không được phép in.\A '
+            'Hồ sơ của gia đình đọc trực tiếp trên ứng dụng. '
+            'Cần bản mang về, xin liên hệ Tư vấn hoặc Coach của nhà mình.\A '
+            'Học viện GITA · 08.5555.4688';
+    display:block; white-space:pre-line; text-align:center;
+    padding:80px 40px; font-size:15px; line-height:2; color:#185AB4;
+  }
+}
+
 /* ═══════════ KHUNG TRÒ CHUYỆN ═══════════ */
 .ch-hop{padding:0;overflow:hidden}
 .ch-dau{display:flex;align-items:center;justify-content:space-between;gap:10px;

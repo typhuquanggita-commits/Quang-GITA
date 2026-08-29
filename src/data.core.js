@@ -106,6 +106,10 @@ G.PERM = {
      Mở và đẩy ca: từ Tư vấn trở lên — chính họ ngồi với gia đình.
      Bảng đo lường toàn hệ: R01–R04, để soi chỗ nào đang tắc. */
   ca_xu_ly:11, ca_do_luong:4,
+
+  /* Theo dõi mức dùng tài nguyên của đội ngũ — chỉ R01–R02.
+     Một tài khoản chạm quá 20% kho thì Admin hệ thống nhận cảnh báo. */
+  qt_tai_nguyen:2,
   mc_gui:15,       /* nộp minh chứng — tất cả, gồm phụ huynh và học viên */
   mc_duyet:8,      /* xác nhận minh chứng — giáo viên, Coach trở lên */
   /* Sửa chữ hiển thị trên toàn hệ thống — mặc định CHỈ Super Admin.
@@ -142,6 +146,7 @@ G.PERM_TEN = {
   tl_gui_khach:'Gửi tư liệu thêm cho gia đình',
   ca_xu_ly:'Mở và xử lý ca theo quy trình',
   ca_do_luong:'Bảng đo lường ca toàn hệ',
+  qt_tai_nguyen:'Theo dõi tài nguyên của đội ngũ',
   mc_gui:'Nộp minh chứng nhiệm vụ',
   mc_duyet:'Xác nhận minh chứng',
   sua_noi_dung:'Sửa nội dung hiển thị',
@@ -317,6 +322,9 @@ G.NAV = [
     /* Đặt đầu thư mục: đây là cửa nhìn toàn cảnh, ai vào cũng nên thấy trước.
        Không gắn perm — mọi vai đều thấy TÊN các kho, còn mở được hay không
        thì bảng bên trong nói rõ từng dòng. */
+    {v:'hanh-trinh-12',t:'Hành trình 12 chặng của học viên', h:'4 trụ · ai chịu trách nhiệm · điểm chạm WOW', ic:'map', capMo:'chung', star:1},
+    {v:'ref-gita',    t:'Hệ thống một nhà giới thiệu một nhà', h:'Chân dung Ref · 30s-60s-8p · 16 bước', ic:'share', perm:'nghe_chung', capMo:'nghe', star:1},
+    {v:'khach-lon',   t:'Chăm sóc khách hàng lớn',        h:'4 tầng · nhịp chạm · hồ sơ 68 điểm', ic:'crown', perm:'nghe_chung', capMo:'nghe', star:1},
     {v:'kho-tong',    t:'Kho tổng — toàn cảnh',        h:'9 nhóm · hơn 50 kho · số đếm thật', ic:'vault', capMo:'chung', star:1},
     {v:'thu-vien',    t:'Thư viện tài liệu',           h:'Gửi tài liệu lên · kho lớn lên từ đây', ic:'book', capMo:'chung', star:1},
     {v:'minh-chung',  t:'Minh chứng nhiệm vụ',         h:'Nộp ảnh, báo cáo xác nhận đã làm',   ic:'check', capMo:'chung', star:1},
@@ -422,6 +430,7 @@ G.NAV = [
     {v:'sap-xep',     t:'Sắp xếp thư mục',              h:'Đổi thứ tự · ẩn bớt · thêm thư mục mới', ic:'orbit', star:1, perm:'qt_trang', capMo:'quantri'},
     {v:'sua-hien-thi', t:'Sửa nội dung hiển thị',      h:'Chữ nào chưa hợp lý thì sửa ngay',   ic:'book', star:1, perm:'qt_trang', capMo:'quantri'},
     {v:'duyet-tai-lieu',t:'Kiểm duyệt tài liệu',        h:'Xem · chấm chuẩn hoá · duyệt hoặc trả lại',ic:'shield', star:1, perm:'qt_trang', capMo:'quantri'},
+    {v:'theo-doi-tai-nguyen',t:'Theo dõi tài nguyên',      h:'Cảnh báo khi một tài khoản chạm quá 20% kho', ic:'chart', perm:'qt_tai_nguyen', capMo:'chung', star:1},
     {v:'nhat-ky-ht',  t:'Nhật ký hệ thống',            h:'Mọi thao tác đều để lại dấu vết',    ic:'book', perm:'qt_trang', capMo:'quantri'}
    ]}
 ];

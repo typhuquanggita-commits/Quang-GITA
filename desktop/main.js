@@ -143,6 +143,38 @@ function di(man) {
 
 /* Hỏi chính ứng dụng xem vai đang đăng nhập có quyền xuất bản in không.
    Trình đơn của tiến trình chính không biết vai, nên phải hỏi sang. */
+/* Sao chép, cắt, chọn tất cả — chặn với tài khoản khách hàng.
+   Hỏi thẳng trang xem vai hiện tại có bị khoá không; trang là nơi biết
+   sự thật, tiến trình chính không giữ trạng thái đăng nhập. */
+async function biKhoaChep() {
+  try {
+    return await cuaSo.webContents.executeJavaScript(
+      '(function(){ try{ return !!(window.G && window.G.BI_KHOA_CHEP && window.G.BI_KHOA_CHEP()); }catch(e){ return false; } })()',
+      true);
+  } catch (e) { return false; }
+}
+
+async function chepNeuDuoc(viec) {
+  if (!cuaSo) return;
+  if (await biKhoaChep()) {
+    try {
+      await cuaSo.webContents.executeJavaScript(
+        "window.G && window.G.secLog && window.G.secLog('Chặn sao chép','Trình đơn Sửa ▸ " + viec + " trên bản máy tính','Đã chặn')",
+        true);
+    } catch (e) {}
+    dialog.showMessageBox(cuaSo, {
+      type: 'info', title: 'GITA 365',
+      message: 'Tài khoản này không sao chép được',
+      detail: 'Nội dung trong GITA 365 là tài sản của Học viện, chỉ đọc trực tiếp trên ứng dụng.\n' +
+              'Cần bản mang về thì nhắn Tư vấn hoặc Coach của nhà mình.\n\nHotline: 08.5555.4688'
+    });
+    return;
+  }
+  if (viec === 'cut') cuaSo.webContents.cut();
+  else if (viec === 'copy') cuaSo.webContents.copy();
+  else cuaSo.webContents.selectAll();
+}
+
 /* In màn hình — chỉ cho vai có quyền xuat_pdf (bậc ≤ 5). */
 async function inManHinh() {
   if (!cuaSo) return;
@@ -317,8 +349,14 @@ function dungTrinhDon() {
       submenu: [
         { role: 'undo', label: 'Hoàn tác' }, { role: 'redo', label: 'Làm lại' },
         { type: 'separator' },
-        { role: 'cut', label: 'Cắt' }, { role: 'copy', label: 'Sao chép' },
-        { role: 'paste', label: 'Dán' }, { role: 'selectAll', label: 'Chọn tất cả' }
+        /* Ba mục này do TIẾN TRÌNH CHÍNH thực hiện, nên lớp chặn bên trong
+           trang không với tới được: Ctrl+C của trình đơn chép thẳng từ vùng
+           chọn, bỏ qua mọi bộ nghe của ứng dụng. Phải hỏi vai trước.
+           Dán vẫn để nguyên — khách hàng cần dán khi điền biểu mẫu. */
+        { label: 'Cắt',          accelerator: 'CmdOrCtrl+X', click: () => chepNeuDuoc('cut') },
+        { label: 'Sao chép',     accelerator: 'CmdOrCtrl+C', click: () => chepNeuDuoc('copy') },
+        { role: 'paste',         label: 'Dán' },
+        { label: 'Chọn tất cả',  accelerator: 'CmdOrCtrl+A', click: () => chepNeuDuoc('selectAll') }
       ]
     },
     { label: 'Đi tới', submenu: nhom },

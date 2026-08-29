@@ -601,6 +601,10 @@ function render(){
   }
   main.innerHTML = '<div class="view">' + noiDung + '</div>';
   if(G.watermark) G.watermark();
+  /* Khoá sao chép cho tài khoản khách hàng: bật lớp thân trang và gỡ mọi
+     đường tải xuống vừa được dựng ra. Phải chạy SAU khi màn hình đã vào
+     DOM, nên đặt cạnh đóng dấu chìm. */
+  if(G.batKhoaChep) G.batKhoaChep();
   if(G.dem) G.dem();
   try{ if(history.replaceState) history.replaceState(null,'','#'+G.S.view); }catch(e){}
   window.scrollTo(0,0);
@@ -712,6 +716,11 @@ G.xuat = function(ma){
     return;
   }
   var maBan = dauBan();
+  /* Xuất là đưa dữ liệu ra khỏi hệ thống — mỗi dòng xuất tính một lần chạm,
+     nặng hơn một lần đọc. Đây là chỗ dấu hiệu gom kho lộ ra rõ nhất. */
+  if(G.chamTaiNguyen) b.dong.forEach(function(d, i){
+    G.chamTaiNguyen('Xuất Sheet', ma + '·' + i);
+  });
   U.toast('Đang tạo bảng tính trên Drive…','ok');
   fetch(G.API_CAP_PHEP, {
     method:'POST', headers:{'Content-Type':'text/plain;charset=utf-8'},

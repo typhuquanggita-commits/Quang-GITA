@@ -120,7 +120,10 @@ var CAI_DAT = {
   xinthem:  {kho:'gita365_xin_them',   lay:function(){ return G.XIN_THEM; },   dat:function(v){ if(Array.isArray(v)) G.XIN_THEM = v; }},
   /* Hồ sơ ca xử lý. Đây là thứ phải truy được về sau, nên nó đi lên máy chủ
      chứ không nằm lại một máy. */
-  ca:       {kho:'gita365_ca_xu_ly',   lay:function(){ return G.CA; },        dat:function(v){ if(Array.isArray(v)) G.CA = v; }}
+  ca:       {kho:'gita365_ca_xu_ly',   lay:function(){ return G.CA; },        dat:function(v){ if(Array.isArray(v)) G.CA = v; }},
+  /* Mức dùng tài nguyên của đội ngũ. Phải đi lên máy chủ, nếu không thì
+     Admin ngồi máy mình sẽ không bao giờ thấy cảnh báo của người khác. */
+  tainguyen:{kho:'gita365_tai_nguyen', lay:function(){ return G.TAI_NGUYEN; }, dat:function(v){ if(v && typeof v==='object') G.TAI_NGUYEN = v; }}
 };
 var KEY_CD_MOC = 'gita365_caidat_moc';
 

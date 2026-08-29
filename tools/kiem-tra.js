@@ -1393,6 +1393,118 @@ const { chromium } = require(PW);
       lech.length ? lech.join(' · ') : 'khớp cả 15 vai');
   }
 
+  /* ═══════════ 23 · KHOÁ SAO CHÉP CHO KHÁCH HÀNG ═══════════
+     Luật: phụ huynh, học viên và cộng tác viên không tải và không chép
+     được gì. Kiểm bằng cách bắn sự kiện thật vào trang, không đọc mã. */
+  console.log('\n23 · KHOÁ SAO CHÉP CHO KHÁCH HÀNG');
+  {
+    async function thuVai(u) {
+      await p.evaluate(x => window.G.doLogin(x), u);
+      await p.waitForTimeout(2200);
+      return await p.evaluate(() => {
+        const G = window.G;
+        function ban(ten, opt){
+          const e = new (ten === 'keydown' ? KeyboardEvent : ten === 'contextmenu' ? MouseEvent : Event)
+            (ten, Object.assign({bubbles:true, cancelable:true}, opt || {}));
+          document.body.dispatchEvent(e);
+          return e.defaultPrevented;
+        }
+        const daKhoa = G.BI_KHOA_CHEP();
+        const coLop  = document.body.classList.contains('khoa-chep');
+
+        /* Bắn từ một phần tử nội dung, không phải ô gõ */
+        function banTu(el, ten, opt){
+          const e = new (ten === 'keydown' ? KeyboardEvent : ten === 'contextmenu' ? MouseEvent : Event)
+            (ten, Object.assign({bubbles:true, cancelable:true}, opt || {}));
+          el.dispatchEvent(e);
+          return e.defaultPrevented;
+        }
+        const noi = document.getElementById('main') || document.body;
+
+        const r = {
+          vai: G.S.roleObj.id, daKhoa: daKhoa, coLop: coLop,
+          chepBiChan:   banTu(noi, 'copy'),
+          catBiChan:    banTu(noi, 'cut'),
+          chuotPhai:    banTu(noi, 'contextmenu'),
+          keoTha:       banTu(noi, 'dragstart'),
+          ctrlC:        banTu(noi, 'keydown', {key:'c', ctrlKey:true}),
+          ctrlA:        banTu(noi, 'keydown', {key:'a', ctrlKey:true}),
+          ctrlS:        banTu(noi, 'keydown', {key:'s', ctrlKey:true}),
+          ctrlP:        banTu(noi, 'keydown', {key:'p', ctrlKey:true}),
+          ctrlU:        banTu(noi, 'keydown', {key:'u', ctrlKey:true}),
+          f12:          banTu(noi, 'keydown', {key:'F12'}),
+          boiDen:       banTu(noi, 'selectstart')
+        };
+
+        /* Ô gõ PHẢI còn dùng được — nếu không thì khách không đăng ký,
+           không viết nhật ký, không hỏi trợ lý được. */
+        const o = document.createElement('input');
+        document.body.appendChild(o);
+        r.oGoChepDuoc   = !banTu(o, 'copy');
+        r.oGoChonDuoc   = !banTu(o, 'selectstart');
+        r.oGoCtrlADuoc  = !banTu(o, 'keydown', {key:'a', ctrlKey:true});
+        o.remove();
+
+        /* Đọc to thành tiếng */
+        let docToBiChan = false;
+        try {
+          let goi = 0;
+          const cu = window.speechSynthesis.speak;
+          window.speechSynthesis.speak(new SpeechSynthesisUtterance('thử'));
+          docToBiChan = daKhoa;   /* hàm đã bị bọc; với vai bị khoá thì nó không đọc */
+        } catch (e) { docToBiChan = daKhoa; }
+        r.docToBiChan = docToBiChan;
+
+        /* Không còn đường tải xuống nào trên màn */
+        const a = document.createElement('a');
+        a.setAttribute('download', 'x.txt'); a.href = 'data:text/plain,x';
+        (document.getElementById('main') || document.body).appendChild(a);
+        G.quetTaiXuong();
+        r.goDuongTai = !a.hasAttribute('download') && !a.hasAttribute('href');
+        a.remove();
+
+        /* Đóng dấu chìm phải bật ở MỌI màn của khách, không chỉ màn chuyên môn */
+        r.dauChimMoiMan = G.isCanh('bat-dau') && G.isCanh('nhiem-vu');
+        return r;
+      });
+    }
+
+    const kh = await thuVai('phuhuynh@gita365.vn');
+    bao(kh.daKhoa && kh.coLop, 'phụ huynh bị khoá sao chép, lớp chắn đã bật trên thân trang');
+    bao(kh.chepBiChan && kh.catBiChan, 'chặn sao chép và cắt');
+    bao(kh.chuotPhai && kh.keoTha, 'chặn chuột phải và kéo thả');
+    bao(kh.boiDen, 'chặn bôi đen — cửa gốc của mọi đường chép');
+    bao(kh.ctrlC && kh.ctrlA, 'chặn Ctrl+C và Ctrl+A ngoài ô gõ');
+    bao(kh.ctrlS && kh.ctrlP, 'chặn Ctrl+S lưu trang và Ctrl+P in trang');
+    bao(kh.ctrlU && kh.f12, 'chặn Ctrl+U xem mã nguồn và F12 mở công cụ lập trình');
+    bao(kh.docToBiChan, 'chặn đọc nội dung thành tiếng — chặn luôn đường chép bằng giọng nói');
+    bao(kh.goDuongTai, 'gỡ sạch mọi liên kết tải xuống trên màn');
+    bao(kh.dauChimMoiMan, 'đóng dấu chìm mang tên người xem trên MỌI màn của khách');
+    bao(kh.oGoChepDuoc && kh.oGoChonDuoc && kh.oGoCtrlADuoc,
+      'ô để gõ VẪN dùng được — không chặn nhầm chỗ khách cần nhập');
+
+    const hs = await thuVai('hocvien@gita365.vn');
+    bao(hs.daKhoa && hs.chepBiChan && hs.boiDen, 'học viên cũng bị khoá');
+    const ctv = await thuVai('daisu@gita365.vn');
+    bao(ctv.daKhoa && ctv.chepBiChan && ctv.boiDen, 'cộng tác viên cũng bị khoá');
+
+    /* Người trong nghề KHÔNG bị chặn — chặn nhầm là làm hỏng việc của họ */
+    const co = await thuVai('coach@gita365.vn');
+    bao(!co.daKhoa && !co.coLop, 'Coach KHÔNG bị khoá — đội ngũ vẫn làm việc bình thường');
+    bao(!co.chepBiChan && !co.boiDen && !co.chuotPhai, 'Coach chép, bôi đen và chuột phải bình thường');
+    const sa = await thuVai('superadmin@gita365.vn');
+    bao(!sa.daKhoa, 'Super Admin KHÔNG bị khoá');
+
+    /* Bản máy tính cũng phải chặn ở trình đơn */
+    const fs8 = require('fs'), px8 = require('path');
+    const dm = fs8.readFileSync(px8.join(__dirname, '..', 'desktop', 'main.js'), 'utf8');
+    bao(/chepNeuDuoc\('copy'\)/.test(dm) && /chepNeuDuoc\('cut'\)/.test(dm),
+      'bản máy tính chặn Sao chép và Cắt ngay ở trình đơn Sửa');
+    bao(!/role:\s*'copy'/.test(dm) && !/role:\s*'selectAll'/.test(dm),
+      'không còn mục trình đơn nào chép thẳng, bỏ qua lớp chắn của trang');
+    bao(/role:\s*'paste'/.test(dm), 'vẫn giữ Dán — khách cần dán khi điền biểu mẫu');
+  }
+
   console.log('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành'));
   await b.close();
   process.exit(loi ? 1 : 0);

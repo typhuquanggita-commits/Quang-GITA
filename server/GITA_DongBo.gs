@@ -41,7 +41,7 @@ function gitaCaiDat_(y, hoSo) {
      những lời xin đang chờ. Ghi được từ Tư vấn trở lên (bậc ≤ 11) — vì
      chính họ là người đứng giữa kho và gia đình. Gia đình chỉ đặt lời xin
      qua cụm xinthem, không bao giờ tự ghi vào cụm khothem. */
-  var CUM_NGHE = ['khothem', 'xinthem', 'ca'];
+  var CUM_NGHE = ['khothem', 'xinthem', 'ca', 'tainguyen'];
   if (lv <= 11) {
     Object.keys(gui).forEach(function (k) {
       if (CUM_NGHE.indexOf(k) < 0) return;
@@ -106,7 +106,7 @@ function gitaCaiDat_(y, hoSo) {
 
 /* Mỗi cụm một khoá riêng — 9 KB cho mỗi cụm thay vì 9 KB cho tất cả. */
 var GITA_TRAN_CUM_BYTE = 8500;
-var GITA_CUM_CAI_DAT = ['sapxep', 'noidung', 'phanquyen', 'khothem', 'xinthem', 'ca'];
+var GITA_CUM_CAI_DAT = ['sapxep', 'noidung', 'phanquyen', 'khothem', 'xinthem', 'ca', 'tainguyen'];
 function gitaKhoaCum_(k) { return 'GITA_CD_' + k; }
 
 function gitaDocCaiDat_() {
@@ -138,6 +138,10 @@ function gitaLocCaiDat_(cu, lv, uid) {
     /* Hồ sơ ca: chỉ người trong nghề. Nó mang tên nhà, số điện thoại và
        nguyên văn lời gia đình kể — không được xuống máy của nhà nào cả. */
     if (k === 'ca' && lv > 11) return;
+
+    /* Mức dùng tài nguyên của đội ngũ: chỉ Super Admin và Admin hệ thống.
+       Nó mang tên tài khoản và thói quen làm việc của từng người. */
+    if (k === 'tainguyen' && lv > 2) return;
 
     /* Bảng phân quyền: chỉ Super Admin và Admin hệ thống */
     if (k === 'phanquyen' && lv > 2) return;

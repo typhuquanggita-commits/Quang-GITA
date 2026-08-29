@@ -130,7 +130,14 @@ G.aiTra = function(cauHoi){
     if(thay[k]) return;
     thay[k] = 1; loc.push(x);
   });
-  return loc.slice(0, 12);
+  loc = loc.slice(0, 12);
+
+  /* Ghi mức dùng tài nguyên: mỗi tư liệu trợ lý mở ra cho người trong nghề
+     đều tính một lần chạm. Đây là chỗ đếm chính xác nhất, vì tra kho là
+     đường mà cả người làm việc lẫn người gom kho đều phải đi qua. */
+  if(G.chamTaiNguyen) loc.forEach(function(x){ G.chamTaiNguyen(x.loai, x.ma); });
+
+  return loc;
 };
 
 /* ─── Lưới an toàn: dấu hiệu khẩn phải bắt được kể cả khi kho chưa mở ───
