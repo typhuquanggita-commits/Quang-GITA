@@ -300,6 +300,41 @@ mục chạy đúng phép thử ấy.
 Đo được: màn Mô thức dài thêm **5.976 ký tự**, Sách gốc thêm 1.508, Đại
 sứ thêm 1.443.
 
+## Kiểm thử theo vai — `kiem-theo-vai`
+
+Trước màn này, kiểm xem một vai nhìn thấy gì phải làm bằng tay: đăng
+xuất, đăng nhập vai khác, đi hết trình đơn, ghi ra giấy, lặp lại mười
+chín lần. Không ai làm nổi — nên trên thực tế **không ai kiểm**.
+
+Màn này tính sẵn cả ma trận và cho đổi vai bằng một cú bấm
+(`[data-switch]`, đã có sẵn trong `app.js`).
+
+| Phần | Nội dung |
+|---|---|
+| A | 15 vai · tài khoản mẫu · mật khẩu · số màn thấy được · **số màn khoá** · nút Vào vai này |
+| B | 4 chuyên gia phản biện |
+| C | **Ma trận màn × vai** — 128 × 15, ô đặc là thấy, ô rỗng là khoá |
+| D | **Màn hẹp nhất** — từ hai vai trở xuống, chỗ nới quyền nhầm tốn nhất |
+| E | So sánh Super Admin với một vai bất kỳ |
+
+Cột đáng nhìn là **số màn khoá**, không phải số màn thấy được. Đo hiện
+tại: R01–R02 128/128 · R03–R04 102 · R05–R08 96 · R09–R11 93 · R12 79 ·
+R13 45 · R14 38 · R15 33.
+
+**Bốn điều bộ kiểm canh trên ma trận này:**
+
+1. Super Admin và Admin thấy **toàn bộ** màn — không sót màn nào.
+2. Không vai nào thấy nhiều hơn Super Admin.
+3. Không vai nào thấy một màn mà Super Admin **không** thấy.
+4. **Bậc thang không đảo ngược** — vai bậc thấp không thấy nhiều hơn vai
+   bậc cao. Đây là phép bắt được lỗi nới quyền nhầm, thứ mà đọc bảng
+   quyền bằng mắt không thấy.
+
+Ma trận tính từ `G.NAV` và `G.vaiCo` lúc chạy, nên thêm một màn hay đổi
+một quyền là nó đổi theo ngay. Một bảng phân quyền lệch khỏi ứng dụng là
+kiểu hỏng không ai phát hiện cho tới lúc một vai nhìn thấy thứ đáng lẽ
+không được nhìn.
+
 ## Bảng quy trình toàn Web App — `quy-trinh-toan-he`
 
 Danh sách 127 màn xếp theo nhóm cho biết **có những gì**, nhưng không cho

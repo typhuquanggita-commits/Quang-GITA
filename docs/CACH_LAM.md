@@ -272,6 +272,18 @@ cấp phép và khoá riêng.
 
 ---
 
+## Kiểm thử theo vai
+
+**Kiểm thử theo vai** (Quản trị trang) — ma trận 128 màn × 15 vai, và một
+cú bấm là vào vai bất kỳ, không phải đăng xuất. Mật khẩu của cả mười chín
+tài khoản mẫu nằm ngay trên bảng.
+
+Đọc cột **Khoá** trước cột Thấy được: nó nói vai ấy KHÔNG thấy bao nhiêu
+màn. Mục *Màn hẹp nhất* liệt riêng những màn chỉ một hai vai thấy — chỗ
+nới quyền nhầm sẽ tốn nhất.
+
+---
+
 ## Nhìn toàn hệ từ A đến Z
 
 **Bảng quy trình toàn Web App** (Quản trị trang) — tám luồng vận hành, 36

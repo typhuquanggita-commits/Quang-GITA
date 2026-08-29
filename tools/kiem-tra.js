@@ -2918,6 +2918,55 @@ const { chromium } = require(PW);
       'phụ huynh KHÔNG mở hết được dù cờ bị đặt — công tắc là quyền, không phải biến',
       'được:' + khachMoHet.duoc + ' bật:' + khachMoHet.bat + ' danh sách:' + khachMoHet.ds);
 
+    /* ── Ma trận màn × vai ──
+       Bảng phân quyền lệch khỏi ứng dụng là kiểu hỏng không ai phát hiện
+       cho tới lúc một vai nhìn thấy thứ đáng lẽ không được nhìn. Ma trận
+       này tính từ chính G.NAV và G.vaiCo nên không lệch được — mục này
+       canh những điều PHẢI đúng trong ma trận ấy. */
+    const mt = await p.evaluate(() => {
+      const G = window.G;
+      const d = G.demTheoVai();
+      const r01 = d.find(x => x.vai.id === 'R01');
+      const r02 = d.find(x => x.vai.id === 'R02');
+      /* Không vai nào được thấy nhiều hơn Super Admin */
+      const vuot = d.filter(x => x.thay > r01.thay).map(x => x.vai.id);
+      /* Bậc thang: vai bậc thấp hơn không được thấy ít hơn vai bậc cao hơn */
+      const sap = d.slice().sort((a, b) => a.vai.lv - b.vai.lv);
+      const nguoc = [];
+      for (let i = 1; i < sap.length; i++)
+        if (sap[i].thay > sap[i - 1].thay)
+          nguoc.push(sap[i].vai.id + '>' + sap[i - 1].vai.id);
+      /* Super Admin so với mọi vai: không màn nào SA không thấy */
+      const thieu = d.filter(x => x.vai.id !== 'R01')
+        .map(x => ({ id: x.vai.id, n: G.soSanhVai('R01', x.vai.id).chiB.length }))
+        .filter(x => x.n > 0);
+      /* Mọi vai đều có tài khoản mẫu để bấm vào thử */
+      const khongTK = d.filter(x =>
+        !(G.ACCOUNTS || []).some(a => a.role === x.vai.id)).map(x => x.vai.id);
+      return { so: d.length, tong: r01.tong, r01: r01.thay, r02: r02.thay,
+               vuot, nguoc, thieu, khongTK,
+               hep: (function(){
+                 let n = 0;
+                 G.NAV.forEach(g => g.items.forEach(i => {
+                   if (d.filter(x => G.vaiThayMan(x.vai.id, i)).length <= 2) n++; }));
+                 return n; })() };
+    });
+    bao(mt.r01 === mt.tong && mt.r02 === mt.tong,
+      'Super Admin và Admin hệ thống thấy TOÀN BỘ màn — không sót màn nào',
+      mt.r01 + '/' + mt.tong + ' · ' + mt.r02 + '/' + mt.tong);
+    bao(!mt.vuot.length, 'không vai nào thấy nhiều hơn Super Admin', mt.vuot.join(' '));
+    bao(!mt.thieu.length,
+      'không vai nào thấy một màn mà Super Admin không thấy',
+      mt.thieu.map(x => x.id + ':' + x.n).join(' '));
+    bao(!mt.nguoc.length,
+      'bậc thang phân quyền không đảo ngược — vai bậc thấp không thấy nhiều hơn vai bậc cao',
+      mt.nguoc.join(' '));
+    bao(!mt.khongTK.length,
+      'mười lăm vai đều có tài khoản mẫu để bấm vào kiểm thử', mt.khongTK.join(' '));
+    bao(mt.hep >= 1,
+      'có liệt riêng những màn hẹp nhất — chỗ nới quyền nhầm sẽ tốn nhất',
+      mt.hep + ' màn từ hai vai trở xuống');
+
     /* ── Bảng quy trình toàn Web App ──
        Mọi bước phải trỏ tới màn CÓ THẬT. Bảng quy trình lệch khỏi ứng
        dụng còn tệ hơn không có bảng: người đọc tin nó rồi quyết định sai. */

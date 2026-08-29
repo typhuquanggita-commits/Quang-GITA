@@ -18,7 +18,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '8.1',
+  version: '8.2',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -266,19 +266,28 @@ try { G.MO_HET = localStorage.getItem('gita_mo_het') === '1'; } catch(e){}
 G.TAM_NHIN = [
   {vai:['R01','R02'], pt:100,
    ghi:'Toàn bộ, không khoá gì. Super Admin và Admin hệ thống thấy mọi thứ.'},
-  /* 82 chứ không phải 80: hai màn mới — Đường vào sáu bước (mọi vai) và
-     Học phí năm tầng (kho nghề) — đều mở cho R03–R04, nên tử số tăng hai
-     mà mẫu số tăng hai. Phần KHOÁ vẫn nguyên vẹn 22 màn quản trị; không
-     màn nào trong số đó được nới. Ghi con số thật thay vì giữ 80 cho đẹp. */
-  {vai:['R03','R04'], pt:82,
+  /* 80 chứ không phải 82. Ba màn mới ở đợt v8.x — Bốn tuyến chuyên môn,
+     Quy trình toàn Web App, Kiểm thử theo vai — đều CHỈ mở cho R01–R02.
+     Tử số của R03 đứng yên mà mẫu số tăng ba, nên tỉ lệ tụt.
+
+     Đây là lúc phải sửa SỐ CÔNG BỐ, không sửa cách đếm: phần khoá của
+     R03 không hề bị nới thêm một màn nào, chỉ có phần quản trị dày lên.
+     Giữ 82 cho đẹp thì bài kiểm hoặc đỏ oan, hoặc phải nới dung sai —
+     mà nới dung sai là mất tác dụng canh.
+
+     Điều KHÔNG đổi và mới là thứ đáng canh: bậc thang không được đảo
+     ngược, và R01–R02 phải thấy 100%. Hai phép ấy không phụ thuộc mẫu
+     số nên không trôi theo mỗi lần thêm màn — xem mục ma trận màn × vai
+     trong bộ kiểm. */
+  {vai:['R03','R04'], pt:80,
    ghi:'Khoá đúng phần quản trị của R01–R02: quản trị tài khoản, phân quyền, bảo mật, nhật ký, kiểm duyệt.'},
   /* Tách làm hai dòng: bảy vị trí này trước nay gộp một con số, nhưng
      chúng KHÔNG thấy như nhau — R09–R11 kém hơn ba màn. Gộp lại thì phải
      nới dung sai để cả bảy cùng lọt, mà nới dung sai là mất tác dụng canh.
      Ghi hai con số thật thì canh được chặt hơn. */
-  {vai:['R05','R06','R07','R08'], pt:77,
+  {vai:['R05','R06','R07','R08'], pt:75,
    ghi:'Khoá phần quản trị hệ thống, thêm tài chính và điều hành toàn hệ.'},
-  {vai:['R09','R10','R11'], pt:75,
+  {vai:['R09','R10','R11'], pt:73,
    ghi:'Như trên, và không mở ba màn thuộc phạm vi quản lý chuyên môn.'},
   /* R12 tách ra một dòng riêng, và con số thấp hơn là ĐÚNG chứ không phải
      thiệt thòi. Phân tích dữ liệu đọc được toàn bộ kho nghề và mọi màn số
@@ -288,7 +297,7 @@ G.TAM_NHIN = [
      Trước đây trình đơn của R12 vẫn hiện những mục ấy rồi bấm vào chỉ ra
      một thẻ khoá — mười bốn mục chết. Nay ẩn đi, và con số tụt từ 75%
      xuống đúng mức thật. Ít mục hơn nhưng không mục nào chết. */
-  {vai:['R12'], pt:63,
+  {vai:['R12'], pt:62,
    ghi:'Toàn bộ kho nghề và màn số liệu tổng hợp · không mở hồ sơ từng nhà và buồng lái thao tác'},
   /* ═══ Ba tỉ lệ dưới: nói cho rõ kẻo lẫn với trần 30% ═══
      Đây là tỉ lệ SỐ MÀN HÌNH mở được, không phải tỉ lệ NỘI DUNG. Hai thứ
@@ -569,6 +578,7 @@ G.NAV = [
     {v:'soat-day-du',t:'Soát đủ ruột — tự kiểm 100%', h:'5 phép soát · đếm lại từ dữ liệu đang nạp', ic:'shield', star:1, perm:'qt_trang', capMo:'quantri'},
     {v:'tuyen',      t:'Bốn tuyến chuyên môn',       h:'Engwin · Math · SAT · HSA · bảy mốc trước khi hợp nhất', ic:'orbit', star:1, perm:'qt_trang', capMo:'quantri'},
     {v:'quy-trinh-toan-he',t:'Quy trình toàn Web App', h:'8 luồng · từng bước một màn · quyền của cấp quản trị', ic:'map', star:1, perm:'qt_trang', capMo:'quantri'},
+    {v:'kiem-theo-vai',t:'Kiểm thử theo vai',        h:'Ma trận màn × vai · một cú bấm vào vai bất kỳ', ic:'users', star:1, perm:'qt_trang', capMo:'quantri'},
     {v:'nhat-ky-ht',  t:'Nhật ký hệ thống',            h:'Mọi thao tác đều để lại dấu vết',    ic:'book', perm:'qt_trang', capMo:'quantri'}
    ]}
 ];
