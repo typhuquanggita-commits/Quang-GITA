@@ -212,13 +212,25 @@ G.TAM_NHIN = [
    ghi:'Khoá đúng 20% quan trọng của R01–R02: quản trị tài khoản, phân quyền, bảo mật, nhật ký, kiểm duyệt.'},
   {vai:['R05','R06','R07','R08','R09','R10','R11','R12'], pt:75,
    ghi:'Khoá 20% ấy, thêm tài chính và điều hành toàn hệ.'},
-  /* Ba tỉ lệ dưới nhích lên vì bốn màn mới đều mở cho mọi vai — vòng nhắc
-     Đúng–Đủ–Sâu, hành trình 12 chặng, kho tổng và bộ nhận diện. Cả bốn đều
-     là thứ gia đình và cộng tác viên NÊN thấy: không thấy đường mình đang
-     đi thì không đi được. Ghi lại con số thật thay vì giữ con số cũ. */
-  {vai:['R13'], pt:31, ghi:'Nhà mình, hành trình của con, gửi tài liệu và minh chứng, vòng nhắc'},
-  {vai:['R14'], pt:25, ghi:'Chặng đường của em, nhiệm vụ, minh chứng, vòng nhắc'},
-  {vai:['R15'], pt:20, ghi:'Phần giới thiệu, hoa hồng, gửi tài liệu, vòng nhắc'}
+  /* ═══ Ba tỉ lệ dưới: nói cho rõ kẻo lẫn với trần 30% ═══
+     Đây là tỉ lệ SỐ MÀN HÌNH mở được, không phải tỉ lệ NỘI DUNG. Hai thứ
+     khác hẳn nhau, và trần 30% anh Quang đặt là trần nội dung:
+
+       · Trần nội dung  G.TRAN_KHACH = 0,30 trong src/kho-khach.js — mỗi kho
+         tư liệu chỉ mở sẵn 30% cho gia đình, phần còn lại do Tư vấn và Coach
+         gửi thêm khi đạt KPI 80%. Trần này KHÔNG đổi.
+       · Tỉ lệ dưới đây chỉ đếm xem vai ấy bấm vào được bao nhiêu mục trong
+         trình đơn.
+
+     Con số nhích lên qua các đợt vì những màn mới đều là thứ gia đình,
+     học viên và cộng tác viên PHẢI thấy mới đi được: vòng nhắc Đúng–Đủ–Sâu,
+     hành trình 12 chặng, kho tổng, bản đồ cá nhân 11 ô, kho chuyện của
+     chính cấp mình, sổ nhật ký và cuộc thi viết. Thêm một màn như thế
+     không mở thêm một dòng tư liệu nghề nào. Ghi con số thật ở đây, và
+     giữ nguyên trần nội dung ở chỗ của nó. */
+  {vai:['R13'], pt:33, ghi:'Nhà mình, hành trình của con, gửi tài liệu và minh chứng, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết'},
+  {vai:['R14'], pt:27, ghi:'Chặng đường của em, nhiệm vụ, minh chứng, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết'},
+  {vai:['R15'], pt:23, ghi:'Phần giới thiệu, hoa hồng, gửi tài liệu, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết'}
 ];
 
 /* Sáu chân dung người dùng — lời mời bước vào, hiển thị ở Cổng vào */
@@ -364,6 +376,11 @@ G.NAV = [
    t:'CÚ HÍCH & NHỊP SỐNG', s:'Làm gì hôm nay để nhà mình khác đi?',
    essence:'Thói quen, nghi lễ, vai giữ và những cú hích đủ lớn để cả nhà bật lên.',
    items:[
+    /* Chuyện truyền cảm hứng: mỗi cấp tài khoản một kho trăm chuyện.
+       Không gắn perm — vai nào cũng có kho của mình, màn hình tự lọc. */
+    {v:'chuyen-cam-hung',t:'Chuyện truyền cảm hứng', h:'100 chuyện cho cấp của mình · 10 mạch · mỗi nhiệm vụ một chuyện', ic:'flame', star:1, capMo:'chung'},
+    {v:'nhat-ky-vi-tri',t:'Sổ nhật ký của tôi',    h:'Ngày · tuần · tháng · ô ghi riêng cho từng vị trí', ic:'book', star:1, capMo:'chung'},
+    {v:'thi-viet',    t:'Cuộc thi viết 7 – 21 – 90 – 365', h:'Bài đạt mốc 90 và 365 nhận học bổng 10%', ic:'crown', star:1, capMo:'chung'},
     {v:'chin-vai',    t:'Chín vai giữ trong nhà',      h:'Ai giữ gì, ai đang bị bỏ ra ngoài',  ic:'users', star:1, perm:'kh_gia_dinh', capMo:'nha'},
     {v:'thoi-quen',   t:'Thói quen & nghi lễ',         h:'Bốn nghi lễ giữ nhịp cả năm',        ic:'ritual', perm:'kh_gia_dinh', capMo:'nha'},
     {v:'cu-hich',     t:'Cú hích lớn',                 h:'Chiến dịch tạo bước nhảy, không bước đi', ic:'lightning', perm:'kh_gia_dinh', capMo:'nha'},

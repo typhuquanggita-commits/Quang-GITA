@@ -14,7 +14,7 @@ var KEY_HANG = 'gita365.hangcho';  // hàng chờ khi mất mạng
    này, nhưng chúng không nằm trong danh sách nên mốc bị bỏ ngay ở cửa — sổ
    thư viện và minh chứng nhiệm vụ nằm lại đúng một trình duyệt. Phụ huynh
    nộp minh chứng trên điện thoại, Coach mở máy mình thì không có gì. */
-var NHOM = ['checks', 'journal', 'vision', 'test', 'mood', 'thuvien', 'minhchung', 'bando'];
+var NHOM = ['checks', 'journal', 'vision', 'test', 'mood', 'thuvien', 'minhchung', 'bando', 'chuyen', 'nhatky', 'baithi'];
 
 /* ─── Nhóm nào lấy dữ liệu ở đâu ───
    Trước đây gomThayDoi luôn đọc G.S[nhom]. Nhưng sổ thư viện nằm ở
@@ -23,7 +23,14 @@ var NHOM = ['checks', 'journal', 'vision', 'test', 'mood', 'thuvien', 'minhchung
    nhìn thấy gì bất thường. Khai thẳng ra đây thì không đoán nữa. */
 var NGUON = {
   thuvien:   {lay:function(){ return G.THUVIEN; },   dat:function(v){ if(Array.isArray(v)) G.THUVIEN = v; }},
-  minhchung: {lay:function(){ return G.MINHCHUNG; }, dat:function(v){ if(Array.isArray(v)) G.MINHCHUNG = v; }}
+  minhchung: {lay:function(){ return G.MINHCHUNG; }, dat:function(v){ if(Array.isArray(v)) G.MINHCHUNG = v; }},
+  /* Dấu đã đọc của kho chuyện nằm ở G.CHUYEN_DOC, có kho localStorage riêng
+     để đọc được ngay khi mở trang, trước cả lần đồng bộ đầu tiên. */
+  chuyen:    {lay:function(){ return G.CHUYEN_DOC; }, dat:function(v){
+                if(v && typeof v === 'object'){
+                  G.CHUYEN_DOC = v;
+                  try{ localStorage.setItem('gita365_chuyen_da_doc', JSON.stringify(v)); }catch(e){}
+                }}}
 };
 function layNguon(nhom){ return NGUON[nhom] ? NGUON[nhom].lay() : G.S[nhom]; }
 function datNguon(nhom, v){
@@ -95,11 +102,16 @@ function nhanVe(keo, mocChu){
 
     var hien = layNguon(nhom);
     if(!hien || typeof hien !== 'object'){ hien = {}; datNguon(nhom, hien); }
+    var doiNhom = 0;
     Object.keys(v).forEach(function(k){
       var khoa = nhom + '.' + k;
       var tChu = Number((mocChu || {})[khoa] || 0), tMay = Number(m[khoa] || 0);
-      if(tChu > tMay){ hien[k] = v[k]; m[khoa] = tChu; doi++; }
+      if(tChu > tMay){ hien[k] = v[k]; m[khoa] = tChu; doi++; doiNhom++; }
     });
+    /* Nhóm có kho riêng (không nằm trong G.S) phải được ghi xuống đĩa ngay:
+       G.save() chỉ lưu G.S, nên nếu không gọi lại datNguon thì phần vừa kéo
+       về chỉ sống trong bộ nhớ tới lúc đóng tab. */
+    if(doiNhom && NGUON[nhom]) datNguon(nhom, hien);
   });
   ghiMoc(m);
   return doi;

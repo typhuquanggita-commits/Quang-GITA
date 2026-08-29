@@ -1658,6 +1658,224 @@ const { chromium } = require(PW);
       'đội ngũ có phần hướng dẫn vận dụng đi kèm');
   }
 
+  /* ── 25. Sáu trăm chuyện truyền cảm hứng ── */
+  console.log('\n25 · KHO CHUYỆN TRUYỀN CẢM HỨNG');
+  {
+    await p.evaluate(() => { localStorage.clear(); });
+    await p.reload({ waitUntil: 'networkidle' });
+    await p.waitForTimeout(400);
+    await p.evaluate(() => window.G.doLogin('superadmin@gita365.vn'));
+    await p.waitForTimeout(1800);
+
+    const ch = await p.evaluate(() => {
+      const G = window.G, C = G.CHUYEN || [], r = {};
+      r.tong = C.length;
+      r.theoCap = {};
+      (G.CH_CAP || []).forEach(x => r.theoCap[x.ma] = C.filter(c => c.cap === x.ma).length);
+      r.soMach = (G.CH_MACH || []).length;
+      r.trung = C.map(c => c.ma).filter((v, i, a) => a.indexOf(v) !== i);
+      r.thieu = C.filter(c => !c.ten || !c.ke || !c.xoay || !c.hoc || !c.lam || !c.mach || !c.cap).length;
+      const mach = (G.CH_MACH || []).map(m => m.ma);
+      r.machLa = [...new Set(C.map(c => c.mach).filter(m => mach.indexOf(m) < 0))];
+      const rohn = (G.ROHN || []).map(q => q.ma);
+      r.loiLa = [...new Set(C.map(c => c.loi).filter(l => l && rohn.indexOf(l) < 0))];
+      r.aiTrong = (G.ROHN || []).filter(q => !q.ai).length;
+      /* Mỗi mạch của mỗi cấp phải có đúng mười chuyện */
+      r.lech = [];
+      (G.CH_CAP || []).forEach(cp => (G.CH_MACH || []).forEach(m => {
+        const n = C.filter(c => c.cap === cp.ma && c.mach === m.ma).length;
+        if (n !== 10) r.lech.push(cp.ma + '/' + m.ma + '=' + n);
+      }));
+      /* Chuyện gắn nhiệm vụ phải ổn định, không đổi giữa hai lần gọi */
+      const a1 = G.chChoNhiemVu('ph', 0, 'x'), a2 = G.chChoNhiemVu('ph', 0, 'x');
+      r.onDinh = !!(a1 && a2 && a1.ma === a2.ma);
+      r.nvDungCap = (G.chChoNhiemVu('hs', 0, 'x') || {}).cap === 'HS';
+      r.dai = G.VIEWS['chuyen-cam-hung']().length;
+      r.moHet = G.chKhoMoDuoc().length;
+      return r;
+    });
+    bao(ch.tong === 600, 'đủ sáu trăm chuyện', ch.tong + ' chuyện');
+    bao(Object.values(ch.theoCap).every(n => n === 100),
+      'mỗi cấp tài khoản đúng một trăm chuyện', JSON.stringify(ch.theoCap));
+    bao(ch.soMach === 10, 'đủ mười mạch chuyện', ch.soMach + ' mạch');
+    bao(!ch.lech.length, 'mỗi mạch của mỗi cấp đúng mười chuyện', ch.lech.join(' '));
+    bao(!ch.trung.length, 'không mã chuyện nào trùng', ch.trung.join(', '));
+    bao(ch.thieu === 0, 'chuyện nào cũng đủ tên · kể · chỗ xoay · điều rút ra · việc làm ngay',
+      ch.thieu + ' chuyện thiếu');
+    bao(!ch.machLa.length, 'không mã mạch lạ', ch.machLa.join(', '));
+    bao(!ch.loiLa.length, 'mọi lời trích đều có trong bộ trích dẫn', ch.loiLa.join(', '));
+    bao(ch.aiTrong === 0, 'lời trích nào cũng ghi rõ tác giả — không gán bừa cho ai',
+      ch.aiTrong + ' câu thiếu tác giả');
+    bao(ch.onDinh, 'chuyện gắn nhiệm vụ ổn định — cùng việc thì cùng chuyện');
+    bao(ch.nvDungCap, 'chuyện gắn nhiệm vụ lấy đúng kho của cổng đó');
+    bao(ch.dai > 5000, 'màn kho chuyện dựng ra nội dung thật', ch.dai + ' ký tự');
+    bao(ch.moHet === 6, 'Super Admin soát được cả sáu kho', ch.moHet + ' kho');
+
+    /* Mỗi vai chỉ mở kho của cấp mình */
+    const vai = {};
+    for (const [ten, u] of [['hs', 'hocvien@gita365.vn'], ['ph', 'phuhuynh@gita365.vn'],
+                            ['ctv', 'daisu@gita365.vn'], ['coach', 'coach@gita365.vn'],
+                            ['tuvan', 'tuvan@gita365.vn']]) {
+      await p.evaluate(() => { localStorage.clear(); });
+      await p.reload({ waitUntil: 'networkidle' });
+      await p.waitForTimeout(400);
+      await p.evaluate(x => window.G.doLogin(x), u);
+      await p.waitForTimeout(1500);
+      vai[ten] = await p.evaluate(() => {
+        const G = window.G;
+        return { cap: G.chCapCuaToi(), so: G.chKhoMoDuoc().length,
+                 homNay: (G.chHomNay() || {}).cap,
+                 nv: G.VIEWS['nhiem-vu']().indexOf('MỖI NHIỆM VỤ MỘT CHUYỆN') >= 0,
+                 dai: G.VIEWS['chuyen-cam-hung']().length };
+      });
+    }
+    bao(vai.hs.cap === 'HS' && vai.ph.cap === 'PH' && vai.ctv.cap === 'CTV' &&
+        vai.coach.cap === 'COACH' && vai.tuvan.cap === 'TUVAN',
+      'mỗi vai được xếp đúng kho của cấp mình');
+    bao(Object.values(vai).every(v => v.so === 1),
+      'vai thường chỉ mở kho của mình — không đọc được kho cấp khác');
+    bao(Object.values(vai).every(v => v.homNay === v.cap),
+      'chuyện hôm nay lấy đúng kho của cấp mình');
+    bao(Object.values(vai).every(v => v.nv),
+      'màn Nhiệm vụ của mọi vai đều có chuyện đi kèm từng việc');
+    bao(Object.values(vai).every(v => v.dai > 5000),
+      'không vai nào mở ra màn chuyện trống');
+  }
+
+  /* ── 26. Sổ nhật ký từng vị trí · cuộc thi viết ── */
+  console.log('\n26 · SỔ NHẬT KÝ TỪNG VỊ TRÍ · CUỘC THI VIẾT');
+  {
+    await p.evaluate(() => { localStorage.clear(); });
+    await p.reload({ waitUntil: 'networkidle' });
+    await p.waitForTimeout(400);
+    await p.evaluate(() => window.G.doLogin('phuhuynh@gita365.vn'));
+    await p.waitForTimeout(1500);
+
+    const nkd = await p.evaluate(() => {
+      const G = window.G, r = {};
+      /* Mọi cấp vị trí đều có đủ ba nhịp ghi, không cấp nào bỏ trống */
+      r.capThieu = (G.CH_CAP || []).map(c => c.ma)
+        .filter(c => !G.NK_O[c] || !G.NK_O[c].ngay || !G.NK_O[c].tuan || !G.NK_O[c].thang);
+      r.oIt = [];
+      Object.keys(G.NK_O).forEach(c => ['ngay','tuan','thang'].forEach(n => {
+        if ((G.NK_O[c][n] || []).length < 3) r.oIt.push(c + '/' + n);
+      }));
+      /* Khoá ô không được trùng trong cùng một nhịp */
+      r.oTrung = [];
+      Object.keys(G.NK_O).forEach(c => ['ngay','tuan','thang'].forEach(n => {
+        const k = (G.NK_O[c][n] || []).map(x => x.k);
+        if (k.some((v, i) => k.indexOf(v) !== i)) r.oTrung.push(c + '/' + n);
+      }));
+      r.soNhip = (G.NK_NHIP || []).length;
+      r.dai = G.VIEWS['nhat-ky-vi-tri']().length;
+      r.daiThi = G.VIEWS['thi-viet']().length;
+      r.soMoc = (G.THI_VIET || []).length;
+      r.mocDu = (G.THI_VIET || []).every(t => t.de && t.de.HS && t.de.PH && t.de.NG &&
+        (t.cham || []).length >= 4 && t.thuong && t.vaoDuoc && t.do);
+      r.hocBong = (G.THI_VIET || []).filter(t => /10%/.test(t.thuong)).map(t => t.ma);
+      r.soLuat = (G.THI_LUAT || []).length;
+      /* Mã tuần ISO phải ổn định và đúng dạng */
+      /* 1/1/2026 là thứ Năm nên thuộc tuần 01 của chính 2026; còn 1/1/2027
+         là thứ Sáu, thứ Năm của tuần ấy rơi vào 31/12/2026 nên phải ra
+         tuần 53 của 2026. Hai mốc này bắt được lỗi lệch năm. */
+      r.maTuan = G.nkMaTuan(new Date('2026-01-01T00:00:00'));
+      r.maTuanBienNam = G.nkMaTuan(new Date('2027-01-01T00:00:00'));
+      r.batDau = G.nkNgayBatDau();
+      r.daDi = G.nkSoNgayDaDi();
+      return r;
+    });
+    bao(!nkd.capThieu.length, 'mọi cấp vị trí đều có đủ ba nhịp ghi', nkd.capThieu.join(', '));
+    bao(!nkd.oIt.length, 'nhịp nào cũng có ít nhất ba ô ghi', nkd.oIt.join(' '));
+    bao(!nkd.oTrung.length, 'không khoá ô nào bị trùng trong cùng một nhịp', nkd.oTrung.join(' '));
+    bao(nkd.soNhip === 3, 'đủ ba nhịp: ngày · tuần · tháng', nkd.soNhip + ' nhịp');
+    bao(nkd.dai > 3000, 'màn sổ nhật ký dựng ra nội dung thật', nkd.dai + ' ký tự');
+    bao(nkd.daiThi > 5000, 'màn cuộc thi viết dựng ra nội dung thật', nkd.daiThi + ' ký tự');
+    bao(nkd.soMoc === 4, 'đủ bốn mốc thi 7 · 21 · 90 · 365', nkd.soMoc + ' mốc');
+    bao(nkd.mocDu, 'mốc nào cũng đủ đề ba nhóm · tiêu chí chấm · phần thưởng · điều kiện · độ dài');
+    bao(nkd.hocBong.length === 2 && nkd.hocBong.indexOf('TV90') >= 0 && nkd.hocBong.indexOf('TV365') >= 0,
+      'học bổng 10% đúng ở hai mốc 90 và 365 ngày', nkd.hocBong.join(' '));
+    bao(nkd.soLuat >= 5, 'có bộ luật dự thi', nkd.soLuat + ' điều');
+    bao(nkd.maTuan === 'T2026-W01' && nkd.maTuanBienNam === 'T2026-W53',
+      'mã tuần theo chuẩn ISO, không lệch ở ranh giới năm', nkd.maTuan + ' · ' + nkd.maTuanBienNam);
+    bao(/^\d{4}-\d{2}-\d{2}$/.test(nkd.batDau) && nkd.daDi >= 1,
+      'ngày bắt đầu hành trình được đặt ngay lần mở đầu', nkd.batDau + ' · ' + nkd.daDi + ' ngày');
+
+    /* Ghi thật vào sổ, rồi kiểm điều kiện dự thi và chặn nộp non */
+    const ghi = await p.evaluate(async () => {
+      const G = window.G;
+      G.S.view = 'nhat-ky-vi-tri'; G.render();
+      await new Promise(r => setTimeout(r, 200));
+      const o = document.querySelectorAll('[data-nko]');
+      if (!o.length) return { mo: false };
+      o.forEach((t, i) => { t.value = 'Dữ liệu thử số ' + i; });
+      document.querySelector('[data-nkluu]').click();
+      await new Promise(r => setTimeout(r, 200));
+      const khoa = G.nkMaNgay();
+      return {
+        mo: true,
+        trongS: !!(G.S.nhatky[khoa] && G.S.nhatky[khoa][Object.keys(G.S.nhatky[khoa])[0]]),
+        tren_dia: !!((JSON.parse(localStorage.getItem('gita365.v7') || '{}').nhatky || {})[khoa]),
+        demNgay: G.nkDem('ngay'),
+        moc: Object.keys(JSON.parse(localStorage.getItem('gita365.moc') || '{}'))
+               .filter(k => k.indexOf('nhatky.') === 0).length
+      };
+    });
+    bao(ghi.mo, 'bấm vào sổ là mở ra ô ghi thật cho vai của mình');
+    bao(ghi.trongS, 'chữ vừa ghi nằm trong hồ sơ của tài khoản');
+    bao(ghi.tren_dia, 'sổ ghi xuống đĩa ngay, không mất khi đóng tab');
+    bao(ghi.demNgay === 1, 'đếm đúng số ngày đã ghi', ghi.demNgay + ' ngày');
+    bao(ghi.moc >= 1, 'đã đánh mốc để đẩy sổ lên máy chủ theo từng trường', ghi.moc + ' mốc');
+
+    const thi = await p.evaluate(async () => {
+      const G = window.G;
+      G.S.view = 'thi-viet'; G.render();
+      await new Promise(r => setTimeout(r, 200));
+      document.querySelector('[data-tvmo="TV07"]').click();
+      await new Promise(r => setTimeout(r, 200));
+      const t = document.querySelector('[data-tvbai="TV07"]');
+      if (!t) return { mo: false };
+      t.value = 'Bài quá ngắn.';
+      const nut = document.querySelector('[data-tvnop="TV07"]');
+      /* Mốc 7 ngày chưa mở với tài khoản mới, nên không có nút nộp — đúng luật */
+      document.querySelector('[data-tvluu="TV07"]').click();
+      await new Promise(r => setTimeout(r, 200));
+      return {
+        mo: true,
+        coNutNop: !!nut,
+        nhapLuu: (G.S.baithi.TV07 || {}).bai === 'Bài quá ngắn.',
+        chuaNop: !(G.S.baithi.TV07 || {}).nop,
+        vietTruoc: G.VIEWS['thi-viet']().indexOf('Viết trước được') >= 0
+      };
+    });
+    bao(thi.mo, 'mở được khung viết ngay cả khi chưa tới mốc');
+    bao(!thi.coNutNop, 'chưa đủ điều kiện thì KHÔNG có nút nộp — không ai nộp non được');
+    bao(thi.nhapLuu, 'bản nháp lưu được từ trước, để bồi dần theo chặng');
+    bao(thi.chuaNop, 'lưu nháp không bị tính là đã nộp');
+    bao(thi.vietTruoc, 'màn nói rõ là viết trước được, không chặn ai ở cửa');
+
+    /* Đề bài phải đổi theo nhóm người đọc */
+    const de = {};
+    for (const [ten, u] of [['hs','hocvien@gita365.vn'], ['ph','phuhuynh@gita365.vn'],
+                            ['coach','coach@gita365.vn']]) {
+      await p.evaluate(() => { localStorage.clear(); });
+      await p.reload({ waitUntil: 'networkidle' });
+      await p.waitForTimeout(400);
+      await p.evaluate(x => window.G.doLogin(x), u);
+      await p.waitForTimeout(1500);
+      de[ten] = await p.evaluate(() => ({
+        thi: window.G.VIEWS['thi-viet'](),
+        so: window.G.VIEWS['nhat-ky-vi-tri']()
+      }));
+    }
+    bao(/em làm được mà trước đó em nghĩ/.test(de.hs.thi), 'học viên đọc đề bằng giọng nói với em');
+    bao(/trong nhà mình đã khác/.test(de.ph.thi), 'phụ huynh đọc đề bằng giọng nhà mình');
+    bao(/vai này cho anh chị thấy/.test(de.coach.thi), 'đội ngũ đọc đề bằng giọng nghề');
+    bao(/Sổ tay của em/.test(de.hs.so) && /Sổ tay của nhà mình/.test(de.ph.so) &&
+        /Sổ tay nghề của tôi/.test(de.coach.so), 'sổ nhật ký đổi tên và giọng theo từng vai');
+    bao(/Giờ ngồi vào bàn/.test(de.hs.so) && /Số ca làm việc hôm nay/.test(de.coach.so),
+      'ô ghi khác nhau thật theo từng vị trí, không dùng chung một mẫu');
+  }
+
   console.log('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành'));
   await b.close();
   process.exit(loi ? 1 : 0);

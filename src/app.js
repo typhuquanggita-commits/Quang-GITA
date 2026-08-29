@@ -11,12 +11,12 @@ var KEY = 'gita365.v7';
 G.S = {
   role:null, acc:null, roleObj:null,
   view:'ban-do', open:['g1'], rtab:'labon', rightOpen:true, leftOpen:false,
-  checks:{}, vision:{}, journal:{}, test:{}, bando:{}, famId:'F-001', kbShown:60
+  checks:{}, vision:{}, journal:{}, test:{}, bando:{}, nhatky:{}, baithi:{}, famId:'F-001', kbShown:60
 };
 function save(){
   try{ localStorage.setItem(KEY, JSON.stringify({
     role:G.S.role, u:G.S.acc && G.S.acc.u, view:G.S.view, open:G.S.open, rtab:G.S.rtab,
-    checks:G.S.checks, vision:G.S.vision, journal:G.S.journal, test:G.S.test, bando:G.S.bando,
+    checks:G.S.checks, vision:G.S.vision, journal:G.S.journal, test:G.S.test, bando:G.S.bando, nhatky:G.S.nhatky, baithi:G.S.baithi,
     rightOpen:G.S.rightOpen, mood:G.S.mood
   })); }catch(e){}
 }
@@ -27,6 +27,8 @@ function load(){
     G.S.checks = d.checks || {}; G.S.vision = d.vision || {}; G.S.journal = d.journal || {};
     G.S.test = d.test || {};
     G.S.bando = d.bando || {};
+    G.S.nhatky = d.nhatky || {};
+    G.S.baithi = d.baithi || {};
     G.S.mood = d.mood || null;
     if(d.rightOpen !== undefined) G.S.rightOpen = d.rightOpen;
     return d;

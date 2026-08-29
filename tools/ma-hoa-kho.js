@@ -38,7 +38,12 @@ const NEN = ['VANHANH', 'CHUYENDICH', 'CHANDUNG', 'LOTRINH', 'FAMILIES', 'TEAM',
   'TRU_GITA', 'HANHTRINH12', 'LOI_HUA_GITA',
   /* Bản đồ cá nhân 11 ô: mọi vai đều có một bản của riêng mình — học viên,
      phụ huynh, cộng tác viên, đội ngũ — nên nó thuộc gói nền. */
-  'BDCN_MA', 'BDCN', 'BDCN_MUOI_VIEC', 'BDCN_QUY_TAC', 'BDCN_NHIP'];
+  'BDCN_MA', 'BDCN', 'BDCN_MUOI_VIEC', 'BDCN_QUY_TAC', 'BDCN_NHIP',
+  /* Sáu trăm chuyện truyền cảm hứng, mỗi cấp tài khoản một trăm. Ở gói nền
+     vì vai nào cũng phải có kho của cấp mình; màn hình lọc theo vai. */
+  'CH_MACH', 'CH_CAP', 'ROHN', 'CHUYEN',
+  /* Sổ nhật ký từng vị trí và bốn mốc thi viết: mọi vai đều dùng. */
+  'NK_NHIP', 'NK_O', 'THI_VIET', 'THI_LUAT'];
 
 const NGHE = ['MOTHUC', 'SACH', 'BANDO_A3', 'POSTER', 'SODO', 'PHACDO',
   'DIEMCHAM', 'NGONTU', 'NGONTU_TANG', 'THAYVI', 'MAUTHOAI', 'PERSONA',
