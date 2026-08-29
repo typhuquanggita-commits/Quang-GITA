@@ -545,6 +545,41 @@ mươi nghìn câu. Viết riêng từng lời giải thì mỗi cái chỉ dùn
 lớn sẽ lặp nhau. Cái **thật sự chuyển giao được** là quy trình nghĩ và ba bẫy của dạng
 bài — thứ dùng lại được ở mọi câu cùng dạng, kể cả câu chưa gặp.
 
+## ✍️ Ngân hàng câu hỏi — bấm chọn, chấm, xem đáp án
+
+Bộ giải đề dạy **cách nghĩ** cho tám mươi dạng bài. Ngân hàng câu hỏi là chỗ có **câu cụ
+thể để bấm**: **120 câu · 10 chuyên đề · 480 lựa chọn · 480 nhận xét · 40 câu dựng theo
+bẫy có sẵn**. Tab **Làm bài · xem đáp án**.
+
+**Bốn nhận xét cho bốn lựa chọn, không phải một.** Phần lớn ngân hàng câu hỏi chỉ ghi
+đáp án đúng. Ở đây mỗi ô đều có một dòng riêng: ô đúng nói *vì sao đúng*, ba ô sai nói
+*chỗ lập luận gãy*. Học viên chọn sai thì nhận lại đúng lý do của cái sai **mình vừa
+chọn**, chứ không nhận một lời giải chung cho cả câu.
+
+**Dây nhiễu dựng theo bẫy có tên.** Ba bẫy của mỗi chuyên đề đã viết sẵn trong bộ giải
+đề. Bốn mươi câu ở đây dựng theo đúng ba bẫy đó, nên khi học viên chọn sai thì hệ thống
+biết em vừa rơi vào **bẫy số mấy** — thông tin dùng được, khác hẳn với việc chỉ biết em
+chọn sai. Lịch sử đếm bẫy hay mắc nhất.
+
+**Đáp án rải đều bốn ô — và đây là một lỗi đã bắt được.** Bản nháp dồn **74/120** đáp án
+vào ô B: học viên cứ chọn B mà không đọc gì cũng được **62%**. Bài kiểm bắt được, và
+cách sửa là xoay vòng bốn ô theo số thứ tự câu — xoay vòng giữ nguyên cặp *lựa chọn ↔
+nhận xét* nên không thể lệch nhận xét sang nhầm ô, và vì tính từ số thứ tự nên kết quả
+cố định qua mọi lần chạy. Nay là **29 / 32 / 30 / 29**. Năm câu mà bốn ô vốn đã có thứ
+tự thật (âm tiết một, hai, ba…) được ghi tên và giữ nguyên.
+
+**Phạm vi, nói thẳng.** Mười chuyên đề là những chỗ tính đúng sai **kiểm được chắc
+chắn**: ngữ pháp, trọng âm, giới từ, dạng từ, biến đổi câu, cấu trúc song song. **Bảy
+mươi chuyên đề còn lại** — nghe, nói, đọc bài dài — cần ngữ liệu âm thanh và bài đọc có
+bản quyền, nên chúng dùng bộ giải đề và phiếu chuyên đề chứ **chưa** có câu trắc nghiệm.
+Đó là giới hạn thật, ghi ra thay vì để người dùng tự phát hiện.
+
+**Lượt ngân hàng lưu riêng với hồ sơ phiếu luyện.** Phiếu luyện có năm phần theo KHUNG
+và có cấp độ; ngân hàng thì theo chuyên đề và loại phiếu, cùng một câu dùng được ở mọi
+cấp độ. Gộp chung thì phép phân tích sẽ chia trung bình theo phần cho những bản ghi
+không có phần — con số trả ra sai mà không ai thấy. Nên hai khoá riêng, mỗi phép phân
+tích chỉ đọc đúng loại của mình.
+
 ## 🗃️ Hồ sơ học viên và lộ trình cá nhân hoá
 
 Mỗi lần làm phiếu để lại một bản ghi. Bản ghi tích luỹ thành hồ sơ, và hồ sơ sinh ra lộ

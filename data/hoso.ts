@@ -276,3 +276,109 @@ export const HOSO_SO = {
   duDeKetLuan: DU_DE_KET_LUAN,
   soViecToiDa: 3,
 };
+
+/* ======================= LẦN LÀM NGÂN HÀNG CÂU HỎI ======================= */
+/*
+ * VÌ SAO KHÔNG NHÉT VÀO CHUNG MỘT MẢNG VỚI PHIẾU LUYỆN
+ * Một lần làm phiếu luyện có năm phần theo KHUNG và có cấp độ. Một lượt
+ * ngân hàng câu hỏi thì không: nó theo chuyên đề và theo loại phiếu, và
+ * cùng một câu dùng được ở mọi cấp độ. Nhét chung vào một mảng thì
+ * phanTichHoSo sẽ chia trung bình theo phần cho những bản ghi không có
+ * phần, và con số trả ra sẽ sai mà không ai thấy.
+ *
+ * Nên hai loại bản ghi nằm ở hai khoá riêng, và phần phân tích của mỗi
+ * loại chỉ đọc đúng loại của mình. Cái ngân hàng cho biết thêm — và phiếu
+ * luyện không cho biết — là em rơi vào BẪY SỐ MẤY, vì mỗi dây nhiễu đều
+ * dựng theo một bẫy có tên trong bộ giải đề.
+ */
+
+export const NGANHANG_KEY = 'engwin365.nganhang.v1';
+export const NGANHANG_TOI_DA = 500;
+
+export interface LuotNganHang {
+  id: string;
+  chuyenDeId: string;
+  loaiMa: string;
+  luc: string;
+  dung: number;
+  tong: number;
+  tiLe: number;
+  /** Số thứ tự bẫy của từng câu sai, để đếm em hay rơi vào bẫy nào. */
+  bayDaMac: number[];
+}
+
+export function docLuotNganHang(): LuotNganHang[] {
+  try {
+    const raw = localStorage.getItem(NGANHANG_KEY);
+    if (!raw) return [];
+    const ds = JSON.parse(raw);
+    return Array.isArray(ds) ? ds : [];
+  } catch {
+    return [];
+  }
+}
+
+export function luuLuotNganHang(
+  l: Omit<LuotNganHang, 'id' | 'luc'>,
+  luc = new Date().toISOString(),
+): LuotNganHang[] {
+  const ds = [...docLuotNganHang(), {...l, id: `${l.chuyenDeId}-${l.loaiMa}@${luc}`, luc}].slice(
+    -NGANHANG_TOI_DA,
+  );
+  try {
+    localStorage.setItem(NGANHANG_KEY, JSON.stringify(ds));
+  } catch {
+    /* hết chỗ thì vẫn trả về danh sách trong bộ nhớ, không sập */
+  }
+  return ds;
+}
+
+export function xoaLuotNganHang(): void {
+  try {
+    localStorage.removeItem(NGANHANG_KEY);
+  } catch {
+    /* không có gì để làm thêm */
+  }
+}
+
+export interface PhanTichNganHang {
+  soLuot: number;
+  soCauDaLam: number;
+  trungBinh: number;
+  /** Chuyên đề yếu nhất, chỉ kết luận khi đã có đủ DU_DE_KET_LUAN lượt. */
+  chuyenDeYeu: {chuyenDeId: string; trungBinh: number; soLuot: number}[];
+  /** Bẫy hay mắc nhất, kèm số lần — đây là thứ phiếu luyện không đo được. */
+  bayHayMac: {bayNo: number; soLan: number}[];
+  duDeKetLuan: boolean;
+}
+
+/** Phân tích các lượt ngân hàng. Hàm thuần — không đọc localStorage. */
+export function phanTichNganHang(ds: LuotNganHang[]): PhanTichNganHang {
+  const soCauDaLam = ds.reduce((s, l) => s + l.tong, 0);
+  const theoCd = new Map<string, number[]>();
+  for (const l of ds) theoCd.set(l.chuyenDeId, [...(theoCd.get(l.chuyenDeId) ?? []), l.tiLe]);
+  const chuyenDeYeu = [...theoCd.entries()]
+    .map(([chuyenDeId, xs]) => ({
+      chuyenDeId,
+      trungBinh: Number((xs.reduce((a, b) => a + b, 0) / xs.length).toFixed(1)),
+      soLuot: xs.length,
+    }))
+    .sort((a, b) => a.trungBinh - b.trungBinh);
+
+  const demBay = new Map<number, number>();
+  for (const l of ds) for (const b of l.bayDaMac) demBay.set(b, (demBay.get(b) ?? 0) + 1);
+  const bayHayMac = [...demBay.entries()]
+    .map(([bayNo, soLan]) => ({bayNo, soLan}))
+    .sort((a, b) => b.soLan - a.soLan);
+
+  return {
+    soLuot: ds.length,
+    soCauDaLam,
+    trungBinh: ds.length
+      ? Number((ds.reduce((s, l) => s + l.tiLe, 0) / ds.length).toFixed(1))
+      : 0,
+    chuyenDeYeu,
+    bayHayMac,
+    duDeKetLuan: ds.length >= DU_DE_KET_LUAN,
+  };
+}

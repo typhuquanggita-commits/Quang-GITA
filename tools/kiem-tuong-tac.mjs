@@ -173,6 +173,62 @@ const cd2=await p.locator('main').innerText();
 ok('mở phiếu giải thì hiện bảng phân tích chuyên sâu', /Bảng phân tích chuyên sâu/i.test(cd2));
 ok('bảng phân tích có cột hay nhầm với', /Hay nhầm với/i.test(cd2));
 
+// 12. Làm bài: chọn sai một câu rồi chấm, phải nhận lại nhận xét CỦA CHÍNH Ô
+//     mình chọn chứ không phải một lời giải chung cho cả câu.
+await tab('Làm bài');
+await p.waitForTimeout(700);
+const lb0 = await p.locator('main').innerText();
+// Không so bằng cụm có sẵn trong phần giới thiệu tab. Dấu "Lời giải —" chỉ
+// xuất hiện trong khối đáp án của một câu đã mở, nên nó mới là bằng chứng.
+ok('chưa chấm thì chưa hiện lời giải câu nào', !/Lời giải —/.test(lb0));
+ok('nút chấm bị khoá khi chưa chọn câu nào',
+   await p.getByRole('button', {name: 'Chấm và xem đáp án'}).isDisabled());
+
+// Chọn ô A ở câu 1. Ô A đúng hay sai tuỳ chuyên đề, nên bài kiểm không đoán:
+// nó đọc lại trạng thái sau khi chấm và kiểm đúng cái đã xảy ra.
+const cau1 = p.locator('main .rounded-2xl').filter({hasText: 'Câu 1'}).first();
+await cau1.locator('button').nth(1).click();
+await p.waitForTimeout(300);
+ok('nút chấm mở khoá sau khi chọn',
+   !(await p.getByRole('button', {name: 'Chấm và xem đáp án'}).isDisabled()));
+
+await p.getByRole('button', {name: 'Xem đáp án câu này'}).first().click();
+await p.waitForTimeout(400);
+const le = await cau1.innerText();
+ok('xem đáp án một câu thì hiện lời giải của đúng câu đó', /Lời giải —/.test(le));
+ok('xem đáp án một câu không mở luôn cả phiếu',
+   (await p.locator('main').innerText()).split('Lời giải —').length - 1 === 1);
+ok('câu đã mở có điểm kiến thức', /Điểm kiến thức —/.test(le));
+// Bốn nhận xét cho bốn ô là lời hứa chính của ngân hàng. Đếm dòng nhận xét
+// trong đúng câu vừa mở, chứ không tìm chữ ở đâu đó trên trang.
+ok('câu đã mở hiện đủ bốn nhận xét cho bốn ô',
+   (await cau1.locator('p.pl-9').count()) === 4);
+
+await p.getByRole('button', {name: 'Chấm và xem đáp án'}).click();
+await p.waitForTimeout(500);
+const sauCham = await p.locator('main').innerText();
+ok('chấm xong báo tỉ lệ đúng', /đúng \d+\/\d+/.test(sauCham), sauCham.slice(0, 80));
+ok('chấm xong đưa hướng đi tiếp',
+   /Nâng cấp độ|Thử thách tiếp|Làm lại/.test(sauCham));
+ok('chấm xong nút đổi thành đã chấm',
+   (await p.getByRole('button', {name: 'Đã chấm'}).count()) === 1);
+// Nút "Xoá lịch sử" chỉ dựng khi đã có ít nhất một lượt được ghi, nên sự
+// tồn tại của nó là bằng chứng lượt đã vào kho, khác với chữ "lượt" vốn có
+// sẵn ở phần thống kê đầu tab.
+ok('lượt vừa chấm được ghi vào lịch sử',
+   (await p.getByRole('button', {name: 'Xoá lịch sử'}).count()) === 1);
+// Mới một lượt thì hệ thống PHẢI nói chưa đủ và PHẢI KHÔNG kết luận chuyên
+// đề nào yếu. Hai vế, không phải một trong hai.
+ok('chưa đủ dữ liệu thì nói thẳng là chưa đủ', /Chưa đủ 3 lượt/.test(sauCham));
+ok('chưa đủ dữ liệu thì không kết luận chuyên đề yếu',
+   !/Chuyên đề yếu nhất/.test(sauCham));
+
+await p.getByRole('button', {name: 'Làm lại'}).click();
+await p.waitForTimeout(400);
+const lai = await p.locator('main').innerText();
+ok('làm lại xoá hết đáp án đã mở', !/Lời giải —/.test(lai));
+ok('làm lại giữ nguyên lịch sử đã lưu', /trung bình/i.test(lai));
+
 ok('không có lỗi trên bảng điều khiển', errs.length===0, errs.slice(0,2).join(' | '));
 console.log(`\n  ${bad===0?'ĐẠT':`HỎNG — ${bad} lỗi`}\n`);
 await b.close();

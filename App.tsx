@@ -43,6 +43,7 @@ const ChuGita = lazy(() => import('./components/engwin/ChuGita').then((m) => ({d
 const Chuan = lazy(() => import('./components/engwin/Chuan').then((m) => ({default: m.Chuan})));
 const ChuyenDe = lazy(() => import('./components/engwin/ChuyenDe').then((m) => ({default: m.ChuyenDe})));
 const HoSo = lazy(() => import('./components/engwin/HoSo').then((m) => ({default: m.HoSo})));
+const LamBai = lazy(() => import('./components/engwin/LamBai').then((m) => ({default: m.LamBai})));
 
 /** Bối cảnh truyền xuống tab. Hầu hết tab không cần, nên chúng bỏ qua tham số. */
 interface NavCtx {
@@ -216,6 +217,14 @@ const NAV: Nav[] = [
     hint: '80 chuyên đề · 7 loại · 1.120 phiếu',
     group: 'learner',
     render: () => <ChuyenDe />,
+  },
+  {
+    id: 'lambai',
+    icon: '✍️',
+    label: 'Làm bài · xem đáp án',
+    hint: '120 câu · 480 nhận xét',
+    group: 'learner',
+    render: () => <LamBai />,
   },
   {
     id: 'hoso',

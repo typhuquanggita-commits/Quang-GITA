@@ -1503,19 +1503,28 @@ export interface GiaiDe {
   drillId: string;
 }
 
-/** Một câu có đáp án thật, dùng cho phần làm bài trực tuyến. */
+/**
+ * Một câu trong ngân hàng câu hỏi — có đáp án thật, dùng để làm trực tuyến.
+ *
+ * `nhanXet` có đúng bốn phần tử, cùng thứ tự với `luaChon`. Ô ứng với đáp án
+ * đúng nói VÌ SAO NÓ ĐÚNG; ba ô còn lại nói chỗ lập luận gãy. Không ô nào
+ * được bỏ trống — một ô trống là một chỗ học viên bấm vào mà không nhận lại
+ * gì, và đó chính là thứ bài kiểm rỗng ruột phải bắt.
+ */
 export interface CauHoi {
   id: string;
-  phieuId: string;
-  phanMa: string;
+  chuyenDeId: string;
+  /** Mã loại phiếu mà câu này thuộc về: LT, DB, KN, NC, OT, TH, OC. */
+  loaiMa: string;
   no: number;
   deBai: string;
-  luaChon: string[];
+  luaChon: [string, string, string, string];
   dapAn: number;
   giaiThich: string;
-  /** Vì sao từng lựa chọn sai là sai, cùng thứ tự với luaChon. */
-  viSaoSai: string[];
+  nhanXet: [string, string, string, string];
   diemKienThuc: string;
+  /** Bẫy số mấy của chuyên đề, nếu câu này dựng theo một bẫy có sẵn. */
+  bayNo?: number;
 }
 
 /** Một lần làm phiếu đã lưu vào hồ sơ. */
