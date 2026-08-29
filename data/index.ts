@@ -14,3 +14,7 @@ export * from './mindset';
 export * from './clubs';
 export * from './charter';
 export * from './profile';
+export * from './academy';
+export * from './levels';
+export * from './feedback';
+export * from './production';

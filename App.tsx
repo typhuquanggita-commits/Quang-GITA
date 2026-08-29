@@ -16,14 +16,24 @@ import {Habits} from './components/engwill/Habits';
 import {Mindset} from './components/engwill/Mindset';
 import {Clubs} from './components/engwill/Clubs';
 import {Resources} from './components/engwill/Resources';
+import {Academy} from './components/engwill/Academy';
+import {Levels} from './components/engwill/Levels';
+import {Grading} from './components/engwill/Grading';
+import {Studio} from './components/engwill/Studio';
 
 interface Nav {
   id: string;
   icon: string;
   label: string;
   hint: string;
+  group: 'learner' | 'academy';
   render: () => React.ReactNode;
 }
+
+const GROUP_LABEL: Record<string, string> = {
+  learner: 'Dành cho học viên',
+  academy: 'Vận hành học viện',
+};
 
 const NAV: Nav[] = [
   {
@@ -31,6 +41,7 @@ const NAV: Nav[] = [
     icon: '🧿',
     label: 'La Bàn',
     hint: 'Hiến chương cá nhân',
+    group: 'learner',
     render: () => <Charter />,
   },
   {
@@ -38,6 +49,7 @@ const NAV: Nav[] = [
     icon: '🎯',
     label: 'Kế hoạch của tôi',
     hint: 'Cá nhân hoá — 13 câu',
+    group: 'learner',
     render: () => <MyPlan />,
   },
   {
@@ -45,6 +57,7 @@ const NAV: Nav[] = [
     icon: '◎',
     label: 'Tổng quan',
     hint: 'Hiến chương & quỹ đạo',
+    group: 'learner',
     render: () => <Overview />,
   },
   {
@@ -52,6 +65,7 @@ const NAV: Nav[] = [
     icon: '⛰',
     label: 'Lộ trình',
     hint: '12 cột mốc / 36 tháng',
+    group: 'learner',
     render: () => <Roadmap />,
   },
   {
@@ -59,6 +73,7 @@ const NAV: Nav[] = [
     icon: '🧪',
     label: 'Phương pháp',
     hint: '28 phương pháp thế giới',
+    group: 'learner',
     render: () => <Methods />,
   },
   {
@@ -66,6 +81,7 @@ const NAV: Nav[] = [
     icon: '🏋',
     label: 'Luyện tập',
     hint: '31 bài luyện chuẩn hoá',
+    group: 'learner',
     render: () => <Drills />,
   },
   {
@@ -73,6 +89,7 @@ const NAV: Nav[] = [
     icon: '🎬',
     label: 'Bài giảng',
     hint: '10 chuỗi · 268 bài',
+    group: 'learner',
     render: () => <Lectures />,
   },
   {
@@ -80,6 +97,7 @@ const NAV: Nav[] = [
     icon: '🗝',
     label: 'Bí kíp',
     hint: '24 chiến thuật',
+    group: 'learner',
     render: () => <Playbooks />,
   },
   {
@@ -87,6 +105,7 @@ const NAV: Nav[] = [
     icon: '⚙',
     label: 'Thói quen',
     hint: '12 thói quen · 6 nghi thức',
+    group: 'learner',
     render: () => <Habits />,
   },
   {
@@ -94,6 +113,7 @@ const NAV: Nav[] = [
     icon: '🧭',
     label: 'Tư duy',
     hint: '10 mô-đun lập trình',
+    group: 'learner',
     render: () => <Mindset />,
   },
   {
@@ -101,6 +121,7 @@ const NAV: Nav[] = [
     icon: '🤝',
     label: 'Club',
     hint: '7 CLB · 12 cổng kiểm định',
+    group: 'learner',
     render: () => <Clubs />,
   },
   {
@@ -108,7 +129,40 @@ const NAV: Nav[] = [
     icon: '📚',
     label: 'Tài liệu',
     hint: '37 nguồn đã sàng lọc',
+    group: 'learner',
     render: () => <Resources />,
+  },
+  {
+    id: 'academy',
+    icon: '🏛',
+    label: 'Học viện',
+    hint: 'Triết lý · GITA · NLP · Cố vấn',
+    group: 'academy',
+    render: () => <Academy />,
+  },
+  {
+    id: 'levels',
+    icon: '🏅',
+    label: '25 Cấp độ',
+    hint: '5 tầng × 5 cấp',
+    group: 'academy',
+    render: () => <Levels />,
+  },
+  {
+    id: 'grading',
+    icon: '📝',
+    label: 'Chấm bài',
+    hint: '4 phần · 20 phác đồ lỗi',
+    group: 'academy',
+    render: () => <Grading />,
+  },
+  {
+    id: 'studio',
+    icon: '🎥',
+    label: 'Xưởng học liệu',
+    hint: '11 bản thiết kế sản xuất',
+    group: 'academy',
+    render: () => <Studio />,
   },
 ];
 
@@ -119,27 +173,38 @@ export const App: React.FC = () => {
 
   const NavList = (
     <nav className="space-y-1">
-      {NAV.map((n) => (
-        <button
-          key={n.id}
-          onClick={() => {
-            setTab(n.id);
-            setMenuOpen(false);
-            window.scrollTo({top: 0});
-          }}
-          className={`flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-left transition ${
-            tab === n.id
-              ? 'bg-sky-500/10 text-sky-300 ring-1 ring-inset ring-sky-500/30'
-              : 'text-slate-400 hover:bg-slate-800/60 hover:text-slate-200'
-          }`}>
-          <span className="w-5 shrink-0 text-center text-base">{n.icon}</span>
-          <span className="min-w-0">
-            <span className="block truncate text-sm font-medium">{n.label}</span>
-            <span className="block truncate text-[11px] text-slate-600">
-              {n.hint}
-            </span>
-          </span>
-        </button>
+      {(['learner', 'academy'] as const).map((g) => (
+        <div key={g} className={g === 'academy' ? 'pt-3' : ''}>
+          <p className="px-3 pb-1 text-[10px] font-semibold uppercase tracking-[0.15em] text-slate-600">
+            {GROUP_LABEL[g]}
+          </p>
+          {NAV.filter((n) => n.group === g).map((n) => (
+            <button
+              key={n.id}
+              onClick={() => {
+                setTab(n.id);
+                setMenuOpen(false);
+                window.scrollTo({top: 0});
+              }}
+              className={`flex w-full items-center gap-2.5 rounded-lg px-3 py-1.5 text-left transition ${
+                tab === n.id
+                  ? g === 'academy'
+                    ? 'bg-emerald-500/10 text-emerald-300 ring-1 ring-inset ring-emerald-500/30'
+                    : 'bg-sky-500/10 text-sky-300 ring-1 ring-inset ring-sky-500/30'
+                  : 'text-slate-400 hover:bg-slate-800/60 hover:text-slate-200'
+              }`}>
+              <span className="w-5 shrink-0 text-center text-base">{n.icon}</span>
+              <span className="min-w-0">
+                <span className="block truncate text-sm font-medium">
+                  {n.label}
+                </span>
+                <span className="block truncate text-[11px] text-slate-600">
+                  {n.hint}
+                </span>
+              </span>
+            </button>
+          ))}
+        </div>
       ))}
     </nav>
   );
@@ -158,7 +223,7 @@ export const App: React.FC = () => {
             </p>
           </div>
           <div className="flex-1 overflow-y-auto">{NavList}</div>
-          <p className="mt-4 border-t border-slate-800 pt-4 text-[10px] leading-relaxed text-slate-600">
+          <p className="mt-3 hidden border-t border-slate-800 pt-3 text-[10px] leading-relaxed text-slate-600 2xl:block">
             {NORTH_STAR.bigBet}
           </p>
         </aside>

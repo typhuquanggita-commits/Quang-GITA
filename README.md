@@ -8,6 +8,51 @@ Một ứng dụng web trình bày trọn vẹn một hệ thống học tiếng
 mốc, thư viện phương pháp đã kiểm chứng, chuỗi bài giảng, bài luyện hằng ngày, bí kíp,
 kiến trúc thói quen, lập trình tư duy, hệ thống câu lạc bộ và cơ chế kiểm định.
 
+## Tầng vận hành học viện
+
+Bốn tab dành cho người **triển khai** hệ thống cho học viên, tách khỏi phần dành cho người học:
+
+### 🏛 Học viện — triết lý và mô thức
+- **7 nguyên lý gốc rễ** — mỗi nguyên lý có câu hỏi gốc, cách làm sai, cách làm đúng, hệ quả
+- **Tháp học tập 5 tầng** — KHAI NHĨ → KHAI NHÃN → KHAI KHẨU → KHAI THỦ → KHAI ĐẠO,
+  mỗi tầng ghi rõ học viên làm gì, cố vấn làm gì, và **khoảnh khắc WOW** của tầng đó
+- **Mô thức GITA** 4 pha: GIEO · ĐẮM · THỬ · THĂNG — mỗi pha có vị thế cố vấn, các nước
+  đi, công cụ NLP tương ứng, và điểm hỏng thường gặp
+- **Vòng 11 bước chuẩn** — Niềm tin → Tư duy → Cảm xúc → Hành vi → Thói quen → Chuỗi
+  thử thách → Bài học quý → Giải pháp tháo gỡ → Các bước rèn luyện → Về đích →
+  Chúc mừng & Nhận thưởng. Mỗi bước có **lời thoại mẫu cho cố vấn** và sản phẩm để lại
+- **10 kỹ thuật NLP** có lời thoại từng bước và cảnh báo khi dùng sai, lọc được theo pha GITA
+- **4 lớp môi trường tối ưu** — vật lý, số, xã hội, thời gian, mỗi lớp có cách kiểm tra
+- **Vai trò cố vấn** — 6 chuyển dịch từ "người giảng" sang "cố vấn" + 6 phác đồ xử lý
+  tình huống khó (học viên bí, muốn bỏ, im lặng, đòi đốt cháy giai đoạn…)
+
+### 🏅 25 Cấp độ
+5 tầng × 5 cấp. Mỗi cấp là một **động từ học viên vừa làm được**, không phải danh hiệu
+trừu tượng — BẮT SÓNG · LỌC NHIỄU · BẮT NHỊP · THẤU ÂM · NGHE THẤU · CHẠM CHỮ · LƯỚT DÒNG…
+Mỗi cấp có điều kiện vào, nhiệm vụ, thử thách, tiêu chí đạt, huy hiệu và quyền mở khoá.
+
+### 📝 Chấm bài
+- **4 phần bắt buộc** sau mọi bài nộp, có **mẫu điền sẵn**: Bản nhận xét → Chiến lược
+  cải thiện → Hướng dẫn khắc phục chi tiết → Bài tập thực hành nhuần nhuyễn
+- **Thư viện 20 phác đồ lỗi** phổ biến của người Việt, mã hoá thống nhất (PA/GR/WR/SP/RD/LS/VO).
+  Mỗi phác đồ: ví dụ sai–đúng, **nguyên nhân gốc**, chiến lược, các bước sửa, 2 bài luyện
+  dưới 20 phút, và tiêu chí quan sát được để biết lỗi đã đóng
+- Cam kết: phản hồi trong 48 giờ · chốt đúng **một** lỗi mục tiêu mỗi chu kỳ
+
+### 🎥 Xưởng học liệu
+**11 bản thiết kế sản xuất** — bản vẽ kỹ thuật để ê-kíp quay dựng, không phải file media:
+video bài giảng, video cận miệng 44 âm IPA, bộ audio shadowing 150 đoạn, bộ chép chính tả
+200 đoạn, 1.200 ảnh bối cảnh thật, 25 sổ tay cấp độ, bộ công cụ chấm bài, audio lập trình
+tư duy, video chân dung học viên, 84 giáo án dẫn club, bộ ấn phẩm môi trường.
+Mỗi hạng mục có cấu trúc từng phút, thông số kỹ thuật, và phần **tài sản tái sử dụng**.
+Kèm **trình tự triển khai 3 giai đoạn** — mở lớp được sau 8 tuần với Tầng 1 hoàn chỉnh.
+
+> **Hai điểm cần biết:** (1) Xưởng học liệu giao *bản thiết kế sản xuất*, không giao file
+> audio/video. (2) Mô thức GITA trong `data/academy.ts` là bản dựng theo nghĩa "cố vấn dẫn
+> đường" — thay hằng `GITA_PHASES` bằng mô thức thật của bạn thì toàn hệ thống cập nhật theo.
+
+---
+
 ## Cá nhân hoá — tab **Kế hoạch của tôi**
 
 Trả lời 13 câu (~5 phút), hệ thống tính lại lộ trình bằng **phép toán giờ học**
@@ -106,6 +151,10 @@ npm run preview  # xem thử bản build
 ```
 data/                  Toàn bộ nội dung hệ thống, tách khỏi giao diện
   profile.ts           13 câu hỏi + bộ máy suy dẫn kế hoạch cá nhân (hàm thuần)
+  academy.ts           Triết lý gốc rễ · tháp 5 tầng · GITA · NLP · môi trường · cố vấn
+  levels.ts            25 cấp độ (5 tầng × 5 cấp)
+  feedback.ts          Khung chấm bài 4 phần + thư viện 20 phác đồ lỗi
+  production.ts        11 bản thiết kế sản xuất học liệu + trình tự triển khai
   charter.ts           LA BÀN — 11 mục hiến chương cá nhân + tuyên ngôn
   system.ts            Hiến chương: 5 luật, 7 trụ cột, quỹ đạo, ngân sách thời gian
   roadmap.ts           12 cột mốc × 36 tháng

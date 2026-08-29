@@ -438,3 +438,134 @@ export interface DerivedPlan {
   risks: {level: 'cao' | 'trung' | 'thap'; title: string; why: string; fix: string}[];
   archetypeAdjustments: string[];
 }
+
+/* ==========================================================================
+   HỌC VIỆN — tầng vận hành: triết lý, tháp học tập, cố vấn, cấp độ, chấm bài
+   ========================================================================== */
+
+export interface RootPrinciple {
+  id: string;
+  no: number;
+  name: string;
+  claim: string;
+  rootQuestion: string;
+  wrongWay: string;
+  rightWay: string;
+  consequence: string;
+}
+
+export interface PyramidTier {
+  id: string;
+  no: number;
+  code: string;
+  name: string;
+  meaning: string;
+  retention: string;
+  mode: string;
+  color: string;
+  learnerDoes: string[];
+  advisorDoes: string[];
+  wowMoment: string;
+}
+
+export interface LevelBadge {
+  id: string;
+  tierId: string;
+  no: number;
+  name: string;
+  epithet: string;
+  entry: string;
+  mission: string;
+  challenge: string;
+  passCriteria: string[];
+  reward: string;
+  unlocks: string;
+}
+
+/** Một bước trong vòng 11 bước chuẩn, áp cho mọi cấp độ. */
+export interface CycleStep {
+  no: number;
+  phase: string;
+  name: string;
+  purpose: string;
+  advisorScript: string;
+  learnerAction: string;
+  artifact: string;
+  minutes: number;
+}
+
+export interface GitaPhase {
+  letter: string;
+  code: string;
+  name: string;
+  intent: string;
+  advisorStance: string;
+  moves: string[];
+  nlpTools: string[];
+  failureMode: string;
+}
+
+export interface NlpTechnique {
+  id: string;
+  name: string;
+  vnName: string;
+  origin: string;
+  useWhen: string;
+  script: string[];
+  appliedTo: string;
+  caution: string;
+}
+
+export interface EnvironmentLayer {
+  id: string;
+  layer: string;
+  goal: string;
+  setup: string[];
+  antiPattern: string;
+  check: string;
+}
+
+export interface AdvisorProtocol {
+  id: string;
+  situation: string;
+  doNot: string;
+  instead: string;
+  questions: string[];
+}
+
+/** Một lỗi phổ biến kèm phác đồ khắc phục. */
+export interface ErrorRemedy {
+  id: string;
+  code: string;
+  skill: SkillId;
+  error: string;
+  example: {wrong: string; right: string};
+  rootCause: string;
+  severity: 'nặng' | 'vừa' | 'nhẹ';
+  strategy: string;
+  fixSteps: string[];
+  drills: {name: string; minutes: number; how: string}[];
+  masteredWhen: string;
+}
+
+export interface FeedbackSection {
+  no: number;
+  name: string;
+  purpose: string;
+  template: string;
+  rule: string;
+}
+
+/** Bản thiết kế sản xuất một hạng mục học liệu. */
+export interface ProductionSpec {
+  id: string;
+  kind: 'video' | 'audio' | 'tài liệu' | 'bộ ảnh' | 'công cụ';
+  name: string;
+  tier: string;
+  quantity: string;
+  duration: string;
+  purpose: string;
+  structure: {t: string; content: string}[];
+  specs: string[];
+  reusableAssets: string;
+}
