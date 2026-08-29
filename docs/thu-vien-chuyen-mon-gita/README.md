@@ -14,6 +14,7 @@
 | [`nhan-dien-thuong-hieu/`](../nhan-dien-thuong-hieu/README.md) | **Trông và nói như thế nào** — logo, màu, chữ, giọng nói | Truyền thông, Thiết kế |
 | [`nhuong-quyen-leader-boom/`](../nhuong-quyen-leader-boom/README.md) | **Chuyển giao cho đơn vị khác thế nào** — chuẩn nhượng quyền, kiểm định | BLĐ, Pháp chế, Đối tác |
 | [`cong-dong-leader-boom/`](../cong-dong-leader-boom/README.md) | **Giữ nhịp sau trại thế nào** — cộng đồng, squad, thử thách 21/90 ngày | Coach, Truyền thông |
+| [`ho-so-bao-ho/`](../ho-so-bao-ho/README.md) | **Bảo hộ chương trình thế nào** — nhãn hiệu, quyền tác giả, chuẩn trình bày | BLĐ, Pháp chế |
 
 Đây là bộ được mở ra **hằng ngày khi làm việc với một học viên cụ thể**, không phải bộ đọc một lần.
 

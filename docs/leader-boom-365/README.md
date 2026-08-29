@@ -24,6 +24,7 @@
 | [`../nhan-dien-thuong-hieu/`](../nhan-dien-thuong-hieu/README.md) | **Trông và nói như thế nào** — logo, màu, chữ, giọng nói thương hiệu | Truyền thông, Thiết kế, Đối tác |
 | [`../nhuong-quyen-leader-boom/`](../nhuong-quyen-leader-boom/README.md) | **Chuyển giao cho đơn vị khác thế nào** — chuẩn nhượng quyền, kiểm định, pháp lý | BLĐ, Pháp chế, Đối tác |
 | [`../cong-dong-leader-boom/`](../cong-dong-leader-boom/README.md) | **Giữ nhịp sau trại thế nào** — cộng đồng, squad, thử thách 21/90 ngày | Coach, Truyền thông, Quản trị viên |
+| [`../ho-so-bao-ho/`](../ho-so-bao-ho/README.md) | **Bảo hộ chương trình thế nào** — nhãn hiệu, quyền tác giả, chuẩn trình bày | BLĐ, Pháp chế |
 
 **Quy ước ký hiệu dùng chung toàn hệ** — xem [`../he-thong-huan-luyen-gita/README.md`](../he-thong-huan-luyen-gita/README.md) §3:
 **T1–T5** tầng chuyên môn · **G1–G5** gói dịch vụ · **L1–L5** cấp độ năng lực · **N01–N11** nhóm vấn đề.

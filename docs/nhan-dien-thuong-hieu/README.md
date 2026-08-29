@@ -25,6 +25,9 @@ Cẩm nang này là **tài liệu bắt buộc kèm theo hợp đồng nhượng
 
 **Tài sản logo:** [`../../brand/logo/`](../../brand/logo/) — 8 tệp, đã tách nền, đủ biến thể.
 
+**Chuẩn trình bày văn bản và mẫu bìa in được:** [`../ho-so-bao-ho/06-chuan-trinh-bay-tai-lieu.md`](../ho-so-bao-ho/06-chuan-trinh-bay-tai-lieu.md) ·
+[`../../brand/mau-tai-lieu/`](../../brand/mau-tai-lieu/)
+
 **Áp dụng nhận diện trong cộng đồng số:** [`../cong-dong-leader-boom/`](../cong-dong-leader-boom/README.md) —
 hệ huy hiệu 7 sao, giọng nói trong group, quy tắc hình ảnh trẻ em.
 

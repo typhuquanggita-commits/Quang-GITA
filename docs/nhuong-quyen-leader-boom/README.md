@@ -45,7 +45,8 @@ Phần "không thương lượng được" dài hơn phần "được tuỳ bi�
 [`../he-thong-huan-luyen-gita/`](../he-thong-huan-luyen-gita/README.md) ·
 [`../thu-vien-chuyen-mon-gita/`](../thu-vien-chuyen-mon-gita/README.md) ·
 [`../an-toan-va-phan-quyen/`](../an-toan-va-phan-quyen/README.md) ·
-[`../cong-dong-leader-boom/`](../cong-dong-leader-boom/README.md)
+[`../cong-dong-leader-boom/`](../cong-dong-leader-boom/README.md) ·
+[`../ho-so-bao-ho/`](../ho-so-bao-ho/README.md)
 
 ---
 
@@ -73,8 +74,8 @@ dù có đối tác sẵn sàng trả tiền.
 
 | # | Điều kiện | Vì sao bắt buộc | Trạng thái hiện tại |
 |---|---|---|---|
-| 1 | **Đăng ký nhãn hiệu** cho chữ và hình Leader Boom tại Cục Sở hữu trí tuệ | Không có nhãn hiệu thì không có thứ để nhượng quyền hợp pháp | ⬜ Cần rà soát — xem TL 08 §2 |
-| 2 | **Hệ thống tài liệu chuẩn hoá** đủ để người ngoài vận hành được | Không có tài liệu thì "chuyển giao" chỉ là truyền miệng | ✅ **Đã có** — 7 bộ, 77 tài liệu; trong đó **66 tài liệu** thuộc gói chuyển giao (TL 03 §1) |
+| 1 | **Đăng ký nhãn hiệu** cho chữ và hình Leader Boom tại Cục Sở hữu trí tuệ | Không có nhãn hiệu thì không có thứ để nhượng quyền hợp pháp | ⬜ Cần rà soát — **hồ sơ đã soạn:** [`../ho-so-bao-ho/`](../ho-so-bao-ho/README.md) |
+| 2 | **Hệ thống tài liệu chuẩn hoá** đủ để người ngoài vận hành được | Không có tài liệu thì "chuyển giao" chỉ là truyền miệng | ✅ **Đã có** — 8 bộ, 86 tài liệu; **77 tài liệu** cấu thành chương trình được bảo hộ, **66 tài liệu** thuộc gói chuyển giao (TL 03 §1) |
 | 3 | **Đã tự chạy thành công tối thiểu 3 khoá** với đủ 7 cổng kiểm soát và có số liệu 90 ngày | Không chứng minh được mô hình chạy được thì không có gì để bán | ⬜ Cần xác nhận |
 | 4 | **Có đội ngũ đào tạo Trainer** — người đào tạo được người khác, không chỉ dạy được học viên | Nút thắt lớn nhất của mọi hệ nhượng quyền giáo dục | ⬜ Cần xây |
 | 5 | **Nền tảng số quản lý tập trung** hồ sơ học viên và dữ liệu chất lượng | Không có nền tảng thì không kiểm soát được chất lượng từ xa | ⬜ Cần xây — xem `thu-vien-chuyen-mon-gita/08` |
