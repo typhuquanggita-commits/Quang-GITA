@@ -1387,10 +1387,20 @@ G.TANG_HIENTHI = [
 G.TAM_NHIN = [
   {vai:['R01','R02'], pt:100,
    ghi:'Toàn bộ, không khoá gì. Super Admin và Admin hệ thống thấy mọi thứ.'},
-  {vai:['R03','R04'], pt:80,
-   ghi:'Khoá đúng 20% quan trọng của R01–R02: quản trị tài khoản, phân quyền, bảo mật, nhật ký, kiểm duyệt.'},
-  {vai:['R05','R06','R07','R08','R09','R10','R11'], pt:75,
-   ghi:'Khoá 20% ấy, thêm tài chính và điều hành toàn hệ.'},
+  /* 82 chứ không phải 80: hai màn mới — Đường vào sáu bước (mọi vai) và
+     Học phí năm tầng (kho nghề) — đều mở cho R03–R04, nên tử số tăng hai
+     mà mẫu số tăng hai. Phần KHOÁ vẫn nguyên vẹn 22 màn quản trị; không
+     màn nào trong số đó được nới. Ghi con số thật thay vì giữ 80 cho đẹp. */
+  {vai:['R03','R04'], pt:82,
+   ghi:'Khoá đúng phần quản trị của R01–R02: quản trị tài khoản, phân quyền, bảo mật, nhật ký, kiểm duyệt.'},
+  /* Tách làm hai dòng: bảy vị trí này trước nay gộp một con số, nhưng
+     chúng KHÔNG thấy như nhau — R09–R11 kém hơn ba màn. Gộp lại thì phải
+     nới dung sai để cả bảy cùng lọt, mà nới dung sai là mất tác dụng canh.
+     Ghi hai con số thật thì canh được chặt hơn. */
+  {vai:['R05','R06','R07','R08'], pt:77,
+   ghi:'Khoá phần quản trị hệ thống, thêm tài chính và điều hành toàn hệ.'},
+  {vai:['R09','R10','R11'], pt:75,
+   ghi:'Như trên, và không mở ba màn thuộc phạm vi quản lý chuyên môn.'},
   /* R12 tách ra một dòng riêng, và con số thấp hơn là ĐÚNG chứ không phải
      thiệt thòi. Phân tích dữ liệu đọc được toàn bộ kho nghề và mọi màn số
      liệu tổng hợp, nhưng KHÔNG mở những màn chứa hồ sơ của một nhà cụ thể
@@ -1399,7 +1409,7 @@ G.TAM_NHIN = [
      Trước đây trình đơn của R12 vẫn hiện những mục ấy rồi bấm vào chỉ ra
      một thẻ khoá — mười bốn mục chết. Nay ẩn đi, và con số tụt từ 75%
      xuống đúng mức thật. Ít mục hơn nhưng không mục nào chết. */
-  {vai:['R12'], pt:61,
+  {vai:['R12'], pt:63,
    ghi:'Toàn bộ kho nghề và màn số liệu tổng hợp · không mở hồ sơ từng nhà và buồng lái thao tác'},
   /* ═══ Ba tỉ lệ dưới: nói cho rõ kẻo lẫn với trần 30% ═══
      Đây là tỉ lệ SỐ MÀN HÌNH mở được, không phải tỉ lệ NỘI DUNG. Hai thứ
@@ -1490,6 +1500,7 @@ G.NAV = [
    items:[
     {v:'gioi-thieu',  t:'GITA 365 là gì',              h:'Làm được gì · không làm gì · một nhà đi qua những gì', ic:'seed', star:1, capMo:'chung'},
     {v:'bat-dau',     t:'Bắt đầu ở đây',               h:'Năm bước đầu tiên, đúng thứ tự',     ic:'seed', star:1, capMo:'chung'},
+    {v:'tham-gia',    t:'Đường vào — sáu bước',         h:'Giới thiệu → đăng ký → test → hồ sơ → định hướng → 7 ngày', ic:'compass', star:1, capMo:'chung'},
     {v:'pham-vi',     t:'Phạm vi của tôi',             h:'Mình mở tới đâu · còn gì chưa mở',   ic:'compass', star:1, capMo:'chung'},
     {v:'ban-do',      t:'Bản Đồ Gia Đình Thịnh Vượng', h:'5 khoang · 9 vai · băng nền 8 việc', ic:'map', star:1, capMo:'chung'},
     {v:'chan-dung-nha',t:'Chân dung nhà mình',         h:'Từng thành viên thật sự là ai',      ic:'users', perm:'kh_gia_dinh', capMo:'nha'},
@@ -1595,6 +1606,7 @@ G.NAV = [
     {v:'ve-tinh',     t:'Vệ tinh của tôi',             h:'Những người tuyệt vời quanh mình',   ic:'orbit', star:1, capMo:'chung'},
     {v:'dai-su',      t:'Đại sứ GITA 365',             h:'4 cấp · 20 nhiệm vụ · 13 quy tắc',   ic:'share', perm:'ctv_hoa_hong', capMo:'ctv'},
     {v:'referral',    t:'Phiếu chỉ dẫn referral',      h:'5 chân dung · 12 dấu hiệu · PAIN GOAL GAP', ic:'share', star:1, perm:'nghe_chung', capMo:'nghe'},
+    {v:'hoc-phi',     t:'Học phí năm tầng · nói chuyện tiền', h:'18 kịch bản · 7 luật · nhịp thu và hoàn tiền', ic:'crown', star:1, perm:'nghe_chung', capMo:'nghe'},
     {v:'chan-dung-kh',t:'Sáu chân dung khách hàng',    h:'Đọc đúng nhà để gửi đúng lộ trình',  ic:'users', perm:'nghe_chung', capMo:'nghe'},
     {v:'chuyen-doi',  t:'Chín cổng chuyển đổi',         h:'Người lạ → đại sứ → cộng tác → đối tác',ic:'compass', star:1, perm:'nghe_chung', capMo:'nghe'},
     {v:'hoa-hong',    t:'Cơ chế tài chính đại sứ',     h:'4 cấp · trần hoa hồng 10%',          ic:'chart', perm:'ctv_hoa_hong', capMo:'ctv'},
@@ -1957,6 +1969,44 @@ G.ITEM_EN = {
   'ai-cham':['Automated care assistant','16 background rules · clear limits'],
   'ma-tran':['220-problem matrix × 5 tiers','11 groups · 8 deep columns per tier'],
   'ma-tran-bang':['Matrix × 4 customer bands','GREEN · AMBER · ORANGE · RED within each tier'],
+  'tham-gia':['The way in — six steps','Intro → sign up → assessment → profile → direction → 7-day challenge'],
+  'hoc-phi':['Tuition across five tiers','18 money scripts · 7 rules · collection and refund'],
+  /* Ba mươi tư mục dưới đây trước nay chỉ có tiếng Việt: bản tiếng Anh
+     rơi vào ô trống nên giao diện EN hiện mã màn hình thay cho tên. */
+  'gioi-thieu':['What GITA 365 is','What it does · what it will not do · what a family goes through'],
+  'pham-vi':['My scope','How far my access goes · what is still closed'],
+  'ban-do-ca-nhan':['Personal blueprint · 11 blocks','Why → talent, then loop back and revise the path'],
+  'vong-nhac':['Right – Enough – Deep loop','Reading is not doing · three rungs per task'],
+  'hanh-trinh-12':['The learner journey · 12 stages','4 pillars · who owns each · WOW touchpoints'],
+  'luat-lam-viec':['Rules for working with families','Everything through the system · breach costs 50% of KPI for 3 months'],
+  'ref-gita':['One family refers one family','Referrer profiles · 30s-60s-8p · 16 steps'],
+  'khach-lon':['Serving major clients','4 tiers · touch cadence · the 68-point file'],
+  'kho-tong':['The whole vault at a glance','9 groups · 50+ stores · real counts'],
+  'thu-vien':['Document library','Upload documents · this is how the vault grows'],
+  'minh-chung':['Task evidence','Submit photos and reports confirming the work was done'],
+  'tai-lieu-goc':['Academy source documents','5 sets · 161 tables · 1,647 data rows'],
+  'nhan-dien-loi':['Voice and wording guide','How GITA speaks · 10 signs of machine-written prose'],
+  'so-tay-nhan-dien':['GITA identity handbook','7 written chapters · read here, no download'],
+  'nhan-dien':['GITA brand identity','Logo · three colours · type · usage rules'],
+  'van-dung':['Five levels of application','Depth of craft · tier limits · reporting'],
+  'xu-ly-ca':['Case handling process','7 steps · evidence required · 4 constraints'],
+  'gui-tu-lieu':['Send material to a family','Pending requests · the 80% KPI gate'],
+  'chuyen-cam-hung':['Inspiring stories','100 stories for your level · 10 threads · one story per mission'],
+  'chuyen-the-gioi':['Real people, real work','Entrepreneurs · scientists · artists · athletes · Vietnamese figures'],
+  'giong-doc':['Read or listen · narration','Voice licensing · studio standard · narration script'],
+  'nhat-ky-vi-tri':['My journal','Daily · weekly · monthly · fields specific to each position'],
+  'thi-viet':['Writing contest · 7 – 21 – 90 – 365','Entries passing day 90 and 365 earn a 10% scholarship'],
+  'sat-hach':['Competency assessment','5 tiers · 4 graduation papers · 8 assessment axes'],
+  'khoa-dao-tao':['My training course','Learn · Do · Submit · the next lesson opens itself'],
+  'do-thoi-gian':['Time · rewards · penalties','A real clock · three thresholds · completion standard · point conversion'],
+  'noi-may-chu':['Connect to the server','Paste the address · test the call · six setup steps'],
+  'phan-quyen':['Assignments & permissions','15 positions × 31 permissions · click a cell to change it'],
+  'cap-tai-khoan':['Open a new account','Issued for positions from Consultant upward'],
+  'khoa-tai-khoan':['Lock · reopen · delete','The life of an account, with a stated reason'],
+  'sap-xep':['Rearrange the menu','Reorder · hide · add a new folder'],
+  'sua-hien-thi':['Edit displayed text','Any wording that reads wrong, fix it here'],
+  'duyet-tai-lieu':['Review submitted documents','View · score against the standard · approve or return'],
+  'theo-doi-tai-nguyen':['Resource monitoring','Alerts when one account touches more than 20% of the vault'],
   'referral':['Referral trigger sheet','5 portraits · 12 signals · PAIN GOAL GAP'],
   'chan-dung-kh':['Six customer portraits','Read the family right, send the right path'],
   'do-luong-kh':['Customer measurement system','7 metrics · 6 cadences · improvement loop'],
@@ -4817,6 +4867,12 @@ G.fromTo = function(lb, from, to){
 
 /* ══════════════════ 01 · BẢN ĐỒ ĐIỂM CHẠM CẢM XÚC ══════════════════ */
 G.VIEWS['diem-cham'] = function(){
+  /* Dữ liệu của màn này nằm trong gói NGHỀ. Vai không được cấp gói đó thì
+     biến DIEMCHAM là undefined và màn văng lỗi — trắng màn, không câu nào giải
+     thích. Hôm nay G.allowed() chặn trước nên chưa ai gặp; nhưng một lần
+     nới quyền trong bảng NAV là gặp ngay. Chặn tại chỗ thì không phụ
+     thuộc vào bảng quyền còn đúng hay không. */
+  if(!G.DIEMCHAM) return U.empty('Chưa mở được bản đồ điểm chạm','Phần này nằm trong kho nghề.');
   var o = U.ph({eyebrow:'NHÓM 01 · KHỞI NGUỒN', ic:'heart', grad:1, t:'Bản đồ điểm chạm cảm xúc',
     lead:'Chín khoảnh khắc quyết định một gia đình có ở lại hay không. Mỗi điểm chạm có một cảm xúc đang có, một nỗi sợ, một việc hệ thống phải làm và một câu nói đúng nhịp.'});
 
@@ -5096,6 +5152,12 @@ var U = G.U, h = U.h, ic = U.ic;
 
 /* ══════════════════ 03 · KHO BÁU VẬT ══════════════════ */
 G.VIEWS['kho'] = function(){
+  /* Dữ liệu của màn này nằm trong gói NGHỀ. Vai không được cấp gói đó thì
+     biến MOTHUC là undefined và màn văng lỗi — trắng màn, không câu nào giải
+     thích. Hôm nay G.allowed() chặn trước nên chưa ai gặp; nhưng một lần
+     nới quyền trong bảng NAV là gặp ngay. Chặn tại chỗ thì không phụ
+     thuộc vào bảng quyền còn đúng hay không. */
+  if(!G.MOTHUC) return U.empty('Chưa mở được kho báu vật','Phần này nằm trong kho nghề.');
   var ke = [
     {v:'phac-do', ic:'book', c:'#185AB4', n:(G.PHACDO||[]).length||G.META.soPhacDo, dv:'phác đồ vấn đề',
      t:'Phác đồ vấn đề', d:'Mỗi vấn đề có nguyên nhân, giải pháp, việc của học viên, của người lớn, của tư vấn và của coach — trải đủ năm tầng.'},
@@ -5311,6 +5373,12 @@ G.baiHocModal = function(id){
 
 /* ══════════════════ 03 · SÁCH GỐC & TƯ LIỆU ══════════════════ */
 G.VIEWS['sach'] = function(){
+  /* Dữ liệu của màn này nằm trong gói NGHỀ. Vai không được cấp gói đó thì
+     biến SACH là undefined và màn văng lỗi — trắng màn, không câu nào giải
+     thích. Hôm nay G.allowed() chặn trước nên chưa ai gặp; nhưng một lần
+     nới quyền trong bảng NAV là gặp ngay. Chặn tại chỗ thì không phụ
+     thuộc vào bảng quyền còn đúng hay không. */
+  if(!G.SACH) return U.empty('Chưa mở được sách gốc và tư liệu','Phần này nằm trong kho nghề.');
   var o = U.ph({eyebrow:'NHÓM 03 · KHO BÁU VẬT', ic:'vault', t:'Sách gốc & tư liệu Học viện',
     lead:'Chín mươi sáu tư liệu nền của Học viện GITA: sáu quyển sách toàn văn, bảy bản đồ A3, bốn mươi poster và sơ đồ tổng.'});
   o += U.sec('SÁU QUYỂN SÁCH GỐC','Toàn văn đã cắt thành đoạn tra cứu được');
@@ -5339,6 +5407,12 @@ G.VIEWS['sach'] = function(){
 
 /* ══════════════════ 03 · NGÔN TỪ DẪN DẮT ══════════════════ */
 G.VIEWS['ngon-tu'] = function(){
+  /* Dữ liệu của màn này nằm trong gói NGHỀ. Vai không được cấp gói đó thì
+     biến NGONTU là undefined và màn văng lỗi — trắng màn, không câu nào giải
+     thích. Hôm nay G.allowed() chặn trước nên chưa ai gặp; nhưng một lần
+     nới quyền trong bảng NAV là gặp ngay. Chặn tại chỗ thì không phụ
+     thuộc vào bảng quyền còn đúng hay không. */
+  if(!G.NGONTU) return U.empty('Chưa mở được ngôn từ dẫn dắt','Phần này nằm trong kho nghề.');
   var o = U.ph({eyebrow:'NHÓM 03 · KHO BÁU VẬT', ic:'flame', grad:1, t:'Ngôn từ dẫn dắt',
     lead:'Hợp nhất bốn nghề: người bán hàng tử tế, chuyên gia tâm lý, coach chuyên nghiệp và bậc thầy ngôn từ. Sáu nhịp, mẫu câu dùng được ngay tối nay.'});
 
@@ -14285,6 +14359,224 @@ document.addEventListener('click', function(e){
 
 </script>
 <script>
+/* ── src/duong-vao.js ── */
+/* ═══════════════════════════════════════════════════════════════
+   GITA 365 — HAI MÀN HÌNH CÒN THIẾU
+
+   1. tham-gia  — đường vào sáu bước, từ nghe giới thiệu tới vào
+                  thử thách bảy ngày. Mở cho mọi vai kể cả người mới.
+   2. hoc-phi   — năm tầng học phí, bảy luật nói chuyện tiền, mười
+                  tám kịch bản, và quy trình thu. Chỉ đội ngũ thấy.
+
+   Vì sao hai màn này ở chung một tệp: chúng là hai nửa của cùng một
+   việc. Đường vào dẫn gia đình tới chỗ phải quyết định, màn học phí
+   dạy người tư vấn nói chuyện tiền ở đúng chỗ đó. Sửa một bên mà
+   không nhìn bên kia là sinh lệch.
+   ═══════════════════════════════════════════════════════════════ */
+'use strict';
+var G = window.G || {}; window.G = G;
+G.VIEWS = G.VIEWS || {};
+(function(){
+var U = G.U, h = U.h, ic = U.ic;
+
+/* Bảng giá chỉ hiện khi chủ Học viện đã điền. Chưa điền thì màn nói
+   thẳng là chưa điền, chứ không hiện một bảng có ô trống — người tư
+   vấn nhìn bảng trống rất dễ tự nghĩ ra một con số. */
+/* Còn bao nhiêu kịch bản TƯ VẤN chưa có ruột. Phải về 0 trước khi coi
+   kho 1.000 kịch bản là đủ. Hàm ở src vì kho đóng gói bằng JSON. */
+G.tvConNo = function(){
+  return (G.KICHBAN || []).filter(function(k){
+    return k.loai === 'TƯ VẤN' &&
+      (k.mo == null || k.chot == null || k.muc == null || k.phut == null);
+  }).length;
+};
+
+G.hpDaCoGia = function(){
+  var a = G.HP_TANG || [];
+  for(var i=0;i<a.length;i++) if(a[i].gia === null || a[i].gia === undefined) return false;
+  return a.length > 0;
+};
+
+function the(nhan, noiDung, mau){
+  return '<div class="card pad-sm"'+(mau?' style="border-color:'+mau+'33"':'')+'>'+
+    '<div class="tiny up muted mb">'+h(nhan)+'</div><p class="tiny" style="line-height:1.6">'+h(noiDung)+'</p></div>';
+}
+
+/* ═══════════════ ĐƯỜNG VÀO SÁU BƯỚC ═══════════════ */
+G.VIEWS['tham-gia'] = function(){
+  var B = G.DV_BUOC;
+  if(!B) return U.empty('Chưa mở được đường vào','Phần này nằm trong gói nền. Đăng nhập lại để nạp.');
+
+  var o = U.ph({eyebrow:'NHÓM 01 · KHỞI NGUỒN', ic:'compass', grad:1,
+    t:'Đường vào — từ nghe giới thiệu tới bảy ngày đầu tiên',
+    lead:'Sáu bước, đi theo thứ tự, không nhảy cóc. Mỗi bước có điều kiện đi tiếp riêng — không phải để làm khó, mà vì bỏ qua một bước thì bước sau chạy trên nền sai.'});
+
+  /* Dải sáu bước, bấm được sang màn thật.
+     Bước 2 không phải một màn hình mà là hộp thoại đăng ký, mở bằng
+     G.moDangKy(). Đánh dấu bằng tiền tố @ để nút gọi đúng hàm chứ
+     không đi tìm một màn không tồn tại. */
+  o += '<div class="grid g3 mb">' + B.map(function(b){
+    var hopThoai = b.man.charAt(0) === '@';
+    var moDuoc = hopThoai
+      ? !!G.moDangKy
+      : (G.VIEWS[b.man] && (!G.allowed || G.allowed(b.man)));
+    return '<div class="card" style="border-color:'+b.c+'33">'+
+      '<div class="row wrap mb" style="gap:8px">'+
+      '<span style="width:34px;height:34px;border-radius:11px;display:grid;place-items:center;'+
+      'font-weight:900;background:'+b.c+'22;color:'+b.c+'">'+b.so+'</span>'+
+      '<div class="grow" style="min-width:150px"><b class="sm" style="display:block;line-height:1.4">'+h(b.ten)+'</b>'+
+      '<span class="tiny muted">'+h(b.lau)+'</span></div></div>'+
+      '<p class="tiny dim mb" style="line-height:1.6">'+h(b.duoc)+'</p>'+
+      (moDuoc
+        ? '<button class="btn ghost sm" '+(hopThoai
+             ? 'data-act="mo-dang-ky"'
+             : 'data-v="'+h(b.man)+'"')+'>'+h(b.nut)+'</button>'
+        : '<span class="tiny muted">'+ic('lock','w-3 h-3')+' Mở khi tới bước này</span>')+
+      '</div>';
+  }).join('') + '</div>';
+
+  /* Chi tiết từng bước */
+  o += U.sec('TỪNG BƯỚC LÀM GÌ','Ai làm, mất bao lâu, xong thì có gì trong tay, và chưa xong thì bị chặn ở đâu.');
+  o += B.map(function(b){
+    return '<div class="card mb" style="border-color:'+b.c+'2e">'+
+      '<div class="row wrap mb" style="gap:8px">'+U.chip(b.ma,b.c)+
+      '<span style="color:'+b.c+'">'+ic(b.ic,'w-4 h-4')+'</span>'+
+      '<b style="color:'+b.c+';font-size:15px">'+h(b.ten)+'</b>'+
+      '<span class="tiny muted mono">'+h(b.lau)+'</span></div>'+
+      '<div class="grid g2" style="gap:10px;margin-bottom:10px">'+
+        the('AI LÀM', b.ai)+ the('LÀM GÌ', b.lam)+
+        the('XONG BƯỚC NÀY KHI', b.xong, '#0B7350')+
+        '<div class="card pad-sm" style="border-color:rgba(248,113,113,.3)">'+
+        '<div class="tiny up mb" style="color:var(--bad)">CHẶN Ở ĐÂU</div><p class="tiny">'+h(b.chan)+'</p></div>'+
+      '</div>'+
+      '<div class="card pad-sm" style="border-color:'+b.c+'33;background:'+b.c+'0a">'+
+      '<div class="tiny up mb" style="color:'+b.c+'">CÂU NGƯỜI TƯ VẤN NÓI ĐỂ DẪN SANG BƯỚC SAU</div>'+
+      '<p class="sm" style="font-style:italic;line-height:1.7">'+h('“'+b.noi+'”')+'</p></div>'+
+      '</div>';
+  }).join('');
+
+  o += U.sec('ĐIỀU KIỆN ĐI TIẾP','Không có chặn thì đường đi chỉ là một danh sách gợi ý.');
+  o += U.tbl(['Từ → đến','Phải có gì','Vì sao chặn'], (G.DV_CHAN||[]).map(function(c){
+    return ['<b class="sm mono">'+h(c.tu)+' → '+h(c.den)+'</b>',
+      '<span class="tiny">'+h(c.dk)+'</span>',
+      '<span class="tiny muted">'+h(c.vi)+'</span>'];
+  }));
+
+  o += U.sec('NGƯỜI MỚI HAY HỎI GÌ','Tám câu gặp nhiều nhất trên đường này.');
+  o += '<div class="grid g2">' + (G.DV_HOI||[]).map(function(q){
+    return '<div class="card pad-sm">'+
+      '<b class="sm" style="display:block;margin-bottom:7px">'+h('“'+q.h+'”')+'</b>'+
+      '<p class="tiny" style="line-height:1.65;font-style:italic;color:var(--ink-2)">'+h('→ '+q.d)+'</p></div>';
+  }).join('') + '</div>';
+  return o;
+};
+
+/* ═══════════════ HỌC PHÍ NĂM TẦNG ═══════════════ */
+G.VIEWS['hoc-phi'] = function(){
+  /* Kho nghề: kịch bản nói chuyện tiền là tài sản chuyên môn, và bảng
+     nhịp thu là ngôn ngữ nội bộ. Gia đình xem bản mô tả chặng, không
+     xem màn này. */
+  if(!G.can('nghe_chung')) return U.lockCard();
+  var T = G.HP_TANG;
+  if(!T) return U.empty('Chưa mở được phần học phí','Phần này nằm trong kho nghề.');
+  var coGia = G.hpDaCoGia();
+
+  var o = U.ph({eyebrow:'NHÓM 05 · QUẢN TRỊ', ic:'crown', grad:1,
+    t:'Học phí năm tầng và cách nói chuyện tiền',
+    lead:'Năm tầng, mỗi tầng gồm gì và thu theo nhịp nào. Bảy luật nói chuyện tiền. Mười tám kịch bản dùng được ngay: khách hỏi giá quá sớm, khách kêu đắt, khách xin giảm, khách so giá, khách đòi cam kết kết quả, khách chậm đóng, khách xin dừng giữa chặng.'});
+
+  /* Cảnh báo khi chưa điền giá — hiện ngay đầu màn, không giấu ở cuối */
+  if(!coGia){
+    o += '<div class="card mb" style="border-color:rgba(251,146,60,.45);background:rgba(251,146,60,.07)">'+
+      '<div class="row mb" style="gap:9px"><span style="color:var(--alert)">'+ic('bell','w-4 h-4')+'</span>'+
+      '<b style="color:var(--alert)">CHƯA CÓ MỨC HỌC PHÍ TRONG HỆ THỐNG</b></div>'+
+      '<p class="sm" style="line-height:1.7">Trường <span class="mono">gia</span> của cả năm tầng đang để trống. Đây là chỗ trống có chủ đích: mức học phí là quyết định của chủ Học viện — phụ thuộc thị trường, chi phí đội ngũ và định vị — không ai điền hộ được.</p>'+
+      '<p class="sm mt" style="line-height:1.7">Cho tới khi điền, màn này <b>không hiện bảng giá</b>. Người tư vấn nhìn một bảng có ô trống rất dễ tự nghĩ ra một con số, và con số tự nghĩ thì mỗi người một khác. Điền tại <span class="mono">kho-goc/data.hoc-phi.js</span> · <span class="mono">G.HP_TANG[].gia</span>.</p>'+
+      '<p class="tiny muted mt">Mọi phần còn lại của màn này — gồm gì, nhịp thu, hoàn tiền, luật, kịch bản — đã đủ và dùng được ngay từ bây giờ.</p>'+
+      '</div>';
+  }
+
+  o += U.sec('NĂM TẦNG — GỒM GÌ, KHÔNG GỒM GÌ, THU THẾ NÀO',
+    'Cột "không gồm" quan trọng ngang cột "gồm". Khiếu nại về sau gần như luôn sinh ra ở chỗ khách tưởng có mà không có.');
+  o += T.map(function(t){
+    return '<div class="card mb" style="border-color:'+t.c+'2e">'+
+      '<div class="row wrap mb" style="gap:8px">'+U.chip(t.tang,t.c)+
+      '<b style="color:'+t.c+';font-size:15px">'+h(t.ten)+'</b>'+
+      (coGia
+        ? '<span class="mono" style="color:'+t.c+';font-weight:800">'+
+            Number(t.gia).toLocaleString('vi-VN')+'</span><span class="tiny muted">'+h(t.donVi)+'</span>'
+        : '<span class="tiny" style="color:var(--alert)">mức phí chưa điền · '+h(t.donVi)+'</span>')+
+      '</div>'+
+      '<div class="grid g2" style="gap:10px;margin-bottom:10px">'+
+        '<div class="card pad-sm"><div class="tiny up mb" style="color:'+t.c+'">GỒM</div>'+U.list(t.gom,t.c)+'</div>'+
+        '<div class="card pad-sm" style="border-color:rgba(248,113,113,.3)">'+
+        '<div class="tiny up mb" style="color:var(--bad)">KHÔNG GỒM</div>'+U.list(t.khong,'#EF4444')+'</div>'+
+      '</div>'+
+      '<div class="grid g2" style="gap:10px">'+
+        the('NHỊP THU', t.nhip)+ the('HOÀN TIỀN', t.hoan)+
+      '</div></div>';
+  }).join('');
+
+  o += U.sec('BẢY LUẬT NÓI CHUYỆN TIỀN','Đây là luật, không phải khuyến nghị. Vi phạm xử theo quy chế làm việc.');
+  o += '<div class="card mb" style="border-color:rgba(190,14,22,.3);background:rgba(190,14,22,.04)">'+
+    (G.HP_LUAT||[]).map(function(l){
+      return '<div style="display:flex;gap:10px;padding:9px 0;border-top:1px solid var(--line)">'+
+        '<span style="flex:none;color:var(--bad);margin-top:2px">'+ic('shield','w-4 h-4')+'</span>'+
+        '<div><b class="sm" style="display:block;margin-bottom:3px">'+l.no+'. '+h(l.ten)+'</b>'+
+        '<span class="tiny muted" style="line-height:1.6">'+h(l.y)+'</span></div></div>';
+    }).join('') + '</div>';
+
+  o += U.sec('MƯỜI TÁM KỊCH BẢN NÓI CHUYỆN TIỀN',
+    'Chia theo thời điểm: trước khi báo giá, lúc báo giá, sau khi báo giá, lúc thu. Nói ra được nguyên văn.');
+  var khiTruoc = '';
+  (G.HP_KICHBAN||[]).forEach(function(k){
+    if(k.khi !== khiTruoc){
+      khiTruoc = k.khi;
+      o += '<div class="tiny up mb mt" style="color:var(--gold-ink);letter-spacing:.08em">'+h(k.khi.toUpperCase())+'</div>';
+    }
+    o += '<div class="card mb">'+
+      '<div class="row wrap mb" style="gap:8px">'+U.chip(k.ma,'#5140B4')+
+      '<b class="sm">'+h(k.ten)+'</b><span class="tiny muted mono">'+h(k.tang)+'</span></div>'+
+      '<div style="padding:11px 14px;border-radius:12px;background:rgba(81,64,180,.06);border-left:2px solid rgba(81,64,180,.4);margin-bottom:8px">'+
+      '<div class="tiny up muted mb">MỞ</div>'+
+      '<p class="serif" style="font-size:14px;font-style:italic;line-height:1.7">'+h('“'+k.mo+'”')+'</p></div>'+
+      '<div style="padding:11px 14px;border-radius:12px;background:rgba(11,115,80,.06);border-left:2px solid rgba(11,115,80,.4);margin-bottom:8px">'+
+      '<div class="tiny up muted mb">CHỐT</div>'+
+      '<p class="serif" style="font-size:14px;font-style:italic;line-height:1.7">'+h('“'+k.chot+'”')+'</p></div>'+
+      '<div class="card pad-sm" style="border-color:rgba(248,113,113,.3)">'+
+      '<div class="tiny up mb" style="color:var(--bad)">KHÔNG ĐƯỢC LÀM</div>'+U.list(k.khong,'#EF4444')+'</div>'+
+      '</div>';
+  });
+
+  /* Quy trình thu — lấy thẳng từ G.THANHTOAN đã có sẵn trong kho */
+  var TT = G.THANHTOAN;
+  if(TT){
+    o += U.sec('THU TIỀN VÀO ĐÂU, GHI NỘI DUNG THẾ NÀO',
+      'Tiền vào phải khớp được một gia đình, một tầng, một kỳ. Sai mẫu là phải dò tay, và dò tay là chỗ sinh sai sót.');
+    o += '<div class="grid g2 mb" style="gap:10px">'+
+      '<div class="card pad-sm"><div class="tiny up muted mb">TÀI KHOẢN NHẬN</div>'+
+      '<p class="sm"><b>'+h(TT.taiKhoan.chuTk)+'</b></p>'+
+      '<p class="sm mono">'+h(TT.taiKhoan.soTk)+'</p>'+
+      '<p class="tiny muted">'+h(TT.taiKhoan.nganHang)+'</p></div>'+
+      '<div class="card pad-sm"><div class="tiny up muted mb">MẪU NỘI DUNG CHUYỂN KHOẢN</div>'+
+      '<p class="sm mono">'+h(TT.noiDungCk.mau)+'</p>'+
+      '<p class="tiny" style="color:var(--gold-ink)">Ví dụ: '+h(TT.noiDungCk.vd)+'</p>'+
+      '<p class="tiny muted mt">'+h(TT.noiDungCk.vi)+'</p></div>'+
+      '</div>';
+    if(TT.taiKhoan.canQuetThu)
+      o += '<div class="card mb" style="border-color:rgba(251,146,60,.35)">'+
+        '<div class="tiny up mb" style="color:var(--alert)">TRƯỚC KHI ĐƯA MÃ QR CHO KHÁCH</div>'+
+        '<p class="tiny">'+h(TT.taiKhoan.canQuetThu)+'</p></div>';
+  }
+
+  o += U.sec('SOÁT TRƯỚC KHI ĐƯA BẢNG GIÁ RA NGOÀI','Sáu việc. Thiếu một việc thì chưa đưa.');
+  o += '<div class="card">'+U.list(G.HP_SOAT||[], coGia ? '#0B7350' : '#FB923C')+'</div>';
+  return o;
+};
+})();
+
+</script>
+<script>
 /* ── src/luat-lam-viec.js ── */
 /* ═══════════════════════════════════════════════════════════════
    GITA 365 · v8.7 — SOI VI PHẠM LUẬT LÀM VIỆC
@@ -15992,8 +16284,29 @@ G.VIEWS['xu-ly-ca'] = function(){
     lead:'Mỗi bước có bằng chứng phải nộp. Thiếu thì nút đi tiếp không bấm được — '+
          'không phải để làm khó, mà để ba tháng sau mở hồ sơ ra là biết hỏng ở đâu.'});
 
-  if(!G.duocXuLyCa())
-    return o + '<div class="card"><p class="sm dim">Phần này dành cho Tư vấn, Coach và cấp quản lý.</p></div>';
+  /* Vai không đủ quyền vẫn thấy được màn này là gì và bảy bước gồm những
+     gì — chỉ không thao tác được. Trước đây chỗ này trả về một dòng duy
+     nhất, nên màn chỉ có tiêu đề và một câu: nhìn như màn hỏng. */
+  if(!G.duocXuLyCa()){
+    o += '<div class="card mt2" style="border-color:rgba(251,146,60,.35)">'+
+      '<div class="row mb" style="gap:9px"><span style="color:var(--alert)">'+ic('lock','w-4 h-4')+'</span>'+
+      '<b>Vai hiện tại chưa thao tác được trên màn này</b></div>'+
+      '<p class="sm dim" style="line-height:1.7">Mở ca, nộp bằng chứng và đóng ca là việc của Tư vấn, Coach '+
+      'và cấp quản lý. Vai của anh chị xem được quy trình để biết một ca đi qua những gì, '+
+      'nhưng không mở được ca mới.</p>'+
+      '<p class="tiny muted mt">Cần thao tác thì đề nghị Admin hệ thống cấp quyền <span class="mono">pro_consult</span> '+
+      'cho tài khoản này.</p></div>';
+    o += U.sec('BẢY BƯỚC CỦA MỘT CA','Xem được để biết ca của nhà mình đang ở đâu.');
+    o += (G.QUYTRINH_XL || []).map(function(b){
+      return '<div class="card pad-sm mb"><div class="row wrap mb" style="gap:8px">'+
+        U.chip(b.ma,'#0B6675')+'<b class="sm">'+U.h(b.ten)+'</b>'+
+        (b.hanGio ? '<span class="tiny muted mono">hạn '+b.hanGio+' giờ</span>' : '')+'</div>'+
+        '<p class="tiny">'+U.h(b.viec)+'</p>'+
+        (b.hongKhiThieu ? '<p class="tiny muted mt">Bỏ bước này thì: '+U.h(b.hongKhiThieu)+'</p>' : '')+
+        '</div>';
+    }).join('');
+    return o;
+  }
 
   /* Mở ca mới */
   o += '<div class="card mt2">'+

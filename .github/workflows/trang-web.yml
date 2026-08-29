@@ -42,6 +42,25 @@ jobs:
       - name: Lấy mã nguồn
         uses: actions/checkout@v4
 
+      # Nếu GitHub Pages chưa được bật cho kho này thì bước đưa lên sẽ hỏng
+      # với lỗi 404 khó hiểu. Bước này thử bật hộ; bật được thì lần sau chạy
+      # thẳng, không bật được thì báo đúng một câu và nói rõ phải bấm ở đâu.
+      - name: Bật GitHub Pages nếu chưa bật
+        id: batPages
+        continue-on-error: true
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - name: Nói rõ nếu chưa bật được
+        if: steps.batPages.outcome != 'success'
+        run: |
+          echo "::error::GitHub Pages chưa bật cho kho này và workflow không tự bật được."
+          echo "Vào https://github.com/${{ github.repository }}/settings/pages"
+          echo "  Build and deployment → Source → chọn 'GitHub Actions' → Save."
+          echo "Bật xong thì chạy lại workflow này; không phải sửa mã gì cả."
+          exit 1
+
       - name: Gom đúng phần ứng dụng cần
         run: |
           set -e

@@ -61,7 +61,10 @@ const NEN = ['VANHANH', 'CHUYENDICH', 'CHANDUNG', 'LOTRINH', 'FAMILIES', 'TEAM',
   /* Lớp băng của ma trận: bốn nhóm khách hàng trong mỗi tầng. Ở gói nền
      vì bảng định nghĩa băng và luật xếp băng thì vai nào cũng phải đọc
      được; phần kế hoạch chi tiết vẫn nằm trong gói tầng như cũ. */
-  'MT_BANG', 'MT_BANG_MA', 'MT_BANG_TANG', 'MT_BANG_NHOM', 'MT_DO', 'MT_BANG_LUAT'];
+  'MT_BANG', 'MT_BANG_MA', 'MT_BANG_TANG', 'MT_BANG_NHOM', 'MT_DO', 'MT_BANG_LUAT',
+  /* Đường vào sáu bước: người mới chưa có tầng nào cũng phải đọc được,
+     nên nó thuộc gói nền. */
+  'DV_BUOC', 'DV_CHAN', 'DV_HOI'];
 
 const NGHE = ['MOTHUC', 'SACH', 'BANDO_A3', 'POSTER', 'SODO', 'PHACDO',
   'DIEMCHAM', 'NGONTU', 'NGONTU_TANG', 'THAYVI', 'MAUTHOAI', 'PERSONA',
@@ -77,6 +80,9 @@ const NGHE = ['MOTHUC', 'SACH', 'BANDO_A3', 'POSTER', 'SODO', 'PHACDO',
   /* Phiếu chỉ dẫn referral bản đầy đủ, bộ làm việc sáu chân dung, và lớp
      tra cứu kho tư liệu. Ở gói NGHỀ vì đây là tài sản chuyên môn: người
      giới thiệu và đội ngũ dùng, khách hàng không thấy. */
+  /* Học phí và kịch bản nói chuyện tiền: kho NGHỀ. Gia đình đọc bản mô tả
+     chặng, không đọc nhịp thu và không đọc kịch bản xử lý phản đối. */
+  'HP_TANG', 'HP_LUAT', 'HP_KICHBAN', 'HP_SOAT',
   'REF_30S', 'REF_GAINS_GITA', 'REF_121', 'REF_CHAM', 'REF_CHAM_MUC', 'REF_TRANGTHAI',
   'REF_BANGIAO', 'REF_CAMON', 'REF_KHONG', 'REF_HOI', 'REF_KPI', 'REF_LOI',
   'CD_BO', 'CD_LUAT',
@@ -163,7 +169,12 @@ const MO_RA = [
   'HOAHONG',      /* bốn cấp và trần hoa hồng 10% — điều khoản thương mại công khai */
   'NGONTU_RANH',  /* sáu ranh giới — luật an toàn, càng nhiều người biết càng tốt */
   'QUA',          /* cách ghi nhận và trao quà */
-  'DANDAT'        /* hành trình người dẫn dắt — phần giới thiệu nghề */
+  'DANDAT',       /* hành trình người dẫn dắt — phần giới thiệu nghề */
+  /* Đường vào sáu bước: đây CHÍNH LÀ phần giới thiệu. Một gia đình
+     đang cân nhắc phải xem được con đường trước khi quyết định bước
+     vào — khoá nó lại là khoá đúng cái cửa mình đang mời người ta qua.
+     Phần học phí (HP_*) thì ngược lại: vẫn khoá trong kho nghề. */
+  'DV_BUOC', 'DV_CHAN', 'DV_HOI'
 ];
 const mau = {
   ...Object.fromEntries(MO_RA.map(k => [k, G[k]]).filter(([, v]) => v !== undefined)),

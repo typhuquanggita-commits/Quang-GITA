@@ -208,10 +208,20 @@ G.TANG_HIENTHI = [
 G.TAM_NHIN = [
   {vai:['R01','R02'], pt:100,
    ghi:'Toàn bộ, không khoá gì. Super Admin và Admin hệ thống thấy mọi thứ.'},
-  {vai:['R03','R04'], pt:80,
-   ghi:'Khoá đúng 20% quan trọng của R01–R02: quản trị tài khoản, phân quyền, bảo mật, nhật ký, kiểm duyệt.'},
-  {vai:['R05','R06','R07','R08','R09','R10','R11'], pt:75,
-   ghi:'Khoá 20% ấy, thêm tài chính và điều hành toàn hệ.'},
+  /* 82 chứ không phải 80: hai màn mới — Đường vào sáu bước (mọi vai) và
+     Học phí năm tầng (kho nghề) — đều mở cho R03–R04, nên tử số tăng hai
+     mà mẫu số tăng hai. Phần KHOÁ vẫn nguyên vẹn 22 màn quản trị; không
+     màn nào trong số đó được nới. Ghi con số thật thay vì giữ 80 cho đẹp. */
+  {vai:['R03','R04'], pt:82,
+   ghi:'Khoá đúng phần quản trị của R01–R02: quản trị tài khoản, phân quyền, bảo mật, nhật ký, kiểm duyệt.'},
+  /* Tách làm hai dòng: bảy vị trí này trước nay gộp một con số, nhưng
+     chúng KHÔNG thấy như nhau — R09–R11 kém hơn ba màn. Gộp lại thì phải
+     nới dung sai để cả bảy cùng lọt, mà nới dung sai là mất tác dụng canh.
+     Ghi hai con số thật thì canh được chặt hơn. */
+  {vai:['R05','R06','R07','R08'], pt:77,
+   ghi:'Khoá phần quản trị hệ thống, thêm tài chính và điều hành toàn hệ.'},
+  {vai:['R09','R10','R11'], pt:75,
+   ghi:'Như trên, và không mở ba màn thuộc phạm vi quản lý chuyên môn.'},
   /* R12 tách ra một dòng riêng, và con số thấp hơn là ĐÚNG chứ không phải
      thiệt thòi. Phân tích dữ liệu đọc được toàn bộ kho nghề và mọi màn số
      liệu tổng hợp, nhưng KHÔNG mở những màn chứa hồ sơ của một nhà cụ thể
@@ -220,7 +230,7 @@ G.TAM_NHIN = [
      Trước đây trình đơn của R12 vẫn hiện những mục ấy rồi bấm vào chỉ ra
      một thẻ khoá — mười bốn mục chết. Nay ẩn đi, và con số tụt từ 75%
      xuống đúng mức thật. Ít mục hơn nhưng không mục nào chết. */
-  {vai:['R12'], pt:61,
+  {vai:['R12'], pt:63,
    ghi:'Toàn bộ kho nghề và màn số liệu tổng hợp · không mở hồ sơ từng nhà và buồng lái thao tác'},
   /* ═══ Ba tỉ lệ dưới: nói cho rõ kẻo lẫn với trần 30% ═══
      Đây là tỉ lệ SỐ MÀN HÌNH mở được, không phải tỉ lệ NỘI DUNG. Hai thứ
@@ -311,6 +321,7 @@ G.NAV = [
    items:[
     {v:'gioi-thieu',  t:'GITA 365 là gì',              h:'Làm được gì · không làm gì · một nhà đi qua những gì', ic:'seed', star:1, capMo:'chung'},
     {v:'bat-dau',     t:'Bắt đầu ở đây',               h:'Năm bước đầu tiên, đúng thứ tự',     ic:'seed', star:1, capMo:'chung'},
+    {v:'tham-gia',    t:'Đường vào — sáu bước',         h:'Giới thiệu → đăng ký → test → hồ sơ → định hướng → 7 ngày', ic:'compass', star:1, capMo:'chung'},
     {v:'pham-vi',     t:'Phạm vi của tôi',             h:'Mình mở tới đâu · còn gì chưa mở',   ic:'compass', star:1, capMo:'chung'},
     {v:'ban-do',      t:'Bản Đồ Gia Đình Thịnh Vượng', h:'5 khoang · 9 vai · băng nền 8 việc', ic:'map', star:1, capMo:'chung'},
     {v:'chan-dung-nha',t:'Chân dung nhà mình',         h:'Từng thành viên thật sự là ai',      ic:'users', perm:'kh_gia_dinh', capMo:'nha'},
@@ -416,6 +427,7 @@ G.NAV = [
     {v:'ve-tinh',     t:'Vệ tinh của tôi',             h:'Những người tuyệt vời quanh mình',   ic:'orbit', star:1, capMo:'chung'},
     {v:'dai-su',      t:'Đại sứ GITA 365',             h:'4 cấp · 20 nhiệm vụ · 13 quy tắc',   ic:'share', perm:'ctv_hoa_hong', capMo:'ctv'},
     {v:'referral',    t:'Phiếu chỉ dẫn referral',      h:'5 chân dung · 12 dấu hiệu · PAIN GOAL GAP', ic:'share', star:1, perm:'nghe_chung', capMo:'nghe'},
+    {v:'hoc-phi',     t:'Học phí năm tầng · nói chuyện tiền', h:'18 kịch bản · 7 luật · nhịp thu và hoàn tiền', ic:'crown', star:1, perm:'nghe_chung', capMo:'nghe'},
     {v:'chan-dung-kh',t:'Sáu chân dung khách hàng',    h:'Đọc đúng nhà để gửi đúng lộ trình',  ic:'users', perm:'nghe_chung', capMo:'nghe'},
     {v:'chuyen-doi',  t:'Chín cổng chuyển đổi',         h:'Người lạ → đại sứ → cộng tác → đối tác',ic:'compass', star:1, perm:'nghe_chung', capMo:'nghe'},
     {v:'hoa-hong',    t:'Cơ chế tài chính đại sứ',     h:'4 cấp · trần hoa hồng 10%',          ic:'chart', perm:'ctv_hoa_hong', capMo:'ctv'},

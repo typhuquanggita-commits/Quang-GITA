@@ -9,6 +9,12 @@ var U = G.U, h = U.h, ic = U.ic;
 
 /* ══════════════════ 03 · KHO BÁU VẬT ══════════════════ */
 G.VIEWS['kho'] = function(){
+  /* Dữ liệu của màn này nằm trong gói NGHỀ. Vai không được cấp gói đó thì
+     biến MOTHUC là undefined và màn văng lỗi — trắng màn, không câu nào giải
+     thích. Hôm nay G.allowed() chặn trước nên chưa ai gặp; nhưng một lần
+     nới quyền trong bảng NAV là gặp ngay. Chặn tại chỗ thì không phụ
+     thuộc vào bảng quyền còn đúng hay không. */
+  if(!G.MOTHUC) return U.empty('Chưa mở được kho báu vật','Phần này nằm trong kho nghề.');
   var ke = [
     {v:'phac-do', ic:'book', c:'#185AB4', n:(G.PHACDO||[]).length||G.META.soPhacDo, dv:'phác đồ vấn đề',
      t:'Phác đồ vấn đề', d:'Mỗi vấn đề có nguyên nhân, giải pháp, việc của học viên, của người lớn, của tư vấn và của coach — trải đủ năm tầng.'},
@@ -224,6 +230,12 @@ G.baiHocModal = function(id){
 
 /* ══════════════════ 03 · SÁCH GỐC & TƯ LIỆU ══════════════════ */
 G.VIEWS['sach'] = function(){
+  /* Dữ liệu của màn này nằm trong gói NGHỀ. Vai không được cấp gói đó thì
+     biến SACH là undefined và màn văng lỗi — trắng màn, không câu nào giải
+     thích. Hôm nay G.allowed() chặn trước nên chưa ai gặp; nhưng một lần
+     nới quyền trong bảng NAV là gặp ngay. Chặn tại chỗ thì không phụ
+     thuộc vào bảng quyền còn đúng hay không. */
+  if(!G.SACH) return U.empty('Chưa mở được sách gốc và tư liệu','Phần này nằm trong kho nghề.');
   var o = U.ph({eyebrow:'NHÓM 03 · KHO BÁU VẬT', ic:'vault', t:'Sách gốc & tư liệu Học viện',
     lead:'Chín mươi sáu tư liệu nền của Học viện GITA: sáu quyển sách toàn văn, bảy bản đồ A3, bốn mươi poster và sơ đồ tổng.'});
   o += U.sec('SÁU QUYỂN SÁCH GỐC','Toàn văn đã cắt thành đoạn tra cứu được');
@@ -252,6 +264,12 @@ G.VIEWS['sach'] = function(){
 
 /* ══════════════════ 03 · NGÔN TỪ DẪN DẮT ══════════════════ */
 G.VIEWS['ngon-tu'] = function(){
+  /* Dữ liệu của màn này nằm trong gói NGHỀ. Vai không được cấp gói đó thì
+     biến NGONTU là undefined và màn văng lỗi — trắng màn, không câu nào giải
+     thích. Hôm nay G.allowed() chặn trước nên chưa ai gặp; nhưng một lần
+     nới quyền trong bảng NAV là gặp ngay. Chặn tại chỗ thì không phụ
+     thuộc vào bảng quyền còn đúng hay không. */
+  if(!G.NGONTU) return U.empty('Chưa mở được ngôn từ dẫn dắt','Phần này nằm trong kho nghề.');
   var o = U.ph({eyebrow:'NHÓM 03 · KHO BÁU VẬT', ic:'flame', grad:1, t:'Ngôn từ dẫn dắt',
     lead:'Hợp nhất bốn nghề: người bán hàng tử tế, chuyên gia tâm lý, coach chuyên nghiệp và bậc thầy ngôn từ. Sáu nhịp, mẫu câu dùng được ngay tối nay.'});
 

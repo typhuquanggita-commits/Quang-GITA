@@ -261,8 +261,29 @@ G.VIEWS['xu-ly-ca'] = function(){
     lead:'Mỗi bước có bằng chứng phải nộp. Thiếu thì nút đi tiếp không bấm được — '+
          'không phải để làm khó, mà để ba tháng sau mở hồ sơ ra là biết hỏng ở đâu.'});
 
-  if(!G.duocXuLyCa())
-    return o + '<div class="card"><p class="sm dim">Phần này dành cho Tư vấn, Coach và cấp quản lý.</p></div>';
+  /* Vai không đủ quyền vẫn thấy được màn này là gì và bảy bước gồm những
+     gì — chỉ không thao tác được. Trước đây chỗ này trả về một dòng duy
+     nhất, nên màn chỉ có tiêu đề và một câu: nhìn như màn hỏng. */
+  if(!G.duocXuLyCa()){
+    o += '<div class="card mt2" style="border-color:rgba(251,146,60,.35)">'+
+      '<div class="row mb" style="gap:9px"><span style="color:var(--alert)">'+ic('lock','w-4 h-4')+'</span>'+
+      '<b>Vai hiện tại chưa thao tác được trên màn này</b></div>'+
+      '<p class="sm dim" style="line-height:1.7">Mở ca, nộp bằng chứng và đóng ca là việc của Tư vấn, Coach '+
+      'và cấp quản lý. Vai của anh chị xem được quy trình để biết một ca đi qua những gì, '+
+      'nhưng không mở được ca mới.</p>'+
+      '<p class="tiny muted mt">Cần thao tác thì đề nghị Admin hệ thống cấp quyền <span class="mono">pro_consult</span> '+
+      'cho tài khoản này.</p></div>';
+    o += U.sec('BẢY BƯỚC CỦA MỘT CA','Xem được để biết ca của nhà mình đang ở đâu.');
+    o += (G.QUYTRINH_XL || []).map(function(b){
+      return '<div class="card pad-sm mb"><div class="row wrap mb" style="gap:8px">'+
+        U.chip(b.ma,'#0B6675')+'<b class="sm">'+U.h(b.ten)+'</b>'+
+        (b.hanGio ? '<span class="tiny muted mono">hạn '+b.hanGio+' giờ</span>' : '')+'</div>'+
+        '<p class="tiny">'+U.h(b.viec)+'</p>'+
+        (b.hongKhiThieu ? '<p class="tiny muted mt">Bỏ bước này thì: '+U.h(b.hongKhiThieu)+'</p>' : '')+
+        '</div>';
+    }).join('');
+    return o;
+  }
 
   /* Mở ca mới */
   o += '<div class="card mt2">'+

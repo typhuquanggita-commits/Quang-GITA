@@ -295,6 +295,12 @@ G.fromTo = function(lb, from, to){
 
 /* ══════════════════ 01 · BẢN ĐỒ ĐIỂM CHẠM CẢM XÚC ══════════════════ */
 G.VIEWS['diem-cham'] = function(){
+  /* Dữ liệu của màn này nằm trong gói NGHỀ. Vai không được cấp gói đó thì
+     biến DIEMCHAM là undefined và màn văng lỗi — trắng màn, không câu nào giải
+     thích. Hôm nay G.allowed() chặn trước nên chưa ai gặp; nhưng một lần
+     nới quyền trong bảng NAV là gặp ngay. Chặn tại chỗ thì không phụ
+     thuộc vào bảng quyền còn đúng hay không. */
+  if(!G.DIEMCHAM) return U.empty('Chưa mở được bản đồ điểm chạm','Phần này nằm trong kho nghề.');
   var o = U.ph({eyebrow:'NHÓM 01 · KHỞI NGUỒN', ic:'heart', grad:1, t:'Bản đồ điểm chạm cảm xúc',
     lead:'Chín khoảnh khắc quyết định một gia đình có ở lại hay không. Mỗi điểm chạm có một cảm xúc đang có, một nỗi sợ, một việc hệ thống phải làm và một câu nói đúng nhịp.'});
 

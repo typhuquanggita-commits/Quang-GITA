@@ -464,13 +464,41 @@ const { chromium } = require(PW);
       const thieu = q => { const ra = [];
         G.NAV.forEach(g => g.items.forEach(i => { if (i.perm && !G.vaiCo(q, i.perm)) ra.push(i.v); })); return ra; };
       return { tong, r1: dem('R01'), r2: dem('R02'), t1: thieu('R01'), t2: thieu('R02'),
-               khoaR03: thieu('R03').length };
+               khoaR03: thieu('R03') };
     });
     bao(day.r1 === day.tong && !day.t1.length, 'Super Admin không bị khoá màn nào', day.r1 + '/' + day.tong);
     bao(day.r2 === day.tong && !day.t2.length, 'Admin hệ thống không bị khoá màn nào', day.r2 + '/' + day.tong);
-    const pt20 = day.khoaR03 * 100 / day.tong;
-    bao(Math.abs(pt20 - 20) <= 2, 'phần khoá với Giám đốc trở xuống đúng 20%',
-      day.khoaR03 + '/' + day.tong + ' = ' + pt20.toFixed(0) + '%');
+
+    /* Đo TẬP MÀN BỊ KHOÁ, không đo tỉ lệ phần trăm.
+       Trước đây chỗ này đòi "đúng 20% ± 2". Nhưng tử số là số màn quản trị
+       (gần như không đổi) còn mẫu số là tổng số màn (tăng mỗi đợt thêm nội
+       dung cho gia đình). Nên cứ thêm một màn cho phụ huynh là bài kiểm này
+       đỏ, dù không có một màn quản trị nào bị nới. Đó là bài kiểm đo sai thứ.
+
+       Cái phải giữ là điều G.TAM_NHIN nói về R03–R04: khoá đúng phần QUẢN
+       TRỊ HỆ THỐNG — tài khoản, phân quyền, bảo mật, nhật ký, kiểm duyệt,
+       hạ tầng. Điều hành và tài chính thì Giám đốc VẪN thấy, đó là việc của
+       Giám đốc. Nên đo theo QUYỀN mà màn đòi, không đo theo khoang trình đơn:
+       màn nào khoá với R03 thì quyền của nó phải là một quyền quản trị. */
+    const QUYEN_QT = ['qt_trang', 'qt_tai_nguyen', 'sys_manage_user', 'sys_audit', 'sua_noi_dung'];
+    const qt = await p.evaluate((dsQuyen) => {
+      const laQuyenQT = q => dsQuyen.indexOf(q) >= 0;
+      const khoaMaKhongPhaiQT = [], quyenQTMaKhongKhoa = [];
+      G.NAV.forEach(g => g.items.forEach(i => {
+        const khoa = i.perm && !G.vaiCo('R03', i.perm);
+        if (khoa && !laQuyenQT(i.perm)) khoaMaKhongPhaiQT.push(i.v + '(' + i.perm + ')');
+        if (!khoa && i.perm && laQuyenQT(i.perm)) quyenQTMaKhongKhoa.push(i.v + '(' + i.perm + ')');
+      }));
+      return { la: khoaMaKhongPhaiQT, ho: quyenQTMaKhongKhoa };
+    }, QUYEN_QT);
+    bao(!qt.la.length,
+      'màn nào khoá với Giám đốc cũng vì một quyền quản trị hệ thống, không vì lý do khác',
+      qt.la.slice(0, 6).join(' '));
+    bao(!qt.ho.length,
+      'mọi màn đòi quyền quản trị hệ thống đều thật sự khoá với Giám đốc',
+      qt.ho.slice(0, 6).join(' '));
+    console.log('    R03 bị khoá ' + day.khoaR03.length + '/' + day.tong +
+      ' màn — tất cả đều đòi quyền quản trị hệ thống');
 
     /* Bảng phân quyền: bốn luật chặn */
     const luat = await p.evaluate(() => {

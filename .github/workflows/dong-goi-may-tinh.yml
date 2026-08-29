@@ -137,6 +137,34 @@ jobs:
           path: bo-cai
           merge-multiple: true
 
+      # Bản pin "mới nhất" chỉ được có MỘT bộ cài. Không dọn thì mỗi lần
+      # dựng lại thêm một tệp mang số phiên bản mới, và trang tải về đầy
+      # 7.2.0, 7.3.0, 7.4.0… — người tải không biết bấm cái nào.
+      - name: Dọn bộ cài của bản cũ khỏi trang tải
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          KHO: ${{ github.repository }}
+        run: |
+          set -e
+          moi=$(ls bo-cai | tr '\n' ' ')
+          echo "Bộ cài vừa dựng: $moi"
+          id=$(curl -sS -H "Authorization: Bearer $GH_TOKEN" \
+                 "https://api.github.com/repos/$KHO/releases/tags/may-tinh-moi-nhat" \
+               | python3 -c "import sys,json; d=json.load(sys.stdin); print(d.get('id',''))")
+          if [ -z "$id" ]; then echo "Chưa có bản pin — lần đầu dựng, không phải dọn."; exit 0; fi
+          curl -sS -H "Authorization: Bearer $GH_TOKEN" \
+            "https://api.github.com/repos/$KHO/releases/$id/assets?per_page=100" \
+            | python3 -c "import sys,json; [print(a['id'],a['name']) for a in json.load(sys.stdin)]" \
+            | while read aid ten; do
+                case " $moi " in
+                  *" $ten "*) echo "  giữ  $ten (sẽ được ghi đè)" ;;
+                  *) echo "  xoá  $ten"
+                     curl -sS -X DELETE -H "Authorization: Bearer $GH_TOKEN" \
+                       "https://api.github.com/repos/$KHO/releases/assets/$aid" ;;
+                esac
+              done
+          echo "✓ Trang tải chỉ còn bộ cài của bản mới nhất"
+
       - name: Cập nhật bản tải mới nhất
         uses: softprops/action-gh-release@v2
         with:
