@@ -11,6 +11,7 @@ import { DOMAINS, SECTION_SPEC } from '../src/data/blueprint.ts';
 import { sprToNumber } from '../src/engine/scoring.ts';
 import { LESSONS, TOPICS } from '../src/data/lesson-index.ts';
 import { TACTICS } from '../src/data/tactics.ts';
+import { VOCABULARY, vocabStats } from '../src/data/vocabulary.ts';
 
 const problems: string[] = [];
 const seen = new Set<string>();
@@ -148,11 +149,117 @@ for (const tactic of TACTICS) {
   }
 }
 
+/*
+ * Vocabulary.
+ *
+ * Three invariants, in order of how much damage they prevent.
+ *
+ * A word appearing twice across the six sets means a learner meets it twice
+ * and the deck's stated size is a lie — the deck is assembled by
+ * concatenation, so nothing else would catch it.
+ *
+ * A missing Vietnamese gloss makes the entry useless to the learners this is
+ * built for, and it is invisible in an English-language review.
+ *
+ * And an example sentence that does not contain the word it teaches is the
+ * quiet one: it reads perfectly, it is easy to write by accident when an
+ * entry is edited, and it teaches nothing at all. The check allows the usual
+ * inflections, so "synthesise" is satisfied by "synthesised".
+ */
+
+/*
+ * English morphology, to the extent this check needs it. A matcher that does
+ * not know "deferred" is a form of "defer" is not being strict — it is being
+ * wrong, and it would push an author into writing a worse example sentence to
+ * satisfy it.
+ */
+const IRREGULAR: Record<string, string[]> = {
+  uphold: ['upheld', 'upholds', 'upholding'],
+  undergo: ['underwent', 'undergone', 'undergoes', 'undergoing'],
+  bear: ['bore', 'borne', 'bears', 'bearing'],
+  found: ['founded', 'founds', 'founding'],
+  bound: ['bounded', 'bounds', 'bounding'],
+  lay: ['laid', 'lays', 'laying'],
+  mean: ['meant', 'means', 'meaning'],
+  wield: ['wielded', 'wields', 'wielding'],
+};
+
+function exampleUsesWord(word: string, example: string): boolean {
+  const text = example.toLowerCase();
+  const base = word.toLowerCase();
+  const stem = base.replace(/e$/, '').replace(/y$/, '');
+  // A final consonant doubles before a vowel suffix: defer → deferred.
+  const doubled = /[bdglmnprt]$/.test(base) ? base + base.slice(-1) : base;
+
+  const forms = new Set([
+    base,
+    `${base}s`, `${base}es`, `${base}d`, `${base}ed`, `${base}ing`, `${base}ly`,
+    `${stem}e`, `${stem}es`, `${stem}ed`, `${stem}ing`, `${stem}ies`, `${stem}ied`,
+    `${doubled}ed`, `${doubled}ing`,
+    // British/American spelling of the -ise/-ize family runs both ways.
+    base.replace(/ise$/, 'ize'), base.replace(/ize$/, 'ise'),
+    base.replace(/ise$/, 'ized'), base.replace(/ise$/, 'izes'),
+    base.replace(/our$/, 'or'), base.replace(/or$/, 'our'),
+    ...(IRREGULAR[base] ?? []),
+  ]);
+  return [...forms].some((form) => new RegExp(`\\b${form}\\b`).test(text));
+}
+
+{
+  const seenWord = new Map<string, string>();
+  const seenVocabId = new Set<string>();
+
+  for (const entry of VOCABULARY) {
+    const where = `vocab ${entry.id} (${entry.word})`;
+
+    if (seenVocabId.has(entry.id)) problems.push(`${where}: duplicate id`);
+    seenVocabId.add(entry.id);
+
+    const prior = seenWord.get(entry.word.toLowerCase());
+    if (prior) problems.push(`${where}: the word already appears as ${prior}`);
+    else seenWord.set(entry.word.toLowerCase(), entry.id);
+
+    if (entry.definition.trim().length < 12) problems.push(`${where}: definition too thin`);
+    if (entry.definitionVi.trim().length < 4) problems.push(`${where}: no Vietnamese gloss`);
+    if (entry.synonyms.length === 0) problems.push(`${where}: no synonyms`);
+    if (entry.synonyms.some((syn) => syn.toLowerCase() === entry.word.toLowerCase())) {
+      problems.push(`${where}: lists itself as a synonym`);
+    }
+
+    if (!exampleUsesWord(entry.word, entry.example)) {
+      problems.push(`${where}: the example does not use the word`);
+    }
+
+    // A trap is bilingual or it is not there: a Vietnamese learner who cannot
+    // read the English caveat is exactly the learner the caveat is for.
+    if ((entry.trap && !entry.trapVi) || (entry.trapVi && !entry.trap)) {
+      problems.push(`${where}: the trap is given in only one language`);
+    }
+
+    if (entry.satSense) {
+      if (!entry.satSense.glossVi.trim()) problems.push(`${where}: second sense has no Vietnamese`);
+      if (!exampleUsesWord(entry.word, entry.satSense.example)) {
+        problems.push(`${where}: the second-sense example does not use the word`);
+      }
+      if (entry.satSense.gloss.trim().toLowerCase() === entry.definition.trim().toLowerCase()) {
+        problems.push(`${where}: the "second" sense repeats the first`);
+      }
+    }
+  }
+}
+
 const tacticIds = new Set(TACTICS.map((t) => t.id));
 if (tacticIds.size !== TACTICS.length) problems.push('tactics: duplicate id');
 
 console.log(`Tactics: ${TACTICS.length} across ${new Set(TACTICS.map((t) => t.family)).size} families`);
 console.log(`Lessons: ${LESSONS.length} for ${skillIds.size} skills`);
+{
+  const v = vocabStats();
+  console.log(
+    `Vocab: ${v.total} words (tier 1 ${v.byTier[1]}, tier 2 ${v.byTier[2]}, tier 3 ${v.byTier[3]}) — ` +
+      `${v.withSecondSense} with a second meaning, ${v.withTrap} with a named trap`,
+  );
+}
 console.log(`Topics:  ${TOPICS.length} with ${TOPICS.reduce((n, t) => n + t.types.length, 0)} question types`);
 console.log(`Bank: ${stats.total} items (${stats.bySection.rw} R&W, ${stats.bySection.math} Math)`);
 console.log(`Formats: ${stats.total - stats.sprCount} multiple choice, ${stats.sprCount} grid-in`);

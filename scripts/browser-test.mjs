@@ -664,6 +664,7 @@ try {
     ['the dashboard', '#/dashboard'],
     ['today', '#/today'],
     ['the lesson library', '#/lessons'],
+    ['the vocabulary deck', '#/vocab'],
     ['the topic packets', '#/topics'],
     ['the tactics treasury', '#/tactics'],
     ['the papers shelf', '#/papers'],
@@ -699,6 +700,20 @@ try {
   check(
     'the sheet documents the exam keys',
     (await page.locator('.shortcut-table kbd').allInnerTexts()).includes('F'),
+  );
+
+  await page.evaluate(() => { window.location.hash = '#/vocab'; });
+  await page.waitForTimeout(700);
+  await page.getByRole('button', { name: /Nghĩa thứ hai|Second meaning/ }).click();
+  await page.waitForTimeout(400);
+  const senseRows = await page.locator('.vocab-row').count();
+  check('the second-meaning filter narrows the deck', senseRows > 20 && senseRows < 120, `${senseRows} rows`);
+
+  await page.locator('.vocab-row-head').first().click();
+  await page.waitForTimeout(300);
+  check(
+    'opening a second-meaning word shows the tested sense',
+    (await page.locator('.vocab-row[data-open] .vocab-sense').count()) === 1,
   );
 
   await page.evaluate(() => { window.location.hash = '#/lessons'; });

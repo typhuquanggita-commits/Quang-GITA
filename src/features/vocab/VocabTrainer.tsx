@@ -1,17 +1,108 @@
 /**
  * Vocabulary trainer — SM-2 flashcards over the academic deck.
+ *
+ * The back of a card carries more than a gloss, because a gloss is not what
+ * the section tests. Where an entry has a second, academic meaning it is
+ * shown *above* the everyday one and marked, since that is the sense the
+ * passage will use and the sense the learner does not have. Where an entry
+ * names a confusion it is shown last, in its own box, because being told what
+ * a word is not is often what makes it stick.
+ *
+ * The deck browser is filtered rather than listed. Four hundred rows is a
+ * reference table nobody reads; the filters turn it into the four study lists
+ * a learner actually wants — the second meanings, the named traps, and the
+ * register of whichever passage type is going worst.
  */
 
 import React, { useMemo, useState } from 'react';
 import { own } from '../../lib/record.ts';
-import { VOCABULARY, VOCAB_BY_ID } from '../../data/vocabulary.ts';
+import { VOCABULARY, VOCAB_BY_ID, vocabStats } from '../../data/vocabulary.ts';
+import type { VocabWord } from '../../types.ts';
 import { dueCards, newCard, GRADE_AGAIN, GRADE_EASY, GRADE_GOOD, GRADE_HARD, type Grade } from '../../engine/srs.ts';
 import { useStore } from '../../state/store.tsx';
 import { useLocale, useT } from '../../i18n/index.ts';
-import { Badge, Button, Card, Empty, Ring } from '../../components/ui/primitives.tsx';
-import { IconSparkle, IconX } from '../../components/ui/icons.tsx';
+import { Badge, Button, Card, Empty, Ring, Segmented } from '../../components/ui/primitives.tsx';
+import { IconAlert, IconSparkle, IconTarget, IconX } from '../../components/ui/icons.tsx';
 
 const NEW_PER_DAY = 8;
+
+type DeckFilter = 'all' | 'sense' | 'trap' | 'science' | 'history';
+
+const FILTER_LABEL: Record<DeckFilter, { en: string; vi: string }> = {
+  all: { en: 'All', vi: 'Tất cả' },
+  sense: { en: 'Second meaning', vi: 'Nghĩa thứ hai' },
+  trap: { en: 'Named traps', vi: 'Bẫy đã chỉ tên' },
+  science: { en: 'Science register', vi: 'Mảng khoa học' },
+  history: { en: 'History & society', vi: 'Mảng lịch sử – xã hội' },
+};
+
+function matchesFilter(word: VocabWord, filter: DeckFilter): boolean {
+  switch (filter) {
+    case 'sense': return Boolean(word.satSense);
+    case 'trap': return Boolean(word.trap);
+    case 'science': return word.register === 'science';
+    case 'history': return word.register === 'history' || word.register === 'social-science';
+    default: return true;
+  }
+}
+
+/** The back of a flashcard, and the deck browser's expanded row. */
+function WordDetail({ word, vi }: { word: VocabWord; vi: boolean }): React.ReactElement {
+  return (
+    <div className="stack gap-4">
+      {/*
+        The tested sense goes first when there is one. A learner who reads the
+        everyday gloss and stops has learned the meaning that will mislead them.
+      */}
+      {word.satSense && (
+        <div className="vocab-sense">
+          <span className="vocab-sense-tag">
+            <IconTarget size={13} /> {vi ? 'Nghĩa dùng trong đề' : 'The sense the test uses'}
+          </span>
+          <p className="text-lg">{word.satSense.gloss}</p>
+          <p className="secondary">{word.satSense.glossVi}</p>
+          <p className="text-sm muted vocab-example">“{word.satSense.example}”</p>
+        </div>
+      )}
+
+      <div className="stack gap-2">
+        {word.satSense && (
+          <span className="vocab-heading">{vi ? 'Nghĩa thường ngày' : 'The everyday sense'}</span>
+        )}
+        <p className="text-lg">{word.definition}</p>
+        <p className="secondary">{word.definitionVi}</p>
+        <p className="text-sm muted vocab-example">“{word.example}”</p>
+      </div>
+
+      {word.collocations && word.collocations.length > 0 && (
+        <div className="stack gap-2">
+          <span className="vocab-heading">{vi ? 'Từ hay đi cùng' : 'The company it keeps'}</span>
+          <div className="row gap-2 wrap">
+            {word.collocations.map((phrase) => (
+              <code key={phrase} className="vocab-collocation">{phrase}</code>
+            ))}
+          </div>
+        </div>
+      )}
+
+      <div className="row gap-2 wrap">
+        {word.synonyms.map((synonym) => (
+          <Badge key={synonym}>{synonym}</Badge>
+        ))}
+      </div>
+
+      {word.trap && word.trapVi && (
+        <div className="vocab-trap">
+          <IconAlert size={16} />
+          <div>
+            <strong>{vi ? 'Chỗ dễ nhầm' : 'Where this goes wrong'}</strong>
+            <p>{vi ? word.trapVi : word.trap}</p>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
 
 export function VocabTrainer(): React.ReactElement {
   const t = useT();
@@ -20,6 +111,8 @@ export function VocabTrainer(): React.ReactElement {
   const [queue, setQueue] = useState<string[] | null>(null);
   const [index, setIndex] = useState(0);
   const [flipped, setFlipped] = useState(false);
+  const [filter, setFilter] = useState<DeckFilter>('all');
+  const [openWord, setOpenWord] = useState<string | null>(null);
 
   const due = useMemo(
     () => dueCards(state.srs).filter((card) => card.ref.startsWith('v:')),
@@ -76,17 +169,17 @@ export function VocabTrainer(): React.ReactElement {
             </Badge>
             <div className="word">{word.word}</div>
             <div className="text-sm muted">{word.pos}</div>
+            {word.satSense && !flipped && (
+              <span className="vocab-sense-hint">
+                {locale === 'vi'
+                  ? 'Từ này có một nghĩa thứ hai — nghĩ ra nghĩa đó trước khi lật'
+                  : 'This word has a second meaning — reach for it before you flip'}
+              </span>
+            )}
 
             {flipped ? (
-              <div className="stack gap-4" style={{ marginTop: 'var(--space-4)' }}>
-                <p className="text-lg">{word.definition}</p>
-                <p className="secondary">{word.definitionVi}</p>
-                <p className="text-sm muted" style={{ fontStyle: 'italic' }}>“{word.example}”</p>
-                <div className="row gap-2 wrap center">
-                  {word.synonyms.map((synonym) => (
-                    <Badge key={synonym}>{synonym}</Badge>
-                  ))}
-                </div>
+              <div className="vocab-back" style={{ marginTop: 'var(--space-4)' }}>
+                <WordDetail word={word} vi={locale === 'vi'} />
               </div>
             ) : (
               <Button variant="primary" onClick={() => setFlipped(true)} style={{ marginTop: 'var(--space-4)' }}>
@@ -121,6 +214,8 @@ export function VocabTrainer(): React.ReactElement {
   }
 
   const learned = VOCABULARY.length - unseen.length;
+  const stats = useMemo(() => vocabStats(), []);
+  const shown = useMemo(() => VOCABULARY.filter((word) => matchesFilter(word, filter)), [filter]);
 
   return (
     <div className="page stack gap-6">
@@ -158,26 +253,87 @@ export function VocabTrainer(): React.ReactElement {
         </div>
       </Card>
 
-      <Card title={locale === 'vi' ? 'Toàn bộ bộ từ' : 'Full deck'}>
-        <div className="scroll-x">
-          <table className="table">
-            <thead>
-              <tr>
-                <th>{locale === 'vi' ? 'Từ' : 'Word'}</th>
-                <th>{locale === 'vi' ? 'Nghĩa' : 'Meaning'}</th>
-                <th>Tier</th>
-                <th>{locale === 'vi' ? 'Trạng thái' : 'Status'}</th>
-              </tr>
-            </thead>
-            <tbody>
-              {VOCABULARY.map((word) => {
-                const card = own(state.srs, `v:${word.id}`);
-                return (
-                  <tr key={word.id}>
-                    <td className="semibold">{word.word}</td>
-                    <td className="secondary">{locale === 'vi' ? word.definitionVi : word.definition}</td>
-                    <td>{word.tier}</td>
-                    <td>
+      <Card
+        title={locale === 'vi' ? 'Bộ từ gồm những gì' : 'What the deck holds'}
+        subtitle={
+          locale === 'vi'
+            ? 'Một danh sách từ dịch nghĩa không dạy được phần mà đề thật sự hỏi. Ba con số dưới đây là phần làm nên khác biệt.'
+            : 'A translated word list does not teach what the section actually asks. The three figures below are the part that does.'
+        }
+      >
+        <div className="row gap-4 wrap vocab-stats">
+          <div className="vocab-stat">
+            <strong>{stats.total}</strong>
+            <span>{locale === 'vi' ? 'từ trong bộ' : 'words in the deck'}</span>
+          </div>
+          <div className="vocab-stat">
+            <strong>{stats.withSecondSense}</strong>
+            <span>
+              {locale === 'vi'
+                ? 'từ quen nhưng mang nghĩa thứ hai — bẫy thật của Digital SAT'
+                : 'familiar words carrying a second meaning — the real Digital SAT trap'}
+            </span>
+          </div>
+          <div className="vocab-stat">
+            <strong>{stats.withTrap}</strong>
+            <span>
+              {locale === 'vi'
+                ? 'từ có ghi rõ chỗ dễ nhầm với từ gần nghĩa'
+                : 'entries naming the near-synonym they get confused with'}
+            </span>
+          </div>
+        </div>
+      </Card>
+
+      <Card
+        title={locale === 'vi' ? 'Tra bộ từ' : 'Browse the deck'}
+        subtitle={
+          locale === 'vi'
+            ? `${shown.length} từ đang hiện. Bấm vào một từ để xem đầy đủ.`
+            : `${shown.length} words shown. Select one to open it in full.`
+        }
+        action={
+          <Segmented
+            value={filter}
+            onChange={(next: DeckFilter) => setFilter(next)}
+            ariaLabel={locale === 'vi' ? 'Lọc bộ từ' : 'Filter the deck'}
+            options={(['all', 'sense', 'trap', 'science', 'history'] as DeckFilter[]).map((key) => ({
+              value: key,
+              label: locale === 'vi' ? FILTER_LABEL[key].vi : FILTER_LABEL[key].en,
+            }))}
+          />
+        }
+      >
+        {shown.length === 0 ? (
+          <Empty
+            icon={<IconSparkle size={28} />}
+            title={locale === 'vi' ? 'Không có từ nào trong nhóm này' : 'No words in this group'}
+          />
+        ) : (
+          <ul className="vocab-list">
+            {shown.map((word) => {
+              const card = own(state.srs, `v:${word.id}`);
+              const open = openWord === word.id;
+              return (
+                <li key={word.id} className="vocab-row" data-open={open || undefined}>
+                  <button
+                    type="button"
+                    className="vocab-row-head"
+                    aria-expanded={open}
+                    onClick={() => setOpenWord(open ? null : word.id)}
+                  >
+                    <span className="vocab-row-word">{word.word}</span>
+                    <span className="text-xs muted">{word.pos}</span>
+                    <span className="vocab-row-gloss secondary">
+                      {locale === 'vi' ? word.definitionVi : word.definition}
+                    </span>
+                    <span className="row gap-2 wrap">
+                      {word.satSense && (
+                        <Badge tone="warning">{locale === 'vi' ? 'Nghĩa 2' : '2nd sense'}</Badge>
+                      )}
+                      <Badge tone={word.tier === 1 ? 'primary' : word.tier === 2 ? 'info' : 'default'}>
+                        Tier {word.tier}
+                      </Badge>
                       {!card ? (
                         <Badge>{locale === 'vi' ? 'Chưa học' : 'New'}</Badge>
                       ) : card.repetitions >= 3 ? (
@@ -185,13 +341,18 @@ export function VocabTrainer(): React.ReactElement {
                       ) : (
                         <Badge tone="info">{locale === 'vi' ? 'Đang học' : 'Learning'}</Badge>
                       )}
-                    </td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
-        </div>
+                    </span>
+                  </button>
+                  {open && (
+                    <div className="vocab-row-body">
+                      <WordDetail word={word} vi={locale === 'vi'} />
+                    </div>
+                  )}
+                </li>
+              );
+            })}
+          </ul>
+        )}
       </Card>
     </div>
   );

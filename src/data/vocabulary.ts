@@ -7,17 +7,38 @@
  * long, rare words that older word lists collected.
  *
  * Tier 1 words appear most often in released material and are taught first.
+ *
+ * The deck is assembled from six sets, each answering a different way the
+ * section is failed:
+ *
+ *   core       this file — general academic vocabulary
+ *   sense      common words in their academic second meaning
+ *   tone       author stance, where every option is a single adjective
+ *   argument   the language the questions themselves are written in
+ *   science    the register of half the passages
+ *   history    the register of the other half
+ *
+ * `scripts/check-bank.ts` holds the invariants: no word appears twice across
+ * the sets, every entry carries its Vietnamese, and every example sentence
+ * actually uses the word it teaches. That last check is the one that matters:
+ * an example that does not contain the word teaches nothing, and it is the
+ * easiest thing in the world to write by accident.
  */
 
 import type { VocabWord } from '../types.ts';
+import { VOCAB_SENSE } from './vocab-sense.ts';
+import { VOCAB_TONE } from './vocab-tone.ts';
+import { VOCAB_ARGUMENT } from './vocab-argument.ts';
+import { VOCAB_SCIENCE } from './vocab-science.ts';
+import { VOCAB_HISTORY } from './vocab-history.ts';
+import { VOCAB_ACADEMIC } from './vocab-academic.ts';
 
-export const VOCABULARY: VocabWord[] = [
+const VOCAB_CORE: VocabWord[] = [
   { id: 'v001', word: 'ambiguous', pos: 'adj', definition: 'open to more than one interpretation', definitionVi: 'mơ hồ, có thể hiểu theo nhiều nghĩa', example: 'The treaty clause was ambiguous enough that both parties claimed it favoured them.', synonyms: ['equivocal', 'unclear'], tier: 1 },
   { id: 'v002', word: 'undermine', pos: 'v', definition: 'to weaken gradually, especially by indirect means', definitionVi: 'làm suy yếu dần, ngầm phá hoại', example: 'The new findings undermine the assumption on which the model rests.', synonyms: ['erode', 'subvert'], tier: 1 },
   { id: 'v003', word: 'nuanced', pos: 'adj', definition: 'marked by subtle distinctions', definitionVi: 'tinh tế, có sắc thái phân biệt rõ', example: 'Her reading of the poem is more nuanced than earlier accounts.', synonyms: ['subtle', 'refined'], tier: 1 },
   { id: 'v004', word: 'plausible', pos: 'adj', definition: 'seeming reasonable or probable', definitionVi: 'nghe hợp lý, có vẻ đúng', example: 'The explanation is plausible but remains untested.', synonyms: ['credible', 'believable'], tier: 1 },
   { id: 'v005', word: 'substantiate', pos: 'v', definition: 'to provide evidence supporting a claim', definitionVi: 'chứng minh bằng bằng chứng', example: 'No document has been found to substantiate the allegation.', synonyms: ['corroborate', 'verify'], tier: 1 },
-  { id: 'v006', word: 'novel', pos: 'adj', definition: 'new and not resembling anything formerly known', definitionVi: 'mới mẻ, chưa từng có', example: 'The team proposed a novel approach to protein folding.', synonyms: ['innovative', 'unprecedented'], tier: 1 },
   { id: 'v007', word: 'compelling', pos: 'adj', definition: 'convincing enough to command attention or belief', definitionVi: 'thuyết phục mạnh, cuốn hút', example: 'The prosecution presented compelling evidence.', synonyms: ['persuasive', 'cogent'], tier: 1 },
   { id: 'v008', word: 'preclude', pos: 'v', definition: 'to prevent something from happening', definitionVi: 'ngăn không cho xảy ra', example: 'The budget does not preclude further study.', synonyms: ['prevent', 'rule out'], tier: 2 },
   { id: 'v009', word: 'arbitrary', pos: 'adj', definition: 'based on random choice rather than reason', definitionVi: 'tuỳ tiện, không theo lý do nào', example: 'The cut-off was arbitrary; any nearby value would have served.', synonyms: ['random', 'capricious'], tier: 1 },
@@ -25,7 +46,6 @@ export const VOCABULARY: VocabWord[] = [
   { id: 'v011', word: 'discrete', pos: 'adj', definition: 'individually separate and distinct', definitionVi: 'rời rạc, tách biệt', example: 'The process occurs in discrete stages, not continuously.', synonyms: ['separate', 'distinct'], tier: 2 },
   { id: 'v012', word: 'empirical', pos: 'adj', definition: 'based on observation or experiment rather than theory', definitionVi: 'dựa trên quan sát/thực nghiệm', example: 'The claim has strong theoretical appeal but little empirical support.', synonyms: ['observed', 'experimental'], tier: 1 },
   { id: 'v013', word: 'anomaly', pos: 'n', definition: 'something that deviates from what is expected', definitionVi: 'điều bất thường, dị biệt', example: 'The reading was dismissed as an anomaly until it recurred.', synonyms: ['irregularity', 'aberration'], tier: 1 },
-  { id: 'v014', word: 'concede', pos: 'v', definition: 'to admit that something is true, often reluctantly', definitionVi: 'thừa nhận (miễn cưỡng)', example: 'She concedes the point but disputes its significance.', synonyms: ['acknowledge', 'grant'], tier: 1 },
   { id: 'v015', word: 'salient', pos: 'adj', definition: 'most noticeable or important', definitionVi: 'nổi bật, đáng chú ý nhất', example: 'The salient feature of the design is its modularity.', synonyms: ['prominent', 'striking'], tier: 2 },
   { id: 'v016', word: 'tenuous', pos: 'adj', definition: 'very weak or slight', definitionVi: 'mong manh, yếu ớt', example: 'The connection between the two events is tenuous at best.', synonyms: ['flimsy', 'weak'], tier: 2 },
   { id: 'v017', word: 'proliferate', pos: 'v', definition: 'to increase rapidly in number', definitionVi: 'sinh sôi, tăng nhanh', example: 'Cheap sensors proliferated once the patent expired.', synonyms: ['multiply', 'burgeon'], tier: 2 },
@@ -74,8 +94,54 @@ export const VOCABULARY: VocabWord[] = [
   { id: 'v060', word: 'discern', pos: 'v', definition: 'to perceive or recognise something with effort', definitionVi: 'nhận ra, phân biệt được', example: 'No pattern could be discerned in the first year of data.', synonyms: ['detect', 'distinguish'], tier: 2 },
 ];
 
+export const VOCABULARY: VocabWord[] = [
+  ...VOCAB_CORE,
+  ...VOCAB_ACADEMIC,
+  ...VOCAB_SENSE,
+  ...VOCAB_ARGUMENT,
+  ...VOCAB_TONE,
+  ...VOCAB_SCIENCE,
+  ...VOCAB_HISTORY,
+];
+
 export const VOCAB_BY_ID = new Map<string, VocabWord>(VOCABULARY.map((w) => [w.id, w]));
 
 export function vocabByTier(tier: 1 | 2 | 3): VocabWord[] {
   return VOCABULARY.filter((w) => w.tier === tier);
+}
+
+/** Entries whose tested meaning is not the one a learner already has. */
+export function vocabWithSecondSense(): VocabWord[] {
+  return VOCABULARY.filter((w) => w.satSense);
+}
+
+/** Entries carrying a named confusion — the deck's highest-value subset. */
+export function vocabWithTraps(): VocabWord[] {
+  return VOCABULARY.filter((w) => w.trap && w.trapVi);
+}
+
+export function vocabByRegister(register: NonNullable<VocabWord['register']>): VocabWord[] {
+  return VOCABULARY.filter((w) => w.register === register);
+}
+
+export interface VocabStats {
+  total: number;
+  byTier: Record<1 | 2 | 3, number>;
+  withSecondSense: number;
+  withTrap: number;
+  withCollocations: number;
+}
+
+export function vocabStats(): VocabStats {
+  return {
+    total: VOCABULARY.length,
+    byTier: {
+      1: vocabByTier(1).length,
+      2: vocabByTier(2).length,
+      3: vocabByTier(3).length,
+    },
+    withSecondSense: vocabWithSecondSense().length,
+    withTrap: vocabWithTraps().length,
+    withCollocations: VOCABULARY.filter((w) => (w.collocations?.length ?? 0) > 0).length,
+  };
 }

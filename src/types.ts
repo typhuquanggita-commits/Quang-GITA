@@ -322,6 +322,44 @@ export interface VocabWord {
   synonyms: string[];
   /** SAT tier: 1 = high-frequency academic, 2 = mid, 3 = low-frequency. */
   tier: 1 | 2 | 3;
+
+  /*
+   * The fields below are what separate a deck from a bilingual word list.
+   * All optional: a word carries one only when it has something true to say.
+   */
+
+  /**
+   * The sense the test actually uses, when it is not the everyday one.
+   *
+   * This is the Digital SAT's real vocabulary demand. It does not ask for
+   * obscure words; it asks for common words in their academic senses —
+   * "qualify" meaning to limit, "sound" meaning valid, "arrest" meaning to
+   * halt. A learner who knows only the everyday sense reads the sentence
+   * confidently and answers it wrong.
+   */
+  satSense?: {
+    gloss: string;
+    glossVi: string;
+    example: string;
+  };
+
+  /**
+   * A confusion this word reliably causes, stated as the confusion rather
+   * than as advice. Several are specific to Vietnamese speakers, where a
+   * dictionary gloss maps onto a Vietnamese word with a different range.
+   */
+  trap?: string;
+  trapVi?: string;
+
+  /**
+   * The company the word keeps. Knowing a gloss is not knowing a word: a
+   * learner who has memorised "mitigate = làm giảm nhẹ" still cannot tell
+   * whether one mitigates a risk or mitigates a rise.
+   */
+  collocations?: string[];
+
+  /** Where on the test the word tends to appear. */
+  register?: 'science' | 'history' | 'literature' | 'social-science' | 'general';
 }
 
 export interface AbilityEstimate {
