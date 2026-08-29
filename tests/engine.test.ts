@@ -896,6 +896,30 @@ test('reading another learner requires a shared class', () => {
   );
 });
 
+test('a student a teacher no longer shares a class with becomes unreadable', () => {
+  // The record view resolves the target's classes on every render rather than
+  // caching them, so unenrolling a student closes the teacher's access to
+  // their record immediately — not at the next reload.
+  const teacher = { role: 'teacher' as const, rank: 'teacher' as const, classIds: ['cls_a'] };
+  assert.ok(canViewLearner(teacher, { selfId: 't1', targetId: 's1', targetClassIds: ['cls_a'] }));
+  assert.ok(
+    !canViewLearner(teacher, { selfId: 't1', targetId: 's1', targetClassIds: [] }),
+    'a student in no shared class must not stay readable',
+  );
+});
+
+test('a teacher without the analytics permission cannot read a shared student', () => {
+  // Sharing a class is necessary, not sufficient. A rank that does not grant
+  // student.analytics.view must be refused even inside its own classroom.
+  const assistant = { role: 'teacher' as const, rank: 'assistant' as const, classIds: ['cls_a'] };
+  const holds = permissionsFor(assistant).has('student.analytics.view');
+  assert.equal(
+    canViewLearner(assistant, { selfId: 't1', targetId: 's1', targetClassIds: ['cls_a'] }),
+    holds,
+    'access must follow the permission, not the class membership alone',
+  );
+});
+
 test('a student level never grants authority', () => {
   // The elite level is the highest a learner can earn; it must not widen the
   // permission set by even one entry.

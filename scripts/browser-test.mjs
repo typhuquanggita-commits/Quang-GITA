@@ -219,6 +219,50 @@ try {
   await page.waitForTimeout(300);
   check('the audit log records it', await page.getByText('class.created').first().isVisible());
 
+  /* ---------------- A student's record ---------------- */
+  group('Student record');
+  await page.getByRole('tab', { name: 'Nhân sự' }).click();
+  await page.waitForTimeout(300);
+  await page.getByRole('button', { name: 'Thêm tài khoản' }).click();
+  await page.waitForTimeout(300);
+  await page.locator('.modal input.input').first().fill('Trần Bảo Ngọc');
+  await page.locator('.modal').getByRole('button', { name: 'Lưu' }).click();
+  await page.waitForTimeout(400);
+
+  await page.getByRole('tab', { name: 'Học sinh' }).click();
+  await page.waitForTimeout(400);
+  check(
+    'a student outside every class is not on the roster',
+    (await page.getByRole('button', { name: 'Xem hồ sơ' }).count()) === 0,
+  );
+
+  await page.getByRole('button', { name: 'Thêm học sinh' }).click();
+  await page.waitForTimeout(300);
+  await page.locator('.modal').getByRole('button', { name: 'Thêm' }).first().click();
+  await page.waitForTimeout(400);
+  await page.keyboard.press('Escape');
+  await page.waitForTimeout(400);
+
+  await page.getByRole('button', { name: 'Xem hồ sơ' }).first().click();
+  await page.waitForTimeout(600);
+  check('the record opens', (await title()).includes('Trần Bảo Ngọc'));
+  check(
+    'the record states what this device cannot see',
+    (await page.getByText(/không bao giờ tới thiết bị này/).count()) === 1,
+  );
+  check(
+    'an unsynced score is not shown as a zero',
+    (await page.locator('.kpi-value').first().innerText()).trim() === '—',
+  );
+
+  // Looking at someone else's record is a privileged act and has to leave a
+  // trace; a policy without a record is only a claim about the past.
+  await page.evaluate(() => { window.location.hash = '#/console'; });
+  await page.waitForTimeout(500);
+  await page.getByRole('tab', { name: 'Nhật ký' }).click();
+  await page.waitForTimeout(300);
+  check('viewing it was audited', await page.getByText('student.record.viewed').first().isVisible());
+
   await page.evaluate(() => { window.location.hash = '#/settings'; });
   await page.waitForTimeout(400);
   await page.locator('select').first().selectOption('student');

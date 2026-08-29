@@ -75,6 +75,9 @@ const Analytics = lazy(() =>
 const TeacherConsole = lazy(() =>
   import('../console/TeacherConsole.tsx').then((m) => ({ default: m.TeacherConsole })),
 );
+const StudentDetail = lazy(() =>
+  import('../console/StudentDetail.tsx').then((m) => ({ default: m.StudentDetail })),
+);
 const Settings = lazy(() =>
   import('../settings/Settings.tsx').then((m) => ({ default: m.Settings })),
 );
@@ -388,7 +391,9 @@ function RouteView({
     case 'analytics':
       return <Analytics navigate={navigate} />;
     case 'console':
-      return <TeacherConsole />;
+      return <TeacherConsole navigate={navigate} />;
+    case 'student':
+      return <StudentDetail accountId={route.accountId} navigate={navigate} />;
     case 'settings':
       return <Settings />;
     default:

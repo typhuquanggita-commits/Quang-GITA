@@ -14,6 +14,7 @@
 
 import React, { useMemo, useState } from 'react';
 import { useStore } from '../../state/store.tsx';
+import type { Route } from '../shell/routes.ts';
 import { useLocale, useT } from '../../i18n/index.ts';
 import {
   canForClass,
@@ -47,7 +48,7 @@ import { addDays, formatDate, isoDate, uid } from '../../lib/util.ts';
 
 type ConsoleTab = 'classes' | 'students' | 'assignments' | 'people' | 'audit';
 
-export function TeacherConsole(): React.ReactElement {
+export function TeacherConsole({ navigate }: { navigate(route: Route): void }): React.ReactElement {
   const locale = useLocale();
   const { state, allows } = useStore();
   const org = state.org;
@@ -110,7 +111,7 @@ export function TeacherConsole(): React.ReactElement {
 
       <div style={{ marginTop: 'var(--space-6)' }}>
         {activeTab === 'classes' && <ClassesPanel classes={myClasses} me={me} />}
-        {activeTab === 'students' && <StudentsPanel classes={myClasses} />}
+        {activeTab === 'students' && <StudentsPanel classes={myClasses} navigate={navigate} />}
         {activeTab === 'assignments' && <AssignmentsPanel classes={myClasses} me={me} />}
         {activeTab === 'people' && <PeoplePanel me={me} />}
         {activeTab === 'audit' && <AuditPanel />}
@@ -274,7 +275,13 @@ function ClassesPanel({ classes, me }: { classes: ClassRoom[]; me: Account }): R
 /* Students                                                            */
 /* ------------------------------------------------------------------ */
 
-function StudentsPanel({ classes }: { classes: ClassRoom[] }): React.ReactElement {
+function StudentsPanel({
+  classes,
+  navigate,
+}: {
+  classes: ClassRoom[];
+  navigate(route: Route): void;
+}): React.ReactElement {
   const t = useT();
   const locale = useLocale();
   const { state, dispatch, principal, audit } = useStore();
@@ -363,6 +370,13 @@ function StudentsPanel({ classes }: { classes: ClassRoom[] }): React.ReactElemen
                         )}
                       </td>
                       <td style={{ textAlign: 'right' }}>
+                        <Button
+                          variant="ghost"
+                          size="sm"
+                          onClick={() => navigate({ name: 'student', accountId: student.id })}
+                        >
+                          {locale === 'vi' ? 'Xem hồ sơ' : 'Open record'}
+                        </Button>
                         {room && canForClass(principal, 'class.edit', room.id) && (
                           <Button
                             variant="ghost"

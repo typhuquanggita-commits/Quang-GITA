@@ -46,7 +46,36 @@ administrator is unscoped.
 
 Tested in `tests/engine.test.ts` under *class permissions are scoped to the
 classes a teacher teaches* and *reading another learner requires a shared
-class*.
+class*. Two further tests hold the edges: unenrolling a student closes the
+teacher's access to their record immediately, because the record view
+resolves the target's classes on every render rather than caching them at
+mount; and sharing a class is necessary but not sufficient, since a rank
+without `student.analytics.view` is refused inside its own classroom.
+
+### The student record
+
+`#/student/:accountId` is where `student.analytics.view` is exercised. Three
+properties define it.
+
+**A refusal is shown as a refusal.** A viewer without access sees why, not an
+empty page. A blank screen teaches nobody anything and reads as "this student
+has done nothing".
+
+**Opening it is logged.** One `student.record.viewed` entry per record opened
+— keyed by the target account, so navigating between two students logs both
+while an unrelated re-render logs neither. An audit log that inflates with
+renders is worse than none, because it looks precise. Reading your own record
+writes nothing; that is not surveillance. A denied attempt writes
+`permission.denied`.
+
+**It states what it cannot see.** There is no server. A learner's responses
+live in their own browser and never reach a teacher's device, so the record
+shows the cached class summary — last synced score, the level it earns,
+assignment status — and says so in the interface. A blank figure means "not
+synced here", not "the student has done nothing". A teacher holding
+`student.responses.view` is told plainly that the permission has no data
+behind it until there is a server to sync, rather than being left hunting for
+a screen that cannot exist.
 
 ## Student levels
 
