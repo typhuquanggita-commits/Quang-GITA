@@ -2,20 +2,9 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  */
+import {TRAINING_CREED, MENTOR_CREED, MENTOR_SESSION, MENTOR_STAGES, MENTOR_RULES, COACH_LADDER, ADVANCED_COURSES, EXCELLENCE_CREED, EXCELLENCE_GATES, EXCELLENCE_SHIFTS, EXCELLENCE_EXITS} from '../../data';
 import React, {useState} from 'react';
-import {
-  TRAINING_CREED,
-  MENTOR_CREED,
-  MENTOR_SESSION,
-  MENTOR_STAGES,
-  MENTOR_RULES,
-  COACH_LADDER,
-  ADVANCED_COURSES,
-  EXCELLENCE_CREED,
-  EXCELLENCE_GATES,
-  EXCELLENCE_SHIFTS,
-  EXCELLENCE_EXITS,
-} from '../../data';
+
 import {SectionHeader, Card, Chip, Stat, Bullets, Filters, Accordion} from './ui';
 
 const WHO_TONE: Record<string, 'sky' | 'violet' | 'amber'> = {

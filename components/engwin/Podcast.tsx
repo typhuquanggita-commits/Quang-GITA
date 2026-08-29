@@ -2,16 +2,9 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  */
+import {PODCAST_SERIES, PODCAST_FORMATS, PODCAST_EPISODES, estimateSeconds, PRODUCTION_PIPELINE, VOICE_ROLES, MIX_NOTES} from '../../data';
 import React, {useState} from 'react';
-import {
-  PODCAST_SERIES,
-  PODCAST_FORMATS,
-  PODCAST_EPISODES,
-  estimateSeconds,
-  PRODUCTION_PIPELINE,
-  VOICE_ROLES,
-  MIX_NOTES,
-} from '../../data';
+
 import {Card, Chip, Field, SectionHeader, Filters, Accordion} from './ui';
 
 const mmss = (s: number) =>

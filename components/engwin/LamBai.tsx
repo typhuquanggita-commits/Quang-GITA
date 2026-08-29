@@ -4,11 +4,16 @@
  */
 import React, {useMemo, useState} from 'react';
 import {
-  NGAN_HANG, NGANHANG_SO, NGANHANG_CREED, CHUYEN_DE_CO_CAU,
-  cauCuaChuyenDe, chamCau, DANG_BAI, LOAI_PHIEU, GIAI_BY_DANG,
+  DANG_BAI, LOAI_PHIEU, GIAI_BY_DANG,
   luuLuotNganHang, docLuotNganHang, phanTichNganHang, xoaLuotNganHang,
   DU_DE_KET_LUAN,
 } from '../../data';
+// Nạp thẳng, không qua thùng chung: 451 KB nguồn chỉ thẻ này cần.
+// Xem ghi chú cuối data/index.ts.
+import {
+  NGAN_HANG, NGANHANG_SO, NGANHANG_CREED, CHUYEN_DE_CO_CAU,
+  cauCuaChuyenDe, chamCau,
+} from '../../data/nganhang';
 import {SectionHeader, Card, Chip, Stat, Filters} from './ui';
 import type {CauHoi} from '../../types';
 

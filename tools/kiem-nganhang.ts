@@ -151,14 +151,14 @@ trong.tong === 0 && trong.tiLe === 0
   ? ok('chấm phiếu rỗng không chia cho không') : fail('chấm phiếu rỗng lỗi');
 
 /* --------------------- CREED PHẢI KHỚP SỐ THẬT -------------------------- */
-NGANHANG_SO.soChuyenDe === 10 && /mười chuyên đề/.test(NGANHANG_CREED.phamVi)
-  ? ok('lời tự nhận "mười chuyên đề" khớp với số chuyên đề thật')
+NGANHANG_SO.soChuyenDe === 50 && /năm mươi chuyên đề/.test(NGANHANG_CREED.phamVi)
+  ? ok('lời tự nhận "năm mươi chuyên đề" khớp với số chuyên đề thật')
   : fail(`lời tự nhận không khớp: creed nói gì đó khác ${NGANHANG_SO.soChuyenDe} chuyên đề thật`);
-NGANHANG_SO.soChuyenDeTong - NGANHANG_SO.soChuyenDe === 70 && /Bảy mươi chuyên đề còn lại/.test(NGANHANG_CREED.phamVi)
-  ? ok('lời tự nhận "bảy mươi chuyên đề còn lại" khớp với phần chưa phủ')
+NGANHANG_SO.soChuyenDeTong - NGANHANG_SO.soChuyenDe === 30 && /Ba mươi chuyên đề còn lại/.test(NGANHANG_CREED.phamVi)
+  ? ok('lời tự nhận "ba mươi chuyên đề còn lại" khớp với phần chưa phủ')
   : fail(`phần chưa phủ thật là ${NGANHANG_SO.soChuyenDeTong - NGANHANG_SO.soChuyenDe}, creed nói khác`);
 /nghe|đọc|bản quyền|ngữ liệu/.test(NGANHANG_CREED.phamVi)
-  ? ok('nói thẳng vì sao bảy mươi chuyên đề kia chưa có câu trắc nghiệm')
+  ? ok('nói thẳng vì sao ba mươi chuyên đề kia chưa có câu trắc nghiệm')
   : fail('không nói vì sao phần còn lại chưa có câu');
 
 /* Không được nhận suông là câu do người soạn — kiểm chính lời nhận. */

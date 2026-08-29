@@ -11,6 +11,13 @@
  * Chạy: npx tsx tools/kiem-so-khai.ts
  */
 import * as D from '../data/index';
+// Bốn mô-đun nặng không nằm trong thùng chung nữa (xem ghi chú cuối
+// data/index.ts), nên bài kiểm nạp thẳng để vẫn soi được chúng.
+import * as DProd from '../data/production';
+import * as DGiang from '../data/giangsau';
+import * as DNgan from '../data/nganhang';
+import * as DDe from '../data/dethi';
+import * as DBo from '../data/bode';
 import {readFileSync} from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
@@ -31,8 +38,8 @@ const MONG: {tab: RegExp; don: RegExp; that: number; nguon: string}[] = [
   // hai tab khác nhau, hai kho nội dung khác nhau.
   {tab: /^Bài giảng$/, don: /chuỗi/i, that: (D.LECTURE_SERIES as any[]).length, nguon: 'LECTURE_SERIES'},
   {tab: /^Bài giảng$/, don: /bài/i, that: (D.LECTURE_SERIES as any[]).reduce((s, x: any) => s + x.lessons.length, 0), nguon: 'tổng bài giảng'},
-  {tab: /Bài giảng chuyên sâu/, don: /trụ/i, that: (D as any).TRU.length, nguon: 'TRU'},
-  {tab: /Bài giảng chuyên sâu/, don: /bài/i, that: (D as any).GIANG_SAU_SO.soBai, nguon: 'bài giảng chuyên sâu'},
+  {tab: /Bài giảng chuyên sâu/, don: /trụ/i, that: DGiang.TRU.length, nguon: 'TRU'},
+  {tab: /Bài giảng chuyên sâu/, don: /bài/i, that: (DGiang as any).GIANG_SAU_SO.soBai, nguon: 'bài giảng chuyên sâu'},
   {tab: /Bộ phiếu chuyên đề/, don: /chuyên đề/i, that: (D as any).CHUYENDE_SO.soChuyenDe, nguon: 'CHUYENDE_SO.soChuyenDe'},
   {tab: /Bộ phiếu chuyên đề/, don: /loại/i, that: (D as any).CHUYENDE_SO.soLoai, nguon: 'CHUYENDE_SO.soLoai'},
   {tab: /Bộ phiếu chuyên đề/, don: /phiếu/i, that: (D as any).CHUYENDE_SO.tongPhieu, nguon: 'CHUYENDE_SO.tongPhieu'},
@@ -57,7 +64,7 @@ const MONG: {tab: RegExp; don: RegExp; that: number; nguon: string}[] = [
   {tab: /Chấm bài/, don: /phác đồ/i, that: (D.ERROR_REMEDIES as any[]).length, nguon: 'ERROR_REMEDIES'},
   {tab: /Podcast/, don: /tập/i, that: (D.PODCAST_EPISODES as any[]).length, nguon: 'PODCAST_EPISODES'},
   {tab: /Dàn giọng/, don: /giọng/i, that: (D.VOICE_ROSTER as any[]).length, nguon: 'VOICE_ROSTER'},
-  {tab: /Xưởng học liệu/, don: /bản thiết kế/i, that: (D.PRODUCTION_SPECS as any[]).length, nguon: 'PRODUCTION_SPECS'},
+  {tab: /Xưởng học liệu/, don: /bản thiết kế/i, that: (DProd.PRODUCTION_SPECS as any[]).length, nguon: 'PRODUCTION_SPECS'},
   {tab: /Lộ trình$/, don: /cột mốc/i, that: (D.MILESTONES as any[]).length, nguon: 'MILESTONES'},
   {tab: /Thi tốt nghiệp/, don: /bài/i, that: (D.GRADUATION_EXAMS as any[]).length, nguon: 'GRADUATION_EXAMS'},
   {tab: /Đánh giá định kỳ/, don: /bộ đề/i, that: (D.BATTERIES as any[]).length, nguon: 'BATTERIES'},

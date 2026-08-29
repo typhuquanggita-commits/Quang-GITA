@@ -3,13 +3,8 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 import React, {useMemo, useState} from 'react';
-import {
-  DOSSIER_CREED,
-  DOSSIER_QUARTERS,
-  dossierYear,
-  WHITE_DAYS,
-  GRADUATION_EXAMS,
-} from '../../data';
+import {GRADUATION_EXAMS, DOSSIER_CREED, DOSSIER_QUARTERS, dossierYear, WHITE_DAYS} from '../../data';
+
 import {DossierDay, DossierDayKind} from '../../types';
 import {SectionHeader, Card, Chip, Stat, Bullets, Filters} from './ui';
 

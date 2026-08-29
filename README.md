@@ -545,10 +545,59 @@ mươi nghìn câu. Viết riêng từng lời giải thì mỗi cái chỉ dùn
 lớn sẽ lặp nhau. Cái **thật sự chuyển giao được** là quy trình nghĩ và ba bẫy của dạng
 bài — thứ dùng lại được ở mọi câu cùng dạng, kể cả câu chưa gặp.
 
+## 🚀 Bản 1.5.0 — gấp năm lần bản trước, đo được
+
+"Chất lượng gấp năm lần" chỉ có nghĩa khi nó là con số kiểm được. Đây là bốn con số đó,
+và mỗi con số có một bài kiểm tự động giữ.
+
+| | v1.2.0 | **v1.5.0** | |
+|---|---|---|---|
+| Câu hỏi có đáp án bấm được | 120 | **600** | **×5** |
+| Chuyên đề có ngân hàng câu | 10 / 80 | **50 / 80** | **×5** |
+| Nhận xét riêng cho từng lựa chọn | 480 | **2.400** | **×5** |
+| Gói tải lần đầu | 1.217 kB | **671 kB** | **−45%** |
+
+Con số cuối là con số đáng chú ý nhất: **nội dung tăng gấp năm mà thứ người dùng phải
+tải trước khi thấy được gì lại giảm gần một nửa.**
+
+**Ngân hàng nay phủ sáu kỹ năng**, không còn dồn vào ngữ pháp: phát âm 120 câu · ngữ pháp
+120 · từ vựng 120 · đọc 96 · viết 96 · tư duy học tập 48. Đáp án rải đều bốn ô
+(149/152/150/149) nên đoán theo vị trí không ăn được điểm nào.
+
+### Vì sao gói tải lần đầu lại nhỏ đi
+
+`data/index.ts` là một thùng tái xuất mọi mô-đun dữ liệu, và `App.tsx` nạp nó ngay từ
+đầu. Hễ thùng còn tái xuất `data/nganhang.ts` thì **cả 39 thẻ đều phải tải 451 KB ngân
+hàng câu hỏi** — kể cả thẻ Hiến chương vốn không liên quan gì tới nó.
+
+Năm mô-đun nặng mà mỗi cái chỉ có **đúng một thẻ** dùng tới đã được gỡ khỏi thùng chung;
+các thẻ cần chúng nạp thẳng từ đường dẫn riêng. Rollup nhờ đó xếp được chúng vào đúng
+chunk của thẻ, và người dùng chỉ tải khi thật sự mở thẻ ấy.
+
+Trong lúc làm, bốn mô-đun tưởng là dùng riêng hoá ra có người dùng thứ hai — `academy`
+(thẻ Cấp độ cũng cần), `feedback`, `podcast`, `training` (cả ba đều bị `data/timkiem.ts`
+dùng để dựng chỉ mục tìm kiếm). Chúng được trả lại thùng chung. Tách sai thì trình biên
+dịch báo ngay, nên đây là loại tối ưu an toàn.
+
+`tools/kiem-hieu-nang.mjs` giữ kết quả này: nó đặt trần 800 kB cho gói tải lần đầu,
+kiểm ngân hàng có thật sự nằm ở chunk riêng không, và soi thẳng `data/index.ts` xem có
+mô-đun nặng nào lén quay lại thùng chung không.
+
+### Nói thẳng phần chưa làm được
+
+**Ba mươi chuyên đề còn lại chưa có câu trắc nghiệm** — toàn bộ *nghe* và *nói*, cộng
+đọc bài dài, viết đoạn và viết luận tự do. Chúng cần ngữ liệu âm thanh, bài đọc có bản
+quyền, hoặc một người chấm. Chúng vẫn có bộ giải đề và phiếu chuyên đề, nhưng không có
+câu bấm được. Con số 600 là con số thật của phần bấm được, không phải con số của cả
+hệ thống.
+
+Giọng Việt ngoại tuyến **vẫn chưa có thanh điệu**, và **vẫn chưa có chứng chỉ ký mã** nên
+Windows còn cảnh báo SmartScreen. Hai việc này không đổi ở 1.5.0.
+
 ## ✍️ Ngân hàng câu hỏi — bấm chọn, chấm, xem đáp án
 
 Bộ giải đề dạy **cách nghĩ** cho tám mươi dạng bài. Ngân hàng câu hỏi là chỗ có **câu cụ
-thể để bấm**: **120 câu · 10 chuyên đề · 480 lựa chọn · 480 nhận xét · 40 câu dựng theo
+thể để bấm**: **600 câu · 50 chuyên đề · 2.400 lựa chọn · 2.400 nhận xét · 145 câu dựng theo
 bẫy có sẵn**. Tab **Làm bài · xem đáp án**.
 
 **Bốn nhận xét cho bốn lựa chọn, không phải một.** Phần lớn ngân hàng câu hỏi chỉ ghi
@@ -565,7 +614,7 @@ chọn sai. Lịch sử đếm bẫy hay mắc nhất.
 vào ô B: học viên cứ chọn B mà không đọc gì cũng được **62%**. Bài kiểm bắt được, và
 cách sửa là xoay vòng bốn ô theo số thứ tự câu — xoay vòng giữ nguyên cặp *lựa chọn ↔
 nhận xét* nên không thể lệch nhận xét sang nhầm ô, và vì tính từ số thứ tự nên kết quả
-cố định qua mọi lần chạy. Nay là **29 / 32 / 30 / 29**. Năm câu mà bốn ô vốn đã có thứ
+cố định qua mọi lần chạy. Nay là **149 / 152 / 150 / 149** trên 600 câu. Năm câu mà bốn ô vốn đã có thứ
 tự thật (âm tiết một, hai, ba…) được ghi tên và giữ nguyên.
 
 **Phạm vi, nói thẳng.** Mười chuyên đề là những chỗ tính đúng sai **kiểm được chắc

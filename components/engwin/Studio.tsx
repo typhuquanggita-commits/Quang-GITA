@@ -3,7 +3,8 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 import React from 'react';
-import {STUDIO_RULES, PRODUCTION_SPECS, ROLLOUT} from '../../data';
+// Nạp thẳng, không qua thùng chung. Xem ghi chú cuối data/index.ts.
+import {STUDIO_RULES, PRODUCTION_SPECS, ROLLOUT} from '../../data/production';
 import {Card, Chip, Field, Bullets, SectionHeader, Accordion} from './ui';
 
 export const Studio: React.FC = () => {

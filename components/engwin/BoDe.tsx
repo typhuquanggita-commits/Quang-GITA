@@ -3,7 +3,9 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 import React, {useMemo, useState} from 'react';
-import {boDe, BODE_SO, BODE_CREED, KHO_BI_KIP, deTheoDang, DANG_BAI, LEVELS} from '../../data';
+import {DANG_BAI, LEVELS} from '../../data';
+// Nạp thẳng, không qua thùng chung. Xem ghi chú cuối data/index.ts.
+import {boDe, BODE_SO, BODE_CREED, KHO_BI_KIP, deTheoDang} from '../../data/bode';
 import {SectionHeader, Card, Chip, Stat, Filters} from './ui';
 
 const KY = [

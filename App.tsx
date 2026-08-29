@@ -245,7 +245,7 @@ const NAV: Nav[] = [
     id: 'lambai',
     icon: '✍️',
     label: 'Làm bài · xem đáp án',
-    hint: '120 câu · 480 nhận xét',
+    hint: '600 câu · 2.400 nhận xét',
     group: 'learner',
     render: () => <LamBai />,
   },

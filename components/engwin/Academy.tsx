@@ -2,19 +2,9 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  */
+import {ACADEMY_CREED, ROOT_PRINCIPLES, PYRAMID, GITA_MODEL, GITA_PHASES, NLP_TECHNIQUES, ENVIRONMENT_LAYERS, ADVISOR_CREED, ADVISOR_PROTOCOLS, CYCLE_STEPS} from '../../data';
 import React, {useState} from 'react';
-import {
-  ACADEMY_CREED,
-  ROOT_PRINCIPLES,
-  PYRAMID,
-  GITA_MODEL,
-  GITA_PHASES,
-  NLP_TECHNIQUES,
-  ENVIRONMENT_LAYERS,
-  ADVISOR_CREED,
-  ADVISOR_PROTOCOLS,
-  CYCLE_STEPS,
-} from '../../data';
+
 import {Card, Chip, Field, Bullets, NumberedSteps, Filters, Accordion} from './ui';
 
 const Block: React.FC<{

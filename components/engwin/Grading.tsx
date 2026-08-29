@@ -2,8 +2,9 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  */
-import React, {useState} from 'react';
 import {FEEDBACK_CREED, FEEDBACK_SECTIONS, ERROR_REMEDIES} from '../../data';
+import React, {useState} from 'react';
+
 import {Card, Chip, Field, Bullets, NumberedSteps, SectionHeader, Filters, Accordion} from './ui';
 
 const SKILL_LABEL: Record<string, string> = {

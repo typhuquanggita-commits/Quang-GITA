@@ -3,10 +3,9 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 import React, {useMemo, useState} from 'react';
-import {
-  GIANG_SAU_CREED, TRU, TRUONG_KHO, CHU_DE, baiGiangSau, thuTuHoc,
-  GIANG_SAU_SO, LEVELS,
-} from '../../data';
+import {LEVELS} from '../../data';
+// Nạp thẳng, không qua thùng chung. Xem ghi chú cuối data/index.ts.
+import {GIANG_SAU_CREED, TRU, TRUONG_KHO, CHU_DE, baiGiangSau, thuTuHoc, GIANG_SAU_SO} from '../../data/giangsau';
 import {SectionHeader, Card, Chip, Stat, Filters, Bullets} from './ui';
 
 const TRU_TONE: Record<string, 'sky' | 'violet' | 'amber' | 'emerald'> = {

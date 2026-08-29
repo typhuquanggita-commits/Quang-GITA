@@ -3,7 +3,9 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 import React, {useState} from 'react';
-import {DE_THI_MAU, DETHI_SO, DETHI_CREED, GIAI_BY_DANG, DANG_BAI} from '../../data';
+import {GIAI_BY_DANG, DANG_BAI} from '../../data';
+// Nạp thẳng, không qua thùng chung. Xem ghi chú cuối data/index.ts.
+import {DE_THI_MAU, DETHI_SO, DETHI_CREED} from '../../data/dethi';
 import {SectionHeader, Card, Chip, Stat, Filters} from './ui';
 import type {CauDeThi} from '../../types';
 
