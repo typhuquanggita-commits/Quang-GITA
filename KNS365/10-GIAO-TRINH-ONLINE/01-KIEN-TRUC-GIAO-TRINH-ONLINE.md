@@ -212,6 +212,13 @@ Tệp media:
 | 5 | Không có cơ chế gây nghiện (chuỗi thông báo dồn dập, phần thưởng ngẫu nhiên, cuộn vô tận) — trái với chính nội dung `M7` mà chương trình dạy |
 | 6 | Nội dung chuyên đề nhạy cảm (M2.3, M2.5, M3 sâu) **không chấm điểm cá nhân công khai**; có nút **"Cần trợ giúp"** dẫn tới 3 địa chỉ hỗ trợ và số **111** |
 | 7 | Tuân thủ quy định pháp luật hiện hành về bảo vệ trẻ em trên môi trường mạng và an toàn thông tin |
+| 8 | ⛔ **Nền tảng không được có chức năng nhắn tin riêng 1-1 giữa nhân sự và người học dưới 16 tuổi.** Mọi kênh trao đổi là **nhóm có ≥2 người lớn hoặc có phụ huynh**, nội dung lưu trong hệ thống *(lỗ hổng **L-01**)* |
+| 9 | **Kiểm tra quyền ở phía máy chủ cho từng bản ghi** — không chỉ ẩn nút trên giao diện; mặc định **từ chối** khi không khớp quy tắc phân quyền |
+| 10 | **Hồ sơ bảo vệ trẻ em (D4) lưu ở khu vực tách biệt**, chỉ vai **TV** truy cập; mọi lượt đọc **cảnh báo tức thì** cho TV trưởng |
+| 11 | **Không đưa dữ liệu thật vào môi trường thử nghiệm**; dữ liệu xuất ra có watermark và hạn hiệu lực |
+
+> 📎 **Chuẩn đầy đủ bắt buộc áp dụng:** [`11-PHAN-QUYEN-BAO-MAT`](../11-PHAN-QUYEN-BAO-MAT/) — kiến trúc RBAC 11 vai, 5 tầng năng lực học sinh, 16 lỗ hổng đã bịt, nhật ký kiểm toán chỉ-thêm.
+> **Quy tắc mở khoá 7 phần** *(P4 chỉ mở sau khi đã nộp P3; P7 từ tầng HS-T2; bài đã nộp không sửa được)* quy định tại [`02-TANG-NANG-LUC-HOC-SINH-VA-MO-KHOA.md`](../11-PHAN-QUYEN-BAO-MAT/02-TANG-NANG-LUC-HOC-SINH-VA-MO-KHOA.md) Phần D — **nền tảng phải cài đặt đúng, không được nới lỏng vì trải nghiệm người dùng.**
 
 ### F3. Chuẩn tiếp cận *(accessibility)*
 - Mọi video có **phụ đề tiếng Việt**; mọi audio có **bản chép lời**.

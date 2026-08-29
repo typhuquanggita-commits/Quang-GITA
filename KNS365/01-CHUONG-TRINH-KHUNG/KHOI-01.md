@@ -24,35 +24,33 @@
 
 ## B. ĐẶC TẢ 24 CHUYÊN ĐỀ
 
-> **Cấu trúc mỗi chuyên đề:** Mục tiêu 4 lớp GITA (2 vạch Đạt/Xuất sắc) → Buổi 1 → Buổi 2 → Thực hành → Trải nghiệm & Sứ mệnh → Sản phẩm & Đánh giá → Bắc cầu học tập.
+> **Cấu trúc mỗi chuyên đề:** Mục tiêu 4 lớp GITA (2 vạch Đạt/Xuất sắc) → Buổi 1 → Buổi 2 → Thực hành → Trải nghiệm & Sứ mệnh → Đánh giá → Bắc cầu học tập.
 
 ---
 
 ### `K01-M1-01` · CON LÀ AI? – TẤM THẺ ĐẦU ĐỜI
-**Năng lực:** M1.1, M1.5 · **GITA trội:** **I** (G20·I45·T25·A10 – buổi 1) · **Cấp hành động:** A1 · **Kit:** DC-KIT-01
+**NL:** M1.1, M1.5 · **Trội:** **I** (G20·I45·T25·A10) · **Hành động:** A1 · **Kit:** DC-KIT-01
 
-| Pha | Mục tiêu — **ĐẠT** | Mục tiêu — **XUẤT SẮC** |
+| Pha | **ĐẠT** | **XUẤT SẮC** |
 |:--:|---|---|
 | **G** | Nói được đích buổi: *"Hôm nay con sẽ nói về con trước các bạn"* | Tự đặt thêm 1 đích riêng và nói ra được |
 | **I** | Dám đứng nói trước nhóm 5 bạn, không khóc, không bỏ chạy | Xung phong nói trước cả lớp, giọng rõ, tươi |
 | **T** | Nói đủ 3 câu: tên – lớp – 1 điều con thích; có nhìn vào mắt bạn ≥1 lần | Nói 5 câu, thêm 1 điều con làm giỏi kèm ví dụ thật; có cử chỉ minh hoạ |
 | **A** | Giới thiệu bản thân với **1 người mới** trong 7 ngày, có người lớn ký | Giới thiệu với **3 người mới**, có ảnh/chữ ký xác nhận |
 
-**BUỔI 1 – Định đích & Thắp lửa**
-`G` Vòng tên có nhịp vỗ tay + phát **Thẻ Đích** (con tô mặt cười vào mức mình nhắm) → `I` **Hộp Bí Mật**: mỗi con mang 1 đồ vật yêu thích, đồ vật "kể chuyện" thay con · trò chơi `TC-I-004` *Tên Tôi Có Nhạc* → `T` **T-DRILL v1–v2** vi kỹ năng: ① đứng thẳng hai chân ② nhìn vào mắt bạn ③ nói tròn câu (L1→L2), luyện theo cặp rồi nhóm 5 → `A` làm **Thẻ Tên Dấu Ấn** (vẽ + tô), nhận `PSM-K01-M1-01`.
+**BUỔI 1** `G` Vòng tên có nhịp vỗ tay + phát **Thẻ Đích** (con tô mặt cười vào mức mình nhắm) → `I` **Hộp Bí Mật**: mỗi con mang 1 đồ vật yêu thích, đồ vật "kể chuyện" thay con · trò chơi `TC-I-004` *Tên Tôi Có Nhạc* → `T` **T-DRILL v1–v2** vi kỹ năng: ① đứng thẳng hai chân ② nhìn vào mắt bạn ③ nói tròn câu (L1→L2), luyện theo cặp rồi nhóm 5 → `A` làm **Thẻ Tên Dấu Ấn** (vẽ + tô), nhận `PSM-K01-M1-01`.
 
-**BUỔI 2 – Mài giũa & Cất cánh**
-`G` Báo công sứ mệnh + **nâng đích**: nói trước 10 bạn → `I` **Sân Khấu Nhỏ**: bục cao 10cm, đèn, tiếng vỗ tay – vượt sợ có kiểm soát → `T` **T-DRILL v3–v4** ở L3→L4: thêm nhiễu (tiếng nhạc nhỏ), khán giả lạ (lớp bên) → `A` **SHOWCASE** *"Con là ai"* 45 giây, quay video gửi phụ huynh.
+**BUỔI 2** `G` Báo công sứ mệnh + **nâng đích**: nói trước 10 bạn → `I` **Sân Khấu Nhỏ**: bục cao 10cm, đèn, tiếng vỗ tay – vượt sợ có kiểm soát → `T` **T-DRILL v3–v4** ở L3→L4: thêm nhiễu (tiếng nhạc nhỏ), khán giả lạ (lớp bên) → `A` **SHOWCASE** *"Con là ai"* 45 giây, quay video gửi phụ huynh.
 
 **Thực hành:** `PTH-K01-M1-01` – Phiếu Thẻ Dấu Ấn · 4 vòng T-DRILL · Bậc mục tiêu **L3**
 **Trải nghiệm & Sứ mệnh:** Dạng `I-A` mô phỏng vai *"Ngày đầu gặp bạn mới"* · **PSM:** giới thiệu bản thân với 1 người mới, phụ huynh ký
-**Sản phẩm & Đánh giá:** Thẻ Tên Dấu Ấn + video 45" · `PDG-QS-TH`, `PDG-TDG-TH`, rubric `R-NOI-01`
+**Đánh giá:** Thẻ Tên Dấu Ấn + video 45" · `PDG-QS-TH`, `PDG-TDG-TH`, rubric `R-NOI-01`
 **Bắc cầu học tập:** Dùng ngay khi phát biểu môn Tiếng Việt, Tự nhiên & Xã hội; khi giới thiệu nhóm trong giờ Hoạt động trải nghiệm.
 
 ---
 
 ### `K01-M1-02` · VIỆC CỦA CON – CON TỰ LÀM
-**Năng lực:** M1.3, M1.5 · **GITA trội:** **A** (G20·I20·T35·A25) · **Cấp hành động:** A1 · **Kit:** DC-KIT-01, DC-KIT-09
+**NL:** M1.3, M1.5 · **Trội:** **A** (G20·I20·T35·A25) · **Hành động:** A1 · **Kit:** DC-KIT-01, DC-KIT-09
 
 | Pha | **ĐẠT** | **XUẤT SẮC** |
 |:--:|---|---|
@@ -67,13 +65,13 @@
 
 **Thực hành:** `PTH-K01-M1-02` – Phiếu Bàn Tay Vàng (ghi số giây 4 lần) · 4 vòng · **L4**
 **Trải nghiệm & Sứ mệnh:** Dạng `I-B` thử thách thể chất – tốc độ · **PSM:** 7 ngày tự làm 3 việc, phụ huynh tick bảng
-**Sản phẩm & Đánh giá:** Bảng Sao 7 ngày · `PDG-QS-TH`, `PDG-PH-01` (phiếu phụ huynh), rubric `R-TUL-01`
+**Đánh giá:** Bảng Sao 7 ngày · `PDG-QS-TH`, `PDG-PH-01` (phiếu phụ huynh), rubric `R-TCH-16`
 **Bắc cầu học tập:** Tự soạn sách vở đúng thời khoá biểu → giảm quên đồ dùng, tăng điểm chuẩn bị bài.
 
 ---
 
 ### `K01-M1-03` · MỘT NGÀY NGĂN NẮP: GIỜ NÀO VIỆC NẤY
-**Năng lực:** M1.2, M1.3 · **GITA trội:** **A** (G30·I15·T30·A25) · **Cấp hành động:** A1 · **Kit:** DC-KIT-01
+**NL:** M1.2, M1.3 · **Trội:** **A** (G30·I15·T30·A25) · **Hành động:** A1 · **Kit:** DC-KIT-01
 
 | Pha | **ĐẠT** | **XUẤT SẮC** |
 |:--:|---|---|
@@ -88,13 +86,13 @@
 
 **Thực hành:** `PTH-K01-M1-03` – Vòng Tròn Một Ngày · 4 vòng · **L3**
 **Trải nghiệm & Sứ mệnh:** Dạng `I-F` thí nghiệm hành vi 7 ngày · **PSM:** thực hiện đúng ≥4/6 mốc, phụ huynh ký
-**Sản phẩm & Đánh giá:** Đĩa Vòng Tròn Một Ngày · `PDG-QS-TH`, `PDG-PH-01`, rubric `R-KEH-01`
+**Đánh giá:** Đĩa Vòng Tròn Một Ngày · `PDG-QS-TH`, `PDG-PH-01`, rubric `R-KEH-01`
 **Bắc cầu học tập:** Vào nề nếp giờ học – giờ chơi; giảm trễ giờ vào lớp và quên bài tập.
 
 ---
 
 ### `K01-M2-01` · CƠ THỂ CON – VÙNG RIÊNG TƯ & QUY TẮC 5 NGÓN TAY
-**Năng lực:** M2.3 · **GITA trội:** **T** (G15·I25·T45·A15) · **Cấp hành động:** A1 · **Kit:** DC-KIT-02
+**NL:** M2.3 · **Trội:** **T** (G15·I25·T45·A15) · **Hành động:** A1 · **Kit:** DC-KIT-02
 > ⚠️ **Chuyên đề nhạy cảm – bắt buộc:** thông báo phụ huynh trước; có trợ giảng nữ; quyền "pass" nói rõ 3 lần; không ép HS kể chuyện cá nhân; HLV nắm quy trình báo cáo khi phát hiện dấu hiệu bất thường (Cẩm nang Giáo viên, mục 7).
 
 | Pha | **ĐẠT** | **XUẤT SẮC** |
@@ -110,13 +108,13 @@
 
 **Thực hành:** `PTH-K01-M2-01` – Phiếu Bàn Tay Tin Cậy + bảng chấm phản xạ · 4 vòng · **L4**
 **Trải nghiệm & Sứ mệnh:** Dạng `I-G` kịch tương tác (rối tay) · **PSM:** nói chuyện với 1 người tin cậy + thống nhất mật khẩu gia đình
-**Sản phẩm & Đánh giá:** Bàn Tay Tin Cậy · `PDG-QS-AT` (quan sát an toàn), rubric `R-ATT-01` · **Ghi chú:** không chấm điểm cá nhân công khai ở chuyên đề này
+**Đánh giá:** Bàn Tay Tin Cậy · `PDG-QS-AT` (quan sát an toàn), rubric `R-ATT-01` · **Ghi chú:** không chấm điểm cá nhân công khai ở chuyên đề này
 **Bắc cầu học tập:** Gắn với môn Tự nhiên & Xã hội (cơ thể người) và nội quy an toàn trường học.
 
 ---
 
 ### `K01-M2-02` · AN TOÀN TRÊN ĐƯỜNG TỚI TRƯỜNG
-**Năng lực:** M2.1 · **GITA trội:** **T** (G15·I20·T50·A15) · **Cấp hành động:** A1 · **Kit:** DC-KIT-02, DC-KIT-10
+**NL:** M2.1 · **Trội:** **T** (G15·I20·T50·A15) · **Hành động:** A1 · **Kit:** DC-KIT-02, DC-KIT-10
 
 | Pha | **ĐẠT** | **XUẤT SẮC** |
 |:--:|---|---|
@@ -131,13 +129,13 @@
 
 **Thực hành:** `PTH-K01-M2-02` – Bản đồ đường tới trường + bảng chấm 5 bước · 4 vòng · **L4**
 **Trải nghiệm & Sứ mệnh:** Dạng `I-B`/`I-E` sa bàn + quan sát thực tế cổng trường · **PSM:** 7 ngày đội mũ đúng cách
-**Sản phẩm & Đánh giá:** Bản đồ đường tới trường · `PDG-QS-AT`, `PDG-PH-01`, rubric `R-ATT-02`
+**Đánh giá:** Bản đồ đường tới trường · `PDG-QS-AT`, `PDG-PH-01`, rubric `R-ATT-02`
 **Bắc cầu học tập:** Kết nối bài "An toàn giao thông" trong môn Tự nhiên & Xã hội và Đạo đức.
 
 ---
 
 ### `K01-M2-03` · SỐ ĐIỆN THOẠI CỨU TINH & KHI CON BỊ LẠC
-**Năng lực:** M2.2 · **GITA trội:** **T** (G15·I20·T50·A15) · **Cấp hành động:** A1 · **Kit:** DC-KIT-02
+**NL:** M2.2 · **Trội:** **T** (G15·I20·T50·A15) · **Hành động:** A1 · **Kit:** DC-KIT-02
 
 | Pha | **ĐẠT** | **XUẤT SẮC** |
 |:--:|---|---|
@@ -152,13 +150,13 @@
 
 **Thực hành:** `PTH-K01-M2-03` – Thẻ Thông Tin + bảng chấm 3 bước · 4 vòng · **L4**
 **Trải nghiệm & Sứ mệnh:** Dạng `I-A` mô phỏng vai có âm thanh thật · **PSM:** diễn tập "khi lạc" cùng gia đình, thống nhất điểm hẹn
-**Sản phẩm & Đánh giá:** Thẻ Thông Tin cá nhân · `PDG-QS-AT`, `PDG-PH-01`, rubric `R-ATT-03`
+**Đánh giá:** Thẻ Thông Tin cá nhân · `PDG-QS-AT`, `PDG-PH-01`, rubric `R-ATT-03`
 **Bắc cầu học tập:** Rèn trí nhớ số (Toán) và diễn đạt thông tin mạch lạc (Tiếng Việt).
 
 ---
 
 ### `K01-M3-01` · SÁU KHUÔN MẶT CẢM XÚC
-**Năng lực:** M3.1 · **GITA trội:** **I** (G15·I40·T30·A15) · **Cấp hành động:** A1 · **Kit:** DC-KIT-03
+**NL:** M3.1 · **Trội:** **I** (G15·I40·T30·A15) · **Hành động:** A1 · **Kit:** DC-KIT-03
 
 | Pha | **ĐẠT** | **XUẤT SẮC** |
 |:--:|---|---|
@@ -173,13 +171,13 @@
 
 **Thực hành:** `PTH-K01-M3-01` – Bảng Thời Tiết Cảm Xúc · 4 vòng · **L3**
 **Trải nghiệm & Sứ mệnh:** Dạng `I-G` kịch – tranh không lời · **PSM:** mỗi tối gọi tên 1 cảm xúc trong ngày cùng bố mẹ
-**Sản phẩm & Đánh giá:** Đĩa Thời Tiết Cảm Xúc · `PDG-QS-TH`, `PDG-TDG-TH`, rubric `R-CAM-01`
+**Đánh giá:** Đĩa Thời Tiết Cảm Xúc · `PDG-QS-TH`, `PDG-TDG-TH`, rubric `R-CAM-01`
 **Bắc cầu học tập:** Hiểu nhân vật trong bài đọc Tiếng Việt; giảm xung đột giờ ra chơi.
 
 ---
 
 ### `K01-M3-02` · KHI CON GIẬN: HÍT THỞ 4 NHỊP
-**Năng lực:** M3.2 · **GITA trội:** **T** (G15·I25·T45·A15) · **Cấp hành động:** A1 · **Kit:** DC-KIT-03
+**NL:** M3.2 · **Trội:** **T** (G15·I25·T45·A15) · **Hành động:** A1 · **Kit:** DC-KIT-03
 
 | Pha | **ĐẠT** | **XUẤT SẮC** |
 |:--:|---|---|
@@ -194,13 +192,13 @@
 
 **Thực hành:** `PTH-K01-M3-02` – Bảng đếm lần hít thở 7 ngày · 4 vòng · **L4**
 **Trải nghiệm & Sứ mệnh:** Dạng `I-G` kịch tương tác dừng hình · **PSM:** dùng hít thở ≥3 lần + dạy lại 1 người nhà
-**Sản phẩm & Đánh giá:** Chai Bão Cảm Xúc + bảng đếm · `PDG-QS-TH`, `PDG-PH-01`, rubric `R-CAM-02`
+**Đánh giá:** Chai Bão Cảm Xúc + bảng đếm · `PDG-QS-TH`, `PDG-PH-01`, rubric `R-CAM-02`
 **Bắc cầu học tập:** Giảm xung đột giờ ra chơi; bình tĩnh khi làm bài khó.
 
 ---
 
 ### `K01-M3-03` · LỜI CẢM ƠN – XIN LỖI KỲ DIỆU
-**Năng lực:** M3.3, M4.5 · **GITA trội:** **A** (G15·I25·T35·A25) · **Cấp hành động:** A1 · **Kit:** DC-KIT-03
+**NL:** M3.3, M4.5 · **Trội:** **A** (G15·I25·T35·A25) · **Hành động:** A1 · **Kit:** DC-KIT-03
 
 | Pha | **ĐẠT** | **XUẤT SẮC** |
 |:--:|---|---|
@@ -215,13 +213,13 @@
 
 **Thực hành:** `PTH-K01-M3-03` – Chuỗi Ngày Tử Tế (7 ô) · 4 vòng · **L3**
 **Trải nghiệm & Sứ mệnh:** Dạng `I-F` thí nghiệm hành vi + `I-A` mô phỏng · **PSM:** 7 ngày nói cảm ơn/xin lỗi có lý do; làm 1 thiệp biết ơn
-**Sản phẩm & Đánh giá:** Thiệp Biết Ơn + bảng chuỗi ngày · `PDG-QS-TH`, `PDG-DD-TH` (đánh giá đồng đẳng), rubric `R-CAM-03`
+**Đánh giá:** Thiệp Biết Ơn + bảng chuỗi ngày · `PDG-QS-TH`, `PDG-DD-TH` (đánh giá đồng đẳng), rubric `R-CAM-03`
 **Bắc cầu học tập:** Văn hoá ứng xử lớp học; bài Đạo đức về lòng biết ơn.
 
 ---
 
 ### `K01-M4-01` · CON NÓI – CON NGHE: LUẬT ĐẾN LƯỢT
-**Năng lực:** M4.1, M4.3 · **GITA trội:** **T** (G15·I20·T50·A15) · **Cấp hành động:** A1 · **Kit:** DC-KIT-04
+**NL:** M4.1, M4.3 · **Trội:** **T** (G15·I20·T50·A15) · **Hành động:** A1 · **Kit:** DC-KIT-04
 
 | Pha | **ĐẠT** | **XUẤT SẮC** |
 |:--:|---|---|
@@ -236,13 +234,13 @@
 
 **Thực hành:** `PTH-K01-M4-01` – Bảng đếm lượt & vi phạm · 4 vòng · **L4**
 **Trải nghiệm & Sứ mệnh:** Dạng `I-B`/`I-D` · **PSM:** áp dụng luật đến lượt trong bữa cơm gia đình 7 ngày
-**Sản phẩm & Đánh giá:** Gậy Nói của Squad · `PDG-QS-TH`, `PDG-DD-TH`, rubric `R-GIA-01`
+**Đánh giá:** Gậy Nói của Squad · `PDG-QS-TH`, `PDG-DD-TH`, rubric `R-GIA-01`
 **Bắc cầu học tập:** Nề nếp phát biểu trong mọi tiết học; thảo luận nhóm môn Tiếng Việt.
 
 ---
 
 ### `K01-M4-02` · KẾT BẠN MỚI
-**Năng lực:** M4.5, M3.5 · **GITA trội:** **I** (G15·I40·T30·A15) · **Cấp hành động:** A1 · **Kit:** DC-KIT-04
+**NL:** M4.5, M3.5 · **Trội:** **I** (G15·I40·T30·A15) · **Hành động:** A1 · **Kit:** DC-KIT-04
 
 | Pha | **ĐẠT** | **XUẤT SẮC** |
 |:--:|---|---|
@@ -257,13 +255,13 @@
 
 **Thực hành:** `PTH-K01-M4-02` – Phiếu 3 bước làm quen + bảng đếm lượt · 4 vòng · **L4**
 **Trải nghiệm & Sứ mệnh:** Dạng `I-A` mô phỏng + giao lưu thật · **PSM:** làm quen 1 bạn mới, kể lại tên và 1 điều về bạn
-**Sản phẩm & Đánh giá:** Danh sách bạn mới · `PDG-QS-TH`, `PDG-TDG-TH`, rubric `R-GIA-02`
+**Đánh giá:** Danh sách bạn mới · `PDG-QS-TH`, `PDG-TDG-TH`, rubric `R-GIA-02`
 **Bắc cầu học tập:** Hoà nhập nhóm học tập; giảm cô lập trong lớp.
 
 ---
 
 ### `K01-M4-03` · CHƠI CÙNG NHAU KHÔNG GIÀNH GIẬT
-**Năng lực:** M4.3, M4.4 · **GITA trội:** **A** (G15·I20·T40·A25) · **Cấp hành động:** A1 · **Kit:** DC-KIT-04
+**NL:** M4.3, M4.4 · **Trội:** **A** (G15·I20·T40·A25) · **Hành động:** A1 · **Kit:** DC-KIT-04
 
 | Pha | **ĐẠT** | **XUẤT SẮC** |
 |:--:|---|---|
@@ -278,13 +276,13 @@
 
 **Thực hành:** `PTH-K01-M4-03` – Bảng Chơi Đẹp 7 ngày · 4 vòng · **L4**
 **Trải nghiệm & Sứ mệnh:** Dạng `I-B` thử thách hợp tác · **PSM:** 7 ngày chơi đẹp, có bạn/anh chị ký xác nhận
-**Sản phẩm & Đánh giá:** Nội quy Chơi Đẹp của Squad · `PDG-QS-TH`, `PDG-DD-TH`, rubric `R-GIA-03`
+**Đánh giá:** Nội quy Chơi Đẹp của Squad · `PDG-QS-TH`, `PDG-DD-TH`, rubric `R-GIA-03`
 **Bắc cầu học tập:** Kỷ luật giờ ra chơi; làm việc nhóm trong mọi môn học.
 
 ---
 
 ### `K01-M5-01` · VÌ SAO LẠI THẾ? – BÉ HỎI TẠI SAO
-**Năng lực:** M5.1 · **GITA trội:** **I** (G15·I40·T30·A15) · **Cấp hành động:** A1 · **Kit:** DC-KIT-05
+**NL:** M5.1 · **Trội:** **I** (G15·I40·T30·A15) · **Hành động:** A1 · **Kit:** DC-KIT-05
 
 | Pha | **ĐẠT** | **XUẤT SẮC** |
 |:--:|---|---|
@@ -299,13 +297,13 @@
 
 **Thực hành:** `PTH-K01-M5-01` – Sổ Vì Sao 7 ngày · 4 vòng · **L3**
 **Trải nghiệm & Sứ mệnh:** Dạng `I-D` điều tra – thí nghiệm nhỏ · **PSM:** mỗi ngày 1 câu hỏi Vì sao, hỏi người lớn 1 câu
-**Sản phẩm & Đánh giá:** Sổ Vì Sao + tường câu hỏi lớp · `PDG-QS-TH`, rubric `R-TUD-01`
+**Đánh giá:** Sổ Vì Sao + tường câu hỏi lớp · `PDG-QS-TH`, rubric `R-TUD-01`
 **Bắc cầu học tập:** Thái độ tìm tòi trong Tự nhiên & Xã hội, Toán; tăng chất lượng câu hỏi trong giờ học.
 
 ---
 
 ### `K01-M5-02` · XẾP – PHÂN LOẠI – TÌM QUY LUẬT
-**Năng lực:** M5.3, M5.5 · **GITA trội:** **T** (G15·I20·T50·A15) · **Cấp hành động:** A1 · **Kit:** DC-KIT-05
+**NL:** M5.3, M5.5 · **Trội:** **T** (G15·I20·T50·A15) · **Hành động:** A1 · **Kit:** DC-KIT-05
 
 | Pha | **ĐẠT** | **XUẤT SẮC** |
 |:--:|---|---|
@@ -320,13 +318,13 @@
 
 **Thực hành:** `PTH-K01-M5-02` – Phiếu phân loại & quy luật · 4 vòng · **L4**
 **Trải nghiệm & Sứ mệnh:** Dạng `I-C` chế tác – sắp xếp · **PSM:** dọn & phân loại 1 khu vực ở nhà, chụp ảnh trước–sau
-**Sản phẩm & Đánh giá:** Ảnh Trước–Sau + phiếu phân loại · `PDG-QS-TH`, `PDG-PH-01`, rubric `R-TUD-02`
+**Đánh giá:** Ảnh Trước–Sau + phiếu phân loại · `PDG-QS-TH`, `PDG-PH-01`, rubric `R-TUD-02`
 **Bắc cầu học tập:** Nền tảng tư duy Toán (so sánh, phân loại, dãy số); giữ đồ dùng học tập ngăn nắp.
 
 ---
 
 ### `K01-M5-03` · CHỌN MỘT TRONG HAI
-**Năng lực:** M5.4 · **GITA trội:** **G** (G30·I20·T35·A15) · **Cấp hành động:** A1 · **Kit:** DC-KIT-05
+**NL:** M5.4 · **Trội:** **G** (G30·I20·T35·A15) · **Hành động:** A1 · **Kit:** DC-KIT-05
 
 | Pha | **ĐẠT** | **XUẤT SẮC** |
 |:--:|---|---|
@@ -341,13 +339,13 @@
 
 **Thực hành:** `PTH-K01-M5-03` – Nhật ký Quyết Định (7 ô) · 4 vòng · **L3**
 **Trải nghiệm & Sứ mệnh:** Dạng `I-A` mô phỏng lựa chọn · **PSM:** 3 quyết định nhỏ tự đưa ra, nói lý do với bố mẹ
-**Sản phẩm & Đánh giá:** Nhật ký Quyết Định · `PDG-QS-TH`, `PDG-TDG-TH`, rubric `R-TUD-03`
+**Đánh giá:** Nhật ký Quyết Định · `PDG-QS-TH`, `PDG-TDG-TH`, rubric `R-TUD-03`
 **Bắc cầu học tập:** Tự chọn sách đọc, tự chọn cách làm bài; giảm phụ thuộc vào bạn khi làm bài.
 
 ---
 
 ### `K01-M6-01` · NGỒI HỌC ĐÚNG TƯ THẾ – GIỮ TẬP TRUNG 10 PHÚT
-**Năng lực:** M6.1 · **GITA trội:** **T** (G20·I15·T50·A15) · **Cấp hành động:** A1 · **Kit:** DC-KIT-06
+**NL:** M6.1 · **Trội:** **T** (G20·I15·T50·A15) · **Hành động:** A1 · **Kit:** DC-KIT-06
 
 | Pha | **ĐẠT** | **XUẤT SẮC** |
 |:--:|---|---|
@@ -362,13 +360,13 @@
 
 **Thực hành:** `PTH-K01-M6-01` – Bảng phiên tập trung (ghi phút & số lần xao nhãng) · 4 vòng · **L4**
 **Trải nghiệm & Sứ mệnh:** Dạng `I-F` thí nghiệm hành vi · **PSM:** 7 ngày × 1 phiên 10 phút tại nhà, phụ huynh ký
-**Sản phẩm & Đánh giá:** Biểu đồ tập trung cá nhân · `PDG-QS-TH`, `PDG-PH-01`, rubric `R-HOC-01`
+**Đánh giá:** Biểu đồ tập trung cá nhân · `PDG-QS-TH`, `PDG-PH-01`, rubric `R-HOC-01`
 **Bắc cầu học tập:** **Trực tiếp nâng chất lượng mọi tiết học**; là nền tảng cho chỉ số 3T – Tập trung.
 
 ---
 
 ### `K01-M6-02` · NGHE HIỂU VÀ LÀM THEO 3 CHỈ DẪN
-**Năng lực:** M6.2, M4.1 · **GITA trội:** **T** (G15·I20·T50·A15) · **Cấp hành động:** A1 · **Kit:** DC-KIT-06
+**NL:** M6.2, M4.1 · **Trội:** **T** (G15·I20·T50·A15) · **Hành động:** A1 · **Kit:** DC-KIT-06
 
 | Pha | **ĐẠT** | **XUẤT SẮC** |
 |:--:|---|---|
@@ -383,13 +381,13 @@
 
 **Thực hành:** `PTH-K01-M6-02` – Bảng chấm số chỉ dẫn đúng · 4 vòng · **L4**
 **Trải nghiệm & Sứ mệnh:** Dạng `I-B` thử thách vận động – trí nhớ · **PSM:** 7 ngày làm đúng chỉ dẫn của bố mẹ ngay lần đầu
-**Sản phẩm & Đánh giá:** Bảng tiến bộ số chỉ dẫn · `PDG-QS-TH`, `PDG-PH-01`, rubric `R-HOC-02`
+**Đánh giá:** Bảng tiến bộ số chỉ dẫn · `PDG-QS-TH`, `PDG-PH-01`, rubric `R-HOC-02`
 **Bắc cầu học tập:** Làm đúng yêu cầu đề bài; giảm lỗi "làm sai vì không đọc kỹ đề".
 
 ---
 
 ### `K01-M6-03` · YÊU VIỆC ĐỌC: 10 PHÚT MỖI NGÀY
-**Năng lực:** M6.2, M1.4 · **GITA trội:** **A** (G20·I25·T30·A25) · **Cấp hành động:** A1 · **Kit:** DC-KIT-06
+**NL:** M6.2, M1.4 · **Trội:** **A** (G20·I25·T30·A25) · **Hành động:** A1 · **Kit:** DC-KIT-06
 
 | Pha | **ĐẠT** | **XUẤT SẮC** |
 |:--:|---|---|
@@ -404,13 +402,13 @@
 
 **Thực hành:** `PTH-K01-M6-03` – Bảng Chuỗi 21 Ngày + phiếu kể lại · 4 vòng · **L3**
 **Trải nghiệm & Sứ mệnh:** Dạng `I-F` thí nghiệm hành vi 21 ngày · **PSM:** đọc/nghe đọc 10 phút mỗi ngày, phụ huynh ký hằng ngày
-**Sản phẩm & Đánh giá:** Bảng Chuỗi 21 Ngày + poster sách · `PDG-QS-TH`, `PDG-PH-01`, rubric `R-HOC-03`
+**Đánh giá:** Bảng Chuỗi 21 Ngày + poster sách · `PDG-QS-TH`, `PDG-PH-01`, rubric `R-HOC-03`
 **Bắc cầu học tập:** **Tăng vốn từ và tốc độ đọc hiểu** – nền tảng cho toàn bộ việc học; đây là 1 trong 3 thói quen chủ lực của khối.
 
 ---
 
 ### `K01-M7-01` · MÀN HÌNH VÀ ĐÔI MẮT CỦA CON
-**Năng lực:** M7.1, M2.4 · **GITA trội:** **G** (G30·I25·T30·A15) · **Cấp hành động:** A1 · **Kit:** DC-KIT-07
+**NL:** M7.1, M2.4 · **Trội:** **G** (G30·I25·T30·A15) · **Hành động:** A1 · **Kit:** DC-KIT-07
 
 | Pha | **ĐẠT** | **XUẤT SẮC** |
 |:--:|---|---|
@@ -425,13 +423,13 @@
 
 **Thực hành:** `PTH-K01-M7-01` – Thẻ Giờ Màn Hình 7 ngày · 4 vòng · **L3**
 **Trải nghiệm & Sứ mệnh:** Dạng `I-F` thí nghiệm hành vi · **PSM:** giữ giờ màn hình 7 ngày + 1 buổi tối không màn hình cùng gia đình
-**Sản phẩm & Đánh giá:** Thẻ Giờ + Bảng 10 việc vui · `PDG-QS-TH`, `PDG-PH-01`, rubric `R-SO-01`
+**Đánh giá:** Thẻ Giờ + Bảng 10 việc vui · `PDG-QS-TH`, `PDG-PH-01`, rubric `R-SO-01`
 **Bắc cầu học tập:** Bảo vệ thị lực; giải phóng thời gian cho đọc sách và vận động.
 
 ---
 
 ### `K01-M7-02` · THÔNG TIN CỦA CON LÀ BÍ MẬT
-**Năng lực:** M7.1, M7.2 · **GITA trội:** **T** (G15·I20·T50·A15) · **Cấp hành động:** A1 · **Kit:** DC-KIT-07
+**NL:** M7.1, M7.2 · **Trội:** **T** (G15·I20·T50·A15) · **Hành động:** A1 · **Kit:** DC-KIT-07
 
 | Pha | **ĐẠT** | **XUẤT SẮC** |
 |:--:|---|---|
@@ -446,13 +444,13 @@
 
 **Thực hành:** `PTH-K01-M7-02` – Phiếu phân loại thông tin · 4 vòng · **L4**
 **Trải nghiệm & Sứ mệnh:** Dạng `I-G` kịch rối + `I-D` điều tra ảnh · **PSM:** cùng bố mẹ rà 1 việc về thông tin riêng ở nhà
-**Sản phẩm & Đánh giá:** Poster 3 điều không nói · `PDG-QS-AT`, rubric `R-SO-02`
+**Đánh giá:** Poster 3 điều không nói · `PDG-QS-AT`, rubric `R-SO-02`
 **Bắc cầu học tập:** Nền tảng cho toàn bộ mạch M7 các khối trên; gắn nội quy an toàn của nhà trường.
 
 ---
 
 ### `K01-M7-03` · XEM GÌ – CHƠI GÌ LÀ AN TOÀN
-**Năng lực:** M7.3, M7.4 · **GITA trội:** **G** (G30·I20·T35·A15) · **Cấp hành động:** A1 · **Kit:** DC-KIT-07
+**NL:** M7.3, M7.4 · **Trội:** **G** (G30·I20·T35·A15) · **Hành động:** A1 · **Kit:** DC-KIT-07
 
 | Pha | **ĐẠT** | **XUẤT SẮC** |
 |:--:|---|---|
@@ -467,13 +465,13 @@
 
 **Thực hành:** `PTH-K01-M7-03` – Phiếu Danh sách kênh được phép · 4 vòng · **L4**
 **Trải nghiệm & Sứ mệnh:** Dạng `I-G` kịch tương tác · **PSM:** cùng bố mẹ lập danh sách kênh/trò chơi được phép
-**Sản phẩm & Đánh giá:** Bảng Đèn Giao Thông Nội Dung · `PDG-QS-AT`, `PDG-PH-01`, rubric `R-SO-03`
+**Đánh giá:** Bảng Đèn Giao Thông Nội Dung · `PDG-QS-AT`, `PDG-PH-01`, rubric `R-SO-03`
 **Bắc cầu học tập:** Giảm thời gian tiêu thụ nội dung vô bổ; tăng thời gian cho học tập và đọc sách.
 
 ---
 
 ### `K01-M8-01` · TIỀN TỪ ĐÂU MÀ CÓ?
-**Năng lực:** M8.1 · **GITA trội:** **I** (G20·I40·T25·A15) · **Cấp hành động:** A1 · **Kit:** DC-KIT-08
+**NL:** M8.1 · **Trội:** **I** (G20·I40·T25·A15) · **Hành động:** A1 · **Kit:** DC-KIT-08
 
 | Pha | **ĐẠT** | **XUẤT SẮC** |
 |:--:|---|---|
@@ -488,13 +486,13 @@
 
 **Thực hành:** `PTH-K01-M8-01` – Phiếu Việc Nhà Có Ích 7 ngày · 4 vòng · **L3**
 **Trải nghiệm & Sứ mệnh:** Dạng `I-A`/`I-E` mô phỏng chợ + phỏng vấn người lớn · **PSM:** 7 ngày làm 1 việc nhà có ích
-**Sản phẩm & Đánh giá:** Phiếu Việc Nhà + lời nhắn biết ơn · `PDG-QS-TH`, `PDG-PH-01`, rubric `R-TAI-01`
+**Đánh giá:** Phiếu Việc Nhà + lời nhắn biết ơn · `PDG-QS-TH`, `PDG-PH-01`, rubric `R-TAI-01`
 **Bắc cầu học tập:** Nhận biết tiền Việt Nam (môn Toán lớp 1–2); thái độ trân trọng đồ dùng học tập.
 
 ---
 
 ### `K01-M8-02` · CON GIÚP ĐƯỢC AI HÔM NAY?
-**Năng lực:** M8.5, M3.3 · **GITA trội:** **A** (G15·I30·T25·A30) · **Cấp hành động:** A1 · **Kit:** DC-KIT-08
+**NL:** M8.5, M3.3 · **Trội:** **A** (G15·I30·T25·A30) · **Hành động:** A1 · **Kit:** DC-KIT-08
 
 | Pha | **ĐẠT** | **XUẤT SẮC** |
 |:--:|---|---|
@@ -509,13 +507,13 @@
 
 **Thực hành:** `PTH-K01-M8-02` – Sổ Phụng Sự 7 ngày · 4 vòng · **L3**
 **Trải nghiệm & Sứ mệnh:** Dạng `I-E` phục vụ thực tế trong trường · **PSM:** 7 ngày mỗi ngày 1 việc tốt, người được giúp ký/điểm chỉ
-**Sản phẩm & Đánh giá:** Sổ Phụng Sự + ảnh việc tốt của Squad · `PDG-QS-TH`, `PDG-DD-TH`, rubric `R-PHS-01`
+**Đánh giá:** Sổ Phụng Sự + ảnh việc tốt của Squad · `PDG-QS-TH`, `PDG-DD-TH`, rubric `R-PHS-01`
 **Bắc cầu học tập:** Môn Đạo đức (yêu thương, chia sẻ); xây dựng văn hoá lớp học tích cực.
 
 ---
 
 ### `K01-M8-03` · NGHỀ NGHIỆP QUANH CON
-**Năng lực:** M8.3 · **GITA trội:** **I** (G20·I40·T25·A15) · **Cấp hành động:** A1 · **Kit:** DC-KIT-08
+**NL:** M8.3 · **Trội:** **I** (G20·I40·T25·A15) · **Hành động:** A1 · **Kit:** DC-KIT-08
 
 | Pha | **ĐẠT** | **XUẤT SẮC** |
 |:--:|---|---|
@@ -530,7 +528,7 @@
 
 **Thực hành:** `PTH-K01-M8-03` – Phiếu phỏng vấn nghề · 4 vòng · **L3**
 **Trải nghiệm & Sứ mệnh:** Dạng `I-E`/`I-A` gặp người làm nghề thật + đóng vai · **PSM:** phỏng vấn 1 người lớn về nghề của họ
-**Sản phẩm & Đánh giá:** Tranh "Lớn lên con muốn làm…" + phiếu phỏng vấn · `PDG-QS-TH`, `PDG-PH-01`, rubric `R-HNG-01`
+**Đánh giá:** Tranh "Lớn lên con muốn làm…" + phiếu phỏng vấn · `PDG-QS-TH`, `PDG-PH-01`, rubric `R-HNG-01`
 **Bắc cầu học tập:** Môn Tự nhiên & Xã hội (nghề nghiệp trong cộng đồng); khởi đầu mạch hướng nghiệp 12 năm.
 
 ---

@@ -304,7 +304,7 @@ Bằng chứng của tôi: ……………………………………………�
 
 | Nhóm mã | Tên nhóm rubric | Số rubric | Mạch |
 |---|---|:--:|:--:|
-| `R-TCH-nn` | Tự chủ & trách nhiệm | 15 | M1 |
+| `R-TCH-nn` | Tự chủ & trách nhiệm | 16 | M1 |
 | `R-KEH-nn` | Kế hoạch & mục tiêu | 9 | M1 |
 | `R-THQ-nn` | Thói quen | 3 | M1 |
 | `R-ATT-nn` | An toàn – sinh tồn | 23 | M2 |
@@ -323,7 +323,7 @@ Bằng chứng của tôi: ……………………………………………�
 | `R-HNG-nn` | Hướng nghiệp | 4 | M8 |
 | `R-LAN-nn` | Lãnh đạo | 6 | M8 |
 | `R-PHS-nn` | Phụng sự | 13 | M8 |
-| **TỔNG** | | **287** | |
+| **TỔNG** | | **288** | |
 
 > Mỗi rubric đều dùng **cấu trúc 5 tiêu chí × 4 mức GITA-4** như mẫu `PDG-SP` ở Phần C, với nội dung tiêu chí thay theo năng lực. Mã rubric của từng chuyên đề được ghi ở dòng **"Đánh giá"** trong các file `KHOI-xx.md`.
 

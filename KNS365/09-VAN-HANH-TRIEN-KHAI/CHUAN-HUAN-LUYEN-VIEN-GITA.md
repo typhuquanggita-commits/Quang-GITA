@@ -133,6 +133,11 @@
 10. Tôi **làm mẫu trước**: tôi không yêu cầu học sinh làm điều mà chính tôi không dám làm trước lớp.
 11. Tôi **nhận phản hồi về mình** với cùng tinh thần tôi yêu cầu ở học sinh.
 12. Tôi hiểu rằng **công việc này ảnh hưởng tới tôi**, và tôi có trách nhiệm **tự chăm sóc bản thân** để còn đủ sức đồng hành.
+13. Tôi **không mở kênh liên lạc riêng 1-1** với học sinh dưới 16 tuổi, và không ở một mình với một học sinh trong phòng kín.
+14. Tôi **chỉ truy cập hồ sơ của học sinh tôi được phân công**, đúng mục đích công việc, và tôi biết rằng **mọi lượt truy cập đều được ghi vết**.
+15. Tôi **không dùng thiết bị cá nhân** để lưu giữ dữ liệu học sinh, và tôi xoá bản gốc ảnh/video ngay sau khi nộp vào hệ thống.
+
+> ⚠️ Vi phạm điều **13** hoặc để lộ dữ liệu nhạy cảm của trẻ = **thu hồi quyền và chứng nhận ngay lập tức**, không qua giai đoạn nhắc nhở.
 
 **Họ tên:** ………………… **Chữ ký:** ………………… **Ngày:** …………………
 

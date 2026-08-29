@@ -163,8 +163,24 @@ HLV nói **≤30%** · HS thực hành **≥40%** · còn lại tương tác hai
 ### 7.4. Ranh giới nghề nghiệp của HLV
 - ✅ Lắng nghe, ghi nhận, kết nối HS tới người có chuyên môn.
 - ❌ **Không** chẩn đoán tâm lý. **Không** làm trị liệu. **Không** đóng vai cha mẹ thay thế.
-- ❌ **Không** liên hệ riêng với HS ngoài kênh chính thức của Học viện; mọi trao đổi ngoài giờ có bên thứ ba biết.
+- ⛔ **TUYỆT ĐỐI KHÔNG nhắn tin, gọi điện, kết bạn mạng xã hội riêng 1-1 với học sinh dưới 16 tuổi** — bằng tài khoản cá nhân hay tài khoản công việc đều không. Mọi trao đổi đi qua **nhóm có ≥2 người lớn hoặc có phụ huynh**, và lưu lại trong hệ thống. *(Đây là **lỗ hổng L-01** — con đường phổ biến nhất của xâm hại có chủ đích. Vi phạm = thu hồi quyền ngay lập tức.)*
+- ❌ **Không** ở một mình với một học sinh trong phòng kín. Nếu cần gặp riêng: chọn nơi có người khác nhìn thấy, báo cho một đồng nghiệp biết, và ghi lại thời điểm.
 - ❌ **Không** nhận quà có giá trị, không cho vay/mượn tiền với HS và gia đình.
+- ❌ **Không** chở học sinh bằng phương tiện cá nhân nếu không có phân công bằng văn bản và phụ huynh biết.
+
+### 7.5. Quy tắc dữ liệu — 6 điều HLV phải thuộc
+
+| # | Quy tắc | Vì sao |
+|:--:|---|---|
+| 1 | **Ghi chuyện HS hé lộ vào biểu mẫu báo cáo riêng**, nộp trong 24h, cất tủ khoá. **Cấm ghi vào sổ soạn bài, sổ điểm, hay nhóm chat** | Sổ để trên bàn giáo viên là sổ ai cũng đọc được *(L-03)* |
+| 2 | **Hộp thư kín luôn do 2 người cùng mở** và ghi sổ mở hộp | Chống việc người bị tố giác đọc trước *(L-02)* |
+| 3 | **Phiếu "Bàn Tay Tin Cậy" không dán tường, không chụp đăng nhóm phụ huynh** | Đó là bản đồ quan hệ của một đứa trẻ *(L-04)* |
+| 4 | **Một phiếu đồng ý cho một mục đích.** Phụ huynh đồng ý cho gửi video về nhà **không phải** là đồng ý cho đăng truyền thông | *(L-05)* |
+| 5 | **Không đọc điểm/kết quả cá nhân trước lớp.** Dữ liệu dùng trong hoạt động phải ẩn danh | *(L-09)* |
+| 6 | **Xoá bản gốc ảnh/video HS trên điện thoại cá nhân** ngay sau khi nộp vào hệ thống | Thiết bị cá nhân mất là dữ liệu mất *(L-05)* |
+
+> 📎 Chi tiết đầy đủ: [`11-PHAN-QUYEN-BAO-MAT/03-CHINH-SACH-BAO-MAT-DU-LIEU.md`](../11-PHAN-QUYEN-BAO-MAT/03-CHINH-SACH-BAO-MAT-DU-LIEU.md)
+> ⚠️ **Khi hướng dẫn nghiệp vụ ở bất kỳ tài liệu nào mâu thuẫn với quy định phân quyền – bảo mật, áp dụng quy định phân quyền – bảo mật.**
 
 ---
 

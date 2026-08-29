@@ -99,7 +99,10 @@
 | 11 | Hồ sơ nhân sự & chứng nhận HLV | `09-VAN-HANH/CHUAN-HUAN-LUYEN-VIEN-GITA.md` |
 | 12 | Hồ sơ CSVC & biên bản kiểm tra an toàn | `05-KHO-CONG-CU-DUNG-CU/` Phần D, F |
 | 13 | Quy trình bảo vệ trẻ em & xử lý sự cố | `08-CAM-NANG/CAM-NANG-GIAO-VIEN.md` Mục 7 |
-| 14 | Hồ sơ pháp lý theo quy định địa phương | *(cơ sở tự bổ sung)* |
+| 14 | **Quy chế phân quyền & danh sách vai đã cấp** *(rà soát mỗi 90 ngày)* | `11-PHAN-QUYEN-BAO-MAT/01`, `04` Phần F |
+| 15 | **Chính sách bảo vệ dữ liệu + phiếu đồng ý theo mục đích** | `11-PHAN-QUYEN-BAO-MAT/03` |
+| 16 | **Cam kết bảo mật & bảo vệ trẻ em của 100% nhân sự** *(ký trước ngày đứng lớp đầu tiên)* | `09-VAN-HANH/CHUAN-HUAN-LUYEN-VIEN-GITA.md` Phần F |
+| 17 | Hồ sơ pháp lý theo quy định địa phương | *(cơ sở tự bổ sung)* |
 
 ---
 

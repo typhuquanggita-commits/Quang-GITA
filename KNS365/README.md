@@ -26,7 +26,7 @@
 
 ---
 
-## 2. Bản đồ hệ sinh thái (11 phân hệ)
+## 2. Bản đồ hệ sinh thái (12 phân hệ)
 
 ```
                          ┌──────────────────────────────┐
@@ -64,6 +64,14 @@
                      │ Tích luỹ · Vận dụng · Đánh giá ·      │
                      │ Audio chuyên sâu                     │
                      │ + Phiếu KNS 5 lớp chiều sâu          │
+                     └───────────────┬──────────────────────┘
+                                     ▼
+                     ┌──────────────────────────────────────┐
+                     │ PHÂN QUYỀN & BẢO MẬT (11)            │
+                     │ RBAC-GITA 11 vai · 5 tầng năng lực   │
+                     │ học sinh · chính sách dữ liệu trẻ em │
+                     │ · nhật ký kiểm toán chỉ-thêm         │
+                     │ ⟲ bao trùm toàn bộ 00→10             │
                      └──────────────────────────────────────┘
 ```
 
@@ -104,7 +112,8 @@
 | Tệp | Nội dung |
 |---|---|
 | [MAU-KICH-BAN-180-PHUT.md](03-KICH-BAN-DAO-TAO/MAU-KICH-BAN-180-PHUT.md) | Khung kịch bản từng phút, lời thoại mẫu, tín hiệu điều phối |
-| `KICH-BAN-MAU-*.md` | Kịch bản chi tiết theo giai đoạn (Tiểu học – THCS – THPT) |
+| **[KICH-BAN-K01-M2-01.md](03-KICH-BAN-DAO-TAO/KICH-BAN-K01-M2-01.md)** | ⭐ Kịch bản từng phút hoàn chỉnh · K1 · *Vùng riêng tư & Quy tắc 5 ngón tay* — lời dẫn gần nguyên văn, bảng kiểm trước giờ, quy trình 5 bước khi trẻ hé lộ |
+| `KICH-BAN-K**-M*-**.md` | Kịch bản chi tiết bổ sung theo giai đoạn (Tiểu học – THCS – THPT) |
 
 ### 📒 04 → 07 – CÁC KHO HỌC LIỆU
 | Tệp | Nội dung |
@@ -128,6 +137,14 @@
 | [03-MAU-CHUYEN-DE-ONLINE-7-PHAN.md](10-GIAO-TRINH-ONLINE/03-MAU-CHUYEN-DE-ONLINE-7-PHAN.md) | Mẫu biên soạn để số hoá bất kỳ chuyên đề nào trong 288 chuyên đề |
 | [04-VI-DU-CHUYEN-DE-ONLINE-HOAN-CHINH.md](10-GIAO-TRINH-ONLINE/04-VI-DU-CHUYEN-DE-ONLINE-HOAN-CHINH.md) | Ví dụ mẫu hoàn chỉnh: `K06-M1-02 · Bảng Đòn Bẩy 20/80` – đủ 7 phần, kịch bản audio 16 phút |
 
+### 🔐 11 – PHÂN QUYỀN & BẢO MẬT *(đồng bộ chuẩn GITA365)*
+| Tệp | Nội dung |
+|---|---|
+| [01-KIEN-TRUC-PHAN-QUYEN-RBAC.md](11-PHAN-QUYEN-BAO-MAT/01-KIEN-TRUC-PHAN-QUYEN-RBAC.md) | **RBAC-GITA**: 11 vai *(HS · PH · TRN · ACT · COACH · TV · CVN · QLHV · Admin sản phẩm · Admin hệ thống · Super Admin · Giám đốc điều hành)*, ma trận quyền chi tiết, tách bạch trách nhiệm, quy tắc 4 mắt, break-glass, đối chiếu GITA365 |
+| [02-TANG-NANG-LUC-HOC-SINH-VA-MO-KHOA.md](11-PHAN-QUYEN-BAO-MAT/02-TANG-NANG-LUC-HOC-SINH-VA-MO-KHOA.md) | **5 tầng năng lực học sinh HS-T1→HS-T5**, 4 rào tuổi, bảng mở khoá nội dung – công cụ – quyền tự chủ, quy tắc mở khoá 7 phần online, 5 chốt chặn chống tác hại của phân tầng |
+| [03-CHINH-SACH-BAO-MAT-DU-LIEU.md](11-PHAN-QUYEN-BAO-MAT/03-CHINH-SACH-BAO-MAT-DU-LIEU.md) | **Sổ đăng ký 16 lỗ hổng đã bịt (L-01→L-16)**, phân loại dữ liệu D1–D4, vòng đời dữ liệu, chuẩn bảo mật nền tảng online cho trẻ em, quy trình ứng phó sự cố |
+| [04-NHAT-KY-KIEM-TOAN-VA-KIEM-SOAT.md](11-PHAN-QUYEN-BAO-MAT/04-NHAT-KY-KIEM-TOAN-VA-KIEM-SOAT.md) | Nhật ký **chỉ-thêm**, danh mục hành động bắt buộc ghi vết, 12 dấu hiệu bất thường, lịch rà soát định kỳ, chỉ số hiệu lực kiểm soát, mẫu biên bản rà quyền 90 ngày |
+
 ---
 
 ## 4. Nguyên tắc đọc bộ tài liệu
@@ -135,6 +152,7 @@
 1. **Đọc theo trục dọc** (một khối): `KHOI-XX.md` → chọn chuyên đề → mở `MAU-GIAO-AN` → `MAU-KICH-BAN` → lấy trò chơi ở kho 04, dụng cụ ở kho 05, phiếu thực hành ở kho 06, phiếu đánh giá ở kho 07.
 2. **Đọc theo trục ngang** (một mạch năng lực xuyên 12 năm): `BAN-DO-CHUONG-TRINH-288.md` → lọc theo mã mạch `M1…M8`.
 3. **Mọi tài liệu đều gắn mã.** Mã chuyên đề dạng `K07-M4-02` = Khối 7 · Mạch 4 (Giao tiếp & Hợp tác) · Chuyên đề thứ 2 của mạch.
+4. **Trước khi triển khai bất kỳ phần nào, đọc phân hệ 11.** Quy định phân quyền và bảo vệ dữ liệu trẻ em ở `11-PHAN-QUYEN-BAO-MAT` **cao hơn** mọi hướng dẫn nghiệp vụ ở các phân hệ khác; khi có mâu thuẫn, áp dụng phân hệ 11.
 
 ---
 

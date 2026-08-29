@@ -100,6 +100,11 @@ Kế thừa mô hình vận hành trại huấn luyện đã được kiểm ch�
 | **Quản lý học viên** | **QLHV** | Điểm danh, hồ sơ, liên lạc phụ huynh, chăm sóc trước–trong–sau chương trình | 1 / khối |
 | **Leader Team (học sinh)** | **LDR** | Đội trưởng Squad, luân phiên; dẫn dắt nhóm theo 5 vai GITA | 1 / Squad |
 | **Cố vấn chuyên môn** | **CVN** | Thẩm định nội dung, dự giờ kiểm định GITA-QC, đào tạo HLV | Theo cụm |
+| **Tư vấn – Tâm lý & Bảo vệ trẻ em** | **TV** | **Vai bắt buộc.** Thụ lý hồ sơ bảo vệ trẻ em, tư vấn tâm lý, quyết định chuyển tuyến. Là **vai duy nhất** được đọc nội dung hồ sơ nhạy cảm | ≥1 / cơ sở |
+| **Coach phát triển 1:1** | **COACH** | Đọc hồ sơ đánh giá, lập lộ trình cá nhân, chấm minh chứng, báo cáo 90 ngày *(chuẩn GITA365)* | Theo nhu cầu |
+
+> 📎 **Quyền hạn chi tiết của từng vai — kể cả các vai quản trị (Admin sản phẩm · Admin hệ thống · Super Admin · Giám đốc điều hành) — quy định tại** [`11-PHAN-QUYEN-BAO-MAT/01-KIEN-TRUC-PHAN-QUYEN-RBAC.md`](../11-PHAN-QUYEN-BAO-MAT/01-KIEN-TRUC-PHAN-QUYEN-RBAC.md).
+> ⚠️ Hai ràng buộc phải nhớ ngay: ① **không ai được mở kênh riêng 1-1 với học sinh dưới 16 tuổi**; ② **chức vụ cao không đồng nghĩa quyền đọc hồ sơ cá nhân của trẻ** — Super Admin và Giám đốc điều hành **không** đọc hồ sơ bảo vệ trẻ em.
 
 **Nghi thức nhận diện GEN VIỆT (bắt buộc mọi buổi):**
 1. **Chào GEN VIỆT** – khẩu hiệu và động tác chào thống nhất toàn hệ.
