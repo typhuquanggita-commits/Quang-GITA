@@ -23,11 +23,28 @@ const ok = (n, c, x = '') => {
 
 require('./main.cjs');
 
+// Chốt chặn: dù có chuyện gì thì tiến trình cũng phải thoát. Một lời gọi
+// executeJavaScript ném lỗi mà không ai bắt sẽ làm bài kiểm tra treo vô hạn.
+const HET_GIO = setTimeout(() => {
+  console.log('\n  HỎNG — quá 90 giây, bài kiểm tra bị treo\n');
+  app.exit(1);
+}, 90_000);
+
 app.whenReady().then(async () => {
+  try {
+    await chay();
+  } catch (e) {
+    failed++;
+    console.log(`  ✗ ngoại lệ ngoài dự tính: ${e && e.message}`);
+  }
+  finish();
+});
+
+async function chay() {
   await new Promise((r) => setTimeout(r, 1500));
   const win = BrowserWindow.getAllWindows()[0];
   ok('cửa sổ được tạo', !!win);
-  if (!win) return finish();
+  if (!win) return;
 
   await new Promise((r) => setTimeout(r, 2500));
   const wc = win.webContents;
@@ -97,6 +114,45 @@ app.whenReady().then(async () => {
   const enc = fs.readFileSync(path.join(tmp, 'vault', 'profile.enc'), 'utf8');
   ok('tệp trên đĩa đã mã hoá', !enc.includes('bài ra vòng'));
 
+  // Sau khi mở khoá, giao diện chính phải dựng được — và điều đó đòi hỏi các
+  // chunk tải động nạp được qua app://. Đây là chỗ dễ hỏng nhất sau khi tách
+  // mã theo tab: dynamic import trên giao thức tự đăng ký.
+  // Nạp lại trang khi két ĐANG MỞ: phải vào thẳng giao diện, không hỏi mã lại.
+  // Nạp lại không phải ranh giới bảo mật — cửa sổ vẫn mở, người dùng vẫn ngồi
+  // đó, và khoá vẫn nằm trong tiến trình chính. Két chỉ khoá khi đóng cửa sổ.
+  wc.reload();
+  await new Promise((r) => wc.once('did-finish-load', r));
+  await new Promise((r) => setTimeout(r, 2000));
+
+  const soTab = await run("document.querySelectorAll('aside nav button').length");
+  ok('két đang mở thì nạp lại vào thẳng giao diện', soTab >= 23, `thấy ${soTab} thẻ`);
+
+  // Bấm sang một tab khác để buộc nạp một chunk chưa từng tải. Đây là chỗ dễ
+  // hỏng nhất sau khi tách mã theo tab: dynamic import trên giao thức tự đăng ký.
+  await run(`(() => {
+    const b = [...document.querySelectorAll('aside nav button')]
+      .find(x => x.textContent.includes('Hồ sơ 365 ngày'));
+    if (!b) throw new Error('không thấy thẻ Hồ sơ 365 ngày');
+    b.click();
+    return true;
+  })()`);
+  await new Promise((r) => setTimeout(r, 2500));
+  const tieuDe = await run("document.querySelector('h2')?.textContent ?? ''");
+  ok('chunk tải động nạp được qua app://', tieuDe.includes('365'), tieuDe);
+  ok('tab Hồ sơ dựng đủ 90 ngày của quý 1',
+     (await run("document.querySelectorAll('h4').length")) === 90);
+
+  // Khoá lại rồi nạp lại: BẮT BUỘC phải hỏi mã khoá. Đây mới là ranh giới thật.
+  await run('window.engwill.vault.lock()');
+  wc.reload();
+  await new Promise((r) => wc.once('did-finish-load', r));
+  await new Promise((r) => setTimeout(r, 2000));
+  const sauKhoa = await run("document.querySelector('h2')?.textContent ?? ''");
+  ok('khoá rồi nạp lại thì phải hỏi mã khoá', sauKhoa.includes('Mở khoá'), sauKhoa);
+  ok('khoá rồi thì giao diện chính KHÔNG dựng',
+     (await run("document.querySelectorAll('aside nav button').length")) === 0);
+  await run("window.engwill.vault.unlock('Engwill365!')");
+
   // Giao thức app:// không được cho đọc ra ngoài thư mục dist.
   // Dạng %2e%2e là dạng nguy hiểm thật: giao thức chuẩn không tự rút gọn nó,
   // nên nó đi thẳng tới bộ xử lý và chỉ bị chặn nhờ kiểm tra đường dẫn ở đó.
@@ -110,11 +166,10 @@ app.whenReady().then(async () => {
     );
     ok(`chặn được ${attack}`, String(r).startsWith('chặn'), String(r).slice(0, 80));
   }
-
-  finish();
-});
+}
 
 function finish() {
+  clearTimeout(HET_GIO);
   console.log(`\n  ${failed === 0 ? 'ĐẠT' : `HỎNG — ${failed} lỗi`}\n`);
   fs.rmSync(tmp, {recursive: true, force: true});
   app.exit(failed === 0 ? 0 : 1);

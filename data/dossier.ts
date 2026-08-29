@@ -702,4 +702,13 @@ export function buildYear(): DossierDay[] {
   return days;
 }
 
-export const DOSSIER_YEAR: DossierDay[] = buildYear();
+/**
+ * Dựng 365 ngày ở lần gọi đầu tiên rồi giữ lại, thay vì dựng ngay lúc nạp
+ * module. Ai không mở tab Hồ sơ thì không phải trả giá cho việc dựng nó.
+ */
+let _nam: DossierDay[] | null = null;
+
+export function dossierYear(): DossierDay[] {
+  if (_nam === null) _nam = buildYear();
+  return _nam;
+}

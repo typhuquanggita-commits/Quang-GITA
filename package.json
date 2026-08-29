@@ -18,16 +18,18 @@
     "test:voice": "python3 tools/khop-giong.test.py"
   },
   "devDependencies": {
+    "@tailwindcss/browser": "^4.1.10",
+    "@tailwindcss/vite": "^4.3.3",
     "@types/node": "^22.14.0",
     "@vitejs/plugin-react": "^5.0.0",
     "electron": "^44.0.0",
     "electron-builder": "^26.15.3",
     "playwright": "^1.62.1",
-    "typescript": "~5.8.2",
-    "vite": "^6.2.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "@tailwindcss/browser": "^4.1.10"
+    "tailwindcss": "^4.3.3",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0"
   },
   "description": "ENGWILL365 — Hệ thống học tiếng Anh từ số 0 đến IELTS 8.0 trong 36 tháng",
   "main": "desktop/main.cjs",
@@ -79,7 +81,13 @@
     },
     "portable": {
       "artifactName": "ENGWILL365-${version}-windows-portable.${ext}"
-    }
+    },
+    "electronLanguages": [
+      "vi",
+      "en-US"
+    ],
+    "asar": true,
+    "compression": "maximum"
   },
   "author": {
     "name": "GITA365",

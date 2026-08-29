@@ -6,7 +6,7 @@ import React, {useMemo, useState} from 'react';
 import {
   DOSSIER_CREED,
   DOSSIER_QUARTERS,
-  DOSSIER_YEAR,
+  dossierYear,
   WHITE_DAYS,
   GRADUATION_EXAMS,
 } from '../../data';
@@ -92,6 +92,7 @@ const DayCard: React.FC<{d: DossierDay}> = ({d}) => (
 export const Dossier: React.FC = () => {
   const [quarter, setQuarter] = useState('1');
   const [jump, setJump] = useState('');
+  const DOSSIER_YEAR = useMemo(() => dossierYear(), []);
 
   const days = useMemo(() => {
     if (quarter === 'all') return DOSSIER_YEAR;

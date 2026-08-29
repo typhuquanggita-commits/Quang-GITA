@@ -2,32 +2,32 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  */
-import React, {useState} from 'react';
+import React, {useState, lazy, Suspense} from 'react';
 import {NORTH_STAR} from './data';
-import {Charter} from './components/engwill/Charter';
-import {MyPlan} from './components/engwill/MyPlan';
-import {Overview} from './components/engwill/Overview';
-import {Roadmap} from './components/engwill/Roadmap';
-import {Methods} from './components/engwill/Methods';
-import {Drills} from './components/engwill/Drills';
-import {Lectures} from './components/engwill/Lectures';
-import {Playbooks} from './components/engwill/Playbooks';
-import {Habits} from './components/engwill/Habits';
-import {Mindset} from './components/engwill/Mindset';
-import {Clubs} from './components/engwill/Clubs';
-import {Resources} from './components/engwill/Resources';
-import {Academy} from './components/engwill/Academy';
-import {Levels} from './components/engwill/Levels';
-import {Grading} from './components/engwill/Grading';
-import {Studio} from './components/engwill/Studio';
-import {Podcast} from './components/engwill/Podcast';
-import {Brand} from './components/engwill/Brand';
-import {Sprint} from './components/engwill/Sprint';
-import {Dossier} from './components/engwill/Dossier';
+const Charter = lazy(() => import('./components/engwill/Charter').then((m) => ({default: m.Charter})));
+const MyPlan = lazy(() => import('./components/engwill/MyPlan').then((m) => ({default: m.MyPlan})));
+const Overview = lazy(() => import('./components/engwill/Overview').then((m) => ({default: m.Overview})));
+const Roadmap = lazy(() => import('./components/engwill/Roadmap').then((m) => ({default: m.Roadmap})));
+const Methods = lazy(() => import('./components/engwill/Methods').then((m) => ({default: m.Methods})));
+const Drills = lazy(() => import('./components/engwill/Drills').then((m) => ({default: m.Drills})));
+const Lectures = lazy(() => import('./components/engwill/Lectures').then((m) => ({default: m.Lectures})));
+const Playbooks = lazy(() => import('./components/engwill/Playbooks').then((m) => ({default: m.Playbooks})));
+const Habits = lazy(() => import('./components/engwill/Habits').then((m) => ({default: m.Habits})));
+const Mindset = lazy(() => import('./components/engwill/Mindset').then((m) => ({default: m.Mindset})));
+const Clubs = lazy(() => import('./components/engwill/Clubs').then((m) => ({default: m.Clubs})));
+const Resources = lazy(() => import('./components/engwill/Resources').then((m) => ({default: m.Resources})));
+const Academy = lazy(() => import('./components/engwill/Academy').then((m) => ({default: m.Academy})));
+const Levels = lazy(() => import('./components/engwill/Levels').then((m) => ({default: m.Levels})));
+const Grading = lazy(() => import('./components/engwill/Grading').then((m) => ({default: m.Grading})));
+const Studio = lazy(() => import('./components/engwill/Studio').then((m) => ({default: m.Studio})));
+const Podcast = lazy(() => import('./components/engwill/Podcast').then((m) => ({default: m.Podcast})));
+const Brand = lazy(() => import('./components/engwill/Brand').then((m) => ({default: m.Brand})));
+const Sprint = lazy(() => import('./components/engwill/Sprint').then((m) => ({default: m.Sprint})));
+const Dossier = lazy(() => import('./components/engwill/Dossier').then((m) => ({default: m.Dossier})));
 import {Lock} from './components/engwill/Lock';
-import {Casting} from './components/engwill/Casting';
-import {Exams} from './components/engwill/Exams';
-import {Certify} from './components/engwill/Certify';
+const Casting = lazy(() => import('./components/engwill/Casting').then((m) => ({default: m.Casting})));
+const Exams = lazy(() => import('./components/engwill/Exams').then((m) => ({default: m.Exams})));
+const Certify = lazy(() => import('./components/engwill/Certify').then((m) => ({default: m.Certify})));
 
 interface Nav {
   id: string;
@@ -230,6 +230,19 @@ const NAV: Nav[] = [
   },
 ];
 
+/**
+ * Mỗi tab được tải riêng khi người dùng bấm vào, không tải sẵn cả 23 tab lúc
+ * mở app. Khung chờ này chiếm đúng chỗ để trang không nhảy khi mã về.
+ */
+const DangTai: React.FC = () => (
+  <div className="animate-pulse space-y-4" aria-busy="true">
+    <div className="h-6 w-48 rounded bg-slate-800" />
+    <div className="h-10 w-2/3 rounded bg-slate-800" />
+    <div className="h-4 w-full rounded bg-slate-900" />
+    <div className="h-4 w-5/6 rounded bg-slate-900" />
+  </div>
+);
+
 export const App: React.FC = () => {
   const [tab, setTab] = useState('charter');
   const [menuOpen, setMenuOpen] = useState(false);
@@ -326,7 +339,7 @@ export const App: React.FC = () => {
           )}
 
           <main className="px-4 py-8 md:px-8 lg:px-10 lg:py-10">
-            {active.render()}
+            <Suspense fallback={<DangTai />}>{active.render()}</Suspense>
             <footer className="mt-16 border-t border-slate-800 pt-6 text-xs leading-relaxed text-slate-600">
               <p className="font-semibold text-slate-500">
                 ENGWILL365 — {NORTH_STAR.meaning}

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 /* tslint:disable */
-import '@tailwindcss/browser';
+import './index.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {App} from './App';
