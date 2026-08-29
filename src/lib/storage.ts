@@ -37,6 +37,7 @@ export function createInitialState(now: number = Date.now()): PersistedState {
     tracks: {},
     stage: 1,
     xp: 0,
+    habits: {},
   };
 }
 
@@ -68,6 +69,8 @@ const MIGRATIONS: Record<number, Migration> = {
       classId: '',
     },
   }),
+  /** v3 → v4: bo sung nhat ky thoi quen cua mo thuc GITA. */
+  3: (state) => ({ ...state, version: 4, habits: {} }),
 };
 
 export function migrate(raw: Record<string, unknown>): PersistedState {
@@ -107,6 +110,7 @@ function reconcile(raw: Record<string, unknown>): PersistedState {
     tracks: isRecord(candidate.tracks) ? candidate.tracks : {},
     stage: typeof candidate.stage === 'number' ? candidate.stage : 1,
     xp: typeof candidate.xp === 'number' ? candidate.xp : 0,
+    habits: isRecord(candidate.habits) ? candidate.habits : {},
   };
 }
 

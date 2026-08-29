@@ -48,6 +48,7 @@ export type Action =
     }
   | { type: 'track/levelUp'; topicId: string }
   | { type: 'stage/promote' }
+  | { type: 'habit/toggle'; habitId: string; date?: string }
   | { type: 'srs/grade'; questionId: string; grade: Grade; now?: number; maxIntervalDays?: number }
   | { type: 'srs/remove'; questionId: string }
   | { type: 'state/replace'; state: PersistedState };
@@ -169,6 +170,17 @@ export function reducer(state: PersistedState, action: Action): PersistedState {
 
     case 'stage/promote':
       return state.stage >= 3 ? state : { ...state, stage: state.stage + 1 };
+
+    case 'habit/toggle': {
+      const key = action.date ?? dayKey();
+      const log = state.habits[action.habitId] ?? { habitId: action.habitId, done: [] };
+      const done = log.done.includes(key)
+        ? log.done.filter((d) => d !== key)
+        // Giu toi da 180 ngay gan nhat: du de ve bieu do, du nho de khong phinh
+        // localStorage sau nhieu nam su dung.
+        : [...log.done, key].sort().slice(-180);
+      return { ...state, habits: { ...state.habits, [action.habitId]: { habitId: action.habitId, done } } };
+    }
 
     case 'srs/grade': {
       const card = state.srs[action.questionId];

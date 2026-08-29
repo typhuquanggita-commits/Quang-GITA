@@ -11,6 +11,7 @@ import { AnalyticsPage } from './features/analytics/AnalyticsPage';
 import { RoadmapPage } from './features/roadmap/RoadmapPage';
 import { SettingsPage } from './features/settings/SettingsPage';
 import { RolesPage } from './features/roles/RolesPage';
+import { GitaPage } from './features/gita/GitaPage';
 
 export function App() {
   const route = useRoute();
@@ -40,6 +41,8 @@ function Routes({ path }: { path: string }) {
       return <AnalyticsPage />;
     case '/roadmap':
       return <RoadmapPage />;
+    case '/gita':
+      return <GitaPage />;
     case '/roles':
       return <RolesPage />;
     case '/settings':

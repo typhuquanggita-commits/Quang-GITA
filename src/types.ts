@@ -234,6 +234,41 @@ export interface Profile {
   classId: string;
 }
 
+/* ── Mo thuc huan luyen GITA ────────────────────────────────────────────── */
+
+/**
+ * Bon tru cot cua mo thuc GITA. Xem src/data/gita.ts.
+ *   G — Goal      he thong muc tieu, ket qua xuat sac, dich den
+ *   I — Inspirits dong luc, khat khao, noi luc, niem tin, ban linh
+ *   T — Talent    tai nang, diem manh, tu duy xuat sac, toc do, tap trung
+ *   A — Action    hanh dong quyet doan, thoi quen thanh cong, 20/80, doi nhom
+ */
+export type GitaPillarId = 'goal' | 'inspirits' | 'talent' | 'action';
+
+/** Nam cap do hanh dong theo quy tac 20/80. */
+export type ActionLevelId = 'A1' | 'A2' | 'A3' | 'A4' | 'A5';
+
+/** Ba nhip ap dung vong lap: mot buoi hoc, mot tuan, mot giai doan. */
+export type GitaCadence = 'micro' | 'meso' | 'macro';
+
+/** Ba moi truong duoc GITA hoa. */
+export type GitaEnvironment = 'family' | 'school' | 'society';
+
+/** Nam tang hap thu cua nguoi hoc, H1..H5. */
+export type AbsorptionTierId = 'H1' | 'H2' | 'H3' | 'H4' | 'H5';
+
+/** Nam cap chuyen mon cua tu van vien — giao vien — coach, P1..P5. */
+export type PractitionerLevelId = 'P1' | 'P2' | 'P3' | 'P4' | 'P5';
+
+/** Thoi quen nen tang, do nguoi hoc tich moi ngay hoac moi tuan. */
+export type HabitCadence = 'daily' | 'weekly';
+
+export interface HabitLog {
+  habitId: string;
+  /** Cac ngay da hoan thanh, dang YYYY-MM-DD. Giu toi da 180 ngay gan nhat. */
+  done: string[];
+}
+
 /* ── He thong phieu luyen, nhiem vu va cap do ───────────────────────────── */
 
 /** Mot chang trong phieu luyen. Hoc sinh lam lan luot tung chang. */
@@ -349,4 +384,6 @@ export interface PersistedState {
   stage: number;
   /** Tong diem kinh nghiem. */
   xp: number;
+  /** Nhat ky thoi quen GITA, khoa la habitId. */
+  habits: Record<string, HabitLog>;
 }

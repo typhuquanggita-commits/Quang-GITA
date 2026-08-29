@@ -18,6 +18,7 @@ import {
   IconSearch,
   IconSettings,
   IconShield,
+  IconSpark,
   IconTarget,
 } from './icons';
 
@@ -46,6 +47,7 @@ export function AppShell({ children }: { children: ReactNode }) {
       { href: '/review', label: 'Sổ tay lỗi sai', icon: IconNotebook, badge: due },
       { href: '/analytics', label: 'Phân tích', icon: IconChart },
       { href: '/roadmap', label: 'Lộ trình', icon: IconRoute },
+      { href: '/gita', label: 'Mô thức GITA', icon: IconSpark },
       { href: '/roles', label: 'Phân quyền', icon: IconShield },
       { href: '/settings', label: 'Cài đặt', icon: IconSettings },
     ],

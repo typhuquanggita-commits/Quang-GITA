@@ -16,6 +16,7 @@ Tư duy định lượng (Toán, 50 câu / 75 phút), Tư duy định tính (Ng�
 
 | Khối | Nội dung |
 |---|---|
+| **Mô thức GITA** | Bốn trụ cột Goal — Inspirits — Talent — Action, ba nhịp áp dụng, năm tầng hấp thu, năm cấp chuyên môn, năm cấp độ hành động 20/80, mười hai thói quen, ba môi trường |
 | **Chương trình học** | **2.000 phiếu luyện** và **2.000 nhiệm vụ**, 6 cấp độ, 3 giai đoạn, phân bổ theo đúng tỉ trọng đề thi |
 | **Dòng chảy học tập** | Làm từng chặng → chấm → báo kết quả → nhận xét → giải pháp → định hướng → xét lên cấp |
 | **Thi thử** | Đề mô phỏng full 3 phần và theo từng phần, đồng hồ riêng cho mỗi phần, chấm và quy đổi về thang 150 |
@@ -24,6 +25,7 @@ Tư duy định lượng (Toán, 50 câu / 75 phút), Tư duy định tính (Ng�
 | **Lộ trình** | Giai đoạn theo ngày thi, mốc theo tuần, thứ tự ưu tiên chuyên đề |
 | **Phân quyền** | 5 vai trò × cấp bậc, 22 quyền, cộng thêm cổng mở tính năng theo cấp độ học viên |
 | **Gia sư AI** | Tùy chọn (Gemini): giảng lại cách khác, gợi ý không lộ đáp án, ra câu tương tự, tư vấn kế hoạch tuần |
+| **Tài liệu bổ trợ** | 11 tài liệu trong `docs/GITA/`, phân theo vai trò và theo tầng, dùng chung nguồn dữ liệu với sản phẩm |
 
 Chạy hoàn toàn phía trình duyệt, **không cần máy chủ**, có **PWA ngoại tuyến**, dữ liệu
 học tập nằm trên máy người dùng và xuất/nhập được bằng JSON.
@@ -41,7 +43,7 @@ Các lệnh khác:
 
 ```bash
 npm run verify       # typecheck + toàn bộ test + build
-npm run test         # 97 bài test
+npm run test         # 128 bài test
 npm run build        # dựng bản phát hành vào dist/
 npm run preview      # xem thử bản đã dựng
 npm run catalogue    # xuất 2000 phiếu + 2000 nhiệm vụ ra catalogue/*.csv
@@ -59,6 +61,40 @@ GEMINI_API_KEY=...
 
 **Triển khai dưới thư mục con** (ví dụ GitHub Pages): đặt `APP_BASE=/ten-repo/` khi
 build. Ứng dụng dùng định tuyến bằng hash nên không cần cấu hình rewrite phía máy chủ.
+
+---
+
+## Mô thức huấn luyện GITA
+
+GITA là bốn **trụ cột** nâng đỡ lẫn nhau, không phải bốn bước nối tiếp. Thiếu bất
+kỳ trụ nào thì ba trụ còn lại đều sụp.
+
+| | Trụ cột | Câu hỏi nó trả lời | HSA365 đo bằng |
+|---|---|---|---|
+| **G** | **Goal** — hệ thống mục tiêu, kết quả xuất sắc, đích đến | Đích của tôi là gì, và tôi biết mình đã tới bằng cách nào? | Đã đặt mục tiêu, ngày thi, bản đồ năng lực, và mục tiêu có nối xuống việc hôm nay |
+| **I** | **Inspirits** — động lực, khát khao, nội lực, niềm tin, bản lĩnh | Điều gì kéo tôi ngồi vào bàn ngày thứ 40, khi cảm hứng đã hết? | Chuỗi ngày, tỉ lệ giữ thói quen, tỉ lệ không bỏ dở, mức tự tin khai báo trung thực |
+| **T** | **Talent** — tài năng, điểm mạnh, tư duy xuất sắc, tốc độ, tập trung | Đâu là thế mạnh riêng của tôi, và tôi mài nó sắc đến đâu? | Cấp tuyến mạnh nhất, số tuyến vượt trội, tốc độ so với chuẩn, số câu sa lầy |
+| **A** | **Action / Academy** — quyết đoán, kiên trì, tối ưu, thói quen thành công, 20/80, đội nhóm | Hôm nay tôi làm gì, và 20% việc nào tạo ra 80% kết quả? | Khối lượng luyện, độ tập trung vào vùng 20/80, ôn đúng hạn, cấp độ hành động |
+
+Hầu hết sản phẩm luyện thi chỉ đo trụ **Action** — số câu, số giờ, chuỗi ngày.
+HSA365 đo cả bốn và hiển thị **trụ nào đang trống**: người chăm chỉ mà không tiến
+bộ thường không thiếu nỗ lực, họ thiếu một trong ba trụ còn lại.
+
+**Vùng 20/80 được tính, không được hô.** Hệ thống xếp chuyên đề theo *số điểm có
+thể lấy lại* = trọng số trong đề × khoảng còn thiếu, cắt ở ngưỡng tích lũy 80%, rồi
+đối chiếu với hành vi thật 14 ngày qua để cho biết công sức có rơi đúng chỗ không.
+
+**Hai trục phân tầng, không bao giờ trộn lẫn:** H1–H5 cho người học (suy ra từ
+hành vi, không phải tự khai), P1–P5 cho tư vấn viên — giáo viên — coach (công nhận
+bằng bằng chứng, không phải thâm niên).
+
+Toàn bộ mô thức được định nghĩa **một lần** trong
+[`src/data/gita.ts`](src/data/gita.ts). Màn hình **Mô thức GITA** in ra chính dữ
+liệu đó, các tài liệu trong [`docs/GITA/`](docs/GITA/) diễn giải chính cấu trúc
+đó, và `tests/gita.test.ts` canh giữ tính toàn vẹn của nó — nên tài liệu, giao
+diện và hành vi không bao giờ lệch nhau.
+
+📘 Bắt đầu từ [`docs/GITA/00-KHUNG-GITA.md`](docs/GITA/00-KHUNG-GITA.md).
 
 ---
 
@@ -129,13 +165,14 @@ src/
   config.ts              Cấu trúc đề thi, thang điểm, hằng số toàn cục
   types.ts               Mô hình dữ liệu lõi
   data/                  Nội dung: chuyên đề, ngữ liệu, ngân hàng câu hỏi,
-                         khung chương trình, bộ sinh phiếu và nhiệm vụ, phân quyền
+                         khung chương trình, bộ sinh phiếu và nhiệm vụ,
+                         mô thức GITA, phân quyền
   lib/                   Máy tính thuần: Rasch, chấm điểm, SRS, tiến độ, lộ trình,
-                         phân quyền, lưu trữ, định tuyến, AI
+                         GITA & 20/80, phân quyền, lưu trữ, định tuyến, AI
   store/                 Reducer + context, mọi thay đổi trạng thái đi qua đây
   components/            Hệ thống thiết kế, biểu đồ SVG tự vẽ, khung ứng dụng
   features/              Từng màn hình
-tests/                   97 bài test cho toàn bộ tầng lib và data
+tests/                   128 bài test cho toàn bộ tầng lib, data và giao diện
 ```
 
 Nguyên tắc: **mọi quy tắc nghiệp vụ nằm trong `lib/` dưới dạng hàm thuần** — chấm
@@ -144,15 +181,24 @@ Nhờ vậy mọi kết luận đều kiểm chứng được bằng test thay v
 
 Chi tiết: [`docs/KIEN-TRUC.md`](docs/KIEN-TRUC.md).
 
+### Hệ thống tài liệu
+
+| Thư mục | Nội dung |
+|---|---|
+| [`docs/GITA/`](docs/GITA/) | 11 tài liệu về mô thức: khung, tầng hấp thu, cấp chuyên môn, ba môi trường, thói quen, quy trình vận hành, nhận diện, tiêu chuẩn chất lượng, đội nhóm |
+| [`docs/CHUONG-TRINH.md`](docs/CHUONG-TRINH.md) | Cách sinh 2.000 phiếu và quy tắc tiến độ |
+| [`docs/PHAN-QUYEN.md`](docs/PHAN-QUYEN.md) | Ba tầng quyết định quyền và ranh giới bảo mật |
+| [`docs/KIEN-TRUC.md`](docs/KIEN-TRUC.md) | Quyết định kỹ thuật và lý do đằng sau |
+
 ---
 
 ## Chất lượng
 
 - **TypeScript nghiêm ngặt** — bật `strict`, `noUncheckedIndexedAccess`,
   `exactOptionalPropertyTypes`, `noUnusedLocals`. Không có `any` trong mã sản phẩm.
-- **97 bài test** phủ chấm điểm, chuẩn hóa đáp án, mô hình Rasch, ôn tập ngắt quãng,
+- **128 bài test** phủ chấm điểm, chuẩn hóa đáp án, mô hình Rasch, ôn tập ngắt quãng,
   di trú dữ liệu, phân quyền, tiến độ, tính toàn vẹn ngân hàng câu hỏi và khung
-  chương trình, cộng với test giao diện đầu-cuối.
+  chương trình, mô thức GITA và quy tắc 20/80, cộng với test giao diện đầu-cuối.
 - **Kiểm tra nội dung** — một câu hỏi sai đáp án gây hại hơn mọi lỗi kỹ thuật khác,
   nên nó bị chặn ngay ở tầng test: đáp án phải nằm trong phương án, phương án không
   trùng nhau, lời giải đủ dài, bẫy không được chú thích cho đáp án đúng.

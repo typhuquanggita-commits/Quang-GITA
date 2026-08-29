@@ -187,7 +187,7 @@ export const ROLES: readonly RoleSpec[] = [
         rank: 2,
         name: 'Chủ nhiệm chương trình',
         note: 'Thêm quyền sửa khung chương trình và phát hành nội dung.',
-        grants: ['content.curriculum', 'content.publish'],
+        grants: ['content.curriculum', 'content.publish', 'system.audit'],
       },
     ],
   },

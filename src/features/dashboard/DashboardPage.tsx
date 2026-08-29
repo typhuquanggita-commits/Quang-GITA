@@ -17,6 +17,9 @@ import {
   streakOf,
 } from '../../store/selectors';
 import { recommendedWorksheets, trackStatus } from '../../lib/progression';
+import { GITA_PILLARS } from '../../data/gita';
+import { actionLevelOf, gitaIndex, habitCompletionToday, pillarScores, tierStatus, weakestPillar } from '../../lib/gita';
+import { vizColor } from '../../components/charts';
 import { BarList, CalendarHeatmap, DataTable, ScoreGauge, TrendLine } from '../../components/charts';
 import { Badge, Button, Card, CardHeader, Progress, Stat } from '../../components/ui/primitives';
 import { IconCheck, IconClock, IconSpark, IconTarget } from '../../components/layout/icons';
@@ -136,6 +139,8 @@ export function DashboardPage() {
           />
         </div>
       </div>
+
+      <GitaStrip />
 
       {/* Kế hoạch hôm nay */}
       <Card>
@@ -332,6 +337,75 @@ export function DashboardPage() {
         </Card>
       )}
     </div>
+  );
+}
+
+/**
+ * Dai GITA tren man hinh chinh.
+ *
+ * Muc dich: moi lan mo app, nguoi hoc nhin thay ngay pha nao cua vong lap dang
+ * bi bo qua — thu ma bang diem so thong thuong khong bao gio noi cho ho biet.
+ */
+function GitaStrip() {
+  const state = useAppState();
+  const status = tierStatus(state);
+  const scores = pillarScores(state);
+  const weakest = weakestPillar(state);
+  const action = actionLevelOf(state);
+  const habits = habitCompletionToday(state, status.tier.id);
+  const index = gitaIndex(state);
+
+  return (
+    <Card>
+      <CardHeader
+        title="Bốn trụ cột GITA của bạn"
+        subtitle={`Tầng hấp thu ${status.tier.id} — ${status.tier.name} · Cấp hành động ${action.id} ${action.name} · Chỉ số GITA ${index}/100.`}
+        action={
+          <Button size="sm" onClick={() => navigate('/gita')}>
+            Mở mô thức
+          </Button>
+        }
+      />
+      <ol className="grid gap-3 sm:grid-cols-4">
+        {GITA_PILLARS.map((pillar) => {
+          const score = scores.find((s) => s.pillar === pillar.id);
+          const value = score?.value ?? 0;
+          const isWeakest = pillar.id === weakest.pillar;
+          return (
+            <li
+              key={pillar.id}
+              className={
+                'rounded-xl border p-4 ' +
+                (isWeakest ? 'border-warn/50 bg-warn-soft' : 'border-line bg-surface-2')
+              }
+            >
+              <div className="flex items-center gap-2">
+                <span
+                  className="grid size-7 shrink-0 place-items-center rounded-lg text-sm font-bold text-white"
+                  style={{ backgroundColor: vizColor(pillar.colorIndex) }}
+                  aria-hidden="true"
+                >
+                  {pillar.letter}
+                </span>
+                <span className="min-w-0 flex-1 truncate text-sm font-medium text-fg">{pillar.name}</span>
+                <span className="text-sm font-semibold tabular-nums text-fg">{formatPercent(value, 0)}</span>
+              </div>
+              <Progress
+                value={value * 100}
+                tone={value >= 0.75 ? 'ok' : value >= 0.4 ? 'brand' : 'warn'}
+                className="mt-2.5"
+                label={`Mức xây dựng trụ cột ${pillar.name}`}
+              />
+              {isWeakest && <p className="mt-2 text-xs font-medium text-warn">Đang yếu nhất — ưu tiên trụ cột này</p>}
+            </li>
+          );
+        })}
+      </ol>
+      <p className="mt-4 text-sm leading-relaxed text-fg-muted">{weakest.note}</p>
+      <p className="mt-2 text-xs text-fg-subtle tabular-nums">
+        Thói quen hằng ngày hôm nay: {habits.done}/{habits.total}
+      </p>
+    </Card>
   );
 }
 

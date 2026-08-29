@@ -36,6 +36,7 @@ export function CommandPalette({ open, onClose }: { open: boolean; onClose: () =
       { id: 'go.review', title: 'Sổ tay lỗi sai & ôn tập', group: 'Điều hướng', href: '#/review' },
       { id: 'go.analytics', title: 'Phân tích năng lực', group: 'Điều hướng', href: '#/analytics' },
       { id: 'go.roadmap', title: 'Lộ trình', group: 'Điều hướng', href: '#/roadmap' },
+      { id: 'go.gita', title: 'Mô thức huấn luyện GITA', group: 'Điều hướng', href: '#/gita', keywords: 'goal input train apply tang hap thu thoi quen' },
       { id: 'go.roles', title: 'Phân quyền hệ thống', group: 'Điều hướng', href: '#/roles' },
       { id: 'go.settings', title: 'Cài đặt', group: 'Điều hướng', href: '#/settings' },
       ...SECTIONS.map((s) => ({
