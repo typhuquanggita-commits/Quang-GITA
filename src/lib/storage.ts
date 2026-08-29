@@ -38,6 +38,7 @@ export function createInitialState(now: number = Date.now()): PersistedState {
     stage: 1,
     xp: 0,
     habits: {},
+    worksheetRuns: [],
   };
 }
 
@@ -71,6 +72,8 @@ const MIGRATIONS: Record<number, Migration> = {
   }),
   /** v3 → v4: bo sung nhat ky thoi quen cua mo thuc GITA. */
   3: (state) => ({ ...state, version: 4, habits: {} }),
+  /** v4 → v5: luu lich su tung luot lam phieu de dung lai bo giai de. */
+  4: (state) => ({ ...state, version: 5, worksheetRuns: [] }),
 };
 
 export function migrate(raw: Record<string, unknown>): PersistedState {
@@ -111,6 +114,7 @@ function reconcile(raw: Record<string, unknown>): PersistedState {
     stage: typeof candidate.stage === 'number' ? candidate.stage : 1,
     xp: typeof candidate.xp === 'number' ? candidate.xp : 0,
     habits: isRecord(candidate.habits) ? candidate.habits : {},
+    worksheetRuns: Array.isArray(candidate.worksheetRuns) ? candidate.worksheetRuns : [],
   };
 }
 

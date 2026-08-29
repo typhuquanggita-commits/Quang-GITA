@@ -364,6 +364,34 @@ export interface TrackState {
   masteredAtLevel: number;
 }
 
+/* ── Ho so hoc vien: luu lai tung luot lam de xem lai loi giai ─────────── */
+
+/**
+ * Ba loai loi. Phan loai dung loai quyet dinh cach chua:
+ *  - knowledge: khong nam kien thuc → hoc lai roi lam phieu khoi dong
+ *  - skill:     biet huong nhung sai buoc hoac qua cham → luyen lap co phan hoi
+ *  - tactic:    lam duoc nhung bo trong hoac het gio → sua quy trinh lam bai
+ */
+export type ErrorType = 'knowledge' | 'skill' | 'tactic' | 'lucky' | 'clean';
+
+/**
+ * Mot luot lam phieu da nop, luu day du de dung lai bo giai de va bang phan
+ * tich bat cu luc nao ve sau.
+ */
+export interface WorksheetRecord {
+  id: string;
+  worksheetId: string;
+  submittedAt: number;
+  responses: Record<string, Response>;
+  correct: number;
+  total: number;
+  ratio: number;
+  timeMs: number;
+  passed: boolean;
+  mastered: boolean;
+  xpEarned: number;
+}
+
 /** Toan bo trang thai ben vung, co danh phien ban de di tru an toan. */
 export interface PersistedState {
   version: number;
@@ -386,4 +414,9 @@ export interface PersistedState {
   xp: number;
   /** Nhat ky thoi quen GITA, khoa la habitId. */
   habits: Record<string, HabitLog>;
+  /**
+   * Lich su tung luot lam phieu, moi nhat o cuoi. Giu toi da 300 luot gan nhat
+   * de ho so khong phinh vo han tren may nguoi dung.
+   */
+  worksheetRuns: WorksheetRecord[];
 }

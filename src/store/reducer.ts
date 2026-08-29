@@ -15,6 +15,7 @@ import type {
   Response,
   Settings,
   WorksheetProgress,
+  WorksheetRecord,
 } from '../types';
 
 export type Action =
@@ -370,6 +371,22 @@ function submitWorksheet(
 
   const worksheets = { ...state.worksheets, [worksheetId]: progress };
 
+  // Luu lai nguyen ven luot lam nay de nguoi hoc mo lai bo giai de va bang
+  // phan tich bat cu luc nao — day la vien gach cua ho so hoc vien.
+  const record: WorksheetRecord = {
+    id: `run_${now.toString(36)}_${worksheetId}`,
+    worksheetId,
+    submittedAt: now,
+    responses,
+    correct: outcome.correct,
+    total: outcome.total,
+    ratio: outcome.ratio,
+    timeMs: outcome.timeMs,
+    passed: outcome.passed,
+    mastered: outcome.mastered,
+    xpEarned: outcome.xpEarned,
+  };
+
   // Diem kinh nghiem chi duoc cong cho LAN CAI THIEN, khong cong lai moi luot —
   // nguoc lai nguoi hoc se cay lai mot phieu de de leo cap ma khong tien bo.
   const improved = outcome.ratio > (previous?.bestRatio ?? 0);
@@ -384,6 +401,7 @@ function submitWorksheet(
   return {
     ...state,
     worksheets,
+    worksheetRuns: [...state.worksheetRuns, record].slice(-300),
     mastery,
     srs,
     seen,

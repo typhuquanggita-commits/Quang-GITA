@@ -16,10 +16,12 @@ import {
   type WorksheetOutcome,
 } from '../../lib/progression';
 import { isCorrect } from '../../lib/scoring';
+import { buildSolutionSheet } from '../../lib/solutions';
+import { SolutionSheet } from '../solutions/SolutionSheet';
 import { navigate, useRoute } from '../../lib/router';
 import { useAppState, useDispatch } from '../../store/AppStore';
 import type { Question, Response } from '../../types';
-import { Badge, Button, Card, EmptyState, Modal, Progress } from '../../components/ui/primitives';
+import { Badge, Button, Card, CardHeader, EmptyState, Modal, Progress } from '../../components/ui/primitives';
 import { IconCheck, IconClock, IconClose, IconSpark } from '../../components/layout/icons';
 import { QuestionView } from '../exam/QuestionView';
 import { clearDraft, useWorksheetRun } from './useWorksheetRun';
@@ -491,8 +493,9 @@ function ReportView({
   const sheet = worksheetById(sheetId);
   if (!sheet) return null;
 
-  const wrongQuestions = sheet.parts
-    .flatMap((p) => p.questionIds)
+  const questionIds = sheet.parts.flatMap((p) => p.questionIds);
+  const entries = buildSolutionSheet(questionIds, responses);
+  const wrongQuestions = questionIds
     .map(findQuestion)
     .filter((q): q is Question => Boolean(q))
     .filter((q) => !isCorrect(q, responses[q.id]?.value ?? null));
@@ -617,37 +620,24 @@ function ReportView({
         </div>
       </Card>
 
-      {/* 5. Xem lại từng câu */}
-      <Card>
-        <h2 className="text-base font-semibold tracking-tight">Xem lại lời giải</h2>
-        <p className="mt-1 text-sm text-fg-muted">
-          Đọc kỹ phần này quan trọng hơn con số điểm. Mỗi câu sai được giải thích kèm lý do vì sao phương án bạn
-          chọn lại sai.
-        </p>
-        <div className="mt-5 space-y-10">
-          {sheet.parts.flatMap((p) => p.questionIds).map((id, index, all) => {
-            const q = findQuestion(id);
-            if (!q) return null;
-            return (
-              <div key={`${id}-${index}`} className="border-t border-line pt-6 first:border-0 first:pt-0">
-                <QuestionView
-                  question={q}
-                  response={responses[id]}
-                  index={index}
-                  total={all.length}
-                  onAnswer={() => undefined}
-                  onConfidence={() => undefined}
-                  onToggleFlag={() => undefined}
-                  reveal
-                  locked
-                  showConfidence={false}
-                  apiKey={state.settings.aiApiKey}
-                />
-              </div>
-            );
-          })}
+      {/* 5. Xem đáp án & phân tích chi tiết */}
+      <Card className="border-brand-line bg-brand-soft">
+        <CardHeader
+          title="Xem đáp án và phân tích chi tiết"
+          subtitle="Bảng phân tích cho biết vấn đề nằm ở đâu; bộ giải đề cho biết phải sửa như thế nào. Lượt làm này đã được lưu vào hồ sơ học viên, mở lại được bất cứ lúc nào."
+        />
+        <div className="flex flex-wrap gap-2">
+          <Button
+            variant="primary"
+            onClick={() => navigate(`/solutions?worksheet=${encodeURIComponent(sheet.id)}`)}
+          >
+            Mở bảng phân tích chi tiết
+          </Button>
+          <Button onClick={() => navigate('/profile')}>Hồ sơ học viên</Button>
         </div>
       </Card>
+
+      <SolutionSheet entries={entries} apiKey={state.settings.aiApiKey} title="Đáp án & lời giải" />
     </div>
   );
 }

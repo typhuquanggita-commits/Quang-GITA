@@ -5,8 +5,10 @@ import { cn } from '../../lib/cn';
 import { buildAttempt } from '../../lib/exam';
 import { formatClock, formatDateTime, formatScore } from '../../lib/format';
 import { useHotkeys } from '../../lib/hotkeys';
-import { gradeAttempt, isCorrect, scoreBand } from '../../lib/scoring';
-import { useRoute } from '../../lib/router';
+import { gradeAttempt, scoreBand } from '../../lib/scoring';
+import { buildSolutionSheet } from '../../lib/solutions';
+import { SolutionSheet } from '../solutions/SolutionSheet';
+import { navigate, useRoute } from '../../lib/router';
 import { useAppState, useDispatch } from '../../store/AppStore';
 import { activeAttempt } from '../../store/selectors';
 import type { Attempt, SectionId } from '../../types';
@@ -414,10 +416,7 @@ export function ExamResult({ attemptId }: { attemptId: string }) {
   const gap = state.settings.targetScore - result.total;
 
   const allQuestions = attempt.sections.flatMap((s) => s.questionIds);
-  const wrong = allQuestions
-    .map(findQuestion)
-    .filter((q): q is NonNullable<typeof q> => Boolean(q))
-    .filter((q) => !isCorrect(q, attempt.responses[q.id]?.value ?? null));
+  const entries = buildSolutionSheet(allQuestions, attempt.responses);
 
   return (
     <div className="space-y-6">
@@ -471,31 +470,23 @@ export function ExamResult({ attemptId }: { attemptId: string }) {
         </ul>
       </Card>
 
-      <Card>
+      <Card className="border-brand-line bg-brand-soft">
         <CardHeader
-          title={`Xem lại ${wrong.length} câu sai`}
-          subtitle="Các câu này đã được thêm vào sổ tay lỗi sai và sẽ quay lại theo lịch ôn tập ngắt quãng."
+          title="Xem đáp án và phân tích chi tiết"
+          subtitle="Bài thi này đã được lưu vào hồ sơ học viên. Bảng phân tích tách lỗi thành ba loại — kiến thức, kỹ năng, chiến thuật — vì ba loại này cần ba cách chữa khác hẳn nhau."
         />
-        <div className="space-y-10">
-          {wrong.map((question, index) => (
-            <div key={question.id} className="border-t border-line pt-6 first:border-0 first:pt-0">
-              <QuestionView
-                question={question}
-                response={attempt.responses[question.id]}
-                index={index}
-                total={wrong.length}
-                onAnswer={() => undefined}
-                onConfidence={() => undefined}
-                onToggleFlag={() => undefined}
-                reveal
-                locked
-                showConfidence={false}
-                apiKey={state.settings.aiApiKey}
-              />
-            </div>
-          ))}
+        <div className="flex flex-wrap gap-2">
+          <Button
+            variant="primary"
+            onClick={() => navigate(`/solutions?attempt=${encodeURIComponent(attempt.id)}`)}
+          >
+            Mở bảng phân tích chi tiết
+          </Button>
+          <Button onClick={() => navigate('/profile')}>Hồ sơ học viên</Button>
         </div>
       </Card>
+
+      <SolutionSheet entries={entries} apiKey={state.settings.aiApiKey} title="Đáp án & lời giải" />
     </div>
   );
 }

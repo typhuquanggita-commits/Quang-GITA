@@ -35,6 +35,13 @@ export function CommandPalette({ open, onClose }: { open: boolean; onClose: () =
       { id: 'go.practice', title: 'Luyện tập theo chuyên đề', group: 'Điều hướng', href: '#/practice' },
       { id: 'go.review', title: 'Sổ tay lỗi sai & ôn tập', group: 'Điều hướng', href: '#/review' },
       { id: 'go.analytics', title: 'Phân tích năng lực', group: 'Điều hướng', href: '#/analytics' },
+      {
+        id: 'go.profile',
+        title: 'Hồ sơ học viên',
+        group: 'Điều hướng',
+        href: '#/profile',
+        keywords: 'lich su dap an phan tich lo trinh ca nhan hoa',
+      },
       { id: 'go.roadmap', title: 'Lộ trình', group: 'Điều hướng', href: '#/roadmap' },
       { id: 'go.gita', title: 'Mô thức huấn luyện GITA', group: 'Điều hướng', href: '#/gita', keywords: 'goal input train apply tang hap thu thoi quen' },
       { id: 'go.roles', title: 'Phân quyền hệ thống', group: 'Điều hướng', href: '#/roles' },

@@ -128,3 +128,12 @@ export const IconShield = (p: SVGProps<SVGSVGElement>) => (
     <path d="m9 12 2 2 4-4" />
   </Icon>
 );
+
+export const IconProfile = (p: SVGProps<SVGSVGElement>) => (
+  <Icon {...p}>
+    <path d="M4 5.5A1.5 1.5 0 0 1 5.5 4h9L20 9.5V19a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 19z" />
+    <path d="M14 4v6h6" />
+    <circle cx="12" cy="14" r="2" />
+    <path d="M8.5 19a3.5 3.5 0 0 1 7 0" />
+  </Icon>
+);
