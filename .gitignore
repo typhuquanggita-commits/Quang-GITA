@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# GITA math toolkit
+__pycache__/
+*.pyc

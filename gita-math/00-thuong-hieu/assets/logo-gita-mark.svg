@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Biểu tượng Học viện GITA">
+  <title>GITA — biểu tượng bậc thang bốn bậc</title>
+  <defs>
+    <linearGradient id="gitaNavy" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#123A73"/>
+      <stop offset="1" stop-color="#0B2C5C"/>
+    </linearGradient>
+  </defs>
+  <!-- khiên bo góc -->
+  <path d="M60 4 L108 20 v44c0 26-20 43-48 52C32 107 12 90 12 64V20Z" fill="url(#gitaNavy)"/>
+  <path d="M60 4 L108 20 v44c0 26-20 43-48 52C32 107 12 90 12 64V20Z" fill="none" stroke="#F2A81D" stroke-width="2.5" opacity=".85"/>
+  <!-- 4 bậc thang G I T A -->
+  <g>
+    <rect x="26" y="76" width="15" height="16" rx="2.5" fill="#1E88E5"/>
+    <rect x="45" y="65" width="15" height="27" rx="2.5" fill="#FF6B4A"/>
+    <rect x="64" y="52" width="15" height="40" rx="2.5" fill="#7B4BC4"/>
+    <rect x="83" y="37" width="15" height="55" rx="2.5" fill="#1F9D6B"/>
+  </g>
+  <!-- mũi tên vươn lên -->
+  <path d="M24 68 L44 57 L63 44 L92 26" fill="none" stroke="#F2A81D" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M78 22 L95 22 L95 39" fill="none" stroke="#F2A81D" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
