@@ -1,6 +1,8 @@
 import type { Question, ScienceSubject, SectionId } from '../../types';
 import { quantitativeQuestions } from './quantitative';
+import { quantitativeQuestions2 } from './quantitative-2';
 import { qualitativeQuestions } from './qualitative';
+import { qualitativeQuestions2 } from './qualitative-2';
 import { englishQuestions } from './english';
 import {
   chemistryQuestions,
@@ -8,15 +10,25 @@ import {
   historyQuestions,
   physicsQuestions,
 } from './sciences';
+import { chemistryQuestions2, physicsQuestions2 } from './sciences-2';
+import { geographyQuestions2, historyQuestions2 } from './sciences-3';
+import { englishQuestions2 } from './english-2';
 
 export const ALL_QUESTIONS: readonly Question[] = [
   ...quantitativeQuestions,
+  ...quantitativeQuestions2,
   ...qualitativeQuestions,
+  ...qualitativeQuestions2,
   ...physicsQuestions,
+  ...physicsQuestions2,
   ...chemistryQuestions,
+  ...chemistryQuestions2,
   ...historyQuestions,
+  ...historyQuestions2,
   ...geographyQuestions,
+  ...geographyQuestions2,
   ...englishQuestions,
+  ...englishQuestions2,
 ];
 
 const BY_ID = new Map(ALL_QUESTIONS.map((q) => [q.id, q]));

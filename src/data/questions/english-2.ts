@@ -1,0 +1,395 @@
+import { buildQuestions, type QuestionDraft } from './helpers';
+
+/**
+ * Ngan hang cau hoi Tieng Anh — bo mo rong.
+ * Xem ghi chu ve viec tach tep o quantitative-2.ts.
+ */
+
+const drafts: QuestionDraft[] = [
+  /* ── Grammar & Structure ──────────────────────────────────────────── */
+  {
+    id: 'e.gra.7',
+    topicId: 'science.english.grammar',
+    difficulty: 2,
+    stem: 'Choose the best option: "Neither the teachers nor the principal ______ willing to comment on the decision."',
+    choices: ['was', 'were', 'have been', 'are'],
+    answer: 'A',
+    explanation:
+      'Với "neither ... nor", động từ hòa hợp với chủ ngữ đứng gần nó nhất. Ở đây danh từ gần nhất là "the principal" (số ít) nên dùng "was".',
+    traps: { B: 'Người học thường nhìn vào "the teachers" ở xa và chia số nhiều, nhưng quy tắc là hòa hợp với chủ ngữ gần nhất.' },
+    skills: ['subject-verb agreement', 'correlative conjunctions'],
+  },
+  {
+    id: 'e.gra.8',
+    topicId: 'science.english.grammar',
+    difficulty: 3,
+    stem: 'Choose the best option: "It was not until she had read the second report ______ the inconsistency."',
+    choices: ['that she noticed', 'when she noticed', 'that did she notice', 'she noticed'],
+    answer: 'A',
+    explanation:
+      'Cấu trúc nhấn mạnh "It was not until + mốc thời gian + that + mệnh đề" giữ trật tự chủ ngữ — động từ bình thường sau "that". Đảo ngữ chỉ xảy ra khi "Not until" đứng đầu câu.',
+    traps: { C: 'Đảo ngữ "did she notice" chỉ đúng trong "Not until ... did she notice", không dùng sau "that".' },
+    skills: ['cleft sentences', 'emphasis'],
+  },
+  {
+    id: 'e.gra.9',
+    topicId: 'science.english.grammar',
+    difficulty: 3,
+    stem: 'Choose the best option: "______ in the 1960s, the bridge now carries three times the traffic it was designed for."',
+    choices: ['Built', 'Building', 'Having built', 'It was built'],
+    answer: 'A',
+    explanation:
+      'Mệnh đề rút gọn phải cùng chủ ngữ với mệnh đề chính ("the bridge"). Cây cầu chịu tác động nên dùng phân từ quá khứ "Built" mang nghĩa bị động.',
+    traps: { B: 'Phân từ hiện tại "Building" hàm nghĩa chủ động, tức là cây cầu tự xây, nên vô lý.' },
+    skills: ['participle clauses', 'reduced clauses'],
+  },
+  {
+    id: 'e.gra.10',
+    topicId: 'science.english.grammar',
+    difficulty: 2,
+    stem: 'Choose the best option: "The committee would rather the results ______ published until the review is complete."',
+    choices: ['were not', 'are not', 'will not be', 'have not been'],
+    answer: 'A',
+    explanation:
+      'Sau "would rather + chủ ngữ khác" ta dùng thì quá khứ giả định để nói về hiện tại hoặc tương lai, nên chọn "were not".',
+    traps: { B: 'Hiện tại đơn không dùng được sau "would rather + tân ngữ"; cấu trúc này bắt buộc thể giả định.' },
+    skills: ['subjunctive', 'would rather'],
+  },
+  {
+    id: 'e.gra.11',
+    topicId: 'science.english.grammar',
+    difficulty: 3,
+    stem: 'Identify the error: "Despite (A) the weather was bad (B), the organisers decided (C) to go ahead with (D) the ceremony."',
+    choices: ['(A) Despite', '(B) the weather was bad', '(C) the organisers decided', '(D) to go ahead with'],
+    answer: 'A',
+    explanation:
+      '"Despite" là giới từ nên phải đi với danh từ hoặc danh động từ ("Despite the bad weather"). Muốn giữ mệnh đề "the weather was bad" thì phải dùng liên từ "Although".',
+    traps: { B: 'Mệnh đề này đúng ngữ pháp; vấn đề nằm ở từ nối đứng trước nó.' },
+    skills: ['connectors', 'preposition vs conjunction'],
+  },
+  {
+    id: 'e.gra.12',
+    topicId: 'science.english.grammar',
+    difficulty: 3,
+    stem: 'Choose the best option: "Rarely ______ a proposal rejected so quickly by the board."',
+    choices: ['have we seen', 'we have seen', 'we saw', 'did we saw'],
+    answer: 'A',
+    explanation:
+      'Trạng từ phủ định "Rarely" đứng đầu câu buộc phải đảo ngữ: trợ động từ lên trước chủ ngữ, cho "have we seen".',
+    traps: { D: 'Sau trợ động từ "did" phải là động từ nguyên mẫu "see", không phải "saw".' },
+    skills: ['inversion'],
+  },
+  {
+    id: 'e.gra.13',
+    topicId: 'science.english.grammar',
+    difficulty: 2,
+    stem: 'Choose the best option: "She is used to ______ in front of large audiences."',
+    choices: ['speaking', 'speak', 'be spoken', 'have spoken'],
+    answer: 'A',
+    explanation:
+      '"be used to" (đã quen với) là tính từ đi với giới từ "to", nên theo sau là danh động từ. Cần phân biệt với "used to + V" nghĩa là "đã từng".',
+    traps: { B: '"used to speak" nghĩa là "đã từng nói", khác hẳn nghĩa "đã quen với việc nói".' },
+    skills: ['gerund vs infinitive'],
+  },
+  {
+    id: 'e.gra.14',
+    topicId: 'science.english.grammar',
+    difficulty: 3,
+    stem: 'Choose the best option: "The more carefully the data is collected, ______."',
+    choices: [
+      'the more reliable the conclusions will be',
+      'the conclusions will be more reliable',
+      'more reliable will the conclusions be',
+      'the most reliable the conclusions are',
+    ],
+    answer: 'A',
+    explanation:
+      'Cấu trúc so sánh kép "The + comparative ..., the + comparative ..." đòi hỏi vế sau cũng bắt đầu bằng "the" cộng dạng so sánh hơn.',
+    traps: { D: 'So sánh kép dùng dạng so sánh hơn, không dùng so sánh nhất.' },
+    skills: ['double comparatives'],
+  },
+  {
+    id: 'e.gra.15',
+    topicId: 'science.english.grammar',
+    difficulty: 3,
+    stem: 'Choose the best option: "He denied ______ the document, although his signature was on it."',
+    choices: ['having seen', 'to see', 'to have seen', 'that seeing'],
+    answer: 'A',
+    explanation:
+      '"deny" luôn đi với danh động từ. Dạng hoàn thành "having seen" nhấn mạnh hành động xảy ra trước thời điểm phủ nhận.',
+    traps: { C: '"deny" không bao giờ theo sau bởi động từ nguyên mẫu, kể cả dạng hoàn thành.' },
+    skills: ['gerund vs infinitive', 'perfect gerund'],
+  },
+  /* ── Vocabulary & Collocation ─────────────────────────────────────── */
+  {
+    id: 'e.voc.7',
+    topicId: 'science.english.vocabulary',
+    difficulty: 2,
+    stem: 'Choose the best option: "The new evidence casts serious ______ on the original findings."',
+    choices: ['doubt', 'question', 'suspicion', 'worry'],
+    answer: 'A',
+    explanation:
+      '"cast doubt on something" là collocation cố định nghĩa là làm cho điều gì trở nên đáng ngờ. Các danh từ còn lại không kết hợp với động từ "cast" theo nghĩa này.',
+    traps: { B: '"call something into question" mới đúng với "question"; "cast question" không tồn tại.' },
+    skills: ['collocation'],
+  },
+  {
+    id: 'e.voc.8',
+    topicId: 'science.english.vocabulary',
+    difficulty: 3,
+    stem: 'Choose the word closest in meaning to "meticulous" in: "She kept meticulous records of every experiment."',
+    choices: ['extremely careful', 'unusually brief', 'openly public', 'rather careless'],
+    answer: 'A',
+    explanation:
+      '"meticulous" nghĩa là tỉ mỉ, chú ý tới từng chi tiết nhỏ, nên gần nghĩa nhất với "extremely careful"; "careless" là từ trái nghĩa.',
+    traps: { D: 'Đây là từ trái nghĩa, một bẫy quen thuộc khi thí sinh chỉ đoán theo cảm giác.' },
+    skills: ['synonym'],
+  },
+  {
+    id: 'e.voc.9',
+    topicId: 'science.english.vocabulary',
+    difficulty: 3,
+    stem: 'Choose the word OPPOSITE in meaning to "scarce" in: "Clean water was scarce in the region."',
+    choices: ['abundant', 'limited', 'costly', 'distant'],
+    answer: 'A',
+    explanation:
+      '"scarce" nghĩa là khan hiếm, nên trái nghĩa là "abundant" (dồi dào). "Limited" là từ đồng nghĩa chứ không phải trái nghĩa.',
+    traps: { B: '"limited" cùng hướng nghĩa với "scarce", chọn nó là nhầm đồng nghĩa với trái nghĩa.' },
+    skills: ['antonym'],
+  },
+  {
+    id: 'e.voc.10',
+    topicId: 'science.english.vocabulary',
+    difficulty: 2,
+    stem: 'Choose the best option: "The two studies reached ______ conclusions, so further research is needed."',
+    choices: ['conflicting', 'combining', 'consulting', 'convincing'],
+    answer: 'A',
+    explanation:
+      '"conflicting conclusions" nghĩa là các kết luận mâu thuẫn nhau, phù hợp với mệnh đề sau nói rằng cần nghiên cứu thêm.',
+    traps: { D: '"convincing conclusions" nghĩa là kết luận thuyết phục, trái với ý cần nghiên cứu thêm.' },
+    skills: ['word choice', 'context clue'],
+  },
+  {
+    id: 'e.voc.11',
+    topicId: 'science.english.vocabulary',
+    difficulty: 3,
+    stem: 'Choose the best option: "Government spending on research has been cut ______ the bone."',
+    choices: ['to', 'at', 'in', 'for'],
+    answer: 'A',
+    explanation:
+      'Thành ngữ "cut something to the bone" nghĩa là cắt giảm tới mức tối đa; giới từ cố định trong thành ngữ này là "to".',
+    skills: ['idiom', 'preposition'],
+  },
+  {
+    id: 'e.voc.12',
+    topicId: 'science.english.vocabulary',
+    difficulty: 2,
+    stem: 'Choose the correct word form: "The results were ______ inconsistent with the model."',
+    choices: ['strikingly', 'striking', 'strike', 'strikes'],
+    answer: 'A',
+    explanation:
+      'Vị trí trước tính từ "inconsistent" cần một trạng từ bổ nghĩa, nên dùng "strikingly".',
+    traps: { B: '"striking" là tính từ, không bổ nghĩa được cho một tính từ khác.' },
+    skills: ['word formation'],
+  },
+  {
+    id: 'e.voc.13',
+    topicId: 'science.english.vocabulary',
+    difficulty: 3,
+    stem: 'Choose the best option: "The scheme was quietly ______ after two years of poor results."',
+    choices: ['scrapped', 'scraped', 'scrambled', 'scratched'],
+    answer: 'A',
+    explanation:
+      '"scrap a scheme" nghĩa là hủy bỏ một kế hoạch. "Scrape" là cạo, "scramble" là trộn lộn xộn, "scratch" là gãi hoặc cào.',
+    traps: { B: '"scraped" chỉ khác một chữ cái nhưng nghĩa là cạo, không liên quan tới việc bãi bỏ kế hoạch.' },
+    skills: ['word choice', 'confusable words'],
+  },
+  {
+    id: 'e.voc.14',
+    topicId: 'science.english.vocabulary',
+    difficulty: 3,
+    stem: 'Choose the best option: "Her argument is persuasive, ______ it rests on a single case study."',
+    choices: ['albeit', 'therefore', 'moreover', 'hence'],
+    answer: 'A',
+    explanation:
+      'Vế sau nêu một hạn chế trái chiều với lời khen ở vế trước, nên cần từ nối nhượng bộ. "Albeit" nghĩa là "mặc dù vậy".',
+    traps: { C: '"moreover" dùng để bổ sung thông tin cùng chiều, không diễn tả sự tương phản.' },
+    skills: ['discourse markers'],
+  },
+  {
+    id: 'e.voc.15',
+    topicId: 'science.english.vocabulary',
+    difficulty: 2,
+    stem: 'Choose the best option: "The team took ______ of the delay to test an alternative design."',
+    choices: ['advantage', 'benefit', 'profit', 'chance'],
+    answer: 'A',
+    explanation:
+      '"take advantage of something" là collocation cố định nghĩa là tận dụng cơ hội. Các danh từ khác không dùng được với "take ... of" theo nghĩa này.',
+    traps: { D: '"take a chance" nghĩa là liều thử, và không đi kèm giới từ "of" theo cách này.' },
+    skills: ['collocation'],
+  },
+  /* ── Reading Comprehension ────────────────────────────────────────── */
+  {
+    id: 'e.rea.7',
+    topicId: 'science.english.reading',
+    difficulty: 2,
+    passageId: 'p.english.2',
+    stem: 'What was the unintended effect of publishing surgeons’ survival rates?',
+    choices: [
+      'Some skilled surgeons avoided operating on the most seriously ill patients',
+      'Patients stopped trusting published figures entirely',
+      'Hospitals hired more surgeons than they needed',
+      'The number of operations rose sharply across the country',
+    ],
+    answer: 'A',
+    explanation:
+      'Đoạn một nêu rõ: "some of the most skilled surgeons ... had quietly stopped accepting the sickest patients", tức là họ tránh nhận ca nặng để giữ chỉ số đẹp.',
+    traps: { B: 'Bài không nói gì về việc bệnh nhân mất niềm tin vào các con số công bố.' },
+    skills: ['detail'],
+  },
+  {
+    id: 'e.rea.8',
+    topicId: 'science.english.reading',
+    difficulty: 3,
+    passageId: 'p.english.2',
+    stem: 'Which best states the central idea of the passage?',
+    choices: [
+      'A single measure tied to consequences invites gaming, so several measures should be read together with context',
+      'Measurement of public services should be abandoned because it is always misleading',
+      'Surgeons and teachers are less honest than other professionals',
+      'Institutions perform better when no figures are published at all',
+    ],
+    answer: 'A',
+    explanation:
+      'Đoạn ba bác bỏ việc bỏ hẳn đo lường và chốt lại kết luận hẹp hơn: một con số đơn lẻ gắn với chế tài sẽ bị lách, còn nhiều thước đo đọc cùng nhau thì khó bóp méo hơn.',
+    traps: { B: 'Tác giả nói thẳng "None of this is an argument for abandoning measurement".' },
+    skills: ['main idea'],
+  },
+  {
+    id: 'e.rea.9',
+    topicId: 'science.english.reading',
+    difficulty: 3,
+    passageId: 'p.english.2',
+    stem: 'The examples of schools and call centres are used mainly to:',
+    choices: [
+      'Show that the same pattern appears well beyond hospitals',
+      'Prove that education matters more than health care',
+      'Suggest that call centres should not be measured at all',
+      'Contrast two opposing views of measurement',
+    ],
+    answer: 'A',
+    explanation:
+      'Hai ví dụ nằm ngay sau câu "This pattern has a name", đóng vai trò minh họa cho tính phổ biến của hiện tượng, không phải để so sánh giá trị các ngành.',
+    traps: { D: 'Hai ví dụ cùng chiều với nhau, không tạo ra sự tương phản nào.' },
+    skills: ['purpose', 'rhetorical function'],
+  },
+  {
+    id: 'e.rea.10',
+    topicId: 'science.english.reading',
+    difficulty: 3,
+    passageId: 'p.english.2',
+    stem: 'According to the passage, institutions that measure nothing are:',
+    choices: [
+      'Harder to hold to account, with failures found late',
+      'More honest than institutions that publish figures',
+      'Generally better managed but less transparent',
+      'Unable to function in a modern economy',
+    ],
+    answer: 'A',
+    explanation:
+      'Câu trong đoạn ba nói rõ: các tổ chức không đo lường "are not more honest; they are merely harder to hold to account, and their failures tend to be discovered late".',
+    traps: { B: 'Bài phủ định chính xác ý này bằng cụm "are not more honest".' },
+    skills: ['detail', 'negation'],
+  },
+  {
+    id: 'e.rea.11',
+    topicId: 'science.english.reading',
+    difficulty: 3,
+    passageId: 'p.english.2',
+    stem: 'The final paragraph asks the reader to develop the habit of:',
+    choices: [
+      'Asking what behaviour a measure rewards and who benefits from supplying it',
+      'Rejecting any statistic published by an institution',
+      'Collecting data independently before trusting an institution',
+      'Trusting figures that come from several countries at once',
+    ],
+    answer: 'A',
+    explanation:
+      'Đoạn cuối phân biệt rõ giữa hoài nghi chung chung về con số và thói quen cụ thể được đề nghị: hỏi xem thước đo thưởng cho hành vi nào và ai được lợi khi cung cấp nó.',
+    traps: { B: 'Tác giả nói rõ điều được yêu cầu "is not scepticism about numbers in general".' },
+    skills: ['inference', 'author intent'],
+  },
+  {
+    id: 'e.rea.12',
+    topicId: 'science.english.reading',
+    difficulty: 2,
+    passageId: 'p.english.3',
+    stem: 'Why does the writer say noise is "the pollutant we take least seriously"?',
+    choices: [
+      'Because air and water are monitored while sound is treated as a mere inconvenience',
+      'Because noise has been proven harmless to health',
+      'Because most cities have already solved their noise problems',
+      'Because residents complain about noise more than about air quality',
+    ],
+    answer: 'A',
+    explanation:
+      'Câu mở đầu đối lập việc không khí được giám sát, nước được kiểm nghiệm với việc tiếng ồn chỉ bị xem như điều phiền toái nhất thời.',
+    traps: { B: 'Cả đoạn một liệt kê bằng chứng cho thấy tiếng ồn có hại cho sức khỏe.' },
+    skills: ['detail'],
+  },
+  {
+    id: 'e.rea.13',
+    topicId: 'science.english.reading',
+    difficulty: 3,
+    passageId: 'p.english.3',
+    stem: 'What does the passage say about residents who claim they no longer notice traffic noise?',
+    choices: [
+      'Their bodies keep reacting to the noise even though they stop waking up',
+      'They are being deliberately dishonest about the problem',
+      'They have genuinely become immune to its health effects',
+      'They tend to move away within a few years',
+    ],
+    answer: 'A',
+    explanation:
+      'Đoạn hai nói sự thích nghi chỉ mang tính tâm lý chứ không phải sinh lý: các nghiên cứu giấc ngủ cho thấy cơ thể vẫn phản ứng với xe tải chạy qua.',
+    traps: { B: 'Bài dùng chữ "quite sincerely", tức là họ nói thật chứ không hề gian dối.' },
+    skills: ['detail', 'inference'],
+  },
+  {
+    id: 'e.rea.14',
+    topicId: 'science.english.reading',
+    difficulty: 3,
+    passageId: 'p.english.3',
+    stem: 'According to the third paragraph, modern building materials worsen noise because they:',
+    choices: [
+      'Reflect sound instead of absorbing it',
+      'Are too expensive to replace once installed',
+      'Trap heat and force windows to stay open',
+      'Require heavier traffic during construction',
+    ],
+    answer: 'A',
+    explanation:
+      'Kính, bê tông và các bề mặt phẳng cứng phản xạ âm thanh thay vì hấp thụ, nên một con phố được xây lại đẹp hơn lại có thể ồn hơn.',
+    skills: ['detail', 'cause and effect'],
+  },
+  {
+    id: 'e.rea.15',
+    topicId: 'science.english.reading',
+    difficulty: 3,
+    passageId: 'p.english.3',
+    stem: 'The writer concludes that what cities lack in dealing with noise is mainly:',
+    choices: [
+      'The habit of treating quiet as something owed to residents',
+      'Scientific knowledge of how sound travels',
+      'The money needed for any effective remedy',
+      'Laws that ban traffic from residential streets',
+    ],
+    answer: 'A',
+    explanation:
+      'Câu cuối nói các giải pháp đều "unglamorous and well understood", nên thứ còn thiếu không phải kiến thức mà là thói quen coi sự yên tĩnh là điều thành phố nợ cư dân.',
+    traps: { B: 'Bài khẳng định ngược lại: "What is missing is not knowledge".' },
+    skills: ['main idea', 'inference'],
+  },
+];
+
+export const englishQuestions2 = buildQuestions('science', 'english', drafts);

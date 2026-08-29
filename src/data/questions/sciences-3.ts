@@ -1,0 +1,882 @@
+import { buildQuestions, type QuestionDraft } from './helpers';
+
+/**
+ * Ngan hang cau hoi Lich su va Dia ly — bo mo rong.
+ * Xem ghi chu ve viec tach tep o quantitative-2.ts.
+ */
+
+const history: QuestionDraft[] = [
+  /* ── Lịch sử Việt Nam ─────────────────────────────────────────────── */
+  {
+    id: 's.his.9',
+    topicId: 'science.history.vietnam',
+    difficulty: 1,
+    stem: 'Chiến thắng Bạch Đằng năm 938 do Ngô Quyền chỉ huy đã đánh tan đạo quân xâm lược nào?',
+    choices: ['Quân Nam Hán', 'Quân Tống', 'Quân Nguyên', 'Quân Minh'],
+    answer: 'A',
+    explanation:
+      'Năm 938 Ngô Quyền dùng trận địa cọc ngầm trên sông Bạch Đằng tiêu diệt đạo thủy quân Nam Hán do Lưu Hoằng Tháo chỉ huy, chấm dứt hơn một nghìn năm Bắc thuộc.',
+    traps: { C: 'Quân Nguyên bị đánh bại trên sông Bạch Đằng năm 1288, dưới thời Trần, không phải năm 938.' },
+    skills: ['mốc sự kiện'],
+  },
+  {
+    id: 's.his.10',
+    topicId: 'science.history.vietnam',
+    difficulty: 2,
+    stem: 'Năm 1010, vua Lý Công Uẩn dời đô từ Hoa Lư về Đại La và đổi tên thành:',
+    choices: ['Thăng Long', 'Đông Đô', 'Đông Quan', 'Phú Xuân'],
+    answer: 'A',
+    explanation:
+      'Chiếu dời đô năm 1010 chuyển kinh đô từ vùng núi Hoa Lư ra Đại La — nơi có đồng bằng rộng và giao thông đường sông thuận lợi — và đặt tên là Thăng Long.',
+    traps: { B: 'Đông Đô là tên gọi Thăng Long dưới thời Hồ, muộn hơn gần bốn thế kỷ.' },
+    skills: ['mốc sự kiện', 'nhân vật lịch sử'],
+  },
+  {
+    id: 's.his.11',
+    topicId: 'science.history.vietnam',
+    difficulty: 2,
+    stem: 'Nhà Trần đã ba lần đánh bại cuộc xâm lược của quân Mông — Nguyên trong thế kỷ nào?',
+    choices: ['Thế kỷ XIII', 'Thế kỷ XI', 'Thế kỷ XV', 'Thế kỷ XVIII'],
+    answer: 'A',
+    explanation:
+      'Ba cuộc kháng chiến diễn ra vào các năm 1258, 1285 và 1287 — 1288, đều thuộc thế kỷ XIII, gắn với vai trò của Trần Thủ Độ và Trần Quốc Tuấn.',
+    skills: ['mốc sự kiện'],
+  },
+  {
+    id: 's.his.12',
+    topicId: 'science.history.vietnam',
+    difficulty: 3,
+    stem: 'Khởi nghĩa Lam Sơn (1418 — 1427) kết thúc thắng lợi bằng chiến thắng quyết định nào?',
+    choices: [
+      'Chi Lăng — Xương Giang',
+      'Tốt Động — Chúc Động',
+      'Ngọc Hồi — Đống Đa',
+      'Rạch Gầm — Xoài Mút',
+    ],
+    answer: 'A',
+    explanation:
+      'Cuối năm 1427, nghĩa quân Lam Sơn tiêu diệt viện binh Minh ở Chi Lăng — Xương Giang, khiến Vương Thông ở Đông Quan phải xin hòa. Tốt Động — Chúc Động (1426) là thắng lợi trước đó, chưa phải trận quyết định.',
+    traps: { C: 'Ngọc Hồi — Đống Đa là chiến thắng của Quang Trung trước quân Thanh năm 1789.' },
+    skills: ['diễn biến chiến dịch'],
+  },
+  {
+    id: 's.his.13',
+    topicId: 'science.history.vietnam',
+    difficulty: 2,
+    stem: 'Vua Quang Trung đại phá quân Thanh vào mùa xuân năm nào? (điền số năm)',
+    answer: '1789',
+    explanation:
+      'Chỉ trong năm ngày Tết Kỷ Dậu 1789, quân Tây Sơn hành quân thần tốc từ Phú Xuân ra Bắc, phá đồn Ngọc Hồi — Đống Đa và giải phóng Thăng Long.',
+    skills: ['mốc sự kiện'],
+  },
+  {
+    id: 's.his.14',
+    topicId: 'science.history.vietnam',
+    difficulty: 3,
+    stem: 'Đảng Cộng sản Việt Nam ra đời đầu năm 1930 là kết quả trực tiếp của sự kiện nào?',
+    choices: [
+      'Hội nghị hợp nhất ba tổ chức cộng sản do Nguyễn Ái Quốc chủ trì',
+      'Phong trào Xô viết Nghệ — Tĩnh',
+      'Cuộc khởi nghĩa Yên Bái',
+      'Đại hội lần thứ nhất của Hội Việt Nam Cách mạng Thanh niên',
+    ],
+    answer: 'A',
+    explanation:
+      'Đầu năm 1930, Nguyễn Ái Quốc chủ trì hội nghị hợp nhất Đông Dương Cộng sản đảng, An Nam Cộng sản đảng và Đông Dương Cộng sản liên đoàn thành một đảng duy nhất.',
+    traps: { B: 'Xô viết Nghệ — Tĩnh nổ ra sau khi Đảng đã thành lập, là hệ quả chứ không phải nguyên nhân.' },
+    skills: ['quan hệ nhân quả'],
+  },
+  {
+    id: 's.his.15',
+    topicId: 'science.history.vietnam',
+    difficulty: 2,
+    stem: 'Bản Tuyên ngôn Độc lập khai sinh nước Việt Nam Dân chủ Cộng hòa được đọc vào ngày tháng năm nào?',
+    choices: ['2 — 9 — 1945', '19 — 8 — 1945', '6 — 1 — 1946', '2 — 9 — 1946'],
+    answer: 'A',
+    explanation:
+      'Ngày 19 — 8 — 1945 là ngày giành chính quyền ở Hà Nội; ngày 2 — 9 — 1945, tại Quảng trường Ba Đình, Chủ tịch Hồ Chí Minh đọc Tuyên ngôn Độc lập.',
+    traps: { B: 'Đó là ngày tổng khởi nghĩa thắng lợi ở Hà Nội, chưa phải ngày tuyên bố độc lập.' },
+    skills: ['mốc sự kiện'],
+  },
+  {
+    id: 's.his.16',
+    topicId: 'science.history.vietnam',
+    difficulty: 3,
+    stem: 'Ý nghĩa quốc tế nổi bật nhất của chiến thắng Điện Biên Phủ năm 1954 là gì?',
+    choices: [
+      'Cổ vũ mạnh mẽ phong trào giải phóng dân tộc ở châu Á, châu Phi và Mỹ Latinh',
+      'Buộc Mỹ phải rút toàn bộ quân viễn chinh khỏi Việt Nam',
+      'Hoàn thành thống nhất đất nước về mặt nhà nước',
+      'Đưa Việt Nam gia nhập Liên hợp quốc',
+    ],
+    answer: 'A',
+    explanation:
+      'Điện Biên Phủ là lần đầu một dân tộc thuộc địa đánh bại quân đội của một cường quốc thực dân bằng chiến dịch quy mô lớn, trở thành nguồn cổ vũ cho phong trào giải phóng dân tộc toàn thế giới.',
+    traps: { B: 'Việc Mỹ rút quân gắn với Hiệp định Paris năm 1973, không phải năm 1954.' },
+    skills: ['đánh giá ý nghĩa'],
+  },
+  {
+    id: 's.his.17',
+    topicId: 'science.history.vietnam',
+    difficulty: 3,
+    stem: 'Hiệp định Paris năm 1973 về chấm dứt chiến tranh, lập lại hòa bình ở Việt Nam có nội dung cốt lõi nào?',
+    choices: [
+      'Hoa Kỳ cam kết tôn trọng độc lập, chủ quyền, thống nhất và toàn vẹn lãnh thổ của Việt Nam, rút hết quân về nước',
+      'Chia Việt Nam thành hai miền lấy vĩ tuyến 17 làm ranh giới lâu dài',
+      'Tổ chức tổng tuyển cử thống nhất đất nước trong vòng hai năm',
+      'Giải giáp toàn bộ quân đội hai miền dưới sự giám sát của Liên hợp quốc',
+    ],
+    answer: 'A',
+    explanation:
+      'Điều khoản then chốt của Hiệp định Paris là Hoa Kỳ công nhận các quyền dân tộc cơ bản của Việt Nam và rút hết quân, tạo điều kiện so sánh lực lượng có lợi cho cách mạng miền Nam.',
+    traps: { C: 'Điều khoản tổng tuyển cử sau hai năm thuộc Hiệp định Giơ-ne-vơ năm 1954.' },
+    skills: ['nội dung hiệp định'],
+  },
+  {
+    id: 's.his.18',
+    topicId: 'science.history.vietnam',
+    difficulty: 3,
+    stem: 'Đường lối Đổi mới được đề ra tại Đại hội đại biểu toàn quốc lần thứ VI của Đảng (năm 1986) xác định trọng tâm trước hết là đổi mới:',
+    choices: ['Kinh tế', 'Chính trị', 'Văn hóa', 'Đối ngoại'],
+    answer: 'A',
+    explanation:
+      'Đại hội VI xác định đổi mới toàn diện nhưng phải bắt đầu và trọng tâm là đổi mới kinh tế: chuyển từ cơ chế tập trung quan liêu bao cấp sang cơ chế thị trường có sự quản lý của Nhà nước.',
+    skills: ['đường lối'],
+  },
+  /* ── Lịch sử thế giới ─────────────────────────────────────────────── */
+  {
+    id: 's.his.19',
+    topicId: 'science.history.world',
+    difficulty: 1,
+    stem: 'Cách mạng tư sản Pháp bùng nổ với sự kiện quần chúng tấn công ngục Ba-xti vào năm nào? (điền số năm)',
+    answer: '1789',
+    explanation:
+      'Ngày 14 — 7 — 1789, nhân dân Paris phá ngục Ba-xti, biểu tượng của chế độ chuyên chế, mở đầu cuộc cách mạng tư sản triệt để nhất châu Âu thời cận đại.',
+    skills: ['mốc sự kiện'],
+  },
+  {
+    id: 's.his.20',
+    topicId: 'science.history.world',
+    difficulty: 2,
+    stem: 'Phát minh nào được coi là bước ngoặt đưa cách mạng công nghiệp Anh vượt khỏi giới hạn của sức nước và sức gió?',
+    choices: [
+      'Máy hơi nước của Giêm Oát',
+      'Máy kéo sợi Gien-ni',
+      'Máy dệt của Ét-mơn Các-rai',
+      'Lò luyện thép Bét-xme',
+    ],
+    answer: 'A',
+    explanation:
+      'Máy hơi nước cho phép đặt nhà máy ở bất cứ đâu thay vì phải bám theo dòng chảy, nhờ đó công nghiệp và giao thông đường sắt, đường thủy phát triển bùng nổ.',
+    traps: { B: 'Máy Gien-ni chỉ tăng năng suất kéo sợi, vẫn phụ thuộc sức người và sức nước.' },
+    skills: ['quan hệ nhân quả'],
+  },
+  {
+    id: 's.his.21',
+    topicId: 'science.history.world',
+    difficulty: 2,
+    stem: 'Cách mạng tháng Mười Nga năm 1917 đã lập ra nhà nước:',
+    choices: [
+      'Nhà nước xã hội chủ nghĩa đầu tiên trên thế giới',
+      'Nhà nước cộng hòa tư sản đầu tiên ở châu Âu',
+      'Nhà nước quân chủ lập hiến',
+      'Nhà nước liên bang theo mô hình Hoa Kỳ',
+    ],
+    answer: 'A',
+    explanation:
+      'Thắng lợi tháng Mười — 1917 lật đổ Chính phủ lâm thời tư sản và thiết lập chính quyền Xô viết, nhà nước xã hội chủ nghĩa đầu tiên trong lịch sử.',
+    traps: { B: 'Chế độ cộng hòa tư sản ở Nga được lập sau Cách mạng tháng Hai, và chính nó bị tháng Mười lật đổ.' },
+    skills: ['ý nghĩa lịch sử'],
+  },
+  {
+    id: 's.his.22',
+    topicId: 'science.history.world',
+    difficulty: 3,
+    stem: 'Nguyên nhân sâu xa dẫn tới Chiến tranh thế giới thứ nhất (1914 — 1918) là:',
+    choices: [
+      'Mâu thuẫn giữa các nước đế quốc về thị trường và thuộc địa',
+      'Vụ ám sát thái tử Áo — Hung ở Xa-ra-e-vô',
+      'Cuộc khủng hoảng kinh tế thế giới',
+      'Sự ra đời của Liên hợp quốc',
+    ],
+    answer: 'A',
+    explanation:
+      'Sự phát triển không đều giữa các đế quốc khiến các nước "trẻ" đòi chia lại thuộc địa, hình thành hai khối đối đầu. Vụ ám sát ở Xa-ra-e-vô chỉ là duyên cớ trực tiếp.',
+    traps: { B: 'Đây là nguyên cớ châm ngòi, không phải nguyên nhân sâu xa.' },
+    skills: ['phân biệt nguyên nhân — duyên cớ'],
+  },
+  {
+    id: 's.his.23',
+    topicId: 'science.history.world',
+    difficulty: 3,
+    stem: 'Chính sách mới (New Deal) của Tổng thống Ru-dơ-ven nhằm đưa nước Mỹ thoát khỏi khủng hoảng 1929 — 1933 có đặc điểm nổi bật nào?',
+    choices: [
+      'Nhà nước can thiệp trực tiếp và tích cực vào đời sống kinh tế',
+      'Quốc hữu hóa toàn bộ các ngành công nghiệp then chốt',
+      'Thiết lập chế độ độc tài phát xít để cứu nền kinh tế',
+      'Từ bỏ hoàn toàn vai trò của thị trường tự do',
+    ],
+    answer: 'A',
+    explanation:
+      'New Deal giữ nguyên nền kinh tế tư bản nhưng để Nhà nước tăng chi tiêu công, tạo việc làm và điều tiết tài chính — ngân hàng, khác hẳn con đường phát xít hóa mà Đức, Ý, Nhật chọn.',
+    traps: { B: 'New Deal điều tiết chứ không quốc hữu hóa các ngành công nghiệp.' },
+    skills: ['so sánh mô hình'],
+  },
+  {
+    id: 's.his.24',
+    topicId: 'science.history.world',
+    difficulty: 2,
+    stem: 'Chiến tranh thế giới thứ hai bùng nổ khi phát xít Đức tấn công quốc gia nào vào ngày 1 — 9 — 1939?',
+    choices: ['Ba Lan', 'Pháp', 'Liên Xô', 'Tiệp Khắc'],
+    answer: 'A',
+    explanation:
+      'Đức tấn công Ba Lan ngày 1 — 9 — 1939, khiến Anh và Pháp tuyên chiến với Đức. Cuộc tấn công Liên Xô diễn ra muộn hơn, tháng 6 — 1941.',
+    traps: { D: 'Tiệp Khắc bị thôn tính trước chiến tranh, qua Hiệp ước Muy-ních năm 1938.' },
+    skills: ['mốc sự kiện'],
+  },
+  {
+    id: 's.his.25',
+    topicId: 'science.history.world',
+    difficulty: 2,
+    stem: 'Tổ chức Liên hợp quốc được thành lập năm 1945 với mục tiêu hàng đầu là:',
+    choices: [
+      'Duy trì hòa bình và an ninh thế giới',
+      'Thúc đẩy tự do hóa thương mại toàn cầu',
+      'Thành lập một quân đội chung của các nước lớn',
+      'Xóa bỏ hoàn toàn chủ nghĩa tư bản',
+    ],
+    answer: 'A',
+    explanation:
+      'Hiến chương Liên hợp quốc đặt mục tiêu số một là duy trì hòa bình và an ninh quốc tế, giải quyết tranh chấp bằng biện pháp hòa bình trên nguyên tắc tôn trọng chủ quyền các quốc gia.',
+    skills: ['tổ chức quốc tế'],
+  },
+  {
+    id: 's.his.26',
+    topicId: 'science.history.world',
+    difficulty: 3,
+    stem: 'Sự kiện nào thường được xem là mốc khởi đầu của Chiến tranh lạnh?',
+    choices: [
+      'Học thuyết Tru-man được công bố năm 1947',
+      'Hội nghị I-an-ta năm 1945',
+      'Bức tường Béc-lin được dựng lên năm 1961',
+      'Khủng hoảng tên lửa Cu-ba năm 1962',
+    ],
+    answer: 'A',
+    explanation:
+      'Thông điệp của Tru-man trước Quốc hội Mỹ năm 1947 công khai chủ trương "ngăn chặn" ảnh hưởng của Liên Xô, đánh dấu sự đối đầu chính thức giữa hai khối.',
+    traps: { B: 'Hội nghị I-an-ta phân chia phạm vi ảnh hưởng và tạo tiền đề, nhưng khi đó hai bên vẫn là đồng minh chống phát xít.' },
+    skills: ['mốc sự kiện', 'quan hệ nhân quả'],
+  },
+  {
+    id: 's.his.27',
+    topicId: 'science.history.world',
+    difficulty: 2,
+    stem: 'Hiệp hội các quốc gia Đông Nam Á (ASEAN) được thành lập năm 1967 tại thành phố nào?',
+    choices: ['Băng Cốc', 'Gia-các-ta', 'Xin-ga-po', 'Ma-ni-la'],
+    answer: 'A',
+    explanation:
+      'Tuyên bố Băng Cốc ngày 8 — 8 — 1967 với năm nước sáng lập là In-đô-nê-xi-a, Ma-lai-xi-a, Phi-líp-pin, Xin-ga-po và Thái Lan. Gia-các-ta về sau là nơi đặt Ban Thư ký ASEAN.',
+    traps: { B: 'Gia-các-ta là trụ sở Ban Thư ký, không phải nơi ký tuyên bố thành lập.' },
+    skills: ['tổ chức khu vực'],
+  },
+  {
+    id: 's.his.28',
+    topicId: 'science.history.world',
+    difficulty: 3,
+    stem: 'Liên bang Xô viết chính thức tan rã vào năm nào? (điền số năm)',
+    answer: '1991',
+    explanation:
+      'Cuối tháng 12 — 1991, các nước cộng hòa tuyên bố độc lập và Liên Xô chấm dứt tồn tại, khép lại trật tự thế giới hai cực hình thành sau Chiến tranh thế giới thứ hai.',
+    skills: ['mốc sự kiện'],
+  },
+  {
+    id: 's.his.29',
+    topicId: 'science.history.world',
+    difficulty: 3,
+    stem: 'Đặc điểm cơ bản của cuộc cách mạng khoa học — công nghệ nửa sau thế kỷ XX là gì?',
+    choices: [
+      'Khoa học trở thành lực lượng sản xuất trực tiếp',
+      'Máy móc chỉ thay thế lao động chân tay đơn giản',
+      'Các phát minh chủ yếu đến từ kinh nghiệm sản xuất',
+      'Thời gian từ phát minh tới ứng dụng ngày càng kéo dài',
+    ],
+    answer: 'A',
+    explanation:
+      'Khác với cách mạng công nghiệp trước đó, mọi phát minh kỹ thuật giai đoạn này đều bắt nguồn từ nghiên cứu khoa học, và khoảng cách từ phát minh tới ứng dụng ngày càng rút ngắn.',
+    traps: { C: 'Đó là đặc điểm của cách mạng công nghiệp thế kỷ XVIII — XIX, khi kỹ thuật đi trước khoa học.' },
+    skills: ['đặc điểm thời đại'],
+  },
+  {
+    id: 's.his.30',
+    topicId: 'science.history.world',
+    difficulty: 3,
+    stem: 'Xu thế toàn cầu hóa từ đầu thập niên 80 của thế kỷ XX đặt ra thách thức lớn nhất nào cho các nước đang phát triển?',
+    choices: [
+      'Nguy cơ tụt hậu và đánh mất bản sắc nếu không đủ năng lực cạnh tranh',
+      'Không còn khả năng tiếp cận vốn và công nghệ nước ngoài',
+      'Bị buộc phải từ bỏ chủ quyền quốc gia',
+      'Mất quyền tham gia các tổ chức quốc tế',
+    ],
+    answer: 'A',
+    explanation:
+      'Toàn cầu hóa vừa mở ra cơ hội về vốn, công nghệ và thị trường, vừa làm cạnh tranh gay gắt hơn; nước nào không nâng được nội lực sẽ tụt hậu và chịu sức ép về văn hóa, xã hội.',
+    traps: { B: 'Ngược lại, toàn cầu hóa mở rộng khả năng tiếp cận vốn và công nghệ — đó chính là cơ hội đi kèm.' },
+    skills: ['đánh giá xu thế'],
+  },
+];
+
+const geography: QuestionDraft[] = [
+  /* ── Địa lý tự nhiên ──────────────────────────────────────────────── */
+  {
+    id: 's.geo.9',
+    topicId: 'science.geography.nature',
+    difficulty: 1,
+    stem: 'Đồi núi chiếm khoảng bao nhiêu phần diện tích lãnh thổ phần đất liền nước ta?',
+    choices: ['3/4', '1/2', '1/4', '9/10'],
+    answer: 'A',
+    explanation:
+      'Đồi núi chiếm khoảng 3/4 diện tích, trong đó chủ yếu là đồi núi thấp dưới 1000 m; đồng bằng chỉ chiếm khoảng 1/4.',
+    traps: { D: 'Nếu đồi núi chiếm 9/10 thì đồng bằng châu thổ sông Hồng và sông Cửu Long không thể rộng như thực tế.' },
+    skills: ['đặc điểm địa hình'],
+  },
+  {
+    id: 's.geo.10',
+    topicId: 'science.geography.nature',
+    difficulty: 2,
+    stem: 'Hai hướng chính của địa hình núi nước ta là:',
+    choices: [
+      'Tây bắc — đông nam và vòng cung',
+      'Bắc — nam và đông — tây',
+      'Đông bắc — tây nam và bắc — nam',
+      'Vòng cung và đông — tây',
+    ],
+    answer: 'A',
+    explanation:
+      'Hướng tây bắc — đông nam thể hiện rõ ở vùng Tây Bắc và Trường Sơn Bắc; hướng vòng cung thấy ở vùng Đông Bắc và Trường Sơn Nam.',
+    skills: ['đặc điểm địa hình'],
+  },
+  {
+    id: 's.geo.11',
+    topicId: 'science.geography.nature',
+    difficulty: 2,
+    stem: 'Tính chất nào là đặc trưng cơ bản nhất của khí hậu Việt Nam?',
+    choices: [
+      'Nhiệt đới ẩm gió mùa',
+      'Ôn đới lục địa',
+      'Cận nhiệt khô hạn',
+      'Xích đạo ẩm quanh năm',
+    ],
+    answer: 'A',
+    explanation:
+      'Vị trí trong vùng nội chí tuyến, tiếp giáp Biển Đông và nằm trong khu vực hoạt động của gió mùa châu Á quy định tính chất nhiệt đới ẩm gió mùa của khí hậu nước ta.',
+    skills: ['khí hậu'],
+  },
+  {
+    id: 's.geo.12',
+    topicId: 'science.geography.nature',
+    difficulty: 3,
+    stem: 'Gió mùa Đông Bắc gây ra kiểu thời tiết đặc trưng nào ở miền Bắc nước ta vào nửa sau mùa đông?',
+    choices: [
+      'Lạnh ẩm, có mưa phùn',
+      'Lạnh khô, trời quang mây',
+      'Nóng ẩm, mưa rào',
+      'Khô nóng, ít mây',
+    ],
+    answer: 'A',
+    explanation:
+      'Nửa đầu mùa đông khối khí lạnh đi qua lục địa nên lạnh khô; nửa sau nó lệch ra biển, được tăng ẩm nên gây thời tiết lạnh ẩm, mưa phùn ở đồng bằng Bắc Bộ.',
+    traps: { B: 'Đó là thời tiết của nửa đầu mùa đông, khi khối khí chưa đi qua biển.' },
+    skills: ['gió mùa'],
+  },
+  {
+    id: 's.geo.13',
+    topicId: 'science.geography.nature',
+    difficulty: 3,
+    stem: 'Gió phơn Tây Nam (gió Lào) gây thời tiết khô nóng cho vùng nào rõ rệt nhất?',
+    choices: [
+      'Bắc Trung Bộ và phần nam Tây Bắc',
+      'Đồng bằng sông Cửu Long',
+      'Tây Nguyên',
+      'Đông Bắc',
+    ],
+    answer: 'A',
+    explanation:
+      'Khối khí từ vịnh Ben-gan vượt dãy Trường Sơn, trút mưa ở sườn tây rồi biến tính khô nóng khi tràn xuống sườn đông, ảnh hưởng mạnh nhất tới Bắc Trung Bộ.',
+    skills: ['gió mùa', 'địa hình chắn gió'],
+  },
+  {
+    id: 's.geo.14',
+    topicId: 'science.geography.nature',
+    difficulty: 2,
+    stem: 'Loại đất chiếm diện tích lớn nhất ở vùng đồi núi thấp nước ta là:',
+    choices: ['Đất feralit', 'Đất phù sa', 'Đất phèn', 'Đất mặn'],
+    answer: 'A',
+    explanation:
+      'Quá trình feralit là quá trình hình thành đất chủ yếu ở vùng nhiệt đới ẩm: mưa nhiều rửa trôi bazơ, tích lũy ôxít sắt và nhôm, tạo đất chua, màu đỏ vàng.',
+    traps: { B: 'Đất phù sa tập trung ở đồng bằng châu thổ và dọc thung lũng sông, không phải vùng đồi núi.' },
+    skills: ['thổ nhưỡng'],
+  },
+  {
+    id: 's.geo.15',
+    topicId: 'science.geography.nature',
+    difficulty: 2,
+    stem: 'Sông ngòi nước ta có đặc điểm nào sau đây?',
+    choices: [
+      'Dày đặc, nhiều nước, giàu phù sa và chế độ nước theo mùa',
+      'Thưa thớt, ít nước, ít phù sa',
+      'Chế độ nước điều hòa quanh năm',
+      'Chủ yếu chảy theo hướng đông — tây',
+    ],
+    answer: 'A',
+    explanation:
+      'Mưa nhiều và địa hình dốc tạo mạng lưới sông dày đặc, lượng nước lớn, hàm lượng phù sa cao; mùa lũ trùng mùa mưa nên chế độ nước phân mùa rõ rệt.',
+    skills: ['thủy văn'],
+  },
+  {
+    id: 's.geo.16',
+    topicId: 'science.geography.nature',
+    difficulty: 3,
+    stem: 'Biển Đông ảnh hưởng tới khí hậu nước ta chủ yếu theo hướng nào?',
+    choices: [
+      'Làm tăng độ ẩm, điều hòa nhiệt độ và mang lại lượng mưa lớn',
+      'Làm khí hậu khô hạn hơn',
+      'Làm biên độ nhiệt năm tăng mạnh',
+      'Hầu như không ảnh hưởng vì diện tích nhỏ',
+    ],
+    answer: 'A',
+    explanation:
+      'Biển Đông là nguồn ẩm dồi dào: các khối khí đi qua biển được tăng ẩm, làm khí hậu nước ta mang tính hải dương, ẩm hơn và bớt khắc nghiệt so với các nước cùng vĩ độ ở Tây Á, Bắc Phi.',
+    traps: { C: 'Ngược lại, tính chất hải dương làm biên độ nhiệt năm giảm chứ không tăng.' },
+    skills: ['ảnh hưởng của biển'],
+  },
+  {
+    id: 's.geo.17',
+    topicId: 'science.geography.nature',
+    difficulty: 3,
+    stem: 'Sự phân hóa thiên nhiên theo chiều Bắc — Nam ở nước ta chủ yếu do nhân tố nào quyết định?',
+    choices: [
+      'Sự thay đổi của nền nhiệt theo vĩ độ kết hợp hoạt động của gió mùa Đông Bắc',
+      'Độ cao địa hình',
+      'Hướng của các dãy núi',
+      'Khoảng cách tới biển',
+    ],
+    answer: 'A',
+    explanation:
+      'Lãnh thổ kéo dài trên nhiều vĩ độ và gió mùa Đông Bắc suy yếu dần về phía nam khiến miền Bắc có mùa đông lạnh, miền Nam nóng quanh năm với hai mùa mưa — khô.',
+    traps: { B: 'Độ cao địa hình tạo phân hóa theo đai cao, tức theo chiều thẳng đứng, không phải Bắc — Nam.' },
+    skills: ['phân hóa lãnh thổ'],
+  },
+  {
+    id: 's.geo.18',
+    topicId: 'science.geography.nature',
+    difficulty: 3,
+    stem: 'Đai cận nhiệt đới gió mùa trên núi ở miền Bắc bắt đầu từ độ cao khoảng bao nhiêu mét?',
+    choices: ['600 — 700 m', '100 — 200 m', '1600 — 1700 m', '2600 m'],
+    answer: 'A',
+    explanation:
+      'Ở miền Bắc, đai nhiệt đới gió mùa chân núi kết thúc ở khoảng 600 — 700 m; ở miền Nam ranh giới này lên tới 900 — 1000 m do nền nhiệt cao hơn.',
+    traps: { D: 'Từ khoảng 2600 m trở lên mới là đai ôn đới gió mùa trên núi, chỉ có ở Hoàng Liên Sơn.' },
+    skills: ['đai cao'],
+  },
+  {
+    id: 's.geo.19',
+    topicId: 'science.geography.nature',
+    difficulty: 2,
+    stem: 'Nước ta nằm hoàn toàn trong vùng nội chí tuyến bán cầu Bắc nên có hệ quả nào sau đây?',
+    choices: [
+      'Mọi nơi trong năm đều có hai lần Mặt Trời lên thiên đỉnh',
+      'Không nơi nào có Mặt Trời lên thiên đỉnh',
+      'Chỉ miền Nam có Mặt Trời lên thiên đỉnh',
+      'Ngày và đêm dài bằng nhau quanh năm',
+    ],
+    answer: 'A',
+    explanation:
+      'Toàn bộ lãnh thổ nằm giữa xích đạo và chí tuyến Bắc nên mỗi năm Mặt Trời đều lên thiên đỉnh hai lần; càng gần chí tuyến thì hai lần ấy càng sát nhau.',
+    traps: { D: 'Ngày đêm dài bằng nhau quanh năm chỉ đúng ở xích đạo.' },
+    skills: ['vị trí địa lý'],
+  },
+  {
+    id: 's.geo.20',
+    topicId: 'science.geography.nature',
+    difficulty: 3,
+    stem: 'Vì sao đồng bằng sông Cửu Long chịu tác động của xâm nhập mặn mạnh hơn đồng bằng sông Hồng?',
+    choices: [
+      'Địa hình rất thấp, bằng phẳng, nhiều cửa sông và mạng lưới kênh rạch chằng chịt',
+      'Lượng mưa trung bình năm nhỏ hơn nhiều',
+      'Không có hệ thống sông lớn đổ ra biển',
+      'Nằm xa biển hơn nên dòng chảy yếu',
+    ],
+    answer: 'A',
+    explanation:
+      'Phần lớn đồng bằng sông Cửu Long chỉ cao vài mét so với mực nước biển và thông với biển qua nhiều cửa sông, kênh rạch, nên khi dòng chảy thượng nguồn giảm thì thủy triều đưa mặn vào rất sâu.',
+    traps: { D: 'Đồng bằng sông Cửu Long giáp biển ở cả ba mặt, không hề nằm xa biển.' },
+    skills: ['giải thích hiện tượng'],
+  },
+  /* ── Địa lý kinh tế — xã hội ──────────────────────────────────────── */
+  {
+    id: 's.geo.21',
+    topicId: 'science.geography.economy',
+    difficulty: 2,
+    stem: '"Cơ cấu dân số vàng" của nước ta được hiểu là:',
+    choices: [
+      'Tỉ lệ người trong độ tuổi lao động chiếm ưu thế so với nhóm phụ thuộc',
+      'Tỉ lệ người trên 65 tuổi chiếm hơn một nửa dân số',
+      'Số dân thành thị vượt số dân nông thôn',
+      'Tỉ suất sinh và tỉ suất tử đều ở mức rất cao',
+    ],
+    answer: 'A',
+    explanation:
+      'Cơ cấu dân số vàng xuất hiện khi nhóm 15 — 64 tuổi chiếm tỉ trọng lớn, số người phụ thuộc thấp; đây là cơ hội về nguồn lao động nhưng chỉ kéo dài trong một giai đoạn nhất định.',
+    traps: { B: 'Tỉ lệ người cao tuổi lớn là dấu hiệu của dân số già, ngược với cơ cấu dân số vàng.' },
+    skills: ['dân cư'],
+  },
+  {
+    id: 's.geo.22',
+    topicId: 'science.geography.economy',
+    difficulty: 2,
+    stem: 'Đặc điểm nổi bật của phân bố dân cư nước ta là:',
+    choices: [
+      'Không đều giữa đồng bằng với trung du — miền núi và giữa thành thị với nông thôn',
+      'Rất đồng đều trên toàn lãnh thổ',
+      'Tập trung chủ yếu ở vùng núi cao',
+      'Chủ yếu tập trung ở các đô thị lớn, nông thôn gần như không có dân',
+    ],
+    answer: 'A',
+    explanation:
+      'Đồng bằng chiếm khoảng 1/4 diện tích nhưng tập trung khoảng 3/4 dân số; trung du và miền núi rộng nhưng thưa dân, gây sức ép việc làm ở nơi này và thiếu lao động ở nơi kia.',
+    skills: ['dân cư'],
+  },
+  {
+    id: 's.geo.23',
+    topicId: 'science.geography.economy',
+    difficulty: 3,
+    stem: 'Xu hướng chuyển dịch cơ cấu ngành kinh tế nước ta trong thời kỳ Đổi mới là:',
+    choices: [
+      'Giảm tỉ trọng khu vực nông — lâm — thủy sản, tăng tỉ trọng công nghiệp — xây dựng và dịch vụ',
+      'Tăng tỉ trọng nông nghiệp, giảm tỉ trọng dịch vụ',
+      'Giữ nguyên tỉ trọng của cả ba khu vực',
+      'Giảm đồng thời tỉ trọng của cả ba khu vực',
+    ],
+    answer: 'A',
+    explanation:
+      'Đây là hướng chuyển dịch phù hợp với công nghiệp hóa: khu vực I giảm tỉ trọng dù giá trị tuyệt đối vẫn tăng, còn khu vực II và III tăng nhanh hơn.',
+    traps: { D: 'Ba khu vực cộng lại luôn bằng 100% nên không thể cùng giảm tỉ trọng.' },
+    skills: ['chuyển dịch cơ cấu'],
+  },
+  {
+    id: 's.geo.24',
+    topicId: 'science.geography.economy',
+    difficulty: 2,
+    stem: 'Vùng chuyên canh cây cà phê lớn nhất nước ta là:',
+    choices: ['Tây Nguyên', 'Đông Nam Bộ', 'Trung du và miền núi Bắc Bộ', 'Bắc Trung Bộ'],
+    answer: 'A',
+    explanation:
+      'Tây Nguyên có diện tích đất badan rộng lớn, khí hậu cận xích đạo phân hai mùa rõ rệt thuận lợi cho phơi sấy, nên chiếm phần lớn diện tích và sản lượng cà phê cả nước.',
+    traps: { B: 'Đông Nam Bộ là vùng chuyên canh cao su lớn nhất, cà phê chỉ đứng sau Tây Nguyên.' },
+    skills: ['phân bố nông nghiệp'],
+  },
+  {
+    id: 's.geo.25',
+    topicId: 'science.geography.economy',
+    difficulty: 2,
+    stem: 'Vùng trọng điểm sản xuất lương thực và thủy sản lớn nhất nước ta là:',
+    choices: [
+      'Đồng bằng sông Cửu Long',
+      'Đồng bằng sông Hồng',
+      'Duyên hải Nam Trung Bộ',
+      'Tây Nguyên',
+    ],
+    answer: 'A',
+    explanation:
+      'Đồng bằng sông Cửu Long dẫn đầu cả nước về diện tích, sản lượng lúa và sản lượng thủy sản nhờ đất phù sa rộng, nguồn nước dồi dào và mạng lưới sông ngòi, kênh rạch dày đặc.',
+    skills: ['phân bố nông nghiệp'],
+  },
+  {
+    id: 's.geo.26',
+    topicId: 'science.geography.economy',
+    difficulty: 3,
+    stem: 'Thế mạnh nổi bật nhất của Trung du và miền núi Bắc Bộ so với các vùng khác là:',
+    choices: [
+      'Khoáng sản và thủy điện',
+      'Sản xuất lúa hàng hóa',
+      'Nuôi trồng thủy sản nước lợ',
+      'Trồng cây cao su quy mô lớn',
+    ],
+    answer: 'A',
+    explanation:
+      'Đây là vùng giàu khoáng sản nhất cả nước (than, sắt, apatit, đồng, thiếc) và có tiềm năng thủy điện lớn nhờ sông dốc, nhiều thác ghềnh trên hệ thống sông Đà, sông Lô, sông Gâm.',
+    traps: { C: 'Nuôi trồng thủy sản nước lợ là thế mạnh của vùng ven biển, đặc biệt Đồng bằng sông Cửu Long.' },
+    skills: ['thế mạnh vùng'],
+  },
+  {
+    id: 's.geo.27',
+    topicId: 'science.geography.economy',
+    difficulty: 3,
+    stem: 'Nhân tố nào quyết định nhất giúp Đông Nam Bộ trở thành vùng có giá trị sản xuất công nghiệp lớn nhất cả nước?',
+    choices: [
+      'Vị trí thuận lợi, cơ sở hạ tầng tốt, lao động kỹ thuật đông và thu hút nhiều vốn đầu tư',
+      'Diện tích tự nhiên lớn nhất trong bảy vùng',
+      'Trữ lượng than đá lớn nhất cả nước',
+      'Khí hậu có mùa đông lạnh phù hợp bảo quản nguyên liệu',
+    ],
+    answer: 'A',
+    explanation:
+      'Ưu thế của Đông Nam Bộ nằm ở nhóm nhân tố kinh tế — xã hội: hạt nhân là Thành phố Hồ Chí Minh, hạ tầng cảng — sân bay — khu công nghiệp đồng bộ, lao động có tay nghề và dòng vốn FDI lớn nhất.',
+    traps: { C: 'Than đá tập trung ở Quảng Ninh, thuộc Trung du và miền núi Bắc Bộ.' },
+    skills: ['nhân tố phát triển'],
+  },
+  {
+    id: 's.geo.28',
+    topicId: 'science.geography.economy',
+    difficulty: 2,
+    stem: 'Ngành công nghiệp trọng điểm là ngành có đặc điểm nào?',
+    choices: [
+      'Có thế mạnh lâu dài, hiệu quả kinh tế cao và tác động mạnh tới các ngành khác',
+      'Chỉ cần vốn đầu tư nhỏ và sử dụng ít lao động',
+      'Có tỉ trọng nhỏ nhưng tốc độ tăng trưởng nhanh nhất',
+      'Chủ yếu phục vụ xuất khẩu, không tiêu thụ trong nước',
+    ],
+    answer: 'A',
+    explanation:
+      'Ba tiêu chí của ngành công nghiệp trọng điểm là thế mạnh lâu dài, mang lại hiệu quả kinh tế — xã hội cao và có tác động lan tỏa thúc đẩy các ngành kinh tế khác phát triển.',
+    skills: ['khái niệm'],
+  },
+  {
+    id: 's.geo.29',
+    topicId: 'science.geography.economy',
+    difficulty: 2,
+    stem: 'Nước ta hiện được phân chia thành bao nhiêu vùng kinh tế — xã hội? (điền số)',
+    answer: '7',
+    explanation:
+      'Bảy vùng gồm: Trung du và miền núi Bắc Bộ; Đồng bằng sông Hồng; Bắc Trung Bộ; Duyên hải Nam Trung Bộ; Tây Nguyên; Đông Nam Bộ; Đồng bằng sông Cửu Long.',
+    skills: ['phân vùng'],
+  },
+  {
+    id: 's.geo.30',
+    topicId: 'science.geography.economy',
+    difficulty: 3,
+    stem: 'Quá trình đô thị hóa ở nước ta có đặc điểm nào sau đây?',
+    choices: [
+      'Diễn ra nhanh nhưng trình độ đô thị hóa còn thấp',
+      'Diễn ra chậm và tỉ lệ dân thành thị đã rất cao',
+      'Đã hoàn thành từ trước thời kỳ Đổi mới',
+      'Chỉ diễn ra ở khu vực miền núi',
+    ],
+    answer: 'A',
+    explanation:
+      'Tỉ lệ dân thành thị tăng nhanh trong những thập niên gần đây, nhưng hạ tầng, việc làm và chất lượng sống đô thị chưa theo kịp, nên trình độ đô thị hóa vẫn thấp so với khu vực.',
+    skills: ['đô thị hóa'],
+  },
+  {
+    id: 's.geo.31',
+    topicId: 'science.geography.economy',
+    difficulty: 3,
+    stem: 'Ý nghĩa lớn nhất của việc phát triển giao thông vận tải biển đối với nền kinh tế nước ta là:',
+    choices: [
+      'Tạo điều kiện đẩy mạnh giao thương quốc tế và hội nhập kinh tế',
+      'Thay thế hoàn toàn vận tải đường bộ trong nước',
+      'Giảm nhu cầu sử dụng hàng không',
+      'Bảo đảm nguồn nước ngọt cho sản xuất',
+    ],
+    answer: 'A',
+    explanation:
+      'Với đường bờ biển dài và nhiều vũng vịnh nước sâu, vận tải biển đảm nhận phần lớn khối lượng hàng hóa xuất nhập khẩu, là mắt xích trực tiếp của hội nhập kinh tế quốc tế.',
+    traps: { B: 'Vận tải biển và đường bộ bổ trợ nhau; vận tải biển không thể đảm nhận vận chuyển nội địa cự ly ngắn.' },
+    skills: ['giao thông'],
+  },
+  {
+    id: 's.geo.32',
+    topicId: 'science.geography.economy',
+    difficulty: 3,
+    stem: 'Khó khăn lớn nhất đối với phát triển kinh tế của vùng Duyên hải Nam Trung Bộ là:',
+    choices: [
+      'Đồng bằng nhỏ hẹp, khô hạn kéo dài và thiên tai bão lũ thường xuyên',
+      'Không giáp biển nên khó phát triển thủy sản',
+      'Không có cảng biển nước sâu',
+      'Thiếu hoàn toàn tài nguyên du lịch',
+    ],
+    answer: 'A',
+    explanation:
+      'Dải đồng bằng ven biển bị núi ăn lan ra sát biển chia cắt, mùa khô kéo dài gây thiếu nước, lại chịu nhiều bão và lũ quét — đó là các hạn chế tự nhiên nổi bật của vùng.',
+    traps: { C: 'Vùng có nhiều vũng vịnh nước sâu như Vân Phong, Cam Ranh, Dung Quất, rất thuận lợi xây cảng.' },
+    skills: ['hạn chế vùng'],
+  },
+  {
+    id: 's.geo.33',
+    topicId: 'science.geography.economy',
+    difficulty: 3,
+    stem: 'Vì sao việc phát triển cây công nghiệp lâu năm ở Tây Nguyên cần gắn chặt với giải quyết vấn đề thủy lợi?',
+    choices: [
+      'Vì mùa khô ở Tây Nguyên kéo dài và sâu sắc, gây thiếu nước tưới nghiêm trọng',
+      'Vì đất badan không giữ được chất dinh dưỡng',
+      'Vì vùng thường xuyên ngập lụt vào mùa khô',
+      'Vì địa hình quá thấp nên không thoát nước được',
+    ],
+    answer: 'A',
+    explanation:
+      'Tây Nguyên có mùa khô kéo dài bốn đến năm tháng, mực nước ngầm hạ thấp; không chủ động được nước tưới thì năng suất cà phê, hồ tiêu sụt giảm mạnh dù đất đai rất tốt.',
+    traps: { D: 'Tây Nguyên là các cao nguyên xếp tầng, địa hình cao chứ không thấp.' },
+    skills: ['giải thích mối liên hệ'],
+  },
+  /* ── Bảng số liệu, biểu đồ & Atlat ───────────────────────────────── */
+  {
+    id: 's.geo.34',
+    topicId: 'science.geography.data',
+    difficulty: 2,
+    stem: 'Để thể hiện sự thay đổi cơ cấu giá trị sản xuất công nghiệp theo ba nhóm ngành trong giai đoạn 2010 — 2022 (5 mốc năm), dạng biểu đồ thích hợp nhất là:',
+    choices: ['Biểu đồ miền', 'Biểu đồ tròn', 'Biểu đồ cột ghép', 'Biểu đồ đường'],
+    answer: 'A',
+    explanation:
+      'Từ khóa "cơ cấu" cộng với chuỗi thời gian nhiều hơn ba mốc năm luôn dẫn tới biểu đồ miền. Biểu đồ tròn chỉ dùng khi số mốc năm không quá ba.',
+    traps: { B: 'Với 5 mốc năm sẽ phải vẽ 5 hình tròn, rất khó so sánh xu hướng.' },
+    skills: ['chọn dạng biểu đồ'],
+  },
+  {
+    id: 's.geo.35',
+    topicId: 'science.geography.data',
+    difficulty: 2,
+    stem: 'Để thể hiện tốc độ tăng trưởng sản lượng lúa, ngô và khoai của nước ta qua nhiều năm, nên chọn dạng biểu đồ nào?',
+    choices: ['Biểu đồ đường', 'Biểu đồ tròn', 'Biểu đồ miền', 'Biểu đồ cột chồng'],
+    answer: 'A',
+    explanation:
+      'Từ khóa "tốc độ tăng trưởng" đòi hỏi quy về chỉ số phần trăm với năm gốc bằng 100% rồi vẽ các đường; biểu đồ đường thể hiện rõ nhất nhịp tăng của từng đối tượng.',
+    traps: { C: 'Biểu đồ miền dùng cho cơ cấu, tổng luôn bằng 100%, không phù hợp với tốc độ tăng trưởng.' },
+    skills: ['chọn dạng biểu đồ'],
+  },
+  {
+    id: 's.geo.36',
+    topicId: 'science.geography.data',
+    difficulty: 2,
+    stem: 'Để so sánh sản lượng thủy sản khai thác và nuôi trồng (nghìn tấn) cùng với tỉ lệ nuôi trồng trong tổng sản lượng (%) qua các năm, dạng biểu đồ thích hợp nhất là:',
+    choices: [
+      'Biểu đồ kết hợp cột và đường',
+      'Biểu đồ tròn',
+      'Biểu đồ miền',
+      'Biểu đồ đường đơn',
+    ],
+    answer: 'A',
+    explanation:
+      'Khi bảng số liệu có hai đơn vị khác nhau (nghìn tấn và %), ta dùng biểu đồ kết hợp: cột cho đại lượng tuyệt đối, đường cho đại lượng tương đối trên trục tung thứ hai.',
+    skills: ['chọn dạng biểu đồ'],
+  },
+  {
+    id: 's.geo.37',
+    topicId: 'science.geography.data',
+    difficulty: 2,
+    stem: 'Một tỉnh có dân số 1,8 triệu người và diện tích 6 000 km². Mật độ dân số của tỉnh là bao nhiêu người/km²? (điền số)',
+    answer: '300',
+    explanation:
+      'Mật độ dân số bằng dân số chia diện tích: 1 800 000 : 6 000 = 300 người/km². Lỗi thường gặp là quên đổi 1,8 triệu thành 1 800 000.',
+    skills: ['tính mật độ dân số'],
+  },
+  {
+    id: 's.geo.38',
+    topicId: 'science.geography.data',
+    difficulty: 2,
+    stem: 'Sản lượng một loại nông sản năm 2010 là 40 triệu tấn, năm 2022 là 60 triệu tấn. Lấy năm 2010 = 100%, tốc độ tăng trưởng năm 2022 là bao nhiêu phần trăm? (điền số)',
+    answer: '150',
+    explanation:
+      'Tốc độ tăng trưởng bằng giá trị năm sau chia giá trị năm gốc rồi nhân 100: 60 : 40 × 100 = 150%. Nếu hỏi "tăng bao nhiêu phần trăm" thì đáp số là 50%.',
+    skills: ['tính tốc độ tăng trưởng'],
+  },
+  {
+    id: 's.geo.39',
+    topicId: 'science.geography.data',
+    difficulty: 3,
+    stem: 'Tổng giá trị GDP của một nước là 400 nghìn tỉ đồng, trong đó khu vực nông — lâm — thủy sản đạt 48 nghìn tỉ đồng. Tỉ trọng của khu vực này là bao nhiêu phần trăm? (điền số)',
+    answer: '12',
+    explanation:
+      'Tỉ trọng bằng giá trị bộ phận chia tổng thể rồi nhân 100: 48 : 400 × 100 = 12%. Đây là bước bắt buộc trước khi vẽ biểu đồ tròn hay biểu đồ miền.',
+    skills: ['tính tỉ trọng'],
+  },
+  {
+    id: 's.geo.40',
+    topicId: 'science.geography.data',
+    difficulty: 3,
+    stem: 'Sản lượng lương thực đạt 48 triệu tấn, dân số 96 triệu người. Bình quân lương thực đầu người là bao nhiêu kg/người? (điền số)',
+    answer: '500',
+    explanation:
+      'Đổi 48 triệu tấn thành 48 000 triệu kg rồi chia cho 96 triệu người, được 500 kg/người. Sai lầm phổ biến là quên đổi tấn sang ki-lô-gam nên ra 0,5.',
+    skills: ['tính bình quân đầu người'],
+  },
+  {
+    id: 's.geo.41',
+    topicId: 'science.geography.data',
+    difficulty: 2,
+    stem: 'Một năm nước ta xuất khẩu 370 tỉ USD và nhập khẩu 360 tỉ USD. Cán cân xuất nhập khẩu năm đó:',
+    choices: [
+      'Xuất siêu 10 tỉ USD',
+      'Nhập siêu 10 tỉ USD',
+      'Cân bằng',
+      'Xuất siêu 730 tỉ USD',
+    ],
+    answer: 'A',
+    explanation:
+      'Cán cân xuất nhập khẩu bằng giá trị xuất khẩu trừ giá trị nhập khẩu: 370 − 360 = 10 tỉ USD, mang dấu dương nên là xuất siêu.',
+    traps: { D: '730 là tổng kim ngạch xuất nhập khẩu, không phải cán cân.' },
+    skills: ['cán cân xuất nhập khẩu'],
+  },
+  {
+    id: 's.geo.42',
+    topicId: 'science.geography.data',
+    difficulty: 3,
+    stem: 'Khi nhận xét một bảng số liệu, thao tác nào sau đây là bắt buộc trước khi rút ra kết luận so sánh về cơ cấu?',
+    choices: [
+      'Xử lý số liệu tuyệt đối thành số liệu tương đối (%)',
+      'Làm tròn mọi số liệu về hàng nghìn',
+      'Loại bỏ các năm có giá trị giảm',
+      'Đổi toàn bộ đơn vị sang USD',
+    ],
+    answer: 'A',
+    explanation:
+      'Cơ cấu là quan hệ tỉ lệ giữa các bộ phận trong tổng thể, nên phải quy về phần trăm; so sánh trực tiếp số liệu tuyệt đối chỉ cho biết quy mô chứ không cho biết cơ cấu.',
+    traps: { C: 'Loại bỏ dữ liệu bất lợi làm sai lệch nhận xét, đây là lỗi nghiêm trọng khi phân tích số liệu.' },
+    skills: ['xử lý bảng số liệu'],
+  },
+  {
+    id: 's.geo.43',
+    topicId: 'science.geography.data',
+    difficulty: 3,
+    stem: 'Bảng số liệu cho thấy giá trị sản xuất nông nghiệp tăng liên tục nhưng tỉ trọng của nó trong GDP lại giảm. Cách hiểu đúng là:',
+    choices: [
+      'Nông nghiệp vẫn tăng về quy mô, nhưng tăng chậm hơn các khu vực khác',
+      'Nông nghiệp đang suy giảm về quy mô sản xuất',
+      'Số liệu trong bảng mâu thuẫn nên không thể kết luận',
+      'GDP của cả nước đang giảm',
+    ],
+    answer: 'A',
+    explanation:
+      'Tỉ trọng phụ thuộc tốc độ tăng tương đối giữa các khu vực. Một ngành có thể tăng giá trị tuyệt đối mà vẫn giảm tỉ trọng nếu các ngành khác tăng nhanh hơn — đây là dấu hiệu của công nghiệp hóa.',
+    traps: { B: 'Giá trị tuyệt đối tăng thì quy mô sản xuất tăng, không thể kết luận là suy giảm.' },
+    skills: ['đọc bảng số liệu', 'phân biệt tuyệt đối — tương đối'],
+  },
+  {
+    id: 's.geo.44',
+    topicId: 'science.geography.data',
+    difficulty: 2,
+    stem: 'Khi khai thác Atlat Địa lí Việt Nam, việc đầu tiên cần làm để đọc đúng một bản đồ chuyên đề là:',
+    choices: [
+      'Đọc bảng chú giải và xác định thang màu, kí hiệu',
+      'Đếm số tỉnh xuất hiện trên bản đồ',
+      'So sánh ngay với bản đồ hành chính',
+      'Ghi nhớ tên tất cả các sông',
+    ],
+    answer: 'A',
+    explanation:
+      'Mọi thông tin của bản đồ chuyên đề đều được mã hóa trong chú giải; bỏ qua bước này thì việc đọc thang màu, kí hiệu điểm và kí hiệu đường đều dễ sai.',
+    skills: ['kỹ năng Atlat'],
+  },
+  {
+    id: 's.geo.45',
+    topicId: 'science.geography.data',
+    difficulty: 3,
+    stem: 'Với một biểu đồ tròn thể hiện cơ cấu, tổng số đo góc ở tâm của tất cả các thành phần luôn bằng bao nhiêu độ? (điền số)',
+    answer: '360',
+    explanation:
+      'Toàn bộ hình tròn ứng với 100% và 360°, nên 1% tương ứng 3,6°. Quy tắc này dùng để chuyển tỉ trọng thành góc khi vẽ và để kiểm tra lại kết quả.',
+    skills: ['vẽ biểu đồ tròn'],
+  },
+];
+
+export const historyQuestions2 = buildQuestions('science', 'history', history);
+export const geographyQuestions2 = buildQuestions('science', 'geography', geography);

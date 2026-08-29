@@ -84,6 +84,14 @@ describe('ngân hàng câu hỏi', () => {
     }
   });
 
+  it('mọi chuyên đề đều đủ câu cho phiếu dài nhất', () => {
+    // Phieu cap 6 dung 15 cau. Duoi nguong nay thi phieu phai muon cau
+    // khac chuyen de hoac bi rut ngan — nguoi hoc mat dung trong tam.
+    for (const topic of TOPICS) {
+      expect(questionsOfTopic(topic.id).length, topic.id).toBeGreaterThanOrEqual(15);
+    }
+  });
+
   it('trọng số chuyên đề cộng lại đúng bằng 1 trong mỗi nhóm', () => {
     const groups = new Map<string, number>();
     for (const topic of TOPICS) {

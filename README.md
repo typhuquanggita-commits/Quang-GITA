@@ -138,6 +138,16 @@ LG-TOA-STA-L3-004   Phiếu lời giải  — lời giải đầy đủ + bảng
 HD-TOA-STA          Phiếu hướng dẫn — một phiếu ôn chắc cho cả chuyên đề
 ```
 
+### Ngân hàng câu hỏi
+
+Phiếu chỉ tốt bằng ngân hàng câu hỏi đứng sau nó. Hiện có **455 câu** trải đều 30
+chuyên đề, mỗi chuyên đề **tối thiểu 15 câu** — đúng bằng số câu của một phiếu cấp 6,
+nên không phiếu nào phải lặp câu để đủ số. Mọi câu đều kèm lời giải, và câu có phương
+án nhiễu đáng chú ý thì kèm luôn chú thích bẫy.
+
+Độ phủ được tính bằng `bankCoverage()` và **hiển thị thẳng trên giao diện**: khi một
+chuyên đề chưa đủ câu, hệ thống báo cho người học biết thay vì âm thầm dùng lại câu cũ.
+
 ### Dòng chảy một phiếu
 
 ```
