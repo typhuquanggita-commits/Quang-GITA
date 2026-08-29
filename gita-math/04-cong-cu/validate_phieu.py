@@ -55,10 +55,51 @@ def tach_front_matter(text: str):
     return yaml.safe_load(text[3:end]), text[end + 4:]
 
 
+MUC_GP = ["## 1. ĐÁP SỐ TỪNG Ý", "## 2. LỜI GIẢI ĐẦY ĐỦ", "## 3. BẢNG PHÂN TÍCH CHUYÊN SÂU",
+          "## 4. NHÃN TƯ DUY VÀ ĐIỂM CHỐT", "## 5. LỖI THƯỜNG GẶP VÀ CÁCH PHÒNG",
+          "## 6. GỢI Ý BA TẦNG", "## 7. BÀI TƯƠNG TỰ TỰ LUYỆN"]
+MUC_HD = ["## 1. BẢN ĐỒ CHƯƠNG", "## 2. BẢNG CÔNG THỨC VÀ QUY TẮC PHẢI THUỘC",
+          "## 3. BẢNG DẠNG BÀI VÀ DẤU HIỆU NHẬN BIẾT", "## 4. LỘ TRÌNH ÔN BỐN BUỔI",
+          "## 5. CHECKLIST TỰ KIỂM", "## 6. SỔ LỖI MẪU", "## 7. TIÊU CHÍ ÔN CHẮC"]
+TRUONG_KEM = ["ma", "tuyen", "lop", "cum", "cum_ten", "loai", "nhom_ma", "ten"]
+
+
+def kiem_tra_kem(path: Path, fm: dict, than: str, index) -> Ket_qua:
+    """Kiểm định phiếu đi kèm: GP (Lời giải & Phân tích) và HD (Hướng dẫn ôn chắc)."""
+    kq = Ket_qua(path.name)
+    for t in TRUONG_KEM:
+        if not fm.get(t):
+            kq.E(f"Front-matter thiếu trường bắt buộc: `{t}`.")
+    loai = fm.get("loai")
+    can = MUC_GP if loai == "GP" else MUC_HD
+    for m in can:
+        if m not in than:
+            kq.E(f"Thiếu mục bắt buộc `{m}`.")
+    if loai == "GP":
+        if not fm.get("kem_theo"):
+            kq.E("Phiếu GP phải khai `kem_theo` là mã phiếu học tương ứng.")
+        for cot in ("Dạng bài", "Kiến thức liên quan", "Dữ liệu nhận biết",
+                    "Phương pháp áp dụng", "Cách xử lý nhanh nhất", "Kết quả"):
+            if cot not in than:
+                kq.E(f"Bảng phân tích chuyên sâu thiếu cột `{cot}`.")
+        if len(re.findall(r"\bTD[1-6]\b", than)) == 0:
+            kq.E("Phiếu GP chưa gắn nhãn tư duy `TD1`…`TD6`.")
+    ma = fm.get("ma")
+    if ma and ma != path.stem:
+        kq.E(f"Tên tệp `{path.stem}` không khớp `ma` = `{ma}`.")
+    if ma and index is not None and ma not in index:
+        kq.E(f"`{ma}` không có trong 02-chi-muc/index-master.json.")
+    if "Người biên soạn" not in than:
+        kq.E("Cuối phiếu phải ghi `Người biên soạn:`.")
+    return kq
+
+
 def kiem_tra(path: Path, index: dict | None) -> Ket_qua:
     kq = Ket_qua(path.name)
     text = path.read_text(encoding="utf-8")
     fm, than = tach_front_matter(text)
+    if (fm or {}).get("loai") in ("GP", "HD"):
+        return kiem_tra_kem(path, fm, than, index)
 
     # --- 16. Front-matter ---
     if fm is None:
