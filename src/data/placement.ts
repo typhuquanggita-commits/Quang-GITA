@@ -1,0 +1,228 @@
+import type { PlacementQuestion } from '@/types';
+
+/** Bài test xếp lộ trình: 14 câu, 4 phương án, phủ đủ 6 mạch kiến thức, độ khó tăng dần. */
+export const PLACEMENT: PlacementQuestion[] = [
+  {
+    id: 'p01',
+    strand: 'dai-so',
+    track: 'both',
+    difficulty: 1,
+    statement: 'Điều kiện xác định của biểu thức A = √(x − 2)/(x − 5) là:',
+    choices: ['x ≥ 2', 'x ≥ 2 và x ≠ 5', 'x > 2', 'x ≠ 5'],
+    correct: 1,
+    explain: 'Cần đồng thời x − 2 ≥ 0 (căn) và x − 5 ≠ 0 (mẫu), tức x ≥ 2 và x ≠ 5.',
+  },
+  {
+    id: 'p02',
+    strand: 'dai-so',
+    track: 'both',
+    difficulty: 1,
+    statement: 'Rút gọn √(9 − 4√5) ta được:',
+    choices: ['√5 − 2', '2 − √5', '3 − 2√5', '√5 + 2'],
+    correct: 0,
+    explain: '9 − 4√5 = 5 − 2·2·√5 + 4 = (√5 − 2)². Vì √5 > 2 nên căn bằng √5 − 2.',
+  },
+  {
+    id: 'p03',
+    strand: 'dai-so',
+    track: 'both',
+    difficulty: 2,
+    statement: 'Phương trình x² − 5x + 6 = 0 có hai nghiệm x₁, x₂. Giá trị của x₁² + x₂² là:',
+    choices: ['13', '11', '25', '19'],
+    correct: 0,
+    explain: 'S = 5, P = 6 ⇒ x₁² + x₂² = S² − 2P = 25 − 12 = 13.',
+  },
+  {
+    id: 'p04',
+    strand: 'thuc-te',
+    track: 'thpt',
+    difficulty: 2,
+    statement:
+      'Một hình trụ có bán kính đáy 3 cm và chiều cao 5 cm. Thể tích của hình trụ là:',
+    choices: ['45π cm³', '30π cm³', '15π cm³', '75π cm³'],
+    correct: 0,
+    explain: 'V = πr²h = π·9·5 = 45π (cm³).',
+  },
+  {
+    id: 'p05',
+    strand: 'hinh-hoc',
+    track: 'both',
+    difficulty: 2,
+    statement:
+      'Cho tứ giác ABCD nội tiếp đường tròn, biết ∠A = 70°. Số đo góc C là:',
+    choices: ['110°', '70°', '20°', '140°'],
+    correct: 0,
+    explain: 'Tứ giác nội tiếp có tổng hai góc đối bằng 180° ⇒ ∠C = 180° − 70° = 110°.',
+  },
+  {
+    id: 'p06',
+    strand: 'dai-so',
+    track: 'both',
+    difficulty: 3,
+    statement:
+      'Cho (P): y = x² và (d): y = 2x + m. Giá trị của m để (d) tiếp xúc với (P) là:',
+    choices: ['m = −1', 'm = 1', 'm = 0', 'm = −4'],
+    correct: 0,
+    explain:
+      'x² − 2x − m = 0 tiếp xúc ⇔ Δ′ = 1 + m = 0 ⇔ m = −1.',
+  },
+  {
+    id: 'p07',
+    strand: 'hinh-hoc',
+    track: 'both',
+    difficulty: 3,
+    statement:
+      'Cho tam giác ABC vuông tại A, đường cao AH. Biết BH = 4 cm, CH = 9 cm. Độ dài AH là:',
+    choices: ['6 cm', '6,5 cm', '5 cm', '36 cm'],
+    correct: 0,
+    explain: 'Hệ thức lượng: AH² = BH·CH = 36 ⇒ AH = 6 cm.',
+  },
+  {
+    id: 'p08',
+    strand: 'bat-dang-thuc',
+    track: 'both',
+    difficulty: 3,
+    statement: 'Cho a > 0. Giá trị nhỏ nhất của biểu thức a + 4/a là:',
+    choices: ['4', '2', '8', '5'],
+    correct: 0,
+    explain: 'AM–GM: a + 4/a ≥ 2√4 = 4, dấu “=” khi a = 2.',
+  },
+  {
+    id: 'p09',
+    strand: 'so-hoc',
+    track: 'both',
+    difficulty: 3,
+    statement: 'Số dư của 2^{100} khi chia cho 5 là:',
+    choices: ['1', '2', '3', '4'],
+    correct: 0,
+    explain: '2⁴ = 16 ≡ 1 (mod 5); 100 = 4·25 ⇒ 2^{100} ≡ 1 (mod 5).',
+  },
+  {
+    id: 'p10',
+    strand: 'so-hoc',
+    track: 'chuyen',
+    difficulty: 4,
+    statement:
+      'Số cặp số nguyên (x; y) thoả mãn (x + 1)(y − 2) = 6 là:',
+    choices: ['8', '4', '6', '12'],
+    correct: 0,
+    explain:
+      'Ước nguyên của 6 gồm ±1, ±2, ±3, ±6 — có 8 ước; mỗi cách chọn x + 1 là một ước cho đúng một cặp (x; y). Vậy có 8 cặp.',
+  },
+  {
+    id: 'p11',
+    strand: 'to-hop',
+    track: 'chuyen',
+    difficulty: 4,
+    statement:
+      'Trong một nhóm 13 người, luôn tồn tại ít nhất bao nhiêu người có cùng tháng sinh?',
+    choices: ['2', '3', '4', '13'],
+    correct: 0,
+    explain:
+      'Nguyên lí Dirichlet: 13 người vào 12 tháng ⇒ có tháng chứa ít nhất ⌈13/12⌉ = 2 người.',
+  },
+  {
+    id: 'p12',
+    strand: 'so-hoc',
+    track: 'chuyen',
+    difficulty: 4,
+    statement: 'Khẳng định nào sau đây ĐÚNG với mọi số nguyên a?',
+    choices: [
+      'a² chia cho 4 dư 0 hoặc 1',
+      'a² chia cho 4 dư 0, 1 hoặc 2',
+      'a² chia cho 3 dư 0, 1 hoặc 2',
+      'a² chia cho 4 dư 1 hoặc 3',
+    ],
+    correct: 0,
+    explain: 'a chẵn ⇒ a² ≡ 0 (mod 4); a lẻ ⇒ a² ≡ 1 (mod 4). Không có khả năng khác.',
+  },
+  {
+    id: 'p13',
+    strand: 'bat-dang-thuc',
+    track: 'chuyen',
+    difficulty: 5,
+    statement:
+      'Cho a, b, c > 0 thoả a + b + c = 3. Giá trị lớn nhất của ab + bc + ca là:',
+    choices: ['3', '9', '1', '4,5'],
+    correct: 0,
+    explain:
+      'ab + bc + ca ≤ (a + b + c)²/3 = 3, dấu “=” khi a = b = c = 1.',
+  },
+  {
+    id: 'p14',
+    strand: 'hinh-hoc',
+    track: 'chuyen',
+    difficulty: 5,
+    statement:
+      'Cho điểm M nằm ngoài đường tròn (O; R), OM = 5R/2. Đường thẳng qua M cắt (O) tại A, B. Tích MA·MB bằng:',
+    choices: ['21R²/4', '25R²/4', '5R²/2', 'Phụ thuộc vào cát tuyến'],
+    correct: 0,
+    explain:
+      'Phương tích: MA·MB = OM² − R² = 25R²/4 − R² = 21R²/4, không phụ thuộc cát tuyến.',
+  },
+  {
+    id: 'p15',
+    strand: 'dai-so',
+    track: 'thpt-qg',
+    difficulty: 2,
+    statement: 'Tập nghiệm của bất phương trình x² − 5x + 6 < 0 là:',
+    choices: ['(2; 3)', '[2; 3]', '(−∞; 2) ∪ (3; +∞)', '(−3; −2)'],
+    correct: 0,
+    explain:
+      'Tam thức có hai nghiệm 2 và 3, hệ số a = 1 > 0 nên mang dấu âm giữa hai nghiệm.',
+  },
+  {
+    id: 'p16',
+    strand: 'giai-tich',
+    track: 'thpt-qg',
+    difficulty: 3,
+    statement: 'Cho hàm số y = x³ − 3x + 1. Hàm số đạt cực đại tại điểm nào?',
+    choices: ['x = −1', 'x = 1', 'x = 0', 'x = 3'],
+    correct: 0,
+    explain:
+      'y′ = 3x² − 3 = 0 ⇔ x = ±1. Đạo hàm đổi dấu từ dương sang âm tại x = −1 nên đó là điểm cực đại.',
+  },
+  {
+    id: 'p17',
+    strand: 'giai-tich',
+    track: 'thpt-qg',
+    difficulty: 3,
+    statement: 'Giá trị của tích phân ∫ từ 0 đến 1 của (3x² + 2x) dx bằng:',
+    choices: ['2', '1', '3', '5'],
+    correct: 0,
+    explain: 'Nguyên hàm là x³ + x²; giá trị bằng (1 + 1) − 0 = 2.',
+  },
+  {
+    id: 'p18',
+    strand: 'giai-tich',
+    track: 'thpt-qg',
+    difficulty: 3,
+    statement: 'Nghiệm của phương trình 2^{x+1} = 8^{x−1} là:',
+    choices: ['x = 2', 'x = 1', 'x = 3', 'x = −2'],
+    correct: 0,
+    explain: '8 = 2³ nên 2^{x+1} = 2^{3x−3} ⇔ x + 1 = 3x − 3 ⇔ x = 2.',
+  },
+  {
+    id: 'p19',
+    strand: 'toa-do',
+    track: 'thpt-qg',
+    difficulty: 3,
+    statement:
+      'Khoảng cách từ điểm M(1; 2; 2) đến mặt phẳng (P): x + 2y + 2z − 1 = 0 bằng:',
+    choices: ['8/3', '3', '8', '9'],
+    correct: 0,
+    explain:
+      'd = |1 + 4 + 4 − 1| / √(1 + 4 + 4) = 8/3.',
+  },
+  {
+    id: 'p20',
+    strand: 'xac-suat',
+    track: 'thpt-qg',
+    difficulty: 4,
+    statement:
+      'Cho hai biến cố A, B với P(A) = 0,6; P(B) = 0,5 và P(A ∩ B) = 0,3. Giá trị P(A ∪ B) bằng:',
+    choices: ['0,8', '1,1', '0,3', '0,9'],
+    correct: 0,
+    explain: 'P(A ∪ B) = 0,6 + 0,5 − 0,3 = 0,8.',
+  },
+];

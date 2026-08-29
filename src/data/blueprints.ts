@@ -1,0 +1,626 @@
+import type { Blueprint } from '@/types';
+
+/**
+ * Ma trận đề được tổng hợp từ đề thi chính thức và đề minh hoạ các năm gần đây.
+ * Đây là cấu trúc "ổn định theo thống kê" — luôn đối chiếu với công bố mới nhất
+ * của Sở GD&ĐT Hà Nội / từng trường trước mỗi mùa thi (xem trang Tài liệu).
+ */
+export const BLUEPRINTS: Blueprint[] = [
+  {
+    id: 'bp-hanoi-chung',
+    schoolId: 'hanoi-chung',
+    title: 'Đề Toán tuyển sinh lớp 10 THPT công lập Hà Nội',
+    minutes: 90,
+    totalPoints: 10,
+    format: '100% tự luận – 5 bài lớn – thang điểm 10',
+    updatedNote:
+      'Cấu trúc 5 bài đã ổn định nhiều năm. Từ mùa thi theo Chương trình GDPT 2018, đề bổ sung yếu tố thực tế và có thể xuất hiện thống kê – xác suất; phần lõi (căn thức, phương trình, hàm số, hình tròn, cực trị) giữ nguyên.',
+    parts: [
+      {
+        label: 'Bài I',
+        points: 2,
+        minutes: 12,
+        strand: 'dai-so',
+        content: 'Biểu thức chứa căn bậc hai',
+        gate: 'bat-buoc',
+        requirements: [
+          'Ý 1 (0,5đ): tính giá trị biểu thức tại một giá trị x cho trước.',
+          'Ý 2 (1,0đ): rút gọn biểu thức, thường có mẫu dạng √x ± a.',
+          'Ý 3 (0,5đ): tìm x để biểu thức thoả mãn điều kiện (nguyên, dấu, so sánh, GTNN/GTLN đơn giản).',
+        ],
+        tips: [
+          'Viết ĐKXĐ ngay dòng đầu — thiếu điều kiện là mất 0,25đ oan.',
+          'Quy đồng theo nhân tử √x − a, đừng khai triển bừa.',
+          'Ý 3 thường quy về tách phần nguyên: A = k + m/(√x + a) rồi đánh giá.',
+          'Kiểm tra lại nghiệm với ĐKXĐ trước khi kết luận.',
+        ],
+      },
+      {
+        label: 'Bài II',
+        points: 2,
+        minutes: 18,
+        strand: 'thuc-te',
+        content: 'Giải bài toán bằng cách lập phương trình/hệ + bài toán hình học thực tế',
+        gate: 'bat-buoc',
+        requirements: [
+          'Ý 1 (1,5đ): toán chuyển động, năng suất, công việc chung – riêng, phần trăm, hoặc bài toán thực tế lập hệ 2 ẩn.',
+          'Ý 2 (0,5đ): tính diện tích/thể tích hình trụ, hình nón, hình cầu gắn với tình huống thực tế.',
+        ],
+        tips: [
+          'Đặt ẩn kèm đơn vị và điều kiện — chấm theo barem có 0,25đ cho bước này.',
+          'Lập bảng (đại lượng × thời gian = khối lượng) để không lẫn dữ kiện.',
+          'Ý hình không gian chỉ cần đúng công thức và đơn vị; học thuộc 6 công thức trụ – nón – cầu.',
+          'Luôn đối chiếu nghiệm với điều kiện thực tế và trả lời bằng câu hoàn chỉnh.',
+        ],
+      },
+      {
+        label: 'Bài III',
+        points: 2,
+        minutes: 16,
+        strand: 'dai-so',
+        content: 'Hệ phương trình + Parabol và đường thẳng (Viète)',
+        gate: 'bat-buoc',
+        requirements: [
+          'Ý 1 (1,0đ): giải hệ phương trình, thường cần đặt ẩn phụ (dạng 1/x, √x, |x|).',
+          'Ý 2 (1,0đ): tương giao (P): y = ax² với (d): y = mx + n — tìm m để có 2 giao điểm thoả hệ thức về x₁, x₂.',
+        ],
+        tips: [
+          'Đặt ẩn phụ phải kèm điều kiện của ẩn phụ, giải xong nhớ trả biến.',
+          'Ý 2: viết phương trình hoành độ giao điểm → điều kiện Δ > 0 → áp dụng Viète S = x₁+x₂, P = x₁x₂.',
+          'Biến đổi hệ thức đề bài về S và P; gặp |x₁ − x₂| thì bình phương: (x₁−x₂)² = S² − 4P.',
+          'Đối chiếu m tìm được với điều kiện Δ > 0 — bước bị quên nhiều nhất.',
+        ],
+      },
+      {
+        label: 'Bài IV',
+        points: 3,
+        minutes: 34,
+        strand: 'hinh-hoc',
+        content: 'Hình học phẳng — đường tròn (3 ý)',
+        gate: 'phan-hoa',
+        requirements: [
+          'Ý 1 (1,0đ): chứng minh tứ giác nội tiếp hoặc 4 điểm cùng thuộc một đường tròn.',
+          'Ý 2 (1,0đ): chứng minh hệ thức tích/tỉ số, hai đường thẳng vuông góc – song song, hoặc tiếp tuyến.',
+          'Ý 3 (1,0đ): điểm cố định, quỹ tích, thẳng hàng – đồng quy, hoặc cực trị hình học.',
+        ],
+        tips: [
+          'Vẽ hình to bằng bút chì, đúng tỉ lệ, ghi giả thiết lên hình — hình sai thì cả bài sai.',
+          'Ý 1 gần như luôn dùng: tổng hai góc đối bằng 180°, hoặc hai góc cùng nhìn một cạnh.',
+          'Ý 2: ưu tiên tam giác đồng dạng (g–g) rồi lập tỉ số; nghĩ tới phương tích khi có tích hai đoạn.',
+          'Ý 3: thử dự đoán bằng vị trí đặc biệt (cho điểm chạy về trung điểm, về đầu mút) để đoán kết quả rồi mới chứng minh.',
+          'Chỉ được dùng kết quả đã chứng minh ở ý trước — hãy tận dụng, đó là ý đồ của người ra đề.',
+        ],
+      },
+      {
+        label: 'Bài V',
+        points: 0.5,
+        minutes: 10,
+        strand: 'bat-dang-thuc',
+        content: 'Bất đẳng thức / giá trị lớn nhất – nhỏ nhất',
+        gate: 'lay-diem-toi-da',
+        requirements: [
+          'Một câu duy nhất 0,5 điểm, thường là BĐT 2–3 biến có điều kiện ràng buộc, hoặc tìm GTNN của biểu thức.',
+        ],
+        tips: [
+          'Chỉ làm sau khi đã “khoá” chắc 9,5 điểm còn lại.',
+          'Vũ khí đủ dùng: AM–GM 2–3 số, Cauchy–Schwarz dạng phân thức, và đánh giá bằng bình phương (x−y)² ≥ 0.',
+          'Dò điểm rơi trước (thường tại x = y hoặc tại biên) rồi mới chọn kỹ thuật.',
+          'Viết được vài dòng đánh giá đúng hướng vẫn có thể được điểm thành phần — đừng bỏ trắng.',
+        ],
+      },
+    ],
+    timeStrategy: [
+      { phase: 'Đọc đề & phân loại', minutes: '0–3', action: 'Đọc lướt cả 5 bài, đánh dấu ý dễ/khó, quyết định thứ tự làm.' },
+      { phase: 'Vòng 1 – gom điểm chắc', minutes: '3–50', action: 'Bài I → Bài II → Bài III, làm liền mạch, không dừng lâu ở ý khó.' },
+      { phase: 'Vòng 2 – hình học', minutes: '50–78', action: 'Vẽ hình, làm ý 1 và ý 2; ý 3 chỉ vào nếu đã xong sạch hai ý đầu.' },
+      { phase: 'Vòng 3 – chốt', minutes: '78–86', action: 'Quay lại ý còn dở + Bài V. Ưu tiên ý nào gần xong nhất.' },
+      { phase: 'Soát', minutes: '86–90', action: 'Soát ĐKXĐ, đối chiếu nghiệm, kiểm tra đã ghi kết luận cho mọi ý.' },
+    ],
+    scoreTargets: [
+      { group: 'Mục tiêu 8,0+', target: 'Trọn Bài I, II, III + ý 1–2 Bài IV', giveUp: 'Bỏ ý 3 Bài IV và Bài V' },
+      { group: 'Mục tiêu 9,0+', target: 'Trọn Bài I–IV, sai sót ≤ 1 ý nhỏ', giveUp: 'Có thể bỏ Bài V' },
+      { group: 'Mục tiêu 9,5–10', target: 'Trọn vẹn cả 5 bài, trình bày chuẩn barem', giveUp: 'Không bỏ ý nào' },
+    ],
+  },
+
+  {
+    id: 'bp-khtn-v1',
+    schoolId: 'khtn',
+    title: 'Toán vòng 1 – Chuyên KHTN (bài thi điều kiện)',
+    minutes: 120,
+    totalPoints: 10,
+    format: 'Tự luận – 4 đến 5 bài – thang điểm 10',
+    updatedNote:
+      'Vòng 1 là cửa lọc: rất nhiều thí sinh trượt ngay ở đây dù ôn chuyên tốt. Đề dài hơn đề vào 10 công lập và đòi hỏi kỹ thuật biến đổi thành thạo.',
+    parts: [
+      {
+        label: 'Bài 1',
+        points: 2.5,
+        minutes: 25,
+        strand: 'dai-so',
+        content: 'Biến đổi biểu thức – phương trình vô tỉ',
+        gate: 'bat-buoc',
+        requirements: [
+          'Ý a: rút gọn/chứng minh đẳng thức chứa căn ở mức khó hơn đề chung.',
+          'Ý b: giải phương trình vô tỉ (đặt ẩn phụ, nhân liên hợp, đánh giá).',
+        ],
+        tips: [
+          'Thuộc lòng 4 hướng xử lý phương trình vô tỉ: nâng luỹ thừa, đặt ẩn phụ, liên hợp, đánh giá hai vế.',
+          'Luôn đặt điều kiện trước khi bình phương và thử lại nghiệm.',
+        ],
+      },
+      {
+        label: 'Bài 2',
+        points: 2.5,
+        minutes: 25,
+        strand: 'dai-so',
+        content: 'Hệ phương trình – hàm số bậc hai – Viète',
+        gate: 'bat-buoc',
+        requirements: [
+          'Giải hệ đối xứng, hệ đẳng cấp hoặc hệ giải bằng phép cộng/thế khéo.',
+          'Bài toán tham số về nghiệm của phương trình bậc hai.',
+        ],
+        tips: [
+          'Nhận dạng hệ: đối xứng loại I → đặt S, P; đẳng cấp → chia hai vế cho y²; có nhân tử chung → phân tích.',
+          'Với tham số, đừng quên biện luận trường hợp hệ số bậc hai bằng 0.',
+        ],
+      },
+      {
+        label: 'Bài 3',
+        points: 3,
+        minutes: 40,
+        strand: 'hinh-hoc',
+        content: 'Hình học phẳng – 2 đến 3 ý',
+        gate: 'phan-hoa',
+        requirements: [
+          'Ý a–b: nội tiếp, đồng dạng, hệ thức lượng, tiếp tuyến.',
+          'Ý c: tỉ số, thẳng hàng, hoặc đại lượng không đổi.',
+        ],
+        tips: [
+          'Đề vòng 1 vẫn xoay quanh đường tròn — luyện dày các mô hình chuẩn.',
+          'Ghi rõ “xét tam giác … và tam giác …” để ăn điểm trình bày.',
+        ],
+      },
+      {
+        label: 'Bài 4',
+        points: 2,
+        minutes: 25,
+        strand: 'so-hoc',
+        content: 'Số học hoặc bất đẳng thức (câu phân loại)',
+        gate: 'phan-hoa',
+        requirements: [
+          'Chia hết, số chính phương, nghiệm nguyên ở mức nhập môn chuyên;',
+          'hoặc một bất đẳng thức/cực trị hai biến.',
+        ],
+        tips: [
+          'Vũ khí cơ bản: xét số dư, phân tích thành nhân tử, kẹp giá trị.',
+          'Đây là câu tạo chênh lệch giữa thí sinh ôn chuyên và thí sinh ôn thường.',
+        ],
+      },
+    ],
+    timeStrategy: [
+      { phase: 'Đọc đề', minutes: '0–5', action: 'Phân loại độ khó, chọn bài dễ nhất làm trước để lấy đà.' },
+      { phase: 'Đại số', minutes: '5–55', action: 'Xử lý gọn Bài 1 và Bài 2 — đây là 5 điểm bắt buộc phải có.' },
+      { phase: 'Hình học', minutes: '55–95', action: 'Vẽ hình cẩn thận, làm tuần tự các ý.' },
+      { phase: 'Câu phân loại', minutes: '95–115', action: 'Bài 4, viết mọi ý tưởng đã nghĩ ra dù chưa trọn vẹn.' },
+      { phase: 'Soát', minutes: '115–120', action: 'Kiểm tra điều kiện, nghiệm ngoại lai, kết luận.' },
+    ],
+    scoreTargets: [
+      { group: 'Vượt vòng 1 an toàn', target: '7,0–8,0/10: trọn Bài 1, 2 và 2 ý đầu Bài 3', giveUp: 'Có thể mất trọn Bài 4' },
+      { group: 'Thí sinh mục tiêu đỗ chuyên', target: '8,5+/10', giveUp: 'Không bỏ câu nào' },
+    ],
+  },
+
+  {
+    id: 'bp-khtn-v2',
+    schoolId: 'khtn',
+    title: 'Toán vòng 2 – Chuyên KHTN (đề chuyên)',
+    minutes: 150,
+    totalPoints: 10,
+    format: 'Tự luận – 4 đến 5 bài, mỗi bài 1–2 ý – thang điểm 10',
+    updatedNote:
+      'Đề ngắn nhưng sâu. Điểm khác biệt lớn nhất so với các trường khác: mật độ Số học và Tổ hợp rất cao.',
+    parts: [
+      {
+        label: 'Bài 1',
+        points: 2,
+        minutes: 25,
+        strand: 'dai-so',
+        content: 'Đại số: hệ phương trình / phương trình / biến đổi khéo',
+        gate: 'bat-buoc',
+        requirements: [
+          'Hệ phương trình không mẫu mực, phương trình chứa căn dạng lạ, hoặc bài toán về biểu thức đối xứng.',
+        ],
+        tips: [
+          'Đây là bài “mở hàng” dễ nhất — phải lấy trọn điểm để còn quỹ thời gian cho các bài sau.',
+          'Kỹ thuật hay gặp: cộng/trừ hai phương trình tạo nhân tử, đặt ẩn phụ đối xứng, đánh giá bằng BĐT.',
+        ],
+      },
+      {
+        label: 'Bài 2',
+        points: 2,
+        minutes: 30,
+        strand: 'so-hoc',
+        content: 'Số học',
+        gate: 'bat-buoc',
+        requirements: [
+          'Chia hết – đồng dư, số nguyên tố, số chính phương, phương trình nghiệm nguyên, ước – bội.',
+        ],
+        tips: [
+          'Bộ công cụ bắt buộc: xét số dư modulo (3, 4, 8, 9, 5, 11), phân tích thành nhân tử, kẹp giữa hai số chính phương liên tiếp, nguyên lí cực hạn / lùi vô hạn.',
+          'Số chính phương chỉ có dư 0 hoặc 1 khi chia 3 và chia 4 — dùng cực kỳ nhiều.',
+          'Với nghiệm nguyên dạng tích: đưa về (ax + b)(cy + d) = k rồi xét ước của k.',
+        ],
+      },
+      {
+        label: 'Bài 3',
+        points: 3,
+        minutes: 45,
+        strand: 'hinh-hoc',
+        content: 'Hình học phẳng – 2 ý',
+        gate: 'phan-hoa',
+        requirements: [
+          'Ý a: kết quả trung gian (nội tiếp, đồng dạng, tỉ số, trung điểm).',
+          'Ý b: kết quả “đắt” — thẳng hàng, đồng quy, tiếp xúc, điểm cố định.',
+        ],
+        tips: [
+          'Ý a hầu như luôn là chìa khoá cho ý b: chứng minh xong hãy phát biểu lại thành công cụ.',
+          'Nắm chắc: phương tích, trục đẳng phương, tứ giác nội tiếp, tam giác đồng dạng, đường tròn Euler cơ bản.',
+          'Vẽ hình chính xác bằng thước – compa giúp phát hiện được kết luận ẩn.',
+        ],
+      },
+      {
+        label: 'Bài 4',
+        points: 2,
+        minutes: 30,
+        strand: 'to-hop',
+        content: 'Tổ hợp – rời rạc (câu chốt)',
+        gate: 'phan-hoa',
+        requirements: [
+          'Nguyên lí Dirichlet, bất biến – đơn biến, cực hạn, tô màu, đếm bằng hai cách, trò chơi đối kháng.',
+        ],
+        tips: [
+          'Luôn thử trường hợp nhỏ (n = 1, 2, 3) để đoán quy luật rồi tổng quát hoá.',
+          'Với bài “tồn tại”: nghĩ tới Dirichlet — xây “chuồng” trước, “thỏ” sau.',
+          'Với bài “không thể”: tìm một đại lượng bất biến (thường là tính chẵn lẻ hoặc tổng modulo k).',
+          'Trình bày rõ ràng từng bước lập luận; điểm thành phần ở đây rất đáng giá.',
+        ],
+      },
+      {
+        label: 'Bài 5',
+        points: 1,
+        minutes: 15,
+        strand: 'bat-dang-thuc',
+        content: 'Bất đẳng thức / cực trị (có thể gộp vào bài khác)',
+        gate: 'lay-diem-toi-da',
+        requirements: ['Bất đẳng thức 3 biến có điều kiện, hoặc cực trị của biểu thức đối xứng.'],
+        tips: [
+          'AM–GM, Cauchy–Schwarz và kỹ thuật SOS là đủ cho phần lớn đề tuyển sinh.',
+          'Dò điểm rơi bằng cách giả sử dấu bằng xảy ra tại điểm đối xứng hoặc tại biên.',
+        ],
+      },
+    ],
+    timeStrategy: [
+      { phase: 'Đọc đề', minutes: '0–8', action: 'Đọc kỹ cả đề, xếp hạng độ khó cảm nhận, phác ý tưởng ra nháp.' },
+      { phase: 'Gom điểm chắc', minutes: '8–60', action: 'Làm bài Đại số và bài Số học trước — đây là 4 điểm nền.' },
+      { phase: 'Hình học', minutes: '60–105', action: 'Ý a phải xong; ý b viết mọi hướng đã nghĩ ra.' },
+      { phase: 'Tổ hợp', minutes: '105–140', action: 'Thử ví dụ nhỏ, xây lập luận; ghi cả kết quả bộ phận.' },
+      { phase: 'Soát', minutes: '140–150', action: 'Đọc lại lời giải, bổ sung kết luận, kiểm tra trường hợp thiếu.' },
+    ],
+    scoreTargets: [
+      { group: 'Ngưỡng đỗ tham khảo', target: '6,5–7,5/10: trọn 3 bài + điểm thành phần bài chốt', giveUp: 'Chấp nhận không trọn bài tổ hợp' },
+      { group: 'Vào top đầu', target: '8,5+/10', giveUp: 'Không' },
+    ],
+  },
+
+  {
+    id: 'bp-ams',
+    schoolId: 'ams',
+    title: 'Toán chuyên – Chuyên Hà Nội Amsterdam / Chu Văn An (đề chung khối chuyên Sở)',
+    minutes: 150,
+    totalPoints: 10,
+    format: 'Tự luận – 5 bài – thang điểm 10',
+    updatedNote:
+      'Các trường chuyên thuộc Sở GD&ĐT Hà Nội (Ams, Chu Văn An, Nguyễn Huệ, Sơn Tây) dùng chung đề Toán chuyên. Cấu trúc 5 bài phủ đều 5 mạch kiến thức.',
+    parts: [
+      {
+        label: 'Bài I',
+        points: 2,
+        minutes: 25,
+        strand: 'dai-so',
+        content: 'Đại số: phương trình – hệ phương trình – biểu thức',
+        gate: 'bat-buoc',
+        requirements: ['Giải phương trình/hệ ở mức chuyên, hoặc chứng minh một đẳng thức biến đổi khéo.'],
+        tips: [
+          'Bài mở đầu, độ khó vừa phải — bắt buộc trọn 2,0 điểm.',
+          'Đừng sa đà tính toán cồng kềnh: tìm nhân tử chung hoặc phép đặt ẩn phụ trước.',
+        ],
+      },
+      {
+        label: 'Bài II',
+        points: 2,
+        minutes: 30,
+        strand: 'so-hoc',
+        content: 'Số học',
+        gate: 'bat-buoc',
+        requirements: ['Chia hết, số chính phương, số nguyên tố, phương trình nghiệm nguyên.'],
+        tips: [
+          'Trình bày phải chặt: nêu rõ “xét theo modulo …”, liệt kê đầy đủ trường hợp.',
+          'Rất hay gặp: chứng minh một biểu thức chia hết cho số nhỏ, hoặc tìm n để biểu thức là số chính phương.',
+        ],
+      },
+      {
+        label: 'Bài III',
+        points: 2,
+        minutes: 30,
+        strand: 'bat-dang-thuc',
+        content: 'Bất đẳng thức – cực trị',
+        gate: 'phan-hoa',
+        requirements: ['BĐT 2–3 biến có điều kiện ràng buộc (a + b + c = 3, abc = 1, …), tìm GTLN/GTNN.'],
+        tips: [
+          'Xác định điểm rơi trước tiên; điểm rơi lệch ⇒ phải dùng kỹ thuật chọn hệ số.',
+          'Cauchy–Schwarz dạng Engel (cộng mẫu) giải quyết rất nhiều bài phân thức.',
+          'Nếu bí, hãy chứng minh cho trường hợp riêng và nêu ý tưởng — vẫn có điểm.',
+        ],
+      },
+      {
+        label: 'Bài IV',
+        points: 3,
+        minutes: 45,
+        strand: 'hinh-hoc',
+        content: 'Hình học phẳng – 3 ý',
+        gate: 'phan-hoa',
+        requirements: [
+          'Ý 1 (1,0đ): tứ giác nội tiếp / đồng dạng.',
+          'Ý 2 (1,0đ): hệ thức, tỉ số, vuông góc, tiếp tuyến.',
+          'Ý 3 (1,0đ): điểm cố định, đồng quy, thẳng hàng, hoặc cực trị hình học.',
+        ],
+        tips: [
+          'Bài nặng điểm nhất — phân bổ thời gian tương xứng.',
+          'Ý 3 thường cần một bổ đề phụ: hãy phát biểu và chứng minh bổ đề riêng cho gọn.',
+          'Giữ hình sạch; nếu cần, vẽ hình thứ hai cho ý khó.',
+        ],
+      },
+      {
+        label: 'Bài V',
+        points: 1,
+        minutes: 20,
+        strand: 'to-hop',
+        content: 'Tổ hợp – rời rạc',
+        gate: 'lay-diem-toi-da',
+        requirements: ['Đếm, Dirichlet, bất biến, tô màu, cấu hình trên bảng ô vuông.'],
+        tips: [
+          'Chỉ 1,0 điểm nhưng là điểm phân định thứ hạng.',
+          'Nêu được cấu hình ví dụ (phần “tồn tại”) đã có điểm; phần chứng minh chặn dưới/trên là phần khó.',
+        ],
+      },
+    ],
+    timeStrategy: [
+      { phase: 'Đọc đề', minutes: '0–7', action: 'Đọc toàn đề, chấm điểm độ khó 1–5 cho từng bài.' },
+      { phase: 'Nền tảng', minutes: '7–55', action: 'Bài I + Bài II — mục tiêu trọn 4,0 điểm.' },
+      { phase: 'Hình học', minutes: '55–100', action: 'Bài IV, ưu tiên hai ý đầu.' },
+      { phase: 'BĐT', minutes: '100–125', action: 'Bài III, xác định điểm rơi rồi triển khai.' },
+      { phase: 'Tổ hợp + soát', minutes: '125–150', action: 'Bài V và rà soát toàn bài.' },
+    ],
+    scoreTargets: [
+      { group: 'Đỗ Chu Văn An', target: '5,5–7,0/10', giveUp: 'Có thể bỏ Bài V và ý 3 Bài IV' },
+      { group: 'Đỗ Ams', target: '7,0–8,5/10', giveUp: 'Chỉ được bỏ một phần Bài V' },
+    ],
+  },
+
+  {
+    id: 'bp-ntt',
+    schoolId: 'ntt',
+    title: 'Toán – THCS & THPT Nguyễn Tất Thành (đề riêng)',
+    minutes: 90,
+    totalPoints: 10,
+    format: 'Tự luận – 4 đến 5 bài – thang điểm 10',
+    updatedNote:
+      'Đề do trường ra, bám nền chương trình THCS nhưng nâng độ khó ở các ý cuối. Ôn theo Luồng THPT rồi bổ sung module nâng cao là chiến lược tối ưu.',
+    parts: [
+      {
+        label: 'Bài 1',
+        points: 2,
+        minutes: 15,
+        strand: 'dai-so',
+        content: 'Biểu thức chứa căn – rút gọn và ứng dụng',
+        gate: 'bat-buoc',
+        requirements: ['Rút gọn, tính giá trị, tìm x thoả điều kiện.'],
+        tips: ['Giống Bài I đề vào 10 nhưng ý cuối khó hơn một bậc.'],
+      },
+      {
+        label: 'Bài 2',
+        points: 2.5,
+        minutes: 22,
+        strand: 'dai-so',
+        content: 'Phương trình – hệ phương trình – hàm số',
+        gate: 'bat-buoc',
+        requirements: ['Giải phương trình/hệ, bài toán Viète, tương giao parabol – đường thẳng.'],
+        tips: ['Luyện tốc độ: 90 phút cho đề khó hơn nghĩa là không được phép loay hoay.'],
+      },
+      {
+        label: 'Bài 3',
+        points: 1.5,
+        minutes: 13,
+        strand: 'thuc-te',
+        content: 'Bài toán thực tế',
+        gate: 'bat-buoc',
+        requirements: ['Lập phương trình/hệ từ tình huống thực tế; có thể có yếu tố hình học.'],
+        tips: ['Đọc kỹ dữ kiện, đặt ẩn kèm đơn vị.'],
+      },
+      {
+        label: 'Bài 4',
+        points: 3,
+        minutes: 30,
+        strand: 'hinh-hoc',
+        content: 'Hình học phẳng – 3 ý',
+        gate: 'phan-hoa',
+        requirements: ['Nội tiếp → hệ thức → ý nâng cao (cố định/cực trị).'],
+        tips: ['Ý 3 ở mức giữa đề vào 10 và đề chuyên.'],
+      },
+      {
+        label: 'Bài 5',
+        points: 1,
+        minutes: 10,
+        strand: 'bat-dang-thuc',
+        content: 'Câu nâng cao: bất đẳng thức hoặc số học',
+        gate: 'lay-diem-toi-da',
+        requirements: ['BĐT hai/ba biến, hoặc một câu số học nhập môn.'],
+        tips: ['Đây là điểm khác biệt so với đề công lập — cần module nâng cao riêng.'],
+      },
+    ],
+    timeStrategy: [
+      { phase: 'Đọc đề', minutes: '0–3', action: 'Phân loại nhanh.' },
+      { phase: 'Đại số + thực tế', minutes: '3–48', action: 'Bài 1, 2, 3 gọn gàng.' },
+      { phase: 'Hình học', minutes: '48–78', action: 'Bài 4.' },
+      { phase: 'Câu nâng cao + soát', minutes: '78–90', action: 'Bài 5 và rà soát.' },
+    ],
+    scoreTargets: [
+      { group: 'Ngưỡng an toàn', target: '8,0+/10', giveUp: 'Có thể mất một phần Bài 5' },
+      { group: 'Top đầu', target: '9,0+/10', giveUp: 'Không' },
+    ],
+  },
+
+  {
+    id: 'bp-sp',
+    schoolId: 'sp',
+    title: 'Toán chuyên – Chuyên ĐH Sư phạm Hà Nội',
+    minutes: 120,
+    totalPoints: 10,
+    format: 'Tự luận – 4 đến 5 bài – thang điểm 10',
+    updatedNote:
+      'Phong cách gần KHTN nhưng tỉ trọng Đại số cao hơn. Rất nhiều thí sinh thi song song KHTN – Sư phạm, nên lộ trình có thể dùng chung.',
+    parts: [
+      {
+        label: 'Bài 1',
+        points: 2.5,
+        minutes: 25,
+        strand: 'dai-so',
+        content: 'Phương trình – hệ phương trình',
+        gate: 'bat-buoc',
+        requirements: ['Hệ đối xứng/đẳng cấp, phương trình vô tỉ, đa thức.'],
+        tips: ['Đại số là “đặc sản” của đề Sư phạm — luyện dày phần này.'],
+      },
+      {
+        label: 'Bài 2',
+        points: 2,
+        minutes: 25,
+        strand: 'so-hoc',
+        content: 'Số học',
+        gate: 'bat-buoc',
+        requirements: ['Chia hết, nghiệm nguyên, số chính phương.'],
+        tips: ['Mức độ thường nhẹ hơn KHTN một chút nhưng vẫn đòi hỏi trình bày chặt.'],
+      },
+      {
+        label: 'Bài 3',
+        points: 3,
+        minutes: 40,
+        strand: 'hinh-hoc',
+        content: 'Hình học phẳng – 2–3 ý',
+        gate: 'phan-hoa',
+        requirements: ['Đường tròn, tỉ số, đồng quy – thẳng hàng.'],
+        tips: ['Đề hình thường “kinh điển”, thưởng cho ai thuộc nhiều mô hình chuẩn.'],
+      },
+      {
+        label: 'Bài 4',
+        points: 2.5,
+        minutes: 30,
+        strand: 'to-hop',
+        content: 'Tổ hợp hoặc bất đẳng thức',
+        gate: 'phan-hoa',
+        requirements: ['Dirichlet, bất biến, đếm; hoặc BĐT có điều kiện.'],
+        tips: ['Đọc kỹ để chọn đúng công cụ; viết đủ lập luận để ăn điểm thành phần.'],
+      },
+    ],
+    timeStrategy: [
+      { phase: 'Đọc đề', minutes: '0–6', action: 'Phân loại và lên thứ tự.' },
+      { phase: 'Đại số + Số học', minutes: '6–55', action: 'Bài 1, 2 — 4,5 điểm nền.' },
+      { phase: 'Hình học', minutes: '55–95', action: 'Bài 3.' },
+      { phase: 'Câu chốt + soát', minutes: '95–120', action: 'Bài 4 và rà soát.' },
+    ],
+    scoreTargets: [
+      { group: 'Ngưỡng đỗ tham khảo', target: '6,5–7,5/10', giveUp: 'Chấp nhận mất phần khó bài chốt' },
+      { group: 'Top đầu', target: '8,5+/10', giveUp: 'Không' },
+    ],
+  },
+  {
+    id: 'bp-tn-thpt',
+    schoolId: 'tn-thpt',
+    title: 'Đề Toán kỳ thi tốt nghiệp THPT (định dạng từ 2025)',
+    minutes: 90,
+    totalPoints: 10,
+    format: '3 phần — 22 câu — thang điểm 10',
+    updatedNote:
+      'Định dạng mới gồm ba phần với cơ chế tính điểm khác nhau, đặc biệt là điểm luỹ tiến ở Phần II. Luôn đối chiếu với đề tham khảo mới nhất của Bộ GD&ĐT trước mỗi mùa thi.',
+    parts: [
+      {
+        label: 'Phần I',
+        points: 3,
+        minutes: 22,
+        strand: 'giai-tich',
+        content: 'Trắc nghiệm nhiều lựa chọn — 12 câu, mỗi câu 0,25 điểm',
+        gate: 'bat-buoc',
+        requirements: [
+          'Phủ rộng chương trình, phần lớn ở mức nhận biết và thông hiểu.',
+          'Tập trung vào: đạo hàm và ứng dụng, nguyên hàm – tích phân, toạ độ Oxyz, thống kê – xác suất.',
+        ],
+        tips: [
+          'Đây là 3,0 điểm phải lấy trọn — sai một câu ở đây là mất 0,25 điểm rất đáng tiếc.',
+          'Mục tiêu tốc độ: dưới 2 phút mỗi câu để dành thời gian cho Phần II và III.',
+          'Không sa lầy: câu nào quá 2 phút thì đánh dấu và quay lại sau.',
+        ],
+      },
+      {
+        label: 'Phần II',
+        points: 4,
+        minutes: 33,
+        strand: 'giai-tich',
+        content: 'Trắc nghiệm đúng/sai — 4 câu, mỗi câu 4 ý',
+        gate: 'phan-hoa',
+        requirements: [
+          'Mỗi câu là một tình huống lớn với 4 mệnh đề con cần xác định đúng/sai.',
+          'Điểm luỹ tiến trong mỗi câu: 1 ý đúng 0,10 — 2 ý 0,25 — 3 ý 0,50 — 4 ý 1,00.',
+        ],
+        tips: [
+          'Đây là phần chiếm nhiều điểm nhất và cũng là nơi phân hoá mạnh nhất.',
+          'Bước từ 3 ý lên 4 ý đáng 0,50 điểm, gấp đôi bước từ 2 lên 3 — hãy dồn sức cho câu đã chắc 3 ý.',
+          'Không bỏ trống ý nào; mỗi ý là một mệnh đề độc lập.',
+          'Đọc kỹ giả thiết chung ở đầu câu — nhiều ý sai chỉ vì đọc lướt phần dẫn.',
+        ],
+      },
+      {
+        label: 'Phần III',
+        points: 3,
+        minutes: 28,
+        strand: 'giai-tich',
+        content: 'Trả lời ngắn — 6 câu, mỗi câu 0,5 điểm',
+        gate: 'lay-diem-toi-da',
+        requirements: [
+          'Thí sinh tự tính và điền đáp số, không có phương án để lựa chọn.',
+          'Thường gắn với tình huống thực tế, cần mô hình hoá trước khi tính.',
+        ],
+        tips: [
+          'Rủi ro cao nhất toàn đề: không có phương án nên không thể loại trừ, sai là mất trọn 0,5 điểm.',
+          'Luôn tính lại bằng một cách thứ hai trước khi điền.',
+          'Chú ý định dạng đáp số: số thập phân, làm tròn, đơn vị theo đúng yêu cầu đề.',
+        ],
+      },
+    ],
+    timeStrategy: [
+      { phase: 'Phần I', minutes: '0–22', action: 'Làm nhanh và chắc 12 câu; đánh dấu câu cần quay lại.' },
+      { phase: 'Phần II', minutes: '22–55', action: 'Mỗi câu khoảng 8 phút; xử lý đủ 4 ý ở những câu nắm chắc.' },
+      { phase: 'Phần III', minutes: '55–83', action: 'Mỗi câu khoảng 4–5 phút, tính lại đáp số trước khi điền.' },
+      { phase: 'Soát', minutes: '83–90', action: 'Quay lại câu đã đánh dấu, kiểm tra tô đáp án và định dạng đáp số.' },
+    ],
+    scoreTargets: [
+      { group: 'Mục tiêu 8,0+', target: 'Trọn Phần I + 2,5/4 Phần II + 4/6 câu Phần III', giveUp: 'Chấp nhận mất phần khó Phần II' },
+      { group: 'Mục tiêu 9,0+', target: 'Trọn Phần I, ≥ 3,0/4 Phần II, ≥ 5/6 câu Phần III', giveUp: 'Tối đa một câu Phần III' },
+      { group: 'Mục tiêu 9,5–10', target: 'Trọn Phần I và Phần III, ≥ 3,5/4 Phần II', giveUp: 'Không' },
+    ],
+  },
+];
+
+export const blueprintsBySchool = (schoolId: string) =>
+  BLUEPRINTS.filter((b) => b.schoolId === schoolId);
+
+export const blueprintById = (id: string) => BLUEPRINTS.find((b) => b.id === id);
