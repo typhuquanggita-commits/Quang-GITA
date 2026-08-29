@@ -41,6 +41,8 @@ const GiangSau = lazy(() => import('./components/engwin/GiangSau').then((m) => (
 const Quyen = lazy(() => import('./components/engwin/Quyen').then((m) => ({default: m.Quyen})));
 const ChuGita = lazy(() => import('./components/engwin/ChuGita').then((m) => ({default: m.ChuGita})));
 const Chuan = lazy(() => import('./components/engwin/Chuan').then((m) => ({default: m.Chuan})));
+const ChuyenDe = lazy(() => import('./components/engwin/ChuyenDe').then((m) => ({default: m.ChuyenDe})));
+const HoSo = lazy(() => import('./components/engwin/HoSo').then((m) => ({default: m.HoSo})));
 
 /** Bối cảnh truyền xuống tab. Hầu hết tab không cần, nên chúng bỏ qua tham số. */
 interface NavCtx {
@@ -206,6 +208,22 @@ const NAV: Nav[] = [
     hint: '2.000 phiếu · 2.000 nhiệm vụ',
     group: 'learner',
     render: () => <Phieu />,
+  },
+  {
+    id: 'chuyende',
+    icon: '🗂️',
+    label: 'Bộ phiếu chuyên đề',
+    hint: '80 chuyên đề · 7 loại · 1.120 phiếu',
+    group: 'learner',
+    render: () => <ChuyenDe />,
+  },
+  {
+    id: 'hoso',
+    icon: '🗃️',
+    label: 'Hồ sơ của tôi',
+    hint: 'Lịch sử · phân tích · lộ trình',
+    group: 'learner',
+    render: () => <HoSo />,
   },
   {
     id: 'giangsau',

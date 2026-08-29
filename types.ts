@@ -1473,3 +1473,139 @@ export interface CapHanhDong {
   viDu: string;
   dauHieuSai: string;
 }
+
+/* ==========================================================================
+   GIẢI ĐỀ VÀ HỒ SƠ HỌC VIÊN
+   ========================================================================== */
+
+/** Một bẫy cụ thể: học viên chọn gì, vì sao hấp dẫn, và sai chính xác ở đâu. */
+export interface BayGiai {
+  chon: string;
+  viSaoHapDan: string;
+  saiODau: string;
+}
+
+/** Bộ giải cho một dạng bài: đáp án đúng dựa trên cái gì, và sai thì sai ở đâu. */
+export interface GiaiDe {
+  dangId: string;
+  dangTen: string;
+  skill: SkillId;
+  /** Những điểm kiến thức mà dạng bài này thật sự kiểm. */
+  diemKienThuc: string[];
+  /** Quy trình nghĩ đúng, theo từng bước, áp được cho mọi câu của dạng này. */
+  cachNghi: string[];
+  /** Ba lựa chọn sai hay gặp nhất. */
+  bay: [BayGiai, BayGiai, BayGiai];
+  /** Cách tự kiểm đáp án của mình trước khi nộp. */
+  tuKiemDapAn: string;
+  neuSai: string;
+  baiGiangIds: string[];
+  drillId: string;
+}
+
+/** Một câu có đáp án thật, dùng cho phần làm bài trực tuyến. */
+export interface CauHoi {
+  id: string;
+  phieuId: string;
+  phanMa: string;
+  no: number;
+  deBai: string;
+  luaChon: string[];
+  dapAn: number;
+  giaiThich: string;
+  /** Vì sao từng lựa chọn sai là sai, cùng thứ tự với luaChon. */
+  viSaoSai: string[];
+  diemKienThuc: string;
+}
+
+/** Một lần làm phiếu đã lưu vào hồ sơ. */
+export interface LanLam {
+  id: string;
+  phieuId: string;
+  luc: string;
+  dungTungPhan: number[];
+  tiLe: number;
+  datKpi: boolean;
+  phanYeuNhat: string;
+  skill: SkillId;
+  levelId: string;
+}
+
+/** Phân tích tích luỹ từ toàn bộ hồ sơ. */
+export interface PhanTichHoSo {
+  soLan: number;
+  soPhieuKhac: number;
+  trungBinh: number;
+  tiLeDat: number;
+  xuHuong: 'đang lên' | 'đi ngang' | 'đang xuống' | 'chưa đủ dữ liệu';
+  theoKyNang: {skill: SkillId; soLan: number; trungBinh: number}[];
+  theoPhan: {ma: string; trungBinh: number}[];
+  manhNhat: string;
+  yeuNhat: string;
+  chuoiNgay: number;
+  canhBao: string[];
+}
+
+/** Một việc trong lộ trình cá nhân hoá sinh ra từ hồ sơ. */
+export interface ViecCaNhan {
+  uuTien: number;
+  viec: string;
+  viSao: string;
+  bangChung: string;
+  phieuGoiY: string;
+  baiGiangGoiY: string;
+  tuan: number;
+}
+
+/* ==========================================================================
+   BỘ PHIẾU THEO CHUYÊN ĐỀ
+   ========================================================================== */
+
+/** Một loại phiếu trong bộ bảy của mỗi chuyên đề. */
+export interface LoaiPhieu {
+  no: number;
+  ma: string;
+  ten: string;
+  mucDich: string;
+  cauTruc: string[];
+  phut: number;
+  khiNaoLam: string;
+  raGi: string;
+  /** Phiếu giải đi kèm chứa những gì, riêng cho loại này. */
+  giaiCo: string[];
+  chanNeu: string;
+}
+
+/** Một phiếu cụ thể trong bộ chuyên đề. */
+export interface PhieuChuyenDe {
+  id: string;
+  chuyenDeId: string;
+  chuyenDeTen: string;
+  skill: SkillId;
+  loaiNo: number;
+  loaiMa: string;
+  loaiTen: string;
+  ten: string;
+  mucDich: string;
+  cauTruc: string[];
+  phut: number;
+  khiNaoLam: string;
+  raGi: string;
+  chanNeu: string;
+  giaiId: string;
+}
+
+/** Phiếu giải đi kèm một phiếu chuyên đề. */
+export interface PhieuGiai {
+  id: string;
+  phieuId: string;
+  chuyenDeId: string;
+  ten: string;
+  /** Bảng phân tích chuyên sâu: mỗi dòng một điểm kiến thức và độ sâu của nó. */
+  bangPhanTich: {diem: string; banChat: string; hayNhamVoi: string}[];
+  cachNghi: string[];
+  bay: BayGiai[];
+  tuKiem: string;
+  neuSai: string;
+  moKhiNao: string;
+}

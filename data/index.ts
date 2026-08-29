@@ -40,3 +40,6 @@ export * from './giangsau';
 export * from './gitahoa';
 export * from './chuanquocte';
 export * from './gitachu';
+export * from './giaide';
+export * from './hoso';
+export * from './chuyende';

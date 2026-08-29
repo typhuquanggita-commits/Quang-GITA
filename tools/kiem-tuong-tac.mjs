@@ -137,6 +137,42 @@ await p.keyboard.press('Control+k'); await p.waitForTimeout(300);
 await p.keyboard.press('Escape'); await p.waitForTimeout(300);
 ok('Esc đóng ô tìm', (await p.locator('[role=dialog]').count())===0);
 
+// 10. Làm phiếu → chấm → xem đáp án → lưu vào hồ sơ → lộ trình cá nhân hoá
+await tab('Phiếu luyện');
+await p.locator('main').getByRole('button',{name:'Làm · chấm · xem đáp án',exact:true}).click();
+await p.waitForTimeout(600);
+ok('mở được phần làm và chấm', (await p.locator('input[type=range]').count())===5);
+const truocGiai=await p.locator('main').innerText();
+ok('chưa bấm thì CHƯA hiện đáp án', !/Dạng này kiểm gì/i.test(truocGiai));
+await p.getByRole('button',{name:'Xem đáp án và phân tích'}).click();
+await p.waitForTimeout(500);
+const sauGiai=await p.locator('main').innerText();
+ok('bấm rồi thì hiện bộ giải', /Dạng này kiểm gì/i.test(sauGiai));
+ok('bộ giải có phân tích theo phần', /Phân tích theo phần/i.test(sauGiai));
+await p.getByRole('button',{name:'Lưu lần làm này vào hồ sơ'}).click();
+await p.waitForTimeout(500);
+ok('lưu được vào hồ sơ', /Đã lưu/.test(await p.locator('main').innerText()));
+
+await tab('Hồ sơ của tôi');
+await p.waitForTimeout(700);
+const hs=await p.locator('main').innerText();
+ok('hồ sơ nhận được bản ghi vừa lưu', /lần làm/i.test(hs) && !/Hồ sơ đang trống/i.test(hs));
+ok('hồ sơ hiện lịch sử', /Lịch sử/i.test(hs));
+
+// 11. Bộ phiếu chuyên đề: bảy phiếu và phiếu giải mở theo yêu cầu
+await tab('Bộ phiếu chuyên đề');
+await p.waitForTimeout(700);
+const cd=await p.locator('main').innerText();
+ok('chuyên đề có đủ bảy loại phiếu', (await p.getByRole('button',{name:'Xem đáp án và bảng phân tích'}).count())===7);
+// Không so bằng cụm "bảng phân tích chuyên sâu": cụm đó có sẵn trong phần
+// giới thiệu của tab. Cột "Hay nhầm với" chỉ tồn tại trong chính bảng.
+ok('chưa mở thì chưa có bảng phân tích', !/Hay nhầm với/i.test(cd));
+await p.getByRole('button',{name:'Xem đáp án và bảng phân tích'}).first().click();
+await p.waitForTimeout(400);
+const cd2=await p.locator('main').innerText();
+ok('mở phiếu giải thì hiện bảng phân tích chuyên sâu', /Bảng phân tích chuyên sâu/i.test(cd2));
+ok('bảng phân tích có cột hay nhầm với', /Hay nhầm với/i.test(cd2));
+
 ok('không có lỗi trên bảng điều khiển', errs.length===0, errs.slice(0,2).join(' | '));
 console.log(`\n  ${bad===0?'ĐẠT':`HỎNG — ${bad} lỗi`}\n`);
 await b.close();

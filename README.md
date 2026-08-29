@@ -497,6 +497,78 @@ phiếu đạt ngưỡng. Chỉ xét trung bình thì một chuỗi `95, 92, 90,
 trung bình 92,4% — nhưng chỉ 87,5% số phiếu đạt, và một phiếu tệ bị che mất. Hai điều
 kiện cùng lúc chặn đúng chỗ đó.
 
+## 🗂️ Bộ phiếu theo chuyên đề — 80 chuyên đề × 7 loại
+
+Mỗi chuyên đề có **bộ bảy phiếu** đi đúng thứ tự học một chuyên đề từ đầu tới lúc thi
+được, và **mỗi phiếu có một phiếu giải riêng** đi kèm.
+
+| # | Phiếu | Mục đích | Phút |
+|---|---|---|---|
+| 1 | **LÝ THUYẾT** | Hiểu bản chất trước khi chạm vào câu hỏi nào | 25 |
+| 2 | **DẠNG BÀI + ĐỌC VỊ** | Nhìn một câu là biết ngay nó hỏi gì | 30 |
+| 3 | **KỸ NĂNG, PHƯƠNG PHÁP** | Biến quy trình thành thói quen tay | 35 |
+| 4 | **LUYỆN NÂNG CAO** | Gặp câu khó và câu bẫy trong điều kiện an toàn | 40 |
+| 5 | **ÔN THI** | Trộn dạng, bấm giờ, chưa tính điểm | 30 |
+| 6 | **THI** | Đo thật, đúng điều kiện, ghi vào hồ sơ | 30 |
+| 7 | **ÔN CHẮC CHUYÊN ĐỀ** | Chốt lại để không rơi rụng sau ba tháng | 15 |
+
+**560 phiếu + 560 phiếu giải = 1.120 phiếu**, tổng **273 giờ**.
+
+**Thứ tự không đảo được.** Nhảy thẳng vào phiếu 5 và 6 là cách học phổ biến nhất và
+cũng kém hiệu quả nhất: luyện đề khi chưa đọc vị được dạng bài thì mỗi câu là một câu
+mới, và không có gì tích luỹ. Mỗi loại phiếu ghi rõ **chặn khi nào**.
+
+## 🔑 Bộ giải đề và bảng phân tích chuyên sâu
+
+**80 bộ giải · 240 điểm kiến thức · 320 bước nghĩ · 240 bẫy.** Mỗi bộ trả lời bốn câu
+hỏi mà một học viên vừa làm sai thật sự cần:
+
+1. Dạng này **kiểm** cái gì — điểm kiến thức, không phải chủ đề chung chung
+2. **Nghĩ** thế nào cho đúng — quy trình từng bước, áp được cho mọi câu
+3. **Sai** thì sai ở đâu — ba lựa chọn sai hay gặp, kèm chỗ lập luận gãy
+4. **Làm gì tiếp** — bài giảng nào, bài luyện nào
+
+**Bảng phân tích chuyên sâu** trong phiếu giải: mỗi điểm kiến thức nói rõ *bản chất là
+gì* và *hay bị nhầm với cái gì*. Đáp án cho biết mình sai; bảng phân tích cho biết mình
+sai **vì đâu** — và chỉ cái thứ hai mới sửa được cho lần sau.
+
+**Hai luật, có bài kiểm giữ:**
+
+- **Chỉ mở đáp án SAU khi đã nộp.** Xem trước thì học viên đọc lời giải rồi tưởng mình
+  đã hiểu — đó là cảm giác quen thuộc, không phải năng lực. Bài kiểm giao diện xác nhận
+  bảng phân tích không xuất hiện trước khi bấm.
+- **240 lời giải thích "sai ở đâu" đều khác nhau.** Chép một lời giải cho nhiều dạng là
+  rỗng ruột trá hình, nên có phép kiểm đếm trùng lặp.
+
+*Vì sao không viết sẵn 40.000 lời giải riêng:* hai nghìn phiếu × hai mươi câu là bốn
+mươi nghìn câu. Viết riêng từng lời giải thì mỗi cái chỉ dùng được đúng một lần và phần
+lớn sẽ lặp nhau. Cái **thật sự chuyển giao được** là quy trình nghĩ và ba bẫy của dạng
+bài — thứ dùng lại được ở mọi câu cùng dạng, kể cả câu chưa gặp.
+
+## 🗃️ Hồ sơ học viên và lộ trình cá nhân hoá
+
+Mỗi lần làm phiếu để lại một bản ghi. Bản ghi tích luỹ thành hồ sơ, và hồ sơ sinh ra lộ
+trình cá nhân hoá **bằng phép tính trên số liệu thật**.
+
+Hồ sơ phân tích: xu hướng, trung bình, tỉ lệ đạt, chuỗi ngày, mạnh yếu **theo kỹ năng**
+và **theo phần của phiếu**, cùng danh sách cảnh báo.
+
+**Ba quyết định thiết kế, mỗi cái có bài kiểm:**
+
+1. **Hồ sơ nằm trên máy người học, không gửi đi đâu.** Bản máy tính lưu trong két đã mã
+   hoá; bản web lưu trong bộ nhớ trình duyệt. Đổi máy là mất hồ sơ — điều đó được nói rõ
+   chứ không giấu.
+2. **Chỉ kết luận khi đủ dữ liệu.** Dưới ba lần làm thì báo "chưa đủ dữ liệu", không đoán
+   xu hướng. Dao động dưới 3 điểm phần trăm gọi là *đi ngang* — dao động tự nhiên giữa
+   các lần lớn hơn mức đó, nên gọi là lên hay xuống ở dưới ngưỡng ấy là **đọc nhiễu thành
+   tín hiệu**.
+3. **Mỗi việc đề nghị đều kèm bằng chứng bằng số.** Ví dụ: *"Dồn hai tuần vào kỹ năng
+   Nghe — Nghe trung bình 76% qua 3 lần, thấp nhất trong 2 kỹ năng đã làm."* Lời khuyên
+   không có bằng chứng thì người học không có cách nào kiểm.
+
+Lộ trình tối đa **ba việc**, đúng theo luật của kho giải pháp: kê nhiều hơn ba là cách
+chắc chắn để không việc nào được làm đủ liều.
+
 ## 📚 Hai nghìn bài giảng chuyên sâu
 
 **4 trụ × 20 chủ đề × 25 cấp độ = 2.000 bài**, tổng **613 giờ** nội dung.
