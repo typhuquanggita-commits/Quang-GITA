@@ -636,3 +636,83 @@ export interface AccentContrast {
   teachAt: string;
   matters: string;
 }
+
+/* ==========================================================================
+   HỆ KIỂM ĐỊNH & CHỨNG NHẬN — học viên và nhân sự
+   ========================================================================== */
+
+export interface Axis {
+  id: string;
+  no: number;
+  name: string;
+  what: string;
+  measuredBy: string;
+  failLooks: string;
+}
+
+export interface ExamTier {
+  no: number;
+  name: string;
+  millerLevel: string;
+  format: string;
+  duration: string;
+  scores: string;
+  cannotFake: string;
+}
+
+export interface RoleLevel {
+  no: number;
+  name: string;
+  epithet: string;
+  canDo: string;
+  cannotYet: string;
+  passMark: number;
+  tiersRequired: number[];
+}
+
+export interface RoleTrack {
+  id: string;
+  name: string;
+  who: string;
+  purpose: string;
+  color: string;
+  weights: {axis: string; pct: number}[];
+  levels: RoleLevel[];
+  cadence: string;
+  recertify: string;
+}
+
+export interface GraduationExam {
+  id: string;
+  scope: 'vòng' | 'tầng';
+  ref: string;
+  name: string;
+  when: string;
+  duration: string;
+  sections: {no: number; name: string; minutes: number; task: string; scores: string}[];
+  passMark: string;
+  ifFail: string;
+  proctoring: string;
+}
+
+export interface TrainingModule {
+  no: number;
+  name: string;
+  minutes: number;
+  format: string;
+  outcome: string;
+  gate: string;
+}
+
+export interface TrainingCourse {
+  id: string;
+  role: string;
+  level: string;
+  name: string;
+  totalHours: number;
+  cadence: string;
+  promise: string;
+  modules: TrainingModule[];
+  certification: string;
+  autoRemediation: string;
+}

@@ -46,6 +46,38 @@ nghỉ — mỗi mục có câu chỉ đạo cho người đọc) và **bảng �
 8 đặc điểm: rhoticity, nhóm BATH, /t/ chớp, nhóm LOT, yod-dropping, trọng âm, ngữ điệu,
 từ vựng — mỗi đặc điểm ghi rõ dạy ở cấp độ nào và vì sao quan trọng.
 
+## 📋 Bộ đề tốt nghiệp học viên
+
+**9 bài thi**: 4 cuối vòng 21 ngày + 5 cuối tầng của tháp học tập. Mọi tiêu chí đạt
+là một **con số quan sát được** — độ trễ tính bằng giây, độ chính xác tính bằng phần
+trăm, số từ đệm mỗi phút, số câu không lỗi. Không có tiêu chí nào là "nói khá trôi chảy".
+
+Mỗi bài có 4–5 phần, ghi rõ nội dung, thời lượng, ngưỡng đạt, điều kiện đậu, phương án
+khi chưa đạt, và cách coi thi. Bài tốt nghiệp Tầng 5 là bài duy nhất chấm bằng **kết quả
+của người khác** — người bạn kèm có lên cấp không, nhóm bạn dẫn có ai lên cấp không.
+
+## 🏆 Kiểm định nhân sự & đào tạo tự động
+
+**8 trục × 5 tầng bài kiểm tra × 6 vai × 5 bậc.**
+
+Năm tầng dựng theo **tháp Miller** — chuẩn quốc tế cho đánh giá năng lực nghề:
+
+| Tầng | Miller | Diễn được không |
+|------|--------|-----------------|
+| 1 · BIẾT | Knows | Học tủ được — chỉ là tầng sàng lọc |
+| 2 · BIẾT CÁCH | Knows how | Khó hơn, phần giải thích lộ người chọn mò |
+| 3 · PHÂN TÍCH CA | Knows how sâu | Lộ ngay ai kê cùng lộ trình cho 3 hồ sơ khác nhau |
+| 4 · MÔ PHỎNG | Shows how | Không diễn được — tỉ lệ nói đo bằng máy |
+| 5 · THỰC CHIẾN | Does | Chấm bằng **kết quả của người khác** |
+
+Sáu vai — Học viên · Phụ huynh · CTV · Tư vấn · Coach · Giáo viên — mỗi vai có trọng số
+trục riêng và 5 bậc năng lực. **Bậc 3 trở lên bắt buộc có tầng 4; bậc 4 trở lên bắt buộc
+có tầng 5.** Không ai được cấp bậc hành nghề chỉ bằng làm bài trắc nghiệm.
+
+**4 khoá đào tạo tự động** (CTV 12h · Tư vấn 24h · Coach 30h · Giáo viên 36h), mỗi mô-đun
+có cổng chặn, và hệ thống **tự chỉ định mô-đun bù đúng trục bị trượt** thay vì bắt học
+lại từ đầu.
+
 ## Tầng vận hành học viện
 
 Bốn tab dành cho người **triển khai** hệ thống cho học viên, tách khỏi phần dành cho người học:
@@ -244,6 +276,8 @@ data/                  Toàn bộ nội dung hệ thống, tách khỏi giao di�
   brand.ts             Hệ thống nhận diện — màu, chữ, khoảng cách, luật logo
   sprint.ts            Chu kỳ 21/90 ngày + 5 cơ chế học có bằng chứng
   voices.ts            Dàn 10 giọng · chuẩn MC · đối chiếu Anh-Anh/Anh-Mỹ
+  certify.ts           8 trục · 5 tầng Miller · 6 vai × 5 bậc · quy tắc chấm
+  exams.ts             9 bài thi tốt nghiệp + 4 khoá đào tạo tự động
 
 content/
   podcast-scripts.json Kịch bản podcast — nguồn dùng chung cho app và công cụ dựng

@@ -24,6 +24,8 @@ import {Podcast} from './components/engwill/Podcast';
 import {Brand} from './components/engwill/Brand';
 import {Sprint} from './components/engwill/Sprint';
 import {Casting} from './components/engwill/Casting';
+import {Exams} from './components/engwill/Exams';
+import {Certify} from './components/engwill/Certify';
 
 interface Nav {
   id: string;
@@ -79,6 +81,14 @@ const NAV: Nav[] = [
     hint: '12 cột mốc / 36 tháng',
     group: 'learner',
     render: () => <Roadmap />,
+  },
+  {
+    id: 'exams',
+    icon: '📋',
+    label: 'Thi tốt nghiệp',
+    hint: '9 bài · đo bằng số',
+    group: 'learner',
+    render: () => <Exams />,
   },
   {
     id: 'methods',
@@ -175,6 +185,14 @@ const NAV: Nav[] = [
     hint: 'Engwill Radio · 6 tập',
     group: 'academy',
     render: () => <Podcast />,
+  },
+  {
+    id: 'certify',
+    icon: '🏆',
+    label: 'Kiểm định nhân sự',
+    hint: '6 vai · 5 bậc · 4 khoá nghề',
+    group: 'academy',
+    render: () => <Certify />,
   },
   {
     id: 'casting',
