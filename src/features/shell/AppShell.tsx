@@ -26,6 +26,7 @@ import {
   IconMenu,
   IconRefresh,
   IconSettings,
+  IconSparkle,
   IconTarget,
 } from '../../components/ui/icons.tsx';
 import { Dashboard } from '../dashboard/Dashboard.tsx';
@@ -45,6 +46,9 @@ const VocabTrainer = lazy(() =>
 );
 const StudyPlanView = lazy(() =>
   import('../plan/StudyPlanView.tsx').then((m) => ({ default: m.StudyPlanView })),
+);
+const GitaHome = lazy(() =>
+  import('../gita/GitaHome.tsx').then((m) => ({ default: m.GitaHome })),
 );
 const ExamPlayer = lazy(() =>
   import('../exam/ExamPlayer.tsx').then((m) => ({ default: m.ExamPlayer })),
@@ -163,6 +167,7 @@ function Shell(): React.ReactElement {
         { route: { name: 'practice' }, label: t('nav.practice'), icon: <IconLightning size={18} /> },
         { route: { name: 'vocab' }, label: t('nav.vocab'), icon: <IconCards size={18} /> },
         { route: { name: 'plan' }, label: t('nav.plan'), icon: <IconCalendar size={18} /> },
+        { route: { name: 'gita' }, label: t('nav.gita'), icon: <IconSparkle size={18} /> },
       ],
     },
     {
@@ -354,6 +359,8 @@ function RouteView({
       return <VocabTrainer />;
     case 'plan':
       return <StudyPlanView />;
+    case 'gita':
+      return <GitaHome />;
     case 'tests':
       return <TestCenter navigate={navigate} />;
     case 'result':

@@ -24,6 +24,7 @@ import { dueCards } from '../../engine/srs.ts';
 import { taskLabel, tasksForDate } from '../../engine/studyPlan.ts';
 import { selectScoredAttempts } from '../../state/store.tsx';
 import { StudentLevelCard } from '../console/StudentLevelCard.tsx';
+import { GitaCard } from '../gita/GitaCard.tsx';
 import { Badge, Button, Card, Empty, Ring } from '../../components/ui/primitives.tsx';
 import { LineChart, MasteryBars } from '../../components/charts/charts.tsx';
 import {
@@ -224,6 +225,8 @@ export function Dashboard({ navigate }: { navigate(route: Route): void }): React
         </Card>
 
         <StudentLevelCard total={headline} />
+
+        <GitaCard navigate={navigate} />
       </div>
 
       {/* ---- Trend and skills ---- */}

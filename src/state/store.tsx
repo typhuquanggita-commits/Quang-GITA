@@ -50,6 +50,9 @@ import {
   type ClassRoom,
   type OrgState,
 } from '../auth/model.ts';
+import type { HabitEntry } from '../gita/habits.ts';
+import type { AbsorptionTier, PractitionerLevel } from '../gita/framework.ts';
+import { TIERS } from '../gita/framework.ts';
 import {
   can,
   levelForScore,
@@ -101,6 +104,16 @@ function initialState(): AppState {
     bookmarks: [],
     activity: {},
     org: seedOrg('', ''),
+    gita: {
+      // A new learner starts at tier 1, whose habits are the only two that
+      // matter before attendance is real.
+      activeHabitIds: [...TIERS[1].habitIds],
+      habitLog: [],
+      selfReport: {},
+      observedIndicators: [],
+      practitionerLevel: null,
+      tierOverride: null,
+    },
   };
 }
 
@@ -142,7 +155,14 @@ export type Action =
   | { type: 'org/upsertAssignment'; assignment: Assignment }
   | { type: 'org/removeAssignment'; assignmentId: string }
   | { type: 'org/submitAssignment'; assignmentId: string; accountId: string }
-  | { type: 'org/audit'; entry: AuditEntry };
+  | { type: 'org/audit'; entry: AuditEntry }
+  | { type: 'gita/logHabit'; entry: HabitEntry }
+  | { type: 'gita/setActiveHabits'; habitIds: string[] }
+  | { type: 'gita/toggleHabit'; habitId: string }
+  | { type: 'gita/selfReport'; dimensionId: string; value: 1 | 2 | 3 | 4 | 5 }
+  | { type: 'gita/toggleIndicator'; indicatorId: string }
+  | { type: 'gita/setPractitionerLevel'; level: PractitionerLevel | null }
+  | { type: 'gita/setTierOverride'; tier: AbsorptionTier | null };
 
 /* ------------------------------------------------------------------ */
 /* Reducer                                                             */
@@ -479,6 +499,65 @@ export function reducer(state: AppState, action: Action): AppState {
         org: { ...state.org, audit: [action.entry, ...state.org.audit].slice(0, 1000) },
       };
 
+    /* ---------------- GITA ---------------- */
+
+    case 'gita/logHabit': {
+      // One entry per habit per day: logging the same habit twice records a
+      // correction, not a second occurrence, so adherence cannot be inflated
+      // by tapping the same button repeatedly.
+      const rest = state.gita.habitLog.filter(
+        (entry) => !(entry.habitId === action.entry.habitId && entry.date === action.entry.date),
+      );
+      return {
+        ...state,
+        gita: { ...state.gita, habitLog: [...rest, action.entry].slice(-2000) },
+      };
+    }
+
+    case 'gita/setActiveHabits':
+      return { ...state, gita: { ...state.gita, activeHabitIds: action.habitIds } };
+
+    case 'gita/toggleHabit': {
+      const active = state.gita.activeHabitIds;
+      return {
+        ...state,
+        gita: {
+          ...state.gita,
+          activeHabitIds: active.includes(action.habitId)
+            ? active.filter((id) => id !== action.habitId)
+            : [...active, action.habitId],
+        },
+      };
+    }
+
+    case 'gita/selfReport':
+      return {
+        ...state,
+        gita: {
+          ...state.gita,
+          selfReport: { ...state.gita.selfReport, [action.dimensionId]: action.value },
+        },
+      };
+
+    case 'gita/toggleIndicator': {
+      const observed = state.gita.observedIndicators;
+      return {
+        ...state,
+        gita: {
+          ...state.gita,
+          observedIndicators: observed.includes(action.indicatorId)
+            ? observed.filter((id) => id !== action.indicatorId)
+            : [...observed, action.indicatorId],
+        },
+      };
+    }
+
+    case 'gita/setPractitionerLevel':
+      return { ...state, gita: { ...state.gita, practitionerLevel: action.level } };
+
+    case 'gita/setTierOverride':
+      return { ...state, gita: { ...state.gita, tierOverride: action.tier } };
+
     default:
       return state;
   }
@@ -529,6 +608,7 @@ function loadInitial(): AppState {
     profile: { ...base.profile, ...((migrated as Partial<AppState>).profile ?? {}) },
     preferences: { ...base.preferences, ...((migrated as Partial<AppState>).preferences ?? {}) },
     sectionAbility: { ...base.sectionAbility, ...((migrated as Partial<AppState>).sectionAbility ?? {}) },
+    gita: { ...base.gita, ...((migrated as Partial<AppState>).gita ?? {}) },
     version: SCHEMA_VERSION,
   };
 }
@@ -596,6 +676,7 @@ export function StoreProvider({ children }: { children: React.ReactNode }): Reac
         ...(migrated as Partial<AppState>),
         profile: { ...base.profile, ...((migrated as Partial<AppState>).profile ?? {}) },
         preferences: { ...base.preferences, ...((migrated as Partial<AppState>).preferences ?? {}) },
+        gita: { ...base.gita, ...((migrated as Partial<AppState>).gita ?? {}) },
         version: SCHEMA_VERSION,
       } as AppState,
     });

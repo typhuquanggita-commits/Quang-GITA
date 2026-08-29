@@ -347,6 +347,28 @@ export interface StudyPlan {
   tasks: StudyPlanTask[];
 }
 
+/**
+ * Learner-side state for the GITA training model.
+ *
+ * Deliberately holds only what cannot be derived. Pillar scores and the
+ * absorption tier are recomputed from evidence on every read, so they can
+ * never drift away from what the learner has actually done.
+ */
+export interface GitaState {
+  /** Habit ids the learner has currently taken on. */
+  activeHabitIds: string[];
+  /** One entry per habit occurrence, kept as a flat log. */
+  habitLog: import('./gita/habits.ts').HabitEntry[];
+  /** Self-ratings, 1-5, keyed by dimension id. */
+  selfReport: Record<string, 1 | 2 | 3 | 4 | 5>;
+  /** Transfer indicator ids a coach or learner has marked as observed. */
+  observedIndicators: string[];
+  /** Practitioner level, when this account delivers the model to others. */
+  practitionerLevel: import('./gita/framework.ts').PractitionerLevel | null;
+  /** A tier set manually by a coach, overriding the evidence-based placement. */
+  tierOverride: import('./gita/framework.ts').AbsorptionTier | null;
+}
+
 export type ThemeMode = 'light' | 'dark' | 'system' | 'high-contrast';
 export type Locale = 'vi' | 'en';
 
@@ -379,6 +401,8 @@ export interface AppState {
   version: number;
   /** Accounts, classes, assignments, and the audit log. */
   org: import('./auth/model.ts').OrgState;
+  /** The GITA training layer: habits, self-report, and transfer evidence. */
+  gita: GitaState;
   profile: Profile;
   preferences: Preferences;
   /** Per-skill ability estimates driving the adaptive practice engine. */
