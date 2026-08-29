@@ -36,3 +36,6 @@ audio/casting/
 
 # Sản phẩm đóng gói — quá lớn để đưa vào kho mã, dựng lại bằng npm run pack:win
 release/
+
+# Bản xuất một-tệp để đăng Artifact — dựng lại bằng npm run build:single
+engwill365-artifact.html

@@ -15,7 +15,8 @@
     "test": "npm run test:vault && npm run test:desktop",
     "test:web": "node tools/kiem-ban-web.mjs",
     "audit": "npx tsc --noEmit && npm run build && python3 tools/kiem-tham-chieu.py && python3 tools/kiem-chinh-ta.py",
-    "test:voice": "python3 tools/khop-giong.test.py"
+    "test:voice": "python3 tools/khop-giong.test.py",
+    "test:ui": "node tools/kiem-tuong-tac.mjs"
   },
   "devDependencies": {
     "@tailwindcss/browser": "^4.1.10",
@@ -25,11 +26,13 @@
     "electron": "^44.0.0",
     "electron-builder": "^26.15.3",
     "playwright": "^1.62.1",
+    "preact": "^10.29.8",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "tailwindcss": "^4.3.3",
     "typescript": "~5.8.2",
-    "vite": "^6.2.0"
+    "vite": "^6.2.0",
+    "vite-plugin-singlefile": "^2.3.3"
   },
   "description": "ENGWILL365 — Hệ thống học tiếng Anh từ số 0 đến IELTS 8.0 trong 36 tháng",
   "main": "desktop/main.cjs",
