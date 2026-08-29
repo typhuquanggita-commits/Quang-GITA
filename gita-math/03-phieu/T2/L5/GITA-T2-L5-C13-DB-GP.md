@@ -386,9 +386,9 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | D.5 | Lớp có 40 học sinh, 10 em giỏi. Học sinh giỏi chiếm bao nhiêu phần trăm? | 25% |
 | E.1 | Lớp có 40 học sinh, 10 em giỏi. Học sinh giỏi chiếm bao nhiêu phần trăm? | 25% |
 | E.2 | Tổ Một trồng 60 cây, tổ Hai bằng 2 phần 3 tổ Một. Tổ Hai trồng mấy cây? | 40 cây |
-| E.3 | So sánh: 3 phần 5 … 3 phần 7 | &gt; |
+| E.3 | So sánh: 3 phần 5 … 3 phần 7 | > |
 | E.4 | Bảng: Toán 10, Văn 6, Anh 4. Trung bình mỗi môn bao nhiêu bạn? | 6,67 bạn |
-| E.5 | So sánh: 5 phần 6 … 7 phần 8 | &lt; |
+| E.5 | So sánh: 5 phần 6 … 7 phần 8 | < |
 
 ---
 

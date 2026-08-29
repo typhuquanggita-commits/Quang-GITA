@@ -33,7 +33,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài A.1** — a) 232 675 · b) 692 376 · c) 935 884 · d) 788 964 · e) 156 973 · f) 170 686
 - **Bài A.2** — a) 524 000 · b) 337 000 · c) 462 360 · d) 748 690 · e) 294 000 · f) 409 080 · g) 355 300
 - **Bài A.3** — a) số lẻ · b) số lẻ · c) 297 396 · d) 975 339
-- **Bài A.4** — a) &gt; · b) &gt; · c) &gt; · d) &lt; · e) &lt; · f) &lt; · g) &lt; · h) &lt;
+- **Bài A.4** — a) > · b) > · c) > · d) < · e) < · f) < · g) < · h) <
 - **Bài A.5** — a) 6 chữ số, tổng 23 · b) 6 chữ số, tổng 29 · c) 6 chữ số, tổng 23 · d) 6 chữ số, tổng 27 · e) 6 chữ số, tổng 39 · f) 6 chữ số, tổng 32
 
 **Phần B**
@@ -92,7 +92,7 @@ Số chẵn là số có chữ số tận cùng 0, 2, 4, 6, 8; số lẻ tận c
 
 *Điểm chốt:* Chỉ cần nhìn **chữ số tận cùng** là biết chẵn hay lẻ, dù số dài bao nhiêu.
 
-### Bài A.4 — Điền dấu &lt;, &gt;, = thích hợp
+### Bài A.4 — Điền dấu <, >, = thích hợp
 
 So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 
@@ -235,7 +235,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | A.1 | Viết số từ dạng tổng theo hàng | Cấu tạo thập phân của số tự nhiên | Tổng gồm các số tròn chục, tròn trăm, tròn nghìn… | Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết | Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số. | 232 675 · 692 376 · 935 884 · 788 964… |
 | A.2 | Làm tròn số tự nhiên | Quy tắc làm tròn, giá trị hàng | Cụm từ “làm tròn đến hàng …” | Gạch ngăn hàng → xét chữ số liền sau → giữ nguyên hoặc thêm 1 | Che toàn bộ phần đuôi sau nét gạch, chỉ để lộ đúng một chữ số. | 524 000 · 337 000 · 462 360 · 748 690… |
 | A.3 | Nhận biết chẵn – lẻ và số liền kề | Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2 | Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” | Xét chữ số tận cùng; cộng hoặc trừ 1 đơn vị | Che hết các chữ số, chỉ để lộ chữ số cuối. | số lẻ · số lẻ · 297 396 · 975 339 |
-| A.4 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | &gt; · &gt; · &gt; · &lt;… |
+| A.4 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | > · > · > · <… |
 | A.5 | Đếm chữ số, tính tổng chữ số | Cấu tạo số, tổng chữ số | Yêu cầu “có mấy chữ số”, “tổng các chữ số” | Tách lớp để đếm; cộng rời từng chữ số | Ghép cặp các chữ số cộng lại tròn 10 rồi cộng nhanh. | 6 chữ số, tổng 23 · 6 chữ số, tổng 29 · 6 chữ số, tổng 23 · 6 chữ số, tổng 27… |
 | B.1 | Định vị chương trong hệ thống | Tên chương, nhóm chuyên đề, số dạng bài | Phần đầu phiếu ghi rõ tên cụm và nhóm chuyên đề | Đọc phần đầu phiếu rồi trả lời theo đúng tên gọi | Ghi tên chương ra góc vở, mỗi lần mở vở là đọc lại một lần. | Chia có dư, số nguyên tố và chữ số tận cùng · A — Số học & Cấu tạo số · 5 · ở mọi bài thuộc số học & cấu tạo số, vì các chương sau đều dùng lại nền này… |
 | B.2 | Liệt kê dạng bài của chương | Danh mục dạng bài | Bảng dạng bài ở phiếu Dạng bài & Đọc vị của cùng cụm | Chép theo bảng, giữ nguyên thứ tự | Học thuộc số lượng dạng bài trước, tên từng dạng sau. | Bài toán về số và chữ số: viết thêm, xoá bớt chữ số · Bài toán chia có dư và ứng dụng · Số nguyên tố, hợp số — làm quen · Bài toán về chữ số tận cùng của lũy thừa… |
@@ -367,7 +367,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | A.1 | Viết số gồm tổng: 30 000 + 400 + 7 | 30 407 |
 | A.2 | Làm tròn 4 762 đến hàng trăm. | 4 800 |
 | A.3 | Số liền sau của 108 839 là số nào? | 108 840 |
-| A.4 | Điền dấu: 709 898 … 709 899 | &lt; |
+| A.4 | Điền dấu: 709 898 … 709 899 | < |
 | A.5 | Số 40 506 có mấy chữ số và tổng các chữ số bằng bao nhiêu? | 5 chữ số, tổng 15 |
 | B.1 | Chương “Chia có dư, số nguyên tố và chữ số tận cùng” thuộc nhóm chuyên đề nào? | A — Số học & Cấu tạo số |
 | B.2 | Chương này có mấy dạng bài chính? | 5 |

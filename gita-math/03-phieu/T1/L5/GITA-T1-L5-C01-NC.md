@@ -54,7 +54,7 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ### Bài 1. (3 điểm) So sánh hai phân số
 
-Điền dấu &lt;, &gt;, = thích hợp.
+Điền dấu <, >, = thích hợp.
 
 a) 3 phần 4 … 9 phần 7
 b) 6 phần 5 … 1 phần 10
@@ -65,7 +65,7 @@ f) 1 phần 3 … 5 phần 3
 g) 6 phần 7 … 3 phần 7
 h) 3 phần 4 … 3 phần 8
 
-### Bài 2. (3 điểm) Điền dấu &lt;, &gt;, = thích hợp
+### Bài 2. (3 điểm) Điền dấu <, >, = thích hợp
 
 Điền dấu thích hợp vào chỗ chấm.
 
@@ -116,7 +116,7 @@ e) Rút gọn phân số 14 phần 22.
 
 ### Bài 1. (4 điểm) So sánh hai số đo khác đơn vị
 
-Điền dấu &lt;, &gt;, = thích hợp.
+Điền dấu <, >, = thích hợp.
 
 a) 50 cm … 6 428 dam
 b) 33 hg … 6 020 tấn
@@ -182,7 +182,7 @@ d) 1 phần 3 + 11 phần 18 + 1 phần 18
 
 ### Bài 2. (5 điểm) So sánh hai biểu thức mà không cần tính
 
-Điền dấu &lt;, &gt;, = và giải thích ngắn.
+Điền dấu <, >, = và giải thích ngắn.
 
 a) 854 × 22 … 565 × 22
 b) 339 × 12 … 339 × 13
@@ -336,13 +336,13 @@ f) 766 × 768 … 767 × 767
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài I.1
-**Đáp số:** a) &lt; · b) &gt; · c) &gt; · d) &gt; · e) &lt; · f) &lt; · g) &gt; · h) &gt;
+**Đáp số:** a) < · b) > · c) > · d) > · e) < · f) < · g) > · h) >
 **Hướng giải:** Cùng mẫu số: phân số nào có tử số lớn hơn thì lớn hơn. Cùng tử số: phân số nào có mẫu số **bé** hơn thì lớn hơn. Khác cả tử lẫn mẫu: quy đồng mẫu số rồi so tử số.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Cùng tử số thì **mẫu bé hơn là phân số lớn hơn** — ngược với trực giác.
 **Lỗi thường gặp:** Thấy mẫu số lớn thì kết luận phân số lớn. Phòng: Nghĩ tới chiếc bánh: chia càng nhiều phần thì mỗi phần càng bé.
 
 ### Bài I.2
-**Đáp số:** a) &gt; · b) &gt; · c) &lt; · d) &lt; · e) &lt; · f) &lt;
+**Đáp số:** a) > · b) > · c) < · d) < · e) < · f) <
 **Hướng giải:** So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Đếm số chữ số **trước**, chỉ khi bằng nhau mới so từng hàng.
 **Lỗi thường gặp:** So từ hàng đơn vị (phải sang trái) nên kết luận sai. Phòng: Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái.
@@ -354,7 +354,7 @@ f) 766 × 768 … 767 × 767
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
 
 ### Bài I.4
-**Đáp số:** a) &gt; · b) 0,9 · c) 2 · d) 0,98 · e) 6 · f) &lt; · g) 0,616
+**Đáp số:** a) > · b) 0,9 · c) 2 · d) 0,98 · e) 6 · f) < · g) 0,616
 **Hướng giải:** Sau dấu phẩy lần lượt là hàng phần mười, phần trăm, phần nghìn. So sánh số thập phân: so phần nguyên trước; phần nguyên bằng nhau thì so lần lượt hàng phần mười, phần trăm, phần nghìn. Phân số có mẫu là 10, 100, 1 000 đổi được thẳng sang số thập phân.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: So sánh theo **hàng**, không so theo số chữ số sau dấu phẩy.
 **Lỗi thường gặp:** Cho rằng số có nhiều chữ số sau dấu phẩy hơn thì lớn hơn. Phòng: Viết thêm chữ số 0 vào cuối để hai số có cùng số chữ số thập phân rồi mới so.
@@ -366,7 +366,7 @@ f) 766 × 768 … 767 × 767
 **Lỗi thường gặp:** Chỉ chia tử số hoặc chỉ chia mẫu số. Phòng: Viết phép chia cho cả hai dòng, kiểm tra lại bằng cách nhân ngược.
 
 ### Bài II.1
-**Đáp số:** a) &lt; · b) &lt; · c) &lt; · d) &gt; · e) &lt; · f) &lt;
+**Đáp số:** a) < · b) < · c) < · d) > · e) < · f) <
 **Hướng giải:** Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.
@@ -402,7 +402,7 @@ f) 766 × 768 … 767 × 767
 **Lỗi thường gặp:** Quy đồng ngay lập tức mà không quan sát, làm dài dòng. Phòng: Cộng nhẩm các tử số trước rồi so với mẫu số.
 
 ### Bài III.2
-**Đáp số:** a) &gt; · b) &lt; · c) &lt; · d) &gt;
+**Đáp số:** a) > · b) < · c) < · d) >
 **Hướng giải:** Khi hai biểu thức có phần giống nhau, chỉ cần so sánh phần khác nhau: cùng cộng thêm một số thì số nào lớn hơn vẫn lớn hơn; cùng nhân với một số khác 0 cũng vậy.
 **Nhãn tư duy:** TD5, TD2. Điểm chốt: Che phần **giống nhau** đi, chỉ so phần khác nhau.
 **Lỗi thường gặp:** Tính hết cả hai vế, vừa lâu vừa dễ sai. Phòng: Dùng bút gạch bỏ phần giống nhau ở hai vế trước khi so sánh.
@@ -468,7 +468,7 @@ f) 766 × 768 … 767 × 767
 **Gợi ý 3 tầng:** (1) Phần tô màu là hiệu của những hình nào? — (2) Kích thước của hình lớn suy từ đâu? — (3) Tính từng diện tích rồi trừ.
 
 ### Bài V.2
-**Đáp số:** a) &gt; · b) &lt; · c) &gt; · d) &lt; · e) &gt; · f) &lt;
+**Đáp số:** a) > · b) < · c) > · d) < · e) > · f) <
 **Hướng giải:** **Phần bù tới 1:** hai phân số đều thiếu một chút nữa thì bằng 1; phân số nào có phần bù **bé hơn** thì lớn hơn. **Phân số trung gian:** chọn một phân số dễ so (thường là 1 phần 2 hoặc 1 phần 3) rồi so mỗi phân số với nó.
 **Nhãn tư duy:** TD6, TD5. Điểm chốt: Phần bù **bé hơn** nghĩa là phân số **lớn hơn** — dễ nhớ nhầm chiều.
 **Lỗi thường gặp:** So phần bù rồi kết luận cùng chiều với phần bù. Phòng: Nghĩ tới chiếc bánh: thiếu ít hơn thì phần đang có nhiều hơn.
@@ -489,7 +489,7 @@ f) 766 × 768 … 767 × 767
 **Gợi ý 3 tầng:** (1) Giá sau lần tăng thứ nhất là bao nhiêu? — (2) Lần giảm thứ hai tính phần trăm trên giá nào? — (3) So sánh giá cuối với giá ban đầu.
 
 ### Bài V.5
-**Đáp số:** a) &lt; · b) 1 600 · c) &lt; · d) 1 296 · e) 20 · f) &lt;
+**Đáp số:** a) < · b) 1 600 · c) < · d) 1 296 · e) 20 · f) <
 **Hướng giải:** Khi hai tích có các thừa số gần nhau, viết chúng theo cùng một số gốc rồi so phần chênh lệch. Khi hai tích cùng một thừa số, hiệu của chúng bằng thừa số chung nhân với hiệu hai thừa số kia.
 **Nhãn tư duy:** TD5, TD6. Điểm chốt: Đưa mọi số về **cùng một số gốc** rồi mới so hoặc trừ.
 **Lỗi thường gặp:** Nhân hết ra rồi mới so sánh — số lớn, dễ sai và mất thời gian. Phòng: Viết mỗi thừa số dưới dạng “số gốc cộng hoặc trừ mấy đơn vị”.

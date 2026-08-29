@@ -85,7 +85,7 @@ e) Phúc có 47 quyển vở, Quân có nhiều hơn Phúc 15 quyển. Quân có
 
 ### Bài 4. (3 điểm) So sánh hai phân số
 
-Điền dấu &lt;, &gt;, = thích hợp.
+Điền dấu <, >, = thích hợp.
 
 a) 3 phần 2 … 8 phần 7
 b) 5 phần 7 … 5 phần 14
@@ -206,7 +206,7 @@ e) 2 + 4 + 6 + … + 100
 
 ### Bài 5. (5 điểm) So sánh hai biểu thức mà không cần tính
 
-Điền dấu &lt;, &gt;, = và giải thích ngắn.
+Điền dấu <, >, = và giải thích ngắn.
 
 a) 398 + 26 … 895 + 26
 b) 886 + 16 … 200 + 16
@@ -345,7 +345,7 @@ e) Một quyển sách có 851 trang, đánh số trang từ 1. Phải dùng t�
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
 
 ### Bài I.4
-**Đáp số:** a) &gt; · b) &gt; · c) &gt; · d) = · e) &gt;
+**Đáp số:** a) > · b) > · c) > · d) = · e) >
 **Hướng giải:** Cùng mẫu số: phân số nào có tử số lớn hơn thì lớn hơn. Cùng tử số: phân số nào có mẫu số **bé** hơn thì lớn hơn. Khác cả tử lẫn mẫu: quy đồng mẫu số rồi so tử số.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Cùng tử số thì **mẫu bé hơn là phân số lớn hơn** — ngược với trực giác.
 **Lỗi thường gặp:** Thấy mẫu số lớn thì kết luận phân số lớn. Phòng: Nghĩ tới chiếc bánh: chia càng nhiều phần thì mỗi phần càng bé.
@@ -411,7 +411,7 @@ e) Một quyển sách có 851 trang, đánh số trang từ 1. Phải dùng t�
 **Lỗi thường gặp:** Lấy số cuối chia khoảng cách làm số số hạng, quên cộng 1. Phòng: Viết ra ba số đầu và ba số cuối để kiểm tra khoảng cách rồi mới đếm.
 
 ### Bài III.5
-**Đáp số:** a) &lt; · b) &gt; · c) &lt; · d) &lt;
+**Đáp số:** a) < · b) > · c) < · d) <
 **Hướng giải:** Khi hai biểu thức có phần giống nhau, chỉ cần so sánh phần khác nhau: cùng cộng thêm một số thì số nào lớn hơn vẫn lớn hơn; cùng nhân với một số khác 0 cũng vậy.
 **Nhãn tư duy:** TD5, TD2. Điểm chốt: Che phần **giống nhau** đi, chỉ so phần khác nhau.
 **Lỗi thường gặp:** Tính hết cả hai vế, vừa lâu vừa dễ sai. Phòng: Dùng bút gạch bỏ phần giống nhau ở hai vế trước khi so sánh.

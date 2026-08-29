@@ -47,7 +47,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần C**
 
 - **Bài C.1** — a) 123 · b) 102 · c) 92 · d) 176 · e) 20 · f) 30
-- **Bài C.2** — a) &lt; · b) &gt; · c) &gt; · d) &gt;
+- **Bài C.2** — a) < · b) > · c) > · d) >
 - **Bài C.3** — a) 36 · b) 17 · c) 141 · d) 39 · e) 19 · f) 81
 - **Bài C.4** — a) 3 510 · b) 6 663 · c) 12 363 · d) 898 · e) 2 556 · f) 764 · g) 1 654
 - **Bài C.5** — a) xe ô tô: 3 chiếc, xe đạp: 26 chiếc · b) xe ba bánh: 6 chiếc, xe ô tô: 7 chiếc · c) xe đạp: 16 chiếc, xe ô tô: 3 chiếc · d) xe đạp: 25 chiếc, xe ô tô: 9 chiếc · e) xe ô tô: 11 chiếc, xe đạp: 22 chiếc · f) xe đạp: 22 chiếc, xe ba bánh: 5 chiếc
@@ -243,7 +243,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | B.4 | Xét chia hết của tổng, hiệu | Tính chất chia hết của tổng và hiệu | Câu hỏi về tổng hoặc hiệu, không yêu cầu kết quả cụ thể | Xét số dư từng số hạng rồi cộng, trừ các số dư | Chỉ cộng các **số dư**, không cộng các số. | có · có · không, dư 1 · có… |
 | B.5 | Điền chữ số theo điều kiện chia hết | Dấu hiệu chia hết, chữ số hàng cao nhất khác 0 | Số có ô trống hoặc dấu *, kèm điều kiện chia hết | Dùng dấu hiệu để lập điều kiện cho dấu * rồi thử 0–9 | Với 3 và 9: tính tổng các chữ số đã biết một lần duy nhất, rồi tìm phần bù cần thêm. | 0, 2, 4, 6, 8 · 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 · 1, 4, 7 · 0, 3, 6, 9 |
 | C.1 | Đếm số hạng dãy cách đều | Công thức đếm số hạng | Dãy có số đầu, số cuối và khoảng cách đều | (cuối − đầu) : khoảng cách + 1 | Dãy số tự nhiên liên tiếp từ a đến b có b − a + 1 số hạng. | 123 · 102 · 92 · 176… |
-| C.2 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &lt; · &gt; · &gt; · &gt; |
+| C.2 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | < · > · > · > |
 | C.3 | Dãy số quy luật bậc hai hoặc xen kẽ | Dãy hiệu, dãy con xen kẽ | Hiệu giữa các số hạng không bằng nhau | Lập dãy hiệu; tách dãy con theo vị trí | Dãy 1, 4, 9, 16, 25 là các số chính phương — nhớ để nhận ra ngay. | 36 · 17 · 141 · 39… |
 | C.4 | Bốn phép tính với số đo | Đổi đơn vị, bốn phép tính | Các số hạng có đơn vị khác nhau trong cùng một phép tính | Đổi về đơn vị của kết quả rồi tính | Đọc chỗ chấm trước, biết ngay đơn vị đích. | 3 510 · 6 663 · 12 363 · 898… |
 | C.5 | Giả thiết tạm hai loại | Phương pháp giả thiết tạm | Hai loại đối tượng, biết tổng số và tổng của một đại lượng phụ | Giả sử đồng nhất → tính chênh → chia cho hiệu đơn vị | Kiểm tra ngay: số bánh phải nằm giữa tổng × (số bánh ít nhất) và tổng × (số bánh nhiều nhất). | xe ô tô: 3 chiếc, xe đạp: 26 chiếc · xe ba bánh: 6 chiếc, xe ô tô: 7 chiếc · xe đạp: 16 chiếc, xe ô tô: 3 chiếc · xe đạp: 25 chiếc, xe ô tô: 9 chiếc… |
@@ -375,7 +375,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | B.4 | Tổng 45 + 27 có chia hết cho 9 không? | có |
 | B.5 | Tìm chữ số thay cho * để 12* chia hết cho 5. | 0, 5 |
 | C.1 | Dãy 3, 6, 9, …, 99 có bao nhiêu số hạng? | 33 |
-| C.2 | So sánh: 3 kg … 2 500 g | &gt; |
+| C.2 | So sánh: 3 kg … 2 500 g | > |
 | C.3 | Viết tiếp: 1, 2, 4, 7, 11, … | 16 |
 | C.4 | 2 m 30 cm + 150 cm = … cm | 380 |
 | C.5 | 10 xe đạp và ô tô, 28 bánh. Có mấy ô tô? | 4 ô tô |

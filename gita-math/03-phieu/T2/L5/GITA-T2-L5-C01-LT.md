@@ -234,7 +234,7 @@ f) Làm lại ví dụ mẫu ở trên và ghi đáp số.
 
 ### Bài 2. (6 điểm) Key 2 — So sánh hai số tự nhiên
 
-**Phát biểu:** Thứ tự trong tập số tự nhiên. **Ví dụ mẫu:** Điền dấu: 3 981 941 … 3 981 942 → &lt;.
+**Phát biểu:** Thứ tự trong tập số tự nhiên. **Ví dụ mẫu:** Điền dấu: 3 981 941 … 3 981 942 → <.
 
 a) Phát biểu lại key này bằng lời của em.
 b) Key này dùng cho dạng bài nào?
@@ -387,7 +387,7 @@ g) Số 8 716 có chia hết cho 3 không? Vì sao?
 **Lỗi thường gặp:** Không nhớ mốc kiểm tra nên ôn muộn. Phòng: Ghi mốc kiểm tra vào lịch học ngay buổi đầu của cụm.
 
 ### Bài B.4
-**Đáp số:** a) Cụm “vừa chia hết cho … vừa chia hết cho …” · b) Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = · c) Đề yêu cầu ghi cả thương và số dư · d) Câu hỏi chỉ hỏi “chữ số tận cùng”, không hỏi kết quả · e) Câu hỏi “có chia hết cho … không” · f) Đề nói “xoá chữ số”, “viết thêm chữ số”, “đổi chỗ”
+**Đáp số:** a) Cụm “vừa chia hết cho … vừa chia hết cho …” · b) Dấu … giữa hai số, yêu cầu điền <, >, = · c) Đề yêu cầu ghi cả thương và số dư · d) Câu hỏi chỉ hỏi “chữ số tận cùng”, không hỏi kết quả · e) Câu hỏi “có chia hết cho … không” · f) Đề nói “xoá chữ số”, “viết thêm chữ số”, “đổi chỗ”
 **Hướng giải:** Dấu hiệu nhận biết là những chữ có mặt trong đề bài, không phải là cách giải. Đọc lại cột “Dữ liệu nhận biết” trong bảng phân tích chuyên sâu.
 **Nhãn tư duy:** TD2. Điểm chốt: Dấu hiệu nằm ở **chữ trong đề**, không nằm ở phép tính.
 **Lỗi thường gặp:** Trả lời bằng cách giải thay vì bằng dấu hiệu. Phòng: Tự hỏi: em nhìn thấy chữ gì trong đề thì biết đây là dạng này?
@@ -417,7 +417,7 @@ g) Số 8 716 có chia hết cho 3 không? Vì sao?
 **Lỗi thường gặp:** Dạng nào cũng vẽ sơ đồ đoạn thẳng, kể cả bài đếm. Phòng: Hỏi trước: bài này có quan hệ hơn kém, có nhiều trường hợp, hay có hình?
 
 ### Bài C.4
-**Đáp số:** a) Cụm “vừa chia hết cho … vừa chia hết cho …” · b) Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = · c) Đề yêu cầu ghi cả thương và số dư · d) Câu hỏi chỉ hỏi “chữ số tận cùng”, không hỏi kết quả · e) Câu hỏi “có chia hết cho … không” · f) Đề nói “xoá chữ số”, “viết thêm chữ số”, “đổi chỗ”
+**Đáp số:** a) Cụm “vừa chia hết cho … vừa chia hết cho …” · b) Dấu … giữa hai số, yêu cầu điền <, >, = · c) Đề yêu cầu ghi cả thương và số dư · d) Câu hỏi chỉ hỏi “chữ số tận cùng”, không hỏi kết quả · e) Câu hỏi “có chia hết cho … không” · f) Đề nói “xoá chữ số”, “viết thêm chữ số”, “đổi chỗ”
 **Hướng giải:** Dấu hiệu nhận biết luôn là **chữ có trong đề**: một cụm từ khoá, một kiểu dữ kiện, hoặc một cách hỏi.
 **Nhãn tư duy:** TD2. Điểm chốt: Đọc vị được đề là **đã đi được nửa đường**.
 **Lỗi thường gặp:** Lẫn dấu hiệu nhận biết với phương pháp giải. Phòng: Dấu hiệu trả lời câu “thấy gì?”, phương pháp trả lời câu “làm gì?”.
@@ -436,7 +436,7 @@ g) Số 8 716 có chia hết cho 3 không? Vì sao?
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài D.2
-**Đáp số:** a) Thứ tự trong tập số tự nhiên · b) So sánh hai số tự nhiên · c) Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = · d) Đếm chữ số → so từng hàng từ trái sang phải · e) So từ hàng đơn vị (phải sang trái) nên kết luận sai. · f) &lt;
+**Đáp số:** a) Thứ tự trong tập số tự nhiên · b) So sánh hai số tự nhiên · c) Dấu … giữa hai số, yêu cầu điền <, >, = · d) Đếm chữ số → so từng hàng từ trái sang phải · e) So từ hàng đơn vị (phải sang trái) nên kết luận sai. · f) <
 **Hướng giải:** So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Đếm số chữ số **trước**, chỉ khi bằng nhau mới so từng hàng.
 **Lỗi thường gặp:** So từ hàng đơn vị (phải sang trái) nên kết luận sai. Phòng: Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái.

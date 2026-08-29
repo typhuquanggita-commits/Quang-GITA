@@ -49,7 +49,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài III.1** — a) 15 · b) 5 · c) 15 · d) 6 · e) 21
 - **Bài III.2** — a) 2 lần · b) 3 phần · c) vì mỗi lần cân có ba kết quả: trái nặng hơn, phải nặng hơn, hoặc cân bằng · d) 3 · e) 1 lần · f) 2 lần
 - **Bài III.3** — a) 50,24 cm · b) 182,12 cm · c) 907,46 cm² · d) 27 cm · e) 2 640,74 cm²
-- **Bài III.4** — a) &lt; · b) &gt; · c) &gt; · d) &gt; · e) &lt; · f) &gt; · g) &gt;
+- **Bài III.4** — a) < · b) > · c) > · d) > · e) < · f) > · g) >
 - **Bài III.5** — a) 9 · b) 8 · c) 4 · d) 0 · e) 3 · f) 4
 
 **Phần IV**
@@ -62,7 +62,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần V**
 
-- **Bài V.1** — a) Số thập phân — hàng, so sánh, chuyển đổi · b) Cấu tạo số thập phân, quan hệ phân số – số thập phân · c) Số có dấu phẩy; phân số mẫu 10, 100, 1 000 · d) Xét theo hàng từ trái sang phải · e) Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. · f) &gt; · 7 · 0,96 · 5…
+- **Bài V.1** — a) Số thập phân — hàng, so sánh, chuyển đổi · b) Cấu tạo số thập phân, quan hệ phân số – số thập phân · c) Số có dấu phẩy; phân số mẫu 10, 100, 1 000 · d) Xét theo hàng từ trái sang phải · e) Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. · f) > · 7 · 0,96 · 5…
 - **Bài V.2** — a) Rút gọn phân số · b) Tính chất cơ bản của phân số · c) Tử số và mẫu số có ước chung lớn hơn 1 · d) Chia cả tử và mẫu cho ước chung · e) Tìm ngay ước chung lớn nhất để rút gọn một lần là xong. · f) 3 phần 4 · 1 · 1 phần 4 · 1…
 - **Bài V.3** — a) Tỉ số phần trăm trong mua bán · b) Tỉ số phần trăm, tăng giảm theo phần trăm · c) Từ khoá “tăng giá”, “giảm giá”, “lãi”, “lỗ” · d) Chốt mốc 100% rồi cộng trừ phần trăm · e) Giảm 20% nghĩa là còn 80% — nhân thẳng một lần thay vì trừ hai bước. · f) 225 000 đồng · 920 000 đồng · 10% · 15%…
 - **Bài V.4** — a) Biểu thức phân số nhiều phép tính · b) Thứ tự thực hiện phép tính, tính chất phân phối · c) Biểu thức gồm nhiều phân số và nhiều phép tính · d) Quan sát rút gọn trước, sau đó theo thứ tự thực hiện · e) Rút gọn chéo tử với mẫu trước khi nhân. · f) 44 phần 25 · 79 phần 126 · 63 phần 55 · 3 phần 5…
@@ -245,7 +245,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.1 | Đếm hình bằng quy tắc chọn hai điểm | Quy tắc đếm, tổ hợp chập hai | Hình có nhiều đoạn kẻ từ cùng một đỉnh, hoặc nhiều điểm trên một đường | Quy về số cách chọn hai điểm | Số cách chọn 2 trong k là k × (k − 1) : 2 — thuộc công thức này là xong. | 15 · 5 · 15 · 6… |
 | III.2 | Cân đĩa, chia ba | Lập luận trường hợp xấu nhất, chia nhóm | Cân đĩa không có quả cân, tìm vật khác biệt | Chia ba phần bằng nhau mỗi lần cân | 3 đồng → 1 lần; 9 đồng → 2 lần; 27 đồng → 3 lần. | 2 lần · 3 phần · vì mỗi lần cân có ba kết quả: trái nặng hơn, phải nặng hơn, hoặc cân bằng · 3… |
 | III.3 | Chu vi, diện tích hình tròn | Công thức hình tròn | Đề cho bán kính hoặc đường kính | Quy về bán kính, chọn đúng công thức | Diện tích luôn có đơn vị mũ hai — nếu đáp số ghi cm là chắc chắn nhầm. | 50,24 cm · 182,12 cm · 907,46 cm² · 27 cm… |
-| III.4 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | &lt; · &gt; · &gt; · &gt;… |
+| III.4 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | < · > · > · >… |
 | III.5 | Tìm chữ số tận cùng của một phép tính | Tính chất chữ số tận cùng | Câu hỏi chỉ hỏi “chữ số tận cùng”, không hỏi kết quả | Rút gọn về chữ số tận cùng rồi tính | Với phép trừ, nếu chữ số cuối của số bị trừ nhỏ hơn thì mượn 10 rồi trừ. | 9 · 8 · 4 · 0… |
 | IV.1 | Tính nhanh biểu thức số thập phân | Tính chất phép tính với số thập phân | Các số thập phân cộng lại tròn chục hoặc có thừa số chung | Ghép cặp tròn, đặt thừa số chung | × 4 rồi × 25 là × 100 — chỉ việc dịch dấu phẩy sang phải hai chữ số. | 530 · 87 · 56 · 62 |
 | IV.2 | Tỉ số phần trăm trong mua bán | Tỉ số phần trăm, tăng giảm theo phần trăm | Từ khoá “tăng giá”, “giảm giá”, “lãi”, “lỗ” | Chốt mốc 100% rồi cộng trừ phần trăm | Giảm 20% nghĩa là còn 80% — nhân thẳng một lần thay vì trừ hai bước. | 300 000 đồng · 175 000 đồng · 25% · 275 000 đồng… |
@@ -377,14 +377,14 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | III.1 | Trên một đường thẳng có 5 điểm. Có bao nhiêu đoạn thẳng? | 10 |
 | III.2 | Có 9 đồng tiền, một đồng nhẹ hơn. Cần cân mấy lần? | 2 lần |
 | III.3 | Hình tròn bán kính 5 cm. Tính diện tích. | 78,5 cm² |
-| III.4 | So sánh: 234 × 7 … 234 × 8 | &lt; |
+| III.4 | So sánh: 234 × 7 … 234 × 8 | < |
 | III.5 | Tích 137 × 46 có chữ số tận cùng là chữ số nào? | 2 |
 | IV.1 | Tính nhanh: 2,5 × 4 × 25 | 250 |
 | IV.2 | Hàng giá 500 000 đồng giảm 20%. Giá còn lại bao nhiêu? | 400 000 đồng |
 | IV.3 | Dãy cách đều 10 số hạng, đầu 5, cuối 50. Tổng bằng bao nhiêu? | 275 |
 | IV.4 | Tính nhanh: 5 × 1 + 5 × 2 + … + 5 × 10 | 275 |
 | IV.5 | Tính: (1 phần 2 + 1 phần 3) × 6 phần 5 | 1 |
-| V.1 | So sánh: 0,5 … 0,45 | &gt; |
+| V.1 | So sánh: 0,5 … 0,45 | > |
 | V.2 | Rút gọn 18 phần 24. | 3 phần 4 |
 | V.3 | Hàng giá 500 000 đồng giảm 20%. Giá còn lại bao nhiêu? | 400 000 đồng |
 | V.4 | Tính: (1 phần 2 + 1 phần 3) × 6 phần 5 | 1 |

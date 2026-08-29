@@ -360,7 +360,7 @@ e) Mua 11 quyển vở hết 484 nghìn đồng. Với 396 nghìn đồng thì m
 **Lỗi thường gặp:** Đếm sai số lượng số hạng nên chia nhầm. Phòng: Đánh số thứ tự từng số trước khi cộng.
 
 ### Bài A.5
-**Đáp số:** a) 0,2 · b) &gt; · c) 3 · d) &lt; · e) 0,313 · f) 5 · g) &gt;
+**Đáp số:** a) 0,2 · b) > · c) 3 · d) < · e) 0,313 · f) 5 · g) >
 **Hướng giải:** Sau dấu phẩy lần lượt là hàng phần mười, phần trăm, phần nghìn. So sánh số thập phân: so phần nguyên trước; phần nguyên bằng nhau thì so lần lượt hàng phần mười, phần trăm, phần nghìn. Phân số có mẫu là 10, 100, 1 000 đổi được thẳng sang số thập phân.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: So sánh theo **hàng**, không so theo số chữ số sau dấu phẩy.
 **Lỗi thường gặp:** Cho rằng số có nhiều chữ số sau dấu phẩy hơn thì lớn hơn. Phòng: Viết thêm chữ số 0 vào cuối để hai số có cùng số chữ số thập phân rồi mới so.

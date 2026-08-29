@@ -31,7 +31,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần I**
 
 - **Bài I.1** — a) chữ số 4, giá trị 4 000 · b) chữ số 8, giá trị 800 · c) chữ số 5, giá trị 50 · d) chữ số 7, giá trị 7
-- **Bài I.2** — a) &lt; · b) 0,8 · c) 9 · d) 5 · e) 0,9
+- **Bài I.2** — a) < · b) 0,8 · c) 9 · d) 5 · e) 0,9
 - **Bài I.3** — a) 67 · b) 47 · c) 60 · d) 42 · e) 9 · f) 56 · g) 67
 - **Bài I.4** — a) ô (Phúc; Tiếng Việt) · b) toàn bộ hàng Phúc và toàn bộ cột Tiếng Việt · c) ô (Chi; Toán) · d) Âm nhạc · e) Toán · f) phương pháp lập bảng và loại trừ
 - **Bài I.5** — a) 2 tấn 84 kg · b) 937 · c) 2 tấn 4 tạ 2 kg · d) 4 036 · e) 2 tấn 5 tạ 69 kg · f) 1 946 · g) 4 tấn 9 tạ 16 kg
@@ -41,7 +41,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài II.1** — a) 60 · b) 4 · c) 40% · d) 30
 - **Bài II.2** — a) có · b) có · c) có · d) không, dư 1 · e) không, dư 3
 - **Bài II.3** — a) 306 · b) 1 470 · c) 440 · d) 468 · e) 297 · f) 1 748
-- **Bài II.4** — a) &gt; · b) &lt; · c) &lt; · d) &gt; · e) &gt; · f) &lt;
+- **Bài II.4** — a) > · b) < · c) < · d) > · e) > · f) <
 - **Bài II.5** — a) XXI · b) 2 tuần 5 ngày · c) 30 · d) không
 
 **Phần III**
@@ -233,14 +233,14 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
 | I.1 | Xác định chữ số và giá trị chữ số theo hàng | Cấu tạo thập phân của số tự nhiên | Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” | Đánh số hàng từ phải sang trái rồi tra bảng hàng | Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị. | chữ số 4, giá trị 4 000 · chữ số 8, giá trị 800 · chữ số 5, giá trị 50 · chữ số 7, giá trị 7 |
-| I.2 | Số thập phân — hàng, so sánh, chuyển đổi | Cấu tạo số thập phân, quan hệ phân số – số thập phân | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 | Xét theo hàng từ trái sang phải | Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. | &lt; · 0,8 · 9 · 5… |
+| I.2 | Số thập phân — hàng, so sánh, chuyển đổi | Cấu tạo số thập phân, quan hệ phân số – số thập phân | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 | Xét theo hàng từ trái sang phải | Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. | < · 0,8 · 9 · 5… |
 | I.3 | Điền số hạng còn thiếu của dãy cách đều | Dãy số cách đều | Dãy có ô trống ở giữa | Xác định khoảng cách từ cặp liền nhau đã biết | Nếu chỗ trống nằm giữa hai số đã biết thì nó bằng trung bình cộng của hai số ấy. | 67 · 47 · 60 · 42… |
 | I.4 | Suy luận loại trừ có bảng | Phương pháp lập bảng, loại trừ | Mỗi người ứng với đúng một đối tượng, đề cho các dữ kiện phủ định | Kẻ bảng, đánh dấu, lan toả theo hàng và cột | Bắt đầu từ dữ kiện khẳng định (“thích”, “là”) trước dữ kiện phủ định. | ô (Phúc; Tiếng Việt) · toàn bộ hàng Phúc và toàn bộ cột Tiếng Việt · ô (Chi; Toán) · Âm nhạc… |
 | I.5 | Số đo có nhiều đơn vị | Bảng đơn vị khối lượng | Số đo viết dưới dạng “… tấn … tạ … kg” | Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư | Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ. | 2 tấn 84 kg · 937 · 2 tấn 4 tạ 2 kg · 4 036… |
 | II.1 | Ba dạng toán tỉ số phần trăm | Tỉ số phần trăm | Kí hiệu %, cụm “… % của …” | Xác định đại lượng ứng với 100% rồi chọn dạng | Coi 100% là “cả phần”, 1% là “cả phần chia 100” — mọi dạng đều quy về 1%. | 60 · 4 · 40% · 30 |
 | II.2 | Xét chia hết của tổng, hiệu | Tính chất chia hết của tổng và hiệu | Câu hỏi về tổng hoặc hiệu, không yêu cầu kết quả cụ thể | Xét số dư từng số hạng rồi cộng, trừ các số dư | Chỉ cộng các **số dư**, không cộng các số. | có · có · có · không, dư 1… |
 | II.3 | Nhân nhẩm nhờ tách thừa số | Nhân một số với một tổng, một hiệu | Thừa số là 9, 11, 19, 21, 99, 101… | Tách về số tròn rồi bù trừ | × 11 với số có hai chữ số: viết hai chữ số ra hai đầu, tổng của chúng đặt vào giữa (nhớ sang trái nếu tổng vượt 9). | 306 · 1 470 · 440 · 468… |
-| II.4 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &gt; · &lt; · &lt; · &gt;… |
+| II.4 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | > · < · < · >… |
 | II.5 | Lịch và đơn vị thời gian lớn | Số ngày các tháng, năm nhuận, thế kỉ | Đề hỏi về tháng, năm, thế kỉ | Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400 | Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ. | XXI · 2 tuần 5 ngày · 30 · không |
 | III.1 | Dãy số truy hồi có quy tắc rẽ nhánh | Dãy số cho bởi quy tắc, tính lần lượt | Đề mô tả cách lập số hạng từ số hạng liền trước | Lập bảng, tính lần lượt, bám sát vị trí | Chỉ cần tính tới số hạng được hỏi, không cần tính cả dãy. | 2, 8, 16 · 52 · 132 · 300… |
 | III.2 | Cân đĩa, chia ba | Lập luận trường hợp xấu nhất, chia nhóm | Cân đĩa không có quả cân, tìm vật khác biệt | Chia ba phần bằng nhau mỗi lần cân | 3 đồng → 1 lần; 9 đồng → 2 lần; 27 đồng → 3 lần. | 3 lần · 3 phần · vì mỗi lần cân có ba kết quả: trái nặng hơn, phải nặng hơn, hoặc cân bằng · 9… |
@@ -365,14 +365,14 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | Bài | Đề tương tự | Đáp số |
 |---|---|---|
 | I.1 | Chữ số hàng chục của số 284 857 có giá trị bao nhiêu? | 50 |
-| I.2 | So sánh: 0,5 … 0,45 | &gt; |
+| I.2 | So sánh: 0,5 … 0,45 | > |
 | I.3 | Điền số: 4, 9, …, 19, 24 | 14 |
 | I.4 | Ba bạn thích ba môn khác nhau, An thích Toán, Bình không thích Anh. Bình thích môn nào? | Tiếng Việt |
 | I.5 | 3 450 kg = … tấn … tạ … kg | 3 tấn 4 tạ 50 kg |
 | II.1 | Tìm 25% của 200. | 50 |
 | II.2 | Tổng 45 + 27 có chia hết cho 9 không? | có |
 | II.3 | Tính nhẩm: 46 × 11 | 506 |
-| II.4 | So sánh: 3 kg … 2 500 g | &gt; |
+| II.4 | So sánh: 3 kg … 2 500 g | > |
 | II.5 | Năm 1975 thuộc thế kỉ thứ mấy? | XX |
 | III.1 | Dãy: số đầu là 2, mỗi số sau bằng số trước nhân 2. Số thứ 5 là số nào? | 32 |
 | III.2 | Có 9 đồng tiền, một đồng nhẹ hơn. Cần cân mấy lần? | 2 lần |

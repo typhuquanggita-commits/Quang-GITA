@@ -30,7 +30,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần I**
 
-- **Bài I.1** — a) &gt; · b) &lt; · c) &lt; · d) &gt; · e) &lt; · f) &gt; · g) &gt; · h) &lt;
+- **Bài I.1** — a) > · b) < · c) < · d) > · e) < · f) > · g) > · h) <
 - **Bài I.2** — a) 4 200 · b) 4 000 · c) 1 100 · d) 6 300
 - **Bài I.3** — a) 58 · b) 107 · c) 144 · d) 91 · e) 112
 - **Bài I.4** — a) 192 · b) 3 456 · c) 159 · d) 6 925 · e) 224 · f) 200 · g) 2 530 · h) 3 528
@@ -232,7 +232,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
-| I.1 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | &gt; · &lt; · &lt; · &gt;… |
+| I.1 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | > · < · < · >… |
 | I.2 | Đổi đơn vị diện tích | Bảng đơn vị đo diện tích | Đơn vị có mũ hai: m², cm², km², ha | Đếm bậc rồi nhân, chia 100 | Mỗi bậc thêm hai chữ số 0 — nhớ “diện tích thì gấp đôi số 0”. | 4 200 · 4 000 · 1 100 · 6 300 |
 | I.3 | Tìm trung bình cộng | Định nghĩa trung bình cộng | Từ khoá “trung bình cộng”, “trung bình mỗi …” | Tổng chia số lượng | Ước lượng: trung bình cộng luôn nằm giữa số bé nhất và số lớn nhất. | 58 · 107 · 144 · 91… |
 | I.4 | Tính giá trị biểu thức số | Thứ tự thực hiện các phép tính | Biểu thức có nhiều phép tính, có thể có ngoặc | Xét ngoặc → nhân chia → cộng trừ, trái sang phải | Nếu thấy dạng a × b + a × c thì đưa ngay về a × (b + c). | 192 · 3 456 · 159 · 6 925… |
@@ -364,7 +364,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 
 | Bài | Đề tương tự | Đáp số |
 |---|---|---|
-| I.1 | So sánh: 3 phần 5 … 3 phần 7 | &gt; |
+| I.1 | So sánh: 3 phần 5 … 3 phần 7 | > |
 | I.2 | 3 m² = … cm² | 30 000 |
 | I.3 | Tìm trung bình cộng của 12, 18 và 30. | 20 |
 | I.4 | Tính: 25 + 8 × 4 | 57 |

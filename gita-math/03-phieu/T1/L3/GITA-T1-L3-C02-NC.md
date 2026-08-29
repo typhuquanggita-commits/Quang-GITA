@@ -73,7 +73,7 @@ e) x × 8 = 104
 f) x + 5 = 44
 g) x − 3 = 17
 
-### Bài 3. (3 điểm) Điền dấu &lt;, &gt;, = thích hợp
+### Bài 3. (3 điểm) Điền dấu <, >, = thích hợp
 
 Điền dấu thích hợp vào chỗ chấm.
 
@@ -340,7 +340,7 @@ e) Tổng 60 số hạng đầu tiên bằng bao nhiêu?
 **Lỗi thường gặp:** Áp dụng nhầm quy tắc của số trừ cho số bị trừ. Phòng: Gọi tên x trước (x là số hạng? số bị trừ? thừa số?) rồi mới viết quy tắc.
 
 ### Bài I.3
-**Đáp số:** a) &lt; · b) &lt; · c) &gt; · d) &gt; · e) &lt;
+**Đáp số:** a) < · b) < · c) > · d) > · e) <
 **Hướng giải:** So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Đếm số chữ số **trước**, chỉ khi bằng nhau mới so từng hàng.
 **Lỗi thường gặp:** So từ hàng đơn vị (phải sang trái) nên kết luận sai. Phòng: Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái.

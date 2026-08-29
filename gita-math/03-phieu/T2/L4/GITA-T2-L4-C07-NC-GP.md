@@ -33,7 +33,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài I.1** — a) 6 chữ số, tổng 43 · b) 5 chữ số, tổng 18 · c) 6 chữ số, tổng 30 · d) 6 chữ số, tổng 21 · e) 6 chữ số, tổng 26
 - **Bài I.2** — a) 303 918 · b) 132 173 · c) 955 619 · d) 915 809 · e) 413 915
 - **Bài I.3** — a) 103 900 · b) 546 230 · c) 198 480 · d) 843 700 · e) 640 870 · f) 426 000
-- **Bài I.4** — a) &lt; · b) &gt; · c) &gt; · d) &gt; · e) &lt; · f) &gt; · g) &gt;
+- **Bài I.4** — a) < · b) > · c) > · d) > · e) < · f) > · g) >
 - **Bài I.5** — a) chữ số 6, giá trị 6 000 · b) chữ số 9, giá trị 900 · c) chữ số 8, giá trị 80 · d) chữ số 4, giá trị 4
 
 **Phần II**
@@ -92,7 +92,7 @@ Nhìn chữ số ở hàng **liền sau** hàng cần làm tròn: nếu chữ s�
 
 *Điểm chốt:* Chỉ xét **một** chữ số liền sau, không cộng dồn cả phần đuôi.
 
-### Bài I.4 — Điền dấu &lt;, &gt;, = thích hợp
+### Bài I.4 — Điền dấu <, >, = thích hợp
 
 So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 
@@ -235,7 +235,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | I.1 | Đếm chữ số, tính tổng chữ số | Cấu tạo số, tổng chữ số | Yêu cầu “có mấy chữ số”, “tổng các chữ số” | Tách lớp để đếm; cộng rời từng chữ số | Ghép cặp các chữ số cộng lại tròn 10 rồi cộng nhanh. | 6 chữ số, tổng 43 · 5 chữ số, tổng 18 · 6 chữ số, tổng 30 · 6 chữ số, tổng 21… |
 | I.2 | Viết số từ dạng tổng theo hàng | Cấu tạo thập phân của số tự nhiên | Tổng gồm các số tròn chục, tròn trăm, tròn nghìn… | Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết | Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số. | 303 918 · 132 173 · 955 619 · 915 809… |
 | I.3 | Làm tròn số tự nhiên | Quy tắc làm tròn, giá trị hàng | Cụm từ “làm tròn đến hàng …” | Gạch ngăn hàng → xét chữ số liền sau → giữ nguyên hoặc thêm 1 | Che toàn bộ phần đuôi sau nét gạch, chỉ để lộ đúng một chữ số. | 103 900 · 546 230 · 198 480 · 843 700… |
-| I.4 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | &lt; · &gt; · &gt; · &gt;… |
+| I.4 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | < · > · > · >… |
 | I.5 | Xác định chữ số và giá trị chữ số theo hàng | Cấu tạo thập phân của số tự nhiên | Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” | Đánh số hàng từ phải sang trái rồi tra bảng hàng | Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị. | chữ số 6, giá trị 6 000 · chữ số 9, giá trị 900 · chữ số 8, giá trị 80 · chữ số 4, giá trị 4 |
 | II.1 | Điền chữ số theo điều kiện chia hết | Dấu hiệu chia hết, chữ số hàng cao nhất khác 0 | Số có ô trống hoặc dấu *, kèm điều kiện chia hết | Dùng dấu hiệu để lập điều kiện cho dấu * rồi thử 0–9 | Với 3 và 9: tính tổng các chữ số đã biết một lần duy nhất, rồi tìm phần bù cần thêm. | 0, 5 · 1, 2, 3, 4, 5, 6, 7, 8, 9 · 1 · không có chữ số nào… |
 | II.2 | Xét chia hết của tổng, hiệu | Tính chất chia hết của tổng và hiệu | Câu hỏi về tổng hoặc hiệu, không yêu cầu kết quả cụ thể | Xét số dư từng số hạng rồi cộng, trừ các số dư | Chỉ cộng các **số dư**, không cộng các số. | có · có · có · có… |
@@ -367,7 +367,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | I.1 | Số 40 506 có mấy chữ số và tổng các chữ số bằng bao nhiêu? | 5 chữ số, tổng 15 |
 | I.2 | Viết số gồm tổng: 30 000 + 400 + 7 | 30 407 |
 | I.3 | Làm tròn 4 762 đến hàng trăm. | 4 800 |
-| I.4 | Điền dấu: 946 800 … 946 801 | &lt; |
+| I.4 | Điền dấu: 946 800 … 946 801 | < |
 | I.5 | Chữ số hàng chục của số 376 984 có giá trị bao nhiêu? | 80 |
 | II.1 | Tìm chữ số thay cho * để 12* chia hết cho 5. | 0, 5 |
 | II.2 | Tổng 45 + 27 có chia hết cho 9 không? | có |

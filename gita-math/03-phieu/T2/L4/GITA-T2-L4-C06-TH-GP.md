@@ -48,7 +48,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài III.1** — a) x = 38 · b) x = 34 · c) x = 16 · d) x = 22
 - **Bài III.2** — a) 110 · b) 24 950 · c) 210 · d) 975 · e) 3 725 · f) 420
-- **Bài III.3** — a) &lt; · b) &gt; · c) &gt; · d) &lt; · e) &gt; · f) &lt; · g) &lt;
+- **Bài III.3** — a) < · b) > · c) > · d) < · e) > · f) < · g) <
 - **Bài III.4** — a) 60 kg · b) 54 kg · c) 14 kg · d) 114 kg · e) 180 kg
 - **Bài III.5** — a) 81 · b) 480 · c) 399 · d) 108 · e) 277 · f) 432
 
@@ -244,7 +244,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | II.5 | Nhân nhẩm nhờ tách thừa số | Nhân một số với một tổng, một hiệu | Thừa số là 9, 11, 19, 21, 99, 101… | Tách về số tròn rồi bù trừ | × 11 với số có hai chữ số: viết hai chữ số ra hai đầu, tổng của chúng đặt vào giữa (nhớ sang trái nếu tổng vượt 9). | 814 · 4 444 · 216 · 840 |
 | III.1 | Tìm x nhiều bước có ngoặc | Thứ tự thực hiện phép tính, quan hệ thành phần | x nằm trong ngoặc, ngoài ngoặc còn phép tính khác | Bóc lớp từ ngoài vào trong | Thay x tìm được vào đề, tính một lượt để thử lại. | x = 38 · x = 34 · x = 16 · x = 22 |
 | III.2 | Tổng dãy số cách đều | Công thức tổng dãy cách đều | Dãy cộng có dấu … và các số cách đều nhau | Đếm số số hạng rồi áp công thức tổng | Ghép cặp đầu – cuối: mọi cặp đều có cùng tổng, chỉ cần nhân với số cặp. | 110 · 24 950 · 210 · 975… |
-| III.3 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | &lt; · &gt; · &gt; · &lt;… |
+| III.3 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | < · > · > · <… |
 | III.4 | Tìm phân số của một số, nhiều bước | Tìm phân số của một số | Cụm “… số còn lại”, “… số đó” | Tính tuần tự, sau mỗi bước ghi lại số còn lại | Còn lại sau ngày đầu là (1 − phân số) của tổng; nhân trực tiếp cho nhanh. | 60 kg · 54 kg · 14 kg · 114 kg… |
 | III.5 | Dãy số tự nhiên liên tiếp có tổng cho trước | Trung bình cộng, dãy cách đều | Cụm “… số tự nhiên liên tiếp có tổng bằng …” | Tìm số giữa bằng phép chia rồi suy ra hai đầu dãy | Tổng của n số liên tiếp (n lẻ) luôn chia hết cho n. | 81 · 480 · 399 · 108… |
 | IV.1 | Tổng các tích có thừa số chung | Nhân một số với một tổng, tổng dãy cách đều | Dãy cộng gồm nhiều tích cùng một thừa số | Đặt thừa số chung → tính tổng trong ngoặc bằng công thức | 1 + 2 + … + 100 = 5 050; nhớ vài mốc để nhân ngay. | 330 · 3 825 · 495 · 495 |
@@ -376,7 +376,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | II.5 | Tính nhẩm: 46 × 11 | 506 |
 | III.1 | Tìm x: (x + 12) × 5 − 8 = 132 | x = 16 |
 | III.2 | Tính nhanh: 1 + 2 + 3 + … + 100 | 5 050 |
-| III.3 | So sánh: 234 × 7 … 234 × 8 | &lt; |
+| III.3 | So sánh: 234 × 7 … 234 × 8 | < |
 | III.4 | Có 60 kg gạo, bán 1 phần 3 rồi bán tiếp 1 phần 2 số còn lại. Còn bao nhiêu? | 20 kg |
 | III.5 | Tổng của 5 số tự nhiên liên tiếp bằng 100. Số bé nhất là số nào? | 18 |
 | IV.1 | Tính nhanh: 5 × 1 + 5 × 2 + … + 5 × 10 | 275 |
@@ -385,7 +385,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | IV.4 | Trồng cây hai bên một đoạn đường dài 20 m, cách nhau 4 m, trồng cả hai đầu, mỗi bên cần mấy cây? | 6 cây |
 | IV.5 | Tính: (1 phần 2 + 1 phần 3) × 6 phần 5 | 1 |
 | V.1 | 13 bạn sinh trong 12 tháng, chứng tỏ có 2 bạn cùng tháng sinh. | đúng, vì 13 > 12 × 1 |
-| V.2 | So sánh: 99 × 101 … 100 × 100 | &lt; |
+| V.2 | So sánh: 99 × 101 … 100 × 100 | < |
 | V.3 | Tính nhanh: 1 − 2 + 3 − 4 + … + 9 − 10 | −5 |
 | V.4 | Ghép 3 hình vuông cạnh 4 cm thành hàng. Chu vi hình chữ nhật là bao nhiêu? | 32 cm |
 | V.5 | Có 10 con gà và chó, 28 chân. Có mấy con chó? | 4 con chó |

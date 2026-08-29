@@ -237,7 +237,7 @@ d) Nhóm Sao Mai trồng được 90 cây. Số cây của nhóm Hoa Phượng b
 
 ### Bài 2. (4 điểm) So sánh hai biểu thức mà không cần tính
 
-Điền dấu &lt;, &gt;, = và giải thích ngắn.
+Điền dấu <, >, = và giải thích ngắn.
 
 a) 892 + 10 … 232 + 10
 b) 699 × 8 … 699 × 9
@@ -442,7 +442,7 @@ f) Lỗi nào dễ mắc ở đề này?
 **Gợi ý 3 tầng:** (1) Phân số đó tính trên số nào? — (2) Chia số đó thành mấy phần bằng nhau? — (3) Lấy mấy phần trong số đó?
 
 ### Bài D.2
-**Đáp số:** a) &gt; · b) &lt; · c) &lt; · d) &gt; · e) &lt; · f) &lt; · g) &lt;
+**Đáp số:** a) > · b) < · c) < · d) > · e) < · f) < · g) <
 **Hướng giải:** Khi hai biểu thức có phần giống nhau, chỉ cần so sánh phần khác nhau: cùng cộng thêm một số thì số nào lớn hơn vẫn lớn hơn; cùng nhân với một số khác 0 cũng vậy.
 **Nhãn tư duy:** TD5, TD2. Điểm chốt: Che phần **giống nhau** đi, chỉ so phần khác nhau.
 **Lỗi thường gặp:** Tính hết cả hai vế, vừa lâu vừa dễ sai. Phòng: Dùng bút gạch bỏ phần giống nhau ở hai vế trước khi so sánh.

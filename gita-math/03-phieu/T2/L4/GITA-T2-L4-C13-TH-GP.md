@@ -39,7 +39,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần II**
 
 - **Bài II.1** — a) 5 tuần 2 ngày · b) XX · c) không · d) 31 · e) XXI · f) 8 tuần 1 ngày · g) có
-- **Bài II.2** — a) &lt; · b) &gt; · c) &lt; · d) &gt; · e) &lt;
+- **Bài II.2** — a) < · b) > · c) < · d) > · e) <
 - **Bài II.3** — a) 508 · b) 10 410 · c) 2 904 · d) 1 730 · e) 1 044 · f) 1 225 · g) 16 108
 - **Bài II.4** — a) 200 · b) 141 · c) 200 · d) 499 · e) 378
 - **Bài II.5** — a) 820 nghìn đồng · b) 23 quyển · c) 3 quyển · d) 852 nghìn đồng
@@ -238,7 +238,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | I.4 | Đổi đơn vị diện tích | Bảng đơn vị đo diện tích | Đơn vị có mũ hai: m², cm², km², ha | Đếm bậc rồi nhân, chia 100 | Mỗi bậc thêm hai chữ số 0 — nhớ “diện tích thì gấp đôi số 0”. | 490 000 · 670 000 · 6 600 · 6 900… |
 | I.5 | Đổi đơn vị đo | Bảng đơn vị đo độ dài, khối lượng | Dấu … giữa hai đơn vị khác nhau | Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10 | Số bậc chính là số chữ số 0 phải thêm vào (hoặc bớt đi). | 6 400 000 · 290 · 400 · 150… |
 | II.1 | Lịch và đơn vị thời gian lớn | Số ngày các tháng, năm nhuận, thế kỉ | Đề hỏi về tháng, năm, thế kỉ | Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400 | Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ. | 5 tuần 2 ngày · XX · không · 31… |
-| II.2 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &lt; · &gt; · &lt; · &gt;… |
+| II.2 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | < · > · < · >… |
 | II.3 | Bốn phép tính với số đo | Đổi đơn vị, bốn phép tính | Các số hạng có đơn vị khác nhau trong cùng một phép tính | Đổi về đơn vị của kết quả rồi tính | Đọc chỗ chấm trước, biết ngay đơn vị đích. | 508 · 10 410 · 2 904 · 1 730… |
 | II.4 | Tính nhanh tổng nhiều số hạng | Tính chất giao hoán, kết hợp của phép cộng | Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm | Ghép cặp tròn rồi cộng | Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10. | 200 · 141 · 200 · 499… |
 | II.5 | Tỉ lệ thuận, rút về đơn vị | Đại lượng tỉ lệ thuận | Hai đại lượng cùng tăng cùng giảm | Rút về đơn vị hoặc dùng tỉ số | Nếu số lượng mới gấp số lượng cũ một số nguyên lần thì nhân thẳng, không cần rút về đơn vị. | 820 nghìn đồng · 23 quyển · 3 quyển · 852 nghìn đồng |
@@ -370,7 +370,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | I.4 | 3 m² = … cm² | 30 000 |
 | I.5 | 5 km = … m | 5 000 |
 | II.1 | Năm 1975 thuộc thế kỉ thứ mấy? | XX |
-| II.2 | So sánh: 3 kg … 2 500 g | &gt; |
+| II.2 | So sánh: 3 kg … 2 500 g | > |
 | II.3 | 2 m 30 cm + 150 cm = … cm | 380 |
 | II.4 | Tính nhanh: 37 + 145 + 63 | 245 |
 | II.5 | Mua 4 quyển vở hết 24 nghìn. Mua 10 quyển hết bao nhiêu? | 60 nghìn |

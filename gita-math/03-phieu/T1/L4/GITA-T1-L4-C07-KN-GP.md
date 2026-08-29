@@ -32,7 +32,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài A.1** — a) 811 557 · b) 410 489 · c) 703 654 · d) 500 348 · e) 941 469
 - **Bài A.2** — a) 6 chữ số, tổng 23 · b) 6 chữ số, tổng 26 · c) 5 chữ số, tổng 21 · d) 5 chữ số, tổng 12 · e) 6 chữ số, tổng 27
-- **Bài A.3** — a) &lt; · b) &lt; · c) &gt; · d) &lt; · e) &gt; · f) &lt;
+- **Bài A.3** — a) < · b) < · c) > · d) < · e) > · f) <
 - **Bài A.4** — a) 139 415 · b) 210 282 · c) 614 667 · d) 648 758 · e) 849 606 · f) 920 936
 - **Bài A.5** — a) chữ số 9, giá trị 900 000 · b) chữ số 1, giá trị 10 000 · c) chữ số 3, giá trị 300 · d) chữ số 6, giá trị 60
 
@@ -57,7 +57,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài D.1** — a) Dấu hiệu chia hết và bài toán chia hết · b) 7 · c) tên một dạng bài của chương · d) 3 nhánh con: dấu hiệu · phương pháp · lỗi hay mắc · e) so với bảng dạng bài ở phiếu Dạng bài & Đọc vị
 - **Bài D.2** — a) Cụm từ “làm tròn đến hàng …” · b) Gạch ngăn hàng → xét chữ số liền sau → giữ nguyên hoặc thêm 1 · c) Nhìn nhầm sang chữ số ở hàng cần làm tròn thay vì hàng liền sau nó. · d) Quy tắc làm tròn, giá trị hàng · e) Che toàn bộ phần đuôi sau nét gạch, chỉ để lộ đúng một chữ số.
 - **Bài D.3** — a) Tổng gồm các số tròn chục, tròn trăm, tròn nghìn… · b) Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết · c) Bỏ qua hàng khuyết nên số viết ra bị ngắn đi một chữ số. · d) Cấu tạo thập phân của số tự nhiên · e) Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số.
-- **Bài D.4** — a) Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = · b) Đếm chữ số → so từng hàng từ trái sang phải · c) So từ hàng đơn vị (phải sang trái) nên kết luận sai. · d) Thứ tự trong tập số tự nhiên · e) Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số.
+- **Bài D.4** — a) Dấu … giữa hai số, yêu cầu điền <, >, = · b) Đếm chữ số → so từng hàng từ trái sang phải · c) So từ hàng đơn vị (phải sang trái) nên kết luận sai. · d) Thứ tự trong tập số tự nhiên · e) Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số.
 - **Bài D.5** — a) Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” · b) Xét chữ số tận cùng; cộng hoặc trừ 1 đơn vị · c) Nhầm “liền trước” với “bé hơn”, trả lời một số bất kì bé hơn. · d) Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2 · e) Che hết các chữ số, chỉ để lộ chữ số cuối.
 
 **Phần E**
@@ -86,7 +86,7 @@ Mỗi số hạng cho biết một hàng. Xếp các chữ số vào đúng hàn
 
 *Điểm chốt:* Tổng các chữ số **không** phụ thuộc thứ tự các chữ số.
 
-### Bài A.3 — Điền dấu &lt;, &gt;, = thích hợp
+### Bài A.3 — Điền dấu <, >, = thích hợp
 
 So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 
@@ -234,7 +234,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 |---|---|---|---|---|---|---|
 | A.1 | Viết số từ dạng tổng theo hàng | Cấu tạo thập phân của số tự nhiên | Tổng gồm các số tròn chục, tròn trăm, tròn nghìn… | Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết | Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số. | 811 557 · 410 489 · 703 654 · 500 348… |
 | A.2 | Đếm chữ số, tính tổng chữ số | Cấu tạo số, tổng chữ số | Yêu cầu “có mấy chữ số”, “tổng các chữ số” | Tách lớp để đếm; cộng rời từng chữ số | Ghép cặp các chữ số cộng lại tròn 10 rồi cộng nhanh. | 6 chữ số, tổng 23 · 6 chữ số, tổng 26 · 5 chữ số, tổng 21 · 5 chữ số, tổng 12… |
-| A.3 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | &lt; · &lt; · &gt; · &lt;… |
+| A.3 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | < · < · > · <… |
 | A.4 | Nhận biết chẵn – lẻ và số liền kề | Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2 | Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” | Xét chữ số tận cùng; cộng hoặc trừ 1 đơn vị | Che hết các chữ số, chỉ để lộ chữ số cuối. | 139 415 · 210 282 · 614 667 · 648 758… |
 | A.5 | Xác định chữ số và giá trị chữ số theo hàng | Cấu tạo thập phân của số tự nhiên | Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” | Đánh số hàng từ phải sang trái rồi tra bảng hàng | Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị. | chữ số 9, giá trị 900 000 · chữ số 1, giá trị 10 000 · chữ số 3, giá trị 300 · chữ số 6, giá trị 60 |
 | B.1 | Kỹ năng trình bày | Chuẩn trình bày bài giải | Yêu cầu “trình bày lời giải” | Viết đủ bốn dòng | Viết câu lời giải trước, phép tính sau — không bao giờ ngược lại. | câu lời giải nêu rõ đang tìm đại lượng nào · phép tính, viết đủ dấu và đủ đơn vị · kết quả kèm đơn vị · câu đáp số… |
@@ -250,7 +250,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | D.1 | Sơ đồ tư duy tổng hợp | Hệ thống hoá toàn chương | Yêu cầu vẽ lại sơ đồ không nhìn tài liệu | Vẽ từ trí nhớ rồi đối chiếu | Chỗ nào quên khi vẽ chính là chỗ phải ôn lại đầu tiên. | Dấu hiệu chia hết và bài toán chia hết · 7 · tên một dạng bài của chương · 3 nhánh con: dấu hiệu · phương pháp · lỗi hay mắc… |
 | D.2 | Làm tròn số tự nhiên | Quy tắc làm tròn, giá trị hàng | Cụm từ “làm tròn đến hàng …” | Gạch ngăn hàng → xét chữ số liền sau → giữ nguyên hoặc thêm 1 | Che toàn bộ phần đuôi sau nét gạch, chỉ để lộ đúng một chữ số. | Cụm từ “làm tròn đến hàng …” · Gạch ngăn hàng → xét chữ số liền sau → giữ nguyên hoặc thêm 1 · Nhìn nhầm sang chữ số ở hàng cần làm tròn thay vì hàng liền sau nó. · Quy tắc làm tròn, giá trị hàng… |
 | D.3 | Viết số từ dạng tổng theo hàng | Cấu tạo thập phân của số tự nhiên | Tổng gồm các số tròn chục, tròn trăm, tròn nghìn… | Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết | Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số. | Tổng gồm các số tròn chục, tròn trăm, tròn nghìn… · Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết · Bỏ qua hàng khuyết nên số viết ra bị ngắn đi một chữ số. · Cấu tạo thập phân của số tự nhiên… |
-| D.4 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = · Đếm chữ số → so từng hàng từ trái sang phải · So từ hàng đơn vị (phải sang trái) nên kết luận sai. · Thứ tự trong tập số tự nhiên… |
+| D.4 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | Dấu … giữa hai số, yêu cầu điền <, >, = · Đếm chữ số → so từng hàng từ trái sang phải · So từ hàng đơn vị (phải sang trái) nên kết luận sai. · Thứ tự trong tập số tự nhiên… |
 | D.5 | Nhận biết chẵn – lẻ và số liền kề | Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2 | Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” | Xét chữ số tận cùng; cộng hoặc trừ 1 đơn vị | Che hết các chữ số, chỉ để lộ chữ số cuối. | Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” · Xét chữ số tận cùng; cộng hoặc trừ 1 đơn vị · Nhầm “liền trước” với “bé hơn”, trả lời một số bất kì bé hơn. · Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2… |
 | E.1 | Kỹ năng thuyết trình theo nhóm | Hệ thống hoá và diễn đạt | Yêu cầu giảng lại chương theo nhóm | Chia kịch bản theo phút, phân công rõ người | Người giảng nhớ lâu hơn người nghe khoảng ba lần. | giới thiệu chương “Dấu hiệu chia hết và bài toán chia hết” và mục tiêu · trình bày sơ đồ tư duy chương · giảng một dạng bài kèm ví dụ mẫu · nêu lỗi hay mắc và cách phòng… |
 | E.2 | Kiểm tra chia hết bằng dấu hiệu | Dấu hiệu chia hết cho 2, 3, 5, 9 | Câu hỏi “có chia hết cho … không” | Chọn đúng dấu hiệu theo số chia rồi kiểm tra | Cộng chữ số theo cặp tròn 9, phần dư chính là số dư khi chia 9. | “Hôm nay nhóm mình nói về Kiểm tra chia hết bằng dấu hiệu.” · Câu hỏi “có chia hết cho … không” · Dấu hiệu chia hết cho 2, 3, 5, 9 · Số 561 có chia hết cho 9 không? → không… |
@@ -366,7 +366,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 |---|---|---|
 | A.1 | Viết số gồm tổng: 30 000 + 400 + 7 | 30 407 |
 | A.2 | Số 40 506 có mấy chữ số và tổng các chữ số bằng bao nhiêu? | 5 chữ số, tổng 15 |
-| A.3 | Điền dấu: 73 365 … 73 366 | &lt; |
+| A.3 | Điền dấu: 73 365 … 73 366 | < |
 | A.4 | Số liền sau của 139 414 là số nào? | 139 415 |
 | A.5 | Chữ số hàng chục của số 917 369 có giá trị bao nhiêu? | 60 |
 | B.1 | Một lời giải đạt chuẩn GITA có mấy dòng bắt buộc? | 4 dòng |
@@ -382,7 +382,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | D.1 | Vẽ sơ đồ mà nhìn tài liệu thì mất tác dụng gì? | mất tác dụng kiểm tra trí nhớ |
 | D.2 | Làm tròn 4 762 đến hàng trăm. | 4 800 |
 | D.3 | Viết số gồm tổng: 30 000 + 400 + 7 | 30 407 |
-| D.4 | Điền dấu: 692 827 … 692 828 | &lt; |
+| D.4 | Điền dấu: 692 827 … 692 828 | < |
 | D.5 | Số liền sau của 433 286 là số nào? | 433 287 |
 | E.1 | Vì sao phải giảng lại cho bạn? | vì giảng được mới là hiểu thật |
 | E.2 | Số 561 có chia hết cho 9 không? | không |

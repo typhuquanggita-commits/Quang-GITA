@@ -66,7 +66,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài E.2** — a) “Hôm nay nhóm mình nói về Tính nhanh biểu thức số thập phân.” · b) Các số thập phân cộng lại tròn chục hoặc có thừa số chung · c) Tính chất phép tính với số thập phân · d) Tính nhanh: 2,5 × 4 × 25 → 250 · e) Đặt dấu phẩy sai vị trí ở kết quả cuối. · f) × 4 rồi × 25 là × 100 — chỉ việc dịch dấu phẩy sang phải hai chữ số.
 - **Bài E.3** — a) “Hôm nay nhóm mình nói về Tính nhanh biểu thức phân số.” · b) Các phân số cùng mẫu, tử số cộng lại tròn mẫu · c) Cộng phân số cùng mẫu, phân số đảo ngược · d) Tính nhanh: 3 phần 7 + 4 phần 7 → 1 · e) Quy đồng ngay lập tức mà không quan sát, làm dài dòng. · f) Nếu tổng các tử số bằng mẫu số thì kết quả bằng 1, không cần tính gì thêm.
 - **Bài E.4** — a) “Hôm nay nhóm mình nói về Tính nhanh tích, thương nhiều bước.” · b) Tích có thừa số 25, 125, 50, 20; hoặc chia liên tiếp · c) Tính chất giao hoán, kết hợp của phép nhân · d) Tính nhanh: 37 × 25 × 4 → 3 700 · e) Nhân lần lượt từ trái sang phải nên số trung gian rất lớn. · f) Chia liên tiếp cho 4 rồi 25 bằng chia cho 100.
-- **Bài E.5** — a) “Hôm nay nhóm mình nói về So sánh biểu thức không tính giá trị.” · b) Hai vế có chung một số hạng hoặc một thừa số · c) Tính chất bất đẳng thức trong phép cộng, phép nhân · d) So sánh: 234 × 7 … 234 × 8 → &lt; · e) Tính hết cả hai vế, vừa lâu vừa dễ sai. · f) Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn.
+- **Bài E.5** — a) “Hôm nay nhóm mình nói về So sánh biểu thức không tính giá trị.” · b) Hai vế có chung một số hạng hoặc một thừa số · c) Tính chất bất đẳng thức trong phép cộng, phép nhân · d) So sánh: 234 × 7 … 234 × 8 → < · e) Tính hết cả hai vế, vừa lâu vừa dễ sai. · f) Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn.
 
 ---
 
@@ -256,7 +256,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | E.2 | Tính nhanh biểu thức số thập phân | Tính chất phép tính với số thập phân | Các số thập phân cộng lại tròn chục hoặc có thừa số chung | Ghép cặp tròn, đặt thừa số chung | × 4 rồi × 25 là × 100 — chỉ việc dịch dấu phẩy sang phải hai chữ số. | “Hôm nay nhóm mình nói về Tính nhanh biểu thức số thập phân.” · Các số thập phân cộng lại tròn chục hoặc có thừa số chung · Tính chất phép tính với số thập phân · Tính nhanh: 2,5 × 4 × 25 → 250… |
 | E.3 | Tính nhanh biểu thức phân số | Cộng phân số cùng mẫu, phân số đảo ngược | Các phân số cùng mẫu, tử số cộng lại tròn mẫu | Quan sát tổng tử số; nhận diện cặp phân số đảo ngược | Nếu tổng các tử số bằng mẫu số thì kết quả bằng 1, không cần tính gì thêm. | “Hôm nay nhóm mình nói về Tính nhanh biểu thức phân số.” · Các phân số cùng mẫu, tử số cộng lại tròn mẫu · Cộng phân số cùng mẫu, phân số đảo ngược · Tính nhanh: 3 phần 7 + 4 phần 7 → 1… |
 | E.4 | Tính nhanh tích, thương nhiều bước | Tính chất giao hoán, kết hợp của phép nhân | Tích có thừa số 25, 125, 50, 20; hoặc chia liên tiếp | Ghép cặp cho tích tròn rồi nhân | Chia liên tiếp cho 4 rồi 25 bằng chia cho 100. | “Hôm nay nhóm mình nói về Tính nhanh tích, thương nhiều bước.” · Tích có thừa số 25, 125, 50, 20; hoặc chia liên tiếp · Tính chất giao hoán, kết hợp của phép nhân · Tính nhanh: 37 × 25 × 4 → 3 700… |
-| E.5 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | “Hôm nay nhóm mình nói về So sánh biểu thức không tính giá trị.” · Hai vế có chung một số hạng hoặc một thừa số · Tính chất bất đẳng thức trong phép cộng, phép nhân · So sánh: 234 × 7 … 234 × 8 → &lt;… |
+| E.5 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | “Hôm nay nhóm mình nói về So sánh biểu thức không tính giá trị.” · Hai vế có chung một số hạng hoặc một thừa số · Tính chất bất đẳng thức trong phép cộng, phép nhân · So sánh: 234 × 7 … 234 × 8 → <… |
 
 ---
 
@@ -377,7 +377,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | C.1 | Tầng nào bắt được lỗi trả lời lệch câu hỏi? | tầng 3 |
 | C.2 | Tính nhanh: 2,5 × 4 × 25 | 250 |
 | C.3 | Tính nhanh: 47 × 25 + 47 × 75 | 4 700 |
-| C.4 | So sánh: 234 × 7 … 234 × 8 | &lt; |
+| C.4 | So sánh: 234 × 7 … 234 × 8 | < |
 | C.5 | Đặt tính rồi tính: 3 045 × 24 | 73 080 |
 | D.1 | Vẽ sơ đồ mà nhìn tài liệu thì mất tác dụng gì? | mất tác dụng kiểm tra trí nhớ |
 | D.2 | Tính nhanh: 1 + 2 + 3 + … + 100 | 5 050 |
@@ -388,7 +388,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | E.2 | Tính nhanh: 2,5 × 4 × 25 | 250 |
 | E.3 | Tính nhanh: 3 phần 7 + 4 phần 7 | 1 |
 | E.4 | Tính nhanh: 37 × 25 × 4 | 3 700 |
-| E.5 | So sánh: 234 × 7 … 234 × 8 | &lt; |
+| E.5 | So sánh: 234 × 7 … 234 × 8 | < |
 
 ---
 

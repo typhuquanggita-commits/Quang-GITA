@@ -90,7 +90,7 @@ b) Làm tròn số 343 237 đến hàng nghìn.
 c) Làm tròn số 384 185 đến hàng trăm.
 d) Làm tròn số 31 153 đến hàng chục.
 
-### Bài 5. (3 điểm) Điền dấu &lt;, &gt;, = thích hợp
+### Bài 5. (3 điểm) Điền dấu <, >, = thích hợp
 
 Điền dấu thích hợp vào chỗ chấm.
 
@@ -355,7 +355,7 @@ e) Số lớn gấp 3 lần số bé và tổng hai số là 24. Phải thêm v�
 **Lỗi thường gặp:** Nhìn nhầm sang chữ số ở hàng cần làm tròn thay vì hàng liền sau nó. Phòng: Gạch một nét ngăn ngay sau hàng cần làm tròn rồi mới quyết định.
 
 ### Bài I.5
-**Đáp số:** a) &lt; · b) &gt; · c) &lt; · d) &gt; · e) &gt; · f) &gt; · g) &gt; · h) &lt;
+**Đáp số:** a) < · b) > · c) < · d) > · e) > · f) > · g) > · h) <
 **Hướng giải:** So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Đếm số chữ số **trước**, chỉ khi bằng nhau mới so từng hàng.
 **Lỗi thường gặp:** So từ hàng đơn vị (phải sang trái) nên kết luận sai. Phòng: Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái.
@@ -470,7 +470,7 @@ e) Số lớn gấp 3 lần số bé và tổng hai số là 24. Phải thêm v�
 **Gợi ý 3 tầng:** (1) Đặt số đó là a × 10 + b. — (2) Tổng hai chữ số là a + b — viết cả hai biểu thức ra cạnh nhau. — (3) Lập bảng a từ 1 đến 9 rồi thử.
 
 ### Bài V.3
-**Đáp số:** a) 484 · b) &lt; · c) 39 · d) 40 · e) &lt;
+**Đáp số:** a) 484 · b) < · c) 39 · d) 40 · e) <
 **Hướng giải:** BẪY — Hai tích trông bằng nhau nhưng không bằng. Khi hai tích có các thừa số gần nhau, viết chúng theo cùng một số gốc rồi so phần chênh lệch. Khi hai tích cùng một thừa số, hiệu của chúng bằng thừa số chung nhân với hiệu hai thừa số kia.
 **Nhãn tư duy:** TD5, TD6. Điểm chốt: Đưa mọi số về **cùng một số gốc** rồi mới so hoặc trừ.
 **Lỗi thường gặp:** Nhân hết ra rồi mới so sánh — số lớn, dễ sai và mất thời gian. Phòng: Viết mỗi thừa số dưới dạng “số gốc cộng hoặc trừ mấy đơn vị”.

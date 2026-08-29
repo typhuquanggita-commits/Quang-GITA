@@ -63,9 +63,9 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần V**
 
 - **Bài V.1** — a) Biểu thức phân số nhiều phép tính · b) Thứ tự thực hiện phép tính, tính chất phân phối · c) Biểu thức gồm nhiều phân số và nhiều phép tính · d) Quan sát rút gọn trước, sau đó theo thứ tự thực hiện · e) Rút gọn chéo tử với mẫu trước khi nhân. · f) 55 phần 14 · 65 phần 33 · 36 phần 25 · 80 phần 231…
-- **Bài V.2** — a) So sánh phân số bằng kĩ thuật đặc biệt · b) Phần bù tới 1, phân số trung gian · c) Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 · d) So phần bù; hoặc chèn phân số trung gian · e) Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. · f) &lt; · &gt; · &lt; · &gt;…
+- **Bài V.2** — a) So sánh phân số bằng kĩ thuật đặc biệt · b) Phần bù tới 1, phân số trung gian · c) Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 · d) So phần bù; hoặc chèn phân số trung gian · e) Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. · f) < · > · < · >…
 - **Bài V.3** — a) Tìm phân số của một số · b) Nhân số tự nhiên với phân số · c) Cụm “bằng … của …” · d) Chia theo mẫu số rồi nhân theo tử số · e) Chia trước, nhân sau — số nhỏ hơn nên tính nhẩm được. · f) 25 cây · 28 cây · 35 cây · 186 cây…
-- **Bài V.4** — a) So sánh phân số · b) Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu · c) Hai phân số nối bởi dấu … · d) Xét cùng mẫu → cùng tử → quy đồng · e) So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. · f) &lt; · &gt; · &gt; · &lt;…
+- **Bài V.4** — a) So sánh phân số · b) Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu · c) Hai phân số nối bởi dấu … · d) Xét cùng mẫu → cùng tử → quy đồng · e) So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. · f) < · > · > · <…
 - **Bài V.5** — a) Rút gọn phân số · b) Tính chất cơ bản của phân số · c) Tử số và mẫu số có ước chung lớn hơn 1 · d) Chia cả tử và mẫu cho ước chung · e) Tìm ngay ước chung lớn nhất để rút gọn một lần là xong. · f) 3 · 1 phần 3 · 9 phần 2 · 1 phần 6…
 
 ---
@@ -385,9 +385,9 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | IV.4 | Tính: (1 phần 2 + 1 phần 3) × 6 phần 5 | 1 |
 | IV.5 | Dãy cách đều 10 số hạng, đầu 5, cuối 50. Tổng bằng bao nhiêu? | 275 |
 | V.1 | Tính: (1 phần 2 + 1 phần 3) × 6 phần 5 | 1 |
-| V.2 | So sánh: 5 phần 6 … 7 phần 8 | &lt; |
+| V.2 | So sánh: 5 phần 6 … 7 phần 8 | < |
 | V.3 | Tổ Một trồng 60 cây, tổ Hai bằng 2 phần 3 tổ Một. Tổ Hai trồng mấy cây? | 40 cây |
-| V.4 | So sánh: 3 phần 5 … 3 phần 7 | &gt; |
+| V.4 | So sánh: 3 phần 5 … 3 phần 7 | > |
 | V.5 | Rút gọn 18 phần 24. | 3 phần 4 |
 
 ---

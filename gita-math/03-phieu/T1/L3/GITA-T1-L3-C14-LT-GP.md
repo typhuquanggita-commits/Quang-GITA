@@ -31,7 +31,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần A**
 
 - **Bài A.1** — a) 44 · b) 53 · c) 60 · d) 57 · e) 27
-- **Bài A.2** — a) &lt; · b) &lt; · c) &gt; · d) &lt; · e) &lt; · f) &lt; · g) &lt;
+- **Bài A.2** — a) < · b) < · c) > · d) < · e) < · f) < · g) <
 - **Bài A.3** — a) 6 bạn · b) 30 cách · c) 16 cách · d) 14 bạn
 - **Bài A.4** — a) 12 cách · b) 10 cách · c) 35 cách · d) 28 cách · e) 49 cách · f) 21 cách
 - **Bài A.5** — a) ô (Dũng; Âm nhạc) · b) toàn bộ hàng Dũng và toàn bộ cột Âm nhạc · c) ô (Yến; Mĩ thuật) · d) Tiếng Anh · e) Mĩ thuật · f) phương pháp lập bảng và loại trừ
@@ -80,7 +80,7 @@ Trung bình cộng của nhiều số bằng tổng các số đó chia cho số
 
 *Điểm chốt:* Chia cho **số lượng số hạng**, không phải chia cho một số bất kì.
 
-### Bài A.2 — Điền dấu &lt;, &gt;, = thích hợp
+### Bài A.2 — Điền dấu <, >, = thích hợp
 
 So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 
@@ -233,7 +233,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
 | A.1 | Tìm trung bình cộng | Định nghĩa trung bình cộng | Từ khoá “trung bình cộng”, “trung bình mỗi …” | Tổng chia số lượng | Ước lượng: trung bình cộng luôn nằm giữa số bé nhất và số lớn nhất. | 44 · 53 · 60 · 57… |
-| A.2 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | &lt; · &lt; · &gt; · &lt;… |
+| A.2 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | < · < · > · <… |
 | A.3 | Đếm bằng quy tắc cộng, nhân, bù trừ | Quy tắc cộng, quy tắc nhân, nguyên lí bù trừ | Từ khoá “và”, “hoặc”, “cả hai”, “ít nhất một” | Vẽ hai vòng tròn giao nhau, đếm theo miền | Vẽ sơ đồ Ven ba miền, điền số vào miền giữa trước. | 6 bạn · 30 cách · 16 cách · 14 bạn |
 | A.4 | Quy tắc nhân | Quy tắc nhân, quy tắc cộng trong phép đếm | Chọn một phần tử từ mỗi nhóm để ghép thành một bộ | Nhân số cách của các bước liên tiếp | Vẽ sơ đồ cây với hai ba nhánh đầu để thấy rõ phép nhân. | 12 cách · 10 cách · 35 cách · 28 cách… |
 | A.5 | Suy luận loại trừ có bảng | Phương pháp lập bảng, loại trừ | Mỗi người ứng với đúng một đối tượng, đề cho các dữ kiện phủ định | Kẻ bảng, đánh dấu, lan toả theo hàng và cột | Bắt đầu từ dữ kiện khẳng định (“thích”, “là”) trước dữ kiện phủ định. | ô (Dũng; Âm nhạc) · toàn bộ hàng Dũng và toàn bộ cột Âm nhạc · ô (Yến; Mĩ thuật) · Tiếng Anh… |
@@ -365,7 +365,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | Bài | Đề tương tự | Đáp số |
 |---|---|---|
 | A.1 | Tìm trung bình cộng của 12, 18 và 30. | 20 |
-| A.2 | Điền dấu: 93 044 … 93 045 | &lt; |
+| A.2 | Điền dấu: 93 044 … 93 045 | < |
 | A.3 | 20 bạn giỏi Toán, 15 giỏi Văn, 8 giỏi cả hai. Bao nhiêu bạn giỏi ít nhất một môn? | 27 bạn |
 | A.4 | Có 3 áo và 4 quần, có bao nhiêu cách chọn một bộ? | 12 cách |
 | A.5 | Ba bạn thích ba môn khác nhau, An thích Toán, Bình không thích Anh. Bình thích môn nào? | Tiếng Việt |

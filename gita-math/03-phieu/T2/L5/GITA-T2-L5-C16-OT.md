@@ -192,7 +192,7 @@ e) Với 7 điểm thì có tất cả bao nhiêu đoạn thẳng?
 
 ### Bài 4. (5 điểm) So sánh hai biểu thức mà không cần tính
 
-Điền dấu &lt;, &gt;, = và giải thích ngắn.
+Điền dấu <, >, = và giải thích ngắn.
 
 a) 155 × 11 … 155 × 12
 b) 485 + 13 … 472 + 13
@@ -420,7 +420,7 @@ f) Cột 6 — Kết quả?
 **Lỗi thường gặp:** Chỉ đếm tam giác nhỏ, quên các tam giác ghép. Phòng: Đánh dấu tên các điểm rồi liệt kê từng cặp một cách có thứ tự.
 
 ### Bài III.4
-**Đáp số:** a) &lt; · b) &gt; · c) &lt; · d) &gt; · e) &lt;
+**Đáp số:** a) < · b) > · c) < · d) > · e) <
 **Hướng giải:** Khi hai biểu thức có phần giống nhau, chỉ cần so sánh phần khác nhau: cùng cộng thêm một số thì số nào lớn hơn vẫn lớn hơn; cùng nhân với một số khác 0 cũng vậy.
 **Nhãn tư duy:** TD5, TD2. Điểm chốt: Che phần **giống nhau** đi, chỉ so phần khác nhau.
 **Lỗi thường gặp:** Tính hết cả hai vế, vừa lâu vừa dễ sai. Phòng: Dùng bút gạch bỏ phần giống nhau ở hai vế trước khi so sánh.

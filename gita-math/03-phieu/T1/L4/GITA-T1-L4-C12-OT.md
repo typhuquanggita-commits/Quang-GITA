@@ -100,7 +100,7 @@ f) Xếp liên tiếp 20 hình đầu tiên thì cần tất cả bao nhiêu que
 
 ### Bài 5. (4 điểm) So sánh hai số đo khác đơn vị
 
-Điền dấu &lt;, &gt;, = thích hợp.
+Điền dấu <, >, = thích hợp.
 
 a) 28 yến … 5 476 g
 b) 60 cm² … 5 438 dm²
@@ -157,7 +157,7 @@ f) Nếu có 9 đồng tiền thì cần cân mấy lần?
 
 ### Bài 5. (4 điểm) So sánh hai biểu thức mà không cần tính
 
-Điền dấu &lt;, &gt;, = và giải thích ngắn.
+Điền dấu <, >, = và giải thích ngắn.
 
 a) 758 × 11 … 778 × 11
 b) 131 × 19 … 198 × 19
@@ -378,7 +378,7 @@ f) Cột 6 — Kết quả?
 **Lỗi thường gặp:** Vẽ tay từng hình để đếm, không kịp thời gian với hình thứ hai, ba chục. Phòng: Lập bảng ba hình đầu để tìm khoảng cách rồi mới dùng công thức.
 
 ### Bài I.5
-**Đáp số:** a) &gt; · b) &lt; · c) &lt; · d) &gt; · e) &lt; · f) &lt; · g) &gt;
+**Đáp số:** a) > · b) < · c) < · d) > · e) < · f) < · g) >
 **Hướng giải:** Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.
@@ -408,7 +408,7 @@ f) Cột 6 — Kết quả?
 **Lỗi thường gặp:** Chia đôi như tìm kiếm thông thường nên cần nhiều lần cân hơn mức cần thiết. Phòng: Nhớ ba kết quả: nghiêng trái, nghiêng phải, thăng bằng.
 
 ### Bài II.5
-**Đáp số:** a) &lt; · b) &lt; · c) &lt; · d) &gt;
+**Đáp số:** a) < · b) < · c) < · d) >
 **Hướng giải:** Khi hai biểu thức có phần giống nhau, chỉ cần so sánh phần khác nhau: cùng cộng thêm một số thì số nào lớn hơn vẫn lớn hơn; cùng nhân với một số khác 0 cũng vậy.
 **Nhãn tư duy:** TD5, TD2. Điểm chốt: Che phần **giống nhau** đi, chỉ so phần khác nhau.
 **Lỗi thường gặp:** Tính hết cả hai vế, vừa lâu vừa dễ sai. Phòng: Dùng bút gạch bỏ phần giống nhau ở hai vế trước khi so sánh.

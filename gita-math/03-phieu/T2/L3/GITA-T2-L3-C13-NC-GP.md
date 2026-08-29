@@ -32,7 +32,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài I.1** — a) 85 · b) 110 · c) 80 · d) 143 · e) 450
 - **Bài I.2** — a) 712 · b) 876 · c) 209 · d) 2 975 · e) 762 · f) 727 · g) 880
-- **Bài I.3** — a) &lt; · b) &gt; · c) &lt; · d) &gt; · e) &gt; · f) &gt; · g) &gt; · h) &lt;
+- **Bài I.3** — a) < · b) > · c) < · d) > · e) > · f) > · g) > · h) <
 - **Bài I.4** — a) x = 360 · b) x = 85 · c) x = 285 · d) x = 44
 - **Bài I.5** — a) 1 570 · b) 57 · c) 75 · d) 356 · e) 1 667 · f) 371 · g) 148
 
@@ -86,7 +86,7 @@ Nhân lần lượt từng chữ số của thừa số thứ hai với số th�
 
 *Điểm chốt:* Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 
-### Bài I.3 — Điền dấu &lt;, &gt;, = thích hợp
+### Bài I.3 — Điền dấu <, >, = thích hợp
 
 So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 
@@ -234,7 +234,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 |---|---|---|---|---|---|---|
 | I.1 | Tính giá trị biểu thức số | Thứ tự thực hiện các phép tính | Biểu thức có nhiều phép tính, có thể có ngoặc | Xét ngoặc → nhân chia → cộng trừ, trái sang phải | Nếu thấy dạng a × b + a × c thì đưa ngay về a × (b + c). | 85 · 110 · 80 · 143… |
 | I.2 | Nhân, chia số tự nhiên | Kĩ thuật đặt tính nhân, chia | Yêu cầu “đặt tính rồi tính” với phép nhân, chia | Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ chữ số | Kiểm tra kết quả bằng phép tính ngược: thương × số chia = số bị chia. | 712 · 876 · 209 · 2 975… |
-| I.3 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | &lt; · &gt; · &lt; · &gt;… |
+| I.3 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | < · > · < · >… |
 | I.4 | Tìm x trong phép tính một bước | Quan hệ giữa các thành phần của phép tính | Có chữ x đứng trong một phép tính | Gọi tên vai trò của x rồi dùng quy tắc tương ứng | Thử lại bằng cách thay x vào đề — mất 3 giây nhưng chắc chắn. | x = 360 · x = 85 · x = 285 · x = 44 |
 | I.5 | Cộng, trừ số tự nhiên | Kĩ thuật đặt tính, nhớ và mượn | Yêu cầu “đặt tính rồi tính” | Đặt tính thẳng hàng, tính từ hàng đơn vị | Làm tròn một số hạng để ước lượng trước, dùng kết quả ước lượng để phát hiện sai sót. | 1 570 · 57 · 75 · 356… |
 | II.1 | Tính nhanh tổng nhiều số hạng | Tính chất giao hoán, kết hợp của phép cộng | Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm | Ghép cặp tròn rồi cộng | Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10. | 131 · 322 · 200 · 200… |
@@ -366,7 +366,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 |---|---|---|
 | I.1 | Tính: 25 + 8 × 4 | 57 |
 | I.2 | Đặt tính rồi tính: 3 045 × 24 | 73 080 |
-| I.3 | Điền dấu: 47 766 … 47 767 | &lt; |
+| I.3 | Điền dấu: 47 766 … 47 767 | < |
 | I.4 | Tìm x: x × 7 = 91 | x = 13 |
 | I.5 | Đặt tính rồi tính: 4 328 + 1 795 | 6 123 |
 | II.1 | Tính nhanh: 37 + 145 + 63 | 245 |

@@ -91,7 +91,7 @@ g) Rút gọn phân số 6 phần 6.
 
 ### Bài 4. (1 điểm) So sánh hai phân số
 
-Điền dấu &lt;, &gt;, = thích hợp.
+Điền dấu <, >, = thích hợp.
 
 a) 3 phần 2 … 5 phần 3
 b) 2 … 2 phần 3
@@ -229,7 +229,7 @@ f) Cách xử lý nhanh nhất của dạng “So sánh phân số bằng kĩ th
 
 ### Bài 1. (6 điểm) Key 1 — Số thập phân — hàng, so sánh, chuyển đổi
 
-**Phát biểu:** Cấu tạo số thập phân, quan hệ phân số – số thập phân. **Ví dụ mẫu:** So sánh: 0,5 … 0,45 → &gt;.
+**Phát biểu:** Cấu tạo số thập phân, quan hệ phân số – số thập phân. **Ví dụ mẫu:** So sánh: 0,5 … 0,45 → >.
 
 a) Phát biểu lại key này bằng lời của em.
 b) Key này dùng cho dạng bài nào?
@@ -355,7 +355,7 @@ f) Mua 5 quyển vở hết 360 nghìn đồng. Với 2 088 nghìn đồng thì 
 **Lỗi thường gặp:** Viết lệch hàng khi hai số có số chữ số khác nhau. Phòng: Kẻ cột dọc cho từng hàng trước khi viết số.
 
 ### Bài A.2
-**Đáp số:** a) &gt; · b) 0,3 · c) 8 · d) &lt; · e) 0,9 · f) 5 · g) &lt;
+**Đáp số:** a) > · b) 0,3 · c) 8 · d) < · e) 0,9 · f) 5 · g) <
 **Hướng giải:** Sau dấu phẩy lần lượt là hàng phần mười, phần trăm, phần nghìn. So sánh số thập phân: so phần nguyên trước; phần nguyên bằng nhau thì so lần lượt hàng phần mười, phần trăm, phần nghìn. Phân số có mẫu là 10, 100, 1 000 đổi được thẳng sang số thập phân.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: So sánh theo **hàng**, không so theo số chữ số sau dấu phẩy.
 **Lỗi thường gặp:** Cho rằng số có nhiều chữ số sau dấu phẩy hơn thì lớn hơn. Phòng: Viết thêm chữ số 0 vào cuối để hai số có cùng số chữ số thập phân rồi mới so.
@@ -367,7 +367,7 @@ f) Mua 5 quyển vở hết 360 nghìn đồng. Với 2 088 nghìn đồng thì 
 **Lỗi thường gặp:** Chỉ chia tử số hoặc chỉ chia mẫu số. Phòng: Viết phép chia cho cả hai dòng, kiểm tra lại bằng cách nhân ngược.
 
 ### Bài A.4
-**Đáp số:** a) &lt; · b) &gt; · c) &gt; · d) &lt; · e) &gt; · f) &gt;
+**Đáp số:** a) < · b) > · c) > · d) < · e) > · f) >
 **Hướng giải:** Cùng mẫu số: phân số nào có tử số lớn hơn thì lớn hơn. Cùng tử số: phân số nào có mẫu số **bé** hơn thì lớn hơn. Khác cả tử lẫn mẫu: quy đồng mẫu số rồi so tử số.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Cùng tử số thì **mẫu bé hơn là phân số lớn hơn** — ngược với trực giác.
 **Lỗi thường gặp:** Thấy mẫu số lớn thì kết luận phân số lớn. Phòng: Nghĩ tới chiếc bánh: chia càng nhiều phần thì mỗi phần càng bé.
@@ -439,7 +439,7 @@ f) Mua 5 quyển vở hết 360 nghìn đồng. Với 2 088 nghìn đồng thì 
 **Lỗi thường gặp:** Dùng mẹo mà không hiểu vì sao đúng nên áp dụng sai chỗ. Phòng: Với mỗi mẹo, viết thêm một dòng “mẹo này đúng vì …”.
 
 ### Bài D.1
-**Đáp số:** a) Cấu tạo số thập phân, quan hệ phân số – số thập phân · b) Số thập phân — hàng, so sánh, chuyển đổi · c) Số có dấu phẩy; phân số mẫu 10, 100, 1 000 · d) Xét theo hàng từ trái sang phải · e) Cho rằng số có nhiều chữ số sau dấu phẩy hơn thì lớn hơn. · f) &gt;
+**Đáp số:** a) Cấu tạo số thập phân, quan hệ phân số – số thập phân · b) Số thập phân — hàng, so sánh, chuyển đổi · c) Số có dấu phẩy; phân số mẫu 10, 100, 1 000 · d) Xét theo hàng từ trái sang phải · e) Cho rằng số có nhiều chữ số sau dấu phẩy hơn thì lớn hơn. · f) >
 **Hướng giải:** Sau dấu phẩy lần lượt là hàng phần mười, phần trăm, phần nghìn. So sánh số thập phân: so phần nguyên trước; phần nguyên bằng nhau thì so lần lượt hàng phần mười, phần trăm, phần nghìn. Phân số có mẫu là 10, 100, 1 000 đổi được thẳng sang số thập phân.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: So sánh theo **hàng**, không so theo số chữ số sau dấu phẩy.
 **Lỗi thường gặp:** Cho rằng số có nhiều chữ số sau dấu phẩy hơn thì lớn hơn. Phòng: Viết thêm chữ số 0 vào cuối để hai số có cùng số chữ số thập phân rồi mới so.

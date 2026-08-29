@@ -32,7 +32,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài I.1** — a) 11 552 · b) số lẻ · c) 63 178 · d) 80 172 · e) 90 669 · f) 98 624
 - **Bài I.2** — a) chữ số 7, giá trị 70 000 · b) chữ số 4, giá trị 4 000 · c) chữ số 6, giá trị 600 · d) chữ số 4, giá trị 4
-- **Bài I.3** — a) &lt; · b) &lt; · c) &gt; · d) &gt; · e) &lt; · f) &lt;
+- **Bài I.3** — a) < · b) < · c) > · d) > · e) < · f) <
 - **Bài I.4** — a) 114 cm · b) 116 cm · c) 2 332 cm² · d) 2 025 cm² · e) 196 cm · f) 156 cm
 - **Bài I.5** — a) 5 chữ số, tổng 29 · b) 5 chữ số, tổng 25 · c) 5 chữ số, tổng 18 · d) 5 chữ số, tổng 17 · e) 4 chữ số, tổng 19 · f) 5 chữ số, tổng 28
 
@@ -86,7 +86,7 @@ Số chẵn là số có chữ số tận cùng 0, 2, 4, 6, 8; số lẻ tận c
 
 *Điểm chốt:* Phân biệt **chữ số** (một kí hiệu) với **giá trị** của chữ số (chữ số nhân giá trị hàng).
 
-### Bài I.3 — Điền dấu &lt;, &gt;, = thích hợp
+### Bài I.3 — Điền dấu <, >, = thích hợp
 
 So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 
@@ -234,7 +234,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 |---|---|---|---|---|---|---|
 | I.1 | Nhận biết chẵn – lẻ và số liền kề | Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2 | Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” | Xét chữ số tận cùng; cộng hoặc trừ 1 đơn vị | Che hết các chữ số, chỉ để lộ chữ số cuối. | 11 552 · số lẻ · 63 178 · 80 172… |
 | I.2 | Xác định chữ số và giá trị chữ số theo hàng | Cấu tạo thập phân của số tự nhiên | Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” | Đánh số hàng từ phải sang trái rồi tra bảng hàng | Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị. | chữ số 7, giá trị 70 000 · chữ số 4, giá trị 4 000 · chữ số 6, giá trị 600 · chữ số 4, giá trị 4 |
-| I.3 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | &lt; · &lt; · &gt; · &gt;… |
+| I.3 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | < · < · > · >… |
 | I.4 | Chu vi, diện tích hình cơ bản | Công thức chu vi, diện tích hình chữ nhật và hình vuông | Cho chiều dài, chiều rộng hoặc cạnh | Chọn đúng công thức, ghi đúng đơn vị | Hình vuông là hình chữ nhật có dài bằng rộng — chỉ cần nhớ một bộ công thức. | 114 cm · 116 cm · 2 332 cm² · 2 025 cm²… |
 | I.5 | Đếm chữ số, tính tổng chữ số | Cấu tạo số, tổng chữ số | Yêu cầu “có mấy chữ số”, “tổng các chữ số” | Tách lớp để đếm; cộng rời từng chữ số | Ghép cặp các chữ số cộng lại tròn 10 rồi cộng nhanh. | 5 chữ số, tổng 29 · 5 chữ số, tổng 25 · 5 chữ số, tổng 18 · 5 chữ số, tổng 17… |
 | II.1 | Chu vi, diện tích hình cơ bản | Công thức chu vi, diện tích | Cho chiều dài, chiều rộng hoặc cạnh | Chọn công thức, ghi đúng đơn vị | Hình vuông là hình chữ nhật có dài bằng rộng. | 74 cm² · 84 cm · 1 521 cm² · 114 cm… |
@@ -366,7 +366,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 |---|---|---|
 | I.1 | Số liền sau của 11 551 là số nào? | 11 552 |
 | I.2 | Chữ số hàng chục của số 74 624 có giá trị bao nhiêu? | 20 |
-| I.3 | Điền dấu: 92 039 … 92 040 | &lt; |
+| I.3 | Điền dấu: 92 039 … 92 040 | < |
 | I.4 | Hình chữ nhật dài 8 cm, rộng 5 cm. Tính diện tích. | 40 cm² |
 | I.5 | Số 40 506 có mấy chữ số và tổng các chữ số bằng bao nhiêu? | 5 chữ số, tổng 15 |
 | II.1 | Hình vuông cạnh 6 cm. Tính diện tích. | 36 cm² |

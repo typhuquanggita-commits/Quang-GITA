@@ -32,7 +32,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài A.1** — a) 15 120 · b) số lẻ · c) 54 930 · d) 71 279
 - **Bài A.2** — a) chữ số 1, giá trị 1 000 · b) chữ số 8, giá trị 800 · c) chữ số 7, giá trị 70 · d) chữ số 4, giá trị 4
-- **Bài A.3** — a) &lt; · b) &gt; · c) &gt; · d) &gt; · e) &lt; · f) &lt; · g) &lt;
+- **Bài A.3** — a) < · b) > · c) > · d) > · e) < · f) < · g) <
 - **Bài A.4** — a) 5 chữ số, tổng 20 · b) 5 chữ số, tổng 11 · c) 5 chữ số, tổng 22 · d) 5 chữ số, tổng 30 · e) 5 chữ số, tổng 16 · f) 5 chữ số, tổng 13
 - **Bài A.5** — a) 49, 55, 61 · b) 66, 76, 86 · c) 45, 47, 49 · d) 47, 54, 61 · e) 28, 33, 38 · f) 24, 27, 30
 
@@ -55,7 +55,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần D**
 
 - **Bài D.1** — a) Chia hết, đếm chữ số và số thoả điều kiện · b) 6 · c) tên một dạng bài của chương · d) 3 nhánh con: dấu hiệu · phương pháp · lỗi hay mắc · e) so với bảng dạng bài ở phiếu Dạng bài & Đọc vị
-- **Bài D.2** — a) Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = · b) Đếm chữ số → so từng hàng từ trái sang phải · c) So từ hàng đơn vị (phải sang trái) nên kết luận sai. · d) Thứ tự trong tập số tự nhiên · e) Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số.
+- **Bài D.2** — a) Dấu … giữa hai số, yêu cầu điền <, >, = · b) Đếm chữ số → so từng hàng từ trái sang phải · c) So từ hàng đơn vị (phải sang trái) nên kết luận sai. · d) Thứ tự trong tập số tự nhiên · e) Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số.
 - **Bài D.3** — a) Cho ba chữ số, yêu cầu lập số · b) Cố định hàng trăm rồi hoán vị hai hàng còn lại · c) Viết lộn xộn nên vừa sót vừa trùng. · d) Cấu tạo số có ba chữ số · e) Ba chữ số khác 0 luôn lập được đúng 6 số.
 - **Bài D.4** — a) “Viết theo thứ tự ngược lại”, “đổi chỗ hai chữ số” · b) Viết cả hai số theo cấu tạo rồi lấy hiệu · c) Coi hiệu hai số bằng hiệu hai chữ số. · d) Cấu tạo số có hai chữ số · e) Hiệu = 9 × (chữ số hàng chục − chữ số hàng đơn vị).
 - **Bài D.5** — a) Bài toán đánh số trang · b) Chia nhóm theo độ dài số rồi nhân, cộng · c) Lấy số trang nhân với 2 hoặc 3 cho toàn bộ. · d) Đếm số hạng, cấu tạo số · e) Sách 99 trang dùng đúng 189 chữ số — nhớ mốc này.
@@ -86,7 +86,7 @@ Số chẵn là số có chữ số tận cùng 0, 2, 4, 6, 8; số lẻ tận c
 
 *Điểm chốt:* Phân biệt **chữ số** (một kí hiệu) với **giá trị** của chữ số (chữ số nhân giá trị hàng).
 
-### Bài A.3 — Điền dấu &lt;, &gt;, = thích hợp
+### Bài A.3 — Điền dấu <, >, = thích hợp
 
 So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 
@@ -234,7 +234,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 |---|---|---|---|---|---|---|
 | A.1 | Nhận biết chẵn – lẻ và số liền kề | Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2 | Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” | Xét chữ số tận cùng; cộng hoặc trừ 1 đơn vị | Che hết các chữ số, chỉ để lộ chữ số cuối. | 15 120 · số lẻ · 54 930 · 71 279 |
 | A.2 | Xác định chữ số và giá trị chữ số theo hàng | Cấu tạo thập phân của số tự nhiên | Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” | Đánh số hàng từ phải sang trái rồi tra bảng hàng | Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị. | chữ số 1, giá trị 1 000 · chữ số 8, giá trị 800 · chữ số 7, giá trị 70 · chữ số 4, giá trị 4 |
-| A.3 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | &lt; · &gt; · &gt; · &gt;… |
+| A.3 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | < · > · > · >… |
 | A.4 | Đếm chữ số, tính tổng chữ số | Cấu tạo số, tổng chữ số | Yêu cầu “có mấy chữ số”, “tổng các chữ số” | Tách lớp để đếm; cộng rời từng chữ số | Ghép cặp các chữ số cộng lại tròn 10 rồi cộng nhanh. | 5 chữ số, tổng 20 · 5 chữ số, tổng 11 · 5 chữ số, tổng 22 · 5 chữ số, tổng 30… |
 | A.5 | Tìm quy luật dãy cách đều | Dãy số cách đều | Dãy số kèm dấu … ở cuối | Tính hiệu các cặp liên tiếp rồi cộng tiếp | Ghi khoảng cách vào giữa các số hạng để nhìn ra quy luật ngay. | 49, 55, 61 · 66, 76, 86 · 45, 47, 49 · 47, 54, 61… |
 | B.1 | Kỹ năng trình bày | Chuẩn trình bày bài giải | Yêu cầu “trình bày lời giải” | Viết đủ bốn dòng | Viết câu lời giải trước, phép tính sau — không bao giờ ngược lại. | câu lời giải nêu rõ đang tìm đại lượng nào · phép tính, viết đủ dấu và đủ đơn vị · kết quả kèm đơn vị · câu đáp số… |
@@ -246,9 +246,9 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | C.2 | Nhận biết chẵn – lẻ và số liền kề | Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2 | Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” | Xét chữ số tận cùng; cộng hoặc trừ 1 đơn vị | Che hết các chữ số, chỉ để lộ chữ số cuối. | tầng 2 · Liền trước – liền sau chỉ hơn kém đúng **1** đơn vị. · toàn bộ số điểm của ý sai · Liền trước – liền sau chỉ hơn kém đúng **1** đơn vị.… |
 | C.3 | Lập số từ bộ chữ số | Cấu tạo số có ba chữ số | Cho ba chữ số, yêu cầu lập số | Cố định hàng trăm rồi hoán vị hai hàng còn lại | Ba chữ số khác 0 luôn lập được đúng 6 số. | tầng 2 · Cố định chữ số hàng trăm rồi mới đổi chỗ hai chữ số còn lại. · toàn bộ số điểm của ý sai · Cố định chữ số hàng trăm rồi mới đổi chỗ hai chữ số còn lại.… |
 | C.4 | Xác định chữ số và giá trị chữ số theo hàng | Cấu tạo thập phân của số tự nhiên | Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” | Đánh số hàng từ phải sang trái rồi tra bảng hàng | Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị. | tầng 2 · Luôn viết số ra nháp rồi đánh dấu hàng đơn vị trước, đi ngược về trái. · toàn bộ số điểm của ý sai · Luôn viết số ra nháp rồi đánh dấu hàng đơn vị trước, đi ngược về trái.… |
-| C.5 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | tầng 1 · Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái. · toàn bộ số điểm của ý sai · Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái.… |
+| C.5 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | tầng 1 · Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái. · toàn bộ số điểm của ý sai · Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái.… |
 | D.1 | Sơ đồ tư duy tổng hợp | Hệ thống hoá toàn chương | Yêu cầu vẽ lại sơ đồ không nhìn tài liệu | Vẽ từ trí nhớ rồi đối chiếu | Chỗ nào quên khi vẽ chính là chỗ phải ôn lại đầu tiên. | Chia hết, đếm chữ số và số thoả điều kiện · 6 · tên một dạng bài của chương · 3 nhánh con: dấu hiệu · phương pháp · lỗi hay mắc… |
-| D.2 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = · Đếm chữ số → so từng hàng từ trái sang phải · So từ hàng đơn vị (phải sang trái) nên kết luận sai. · Thứ tự trong tập số tự nhiên… |
+| D.2 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | Dấu … giữa hai số, yêu cầu điền <, >, = · Đếm chữ số → so từng hàng từ trái sang phải · So từ hàng đơn vị (phải sang trái) nên kết luận sai. · Thứ tự trong tập số tự nhiên… |
 | D.3 | Lập số từ bộ chữ số | Cấu tạo số có ba chữ số | Cho ba chữ số, yêu cầu lập số | Cố định hàng trăm rồi hoán vị hai hàng còn lại | Ba chữ số khác 0 luôn lập được đúng 6 số. | Cho ba chữ số, yêu cầu lập số · Cố định hàng trăm rồi hoán vị hai hàng còn lại · Viết lộn xộn nên vừa sót vừa trùng. · Cấu tạo số có ba chữ số… |
 | D.4 | Đổi chỗ chữ số | Cấu tạo số có hai chữ số | “Viết theo thứ tự ngược lại”, “đổi chỗ hai chữ số” | Viết cả hai số theo cấu tạo rồi lấy hiệu | Hiệu = 9 × (chữ số hàng chục − chữ số hàng đơn vị). | “Viết theo thứ tự ngược lại”, “đổi chỗ hai chữ số” · Viết cả hai số theo cấu tạo rồi lấy hiệu · Coi hiệu hai số bằng hiệu hai chữ số. · Cấu tạo số có hai chữ số… |
 | D.5 | Đếm chữ số theo nhóm | Đếm số hạng, cấu tạo số | Bài toán đánh số trang | Chia nhóm theo độ dài số rồi nhân, cộng | Sách 99 trang dùng đúng 189 chữ số — nhớ mốc này. | Bài toán đánh số trang · Chia nhóm theo độ dài số rồi nhân, cộng · Lấy số trang nhân với 2 hoặc 3 cho toàn bộ. · Đếm số hạng, cấu tạo số… |
@@ -366,7 +366,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 |---|---|---|
 | A.1 | Số liền sau của 15 119 là số nào? | 15 120 |
 | A.2 | Chữ số hàng chục của số 1 874 có giá trị bao nhiêu? | 70 |
-| A.3 | Điền dấu: 4 396 … 4 397 | &lt; |
+| A.3 | Điền dấu: 4 396 … 4 397 | < |
 | A.4 | Số 40 506 có mấy chữ số và tổng các chữ số bằng bao nhiêu? | 5 chữ số, tổng 15 |
 | A.5 | Viết tiếp ba số: 2, 5, 8, 11, … | 14, 17, 20 |
 | B.1 | Một lời giải đạt chuẩn GITA có mấy dòng bắt buộc? | 4 dòng |
@@ -378,9 +378,9 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | C.2 | Số liền sau của 32 116 là số nào? | 32 117 |
 | C.3 | Từ 1, 2, 3 lập được mấy số có ba chữ số khác nhau? | 6 |
 | C.4 | Chữ số hàng chục của số 24 754 có giá trị bao nhiêu? | 50 |
-| C.5 | Điền dấu: 16 213 … 16 214 | &lt; |
+| C.5 | Điền dấu: 16 213 … 16 214 | < |
 | D.1 | Vẽ sơ đồ mà nhìn tài liệu thì mất tác dụng gì? | mất tác dụng kiểm tra trí nhớ |
-| D.2 | Điền dấu: 16 213 … 16 214 | &lt; |
+| D.2 | Điền dấu: 16 213 … 16 214 | < |
 | D.3 | Từ 1, 2, 3 lập được mấy số có ba chữ số khác nhau? | 6 |
 | D.4 | Số 52 đổi chỗ hai chữ số được 25. Hai số hơn kém nhau bao nhiêu? | 27 |
 | D.5 | Vở 20 trang dùng hết bao nhiêu chữ số? | 31 |

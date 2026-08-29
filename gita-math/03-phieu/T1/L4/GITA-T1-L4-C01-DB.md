@@ -178,7 +178,7 @@ d) 64, 81, 100, 121, 144, …
 
 ### Bài 3. (5 điểm) So sánh hai số đo khác đơn vị
 
-Điền dấu &lt;, &gt;, = thích hợp.
+Điền dấu <, >, = thích hợp.
 
 a) 8 km² … 2 779 m²
 b) 83 tấn … 7 878 yến
@@ -404,7 +404,7 @@ f) Lỗi nào dễ mắc ở đề này?
 **Lỗi thường gặp:** Chỉ thử một hướng rồi bỏ cuộc. Phòng: Luôn viết dãy hiệu xuống dưới dãy gốc trước khi kết luận.
 
 ### Bài C.3
-**Đáp số:** a) &gt; · b) &gt; · c) &lt; · d) &lt; · e) &lt;
+**Đáp số:** a) > · b) > · c) < · d) < · e) <
 **Hướng giải:** Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.
@@ -471,7 +471,7 @@ f) Lỗi nào dễ mắc ở đề này?
 **Gợi ý 3 tầng:** (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
 
 ### Bài E.3
-**Đáp số:** a) So sánh hai số tự nhiên · b) Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = · c) Thứ tự trong tập số tự nhiên · d) Đếm chữ số → so từng hàng từ trái sang phải · e) Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. · f) So từ hàng đơn vị (phải sang trái) nên kết luận sai.
+**Đáp số:** a) So sánh hai số tự nhiên · b) Dấu … giữa hai số, yêu cầu điền <, >, = · c) Thứ tự trong tập số tự nhiên · d) Đếm chữ số → so từng hàng từ trái sang phải · e) Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. · f) So từ hàng đơn vị (phải sang trái) nên kết luận sai.
 **Hướng giải:** Đọc vị là trả lời năm câu hỏi theo thứ tự: dạng gì → dấu hiệu nào → kiến thức nào → phương pháp nào → có lối tắt không. Chỉ khi trả lời xong năm câu ấy mới bắt đầu tính.
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**.
 **Lỗi thường gặp:** So từ hàng đơn vị (phải sang trái) nên kết luận sai. Phòng: Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái.

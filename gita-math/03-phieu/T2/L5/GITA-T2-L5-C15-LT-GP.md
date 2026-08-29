@@ -64,7 +64,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài E.1** — a) 147 cm² · b) 840 cm² · c) 102 cm² · d) 270 cm²
 - **Bài E.2** — a) 63 cm² · b) 245 cm² · c) 196 cm² · d) 608 cm² · e) 60 cm² · f) 54 cm²
-- **Bài E.3** — a) &lt; · b) &gt; · c) &gt; · d) &lt; · e) &gt;
+- **Bài E.3** — a) < · b) > · c) > · d) < · e) >
 - **Bài E.4** — a) 73 cây · b) 52 m · c) 170 m · d) 180 viên (làm tròn lên) · e) 42 m
 - **Bài E.5** — a) 1, 4, 7 · b) không có chữ số nào · c) 0, 3, 6, 9 · d) không có chữ số nào · e) 1, 2, 3, 4, 5, 6, 7, 8, 9
 
@@ -254,7 +254,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | D.5 | Chu vi, diện tích hình tròn | Công thức hình tròn | Đề cho bán kính hoặc đường kính | Quy về bán kính, chọn đúng công thức | Diện tích luôn có đơn vị mũ hai — nếu đáp số ghi cm là chắc chắn nhầm. | Công thức hình tròn · Chu vi, diện tích hình tròn · Đề cho bán kính hoặc đường kính · Quy về bán kính, chọn đúng công thức… |
 | E.1 | Diện tích hình thang | Công thức diện tích hình thang | Đề cho hai đáy và chiều cao | Tổng hai đáy × chiều cao : 2 | Nếu tổng hai đáy là số chẵn thì chia 2 ngay từ đầu cho gọn. | 147 cm² · 840 cm² · 102 cm² · 270 cm² |
 | E.2 | Diện tích các hình phẳng cơ bản | Công thức diện tích hình bình hành, hình thoi, hình tam giác | Đề cho đáy và chiều cao, hoặc hai đường chéo | Nhận dạng hình rồi chọn công thức | Tam giác bằng nửa hình bình hành cùng đáy cùng chiều cao. | 63 cm² · 245 cm² · 196 cm² · 608 cm²… |
-| E.3 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &lt; · &gt; · &gt; · &lt;… |
+| E.3 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | < · > · > · <… |
 | E.4 | Chu vi, diện tích trong tình huống thực tế | Công thức chu vi, diện tích; phép chia | Từ khoá “rào xung quanh”, “lát gạch”, “trồng cây quanh” | Đọc vị chu vi hay diện tích rồi tính | Nhìn đơn vị của đáp số: mét thì là chu vi, mét vuông thì là diện tích. | 73 cây · 52 m · 170 m · 180 viên (làm tròn lên)… |
 | E.5 | Điền chữ số theo điều kiện chia hết | Dấu hiệu chia hết, chữ số hàng cao nhất khác 0 | Số có ô trống hoặc dấu *, kèm điều kiện chia hết | Dùng dấu hiệu để lập điều kiện cho dấu * rồi thử 0–9 | Với 3 và 9: tính tổng các chữ số đã biết một lần duy nhất, rồi tìm phần bù cần thêm. | 1, 4, 7 · không có chữ số nào · 0, 3, 6, 9 · không có chữ số nào… |
 
@@ -386,7 +386,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | D.5 | Hình tròn bán kính 5 cm. Tính diện tích. | 78,5 cm² |
 | E.1 | Hình thang đáy 12 cm và 8 cm, cao 5 cm. Diện tích bằng bao nhiêu? | 50 cm² |
 | E.2 | Tam giác đáy 10 cm, cao 6 cm. Diện tích bằng bao nhiêu? | 30 cm² |
-| E.3 | So sánh: 3 kg … 2 500 g | &gt; |
+| E.3 | So sánh: 3 kg … 2 500 g | > |
 | E.4 | Vườn dài 20 m rộng 10 m, rào xung quanh cần bao nhiêu mét rào? | 60 m |
 | E.5 | Tìm chữ số thay cho * để 12* chia hết cho 5. | 0, 5 |
 

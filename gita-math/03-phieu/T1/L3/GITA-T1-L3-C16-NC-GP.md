@@ -34,7 +34,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài I.2** — a) 7 820 · b) 10 442 · c) 17 664 · d) 23 138 · e) 66 556 · f) 91 865
 - **Bài I.3** — a) 9 · b) 12 · c) 7 · d) 13 · e) 12
 - **Bài I.4** — a) 5 chữ số, tổng 22 · b) 5 chữ số, tổng 25 · c) 5 chữ số, tổng 20 · d) 5 chữ số, tổng 12 · e) 5 chữ số, tổng 29
-- **Bài I.5** — a) &gt; · b) &lt; · c) &gt; · d) &gt; · e) &gt; · f) &gt; · g) &lt; · h) &lt;
+- **Bài I.5** — a) > · b) < · c) > · d) > · e) > · f) > · g) < · h) <
 
 **Phần II**
 
@@ -98,7 +98,7 @@ Muốn tìm một phần mấy của một số, ta chia số đó cho mẫu s�
 
 *Điểm chốt:* Tổng các chữ số **không** phụ thuộc thứ tự các chữ số.
 
-### Bài I.5 — Điền dấu &lt;, &gt;, = thích hợp
+### Bài I.5 — Điền dấu <, >, = thích hợp
 
 So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 
@@ -236,7 +236,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | I.2 | Nhận biết chẵn – lẻ và số liền kề | Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2 | Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” | Xét chữ số tận cùng; cộng hoặc trừ 1 đơn vị | Che hết các chữ số, chỉ để lộ chữ số cuối. | 7 820 · 10 442 · 17 664 · 23 138… |
 | I.3 | Tìm một phần mấy của một số | Phân số dạng một phần mấy | Cụm “một phần mấy của …” | Chia số đó cho mẫu số | Kết quả luôn nhỏ hơn số ban đầu — dùng để kiểm tra ngay. | 9 · 12 · 7 · 13… |
 | I.4 | Đếm chữ số, tính tổng chữ số | Cấu tạo số, tổng chữ số | Yêu cầu “có mấy chữ số”, “tổng các chữ số” | Tách lớp để đếm; cộng rời từng chữ số | Ghép cặp các chữ số cộng lại tròn 10 rồi cộng nhanh. | 5 chữ số, tổng 22 · 5 chữ số, tổng 25 · 5 chữ số, tổng 20 · 5 chữ số, tổng 12… |
-| I.5 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | &gt; · &lt; · &gt; · &gt;… |
+| I.5 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | > · < · > · >… |
 | II.1 | Quy tắc nhân | Quy tắc nhân trong phép đếm | Chọn một phần tử từ mỗi nhóm | Nhân số cách của các bước | Vẽ sơ đồ cây hai tầng là thấy ngay phép nhân. | 24 cách · 9 cách · 15 cách · 36 cách |
 | II.2 | Phép chia có dư | Quan hệ giữa số bị chia, số chia, thương và số dư | Đề yêu cầu ghi cả thương và số dư | Đặt tính chia, kiểm tra điều kiện số dư | Ước lượng thương bằng cách làm tròn số chia trước khi chia. | 48 dư 2 · 36 dư 1 · 361 dư 2 · 319 dư 5… |
 | II.3 | Đếm số hạng dãy cách đều | Dãy cách đều | Dãy có số đầu, số cuối, khoảng cách đều | (cuối − đầu) : khoảng cách + 1 | Dãy số liên tiếp từ a đến b có b − a + 1 số hạng. | 14 · 25 · 36 · 28… |
@@ -368,7 +368,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | I.2 | Số liền sau của 7 819 là số nào? | 7 820 |
 | I.3 | Tìm 1 phần 4 của 20. | 5 |
 | I.4 | Số 40 506 có mấy chữ số và tổng các chữ số bằng bao nhiêu? | 5 chữ số, tổng 15 |
-| I.5 | Điền dấu: 37 453 … 37 454 | &lt; |
+| I.5 | Điền dấu: 37 453 … 37 454 | < |
 | II.1 | 3 loại bánh, 2 loại nước. Có mấy cách chọn một bộ? | 6 cách |
 | II.2 | Tìm thương và số dư của 1 234 : 7 | 176 dư 2 |
 | II.3 | Dãy 2, 4, 6, …, 20 có bao nhiêu số hạng? | 10 |

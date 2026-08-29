@@ -63,7 +63,7 @@ d) Số 5 962 291 có bao nhiêu chữ số, và tổng các chữ số của n�
 e) Số 2 581 272 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
 f) Số 7 690 900 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
 
-### Bài 2. (3 điểm) Điền dấu &lt;, &gt;, = thích hợp
+### Bài 2. (3 điểm) Điền dấu <, >, = thích hợp
 
 Điền dấu thích hợp vào chỗ chấm.
 
@@ -337,7 +337,7 @@ f) Một quyển sách có 1 232 trang, đánh số trang từ 1. Phải dùng t
 **Lỗi thường gặp:** Cộng cả giá trị hàng (ví dụ cộng 300 thay vì cộng 3). Phòng: Viết rời từng chữ số ra rồi mới cộng.
 
 ### Bài I.2
-**Đáp số:** a) &gt; · b) &lt; · c) &lt; · d) &gt; · e) &gt; · f) &lt;
+**Đáp số:** a) > · b) < · c) < · d) > · e) > · f) <
 **Hướng giải:** So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Đếm số chữ số **trước**, chỉ khi bằng nhau mới so từng hàng.
 **Lỗi thường gặp:** So từ hàng đơn vị (phải sang trái) nên kết luận sai. Phòng: Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái.

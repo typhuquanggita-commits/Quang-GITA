@@ -63,7 +63,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần V**
 
 - **Bài V.1** — a) 9 · b) 6 · c) 8 · d) 6 · e) 9
-- **Bài V.2** — a) &lt; · b) &gt; · c) &gt; · d) &lt; · e) &lt;
+- **Bài V.2** — a) < · b) > · c) > · d) < · e) <
 - **Bài V.3** — a) 17,33 km/giờ · b) 14 km/giờ · c) 23 km/giờ · d) 21,33 km/giờ · e) 20 km/giờ
 - **Bài V.4** — a) 109 · b) 2 040 · c) 93 · d) 606 · e) 2 772
 - **Bài V.5** — a) -5 · b) -10 · c) -50 · d) -10 · e) -50
@@ -253,7 +253,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.4 | Tỉ số diện tích tam giác | Diện tích tam giác, tỉ lệ thuận | Hai tam giác chung đỉnh, đáy nằm trên cùng một đường thẳng | Chia diện tích theo tỉ số hai đáy | Tỉ số diện tích bằng tỉ số đáy — chia tổng theo tỉ số như bài tổng – tỉ. | 120 cm² · 120 cm² · 14 cm² · 290 cm²… |
 | IV.5 | Nhận biết số nguyên tố, hợp số | Định nghĩa số nguyên tố, dấu hiệu chia hết | Câu hỏi “là số nguyên tố hay hợp số” | Thử chia theo dãy số nguyên tố tăng dần, dừng đúng ngưỡng | Loại ngay các số chẵn lớn hơn 2 và các số tận cùng bằng 5 lớn hơn 5. | hợp số (ví dụ ước 7) · hợp số (ví dụ ước 5) · hợp số (ví dụ ước 3) · hợp số (ví dụ ước 2)… |
 | V.1 | Chữ số tận cùng của luỹ thừa | Tính tuần hoàn của chữ số tận cùng | Tích nhiều thừa số giống nhau, số thừa số lớn | Tìm chu kì rồi chia lấy dư để định vị | Chữ số 0, 1, 5, 6 giữ nguyên tận cùng ở mọi số thừa số. | 9 · 6 · 8 · 6… |
-| V.2 | So sánh phân số bằng kĩ thuật đặc biệt | Phần bù tới 1, phân số trung gian | Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 | So phần bù; hoặc chèn phân số trung gian | Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. | &lt; · &gt; · &gt; · &lt;… |
+| V.2 | So sánh phân số bằng kĩ thuật đặc biệt | Phần bù tới 1, phân số trung gian | Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 | So phần bù; hoặc chèn phân số trung gian | Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. | < · > · > · <… |
 | V.3 | Vận tốc trung bình | Công thức vận tốc; trung bình cộng có trọng số | Hai chặng có vận tốc khác nhau | Tính tổng quãng đường, tổng thời gian rồi chia | Kiểm tra: vận tốc trung bình luôn nằm giữa hai vận tốc đã cho. | 17,33 km/giờ · 14 km/giờ · 23 km/giờ · 21,33 km/giờ… |
 | V.4 | Đếm chữ số theo nhóm độ dài | Đếm số hạng dãy cách đều, cấu tạo số | Bài toán đánh số trang, đánh số nhà, đánh số vé | Chia nhóm 1 chữ số – 2 chữ số – 3 chữ số rồi nhân và cộng | Sách 100 trang luôn dùng 192 chữ số; nhớ mốc này để kiểm tra nhanh. | 109 · 2 040 · 93 · 606… |
 | V.5 | Tổng dãy cộng trừ xen kẽ | Ghép cặp, tính chất kết hợp | Dấu cộng và trừ xen kẽ đều đặn | Ghép cặp, đếm số cặp, xử lí phần dư | Dãy 1 − 2 + 3 − … với n chẵn bằng −n : 2; với n lẻ bằng (n + 1) : 2. | -5 · -10 · -50 · -10… |
@@ -385,7 +385,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | IV.4 | Tam giác ABC diện tích 30 cm², M trên BC với BM = MC. Diện tích ABM bằng bao nhiêu? | 15 cm² |
 | IV.5 | Số 91 là số nguyên tố hay hợp số? | hợp số (91 = 7 × 13) |
 | V.1 | Tích của 20 thừa số đều bằng 3 có chữ số tận cùng là chữ số nào? | 1 |
-| V.2 | So sánh: 5 phần 6 … 7 phần 8 | &lt; |
+| V.2 | So sánh: 5 phần 6 … 7 phần 8 | < |
 | V.3 | Đi 2 giờ với 30 km/giờ rồi 2 giờ với 50 km/giờ. Vận tốc trung bình? | 40 km/giờ |
 | V.4 | Quyển sách 150 trang dùng hết bao nhiêu chữ số? | 342 |
 | V.5 | Tính nhanh: 1 − 2 + 3 − 4 + … + 9 − 10 | −5 |

@@ -30,7 +30,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần A**
 
-- **Bài A.1** — a) &gt; · b) &lt; · c) &lt; · d) &gt; · e) &lt; · f) &lt;
+- **Bài A.1** — a) > · b) < · c) < · d) > · e) < · f) <
 - **Bài A.2** — a) ô (Hà; Tiếng Việt) · b) toàn bộ hàng Hà và toàn bộ cột Tiếng Việt · c) ô (Tuấn; Toán) · d) Mĩ thuật · e) Toán · f) phương pháp lập bảng và loại trừ
 - **Bài A.3** — a) 4 595 · b) 373 320 · c) 2 853 · d) 174 570 · e) 6 549 · f) 8 662
 - **Bài A.4** — a) 28 cách · b) 12 cách · c) 42 cách · d) 36 cách · e) 18 cách · f) 18 cách
@@ -74,7 +74,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 Đọc kĩ phần chữ đậm: đó là câu cần nhớ, không phải con số.
 
-### Bài A.1 — Điền dấu &lt;, &gt;, = thích hợp
+### Bài A.1 — Điền dấu <, >, = thích hợp
 
 So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 
@@ -232,7 +232,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
-| A.1 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | &gt; · &lt; · &lt; · &gt;… |
+| A.1 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | > · < · < · >… |
 | A.2 | Suy luận loại trừ có bảng | Phương pháp lập bảng, loại trừ | Mỗi người ứng với đúng một đối tượng, đề cho các dữ kiện phủ định | Kẻ bảng, đánh dấu, lan toả theo hàng và cột | Bắt đầu từ dữ kiện khẳng định (“thích”, “là”) trước dữ kiện phủ định. | ô (Hà; Tiếng Việt) · toàn bộ hàng Hà và toàn bộ cột Tiếng Việt · ô (Tuấn; Toán) · Mĩ thuật… |
 | A.3 | Nhân, chia số tự nhiên | Kĩ thuật đặt tính nhân, chia | Yêu cầu “đặt tính rồi tính” với phép nhân, chia | Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ chữ số | Kiểm tra kết quả bằng phép tính ngược: thương × số chia = số bị chia. | 4 595 · 373 320 · 2 853 · 174 570… |
 | A.4 | Quy tắc nhân | Quy tắc nhân, quy tắc cộng trong phép đếm | Chọn một phần tử từ mỗi nhóm để ghép thành một bộ | Nhân số cách của các bước liên tiếp | Vẽ sơ đồ cây với hai ba nhánh đầu để thấy rõ phép nhân. | 28 cách · 12 cách · 42 cách · 36 cách… |
@@ -364,7 +364,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 
 | Bài | Đề tương tự | Đáp số |
 |---|---|---|
-| A.1 | Điền dấu: 263 547 … 263 548 | &lt; |
+| A.1 | Điền dấu: 263 547 … 263 548 | < |
 | A.2 | Ba bạn thích ba môn khác nhau, An thích Toán, Bình không thích Anh. Bình thích môn nào? | Tiếng Việt |
 | A.3 | Đặt tính rồi tính: 3 045 × 24 | 73 080 |
 | A.4 | Có 3 áo và 4 quần, có bao nhiêu cách chọn một bộ? | 12 cách |

@@ -33,7 +33,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài A.1** — a) 25 · b) 42 · c) 62 · d) 26
 - **Bài A.2** — a) 16 · b) 100 · c) 30 · d) 16 cm · e) 16 cm²
 - **Bài A.3** — a) 41 · b) 50 · c) 180 · d) 15
-- **Bài A.4** — a) &gt; · b) &lt; · c) &gt; · d) &lt; · e) &lt; · f) &gt; · g) &lt; · h) &gt;
+- **Bài A.4** — a) > · b) < · c) > · d) < · e) < · f) > · g) < · h) >
 - **Bài A.5** — a) 18 · b) 6 · c) 14 · d) 3 · e) 17
 
 **Phần B**
@@ -92,7 +92,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 *Điểm chốt:* Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 
-### Bài A.4 — Điền dấu &lt;, &gt;, = thích hợp
+### Bài A.4 — Điền dấu <, >, = thích hợp
 
 So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 
@@ -235,7 +235,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | A.1 | Điền số hạng còn thiếu của dãy cách đều | Dãy số cách đều | Dãy có ô trống ở giữa | Xác định khoảng cách từ cặp liền nhau đã biết | Nếu chỗ trống nằm giữa hai số đã biết thì nó bằng trung bình cộng của hai số ấy. | 25 · 42 · 62 · 26 |
 | A.2 | Đếm hình trong lưới | Quy tắc đếm, tổ hợp đơn giản | Hình vẽ là lưới ô vuông đều | Đếm theo đường kẻ hoặc theo cỡ hình | Số cách chọn 2 trong k đường kẻ là k × (k − 1) : 2. | 16 · 100 · 30 · 16 cm… |
 | A.3 | Quan hệ nhiều hơn – ít hơn, gấp – kém | Bốn phép tính, từ khoá chỉ quan hệ | Các cụm “nhiều hơn”, “ít hơn”, “gấp … lần”, “kém … lần” | Đọc vị từ khoá → chọn phép tính | Kết quả lớn hơn hay bé hơn số đã cho? Trả lời được là biết ngay phép tính. | 41 · 50 · 180 · 15 |
-| A.4 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | &gt; · &lt; · &gt; · &lt;… |
+| A.4 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | > · < · > · <… |
 | A.5 | Tìm một phần mấy của một số | Phân số dạng một phần mấy | Cụm “một phần mấy của …” | Chia số đó cho mẫu số | Kết quả luôn nhỏ hơn số ban đầu — dùng để kiểm tra ngay. | 18 · 6 · 14 · 3… |
 | B.1 | Kỹ năng trình bày | Chuẩn trình bày bài giải | Yêu cầu “trình bày lời giải” | Viết đủ bốn dòng | Viết câu lời giải trước, phép tính sau — không bao giờ ngược lại. | câu lời giải nêu rõ đang tìm đại lượng nào · phép tính, viết đủ dấu và đủ đơn vị · kết quả kèm đơn vị · câu đáp số… |
 | B.2 | Kỹ năng viết câu lời giải | Chuẩn trình bày | Đề hỏi gì thì câu lời giải nhắc lại điều đó | Lấy cụm từ trong câu hỏi làm câu lời giải | Sao chép cụm từ trong câu hỏi là cách viết câu lời giải nhanh và chắc nhất. | “Tìm một phần mấy của một số là:” · “Tìm phân số của một số qua nhiều bước là:” · “Tìm một phần mấy rồi tính phần còn lại là:” · “Đọc bảng số liệu là:”… |
@@ -367,7 +367,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | A.1 | Điền số: 4, 9, …, 19, 24 | 14 |
 | A.2 | Lưới 2 hàng 2 cột có bao nhiêu hình vuông? | 5 |
 | A.3 | An có 12 quyển vở, Bình có gấp 3 lần An. Bình có mấy quyển? | 36 |
-| A.4 | Điền dấu: 94 657 … 94 658 | &lt; |
+| A.4 | Điền dấu: 94 657 … 94 658 | < |
 | A.5 | Tìm 1 phần 4 của 20. | 5 |
 | B.1 | Một lời giải đạt chuẩn GITA có mấy dòng bắt buộc? | 4 dòng |
 | B.2 | Đề hỏi “mỗi tổ trồng mấy cây” thì câu lời giải viết thế nào? | “Số cây mỗi tổ trồng được là:” |

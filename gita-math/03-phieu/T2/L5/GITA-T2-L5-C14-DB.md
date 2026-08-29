@@ -146,7 +146,7 @@ g) Xếp liên tiếp 26 hình đầu tiên thì cần tất cả bao nhiêu que
 
 ### Bài 5. (5 điểm) So sánh hai số đo khác đơn vị
 
-Điền dấu &lt;, &gt;, = thích hợp.
+Điền dấu <, >, = thích hợp.
 
 a) 39 ha … 7 445 cm²
 b) 15 tạ … 6 365 kg
@@ -392,7 +392,7 @@ f) Lỗi nào dễ mắc ở đề này?
 **Lỗi thường gặp:** Vẽ tay từng hình để đếm, không kịp thời gian với hình thứ hai, ba chục. Phòng: Lập bảng ba hình đầu để tìm khoảng cách rồi mới dùng công thức.
 
 ### Bài B.5
-**Đáp số:** a) &gt; · b) &lt; · c) &lt; · d) &lt; · e) &gt; · f) &lt; · g) &lt;
+**Đáp số:** a) > · b) < · c) < · d) < · e) > · f) < · g) <
 **Hướng giải:** Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.

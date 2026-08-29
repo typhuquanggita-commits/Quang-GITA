@@ -39,7 +39,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần B**
 
 - **Bài B.1** — a) 37 cây · b) 62 m · c) 22 viên (làm tròn lên) · d) 5 viên (làm tròn lên) · e) không chia hết (86 m không chia hết cho 5 m)
-- **Bài B.2** — a) &lt; · b) &lt; · c) &gt; · d) &lt;
+- **Bài B.2** — a) < · b) < · c) > · d) <
 - **Bài B.3** — a) 444 cm² · b) 627 cm² · c) 328 cm² · d) 198 cm² · e) 74 cm² · f) 540 cm²
 - **Bài B.4** — a) 153 cm² · b) 126 cm² · c) 144 cm² · d) 48 cm² · e) 117 cm² · f) 66 cm²
 - **Bài B.5** — a) 30 ngày · b) 20 ngày · c) 4 ngày · d) 24 ngày · e) 3 ngày · f) 10 ngày
@@ -238,7 +238,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | A.4 | Lập bảng dạng bài | Bảng phân tích chuyên sâu sáu cột | Bảng có sẵn cột dạng bài, thiếu các cột còn lại | Tra bảng phân tích của các phiếu đã học | Học theo hàng ngang, không học theo cột dọc. | Diện tích hình tròn, hình vuông; phép trừ diện tích · Công thức chu vi, diện tích hình chữ nhật và hình vuông · Công thức chu vi, diện tích; phép chia · Diện tích tam giác, tỉ lệ thuận… |
 | A.5 | Lập bảng dạng bài | Bảng phân tích chuyên sâu sáu cột | Bảng có sẵn cột dạng bài, thiếu các cột còn lại | Tra bảng phân tích của các phiếu đã học | Học theo hàng ngang, không học theo cột dọc. | Nhìn đơn vị của đáp số: mét thì là chu vi, mét vuông thì là diện tích. · Tỉ số diện tích bằng tỉ số đáy — chia tổng theo tỉ số như bài tổng – tỉ. · Hình lập phương cạnh a: toàn phần 6 × a × a, thể tích a × a × a. · Gấp đôi một chiều thì diện tích gấp đôi; gấp đôi cả hai chiều thì gấp bốn.… |
 | B.1 | Chu vi, diện tích trong tình huống thực tế | Công thức chu vi, diện tích; phép chia | Từ khoá “rào xung quanh”, “lát gạch”, “trồng cây quanh” | Đọc vị chu vi hay diện tích rồi tính | Nhìn đơn vị của đáp số: mét thì là chu vi, mét vuông thì là diện tích. | 37 cây · 62 m · 22 viên (làm tròn lên) · 5 viên (làm tròn lên)… |
-| B.2 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &lt; · &lt; · &gt; · &lt; |
+| B.2 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | < · < · > · < |
 | B.3 | Diện tích hình thang | Công thức diện tích hình thang | Đề cho hai đáy và chiều cao | Tổng hai đáy × chiều cao : 2 | Nếu tổng hai đáy là số chẵn thì chia 2 ngay từ đầu cho gọn. | 444 cm² · 627 cm² · 328 cm² · 198 cm²… |
 | B.4 | Diện tích các hình phẳng cơ bản | Công thức diện tích hình bình hành, hình thoi, hình tam giác | Đề cho đáy và chiều cao, hoặc hai đường chéo | Nhận dạng hình rồi chọn công thức | Tam giác bằng nửa hình bình hành cùng đáy cùng chiều cao. | 153 cm² · 126 cm² · 144 cm² · 48 cm²… |
 | B.5 | Tỉ lệ nghịch | Đại lượng tỉ lệ nghịch, tổng số ngày công | Số người tăng thì thời gian giảm | Quy về tổng số ngày công rồi chia | Số người gấp đôi thì số ngày giảm một nửa — nhẩm được ngay khi tỉ số đẹp. | 30 ngày · 20 ngày · 4 ngày · 24 ngày… |
@@ -370,7 +370,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | A.4 | Cột “Kiến thức phải thuộc” trả lời câu hỏi gì? | làm gì |
 | A.5 | Cột “Cách xử lý nhanh nhất” trả lời câu hỏi gì? | làm gì |
 | B.1 | Vườn dài 20 m rộng 10 m, rào xung quanh cần bao nhiêu mét rào? | 60 m |
-| B.2 | So sánh: 3 kg … 2 500 g | &gt; |
+| B.2 | So sánh: 3 kg … 2 500 g | > |
 | B.3 | Hình thang đáy 12 cm và 8 cm, cao 5 cm. Diện tích bằng bao nhiêu? | 50 cm² |
 | B.4 | Tam giác đáy 10 cm, cao 6 cm. Diện tích bằng bao nhiêu? | 30 cm² |
 | B.5 | 6 người làm xong trong 8 ngày. 12 người làm xong trong mấy ngày? | 4 ngày |

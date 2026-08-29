@@ -83,7 +83,7 @@ b) Số 126 599 là số chẵn hay số lẻ?
 c) Số chẵn bé nhất lớn hơn 297 395 là số nào?
 d) Số liền trước của 975 340 là số nào?
 
-### Bài 4. (1 điểm) Điền dấu &lt;, &gt;, = thích hợp
+### Bài 4. (1 điểm) Điền dấu <, >, = thích hợp
 
 Điền dấu thích hợp vào chỗ chấm.
 
@@ -361,7 +361,7 @@ g) Số 9 435 có chia hết cho 9 không? Vì sao?
 **Lỗi thường gặp:** Nhầm “liền trước” với “bé hơn”, trả lời một số bất kì bé hơn. Phòng: Liền trước – liền sau chỉ hơn kém đúng **1** đơn vị.
 
 ### Bài A.4
-**Đáp số:** a) &gt; · b) &gt; · c) &gt; · d) &lt; · e) &lt; · f) &lt; · g) &lt; · h) &lt;
+**Đáp số:** a) > · b) > · c) > · d) < · e) < · f) < · g) < · h) <
 **Hướng giải:** So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Đếm số chữ số **trước**, chỉ khi bằng nhau mới so từng hàng.
 **Lỗi thường gặp:** So từ hàng đơn vị (phải sang trái) nên kết luận sai. Phòng: Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái.

@@ -30,7 +30,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần I**
 
-- **Bài I.1** — a) 0,1 · b) 4 · c) &gt; · d) 9 · e) &gt;
+- **Bài I.1** — a) 0,1 · b) 4 · c) > · d) 9 · e) >
 - **Bài I.2** — a) 549 · b) 2 giờ 27 phút · c) 6 giờ 27 phút · d) 10 giờ 1 phút · e) 8 giờ 50 phút · f) 3 giờ 24 phút · g) 501
 - **Bài I.3** — a) 630 · b) 630 · c) 880 · d) 80 000 · e) 4 700 · f) 50 000
 - **Bài I.4** — a) 3 854 · b) 2 tấn 5 tạ 65 kg · c) 3 827 · d) 6 tạ 81 kg · e) 6 836 · f) 3 385 · g) 3 tấn 7 tạ 85 kg
@@ -42,7 +42,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài II.2** — a) 76,69 · b) 470,1 · c) 91,97 · d) 30,46 · e) 52,11 · f) 193,32
 - **Bài II.3** — a) 32 247 · b) 8 369 · c) 3 308 · d) 36 576 · e) 973 · f) 3 818 · g) 4 164
 - **Bài II.4** — a) 105 cm² · b) 40 cm² · c) 240 cm² · d) 150 cm²
-- **Bài II.5** — a) &lt; · b) &gt; · c) &lt; · d) &gt; · e) &gt; · f) &lt;
+- **Bài II.5** — a) < · b) > · c) < · d) > · e) > · f) <
 
 **Phần III**
 
@@ -232,7 +232,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
-| I.1 | Số thập phân — hàng, so sánh, chuyển đổi | Cấu tạo số thập phân, quan hệ phân số – số thập phân | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 | Xét theo hàng từ trái sang phải | Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. | 0,1 · 4 · &gt; · 9… |
+| I.1 | Số thập phân — hàng, so sánh, chuyển đổi | Cấu tạo số thập phân, quan hệ phân số – số thập phân | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 | Xét theo hàng từ trái sang phải | Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. | 0,1 · 4 · > · 9… |
 | I.2 | Đổi và tính toán với đơn vị thời gian | Quan hệ giờ – phút – giây | Số đo có chữ “giờ”, “phút”, “giây” | Quy về phút rồi tính, cuối cùng đổi lại giờ và phút | Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm. | 549 · 2 giờ 27 phút · 6 giờ 27 phút · 10 giờ 1 phút… |
 | I.3 | Đổi đơn vị đo | Bảng đơn vị đo độ dài, khối lượng | Dấu … giữa hai đơn vị khác nhau | Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10 | Số bậc chính là số chữ số 0 phải thêm vào (hoặc bớt đi). | 630 · 630 · 880 · 80 000… |
 | I.4 | Số đo có nhiều đơn vị | Bảng đơn vị khối lượng | Số đo viết dưới dạng “… tấn … tạ … kg” | Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư | Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ. | 3 854 · 2 tấn 5 tạ 65 kg · 3 827 · 6 tạ 81 kg… |
@@ -241,7 +241,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | II.2 | Bốn phép tính với số thập phân | Kĩ thuật tính với số thập phân | Các số có dấu phẩy | Chọn quy tắc đặt dấu phẩy theo phép tính | Ước lượng bằng cách làm tròn để kiểm tra vị trí dấu phẩy. | 76,69 · 470,1 · 91,97 · 30,46… |
 | II.3 | Bốn phép tính với số đo | Đổi đơn vị, bốn phép tính | Các số hạng có đơn vị khác nhau trong cùng một phép tính | Đổi về đơn vị của kết quả rồi tính | Đọc chỗ chấm trước, biết ngay đơn vị đích. | 32 247 · 8 369 · 3 308 · 36 576… |
 | II.4 | Diện tích các hình phẳng cơ bản | Công thức diện tích hình bình hành, hình thoi, hình tam giác | Đề cho đáy và chiều cao, hoặc hai đường chéo | Nhận dạng hình rồi chọn công thức | Tam giác bằng nửa hình bình hành cùng đáy cùng chiều cao. | 105 cm² · 40 cm² · 240 cm² · 150 cm² |
-| II.5 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &lt; · &gt; · &lt; · &gt;… |
+| II.5 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | < · > · < · >… |
 | III.1 | Đổi đơn vị thể tích, dung tích | Bảng đơn vị thể tích; quan hệ dm³ – lít | Đơn vị có mũ ba, hoặc lít, mi-li-lít | Đếm bậc rồi nhân, chia 1 000 | Mỗi bậc thêm ba chữ số 0. | 46 000 · 37 000 · 8 · 90… |
 | III.2 | Hình hộp chữ nhật, hình lập phương | Công thức thể tích, diện tích xung quanh, toàn phần | Đề cho ba kích thước hoặc cạnh hình lập phương | Xác định loại diện tích cần tính, đếm đủ số mặt | Hình lập phương cạnh a: toàn phần 6 × a × a, thể tích a × a × a. | 228 cm² · 894 cm² · 1 530 cm³ · thể tích 343 cm³, diện tích toàn phần 294 cm²… |
 | III.3 | Tính thời điểm trong ngày | Quan hệ giờ – phút, phép chia có dư | Cho thời điểm bắt đầu và khoảng thời gian | Quy về phút, cộng trừ, đổi lại | Cộng tròn giờ trước rồi cộng phần phút lẻ sau. | 22 giờ 3 phút · 19 giờ 13 phút · 9 giờ 36 phút · 10 giờ 8 phút… |
@@ -364,7 +364,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 
 | Bài | Đề tương tự | Đáp số |
 |---|---|---|
-| I.1 | So sánh: 0,5 … 0,45 | &gt; |
+| I.1 | So sánh: 0,5 … 0,45 | > |
 | I.2 | 155 phút = … giờ … phút | 2 giờ 35 phút |
 | I.3 | 5 km = … m | 5 000 |
 | I.4 | 3 450 kg = … tấn … tạ … kg | 3 tấn 4 tạ 50 kg |
@@ -373,7 +373,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | II.2 | Tính: 3,25 × 4 | 13 |
 | II.3 | 2 m 30 cm + 150 cm = … cm | 380 |
 | II.4 | Tam giác đáy 10 cm, cao 6 cm. Diện tích bằng bao nhiêu? | 30 cm² |
-| II.5 | So sánh: 3 kg … 2 500 g | &gt; |
+| II.5 | So sánh: 3 kg … 2 500 g | > |
 | III.1 | 2 m³ = … lít | 2 000 |
 | III.2 | Hình lập phương cạnh 4 cm. Thể tích bằng bao nhiêu? | 64 cm³ |
 | III.3 | Tàu chạy lúc 7 giờ 40 phút, đi hết 2 giờ 35 phút. Đến lúc mấy giờ? | 10 giờ 15 phút |

@@ -440,18 +440,18 @@ def b_m3_02(rng, lop):
         if kieu == "cong_cung":
             A, B = a + k, b + k
             y.append((f"{sv(a)} + {sv(k)} … {sv(b)} + {sv(k)}",
-                      "&lt;" if A < B else ("&gt;" if A > B else "=")))
+                      "<" if A < B else (">" if A > B else "=")))
         elif kieu == "nhan_cung":
             A, B = a * k, b * k
             y.append((f"{sv(a)} × {sv(k)} … {sv(b)} × {sv(k)}",
-                      "&lt;" if A < B else ("&gt;" if A > B else "=")))
+                      "<" if A < B else (">" if A > B else "=")))
         else:
             m = rng.randint(2, 20)
             A, B = a * m, a * (m + 1)
-            y.append((f"{sv(a)} × {sv(m)} … {sv(a)} × {sv(m + 1)}", "&lt;"))
+            y.append((f"{sv(a)} × {sv(m)} … {sv(a)} × {sv(m + 1)}", "<"))
     return Bai(
         tieu_de="So sánh hai biểu thức mà không cần tính",
-        dan="Điền dấu &lt;, &gt;, = và giải thích ngắn.",
+        dan="Điền dấu <, >, = và giải thích ngắn.",
         y=y,
         huong_giai="Khi hai biểu thức có phần giống nhau, chỉ cần so sánh phần khác nhau: "
                    "cùng cộng thêm một số thì số nào lớn hơn vẫn lớn hơn; cùng nhân với "
@@ -468,7 +468,7 @@ def b_m3_02(rng, lop):
         pt_du_lieu="Hai vế có chung một số hạng hoặc một thừa số",
         pt_phuong_phap="Triệt tiêu phần chung rồi so phần riêng",
         pt_nhanh="Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn.",
-        tuong_tu=("So sánh: 234 × 7 … 234 × 8", "&lt;"),
+        tuong_tu=("So sánh: 234 × 7 … 234 × 8", "<"),
     )
 
 
@@ -749,7 +749,7 @@ def b_m5_02(rng, lop):
         kieu = rng.choice(["tich_gan", "chuyen_phan", "tach_bu"])
         if kieu == "tich_gan":
             # a × (a + 2) = a² + 2a luôn bé hơn (a + 1)² = a² + 2a + 1
-            y.append((f"{sv(a)} × {sv(a + 2)} … {sv(a + 1)} × {sv(a + 1)}", "&lt;"))
+            y.append((f"{sv(a)} × {sv(a + 2)} … {sv(a + 1)} × {sv(a + 1)}", "<"))
         elif kieu == "chuyen_phan":
             y.append((f"({sv(a)} + {sv(k)}) × {sv(k)} − {sv(a)} × {sv(k)}", sv(k * k)))
         else:
@@ -774,7 +774,7 @@ def b_m5_02(rng, lop):
         pt_phuong_phap="Quy về số gốc chung, so phần chênh",
         pt_nhanh="Với hai tích có tổng hai thừa số bằng nhau, tích nào có hai thừa số "
                  "gần nhau hơn thì lớn hơn.",
-        tuong_tu=("So sánh: 99 × 101 … 100 × 100", "&lt;"),
+        tuong_tu=("So sánh: 99 × 101 … 100 × 100", "<"),
         bay="Hai tích trông bằng nhau nhưng không bằng",
     )
 

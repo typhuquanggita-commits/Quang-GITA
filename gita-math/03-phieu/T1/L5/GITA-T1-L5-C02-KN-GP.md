@@ -30,7 +30,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần A**
 
-- **Bài A.1** — a) 0,622 · b) &lt; · c) 9 · d) 0 · e) &lt; · f) 0,62 · g) 0,38 · h) 0
+- **Bài A.1** — a) 0,622 · b) < · c) 9 · d) 0 · e) < · f) 0,62 · g) 0,38 · h) 0
 - **Bài A.2** — a) 330 · b) 110 · c) 61 000 · d) 4 000 · e) 3 700 · f) 220 000 · g) 5 800
 - **Bài A.3** — a) 827 · b) 4 656 · c) 1 tấn 8 tạ 37 kg · d) 6 tấn 21 kg · e) 3 537 · f) 6 tấn 5 tạ 16 kg
 - **Bài A.4** — a) 500 · b) 4 000 000 · c) 6 100 · d) 7 400 · e) 3 800 · f) 1 400 · g) 1 800
@@ -232,7 +232,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
-| A.1 | Số thập phân — hàng, so sánh, chuyển đổi | Cấu tạo số thập phân, quan hệ phân số – số thập phân | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 | Xét theo hàng từ trái sang phải | Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. | 0,622 · &lt; · 9 · 0… |
+| A.1 | Số thập phân — hàng, so sánh, chuyển đổi | Cấu tạo số thập phân, quan hệ phân số – số thập phân | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 | Xét theo hàng từ trái sang phải | Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. | 0,622 · < · 9 · 0… |
 | A.2 | Đổi đơn vị đo | Bảng đơn vị đo độ dài, khối lượng | Dấu … giữa hai đơn vị khác nhau | Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10 | Số bậc chính là số chữ số 0 phải thêm vào (hoặc bớt đi). | 330 · 110 · 61 000 · 4 000… |
 | A.3 | Số đo có nhiều đơn vị | Bảng đơn vị khối lượng | Số đo viết dưới dạng “… tấn … tạ … kg” | Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư | Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ. | 827 · 4 656 · 1 tấn 8 tạ 37 kg · 6 tấn 21 kg… |
 | A.4 | Đổi đơn vị diện tích | Bảng đơn vị đo diện tích | Đơn vị có mũ hai: m², cm², km², ha | Đếm bậc rồi nhân, chia 100 | Mỗi bậc thêm hai chữ số 0 — nhớ “diện tích thì gấp đôi số 0”. | 500 · 4 000 000 · 6 100 · 7 400… |
@@ -364,7 +364,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 
 | Bài | Đề tương tự | Đáp số |
 |---|---|---|
-| A.1 | So sánh: 0,5 … 0,45 | &gt; |
+| A.1 | So sánh: 0,5 … 0,45 | > |
 | A.2 | 5 km = … m | 5 000 |
 | A.3 | 3 450 kg = … tấn … tạ … kg | 3 tấn 4 tạ 50 kg |
 | A.4 | 3 m² = … cm² | 30 000 |
@@ -383,7 +383,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | D.2 | Năm 1975 thuộc thế kỉ thứ mấy? | XX |
 | D.3 | Tàu chạy lúc 7 giờ 40 phút, đi hết 2 giờ 35 phút. Đến lúc mấy giờ? | 10 giờ 15 phút |
 | D.4 | 155 phút = … giờ … phút | 2 giờ 35 phút |
-| D.5 | So sánh: 3 kg … 2 500 g | &gt; |
+| D.5 | So sánh: 3 kg … 2 500 g | > |
 | E.1 | Vì sao phải giảng lại cho bạn? | vì giảng được mới là hiểu thật |
 | E.2 | Có 10 thùng dầu, mỗi thùng 20 lít, đã bán 3 thùng. Còn bao nhiêu lít? | 140 lít |
 | E.3 | Xe chở 20 bao gạo, mỗi bao 50 kg. Xe chở mấy tạ? | 10 tạ |

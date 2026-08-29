@@ -34,7 +34,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài I.2** — a) 6 808 · b) 1 tấn 44 kg · c) 6 428 · d) 7 tạ 45 kg · e) 3 tấn 9 tạ 89 kg · f) 4 tấn 3 tạ 72 kg · g) 1 tấn 8 tạ 79 kg
 - **Bài I.3** — a) ô (Minh; Âm nhạc) · b) toàn bộ hàng Minh và toàn bộ cột Âm nhạc · c) ô (Dũng; Toán) · d) Mĩ thuật · e) Toán · f) phương pháp lập bảng và loại trừ
 - **Bài I.4** — a) 90 cách · b) 14 cách · c) 13 bạn · d) 18 cách · e) 12 bạn · f) 13 cách
-- **Bài I.5** — a) &gt; · b) &lt; · c) &gt; · d) &gt; · e) &gt; · f) &lt;
+- **Bài I.5** — a) > · b) < · c) > · d) > · e) > · f) <
 
 **Phần II**
 
@@ -98,7 +98,7 @@ Chọn **một trong hai nhóm rời nhau** thì cộng. Chọn **mỗi nhóm m�
 
 *Điểm chốt:* Có phần chung thì phải **trừ đi một lần** phần chung.
 
-### Bài I.5 — Điền dấu &lt;, &gt;, = thích hợp
+### Bài I.5 — Điền dấu <, >, = thích hợp
 
 So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 
@@ -236,7 +236,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | I.2 | Số đo có nhiều đơn vị | Bảng đơn vị khối lượng | Số đo viết dưới dạng “… tấn … tạ … kg” | Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư | Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ. | 6 808 · 1 tấn 44 kg · 6 428 · 7 tạ 45 kg… |
 | I.3 | Suy luận loại trừ có bảng | Phương pháp lập bảng, loại trừ | Mỗi người ứng với đúng một đối tượng, đề cho các dữ kiện phủ định | Kẻ bảng, đánh dấu, lan toả theo hàng và cột | Bắt đầu từ dữ kiện khẳng định (“thích”, “là”) trước dữ kiện phủ định. | ô (Minh; Âm nhạc) · toàn bộ hàng Minh và toàn bộ cột Âm nhạc · ô (Dũng; Toán) · Mĩ thuật… |
 | I.4 | Đếm bằng quy tắc cộng, nhân, bù trừ | Quy tắc cộng, quy tắc nhân, nguyên lí bù trừ | Từ khoá “và”, “hoặc”, “cả hai”, “ít nhất một” | Vẽ hai vòng tròn giao nhau, đếm theo miền | Vẽ sơ đồ Ven ba miền, điền số vào miền giữa trước. | 90 cách · 14 cách · 13 bạn · 18 cách… |
-| I.5 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | &gt; · &lt; · &gt; · &gt;… |
+| I.5 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | > · < · > · >… |
 | II.1 | Đổi đơn vị đo | Bảng đơn vị đo lớp 3 | Hai đơn vị khác nhau nối bởi dấu … | Nhớ quan hệ rồi nhân | Thêm đúng số chữ số 0 tương ứng: 3 số 0 cho km→m, 2 số 0 cho m→cm. | 20 000 · 3 700 · 430 · 23 000… |
 | II.2 | Ba dạng bài trung bình cộng | Quan hệ tổng – số lượng – trung bình cộng | Cụm “trung bình mỗi …” | Đi qua tổng làm trung gian | Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng. | 240 kg · 219 kg · 206 kg · 90 kg… |
 | II.3 | Tổng – hiệu có lời văn | Công thức tổng – hiệu, sơ đồ đoạn thẳng | “Có tất cả …” và “… nhiều hơn … là …” | Đọc vị tổng và hiệu → sơ đồ → công thức | Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần. | 5C: 220 quyển, 5A: 198 quyển · đội Hai: 399 cây, nhóm Sao Mai: 303 cây · thư viện: 183 kg, hợp tác xã: 147 kg · đội Hai: 38 cây, đội Một: 24 cây… |
@@ -368,7 +368,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | I.2 | 3 450 kg = … tấn … tạ … kg | 3 tấn 4 tạ 50 kg |
 | I.3 | Ba bạn thích ba môn khác nhau, An thích Toán, Bình không thích Anh. Bình thích môn nào? | Tiếng Việt |
 | I.4 | 20 bạn giỏi Toán, 15 giỏi Văn, 8 giỏi cả hai. Bao nhiêu bạn giỏi ít nhất một môn? | 27 bạn |
-| I.5 | Điền dấu: 86 744 … 86 745 | &lt; |
+| I.5 | Điền dấu: 86 744 … 86 745 | < |
 | II.1 | 5 m = … cm | 500 |
 | II.2 | Trung bình mỗi ngày bán 40 kg, hỏi 5 ngày bán bao nhiêu? | 200 kg |
 | II.3 | Hai lớp có 90 quyển sách, lớp A nhiều hơn lớp B 10 quyển. Mỗi lớp có mấy quyển? | 50 và 40 |

@@ -34,7 +34,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài I.2** — a) 792 200 · b) 618 921 · c) 506 111 · d) 364 074 · e) 942 821
 - **Bài I.3** — a) số lẻ · b) 197 096 · c) số chẵn · d) số lẻ
 - **Bài I.4** — a) 541 460 · b) 343 000 · c) 384 200 · d) 31 150
-- **Bài I.5** — a) &lt; · b) &gt; · c) &lt; · d) &gt; · e) &gt; · f) &gt; · g) &gt; · h) &lt;
+- **Bài I.5** — a) < · b) > · c) < · d) > · e) > · f) > · g) > · h) <
 
 **Phần II**
 
@@ -64,7 +64,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài V.1** — a) 2 · b) 1 307 · c) không, dư 1 · d) tổng các số dư là 1, chia 2 dư 1 · e) 1 · f) 1
 - **Bài V.2** — a) 3 dư 10 · b) 5 dư 7 · c) 3 dư 10 · d) 5 dư 7
-- **Bài V.3** — a) 484 · b) &lt; · c) 39 · d) 40 · e) &lt;
+- **Bài V.3** — a) 484 · b) < · c) 39 · d) 40 · e) <
 - **Bài V.4** — a) 1 350 · b) 1 893 · c) 861 · d) 909 · e) 109 · f) 7 277
 - **Bài V.5** — a) 33 đơn vị · b) 4 đơn vị · c) 84 đơn vị · d) 12 đơn vị · e) 30 đơn vị
 
@@ -98,7 +98,7 @@ Nhìn chữ số ở hàng **liền sau** hàng cần làm tròn: nếu chữ s�
 
 *Điểm chốt:* Chỉ xét **một** chữ số liền sau, không cộng dồn cả phần đuôi.
 
-### Bài I.5 — Điền dấu &lt;, &gt;, = thích hợp
+### Bài I.5 — Điền dấu <, >, = thích hợp
 
 So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 
@@ -236,7 +236,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | I.2 | Viết số từ dạng tổng theo hàng | Cấu tạo thập phân của số tự nhiên | Tổng gồm các số tròn chục, tròn trăm, tròn nghìn… | Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết | Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số. | 792 200 · 618 921 · 506 111 · 364 074… |
 | I.3 | Nhận biết chẵn – lẻ và số liền kề | Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2 | Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” | Xét chữ số tận cùng; cộng hoặc trừ 1 đơn vị | Che hết các chữ số, chỉ để lộ chữ số cuối. | số lẻ · 197 096 · số chẵn · số lẻ |
 | I.4 | Làm tròn số tự nhiên | Quy tắc làm tròn, giá trị hàng | Cụm từ “làm tròn đến hàng …” | Gạch ngăn hàng → xét chữ số liền sau → giữ nguyên hoặc thêm 1 | Che toàn bộ phần đuôi sau nét gạch, chỉ để lộ đúng một chữ số. | 541 460 · 343 000 · 384 200 · 31 150 |
-| I.5 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | &lt; · &gt; · &lt; · &gt;… |
+| I.5 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | < · > · < · >… |
 | II.1 | Phép chia có dư | Quan hệ giữa số bị chia, số chia, thương và số dư | Đề yêu cầu ghi cả thương và số dư | Đặt tính chia, kiểm tra điều kiện số dư | Ước lượng thương bằng cách làm tròn số chia trước khi chia. | 1 834 dư 3 · 7 526 dư 14 · 8 908 dư 12 · 6 454 dư 7 |
 | II.2 | Đếm số hạng của dãy cách đều theo điều kiện chia hết | Dãy số cách đều, dấu hiệu chia hết | Cụm “có bao nhiêu số … từ … đến …” | Tìm số đầu, số cuối hợp lệ rồi dùng công thức đếm | Số các số chia hết cho d từ 1 đến n bằng phần nguyên của n : d, nên đếm từ a đến b là b : d trừ đi (a − 1) : d. | 55 · 235 · 116 · 126… |
 | II.3 | Điền chữ số theo điều kiện chia hết | Dấu hiệu chia hết, chữ số hàng cao nhất khác 0 | Số có ô trống hoặc dấu *, kèm điều kiện chia hết | Dùng dấu hiệu để lập điều kiện cho dấu * rồi thử 0–9 | Với 3 và 9: tính tổng các chữ số đã biết một lần duy nhất, rồi tìm phần bù cần thêm. | 0, 5 · 6 · 4 · 0, 1, 2, 3, 4, 5, 6, 7, 8, 9… |
@@ -254,7 +254,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.5 | Tổng và trung bình cộng của dãy cách đều | Dãy cách đều, trung bình cộng | Đề cho số số hạng, khoảng cách và một đầu của dãy | Tìm hai đầu dãy → tổng → trung bình cộng | Mọi cặp số hạng cách đều hai đầu đều có tổng bằng nhau. | 34 · 72 · 1 060 · 53… |
 | V.1 | Xét số dư của tổng | Tính chất số dư của tổng | Đề hỏi chia hết hay số dư của một tổng dài | Rút gọn từng số hạng về số dư rồi cộng | Với d = 9, số dư của một số bằng số dư của tổng các chữ số của nó. | 2 · 1 307 · không, dư 1 · tổng các số dư là 1, chia 2 dư 1… |
 | V.2 | Số và tổng chữ số của nó | Cấu tạo thập phân, phép chia có dư | Đề liên hệ số với tổng các chữ số của chính nó | Đặt ẩn cho chữ số, viết hai biểu thức, lập bảng thử | a × 10 + b − (a + b) = 9 × a — hiệu luôn là bội của 9. | 3 dư 10 · 5 dư 7 · 3 dư 10 · 5 dư 7 |
-| V.3 | Tính, so sánh tích bằng kĩ thuật tách – bù | Nhân một số với một tổng, một hiệu | Các thừa số hơn kém nhau rất ít | Quy về số gốc chung, so phần chênh | Với hai tích có tổng hai thừa số bằng nhau, tích nào có hai thừa số gần nhau hơn thì lớn hơn. | 484 · &lt; · 39 · 40… |
+| V.3 | Tính, so sánh tích bằng kĩ thuật tách – bù | Nhân một số với một tổng, một hiệu | Các thừa số hơn kém nhau rất ít | Quy về số gốc chung, so phần chênh | Với hai tích có tổng hai thừa số bằng nhau, tích nào có hai thừa số gần nhau hơn thì lớn hơn. | 484 · < · 39 · 40… |
 | V.4 | Đếm chữ số theo nhóm độ dài | Đếm số hạng dãy cách đều, cấu tạo số | Bài toán đánh số trang, đánh số nhà, đánh số vé | Chia nhóm 1 chữ số – 2 chữ số – 3 chữ số rồi nhân và cộng | Sách 100 trang luôn dùng 192 chữ số; nhớ mốc này để kiểm tra nhanh. | 1 350 · 1 893 · 861 · 909… |
 | V.5 | Tổng – tỉ có tỉ số thay đổi | Tổng – tỉ, đại lượng không đổi | “Phải thêm (bớt) bao nhiêu để tỉ số trở thành …” | Xác định đại lượng bất biến → tính lại đại lượng kia | Số cần thêm = số bé × (tỉ số mới − tỉ số cũ). | 33 đơn vị · 4 đơn vị · 84 đơn vị · 12 đơn vị… |
 
@@ -368,7 +368,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | I.2 | Viết số gồm tổng: 30 000 + 400 + 7 | 30 407 |
 | I.3 | Số liền sau của 83 607 là số nào? | 83 608 |
 | I.4 | Làm tròn 4 762 đến hàng trăm. | 4 800 |
-| I.5 | Điền dấu: 63 911 … 63 912 | &lt; |
+| I.5 | Điền dấu: 63 911 … 63 912 | < |
 | II.1 | Tìm thương và số dư của 1 234 : 7 | 176 dư 2 |
 | II.2 | Có bao nhiêu số chẵn từ 10 đến 40? | 16 |
 | II.3 | Tìm chữ số thay cho * để 12* chia hết cho 5. | 0, 5 |
@@ -386,7 +386,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | IV.5 | Dãy cách đều 10 số hạng, đầu 5, cuối 50. Tổng bằng bao nhiêu? | 275 |
 | V.1 | Tổng 123 + 234 + 345 chia cho 9 dư mấy? | dư 0 |
 | V.2 | Số 27 gấp mấy lần tổng hai chữ số của nó? | 3 lần |
-| V.3 | So sánh: 99 × 101 … 100 × 100 | &lt; |
+| V.3 | So sánh: 99 × 101 … 100 × 100 | < |
 | V.4 | Quyển sách 150 trang dùng hết bao nhiêu chữ số? | 342 |
 | V.5 | Số lớn gấp 2 lần số bé, tổng là 30. Thêm bao nhiêu vào số lớn để nó gấp 4 lần số bé? | 20 |
 

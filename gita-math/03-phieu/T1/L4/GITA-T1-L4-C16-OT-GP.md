@@ -40,7 +40,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài II.1** — a) 990 · b) 165 · c) 2 550 · d) 5 050 · e) 625
 - **Bài II.2** — a) nhóm Sao Mai: 90 cây, tổ Hai: 210 cây · b) đội Hai: 37 cây, tổ Ba: 111 cây · c) tổ Hai: 24 cây, nhóm Hoa Phượng: 42 cây · d) đội Hai: 267 cây, nhóm Hoa Phượng: 356 cây · e) đội Một: 432 cây, nhóm Hoa Phượng: 540 cây
-- **Bài II.3** — a) &gt; · b) &gt; · c) &gt; · d) &gt; · e) &lt; · f) &lt; · g) &lt;
+- **Bài II.3** — a) > · b) > · c) > · d) > · e) < · f) < · g) <
 - **Bài II.4** — a) x = 95 · b) x = 19 · c) x = 85 · d) x = 80
 - **Bài II.5** — a) 198 kg · b) 51 kg · c) 240 kg · d) 6 kg · e) 180 kg · f) 140 kg
 
@@ -239,7 +239,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | I.5 | Tính nhanh tích, thương nhiều bước | Tính chất giao hoán, kết hợp của phép nhân | Tích có thừa số 25, 125, 50, 20; hoặc chia liên tiếp | Ghép cặp cho tích tròn rồi nhân | Chia liên tiếp cho 4 rồi 25 bằng chia cho 100. | 17 · 68 · 1 700 · 30 000… |
 | II.1 | Tổng dãy số cách đều | Công thức tổng dãy cách đều | Dãy cộng có dấu … và các số cách đều nhau | Đếm số số hạng rồi áp công thức tổng | Ghép cặp đầu – cuối: mọi cặp đều có cùng tổng, chỉ cần nhân với số cặp. | 990 · 165 · 2 550 · 5 050… |
 | II.2 | Bài toán tổng – tỉ | Tỉ số, sơ đồ đoạn thẳng, chia theo tỉ lệ | Đề cho **tổng** và **tỉ số** (phân số hoặc “gấp … lần”) | Sơ đồ phần bằng nhau → giá trị một phần → nhân | Tổng luôn chia hết cho tổng số phần — nếu không chia hết là đọc sai tỉ số. | nhóm Sao Mai: 90 cây, tổ Hai: 210 cây · đội Hai: 37 cây, tổ Ba: 111 cây · tổ Hai: 24 cây, nhóm Hoa Phượng: 42 cây · đội Hai: 267 cây, nhóm Hoa Phượng: 356 cây… |
-| II.3 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | &gt; · &gt; · &gt; · &gt;… |
+| II.3 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | > · > · > · >… |
 | II.4 | Tìm x nhiều bước có ngoặc | Thứ tự thực hiện phép tính, quan hệ thành phần | x nằm trong ngoặc, ngoài ngoặc còn phép tính khác | Bóc lớp từ ngoài vào trong | Thay x tìm được vào đề, tính một lượt để thử lại. | x = 95 · x = 19 · x = 85 · x = 80 |
 | II.5 | Tìm phân số của một số, nhiều bước | Tìm phân số của một số | Cụm “… số còn lại”, “… số đó” | Tính tuần tự, sau mỗi bước ghi lại số còn lại | Còn lại sau ngày đầu là (1 − phân số) của tổng; nhân trực tiếp cho nhanh. | 198 kg · 51 kg · 240 kg · 6 kg… |
 | III.1 | Bài toán hiệu – tỉ | Tỉ số, sơ đồ đoạn thẳng | Đề cho **hiệu** và **tỉ số** | Sơ đồ → hiệu số phần → giá trị một phần | Hiệu luôn chia hết cho hiệu số phần — dùng để kiểm tra đã đọc đúng tỉ số chưa. | cửa hàng: 342 kg, xưởng: 570 kg · xưởng: 56 kg, thư viện: 196 kg · cửa hàng: 136 kg, kho B: 340 kg · cửa hàng: 188 kg, kho B: 564 kg… |
@@ -371,7 +371,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | I.5 | Tính nhanh: 37 × 25 × 4 | 3 700 |
 | II.1 | Tính nhanh: 1 + 2 + 3 + … + 100 | 5 050 |
 | II.2 | Hai tổ trồng 120 cây, số cây tổ Một bằng 1 phần 2 tổ Hai. Mỗi tổ trồng mấy cây? | 40 và 80 |
-| II.3 | So sánh: 234 × 7 … 234 × 8 | &lt; |
+| II.3 | So sánh: 234 × 7 … 234 × 8 | < |
 | II.4 | Tìm x: (x + 12) × 5 − 8 = 132 | x = 16 |
 | II.5 | Có 60 kg gạo, bán 1 phần 3 rồi bán tiếp 1 phần 2 số còn lại. Còn bao nhiêu? | 20 kg |
 | III.1 | Số lớn hơn số bé 24, số bé bằng 1 phần 3 số lớn. Tìm hai số. | 12 và 36 |

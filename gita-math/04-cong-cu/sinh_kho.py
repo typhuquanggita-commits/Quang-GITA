@@ -25,6 +25,14 @@ import lap.kem as K                              # noqa: E402
 
 INDEX = ROOT / "02-chi-muc" / "index-master.json"
 OUT = ROOT / "03-phieu"
+
+# Bản viết tay chuẩn vàng — thước đo chất lượng của bộ sinh. Máy không được đè,
+# kể cả khi chạy --ghi-de; muốn dựng lại phải nêu rõ --ke-ca-chuan-vang.
+CHUAN_VANG = {
+    "GITA-T1-L4-C03-LT", "GITA-T1-L4-C03-DB", "GITA-T1-L4-C03-KN",
+    "GITA-T1-L4-C03-NC", "GITA-T1-L4-C03-OT", "GITA-T1-L4-C03-TH",
+    "GITA-T1-L4-C03-HD", "GITA-T1-L4-C03-NC-GP", "GITA-T2-L5-C04-NC",
+}
 V, X = "\033[32m✔\033[0m", "\033[31m✘\033[0m"
 
 
@@ -35,6 +43,8 @@ def duong_dan(r: dict) -> Path:
 def main() -> int:
     ap = argparse.ArgumentParser(description="Sinh kho học liệu GITA")
     ap.add_argument("--ghi-de", action="store_true", help="ghi đè cả tài liệu đã có")
+    ap.add_argument("--ke-ca-chuan-vang", action="store_true",
+                    help="đè cả chín bản viết tay chuẩn vàng — cân nhắc kỹ")
     ap.add_argument("--loai", nargs="*", help="chỉ sinh những loại này")
     ap.add_argument("--lop", nargs="*", type=int, help="chỉ sinh những lớp này")
     ap.add_argument("--tuyen", nargs="*", help="chỉ sinh những tuyến này")
@@ -51,9 +61,12 @@ def main() -> int:
     print(f"Chỉ mục có {len(rows)} tài liệu · sẽ xử lý {len(can)}")
 
     t0 = time.time()
-    moi = bo_qua = loi = 0
+    moi = bo_qua = giu = loi = 0
     for i, r in enumerate(can, 1):
         p = duong_dan(r)
+        if r["ma"] in CHUAN_VANG and p.exists() and not a.ke_ca_chuan_vang:
+            giu += 1
+            continue
         if p.exists() and not a.ghi_de:
             bo_qua += 1
             continue
@@ -75,7 +88,7 @@ def main() -> int:
             print(f"  … {i}/{len(can)}  ({time.time() - t0:.0f}s)")
 
     print(f"\n{V if not loi else X} Sinh mới {moi} · giữ nguyên {bo_qua} · "
-          f"lỗi {loi} · {time.time() - t0:.0f} giây")
+          f"giữ bản chuẩn vàng {giu} · lỗi {loi} · {time.time() - t0:.0f} giây")
     if not loi:
         print(f"  Kho nằm tại {OUT.relative_to(ROOT)}/ — kiểm định bằng "
               f"`python3 04-cong-cu/validate_phieu.py --all`")

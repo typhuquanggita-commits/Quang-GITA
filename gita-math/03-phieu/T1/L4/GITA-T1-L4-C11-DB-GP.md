@@ -50,7 +50,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài C.2** — a) tổ Một: 137 cây, tổ Hai: 101 cây · b) thư viện: 94 kg, hợp tác xã: 66 kg · c) 4C: 72 quyển, 4B: 38 quyển · d) tổ Hai: 411 cây, tổ Một: 257 cây · e) 3B: 429 quyển, 5B: 399 quyển
 - **Bài C.3** — a) 200 · b) 200 · c) 200 · d) 200 · e) 211 · f) 398 · g) 101
 - **Bài C.4** — a) có · b) không, dư 1 · c) có · d) có
-- **Bài C.5** — a) &lt; · b) &lt; · c) &lt; · d) &lt; · e) &gt; · f) &lt;
+- **Bài C.5** — a) < · b) < · c) < · d) < · e) > · f) <
 
 **Phần D**
 
@@ -246,7 +246,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | C.2 | Tổng – hiệu có lời văn | Công thức tổng – hiệu, sơ đồ đoạn thẳng | “Có tất cả …” và “… nhiều hơn … là …” | Đọc vị tổng và hiệu → sơ đồ → công thức | Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần. | tổ Một: 137 cây, tổ Hai: 101 cây · thư viện: 94 kg, hợp tác xã: 66 kg · 4C: 72 quyển, 4B: 38 quyển · tổ Hai: 411 cây, tổ Một: 257 cây… |
 | C.3 | Tính nhanh tổng nhiều số hạng | Tính chất giao hoán, kết hợp của phép cộng | Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm | Ghép cặp tròn rồi cộng | Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10. | 200 · 200 · 200 · 200… |
 | C.4 | Xét chia hết của tổng, hiệu | Tính chất chia hết của tổng và hiệu | Câu hỏi về tổng hoặc hiệu, không yêu cầu kết quả cụ thể | Xét số dư từng số hạng rồi cộng, trừ các số dư | Chỉ cộng các **số dư**, không cộng các số. | có · không, dư 1 · có · có |
-| C.5 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &lt; · &lt; · &lt; · &lt;… |
+| C.5 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | < · < · < · <… |
 | D.1 | Dãy số truy hồi có quy tắc rẽ nhánh | Dãy số cho bởi quy tắc, tính lần lượt | Đề mô tả cách lập số hạng từ số hạng liền trước | Lập bảng, tính lần lượt, bám sát vị trí | Chỉ cần tính tới số hạng được hỏi, không cần tính cả dãy. | 5, 14, 22 · 64 · 156 · 348… |
 | D.2 | Đếm hình bằng quy tắc chọn hai điểm | Quy tắc đếm, tổ hợp chập hai | Hình có nhiều đoạn kẻ từ cùng một đỉnh, hoặc nhiều điểm trên một đường | Quy về số cách chọn hai điểm | Số cách chọn 2 trong k là k × (k − 1) : 2 — thuộc công thức này là xong. | 10 · 4 · 3 · 3… |
 | D.3 | Tìm phân số của một số, nhiều bước | Tìm phân số của một số | Cụm “… số còn lại”, “… số đó” | Tính tuần tự, sau mỗi bước ghi lại số còn lại | Còn lại sau ngày đầu là (1 − phân số) của tổng; nhân trực tiếp cho nhanh. | 162 kg · 70 kg · 252 kg · 136 kg… |
@@ -378,7 +378,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | C.2 | Hai lớp có 90 quyển sách, lớp A nhiều hơn lớp B 10 quyển. Mỗi lớp có mấy quyển? | 50 và 40 |
 | C.3 | Tính nhanh: 37 + 145 + 63 | 245 |
 | C.4 | Tổng 45 + 27 có chia hết cho 9 không? | có |
-| C.5 | So sánh: 3 kg … 2 500 g | &gt; |
+| C.5 | So sánh: 3 kg … 2 500 g | > |
 | D.1 | Dãy: số đầu là 2, mỗi số sau bằng số trước nhân 2. Số thứ 5 là số nào? | 32 |
 | D.2 | Trên một đường thẳng có 5 điểm. Có bao nhiêu đoạn thẳng? | 10 |
 | D.3 | Có 60 kg gạo, bán 1 phần 3 rồi bán tiếp 1 phần 2 số còn lại. Còn bao nhiêu? | 20 kg |

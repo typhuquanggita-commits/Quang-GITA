@@ -197,7 +197,7 @@ f) Xưởng và kho B chứa tất cả 154 kg xi măng. Xưởng chứa nhiều
 
 ### Bài 3. (5 điểm) So sánh hai số đo khác đơn vị
 
-Điền dấu &lt;, &gt;, = thích hợp.
+Điền dấu <, >, = thích hợp.
 
 a) 35 ha … 8 251 km²
 b) 3 kg … 2 457 dag
@@ -252,7 +252,7 @@ e) (x × 5 − 55) × 7 = 280
 
 ### Bài 3. (4 điểm) So sánh hai biểu thức mà không cần tính
 
-Điền dấu &lt;, &gt;, = và giải thích ngắn.
+Điền dấu <, >, = và giải thích ngắn.
 
 a) 832 × 30 … 488 × 30
 b) 652 + 14 … 634 + 14
@@ -419,7 +419,7 @@ f) Lỗi nào dễ mắc ở đề này?
 **Lỗi thường gặp:** Nhầm hiệu thành tổng khi đề diễn đạt vòng vo. Phòng: Ghi riêng ra hai dòng: Tổng = … ; Hiệu = … trước khi tính.
 
 ### Bài C.3
-**Đáp số:** a) &lt; · b) &lt; · c) &lt; · d) &gt; · e) &lt; · f) &lt;
+**Đáp số:** a) < · b) < · c) < · d) > · e) < · f) <
 **Hướng giải:** Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.
@@ -451,7 +451,7 @@ f) Lỗi nào dễ mắc ở đề này?
 **Gợi ý 3 tầng:** (1) Phép tính ngoài cùng là phép nào? — (2) Coi cả cụm còn lại là một số và tìm giá trị của nó. — (3) Lặp lại cho tới khi chỉ còn x.
 
 ### Bài D.3
-**Đáp số:** a) &gt; · b) &gt; · c) &lt; · d) &lt; · e) &gt;
+**Đáp số:** a) > · b) > · c) < · d) < · e) >
 **Hướng giải:** Khi hai biểu thức có phần giống nhau, chỉ cần so sánh phần khác nhau: cùng cộng thêm một số thì số nào lớn hơn vẫn lớn hơn; cùng nhân với một số khác 0 cũng vậy.
 **Nhãn tư duy:** TD5, TD2. Điểm chốt: Che phần **giống nhau** đi, chỉ so phần khác nhau.
 **Lỗi thường gặp:** Tính hết cả hai vế, vừa lâu vừa dễ sai. Phòng: Dùng bút gạch bỏ phần giống nhau ở hai vế trước khi so sánh.

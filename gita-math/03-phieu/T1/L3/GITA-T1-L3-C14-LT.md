@@ -61,7 +61,7 @@ c) Tìm trung bình cộng của 5 số: 55, 59, 66, 64, 56.
 d) Tìm trung bình cộng của 3 số: 56, 67, 48.
 e) Tìm trung bình cộng của 3 số: 28, 26, 27.
 
-### Bài 2. (1 điểm) Điền dấu &lt;, &gt;, = thích hợp
+### Bài 2. (1 điểm) Điền dấu <, >, = thích hợp
 
 Điền dấu thích hợp vào chỗ chấm.
 
@@ -347,7 +347,7 @@ e) Nếu bốn bạn khác gấp được 24, 10, 13, 21 bông thì trung bình 
 **Lỗi thường gặp:** Đếm sai số lượng số hạng nên chia nhầm. Phòng: Đánh số thứ tự từng số trước khi cộng.
 
 ### Bài A.2
-**Đáp số:** a) &lt; · b) &lt; · c) &gt; · d) &lt; · e) &lt; · f) &lt; · g) &lt;
+**Đáp số:** a) < · b) < · c) > · d) < · e) < · f) < · g) <
 **Hướng giải:** So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Đếm số chữ số **trước**, chỉ khi bằng nhau mới so từng hàng.
 **Lỗi thường gặp:** So từ hàng đơn vị (phải sang trái) nên kết luận sai. Phòng: Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái.

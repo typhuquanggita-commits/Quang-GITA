@@ -96,7 +96,7 @@ e) Số 1 834 458 có bao nhiêu chữ số, và tổng các chữ số của n�
 
 ### Bài 5. (3 điểm) So sánh hai phân số
 
-Điền dấu &lt;, &gt;, = thích hợp.
+Điền dấu <, >, = thích hợp.
 
 a) 6 phần 5 … 2 phần 13
 b) 1 phần 10 … 1 phần 13
@@ -354,7 +354,7 @@ e) Ghép 16 hình vuông cạnh 17 cm thành một hình vuông lớn. Tính chu
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
 
 ### Bài I.2
-**Đáp số:** a) &gt; · b) 5 · c) 0,6 · d) 2 · e) 0,694 · f) &lt;
+**Đáp số:** a) > · b) 5 · c) 0,6 · d) 2 · e) 0,694 · f) <
 **Hướng giải:** Sau dấu phẩy lần lượt là hàng phần mười, phần trăm, phần nghìn. So sánh số thập phân: so phần nguyên trước; phần nguyên bằng nhau thì so lần lượt hàng phần mười, phần trăm, phần nghìn. Phân số có mẫu là 10, 100, 1 000 đổi được thẳng sang số thập phân.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: So sánh theo **hàng**, không so theo số chữ số sau dấu phẩy.
 **Lỗi thường gặp:** Cho rằng số có nhiều chữ số sau dấu phẩy hơn thì lớn hơn. Phòng: Viết thêm chữ số 0 vào cuối để hai số có cùng số chữ số thập phân rồi mới so.
@@ -372,7 +372,7 @@ e) Ghép 16 hình vuông cạnh 17 cm thành một hình vuông lớn. Tính chu
 **Lỗi thường gặp:** Cộng cả giá trị hàng (ví dụ cộng 300 thay vì cộng 3). Phòng: Viết rời từng chữ số ra rồi mới cộng.
 
 ### Bài I.5
-**Đáp số:** a) &gt; · b) &gt; · c) &lt; · d) &gt; · e) &gt; · f) &gt;
+**Đáp số:** a) > · b) > · c) < · d) > · e) > · f) >
 **Hướng giải:** Cùng mẫu số: phân số nào có tử số lớn hơn thì lớn hơn. Cùng tử số: phân số nào có mẫu số **bé** hơn thì lớn hơn. Khác cả tử lẫn mẫu: quy đồng mẫu số rồi so tử số.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Cùng tử số thì **mẫu bé hơn là phân số lớn hơn** — ngược với trực giác.
 **Lỗi thường gặp:** Thấy mẫu số lớn thì kết luận phân số lớn. Phòng: Nghĩ tới chiếc bánh: chia càng nhiều phần thì mỗi phần càng bé.
@@ -494,7 +494,7 @@ e) Ghép 16 hình vuông cạnh 17 cm thành một hình vuông lớn. Tính chu
 **Gợi ý 3 tầng:** (1) Phân tích các mẫu số thành tích hai số liên tiếp. — (2) Tách 1 phần (n × (n + 1)) thành hiệu hai phân số. — (3) Viết cả dãy thành hiệu rồi xem phần nào khử nhau.
 
 ### Bài V.4
-**Đáp số:** a) &gt; · b) &lt; · c) &lt; · d) &gt; · e) &lt;
+**Đáp số:** a) > · b) < · c) < · d) > · e) <
 **Hướng giải:** **Phần bù tới 1:** hai phân số đều thiếu một chút nữa thì bằng 1; phân số nào có phần bù **bé hơn** thì lớn hơn. **Phân số trung gian:** chọn một phân số dễ so (thường là 1 phần 2 hoặc 1 phần 3) rồi so mỗi phân số với nó.
 **Nhãn tư duy:** TD6, TD5. Điểm chốt: Phần bù **bé hơn** nghĩa là phân số **lớn hơn** — dễ nhớ nhầm chiều.
 **Lỗi thường gặp:** So phần bù rồi kết luận cùng chiều với phần bù. Phòng: Nghĩ tới chiếc bánh: thiếu ít hơn thì phần đang có nhiều hơn.

@@ -33,8 +33,8 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài I.1** — a) 2 phần 7 · b) 1 phần 6 · c) 7 phần 12 · d) 9 phần 5 · e) 1 · f) 1 phần 2 · g) 7 phần 10
 - **Bài I.2** — a) 7 chữ số, tổng 34 · b) 7 chữ số, tổng 33 · c) 7 chữ số, tổng 31 · d) 7 chữ số, tổng 26 · e) 7 chữ số, tổng 33 · f) 7 chữ số, tổng 43
 - **Bài I.3** — a) 2 500 cm² · b) 36 cm · c) 144 cm · d) 105 cm² · e) 132 cm · f) 81 cm² · g) 166 cm
-- **Bài I.4** — a) &lt; · b) 0,7 · c) 7 · d) &lt; · e) 0,4 · f) 5 · g) 0,4
-- **Bài I.5** — a) &gt; · b) &gt; · c) &gt; · d) &lt; · e) &lt; · f) &gt;
+- **Bài I.4** — a) < · b) 0,7 · c) 7 · d) < · e) 0,4 · f) 5 · g) 0,4
+- **Bài I.5** — a) > · b) > · c) > · d) < · e) < · f) >
 
 **Phần II**
 
@@ -66,7 +66,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài V.2** — a) 2 550 · b) 325 · c) 400 · d) 420
 - **Bài V.3** — a) 91,06 cm² · b) 907,46 cm² · c) 104,06 cm² · d) 78,5 cm² · e) 602,88 cm²
 - **Bài V.4** — a) 7 · b) 1 · c) 1 · d) 7 · e) 5 · f) 547
-- **Bài V.5** — a) &gt; · b) &lt; · c) &lt; · d) &gt;
+- **Bài V.5** — a) > · b) < · c) < · d) >
 
 ---
 
@@ -235,8 +235,8 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | I.1 | Rút gọn phân số | Tính chất cơ bản của phân số | Tử số và mẫu số có ước chung lớn hơn 1 | Chia cả tử và mẫu cho ước chung | Tìm ngay ước chung lớn nhất để rút gọn một lần là xong. | 2 phần 7 · 1 phần 6 · 7 phần 12 · 9 phần 5… |
 | I.2 | Đếm chữ số, tính tổng chữ số | Cấu tạo số, tổng chữ số | Yêu cầu “có mấy chữ số”, “tổng các chữ số” | Tách lớp để đếm; cộng rời từng chữ số | Ghép cặp các chữ số cộng lại tròn 10 rồi cộng nhanh. | 7 chữ số, tổng 34 · 7 chữ số, tổng 33 · 7 chữ số, tổng 31 · 7 chữ số, tổng 26… |
 | I.3 | Chu vi, diện tích hình cơ bản | Công thức chu vi, diện tích hình chữ nhật và hình vuông | Cho chiều dài, chiều rộng hoặc cạnh | Chọn đúng công thức, ghi đúng đơn vị | Hình vuông là hình chữ nhật có dài bằng rộng — chỉ cần nhớ một bộ công thức. | 2 500 cm² · 36 cm · 144 cm · 105 cm²… |
-| I.4 | Số thập phân — hàng, so sánh, chuyển đổi | Cấu tạo số thập phân, quan hệ phân số – số thập phân | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 | Xét theo hàng từ trái sang phải | Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. | &lt; · 0,7 · 7 · &lt;… |
-| I.5 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | &gt; · &gt; · &gt; · &lt;… |
+| I.4 | Số thập phân — hàng, so sánh, chuyển đổi | Cấu tạo số thập phân, quan hệ phân số – số thập phân | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 | Xét theo hàng từ trái sang phải | Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. | < · 0,7 · 7 · <… |
+| I.5 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | > · > · > · <… |
 | II.1 | Ba dạng toán tỉ số phần trăm | Tỉ số phần trăm | Kí hiệu %, cụm “… % của …” | Xác định đại lượng ứng với 100% rồi chọn dạng | Coi 100% là “cả phần”, 1% là “cả phần chia 100” — mọi dạng đều quy về 1%. | 15 · 40% · 400 · 5… |
 | II.2 | Bốn phép tính với phân số | Quy đồng, nhân chia phân số | Biểu thức chỉ gồm phân số | Chọn quy tắc theo phép tính, rút gọn cuối cùng | Rút gọn chéo trước khi nhân để số nhỏ, tính nhanh và ít sai. | 25 phần 63 · 7 phần 20 · 19 phần 14 · 65 phần 99… |
 | II.3 | Tính nhanh tích, thương nhiều bước | Tính chất giao hoán, kết hợp của phép nhân | Tích có thừa số 25, 125, 50, 20; hoặc chia liên tiếp | Ghép cặp cho tích tròn rồi nhân | Chia liên tiếp cho 4 rồi 25 bằng chia cho 100. | 9 800 · 82 · 11 000 · 11… |
@@ -256,7 +256,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | V.2 | Tổng dãy đặc biệt | Ba công thức tổng cơ bản | Dãy toàn số lẻ, toàn số chẵn, hoặc số tự nhiên liên tiếp | Đếm số số hạng rồi áp công thức | Tổng n số lẻ đầu tiên luôn là một số chính phương — dùng để kiểm tra nhanh. | 2 550 · 325 · 400 · 420 |
 | V.3 | Diện tích phần tô màu | Diện tích hình tròn, hình vuông; phép trừ diện tích | Hình gồm nhiều hình lồng nhau, hỏi phần còn lại | Tách thành hiệu các hình cơ bản | Hình tròn nội tiếp hình vuông chiếm khoảng 78,5% diện tích hình vuông. | 91,06 cm² · 907,46 cm² · 104,06 cm² · 78,5 cm²… |
 | V.4 | Dãy tuần hoàn | Phép chia có dư, tính tuần hoàn | Dãy lặp lại một nhóm số cố định | Chia vị trí cho chu kì, dùng số dư định vị | Tổng n số hạng = tổng một chu kì × số chu kì đầy đủ + tổng phần dư. | 7 · 1 · 1 · 7… |
-| V.5 | So sánh phân số bằng kĩ thuật đặc biệt | Phần bù tới 1, phân số trung gian | Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 | So phần bù; hoặc chèn phân số trung gian | Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. | &gt; · &lt; · &lt; · &gt; |
+| V.5 | So sánh phân số bằng kĩ thuật đặc biệt | Phần bù tới 1, phân số trung gian | Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 | So phần bù; hoặc chèn phân số trung gian | Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. | > · < · < · > |
 
 ---
 
@@ -367,8 +367,8 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | I.1 | Rút gọn 18 phần 24. | 3 phần 4 |
 | I.2 | Số 40 506 có mấy chữ số và tổng các chữ số bằng bao nhiêu? | 5 chữ số, tổng 15 |
 | I.3 | Hình chữ nhật dài 8 cm, rộng 5 cm. Tính diện tích. | 40 cm² |
-| I.4 | So sánh: 0,5 … 0,45 | &gt; |
-| I.5 | So sánh: 3 phần 5 … 3 phần 7 | &gt; |
+| I.4 | So sánh: 0,5 … 0,45 | > |
+| I.5 | So sánh: 3 phần 5 … 3 phần 7 | > |
 | II.1 | Tìm 25% của 200. | 50 |
 | II.2 | Tính: 2 phần 3 + 1 phần 6 | 5 phần 6 |
 | II.3 | Tính nhanh: 37 × 25 × 4 | 3 700 |
@@ -388,7 +388,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | V.2 | Tính: 1 + 3 + 5 + … + 19 | 100 |
 | V.3 | Hình tròn bán kính 5 cm nội tiếp hình vuông. Diện tích phần ngoài hình tròn bằng bao nhiêu? | 21,5 cm² |
 | V.4 | Dãy 1, 2, 3, 1, 2, 3, … số hạng thứ 100 là số nào? | 1 |
-| V.5 | So sánh: 5 phần 6 … 7 phần 8 | &lt; |
+| V.5 | So sánh: 5 phần 6 … 7 phần 8 | < |
 
 ---
 

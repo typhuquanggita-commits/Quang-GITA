@@ -39,7 +39,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần II**
 
 - **Bài II.1** — a) 116 viên (làm tròn lên) · b) 163 viên (làm tròn lên) · c) 196 m · d) 63 cây · e) 75 cây · f) 180 m
-- **Bài II.2** — a) &gt; · b) &gt; · c) &lt; · d) &gt; · e) &lt;
+- **Bài II.2** — a) > · b) > · c) < · d) > · e) <
 - **Bài II.3** — a) 15% · b) 40 · c) 80 · d) 16 · e) 80 · f) 15%
 - **Bài II.4** — a) 374 cm² · b) 288 cm² · c) 735 cm² · d) 405 cm² · e) 330 cm² · f) 112 cm²
 - **Bài II.5** — a) 72 cm² · b) 336 cm² · c) 216 cm² · d) 74 cm² · e) 204 cm²
@@ -238,7 +238,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | I.4 | Đếm hình trong lưới | Quy tắc đếm, tổ hợp đơn giản | Hình vẽ là lưới ô vuông đều | Đếm theo đường kẻ hoặc theo cỡ hình | Số cách chọn 2 trong k đường kẻ là k × (k − 1) : 2. | 10 · 45 · 14 · 14 cm… |
 | I.5 | Xác định chữ số và giá trị chữ số theo hàng | Cấu tạo thập phân của số tự nhiên | Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” | Đánh số hàng từ phải sang trái rồi tra bảng hàng | Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị. | chữ số 3, giá trị 3 000 000 · chữ số 2, giá trị 200 000 · chữ số 2, giá trị 2 000 · chữ số 7, giá trị 700… |
 | II.1 | Chu vi, diện tích trong tình huống thực tế | Công thức chu vi, diện tích; phép chia | Từ khoá “rào xung quanh”, “lát gạch”, “trồng cây quanh” | Đọc vị chu vi hay diện tích rồi tính | Nhìn đơn vị của đáp số: mét thì là chu vi, mét vuông thì là diện tích. | 116 viên (làm tròn lên) · 163 viên (làm tròn lên) · 196 m · 63 cây… |
-| II.2 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &gt; · &gt; · &lt; · &gt;… |
+| II.2 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | > · > · < · >… |
 | II.3 | Ba dạng toán tỉ số phần trăm | Tỉ số phần trăm | Kí hiệu %, cụm “… % của …” | Xác định đại lượng ứng với 100% rồi chọn dạng | Coi 100% là “cả phần”, 1% là “cả phần chia 100” — mọi dạng đều quy về 1%. | 15% · 40 · 80 · 16… |
 | II.4 | Diện tích hình thang | Công thức diện tích hình thang | Đề cho hai đáy và chiều cao | Tổng hai đáy × chiều cao : 2 | Nếu tổng hai đáy là số chẵn thì chia 2 ngay từ đầu cho gọn. | 374 cm² · 288 cm² · 735 cm² · 405 cm²… |
 | II.5 | Diện tích các hình phẳng cơ bản | Công thức diện tích hình bình hành, hình thoi, hình tam giác | Đề cho đáy và chiều cao, hoặc hai đường chéo | Nhận dạng hình rồi chọn công thức | Tam giác bằng nửa hình bình hành cùng đáy cùng chiều cao. | 72 cm² · 336 cm² · 216 cm² · 74 cm²… |
@@ -370,7 +370,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | I.4 | Lưới 2 hàng 2 cột có bao nhiêu hình vuông? | 5 |
 | I.5 | Chữ số hàng chục của số 3 282 799 có giá trị bao nhiêu? | 90 |
 | II.1 | Vườn dài 20 m rộng 10 m, rào xung quanh cần bao nhiêu mét rào? | 60 m |
-| II.2 | So sánh: 3 kg … 2 500 g | &gt; |
+| II.2 | So sánh: 3 kg … 2 500 g | > |
 | II.3 | Tìm 25% của 200. | 50 |
 | II.4 | Hình thang đáy 12 cm và 8 cm, cao 5 cm. Diện tích bằng bao nhiêu? | 50 cm² |
 | II.5 | Tam giác đáy 10 cm, cao 6 cm. Diện tích bằng bao nhiêu? | 30 cm² |

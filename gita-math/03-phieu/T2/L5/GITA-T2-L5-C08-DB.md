@@ -207,7 +207,7 @@ f) Có bao nhiêu số chia hết cho 3 từ 399 đến 545?
 
 ### Bài 5. (5 điểm) So sánh hai số đo khác đơn vị
 
-Điền dấu &lt;, &gt;, = thích hợp.
+Điền dấu <, >, = thích hợp.
 
 a) 73 km … 6 472 dam
 b) 34 dm² … 372 ha
@@ -423,7 +423,7 @@ f) Lỗi nào dễ mắc ở đề này?
 **Lỗi thường gặp:** Lấy luôn hai đầu khoảng làm số đầu và số cuối của dãy dù chúng không thoả điều kiện. Phòng: Viết ra ba số đầu và ba số cuối của dãy trước khi áp công thức.
 
 ### Bài C.5
-**Đáp số:** a) &gt; · b) &lt; · c) &gt; · d) &lt; · e) &lt;
+**Đáp số:** a) > · b) < · c) > · d) < · e) <
 **Hướng giải:** Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.

@@ -33,8 +33,8 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài A.1** — a) x = 597 · b) x = 102 · c) x = 733 · d) x = 375 · e) x = 420 · f) x = 4 656 · g) x = 34
 - **Bài A.2** — a) 764 000 · b) 762 700 · c) 210 410 · d) 110 000
 - **Bài A.3** — a) 6 phần 11 · b) 3 phần 11 · c) 7 phần 2 · d) 2 phần 9 · e) 3 phần 2 · f) 7 phần 4 · g) 1 · h) 5 phần 4
-- **Bài A.4** — a) &gt; · b) &gt; · c) &gt; · d) &gt; · e) &lt; · f) &gt; · g) &lt;
-- **Bài A.5** — a) &lt; · b) 0,675 · c) 1 · d) 7 · e) &lt; · f) 0,414
+- **Bài A.4** — a) > · b) > · c) > · d) > · e) < · f) > · g) <
+- **Bài A.5** — a) < · b) 0,675 · c) 1 · d) 7 · e) < · f) 0,414
 
 **Phần B**
 
@@ -235,8 +235,8 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | A.1 | Tìm x trong phép tính một bước | Quan hệ giữa các thành phần của phép tính | Có chữ x đứng trong một phép tính | Gọi tên vai trò của x rồi dùng quy tắc tương ứng | Thử lại bằng cách thay x vào đề — mất 3 giây nhưng chắc chắn. | x = 597 · x = 102 · x = 733 · x = 375… |
 | A.2 | Làm tròn số tự nhiên | Quy tắc làm tròn, giá trị hàng | Cụm từ “làm tròn đến hàng …” | Gạch ngăn hàng → xét chữ số liền sau → giữ nguyên hoặc thêm 1 | Che toàn bộ phần đuôi sau nét gạch, chỉ để lộ đúng một chữ số. | 764 000 · 762 700 · 210 410 · 110 000 |
 | A.3 | Rút gọn phân số | Tính chất cơ bản của phân số | Tử số và mẫu số có ước chung lớn hơn 1 | Chia cả tử và mẫu cho ước chung | Tìm ngay ước chung lớn nhất để rút gọn một lần là xong. | 6 phần 11 · 3 phần 11 · 7 phần 2 · 2 phần 9… |
-| A.4 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | &gt; · &gt; · &gt; · &gt;… |
-| A.5 | Số thập phân — hàng, so sánh, chuyển đổi | Cấu tạo số thập phân, quan hệ phân số – số thập phân | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 | Xét theo hàng từ trái sang phải | Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. | &lt; · 0,675 · 1 · 7… |
+| A.4 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | > · > · > · >… |
+| A.5 | Số thập phân — hàng, so sánh, chuyển đổi | Cấu tạo số thập phân, quan hệ phân số – số thập phân | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 | Xét theo hàng từ trái sang phải | Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. | < · 0,675 · 1 · 7… |
 | B.1 | Định vị chương trong hệ thống | Tên chương, nhóm chuyên đề, số dạng bài | Phần đầu phiếu ghi rõ tên cụm và nhóm chuyên đề | Đọc phần đầu phiếu rồi trả lời theo đúng tên gọi | Ghi tên chương ra góc vở, mỗi lần mở vở là đọc lại một lần. | Phép chia số thập phân và ba dạng toán tỉ số phần trăm · H — Phân số – Số thập phân – Tỉ số phần trăm – Thống kê · 6 · ở mọi bài thuộc phân số – số thập phân – tỉ số phần trăm – thống kê, vì các chương sau đều dùng lại nền này… |
 | B.2 | Liệt kê dạng bài của chương | Danh mục dạng bài | Bảng dạng bài ở phiếu Dạng bài & Đọc vị của cùng cụm | Chép theo bảng, giữ nguyên thứ tự | Học thuộc số lượng dạng bài trước, tên từng dạng sau. | Chia số thập phân cho số tự nhiên · Chia một số cho số thập phân · Tỉ số phần trăm — khái niệm và cách viết · Toán tỉ số phần trăm dạng 1: tìm tỉ số phần trăm của hai số… |
 | B.3 | Định vị chương theo thời gian | Kế hoạch năm học, mốc kiểm tra | Phần đầu phiếu ghi tuần, học kỳ, mốc | Đọc phần đầu phiếu | Mỗi cụm luôn có đúng 6 buổi và 1 phiếu hướng dẫn ôn chắc. | HK1 · tuần 9 · Cuối kỳ I · cụm 5… |
@@ -367,8 +367,8 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | A.1 | Tìm x: x × 7 = 91 | x = 13 |
 | A.2 | Làm tròn 4 762 đến hàng trăm. | 4 800 |
 | A.3 | Rút gọn 18 phần 24. | 3 phần 4 |
-| A.4 | So sánh: 3 phần 5 … 3 phần 7 | &gt; |
-| A.5 | So sánh: 0,5 … 0,45 | &gt; |
+| A.4 | So sánh: 3 phần 5 … 3 phần 7 | > |
+| A.5 | So sánh: 0,5 … 0,45 | > |
 | B.1 | Chương “Phép chia số thập phân và ba dạng toán tỉ số phần trăm” thuộc nhóm chuyên đề nào? | H — Phân số – Số thập phân – Tỉ số phần trăm – Thống kê |
 | B.2 | Chương này có mấy dạng bài chính? | 6 |
 | B.3 | Một cụm chuyên đề GITA gồm mấy buổi học? | 6 buổi |

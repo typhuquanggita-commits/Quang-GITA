@@ -33,7 +33,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài I.1** — a) chữ số 7, giá trị 70 000 · b) chữ số 9, giá trị 9 000 · c) chữ số 7, giá trị 700 · d) chữ số 5, giá trị 50 · e) chữ số 0, giá trị 0
 - **Bài I.2** — a) 59 · b) 856 · c) 622 · d) 1 199 · e) 15 · f) 83 · g) 580 · h) 553
 - **Bài I.3** — a) 6 · b) 18 · c) 8 · d) 10 cm · e) 6 cm²
-- **Bài I.4** — a) &lt; · b) &lt; · c) &lt; · d) &lt; · e) &lt; · f) &gt; · g) &gt; · h) &gt;
+- **Bài I.4** — a) < · b) < · c) < · d) < · e) < · f) > · g) > · h) >
 - **Bài I.5** — a) 86 cm · b) 108 cm² · c) 1 444 cm² · d) 240 cm · e) 1 369 cm² · f) 236 cm · g) 88 cm² · h) 140 cm
 
 **Phần II**
@@ -92,7 +92,7 @@ Một hình chữ nhật trong lưới được xác định bởi hai đường
 
 *Điểm chốt:* Đếm **theo cỡ** hoặc **theo đường kẻ**, tuyệt đối không đếm ngẫu nhiên.
 
-### Bài I.4 — Điền dấu &lt;, &gt;, = thích hợp
+### Bài I.4 — Điền dấu <, >, = thích hợp
 
 So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 
@@ -235,7 +235,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | I.1 | Xác định chữ số và giá trị chữ số theo hàng | Cấu tạo thập phân của số tự nhiên | Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” | Đánh số hàng từ phải sang trái rồi tra bảng hàng | Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị. | chữ số 7, giá trị 70 000 · chữ số 9, giá trị 9 000 · chữ số 7, giá trị 700 · chữ số 5, giá trị 50… |
 | I.2 | Cộng, trừ số tự nhiên | Kĩ thuật đặt tính, nhớ và mượn | Yêu cầu “đặt tính rồi tính” | Đặt tính thẳng hàng, tính từ hàng đơn vị | Làm tròn một số hạng để ước lượng trước, dùng kết quả ước lượng để phát hiện sai sót. | 59 · 856 · 622 · 1 199… |
 | I.3 | Đếm hình trong lưới | Quy tắc đếm, tổ hợp đơn giản | Hình vẽ là lưới ô vuông đều | Đếm theo đường kẻ hoặc theo cỡ hình | Số cách chọn 2 trong k đường kẻ là k × (k − 1) : 2. | 6 · 18 · 8 · 10 cm… |
-| I.4 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | &lt; · &lt; · &lt; · &lt;… |
+| I.4 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | < · < · < · <… |
 | I.5 | Chu vi, diện tích hình cơ bản | Công thức chu vi, diện tích hình chữ nhật và hình vuông | Cho chiều dài, chiều rộng hoặc cạnh | Chọn đúng công thức, ghi đúng đơn vị | Hình vuông là hình chữ nhật có dài bằng rộng — chỉ cần nhớ một bộ công thức. | 86 cm · 108 cm² · 1 444 cm² · 240 cm… |
 | II.1 | Chu vi, diện tích hình cơ bản | Công thức chu vi, diện tích | Cho chiều dài, chiều rộng hoặc cạnh | Chọn công thức, ghi đúng đơn vị | Hình vuông là hình chữ nhật có dài bằng rộng. | 320 cm² · 144 cm² · 94 cm · 32 cm… |
 | II.2 | Đổi đơn vị đo | Bảng đơn vị đo lớp 3 | Hai đơn vị khác nhau nối bởi dấu … | Nhớ quan hệ rồi nhân | Thêm đúng số chữ số 0 tương ứng: 3 số 0 cho km→m, 2 số 0 cho m→cm. | 2 000 · 87 000 · 4 500 · 130… |
@@ -367,7 +367,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | I.1 | Chữ số hàng chục của số 79 750 có giá trị bao nhiêu? | 50 |
 | I.2 | Đặt tính rồi tính: 4 328 + 1 795 | 6 123 |
 | I.3 | Lưới 2 hàng 2 cột có bao nhiêu hình vuông? | 5 |
-| I.4 | Điền dấu: 10 324 … 10 325 | &lt; |
+| I.4 | Điền dấu: 10 324 … 10 325 | < |
 | I.5 | Hình chữ nhật dài 8 cm, rộng 5 cm. Tính diện tích. | 40 cm² |
 | II.1 | Hình vuông cạnh 6 cm. Tính diện tích. | 36 cm² |
 | II.2 | 5 m = … cm | 500 |

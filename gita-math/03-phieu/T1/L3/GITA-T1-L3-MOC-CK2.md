@@ -63,7 +63,7 @@ e) 3 245 : 5
 f) 4 113 : 9
 g) 521 × 5
 
-### Bài 2. (3 điểm) Điền dấu &lt;, &gt;, = thích hợp
+### Bài 2. (3 điểm) Điền dấu <, >, = thích hợp
 
 Điền dấu thích hợp vào chỗ chấm.
 
@@ -334,7 +334,7 @@ d) 1 + 2 + 3 + … + 20
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
 
 ### Bài I.2
-**Đáp số:** a) &lt; · b) &gt; · c) &gt; · d) &gt; · e) &gt; · f) &gt; · g) &lt; · h) &gt;
+**Đáp số:** a) < · b) > · c) > · d) > · e) > · f) > · g) < · h) >
 **Hướng giải:** So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Đếm số chữ số **trước**, chỉ khi bằng nhau mới so từng hàng.
 **Lỗi thường gặp:** So từ hàng đơn vị (phải sang trái) nên kết luận sai. Phòng: Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái.

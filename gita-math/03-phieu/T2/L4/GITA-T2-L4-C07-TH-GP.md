@@ -33,7 +33,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài I.1** — a) chữ số 6, giá trị 600 000 · b) chữ số 0, giá trị 0 · c) chữ số 2, giá trị 200 · d) chữ số 1, giá trị 10 · e) chữ số 5, giá trị 5
 - **Bài I.2** — a) 433 763 · b) 840 321 · c) 127 333 · d) 883 837 · e) 714 958 · f) 560 250
 - **Bài I.3** — a) 438 667 · b) 534 112 · c) số lẻ · d) 760 083 · e) số chẵn · f) 986 336
-- **Bài I.4** — a) &lt; · b) &lt; · c) &gt; · d) &lt; · e) &lt;
+- **Bài I.4** — a) < · b) < · c) > · d) < · e) <
 - **Bài I.5** — a) 6 chữ số, tổng 31 · b) 6 chữ số, tổng 21 · c) 6 chữ số, tổng 36 · d) 6 chữ số, tổng 20
 
 **Phần II**
@@ -92,7 +92,7 @@ Số chẵn là số có chữ số tận cùng 0, 2, 4, 6, 8; số lẻ tận c
 
 *Điểm chốt:* Chỉ cần nhìn **chữ số tận cùng** là biết chẵn hay lẻ, dù số dài bao nhiêu.
 
-### Bài I.4 — Điền dấu &lt;, &gt;, = thích hợp
+### Bài I.4 — Điền dấu <, >, = thích hợp
 
 So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 
@@ -235,7 +235,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | I.1 | Xác định chữ số và giá trị chữ số theo hàng | Cấu tạo thập phân của số tự nhiên | Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” | Đánh số hàng từ phải sang trái rồi tra bảng hàng | Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị. | chữ số 6, giá trị 600 000 · chữ số 0, giá trị 0 · chữ số 2, giá trị 200 · chữ số 1, giá trị 10… |
 | I.2 | Viết số từ dạng tổng theo hàng | Cấu tạo thập phân của số tự nhiên | Tổng gồm các số tròn chục, tròn trăm, tròn nghìn… | Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết | Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số. | 433 763 · 840 321 · 127 333 · 883 837… |
 | I.3 | Nhận biết chẵn – lẻ và số liền kề | Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2 | Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” | Xét chữ số tận cùng; cộng hoặc trừ 1 đơn vị | Che hết các chữ số, chỉ để lộ chữ số cuối. | 438 667 · 534 112 · số lẻ · 760 083… |
-| I.4 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | &lt; · &lt; · &gt; · &lt;… |
+| I.4 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | < · < · > · <… |
 | I.5 | Đếm chữ số, tính tổng chữ số | Cấu tạo số, tổng chữ số | Yêu cầu “có mấy chữ số”, “tổng các chữ số” | Tách lớp để đếm; cộng rời từng chữ số | Ghép cặp các chữ số cộng lại tròn 10 rồi cộng nhanh. | 6 chữ số, tổng 31 · 6 chữ số, tổng 21 · 6 chữ số, tổng 36 · 6 chữ số, tổng 20 |
 | II.1 | Kiểm tra chia hết bằng dấu hiệu | Dấu hiệu chia hết cho 2, 3, 5, 9 | Câu hỏi “có chia hết cho … không” | Chọn đúng dấu hiệu theo số chia rồi kiểm tra | Cộng chữ số theo cặp tròn 9, phần dư chính là số dư khi chia 9. | không (chữ số tận cùng 7) · không (tổng chữ số 13) · không (tổng chữ số 19) · không (tổng chữ số 7)… |
 | II.2 | Phép chia có dư | Quan hệ giữa số bị chia, số chia, thương và số dư | Đề yêu cầu ghi cả thương và số dư | Đặt tính chia, kiểm tra điều kiện số dư | Ước lượng thương bằng cách làm tròn số chia trước khi chia. | 2 535 dư 3 · 6 729 dư 3 · 603 dư 11 · 2 837 dư 4… |
@@ -367,7 +367,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | I.1 | Chữ số hàng chục của số 690 215 có giá trị bao nhiêu? | 10 |
 | I.2 | Viết số gồm tổng: 30 000 + 400 + 7 | 30 407 |
 | I.3 | Số liền sau của 438 668 là số nào? | 438 669 |
-| I.4 | Điền dấu: 482 995 … 482 996 | &lt; |
+| I.4 | Điền dấu: 482 995 … 482 996 | < |
 | I.5 | Số 40 506 có mấy chữ số và tổng các chữ số bằng bao nhiêu? | 5 chữ số, tổng 15 |
 | II.1 | Số 2 537 có chia hết cho 9 không? | không |
 | II.2 | Tìm thương và số dư của 1 234 : 7 | 176 dư 2 |

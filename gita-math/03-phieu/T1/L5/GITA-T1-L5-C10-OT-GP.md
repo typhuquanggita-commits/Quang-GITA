@@ -48,7 +48,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài III.1** — a) 55 · b) 120 · c) 490 · d) 291
 - **Bài III.2** — a) 622 cm² · b) 192 cm² · c) thể tích 216 cm³, diện tích toàn phần 216 cm² · d) 1 365 cm³ · e) 2 268 cm³ · f) 1 104 cm² · g) 180 cm²
-- **Bài III.3** — a) &lt; · b) &lt; · c) &lt; · d) &lt; · e) &gt; · f) &gt;
+- **Bài III.3** — a) < · b) < · c) < · d) < · e) > · f) >
 - **Bài III.4** — a) 1 · b) 1 · c) 1 · d) 1 · e) 1 · f) 1
 - **Bài III.5** — a) 12 giờ 10 phút · b) 11 giờ 50 phút · c) 10 giờ 2 phút · d) 10 giờ 52 phút
 
@@ -244,7 +244,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | II.5 | Bài toán tổng – tỉ | Tỉ số, sơ đồ đoạn thẳng, chia theo tỉ lệ | Đề cho **tổng** và **tỉ số** (phân số hoặc “gấp … lần”) | Sơ đồ phần bằng nhau → giá trị một phần → nhân | Tổng luôn chia hết cho tổng số phần — nếu không chia hết là đọc sai tỉ số. | tổ Ba: 325 cây, đội Hai: 390 cây · đội Hai: 335 cây, tổ Một: 402 cây · tổ Hai: 100 cây, nhóm Hoa Phượng: 300 cây · nhóm Hoa Phượng: 165 cây, đội Hai: 220 cây… |
 | III.1 | Dãy số tự nhiên liên tiếp có tổng cho trước | Trung bình cộng, dãy cách đều | Cụm “… số tự nhiên liên tiếp có tổng bằng …” | Tìm số giữa bằng phép chia rồi suy ra hai đầu dãy | Tổng của n số liên tiếp (n lẻ) luôn chia hết cho n. | 55 · 120 · 490 · 291 |
 | III.2 | Hình hộp chữ nhật, hình lập phương | Công thức thể tích, diện tích xung quanh, toàn phần | Đề cho ba kích thước hoặc cạnh hình lập phương | Xác định loại diện tích cần tính, đếm đủ số mặt | Hình lập phương cạnh a: toàn phần 6 × a × a, thể tích a × a × a. | 622 cm² · 192 cm² · thể tích 216 cm³, diện tích toàn phần 216 cm² · 1 365 cm³… |
-| III.3 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | &lt; · &lt; · &lt; · &lt;… |
+| III.3 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | < · < · < · <… |
 | III.4 | Tính nhanh biểu thức phân số | Cộng phân số cùng mẫu, phân số đảo ngược | Các phân số cùng mẫu, tử số cộng lại tròn mẫu | Quan sát tổng tử số; nhận diện cặp phân số đảo ngược | Nếu tổng các tử số bằng mẫu số thì kết quả bằng 1, không cần tính gì thêm. | 1 · 1 · 1 · 1… |
 | III.5 | Tính thời điểm trong ngày | Quan hệ giờ – phút, phép chia có dư | Cho thời điểm bắt đầu và khoảng thời gian | Quy về phút, cộng trừ, đổi lại | Cộng tròn giờ trước rồi cộng phần phút lẻ sau. | 12 giờ 10 phút · 11 giờ 50 phút · 10 giờ 2 phút · 10 giờ 52 phút |
 | IV.1 | Ước, bội, ƯCLN, BCNN | Ước và bội của số tự nhiên | Từ khoá “ước chung lớn nhất”, “bội chung nhỏ nhất” | Liệt kê theo cặp ước; dùng quan hệ tích = ƯCLN × BCNN | ƯCLN × BCNN = tích hai số — tìm được một cái là suy ra cái kia. | 1 520 · 4 081 · 60 · 5 976… |
@@ -376,7 +376,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | II.5 | Hai tổ trồng 120 cây, số cây tổ Một bằng 1 phần 2 tổ Hai. Mỗi tổ trồng mấy cây? | 40 và 80 |
 | III.1 | Tổng của 5 số tự nhiên liên tiếp bằng 100. Số bé nhất là số nào? | 18 |
 | III.2 | Hình lập phương cạnh 4 cm. Thể tích bằng bao nhiêu? | 64 cm³ |
-| III.3 | So sánh: 234 × 7 … 234 × 8 | &lt; |
+| III.3 | So sánh: 234 × 7 … 234 × 8 | < |
 | III.4 | Tính nhanh: 3 phần 7 + 4 phần 7 | 1 |
 | III.5 | Tàu chạy lúc 7 giờ 40 phút, đi hết 2 giờ 35 phút. Đến lúc mấy giờ? | 10 giờ 15 phút |
 | IV.1 | Tìm ước chung lớn nhất của 12 và 18. | 6 |

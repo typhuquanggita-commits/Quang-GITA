@@ -186,7 +186,7 @@ g) Hình hộp chữ nhật có đáy 14 cm × 16 cm, chiều cao 3 cm. Tính di
 
 ### Bài 3. (5 điểm) So sánh hai biểu thức mà không cần tính
 
-Điền dấu &lt;, &gt;, = và giải thích ngắn.
+Điền dấu <, >, = và giải thích ngắn.
 
 a) 131 + 17 … 188 + 17
 b) 519 × 7 … 519 × 8
@@ -420,7 +420,7 @@ f) Cột 6 — Kết quả?
 **Lỗi thường gặp:** Cộng thiếu một mặt đáy khi tính diện tích toàn phần. Phòng: Đếm đủ 6 mặt của hình hộp trước khi cộng.
 
 ### Bài III.3
-**Đáp số:** a) &lt; · b) &lt; · c) &lt; · d) &lt; · e) &gt; · f) &gt;
+**Đáp số:** a) < · b) < · c) < · d) < · e) > · f) >
 **Hướng giải:** Khi hai biểu thức có phần giống nhau, chỉ cần so sánh phần khác nhau: cùng cộng thêm một số thì số nào lớn hơn vẫn lớn hơn; cùng nhân với một số khác 0 cũng vậy.
 **Nhãn tư duy:** TD5, TD2. Điểm chốt: Che phần **giống nhau** đi, chỉ so phần khác nhau.
 **Lỗi thường gặp:** Tính hết cả hai vế, vừa lâu vừa dễ sai. Phòng: Dùng bút gạch bỏ phần giống nhau ở hai vế trước khi so sánh.

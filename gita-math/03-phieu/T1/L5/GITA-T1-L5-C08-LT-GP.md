@@ -30,7 +30,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần A**
 
-- **Bài A.1** — a) 0,717 · b) 0 · c) &lt; · d) 0,2 · e) &gt;
+- **Bài A.1** — a) 0,717 · b) 0 · c) < · d) 0,2 · e) >
 - **Bài A.2** — a) 55, 59, 63 · b) 42, 52, 62 · c) 84, 99, 114 · d) 134, 159, 184 · e) 24, 28, 32 · f) 49, 55, 61
 - **Bài A.3** — a) 33 · b) 53 · c) 77 · d) 113 · e) 149
 - **Bài A.4** — a) 16 · b) 10 000 · c) 1 024 · d) 256 · e) 50 000 · f) 2 500
@@ -232,7 +232,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
-| A.1 | Số thập phân — hàng, so sánh, chuyển đổi | Cấu tạo số thập phân, quan hệ phân số – số thập phân | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 | Xét theo hàng từ trái sang phải | Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. | 0,717 · 0 · &lt; · 0,2… |
+| A.1 | Số thập phân — hàng, so sánh, chuyển đổi | Cấu tạo số thập phân, quan hệ phân số – số thập phân | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 | Xét theo hàng từ trái sang phải | Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. | 0,717 · 0 · < · 0,2… |
 | A.2 | Tìm quy luật dãy cách đều | Dãy số cách đều | Dãy số kèm dấu … ở cuối | Tính hiệu các cặp liên tiếp rồi cộng tiếp | Ghi khoảng cách vào giữa các số hạng để nhìn ra quy luật ngay. | 55, 59, 63 · 42, 52, 62 · 84, 99, 114 · 134, 159, 184… |
 | A.3 | Tìm số hạng thứ n của dãy cách đều | Công thức số hạng tổng quát của dãy cách đều | Đề hỏi “số hạng thứ …” | Đếm số khoảng rồi nhân với khoảng cách | Thử công thức với n = 1 và n = 2 để chắc chắn không lệch một khoảng. | 33 · 53 · 77 · 113… |
 | A.4 | Dãy số theo quy luật nhân | Dãy nhân, phép nhân liên tiếp | Các số tăng rất nhanh, hiệu không đều | Thử hiệu, rồi thử thương | Số sau gấp đôi số trước là dấu hiệu quen nhất của dãy nhân. | 16 · 10 000 · 1 024 · 256… |
@@ -364,7 +364,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 
 | Bài | Đề tương tự | Đáp số |
 |---|---|---|
-| A.1 | So sánh: 0,5 … 0,45 | &gt; |
+| A.1 | So sánh: 0,5 … 0,45 | > |
 | A.2 | Viết tiếp ba số: 2, 5, 8, 11, … | 14, 17, 20 |
 | A.3 | Dãy 5, 9, 13, … số hạng thứ 20 là số nào? | 81 |
 | A.4 | Viết tiếp: 3, 6, 12, 24, … | 48 |

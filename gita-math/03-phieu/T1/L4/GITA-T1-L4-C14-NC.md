@@ -123,7 +123,7 @@ d) 73 109 : 14 = ? (dư ?)
 
 ### Bài 2. (4 điểm) So sánh hai số đo khác đơn vị
 
-Điền dấu &lt;, &gt;, = thích hợp.
+Điền dấu <, >, = thích hợp.
 
 a) 30 ha … 2 982 dm²
 b) 78 g … 4 835 tạ
@@ -379,7 +379,7 @@ e) 8 người làm xong một công việc trong 14 ngày. Nếu có thêm 7 ng�
 **Lỗi thường gặp:** Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. Phòng: Thử lại bằng công thức số bị chia = số chia × thương + số dư.
 
 ### Bài II.2
-**Đáp số:** a) &gt; · b) &lt; · c) &lt; · d) &gt;
+**Đáp số:** a) > · b) < · c) < · d) >
 **Hướng giải:** Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.

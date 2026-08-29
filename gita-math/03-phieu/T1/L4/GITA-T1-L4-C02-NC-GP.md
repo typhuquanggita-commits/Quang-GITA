@@ -49,7 +49,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài III.1** — a) 128 · 182 · 218 · 281 · 812 · 821 · b) 6 · c) 821 · d) 128 · e) 4 · f) 0 · g) 949
 - **Bài III.2** — a) 144 kg · b) 32 kg · c) 160 kg · d) 92 kg
 - **Bài III.3** — a) 350 · b) 3 775 · c) 400 · d) 245 · e) 5 050 · f) 10 100
-- **Bài III.4** — a) &lt; · b) &lt; · c) &gt; · d) &gt; · e) &gt; · f) &lt; · g) &lt;
+- **Bài III.4** — a) < · b) < · c) > · d) > · e) > · f) < · g) <
 - **Bài III.5** — a) x = 65 · b) x = 39 · c) x = 31 · d) x = 17 · e) x = 42 · f) x = 48
 
 **Phần IV**
@@ -63,7 +63,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần V**
 
 - **Bài V.1** — a) 1 · b) 1 856 · c) không, dư 1 · d) tổng các số dư là 6, chia 5 dư 1 · e) 1 · f) 4
-- **Bài V.2** — a) 28 · b) 900 · c) 361 · d) 36 · e) 12 · f) &lt;
+- **Bài V.2** — a) 28 · b) 900 · c) 361 · d) 36 · e) 12 · f) <
 - **Bài V.3** — a) 6 con gà, 24 con chó · b) 35 con gà, 33 con chó · c) 24 con gà, 30 con chó · d) 11 con gà, 38 con chó · e) 37 con gà, 37 con chó · f) 22 con gà, 33 con chó
 - **Bài V.4** — a) -50 · b) -5 · c) -10 · d) -25 · e) -5 · f) -25
 - **Bài V.5** — a) không còn đúng (22 bạn có thể chia đều 2 bạn mỗi tháng) · b) không còn đúng (3 bạn có thể chia đều 1 bạn mỗi tháng) · c) không còn đúng (12 bạn có thể chia đều 1 bạn mỗi tháng) · d) không còn đúng (10 bạn có thể chia đều 2 bạn mỗi tháng) · e) không còn đúng (18 bạn có thể chia đều 3 bạn mỗi tháng) · f) không còn đúng (40 bạn có thể chia đều 4 bạn mỗi tháng)
@@ -245,7 +245,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.1 | Lập số và đếm số lập được từ một bộ chữ số | Quy tắc nhân trong phép đếm, điều kiện chữ số đứng đầu | Đề cho một bộ chữ số và yêu cầu lập số | Cố định hàng cao nhất rồi hoán vị các hàng còn lại | Ba chữ số khác 0 lập được 3 × 2 × 1 = 6 số; nếu có chữ số 0 thì chỉ còn 2 × 2 × 1 = 4 số. | 128 · 182 · 218 · 281 · 812 · 821 · 6 · 821 · 128… |
 | III.2 | Tìm phân số của một số, nhiều bước | Tìm phân số của một số | Cụm “… số còn lại”, “… số đó” | Tính tuần tự, sau mỗi bước ghi lại số còn lại | Còn lại sau ngày đầu là (1 − phân số) của tổng; nhân trực tiếp cho nhanh. | 144 kg · 32 kg · 160 kg · 92 kg |
 | III.3 | Tổng dãy số cách đều | Công thức tổng dãy cách đều | Dãy cộng có dấu … và các số cách đều nhau | Đếm số số hạng rồi áp công thức tổng | Ghép cặp đầu – cuối: mọi cặp đều có cùng tổng, chỉ cần nhân với số cặp. | 350 · 3 775 · 400 · 245… |
-| III.4 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | &lt; · &lt; · &gt; · &gt;… |
+| III.4 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | < · < · > · >… |
 | III.5 | Tìm x nhiều bước có ngoặc | Thứ tự thực hiện phép tính, quan hệ thành phần | x nằm trong ngoặc, ngoài ngoặc còn phép tính khác | Bóc lớp từ ngoài vào trong | Thay x tìm được vào đề, tính một lượt để thử lại. | x = 65 · x = 39 · x = 31 · x = 17… |
 | IV.1 | Tìm x xuất hiện hai vế | So sánh hai biểu thức, sơ đồ đoạn thẳng | Chữ x xuất hiện ở cả hai vế của dấu bằng | Trừ bớt số lần x chung rồi đưa về phép chia | Vẽ sơ đồ đoạn thẳng cho mỗi vế — nhìn ra ngay phần chênh. | x = 31 · x = 52 · x = 34 · x = 25… |
 | IV.2 | Tổng các tích có thừa số chung | Nhân một số với một tổng, tổng dãy cách đều | Dãy cộng gồm nhiều tích cùng một thừa số | Đặt thừa số chung → tính tổng trong ngoặc bằng công thức | 1 + 2 + … + 100 = 5 050; nhớ vài mốc để nhân ngay. | 3 825 · 975 · 1 950 · 110 |
@@ -377,7 +377,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | III.1 | Từ ba chữ số 1, 2, 3 lập được bao nhiêu số có ba chữ số khác nhau? | 6 |
 | III.2 | Có 60 kg gạo, bán 1 phần 3 rồi bán tiếp 1 phần 2 số còn lại. Còn bao nhiêu? | 20 kg |
 | III.3 | Tính nhanh: 1 + 2 + 3 + … + 100 | 5 050 |
-| III.4 | So sánh: 234 × 7 … 234 × 8 | &lt; |
+| III.4 | So sánh: 234 × 7 … 234 × 8 | < |
 | III.5 | Tìm x: (x + 12) × 5 − 8 = 132 | x = 16 |
 | IV.1 | Tìm x: x × 3 + 24 = x × 5 | x = 12 |
 | IV.2 | Tính nhanh: 5 × 1 + 5 × 2 + … + 5 × 10 | 275 |
@@ -385,7 +385,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | IV.4 | Tìm số bé nhất chia cho 5 dư 2 và chia cho 3 dư 1. | 7 |
 | IV.5 | Tính: (1 phần 2 + 1 phần 3) × 6 phần 5 | 1 |
 | V.1 | Tổng 123 + 234 + 345 chia cho 9 dư mấy? | dư 0 |
-| V.2 | So sánh: 99 × 101 … 100 × 100 | &lt; |
+| V.2 | So sánh: 99 × 101 … 100 × 100 | < |
 | V.3 | Có 10 con gà và chó, 28 chân. Có mấy con chó? | 4 con chó |
 | V.4 | Tính nhanh: 1 − 2 + 3 − 4 + … + 9 − 10 | −5 |
 | V.5 | 13 bạn sinh trong 12 tháng, chứng tỏ có 2 bạn cùng tháng sinh. | đúng, vì 13 > 12 × 1 |

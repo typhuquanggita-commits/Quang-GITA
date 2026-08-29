@@ -32,14 +32,14 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài I.1** — a) 27 cm · b) 33 cm · c) cạnh 60 cm, diện tích 3 600 cm² · d) cạnh 7 cm, diện tích 49 cm² · e) 28 cm · f) 54 cm · g) 6 cm
 - **Bài I.2** — a) 8 cách · b) 40 cách · c) 10 bạn · d) 16 cách · e) 12 bạn · f) 42 cách
-- **Bài I.3** — a) &gt; · b) &gt; · c) &gt; · d) &lt; · e) &gt; · f) &lt; · g) &gt; · h) &gt;
-- **Bài I.4** — a) &lt; · b) 0,66 · c) 4 · d) 0,5 · e) 0
-- **Bài I.5** — a) &lt; · b) &lt; · c) &lt; · d) &lt; · e) &gt; · f) &lt;
+- **Bài I.3** — a) > · b) > · c) > · d) < · e) > · f) < · g) > · h) >
+- **Bài I.4** — a) < · b) 0,66 · c) 4 · d) 0,5 · e) 0
+- **Bài I.5** — a) < · b) < · c) < · d) < · e) > · f) <
 
 **Phần II**
 
 - **Bài II.1** — a) 725 kg · b) 235 kg · c) 293 kg · d) 750 kg · e) 1 295 kg
-- **Bài II.2** — a) &gt; · b) &lt; · c) &gt; · d) &lt; · e) &gt;
+- **Bài II.2** — a) > · b) < · c) > · d) < · e) >
 - **Bài II.3** — a) 3 · b) 1, 4, 7 · c) 4 · d) không có chữ số nào
 - **Bài II.4** — a) 154 m · b) 146 m · c) 284 m · d) 150 m
 - **Bài II.5** — a) có · b) có · c) có · d) có · e) không, dư 5 · f) có
@@ -62,7 +62,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần V**
 
-- **Bài V.1** — a) &lt; · b) 144 · c) &lt; · d) &lt; · e) 20
+- **Bài V.1** — a) < · b) 144 · c) < · d) < · e) 20
 - **Bài V.2** — a) 171 đơn vị · b) 147 đơn vị · c) 46 đơn vị · d) 46 đơn vị · e) 100 đơn vị
 - **Bài V.3** — a) 84 · b) 8 dư 4 · c) 1 dư 9 · d) 2 dư 3
 - **Bài V.4** — a) 8 · b) 8 · c) 2 · d) 2 · e) 8 · f) 8 · g) 533
@@ -98,7 +98,7 @@ Sau dấu phẩy lần lượt là hàng phần mười, phần trăm, phần ng
 
 *Điểm chốt:* So sánh theo **hàng**, không so theo số chữ số sau dấu phẩy.
 
-### Bài I.5 — Điền dấu &lt;, &gt;, = thích hợp
+### Bài I.5 — Điền dấu <, >, = thích hợp
 
 So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 
@@ -234,11 +234,11 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 |---|---|---|---|---|---|---|
 | I.1 | Tìm kích thước từ chu vi, diện tích | Công thức chu vi, diện tích; phép tính ngược | Cho chu vi hoặc diện tích và một kích thước | Đi ngược công thức, qua bước nửa chu vi | Nửa chu vi = chu vi : 2 — luôn tính bước này đầu tiên. | 27 cm · 33 cm · cạnh 60 cm, diện tích 3 600 cm² · cạnh 7 cm, diện tích 49 cm²… |
 | I.2 | Đếm bằng quy tắc cộng, nhân, bù trừ | Quy tắc cộng, quy tắc nhân, nguyên lí bù trừ | Từ khoá “và”, “hoặc”, “cả hai”, “ít nhất một” | Vẽ hai vòng tròn giao nhau, đếm theo miền | Vẽ sơ đồ Ven ba miền, điền số vào miền giữa trước. | 8 cách · 40 cách · 10 bạn · 16 cách… |
-| I.3 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | &gt; · &gt; · &gt; · &lt;… |
-| I.4 | Số thập phân — hàng, so sánh, chuyển đổi | Cấu tạo số thập phân, quan hệ phân số – số thập phân | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 | Xét theo hàng từ trái sang phải | Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. | &lt; · 0,66 · 4 · 0,5… |
-| I.5 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | &lt; · &lt; · &lt; · &lt;… |
+| I.3 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | > · > · > · <… |
+| I.4 | Số thập phân — hàng, so sánh, chuyển đổi | Cấu tạo số thập phân, quan hệ phân số – số thập phân | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 | Xét theo hàng từ trái sang phải | Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. | < · 0,66 · 4 · 0,5… |
+| I.5 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | < · < · < · <… |
 | II.1 | Ba dạng bài trung bình cộng | Quan hệ tổng – số lượng – trung bình cộng | Cụm “trung bình mỗi …” | Đi qua tổng làm trung gian | Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng. | 725 kg · 235 kg · 293 kg · 750 kg… |
-| II.2 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &gt; · &lt; · &gt; · &lt;… |
+| II.2 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | > · < · > · <… |
 | II.3 | Điền chữ số theo điều kiện chia hết | Dấu hiệu chia hết, chữ số hàng cao nhất khác 0 | Số có ô trống hoặc dấu *, kèm điều kiện chia hết | Dùng dấu hiệu để lập điều kiện cho dấu * rồi thử 0–9 | Với 3 và 9: tính tổng các chữ số đã biết một lần duy nhất, rồi tìm phần bù cần thêm. | 3 · 1, 4, 7 · 4 · không có chữ số nào |
 | II.4 | Chu vi, diện tích trong tình huống thực tế | Công thức chu vi, diện tích; phép chia | Từ khoá “rào xung quanh”, “lát gạch”, “trồng cây quanh” | Đọc vị chu vi hay diện tích rồi tính | Nhìn đơn vị của đáp số: mét thì là chu vi, mét vuông thì là diện tích. | 154 m · 146 m · 284 m · 150 m |
 | II.5 | Xét chia hết của tổng, hiệu | Tính chất chia hết của tổng và hiệu | Câu hỏi về tổng hoặc hiệu, không yêu cầu kết quả cụ thể | Xét số dư từng số hạng rồi cộng, trừ các số dư | Chỉ cộng các **số dư**, không cộng các số. | có · có · có · có… |
@@ -252,7 +252,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.3 | Chuyển động ngược chiều, cùng chiều | Quan hệ quãng đường – vận tốc – thời gian | “Đi ngược chiều để gặp nhau”, “đuổi theo” | Xác định chiều → tổng hay hiệu vận tốc → chia | Vẽ hai mũi tên: chụm vào nhau thì cộng, cùng hướng thì trừ. | 1 giờ · 4 giờ · 2 giờ · 4 giờ… |
 | IV.4 | Nhận biết số nguyên tố, hợp số | Định nghĩa số nguyên tố, dấu hiệu chia hết | Câu hỏi “là số nguyên tố hay hợp số” | Thử chia theo dãy số nguyên tố tăng dần, dừng đúng ngưỡng | Loại ngay các số chẵn lớn hơn 2 và các số tận cùng bằng 5 lớn hơn 5. | hợp số (ví dụ ước 2) · hợp số (ví dụ ước 5) · hợp số (ví dụ ước 2) · hợp số (ví dụ ước 2)… |
 | IV.5 | Biểu thức phân số nhiều phép tính | Thứ tự thực hiện phép tính, tính chất phân phối | Biểu thức gồm nhiều phân số và nhiều phép tính | Quan sát rút gọn trước, sau đó theo thứ tự thực hiện | Rút gọn chéo tử với mẫu trước khi nhân. | 116 phần 11 · 9 phần 5 · 3 phần 2 · 11 phần 9… |
-| V.1 | Tính, so sánh tích bằng kĩ thuật tách – bù | Nhân một số với một tổng, một hiệu | Các thừa số hơn kém nhau rất ít | Quy về số gốc chung, so phần chênh | Với hai tích có tổng hai thừa số bằng nhau, tích nào có hai thừa số gần nhau hơn thì lớn hơn. | &lt; · 144 · &lt; · &lt;… |
+| V.1 | Tính, so sánh tích bằng kĩ thuật tách – bù | Nhân một số với một tổng, một hiệu | Các thừa số hơn kém nhau rất ít | Quy về số gốc chung, so phần chênh | Với hai tích có tổng hai thừa số bằng nhau, tích nào có hai thừa số gần nhau hơn thì lớn hơn. | < · 144 · < · <… |
 | V.2 | Tổng – tỉ có tỉ số thay đổi | Tổng – tỉ, đại lượng không đổi | “Phải thêm (bớt) bao nhiêu để tỉ số trở thành …” | Xác định đại lượng bất biến → tính lại đại lượng kia | Số cần thêm = số bé × (tỉ số mới − tỉ số cũ). | 171 đơn vị · 147 đơn vị · 46 đơn vị · 46 đơn vị… |
 | V.3 | Số và tổng chữ số của nó | Cấu tạo thập phân, phép chia có dư | Đề liên hệ số với tổng các chữ số của chính nó | Đặt ẩn cho chữ số, viết hai biểu thức, lập bảng thử | a × 10 + b − (a + b) = 9 × a — hiệu luôn là bội của 9. | 84 · 8 dư 4 · 1 dư 9 · 2 dư 3 |
 | V.4 | Dãy tuần hoàn | Phép chia có dư, tính tuần hoàn | Dãy lặp lại một nhóm số cố định | Chia vị trí cho chu kì, dùng số dư định vị | Tổng n số hạng = tổng một chu kì × số chu kì đầy đủ + tổng phần dư. | 8 · 8 · 2 · 2… |
@@ -366,11 +366,11 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 |---|---|---|
 | I.1 | Hình chữ nhật chu vi 30 cm, dài 10 cm. Chiều rộng bằng bao nhiêu? | 5 cm |
 | I.2 | 20 bạn giỏi Toán, 15 giỏi Văn, 8 giỏi cả hai. Bao nhiêu bạn giỏi ít nhất một môn? | 27 bạn |
-| I.3 | So sánh: 3 phần 5 … 3 phần 7 | &gt; |
-| I.4 | So sánh: 0,5 … 0,45 | &gt; |
-| I.5 | Điền dấu: 1 180 810 … 1 180 811 | &lt; |
+| I.3 | So sánh: 3 phần 5 … 3 phần 7 | > |
+| I.4 | So sánh: 0,5 … 0,45 | > |
+| I.5 | Điền dấu: 1 180 810 … 1 180 811 | < |
 | II.1 | Trung bình mỗi ngày bán 40 kg, hỏi 5 ngày bán bao nhiêu? | 200 kg |
-| II.2 | So sánh: 3 kg … 2 500 g | &gt; |
+| II.2 | So sánh: 3 kg … 2 500 g | > |
 | II.3 | Tìm chữ số thay cho * để 12* chia hết cho 5. | 0, 5 |
 | II.4 | Vườn dài 20 m rộng 10 m, rào xung quanh cần bao nhiêu mét rào? | 60 m |
 | II.5 | Tổng 45 + 27 có chia hết cho 9 không? | có |
@@ -384,7 +384,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | IV.3 | Hai xe cách nhau 100 km đi ngược chiều, vận tốc 30 và 20 km/giờ. Sau mấy giờ gặp nhau? | 2 giờ |
 | IV.4 | Số 91 là số nguyên tố hay hợp số? | hợp số (91 = 7 × 13) |
 | IV.5 | Tính: (1 phần 2 + 1 phần 3) × 6 phần 5 | 1 |
-| V.1 | So sánh: 99 × 101 … 100 × 100 | &lt; |
+| V.1 | So sánh: 99 × 101 … 100 × 100 | < |
 | V.2 | Số lớn gấp 2 lần số bé, tổng là 30. Thêm bao nhiêu vào số lớn để nó gấp 4 lần số bé? | 20 |
 | V.3 | Số 27 gấp mấy lần tổng hai chữ số của nó? | 3 lần |
 | V.4 | Dãy 1, 2, 3, 1, 2, 3, … số hạng thứ 100 là số nào? | 1 |

@@ -300,7 +300,7 @@ f) Hình tam giác có đáy 27 cm, chiều cao 4 cm. Tính diện tích.
 
 ### Bài 3. (8 điểm) So sánh hai số đo khác đơn vị
 
-Điền dấu &lt;, &gt;, = thích hợp.
+Điền dấu <, >, = thích hợp.
 
 a) 2 dag … 8 735 hg
 b) 55 m² … 7 002 cm²
@@ -474,7 +474,7 @@ e) Tìm tất cả chữ số thay cho dấu * để số *220 chia hết cho 2.
 **Gợi ý 3 tầng:** (1) Đây là hình gì? — (2) Viết công thức diện tích của hình đó. — (3) Kiểm tra xem công thức có chia 2 không.
 
 ### Bài E.3
-**Đáp số:** a) &lt; · b) &gt; · c) &gt; · d) &lt; · e) &gt;
+**Đáp số:** a) < · b) > · c) > · d) < · e) >
 **Hướng giải:** BẪY — Đơn vị khác nhau. Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.

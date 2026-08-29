@@ -31,9 +31,9 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần A**
 
 - **Bài A.1** — a) 31 096 702 · b) 28 977 759 · c) 77 740 062 · d) 13 708 296 · e) 18 339 · f) 32 074 · g) 14 836
-- **Bài A.2** — a) &lt; · b) 8 · c) 0,71 · d) &gt; · e) 4 · f) 0,6
+- **Bài A.2** — a) < · b) 8 · c) 0,71 · d) > · e) 4 · f) 0,6
 - **Bài A.3** — a) 1 phần 4 · b) 1 phần 10 · c) 3 phần 4 · d) 5 phần 11 · e) 1 phần 2 · f) 2 phần 5 · g) 9 phần 10
-- **Bài A.4** — a) &lt; · b) &gt; · c) &lt; · d) &lt; · e) &lt; · f) &lt;
+- **Bài A.4** — a) < · b) > · c) < · d) < · e) < · f) <
 - **Bài A.5** — a) 2 500 · b) 96 · c) 256 · d) 1 875
 
 **Phần B**
@@ -233,9 +233,9 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
 | A.1 | Nhân, chia số tự nhiên | Kĩ thuật đặt tính nhân, chia | Yêu cầu “đặt tính rồi tính” với phép nhân, chia | Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ chữ số | Kiểm tra kết quả bằng phép tính ngược: thương × số chia = số bị chia. | 31 096 702 · 28 977 759 · 77 740 062 · 13 708 296… |
-| A.2 | Số thập phân — hàng, so sánh, chuyển đổi | Cấu tạo số thập phân, quan hệ phân số – số thập phân | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 | Xét theo hàng từ trái sang phải | Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. | &lt; · 8 · 0,71 · &gt;… |
+| A.2 | Số thập phân — hàng, so sánh, chuyển đổi | Cấu tạo số thập phân, quan hệ phân số – số thập phân | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 | Xét theo hàng từ trái sang phải | Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. | < · 8 · 0,71 · >… |
 | A.3 | Rút gọn phân số | Tính chất cơ bản của phân số | Tử số và mẫu số có ước chung lớn hơn 1 | Chia cả tử và mẫu cho ước chung | Tìm ngay ước chung lớn nhất để rút gọn một lần là xong. | 1 phần 4 · 1 phần 10 · 3 phần 4 · 5 phần 11… |
-| A.4 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | &lt; · &gt; · &lt; · &lt;… |
+| A.4 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | < · > · < · <… |
 | A.5 | Dãy số theo quy luật nhân | Dãy nhân, phép nhân liên tiếp | Các số tăng rất nhanh, hiệu không đều | Thử hiệu, rồi thử thương | Số sau gấp đôi số trước là dấu hiệu quen nhất của dãy nhân. | 2 500 · 96 · 256 · 1 875 |
 | B.1 | Định vị chương trong hệ thống | Tên chương, nhóm chuyên đề, số dạng bài | Phần đầu phiếu ghi rõ tên cụm và nhóm chuyên đề | Đọc phần đầu phiếu rồi trả lời theo đúng tên gọi | Ghi tên chương ra góc vở, mỗi lần mở vở là đọc lại một lần. | So sánh phân số, số thập phân và bài toán phần trăm ẩn · H — Phân số – Số thập phân – Tỉ số phần trăm – Thống kê · 5 · ở mọi bài thuộc phân số – số thập phân – tỉ số phần trăm – thống kê, vì các chương sau đều dùng lại nền này… |
 | B.2 | Liệt kê dạng bài của chương | Danh mục dạng bài | Bảng dạng bài ở phiếu Dạng bài & Đọc vị của cùng cụm | Chép theo bảng, giữ nguyên thứ tự | Học thuộc số lượng dạng bài trước, tên từng dạng sau. | So sánh phân số bằng nhiều cách · Bốn phép tính phân số — tính nhanh nâng cao · Số thập phân: so sánh, tính nhanh, chữ số thập phân thứ n · Bài toán về tỉ số và tỉ lệ phần trăm ẩn… |
@@ -365,9 +365,9 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | Bài | Đề tương tự | Đáp số |
 |---|---|---|
 | A.1 | Đặt tính rồi tính: 3 045 × 24 | 73 080 |
-| A.2 | So sánh: 0,5 … 0,45 | &gt; |
+| A.2 | So sánh: 0,5 … 0,45 | > |
 | A.3 | Rút gọn 18 phần 24. | 3 phần 4 |
-| A.4 | So sánh: 3 phần 5 … 3 phần 7 | &gt; |
+| A.4 | So sánh: 3 phần 5 … 3 phần 7 | > |
 | A.5 | Viết tiếp: 3, 6, 12, 24, … | 48 |
 | B.1 | Chương “So sánh phân số, số thập phân và bài toán phần trăm ẩn” thuộc nhóm chuyên đề nào? | H — Phân số – Số thập phân – Tỉ số phần trăm – Thống kê |
 | B.2 | Chương này có mấy dạng bài chính? | 5 |

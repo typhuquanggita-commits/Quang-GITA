@@ -61,7 +61,7 @@ b) Có 6 chiếc áo và 4 chiếc quần. Hỏi có bao nhiêu cách chọn m�
 c) Có 5 chiếc áo và 8 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
 d) Có 6 chiếc áo và 2 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
 
-### Bài 2. (3 điểm) Điền dấu &lt;, &gt;, = thích hợp
+### Bài 2. (3 điểm) Điền dấu <, >, = thích hợp
 
 Điền dấu thích hợp vào chỗ chấm.
 
@@ -339,7 +339,7 @@ f) Một chiếc cân đĩa chỉ có các quả cân loại 200 g. Muốn cân 
 **Lỗi thường gặp:** Cộng số áo với số quần. Phòng: Tự hỏi: chọn xong áo đã đủ một bộ chưa? Chưa đủ thì phải nhân.
 
 ### Bài I.2
-**Đáp số:** a) &lt; · b) &gt; · c) &gt; · d) &gt; · e) &gt; · f) &gt;
+**Đáp số:** a) < · b) > · c) > · d) > · e) > · f) >
 **Hướng giải:** So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Đếm số chữ số **trước**, chỉ khi bằng nhau mới so từng hàng.
 **Lỗi thường gặp:** So từ hàng đơn vị (phải sang trái) nên kết luận sai. Phòng: Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái.

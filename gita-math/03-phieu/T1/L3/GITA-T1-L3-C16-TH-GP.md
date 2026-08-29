@@ -30,7 +30,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần I**
 
-- **Bài I.1** — a) &lt; · b) &lt; · c) &lt; · d) &lt; · e) &lt; · f) &gt;
+- **Bài I.1** — a) < · b) < · c) < · d) < · e) < · f) >
 - **Bài I.2** — a) 5 chữ số, tổng 27 · b) 5 chữ số, tổng 31 · c) 5 chữ số, tổng 20 · d) 5 chữ số, tổng 24 · e) 5 chữ số, tổng 11
 - **Bài I.3** — a) chữ số 6, giá trị 60 000 · b) chữ số 7, giá trị 700 · c) chữ số 1, giá trị 10 · d) chữ số 4, giá trị 4
 - **Bài I.4** — a) 11 761 · b) 66 288 · c) 72 114 · d) 98 838
@@ -74,7 +74,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 Đọc kĩ phần chữ đậm: đó là câu cần nhớ, không phải con số.
 
-### Bài I.1 — Điền dấu &lt;, &gt;, = thích hợp
+### Bài I.1 — Điền dấu <, >, = thích hợp
 
 So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 
@@ -232,7 +232,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
-| I.1 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | &lt; · &lt; · &lt; · &lt;… |
+| I.1 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | < · < · < · <… |
 | I.2 | Đếm chữ số, tính tổng chữ số | Cấu tạo số, tổng chữ số | Yêu cầu “có mấy chữ số”, “tổng các chữ số” | Tách lớp để đếm; cộng rời từng chữ số | Ghép cặp các chữ số cộng lại tròn 10 rồi cộng nhanh. | 5 chữ số, tổng 27 · 5 chữ số, tổng 31 · 5 chữ số, tổng 20 · 5 chữ số, tổng 24… |
 | I.3 | Xác định chữ số và giá trị chữ số theo hàng | Cấu tạo thập phân của số tự nhiên | Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” | Đánh số hàng từ phải sang trái rồi tra bảng hàng | Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị. | chữ số 6, giá trị 60 000 · chữ số 7, giá trị 700 · chữ số 1, giá trị 10 · chữ số 4, giá trị 4 |
 | I.4 | Nhận biết chẵn – lẻ và số liền kề | Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2 | Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” | Xét chữ số tận cùng; cộng hoặc trừ 1 đơn vị | Che hết các chữ số, chỉ để lộ chữ số cuối. | 11 761 · 66 288 · 72 114 · 98 838 |
@@ -364,7 +364,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 
 | Bài | Đề tương tự | Đáp số |
 |---|---|---|
-| I.1 | Điền dấu: 24 971 … 24 972 | &lt; |
+| I.1 | Điền dấu: 24 971 … 24 972 | < |
 | I.2 | Số 40 506 có mấy chữ số và tổng các chữ số bằng bao nhiêu? | 5 chữ số, tổng 15 |
 | I.3 | Chữ số hàng chục của số 69 714 có giá trị bao nhiêu? | 10 |
 | I.4 | Số liền sau của 11 762 là số nào? | 11 763 |

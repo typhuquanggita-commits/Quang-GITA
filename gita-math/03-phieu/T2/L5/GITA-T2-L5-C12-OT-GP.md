@@ -31,7 +31,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần I**
 
 - **Bài I.1** — a) xe ô tô: 14 chiếc, xe đạp: 23 chiếc · b) xe ba bánh: 17 chiếc, xe ô tô: 23 chiếc · c) xe ô tô: 10 chiếc, xe đạp: 24 chiếc · d) xe ô tô: 25 chiếc, xe ba bánh: 3 chiếc · e) xe ba bánh: 26 chiếc, xe ô tô: 9 chiếc · f) xe đạp: 17 chiếc, xe ô tô: 24 chiếc
-- **Bài I.2** — a) &lt; · b) &gt; · c) &gt; · d) &lt; · e) &lt; · f) &gt; · g) &gt;
+- **Bài I.2** — a) < · b) > · c) > · d) < · e) < · f) > · g) >
 - **Bài I.3** — a) không, vì hai câu phủ định nhau · b) không, vì chúng phủ định nhau · c) đúng một bạn · d) nói dối · e) Hùng chính là người làm vỡ lọ hoa · f) Hùng
 - **Bài I.4** — a) 222 · b) 4 214 · c) 7 360 · d) 286 · e) 150
 - **Bài I.5** — a) 55 · b) 4 400 · c) 70 · d) 6 100
@@ -233,7 +233,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
 | I.1 | Giả thiết tạm hai loại | Phương pháp giả thiết tạm | Hai loại đối tượng, biết tổng số và tổng của một đại lượng phụ | Giả sử đồng nhất → tính chênh → chia cho hiệu đơn vị | Kiểm tra ngay: số bánh phải nằm giữa tổng × (số bánh ít nhất) và tổng × (số bánh nhiều nhất). | xe ô tô: 14 chiếc, xe đạp: 23 chiếc · xe ba bánh: 17 chiếc, xe ô tô: 23 chiếc · xe ô tô: 10 chiếc, xe đạp: 24 chiếc · xe ô tô: 25 chiếc, xe ba bánh: 3 chiếc… |
-| I.2 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &lt; · &gt; · &gt; · &lt;… |
+| I.2 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | < · > · > · <… |
 | I.3 | Suy luận nói thật – nói dối | Logic mệnh đề sơ cấp, phương pháp loại trừ | “Chỉ một người nói thật”, các câu nói mâu thuẫn nhau | Tìm cặp mâu thuẫn, khoá số câu đúng, suy ra phần còn lại | Cặp mâu thuẫn đã dùng hết “suất” nói thật, nên mọi câu ngoài cặp đều sai. | không, vì hai câu phủ định nhau · không, vì chúng phủ định nhau · đúng một bạn · nói dối… |
 | I.4 | Tính nhanh nhờ thừa số chung | Nhân một số với một tổng, một hiệu | Hai tích cộng hoặc trừ nhau, có chung một thừa số | Đặt thừa số chung ra ngoài rồi tính trong ngoặc | Sau khi đặt thừa số chung, tổng trong ngoặc thường tròn 10 hoặc 100. | 222 · 4 214 · 7 360 · 286… |
 | I.5 | Tính nhanh tích, thương nhiều bước | Tính chất giao hoán, kết hợp của phép nhân | Tích có thừa số 25, 125, 50, 20; hoặc chia liên tiếp | Ghép cặp cho tích tròn rồi nhân | Chia liên tiếp cho 4 rồi 25 bằng chia cho 100. | 55 · 4 400 · 70 · 6 100 |
@@ -365,7 +365,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | Bài | Đề tương tự | Đáp số |
 |---|---|---|
 | I.1 | 10 xe đạp và ô tô, 28 bánh. Có mấy ô tô? | 4 ô tô |
-| I.2 | So sánh: 3 kg … 2 500 g | &gt; |
+| I.2 | So sánh: 3 kg … 2 500 g | > |
 | I.3 | An nói “tôi không làm”, Bình nói “Chi làm”, Chi nói “Bình nói dối”, chỉ một người nói thật. Ai làm? | An |
 | I.4 | Tính nhanh: 47 × 25 + 47 × 75 | 4 700 |
 | I.5 | Tính nhanh: 37 × 25 × 4 | 3 700 |

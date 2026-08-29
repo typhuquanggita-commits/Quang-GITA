@@ -31,7 +31,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần A**
 
 - **Bài A.1** — a) 188 · b) 17 · c) 36 · d) 98 · e) 71 · f) 54 · g) 155
-- **Bài A.2** — a) &gt; · b) &lt; · c) &lt; · d) &gt; · e) &lt;
+- **Bài A.2** — a) > · b) < · c) < · d) > · e) <
 - **Bài A.3** — a) 126 · b) 145 · c) 72 · d) 287 · e) 165 · f) 130
 - **Bài A.4** — a) số lớn 1 044, số bé 532 · b) số lớn 456, số bé 236 · c) số lớn 683, số bé 529 · d) số lớn 611, số bé 331 · e) số lớn 548, số bé 392
 - **Bài A.5** — a) 40 · b) 22 · c) 58 · d) 330 · e) 140 · f) 54
@@ -233,7 +233,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
 | A.1 | Tìm trung bình cộng | Định nghĩa trung bình cộng | Từ khoá “trung bình cộng”, “trung bình mỗi …” | Tổng chia số lượng | Ước lượng: trung bình cộng luôn nằm giữa số bé nhất và số lớn nhất. | 188 · 17 · 36 · 98… |
-| A.2 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | &gt; · &lt; · &lt; · &gt;… |
+| A.2 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | > · < · < · >… |
 | A.3 | Rút về đơn vị | Đại lượng tỉ lệ thuận, phép chia và phép nhân | Cho giá trị của một nhóm, hỏi giá trị của nhóm khác cùng loại | Chia để rút về một đơn vị rồi nhân | Nếu số bao mới gấp đôi số bao cũ thì khối lượng cũng gấp đôi — dùng tỉ số để bỏ qua bước chia. | 126 · 145 · 72 · 287… |
 | A.4 | Bài toán tổng – hiệu | Công thức tổng – hiệu, sơ đồ đoạn thẳng | Đề cho **tổng** và **hiệu** của hai số | Vẽ sơ đồ, đưa về hai phần bằng nhau | Số lớn và số bé luôn có trung bình cộng bằng nửa tổng. | số lớn 1 044, số bé 532 · số lớn 456, số bé 236 · số lớn 683, số bé 529 · số lớn 611, số bé 331… |
 | A.5 | Quan hệ nhiều hơn – ít hơn, gấp – kém | Bốn phép tính, từ khoá chỉ quan hệ | Các cụm “nhiều hơn”, “ít hơn”, “gấp … lần”, “kém … lần” | Đọc vị từ khoá → chọn phép tính | Kết quả lớn hơn hay bé hơn số đã cho? Trả lời được là biết ngay phép tính. | 40 · 22 · 58 · 330… |
@@ -365,7 +365,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | Bài | Đề tương tự | Đáp số |
 |---|---|---|
 | A.1 | Tìm trung bình cộng của 12, 18 và 30. | 20 |
-| A.2 | So sánh: 3 phần 5 … 3 phần 7 | &gt; |
+| A.2 | So sánh: 3 phần 5 … 3 phần 7 | > |
 | A.3 | 5 bao gạo nặng 250 kg. Hỏi 8 bao nặng bao nhiêu kg? | 400 kg |
 | A.4 | Tổng hai số là 100, hiệu là 20. Tìm hai số. | 60 và 40 |
 | A.5 | An có 12 quyển vở, Bình có gấp 3 lần An. Bình có mấy quyển? | 36 |

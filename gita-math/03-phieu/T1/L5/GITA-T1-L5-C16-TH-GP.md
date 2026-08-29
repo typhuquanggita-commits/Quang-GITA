@@ -65,8 +65,8 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài V.1** — a) 23 con gà, 8 con chó · b) 12 con gà, 37 con chó · c) 34 con gà, 40 con chó · d) 14 con gà, 25 con chó
 - **Bài V.2** — a) 38 đơn vị · b) 24 đơn vị · c) 294 đơn vị · d) 18 đơn vị
 - **Bài V.3** — a) 120 km · b) 120 km · c) 144 km · d) 192 km
-- **Bài V.4** — a) &gt; · b) &lt; · c) &gt; · d) &lt; · e) &gt; · f) &lt;
-- **Bài V.5** — a) 1 225 · b) 21 · c) &lt; · d) 1 156
+- **Bài V.4** — a) > · b) < · c) > · d) < · e) > · f) <
+- **Bài V.5** — a) 1 225 · b) 21 · c) < · d) 1 156
 
 ---
 
@@ -255,8 +255,8 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | V.1 | Giả thiết tạm | Phương pháp giả thiết tạm | Hai loại đối tượng, biết tổng số và tổng của một đại lượng khác | Giả sử đồng nhất một loại → tính phần chênh → chia cho hiệu đơn vị | Số chó = (số chân − 2 × số con) : 2 — thuộc công thức rút gọn để nhẩm. | 23 con gà, 8 con chó · 12 con gà, 37 con chó · 34 con gà, 40 con chó · 14 con gà, 25 con chó |
 | V.2 | Tổng – tỉ có tỉ số thay đổi | Tổng – tỉ, đại lượng không đổi | “Phải thêm (bớt) bao nhiêu để tỉ số trở thành …” | Xác định đại lượng bất biến → tính lại đại lượng kia | Số cần thêm = số bé × (tỉ số mới − tỉ số cũ). | 38 đơn vị · 24 đơn vị · 294 đơn vị · 18 đơn vị |
 | V.3 | Chuyển động ngược chiều, tính quãng đường từng xe | Quãng đường – vận tốc – thời gian, tỉ lệ thuận | Hỏi quãng đường **của một xe** tính đến lúc gặp nhau | Thời gian gặp → quãng đường từng xe | Quãng đường hai xe đi tỉ lệ thuận với vận tốc — chia quãng cách theo tỉ số vận tốc là ra ngay. | 120 km · 120 km · 144 km · 192 km |
-| V.4 | So sánh phân số bằng kĩ thuật đặc biệt | Phần bù tới 1, phân số trung gian | Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 | So phần bù; hoặc chèn phân số trung gian | Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. | &gt; · &lt; · &gt; · &lt;… |
-| V.5 | Tính, so sánh tích bằng kĩ thuật tách – bù | Nhân một số với một tổng, một hiệu | Các thừa số hơn kém nhau rất ít | Quy về số gốc chung, so phần chênh | Với hai tích có tổng hai thừa số bằng nhau, tích nào có hai thừa số gần nhau hơn thì lớn hơn. | 1 225 · 21 · &lt; · 1 156 |
+| V.4 | So sánh phân số bằng kĩ thuật đặc biệt | Phần bù tới 1, phân số trung gian | Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 | So phần bù; hoặc chèn phân số trung gian | Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. | > · < · > · <… |
+| V.5 | Tính, so sánh tích bằng kĩ thuật tách – bù | Nhân một số với một tổng, một hiệu | Các thừa số hơn kém nhau rất ít | Quy về số gốc chung, so phần chênh | Với hai tích có tổng hai thừa số bằng nhau, tích nào có hai thừa số gần nhau hơn thì lớn hơn. | 1 225 · 21 · < · 1 156 |
 
 ---
 
@@ -387,8 +387,8 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | V.1 | Có 10 con gà và chó, 28 chân. Có mấy con chó? | 4 con chó |
 | V.2 | Số lớn gấp 2 lần số bé, tổng là 30. Thêm bao nhiêu vào số lớn để nó gấp 4 lần số bé? | 20 |
 | V.3 | Hai xe cách nhau 150 km, vận tốc 40 và 35 km/giờ, đi ngược chiều. Xe nhanh đi được bao nhiêu km đến lúc gặp? | 80 km |
-| V.4 | So sánh: 5 phần 6 … 7 phần 8 | &lt; |
-| V.5 | So sánh: 99 × 101 … 100 × 100 | &lt; |
+| V.4 | So sánh: 5 phần 6 … 7 phần 8 | < |
+| V.5 | So sánh: 99 × 101 … 100 × 100 | < |
 
 ---
 

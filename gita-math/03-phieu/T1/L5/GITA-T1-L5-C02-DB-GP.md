@@ -42,7 +42,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài B.2** — a) 279 cm² · b) 336 cm² · c) 156 cm² · d) 583 cm² · e) 266 cm²
 - **Bài B.3** — a) 44,7 · b) 77,18 · c) 521,52 · d) 29,12 · e) 70,37
 - **Bài B.4** — a) 759 · b) 5 684 · c) 4 171 · d) 2 454 · e) 2 074 · f) 8 196 · g) 2 056
-- **Bài B.5** — a) &lt; · b) &lt; · c) &lt; · d) &gt; · e) &lt; · f) &lt; · g) &lt;
+- **Bài B.5** — a) < · b) < · c) < · d) > · e) < · f) < · g) <
 
 **Phần C**
 
@@ -241,7 +241,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | B.2 | Diện tích hình thang | Công thức diện tích hình thang | Đề cho hai đáy và chiều cao | Tổng hai đáy × chiều cao : 2 | Nếu tổng hai đáy là số chẵn thì chia 2 ngay từ đầu cho gọn. | 279 cm² · 336 cm² · 156 cm² · 583 cm²… |
 | B.3 | Bốn phép tính với số thập phân | Kĩ thuật tính với số thập phân | Các số có dấu phẩy | Chọn quy tắc đặt dấu phẩy theo phép tính | Ước lượng bằng cách làm tròn để kiểm tra vị trí dấu phẩy. | 44,7 · 77,18 · 521,52 · 29,12… |
 | B.4 | Bốn phép tính với số đo | Đổi đơn vị, bốn phép tính | Các số hạng có đơn vị khác nhau trong cùng một phép tính | Đổi về đơn vị của kết quả rồi tính | Đọc chỗ chấm trước, biết ngay đơn vị đích. | 759 · 5 684 · 4 171 · 2 454… |
-| B.5 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &lt; · &lt; · &lt; · &gt;… |
+| B.5 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | < · < · < · >… |
 | C.1 | Diện tích các hình phẳng cơ bản | Công thức diện tích hình bình hành, hình thoi, hình tam giác | Đề cho đáy và chiều cao, hoặc hai đường chéo | Nhận dạng hình rồi chọn công thức | Tam giác bằng nửa hình bình hành cùng đáy cùng chiều cao. | 168 cm² · 36 cm² · 561 cm² · 60 cm²… |
 | C.2 | Tổng dãy số cách đều | Công thức tổng dãy cách đều | Dãy cộng dài, các số cách đều | Đếm số hạng → (đầu + cuối) × số hạng : 2 | Tổng = trung bình cộng của số đầu và số cuối, nhân với số số hạng. | 3 500 · 100 · 970 · 900… |
 | C.3 | Ba dạng toán tỉ số phần trăm | Tỉ số phần trăm | Kí hiệu %, cụm “… % của …” | Xác định đại lượng ứng với 100% rồi chọn dạng | Coi 100% là “cả phần”, 1% là “cả phần chia 100” — mọi dạng đều quy về 1%. | 5% · 8 · 120 · 100… |
@@ -373,7 +373,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | B.2 | Hình thang đáy 12 cm và 8 cm, cao 5 cm. Diện tích bằng bao nhiêu? | 50 cm² |
 | B.3 | Tính: 3,25 × 4 | 13 |
 | B.4 | 2 m 30 cm + 150 cm = … cm | 380 |
-| B.5 | So sánh: 3 kg … 2 500 g | &gt; |
+| B.5 | So sánh: 3 kg … 2 500 g | > |
 | C.1 | Tam giác đáy 10 cm, cao 6 cm. Diện tích bằng bao nhiêu? | 30 cm² |
 | C.2 | Tính: 2 + 4 + 6 + … + 20 | 110 |
 | C.3 | Tìm 25% của 200. | 50 |

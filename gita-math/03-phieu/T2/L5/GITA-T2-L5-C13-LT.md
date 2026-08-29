@@ -64,7 +64,7 @@ e) Viết số gồm tổng: 5 000 000 + 100 000 + 20 000 + 8 000 + 500 + 60 + 5
 
 ### Bài 2. (1 điểm) So sánh hai phân số
 
-Điền dấu &lt;, &gt;, = thích hợp.
+Điền dấu <, >, = thích hợp.
 
 a) 1 phần 3 … 1
 b) 1 phần 2 … 1
@@ -348,7 +348,7 @@ d) Trang trại và cửa hàng chứa tất cả 484 kg đường. Trang trại
 **Lỗi thường gặp:** Bỏ qua hàng khuyết nên số viết ra bị ngắn đi một chữ số. Phòng: Kẻ sẵn các ô hàng rồi mới điền chữ số vào ô tương ứng.
 
 ### Bài A.2
-**Đáp số:** a) &lt; · b) &lt; · c) &gt; · d) &lt; · e) &gt; · f) &gt; · g) &gt; · h) &lt;
+**Đáp số:** a) < · b) < · c) > · d) < · e) > · f) > · g) > · h) <
 **Hướng giải:** Cùng mẫu số: phân số nào có tử số lớn hơn thì lớn hơn. Cùng tử số: phân số nào có mẫu số **bé** hơn thì lớn hơn. Khác cả tử lẫn mẫu: quy đồng mẫu số rồi so tử số.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Cùng tử số thì **mẫu bé hơn là phân số lớn hơn** — ngược với trực giác.
 **Lỗi thường gặp:** Thấy mẫu số lớn thì kết luận phân số lớn. Phòng: Nghĩ tới chiếc bánh: chia càng nhiều phần thì mỗi phần càng bé.
@@ -360,7 +360,7 @@ d) Trang trại và cửa hàng chứa tất cả 484 kg đường. Trang trại
 **Lỗi thường gặp:** Chỉ chia tử số hoặc chỉ chia mẫu số. Phòng: Viết phép chia cho cả hai dòng, kiểm tra lại bằng cách nhân ngược.
 
 ### Bài A.4
-**Đáp số:** a) 0,3 · b) 7 · c) &gt; · d) 8 · e) &lt; · f) 0,301 · g) &gt;
+**Đáp số:** a) 0,3 · b) 7 · c) > · d) 8 · e) < · f) 0,301 · g) >
 **Hướng giải:** Sau dấu phẩy lần lượt là hàng phần mười, phần trăm, phần nghìn. So sánh số thập phân: so phần nguyên trước; phần nguyên bằng nhau thì so lần lượt hàng phần mười, phần trăm, phần nghìn. Phân số có mẫu là 10, 100, 1 000 đổi được thẳng sang số thập phân.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: So sánh theo **hàng**, không so theo số chữ số sau dấu phẩy.
 **Lỗi thường gặp:** Cho rằng số có nhiều chữ số sau dấu phẩy hơn thì lớn hơn. Phòng: Viết thêm chữ số 0 vào cuối để hai số có cùng số chữ số thập phân rồi mới so.

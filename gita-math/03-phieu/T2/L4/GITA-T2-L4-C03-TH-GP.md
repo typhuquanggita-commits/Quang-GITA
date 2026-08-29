@@ -66,7 +66,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài V.2** — a) 10 000 · b) 1 275 · c) 110 · d) 1 275 · e) 2 500
 - **Bài V.3** — a) không còn đúng (24 bạn có thể chia đều 3 bạn mỗi tháng) · b) không còn đúng (32 bạn có thể chia đều 4 bạn mỗi tháng) · c) không còn đúng (20 bạn có thể chia đều 4 bạn mỗi tháng) · d) không còn đúng (16 bạn có thể chia đều 2 bạn mỗi tháng) · e) không còn đúng (16 bạn có thể chia đều 4 bạn mỗi tháng)
 - **Bài V.4** — a) 6 421 · b) 181 · c) 125 · d) 2 133
-- **Bài V.5** — a) &gt; · b) &lt; · c) &gt; · d) &lt;
+- **Bài V.5** — a) > · b) < · c) > · d) <
 
 ---
 
@@ -256,7 +256,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | V.2 | Tổng dãy đặc biệt | Ba công thức tổng cơ bản | Dãy toàn số lẻ, toàn số chẵn, hoặc số tự nhiên liên tiếp | Đếm số số hạng rồi áp công thức | Tổng n số lẻ đầu tiên luôn là một số chính phương — dùng để kiểm tra nhanh. | 10 000 · 1 275 · 110 · 1 275… |
 | V.3 | Đi-rích-lê dạng chứng minh | Nguyên lí ngăn kéo | “Chứng tỏ rằng có ít nhất … cùng …” | Đặt tên ngăn kéo và đồ vật, tính ngưỡng | Ngưỡng = số ngăn × (số cần − 1) + 1. | không còn đúng (24 bạn có thể chia đều 3 bạn mỗi tháng) · không còn đúng (32 bạn có thể chia đều 4 bạn mỗi tháng) · không còn đúng (20 bạn có thể chia đều 4 bạn mỗi tháng) · không còn đúng (16 bạn có thể chia đều 2 bạn mỗi tháng)… |
 | V.4 | Đếm chữ số theo nhóm độ dài | Đếm số hạng dãy cách đều, cấu tạo số | Bài toán đánh số trang, đánh số nhà, đánh số vé | Chia nhóm 1 chữ số – 2 chữ số – 3 chữ số rồi nhân và cộng | Sách 100 trang luôn dùng 192 chữ số; nhớ mốc này để kiểm tra nhanh. | 6 421 · 181 · 125 · 2 133 |
-| V.5 | So sánh phân số bằng kĩ thuật đặc biệt | Phần bù tới 1, phân số trung gian | Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 | So phần bù; hoặc chèn phân số trung gian | Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. | &gt; · &lt; · &gt; · &lt; |
+| V.5 | So sánh phân số bằng kĩ thuật đặc biệt | Phần bù tới 1, phân số trung gian | Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 | So phần bù; hoặc chèn phân số trung gian | Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. | > · < · > · < |
 
 ---
 
@@ -388,7 +388,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | V.2 | Tính: 1 + 3 + 5 + … + 19 | 100 |
 | V.3 | 13 bạn sinh trong 12 tháng, chứng tỏ có 2 bạn cùng tháng sinh. | đúng, vì 13 > 12 × 1 |
 | V.4 | Quyển sách 150 trang dùng hết bao nhiêu chữ số? | 342 |
-| V.5 | So sánh: 5 phần 6 … 7 phần 8 | &lt; |
+| V.5 | So sánh: 5 phần 6 … 7 phần 8 | < |
 
 ---
 

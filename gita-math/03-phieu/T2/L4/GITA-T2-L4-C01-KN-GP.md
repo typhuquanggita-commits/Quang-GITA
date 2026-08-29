@@ -31,7 +31,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần A**
 
 - **Bài A.1** — a) 389 714 · b) 490 423 · c) 68 351 · d) 651 820 · e) 584 361 · f) 806 234
-- **Bài A.2** — a) &gt; · b) &gt; · c) &gt; · d) &gt; · e) &lt; · f) &lt; · g) &gt;
+- **Bài A.2** — a) > · b) > · c) > · d) > · e) < · f) < · g) >
 - **Bài A.3** — a) 171 153 · b) số lẻ · c) 531 646 · d) số chẵn
 - **Bài A.4** — a) 45 400 · b) 329 850 · c) 396 300 · d) 189 000 · e) 367 000 · f) 844 200 · g) 728 600
 - **Bài A.5** — a) chữ số 6, giá trị 600 000 · b) chữ số 8, giá trị 8 000 · c) chữ số 1, giá trị 10 · d) chữ số 7, giá trị 7
@@ -80,7 +80,7 @@ Mỗi số hạng cho biết một hàng. Xếp các chữ số vào đúng hàn
 
 *Điểm chốt:* Hàng khuyết trong tổng vẫn phải có chữ số **0** trong số viết ra.
 
-### Bài A.2 — Điền dấu &lt;, &gt;, = thích hợp
+### Bài A.2 — Điền dấu <, >, = thích hợp
 
 So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 
@@ -233,7 +233,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
 | A.1 | Viết số từ dạng tổng theo hàng | Cấu tạo thập phân của số tự nhiên | Tổng gồm các số tròn chục, tròn trăm, tròn nghìn… | Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết | Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số. | 389 714 · 490 423 · 68 351 · 651 820… |
-| A.2 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | &gt; · &gt; · &gt; · &gt;… |
+| A.2 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | > · > · > · >… |
 | A.3 | Nhận biết chẵn – lẻ và số liền kề | Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2 | Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” | Xét chữ số tận cùng; cộng hoặc trừ 1 đơn vị | Che hết các chữ số, chỉ để lộ chữ số cuối. | 171 153 · số lẻ · 531 646 · số chẵn |
 | A.4 | Làm tròn số tự nhiên | Quy tắc làm tròn, giá trị hàng | Cụm từ “làm tròn đến hàng …” | Gạch ngăn hàng → xét chữ số liền sau → giữ nguyên hoặc thêm 1 | Che toàn bộ phần đuôi sau nét gạch, chỉ để lộ đúng một chữ số. | 45 400 · 329 850 · 396 300 · 189 000… |
 | A.5 | Xác định chữ số và giá trị chữ số theo hàng | Cấu tạo thập phân của số tự nhiên | Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” | Đánh số hàng từ phải sang trái rồi tra bảng hàng | Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị. | chữ số 6, giá trị 600 000 · chữ số 8, giá trị 8 000 · chữ số 1, giá trị 10 · chữ số 7, giá trị 7 |
@@ -365,7 +365,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | Bài | Đề tương tự | Đáp số |
 |---|---|---|
 | A.1 | Viết số gồm tổng: 30 000 + 400 + 7 | 30 407 |
-| A.2 | Điền dấu: 630 553 … 630 554 | &lt; |
+| A.2 | Điền dấu: 630 553 … 630 554 | < |
 | A.3 | Số liền sau của 171 152 là số nào? | 171 153 |
 | A.4 | Làm tròn 4 762 đến hàng trăm. | 4 800 |
 | A.5 | Chữ số hàng chục của số 678 017 có giá trị bao nhiêu? | 10 |

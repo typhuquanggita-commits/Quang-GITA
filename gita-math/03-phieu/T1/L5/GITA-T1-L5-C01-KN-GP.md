@@ -32,8 +32,8 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài A.1** — a) 2 · b) 1 phần 9 · c) 5 phần 2 · d) 5 phần 6 · e) 9 phần 11 · f) 1 phần 4 · g) 3 phần 5 · h) 4 phần 3
 - **Bài A.2** — a) 1 043 343 · b) 888 228 · c) 1 193 598 · d) 522 679 · e) 213 966
-- **Bài A.3** — a) &lt; · b) &lt; · c) &gt; · d) &gt; · e) &lt; · f) &lt; · g) &lt; · h) &lt;
-- **Bài A.4** — a) 9 · b) &lt; · c) 0,4 · d) 4 · e) &gt; · f) 0,89 · g) 3 · h) 0,15
+- **Bài A.3** — a) < · b) < · c) > · d) > · e) < · f) < · g) < · h) <
+- **Bài A.4** — a) 9 · b) < · c) 0,4 · d) 4 · e) > · f) 0,89 · g) 3 · h) 0,15
 - **Bài A.5** — a) 14 764 800 · b) 19 203 925 · c) 54 954 080 · d) 21 024 864 · e) 25 944 · f) 50 685 278 · g) 32 162 834
 
 **Phần B**
@@ -234,8 +234,8 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 |---|---|---|---|---|---|---|
 | A.1 | Rút gọn phân số | Tính chất cơ bản của phân số | Tử số và mẫu số có ước chung lớn hơn 1 | Chia cả tử và mẫu cho ước chung | Tìm ngay ước chung lớn nhất để rút gọn một lần là xong. | 2 · 1 phần 9 · 5 phần 2 · 5 phần 6… |
 | A.2 | Cộng, trừ số tự nhiên | Kĩ thuật đặt tính, nhớ và mượn | Yêu cầu “đặt tính rồi tính” | Đặt tính thẳng hàng, tính từ hàng đơn vị | Làm tròn một số hạng để ước lượng trước, dùng kết quả ước lượng để phát hiện sai sót. | 1 043 343 · 888 228 · 1 193 598 · 522 679… |
-| A.3 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | &lt; · &lt; · &gt; · &gt;… |
-| A.4 | Số thập phân — hàng, so sánh, chuyển đổi | Cấu tạo số thập phân, quan hệ phân số – số thập phân | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 | Xét theo hàng từ trái sang phải | Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. | 9 · &lt; · 0,4 · 4… |
+| A.3 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | < · < · > · >… |
+| A.4 | Số thập phân — hàng, so sánh, chuyển đổi | Cấu tạo số thập phân, quan hệ phân số – số thập phân | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 | Xét theo hàng từ trái sang phải | Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. | 9 · < · 0,4 · 4… |
 | A.5 | Nhân, chia số tự nhiên | Kĩ thuật đặt tính nhân, chia | Yêu cầu “đặt tính rồi tính” với phép nhân, chia | Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ chữ số | Kiểm tra kết quả bằng phép tính ngược: thương × số chia = số bị chia. | 14 764 800 · 19 203 925 · 54 954 080 · 21 024 864… |
 | B.1 | Kỹ năng trình bày | Chuẩn trình bày bài giải | Yêu cầu “trình bày lời giải” | Viết đủ bốn dòng | Viết câu lời giải trước, phép tính sau — không bao giờ ngược lại. | câu lời giải nêu rõ đang tìm đại lượng nào · phép tính, viết đủ dấu và đủ đơn vị · kết quả kèm đơn vị · câu đáp số… |
 | B.2 | Kỹ năng viết câu lời giải | Chuẩn trình bày | Đề hỏi gì thì câu lời giải nhắc lại điều đó | Lấy cụm từ trong câu hỏi làm câu lời giải | Sao chép cụm từ trong câu hỏi là cách viết câu lời giải nhanh và chắc nhất. | “Phần trăm thay đổi nhiều lần là:” · “Biểu thức phân số nhiều phép tính là:” · “Đọc bảng số liệu thống kê là:” · “Rút gọn phân số là:”… |
@@ -366,8 +366,8 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 |---|---|---|
 | A.1 | Rút gọn 18 phần 24. | 3 phần 4 |
 | A.2 | Đặt tính rồi tính: 4 328 + 1 795 | 6 123 |
-| A.3 | So sánh: 3 phần 5 … 3 phần 7 | &gt; |
-| A.4 | So sánh: 0,5 … 0,45 | &gt; |
+| A.3 | So sánh: 3 phần 5 … 3 phần 7 | > |
+| A.4 | So sánh: 0,5 … 0,45 | > |
 | A.5 | Đặt tính rồi tính: 3 045 × 24 | 73 080 |
 | B.1 | Một lời giải đạt chuẩn GITA có mấy dòng bắt buộc? | 4 dòng |
 | B.2 | Đề hỏi “mỗi tổ trồng mấy cây” thì câu lời giải viết thế nào? | “Số cây mỗi tổ trồng được là:” |
@@ -378,11 +378,11 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | C.2 | Giá 100 000 đồng tăng 10% rồi giảm 10%. Giá cuối là bao nhiêu? | 99 000 đồng |
 | C.3 | Rút gọn 18 phần 24. | 3 phần 4 |
 | C.4 | Lớp có 40 học sinh, 10 em giỏi. Học sinh giỏi chiếm bao nhiêu phần trăm? | 25% |
-| C.5 | So sánh: 0,5 … 0,45 | &gt; |
+| C.5 | So sánh: 0,5 … 0,45 | > |
 | D.1 | Vẽ sơ đồ mà nhìn tài liệu thì mất tác dụng gì? | mất tác dụng kiểm tra trí nhớ |
 | D.2 | Tính: (1 phần 2 + 1 phần 3) × 6 phần 5 | 1 |
 | D.3 | Rút gọn 18 phần 24. | 3 phần 4 |
-| D.4 | So sánh: 5 phần 6 … 7 phần 8 | &lt; |
+| D.4 | So sánh: 5 phần 6 … 7 phần 8 | < |
 | D.5 | Tính: 3,25 × 4 | 13 |
 | E.1 | Vì sao phải giảng lại cho bạn? | vì giảng được mới là hiểu thật |
 | E.2 | Giá 100 000 đồng tăng 10% rồi giảm 10%. Giá cuối là bao nhiêu? | 99 000 đồng |

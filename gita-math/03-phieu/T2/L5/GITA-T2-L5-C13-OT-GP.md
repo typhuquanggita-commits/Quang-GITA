@@ -64,9 +64,9 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài V.1** — a) Phần trăm thay đổi nhiều lần · b) Tỉ số phần trăm, mốc quy chiếu · c) Hai lần tăng giảm liên tiếp · d) Tính tuần tự, xác định lại mốc 100% sau mỗi bước · e) Tăng 20% rồi giảm 20% thì còn 96% giá ban đầu — luôn thấp hơn giá cũ. · f) 937 500 đồng, giảm 62 500 đồng · 625 000 đồng, giảm 375 000 đồng · 450 000 đồng, tăng 50 000 đồng · 675 000 đồng, tăng 175 000 đồng…
 - **Bài V.2** — a) Tỉ số phần trăm có lời văn · b) Tỉ số phần trăm · c) Cụm “chiếm bao nhiêu phần trăm”, “so với cả lớp” · d) Chốt đại lượng 100% rồi chọn dạng · e) Nếu tỉ số là 1 phần 4 thì bằng 25%; nhớ vài mốc quen để nhẩm. · f) 15 học sinh · 50% · 24 học sinh · 20%…
-- **Bài V.3** — a) So sánh phân số bằng kĩ thuật đặc biệt · b) Phần bù tới 1, phân số trung gian · c) Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 · d) So phần bù; hoặc chèn phân số trung gian · e) Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. · f) &gt; · &lt; · &gt; · &lt;…
+- **Bài V.3** — a) So sánh phân số bằng kĩ thuật đặc biệt · b) Phần bù tới 1, phân số trung gian · c) Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 · d) So phần bù; hoặc chèn phân số trung gian · e) Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. · f) > · < · > · <…
 - **Bài V.4** — a) Tìm phân số của một số · b) Nhân số tự nhiên với phân số · c) Cụm “bằng … của …” · d) Chia theo mẫu số rồi nhân theo tử số · e) Chia trước, nhân sau — số nhỏ hơn nên tính nhẩm được. · f) 16 cây · 6 cây · 54 cây · 185 cây
-- **Bài V.5** — a) Số thập phân — hàng, so sánh, chuyển đổi · b) Cấu tạo số thập phân, quan hệ phân số – số thập phân · c) Số có dấu phẩy; phân số mẫu 10, 100, 1 000 · d) Xét theo hàng từ trái sang phải · e) Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. · f) 0,3 · 4 · &lt; · 0,3…
+- **Bài V.5** — a) Số thập phân — hàng, so sánh, chuyển đổi · b) Cấu tạo số thập phân, quan hệ phân số – số thập phân · c) Số có dấu phẩy; phân số mẫu 10, 100, 1 000 · d) Xét theo hàng từ trái sang phải · e) Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. · f) 0,3 · 4 · < · 0,3…
 
 ---
 
@@ -386,9 +386,9 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | IV.5 | Dãy cách đều 10 số hạng, đầu 5, cuối 50. Tổng bằng bao nhiêu? | 275 |
 | V.1 | Giá 100 000 đồng tăng 10% rồi giảm 10%. Giá cuối là bao nhiêu? | 99 000 đồng |
 | V.2 | Lớp có 40 học sinh, 10 em giỏi. Học sinh giỏi chiếm bao nhiêu phần trăm? | 25% |
-| V.3 | So sánh: 5 phần 6 … 7 phần 8 | &lt; |
+| V.3 | So sánh: 5 phần 6 … 7 phần 8 | < |
 | V.4 | Tổ Một trồng 60 cây, tổ Hai bằng 2 phần 3 tổ Một. Tổ Hai trồng mấy cây? | 40 cây |
-| V.5 | So sánh: 0,5 … 0,45 | &gt; |
+| V.5 | So sánh: 0,5 … 0,45 | > |
 
 ---
 

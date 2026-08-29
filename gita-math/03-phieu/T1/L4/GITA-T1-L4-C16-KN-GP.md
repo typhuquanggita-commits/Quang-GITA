@@ -383,7 +383,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | D.2 | Tính nhanh: 37 × 25 × 4 | 3 700 |
 | D.3 | Tính: 25 + 8 × 4 | 57 |
 | D.4 | Đặt tính rồi tính: 4 328 + 1 795 | 6 123 |
-| D.5 | So sánh: 234 × 7 … 234 × 8 | &lt; |
+| D.5 | So sánh: 234 × 7 … 234 × 8 | < |
 | E.1 | Vì sao phải giảng lại cho bạn? | vì giảng được mới là hiểu thật |
 | E.2 | Tìm x: (x + 12) × 5 − 8 = 132 | x = 16 |
 | E.3 | Tính nhanh: 37 + 145 + 63 | 245 |

@@ -31,10 +31,10 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần I**
 
 - **Bài I.1** — a) 73 364 770 · b) 23 780 · c) 48 930 · d) 20 585 · e) 97 055 · f) 6 710 880 · g) 76 406
-- **Bài I.2** — a) &gt; · b) 5 · c) 0,6 · d) 2 · e) 0,694 · f) &lt;
+- **Bài I.2** — a) > · b) 5 · c) 0,6 · d) 2 · e) 0,694 · f) <
 - **Bài I.3** — a) 7 phần 8 · b) 7 phần 9 · c) 2 phần 3 · d) 2 · e) 1 phần 3
 - **Bài I.4** — a) 7 chữ số, tổng 34 · b) 6 chữ số, tổng 38 · c) 6 chữ số, tổng 22 · d) 7 chữ số, tổng 29 · e) 7 chữ số, tổng 33
-- **Bài I.5** — a) &gt; · b) &gt; · c) &lt; · d) &gt; · e) &gt; · f) &gt;
+- **Bài I.5** — a) > · b) > · c) < · d) > · e) > · f) >
 
 **Phần II**
 
@@ -65,7 +65,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài V.1** — a) 495 000 đồng, giảm 5 000 đồng · b) 550 000 đồng, giảm 450 000 đồng · c) 1 350 000 đồng, tăng 350 000 đồng · d) 60 000 đồng, giảm 40 000 đồng · e) 93 750 đồng, giảm 6 250 đồng
 - **Bài V.2** — a) 8 · b) 2 · c) 6 · d) 2 · e) 1 · f) 6 · g) 442
 - **Bài V.3** — a) 5 phần 6 · b) 8 phần 9 · c) 12 phần 13 · d) 5 phần 6 · e) 6 phần 7
-- **Bài V.4** — a) &gt; · b) &lt; · c) &lt; · d) &gt; · e) &lt;
+- **Bài V.4** — a) > · b) < · c) < · d) > · e) <
 - **Bài V.5** — a) 192 cm · b) 140 cm · c) 280 cm · d) 108 cm · e) 272 cm
 
 ---
@@ -233,10 +233,10 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
 | I.1 | Nhân, chia số tự nhiên | Kĩ thuật đặt tính nhân, chia | Yêu cầu “đặt tính rồi tính” với phép nhân, chia | Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ chữ số | Kiểm tra kết quả bằng phép tính ngược: thương × số chia = số bị chia. | 73 364 770 · 23 780 · 48 930 · 20 585… |
-| I.2 | Số thập phân — hàng, so sánh, chuyển đổi | Cấu tạo số thập phân, quan hệ phân số – số thập phân | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 | Xét theo hàng từ trái sang phải | Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. | &gt; · 5 · 0,6 · 2… |
+| I.2 | Số thập phân — hàng, so sánh, chuyển đổi | Cấu tạo số thập phân, quan hệ phân số – số thập phân | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 | Xét theo hàng từ trái sang phải | Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. | > · 5 · 0,6 · 2… |
 | I.3 | Rút gọn phân số | Tính chất cơ bản của phân số | Tử số và mẫu số có ước chung lớn hơn 1 | Chia cả tử và mẫu cho ước chung | Tìm ngay ước chung lớn nhất để rút gọn một lần là xong. | 7 phần 8 · 7 phần 9 · 2 phần 3 · 2… |
 | I.4 | Đếm chữ số, tính tổng chữ số | Cấu tạo số, tổng chữ số | Yêu cầu “có mấy chữ số”, “tổng các chữ số” | Tách lớp để đếm; cộng rời từng chữ số | Ghép cặp các chữ số cộng lại tròn 10 rồi cộng nhanh. | 7 chữ số, tổng 34 · 6 chữ số, tổng 38 · 6 chữ số, tổng 22 · 7 chữ số, tổng 29… |
-| I.5 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | &gt; · &gt; · &lt; · &gt;… |
+| I.5 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | > · > · < · >… |
 | II.1 | Suy luận nói thật – nói dối | Logic mệnh đề sơ cấp, phương pháp loại trừ | “Chỉ một người nói thật”, các câu nói mâu thuẫn nhau | Tìm cặp mâu thuẫn, khoá số câu đúng, suy ra phần còn lại | Cặp mâu thuẫn đã dùng hết “suất” nói thật, nên mọi câu ngoài cặp đều sai. | không, vì hai câu phủ định nhau · không, vì chúng phủ định nhau · đúng một bạn · nói dối… |
 | II.2 | Ba dạng toán tỉ số phần trăm | Tỉ số phần trăm | Kí hiệu %, cụm “… % của …” | Xác định đại lượng ứng với 100% rồi chọn dạng | Coi 100% là “cả phần”, 1% là “cả phần chia 100” — mọi dạng đều quy về 1%. | 5% · 40 · 200 · 20… |
 | II.3 | Kiểm tra chia hết bằng dấu hiệu | Dấu hiệu chia hết cho 2, 3, 5, 9 | Câu hỏi “có chia hết cho … không” | Chọn đúng dấu hiệu theo số chia rồi kiểm tra | Cộng chữ số theo cặp tròn 9, phần dư chính là số dư khi chia 9. | không (chữ số tận cùng 2) · không (tổng chữ số 14) · không (tổng chữ số 16) · không (chữ số tận cùng 9)… |
@@ -255,7 +255,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | V.1 | Phần trăm thay đổi nhiều lần | Tỉ số phần trăm, mốc quy chiếu | Hai lần tăng giảm liên tiếp | Tính tuần tự, xác định lại mốc 100% sau mỗi bước | Tăng 20% rồi giảm 20% thì còn 96% giá ban đầu — luôn thấp hơn giá cũ. | 495 000 đồng, giảm 5 000 đồng · 550 000 đồng, giảm 450 000 đồng · 1 350 000 đồng, tăng 350 000 đồng · 60 000 đồng, giảm 40 000 đồng… |
 | V.2 | Dãy tuần hoàn | Phép chia có dư, tính tuần hoàn | Dãy lặp lại một nhóm số cố định | Chia vị trí cho chu kì, dùng số dư định vị | Tổng n số hạng = tổng một chu kì × số chu kì đầy đủ + tổng phần dư. | 8 · 2 · 6 · 2… |
 | V.3 | Tổng dãy phân số có mẫu là tích hai số liên tiếp | Tách phân số thành hiệu, phép trừ phân số | Mẫu số là 2, 6, 12, 20, 30… (tích hai số liên tiếp) | Tách thành hiệu, khử liên tiếp, giữ lại hai đầu | Kết quả luôn là 1 trừ 1 phần (n + 1), tức là n phần (n + 1). | 5 phần 6 · 8 phần 9 · 12 phần 13 · 5 phần 6… |
-| V.4 | So sánh phân số bằng kĩ thuật đặc biệt | Phần bù tới 1, phân số trung gian | Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 | So phần bù; hoặc chèn phân số trung gian | Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. | &gt; · &lt; · &lt; · &gt;… |
+| V.4 | So sánh phân số bằng kĩ thuật đặc biệt | Phần bù tới 1, phân số trung gian | Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 | So phần bù; hoặc chèn phân số trung gian | Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. | > · < · < · >… |
 | V.5 | Cắt ghép hình, biến thiên chu vi | Chu vi, đường bao của hình | Từ khoá “ghép”, “cắt thành”, “xếp thành” | Xác định đường bao mới rồi cộng độ dài | Mỗi nhát cắt làm tổng chu vi tăng thêm hai lần chiều dài nhát cắt. | 192 cm · 140 cm · 280 cm · 108 cm… |
 
 ---
@@ -365,10 +365,10 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | Bài | Đề tương tự | Đáp số |
 |---|---|---|
 | I.1 | Đặt tính rồi tính: 3 045 × 24 | 73 080 |
-| I.2 | So sánh: 0,5 … 0,45 | &gt; |
+| I.2 | So sánh: 0,5 … 0,45 | > |
 | I.3 | Rút gọn 18 phần 24. | 3 phần 4 |
 | I.4 | Số 40 506 có mấy chữ số và tổng các chữ số bằng bao nhiêu? | 5 chữ số, tổng 15 |
-| I.5 | So sánh: 3 phần 5 … 3 phần 7 | &gt; |
+| I.5 | So sánh: 3 phần 5 … 3 phần 7 | > |
 | II.1 | An nói “tôi không làm”, Bình nói “Chi làm”, Chi nói “Bình nói dối”, chỉ một người nói thật. Ai làm? | An |
 | II.2 | Tìm 25% của 200. | 50 |
 | II.3 | Số 1 082 có chia hết cho 9 không? | không |
@@ -387,7 +387,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | V.1 | Giá 100 000 đồng tăng 10% rồi giảm 10%. Giá cuối là bao nhiêu? | 99 000 đồng |
 | V.2 | Dãy 1, 2, 3, 1, 2, 3, … số hạng thứ 100 là số nào? | 1 |
 | V.3 | Tính nhanh: 1 phần 2 + 1 phần 6 + 1 phần 12 | 3 phần 4 |
-| V.4 | So sánh: 5 phần 6 … 7 phần 8 | &lt; |
+| V.4 | So sánh: 5 phần 6 … 7 phần 8 | < |
 | V.5 | Ghép 3 hình vuông cạnh 4 cm thành hàng. Chu vi hình chữ nhật là bao nhiêu? | 32 cm |
 
 ---

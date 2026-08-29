@@ -49,7 +49,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài III.1** — a) 2 lần · b) 3 phần · c) vì mỗi lần cân có ba kết quả: trái nặng hơn, phải nặng hơn, hoặc cân bằng · d) 3 · e) 1 lần · f) 2 lần
 - **Bài III.2** — a) 6 225 · b) 975 · c) 400 · d) 5 150
 - **Bài III.3** — a) 456 kg · b) 32 kg · c) 38 kg · d) 240 kg · e) 576 kg · f) 210 kg
-- **Bài III.4** — a) &lt; · b) &lt; · c) &lt; · d) &lt; · e) &lt; · f) &lt;
+- **Bài III.4** — a) < · b) < · c) < · d) < · e) < · f) <
 - **Bài III.5** — a) 52 tuổi · b) 42 tuổi · c) bố 24 tuổi, con 6 tuổi · d) bố 40 tuổi, con 8 tuổi · e) 18 tuổi · f) bố 18 tuổi, con 9 tuổi
 
 **Phần IV**
@@ -62,7 +62,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần V**
 
-- **Bài V.1** — a) So sánh phân số · b) Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu · c) Hai phân số nối bởi dấu … · d) Xét cùng mẫu → cùng tử → quy đồng · e) So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. · f) &gt; · &gt; · &lt; · &lt;…
+- **Bài V.1** — a) So sánh phân số · b) Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu · c) Hai phân số nối bởi dấu … · d) Xét cùng mẫu → cùng tử → quy đồng · e) So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. · f) > · > · < · <…
 - **Bài V.2** — a) Bốn phép tính với số thập phân · b) Kĩ thuật tính với số thập phân · c) Các số có dấu phẩy · d) Chọn quy tắc đặt dấu phẩy theo phép tính · e) Ước lượng bằng cách làm tròn để kiểm tra vị trí dấu phẩy. · f) 62,5 · 65,79 · 855,36 · 17,76…
 - **Bài V.3** — a) Tìm phân số của một số · b) Nhân số tự nhiên với phân số · c) Cụm “bằng … của …” · d) Chia theo mẫu số rồi nhân theo tử số · e) Chia trước, nhân sau — số nhỏ hơn nên tính nhẩm được. · f) 7 cây · 16 cây · 33 cây · 29 cây
 - **Bài V.4** — a) Phần trăm thay đổi nhiều lần · b) Tỉ số phần trăm, mốc quy chiếu · c) Hai lần tăng giảm liên tiếp · d) Tính tuần tự, xác định lại mốc 100% sau mỗi bước · e) Tăng 20% rồi giảm 20% thì còn 96% giá ban đầu — luôn thấp hơn giá cũ. · f) 384 000 đồng, giảm 16 000 đồng · 440 000 đồng, giảm 60 000 đồng · 352 000 đồng, giảm 48 000 đồng · 216 000 đồng, tăng 16 000 đồng
@@ -245,7 +245,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.1 | Cân đĩa, chia ba | Lập luận trường hợp xấu nhất, chia nhóm | Cân đĩa không có quả cân, tìm vật khác biệt | Chia ba phần bằng nhau mỗi lần cân | 3 đồng → 1 lần; 9 đồng → 2 lần; 27 đồng → 3 lần. | 2 lần · 3 phần · vì mỗi lần cân có ba kết quả: trái nặng hơn, phải nặng hơn, hoặc cân bằng · 3… |
 | III.2 | Tổng dãy số cách đều | Công thức tổng dãy cách đều | Dãy cộng có dấu … và các số cách đều nhau | Đếm số số hạng rồi áp công thức tổng | Ghép cặp đầu – cuối: mọi cặp đều có cùng tổng, chỉ cần nhân với số cặp. | 6 225 · 975 · 400 · 5 150 |
 | III.3 | Tìm phân số của một số, nhiều bước | Tìm phân số của một số | Cụm “… số còn lại”, “… số đó” | Tính tuần tự, sau mỗi bước ghi lại số còn lại | Còn lại sau ngày đầu là (1 − phân số) của tổng; nhân trực tiếp cho nhanh. | 456 kg · 32 kg · 38 kg · 240 kg… |
-| III.4 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | &lt; · &lt; · &lt; · &lt;… |
+| III.4 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | < · < · < · <… |
 | III.5 | Bài toán tuổi | Bất biến hiệu số tuổi, tổng – hiệu, tổng – tỉ | Xuất hiện mốc thời gian: hiện nay, sau … năm, cách đây … năm | Kẻ bảng thời gian, bám vào hiệu tuổi không đổi | Tổng tuổi của n người sau k năm tăng thêm đúng n × k. | 52 tuổi · 42 tuổi · bố 24 tuổi, con 6 tuổi · bố 40 tuổi, con 8 tuổi… |
 | IV.1 | Tỉ số phần trăm trong mua bán | Tỉ số phần trăm, tăng giảm theo phần trăm | Từ khoá “tăng giá”, “giảm giá”, “lãi”, “lỗ” | Chốt mốc 100% rồi cộng trừ phần trăm | Giảm 20% nghĩa là còn 80% — nhân thẳng một lần thay vì trừ hai bước. | 840 000 đồng · 640 000 đồng · 10% · 150 000 đồng |
 | IV.2 | Tính nhanh biểu thức số thập phân | Tính chất phép tính với số thập phân | Các số thập phân cộng lại tròn chục hoặc có thừa số chung | Ghép cặp tròn, đặt thừa số chung | × 4 rồi × 25 là × 100 — chỉ việc dịch dấu phẩy sang phải hai chữ số. | 13 · 700 · 81 · 21… |
@@ -377,14 +377,14 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | III.1 | Có 9 đồng tiền, một đồng nhẹ hơn. Cần cân mấy lần? | 2 lần |
 | III.2 | Tính nhanh: 1 + 2 + 3 + … + 100 | 5 050 |
 | III.3 | Có 60 kg gạo, bán 1 phần 3 rồi bán tiếp 1 phần 2 số còn lại. Còn bao nhiêu? | 20 kg |
-| III.4 | So sánh: 234 × 7 … 234 × 8 | &lt; |
+| III.4 | So sánh: 234 × 7 … 234 × 8 | < |
 | III.5 | Bố hơn con 30 tuổi. Sau 5 năm nữa bố hơn con bao nhiêu tuổi? | 30 tuổi |
 | IV.1 | Hàng giá 500 000 đồng giảm 20%. Giá còn lại bao nhiêu? | 400 000 đồng |
 | IV.2 | Tính nhanh: 2,5 × 4 × 25 | 250 |
 | IV.3 | Tính nhanh: 1 234 × 567 × (89 − 89) | 0 |
 | IV.4 | Tính: (1 phần 2 + 1 phần 3) × 6 phần 5 | 1 |
 | IV.5 | Tổ Một có 30 quyển, tổ Hai có 20 quyển. Chuyển mấy quyển để bằng nhau? | 5 quyển |
-| V.1 | So sánh: 3 phần 5 … 3 phần 7 | &gt; |
+| V.1 | So sánh: 3 phần 5 … 3 phần 7 | > |
 | V.2 | Tính: 3,25 × 4 | 13 |
 | V.3 | Tổ Một trồng 60 cây, tổ Hai bằng 2 phần 3 tổ Một. Tổ Hai trồng mấy cây? | 40 cây |
 | V.4 | Giá 100 000 đồng tăng 10% rồi giảm 10%. Giá cuối là bao nhiêu? | 99 000 đồng |

@@ -32,7 +32,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài A.1** — a) 8 phần 11 · b) 5 phần 4 · c) 1 phần 3 · d) 8 phần 3 · e) 9 phần 5 · f) 1 · g) 7 phần 6
 - **Bài A.2** — a) 9 983 · b) 832 506 · c) 3 076 · d) 431 307 · e) 506 940
-- **Bài A.3** — a) &lt; · b) &lt; · c) &gt; · d) &lt; · e) &lt; · f) &gt; · g) &lt;
+- **Bài A.3** — a) < · b) < · c) > · d) < · e) < · f) > · g) <
 - **Bài A.4** — a) 6 chữ số, tổng 17 · b) 6 chữ số, tổng 25 · c) 5 chữ số, tổng 23 · d) 6 chữ số, tổng 36 · e) 6 chữ số, tổng 19 · f) 6 chữ số, tổng 27
 - **Bài A.5** — a) 113 863 · b) 59 301 · c) 100 234 · d) 33 044 · e) 131 682 · f) 103 199
 
@@ -65,7 +65,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài E.1** — a) giới thiệu chương “Phân số: khái niệm đến bốn phép tính” và mục tiêu · b) trình bày sơ đồ tư duy chương · c) giảng một dạng bài kèm ví dụ mẫu · d) nêu lỗi hay mắc và cách phòng · e) ra một bài cho lớp làm và chữa nhanh · f) tự phân công, mỗi bạn ít nhất một phút
 - **Bài E.2** — a) “Hôm nay nhóm mình nói về Rút gọn phân số.” · b) Tử số và mẫu số có ước chung lớn hơn 1 · c) Tính chất cơ bản của phân số · d) Rút gọn 18 phần 24. → 3 phần 4 · e) Chỉ chia tử số hoặc chỉ chia mẫu số. · f) Tìm ngay ước chung lớn nhất để rút gọn một lần là xong.
 - **Bài E.3** — a) “Hôm nay nhóm mình nói về Đọc bảng số liệu thống kê.” · b) Đề cho bảng hoặc biểu đồ kèm nhiều câu hỏi · c) Thống kê mô tả sơ cấp, trung bình cộng, tỉ số phần trăm · d) Bảng: Toán 10, Văn 6, Anh 4. Trung bình mỗi môn bao nhiêu bạn? → 6,67 bạn · e) Đọc nhầm cột, hoặc quên một môn khi cộng tổng. · f) Tính tổng một lần rồi dùng lại cho mọi câu hỏi phần trăm.
-- **Bài E.4** — a) “Hôm nay nhóm mình nói về So sánh phân số.” · b) Hai phân số nối bởi dấu … · c) Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu · d) So sánh: 3 phần 5 … 3 phần 7 → &gt; · e) Thấy mẫu số lớn thì kết luận phân số lớn. · f) So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay.
+- **Bài E.4** — a) “Hôm nay nhóm mình nói về So sánh phân số.” · b) Hai phân số nối bởi dấu … · c) Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu · d) So sánh: 3 phần 5 … 3 phần 7 → > · e) Thấy mẫu số lớn thì kết luận phân số lớn. · f) So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay.
 - **Bài E.5** — a) “Hôm nay nhóm mình nói về Bốn phép tính với phân số.” · b) Biểu thức chỉ gồm phân số · c) Quy đồng, nhân chia phân số · d) Tính: 2 phần 3 + 1 phần 6 → 5 phần 6 · e) Quy đồng cả khi nhân, hoặc cộng thẳng tử với tử và mẫu với mẫu. · f) Rút gọn chéo trước khi nhân để số nhỏ, tính nhanh và ít sai.
 
 ---
@@ -234,7 +234,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 |---|---|---|---|---|---|---|
 | A.1 | Rút gọn phân số | Tính chất cơ bản của phân số | Tử số và mẫu số có ước chung lớn hơn 1 | Chia cả tử và mẫu cho ước chung | Tìm ngay ước chung lớn nhất để rút gọn một lần là xong. | 8 phần 11 · 5 phần 4 · 1 phần 3 · 8 phần 3… |
 | A.2 | Nhân, chia số tự nhiên | Kĩ thuật đặt tính nhân, chia | Yêu cầu “đặt tính rồi tính” với phép nhân, chia | Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ chữ số | Kiểm tra kết quả bằng phép tính ngược: thương × số chia = số bị chia. | 9 983 · 832 506 · 3 076 · 431 307… |
-| A.3 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | &lt; · &lt; · &gt; · &lt;… |
+| A.3 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | < · < · > · <… |
 | A.4 | Đếm chữ số, tính tổng chữ số | Cấu tạo số, tổng chữ số | Yêu cầu “có mấy chữ số”, “tổng các chữ số” | Tách lớp để đếm; cộng rời từng chữ số | Ghép cặp các chữ số cộng lại tròn 10 rồi cộng nhanh. | 6 chữ số, tổng 17 · 6 chữ số, tổng 25 · 5 chữ số, tổng 23 · 6 chữ số, tổng 36… |
 | A.5 | Cộng, trừ số tự nhiên | Kĩ thuật đặt tính, nhớ và mượn | Yêu cầu “đặt tính rồi tính” | Đặt tính thẳng hàng, tính từ hàng đơn vị | Làm tròn một số hạng để ước lượng trước, dùng kết quả ước lượng để phát hiện sai sót. | 113 863 · 59 301 · 100 234 · 33 044… |
 | B.1 | Kỹ năng trình bày | Chuẩn trình bày bài giải | Yêu cầu “trình bày lời giải” | Viết đủ bốn dòng | Viết câu lời giải trước, phép tính sau — không bao giờ ngược lại. | câu lời giải nêu rõ đang tìm đại lượng nào · phép tính, viết đủ dấu và đủ đơn vị · kết quả kèm đơn vị · câu đáp số… |
@@ -255,7 +255,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | E.1 | Kỹ năng thuyết trình theo nhóm | Hệ thống hoá và diễn đạt | Yêu cầu giảng lại chương theo nhóm | Chia kịch bản theo phút, phân công rõ người | Người giảng nhớ lâu hơn người nghe khoảng ba lần. | giới thiệu chương “Phân số: khái niệm đến bốn phép tính” và mục tiêu · trình bày sơ đồ tư duy chương · giảng một dạng bài kèm ví dụ mẫu · nêu lỗi hay mắc và cách phòng… |
 | E.2 | Rút gọn phân số | Tính chất cơ bản của phân số | Tử số và mẫu số có ước chung lớn hơn 1 | Chia cả tử và mẫu cho ước chung | Tìm ngay ước chung lớn nhất để rút gọn một lần là xong. | “Hôm nay nhóm mình nói về Rút gọn phân số.” · Tử số và mẫu số có ước chung lớn hơn 1 · Tính chất cơ bản của phân số · Rút gọn 18 phần 24. → 3 phần 4… |
 | E.3 | Đọc bảng số liệu thống kê | Thống kê mô tả sơ cấp, trung bình cộng, tỉ số phần trăm | Đề cho bảng hoặc biểu đồ kèm nhiều câu hỏi | Ghi lại số liệu, trả lời từng câu bằng công cụ tương ứng | Tính tổng một lần rồi dùng lại cho mọi câu hỏi phần trăm. | “Hôm nay nhóm mình nói về Đọc bảng số liệu thống kê.” · Đề cho bảng hoặc biểu đồ kèm nhiều câu hỏi · Thống kê mô tả sơ cấp, trung bình cộng, tỉ số phần trăm · Bảng: Toán 10, Văn 6, Anh 4. Trung bình mỗi môn bao nhiêu bạn? → 6,67 bạn… |
-| E.4 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | “Hôm nay nhóm mình nói về So sánh phân số.” · Hai phân số nối bởi dấu … · Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu · So sánh: 3 phần 5 … 3 phần 7 → &gt;… |
+| E.4 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | “Hôm nay nhóm mình nói về So sánh phân số.” · Hai phân số nối bởi dấu … · Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu · So sánh: 3 phần 5 … 3 phần 7 → >… |
 | E.5 | Bốn phép tính với phân số | Quy đồng, nhân chia phân số | Biểu thức chỉ gồm phân số | Chọn quy tắc theo phép tính, rút gọn cuối cùng | Rút gọn chéo trước khi nhân để số nhỏ, tính nhanh và ít sai. | “Hôm nay nhóm mình nói về Bốn phép tính với phân số.” · Biểu thức chỉ gồm phân số · Quy đồng, nhân chia phân số · Tính: 2 phần 3 + 1 phần 6 → 5 phần 6… |
 
 ---
@@ -366,7 +366,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 |---|---|---|
 | A.1 | Rút gọn 18 phần 24. | 3 phần 4 |
 | A.2 | Đặt tính rồi tính: 3 045 × 24 | 73 080 |
-| A.3 | So sánh: 3 phần 5 … 3 phần 7 | &gt; |
+| A.3 | So sánh: 3 phần 5 … 3 phần 7 | > |
 | A.4 | Số 40 506 có mấy chữ số và tổng các chữ số bằng bao nhiêu? | 5 chữ số, tổng 15 |
 | A.5 | Đặt tính rồi tính: 4 328 + 1 795 | 6 123 |
 | B.1 | Một lời giải đạt chuẩn GITA có mấy dòng bắt buộc? | 4 dòng |
@@ -380,14 +380,14 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | C.4 | Tính: 2 phần 3 + 1 phần 6 | 5 phần 6 |
 | C.5 | Bảng: Toán 10, Văn 6, Anh 4. Trung bình mỗi môn bao nhiêu bạn? | 6,67 bạn |
 | D.1 | Vẽ sơ đồ mà nhìn tài liệu thì mất tác dụng gì? | mất tác dụng kiểm tra trí nhớ |
-| D.2 | So sánh: 5 phần 6 … 7 phần 8 | &lt; |
+| D.2 | So sánh: 5 phần 6 … 7 phần 8 | < |
 | D.3 | Tính: (1 phần 2 + 1 phần 3) × 6 phần 5 | 1 |
 | D.4 | Tổ Một trồng 60 cây, tổ Hai bằng 2 phần 3 tổ Một. Tổ Hai trồng mấy cây? | 40 cây |
 | D.5 | Rút gọn 18 phần 24. | 3 phần 4 |
 | E.1 | Vì sao phải giảng lại cho bạn? | vì giảng được mới là hiểu thật |
 | E.2 | Rút gọn 18 phần 24. | 3 phần 4 |
 | E.3 | Bảng: Toán 10, Văn 6, Anh 4. Trung bình mỗi môn bao nhiêu bạn? | 6,67 bạn |
-| E.4 | So sánh: 3 phần 5 … 3 phần 7 | &gt; |
+| E.4 | So sánh: 3 phần 5 … 3 phần 7 | > |
 | E.5 | Tính: 2 phần 3 + 1 phần 6 | 5 phần 6 |
 
 ---

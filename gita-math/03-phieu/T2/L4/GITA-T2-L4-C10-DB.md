@@ -179,7 +179,7 @@ d) Tính tổng: 5 + 7 + 9 + … + 23
 
 ### Bài 2. (5 điểm) So sánh hai số đo khác đơn vị
 
-Điền dấu &lt;, &gt;, = thích hợp.
+Điền dấu <, >, = thích hợp.
 
 a) 40 dm … 7 579 mm
 b) 63 ha … 6 315 km²
@@ -404,7 +404,7 @@ f) Lỗi nào dễ mắc ở đề này?
 **Lỗi thường gặp:** Quên chia 2, kết quả gấp đôi đáp số đúng. Phòng: Kiểm tra bằng dãy ngắn: 1 + 2 + 3 = 6, công thức phải cho đúng 6.
 
 ### Bài C.2
-**Đáp số:** a) &lt; · b) &lt; · c) &lt; · d) &lt; · e) &gt; · f) &lt;
+**Đáp số:** a) < · b) < · c) < · d) < · e) > · f) <
 **Hướng giải:** Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.

@@ -31,7 +31,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần A**
 
 - **Bài A.1** — a) chữ số 7, giá trị 70 000 · b) chữ số 3, giá trị 3 000 · c) chữ số 5, giá trị 500 · d) chữ số 5, giá trị 50 · e) chữ số 3, giá trị 3
-- **Bài A.2** — a) &lt; · b) &gt; · c) &gt; · d) &gt; · e) &lt; · f) &lt; · g) &lt; · h) &lt;
+- **Bài A.2** — a) < · b) > · c) > · d) > · e) < · f) < · g) < · h) <
 - **Bài A.3** — a) 53 061 · b) 92 750 · c) số chẵn · d) 97 332
 - **Bài A.4** — a) 7 · b) 10 · c) 19 · d) 8 · e) 4 · f) 7
 - **Bài A.5** — a) 5 chữ số, tổng 16 · b) 5 chữ số, tổng 22 · c) 5 chữ số, tổng 21 · d) 5 chữ số, tổng 28 · e) 5 chữ số, tổng 14 · f) 5 chữ số, tổng 19
@@ -80,7 +80,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 *Điểm chốt:* Phân biệt **chữ số** (một kí hiệu) với **giá trị** của chữ số (chữ số nhân giá trị hàng).
 
-### Bài A.2 — Điền dấu &lt;, &gt;, = thích hợp
+### Bài A.2 — Điền dấu <, >, = thích hợp
 
 So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 
@@ -233,7 +233,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
 | A.1 | Xác định chữ số và giá trị chữ số theo hàng | Cấu tạo thập phân của số tự nhiên | Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” | Đánh số hàng từ phải sang trái rồi tra bảng hàng | Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị. | chữ số 7, giá trị 70 000 · chữ số 3, giá trị 3 000 · chữ số 5, giá trị 500 · chữ số 5, giá trị 50… |
-| A.2 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | &lt; · &gt; · &gt; · &gt;… |
+| A.2 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | < · > · > · >… |
 | A.3 | Nhận biết chẵn – lẻ và số liền kề | Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2 | Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” | Xét chữ số tận cùng; cộng hoặc trừ 1 đơn vị | Che hết các chữ số, chỉ để lộ chữ số cuối. | 53 061 · 92 750 · số chẵn · 97 332 |
 | A.4 | Tìm một phần mấy của một số | Phân số dạng một phần mấy | Cụm “một phần mấy của …” | Chia số đó cho mẫu số | Kết quả luôn nhỏ hơn số ban đầu — dùng để kiểm tra ngay. | 7 · 10 · 19 · 8… |
 | A.5 | Đếm chữ số, tính tổng chữ số | Cấu tạo số, tổng chữ số | Yêu cầu “có mấy chữ số”, “tổng các chữ số” | Tách lớp để đếm; cộng rời từng chữ số | Ghép cặp các chữ số cộng lại tròn 10 rồi cộng nhanh. | 5 chữ số, tổng 16 · 5 chữ số, tổng 22 · 5 chữ số, tổng 21 · 5 chữ số, tổng 28… |
@@ -365,7 +365,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | Bài | Đề tương tự | Đáp số |
 |---|---|---|
 | A.1 | Chữ số hàng chục của số 73 553 có giá trị bao nhiêu? | 50 |
-| A.2 | Điền dấu: 79 596 … 79 597 | &lt; |
+| A.2 | Điền dấu: 79 596 … 79 597 | < |
 | A.3 | Số liền sau của 53 062 là số nào? | 53 063 |
 | A.4 | Tìm 1 phần 4 của 20. | 5 |
 | A.5 | Số 40 506 có mấy chữ số và tổng các chữ số bằng bao nhiêu? | 5 chữ số, tổng 15 |

@@ -210,7 +210,7 @@ e) Tích 1 385 × 8 833 có chữ số tận cùng là chữ số nào?
 
 ### Bài 5. (5 điểm) So sánh hai biểu thức mà không cần tính
 
-Điền dấu &lt;, &gt;, = và giải thích ngắn.
+Điền dấu <, >, = và giải thích ngắn.
 
 a) 640 × 21 … 240 × 21
 b) 798 + 22 … 771 + 22
@@ -432,7 +432,7 @@ f) Cột 6 — Kết quả?
 **Lỗi thường gặp:** Tính trọn cả phép tính, vừa lâu vừa dễ sai. Phòng: Che phần đầu của hai số, chỉ để lộ chữ số cuối cùng.
 
 ### Bài III.5
-**Đáp số:** a) &gt; · b) &gt; · c) &gt; · d) &gt;
+**Đáp số:** a) > · b) > · c) > · d) >
 **Hướng giải:** Khi hai biểu thức có phần giống nhau, chỉ cần so sánh phần khác nhau: cùng cộng thêm một số thì số nào lớn hơn vẫn lớn hơn; cùng nhân với một số khác 0 cũng vậy.
 **Nhãn tư duy:** TD5, TD2. Điểm chốt: Che phần **giống nhau** đi, chỉ so phần khác nhau.
 **Lỗi thường gặp:** Tính hết cả hai vế, vừa lâu vừa dễ sai. Phòng: Dùng bút gạch bỏ phần giống nhau ở hai vế trước khi so sánh.

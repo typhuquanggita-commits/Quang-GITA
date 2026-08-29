@@ -48,7 +48,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài C.1** — a) không, vì hai câu phủ định nhau · b) không, vì chúng phủ định nhau · c) đúng một bạn · d) nói dối · e) Minh chính là người làm vỡ lọ hoa · f) Minh
 - **Bài C.2** — a) thư viện: 418 kg, trang trại: 294 kg · b) 4B: 239 quyển, 3B: 197 quyển · c) nhóm Hoa Phượng: 354 cây, nhóm Sao Mai: 336 cây · d) đội Hai: 193 cây, nhóm Sao Mai: 131 cây · e) 5B: 311 quyển, 3B: 297 quyển · f) xưởng: 95 kg, kho B: 59 kg
-- **Bài C.3** — a) &lt; · b) &lt; · c) &lt; · d) &gt; · e) &lt; · f) &lt;
+- **Bài C.3** — a) < · b) < · c) < · d) > · e) < · f) <
 - **Bài C.4** — a) 5 ngày · b) 18 ngày · c) 8 ngày · d) 3 ngày
 - **Bài C.5** — a) 6 cm² · b) 130 cm² · c) 360 cm² · d) 450 cm² · e) 210 cm² · f) 152 cm²
 
@@ -56,7 +56,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài D.1** — a) 93 · b) 307 · c) 17 · d) 127 · e) 128
 - **Bài D.2** — a) x = 22 · b) x = 104 · c) x = 24 · d) x = 95 · e) x = 19
-- **Bài D.3** — a) &gt; · b) &gt; · c) &lt; · d) &lt; · e) &gt;
+- **Bài D.3** — a) > · b) > · c) < · d) < · e) >
 - **Bài D.4** — a) 950 · b) 24 950 · c) 210 · d) 2 550 · e) 155
 - **Bài D.5** — a) 245 · b) 862 · c) 9 · d) 77 · e) không · f) 212 905
 
@@ -244,12 +244,12 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | B.5 | Tính nhanh tổng nhiều số hạng | Tính chất giao hoán, kết hợp của phép cộng | Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm | Ghép cặp tròn rồi cộng | Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10. | 68 · 240 · 459 · 181… |
 | C.1 | Suy luận nói thật – nói dối | Logic mệnh đề sơ cấp, phương pháp loại trừ | “Chỉ một người nói thật”, các câu nói mâu thuẫn nhau | Tìm cặp mâu thuẫn, khoá số câu đúng, suy ra phần còn lại | Cặp mâu thuẫn đã dùng hết “suất” nói thật, nên mọi câu ngoài cặp đều sai. | không, vì hai câu phủ định nhau · không, vì chúng phủ định nhau · đúng một bạn · nói dối… |
 | C.2 | Tổng – hiệu có lời văn | Công thức tổng – hiệu, sơ đồ đoạn thẳng | “Có tất cả …” và “… nhiều hơn … là …” | Đọc vị tổng và hiệu → sơ đồ → công thức | Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần. | thư viện: 418 kg, trang trại: 294 kg · 4B: 239 quyển, 3B: 197 quyển · nhóm Hoa Phượng: 354 cây, nhóm Sao Mai: 336 cây · đội Hai: 193 cây, nhóm Sao Mai: 131 cây… |
-| C.3 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &lt; · &lt; · &lt; · &gt;… |
+| C.3 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | < · < · < · >… |
 | C.4 | Tỉ lệ nghịch | Đại lượng tỉ lệ nghịch, tổng số ngày công | Số người tăng thì thời gian giảm | Quy về tổng số ngày công rồi chia | Số người gấp đôi thì số ngày giảm một nửa — nhẩm được ngay khi tỉ số đẹp. | 5 ngày · 18 ngày · 8 ngày · 3 ngày |
 | C.5 | Diện tích các hình phẳng cơ bản | Công thức diện tích hình bình hành, hình thoi, hình tam giác | Đề cho đáy và chiều cao, hoặc hai đường chéo | Nhận dạng hình rồi chọn công thức | Tam giác bằng nửa hình bình hành cùng đáy cùng chiều cao. | 6 cm² · 130 cm² · 360 cm² · 450 cm²… |
 | D.1 | Dãy số tự nhiên liên tiếp có tổng cho trước | Trung bình cộng, dãy cách đều | Cụm “… số tự nhiên liên tiếp có tổng bằng …” | Tìm số giữa bằng phép chia rồi suy ra hai đầu dãy | Tổng của n số liên tiếp (n lẻ) luôn chia hết cho n. | 93 · 307 · 17 · 127… |
 | D.2 | Tìm x nhiều bước có ngoặc | Thứ tự thực hiện phép tính, quan hệ thành phần | x nằm trong ngoặc, ngoài ngoặc còn phép tính khác | Bóc lớp từ ngoài vào trong | Thay x tìm được vào đề, tính một lượt để thử lại. | x = 22 · x = 104 · x = 24 · x = 95… |
-| D.3 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | &gt; · &gt; · &lt; · &lt;… |
+| D.3 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | > · > · < · <… |
 | D.4 | Tổng dãy số cách đều | Công thức tổng dãy cách đều | Dãy cộng có dấu … và các số cách đều nhau | Đếm số số hạng rồi áp công thức tổng | Ghép cặp đầu – cuối: mọi cặp đều có cùng tổng, chỉ cần nhân với số cặp. | 950 · 24 950 · 210 · 2 550… |
 | D.5 | Định vị số hạng, kiểm tra một số có thuộc dãy | Dãy cách đều, phép chia có dư | Câu hỏi “là số hạng thứ mấy”, “có thuộc dãy không” | (số − đầu) : khoảng cách, xét dư rồi cộng 1 | Mọi số hạng của dãy đều có cùng số dư khi chia cho khoảng cách. | 245 · 862 · 9 · 77… |
 | E.1 | Tính nhanh tổng nhiều số hạng | Tính chất giao hoán, kết hợp của phép cộng | Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm | Ghép cặp tròn rồi cộng | Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10. | Tính nhanh tổng nhiều số hạng · Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm · Tính chất giao hoán, kết hợp của phép cộng · Ghép cặp tròn rồi cộng… |
@@ -376,12 +376,12 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | B.5 | Tính nhanh: 37 + 145 + 63 | 245 |
 | C.1 | An nói “tôi không làm”, Bình nói “Chi làm”, Chi nói “Bình nói dối”, chỉ một người nói thật. Ai làm? | An |
 | C.2 | Hai lớp có 90 quyển sách, lớp A nhiều hơn lớp B 10 quyển. Mỗi lớp có mấy quyển? | 50 và 40 |
-| C.3 | So sánh: 3 kg … 2 500 g | &gt; |
+| C.3 | So sánh: 3 kg … 2 500 g | > |
 | C.4 | 6 người làm xong trong 8 ngày. 12 người làm xong trong mấy ngày? | 4 ngày |
 | C.5 | Tam giác đáy 10 cm, cao 6 cm. Diện tích bằng bao nhiêu? | 30 cm² |
 | D.1 | Tổng của 5 số tự nhiên liên tiếp bằng 100. Số bé nhất là số nào? | 18 |
 | D.2 | Tìm x: (x + 12) × 5 − 8 = 132 | x = 16 |
-| D.3 | So sánh: 234 × 7 … 234 × 8 | &lt; |
+| D.3 | So sánh: 234 × 7 … 234 × 8 | < |
 | D.4 | Tính nhanh: 1 + 2 + 3 + … + 100 | 5 050 |
 | D.5 | Dãy 2, 7, 12, … Số 47 là số hạng thứ mấy? | 10 |
 | E.1 | Tính nhanh: 37 + 145 + 63 | 245 |

@@ -32,7 +32,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài A.1** — a) 465 447 · b) 934 646 · c) 13 835 · d) 507 087 · e) 811 796
 - **Bài A.2** — a) chữ số 2, giá trị 200 000 · b) chữ số 6, giá trị 60 000 · c) chữ số 5, giá trị 5 000 · d) chữ số 9, giá trị 900 · e) chữ số 9, giá trị 90
-- **Bài A.3** — a) &lt; · b) &lt; · c) &gt; · d) &lt; · e) &lt; · f) &lt; · g) &gt; · h) &lt;
+- **Bài A.3** — a) < · b) < · c) > · d) < · e) < · f) < · g) > · h) <
 - **Bài A.4** — a) 984 500 · b) 58 810 · c) 847 600 · d) 792 000 · e) 836 380 · f) 466 980
 - **Bài A.5** — a) 6 chữ số, tổng 19 · b) 6 chữ số, tổng 26 · c) 6 chữ số, tổng 26 · d) 6 chữ số, tổng 27 · e) 5 chữ số, tổng 13 · f) 6 chữ số, tổng 38
 
@@ -86,7 +86,7 @@ Mỗi số hạng cho biết một hàng. Xếp các chữ số vào đúng hàn
 
 *Điểm chốt:* Phân biệt **chữ số** (một kí hiệu) với **giá trị** của chữ số (chữ số nhân giá trị hàng).
 
-### Bài A.3 — Điền dấu &lt;, &gt;, = thích hợp
+### Bài A.3 — Điền dấu <, >, = thích hợp
 
 So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 
@@ -234,7 +234,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 |---|---|---|---|---|---|---|
 | A.1 | Viết số từ dạng tổng theo hàng | Cấu tạo thập phân của số tự nhiên | Tổng gồm các số tròn chục, tròn trăm, tròn nghìn… | Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết | Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số. | 465 447 · 934 646 · 13 835 · 507 087… |
 | A.2 | Xác định chữ số và giá trị chữ số theo hàng | Cấu tạo thập phân của số tự nhiên | Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” | Đánh số hàng từ phải sang trái rồi tra bảng hàng | Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị. | chữ số 2, giá trị 200 000 · chữ số 6, giá trị 60 000 · chữ số 5, giá trị 5 000 · chữ số 9, giá trị 900… |
-| A.3 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | &lt; · &lt; · &gt; · &lt;… |
+| A.3 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | < · < · > · <… |
 | A.4 | Làm tròn số tự nhiên | Quy tắc làm tròn, giá trị hàng | Cụm từ “làm tròn đến hàng …” | Gạch ngăn hàng → xét chữ số liền sau → giữ nguyên hoặc thêm 1 | Che toàn bộ phần đuôi sau nét gạch, chỉ để lộ đúng một chữ số. | 984 500 · 58 810 · 847 600 · 792 000… |
 | A.5 | Đếm chữ số, tính tổng chữ số | Cấu tạo số, tổng chữ số | Yêu cầu “có mấy chữ số”, “tổng các chữ số” | Tách lớp để đếm; cộng rời từng chữ số | Ghép cặp các chữ số cộng lại tròn 10 rồi cộng nhanh. | 6 chữ số, tổng 19 · 6 chữ số, tổng 26 · 6 chữ số, tổng 26 · 6 chữ số, tổng 27… |
 | B.1 | Định vị chương trong hệ thống | Tên chương, nhóm chuyên đề, số dạng bài | Phần đầu phiếu ghi rõ tên cụm và nhóm chuyên đề | Đọc phần đầu phiếu rồi trả lời theo đúng tên gọi | Ghi tên chương ra góc vở, mỗi lần mở vở là đọc lại một lần. | Số chia hết, số dư và số học dạng đề thi vào lớp 6 · A — Số học & Cấu tạo số · 4 · ở mọi bài thuộc số học & cấu tạo số, vì các chương sau đều dùng lại nền này… |
@@ -366,7 +366,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 |---|---|---|
 | A.1 | Viết số gồm tổng: 30 000 + 400 + 7 | 30 407 |
 | A.2 | Chữ số hàng chục của số 265 994 có giá trị bao nhiêu? | 90 |
-| A.3 | Điền dấu: 754 824 … 754 825 | &lt; |
+| A.3 | Điền dấu: 754 824 … 754 825 | < |
 | A.4 | Làm tròn 4 762 đến hàng trăm. | 4 800 |
 | A.5 | Số 40 506 có mấy chữ số và tổng các chữ số bằng bao nhiêu? | 5 chữ số, tổng 15 |
 | B.1 | Chương “Số chia hết, số dư và số học dạng đề thi vào lớp 6” thuộc nhóm chuyên đề nào? | A — Số học & Cấu tạo số |

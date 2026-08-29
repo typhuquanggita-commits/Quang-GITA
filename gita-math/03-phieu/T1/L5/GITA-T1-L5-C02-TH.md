@@ -157,7 +157,7 @@ d) Hình tam giác có đáy 12 cm, chiều cao 25 cm. Tính diện tích.
 
 ### Bài 5. (4 điểm) So sánh hai số đo khác đơn vị
 
-Điền dấu &lt;, &gt;, = thích hợp.
+Điền dấu <, >, = thích hợp.
 
 a) 66 dam … 3 582 hm
 b) 82 ha … 6 024 dm²
@@ -338,7 +338,7 @@ d) 7 người làm xong một công việc trong 18 ngày. Nếu có thêm 7 ng�
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài I.1
-**Đáp số:** a) 0,1 · b) 4 · c) &gt; · d) 9 · e) &gt;
+**Đáp số:** a) 0,1 · b) 4 · c) > · d) 9 · e) >
 **Hướng giải:** Sau dấu phẩy lần lượt là hàng phần mười, phần trăm, phần nghìn. So sánh số thập phân: so phần nguyên trước; phần nguyên bằng nhau thì so lần lượt hàng phần mười, phần trăm, phần nghìn. Phân số có mẫu là 10, 100, 1 000 đổi được thẳng sang số thập phân.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: So sánh theo **hàng**, không so theo số chữ số sau dấu phẩy.
 **Lỗi thường gặp:** Cho rằng số có nhiều chữ số sau dấu phẩy hơn thì lớn hơn. Phòng: Viết thêm chữ số 0 vào cuối để hai số có cùng số chữ số thập phân rồi mới so.
@@ -392,7 +392,7 @@ d) 7 người làm xong một công việc trong 18 ngày. Nếu có thêm 7 ng�
 **Lỗi thường gặp:** Chia 2 cho hình bình hành, hoặc quên chia 2 cho hình tam giác. Phòng: Nhớ theo cặp: bình hành ↔ chữ nhật (không chia); tam giác ↔ nửa bình hành (chia 2).
 
 ### Bài II.5
-**Đáp số:** a) &lt; · b) &gt; · c) &lt; · d) &gt; · e) &gt; · f) &lt;
+**Đáp số:** a) < · b) > · c) < · d) > · e) > · f) <
 **Hướng giải:** Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.

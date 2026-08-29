@@ -93,7 +93,7 @@ e) Hình thang có đáy lớn 25 cm, đáy bé 12 cm, chiều cao 8 cm. Tính d
 
 ### Bài 5. (4 điểm) So sánh hai số đo khác đơn vị
 
-Điền dấu &lt;, &gt;, = thích hợp.
+Điền dấu <, >, = thích hợp.
 
 a) 75 yến … 2 745 hg
 b) 53 km … 3 487 hm
@@ -322,7 +322,7 @@ f) Cột 6 — Kết quả?
 
 ### Bài 5. (2 điểm) Phản biện đề số 5
 
-**Đề:** Điền dấu &lt;, &gt;, = thích hợp. 26 hg … 7 193 yến
+**Đề:** Điền dấu <, >, = thích hợp. 26 hg … 7 193 yến
 
 Hai bạn thi đấu: một bạn trình bày lời giải, bạn kia phản biện bằng bảng phân tích sáu cột.
 
@@ -364,7 +364,7 @@ f) Cột 6 — Kết quả?
 **Lỗi thường gặp:** Nhân riêng từng đáy với chiều cao rồi cộng, quên chia 2. Phòng: Viết công thức đầy đủ ra trước khi thay số.
 
 ### Bài I.5
-**Đáp số:** a) &gt; · b) &lt; · c) &gt; · d) &lt;
+**Đáp số:** a) > · b) < · c) > · d) <
 **Hướng giải:** Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.
@@ -493,7 +493,7 @@ f) Cột 6 — Kết quả?
 **Gợi ý 3 tầng:** (1) Điền cột 1 và cột 3 trước — đó là hai cột dễ nhất. — (2) Cột 4 và cột 5 khác nhau: một cột nói cách làm, một cột nói lối tắt. — (3) Cột 6 chỉ ghi kết quả, không ghi lời giải.
 
 ### Bài V.5
-**Đáp số:** a) So sánh số đo đại lượng · b) Bảng đơn vị đo, so sánh số tự nhiên · c) Hai vế có đơn vị khác nhau · d) Đổi về cùng đơn vị rồi so sánh · e) Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. · f) &lt; · &gt; · &lt; · &gt;…
+**Đáp số:** a) So sánh số đo đại lượng · b) Bảng đơn vị đo, so sánh số tự nhiên · c) Hai vế có đơn vị khác nhau · d) Đổi về cùng đơn vị rồi so sánh · e) Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. · f) < · > · < · >…
 **Hướng giải:** Thi đấu phản biện: bạn trình bày nói lời giải, bạn phản biện phải chỉ ra được ít nhất một cột trong bảng mà lời giải chưa nói tới. Ai chỉ ra được nhiều hơn thì thắng.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.

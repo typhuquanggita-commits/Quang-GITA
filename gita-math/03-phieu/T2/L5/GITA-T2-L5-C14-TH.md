@@ -133,7 +133,7 @@ f) 88,49 + 14,6
 
 ### Bài 3. (4 điểm) So sánh hai số đo khác đơn vị
 
-Điền dấu &lt;, &gt;, = thích hợp.
+Điền dấu <, >, = thích hợp.
 
 a) 54 tấn … 8 737 hg
 b) 16 dm … 337 km
@@ -373,7 +373,7 @@ e) Một người đi 3 giờ đầu với vận tốc 12 km/giờ, 2 giờ sau 
 **Lỗi thường gặp:** Nhân xong đặt dấu phẩy thẳng cột như phép cộng. Phòng: Đếm số chữ số sau dấu phẩy ngay khi viết đề bài.
 
 ### Bài II.3
-**Đáp số:** a) &gt; · b) &lt; · c) &gt; · d) &gt; · e) &lt;
+**Đáp số:** a) > · b) < · c) > · d) > · e) <
 **Hướng giải:** Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.

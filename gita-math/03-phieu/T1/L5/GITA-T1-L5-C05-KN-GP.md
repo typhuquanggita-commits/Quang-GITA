@@ -32,8 +32,8 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài A.1** — a) 1 · b) 7 phần 4 · c) 1 phần 6 · d) 8 phần 7 · e) 4 phần 11 · f) 4 phần 3 · g) 3 phần 11
 - **Bài A.2** — a) 4 646 556 · b) 6 692 066 · c) 3 890 869 · d) 7 925 596 · e) 8 699 748 · f) 2 591 599
-- **Bài A.3** — a) &lt; · b) &gt; · c) &gt; · d) &gt; · e) &gt; · f) &gt; · g) &lt; · h) &gt;
-- **Bài A.4** — a) 3 · b) &gt; · c) 0,08 · d) &gt; · e) 0,725
+- **Bài A.3** — a) < · b) > · c) > · d) > · e) > · f) > · g) < · h) >
+- **Bài A.4** — a) 3 · b) > · c) 0,08 · d) > · e) 0,725
 - **Bài A.5** — a) 22 949 136 · b) 40 747 797 · c) 10 646 · d) 32 620 680 · e) 30 200 092 · f) 21 317
 
 **Phần B**
@@ -234,8 +234,8 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 |---|---|---|---|---|---|---|
 | A.1 | Rút gọn phân số | Tính chất cơ bản của phân số | Tử số và mẫu số có ước chung lớn hơn 1 | Chia cả tử và mẫu cho ước chung | Tìm ngay ước chung lớn nhất để rút gọn một lần là xong. | 1 · 7 phần 4 · 1 phần 6 · 8 phần 7… |
 | A.2 | Viết số từ dạng tổng theo hàng | Cấu tạo thập phân của số tự nhiên | Tổng gồm các số tròn chục, tròn trăm, tròn nghìn… | Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết | Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số. | 4 646 556 · 6 692 066 · 3 890 869 · 7 925 596… |
-| A.3 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | &lt; · &gt; · &gt; · &gt;… |
-| A.4 | Số thập phân — hàng, so sánh, chuyển đổi | Cấu tạo số thập phân, quan hệ phân số – số thập phân | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 | Xét theo hàng từ trái sang phải | Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. | 3 · &gt; · 0,08 · &gt;… |
+| A.3 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | < · > · > · >… |
+| A.4 | Số thập phân — hàng, so sánh, chuyển đổi | Cấu tạo số thập phân, quan hệ phân số – số thập phân | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 | Xét theo hàng từ trái sang phải | Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. | 3 · > · 0,08 · >… |
 | A.5 | Nhân, chia số tự nhiên | Kĩ thuật đặt tính nhân, chia | Yêu cầu “đặt tính rồi tính” với phép nhân, chia | Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ chữ số | Kiểm tra kết quả bằng phép tính ngược: thương × số chia = số bị chia. | 22 949 136 · 40 747 797 · 10 646 · 32 620 680… |
 | B.1 | Kỹ năng trình bày | Chuẩn trình bày bài giải | Yêu cầu “trình bày lời giải” | Viết đủ bốn dòng | Viết câu lời giải trước, phép tính sau — không bao giờ ngược lại. | câu lời giải nêu rõ đang tìm đại lượng nào · phép tính, viết đủ dấu và đủ đơn vị · kết quả kèm đơn vị · câu đáp số… |
 | B.2 | Kỹ năng viết câu lời giải | Chuẩn trình bày | Đề hỏi gì thì câu lời giải nhắc lại điều đó | Lấy cụm từ trong câu hỏi làm câu lời giải | Sao chép cụm từ trong câu hỏi là cách viết câu lời giải nhanh và chắc nhất. | “Ba dạng toán tỉ số phần trăm là:” · “Bốn phép tính với phân số là:” · “Rút gọn phân số là:” · “Biểu thức phân số nhiều phép tính là:”… |
@@ -366,8 +366,8 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 |---|---|---|
 | A.1 | Rút gọn 18 phần 24. | 3 phần 4 |
 | A.2 | Viết số gồm tổng: 30 000 + 400 + 7 | 30 407 |
-| A.3 | So sánh: 3 phần 5 … 3 phần 7 | &gt; |
-| A.4 | So sánh: 0,5 … 0,45 | &gt; |
+| A.3 | So sánh: 3 phần 5 … 3 phần 7 | > |
+| A.4 | So sánh: 0,5 … 0,45 | > |
 | A.5 | Đặt tính rồi tính: 3 045 × 24 | 73 080 |
 | B.1 | Một lời giải đạt chuẩn GITA có mấy dòng bắt buộc? | 4 dòng |
 | B.2 | Đề hỏi “mỗi tổ trồng mấy cây” thì câu lời giải viết thế nào? | “Số cây mỗi tổ trồng được là:” |
@@ -378,11 +378,11 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | C.2 | Tìm 25% của 200. | 50 |
 | C.3 | Tính: (1 phần 2 + 1 phần 3) × 6 phần 5 | 1 |
 | C.4 | Lớp có 40 học sinh, 10 em giỏi. Học sinh giỏi chiếm bao nhiêu phần trăm? | 25% |
-| C.5 | So sánh: 5 phần 6 … 7 phần 8 | &lt; |
+| C.5 | So sánh: 5 phần 6 … 7 phần 8 | < |
 | D.1 | Vẽ sơ đồ mà nhìn tài liệu thì mất tác dụng gì? | mất tác dụng kiểm tra trí nhớ |
 | D.2 | Tính: 2 phần 3 + 1 phần 6 | 5 phần 6 |
 | D.3 | Tính: (1 phần 2 + 1 phần 3) × 6 phần 5 | 1 |
-| D.4 | So sánh: 3 phần 5 … 3 phần 7 | &gt; |
+| D.4 | So sánh: 3 phần 5 … 3 phần 7 | > |
 | D.5 | Tổ Một trồng 60 cây, tổ Hai bằng 2 phần 3 tổ Một. Tổ Hai trồng mấy cây? | 40 cây |
 | E.1 | Vì sao phải giảng lại cho bạn? | vì giảng được mới là hiểu thật |
 | E.2 | Tìm 25% của 200. | 50 |

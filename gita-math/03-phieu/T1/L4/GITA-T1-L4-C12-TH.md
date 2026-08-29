@@ -61,7 +61,7 @@ c) 9 930 × 95
 d) 349 286 : 61
 e) 5 311 × 56
 
-### Bài 2. (3 điểm) Điền dấu &lt;, &gt;, = thích hợp
+### Bài 2. (3 điểm) Điền dấu <, >, = thích hợp
 
 Điền dấu thích hợp vào chỗ chấm.
 
@@ -202,7 +202,7 @@ d) Tích 2 793 × 9 510 có chữ số tận cùng là chữ số nào?
 
 ### Bài 4. (5 điểm) So sánh hai biểu thức mà không cần tính
 
-Điền dấu &lt;, &gt;, = và giải thích ngắn.
+Điền dấu <, >, = và giải thích ngắn.
 
 a) 823 × 17 … 823 × 18
 b) 863 × 13 … 863 × 14
@@ -343,7 +343,7 @@ f) Có 4 học sinh sinh trong 3 tháng khác nhau. Chứng tỏ rằng có ít 
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
 
 ### Bài I.2
-**Đáp số:** a) &gt; · b) &gt; · c) &gt; · d) &gt; · e) &lt; · f) &gt; · g) &lt;
+**Đáp số:** a) > · b) > · c) > · d) > · e) < · f) > · g) <
 **Hướng giải:** So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Đếm số chữ số **trước**, chỉ khi bằng nhau mới so từng hàng.
 **Lỗi thường gặp:** So từ hàng đơn vị (phải sang trái) nên kết luận sai. Phòng: Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái.
@@ -415,7 +415,7 @@ f) Có 4 học sinh sinh trong 3 tháng khác nhau. Chứng tỏ rằng có ít 
 **Lỗi thường gặp:** Tính trọn cả phép tính, vừa lâu vừa dễ sai. Phòng: Che phần đầu của hai số, chỉ để lộ chữ số cuối cùng.
 
 ### Bài III.4
-**Đáp số:** a) &lt; · b) &lt; · c) &lt; · d) &lt; · e) &gt;
+**Đáp số:** a) < · b) < · c) < · d) < · e) >
 **Hướng giải:** Khi hai biểu thức có phần giống nhau, chỉ cần so sánh phần khác nhau: cùng cộng thêm một số thì số nào lớn hơn vẫn lớn hơn; cùng nhân với một số khác 0 cũng vậy.
 **Nhãn tư duy:** TD5, TD2. Điểm chốt: Che phần **giống nhau** đi, chỉ so phần khác nhau.
 **Lỗi thường gặp:** Tính hết cả hai vế, vừa lâu vừa dễ sai. Phòng: Dùng bút gạch bỏ phần giống nhau ở hai vế trước khi so sánh.
@@ -462,7 +462,7 @@ f) Có 4 học sinh sinh trong 3 tháng khác nhau. Chứng tỏ rằng có ít 
 **Gợi ý 3 tầng:** (1) Hiện tại hai bên hơn kém nhau bao nhiêu? — (2) Chuyển 1 quyển thì hiệu giảm mấy quyển? — (3) Muốn hiệu về 0 thì phải chuyển bao nhiêu?
 
 ### Bài V.1
-**Đáp số:** a) &lt; · b) 64 · c) 121 · d) &lt; · e) &lt; · f) 400
+**Đáp số:** a) < · b) 64 · c) 121 · d) < · e) < · f) 400
 **Hướng giải:** Khi hai tích có các thừa số gần nhau, viết chúng theo cùng một số gốc rồi so phần chênh lệch. Khi hai tích cùng một thừa số, hiệu của chúng bằng thừa số chung nhân với hiệu hai thừa số kia.
 **Nhãn tư duy:** TD5, TD6. Điểm chốt: Đưa mọi số về **cùng một số gốc** rồi mới so hoặc trừ.
 **Lỗi thường gặp:** Nhân hết ra rồi mới so sánh — số lớn, dễ sai và mất thời gian. Phòng: Viết mỗi thừa số dưới dạng “số gốc cộng hoặc trừ mấy đơn vị”.
@@ -476,7 +476,7 @@ f) Có 4 học sinh sinh trong 3 tháng khác nhau. Chứng tỏ rằng có ít 
 **Gợi ý 3 tầng:** (1) Dãy này có bao nhiêu số hạng? — (2) Đây là dãy số lẻ, số chẵn, hay số tự nhiên liên tiếp? — (3) Chọn đúng công thức tương ứng.
 
 ### Bài V.3
-**Đáp số:** a) &lt; · b) &gt; · c) &gt; · d) &lt;
+**Đáp số:** a) < · b) > · c) > · d) <
 **Hướng giải:** **Phần bù tới 1:** hai phân số đều thiếu một chút nữa thì bằng 1; phân số nào có phần bù **bé hơn** thì lớn hơn. **Phân số trung gian:** chọn một phân số dễ so (thường là 1 phần 2 hoặc 1 phần 3) rồi so mỗi phân số với nó.
 **Nhãn tư duy:** TD6, TD5. Điểm chốt: Phần bù **bé hơn** nghĩa là phân số **lớn hơn** — dễ nhớ nhầm chiều.
 **Lỗi thường gặp:** So phần bù rồi kết luận cùng chiều với phần bù. Phòng: Nghĩ tới chiếc bánh: thiếu ít hơn thì phần đang có nhiều hơn.

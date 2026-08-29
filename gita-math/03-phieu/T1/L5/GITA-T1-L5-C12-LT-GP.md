@@ -30,10 +30,10 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần A**
 
-- **Bài A.1** — a) 0,386 · b) &gt; · c) 1 · d) 6 · e) 0,08 · f) &lt; · g) 0,916 · h) 7
+- **Bài A.1** — a) 0,386 · b) > · c) 1 · d) 6 · e) 0,08 · f) < · g) 0,916 · h) 7
 - **Bài A.2** — a) 2 659 081 · b) 7 240 571 · c) 6 203 153 · d) 7 864 293 · e) 473 596
 - **Bài A.3** — a) 4 phần 5 · b) 1 phần 2 · c) 8 phần 5 · d) 7 phần 12 · e) 5 phần 3 · f) 1 phần 3 · g) 1 phần 12 · h) 7 phần 12
-- **Bài A.4** — a) &gt; · b) &lt; · c) &gt; · d) &lt; · e) &lt; · f) &gt; · g) &lt;
+- **Bài A.4** — a) > · b) < · c) > · d) < · e) < · f) > · g) <
 - **Bài A.5** — a) 1 250 · b) 134 · c) 1 170 · d) 204 · e) 25 · f) 59
 
 **Phần B**
@@ -54,10 +54,10 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần D**
 
-- **Bài D.1** — a) Cấu tạo số thập phân, quan hệ phân số – số thập phân · b) Số thập phân — hàng, so sánh, chuyển đổi · c) Số có dấu phẩy; phân số mẫu 10, 100, 1 000 · d) Xét theo hàng từ trái sang phải · e) Cho rằng số có nhiều chữ số sau dấu phẩy hơn thì lớn hơn. · f) &gt;
+- **Bài D.1** — a) Cấu tạo số thập phân, quan hệ phân số – số thập phân · b) Số thập phân — hàng, so sánh, chuyển đổi · c) Số có dấu phẩy; phân số mẫu 10, 100, 1 000 · d) Xét theo hàng từ trái sang phải · e) Cho rằng số có nhiều chữ số sau dấu phẩy hơn thì lớn hơn. · f) >
 - **Bài D.2** — a) Nhân số tự nhiên với phân số · b) Tìm phân số của một số · c) Cụm “bằng … của …” · d) Chia theo mẫu số rồi nhân theo tử số · e) Nhân phân số với đại lượng khác, không phải đại lượng đề chỉ định. · f) 40 cây
 - **Bài D.3** — a) Tỉ số phần trăm · b) Ba dạng toán tỉ số phần trăm · c) Kí hiệu %, cụm “… % của …” · d) Xác định đại lượng ứng với 100% rồi chọn dạng · e) Nhầm dạng 2 với dạng 3 nên nhân thay vì chia. · f) 50
-- **Bài D.4** — a) Phần bù tới 1, phân số trung gian · b) So sánh phân số bằng kĩ thuật đặc biệt · c) Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 · d) So phần bù; hoặc chèn phân số trung gian · e) So phần bù rồi kết luận cùng chiều với phần bù. · f) &lt;
+- **Bài D.4** — a) Phần bù tới 1, phân số trung gian · b) So sánh phân số bằng kĩ thuật đặc biệt · c) Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 · d) So phần bù; hoặc chèn phân số trung gian · e) So phần bù rồi kết luận cùng chiều với phần bù. · f) <
 - **Bài D.5** — a) Kĩ thuật tính với số thập phân · b) Bốn phép tính với số thập phân · c) Các số có dấu phẩy · d) Chọn quy tắc đặt dấu phẩy theo phép tính · e) Nhân xong đặt dấu phẩy thẳng cột như phép cộng. · f) 13
 
 **Phần E**
@@ -232,10 +232,10 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
-| A.1 | Số thập phân — hàng, so sánh, chuyển đổi | Cấu tạo số thập phân, quan hệ phân số – số thập phân | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 | Xét theo hàng từ trái sang phải | Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. | 0,386 · &gt; · 1 · 6… |
+| A.1 | Số thập phân — hàng, so sánh, chuyển đổi | Cấu tạo số thập phân, quan hệ phân số – số thập phân | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 | Xét theo hàng từ trái sang phải | Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. | 0,386 · > · 1 · 6… |
 | A.2 | Viết số từ dạng tổng theo hàng | Cấu tạo thập phân của số tự nhiên | Tổng gồm các số tròn chục, tròn trăm, tròn nghìn… | Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết | Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số. | 2 659 081 · 7 240 571 · 6 203 153 · 7 864 293… |
 | A.3 | Rút gọn phân số | Tính chất cơ bản của phân số | Tử số và mẫu số có ước chung lớn hơn 1 | Chia cả tử và mẫu cho ước chung | Tìm ngay ước chung lớn nhất để rút gọn một lần là xong. | 4 phần 5 · 1 phần 2 · 8 phần 5 · 7 phần 12… |
-| A.4 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | &gt; · &lt; · &gt; · &lt;… |
+| A.4 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | > · < · > · <… |
 | A.5 | Tính giá trị biểu thức số | Thứ tự thực hiện các phép tính | Biểu thức có nhiều phép tính, có thể có ngoặc | Xét ngoặc → nhân chia → cộng trừ, trái sang phải | Nếu thấy dạng a × b + a × c thì đưa ngay về a × (b + c). | 1 250 · 134 · 1 170 · 204… |
 | B.1 | Định vị chương trong hệ thống | Tên chương, nhóm chuyên đề, số dạng bài | Phần đầu phiếu ghi rõ tên cụm và nhóm chuyên đề | Đọc phần đầu phiếu rồi trả lời theo đúng tên gọi | Ghi tên chương ra góc vở, mỗi lần mở vở là đọc lại một lần. | Biểu đồ hình quạt, phần trăm nhiều bước và ôn tập · H — Phân số – Số thập phân – Tỉ số phần trăm – Thống kê · 5 · ở mọi bài thuộc phân số – số thập phân – tỉ số phần trăm – thống kê, vì các chương sau đều dùng lại nền này… |
 | B.2 | Liệt kê dạng bài của chương | Danh mục dạng bài | Bảng dạng bài ở phiếu Dạng bài & Đọc vị của cùng cụm | Chép theo bảng, giữ nguyên thứ tự | Học thuộc số lượng dạng bài trước, tên từng dạng sau. | Biểu đồ hình quạt — đọc và phân tích · Bài toán phần trăm nhiều bước · Bài toán kết hợp phân số và số thập phân · Ôn tập tỉ số phần trăm… |
@@ -364,10 +364,10 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 
 | Bài | Đề tương tự | Đáp số |
 |---|---|---|
-| A.1 | So sánh: 0,5 … 0,45 | &gt; |
+| A.1 | So sánh: 0,5 … 0,45 | > |
 | A.2 | Viết số gồm tổng: 30 000 + 400 + 7 | 30 407 |
 | A.3 | Rút gọn 18 phần 24. | 3 phần 4 |
-| A.4 | So sánh: 3 phần 5 … 3 phần 7 | &gt; |
+| A.4 | So sánh: 3 phần 5 … 3 phần 7 | > |
 | A.5 | Tính: 25 + 8 × 4 | 57 |
 | B.1 | Chương “Biểu đồ hình quạt, phần trăm nhiều bước và ôn tập” thuộc nhóm chuyên đề nào? | H — Phân số – Số thập phân – Tỉ số phần trăm – Thống kê |
 | B.2 | Chương này có mấy dạng bài chính? | 5 |
@@ -379,10 +379,10 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | C.3 | Bài toán tổng – hiệu nên minh hoạ bằng gì? | sơ đồ đoạn thẳng |
 | C.4 | “Trung bình mỗi ngày…” là dấu hiệu của dạng nào? | trung bình cộng |
 | C.5 | Tổng dãy cách đều tính nhanh bằng cách nào? | (đầu + cuối) × số số hạng : 2 |
-| D.1 | So sánh: 0,5 … 0,45 | &gt; |
+| D.1 | So sánh: 0,5 … 0,45 | > |
 | D.2 | Tổ Một trồng 60 cây, tổ Hai bằng 2 phần 3 tổ Một. Tổ Hai trồng mấy cây? | 40 cây |
 | D.3 | Tìm 25% của 200. | 50 |
-| D.4 | So sánh: 5 phần 6 … 7 phần 8 | &lt; |
+| D.4 | So sánh: 5 phần 6 … 7 phần 8 | < |
 | D.5 | Tính: 3,25 × 4 | 13 |
 | E.1 | Số 1 704 có chia hết cho 9 không? | không |
 | E.2 | Tính: 2 phần 3 + 1 phần 6 | 5 phần 6 |

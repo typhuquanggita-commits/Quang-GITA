@@ -30,7 +30,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần I**
 
-- **Bài I.1** — a) &lt; · b) &lt; · c) &gt; · d) &gt; · e) &lt; · f) &lt; · g) &lt;
+- **Bài I.1** — a) < · b) < · c) > · d) > · e) < · f) < · g) <
 - **Bài I.2** — a) 18 060 · b) 20 403 · c) 28 184 · d) 33 065
 - **Bài I.3** — a) XXI · b) 30 · c) không · d) 3 tuần 1 ngày · e) 31 · f) 3 tuần 3 ngày · g) XX
 - **Bài I.4** — a) có · b) có · c) không, dư 1 · d) không, dư 2 · e) có · f) có
@@ -65,7 +65,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài V.1** — a) Tính thời điểm trong ngày · b) Quan hệ giờ – phút, phép chia có dư · c) Cho thời điểm bắt đầu và khoảng thời gian · d) Quy về phút, cộng trừ, đổi lại · e) Cộng tròn giờ trước rồi cộng phần phút lẻ sau. · f) 14 giờ 17 phút · 10 giờ 34 phút · 11 giờ 29 phút · 12 giờ 18 phút…
 - **Bài V.2** — a) Bài toán đại lượng có lời văn · b) Nhân, chia số tự nhiên; đổi đơn vị khối lượng · c) Đơn vị trong câu hỏi khác đơn vị trong dữ kiện · d) Tính theo đơn vị dữ kiện rồi đổi ở bước cuối · e) 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ. · f) 11 tạ 70 kg · 7 tạ 50 kg · 8 tạ 40 kg · 12 tạ 80 kg…
 - **Bài V.3** — a) Đổi đơn vị diện tích · b) Bảng đơn vị đo diện tích · c) Đơn vị có mũ hai: m², cm², km², ha · d) Đếm bậc rồi nhân, chia 100 · e) Mỗi bậc thêm hai chữ số 0 — nhớ “diện tích thì gấp đôi số 0”. · f) 5 900 · 470 000 · 2 000 · 7 000 000…
-- **Bài V.4** — a) So sánh số đo đại lượng · b) Bảng đơn vị đo, so sánh số tự nhiên · c) Hai vế có đơn vị khác nhau · d) Đổi về cùng đơn vị rồi so sánh · e) Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. · f) &gt; · &gt; · &lt; · &lt;…
+- **Bài V.4** — a) So sánh số đo đại lượng · b) Bảng đơn vị đo, so sánh số tự nhiên · c) Hai vế có đơn vị khác nhau · d) Đổi về cùng đơn vị rồi so sánh · e) Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. · f) > · > · < · <…
 - **Bài V.5** — a) Bài toán đại lượng nhiều bước · b) Nhân, trừ; đại lượng cùng loại · c) Cho số nhóm, giá trị mỗi nhóm và số nhóm đã dùng · d) Rút gọn số bước bằng cách trừ trước, nhân sau · e) So sánh hai đường giải, chọn đường ít phép tính hơn. · f) 12 lít · 60 lít · 200 lít · 30 lít
 
 ---
@@ -232,7 +232,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
-| I.1 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &lt; · &lt; · &gt; · &gt;… |
+| I.1 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | < · < · > · >… |
 | I.2 | Bốn phép tính với số đo | Đổi đơn vị, bốn phép tính | Các số hạng có đơn vị khác nhau trong cùng một phép tính | Đổi về đơn vị của kết quả rồi tính | Đọc chỗ chấm trước, biết ngay đơn vị đích. | 18 060 · 20 403 · 28 184 · 33 065 |
 | I.3 | Lịch và đơn vị thời gian lớn | Số ngày các tháng, năm nhuận, thế kỉ | Đề hỏi về tháng, năm, thế kỉ | Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400 | Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ. | XXI · 30 · không · 3 tuần 1 ngày… |
 | I.4 | Xét chia hết của tổng, hiệu | Tính chất chia hết của tổng và hiệu | Câu hỏi về tổng hoặc hiệu, không yêu cầu kết quả cụ thể | Xét số dư từng số hạng rồi cộng, trừ các số dư | Chỉ cộng các **số dư**, không cộng các số. | có · có · không, dư 1 · không, dư 2… |
@@ -364,7 +364,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 
 | Bài | Đề tương tự | Đáp số |
 |---|---|---|
-| I.1 | So sánh: 3 kg … 2 500 g | &gt; |
+| I.1 | So sánh: 3 kg … 2 500 g | > |
 | I.2 | 2 m 30 cm + 150 cm = … cm | 380 |
 | I.3 | Năm 1975 thuộc thế kỉ thứ mấy? | XX |
 | I.4 | Tổng 45 + 27 có chia hết cho 9 không? | có |
@@ -387,7 +387,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | V.1 | Tàu chạy lúc 7 giờ 40 phút, đi hết 2 giờ 35 phút. Đến lúc mấy giờ? | 10 giờ 15 phút |
 | V.2 | Xe chở 20 bao gạo, mỗi bao 50 kg. Xe chở mấy tạ? | 10 tạ |
 | V.3 | 3 m² = … cm² | 30 000 |
-| V.4 | So sánh: 3 kg … 2 500 g | &gt; |
+| V.4 | So sánh: 3 kg … 2 500 g | > |
 | V.5 | Có 10 thùng dầu, mỗi thùng 20 lít, đã bán 3 thùng. Còn bao nhiêu lít? | 140 lít |
 
 ---

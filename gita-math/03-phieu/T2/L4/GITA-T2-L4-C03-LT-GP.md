@@ -66,7 +66,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài E.2** — a) 58 · b) 279 · c) 275 · d) 175
 - **Bài E.3** — a) xe ô tô: 12 chiếc, xe ba bánh: 11 chiếc · b) xe ô tô: 17 chiếc, xe ba bánh: 17 chiếc · c) xe ô tô: 8 chiếc, xe đạp: 25 chiếc · d) xe ô tô: 20 chiếc, xe ba bánh: 20 chiếc · e) xe ô tô: 17 chiếc, xe đạp: 5 chiếc
 - **Bài E.4** — a) 342 · b) 969 · c) 855 · d) 880 · e) 666 · f) 135 · g) 702
-- **Bài E.5** — a) &lt; · b) &lt; · c) &lt; · d) &lt; · e) &lt;
+- **Bài E.5** — a) < · b) < · c) < · d) < · e) <
 
 ---
 
@@ -256,7 +256,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | E.2 | Đếm số hạng của dãy cách đều theo điều kiện chia hết | Dãy số cách đều, dấu hiệu chia hết | Cụm “có bao nhiêu số … từ … đến …” | Tìm số đầu, số cuối hợp lệ rồi dùng công thức đếm | Số các số chia hết cho d từ 1 đến n bằng phần nguyên của n : d, nên đếm từ a đến b là b : d trừ đi (a − 1) : d. | 58 · 279 · 275 · 175 |
 | E.3 | Giả thiết tạm hai loại | Phương pháp giả thiết tạm | Hai loại đối tượng, biết tổng số và tổng của một đại lượng phụ | Giả sử đồng nhất → tính chênh → chia cho hiệu đơn vị | Kiểm tra ngay: số bánh phải nằm giữa tổng × (số bánh ít nhất) và tổng × (số bánh nhiều nhất). | xe ô tô: 12 chiếc, xe ba bánh: 11 chiếc · xe ô tô: 17 chiếc, xe ba bánh: 17 chiếc · xe ô tô: 8 chiếc, xe đạp: 25 chiếc · xe ô tô: 20 chiếc, xe ba bánh: 20 chiếc… |
 | E.4 | Nhân nhẩm nhờ tách thừa số | Nhân một số với một tổng, một hiệu | Thừa số là 9, 11, 19, 21, 99, 101… | Tách về số tròn rồi bù trừ | × 11 với số có hai chữ số: viết hai chữ số ra hai đầu, tổng của chúng đặt vào giữa (nhớ sang trái nếu tổng vượt 9). | 342 · 969 · 855 · 880… |
-| E.5 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &lt; · &lt; · &lt; · &lt;… |
+| E.5 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | < · < · < · <… |
 
 ---
 
@@ -388,7 +388,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | E.2 | Có bao nhiêu số chẵn từ 10 đến 40? | 16 |
 | E.3 | 10 xe đạp và ô tô, 28 bánh. Có mấy ô tô? | 4 ô tô |
 | E.4 | Tính nhẩm: 46 × 11 | 506 |
-| E.5 | So sánh: 3 kg … 2 500 g | &gt; |
+| E.5 | So sánh: 3 kg … 2 500 g | > |
 
 ---
 

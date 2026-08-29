@@ -90,7 +90,7 @@ h) Rút gọn phân số 35 phần 60.
 
 ### Bài 4. (1 điểm) So sánh hai phân số
 
-Điền dấu &lt;, &gt;, = thích hợp.
+Điền dấu <, >, = thích hợp.
 
 a) 3 phần 2 … 1 phần 2
 b) 1 phần 2 … 3 phần 4
@@ -229,7 +229,7 @@ f) Cách xử lý nhanh nhất của dạng “Rút gọn phân số” là gì?
 
 ### Bài 1. (6 điểm) Key 1 — Số thập phân — hàng, so sánh, chuyển đổi
 
-**Phát biểu:** Cấu tạo số thập phân, quan hệ phân số – số thập phân. **Ví dụ mẫu:** So sánh: 0,5 … 0,45 → &gt;.
+**Phát biểu:** Cấu tạo số thập phân, quan hệ phân số – số thập phân. **Ví dụ mẫu:** So sánh: 0,5 … 0,45 → >.
 
 a) Phát biểu lại key này bằng lời của em.
 b) Key này dùng cho dạng bài nào?
@@ -262,7 +262,7 @@ f) Làm lại ví dụ mẫu ở trên và ghi đáp số.
 
 ### Bài 4. (6 điểm) Key 4 — So sánh phân số bằng kĩ thuật đặc biệt
 
-**Phát biểu:** Phần bù tới 1, phân số trung gian. **Ví dụ mẫu:** So sánh: 5 phần 6 … 7 phần 8 → &lt;.
+**Phát biểu:** Phần bù tới 1, phân số trung gian. **Ví dụ mẫu:** So sánh: 5 phần 6 … 7 phần 8 → <.
 
 a) Phát biểu lại key này bằng lời của em.
 b) Key này dùng cho dạng bài nào?
@@ -353,7 +353,7 @@ g) Tìm tỉ số phần trăm của 160 và 400.
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài A.1
-**Đáp số:** a) 0,386 · b) &gt; · c) 1 · d) 6 · e) 0,08 · f) &lt; · g) 0,916 · h) 7
+**Đáp số:** a) 0,386 · b) > · c) 1 · d) 6 · e) 0,08 · f) < · g) 0,916 · h) 7
 **Hướng giải:** Sau dấu phẩy lần lượt là hàng phần mười, phần trăm, phần nghìn. So sánh số thập phân: so phần nguyên trước; phần nguyên bằng nhau thì so lần lượt hàng phần mười, phần trăm, phần nghìn. Phân số có mẫu là 10, 100, 1 000 đổi được thẳng sang số thập phân.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: So sánh theo **hàng**, không so theo số chữ số sau dấu phẩy.
 **Lỗi thường gặp:** Cho rằng số có nhiều chữ số sau dấu phẩy hơn thì lớn hơn. Phòng: Viết thêm chữ số 0 vào cuối để hai số có cùng số chữ số thập phân rồi mới so.
@@ -371,7 +371,7 @@ g) Tìm tỉ số phần trăm của 160 và 400.
 **Lỗi thường gặp:** Chỉ chia tử số hoặc chỉ chia mẫu số. Phòng: Viết phép chia cho cả hai dòng, kiểm tra lại bằng cách nhân ngược.
 
 ### Bài A.4
-**Đáp số:** a) &gt; · b) &lt; · c) &gt; · d) &lt; · e) &lt; · f) &gt; · g) &lt;
+**Đáp số:** a) > · b) < · c) > · d) < · e) < · f) > · g) <
 **Hướng giải:** Cùng mẫu số: phân số nào có tử số lớn hơn thì lớn hơn. Cùng tử số: phân số nào có mẫu số **bé** hơn thì lớn hơn. Khác cả tử lẫn mẫu: quy đồng mẫu số rồi so tử số.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Cùng tử số thì **mẫu bé hơn là phân số lớn hơn** — ngược với trực giác.
 **Lỗi thường gặp:** Thấy mẫu số lớn thì kết luận phân số lớn. Phòng: Nghĩ tới chiếc bánh: chia càng nhiều phần thì mỗi phần càng bé.
@@ -443,7 +443,7 @@ g) Tìm tỉ số phần trăm của 160 và 400.
 **Lỗi thường gặp:** Dùng mẹo mà không hiểu vì sao đúng nên áp dụng sai chỗ. Phòng: Với mỗi mẹo, viết thêm một dòng “mẹo này đúng vì …”.
 
 ### Bài D.1
-**Đáp số:** a) Cấu tạo số thập phân, quan hệ phân số – số thập phân · b) Số thập phân — hàng, so sánh, chuyển đổi · c) Số có dấu phẩy; phân số mẫu 10, 100, 1 000 · d) Xét theo hàng từ trái sang phải · e) Cho rằng số có nhiều chữ số sau dấu phẩy hơn thì lớn hơn. · f) &gt;
+**Đáp số:** a) Cấu tạo số thập phân, quan hệ phân số – số thập phân · b) Số thập phân — hàng, so sánh, chuyển đổi · c) Số có dấu phẩy; phân số mẫu 10, 100, 1 000 · d) Xét theo hàng từ trái sang phải · e) Cho rằng số có nhiều chữ số sau dấu phẩy hơn thì lớn hơn. · f) >
 **Hướng giải:** Sau dấu phẩy lần lượt là hàng phần mười, phần trăm, phần nghìn. So sánh số thập phân: so phần nguyên trước; phần nguyên bằng nhau thì so lần lượt hàng phần mười, phần trăm, phần nghìn. Phân số có mẫu là 10, 100, 1 000 đổi được thẳng sang số thập phân.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: So sánh theo **hàng**, không so theo số chữ số sau dấu phẩy.
 **Lỗi thường gặp:** Cho rằng số có nhiều chữ số sau dấu phẩy hơn thì lớn hơn. Phòng: Viết thêm chữ số 0 vào cuối để hai số có cùng số chữ số thập phân rồi mới so.
@@ -464,7 +464,7 @@ g) Tìm tỉ số phần trăm của 160 và 400.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài D.4
-**Đáp số:** a) Phần bù tới 1, phân số trung gian · b) So sánh phân số bằng kĩ thuật đặc biệt · c) Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 · d) So phần bù; hoặc chèn phân số trung gian · e) So phần bù rồi kết luận cùng chiều với phần bù. · f) &lt;
+**Đáp số:** a) Phần bù tới 1, phân số trung gian · b) So sánh phân số bằng kĩ thuật đặc biệt · c) Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 · d) So phần bù; hoặc chèn phân số trung gian · e) So phần bù rồi kết luận cùng chiều với phần bù. · f) <
 **Hướng giải:** **Phần bù tới 1:** hai phân số đều thiếu một chút nữa thì bằng 1; phân số nào có phần bù **bé hơn** thì lớn hơn. **Phân số trung gian:** chọn một phân số dễ so (thường là 1 phần 2 hoặc 1 phần 3) rồi so mỗi phân số với nó.
 **Nhãn tư duy:** TD6, TD5. Điểm chốt: Phần bù **bé hơn** nghĩa là phân số **lớn hơn** — dễ nhớ nhầm chiều.
 **Lỗi thường gặp:** So phần bù rồi kết luận cùng chiều với phần bù. Phòng: Nghĩ tới chiếc bánh: thiếu ít hơn thì phần đang có nhiều hơn.

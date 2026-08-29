@@ -125,7 +125,7 @@ d) 12 + 23 + 88 + 77
 
 ### Bài 3. (5 điểm) So sánh hai số đo khác đơn vị
 
-Điền dấu &lt;, &gt;, = thích hợp.
+Điền dấu <, >, = thích hợp.
 
 a) 77 km² … 1 967 cm²
 b) 67 dag … 803 g
@@ -292,7 +292,7 @@ f) Lỗi nào dễ mắc ở đề này?
 
 ### Bài 3. (4 điểm) Đọc vị đề số 3
 
-**Đề:** Điền dấu &lt;, &gt;, = thích hợp. 6 dm² … 5 448 km²
+**Đề:** Điền dấu <, >, = thích hợp. 6 dm² … 5 448 km²
 
 a) Đề này thuộc dạng bài nào?
 b) Dấu hiệu nào giúp em nhận ra?
@@ -372,7 +372,7 @@ f) Lỗi nào dễ mắc ở đề này?
 **Lỗi thường gặp:** Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. Phòng: Đọc lướt cả dãy, khoanh tròn cặp số cộng lại tròn chục, tròn trăm.
 
 ### Bài B.3
-**Đáp số:** a) &gt; · b) &lt; · c) &lt; · d) &gt; · e) &gt; · f) &lt; · g) &gt;
+**Đáp số:** a) > · b) < · c) < · d) > · e) > · f) < · g) >
 **Hướng giải:** Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.

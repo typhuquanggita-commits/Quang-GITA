@@ -92,7 +92,7 @@ c) Đức có 8 quyển vở, Hùng có số vở gấp 2 lần Đức. Hùng c�
 d) Đức có 138 quyển vở, số vở của Hùng kém 6 lần số vở của Đức. Hùng có bao nhiêu quyển vở?
 e) Đức có 8 quyển vở, Hùng có số vở gấp 2 lần Đức. Hùng có bao nhiêu quyển vở?
 
-### Bài 5. (1 điểm) Điền dấu &lt;, &gt;, = thích hợp
+### Bài 5. (1 điểm) Điền dấu <, >, = thích hợp
 
 Điền dấu thích hợp vào chỗ chấm.
 
@@ -359,7 +359,7 @@ e) Có 5 loại bánh và 4 loại nước. Chọn một loại bánh và một 
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
 
 ### Bài A.5
-**Đáp số:** a) &gt; · b) &gt; · c) &lt; · d) &gt; · e) &lt;
+**Đáp số:** a) > · b) > · c) < · d) > · e) <
 **Hướng giải:** So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Đếm số chữ số **trước**, chỉ khi bằng nhau mới so từng hàng.
 **Lỗi thường gặp:** So từ hàng đơn vị (phải sang trái) nên kết luận sai. Phòng: Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái.

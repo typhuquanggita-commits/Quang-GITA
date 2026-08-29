@@ -30,7 +30,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần I**
 
-- **Bài I.1** — a) &lt; · b) &lt; · c) &gt; · d) &lt; · e) &gt; · f) &lt; · g) &gt;
+- **Bài I.1** — a) < · b) < · c) > · d) < · e) > · f) < · g) >
 - **Bài I.2** — a) 2 giờ 23 phút · b) 3 giờ 10 phút · c) 5 giờ 11 phút · d) 114 · e) 9 giờ 16 phút · f) 6 giờ 10 phút
 - **Bài I.3** — a) 81 · b) 81 · c) 92 · d) 199 · e) 21 · f) 157 · g) 51
 - **Bài I.4** — a) 45 217 280 · b) 55 895 · c) 54 750 · d) 83 618 845 · e) 90 303 · f) 98 707
@@ -232,7 +232,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
-| I.1 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | &lt; · &lt; · &gt; · &lt;… |
+| I.1 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | < · < · > · <… |
 | I.2 | Đổi và tính toán với đơn vị thời gian | Quan hệ giờ – phút – giây | Số đo có chữ “giờ”, “phút”, “giây” | Quy về phút rồi tính, cuối cùng đổi lại giờ và phút | Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm. | 2 giờ 23 phút · 3 giờ 10 phút · 5 giờ 11 phút · 114… |
 | I.3 | Tìm trung bình cộng | Định nghĩa trung bình cộng | Từ khoá “trung bình cộng”, “trung bình mỗi …” | Tổng chia số lượng | Ước lượng: trung bình cộng luôn nằm giữa số bé nhất và số lớn nhất. | 81 · 81 · 92 · 199… |
 | I.4 | Nhân, chia số tự nhiên | Kĩ thuật đặt tính nhân, chia | Yêu cầu “đặt tính rồi tính” với phép nhân, chia | Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ chữ số | Kiểm tra kết quả bằng phép tính ngược: thương × số chia = số bị chia. | 45 217 280 · 55 895 · 54 750 · 83 618 845… |
@@ -364,7 +364,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 
 | Bài | Đề tương tự | Đáp số |
 |---|---|---|
-| I.1 | So sánh: 3 phần 5 … 3 phần 7 | &gt; |
+| I.1 | So sánh: 3 phần 5 … 3 phần 7 | > |
 | I.2 | 155 phút = … giờ … phút | 2 giờ 35 phút |
 | I.3 | Tìm trung bình cộng của 12, 18 và 30. | 20 |
 | I.4 | Đặt tính rồi tính: 3 045 × 24 | 73 080 |

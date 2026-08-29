@@ -34,7 +34,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài I.2** — a) 8 800 · b) 71 000 · c) 16 000 · d) 9 000 000 · e) 50
 - **Bài I.3** — a) 7 phần 2 · b) 1 phần 2 · c) 7 phần 6 · d) 3 phần 4 · e) 3 phần 5 · f) 7 phần 10 · g) 1 · h) 8 phần 5
 - **Bài I.4** — a) 898 782 · b) 753 963 · c) 648 330 · d) 84 419
-- **Bài I.5** — a) &gt; · b) &gt; · c) &lt; · d) &lt; · e) &lt; · f) &lt; · g) &gt;
+- **Bài I.5** — a) > · b) > · c) < · d) < · e) < · f) < · g) >
 
 **Phần II**
 
@@ -62,9 +62,9 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần V**
 
-- **Bài V.1** — a) 64 · b) 17 · c) &lt; · d) &lt; · e) &lt;
+- **Bài V.1** — a) 64 · b) 17 · c) < · d) < · e) <
 - **Bài V.2** — a) 2 646 · b) 381 · c) 151 · d) 6 553 · e) 159
-- **Bài V.3** — a) &lt; · b) &gt; · c) &gt; · d) &lt; · e) &gt;
+- **Bài V.3** — a) < · b) > · c) > · d) < · e) >
 - **Bài V.4** — a) không còn đúng (9 bạn có thể chia đều 1 bạn mỗi tháng) · b) không còn đúng (20 bạn có thể chia đều 2 bạn mỗi tháng) · c) không còn đúng (18 bạn có thể chia đều 3 bạn mỗi tháng) · d) không còn đúng (48 bạn có thể chia đều 4 bạn mỗi tháng) · e) không còn đúng (21 bạn có thể chia đều 3 bạn mỗi tháng) · f) không còn đúng (10 bạn có thể chia đều 1 bạn mỗi tháng)
 - **Bài V.5** — a) 110 · b) 400 · c) 325 · d) 100 · e) 10 100
 
@@ -236,7 +236,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | I.2 | Đổi đơn vị đo | Bảng đơn vị đo độ dài, khối lượng | Dấu … giữa hai đơn vị khác nhau | Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10 | Số bậc chính là số chữ số 0 phải thêm vào (hoặc bớt đi). | 8 800 · 71 000 · 16 000 · 9 000 000… |
 | I.3 | Rút gọn phân số | Tính chất cơ bản của phân số | Tử số và mẫu số có ước chung lớn hơn 1 | Chia cả tử và mẫu cho ước chung | Tìm ngay ước chung lớn nhất để rút gọn một lần là xong. | 7 phần 2 · 1 phần 2 · 7 phần 6 · 3 phần 4… |
 | I.4 | Viết số từ dạng tổng theo hàng | Cấu tạo thập phân của số tự nhiên | Tổng gồm các số tròn chục, tròn trăm, tròn nghìn… | Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết | Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số. | 898 782 · 753 963 · 648 330 · 84 419 |
-| I.5 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | &gt; · &gt; · &lt; · &lt;… |
+| I.5 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | > · > · < · <… |
 | II.1 | Bốn phép tính với phân số | Quy đồng, nhân chia phân số | Biểu thức chỉ gồm phân số | Chọn quy tắc theo phép tính, rút gọn cuối cùng | Rút gọn chéo trước khi nhân để số nhỏ, tính nhanh và ít sai. | 2 · 3 phần 7 · 51 phần 35 · 1 phần 36… |
 | II.2 | Ba dạng bài trung bình cộng | Quan hệ tổng – số lượng – trung bình cộng | Cụm “trung bình mỗi …” | Đi qua tổng làm trung gian | Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng. | 96 kg · 244 kg · 262 kg · 150 kg… |
 | II.3 | Phép chia có dư | Quan hệ giữa số bị chia, số chia, thương và số dư | Đề yêu cầu ghi cả thương và số dư | Đặt tính chia, kiểm tra điều kiện số dư | Ước lượng thương bằng cách làm tròn số chia trước khi chia. | 3 689 dư 9 · 4 639 dư 6 · 6 401 dư 14 · 4 695 dư 4… |
@@ -252,9 +252,9 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.3 | Tổng và trung bình cộng của dãy cách đều | Dãy cách đều, trung bình cộng | Đề cho số số hạng, khoảng cách và một đầu của dãy | Tìm hai đầu dãy → tổng → trung bình cộng | Mọi cặp số hạng cách đều hai đầu đều có tổng bằng nhau. | -6 · 111 · 2 100 · 52,5… |
 | IV.4 | Biểu thức phân số nhiều phép tính | Thứ tự thực hiện phép tính, tính chất phân phối | Biểu thức gồm nhiều phân số và nhiều phép tính | Quan sát rút gọn trước, sau đó theo thứ tự thực hiện | Rút gọn chéo tử với mẫu trước khi nhân. | 3 · 2 phần 7 · 9 phần 4 · 46 phần 33 |
 | IV.5 | Tìm x xuất hiện hai vế | So sánh hai biểu thức, sơ đồ đoạn thẳng | Chữ x xuất hiện ở cả hai vế của dấu bằng | Trừ bớt số lần x chung rồi đưa về phép chia | Vẽ sơ đồ đoạn thẳng cho mỗi vế — nhìn ra ngay phần chênh. | x = 67 · x = 17 · x = 51 · x = 54 |
-| V.1 | Tính, so sánh tích bằng kĩ thuật tách – bù | Nhân một số với một tổng, một hiệu | Các thừa số hơn kém nhau rất ít | Quy về số gốc chung, so phần chênh | Với hai tích có tổng hai thừa số bằng nhau, tích nào có hai thừa số gần nhau hơn thì lớn hơn. | 64 · 17 · &lt; · &lt;… |
+| V.1 | Tính, so sánh tích bằng kĩ thuật tách – bù | Nhân một số với một tổng, một hiệu | Các thừa số hơn kém nhau rất ít | Quy về số gốc chung, so phần chênh | Với hai tích có tổng hai thừa số bằng nhau, tích nào có hai thừa số gần nhau hơn thì lớn hơn. | 64 · 17 · < · <… |
 | V.2 | Đếm chữ số theo nhóm độ dài | Đếm số hạng dãy cách đều, cấu tạo số | Bài toán đánh số trang, đánh số nhà, đánh số vé | Chia nhóm 1 chữ số – 2 chữ số – 3 chữ số rồi nhân và cộng | Sách 100 trang luôn dùng 192 chữ số; nhớ mốc này để kiểm tra nhanh. | 2 646 · 381 · 151 · 6 553… |
-| V.3 | So sánh phân số bằng kĩ thuật đặc biệt | Phần bù tới 1, phân số trung gian | Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 | So phần bù; hoặc chèn phân số trung gian | Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. | &lt; · &gt; · &gt; · &lt;… |
+| V.3 | So sánh phân số bằng kĩ thuật đặc biệt | Phần bù tới 1, phân số trung gian | Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 | So phần bù; hoặc chèn phân số trung gian | Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. | < · > · > · <… |
 | V.4 | Đi-rích-lê dạng chứng minh | Nguyên lí ngăn kéo | “Chứng tỏ rằng có ít nhất … cùng …” | Đặt tên ngăn kéo và đồ vật, tính ngưỡng | Ngưỡng = số ngăn × (số cần − 1) + 1. | không còn đúng (9 bạn có thể chia đều 1 bạn mỗi tháng) · không còn đúng (20 bạn có thể chia đều 2 bạn mỗi tháng) · không còn đúng (18 bạn có thể chia đều 3 bạn mỗi tháng) · không còn đúng (48 bạn có thể chia đều 4 bạn mỗi tháng)… |
 | V.5 | Tổng dãy đặc biệt | Ba công thức tổng cơ bản | Dãy toàn số lẻ, toàn số chẵn, hoặc số tự nhiên liên tiếp | Đếm số số hạng rồi áp công thức | Tổng n số lẻ đầu tiên luôn là một số chính phương — dùng để kiểm tra nhanh. | 110 · 400 · 325 · 100… |
 
@@ -368,7 +368,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | I.2 | 5 km = … m | 5 000 |
 | I.3 | Rút gọn 18 phần 24. | 3 phần 4 |
 | I.4 | Viết số gồm tổng: 30 000 + 400 + 7 | 30 407 |
-| I.5 | So sánh: 3 phần 5 … 3 phần 7 | &gt; |
+| I.5 | So sánh: 3 phần 5 … 3 phần 7 | > |
 | II.1 | Tính: 2 phần 3 + 1 phần 6 | 5 phần 6 |
 | II.2 | Trung bình mỗi ngày bán 40 kg, hỏi 5 ngày bán bao nhiêu? | 200 kg |
 | II.3 | Tìm thương và số dư của 1 234 : 7 | 176 dư 2 |
@@ -384,9 +384,9 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | IV.3 | Dãy cách đều 10 số hạng, đầu 5, cuối 50. Tổng bằng bao nhiêu? | 275 |
 | IV.4 | Tính: (1 phần 2 + 1 phần 3) × 6 phần 5 | 1 |
 | IV.5 | Tìm x: x × 3 + 24 = x × 5 | x = 12 |
-| V.1 | So sánh: 99 × 101 … 100 × 100 | &lt; |
+| V.1 | So sánh: 99 × 101 … 100 × 100 | < |
 | V.2 | Quyển sách 150 trang dùng hết bao nhiêu chữ số? | 342 |
-| V.3 | So sánh: 5 phần 6 … 7 phần 8 | &lt; |
+| V.3 | So sánh: 5 phần 6 … 7 phần 8 | < |
 | V.4 | 13 bạn sinh trong 12 tháng, chứng tỏ có 2 bạn cùng tháng sinh. | đúng, vì 13 > 12 × 1 |
 | V.5 | Tính: 1 + 3 + 5 + … + 19 | 100 |
 

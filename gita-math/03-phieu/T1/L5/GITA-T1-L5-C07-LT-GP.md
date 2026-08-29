@@ -33,7 +33,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài A.1** — a) chữ số 1, giá trị 1 000 000 · b) chữ số 8, giá trị 80 000 · c) chữ số 0, giá trị 0 · d) chữ số 7, giá trị 70 · e) chữ số 8, giá trị 8
 - **Bài A.2** — a) 7 chữ số, tổng 29 · b) 6 chữ số, tổng 30 · c) 7 chữ số, tổng 26 · d) 6 chữ số, tổng 30 · e) 7 chữ số, tổng 32
 - **Bài A.3** — a) 594 140 · b) 445 420 · c) 778 000 · d) 189 470
-- **Bài A.4** — a) &gt; · b) &lt; · c) &gt; · d) &gt; · e) &gt;
+- **Bài A.4** — a) > · b) < · c) > · d) > · e) >
 - **Bài A.5** — a) 9 591 068 · b) 3 844 789 · c) 9 676 109 · d) 1 440 333
 
 **Phần B**
@@ -92,7 +92,7 @@ Nhìn chữ số ở hàng **liền sau** hàng cần làm tròn: nếu chữ s�
 
 *Điểm chốt:* Chỉ xét **một** chữ số liền sau, không cộng dồn cả phần đuôi.
 
-### Bài A.4 — Điền dấu &lt;, &gt;, = thích hợp
+### Bài A.4 — Điền dấu <, >, = thích hợp
 
 So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 
@@ -235,7 +235,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | A.1 | Xác định chữ số và giá trị chữ số theo hàng | Cấu tạo thập phân của số tự nhiên | Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” | Đánh số hàng từ phải sang trái rồi tra bảng hàng | Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị. | chữ số 1, giá trị 1 000 000 · chữ số 8, giá trị 80 000 · chữ số 0, giá trị 0 · chữ số 7, giá trị 70… |
 | A.2 | Đếm chữ số, tính tổng chữ số | Cấu tạo số, tổng chữ số | Yêu cầu “có mấy chữ số”, “tổng các chữ số” | Tách lớp để đếm; cộng rời từng chữ số | Ghép cặp các chữ số cộng lại tròn 10 rồi cộng nhanh. | 7 chữ số, tổng 29 · 6 chữ số, tổng 30 · 7 chữ số, tổng 26 · 6 chữ số, tổng 30… |
 | A.3 | Làm tròn số tự nhiên | Quy tắc làm tròn, giá trị hàng | Cụm từ “làm tròn đến hàng …” | Gạch ngăn hàng → xét chữ số liền sau → giữ nguyên hoặc thêm 1 | Che toàn bộ phần đuôi sau nét gạch, chỉ để lộ đúng một chữ số. | 594 140 · 445 420 · 778 000 · 189 470 |
-| A.4 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | &gt; · &lt; · &gt; · &gt;… |
+| A.4 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | > · < · > · >… |
 | A.5 | Viết số từ dạng tổng theo hàng | Cấu tạo thập phân của số tự nhiên | Tổng gồm các số tròn chục, tròn trăm, tròn nghìn… | Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết | Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số. | 9 591 068 · 3 844 789 · 9 676 109 · 1 440 333 |
 | B.1 | Định vị chương trong hệ thống | Tên chương, nhóm chuyên đề, số dạng bài | Phần đầu phiếu ghi rõ tên cụm và nhóm chuyên đề | Đọc phần đầu phiếu rồi trả lời theo đúng tên gọi | Ghi tên chương ra góc vở, mỗi lần mở vở là đọc lại một lần. | Số tự nhiên, chia hết và ôn tập số học · A — Số học & Cấu tạo số · 5 · ở mọi bài thuộc số học & cấu tạo số, vì các chương sau đều dùng lại nền này… |
 | B.2 | Liệt kê dạng bài của chương | Danh mục dạng bài | Bảng dạng bài ở phiếu Dạng bài & Đọc vị của cùng cụm | Chép theo bảng, giữ nguyên thứ tự | Học thuộc số lượng dạng bài trước, tên từng dạng sau. | Ôn tập số tự nhiên và dấu hiệu chia hết · Bài toán về số và chữ số · Bài toán chia hết và chia có dư · Ôn tập số tự nhiên, phân số và số thập phân… |
@@ -367,7 +367,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | A.1 | Chữ số hàng chục của số 1 480 578 có giá trị bao nhiêu? | 70 |
 | A.2 | Số 40 506 có mấy chữ số và tổng các chữ số bằng bao nhiêu? | 5 chữ số, tổng 15 |
 | A.3 | Làm tròn 4 762 đến hàng trăm. | 4 800 |
-| A.4 | Điền dấu: 6 292 679 … 6 292 680 | &lt; |
+| A.4 | Điền dấu: 6 292 679 … 6 292 680 | < |
 | A.5 | Viết số gồm tổng: 30 000 + 400 + 7 | 30 407 |
 | B.1 | Chương “Số tự nhiên, chia hết và ôn tập số học” thuộc nhóm chuyên đề nào? | A — Số học & Cấu tạo số |
 | B.2 | Chương này có mấy dạng bài chính? | 5 |

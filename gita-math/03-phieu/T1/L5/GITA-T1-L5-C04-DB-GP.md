@@ -55,7 +55,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần D**
 
 - **Bài D.1** — a) x = 90 · b) x = 54 · c) x = 33 · d) x = 93
-- **Bài D.2** — a) &lt; · b) &gt; · c) &lt; · d) &gt; · e) &lt;
+- **Bài D.2** — a) < · b) > · c) < · d) > · e) <
 - **Bài D.3** — a) 258 · 285 · 528 · 582 · 825 · 852 · b) 6 · c) 852 · d) 258 · e) 4 · f) 2 · g) 1 110
 - **Bài D.4** — a) 1 275 · b) 975 · c) 10 000 · d) 245
 - **Bài D.5** — a) 1 · b) 1 · c) 1 · d) 1 · e) 1 · f) 1
@@ -248,7 +248,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | C.4 | Xét chia hết của tổng, hiệu | Tính chất chia hết của tổng và hiệu | Câu hỏi về tổng hoặc hiệu, không yêu cầu kết quả cụ thể | Xét số dư từng số hạng rồi cộng, trừ các số dư | Chỉ cộng các **số dư**, không cộng các số. | có · có · có · có |
 | C.5 | Chu vi, diện tích trong tình huống thực tế | Công thức chu vi, diện tích; phép chia | Từ khoá “rào xung quanh”, “lát gạch”, “trồng cây quanh” | Đọc vị chu vi hay diện tích rồi tính | Nhìn đơn vị của đáp số: mét thì là chu vi, mét vuông thì là diện tích. | 236 m · 21 viên (làm tròn lên) · 26 viên (làm tròn lên) · 77 cây… |
 | D.1 | Tìm x nhiều bước có ngoặc | Thứ tự thực hiện phép tính, quan hệ thành phần | x nằm trong ngoặc, ngoài ngoặc còn phép tính khác | Bóc lớp từ ngoài vào trong | Thay x tìm được vào đề, tính một lượt để thử lại. | x = 90 · x = 54 · x = 33 · x = 93 |
-| D.2 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | &lt; · &gt; · &lt; · &gt;… |
+| D.2 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | < · > · < · >… |
 | D.3 | Lập số và đếm số lập được từ một bộ chữ số | Quy tắc nhân trong phép đếm, điều kiện chữ số đứng đầu | Đề cho một bộ chữ số và yêu cầu lập số | Cố định hàng cao nhất rồi hoán vị các hàng còn lại | Ba chữ số khác 0 lập được 3 × 2 × 1 = 6 số; nếu có chữ số 0 thì chỉ còn 2 × 2 × 1 = 4 số. | 258 · 285 · 528 · 582 · 825 · 852 · 6 · 852 · 258… |
 | D.4 | Tổng dãy số cách đều | Công thức tổng dãy cách đều | Dãy cộng có dấu … và các số cách đều nhau | Đếm số số hạng rồi áp công thức tổng | Ghép cặp đầu – cuối: mọi cặp đều có cùng tổng, chỉ cần nhân với số cặp. | 1 275 · 975 · 10 000 · 245 |
 | D.5 | Tính nhanh biểu thức phân số | Cộng phân số cùng mẫu, phân số đảo ngược | Các phân số cùng mẫu, tử số cộng lại tròn mẫu | Quan sát tổng tử số; nhận diện cặp phân số đảo ngược | Nếu tổng các tử số bằng mẫu số thì kết quả bằng 1, không cần tính gì thêm. | 1 · 1 · 1 · 1… |
@@ -380,7 +380,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | C.4 | Tổng 45 + 27 có chia hết cho 9 không? | có |
 | C.5 | Vườn dài 20 m rộng 10 m, rào xung quanh cần bao nhiêu mét rào? | 60 m |
 | D.1 | Tìm x: (x + 12) × 5 − 8 = 132 | x = 16 |
-| D.2 | So sánh: 234 × 7 … 234 × 8 | &lt; |
+| D.2 | So sánh: 234 × 7 … 234 × 8 | < |
 | D.3 | Từ ba chữ số 1, 2, 3 lập được bao nhiêu số có ba chữ số khác nhau? | 6 |
 | D.4 | Tính nhanh: 1 + 2 + 3 + … + 100 | 5 050 |
 | D.5 | Tính nhanh: 3 phần 7 + 4 phần 7 | 1 |

@@ -31,7 +31,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần I**
 
 - **Bài I.1** — a) 7 chữ số, tổng 34 · b) 6 chữ số, tổng 22 · c) 7 chữ số, tổng 34 · d) 6 chữ số, tổng 21
-- **Bài I.2** — a) &lt; · b) &lt; · c) &gt; · d) &gt; · e) &lt; · f) &lt; · g) &gt; · h) &lt;
+- **Bài I.2** — a) < · b) < · c) > · d) > · e) < · f) < · g) > · h) <
 - **Bài I.3** — a) 1 714 749 · b) 9 020 155 · c) 6 151 599 · d) 812 764
 - **Bài I.4** — a) 1 970 · b) 24 000 · c) 861 100 · d) 817 000 · e) 548 000 · f) 821 100
 - **Bài I.5** — a) chữ số 3, giá trị 3 000 000 · b) chữ số 8, giá trị 800 000 · c) chữ số 2, giá trị 20 000 · d) chữ số 9, giá trị 9 000 · e) chữ số 6, giá trị 600 · f) chữ số 0, giá trị 0
@@ -80,7 +80,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 *Điểm chốt:* Tổng các chữ số **không** phụ thuộc thứ tự các chữ số.
 
-### Bài I.2 — Điền dấu &lt;, &gt;, = thích hợp
+### Bài I.2 — Điền dấu <, >, = thích hợp
 
 So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 
@@ -233,7 +233,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
 | I.1 | Đếm chữ số, tính tổng chữ số | Cấu tạo số, tổng chữ số | Yêu cầu “có mấy chữ số”, “tổng các chữ số” | Tách lớp để đếm; cộng rời từng chữ số | Ghép cặp các chữ số cộng lại tròn 10 rồi cộng nhanh. | 7 chữ số, tổng 34 · 6 chữ số, tổng 22 · 7 chữ số, tổng 34 · 6 chữ số, tổng 21 |
-| I.2 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | &lt; · &lt; · &gt; · &gt;… |
+| I.2 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | < · < · > · >… |
 | I.3 | Viết số từ dạng tổng theo hàng | Cấu tạo thập phân của số tự nhiên | Tổng gồm các số tròn chục, tròn trăm, tròn nghìn… | Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết | Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số. | 1 714 749 · 9 020 155 · 6 151 599 · 812 764 |
 | I.4 | Làm tròn số tự nhiên | Quy tắc làm tròn, giá trị hàng | Cụm từ “làm tròn đến hàng …” | Gạch ngăn hàng → xét chữ số liền sau → giữ nguyên hoặc thêm 1 | Che toàn bộ phần đuôi sau nét gạch, chỉ để lộ đúng một chữ số. | 1 970 · 24 000 · 861 100 · 817 000… |
 | I.5 | Xác định chữ số và giá trị chữ số theo hàng | Cấu tạo thập phân của số tự nhiên | Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” | Đánh số hàng từ phải sang trái rồi tra bảng hàng | Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị. | chữ số 3, giá trị 3 000 000 · chữ số 8, giá trị 800 000 · chữ số 2, giá trị 20 000 · chữ số 9, giá trị 9 000… |
@@ -365,7 +365,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | Bài | Đề tương tự | Đáp số |
 |---|---|---|
 | I.1 | Số 40 506 có mấy chữ số và tổng các chữ số bằng bao nhiêu? | 5 chữ số, tổng 15 |
-| I.2 | Điền dấu: 1 794 153 … 1 794 154 | &lt; |
+| I.2 | Điền dấu: 1 794 153 … 1 794 154 | < |
 | I.3 | Viết số gồm tổng: 30 000 + 400 + 7 | 30 407 |
 | I.4 | Làm tròn 4 762 đến hàng trăm. | 4 800 |
 | I.5 | Chữ số hàng chục của số 3 829 670 có giá trị bao nhiêu? | 70 |

@@ -34,7 +34,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài A.2** — a) 721 850 · b) 550 627 · c) 840 730 · d) 255 586
 - **Bài A.3** — a) 219 030 · b) 920 000 · c) 972 100 · d) 144 000
 - **Bài A.4** — a) 6 chữ số, tổng 19 · b) 6 chữ số, tổng 38 · c) 6 chữ số, tổng 33 · d) 6 chữ số, tổng 36
-- **Bài A.5** — a) &lt; · b) &gt; · c) &gt; · d) &gt; · e) &gt; · f) &gt;
+- **Bài A.5** — a) < · b) > · c) > · d) > · e) > · f) >
 
 **Phần B**
 
@@ -98,7 +98,7 @@ Nhìn chữ số ở hàng **liền sau** hàng cần làm tròn: nếu chữ s�
 
 *Điểm chốt:* Tổng các chữ số **không** phụ thuộc thứ tự các chữ số.
 
-### Bài A.5 — Điền dấu &lt;, &gt;, = thích hợp
+### Bài A.5 — Điền dấu <, >, = thích hợp
 
 So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 
@@ -236,7 +236,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | A.2 | Viết số từ dạng tổng theo hàng | Cấu tạo thập phân của số tự nhiên | Tổng gồm các số tròn chục, tròn trăm, tròn nghìn… | Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết | Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số. | 721 850 · 550 627 · 840 730 · 255 586 |
 | A.3 | Làm tròn số tự nhiên | Quy tắc làm tròn, giá trị hàng | Cụm từ “làm tròn đến hàng …” | Gạch ngăn hàng → xét chữ số liền sau → giữ nguyên hoặc thêm 1 | Che toàn bộ phần đuôi sau nét gạch, chỉ để lộ đúng một chữ số. | 219 030 · 920 000 · 972 100 · 144 000 |
 | A.4 | Đếm chữ số, tính tổng chữ số | Cấu tạo số, tổng chữ số | Yêu cầu “có mấy chữ số”, “tổng các chữ số” | Tách lớp để đếm; cộng rời từng chữ số | Ghép cặp các chữ số cộng lại tròn 10 rồi cộng nhanh. | 6 chữ số, tổng 19 · 6 chữ số, tổng 38 · 6 chữ số, tổng 33 · 6 chữ số, tổng 36 |
-| A.5 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | &lt; · &gt; · &gt; · &gt;… |
+| A.5 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | < · > · > · >… |
 | B.1 | Định vị chương trong hệ thống | Tên chương, nhóm chuyên đề, số dạng bài | Phần đầu phiếu ghi rõ tên cụm và nhóm chuyên đề | Đọc phần đầu phiếu rồi trả lời theo đúng tên gọi | Ghi tên chương ra góc vở, mỗi lần mở vở là đọc lại một lần. | Dấu hiệu chia hết và bài toán chia hết · A — Số học & Cấu tạo số · 7 · ở mọi bài thuộc số học & cấu tạo số, vì các chương sau đều dùng lại nền này… |
 | B.2 | Liệt kê dạng bài của chương | Danh mục dạng bài | Bảng dạng bài ở phiếu Dạng bài & Đọc vị của cùng cụm | Chép theo bảng, giữ nguyên thứ tự | Học thuộc số lượng dạng bài trước, tên từng dạng sau. | Dấu hiệu chia hết cho 2 và cho 5 · Dấu hiệu chia hết cho 9 và cho 3 · Bài toán vận dụng dấu hiệu chia hết · Bài toán về số chẵn, số lẻ và tính chất… |
 | B.3 | Định vị chương theo thời gian | Kế hoạch năm học, mốc kiểm tra | Phần đầu phiếu ghi tuần, học kỳ, mốc | Đọc phần đầu phiếu | Mỗi cụm luôn có đúng 6 buổi và 1 phiếu hướng dẫn ôn chắc. | HK1 · tuần 13 · Cuối kỳ I · cụm 7… |
@@ -368,7 +368,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | A.2 | Viết số gồm tổng: 30 000 + 400 + 7 | 30 407 |
 | A.3 | Làm tròn 4 762 đến hàng trăm. | 4 800 |
 | A.4 | Số 40 506 có mấy chữ số và tổng các chữ số bằng bao nhiêu? | 5 chữ số, tổng 15 |
-| A.5 | Điền dấu: 272 489 … 272 490 | &lt; |
+| A.5 | Điền dấu: 272 489 … 272 490 | < |
 | B.1 | Chương “Dấu hiệu chia hết và bài toán chia hết” thuộc nhóm chuyên đề nào? | A — Số học & Cấu tạo số |
 | B.2 | Chương này có mấy dạng bài chính? | 7 |
 | B.3 | Một cụm chuyên đề GITA gồm mấy buổi học? | 6 buổi |

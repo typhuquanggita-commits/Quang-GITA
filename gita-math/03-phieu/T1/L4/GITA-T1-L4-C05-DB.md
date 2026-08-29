@@ -119,7 +119,7 @@ g) Năm 2050 thuộc thế kỉ thứ mấy?
 
 ### Bài 2. (5 điểm) So sánh hai số đo khác đơn vị
 
-Điền dấu &lt;, &gt;, = thích hợp.
+Điền dấu <, >, = thích hợp.
 
 a) 37 yến … 7 553 kg
 b) 58 dm² … 6 609 cm²
@@ -318,7 +318,7 @@ f) Lỗi nào dễ mắc ở đề này?
 
 ### Bài 5. (4 điểm) Đọc vị đề số 5
 
-**Đề:** Điền dấu &lt;, &gt;, = thích hợp. 25 dag … 8 yến
+**Đề:** Điền dấu <, >, = thích hợp. 25 dag … 8 yến
 
 a) Đề này thuộc dạng bài nào?
 b) Dấu hiệu nào giúp em nhận ra?
@@ -370,7 +370,7 @@ f) Lỗi nào dễ mắc ở đề này?
 **Lỗi thường gặp:** Coi mọi năm chia hết cho 4 đều là năm nhuận. Phòng: Gặp năm tròn trăm thì kiểm tra thêm điều kiện chia hết cho 400.
 
 ### Bài B.2
-**Đáp số:** a) &lt; · b) &lt; · c) &gt; · d) &lt; · e) &lt;
+**Đáp số:** a) < · b) < · c) > · d) < · e) <
 **Hướng giải:** Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.

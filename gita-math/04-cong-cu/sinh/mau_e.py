@@ -182,10 +182,10 @@ def e_m2_01(rng, lop):
         ga = a * Fraction(bang[i][1])
         gb = b * Fraction(bang[j][1])
         y.append((f"{sv(a)} {bang[i][0]} … {sv(b)} {bang[j][0]}",
-                  "&lt;" if ga < gb else ("&gt;" if ga > gb else "=")))
+                  "<" if ga < gb else (">" if ga > gb else "=")))
     return Bai(
         tieu_de="So sánh hai số đo khác đơn vị",
-        dan="Điền dấu &lt;, &gt;, = thích hợp.",
+        dan="Điền dấu <, >, = thích hợp.",
         y=y,
         huong_giai="Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. "
                    "Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.",
@@ -202,7 +202,7 @@ def e_m2_01(rng, lop):
         pt_phuong_phap="Đổi về cùng đơn vị rồi so sánh",
         pt_nhanh="Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải "
                  "làm việc với phân số.",
-        tuong_tu=("So sánh: 3 kg … 2 500 g", "&gt;"),
+        tuong_tu=("So sánh: 3 kg … 2 500 g", ">"),
         bay="Đơn vị khác nhau",
     )
 

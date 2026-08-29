@@ -50,7 +50,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài C.2** — a) 450 kg · b) 170 kg · c) 69 kg · d) 150 kg
 - **Bài C.3** — a) xe ba bánh: 20 chiếc, xe ô tô: 12 chiếc · b) xe đạp: 22 chiếc, xe ô tô: 29 chiếc · c) xe ba bánh: 26 chiếc, xe ô tô: 18 chiếc · d) xe ba bánh: 14 chiếc, xe đạp: 28 chiếc · e) xe đạp: 28 chiếc, xe ô tô: 28 chiếc · f) xe ba bánh: 8 chiếc, xe đạp: 9 chiếc
 - **Bài C.4** — a) 283 · b) 8 · c) 63 · d) 288 · e) 75 · f) 49
-- **Bài C.5** — a) &gt; · b) &lt; · c) &gt; · d) &lt; · e) &lt;
+- **Bài C.5** — a) > · b) < · c) > · d) < · e) <
 
 **Phần D**
 
@@ -246,7 +246,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | C.2 | Ba dạng bài trung bình cộng | Quan hệ tổng – số lượng – trung bình cộng | Cụm “trung bình mỗi …” | Đi qua tổng làm trung gian | Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng. | 450 kg · 170 kg · 69 kg · 150 kg |
 | C.3 | Giả thiết tạm hai loại | Phương pháp giả thiết tạm | Hai loại đối tượng, biết tổng số và tổng của một đại lượng phụ | Giả sử đồng nhất → tính chênh → chia cho hiệu đơn vị | Kiểm tra ngay: số bánh phải nằm giữa tổng × (số bánh ít nhất) và tổng × (số bánh nhiều nhất). | xe ba bánh: 20 chiếc, xe ô tô: 12 chiếc · xe đạp: 22 chiếc, xe ô tô: 29 chiếc · xe ba bánh: 26 chiếc, xe ô tô: 18 chiếc · xe ba bánh: 14 chiếc, xe đạp: 28 chiếc… |
 | C.4 | Đếm số hạng của dãy cách đều theo điều kiện chia hết | Dãy số cách đều, dấu hiệu chia hết | Cụm “có bao nhiêu số … từ … đến …” | Tìm số đầu, số cuối hợp lệ rồi dùng công thức đếm | Số các số chia hết cho d từ 1 đến n bằng phần nguyên của n : d, nên đếm từ a đến b là b : d trừ đi (a − 1) : d. | 283 · 8 · 63 · 288… |
-| C.5 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &gt; · &lt; · &gt; · &lt;… |
+| C.5 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | > · < · > · <… |
 | D.1 | Đếm số lần xuất hiện của một chữ số | Dãy cách đều, cấu tạo số | Câu hỏi “chữ số … xuất hiện bao nhiêu lần” | Đếm theo từng hàng rồi cộng | Từ 1 đến 100, mỗi chữ số từ 1 đến 9 xuất hiện đúng 20 lần (riêng chữ số 1 là 21 lần vì có số 100). | 20 · 61 · 25 · 26 |
 | D.2 | Dãy số truy hồi có quy tắc rẽ nhánh | Dãy số cho bởi quy tắc, tính lần lượt | Đề mô tả cách lập số hạng từ số hạng liền trước | Lập bảng, tính lần lượt, bám sát vị trí | Chỉ cần tính tới số hạng được hỏi, không cần tính cả dãy. | 2, 8, 16 · 52 · 132 · 300… |
 | D.3 | Tìm số theo điều kiện của các chữ số | Cấu tạo thập phân, bài toán tổng – hiệu | Đề cho quan hệ giữa các chữ số chứ không cho số | Đặt ẩn cho từng chữ số, viết số theo cấu tạo, giải hệ điều kiện | Đổi chỗ hai chữ số của số có hai chữ số thì hiệu luôn bằng 9 lần hiệu hai chữ số. | 16, hiệu 45 · 66, hiệu 0 · 44, hiệu 0 · 61… |
@@ -378,7 +378,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | C.2 | Trung bình mỗi ngày bán 40 kg, hỏi 5 ngày bán bao nhiêu? | 200 kg |
 | C.3 | 10 xe đạp và ô tô, 28 bánh. Có mấy ô tô? | 4 ô tô |
 | C.4 | Có bao nhiêu số chẵn từ 10 đến 40? | 16 |
-| C.5 | So sánh: 3 kg … 2 500 g | &gt; |
+| C.5 | So sánh: 3 kg … 2 500 g | > |
 | D.1 | Từ 1 đến 50, chữ số 3 xuất hiện bao nhiêu lần? | 15 |
 | D.2 | Dãy: số đầu là 2, mỗi số sau bằng số trước nhân 2. Số thứ 5 là số nào? | 32 |
 | D.3 | Tìm số có hai chữ số, tổng hai chữ số bằng 11, hiệu bằng 3. | 74 |

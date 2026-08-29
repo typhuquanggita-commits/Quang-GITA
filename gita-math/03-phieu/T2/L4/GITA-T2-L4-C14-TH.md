@@ -184,7 +184,7 @@ e) Tìm số có hai chữ số, biết tổng hai chữ số bằng 4 và chữ
 
 ### Bài 3. (5 điểm) So sánh hai biểu thức mà không cần tính
 
-Điền dấu &lt;, &gt;, = và giải thích ngắn.
+Điền dấu <, >, = và giải thích ngắn.
 
 a) 385 × 3 … 498 × 3
 b) 742 × 23 … 132 × 23
@@ -403,7 +403,7 @@ d) Một quyển sách có 2 251 trang, đánh số trang từ 1. Phải dùng t
 **Lỗi thường gặp:** Tìm ra a hoặc b lớn hơn 9 mà vẫn nhận đáp số. Phòng: Sau khi tính xong, kiểm tra lại từng chữ số có nằm trong khoảng 0–9 không.
 
 ### Bài III.3
-**Đáp số:** a) &lt; · b) &gt; · c) &gt; · d) &gt; · e) &gt;
+**Đáp số:** a) < · b) > · c) > · d) > · e) >
 **Hướng giải:** Khi hai biểu thức có phần giống nhau, chỉ cần so sánh phần khác nhau: cùng cộng thêm một số thì số nào lớn hơn vẫn lớn hơn; cùng nhân với một số khác 0 cũng vậy.
 **Nhãn tư duy:** TD5, TD2. Điểm chốt: Che phần **giống nhau** đi, chỉ so phần khác nhau.
 **Lỗi thường gặp:** Tính hết cả hai vế, vừa lâu vừa dễ sai. Phòng: Dùng bút gạch bỏ phần giống nhau ở hai vế trước khi so sánh.

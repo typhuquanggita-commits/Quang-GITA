@@ -154,7 +154,7 @@ e) Một mảnh đất hình chữ nhật dài 35 m, rộng 16 m. Người ta tr
 
 ### Bài 5. (4 điểm) So sánh hai số đo khác đơn vị
 
-Điền dấu &lt;, &gt;, = thích hợp.
+Điền dấu <, >, = thích hợp.
 
 a) 76 dm² … 6 678 cm²
 b) 19 mm … 5 671 dam
@@ -389,7 +389,7 @@ d) Hai xe đi ngược chiều từ hai địa điểm cách nhau 128 km, vận 
 **Lỗi thường gặp:** Lấy chu vi để tính số gạch lát nền. Phòng: Gạch chân từ khoá chỉ vị trí: xung quanh, bao quanh, khắp, phủ kín.
 
 ### Bài II.5
-**Đáp số:** a) &gt; · b) &lt; · c) &gt; · d) &lt; · e) &gt;
+**Đáp số:** a) > · b) < · c) > · d) < · e) >
 **Hướng giải:** Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.

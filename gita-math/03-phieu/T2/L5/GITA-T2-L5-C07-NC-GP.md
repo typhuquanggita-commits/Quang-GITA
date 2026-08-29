@@ -47,7 +47,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần III**
 
 - **Bài III.1** — a) 25 250 · b) 420 · c) 55 · d) 3 725 · e) 325 · f) 420
-- **Bài III.2** — a) &gt; · b) &lt; · c) &gt; · d) &lt; · e) &lt; · f) &gt; · g) &gt;
+- **Bài III.2** — a) > · b) < · c) > · d) < · e) < · f) > · g) >
 - **Bài III.3** — a) x = 37 · b) x = 19 · c) x = 41 · d) x = 100 · e) x = 28
 - **Bài III.4** — a) 252 · b) 379 · c) 46 · d) 126 · e) không · f) 95 886
 - **Bài III.5** — a) 1 · b) 1 · c) 1 · d) 1 · e) 1
@@ -62,7 +62,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần V**
 
-- **Bài V.1** — a) 32 · b) &lt; · c) 49 · d) 576 · e) 4 · f) 169
+- **Bài V.1** — a) 32 · b) < · c) 49 · d) 576 · e) 4 · f) 169
 - **Bài V.2** — a) 12 phần 13 · b) 12 phần 13 · c) 6 phần 7 · d) 12 phần 13
 - **Bài V.3** — a) -50 · b) -25 · c) -25 · d) -5
 - **Bài V.4** — a) 40 con gà, 38 con chó · b) 13 con gà, 14 con chó · c) 32 con gà, 13 con chó · d) 8 con gà, 33 con chó · e) 11 con gà, 22 con chó · f) 17 con gà, 30 con chó
@@ -243,7 +243,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | II.4 | Tính nhanh tổng nhiều số hạng | Tính chất giao hoán, kết hợp của phép cộng | Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm | Ghép cặp tròn rồi cộng | Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10. | 200 · 232 · 455 · 200… |
 | II.5 | Tính nhanh nhờ thừa số chung | Nhân một số với một tổng, một hiệu | Hai tích cộng hoặc trừ nhau, có chung một thừa số | Đặt thừa số chung ra ngoài rồi tính trong ngoặc | Sau khi đặt thừa số chung, tổng trong ngoặc thường tròn 10 hoặc 100. | 1 330 · 1 116 · 6 351 · 5 814 |
 | III.1 | Tổng dãy số cách đều | Công thức tổng dãy cách đều | Dãy cộng có dấu … và các số cách đều nhau | Đếm số số hạng rồi áp công thức tổng | Ghép cặp đầu – cuối: mọi cặp đều có cùng tổng, chỉ cần nhân với số cặp. | 25 250 · 420 · 55 · 3 725… |
-| III.2 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | &gt; · &lt; · &gt; · &lt;… |
+| III.2 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | > · < · > · <… |
 | III.3 | Tìm x nhiều bước có ngoặc | Thứ tự thực hiện phép tính, quan hệ thành phần | x nằm trong ngoặc, ngoài ngoặc còn phép tính khác | Bóc lớp từ ngoài vào trong | Thay x tìm được vào đề, tính một lượt để thử lại. | x = 37 · x = 19 · x = 41 · x = 100… |
 | III.4 | Định vị số hạng, kiểm tra một số có thuộc dãy | Dãy cách đều, phép chia có dư | Câu hỏi “là số hạng thứ mấy”, “có thuộc dãy không” | (số − đầu) : khoảng cách, xét dư rồi cộng 1 | Mọi số hạng của dãy đều có cùng số dư khi chia cho khoảng cách. | 252 · 379 · 46 · 126… |
 | III.5 | Tính nhanh biểu thức phân số | Cộng phân số cùng mẫu, phân số đảo ngược | Các phân số cùng mẫu, tử số cộng lại tròn mẫu | Quan sát tổng tử số; nhận diện cặp phân số đảo ngược | Nếu tổng các tử số bằng mẫu số thì kết quả bằng 1, không cần tính gì thêm. | 1 · 1 · 1 · 1… |
@@ -252,7 +252,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.3 | Tổng các tích có thừa số chung | Nhân một số với một tổng, tổng dãy cách đều | Dãy cộng gồm nhiều tích cùng một thừa số | Đặt thừa số chung → tính tổng trong ngoặc bằng công thức | 1 + 2 + … + 100 = 5 050; nhớ vài mốc để nhân ngay. | 650 · 1 680 · 385 · 420 |
 | IV.4 | Biểu thức phân số nhiều phép tính | Thứ tự thực hiện phép tính, tính chất phân phối | Biểu thức gồm nhiều phân số và nhiều phép tính | Quan sát rút gọn trước, sau đó theo thứ tự thực hiện | Rút gọn chéo tử với mẫu trước khi nhân. | 101 phần 429 · 6 phần 5 · 5 phần 16 · 17 phần 100… |
 | IV.5 | Tính nhanh nhờ thừa số 0 | Tính chất nhân với 0, phép trừ hai số bằng nhau | Trong biểu thức có ngoặc chứa hai số giống nhau trừ nhau | Quét tìm cụm bằng 0 trước khi tính | Nhìn dấu ngoặc trước tiên — bẫy thường nằm ở đó. | 0 · 0 · 0 · 0 |
-| V.1 | Tính, so sánh tích bằng kĩ thuật tách – bù | Nhân một số với một tổng, một hiệu | Các thừa số hơn kém nhau rất ít | Quy về số gốc chung, so phần chênh | Với hai tích có tổng hai thừa số bằng nhau, tích nào có hai thừa số gần nhau hơn thì lớn hơn. | 32 · &lt; · 49 · 576… |
+| V.1 | Tính, so sánh tích bằng kĩ thuật tách – bù | Nhân một số với một tổng, một hiệu | Các thừa số hơn kém nhau rất ít | Quy về số gốc chung, so phần chênh | Với hai tích có tổng hai thừa số bằng nhau, tích nào có hai thừa số gần nhau hơn thì lớn hơn. | 32 · < · 49 · 576… |
 | V.2 | Tổng dãy phân số có mẫu là tích hai số liên tiếp | Tách phân số thành hiệu, phép trừ phân số | Mẫu số là 2, 6, 12, 20, 30… (tích hai số liên tiếp) | Tách thành hiệu, khử liên tiếp, giữ lại hai đầu | Kết quả luôn là 1 trừ 1 phần (n + 1), tức là n phần (n + 1). | 12 phần 13 · 12 phần 13 · 6 phần 7 · 12 phần 13 |
 | V.3 | Tổng dãy cộng trừ xen kẽ | Ghép cặp, tính chất kết hợp | Dấu cộng và trừ xen kẽ đều đặn | Ghép cặp, đếm số cặp, xử lí phần dư | Dãy 1 − 2 + 3 − … với n chẵn bằng −n : 2; với n lẻ bằng (n + 1) : 2. | -50 · -25 · -25 · -5 |
 | V.4 | Giả thiết tạm | Phương pháp giả thiết tạm | Hai loại đối tượng, biết tổng số và tổng của một đại lượng khác | Giả sử đồng nhất một loại → tính phần chênh → chia cho hiệu đơn vị | Số chó = (số chân − 2 × số con) : 2 — thuộc công thức rút gọn để nhẩm. | 40 con gà, 38 con chó · 13 con gà, 14 con chó · 32 con gà, 13 con chó · 8 con gà, 33 con chó… |
@@ -375,7 +375,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | II.4 | Tính nhanh: 37 + 145 + 63 | 245 |
 | II.5 | Tính nhanh: 47 × 25 + 47 × 75 | 4 700 |
 | III.1 | Tính nhanh: 1 + 2 + 3 + … + 100 | 5 050 |
-| III.2 | So sánh: 234 × 7 … 234 × 8 | &lt; |
+| III.2 | So sánh: 234 × 7 … 234 × 8 | < |
 | III.3 | Tìm x: (x + 12) × 5 − 8 = 132 | x = 16 |
 | III.4 | Dãy 2, 7, 12, … Số 47 là số hạng thứ mấy? | 10 |
 | III.5 | Tính nhanh: 3 phần 7 + 4 phần 7 | 1 |
@@ -384,7 +384,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | IV.3 | Tính nhanh: 5 × 1 + 5 × 2 + … + 5 × 10 | 275 |
 | IV.4 | Tính: (1 phần 2 + 1 phần 3) × 6 phần 5 | 1 |
 | IV.5 | Tính nhanh: 1 234 × 567 × (89 − 89) | 0 |
-| V.1 | So sánh: 99 × 101 … 100 × 100 | &lt; |
+| V.1 | So sánh: 99 × 101 … 100 × 100 | < |
 | V.2 | Tính nhanh: 1 phần 2 + 1 phần 6 + 1 phần 12 | 3 phần 4 |
 | V.3 | Tính nhanh: 1 − 2 + 3 − 4 + … + 9 − 10 | −5 |
 | V.4 | Có 10 con gà và chó, 28 chân. Có mấy con chó? | 4 con chó |

@@ -49,14 +49,14 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài C.1** — a) 12 ngày · b) 16 ngày · c) 5 ngày · d) 12 ngày · e) 12 ngày · f) 10 ngày
 - **Bài C.2** — a) 130 · b) 155 · c) 88 · d) 126
 - **Bài C.3** — a) 216 cm² · b) 228 cm² · c) 112 cm² · d) 208 cm² · e) 406 cm² · f) 399 cm²
-- **Bài C.4** — a) &gt; · b) &lt; · c) &gt; · d) &lt; · e) &lt; · f) &lt;
+- **Bài C.4** — a) > · b) < · c) > · d) < · e) < · f) <
 - **Bài C.5** — a) không (chữ số tận cùng 7) · b) không (tổng chữ số 13) · c) không (tổng chữ số 8) · d) không (chữ số tận cùng 3) · e) không (chữ số tận cùng 2) · f) không (chữ số tận cùng 3)
 
 **Phần D**
 
 - **Bài D.1** — a) kho B: 93 kg, xưởng: 186 kg · b) trang trại: 79 kg, hợp tác xã: 474 kg · c) xưởng: 36 kg, trang trại: 48 kg · d) thư viện: 82 kg, cửa hàng: 164 kg · e) kho B: 408 kg, xưởng: 612 kg
 - **Bài D.2** — a) 6 kg · b) 76 kg · c) 11 kg · d) 384 kg · e) 36 kg
-- **Bài D.3** — a) &lt; · b) &lt; · c) &lt; · d) &lt; · e) &lt; · f) &gt;
+- **Bài D.3** — a) < · b) < · c) < · d) < · e) < · f) >
 - **Bài D.4** — a) x = 102 · b) x = 14 · c) x = 114 · d) x = 73 · e) x = 84
 - **Bài D.5** — a) 350 · b) 420 · c) 6 175 · d) 15 150 · e) 275 · f) 5 150
 
@@ -245,11 +245,11 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | C.1 | Tỉ lệ nghịch | Đại lượng tỉ lệ nghịch, tổng số ngày công | Số người tăng thì thời gian giảm | Quy về tổng số ngày công rồi chia | Số người gấp đôi thì số ngày giảm một nửa — nhẩm được ngay khi tỉ số đẹp. | 12 ngày · 16 ngày · 5 ngày · 12 ngày… |
 | C.2 | Đếm số hạng dãy cách đều | Công thức đếm số hạng | Dãy có số đầu, số cuối và khoảng cách đều | (cuối − đầu) : khoảng cách + 1 | Dãy số tự nhiên liên tiếp từ a đến b có b − a + 1 số hạng. | 130 · 155 · 88 · 126 |
 | C.3 | Diện tích các hình phẳng cơ bản | Công thức diện tích hình bình hành, hình thoi, hình tam giác | Đề cho đáy và chiều cao, hoặc hai đường chéo | Nhận dạng hình rồi chọn công thức | Tam giác bằng nửa hình bình hành cùng đáy cùng chiều cao. | 216 cm² · 228 cm² · 112 cm² · 208 cm²… |
-| C.4 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &gt; · &lt; · &gt; · &lt;… |
+| C.4 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | > · < · > · <… |
 | C.5 | Kiểm tra chia hết bằng dấu hiệu | Dấu hiệu chia hết cho 2, 3, 5, 9 | Câu hỏi “có chia hết cho … không” | Chọn đúng dấu hiệu theo số chia rồi kiểm tra | Cộng chữ số theo cặp tròn 9, phần dư chính là số dư khi chia 9. | không (chữ số tận cùng 7) · không (tổng chữ số 13) · không (tổng chữ số 8) · không (chữ số tận cùng 3)… |
 | D.1 | Bài toán hiệu – tỉ | Tỉ số, sơ đồ đoạn thẳng | Đề cho **hiệu** và **tỉ số** | Sơ đồ → hiệu số phần → giá trị một phần | Hiệu luôn chia hết cho hiệu số phần — dùng để kiểm tra đã đọc đúng tỉ số chưa. | kho B: 93 kg, xưởng: 186 kg · trang trại: 79 kg, hợp tác xã: 474 kg · xưởng: 36 kg, trang trại: 48 kg · thư viện: 82 kg, cửa hàng: 164 kg… |
 | D.2 | Tìm phân số của một số, nhiều bước | Tìm phân số của một số | Cụm “… số còn lại”, “… số đó” | Tính tuần tự, sau mỗi bước ghi lại số còn lại | Còn lại sau ngày đầu là (1 − phân số) của tổng; nhân trực tiếp cho nhanh. | 6 kg · 76 kg · 11 kg · 384 kg… |
-| D.3 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | &lt; · &lt; · &lt; · &lt;… |
+| D.3 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | < · < · < · <… |
 | D.4 | Tìm x nhiều bước có ngoặc | Thứ tự thực hiện phép tính, quan hệ thành phần | x nằm trong ngoặc, ngoài ngoặc còn phép tính khác | Bóc lớp từ ngoài vào trong | Thay x tìm được vào đề, tính một lượt để thử lại. | x = 102 · x = 14 · x = 114 · x = 73… |
 | D.5 | Tổng dãy số cách đều | Công thức tổng dãy cách đều | Dãy cộng có dấu … và các số cách đều nhau | Đếm số số hạng rồi áp công thức tổng | Ghép cặp đầu – cuối: mọi cặp đều có cùng tổng, chỉ cần nhân với số cặp. | 350 · 420 · 6 175 · 15 150… |
 | E.1 | Tìm x qua hai bước | Quan hệ các thành phần phép tính, thứ tự thực hiện | x nằm trong một cụm có hai phép tính | Gỡ dần từ phép ngoài cùng vào trong | Thay x tìm được vào đề để thử — nhanh hơn dò lại từng bước. | Tìm x qua hai bước · x nằm trong một cụm có hai phép tính · Quan hệ các thành phần phép tính, thứ tự thực hiện · Gỡ dần từ phép ngoài cùng vào trong… |
@@ -377,18 +377,18 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | C.1 | 6 người làm xong trong 8 ngày. 12 người làm xong trong mấy ngày? | 4 ngày |
 | C.2 | Dãy 3, 6, 9, …, 99 có bao nhiêu số hạng? | 33 |
 | C.3 | Tam giác đáy 10 cm, cao 6 cm. Diện tích bằng bao nhiêu? | 30 cm² |
-| C.4 | So sánh: 3 kg … 2 500 g | &gt; |
+| C.4 | So sánh: 3 kg … 2 500 g | > |
 | C.5 | Số 477 có chia hết cho 9 không? | có |
 | D.1 | Số lớn hơn số bé 24, số bé bằng 1 phần 3 số lớn. Tìm hai số. | 12 và 36 |
 | D.2 | Có 60 kg gạo, bán 1 phần 3 rồi bán tiếp 1 phần 2 số còn lại. Còn bao nhiêu? | 20 kg |
-| D.3 | So sánh: 234 × 7 … 234 × 8 | &lt; |
+| D.3 | So sánh: 234 × 7 … 234 × 8 | < |
 | D.4 | Tìm x: (x + 12) × 5 − 8 = 132 | x = 16 |
 | D.5 | Tính nhanh: 1 + 2 + 3 + … + 100 | 5 050 |
 | E.1 | Tìm x: x × 6 + 14 = 92 | x = 13 |
 | E.2 | Tính nhanh: 1 234 × 567 × (89 − 89) | 0 |
 | E.3 | Tính: 25 + 8 × 4 | 57 |
 | E.4 | Đặt tính rồi tính: 4 328 + 1 795 | 6 123 |
-| E.5 | So sánh: 99 × 101 … 100 × 100 | &lt; |
+| E.5 | So sánh: 99 × 101 … 100 × 100 | < |
 
 ---
 

@@ -31,7 +31,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần A**
 
 - **Bài A.1** — a) 6 · b) 18 · c) 8 · d) 10 cm · e) 6 cm²
-- **Bài A.2** — a) &lt; · b) &lt; · c) &gt; · d) &gt; · e) &lt; · f) &gt; · g) &gt; · h) &lt;
+- **Bài A.2** — a) < · b) < · c) > · d) > · e) < · f) > · g) > · h) <
 - **Bài A.3** — a) 1 624 cm² · b) 1 521 cm² · c) 148 cm · d) 32 cm · e) 44 cm · f) 143 cm²
 - **Bài A.4** — a) ô (Hùng; Tiếng Anh) · b) toàn bộ hàng Hùng và toàn bộ cột Tiếng Anh · c) ô (An; Âm nhạc) · d) Mĩ thuật · e) Âm nhạc · f) phương pháp lập bảng và loại trừ
 - **Bài A.5** — a) chữ số 4, giá trị 40 000 · b) chữ số 6, giá trị 6 000 · c) chữ số 9, giá trị 900 · d) chữ số 2, giá trị 20 · e) chữ số 3, giá trị 3
@@ -80,7 +80,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 *Điểm chốt:* Đếm **theo cỡ** hoặc **theo đường kẻ**, tuyệt đối không đếm ngẫu nhiên.
 
-### Bài A.2 — Điền dấu &lt;, &gt;, = thích hợp
+### Bài A.2 — Điền dấu <, >, = thích hợp
 
 So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 
@@ -233,7 +233,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
 | A.1 | Đếm hình trong lưới | Quy tắc đếm, tổ hợp đơn giản | Hình vẽ là lưới ô vuông đều | Đếm theo đường kẻ hoặc theo cỡ hình | Số cách chọn 2 trong k đường kẻ là k × (k − 1) : 2. | 6 · 18 · 8 · 10 cm… |
-| A.2 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | &lt; · &lt; · &gt; · &gt;… |
+| A.2 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | < · < · > · >… |
 | A.3 | Chu vi, diện tích hình cơ bản | Công thức chu vi, diện tích hình chữ nhật và hình vuông | Cho chiều dài, chiều rộng hoặc cạnh | Chọn đúng công thức, ghi đúng đơn vị | Hình vuông là hình chữ nhật có dài bằng rộng — chỉ cần nhớ một bộ công thức. | 1 624 cm² · 1 521 cm² · 148 cm · 32 cm… |
 | A.4 | Suy luận loại trừ có bảng | Phương pháp lập bảng, loại trừ | Mỗi người ứng với đúng một đối tượng, đề cho các dữ kiện phủ định | Kẻ bảng, đánh dấu, lan toả theo hàng và cột | Bắt đầu từ dữ kiện khẳng định (“thích”, “là”) trước dữ kiện phủ định. | ô (Hùng; Tiếng Anh) · toàn bộ hàng Hùng và toàn bộ cột Tiếng Anh · ô (An; Âm nhạc) · Mĩ thuật… |
 | A.5 | Xác định chữ số và giá trị chữ số theo hàng | Cấu tạo thập phân của số tự nhiên | Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” | Đánh số hàng từ phải sang trái rồi tra bảng hàng | Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị. | chữ số 4, giá trị 40 000 · chữ số 6, giá trị 6 000 · chữ số 9, giá trị 900 · chữ số 2, giá trị 20… |
@@ -365,7 +365,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | Bài | Đề tương tự | Đáp số |
 |---|---|---|
 | A.1 | Lưới 2 hàng 2 cột có bao nhiêu hình vuông? | 5 |
-| A.2 | Điền dấu: 63 559 … 63 560 | &lt; |
+| A.2 | Điền dấu: 63 559 … 63 560 | < |
 | A.3 | Hình chữ nhật dài 8 cm, rộng 5 cm. Tính diện tích. | 40 cm² |
 | A.4 | Ba bạn thích ba môn khác nhau, An thích Toán, Bình không thích Anh. Bình thích môn nào? | Tiếng Việt |
 | A.5 | Chữ số hàng chục của số 46 923 có giá trị bao nhiêu? | 20 |

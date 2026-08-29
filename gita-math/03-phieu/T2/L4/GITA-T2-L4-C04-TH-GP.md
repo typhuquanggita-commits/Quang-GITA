@@ -65,7 +65,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài V.1** — a) 110 · b) 210 · c) 2 500 · d) 625 · e) 5 050
 - **Bài V.2** — a) 0,69 ngày · b) 1,75 ngày · c) 5 ngày · d) 8,89 ngày · e) 5 ngày
 - **Bài V.3** — a) 144 đơn vị · b) 78 đơn vị · c) 34 đơn vị · d) 230 đơn vị
-- **Bài V.4** — a) &gt; · b) &lt; · c) &gt; · d) &lt;
+- **Bài V.4** — a) > · b) < · c) > · d) <
 - **Bài V.5** — a) 17 con gà, 20 con chó · b) 7 con gà, 21 con chó · c) 39 con gà, 4 con chó · d) 18 con gà, 19 con chó · e) 31 con gà, 11 con chó · f) 9 con gà, 36 con chó
 
 ---
@@ -255,7 +255,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | V.1 | Tổng dãy đặc biệt | Ba công thức tổng cơ bản | Dãy toàn số lẻ, toàn số chẵn, hoặc số tự nhiên liên tiếp | Đếm số số hạng rồi áp công thức | Tổng n số lẻ đầu tiên luôn là một số chính phương — dùng để kiểm tra nhanh. | 110 · 210 · 2 500 · 625… |
 | V.2 | Tỉ lệ nghịch, so sánh hai phương án | Đại lượng tỉ lệ nghịch, tổng số ngày công | Thay đổi số người, hỏi thay đổi thời gian | Bám vào tổng số ngày công không đổi | Số người tăng gấp k lần thì số ngày giảm còn 1 phần k. | 0,69 ngày · 1,75 ngày · 5 ngày · 8,89 ngày… |
 | V.3 | Tổng – tỉ có tỉ số thay đổi | Tổng – tỉ, đại lượng không đổi | “Phải thêm (bớt) bao nhiêu để tỉ số trở thành …” | Xác định đại lượng bất biến → tính lại đại lượng kia | Số cần thêm = số bé × (tỉ số mới − tỉ số cũ). | 144 đơn vị · 78 đơn vị · 34 đơn vị · 230 đơn vị |
-| V.4 | So sánh phân số bằng kĩ thuật đặc biệt | Phần bù tới 1, phân số trung gian | Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 | So phần bù; hoặc chèn phân số trung gian | Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. | &gt; · &lt; · &gt; · &lt; |
+| V.4 | So sánh phân số bằng kĩ thuật đặc biệt | Phần bù tới 1, phân số trung gian | Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 | So phần bù; hoặc chèn phân số trung gian | Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. | > · < · > · < |
 | V.5 | Giả thiết tạm | Phương pháp giả thiết tạm | Hai loại đối tượng, biết tổng số và tổng của một đại lượng khác | Giả sử đồng nhất một loại → tính phần chênh → chia cho hiệu đơn vị | Số chó = (số chân − 2 × số con) : 2 — thuộc công thức rút gọn để nhẩm. | 17 con gà, 20 con chó · 7 con gà, 21 con chó · 39 con gà, 4 con chó · 18 con gà, 19 con chó… |
 
 ---
@@ -387,7 +387,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | V.1 | Tính: 1 + 3 + 5 + … + 19 | 100 |
 | V.2 | 6 người làm xong trong 10 ngày. Thêm 4 người thì sớm hơn mấy ngày? | 4 ngày |
 | V.3 | Số lớn gấp 2 lần số bé, tổng là 30. Thêm bao nhiêu vào số lớn để nó gấp 4 lần số bé? | 20 |
-| V.4 | So sánh: 5 phần 6 … 7 phần 8 | &lt; |
+| V.4 | So sánh: 5 phần 6 … 7 phần 8 | < |
 | V.5 | Có 10 con gà và chó, 28 chân. Có mấy con chó? | 4 con chó |
 
 ---

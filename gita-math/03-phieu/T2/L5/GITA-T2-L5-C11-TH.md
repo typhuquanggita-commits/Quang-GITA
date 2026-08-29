@@ -74,7 +74,7 @@ d) Viết số gồm tổng: 4 000 000 + 30 000 + 5 000 + 600 + 40 + 7
 e) Viết số gồm tổng: 7 000 000 + 100 000 + 20 000 + 8 000 + 800 + 70 + 8
 f) Viết số gồm tổng: 2 000 000 + 600 000 + 30 000 + 3 000 + 200 + 50 + 7
 
-### Bài 3. (3 điểm) Điền dấu &lt;, &gt;, = thích hợp
+### Bài 3. (3 điểm) Điền dấu <, >, = thích hợp
 
 Điền dấu thích hợp vào chỗ chấm.
 
@@ -339,7 +339,7 @@ e) Tích của 30 thừa số đều bằng 9 có chữ số tận cùng là ch�
 **Lỗi thường gặp:** Bỏ qua hàng khuyết nên số viết ra bị ngắn đi một chữ số. Phòng: Kẻ sẵn các ô hàng rồi mới điền chữ số vào ô tương ứng.
 
 ### Bài I.3
-**Đáp số:** a) &lt; · b) &gt; · c) &gt; · d) &gt; · e) &gt;
+**Đáp số:** a) < · b) > · c) > · d) > · e) >
 **Hướng giải:** So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Đếm số chữ số **trước**, chỉ khi bằng nhau mới so từng hàng.
 **Lỗi thường gặp:** So từ hàng đơn vị (phải sang trái) nên kết luận sai. Phòng: Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái.

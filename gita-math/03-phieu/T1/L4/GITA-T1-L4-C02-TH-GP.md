@@ -47,7 +47,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần III**
 
 - **Bài III.1** — a) x = 70 · b) x = 56 · c) x = 97 · d) x = 77
-- **Bài III.2** — a) &lt; · b) &gt; · c) &lt; · d) &gt;
+- **Bài III.2** — a) < · b) > · c) < · d) >
 - **Bài III.3** — a) 75 · b) Khoa học (26 bạn) · c) Tiếng Việt (6 bạn) · d) 20 · e) 15 · f) 31%
 - **Bài III.4** — a) 5, 12, 16 · b) 42 · c) 98 · d) 214 · e) 52
 - **Bài III.5** — a) 1 550 · b) 420 · c) 14 950 · d) 1 275 · e) 110 · f) 990
@@ -243,7 +243,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | II.4 | Tính nhanh tích, thương nhiều bước | Tính chất giao hoán, kết hợp của phép nhân | Tích có thừa số 25, 125, 50, 20; hoặc chia liên tiếp | Ghép cặp cho tích tròn rồi nhân | Chia liên tiếp cho 4 rồi 25 bằng chia cho 100. | 2 000 · 7 100 · 9 600 · 7 800 |
 | II.5 | Tính nhanh nhờ thừa số chung | Nhân một số với một tổng, một hiệu | Hai tích cộng hoặc trừ nhau, có chung một thừa số | Đặt thừa số chung ra ngoài rồi tính trong ngoặc | Sau khi đặt thừa số chung, tổng trong ngoặc thường tròn 10 hoặc 100. | 174 · 4 698 · 1 085 · 2 576 |
 | III.1 | Tìm x nhiều bước có ngoặc | Thứ tự thực hiện phép tính, quan hệ thành phần | x nằm trong ngoặc, ngoài ngoặc còn phép tính khác | Bóc lớp từ ngoài vào trong | Thay x tìm được vào đề, tính một lượt để thử lại. | x = 70 · x = 56 · x = 97 · x = 77 |
-| III.2 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | &lt; · &gt; · &lt; · &gt; |
+| III.2 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | < · > · < · > |
 | III.3 | Đọc bảng số liệu thống kê | Thống kê mô tả sơ cấp, trung bình cộng, tỉ số phần trăm | Đề cho bảng hoặc biểu đồ kèm nhiều câu hỏi | Ghi lại số liệu, trả lời từng câu bằng công cụ tương ứng | Tính tổng một lần rồi dùng lại cho mọi câu hỏi phần trăm. | 75 · Khoa học (26 bạn) · Tiếng Việt (6 bạn) · 20… |
 | III.4 | Dãy số truy hồi có quy tắc rẽ nhánh | Dãy số cho bởi quy tắc, tính lần lượt | Đề mô tả cách lập số hạng từ số hạng liền trước | Lập bảng, tính lần lượt, bám sát vị trí | Chỉ cần tính tới số hạng được hỏi, không cần tính cả dãy. | 5, 12, 16 · 42 · 98 · 214… |
 | III.5 | Tổng dãy số cách đều | Công thức tổng dãy cách đều | Dãy cộng có dấu … và các số cách đều nhau | Đếm số số hạng rồi áp công thức tổng | Ghép cặp đầu – cuối: mọi cặp đều có cùng tổng, chỉ cần nhân với số cặp. | 1 550 · 420 · 14 950 · 1 275… |
@@ -375,7 +375,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | II.4 | Tính nhanh: 37 × 25 × 4 | 3 700 |
 | II.5 | Tính nhanh: 47 × 25 + 47 × 75 | 4 700 |
 | III.1 | Tìm x: (x + 12) × 5 − 8 = 132 | x = 16 |
-| III.2 | So sánh: 234 × 7 … 234 × 8 | &lt; |
+| III.2 | So sánh: 234 × 7 … 234 × 8 | < |
 | III.3 | Bảng: Toán 10, Văn 6, Anh 4. Trung bình mỗi môn bao nhiêu bạn? | 6,67 bạn |
 | III.4 | Dãy: số đầu là 2, mỗi số sau bằng số trước nhân 2. Số thứ 5 là số nào? | 32 |
 | III.5 | Tính nhanh: 1 + 2 + 3 + … + 100 | 5 050 |
@@ -384,7 +384,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | IV.3 | Tính: (1 phần 2 + 1 phần 3) × 6 phần 5 | 1 |
 | IV.4 | Tính nhanh: 5 × 1 + 5 × 2 + … + 5 × 10 | 275 |
 | IV.5 | Tính nhanh: 1 234 × 567 × (89 − 89) | 0 |
-| V.1 | So sánh: 99 × 101 … 100 × 100 | &lt; |
+| V.1 | So sánh: 99 × 101 … 100 × 100 | < |
 | V.2 | 13 bạn sinh trong 12 tháng, chứng tỏ có 2 bạn cùng tháng sinh. | đúng, vì 13 > 12 × 1 |
 | V.3 | Số lớn gấp 2 lần số bé, tổng là 30. Thêm bao nhiêu vào số lớn để nó gấp 4 lần số bé? | 20 |
 | V.4 | Tính: 1 + 3 + 5 + … + 19 | 100 |

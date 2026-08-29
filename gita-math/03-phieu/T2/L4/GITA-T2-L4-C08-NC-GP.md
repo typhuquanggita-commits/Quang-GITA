@@ -34,7 +34,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài I.2** — a) 360 161 · b) 470 676 · c) 540 368 · d) 638 572 · e) 502 406 · f) 259 273
 - **Bài I.3** — a) 9 000 · b) 860 000 · c) 4 000 000 · d) 3 500 000 · e) 2 800 000 · f) 41 000 · g) 70 000 · h) 780
 - **Bài I.4** — a) 1 phần 8 · b) 3 phần 5 · c) 4 · d) 7 phần 2 · e) 3 phần 5 · f) 1 phần 4
-- **Bài I.5** — a) &gt; · b) &lt; · c) &lt; · d) &lt; · e) &lt; · f) &gt; · g) &gt; · h) &gt;
+- **Bài I.5** — a) > · b) < · c) < · d) < · e) < · f) > · g) > · h) >
 
 **Phần II**
 
@@ -63,7 +63,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần V**
 
 - **Bài V.1** — a) 21 con gà, 31 con chó · b) 6 con gà, 28 con chó · c) 26 con gà, 28 con chó · d) 15 con gà, 38 con chó
-- **Bài V.2** — a) &gt; · b) &lt; · c) &gt; · d) &lt;
+- **Bài V.2** — a) > · b) < · c) > · d) <
 - **Bài V.3** — a) -50 · b) -50 · c) -10 · d) -25
 - **Bài V.4** — a) 120 cm · b) 60 cm · c) 60 cm · d) 144 cm · e) 272 cm
 - **Bài V.5** — a) 5 · b) 27 · c) 33 · d) 14
@@ -236,7 +236,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | I.2 | Viết số từ dạng tổng theo hàng | Cấu tạo thập phân của số tự nhiên | Tổng gồm các số tròn chục, tròn trăm, tròn nghìn… | Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết | Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số. | 360 161 · 470 676 · 540 368 · 638 572… |
 | I.3 | Đổi đơn vị đo | Bảng đơn vị đo độ dài, khối lượng | Dấu … giữa hai đơn vị khác nhau | Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10 | Số bậc chính là số chữ số 0 phải thêm vào (hoặc bớt đi). | 9 000 · 860 000 · 4 000 000 · 3 500 000… |
 | I.4 | Rút gọn phân số | Tính chất cơ bản của phân số | Tử số và mẫu số có ước chung lớn hơn 1 | Chia cả tử và mẫu cho ước chung | Tìm ngay ước chung lớn nhất để rút gọn một lần là xong. | 1 phần 8 · 3 phần 5 · 4 · 7 phần 2… |
-| I.5 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | &gt; · &lt; · &lt; · &lt;… |
+| I.5 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | > · < · < · <… |
 | II.1 | Tính nhanh tổng nhiều số hạng | Tính chất giao hoán, kết hợp của phép cộng | Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm | Ghép cặp tròn rồi cộng | Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10. | 200 · 200 · 135 · 200… |
 | II.2 | Tính nhanh tích, thương nhiều bước | Tính chất giao hoán, kết hợp của phép nhân | Tích có thừa số 25, 125, 50, 20; hoặc chia liên tiếp | Ghép cặp cho tích tròn rồi nhân | Chia liên tiếp cho 4 rồi 25 bằng chia cho 100. | 36 000 · 93 · 16 · 8 600… |
 | II.3 | Bốn phép tính với phân số | Quy đồng, nhân chia phân số | Biểu thức chỉ gồm phân số | Chọn quy tắc theo phép tính, rút gọn cuối cùng | Rút gọn chéo trước khi nhân để số nhỏ, tính nhanh và ít sai. | 3 phần 7 · 13 phần 30 · 8 phần 5 · 1 phần 16… |
@@ -253,7 +253,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.4 | Chuyển đổi giữa hai đại lượng, tổng không đổi | Bất biến tổng, biến thiên hiệu | “Chuyển … từ bên này sang bên kia” | Xét đại lượng không đổi (tổng) và đại lượng đổi gấp đôi (hiệu) | Sau khi chuyển, mỗi bên bằng nửa tổng — tính nửa tổng rồi trừ là ra ngay. | 100 quyển · 22 quyển · 60 quyển · 102 quyển |
 | IV.5 | Biểu thức phân số nhiều phép tính | Thứ tự thực hiện phép tính, tính chất phân phối | Biểu thức gồm nhiều phân số và nhiều phép tính | Quan sát rút gọn trước, sau đó theo thứ tự thực hiện | Rút gọn chéo tử với mẫu trước khi nhân. | 9 phần 32 · 5 phần 7 · 256 phần 195 · 4 phần 3… |
 | V.1 | Giả thiết tạm | Phương pháp giả thiết tạm | Hai loại đối tượng, biết tổng số và tổng của một đại lượng khác | Giả sử đồng nhất một loại → tính phần chênh → chia cho hiệu đơn vị | Số chó = (số chân − 2 × số con) : 2 — thuộc công thức rút gọn để nhẩm. | 21 con gà, 31 con chó · 6 con gà, 28 con chó · 26 con gà, 28 con chó · 15 con gà, 38 con chó |
-| V.2 | So sánh phân số bằng kĩ thuật đặc biệt | Phần bù tới 1, phân số trung gian | Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 | So phần bù; hoặc chèn phân số trung gian | Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. | &gt; · &lt; · &gt; · &lt; |
+| V.2 | So sánh phân số bằng kĩ thuật đặc biệt | Phần bù tới 1, phân số trung gian | Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 | So phần bù; hoặc chèn phân số trung gian | Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. | > · < · > · < |
 | V.3 | Tổng dãy cộng trừ xen kẽ | Ghép cặp, tính chất kết hợp | Dấu cộng và trừ xen kẽ đều đặn | Ghép cặp, đếm số cặp, xử lí phần dư | Dãy 1 − 2 + 3 − … với n chẵn bằng −n : 2; với n lẻ bằng (n + 1) : 2. | -50 · -50 · -10 · -25 |
 | V.4 | Cắt ghép hình, biến thiên chu vi | Chu vi, đường bao của hình | Từ khoá “ghép”, “cắt thành”, “xếp thành” | Xác định đường bao mới rồi cộng độ dài | Mỗi nhát cắt làm tổng chu vi tăng thêm hai lần chiều dài nhát cắt. | 120 cm · 60 cm · 60 cm · 144 cm… |
 | V.5 | Tính, so sánh tích bằng kĩ thuật tách – bù | Nhân một số với một tổng, một hiệu | Các thừa số hơn kém nhau rất ít | Quy về số gốc chung, so phần chênh | Với hai tích có tổng hai thừa số bằng nhau, tích nào có hai thừa số gần nhau hơn thì lớn hơn. | 5 · 27 · 33 · 14 |
@@ -368,7 +368,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | I.2 | Viết số gồm tổng: 30 000 + 400 + 7 | 30 407 |
 | I.3 | 5 km = … m | 5 000 |
 | I.4 | Rút gọn 18 phần 24. | 3 phần 4 |
-| I.5 | So sánh: 3 phần 5 … 3 phần 7 | &gt; |
+| I.5 | So sánh: 3 phần 5 … 3 phần 7 | > |
 | II.1 | Tính nhanh: 37 + 145 + 63 | 245 |
 | II.2 | Tính nhanh: 37 × 25 × 4 | 3 700 |
 | II.3 | Tính: 2 phần 3 + 1 phần 6 | 5 phần 6 |
@@ -385,10 +385,10 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | IV.4 | Tổ Một có 30 quyển, tổ Hai có 20 quyển. Chuyển mấy quyển để bằng nhau? | 5 quyển |
 | IV.5 | Tính: (1 phần 2 + 1 phần 3) × 6 phần 5 | 1 |
 | V.1 | Có 10 con gà và chó, 28 chân. Có mấy con chó? | 4 con chó |
-| V.2 | So sánh: 5 phần 6 … 7 phần 8 | &lt; |
+| V.2 | So sánh: 5 phần 6 … 7 phần 8 | < |
 | V.3 | Tính nhanh: 1 − 2 + 3 − 4 + … + 9 − 10 | −5 |
 | V.4 | Ghép 3 hình vuông cạnh 4 cm thành hàng. Chu vi hình chữ nhật là bao nhiêu? | 32 cm |
-| V.5 | So sánh: 99 × 101 … 100 × 100 | &lt; |
+| V.5 | So sánh: 99 × 101 … 100 × 100 | < |
 
 ---
 

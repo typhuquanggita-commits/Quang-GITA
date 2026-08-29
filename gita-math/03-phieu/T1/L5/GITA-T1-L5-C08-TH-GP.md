@@ -32,7 +32,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài I.1** — a) 486 · b) 162 · c) 64 · d) 324 · e) 3 750
 - **Bài I.2** — a) 47 · b) 51 · c) 55 · d) 67
-- **Bài I.3** — a) 0,7 · b) &gt; · c) 2 · d) &gt; · e) 0,276 · f) 3 · g) 0,35 · h) 4
+- **Bài I.3** — a) 0,7 · b) > · c) 2 · d) > · e) 0,276 · f) 3 · g) 0,35 · h) 4
 - **Bài I.4** — a) 73, 84, 95 · b) 71, 80, 89 · c) 43, 47, 51 · d) 22, 24, 26
 - **Bài I.5** — a) 40 · b) 49 · c) 12 · d) 40 · e) 55
 
@@ -234,7 +234,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 |---|---|---|---|---|---|---|
 | I.1 | Dãy số theo quy luật nhân | Dãy nhân, phép nhân liên tiếp | Các số tăng rất nhanh, hiệu không đều | Thử hiệu, rồi thử thương | Số sau gấp đôi số trước là dấu hiệu quen nhất của dãy nhân. | 486 · 162 · 64 · 324… |
 | I.2 | Tìm số hạng thứ n của dãy cách đều | Công thức số hạng tổng quát của dãy cách đều | Đề hỏi “số hạng thứ …” | Đếm số khoảng rồi nhân với khoảng cách | Thử công thức với n = 1 và n = 2 để chắc chắn không lệch một khoảng. | 47 · 51 · 55 · 67 |
-| I.3 | Số thập phân — hàng, so sánh, chuyển đổi | Cấu tạo số thập phân, quan hệ phân số – số thập phân | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 | Xét theo hàng từ trái sang phải | Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. | 0,7 · &gt; · 2 · &gt;… |
+| I.3 | Số thập phân — hàng, so sánh, chuyển đổi | Cấu tạo số thập phân, quan hệ phân số – số thập phân | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 | Xét theo hàng từ trái sang phải | Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. | 0,7 · > · 2 · >… |
 | I.4 | Tìm quy luật dãy cách đều | Dãy số cách đều | Dãy số kèm dấu … ở cuối | Tính hiệu các cặp liên tiếp rồi cộng tiếp | Ghi khoảng cách vào giữa các số hạng để nhìn ra quy luật ngay. | 73, 84, 95 · 71, 80, 89 · 43, 47, 51 · 22, 24, 26 |
 | I.5 | Điền số hạng còn thiếu của dãy cách đều | Dãy số cách đều | Dãy có ô trống ở giữa | Xác định khoảng cách từ cặp liền nhau đã biết | Nếu chỗ trống nằm giữa hai số đã biết thì nó bằng trung bình cộng của hai số ấy. | 40 · 49 · 12 · 40… |
 | II.1 | Tổng dãy số cách đều | Công thức tổng dãy cách đều | Dãy cộng dài, các số cách đều | Đếm số hạng → (đầu + cuối) × số hạng : 2 | Tổng = trung bình cộng của số đầu và số cuối, nhân với số số hạng. | 1 005 · 2 060 · 810 · 575 |
@@ -366,7 +366,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 |---|---|---|
 | I.1 | Viết tiếp: 3, 6, 12, 24, … | 48 |
 | I.2 | Dãy 5, 9, 13, … số hạng thứ 20 là số nào? | 81 |
-| I.3 | So sánh: 0,5 … 0,45 | &gt; |
+| I.3 | So sánh: 0,5 … 0,45 | > |
 | I.4 | Viết tiếp ba số: 2, 5, 8, 11, … | 14, 17, 20 |
 | I.5 | Điền số: 4, 9, …, 19, 24 | 14 |
 | II.1 | Tính: 2 + 4 + 6 + … + 20 | 110 |

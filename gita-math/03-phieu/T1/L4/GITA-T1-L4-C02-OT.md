@@ -136,7 +136,7 @@ d) Kho A chứa nhiều hơn trang trại 47 kg thóc. Số thóc ở trang tr�
 
 ### Bài 4. (4 điểm) So sánh hai biểu thức mà không cần tính
 
-Điền dấu &lt;, &gt;, = và giải thích ngắn.
+Điền dấu <, >, = và giải thích ngắn.
 
 a) 490 × 10 … 490 × 11
 b) 430 × 16 … 430 × 17
@@ -389,7 +389,7 @@ f) Cột 6 — Kết quả?
 **Lỗi thường gặp:** Dùng nhầm công thức của tổng – tỉ cho bài hiệu – tỉ. Phòng: Đọc kĩ: đề cho “tổng” hay cho “nhiều hơn”? Ghi rõ ra trước khi vẽ.
 
 ### Bài II.4
-**Đáp số:** a) &lt; · b) &lt; · c) &lt; · d) &lt; · e) &lt; · f) &lt;
+**Đáp số:** a) < · b) < · c) < · d) < · e) < · f) <
 **Hướng giải:** Khi hai biểu thức có phần giống nhau, chỉ cần so sánh phần khác nhau: cùng cộng thêm một số thì số nào lớn hơn vẫn lớn hơn; cùng nhân với một số khác 0 cũng vậy.
 **Nhãn tư duy:** TD5, TD2. Điểm chốt: Che phần **giống nhau** đi, chỉ so phần khác nhau.
 **Lỗi thường gặp:** Tính hết cả hai vế, vừa lâu vừa dễ sai. Phòng: Dùng bút gạch bỏ phần giống nhau ở hai vế trước khi so sánh.

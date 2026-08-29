@@ -40,14 +40,14 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài II.1** — a) 57 cm² · b) 465 cm² · c) 570 cm² · d) 189 cm² · e) 100 cm²
 - **Bài II.2** — a) XXI · b) 30 · c) không · d) 4 tuần 2 ngày · e) không
-- **Bài II.3** — a) &lt; · b) &lt; · c) &lt; · d) &lt;
+- **Bài II.3** — a) < · b) < · c) < · d) <
 - **Bài II.4** — a) 1 026 · b) 1 386 · c) 570 · d) 351 · e) 2 871 · f) 1 764 · g) 252
 - **Bài II.5** — a) 3 632 · b) 8 219 · c) 20 278 · d) 4 085
 
 **Phần III**
 
 - **Bài III.1** — a) 5 tạ · b) 17 tạ 50 kg · c) 18 tạ 50 kg · d) 12 tạ · e) 16 tạ 20 kg · f) 6 tạ 50 kg
-- **Bài III.2** — a) &lt; · b) &lt; · c) &gt; · d) &lt; · e) &lt; · f) &lt;
+- **Bài III.2** — a) < · b) < · c) > · d) < · e) < · f) <
 - **Bài III.3** — a) 18 giờ 21 phút · b) 8 giờ 30 phút · c) 9 giờ 32 phút · d) 15 giờ 31 phút · e) 18 giờ 14 phút
 - **Bài III.4** — a) 3, 9, 15 · b) 45 · c) 111 · d) 249 · e) 60
 - **Bài III.5** — a) 25 viên · b) 16 viên · c) 13 viên · d) 5 viên · e) 5 viên
@@ -239,11 +239,11 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | I.5 | Số đo có nhiều đơn vị | Bảng đơn vị khối lượng | Số đo viết dưới dạng “… tấn … tạ … kg” | Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư | Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ. | 7 tạ 15 kg · 4 919 · 2 tạ 57 kg · 5 tạ 95 kg… |
 | II.1 | Diện tích các hình phẳng cơ bản | Công thức diện tích hình bình hành, hình thoi, hình tam giác | Đề cho đáy và chiều cao, hoặc hai đường chéo | Nhận dạng hình rồi chọn công thức | Tam giác bằng nửa hình bình hành cùng đáy cùng chiều cao. | 57 cm² · 465 cm² · 570 cm² · 189 cm²… |
 | II.2 | Lịch và đơn vị thời gian lớn | Số ngày các tháng, năm nhuận, thế kỉ | Đề hỏi về tháng, năm, thế kỉ | Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400 | Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ. | XXI · 30 · không · 4 tuần 2 ngày… |
-| II.3 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &lt; · &lt; · &lt; · &lt; |
+| II.3 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | < · < · < · < |
 | II.4 | Nhân nhẩm nhờ tách thừa số | Nhân một số với một tổng, một hiệu | Thừa số là 9, 11, 19, 21, 99, 101… | Tách về số tròn rồi bù trừ | × 11 với số có hai chữ số: viết hai chữ số ra hai đầu, tổng của chúng đặt vào giữa (nhớ sang trái nếu tổng vượt 9). | 1 026 · 1 386 · 570 · 351… |
 | II.5 | Bốn phép tính với số đo | Đổi đơn vị, bốn phép tính | Các số hạng có đơn vị khác nhau trong cùng một phép tính | Đổi về đơn vị của kết quả rồi tính | Đọc chỗ chấm trước, biết ngay đơn vị đích. | 3 632 · 8 219 · 20 278 · 4 085 |
 | III.1 | Bài toán đại lượng có lời văn | Nhân, chia số tự nhiên; đổi đơn vị khối lượng | Đơn vị trong câu hỏi khác đơn vị trong dữ kiện | Tính theo đơn vị dữ kiện rồi đổi ở bước cuối | 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ. | 5 tạ · 17 tạ 50 kg · 18 tạ 50 kg · 12 tạ… |
-| III.2 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | &lt; · &lt; · &gt; · &lt;… |
+| III.2 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | < · < · > · <… |
 | III.3 | Tính thời điểm trong ngày | Quan hệ giờ – phút, phép chia có dư | Cho thời điểm bắt đầu và khoảng thời gian | Quy về phút, cộng trừ, đổi lại | Cộng tròn giờ trước rồi cộng phần phút lẻ sau. | 18 giờ 21 phút · 8 giờ 30 phút · 9 giờ 32 phút · 15 giờ 31 phút… |
 | III.4 | Dãy số truy hồi có quy tắc rẽ nhánh | Dãy số cho bởi quy tắc, tính lần lượt | Đề mô tả cách lập số hạng từ số hạng liền trước | Lập bảng, tính lần lượt, bám sát vị trí | Chỉ cần tính tới số hạng được hỏi, không cần tính cả dãy. | 3, 9, 15 · 45 · 111 · 249… |
 | III.5 | Nguyên lí Đi-rích-lê | Nguyên lí ngăn kéo, lập luận trường hợp xấu nhất | Cụm “ít nhất … để chắc chắn …” | Dựng tình huống xấu nhất rồi cộng 1 | Công thức: số loại × (số cần − 1) + 1. | 25 viên · 16 viên · 13 viên · 5 viên… |
@@ -371,11 +371,11 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | I.5 | 3 450 kg = … tấn … tạ … kg | 3 tấn 4 tạ 50 kg |
 | II.1 | Tam giác đáy 10 cm, cao 6 cm. Diện tích bằng bao nhiêu? | 30 cm² |
 | II.2 | Năm 1975 thuộc thế kỉ thứ mấy? | XX |
-| II.3 | So sánh: 3 kg … 2 500 g | &gt; |
+| II.3 | So sánh: 3 kg … 2 500 g | > |
 | II.4 | Tính nhẩm: 46 × 11 | 506 |
 | II.5 | 2 m 30 cm + 150 cm = … cm | 380 |
 | III.1 | Xe chở 20 bao gạo, mỗi bao 50 kg. Xe chở mấy tạ? | 10 tạ |
-| III.2 | So sánh: 234 × 7 … 234 × 8 | &lt; |
+| III.2 | So sánh: 234 × 7 … 234 × 8 | < |
 | III.3 | Tàu chạy lúc 7 giờ 40 phút, đi hết 2 giờ 35 phút. Đến lúc mấy giờ? | 10 giờ 15 phút |
 | III.4 | Dãy: số đầu là 2, mỗi số sau bằng số trước nhân 2. Số thứ 5 là số nào? | 32 |
 | III.5 | Hộp có bi 3 màu, lấy ít nhất mấy viên để chắc chắn có 2 viên cùng màu? | 4 viên |

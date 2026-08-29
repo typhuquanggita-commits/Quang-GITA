@@ -63,7 +63,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần V**
 
 - **Bài V.1** — a) Đếm chữ số theo nhóm · b) Đếm số hạng, cấu tạo số · c) Bài toán đánh số trang · d) Chia nhóm theo độ dài số rồi nhân, cộng · e) Sách 99 trang dùng đúng 189 chữ số — nhớ mốc này. · f) 91 · 51 · 31 · 252
-- **Bài V.2** — a) So sánh hai số tự nhiên · b) Thứ tự trong tập số tự nhiên · c) Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = · d) Đếm chữ số → so từng hàng từ trái sang phải · e) Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. · f) &lt; · &gt; · &lt; · &gt;…
+- **Bài V.2** — a) So sánh hai số tự nhiên · b) Thứ tự trong tập số tự nhiên · c) Dấu … giữa hai số, yêu cầu điền <, >, = · d) Đếm chữ số → so từng hàng từ trái sang phải · e) Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. · f) < · > · < · >…
 - **Bài V.3** — a) Nhận biết chẵn – lẻ và số liền kề · b) Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2 · c) Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” · d) Xét chữ số tận cùng; cộng hoặc trừ 1 đơn vị · e) Che hết các chữ số, chỉ để lộ chữ số cuối. · f) 2 044 · 10 804 · 54 588 · số lẻ…
 - **Bài V.4** — a) Đổi chỗ chữ số · b) Cấu tạo số có hai chữ số · c) “Viết theo thứ tự ngược lại”, “đổi chỗ hai chữ số” · d) Viết cả hai số theo cấu tạo rồi lấy hiệu · e) Hiệu = 9 × (chữ số hàng chục − chữ số hàng đơn vị). · f) 28, hơn kém 54 đơn vị · 58, hơn kém 27 đơn vị · 24, hơn kém 18 đơn vị · 25, hơn kém 27 đơn vị…
 - **Bài V.5** — a) Đếm chữ số theo nhóm · b) Đếm số hạng, cấu tạo số · c) Bài toán đánh số trang · d) Chia nhóm theo độ dài số rồi nhân, cộng · e) Sách 99 trang dùng đúng 189 chữ số — nhớ mốc này. · f) 91 · 51 · 31 · 252
@@ -253,7 +253,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.4 | Đổi chỗ chữ số | Cấu tạo số có hai chữ số | “Viết theo thứ tự ngược lại”, “đổi chỗ hai chữ số” | Viết cả hai số theo cấu tạo rồi lấy hiệu | Hiệu = 9 × (chữ số hàng chục − chữ số hàng đơn vị). | 47, hơn kém 27 đơn vị · 83, hơn kém 45 đơn vị · 76, hơn kém 9 đơn vị · 31, hơn kém 18 đơn vị… |
 | IV.5 | Ghép hình, chu vi và diện tích | Chu vi, diện tích hình chữ nhật | “Ghép … hình vuông thành …” | Xác định kích thước hình mới rồi áp công thức | Ghép thành hàng ngang thì chiều rộng vẫn bằng cạnh hình vuông. | chu vi 120 cm, diện tích 675 cm² · chu vi 120 cm, diện tích 675 cm² · chu vi 180 cm, diện tích 1 125 cm² · chu vi 40 cm, diện tích 64 cm² |
 | V.1 | Đếm chữ số theo nhóm | Đếm số hạng, cấu tạo số | Bài toán đánh số trang | Chia nhóm theo độ dài số rồi nhân, cộng | Sách 99 trang dùng đúng 189 chữ số — nhớ mốc này. | Đếm chữ số theo nhóm · Đếm số hạng, cấu tạo số · Bài toán đánh số trang · Chia nhóm theo độ dài số rồi nhân, cộng… |
-| V.2 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | So sánh hai số tự nhiên · Thứ tự trong tập số tự nhiên · Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = · Đếm chữ số → so từng hàng từ trái sang phải… |
+| V.2 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | So sánh hai số tự nhiên · Thứ tự trong tập số tự nhiên · Dấu … giữa hai số, yêu cầu điền <, >, = · Đếm chữ số → so từng hàng từ trái sang phải… |
 | V.3 | Nhận biết chẵn – lẻ và số liền kề | Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2 | Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” | Xét chữ số tận cùng; cộng hoặc trừ 1 đơn vị | Che hết các chữ số, chỉ để lộ chữ số cuối. | Nhận biết chẵn – lẻ và số liền kề · Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2 · Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” · Xét chữ số tận cùng; cộng hoặc trừ 1 đơn vị… |
 | V.4 | Đổi chỗ chữ số | Cấu tạo số có hai chữ số | “Viết theo thứ tự ngược lại”, “đổi chỗ hai chữ số” | Viết cả hai số theo cấu tạo rồi lấy hiệu | Hiệu = 9 × (chữ số hàng chục − chữ số hàng đơn vị). | Đổi chỗ chữ số · Cấu tạo số có hai chữ số · “Viết theo thứ tự ngược lại”, “đổi chỗ hai chữ số” · Viết cả hai số theo cấu tạo rồi lấy hiệu… |
 | V.5 | Đếm chữ số theo nhóm | Đếm số hạng, cấu tạo số | Bài toán đánh số trang | Chia nhóm theo độ dài số rồi nhân, cộng | Sách 99 trang dùng đúng 189 chữ số — nhớ mốc này. | Đếm chữ số theo nhóm · Đếm số hạng, cấu tạo số · Bài toán đánh số trang · Chia nhóm theo độ dài số rồi nhân, cộng… |
@@ -385,7 +385,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | IV.4 | Số 52 đổi chỗ hai chữ số được 25. Hai số hơn kém nhau bao nhiêu? | 27 |
 | IV.5 | Ghép 3 hình vuông cạnh 4 cm thành hàng. Chu vi bằng bao nhiêu? | 32 cm |
 | V.1 | Vở 20 trang dùng hết bao nhiêu chữ số? | 31 |
-| V.2 | Điền dấu: 12 518 … 12 519 | &lt; |
+| V.2 | Điền dấu: 12 518 … 12 519 | < |
 | V.3 | Số liền sau của 2 042 là số nào? | 2 043 |
 | V.4 | Số 52 đổi chỗ hai chữ số được 25. Hai số hơn kém nhau bao nhiêu? | 27 |
 | V.5 | Vở 20 trang dùng hết bao nhiêu chữ số? | 31 |

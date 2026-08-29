@@ -34,7 +34,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài I.2** — a) 1 112 · b) 3 064 · c) 2 650 · d) 331
 - **Bài I.3** — a) 25% · b) 60 · c) 40 · d) 300 · e) 60%
 - **Bài I.4** — a) 442 cm² · b) 99 cm² · c) 287 cm² · d) 648 cm² · e) 148 cm²
-- **Bài I.5** — a) &gt; · b) &lt; · c) &gt; · d) &lt;
+- **Bài I.5** — a) > · b) < · c) > · d) <
 
 **Phần II**
 
@@ -66,7 +66,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài V.2** — a) Tính thời điểm trong ngày · b) Quan hệ giờ – phút, phép chia có dư · c) Cho thời điểm bắt đầu và khoảng thời gian · d) Quy về phút, cộng trừ, đổi lại · e) Cộng tròn giờ trước rồi cộng phần phút lẻ sau. · f) 19 giờ 7 phút · 17 giờ 20 phút · 11 giờ 7 phút · 11 giờ 15 phút
 - **Bài V.3** — a) Đổi đơn vị đo · b) Bảng đơn vị đo độ dài, khối lượng · c) Dấu … giữa hai đơn vị khác nhau · d) Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10 · e) Số bậc chính là số chữ số 0 phải thêm vào (hoặc bớt đi). · f) 200 · 65 000 · 30 · 820…
 - **Bài V.4** — a) Số đo có nhiều đơn vị · b) Bảng đơn vị khối lượng · c) Số đo viết dưới dạng “… tấn … tạ … kg” · d) Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư · e) Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ. · f) 1 942 · 2 tấn 9 tạ 20 kg · 6 tấn 9 tạ 12 kg · 4 tấn 8 tạ 20 kg…
-- **Bài V.5** — a) So sánh số đo đại lượng · b) Bảng đơn vị đo, so sánh số tự nhiên · c) Hai vế có đơn vị khác nhau · d) Đổi về cùng đơn vị rồi so sánh · e) Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. · f) &lt; · &gt; · &lt; · &gt;…
+- **Bài V.5** — a) So sánh số đo đại lượng · b) Bảng đơn vị đo, so sánh số tự nhiên · c) Hai vế có đơn vị khác nhau · d) Đổi về cùng đơn vị rồi so sánh · e) Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. · f) < · > · < · >…
 
 ---
 
@@ -236,7 +236,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | I.2 | Bốn phép tính với số đo | Đổi đơn vị, bốn phép tính | Các số hạng có đơn vị khác nhau trong cùng một phép tính | Đổi về đơn vị của kết quả rồi tính | Đọc chỗ chấm trước, biết ngay đơn vị đích. | 1 112 · 3 064 · 2 650 · 331 |
 | I.3 | Ba dạng toán tỉ số phần trăm | Tỉ số phần trăm | Kí hiệu %, cụm “… % của …” | Xác định đại lượng ứng với 100% rồi chọn dạng | Coi 100% là “cả phần”, 1% là “cả phần chia 100” — mọi dạng đều quy về 1%. | 25% · 60 · 40 · 300… |
 | I.4 | Diện tích hình thang | Công thức diện tích hình thang | Đề cho hai đáy và chiều cao | Tổng hai đáy × chiều cao : 2 | Nếu tổng hai đáy là số chẵn thì chia 2 ngay từ đầu cho gọn. | 442 cm² · 99 cm² · 287 cm² · 648 cm²… |
-| I.5 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &gt; · &lt; · &gt; · &lt; |
+| I.5 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | > · < · > · < |
 | II.1 | Dãy số tự nhiên liên tiếp có tổng cho trước | Trung bình cộng, dãy cách đều | Cụm “… số tự nhiên liên tiếp có tổng bằng …” | Tìm số giữa bằng phép chia rồi suy ra hai đầu dãy | Tổng của n số liên tiếp (n lẻ) luôn chia hết cho n. | 316 · 82 · 373 · 183… |
 | II.2 | Đếm số lần xuất hiện của một chữ số | Dãy cách đều, cấu tạo số | Câu hỏi “chữ số … xuất hiện bao nhiêu lần” | Đếm theo từng hàng rồi cộng | Từ 1 đến 100, mỗi chữ số từ 1 đến 9 xuất hiện đúng 20 lần (riêng chữ số 1 là 21 lần vì có số 100). | 41 · 61 · 100 · 40… |
 | II.3 | Tính thời điểm trong ngày | Quan hệ giờ – phút, phép chia có dư | Cho thời điểm bắt đầu và khoảng thời gian | Quy về phút, cộng trừ, đổi lại | Cộng tròn giờ trước rồi cộng phần phút lẻ sau. | 12 giờ 10 phút · 8 giờ 21 phút · 11 giờ 2 phút · 16 giờ 18 phút |
@@ -368,7 +368,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | I.2 | 2 m 30 cm + 150 cm = … cm | 380 |
 | I.3 | Tìm 25% của 200. | 50 |
 | I.4 | Hình thang đáy 12 cm và 8 cm, cao 5 cm. Diện tích bằng bao nhiêu? | 50 cm² |
-| I.5 | So sánh: 3 kg … 2 500 g | &gt; |
+| I.5 | So sánh: 3 kg … 2 500 g | > |
 | II.1 | Tổng của 5 số tự nhiên liên tiếp bằng 100. Số bé nhất là số nào? | 18 |
 | II.2 | Từ 1 đến 50, chữ số 3 xuất hiện bao nhiêu lần? | 15 |
 | II.3 | Tàu chạy lúc 7 giờ 40 phút, đi hết 2 giờ 35 phút. Đến lúc mấy giờ? | 10 giờ 15 phút |
@@ -388,7 +388,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | V.2 | Tàu chạy lúc 7 giờ 40 phút, đi hết 2 giờ 35 phút. Đến lúc mấy giờ? | 10 giờ 15 phút |
 | V.3 | 5 km = … m | 5 000 |
 | V.4 | 3 450 kg = … tấn … tạ … kg | 3 tấn 4 tạ 50 kg |
-| V.5 | So sánh: 3 kg … 2 500 g | &gt; |
+| V.5 | So sánh: 3 kg … 2 500 g | > |
 
 ---
 

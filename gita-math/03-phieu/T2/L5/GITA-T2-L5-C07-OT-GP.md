@@ -39,7 +39,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần II**
 
 - **Bài II.1** — a) x = 46 · b) x = 25 · c) x = 115 · d) x = 98 · e) x = 62 · f) x = 75
-- **Bài II.2** — a) &lt; · b) &lt; · c) &lt; · d) &lt; · e) &lt; · f) &lt; · g) &lt;
+- **Bài II.2** — a) < · b) < · c) < · d) < · e) < · f) < · g) <
 - **Bài II.3** — a) 60 kg · b) 50 kg · c) 28 kg · d) 96 kg
 - **Bài II.4** — a) 165 · b) 1 625 · c) 10 100 · d) 1 275 · e) 590
 - **Bài II.5** — a) 1 · b) 1 · c) 1 · d) 1
@@ -238,7 +238,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | I.4 | Tính nhanh nhờ thừa số chung | Nhân một số với một tổng, một hiệu | Hai tích cộng hoặc trừ nhau, có chung một thừa số | Đặt thừa số chung ra ngoài rồi tính trong ngoặc | Sau khi đặt thừa số chung, tổng trong ngoặc thường tròn 10 hoặc 100. | 1 716 · 8 019 · 182 · 455… |
 | I.5 | Tính nhanh tích, thương nhiều bước | Tính chất giao hoán, kết hợp của phép nhân | Tích có thừa số 25, 125, 50, 20; hoặc chia liên tiếp | Ghép cặp cho tích tròn rồi nhân | Chia liên tiếp cho 4 rồi 25 bằng chia cho 100. | 20 000 · 5 300 · 3 500 · 2 500… |
 | II.1 | Tìm x nhiều bước có ngoặc | Thứ tự thực hiện phép tính, quan hệ thành phần | x nằm trong ngoặc, ngoài ngoặc còn phép tính khác | Bóc lớp từ ngoài vào trong | Thay x tìm được vào đề, tính một lượt để thử lại. | x = 46 · x = 25 · x = 115 · x = 98… |
-| II.2 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | &lt; · &lt; · &lt; · &lt;… |
+| II.2 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | < · < · < · <… |
 | II.3 | Tìm phân số của một số, nhiều bước | Tìm phân số của một số | Cụm “… số còn lại”, “… số đó” | Tính tuần tự, sau mỗi bước ghi lại số còn lại | Còn lại sau ngày đầu là (1 − phân số) của tổng; nhân trực tiếp cho nhanh. | 60 kg · 50 kg · 28 kg · 96 kg |
 | II.4 | Tổng dãy số cách đều | Công thức tổng dãy cách đều | Dãy cộng có dấu … và các số cách đều nhau | Đếm số số hạng rồi áp công thức tổng | Ghép cặp đầu – cuối: mọi cặp đều có cùng tổng, chỉ cần nhân với số cặp. | 165 · 1 625 · 10 100 · 1 275… |
 | II.5 | Tính nhanh biểu thức phân số | Cộng phân số cùng mẫu, phân số đảo ngược | Các phân số cùng mẫu, tử số cộng lại tròn mẫu | Quan sát tổng tử số; nhận diện cặp phân số đảo ngược | Nếu tổng các tử số bằng mẫu số thì kết quả bằng 1, không cần tính gì thêm. | 1 · 1 · 1 · 1 |
@@ -370,7 +370,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | I.4 | Tính nhanh: 47 × 25 + 47 × 75 | 4 700 |
 | I.5 | Tính nhanh: 37 × 25 × 4 | 3 700 |
 | II.1 | Tìm x: (x + 12) × 5 − 8 = 132 | x = 16 |
-| II.2 | So sánh: 234 × 7 … 234 × 8 | &lt; |
+| II.2 | So sánh: 234 × 7 … 234 × 8 | < |
 | II.3 | Có 60 kg gạo, bán 1 phần 3 rồi bán tiếp 1 phần 2 số còn lại. Còn bao nhiêu? | 20 kg |
 | II.4 | Tính nhanh: 1 + 2 + 3 + … + 100 | 5 050 |
 | II.5 | Tính nhanh: 3 phần 7 + 4 phần 7 | 1 |

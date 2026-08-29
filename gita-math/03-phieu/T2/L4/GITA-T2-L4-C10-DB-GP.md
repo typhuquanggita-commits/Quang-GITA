@@ -47,7 +47,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần C**
 
 - **Bài C.1** — a) 775 · b) 1 410 · c) 370 · d) 140
-- **Bài C.2** — a) &lt; · b) &lt; · c) &lt; · d) &lt; · e) &gt; · f) &lt;
+- **Bài C.2** — a) < · b) < · c) < · d) < · e) > · f) <
 - **Bài C.3** — a) 24 ngày · b) 30 ngày · c) 10 ngày · d) 12 ngày · e) 12 ngày
 - **Bài C.4** — a) 244 kg · b) 232 kg · c) 199 kg · d) 1 788 kg · e) 74 kg
 - **Bài C.5** — a) 4 772 dư 6 · b) 1 729 dư 5 · c) 2 028 dư 11 · d) 4 908 dư 1
@@ -243,7 +243,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | B.4 | Suy luận nói thật – nói dối | Logic mệnh đề sơ cấp, phương pháp loại trừ | “Chỉ một người nói thật”, các câu nói mâu thuẫn nhau | Tìm cặp mâu thuẫn, khoá số câu đúng, suy ra phần còn lại | Cặp mâu thuẫn đã dùng hết “suất” nói thật, nên mọi câu ngoài cặp đều sai. | không, vì hai câu phủ định nhau · không, vì chúng phủ định nhau · đúng một bạn · nói dối… |
 | B.5 | Diện tích các hình phẳng cơ bản | Công thức diện tích hình bình hành, hình thoi, hình tam giác | Đề cho đáy và chiều cao, hoặc hai đường chéo | Nhận dạng hình rồi chọn công thức | Tam giác bằng nửa hình bình hành cùng đáy cùng chiều cao. | 259 cm² · 396 cm² · 155 cm² · 87 cm²… |
 | C.1 | Tổng dãy số cách đều | Công thức tổng dãy cách đều | Dãy cộng dài, các số cách đều | Đếm số hạng → (đầu + cuối) × số hạng : 2 | Tổng = trung bình cộng của số đầu và số cuối, nhân với số số hạng. | 775 · 1 410 · 370 · 140 |
-| C.2 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &lt; · &lt; · &lt; · &lt;… |
+| C.2 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | < · < · < · <… |
 | C.3 | Tỉ lệ nghịch | Đại lượng tỉ lệ nghịch, tổng số ngày công | Số người tăng thì thời gian giảm | Quy về tổng số ngày công rồi chia | Số người gấp đôi thì số ngày giảm một nửa — nhẩm được ngay khi tỉ số đẹp. | 24 ngày · 30 ngày · 10 ngày · 12 ngày… |
 | C.4 | Ba dạng bài trung bình cộng | Quan hệ tổng – số lượng – trung bình cộng | Cụm “trung bình mỗi …” | Đi qua tổng làm trung gian | Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng. | 244 kg · 232 kg · 199 kg · 1 788 kg… |
 | C.5 | Phép chia có dư | Quan hệ giữa số bị chia, số chia, thương và số dư | Đề yêu cầu ghi cả thương và số dư | Đặt tính chia, kiểm tra điều kiện số dư | Ước lượng thương bằng cách làm tròn số chia trước khi chia. | 4 772 dư 6 · 1 729 dư 5 · 2 028 dư 11 · 4 908 dư 1 |
@@ -375,7 +375,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | B.4 | An nói “tôi không làm”, Bình nói “Chi làm”, Chi nói “Bình nói dối”, chỉ một người nói thật. Ai làm? | An |
 | B.5 | Tam giác đáy 10 cm, cao 6 cm. Diện tích bằng bao nhiêu? | 30 cm² |
 | C.1 | Tính: 2 + 4 + 6 + … + 20 | 110 |
-| C.2 | So sánh: 3 kg … 2 500 g | &gt; |
+| C.2 | So sánh: 3 kg … 2 500 g | > |
 | C.3 | 6 người làm xong trong 8 ngày. 12 người làm xong trong mấy ngày? | 4 ngày |
 | C.4 | Trung bình mỗi ngày bán 40 kg, hỏi 5 ngày bán bao nhiêu? | 200 kg |
 | C.5 | Tìm thương và số dư của 1 234 : 7 | 176 dư 2 |

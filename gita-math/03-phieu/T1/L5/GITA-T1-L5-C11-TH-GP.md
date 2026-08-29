@@ -41,7 +41,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài II.1** — a) XX · b) không · c) 31 · d) 4 tuần 3 ngày · e) XX
 - **Bài II.2** — a) 177 · b) 33 · c) 97 · d) 145 · e) 103 · f) 72
 - **Bài II.3** — a) 3 985 · b) 6 710 · c) 27 408 · d) 15 050
-- **Bài II.4** — a) &lt; · b) &lt; · c) &gt; · d) &lt; · e) &gt; · f) &lt;
+- **Bài II.4** — a) < · b) < · c) > · d) < · e) > · f) <
 - **Bài II.5** — a) 440 cm² · b) 250 cm² · c) 210 cm² · d) 462 cm² · e) 424 cm²
 
 **Phần III**
@@ -240,7 +240,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | II.1 | Lịch và đơn vị thời gian lớn | Số ngày các tháng, năm nhuận, thế kỉ | Đề hỏi về tháng, năm, thế kỉ | Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400 | Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ. | XX · không · 31 · 4 tuần 3 ngày… |
 | II.2 | Đếm số hạng của dãy cách đều theo điều kiện chia hết | Dãy số cách đều, dấu hiệu chia hết | Cụm “có bao nhiêu số … từ … đến …” | Tìm số đầu, số cuối hợp lệ rồi dùng công thức đếm | Số các số chia hết cho d từ 1 đến n bằng phần nguyên của n : d, nên đếm từ a đến b là b : d trừ đi (a − 1) : d. | 177 · 33 · 97 · 145… |
 | II.3 | Bốn phép tính với số đo | Đổi đơn vị, bốn phép tính | Các số hạng có đơn vị khác nhau trong cùng một phép tính | Đổi về đơn vị của kết quả rồi tính | Đọc chỗ chấm trước, biết ngay đơn vị đích. | 3 985 · 6 710 · 27 408 · 15 050 |
-| II.4 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &lt; · &lt; · &gt; · &lt;… |
+| II.4 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | < · < · > · <… |
 | II.5 | Diện tích hình thang | Công thức diện tích hình thang | Đề cho hai đáy và chiều cao | Tổng hai đáy × chiều cao : 2 | Nếu tổng hai đáy là số chẵn thì chia 2 ngay từ đầu cho gọn. | 440 cm² · 250 cm² · 210 cm² · 462 cm²… |
 | III.1 | Tính thời điểm trong ngày | Quan hệ giờ – phút, phép chia có dư | Cho thời điểm bắt đầu và khoảng thời gian | Quy về phút, cộng trừ, đổi lại | Cộng tròn giờ trước rồi cộng phần phút lẻ sau. | 12 giờ 58 phút · 11 giờ 6 phút · 8 giờ 12 phút · 14 giờ 34 phút… |
 | III.2 | Tìm phân số của một số, nhiều bước | Tìm phân số của một số | Cụm “… số còn lại”, “… số đó” | Tính tuần tự, sau mỗi bước ghi lại số còn lại | Còn lại sau ngày đầu là (1 − phân số) của tổng; nhân trực tiếp cho nhanh. | 312 kg · 136 kg · 60 kg · 204 kg |
@@ -372,7 +372,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | II.1 | Năm 1975 thuộc thế kỉ thứ mấy? | XX |
 | II.2 | Có bao nhiêu số chẵn từ 10 đến 40? | 16 |
 | II.3 | 2 m 30 cm + 150 cm = … cm | 380 |
-| II.4 | So sánh: 3 kg … 2 500 g | &gt; |
+| II.4 | So sánh: 3 kg … 2 500 g | > |
 | II.5 | Hình thang đáy 12 cm và 8 cm, cao 5 cm. Diện tích bằng bao nhiêu? | 50 cm² |
 | III.1 | Tàu chạy lúc 7 giờ 40 phút, đi hết 2 giờ 35 phút. Đến lúc mấy giờ? | 10 giờ 15 phút |
 | III.2 | Có 60 kg gạo, bán 1 phần 3 rồi bán tiếp 1 phần 2 số còn lại. Còn bao nhiêu? | 20 kg |

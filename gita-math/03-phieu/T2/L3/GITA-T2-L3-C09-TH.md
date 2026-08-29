@@ -83,7 +83,7 @@ c) Số chẵn bé nhất lớn hơn 15 143 là số nào?
 d) Số liền trước của 79 249 là số nào?
 e) Số chẵn bé nhất lớn hơn 96 675 là số nào?
 
-### Bài 4. (3 điểm) Điền dấu &lt;, &gt;, = thích hợp
+### Bài 4. (3 điểm) Điền dấu <, >, = thích hợp
 
 Điền dấu thích hợp vào chỗ chấm.
 
@@ -345,7 +345,7 @@ f) 1 + 2 + 3 + … + 50
 **Lỗi thường gặp:** Nhầm “liền trước” với “bé hơn”, trả lời một số bất kì bé hơn. Phòng: Liền trước – liền sau chỉ hơn kém đúng **1** đơn vị.
 
 ### Bài I.4
-**Đáp số:** a) &lt; · b) &lt; · c) &gt; · d) &lt; · e) &gt; · f) &gt; · g) &lt; · h) &gt;
+**Đáp số:** a) < · b) < · c) > · d) < · e) > · f) > · g) < · h) >
 **Hướng giải:** So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Đếm số chữ số **trước**, chỉ khi bằng nhau mới so từng hàng.
 **Lỗi thường gặp:** So từ hàng đơn vị (phải sang trái) nên kết luận sai. Phòng: Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái.

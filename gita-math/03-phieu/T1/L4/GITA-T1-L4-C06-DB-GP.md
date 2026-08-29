@@ -55,7 +55,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần D**
 
 - **Bài D.1** — a) 210 · b) 950 · c) 2 550 · d) 275 · e) 5 050
-- **Bài D.2** — a) &gt; · b) &gt; · c) &gt; · d) &gt;
+- **Bài D.2** — a) > · b) > · c) > · d) >
 - **Bài D.3** — a) 99 · b) Toán (28 bạn) · c) Khoa học (22 bạn) · d) 6 · e) 24,75 · f) 28%
 - **Bài D.4** — a) x = 60 · b) x = 70 · c) x = 38 · d) x = 28 · e) x = 69
 - **Bài D.5** — a) 19 viên · b) 10 viên · c) 7 viên · d) 6 viên
@@ -248,7 +248,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | C.4 | Tổng dãy số cách đều | Công thức tổng dãy cách đều | Dãy cộng dài, các số cách đều | Đếm số hạng → (đầu + cuối) × số hạng : 2 | Tổng = trung bình cộng của số đầu và số cuối, nhân với số số hạng. | 2 020 · 135 · 1 725 · 890… |
 | C.5 | Ba dạng bài trung bình cộng | Quan hệ tổng – số lượng – trung bình cộng | Cụm “trung bình mỗi …” | Đi qua tổng làm trung gian | Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng. | 130 kg · 139 kg · 206 kg · 283 kg |
 | D.1 | Tổng dãy số cách đều | Công thức tổng dãy cách đều | Dãy cộng có dấu … và các số cách đều nhau | Đếm số số hạng rồi áp công thức tổng | Ghép cặp đầu – cuối: mọi cặp đều có cùng tổng, chỉ cần nhân với số cặp. | 210 · 950 · 2 550 · 275… |
-| D.2 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | &gt; · &gt; · &gt; · &gt; |
+| D.2 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | > · > · > · > |
 | D.3 | Đọc bảng số liệu thống kê | Thống kê mô tả sơ cấp, trung bình cộng, tỉ số phần trăm | Đề cho bảng hoặc biểu đồ kèm nhiều câu hỏi | Ghi lại số liệu, trả lời từng câu bằng công cụ tương ứng | Tính tổng một lần rồi dùng lại cho mọi câu hỏi phần trăm. | 99 · Toán (28 bạn) · Khoa học (22 bạn) · 6… |
 | D.4 | Tìm x nhiều bước có ngoặc | Thứ tự thực hiện phép tính, quan hệ thành phần | x nằm trong ngoặc, ngoài ngoặc còn phép tính khác | Bóc lớp từ ngoài vào trong | Thay x tìm được vào đề, tính một lượt để thử lại. | x = 60 · x = 70 · x = 38 · x = 28… |
 | D.5 | Nguyên lí Đi-rích-lê | Nguyên lí ngăn kéo, lập luận trường hợp xấu nhất | Cụm “ít nhất … để chắc chắn …” | Dựng tình huống xấu nhất rồi cộng 1 | Công thức: số loại × (số cần − 1) + 1. | 19 viên · 10 viên · 7 viên · 6 viên |
@@ -380,15 +380,15 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | C.4 | Tính: 2 + 4 + 6 + … + 20 | 110 |
 | C.5 | Trung bình mỗi ngày bán 40 kg, hỏi 5 ngày bán bao nhiêu? | 200 kg |
 | D.1 | Tính nhanh: 1 + 2 + 3 + … + 100 | 5 050 |
-| D.2 | So sánh: 234 × 7 … 234 × 8 | &lt; |
+| D.2 | So sánh: 234 × 7 … 234 × 8 | < |
 | D.3 | Bảng: Toán 10, Văn 6, Anh 4. Trung bình mỗi môn bao nhiêu bạn? | 6,67 bạn |
 | D.4 | Tìm x: (x + 12) × 5 − 8 = 132 | x = 16 |
 | D.5 | Hộp có bi 3 màu, lấy ít nhất mấy viên để chắc chắn có 2 viên cùng màu? | 4 viên |
 | E.1 | Tính nhanh: 1 − 2 + 3 − 4 + … + 9 − 10 | −5 |
-| E.2 | So sánh: 234 × 7 … 234 × 8 | &lt; |
+| E.2 | So sánh: 234 × 7 … 234 × 8 | < |
 | E.3 | Tính nhẩm: 358 × 100 | 35 800 |
 | E.4 | Tìm x: x × 3 + 24 = x × 5 | x = 12 |
-| E.5 | So sánh: 99 × 101 … 100 × 100 | &lt; |
+| E.5 | So sánh: 99 × 101 … 100 × 100 | < |
 
 ---
 

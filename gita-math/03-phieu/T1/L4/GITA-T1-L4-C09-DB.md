@@ -166,7 +166,7 @@ g) 48 × 53 + 48 × 49
 
 ### Bài 1. (5 điểm) So sánh hai số đo khác đơn vị
 
-Điền dấu &lt;, &gt;, = thích hợp.
+Điền dấu <, >, = thích hợp.
 
 a) 76 kg … 271 dag
 b) 46 ha … 7 119 dm²
@@ -260,7 +260,7 @@ d) Một xe chở 11 bao đường, mỗi bao 60 kg. Hỏi xe chở bao nhiêu t
 
 ### Bài 5. (4 điểm) So sánh hai biểu thức mà không cần tính
 
-Điền dấu &lt;, &gt;, = và giải thích ngắn.
+Điền dấu <, >, = và giải thích ngắn.
 
 a) 374 + 4 … 561 + 4
 b) 407 × 2 … 407 × 3
@@ -296,7 +296,7 @@ f) Lỗi nào dễ mắc ở đề này?
 
 ### Bài 3. (4 điểm) Đọc vị đề số 3
 
-**Đề:** Điền dấu &lt;, &gt;, = thích hợp. 3 phần 8 … 3 phần 5
+**Đề:** Điền dấu <, >, = thích hợp. 3 phần 8 … 3 phần 5
 
 a) Đề này thuộc dạng bài nào?
 b) Dấu hiệu nào giúp em nhận ra?
@@ -394,7 +394,7 @@ f) Lỗi nào dễ mắc ở đề này?
 **Lỗi thường gặp:** Đặt ra ngoài một số chỉ có ở một tích. Phòng: Khoanh thừa số giống nhau ở hai tích trước khi viết dấu ngoặc.
 
 ### Bài C.1
-**Đáp số:** a) &gt; · b) &gt; · c) &lt; · d) &gt; · e) &lt; · f) &lt;
+**Đáp số:** a) > · b) > · c) < · d) > · e) < · f) <
 **Hướng giải:** Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.
@@ -452,7 +452,7 @@ f) Lỗi nào dễ mắc ở đề này?
 **Gợi ý 3 tầng:** (1) Tính tổng khối lượng theo ki-lô-gam. — (2) Đề hỏi kết quả theo đơn vị nào? — (3) Đổi kết quả sang đơn vị đó.
 
 ### Bài D.5
-**Đáp số:** a) &lt; · b) &lt; · c) &lt; · d) &gt; · e) &lt;
+**Đáp số:** a) < · b) < · c) < · d) > · e) <
 **Hướng giải:** Khi hai biểu thức có phần giống nhau, chỉ cần so sánh phần khác nhau: cùng cộng thêm một số thì số nào lớn hơn vẫn lớn hơn; cùng nhân với một số khác 0 cũng vậy.
 **Nhãn tư duy:** TD5, TD2. Điểm chốt: Che phần **giống nhau** đi, chỉ so phần khác nhau.
 **Lỗi thường gặp:** Tính hết cả hai vế, vừa lâu vừa dễ sai. Phòng: Dùng bút gạch bỏ phần giống nhau ở hai vế trước khi so sánh.

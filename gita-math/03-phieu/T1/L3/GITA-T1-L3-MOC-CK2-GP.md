@@ -31,7 +31,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần I**
 
 - **Bài I.1** — a) 297 · b) 8 415 · c) 844 · d) 6 312 · e) 649 · f) 457 · g) 2 605
-- **Bài I.2** — a) &lt; · b) &gt; · c) &gt; · d) &gt; · e) &gt; · f) &gt; · g) &lt; · h) &gt;
+- **Bài I.2** — a) < · b) > · c) > · d) > · e) > · f) > · g) < · h) >
 - **Bài I.3** — a) số lớn 178, số bé 104 · b) số lớn 204, số bé 192 · c) số lớn 51, số bé 43 · d) số lớn 83, số bé 51 · e) số lớn 77, số bé 59 · f) số lớn 64, số bé 32 · g) số lớn 254, số bé 140
 - **Bài I.4** — a) ô (Vy; Toán) · b) toàn bộ hàng Vy và toàn bộ cột Toán · c) ô (Đức; Tiếng Việt) · d) Mĩ thuật · e) Tiếng Việt · f) phương pháp lập bảng và loại trừ
 - **Bài I.5** — a) 4 511 · b) 5 429 · c) 4 tấn 7 tạ 9 kg · d) 1 861
@@ -80,7 +80,7 @@ Nhân lần lượt từng chữ số của thừa số thứ hai với số th�
 
 *Điểm chốt:* Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 
-### Bài I.2 — Điền dấu &lt;, &gt;, = thích hợp
+### Bài I.2 — Điền dấu <, >, = thích hợp
 
 So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 
@@ -233,7 +233,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
 | I.1 | Nhân, chia số tự nhiên | Kĩ thuật đặt tính nhân, chia | Yêu cầu “đặt tính rồi tính” với phép nhân, chia | Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ chữ số | Kiểm tra kết quả bằng phép tính ngược: thương × số chia = số bị chia. | 297 · 8 415 · 844 · 6 312… |
-| I.2 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | &lt; · &gt; · &gt; · &gt;… |
+| I.2 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | < · > · > · >… |
 | I.3 | Bài toán tổng – hiệu | Công thức tổng – hiệu, sơ đồ đoạn thẳng | Đề cho **tổng** và **hiệu** của hai số | Vẽ sơ đồ, đưa về hai phần bằng nhau | Số lớn và số bé luôn có trung bình cộng bằng nửa tổng. | số lớn 178, số bé 104 · số lớn 204, số bé 192 · số lớn 51, số bé 43 · số lớn 83, số bé 51… |
 | I.4 | Suy luận loại trừ có bảng | Phương pháp lập bảng, loại trừ | Mỗi người ứng với đúng một đối tượng, đề cho các dữ kiện phủ định | Kẻ bảng, đánh dấu, lan toả theo hàng và cột | Bắt đầu từ dữ kiện khẳng định (“thích”, “là”) trước dữ kiện phủ định. | ô (Vy; Toán) · toàn bộ hàng Vy và toàn bộ cột Toán · ô (Đức; Tiếng Việt) · Mĩ thuật… |
 | I.5 | Số đo có nhiều đơn vị | Bảng đơn vị khối lượng | Số đo viết dưới dạng “… tấn … tạ … kg” | Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư | Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ. | 4 511 · 5 429 · 4 tấn 7 tạ 9 kg · 1 861 |
@@ -365,7 +365,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | Bài | Đề tương tự | Đáp số |
 |---|---|---|
 | I.1 | Đặt tính rồi tính: 3 045 × 24 | 73 080 |
-| I.2 | Điền dấu: 84 390 … 84 391 | &lt; |
+| I.2 | Điền dấu: 84 390 … 84 391 | < |
 | I.3 | Tổng hai số là 100, hiệu là 20. Tìm hai số. | 60 và 40 |
 | I.4 | Ba bạn thích ba môn khác nhau, An thích Toán, Bình không thích Anh. Bình thích môn nào? | Tiếng Việt |
 | I.5 | 3 450 kg = … tấn … tạ … kg | 3 tấn 4 tạ 50 kg |

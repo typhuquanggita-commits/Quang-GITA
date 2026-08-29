@@ -56,7 +56,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài D.1** — a) 37 cây · b) 74 cây · c) 18 cây · d) 33 cây · e) 25 cây · f) 31 cây
 - **Bài D.2** — a) 114 kg · b) 48 kg · c) 14 kg · d) 14 kg
-- **Bài D.3** — a) &lt; · b) &lt; · c) &gt; · d) &gt; · e) &lt; · f) &lt; · g) &gt;
+- **Bài D.3** — a) < · b) < · c) > · d) > · e) < · f) < · g) >
 - **Bài D.4** — a) 84 · b) Tiếng Anh (30 bạn) · c) Tiếng Việt (15 bạn) · d) 15 · e) 21 · f) 24%
 - **Bài D.5** — a) 55 · b) 179 · c) 372 · d) 374 · e) 138
 
@@ -249,7 +249,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | C.5 | Suy luận nói thật – nói dối | Logic mệnh đề sơ cấp, phương pháp loại trừ | “Chỉ một người nói thật”, các câu nói mâu thuẫn nhau | Tìm cặp mâu thuẫn, khoá số câu đúng, suy ra phần còn lại | Cặp mâu thuẫn đã dùng hết “suất” nói thật, nên mọi câu ngoài cặp đều sai. | không, vì hai câu phủ định nhau · không, vì chúng phủ định nhau · đúng một bạn · nói dối… |
 | D.1 | Tìm phân số của một số | Nhân số tự nhiên với phân số | Cụm “bằng … của …” | Chia theo mẫu số rồi nhân theo tử số | Chia trước, nhân sau — số nhỏ hơn nên tính nhẩm được. | 37 cây · 74 cây · 18 cây · 33 cây… |
 | D.2 | Tìm phân số của một số, nhiều bước | Tìm phân số của một số | Cụm “… số còn lại”, “… số đó” | Tính tuần tự, sau mỗi bước ghi lại số còn lại | Còn lại sau ngày đầu là (1 − phân số) của tổng; nhân trực tiếp cho nhanh. | 114 kg · 48 kg · 14 kg · 14 kg |
-| D.3 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | &lt; · &lt; · &gt; · &gt;… |
+| D.3 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | < · < · > · >… |
 | D.4 | Đọc bảng số liệu thống kê | Thống kê mô tả sơ cấp, trung bình cộng, tỉ số phần trăm | Đề cho bảng hoặc biểu đồ kèm nhiều câu hỏi | Ghi lại số liệu, trả lời từng câu bằng công cụ tương ứng | Tính tổng một lần rồi dùng lại cho mọi câu hỏi phần trăm. | 84 · Tiếng Anh (30 bạn) · Tiếng Việt (15 bạn) · 15… |
 | D.5 | Dãy số tự nhiên liên tiếp có tổng cho trước | Trung bình cộng, dãy cách đều | Cụm “… số tự nhiên liên tiếp có tổng bằng …” | Tìm số giữa bằng phép chia rồi suy ra hai đầu dãy | Tổng của n số liên tiếp (n lẻ) luôn chia hết cho n. | 55 · 179 · 372 · 374… |
 | E.1 | Bốn phép tính với phân số | Quy đồng, nhân chia phân số | Biểu thức chỉ gồm phân số | Chọn quy tắc theo phép tính, rút gọn cuối cùng | Rút gọn chéo trước khi nhân để số nhỏ, tính nhanh và ít sai. | Bốn phép tính với phân số · Biểu thức chỉ gồm phân số · Quy đồng, nhân chia phân số · Chọn quy tắc theo phép tính, rút gọn cuối cùng… |
@@ -381,11 +381,11 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | C.5 | An nói “tôi không làm”, Bình nói “Chi làm”, Chi nói “Bình nói dối”, chỉ một người nói thật. Ai làm? | An |
 | D.1 | Tổ Một trồng 60 cây, tổ Hai bằng 2 phần 3 tổ Một. Tổ Hai trồng mấy cây? | 40 cây |
 | D.2 | Có 60 kg gạo, bán 1 phần 3 rồi bán tiếp 1 phần 2 số còn lại. Còn bao nhiêu? | 20 kg |
-| D.3 | So sánh: 234 × 7 … 234 × 8 | &lt; |
+| D.3 | So sánh: 234 × 7 … 234 × 8 | < |
 | D.4 | Bảng: Toán 10, Văn 6, Anh 4. Trung bình mỗi môn bao nhiêu bạn? | 6,67 bạn |
 | D.5 | Tổng của 5 số tự nhiên liên tiếp bằng 100. Số bé nhất là số nào? | 18 |
 | E.1 | Tính: 2 phần 3 + 1 phần 6 | 5 phần 6 |
-| E.2 | So sánh: 5 phần 6 … 7 phần 8 | &lt; |
+| E.2 | So sánh: 5 phần 6 … 7 phần 8 | < |
 | E.3 | Rút gọn 18 phần 24. | 3 phần 4 |
 | E.4 | Tính: (1 phần 2 + 1 phần 3) × 6 phần 5 | 1 |
 | E.5 | Bảng: Toán 10, Văn 6, Anh 4. Trung bình mỗi môn bao nhiêu bạn? | 6,67 bạn |

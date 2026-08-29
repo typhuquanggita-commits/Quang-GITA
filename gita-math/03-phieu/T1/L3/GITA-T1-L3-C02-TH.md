@@ -62,7 +62,7 @@ d) Số 3 227 có bao nhiêu chữ số, và tổng các chữ số của nó b�
 e) Số 87 671 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
 f) Số 15 361 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
 
-### Bài 2. (3 điểm) Điền dấu &lt;, &gt;, = thích hợp
+### Bài 2. (3 điểm) Điền dấu <, >, = thích hợp
 
 Điền dấu thích hợp vào chỗ chấm.
 
@@ -338,7 +338,7 @@ f) 1 + 2 + 3 + … + 25
 **Lỗi thường gặp:** Cộng cả giá trị hàng (ví dụ cộng 300 thay vì cộng 3). Phòng: Viết rời từng chữ số ra rồi mới cộng.
 
 ### Bài I.2
-**Đáp số:** a) &lt; · b) &gt; · c) &lt; · d) &lt; · e) &gt; · f) &gt; · g) &lt;
+**Đáp số:** a) < · b) > · c) < · d) < · e) > · f) > · g) <
 **Hướng giải:** So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Đếm số chữ số **trước**, chỉ khi bằng nhau mới so từng hàng.
 **Lỗi thường gặp:** So từ hàng đơn vị (phải sang trái) nên kết luận sai. Phòng: Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái.

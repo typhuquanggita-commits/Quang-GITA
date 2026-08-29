@@ -101,10 +101,10 @@ def a_m1_02(rng, lop):
             b = rng.randint(lo, hi)
         b = max(1, b)
         cap.append((a, b))
-    y = [(f"{sv(a)} … {sv(b)}", "&lt;" if a < b else ("&gt;" if a > b else "="))
+    y = [(f"{sv(a)} … {sv(b)}", "<" if a < b else (">" if a > b else "="))
          for a, b in cap]
     return Bai(
-        tieu_de="Điền dấu &lt;, &gt;, = thích hợp",
+        tieu_de="Điền dấu <, >, = thích hợp",
         dan="Điền dấu thích hợp vào chỗ chấm.",
         y=y,
         huong_giai="So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; "
@@ -119,10 +119,10 @@ def a_m1_02(rng, lop):
                "Gặp cặp chữ số khác nhau đầu tiên là dừng, không cần so tiếp."),
         pt_dang="So sánh hai số tự nhiên",
         pt_kien_thuc="Thứ tự trong tập số tự nhiên",
-        pt_du_lieu="Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, =",
+        pt_du_lieu="Dấu … giữa hai số, yêu cầu điền <, >, =",
         pt_phuong_phap="Đếm chữ số → so từng hàng từ trái sang phải",
         pt_nhanh="Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số.",
-        tuong_tu=(f"Điền dấu: {sv(cap[0][0])} … {sv(cap[0][0] + 1)}", "&lt;"),
+        tuong_tu=(f"Điền dấu: {sv(cap[0][0])} … {sv(cap[0][0] + 1)}", "<"),
     )
 
 

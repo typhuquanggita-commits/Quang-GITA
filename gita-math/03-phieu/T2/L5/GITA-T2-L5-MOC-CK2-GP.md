@@ -30,7 +30,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần I**
 
-- **Bài I.1** — a) &lt; · b) &gt; · c) &gt; · d) &lt; · e) &gt; · f) &gt; · g) &lt; · h) &lt;
+- **Bài I.1** — a) < · b) > · c) > · d) < · e) > · f) > · g) < · h) <
 - **Bài I.2** — a) 5 phần 7 · b) 1 phần 2 · c) 1 · d) 1 · e) 2 · f) 4 · g) 3 phần 10 · h) 1 phần 6
 - **Bài I.3** — a) 44, 47, 50 · b) 43, 45, 47 · c) 136, 161, 186 · d) 42, 48, 54 · e) 24, 29, 34
 - **Bài I.4** — a) 8 cách · b) 8 cách · c) 6 cách · d) 12 cách
@@ -74,7 +74,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 Đọc kĩ phần chữ đậm: đó là câu cần nhớ, không phải con số.
 
-### Bài I.1 — Điền dấu &lt;, &gt;, = thích hợp
+### Bài I.1 — Điền dấu <, >, = thích hợp
 
 So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 
@@ -232,7 +232,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
-| I.1 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | &lt; · &gt; · &gt; · &lt;… |
+| I.1 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | < · > · > · <… |
 | I.2 | Rút gọn phân số | Tính chất cơ bản của phân số | Tử số và mẫu số có ước chung lớn hơn 1 | Chia cả tử và mẫu cho ước chung | Tìm ngay ước chung lớn nhất để rút gọn một lần là xong. | 5 phần 7 · 1 phần 2 · 1 · 1… |
 | I.3 | Tìm quy luật dãy cách đều | Dãy số cách đều | Dãy số kèm dấu … ở cuối | Tính hiệu các cặp liên tiếp rồi cộng tiếp | Ghi khoảng cách vào giữa các số hạng để nhìn ra quy luật ngay. | 44, 47, 50 · 43, 45, 47 · 136, 161, 186 · 42, 48, 54… |
 | I.4 | Quy tắc nhân | Quy tắc nhân, quy tắc cộng trong phép đếm | Chọn một phần tử từ mỗi nhóm để ghép thành một bộ | Nhân số cách của các bước liên tiếp | Vẽ sơ đồ cây với hai ba nhánh đầu để thấy rõ phép nhân. | 8 cách · 8 cách · 6 cách · 12 cách |
@@ -364,7 +364,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 
 | Bài | Đề tương tự | Đáp số |
 |---|---|---|
-| I.1 | Điền dấu: 9 012 453 … 9 012 454 | &lt; |
+| I.1 | Điền dấu: 9 012 453 … 9 012 454 | < |
 | I.2 | Rút gọn 18 phần 24. | 3 phần 4 |
 | I.3 | Viết tiếp ba số: 2, 5, 8, 11, … | 14, 17, 20 |
 | I.4 | Có 3 áo và 4 quần, có bao nhiêu cách chọn một bộ? | 12 cách |

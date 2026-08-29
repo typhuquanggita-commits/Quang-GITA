@@ -80,7 +80,7 @@ c) 927 − 116
 d) 668 + 828
 e) 912 − 192
 
-### Bài 4. (3 điểm) Điền dấu &lt;, &gt;, = thích hợp
+### Bài 4. (3 điểm) Điền dấu <, >, = thích hợp
 
 Điền dấu thích hợp vào chỗ chấm.
 
@@ -347,7 +347,7 @@ e) Tổng 30 số hạng đầu tiên bằng bao nhiêu?
 **Lỗi thường gặp:** Viết lệch hàng khi hai số có số chữ số khác nhau. Phòng: Kẻ cột dọc cho từng hàng trước khi viết số.
 
 ### Bài I.4
-**Đáp số:** a) &gt; · b) &lt; · c) &gt; · d) &gt; · e) &gt; · f) &lt;
+**Đáp số:** a) > · b) < · c) > · d) > · e) > · f) <
 **Hướng giải:** So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Đếm số chữ số **trước**, chỉ khi bằng nhau mới so từng hàng.
 **Lỗi thường gặp:** So từ hàng đơn vị (phải sang trái) nên kết luận sai. Phòng: Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái.

@@ -62,7 +62,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần E**
 
-- **Bài E.1** — a) &gt; · b) &lt; · c) &gt; · d) &gt; · e) &lt; · f) &gt;
+- **Bài E.1** — a) > · b) < · c) > · d) > · e) < · f) >
 - **Bài E.2** — a) 98 · b) 245 · c) 24 · d) 141 · e) 149 · f) 262
 - **Bài E.3** — a) 272 cm² · b) 255 cm² · c) 105 cm² · d) 91 cm²
 - **Bài E.4** — a) có · b) 4 tuần 5 ngày · c) XX · d) 31 · e) 4 tuần 2 ngày
@@ -252,7 +252,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | D.3 | Đổi đơn vị diện tích | Bảng đơn vị đo diện tích | Đơn vị có mũ hai: m², cm², km², ha | Đếm bậc rồi nhân, chia 100 | Mỗi bậc thêm hai chữ số 0 — nhớ “diện tích thì gấp đôi số 0”. | Bảng đơn vị đo diện tích · Đổi đơn vị diện tích · Đơn vị có mũ hai: m², cm², km², ha · Đếm bậc rồi nhân, chia 100… |
 | D.4 | Số đo có nhiều đơn vị | Bảng đơn vị khối lượng | Số đo viết dưới dạng “… tấn … tạ … kg” | Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư | Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ. | Bảng đơn vị khối lượng · Số đo có nhiều đơn vị · Số đo viết dưới dạng “… tấn … tạ … kg” · Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư… |
 | D.5 | Đổi đơn vị đo | Bảng đơn vị đo độ dài, khối lượng | Dấu … giữa hai đơn vị khác nhau | Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10 | Số bậc chính là số chữ số 0 phải thêm vào (hoặc bớt đi). | Bảng đơn vị đo độ dài, khối lượng · Đổi đơn vị đo · Dấu … giữa hai đơn vị khác nhau · Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10… |
-| E.1 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &gt; · &lt; · &gt; · &gt;… |
+| E.1 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | > · < · > · >… |
 | E.2 | Đếm số hạng của dãy cách đều theo điều kiện chia hết | Dãy số cách đều, dấu hiệu chia hết | Cụm “có bao nhiêu số … từ … đến …” | Tìm số đầu, số cuối hợp lệ rồi dùng công thức đếm | Số các số chia hết cho d từ 1 đến n bằng phần nguyên của n : d, nên đếm từ a đến b là b : d trừ đi (a − 1) : d. | 98 · 245 · 24 · 141… |
 | E.3 | Diện tích các hình phẳng cơ bản | Công thức diện tích hình bình hành, hình thoi, hình tam giác | Đề cho đáy và chiều cao, hoặc hai đường chéo | Nhận dạng hình rồi chọn công thức | Tam giác bằng nửa hình bình hành cùng đáy cùng chiều cao. | 272 cm² · 255 cm² · 105 cm² · 91 cm² |
 | E.4 | Lịch và đơn vị thời gian lớn | Số ngày các tháng, năm nhuận, thế kỉ | Đề hỏi về tháng, năm, thế kỉ | Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400 | Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ. | có · 4 tuần 5 ngày · XX · 31… |
@@ -384,7 +384,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | D.3 | 3 m² = … cm² | 30 000 |
 | D.4 | 3 450 kg = … tấn … tạ … kg | 3 tấn 4 tạ 50 kg |
 | D.5 | 5 km = … m | 5 000 |
-| E.1 | So sánh: 3 kg … 2 500 g | &gt; |
+| E.1 | So sánh: 3 kg … 2 500 g | > |
 | E.2 | Có bao nhiêu số chẵn từ 10 đến 40? | 16 |
 | E.3 | Tam giác đáy 10 cm, cao 6 cm. Diện tích bằng bao nhiêu? | 30 cm² |
 | E.4 | Năm 1975 thuộc thế kỉ thứ mấy? | XX |

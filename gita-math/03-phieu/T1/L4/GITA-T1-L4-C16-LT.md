@@ -251,7 +251,7 @@ f) Làm lại ví dụ mẫu ở trên và ghi đáp số.
 
 ### Bài 3. (6 điểm) Key 3 — So sánh biểu thức không tính giá trị
 
-**Phát biểu:** Tính chất bất đẳng thức trong phép cộng, phép nhân. **Ví dụ mẫu:** So sánh: 234 × 7 … 234 × 8 → &lt;.
+**Phát biểu:** Tính chất bất đẳng thức trong phép cộng, phép nhân. **Ví dụ mẫu:** So sánh: 234 × 7 … 234 × 8 → <.
 
 a) Phát biểu lại key này bằng lời của em.
 b) Key này dùng cho dạng bài nào?
@@ -447,7 +447,7 @@ e) 40 × 9
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài D.3
-**Đáp số:** a) Tính chất bất đẳng thức trong phép cộng, phép nhân · b) So sánh biểu thức không tính giá trị · c) Hai vế có chung một số hạng hoặc một thừa số · d) Triệt tiêu phần chung rồi so phần riêng · e) Tính hết cả hai vế, vừa lâu vừa dễ sai. · f) &lt;
+**Đáp số:** a) Tính chất bất đẳng thức trong phép cộng, phép nhân · b) So sánh biểu thức không tính giá trị · c) Hai vế có chung một số hạng hoặc một thừa số · d) Triệt tiêu phần chung rồi so phần riêng · e) Tính hết cả hai vế, vừa lâu vừa dễ sai. · f) <
 **Hướng giải:** Khi hai biểu thức có phần giống nhau, chỉ cần so sánh phần khác nhau: cùng cộng thêm một số thì số nào lớn hơn vẫn lớn hơn; cùng nhân với một số khác 0 cũng vậy.
 **Nhãn tư duy:** TD5, TD2. Điểm chốt: Che phần **giống nhau** đi, chỉ so phần khác nhau.
 **Lỗi thường gặp:** Tính hết cả hai vế, vừa lâu vừa dễ sai. Phòng: Dùng bút gạch bỏ phần giống nhau ở hai vế trước khi so sánh.

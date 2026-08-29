@@ -40,7 +40,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài B.1** — a) 10 ngày · b) 2 ngày · c) 8 ngày · d) 24 ngày
 - **Bài B.2** — a) 249 · b) 200 · c) 358 · d) 200
-- **Bài B.3** — a) &gt; · b) &lt; · c) &lt; · d) &gt; · e) &gt; · f) &lt; · g) &gt;
+- **Bài B.3** — a) > · b) < · c) < · d) > · e) > · f) < · g) >
 - **Bài B.4** — a) 3 344 · b) 18 078 · c) 1 242 · d) 10 333
 - **Bài B.5** — a) XXI · b) không · c) 5 tuần 3 ngày · d) 30 · e) XX
 
@@ -239,7 +239,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | A.5 | Lập bảng dạng bài | Bảng phân tích chuyên sâu sáu cột | Bảng có sẵn cột dạng bài, thiếu các cột còn lại | Tra bảng phân tích của các phiếu đã học | Học theo hàng ngang, không học theo cột dọc. | Số người tăng gấp k lần thì số ngày giảm còn 1 phần k. · Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ. · Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm. · 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ.… |
 | B.1 | Tỉ lệ nghịch | Đại lượng tỉ lệ nghịch, tổng số ngày công | Số người tăng thì thời gian giảm | Quy về tổng số ngày công rồi chia | Số người gấp đôi thì số ngày giảm một nửa — nhẩm được ngay khi tỉ số đẹp. | 10 ngày · 2 ngày · 8 ngày · 24 ngày |
 | B.2 | Tính nhanh tổng nhiều số hạng | Tính chất giao hoán, kết hợp của phép cộng | Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm | Ghép cặp tròn rồi cộng | Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10. | 249 · 200 · 358 · 200 |
-| B.3 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &gt; · &lt; · &lt; · &gt;… |
+| B.3 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | > · < · < · >… |
 | B.4 | Bốn phép tính với số đo | Đổi đơn vị, bốn phép tính | Các số hạng có đơn vị khác nhau trong cùng một phép tính | Đổi về đơn vị của kết quả rồi tính | Đọc chỗ chấm trước, biết ngay đơn vị đích. | 3 344 · 18 078 · 1 242 · 10 333 |
 | B.5 | Lịch và đơn vị thời gian lớn | Số ngày các tháng, năm nhuận, thế kỉ | Đề hỏi về tháng, năm, thế kỉ | Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400 | Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ. | XXI · không · 5 tuần 3 ngày · 30… |
 | C.1 | Tính nhanh tích, thương nhiều bước | Tính chất giao hoán, kết hợp của phép nhân | Tích có thừa số 25, 125, 50, 20; hoặc chia liên tiếp | Ghép cặp cho tích tròn rồi nhân | Chia liên tiếp cho 4 rồi 25 bằng chia cho 100. | 2 600 · 1 700 · 83 000 · 50 000… |
@@ -371,7 +371,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | A.5 | Cột “Cách xử lý nhanh nhất” trả lời câu hỏi gì? | làm gì |
 | B.1 | 6 người làm xong trong 8 ngày. 12 người làm xong trong mấy ngày? | 4 ngày |
 | B.2 | Tính nhanh: 37 + 145 + 63 | 245 |
-| B.3 | So sánh: 3 kg … 2 500 g | &gt; |
+| B.3 | So sánh: 3 kg … 2 500 g | > |
 | B.4 | 2 m 30 cm + 150 cm = … cm | 380 |
 | B.5 | Năm 1975 thuộc thế kỉ thứ mấy? | XX |
 | C.1 | Tính nhanh: 37 × 25 × 4 | 3 700 |
@@ -386,7 +386,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | D.5 | Hộp có bi 3 màu, lấy ít nhất mấy viên để chắc chắn có 2 viên cùng màu? | 4 viên |
 | E.1 | Năm 1975 thuộc thế kỉ thứ mấy? | XX |
 | E.2 | 2 m 30 cm + 150 cm = … cm | 380 |
-| E.3 | So sánh: 3 kg … 2 500 g | &gt; |
+| E.3 | So sánh: 3 kg … 2 500 g | > |
 | E.4 | 3 450 kg = … tấn … tạ … kg | 3 tấn 4 tạ 50 kg |
 | E.5 | Xe chở 20 bao gạo, mỗi bao 50 kg. Xe chở mấy tạ? | 10 tạ |
 

@@ -30,15 +30,15 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần I**
 
-- **Bài I.1** — a) &lt; · b) &gt; · c) &gt; · d) &gt; · e) &lt; · f) &lt; · g) &gt; · h) &gt;
-- **Bài I.2** — a) &gt; · b) &gt; · c) &lt; · d) &lt; · e) &lt; · f) &lt;
+- **Bài I.1** — a) < · b) > · c) > · d) > · e) < · f) < · g) > · h) >
+- **Bài I.2** — a) > · b) > · c) < · d) < · e) < · f) <
 - **Bài I.3** — a) 34 106 696 · b) 17 024 · c) 10 291 · d) 4 545 024 · e) 45 699 · f) 66 640 · g) 60 975
-- **Bài I.4** — a) &gt; · b) 0,9 · c) 2 · d) 0,98 · e) 6 · f) &lt; · g) 0,616
+- **Bài I.4** — a) > · b) 0,9 · c) 2 · d) 0,98 · e) 6 · f) < · g) 0,616
 - **Bài I.5** — a) 3 phần 2 · b) 1 phần 8 · c) 2 · d) 4 phần 9 · e) 7 phần 11
 
 **Phần II**
 
-- **Bài II.1** — a) &lt; · b) &lt; · c) &lt; · d) &gt; · e) &lt; · f) &lt;
+- **Bài II.1** — a) < · b) < · c) < · d) > · e) < · f) <
 - **Bài II.2** — a) 12 phần 7 · b) 0 · c) 7 phần 11 · d) 71 phần 33 · e) 3 phần 7 · f) 9 phần 4 · g) 13 phần 6
 - **Bài II.3** — a) 120 · b) 5 · c) 20% · d) 200 · e) 50 · f) 75%
 - **Bài II.4** — a) 4B: 513 quyển, 5C: 259 quyển · b) tổ Hai: 523 cây, tổ Một: 277 cây · c) hợp tác xã: 133 kg, kho A: 107 kg · d) 5A: 223 quyển, 4B: 205 quyển
@@ -47,7 +47,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần III**
 
 - **Bài III.1** — a) 1 · b) 1 · c) 1 · d) 1
-- **Bài III.2** — a) &gt; · b) &lt; · c) &lt; · d) &gt;
+- **Bài III.2** — a) > · b) < · c) < · d) >
 - **Bài III.3** — a) 29 cây · b) 70 cây · c) 117 cây · d) 62 cây
 - **Bài III.4** — a) 10 học sinh · b) 75% · c) 60% · d) 32 học sinh · e) 40%
 - **Bài III.5** — a) 88 · b) Khoa học (26 bạn) · c) Tiếng Anh (4 bạn) · d) 22 · e) 17,6 · f) 25%
@@ -63,10 +63,10 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần V**
 
 - **Bài V.1** — a) 314 cm² · b) 145,34 cm² · c) 863,5 cm² · d) 69,66 cm² · e) 828,96 cm²
-- **Bài V.2** — a) &gt; · b) &lt; · c) &gt; · d) &lt; · e) &gt; · f) &lt;
+- **Bài V.2** — a) > · b) < · c) > · d) < · e) > · f) <
 - **Bài V.3** — a) 33,33 km/giờ · b) 17 km/giờ · c) 24 km/giờ · d) 16,67 km/giờ
 - **Bài V.4** — a) 108 000 đồng, tăng 8 000 đồng · b) 200 000 đồng, không đổi 0 đồng · c) 112 500 đồng, tăng 12 500 đồng · d) 412 500 đồng, giảm 87 500 đồng · e) 450 000 đồng, giảm 50 000 đồng
-- **Bài V.5** — a) &lt; · b) 1 600 · c) &lt; · d) 1 296 · e) 20 · f) &lt;
+- **Bài V.5** — a) < · b) 1 600 · c) < · d) 1 296 · e) 20 · f) <
 
 ---
 
@@ -80,7 +80,7 @@ Cùng mẫu số: phân số nào có tử số lớn hơn thì lớn hơn. Cùn
 
 *Điểm chốt:* Cùng tử số thì **mẫu bé hơn là phân số lớn hơn** — ngược với trực giác.
 
-### Bài I.2 — Điền dấu &lt;, &gt;, = thích hợp
+### Bài I.2 — Điền dấu <, >, = thích hợp
 
 So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 
@@ -232,18 +232,18 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
-| I.1 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | &lt; · &gt; · &gt; · &gt;… |
-| I.2 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | &gt; · &gt; · &lt; · &lt;… |
+| I.1 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | < · > · > · >… |
+| I.2 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | > · > · < · <… |
 | I.3 | Nhân, chia số tự nhiên | Kĩ thuật đặt tính nhân, chia | Yêu cầu “đặt tính rồi tính” với phép nhân, chia | Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ chữ số | Kiểm tra kết quả bằng phép tính ngược: thương × số chia = số bị chia. | 34 106 696 · 17 024 · 10 291 · 4 545 024… |
-| I.4 | Số thập phân — hàng, so sánh, chuyển đổi | Cấu tạo số thập phân, quan hệ phân số – số thập phân | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 | Xét theo hàng từ trái sang phải | Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. | &gt; · 0,9 · 2 · 0,98… |
+| I.4 | Số thập phân — hàng, so sánh, chuyển đổi | Cấu tạo số thập phân, quan hệ phân số – số thập phân | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 | Xét theo hàng từ trái sang phải | Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. | > · 0,9 · 2 · 0,98… |
 | I.5 | Rút gọn phân số | Tính chất cơ bản của phân số | Tử số và mẫu số có ước chung lớn hơn 1 | Chia cả tử và mẫu cho ước chung | Tìm ngay ước chung lớn nhất để rút gọn một lần là xong. | 3 phần 2 · 1 phần 8 · 2 · 4 phần 9… |
-| II.1 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &lt; · &lt; · &lt; · &gt;… |
+| II.1 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | < · < · < · >… |
 | II.2 | Bốn phép tính với phân số | Quy đồng, nhân chia phân số | Biểu thức chỉ gồm phân số | Chọn quy tắc theo phép tính, rút gọn cuối cùng | Rút gọn chéo trước khi nhân để số nhỏ, tính nhanh và ít sai. | 12 phần 7 · 0 · 7 phần 11 · 71 phần 33… |
 | II.3 | Ba dạng toán tỉ số phần trăm | Tỉ số phần trăm | Kí hiệu %, cụm “… % của …” | Xác định đại lượng ứng với 100% rồi chọn dạng | Coi 100% là “cả phần”, 1% là “cả phần chia 100” — mọi dạng đều quy về 1%. | 120 · 5 · 20% · 200… |
 | II.4 | Tổng – hiệu có lời văn | Công thức tổng – hiệu, sơ đồ đoạn thẳng | “Có tất cả …” và “… nhiều hơn … là …” | Đọc vị tổng và hiệu → sơ đồ → công thức | Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần. | 4B: 513 quyển, 5C: 259 quyển · tổ Hai: 523 cây, tổ Một: 277 cây · hợp tác xã: 133 kg, kho A: 107 kg · 5A: 223 quyển, 4B: 205 quyển |
 | II.5 | Bốn phép tính với số thập phân | Kĩ thuật tính với số thập phân | Các số có dấu phẩy | Chọn quy tắc đặt dấu phẩy theo phép tính | Ước lượng bằng cách làm tròn để kiểm tra vị trí dấu phẩy. | 34,63 · 107,55 · 19,79 · 547,68… |
 | III.1 | Tính nhanh biểu thức phân số | Cộng phân số cùng mẫu, phân số đảo ngược | Các phân số cùng mẫu, tử số cộng lại tròn mẫu | Quan sát tổng tử số; nhận diện cặp phân số đảo ngược | Nếu tổng các tử số bằng mẫu số thì kết quả bằng 1, không cần tính gì thêm. | 1 · 1 · 1 · 1 |
-| III.2 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | &gt; · &lt; · &lt; · &gt; |
+| III.2 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | > · < · < · > |
 | III.3 | Tìm phân số của một số | Nhân số tự nhiên với phân số | Cụm “bằng … của …” | Chia theo mẫu số rồi nhân theo tử số | Chia trước, nhân sau — số nhỏ hơn nên tính nhẩm được. | 29 cây · 70 cây · 117 cây · 62 cây |
 | III.4 | Tỉ số phần trăm có lời văn | Tỉ số phần trăm | Cụm “chiếm bao nhiêu phần trăm”, “so với cả lớp” | Chốt đại lượng 100% rồi chọn dạng | Nếu tỉ số là 1 phần 4 thì bằng 25%; nhớ vài mốc quen để nhẩm. | 10 học sinh · 75% · 60% · 32 học sinh… |
 | III.5 | Đọc bảng số liệu thống kê | Thống kê mô tả sơ cấp, trung bình cộng, tỉ số phần trăm | Đề cho bảng hoặc biểu đồ kèm nhiều câu hỏi | Ghi lại số liệu, trả lời từng câu bằng công cụ tương ứng | Tính tổng một lần rồi dùng lại cho mọi câu hỏi phần trăm. | 88 · Khoa học (26 bạn) · Tiếng Anh (4 bạn) · 22… |
@@ -253,10 +253,10 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.4 | Ước, bội, ƯCLN, BCNN | Ước và bội của số tự nhiên | Từ khoá “ước chung lớn nhất”, “bội chung nhỏ nhất” | Liệt kê theo cặp ước; dùng quan hệ tích = ƯCLN × BCNN | ƯCLN × BCNN = tích hai số — tìm được một cái là suy ra cái kia. | 6 ước: 1, 2, 4, 17, 34, 68 · 2 ước: 1, 13 · 154 · 1 998… |
 | IV.5 | Tính nhanh biểu thức số thập phân | Tính chất phép tính với số thập phân | Các số thập phân cộng lại tròn chục hoặc có thừa số chung | Ghép cặp tròn, đặt thừa số chung | × 4 rồi × 25 là × 100 — chỉ việc dịch dấu phẩy sang phải hai chữ số. | 34 · 160 · 53 · 12… |
 | V.1 | Diện tích phần tô màu | Diện tích hình tròn, hình vuông; phép trừ diện tích | Hình gồm nhiều hình lồng nhau, hỏi phần còn lại | Tách thành hiệu các hình cơ bản | Hình tròn nội tiếp hình vuông chiếm khoảng 78,5% diện tích hình vuông. | 314 cm² · 145,34 cm² · 863,5 cm² · 69,66 cm²… |
-| V.2 | So sánh phân số bằng kĩ thuật đặc biệt | Phần bù tới 1, phân số trung gian | Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 | So phần bù; hoặc chèn phân số trung gian | Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. | &gt; · &lt; · &gt; · &lt;… |
+| V.2 | So sánh phân số bằng kĩ thuật đặc biệt | Phần bù tới 1, phân số trung gian | Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 | So phần bù; hoặc chèn phân số trung gian | Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. | > · < · > · <… |
 | V.3 | Vận tốc trung bình | Công thức vận tốc; trung bình cộng có trọng số | Hai chặng có vận tốc khác nhau | Tính tổng quãng đường, tổng thời gian rồi chia | Kiểm tra: vận tốc trung bình luôn nằm giữa hai vận tốc đã cho. | 33,33 km/giờ · 17 km/giờ · 24 km/giờ · 16,67 km/giờ |
 | V.4 | Phần trăm thay đổi nhiều lần | Tỉ số phần trăm, mốc quy chiếu | Hai lần tăng giảm liên tiếp | Tính tuần tự, xác định lại mốc 100% sau mỗi bước | Tăng 20% rồi giảm 20% thì còn 96% giá ban đầu — luôn thấp hơn giá cũ. | 108 000 đồng, tăng 8 000 đồng · 200 000 đồng, không đổi 0 đồng · 112 500 đồng, tăng 12 500 đồng · 412 500 đồng, giảm 87 500 đồng… |
-| V.5 | Tính, so sánh tích bằng kĩ thuật tách – bù | Nhân một số với một tổng, một hiệu | Các thừa số hơn kém nhau rất ít | Quy về số gốc chung, so phần chênh | Với hai tích có tổng hai thừa số bằng nhau, tích nào có hai thừa số gần nhau hơn thì lớn hơn. | &lt; · 1 600 · &lt; · 1 296… |
+| V.5 | Tính, so sánh tích bằng kĩ thuật tách – bù | Nhân một số với một tổng, một hiệu | Các thừa số hơn kém nhau rất ít | Quy về số gốc chung, so phần chênh | Với hai tích có tổng hai thừa số bằng nhau, tích nào có hai thừa số gần nhau hơn thì lớn hơn. | < · 1 600 · < · 1 296… |
 
 ---
 
@@ -364,18 +364,18 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 
 | Bài | Đề tương tự | Đáp số |
 |---|---|---|
-| I.1 | So sánh: 3 phần 5 … 3 phần 7 | &gt; |
-| I.2 | Điền dấu: 6 568 434 … 6 568 435 | &lt; |
+| I.1 | So sánh: 3 phần 5 … 3 phần 7 | > |
+| I.2 | Điền dấu: 6 568 434 … 6 568 435 | < |
 | I.3 | Đặt tính rồi tính: 3 045 × 24 | 73 080 |
-| I.4 | So sánh: 0,5 … 0,45 | &gt; |
+| I.4 | So sánh: 0,5 … 0,45 | > |
 | I.5 | Rút gọn 18 phần 24. | 3 phần 4 |
-| II.1 | So sánh: 3 kg … 2 500 g | &gt; |
+| II.1 | So sánh: 3 kg … 2 500 g | > |
 | II.2 | Tính: 2 phần 3 + 1 phần 6 | 5 phần 6 |
 | II.3 | Tìm 25% của 200. | 50 |
 | II.4 | Hai lớp có 90 quyển sách, lớp A nhiều hơn lớp B 10 quyển. Mỗi lớp có mấy quyển? | 50 và 40 |
 | II.5 | Tính: 3,25 × 4 | 13 |
 | III.1 | Tính nhanh: 3 phần 7 + 4 phần 7 | 1 |
-| III.2 | So sánh: 234 × 7 … 234 × 8 | &lt; |
+| III.2 | So sánh: 234 × 7 … 234 × 8 | < |
 | III.3 | Tổ Một trồng 60 cây, tổ Hai bằng 2 phần 3 tổ Một. Tổ Hai trồng mấy cây? | 40 cây |
 | III.4 | Lớp có 40 học sinh, 10 em giỏi. Học sinh giỏi chiếm bao nhiêu phần trăm? | 25% |
 | III.5 | Bảng: Toán 10, Văn 6, Anh 4. Trung bình mỗi môn bao nhiêu bạn? | 6,67 bạn |
@@ -385,10 +385,10 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | IV.4 | Tìm ước chung lớn nhất của 12 và 18. | 6 |
 | IV.5 | Tính nhanh: 2,5 × 4 × 25 | 250 |
 | V.1 | Hình tròn bán kính 5 cm nội tiếp hình vuông. Diện tích phần ngoài hình tròn bằng bao nhiêu? | 21,5 cm² |
-| V.2 | So sánh: 5 phần 6 … 7 phần 8 | &lt; |
+| V.2 | So sánh: 5 phần 6 … 7 phần 8 | < |
 | V.3 | Đi 2 giờ với 30 km/giờ rồi 2 giờ với 50 km/giờ. Vận tốc trung bình? | 40 km/giờ |
 | V.4 | Giá 100 000 đồng tăng 10% rồi giảm 10%. Giá cuối là bao nhiêu? | 99 000 đồng |
-| V.5 | So sánh: 99 × 101 … 100 × 100 | &lt; |
+| V.5 | So sánh: 99 × 101 … 100 × 100 | < |
 
 ---
 

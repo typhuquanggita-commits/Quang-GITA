@@ -62,7 +62,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần E**
 
-- **Bài E.1** — a) &gt; · b) &lt; · c) &gt; · d) &lt; · e) &lt; · f) &gt;
+- **Bài E.1** — a) > · b) < · c) > · d) < · e) < · f) >
 - **Bài E.2** — a) 2 328 · b) 1 176 · c) 9 360 · d) 2 399 · e) 734
 - **Bài E.3** — a) không · b) XX · c) 31 · d) 1 tuần 3 ngày
 - **Bài E.4** — a) 38 · b) 200 · c) 200 · d) 228
@@ -252,7 +252,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | D.3 | Đổi đơn vị diện tích | Bảng đơn vị đo diện tích | Đơn vị có mũ hai: m², cm², km², ha | Đếm bậc rồi nhân, chia 100 | Mỗi bậc thêm hai chữ số 0 — nhớ “diện tích thì gấp đôi số 0”. | Bảng đơn vị đo diện tích · Đổi đơn vị diện tích · Đơn vị có mũ hai: m², cm², km², ha · Đếm bậc rồi nhân, chia 100… |
 | D.4 | Tỉ lệ nghịch, so sánh hai phương án | Đại lượng tỉ lệ nghịch, tổng số ngày công | Thay đổi số người, hỏi thay đổi thời gian | Bám vào tổng số ngày công không đổi | Số người tăng gấp k lần thì số ngày giảm còn 1 phần k. | Đại lượng tỉ lệ nghịch, tổng số ngày công · Tỉ lệ nghịch, so sánh hai phương án · Thay đổi số người, hỏi thay đổi thời gian · Bám vào tổng số ngày công không đổi… |
 | D.5 | Bốn phép tính với số đo | Đổi đơn vị, bốn phép tính | Các số hạng có đơn vị khác nhau trong cùng một phép tính | Đổi về đơn vị của kết quả rồi tính | Đọc chỗ chấm trước, biết ngay đơn vị đích. | Đổi đơn vị, bốn phép tính · Bốn phép tính với số đo · Các số hạng có đơn vị khác nhau trong cùng một phép tính · Đổi về đơn vị của kết quả rồi tính… |
-| E.1 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &gt; · &lt; · &gt; · &lt;… |
+| E.1 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | > · < · > · <… |
 | E.2 | Bốn phép tính với số đo | Đổi đơn vị, bốn phép tính | Các số hạng có đơn vị khác nhau trong cùng một phép tính | Đổi về đơn vị của kết quả rồi tính | Đọc chỗ chấm trước, biết ngay đơn vị đích. | 2 328 · 1 176 · 9 360 · 2 399… |
 | E.3 | Lịch và đơn vị thời gian lớn | Số ngày các tháng, năm nhuận, thế kỉ | Đề hỏi về tháng, năm, thế kỉ | Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400 | Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ. | không · XX · 31 · 1 tuần 3 ngày |
 | E.4 | Tính nhanh tổng nhiều số hạng | Tính chất giao hoán, kết hợp của phép cộng | Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm | Ghép cặp tròn rồi cộng | Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10. | 38 · 200 · 200 · 228 |
@@ -384,7 +384,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | D.3 | 3 m² = … cm² | 30 000 |
 | D.4 | 6 người làm xong trong 10 ngày. Thêm 4 người thì sớm hơn mấy ngày? | 4 ngày |
 | D.5 | 2 m 30 cm + 150 cm = … cm | 380 |
-| E.1 | So sánh: 3 kg … 2 500 g | &gt; |
+| E.1 | So sánh: 3 kg … 2 500 g | > |
 | E.2 | 2 m 30 cm + 150 cm = … cm | 380 |
 | E.3 | Năm 1975 thuộc thế kỉ thứ mấy? | XX |
 | E.4 | Tính nhanh: 37 + 145 + 63 | 245 |

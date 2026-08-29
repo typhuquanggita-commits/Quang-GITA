@@ -46,7 +46,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần C**
 
-- **Bài C.1** — a) &lt; · b) &gt; · c) &lt; · d) &lt;
+- **Bài C.1** — a) < · b) > · c) < · d) <
 - **Bài C.2** — a) 63 cm² · b) 483 cm² · c) 168 cm² · d) 221 cm² · e) 180 cm²
 - **Bài C.3** — a) 4 698 · b) 16 224 · c) 1 480 · d) 3 748 · e) 16 440
 - **Bài C.4** — a) 323 · b) 8 316 · c) 532 · d) 3 535 · e) 286
@@ -242,7 +242,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | B.3 | Bốn phép tính với phân số | Quy đồng, nhân chia phân số | Biểu thức chỉ gồm phân số | Chọn quy tắc theo phép tính, rút gọn cuối cùng | Rút gọn chéo trước khi nhân để số nhỏ, tính nhanh và ít sai. | 3 phần 40 · 19 phần 20 · 7 phần 6 · 237 phần 130… |
 | B.4 | Tỉ lệ thuận, rút về đơn vị | Đại lượng tỉ lệ thuận | Hai đại lượng cùng tăng cùng giảm | Rút về đơn vị hoặc dùng tỉ số | Nếu số lượng mới gấp số lượng cũ một số nguyên lần thì nhân thẳng, không cần rút về đơn vị. | 18 quyển · 29 quyển · 980 nghìn đồng · 21 quyển… |
 | B.5 | Ba dạng bài trung bình cộng | Quan hệ tổng – số lượng – trung bình cộng | Cụm “trung bình mỗi …” | Đi qua tổng làm trung gian | Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng. | 344 kg · 100 kg · 40 kg · 151 kg… |
-| C.1 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &lt; · &gt; · &lt; · &lt; |
+| C.1 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | < · > · < · < |
 | C.2 | Diện tích các hình phẳng cơ bản | Công thức diện tích hình bình hành, hình thoi, hình tam giác | Đề cho đáy và chiều cao, hoặc hai đường chéo | Nhận dạng hình rồi chọn công thức | Tam giác bằng nửa hình bình hành cùng đáy cùng chiều cao. | 63 cm² · 483 cm² · 168 cm² · 221 cm²… |
 | C.3 | Bốn phép tính với số đo | Đổi đơn vị, bốn phép tính | Các số hạng có đơn vị khác nhau trong cùng một phép tính | Đổi về đơn vị của kết quả rồi tính | Đọc chỗ chấm trước, biết ngay đơn vị đích. | 4 698 · 16 224 · 1 480 · 3 748… |
 | C.4 | Nhân nhẩm nhờ tách thừa số | Nhân một số với một tổng, một hiệu | Thừa số là 9, 11, 19, 21, 99, 101… | Tách về số tròn rồi bù trừ | × 11 với số có hai chữ số: viết hai chữ số ra hai đầu, tổng của chúng đặt vào giữa (nhớ sang trái nếu tổng vượt 9). | 323 · 8 316 · 532 · 3 535… |
@@ -374,7 +374,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | B.3 | Tính: 2 phần 3 + 1 phần 6 | 5 phần 6 |
 | B.4 | Mua 4 quyển vở hết 24 nghìn. Mua 10 quyển hết bao nhiêu? | 60 nghìn |
 | B.5 | Trung bình mỗi ngày bán 40 kg, hỏi 5 ngày bán bao nhiêu? | 200 kg |
-| C.1 | So sánh: 3 kg … 2 500 g | &gt; |
+| C.1 | So sánh: 3 kg … 2 500 g | > |
 | C.2 | Tam giác đáy 10 cm, cao 6 cm. Diện tích bằng bao nhiêu? | 30 cm² |
 | C.3 | 2 m 30 cm + 150 cm = … cm | 380 |
 | C.4 | Tính nhẩm: 46 × 11 | 506 |

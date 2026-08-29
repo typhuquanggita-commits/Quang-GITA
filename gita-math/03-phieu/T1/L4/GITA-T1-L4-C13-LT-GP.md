@@ -33,7 +33,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài A.1** — a) 190 505 · b) 4 087 · c) 206 382 · d) 126 672 · e) 135 696 · f) 9 142 · g) 247 988
 - **Bài A.2** — a) 9 phần 2 · b) 2 phần 3 · c) 6 phần 7 · d) 3 · e) 4 phần 5
 - **Bài A.3** — a) 20 · b) 150 · c) 40 · d) 18 cm · e) 20 cm²
-- **Bài A.4** — a) &gt; · b) &gt; · c) &gt; · d) &gt; · e) &gt; · f) &gt;
+- **Bài A.4** — a) > · b) > · c) > · d) > · e) > · f) >
 - **Bài A.5** — a) 818 187 · b) 458 019 · c) 620 146 · d) 672 445
 
 **Phần B**
@@ -56,7 +56,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài D.1** — a) Quy đồng, nhân chia phân số · b) Bốn phép tính với phân số · c) Biểu thức chỉ gồm phân số · d) Chọn quy tắc theo phép tính, rút gọn cuối cùng · e) Quy đồng cả khi nhân, hoặc cộng thẳng tử với tử và mẫu với mẫu. · f) 5 phần 6
 - **Bài D.2** — a) Tính chất cơ bản của phân số · b) Rút gọn phân số · c) Tử số và mẫu số có ước chung lớn hơn 1 · d) Chia cả tử và mẫu cho ước chung · e) Chỉ chia tử số hoặc chỉ chia mẫu số. · f) 3 phần 4
-- **Bài D.3** — a) Phần bù tới 1, phân số trung gian · b) So sánh phân số bằng kĩ thuật đặc biệt · c) Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 · d) So phần bù; hoặc chèn phân số trung gian · e) So phần bù rồi kết luận cùng chiều với phần bù. · f) &lt;
+- **Bài D.3** — a) Phần bù tới 1, phân số trung gian · b) So sánh phân số bằng kĩ thuật đặc biệt · c) Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 · d) So phần bù; hoặc chèn phân số trung gian · e) So phần bù rồi kết luận cùng chiều với phần bù. · f) <
 - **Bài D.4** — a) Nhân số tự nhiên với phân số · b) Tìm phân số của một số · c) Cụm “bằng … của …” · d) Chia theo mẫu số rồi nhân theo tử số · e) Nhân phân số với đại lượng khác, không phải đại lượng đề chỉ định. · f) 40 cây
 - **Bài D.5** — a) Thứ tự thực hiện phép tính, tính chất phân phối · b) Biểu thức phân số nhiều phép tính · c) Biểu thức gồm nhiều phân số và nhiều phép tính · d) Quan sát rút gọn trước, sau đó theo thứ tự thực hiện · e) Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. · f) 1
 
@@ -235,7 +235,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | A.1 | Nhân, chia số tự nhiên | Kĩ thuật đặt tính nhân, chia | Yêu cầu “đặt tính rồi tính” với phép nhân, chia | Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ chữ số | Kiểm tra kết quả bằng phép tính ngược: thương × số chia = số bị chia. | 190 505 · 4 087 · 206 382 · 126 672… |
 | A.2 | Rút gọn phân số | Tính chất cơ bản của phân số | Tử số và mẫu số có ước chung lớn hơn 1 | Chia cả tử và mẫu cho ước chung | Tìm ngay ước chung lớn nhất để rút gọn một lần là xong. | 9 phần 2 · 2 phần 3 · 6 phần 7 · 3… |
 | A.3 | Đếm hình trong lưới | Quy tắc đếm, tổ hợp đơn giản | Hình vẽ là lưới ô vuông đều | Đếm theo đường kẻ hoặc theo cỡ hình | Số cách chọn 2 trong k đường kẻ là k × (k − 1) : 2. | 20 · 150 · 40 · 18 cm… |
-| A.4 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | &gt; · &gt; · &gt; · &gt;… |
+| A.4 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | > · > · > · >… |
 | A.5 | Viết số từ dạng tổng theo hàng | Cấu tạo thập phân của số tự nhiên | Tổng gồm các số tròn chục, tròn trăm, tròn nghìn… | Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết | Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số. | 818 187 · 458 019 · 620 146 · 672 445 |
 | B.1 | Định vị chương trong hệ thống | Tên chương, nhóm chuyên đề, số dạng bài | Phần đầu phiếu ghi rõ tên cụm và nhóm chuyên đề | Đọc phần đầu phiếu rồi trả lời theo đúng tên gọi | Ghi tên chương ra góc vở, mỗi lần mở vở là đọc lại một lần. | Phép chia phân số, tìm phân số của một số và biểu đồ cột · H — Phân số – Số thập phân – Tỉ số phần trăm – Thống kê · 6 · ở mọi bài thuộc phân số – số thập phân – tỉ số phần trăm – thống kê, vì các chương sau đều dùng lại nền này… |
 | B.2 | Liệt kê dạng bài của chương | Danh mục dạng bài | Bảng dạng bài ở phiếu Dạng bài & Đọc vị của cùng cụm | Chép theo bảng, giữ nguyên thứ tự | Học thuộc số lượng dạng bài trước, tên từng dạng sau. | Phép chia phân số · Tìm phân số của một số · Bài toán có lời văn với phân số · Biểu đồ cột — đọc và lập biểu đồ… |
@@ -367,7 +367,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | A.1 | Đặt tính rồi tính: 3 045 × 24 | 73 080 |
 | A.2 | Rút gọn 18 phần 24. | 3 phần 4 |
 | A.3 | Lưới 2 hàng 2 cột có bao nhiêu hình vuông? | 5 |
-| A.4 | So sánh: 3 phần 5 … 3 phần 7 | &gt; |
+| A.4 | So sánh: 3 phần 5 … 3 phần 7 | > |
 | A.5 | Viết số gồm tổng: 30 000 + 400 + 7 | 30 407 |
 | B.1 | Chương “Phép chia phân số, tìm phân số của một số và biểu đồ cột” thuộc nhóm chuyên đề nào? | H — Phân số – Số thập phân – Tỉ số phần trăm – Thống kê |
 | B.2 | Chương này có mấy dạng bài chính? | 6 |
@@ -381,7 +381,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | C.5 | Tổng dãy cách đều tính nhanh bằng cách nào? | (đầu + cuối) × số số hạng : 2 |
 | D.1 | Tính: 2 phần 3 + 1 phần 6 | 5 phần 6 |
 | D.2 | Rút gọn 18 phần 24. | 3 phần 4 |
-| D.3 | So sánh: 5 phần 6 … 7 phần 8 | &lt; |
+| D.3 | So sánh: 5 phần 6 … 7 phần 8 | < |
 | D.4 | Tổ Một trồng 60 cây, tổ Hai bằng 2 phần 3 tổ Một. Tổ Hai trồng mấy cây? | 40 cây |
 | D.5 | Tính: (1 phần 2 + 1 phần 3) × 6 phần 5 | 1 |
 | E.1 | Vườn dài 20 m rộng 10 m, rào xung quanh cần bao nhiêu mét rào? | 60 m |

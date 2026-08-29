@@ -34,7 +34,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài I.2** — a) không · b) XXI · c) 1 tuần 3 ngày · d) 31 · e) 30 · f) XX
 - **Bài I.3** — a) 169 · b) 24 · c) 150 · d) 163
 - **Bài I.4** — a) không (tổng chữ số 4) · b) không (tổng chữ số 17) · c) không (tổng chữ số 17) · d) không (chữ số tận cùng 8) · e) không (tổng chữ số 25)
-- **Bài I.5** — a) &lt; · b) &gt; · c) &lt; · d) &lt;
+- **Bài I.5** — a) < · b) > · c) < · d) <
 
 **Phần II**
 
@@ -236,7 +236,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | I.2 | Lịch và đơn vị thời gian lớn | Số ngày các tháng, năm nhuận, thế kỉ | Đề hỏi về tháng, năm, thế kỉ | Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400 | Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ. | không · XXI · 1 tuần 3 ngày · 31… |
 | I.3 | Đếm số hạng của dãy cách đều theo điều kiện chia hết | Dãy số cách đều, dấu hiệu chia hết | Cụm “có bao nhiêu số … từ … đến …” | Tìm số đầu, số cuối hợp lệ rồi dùng công thức đếm | Số các số chia hết cho d từ 1 đến n bằng phần nguyên của n : d, nên đếm từ a đến b là b : d trừ đi (a − 1) : d. | 169 · 24 · 150 · 163 |
 | I.4 | Kiểm tra chia hết bằng dấu hiệu | Dấu hiệu chia hết cho 2, 3, 5, 9 | Câu hỏi “có chia hết cho … không” | Chọn đúng dấu hiệu theo số chia rồi kiểm tra | Cộng chữ số theo cặp tròn 9, phần dư chính là số dư khi chia 9. | không (tổng chữ số 4) · không (tổng chữ số 17) · không (tổng chữ số 17) · không (chữ số tận cùng 8)… |
-| I.5 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &lt; · &gt; · &lt; · &lt; |
+| I.5 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | < · > · < · < |
 | II.1 | Bài toán hiệu – tỉ | Tỉ số, sơ đồ đoạn thẳng | Đề cho **hiệu** và **tỉ số** | Sơ đồ → hiệu số phần → giá trị một phần | Hiệu luôn chia hết cho hiệu số phần — dùng để kiểm tra đã đọc đúng tỉ số chưa. | hợp tác xã: 243 kg, xưởng: 405 kg · thư viện: 580 kg, trang trại: 696 kg · thư viện: 100 kg, kho B: 200 kg · cửa hàng: 325 kg, hợp tác xã: 455 kg |
 | II.2 | Tính thời điểm trong ngày | Quan hệ giờ – phút, phép chia có dư | Cho thời điểm bắt đầu và khoảng thời gian | Quy về phút, cộng trừ, đổi lại | Cộng tròn giờ trước rồi cộng phần phút lẻ sau. | 17 giờ 2 phút · 17 giờ 18 phút · 13 giờ 51 phút · 12 giờ 25 phút |
 | II.3 | Tìm chữ số tận cùng của một phép tính | Tính chất chữ số tận cùng | Câu hỏi chỉ hỏi “chữ số tận cùng”, không hỏi kết quả | Rút gọn về chữ số tận cùng rồi tính | Với phép trừ, nếu chữ số cuối của số bị trừ nhỏ hơn thì mượn 10 rồi trừ. | 6 · 7 · 0 · 0 |
@@ -368,7 +368,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | I.2 | Năm 1975 thuộc thế kỉ thứ mấy? | XX |
 | I.3 | Có bao nhiêu số chẵn từ 10 đến 40? | 16 |
 | I.4 | Số 400 có chia hết cho 9 không? | không |
-| I.5 | So sánh: 3 kg … 2 500 g | &gt; |
+| I.5 | So sánh: 3 kg … 2 500 g | > |
 | II.1 | Số lớn hơn số bé 24, số bé bằng 1 phần 3 số lớn. Tìm hai số. | 12 và 36 |
 | II.2 | Tàu chạy lúc 7 giờ 40 phút, đi hết 2 giờ 35 phút. Đến lúc mấy giờ? | 10 giờ 15 phút |
 | II.3 | Tích 137 × 46 có chữ số tận cùng là chữ số nào? | 2 |

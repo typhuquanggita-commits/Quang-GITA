@@ -46,7 +46,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần III**
 
-- **Bài III.1** — a) &lt; · b) &lt; · c) &lt; · d) &lt; · e) &gt; · f) &lt; · g) &gt;
+- **Bài III.1** — a) < · b) < · c) < · d) < · e) > · f) < · g) >
 - **Bài III.2** — a) 5 tạ · b) 8 tạ 50 kg · c) 4 tạ 50 kg · d) 6 tạ 30 kg · e) 16 tạ · f) 9 tạ
 - **Bài III.3** — a) 21 · b) 6 · c) 6 · d) 4 · e) 10
 - **Bài III.4** — a) 3 lần · b) 3 phần · c) vì mỗi lần cân có ba kết quả: trái nặng hơn, phải nặng hơn, hoặc cân bằng · d) 9 · e) 1 lần · f) 2 lần
@@ -63,7 +63,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần V**
 
 - **Bài V.1** — a) Điền chữ số theo điều kiện chia hết · b) Dấu hiệu chia hết, chữ số hàng cao nhất khác 0 · c) Số có ô trống hoặc dấu *, kèm điều kiện chia hết · d) Dùng dấu hiệu để lập điều kiện cho dấu * rồi thử 0–9 · e) Với 3 và 9: tính tổng các chữ số đã biết một lần duy nhất, rồi tìm phần bù cần thêm. · f) 1, 4, 7 · 0, 3, 6, 9 · 0, 3, 6, 9 · 2, 5, 8
-- **Bài V.2** — a) So sánh hai số tự nhiên · b) Thứ tự trong tập số tự nhiên · c) Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = · d) Đếm chữ số → so từng hàng từ trái sang phải · e) Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. · f) &gt; · &lt; · &lt; · &lt;…
+- **Bài V.2** — a) So sánh hai số tự nhiên · b) Thứ tự trong tập số tự nhiên · c) Dấu … giữa hai số, yêu cầu điền <, >, = · d) Đếm chữ số → so từng hàng từ trái sang phải · e) Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. · f) > · < · < · <…
 - **Bài V.3** — a) Kiểm tra chia hết bằng dấu hiệu · b) Dấu hiệu chia hết cho 2, 3, 5, 9 · c) Câu hỏi “có chia hết cho … không” · d) Chọn đúng dấu hiệu theo số chia rồi kiểm tra · e) Cộng chữ số theo cặp tròn 9, phần dư chính là số dư khi chia 9. · f) không (chữ số tận cùng 3) · không (tổng chữ số 17) · không (chữ số tận cùng 1) · không (chữ số tận cùng 7)…
 - **Bài V.4** — a) Xét chia hết của tổng, hiệu · b) Tính chất chia hết của tổng và hiệu · c) Câu hỏi về tổng hoặc hiệu, không yêu cầu kết quả cụ thể · d) Xét số dư từng số hạng rồi cộng, trừ các số dư · e) Chỉ cộng các **số dư**, không cộng các số. · f) không, dư 1 · có · có · không, dư 1…
 - **Bài V.5** — a) Làm tròn số tự nhiên · b) Quy tắc làm tròn, giá trị hàng · c) Cụm từ “làm tròn đến hàng …” · d) Gạch ngăn hàng → xét chữ số liền sau → giữ nguyên hoặc thêm 1 · e) Che toàn bộ phần đuôi sau nét gạch, chỉ để lộ đúng một chữ số. · f) 302 000 · 706 000 · 601 600 · 50 610…
@@ -242,7 +242,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | II.3 | Tìm chữ số tận cùng của một phép tính | Tính chất chữ số tận cùng | Câu hỏi chỉ hỏi “chữ số tận cùng”, không hỏi kết quả | Rút gọn về chữ số tận cùng rồi tính | Với phép trừ, nếu chữ số cuối của số bị trừ nhỏ hơn thì mượn 10 rồi trừ. | 4 · 1 · 0 · 9… |
 | II.4 | Đếm số chia hết đồng thời cho nhiều số | Bội chung nhỏ nhất, dãy số cách đều | Cụm “vừa chia hết cho … vừa chia hết cho …” | Quy về một số chia duy nhất là BCNN rồi đếm | Chia hết cho 2 và 5 thì tận cùng là 0; chia hết cho 2 và 3 thì chia hết cho 6. | 54 số, bé nhất là 225 · 79 số, bé nhất là 168 · 81 số, bé nhất là 180 · 12 số, bé nhất là 180… |
 | II.5 | Dãy số tự nhiên liên tiếp có tổng cho trước | Trung bình cộng, dãy cách đều | Cụm “… số tự nhiên liên tiếp có tổng bằng …” | Tìm số giữa bằng phép chia rồi suy ra hai đầu dãy | Tổng của n số liên tiếp (n lẻ) luôn chia hết cho n. | 166 · 437 · 377 · 17… |
-| III.1 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | &lt; · &lt; · &lt; · &lt;… |
+| III.1 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | < · < · < · <… |
 | III.2 | Bài toán đại lượng có lời văn | Nhân, chia số tự nhiên; đổi đơn vị khối lượng | Đơn vị trong câu hỏi khác đơn vị trong dữ kiện | Tính theo đơn vị dữ kiện rồi đổi ở bước cuối | 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ. | 5 tạ · 8 tạ 50 kg · 4 tạ 50 kg · 6 tạ 30 kg… |
 | III.3 | Đếm hình bằng quy tắc chọn hai điểm | Quy tắc đếm, tổ hợp chập hai | Hình có nhiều đoạn kẻ từ cùng một đỉnh, hoặc nhiều điểm trên một đường | Quy về số cách chọn hai điểm | Số cách chọn 2 trong k là k × (k − 1) : 2 — thuộc công thức này là xong. | 21 · 6 · 6 · 4… |
 | III.4 | Cân đĩa, chia ba | Lập luận trường hợp xấu nhất, chia nhóm | Cân đĩa không có quả cân, tìm vật khác biệt | Chia ba phần bằng nhau mỗi lần cân | 3 đồng → 1 lần; 9 đồng → 2 lần; 27 đồng → 3 lần. | 3 lần · 3 phần · vì mỗi lần cân có ba kết quả: trái nặng hơn, phải nặng hơn, hoặc cân bằng · 9… |
@@ -253,7 +253,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.4 | Tìm số thoả nhiều điều kiện chia có dư | Phép chia có dư, dãy cách đều | Hai điều kiện “chia cho … dư …” đi cùng nhau | Lập dãy theo điều kiện chặt hơn rồi lọc theo điều kiện còn lại | Chọn điều kiện có số chia **lớn hơn** để lập dãy — dãy thưa hơn nên thử nhanh hơn. | 12 · 2 · không có số nào · 2 |
 | IV.5 | Biến đổi số bằng cách thêm, bớt, đổi chỗ chữ số | Cấu tạo thập phân, hiệu hai số | Đề nói “xoá chữ số”, “viết thêm chữ số”, “đổi chỗ” | Viết cả hai số theo cấu tạo rồi lấy hiệu | Đổi chỗ hàng trăm với hàng đơn vị: hiệu = 99 × (hiệu hai chữ số). | 572 · 396 · 99 · 693 |
 | V.1 | Điền chữ số theo điều kiện chia hết | Dấu hiệu chia hết, chữ số hàng cao nhất khác 0 | Số có ô trống hoặc dấu *, kèm điều kiện chia hết | Dùng dấu hiệu để lập điều kiện cho dấu * rồi thử 0–9 | Với 3 và 9: tính tổng các chữ số đã biết một lần duy nhất, rồi tìm phần bù cần thêm. | Điền chữ số theo điều kiện chia hết · Dấu hiệu chia hết, chữ số hàng cao nhất khác 0 · Số có ô trống hoặc dấu *, kèm điều kiện chia hết · Dùng dấu hiệu để lập điều kiện cho dấu * rồi thử 0–9… |
-| V.2 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | So sánh hai số tự nhiên · Thứ tự trong tập số tự nhiên · Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = · Đếm chữ số → so từng hàng từ trái sang phải… |
+| V.2 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | So sánh hai số tự nhiên · Thứ tự trong tập số tự nhiên · Dấu … giữa hai số, yêu cầu điền <, >, = · Đếm chữ số → so từng hàng từ trái sang phải… |
 | V.3 | Kiểm tra chia hết bằng dấu hiệu | Dấu hiệu chia hết cho 2, 3, 5, 9 | Câu hỏi “có chia hết cho … không” | Chọn đúng dấu hiệu theo số chia rồi kiểm tra | Cộng chữ số theo cặp tròn 9, phần dư chính là số dư khi chia 9. | Kiểm tra chia hết bằng dấu hiệu · Dấu hiệu chia hết cho 2, 3, 5, 9 · Câu hỏi “có chia hết cho … không” · Chọn đúng dấu hiệu theo số chia rồi kiểm tra… |
 | V.4 | Xét chia hết của tổng, hiệu | Tính chất chia hết của tổng và hiệu | Câu hỏi về tổng hoặc hiệu, không yêu cầu kết quả cụ thể | Xét số dư từng số hạng rồi cộng, trừ các số dư | Chỉ cộng các **số dư**, không cộng các số. | Xét chia hết của tổng, hiệu · Tính chất chia hết của tổng và hiệu · Câu hỏi về tổng hoặc hiệu, không yêu cầu kết quả cụ thể · Xét số dư từng số hạng rồi cộng, trừ các số dư… |
 | V.5 | Làm tròn số tự nhiên | Quy tắc làm tròn, giá trị hàng | Cụm từ “làm tròn đến hàng …” | Gạch ngăn hàng → xét chữ số liền sau → giữ nguyên hoặc thêm 1 | Che toàn bộ phần đuôi sau nét gạch, chỉ để lộ đúng một chữ số. | Làm tròn số tự nhiên · Quy tắc làm tròn, giá trị hàng · Cụm từ “làm tròn đến hàng …” · Gạch ngăn hàng → xét chữ số liền sau → giữ nguyên hoặc thêm 1… |
@@ -374,7 +374,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | II.3 | Tích 137 × 46 có chữ số tận cùng là chữ số nào? | 2 |
 | II.4 | Có bao nhiêu số từ 1 đến 100 vừa chia hết cho 2 vừa chia hết cho 5? | 10 |
 | II.5 | Tổng của 5 số tự nhiên liên tiếp bằng 100. Số bé nhất là số nào? | 18 |
-| III.1 | So sánh: 234 × 7 … 234 × 8 | &lt; |
+| III.1 | So sánh: 234 × 7 … 234 × 8 | < |
 | III.2 | Xe chở 20 bao gạo, mỗi bao 50 kg. Xe chở mấy tạ? | 10 tạ |
 | III.3 | Trên một đường thẳng có 5 điểm. Có bao nhiêu đoạn thẳng? | 10 |
 | III.4 | Có 9 đồng tiền, một đồng nhẹ hơn. Cần cân mấy lần? | 2 lần |
@@ -385,7 +385,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | IV.4 | Tìm số bé nhất chia cho 5 dư 2 và chia cho 3 dư 1. | 7 |
 | IV.5 | Viết thêm chữ số 2 vào bên trái số 345 thì số mới hơn số cũ bao nhiêu? | 2 000 |
 | V.1 | Tìm chữ số thay cho * để 12* chia hết cho 5. | 0, 5 |
-| V.2 | Điền dấu: 570 735 … 570 736 | &lt; |
+| V.2 | Điền dấu: 570 735 … 570 736 | < |
 | V.3 | Số 1 173 có chia hết cho 9 không? | không |
 | V.4 | Tổng 45 + 27 có chia hết cho 9 không? | có |
 | V.5 | Làm tròn 4 762 đến hàng trăm. | 4 800 |

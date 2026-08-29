@@ -33,7 +33,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài I.1** — a) 2 226 · b) 7 776 · c) 149 · d) 230 · e) 153 · f) 5 553
 - **Bài I.2** — a) 5 chữ số, tổng 18 · b) 5 chữ số, tổng 28 · c) 5 chữ số, tổng 11 · d) 5 chữ số, tổng 23 · e) 5 chữ số, tổng 23 · f) 4 chữ số, tổng 18
 - **Bài I.3** — a) 9 063 · b) 13 426 · c) 15 144 · d) 79 248 · e) 96 676
-- **Bài I.4** — a) &lt; · b) &lt; · c) &gt; · d) &lt; · e) &gt; · f) &gt; · g) &lt; · h) &gt;
+- **Bài I.4** — a) < · b) < · c) > · d) < · e) > · f) > · g) < · h) >
 - **Bài I.5** — a) chữ số 2, giá trị 2 000 · b) chữ số 5, giá trị 500 · c) chữ số 6, giá trị 60 · d) chữ số 2, giá trị 2
 
 **Phần II**
@@ -92,7 +92,7 @@ Số chẵn là số có chữ số tận cùng 0, 2, 4, 6, 8; số lẻ tận c
 
 *Điểm chốt:* Chỉ cần nhìn **chữ số tận cùng** là biết chẵn hay lẻ, dù số dài bao nhiêu.
 
-### Bài I.4 — Điền dấu &lt;, &gt;, = thích hợp
+### Bài I.4 — Điền dấu <, >, = thích hợp
 
 So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 
@@ -235,7 +235,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | I.1 | Nhân, chia số tự nhiên | Kĩ thuật đặt tính nhân, chia | Yêu cầu “đặt tính rồi tính” với phép nhân, chia | Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ chữ số | Kiểm tra kết quả bằng phép tính ngược: thương × số chia = số bị chia. | 2 226 · 7 776 · 149 · 230… |
 | I.2 | Đếm chữ số, tính tổng chữ số | Cấu tạo số, tổng chữ số | Yêu cầu “có mấy chữ số”, “tổng các chữ số” | Tách lớp để đếm; cộng rời từng chữ số | Ghép cặp các chữ số cộng lại tròn 10 rồi cộng nhanh. | 5 chữ số, tổng 18 · 5 chữ số, tổng 28 · 5 chữ số, tổng 11 · 5 chữ số, tổng 23… |
 | I.3 | Nhận biết chẵn – lẻ và số liền kề | Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2 | Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” | Xét chữ số tận cùng; cộng hoặc trừ 1 đơn vị | Che hết các chữ số, chỉ để lộ chữ số cuối. | 9 063 · 13 426 · 15 144 · 79 248… |
-| I.4 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | &lt; · &lt; · &gt; · &lt;… |
+| I.4 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | < · < · > · <… |
 | I.5 | Xác định chữ số và giá trị chữ số theo hàng | Cấu tạo thập phân của số tự nhiên | Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” | Đánh số hàng từ phải sang trái rồi tra bảng hàng | Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị. | chữ số 2, giá trị 2 000 · chữ số 5, giá trị 500 · chữ số 6, giá trị 60 · chữ số 2, giá trị 2 |
 | II.1 | Phép chia có dư | Quan hệ giữa số bị chia, số chia, thương và số dư | Đề yêu cầu ghi cả thương và số dư | Đặt tính chia, kiểm tra điều kiện số dư | Ước lượng thương bằng cách làm tròn số chia trước khi chia. | 308 dư 4 · 25 dư 2 · 396 dư 5 · 300 dư 1 |
 | II.2 | Chu vi, diện tích hình cơ bản | Công thức chu vi, diện tích | Cho chiều dài, chiều rộng hoặc cạnh | Chọn công thức, ghi đúng đơn vị | Hình vuông là hình chữ nhật có dài bằng rộng. | 114 cm · 140 cm · 196 cm² · 168 cm²… |
@@ -367,7 +367,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | I.1 | Đặt tính rồi tính: 3 045 × 24 | 73 080 |
 | I.2 | Số 40 506 có mấy chữ số và tổng các chữ số bằng bao nhiêu? | 5 chữ số, tổng 15 |
 | I.3 | Số liền sau của 9 062 là số nào? | 9 063 |
-| I.4 | Điền dấu: 88 560 … 88 561 | &lt; |
+| I.4 | Điền dấu: 88 560 … 88 561 | < |
 | I.5 | Chữ số hàng chục của số 32 562 có giá trị bao nhiêu? | 60 |
 | II.1 | Tìm thương và số dư của 1 234 : 7 | 176 dư 2 |
 | II.2 | Hình vuông cạnh 6 cm. Tính diện tích. | 36 cm² |

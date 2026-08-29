@@ -89,7 +89,7 @@ b) Số 775 676 có bao nhiêu chữ số, và tổng các chữ số của nó 
 c) Số 935 196 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
 d) Số 287 379 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
 
-### Bài 5. (1 điểm) Điền dấu &lt;, &gt;, = thích hợp
+### Bài 5. (1 điểm) Điền dấu <, >, = thích hợp
 
 Điền dấu thích hợp vào chỗ chấm.
 
@@ -360,7 +360,7 @@ d) Tổng 175 + 2 có chia hết cho 5 không? Nếu không, số dư bằng bao
 **Lỗi thường gặp:** Cộng cả giá trị hàng (ví dụ cộng 300 thay vì cộng 3). Phòng: Viết rời từng chữ số ra rồi mới cộng.
 
 ### Bài A.5
-**Đáp số:** a) &lt; · b) &gt; · c) &gt; · d) &gt; · e) &gt; · f) &gt;
+**Đáp số:** a) < · b) > · c) > · d) > · e) > · f) >
 **Hướng giải:** So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Đếm số chữ số **trước**, chỉ khi bằng nhau mới so từng hàng.
 **Lỗi thường gặp:** So từ hàng đơn vị (phải sang trái) nên kết luận sai. Phòng: Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái.

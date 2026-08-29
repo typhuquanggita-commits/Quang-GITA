@@ -47,7 +47,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần C**
 
 - **Bài C.1** — a) nhóm Hoa Phượng: 71 cây, nhóm Sao Mai: 53 cây · b) trang trại: 438 kg, kho B: 368 kg · c) 5C: 109 quyển, 4C: 81 quyển · d) kho B: 380 kg, thư viện: 300 kg · e) 4C: 324 quyển, 4A: 266 quyển
-- **Bài C.2** — a) &gt; · b) &lt; · c) &lt; · d) &lt; · e) &lt;
+- **Bài C.2** — a) > · b) < · c) < · d) < · e) <
 - **Bài C.3** — a) 36 · b) 82 · c) 151 · d) 121
 - **Bài C.4** — a) 11 · b) 20 · c) 38 · d) 44 · e) 805
 - **Bài C.5** — a) x = 58 · b) x = 199 · c) x = 19 · d) x = 69
@@ -243,7 +243,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | B.4 | Chu vi, diện tích trong tình huống thực tế | Công thức chu vi, diện tích; phép chia | Từ khoá “rào xung quanh”, “lát gạch”, “trồng cây quanh” | Đọc vị chu vi hay diện tích rồi tính | Nhìn đơn vị của đáp số: mét thì là chu vi, mét vuông thì là diện tích. | 214 m · 80 m · 19 viên (làm tròn lên) · 132 cây |
 | B.5 | Diện tích các hình phẳng cơ bản | Công thức diện tích hình bình hành, hình thoi, hình tam giác | Đề cho đáy và chiều cao, hoặc hai đường chéo | Nhận dạng hình rồi chọn công thức | Tam giác bằng nửa hình bình hành cùng đáy cùng chiều cao. | 108 cm² · 140 cm² · 279 cm² · 144 cm²… |
 | C.1 | Tổng – hiệu có lời văn | Công thức tổng – hiệu, sơ đồ đoạn thẳng | “Có tất cả …” và “… nhiều hơn … là …” | Đọc vị tổng và hiệu → sơ đồ → công thức | Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần. | nhóm Hoa Phượng: 71 cây, nhóm Sao Mai: 53 cây · trang trại: 438 kg, kho B: 368 kg · 5C: 109 quyển, 4C: 81 quyển · kho B: 380 kg, thư viện: 300 kg… |
-| C.2 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &gt; · &lt; · &lt; · &lt;… |
+| C.2 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | > · < · < · <… |
 | C.3 | Đếm số hạng của dãy cách đều theo điều kiện chia hết | Dãy số cách đều, dấu hiệu chia hết | Cụm “có bao nhiêu số … từ … đến …” | Tìm số đầu, số cuối hợp lệ rồi dùng công thức đếm | Số các số chia hết cho d từ 1 đến n bằng phần nguyên của n : d, nên đếm từ a đến b là b : d trừ đi (a − 1) : d. | 36 · 82 · 151 · 121 |
 | C.4 | Quy luật hình đưa về dãy số | Dãy cách đều, số hạng thứ n, tổng dãy | Đề mô tả hình xếp thêm đều đặn theo thứ tự | Lập bảng vài hình đầu, tìm khoảng cách, áp công thức | Chỉ cần ba hình đầu là đủ để khẳng định quy luật cách đều. | 11 · 20 · 38 · 44… |
 | C.5 | Tìm x qua hai bước | Quan hệ các thành phần phép tính, thứ tự thực hiện | x nằm trong một cụm có hai phép tính | Gỡ dần từ phép ngoài cùng vào trong | Thay x tìm được vào đề để thử — nhanh hơn dò lại từng bước. | x = 58 · x = 199 · x = 19 · x = 69 |
@@ -375,7 +375,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | B.4 | Vườn dài 20 m rộng 10 m, rào xung quanh cần bao nhiêu mét rào? | 60 m |
 | B.5 | Tam giác đáy 10 cm, cao 6 cm. Diện tích bằng bao nhiêu? | 30 cm² |
 | C.1 | Hai lớp có 90 quyển sách, lớp A nhiều hơn lớp B 10 quyển. Mỗi lớp có mấy quyển? | 50 và 40 |
-| C.2 | So sánh: 3 kg … 2 500 g | &gt; |
+| C.2 | So sánh: 3 kg … 2 500 g | > |
 | C.3 | Có bao nhiêu số chẵn từ 10 đến 40? | 16 |
 | C.4 | Hình 1 có 3 que, mỗi hình sau hơn 2 que. Hình thứ 10 có mấy que? | 21 |
 | C.5 | Tìm x: x × 6 + 14 = 92 | x = 13 |

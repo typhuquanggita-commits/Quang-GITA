@@ -65,7 +65,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài V.1** — a) 264 cm · b) 160 cm · c) 196 cm · d) 360 cm · e) 156 cm
 - **Bài V.2** — a) không còn đúng (30 bạn có thể chia đều 3 bạn mỗi tháng) · b) không còn đúng (9 bạn có thể chia đều 1 bạn mỗi tháng) · c) không còn đúng (10 bạn có thể chia đều 1 bạn mỗi tháng) · d) không còn đúng (24 bạn có thể chia đều 2 bạn mỗi tháng) · e) không còn đúng (48 bạn có thể chia đều 4 bạn mỗi tháng)
 - **Bài V.3** — a) 9 · b) 1 · c) 8 · d) 9 · e) 1 005
-- **Bài V.4** — a) &lt; · b) 1 156 · c) &lt; · d) &lt;
+- **Bài V.4** — a) < · b) 1 156 · c) < · d) <
 - **Bài V.5** — a) 1 · b) 3 213 · c) không, dư 3 · d) tổng các số dư là 8, chia 5 dư 3 · e) 3 · f) 2
 
 ---
@@ -255,7 +255,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | V.1 | Cắt ghép hình, biến thiên chu vi | Chu vi, đường bao của hình | Từ khoá “ghép”, “cắt thành”, “xếp thành” | Xác định đường bao mới rồi cộng độ dài | Mỗi nhát cắt làm tổng chu vi tăng thêm hai lần chiều dài nhát cắt. | 264 cm · 160 cm · 196 cm · 360 cm… |
 | V.2 | Đi-rích-lê dạng chứng minh | Nguyên lí ngăn kéo | “Chứng tỏ rằng có ít nhất … cùng …” | Đặt tên ngăn kéo và đồ vật, tính ngưỡng | Ngưỡng = số ngăn × (số cần − 1) + 1. | không còn đúng (30 bạn có thể chia đều 3 bạn mỗi tháng) · không còn đúng (9 bạn có thể chia đều 1 bạn mỗi tháng) · không còn đúng (10 bạn có thể chia đều 1 bạn mỗi tháng) · không còn đúng (24 bạn có thể chia đều 2 bạn mỗi tháng)… |
 | V.3 | Dãy tuần hoàn | Phép chia có dư, tính tuần hoàn | Dãy lặp lại một nhóm số cố định | Chia vị trí cho chu kì, dùng số dư định vị | Tổng n số hạng = tổng một chu kì × số chu kì đầy đủ + tổng phần dư. | 9 · 1 · 8 · 9… |
-| V.4 | Tính, so sánh tích bằng kĩ thuật tách – bù | Nhân một số với một tổng, một hiệu | Các thừa số hơn kém nhau rất ít | Quy về số gốc chung, so phần chênh | Với hai tích có tổng hai thừa số bằng nhau, tích nào có hai thừa số gần nhau hơn thì lớn hơn. | &lt; · 1 156 · &lt; · &lt; |
+| V.4 | Tính, so sánh tích bằng kĩ thuật tách – bù | Nhân một số với một tổng, một hiệu | Các thừa số hơn kém nhau rất ít | Quy về số gốc chung, so phần chênh | Với hai tích có tổng hai thừa số bằng nhau, tích nào có hai thừa số gần nhau hơn thì lớn hơn. | < · 1 156 · < · < |
 | V.5 | Xét số dư của tổng | Tính chất số dư của tổng | Đề hỏi chia hết hay số dư của một tổng dài | Rút gọn từng số hạng về số dư rồi cộng | Với d = 9, số dư của một số bằng số dư của tổng các chữ số của nó. | 1 · 3 213 · không, dư 3 · tổng các số dư là 8, chia 5 dư 3… |
 
 ---
@@ -387,7 +387,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | V.1 | Ghép 3 hình vuông cạnh 4 cm thành hàng. Chu vi hình chữ nhật là bao nhiêu? | 32 cm |
 | V.2 | 13 bạn sinh trong 12 tháng, chứng tỏ có 2 bạn cùng tháng sinh. | đúng, vì 13 > 12 × 1 |
 | V.3 | Dãy 1, 2, 3, 1, 2, 3, … số hạng thứ 100 là số nào? | 1 |
-| V.4 | So sánh: 99 × 101 … 100 × 100 | &lt; |
+| V.4 | So sánh: 99 × 101 … 100 × 100 | < |
 | V.5 | Tổng 123 + 234 + 345 chia cho 9 dư mấy? | dư 0 |
 
 ---

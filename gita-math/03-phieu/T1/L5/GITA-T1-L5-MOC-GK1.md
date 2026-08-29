@@ -53,7 +53,7 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ### Bài 1. (3 điểm) So sánh hai phân số
 
-Điền dấu &lt;, &gt;, = thích hợp.
+Điền dấu <, >, = thích hợp.
 
 a) 3 phần 5 … 1 phần 2
 b) 8 phần 15 … 13 phần 15
@@ -332,7 +332,7 @@ e) Một món hàng giá 400 000 đồng. Lần đầu tăng giá 10%, sau đó 
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài I.1
-**Đáp số:** a) &gt; · b) &lt; · c) &lt; · d) &gt; · e) &lt; · f) &gt; · g) &gt; · h) &lt;
+**Đáp số:** a) > · b) < · c) < · d) > · e) < · f) > · g) > · h) <
 **Hướng giải:** Cùng mẫu số: phân số nào có tử số lớn hơn thì lớn hơn. Cùng tử số: phân số nào có mẫu số **bé** hơn thì lớn hơn. Khác cả tử lẫn mẫu: quy đồng mẫu số rồi so tử số.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Cùng tử số thì **mẫu bé hơn là phân số lớn hơn** — ngược với trực giác.
 **Lỗi thường gặp:** Thấy mẫu số lớn thì kết luận phân số lớn. Phòng: Nghĩ tới chiếc bánh: chia càng nhiều phần thì mỗi phần càng bé.

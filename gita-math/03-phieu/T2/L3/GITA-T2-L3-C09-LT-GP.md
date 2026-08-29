@@ -30,7 +30,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần A**
 
-- **Bài A.1** — a) &lt; · b) &lt; · c) &gt; · d) &gt; · e) &gt; · f) &gt;
+- **Bài A.1** — a) < · b) < · c) > · d) > · e) > · f) >
 - **Bài A.2** — a) chữ số 3, giá trị 30 000 · b) chữ số 0, giá trị 0 · c) chữ số 8, giá trị 800 · d) chữ số 5, giá trị 50 · e) chữ số 9, giá trị 9
 - **Bài A.3** — a) 5 chữ số, tổng 15 · b) 5 chữ số, tổng 15 · c) 5 chữ số, tổng 31 · d) 5 chữ số, tổng 27 · e) 5 chữ số, tổng 25 · f) 5 chữ số, tổng 35
 - **Bài A.4** — a) 2 793 · b) 18 302 · c) 57 727 · d) 63 750
@@ -41,7 +41,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài B.1** — a) Chia hết, đếm chữ số và số thoả điều kiện · b) A — Số học & Cấu tạo số · c) 6 · d) ở mọi bài thuộc số học & cấu tạo số, vì các chương sau đều dùng lại nền này · e) giải nhanh và chắc các bài bài toán chia hết cho 2 và cho 5 — làm quen
 - **Bài B.2** — a) Bài toán chia hết cho 2 và cho 5 — làm quen · b) Bài toán chia hết cho 3 và cho 9 qua tổng các chữ số · c) Số và chữ số: đếm chữ số dùng để viết một dãy số · d) Bài toán tìm số lớn nhất, số bé nhất thoả điều kiện · e) Bài toán tìm số biết mối quan hệ giữa các chữ số · f) Tổng ôn số học nâng cao lớp 3
 - **Bài B.3** — a) HK2 · b) tuần 17 · c) Giữa kỳ II · d) cụm 9 · e) 6 buổi: LT · DB · KN · NC · OT · TH
-- **Bài B.4** — a) Cho ba chữ số, yêu cầu lập số · b) Bài toán đánh số trang · c) Đề yêu cầu ghi cả thương và số dư · d) “Viết theo thứ tự ngược lại”, “đổi chỗ hai chữ số” · e) Yêu cầu “có mấy chữ số”, “tổng các chữ số” · f) Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, =
+- **Bài B.4** — a) Cho ba chữ số, yêu cầu lập số · b) Bài toán đánh số trang · c) Đề yêu cầu ghi cả thương và số dư · d) “Viết theo thứ tự ngược lại”, “đổi chỗ hai chữ số” · e) Yêu cầu “có mấy chữ số”, “tổng các chữ số” · f) Dấu … giữa hai số, yêu cầu điền <, >, =
 - **Bài B.5** — a) tự ghi, chuẩn đóng cụm là từ 80/100 · b) tự ghi · c) đọc gợi ý tầng 1, sau đó tầng 2, không xem lời giải ngay · d) tự ghi · e) tự ghi
 
 **Phần C**
@@ -49,7 +49,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài C.1** — a) Chia hết, đếm chữ số và số thoả điều kiện · b) A — Số học & Cấu tạo số · c) 6 · d) Bài toán chia hết cho 2 và cho 5 — làm quen · e) Tổng ôn số học nâng cao lớp 3
 - **Bài C.2** — a) Cấu tạo số có ba chữ số · b) Đếm số hạng, cấu tạo số · c) Quan hệ giữa số bị chia, số chia, thương và số dư · d) Cấu tạo số có hai chữ số · e) Cấu tạo số, tổng chữ số · f) Thứ tự trong tập số tự nhiên
 - **Bài C.3** — a) Cố định hàng trăm rồi hoán vị hai hàng còn lại · b) Chia nhóm theo độ dài số rồi nhân, cộng · c) Đặt tính chia, kiểm tra điều kiện số dư · d) Viết cả hai số theo cấu tạo rồi lấy hiệu · e) Tách lớp để đếm; cộng rời từng chữ số
-- **Bài C.4** — a) Cho ba chữ số, yêu cầu lập số · b) Bài toán đánh số trang · c) Đề yêu cầu ghi cả thương và số dư · d) “Viết theo thứ tự ngược lại”, “đổi chỗ hai chữ số” · e) Yêu cầu “có mấy chữ số”, “tổng các chữ số” · f) Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, =
+- **Bài C.4** — a) Cho ba chữ số, yêu cầu lập số · b) Bài toán đánh số trang · c) Đề yêu cầu ghi cả thương và số dư · d) “Viết theo thứ tự ngược lại”, “đổi chỗ hai chữ số” · e) Yêu cầu “có mấy chữ số”, “tổng các chữ số” · f) Dấu … giữa hai số, yêu cầu điền <, >, =
 - **Bài C.5** — a) Ba chữ số khác 0 luôn lập được đúng 6 số. · b) Sách 99 trang dùng đúng 189 chữ số — nhớ mốc này. · c) Ước lượng thương bằng cách làm tròn số chia trước khi chia. · d) Hiệu = 9 × (chữ số hàng chục − chữ số hàng đơn vị). · e) Ghép cặp các chữ số cộng lại tròn 10 rồi cộng nhanh. · f) Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số.
 
 **Phần D**
@@ -74,7 +74,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 Đọc kĩ phần chữ đậm: đó là câu cần nhớ, không phải con số.
 
-### Bài A.1 — Điền dấu &lt;, &gt;, = thích hợp
+### Bài A.1 — Điền dấu <, >, = thích hợp
 
 So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 
@@ -232,7 +232,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
-| A.1 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | &lt; · &lt; · &gt; · &gt;… |
+| A.1 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | < · < · > · >… |
 | A.2 | Xác định chữ số và giá trị chữ số theo hàng | Cấu tạo thập phân của số tự nhiên | Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” | Đánh số hàng từ phải sang trái rồi tra bảng hàng | Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị. | chữ số 3, giá trị 30 000 · chữ số 0, giá trị 0 · chữ số 8, giá trị 800 · chữ số 5, giá trị 50… |
 | A.3 | Đếm chữ số, tính tổng chữ số | Cấu tạo số, tổng chữ số | Yêu cầu “có mấy chữ số”, “tổng các chữ số” | Tách lớp để đếm; cộng rời từng chữ số | Ghép cặp các chữ số cộng lại tròn 10 rồi cộng nhanh. | 5 chữ số, tổng 15 · 5 chữ số, tổng 15 · 5 chữ số, tổng 31 · 5 chữ số, tổng 27… |
 | A.4 | Nhận biết chẵn – lẻ và số liền kề | Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2 | Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” | Xét chữ số tận cùng; cộng hoặc trừ 1 đơn vị | Che hết các chữ số, chỉ để lộ chữ số cuối. | 2 793 · 18 302 · 57 727 · 63 750 |
@@ -364,7 +364,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 
 | Bài | Đề tương tự | Đáp số |
 |---|---|---|
-| A.1 | Điền dấu: 12 303 … 12 304 | &lt; |
+| A.1 | Điền dấu: 12 303 … 12 304 | < |
 | A.2 | Chữ số hàng chục của số 30 859 có giá trị bao nhiêu? | 50 |
 | A.3 | Số 40 506 có mấy chữ số và tổng các chữ số bằng bao nhiêu? | 5 chữ số, tổng 15 |
 | A.4 | Số liền sau của 2 792 là số nào? | 2 793 |

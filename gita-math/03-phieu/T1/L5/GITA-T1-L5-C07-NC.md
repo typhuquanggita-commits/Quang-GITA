@@ -97,7 +97,7 @@ d) Viết số gồm tổng: 1 000 000 + 500 000 + 90 000 + 2 000 + 400 + 60 + 9
 e) Viết số gồm tổng: 7 000 000 + 500 000 + 10 000 + 8 000 + 200 + 70 + 5
 f) Viết số gồm tổng: 5 000 000 + 900 000 + 70 000 + 500 + 10 + 8
 
-### Bài 5. (3 điểm) Điền dấu &lt;, &gt;, = thích hợp
+### Bài 5. (3 điểm) Điền dấu <, >, = thích hợp
 
 Điền dấu thích hợp vào chỗ chấm.
 
@@ -369,7 +369,7 @@ e) Tìm số có hai chữ số biết số đó bằng 7 lần tổng hai chữ
 **Lỗi thường gặp:** Bỏ qua hàng khuyết nên số viết ra bị ngắn đi một chữ số. Phòng: Kẻ sẵn các ô hàng rồi mới điền chữ số vào ô tương ứng.
 
 ### Bài I.5
-**Đáp số:** a) &gt; · b) &lt; · c) &gt; · d) &lt; · e) &gt;
+**Đáp số:** a) > · b) < · c) > · d) < · e) >
 **Hướng giải:** So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Đếm số chữ số **trước**, chỉ khi bằng nhau mới so từng hàng.
 **Lỗi thường gặp:** So từ hàng đơn vị (phải sang trái) nên kết luận sai. Phòng: Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái.

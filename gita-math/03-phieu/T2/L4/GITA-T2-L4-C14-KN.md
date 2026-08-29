@@ -82,7 +82,7 @@ d) Viết số gồm tổng: 600 000 + 80 000 + 9 000 + 800 + 20 + 9
 e) Viết số gồm tổng: 400 000 + 40 000 + 5 000 + 200 + 70
 f) Viết số gồm tổng: 600 000 + 10 000 + 100 + 50
 
-### Bài 4. (5 điểm) Điền dấu &lt;, &gt;, = thích hợp
+### Bài 4. (5 điểm) Điền dấu <, >, = thích hợp
 
 Điền dấu thích hợp vào chỗ chấm.
 
@@ -350,7 +350,7 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Lỗi thường gặp:** Bỏ qua hàng khuyết nên số viết ra bị ngắn đi một chữ số. Phòng: Kẻ sẵn các ô hàng rồi mới điền chữ số vào ô tương ứng.
 
 ### Bài A.4
-**Đáp số:** a) &gt; · b) &gt; · c) &gt; · d) &gt; · e) &lt;
+**Đáp số:** a) > · b) > · c) > · d) > · e) <
 **Hướng giải:** So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Đếm số chữ số **trước**, chỉ khi bằng nhau mới so từng hàng.
 **Lỗi thường gặp:** So từ hàng đơn vị (phải sang trái) nên kết luận sai. Phòng: Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái.

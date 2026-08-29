@@ -68,10 +68,10 @@ def h_m1_02(rng, lop):
         else:
             f1, f2 = phan_so(rng), phan_so(rng)
         y.append((f"{ps(f1)} … {ps(f2)}",
-                  "&lt;" if f1 < f2 else ("&gt;" if f1 > f2 else "=")))
+                  "<" if f1 < f2 else (">" if f1 > f2 else "=")))
     return Bai(
         tieu_de="So sánh hai phân số",
-        dan="Điền dấu &lt;, &gt;, = thích hợp.",
+        dan="Điền dấu <, >, = thích hợp.",
         y=y,
         huong_giai="Cùng mẫu số: phân số nào có tử số lớn hơn thì lớn hơn. Cùng tử số: "
                    "phân số nào có mẫu số **bé** hơn thì lớn hơn. Khác cả tử lẫn mẫu: "
@@ -88,7 +88,7 @@ def h_m1_02(rng, lop):
         pt_du_lieu="Hai phân số nối bởi dấu …",
         pt_phuong_phap="Xét cùng mẫu → cùng tử → quy đồng",
         pt_nhanh="So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay.",
-        tuong_tu=("So sánh: 3 phần 5 … 3 phần 7", "&gt;"),
+        tuong_tu=("So sánh: 3 phần 5 … 3 phần 7", ">"),
         bay="Cùng tử số thì mẫu bé hơn lại lớn hơn",
     )
 
@@ -105,7 +105,7 @@ def h_m1_03(rng, lop):
                       str(le // 100)))
         elif kieu == "so_sanh":
             z = round(x + rng.choice([-1, 1]) * rng.random() * 5, 3)
-            y.append((f"{tp(x)} … {tp(z)}", "&lt;" if x < z else ("&gt;" if x > z else "=")))
+            y.append((f"{tp(x)} … {tp(z)}", "<" if x < z else (">" if x > z else "=")))
         else:
             m = rng.choice([10, 100, 1000])
             n = rng.randint(1, m - 1)
@@ -131,7 +131,7 @@ def h_m1_03(rng, lop):
         pt_du_lieu="Số có dấu phẩy; phân số mẫu 10, 100, 1 000",
         pt_phuong_phap="Xét theo hàng từ trái sang phải",
         pt_nhanh="Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị.",
-        tuong_tu=("So sánh: 0,5 … 0,45", "&gt;"),
+        tuong_tu=("So sánh: 0,5 … 0,45", ">"),
         bay="Nhiều chữ số sau dấu phẩy không có nghĩa là lớn hơn",
     )
 
@@ -464,7 +464,7 @@ def h_m5_01(rng, lop):
             k = rng.randint(1, 6)
             f1 = Fraction(n, n + 1)
             f2 = Fraction(n + k, n + k + 1)
-            y.append((f"{ps(f1)} … {ps(f2)}", "&lt;"))
+            y.append((f"{ps(f1)} … {ps(f2)}", "<"))
         else:
             a = rng.randint(3, 9)
             b = rng.randint(a * 2 + 1, a * 3)
@@ -472,7 +472,7 @@ def h_m5_01(rng, lop):
             d = rng.randint(c * 3 + 1, c * 4)
             f1, f2 = Fraction(a, b), Fraction(c, d)
             y.append((f"{ps(f1)} … {ps(f2)}",
-                      "&lt;" if f1 < f2 else ("&gt;" if f1 > f2 else "=")))
+                      "<" if f1 < f2 else (">" if f1 > f2 else "=")))
     return Bai(
         tieu_de="So sánh phân số bằng phần bù và phân số trung gian",
         dan="So sánh mà không quy đồng.",
@@ -493,7 +493,7 @@ def h_m5_01(rng, lop):
         pt_du_lieu="Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2",
         pt_phuong_phap="So phần bù; hoặc chèn phân số trung gian",
         pt_nhanh="Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn.",
-        tuong_tu=("So sánh: 5 phần 6 … 7 phần 8", "&lt;"),
+        tuong_tu=("So sánh: 5 phần 6 … 7 phần 8", "<"),
         bay="Chiều của phần bù",
     )
 

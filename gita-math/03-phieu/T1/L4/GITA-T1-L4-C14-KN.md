@@ -477,7 +477,7 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.3
-**Đáp số:** a) “Hôm nay nhóm mình nói về So sánh số đo đại lượng.” · b) Hai vế có đơn vị khác nhau · c) Bảng đơn vị đo, so sánh số tự nhiên · d) So sánh: 3 kg … 2 500 g → &gt; · e) So thẳng hai con số, bỏ qua đơn vị. · f) Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số.
+**Đáp số:** a) “Hôm nay nhóm mình nói về So sánh số đo đại lượng.” · b) Hai vế có đơn vị khác nhau · c) Bảng đơn vị đo, so sánh số tự nhiên · d) So sánh: 3 kg … 2 500 g → > · e) So thẳng hai con số, bỏ qua đơn vị. · f) Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số.
 **Hướng giải:** Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.

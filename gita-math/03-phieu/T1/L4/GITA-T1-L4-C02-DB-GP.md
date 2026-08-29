@@ -54,7 +54,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần D**
 
-- **Bài D.1** — a) &lt; · b) &lt; · c) &lt; · d) &gt; · e) &lt; · f) &gt;
+- **Bài D.1** — a) < · b) < · c) < · d) > · e) < · f) >
 - **Bài D.2** — a) 69 · b) Khoa học (26 bạn) · c) Toán (5 bạn) · d) 21 · e) 17,25 · f) 7%
 - **Bài D.3** — a) x = 50 · b) x = 106 · c) x = 76 · d) x = 51 · e) x = 72 · f) x = 61
 - **Bài D.4** — a) 278 · b) 705 · c) 69 · d) 126 · e) không · f) 196 685
@@ -247,7 +247,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | C.3 | Lịch và đơn vị thời gian lớn | Số ngày các tháng, năm nhuận, thế kỉ | Đề hỏi về tháng, năm, thế kỉ | Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400 | Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ. | XX · có · 8 tuần 1 ngày · 31 |
 | C.4 | Tổng – hiệu có lời văn | Công thức tổng – hiệu, sơ đồ đoạn thẳng | “Có tất cả …” và “… nhiều hơn … là …” | Đọc vị tổng và hiệu → sơ đồ → công thức | Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần. | xưởng: 335 kg, kho B: 219 kg · 5B: 234 quyển, 4A: 180 quyển · tổ Ba: 347 cây, đội Hai: 245 cây · thư viện: 299 kg, kho A: 179 kg |
 | C.5 | Bốn phép tính với phân số | Quy đồng, nhân chia phân số | Biểu thức chỉ gồm phân số | Chọn quy tắc theo phép tính, rút gọn cuối cùng | Rút gọn chéo trước khi nhân để số nhỏ, tính nhanh và ít sai. | 13 phần 10 · 107 phần 45 · 4 phần 15 · 2 phần 13… |
-| D.1 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | &lt; · &lt; · &lt; · &gt;… |
+| D.1 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | < · < · < · >… |
 | D.2 | Đọc bảng số liệu thống kê | Thống kê mô tả sơ cấp, trung bình cộng, tỉ số phần trăm | Đề cho bảng hoặc biểu đồ kèm nhiều câu hỏi | Ghi lại số liệu, trả lời từng câu bằng công cụ tương ứng | Tính tổng một lần rồi dùng lại cho mọi câu hỏi phần trăm. | 69 · Khoa học (26 bạn) · Toán (5 bạn) · 21… |
 | D.3 | Tìm x nhiều bước có ngoặc | Thứ tự thực hiện phép tính, quan hệ thành phần | x nằm trong ngoặc, ngoài ngoặc còn phép tính khác | Bóc lớp từ ngoài vào trong | Thay x tìm được vào đề, tính một lượt để thử lại. | x = 50 · x = 106 · x = 76 · x = 51… |
 | D.4 | Định vị số hạng, kiểm tra một số có thuộc dãy | Dãy cách đều, phép chia có dư | Câu hỏi “là số hạng thứ mấy”, “có thuộc dãy không” | (số − đầu) : khoảng cách, xét dư rồi cộng 1 | Mọi số hạng của dãy đều có cùng số dư khi chia cho khoảng cách. | 278 · 705 · 69 · 126… |
@@ -379,7 +379,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | C.3 | Năm 1975 thuộc thế kỉ thứ mấy? | XX |
 | C.4 | Hai lớp có 90 quyển sách, lớp A nhiều hơn lớp B 10 quyển. Mỗi lớp có mấy quyển? | 50 và 40 |
 | C.5 | Tính: 2 phần 3 + 1 phần 6 | 5 phần 6 |
-| D.1 | So sánh: 234 × 7 … 234 × 8 | &lt; |
+| D.1 | So sánh: 234 × 7 … 234 × 8 | < |
 | D.2 | Bảng: Toán 10, Văn 6, Anh 4. Trung bình mỗi môn bao nhiêu bạn? | 6,67 bạn |
 | D.3 | Tìm x: (x + 12) × 5 − 8 = 132 | x = 16 |
 | D.4 | Dãy 2, 7, 12, … Số 47 là số hạng thứ mấy? | 10 |

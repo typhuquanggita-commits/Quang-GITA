@@ -62,8 +62,8 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần V**
 
-- **Bài V.1** — a) &lt; · b) &gt; · c) &gt; · d) &lt; · e) &gt;
-- **Bài V.2** — a) &lt; · b) 484 · c) &lt; · d) 8
+- **Bài V.1** — a) < · b) > · c) > · d) < · e) >
+- **Bài V.2** — a) < · b) 484 · c) < · d) 8
 - **Bài V.3** — a) 650 · b) 210 · c) 10 000 · d) 2 550 · e) 55
 - **Bài V.4** — a) không còn đúng (22 bạn có thể chia đều 2 bạn mỗi tháng) · b) không còn đúng (11 bạn có thể chia đều 1 bạn mỗi tháng) · c) không còn đúng (48 bạn có thể chia đều 4 bạn mỗi tháng) · d) không còn đúng (21 bạn có thể chia đều 3 bạn mỗi tháng) · e) không còn đúng (10 bạn có thể chia đều 2 bạn mỗi tháng) · f) không còn đúng (18 bạn có thể chia đều 3 bạn mỗi tháng)
 - **Bài V.5** — a) 12 con gà, 15 con chó · b) 30 con gà, 5 con chó · c) 22 con gà, 16 con chó · d) 6 con gà, 10 con chó · e) 10 con gà, 28 con chó
@@ -252,8 +252,8 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.3 | Bài toán đại lượng nhiều bước | Nhân, trừ; đại lượng cùng loại | Cho số nhóm, giá trị mỗi nhóm và số nhóm đã dùng | Rút gọn số bước bằng cách trừ trước, nhân sau | So sánh hai đường giải, chọn đường ít phép tính hơn. | 150 lít · 72 lít · 220 lít · 120 lít… |
 | IV.4 | Biến thiên diện tích theo kích thước | Diện tích hình chữ nhật, phân tích hình | “Tăng chiều dài thêm …”, “gấp đôi chiều …” | Vẽ hình chồng, tách phần dôi ra thành các mảnh chữ nhật | Gấp đôi một chiều thì diện tích gấp đôi; gấp đôi cả hai chiều thì gấp bốn. | 2 lần · 2 lần · 377 cm² · 90 cm² |
 | IV.5 | Tính nhanh nhờ thừa số 0 | Tính chất nhân với 0, phép trừ hai số bằng nhau | Trong biểu thức có ngoặc chứa hai số giống nhau trừ nhau | Quét tìm cụm bằng 0 trước khi tính | Nhìn dấu ngoặc trước tiên — bẫy thường nằm ở đó. | 0 · 0 · 0 · 0… |
-| V.1 | So sánh phân số bằng kĩ thuật đặc biệt | Phần bù tới 1, phân số trung gian | Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 | So phần bù; hoặc chèn phân số trung gian | Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. | &lt; · &gt; · &gt; · &lt;… |
-| V.2 | Tính, so sánh tích bằng kĩ thuật tách – bù | Nhân một số với một tổng, một hiệu | Các thừa số hơn kém nhau rất ít | Quy về số gốc chung, so phần chênh | Với hai tích có tổng hai thừa số bằng nhau, tích nào có hai thừa số gần nhau hơn thì lớn hơn. | &lt; · 484 · &lt; · 8 |
+| V.1 | So sánh phân số bằng kĩ thuật đặc biệt | Phần bù tới 1, phân số trung gian | Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 | So phần bù; hoặc chèn phân số trung gian | Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. | < · > · > · <… |
+| V.2 | Tính, so sánh tích bằng kĩ thuật tách – bù | Nhân một số với một tổng, một hiệu | Các thừa số hơn kém nhau rất ít | Quy về số gốc chung, so phần chênh | Với hai tích có tổng hai thừa số bằng nhau, tích nào có hai thừa số gần nhau hơn thì lớn hơn. | < · 484 · < · 8 |
 | V.3 | Tổng dãy đặc biệt | Ba công thức tổng cơ bản | Dãy toàn số lẻ, toàn số chẵn, hoặc số tự nhiên liên tiếp | Đếm số số hạng rồi áp công thức | Tổng n số lẻ đầu tiên luôn là một số chính phương — dùng để kiểm tra nhanh. | 650 · 210 · 10 000 · 2 550… |
 | V.4 | Đi-rích-lê dạng chứng minh | Nguyên lí ngăn kéo | “Chứng tỏ rằng có ít nhất … cùng …” | Đặt tên ngăn kéo và đồ vật, tính ngưỡng | Ngưỡng = số ngăn × (số cần − 1) + 1. | không còn đúng (22 bạn có thể chia đều 2 bạn mỗi tháng) · không còn đúng (11 bạn có thể chia đều 1 bạn mỗi tháng) · không còn đúng (48 bạn có thể chia đều 4 bạn mỗi tháng) · không còn đúng (21 bạn có thể chia đều 3 bạn mỗi tháng)… |
 | V.5 | Giả thiết tạm | Phương pháp giả thiết tạm | Hai loại đối tượng, biết tổng số và tổng của một đại lượng khác | Giả sử đồng nhất một loại → tính phần chênh → chia cho hiệu đơn vị | Số chó = (số chân − 2 × số con) : 2 — thuộc công thức rút gọn để nhẩm. | 12 con gà, 15 con chó · 30 con gà, 5 con chó · 22 con gà, 16 con chó · 6 con gà, 10 con chó… |
@@ -384,8 +384,8 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | IV.3 | Có 10 thùng dầu, mỗi thùng 20 lít, đã bán 3 thùng. Còn bao nhiêu lít? | 140 lít |
 | IV.4 | Hình chữ nhật 10 cm × 5 cm, tăng chiều dài thêm 3 cm. Diện tích tăng bao nhiêu? | 15 cm² |
 | IV.5 | Tính nhanh: 1 234 × 567 × (89 − 89) | 0 |
-| V.1 | So sánh: 5 phần 6 … 7 phần 8 | &lt; |
-| V.2 | So sánh: 99 × 101 … 100 × 100 | &lt; |
+| V.1 | So sánh: 5 phần 6 … 7 phần 8 | < |
+| V.2 | So sánh: 99 × 101 … 100 × 100 | < |
 | V.3 | Tính: 1 + 3 + 5 + … + 19 | 100 |
 | V.4 | 13 bạn sinh trong 12 tháng, chứng tỏ có 2 bạn cùng tháng sinh. | đúng, vì 13 > 12 × 1 |
 | V.5 | Có 10 con gà và chó, 28 chân. Có mấy con chó? | 4 con chó |

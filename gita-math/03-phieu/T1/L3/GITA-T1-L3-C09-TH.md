@@ -60,7 +60,7 @@ b) 7 bao gạo nặng 224 kg. Hỏi 5 bao như thế nặng bao nhiêu kg?
 c) 8 bao đường nặng 56 kg. Hỏi 10 bao như thế nặng bao nhiêu kg?
 d) 7 bao đường nặng 371 kg. Hỏi 7 bao như thế nặng bao nhiêu kg?
 
-### Bài 2. (3 điểm) Điền dấu &lt;, &gt;, = thích hợp
+### Bài 2. (3 điểm) Điền dấu <, >, = thích hợp
 
 Điền dấu thích hợp vào chỗ chấm.
 
@@ -341,7 +341,7 @@ d) Một quyển vở có 99 trang, đánh số từ 1. Phải viết tất cả
 **Lỗi thường gặp:** Nhân ngay hai số đã cho mà bỏ qua bước chia. Phòng: Viết rõ câu “Một bao nặng … kg” trước khi làm bước hai.
 
 ### Bài I.2
-**Đáp số:** a) &gt; · b) &lt; · c) &lt; · d) &lt; · e) &gt; · f) &gt; · g) &gt; · h) &lt;
+**Đáp số:** a) > · b) < · c) < · d) < · e) > · f) > · g) > · h) <
 **Hướng giải:** So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Đếm số chữ số **trước**, chỉ khi bằng nhau mới so từng hàng.
 **Lỗi thường gặp:** So từ hàng đơn vị (phải sang trái) nên kết luận sai. Phòng: Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái.

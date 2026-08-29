@@ -32,7 +32,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài I.1** — a) 3 182 · b) 1 500 · c) 4 512 · d) 3 930 · e) 2 208 · f) 2 842
 - **Bài I.2** — a) 169 · b) 19 · c) 12 · d) 100
-- **Bài I.3** — a) &lt; · b) &lt; · c) &lt; · d) &lt;
+- **Bài I.3** — a) < · b) < · c) < · d) <
 - **Bài I.4** — a) 30 · b) 2 tuần 4 ngày · c) XXI · d) có · e) XX · f) 31 · g) có
 - **Bài I.5** — a) 13 quyển · b) 6 quyển · c) 27 quyển · d) 276 nghìn đồng · e) 1 050 nghìn đồng
 
@@ -63,7 +63,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần V**
 
 - **Bài V.1** — a) Tỉ lệ nghịch, so sánh hai phương án · b) Đại lượng tỉ lệ nghịch, tổng số ngày công · c) Thay đổi số người, hỏi thay đổi thời gian · d) Bám vào tổng số ngày công không đổi · e) Số người tăng gấp k lần thì số ngày giảm còn 1 phần k. · f) 6,33 ngày · 3,6 ngày · 2,33 ngày · 5,85 ngày…
-- **Bài V.2** — a) So sánh số đo đại lượng · b) Bảng đơn vị đo, so sánh số tự nhiên · c) Hai vế có đơn vị khác nhau · d) Đổi về cùng đơn vị rồi so sánh · e) Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. · f) &lt; · &lt; · &lt; · &lt;
+- **Bài V.2** — a) So sánh số đo đại lượng · b) Bảng đơn vị đo, so sánh số tự nhiên · c) Hai vế có đơn vị khác nhau · d) Đổi về cùng đơn vị rồi so sánh · e) Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. · f) < · < · < · <
 - **Bài V.3** — a) Bốn phép tính với số đo · b) Đổi đơn vị, bốn phép tính · c) Các số hạng có đơn vị khác nhau trong cùng một phép tính · d) Đổi về đơn vị của kết quả rồi tính · e) Đọc chỗ chấm trước, biết ngay đơn vị đích. · f) 3 515 · 3 616 · 4 365 · 24 074…
 - **Bài V.4** — a) Bài toán đại lượng có lời văn · b) Nhân, chia số tự nhiên; đổi đơn vị khối lượng · c) Đơn vị trong câu hỏi khác đơn vị trong dữ kiện · d) Tính theo đơn vị dữ kiện rồi đổi ở bước cuối · e) 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ. · f) 7 tạ 50 kg · 6 tạ 50 kg · 8 tạ 70 kg · 6 tạ 50 kg…
 - **Bài V.5** — a) Bài toán đại lượng nhiều bước · b) Nhân, trừ; đại lượng cùng loại · c) Cho số nhóm, giá trị mỗi nhóm và số nhóm đã dùng · d) Rút gọn số bước bằng cách trừ trước, nhân sau · e) So sánh hai đường giải, chọn đường ít phép tính hơn. · f) 75 lít · 150 lít · 36 lít · 300 lít…
@@ -234,7 +234,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 |---|---|---|---|---|---|---|
 | I.1 | Bốn phép tính với số đo | Đổi đơn vị, bốn phép tính | Các số hạng có đơn vị khác nhau trong cùng một phép tính | Đổi về đơn vị của kết quả rồi tính | Đọc chỗ chấm trước, biết ngay đơn vị đích. | 3 182 · 1 500 · 4 512 · 3 930… |
 | I.2 | Dãy số quy luật bậc hai hoặc xen kẽ | Dãy hiệu, dãy con xen kẽ | Hiệu giữa các số hạng không bằng nhau | Lập dãy hiệu; tách dãy con theo vị trí | Dãy 1, 4, 9, 16, 25 là các số chính phương — nhớ để nhận ra ngay. | 169 · 19 · 12 · 100 |
-| I.3 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &lt; · &lt; · &lt; · &lt; |
+| I.3 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | < · < · < · < |
 | I.4 | Lịch và đơn vị thời gian lớn | Số ngày các tháng, năm nhuận, thế kỉ | Đề hỏi về tháng, năm, thế kỉ | Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400 | Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ. | 30 · 2 tuần 4 ngày · XXI · có… |
 | I.5 | Tỉ lệ thuận, rút về đơn vị | Đại lượng tỉ lệ thuận | Hai đại lượng cùng tăng cùng giảm | Rút về đơn vị hoặc dùng tỉ số | Nếu số lượng mới gấp số lượng cũ một số nguyên lần thì nhân thẳng, không cần rút về đơn vị. | 13 quyển · 6 quyển · 27 quyển · 276 nghìn đồng… |
 | II.1 | Bài toán đại lượng có lời văn | Nhân, chia số tự nhiên; đổi đơn vị khối lượng | Đơn vị trong câu hỏi khác đơn vị trong dữ kiện | Tính theo đơn vị dữ kiện rồi đổi ở bước cuối | 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ. | 5 tạ 50 kg · 11 tạ · 7 tạ 80 kg · 9 tạ 20 kg |
@@ -366,7 +366,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 |---|---|---|
 | I.1 | 2 m 30 cm + 150 cm = … cm | 380 |
 | I.2 | Viết tiếp: 1, 2, 4, 7, 11, … | 16 |
-| I.3 | So sánh: 3 kg … 2 500 g | &gt; |
+| I.3 | So sánh: 3 kg … 2 500 g | > |
 | I.4 | Năm 1975 thuộc thế kỉ thứ mấy? | XX |
 | I.5 | Mua 4 quyển vở hết 24 nghìn. Mua 10 quyển hết bao nhiêu? | 60 nghìn |
 | II.1 | Xe chở 20 bao gạo, mỗi bao 50 kg. Xe chở mấy tạ? | 10 tạ |
@@ -385,7 +385,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | IV.4 | Tính nhanh: 1 234 × 567 × (89 − 89) | 0 |
 | IV.5 | Tính: (1 phần 2 + 1 phần 3) × 6 phần 5 | 1 |
 | V.1 | 6 người làm xong trong 10 ngày. Thêm 4 người thì sớm hơn mấy ngày? | 4 ngày |
-| V.2 | So sánh: 3 kg … 2 500 g | &gt; |
+| V.2 | So sánh: 3 kg … 2 500 g | > |
 | V.3 | 2 m 30 cm + 150 cm = … cm | 380 |
 | V.4 | Xe chở 20 bao gạo, mỗi bao 50 kg. Xe chở mấy tạ? | 10 tạ |
 | V.5 | Có 10 thùng dầu, mỗi thùng 20 lít, đã bán 3 thùng. Còn bao nhiêu lít? | 140 lít |

@@ -64,7 +64,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài E.1** — a) Đếm chữ số, tính tổng chữ số · b) Yêu cầu “có mấy chữ số”, “tổng các chữ số” · c) Cấu tạo số, tổng chữ số · d) Tách lớp để đếm; cộng rời từng chữ số · e) Ghép cặp các chữ số cộng lại tròn 10 rồi cộng nhanh. · f) Cộng cả giá trị hàng (ví dụ cộng 300 thay vì cộng 3).
 - **Bài E.2** — a) Nhận biết chẵn – lẻ và số liền kề · b) Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” · c) Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2 · d) Xét chữ số tận cùng; cộng hoặc trừ 1 đơn vị · e) Che hết các chữ số, chỉ để lộ chữ số cuối. · f) Nhầm “liền trước” với “bé hơn”, trả lời một số bất kì bé hơn.
-- **Bài E.3** — a) So sánh hai số tự nhiên · b) Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = · c) Thứ tự trong tập số tự nhiên · d) Đếm chữ số → so từng hàng từ trái sang phải · e) Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. · f) So từ hàng đơn vị (phải sang trái) nên kết luận sai.
+- **Bài E.3** — a) So sánh hai số tự nhiên · b) Dấu … giữa hai số, yêu cầu điền <, >, = · c) Thứ tự trong tập số tự nhiên · d) Đếm chữ số → so từng hàng từ trái sang phải · e) Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. · f) So từ hàng đơn vị (phải sang trái) nên kết luận sai.
 - **Bài E.4** — a) Xác định chữ số và giá trị chữ số theo hàng · b) Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” · c) Cấu tạo thập phân của số tự nhiên · d) Đánh số hàng từ phải sang trái rồi tra bảng hàng · e) Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị. · f) Đếm hàng từ trái sang phải nên lệch hàng.
 - **Bài E.5** — a) Đếm chữ số, tính tổng chữ số · b) Yêu cầu “có mấy chữ số”, “tổng các chữ số” · c) Cấu tạo số, tổng chữ số · d) Tách lớp để đếm; cộng rời từng chữ số · e) Ghép cặp các chữ số cộng lại tròn 10 rồi cộng nhanh. · f) Cộng cả giá trị hàng (ví dụ cộng 300 thay vì cộng 3).
 
@@ -254,7 +254,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | D.5 | Suy luận loại trừ có bảng | Phương pháp lập bảng | Mỗi người ứng với đúng một đối tượng | Kẻ bảng, đánh dấu, lan toả | Bắt đầu từ dữ kiện khẳng định trước dữ kiện phủ định. | ô (Minh; xoài) · không · ô (Dũng; táo) · lê… |
 | E.1 | Đếm chữ số, tính tổng chữ số | Cấu tạo số, tổng chữ số | Yêu cầu “có mấy chữ số”, “tổng các chữ số” | Tách lớp để đếm; cộng rời từng chữ số | Ghép cặp các chữ số cộng lại tròn 10 rồi cộng nhanh. | Đếm chữ số, tính tổng chữ số · Yêu cầu “có mấy chữ số”, “tổng các chữ số” · Cấu tạo số, tổng chữ số · Tách lớp để đếm; cộng rời từng chữ số… |
 | E.2 | Nhận biết chẵn – lẻ và số liền kề | Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2 | Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” | Xét chữ số tận cùng; cộng hoặc trừ 1 đơn vị | Che hết các chữ số, chỉ để lộ chữ số cuối. | Nhận biết chẵn – lẻ và số liền kề · Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” · Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2 · Xét chữ số tận cùng; cộng hoặc trừ 1 đơn vị… |
-| E.3 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | So sánh hai số tự nhiên · Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = · Thứ tự trong tập số tự nhiên · Đếm chữ số → so từng hàng từ trái sang phải… |
+| E.3 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | So sánh hai số tự nhiên · Dấu … giữa hai số, yêu cầu điền <, >, = · Thứ tự trong tập số tự nhiên · Đếm chữ số → so từng hàng từ trái sang phải… |
 | E.4 | Xác định chữ số và giá trị chữ số theo hàng | Cấu tạo thập phân của số tự nhiên | Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” | Đánh số hàng từ phải sang trái rồi tra bảng hàng | Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị. | Xác định chữ số và giá trị chữ số theo hàng · Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” · Cấu tạo thập phân của số tự nhiên · Đánh số hàng từ phải sang trái rồi tra bảng hàng… |
 | E.5 | Đếm chữ số, tính tổng chữ số | Cấu tạo số, tổng chữ số | Yêu cầu “có mấy chữ số”, “tổng các chữ số” | Tách lớp để đếm; cộng rời từng chữ số | Ghép cặp các chữ số cộng lại tròn 10 rồi cộng nhanh. | Đếm chữ số, tính tổng chữ số · Yêu cầu “có mấy chữ số”, “tổng các chữ số” · Cấu tạo số, tổng chữ số · Tách lớp để đếm; cộng rời từng chữ số… |
 
@@ -386,7 +386,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | D.5 | Ba bạn thích ba quả khác nhau, An thích táo, Bình không thích cam. Bình thích quả gì? | lê |
 | E.1 | Số 40 506 có mấy chữ số và tổng các chữ số bằng bao nhiêu? | 5 chữ số, tổng 15 |
 | E.2 | Số liền sau của 61 731 là số nào? | 61 732 |
-| E.3 | Điền dấu: 98 114 … 98 115 | &lt; |
+| E.3 | Điền dấu: 98 114 … 98 115 | < |
 | E.4 | Chữ số hàng chục của số 58 496 có giá trị bao nhiêu? | 90 |
 | E.5 | Số 40 506 có mấy chữ số và tổng các chữ số bằng bao nhiêu? | 5 chữ số, tổng 15 |
 

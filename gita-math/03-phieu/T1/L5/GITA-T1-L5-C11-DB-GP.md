@@ -40,7 +40,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài B.1** — a) 50 · b) 5% · c) 100 · d) 25% · e) 200
 - **Bài B.2** — a) 1 076 · b) 31 424 · c) 3 378 · d) 1 500 · e) 28 171 · f) 4 414
-- **Bài B.3** — a) &lt; · b) &lt; · c) &lt; · d) &gt;
+- **Bài B.3** — a) < · b) < · c) < · d) >
 - **Bài B.4** — a) không · b) XX · c) 1 tuần 6 ngày · d) 31 · e) XXI · f) 7 tuần 2 ngày
 - **Bài B.5** — a) 4 752 dư 1 · b) 1 427 dư 8 · c) 6 269 dư 4 · d) 6 245 dư 11 · e) 2 607 dư 4 · f) 5 568 dư 5 · g) 2 738 dư 2
 
@@ -239,7 +239,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | A.5 | Lập bảng dạng bài | Bảng phân tích chuyên sâu sáu cột | Bảng có sẵn cột dạng bài, thiếu các cột còn lại | Tra bảng phân tích của các phiếu đã học | Học theo hàng ngang, không học theo cột dọc. | 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ. · Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm. · Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ. · Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ.… |
 | B.1 | Ba dạng toán tỉ số phần trăm | Tỉ số phần trăm | Kí hiệu %, cụm “… % của …” | Xác định đại lượng ứng với 100% rồi chọn dạng | Coi 100% là “cả phần”, 1% là “cả phần chia 100” — mọi dạng đều quy về 1%. | 50 · 5% · 100 · 25%… |
 | B.2 | Bốn phép tính với số đo | Đổi đơn vị, bốn phép tính | Các số hạng có đơn vị khác nhau trong cùng một phép tính | Đổi về đơn vị của kết quả rồi tính | Đọc chỗ chấm trước, biết ngay đơn vị đích. | 1 076 · 31 424 · 3 378 · 1 500… |
-| B.3 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &lt; · &lt; · &lt; · &gt; |
+| B.3 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | < · < · < · > |
 | B.4 | Lịch và đơn vị thời gian lớn | Số ngày các tháng, năm nhuận, thế kỉ | Đề hỏi về tháng, năm, thế kỉ | Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400 | Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ. | không · XX · 1 tuần 6 ngày · 31… |
 | B.5 | Phép chia có dư | Quan hệ giữa số bị chia, số chia, thương và số dư | Đề yêu cầu ghi cả thương và số dư | Đặt tính chia, kiểm tra điều kiện số dư | Ước lượng thương bằng cách làm tròn số chia trước khi chia. | 4 752 dư 1 · 1 427 dư 8 · 6 269 dư 4 · 6 245 dư 11… |
 | C.1 | Bốn phép tính với số thập phân | Kĩ thuật tính với số thập phân | Các số có dấu phẩy | Chọn quy tắc đặt dấu phẩy theo phép tính | Ước lượng bằng cách làm tròn để kiểm tra vị trí dấu phẩy. | 301,92 · 168,14 · 28,35 · 41,52… |
@@ -371,7 +371,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | A.5 | Cột “Cách xử lý nhanh nhất” trả lời câu hỏi gì? | làm gì |
 | B.1 | Tìm 25% của 200. | 50 |
 | B.2 | 2 m 30 cm + 150 cm = … cm | 380 |
-| B.3 | So sánh: 3 kg … 2 500 g | &gt; |
+| B.3 | So sánh: 3 kg … 2 500 g | > |
 | B.4 | Năm 1975 thuộc thế kỉ thứ mấy? | XX |
 | B.5 | Tìm thương và số dư của 1 234 : 7 | 176 dư 2 |
 | C.1 | Tính: 3,25 × 4 | 13 |

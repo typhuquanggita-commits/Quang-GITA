@@ -74,7 +74,7 @@ d) Đến đây, hàng Dũng còn lại đúng một ô trống. Vậy Dũng th�
 e) Suy ra Phúc thích môn nào?
 f) Phương pháp vừa dùng tên là gì?
 
-### Bài 3. (1 điểm) Điền dấu &lt;, &gt;, = thích hợp
+### Bài 3. (1 điểm) Điền dấu <, >, = thích hợp
 
 Điền dấu thích hợp vào chỗ chấm.
 
@@ -356,7 +356,7 @@ d) 3 ngày đầu tuần một cửa hàng bán được lần lượt 220, 215,
 **Lỗi thường gặp:** Suy luận trong đầu, không kẻ bảng, nên bỏ sót khả năng. Phòng: Luôn kẻ bảng, kể cả khi bài có vẻ dễ.
 
 ### Bài A.3
-**Đáp số:** a) &gt; · b) &lt; · c) &lt; · d) &lt; · e) &lt; · f) &lt; · g) &lt; · h) &gt;
+**Đáp số:** a) > · b) < · c) < · d) < · e) < · f) < · g) < · h) >
 **Hướng giải:** So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Đếm số chữ số **trước**, chỉ khi bằng nhau mới so từng hàng.
 **Lỗi thường gặp:** So từ hàng đơn vị (phải sang trái) nên kết luận sai. Phòng: Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái.

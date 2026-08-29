@@ -63,7 +63,7 @@ d) Số 53 321 có bao nhiêu chữ số, và tổng các chữ số của nó b
 e) Số 96 967 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
 f) Số 95 113 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
 
-### Bài 2. (1 điểm) Điền dấu &lt;, &gt;, = thích hợp
+### Bài 2. (1 điểm) Điền dấu <, >, = thích hợp
 
 Điền dấu thích hợp vào chỗ chấm.
 
@@ -219,7 +219,7 @@ f) Cách xử lý nhanh nhất của dạng “Đổi chỗ chữ số” là g�
 
 ### Bài 1. (6 điểm) Key 1 — So sánh hai số tự nhiên
 
-**Phát biểu:** Thứ tự trong tập số tự nhiên. **Ví dụ mẫu:** Điền dấu: 97 001 … 97 002 → &lt;.
+**Phát biểu:** Thứ tự trong tập số tự nhiên. **Ví dụ mẫu:** Điền dấu: 97 001 … 97 002 → <.
 
 a) Phát biểu lại key này bằng lời của em.
 b) Key này dùng cho dạng bài nào?
@@ -341,7 +341,7 @@ e) Hình vuông cạnh 24 cm. Tính chu vi.
 **Lỗi thường gặp:** Cộng cả giá trị hàng (ví dụ cộng 300 thay vì cộng 3). Phòng: Viết rời từng chữ số ra rồi mới cộng.
 
 ### Bài A.2
-**Đáp số:** a) &gt; · b) &lt; · c) &lt; · d) &lt; · e) &lt;
+**Đáp số:** a) > · b) < · c) < · d) < · e) <
 **Hướng giải:** So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Đếm số chữ số **trước**, chỉ khi bằng nhau mới so từng hàng.
 **Lỗi thường gặp:** So từ hàng đơn vị (phải sang trái) nên kết luận sai. Phòng: Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái.
@@ -383,7 +383,7 @@ e) Hình vuông cạnh 24 cm. Tính chu vi.
 **Lỗi thường gặp:** Không nhớ mốc kiểm tra nên ôn muộn. Phòng: Ghi mốc kiểm tra vào lịch học ngay buổi đầu của cụm.
 
 ### Bài B.4
-**Đáp số:** a) Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = · b) Bài toán đánh số trang · c) Đề yêu cầu ghi cả thương và số dư · d) Cho ba chữ số, yêu cầu lập số · e) Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” · f) “Viết theo thứ tự ngược lại”, “đổi chỗ hai chữ số”
+**Đáp số:** a) Dấu … giữa hai số, yêu cầu điền <, >, = · b) Bài toán đánh số trang · c) Đề yêu cầu ghi cả thương và số dư · d) Cho ba chữ số, yêu cầu lập số · e) Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” · f) “Viết theo thứ tự ngược lại”, “đổi chỗ hai chữ số”
 **Hướng giải:** Dấu hiệu nhận biết là những chữ có mặt trong đề bài, không phải là cách giải. Đọc lại cột “Dữ liệu nhận biết” trong bảng phân tích chuyên sâu.
 **Nhãn tư duy:** TD2. Điểm chốt: Dấu hiệu nằm ở **chữ trong đề**, không nằm ở phép tính.
 **Lỗi thường gặp:** Trả lời bằng cách giải thay vì bằng dấu hiệu. Phòng: Tự hỏi: em nhìn thấy chữ gì trong đề thì biết đây là dạng này?
@@ -413,7 +413,7 @@ e) Hình vuông cạnh 24 cm. Tính chu vi.
 **Lỗi thường gặp:** Dạng nào cũng vẽ sơ đồ đoạn thẳng, kể cả bài đếm. Phòng: Hỏi trước: bài này có quan hệ hơn kém, có nhiều trường hợp, hay có hình?
 
 ### Bài C.4
-**Đáp số:** a) Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = · b) Bài toán đánh số trang · c) Đề yêu cầu ghi cả thương và số dư · d) Cho ba chữ số, yêu cầu lập số · e) Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” · f) “Viết theo thứ tự ngược lại”, “đổi chỗ hai chữ số”
+**Đáp số:** a) Dấu … giữa hai số, yêu cầu điền <, >, = · b) Bài toán đánh số trang · c) Đề yêu cầu ghi cả thương và số dư · d) Cho ba chữ số, yêu cầu lập số · e) Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” · f) “Viết theo thứ tự ngược lại”, “đổi chỗ hai chữ số”
 **Hướng giải:** Dấu hiệu nhận biết luôn là **chữ có trong đề**: một cụm từ khoá, một kiểu dữ kiện, hoặc một cách hỏi.
 **Nhãn tư duy:** TD2. Điểm chốt: Đọc vị được đề là **đã đi được nửa đường**.
 **Lỗi thường gặp:** Lẫn dấu hiệu nhận biết với phương pháp giải. Phòng: Dấu hiệu trả lời câu “thấy gì?”, phương pháp trả lời câu “làm gì?”.
@@ -425,7 +425,7 @@ e) Hình vuông cạnh 24 cm. Tính chu vi.
 **Lỗi thường gặp:** Dùng mẹo mà không hiểu vì sao đúng nên áp dụng sai chỗ. Phòng: Với mỗi mẹo, viết thêm một dòng “mẹo này đúng vì …”.
 
 ### Bài D.1
-**Đáp số:** a) Thứ tự trong tập số tự nhiên · b) So sánh hai số tự nhiên · c) Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = · d) Đếm chữ số → so từng hàng từ trái sang phải · e) So từ hàng đơn vị (phải sang trái) nên kết luận sai. · f) &lt;
+**Đáp số:** a) Thứ tự trong tập số tự nhiên · b) So sánh hai số tự nhiên · c) Dấu … giữa hai số, yêu cầu điền <, >, = · d) Đếm chữ số → so từng hàng từ trái sang phải · e) So từ hàng đơn vị (phải sang trái) nên kết luận sai. · f) <
 **Hướng giải:** So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Đếm số chữ số **trước**, chỉ khi bằng nhau mới so từng hàng.
 **Lỗi thường gặp:** So từ hàng đơn vị (phải sang trái) nên kết luận sai. Phòng: Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái.

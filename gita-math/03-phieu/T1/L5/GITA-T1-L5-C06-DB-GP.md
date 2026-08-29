@@ -46,7 +46,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần C**
 
-- **Bài C.1** — a) &lt; · b) &lt; · c) &gt; · d) &gt;
+- **Bài C.1** — a) < · b) < · c) > · d) >
 - **Bài C.2** — a) 1 806 nghìn đồng · b) 12 quyển · c) 150 nghìn đồng · d) 840 nghìn đồng
 - **Bài C.3** — a) tổ Một: 482 cây, nhóm Hoa Phượng: 328 cây · b) cửa hàng: 461 kg, trang trại: 331 kg · c) 4A: 56 quyển, 5B: 44 quyển · d) thư viện: 125 kg, cửa hàng: 117 kg · e) nhóm Sao Mai: 39 cây, đội Hai: 23 cây · f) 4C: 446 quyển, 3B: 232 quyển
 - **Bài C.4** — a) 21 kg · b) 206 kg · c) 162 kg · d) 1 310 kg · e) 216 kg
@@ -242,7 +242,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | B.3 | Tỉ lệ nghịch | Đại lượng tỉ lệ nghịch, tổng số ngày công | Số người tăng thì thời gian giảm | Quy về tổng số ngày công rồi chia | Số người gấp đôi thì số ngày giảm một nửa — nhẩm được ngay khi tỉ số đẹp. | 6 ngày · 30 ngày · 4 ngày · 10 ngày… |
 | B.4 | Tính nhanh tích, thương nhiều bước | Tính chất giao hoán, kết hợp của phép nhân | Tích có thừa số 25, 125, 50, 20; hoặc chia liên tiếp | Ghép cặp cho tích tròn rồi nhân | Chia liên tiếp cho 4 rồi 25 bằng chia cho 100. | 7 800 · 76 · 3 900 · 27… |
 | B.5 | Diện tích các hình phẳng cơ bản | Công thức diện tích hình bình hành, hình thoi, hình tam giác | Đề cho đáy và chiều cao, hoặc hai đường chéo | Nhận dạng hình rồi chọn công thức | Tam giác bằng nửa hình bình hành cùng đáy cùng chiều cao. | 297 cm² · 56 cm² · 44 cm² · 112 cm²… |
-| C.1 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &lt; · &lt; · &gt; · &gt; |
+| C.1 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | < · < · > · > |
 | C.2 | Tỉ lệ thuận, rút về đơn vị | Đại lượng tỉ lệ thuận | Hai đại lượng cùng tăng cùng giảm | Rút về đơn vị hoặc dùng tỉ số | Nếu số lượng mới gấp số lượng cũ một số nguyên lần thì nhân thẳng, không cần rút về đơn vị. | 1 806 nghìn đồng · 12 quyển · 150 nghìn đồng · 840 nghìn đồng |
 | C.3 | Tổng – hiệu có lời văn | Công thức tổng – hiệu, sơ đồ đoạn thẳng | “Có tất cả …” và “… nhiều hơn … là …” | Đọc vị tổng và hiệu → sơ đồ → công thức | Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần. | tổ Một: 482 cây, nhóm Hoa Phượng: 328 cây · cửa hàng: 461 kg, trang trại: 331 kg · 4A: 56 quyển, 5B: 44 quyển · thư viện: 125 kg, cửa hàng: 117 kg… |
 | C.4 | Ba dạng bài trung bình cộng | Quan hệ tổng – số lượng – trung bình cộng | Cụm “trung bình mỗi …” | Đi qua tổng làm trung gian | Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng. | 21 kg · 206 kg · 162 kg · 1 310 kg… |
@@ -374,7 +374,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | B.3 | 6 người làm xong trong 8 ngày. 12 người làm xong trong mấy ngày? | 4 ngày |
 | B.4 | Tính nhanh: 37 × 25 × 4 | 3 700 |
 | B.5 | Tam giác đáy 10 cm, cao 6 cm. Diện tích bằng bao nhiêu? | 30 cm² |
-| C.1 | So sánh: 3 kg … 2 500 g | &gt; |
+| C.1 | So sánh: 3 kg … 2 500 g | > |
 | C.2 | Mua 4 quyển vở hết 24 nghìn. Mua 10 quyển hết bao nhiêu? | 60 nghìn |
 | C.3 | Hai lớp có 90 quyển sách, lớp A nhiều hơn lớp B 10 quyển. Mỗi lớp có mấy quyển? | 50 và 40 |
 | C.4 | Trung bình mỗi ngày bán 40 kg, hỏi 5 ngày bán bao nhiêu? | 200 kg |

@@ -140,7 +140,7 @@ f) 67 × 59 − 67 × 35
 
 ### Bài 4. (5 điểm) So sánh hai số đo khác đơn vị
 
-Điền dấu &lt;, &gt;, = thích hợp.
+Điền dấu <, >, = thích hợp.
 
 a) 4 km² … 6 087 cm²
 b) 23 hg … 1 522 tấn
@@ -252,7 +252,7 @@ e) Đội Một trồng được 52 cây. Số cây của nhóm Sao Mai bằng 1
 
 ### Bài 4. (4 điểm) So sánh hai biểu thức mà không cần tính
 
-Điền dấu &lt;, &gt;, = và giải thích ngắn.
+Điền dấu <, >, = và giải thích ngắn.
 
 a) 362 × 8 … 592 × 8
 b) 825 + 18 … 124 + 18
@@ -279,7 +279,7 @@ f) Một xe chở 8 bao xi măng, mỗi bao 40 kg. Hỏi xe chở bao nhiêu t�
 
 ### Bài 1. (4 điểm) Đọc vị đề số 1
 
-**Đề:** Điền dấu &lt;, &gt;, = thích hợp. 70 m² … 3 607 km²
+**Đề:** Điền dấu <, >, = thích hợp. 70 m² … 3 607 km²
 
 a) Đề này thuộc dạng bài nào?
 b) Dấu hiệu nào giúp em nhận ra?
@@ -387,7 +387,7 @@ f) Lỗi nào dễ mắc ở đề này?
 **Lỗi thường gặp:** Đặt ra ngoài một số chỉ có ở một tích. Phòng: Khoanh thừa số giống nhau ở hai tích trước khi viết dấu ngoặc.
 
 ### Bài B.4
-**Đáp số:** a) &gt; · b) &lt; · c) &gt; · d) &lt; · e) &gt; · f) &gt; · g) &gt;
+**Đáp số:** a) > · b) < · c) > · d) < · e) > · f) > · g) >
 **Hướng giải:** Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.
@@ -450,7 +450,7 @@ f) Lỗi nào dễ mắc ở đề này?
 **Gợi ý 3 tầng:** (1) Phân số đó tính trên số nào? — (2) Chia số đó thành mấy phần bằng nhau? — (3) Lấy mấy phần trong số đó?
 
 ### Bài D.4
-**Đáp số:** a) &lt; · b) &gt; · c) &lt; · d) &gt; · e) &lt; · f) &lt; · g) &lt;
+**Đáp số:** a) < · b) > · c) < · d) > · e) < · f) < · g) <
 **Hướng giải:** Khi hai biểu thức có phần giống nhau, chỉ cần so sánh phần khác nhau: cùng cộng thêm một số thì số nào lớn hơn vẫn lớn hơn; cùng nhân với một số khác 0 cũng vậy.
 **Nhãn tư duy:** TD5, TD2. Điểm chốt: Che phần **giống nhau** đi, chỉ so phần khác nhau.
 **Lỗi thường gặp:** Tính hết cả hai vế, vừa lâu vừa dễ sai. Phòng: Dùng bút gạch bỏ phần giống nhau ở hai vế trước khi so sánh.

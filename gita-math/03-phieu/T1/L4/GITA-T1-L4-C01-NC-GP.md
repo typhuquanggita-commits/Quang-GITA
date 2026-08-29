@@ -30,7 +30,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần I**
 
-- **Bài I.1** — a) &gt; · b) &lt; · c) &lt; · d) &lt; · e) &lt; · f) &gt;
+- **Bài I.1** — a) > · b) < · c) < · d) < · e) < · f) >
 - **Bài I.2** — a) 6 chữ số, tổng 23 · b) 6 chữ số, tổng 28 · c) 6 chữ số, tổng 31 · d) 6 chữ số, tổng 32 · e) 6 chữ số, tổng 44
 - **Bài I.3** — a) số lẻ · b) 212 078 · c) số lẻ · d) 964 066
 - **Bài I.4** — a) chữ số 9, giá trị 90 000 · b) chữ số 5, giá trị 5 000 · c) chữ số 5, giá trị 500 · d) chữ số 6, giá trị 60 · e) chữ số 2, giá trị 2
@@ -62,7 +62,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần V**
 
-- **Bài V.1** — a) 20 · b) 4 · c) &lt; · d) 1 156 · e) 1 521 · f) &lt;
+- **Bài V.1** — a) 20 · b) 4 · c) < · d) 1 156 · e) 1 521 · f) <
 - **Bài V.2** — a) 3 · b) 1 · c) 1 · d) 4 · e) 275
 - **Bài V.3** — a) 3 · b) 2 323 · c) không, dư 3 · d) tổng các số dư là 3, chia 5 dư 3 · e) 3 · f) 2
 - **Bài V.4** — a) 4 dư 6 · b) 3 dư 7 · c) 30 · d) 8 dư 3 · e) 3 dư 5 · f) 5 dư 10
@@ -74,7 +74,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 Đọc kĩ phần chữ đậm: đó là câu cần nhớ, không phải con số.
 
-### Bài I.1 — Điền dấu &lt;, &gt;, = thích hợp
+### Bài I.1 — Điền dấu <, >, = thích hợp
 
 So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 
@@ -232,7 +232,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
-| I.1 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | &gt; · &lt; · &lt; · &lt;… |
+| I.1 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | > · < · < · <… |
 | I.2 | Đếm chữ số, tính tổng chữ số | Cấu tạo số, tổng chữ số | Yêu cầu “có mấy chữ số”, “tổng các chữ số” | Tách lớp để đếm; cộng rời từng chữ số | Ghép cặp các chữ số cộng lại tròn 10 rồi cộng nhanh. | 6 chữ số, tổng 23 · 6 chữ số, tổng 28 · 6 chữ số, tổng 31 · 6 chữ số, tổng 32… |
 | I.3 | Nhận biết chẵn – lẻ và số liền kề | Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2 | Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” | Xét chữ số tận cùng; cộng hoặc trừ 1 đơn vị | Che hết các chữ số, chỉ để lộ chữ số cuối. | số lẻ · 212 078 · số lẻ · 964 066 |
 | I.4 | Xác định chữ số và giá trị chữ số theo hàng | Cấu tạo thập phân của số tự nhiên | Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” | Đánh số hàng từ phải sang trái rồi tra bảng hàng | Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị. | chữ số 9, giá trị 90 000 · chữ số 5, giá trị 5 000 · chữ số 5, giá trị 500 · chữ số 6, giá trị 60… |
@@ -252,7 +252,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.3 | Tìm số thoả nhiều điều kiện chia có dư | Phép chia có dư, dãy cách đều | Hai điều kiện “chia cho … dư …” đi cùng nhau | Lập dãy theo điều kiện chặt hơn rồi lọc theo điều kiện còn lại | Chọn điều kiện có số chia **lớn hơn** để lập dãy — dãy thưa hơn nên thử nhanh hơn. | 13 · 18 · 11 · không có số nào |
 | IV.4 | Đếm và tính tổng dãy con thoả điều kiện chia hết | Dãy cách đều, bội chung nhỏ nhất | Đề hỏi riêng các số chẵn, số chia hết cho … trong một dãy | Xác định dãy con cách đều rồi đếm, tính tổng | Nếu khoảng cách của dãy gốc đã chia hết cho số chia thì hoặc tất cả, hoặc không số hạng nào thoả điều kiện. | 113 · 457 · 0 · 0… |
 | IV.5 | Nhận biết số nguyên tố, hợp số | Định nghĩa số nguyên tố, dấu hiệu chia hết | Câu hỏi “là số nguyên tố hay hợp số” | Thử chia theo dãy số nguyên tố tăng dần, dừng đúng ngưỡng | Loại ngay các số chẵn lớn hơn 2 và các số tận cùng bằng 5 lớn hơn 5. | số nguyên tố · số nguyên tố · hợp số (ví dụ ước 2) · hợp số (ví dụ ước 2)… |
-| V.1 | Tính, so sánh tích bằng kĩ thuật tách – bù | Nhân một số với một tổng, một hiệu | Các thừa số hơn kém nhau rất ít | Quy về số gốc chung, so phần chênh | Với hai tích có tổng hai thừa số bằng nhau, tích nào có hai thừa số gần nhau hơn thì lớn hơn. | 20 · 4 · &lt; · 1 156… |
+| V.1 | Tính, so sánh tích bằng kĩ thuật tách – bù | Nhân một số với một tổng, một hiệu | Các thừa số hơn kém nhau rất ít | Quy về số gốc chung, so phần chênh | Với hai tích có tổng hai thừa số bằng nhau, tích nào có hai thừa số gần nhau hơn thì lớn hơn. | 20 · 4 · < · 1 156… |
 | V.2 | Dãy tuần hoàn | Phép chia có dư, tính tuần hoàn | Dãy lặp lại một nhóm số cố định | Chia vị trí cho chu kì, dùng số dư định vị | Tổng n số hạng = tổng một chu kì × số chu kì đầy đủ + tổng phần dư. | 3 · 1 · 1 · 4… |
 | V.3 | Xét số dư của tổng | Tính chất số dư của tổng | Đề hỏi chia hết hay số dư của một tổng dài | Rút gọn từng số hạng về số dư rồi cộng | Với d = 9, số dư của một số bằng số dư của tổng các chữ số của nó. | 3 · 2 323 · không, dư 3 · tổng các số dư là 3, chia 5 dư 3… |
 | V.4 | Số và tổng chữ số của nó | Cấu tạo thập phân, phép chia có dư | Đề liên hệ số với tổng các chữ số của chính nó | Đặt ẩn cho chữ số, viết hai biểu thức, lập bảng thử | a × 10 + b − (a + b) = 9 × a — hiệu luôn là bội của 9. | 4 dư 6 · 3 dư 7 · 30 · 8 dư 3… |
@@ -364,7 +364,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 
 | Bài | Đề tương tự | Đáp số |
 |---|---|---|
-| I.1 | Điền dấu: 909 629 … 909 630 | &lt; |
+| I.1 | Điền dấu: 909 629 … 909 630 | < |
 | I.2 | Số 40 506 có mấy chữ số và tổng các chữ số bằng bao nhiêu? | 5 chữ số, tổng 15 |
 | I.3 | Số liền sau của 78 641 là số nào? | 78 642 |
 | I.4 | Chữ số hàng chục của số 95 562 có giá trị bao nhiêu? | 60 |
@@ -384,7 +384,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | IV.3 | Tìm số bé nhất chia cho 5 dư 2 và chia cho 3 dư 1. | 7 |
 | IV.4 | Dãy 1, 4, 7, …, 100 có bao nhiêu số chẵn? | 17 |
 | IV.5 | Số 91 là số nguyên tố hay hợp số? | hợp số (91 = 7 × 13) |
-| V.1 | So sánh: 99 × 101 … 100 × 100 | &lt; |
+| V.1 | So sánh: 99 × 101 … 100 × 100 | < |
 | V.2 | Dãy 1, 2, 3, 1, 2, 3, … số hạng thứ 100 là số nào? | 1 |
 | V.3 | Tổng 123 + 234 + 345 chia cho 9 dư mấy? | dư 0 |
 | V.4 | Số 27 gấp mấy lần tổng hai chữ số của nó? | 3 lần |

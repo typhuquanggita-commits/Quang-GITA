@@ -63,7 +63,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần E**
 
 - **Bài E.1** — a) giới thiệu chương “Bốn phép tính, biểu thức chữ và tính chất phép cộng” và mục tiêu · b) trình bày sơ đồ tư duy chương · c) giảng một dạng bài kèm ví dụ mẫu · d) nêu lỗi hay mắc và cách phòng · e) ra một bài cho lớp làm và chữa nhanh · f) tự phân công, mỗi bạn ít nhất một phút
-- **Bài E.2** — a) “Hôm nay nhóm mình nói về So sánh biểu thức không tính giá trị.” · b) Hai vế có chung một số hạng hoặc một thừa số · c) Tính chất bất đẳng thức trong phép cộng, phép nhân · d) So sánh: 234 × 7 … 234 × 8 → &lt; · e) Tính hết cả hai vế, vừa lâu vừa dễ sai. · f) Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn.
+- **Bài E.2** — a) “Hôm nay nhóm mình nói về So sánh biểu thức không tính giá trị.” · b) Hai vế có chung một số hạng hoặc một thừa số · c) Tính chất bất đẳng thức trong phép cộng, phép nhân · d) So sánh: 234 × 7 … 234 × 8 → < · e) Tính hết cả hai vế, vừa lâu vừa dễ sai. · f) Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn.
 - **Bài E.3** — a) “Hôm nay nhóm mình nói về Tính nhanh tích, thương nhiều bước.” · b) Tích có thừa số 25, 125, 50, 20; hoặc chia liên tiếp · c) Tính chất giao hoán, kết hợp của phép nhân · d) Tính nhanh: 37 × 25 × 4 → 3 700 · e) Nhân lần lượt từ trái sang phải nên số trung gian rất lớn. · f) Chia liên tiếp cho 4 rồi 25 bằng chia cho 100.
 - **Bài E.4** — a) “Hôm nay nhóm mình nói về Tính nhanh nhờ thừa số 0.” · b) Trong biểu thức có ngoặc chứa hai số giống nhau trừ nhau · c) Tính chất nhân với 0, phép trừ hai số bằng nhau · d) Tính nhanh: 1 234 × 567 × (89 − 89) → 0 · e) Lao vào nhân từng cặp số lớn rồi mới phát hiện kết quả bằng 0. · f) Nhìn dấu ngoặc trước tiên — bẫy thường nằm ở đó.
 - **Bài E.5** — a) “Hôm nay nhóm mình nói về Tìm x trong phép tính một bước.” · b) Có chữ x đứng trong một phép tính · c) Quan hệ giữa các thành phần của phép tính · d) Tìm x: x × 7 = 91 → x = 13 · e) Áp dụng nhầm quy tắc của số trừ cho số bị trừ. · f) Thử lại bằng cách thay x vào đề — mất 3 giây nhưng chắc chắn.
@@ -253,7 +253,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | D.4 | Tìm x nhiều bước có ngoặc | Thứ tự thực hiện phép tính, quan hệ thành phần | x nằm trong ngoặc, ngoài ngoặc còn phép tính khác | Bóc lớp từ ngoài vào trong | Thay x tìm được vào đề, tính một lượt để thử lại. | x nằm trong ngoặc, ngoài ngoặc còn phép tính khác · Bóc lớp từ ngoài vào trong · Nhân phá ngoặc sai dấu, hoặc gỡ phép trong ngoặc trước. · Thứ tự thực hiện phép tính, quan hệ thành phần… |
 | D.5 | Nhân, chia nhẩm với số tròn chục, trăm, nghìn | Cấu tạo thập phân | Thừa số hoặc số chia là 10, 100, 1 000 | Thêm hoặc bớt chữ số 0 | Nhân với 20 = nhân 2 rồi thêm một chữ số 0. | Thừa số hoặc số chia là 10, 100, 1 000 · Thêm hoặc bớt chữ số 0 · Thêm hoặc bớt thiếu một chữ số 0. · Cấu tạo thập phân… |
 | E.1 | Kỹ năng thuyết trình theo nhóm | Hệ thống hoá và diễn đạt | Yêu cầu giảng lại chương theo nhóm | Chia kịch bản theo phút, phân công rõ người | Người giảng nhớ lâu hơn người nghe khoảng ba lần. | giới thiệu chương “Bốn phép tính, biểu thức chữ và tính chất phép cộng” và mục tiêu · trình bày sơ đồ tư duy chương · giảng một dạng bài kèm ví dụ mẫu · nêu lỗi hay mắc và cách phòng… |
-| E.2 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | “Hôm nay nhóm mình nói về So sánh biểu thức không tính giá trị.” · Hai vế có chung một số hạng hoặc một thừa số · Tính chất bất đẳng thức trong phép cộng, phép nhân · So sánh: 234 × 7 … 234 × 8 → &lt;… |
+| E.2 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | “Hôm nay nhóm mình nói về So sánh biểu thức không tính giá trị.” · Hai vế có chung một số hạng hoặc một thừa số · Tính chất bất đẳng thức trong phép cộng, phép nhân · So sánh: 234 × 7 … 234 × 8 → <… |
 | E.3 | Tính nhanh tích, thương nhiều bước | Tính chất giao hoán, kết hợp của phép nhân | Tích có thừa số 25, 125, 50, 20; hoặc chia liên tiếp | Ghép cặp cho tích tròn rồi nhân | Chia liên tiếp cho 4 rồi 25 bằng chia cho 100. | “Hôm nay nhóm mình nói về Tính nhanh tích, thương nhiều bước.” · Tích có thừa số 25, 125, 50, 20; hoặc chia liên tiếp · Tính chất giao hoán, kết hợp của phép nhân · Tính nhanh: 37 × 25 × 4 → 3 700… |
 | E.4 | Tính nhanh nhờ thừa số 0 | Tính chất nhân với 0, phép trừ hai số bằng nhau | Trong biểu thức có ngoặc chứa hai số giống nhau trừ nhau | Quét tìm cụm bằng 0 trước khi tính | Nhìn dấu ngoặc trước tiên — bẫy thường nằm ở đó. | “Hôm nay nhóm mình nói về Tính nhanh nhờ thừa số 0.” · Trong biểu thức có ngoặc chứa hai số giống nhau trừ nhau · Tính chất nhân với 0, phép trừ hai số bằng nhau · Tính nhanh: 1 234 × 567 × (89 − 89) → 0… |
 | E.5 | Tìm x trong phép tính một bước | Quan hệ giữa các thành phần của phép tính | Có chữ x đứng trong một phép tính | Gọi tên vai trò của x rồi dùng quy tắc tương ứng | Thử lại bằng cách thay x vào đề — mất 3 giây nhưng chắc chắn. | “Hôm nay nhóm mình nói về Tìm x trong phép tính một bước.” · Có chữ x đứng trong một phép tính · Quan hệ giữa các thành phần của phép tính · Tìm x: x × 7 = 91 → x = 13… |
@@ -375,17 +375,17 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | B.4 | Ghi lỗi mà không ghi cách phòng thì sao? | lần sau vẫn mắc lại lỗi đó |
 | B.5 | Thiếu đơn vị ở đáp số bị trừ bao nhiêu? | một phần trong bốn phần điểm |
 | C.1 | Tầng nào bắt được lỗi trả lời lệch câu hỏi? | tầng 3 |
-| C.2 | So sánh: 234 × 7 … 234 × 8 | &lt; |
-| C.3 | So sánh: 99 × 101 … 100 × 100 | &lt; |
+| C.2 | So sánh: 234 × 7 … 234 × 8 | < |
+| C.3 | So sánh: 99 × 101 … 100 × 100 | < |
 | C.4 | Tìm x: x × 7 = 91 | x = 13 |
 | C.5 | Tính nhanh: 1 + 2 + 3 + … + 100 | 5 050 |
 | D.1 | Vẽ sơ đồ mà nhìn tài liệu thì mất tác dụng gì? | mất tác dụng kiểm tra trí nhớ |
 | D.2 | Đặt tính rồi tính: 3 045 × 24 | 73 080 |
-| D.3 | So sánh: 99 × 101 … 100 × 100 | &lt; |
+| D.3 | So sánh: 99 × 101 … 100 × 100 | < |
 | D.4 | Tìm x: (x + 12) × 5 − 8 = 132 | x = 16 |
 | D.5 | Tính nhẩm: 358 × 100 | 35 800 |
 | E.1 | Vì sao phải giảng lại cho bạn? | vì giảng được mới là hiểu thật |
-| E.2 | So sánh: 234 × 7 … 234 × 8 | &lt; |
+| E.2 | So sánh: 234 × 7 … 234 × 8 | < |
 | E.3 | Tính nhanh: 37 × 25 × 4 | 3 700 |
 | E.4 | Tính nhanh: 1 234 × 567 × (89 − 89) | 0 |
 | E.5 | Tìm x: x × 7 = 91 | x = 13 |

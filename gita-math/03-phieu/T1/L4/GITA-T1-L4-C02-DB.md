@@ -220,7 +220,7 @@ h) 1 − 1 phần 2
 
 ### Bài 1. (4 điểm) So sánh hai biểu thức mà không cần tính
 
-Điền dấu &lt;, &gt;, = và giải thích ngắn.
+Điền dấu <, >, = và giải thích ngắn.
 
 a) 204 × 10 … 803 × 10
 b) 546 + 2 … 605 + 2
@@ -428,7 +428,7 @@ f) Lỗi nào dễ mắc ở đề này?
 **Lỗi thường gặp:** Quy đồng cả khi nhân, hoặc cộng thẳng tử với tử và mẫu với mẫu. Phòng: Trước khi tính, khoanh dấu phép tính và tự nhắc “có phải quy đồng không”.
 
 ### Bài D.1
-**Đáp số:** a) &lt; · b) &lt; · c) &lt; · d) &gt; · e) &lt; · f) &gt;
+**Đáp số:** a) < · b) < · c) < · d) > · e) < · f) >
 **Hướng giải:** Khi hai biểu thức có phần giống nhau, chỉ cần so sánh phần khác nhau: cùng cộng thêm một số thì số nào lớn hơn vẫn lớn hơn; cùng nhân với một số khác 0 cũng vậy.
 **Nhãn tư duy:** TD5, TD2. Điểm chốt: Che phần **giống nhau** đi, chỉ so phần khác nhau.
 **Lỗi thường gặp:** Tính hết cả hai vế, vừa lâu vừa dễ sai. Phòng: Dùng bút gạch bỏ phần giống nhau ở hai vế trước khi so sánh.

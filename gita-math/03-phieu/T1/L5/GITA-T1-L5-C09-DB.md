@@ -183,7 +183,7 @@ e) Hai lớp 4C và 4A có tất cả 590 quyển sách. Lớp 4C có nhiều h�
 
 ### Bài 2. (5 điểm) So sánh hai số đo khác đơn vị
 
-Điền dấu &lt;, &gt;, = thích hợp.
+Điền dấu <, >, = thích hợp.
 
 a) 90 ha … 1 298 cm²
 b) 86 hg … 896 tạ
@@ -403,7 +403,7 @@ f) Lỗi nào dễ mắc ở đề này?
 **Lỗi thường gặp:** Nhầm hiệu thành tổng khi đề diễn đạt vòng vo. Phòng: Ghi riêng ra hai dòng: Tổng = … ; Hiệu = … trước khi tính.
 
 ### Bài C.2
-**Đáp số:** a) &gt; · b) &lt; · c) &lt; · d) &lt; · e) &lt;
+**Đáp số:** a) > · b) < · c) < · d) < · e) <
 **Hướng giải:** Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.

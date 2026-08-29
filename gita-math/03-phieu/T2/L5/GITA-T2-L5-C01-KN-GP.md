@@ -30,7 +30,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần A**
 
-- **Bài A.1** — a) &lt; · b) &lt; · c) &gt; · d) &gt; · e) &lt; · f) &gt; · g) &gt; · h) &lt;
+- **Bài A.1** — a) < · b) < · c) > · d) > · e) < · f) > · g) > · h) <
 - **Bài A.2** — a) số chẵn · b) 3 492 262 · c) 3 948 312 · d) 9 905 984
 - **Bài A.3** — a) chữ số 0, giá trị 0 · b) chữ số 1, giá trị 1 000 · c) chữ số 8, giá trị 800 · d) chữ số 3, giá trị 30
 - **Bài A.4** — a) 3 562 026 · b) 8 140 678 · c) 9 808 597 · d) 9 162 926 · e) 903 786
@@ -65,7 +65,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài E.1** — a) giới thiệu chương “Cấu tạo số, chia hết, số nguyên tố và ước – bội” và mục tiêu · b) trình bày sơ đồ tư duy chương · c) giảng một dạng bài kèm ví dụ mẫu · d) nêu lỗi hay mắc và cách phòng · e) ra một bài cho lớp làm và chữa nhanh · f) tự phân công, mỗi bạn ít nhất một phút
 - **Bài E.2** — a) “Hôm nay nhóm mình nói về Nhận biết số nguyên tố, hợp số.” · b) Câu hỏi “là số nguyên tố hay hợp số” · c) Định nghĩa số nguyên tố, dấu hiệu chia hết · d) Số 91 là số nguyên tố hay hợp số? → hợp số (91 = 7 × 13) · e) Thử chia cho mọi số từ 2 đến số đó nên mất thời gian, hoặc kết luận vội. · f) Loại ngay các số chẵn lớn hơn 2 và các số tận cùng bằng 5 lớn hơn 5.
 - **Bài E.3** — a) “Hôm nay nhóm mình nói về Dãy số tự nhiên liên tiếp có tổng cho trước.” · b) Cụm “… số tự nhiên liên tiếp có tổng bằng …” · c) Trung bình cộng, dãy cách đều · d) Tổng của 5 số tự nhiên liên tiếp bằng 100. Số bé nhất là số nào? → 18 · e) Lấy tổng chia cho số lượng rồi nhận luôn kết quả là số bé nhất. · f) Tổng của n số liên tiếp (n lẻ) luôn chia hết cho n.
-- **Bài E.4** — a) “Hôm nay nhóm mình nói về So sánh hai số tự nhiên.” · b) Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = · c) Thứ tự trong tập số tự nhiên · d) Điền dấu: 9 826 895 … 9 826 896 → &lt; · e) So từ hàng đơn vị (phải sang trái) nên kết luận sai. · f) Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số.
+- **Bài E.4** — a) “Hôm nay nhóm mình nói về So sánh hai số tự nhiên.” · b) Dấu … giữa hai số, yêu cầu điền <, >, = · c) Thứ tự trong tập số tự nhiên · d) Điền dấu: 9 826 895 … 9 826 896 → < · e) So từ hàng đơn vị (phải sang trái) nên kết luận sai. · f) Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số.
 - **Bài E.5** — a) “Hôm nay nhóm mình nói về Phép chia có dư.” · b) Đề yêu cầu ghi cả thương và số dư · c) Quan hệ giữa số bị chia, số chia, thương và số dư · d) Tìm thương và số dư của 1 234 : 7 → 176 dư 2 · e) Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. · f) Ước lượng thương bằng cách làm tròn số chia trước khi chia.
 
 ---
@@ -74,7 +74,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 Đọc kĩ phần chữ đậm: đó là câu cần nhớ, không phải con số.
 
-### Bài A.1 — Điền dấu &lt;, &gt;, = thích hợp
+### Bài A.1 — Điền dấu <, >, = thích hợp
 
 So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 
@@ -232,7 +232,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
-| A.1 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | &lt; · &lt; · &gt; · &gt;… |
+| A.1 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | < · < · > · >… |
 | A.2 | Nhận biết chẵn – lẻ và số liền kề | Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2 | Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” | Xét chữ số tận cùng; cộng hoặc trừ 1 đơn vị | Che hết các chữ số, chỉ để lộ chữ số cuối. | số chẵn · 3 492 262 · 3 948 312 · 9 905 984 |
 | A.3 | Xác định chữ số và giá trị chữ số theo hàng | Cấu tạo thập phân của số tự nhiên | Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” | Đánh số hàng từ phải sang trái rồi tra bảng hàng | Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị. | chữ số 0, giá trị 0 · chữ số 1, giá trị 1 000 · chữ số 8, giá trị 800 · chữ số 3, giá trị 30 |
 | A.4 | Viết số từ dạng tổng theo hàng | Cấu tạo thập phân của số tự nhiên | Tổng gồm các số tròn chục, tròn trăm, tròn nghìn… | Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết | Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số. | 3 562 026 · 8 140 678 · 9 808 597 · 9 162 926… |
@@ -255,7 +255,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | E.1 | Kỹ năng thuyết trình theo nhóm | Hệ thống hoá và diễn đạt | Yêu cầu giảng lại chương theo nhóm | Chia kịch bản theo phút, phân công rõ người | Người giảng nhớ lâu hơn người nghe khoảng ba lần. | giới thiệu chương “Cấu tạo số, chia hết, số nguyên tố và ước – bội” và mục tiêu · trình bày sơ đồ tư duy chương · giảng một dạng bài kèm ví dụ mẫu · nêu lỗi hay mắc và cách phòng… |
 | E.2 | Nhận biết số nguyên tố, hợp số | Định nghĩa số nguyên tố, dấu hiệu chia hết | Câu hỏi “là số nguyên tố hay hợp số” | Thử chia theo dãy số nguyên tố tăng dần, dừng đúng ngưỡng | Loại ngay các số chẵn lớn hơn 2 và các số tận cùng bằng 5 lớn hơn 5. | “Hôm nay nhóm mình nói về Nhận biết số nguyên tố, hợp số.” · Câu hỏi “là số nguyên tố hay hợp số” · Định nghĩa số nguyên tố, dấu hiệu chia hết · Số 91 là số nguyên tố hay hợp số? → hợp số (91 = 7 × 13)… |
 | E.3 | Dãy số tự nhiên liên tiếp có tổng cho trước | Trung bình cộng, dãy cách đều | Cụm “… số tự nhiên liên tiếp có tổng bằng …” | Tìm số giữa bằng phép chia rồi suy ra hai đầu dãy | Tổng của n số liên tiếp (n lẻ) luôn chia hết cho n. | “Hôm nay nhóm mình nói về Dãy số tự nhiên liên tiếp có tổng cho trước.” · Cụm “… số tự nhiên liên tiếp có tổng bằng …” · Trung bình cộng, dãy cách đều · Tổng của 5 số tự nhiên liên tiếp bằng 100. Số bé nhất là số nào? → 18… |
-| E.4 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | “Hôm nay nhóm mình nói về So sánh hai số tự nhiên.” · Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = · Thứ tự trong tập số tự nhiên · Điền dấu: 9 826 895 … 9 826 896 → &lt;… |
+| E.4 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | “Hôm nay nhóm mình nói về So sánh hai số tự nhiên.” · Dấu … giữa hai số, yêu cầu điền <, >, = · Thứ tự trong tập số tự nhiên · Điền dấu: 9 826 895 … 9 826 896 → <… |
 | E.5 | Phép chia có dư | Quan hệ giữa số bị chia, số chia, thương và số dư | Đề yêu cầu ghi cả thương và số dư | Đặt tính chia, kiểm tra điều kiện số dư | Ước lượng thương bằng cách làm tròn số chia trước khi chia. | “Hôm nay nhóm mình nói về Phép chia có dư.” · Đề yêu cầu ghi cả thương và số dư · Quan hệ giữa số bị chia, số chia, thương và số dư · Tìm thương và số dư của 1 234 : 7 → 176 dư 2… |
 
 ---
@@ -364,7 +364,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 
 | Bài | Đề tương tự | Đáp số |
 |---|---|---|
-| A.1 | Điền dấu: 600 123 … 600 124 | &lt; |
+| A.1 | Điền dấu: 600 123 … 600 124 | < |
 | A.2 | Số liền sau của 667 736 là số nào? | 667 737 |
 | A.3 | Chữ số hàng chục của số 3 011 839 có giá trị bao nhiêu? | 30 |
 | A.4 | Viết số gồm tổng: 30 000 + 400 + 7 | 30 407 |
@@ -387,7 +387,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | E.1 | Vì sao phải giảng lại cho bạn? | vì giảng được mới là hiểu thật |
 | E.2 | Số 91 là số nguyên tố hay hợp số? | hợp số (91 = 7 × 13) |
 | E.3 | Tổng của 5 số tự nhiên liên tiếp bằng 100. Số bé nhất là số nào? | 18 |
-| E.4 | Điền dấu: 9 826 895 … 9 826 896 | &lt; |
+| E.4 | Điền dấu: 9 826 895 … 9 826 896 | < |
 | E.5 | Tìm thương và số dư của 1 234 : 7 | 176 dư 2 |
 
 ---

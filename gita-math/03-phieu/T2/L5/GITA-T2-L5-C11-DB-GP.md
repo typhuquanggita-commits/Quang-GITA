@@ -47,7 +47,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần C**
 
 - **Bài C.1** — a) không, vì hai câu phủ định nhau · b) không, vì chúng phủ định nhau · c) đúng một bạn · d) nói dối · e) Tuấn chính là người làm vỡ lọ hoa · f) Tuấn
-- **Bài C.2** — a) &lt; · b) &gt; · c) &lt; · d) &lt;
+- **Bài C.2** — a) < · b) > · c) < · d) <
 - **Bài C.3** — a) 5B: 368 quyển, 3B: 350 quyển · b) tổ Ba: 378 cây, đội Hai: 298 cây · c) kho B: 421 kg, hợp tác xã: 277 kg · d) 5B: 201 quyển, 4C: 153 quyển · e) tổ Ba: 379 cây, đội Hai: 285 cây · f) hợp tác xã: 38 kg, cửa hàng: 26 kg
 - **Bài C.4** — a) 94,99 · b) 476,28 · c) 44,84 · d) 23,27 · e) 75,43 · f) 46,76
 - **Bài C.5** — a) 512 nghìn đồng · b) 3 quyển · c) 5 quyển · d) 18 quyển
@@ -243,7 +243,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | B.4 | Xét chia hết của tổng, hiệu | Tính chất chia hết của tổng và hiệu | Câu hỏi về tổng hoặc hiệu, không yêu cầu kết quả cụ thể | Xét số dư từng số hạng rồi cộng, trừ các số dư | Chỉ cộng các **số dư**, không cộng các số. | có · có · không, dư 1 · có… |
 | B.5 | Phép chia có dư | Quan hệ giữa số bị chia, số chia, thương và số dư | Đề yêu cầu ghi cả thương và số dư | Đặt tính chia, kiểm tra điều kiện số dư | Ước lượng thương bằng cách làm tròn số chia trước khi chia. | 3 497 dư 6 · 6 818 dư 4 · 2 587 dư 4 · 2 206 dư 14… |
 | C.1 | Suy luận nói thật – nói dối | Logic mệnh đề sơ cấp, phương pháp loại trừ | “Chỉ một người nói thật”, các câu nói mâu thuẫn nhau | Tìm cặp mâu thuẫn, khoá số câu đúng, suy ra phần còn lại | Cặp mâu thuẫn đã dùng hết “suất” nói thật, nên mọi câu ngoài cặp đều sai. | không, vì hai câu phủ định nhau · không, vì chúng phủ định nhau · đúng một bạn · nói dối… |
-| C.2 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &lt; · &gt; · &lt; · &lt; |
+| C.2 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | < · > · < · < |
 | C.3 | Tổng – hiệu có lời văn | Công thức tổng – hiệu, sơ đồ đoạn thẳng | “Có tất cả …” và “… nhiều hơn … là …” | Đọc vị tổng và hiệu → sơ đồ → công thức | Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần. | 5B: 368 quyển, 3B: 350 quyển · tổ Ba: 378 cây, đội Hai: 298 cây · kho B: 421 kg, hợp tác xã: 277 kg · 5B: 201 quyển, 4C: 153 quyển… |
 | C.4 | Bốn phép tính với số thập phân | Kĩ thuật tính với số thập phân | Các số có dấu phẩy | Chọn quy tắc đặt dấu phẩy theo phép tính | Ước lượng bằng cách làm tròn để kiểm tra vị trí dấu phẩy. | 94,99 · 476,28 · 44,84 · 23,27… |
 | C.5 | Tỉ lệ thuận, rút về đơn vị | Đại lượng tỉ lệ thuận | Hai đại lượng cùng tăng cùng giảm | Rút về đơn vị hoặc dùng tỉ số | Nếu số lượng mới gấp số lượng cũ một số nguyên lần thì nhân thẳng, không cần rút về đơn vị. | 512 nghìn đồng · 3 quyển · 5 quyển · 18 quyển |
@@ -375,7 +375,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | B.4 | Tổng 45 + 27 có chia hết cho 9 không? | có |
 | B.5 | Tìm thương và số dư của 1 234 : 7 | 176 dư 2 |
 | C.1 | An nói “tôi không làm”, Bình nói “Chi làm”, Chi nói “Bình nói dối”, chỉ một người nói thật. Ai làm? | An |
-| C.2 | So sánh: 3 kg … 2 500 g | &gt; |
+| C.2 | So sánh: 3 kg … 2 500 g | > |
 | C.3 | Hai lớp có 90 quyển sách, lớp A nhiều hơn lớp B 10 quyển. Mỗi lớp có mấy quyển? | 50 và 40 |
 | C.4 | Tính: 3,25 × 4 | 13 |
 | C.5 | Mua 4 quyển vở hết 24 nghìn. Mua 10 quyển hết bao nhiêu? | 60 nghìn |

@@ -32,8 +32,8 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài I.1** — a) 32 cách · b) 18 cách · c) 6 cách · d) 21 cách · e) 12 cách · f) 64 cách
 - **Bài I.2** — a) 1 710 · b) 4 714 · c) 2 563 · d) 2 375 · e) 2 765 · f) 45
-- **Bài I.3** — a) &gt; · b) &gt; · c) &gt; · d) &gt; · e) &lt;
-- **Bài I.4** — a) 7 · b) 0,01 · c) &lt; · d) 7 · e) 0,81 · f) &gt; · g) 2
+- **Bài I.3** — a) > · b) > · c) > · d) > · e) <
+- **Bài I.4** — a) 7 · b) 0,01 · c) < · d) 7 · e) 0,81 · f) > · g) 2
 - **Bài I.5** — a) 3 phần 2 · b) 1 phần 3 · c) 8 phần 3 · d) 2 · e) 3 phần 8
 
 **Phần II**
@@ -62,7 +62,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần V**
 
-- **Bài V.1** — a) &lt; · b) &gt; · c) &gt; · d) &lt; · e) &gt;
+- **Bài V.1** — a) < · b) > · c) > · d) < · e) >
 - **Bài V.2** — a) 78,5 cm² · b) 7,74 cm² · c) 452,16 cm² · d) 122,46 cm²
 - **Bài V.3** — a) 4,57 ngày · b) 1,23 ngày · c) 2,5 ngày · d) 2,44 ngày · e) 3,08 ngày
 - **Bài V.4** — a) 80 · b) 1 dư 9 · c) 2 dư 1 · d) 40 · e) 8 dư 7 · f) 63
@@ -234,8 +234,8 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 |---|---|---|---|---|---|---|
 | I.1 | Quy tắc nhân | Quy tắc nhân, quy tắc cộng trong phép đếm | Chọn một phần tử từ mỗi nhóm để ghép thành một bộ | Nhân số cách của các bước liên tiếp | Vẽ sơ đồ cây với hai ba nhánh đầu để thấy rõ phép nhân. | 32 cách · 18 cách · 6 cách · 21 cách… |
 | I.2 | Số đo có nhiều đơn vị | Bảng đơn vị khối lượng | Số đo viết dưới dạng “… tấn … tạ … kg” | Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư | Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ. | 1 710 · 4 714 · 2 563 · 2 375… |
-| I.3 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | &gt; · &gt; · &gt; · &gt;… |
-| I.4 | Số thập phân — hàng, so sánh, chuyển đổi | Cấu tạo số thập phân, quan hệ phân số – số thập phân | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 | Xét theo hàng từ trái sang phải | Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. | 7 · 0,01 · &lt; · 7… |
+| I.3 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | > · > · > · >… |
+| I.4 | Số thập phân — hàng, so sánh, chuyển đổi | Cấu tạo số thập phân, quan hệ phân số – số thập phân | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 | Xét theo hàng từ trái sang phải | Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. | 7 · 0,01 · < · 7… |
 | I.5 | Rút gọn phân số | Tính chất cơ bản của phân số | Tử số và mẫu số có ước chung lớn hơn 1 | Chia cả tử và mẫu cho ước chung | Tìm ngay ước chung lớn nhất để rút gọn một lần là xong. | 3 phần 2 · 1 phần 3 · 8 phần 3 · 2… |
 | II.1 | Bốn phép tính với phân số | Quy đồng, nhân chia phân số | Biểu thức chỉ gồm phân số | Chọn quy tắc theo phép tính, rút gọn cuối cùng | Rút gọn chéo trước khi nhân để số nhỏ, tính nhanh và ít sai. | 5 phần 7 · 2 phần 3 · 5 phần 14 · 2 phần 3… |
 | II.2 | Tổng – hiệu có lời văn | Công thức tổng – hiệu, sơ đồ đoạn thẳng | “Có tất cả …” và “… nhiều hơn … là …” | Đọc vị tổng và hiệu → sơ đồ → công thức | Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần. | thư viện: 183 kg, kho B: 103 kg · 5B: 109 quyển, 5A: 61 quyển · đội Hai: 319 cây, tổ Ba: 169 cây · 4C: 185 quyển, 3A: 117 quyển |
@@ -252,7 +252,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.3 | Biểu thức phân số nhiều phép tính | Thứ tự thực hiện phép tính, tính chất phân phối | Biểu thức gồm nhiều phân số và nhiều phép tính | Quan sát rút gọn trước, sau đó theo thứ tự thực hiện | Rút gọn chéo tử với mẫu trước khi nhân. | 53 phần 39 · 53 phần 30 · 278 phần 143 · 5… |
 | IV.4 | Tổng và trung bình cộng của dãy cách đều | Dãy cách đều, trung bình cộng | Đề cho số số hạng, khoảng cách và một đầu của dãy | Tìm hai đầu dãy → tổng → trung bình cộng | Mọi cặp số hạng cách đều hai đầu đều có tổng bằng nhau. | 143 · 200 · 3 430 · 171,5… |
 | IV.5 | Bài toán trồng cây | Quan hệ số cây – số khoảng | Từ khoá “trồng cây”, “cột điện”, “quanh ao”, “hai đầu” | Tính số khoảng rồi chọn đúng công thức theo trường hợp | Khép kín thì số cây bằng đúng số khoảng — không cộng, không trừ. | 30 · 14 · 57 · 57… |
-| V.1 | So sánh phân số bằng kĩ thuật đặc biệt | Phần bù tới 1, phân số trung gian | Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 | So phần bù; hoặc chèn phân số trung gian | Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. | &lt; · &gt; · &gt; · &lt;… |
+| V.1 | So sánh phân số bằng kĩ thuật đặc biệt | Phần bù tới 1, phân số trung gian | Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 | So phần bù; hoặc chèn phân số trung gian | Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. | < · > · > · <… |
 | V.2 | Diện tích phần tô màu | Diện tích hình tròn, hình vuông; phép trừ diện tích | Hình gồm nhiều hình lồng nhau, hỏi phần còn lại | Tách thành hiệu các hình cơ bản | Hình tròn nội tiếp hình vuông chiếm khoảng 78,5% diện tích hình vuông. | 78,5 cm² · 7,74 cm² · 452,16 cm² · 122,46 cm² |
 | V.3 | Tỉ lệ nghịch, so sánh hai phương án | Đại lượng tỉ lệ nghịch, tổng số ngày công | Thay đổi số người, hỏi thay đổi thời gian | Bám vào tổng số ngày công không đổi | Số người tăng gấp k lần thì số ngày giảm còn 1 phần k. | 4,57 ngày · 1,23 ngày · 2,5 ngày · 2,44 ngày… |
 | V.4 | Số và tổng chữ số của nó | Cấu tạo thập phân, phép chia có dư | Đề liên hệ số với tổng các chữ số của chính nó | Đặt ẩn cho chữ số, viết hai biểu thức, lập bảng thử | a × 10 + b − (a + b) = 9 × a — hiệu luôn là bội của 9. | 80 · 1 dư 9 · 2 dư 1 · 40… |
@@ -366,8 +366,8 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 |---|---|---|
 | I.1 | Có 3 áo và 4 quần, có bao nhiêu cách chọn một bộ? | 12 cách |
 | I.2 | 3 450 kg = … tấn … tạ … kg | 3 tấn 4 tạ 50 kg |
-| I.3 | So sánh: 3 phần 5 … 3 phần 7 | &gt; |
-| I.4 | So sánh: 0,5 … 0,45 | &gt; |
+| I.3 | So sánh: 3 phần 5 … 3 phần 7 | > |
+| I.4 | So sánh: 0,5 … 0,45 | > |
 | I.5 | Rút gọn 18 phần 24. | 3 phần 4 |
 | II.1 | Tính: 2 phần 3 + 1 phần 6 | 5 phần 6 |
 | II.2 | Hai lớp có 90 quyển sách, lớp A nhiều hơn lớp B 10 quyển. Mỗi lớp có mấy quyển? | 50 và 40 |
@@ -384,7 +384,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | IV.3 | Tính: (1 phần 2 + 1 phần 3) × 6 phần 5 | 1 |
 | IV.4 | Dãy cách đều 10 số hạng, đầu 5, cuối 50. Tổng bằng bao nhiêu? | 275 |
 | IV.5 | Trồng cây hai bên một đoạn đường dài 20 m, cách nhau 4 m, trồng cả hai đầu, mỗi bên cần mấy cây? | 6 cây |
-| V.1 | So sánh: 5 phần 6 … 7 phần 8 | &lt; |
+| V.1 | So sánh: 5 phần 6 … 7 phần 8 | < |
 | V.2 | Hình tròn bán kính 5 cm nội tiếp hình vuông. Diện tích phần ngoài hình tròn bằng bao nhiêu? | 21,5 cm² |
 | V.3 | 6 người làm xong trong 10 ngày. Thêm 4 người thì sớm hơn mấy ngày? | 4 ngày |
 | V.4 | Số 27 gấp mấy lần tổng hai chữ số của nó? | 3 lần |

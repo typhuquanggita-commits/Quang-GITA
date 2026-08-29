@@ -338,7 +338,7 @@ f) Lỗi nào dễ mắc ở đề này?
 **Lỗi thường gặp:** Kể thiếu dạng bài. Phòng: Đếm số dạng rồi mới kể; kể xong đếm lại.
 
 ### Bài A.2
-**Đáp số:** a) Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = · b) Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” · c) Câu hỏi “là số nguyên tố hay hợp số” · d) Tổng gồm các số tròn chục, tròn trăm, tròn nghìn… · e) Yêu cầu “có mấy chữ số”, “tổng các chữ số”
+**Đáp số:** a) Dấu … giữa hai số, yêu cầu điền <, >, = · b) Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” · c) Câu hỏi “là số nguyên tố hay hợp số” · d) Tổng gồm các số tròn chục, tròn trăm, tròn nghìn… · e) Yêu cầu “có mấy chữ số”, “tổng các chữ số”
 **Hướng giải:** Cột “Dấu hiệu nhận biết” lấy từ bảng phân tích chuyên sâu của các phiếu đã học. Điền xong, đọc ngang từng hàng để thấy mạch từ đề bài tới lời giải.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Bảng chỉ có giá trị khi **đọc ngang được từng hàng**.
 **Lỗi thường gặp:** Điền từng cột rời rạc, không đối chiếu ngang. Phòng: Điền xong thì đọc lại theo hàng, mỗi hàng phải thành một câu có nghĩa.

@@ -34,7 +34,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài I.2** — a) 7 chữ số, tổng 36 · b) 7 chữ số, tổng 35 · c) 7 chữ số, tổng 34 · d) 7 chữ số, tổng 22 · e) 7 chữ số, tổng 31 · f) 7 chữ số, tổng 30
 - **Bài I.3** — a) chữ số 2, giá trị 2 000 000 · b) chữ số 0, giá trị 0 · c) chữ số 2, giá trị 20 000 · d) chữ số 3, giá trị 3 000 · e) chữ số 1, giá trị 100 · f) chữ số 1, giá trị 10 · g) chữ số 7, giá trị 7
 - **Bài I.4** — a) 6 277 594 · b) 3 954 595 · c) 4 896 530 · d) 1 592 469 · e) 7 518 275 · f) 5 970 518
-- **Bài I.5** — a) &gt; · b) &lt; · c) &gt; · d) &lt; · e) &gt;
+- **Bài I.5** — a) > · b) < · c) > · d) < · e) >
 
 **Phần II**
 
@@ -98,7 +98,7 @@ Mỗi số hạng cho biết một hàng. Xếp các chữ số vào đúng hàn
 
 *Điểm chốt:* Hàng khuyết trong tổng vẫn phải có chữ số **0** trong số viết ra.
 
-### Bài I.5 — Điền dấu &lt;, &gt;, = thích hợp
+### Bài I.5 — Điền dấu <, >, = thích hợp
 
 So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 
@@ -236,7 +236,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | I.2 | Đếm chữ số, tính tổng chữ số | Cấu tạo số, tổng chữ số | Yêu cầu “có mấy chữ số”, “tổng các chữ số” | Tách lớp để đếm; cộng rời từng chữ số | Ghép cặp các chữ số cộng lại tròn 10 rồi cộng nhanh. | 7 chữ số, tổng 36 · 7 chữ số, tổng 35 · 7 chữ số, tổng 34 · 7 chữ số, tổng 22… |
 | I.3 | Xác định chữ số và giá trị chữ số theo hàng | Cấu tạo thập phân của số tự nhiên | Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” | Đánh số hàng từ phải sang trái rồi tra bảng hàng | Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị. | chữ số 2, giá trị 2 000 000 · chữ số 0, giá trị 0 · chữ số 2, giá trị 20 000 · chữ số 3, giá trị 3 000… |
 | I.4 | Viết số từ dạng tổng theo hàng | Cấu tạo thập phân của số tự nhiên | Tổng gồm các số tròn chục, tròn trăm, tròn nghìn… | Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết | Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số. | 6 277 594 · 3 954 595 · 4 896 530 · 1 592 469… |
-| I.5 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | &gt; · &lt; · &gt; · &lt;… |
+| I.5 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | > · < · > · <… |
 | II.1 | Kiểm tra chia hết bằng dấu hiệu | Dấu hiệu chia hết cho 2, 3, 5, 9 | Câu hỏi “có chia hết cho … không” | Chọn đúng dấu hiệu theo số chia rồi kiểm tra | Cộng chữ số theo cặp tròn 9, phần dư chính là số dư khi chia 9. | không (chữ số tận cùng 4) · có (tổng chữ số 18) · không (tổng chữ số 11) · không (tổng chữ số 13)… |
 | II.2 | Điền chữ số theo điều kiện chia hết | Dấu hiệu chia hết, chữ số hàng cao nhất khác 0 | Số có ô trống hoặc dấu *, kèm điều kiện chia hết | Dùng dấu hiệu để lập điều kiện cho dấu * rồi thử 0–9 | Với 3 và 9: tính tổng các chữ số đã biết một lần duy nhất, rồi tìm phần bù cần thêm. | 4 · 2 · 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 · 1, 4, 7… |
 | II.3 | Đếm số hạng của dãy cách đều theo điều kiện chia hết | Dãy số cách đều, dấu hiệu chia hết | Cụm “có bao nhiêu số … từ … đến …” | Tìm số đầu, số cuối hợp lệ rồi dùng công thức đếm | Số các số chia hết cho d từ 1 đến n bằng phần nguyên của n : d, nên đếm từ a đến b là b : d trừ đi (a − 1) : d. | 106 · 257 · 92 · 91… |
@@ -368,7 +368,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | I.2 | Số 40 506 có mấy chữ số và tổng các chữ số bằng bao nhiêu? | 5 chữ số, tổng 15 |
 | I.3 | Chữ số hàng chục của số 2 023 117 có giá trị bao nhiêu? | 10 |
 | I.4 | Viết số gồm tổng: 30 000 + 400 + 7 | 30 407 |
-| I.5 | Điền dấu: 7 857 901 … 7 857 902 | &lt; |
+| I.5 | Điền dấu: 7 857 901 … 7 857 902 | < |
 | II.1 | Số 894 có chia hết cho 9 không? | không |
 | II.2 | Tìm chữ số thay cho * để 12* chia hết cho 5. | 0, 5 |
 | II.3 | Có bao nhiêu số chẵn từ 10 đến 40? | 16 |

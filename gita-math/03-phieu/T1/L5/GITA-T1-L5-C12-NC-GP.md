@@ -32,8 +32,8 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài I.1** — a) 1 phần 5 · b) 9 phần 10 · c) 1 phần 2 · d) 1 phần 12 · e) 1 · f) 4 phần 5 · g) 9 phần 11 · h) 2 phần 5
 - **Bài I.2** — a) số lớn 534, số bé 268 · b) số lớn 776, số bé 602 · c) số lớn 104, số bé 54 · d) số lớn 652, số bé 478 · e) số lớn 947, số bé 925 · f) số lớn 691, số bé 577 · g) số lớn 409, số bé 241
-- **Bài I.3** — a) &gt; · b) &lt; · c) = · d) = · e) &gt;
-- **Bài I.4** — a) &gt; · b) 0,32 · c) 2 · d) 0,04 · e) 0 · f) &gt; · g) &gt;
+- **Bài I.3** — a) > · b) < · c) = · d) = · e) >
+- **Bài I.4** — a) > · b) 0,32 · c) 2 · d) 0,04 · e) 0 · f) > · g) >
 - **Bài I.5** — a) 102 · b) 131 · c) 175 · d) 39 · e) 40 · f) 42 · g) 188
 
 **Phần II**
@@ -65,7 +65,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài V.1** — a) 6 phần 7 · b) 6 phần 7 · c) 6 phần 7 · d) 10 phần 11 · e) 10 phần 11 · f) 12 phần 13
 - **Bài V.2** — a) 100 000 đồng, không đổi 0 đồng · b) 412 500 đồng, giảm 87 500 đồng · c) 150 000 đồng, giảm 50 000 đồng · d) 275 000 đồng, giảm 225 000 đồng · e) 600 000 đồng, tăng 100 000 đồng · f) 600 000 đồng, tăng 100 000 đồng
 - **Bài V.3** — a) 297 · b) 69 · c) 63 · d) 63 · e) 125 · f) 1 011
-- **Bài V.4** — a) &gt; · b) &lt; · c) &lt; · d) &gt;
+- **Bài V.4** — a) > · b) < · c) < · d) >
 - **Bài V.5** — a) 200,96 cm² · b) 3,44 cm² · c) 690,8 cm² · d) 122,46 cm²
 
 ---
@@ -234,8 +234,8 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 |---|---|---|---|---|---|---|
 | I.1 | Rút gọn phân số | Tính chất cơ bản của phân số | Tử số và mẫu số có ước chung lớn hơn 1 | Chia cả tử và mẫu cho ước chung | Tìm ngay ước chung lớn nhất để rút gọn một lần là xong. | 1 phần 5 · 9 phần 10 · 1 phần 2 · 1 phần 12… |
 | I.2 | Bài toán tổng – hiệu | Công thức tổng – hiệu, sơ đồ đoạn thẳng | Đề cho **tổng** và **hiệu** của hai số | Vẽ sơ đồ, đưa về hai phần bằng nhau | Số lớn và số bé luôn có trung bình cộng bằng nửa tổng. | số lớn 534, số bé 268 · số lớn 776, số bé 602 · số lớn 104, số bé 54 · số lớn 652, số bé 478… |
-| I.3 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | &gt; · &lt; · = · =… |
-| I.4 | Số thập phân — hàng, so sánh, chuyển đổi | Cấu tạo số thập phân, quan hệ phân số – số thập phân | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 | Xét theo hàng từ trái sang phải | Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. | &gt; · 0,32 · 2 · 0,04… |
+| I.3 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | > · < · = · =… |
+| I.4 | Số thập phân — hàng, so sánh, chuyển đổi | Cấu tạo số thập phân, quan hệ phân số – số thập phân | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 | Xét theo hàng từ trái sang phải | Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. | > · 0,32 · 2 · 0,04… |
 | I.5 | Tìm trung bình cộng | Định nghĩa trung bình cộng | Từ khoá “trung bình cộng”, “trung bình mỗi …” | Tổng chia số lượng | Ước lượng: trung bình cộng luôn nằm giữa số bé nhất và số lớn nhất. | 102 · 131 · 175 · 39… |
 | II.1 | Bốn phép tính với số thập phân | Kĩ thuật tính với số thập phân | Các số có dấu phẩy | Chọn quy tắc đặt dấu phẩy theo phép tính | Ước lượng bằng cách làm tròn để kiểm tra vị trí dấu phẩy. | 1,02 · 168,55 · 99,57 · 9,84… |
 | II.2 | Tính nhanh tích, thương nhiều bước | Tính chất giao hoán, kết hợp của phép nhân | Tích có thừa số 25, 125, 50, 20; hoặc chia liên tiếp | Ghép cặp cho tích tròn rồi nhân | Chia liên tiếp cho 4 rồi 25 bằng chia cho 100. | 4 300 · 5 500 · 2 600 · 88 |
@@ -255,7 +255,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | V.1 | Tổng dãy phân số có mẫu là tích hai số liên tiếp | Tách phân số thành hiệu, phép trừ phân số | Mẫu số là 2, 6, 12, 20, 30… (tích hai số liên tiếp) | Tách thành hiệu, khử liên tiếp, giữ lại hai đầu | Kết quả luôn là 1 trừ 1 phần (n + 1), tức là n phần (n + 1). | 6 phần 7 · 6 phần 7 · 6 phần 7 · 10 phần 11… |
 | V.2 | Phần trăm thay đổi nhiều lần | Tỉ số phần trăm, mốc quy chiếu | Hai lần tăng giảm liên tiếp | Tính tuần tự, xác định lại mốc 100% sau mỗi bước | Tăng 20% rồi giảm 20% thì còn 96% giá ban đầu — luôn thấp hơn giá cũ. | 100 000 đồng, không đổi 0 đồng · 412 500 đồng, giảm 87 500 đồng · 150 000 đồng, giảm 50 000 đồng · 275 000 đồng, giảm 225 000 đồng… |
 | V.3 | Đếm chữ số theo nhóm độ dài | Đếm số hạng dãy cách đều, cấu tạo số | Bài toán đánh số trang, đánh số nhà, đánh số vé | Chia nhóm 1 chữ số – 2 chữ số – 3 chữ số rồi nhân và cộng | Sách 100 trang luôn dùng 192 chữ số; nhớ mốc này để kiểm tra nhanh. | 297 · 69 · 63 · 63… |
-| V.4 | So sánh phân số bằng kĩ thuật đặc biệt | Phần bù tới 1, phân số trung gian | Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 | So phần bù; hoặc chèn phân số trung gian | Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. | &gt; · &lt; · &lt; · &gt; |
+| V.4 | So sánh phân số bằng kĩ thuật đặc biệt | Phần bù tới 1, phân số trung gian | Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 | So phần bù; hoặc chèn phân số trung gian | Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. | > · < · < · > |
 | V.5 | Diện tích phần tô màu | Diện tích hình tròn, hình vuông; phép trừ diện tích | Hình gồm nhiều hình lồng nhau, hỏi phần còn lại | Tách thành hiệu các hình cơ bản | Hình tròn nội tiếp hình vuông chiếm khoảng 78,5% diện tích hình vuông. | 200,96 cm² · 3,44 cm² · 690,8 cm² · 122,46 cm² |
 
 ---
@@ -366,8 +366,8 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 |---|---|---|
 | I.1 | Rút gọn 18 phần 24. | 3 phần 4 |
 | I.2 | Tổng hai số là 100, hiệu là 20. Tìm hai số. | 60 và 40 |
-| I.3 | So sánh: 3 phần 5 … 3 phần 7 | &gt; |
-| I.4 | So sánh: 0,5 … 0,45 | &gt; |
+| I.3 | So sánh: 3 phần 5 … 3 phần 7 | > |
+| I.4 | So sánh: 0,5 … 0,45 | > |
 | I.5 | Tìm trung bình cộng của 12, 18 và 30. | 20 |
 | II.1 | Tính: 3,25 × 4 | 13 |
 | II.2 | Tính nhanh: 37 × 25 × 4 | 3 700 |
@@ -387,7 +387,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | V.1 | Tính nhanh: 1 phần 2 + 1 phần 6 + 1 phần 12 | 3 phần 4 |
 | V.2 | Giá 100 000 đồng tăng 10% rồi giảm 10%. Giá cuối là bao nhiêu? | 99 000 đồng |
 | V.3 | Quyển sách 150 trang dùng hết bao nhiêu chữ số? | 342 |
-| V.4 | So sánh: 5 phần 6 … 7 phần 8 | &lt; |
+| V.4 | So sánh: 5 phần 6 … 7 phần 8 | < |
 | V.5 | Hình tròn bán kính 5 cm nội tiếp hình vuông. Diện tích phần ngoài hình tròn bằng bao nhiêu? | 21,5 cm² |
 
 ---

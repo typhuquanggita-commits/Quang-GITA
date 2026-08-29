@@ -31,8 +31,8 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần I**
 
 - **Bài I.1** — a) 83 906 · b) 92 910 · c) 74 416 · d) 95 127 · e) 14 611 828 · f) 17 673 176 · g) 17 904 686 · h) 11 345 817
-- **Bài I.2** — a) 1 · b) 0,2 · c) &gt; · d) 0,5 · e) 1 · f) &lt; · g) &gt;
-- **Bài I.3** — a) &lt; · b) &gt; · c) &lt; · d) &gt; · e) &lt; · f) &gt; · g) &lt;
+- **Bài I.2** — a) 1 · b) 0,2 · c) > · d) 0,5 · e) 1 · f) < · g) >
+- **Bài I.3** — a) < · b) > · c) < · d) > · e) < · f) > · g) <
 - **Bài I.4** — a) 320 000 · b) 5 400 000 · c) 130 000 · d) 66 000 · e) 290 · f) 55 000
 - **Bài I.5** — a) 3 phần 5 · b) 4 phần 11 · c) 8 phần 9 · d) 1 phần 2 · e) 3 · f) 1 phần 2
 
@@ -63,9 +63,9 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần V**
 
 - **Bài V.1** — a) -5 · b) -10 · c) -25 · d) -25
-- **Bài V.2** — a) 676 · b) &lt; · c) 39 · d) 19
+- **Bài V.2** — a) 676 · b) < · c) 39 · d) 19
 - **Bài V.3** — a) 7 ngày · b) 2 ngày · c) 3,33 ngày · d) 6,33 ngày
-- **Bài V.4** — a) &gt; · b) &lt; · c) &gt; · d) &lt; · e) &gt; · f) &lt;
+- **Bài V.4** — a) > · b) < · c) > · d) < · e) > · f) <
 - **Bài V.5** — a) 135 000 đồng, tăng 35 000 đồng · b) 300 000 đồng, giảm 100 000 đồng · c) 270 000 đồng, tăng 70 000 đồng · d) 135 000 đồng, tăng 35 000 đồng
 
 ---
@@ -233,8 +233,8 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
 | I.1 | Nhân, chia số tự nhiên | Kĩ thuật đặt tính nhân, chia | Yêu cầu “đặt tính rồi tính” với phép nhân, chia | Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ chữ số | Kiểm tra kết quả bằng phép tính ngược: thương × số chia = số bị chia. | 83 906 · 92 910 · 74 416 · 95 127… |
-| I.2 | Số thập phân — hàng, so sánh, chuyển đổi | Cấu tạo số thập phân, quan hệ phân số – số thập phân | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 | Xét theo hàng từ trái sang phải | Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. | 1 · 0,2 · &gt; · 0,5… |
-| I.3 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | &lt; · &gt; · &lt; · &gt;… |
+| I.2 | Số thập phân — hàng, so sánh, chuyển đổi | Cấu tạo số thập phân, quan hệ phân số – số thập phân | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 | Xét theo hàng từ trái sang phải | Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. | 1 · 0,2 · > · 0,5… |
+| I.3 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | < · > · < · >… |
 | I.4 | Đổi đơn vị đo | Bảng đơn vị đo độ dài, khối lượng | Dấu … giữa hai đơn vị khác nhau | Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10 | Số bậc chính là số chữ số 0 phải thêm vào (hoặc bớt đi). | 320 000 · 5 400 000 · 130 000 · 66 000… |
 | I.5 | Rút gọn phân số | Tính chất cơ bản của phân số | Tử số và mẫu số có ước chung lớn hơn 1 | Chia cả tử và mẫu cho ước chung | Tìm ngay ước chung lớn nhất để rút gọn một lần là xong. | 3 phần 5 · 4 phần 11 · 8 phần 9 · 1 phần 2… |
 | II.1 | Bốn phép tính với số thập phân | Kĩ thuật tính với số thập phân | Các số có dấu phẩy | Chọn quy tắc đặt dấu phẩy theo phép tính | Ước lượng bằng cách làm tròn để kiểm tra vị trí dấu phẩy. | 92,56 · 3,72 · 683,84 · 90,42… |
@@ -253,9 +253,9 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.4 | Biểu thức phân số nhiều phép tính | Thứ tự thực hiện phép tính, tính chất phân phối | Biểu thức gồm nhiều phân số và nhiều phép tính | Quan sát rút gọn trước, sau đó theo thứ tự thực hiện | Rút gọn chéo tử với mẫu trước khi nhân. | 2 · 41 phần 165 · 63 phần 13 · 684 phần 715… |
 | IV.5 | Tổng các tích có thừa số chung | Nhân một số với một tổng, tổng dãy cách đều | Dãy cộng gồm nhiều tích cùng một thừa số | Đặt thừa số chung → tính tổng trong ngoặc bằng công thức | 1 + 2 + … + 100 = 5 050; nhớ vài mốc để nhân ngay. | 2 275 · 8 925 · 630 · 1 470 |
 | V.1 | Tổng dãy cộng trừ xen kẽ | Ghép cặp, tính chất kết hợp | Dấu cộng và trừ xen kẽ đều đặn | Ghép cặp, đếm số cặp, xử lí phần dư | Dãy 1 − 2 + 3 − … với n chẵn bằng −n : 2; với n lẻ bằng (n + 1) : 2. | -5 · -10 · -25 · -25 |
-| V.2 | Tính, so sánh tích bằng kĩ thuật tách – bù | Nhân một số với một tổng, một hiệu | Các thừa số hơn kém nhau rất ít | Quy về số gốc chung, so phần chênh | Với hai tích có tổng hai thừa số bằng nhau, tích nào có hai thừa số gần nhau hơn thì lớn hơn. | 676 · &lt; · 39 · 19 |
+| V.2 | Tính, so sánh tích bằng kĩ thuật tách – bù | Nhân một số với một tổng, một hiệu | Các thừa số hơn kém nhau rất ít | Quy về số gốc chung, so phần chênh | Với hai tích có tổng hai thừa số bằng nhau, tích nào có hai thừa số gần nhau hơn thì lớn hơn. | 676 · < · 39 · 19 |
 | V.3 | Tỉ lệ nghịch, so sánh hai phương án | Đại lượng tỉ lệ nghịch, tổng số ngày công | Thay đổi số người, hỏi thay đổi thời gian | Bám vào tổng số ngày công không đổi | Số người tăng gấp k lần thì số ngày giảm còn 1 phần k. | 7 ngày · 2 ngày · 3,33 ngày · 6,33 ngày |
-| V.4 | So sánh phân số bằng kĩ thuật đặc biệt | Phần bù tới 1, phân số trung gian | Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 | So phần bù; hoặc chèn phân số trung gian | Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. | &gt; · &lt; · &gt; · &lt;… |
+| V.4 | So sánh phân số bằng kĩ thuật đặc biệt | Phần bù tới 1, phân số trung gian | Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 | So phần bù; hoặc chèn phân số trung gian | Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. | > · < · > · <… |
 | V.5 | Phần trăm thay đổi nhiều lần | Tỉ số phần trăm, mốc quy chiếu | Hai lần tăng giảm liên tiếp | Tính tuần tự, xác định lại mốc 100% sau mỗi bước | Tăng 20% rồi giảm 20% thì còn 96% giá ban đầu — luôn thấp hơn giá cũ. | 135 000 đồng, tăng 35 000 đồng · 300 000 đồng, giảm 100 000 đồng · 270 000 đồng, tăng 70 000 đồng · 135 000 đồng, tăng 35 000 đồng |
 
 ---
@@ -365,8 +365,8 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | Bài | Đề tương tự | Đáp số |
 |---|---|---|
 | I.1 | Đặt tính rồi tính: 3 045 × 24 | 73 080 |
-| I.2 | So sánh: 0,5 … 0,45 | &gt; |
-| I.3 | So sánh: 3 phần 5 … 3 phần 7 | &gt; |
+| I.2 | So sánh: 0,5 … 0,45 | > |
+| I.3 | So sánh: 3 phần 5 … 3 phần 7 | > |
 | I.4 | 5 km = … m | 5 000 |
 | I.5 | Rút gọn 18 phần 24. | 3 phần 4 |
 | II.1 | Tính: 3,25 × 4 | 13 |
@@ -385,9 +385,9 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | IV.4 | Tính: (1 phần 2 + 1 phần 3) × 6 phần 5 | 1 |
 | IV.5 | Tính nhanh: 5 × 1 + 5 × 2 + … + 5 × 10 | 275 |
 | V.1 | Tính nhanh: 1 − 2 + 3 − 4 + … + 9 − 10 | −5 |
-| V.2 | So sánh: 99 × 101 … 100 × 100 | &lt; |
+| V.2 | So sánh: 99 × 101 … 100 × 100 | < |
 | V.3 | 6 người làm xong trong 10 ngày. Thêm 4 người thì sớm hơn mấy ngày? | 4 ngày |
-| V.4 | So sánh: 5 phần 6 … 7 phần 8 | &lt; |
+| V.4 | So sánh: 5 phần 6 … 7 phần 8 | < |
 | V.5 | Giá 100 000 đồng tăng 10% rồi giảm 10%. Giá cuối là bao nhiêu? | 99 000 đồng |
 
 ---

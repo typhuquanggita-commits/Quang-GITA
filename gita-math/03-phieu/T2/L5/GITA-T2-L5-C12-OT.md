@@ -65,7 +65,7 @@ f) Trong sân có 41 chiếc xe đạp và xe ô tô, đếm được tất cả
 
 ### Bài 2. (4 điểm) So sánh hai số đo khác đơn vị
 
-Điền dấu &lt;, &gt;, = thích hợp.
+Điền dấu <, >, = thích hợp.
 
 a) 14 yến … 4 987 kg
 b) 41 hm … 6 607 mm
@@ -365,7 +365,7 @@ f) Cột 6 — Kết quả?
 **Lỗi thường gặp:** Chia số bánh thiếu cho số bánh của loại nhiều hơn. Phòng: Thử lại: nhân ngược ra tổng số bánh, phải khớp với đề.
 
 ### Bài I.2
-**Đáp số:** a) &lt; · b) &gt; · c) &gt; · d) &lt; · e) &lt; · f) &gt; · g) &gt;
+**Đáp số:** a) < · b) > · c) > · d) < · e) < · f) > · g) >
 **Hướng giải:** Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.

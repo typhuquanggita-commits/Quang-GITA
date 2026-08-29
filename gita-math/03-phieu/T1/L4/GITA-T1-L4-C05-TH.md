@@ -133,7 +133,7 @@ e) Năm 1990 có phải năm nhuận không?
 
 ### Bài 3. (4 điểm) So sánh hai số đo khác đơn vị
 
-Điền dấu &lt;, &gt;, = thích hợp.
+Điền dấu <, >, = thích hợp.
 
 a) 68 dm² … 4 577 m²
 b) 2 mm … 8 054 m
@@ -178,7 +178,7 @@ f) Một xe chở 26 bao đường, mỗi bao 25 kg. Hỏi xe chở bao nhiêu t
 
 ### Bài 2. (5 điểm) So sánh hai biểu thức mà không cần tính
 
-Điền dấu &lt;, &gt;, = và giải thích ngắn.
+Điền dấu <, >, = và giải thích ngắn.
 
 a) 853 × 3 … 853 × 4
 b) 391 × 21 … 899 × 21
@@ -380,7 +380,7 @@ f) 1 − 2 + 3 − 4 + 5 − 6 + … − 50
 **Lỗi thường gặp:** Coi mọi năm chia hết cho 4 đều là năm nhuận. Phòng: Gặp năm tròn trăm thì kiểm tra thêm điều kiện chia hết cho 400.
 
 ### Bài II.3
-**Đáp số:** a) &lt; · b) &lt; · c) &lt; · d) &lt;
+**Đáp số:** a) < · b) < · c) < · d) <
 **Hướng giải:** Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.
@@ -404,7 +404,7 @@ f) 1 − 2 + 3 − 4 + 5 − 6 + … − 50
 **Lỗi thường gặp:** Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. Phòng: Khoanh tròn đơn vị trong câu hỏi trước khi đặt bút.
 
 ### Bài III.2
-**Đáp số:** a) &lt; · b) &lt; · c) &gt; · d) &lt; · e) &lt; · f) &lt;
+**Đáp số:** a) < · b) < · c) > · d) < · e) < · f) <
 **Hướng giải:** Khi hai biểu thức có phần giống nhau, chỉ cần so sánh phần khác nhau: cùng cộng thêm một số thì số nào lớn hơn vẫn lớn hơn; cùng nhân với một số khác 0 cũng vậy.
 **Nhãn tư duy:** TD5, TD2. Điểm chốt: Che phần **giống nhau** đi, chỉ so phần khác nhau.
 **Lỗi thường gặp:** Tính hết cả hai vế, vừa lâu vừa dễ sai. Phòng: Dùng bút gạch bỏ phần giống nhau ở hai vế trước khi so sánh.

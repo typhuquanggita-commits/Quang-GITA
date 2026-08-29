@@ -31,9 +31,9 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần A**
 
 - **Bài A.1** — a) 4 208 726 · b) 1 330 749 · c) 1 169 621 · d) 9 791 410 · e) 5 128 565
-- **Bài A.2** — a) &lt; · b) &lt; · c) &gt; · d) &lt; · e) &gt; · f) &gt; · g) &gt; · h) &lt;
+- **Bài A.2** — a) < · b) < · c) > · d) < · e) > · f) > · g) > · h) <
 - **Bài A.3** — a) 2 phần 5 · b) 3 · c) 1 phần 3 · d) 6 phần 7 · e) 1
-- **Bài A.4** — a) 0,3 · b) 7 · c) &gt; · d) 8 · e) &lt; · f) 0,301 · g) &gt;
+- **Bài A.4** — a) 0,3 · b) 7 · c) > · d) 8 · e) < · f) 0,301 · g) >
 - **Bài A.5** — a) 2 tấn 5 tạ 48 kg · b) 2 654 · c) 6 822 · d) 1 tấn 5 tạ 97 kg · e) 6 tấn 6 tạ 83 kg · f) 5 739
 
 **Phần B**
@@ -233,9 +233,9 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
 | A.1 | Viết số từ dạng tổng theo hàng | Cấu tạo thập phân của số tự nhiên | Tổng gồm các số tròn chục, tròn trăm, tròn nghìn… | Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết | Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số. | 4 208 726 · 1 330 749 · 1 169 621 · 9 791 410… |
-| A.2 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | &lt; · &lt; · &gt; · &lt;… |
+| A.2 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | < · < · > · <… |
 | A.3 | Rút gọn phân số | Tính chất cơ bản của phân số | Tử số và mẫu số có ước chung lớn hơn 1 | Chia cả tử và mẫu cho ước chung | Tìm ngay ước chung lớn nhất để rút gọn một lần là xong. | 2 phần 5 · 3 · 1 phần 3 · 6 phần 7… |
-| A.4 | Số thập phân — hàng, so sánh, chuyển đổi | Cấu tạo số thập phân, quan hệ phân số – số thập phân | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 | Xét theo hàng từ trái sang phải | Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. | 0,3 · 7 · &gt; · 8… |
+| A.4 | Số thập phân — hàng, so sánh, chuyển đổi | Cấu tạo số thập phân, quan hệ phân số – số thập phân | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 | Xét theo hàng từ trái sang phải | Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. | 0,3 · 7 · > · 8… |
 | A.5 | Số đo có nhiều đơn vị | Bảng đơn vị khối lượng | Số đo viết dưới dạng “… tấn … tạ … kg” | Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư | Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ. | 2 tấn 5 tạ 48 kg · 2 654 · 6 822 · 1 tấn 5 tạ 97 kg… |
 | B.1 | Định vị chương trong hệ thống | Tên chương, nhóm chuyên đề, số dạng bài | Phần đầu phiếu ghi rõ tên cụm và nhóm chuyên đề | Đọc phần đầu phiếu rồi trả lời theo đúng tên gọi | Ghi tên chương ra góc vở, mỗi lần mở vở là đọc lại một lần. | Phân số ẩn, phần trăm trong biểu đồ và dạng đề chuyên · H — Phân số – Số thập phân – Tỉ số phần trăm – Thống kê · 4 · ở mọi bài thuộc phân số – số thập phân – tỉ số phần trăm – thống kê, vì các chương sau đều dùng lại nền này… |
 | B.2 | Liệt kê dạng bài của chương | Danh mục dạng bài | Bảng dạng bài ở phiếu Dạng bài & Đọc vị của cùng cụm | Chép theo bảng, giữ nguyên thứ tự | Học thuộc số lượng dạng bài trước, tên từng dạng sau. | Bài toán về phân số ẩn trong bài toán có lời văn · Bài toán tỉ số phần trăm trong biểu đồ · Bài toán phân số và phần trăm dạng đề chuyên · Tổng ôn phân số, số thập phân và phần trăm nâng cao |
@@ -365,9 +365,9 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | Bài | Đề tương tự | Đáp số |
 |---|---|---|
 | A.1 | Viết số gồm tổng: 30 000 + 400 + 7 | 30 407 |
-| A.2 | So sánh: 3 phần 5 … 3 phần 7 | &gt; |
+| A.2 | So sánh: 3 phần 5 … 3 phần 7 | > |
 | A.3 | Rút gọn 18 phần 24. | 3 phần 4 |
-| A.4 | So sánh: 0,5 … 0,45 | &gt; |
+| A.4 | So sánh: 0,5 … 0,45 | > |
 | A.5 | 3 450 kg = … tấn … tạ … kg | 3 tấn 4 tạ 50 kg |
 | B.1 | Chương “Phân số ẩn, phần trăm trong biểu đồ và dạng đề chuyên” thuộc nhóm chuyên đề nào? | H — Phân số – Số thập phân – Tỉ số phần trăm – Thống kê |
 | B.2 | Chương này có mấy dạng bài chính? | 4 |

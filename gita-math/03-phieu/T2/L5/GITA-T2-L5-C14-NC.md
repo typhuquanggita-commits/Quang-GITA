@@ -134,7 +134,7 @@ f) 47 ngày bằng bao nhiêu tuần lễ và mấy ngày?
 
 ### Bài 3. (4 điểm) So sánh hai số đo khác đơn vị
 
-Điền dấu &lt;, &gt;, = thích hợp.
+Điền dấu <, >, = thích hợp.
 
 a) 13 g … 6 477 kg
 b) 38 km² … 2 760 m²
@@ -377,7 +377,7 @@ e) Vừa gà vừa chó có 37 con, đếm được tất cả 92 chân. Hỏi c
 **Lỗi thường gặp:** Coi mọi năm chia hết cho 4 đều là năm nhuận. Phòng: Gặp năm tròn trăm thì kiểm tra thêm điều kiện chia hết cho 400.
 
 ### Bài II.3
-**Đáp số:** a) &lt; · b) &gt; · c) &lt; · d) &lt; · e) &lt; · f) &lt; · g) &lt;
+**Đáp số:** a) < · b) > · c) < · d) < · e) < · f) < · g) <
 **Hướng giải:** Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.

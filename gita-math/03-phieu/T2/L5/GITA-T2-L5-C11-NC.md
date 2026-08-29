@@ -81,7 +81,7 @@ c) Viết số gồm tổng: 2 000 000 + 800 000 + 8 000 + 700 + 80 + 1
 d) Viết số gồm tổng: 7 000 000 + 100 000 + 30 000 + 1 000 + 800 + 90
 e) Viết số gồm tổng: 8 000 000 + 200 000 + 50 000 + 2 000 + 20 + 7
 
-### Bài 4. (3 điểm) Điền dấu &lt;, &gt;, = thích hợp
+### Bài 4. (3 điểm) Điền dấu <, >, = thích hợp
 
 Điền dấu thích hợp vào chỗ chấm.
 
@@ -355,7 +355,7 @@ e) Một quyển sách có 35 trang, đánh số trang từ 1. Phải dùng tấ
 **Lỗi thường gặp:** Bỏ qua hàng khuyết nên số viết ra bị ngắn đi một chữ số. Phòng: Kẻ sẵn các ô hàng rồi mới điền chữ số vào ô tương ứng.
 
 ### Bài I.4
-**Đáp số:** a) &gt; · b) &gt; · c) &lt; · d) &gt; · e) &gt; · f) &gt; · g) &lt; · h) &lt;
+**Đáp số:** a) > · b) > · c) < · d) > · e) > · f) > · g) < · h) <
 **Hướng giải:** So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Đếm số chữ số **trước**, chỉ khi bằng nhau mới so từng hàng.
 **Lỗi thường gặp:** So từ hàng đơn vị (phải sang trái) nên kết luận sai. Phòng: Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái.

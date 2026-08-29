@@ -57,14 +57,14 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài D.1** — a) 15 số, bé nhất là 270 · b) 31 số, bé nhất là 252 · c) 23 số, bé nhất là 60 · d) 5 số, bé nhất là 135 · e) 61 số, bé nhất là 54
 - **Bài D.2** — a) 1 · b) 4 · c) 4 · d) 4 · e) 6 · f) 0
 - **Bài D.3** — a) 73 · b) 366 · c) 452 · d) 201 · e) 233 · f) 215
-- **Bài D.4** — a) &gt; · b) &lt; · c) &gt; · d) &lt; · e) &lt; · f) &gt;
+- **Bài D.4** — a) > · b) < · c) > · d) < · e) < · f) >
 - **Bài D.5** — a) 98 · b) 57 · c) hơn 7 đơn vị · d) hơn -2 đơn vị · e) hơn -3 đơn vị · f) 72
 
 **Phần E**
 
 - **Bài E.1** — a) Tìm số thoả nhiều điều kiện chia có dư · b) Hai điều kiện “chia cho … dư …” đi cùng nhau · c) Phép chia có dư, dãy cách đều · d) Lập dãy theo điều kiện chặt hơn rồi lọc theo điều kiện còn lại · e) Chọn điều kiện có số chia **lớn hơn** để lập dãy — dãy thưa hơn nên thử nhanh hơn. · f) Thử từng số từ 1 trở đi nên quá lâu và dễ bỏ sót.
 - **Bài E.2** — a) Xác định chữ số và giá trị chữ số theo hàng · b) Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” · c) Cấu tạo thập phân của số tự nhiên · d) Đánh số hàng từ phải sang trái rồi tra bảng hàng · e) Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị. · f) Đếm hàng từ trái sang phải nên lệch hàng.
-- **Bài E.3** — a) So sánh hai số tự nhiên · b) Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = · c) Thứ tự trong tập số tự nhiên · d) Đếm chữ số → so từng hàng từ trái sang phải · e) Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. · f) So từ hàng đơn vị (phải sang trái) nên kết luận sai.
+- **Bài E.3** — a) So sánh hai số tự nhiên · b) Dấu … giữa hai số, yêu cầu điền <, >, = · c) Thứ tự trong tập số tự nhiên · d) Đếm chữ số → so từng hàng từ trái sang phải · e) Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. · f) So từ hàng đơn vị (phải sang trái) nên kết luận sai.
 - **Bài E.4** — a) Làm tròn số tự nhiên · b) Cụm từ “làm tròn đến hàng …” · c) Quy tắc làm tròn, giá trị hàng · d) Gạch ngăn hàng → xét chữ số liền sau → giữ nguyên hoặc thêm 1 · e) Che toàn bộ phần đuôi sau nét gạch, chỉ để lộ đúng một chữ số. · f) Nhìn nhầm sang chữ số ở hàng cần làm tròn thay vì hàng liền sau nó.
 - **Bài E.5** — a) Xét số dư của tổng · b) Đề hỏi chia hết hay số dư của một tổng dài · c) Tính chất số dư của tổng · d) Rút gọn từng số hạng về số dư rồi cộng · e) Với d = 9, số dư của một số bằng số dư của tổng các chữ số của nó. · f) Cộng hết cả dãy rồi mới chia, mất thời gian và dễ sai.
 
@@ -250,11 +250,11 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | D.1 | Đếm số chia hết đồng thời cho nhiều số | Bội chung nhỏ nhất, dãy số cách đều | Cụm “vừa chia hết cho … vừa chia hết cho …” | Quy về một số chia duy nhất là BCNN rồi đếm | Chia hết cho 2 và 5 thì tận cùng là 0; chia hết cho 2 và 3 thì chia hết cho 6. | 15 số, bé nhất là 270 · 31 số, bé nhất là 252 · 23 số, bé nhất là 60 · 5 số, bé nhất là 135… |
 | D.2 | Tìm chữ số tận cùng của một phép tính | Tính chất chữ số tận cùng | Câu hỏi chỉ hỏi “chữ số tận cùng”, không hỏi kết quả | Rút gọn về chữ số tận cùng rồi tính | Với phép trừ, nếu chữ số cuối của số bị trừ nhỏ hơn thì mượn 10 rồi trừ. | 1 · 4 · 4 · 4… |
 | D.3 | Dãy số tự nhiên liên tiếp có tổng cho trước | Trung bình cộng, dãy cách đều | Cụm “… số tự nhiên liên tiếp có tổng bằng …” | Tìm số giữa bằng phép chia rồi suy ra hai đầu dãy | Tổng của n số liên tiếp (n lẻ) luôn chia hết cho n. | 73 · 366 · 452 · 201… |
-| D.4 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | &gt; · &lt; · &gt; · &lt;… |
+| D.4 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | > · < · > · <… |
 | D.5 | Tìm số theo điều kiện của các chữ số | Cấu tạo thập phân, bài toán tổng – hiệu | Đề cho quan hệ giữa các chữ số chứ không cho số | Đặt ẩn cho từng chữ số, viết số theo cấu tạo, giải hệ điều kiện | Đổi chỗ hai chữ số của số có hai chữ số thì hiệu luôn bằng 9 lần hiệu hai chữ số. | 98 · 57 · hơn 7 đơn vị · hơn -2 đơn vị… |
 | E.1 | Tìm số thoả nhiều điều kiện chia có dư | Phép chia có dư, dãy cách đều | Hai điều kiện “chia cho … dư …” đi cùng nhau | Lập dãy theo điều kiện chặt hơn rồi lọc theo điều kiện còn lại | Chọn điều kiện có số chia **lớn hơn** để lập dãy — dãy thưa hơn nên thử nhanh hơn. | Tìm số thoả nhiều điều kiện chia có dư · Hai điều kiện “chia cho … dư …” đi cùng nhau · Phép chia có dư, dãy cách đều · Lập dãy theo điều kiện chặt hơn rồi lọc theo điều kiện còn lại… |
 | E.2 | Xác định chữ số và giá trị chữ số theo hàng | Cấu tạo thập phân của số tự nhiên | Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” | Đánh số hàng từ phải sang trái rồi tra bảng hàng | Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị. | Xác định chữ số và giá trị chữ số theo hàng · Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” · Cấu tạo thập phân của số tự nhiên · Đánh số hàng từ phải sang trái rồi tra bảng hàng… |
-| E.3 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | So sánh hai số tự nhiên · Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = · Thứ tự trong tập số tự nhiên · Đếm chữ số → so từng hàng từ trái sang phải… |
+| E.3 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | So sánh hai số tự nhiên · Dấu … giữa hai số, yêu cầu điền <, >, = · Thứ tự trong tập số tự nhiên · Đếm chữ số → so từng hàng từ trái sang phải… |
 | E.4 | Làm tròn số tự nhiên | Quy tắc làm tròn, giá trị hàng | Cụm từ “làm tròn đến hàng …” | Gạch ngăn hàng → xét chữ số liền sau → giữ nguyên hoặc thêm 1 | Che toàn bộ phần đuôi sau nét gạch, chỉ để lộ đúng một chữ số. | Làm tròn số tự nhiên · Cụm từ “làm tròn đến hàng …” · Quy tắc làm tròn, giá trị hàng · Gạch ngăn hàng → xét chữ số liền sau → giữ nguyên hoặc thêm 1… |
 | E.5 | Xét số dư của tổng | Tính chất số dư của tổng | Đề hỏi chia hết hay số dư của một tổng dài | Rút gọn từng số hạng về số dư rồi cộng | Với d = 9, số dư của một số bằng số dư của tổng các chữ số của nó. | Xét số dư của tổng · Đề hỏi chia hết hay số dư của một tổng dài · Tính chất số dư của tổng · Rút gọn từng số hạng về số dư rồi cộng… |
 
@@ -382,11 +382,11 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | D.1 | Có bao nhiêu số từ 1 đến 100 vừa chia hết cho 2 vừa chia hết cho 5? | 10 |
 | D.2 | Tích 137 × 46 có chữ số tận cùng là chữ số nào? | 2 |
 | D.3 | Tổng của 5 số tự nhiên liên tiếp bằng 100. Số bé nhất là số nào? | 18 |
-| D.4 | So sánh: 234 × 7 … 234 × 8 | &lt; |
+| D.4 | So sánh: 234 × 7 … 234 × 8 | < |
 | D.5 | Tìm số có hai chữ số, tổng hai chữ số bằng 11, hiệu bằng 3. | 74 |
 | E.1 | Tìm số bé nhất chia cho 5 dư 2 và chia cho 3 dư 1. | 7 |
 | E.2 | Chữ số hàng chục của số 371 679 có giá trị bao nhiêu? | 70 |
-| E.3 | Điền dấu: 952 907 … 952 908 | &lt; |
+| E.3 | Điền dấu: 952 907 … 952 908 | < |
 | E.4 | Làm tròn 4 762 đến hàng trăm. | 4 800 |
 | E.5 | Tổng 123 + 234 + 345 chia cho 9 dư mấy? | dư 0 |
 

@@ -49,7 +49,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài C.1** — a) có (chữ số tận cùng 6) · b) không (tổng chữ số 8) · c) có (chữ số tận cùng 8) · d) có (chữ số tận cùng 8) · e) không (chữ số tận cùng 7) · f) không (chữ số tận cùng 3)
 - **Bài C.2** — a) 31 · b) không · c) 5 tuần 5 ngày · d) XX
 - **Bài C.3** — a) 6 ngày · b) 6 ngày · c) 24 ngày · d) 24 ngày · e) 16 ngày · f) 8 ngày
-- **Bài C.4** — a) &gt; · b) &lt; · c) &lt; · d) &lt; · e) &lt; · f) &lt; · g) &gt;
+- **Bài C.4** — a) > · b) < · c) < · d) < · e) < · f) < · g) >
 - **Bài C.5** — a) 34 kg · b) 187 kg · c) 56 kg · d) 130 kg
 
 **Phần D**
@@ -245,7 +245,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | C.1 | Kiểm tra chia hết bằng dấu hiệu | Dấu hiệu chia hết cho 2, 3, 5, 9 | Câu hỏi “có chia hết cho … không” | Chọn đúng dấu hiệu theo số chia rồi kiểm tra | Cộng chữ số theo cặp tròn 9, phần dư chính là số dư khi chia 9. | có (chữ số tận cùng 6) · không (tổng chữ số 8) · có (chữ số tận cùng 8) · có (chữ số tận cùng 8)… |
 | C.2 | Lịch và đơn vị thời gian lớn | Số ngày các tháng, năm nhuận, thế kỉ | Đề hỏi về tháng, năm, thế kỉ | Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400 | Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ. | 31 · không · 5 tuần 5 ngày · XX |
 | C.3 | Tỉ lệ nghịch | Đại lượng tỉ lệ nghịch, tổng số ngày công | Số người tăng thì thời gian giảm | Quy về tổng số ngày công rồi chia | Số người gấp đôi thì số ngày giảm một nửa — nhẩm được ngay khi tỉ số đẹp. | 6 ngày · 6 ngày · 24 ngày · 24 ngày… |
-| C.4 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &gt; · &lt; · &lt; · &lt;… |
+| C.4 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | > · < · < · <… |
 | C.5 | Ba dạng bài trung bình cộng | Quan hệ tổng – số lượng – trung bình cộng | Cụm “trung bình mỗi …” | Đi qua tổng làm trung gian | Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng. | 34 kg · 187 kg · 56 kg · 130 kg |
 | D.1 | Đếm số lần xuất hiện của một chữ số | Dãy cách đều, cấu tạo số | Câu hỏi “chữ số … xuất hiện bao nhiêu lần” | Đếm theo từng hàng rồi cộng | Từ 1 đến 100, mỗi chữ số từ 1 đến 9 xuất hiện đúng 20 lần (riêng chữ số 1 là 21 lần vì có số 100). | 20 · 60 · 20 · 31… |
 | D.2 | Tìm x nhiều bước có ngoặc | Thứ tự thực hiện phép tính, quan hệ thành phần | x nằm trong ngoặc, ngoài ngoặc còn phép tính khác | Bóc lớp từ ngoài vào trong | Thay x tìm được vào đề, tính một lượt để thử lại. | x = 26 · x = 77 · x = 29 · x = 96… |
@@ -377,7 +377,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | C.1 | Số 1 446 có chia hết cho 9 không? | không |
 | C.2 | Năm 1975 thuộc thế kỉ thứ mấy? | XX |
 | C.3 | 6 người làm xong trong 8 ngày. 12 người làm xong trong mấy ngày? | 4 ngày |
-| C.4 | So sánh: 3 kg … 2 500 g | &gt; |
+| C.4 | So sánh: 3 kg … 2 500 g | > |
 | C.5 | Trung bình mỗi ngày bán 40 kg, hỏi 5 ngày bán bao nhiêu? | 200 kg |
 | D.1 | Từ 1 đến 50, chữ số 3 xuất hiện bao nhiêu lần? | 15 |
 | D.2 | Tìm x: (x + 12) × 5 − 8 = 132 | x = 16 |

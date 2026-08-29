@@ -56,7 +56,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài D.1** — a) Kĩ thuật đặt tính nhân, chia · b) Nhân, chia số tự nhiên · c) Yêu cầu “đặt tính rồi tính” với phép nhân, chia · d) Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ chữ số · e) Quên viết chữ số 0 ở thương nên thương thiếu chữ số. · f) 73 080
 - **Bài D.2** — a) Thứ tự thực hiện các phép tính · b) Tính giá trị biểu thức số · c) Biểu thức có nhiều phép tính, có thể có ngoặc · d) Xét ngoặc → nhân chia → cộng trừ, trái sang phải · e) Cộng trước nhân khi biểu thức không có ngoặc. · f) 57
-- **Bài D.3** — a) Tính chất bất đẳng thức trong phép cộng, phép nhân · b) So sánh biểu thức không tính giá trị · c) Hai vế có chung một số hạng hoặc một thừa số · d) Triệt tiêu phần chung rồi so phần riêng · e) Tính hết cả hai vế, vừa lâu vừa dễ sai. · f) &lt;
+- **Bài D.3** — a) Tính chất bất đẳng thức trong phép cộng, phép nhân · b) So sánh biểu thức không tính giá trị · c) Hai vế có chung một số hạng hoặc một thừa số · d) Triệt tiêu phần chung rồi so phần riêng · e) Tính hết cả hai vế, vừa lâu vừa dễ sai. · f) <
 - **Bài D.4** — a) Cấu tạo thập phân · b) Nhân, chia nhẩm với số tròn chục, trăm, nghìn · c) Thừa số hoặc số chia là 10, 100, 1 000 · d) Thêm hoặc bớt chữ số 0 · e) Thêm hoặc bớt thiếu một chữ số 0. · f) 35 800
 - **Bài D.5** — a) Tính chất nhân với 0, phép trừ hai số bằng nhau · b) Tính nhanh nhờ thừa số 0 · c) Trong biểu thức có ngoặc chứa hai số giống nhau trừ nhau · d) Quét tìm cụm bằng 0 trước khi tính · e) Lao vào nhân từng cặp số lớn rồi mới phát hiện kết quả bằng 0. · f) 0
 
@@ -381,7 +381,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | C.5 | Tổng dãy cách đều tính nhanh bằng cách nào? | (đầu + cuối) × số số hạng : 2 |
 | D.1 | Đặt tính rồi tính: 3 045 × 24 | 73 080 |
 | D.2 | Tính: 25 + 8 × 4 | 57 |
-| D.3 | So sánh: 234 × 7 … 234 × 8 | &lt; |
+| D.3 | So sánh: 234 × 7 … 234 × 8 | < |
 | D.4 | Tính nhẩm: 358 × 100 | 35 800 |
 | D.5 | Tính nhanh: 1 234 × 567 × (89 − 89) | 0 |
 | E.1 | Vườn dài 20 m rộng 10 m, rào xung quanh cần bao nhiêu mét rào? | 60 m |

@@ -55,7 +55,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần D**
 
 - **Bài D.1** — a) 1 625 · b) 15 050 · c) 230 · d) 110 · e) 1 325
-- **Bài D.2** — a) &lt; · b) &lt; · c) &gt; · d) &gt; · e) &lt;
+- **Bài D.2** — a) < · b) < · c) > · d) > · e) <
 - **Bài D.3** — a) 24 kg · b) 408 kg · c) 112 kg · d) 15 kg
 - **Bài D.4** — a) 1 · b) 1 · c) 1 · d) 1
 - **Bài D.5** — a) x = 15 · b) x = 12 · c) x = 104 · d) x = 30 · e) x = 42
@@ -248,7 +248,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | C.4 | Kiểm tra chia hết bằng dấu hiệu | Dấu hiệu chia hết cho 2, 3, 5, 9 | Câu hỏi “có chia hết cho … không” | Chọn đúng dấu hiệu theo số chia rồi kiểm tra | Cộng chữ số theo cặp tròn 9, phần dư chính là số dư khi chia 9. | không (tổng chữ số 13) · không (tổng chữ số 16) · không (tổng chữ số 11) · có (chữ số tận cùng 0)… |
 | C.5 | Tỉ lệ nghịch | Đại lượng tỉ lệ nghịch, tổng số ngày công | Số người tăng thì thời gian giảm | Quy về tổng số ngày công rồi chia | Số người gấp đôi thì số ngày giảm một nửa — nhẩm được ngay khi tỉ số đẹp. | 6 ngày · 6 ngày · 4 ngày · 8 ngày… |
 | D.1 | Tổng dãy số cách đều | Công thức tổng dãy cách đều | Dãy cộng có dấu … và các số cách đều nhau | Đếm số số hạng rồi áp công thức tổng | Ghép cặp đầu – cuối: mọi cặp đều có cùng tổng, chỉ cần nhân với số cặp. | 1 625 · 15 050 · 230 · 110… |
-| D.2 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | &lt; · &lt; · &gt; · &gt;… |
+| D.2 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | < · < · > · >… |
 | D.3 | Tìm phân số của một số, nhiều bước | Tìm phân số của một số | Cụm “… số còn lại”, “… số đó” | Tính tuần tự, sau mỗi bước ghi lại số còn lại | Còn lại sau ngày đầu là (1 − phân số) của tổng; nhân trực tiếp cho nhanh. | 24 kg · 408 kg · 112 kg · 15 kg |
 | D.4 | Tính nhanh biểu thức phân số | Cộng phân số cùng mẫu, phân số đảo ngược | Các phân số cùng mẫu, tử số cộng lại tròn mẫu | Quan sát tổng tử số; nhận diện cặp phân số đảo ngược | Nếu tổng các tử số bằng mẫu số thì kết quả bằng 1, không cần tính gì thêm. | 1 · 1 · 1 · 1 |
 | D.5 | Tìm x nhiều bước có ngoặc | Thứ tự thực hiện phép tính, quan hệ thành phần | x nằm trong ngoặc, ngoài ngoặc còn phép tính khác | Bóc lớp từ ngoài vào trong | Thay x tìm được vào đề, tính một lượt để thử lại. | x = 15 · x = 12 · x = 104 · x = 30… |
@@ -380,7 +380,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | C.4 | Số 1 093 có chia hết cho 9 không? | không |
 | C.5 | 6 người làm xong trong 8 ngày. 12 người làm xong trong mấy ngày? | 4 ngày |
 | D.1 | Tính nhanh: 1 + 2 + 3 + … + 100 | 5 050 |
-| D.2 | So sánh: 234 × 7 … 234 × 8 | &lt; |
+| D.2 | So sánh: 234 × 7 … 234 × 8 | < |
 | D.3 | Có 60 kg gạo, bán 1 phần 3 rồi bán tiếp 1 phần 2 số còn lại. Còn bao nhiêu? | 20 kg |
 | D.4 | Tính nhanh: 3 phần 7 + 4 phần 7 | 1 |
 | D.5 | Tìm x: (x + 12) × 5 − 8 = 132 | x = 16 |

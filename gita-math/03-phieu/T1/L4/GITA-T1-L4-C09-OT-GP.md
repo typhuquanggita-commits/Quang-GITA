@@ -32,7 +32,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài I.1** — a) 116 · b) 257 · c) 477 · d) 200 · e) 174 · f) 143 · g) 227
 - **Bài I.2** — a) XXI · b) 31 · c) 2 tuần 1 ngày · d) không · e) 30
-- **Bài I.3** — a) &lt; · b) &gt; · c) &lt; · d) &lt; · e) &lt; · f) &gt; · g) &lt;
+- **Bài I.3** — a) < · b) > · c) < · d) < · e) < · f) > · g) <
 - **Bài I.4** — a) 2 853 dư 1 · b) 6 907 dư 14 · c) 2 630 dư 1 · d) 1 032 dư 3 · e) 307 dư 2 · f) 5 836 dư 5 · g) 1 576 dư 16
 - **Bài I.5** — a) 2 phần 3 · b) 3 phần 28 · c) 27 phần 20 · d) 11 phần 49 · e) 3 phần 4 · f) 23 phần 15
 
@@ -40,7 +40,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài II.1** — a) 89 · b) hơn 2 đơn vị · c) 52, hiệu 27 · d) hơn 5 đơn vị
 - **Bài II.2** — a) 71 · b) Khoa học (24 bạn) · c) Toán (11 bạn) · d) 13 · e) 17,75 · f) 15%
-- **Bài II.3** — a) &lt; · b) &lt; · c) &lt; · d) &lt; · e) &lt;
+- **Bài II.3** — a) < · b) < · c) < · d) < · e) <
 - **Bài II.4** — a) 10 cây · b) 22 cây · c) 56 cây · d) 99 cây · e) 60 cây · f) 105 cây
 - **Bài II.5** — a) 184 kg · b) 124 kg · c) 14 kg · d) 72 kg
 
@@ -63,7 +63,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần V**
 
 - **Bài V.1** — a) Tìm phân số của một số · b) Nhân số tự nhiên với phân số · c) Cụm “bằng … của …” · d) Chia theo mẫu số rồi nhân theo tử số · e) Chia trước, nhân sau — số nhỏ hơn nên tính nhẩm được. · f) 39 cây · 69 cây · 30 cây · 58 cây
-- **Bài V.2** — a) So sánh phân số bằng kĩ thuật đặc biệt · b) Phần bù tới 1, phân số trung gian · c) Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 · d) So phần bù; hoặc chèn phân số trung gian · e) Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. · f) &gt; · &lt; · &gt; · &lt;…
+- **Bài V.2** — a) So sánh phân số bằng kĩ thuật đặc biệt · b) Phần bù tới 1, phân số trung gian · c) Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 · d) So phần bù; hoặc chèn phân số trung gian · e) Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. · f) > · < · > · <…
 - **Bài V.3** — a) Bốn phép tính với phân số · b) Quy đồng, nhân chia phân số · c) Biểu thức chỉ gồm phân số · d) Chọn quy tắc theo phép tính, rút gọn cuối cùng · e) Rút gọn chéo trước khi nhân để số nhỏ, tính nhanh và ít sai. · f) 8 phần 5 · 2 phần 7 · 13 phần 54 · 3 phần 5…
 - **Bài V.4** — a) Đọc bảng số liệu thống kê · b) Thống kê mô tả sơ cấp, trung bình cộng, tỉ số phần trăm · c) Đề cho bảng hoặc biểu đồ kèm nhiều câu hỏi · d) Ghi lại số liệu, trả lời từng câu bằng công cụ tương ứng · e) Tính tổng một lần rồi dùng lại cho mọi câu hỏi phần trăm. · f) 52 · Tiếng Anh (22 bạn) · Tiếng Việt (8 bạn) · 14…
 - **Bài V.5** — a) Rút gọn phân số · b) Tính chất cơ bản của phân số · c) Tử số và mẫu số có ước chung lớn hơn 1 · d) Chia cả tử và mẫu cho ước chung · e) Tìm ngay ước chung lớn nhất để rút gọn một lần là xong. · f) 3 phần 5 · 1 phần 3 · 7 phần 9 · 9 phần 5…
@@ -234,12 +234,12 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 |---|---|---|---|---|---|---|
 | I.1 | Tính nhanh tổng nhiều số hạng | Tính chất giao hoán, kết hợp của phép cộng | Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm | Ghép cặp tròn rồi cộng | Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10. | 116 · 257 · 477 · 200… |
 | I.2 | Lịch và đơn vị thời gian lớn | Số ngày các tháng, năm nhuận, thế kỉ | Đề hỏi về tháng, năm, thế kỉ | Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400 | Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ. | XXI · 31 · 2 tuần 1 ngày · không… |
-| I.3 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &lt; · &gt; · &lt; · &lt;… |
+| I.3 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | < · > · < · <… |
 | I.4 | Phép chia có dư | Quan hệ giữa số bị chia, số chia, thương và số dư | Đề yêu cầu ghi cả thương và số dư | Đặt tính chia, kiểm tra điều kiện số dư | Ước lượng thương bằng cách làm tròn số chia trước khi chia. | 2 853 dư 1 · 6 907 dư 14 · 2 630 dư 1 · 1 032 dư 3… |
 | I.5 | Bốn phép tính với phân số | Quy đồng, nhân chia phân số | Biểu thức chỉ gồm phân số | Chọn quy tắc theo phép tính, rút gọn cuối cùng | Rút gọn chéo trước khi nhân để số nhỏ, tính nhanh và ít sai. | 2 phần 3 · 3 phần 28 · 27 phần 20 · 11 phần 49… |
 | II.1 | Tìm số theo điều kiện của các chữ số | Cấu tạo thập phân, bài toán tổng – hiệu | Đề cho quan hệ giữa các chữ số chứ không cho số | Đặt ẩn cho từng chữ số, viết số theo cấu tạo, giải hệ điều kiện | Đổi chỗ hai chữ số của số có hai chữ số thì hiệu luôn bằng 9 lần hiệu hai chữ số. | 89 · hơn 2 đơn vị · 52, hiệu 27 · hơn 5 đơn vị |
 | II.2 | Đọc bảng số liệu thống kê | Thống kê mô tả sơ cấp, trung bình cộng, tỉ số phần trăm | Đề cho bảng hoặc biểu đồ kèm nhiều câu hỏi | Ghi lại số liệu, trả lời từng câu bằng công cụ tương ứng | Tính tổng một lần rồi dùng lại cho mọi câu hỏi phần trăm. | 71 · Khoa học (24 bạn) · Toán (11 bạn) · 13… |
-| II.3 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | &lt; · &lt; · &lt; · &lt;… |
+| II.3 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | < · < · < · <… |
 | II.4 | Tìm phân số của một số | Nhân số tự nhiên với phân số | Cụm “bằng … của …” | Chia theo mẫu số rồi nhân theo tử số | Chia trước, nhân sau — số nhỏ hơn nên tính nhẩm được. | 10 cây · 22 cây · 56 cây · 99 cây… |
 | II.5 | Tìm phân số của một số, nhiều bước | Tìm phân số của một số | Cụm “… số còn lại”, “… số đó” | Tính tuần tự, sau mỗi bước ghi lại số còn lại | Còn lại sau ngày đầu là (1 − phân số) của tổng; nhân trực tiếp cho nhanh. | 184 kg · 124 kg · 14 kg · 72 kg |
 | III.1 | Lập số và đếm số lập được từ một bộ chữ số | Quy tắc nhân trong phép đếm, điều kiện chữ số đứng đầu | Đề cho một bộ chữ số và yêu cầu lập số | Cố định hàng cao nhất rồi hoán vị các hàng còn lại | Ba chữ số khác 0 lập được 3 × 2 × 1 = 6 số; nếu có chữ số 0 thì chỉ còn 2 × 2 × 1 = 4 số. | 237 · 273 · 327 · 372 · 723 · 732 · 6 · 732 · 237… |
@@ -366,12 +366,12 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 |---|---|---|
 | I.1 | Tính nhanh: 37 + 145 + 63 | 245 |
 | I.2 | Năm 1975 thuộc thế kỉ thứ mấy? | XX |
-| I.3 | So sánh: 3 kg … 2 500 g | &gt; |
+| I.3 | So sánh: 3 kg … 2 500 g | > |
 | I.4 | Tìm thương và số dư của 1 234 : 7 | 176 dư 2 |
 | I.5 | Tính: 2 phần 3 + 1 phần 6 | 5 phần 6 |
 | II.1 | Tìm số có hai chữ số, tổng hai chữ số bằng 11, hiệu bằng 3. | 74 |
 | II.2 | Bảng: Toán 10, Văn 6, Anh 4. Trung bình mỗi môn bao nhiêu bạn? | 6,67 bạn |
-| II.3 | So sánh: 234 × 7 … 234 × 8 | &lt; |
+| II.3 | So sánh: 234 × 7 … 234 × 8 | < |
 | II.4 | Tổ Một trồng 60 cây, tổ Hai bằng 2 phần 3 tổ Một. Tổ Hai trồng mấy cây? | 40 cây |
 | II.5 | Có 60 kg gạo, bán 1 phần 3 rồi bán tiếp 1 phần 2 số còn lại. Còn bao nhiêu? | 20 kg |
 | III.1 | Từ ba chữ số 1, 2, 3 lập được bao nhiêu số có ba chữ số khác nhau? | 6 |
@@ -385,7 +385,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | IV.4 | Dãy cách đều 10 số hạng, đầu 5, cuối 50. Tổng bằng bao nhiêu? | 275 |
 | IV.5 | Dãy 1, 4, 7, …, 100 có bao nhiêu số chẵn? | 17 |
 | V.1 | Tổ Một trồng 60 cây, tổ Hai bằng 2 phần 3 tổ Một. Tổ Hai trồng mấy cây? | 40 cây |
-| V.2 | So sánh: 5 phần 6 … 7 phần 8 | &lt; |
+| V.2 | So sánh: 5 phần 6 … 7 phần 8 | < |
 | V.3 | Tính: 2 phần 3 + 1 phần 6 | 5 phần 6 |
 | V.4 | Bảng: Toán 10, Văn 6, Anh 4. Trung bình mỗi môn bao nhiêu bạn? | 6,67 bạn |
 | V.5 | Rút gọn 18 phần 24. | 3 phần 4 |

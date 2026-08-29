@@ -33,8 +33,8 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài A.1** — a) ô (An; Toán) · b) toàn bộ hàng An và toàn bộ cột Toán · c) ô (Lan; Âm nhạc) · d) Tiếng Việt · e) Âm nhạc · f) phương pháp lập bảng và loại trừ
 - **Bài A.2** — a) 177 · b) 8 giờ 46 phút · c) 2 giờ · d) 4 giờ 59 phút · e) 530
 - **Bài A.3** — a) 1 phần 8 · b) 2 · c) 9 phần 11 · d) 7 phần 8 · e) 1 phần 12 · f) 7 phần 11 · g) 7 phần 5 · h) 3 phần 10
-- **Bài A.4** — a) &gt; · b) 3 · c) 0,579 · d) 9 · e) 0,937 · f) &gt; · g) 0,1 · h) 3
-- **Bài A.5** — a) &gt; · b) &gt; · c) &gt; · d) = · e) &gt; · f) &gt;
+- **Bài A.4** — a) > · b) 3 · c) 0,579 · d) 9 · e) 0,937 · f) > · g) 0,1 · h) 3
+- **Bài A.5** — a) > · b) > · c) > · d) = · e) > · f) >
 
 **Phần B**
 
@@ -235,8 +235,8 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | A.1 | Suy luận loại trừ có bảng | Phương pháp lập bảng, loại trừ | Mỗi người ứng với đúng một đối tượng, đề cho các dữ kiện phủ định | Kẻ bảng, đánh dấu, lan toả theo hàng và cột | Bắt đầu từ dữ kiện khẳng định (“thích”, “là”) trước dữ kiện phủ định. | ô (An; Toán) · toàn bộ hàng An và toàn bộ cột Toán · ô (Lan; Âm nhạc) · Tiếng Việt… |
 | A.2 | Đổi và tính toán với đơn vị thời gian | Quan hệ giờ – phút – giây | Số đo có chữ “giờ”, “phút”, “giây” | Quy về phút rồi tính, cuối cùng đổi lại giờ và phút | Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm. | 177 · 8 giờ 46 phút · 2 giờ · 4 giờ 59 phút… |
 | A.3 | Rút gọn phân số | Tính chất cơ bản của phân số | Tử số và mẫu số có ước chung lớn hơn 1 | Chia cả tử và mẫu cho ước chung | Tìm ngay ước chung lớn nhất để rút gọn một lần là xong. | 1 phần 8 · 2 · 9 phần 11 · 7 phần 8… |
-| A.4 | Số thập phân — hàng, so sánh, chuyển đổi | Cấu tạo số thập phân, quan hệ phân số – số thập phân | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 | Xét theo hàng từ trái sang phải | Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. | &gt; · 3 · 0,579 · 9… |
-| A.5 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | &gt; · &gt; · &gt; · =… |
+| A.4 | Số thập phân — hàng, so sánh, chuyển đổi | Cấu tạo số thập phân, quan hệ phân số – số thập phân | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 | Xét theo hàng từ trái sang phải | Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. | > · 3 · 0,579 · 9… |
+| A.5 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | > · > · > · =… |
 | B.1 | Kỹ năng trình bày | Chuẩn trình bày bài giải | Yêu cầu “trình bày lời giải” | Viết đủ bốn dòng | Viết câu lời giải trước, phép tính sau — không bao giờ ngược lại. | câu lời giải nêu rõ đang tìm đại lượng nào · phép tính, viết đủ dấu và đủ đơn vị · kết quả kèm đơn vị · câu đáp số… |
 | B.2 | Kỹ năng viết câu lời giải | Chuẩn trình bày | Đề hỏi gì thì câu lời giải nhắc lại điều đó | Lấy cụm từ trong câu hỏi làm câu lời giải | Sao chép cụm từ trong câu hỏi là cách viết câu lời giải nhanh và chắc nhất. | “Biểu thức phân số nhiều phép tính là:” · “Bốn phép tính với phân số là:” · “Đọc bảng số liệu thống kê là:” · “Bốn phép tính với số thập phân là:”… |
 | B.3 | Kỹ năng ghi đơn vị | Đơn vị đo các đại lượng | Đáp số của bài có đại lượng đo | Kiểm tra đơn vị ở bước cuối | Nhìn đơn vị của đáp số là biết ngay mình có nhầm chu vi với diện tích không. | không ghi trong dấu ngoặc phép tính · có, bắt buộc · có, bắt buộc · đơn vị vuông, ví dụ cm²… |
@@ -367,8 +367,8 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | A.1 | Ba bạn thích ba môn khác nhau, An thích Toán, Bình không thích Anh. Bình thích môn nào? | Tiếng Việt |
 | A.2 | 155 phút = … giờ … phút | 2 giờ 35 phút |
 | A.3 | Rút gọn 18 phần 24. | 3 phần 4 |
-| A.4 | So sánh: 0,5 … 0,45 | &gt; |
-| A.5 | So sánh: 3 phần 5 … 3 phần 7 | &gt; |
+| A.4 | So sánh: 0,5 … 0,45 | > |
+| A.5 | So sánh: 3 phần 5 … 3 phần 7 | > |
 | B.1 | Một lời giải đạt chuẩn GITA có mấy dòng bắt buộc? | 4 dòng |
 | B.2 | Đề hỏi “mỗi tổ trồng mấy cây” thì câu lời giải viết thế nào? | “Số cây mỗi tổ trồng được là:” |
 | B.3 | Diện tích hình vuông cạnh 5 cm ghi đơn vị gì? | cm² |
@@ -383,7 +383,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | D.2 | Tính: 2 phần 3 + 1 phần 6 | 5 phần 6 |
 | D.3 | Tính: 3,25 × 4 | 13 |
 | D.4 | Hàng giá 500 000 đồng giảm 20%. Giá còn lại bao nhiêu? | 400 000 đồng |
-| D.5 | So sánh: 3 phần 5 … 3 phần 7 | &gt; |
+| D.5 | So sánh: 3 phần 5 … 3 phần 7 | > |
 | E.1 | Vì sao phải giảng lại cho bạn? | vì giảng được mới là hiểu thật |
 | E.2 | Tính: (1 phần 2 + 1 phần 3) × 6 phần 5 | 1 |
 | E.3 | Bảng: Toán 10, Văn 6, Anh 4. Trung bình mỗi môn bao nhiêu bạn? | 6,67 bạn |

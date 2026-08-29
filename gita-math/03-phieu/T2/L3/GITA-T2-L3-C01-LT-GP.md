@@ -32,7 +32,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài A.1** — a) 46 · b) 49 · c) 35 · d) 18 · e) 26 · f) 18 · g) 48
 - **Bài A.2** — a) 5 chữ số, tổng 24 · b) 4 chữ số, tổng 28 · c) 5 chữ số, tổng 14 · d) 5 chữ số, tổng 31
-- **Bài A.3** — a) &lt; · b) &lt; · c) &lt; · d) &gt; · e) &lt; · f) &gt; · g) &lt; · h) &gt;
+- **Bài A.3** — a) < · b) < · c) < · d) > · e) < · f) > · g) < · h) >
 - **Bài A.4** — a) 4 749 · b) số lẻ · c) 29 191 · d) 38 549 · e) 64 926
 - **Bài A.5** — a) chữ số 4, giá trị 40 000 · b) chữ số 4, giá trị 4 000 · c) chữ số 2, giá trị 200 · d) chữ số 3, giá trị 30 · e) chữ số 2, giá trị 2
 
@@ -86,7 +86,7 @@ Trung bình cộng của nhiều số bằng tổng các số đó chia cho số
 
 *Điểm chốt:* Tổng các chữ số **không** phụ thuộc thứ tự các chữ số.
 
-### Bài A.3 — Điền dấu &lt;, &gt;, = thích hợp
+### Bài A.3 — Điền dấu <, >, = thích hợp
 
 So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 
@@ -234,7 +234,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 |---|---|---|---|---|---|---|
 | A.1 | Tìm trung bình cộng | Định nghĩa trung bình cộng | Từ khoá “trung bình cộng”, “trung bình mỗi …” | Tổng chia số lượng | Ước lượng: trung bình cộng luôn nằm giữa số bé nhất và số lớn nhất. | 46 · 49 · 35 · 18… |
 | A.2 | Đếm chữ số, tính tổng chữ số | Cấu tạo số, tổng chữ số | Yêu cầu “có mấy chữ số”, “tổng các chữ số” | Tách lớp để đếm; cộng rời từng chữ số | Ghép cặp các chữ số cộng lại tròn 10 rồi cộng nhanh. | 5 chữ số, tổng 24 · 4 chữ số, tổng 28 · 5 chữ số, tổng 14 · 5 chữ số, tổng 31 |
-| A.3 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | &lt; · &lt; · &lt; · &gt;… |
+| A.3 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | < · < · < · >… |
 | A.4 | Nhận biết chẵn – lẻ và số liền kề | Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2 | Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” | Xét chữ số tận cùng; cộng hoặc trừ 1 đơn vị | Che hết các chữ số, chỉ để lộ chữ số cuối. | 4 749 · số lẻ · 29 191 · 38 549… |
 | A.5 | Xác định chữ số và giá trị chữ số theo hàng | Cấu tạo thập phân của số tự nhiên | Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” | Đánh số hàng từ phải sang trái rồi tra bảng hàng | Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị. | chữ số 4, giá trị 40 000 · chữ số 4, giá trị 4 000 · chữ số 2, giá trị 200 · chữ số 3, giá trị 30… |
 | B.1 | Định vị chương trong hệ thống | Tên chương, nhóm chuyên đề, số dạng bài | Phần đầu phiếu ghi rõ tên cụm và nhóm chuyên đề | Đọc phần đầu phiếu rồi trả lời theo đúng tên gọi | Ghi tên chương ra góc vở, mỗi lần mở vở là đọc lại một lần. | Cấu tạo số và tính chẵn lẻ · A — Số học & Cấu tạo số · 6 · ở mọi bài thuộc số học & cấu tạo số, vì các chương sau đều dùng lại nền này… |
@@ -366,7 +366,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 |---|---|---|
 | A.1 | Tìm trung bình cộng của 12, 18 và 30. | 20 |
 | A.2 | Số 40 506 có mấy chữ số và tổng các chữ số bằng bao nhiêu? | 5 chữ số, tổng 15 |
-| A.3 | Điền dấu: 84 497 … 84 498 | &lt; |
+| A.3 | Điền dấu: 84 497 … 84 498 | < |
 | A.4 | Số liền sau của 4 750 là số nào? | 4 751 |
 | A.5 | Chữ số hàng chục của số 44 232 có giá trị bao nhiêu? | 30 |
 | B.1 | Chương “Cấu tạo số và tính chẵn lẻ” thuộc nhóm chuyên đề nào? | A — Số học & Cấu tạo số |

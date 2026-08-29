@@ -33,7 +33,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài A.1** — a) chữ số 3, giá trị 300 000 · b) chữ số 6, giá trị 60 000 · c) chữ số 0, giá trị 0 · d) chữ số 0, giá trị 0 · e) chữ số 3, giá trị 3
 - **Bài A.2** — a) 300 792 · b) 575 227 · c) 628 119 · d) 836 798 · e) số lẻ
 - **Bài A.3** — a) 901 416 · b) 448 065 · c) 613 959 · d) 689 829 · e) 445 270 · f) 610 150
-- **Bài A.4** — a) &gt; · b) &gt; · c) &gt; · d) &gt; · e) &lt;
+- **Bài A.4** — a) > · b) > · c) > · d) > · e) <
 - **Bài A.5** — a) 6 chữ số, tổng 27 · b) 6 chữ số, tổng 29 · c) 6 chữ số, tổng 12 · d) 6 chữ số, tổng 19 · e) 6 chữ số, tổng 24
 
 **Phần B**
@@ -92,7 +92,7 @@ Mỗi số hạng cho biết một hàng. Xếp các chữ số vào đúng hàn
 
 *Điểm chốt:* Hàng khuyết trong tổng vẫn phải có chữ số **0** trong số viết ra.
 
-### Bài A.4 — Điền dấu &lt;, &gt;, = thích hợp
+### Bài A.4 — Điền dấu <, >, = thích hợp
 
 So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 
@@ -235,7 +235,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | A.1 | Xác định chữ số và giá trị chữ số theo hàng | Cấu tạo thập phân của số tự nhiên | Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” | Đánh số hàng từ phải sang trái rồi tra bảng hàng | Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị. | chữ số 3, giá trị 300 000 · chữ số 6, giá trị 60 000 · chữ số 0, giá trị 0 · chữ số 0, giá trị 0… |
 | A.2 | Nhận biết chẵn – lẻ và số liền kề | Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2 | Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” | Xét chữ số tận cùng; cộng hoặc trừ 1 đơn vị | Che hết các chữ số, chỉ để lộ chữ số cuối. | 300 792 · 575 227 · 628 119 · 836 798… |
 | A.3 | Viết số từ dạng tổng theo hàng | Cấu tạo thập phân của số tự nhiên | Tổng gồm các số tròn chục, tròn trăm, tròn nghìn… | Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết | Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số. | 901 416 · 448 065 · 613 959 · 689 829… |
-| A.4 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | &gt; · &gt; · &gt; · &gt;… |
+| A.4 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | > · > · > · >… |
 | A.5 | Đếm chữ số, tính tổng chữ số | Cấu tạo số, tổng chữ số | Yêu cầu “có mấy chữ số”, “tổng các chữ số” | Tách lớp để đếm; cộng rời từng chữ số | Ghép cặp các chữ số cộng lại tròn 10 rồi cộng nhanh. | 6 chữ số, tổng 27 · 6 chữ số, tổng 29 · 6 chữ số, tổng 12 · 6 chữ số, tổng 19… |
 | B.1 | Kỹ năng trình bày | Chuẩn trình bày bài giải | Yêu cầu “trình bày lời giải” | Viết đủ bốn dòng | Viết câu lời giải trước, phép tính sau — không bao giờ ngược lại. | câu lời giải nêu rõ đang tìm đại lượng nào · phép tính, viết đủ dấu và đủ đơn vị · kết quả kèm đơn vị · câu đáp số… |
 | B.2 | Kỹ năng viết câu lời giải | Chuẩn trình bày | Đề hỏi gì thì câu lời giải nhắc lại điều đó | Lấy cụm từ trong câu hỏi làm câu lời giải | Sao chép cụm từ trong câu hỏi là cách viết câu lời giải nhanh và chắc nhất. | “Nhận biết chẵn – lẻ và số liền kề là:” · “Lập số và đếm số lập được từ một bộ chữ số là:” · “Làm tròn số tự nhiên là:” · “Đếm số hạng của dãy cách đều theo điều kiện chia hết là:”… |
@@ -246,7 +246,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | C.2 | Nhận biết chẵn – lẻ và số liền kề | Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2 | Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” | Xét chữ số tận cùng; cộng hoặc trừ 1 đơn vị | Che hết các chữ số, chỉ để lộ chữ số cuối. | tầng 2 · Liền trước – liền sau chỉ hơn kém đúng **1** đơn vị. · toàn bộ số điểm của ý sai · Liền trước – liền sau chỉ hơn kém đúng **1** đơn vị.… |
 | C.3 | Đếm số hạng của dãy cách đều theo điều kiện chia hết | Dãy số cách đều, dấu hiệu chia hết | Cụm “có bao nhiêu số … từ … đến …” | Tìm số đầu, số cuối hợp lệ rồi dùng công thức đếm | Số các số chia hết cho d từ 1 đến n bằng phần nguyên của n : d, nên đếm từ a đến b là b : d trừ đi (a − 1) : d. | tầng 2 · Viết ra ba số đầu và ba số cuối của dãy trước khi áp công thức. · toàn bộ số điểm của ý sai · Viết ra ba số đầu và ba số cuối của dãy trước khi áp công thức.… |
 | C.4 | Tìm chữ số tận cùng của một phép tính | Tính chất chữ số tận cùng | Câu hỏi chỉ hỏi “chữ số tận cùng”, không hỏi kết quả | Rút gọn về chữ số tận cùng rồi tính | Với phép trừ, nếu chữ số cuối của số bị trừ nhỏ hơn thì mượn 10 rồi trừ. | tầng 2 · Che phần đầu của hai số, chỉ để lộ chữ số cuối cùng. · toàn bộ số điểm của ý sai · Che phần đầu của hai số, chỉ để lộ chữ số cuối cùng.… |
-| C.5 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | tầng 1 · Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái. · toàn bộ số điểm của ý sai · Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái.… |
+| C.5 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | tầng 1 · Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái. · toàn bộ số điểm của ý sai · Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái.… |
 | D.1 | Sơ đồ tư duy tổng hợp | Hệ thống hoá toàn chương | Yêu cầu vẽ lại sơ đồ không nhìn tài liệu | Vẽ từ trí nhớ rồi đối chiếu | Chỗ nào quên khi vẽ chính là chỗ phải ôn lại đầu tiên. | Số chia hết, số dư và số học dạng đề thi vào lớp 6 · 4 · tên một dạng bài của chương · 3 nhánh con: dấu hiệu · phương pháp · lỗi hay mắc… |
 | D.2 | Lập số và đếm số lập được từ một bộ chữ số | Quy tắc nhân trong phép đếm, điều kiện chữ số đứng đầu | Đề cho một bộ chữ số và yêu cầu lập số | Cố định hàng cao nhất rồi hoán vị các hàng còn lại | Ba chữ số khác 0 lập được 3 × 2 × 1 = 6 số; nếu có chữ số 0 thì chỉ còn 2 × 2 × 1 = 4 số. | Đề cho một bộ chữ số và yêu cầu lập số · Cố định hàng cao nhất rồi hoán vị các hàng còn lại · Viết lộn xộn nên vừa sót vừa trùng; hoặc nhận cả số bắt đầu bằng 0. · Quy tắc nhân trong phép đếm, điều kiện chữ số đứng đầu… |
 | D.3 | Đếm số hạng của dãy cách đều theo điều kiện chia hết | Dãy số cách đều, dấu hiệu chia hết | Cụm “có bao nhiêu số … từ … đến …” | Tìm số đầu, số cuối hợp lệ rồi dùng công thức đếm | Số các số chia hết cho d từ 1 đến n bằng phần nguyên của n : d, nên đếm từ a đến b là b : d trừ đi (a − 1) : d. | Cụm “có bao nhiêu số … từ … đến …” · Tìm số đầu, số cuối hợp lệ rồi dùng công thức đếm · Lấy luôn hai đầu khoảng làm số đầu và số cuối của dãy dù chúng không thoả điều kiện. · Dãy số cách đều, dấu hiệu chia hết… |
@@ -367,7 +367,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | A.1 | Chữ số hàng chục của số 360 063 có giá trị bao nhiêu? | 60 |
 | A.2 | Số liền sau của 300 791 là số nào? | 300 792 |
 | A.3 | Viết số gồm tổng: 30 000 + 400 + 7 | 30 407 |
-| A.4 | Điền dấu: 31 919 … 31 920 | &lt; |
+| A.4 | Điền dấu: 31 919 … 31 920 | < |
 | A.5 | Số 40 506 có mấy chữ số và tổng các chữ số bằng bao nhiêu? | 5 chữ số, tổng 15 |
 | B.1 | Một lời giải đạt chuẩn GITA có mấy dòng bắt buộc? | 4 dòng |
 | B.2 | Đề hỏi “mỗi tổ trồng mấy cây” thì câu lời giải viết thế nào? | “Số cây mỗi tổ trồng được là:” |
@@ -378,7 +378,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | C.2 | Số liền sau của 147 624 là số nào? | 147 625 |
 | C.3 | Có bao nhiêu số chẵn từ 10 đến 40? | 16 |
 | C.4 | Tích 137 × 46 có chữ số tận cùng là chữ số nào? | 2 |
-| C.5 | Điền dấu: 313 349 … 313 350 | &lt; |
+| C.5 | Điền dấu: 313 349 … 313 350 | < |
 | D.1 | Vẽ sơ đồ mà nhìn tài liệu thì mất tác dụng gì? | mất tác dụng kiểm tra trí nhớ |
 | D.2 | Từ ba chữ số 1, 2, 3 lập được bao nhiêu số có ba chữ số khác nhau? | 6 |
 | D.3 | Có bao nhiêu số chẵn từ 10 đến 40? | 16 |

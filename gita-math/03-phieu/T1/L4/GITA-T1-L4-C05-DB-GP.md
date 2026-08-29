@@ -39,7 +39,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần B**
 
 - **Bài B.1** — a) 6 tuần 0 ngày · b) 30 · c) không · d) XXI · e) có · f) 31 · g) XXI
-- **Bài B.2** — a) &lt; · b) &lt; · c) &gt; · d) &lt; · e) &lt;
+- **Bài B.2** — a) < · b) < · c) > · d) < · e) <
 - **Bài B.3** — a) 3 426 · b) 2 580 · c) 1 092 · d) 26 171 · e) 14 064
 - **Bài B.4** — a) 160 cm² · b) 150 cm² · c) 180 cm² · d) 240 cm² · e) 72 cm² · f) 690 cm²
 - **Bài B.5** — a) 6 042 · b) 2 419 · c) 1 443 · d) 400 · e) 92
@@ -238,7 +238,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | A.4 | Lập bảng dạng bài | Bảng phân tích chuyên sâu sáu cột | Bảng có sẵn cột dạng bài, thiếu các cột còn lại | Tra bảng phân tích của các phiếu đã học | Học theo hàng ngang, không học theo cột dọc. | Bảng đơn vị đo độ dài, khối lượng · Bảng đơn vị đo diện tích · Đại lượng tỉ lệ nghịch, tổng số ngày công · Nhân, chia số tự nhiên; đổi đơn vị khối lượng… |
 | A.5 | Lập bảng dạng bài | Bảng phân tích chuyên sâu sáu cột | Bảng có sẵn cột dạng bài, thiếu các cột còn lại | Tra bảng phân tích của các phiếu đã học | Học theo hàng ngang, không học theo cột dọc. | Số người tăng gấp k lần thì số ngày giảm còn 1 phần k. · 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ. · Cộng tròn giờ trước rồi cộng phần phút lẻ sau. · Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số.… |
 | B.1 | Lịch và đơn vị thời gian lớn | Số ngày các tháng, năm nhuận, thế kỉ | Đề hỏi về tháng, năm, thế kỉ | Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400 | Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ. | 6 tuần 0 ngày · 30 · không · XXI… |
-| B.2 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &lt; · &lt; · &gt; · &lt;… |
+| B.2 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | < · < · > · <… |
 | B.3 | Bốn phép tính với số đo | Đổi đơn vị, bốn phép tính | Các số hạng có đơn vị khác nhau trong cùng một phép tính | Đổi về đơn vị của kết quả rồi tính | Đọc chỗ chấm trước, biết ngay đơn vị đích. | 3 426 · 2 580 · 1 092 · 26 171… |
 | B.4 | Diện tích các hình phẳng cơ bản | Công thức diện tích hình bình hành, hình thoi, hình tam giác | Đề cho đáy và chiều cao, hoặc hai đường chéo | Nhận dạng hình rồi chọn công thức | Tam giác bằng nửa hình bình hành cùng đáy cùng chiều cao. | 160 cm² · 150 cm² · 180 cm² · 240 cm²… |
 | B.5 | Tính nhanh nhờ thừa số chung | Nhân một số với một tổng, một hiệu | Hai tích cộng hoặc trừ nhau, có chung một thừa số | Đặt thừa số chung ra ngoài rồi tính trong ngoặc | Sau khi đặt thừa số chung, tổng trong ngoặc thường tròn 10 hoặc 100. | 6 042 · 2 419 · 1 443 · 400… |
@@ -370,7 +370,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | A.4 | Cột “Kiến thức phải thuộc” trả lời câu hỏi gì? | làm gì |
 | A.5 | Cột “Cách xử lý nhanh nhất” trả lời câu hỏi gì? | làm gì |
 | B.1 | Năm 1975 thuộc thế kỉ thứ mấy? | XX |
-| B.2 | So sánh: 3 kg … 2 500 g | &gt; |
+| B.2 | So sánh: 3 kg … 2 500 g | > |
 | B.3 | 2 m 30 cm + 150 cm = … cm | 380 |
 | B.4 | Tam giác đáy 10 cm, cao 6 cm. Diện tích bằng bao nhiêu? | 30 cm² |
 | B.5 | Tính nhanh: 47 × 25 + 47 × 75 | 4 700 |
@@ -388,7 +388,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | E.2 | Năm 1975 thuộc thế kỉ thứ mấy? | XX |
 | E.3 | 3 m² = … cm² | 30 000 |
 | E.4 | Xe chở 20 bao gạo, mỗi bao 50 kg. Xe chở mấy tạ? | 10 tạ |
-| E.5 | So sánh: 3 kg … 2 500 g | &gt; |
+| E.5 | So sánh: 3 kg … 2 500 g | > |
 
 ---
 

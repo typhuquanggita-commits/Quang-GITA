@@ -46,7 +46,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần C**
 
-- **Bài C.1** — a) &gt; · b) &gt; · c) &lt; · d) &gt; · e) &lt; · f) &lt;
+- **Bài C.1** — a) > · b) > · c) < · d) > · e) < · f) <
 - **Bài C.2** — a) 179 · b) 94 · c) 259 · d) 202
 - **Bài C.3** — a) 390 · b) 1 469 · c) 12 262 · d) 3 944
 - **Bài C.4** — a) 325 cm² · b) 12 cm² · c) 960 cm² · d) 84 cm² · e) 459 cm² · f) 280 cm²
@@ -58,7 +58,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài D.2** — a) 160 kg · b) 168 kg · c) 50 kg · d) 186 kg
 - **Bài D.3** — a) 39 cây · b) 35 cây · c) 62 cây · d) 48 cây
 - **Bài D.4** — a) 2 tạ 25 kg · b) 4 tạ 80 kg · c) 5 tạ · d) 6 tạ 60 kg
-- **Bài D.5** — a) &lt; · b) &lt; · c) &lt; · d) &gt; · e) &lt;
+- **Bài D.5** — a) < · b) < · c) < · d) > · e) <
 
 **Phần E**
 
@@ -242,7 +242,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | B.3 | Giả thiết tạm hai loại | Phương pháp giả thiết tạm | Hai loại đối tượng, biết tổng số và tổng của một đại lượng phụ | Giả sử đồng nhất → tính chênh → chia cho hiệu đơn vị | Kiểm tra ngay: số bánh phải nằm giữa tổng × (số bánh ít nhất) và tổng × (số bánh nhiều nhất). | xe ô tô: 6 chiếc, xe ba bánh: 10 chiếc · xe ô tô: 18 chiếc, xe ba bánh: 27 chiếc · xe đạp: 14 chiếc, xe ba bánh: 12 chiếc · xe ba bánh: 28 chiếc, xe ô tô: 20 chiếc… |
 | B.4 | Bốn phép tính với phân số | Quy đồng, nhân chia phân số | Biểu thức chỉ gồm phân số | Chọn quy tắc theo phép tính, rút gọn cuối cùng | Rút gọn chéo trước khi nhân để số nhỏ, tính nhanh và ít sai. | 5 phần 48 · 15 phần 4 · 16 phần 13 · 40 phần 117… |
 | B.5 | Tính nhanh nhờ thừa số chung | Nhân một số với một tổng, một hiệu | Hai tích cộng hoặc trừ nhau, có chung một thừa số | Đặt thừa số chung ra ngoài rồi tính trong ngoặc | Sau khi đặt thừa số chung, tổng trong ngoặc thường tròn 10 hoặc 100. | 1 800 · 582 · 645 · 870… |
-| C.1 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &gt; · &gt; · &lt; · &gt;… |
+| C.1 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | > · > · < · >… |
 | C.2 | Đếm số hạng của dãy cách đều theo điều kiện chia hết | Dãy số cách đều, dấu hiệu chia hết | Cụm “có bao nhiêu số … từ … đến …” | Tìm số đầu, số cuối hợp lệ rồi dùng công thức đếm | Số các số chia hết cho d từ 1 đến n bằng phần nguyên của n : d, nên đếm từ a đến b là b : d trừ đi (a − 1) : d. | 179 · 94 · 259 · 202 |
 | C.3 | Bốn phép tính với số đo | Đổi đơn vị, bốn phép tính | Các số hạng có đơn vị khác nhau trong cùng một phép tính | Đổi về đơn vị của kết quả rồi tính | Đọc chỗ chấm trước, biết ngay đơn vị đích. | 390 · 1 469 · 12 262 · 3 944 |
 | C.4 | Diện tích các hình phẳng cơ bản | Công thức diện tích hình bình hành, hình thoi, hình tam giác | Đề cho đáy và chiều cao, hoặc hai đường chéo | Nhận dạng hình rồi chọn công thức | Tam giác bằng nửa hình bình hành cùng đáy cùng chiều cao. | 325 cm² · 12 cm² · 960 cm² · 84 cm²… |
@@ -251,7 +251,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | D.2 | Tìm phân số của một số, nhiều bước | Tìm phân số của một số | Cụm “… số còn lại”, “… số đó” | Tính tuần tự, sau mỗi bước ghi lại số còn lại | Còn lại sau ngày đầu là (1 − phân số) của tổng; nhân trực tiếp cho nhanh. | 160 kg · 168 kg · 50 kg · 186 kg |
 | D.3 | Tìm phân số của một số | Nhân số tự nhiên với phân số | Cụm “bằng … của …” | Chia theo mẫu số rồi nhân theo tử số | Chia trước, nhân sau — số nhỏ hơn nên tính nhẩm được. | 39 cây · 35 cây · 62 cây · 48 cây |
 | D.4 | Bài toán đại lượng có lời văn | Nhân, chia số tự nhiên; đổi đơn vị khối lượng | Đơn vị trong câu hỏi khác đơn vị trong dữ kiện | Tính theo đơn vị dữ kiện rồi đổi ở bước cuối | 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ. | 2 tạ 25 kg · 4 tạ 80 kg · 5 tạ · 6 tạ 60 kg |
-| D.5 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | &lt; · &lt; · &lt; · &gt;… |
+| D.5 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | < · < · < · >… |
 | E.1 | Rút gọn phân số | Tính chất cơ bản của phân số | Tử số và mẫu số có ước chung lớn hơn 1 | Chia cả tử và mẫu cho ước chung | Tìm ngay ước chung lớn nhất để rút gọn một lần là xong. | Rút gọn phân số · Tử số và mẫu số có ước chung lớn hơn 1 · Tính chất cơ bản của phân số · Chia cả tử và mẫu cho ước chung… |
 | E.2 | Bốn phép tính với phân số | Quy đồng, nhân chia phân số | Biểu thức chỉ gồm phân số | Chọn quy tắc theo phép tính, rút gọn cuối cùng | Rút gọn chéo trước khi nhân để số nhỏ, tính nhanh và ít sai. | Bốn phép tính với phân số · Biểu thức chỉ gồm phân số · Quy đồng, nhân chia phân số · Chọn quy tắc theo phép tính, rút gọn cuối cùng… |
 | E.3 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | So sánh phân số · Hai phân số nối bởi dấu … · Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu · Xét cùng mẫu → cùng tử → quy đồng… |
@@ -374,7 +374,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | B.3 | 10 xe đạp và ô tô, 28 bánh. Có mấy ô tô? | 4 ô tô |
 | B.4 | Tính: 2 phần 3 + 1 phần 6 | 5 phần 6 |
 | B.5 | Tính nhanh: 47 × 25 + 47 × 75 | 4 700 |
-| C.1 | So sánh: 3 kg … 2 500 g | &gt; |
+| C.1 | So sánh: 3 kg … 2 500 g | > |
 | C.2 | Có bao nhiêu số chẵn từ 10 đến 40? | 16 |
 | C.3 | 2 m 30 cm + 150 cm = … cm | 380 |
 | C.4 | Tam giác đáy 10 cm, cao 6 cm. Diện tích bằng bao nhiêu? | 30 cm² |
@@ -383,10 +383,10 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | D.2 | Có 60 kg gạo, bán 1 phần 3 rồi bán tiếp 1 phần 2 số còn lại. Còn bao nhiêu? | 20 kg |
 | D.3 | Tổ Một trồng 60 cây, tổ Hai bằng 2 phần 3 tổ Một. Tổ Hai trồng mấy cây? | 40 cây |
 | D.4 | Xe chở 20 bao gạo, mỗi bao 50 kg. Xe chở mấy tạ? | 10 tạ |
-| D.5 | So sánh: 234 × 7 … 234 × 8 | &lt; |
+| D.5 | So sánh: 234 × 7 … 234 × 8 | < |
 | E.1 | Rút gọn 18 phần 24. | 3 phần 4 |
 | E.2 | Tính: 2 phần 3 + 1 phần 6 | 5 phần 6 |
-| E.3 | So sánh: 3 phần 5 … 3 phần 7 | &gt; |
+| E.3 | So sánh: 3 phần 5 … 3 phần 7 | > |
 | E.4 | Tính: (1 phần 2 + 1 phần 3) × 6 phần 5 | 1 |
 | E.5 | Tổ Một trồng 60 cây, tổ Hai bằng 2 phần 3 tổ Một. Tổ Hai trồng mấy cây? | 40 cây |
 

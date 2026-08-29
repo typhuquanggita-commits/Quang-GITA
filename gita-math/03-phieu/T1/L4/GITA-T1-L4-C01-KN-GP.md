@@ -31,7 +31,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần A**
 
 - **Bài A.1** — a) 6 chữ số, tổng 35 · b) 6 chữ số, tổng 27 · c) 6 chữ số, tổng 26 · d) 6 chữ số, tổng 30 · e) 6 chữ số, tổng 29 · f) 6 chữ số, tổng 20
-- **Bài A.2** — a) &lt; · b) &lt; · c) &lt; · d) &lt; · e) &gt; · f) &gt; · g) &lt;
+- **Bài A.2** — a) < · b) < · c) < · d) < · e) > · f) > · g) <
 - **Bài A.3** — a) 390 738 · b) 568 802 · c) 854 060 · d) 766 783 · e) 460 238 · f) 95 026
 - **Bài A.4** — a) 189 020 · b) 208 250 · c) 335 640 · d) 475 629 · e) số lẻ
 - **Bài A.5** — a) chữ số 8, giá trị 800 000 · b) chữ số 9, giá trị 90 000 · c) chữ số 5, giá trị 5 000 · d) chữ số 0, giá trị 0
@@ -65,7 +65,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài E.1** — a) giới thiệu chương “Số tự nhiên: hàng, lớp và cấu tạo số” và mục tiêu · b) trình bày sơ đồ tư duy chương · c) giảng một dạng bài kèm ví dụ mẫu · d) nêu lỗi hay mắc và cách phòng · e) ra một bài cho lớp làm và chữa nhanh · f) tự phân công, mỗi bạn ít nhất một phút
 - **Bài E.2** — a) “Hôm nay nhóm mình nói về Tìm số thoả nhiều điều kiện chia có dư.” · b) Hai điều kiện “chia cho … dư …” đi cùng nhau · c) Phép chia có dư, dãy cách đều · d) Tìm số bé nhất chia cho 5 dư 2 và chia cho 3 dư 1. → 7 · e) Thử từng số từ 1 trở đi nên quá lâu và dễ bỏ sót. · f) Chọn điều kiện có số chia **lớn hơn** để lập dãy — dãy thưa hơn nên thử nhanh hơn.
 - **Bài E.3** — a) “Hôm nay nhóm mình nói về Đếm số hạng của dãy cách đều theo điều kiện chia hết.” · b) Cụm “có bao nhiêu số … từ … đến …” · c) Dãy số cách đều, dấu hiệu chia hết · d) Có bao nhiêu số chẵn từ 10 đến 40? → 16 · e) Lấy luôn hai đầu khoảng làm số đầu và số cuối của dãy dù chúng không thoả điều kiện. · f) Số các số chia hết cho d từ 1 đến n bằng phần nguyên của n : d, nên đếm từ a đến b là b : d trừ đi (a − 1) : d.
-- **Bài E.4** — a) “Hôm nay nhóm mình nói về So sánh hai số tự nhiên.” · b) Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = · c) Thứ tự trong tập số tự nhiên · d) Điền dấu: 471 161 … 471 162 → &lt; · e) So từ hàng đơn vị (phải sang trái) nên kết luận sai. · f) Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số.
+- **Bài E.4** — a) “Hôm nay nhóm mình nói về So sánh hai số tự nhiên.” · b) Dấu … giữa hai số, yêu cầu điền <, >, = · c) Thứ tự trong tập số tự nhiên · d) Điền dấu: 471 161 … 471 162 → < · e) So từ hàng đơn vị (phải sang trái) nên kết luận sai. · f) Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số.
 - **Bài E.5** — a) “Hôm nay nhóm mình nói về Làm tròn số tự nhiên.” · b) Cụm từ “làm tròn đến hàng …” · c) Quy tắc làm tròn, giá trị hàng · d) Làm tròn 4 762 đến hàng trăm. → 4 800 · e) Nhìn nhầm sang chữ số ở hàng cần làm tròn thay vì hàng liền sau nó. · f) Che toàn bộ phần đuôi sau nét gạch, chỉ để lộ đúng một chữ số.
 
 ---
@@ -80,7 +80,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 *Điểm chốt:* Tổng các chữ số **không** phụ thuộc thứ tự các chữ số.
 
-### Bài A.2 — Điền dấu &lt;, &gt;, = thích hợp
+### Bài A.2 — Điền dấu <, >, = thích hợp
 
 So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 
@@ -233,7 +233,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
 | A.1 | Đếm chữ số, tính tổng chữ số | Cấu tạo số, tổng chữ số | Yêu cầu “có mấy chữ số”, “tổng các chữ số” | Tách lớp để đếm; cộng rời từng chữ số | Ghép cặp các chữ số cộng lại tròn 10 rồi cộng nhanh. | 6 chữ số, tổng 35 · 6 chữ số, tổng 27 · 6 chữ số, tổng 26 · 6 chữ số, tổng 30… |
-| A.2 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | &lt; · &lt; · &lt; · &lt;… |
+| A.2 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | < · < · < · <… |
 | A.3 | Viết số từ dạng tổng theo hàng | Cấu tạo thập phân của số tự nhiên | Tổng gồm các số tròn chục, tròn trăm, tròn nghìn… | Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết | Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số. | 390 738 · 568 802 · 854 060 · 766 783… |
 | A.4 | Nhận biết chẵn – lẻ và số liền kề | Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2 | Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” | Xét chữ số tận cùng; cộng hoặc trừ 1 đơn vị | Che hết các chữ số, chỉ để lộ chữ số cuối. | 189 020 · 208 250 · 335 640 · 475 629… |
 | A.5 | Xác định chữ số và giá trị chữ số theo hàng | Cấu tạo thập phân của số tự nhiên | Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” | Đánh số hàng từ phải sang trái rồi tra bảng hàng | Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị. | chữ số 8, giá trị 800 000 · chữ số 9, giá trị 90 000 · chữ số 5, giá trị 5 000 · chữ số 0, giá trị 0 |
@@ -255,7 +255,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | E.1 | Kỹ năng thuyết trình theo nhóm | Hệ thống hoá và diễn đạt | Yêu cầu giảng lại chương theo nhóm | Chia kịch bản theo phút, phân công rõ người | Người giảng nhớ lâu hơn người nghe khoảng ba lần. | giới thiệu chương “Số tự nhiên: hàng, lớp và cấu tạo số” và mục tiêu · trình bày sơ đồ tư duy chương · giảng một dạng bài kèm ví dụ mẫu · nêu lỗi hay mắc và cách phòng… |
 | E.2 | Tìm số thoả nhiều điều kiện chia có dư | Phép chia có dư, dãy cách đều | Hai điều kiện “chia cho … dư …” đi cùng nhau | Lập dãy theo điều kiện chặt hơn rồi lọc theo điều kiện còn lại | Chọn điều kiện có số chia **lớn hơn** để lập dãy — dãy thưa hơn nên thử nhanh hơn. | “Hôm nay nhóm mình nói về Tìm số thoả nhiều điều kiện chia có dư.” · Hai điều kiện “chia cho … dư …” đi cùng nhau · Phép chia có dư, dãy cách đều · Tìm số bé nhất chia cho 5 dư 2 và chia cho 3 dư 1. → 7… |
 | E.3 | Đếm số hạng của dãy cách đều theo điều kiện chia hết | Dãy số cách đều, dấu hiệu chia hết | Cụm “có bao nhiêu số … từ … đến …” | Tìm số đầu, số cuối hợp lệ rồi dùng công thức đếm | Số các số chia hết cho d từ 1 đến n bằng phần nguyên của n : d, nên đếm từ a đến b là b : d trừ đi (a − 1) : d. | “Hôm nay nhóm mình nói về Đếm số hạng của dãy cách đều theo điều kiện chia hết.” · Cụm “có bao nhiêu số … từ … đến …” · Dãy số cách đều, dấu hiệu chia hết · Có bao nhiêu số chẵn từ 10 đến 40? → 16… |
-| E.4 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | “Hôm nay nhóm mình nói về So sánh hai số tự nhiên.” · Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = · Thứ tự trong tập số tự nhiên · Điền dấu: 471 161 … 471 162 → &lt;… |
+| E.4 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | “Hôm nay nhóm mình nói về So sánh hai số tự nhiên.” · Dấu … giữa hai số, yêu cầu điền <, >, = · Thứ tự trong tập số tự nhiên · Điền dấu: 471 161 … 471 162 → <… |
 | E.5 | Làm tròn số tự nhiên | Quy tắc làm tròn, giá trị hàng | Cụm từ “làm tròn đến hàng …” | Gạch ngăn hàng → xét chữ số liền sau → giữ nguyên hoặc thêm 1 | Che toàn bộ phần đuôi sau nét gạch, chỉ để lộ đúng một chữ số. | “Hôm nay nhóm mình nói về Làm tròn số tự nhiên.” · Cụm từ “làm tròn đến hàng …” · Quy tắc làm tròn, giá trị hàng · Làm tròn 4 762 đến hàng trăm. → 4 800… |
 
 ---
@@ -365,7 +365,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | Bài | Đề tương tự | Đáp số |
 |---|---|---|
 | A.1 | Số 40 506 có mấy chữ số và tổng các chữ số bằng bao nhiêu? | 5 chữ số, tổng 15 |
-| A.2 | Điền dấu: 452 826 … 452 827 | &lt; |
+| A.2 | Điền dấu: 452 826 … 452 827 | < |
 | A.3 | Viết số gồm tổng: 30 000 + 400 + 7 | 30 407 |
 | A.4 | Số liền sau của 189 018 là số nào? | 189 019 |
 | A.5 | Chữ số hàng chục của số 895 870 có giá trị bao nhiêu? | 70 |
@@ -387,7 +387,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | E.1 | Vì sao phải giảng lại cho bạn? | vì giảng được mới là hiểu thật |
 | E.2 | Tìm số bé nhất chia cho 5 dư 2 và chia cho 3 dư 1. | 7 |
 | E.3 | Có bao nhiêu số chẵn từ 10 đến 40? | 16 |
-| E.4 | Điền dấu: 471 161 … 471 162 | &lt; |
+| E.4 | Điền dấu: 471 161 … 471 162 | < |
 | E.5 | Làm tròn 4 762 đến hàng trăm. | 4 800 |
 
 ---

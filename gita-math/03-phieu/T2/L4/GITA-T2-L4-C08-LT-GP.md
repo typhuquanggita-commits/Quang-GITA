@@ -30,7 +30,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần A**
 
-- **Bài A.1** — a) &gt; · b) &lt; · c) &lt; · d) &gt; · e) &gt;
+- **Bài A.1** — a) > · b) < · c) < · d) > · e) >
 - **Bài A.2** — a) 126 023 · b) 42 654 · c) 28 613 · d) 76 636 · e) 13 562
 - **Bài A.3** — a) 261 136 · b) 527 630 · c) 437 689 · d) 335 141 · e) 452 485
 - **Bài A.4** — a) 2 phần 3 · b) 8 phần 7 · c) 1 phần 2 · d) 4 phần 7 · e) 1 · f) 7 phần 4
@@ -55,7 +55,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần D**
 
 - **Bài D.1** — a) Thống kê mô tả sơ cấp, trung bình cộng, tỉ số phần trăm · b) Đọc bảng số liệu thống kê · c) Đề cho bảng hoặc biểu đồ kèm nhiều câu hỏi · d) Ghi lại số liệu, trả lời từng câu bằng công cụ tương ứng · e) Đọc nhầm cột, hoặc quên một môn khi cộng tổng. · f) 6,67 bạn
-- **Bài D.2** — a) Phần bù tới 1, phân số trung gian · b) So sánh phân số bằng kĩ thuật đặc biệt · c) Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 · d) So phần bù; hoặc chèn phân số trung gian · e) So phần bù rồi kết luận cùng chiều với phần bù. · f) &lt;
+- **Bài D.2** — a) Phần bù tới 1, phân số trung gian · b) So sánh phân số bằng kĩ thuật đặc biệt · c) Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 · d) So phần bù; hoặc chèn phân số trung gian · e) So phần bù rồi kết luận cùng chiều với phần bù. · f) <
 - **Bài D.3** — a) Quy đồng, nhân chia phân số · b) Bốn phép tính với phân số · c) Biểu thức chỉ gồm phân số · d) Chọn quy tắc theo phép tính, rút gọn cuối cùng · e) Quy đồng cả khi nhân, hoặc cộng thẳng tử với tử và mẫu với mẫu. · f) 5 phần 6
 - **Bài D.4** — a) Tính chất cơ bản của phân số · b) Rút gọn phân số · c) Tử số và mẫu số có ước chung lớn hơn 1 · d) Chia cả tử và mẫu cho ước chung · e) Chỉ chia tử số hoặc chỉ chia mẫu số. · f) 3 phần 4
 - **Bài D.5** — a) Thứ tự thực hiện phép tính, tính chất phân phối · b) Biểu thức phân số nhiều phép tính · c) Biểu thức gồm nhiều phân số và nhiều phép tính · d) Quan sát rút gọn trước, sau đó theo thứ tự thực hiện · e) Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. · f) 1
@@ -232,7 +232,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
-| A.1 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | &gt; · &lt; · &lt; · &gt;… |
+| A.1 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | > · < · < · >… |
 | A.2 | Cộng, trừ số tự nhiên | Kĩ thuật đặt tính, nhớ và mượn | Yêu cầu “đặt tính rồi tính” | Đặt tính thẳng hàng, tính từ hàng đơn vị | Làm tròn một số hạng để ước lượng trước, dùng kết quả ước lượng để phát hiện sai sót. | 126 023 · 42 654 · 28 613 · 76 636… |
 | A.3 | Viết số từ dạng tổng theo hàng | Cấu tạo thập phân của số tự nhiên | Tổng gồm các số tròn chục, tròn trăm, tròn nghìn… | Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết | Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số. | 261 136 · 527 630 · 437 689 · 335 141… |
 | A.4 | Rút gọn phân số | Tính chất cơ bản của phân số | Tử số và mẫu số có ước chung lớn hơn 1 | Chia cả tử và mẫu cho ước chung | Tìm ngay ước chung lớn nhất để rút gọn một lần là xong. | 2 phần 3 · 8 phần 7 · 1 phần 2 · 4 phần 7… |
@@ -364,7 +364,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 
 | Bài | Đề tương tự | Đáp số |
 |---|---|---|
-| A.1 | So sánh: 3 phần 5 … 3 phần 7 | &gt; |
+| A.1 | So sánh: 3 phần 5 … 3 phần 7 | > |
 | A.2 | Đặt tính rồi tính: 4 328 + 1 795 | 6 123 |
 | A.3 | Viết số gồm tổng: 30 000 + 400 + 7 | 30 407 |
 | A.4 | Rút gọn 18 phần 24. | 3 phần 4 |
@@ -380,7 +380,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | C.4 | “Trung bình mỗi ngày…” là dấu hiệu của dạng nào? | trung bình cộng |
 | C.5 | Tổng dãy cách đều tính nhanh bằng cách nào? | (đầu + cuối) × số số hạng : 2 |
 | D.1 | Bảng: Toán 10, Văn 6, Anh 4. Trung bình mỗi môn bao nhiêu bạn? | 6,67 bạn |
-| D.2 | So sánh: 5 phần 6 … 7 phần 8 | &lt; |
+| D.2 | So sánh: 5 phần 6 … 7 phần 8 | < |
 | D.3 | Tính: 2 phần 3 + 1 phần 6 | 5 phần 6 |
 | D.4 | Rút gọn 18 phần 24. | 3 phần 4 |
 | D.5 | Tính: (1 phần 2 + 1 phần 3) × 6 phần 5 | 1 |

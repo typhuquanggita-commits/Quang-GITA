@@ -31,7 +31,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần I**
 
 - **Bài I.1** — a) 5 chữ số, tổng 22 · b) 5 chữ số, tổng 20 · c) 5 chữ số, tổng 10 · d) 4 chữ số, tổng 14 · e) 5 chữ số, tổng 29 · f) 5 chữ số, tổng 16
-- **Bài I.2** — a) &lt; · b) &gt; · c) &lt; · d) &lt; · e) &gt; · f) &gt; · g) &lt;
+- **Bài I.2** — a) < · b) > · c) < · d) < · e) > · f) > · g) <
 - **Bài I.3** — a) 3 175 · b) 664 · c) 2 316 · d) 629 · e) 356 · f) 720 · g) 5 789 · h) 761
 - **Bài I.4** — a) 3 262 · b) 3 638 · c) số lẻ · d) 30 419 · e) 93 525
 - **Bài I.5** — a) chữ số 4, giá trị 40 000 · b) chữ số 4, giá trị 4 000 · c) chữ số 2, giá trị 200 · d) chữ số 6, giá trị 60
@@ -80,7 +80,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 *Điểm chốt:* Tổng các chữ số **không** phụ thuộc thứ tự các chữ số.
 
-### Bài I.2 — Điền dấu &lt;, &gt;, = thích hợp
+### Bài I.2 — Điền dấu <, >, = thích hợp
 
 So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 
@@ -233,7 +233,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
 | I.1 | Đếm chữ số, tính tổng chữ số | Cấu tạo số, tổng chữ số | Yêu cầu “có mấy chữ số”, “tổng các chữ số” | Tách lớp để đếm; cộng rời từng chữ số | Ghép cặp các chữ số cộng lại tròn 10 rồi cộng nhanh. | 5 chữ số, tổng 22 · 5 chữ số, tổng 20 · 5 chữ số, tổng 10 · 4 chữ số, tổng 14… |
-| I.2 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | &lt; · &gt; · &lt; · &lt;… |
+| I.2 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | < · > · < · <… |
 | I.3 | Nhân, chia số tự nhiên | Kĩ thuật đặt tính nhân, chia | Yêu cầu “đặt tính rồi tính” với phép nhân, chia | Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ chữ số | Kiểm tra kết quả bằng phép tính ngược: thương × số chia = số bị chia. | 3 175 · 664 · 2 316 · 629… |
 | I.4 | Nhận biết chẵn – lẻ và số liền kề | Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2 | Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” | Xét chữ số tận cùng; cộng hoặc trừ 1 đơn vị | Che hết các chữ số, chỉ để lộ chữ số cuối. | 3 262 · 3 638 · số lẻ · 30 419… |
 | I.5 | Xác định chữ số và giá trị chữ số theo hàng | Cấu tạo thập phân của số tự nhiên | Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” | Đánh số hàng từ phải sang trái rồi tra bảng hàng | Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị. | chữ số 4, giá trị 40 000 · chữ số 4, giá trị 4 000 · chữ số 2, giá trị 200 · chữ số 6, giá trị 60 |
@@ -365,7 +365,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | Bài | Đề tương tự | Đáp số |
 |---|---|---|
 | I.1 | Số 40 506 có mấy chữ số và tổng các chữ số bằng bao nhiêu? | 5 chữ số, tổng 15 |
-| I.2 | Điền dấu: 86 398 … 86 399 | &lt; |
+| I.2 | Điền dấu: 86 398 … 86 399 | < |
 | I.3 | Đặt tính rồi tính: 3 045 × 24 | 73 080 |
 | I.4 | Số liền sau của 3 263 là số nào? | 3 264 |
 | I.5 | Chữ số hàng chục của số 44 267 có giá trị bao nhiêu? | 60 |

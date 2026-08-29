@@ -32,7 +32,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài I.1** — a) 41 000 · b) 341 000 · c) 156 480 · d) 183 000 · e) 363 300 · f) 446 280 · g) 127 130
 - **Bài I.2** — a) 4 611 377 · b) 6 233 103 · c) 4 564 940 · d) 4 035 647 · e) 7 128 878 · f) 2 633 257
-- **Bài I.3** — a) &lt; · b) &gt; · c) &gt; · d) &gt; · e) &gt;
+- **Bài I.3** — a) < · b) > · c) > · d) > · e) >
 - **Bài I.4** — a) chữ số 1, giá trị 1 000 000 · b) chữ số 8, giá trị 800 000 · c) chữ số 9, giá trị 90 000 · d) chữ số 0, giá trị 0 · e) chữ số 4, giá trị 40 · f) chữ số 0, giá trị 0
 - **Bài I.5** — a) 2 022 206 · b) 2 553 105 · c) số chẵn · d) 4 046 517 · e) số chẵn · f) số chẵn
 
@@ -86,7 +86,7 @@ Mỗi số hạng cho biết một hàng. Xếp các chữ số vào đúng hàn
 
 *Điểm chốt:* Hàng khuyết trong tổng vẫn phải có chữ số **0** trong số viết ra.
 
-### Bài I.3 — Điền dấu &lt;, &gt;, = thích hợp
+### Bài I.3 — Điền dấu <, >, = thích hợp
 
 So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 
@@ -234,7 +234,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 |---|---|---|---|---|---|---|
 | I.1 | Làm tròn số tự nhiên | Quy tắc làm tròn, giá trị hàng | Cụm từ “làm tròn đến hàng …” | Gạch ngăn hàng → xét chữ số liền sau → giữ nguyên hoặc thêm 1 | Che toàn bộ phần đuôi sau nét gạch, chỉ để lộ đúng một chữ số. | 41 000 · 341 000 · 156 480 · 183 000… |
 | I.2 | Viết số từ dạng tổng theo hàng | Cấu tạo thập phân của số tự nhiên | Tổng gồm các số tròn chục, tròn trăm, tròn nghìn… | Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết | Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số. | 4 611 377 · 6 233 103 · 4 564 940 · 4 035 647… |
-| I.3 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | &lt; · &gt; · &gt; · &gt;… |
+| I.3 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | < · > · > · >… |
 | I.4 | Xác định chữ số và giá trị chữ số theo hàng | Cấu tạo thập phân của số tự nhiên | Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” | Đánh số hàng từ phải sang trái rồi tra bảng hàng | Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị. | chữ số 1, giá trị 1 000 000 · chữ số 8, giá trị 800 000 · chữ số 9, giá trị 90 000 · chữ số 0, giá trị 0… |
 | I.5 | Nhận biết chẵn – lẻ và số liền kề | Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2 | Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” | Xét chữ số tận cùng; cộng hoặc trừ 1 đơn vị | Che hết các chữ số, chỉ để lộ chữ số cuối. | 2 022 206 · 2 553 105 · số chẵn · 4 046 517… |
 | II.1 | Điền chữ số theo điều kiện chia hết | Dấu hiệu chia hết, chữ số hàng cao nhất khác 0 | Số có ô trống hoặc dấu *, kèm điều kiện chia hết | Dùng dấu hiệu để lập điều kiện cho dấu * rồi thử 0–9 | Với 3 và 9: tính tổng các chữ số đã biết một lần duy nhất, rồi tìm phần bù cần thêm. | 4 · 8 · 0, 9 · 0, 5 |
@@ -366,7 +366,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 |---|---|---|
 | I.1 | Làm tròn 4 762 đến hàng trăm. | 4 800 |
 | I.2 | Viết số gồm tổng: 30 000 + 400 + 7 | 30 407 |
-| I.3 | Điền dấu: 3 686 731 … 3 686 732 | &lt; |
+| I.3 | Điền dấu: 3 686 731 … 3 686 732 | < |
 | I.4 | Chữ số hàng chục của số 1 895 040 có giá trị bao nhiêu? | 40 |
 | I.5 | Số liền sau của 2 022 205 là số nào? | 2 022 206 |
 | II.1 | Tìm chữ số thay cho * để 12* chia hết cho 5. | 0, 5 |

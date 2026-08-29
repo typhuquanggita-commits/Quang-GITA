@@ -39,7 +39,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần II**
 
 - **Bài II.1** — a) 3 215 dư 1 · b) 3 690 dư 1 · c) 106 dư 4 · d) 5 222 dư 1
-- **Bài II.2** — a) &gt; · b) &lt; · c) &lt; · d) &gt;
+- **Bài II.2** — a) > · b) < · c) < · d) >
 - **Bài II.3** — a) 7 tuần 5 ngày · b) XXI · c) 31 · d) không · e) XX · f) 5 tuần 0 ngày · g) 30
 - **Bài II.4** — a) 1 030 · b) 16 238 · c) 38 325 · d) 40 242
 - **Bài II.5** — a) có (chữ số tận cùng 5) · b) không (chữ số tận cùng 4) · c) không (tổng chữ số 4) · d) không (tổng chữ số 13) · e) không (chữ số tận cùng 6) · f) không (chữ số tận cùng 9) · g) có (chữ số tận cùng 0) · h) không (chữ số tận cùng 3)
@@ -238,7 +238,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | I.4 | Đổi và tính toán với đơn vị thời gian | Quan hệ giờ – phút – giây | Số đo có chữ “giờ”, “phút”, “giây” | Quy về phút rồi tính, cuối cùng đổi lại giờ và phút | Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm. | 1 giờ 52 phút · 538 · 1 giờ 12 phút · 9 giờ 50 phút… |
 | I.5 | Số đo có nhiều đơn vị | Bảng đơn vị khối lượng | Số đo viết dưới dạng “… tấn … tạ … kg” | Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư | Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ. | 3 004 · 4 tấn 2 tạ 30 kg · 3 628 · 2 701… |
 | II.1 | Phép chia có dư | Quan hệ giữa số bị chia, số chia, thương và số dư | Đề yêu cầu ghi cả thương và số dư | Đặt tính chia, kiểm tra điều kiện số dư | Ước lượng thương bằng cách làm tròn số chia trước khi chia. | 3 215 dư 1 · 3 690 dư 1 · 106 dư 4 · 5 222 dư 1 |
-| II.2 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &gt; · &lt; · &lt; · &gt; |
+| II.2 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | > · < · < · > |
 | II.3 | Lịch và đơn vị thời gian lớn | Số ngày các tháng, năm nhuận, thế kỉ | Đề hỏi về tháng, năm, thế kỉ | Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400 | Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ. | 7 tuần 5 ngày · XXI · 31 · không… |
 | II.4 | Bốn phép tính với số đo | Đổi đơn vị, bốn phép tính | Các số hạng có đơn vị khác nhau trong cùng một phép tính | Đổi về đơn vị của kết quả rồi tính | Đọc chỗ chấm trước, biết ngay đơn vị đích. | 1 030 · 16 238 · 38 325 · 40 242 |
 | II.5 | Kiểm tra chia hết bằng dấu hiệu | Dấu hiệu chia hết cho 2, 3, 5, 9 | Câu hỏi “có chia hết cho … không” | Chọn đúng dấu hiệu theo số chia rồi kiểm tra | Cộng chữ số theo cặp tròn 9, phần dư chính là số dư khi chia 9. | có (chữ số tận cùng 5) · không (chữ số tận cùng 4) · không (tổng chữ số 4) · không (tổng chữ số 13)… |
@@ -370,7 +370,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | I.4 | 155 phút = … giờ … phút | 2 giờ 35 phút |
 | I.5 | 3 450 kg = … tấn … tạ … kg | 3 tấn 4 tạ 50 kg |
 | II.1 | Tìm thương và số dư của 1 234 : 7 | 176 dư 2 |
-| II.2 | So sánh: 3 kg … 2 500 g | &gt; |
+| II.2 | So sánh: 3 kg … 2 500 g | > |
 | II.3 | Năm 1975 thuộc thế kỉ thứ mấy? | XX |
 | II.4 | 2 m 30 cm + 150 cm = … cm | 380 |
 | II.5 | Số 1 815 có chia hết cho 9 không? | không |

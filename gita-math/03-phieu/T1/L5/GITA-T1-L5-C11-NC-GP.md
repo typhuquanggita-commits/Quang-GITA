@@ -42,7 +42,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài II.2** — a) XXI · b) 6 tuần 0 ngày · c) không · d) 31 · e) 31 · f) 1 tuần 3 ngày
 - **Bài II.3** — a) 10 906 · b) 1 413 · c) 15 528 · d) 2 298 · e) 8 370
 - **Bài II.4** — a) không chia hết (218 m không chia hết cho 5 m) · b) 11 viên (làm tròn lên) · c) 175 viên (làm tròn lên) · d) 35 viên (làm tròn lên) · e) không chia hết (102 m không chia hết cho 5 m)
-- **Bài II.5** — a) &gt; · b) &lt; · c) &gt; · d) &lt; · e) &gt;
+- **Bài II.5** — a) > · b) < · c) > · d) < · e) >
 
 **Phần III**
 
@@ -241,7 +241,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | II.2 | Lịch và đơn vị thời gian lớn | Số ngày các tháng, năm nhuận, thế kỉ | Đề hỏi về tháng, năm, thế kỉ | Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400 | Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ. | XXI · 6 tuần 0 ngày · không · 31… |
 | II.3 | Bốn phép tính với số đo | Đổi đơn vị, bốn phép tính | Các số hạng có đơn vị khác nhau trong cùng một phép tính | Đổi về đơn vị của kết quả rồi tính | Đọc chỗ chấm trước, biết ngay đơn vị đích. | 10 906 · 1 413 · 15 528 · 2 298… |
 | II.4 | Chu vi, diện tích trong tình huống thực tế | Công thức chu vi, diện tích; phép chia | Từ khoá “rào xung quanh”, “lát gạch”, “trồng cây quanh” | Đọc vị chu vi hay diện tích rồi tính | Nhìn đơn vị của đáp số: mét thì là chu vi, mét vuông thì là diện tích. | không chia hết (218 m không chia hết cho 5 m) · 11 viên (làm tròn lên) · 175 viên (làm tròn lên) · 35 viên (làm tròn lên)… |
-| II.5 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &gt; · &lt; · &gt; · &lt;… |
+| II.5 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | > · < · > · <… |
 | III.1 | Đổi đơn vị thể tích, dung tích | Bảng đơn vị thể tích; quan hệ dm³ – lít | Đơn vị có mũ ba, hoặc lít, mi-li-lít | Đếm bậc rồi nhân, chia 1 000 | Mỗi bậc thêm ba chữ số 0. | 90 · 30 000 · 20 · 59 000… |
 | III.2 | Bài toán đại lượng có lời văn | Nhân, chia số tự nhiên; đổi đơn vị khối lượng | Đơn vị trong câu hỏi khác đơn vị trong dữ kiện | Tính theo đơn vị dữ kiện rồi đổi ở bước cuối | 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ. | 14 tạ 80 kg · 2 tạ 50 kg · 1 tạ 75 kg · 10 tạ 20 kg |
 | III.3 | Tính thời điểm trong ngày | Quan hệ giờ – phút, phép chia có dư | Cho thời điểm bắt đầu và khoảng thời gian | Quy về phút, cộng trừ, đổi lại | Cộng tròn giờ trước rồi cộng phần phút lẻ sau. | 17 giờ 42 phút · 10 giờ 0 phút · 13 giờ 39 phút · 11 giờ 11 phút… |
@@ -373,7 +373,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | II.2 | Năm 1975 thuộc thế kỉ thứ mấy? | XX |
 | II.3 | 2 m 30 cm + 150 cm = … cm | 380 |
 | II.4 | Vườn dài 20 m rộng 10 m, rào xung quanh cần bao nhiêu mét rào? | 60 m |
-| II.5 | So sánh: 3 kg … 2 500 g | &gt; |
+| II.5 | So sánh: 3 kg … 2 500 g | > |
 | III.1 | 2 m³ = … lít | 2 000 |
 | III.2 | Xe chở 20 bao gạo, mỗi bao 50 kg. Xe chở mấy tạ? | 10 tạ |
 | III.3 | Tàu chạy lúc 7 giờ 40 phút, đi hết 2 giờ 35 phút. Đến lúc mấy giờ? | 10 giờ 15 phút |

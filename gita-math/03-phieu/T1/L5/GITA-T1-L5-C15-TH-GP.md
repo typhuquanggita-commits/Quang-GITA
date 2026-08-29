@@ -66,7 +66,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài V.2** — a) 240 cm · b) 96 cm · c) 160 cm · d) 168 cm · e) 200 cm
 - **Bài V.3** — a) 505,54 cm² · b) 248,54 cm² · c) 907,46 cm² · d) 329,7 cm² · e) 530,66 cm² · f) 7,74 cm²
 - **Bài V.4** — a) 3, 7, 15, 27 · b) 63 · c) 183 · d) 36 · e) có, khoảng cách 4 · f) 52
-- **Bài V.5** — a) 1 369 · b) 576 · c) 25 · d) 11 · e) 8 · f) &lt;
+- **Bài V.5** — a) 1 369 · b) 576 · c) 25 · d) 11 · e) 8 · f) <
 
 ---
 
@@ -388,7 +388,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | V.2 | Ghép 3 hình vuông cạnh 4 cm thành hàng. Chu vi hình chữ nhật là bao nhiêu? | 32 cm |
 | V.3 | Hình tròn bán kính 5 cm nội tiếp hình vuông. Diện tích phần ngoài hình tròn bằng bao nhiêu? | 21,5 cm² |
 | V.4 | Dãy 1, 2, 4, 7, 11, … số hạng thứ 8 là số nào? | 29 |
-| V.5 | So sánh: 99 × 101 … 100 × 100 | &lt; |
+| V.5 | So sánh: 99 × 101 … 100 × 100 | < |
 
 ---
 

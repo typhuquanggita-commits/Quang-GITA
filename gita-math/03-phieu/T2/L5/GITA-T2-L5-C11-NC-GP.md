@@ -33,7 +33,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài I.1** — a) số lẻ · b) 4 920 448 · c) 6 000 748 · d) 6 696 064
 - **Bài I.2** — a) 7 chữ số, tổng 33 · b) 7 chữ số, tổng 33 · c) 7 chữ số, tổng 35 · d) 7 chữ số, tổng 45 · e) 7 chữ số, tổng 48
 - **Bài I.3** — a) 4 899 497 · b) 1 605 085 · c) 2 808 781 · d) 7 131 890 · e) 8 252 027
-- **Bài I.4** — a) &gt; · b) &gt; · c) &lt; · d) &gt; · e) &gt; · f) &gt; · g) &lt; · h) &lt;
+- **Bài I.4** — a) > · b) > · c) < · d) > · e) > · f) > · g) < · h) <
 - **Bài I.5** — a) chữ số 8, giá trị 8 000 000 · b) chữ số 0, giá trị 0 · c) chữ số 9, giá trị 90 000 · d) chữ số 8, giá trị 8 000 · e) chữ số 8, giá trị 800 · f) chữ số 2, giá trị 20 · g) chữ số 0, giá trị 0
 
 **Phần II**
@@ -92,7 +92,7 @@ Mỗi số hạng cho biết một hàng. Xếp các chữ số vào đúng hàn
 
 *Điểm chốt:* Hàng khuyết trong tổng vẫn phải có chữ số **0** trong số viết ra.
 
-### Bài I.4 — Điền dấu &lt;, &gt;, = thích hợp
+### Bài I.4 — Điền dấu <, >, = thích hợp
 
 So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 
@@ -235,7 +235,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | I.1 | Nhận biết chẵn – lẻ và số liền kề | Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2 | Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” | Xét chữ số tận cùng; cộng hoặc trừ 1 đơn vị | Che hết các chữ số, chỉ để lộ chữ số cuối. | số lẻ · 4 920 448 · 6 000 748 · 6 696 064 |
 | I.2 | Đếm chữ số, tính tổng chữ số | Cấu tạo số, tổng chữ số | Yêu cầu “có mấy chữ số”, “tổng các chữ số” | Tách lớp để đếm; cộng rời từng chữ số | Ghép cặp các chữ số cộng lại tròn 10 rồi cộng nhanh. | 7 chữ số, tổng 33 · 7 chữ số, tổng 33 · 7 chữ số, tổng 35 · 7 chữ số, tổng 45… |
 | I.3 | Viết số từ dạng tổng theo hàng | Cấu tạo thập phân của số tự nhiên | Tổng gồm các số tròn chục, tròn trăm, tròn nghìn… | Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết | Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số. | 4 899 497 · 1 605 085 · 2 808 781 · 7 131 890… |
-| I.4 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | &gt; · &gt; · &lt; · &gt;… |
+| I.4 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | > · > · < · >… |
 | I.5 | Xác định chữ số và giá trị chữ số theo hàng | Cấu tạo thập phân của số tự nhiên | Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” | Đánh số hàng từ phải sang trái rồi tra bảng hàng | Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị. | chữ số 8, giá trị 8 000 000 · chữ số 0, giá trị 0 · chữ số 9, giá trị 90 000 · chữ số 8, giá trị 8 000… |
 | II.1 | Xét chia hết của tổng, hiệu | Tính chất chia hết của tổng và hiệu | Câu hỏi về tổng hoặc hiệu, không yêu cầu kết quả cụ thể | Xét số dư từng số hạng rồi cộng, trừ các số dư | Chỉ cộng các **số dư**, không cộng các số. | có · có · có · có… |
 | II.2 | Kiểm tra chia hết bằng dấu hiệu | Dấu hiệu chia hết cho 2, 3, 5, 9 | Câu hỏi “có chia hết cho … không” | Chọn đúng dấu hiệu theo số chia rồi kiểm tra | Cộng chữ số theo cặp tròn 9, phần dư chính là số dư khi chia 9. | không (chữ số tận cùng 1) · có (chữ số tận cùng 2) · không (tổng chữ số 13) · không (chữ số tận cùng 3)… |
@@ -367,7 +367,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | I.1 | Số liền sau của 287 183 là số nào? | 287 184 |
 | I.2 | Số 40 506 có mấy chữ số và tổng các chữ số bằng bao nhiêu? | 5 chữ số, tổng 15 |
 | I.3 | Viết số gồm tổng: 30 000 + 400 + 7 | 30 407 |
-| I.4 | Điền dấu: 512 096 … 512 097 | &lt; |
+| I.4 | Điền dấu: 512 096 … 512 097 | < |
 | I.5 | Chữ số hàng chục của số 8 098 820 có giá trị bao nhiêu? | 20 |
 | II.1 | Tổng 45 + 27 có chia hết cho 9 không? | có |
 | II.2 | Số 331 có chia hết cho 9 không? | không |

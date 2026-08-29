@@ -30,7 +30,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần I**
 
-- **Bài I.1** — a) &gt; · b) &gt; · c) &gt; · d) &gt; · e) &gt; · f) &lt; · g) &gt; · h) &lt;
+- **Bài I.1** — a) > · b) > · c) > · d) > · e) > · f) < · g) > · h) <
 - **Bài I.2** — a) chữ số 6, giá trị 60 000 · b) chữ số 0, giá trị 0 · c) chữ số 2, giá trị 20 · d) chữ số 0, giá trị 0
 - **Bài I.3** — a) số lẻ · b) 22 846 · c) số lẻ · d) số lẻ · e) 82 706 · f) 95 567
 - **Bài I.4** — a) 5 chữ số, tổng 19 · b) 4 chữ số, tổng 11 · c) 5 chữ số, tổng 18 · d) 5 chữ số, tổng 15 · e) 5 chữ số, tổng 25 · f) 5 chữ số, tổng 33
@@ -74,7 +74,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 Đọc kĩ phần chữ đậm: đó là câu cần nhớ, không phải con số.
 
-### Bài I.1 — Điền dấu &lt;, &gt;, = thích hợp
+### Bài I.1 — Điền dấu <, >, = thích hợp
 
 So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 
@@ -232,7 +232,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
-| I.1 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | &gt; · &gt; · &gt; · &gt;… |
+| I.1 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | > · > · > · >… |
 | I.2 | Xác định chữ số và giá trị chữ số theo hàng | Cấu tạo thập phân của số tự nhiên | Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” | Đánh số hàng từ phải sang trái rồi tra bảng hàng | Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị. | chữ số 6, giá trị 60 000 · chữ số 0, giá trị 0 · chữ số 2, giá trị 20 · chữ số 0, giá trị 0 |
 | I.3 | Nhận biết chẵn – lẻ và số liền kề | Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2 | Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” | Xét chữ số tận cùng; cộng hoặc trừ 1 đơn vị | Che hết các chữ số, chỉ để lộ chữ số cuối. | số lẻ · 22 846 · số lẻ · số lẻ… |
 | I.4 | Đếm chữ số, tính tổng chữ số | Cấu tạo số, tổng chữ số | Yêu cầu “có mấy chữ số”, “tổng các chữ số” | Tách lớp để đếm; cộng rời từng chữ số | Ghép cặp các chữ số cộng lại tròn 10 rồi cộng nhanh. | 5 chữ số, tổng 19 · 4 chữ số, tổng 11 · 5 chữ số, tổng 18 · 5 chữ số, tổng 15… |
@@ -364,7 +364,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 
 | Bài | Đề tương tự | Đáp số |
 |---|---|---|
-| I.1 | Điền dấu: 74 493 … 74 494 | &lt; |
+| I.1 | Điền dấu: 74 493 … 74 494 | < |
 | I.2 | Chữ số hàng chục của số 60 820 có giá trị bao nhiêu? | 20 |
 | I.3 | Số liền sau của 20 941 là số nào? | 20 942 |
 | I.4 | Số 40 506 có mấy chữ số và tổng các chữ số bằng bao nhiêu? | 5 chữ số, tổng 15 |

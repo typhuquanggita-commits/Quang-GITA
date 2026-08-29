@@ -204,7 +204,7 @@ e) Có bao nhiêu số từ 213 đến 780 vừa chia hết cho 2 vừa chia h�
 
 ### Bài 5. (5 điểm) So sánh hai biểu thức mà không cần tính
 
-Điền dấu &lt;, &gt;, = và giải thích ngắn.
+Điền dấu <, >, = và giải thích ngắn.
 
 a) 773 × 11 … 773 × 12
 b) 653 × 5 … 653 × 6
@@ -428,7 +428,7 @@ f) Cột 6 — Kết quả?
 **Lỗi thường gặp:** Lấy tích hai số làm khoảng cách (ví dụ dùng 27 cho “chia hết cho 3 và 9”). Phòng: Kiểm tra bằng cách viết ba số đầu tiên của dãy rồi xem khoảng cách thật.
 
 ### Bài III.5
-**Đáp số:** a) &lt; · b) &lt; · c) &lt; · d) &lt; · e) &gt;
+**Đáp số:** a) < · b) < · c) < · d) < · e) >
 **Hướng giải:** Khi hai biểu thức có phần giống nhau, chỉ cần so sánh phần khác nhau: cùng cộng thêm một số thì số nào lớn hơn vẫn lớn hơn; cùng nhân với một số khác 0 cũng vậy.
 **Nhãn tư duy:** TD5, TD2. Điểm chốt: Che phần **giống nhau** đi, chỉ so phần khác nhau.
 **Lỗi thường gặp:** Tính hết cả hai vế, vừa lâu vừa dễ sai. Phòng: Dùng bút gạch bỏ phần giống nhau ở hai vế trước khi so sánh.

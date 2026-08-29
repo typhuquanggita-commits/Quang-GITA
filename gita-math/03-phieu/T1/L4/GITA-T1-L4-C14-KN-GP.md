@@ -64,7 +64,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài E.1** — a) giới thiệu chương “Đổi đơn vị tổng hợp, thời gian và toán thực tế” và mục tiêu · b) trình bày sơ đồ tư duy chương · c) giảng một dạng bài kèm ví dụ mẫu · d) nêu lỗi hay mắc và cách phòng · e) ra một bài cho lớp làm và chữa nhanh · f) tự phân công, mỗi bạn ít nhất một phút
 - **Bài E.2** — a) “Hôm nay nhóm mình nói về Đổi đơn vị đo.” · b) Dấu … giữa hai đơn vị khác nhau · c) Bảng đơn vị đo độ dài, khối lượng · d) 5 km = … m → 5 000 · e) Đổi ngược chiều nên nhân thành chia. · f) Số bậc chính là số chữ số 0 phải thêm vào (hoặc bớt đi).
-- **Bài E.3** — a) “Hôm nay nhóm mình nói về So sánh số đo đại lượng.” · b) Hai vế có đơn vị khác nhau · c) Bảng đơn vị đo, so sánh số tự nhiên · d) So sánh: 3 kg … 2 500 g → &gt; · e) So thẳng hai con số, bỏ qua đơn vị. · f) Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số.
+- **Bài E.3** — a) “Hôm nay nhóm mình nói về So sánh số đo đại lượng.” · b) Hai vế có đơn vị khác nhau · c) Bảng đơn vị đo, so sánh số tự nhiên · d) So sánh: 3 kg … 2 500 g → > · e) So thẳng hai con số, bỏ qua đơn vị. · f) Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số.
 - **Bài E.4** — a) “Hôm nay nhóm mình nói về Số đo có nhiều đơn vị.” · b) Số đo viết dưới dạng “… tấn … tạ … kg” · c) Bảng đơn vị khối lượng · d) 3 450 kg = … tấn … tạ … kg → 3 tấn 4 tạ 50 kg · e) Cộng thẳng các số đứng trước những đơn vị khác nhau. · f) Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ.
 - **Bài E.5** — a) “Hôm nay nhóm mình nói về Lịch và đơn vị thời gian lớn.” · b) Đề hỏi về tháng, năm, thế kỉ · c) Số ngày các tháng, năm nhuận, thế kỉ · d) Năm 1975 thuộc thế kỉ thứ mấy? → XX · e) Coi mọi năm chia hết cho 4 đều là năm nhuận. · f) Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ.
 
@@ -254,7 +254,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | D.5 | Tính thời điểm trong ngày | Quan hệ giờ – phút, phép chia có dư | Cho thời điểm bắt đầu và khoảng thời gian | Quy về phút, cộng trừ, đổi lại | Cộng tròn giờ trước rồi cộng phần phút lẻ sau. | Cho thời điểm bắt đầu và khoảng thời gian · Quy về phút, cộng trừ, đổi lại · Cộng phần phút thành hơn 60 mà quên đổi thành giờ. · Quan hệ giờ – phút, phép chia có dư… |
 | E.1 | Kỹ năng thuyết trình theo nhóm | Hệ thống hoá và diễn đạt | Yêu cầu giảng lại chương theo nhóm | Chia kịch bản theo phút, phân công rõ người | Người giảng nhớ lâu hơn người nghe khoảng ba lần. | giới thiệu chương “Đổi đơn vị tổng hợp, thời gian và toán thực tế” và mục tiêu · trình bày sơ đồ tư duy chương · giảng một dạng bài kèm ví dụ mẫu · nêu lỗi hay mắc và cách phòng… |
 | E.2 | Đổi đơn vị đo | Bảng đơn vị đo độ dài, khối lượng | Dấu … giữa hai đơn vị khác nhau | Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10 | Số bậc chính là số chữ số 0 phải thêm vào (hoặc bớt đi). | “Hôm nay nhóm mình nói về Đổi đơn vị đo.” · Dấu … giữa hai đơn vị khác nhau · Bảng đơn vị đo độ dài, khối lượng · 5 km = … m → 5 000… |
-| E.3 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | “Hôm nay nhóm mình nói về So sánh số đo đại lượng.” · Hai vế có đơn vị khác nhau · Bảng đơn vị đo, so sánh số tự nhiên · So sánh: 3 kg … 2 500 g → &gt;… |
+| E.3 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | “Hôm nay nhóm mình nói về So sánh số đo đại lượng.” · Hai vế có đơn vị khác nhau · Bảng đơn vị đo, so sánh số tự nhiên · So sánh: 3 kg … 2 500 g → >… |
 | E.4 | Số đo có nhiều đơn vị | Bảng đơn vị khối lượng | Số đo viết dưới dạng “… tấn … tạ … kg” | Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư | Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ. | “Hôm nay nhóm mình nói về Số đo có nhiều đơn vị.” · Số đo viết dưới dạng “… tấn … tạ … kg” · Bảng đơn vị khối lượng · 3 450 kg = … tấn … tạ … kg → 3 tấn 4 tạ 50 kg… |
 | E.5 | Lịch và đơn vị thời gian lớn | Số ngày các tháng, năm nhuận, thế kỉ | Đề hỏi về tháng, năm, thế kỉ | Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400 | Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ. | “Hôm nay nhóm mình nói về Lịch và đơn vị thời gian lớn.” · Đề hỏi về tháng, năm, thế kỉ · Số ngày các tháng, năm nhuận, thế kỉ · Năm 1975 thuộc thế kỉ thứ mấy? → XX… |
 
@@ -386,7 +386,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | D.5 | Tàu chạy lúc 7 giờ 40 phút, đi hết 2 giờ 35 phút. Đến lúc mấy giờ? | 10 giờ 15 phút |
 | E.1 | Vì sao phải giảng lại cho bạn? | vì giảng được mới là hiểu thật |
 | E.2 | 5 km = … m | 5 000 |
-| E.3 | So sánh: 3 kg … 2 500 g | &gt; |
+| E.3 | So sánh: 3 kg … 2 500 g | > |
 | E.4 | 3 450 kg = … tấn … tạ … kg | 3 tấn 4 tạ 50 kg |
 | E.5 | Năm 1975 thuộc thế kỉ thứ mấy? | XX |
 

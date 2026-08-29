@@ -40,7 +40,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài II.1** — a) không · b) XXI · c) 31 · d) 1 tuần 3 ngày · e) XXI · f) không
 - **Bài II.2** — a) 190,17 · b) 67,3 · c) 32,02 · d) 49,97 · e) 56,94 · f) 103,09
-- **Bài II.3** — a) &gt; · b) &lt; · c) &gt; · d) &gt; · e) &lt;
+- **Bài II.3** — a) > · b) < · c) > · d) > · e) <
 - **Bài II.4** — a) 17 187 · b) 4 440 · c) 4 200 · d) 7 992 · e) 4 438 · f) 1 316 · g) 992
 - **Bài II.5** — a) 348 cm² · b) 391 cm² · c) 468 cm² · d) 60 cm² · e) 252 cm²
 
@@ -239,7 +239,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | I.5 | Số đo có nhiều đơn vị | Bảng đơn vị khối lượng | Số đo viết dưới dạng “… tấn … tạ … kg” | Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư | Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ. | 1 tạ 28 kg · 4 tấn 9 tạ 89 kg · 5 tấn 3 tạ 41 kg · 296… |
 | II.1 | Lịch và đơn vị thời gian lớn | Số ngày các tháng, năm nhuận, thế kỉ | Đề hỏi về tháng, năm, thế kỉ | Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400 | Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ. | không · XXI · 31 · 1 tuần 3 ngày… |
 | II.2 | Bốn phép tính với số thập phân | Kĩ thuật tính với số thập phân | Các số có dấu phẩy | Chọn quy tắc đặt dấu phẩy theo phép tính | Ước lượng bằng cách làm tròn để kiểm tra vị trí dấu phẩy. | 190,17 · 67,3 · 32,02 · 49,97… |
-| II.3 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &gt; · &lt; · &gt; · &gt;… |
+| II.3 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | > · < · > · >… |
 | II.4 | Bốn phép tính với số đo | Đổi đơn vị, bốn phép tính | Các số hạng có đơn vị khác nhau trong cùng một phép tính | Đổi về đơn vị của kết quả rồi tính | Đọc chỗ chấm trước, biết ngay đơn vị đích. | 17 187 · 4 440 · 4 200 · 7 992… |
 | II.5 | Diện tích các hình phẳng cơ bản | Công thức diện tích hình bình hành, hình thoi, hình tam giác | Đề cho đáy và chiều cao, hoặc hai đường chéo | Nhận dạng hình rồi chọn công thức | Tam giác bằng nửa hình bình hành cùng đáy cùng chiều cao. | 348 cm² · 391 cm² · 468 cm² · 60 cm²… |
 | III.1 | Tính thời điểm trong ngày | Quan hệ giờ – phút, phép chia có dư | Cho thời điểm bắt đầu và khoảng thời gian | Quy về phút, cộng trừ, đổi lại | Cộng tròn giờ trước rồi cộng phần phút lẻ sau. | 17 giờ 21 phút · 17 giờ 43 phút · 16 giờ 51 phút · 18 giờ 2 phút |
@@ -371,7 +371,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | I.5 | 3 450 kg = … tấn … tạ … kg | 3 tấn 4 tạ 50 kg |
 | II.1 | Năm 1975 thuộc thế kỉ thứ mấy? | XX |
 | II.2 | Tính: 3,25 × 4 | 13 |
-| II.3 | So sánh: 3 kg … 2 500 g | &gt; |
+| II.3 | So sánh: 3 kg … 2 500 g | > |
 | II.4 | 2 m 30 cm + 150 cm = … cm | 380 |
 | II.5 | Tam giác đáy 10 cm, cao 6 cm. Diện tích bằng bao nhiêu? | 30 cm² |
 | III.1 | Tàu chạy lúc 7 giờ 40 phút, đi hết 2 giờ 35 phút. Đến lúc mấy giờ? | 10 giờ 15 phút |

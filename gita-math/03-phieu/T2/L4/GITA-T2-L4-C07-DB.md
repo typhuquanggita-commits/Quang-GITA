@@ -174,7 +174,7 @@ f) Dãy 7, 9, 11, …, 65 có bao nhiêu số hạng?
 
 ### Bài 2. (5 điểm) So sánh hai số đo khác đơn vị
 
-Điền dấu &lt;, &gt;, = thích hợp.
+Điền dấu <, >, = thích hợp.
 
 a) 25 cm … 621 dam
 b) 72 tấn … 6 402 dag
@@ -401,7 +401,7 @@ f) Lỗi nào dễ mắc ở đề này?
 **Lỗi thường gặp:** Quên cộng 1 nên thiếu một số hạng. Phòng: Thử với dãy ngắn (3 số hạng) để kiểm chứng công thức.
 
 ### Bài C.2
-**Đáp số:** a) &lt; · b) &gt; · c) &gt; · d) &gt;
+**Đáp số:** a) < · b) > · c) > · d) >
 **Hướng giải:** Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.

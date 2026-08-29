@@ -66,7 +66,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài E.2** — a) Đếm chữ số theo nhóm độ dài · b) Bài toán đánh số trang, đánh số nhà, đánh số vé · c) Đếm số hạng dãy cách đều, cấu tạo số · d) Chia nhóm 1 chữ số – 2 chữ số – 3 chữ số rồi nhân và cộng · e) Sách 100 trang luôn dùng 192 chữ số; nhớ mốc này để kiểm tra nhanh. · f) Lấy số trang nhân với số chữ số của trang cuối.
 - **Bài E.3** — a) Xét chia hết của tổng, hiệu · b) Câu hỏi về tổng hoặc hiệu, không yêu cầu kết quả cụ thể · c) Tính chất chia hết của tổng và hiệu · d) Xét số dư từng số hạng rồi cộng, trừ các số dư · e) Chỉ cộng các **số dư**, không cộng các số. · f) Cộng hai số ra rồi mới chia — mất thời gian và dễ sai tính.
 - **Bài E.4** — a) Ước, bội, ƯCLN, BCNN · b) Từ khoá “ước chung lớn nhất”, “bội chung nhỏ nhất” · c) Ước và bội của số tự nhiên · d) Liệt kê theo cặp ước; dùng quan hệ tích = ƯCLN × BCNN · e) ƯCLN × BCNN = tích hai số — tìm được một cái là suy ra cái kia. · f) Liệt kê thiếu ước lớn vì chỉ thử vài số nhỏ.
-- **Bài E.5** — a) So sánh hai số tự nhiên · b) Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = · c) Thứ tự trong tập số tự nhiên · d) Đếm chữ số → so từng hàng từ trái sang phải · e) Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. · f) So từ hàng đơn vị (phải sang trái) nên kết luận sai.
+- **Bài E.5** — a) So sánh hai số tự nhiên · b) Dấu … giữa hai số, yêu cầu điền <, >, = · c) Thứ tự trong tập số tự nhiên · d) Đếm chữ số → so từng hàng từ trái sang phải · e) Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. · f) So từ hàng đơn vị (phải sang trái) nên kết luận sai.
 
 ---
 
@@ -256,7 +256,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | E.2 | Đếm chữ số theo nhóm độ dài | Đếm số hạng dãy cách đều, cấu tạo số | Bài toán đánh số trang, đánh số nhà, đánh số vé | Chia nhóm 1 chữ số – 2 chữ số – 3 chữ số rồi nhân và cộng | Sách 100 trang luôn dùng 192 chữ số; nhớ mốc này để kiểm tra nhanh. | Đếm chữ số theo nhóm độ dài · Bài toán đánh số trang, đánh số nhà, đánh số vé · Đếm số hạng dãy cách đều, cấu tạo số · Chia nhóm 1 chữ số – 2 chữ số – 3 chữ số rồi nhân và cộng… |
 | E.3 | Xét chia hết của tổng, hiệu | Tính chất chia hết của tổng và hiệu | Câu hỏi về tổng hoặc hiệu, không yêu cầu kết quả cụ thể | Xét số dư từng số hạng rồi cộng, trừ các số dư | Chỉ cộng các **số dư**, không cộng các số. | Xét chia hết của tổng, hiệu · Câu hỏi về tổng hoặc hiệu, không yêu cầu kết quả cụ thể · Tính chất chia hết của tổng và hiệu · Xét số dư từng số hạng rồi cộng, trừ các số dư… |
 | E.4 | Ước, bội, ƯCLN, BCNN | Ước và bội của số tự nhiên | Từ khoá “ước chung lớn nhất”, “bội chung nhỏ nhất” | Liệt kê theo cặp ước; dùng quan hệ tích = ƯCLN × BCNN | ƯCLN × BCNN = tích hai số — tìm được một cái là suy ra cái kia. | Ước, bội, ƯCLN, BCNN · Từ khoá “ước chung lớn nhất”, “bội chung nhỏ nhất” · Ước và bội của số tự nhiên · Liệt kê theo cặp ước; dùng quan hệ tích = ƯCLN × BCNN… |
-| E.5 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | So sánh hai số tự nhiên · Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = · Thứ tự trong tập số tự nhiên · Đếm chữ số → so từng hàng từ trái sang phải… |
+| E.5 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | So sánh hai số tự nhiên · Dấu … giữa hai số, yêu cầu điền <, >, = · Thứ tự trong tập số tự nhiên · Đếm chữ số → so từng hàng từ trái sang phải… |
 
 ---
 
@@ -388,7 +388,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | E.2 | Quyển sách 150 trang dùng hết bao nhiêu chữ số? | 342 |
 | E.3 | Tổng 45 + 27 có chia hết cho 9 không? | có |
 | E.4 | Tìm ước chung lớn nhất của 12 và 18. | 6 |
-| E.5 | Điền dấu: 6 380 195 … 6 380 196 | &lt; |
+| E.5 | Điền dấu: 6 380 195 … 6 380 196 | < |
 
 ---
 

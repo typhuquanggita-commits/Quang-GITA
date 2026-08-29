@@ -56,7 +56,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài D.1** — a) Cấu tạo thập phân · b) Nhân, chia nhẩm với số tròn chục, trăm, nghìn · c) Thừa số hoặc số chia là 10, 100, 1 000 · d) Thêm hoặc bớt chữ số 0 · e) Thêm hoặc bớt thiếu một chữ số 0. · f) 35 800
 - **Bài D.2** — a) Quan hệ giữa các thành phần của phép tính · b) Tìm x trong phép tính một bước · c) Có chữ x đứng trong một phép tính · d) Gọi tên vai trò của x rồi dùng quy tắc tương ứng · e) Áp dụng nhầm quy tắc của số trừ cho số bị trừ. · f) x = 13
-- **Bài D.3** — a) Tính chất bất đẳng thức trong phép cộng, phép nhân · b) So sánh biểu thức không tính giá trị · c) Hai vế có chung một số hạng hoặc một thừa số · d) Triệt tiêu phần chung rồi so phần riêng · e) Tính hết cả hai vế, vừa lâu vừa dễ sai. · f) &lt;
+- **Bài D.3** — a) Tính chất bất đẳng thức trong phép cộng, phép nhân · b) So sánh biểu thức không tính giá trị · c) Hai vế có chung một số hạng hoặc một thừa số · d) Triệt tiêu phần chung rồi so phần riêng · e) Tính hết cả hai vế, vừa lâu vừa dễ sai. · f) <
 - **Bài D.4** — a) Tính chất giao hoán, kết hợp của phép cộng · b) Tính nhanh tổng nhiều số hạng · c) Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm · d) Ghép cặp tròn rồi cộng · e) Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. · f) 245
 - **Bài D.5** — a) So sánh hai biểu thức, sơ đồ đoạn thẳng · b) Tìm x xuất hiện hai vế · c) Chữ x xuất hiện ở cả hai vế của dấu bằng · d) Trừ bớt số lần x chung rồi đưa về phép chia · e) Chuyển vế nhưng quên đổi dấu, hoặc trừ nhầm số lần x. · f) x = 12
 
@@ -381,7 +381,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | C.5 | Tổng dãy cách đều tính nhanh bằng cách nào? | (đầu + cuối) × số số hạng : 2 |
 | D.1 | Tính nhẩm: 358 × 100 | 35 800 |
 | D.2 | Tìm x: x × 7 = 91 | x = 13 |
-| D.3 | So sánh: 234 × 7 … 234 × 8 | &lt; |
+| D.3 | So sánh: 234 × 7 … 234 × 8 | < |
 | D.4 | Tính nhanh: 37 + 145 + 63 | 245 |
 | D.5 | Tìm x: x × 3 + 24 = x × 5 | x = 12 |
 | E.1 | Tính nhanh: 37 × 25 × 4 | 3 700 |

@@ -64,7 +64,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài E.1** — a) 15 · b) 169 · c) 65 · d) 169 · e) 18 · f) 81
 - **Bài E.2** — a) 7 · b) 9 · c) 11 · d) 21 · e) 23 · f) 25 · g) 196
-- **Bài E.3** — a) &gt; · b) &gt; · c) &lt; · d) &gt; · e) &lt;
+- **Bài E.3** — a) > · b) > · c) < · d) > · e) <
 - **Bài E.4** — a) 142 · b) 68 · c) 72 · d) 33
 - **Bài E.5** — a) 670 · b) 3 475 · c) 600 · d) 95 · e) 7 025 · f) 1 975
 
@@ -254,7 +254,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | D.5 | Đếm và tính tổng dãy con thoả điều kiện chia hết | Dãy cách đều, bội chung nhỏ nhất | Đề hỏi riêng các số chẵn, số chia hết cho … trong một dãy | Xác định dãy con cách đều rồi đếm, tính tổng | Nếu khoảng cách của dãy gốc đã chia hết cho số chia thì hoặc tất cả, hoặc không số hạng nào thoả điều kiện. | Dãy cách đều, bội chung nhỏ nhất · Đếm và tính tổng dãy con thoả điều kiện chia hết · Đề hỏi riêng các số chẵn, số chia hết cho … trong một dãy · Xác định dãy con cách đều rồi đếm, tính tổng… |
 | E.1 | Dãy số quy luật bậc hai hoặc xen kẽ | Dãy hiệu, dãy con xen kẽ | Hiệu giữa các số hạng không bằng nhau | Lập dãy hiệu; tách dãy con theo vị trí | Dãy 1, 4, 9, 16, 25 là các số chính phương — nhớ để nhận ra ngay. | 15 · 169 · 65 · 169… |
 | E.2 | Quy luật hình đưa về dãy số | Dãy cách đều, số hạng thứ n, tổng dãy | Đề mô tả hình xếp thêm đều đặn theo thứ tự | Lập bảng vài hình đầu, tìm khoảng cách, áp công thức | Chỉ cần ba hình đầu là đủ để khẳng định quy luật cách đều. | 7 · 9 · 11 · 21… |
-| E.3 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &gt; · &gt; · &lt; · &gt;… |
+| E.3 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | > · > · < · >… |
 | E.4 | Đếm số hạng dãy cách đều | Công thức đếm số hạng | Dãy có số đầu, số cuối và khoảng cách đều | (cuối − đầu) : khoảng cách + 1 | Dãy số tự nhiên liên tiếp từ a đến b có b − a + 1 số hạng. | 142 · 68 · 72 · 33 |
 | E.5 | Tổng dãy số cách đều | Công thức tổng dãy cách đều | Dãy cộng dài, các số cách đều | Đếm số hạng → (đầu + cuối) × số hạng : 2 | Tổng = trung bình cộng của số đầu và số cuối, nhân với số số hạng. | 670 · 3 475 · 600 · 95… |
 
@@ -386,7 +386,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | D.5 | Dãy 1, 4, 7, …, 100 có bao nhiêu số chẵn? | 17 |
 | E.1 | Viết tiếp: 1, 2, 4, 7, 11, … | 16 |
 | E.2 | Hình 1 có 3 que, mỗi hình sau hơn 2 que. Hình thứ 10 có mấy que? | 21 |
-| E.3 | So sánh: 3 kg … 2 500 g | &gt; |
+| E.3 | So sánh: 3 kg … 2 500 g | > |
 | E.4 | Dãy 3, 6, 9, …, 99 có bao nhiêu số hạng? | 33 |
 | E.5 | Tính: 2 + 4 + 6 + … + 20 | 110 |
 

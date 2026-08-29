@@ -65,7 +65,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài V.1** — a) 2,8 ngày · b) 8 ngày · c) 7,85 ngày · d) 2,4 ngày · e) 6 ngày · f) 2,2 ngày
 - **Bài V.2** — a) 126 đơn vị · b) 102 đơn vị · c) 92 đơn vị · d) 141 đơn vị
 - **Bài V.3** — a) 11 con gà, 32 con chó · b) 20 con gà, 6 con chó · c) 26 con gà, 34 con chó · d) 39 con gà, 6 con chó
-- **Bài V.4** — a) 24 · b) 16 · c) 12 · d) 15 · e) 676 · f) &lt;
+- **Bài V.4** — a) 24 · b) 16 · c) 12 · d) 15 · e) 676 · f) <
 - **Bài V.5** — a) 160 km · b) 144 km · c) 250 km · d) 135 km
 
 ---
@@ -387,7 +387,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | V.1 | 6 người làm xong trong 10 ngày. Thêm 4 người thì sớm hơn mấy ngày? | 4 ngày |
 | V.2 | Số lớn gấp 2 lần số bé, tổng là 30. Thêm bao nhiêu vào số lớn để nó gấp 4 lần số bé? | 20 |
 | V.3 | Có 10 con gà và chó, 28 chân. Có mấy con chó? | 4 con chó |
-| V.4 | So sánh: 99 × 101 … 100 × 100 | &lt; |
+| V.4 | So sánh: 99 × 101 … 100 × 100 | < |
 | V.5 | Hai xe cách nhau 150 km, vận tốc 40 và 35 km/giờ, đi ngược chiều. Xe nhanh đi được bao nhiêu km đến lúc gặp? | 80 km |
 
 ---

@@ -31,7 +31,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần I**
 
 - **Bài I.1** — a) 138 060 · b) 4 654 · c) 9 362 · d) 8 389 · e) 1 449 · f) 262 506 · g) 346 591
-- **Bài I.2** — a) &gt; · b) &gt; · c) &gt; · d) &gt; · e) &lt; · f) &gt;
+- **Bài I.2** — a) > · b) > · c) > · d) > · e) < · f) >
 - **Bài I.3** — a) 5 000 · b) 3 100 · c) 6 900 · d) 700 000 · e) 100 000
 - **Bài I.4** — a) 8 phần 7 · b) 3 phần 8 · c) 5 phần 7 · d) 1 · e) 6 phần 5 · f) 4 phần 5 · g) 3 phần 2 · h) 4 phần 11
 - **Bài I.5** — a) 802 212 · b) 70 683 · c) 655 795 · d) 719 436 · e) 767 143 · f) 256 377
@@ -47,7 +47,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần III**
 
 - **Bài III.1** — a) 14 giờ 1 phút · b) 8 giờ 6 phút · c) 19 giờ 1 phút · d) 16 giờ 24 phút · e) 15 giờ 36 phút
-- **Bài III.2** — a) &gt; · b) &lt; · c) &lt; · d) &gt; · e) &lt; · f) &lt;
+- **Bài III.2** — a) > · b) < · c) < · d) > · e) < · f) <
 - **Bài III.3** — a) 14 cây · b) 84 cây · c) 22 cây · d) 25 cây
 - **Bài III.4** — a) 98 · b) Toán (30 bạn) · c) Khoa học (15 bạn) · d) 15 · e) 24,5 · f) 31%
 - **Bài III.5** — a) 68 · b) 391 · c) 294 · d) 64 · e) 95 · f) 297
@@ -64,7 +64,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài V.1** — a) 32 · b) 31 · c) 1 600 · d) 26 · e) 17
 - **Bài V.2** — a) 400 cm · b) 120 cm · c) 280 cm · d) 160 cm · e) 108 cm · f) 132 cm
-- **Bài V.3** — a) &lt; · b) &gt; · c) &lt; · d) &gt;
+- **Bài V.3** — a) < · b) > · c) < · d) >
 - **Bài V.4** — a) 5 · b) 5 · c) 5 · d) 5 · e) 8 · f) 1 800
 - **Bài V.5** — a) không còn đúng (15 bạn có thể chia đều 3 bạn mỗi tháng) · b) không còn đúng (7 bạn có thể chia đều 1 bạn mỗi tháng) · c) không còn đúng (15 bạn có thể chia đều 3 bạn mỗi tháng) · d) không còn đúng (40 bạn có thể chia đều 4 bạn mỗi tháng) · e) không còn đúng (30 bạn có thể chia đều 3 bạn mỗi tháng) · f) không còn đúng (20 bạn có thể chia đều 2 bạn mỗi tháng)
 
@@ -233,7 +233,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
 | I.1 | Nhân, chia số tự nhiên | Kĩ thuật đặt tính nhân, chia | Yêu cầu “đặt tính rồi tính” với phép nhân, chia | Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ chữ số | Kiểm tra kết quả bằng phép tính ngược: thương × số chia = số bị chia. | 138 060 · 4 654 · 9 362 · 8 389… |
-| I.2 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | &gt; · &gt; · &gt; · &gt;… |
+| I.2 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | > · > · > · >… |
 | I.3 | Đổi đơn vị diện tích | Bảng đơn vị đo diện tích | Đơn vị có mũ hai: m², cm², km², ha | Đếm bậc rồi nhân, chia 100 | Mỗi bậc thêm hai chữ số 0 — nhớ “diện tích thì gấp đôi số 0”. | 5 000 · 3 100 · 6 900 · 700 000… |
 | I.4 | Rút gọn phân số | Tính chất cơ bản của phân số | Tử số và mẫu số có ước chung lớn hơn 1 | Chia cả tử và mẫu cho ước chung | Tìm ngay ước chung lớn nhất để rút gọn một lần là xong. | 8 phần 7 · 3 phần 8 · 5 phần 7 · 1… |
 | I.5 | Viết số từ dạng tổng theo hàng | Cấu tạo thập phân của số tự nhiên | Tổng gồm các số tròn chục, tròn trăm, tròn nghìn… | Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết | Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số. | 802 212 · 70 683 · 655 795 · 719 436… |
@@ -243,7 +243,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | II.4 | Phép chia có dư | Quan hệ giữa số bị chia, số chia, thương và số dư | Đề yêu cầu ghi cả thương và số dư | Đặt tính chia, kiểm tra điều kiện số dư | Ước lượng thương bằng cách làm tròn số chia trước khi chia. | 3 622 dư 1 · 4 971 dư 7 · 3 369 dư 5 · 6 719 dư 16… |
 | II.5 | Bốn phép tính với phân số | Quy đồng, nhân chia phân số | Biểu thức chỉ gồm phân số | Chọn quy tắc theo phép tính, rút gọn cuối cùng | Rút gọn chéo trước khi nhân để số nhỏ, tính nhanh và ít sai. | 8 phần 7 · 17 phần 14 · 25 phần 18 · 13 phần 36… |
 | III.1 | Tính thời điểm trong ngày | Quan hệ giờ – phút, phép chia có dư | Cho thời điểm bắt đầu và khoảng thời gian | Quy về phút, cộng trừ, đổi lại | Cộng tròn giờ trước rồi cộng phần phút lẻ sau. | 14 giờ 1 phút · 8 giờ 6 phút · 19 giờ 1 phút · 16 giờ 24 phút… |
-| III.2 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | &gt; · &lt; · &lt; · &gt;… |
+| III.2 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | > · < · < · >… |
 | III.3 | Tìm phân số của một số | Nhân số tự nhiên với phân số | Cụm “bằng … của …” | Chia theo mẫu số rồi nhân theo tử số | Chia trước, nhân sau — số nhỏ hơn nên tính nhẩm được. | 14 cây · 84 cây · 22 cây · 25 cây |
 | III.4 | Đọc bảng số liệu thống kê | Thống kê mô tả sơ cấp, trung bình cộng, tỉ số phần trăm | Đề cho bảng hoặc biểu đồ kèm nhiều câu hỏi | Ghi lại số liệu, trả lời từng câu bằng công cụ tương ứng | Tính tổng một lần rồi dùng lại cho mọi câu hỏi phần trăm. | 98 · Toán (30 bạn) · Khoa học (15 bạn) · 15… |
 | III.5 | Dãy số tự nhiên liên tiếp có tổng cho trước | Trung bình cộng, dãy cách đều | Cụm “… số tự nhiên liên tiếp có tổng bằng …” | Tìm số giữa bằng phép chia rồi suy ra hai đầu dãy | Tổng của n số liên tiếp (n lẻ) luôn chia hết cho n. | 68 · 391 · 294 · 64… |
@@ -254,7 +254,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.5 | Biến thiên diện tích theo kích thước | Diện tích hình chữ nhật, phân tích hình | “Tăng chiều dài thêm …”, “gấp đôi chiều …” | Vẽ hình chồng, tách phần dôi ra thành các mảnh chữ nhật | Gấp đôi một chiều thì diện tích gấp đôi; gấp đôi cả hai chiều thì gấp bốn. | 256 cm² · 210 cm² · 33 cm² · 484 cm² |
 | V.1 | Tính, so sánh tích bằng kĩ thuật tách – bù | Nhân một số với một tổng, một hiệu | Các thừa số hơn kém nhau rất ít | Quy về số gốc chung, so phần chênh | Với hai tích có tổng hai thừa số bằng nhau, tích nào có hai thừa số gần nhau hơn thì lớn hơn. | 32 · 31 · 1 600 · 26… |
 | V.2 | Cắt ghép hình, biến thiên chu vi | Chu vi, đường bao của hình | Từ khoá “ghép”, “cắt thành”, “xếp thành” | Xác định đường bao mới rồi cộng độ dài | Mỗi nhát cắt làm tổng chu vi tăng thêm hai lần chiều dài nhát cắt. | 400 cm · 120 cm · 280 cm · 160 cm… |
-| V.3 | So sánh phân số bằng kĩ thuật đặc biệt | Phần bù tới 1, phân số trung gian | Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 | So phần bù; hoặc chèn phân số trung gian | Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. | &lt; · &gt; · &lt; · &gt; |
+| V.3 | So sánh phân số bằng kĩ thuật đặc biệt | Phần bù tới 1, phân số trung gian | Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 | So phần bù; hoặc chèn phân số trung gian | Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. | < · > · < · > |
 | V.4 | Dãy tuần hoàn | Phép chia có dư, tính tuần hoàn | Dãy lặp lại một nhóm số cố định | Chia vị trí cho chu kì, dùng số dư định vị | Tổng n số hạng = tổng một chu kì × số chu kì đầy đủ + tổng phần dư. | 5 · 5 · 5 · 5… |
 | V.5 | Đi-rích-lê dạng chứng minh | Nguyên lí ngăn kéo | “Chứng tỏ rằng có ít nhất … cùng …” | Đặt tên ngăn kéo và đồ vật, tính ngưỡng | Ngưỡng = số ngăn × (số cần − 1) + 1. | không còn đúng (15 bạn có thể chia đều 3 bạn mỗi tháng) · không còn đúng (7 bạn có thể chia đều 1 bạn mỗi tháng) · không còn đúng (15 bạn có thể chia đều 3 bạn mỗi tháng) · không còn đúng (40 bạn có thể chia đều 4 bạn mỗi tháng)… |
 
@@ -365,7 +365,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | Bài | Đề tương tự | Đáp số |
 |---|---|---|
 | I.1 | Đặt tính rồi tính: 3 045 × 24 | 73 080 |
-| I.2 | So sánh: 3 phần 5 … 3 phần 7 | &gt; |
+| I.2 | So sánh: 3 phần 5 … 3 phần 7 | > |
 | I.3 | 3 m² = … cm² | 30 000 |
 | I.4 | Rút gọn 18 phần 24. | 3 phần 4 |
 | I.5 | Viết số gồm tổng: 30 000 + 400 + 7 | 30 407 |
@@ -375,7 +375,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | II.4 | Tìm thương và số dư của 1 234 : 7 | 176 dư 2 |
 | II.5 | Tính: 2 phần 3 + 1 phần 6 | 5 phần 6 |
 | III.1 | Tàu chạy lúc 7 giờ 40 phút, đi hết 2 giờ 35 phút. Đến lúc mấy giờ? | 10 giờ 15 phút |
-| III.2 | So sánh: 234 × 7 … 234 × 8 | &lt; |
+| III.2 | So sánh: 234 × 7 … 234 × 8 | < |
 | III.3 | Tổ Một trồng 60 cây, tổ Hai bằng 2 phần 3 tổ Một. Tổ Hai trồng mấy cây? | 40 cây |
 | III.4 | Bảng: Toán 10, Văn 6, Anh 4. Trung bình mỗi môn bao nhiêu bạn? | 6,67 bạn |
 | III.5 | Tổng của 5 số tự nhiên liên tiếp bằng 100. Số bé nhất là số nào? | 18 |
@@ -384,9 +384,9 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | IV.3 | Tính: (1 phần 2 + 1 phần 3) × 6 phần 5 | 1 |
 | IV.4 | Dãy cách đều 10 số hạng, đầu 5, cuối 50. Tổng bằng bao nhiêu? | 275 |
 | IV.5 | Hình chữ nhật 10 cm × 5 cm, tăng chiều dài thêm 3 cm. Diện tích tăng bao nhiêu? | 15 cm² |
-| V.1 | So sánh: 99 × 101 … 100 × 100 | &lt; |
+| V.1 | So sánh: 99 × 101 … 100 × 100 | < |
 | V.2 | Ghép 3 hình vuông cạnh 4 cm thành hàng. Chu vi hình chữ nhật là bao nhiêu? | 32 cm |
-| V.3 | So sánh: 5 phần 6 … 7 phần 8 | &lt; |
+| V.3 | So sánh: 5 phần 6 … 7 phần 8 | < |
 | V.4 | Dãy 1, 2, 3, 1, 2, 3, … số hạng thứ 100 là số nào? | 1 |
 | V.5 | 13 bạn sinh trong 12 tháng, chứng tỏ có 2 bạn cùng tháng sinh. | đúng, vì 13 > 12 × 1 |
 

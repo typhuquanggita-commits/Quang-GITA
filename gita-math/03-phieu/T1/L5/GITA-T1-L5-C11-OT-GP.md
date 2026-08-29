@@ -32,7 +32,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài I.1** — a) 150 cm² · b) 184 cm² · c) 288 cm² · d) 140 cm² · e) 112 cm²
 - **Bài I.2** — a) 60 · b) 197 · c) 72 · d) 180 · e) 64
-- **Bài I.3** — a) &gt; · b) &gt; · c) &gt; · d) &gt; · e) &lt; · f) &gt; · g) &lt;
+- **Bài I.3** — a) > · b) > · c) > · d) > · e) < · f) > · g) <
 - **Bài I.4** — a) 31 · b) không · c) XXI · d) 7 tuần 2 ngày
 - **Bài I.5** — a) 856 · b) 1 976 · c) 5 500 · d) 16 008 · e) 2 473
 
@@ -63,7 +63,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần V**
 
 - **Bài V.1** — a) Tính thời điểm trong ngày · b) Quan hệ giờ – phút, phép chia có dư · c) Cho thời điểm bắt đầu và khoảng thời gian · d) Quy về phút, cộng trừ, đổi lại · e) Cộng tròn giờ trước rồi cộng phần phút lẻ sau. · f) 13 giờ 42 phút · 19 giờ 11 phút · 9 giờ 39 phút · 7 giờ 6 phút…
-- **Bài V.2** — a) So sánh số đo đại lượng · b) Bảng đơn vị đo, so sánh số tự nhiên · c) Hai vế có đơn vị khác nhau · d) Đổi về cùng đơn vị rồi so sánh · e) Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. · f) &lt; · &lt; · &lt; · &gt;…
+- **Bài V.2** — a) So sánh số đo đại lượng · b) Bảng đơn vị đo, so sánh số tự nhiên · c) Hai vế có đơn vị khác nhau · d) Đổi về cùng đơn vị rồi so sánh · e) Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. · f) < · < · < · >…
 - **Bài V.3** — a) Đổi đơn vị thể tích, dung tích · b) Bảng đơn vị thể tích; quan hệ dm³ – lít · c) Đơn vị có mũ ba, hoặc lít, mi-li-lít · d) Đếm bậc rồi nhân, chia 1 000 · e) Mỗi bậc thêm ba chữ số 0. · f) 55 000 · 24 000 · 85 · 89…
 - **Bài V.4** — a) Đổi và tính toán với đơn vị thời gian · b) Quan hệ giờ – phút – giây · c) Số đo có chữ “giờ”, “phút”, “giây” · d) Quy về phút rồi tính, cuối cùng đổi lại giờ và phút · e) Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm. · f) 74 · 5 giờ 10 phút · 6 giờ · 8 giờ…
 - **Bài V.5** — a) Đổi đơn vị diện tích · b) Bảng đơn vị đo diện tích · c) Đơn vị có mũ hai: m², cm², km², ha · d) Đếm bậc rồi nhân, chia 100 · e) Mỗi bậc thêm hai chữ số 0 — nhớ “diện tích thì gấp đôi số 0”. · f) 9 000 · 8 700 · 300 000 · 4 000 000…
@@ -234,7 +234,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 |---|---|---|---|---|---|---|
 | I.1 | Diện tích các hình phẳng cơ bản | Công thức diện tích hình bình hành, hình thoi, hình tam giác | Đề cho đáy và chiều cao, hoặc hai đường chéo | Nhận dạng hình rồi chọn công thức | Tam giác bằng nửa hình bình hành cùng đáy cùng chiều cao. | 150 cm² · 184 cm² · 288 cm² · 140 cm²… |
 | I.2 | Đếm số hạng của dãy cách đều theo điều kiện chia hết | Dãy số cách đều, dấu hiệu chia hết | Cụm “có bao nhiêu số … từ … đến …” | Tìm số đầu, số cuối hợp lệ rồi dùng công thức đếm | Số các số chia hết cho d từ 1 đến n bằng phần nguyên của n : d, nên đếm từ a đến b là b : d trừ đi (a − 1) : d. | 60 · 197 · 72 · 180… |
-| I.3 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &gt; · &gt; · &gt; · &gt;… |
+| I.3 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | > · > · > · >… |
 | I.4 | Lịch và đơn vị thời gian lớn | Số ngày các tháng, năm nhuận, thế kỉ | Đề hỏi về tháng, năm, thế kỉ | Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400 | Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ. | 31 · không · XXI · 7 tuần 2 ngày |
 | I.5 | Bốn phép tính với số đo | Đổi đơn vị, bốn phép tính | Các số hạng có đơn vị khác nhau trong cùng một phép tính | Đổi về đơn vị của kết quả rồi tính | Đọc chỗ chấm trước, biết ngay đơn vị đích. | 856 · 1 976 · 5 500 · 16 008… |
 | II.1 | Bài toán đại lượng có lời văn | Nhân, chia số tự nhiên; đổi đơn vị khối lượng | Đơn vị trong câu hỏi khác đơn vị trong dữ kiện | Tính theo đơn vị dữ kiện rồi đổi ở bước cuối | 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ. | 10 tạ 40 kg · 10 tạ 80 kg · 8 tạ 40 kg · 13 tạ 20 kg… |
@@ -366,7 +366,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 |---|---|---|
 | I.1 | Tam giác đáy 10 cm, cao 6 cm. Diện tích bằng bao nhiêu? | 30 cm² |
 | I.2 | Có bao nhiêu số chẵn từ 10 đến 40? | 16 |
-| I.3 | So sánh: 3 kg … 2 500 g | &gt; |
+| I.3 | So sánh: 3 kg … 2 500 g | > |
 | I.4 | Năm 1975 thuộc thế kỉ thứ mấy? | XX |
 | I.5 | 2 m 30 cm + 150 cm = … cm | 380 |
 | II.1 | Xe chở 20 bao gạo, mỗi bao 50 kg. Xe chở mấy tạ? | 10 tạ |
@@ -385,7 +385,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | IV.4 | Đi 120 km hết 3 giờ. Vận tốc là bao nhiêu? | 40 km/giờ |
 | IV.5 | Tính nhanh: 2,5 × 4 × 25 | 250 |
 | V.1 | Tàu chạy lúc 7 giờ 40 phút, đi hết 2 giờ 35 phút. Đến lúc mấy giờ? | 10 giờ 15 phút |
-| V.2 | So sánh: 3 kg … 2 500 g | &gt; |
+| V.2 | So sánh: 3 kg … 2 500 g | > |
 | V.3 | 2 m³ = … lít | 2 000 |
 | V.4 | 155 phút = … giờ … phút | 2 giờ 35 phút |
 | V.5 | 3 m² = … cm² | 30 000 |

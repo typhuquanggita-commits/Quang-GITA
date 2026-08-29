@@ -56,7 +56,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài D.1** — a) Bảng đơn vị đo độ dài, khối lượng · b) Đổi đơn vị đo · c) Dấu … giữa hai đơn vị khác nhau · d) Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10 · e) Đổi ngược chiều nên nhân thành chia. · f) 5 000
 - **Bài D.2** — a) Công thức s = v × t · b) Ba dạng cơ bản của chuyển động đều · c) Có hai trong ba đại lượng quãng đường, vận tốc, thời gian · d) Chọn công thức theo đại lượng cần tìm; đồng bộ đơn vị · e) Vận tốc tính bằng km/giờ nhưng thời gian lại để bằng phút. · f) 40 km/giờ
-- **Bài D.3** — a) Bảng đơn vị đo, so sánh số tự nhiên · b) So sánh số đo đại lượng · c) Hai vế có đơn vị khác nhau · d) Đổi về cùng đơn vị rồi so sánh · e) So thẳng hai con số, bỏ qua đơn vị. · f) &gt;
+- **Bài D.3** — a) Bảng đơn vị đo, so sánh số tự nhiên · b) So sánh số đo đại lượng · c) Hai vế có đơn vị khác nhau · d) Đổi về cùng đơn vị rồi so sánh · e) So thẳng hai con số, bỏ qua đơn vị. · f) >
 - **Bài D.4** — a) Bảng đơn vị thể tích; quan hệ dm³ – lít · b) Đổi đơn vị thể tích, dung tích · c) Đơn vị có mũ ba, hoặc lít, mi-li-lít · d) Đếm bậc rồi nhân, chia 1 000 · e) Đổi như đơn vị diện tích, chỉ nhân 100. · f) 2 000
 - **Bài D.5** — a) Đại lượng tỉ lệ nghịch, tổng số ngày công · b) Tỉ lệ nghịch, so sánh hai phương án · c) Thay đổi số người, hỏi thay đổi thời gian · d) Bám vào tổng số ngày công không đổi · e) Trừ thẳng số người rồi lấy hiệu làm số ngày rút ngắn. · f) 4 ngày
 
@@ -66,7 +66,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài E.2** — a) 27 281 · b) 23 024 · c) 1 410 · d) 1 483 · e) 29 206
 - **Bài E.3** — a) 89 · b) 170 · c) 145 · d) 30 · e) 57 · f) 154 · g) 69
 - **Bài E.4** — a) không · b) XX · c) 7 tuần 2 ngày · d) 31
-- **Bài E.5** — a) &lt; · b) &lt; · c) &lt; · d) &lt; · e) &lt; · f) &lt;
+- **Bài E.5** — a) < · b) < · c) < · d) < · e) < · f) <
 
 ---
 
@@ -256,7 +256,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | E.2 | Bốn phép tính với số đo | Đổi đơn vị, bốn phép tính | Các số hạng có đơn vị khác nhau trong cùng một phép tính | Đổi về đơn vị của kết quả rồi tính | Đọc chỗ chấm trước, biết ngay đơn vị đích. | 27 281 · 23 024 · 1 410 · 1 483… |
 | E.3 | Đếm số hạng dãy cách đều | Công thức đếm số hạng | Dãy có số đầu, số cuối và khoảng cách đều | (cuối − đầu) : khoảng cách + 1 | Dãy số tự nhiên liên tiếp từ a đến b có b − a + 1 số hạng. | 89 · 170 · 145 · 30… |
 | E.4 | Lịch và đơn vị thời gian lớn | Số ngày các tháng, năm nhuận, thế kỉ | Đề hỏi về tháng, năm, thế kỉ | Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400 | Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ. | không · XX · 7 tuần 2 ngày · 31 |
-| E.5 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &lt; · &lt; · &lt; · &lt;… |
+| E.5 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | < · < · < · <… |
 
 ---
 
@@ -381,14 +381,14 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | C.5 | Tổng dãy cách đều tính nhanh bằng cách nào? | (đầu + cuối) × số số hạng : 2 |
 | D.1 | 5 km = … m | 5 000 |
 | D.2 | Đi 120 km hết 3 giờ. Vận tốc là bao nhiêu? | 40 km/giờ |
-| D.3 | So sánh: 3 kg … 2 500 g | &gt; |
+| D.3 | So sánh: 3 kg … 2 500 g | > |
 | D.4 | 2 m³ = … lít | 2 000 |
 | D.5 | 6 người làm xong trong 10 ngày. Thêm 4 người thì sớm hơn mấy ngày? | 4 ngày |
 | E.1 | Vườn dài 20 m rộng 10 m, rào xung quanh cần bao nhiêu mét rào? | 60 m |
 | E.2 | 2 m 30 cm + 150 cm = … cm | 380 |
 | E.3 | Dãy 3, 6, 9, …, 99 có bao nhiêu số hạng? | 33 |
 | E.4 | Năm 1975 thuộc thế kỉ thứ mấy? | XX |
-| E.5 | So sánh: 3 kg … 2 500 g | &gt; |
+| E.5 | So sánh: 3 kg … 2 500 g | > |
 
 ---
 

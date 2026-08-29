@@ -76,7 +76,7 @@ f) Có 6 quyển sách Toán và 7 quyển sách Tiếng Việt. Có bao nhiêu 
 
 ### Bài 3. (3 điểm) So sánh hai phân số
 
-Điền dấu &lt;, &gt;, = thích hợp.
+Điền dấu <, >, = thích hợp.
 
 a) 5 phần 8 … 3 phần 8
 b) 3 … 9 phần 14
@@ -97,7 +97,7 @@ c) Trong số 430,435, chữ số ở hàng phần mười là chữ số nào?
 d) Viết phân số 5 phần 10 dưới dạng số thập phân.
 e) Trong số 554,024, chữ số ở hàng phần mười là chữ số nào?
 
-### Bài 5. (3 điểm) Điền dấu &lt;, &gt;, = thích hợp
+### Bài 5. (3 điểm) Điền dấu <, >, = thích hợp
 
 Điền dấu thích hợp vào chỗ chấm.
 
@@ -124,7 +124,7 @@ e) Trung bình mỗi ngày bán được 259 kg gạo. Hỏi 5 ngày bán đư�
 
 ### Bài 2. (4 điểm) So sánh hai số đo khác đơn vị
 
-Điền dấu &lt;, &gt;, = thích hợp.
+Điền dấu <, >, = thích hợp.
 
 a) 16 km … 1 531 m
 b) 28 hg … 1 042 kg
@@ -348,19 +348,19 @@ f) Hai hình tròn đồng tâm có bán kính 8 cm và 2 cm. Tính diện tích
 **Lỗi thường gặp:** Cộng thẳng hai nhóm khi chúng có phần tử chung. Phòng: Vẽ hai vòng tròn giao nhau, ghi số vào từng miền.
 
 ### Bài I.3
-**Đáp số:** a) &gt; · b) &gt; · c) &gt; · d) &lt; · e) &gt; · f) &lt; · g) &gt; · h) &gt;
+**Đáp số:** a) > · b) > · c) > · d) < · e) > · f) < · g) > · h) >
 **Hướng giải:** Cùng mẫu số: phân số nào có tử số lớn hơn thì lớn hơn. Cùng tử số: phân số nào có mẫu số **bé** hơn thì lớn hơn. Khác cả tử lẫn mẫu: quy đồng mẫu số rồi so tử số.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Cùng tử số thì **mẫu bé hơn là phân số lớn hơn** — ngược với trực giác.
 **Lỗi thường gặp:** Thấy mẫu số lớn thì kết luận phân số lớn. Phòng: Nghĩ tới chiếc bánh: chia càng nhiều phần thì mỗi phần càng bé.
 
 ### Bài I.4
-**Đáp số:** a) &lt; · b) 0,66 · c) 4 · d) 0,5 · e) 0
+**Đáp số:** a) < · b) 0,66 · c) 4 · d) 0,5 · e) 0
 **Hướng giải:** Sau dấu phẩy lần lượt là hàng phần mười, phần trăm, phần nghìn. So sánh số thập phân: so phần nguyên trước; phần nguyên bằng nhau thì so lần lượt hàng phần mười, phần trăm, phần nghìn. Phân số có mẫu là 10, 100, 1 000 đổi được thẳng sang số thập phân.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: So sánh theo **hàng**, không so theo số chữ số sau dấu phẩy.
 **Lỗi thường gặp:** Cho rằng số có nhiều chữ số sau dấu phẩy hơn thì lớn hơn. Phòng: Viết thêm chữ số 0 vào cuối để hai số có cùng số chữ số thập phân rồi mới so.
 
 ### Bài I.5
-**Đáp số:** a) &lt; · b) &lt; · c) &lt; · d) &lt; · e) &gt; · f) &lt;
+**Đáp số:** a) < · b) < · c) < · d) < · e) > · f) <
 **Hướng giải:** So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Đếm số chữ số **trước**, chỉ khi bằng nhau mới so từng hàng.
 **Lỗi thường gặp:** So từ hàng đơn vị (phải sang trái) nên kết luận sai. Phòng: Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái.
@@ -372,7 +372,7 @@ f) Hai hình tròn đồng tâm có bán kính 8 cm và 2 cm. Tính diện tích
 **Lỗi thường gặp:** Đi tìm ngay số còn thiếu mà chưa tính tổng. Phòng: Bước đầu tiên luôn viết: “Tổng = trung bình cộng × số ngày”.
 
 ### Bài II.2
-**Đáp số:** a) &gt; · b) &lt; · c) &gt; · d) &lt; · e) &gt;
+**Đáp số:** a) > · b) < · c) > · d) < · e) >
 **Hướng giải:** Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.
@@ -461,7 +461,7 @@ f) Hai hình tròn đồng tâm có bán kính 8 cm và 2 cm. Tính diện tích
 **Gợi ý 3 tầng:** (1) Biểu thức có dấu ngoặc không? — (2) Có thừa số chung ở hai tích không? — (3) Làm nhân chia trước, cộng trừ sau.
 
 ### Bài V.1
-**Đáp số:** a) &lt; · b) 144 · c) &lt; · d) &lt; · e) 20
+**Đáp số:** a) < · b) 144 · c) < · d) < · e) 20
 **Hướng giải:** BẪY — Hai tích trông bằng nhau nhưng không bằng. Khi hai tích có các thừa số gần nhau, viết chúng theo cùng một số gốc rồi so phần chênh lệch. Khi hai tích cùng một thừa số, hiệu của chúng bằng thừa số chung nhân với hiệu hai thừa số kia.
 **Nhãn tư duy:** TD5, TD6. Điểm chốt: Đưa mọi số về **cùng một số gốc** rồi mới so hoặc trừ.
 **Lỗi thường gặp:** Nhân hết ra rồi mới so sánh — số lớn, dễ sai và mất thời gian. Phòng: Viết mỗi thừa số dưới dạng “số gốc cộng hoặc trừ mấy đơn vị”.

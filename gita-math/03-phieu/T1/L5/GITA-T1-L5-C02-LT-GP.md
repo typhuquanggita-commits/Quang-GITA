@@ -33,7 +33,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài A.1** — a) 1 300 000 · b) 240 · c) 50 · d) 210 000 · e) 1 900 000 · f) 220 000
 - **Bài A.2** — a) 3 tấn 4 tạ 56 kg · b) 3 tấn 7 tạ 48 kg · c) 2 572 · d) 5 079
 - **Bài A.3** — a) 5 giờ 31 phút · b) 224 · c) 3 giờ 51 phút · d) 7 giờ 41 phút · e) 1 giờ 35 phút · f) 6 giờ 11 phút · g) 162
-- **Bài A.4** — a) 0 · b) 0,09 · c) &gt; · d) 0,9 · e) 7 · f) &lt; · g) 6
+- **Bài A.4** — a) 0 · b) 0,09 · c) > · d) 0,9 · e) 7 · f) < · g) 6
 - **Bài A.5** — a) 6 500 · b) 30 000 · c) 400 000 · d) 380 000 · e) 6 400
 
 **Phần B**
@@ -65,7 +65,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài E.1** — a) 391 cm² · b) 171 cm² · c) 480 cm² · d) 280 cm² · e) 168 cm² · f) 168 cm² · g) 60 cm²
 - **Bài E.2** — a) 72 cm² · b) 516 cm² · c) 175 cm² · d) 825 cm² · e) 812 cm²
 - **Bài E.3** — a) 3 735 · b) 1 652 · c) 14 798 · d) 4 264
-- **Bài E.4** — a) &lt; · b) &lt; · c) &gt; · d) &gt;
+- **Bài E.4** — a) < · b) < · c) > · d) >
 - **Bài E.5** — a) không · b) XXI · c) 31 · d) 8 tuần 3 ngày · e) 30
 
 ---
@@ -235,7 +235,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | A.1 | Đổi đơn vị đo | Bảng đơn vị đo độ dài, khối lượng | Dấu … giữa hai đơn vị khác nhau | Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10 | Số bậc chính là số chữ số 0 phải thêm vào (hoặc bớt đi). | 1 300 000 · 240 · 50 · 210 000… |
 | A.2 | Số đo có nhiều đơn vị | Bảng đơn vị khối lượng | Số đo viết dưới dạng “… tấn … tạ … kg” | Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư | Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ. | 3 tấn 4 tạ 56 kg · 3 tấn 7 tạ 48 kg · 2 572 · 5 079 |
 | A.3 | Đổi và tính toán với đơn vị thời gian | Quan hệ giờ – phút – giây | Số đo có chữ “giờ”, “phút”, “giây” | Quy về phút rồi tính, cuối cùng đổi lại giờ và phút | Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm. | 5 giờ 31 phút · 224 · 3 giờ 51 phút · 7 giờ 41 phút… |
-| A.4 | Số thập phân — hàng, so sánh, chuyển đổi | Cấu tạo số thập phân, quan hệ phân số – số thập phân | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 | Xét theo hàng từ trái sang phải | Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. | 0 · 0,09 · &gt; · 0,9… |
+| A.4 | Số thập phân — hàng, so sánh, chuyển đổi | Cấu tạo số thập phân, quan hệ phân số – số thập phân | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 | Xét theo hàng từ trái sang phải | Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. | 0 · 0,09 · > · 0,9… |
 | A.5 | Đổi đơn vị diện tích | Bảng đơn vị đo diện tích | Đơn vị có mũ hai: m², cm², km², ha | Đếm bậc rồi nhân, chia 100 | Mỗi bậc thêm hai chữ số 0 — nhớ “diện tích thì gấp đôi số 0”. | 6 500 · 30 000 · 400 000 · 380 000… |
 | B.1 | Định vị chương trong hệ thống | Tên chương, nhóm chuyên đề, số dạng bài | Phần đầu phiếu ghi rõ tên cụm và nhóm chuyên đề | Đọc phần đầu phiếu rồi trả lời theo đúng tên gọi | Ghi tên chương ra góc vở, mỗi lần mở vở là đọc lại một lần. | Đơn vị đo độ dài, khối lượng, diện tích, thể tích và thời gian · E — Đại lượng – Đo lường – Thời gian · 5 · ở mọi bài thuộc đại lượng – đo lường – thời gian, vì các chương sau đều dùng lại nền này… |
 | B.2 | Liệt kê dạng bài của chương | Danh mục dạng bài | Bảng dạng bài ở phiếu Dạng bài & Đọc vị của cùng cụm | Chép theo bảng, giữ nguyên thứ tự | Học thuộc số lượng dạng bài trước, tên từng dạng sau. | Ôn tập bảng đơn vị đo độ dài và khối lượng · Đề-ca-mét vuông, héc-tô-mét vuông, héc-ta · Viết số đo độ dài, khối lượng, diện tích dưới dạng số thập phân · Bảng đơn vị đo thể tích: cm³, dm³, m³… |
@@ -255,7 +255,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | E.1 | Diện tích các hình phẳng cơ bản | Công thức diện tích hình bình hành, hình thoi, hình tam giác | Đề cho đáy và chiều cao, hoặc hai đường chéo | Nhận dạng hình rồi chọn công thức | Tam giác bằng nửa hình bình hành cùng đáy cùng chiều cao. | 391 cm² · 171 cm² · 480 cm² · 280 cm²… |
 | E.2 | Diện tích hình thang | Công thức diện tích hình thang | Đề cho hai đáy và chiều cao | Tổng hai đáy × chiều cao : 2 | Nếu tổng hai đáy là số chẵn thì chia 2 ngay từ đầu cho gọn. | 72 cm² · 516 cm² · 175 cm² · 825 cm²… |
 | E.3 | Bốn phép tính với số đo | Đổi đơn vị, bốn phép tính | Các số hạng có đơn vị khác nhau trong cùng một phép tính | Đổi về đơn vị của kết quả rồi tính | Đọc chỗ chấm trước, biết ngay đơn vị đích. | 3 735 · 1 652 · 14 798 · 4 264 |
-| E.4 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &lt; · &lt; · &gt; · &gt; |
+| E.4 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | < · < · > · > |
 | E.5 | Lịch và đơn vị thời gian lớn | Số ngày các tháng, năm nhuận, thế kỉ | Đề hỏi về tháng, năm, thế kỉ | Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400 | Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ. | không · XXI · 31 · 8 tuần 3 ngày… |
 
 ---
@@ -367,7 +367,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | A.1 | 5 km = … m | 5 000 |
 | A.2 | 3 450 kg = … tấn … tạ … kg | 3 tấn 4 tạ 50 kg |
 | A.3 | 155 phút = … giờ … phút | 2 giờ 35 phút |
-| A.4 | So sánh: 0,5 … 0,45 | &gt; |
+| A.4 | So sánh: 0,5 … 0,45 | > |
 | A.5 | 3 m² = … cm² | 30 000 |
 | B.1 | Chương “Đơn vị đo độ dài, khối lượng, diện tích, thể tích và thời gian” thuộc nhóm chuyên đề nào? | E — Đại lượng – Đo lường – Thời gian |
 | B.2 | Chương này có mấy dạng bài chính? | 5 |
@@ -387,7 +387,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | E.1 | Tam giác đáy 10 cm, cao 6 cm. Diện tích bằng bao nhiêu? | 30 cm² |
 | E.2 | Hình thang đáy 12 cm và 8 cm, cao 5 cm. Diện tích bằng bao nhiêu? | 50 cm² |
 | E.3 | 2 m 30 cm + 150 cm = … cm | 380 |
-| E.4 | So sánh: 3 kg … 2 500 g | &gt; |
+| E.4 | So sánh: 3 kg … 2 500 g | > |
 | E.5 | Năm 1975 thuộc thế kỉ thứ mấy? | XX |
 
 ---

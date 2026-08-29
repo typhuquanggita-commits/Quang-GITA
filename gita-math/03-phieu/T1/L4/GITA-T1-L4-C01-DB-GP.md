@@ -48,7 +48,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài C.1** — a) 34 cây · b) 81 viên (làm tròn lên) · c) 92 viên · d) 70 m
 - **Bài C.2** — a) 11 · b) 49 · c) 144 · d) 169
-- **Bài C.3** — a) &gt; · b) &gt; · c) &lt; · d) &lt; · e) &lt;
+- **Bài C.3** — a) > · b) > · c) < · d) < · e) <
 - **Bài C.4** — a) 79 · b) 70 · c) 13 · d) 146 · e) 58 · f) 11
 - **Bài C.5** — a) 1 820 · b) 882 · c) 1 612 · d) 640
 
@@ -64,7 +64,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài E.1** — a) Dãy số tự nhiên liên tiếp có tổng cho trước · b) Cụm “… số tự nhiên liên tiếp có tổng bằng …” · c) Trung bình cộng, dãy cách đều · d) Tìm số giữa bằng phép chia rồi suy ra hai đầu dãy · e) Tổng của n số liên tiếp (n lẻ) luôn chia hết cho n. · f) Lấy tổng chia cho số lượng rồi nhận luôn kết quả là số bé nhất.
 - **Bài E.2** — a) Nhận biết số nguyên tố, hợp số · b) Câu hỏi “là số nguyên tố hay hợp số” · c) Định nghĩa số nguyên tố, dấu hiệu chia hết · d) Thử chia theo dãy số nguyên tố tăng dần, dừng đúng ngưỡng · e) Loại ngay các số chẵn lớn hơn 2 và các số tận cùng bằng 5 lớn hơn 5. · f) Thử chia cho mọi số từ 2 đến số đó nên mất thời gian, hoặc kết luận vội.
-- **Bài E.3** — a) So sánh hai số tự nhiên · b) Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = · c) Thứ tự trong tập số tự nhiên · d) Đếm chữ số → so từng hàng từ trái sang phải · e) Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. · f) So từ hàng đơn vị (phải sang trái) nên kết luận sai.
+- **Bài E.3** — a) So sánh hai số tự nhiên · b) Dấu … giữa hai số, yêu cầu điền <, >, = · c) Thứ tự trong tập số tự nhiên · d) Đếm chữ số → so từng hàng từ trái sang phải · e) Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. · f) So từ hàng đơn vị (phải sang trái) nên kết luận sai.
 - **Bài E.4** — a) Nhận biết chẵn – lẻ và số liền kề · b) Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” · c) Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2 · d) Xét chữ số tận cùng; cộng hoặc trừ 1 đơn vị · e) Che hết các chữ số, chỉ để lộ chữ số cuối. · f) Nhầm “liền trước” với “bé hơn”, trả lời một số bất kì bé hơn.
 - **Bài E.5** — a) Xét chia hết của tổng, hiệu · b) Câu hỏi về tổng hoặc hiệu, không yêu cầu kết quả cụ thể · c) Tính chất chia hết của tổng và hiệu · d) Xét số dư từng số hạng rồi cộng, trừ các số dư · e) Chỉ cộng các **số dư**, không cộng các số. · f) Cộng hai số ra rồi mới chia — mất thời gian và dễ sai tính.
 
@@ -244,7 +244,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | B.5 | Phép chia có dư | Quan hệ giữa số bị chia, số chia, thương và số dư | Đề yêu cầu ghi cả thương và số dư | Đặt tính chia, kiểm tra điều kiện số dư | Ước lượng thương bằng cách làm tròn số chia trước khi chia. | 2 836 dư 2 · 1 568 dư 10 · 5 182 dư 2 · 5 409 dư 1 |
 | C.1 | Chu vi, diện tích trong tình huống thực tế | Công thức chu vi, diện tích; phép chia | Từ khoá “rào xung quanh”, “lát gạch”, “trồng cây quanh” | Đọc vị chu vi hay diện tích rồi tính | Nhìn đơn vị của đáp số: mét thì là chu vi, mét vuông thì là diện tích. | 34 cây · 81 viên (làm tròn lên) · 92 viên · 70 m |
 | C.2 | Dãy số quy luật bậc hai hoặc xen kẽ | Dãy hiệu, dãy con xen kẽ | Hiệu giữa các số hạng không bằng nhau | Lập dãy hiệu; tách dãy con theo vị trí | Dãy 1, 4, 9, 16, 25 là các số chính phương — nhớ để nhận ra ngay. | 11 · 49 · 144 · 169 |
-| C.3 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &gt; · &gt; · &lt; · &lt;… |
+| C.3 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | > · > · < · <… |
 | C.4 | Đếm số hạng dãy cách đều | Công thức đếm số hạng | Dãy có số đầu, số cuối và khoảng cách đều | (cuối − đầu) : khoảng cách + 1 | Dãy số tự nhiên liên tiếp từ a đến b có b − a + 1 số hạng. | 79 · 70 · 13 · 146… |
 | C.5 | Tính nhanh nhờ thừa số chung | Nhân một số với một tổng, một hiệu | Hai tích cộng hoặc trừ nhau, có chung một thừa số | Đặt thừa số chung ra ngoài rồi tính trong ngoặc | Sau khi đặt thừa số chung, tổng trong ngoặc thường tròn 10 hoặc 100. | 1 820 · 882 · 1 612 · 640 |
 | D.1 | Tìm chữ số tận cùng của một phép tính | Tính chất chữ số tận cùng | Câu hỏi chỉ hỏi “chữ số tận cùng”, không hỏi kết quả | Rút gọn về chữ số tận cùng rồi tính | Với phép trừ, nếu chữ số cuối của số bị trừ nhỏ hơn thì mượn 10 rồi trừ. | 6 · 6 · 7 · 2 |
@@ -254,7 +254,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | D.5 | Dãy số truy hồi có quy tắc rẽ nhánh | Dãy số cho bởi quy tắc, tính lần lượt | Đề mô tả cách lập số hạng từ số hạng liền trước | Lập bảng, tính lần lượt, bám sát vị trí | Chỉ cần tính tới số hạng được hỏi, không cần tính cả dãy. | 4, 11, 17 · 49 · 119 · 265… |
 | E.1 | Dãy số tự nhiên liên tiếp có tổng cho trước | Trung bình cộng, dãy cách đều | Cụm “… số tự nhiên liên tiếp có tổng bằng …” | Tìm số giữa bằng phép chia rồi suy ra hai đầu dãy | Tổng của n số liên tiếp (n lẻ) luôn chia hết cho n. | Dãy số tự nhiên liên tiếp có tổng cho trước · Cụm “… số tự nhiên liên tiếp có tổng bằng …” · Trung bình cộng, dãy cách đều · Tìm số giữa bằng phép chia rồi suy ra hai đầu dãy… |
 | E.2 | Nhận biết số nguyên tố, hợp số | Định nghĩa số nguyên tố, dấu hiệu chia hết | Câu hỏi “là số nguyên tố hay hợp số” | Thử chia theo dãy số nguyên tố tăng dần, dừng đúng ngưỡng | Loại ngay các số chẵn lớn hơn 2 và các số tận cùng bằng 5 lớn hơn 5. | Nhận biết số nguyên tố, hợp số · Câu hỏi “là số nguyên tố hay hợp số” · Định nghĩa số nguyên tố, dấu hiệu chia hết · Thử chia theo dãy số nguyên tố tăng dần, dừng đúng ngưỡng… |
-| E.3 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | So sánh hai số tự nhiên · Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = · Thứ tự trong tập số tự nhiên · Đếm chữ số → so từng hàng từ trái sang phải… |
+| E.3 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | So sánh hai số tự nhiên · Dấu … giữa hai số, yêu cầu điền <, >, = · Thứ tự trong tập số tự nhiên · Đếm chữ số → so từng hàng từ trái sang phải… |
 | E.4 | Nhận biết chẵn – lẻ và số liền kề | Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2 | Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” | Xét chữ số tận cùng; cộng hoặc trừ 1 đơn vị | Che hết các chữ số, chỉ để lộ chữ số cuối. | Nhận biết chẵn – lẻ và số liền kề · Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” · Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2 · Xét chữ số tận cùng; cộng hoặc trừ 1 đơn vị… |
 | E.5 | Xét chia hết của tổng, hiệu | Tính chất chia hết của tổng và hiệu | Câu hỏi về tổng hoặc hiệu, không yêu cầu kết quả cụ thể | Xét số dư từng số hạng rồi cộng, trừ các số dư | Chỉ cộng các **số dư**, không cộng các số. | Xét chia hết của tổng, hiệu · Câu hỏi về tổng hoặc hiệu, không yêu cầu kết quả cụ thể · Tính chất chia hết của tổng và hiệu · Xét số dư từng số hạng rồi cộng, trừ các số dư… |
 
@@ -376,7 +376,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | B.5 | Tìm thương và số dư của 1 234 : 7 | 176 dư 2 |
 | C.1 | Vườn dài 20 m rộng 10 m, rào xung quanh cần bao nhiêu mét rào? | 60 m |
 | C.2 | Viết tiếp: 1, 2, 4, 7, 11, … | 16 |
-| C.3 | So sánh: 3 kg … 2 500 g | &gt; |
+| C.3 | So sánh: 3 kg … 2 500 g | > |
 | C.4 | Dãy 3, 6, 9, …, 99 có bao nhiêu số hạng? | 33 |
 | C.5 | Tính nhanh: 47 × 25 + 47 × 75 | 4 700 |
 | D.1 | Tích 137 × 46 có chữ số tận cùng là chữ số nào? | 2 |
@@ -386,7 +386,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | D.5 | Dãy: số đầu là 2, mỗi số sau bằng số trước nhân 2. Số thứ 5 là số nào? | 32 |
 | E.1 | Tổng của 5 số tự nhiên liên tiếp bằng 100. Số bé nhất là số nào? | 18 |
 | E.2 | Số 91 là số nguyên tố hay hợp số? | hợp số (91 = 7 × 13) |
-| E.3 | Điền dấu: 660 429 … 660 430 | &lt; |
+| E.3 | Điền dấu: 660 429 … 660 430 | < |
 | E.4 | Số liền sau của 153 670 là số nào? | 153 671 |
 | E.5 | Tổng 45 + 27 có chia hết cho 9 không? | có |
 

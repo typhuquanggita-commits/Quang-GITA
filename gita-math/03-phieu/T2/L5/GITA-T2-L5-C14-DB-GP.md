@@ -42,7 +42,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài B.2** — a) 5 101 · b) 1 434 · c) 903 · d) 5 366
 - **Bài B.3** — a) 4 tuần 1 ngày · b) không · c) 30 · d) XXI
 - **Bài B.4** — a) 14 · b) 22 · c) 26 · d) 30 · e) 34 · f) 42 · g) 754
-- **Bài B.5** — a) &gt; · b) &lt; · c) &lt; · d) &lt; · e) &gt; · f) &lt; · g) &lt;
+- **Bài B.5** — a) > · b) < · c) < · d) < · e) > · f) < · g) <
 
 **Phần C**
 
@@ -241,7 +241,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | B.2 | Bốn phép tính với số đo | Đổi đơn vị, bốn phép tính | Các số hạng có đơn vị khác nhau trong cùng một phép tính | Đổi về đơn vị của kết quả rồi tính | Đọc chỗ chấm trước, biết ngay đơn vị đích. | 5 101 · 1 434 · 903 · 5 366 |
 | B.3 | Lịch và đơn vị thời gian lớn | Số ngày các tháng, năm nhuận, thế kỉ | Đề hỏi về tháng, năm, thế kỉ | Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400 | Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ. | 4 tuần 1 ngày · không · 30 · XXI |
 | B.4 | Quy luật hình đưa về dãy số | Dãy cách đều, số hạng thứ n, tổng dãy | Đề mô tả hình xếp thêm đều đặn theo thứ tự | Lập bảng vài hình đầu, tìm khoảng cách, áp công thức | Chỉ cần ba hình đầu là đủ để khẳng định quy luật cách đều. | 14 · 22 · 26 · 30… |
-| B.5 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &gt; · &lt; · &lt; · &lt;… |
+| B.5 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | > · < · < · <… |
 | C.1 | Giả thiết tạm hai loại | Phương pháp giả thiết tạm | Hai loại đối tượng, biết tổng số và tổng của một đại lượng phụ | Giả sử đồng nhất → tính chênh → chia cho hiệu đơn vị | Kiểm tra ngay: số bánh phải nằm giữa tổng × (số bánh ít nhất) và tổng × (số bánh nhiều nhất). | xe ô tô: 21 chiếc, xe ba bánh: 5 chiếc · xe ô tô: 13 chiếc, xe đạp: 28 chiếc · xe ô tô: 27 chiếc, xe ba bánh: 16 chiếc · xe đạp: 12 chiếc, xe ô tô: 10 chiếc… |
 | C.2 | Phép chia có dư | Quan hệ giữa số bị chia, số chia, thương và số dư | Đề yêu cầu ghi cả thương và số dư | Đặt tính chia, kiểm tra điều kiện số dư | Ước lượng thương bằng cách làm tròn số chia trước khi chia. | 8 667 dư 4 · 7 765 dư 10 · 1 514 dư 1 · 616 dư 2 |
 | C.3 | Bốn phép tính với phân số | Quy đồng, nhân chia phân số | Biểu thức chỉ gồm phân số | Chọn quy tắc theo phép tính, rút gọn cuối cùng | Rút gọn chéo trước khi nhân để số nhỏ, tính nhanh và ít sai. | 12 phần 5 · 3 phần 28 · 67 phần 52 · 4 phần 7… |
@@ -373,7 +373,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | B.2 | 2 m 30 cm + 150 cm = … cm | 380 |
 | B.3 | Năm 1975 thuộc thế kỉ thứ mấy? | XX |
 | B.4 | Hình 1 có 3 que, mỗi hình sau hơn 2 que. Hình thứ 10 có mấy que? | 21 |
-| B.5 | So sánh: 3 kg … 2 500 g | &gt; |
+| B.5 | So sánh: 3 kg … 2 500 g | > |
 | C.1 | 10 xe đạp và ô tô, 28 bánh. Có mấy ô tô? | 4 ô tô |
 | C.2 | Tìm thương và số dư của 1 234 : 7 | 176 dư 2 |
 | C.3 | Tính: 2 phần 3 + 1 phần 6 | 5 phần 6 |

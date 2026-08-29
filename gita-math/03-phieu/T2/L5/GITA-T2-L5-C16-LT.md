@@ -60,7 +60,7 @@ b) 11 bao phân bón nặng 506 kg. Hỏi 6 bao như thế nặng bao nhiêu kg?
 c) 8 bao xi măng nặng 160 kg. Hỏi 11 bao như thế nặng bao nhiêu kg?
 d) 8 bao xi măng nặng 160 kg. Hỏi 20 bao như thế nặng bao nhiêu kg?
 
-### Bài 2. (1 điểm) Điền dấu &lt;, &gt;, = thích hợp
+### Bài 2. (1 điểm) Điền dấu <, >, = thích hợp
 
 Điền dấu thích hợp vào chỗ chấm.
 
@@ -346,7 +346,7 @@ f) Tổ Ba và tổ Hai trồng được 110 cây. Tổ Ba trồng nhiều hơn 
 **Lỗi thường gặp:** Nhân ngay hai số đã cho mà bỏ qua bước chia. Phòng: Viết rõ câu “Một bao nặng … kg” trước khi làm bước hai.
 
 ### Bài A.2
-**Đáp số:** a) &gt; · b) &gt; · c) &lt; · d) &gt; · e) &gt; · f) &lt;
+**Đáp số:** a) > · b) > · c) < · d) > · e) > · f) <
 **Hướng giải:** So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Đếm số chữ số **trước**, chỉ khi bằng nhau mới so từng hàng.
 **Lỗi thường gặp:** So từ hàng đơn vị (phải sang trái) nên kết luận sai. Phòng: Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái.

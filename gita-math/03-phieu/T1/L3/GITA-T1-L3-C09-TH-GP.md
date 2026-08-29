@@ -31,7 +31,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần I**
 
 - **Bài I.1** — a) 276 · b) 160 · c) 70 · d) 371
-- **Bài I.2** — a) &gt; · b) &lt; · c) &lt; · d) &lt; · e) &gt; · f) &gt; · g) &gt; · h) &lt;
+- **Bài I.2** — a) > · b) < · c) < · d) < · e) > · f) > · g) > · h) <
 - **Bài I.3** — a) chữ số 5, giá trị 50 000 · b) chữ số 7, giá trị 7 000 · c) chữ số 1, giá trị 10 · d) chữ số 7, giá trị 7
 - **Bài I.4** — a) số chẵn · b) 13 527 · c) 22 612 · d) 36 185 · e) 54 674 · f) 57 492
 - **Bài I.5** — a) 5 chữ số, tổng 23 · b) 5 chữ số, tổng 42 · c) 5 chữ số, tổng 17 · d) 5 chữ số, tổng 29 · e) 5 chữ số, tổng 34 · f) 5 chữ số, tổng 26
@@ -80,7 +80,7 @@ Bước 1 — rút về đơn vị: tìm giá trị của **một** đơn vị b
 
 *Điểm chốt:* Bước rút về đơn vị luôn là phép **chia**, và phải làm trước.
 
-### Bài I.2 — Điền dấu &lt;, &gt;, = thích hợp
+### Bài I.2 — Điền dấu <, >, = thích hợp
 
 So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 
@@ -233,7 +233,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
 | I.1 | Rút về đơn vị | Đại lượng tỉ lệ thuận, phép chia và phép nhân | Cho giá trị của một nhóm, hỏi giá trị của nhóm khác cùng loại | Chia để rút về một đơn vị rồi nhân | Nếu số bao mới gấp đôi số bao cũ thì khối lượng cũng gấp đôi — dùng tỉ số để bỏ qua bước chia. | 276 · 160 · 70 · 371 |
-| I.2 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | &gt; · &lt; · &lt; · &lt;… |
+| I.2 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | > · < · < · <… |
 | I.3 | Xác định chữ số và giá trị chữ số theo hàng | Cấu tạo thập phân của số tự nhiên | Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” | Đánh số hàng từ phải sang trái rồi tra bảng hàng | Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị. | chữ số 5, giá trị 50 000 · chữ số 7, giá trị 7 000 · chữ số 1, giá trị 10 · chữ số 7, giá trị 7 |
 | I.4 | Nhận biết chẵn – lẻ và số liền kề | Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2 | Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” | Xét chữ số tận cùng; cộng hoặc trừ 1 đơn vị | Che hết các chữ số, chỉ để lộ chữ số cuối. | số chẵn · 13 527 · 22 612 · 36 185… |
 | I.5 | Đếm chữ số, tính tổng chữ số | Cấu tạo số, tổng chữ số | Yêu cầu “có mấy chữ số”, “tổng các chữ số” | Tách lớp để đếm; cộng rời từng chữ số | Ghép cặp các chữ số cộng lại tròn 10 rồi cộng nhanh. | 5 chữ số, tổng 23 · 5 chữ số, tổng 42 · 5 chữ số, tổng 17 · 5 chữ số, tổng 29… |
@@ -365,7 +365,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | Bài | Đề tương tự | Đáp số |
 |---|---|---|
 | I.1 | 5 bao gạo nặng 250 kg. Hỏi 8 bao nặng bao nhiêu kg? | 400 kg |
-| I.2 | Điền dấu: 92 899 … 92 900 | &lt; |
+| I.2 | Điền dấu: 92 899 … 92 900 | < |
 | I.3 | Chữ số hàng chục của số 57 417 có giá trị bao nhiêu? | 10 |
 | I.4 | Số liền sau của 2 722 là số nào? | 2 723 |
 | I.5 | Số 40 506 có mấy chữ số và tổng các chữ số bằng bao nhiêu? | 5 chữ số, tổng 15 |

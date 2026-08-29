@@ -298,7 +298,7 @@ f) Lỗi nào dễ mắc ở đề này?
 
 ### Bài 3. (4 điểm) Đọc vị đề số 3
 
-**Đề:** Điền dấu &lt;, &gt;, = thích hợp. 3 phần 5 … 1 phần 15
+**Đề:** Điền dấu <, >, = thích hợp. 3 phần 5 … 1 phần 15
 
 a) Đề này thuộc dạng bài nào?
 b) Dấu hiệu nào giúp em nhận ra?

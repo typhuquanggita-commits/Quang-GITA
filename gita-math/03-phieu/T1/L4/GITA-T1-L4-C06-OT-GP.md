@@ -38,7 +38,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần II**
 
-- **Bài II.1** — a) &lt; · b) &lt; · c) &lt; · d) &lt; · e) &lt; · f) &lt;
+- **Bài II.1** — a) < · b) < · c) < · d) < · e) < · f) <
 - **Bài II.2** — a) 210 · b) 110 · c) 1 625 · d) 15 150 · e) 2 550 · f) 55
 - **Bài II.3** — a) x = 59 · b) x = 19 · c) x = 36 · d) x = 59 · e) x = 7 · f) x = 120
 - **Bài II.4** — a) 91 đường thẳng · b) 45 cái · c) 190 trận · d) 10 trận
@@ -237,7 +237,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | I.3 | Tính nhanh tích, thương nhiều bước | Tính chất giao hoán, kết hợp của phép nhân | Tích có thừa số 25, 125, 50, 20; hoặc chia liên tiếp | Ghép cặp cho tích tròn rồi nhân | Chia liên tiếp cho 4 rồi 25 bằng chia cho 100. | 91 · 50 000 · 96 · 3 500 |
 | I.4 | Tìm x qua hai bước | Quan hệ các thành phần phép tính, thứ tự thực hiện | x nằm trong một cụm có hai phép tính | Gỡ dần từ phép ngoài cùng vào trong | Thay x tìm được vào đề để thử — nhanh hơn dò lại từng bước. | x = 156 · x = 115 · x = 170 · x = 73… |
 | I.5 | Tính nhanh tổng nhiều số hạng | Tính chất giao hoán, kết hợp của phép cộng | Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm | Ghép cặp tròn rồi cộng | Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10. | 200 · 233 · 439 · 200… |
-| II.1 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | &lt; · &lt; · &lt; · &lt;… |
+| II.1 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | < · < · < · <… |
 | II.2 | Tổng dãy số cách đều | Công thức tổng dãy cách đều | Dãy cộng có dấu … và các số cách đều nhau | Đếm số số hạng rồi áp công thức tổng | Ghép cặp đầu – cuối: mọi cặp đều có cùng tổng, chỉ cần nhân với số cặp. | 210 · 110 · 1 625 · 15 150… |
 | II.3 | Tìm x nhiều bước có ngoặc | Thứ tự thực hiện phép tính, quan hệ thành phần | x nằm trong ngoặc, ngoài ngoặc còn phép tính khác | Bóc lớp từ ngoài vào trong | Thay x tìm được vào đề, tính một lượt để thử lại. | x = 59 · x = 19 · x = 36 · x = 59… |
 | II.4 | Đếm số cặp | Tổ hợp chập hai, nguyên tắc đếm lặp | “Hai … bất kì”, “mỗi người với tất cả những người còn lại” | n × (n − 1) : 2 | Nhớ vài giá trị: 5 người có 10 cặp, 10 người có 45 cặp. | 91 đường thẳng · 45 cái · 190 trận · 10 trận |
@@ -369,7 +369,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | I.3 | Tính nhanh: 37 × 25 × 4 | 3 700 |
 | I.4 | Tìm x: x × 6 + 14 = 92 | x = 13 |
 | I.5 | Tính nhanh: 37 + 145 + 63 | 245 |
-| II.1 | So sánh: 234 × 7 … 234 × 8 | &lt; |
+| II.1 | So sánh: 234 × 7 … 234 × 8 | < |
 | II.2 | Tính nhanh: 1 + 2 + 3 + … + 100 | 5 050 |
 | II.3 | Tìm x: (x + 12) × 5 − 8 = 132 | x = 16 |
 | II.4 | 6 đội bóng đấu vòng tròn một lượt. Có bao nhiêu trận? | 15 trận |

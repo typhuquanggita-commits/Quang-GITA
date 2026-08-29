@@ -48,7 +48,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài III.1** — a) 405 · 450 · 504 · 540 · b) 4 · c) 540 · d) 405 · e) 3 · f) 3 · g) 945
 - **Bài III.2** — a) hơn -1 đơn vị · b) hơn 2 đơn vị · c) gấp 1 lần · d) 78, hiệu 9 · e) 13
-- **Bài III.3** — a) &lt; · b) &gt; · c) &gt; · d) &gt; · e) &gt;
+- **Bài III.3** — a) < · b) > · c) > · d) > · e) >
 - **Bài III.4** — a) 11 số, bé nhất là 90 · b) 4 số, bé nhất là 135 · c) 37 số, bé nhất là 195 · d) 27 số, bé nhất là 240
 - **Bài III.5** — a) 186 · b) 64 · c) 29 · d) 27 · e) 300 · f) 254
 
@@ -244,7 +244,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | II.5 | Kiểm tra chia hết bằng dấu hiệu | Dấu hiệu chia hết cho 2, 3, 5, 9 | Câu hỏi “có chia hết cho … không” | Chọn đúng dấu hiệu theo số chia rồi kiểm tra | Cộng chữ số theo cặp tròn 9, phần dư chính là số dư khi chia 9. | không (chữ số tận cùng 2) · không (chữ số tận cùng 1) · không (tổng chữ số 21) · không (chữ số tận cùng 1)… |
 | III.1 | Lập số và đếm số lập được từ một bộ chữ số | Quy tắc nhân trong phép đếm, điều kiện chữ số đứng đầu | Đề cho một bộ chữ số và yêu cầu lập số | Cố định hàng cao nhất rồi hoán vị các hàng còn lại | Ba chữ số khác 0 lập được 3 × 2 × 1 = 6 số; nếu có chữ số 0 thì chỉ còn 2 × 2 × 1 = 4 số. | 405 · 450 · 504 · 540 · 4 · 540 · 405… |
 | III.2 | Tìm số theo điều kiện của các chữ số | Cấu tạo thập phân, bài toán tổng – hiệu | Đề cho quan hệ giữa các chữ số chứ không cho số | Đặt ẩn cho từng chữ số, viết số theo cấu tạo, giải hệ điều kiện | Đổi chỗ hai chữ số của số có hai chữ số thì hiệu luôn bằng 9 lần hiệu hai chữ số. | hơn -1 đơn vị · hơn 2 đơn vị · gấp 1 lần · 78, hiệu 9… |
-| III.3 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | &lt; · &gt; · &gt; · &gt;… |
+| III.3 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | < · > · > · >… |
 | III.4 | Đếm số chia hết đồng thời cho nhiều số | Bội chung nhỏ nhất, dãy số cách đều | Cụm “vừa chia hết cho … vừa chia hết cho …” | Quy về một số chia duy nhất là BCNN rồi đếm | Chia hết cho 2 và 5 thì tận cùng là 0; chia hết cho 2 và 3 thì chia hết cho 6. | 11 số, bé nhất là 90 · 4 số, bé nhất là 135 · 37 số, bé nhất là 195 · 27 số, bé nhất là 240 |
 | III.5 | Dãy số tự nhiên liên tiếp có tổng cho trước | Trung bình cộng, dãy cách đều | Cụm “… số tự nhiên liên tiếp có tổng bằng …” | Tìm số giữa bằng phép chia rồi suy ra hai đầu dãy | Tổng của n số liên tiếp (n lẻ) luôn chia hết cho n. | 186 · 64 · 29 · 27… |
 | IV.1 | Nhận biết số nguyên tố, hợp số | Định nghĩa số nguyên tố, dấu hiệu chia hết | Câu hỏi “là số nguyên tố hay hợp số” | Thử chia theo dãy số nguyên tố tăng dần, dừng đúng ngưỡng | Loại ngay các số chẵn lớn hơn 2 và các số tận cùng bằng 5 lớn hơn 5. | hợp số (ví dụ ước 3) · hợp số (ví dụ ước 2) · hợp số (ví dụ ước 7) · hợp số (ví dụ ước 2)… |
@@ -376,7 +376,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | II.5 | Số 4 182 có chia hết cho 9 không? | không |
 | III.1 | Từ ba chữ số 1, 2, 3 lập được bao nhiêu số có ba chữ số khác nhau? | 6 |
 | III.2 | Tìm số có hai chữ số, tổng hai chữ số bằng 11, hiệu bằng 3. | 74 |
-| III.3 | So sánh: 234 × 7 … 234 × 8 | &lt; |
+| III.3 | So sánh: 234 × 7 … 234 × 8 | < |
 | III.4 | Có bao nhiêu số từ 1 đến 100 vừa chia hết cho 2 vừa chia hết cho 5? | 10 |
 | III.5 | Tổng của 5 số tự nhiên liên tiếp bằng 100. Số bé nhất là số nào? | 18 |
 | IV.1 | Số 91 là số nguyên tố hay hợp số? | hợp số (91 = 7 × 13) |

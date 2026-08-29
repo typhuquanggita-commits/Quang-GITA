@@ -30,7 +30,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần I**
 
-- **Bài I.1** — a) &gt; · b) &lt; · c) &lt; · d) &lt; · e) &gt; · f) &gt; · g) &gt; · h) &lt;
+- **Bài I.1** — a) > · b) < · c) < · d) < · e) > · f) > · g) > · h) <
 - **Bài I.2** — a) 34 cm · b) 7 cm · c) cạnh 45 cm, diện tích 2 025 cm² · d) cạnh 50 cm, diện tích 2 500 cm² · e) 27 cm · f) 23 cm · g) cạnh 7 cm, diện tích 49 cm²
 - **Bài I.3** — a) 20 · b) 150 · c) 40 · d) 18 cm · e) 20 cm²
 - **Bài I.4** — a) 1 176 cm² · b) 3 600 cm² · c) 180 cm · d) 152 cm · e) 176 cm · f) 1 024 cm² · g) 72 cm
@@ -232,7 +232,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
-| I.1 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | &gt; · &lt; · &lt; · &lt;… |
+| I.1 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | > · < · < · <… |
 | I.2 | Tìm kích thước từ chu vi, diện tích | Công thức chu vi, diện tích; phép tính ngược | Cho chu vi hoặc diện tích và một kích thước | Đi ngược công thức, qua bước nửa chu vi | Nửa chu vi = chu vi : 2 — luôn tính bước này đầu tiên. | 34 cm · 7 cm · cạnh 45 cm, diện tích 2 025 cm² · cạnh 50 cm, diện tích 2 500 cm²… |
 | I.3 | Đếm hình trong lưới | Quy tắc đếm, tổ hợp đơn giản | Hình vẽ là lưới ô vuông đều | Đếm theo đường kẻ hoặc theo cỡ hình | Số cách chọn 2 trong k đường kẻ là k × (k − 1) : 2. | 20 · 150 · 40 · 18 cm… |
 | I.4 | Chu vi, diện tích hình cơ bản | Công thức chu vi, diện tích hình chữ nhật và hình vuông | Cho chiều dài, chiều rộng hoặc cạnh | Chọn đúng công thức, ghi đúng đơn vị | Hình vuông là hình chữ nhật có dài bằng rộng — chỉ cần nhớ một bộ công thức. | 1 176 cm² · 3 600 cm² · 180 cm · 152 cm… |
@@ -364,7 +364,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 
 | Bài | Đề tương tự | Đáp số |
 |---|---|---|
-| I.1 | So sánh: 3 phần 5 … 3 phần 7 | &gt; |
+| I.1 | So sánh: 3 phần 5 … 3 phần 7 | > |
 | I.2 | Hình chữ nhật chu vi 30 cm, dài 10 cm. Chiều rộng bằng bao nhiêu? | 5 cm |
 | I.3 | Lưới 2 hàng 2 cột có bao nhiêu hình vuông? | 5 |
 | I.4 | Hình chữ nhật dài 8 cm, rộng 5 cm. Tính diện tích. | 40 cm² |

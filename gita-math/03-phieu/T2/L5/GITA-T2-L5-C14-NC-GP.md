@@ -40,7 +40,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài II.1** — a) không, dư 2 · b) có · c) không, dư 8 · d) không, dư 7 · e) không, dư 1 · f) có
 - **Bài II.2** — a) 30 · b) XX · c) 6 tuần 3 ngày · d) có · e) có · f) 6 tuần 5 ngày
-- **Bài II.3** — a) &lt; · b) &gt; · c) &lt; · d) &lt; · e) &lt; · f) &lt; · g) &lt;
+- **Bài II.3** — a) < · b) > · c) < · d) < · e) < · f) < · g) <
 - **Bài II.4** — a) 30 510 · b) 4 384 · c) 3 312 · d) 14 920 · e) 1 170
 - **Bài II.5** — a) 132 · b) 69 · c) 152 · d) 103 · e) 146 · f) 163 · g) 174
 
@@ -239,7 +239,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | I.5 | Chu vi, diện tích hình cơ bản | Công thức chu vi, diện tích hình chữ nhật và hình vuông | Cho chiều dài, chiều rộng hoặc cạnh | Chọn đúng công thức, ghi đúng đơn vị | Hình vuông là hình chữ nhật có dài bằng rộng — chỉ cần nhớ một bộ công thức. | 625 cm² · 270 cm² · 136 cm · 82 cm… |
 | II.1 | Xét chia hết của tổng, hiệu | Tính chất chia hết của tổng và hiệu | Câu hỏi về tổng hoặc hiệu, không yêu cầu kết quả cụ thể | Xét số dư từng số hạng rồi cộng, trừ các số dư | Chỉ cộng các **số dư**, không cộng các số. | không, dư 2 · có · không, dư 8 · không, dư 7… |
 | II.2 | Lịch và đơn vị thời gian lớn | Số ngày các tháng, năm nhuận, thế kỉ | Đề hỏi về tháng, năm, thế kỉ | Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400 | Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ. | 30 · XX · 6 tuần 3 ngày · có… |
-| II.3 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &lt; · &gt; · &lt; · &lt;… |
+| II.3 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | < · > · < · <… |
 | II.4 | Bốn phép tính với số đo | Đổi đơn vị, bốn phép tính | Các số hạng có đơn vị khác nhau trong cùng một phép tính | Đổi về đơn vị của kết quả rồi tính | Đọc chỗ chấm trước, biết ngay đơn vị đích. | 30 510 · 4 384 · 3 312 · 14 920… |
 | II.5 | Đếm số hạng dãy cách đều | Công thức đếm số hạng | Dãy có số đầu, số cuối và khoảng cách đều | (cuối − đầu) : khoảng cách + 1 | Dãy số tự nhiên liên tiếp từ a đến b có b − a + 1 số hạng. | 132 · 69 · 152 · 103… |
 | III.1 | Đọc bảng số liệu thống kê | Thống kê mô tả sơ cấp, trung bình cộng, tỉ số phần trăm | Đề cho bảng hoặc biểu đồ kèm nhiều câu hỏi | Ghi lại số liệu, trả lời từng câu bằng công cụ tương ứng | Tính tổng một lần rồi dùng lại cho mọi câu hỏi phần trăm. | 64 · Khoa học (23 bạn) · Toán (4 bạn) · 19… |
@@ -371,7 +371,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | I.5 | Hình chữ nhật dài 8 cm, rộng 5 cm. Tính diện tích. | 40 cm² |
 | II.1 | Tổng 45 + 27 có chia hết cho 9 không? | có |
 | II.2 | Năm 1975 thuộc thế kỉ thứ mấy? | XX |
-| II.3 | So sánh: 3 kg … 2 500 g | &gt; |
+| II.3 | So sánh: 3 kg … 2 500 g | > |
 | II.4 | 2 m 30 cm + 150 cm = … cm | 380 |
 | II.5 | Dãy 3, 6, 9, …, 99 có bao nhiêu số hạng? | 33 |
 | III.1 | Bảng: Toán 10, Văn 6, Anh 4. Trung bình mỗi môn bao nhiêu bạn? | 6,67 bạn |

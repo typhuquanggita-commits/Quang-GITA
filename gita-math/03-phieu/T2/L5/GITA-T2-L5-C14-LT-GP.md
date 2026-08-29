@@ -63,7 +63,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần E**
 
 - **Bài E.1** — a) XXI · b) 29 · c) không · d) 7 tuần 5 ngày
-- **Bài E.2** — a) &gt; · b) &lt; · c) &lt; · d) &gt;
+- **Bài E.2** — a) > · b) < · c) < · d) >
 - **Bài E.3** — a) 1 875 · b) 12 950 · c) 550 · d) 6 925
 - **Bài E.4** — a) 722 · b) 1 920 · c) 39 145 · d) 11 454 · e) 1 450 · f) 10 149 · g) 712
 - **Bài E.5** — a) 284 · b) 89 · c) 105 · d) 41 · e) 182 · f) 100
@@ -253,7 +253,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | D.4 | Đổi và tính toán với đơn vị thời gian | Quan hệ giờ – phút – giây | Số đo có chữ “giờ”, “phút”, “giây” | Quy về phút rồi tính, cuối cùng đổi lại giờ và phút | Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm. | Quan hệ giờ – phút – giây · Đổi và tính toán với đơn vị thời gian · Số đo có chữ “giờ”, “phút”, “giây” · Quy về phút rồi tính, cuối cùng đổi lại giờ và phút… |
 | D.5 | Đổi đơn vị đo | Bảng đơn vị đo độ dài, khối lượng | Dấu … giữa hai đơn vị khác nhau | Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10 | Số bậc chính là số chữ số 0 phải thêm vào (hoặc bớt đi). | Bảng đơn vị đo độ dài, khối lượng · Đổi đơn vị đo · Dấu … giữa hai đơn vị khác nhau · Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10… |
 | E.1 | Lịch và đơn vị thời gian lớn | Số ngày các tháng, năm nhuận, thế kỉ | Đề hỏi về tháng, năm, thế kỉ | Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400 | Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ. | XXI · 29 · không · 7 tuần 5 ngày |
-| E.2 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &gt; · &lt; · &lt; · &gt; |
+| E.2 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | > · < · < · > |
 | E.3 | Tổng dãy số cách đều | Công thức tổng dãy cách đều | Dãy cộng dài, các số cách đều | Đếm số hạng → (đầu + cuối) × số hạng : 2 | Tổng = trung bình cộng của số đầu và số cuối, nhân với số số hạng. | 1 875 · 12 950 · 550 · 6 925 |
 | E.4 | Bốn phép tính với số đo | Đổi đơn vị, bốn phép tính | Các số hạng có đơn vị khác nhau trong cùng một phép tính | Đổi về đơn vị của kết quả rồi tính | Đọc chỗ chấm trước, biết ngay đơn vị đích. | 722 · 1 920 · 39 145 · 11 454… |
 | E.5 | Đếm số hạng của dãy cách đều theo điều kiện chia hết | Dãy số cách đều, dấu hiệu chia hết | Cụm “có bao nhiêu số … từ … đến …” | Tìm số đầu, số cuối hợp lệ rồi dùng công thức đếm | Số các số chia hết cho d từ 1 đến n bằng phần nguyên của n : d, nên đếm từ a đến b là b : d trừ đi (a − 1) : d. | 284 · 89 · 105 · 41… |
@@ -385,7 +385,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | D.4 | 155 phút = … giờ … phút | 2 giờ 35 phút |
 | D.5 | 5 km = … m | 5 000 |
 | E.1 | Năm 1975 thuộc thế kỉ thứ mấy? | XX |
-| E.2 | So sánh: 3 kg … 2 500 g | &gt; |
+| E.2 | So sánh: 3 kg … 2 500 g | > |
 | E.3 | Tính: 2 + 4 + 6 + … + 20 | 110 |
 | E.4 | 2 m 30 cm + 150 cm = … cm | 380 |
 | E.5 | Có bao nhiêu số chẵn từ 10 đến 40? | 16 |

@@ -63,7 +63,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần E**
 
 - **Bài E.1** — a) 352 · b) 59 · c) 205 · d) 200 · e) 143 · f) 89 · g) 200
-- **Bài E.2** — a) &gt; · b) &gt; · c) &lt; · d) &lt; · e) &lt; · f) &gt; · g) &gt;
+- **Bài E.2** — a) > · b) > · c) < · d) < · e) < · f) > · g) >
 - **Bài E.3** — a) 2 586 · b) 2 122 · c) 1 445 · d) 2 060
 - **Bài E.4** — a) 31 · b) không · c) 7 tuần 0 ngày · d) XXI · e) không · f) 30 · g) 3 tuần 5 ngày
 - **Bài E.5** — a) 2, 5, 8 · b) 1, 4, 7 · c) 2, 5, 8 · d) 0, 3, 6, 9 · e) 2, 5, 8 · f) không có chữ số nào
@@ -253,7 +253,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | D.4 | Bốn phép tính với số đo | Đổi đơn vị, bốn phép tính | Các số hạng có đơn vị khác nhau trong cùng một phép tính | Đổi về đơn vị của kết quả rồi tính | Đọc chỗ chấm trước, biết ngay đơn vị đích. | Đổi đơn vị, bốn phép tính · Bốn phép tính với số đo · Các số hạng có đơn vị khác nhau trong cùng một phép tính · Đổi về đơn vị của kết quả rồi tính… |
 | D.5 | Số đo có nhiều đơn vị | Bảng đơn vị khối lượng | Số đo viết dưới dạng “… tấn … tạ … kg” | Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư | Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ. | Bảng đơn vị khối lượng · Số đo có nhiều đơn vị · Số đo viết dưới dạng “… tấn … tạ … kg” · Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư… |
 | E.1 | Tính nhanh tổng nhiều số hạng | Tính chất giao hoán, kết hợp của phép cộng | Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm | Ghép cặp tròn rồi cộng | Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10. | 352 · 59 · 205 · 200… |
-| E.2 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &gt; · &gt; · &lt; · &lt;… |
+| E.2 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | > · > · < · <… |
 | E.3 | Bốn phép tính với số đo | Đổi đơn vị, bốn phép tính | Các số hạng có đơn vị khác nhau trong cùng một phép tính | Đổi về đơn vị của kết quả rồi tính | Đọc chỗ chấm trước, biết ngay đơn vị đích. | 2 586 · 2 122 · 1 445 · 2 060 |
 | E.4 | Lịch và đơn vị thời gian lớn | Số ngày các tháng, năm nhuận, thế kỉ | Đề hỏi về tháng, năm, thế kỉ | Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400 | Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ. | 31 · không · 7 tuần 0 ngày · XXI… |
 | E.5 | Điền chữ số theo điều kiện chia hết | Dấu hiệu chia hết, chữ số hàng cao nhất khác 0 | Số có ô trống hoặc dấu *, kèm điều kiện chia hết | Dùng dấu hiệu để lập điều kiện cho dấu * rồi thử 0–9 | Với 3 và 9: tính tổng các chữ số đã biết một lần duy nhất, rồi tìm phần bù cần thêm. | 2, 5, 8 · 1, 4, 7 · 2, 5, 8 · 0, 3, 6, 9… |
@@ -385,7 +385,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | D.4 | 2 m 30 cm + 150 cm = … cm | 380 |
 | D.5 | 3 450 kg = … tấn … tạ … kg | 3 tấn 4 tạ 50 kg |
 | E.1 | Tính nhanh: 37 + 145 + 63 | 245 |
-| E.2 | So sánh: 3 kg … 2 500 g | &gt; |
+| E.2 | So sánh: 3 kg … 2 500 g | > |
 | E.3 | 2 m 30 cm + 150 cm = … cm | 380 |
 | E.4 | Năm 1975 thuộc thế kỉ thứ mấy? | XX |
 | E.5 | Tìm chữ số thay cho * để 12* chia hết cho 5. | 0, 5 |

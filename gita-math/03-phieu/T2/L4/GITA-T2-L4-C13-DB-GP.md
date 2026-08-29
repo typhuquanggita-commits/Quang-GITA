@@ -41,7 +41,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài B.1** — a) 1 tuần 1 ngày · b) 31 · c) không · d) XXI · e) có · f) XX
 - **Bài B.2** — a) 323 cm² · b) 150 cm² · c) 120 cm² · d) 338 cm² · e) 210 cm² · f) 425 cm² · g) 432 cm²
 - **Bài B.3** — a) 4 672 · b) 3 575 · c) 1 856 · d) 1 980 · e) 7 680 · f) 1 608
-- **Bài B.4** — a) &gt; · b) &lt; · c) &gt; · d) &lt; · e) &gt; · f) &gt; · g) &gt;
+- **Bài B.4** — a) > · b) < · c) > · d) < · e) > · f) > · g) >
 - **Bài B.5** — a) 5 145 · b) 5 319 · c) 22 360 · d) 3 801 · e) 28 341 · f) 1 458 · g) 29 312
 
 **Phần C**
@@ -57,7 +57,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài D.1** — a) 13 giờ 14 phút · b) 10 giờ 42 phút · c) 16 giờ 52 phút · d) 15 giờ 11 phút · e) 20 giờ 26 phút
 - **Bài D.2** — a) 78 cái · b) 66 trận · c) 55 đường thẳng · d) 45 đường thẳng · e) 153 cái · f) 91 trận
 - **Bài D.3** — a) 68 cây · b) 16 cây · c) 18 cây · d) 24 cây · e) 13 cây
-- **Bài D.4** — a) &lt; · b) &gt; · c) &lt; · d) &gt; · e) &lt; · f) &lt; · g) &lt;
+- **Bài D.4** — a) < · b) > · c) < · d) > · e) < · f) < · g) <
 - **Bài D.5** — a) 13 tạ 80 kg · b) 8 tạ · c) 6 tạ · d) 6 tạ 25 kg · e) 3 tạ · f) 3 tạ 20 kg
 
 **Phần E**
@@ -240,7 +240,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | B.1 | Lịch và đơn vị thời gian lớn | Số ngày các tháng, năm nhuận, thế kỉ | Đề hỏi về tháng, năm, thế kỉ | Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400 | Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ. | 1 tuần 1 ngày · 31 · không · XXI… |
 | B.2 | Diện tích các hình phẳng cơ bản | Công thức diện tích hình bình hành, hình thoi, hình tam giác | Đề cho đáy và chiều cao, hoặc hai đường chéo | Nhận dạng hình rồi chọn công thức | Tam giác bằng nửa hình bình hành cùng đáy cùng chiều cao. | 323 cm² · 150 cm² · 120 cm² · 338 cm²… |
 | B.3 | Tính nhanh nhờ thừa số chung | Nhân một số với một tổng, một hiệu | Hai tích cộng hoặc trừ nhau, có chung một thừa số | Đặt thừa số chung ra ngoài rồi tính trong ngoặc | Sau khi đặt thừa số chung, tổng trong ngoặc thường tròn 10 hoặc 100. | 4 672 · 3 575 · 1 856 · 1 980… |
-| B.4 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &gt; · &lt; · &gt; · &lt;… |
+| B.4 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | > · < · > · <… |
 | B.5 | Bốn phép tính với số đo | Đổi đơn vị, bốn phép tính | Các số hạng có đơn vị khác nhau trong cùng một phép tính | Đổi về đơn vị của kết quả rồi tính | Đọc chỗ chấm trước, biết ngay đơn vị đích. | 5 145 · 5 319 · 22 360 · 3 801… |
 | C.1 | Tìm x qua hai bước | Quan hệ các thành phần phép tính, thứ tự thực hiện | x nằm trong một cụm có hai phép tính | Gỡ dần từ phép ngoài cùng vào trong | Thay x tìm được vào đề để thử — nhanh hơn dò lại từng bước. | x = 69 · x = 35 · x = 109 · x = 92 |
 | C.2 | Ba dạng bài trung bình cộng | Quan hệ tổng – số lượng – trung bình cộng | Cụm “trung bình mỗi …” | Đi qua tổng làm trung gian | Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng. | 954 kg · 280 kg · 36 kg · 83 kg |
@@ -250,7 +250,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | D.1 | Tính thời điểm trong ngày | Quan hệ giờ – phút, phép chia có dư | Cho thời điểm bắt đầu và khoảng thời gian | Quy về phút, cộng trừ, đổi lại | Cộng tròn giờ trước rồi cộng phần phút lẻ sau. | 13 giờ 14 phút · 10 giờ 42 phút · 16 giờ 52 phút · 15 giờ 11 phút… |
 | D.2 | Đếm số cặp | Tổ hợp chập hai, nguyên tắc đếm lặp | “Hai … bất kì”, “mỗi người với tất cả những người còn lại” | n × (n − 1) : 2 | Nhớ vài giá trị: 5 người có 10 cặp, 10 người có 45 cặp. | 78 cái · 66 trận · 55 đường thẳng · 45 đường thẳng… |
 | D.3 | Tìm phân số của một số | Nhân số tự nhiên với phân số | Cụm “bằng … của …” | Chia theo mẫu số rồi nhân theo tử số | Chia trước, nhân sau — số nhỏ hơn nên tính nhẩm được. | 68 cây · 16 cây · 18 cây · 24 cây… |
-| D.4 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | &lt; · &gt; · &lt; · &gt;… |
+| D.4 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | < · > · < · >… |
 | D.5 | Bài toán đại lượng có lời văn | Nhân, chia số tự nhiên; đổi đơn vị khối lượng | Đơn vị trong câu hỏi khác đơn vị trong dữ kiện | Tính theo đơn vị dữ kiện rồi đổi ở bước cuối | 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ. | 13 tạ 80 kg · 8 tạ · 6 tạ · 6 tạ 25 kg… |
 | E.1 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | So sánh số đo đại lượng · Hai vế có đơn vị khác nhau · Bảng đơn vị đo, so sánh số tự nhiên · Đổi về cùng đơn vị rồi so sánh… |
 | E.2 | Đổi đơn vị đo | Bảng đơn vị đo độ dài, khối lượng | Dấu … giữa hai đơn vị khác nhau | Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10 | Số bậc chính là số chữ số 0 phải thêm vào (hoặc bớt đi). | Đổi đơn vị đo · Dấu … giữa hai đơn vị khác nhau · Bảng đơn vị đo độ dài, khối lượng · Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10… |
@@ -372,7 +372,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | B.1 | Năm 1975 thuộc thế kỉ thứ mấy? | XX |
 | B.2 | Tam giác đáy 10 cm, cao 6 cm. Diện tích bằng bao nhiêu? | 30 cm² |
 | B.3 | Tính nhanh: 47 × 25 + 47 × 75 | 4 700 |
-| B.4 | So sánh: 3 kg … 2 500 g | &gt; |
+| B.4 | So sánh: 3 kg … 2 500 g | > |
 | B.5 | 2 m 30 cm + 150 cm = … cm | 380 |
 | C.1 | Tìm x: x × 6 + 14 = 92 | x = 13 |
 | C.2 | Trung bình mỗi ngày bán 40 kg, hỏi 5 ngày bán bao nhiêu? | 200 kg |
@@ -382,9 +382,9 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | D.1 | Tàu chạy lúc 7 giờ 40 phút, đi hết 2 giờ 35 phút. Đến lúc mấy giờ? | 10 giờ 15 phút |
 | D.2 | 6 đội bóng đấu vòng tròn một lượt. Có bao nhiêu trận? | 15 trận |
 | D.3 | Tổ Một trồng 60 cây, tổ Hai bằng 2 phần 3 tổ Một. Tổ Hai trồng mấy cây? | 40 cây |
-| D.4 | So sánh: 234 × 7 … 234 × 8 | &lt; |
+| D.4 | So sánh: 234 × 7 … 234 × 8 | < |
 | D.5 | Xe chở 20 bao gạo, mỗi bao 50 kg. Xe chở mấy tạ? | 10 tạ |
-| E.1 | So sánh: 3 kg … 2 500 g | &gt; |
+| E.1 | So sánh: 3 kg … 2 500 g | > |
 | E.2 | 5 km = … m | 5 000 |
 | E.3 | Xe chở 20 bao gạo, mỗi bao 50 kg. Xe chở mấy tạ? | 10 tạ |
 | E.4 | 3 m² = … cm² | 30 000 |

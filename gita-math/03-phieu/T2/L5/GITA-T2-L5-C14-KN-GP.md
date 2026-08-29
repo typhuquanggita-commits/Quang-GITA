@@ -382,7 +382,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | D.1 | Vẽ sơ đồ mà nhìn tài liệu thì mất tác dụng gì? | mất tác dụng kiểm tra trí nhớ |
 | D.2 | 2 m³ = … lít | 2 000 |
 | D.3 | 3 m² = … cm² | 30 000 |
-| D.4 | So sánh: 3 kg … 2 500 g | &gt; |
+| D.4 | So sánh: 3 kg … 2 500 g | > |
 | D.5 | 2 m 30 cm + 150 cm = … cm | 380 |
 | E.1 | Vì sao phải giảng lại cho bạn? | vì giảng được mới là hiểu thật |
 | E.2 | Có 10 thùng dầu, mỗi thùng 20 lít, đã bán 3 thùng. Còn bao nhiêu lít? | 140 lít |

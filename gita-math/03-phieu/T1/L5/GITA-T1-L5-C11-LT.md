@@ -243,7 +243,7 @@ f) Làm lại ví dụ mẫu ở trên và ghi đáp số.
 
 ### Bài 3. (6 điểm) Key 3 — So sánh số đo đại lượng
 
-**Phát biểu:** Bảng đơn vị đo, so sánh số tự nhiên. **Ví dụ mẫu:** So sánh: 3 kg … 2 500 g → &gt;.
+**Phát biểu:** Bảng đơn vị đo, so sánh số tự nhiên. **Ví dụ mẫu:** So sánh: 3 kg … 2 500 g → >.
 
 a) Phát biểu lại key này bằng lời của em.
 b) Key này dùng cho dạng bài nào?
@@ -320,7 +320,7 @@ d) Tháng 3 năm 1934 có bao nhiêu ngày?
 
 ### Bài 5. (8 điểm) So sánh hai số đo khác đơn vị
 
-Điền dấu &lt;, &gt;, = thích hợp.
+Điền dấu <, >, = thích hợp.
 
 a) 65 kg … 5 862 tạ
 b) 79 dm … 7 276 cm
@@ -440,7 +440,7 @@ f) 16 hm … 8 434 dam
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài D.3
-**Đáp số:** a) Bảng đơn vị đo, so sánh số tự nhiên · b) So sánh số đo đại lượng · c) Hai vế có đơn vị khác nhau · d) Đổi về cùng đơn vị rồi so sánh · e) So thẳng hai con số, bỏ qua đơn vị. · f) &gt;
+**Đáp số:** a) Bảng đơn vị đo, so sánh số tự nhiên · b) So sánh số đo đại lượng · c) Hai vế có đơn vị khác nhau · d) Đổi về cùng đơn vị rồi so sánh · e) So thẳng hai con số, bỏ qua đơn vị. · f) >
 **Hướng giải:** Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.
@@ -489,7 +489,7 @@ f) 16 hm … 8 434 dam
 **Gợi ý 3 tầng:** (1) Tháng đó nằm trong nhóm 31 ngày hay 30 ngày? — (2) Năm đó có chia hết cho 4 không? — (3) Nếu là năm tròn trăm, có chia hết cho 400 không?
 
 ### Bài E.5
-**Đáp số:** a) &lt; · b) &lt; · c) &lt; · d) &lt; · e) &lt; · f) &lt;
+**Đáp số:** a) < · b) < · c) < · d) < · e) < · f) <
 **Hướng giải:** BẪY — Đơn vị khác nhau. Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.

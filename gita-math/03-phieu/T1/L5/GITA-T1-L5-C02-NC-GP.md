@@ -33,7 +33,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài I.1** — a) 5 tấn 8 tạ 63 kg · b) 6 tấn 16 kg · c) 754 · d) 1 tấn 64 kg
 - **Bài I.2** — a) 3 500 · b) 600 · c) 460 · d) 770 · e) 4 700 · f) 85 000 · g) 86 000 · h) 370
 - **Bài I.3** — a) 7 300 · b) 7 800 · c) 240 000 · d) 4 200 · e) 5 900
-- **Bài I.4** — a) 0,4 · b) &gt; · c) 6 · d) 0,58 · e) 1
+- **Bài I.4** — a) 0,4 · b) > · c) 6 · d) 0,58 · e) 1
 - **Bài I.5** — a) 7 giờ 41 phút · b) 24 phút · c) 61 · d) 9 giờ 54 phút · e) 9 giờ 48 phút · f) 477 · g) 1 giờ 41 phút
 
 **Phần II**
@@ -42,7 +42,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài II.2** — a) 26 236 · b) 1 886 · c) 19 584 · d) 8 484 · e) 742 · f) 4 366 · g) 5 988
 - **Bài II.3** — a) 196 cm² · b) 112 cm² · c) 480 cm² · d) 280 cm²
 - **Bài II.4** — a) 69,87 · b) 58,66 · c) 22,51 · d) 38,12 · e) 164,06 · f) 3,18
-- **Bài II.5** — a) &lt; · b) &lt; · c) &lt; · d) &lt;
+- **Bài II.5** — a) < · b) < · c) < · d) <
 
 **Phần III**
 
@@ -235,13 +235,13 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | I.1 | Số đo có nhiều đơn vị | Bảng đơn vị khối lượng | Số đo viết dưới dạng “… tấn … tạ … kg” | Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư | Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ. | 5 tấn 8 tạ 63 kg · 6 tấn 16 kg · 754 · 1 tấn 64 kg |
 | I.2 | Đổi đơn vị đo | Bảng đơn vị đo độ dài, khối lượng | Dấu … giữa hai đơn vị khác nhau | Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10 | Số bậc chính là số chữ số 0 phải thêm vào (hoặc bớt đi). | 3 500 · 600 · 460 · 770… |
 | I.3 | Đổi đơn vị diện tích | Bảng đơn vị đo diện tích | Đơn vị có mũ hai: m², cm², km², ha | Đếm bậc rồi nhân, chia 100 | Mỗi bậc thêm hai chữ số 0 — nhớ “diện tích thì gấp đôi số 0”. | 7 300 · 7 800 · 240 000 · 4 200… |
-| I.4 | Số thập phân — hàng, so sánh, chuyển đổi | Cấu tạo số thập phân, quan hệ phân số – số thập phân | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 | Xét theo hàng từ trái sang phải | Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. | 0,4 · &gt; · 6 · 0,58… |
+| I.4 | Số thập phân — hàng, so sánh, chuyển đổi | Cấu tạo số thập phân, quan hệ phân số – số thập phân | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 | Xét theo hàng từ trái sang phải | Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. | 0,4 · > · 6 · 0,58… |
 | I.5 | Đổi và tính toán với đơn vị thời gian | Quan hệ giờ – phút – giây | Số đo có chữ “giờ”, “phút”, “giây” | Quy về phút rồi tính, cuối cùng đổi lại giờ và phút | Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm. | 7 giờ 41 phút · 24 phút · 61 · 9 giờ 54 phút… |
 | II.1 | Lịch và đơn vị thời gian lớn | Số ngày các tháng, năm nhuận, thế kỉ | Đề hỏi về tháng, năm, thế kỉ | Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400 | Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ. | 4 tuần 1 ngày · có · XX · 31… |
 | II.2 | Bốn phép tính với số đo | Đổi đơn vị, bốn phép tính | Các số hạng có đơn vị khác nhau trong cùng một phép tính | Đổi về đơn vị của kết quả rồi tính | Đọc chỗ chấm trước, biết ngay đơn vị đích. | 26 236 · 1 886 · 19 584 · 8 484… |
 | II.3 | Diện tích hình thang | Công thức diện tích hình thang | Đề cho hai đáy và chiều cao | Tổng hai đáy × chiều cao : 2 | Nếu tổng hai đáy là số chẵn thì chia 2 ngay từ đầu cho gọn. | 196 cm² · 112 cm² · 480 cm² · 280 cm² |
 | II.4 | Bốn phép tính với số thập phân | Kĩ thuật tính với số thập phân | Các số có dấu phẩy | Chọn quy tắc đặt dấu phẩy theo phép tính | Ước lượng bằng cách làm tròn để kiểm tra vị trí dấu phẩy. | 69,87 · 58,66 · 22,51 · 38,12… |
-| II.5 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &lt; · &lt; · &lt; · &lt; |
+| II.5 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | < · < · < · < |
 | III.1 | Bài toán đại lượng có lời văn | Nhân, chia số tự nhiên; đổi đơn vị khối lượng | Đơn vị trong câu hỏi khác đơn vị trong dữ kiện | Tính theo đơn vị dữ kiện rồi đổi ở bước cuối | 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ. | 14 tạ 50 kg · 10 tạ 40 kg · 5 tạ 40 kg · 15 tạ 20 kg… |
 | III.2 | Đổi đơn vị thể tích, dung tích | Bảng đơn vị thể tích; quan hệ dm³ – lít | Đơn vị có mũ ba, hoặc lít, mi-li-lít | Đếm bậc rồi nhân, chia 1 000 | Mỗi bậc thêm ba chữ số 0. | 36 000 · 61 000 · 49 · 10… |
 | III.3 | Hình hộp chữ nhật, hình lập phương | Công thức thể tích, diện tích xung quanh, toàn phần | Đề cho ba kích thước hoặc cạnh hình lập phương | Xác định loại diện tích cần tính, đếm đủ số mặt | Hình lập phương cạnh a: toàn phần 6 × a × a, thể tích a × a × a. | thể tích 1 331 cm³, diện tích toàn phần 726 cm² · 486 cm² · 1 755 cm³ · 1 038 cm²… |
@@ -367,13 +367,13 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | I.1 | 3 450 kg = … tấn … tạ … kg | 3 tấn 4 tạ 50 kg |
 | I.2 | 5 km = … m | 5 000 |
 | I.3 | 3 m² = … cm² | 30 000 |
-| I.4 | So sánh: 0,5 … 0,45 | &gt; |
+| I.4 | So sánh: 0,5 … 0,45 | > |
 | I.5 | 155 phút = … giờ … phút | 2 giờ 35 phút |
 | II.1 | Năm 1975 thuộc thế kỉ thứ mấy? | XX |
 | II.2 | 2 m 30 cm + 150 cm = … cm | 380 |
 | II.3 | Hình thang đáy 12 cm và 8 cm, cao 5 cm. Diện tích bằng bao nhiêu? | 50 cm² |
 | II.4 | Tính: 3,25 × 4 | 13 |
-| II.5 | So sánh: 3 kg … 2 500 g | &gt; |
+| II.5 | So sánh: 3 kg … 2 500 g | > |
 | III.1 | Xe chở 20 bao gạo, mỗi bao 50 kg. Xe chở mấy tạ? | 10 tạ |
 | III.2 | 2 m³ = … lít | 2 000 |
 | III.3 | Hình lập phương cạnh 4 cm. Thể tích bằng bao nhiêu? | 64 cm³ |

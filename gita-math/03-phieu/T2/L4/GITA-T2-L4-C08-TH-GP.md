@@ -33,7 +33,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài I.1** — a) 1 665 · b) 101 385 · c) 448 570 · d) 763 250 · e) 3 497 · f) 1 978
 - **Bài I.2** — a) 1 phần 4 · b) 4 phần 9 · c) 4 phần 5 · d) 2 · e) 3 · f) 1 phần 11 · g) 3 phần 5
 - **Bài I.3** — a) 22 863 · b) 44 277 · c) 122 143 · d) 48 370 · e) 125 074 · f) 136 239
-- **Bài I.4** — a) &lt; · b) &gt; · c) &gt; · d) &lt; · e) &lt; · f) &lt;
+- **Bài I.4** — a) < · b) > · c) > · d) < · e) < · f) <
 - **Bài I.5** — a) 277 872 · b) 485 040 · c) 972 030 · d) 763 489
 
 **Phần II**
@@ -63,7 +63,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần V**
 
 - **Bài V.1** — a) 84 · b) 90 · c) 4 dư 12 · d) 4 dư 3 · e) 5 dư 11 · f) 5 dư 9
-- **Bài V.2** — a) &lt; · b) &gt; · c) &lt; · d) &gt;
+- **Bài V.2** — a) < · b) > · c) < · d) >
 - **Bài V.3** — a) 82 đơn vị · b) 68 đơn vị · c) 195 đơn vị · d) 260 đơn vị
 - **Bài V.4** — a) không còn đúng (6 bạn có thể chia đều 1 bạn mỗi tháng) · b) không còn đúng (6 bạn có thể chia đều 2 bạn mỗi tháng) · c) không còn đúng (28 bạn có thể chia đều 4 bạn mỗi tháng) · d) không còn đúng (32 bạn có thể chia đều 4 bạn mỗi tháng) · e) không còn đúng (18 bạn có thể chia đều 3 bạn mỗi tháng)
 - **Bài V.5** — a) -5 · b) -5 · c) -50 · d) -5
@@ -235,7 +235,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | I.1 | Nhân, chia số tự nhiên | Kĩ thuật đặt tính nhân, chia | Yêu cầu “đặt tính rồi tính” với phép nhân, chia | Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ chữ số | Kiểm tra kết quả bằng phép tính ngược: thương × số chia = số bị chia. | 1 665 · 101 385 · 448 570 · 763 250… |
 | I.2 | Rút gọn phân số | Tính chất cơ bản của phân số | Tử số và mẫu số có ước chung lớn hơn 1 | Chia cả tử và mẫu cho ước chung | Tìm ngay ước chung lớn nhất để rút gọn một lần là xong. | 1 phần 4 · 4 phần 9 · 4 phần 5 · 2… |
 | I.3 | Cộng, trừ số tự nhiên | Kĩ thuật đặt tính, nhớ và mượn | Yêu cầu “đặt tính rồi tính” | Đặt tính thẳng hàng, tính từ hàng đơn vị | Làm tròn một số hạng để ước lượng trước, dùng kết quả ước lượng để phát hiện sai sót. | 22 863 · 44 277 · 122 143 · 48 370… |
-| I.4 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | &lt; · &gt; · &gt; · &lt;… |
+| I.4 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | < · > · > · <… |
 | I.5 | Viết số từ dạng tổng theo hàng | Cấu tạo thập phân của số tự nhiên | Tổng gồm các số tròn chục, tròn trăm, tròn nghìn… | Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết | Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số. | 277 872 · 485 040 · 972 030 · 763 489 |
 | II.1 | Chu vi, diện tích trong tình huống thực tế | Công thức chu vi, diện tích; phép chia | Từ khoá “rào xung quanh”, “lát gạch”, “trồng cây quanh” | Đọc vị chu vi hay diện tích rồi tính | Nhìn đơn vị của đáp số: mét thì là chu vi, mét vuông thì là diện tích. | 122 m · không chia hết (146 m không chia hết cho 4 m) · 14 cây · 86 m… |
 | II.2 | Ba dạng bài trung bình cộng | Quan hệ tổng – số lượng – trung bình cộng | Cụm “trung bình mỗi …” | Đi qua tổng làm trung gian | Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng. | 69 kg · 576 kg · 52 kg · 161 kg… |
@@ -253,7 +253,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.4 | Tổng các tích có thừa số chung | Nhân một số với một tổng, tổng dãy cách đều | Dãy cộng gồm nhiều tích cùng một thừa số | Đặt thừa số chung → tính tổng trong ngoặc bằng công thức | 1 + 2 + … + 100 = 5 050; nhớ vài mốc để nhân ngay. | 220 · 840 · 2 275 · 1 260… |
 | IV.5 | Bài toán đại lượng nhiều bước | Nhân, trừ; đại lượng cùng loại | Cho số nhóm, giá trị mỗi nhóm và số nhóm đã dùng | Rút gọn số bước bằng cách trừ trước, nhân sau | So sánh hai đường giải, chọn đường ít phép tính hơn. | 216 lít · 240 lít · 144 lít · 300 lít… |
 | V.1 | Số và tổng chữ số của nó | Cấu tạo thập phân, phép chia có dư | Đề liên hệ số với tổng các chữ số của chính nó | Đặt ẩn cho chữ số, viết hai biểu thức, lập bảng thử | a × 10 + b − (a + b) = 9 × a — hiệu luôn là bội của 9. | 84 · 90 · 4 dư 12 · 4 dư 3… |
-| V.2 | So sánh phân số bằng kĩ thuật đặc biệt | Phần bù tới 1, phân số trung gian | Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 | So phần bù; hoặc chèn phân số trung gian | Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. | &lt; · &gt; · &lt; · &gt; |
+| V.2 | So sánh phân số bằng kĩ thuật đặc biệt | Phần bù tới 1, phân số trung gian | Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 | So phần bù; hoặc chèn phân số trung gian | Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. | < · > · < · > |
 | V.3 | Tổng – tỉ có tỉ số thay đổi | Tổng – tỉ, đại lượng không đổi | “Phải thêm (bớt) bao nhiêu để tỉ số trở thành …” | Xác định đại lượng bất biến → tính lại đại lượng kia | Số cần thêm = số bé × (tỉ số mới − tỉ số cũ). | 82 đơn vị · 68 đơn vị · 195 đơn vị · 260 đơn vị |
 | V.4 | Đi-rích-lê dạng chứng minh | Nguyên lí ngăn kéo | “Chứng tỏ rằng có ít nhất … cùng …” | Đặt tên ngăn kéo và đồ vật, tính ngưỡng | Ngưỡng = số ngăn × (số cần − 1) + 1. | không còn đúng (6 bạn có thể chia đều 1 bạn mỗi tháng) · không còn đúng (6 bạn có thể chia đều 2 bạn mỗi tháng) · không còn đúng (28 bạn có thể chia đều 4 bạn mỗi tháng) · không còn đúng (32 bạn có thể chia đều 4 bạn mỗi tháng)… |
 | V.5 | Tổng dãy cộng trừ xen kẽ | Ghép cặp, tính chất kết hợp | Dấu cộng và trừ xen kẽ đều đặn | Ghép cặp, đếm số cặp, xử lí phần dư | Dãy 1 − 2 + 3 − … với n chẵn bằng −n : 2; với n lẻ bằng (n + 1) : 2. | -5 · -5 · -50 · -5 |
@@ -367,7 +367,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | I.1 | Đặt tính rồi tính: 3 045 × 24 | 73 080 |
 | I.2 | Rút gọn 18 phần 24. | 3 phần 4 |
 | I.3 | Đặt tính rồi tính: 4 328 + 1 795 | 6 123 |
-| I.4 | So sánh: 3 phần 5 … 3 phần 7 | &gt; |
+| I.4 | So sánh: 3 phần 5 … 3 phần 7 | > |
 | I.5 | Viết số gồm tổng: 30 000 + 400 + 7 | 30 407 |
 | II.1 | Vườn dài 20 m rộng 10 m, rào xung quanh cần bao nhiêu mét rào? | 60 m |
 | II.2 | Trung bình mỗi ngày bán 40 kg, hỏi 5 ngày bán bao nhiêu? | 200 kg |
@@ -385,7 +385,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | IV.4 | Tính nhanh: 5 × 1 + 5 × 2 + … + 5 × 10 | 275 |
 | IV.5 | Có 10 thùng dầu, mỗi thùng 20 lít, đã bán 3 thùng. Còn bao nhiêu lít? | 140 lít |
 | V.1 | Số 27 gấp mấy lần tổng hai chữ số của nó? | 3 lần |
-| V.2 | So sánh: 5 phần 6 … 7 phần 8 | &lt; |
+| V.2 | So sánh: 5 phần 6 … 7 phần 8 | < |
 | V.3 | Số lớn gấp 2 lần số bé, tổng là 30. Thêm bao nhiêu vào số lớn để nó gấp 4 lần số bé? | 20 |
 | V.4 | 13 bạn sinh trong 12 tháng, chứng tỏ có 2 bạn cùng tháng sinh. | đúng, vì 13 > 12 × 1 |
 | V.5 | Tính nhanh: 1 − 2 + 3 − 4 + … + 9 − 10 | −5 |

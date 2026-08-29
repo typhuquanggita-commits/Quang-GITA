@@ -34,7 +34,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài A.2** — a) 1 · b) 1 phần 8 · c) 7 phần 3 · d) 8 phần 11 · e) 5 phần 9
 - **Bài A.3** — a) 5 chữ số, tổng 22 · b) 6 chữ số, tổng 21 · c) 6 chữ số, tổng 14 · d) 6 chữ số, tổng 39 · e) 6 chữ số, tổng 22 · f) 6 chữ số, tổng 36
 - **Bài A.4** — a) 6 460 · b) 29 388 · c) 13 590 · d) 5 766 · e) 17 099 · f) 67 246 · g) 34 555
-- **Bài A.5** — a) &gt; · b) &gt; · c) &lt; · d) &gt; · e) &lt; · f) &lt; · g) &gt; · h) &lt;
+- **Bài A.5** — a) > · b) > · c) < · d) > · e) < · f) < · g) > · h) <
 
 **Phần B**
 
@@ -54,11 +54,11 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần D**
 
-- **Bài D.1** — a) Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu · b) So sánh phân số · c) Hai phân số nối bởi dấu … · d) Xét cùng mẫu → cùng tử → quy đồng · e) Thấy mẫu số lớn thì kết luận phân số lớn. · f) &gt;
+- **Bài D.1** — a) Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu · b) So sánh phân số · c) Hai phân số nối bởi dấu … · d) Xét cùng mẫu → cùng tử → quy đồng · e) Thấy mẫu số lớn thì kết luận phân số lớn. · f) >
 - **Bài D.2** — a) Thống kê mô tả sơ cấp, trung bình cộng, tỉ số phần trăm · b) Đọc bảng số liệu thống kê · c) Đề cho bảng hoặc biểu đồ kèm nhiều câu hỏi · d) Ghi lại số liệu, trả lời từng câu bằng công cụ tương ứng · e) Đọc nhầm cột, hoặc quên một môn khi cộng tổng. · f) 6,67 bạn
 - **Bài D.3** — a) Thứ tự thực hiện phép tính, tính chất phân phối · b) Biểu thức phân số nhiều phép tính · c) Biểu thức gồm nhiều phân số và nhiều phép tính · d) Quan sát rút gọn trước, sau đó theo thứ tự thực hiện · e) Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. · f) 1
 - **Bài D.4** — a) Quy đồng, nhân chia phân số · b) Bốn phép tính với phân số · c) Biểu thức chỉ gồm phân số · d) Chọn quy tắc theo phép tính, rút gọn cuối cùng · e) Quy đồng cả khi nhân, hoặc cộng thẳng tử với tử và mẫu với mẫu. · f) 5 phần 6
-- **Bài D.5** — a) Phần bù tới 1, phân số trung gian · b) So sánh phân số bằng kĩ thuật đặc biệt · c) Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 · d) So phần bù; hoặc chèn phân số trung gian · e) So phần bù rồi kết luận cùng chiều với phần bù. · f) &lt;
+- **Bài D.5** — a) Phần bù tới 1, phân số trung gian · b) So sánh phân số bằng kĩ thuật đặc biệt · c) Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 · d) So phần bù; hoặc chèn phân số trung gian · e) So phần bù rồi kết luận cùng chiều với phần bù. · f) <
 
 **Phần E**
 
@@ -236,7 +236,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | A.2 | Rút gọn phân số | Tính chất cơ bản của phân số | Tử số và mẫu số có ước chung lớn hơn 1 | Chia cả tử và mẫu cho ước chung | Tìm ngay ước chung lớn nhất để rút gọn một lần là xong. | 1 · 1 phần 8 · 7 phần 3 · 8 phần 11… |
 | A.3 | Đếm chữ số, tính tổng chữ số | Cấu tạo số, tổng chữ số | Yêu cầu “có mấy chữ số”, “tổng các chữ số” | Tách lớp để đếm; cộng rời từng chữ số | Ghép cặp các chữ số cộng lại tròn 10 rồi cộng nhanh. | 5 chữ số, tổng 22 · 6 chữ số, tổng 21 · 6 chữ số, tổng 14 · 6 chữ số, tổng 39… |
 | A.4 | Cộng, trừ số tự nhiên | Kĩ thuật đặt tính, nhớ và mượn | Yêu cầu “đặt tính rồi tính” | Đặt tính thẳng hàng, tính từ hàng đơn vị | Làm tròn một số hạng để ước lượng trước, dùng kết quả ước lượng để phát hiện sai sót. | 6 460 · 29 388 · 13 590 · 5 766… |
-| A.5 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | &gt; · &gt; · &lt; · &gt;… |
+| A.5 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | > · > · < · >… |
 | B.1 | Định vị chương trong hệ thống | Tên chương, nhóm chuyên đề, số dạng bài | Phần đầu phiếu ghi rõ tên cụm và nhóm chuyên đề | Đọc phần đầu phiếu rồi trả lời theo đúng tên gọi | Ghi tên chương ra góc vở, mỗi lần mở vở là đọc lại một lần. | Phân số: khái niệm đến bốn phép tính · H — Phân số – Số thập phân – Tỉ số phần trăm – Thống kê · 7 · ở mọi bài thuộc phân số – số thập phân – tỉ số phần trăm – thống kê, vì các chương sau đều dùng lại nền này… |
 | B.2 | Liệt kê dạng bài của chương | Danh mục dạng bài | Bảng dạng bài ở phiếu Dạng bài & Đọc vị của cùng cụm | Chép theo bảng, giữ nguyên thứ tự | Học thuộc số lượng dạng bài trước, tên từng dạng sau. | Khái niệm phân số — đọc, viết, biểu diễn · Phân số bằng nhau — rút gọn phân số · Quy đồng mẫu số các phân số · So sánh hai phân số… |
 | B.3 | Định vị chương theo thời gian | Kế hoạch năm học, mốc kiểm tra | Phần đầu phiếu ghi tuần, học kỳ, mốc | Đọc phần đầu phiếu | Mỗi cụm luôn có đúng 6 buổi và 1 phiếu hướng dẫn ôn chắc. | HK2 · tuần 17 · Giữa kỳ II · cụm 9… |
@@ -368,7 +368,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | A.2 | Rút gọn 18 phần 24. | 3 phần 4 |
 | A.3 | Số 40 506 có mấy chữ số và tổng các chữ số bằng bao nhiêu? | 5 chữ số, tổng 15 |
 | A.4 | Đặt tính rồi tính: 4 328 + 1 795 | 6 123 |
-| A.5 | So sánh: 3 phần 5 … 3 phần 7 | &gt; |
+| A.5 | So sánh: 3 phần 5 … 3 phần 7 | > |
 | B.1 | Chương “Phân số: khái niệm đến bốn phép tính” thuộc nhóm chuyên đề nào? | H — Phân số – Số thập phân – Tỉ số phần trăm – Thống kê |
 | B.2 | Chương này có mấy dạng bài chính? | 7 |
 | B.3 | Một cụm chuyên đề GITA gồm mấy buổi học? | 6 buổi |
@@ -379,11 +379,11 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | C.3 | Bài toán tổng – hiệu nên minh hoạ bằng gì? | sơ đồ đoạn thẳng |
 | C.4 | “Trung bình mỗi ngày…” là dấu hiệu của dạng nào? | trung bình cộng |
 | C.5 | Tổng dãy cách đều tính nhanh bằng cách nào? | (đầu + cuối) × số số hạng : 2 |
-| D.1 | So sánh: 3 phần 5 … 3 phần 7 | &gt; |
+| D.1 | So sánh: 3 phần 5 … 3 phần 7 | > |
 | D.2 | Bảng: Toán 10, Văn 6, Anh 4. Trung bình mỗi môn bao nhiêu bạn? | 6,67 bạn |
 | D.3 | Tính: (1 phần 2 + 1 phần 3) × 6 phần 5 | 1 |
 | D.4 | Tính: 2 phần 3 + 1 phần 6 | 5 phần 6 |
-| D.5 | So sánh: 5 phần 6 … 7 phần 8 | &lt; |
+| D.5 | So sánh: 5 phần 6 … 7 phần 8 | < |
 | E.1 | Có bao nhiêu số chẵn từ 10 đến 40? | 16 |
 | E.2 | Tổng 45 + 27 có chia hết cho 9 không? | có |
 | E.3 | Tính: 2 phần 3 + 1 phần 6 | 5 phần 6 |

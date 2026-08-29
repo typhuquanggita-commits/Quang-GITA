@@ -202,7 +202,7 @@ d) Một cửa hàng có 192 kg gạo. Ngày đầu bán 1 phần 4 số gạo, 
 
 ### Bài 4. (5 điểm) So sánh hai biểu thức mà không cần tính
 
-Điền dấu &lt;, &gt;, = và giải thích ngắn.
+Điền dấu <, >, = và giải thích ngắn.
 
 a) 707 + 15 … 677 + 15
 b) 169 × 5 … 125 × 5
@@ -417,7 +417,7 @@ d) 1 − 2 + 3 − 4 + 5 − 6 + … − 20
 **Lỗi thường gặp:** Lấy cả hai phân số nhân với tổng ban đầu. Phòng: Sau mỗi bước, viết rõ “còn lại … kg” rồi mới sang bước sau.
 
 ### Bài III.4
-**Đáp số:** a) &gt; · b) &gt; · c) &gt; · d) &lt; · e) &gt; · f) &gt; · g) &lt;
+**Đáp số:** a) > · b) > · c) > · d) < · e) > · f) > · g) <
 **Hướng giải:** Khi hai biểu thức có phần giống nhau, chỉ cần so sánh phần khác nhau: cùng cộng thêm một số thì số nào lớn hơn vẫn lớn hơn; cùng nhân với một số khác 0 cũng vậy.
 **Nhãn tư duy:** TD5, TD2. Điểm chốt: Che phần **giống nhau** đi, chỉ so phần khác nhau.
 **Lỗi thường gặp:** Tính hết cả hai vế, vừa lâu vừa dễ sai. Phòng: Dùng bút gạch bỏ phần giống nhau ở hai vế trước khi so sánh.

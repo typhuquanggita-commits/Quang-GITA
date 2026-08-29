@@ -140,7 +140,7 @@ d) 15 kg 100 g − 50 g = … g
 
 ### Bài 4. (4 điểm) So sánh hai số đo khác đơn vị
 
-Điền dấu &lt;, &gt;, = thích hợp.
+Điền dấu <, >, = thích hợp.
 
 a) 29 yến … 2 588 tạ
 b) 36 mm … 3 752 hm
@@ -376,7 +376,7 @@ d) 1 + 3 + 5 + … + 39 (tổng 20 số lẻ đầu tiên)
 **Lỗi thường gặp:** Cộng số mét với số xăng-ti-mét mà chưa đổi. Phòng: Gạch chân đơn vị ở chỗ chấm rồi đổi mọi số hạng về đơn vị đó.
 
 ### Bài II.4
-**Đáp số:** a) &lt; · b) &lt; · c) &gt; · d) &lt; · e) &gt; · f) &lt;
+**Đáp số:** a) < · b) < · c) > · d) < · e) > · f) <
 **Hướng giải:** Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.

@@ -33,7 +33,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài I.1** — a) chữ số 7, giá trị 7 000 · b) chữ số 4, giá trị 400 · c) chữ số 6, giá trị 60 · d) chữ số 9, giá trị 9
 - **Bài I.2** — a) 5 chữ số, tổng 22 · b) 5 chữ số, tổng 24 · c) 5 chữ số, tổng 18 · d) 5 chữ số, tổng 16 · e) 5 chữ số, tổng 21
 - **Bài I.3** — a) 768 · b) 448 · c) 811 · d) 1 496 · e) 720
-- **Bài I.4** — a) &gt; · b) &lt; · c) &gt; · d) &gt; · e) &gt; · f) &lt;
+- **Bài I.4** — a) > · b) < · c) > · d) > · e) > · f) <
 - **Bài I.5** — a) số lẻ · b) 31 928 · c) 44 006 · d) 67 727 · e) 77 175
 
 **Phần II**
@@ -92,7 +92,7 @@ Viết các số thẳng hàng theo đúng hàng đơn vị, cộng hoặc trừ
 
 *Điểm chốt:* Thẳng hàng **đơn vị**, không thẳng theo chữ số đầu.
 
-### Bài I.4 — Điền dấu &lt;, &gt;, = thích hợp
+### Bài I.4 — Điền dấu <, >, = thích hợp
 
 So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 
@@ -235,7 +235,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | I.1 | Xác định chữ số và giá trị chữ số theo hàng | Cấu tạo thập phân của số tự nhiên | Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” | Đánh số hàng từ phải sang trái rồi tra bảng hàng | Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị. | chữ số 7, giá trị 7 000 · chữ số 4, giá trị 400 · chữ số 6, giá trị 60 · chữ số 9, giá trị 9 |
 | I.2 | Đếm chữ số, tính tổng chữ số | Cấu tạo số, tổng chữ số | Yêu cầu “có mấy chữ số”, “tổng các chữ số” | Tách lớp để đếm; cộng rời từng chữ số | Ghép cặp các chữ số cộng lại tròn 10 rồi cộng nhanh. | 5 chữ số, tổng 22 · 5 chữ số, tổng 24 · 5 chữ số, tổng 18 · 5 chữ số, tổng 16… |
 | I.3 | Cộng, trừ số tự nhiên | Kĩ thuật đặt tính, nhớ và mượn | Yêu cầu “đặt tính rồi tính” | Đặt tính thẳng hàng, tính từ hàng đơn vị | Làm tròn một số hạng để ước lượng trước, dùng kết quả ước lượng để phát hiện sai sót. | 768 · 448 · 811 · 1 496… |
-| I.4 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | &gt; · &lt; · &gt; · &gt;… |
+| I.4 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | > · < · > · >… |
 | I.5 | Nhận biết chẵn – lẻ và số liền kề | Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2 | Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” | Xét chữ số tận cùng; cộng hoặc trừ 1 đơn vị | Che hết các chữ số, chỉ để lộ chữ số cuối. | số lẻ · 31 928 · 44 006 · 67 727… |
 | II.1 | Tổng – hiệu có lời văn | Công thức tổng – hiệu, sơ đồ đoạn thẳng | “Có tất cả …” và “… nhiều hơn … là …” | Đọc vị tổng và hiệu → sơ đồ → công thức | Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần. | đội Hai: 390 cây, nhóm Sao Mai: 350 cây · thư viện: 155 kg, xưởng: 115 kg · 5A: 444 quyển, 4C: 222 quyển · tổ Một: 147 cây, tổ Hai: 143 cây… |
 | II.2 | Ba dạng bài trung bình cộng | Quan hệ tổng – số lượng – trung bình cộng | Cụm “trung bình mỗi …” | Đi qua tổng làm trung gian | Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng. | 159 kg · 351 kg · 245 kg · 212 kg… |
@@ -367,7 +367,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | I.1 | Chữ số hàng chục của số 7 469 có giá trị bao nhiêu? | 60 |
 | I.2 | Số 40 506 có mấy chữ số và tổng các chữ số bằng bao nhiêu? | 5 chữ số, tổng 15 |
 | I.3 | Đặt tính rồi tính: 4 328 + 1 795 | 6 123 |
-| I.4 | Điền dấu: 13 232 … 13 233 | &lt; |
+| I.4 | Điền dấu: 13 232 … 13 233 | < |
 | I.5 | Số liền sau của 10 375 là số nào? | 10 376 |
 | II.1 | Hai lớp có 90 quyển sách, lớp A nhiều hơn lớp B 10 quyển. Mỗi lớp có mấy quyển? | 50 và 40 |
 | II.2 | Trung bình mỗi ngày bán 40 kg, hỏi 5 ngày bán bao nhiêu? | 200 kg |

@@ -32,7 +32,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài I.1** — a) 20 346 · b) 3 698 · c) 15 103 · d) 13 940 · e) 8 130 · f) 36 441
 - **Bài I.2** — a) 660 cm² · b) 124 cm² · c) 1 027 cm² · d) 910 cm² · e) 580 cm² · f) 208 cm²
-- **Bài I.3** — a) &gt; · b) &gt; · c) &lt; · d) &lt; · e) &lt;
+- **Bài I.3** — a) > · b) > · c) < · d) < · e) <
 - **Bài I.4** — a) 203 cm² · b) 272 cm² · c) 168 cm² · d) 210 cm²
 - **Bài I.5** — a) 30 · b) 3 tuần 0 ngày · c) XXI · d) có
 
@@ -234,7 +234,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 |---|---|---|---|---|---|---|
 | I.1 | Bốn phép tính với số đo | Đổi đơn vị, bốn phép tính | Các số hạng có đơn vị khác nhau trong cùng một phép tính | Đổi về đơn vị của kết quả rồi tính | Đọc chỗ chấm trước, biết ngay đơn vị đích. | 20 346 · 3 698 · 15 103 · 13 940… |
 | I.2 | Diện tích hình thang | Công thức diện tích hình thang | Đề cho hai đáy và chiều cao | Tổng hai đáy × chiều cao : 2 | Nếu tổng hai đáy là số chẵn thì chia 2 ngay từ đầu cho gọn. | 660 cm² · 124 cm² · 1 027 cm² · 910 cm²… |
-| I.3 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &gt; · &gt; · &lt; · &lt;… |
+| I.3 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | > · > · < · <… |
 | I.4 | Diện tích các hình phẳng cơ bản | Công thức diện tích hình bình hành, hình thoi, hình tam giác | Đề cho đáy và chiều cao, hoặc hai đường chéo | Nhận dạng hình rồi chọn công thức | Tam giác bằng nửa hình bình hành cùng đáy cùng chiều cao. | 203 cm² · 272 cm² · 168 cm² · 210 cm² |
 | I.5 | Lịch và đơn vị thời gian lớn | Số ngày các tháng, năm nhuận, thế kỉ | Đề hỏi về tháng, năm, thế kỉ | Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400 | Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ. | 30 · 3 tuần 0 ngày · XXI · có |
 | II.1 | Tìm chữ số tận cùng của một phép tính | Tính chất chữ số tận cùng | Câu hỏi chỉ hỏi “chữ số tận cùng”, không hỏi kết quả | Rút gọn về chữ số tận cùng rồi tính | Với phép trừ, nếu chữ số cuối của số bị trừ nhỏ hơn thì mượn 10 rồi trừ. | 0 · 8 · 2 · 4… |
@@ -366,7 +366,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 |---|---|---|
 | I.1 | 2 m 30 cm + 150 cm = … cm | 380 |
 | I.2 | Hình thang đáy 12 cm và 8 cm, cao 5 cm. Diện tích bằng bao nhiêu? | 50 cm² |
-| I.3 | So sánh: 3 kg … 2 500 g | &gt; |
+| I.3 | So sánh: 3 kg … 2 500 g | > |
 | I.4 | Tam giác đáy 10 cm, cao 6 cm. Diện tích bằng bao nhiêu? | 30 cm² |
 | I.5 | Năm 1975 thuộc thế kỉ thứ mấy? | XX |
 | II.1 | Tích 137 × 46 có chữ số tận cùng là chữ số nào? | 2 |

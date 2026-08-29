@@ -31,10 +31,10 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần I**
 
 - **Bài I.1** — a) số lớn 984, số bé 740 · b) số lớn 1 039, số bé 759 · c) số lớn 403, số bé 399 · d) số lớn 871, số bé 561 · e) số lớn 116, số bé 110 · f) số lớn 469, số bé 275 · g) số lớn 759, số bé 669
-- **Bài I.2** — a) &lt; · b) &gt; · c) &lt; · d) &lt; · e) &lt; · f) &gt;
+- **Bài I.2** — a) < · b) > · c) < · d) < · e) < · f) >
 - **Bài I.3** — a) 1 phần 9 · b) 6 phần 7 · c) 2 phần 9 · d) 1 phần 3 · e) 7 phần 12
 - **Bài I.4** — a) 6 496 927 · b) 6 325 500 · c) 5 561 223 · d) 1 757 103
-- **Bài I.5** — a) 2 · b) &gt; · c) 0,9 · d) 5 · e) 0,8 · f) &gt;
+- **Bài I.5** — a) 2 · b) > · c) 0,9 · d) 5 · e) 0,8 · f) >
 
 **Phần II**
 
@@ -63,7 +63,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần V**
 
 - **Bài V.1** — a) 216 000 đồng, tăng 16 000 đồng · b) 120 000 đồng, tăng 20 000 đồng · c) 108 000 đồng, tăng 8 000 đồng · d) 330 000 đồng, giảm 70 000 đồng · e) 187 500 đồng, giảm 12 500 đồng
-- **Bài V.2** — a) &gt; · b) &lt; · c) &lt; · d) &gt;
+- **Bài V.2** — a) > · b) < · c) < · d) >
 - **Bài V.3** — a) không còn đúng (5 bạn có thể chia đều 1 bạn mỗi tháng) · b) không còn đúng (9 bạn có thể chia đều 3 bạn mỗi tháng) · c) không còn đúng (9 bạn có thể chia đều 3 bạn mỗi tháng) · d) không còn đúng (12 bạn có thể chia đều 2 bạn mỗi tháng) · e) không còn đúng (48 bạn có thể chia đều 4 bạn mỗi tháng)
 - **Bài V.4** — a) 10 000 · b) 5 050 · c) 10 100 · d) 10 000 · e) 10 100 · f) 210
 - **Bài V.5** — a) 7,39 ngày · b) 6,5 ngày · c) 2 ngày · d) 2 ngày · e) 8 ngày
@@ -233,10 +233,10 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
 | I.1 | Bài toán tổng – hiệu | Công thức tổng – hiệu, sơ đồ đoạn thẳng | Đề cho **tổng** và **hiệu** của hai số | Vẽ sơ đồ, đưa về hai phần bằng nhau | Số lớn và số bé luôn có trung bình cộng bằng nửa tổng. | số lớn 984, số bé 740 · số lớn 1 039, số bé 759 · số lớn 403, số bé 399 · số lớn 871, số bé 561… |
-| I.2 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | &lt; · &gt; · &lt; · &lt;… |
+| I.2 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | < · > · < · <… |
 | I.3 | Rút gọn phân số | Tính chất cơ bản của phân số | Tử số và mẫu số có ước chung lớn hơn 1 | Chia cả tử và mẫu cho ước chung | Tìm ngay ước chung lớn nhất để rút gọn một lần là xong. | 1 phần 9 · 6 phần 7 · 2 phần 9 · 1 phần 3… |
 | I.4 | Viết số từ dạng tổng theo hàng | Cấu tạo thập phân của số tự nhiên | Tổng gồm các số tròn chục, tròn trăm, tròn nghìn… | Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết | Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số. | 6 496 927 · 6 325 500 · 5 561 223 · 1 757 103 |
-| I.5 | Số thập phân — hàng, so sánh, chuyển đổi | Cấu tạo số thập phân, quan hệ phân số – số thập phân | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 | Xét theo hàng từ trái sang phải | Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. | 2 · &gt; · 0,9 · 5… |
+| I.5 | Số thập phân — hàng, so sánh, chuyển đổi | Cấu tạo số thập phân, quan hệ phân số – số thập phân | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 | Xét theo hàng từ trái sang phải | Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. | 2 · > · 0,9 · 5… |
 | II.1 | Chu vi, diện tích trong tình huống thực tế | Công thức chu vi, diện tích; phép chia | Từ khoá “rào xung quanh”, “lát gạch”, “trồng cây quanh” | Đọc vị chu vi hay diện tích rồi tính | Nhìn đơn vị của đáp số: mét thì là chu vi, mét vuông thì là diện tích. | 212 m · 32 viên (làm tròn lên) · 120 m · 53 cây… |
 | II.2 | Tổng – hiệu có lời văn | Công thức tổng – hiệu, sơ đồ đoạn thẳng | “Có tất cả …” và “… nhiều hơn … là …” | Đọc vị tổng và hiệu → sơ đồ → công thức | Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần. | nhóm Sao Mai: 296 cây, đội Hai: 156 cây · kho A: 365 kg, kho B: 287 kg · 4A: 463 quyển, 5A: 281 quyển · cửa hàng: 39 kg, trang trại: 25 kg |
 | II.3 | Bốn phép tính với phân số | Quy đồng, nhân chia phân số | Biểu thức chỉ gồm phân số | Chọn quy tắc theo phép tính, rút gọn cuối cùng | Rút gọn chéo trước khi nhân để số nhỏ, tính nhanh và ít sai. | 1 phần 3 · 7 phần 5 · 1 phần 18 · 23 phần 22… |
@@ -253,7 +253,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.4 | Tổng và trung bình cộng của dãy cách đều | Dãy cách đều, trung bình cộng | Đề cho số số hạng, khoảng cách và một đầu của dãy | Tìm hai đầu dãy → tổng → trung bình cộng | Mọi cặp số hạng cách đều hai đầu đều có tổng bằng nhau. | 152 · 228 · 3 800 · 190… |
 | IV.5 | Tỉ số phần trăm trong mua bán | Tỉ số phần trăm, tăng giảm theo phần trăm | Từ khoá “tăng giá”, “giảm giá”, “lãi”, “lỗ” | Chốt mốc 100% rồi cộng trừ phần trăm | Giảm 20% nghĩa là còn 80% — nhân thẳng một lần thay vì trừ hai bước. | 200 000 đồng · 25% · 287 500 đồng · 300 000 đồng… |
 | V.1 | Phần trăm thay đổi nhiều lần | Tỉ số phần trăm, mốc quy chiếu | Hai lần tăng giảm liên tiếp | Tính tuần tự, xác định lại mốc 100% sau mỗi bước | Tăng 20% rồi giảm 20% thì còn 96% giá ban đầu — luôn thấp hơn giá cũ. | 216 000 đồng, tăng 16 000 đồng · 120 000 đồng, tăng 20 000 đồng · 108 000 đồng, tăng 8 000 đồng · 330 000 đồng, giảm 70 000 đồng… |
-| V.2 | So sánh phân số bằng kĩ thuật đặc biệt | Phần bù tới 1, phân số trung gian | Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 | So phần bù; hoặc chèn phân số trung gian | Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. | &gt; · &lt; · &lt; · &gt; |
+| V.2 | So sánh phân số bằng kĩ thuật đặc biệt | Phần bù tới 1, phân số trung gian | Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 | So phần bù; hoặc chèn phân số trung gian | Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. | > · < · < · > |
 | V.3 | Đi-rích-lê dạng chứng minh | Nguyên lí ngăn kéo | “Chứng tỏ rằng có ít nhất … cùng …” | Đặt tên ngăn kéo và đồ vật, tính ngưỡng | Ngưỡng = số ngăn × (số cần − 1) + 1. | không còn đúng (5 bạn có thể chia đều 1 bạn mỗi tháng) · không còn đúng (9 bạn có thể chia đều 3 bạn mỗi tháng) · không còn đúng (9 bạn có thể chia đều 3 bạn mỗi tháng) · không còn đúng (12 bạn có thể chia đều 2 bạn mỗi tháng)… |
 | V.4 | Tổng dãy đặc biệt | Ba công thức tổng cơ bản | Dãy toàn số lẻ, toàn số chẵn, hoặc số tự nhiên liên tiếp | Đếm số số hạng rồi áp công thức | Tổng n số lẻ đầu tiên luôn là một số chính phương — dùng để kiểm tra nhanh. | 10 000 · 5 050 · 10 100 · 10 000… |
 | V.5 | Tỉ lệ nghịch, so sánh hai phương án | Đại lượng tỉ lệ nghịch, tổng số ngày công | Thay đổi số người, hỏi thay đổi thời gian | Bám vào tổng số ngày công không đổi | Số người tăng gấp k lần thì số ngày giảm còn 1 phần k. | 7,39 ngày · 6,5 ngày · 2 ngày · 2 ngày… |
@@ -365,10 +365,10 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | Bài | Đề tương tự | Đáp số |
 |---|---|---|
 | I.1 | Tổng hai số là 100, hiệu là 20. Tìm hai số. | 60 và 40 |
-| I.2 | So sánh: 3 phần 5 … 3 phần 7 | &gt; |
+| I.2 | So sánh: 3 phần 5 … 3 phần 7 | > |
 | I.3 | Rút gọn 18 phần 24. | 3 phần 4 |
 | I.4 | Viết số gồm tổng: 30 000 + 400 + 7 | 30 407 |
-| I.5 | So sánh: 0,5 … 0,45 | &gt; |
+| I.5 | So sánh: 0,5 … 0,45 | > |
 | II.1 | Vườn dài 20 m rộng 10 m, rào xung quanh cần bao nhiêu mét rào? | 60 m |
 | II.2 | Hai lớp có 90 quyển sách, lớp A nhiều hơn lớp B 10 quyển. Mỗi lớp có mấy quyển? | 50 và 40 |
 | II.3 | Tính: 2 phần 3 + 1 phần 6 | 5 phần 6 |
@@ -385,7 +385,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | IV.4 | Dãy cách đều 10 số hạng, đầu 5, cuối 50. Tổng bằng bao nhiêu? | 275 |
 | IV.5 | Hàng giá 500 000 đồng giảm 20%. Giá còn lại bao nhiêu? | 400 000 đồng |
 | V.1 | Giá 100 000 đồng tăng 10% rồi giảm 10%. Giá cuối là bao nhiêu? | 99 000 đồng |
-| V.2 | So sánh: 5 phần 6 … 7 phần 8 | &lt; |
+| V.2 | So sánh: 5 phần 6 … 7 phần 8 | < |
 | V.3 | 13 bạn sinh trong 12 tháng, chứng tỏ có 2 bạn cùng tháng sinh. | đúng, vì 13 > 12 × 1 |
 | V.4 | Tính: 1 + 3 + 5 + … + 19 | 100 |
 | V.5 | 6 người làm xong trong 10 ngày. Thêm 4 người thì sớm hơn mấy ngày? | 4 ngày |

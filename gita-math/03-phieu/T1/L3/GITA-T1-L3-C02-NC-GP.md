@@ -32,7 +32,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài I.1** — a) 18 521 · b) 61 093 · c) 75 736 · d) 94 428
 - **Bài I.2** — a) x = 88 · b) x = 85 · c) x = 63 · d) x = 41 · e) x = 13 · f) x = 39 · g) x = 20
-- **Bài I.3** — a) &lt; · b) &lt; · c) &gt; · d) &gt; · e) &lt;
+- **Bài I.3** — a) < · b) < · c) > · d) > · e) <
 - **Bài I.4** — a) 5 chữ số, tổng 19 · b) 5 chữ số, tổng 23 · c) 5 chữ số, tổng 26 · d) 5 chữ số, tổng 21
 - **Bài I.5** — a) chữ số 1, giá trị 10 000 · b) chữ số 5, giá trị 5 000 · c) chữ số 9, giá trị 900 · d) chữ số 1, giá trị 10 · e) chữ số 1, giá trị 1
 
@@ -86,7 +86,7 @@ Nhớ quy tắc: số hạng chưa biết = tổng − số hạng đã biết; 
 
 *Điểm chốt:* x đứng ở **vị trí nào** trong phép tính quyết định quy tắc dùng.
 
-### Bài I.3 — Điền dấu &lt;, &gt;, = thích hợp
+### Bài I.3 — Điền dấu <, >, = thích hợp
 
 So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 
@@ -234,7 +234,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 |---|---|---|---|---|---|---|
 | I.1 | Nhận biết chẵn – lẻ và số liền kề | Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2 | Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” | Xét chữ số tận cùng; cộng hoặc trừ 1 đơn vị | Che hết các chữ số, chỉ để lộ chữ số cuối. | 18 521 · 61 093 · 75 736 · 94 428 |
 | I.2 | Tìm x trong phép tính một bước | Quan hệ giữa các thành phần của phép tính | Có chữ x đứng trong một phép tính | Gọi tên vai trò của x rồi dùng quy tắc tương ứng | Thử lại bằng cách thay x vào đề — mất 3 giây nhưng chắc chắn. | x = 88 · x = 85 · x = 63 · x = 41… |
-| I.3 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | &lt; · &lt; · &gt; · &gt;… |
+| I.3 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | < · < · > · >… |
 | I.4 | Đếm chữ số, tính tổng chữ số | Cấu tạo số, tổng chữ số | Yêu cầu “có mấy chữ số”, “tổng các chữ số” | Tách lớp để đếm; cộng rời từng chữ số | Ghép cặp các chữ số cộng lại tròn 10 rồi cộng nhanh. | 5 chữ số, tổng 19 · 5 chữ số, tổng 23 · 5 chữ số, tổng 26 · 5 chữ số, tổng 21 |
 | I.5 | Xác định chữ số và giá trị chữ số theo hàng | Cấu tạo thập phân của số tự nhiên | Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” | Đánh số hàng từ phải sang trái rồi tra bảng hàng | Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị. | chữ số 1, giá trị 10 000 · chữ số 5, giá trị 5 000 · chữ số 9, giá trị 900 · chữ số 1, giá trị 10… |
 | II.1 | Tính nhanh tổng nhiều số hạng | Tính chất giao hoán, kết hợp của phép cộng | Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm | Ghép cặp tròn rồi cộng | Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10. | 200 · 314 · 200 · 458 |
@@ -366,7 +366,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 |---|---|---|
 | I.1 | Số liền sau của 18 520 là số nào? | 18 521 |
 | I.2 | Tìm x: x × 7 = 91 | x = 13 |
-| I.3 | Điền dấu: 17 098 … 17 099 | &lt; |
+| I.3 | Điền dấu: 17 098 … 17 099 | < |
 | I.4 | Số 40 506 có mấy chữ số và tổng các chữ số bằng bao nhiêu? | 5 chữ số, tổng 15 |
 | I.5 | Chữ số hàng chục của số 15 911 có giá trị bao nhiêu? | 10 |
 | II.1 | Tính nhanh: 37 + 145 + 63 | 245 |

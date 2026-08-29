@@ -56,7 +56,10 @@ hr{border:0;border-top:0.6pt solid #D6DFEA;margin:10pt 0}
 .bai{page-break-inside:avoid;margin-bottom:9pt}
 .y{margin:2pt 0 2pt 14pt}
 .ke{border-bottom:0.6pt dotted #9CA3AF;display:inline-block;min-width:38mm;height:11pt}
-footer{position:fixed;bottom:6mm;left:0;right:0;text-align:center;font-size:8pt;color:#6B7280}
+footer{margin-top:14pt;padding-top:6pt;border-top:0.6pt solid #D6DFEA;
+  text-align:center;font-size:8pt;color:#6B7280}
+@media print{ footer{position:fixed;bottom:6mm;left:0;right:0;margin:0;
+  padding:0;border:0} }
 .badge{display:inline-block;font-size:8pt;font-weight:700;padding:1pt 6pt;border-radius:8pt;
   background:#1B5EA8;color:#fff;letter-spacing:.05em}
 .badge.da{background:#E0242A}

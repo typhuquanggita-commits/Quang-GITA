@@ -65,7 +65,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài V.1** — a) Đổi chỗ chữ số · b) Cấu tạo số có hai chữ số · c) “Viết theo thứ tự ngược lại”, “đổi chỗ hai chữ số” · d) Viết cả hai số theo cấu tạo rồi lấy hiệu · e) Hiệu = 9 × (chữ số hàng chục − chữ số hàng đơn vị). · f) 39, hơn kém 54 đơn vị · 87, hơn kém 9 đơn vị · 28, hơn kém 54 đơn vị · 31, hơn kém 18 đơn vị…
 - **Bài V.2** — a) Đếm chữ số, tính tổng chữ số · b) Cấu tạo số, tổng chữ số · c) Yêu cầu “có mấy chữ số”, “tổng các chữ số” · d) Tách lớp để đếm; cộng rời từng chữ số · e) Ghép cặp các chữ số cộng lại tròn 10 rồi cộng nhanh. · f) 5 chữ số, tổng 26 · 5 chữ số, tổng 26 · 5 chữ số, tổng 11 · 5 chữ số, tổng 19
 - **Bài V.3** — a) Phép chia có dư · b) Quan hệ giữa số bị chia, số chia, thương và số dư · c) Đề yêu cầu ghi cả thương và số dư · d) Đặt tính chia, kiểm tra điều kiện số dư · e) Ước lượng thương bằng cách làm tròn số chia trước khi chia. · f) 185 dư 4 · 276 dư 1 · 41 dư 2 · 40 dư 2…
-- **Bài V.4** — a) So sánh hai số tự nhiên · b) Thứ tự trong tập số tự nhiên · c) Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = · d) Đếm chữ số → so từng hàng từ trái sang phải · e) Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. · f) &gt; · &lt; · &gt; · &lt;…
+- **Bài V.4** — a) So sánh hai số tự nhiên · b) Thứ tự trong tập số tự nhiên · c) Dấu … giữa hai số, yêu cầu điền <, >, = · d) Đếm chữ số → so từng hàng từ trái sang phải · e) Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. · f) > · < · > · <…
 - **Bài V.5** — a) Đổi chỗ chữ số · b) Cấu tạo số có hai chữ số · c) “Viết theo thứ tự ngược lại”, “đổi chỗ hai chữ số” · d) Viết cả hai số theo cấu tạo rồi lấy hiệu · e) Hiệu = 9 × (chữ số hàng chục − chữ số hàng đơn vị). · f) 39, hơn kém 54 đơn vị · 87, hơn kém 9 đơn vị · 28, hơn kém 54 đơn vị · 31, hơn kém 18 đơn vị…
 
 ---
@@ -255,7 +255,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | V.1 | Đổi chỗ chữ số | Cấu tạo số có hai chữ số | “Viết theo thứ tự ngược lại”, “đổi chỗ hai chữ số” | Viết cả hai số theo cấu tạo rồi lấy hiệu | Hiệu = 9 × (chữ số hàng chục − chữ số hàng đơn vị). | Đổi chỗ chữ số · Cấu tạo số có hai chữ số · “Viết theo thứ tự ngược lại”, “đổi chỗ hai chữ số” · Viết cả hai số theo cấu tạo rồi lấy hiệu… |
 | V.2 | Đếm chữ số, tính tổng chữ số | Cấu tạo số, tổng chữ số | Yêu cầu “có mấy chữ số”, “tổng các chữ số” | Tách lớp để đếm; cộng rời từng chữ số | Ghép cặp các chữ số cộng lại tròn 10 rồi cộng nhanh. | Đếm chữ số, tính tổng chữ số · Cấu tạo số, tổng chữ số · Yêu cầu “có mấy chữ số”, “tổng các chữ số” · Tách lớp để đếm; cộng rời từng chữ số… |
 | V.3 | Phép chia có dư | Quan hệ giữa số bị chia, số chia, thương và số dư | Đề yêu cầu ghi cả thương và số dư | Đặt tính chia, kiểm tra điều kiện số dư | Ước lượng thương bằng cách làm tròn số chia trước khi chia. | Phép chia có dư · Quan hệ giữa số bị chia, số chia, thương và số dư · Đề yêu cầu ghi cả thương và số dư · Đặt tính chia, kiểm tra điều kiện số dư… |
-| V.4 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | So sánh hai số tự nhiên · Thứ tự trong tập số tự nhiên · Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = · Đếm chữ số → so từng hàng từ trái sang phải… |
+| V.4 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | So sánh hai số tự nhiên · Thứ tự trong tập số tự nhiên · Dấu … giữa hai số, yêu cầu điền <, >, = · Đếm chữ số → so từng hàng từ trái sang phải… |
 | V.5 | Đổi chỗ chữ số | Cấu tạo số có hai chữ số | “Viết theo thứ tự ngược lại”, “đổi chỗ hai chữ số” | Viết cả hai số theo cấu tạo rồi lấy hiệu | Hiệu = 9 × (chữ số hàng chục − chữ số hàng đơn vị). | Đổi chỗ chữ số · Cấu tạo số có hai chữ số · “Viết theo thứ tự ngược lại”, “đổi chỗ hai chữ số” · Viết cả hai số theo cấu tạo rồi lấy hiệu… |
 
 ---
@@ -387,7 +387,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | V.1 | Số 52 đổi chỗ hai chữ số được 25. Hai số hơn kém nhau bao nhiêu? | 27 |
 | V.2 | Số 40 506 có mấy chữ số và tổng các chữ số bằng bao nhiêu? | 5 chữ số, tổng 15 |
 | V.3 | Tìm thương và số dư của 1 234 : 7 | 176 dư 2 |
-| V.4 | Điền dấu: 43 338 … 43 339 | &lt; |
+| V.4 | Điền dấu: 43 338 … 43 339 | < |
 | V.5 | Số 52 đổi chỗ hai chữ số được 25. Hai số hơn kém nhau bao nhiêu? | 27 |
 
 ---

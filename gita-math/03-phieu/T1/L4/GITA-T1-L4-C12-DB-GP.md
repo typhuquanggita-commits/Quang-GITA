@@ -39,7 +39,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần B**
 
 - **Bài B.1** — a) không, vì hai câu phủ định nhau · b) không, vì chúng phủ định nhau · c) đúng một bạn · d) nói dối · e) Hùng chính là người làm vỡ lọ hoa · f) Hùng
-- **Bài B.2** — a) &lt; · b) &lt; · c) &lt; · d) &lt; · e) &lt; · f) &lt;
+- **Bài B.2** — a) < · b) < · c) < · d) < · e) < · f) <
 - **Bài B.3** — a) xe đạp: 29 chiếc, xe ba bánh: 24 chiếc · b) xe ô tô: 27 chiếc, xe ba bánh: 14 chiếc · c) xe đạp: 29 chiếc, xe ba bánh: 17 chiếc · d) xe đạp: 16 chiếc, xe ô tô: 25 chiếc
 - **Bài B.4** — a) 174 m · b) 174 m · c) 117 viên (làm tròn lên) · d) 136 cây · e) không chia hết (56 m không chia hết cho 5 m) · f) 20 cây
 - **Bài B.5** — a) 158 · b) 116 · c) 31 · d) 143 · e) 94 · f) 156
@@ -238,7 +238,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | A.4 | Lập bảng dạng bài | Bảng phân tích chuyên sâu sáu cột | Bảng có sẵn cột dạng bài, thiếu các cột còn lại | Tra bảng phân tích của các phiếu đã học | Học theo hàng ngang, không học theo cột dọc. | Nguyên lí ngăn kéo, lập luận trường hợp xấu nhất · Quy tắc nhân, dấu hiệu chia hết · Nguyên lí ngăn kéo · Logic mệnh đề sơ cấp, phương pháp loại trừ… |
 | A.5 | Lập bảng dạng bài | Bảng phân tích chuyên sâu sáu cột | Bảng có sẵn cột dạng bài, thiếu các cột còn lại | Tra bảng phân tích của các phiếu đã học | Học theo hàng ngang, không học theo cột dọc. | Ngưỡng = số ngăn × (số cần − 1) + 1. · Cặp mâu thuẫn đã dùng hết “suất” nói thật, nên mọi câu ngoài cặp đều sai. · Bắt đầu từ dữ kiện khẳng định (“thích”, “là”) trước dữ kiện phủ định. · Nhớ vài giá trị: 5 người có 10 cặp, 10 người có 45 cặp.… |
 | B.1 | Suy luận nói thật – nói dối | Logic mệnh đề sơ cấp, phương pháp loại trừ | “Chỉ một người nói thật”, các câu nói mâu thuẫn nhau | Tìm cặp mâu thuẫn, khoá số câu đúng, suy ra phần còn lại | Cặp mâu thuẫn đã dùng hết “suất” nói thật, nên mọi câu ngoài cặp đều sai. | không, vì hai câu phủ định nhau · không, vì chúng phủ định nhau · đúng một bạn · nói dối… |
-| B.2 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &lt; · &lt; · &lt; · &lt;… |
+| B.2 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | < · < · < · <… |
 | B.3 | Giả thiết tạm hai loại | Phương pháp giả thiết tạm | Hai loại đối tượng, biết tổng số và tổng của một đại lượng phụ | Giả sử đồng nhất → tính chênh → chia cho hiệu đơn vị | Kiểm tra ngay: số bánh phải nằm giữa tổng × (số bánh ít nhất) và tổng × (số bánh nhiều nhất). | xe đạp: 29 chiếc, xe ba bánh: 24 chiếc · xe ô tô: 27 chiếc, xe ba bánh: 14 chiếc · xe đạp: 29 chiếc, xe ba bánh: 17 chiếc · xe đạp: 16 chiếc, xe ô tô: 25 chiếc |
 | B.4 | Chu vi, diện tích trong tình huống thực tế | Công thức chu vi, diện tích; phép chia | Từ khoá “rào xung quanh”, “lát gạch”, “trồng cây quanh” | Đọc vị chu vi hay diện tích rồi tính | Nhìn đơn vị của đáp số: mét thì là chu vi, mét vuông thì là diện tích. | 174 m · 174 m · 117 viên (làm tròn lên) · 136 cây… |
 | B.5 | Đếm số hạng dãy cách đều | Công thức đếm số hạng | Dãy có số đầu, số cuối và khoảng cách đều | (cuối − đầu) : khoảng cách + 1 | Dãy số tự nhiên liên tiếp từ a đến b có b − a + 1 số hạng. | 158 · 116 · 31 · 143… |
@@ -370,7 +370,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | A.4 | Cột “Kiến thức phải thuộc” trả lời câu hỏi gì? | làm gì |
 | A.5 | Cột “Cách xử lý nhanh nhất” trả lời câu hỏi gì? | làm gì |
 | B.1 | An nói “tôi không làm”, Bình nói “Chi làm”, Chi nói “Bình nói dối”, chỉ một người nói thật. Ai làm? | An |
-| B.2 | So sánh: 3 kg … 2 500 g | &gt; |
+| B.2 | So sánh: 3 kg … 2 500 g | > |
 | B.3 | 10 xe đạp và ô tô, 28 bánh. Có mấy ô tô? | 4 ô tô |
 | B.4 | Vườn dài 20 m rộng 10 m, rào xung quanh cần bao nhiêu mét rào? | 60 m |
 | B.5 | Dãy 3, 6, 9, …, 99 có bao nhiêu số hạng? | 33 |

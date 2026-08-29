@@ -40,7 +40,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài II.1** — a) x = 12 · b) x = 59 · c) x = 102 · d) x = 96 · e) x = 75 · f) x = 42
 - **Bài II.2** — a) 260 · b) 1 042 · c) 75 · d) 107 · e) không · f) 271 960
-- **Bài II.3** — a) &lt; · b) &lt; · c) &gt; · d) &lt;
+- **Bài II.3** — a) < · b) < · c) > · d) <
 - **Bài II.4** — a) 650 · b) 3 775 · c) 5 050 · d) 245 · e) 610
 - **Bài II.5** — a) 180 kg · b) 288 kg · c) 384 kg · d) 204 kg · e) 12 kg · f) 192 kg
 
@@ -65,7 +65,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài V.1** — a) Tổng dãy cộng trừ xen kẽ · b) Ghép cặp, tính chất kết hợp · c) Dấu cộng và trừ xen kẽ đều đặn · d) Ghép cặp, đếm số cặp, xử lí phần dư · e) Dãy 1 − 2 + 3 − … với n chẵn bằng −n : 2; với n lẻ bằng (n + 1) : 2. · f) -10 · -25 · -25 · -25…
 - **Bài V.2** — a) Tính nhanh nhờ thừa số 0 · b) Tính chất nhân với 0, phép trừ hai số bằng nhau · c) Trong biểu thức có ngoặc chứa hai số giống nhau trừ nhau · d) Quét tìm cụm bằng 0 trước khi tính · e) Nhìn dấu ngoặc trước tiên — bẫy thường nằm ở đó. · f) 0 · 0 · 0 · 0
 - **Bài V.3** — a) Nhân, chia số tự nhiên · b) Kĩ thuật đặt tính nhân, chia · c) Yêu cầu “đặt tính rồi tính” với phép nhân, chia · d) Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ chữ số · e) Kiểm tra kết quả bằng phép tính ngược: thương × số chia = số bị chia. · f) 367 448 · 219 456 · 6 275 · 7 075…
-- **Bài V.4** — a) Tính, so sánh tích bằng kĩ thuật tách – bù · b) Nhân một số với một tổng, một hiệu · c) Các thừa số hơn kém nhau rất ít · d) Quy về số gốc chung, so phần chênh · e) Với hai tích có tổng hai thừa số bằng nhau, tích nào có hai thừa số gần nhau hơn thì lớn hơn. · f) 16 · 529 · 30 · &lt;
+- **Bài V.4** — a) Tính, so sánh tích bằng kĩ thuật tách – bù · b) Nhân một số với một tổng, một hiệu · c) Các thừa số hơn kém nhau rất ít · d) Quy về số gốc chung, so phần chênh · e) Với hai tích có tổng hai thừa số bằng nhau, tích nào có hai thừa số gần nhau hơn thì lớn hơn. · f) 16 · 529 · 30 · <
 - **Bài V.5** — a) Tìm x trong phép tính một bước · b) Quan hệ giữa các thành phần của phép tính · c) Có chữ x đứng trong một phép tính · d) Gọi tên vai trò của x rồi dùng quy tắc tương ứng · e) Thử lại bằng cách thay x vào đề — mất 3 giây nhưng chắc chắn. · f) x = 221 · x = 548 · x = 574 · x = 626…
 
 ---
@@ -239,7 +239,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | I.5 | Nhân nhẩm nhờ tách thừa số | Nhân một số với một tổng, một hiệu | Thừa số là 9, 11, 19, 21, 99, 101… | Tách về số tròn rồi bù trừ | × 11 với số có hai chữ số: viết hai chữ số ra hai đầu, tổng của chúng đặt vào giữa (nhớ sang trái nếu tổng vượt 9). | 7 777 · 180 · 847 · 660… |
 | II.1 | Tìm x nhiều bước có ngoặc | Thứ tự thực hiện phép tính, quan hệ thành phần | x nằm trong ngoặc, ngoài ngoặc còn phép tính khác | Bóc lớp từ ngoài vào trong | Thay x tìm được vào đề, tính một lượt để thử lại. | x = 12 · x = 59 · x = 102 · x = 96… |
 | II.2 | Định vị số hạng, kiểm tra một số có thuộc dãy | Dãy cách đều, phép chia có dư | Câu hỏi “là số hạng thứ mấy”, “có thuộc dãy không” | (số − đầu) : khoảng cách, xét dư rồi cộng 1 | Mọi số hạng của dãy đều có cùng số dư khi chia cho khoảng cách. | 260 · 1 042 · 75 · 107… |
-| II.3 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | &lt; · &lt; · &gt; · &lt; |
+| II.3 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | < · < · > · < |
 | II.4 | Tổng dãy số cách đều | Công thức tổng dãy cách đều | Dãy cộng có dấu … và các số cách đều nhau | Đếm số số hạng rồi áp công thức tổng | Ghép cặp đầu – cuối: mọi cặp đều có cùng tổng, chỉ cần nhân với số cặp. | 650 · 3 775 · 5 050 · 245… |
 | II.5 | Tìm phân số của một số, nhiều bước | Tìm phân số của một số | Cụm “… số còn lại”, “… số đó” | Tính tuần tự, sau mỗi bước ghi lại số còn lại | Còn lại sau ngày đầu là (1 − phân số) của tổng; nhân trực tiếp cho nhanh. | 180 kg · 288 kg · 384 kg · 204 kg… |
 | III.1 | Tìm số theo điều kiện của các chữ số | Cấu tạo thập phân, bài toán tổng – hiệu | Đề cho quan hệ giữa các chữ số chứ không cho số | Đặt ẩn cho từng chữ số, viết số theo cấu tạo, giải hệ điều kiện | Đổi chỗ hai chữ số của số có hai chữ số thì hiệu luôn bằng 9 lần hiệu hai chữ số. | 65 · 99, hiệu 0 · hơn -1 đơn vị · 15 |
@@ -371,7 +371,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | I.5 | Tính nhẩm: 46 × 11 | 506 |
 | II.1 | Tìm x: (x + 12) × 5 − 8 = 132 | x = 16 |
 | II.2 | Dãy 2, 7, 12, … Số 47 là số hạng thứ mấy? | 10 |
-| II.3 | So sánh: 234 × 7 … 234 × 8 | &lt; |
+| II.3 | So sánh: 234 × 7 … 234 × 8 | < |
 | II.4 | Tính nhanh: 1 + 2 + 3 + … + 100 | 5 050 |
 | II.5 | Có 60 kg gạo, bán 1 phần 3 rồi bán tiếp 1 phần 2 số còn lại. Còn bao nhiêu? | 20 kg |
 | III.1 | Tìm số có hai chữ số, tổng hai chữ số bằng 11, hiệu bằng 3. | 74 |
@@ -387,7 +387,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | V.1 | Tính nhanh: 1 − 2 + 3 − 4 + … + 9 − 10 | −5 |
 | V.2 | Tính nhanh: 1 234 × 567 × (89 − 89) | 0 |
 | V.3 | Đặt tính rồi tính: 3 045 × 24 | 73 080 |
-| V.4 | So sánh: 99 × 101 … 100 × 100 | &lt; |
+| V.4 | So sánh: 99 × 101 … 100 × 100 | < |
 | V.5 | Tìm x: x × 7 = 91 | x = 13 |
 
 ---

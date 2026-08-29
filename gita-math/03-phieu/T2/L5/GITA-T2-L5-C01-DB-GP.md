@@ -66,7 +66,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài E.2** — a) Dãy số tự nhiên liên tiếp có tổng cho trước · b) Cụm “… số tự nhiên liên tiếp có tổng bằng …” · c) Trung bình cộng, dãy cách đều · d) Tìm số giữa bằng phép chia rồi suy ra hai đầu dãy · e) Tổng của n số liên tiếp (n lẻ) luôn chia hết cho n. · f) Lấy tổng chia cho số lượng rồi nhận luôn kết quả là số bé nhất.
 - **Bài E.3** — a) Đếm chữ số, tính tổng chữ số · b) Yêu cầu “có mấy chữ số”, “tổng các chữ số” · c) Cấu tạo số, tổng chữ số · d) Tách lớp để đếm; cộng rời từng chữ số · e) Ghép cặp các chữ số cộng lại tròn 10 rồi cộng nhanh. · f) Cộng cả giá trị hàng (ví dụ cộng 300 thay vì cộng 3).
 - **Bài E.4** — a) Xét số dư của tổng · b) Đề hỏi chia hết hay số dư của một tổng dài · c) Tính chất số dư của tổng · d) Rút gọn từng số hạng về số dư rồi cộng · e) Với d = 9, số dư của một số bằng số dư của tổng các chữ số của nó. · f) Cộng hết cả dãy rồi mới chia, mất thời gian và dễ sai.
-- **Bài E.5** — a) So sánh hai số tự nhiên · b) Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = · c) Thứ tự trong tập số tự nhiên · d) Đếm chữ số → so từng hàng từ trái sang phải · e) Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. · f) So từ hàng đơn vị (phải sang trái) nên kết luận sai.
+- **Bài E.5** — a) So sánh hai số tự nhiên · b) Dấu … giữa hai số, yêu cầu điền <, >, = · c) Thứ tự trong tập số tự nhiên · d) Đếm chữ số → so từng hàng từ trái sang phải · e) Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. · f) So từ hàng đơn vị (phải sang trái) nên kết luận sai.
 
 ---
 
@@ -256,7 +256,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | E.2 | Dãy số tự nhiên liên tiếp có tổng cho trước | Trung bình cộng, dãy cách đều | Cụm “… số tự nhiên liên tiếp có tổng bằng …” | Tìm số giữa bằng phép chia rồi suy ra hai đầu dãy | Tổng của n số liên tiếp (n lẻ) luôn chia hết cho n. | Dãy số tự nhiên liên tiếp có tổng cho trước · Cụm “… số tự nhiên liên tiếp có tổng bằng …” · Trung bình cộng, dãy cách đều · Tìm số giữa bằng phép chia rồi suy ra hai đầu dãy… |
 | E.3 | Đếm chữ số, tính tổng chữ số | Cấu tạo số, tổng chữ số | Yêu cầu “có mấy chữ số”, “tổng các chữ số” | Tách lớp để đếm; cộng rời từng chữ số | Ghép cặp các chữ số cộng lại tròn 10 rồi cộng nhanh. | Đếm chữ số, tính tổng chữ số · Yêu cầu “có mấy chữ số”, “tổng các chữ số” · Cấu tạo số, tổng chữ số · Tách lớp để đếm; cộng rời từng chữ số… |
 | E.4 | Xét số dư của tổng | Tính chất số dư của tổng | Đề hỏi chia hết hay số dư của một tổng dài | Rút gọn từng số hạng về số dư rồi cộng | Với d = 9, số dư của một số bằng số dư của tổng các chữ số của nó. | Xét số dư của tổng · Đề hỏi chia hết hay số dư của một tổng dài · Tính chất số dư của tổng · Rút gọn từng số hạng về số dư rồi cộng… |
-| E.5 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | So sánh hai số tự nhiên · Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = · Thứ tự trong tập số tự nhiên · Đếm chữ số → so từng hàng từ trái sang phải… |
+| E.5 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | So sánh hai số tự nhiên · Dấu … giữa hai số, yêu cầu điền <, >, = · Thứ tự trong tập số tự nhiên · Đếm chữ số → so từng hàng từ trái sang phải… |
 
 ---
 
@@ -388,7 +388,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | E.2 | Tổng của 5 số tự nhiên liên tiếp bằng 100. Số bé nhất là số nào? | 18 |
 | E.3 | Số 40 506 có mấy chữ số và tổng các chữ số bằng bao nhiêu? | 5 chữ số, tổng 15 |
 | E.4 | Tổng 123 + 234 + 345 chia cho 9 dư mấy? | dư 0 |
-| E.5 | Điền dấu: 6 763 716 … 6 763 717 | &lt; |
+| E.5 | Điền dấu: 6 763 716 … 6 763 717 | < |
 
 ---
 

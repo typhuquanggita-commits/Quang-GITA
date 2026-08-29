@@ -34,7 +34,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài I.2** — a) 34 568 · b) 54 804 · c) số lẻ · d) số lẻ · e) 84 984
 - **Bài I.3** — a) 8 · b) 2 · c) 6 · d) 4 · e) 8 · f) 18 · g) 14
 - **Bài I.4** — a) chữ số 4, giá trị 40 000 · b) chữ số 2, giá trị 2 000 · c) chữ số 9, giá trị 900 · d) chữ số 1, giá trị 10 · e) chữ số 1, giá trị 1
-- **Bài I.5** — a) &lt; · b) &gt; · c) &gt; · d) &lt; · e) &gt; · f) &lt;
+- **Bài I.5** — a) < · b) > · c) > · d) < · e) > · f) <
 
 **Phần II**
 
@@ -98,7 +98,7 @@ Muốn tìm một phần mấy của một số, ta chia số đó cho mẫu s�
 
 *Điểm chốt:* Phân biệt **chữ số** (một kí hiệu) với **giá trị** của chữ số (chữ số nhân giá trị hàng).
 
-### Bài I.5 — Điền dấu &lt;, &gt;, = thích hợp
+### Bài I.5 — Điền dấu <, >, = thích hợp
 
 So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 
@@ -236,7 +236,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | I.2 | Nhận biết chẵn – lẻ và số liền kề | Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2 | Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” | Xét chữ số tận cùng; cộng hoặc trừ 1 đơn vị | Che hết các chữ số, chỉ để lộ chữ số cuối. | 34 568 · 54 804 · số lẻ · số lẻ… |
 | I.3 | Tìm một phần mấy của một số | Phân số dạng một phần mấy | Cụm “một phần mấy của …” | Chia số đó cho mẫu số | Kết quả luôn nhỏ hơn số ban đầu — dùng để kiểm tra ngay. | 8 · 2 · 6 · 4… |
 | I.4 | Xác định chữ số và giá trị chữ số theo hàng | Cấu tạo thập phân của số tự nhiên | Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” | Đánh số hàng từ phải sang trái rồi tra bảng hàng | Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị. | chữ số 4, giá trị 40 000 · chữ số 2, giá trị 2 000 · chữ số 9, giá trị 900 · chữ số 1, giá trị 10… |
-| I.5 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | &lt; · &gt; · &gt; · &lt;… |
+| I.5 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | < · > · > · <… |
 | II.1 | Đổi đơn vị đo | Bảng đơn vị đo lớp 3 | Hai đơn vị khác nhau nối bởi dấu … | Nhớ quan hệ rồi nhân | Thêm đúng số chữ số 0 tương ứng: 3 số 0 cho km→m, 2 số 0 cho m→cm. | 900 · 64 000 · 26 000 · 5 000… |
 | II.2 | Tổng – hiệu có lời văn | Công thức tổng – hiệu, sơ đồ đoạn thẳng | “Có tất cả …” và “… nhiều hơn … là …” | Đọc vị tổng và hiệu → sơ đồ → công thức | Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần. | 3B: 257 quyển, 5B: 161 quyển · xưởng: 447 kg, hợp tác xã: 291 kg · tổ Một: 365 cây, đội Hai: 317 cây · tổ Hai: 127 cây, đội Hai: 117 cây… |
 | II.3 | Phép chia có dư | Quan hệ giữa số bị chia, số chia, thương và số dư | Đề yêu cầu ghi cả thương và số dư | Đặt tính chia, kiểm tra điều kiện số dư | Ước lượng thương bằng cách làm tròn số chia trước khi chia. | 214 dư 3 · 389 dư 2 · 26 dư 1 · 342 dư 4… |
@@ -368,7 +368,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | I.2 | Số liền sau của 34 569 là số nào? | 34 570 |
 | I.3 | Tìm 1 phần 4 của 20. | 5 |
 | I.4 | Chữ số hàng chục của số 42 911 có giá trị bao nhiêu? | 10 |
-| I.5 | Điền dấu: 60 778 … 60 779 | &lt; |
+| I.5 | Điền dấu: 60 778 … 60 779 | < |
 | II.1 | 5 m = … cm | 500 |
 | II.2 | Hai lớp có 90 quyển sách, lớp A nhiều hơn lớp B 10 quyển. Mỗi lớp có mấy quyển? | 50 và 40 |
 | II.3 | Tìm thương và số dư của 1 234 : 7 | 176 dư 2 |

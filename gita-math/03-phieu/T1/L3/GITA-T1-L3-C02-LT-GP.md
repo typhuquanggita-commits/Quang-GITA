@@ -31,7 +31,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần A**
 
 - **Bài A.1** — a) 5 chữ số, tổng 14 · b) 5 chữ số, tổng 27 · c) 5 chữ số, tổng 18 · d) 5 chữ số, tổng 14 · e) 5 chữ số, tổng 37 · f) 5 chữ số, tổng 19
-- **Bài A.2** — a) &gt; · b) &lt; · c) &lt; · d) &lt; · e) &lt;
+- **Bài A.2** — a) > · b) < · c) < · d) < · e) <
 - **Bài A.3** — a) 390 · b) 2 920 · c) 1 620 · d) 951 · e) 5 592
 - **Bài A.4** — a) 23 412 · b) 29 920 · c) 36 750 · d) 62 754 · e) 64 890
 - **Bài A.5** — a) chữ số 8, giá trị 8 000 · b) chữ số 5, giá trị 500 · c) chữ số 3, giá trị 30 · d) chữ số 5, giá trị 5
@@ -41,7 +41,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài B.1** — a) Số trong phạm vi 1 000 và tìm thành phần chưa biết · b) A — Số học & Cấu tạo số · c) 4 · d) ở mọi bài thuộc số học & cấu tạo số, vì các chương sau đều dùng lại nền này · e) giải nhanh và chắc các bài ôn tập cấu tạo số có ba chữ số: đọc, viết, so sánh
 - **Bài B.2** — a) Ôn tập cấu tạo số có ba chữ số: đọc, viết, so sánh · b) Số chẵn, số lẻ trong phạm vi 1000 và tính chất cơ bản · c) Tìm thành phần chưa biết của phép cộng, phép trừ · d) Tìm thành phần chưa biết của phép nhân, phép chia
 - **Bài B.3** — a) HK1 · b) tuần 3 · c) Giữa kỳ I · d) cụm 2 · e) 6 buổi: LT · DB · KN · NC · OT · TH
-- **Bài B.4** — a) Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = · b) Bài toán đánh số trang · c) Đề yêu cầu ghi cả thương và số dư · d) Cho ba chữ số, yêu cầu lập số · e) Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” · f) “Viết theo thứ tự ngược lại”, “đổi chỗ hai chữ số”
+- **Bài B.4** — a) Dấu … giữa hai số, yêu cầu điền <, >, = · b) Bài toán đánh số trang · c) Đề yêu cầu ghi cả thương và số dư · d) Cho ba chữ số, yêu cầu lập số · e) Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” · f) “Viết theo thứ tự ngược lại”, “đổi chỗ hai chữ số”
 - **Bài B.5** — a) tự ghi, chuẩn đóng cụm là từ 80/100 · b) tự ghi · c) đọc gợi ý tầng 1, sau đó tầng 2, không xem lời giải ngay · d) tự ghi · e) tự ghi
 
 **Phần C**
@@ -49,12 +49,12 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài C.1** — a) Số trong phạm vi 1 000 và tìm thành phần chưa biết · b) A — Số học & Cấu tạo số · c) 4 · d) Ôn tập cấu tạo số có ba chữ số: đọc, viết, so sánh · e) Tìm thành phần chưa biết của phép nhân, phép chia
 - **Bài C.2** — a) Thứ tự trong tập số tự nhiên · b) Đếm số hạng, cấu tạo số · c) Quan hệ giữa số bị chia, số chia, thương và số dư · d) Cấu tạo số có ba chữ số · e) Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2 · f) Cấu tạo số có hai chữ số
 - **Bài C.3** — a) Đếm chữ số → so từng hàng từ trái sang phải · b) Chia nhóm theo độ dài số rồi nhân, cộng · c) Đặt tính chia, kiểm tra điều kiện số dư · d) Cố định hàng trăm rồi hoán vị hai hàng còn lại · e) Xét chữ số tận cùng; cộng hoặc trừ 1 đơn vị
-- **Bài C.4** — a) Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = · b) Bài toán đánh số trang · c) Đề yêu cầu ghi cả thương và số dư · d) Cho ba chữ số, yêu cầu lập số · e) Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” · f) “Viết theo thứ tự ngược lại”, “đổi chỗ hai chữ số”
+- **Bài C.4** — a) Dấu … giữa hai số, yêu cầu điền <, >, = · b) Bài toán đánh số trang · c) Đề yêu cầu ghi cả thương và số dư · d) Cho ba chữ số, yêu cầu lập số · e) Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” · f) “Viết theo thứ tự ngược lại”, “đổi chỗ hai chữ số”
 - **Bài C.5** — a) Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. · b) Sách 99 trang dùng đúng 189 chữ số — nhớ mốc này. · c) Ước lượng thương bằng cách làm tròn số chia trước khi chia. · d) Ba chữ số khác 0 luôn lập được đúng 6 số. · e) Che hết các chữ số, chỉ để lộ chữ số cuối. · f) Hiệu = 9 × (chữ số hàng chục − chữ số hàng đơn vị).
 
 **Phần D**
 
-- **Bài D.1** — a) Thứ tự trong tập số tự nhiên · b) So sánh hai số tự nhiên · c) Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = · d) Đếm chữ số → so từng hàng từ trái sang phải · e) So từ hàng đơn vị (phải sang trái) nên kết luận sai. · f) &lt;
+- **Bài D.1** — a) Thứ tự trong tập số tự nhiên · b) So sánh hai số tự nhiên · c) Dấu … giữa hai số, yêu cầu điền <, >, = · d) Đếm chữ số → so từng hàng từ trái sang phải · e) So từ hàng đơn vị (phải sang trái) nên kết luận sai. · f) <
 - **Bài D.2** — a) Đếm số hạng, cấu tạo số · b) Đếm chữ số theo nhóm · c) Bài toán đánh số trang · d) Chia nhóm theo độ dài số rồi nhân, cộng · e) Lấy số trang nhân với 2 hoặc 3 cho toàn bộ. · f) 31
 - **Bài D.3** — a) Quan hệ giữa số bị chia, số chia, thương và số dư · b) Phép chia có dư · c) Đề yêu cầu ghi cả thương và số dư · d) Đặt tính chia, kiểm tra điều kiện số dư · e) Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. · f) 176 dư 2
 - **Bài D.4** — a) Cấu tạo số có ba chữ số · b) Lập số từ bộ chữ số · c) Cho ba chữ số, yêu cầu lập số · d) Cố định hàng trăm rồi hoán vị hai hàng còn lại · e) Viết lộn xộn nên vừa sót vừa trùng. · f) 6
@@ -80,7 +80,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 *Điểm chốt:* Tổng các chữ số **không** phụ thuộc thứ tự các chữ số.
 
-### Bài A.2 — Điền dấu &lt;, &gt;, = thích hợp
+### Bài A.2 — Điền dấu <, >, = thích hợp
 
 So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 
@@ -233,21 +233,21 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
 | A.1 | Đếm chữ số, tính tổng chữ số | Cấu tạo số, tổng chữ số | Yêu cầu “có mấy chữ số”, “tổng các chữ số” | Tách lớp để đếm; cộng rời từng chữ số | Ghép cặp các chữ số cộng lại tròn 10 rồi cộng nhanh. | 5 chữ số, tổng 14 · 5 chữ số, tổng 27 · 5 chữ số, tổng 18 · 5 chữ số, tổng 14… |
-| A.2 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | &gt; · &lt; · &lt; · &lt;… |
+| A.2 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | > · < · < · <… |
 | A.3 | Nhân, chia số tự nhiên | Kĩ thuật đặt tính nhân, chia | Yêu cầu “đặt tính rồi tính” với phép nhân, chia | Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ chữ số | Kiểm tra kết quả bằng phép tính ngược: thương × số chia = số bị chia. | 390 · 2 920 · 1 620 · 951… |
 | A.4 | Nhận biết chẵn – lẻ và số liền kề | Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2 | Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” | Xét chữ số tận cùng; cộng hoặc trừ 1 đơn vị | Che hết các chữ số, chỉ để lộ chữ số cuối. | 23 412 · 29 920 · 36 750 · 62 754… |
 | A.5 | Xác định chữ số và giá trị chữ số theo hàng | Cấu tạo thập phân của số tự nhiên | Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” | Đánh số hàng từ phải sang trái rồi tra bảng hàng | Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị. | chữ số 8, giá trị 8 000 · chữ số 5, giá trị 500 · chữ số 3, giá trị 30 · chữ số 5, giá trị 5 |
 | B.1 | Định vị chương trong hệ thống | Tên chương, nhóm chuyên đề, số dạng bài | Phần đầu phiếu ghi rõ tên cụm và nhóm chuyên đề | Đọc phần đầu phiếu rồi trả lời theo đúng tên gọi | Ghi tên chương ra góc vở, mỗi lần mở vở là đọc lại một lần. | Số trong phạm vi 1 000 và tìm thành phần chưa biết · A — Số học & Cấu tạo số · 4 · ở mọi bài thuộc số học & cấu tạo số, vì các chương sau đều dùng lại nền này… |
 | B.2 | Liệt kê dạng bài của chương | Danh mục dạng bài | Bảng dạng bài ở phiếu Dạng bài & Đọc vị của cùng cụm | Chép theo bảng, giữ nguyên thứ tự | Học thuộc số lượng dạng bài trước, tên từng dạng sau. | Ôn tập cấu tạo số có ba chữ số: đọc, viết, so sánh · Số chẵn, số lẻ trong phạm vi 1000 và tính chất cơ bản · Tìm thành phần chưa biết của phép cộng, phép trừ · Tìm thành phần chưa biết của phép nhân, phép chia |
 | B.3 | Định vị chương theo thời gian | Kế hoạch năm học, mốc kiểm tra | Phần đầu phiếu ghi tuần, học kỳ, mốc | Đọc phần đầu phiếu | Mỗi cụm luôn có đúng 6 buổi và 1 phiếu hướng dẫn ôn chắc. | HK1 · tuần 3 · Giữa kỳ I · cụm 2… |
-| B.4 | Nhận diện dạng bài qua từ khoá | Bảng dạng bài và dấu hiệu nhận biết | Cột “Dữ liệu nhận biết” của bảng phân tích chuyên sâu | Đọc đề, gạch chân từ khoá, đối chiếu bảng | Gạch chân từ khoá ngay khi đọc đề lần đầu. | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = · Bài toán đánh số trang · Đề yêu cầu ghi cả thương và số dư · Cho ba chữ số, yêu cầu lập số… |
+| B.4 | Nhận diện dạng bài qua từ khoá | Bảng dạng bài và dấu hiệu nhận biết | Cột “Dữ liệu nhận biết” của bảng phân tích chuyên sâu | Đọc đề, gạch chân từ khoá, đối chiếu bảng | Gạch chân từ khoá ngay khi đọc đề lần đầu. | Dấu … giữa hai số, yêu cầu điền <, >, = · Bài toán đánh số trang · Đề yêu cầu ghi cả thương và số dư · Cho ba chữ số, yêu cầu lập số… |
 | B.5 | Cam kết mục tiêu cá nhân | Mô thức G-I-T-A, khối G và khối A | Câu hỏi mở, học viên tự trả lời | Viết mục tiêu có số và có mốc thời gian | Mục tiêu ghi ra giấy có tỉ lệ hoàn thành cao hơn hẳn mục tiêu chỉ nghĩ trong đầu. | tự ghi, chuẩn đóng cụm là từ 80/100 · tự ghi · đọc gợi ý tầng 1, sau đó tầng 2, không xem lời giải ngay · tự ghi… |
 | C.1 | Lập sơ đồ tư duy chương | Hệ thống hoá kiến thức | Yêu cầu “điền khuyết sơ đồ tư duy” | Vẽ tâm trước, toả nhánh sau, mỗi nhánh một từ khoá | Chỉ ghi **từ khoá** trên nhánh, không ghi cả câu. | Số trong phạm vi 1 000 và tìm thành phần chưa biết · A — Số học & Cấu tạo số · 4 · Ôn tập cấu tạo số có ba chữ số: đọc, viết, so sánh… |
 | C.2 | Bảng công thức của chương | Công thức và quy tắc gốc | Cột “Kiến thức liên quan” của bảng phân tích | Ghép cặp công thức với dạng bài | Học công thức theo cặp “dạng bài – công thức”, không học rời. | Thứ tự trong tập số tự nhiên · Đếm số hạng, cấu tạo số · Quan hệ giữa số bị chia, số chia, thương và số dư · Cấu tạo số có ba chữ số… |
 | C.3 | Chọn cách minh hoạ theo dạng bài | Sơ đồ đoạn thẳng, bảng, hình vẽ | Cột “Phương pháp áp dụng” của bảng phân tích | Đối chiếu dạng bài với kiểu minh hoạ phù hợp | Bài có quan hệ hơn kém → sơ đồ đoạn thẳng. Bài nhiều trường hợp → bảng. | Đếm chữ số → so từng hàng từ trái sang phải · Chia nhóm theo độ dài số rồi nhân, cộng · Đặt tính chia, kiểm tra điều kiện số dư · Cố định hàng trăm rồi hoán vị hai hàng còn lại… |
-| C.4 | Bảng dạng bài – dấu hiệu | Đọc vị đề bài | Cột “Dữ liệu nhận biết” | Ghép cặp dạng bài với dấu hiệu | Gạch chân từ khoá ngay lần đọc đề đầu tiên. | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = · Bài toán đánh số trang · Đề yêu cầu ghi cả thương và số dư · Cho ba chữ số, yêu cầu lập số… |
+| C.4 | Bảng dạng bài – dấu hiệu | Đọc vị đề bài | Cột “Dữ liệu nhận biết” | Ghép cặp dạng bài với dấu hiệu | Gạch chân từ khoá ngay lần đọc đề đầu tiên. | Dấu … giữa hai số, yêu cầu điền <, >, = · Bài toán đánh số trang · Đề yêu cầu ghi cả thương và số dư · Cho ba chữ số, yêu cầu lập số… |
 | C.5 | Bảng phương pháp ghi điểm 10 | Kỹ thuật rút gọn lời giải | Cột “Cách xử lý nhanh nhất” | Ghi nhớ mẹo kèm lý do đúng | Mẹo nào cũng phải kiểm chứng được bằng một ví dụ nhỏ. | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. · Sách 99 trang dùng đúng 189 chữ số — nhớ mốc này. · Ước lượng thương bằng cách làm tròn số chia trước khi chia. · Ba chữ số khác 0 luôn lập được đúng 6 số.… |
-| D.1 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | Thứ tự trong tập số tự nhiên · So sánh hai số tự nhiên · Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, = · Đếm chữ số → so từng hàng từ trái sang phải… |
+| D.1 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | Thứ tự trong tập số tự nhiên · So sánh hai số tự nhiên · Dấu … giữa hai số, yêu cầu điền <, >, = · Đếm chữ số → so từng hàng từ trái sang phải… |
 | D.2 | Đếm chữ số theo nhóm | Đếm số hạng, cấu tạo số | Bài toán đánh số trang | Chia nhóm theo độ dài số rồi nhân, cộng | Sách 99 trang dùng đúng 189 chữ số — nhớ mốc này. | Đếm số hạng, cấu tạo số · Đếm chữ số theo nhóm · Bài toán đánh số trang · Chia nhóm theo độ dài số rồi nhân, cộng… |
 | D.3 | Phép chia có dư | Quan hệ giữa số bị chia, số chia, thương và số dư | Đề yêu cầu ghi cả thương và số dư | Đặt tính chia, kiểm tra điều kiện số dư | Ước lượng thương bằng cách làm tròn số chia trước khi chia. | Quan hệ giữa số bị chia, số chia, thương và số dư · Phép chia có dư · Đề yêu cầu ghi cả thương và số dư · Đặt tính chia, kiểm tra điều kiện số dư… |
 | D.4 | Lập số từ bộ chữ số | Cấu tạo số có ba chữ số | Cho ba chữ số, yêu cầu lập số | Cố định hàng trăm rồi hoán vị hai hàng còn lại | Ba chữ số khác 0 luôn lập được đúng 6 số. | Cấu tạo số có ba chữ số · Lập số từ bộ chữ số · Cho ba chữ số, yêu cầu lập số · Cố định hàng trăm rồi hoán vị hai hàng còn lại… |
@@ -365,7 +365,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | Bài | Đề tương tự | Đáp số |
 |---|---|---|
 | A.1 | Số 40 506 có mấy chữ số và tổng các chữ số bằng bao nhiêu? | 5 chữ số, tổng 15 |
-| A.2 | Điền dấu: 97 458 … 97 459 | &lt; |
+| A.2 | Điền dấu: 97 458 … 97 459 | < |
 | A.3 | Đặt tính rồi tính: 3 045 × 24 | 73 080 |
 | A.4 | Số liền sau của 23 411 là số nào? | 23 412 |
 | A.5 | Chữ số hàng chục của số 58 535 có giá trị bao nhiêu? | 30 |
@@ -379,7 +379,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | C.3 | Bài toán tổng – hiệu nên minh hoạ bằng gì? | sơ đồ đoạn thẳng |
 | C.4 | “Trung bình mỗi ngày…” là dấu hiệu của dạng nào? | trung bình cộng |
 | C.5 | Tổng dãy cách đều tính nhanh bằng cách nào? | (đầu + cuối) × số số hạng : 2 |
-| D.1 | Điền dấu: 97 001 … 97 002 | &lt; |
+| D.1 | Điền dấu: 97 001 … 97 002 | < |
 | D.2 | Vở 20 trang dùng hết bao nhiêu chữ số? | 31 |
 | D.3 | Tìm thương và số dư của 1 234 : 7 | 176 dư 2 |
 | D.4 | Từ 1, 2, 3 lập được mấy số có ba chữ số khác nhau? | 6 |

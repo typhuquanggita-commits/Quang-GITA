@@ -79,7 +79,7 @@ b) Vy có 39 quyển vở, Khánh có nhiều hơn Vy 11 quyển. Khánh có bao
 c) Vy có 60 quyển vở, Khánh có số vở gấp 3 lần Vy. Khánh có bao nhiêu quyển vở?
 d) Vy có 39 quyển vở, Khánh có ít hơn Vy 24 quyển. Khánh có bao nhiêu quyển vở?
 
-### Bài 4. (5 điểm) Điền dấu &lt;, &gt;, = thích hợp
+### Bài 4. (5 điểm) Điền dấu <, >, = thích hợp
 
 Điền dấu thích hợp vào chỗ chấm.
 
@@ -349,7 +349,7 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
 
 ### Bài A.4
-**Đáp số:** a) &gt; · b) &lt; · c) &gt; · d) &lt; · e) &lt; · f) &gt; · g) &lt; · h) &gt;
+**Đáp số:** a) > · b) < · c) > · d) < · e) < · f) > · g) < · h) >
 **Hướng giải:** So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Đếm số chữ số **trước**, chỉ khi bằng nhau mới so từng hàng.
 **Lỗi thường gặp:** So từ hàng đơn vị (phải sang trái) nên kết luận sai. Phòng: Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái.

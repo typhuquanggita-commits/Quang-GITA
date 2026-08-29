@@ -51,7 +51,7 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — VÍ DỤ DẪN VÀO CHỦ ĐỀ · Mức M1 — Nhận biết · 5 phút · 5 điểm
 
-### Bài 1. (1 điểm) Điền dấu &lt;, &gt;, = thích hợp
+### Bài 1. (1 điểm) Điền dấu <, >, = thích hợp
 
 Điền dấu thích hợp vào chỗ chấm.
 
@@ -337,7 +337,7 @@ e) 49 cm = … mm
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài A.1
-**Đáp số:** a) &lt; · b) &lt; · c) &gt; · d) &gt; · e) &gt; · f) &gt;
+**Đáp số:** a) < · b) < · c) > · d) > · e) > · f) >
 **Hướng giải:** So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Đếm số chữ số **trước**, chỉ khi bằng nhau mới so từng hàng.
 **Lỗi thường gặp:** So từ hàng đơn vị (phải sang trái) nên kết luận sai. Phòng: Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái.
@@ -385,7 +385,7 @@ e) 49 cm = … mm
 **Lỗi thường gặp:** Không nhớ mốc kiểm tra nên ôn muộn. Phòng: Ghi mốc kiểm tra vào lịch học ngay buổi đầu của cụm.
 
 ### Bài B.4
-**Đáp số:** a) Cho ba chữ số, yêu cầu lập số · b) Bài toán đánh số trang · c) Đề yêu cầu ghi cả thương và số dư · d) “Viết theo thứ tự ngược lại”, “đổi chỗ hai chữ số” · e) Yêu cầu “có mấy chữ số”, “tổng các chữ số” · f) Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, =
+**Đáp số:** a) Cho ba chữ số, yêu cầu lập số · b) Bài toán đánh số trang · c) Đề yêu cầu ghi cả thương và số dư · d) “Viết theo thứ tự ngược lại”, “đổi chỗ hai chữ số” · e) Yêu cầu “có mấy chữ số”, “tổng các chữ số” · f) Dấu … giữa hai số, yêu cầu điền <, >, =
 **Hướng giải:** Dấu hiệu nhận biết là những chữ có mặt trong đề bài, không phải là cách giải. Đọc lại cột “Dữ liệu nhận biết” trong bảng phân tích chuyên sâu.
 **Nhãn tư duy:** TD2. Điểm chốt: Dấu hiệu nằm ở **chữ trong đề**, không nằm ở phép tính.
 **Lỗi thường gặp:** Trả lời bằng cách giải thay vì bằng dấu hiệu. Phòng: Tự hỏi: em nhìn thấy chữ gì trong đề thì biết đây là dạng này?
@@ -415,7 +415,7 @@ e) 49 cm = … mm
 **Lỗi thường gặp:** Dạng nào cũng vẽ sơ đồ đoạn thẳng, kể cả bài đếm. Phòng: Hỏi trước: bài này có quan hệ hơn kém, có nhiều trường hợp, hay có hình?
 
 ### Bài C.4
-**Đáp số:** a) Cho ba chữ số, yêu cầu lập số · b) Bài toán đánh số trang · c) Đề yêu cầu ghi cả thương và số dư · d) “Viết theo thứ tự ngược lại”, “đổi chỗ hai chữ số” · e) Yêu cầu “có mấy chữ số”, “tổng các chữ số” · f) Dấu … giữa hai số, yêu cầu điền &lt;, &gt;, =
+**Đáp số:** a) Cho ba chữ số, yêu cầu lập số · b) Bài toán đánh số trang · c) Đề yêu cầu ghi cả thương và số dư · d) “Viết theo thứ tự ngược lại”, “đổi chỗ hai chữ số” · e) Yêu cầu “có mấy chữ số”, “tổng các chữ số” · f) Dấu … giữa hai số, yêu cầu điền <, >, =
 **Hướng giải:** Dấu hiệu nhận biết luôn là **chữ có trong đề**: một cụm từ khoá, một kiểu dữ kiện, hoặc một cách hỏi.
 **Nhãn tư duy:** TD2. Điểm chốt: Đọc vị được đề là **đã đi được nửa đường**.
 **Lỗi thường gặp:** Lẫn dấu hiệu nhận biết với phương pháp giải. Phòng: Dấu hiệu trả lời câu “thấy gì?”, phương pháp trả lời câu “làm gì?”.

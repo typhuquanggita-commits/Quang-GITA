@@ -41,7 +41,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài II.1** — a) 65 · b) 1 625 · c) 3 725 · d) 10 100 · e) 400
 - **Bài II.2** — a) x = 32 · b) x = 107 · c) x = 42 · d) x = 79 · e) x = 67
 - **Bài II.3** — a) kho A: 48 kg, thư viện: 192 kg · b) hợp tác xã: 246 kg, kho A: 328 kg · c) cửa hàng: 330 kg, trang trại: 396 kg · d) trang trại: 141 kg, kho A: 188 kg
-- **Bài II.4** — a) &lt; · b) &lt; · c) &lt; · d) &lt; · e) &lt; · f) &lt;
+- **Bài II.4** — a) < · b) < · c) < · d) < · e) < · f) <
 - **Bài II.5** — a) 78 trận · b) 171 cái · c) 6 đường thẳng · d) 28 trận
 
 **Phần III**
@@ -240,7 +240,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | II.1 | Tổng dãy số cách đều | Công thức tổng dãy cách đều | Dãy cộng có dấu … và các số cách đều nhau | Đếm số số hạng rồi áp công thức tổng | Ghép cặp đầu – cuối: mọi cặp đều có cùng tổng, chỉ cần nhân với số cặp. | 65 · 1 625 · 3 725 · 10 100… |
 | II.2 | Tìm x nhiều bước có ngoặc | Thứ tự thực hiện phép tính, quan hệ thành phần | x nằm trong ngoặc, ngoài ngoặc còn phép tính khác | Bóc lớp từ ngoài vào trong | Thay x tìm được vào đề, tính một lượt để thử lại. | x = 32 · x = 107 · x = 42 · x = 79… |
 | II.3 | Bài toán hiệu – tỉ | Tỉ số, sơ đồ đoạn thẳng | Đề cho **hiệu** và **tỉ số** | Sơ đồ → hiệu số phần → giá trị một phần | Hiệu luôn chia hết cho hiệu số phần — dùng để kiểm tra đã đọc đúng tỉ số chưa. | kho A: 48 kg, thư viện: 192 kg · hợp tác xã: 246 kg, kho A: 328 kg · cửa hàng: 330 kg, trang trại: 396 kg · trang trại: 141 kg, kho A: 188 kg |
-| II.4 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | &lt; · &lt; · &lt; · &lt;… |
+| II.4 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | < · < · < · <… |
 | II.5 | Đếm số cặp | Tổ hợp chập hai, nguyên tắc đếm lặp | “Hai … bất kì”, “mỗi người với tất cả những người còn lại” | n × (n − 1) : 2 | Nhớ vài giá trị: 5 người có 10 cặp, 10 người có 45 cặp. | 78 trận · 171 cái · 6 đường thẳng · 28 trận |
 | III.1 | Bài toán đại lượng có lời văn | Nhân, chia số tự nhiên; đổi đơn vị khối lượng | Đơn vị trong câu hỏi khác đơn vị trong dữ kiện | Tính theo đơn vị dữ kiện rồi đổi ở bước cuối | 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ. | 15 tạ 50 kg · 15 tạ 60 kg · 3 tạ 25 kg · 3 tạ 75 kg… |
 | III.2 | Tìm số theo điều kiện của các chữ số | Cấu tạo thập phân, bài toán tổng – hiệu | Đề cho quan hệ giữa các chữ số chứ không cho số | Đặt ẩn cho từng chữ số, viết số theo cấu tạo, giải hệ điều kiện | Đổi chỗ hai chữ số của số có hai chữ số thì hiệu luôn bằng 9 lần hiệu hai chữ số. | 31, hiệu 18 · hơn -1 đơn vị · 69, hiệu 27 · gấp 1 lần… |
@@ -372,7 +372,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | II.1 | Tính nhanh: 1 + 2 + 3 + … + 100 | 5 050 |
 | II.2 | Tìm x: (x + 12) × 5 − 8 = 132 | x = 16 |
 | II.3 | Số lớn hơn số bé 24, số bé bằng 1 phần 3 số lớn. Tìm hai số. | 12 và 36 |
-| II.4 | So sánh: 234 × 7 … 234 × 8 | &lt; |
+| II.4 | So sánh: 234 × 7 … 234 × 8 | < |
 | II.5 | 6 đội bóng đấu vòng tròn một lượt. Có bao nhiêu trận? | 15 trận |
 | III.1 | Xe chở 20 bao gạo, mỗi bao 50 kg. Xe chở mấy tạ? | 10 tạ |
 | III.2 | Tìm số có hai chữ số, tổng hai chữ số bằng 11, hiệu bằng 3. | 74 |

@@ -38,7 +38,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần II**
 
-- **Bài II.1** — a) &gt; · b) &lt; · c) &lt; · d) &lt; · e) &lt;
+- **Bài II.1** — a) > · b) < · c) < · d) < · e) <
 - **Bài II.2** — a) không · b) 30 · c) 4 tuần 4 ngày · d) XXI · e) XXI · f) không · g) 31
 - **Bài II.3** — a) 270 · b) 3 420 · c) 5 370 · d) 31 189 · e) 1 332 · f) 3 955 · g) 35 802
 - **Bài II.4** — a) 250 kg · b) 278 kg · c) 125 kg · d) 30 kg
@@ -66,7 +66,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài V.2** — a) 1,54 ngày · b) 3,5 ngày · c) 4,92 ngày · d) 0,92 ngày
 - **Bài V.3** — a) 7 · b) 3 · c) 7 · d) 3 · e) 1 875
 - **Bài V.4** — a) 27 con gà, 21 con chó · b) 16 con gà, 11 con chó · c) 24 con gà, 30 con chó · d) 19 con gà, 5 con chó
-- **Bài V.5** — a) 22 · b) 13 · c) &lt; · d) 1 024 · e) &lt; · f) 81
+- **Bài V.5** — a) 22 · b) 13 · c) < · d) 1 024 · e) < · f) 81
 
 ---
 
@@ -237,7 +237,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | I.3 | Chu vi, diện tích hình cơ bản | Công thức chu vi, diện tích hình chữ nhật và hình vuông | Cho chiều dài, chiều rộng hoặc cạnh | Chọn đúng công thức, ghi đúng đơn vị | Hình vuông là hình chữ nhật có dài bằng rộng — chỉ cần nhớ một bộ công thức. | 323 cm² · 3 364 cm² · 172 cm · 130 cm |
 | I.4 | Số đo có nhiều đơn vị | Bảng đơn vị khối lượng | Số đo viết dưới dạng “… tấn … tạ … kg” | Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư | Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ. | 4 tấn 2 tạ 3 kg · 2 tấn 6 tạ 78 kg · 195 · 4 tấn 6 tạ 49 kg |
 | I.5 | Đổi và tính toán với đơn vị thời gian | Quan hệ giờ – phút – giây | Số đo có chữ “giờ”, “phút”, “giây” | Quy về phút rồi tính, cuối cùng đổi lại giờ và phút | Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm. | 6 giờ 35 phút · 4 giờ 56 phút · 7 giờ 27 phút · 108… |
-| II.1 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | &gt; · &lt; · &lt; · &lt;… |
+| II.1 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | > · < · < · <… |
 | II.2 | Lịch và đơn vị thời gian lớn | Số ngày các tháng, năm nhuận, thế kỉ | Đề hỏi về tháng, năm, thế kỉ | Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400 | Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ. | không · 30 · 4 tuần 4 ngày · XXI… |
 | II.3 | Bốn phép tính với số đo | Đổi đơn vị, bốn phép tính | Các số hạng có đơn vị khác nhau trong cùng một phép tính | Đổi về đơn vị của kết quả rồi tính | Đọc chỗ chấm trước, biết ngay đơn vị đích. | 270 · 3 420 · 5 370 · 31 189… |
 | II.4 | Ba dạng bài trung bình cộng | Quan hệ tổng – số lượng – trung bình cộng | Cụm “trung bình mỗi …” | Đi qua tổng làm trung gian | Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng. | 250 kg · 278 kg · 125 kg · 30 kg |
@@ -256,7 +256,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | V.2 | Tỉ lệ nghịch, so sánh hai phương án | Đại lượng tỉ lệ nghịch, tổng số ngày công | Thay đổi số người, hỏi thay đổi thời gian | Bám vào tổng số ngày công không đổi | Số người tăng gấp k lần thì số ngày giảm còn 1 phần k. | 1,54 ngày · 3,5 ngày · 4,92 ngày · 0,92 ngày |
 | V.3 | Dãy tuần hoàn | Phép chia có dư, tính tuần hoàn | Dãy lặp lại một nhóm số cố định | Chia vị trí cho chu kì, dùng số dư định vị | Tổng n số hạng = tổng một chu kì × số chu kì đầy đủ + tổng phần dư. | 7 · 3 · 7 · 3… |
 | V.4 | Giả thiết tạm | Phương pháp giả thiết tạm | Hai loại đối tượng, biết tổng số và tổng của một đại lượng khác | Giả sử đồng nhất một loại → tính phần chênh → chia cho hiệu đơn vị | Số chó = (số chân − 2 × số con) : 2 — thuộc công thức rút gọn để nhẩm. | 27 con gà, 21 con chó · 16 con gà, 11 con chó · 24 con gà, 30 con chó · 19 con gà, 5 con chó |
-| V.5 | Tính, so sánh tích bằng kĩ thuật tách – bù | Nhân một số với một tổng, một hiệu | Các thừa số hơn kém nhau rất ít | Quy về số gốc chung, so phần chênh | Với hai tích có tổng hai thừa số bằng nhau, tích nào có hai thừa số gần nhau hơn thì lớn hơn. | 22 · 13 · &lt; · 1 024… |
+| V.5 | Tính, so sánh tích bằng kĩ thuật tách – bù | Nhân một số với một tổng, một hiệu | Các thừa số hơn kém nhau rất ít | Quy về số gốc chung, so phần chênh | Với hai tích có tổng hai thừa số bằng nhau, tích nào có hai thừa số gần nhau hơn thì lớn hơn. | 22 · 13 · < · 1 024… |
 
 ---
 
@@ -369,7 +369,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | I.3 | Hình chữ nhật dài 8 cm, rộng 5 cm. Tính diện tích. | 40 cm² |
 | I.4 | 3 450 kg = … tấn … tạ … kg | 3 tấn 4 tạ 50 kg |
 | I.5 | 155 phút = … giờ … phút | 2 giờ 35 phút |
-| II.1 | So sánh: 3 kg … 2 500 g | &gt; |
+| II.1 | So sánh: 3 kg … 2 500 g | > |
 | II.2 | Năm 1975 thuộc thế kỉ thứ mấy? | XX |
 | II.3 | 2 m 30 cm + 150 cm = … cm | 380 |
 | II.4 | Trung bình mỗi ngày bán 40 kg, hỏi 5 ngày bán bao nhiêu? | 200 kg |
@@ -388,7 +388,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | V.2 | 6 người làm xong trong 10 ngày. Thêm 4 người thì sớm hơn mấy ngày? | 4 ngày |
 | V.3 | Dãy 1, 2, 3, 1, 2, 3, … số hạng thứ 100 là số nào? | 1 |
 | V.4 | Có 10 con gà và chó, 28 chân. Có mấy con chó? | 4 con chó |
-| V.5 | So sánh: 99 × 101 … 100 × 100 | &lt; |
+| V.5 | So sánh: 99 × 101 … 100 × 100 | < |
 
 ---
 
