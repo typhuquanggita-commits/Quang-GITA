@@ -1,0 +1,119 @@
+# KNS365 – HỆ SINH THÁI GIÁO DỤC KỸ NĂNG SỐNG LỚP 1 → LỚP 12
+## Vận hành bằng Mô thức Huấn luyện **GITA** – Thương hiệu **KNSGITA**
+
+> **Tuyên ngôn:** *KNSGITA không dạy kỹ năng sống như một môn học phụ. KNSGITA huấn luyện con người – bằng một mô thức lặp lại 365 ngày, 12 năm, 288 chuyên đề – để mỗi học sinh Việt Nam rời ghế nhà trường với một **bộ năng lực sống có thể chứng minh được**, một **hồ sơ tài năng có thể trình bày được**, và một **bệ phóng có thể cất cánh được**.*
+
+---
+
+## 1. Nhận diện hệ thống
+
+| Hạng mục | Thông số |
+|---|---|
+| Tên chương trình | **KNS365** – Kỹ Năng Sống 365 |
+| Thương hiệu huấn luyện | **KNSGITA** |
+| Mô thức lõi | **GITA** – *Goal → Inspirits → Talent → Action/Academy* |
+| Phạm vi | Lớp 1 → Lớp 12 (12 khối) |
+| Quy mô chuyên đề | **24 chuyên đề/khối × 12 khối = 288 chuyên đề** |
+| Thời lượng | **180 phút/buổi × 2 buổi/chuyên đề = 360 phút/chuyên đề** |
+| Tổng thời lượng | 48 buổi/khối/năm ≈ **8.640 phút (144 giờ)/khối/năm** |
+| Toàn cấp | 576 buổi ≈ **1.728 giờ huấn luyện/học sinh/12 năm** |
+| Mạch năng lực | **8 mạch × 3 chuyên đề/mạch/khối** |
+| Giai đoạn phát triển | 4 giai đoạn: Khởi Mầm → Bén Rễ → Vươn Cành → Cất Cánh |
+| Hệ đai năng lực | 6 đai GITA: Trắng → Vàng → Xanh Lá → Xanh Dương → Đỏ → Kim |
+
+---
+
+## 2. Bản đồ hệ sinh thái (10 phân hệ)
+
+```
+                         ┌──────────────────────────────┐
+                         │   KHUNG NỀN TẢNG (00)        │
+                         │  Mô thức GITA · Chuẩn đối     │
+                         │  sánh · Khung năng lực ·      │
+                         │  Lộ trình bệ phóng            │
+                         └───────────────┬──────────────┘
+                                         │
+              ┌──────────────────────────┼──────────────────────────┐
+              ▼                          ▼                          ▼
+   ┌────────────────────┐   ┌────────────────────────┐   ┌─────────────────────┐
+   │ CHƯƠNG TRÌNH       │   │ HỌC LIỆU TRIỂN KHAI     │   │ HỆ ĐO LƯỜNG          │
+   │ KHUNG (01)         │   │ 02 Giáo án & KHBG       │   │ 07 Kho phiếu         │
+   │ 288 chuyên đề      │──▶│ 03 Kịch bản đào tạo     │──▶│    đánh giá          │
+   │ 12 khối × 24       │   │ 04 Kho trò chơi teamwork│   │ Hộ chiếu GITA        │
+   └────────────────────┘   │ 05 Kho công cụ – dụng cụ│   │ Hồ sơ tài năng       │
+                            │ 06 Kho phiếu thực hành  │   └─────────────────────┘
+                            └───────────┬─────────────┘
+                                        ▼
+                     ┌──────────────────────────────────────┐
+                     │ CẨM NANG 3 BÊN (08)                  │
+                     │ Giáo viên · Học sinh · Phụ huynh     │
+                     └───────────────┬──────────────────────┘
+                                     ▼
+                     ┌──────────────────────────────────────┐
+                     │ VẬN HÀNH – TRIỂN KHAI (09)           │
+                     │ Chuẩn lớp · Đào tạo GV · Kiểm định   │
+                     └──────────────────────────────────────┘
+```
+
+---
+
+## 3. Mục lục tài liệu
+
+### 📘 00 – KHUNG NỀN TẢNG
+| Tệp | Nội dung |
+|---|---|
+| [01-MO-THUC-HUAN-LUYEN-GITA.md](00-KHUNG-NEN-TANG/01-MO-THUC-HUAN-LUYEN-GITA.md) | Toàn bộ lý thuyết & kỹ thuật vận hành GITA: Goal – Inspirits – Talent – Action/Academy; 5 tầng cài đặt, 12 nguyên tắc, phương trình xuất sắc, 20/80, thói quen thành công, Squad |
+| [02-CHUAN-DOI-SANH-QUOC-TE-VA-BGD.md](00-KHUNG-NEN-TANG/02-CHUAN-DOI-SANH-QUOC-TE-VA-BGD.md) | Đối sánh CT GDPT 2018, TT04/2014, TT27/2020, TT22/2021 với CASEL, OECD 2030, UNESCO LSCE, WHO, P21, IB, ISTE, Cambridge |
+| [03-KHUNG-NANG-LUC-KNS365.md](00-KHUNG-NEN-TANG/03-KHUNG-NANG-LUC-KNS365.md) | 8 mạch năng lực × 40 năng lực thành phần × 4 mức độ thành thạo |
+| [04-LO-TRINH-BE-PHONG-TAI-NANG.md](00-KHUNG-NEN-TANG/04-LO-TRINH-BE-PHONG-TAI-NANG.md) | Lộ trình 12 năm, 4 giai đoạn, 6 đai GITA, Hộ chiếu năng lực, Hồ sơ tài năng |
+| [05-CHUAN-DAU-RA-THEO-KHOI.md](00-KHUNG-NEN-TANG/05-CHUAN-DAU-RA-THEO-KHOI.md) | Chuẩn đầu ra (Exit Profile) từng khối 1→12 |
+| [06-QUY-CHUAN-CHAT-LUONG-GITA-QC.md](00-KHUNG-NEN-TANG/06-QUY-CHUAN-CHAT-LUONG-GITA-QC.md) | Bộ 40 tiêu chí kiểm định chất lượng một buổi huấn luyện GITA |
+
+### 📗 01 – CHƯƠNG TRÌNH KHUNG (288 chuyên đề)
+| Tệp | Nội dung |
+|---|---|
+| [BAN-DO-CHUONG-TRINH-288.md](01-CHUONG-TRINH-KHUNG/BAN-DO-CHUONG-TRINH-288.md) | Ma trận tổng 288 chuyên đề, mã hoá, trục xoắn ốc |
+| [KHOI-01.md](01-CHUONG-TRINH-KHUNG/KHOI-01.md) → [KHOI-12.md](01-CHUONG-TRINH-KHUNG/KHOI-12.md) | Đặc tả đầy đủ 24 chuyên đề/khối: mục tiêu GITA, chiến lược, hoạt động đào tạo – thực hành – trải nghiệm, sản phẩm, đánh giá |
+
+### 📙 02 – GIÁO ÁN & KẾ HOẠCH BÀI GIẢNG
+| Tệp | Nội dung |
+|---|---|
+| [MAU-GIAO-AN-GITA-CHUAN.md](02-GIAO-AN-KE-HOACH/MAU-GIAO-AN-GITA-CHUAN.md) | Mẫu giáo án chuẩn 2 buổi × 180 phút |
+| [MAU-KE-HOACH-BAI-GIANG-NAM-HOC.md](02-GIAO-AN-KE-HOACH/MAU-KE-HOACH-BAI-GIANG-NAM-HOC.md) | Mẫu KHBG năm học 48 buổi + phân phối chương trình |
+| `GIAO-AN-MAU-K**.md` | 6 giáo án mẫu hoàn chỉnh đại diện 4 giai đoạn |
+
+### 📕 03 – KỊCH BẢN ĐÀO TẠO CHI TIẾT
+| Tệp | Nội dung |
+|---|---|
+| [MAU-KICH-BAN-180-PHUT.md](03-KICH-BAN-DAO-TAO/MAU-KICH-BAN-180-PHUT.md) | Khung kịch bản từng phút, lời thoại mẫu, tín hiệu điều phối |
+| `KICH-BAN-MAU-*.md` | Kịch bản chi tiết theo giai đoạn (Tiểu học – THCS – THPT) |
+
+### 📒 04 → 07 – CÁC KHO HỌC LIỆU
+| Tệp | Nội dung |
+|---|---|
+| [KHO-TRO-CHOI-TEAMWORK-160.md](04-KHO-HOAT-DONG-TRO-CHOI/KHO-TRO-CHOI-TEAMWORK-160.md) | 160 trò chơi & hoạt động nhóm phân theo pha GITA, độ tuổi, mục tiêu |
+| [KHO-CONG-CU-DUNG-CU.md](05-KHO-CONG-CU-DUNG-CU/KHO-CONG-CU-DUNG-CU.md) | Danh mục vật tư, bộ kit lớp học, công cụ tư duy, công nghệ, dự toán |
+| [KHO-PHIEU-THUC-HANH.md](06-KHO-PHIEU-THUC-HANH/KHO-PHIEU-THUC-HANH.md) | 60 mẫu phiếu thực hành theo cấp học |
+| [KHO-PHIEU-DANH-GIA.md](07-KHO-PHIEU-DANH-GIA/KHO-PHIEU-DANH-GIA.md) | Rubric, phiếu quan sát, tự đánh giá, đánh giá đồng đẳng, phiếu phụ huynh, báo cáo tiến bộ |
+
+### 📓 08 – CẨM NANG 3 BÊN
+[Giáo viên](08-CAM-NANG/CAM-NANG-GIAO-VIEN.md) · [Học sinh](08-CAM-NANG/CAM-NANG-HOC-SINH.md) · [Phụ huynh](08-CAM-NANG/CAM-NANG-PHU-HUYNH.md)
+
+### 📔 09 – VẬN HÀNH & TRIỂN KHAI
+[Sổ tay triển khai trường học](09-VAN-HANH-TRIEN-KHAI/SO-TAY-TRIEN-KHAI.md) · [Chuẩn đào tạo & cấp chứng nhận Huấn luyện viên GITA](09-VAN-HANH-TRIEN-KHAI/CHUAN-HUAN-LUYEN-VIEN-GITA.md)
+
+---
+
+## 4. Nguyên tắc đọc bộ tài liệu
+
+1. **Đọc theo trục dọc** (một khối): `KHOI-XX.md` → chọn chuyên đề → mở `MAU-GIAO-AN` → `MAU-KICH-BAN` → lấy trò chơi ở kho 04, dụng cụ ở kho 05, phiếu thực hành ở kho 06, phiếu đánh giá ở kho 07.
+2. **Đọc theo trục ngang** (một mạch năng lực xuyên 12 năm): `BAN-DO-CHUONG-TRINH-288.md` → lọc theo mã mạch `M1…M8`.
+3. **Mọi tài liệu đều gắn mã.** Mã chuyên đề dạng `K07-M4-02` = Khối 7 · Mạch 4 (Giao tiếp & Hợp tác) · Chuyên đề thứ 2 của mạch.
+
+---
+
+## 5. Lưu ý pháp lý & học thuật
+
+- Các văn bản pháp quy Việt Nam được trích dẫn ở mục [02-CHUAN-DOI-SANH](00-KHUNG-NEN-TANG/02-CHUAN-DOI-SANH-QUOC-TE-VA-BGD.md) là **căn cứ đối sánh**. Trước khi ban hành chính thức tại một cơ sở giáo dục, đơn vị triển khai **cần rà soát hiệu lực hiện hành** của từng văn bản (đặc biệt các thông tư về quản lý hoạt động giáo dục kỹ năng sống ngoài giờ chính khoá và về đánh giá học sinh) và bổ sung văn bản mới nếu có.
+- Các khung quốc tế (CASEL, OECD, UNESCO, WHO, P21, IB, ISTE, Cambridge) được sử dụng ở cấp độ **tham chiếu năng lực**, không sao chép nguyên văn tài liệu có bản quyền.
+- Toàn bộ nội dung trong bộ tài liệu này là **sản phẩm biên soạn gốc** cho thương hiệu KNSGITA.
