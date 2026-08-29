@@ -139,7 +139,7 @@ G.VIEWS['luat-lam-viec'] = function(){
         'email, tài khoản Zalo hoặc lời rủ ra ngoài hệ thống, lượt ấy sẽ hiện ở đây kèm trích đoạn.',
         {t:'Đọc lại năm điều cấm', v:'luat-lam-viec'});
     } else {
-      o += U.tbl(['Lúc','Ai','Thấy gì','Trích'], ds.slice(0,25).map(function(x){
+      o += U.tbl(['Lúc','Ai','Thấy gì','Trích'], G.dsHet(ds,25).map(function(x){
         return ['<span class="tiny">'+h(new Date(x.luc).toLocaleString('vi-VN'))+'</span>',
           '<span class="mono sm">'+h(x.u)+'</span><div class="tiny muted">'+h(x.vai)+'</div>',
           '<span class="tiny" style="color:var(--gita-do-ink)">'+h(x.thay.join(' · '))+'</span>',

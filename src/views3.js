@@ -33,7 +33,7 @@ G.VIEWS['ve-tinh'] = function(){
       return '<div style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:'+size+'px;height:'+size+'px;'+
         'border-radius:50%;border:1px dashed var(--phu-5)"></div>';
     }).join('') +
-    G.FAMILIES.slice(0,9).map(function(f,i){
+    G.dsHet(G.FAMILIES,9).map(function(f,i){
       var inner = i<4, R = inner?135:200, n = inner?4:5, k = inner?i:i-4;
       var ang = (k/n)*Math.PI*2 - Math.PI/2;
       var t = G.tierOf(f.tier);
@@ -66,7 +66,7 @@ G.VIEWS['dai-su'] = function(){
       '<span style="width:32px;height:32px;border-radius:10px;display:grid;place-items:center;font-weight:900;background:'+col+'22;color:'+col+'">'+c.cap+'</span>'+
       '</div><b class="sm" style="display:block;line-height:1.35;margin-bottom:8px;color:'+col+'">'+h(c.ten)+'</b>'+
       '<div class="tiny up muted mb">ĐIỀU KIỆN</div>'+
-      '<p class="tiny muted" style="line-height:1.55">'+h(String(c.dieuKien||'').slice(0,190))+'…</p>'+
+      '<p class="tiny muted" style="line-height:1.55">'+h(G.chuHet(c.dieuKien||'',190))+'</p>'+
       (c.quyenLoi?'<button class="btn ghost sm mt" data-dscap="'+i+'" style="width:100%">Xem quyền lợi</button>':'')+
       '</div>';
   }).join('') + '</div>';
@@ -78,14 +78,14 @@ G.VIEWS['dai-su'] = function(){
       '<div class="row wrap" style="gap:5px;margin-bottom:7px">'+U.chip(n.ma,col)+U.chip('Cấp '+n.capDo)+
       (n.audience?U.chip(n.audience==='HS'?'Học viên':'Phụ huynh'):'')+'</div>'+
       '<b class="sm" style="display:block;line-height:1.4;margin-bottom:6px">'+h(n.ten)+'</b>'+
-      '<p class="tiny muted" style="line-height:1.55">'+h(String(n.mucTieu||'').slice(0,120))+'…</p></div>';
+      '<p class="tiny muted" style="line-height:1.55">'+h(G.chuHet(n.mucTieu||'',120))+'</p></div>';
   }).join('') + '</div>';
 
   if(D.quyTac && D.quyTac.muc){
     o += U.sec('MƯỜI BA QUY TẮC AN TOÀN', D.quyTac.ten);
     o += '<div class="card">' + D.quyTac.muc.map(function(q,i){
       return '<div class="rule"><span class="n">'+(i+1)+'</span><div class="tx"><b>'+h(q.quyTac)+'</b>'+
-        '<p>'+h(String(q.vi||'').slice(0,200))+'…</p></div></div>';
+        '<p>'+h(G.chuHet(q.vi||'',200))+'</p></div></div>';
     }).join('') + '</div>';
   }
   return o;

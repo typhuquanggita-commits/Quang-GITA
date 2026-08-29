@@ -122,7 +122,7 @@ G.soatChatLuong = function(){
   var thieuEN = man.filter(function(v){ return !en[v]; });
   return {
     tongKichBan: K.length,
-    cut: cut.length, viDuCut: cut.slice(0,3).map(function(k){ return k.ma; }),
+    cut: cut.length, viDuCut: G.dsHet(cut,3).map(function(k){ return k.ma; }),
     moLap: lap('mo'), chotLap: lap('chot'),
     coTam: coTam, tongMuc: man.length, thieuEN: thieuEN
   };

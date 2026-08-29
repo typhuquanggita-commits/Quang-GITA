@@ -2761,6 +2761,33 @@ const { chromium } = require(PW);
       bao(r35.mot.moc2030 && r35.mot.khac,
         'mốc 2030 tách riêng khỏi tầm nhìn — con số có hạn không bị gọi nhầm là tầm nhìn',
         r35.mot.moc2030 ? '' : 'thiếu G.CULTURE.moc2030');
+      /* Nút chết còn tệ hơn không có nút. Bản một tệp KHÔNG mang theo
+         kho .enc nào, nên nạp giấy phép vào đấy là có khoá mà không có
+         hộp để mở — người dùng bấm, chọn tệp, và không có gì đổi. Họ
+         tưởng mình thao tác sai, còn giấy phép thì đã bị mang ra khỏi
+         nơi an toàn để chẳng làm gì. */
+      const gpNut = await p35.evaluate(() => {
+        const G = window.G;
+        const thu = ['nhiem-vu', 'dieu-hanh', 'thanh-tra', 'kho'];
+        let t = '';
+        for (const v of thu) {
+          G.S.view = v; G.render();
+          const x = document.getElementById('main').innerText;
+          if (x.indexOf('PHẦN NÀY CHƯA MỞ') >= 0) { t = x; break; }
+        }
+        return { motTep: !!(G.laBanMotTep && G.laBanMotTep()),
+                 moi: !!(G.napDuocGiayPhep && G.napDuocGiayPhep()),
+                 coNut: t.indexOf('Nạp tệp giấy phép') >= 0,
+                 noiRo: t.indexOf('KHÔNG KÈM KHO') >= 0,
+                 coMan: !!t.length };
+      });
+      bao(gpNut.motTep, 'bản giới thiệu tự nhận mình là bản một tệp');
+      bao(gpNut.coMan, 'có màn xin cấp phép để kiểm', gpNut.coMan ? '' : 'không màn nào hiện màn ấy');
+      bao(!gpNut.moi && !gpNut.coNut,
+        'bản một tệp KHÔNG mời nạp giấy phép — nút chết còn tệ hơn không có nút',
+        'mời:' + gpNut.moi + ' có nút:' + gpNut.coNut);
+      bao(gpNut.noiRo,
+        'bản một tệp nói thẳng vì sao nạp giấy phép không giúp được gì, và chỉ hai đường mở đủ kho');
       bao(!loi35.length, 'bản giới thiệu chạy không văng lỗi nào', loi35.slice(0, 2).join(' | '));
       await p35.close();
     }
@@ -2843,6 +2870,73 @@ const { chromium } = require(PW);
       'bản đã cài nạp đúng bộ tệp mà trang web nạp — không tệp nào thiếu khi mất mạng',
       (thieuSw.length ? 'sw thiếu: ' + thieuSw.join(' ') + ' ' : '') +
       (thuaSw.length ? 'sw thừa: ' + thuaSw.join(' ') : '') || dsIdx.length + ' tệp, khớp cả hai bên');
+
+    /* ── Super Admin không còn giới hạn nào ──
+       Chủ hệ thống phải nhìn được từ A đến Z. Ba loại giới hạn: màn bị
+       khoá, quyền chưa có, và CẮT BỚT trên giao diện. Hai loại đầu đã
+       hết từ lâu; loại thứ ba là thứ mới đóng — danh sách chỉ hiện mười
+       mục đầu thì một chỗ hỏng ở mục thứ mười một không bao giờ bị thấy. */
+    const r01 = await p.evaluate(() => {
+      const G = window.G;
+      const man = []; G.NAV.forEach(g => g.items.forEach(i => man.push(i)));
+      const khoa = man.filter(i => i.perm && !G.can(i.perm)).map(i => i.v);
+      const thieuQuyen = Object.keys(G.PERM || {}).filter(q => !G.can(q));
+      /* Công tắc mở hết: bật lên thì danh sách và đoạn chữ phải dài ra thật */
+      const truoc = G.MO_HET;
+      G.MO_HET = false; const gon = G.dsHet([1,2,3,4,5,6,7,8,9,10], 3).length;
+      const chuGon = G.chuHet('abcdefghijklmnop', 5);
+      G.MO_HET = true;  const het = G.dsHet([1,2,3,4,5,6,7,8,9,10], 3).length;
+      const chuHet = G.chuHet('abcdefghijklmnop', 5);
+      G.MO_HET = truoc;
+      return { khoa, thieuQuyen, goi: (G.KHO.daNap || []).length,
+               gon, het, chuGon, chuHet, coNut: !!G.moHetDoi };
+    });
+    bao(!r01.khoa.length, 'Super Admin không màn nào bị khoá', r01.khoa.join(' ') || 'mở hết');
+    bao(!r01.thieuQuyen.length, 'Super Admin có đủ mọi quyền', r01.thieuQuyen.join(' ') || 'đủ');
+    bao(r01.goi === 7, 'Super Admin mở đủ bảy gói kho', r01.goi + ' gói');
+    bao(r01.gon === 3 && r01.het === 10,
+      'công tắc Mở hết bỏ được cắt bớt danh sách — cần cho việc rà từ A đến Z',
+      'gọn ' + r01.gon + ' → mở hết ' + r01.het);
+    bao(r01.chuGon.slice(-1) === '…' && r01.chuHet.length === 16,
+      'công tắc Mở hết trả đoạn chữ đầy đủ, và bản gọn vẫn có dấu ba chấm',
+      JSON.stringify(r01.chuGon) + ' → ' + JSON.stringify(r01.chuHet));
+
+    /* Vai thường KHÔNG bật được, dù cờ có bị đặt */
+    const khachMoHet = await p.evaluate(async () => {
+      const G = window.G;
+      G.doLogin('phuhuynh@gita365.vn');
+      await new Promise(r => setTimeout(r, 1200));
+      G.MO_HET = true;
+      const r = { duoc: G.moHetDuoc(), bat: G.moHetBat(),
+                  ds: G.dsHet([1,2,3,4,5,6,7,8,9,10], 3).length };
+      G.MO_HET = false;
+      G.doLogin('superadmin@gita365.vn');
+      await new Promise(r2 => setTimeout(r2, 2000));
+      return r;
+    });
+    bao(!khachMoHet.duoc && !khachMoHet.bat && khachMoHet.ds === 3,
+      'phụ huynh KHÔNG mở hết được dù cờ bị đặt — công tắc là quyền, không phải biến',
+      'được:' + khachMoHet.duoc + ' bật:' + khachMoHet.bat + ' danh sách:' + khachMoHet.ds);
+
+    /* ── Bảng quy trình toàn Web App ──
+       Mọi bước phải trỏ tới màn CÓ THẬT. Bảng quy trình lệch khỏi ứng
+       dụng còn tệ hơn không có bảng: người đọc tin nó rồi quyết định sai. */
+    const qt = await p.evaluate(() => {
+      const G = window.G, s = G.qtSoat();
+      return { luong: s.luong, buoc: s.man, hong: s.hong,
+               rieng: (G.QT_RIENG || []).length, luat: (G.QT_LUAT || []).length,
+               dai: (function(){ G.S.view = 'quy-trinh-toan-he'; G.render();
+                 return document.getElementById('main').innerText.trim().length; })() };
+    });
+    bao(qt.luong === 8 && qt.buoc >= 30,
+      'bảng quy trình có đủ tám luồng vận hành', qt.luong + ' luồng · ' + qt.buoc + ' bước');
+    bao(!qt.hong.length,
+      'mọi bước trong bảng quy trình đều trỏ tới màn có thật — bảng chưa trôi khỏi ứng dụng',
+      qt.hong.join(' · '));
+    bao(qt.rieng >= 9 && qt.luat >= 4,
+      'bảng quy trình ghi rõ quyền riêng của cấp quản trị và luật đọc bảng',
+      qt.rieng + ' quyền riêng · ' + qt.luat + ' luật');
+    bao(qt.dai >= 15000, 'màn quy trình dựng ra đủ dày để rà', qt.dai.toLocaleString('vi-VN') + ' ký tự');
 
     /* ── Học phí và hợp đồng: RIÊNG từng tuyến, không mượn của nhau ──
        Chủ Học viện chốt: tuyến nào có chính sách học phí độc lập tuyến

@@ -277,15 +277,33 @@ G.canCapPhep = function (goi) {
      thích. Nên nút mở đứng trước, giải thích đứng sau — và nút phải hợp với
      đúng vai đang đăng nhập, không đưa ba lựa chọn để họ tự đoán. */
   var laChu = G.can && G.can('qt_trang');          /* Super Admin · Admin hệ thống */
-  /* Nạp tệp giấy phép chạy được cả trên web lẫn bản cài — chỉ cần vai được
-     phép. Trước đây tôi gán nhầm là chỉ bản cài mới có. */
+  /* Nạp tệp giấy phép chạy được trên bản web nhiều tệp và bản cài — chỉ
+     cần vai được phép. KHÔNG chạy trên bản giới thiệu một tệp: bản ấy
+     không mang theo kho .enc nào, nên có khoá cũng không có gì để mở. */
   var napDuoc = !!(G.napDuocGiayPhep && G.napDuocGiayPhep());
+  var motTep  = !!(G.laBanMotTep && G.laBanMotTep());
 
   var o = U.ph({ eyebrow: 'PHẦN NÀY CHƯA MỞ', ic: 'lock',
     t: mau ? 'Bấm một nút là mở' : 'Chưa tới lượt màn hình này',
     lead: mau
       ? 'Ứng dụng đang chạy bản mẫu nên kho chuyên môn chưa mở. Chọn đúng một việc bên dưới.'
       : 'Không phải lỗi, và cũng không phải anh chị làm sai. Dưới đây là đúng ba điều: khoá phần nào, vì sao, và mở bằng cách nào.' });
+
+  /* Bản một tệp: nói thẳng vì sao nạp giấy phép không giúp được gì ở đây.
+     Trước đây màn này vẫn mời nạp giấy phép trên bản một tệp — người dùng
+     bấm, chọn tệp, và không có gì đổi. Nút chết còn tệ hơn không có nút:
+     nó làm người ta tưởng mình thao tác sai, và làm giấy phép bị mang ra
+     khỏi nơi an toàn mà chẳng để làm gì. */
+  if(mau && motTep)
+    o += '<div class="card mb" style="border-color:rgba(251,146,60,.45);background:rgba(251,146,60,.07)">'+
+      '<div class="row mb" style="gap:9px"><span style="color:var(--alert)">'+U.ic('bell','w-4 h-4')+'</span>'+
+      '<b style="color:var(--alert)">ĐÂY LÀ BẢN GIỚI THIỆU MỘT TỆP — KHÔNG KÈM KHO</b></div>'+
+      '<p class="sm" style="line-height:1.75">Bản này gói cả ứng dụng vào một tệp HTML để gửi đi và mở '+
+      'được ở mọi nơi. Nó <b>không mang theo kho tri thức đã mã hoá</b>, nên nạp giấy phép vào đây '+
+      'cũng không mở thêm được gì — có khoá mà không có hộp để mở.</p>'+
+      '<p class="sm mt" style="line-height:1.75">Muốn xem đủ kho thì dùng một trong hai đường: '+
+      '<b>bản cài trên máy tính</b> (Trợ giúp → Nạp giấy phép), hoặc <b>bản web nhiều tệp</b> đã nối '+
+      'máy chủ cấp phép. Cả hai đều đi kèm bảy tệp <span class="mono">kho/*.enc</span>.</p></div>';
 
   /* ── Hàng nút, đặt NGAY ĐẦU màn ── */
   if(mau){

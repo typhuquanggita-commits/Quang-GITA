@@ -193,7 +193,7 @@ G.VIEWS['theo-doi-tai-nguyen'] = function(){
   var cb = G.canhBaoTaiNguyen();
   if(cb.length){
     o += U.sec('NHẬT KÝ CẢNH BÁO', cb.length + ' lượt');
-    o += U.tbl(['Lúc','Tài khoản','Mức chạm',''], cb.slice(0, 30).map(function(c){
+    o += U.tbl(['Lúc','Tài khoản','Mức chạm',''], G.dsHet(cb,30).map(function(c){
       return [
         '<span class="tiny">'+h(new Date(c.luc).toLocaleString('vi-VN'))+'</span>',
         '<span class="mono sm">'+h(c.u)+'</span><div class="tiny muted">'+h(c.vai||'')+'</div>',

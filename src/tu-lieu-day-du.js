@@ -218,7 +218,7 @@ noi('chan-dung-kh', function(){
       '<div class="row wrap mb" style="gap:7px">'+U.chip(x.ma,c)+(g.tang?U.chip(g.tang,'#185AB4'):'')+'</div>'+
       '<b class="sm" style="display:block;color:'+c+';margin-bottom:6px">'+h(g.ten||x.ma)+'</b>'+
       '<p class="tiny muted" style="line-height:1.55">'+h(x.nguoi)+'</p>'+
-      '<div class="row wrap mt2" style="gap:5px">'+x.vanDe.slice(0,3).map(function(m){
+      '<div class="row wrap mt2" style="gap:5px">'+G.dsHet(x.vanDe,3).map(function(m){
         return '<span class="tiny mono muted">'+h(m)+'</span>'; }).join('')+'</div></button>';
   }).join('') + '</div>';
 

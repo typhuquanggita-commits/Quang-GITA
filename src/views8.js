@@ -79,7 +79,7 @@ function goiTaiLieu(b, yeu){
     return { q:q, d:d };
   }).filter(function(x){ return x.d > 0; });
   ds.sort(function(x,y){ return y.d - x.d; });
-  return ds.slice(0,8).map(function(x){ return x.q; });
+  return G.dsHet(ds,8).map(function(x){ return x.q; });
 }
 function goiPhacDo(yeu){
   var kho = G.PHACDO || [];
@@ -90,7 +90,7 @@ function goiPhacDo(yeu){
     return { p:p, d:d };
   }).filter(function(x){ return x.d > 0; });
   ds.sort(function(x,y){ return y.d - x.d; });
-  return ds.slice(0,5).map(function(x){ return x.p; });
+  return G.dsHet(ds,5).map(function(x){ return x.p; });
 }
 
 function tierColor(t){

@@ -267,6 +267,71 @@ của nó vào `MO_RA` trong cùng một lần sửa. Ngược lại, một màn
 nghề thì cứ để nó hiện thẻ xin cấp phép — thẻ ấy còn nói được là khoá ở
 đâu và mở bằng cách nào, hơn hẳn một cái khung rỗng.
 
+## Super Admin không còn giới hạn nào — và công tắc "Mở hết"
+
+Đo lại từ ứng dụng đang chạy: Super Admin **không màn nào bị khoá, không
+thiếu quyền nào trong 41 quyền, mở đủ bảy gói kho**. Hai loại giới hạn
+quen thuộc đã hết từ lâu.
+
+Nhưng còn loại thứ ba, và nó là loại khó thấy nhất: **cắt bớt trên giao
+diện**. Danh sách hiện mười mục đầu, tóm tắt cắt ở một trăm hai mươi ký
+tự. Với người dùng thường thì đúng — màn dài quá thì không ai đọc. Với
+người đi **rà** thì sai: một chỗ hỏng nằm ở mục thứ mười một sẽ không
+bao giờ bị phát hiện.
+
+Nên cắt bớt thành một **công tắc**, không phải một luật cứng:
+
+```js
+G.dsHet(ds, n)    // danh sách: đủ khi đang mở hết, ngược lại cắt như cũ
+G.chuHet(s, n)    // đoạn chữ: đủ khi đang mở hết, ngược lại cắt + '…'
+```
+
+26 chỗ cắt trong `src/` đi qua hai hàm này. Nút bật nằm **trên thanh
+trên, cạnh chip vai** — giấu vào một màn cài đặt thì người bật xong sang
+màn khác sẽ quên là mình đang bật. Trạng thái ghi vào máy đang dùng, vì
+đây là thói quen đọc của một người trên một máy, không phải quyền của
+một vai.
+
+**Công tắc là quyền, không phải biến.** `G.moHetBat()` hỏi lại
+`G.can('qt_trang')` mỗi lần, nên đặt `G.MO_HET = true` từ bảng điều
+khiển trình duyệt cũng không mở thêm gì cho phụ huynh. Bộ kiểm có một
+mục chạy đúng phép thử ấy.
+
+Đo được: màn Mô thức dài thêm **5.976 ký tự**, Sách gốc thêm 1.508, Đại
+sứ thêm 1.443.
+
+## Bảng quy trình toàn Web App — `quy-trinh-toan-he`
+
+Danh sách 127 màn xếp theo nhóm cho biết **có những gì**, nhưng không cho
+biết chúng **nối vào nhau thế nào**. Màn này khai tám luồng vận hành, 36
+bước, mỗi bước gắn đúng một màn và nói bốn điều: *ai làm · mở màn nào ·
+xong khi nào · **không xong thì làm gì***.
+
+Cột cuối là cột hay bị bỏ. Một quy trình chỉ mô tả đường thuận là quy
+trình chưa dùng được — đời thật gãy ở chỗ không thuận.
+
+| | |
+|---|---|
+| L1 | Đưa một nhà mới vào |
+| L2 | Chạy một tuần của một nhà |
+| L3 | Đóng một chặng 90 ngày |
+| L4 | Cấp tài khoản và cấp phép |
+| L5 | Đưa một tài liệu vào kho |
+| L6 | Giữ tài sản không rò ra ngoài |
+| L7 | Phát hành một bản mới |
+| L8 | Rà soát toàn hệ |
+
+**Hai thứ màn này KHÔNG khai tay:** số màn và số quyền — chúng được đếm
+từ `G.NAV` và `G.PERM` lúc chạy. Và **mọi tên màn trong luồng được đối
+chiếu với `G.NAV` lúc dựng**: khai một màn không có thật thì hiện đỏ ngay
+tại dòng ấy.
+
+Phép đối chiếu ấy bắt được lỗi ngay lần chạy đầu — bốn bước trỏ tới
+`ho-so-nang-luc`, `quan-tri-nguoi`, `sua-noi-dung`, `vong-doi-tk`, đều là
+tên tôi tưởng có mà không có. Đó chính là lý do bảng phải tự đối chiếu:
+một bảng quy trình lệch khỏi ứng dụng còn tệ hơn không có bảng, vì người
+đọc tin nó rồi ra quyết định sai.
+
 ## Học phí và hợp đồng — riêng từng tuyến, không mượn của nhau
 
 Chủ Học viện chốt hai điều, và cả hai được khoá vào dữ liệu chứ không

@@ -525,6 +525,17 @@ function topBar(){
     '<button id="search" data-act="cmd">'+ic('search')+'<span>'+h(G.L('search'))+'</span><kbd>Ctrl K</kbd></button>'+
     '<span class="grow"></span>'+
     '<span class="chip deskonly" style="color:'+r.c+';border-color:'+r.c+'55">'+ic('shield','w-3 h-3')+h(r.short)+' · LV'+r.lv+'</span>'+
+    /* Công tắc MỞ HẾT — chỉ cấp quản trị thấy. Đặt ngay cạnh chip vai vì
+       nó đổi cách MỌI màn hình hiện ra; giấu nó vào một màn cài đặt thì
+       người bật xong sang màn khác sẽ quên là mình đang bật. */
+    (G.moHetDuoc && G.moHetDuoc()
+      ? '<button class="tbtn deskonly" data-act="mo-het" aria-label="Mở hết — không cắt bớt" '+
+        'title="'+(G.MO_HET ? 'Đang MỞ HẾT: mọi danh sách và đoạn chữ hiện đủ. Bấm để về bản gọn.'
+                            : 'Mở hết: bỏ cắt bớt trên mọi màn, để rà từ A đến Z.')+'" '+
+        'style="'+(G.MO_HET
+          ? 'color:var(--ok);border-color:var(--ok);background:rgba(16,185,129,.12)'
+          : 'color:var(--ink-4)')+'">'+ic('orbit')+'</button>'
+      : '')+
     '<button class="tbtn" data-v="tro-ly" aria-label="Trợ lý GITA" title="Trợ lý GITA" '+
       'style="color:var(--gita-ink);border-color:var(--gita-vien-1)">'+ic('spark')+'</button>'+
     '<button class="tbtn" data-act="doi-nen" aria-label="Đổi nền sáng tối" title="Đổi nền sáng / tối">'+
@@ -825,7 +836,7 @@ function cmdRender(q){
       extra.push({t:k.ten, s:'Kịch bản '+k.ma+' · '+k.tang, ic:'ritual', kb:k.ma}); });
   }
   res.innerHTML = (items.length?'<div class="gh">MÀN HÌNH</div>':'') +
-    items.slice(0,8).map(function(x,i){
+    G.dsHet(items,8).map(function(x,i){
       return '<button data-go="'+h(x.go)+'" class="'+(i===0?'sel':'')+'">'+ic(x.ic)+
         '<span class="tx"><b>'+h(x.t)+'</b><span>'+h(x.s)+'</span></span></button>';
     }).join('') +
@@ -969,6 +980,7 @@ function hienThem(idList, idDem, kho, veThe, buoc, locSel){
 on('[data-act]', function(el){
   var a = el.getAttribute('data-act');
   if(a==='doi-nen') return G.doiNen();
+  if(a==='mo-het')  return G.moHetDoi();
   if(a==='pq-dat-lai') return G.datLaiPhanQuyen();
   if(a==='sx-them') return G.themNhom();
   if(a==='sx-tra') return G.traBoCuc();

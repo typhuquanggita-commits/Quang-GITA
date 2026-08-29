@@ -251,7 +251,7 @@ function manKetQua(maBai){
         return '<div class="mt2"><b class="sm" style="color:'+T.c+'">'+h(T.ten)+'</b>'+
           (mo.length
             ? '<ul class="tiny mt" style="line-height:1.7;padding-left:18px;margin:0">'+
-              mo.slice(0,3).map(function(x){ return '<li>'+h(x.ten)+'</li>'; }).join('')+'</ul>'
+              G.dsHet(mo,3).map(function(x){ return '<li>'+h(x.ten)+'</li>'; }).join('')+'</ul>'
             : '<p class="tiny mt muted">Bài học cho trục này đang được biên soạn.</p>')+
         '</div>';
       }).join('')+

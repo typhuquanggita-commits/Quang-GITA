@@ -206,7 +206,8 @@ G.ITEM_EN = {
   'tham-gia':['The way in — six steps','Intro → sign up → assessment → profile → direction → 7-day challenge'],
   'hoc-phi':['Tuition across five tiers','18 money scripts · 7 rules · collection and refund'],
   'soat-day-du':['Completeness self-audit','5 checks · counted live from loaded data'],
-  'tuyen':['Four subject tracks','Engwin · Math · SAT · HSA · six gates before the merge'],
+  'tuyen':['Four subject tracks','Engwin · Math · SAT · HSA · seven gates before the merge'],
+  'quy-trinh-toan-he':['Whole-app process map','8 flows · one screen per step · what admin alone can do'],
   /* Ba mươi tư mục dưới đây trước nay chỉ có tiếng Việt: bản tiếng Anh
      rơi vào ô trống nên giao diện EN hiện mã màn hình thay cho tên. */
   'gioi-thieu':['What GITA 365 is','Mission · vision · goals · values · five tiers · culture · how we stay with you'],

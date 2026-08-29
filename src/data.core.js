@@ -18,7 +18,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '8.0',
+  version: '8.1',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -213,6 +213,56 @@ G.TANG_HIENTHI = [
 
 /* Tỉ lệ hiển thị mong muốn theo vị trí — bộ kiểm phát hành đối chiếu
    với số đếm thật, lệch quá biên là dừng phát hành. */
+/* ══════════ CÔNG TẮC "MỞ HẾT" — CHỈ CẤP QUẢN TRỊ ══════════
+
+   Giao diện cắt bớt để dễ đọc: danh sách hiện mười mục đầu, tóm tắt cắt
+   ở một trăm hai mươi ký tự. Với người dùng thường thì đúng — màn hình
+   dài quá thì không ai đọc.
+
+   Nhưng chủ hệ thống cần nhìn A đến Z: không phải để dùng hằng ngày, mà
+   để RÀ. Không thấy hết thì không rà được, và một chỗ hỏng nằm ở mục
+   thứ mười một sẽ không bao giờ bị phát hiện.
+
+   Nên cắt bớt thành một công tắc thay vì một luật cứng. Tắt là giao diện
+   như cũ; bật là mọi danh sách và mọi đoạn chữ hiện đủ. Chỉ vai có quyền
+   qt_trang bật được — Super Admin và Admin hệ thống.
+
+   Trạng thái ghi vào máy đang dùng, không đi theo tài khoản: đây là thói
+   quen đọc của một người trên một máy, không phải quyền của một vai. */
+G.MO_HET = false;
+
+G.moHetDuoc = function(){ return !!(G.can && G.can('qt_trang')); };
+
+G.moHetBat = function(){ return !!(G.MO_HET && G.moHetDuoc()); };
+
+/* Danh sách: trả đủ khi đang mở hết, ngược lại cắt như cũ. */
+G.dsHet = function(ds, n){
+  var a = ds || [];
+  return G.moHetBat() ? a : a.slice(0, n);
+};
+
+/* Đoạn chữ: trả đủ khi đang mở hết; ngược lại cắt và tự thêm dấu ba
+   chấm — nên chỗ gọi KHÔNG nối thêm '…' nữa, nếu không bản đầy đủ cũng
+   bị treo một dấu ba chấm vô nghĩa ở cuối. */
+G.chuHet = function(s, n){
+  var t = String(s == null ? '' : s);
+  if(G.moHetBat() || t.length <= n) return t;
+  return t.slice(0, n) + '…';
+};
+
+G.moHetDoi = function(){
+  if(!G.moHetDuoc()) return;
+  G.MO_HET = !G.MO_HET;
+  try { localStorage.setItem('gita_mo_het', G.MO_HET ? '1' : '0'); } catch(e){}
+  if(G.U && G.U.toast)
+    G.U.toast(G.MO_HET
+      ? 'Đã mở hết — mọi danh sách và mọi đoạn chữ hiện đủ, không cắt bớt.'
+      : 'Đã tắt mở hết — giao diện trở lại bản gọn.', 'ok');
+  if(G.render) G.render();
+};
+
+try { G.MO_HET = localStorage.getItem('gita_mo_het') === '1'; } catch(e){}
+
 G.TAM_NHIN = [
   {vai:['R01','R02'], pt:100,
    ghi:'Toàn bộ, không khoá gì. Super Admin và Admin hệ thống thấy mọi thứ.'},
@@ -517,7 +567,8 @@ G.NAV = [
     {v:'duyet-tai-lieu',t:'Kiểm duyệt tài liệu',        h:'Xem · chấm chuẩn hoá · duyệt hoặc trả lại',ic:'shield', star:1, perm:'qt_trang', capMo:'quantri'},
     {v:'theo-doi-tai-nguyen',t:'Theo dõi tài nguyên',      h:'Cảnh báo khi một tài khoản chạm quá 20% kho', ic:'chart', perm:'qt_tai_nguyen', capMo:'chung', star:1},
     {v:'soat-day-du',t:'Soát đủ ruột — tự kiểm 100%', h:'5 phép soát · đếm lại từ dữ liệu đang nạp', ic:'shield', star:1, perm:'qt_trang', capMo:'quantri'},
-    {v:'tuyen',      t:'Bốn tuyến chuyên môn',       h:'Engwin · Math · SAT · HSA · sáu mốc trước khi hợp nhất', ic:'orbit', star:1, perm:'qt_trang', capMo:'quantri'},
+    {v:'tuyen',      t:'Bốn tuyến chuyên môn',       h:'Engwin · Math · SAT · HSA · bảy mốc trước khi hợp nhất', ic:'orbit', star:1, perm:'qt_trang', capMo:'quantri'},
+    {v:'quy-trinh-toan-he',t:'Quy trình toàn Web App', h:'8 luồng · từng bước một màn · quyền của cấp quản trị', ic:'map', star:1, perm:'qt_trang', capMo:'quantri'},
     {v:'nhat-ky-ht',  t:'Nhật ký hệ thống',            h:'Mọi thao tác đều để lại dấu vết',    ic:'book', perm:'qt_trang', capMo:'quantri'}
    ]}
 ];

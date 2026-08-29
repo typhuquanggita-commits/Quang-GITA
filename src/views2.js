@@ -85,7 +85,7 @@ G.VIEWS['phac-do'] = function(){
         return '<button class="card pad-sm lift" data-pd="'+h(p.ma)+'" data-s="'+h((p.ten+' '+k).toLowerCase())+'" style="text-align:left">'+
           '<div class="row" style="gap:7px;margin-bottom:5px"><span class="mono tiny" style="color:var(--ink-4)">'+h(p.ma)+'</span></div>'+
           '<b class="sm" style="display:block;line-height:1.4">'+h(p.ten)+'</b>'+
-          (p.nguyenNhan?'<p class="tiny muted mt" style="line-height:1.5">'+h(String(p.nguyenNhan).slice(0,88))+'…</p>':'')+
+          (p.nguyenNhan?'<p class="tiny muted mt" style="line-height:1.5">'+h(G.chuHet(p.nguyenNhan,88))+'</p>':'')+
           '</button>';
       }).join('') + '</div></div>';
   }).join('') + '</div>';
@@ -122,7 +122,7 @@ G.VIEWS['kich-ban'] = function(){
     '<button class="chip" data-kbf="HS">Học viên</button>'+
     '<button class="chip" data-kbf="PH">Phụ huynh</button></div>';
   o += G.searchBox('Tìm theo tên buổi, nhóm, mục tiêu…','kb');
-  o += '<div class="grid g-auto-lg mt" id="kbList">' + G.KICHBAN.slice(0,60).map(G.kbCard).join('') + '</div>'+
+  o += '<div class="grid g-auto-lg mt" id="kbList">' + G.dsHet(G.KICHBAN,60).map(G.kbCard).join('') + '</div>'+
     '<div class="center mt2"><button class="btn" data-act="kb-more">Hiện thêm 60 kịch bản</button>'+
     '<p class="tiny muted mt">Đang hiện <b id="kbCount">60</b> / '+G.KICHBAN.length.toLocaleString('vi-VN')+'</p></div>';
   return o;
@@ -178,7 +178,7 @@ G.VIEWS['mo-thuc'] = function(){
       '<div class="row" style="gap:7px;margin-bottom:7px"><span class="pill" style="background:var(--gita-mo-2);color:var(--gold-ink)">'+h(m.id)+'</span>'+
       (m.tiers?U.chip((m.tiers||[]).join(' · ')):'')+'</div>'+
       '<b class="sm" style="display:block;line-height:1.4;margin-bottom:6px">'+h(m.title)+'</b>'+
-      '<p class="tiny muted" style="line-height:1.55">'+h(String(m.summary||'').slice(0,120))+'…</p></button>';
+      '<p class="tiny muted" style="line-height:1.55">'+h(G.chuHet(m.summary||'',120))+'</p></button>';
   }).join('') + '</div>';
   return o;
 };
@@ -207,7 +207,7 @@ G.VIEWS['tu-duy'] = function(){
       '<div class="row wrap" style="gap:6px;margin-bottom:8px">'+U.chip(b.id)+
       U.chip('Miền '+g+' · '+gm.short, gm.c)+((b.tiers||[]).length?U.chip((b.tiers||[]).join(' ')):'')+'</div>'+
       '<b style="font-size:14.5px;display:block;line-height:1.35;margin-bottom:8px">'+h(b.ten)+'</b>'+
-      '<p class="sm muted" style="line-height:1.6">'+h(String(b.nguyenLy||'').slice(0,160))+'…</p></button>';
+      '<p class="sm muted" style="line-height:1.6">'+h(G.chuHet(b.nguyenLy||'',160))+'</p></button>';
   }).join('') + '</div>';
   return o;
 };
@@ -242,7 +242,7 @@ G.VIEWS['sach'] = function(){
   o += '<div class="grid g3">' + G.SACH.map(function(s){
     return '<div class="card lift"><div class="row" style="gap:9px;margin-bottom:8px">'+
       '<span style="color:var(--gold-ink)">'+ic('book','w-5 h-5')+'</span><b class="sm">'+h(s.title)+'</b></div>'+
-      '<p class="tiny muted" style="line-height:1.6">'+h(String(s.summary||'').slice(0,190))+'</p>'+
+      '<p class="tiny muted" style="line-height:1.6">'+h(G.chuHet(s.summary||'',190))+'</p>'+
       '<div class="row mt2 tiny mono" style="gap:12px;color:var(--ink-4)">'+
       (s.sectionCount?'<span>'+s.sectionCount+' đoạn</span>':'')+
       (s.chars?'<span>'+Number(s.chars).toLocaleString('vi-VN')+' ký tự</span>':'')+'</div></div>';
@@ -251,11 +251,11 @@ G.VIEWS['sach'] = function(){
   o += U.sec('BẢY BẢN ĐỒ A3','Dùng in ra và treo — công cụ làm việc trực tiếp với gia đình');
   o += '<div class="grid g-auto">' + G.BANDO_A3.map(function(m){
     return '<div class="card pad-sm"><b class="sm" style="display:block;margin-bottom:6px">'+h(m.title)+'</b>'+
-      '<p class="tiny muted" style="line-height:1.55">'+h(String(m.summary||'').slice(0,130))+'…</p></div>';
+      '<p class="tiny muted" style="line-height:1.55">'+h(G.chuHet(m.summary||'',130))+'</p></div>';
   }).join('') + '</div>';
 
   o += U.sec('BỐN MƯƠI POSTER','Câu ngắn dán tường — dùng cho lớp và cho nhà');
-  o += '<div class="grid g4">' + G.POSTER.slice(0,20).map(function(p){
+  o += '<div class="grid g4">' + G.dsHet(G.POSTER,20).map(function(p){
     return '<div class="card pad-sm" style="min-height:86px"><b class="tiny" style="line-height:1.45;display:block">'+h(p.title)+'</b></div>';
   }).join('') + '</div>'+
   '<p class="tiny muted mt center">Đang hiện 20 / '+G.POSTER.length+' poster · phần còn lại mở trong kho máy chủ</p>';
@@ -566,9 +566,9 @@ G.VIEWS['ranh-gioi'] = function(){
 
   if(G.DAISU.quyTac && G.DAISU.quyTac.muc){
     o += U.sec('QUY TẮC AN TOÀN KHI CHIA SẺ', G.DAISU.quyTac.ten);
-    o += '<div class="card">' + G.DAISU.quyTac.muc.slice(0,6).map(function(q,i){
+    o += '<div class="card">' + G.dsHet(G.DAISU.quyTac.muc,6).map(function(q,i){
       return '<div class="rule"><span class="n">'+(i+1)+'</span><div class="tx"><b>'+h(q.quyTac)+'</b>'+
-        '<p>'+h(String(q.vi||'').slice(0,240))+'…</p></div></div>';
+        '<p>'+h(G.chuHet(q.vi||'',240))+'</p></div></div>';
     }).join('') + '</div>';
   }
   return o;

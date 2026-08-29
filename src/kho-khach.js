@@ -215,7 +215,7 @@ G.tuChoiThem = function(id, ly){
   var x = G.XIN_THEM.filter(function(y){ return y.id === id; })[0];
   if(!x) return {ok:false, ly:'Không tìm thấy lời xin này.'};
   x.trangThai = 'hoanLai';
-  x.loiNhan   = String(ly || '').slice(0, 400);
+  x.loiNhan   = G.chuHet(ly || '',400);
   if(G.soiLuat) G.soiLuat(x.loiNhan, 'Lời nhắn hoãn lời xin ' + x.id);
   x.nguoiGui  = (G.S.acc && G.S.acc.ten) || '';
   x.lucGui    = new Date().toISOString();

@@ -1197,7 +1197,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '8.0',
+  version: '8.1',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -1392,6 +1392,56 @@ G.TANG_HIENTHI = [
 
 /* Tỉ lệ hiển thị mong muốn theo vị trí — bộ kiểm phát hành đối chiếu
    với số đếm thật, lệch quá biên là dừng phát hành. */
+/* ══════════ CÔNG TẮC "MỞ HẾT" — CHỈ CẤP QUẢN TRỊ ══════════
+
+   Giao diện cắt bớt để dễ đọc: danh sách hiện mười mục đầu, tóm tắt cắt
+   ở một trăm hai mươi ký tự. Với người dùng thường thì đúng — màn hình
+   dài quá thì không ai đọc.
+
+   Nhưng chủ hệ thống cần nhìn A đến Z: không phải để dùng hằng ngày, mà
+   để RÀ. Không thấy hết thì không rà được, và một chỗ hỏng nằm ở mục
+   thứ mười một sẽ không bao giờ bị phát hiện.
+
+   Nên cắt bớt thành một công tắc thay vì một luật cứng. Tắt là giao diện
+   như cũ; bật là mọi danh sách và mọi đoạn chữ hiện đủ. Chỉ vai có quyền
+   qt_trang bật được — Super Admin và Admin hệ thống.
+
+   Trạng thái ghi vào máy đang dùng, không đi theo tài khoản: đây là thói
+   quen đọc của một người trên một máy, không phải quyền của một vai. */
+G.MO_HET = false;
+
+G.moHetDuoc = function(){ return !!(G.can && G.can('qt_trang')); };
+
+G.moHetBat = function(){ return !!(G.MO_HET && G.moHetDuoc()); };
+
+/* Danh sách: trả đủ khi đang mở hết, ngược lại cắt như cũ. */
+G.dsHet = function(ds, n){
+  var a = ds || [];
+  return G.moHetBat() ? a : a.slice(0, n);
+};
+
+/* Đoạn chữ: trả đủ khi đang mở hết; ngược lại cắt và tự thêm dấu ba
+   chấm — nên chỗ gọi KHÔNG nối thêm '…' nữa, nếu không bản đầy đủ cũng
+   bị treo một dấu ba chấm vô nghĩa ở cuối. */
+G.chuHet = function(s, n){
+  var t = String(s == null ? '' : s);
+  if(G.moHetBat() || t.length <= n) return t;
+  return t.slice(0, n) + '…';
+};
+
+G.moHetDoi = function(){
+  if(!G.moHetDuoc()) return;
+  G.MO_HET = !G.MO_HET;
+  try { localStorage.setItem('gita_mo_het', G.MO_HET ? '1' : '0'); } catch(e){}
+  if(G.U && G.U.toast)
+    G.U.toast(G.MO_HET
+      ? 'Đã mở hết — mọi danh sách và mọi đoạn chữ hiện đủ, không cắt bớt.'
+      : 'Đã tắt mở hết — giao diện trở lại bản gọn.', 'ok');
+  if(G.render) G.render();
+};
+
+try { G.MO_HET = localStorage.getItem('gita_mo_het') === '1'; } catch(e){}
+
 G.TAM_NHIN = [
   {vai:['R01','R02'], pt:100,
    ghi:'Toàn bộ, không khoá gì. Super Admin và Admin hệ thống thấy mọi thứ.'},
@@ -1696,7 +1746,8 @@ G.NAV = [
     {v:'duyet-tai-lieu',t:'Kiểm duyệt tài liệu',        h:'Xem · chấm chuẩn hoá · duyệt hoặc trả lại',ic:'shield', star:1, perm:'qt_trang', capMo:'quantri'},
     {v:'theo-doi-tai-nguyen',t:'Theo dõi tài nguyên',      h:'Cảnh báo khi một tài khoản chạm quá 20% kho', ic:'chart', perm:'qt_tai_nguyen', capMo:'chung', star:1},
     {v:'soat-day-du',t:'Soát đủ ruột — tự kiểm 100%', h:'5 phép soát · đếm lại từ dữ liệu đang nạp', ic:'shield', star:1, perm:'qt_trang', capMo:'quantri'},
-    {v:'tuyen',      t:'Bốn tuyến chuyên môn',       h:'Engwin · Math · SAT · HSA · sáu mốc trước khi hợp nhất', ic:'orbit', star:1, perm:'qt_trang', capMo:'quantri'},
+    {v:'tuyen',      t:'Bốn tuyến chuyên môn',       h:'Engwin · Math · SAT · HSA · bảy mốc trước khi hợp nhất', ic:'orbit', star:1, perm:'qt_trang', capMo:'quantri'},
+    {v:'quy-trinh-toan-he',t:'Quy trình toàn Web App', h:'8 luồng · từng bước một màn · quyền của cấp quản trị', ic:'map', star:1, perm:'qt_trang', capMo:'quantri'},
     {v:'nhat-ky-ht',  t:'Nhật ký hệ thống',            h:'Mọi thao tác đều để lại dấu vết',    ic:'book', perm:'qt_trang', capMo:'quantri'}
    ]}
 ];
@@ -2035,7 +2086,8 @@ G.ITEM_EN = {
   'tham-gia':['The way in — six steps','Intro → sign up → assessment → profile → direction → 7-day challenge'],
   'hoc-phi':['Tuition across five tiers','18 money scripts · 7 rules · collection and refund'],
   'soat-day-du':['Completeness self-audit','5 checks · counted live from loaded data'],
-  'tuyen':['Four subject tracks','Engwin · Math · SAT · HSA · six gates before the merge'],
+  'tuyen':['Four subject tracks','Engwin · Math · SAT · HSA · seven gates before the merge'],
+  'quy-trinh-toan-he':['Whole-app process map','8 flows · one screen per step · what admin alone can do'],
   /* Ba mươi tư mục dưới đây trước nay chỉ có tiếng Việt: bản tiếng Anh
      rơi vào ô trống nên giao diện EN hiện mã màn hình thay cho tên. */
   'gioi-thieu':['What GITA 365 is','Mission · vision · goals · values · five tiers · culture · how we stay with you'],
@@ -4143,7 +4195,25 @@ var U = G.U;
 
 /* Ai được nạp giấy phép: người của Học viện từ cấp quản lý.
    Khách hàng không nạp — họ nhận khoá qua máy chủ theo tầng đã mua. */
-G.napDuocGiayPhep = function(){ return G.can('pro_report') || G.can('qt_trang'); };
+/* Nạp được giấy phép hay không phụ thuộc HAI điều, không phải một.
+
+   Điều thứ nhất là vai — chỉ cấp báo cáo trở lên.
+
+   Điều thứ hai từng bị bỏ sót và tạo ra một nút chết: bản GIỚI THIỆU một
+   tệp không mang theo kho .enc nào. Nó nhúng sẵn gói mẫu và thay hẳn hàm
+   nạp kho, nên nạp giấy phép vào đấy thì có khoá mà không có gì để mở —
+   bấm nút, chọn tệp, và màn hình không đổi gì. Người dùng không biết
+   mình vừa làm sai ở đâu, và bản thân giấy phép thì đã bị mang ra khỏi
+   nơi an toàn.
+
+   Dấu nhận biết: G.MAU_NHUNG chỉ tồn tại ở bản một tệp (xem bước 5 của
+   tools/dong-goi.py). Bản web nhiều tệp và bản cài đều không có nó. */
+G.laBanMotTep = function(){ return typeof G.MAU_NHUNG !== 'undefined'; };
+
+G.napDuocGiayPhep = function(){
+  if(G.laBanMotTep()) return false;
+  return G.can('pro_report') || G.can('qt_trang');
+};
 
 G.kiemGiayPhep = function(gp){
   if(!gp || typeof gp !== 'object') return 'Tệp không đọc được.';
@@ -4498,15 +4568,33 @@ G.canCapPhep = function (goi) {
      thích. Nên nút mở đứng trước, giải thích đứng sau — và nút phải hợp với
      đúng vai đang đăng nhập, không đưa ba lựa chọn để họ tự đoán. */
   var laChu = G.can && G.can('qt_trang');          /* Super Admin · Admin hệ thống */
-  /* Nạp tệp giấy phép chạy được cả trên web lẫn bản cài — chỉ cần vai được
-     phép. Trước đây tôi gán nhầm là chỉ bản cài mới có. */
+  /* Nạp tệp giấy phép chạy được trên bản web nhiều tệp và bản cài — chỉ
+     cần vai được phép. KHÔNG chạy trên bản giới thiệu một tệp: bản ấy
+     không mang theo kho .enc nào, nên có khoá cũng không có gì để mở. */
   var napDuoc = !!(G.napDuocGiayPhep && G.napDuocGiayPhep());
+  var motTep  = !!(G.laBanMotTep && G.laBanMotTep());
 
   var o = U.ph({ eyebrow: 'PHẦN NÀY CHƯA MỞ', ic: 'lock',
     t: mau ? 'Bấm một nút là mở' : 'Chưa tới lượt màn hình này',
     lead: mau
       ? 'Ứng dụng đang chạy bản mẫu nên kho chuyên môn chưa mở. Chọn đúng một việc bên dưới.'
       : 'Không phải lỗi, và cũng không phải anh chị làm sai. Dưới đây là đúng ba điều: khoá phần nào, vì sao, và mở bằng cách nào.' });
+
+  /* Bản một tệp: nói thẳng vì sao nạp giấy phép không giúp được gì ở đây.
+     Trước đây màn này vẫn mời nạp giấy phép trên bản một tệp — người dùng
+     bấm, chọn tệp, và không có gì đổi. Nút chết còn tệ hơn không có nút:
+     nó làm người ta tưởng mình thao tác sai, và làm giấy phép bị mang ra
+     khỏi nơi an toàn mà chẳng để làm gì. */
+  if(mau && motTep)
+    o += '<div class="card mb" style="border-color:rgba(251,146,60,.45);background:rgba(251,146,60,.07)">'+
+      '<div class="row mb" style="gap:9px"><span style="color:var(--alert)">'+U.ic('bell','w-4 h-4')+'</span>'+
+      '<b style="color:var(--alert)">ĐÂY LÀ BẢN GIỚI THIỆU MỘT TỆP — KHÔNG KÈM KHO</b></div>'+
+      '<p class="sm" style="line-height:1.75">Bản này gói cả ứng dụng vào một tệp HTML để gửi đi và mở '+
+      'được ở mọi nơi. Nó <b>không mang theo kho tri thức đã mã hoá</b>, nên nạp giấy phép vào đây '+
+      'cũng không mở thêm được gì — có khoá mà không có hộp để mở.</p>'+
+      '<p class="sm mt" style="line-height:1.75">Muốn xem đủ kho thì dùng một trong hai đường: '+
+      '<b>bản cài trên máy tính</b> (Trợ giúp → Nạp giấy phép), hoặc <b>bản web nhiều tệp</b> đã nối '+
+      'máy chủ cấp phép. Cả hai đều đi kèm bảy tệp <span class="mono">kho/*.enc</span>.</p></div>';
 
   /* ── Hàng nút, đặt NGAY ĐẦU màn ── */
   if(mau){
@@ -5619,7 +5707,7 @@ G.VIEWS['phac-do'] = function(){
         return '<button class="card pad-sm lift" data-pd="'+h(p.ma)+'" data-s="'+h((p.ten+' '+k).toLowerCase())+'" style="text-align:left">'+
           '<div class="row" style="gap:7px;margin-bottom:5px"><span class="mono tiny" style="color:var(--ink-4)">'+h(p.ma)+'</span></div>'+
           '<b class="sm" style="display:block;line-height:1.4">'+h(p.ten)+'</b>'+
-          (p.nguyenNhan?'<p class="tiny muted mt" style="line-height:1.5">'+h(String(p.nguyenNhan).slice(0,88))+'…</p>':'')+
+          (p.nguyenNhan?'<p class="tiny muted mt" style="line-height:1.5">'+h(G.chuHet(p.nguyenNhan,88))+'</p>':'')+
           '</button>';
       }).join('') + '</div></div>';
   }).join('') + '</div>';
@@ -5656,7 +5744,7 @@ G.VIEWS['kich-ban'] = function(){
     '<button class="chip" data-kbf="HS">Học viên</button>'+
     '<button class="chip" data-kbf="PH">Phụ huynh</button></div>';
   o += G.searchBox('Tìm theo tên buổi, nhóm, mục tiêu…','kb');
-  o += '<div class="grid g-auto-lg mt" id="kbList">' + G.KICHBAN.slice(0,60).map(G.kbCard).join('') + '</div>'+
+  o += '<div class="grid g-auto-lg mt" id="kbList">' + G.dsHet(G.KICHBAN,60).map(G.kbCard).join('') + '</div>'+
     '<div class="center mt2"><button class="btn" data-act="kb-more">Hiện thêm 60 kịch bản</button>'+
     '<p class="tiny muted mt">Đang hiện <b id="kbCount">60</b> / '+G.KICHBAN.length.toLocaleString('vi-VN')+'</p></div>';
   return o;
@@ -5712,7 +5800,7 @@ G.VIEWS['mo-thuc'] = function(){
       '<div class="row" style="gap:7px;margin-bottom:7px"><span class="pill" style="background:var(--gita-mo-2);color:var(--gold-ink)">'+h(m.id)+'</span>'+
       (m.tiers?U.chip((m.tiers||[]).join(' · ')):'')+'</div>'+
       '<b class="sm" style="display:block;line-height:1.4;margin-bottom:6px">'+h(m.title)+'</b>'+
-      '<p class="tiny muted" style="line-height:1.55">'+h(String(m.summary||'').slice(0,120))+'…</p></button>';
+      '<p class="tiny muted" style="line-height:1.55">'+h(G.chuHet(m.summary||'',120))+'</p></button>';
   }).join('') + '</div>';
   return o;
 };
@@ -5741,7 +5829,7 @@ G.VIEWS['tu-duy'] = function(){
       '<div class="row wrap" style="gap:6px;margin-bottom:8px">'+U.chip(b.id)+
       U.chip('Miền '+g+' · '+gm.short, gm.c)+((b.tiers||[]).length?U.chip((b.tiers||[]).join(' ')):'')+'</div>'+
       '<b style="font-size:14.5px;display:block;line-height:1.35;margin-bottom:8px">'+h(b.ten)+'</b>'+
-      '<p class="sm muted" style="line-height:1.6">'+h(String(b.nguyenLy||'').slice(0,160))+'…</p></button>';
+      '<p class="sm muted" style="line-height:1.6">'+h(G.chuHet(b.nguyenLy||'',160))+'</p></button>';
   }).join('') + '</div>';
   return o;
 };
@@ -5776,7 +5864,7 @@ G.VIEWS['sach'] = function(){
   o += '<div class="grid g3">' + G.SACH.map(function(s){
     return '<div class="card lift"><div class="row" style="gap:9px;margin-bottom:8px">'+
       '<span style="color:var(--gold-ink)">'+ic('book','w-5 h-5')+'</span><b class="sm">'+h(s.title)+'</b></div>'+
-      '<p class="tiny muted" style="line-height:1.6">'+h(String(s.summary||'').slice(0,190))+'</p>'+
+      '<p class="tiny muted" style="line-height:1.6">'+h(G.chuHet(s.summary||'',190))+'</p>'+
       '<div class="row mt2 tiny mono" style="gap:12px;color:var(--ink-4)">'+
       (s.sectionCount?'<span>'+s.sectionCount+' đoạn</span>':'')+
       (s.chars?'<span>'+Number(s.chars).toLocaleString('vi-VN')+' ký tự</span>':'')+'</div></div>';
@@ -5785,11 +5873,11 @@ G.VIEWS['sach'] = function(){
   o += U.sec('BẢY BẢN ĐỒ A3','Dùng in ra và treo — công cụ làm việc trực tiếp với gia đình');
   o += '<div class="grid g-auto">' + G.BANDO_A3.map(function(m){
     return '<div class="card pad-sm"><b class="sm" style="display:block;margin-bottom:6px">'+h(m.title)+'</b>'+
-      '<p class="tiny muted" style="line-height:1.55">'+h(String(m.summary||'').slice(0,130))+'…</p></div>';
+      '<p class="tiny muted" style="line-height:1.55">'+h(G.chuHet(m.summary||'',130))+'</p></div>';
   }).join('') + '</div>';
 
   o += U.sec('BỐN MƯƠI POSTER','Câu ngắn dán tường — dùng cho lớp và cho nhà');
-  o += '<div class="grid g4">' + G.POSTER.slice(0,20).map(function(p){
+  o += '<div class="grid g4">' + G.dsHet(G.POSTER,20).map(function(p){
     return '<div class="card pad-sm" style="min-height:86px"><b class="tiny" style="line-height:1.45;display:block">'+h(p.title)+'</b></div>';
   }).join('') + '</div>'+
   '<p class="tiny muted mt center">Đang hiện 20 / '+G.POSTER.length+' poster · phần còn lại mở trong kho máy chủ</p>';
@@ -6100,9 +6188,9 @@ G.VIEWS['ranh-gioi'] = function(){
 
   if(G.DAISU.quyTac && G.DAISU.quyTac.muc){
     o += U.sec('QUY TẮC AN TOÀN KHI CHIA SẺ', G.DAISU.quyTac.ten);
-    o += '<div class="card">' + G.DAISU.quyTac.muc.slice(0,6).map(function(q,i){
+    o += '<div class="card">' + G.dsHet(G.DAISU.quyTac.muc,6).map(function(q,i){
       return '<div class="rule"><span class="n">'+(i+1)+'</span><div class="tx"><b>'+h(q.quyTac)+'</b>'+
-        '<p>'+h(String(q.vi||'').slice(0,240))+'…</p></div></div>';
+        '<p>'+h(G.chuHet(q.vi||'',240))+'</p></div></div>';
     }).join('') + '</div>';
   }
   return o;
@@ -6148,7 +6236,7 @@ G.VIEWS['ve-tinh'] = function(){
       return '<div style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:'+size+'px;height:'+size+'px;'+
         'border-radius:50%;border:1px dashed var(--phu-5)"></div>';
     }).join('') +
-    G.FAMILIES.slice(0,9).map(function(f,i){
+    G.dsHet(G.FAMILIES,9).map(function(f,i){
       var inner = i<4, R = inner?135:200, n = inner?4:5, k = inner?i:i-4;
       var ang = (k/n)*Math.PI*2 - Math.PI/2;
       var t = G.tierOf(f.tier);
@@ -6181,7 +6269,7 @@ G.VIEWS['dai-su'] = function(){
       '<span style="width:32px;height:32px;border-radius:10px;display:grid;place-items:center;font-weight:900;background:'+col+'22;color:'+col+'">'+c.cap+'</span>'+
       '</div><b class="sm" style="display:block;line-height:1.35;margin-bottom:8px;color:'+col+'">'+h(c.ten)+'</b>'+
       '<div class="tiny up muted mb">ĐIỀU KIỆN</div>'+
-      '<p class="tiny muted" style="line-height:1.55">'+h(String(c.dieuKien||'').slice(0,190))+'…</p>'+
+      '<p class="tiny muted" style="line-height:1.55">'+h(G.chuHet(c.dieuKien||'',190))+'</p>'+
       (c.quyenLoi?'<button class="btn ghost sm mt" data-dscap="'+i+'" style="width:100%">Xem quyền lợi</button>':'')+
       '</div>';
   }).join('') + '</div>';
@@ -6193,14 +6281,14 @@ G.VIEWS['dai-su'] = function(){
       '<div class="row wrap" style="gap:5px;margin-bottom:7px">'+U.chip(n.ma,col)+U.chip('Cấp '+n.capDo)+
       (n.audience?U.chip(n.audience==='HS'?'Học viên':'Phụ huynh'):'')+'</div>'+
       '<b class="sm" style="display:block;line-height:1.4;margin-bottom:6px">'+h(n.ten)+'</b>'+
-      '<p class="tiny muted" style="line-height:1.55">'+h(String(n.mucTieu||'').slice(0,120))+'…</p></div>';
+      '<p class="tiny muted" style="line-height:1.55">'+h(G.chuHet(n.mucTieu||'',120))+'</p></div>';
   }).join('') + '</div>';
 
   if(D.quyTac && D.quyTac.muc){
     o += U.sec('MƯỜI BA QUY TẮC AN TOÀN', D.quyTac.ten);
     o += '<div class="card">' + D.quyTac.muc.map(function(q,i){
       return '<div class="rule"><span class="n">'+(i+1)+'</span><div class="tx"><b>'+h(q.quyTac)+'</b>'+
-        '<p>'+h(String(q.vi||'').slice(0,200))+'…</p></div></div>';
+        '<p>'+h(G.chuHet(q.vi||'',200))+'</p></div></div>';
     }).join('') + '</div>';
   }
   return o;
@@ -7986,7 +8074,7 @@ G.VIEWS['tinh-huong'] = function(){
     G.TIERS.map(function(t){return '<button class="chip" data-thf="'+t.code+'">'+t.code+'</button>';}).join('')+'</div>';
   o += G.searchBox('Tìm theo tình huống, mã Key, nhóm…','th');
 
-  o += '<div class="grid g-auto-lg mt" id="thList">' + ds.slice(0,48).map(G.thCard).join('') + '</div>'+
+  o += '<div class="grid g-auto-lg mt" id="thList">' + G.dsHet(ds,48).map(G.thCard).join('') + '</div>'+
     '<div class="center mt2"><button class="btn" data-act="th-more">Hiện thêm 48 tình huống</button>'+
     '<p class="tiny muted mt">Đang hiện <b id="thCount">48</b> / '+ds.length+'</p></div>';
   return o;
@@ -8090,7 +8178,7 @@ G.VIEWS['kho-qua'] = function(){
     (G.QUA_DANG||[]).map(function(d){return '<button class="chip" data-qf="'+d.ma+'">'+h(d.ten)+'</button>';}).join('')+'</div>';
   o += G.searchBox('Tìm tài liệu theo tên vấn đề hoặc nhóm…','qt');
 
-  o += '<div class="grid g-auto mt" id="qtList">' + ds.slice(0,60).map(G.qtCard).join('') + '</div>'+
+  o += '<div class="grid g-auto mt" id="qtList">' + G.dsHet(ds,60).map(G.qtCard).join('') + '</div>'+
     '<div class="center mt2"><button class="btn" data-act="qt-more">Hiện thêm 60 tài liệu</button>'+
     '<p class="tiny muted mt">Đang hiện <b id="qtCount">60</b> / '+ds.length+'</p></div>';
   return o;
@@ -8383,7 +8471,7 @@ function goiTaiLieu(b, yeu){
     return { q:q, d:d };
   }).filter(function(x){ return x.d > 0; });
   ds.sort(function(x,y){ return y.d - x.d; });
-  return ds.slice(0,8).map(function(x){ return x.q; });
+  return G.dsHet(ds,8).map(function(x){ return x.q; });
 }
 function goiPhacDo(yeu){
   var kho = G.PHACDO || [];
@@ -8394,7 +8482,7 @@ function goiPhacDo(yeu){
     return { p:p, d:d };
   }).filter(function(x){ return x.d > 0; });
   ds.sort(function(x,y){ return y.d - x.d; });
-  return ds.slice(0,5).map(function(x){ return x.p; });
+  return G.dsHet(ds,5).map(function(x){ return x.p; });
 }
 
 function tierColor(t){
@@ -10090,7 +10178,7 @@ G.VIEWS['pham-vi'] = function(){
         return ['<b>'+h(G.PERM_TEN[perm]||perm)+'</b>',
           '<span class="sm">'+h(ten)+'</span>',
           '<b>'+ds.length+'</b>',
-          '<span class="sm muted">'+h(ds.slice(0,4).map(function(i){return G.iname(i);}).join(' · ') +
+          '<span class="sm muted">'+h(G.dsHet(ds,4).map(function(i){return G.iname(i);}).join(' · ') +
             (ds.length>4 ? ' …' : ''))+'</span>'];
       }));
     o += '<p class="tiny muted mt">Đây không phải lỗi. Mỗi vai chỉ mở phần thuộc việc của vai đó — '+
@@ -10535,7 +10623,7 @@ G.VIEWS['tai-lieu-goc'] = function(){
 
   if(t.doan && t.doan.length){
     o += U.sec('NỘI DUNG', t.doan.length + ' đoạn — giữ nguyên văn');
-    o += '<div class="tlg-doan">'+ t.doan.slice(0, 60).map(function(d){
+    o += '<div class="tlg-doan">'+ G.dsHet(t.doan,60).map(function(d){
       return '<p>'+h(d)+'</p>'; }).join('') +
       (t.doan.length > 60 ? '<p class="tiny muted">… còn '+(t.doan.length-60)+' đoạn, tra bằng Trợ lý GITA.</p>' : '')+
       '</div>';
@@ -13855,7 +13943,7 @@ function manKetQua(maBai){
         return '<div class="mt2"><b class="sm" style="color:'+T.c+'">'+h(T.ten)+'</b>'+
           (mo.length
             ? '<ul class="tiny mt" style="line-height:1.7;padding-left:18px;margin:0">'+
-              mo.slice(0,3).map(function(x){ return '<li>'+h(x.ten)+'</li>'; }).join('')+'</ul>'
+              G.dsHet(mo,3).map(function(x){ return '<li>'+h(x.ten)+'</li>'; }).join('')+'</ul>'
             : '<p class="tiny mt muted">Bài học cho trục này đang được biên soạn.</p>')+
         '</div>';
       }).join('')+
@@ -14865,7 +14953,7 @@ noi('chan-dung-kh', function(){
       '<div class="row wrap mb" style="gap:7px">'+U.chip(x.ma,c)+(g.tang?U.chip(g.tang,'#185AB4'):'')+'</div>'+
       '<b class="sm" style="display:block;color:'+c+';margin-bottom:6px">'+h(g.ten||x.ma)+'</b>'+
       '<p class="tiny muted" style="line-height:1.55">'+h(x.nguoi)+'</p>'+
-      '<div class="row wrap mt2" style="gap:5px">'+x.vanDe.slice(0,3).map(function(m){
+      '<div class="row wrap mt2" style="gap:5px">'+G.dsHet(x.vanDe,3).map(function(m){
         return '<span class="tiny mono muted">'+h(m)+'</span>'; }).join('')+'</div></button>';
   }).join('') + '</div>';
 
@@ -15296,7 +15384,7 @@ G.soatChatLuong = function(){
   var thieuEN = man.filter(function(v){ return !en[v]; });
   return {
     tongKichBan: K.length,
-    cut: cut.length, viDuCut: cut.slice(0,3).map(function(k){ return k.ma; }),
+    cut: cut.length, viDuCut: G.dsHet(cut,3).map(function(k){ return k.ma; }),
     moLap: lap('mo'), chotLap: lap('chot'),
     coTam: coTam, tongMuc: man.length, thieuEN: thieuEN
   };
@@ -15882,6 +15970,192 @@ document.addEventListener('click', function(e){
 
 </script>
 <script>
+/* ── src/quy-trinh-toan-he.js ── */
+/* ═══════════════════════════════════════════════════════════════
+   GITA 365 · v8.1 — MÀN BẢNG QUY TRÌNH TOÀN WEB APP
+
+   Trả lời câu chủ hệ thống hỏi: nhìn từ A đến Z thì Web App này vận
+   hành thế nào, và trong phạm vi quyền của mình thì mình cầm những gì.
+
+   Ba phần:
+     A · Tám luồng vận hành — chuỗi bước có thật, mỗi bước một màn
+     B · Toàn bộ màn hình — ĐẾM TỪ G.NAV, không khai tay
+     C · Quyền chỉ cấp quản trị có
+
+   Phần B tự đếm có chủ ý. Một bảng quy trình khai tay sẽ lệch khỏi ứng
+   dụng ngay lần thêm màn sau, và bảng lệch còn tệ hơn không có bảng —
+   người đọc tin nó rồi ra quyết định sai.
+
+   Mọi tên màn trong luồng cũng được đối chiếu với G.NAV lúc dựng: khai
+   một màn không có thật thì hiện đỏ ngay tại dòng ấy.
+   ═══════════════════════════════════════════════════════════════ */
+'use strict';
+var G = window.G || {}; window.G = G;
+
+(function(){
+var U = G.U, h = U.h, ic = U.ic;
+G.VIEWS = G.VIEWS || {};
+
+/* Bản đồ tên màn → mục điều hướng, dựng lại mỗi lần vẽ */
+function banDoMan(){
+  var m = {};
+  (G.NAV || []).forEach(function(g){
+    (g.items || []).forEach(function(i){ m[i.v] = { it:i, nhom:g }; });
+  });
+  return m;
+}
+
+/* Vai thấp nhất mở được một màn — đọc từ bảng quyền thật */
+function vaiThapNhat(perm){
+  if(!perm) return 'mọi vai';
+  var ds = (G.ROLES || []).filter(function(v){ return G.vaiCo && G.vaiCo(v.id, perm); });
+  if(!ds.length) return '—';
+  var thap = ds[0];
+  ds.forEach(function(v){ if(v.lv > thap.lv) thap = v; });
+  return thap.short + ' (LV' + thap.lv + ')';
+}
+
+G.qtSoat = function(){
+  var bd = banDoMan(), hong = [], man = 0;
+  (G.QT_LUONG || []).forEach(function(l){
+    (l.buoc || []).forEach(function(b, i){
+      man++;
+      if(!bd[b.man]) hong.push(l.ma + '.' + (i + 1) + ' → ' + b.man);
+    });
+  });
+  return { hong:hong, man:man, luong:(G.QT_LUONG || []).length };
+};
+
+G.VIEWS['quy-trinh-toan-he'] = function(){
+  if(!G.can('qt_trang')) return U.lockCard(
+    'Bảng quy trình toàn hệ cho thấy mọi luồng vận hành và mọi quyền của cấp quản trị. '+
+    'Màn này chỉ mở cho Super Admin và Admin hệ thống.');
+
+  var L = G.QT_LUONG || [], bd = banDoMan(), soat = G.qtSoat();
+  var NAV = G.NAV || [], TH = G.TANG_HIENTHI || [];
+  var tongMan = 0; NAV.forEach(function(g){ tongMan += (g.items || []).length; });
+  var soQuyen = Object.keys(G.PERM || {}).length;
+  var trongLuong = {};
+  L.forEach(function(l){ (l.buoc || []).forEach(function(b){
+    (trongLuong[b.man] = trongLuong[b.man] || []).push(l.ma); }); });
+  var daPhu = Object.keys(trongLuong).filter(function(v){ return bd[v]; }).length;
+
+  var o = U.ph({eyebrow:'QUẢN TRỊ TRANG', ic:'orbit', grad:1,
+    t:'Bảng quy trình toàn Web App',
+    lead:'Tám luồng vận hành, từng bước một màn, mỗi bước nói rõ ai làm · xong khi nào · '+
+         'không xong thì làm gì. Số màn và số quyền ở đây được ĐẾM từ chính ứng dụng đang chạy, '+
+         'không khai tay — bảng quy trình lệch còn tệ hơn không có bảng.'});
+
+  o += '<div class="grid g4 mt2">'+
+    U.stat({k:'LUỒNG VẬN HÀNH', v:soat.luong, d:'chuỗi bước có thật trong ứng dụng', c:'#2A72C6'})+
+    U.stat({k:'TỔNG BƯỚC', v:soat.man, d:'mỗi bước gắn đúng một màn', c:'#5140B4'})+
+    U.stat({k:'MÀN HÌNH', v:tongMan, d:daPhu + ' màn nằm trong một luồng', c:'#0B7350'})+
+    U.stat({k:'QUYỀN', v:soQuyen, d:'Super Admin có đủ, không thiếu quyền nào',
+            c: soat.hong.length ? '#BE0E16' : '#0B7350'})+
+  '</div>';
+
+  if(soat.hong.length)
+    o += '<div class="card mt2" style="border-color:var(--gita-do)">'+
+      '<div class="tiny up mb" style="color:var(--gita-do-ink)">BƯỚC TRỎ TỚI MÀN KHÔNG CÓ THẬT</div>'+
+      '<p class="sm" style="line-height:1.7">'+h(soat.hong.join(' · '))+'</p>'+
+      '<p class="sm muted mt">Ứng dụng đã đổi mà bảng luồng chưa đổi theo. Sửa ở '+
+      '<span class="mono">kho-goc/data.quy-trinh-toan-he.js</span>.</p></div>';
+  else
+    o += '<div class="card mt2" style="border-color:var(--ok)">'+
+      '<div class="row" style="gap:9px"><span style="color:var(--ok)">'+ic('check','w-4 h-4')+'</span>'+
+      '<p class="sm" style="flex:1;line-height:1.7">Cả '+soat.man+' bước đều trỏ tới màn có thật. '+
+      'Bảng luồng đang khớp với ứng dụng.</p></div></div>';
+
+  /* ══ A · TÁM LUỒNG ══ */
+  o += U.sec('TÁM LUỒNG VẬN HÀNH',
+    'Cột "không xong thì làm gì" quan trọng ngang cột "xong khi" — quy trình chỉ mô tả đường thuận là quy trình chưa dùng được');
+
+  L.forEach(function(l){
+    o += '<div class="card mt2" style="border-left:3px solid '+l.c+'">'+
+      '<div class="row" style="gap:11px;align-items:baseline;flex-wrap:wrap">'+
+        '<span style="color:'+l.c+'">'+ic(l.ic,'w-4 h-4')+'</span>'+
+        '<b class="mono" style="color:'+l.c+'">'+h(l.ma)+'</b>'+
+        '<b style="flex:1;min-width:200px;font-size:16px">'+h(l.ten)+'</b>'+
+        '<span class="chip">'+h(l.buoc.length)+' bước</span></div>'+
+      '<p class="sm mt" style="line-height:1.75">'+h(l.y)+'</p>'+
+      '<p class="tiny muted mt"><b>Ai chạy luồng này:</b> '+h(l.ai)+'</p>'+
+      '<div class="mt2">'+
+      U.tbl(['#','Ai','Mở màn','Làm gì','Xong khi','Không xong thì'],
+        l.buoc.map(function(b, i){
+          var co = bd[b.man];
+          return ['<b class="mono" style="color:'+l.c+'">'+(i+1)+'</b>',
+                  '<span class="sm">'+h(b.ai)+'</span>',
+                  co ? '<a href="#" data-v="'+h(b.man)+'"><b class="sm">'+h(co.it.t)+'</b></a>'+
+                       '<div class="tiny mono muted">'+h(b.man)+'</div>'
+                     : '<b class="sm" style="color:var(--gita-do-ink)">'+h(b.man)+' — KHÔNG CÓ MÀN NÀY</b>',
+                  '<span class="sm">'+h(b.lam)+'</span>',
+                  '<span class="sm" style="color:var(--ok)">'+h(b.xong)+'</span>',
+                  '<span class="sm" style="color:var(--gita-do-ink)">'+h(b.neu)+'</span>'];
+        }))+'</div></div>';
+  });
+
+  /* ══ B · TOÀN BỘ MÀN, ĐẾM TỪ ỨNG DỤNG ══ */
+  o += U.sec('TOÀN BỘ MÀN HÌNH — ĐẾM TỪ ỨNG DỤNG ĐANG CHẠY',
+    tongMan + ' màn trong ' + NAV.length + ' nhóm. Cột "vai thấp nhất" đọc từ bảng quyền thật, không chép tay.');
+
+  NAV.forEach(function(g){
+    o += '<div class="card mt2">'+
+      '<div class="row" style="gap:10px;align-items:baseline;flex-wrap:wrap">'+
+        '<b style="font-size:15px">'+h(g.t || g.id)+'</b>'+
+        '<span class="chip">'+((g.items || []).length)+' màn</span></div>'+
+      '<div class="mt">'+
+      U.tbl(['Màn','Làm gì','Quyền','Vai thấp nhất mở được','Trong luồng'],
+        (g.items || []).map(function(i){
+          var l = trongLuong[i.v];
+          return ['<a href="#" data-v="'+h(i.v)+'"><b class="sm">'+h(i.t)+'</b></a>'+
+                  '<div class="tiny mono muted">'+h(i.v)+'</div>',
+                  '<span class="sm">'+h(i.h || '')+'</span>',
+                  i.perm ? '<span class="tiny mono">'+h(i.perm)+'</span>'
+                         : '<span class="tiny muted">mở cho mọi vai</span>',
+                  '<span class="tiny">'+h(vaiThapNhat(i.perm))+'</span>',
+                  l ? '<span class="tiny mono" style="color:var(--gita)">'+h(l.join(' '))+'</span>'
+                    : '<span class="tiny muted">—</span>'];
+        }))+'</div></div>';
+  });
+
+  /* ══ C · QUYỀN RIÊNG CỦA CẤP QUẢN TRỊ ══ */
+  o += U.sec('QUYỀN CHỈ SUPER ADMIN VÀ ADMIN HỆ THỐNG CÓ',
+    'Viết ra để biết mình đang cầm gì — và biết mất tài khoản này thì mất những gì');
+  o += '<div class="card">'+ (G.QT_RIENG || []).map(function(x, i){
+    return '<div class="row'+(i ? ' mt2' : '')+'" style="gap:11px;align-items:flex-start">'+
+      '<span style="color:var(--gita);font-weight:700;flex:none">'+(i+1)+'</span>'+
+      '<div style="flex:1"><b class="sm">'+h(x.t)+'</b>'+
+      '<p class="sm muted mt" style="line-height:1.7">'+h(x.y)+'</p></div></div>';
+  }).join('') +'</div>';
+
+  /* ══ TẦNG HIỂN THỊ ══ */
+  o += U.sec('CHÍN TẦNG HIỂN THỊ','Mỗi màn thuộc đúng một tầng — đây là cách phạm vi được chia');
+  o += U.tbl(['Tầng','Ai thấy','Điều kiện quyền','Số màn'],
+    TH.map(function(t){
+      var n = 0;
+      NAV.forEach(function(g){ (g.items || []).forEach(function(i){ if(i.capMo === t.id) n++; }); });
+      return ['<b class="sm mono">'+h(t.id)+'</b><div class="tiny muted">'+h(t.t)+'</div>',
+              '<span class="sm">'+h(t.mo)+'</span>',
+              t.perm ? '<span class="tiny mono">'+h(t.perm)+'</span>'
+                     : '<span class="tiny muted">không điều kiện</span>',
+              '<b class="mono">'+n+'</b>'];
+    }));
+
+  /* ══ LUẬT ══ */
+  o += U.sec('BỐN LUẬT KHI ĐỌC BẢNG NÀY','');
+  o += '<div class="card">'+ (G.QT_LUAT || []).map(function(x, i){
+    return '<div style="'+(i ? 'border-top:1px solid var(--line);padding-top:13px;margin-top:13px' : '')+'">'+
+      '<b class="sm">'+h(x.t)+'</b>'+
+      '<p class="sm muted mt" style="line-height:1.7">'+h(x.y)+'</p></div>';
+  }).join('') +'</div>';
+
+  return o;
+};
+
+})();
+
+</script>
+<script>
 /* ── src/luat-lam-viec.js ── */
 /* ═══════════════════════════════════════════════════════════════
    GITA 365 · v8.7 — SOI VI PHẠM LUẬT LÀM VIỆC
@@ -16024,7 +16298,7 @@ G.VIEWS['luat-lam-viec'] = function(){
         'email, tài khoản Zalo hoặc lời rủ ra ngoài hệ thống, lượt ấy sẽ hiện ở đây kèm trích đoạn.',
         {t:'Đọc lại năm điều cấm', v:'luat-lam-viec'});
     } else {
-      o += U.tbl(['Lúc','Ai','Thấy gì','Trích'], ds.slice(0,25).map(function(x){
+      o += U.tbl(['Lúc','Ai','Thấy gì','Trích'], G.dsHet(ds,25).map(function(x){
         return ['<span class="tiny">'+h(new Date(x.luc).toLocaleString('vi-VN'))+'</span>',
           '<span class="mono sm">'+h(x.u)+'</span><div class="tiny muted">'+h(x.vai)+'</div>',
           '<span class="tiny" style="color:var(--gita-do-ink)">'+h(x.thay.join(' · '))+'</span>',
@@ -16479,7 +16753,7 @@ G.VIEWS['theo-doi-tai-nguyen'] = function(){
   var cb = G.canhBaoTaiNguyen();
   if(cb.length){
     o += U.sec('NHẬT KÝ CẢNH BÁO', cb.length + ' lượt');
-    o += U.tbl(['Lúc','Tài khoản','Mức chạm',''], cb.slice(0, 30).map(function(c){
+    o += U.tbl(['Lúc','Tài khoản','Mức chạm',''], G.dsHet(cb,30).map(function(c){
       return [
         '<span class="tiny">'+h(new Date(c.luc).toLocaleString('vi-VN'))+'</span>',
         '<span class="mono sm">'+h(c.u)+'</span><div class="tiny muted">'+h(c.vai||'')+'</div>',
@@ -17218,7 +17492,7 @@ G.tuChoiThem = function(id, ly){
   var x = G.XIN_THEM.filter(function(y){ return y.id === id; })[0];
   if(!x) return {ok:false, ly:'Không tìm thấy lời xin này.'};
   x.trangThai = 'hoanLai';
-  x.loiNhan   = String(ly || '').slice(0, 400);
+  x.loiNhan   = G.chuHet(ly || '',400);
   if(G.soiLuat) G.soiLuat(x.loiNhan, 'Lời nhắn hoãn lời xin ' + x.id);
   x.nguoiGui  = (G.S.acc && G.S.acc.ten) || '';
   x.lucGui    = new Date().toISOString();
@@ -19571,6 +19845,17 @@ function topBar(){
     '<button id="search" data-act="cmd">'+ic('search')+'<span>'+h(G.L('search'))+'</span><kbd>Ctrl K</kbd></button>'+
     '<span class="grow"></span>'+
     '<span class="chip deskonly" style="color:'+r.c+';border-color:'+r.c+'55">'+ic('shield','w-3 h-3')+h(r.short)+' · LV'+r.lv+'</span>'+
+    /* Công tắc MỞ HẾT — chỉ cấp quản trị thấy. Đặt ngay cạnh chip vai vì
+       nó đổi cách MỌI màn hình hiện ra; giấu nó vào một màn cài đặt thì
+       người bật xong sang màn khác sẽ quên là mình đang bật. */
+    (G.moHetDuoc && G.moHetDuoc()
+      ? '<button class="tbtn deskonly" data-act="mo-het" aria-label="Mở hết — không cắt bớt" '+
+        'title="'+(G.MO_HET ? 'Đang MỞ HẾT: mọi danh sách và đoạn chữ hiện đủ. Bấm để về bản gọn.'
+                            : 'Mở hết: bỏ cắt bớt trên mọi màn, để rà từ A đến Z.')+'" '+
+        'style="'+(G.MO_HET
+          ? 'color:var(--ok);border-color:var(--ok);background:rgba(16,185,129,.12)'
+          : 'color:var(--ink-4)')+'">'+ic('orbit')+'</button>'
+      : '')+
     '<button class="tbtn" data-v="tro-ly" aria-label="Trợ lý GITA" title="Trợ lý GITA" '+
       'style="color:var(--gita-ink);border-color:var(--gita-vien-1)">'+ic('spark')+'</button>'+
     '<button class="tbtn" data-act="doi-nen" aria-label="Đổi nền sáng tối" title="Đổi nền sáng / tối">'+
@@ -19871,7 +20156,7 @@ function cmdRender(q){
       extra.push({t:k.ten, s:'Kịch bản '+k.ma+' · '+k.tang, ic:'ritual', kb:k.ma}); });
   }
   res.innerHTML = (items.length?'<div class="gh">MÀN HÌNH</div>':'') +
-    items.slice(0,8).map(function(x,i){
+    G.dsHet(items,8).map(function(x,i){
       return '<button data-go="'+h(x.go)+'" class="'+(i===0?'sel':'')+'">'+ic(x.ic)+
         '<span class="tx"><b>'+h(x.t)+'</b><span>'+h(x.s)+'</span></span></button>';
     }).join('') +
@@ -20015,6 +20300,7 @@ function hienThem(idList, idDem, kho, veThe, buoc, locSel){
 on('[data-act]', function(el){
   var a = el.getAttribute('data-act');
   if(a==='doi-nen') return G.doiNen();
+  if(a==='mo-het')  return G.moHetDoi();
   if(a==='pq-dat-lai') return G.datLaiPhanQuyen();
   if(a==='sx-them') return G.themNhom();
   if(a==='sx-tra') return G.traBoCuc();

@@ -177,7 +177,7 @@ G.VIEWS['tinh-huong'] = function(){
     G.TIERS.map(function(t){return '<button class="chip" data-thf="'+t.code+'">'+t.code+'</button>';}).join('')+'</div>';
   o += G.searchBox('Tìm theo tình huống, mã Key, nhóm…','th');
 
-  o += '<div class="grid g-auto-lg mt" id="thList">' + ds.slice(0,48).map(G.thCard).join('') + '</div>'+
+  o += '<div class="grid g-auto-lg mt" id="thList">' + G.dsHet(ds,48).map(G.thCard).join('') + '</div>'+
     '<div class="center mt2"><button class="btn" data-act="th-more">Hiện thêm 48 tình huống</button>'+
     '<p class="tiny muted mt">Đang hiện <b id="thCount">48</b> / '+ds.length+'</p></div>';
   return o;
@@ -281,7 +281,7 @@ G.VIEWS['kho-qua'] = function(){
     (G.QUA_DANG||[]).map(function(d){return '<button class="chip" data-qf="'+d.ma+'">'+h(d.ten)+'</button>';}).join('')+'</div>';
   o += G.searchBox('Tìm tài liệu theo tên vấn đề hoặc nhóm…','qt');
 
-  o += '<div class="grid g-auto mt" id="qtList">' + ds.slice(0,60).map(G.qtCard).join('') + '</div>'+
+  o += '<div class="grid g-auto mt" id="qtList">' + G.dsHet(ds,60).map(G.qtCard).join('') + '</div>'+
     '<div class="center mt2"><button class="btn" data-act="qt-more">Hiện thêm 60 tài liệu</button>'+
     '<p class="tiny muted mt">Đang hiện <b id="qtCount">60</b> / '+ds.length+'</p></div>';
   return o;

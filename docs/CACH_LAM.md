@@ -272,6 +272,20 @@ cấp phép và khoá riêng.
 
 ---
 
+## Nhìn toàn hệ từ A đến Z
+
+**Bảng quy trình toàn Web App** (Quản trị trang) — tám luồng vận hành, 36
+bước, mỗi bước một màn kèm *xong khi nào* và *không xong thì làm gì*.
+Cộng bảng toàn bộ màn hình đếm từ chính ứng dụng, và danh sách quyền chỉ
+cấp quản trị có.
+
+**Công tắc Mở hết** — nút hình quỹ đạo trên thanh trên, chỉ hiện với
+Super Admin và Admin hệ thống. Bật là mọi danh sách và mọi đoạn chữ hiện
+đủ, không cắt bớt. Dùng khi đi rà; tắt đi khi làm việc thường cho màn
+hình gọn lại.
+
+---
+
 ## Chiều sâu năm lớp
 
 Mỗi mô thức có năm lớp C1 → C5: cùng một công cụ, năm cấp nghề **làm

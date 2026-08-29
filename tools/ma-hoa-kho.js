@@ -79,6 +79,9 @@ const NGHE = [
      buộc mình phải có, kèm rủi ro khi thiếu. Đưa ra công khai là đưa cho
      đối thủ bản đồ pháp lý và cho bên tranh chấp danh sách chỗ yếu. */
   'HD_CHUAN', 'HD_RIENG', 'HD_LUAT',
+  /* Bảng quy trình toàn hệ: nó vẽ ra cách Học viện vận hành, gồm cả
+     luồng giữ tài sản và luồng thanh tra. Đây là bản đồ nội bộ. */
+  'QT_LUONG', 'QT_RIENG', 'QT_LUAT',
   /* Phạm vi học phí: nói rõ bảng giá này chỉ của GITA365. */
   'HP_PHAM_VI','MOTHUC', 'SACH', 'BANDO_A3', 'POSTER', 'SODO', 'PHACDO',
   'DIEMCHAM', 'NGONTU', 'NGONTU_TANG', 'THAYVI', 'MAUTHOAI', 'PERSONA',

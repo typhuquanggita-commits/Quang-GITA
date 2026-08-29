@@ -241,7 +241,7 @@ G.VIEWS['pham-vi'] = function(){
         return ['<b>'+h(G.PERM_TEN[perm]||perm)+'</b>',
           '<span class="sm">'+h(ten)+'</span>',
           '<b>'+ds.length+'</b>',
-          '<span class="sm muted">'+h(ds.slice(0,4).map(function(i){return G.iname(i);}).join(' · ') +
+          '<span class="sm muted">'+h(G.dsHet(ds,4).map(function(i){return G.iname(i);}).join(' · ') +
             (ds.length>4 ? ' …' : ''))+'</span>'];
       }));
     o += '<p class="tiny muted mt">Đây không phải lỗi. Mỗi vai chỉ mở phần thuộc việc của vai đó — '+
@@ -686,7 +686,7 @@ G.VIEWS['tai-lieu-goc'] = function(){
 
   if(t.doan && t.doan.length){
     o += U.sec('NỘI DUNG', t.doan.length + ' đoạn — giữ nguyên văn');
-    o += '<div class="tlg-doan">'+ t.doan.slice(0, 60).map(function(d){
+    o += '<div class="tlg-doan">'+ G.dsHet(t.doan,60).map(function(d){
       return '<p>'+h(d)+'</p>'; }).join('') +
       (t.doan.length > 60 ? '<p class="tiny muted">… còn '+(t.doan.length-60)+' đoạn, tra bằng Trợ lý GITA.</p>' : '')+
       '</div>';
