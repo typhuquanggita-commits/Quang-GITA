@@ -6,6 +6,13 @@ import { DRILL_ANALYSIS } from '../src/data/analysis';
 import { EXAM_PAPERS, paperItems, paperStats } from '../src/data/papers';
 import { BLUEPRINTS } from '../src/data/blueprints';
 import { TOPICS } from '../src/data/topics';
+import { FORMULA_GROUPS, ALL_FORMULAS, searchFormulas, formulaStats } from '../src/data/formulas';
+import { LESSON_PLANS, TEACHING_MOVES, FEEDBACK_SCRIPTS, CLASS_RITUALS, OBSERVATION_RUBRIC } from '../src/data/academy';
+import { searchIndex, searchAll, indexStats, KIND_META } from '../src/lib/search';
+import { buildTodayPlan, buildReviewQueue, studyStreak, examCountdown, dayKey } from '../src/lib/review';
+import { buildWeeklyReport } from '../src/lib/report';
+import { emptyState } from '../src/lib/storage';
+import type { AppState } from '../src/types';
 
 let items = 0;
 let bad = 0;
@@ -116,6 +123,123 @@ for (const paper of EXAM_PAPERS) {
 console.log('đề mẫu trọn vẹn:', EXAM_PAPERS.length, '| câu hỏi:', paperItemCount, '| mệnh đề đúng/sai:', paperClaims);
 console.log('ma trận đề:', BLUEPRINTS.length, '| ma trận đã có đề mẫu:',
   new Set(EXAM_PAPERS.map((p) => p.blueprintId)).size);
+
+/* ---------- Sổ tay công thức ---------- */
+{
+  const topicIds = new Set(TOPICS.map((t) => t.id));
+  for (const g of FORMULA_GROUPS) {
+    if (!g.items.length) { console.error('NHÓM công thức rỗng', g.id); bad++; }
+    if (!g.intro.trim()) { console.error('NHÓM thiếu phần dẫn', g.id); bad++; }
+    for (const t of g.topicIds) {
+      if (!topicIds.has(t)) { console.error('CÔNG THỨC trỏ tới chuyên đề không tồn tại', g.id, t); bad++; }
+    }
+    const names = g.items.map((i) => i.name);
+    if (new Set(names).size !== names.length) { console.error('CÔNG THỨC trùng tên trong nhóm', g.id); bad++; }
+    for (const it of g.items) {
+      if (!it.expr.trim()) { console.error('CÔNG THỨC thiếu biểu thức', g.id, it.name); bad++; }
+      if (!it.use.trim()) { console.error('CÔNG THỨC thiếu phần “dùng khi nào”', g.id, it.name); bad++; }
+    }
+  }
+  if (!searchFormulas('dinh li cosin').length) { console.error('TÌM KIẾM không dấu của sổ tay hỏng'); bad++; }
+  const fs = formulaStats();
+  console.log('sổ tay công thức:', fs.items, 'công thức /', fs.groups, 'nhóm | phải thuộc:', fs.starred, '| có cảnh báo bẫy:', fs.withTrap);
+}
+
+/* ---------- Tài liệu học viện ---------- */
+{
+  for (const p of LESSON_PLANS) {
+    const sum = p.blocks.reduce((s, b) => s + b.minutes, 0);
+    if (sum > p.minutes) { console.error('GIÁO ÁN vượt thời lượng', p.id, sum, '>', p.minutes); bad++; }
+    if (sum < p.minutes * 0.9) { console.error('GIÁO ÁN hụt quá nhiều thời lượng', p.id, sum, '<', p.minutes); bad++; }
+    for (const b of p.blocks) {
+      if (!b.success.trim() || !b.pitfall.trim()) { console.error('KHỐI giáo án thiếu dấu hiệu đạt hoặc lỗi hay mắc', p.id, b.name); bad++; }
+      if (!b.teacher.length || !b.student.length) { console.error('KHỐI giáo án thiếu việc của giáo viên hoặc học sinh', p.id, b.name); bad++; }
+    }
+    if (!p.homework.length || !p.evidence.length) { console.error('GIÁO ÁN thiếu phần giao việc hoặc phần đo hiệu quả', p.id); bad++; }
+  }
+  for (const m of TEACHING_MOVES) {
+    if (!m.how.length || !m.why.trim() || !m.avoid.trim()) { console.error('NƯỚC ĐI thiếu mục', m.name); bad++; }
+  }
+  for (const f of FEEDBACK_SCRIPTS) {
+    if (!f.say.trim() || !f.then.trim() || !f.never.trim()) { console.error('KỊCH BẢN nhận xét thiếu mục', f.situation); bad++; }
+  }
+  for (const r of OBSERVATION_RUBRIC) {
+    if (r.levels.length !== 4) { console.error('BẢNG dự giờ không đủ 4 mức', r.area); bad++; }
+  }
+  const w = OBSERVATION_RUBRIC.reduce((s, r) => s + r.weight, 0);
+  if (w !== 100) { console.error('TRỌNG SỐ bảng dự giờ không cộng đủ 100', w); bad++; }
+  console.log('học viện:', LESSON_PLANS.length, 'giáo án /', LESSON_PLANS.reduce((s, p) => s + p.blocks.length, 0),
+    'khối |', TEACHING_MOVES.length, 'nước đi |', FEEDBACK_SCRIPTS.length, 'kịch bản |', CLASS_RITUALS.length, 'nghi thức');
+}
+
+/* ---------- Chỉ số tìm kiếm ---------- */
+{
+  const idx = searchIndex();
+  const ids = new Set<string>();
+  let dupIds = 0;
+  for (const d of idx) {
+    if (ids.has(d.id)) dupIds++;
+    ids.add(d.id);
+    if (!d.route.startsWith('/')) { console.error('TÌM KIẾM có đường dẫn sai', d.id, d.route); bad++; }
+    if (!KIND_META[d.kind]) { console.error('TÌM KIẾM có loại không khai báo', d.kind); bad++; }
+    if (!d.title.trim()) { console.error('TÌM KIẾM có mục thiếu tiêu đề', d.id); bad++; }
+  }
+  if (dupIds) { console.error('TÌM KIẾM trùng id:', dupIds); bad++; }
+  for (const q of ['viete', 'tiep tuyen', 'dirichlet', 'tich phan', 'truc dang phuong']) {
+    if (!searchAll(q).total) { console.error('TÌM KIẾM không ra kết quả cho', q); bad++; }
+  }
+  if (searchAll('a').total) { console.error('TÌM KIẾM nhận truy vấn quá ngắn'); bad++; }
+  console.log('chỉ số tìm kiếm:', indexStats().total, 'mục | trùng id:', dupIds);
+}
+
+/* ---------- Nhịp học và báo cáo ---------- */
+{
+  const DAY = 86400000;
+  const day = (o: number) => new Date(Date.now() - o * DAY).toISOString();
+  const dk = (o: number) => dayKey(new Date(Date.now() - o * DAY));
+  const missions = MISSIONS.filter((m) => m.track === 'thpt').slice(0, 3);
+  const st: AppState = {
+    ...emptyState(),
+    profile: {
+      name: 'Kiểm thử', grade: '9', track: 'thpt', targetSchool: 'hanoi-chung', groupId: 'but-pha',
+      examDate: dayKey(new Date(Date.now() + 40 * DAY)), hoursPerWeek: 10, createdAt: day(30),
+    },
+    levelUnlocked: { thpt: 2, chuyen: 1, 'thpt-qg': 1 },
+    studyLog: Object.fromEntries([0, 1, 2, 5, 8].map((o) => [dk(o), 30])),
+    attempts: missions.flatMap((m, i) =>
+      [9, 3].slice(0, i + 1).map((o, k) => ({
+        id: `a${m.id}${k}`, missionId: m.id, worksheetId: m.worksheetId, variant: k,
+        correct: 9, total: 12, kpi: 75 + i * 5, seconds: 900, at: day(o),
+        level: 1, stageId: 'T1', wrongSkills: ['x'], wrongTopics: [m.topicId], passed: false,
+      })),
+    ),
+    mistakes: [0, 1, 2].map((i) => ({
+      id: `mk${i}`, at: day(2), missionId: missions[0].id, worksheetId: missions[0].worksheetId,
+      partOrder: 1, itemIndex: i, generatorId: 'g', topicId: missions[0].topicId, strand: missions[0].strand,
+      skill: 's', prompt: 'p', choices: ['a', 'b', 'c', 'd'], correct: 0, chosen: 1, steps: ['b1'], resolved: false,
+    })),
+  };
+  const streak = studyStreak(st);
+  if (streak.current !== 3) { console.error('CHUỖI ngày học tính sai:', streak.current, '≠ 3'); bad++; }
+  const q = buildReviewQueue(st, 'thpt');
+  if (!q.due.length) { console.error('HÀNG ĐỢI ôn lại rỗng dù đã có lượt làm quá hạn'); bad++; }
+  for (const c of q.due.concat(q.upcoming)) {
+    if (!c.route.startsWith('/')) { console.error('THẺ ôn lại có đường dẫn sai', c.id); bad++; }
+    if (c.minutes <= 0) { console.error('THẺ ôn lại thiếu thời lượng', c.id); bad++; }
+  }
+  const cd = examCountdown(st);
+  if (!cd || cd.daysLeft < 39 || cd.daysLeft > 41) { console.error('ĐẾM NGƯỢC kỳ thi sai:', cd?.daysLeft); bad++; }
+  const plan = buildTodayPlan(st, 'thpt');
+  if (!plan.tasks.length) { console.error('KẾ HOẠCH Hôm nay rỗng'); bad++; }
+  if (!plan.keystone) { console.error('KẾ HOẠCH Hôm nay thiếu việc chốt'); bad++; }
+  const taskIds = plan.tasks.map((t) => t.id);
+  if (new Set(taskIds).size !== taskIds.length) { console.error('KẾ HOẠCH Hôm nay có việc trùng'); bad++; }
+  const rp = buildWeeklyReport(st, 'thpt');
+  if (!rp.summary.length) { console.error('BÁO CÁO tuần thiếu nhận xét'); bad++; }
+  if (!rp.familyActions.length || !rp.limits.length) { console.error('BÁO CÁO tuần thiếu phần gia đình hoặc phần giới hạn'); bad++; }
+  console.log('nhịp học: chuỗi', streak.current, 'ngày | ôn lại đến hạn', q.due.length,
+    '| việc hôm nay', plan.tasks.length, '| báo cáo', rp.summary.length, 'nhận xét');
+}
 
 console.log('problems:', bad);
 process.exit(bad ? 1 : 0);

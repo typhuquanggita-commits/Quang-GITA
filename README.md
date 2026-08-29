@@ -107,7 +107,7 @@ Mỗi phiếu được dựng từ các **bộ sinh đề tham số hoá** với
 - **Tái lập được**: cùng mã phiếu luôn cho cùng nội dung ở mọi máy.
 - Các phương án nhiễu được xây từ **lỗi sai điển hình**, nên việc chọn sai nói lên nguyên nhân — đó là dữ liệu đầu vào cho phần chẩn đoán.
 
-Chạy `npm run smoke` để sinh toàn bộ 16.664 câu và kiểm tra tính hợp lệ (4 phương án phân biệt, có lời giải, không câu trùng trong cùng phiếu, mọi dạng bài đều có hồ sơ phân tích).
+Chạy `npm run smoke` để sinh toàn bộ 16.664 câu và kiểm tra tính hợp lệ (4 phương án phân biệt, có lời giải, không câu trùng trong cùng phiếu, mọi dạng bài đều có hồ sơ phân tích). Cùng lệnh đó còn đối chiếu 7 đề mẫu với ma trận gốc, kiểm tra tính đầy đủ của sổ tay công thức và tài liệu học viện, xác nhận chỉ số tìm kiếm không trùng mã, và chạy thử động cơ nhịp học trên một hồ sơ giả lập (chuỗi ngày học, hàng đợi ôn lại, đếm ngược kỳ thi, kế hoạch Hôm nay và báo cáo tuần).
 
 ---
 
