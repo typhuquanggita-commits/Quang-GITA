@@ -3,7 +3,7 @@
 **HỌC VIỆN GITA** · *Tư duy xuất sắc, Bản lĩnh dẫn đầu*
 
 - Số mạch kiến thức: **11**
-- Phạm vi phiếu: **P001 – P100 (cả năm)**
+- Phạm vi: **cụm C01 – C16, phiếu 1 – 100 (cả năm)**
 - Cách dùng: treo tường hoặc dán vào trang đầu vở. Trước mỗi mốc kiểm tra,
   học sinh tự đánh dấu ✔ vào mạch đã chắc, ✘ vào mạch còn yếu, rồi làm lại
   đúng những phiếu được liệt kê ở cột **Phiếu ôn lại**.
@@ -70,103 +70,103 @@ KIẾN THỨC
 
 **Nội dung cốt lõi:** Hàng và lớp · Đọc, viết, so sánh, xếp thứ tự · Dãy số tự nhiên
 
-| | Mã phiếu ôn lại |
+| Tuyến | Cụm chuyên đề cần ôn lại |
 |---|---|
-| Tuyến 1 | `P001`, `P003`, `P006`, `P009`, `P027`, `P088` |
-| Tuyến 2 | `P001`, `P066`, `P097` |
+| Tuyến 1 | `C01` Số tự nhiên: hàng, lớp và cấu tạo số · `C07` Dấu hiệu chia hết và bài toán chia hết |
+| Tuyến 2 | `C01` Cấu tạo số, chẵn lẻ và dấu hiệu chia hết · `C07` Chia có dư, số nguyên tố và chữ số tận cùng · `C14` Số chia hết, số dư và số học dạng đề thi vào lớp 6 |
 
 ### 2. Bốn phép tính và tính chất  ·  nhóm **B — Phép tính & Tính nhanh**
 
 **Nội dung cốt lõi:** Cộng, trừ số nhiều chữ số · Nhân với số có hai, ba chữ số · Chia cho số có hai, ba chữ số · Biểu thức có chứa một chữ
 
-| | Mã phiếu ôn lại |
+| Tuyến | Cụm chuyên đề cần ôn lại |
 |---|---|
-| Tuyến 1 | `P002`, `P008`, `P013`, `P017`, `P021`, `P023`, `P026`, `P029`, `P033`, `P038`, `P049`, `P067`, `P075`, `P087`, `P097` |
-| Tuyến 2 | `P002`, `P008`, `P017`, `P026`, `P037`, `P057`, `P076`, `P094` |
+| Tuyến 1 | `C02` Bốn phép tính, biểu thức chữ và tính chất phép cộng · `C06` Nhân và chia số có nhiều chữ số · `C16` Biểu thức nhiều bước, tìm x và tính nhanh tổng hợp |
+| Tuyến 2 | `C06` Kỹ thuật tính nhanh, so sánh biểu thức và tìm x |
 
 ### 3. Dấu hiệu chia hết  ·  nhóm **A — Số học & Cấu tạo số**
 
 **Nội dung cốt lõi:** Chia hết cho 2, cho 5 · Chia hết cho 9, cho 3 · Kết hợp nhiều dấu hiệu
 
-| | Mã phiếu ôn lại |
+| Tuyến | Cụm chuyên đề cần ôn lại |
 |---|---|
-| Tuyến 1 | `P031`, `P035`, `P039`, `P072`, `P079`, `P088` |
-| Tuyến 2 | `P007`, `P011`, `P016`, `P021`, `P047`, `P055`, `P072`, `P097` |
+| Tuyến 1 | `C07` Dấu hiệu chia hết và bài toán chia hết |
+| Tuyến 2 | `C01` Cấu tạo số, chẵn lẻ và dấu hiệu chia hết · `C07` Chia có dư, số nguyên tố và chữ số tận cùng · `C14` Số chia hết, số dư và số học dạng đề thi vào lớp 6 |
 
 ### 4. Trung bình cộng và tổng – hiệu  ·  nhóm **D — Toán điển hình & Giải toán có lời văn**
 
 **Nội dung cốt lõi:** Tìm số trung bình cộng · Tìm hai số khi biết tổng và hiệu · Dạng ẩn tổng, ẩn hiệu
 
-| | Mã phiếu ôn lại |
+| Tuyến | Cụm chuyên đề cần ôn lại |
 |---|---|
-| Tuyến 1 | `P005`, `P012`, `P015`, `P025`, `P036`, `P045`, `P052`, `P056`, `P059`, `P065`, `P068`, `P073`, `P077`, `P082`, `P086`, `P089`, `P096`, `P099` |
-| Tuyến 2 | `P005`, `P009`, `P014`, `P018`, `P023`, `P028`, `P033`, `P038`, `P043`, `P048`, `P054`, `P058`, `P063`, `P068`, `P073`, `P079`, `P085`, `P088`, `P096`, `P099` |
+| Tuyến 1 | `C03` Trung bình cộng, tổng – hiệu và bài toán đại lượng · `C10` Tổng – tỉ, hiệu – tỉ, tỉ lệ bản đồ và toán tuổi · `C15` Năng suất, chuyển động và tổng ôn giải toán |
+| Tuyến 2 | `C04` Tổng – hiệu, tổng – tỉ, hiệu – tỉ và đại lượng tỉ lệ · `C09` Công việc chung, tỉ lệ bản đồ và chuyển động làm quen · `C16` Toán điển hình dạng đề thi vào lớp 6 và tổng ôn |
 
 ### 5. Đại lượng và đo lường  ·  nhóm **E — Đại lượng – Đo lường – Thời gian**
 
 **Nội dung cốt lõi:** Yến, tạ, tấn · Giây, thế kỷ · Đề-xi-mét vuông, mét vuông, ki-lô-mét vuông
 
-| | Mã phiếu ôn lại |
+| Tuyến | Cụm chuyên đề cần ôn lại |
 |---|---|
-| Tuyến 1 | `P007`, `P011`, `P022`, `P043`, `P058`, `P069`, `P081`, `P094` |
-| Tuyến 2 | `P029`, `P067`, `P078`, `P095` |
+| Tuyến 1 | `C05` Đơn vị đo khối lượng, thời gian và diện tích · `C14` Đổi đơn vị tổng hợp, thời gian và toán thực tế |
+| Tuyến 2 | `C13` Đại lượng, đo lường và toán thực tế |
 
 ### 6. Hình học: góc và các đường thẳng  ·  nhóm **F — Hình học**
 
 **Nội dung cốt lõi:** Góc nhọn, góc tù, góc bẹt · Hai đường thẳng vuông góc, song song · Hình bình hành, hình thoi · Vẽ hình chữ nhật, hình vuông
 
-| | Mã phiếu ôn lại |
+| Tuyến | Cụm chuyên đề cần ôn lại |
 |---|---|
-| Tuyến 1 | `P004`, `P014`, `P019`, `P024`, `P028`, `P034`, `P041`, `P054`, `P064`, `P074`, `P083`, `P092` |
-| Tuyến 2 | `P006`, `P015`, `P024`, `P034`, `P042`, `P049`, `P056`, `P062`, `P069`, `P075`, `P082`, `P089`, `P098` |
+| Tuyến 1 | `C04` Góc, đường thẳng vuông góc – song song và hình bình hành · `C11` Hình thoi, diện tích và bài toán hình học tổng hợp |
+| Tuyến 2 | `C05` Đếm hình, diện tích hình ghép và bài toán ngược · `C12` Hình chữ nhật biến đổi, ghép cắt hình và hình học dạng đề thi |
 
 ### 7. Phân số  ·  nhóm **H — Phân số – Số thập phân – Tỉ số phần trăm – Thống kê**
 
 **Nội dung cốt lõi:** Khái niệm, đọc viết phân số · Phân số bằng nhau, rút gọn · Quy đồng mẫu số · So sánh phân số
 
-| | Mã phiếu ôn lại |
+| Tuyến | Cụm chuyên đề cần ôn lại |
 |---|---|
-| Tuyến 1 | `P042`, `P044`, `P046`, `P048` |
-| Tuyến 2 | `P036`, `P041` |
+| Tuyến 1 | `C09` Phân số: khái niệm đến bốn phép tính |
+| Tuyến 2 | `C08` Phân số nâng cao: so sánh, tính nhanh và bài toán ẩn |
 
 ### 8. Bốn phép tính với phân số  ·  nhóm **H — Phân số – Số thập phân – Tỉ số phần trăm – Thống kê**
 
 **Nội dung cốt lõi:** Cộng, trừ cùng mẫu và khác mẫu · Nhân, chia phân số · Tìm phân số của một số
 
-| | Mã phiếu ôn lại |
+| Tuyến | Cụm chuyên đề cần ôn lại |
 |---|---|
-| Tuyến 1 | `P051`, `P053`, `P055`, `P057`, `P061`, `P063`, `P085`, `P091` |
-| Tuyến 2 | `P045`, `P051`, `P061`, `P093` |
+| Tuyến 1 | `C09` Phân số: khái niệm đến bốn phép tính · `C13` Phép chia phân số, tìm phân số của một số và biểu đồ cột |
+| Tuyến 2 | `C08` Phân số nâng cao: so sánh, tính nhanh và bài toán ẩn |
 
 ### 9. Tổng – tỉ và hiệu – tỉ  ·  nhóm **D — Toán điển hình & Giải toán có lời văn**
 
 **Nội dung cốt lõi:** Vẽ sơ đồ đoạn thẳng · Tìm tổng số phần, giá trị một phần · Dạng tỉ số ẩn, hiệu ẩn
 
-| | Mã phiếu ôn lại |
+| Tuyến | Cụm chuyên đề cần ôn lại |
 |---|---|
-| Tuyến 1 | `P052`, `P056`, `P065`, `P068` |
-| Tuyến 2 | `P014`, `P018`, `P038` |
+| Tuyến 1 | `C10` Tổng – tỉ, hiệu – tỉ, tỉ lệ bản đồ và toán tuổi |
+| Tuyến 2 | `C04` Tổng – hiệu, tổng – tỉ, hiệu – tỉ và đại lượng tỉ lệ · `C09` Công việc chung, tỉ lệ bản đồ và chuyển động làm quen |
 
 ### 10. Tỉ lệ bản đồ và ứng dụng  ·  nhóm **D — Toán điển hình & Giải toán có lời văn**
 
 **Nội dung cốt lõi:** Đọc tỉ lệ bản đồ · Tính độ dài thật, độ dài trên bản đồ
 
-| | Mã phiếu ôn lại |
+| Tuyến | Cụm chuyên đề cần ôn lại |
 |---|---|
-| Tuyến 1 | `P036`, `P059` |
-| Tuyến 2 | `P028`, `P033`, `P048` |
+| Tuyến 1 | `C03` Trung bình cộng, tổng – hiệu và bài toán đại lượng · `C10` Tổng – tỉ, hiệu – tỉ, tỉ lệ bản đồ và toán tuổi |
+| Tuyến 2 | `C04` Tổng – hiệu, tổng – tỉ, hiệu – tỉ và đại lượng tỉ lệ · `C09` Công việc chung, tỉ lệ bản đồ và chuyển động làm quen |
 
 ### 11. Hình học và biểu đồ  ·  nhóm **F — Hình học**
 
 **Nội dung cốt lõi:** Diện tích hình bình hành, hình thoi · Bài toán ngược tìm cạnh, tìm chiều cao · Biểu đồ cột
 
-| | Mã phiếu ôn lại |
+| Tuyến | Cụm chuyên đề cần ôn lại |
 |---|---|
-| Tuyến 1 | `P004`, `P014`, `P019`, `P024`, `P028`, `P034`, `P041`, `P054`, `P064`, `P074`, `P083`, `P092` |
-| Tuyến 2 | `P006`, `P015`, `P024`, `P034`, `P042`, `P049`, `P056`, `P062`, `P069`, `P075`, `P082`, `P089`, `P098` |
+| Tuyến 1 | `C04` Góc, đường thẳng vuông góc – song song và hình bình hành · `C11` Hình thoi, diện tích và bài toán hình học tổng hợp |
+| Tuyến 2 | `C05` Đếm hình, diện tích hình ghép và bài toán ngược · `C12` Hình chữ nhật biến đổi, ghép cắt hình và hình học dạng đề thi |
 
-> Mã phiếu viết tắt: `P0xx` thuộc khối `GITA-T1-L4` hoặc `GITA-T2-L4`.
-> Khi một mạch không có phiếu nào khớp từ khoá trong kỳ này, bảng liệt kê toàn bộ phiếu cùng nhóm chuyên đề của kỳ để huấn luyện viên tự chọn.
+> Mỗi cụm `Cxx` gồm 6 phiếu `LT · DB · KN · NC · OT · TH` trong khối `GITA-T1-L4` hoặc `GITA-T2-L4`, kèm phiếu `HD` hướng dẫn ôn chắc.
+> Khi một mạch không có cụm nào khớp từ khoá trong kỳ này, bảng liệt kê toàn bộ cụm cùng nhóm chuyên đề của kỳ để huấn luyện viên tự chọn.
 
 ---
 
@@ -241,7 +241,7 @@ và làm lại các phiếu ở mục 2.
 | Buổi | Việc làm | Sản phẩm |
 |:--:|---|---|
 | 1 | Đọc cây kiến thức, tự chấm checklist mục 5 | Danh sách mạch còn ✘ |
-| 2 | Làm lại các phiếu ở mục 2 ứng với mạch ✘ | Sổ lỗi cập nhật |
+| 2 | Làm lại phiếu `NC` và `OT` của các cụm ở mục 2 ứng với mạch ✘ | Sổ lỗi cập nhật |
 | 3 | Học thuộc bảng công thức mục 3, kiểm tra chéo trong team | Bảng công thức không nhìn sách |
 | 4 | Làm 1 đề trong bộ đề mốc tương ứng (`07-de-thi/`) | Điểm và bảng phân tích lỗi |
 

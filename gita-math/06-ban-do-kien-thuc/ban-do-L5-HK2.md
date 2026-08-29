@@ -3,12 +3,12 @@
 **HỌC VIỆN GITA** · *Tư duy xuất sắc, Bản lĩnh dẫn đầu*
 
 - Số mạch kiến thức: **5**
-- Phạm vi phiếu: **P055 – P100**
+- Phạm vi: **cụm C09 – C16, phiếu 51 – 100**
 - Cách dùng: treo tường hoặc dán vào trang đầu vở. Trước mỗi mốc kiểm tra,
   học sinh tự đánh dấu ✔ vào mạch đã chắc, ✘ vào mạch còn yếu, rồi làm lại
   đúng những phiếu được liệt kê ở cột **Phiếu ôn lại**.
 
-**Mốc kiểm tra của kỳ này:** Giữa kỳ II (sau phiếu P078) · Cuối kỳ II (sau phiếu P100)
+**Mốc kiểm tra của kỳ này:** Giữa kỳ II (phiếu số 75, sau cụm C12) · Cuối kỳ II (phiếu số 100, sau cụm C16)
 
 ---
 
@@ -47,49 +47,49 @@ KIẾN THỨC
 
 **Nội dung cốt lõi:** Bán kính, đường kính · Chu vi hình tròn · Diện tích hình tròn
 
-| | Mã phiếu ôn lại |
+| Tuyến | Cụm chuyên đề cần ôn lại |
 |---|---|
-| Tuyến 1 | `P077` |
-| Tuyến 2 | `P059`, `P064`, `P071`, `P077`, `P088`, `P092` |
+| Tuyến 1 | `C15` Bài toán hình học tổng hợp phẳng và không gian |
+| Tuyến 2 | `C09` Thể tích, diện tích toàn phần và bài toán khối lập phương · `C15` Hình học dạng đề Chuyên và mô phỏng đề thi |
 
 ### 2. Hình hộp chữ nhật và hình lập phương  ·  nhóm **F — Hình học**
 
 **Nội dung cốt lõi:** Nhận dạng, khai triển hình · Diện tích xung quanh, diện tích toàn phần · Thể tích · Đơn vị đo thể tích
 
-| | Mã phiếu ôn lại |
+| Tuyến | Cụm chuyên đề cần ôn lại |
 |---|---|
-| Tuyến 1 | `P082`, `P089` |
-| Tuyến 2 | `P071`, `P092` |
+| Tuyến 1 | `C09` Hình hộp chữ nhật, hình lập phương: diện tích và thể tích · `C15` Bài toán hình học tổng hợp phẳng và không gian |
+| Tuyến 2 | `C09` Thể tích, diện tích toàn phần và bài toán khối lập phương · `C15` Hình học dạng đề Chuyên và mô phỏng đề thi |
 
 ### 3. Số đo thời gian  ·  nhóm **E — Đại lượng – Đo lường – Thời gian**
 
 **Nội dung cốt lõi:** Bảng đơn vị đo thời gian · Cộng, trừ, nhân, chia số đo thời gian
 
-| | Mã phiếu ôn lại |
+| Tuyến | Cụm chuyên đề cần ôn lại |
 |---|---|
-| Tuyến 1 | `P059`, `P073`, `P085`, `P096` |
-| Tuyến 2 | `P069`, `P073`, `P079`, `P097` |
+| Tuyến 1 | `C11` Nhân chia số đo thời gian và đổi đơn vị tổng hợp |
+| Tuyến 2 | `C14` Số đo thời gian, mua bán, thuế và toán thực tế |
 
 ### 4. Toán chuyển động đều  ·  nhóm **D — Toán điển hình & Giải toán có lời văn**
 
 **Nội dung cốt lõi:** Vận tốc, quãng đường, thời gian · Chuyển động cùng chiều, ngược chiều · Chuyển động trên dòng nước
 
-| | Mã phiếu ôn lại |
+| Tuyến | Cụm chuyên đề cần ôn lại |
 |---|---|
-| Tuyến 1 | `P055`, `P076`, `P087` |
-| Tuyến 2 | `P057`, `P072`, `P091` |
+| Tuyến 1 | `C10` Vận tốc, quãng đường, thời gian và chuyển động cùng – ngược chiều · `C13` Chuyển động trên dòng nước, tỉ lệ xích, công việc chung và toán tuổi · `C16` Tổng ôn giải toán và cuối cấp tiểu học |
+| Tuyến 2 | `C10` Chuyển động nâng cao: dòng nước, kim đồng hồ, trộn – pha · `C16` Mô phỏng đề thi vào lớp 6 và tổng duyệt |
 
 ### 5. Ôn tập cuối cấp tiểu học  ·  nhóm **D — Toán điển hình & Giải toán có lời văn**
 
 **Nội dung cốt lõi:** Bốn phép tính với số tự nhiên, phân số, số thập phân · Toán điển hình · Hình học phẳng và không gian · Biểu đồ và số liệu
 
-| | Mã phiếu ôn lại |
+| Tuyến | Cụm chuyên đề cần ôn lại |
 |---|---|
-| Tuyến 1 | `P081`, `P087`, `P094`, `P098`, `P099` |
-| Tuyến 2 | `P078`, `P085`, `P087`, `P091`, `P099` |
+| Tuyến 1 | `C16` Tổng ôn giải toán và cuối cấp tiểu học |
+| Tuyến 2 | `C16` Mô phỏng đề thi vào lớp 6 và tổng duyệt |
 
-> Mã phiếu viết tắt: `P0xx` thuộc khối `GITA-T1-L5` hoặc `GITA-T2-L5`.
-> Khi một mạch không có phiếu nào khớp từ khoá trong kỳ này, bảng liệt kê toàn bộ phiếu cùng nhóm chuyên đề của kỳ để huấn luyện viên tự chọn.
+> Mỗi cụm `Cxx` gồm 6 phiếu `LT · DB · KN · NC · OT · TH` trong khối `GITA-T1-L5` hoặc `GITA-T2-L5`, kèm phiếu `HD` hướng dẫn ôn chắc.
+> Khi một mạch không có cụm nào khớp từ khoá trong kỳ này, bảng liệt kê toàn bộ cụm cùng nhóm chuyên đề của kỳ để huấn luyện viên tự chọn.
 
 ---
 
@@ -147,7 +147,7 @@ và làm lại các phiếu ở mục 2.
 | Buổi | Việc làm | Sản phẩm |
 |:--:|---|---|
 | 1 | Đọc cây kiến thức, tự chấm checklist mục 5 | Danh sách mạch còn ✘ |
-| 2 | Làm lại các phiếu ở mục 2 ứng với mạch ✘ | Sổ lỗi cập nhật |
+| 2 | Làm lại phiếu `NC` và `OT` của các cụm ở mục 2 ứng với mạch ✘ | Sổ lỗi cập nhật |
 | 3 | Học thuộc bảng công thức mục 3, kiểm tra chéo trong team | Bảng công thức không nhìn sách |
 | 4 | Làm 1 đề trong bộ đề mốc tương ứng (`07-de-thi/`) | Điểm và bảng phân tích lỗi |
 

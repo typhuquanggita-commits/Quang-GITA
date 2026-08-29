@@ -1,17 +1,22 @@
 ---
-ma_phieu: GITA-T1-L4-P015
+ma: GITA-T1-L4-C03-NC
 tuyen: T1
 lop: 4
-so_thu_tu: 15
-loai: CD
+cum: 3
+cum_ten: Trung bình cộng, tổng – hiệu và bài toán đại lượng
+buoi_trong_cum: 4
+loai: NC
+loai_ten: Phiếu Luyện nâng cao
 nhom_ma: D
 nhom_ten: Toán điển hình & Giải toán có lời văn
-ten_phieu: Tìm hai số khi biết tổng và hiệu của hai số đó
+ten: Trung bình cộng, tổng – hiệu và bài toán đại lượng — Phiếu Luyện nâng cao
+trong_tam: Tìm hai số khi biết tổng và hiệu của hai số đó
+stt: 16
 hoc_ky: HK1
-tuan: 5
+tuan: 6
+moc_kiem_tra: Giữa kỳ I
 thoi_luong_phut: 90
 thang_diem: 100
-muc_5_phan: [M1, M2, M3, M4, M5]
 muc_tieu_G: >
   Sau phiếu này em giải đúng mọi bài tổng – hiệu ở dạng cho thẳng, và tự tìm ra
   tổng hoặc hiệu khi đề giấu đi một trong hai.
@@ -26,13 +31,15 @@ hanh_dong_A: >
   Soát 3 tầng trước khi nộp: đơn vị → phép tính → đề hỏi gì.
 ---
 
-# PHIẾU HỌC GITA · GITA-T1-L4-P015
+# PHIẾU HỌC GITA · GITA-T1-L4-C03-NC
 
-**HỌC VIỆN GITA** — *Tư duy xuất sắc, Bản lĩnh dẫn đầu*
-Tuyến 1 — Nền tảng đến Nâng cao · Lớp 4 · Tuần 5 · Học kỳ I
+**HỌC VIỆN PHÁT TRIỂN TÀI NĂNG TOÀN CẦU — GITA** · *Tư duy xuất sắc, Bản lĩnh dẫn đầu* · gita.edu.vn
+Tuyến 1 — Nền tảng đến Nâng cao · Lớp 4 · Tuần 6 · HK1 · Mốc Giữa kỳ I
+**Cụm chuyên đề C03 — Trung bình cộng, tổng – hiệu và bài toán đại lượng** · Buổi 4/6 · **Phiếu Luyện nâng cao**
 Nhóm chuyên đề **D — Toán điển hình & Giải toán có lời văn**
-**Chuyên đề: Tìm hai số khi biết tổng và hiệu của hai số đó**
+**Trọng tâm phiếu: Tìm hai số khi biết tổng và hiệu của hai số đó**
 Thời gian làm bài: 90 phút · Thang điểm: 100 · Điểm sáng tạo tối đa: +5
+Phiếu lời giải và phân tích chuyên sâu đi kèm: `GITA-T1-L4-C03-NC-GP`
 
 Họ và tên: ......................................... Lớp: ......... Điểm: ......../100
 

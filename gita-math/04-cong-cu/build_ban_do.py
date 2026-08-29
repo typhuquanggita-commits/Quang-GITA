@@ -18,23 +18,29 @@ from ban_do_kien_thuc import BAN_DO, TU_KHOA  # noqa: E402
 OUT = ROOT / "06-ban-do-kien-thuc"
 INDEX = ROOT / "02-chi-muc" / "index-master.json"
 KY_TEN = {"HK1": "HỌC KỲ I", "HK2": "HỌC KỲ II", "CA-NAM": "CẢ NĂM"}
-MOC = {"HK1": ["Giữa kỳ I (sau phiếu P027)", "Cuối kỳ I (sau phiếu P054)"],
-       "HK2": ["Giữa kỳ II (sau phiếu P078)", "Cuối kỳ II (sau phiếu P100)"]}
+MOC = {"HK1": ["Giữa kỳ I (phiếu số 25, sau cụm C04)", "Cuối kỳ I (phiếu số 50, sau cụm C08)"],
+       "HK2": ["Giữa kỳ II (phiếu số 75, sau cụm C12)", "Cuối kỳ II (phiếu số 100, sau cụm C16)"]}
 
 
 def phieu_cua(rows, lop, tuyen, mach, ky, ky_goc):
     """Phiếu ôn lại cho một mạch: lọc theo nhóm chuyên đề, rồi lọc tiếp theo từ
     khoá nếu mạch đó dùng chung nhóm với mạch khác. Không có phiếu khớp từ khoá
     thì trả về toàn bộ phiếu của nhóm để huấn luyện viên vẫn có chỗ tra."""
-    nhom_phieu = [r for r in rows if r["lop"] == lop and r["tuyen"] == tuyen
-                  and r["nhom_ma"] == mach["nhom"]
-                  and (ky == "CA-NAM" or r["hoc_ky"] == ky)]
+    cums, thay = {}, []
+    for r in rows:
+        if (r["lop"] == lop and r["tuyen"] == tuyen and r["cum"]
+                and r["nhom_ma"] == mach["nhom"]
+                and (ky == "CA-NAM" or r["hoc_ky"] == ky)):
+            cums.setdefault(r["cum"], r)
+    nhom_cum = [c for _k, c in sorted(cums.items())]
     tk = TU_KHOA.get((lop, ky_goc, mach["ten"]))
     if not tk:
-        return nhom_phieu
-    loc = [r for r in nhom_phieu
-           if any(t in r["ten_phieu"].lower() for t in tk)]
-    return loc or nhom_phieu
+        return nhom_cum
+    for c in nhom_cum:
+        kho = (c["cum_ten"] + " " + " ".join(c["dang_bai"])).lower()
+        if any(t in kho for t in tk):
+            thay.append(c)
+    return thay or nhom_cum
 
 
 def cay_kien_thuc(mach) -> list[str]:
@@ -59,8 +65,9 @@ def sinh(lop: int, ky: str, rows) -> str:
     L = [f"# BẢN ĐỒ TỔNG HỢP KIẾN THỨC — LỚP {lop} — {KY_TEN[ky]}", "",
          "**HỌC VIỆN GITA** · *Tư duy xuất sắc, Bản lĩnh dẫn đầu*", "",
          f"- Số mạch kiến thức: **{len(mach)}**",
-         f"- Phạm vi phiếu: " + ("**P001 – P100 (cả năm)**" if ky == "CA-NAM"
-                                 else ("**P001 – P054**" if ky == "HK1" else "**P055 – P100**")),
+         f"- Phạm vi: " + ("**cụm C01 – C16, phiếu 1 – 100 (cả năm)**" if ky == "CA-NAM"
+                            else ("**cụm C01 – C08, phiếu 1 – 50**" if ky == "HK1"
+                                  else "**cụm C09 – C16, phiếu 51 – 100**")),
          "- Cách dùng: treo tường hoặc dán vào trang đầu vở. Trước mỗi mốc kiểm tra,",
          "  học sinh tự đánh dấu ✔ vào mạch đã chắc, ✘ vào mạch còn yếu, rồi làm lại",
          "  đúng những phiếu được liệt kê ở cột **Phiếu ôn lại**.", ""]
@@ -74,13 +81,14 @@ def sinh(lop: int, ky: str, rows) -> str:
         t2 = phieu_cua(rows, lop, "T2", m, ky, kg)
         L += [f"### {i}. {m['ten']}  ·  nhóm **{m['nhom']} — {NHOM[m['nhom']]['ten']}**", "",
               "**Nội dung cốt lõi:** " + " · ".join(m["cot_loi"]), "",
-              "| | Mã phiếu ôn lại |", "|---|---|",
-              "| Tuyến 1 | " + (", ".join(f"`{r['ma_phieu'][-4:]}`" for r in t1) or "—") + " |",
-              "| Tuyến 2 | " + (", ".join(f"`{r['ma_phieu'][-4:]}`" for r in t2) or "—") + " |",
+              "| Tuyến | Cụm chuyên đề cần ôn lại |", "|---|---|",
+              "| Tuyến 1 | " + (" · ".join(f"`C{r['cum']:02d}` {r['cum_ten']}" for r in t1) or "—") + " |",
+              "| Tuyến 2 | " + (" · ".join(f"`C{r['cum']:02d}` {r['cum_ten']}" for r in t2) or "—") + " |",
               ""]
-    L += [f"> Mã phiếu viết tắt: `P0xx` thuộc khối `GITA-T1-L{lop}` hoặc `GITA-T2-L{lop}`.",
-          "> Khi một mạch không có phiếu nào khớp từ khoá trong kỳ này, bảng liệt kê "
-          "toàn bộ phiếu cùng nhóm chuyên đề của kỳ để huấn luyện viên tự chọn.", ""]
+    L += [f"> Mỗi cụm `Cxx` gồm 6 phiếu `LT · DB · KN · NC · OT · TH` trong khối "
+          f"`GITA-T1-L{lop}` hoặc `GITA-T2-L{lop}`, kèm phiếu `HD` hướng dẫn ôn chắc.",
+          "> Khi một mạch không có cụm nào khớp từ khoá trong kỳ này, bảng liệt kê "
+          "toàn bộ cụm cùng nhóm chuyên đề của kỳ để huấn luyện viên tự chọn.", ""]
 
     L += ["---", "", "## 3. CÔNG THỨC VÀ QUY TẮC PHẢI THUỘC", "",
           "| # | Mạch | Phải thuộc lòng |", "|---:|---|---|"]
@@ -110,7 +118,7 @@ def sinh(lop: int, ky: str, rows) -> str:
     L += ["---", "", "## 6. LỘ TRÌNH ÔN THEO BẢN ĐỒ (4 BUỔI)", "",
           "| Buổi | Việc làm | Sản phẩm |", "|:--:|---|---|",
           "| 1 | Đọc cây kiến thức, tự chấm checklist mục 5 | Danh sách mạch còn ✘ |",
-          "| 2 | Làm lại các phiếu ở mục 2 ứng với mạch ✘ | Sổ lỗi cập nhật |",
+          "| 2 | Làm lại phiếu `NC` và `OT` của các cụm ở mục 2 ứng với mạch ✘ | Sổ lỗi cập nhật |",
           "| 3 | Học thuộc bảng công thức mục 3, kiểm tra chéo trong team | Bảng công thức không nhìn sách |",
           "| 4 | Làm 1 đề trong bộ đề mốc tương ứng (`07-de-thi/`) | Điểm và bảng phân tích lỗi |", ""]
     return "\n".join(L) + "\n"

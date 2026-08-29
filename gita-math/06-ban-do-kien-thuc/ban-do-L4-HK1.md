@@ -3,12 +3,12 @@
 **HỌC VIỆN GITA** · *Tư duy xuất sắc, Bản lĩnh dẫn đầu*
 
 - Số mạch kiến thức: **6**
-- Phạm vi phiếu: **P001 – P054**
+- Phạm vi: **cụm C01 – C08, phiếu 1 – 50**
 - Cách dùng: treo tường hoặc dán vào trang đầu vở. Trước mỗi mốc kiểm tra,
   học sinh tự đánh dấu ✔ vào mạch đã chắc, ✘ vào mạch còn yếu, rồi làm lại
   đúng những phiếu được liệt kê ở cột **Phiếu ôn lại**.
 
-**Mốc kiểm tra của kỳ này:** Giữa kỳ I (sau phiếu P027) · Cuối kỳ I (sau phiếu P054)
+**Mốc kiểm tra của kỳ này:** Giữa kỳ I (phiếu số 25, sau cụm C04) · Cuối kỳ I (phiếu số 50, sau cụm C08)
 
 ---
 
@@ -52,58 +52,58 @@ KIẾN THỨC
 
 **Nội dung cốt lõi:** Hàng và lớp · Đọc, viết, so sánh, xếp thứ tự · Dãy số tự nhiên
 
-| | Mã phiếu ôn lại |
+| Tuyến | Cụm chuyên đề cần ôn lại |
 |---|---|
-| Tuyến 1 | `P001`, `P003`, `P006`, `P009`, `P027` |
-| Tuyến 2 | `P001` |
+| Tuyến 1 | `C01` Số tự nhiên: hàng, lớp và cấu tạo số · `C07` Dấu hiệu chia hết và bài toán chia hết |
+| Tuyến 2 | `C01` Cấu tạo số, chẵn lẻ và dấu hiệu chia hết · `C07` Chia có dư, số nguyên tố và chữ số tận cùng |
 
 ### 2. Bốn phép tính và tính chất  ·  nhóm **B — Phép tính & Tính nhanh**
 
 **Nội dung cốt lõi:** Cộng, trừ số nhiều chữ số · Nhân với số có hai, ba chữ số · Chia cho số có hai, ba chữ số · Biểu thức có chứa một chữ
 
-| | Mã phiếu ôn lại |
+| Tuyến | Cụm chuyên đề cần ôn lại |
 |---|---|
-| Tuyến 1 | `P002`, `P008`, `P013`, `P017`, `P021`, `P023`, `P026`, `P029`, `P033`, `P038`, `P049` |
-| Tuyến 2 | `P002`, `P008`, `P017`, `P026`, `P037` |
+| Tuyến 1 | `C02` Bốn phép tính, biểu thức chữ và tính chất phép cộng · `C06` Nhân và chia số có nhiều chữ số |
+| Tuyến 2 | `C06` Kỹ thuật tính nhanh, so sánh biểu thức và tìm x |
 
 ### 3. Dấu hiệu chia hết  ·  nhóm **A — Số học & Cấu tạo số**
 
 **Nội dung cốt lõi:** Chia hết cho 2, cho 5 · Chia hết cho 9, cho 3 · Kết hợp nhiều dấu hiệu
 
-| | Mã phiếu ôn lại |
+| Tuyến | Cụm chuyên đề cần ôn lại |
 |---|---|
-| Tuyến 1 | `P031`, `P035`, `P039` |
-| Tuyến 2 | `P007`, `P011`, `P016`, `P021`, `P047` |
+| Tuyến 1 | `C07` Dấu hiệu chia hết và bài toán chia hết |
+| Tuyến 2 | `C01` Cấu tạo số, chẵn lẻ và dấu hiệu chia hết · `C07` Chia có dư, số nguyên tố và chữ số tận cùng |
 
 ### 4. Trung bình cộng và tổng – hiệu  ·  nhóm **D — Toán điển hình & Giải toán có lời văn**
 
 **Nội dung cốt lõi:** Tìm số trung bình cộng · Tìm hai số khi biết tổng và hiệu · Dạng ẩn tổng, ẩn hiệu
 
-| | Mã phiếu ôn lại |
+| Tuyến | Cụm chuyên đề cần ôn lại |
 |---|---|
-| Tuyến 1 | `P005`, `P012`, `P015`, `P025`, `P036`, `P045`, `P052` |
-| Tuyến 2 | `P005`, `P009`, `P014`, `P018`, `P023`, `P028`, `P033`, `P038`, `P043`, `P048`, `P054` |
+| Tuyến 1 | `C03` Trung bình cộng, tổng – hiệu và bài toán đại lượng |
+| Tuyến 2 | `C04` Tổng – hiệu, tổng – tỉ, hiệu – tỉ và đại lượng tỉ lệ |
 
 ### 5. Đại lượng và đo lường  ·  nhóm **E — Đại lượng – Đo lường – Thời gian**
 
 **Nội dung cốt lõi:** Yến, tạ, tấn · Giây, thế kỷ · Đề-xi-mét vuông, mét vuông, ki-lô-mét vuông
 
-| | Mã phiếu ôn lại |
+| Tuyến | Cụm chuyên đề cần ôn lại |
 |---|---|
-| Tuyến 1 | `P007`, `P011`, `P022`, `P043` |
-| Tuyến 2 | `P029` |
+| Tuyến 1 | `C05` Đơn vị đo khối lượng, thời gian và diện tích |
+| Tuyến 2 | — |
 
 ### 6. Hình học: góc và các đường thẳng  ·  nhóm **F — Hình học**
 
 **Nội dung cốt lõi:** Góc nhọn, góc tù, góc bẹt · Hai đường thẳng vuông góc, song song · Hình bình hành, hình thoi · Vẽ hình chữ nhật, hình vuông
 
-| | Mã phiếu ôn lại |
+| Tuyến | Cụm chuyên đề cần ôn lại |
 |---|---|
-| Tuyến 1 | `P004`, `P014`, `P019`, `P024`, `P028`, `P034`, `P041`, `P054` |
-| Tuyến 2 | `P006`, `P015`, `P024`, `P034`, `P042`, `P049` |
+| Tuyến 1 | `C04` Góc, đường thẳng vuông góc – song song và hình bình hành |
+| Tuyến 2 | `C05` Đếm hình, diện tích hình ghép và bài toán ngược |
 
-> Mã phiếu viết tắt: `P0xx` thuộc khối `GITA-T1-L4` hoặc `GITA-T2-L4`.
-> Khi một mạch không có phiếu nào khớp từ khoá trong kỳ này, bảng liệt kê toàn bộ phiếu cùng nhóm chuyên đề của kỳ để huấn luyện viên tự chọn.
+> Mỗi cụm `Cxx` gồm 6 phiếu `LT · DB · KN · NC · OT · TH` trong khối `GITA-T1-L4` hoặc `GITA-T2-L4`, kèm phiếu `HD` hướng dẫn ôn chắc.
+> Khi một mạch không có cụm nào khớp từ khoá trong kỳ này, bảng liệt kê toàn bộ cụm cùng nhóm chuyên đề của kỳ để huấn luyện viên tự chọn.
 
 ---
 
@@ -162,7 +162,7 @@ và làm lại các phiếu ở mục 2.
 | Buổi | Việc làm | Sản phẩm |
 |:--:|---|---|
 | 1 | Đọc cây kiến thức, tự chấm checklist mục 5 | Danh sách mạch còn ✘ |
-| 2 | Làm lại các phiếu ở mục 2 ứng với mạch ✘ | Sổ lỗi cập nhật |
+| 2 | Làm lại phiếu `NC` và `OT` của các cụm ở mục 2 ứng với mạch ✘ | Sổ lỗi cập nhật |
 | 3 | Học thuộc bảng công thức mục 3, kiểm tra chéo trong team | Bảng công thức không nhìn sách |
 | 4 | Làm 1 đề trong bộ đề mốc tương ứng (`07-de-thi/`) | Điểm và bảng phân tích lỗi |
 

@@ -10,9 +10,11 @@
 
 | Hạng mục | Nội dung |
 |---|---|
-| Tên đầy đủ | **HỌC VIỆN GITA** |
-| Tên quốc tế | **GITA Academy** |
+| Tên đầy đủ | **HỌC VIỆN PHÁT TRIỂN TÀI NĂNG TOÀN CẦU — GITA** |
+| Tên giao dịch thường dùng | **HỌC VIỆN GITA** |
+| Tên quốc tế | **GITA — Global Talent Academy** |
 | Tên rút gọn | **GITA** |
+| Website | **gita.edu.vn** |
 | Cách đọc | /ˈɡiː.tə/ — "Gi-ta" |
 | Không viết là | Gita, gita, G.I.T.A, G-I-T-A (trong văn bản chính thức luôn viết **GITA** in hoa) |
 
@@ -179,11 +181,11 @@ Mỗi phiếu học GITA (A4, 90 phút) có phần đầu (header) bất biến:
 
 ```
 ┌──────────────────────────────────────────────────────────────────────┐
-│ [LOGO]  HỌC VIỆN GITA                       Mã phiếu: GITA-T1-L4-P012│
+│ [LOGO]  HỌC VIỆN GITA                   Mã phiếu: GITA-T1-L4-C03-NC │
 │         Tư duy xuất sắc — Bản lĩnh dẫn đầu   Thời gian: 90 phút      │
 ├──────────────────────────────────────────────────────────────────────┤
-│ TUYẾN 1 — NỀN TẢNG ĐẾN NÂNG CAO   │ LỚP 4  │ Nhóm CĐ: SỐ HỌC        │
-│ Chuyên đề: Dấu hiệu chia hết và bài toán chia hết                    │
+│ TUYẾN 1 — NỀN TẢNG ĐẾN NÂNG CAO   │ LỚP 4  │ Buổi 4/6 · Luyện nâng cao│
+│ Cụm C03: Trung bình cộng, tổng – hiệu và bài toán đại lượng          │
 ├──────────────────────────────────────────────────────────────────────┤
 │ G  MỤC TIÊU PHIẾU  ▸ ...                                             │
 │ I  ĐỘNG LỰC       ▸ ...                                              │
@@ -220,14 +222,18 @@ Học sinh nhận huy hiệu theo kết quả phiếu — gắn trực tiếp v�
 Ba huy hiệu **Vượt ngưỡng** liên tiếp trong cùng một nhóm chuyên đề = **đủ điều kiện
 chuyển tuyến** từ Tuyến 1 sang Tuyến 2 ở nhóm chuyên đề đó.
 
+**Điều kiện đóng một cụm chuyên đề:** đạt ≥ 80/100 ở phiếu `TH` của cụm **và** ≥ 90%
+checklist trong phiếu `HD`. Chưa đạt thì học lại phiếu `NC` và làm bài tương tự trong
+phiếu `GP`, không mở cụm mới.
+
 ---
 
 ## 8. BỘ ẤN PHẨM CHUẨN
 
 | Ấn phẩm | Khổ | Ghi chú |
 |---|---|---|
-| Phiếu học | A4, 4–6 trang | Chuẩn bất biến, xem `01-kien-truc/04-chuan-bien-soan-phieu.md` |
-| Sổ tay lộ trình học sinh | A5, 32 trang | Bảng theo dõi 100 phiếu + nhật ký G-I-T-A |
-| Bảng tiến độ lớp | A1 treo tường | 100 ô phiếu × danh sách học sinh, dán huy hiệu |
+| Phiếu học | A4, 4–6 trang | Chuẩn bất biến, xem `01-kien-truc/02-chuan-bien-soan-phieu.md` |
+| Sổ tay lộ trình học viên | A5, 32 trang | Bảng theo dõi 16 cụm × 6 buổi + nhật ký G-I-T-A |
+| Bảng tiến độ lớp | A1 treo tường | 16 cụm × 6 buổi × danh sách học viên, dán huy hiệu |
 | Phiếu báo kết quả phụ huynh | A4, 1 trang | 4 khối G-I-T-A + biểu đồ radar 8 nhóm chuyên đề |
 | Bìa tập tài liệu | A4 | Navy nền, bậc thang vàng, tên khối lớp + tuyến |

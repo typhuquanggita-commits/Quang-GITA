@@ -14,6 +14,8 @@ from pathlib import Path
 import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT / "04-cong-cu" / "data"))
+from loai_phieu import LOAI  # noqa: E402
 INDEX = ROOT / "02-chi-muc" / "index-master.json"
 MOC_DAP_AN = "## HƯỚNG DẪN GIẢI VÀ ĐÁP ÁN"
 
@@ -21,18 +23,17 @@ SO_PHAN = 5
 SO_BAI_MOI_PHAN = 5
 Y_MIN, Y_MAX = 4, 10
 Y_TONG_MIN, Y_TONG_MAX = 115, 170
-DIEM_PHAN = [15, 20, 25, 25, 15]
-PHUT_PHAN = [12, 15, 20, 25, 18]
-TRUONG_BAT_BUOC = ["ma_phieu", "tuyen", "lop", "so_thu_tu", "loai", "nhom_ma",
-                   "ten_phieu", "hoc_ky", "tuan", "thoi_luong_phut", "thang_diem",
-                   "muc_5_phan", "muc_tieu_G", "dong_luc_I", "tai_nang_T", "hanh_dong_A"]
+TRUONG_BAT_BUOC = ["ma", "tuyen", "lop", "cum", "cum_ten", "buoi_trong_cum", "loai",
+                   "nhom_ma", "ten", "stt", "hoc_ky", "tuan", "thoi_luong_phut",
+                   "thang_diem", "muc_tieu_G", "dong_luc_I", "tai_nang_T", "hanh_dong_A"]
+LOAI_CO_PHIEU_HOC = ["LT", "DB", "KN", "NC", "OT", "TH", "MOC"]
 TU_CAM_THCS = ["phương trình", "ẩn số", "biến số", "hàm số", "tập hợp con",
                "căn bậc hai", "số âm", "đa thức", "bất phương trình"]
 
-RE_PHAN = re.compile(r"^##\s+PHẦN\s+([IVX]+)\b", re.M)
+RE_PHAN = re.compile(r"^##\s+PHẦN\s+([A-EIVX]+)\b", re.M)
 RE_BAI = re.compile(r"^###\s+Bài\s+(\d+)\.", re.M)
 RE_Y = re.compile(r"^\s{0,3}([a-zk-z])\)\s", re.M)
-RE_DA_BAI = re.compile(r"^###\s+Bài\s+([IVX]+)\.(\d+)", re.M)
+RE_DA_BAI = re.compile(r"^###\s+Bài\s+([A-EIVX]+)\.(\d+)", re.M)
 
 
 class Ket_qua:
@@ -70,18 +71,27 @@ def kiem_tra(path: Path, index: dict | None) -> Ket_qua:
         kq.E("`thoi_luong_phut` phải bằng 90.")
     if fm.get("thang_diem") not in (None, 100):
         kq.E("`thang_diem` phải bằng 100.")
-    ma = fm.get("ma_phieu")
+    loai = fm.get("loai")
+    if loai not in LOAI_CO_PHIEU_HOC:
+        kq.E(f"`loai` = {loai!r} không phải loại phiếu học "
+             f"({', '.join(LOAI_CO_PHIEU_HOC)}).")
+    khung = LOAI.get(loai, LOAI["NC"])["cau_truc"]
+    NHAN_PHAN = [x[0] for x in khung]
+    PHUT_PHAN = [x[2] for x in khung]
+    DIEM_PHAN = [x[3] for x in khung]
+
+    ma = fm.get("ma")
     if ma and index is not None:
         if ma not in index:
             kq.E(f"`{ma}` không có trong 02-chi-muc/index-master.json.")
         else:
             ref = index[ma]
-            for t in ("tuyen", "lop", "so_thu_tu", "loai", "nhom_ma", "hoc_ky", "tuan"):
+            for t in ("tuyen", "lop", "cum", "loai", "nhom_ma", "hoc_ky", "tuan", "stt"):
                 if t in fm and fm[t] != ref[t]:
                     kq.E(f"Front-matter `{t}` = {fm[t]!r} lệch với chỉ mục ({ref[t]!r}).")
-            if fm.get("ten_phieu") != ref["ten_phieu"]:
-                kq.W(f"`ten_phieu` khác chỉ mục:\n      phiếu : {fm.get('ten_phieu')}"
-                     f"\n      chỉ mục: {ref['ten_phieu']}")
+            if fm.get("ten") != ref["ten"]:
+                kq.W(f"`ten` khác chỉ mục:\n      phiếu : {fm.get('ten')}"
+                     f"\n      chỉ mục: {ref['ten']}")
     if ma and ma != path.stem:
         kq.E(f"Tên tệp `{path.stem}` không khớp `ma_phieu` = `{ma}`.")
 
@@ -96,6 +106,10 @@ def kiem_tra(path: Path, index: dict | None) -> Ket_qua:
     phan_pos = [m.start() for m in RE_PHAN.finditer(de)]
     if len(phan_pos) != SO_PHAN:
         kq.E(f"Phải có đúng {SO_PHAN} phần `## PHẦN …`, đang có {len(phan_pos)}.")
+    nhan_thay = RE_PHAN.findall(de)
+    if nhan_thay and nhan_thay != NHAN_PHAN[:len(nhan_thay)]:
+        kq.E(f"Nhãn các phần phải là {' → '.join(NHAN_PHAN)} theo loại phiếu "
+             f"`{loai}`, đang là {' → '.join(nhan_thay)}.")
 
     # --- 2. Mỗi phần 5 bài, mỗi bài 4–10 ý ---
     tong_y = 0
@@ -186,7 +200,7 @@ def main() -> int:
 
     index = None
     if INDEX.exists():
-        index = {r["ma_phieu"]: r for r in json.loads(INDEX.read_text(encoding="utf-8"))}
+        index = {r["ma"]: r for r in json.loads(INDEX.read_text(encoding="utf-8"))}
 
     tep = list(a.tep)
     if a.all or not tep:

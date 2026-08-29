@@ -1,17 +1,22 @@
 ---
-ma_phieu: GITA-T2-L5-P013
+ma: GITA-T2-L5-C04-NC
 tuyen: T2
 lop: 5
-so_thu_tu: 13
-loai: CD
+cum: 4
+cum_ten: Đi-rích-lê, bù trừ, bất biến và quy tắc đếm
+buoi_trong_cum: 4
+loai: NC
+loai_ten: Phiếu Luyện nâng cao
 nhom_ma: G
 nhom_ten: Suy luận logic & Toán đếm
-ten_phieu: Nguyên lý Đi-rích-lê và ứng dụng
+ten: Đi-rích-lê, bù trừ, bất biến và quy tắc đếm — Phiếu Luyện nâng cao
+trong_tam: Nguyên lý Đi-rích-lê và ứng dụng
+stt: 22
 hoc_ky: HK1
-tuan: 5
+tuan: 8
+moc_kiem_tra: Giữa kỳ I
 thoi_luong_phut: 90
 thang_diem: 100
-muc_5_phan: [M2, M3, M4, M5, "M5+"]
 muc_tieu_G: >
   Sau phiếu này em tự đặt ra được "ngăn" cho mỗi bài toán, và viết được lập luận
   hoàn chỉnh dạng "có n vật, m ngăn, vậy tồn tại một ngăn chứa ít nhất k vật".
@@ -26,13 +31,15 @@ hanh_dong_A: >
   Không được viết đáp số suông. Bí quá 90 giây thì chuyển bài, quay lại sau.
 ---
 
-# PHIẾU HỌC GITA · GITA-T2-L5-P013
+# PHIẾU HỌC GITA · GITA-T2-L5-C04-NC
 
-**HỌC VIỆN GITA** — *Tư duy xuất sắc, Bản lĩnh dẫn đầu*
-Tuyến 2 — Nâng cao thi CLC & thi Chuyên · Lớp 5 · Tuần 5 · Học kỳ I
+**HỌC VIỆN PHÁT TRIỂN TÀI NĂNG TOÀN CẦU — GITA** · *Tư duy xuất sắc, Bản lĩnh dẫn đầu* · gita.edu.vn
+Tuyến 2 — Nâng cao thi CLC & thi Chuyên · Lớp 5 · Tuần 8 · HK1 · Mốc Giữa kỳ I
+**Cụm chuyên đề C04 — Đi-rích-lê, bù trừ, bất biến và quy tắc đếm** · Buổi 4/6 · **Phiếu Luyện nâng cao**
 Nhóm chuyên đề **G — Suy luận logic & Toán đếm**
-**Chuyên đề: Nguyên lý Đi-rích-lê và ứng dụng**
+**Trọng tâm phiếu: Nguyên lý Đi-rích-lê và ứng dụng**
 Thời gian làm bài: 90 phút · Thang điểm: 100 · Điểm sáng tạo tối đa: +5
+Phiếu lời giải và phân tích chuyên sâu đi kèm: `GITA-T2-L5-C04-NC-GP`
 
 Họ và tên: ......................................... Lớp: ......... Điểm: ......../100
 

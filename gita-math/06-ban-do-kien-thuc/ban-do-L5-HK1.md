@@ -3,12 +3,12 @@
 **HỌC VIỆN GITA** · *Tư duy xuất sắc, Bản lĩnh dẫn đầu*
 
 - Số mạch kiến thức: **5**
-- Phạm vi phiếu: **P001 – P054**
+- Phạm vi: **cụm C01 – C08, phiếu 1 – 50**
 - Cách dùng: treo tường hoặc dán vào trang đầu vở. Trước mỗi mốc kiểm tra,
   học sinh tự đánh dấu ✔ vào mạch đã chắc, ✘ vào mạch còn yếu, rồi làm lại
   đúng những phiếu được liệt kê ở cột **Phiếu ôn lại**.
 
-**Mốc kiểm tra của kỳ này:** Giữa kỳ I (sau phiếu P027) · Cuối kỳ I (sau phiếu P054)
+**Mốc kiểm tra của kỳ này:** Giữa kỳ I (phiếu số 25, sau cụm C04) · Cuối kỳ I (phiếu số 50, sau cụm C08)
 
 ---
 
@@ -47,49 +47,49 @@ KIẾN THỨC
 
 **Nội dung cốt lõi:** Rút gọn, quy đồng, so sánh · Hỗn số · Phân số thập phân
 
-| | Mã phiếu ôn lại |
+| Tuyến | Cụm chuyên đề cần ôn lại |
 |---|---|
-| Tuyến 1 | `P001`, `P003` |
-| Tuyến 2 | `P002`, `P016`, `P054` |
+| Tuyến 1 | `C01` Phân số, hỗn số và số thập phân: khái niệm đến phép nhân |
+| Tuyến 2 | `C02` So sánh phân số, số thập phân và bài toán phần trăm ẩn |
 
 ### 2. Đơn vị đo diện tích và quan hệ tỉ lệ  ·  nhóm **E — Đại lượng – Đo lường – Thời gian**
 
 **Nội dung cốt lõi:** Đề-ca-mét vuông, héc-tô-mét vuông, héc-ta · Bài toán tỉ lệ thuận, tỉ lệ nghịch · Rút về đơn vị và tìm tỉ số
 
-| | Mã phiếu ôn lại |
+| Tuyến | Cụm chuyên đề cần ôn lại |
 |---|---|
-| Tuyến 1 | `P004`, `P006`, `P012`, `P038`, `P045`, `P046` |
+| Tuyến 1 | `C02` Đơn vị đo độ dài, khối lượng, diện tích, thể tích và thời gian |
 | Tuyến 2 | — |
 
 ### 3. Số thập phân và bốn phép tính  ·  nhóm **H — Phân số – Số thập phân – Tỉ số phần trăm – Thống kê**
 
 **Nội dung cốt lõi:** Đọc, viết, so sánh số thập phân · Cộng, trừ, nhân, chia số thập phân · Nhân, chia nhẩm với 10, 100, 0,1 và 0,01
 
-| | Mã phiếu ôn lại |
+| Tuyến | Cụm chuyên đề cần ôn lại |
 |---|---|
-| Tuyến 1 | `P003`, `P008`, `P011`, `P013`, `P016`, `P019`, `P022` |
-| Tuyến 2 | `P025` |
+| Tuyến 1 | `C01` Phân số, hỗn số và số thập phân: khái niệm đến phép nhân · `C05` Phép chia số thập phân và ba dạng toán tỉ số phần trăm |
+| Tuyến 2 | `C02` So sánh phân số, số thập phân và bài toán phần trăm ẩn |
 
 ### 4. Hình tam giác và hình thang  ·  nhóm **F — Hình học**
 
 **Nội dung cốt lõi:** Đáy và đường cao · Diện tích tam giác · Diện tích hình thang
 
-| | Mã phiếu ôn lại |
+| Tuyến | Cụm chuyên đề cần ôn lại |
 |---|---|
-| Tuyến 1 | `P009`, `P018`, `P021`, `P024`, `P026`, `P032`, `P034`, `P037`, `P039`, `P041`, `P042`, `P043`, `P053` |
-| Tuyến 2 | `P006`, `P011`, `P017`, `P023`, `P029`, `P034`, `P039`, `P044`, `P049`, `P053` |
+| Tuyến 1 | `C06` Tam giác, hình thang, hình tròn và diện tích |
+| Tuyến 2 | `C05` Tỉ số diện tích tam giác, hình thang và hình tròn |
 
 ### 5. Tỉ số phần trăm  ·  nhóm **H — Phân số – Số thập phân – Tỉ số phần trăm – Thống kê**
 
 **Nội dung cốt lõi:** Khái niệm và cách viết · Dạng 1: tìm tỉ số phần trăm của hai số · Dạng 2: tìm giá trị phần trăm của một số · Dạng 3: tìm một số khi biết giá trị phần trăm của nó
 
-| | Mã phiếu ôn lại |
+| Tuyến | Cụm chuyên đề cần ôn lại |
 |---|---|
-| Tuyến 1 | `P027`, `P029`, `P031`, `P033` |
-| Tuyến 2 | `P035`, `P045` |
+| Tuyến 1 | `C05` Phép chia số thập phân và ba dạng toán tỉ số phần trăm |
+| Tuyến 2 | `C02` So sánh phân số, số thập phân và bài toán phần trăm ẩn |
 
-> Mã phiếu viết tắt: `P0xx` thuộc khối `GITA-T1-L5` hoặc `GITA-T2-L5`.
-> Khi một mạch không có phiếu nào khớp từ khoá trong kỳ này, bảng liệt kê toàn bộ phiếu cùng nhóm chuyên đề của kỳ để huấn luyện viên tự chọn.
+> Mỗi cụm `Cxx` gồm 6 phiếu `LT · DB · KN · NC · OT · TH` trong khối `GITA-T1-L5` hoặc `GITA-T2-L5`, kèm phiếu `HD` hướng dẫn ôn chắc.
+> Khi một mạch không có cụm nào khớp từ khoá trong kỳ này, bảng liệt kê toàn bộ cụm cùng nhóm chuyên đề của kỳ để huấn luyện viên tự chọn.
 
 ---
 
@@ -142,7 +142,7 @@ và làm lại các phiếu ở mục 2.
 | Buổi | Việc làm | Sản phẩm |
 |:--:|---|---|
 | 1 | Đọc cây kiến thức, tự chấm checklist mục 5 | Danh sách mạch còn ✘ |
-| 2 | Làm lại các phiếu ở mục 2 ứng với mạch ✘ | Sổ lỗi cập nhật |
+| 2 | Làm lại phiếu `NC` và `OT` của các cụm ở mục 2 ứng với mạch ✘ | Sổ lỗi cập nhật |
 | 3 | Học thuộc bảng công thức mục 3, kiểm tra chéo trong team | Bảng công thức không nhìn sách |
 | 4 | Làm 1 đề trong bộ đề mốc tương ứng (`07-de-thi/`) | Điểm và bảng phân tích lỗi |
 

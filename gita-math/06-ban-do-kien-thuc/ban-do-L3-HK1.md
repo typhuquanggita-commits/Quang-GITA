@@ -3,12 +3,12 @@
 **HỌC VIỆN GITA** · *Tư duy xuất sắc, Bản lĩnh dẫn đầu*
 
 - Số mạch kiến thức: **7**
-- Phạm vi phiếu: **P001 – P054**
+- Phạm vi: **cụm C01 – C08, phiếu 1 – 50**
 - Cách dùng: treo tường hoặc dán vào trang đầu vở. Trước mỗi mốc kiểm tra,
   học sinh tự đánh dấu ✔ vào mạch đã chắc, ✘ vào mạch còn yếu, rồi làm lại
   đúng những phiếu được liệt kê ở cột **Phiếu ôn lại**.
 
-**Mốc kiểm tra của kỳ này:** Giữa kỳ I (sau phiếu P027) · Cuối kỳ I (sau phiếu P054)
+**Mốc kiểm tra của kỳ này:** Giữa kỳ I (phiếu số 25, sau cụm C04) · Cuối kỳ I (phiếu số 50, sau cụm C08)
 
 ---
 
@@ -57,67 +57,67 @@ KIẾN THỨC
 
 **Nội dung cốt lõi:** Đọc, viết, so sánh số có ba chữ số · Phân tích số thành trăm – chục – đơn vị · Số chẵn, số lẻ · Làm tròn đến hàng chục, hàng trăm
 
-| | Mã phiếu ôn lại |
+| Tuyến | Cụm chuyên đề cần ôn lại |
 |---|---|
-| Tuyến 1 | `P002`, `P012`, `P022`, `P031`, `P038`, `P041`, `P048`, `P051` |
-| Tuyến 2 | `P001`, `P006`, `P012`, `P022`, `P031`, `P041`, `P051` |
+| Tuyến 1 | `C02` Số trong phạm vi 1 000 và tìm thành phần chưa biết |
+| Tuyến 2 | `C01` Cấu tạo số và tính chẵn lẻ |
 
 ### 2. Bảng nhân, bảng chia 2 đến 9  ·  nhóm **B — Phép tính & Tính nhanh**
 
 **Nội dung cốt lõi:** Thuộc lòng bảng nhân và bảng chia từ 2 đến 9 · Quan hệ nhân – chia là hai chiều của một sự việc · Nhân, chia số có hai, ba chữ số với số có một chữ số
 
-| | Mã phiếu ôn lại |
+| Tuyến | Cụm chuyên đề cần ôn lại |
 |---|---|
-| Tuyến 1 | `P004`, `P006`, `P009`, `P017`, `P021`, `P049`, `P052` |
-| Tuyến 2 | `P002`, `P008`, `P016`, `P025`, `P034`, `P044` |
+| Tuyến 1 | `C01` Bảng nhân, bảng chia và bốn phép tính nền tảng · `C06` Biểu thức và phép tính với số có bốn chữ số |
+| Tuyến 2 | `C02` Kỹ thuật tính nhanh và tìm x |
 
 ### 3. Gấp, giảm và so sánh số lần  ·  nhóm **D — Toán điển hình & Giải toán có lời văn**
 
 **Nội dung cốt lõi:** Gấp một số lên nhiều lần là nhân · Giảm một số đi nhiều lần là chia · So sánh số lớn gấp mấy lần số bé · So sánh số bé bằng một phần mấy số lớn
 
-| | Mã phiếu ôn lại |
+| Tuyến | Cụm chuyên đề cần ôn lại |
 |---|---|
-| Tuyến 1 | `P005`, `P011`, `P014`, `P015`, `P019`, `P028`, `P033`, `P039`, `P045`, `P053` |
-| Tuyến 2 | `P007`, `P014`, `P018`, `P024`, `P032`, `P038`, `P043`, `P049`, `P054` |
+| Tuyến 1 | `C04` Giải toán một bước, gấp và giảm số lần · `C07` Bài toán hai bước và rút về đơn vị |
+| Tuyến 2 | `C04` Sơ đồ đoạn thẳng: tổng – hiệu, tổng – tỉ, hiệu – tỉ · `C07` Bài toán ẩn dữ kiện và hai đại lượng tỉ lệ |
 
 ### 4. Biểu thức và tìm thành phần chưa biết  ·  nhóm **B — Phép tính & Tính nhanh**
 
 **Nội dung cốt lõi:** Thứ tự thực hiện phép tính · Biểu thức có dấu ngoặc · Tìm số hạng, số bị trừ, số trừ, thừa số, số bị chia, số chia
 
-| | Mã phiếu ôn lại |
+| Tuyến | Cụm chuyên đề cần ôn lại |
 |---|---|
-| Tuyến 1 | `P026`, `P034` |
-| Tuyến 2 | `P016`, `P034` |
+| Tuyến 1 | `C06` Biểu thức và phép tính với số có bốn chữ số |
+| Tuyến 2 | `C02` Kỹ thuật tính nhanh và tìm x |
 
 ### 5. Hình học: góc, trung điểm, chu vi  ·  nhóm **F — Hình học**
 
 **Nội dung cốt lõi:** Góc vuông và góc không vuông, dùng ê ke · Điểm ở giữa, trung điểm · Chu vi hình tam giác, tứ giác, hình chữ nhật, hình vuông
 
-| | Mã phiếu ôn lại |
+| Tuyến | Cụm chuyên đề cần ôn lại |
 |---|---|
-| Tuyến 1 | `P003`, `P016`, `P024`, `P029`, `P037`, `P046`, `P054` |
-| Tuyến 2 | `P005`, `P013`, `P023`, `P029`, `P036`, `P042`, `P053` |
+| Tuyến 1 | `C03` Hình phẳng, góc và chu vi |
+| Tuyến 2 | `C06` Đếm hình và chu vi hình ghép |
 
 ### 6. Đại lượng: độ dài, khối lượng, thời gian  ·  nhóm **E — Đại lượng – Đo lường – Thời gian**
 
 **Nội dung cốt lõi:** mi-li-mét, xăng-ti-mét, đề-xi-mét, mét, ki-lô-mét · gam và ki-lô-gam · mi-li-lít và lít · Xem đồng hồ, giờ và phút
 
-| | Mã phiếu ôn lại |
+| Tuyến | Cụm chuyên đề cần ôn lại |
 |---|---|
-| Tuyến 1 | `P007`, `P018`, `P027`, `P036`, `P047` |
-| Tuyến 2 | `P017`, `P035`, `P048` |
+| Tuyến 1 | `C05` Đo độ dài, khối lượng, thời gian và tiền Việt Nam |
+| Tuyến 2 | `C08` Đại lượng, thời gian và toán thực tế |
 
 ### 7. Một phần mấy và bảng số liệu  ·  nhóm **H — Phân số – Số thập phân – Tỉ số phần trăm – Thống kê**
 
 **Nội dung cốt lõi:** Nhận biết một phần hai, một phần ba, … · Tìm một phần mấy của một số · Đọc bảng thống kê số liệu đơn giản
 
-| | Mã phiếu ôn lại |
+| Tuyến | Cụm chuyên đề cần ôn lại |
 |---|---|
-| Tuyến 1 | `P023`, `P035` |
-| Tuyến 2 | `P027`, `P047` |
+| Tuyến 1 | `C08` Một phần mấy, tỉ số và thống kê |
+| Tuyến 2 | — |
 
-> Mã phiếu viết tắt: `P0xx` thuộc khối `GITA-T1-L3` hoặc `GITA-T2-L3`.
-> Khi một mạch không có phiếu nào khớp từ khoá trong kỳ này, bảng liệt kê toàn bộ phiếu cùng nhóm chuyên đề của kỳ để huấn luyện viên tự chọn.
+> Mỗi cụm `Cxx` gồm 6 phiếu `LT · DB · KN · NC · OT · TH` trong khối `GITA-T1-L3` hoặc `GITA-T2-L3`, kèm phiếu `HD` hướng dẫn ôn chắc.
+> Khi một mạch không có cụm nào khớp từ khoá trong kỳ này, bảng liệt kê toàn bộ cụm cùng nhóm chuyên đề của kỳ để huấn luyện viên tự chọn.
 
 ---
 
@@ -178,7 +178,7 @@ và làm lại các phiếu ở mục 2.
 | Buổi | Việc làm | Sản phẩm |
 |:--:|---|---|
 | 1 | Đọc cây kiến thức, tự chấm checklist mục 5 | Danh sách mạch còn ✘ |
-| 2 | Làm lại các phiếu ở mục 2 ứng với mạch ✘ | Sổ lỗi cập nhật |
+| 2 | Làm lại phiếu `NC` và `OT` của các cụm ở mục 2 ứng với mạch ✘ | Sổ lỗi cập nhật |
 | 3 | Học thuộc bảng công thức mục 3, kiểm tra chéo trong team | Bảng công thức không nhìn sách |
 | 4 | Làm 1 đề trong bộ đề mốc tương ứng (`07-de-thi/`) | Điểm và bảng phân tích lỗi |
 

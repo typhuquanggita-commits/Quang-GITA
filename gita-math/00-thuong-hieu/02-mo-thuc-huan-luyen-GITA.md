@@ -1,6 +1,6 @@
 # MÔ THỨC HUẤN LUYỆN GITA
 
-> Hệ điều hành sư phạm của Học viện GITA. Mọi phiếu học, mọi buổi dạy, mọi lần
+> Hệ điều hành sư phạm của **Học viện Phát triển Tài năng Toàn cầu — GITA** (gita.edu.vn). Mọi phiếu học, mọi buổi dạy, mọi lần
 > phản hồi cho học sinh và phụ huynh đều chạy trên mô thức này.
 
 ---
@@ -178,7 +178,9 @@ Dùng để:
 2. Mỗi 10 phiếu có 1 phiếu kiểm tra định vị và 1 báo cáo gửi phụ huynh.
 3. Mỗi học sinh có 1 HLV chính chịu trách nhiệm về hồ sơ tài năng.
 4. Không xếp lớp theo tuổi — xếp theo **kết quả test đầu vào 4 trục** (xem
-   `01-kien-truc/06-test-dau-vao.md`).
+   `08-test-dau-vao/`).
+5. Giáo án nộp ngày 28 hằng tháng, được Ban Giám đốc phê duyệt và Giáo viên Trưởng
+   ký xác nhận thì mới được dùng để giảng dạy (xem `01-kien-truc/06-khung-giao-an-GITA.md`).
 
 ---
 
@@ -186,13 +188,14 @@ Dùng để:
 
 | Phút | Khối | Hoạt động |
 |---|---|---|
-| 0–5 | **G** | Đọc ô Mục tiêu phiếu; HS viết đích gần của riêng mình. |
+| trước giờ | — | **Thanh kiểm tra**: HLV đến sớm 30 phút, kiểm tra nhiệm vụ về nhà, chấm ký, chữa bài. |
+| 0–5 | **G/I** | **Nghi thức đầu giờ**: Tuyên bố + Neo năng lượng + Hi Fire Học giỏi. Đọc ô Mục tiêu phiếu; HS viết đích gần của riêng mình. |
 | 5–10 | **I** | Khởi động nội lực: 1 bài "mồi" vui, HS viết câu *"hôm nay tôi muốn…"*. |
 | 10–30 | **A** | Phần I + II — làm độc lập, tính giờ (chuẩn ≤ 25 phút). |
 | 30–55 | **A** | Phần III + IV — làm độc lập, HLV đi quan sát, ghi TD1–TD6. |
 | 55–75 | **T** | Phần V — làm cá nhân 12 phút, sau đó thảo luận team 8 phút. |
 | 75–85 | **T/A** | Chữa chọn lọc: 2 bài bẫy + 1 bài Phần V, ưu tiên HS trình bày cách khác. |
-| 85–90 | **G/I** | Chấm nhanh, dán huy hiệu, viết Nhật ký 3 dòng, giao Sổ lỗi. |
+| 85–90 | **G/I** | Chấm nhanh, dán huy hiệu, viết Nhật ký 3 dòng, giao Sổ lỗi. **5S phòng học + Tuyên bố + Neo năng lượng.** |
 
 ---
 
