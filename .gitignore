@@ -26,3 +26,4 @@ dist-ssr
 # GITA math toolkit
 __pycache__/
 *.pyc
+gita-math/04-cong-cu/ban-in/
