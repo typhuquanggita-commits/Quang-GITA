@@ -1,7 +1,7 @@
-import type { AppState, MissionAttempt, TrackId } from '@/types';
+import type { AppState, MissionAttempt, MistakeRecord, StrandId, TrackId } from '@/types';
 import type { Mission, Stage, Worksheet } from '@/data/catalog';
 import { MISSIONS, stageById, stagesByTrack } from '@/data/catalog';
-import { topicById } from '@/data/topics';
+import { topicById, TOPICS } from '@/data/topics';
 import { strandById } from '@/data/schools';
 import { todayKey } from './storage';
 
@@ -12,6 +12,7 @@ import { todayKey } from './storage';
 export interface ItemResult {
   partOrder: number;
   itemIndex: number;
+  generatorId: string;
   prompt: string;
   chosen: number | null;
   correct: number;
@@ -62,6 +63,7 @@ export function gradeWorksheet(
       items.push({
         partOrder: part.order,
         itemIndex: ii,
+        generatorId: item.generatorId,
         prompt: item.prompt,
         chosen,
         correct: item.correct,
@@ -428,8 +430,31 @@ export function applyResult(
     },
   };
 
+  // Lưu từng câu sai vào hồ sơ học viên (giữ tối đa 400 bản ghi gần nhất)
+  const newMistakes: MistakeRecord[] = result.items
+    .filter((i) => !i.isCorrect)
+    .map((i) => ({
+      id: `${mission.id}-${variant}-${i.partOrder}-${i.itemIndex}-${Date.now()}`,
+      at: new Date().toISOString(),
+      missionId: mission.id,
+      worksheetId: ws.id,
+      partOrder: i.partOrder,
+      itemIndex: i.itemIndex,
+      generatorId: i.generatorId,
+      topicId: i.topicId,
+      strand: i.strand as StrandId,
+      skill: i.skill,
+      prompt: i.prompt,
+      choices: i.choices,
+      correct: i.correct,
+      chosen: i.chosen,
+      steps: i.steps,
+      resolved: false,
+    }));
+
   const attempts = [...state.attempts, attempt];
-  const interim: AppState = { ...state, attempts, missionStatus };
+  const mistakes = [...newMistakes, ...state.mistakes].slice(0, 400);
+  const interim: AppState = { ...state, attempts, missionStatus, mistakes };
 
   // Thăng Level
   const lvl = levelStats(interim, mission.track, mission.level);
@@ -530,5 +555,168 @@ export function progressOverview(state: AppState, track: TrackId) {
     level: state.levelUnlocked[track] ?? 1,
     stage: state.stageUnlocked[track] ?? 1,
     strandErrors: [...strandErrors.entries()].sort((a, b) => b[1] - a[1]),
+  };
+}
+
+/* ============================================================
+   6. LỘ TRÌNH TỐI ƯU SINH TỪ HỒ SƠ HỌC VIÊN
+   ============================================================ */
+
+export interface PlanItem {
+  topicId: string;
+  topicName: string;
+  strand: StrandId;
+  /** Điểm ưu tiên tổng hợp — càng cao càng phải xử lý sớm. */
+  priority: number;
+  frequency: number;
+  errors: number;
+  recentErrors: number;
+  /** Vì sao chuyên đề này được xếp ở vị trí này. */
+  reasons: string[];
+  /** Nhiệm vụ cụ thể nên làm tiếp, đã lọc theo mức độ đang mở. */
+  missionIds: string[];
+  estimatedMinutes: number;
+  /** Thuộc nhóm 20% nội dung tạo ra phần lớn điểm số hay không. */
+  inPareto: boolean;
+  /** Vì sao danh sách nhiệm vụ đề xuất đang trống. */
+  emptyReason?: 'da-dat-chuan' | 'chua-mo-muc-do' | 'khong-co-nhiem-vu';
+}
+
+export interface OptimizedPlan {
+  generatedAt: string;
+  track: TrackId;
+  basedOn: { attempts: number; mistakes: number; days: number };
+  items: PlanItem[];
+  paretoCoverage: number;
+  weeklyFocus: string[];
+  cautions: string[];
+}
+
+const DAY = 24 * 3600 * 1000;
+
+/**
+ * Xếp hạng chuyên đề cần xử lý theo dữ liệu thật của học viên:
+ * tần suất trong đề × mật độ lỗi × độ mới của lỗi × độ phù hợp mức độ.
+ */
+export function buildOptimizedPlan(state: AppState, track: TrackId): OptimizedPlan {
+  const now = Date.now();
+  const level = state.levelUnlocked[track] ?? 1;
+  const topics = TOPICS.filter((t) => t.tracks.includes(track));
+
+  const items: PlanItem[] = topics.map((topic) => {
+    const mine = state.mistakes.filter((m) => m.topicId === topic.id);
+    const recent = mine.filter((m) => now - new Date(m.at).getTime() < 14 * DAY);
+    const unresolved = mine.filter((m) => !m.resolved);
+
+    const reasons: string[] = [];
+    // Tần suất trong đề: trục 20/80
+    const freqScore = topic.frequency / 100;
+    if (topic.frequency >= 85) reasons.push(`Tần suất ${topic.frequency}% — thuộc nhóm nội dung ra đề nhiều nhất.`);
+
+    // Mật độ lỗi
+    const errScore = Math.min(1, mine.length / 6);
+    if (mine.length >= 3) reasons.push(`Đã sai ${mine.length} câu ở chuyên đề này.`);
+
+    // Lỗi mới thì cấp bách hơn lỗi cũ
+    const recencyScore = recent.length ? Math.min(1, recent.length / 4) : 0;
+    if (recent.length >= 2) reasons.push(`${recent.length} lỗi trong 14 ngày gần đây — vấn đề đang còn nóng.`);
+
+    // Độ phù hợp với mức độ đang mở: chuyên đề quá cao so với level thì hoãn lại
+    const gap = topic.level - level;
+    const fitScore = gap <= 0 ? 1 : gap === 1 ? 0.7 : 0.3;
+    if (gap >= 2) reasons.push(`Mức ${topic.level} cao hơn Level hiện tại (${level}) — nên để sau.`);
+
+    // Chuyên đề chưa từng chạm mà tần suất cao thì vẫn cần ưu tiên
+    if (mine.length === 0 && topic.frequency >= 90) {
+      reasons.push('Chưa ghi nhận lỗi nhưng tần suất rất cao — cần kiểm chứng bằng một phiếu Kiểm tra.');
+    }
+
+    const priority = Math.round(
+      (freqScore * 40 + errScore * 30 + recencyScore * 20 + 10) * fitScore,
+    );
+
+    const ofTopic = MISSIONS.filter((m) => m.track === track && m.topicId === topic.id);
+    const inReach = ofTopic.filter((m) => m.level <= level + 1);
+    const unpassed = inReach.filter((m) => !state.missionStatus[m.id]?.passed);
+    const missionIds = unpassed.slice(0, 3).map((m) => m.id);
+
+    let emptyReason: PlanItem['emptyReason'];
+    if (missionIds.length === 0) {
+      if (inReach.length > 0) emptyReason = 'da-dat-chuan';
+      else if (ofTopic.length > 0) emptyReason = 'chua-mo-muc-do';
+      else emptyReason = 'khong-co-nhiem-vu';
+    }
+
+    return {
+      topicId: topic.id,
+      topicName: topic.name,
+      strand: topic.strand,
+      priority,
+      frequency: topic.frequency,
+      errors: mine.length,
+      recentErrors: recent.length,
+      reasons,
+      missionIds,
+      estimatedMinutes: Math.max(30, unresolved.length * 12 + missionIds.length * 25),
+      inPareto: false,
+      emptyReason,
+    };
+  });
+
+  items.sort((a, b) => b.priority - a.priority || b.frequency - a.frequency);
+
+  // Đánh dấu nhóm 20/80: các chuyên đề đầu bảng cộng dồn tới 80% tổng tần suất
+  const totalFreq = items.reduce((s, i) => s + i.frequency, 0) || 1;
+  let cum = 0;
+  for (const item of items) {
+    if (cum / totalFreq < 0.8) {
+      item.inPareto = true;
+      cum += item.frequency;
+    }
+  }
+  const paretoCount = items.filter((i) => i.inPareto).length;
+
+  const firstAttempt = state.attempts[0];
+  const days = firstAttempt
+    ? Math.max(1, Math.round((now - new Date(firstAttempt.at).getTime()) / DAY))
+    : 0;
+
+  const weeklyFocus = items.slice(0, 3).map((i) => i.topicName);
+
+  const cautions: string[] = [];
+  if (state.attempts.length < 5) {
+    cautions.push(
+      'Hồ sơ mới có ít dữ liệu nên thứ tự ưu tiên đang dựa chủ yếu vào tần suất ra đề. Làm thêm vài phiếu nữa, lộ trình sẽ bám sát năng lực thật của bạn hơn.',
+    );
+  }
+  const unresolvedTotal = state.mistakes.filter((m) => !m.resolved).length;
+  if (unresolvedTotal >= 20) {
+    cautions.push(
+      `Đang có ${unresolvedTotal} lỗi chưa xử lý. Trước khi nhận nhiệm vụ mới, hãy dọn bớt ngân hàng lỗi — lỗi tồn đọng là nguyên nhân khiến KPI đứng yên.`,
+    );
+  }
+  const avg = progressOverview(state, track).avgKpi;
+  if (state.attempts.length >= 5 && avg < 70) {
+    cautions.push(
+      'KPI trung bình đang dưới 70%. Nên hạ một mức độ và luyện chắc ở đó thay vì đi tiếp theo lộ trình.',
+    );
+  }
+
+  return {
+    generatedAt: new Date().toISOString(),
+    track,
+    basedOn: { attempts: state.attempts.length, mistakes: state.mistakes.length, days },
+    items,
+    paretoCoverage: paretoCount,
+    weeklyFocus,
+    cautions,
+  };
+}
+
+/** Đánh dấu một lỗi đã được xử lý (đã học lại và làm lại đúng). */
+export function resolveMistake(state: AppState, mistakeId: string): AppState {
+  return {
+    ...state,
+    mistakes: state.mistakes.map((m) => (m.id === mistakeId ? { ...m, resolved: true } : m)),
   };
 }

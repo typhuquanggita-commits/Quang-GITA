@@ -242,6 +242,27 @@ export interface MissionAttempt {
   passed: boolean;
 }
 
+/** Một câu làm sai được lưu đầy đủ vào hồ sơ học viên để xem lại và phân tích. */
+export interface MistakeRecord {
+  id: string;
+  at: string;
+  missionId: string;
+  worksheetId: string;
+  partOrder: number;
+  itemIndex: number;
+  generatorId: string;
+  topicId: string;
+  strand: StrandId;
+  skill: string;
+  prompt: string;
+  choices: string[];
+  correct: number;
+  chosen: number | null;
+  steps: string[];
+  /** Học viên đã xem lại và làm lại đúng dạng này chưa. */
+  resolved: boolean;
+}
+
 export interface MissionStatus {
   tries: number;
   bestKpi: number;
@@ -274,6 +295,8 @@ export interface AppState {
   profile: Profile | null;
   attempts: MissionAttempt[];
   missionStatus: Record<string, MissionStatus>;
+  /** Ngân hàng lỗi sai cá nhân — nền của hồ sơ học viên. */
+  mistakes: MistakeRecord[];
   /** Mức độ cao nhất đã mở khoá của từng luồng (1..5). */
   levelUnlocked: Record<TrackId, number>;
   /** Thứ tự giai đoạn cao nhất đã mở khoá của từng luồng (1..5). */

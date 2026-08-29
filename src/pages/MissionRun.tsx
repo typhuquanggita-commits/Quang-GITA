@@ -8,6 +8,7 @@ import {
   worksheetById,
 } from '@/data/catalog';
 import { strandById } from '@/data/schools';
+import { sheetSpec } from '@/data/sheets';
 import { topicById } from '@/data/topics';
 import {
   applyResult,
@@ -20,6 +21,7 @@ import {
   type ApplyOutcome,
 } from '@/lib/engine';
 import { can } from '@/lib/auth';
+import { ItemAnalysis } from '@/components/ItemAnalysis';
 import { Card, Badge, Progress, Donut, MathText, Callout, LevelDots, Empty } from '@/components/ui';
 
 type Phase = 'intro' | 'doing' | 'result';
@@ -119,7 +121,7 @@ export default function MissionRun({ missionId }: { missionId: string }) {
 
           <div className="mt-5 grid gap-3 sm:grid-cols-4">
             {[
-              ['Số câu', `${meta.totalItems} câu / 3 phần`],
+              ['Số câu', `${meta.totalItems} câu / ${worksheet.parts.length} phần`],
               ['Thời lượng đề xuất', `${meta.minutes} phút`],
               ['KPI mục tiêu', `${mission.kpiTarget}%`],
               ['Phần thưởng', `+${mission.xp} XP`],
@@ -129,6 +131,18 @@ export default function MissionRun({ missionId }: { missionId: string }) {
                 <div className="mt-0.5 text-[14px] font-extrabold text-slate-800">{v}</div>
               </div>
             ))}
+          </div>
+
+          <div className="mt-5 rounded-2xl bg-brand-50 p-4">
+            <div className="text-[11.5px] font-bold uppercase tracking-wide text-brand-700">
+              {sheetSpec(meta.sheetType).name}
+            </div>
+            <p className="mt-1 text-[13px] leading-relaxed text-brand-900">
+              {sheetSpec(meta.sheetType).purpose}
+            </p>
+            <p className="mt-1.5 text-[12.5px] text-brand-800">
+              <b>Đạt phiếu này khi:</b> {sheetSpec(meta.sheetType).outcome}
+            </p>
           </div>
 
           <div className="mt-5 space-y-2">
@@ -237,6 +251,32 @@ export default function MissionRun({ missionId }: { missionId: string }) {
         </div>
 
         <p className="text-[12.5px] leading-relaxed text-slate-500">{part.purpose}</p>
+
+        {worksheet.reading && partIndex === 0 && (
+          <Card className="p-5">
+            <h3 className="text-[15px] font-extrabold text-slate-900">Đọc trước khi làm</h3>
+            <p className="mt-1 text-[12.5px] text-slate-500">
+              Phiếu Lý thuyết nền luôn có phần tóm tắt. Đọc kỹ phần này rồi hãy trả lời — mục tiêu là
+              thuộc, không phải đoán.
+            </p>
+            <div className="mt-3 space-y-3">
+              {worksheet.reading.map((b) => (
+                <div key={b.title} className="rounded-xl bg-slate-50 p-3.5">
+                  <div className="text-[12px] font-extrabold uppercase tracking-wide text-brand-700">
+                    {b.title}
+                  </div>
+                  <ul className="mt-1.5 space-y-1">
+                    {b.lines.map((l) => (
+                      <li key={l} className="text-[13px] leading-relaxed text-slate-700">
+                        • <MathText>{l}</MathText>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </Card>
+        )}
 
         {part.items.map((item, ii) => (
           <Card key={ii} className="p-5">
@@ -451,59 +491,84 @@ export default function MissionRun({ missionId }: { missionId: string }) {
         </div>
       </Card>
 
-      {/* Chữa bài */}
+      {/* Chữa bài + phân tích */}
       <Card className="p-6">
-        <h2 className="text-[16px] font-extrabold text-slate-900">Chữa từng câu</h2>
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <h2 className="text-[16px] font-extrabold text-slate-900">
+            Đáp án · Lời giải · Phân tích từng câu
+          </h2>
+          <button
+            className="btn-ghost py-2 text-[12.5px]"
+            onClick={() => go(`/solution/${meta.id}/${variant}`)}
+          >
+            Mở bộ giải đề đầy đủ →
+          </button>
+        </div>
+        <p className="mt-1 text-[12.5px] text-slate-500">
+          Câu sai được mở sẵn. Mỗi câu đều có lời giải từng bước, phân tích dạng bài, bẫy thường mắc và
+          liên kết tới chuyên đề gốc.
+        </p>
+
         {!showSolutions && (
           <Callout tone="amber" title="Vai trò hiện tại chỉ xem được gợi ý">
             Tài khoản Trải nghiệm không mở lời giải chi tiết. Hoàn thành bài test xếp lộ trình để nâng
             lên Học viên Chuẩn và mở toàn bộ lời giải từng bước.
           </Callout>
         )}
+
         <div className="mt-4 space-y-3">
           {g.items.map((it, i) => (
             <details
               key={i}
-              className="rounded-xl border p-4"
+              className="rounded-2xl border p-4"
               style={{ borderColor: it.isCorrect ? '#d1fae5' : '#fecdd3' }}
               open={!it.isCorrect}
             >
               <summary className="cursor-pointer">
-                <span className={`text-[13px] font-extrabold ${it.isCorrect ? 'text-emerald-600' : 'text-rose-600'}`}>
+                <span
+                  className={`text-[13px] font-extrabold ${
+                    it.isCorrect ? 'text-emerald-600' : 'text-rose-600'
+                  }`}
+                >
                   {it.isCorrect ? '✓' : '✕'} Phần {it.partOrder} · Câu {it.itemIndex + 1}
                 </span>
                 <span className="ml-2 text-[12px] text-slate-500">{it.skill}</span>
               </summary>
-              <p className="prose-math mt-3">
+
+              <p className="prose-math mt-3 font-medium text-slate-800">
                 <MathText>{it.prompt}</MathText>
               </p>
-              <div className="mt-2 space-y-1 text-[13px]">
-                <div className="text-emerald-700">
-                  <b>Đáp án đúng:</b> <MathText>{it.choices[it.correct]}</MathText>
-                </div>
-                {!it.isCorrect && it.chosen !== null && (
-                  <div className="text-rose-700">
-                    <b>Bạn chọn:</b> <MathText>{it.choices[it.chosen]}</MathText>
-                  </div>
-                )}
+
+              <div className="mt-3">
+                <ItemAnalysis
+                  item={{
+                    generatorId: it.generatorId,
+                    topicId: it.topicId,
+                    skill: it.skill,
+                    steps: it.steps,
+                    choices: it.choices,
+                    correct: it.correct,
+                    chosen: it.chosen,
+                  }}
+                  track={mission.track}
+                  showSolution={showSolutions}
+                  defaultOpen={!it.isCorrect}
+                />
               </div>
-              {showSolutions ? (
-                <ol className="mt-3 space-y-1.5 border-l-2 border-slate-200 pl-4">
-                  {it.steps.map((s, si) => (
-                    <li key={si} className="prose-math text-[13px]">
-                      <MathText>{s}</MathText>
-                    </li>
-                  ))}
-                </ol>
-              ) : (
-                <p className="mt-3 text-[12.5px] italic text-slate-500">
-                  Gợi ý: {it.steps[0]}
-                </p>
-              )}
             </details>
           ))}
         </div>
       </Card>
+
+      <Callout tone="green" title="Kết quả này đã được lưu vào hồ sơ học viên">
+        Mọi câu sai vừa rồi được lưu kèm đề, đáp án, lời giải và phân tích. Hồ sơ dùng chính dữ liệu đó
+        để xếp lại thứ tự ưu tiên trong lộ trình tối ưu của bạn.
+        <div className="mt-2">
+          <button className="btn-soft py-1.5 text-[12.5px]" onClick={() => go('/portfolio')}>
+            Mở hồ sơ học viên →
+          </button>
+        </div>
+      </Callout>
 
       <div className="flex flex-wrap gap-3">
         <button className="btn-ghost" onClick={() => go('/missions')}>

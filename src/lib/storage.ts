@@ -8,6 +8,7 @@ export const emptyState = (): AppState => ({
   profile: null,
   attempts: [],
   missionStatus: {},
+  mistakes: [],
   levelUnlocked: { thpt: 1, chuyen: 1, 'thpt-qg': 1 },
   stageUnlocked: { thpt: 1, chuyen: 1, 'thpt-qg': 1 },
   xp: 0,

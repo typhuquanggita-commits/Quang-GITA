@@ -3,10 +3,14 @@ import { useApp, go } from '@/state';
 import {
   MISSION_KIND_META,
   missionsFiltered,
+  missionByWorksheet,
+  packedTopics,
+  sheetsOfTopic,
   stagesByTrack,
   worksheetById,
   type MissionKind,
 } from '@/data/catalog';
+import { SHEET_TYPES, sheetSpec } from '@/data/sheets';
 import { BRAND_TRACK_STYLE } from '@/data/brand';
 import { strandById } from '@/data/schools';
 import { isMissionUnlocked, missionLockReason } from '@/lib/engine';
@@ -27,6 +31,8 @@ export default function Missions() {
   const [search, setSearch] = useState('');
   const [onlyOpen, setOnlyOpen] = useState(false);
   const [page, setPage] = useState(0);
+  const [view, setView] = useState<'chuyen-de' | 'danh-sach'>('chuyen-de');
+  const [openTopic, setOpenTopic] = useState<string | null>(null);
 
   const list = useMemo(() => {
     const base = missionsFiltered({
@@ -50,7 +56,7 @@ export default function Missions() {
       <SectionTitle
         eyebrow={BRAND_TRACK_STYLE[track].label}
         title="Nhiệm vụ & Phiếu luyện"
-        desc="Mỗi nhiệm vụ giao đúng một phiếu luyện gồm 3 phần, 8 câu. Nội dung được sinh lại mỗi lần làm, nên làm lại không bao giờ trùng đề cũ."
+        desc="Phiếu được soạn theo chuyên đề: mỗi chuyên đề có một bộ 6 phiếu đi theo thứ tự sư phạm, kèm phiếu lời giải và phiếu hướng dẫn ôn chắc. Nội dung sinh lại mỗi lần làm nên làm lại không trùng đề cũ."
         right={
           <div className="text-right">
             <div className="text-2xl font-extrabold tabular-nums text-brand-700">
@@ -61,6 +67,127 @@ export default function Missions() {
         }
       />
 
+      <div className="flex flex-wrap gap-1.5">
+        {(
+          [
+            ['chuyen-de', 'Xem theo chuyên đề'],
+            ['danh-sach', 'Danh sách nhiệm vụ'],
+          ] as const
+        ).map(([v, label]) => (
+          <button
+            key={v}
+            className={`chip ${view === v ? 'bg-brand-700 text-white' : 'bg-slate-100 text-slate-600'}`}
+            onClick={() => setView(v)}
+          >
+            {label}
+          </button>
+        ))}
+      </div>
+
+      {view === 'chuyen-de' && (
+        <div className="space-y-3">
+          <Card className="p-4">
+            <p className="text-[13px] leading-relaxed text-slate-700">
+              Mỗi chuyên đề có một <b>bộ phiếu</b> gồm {SHEET_TYPES.length} phiếu theo đúng thứ tự sư
+              phạm: {SHEET_TYPES.map((x) => x.short).join(' → ')}. Mỗi phiếu luyện đều có{' '}
+              <b>phiếu lời giải &amp; phân tích chuyên sâu</b> đi kèm, và cả chuyên đề có thêm{' '}
+              <b>phiếu hướng dẫn ôn chắc</b>.
+            </p>
+          </Card>
+
+          {packedTopics(track).map((t) => {
+            const packs = sheetsOfTopic(track, t.id);
+            const all = packs.flatMap((p) => p.sheets);
+            const passed = all.filter((w) => {
+              const m = missionByWorksheet(w.id);
+              return m && state.missionStatus[m.id]?.passed;
+            }).length;
+            const st = strandById(t.strand);
+            const expanded = openTopic === t.id;
+            const shownPacks = expanded ? packs : packs.slice(0, 1);
+            return (
+              <Card key={t.id} className="p-4">
+                <div className="flex flex-wrap items-start gap-3">
+                  <div className="min-w-0 flex-1">
+                    <div className="flex flex-wrap items-center gap-1.5">
+                      <h3 className="text-[14.5px] font-extrabold text-slate-900">{t.name}</h3>
+                      <Badge style={{ background: `${st.color}14`, color: st.color }}>{st.short}</Badge>
+                      {t.grade && <Badge tone="brand">Lớp {t.grade}</Badge>}
+                      <LevelDots level={t.level} />
+                      <Badge>{packs.length} đợt · {all.length} phiếu</Badge>
+                    </div>
+                    <p className="mt-1 text-[12.5px] leading-relaxed text-slate-600">{t.summary}</p>
+                  </div>
+                  <div className="w-40 shrink-0">
+                    <Progress
+                      value={(passed / Math.max(1, all.length)) * 100}
+                      height={5}
+                      tone="#047857"
+                      label={`${passed}/${all.length} đạt chuẩn`}
+                    />
+                  </div>
+                </div>
+
+                <div className="mt-3 space-y-1.5">
+                  {shownPacks.map((p) => (
+                    <div key={p.pack} className="flex flex-wrap items-center gap-1.5">
+                      <span className="mr-1 w-14 text-[11.5px] font-extrabold text-slate-400">
+                        Đợt {p.pack}
+                      </span>
+                      {p.sheets.map((w) => {
+                        const m = missionByWorksheet(w.id);
+                        const done = m && state.missionStatus[m.id]?.passed;
+                        const spec = sheetSpec(w.sheetType);
+                        return (
+                          <button
+                            key={w.id}
+                            className="chip"
+                            style={{
+                              background: done ? '#d1fae5' : `${spec.color}14`,
+                              color: done ? '#047857' : spec.color,
+                            }}
+                            title={`${spec.name} — ${w.id}`}
+                            onClick={() => m && go(`/mission/${m.id}`)}
+                          >
+                            {done ? '✓ ' : ''}
+                            {spec.order}. {spec.short}
+                          </button>
+                        );
+                      })}
+                    </div>
+                  ))}
+                </div>
+
+                <div className="mt-3 flex flex-wrap gap-2">
+                  <button
+                    className="btn-soft py-1.5 text-[12px]"
+                    onClick={() => go(`/guide/${t.id}`)}
+                  >
+                    Phiếu hướng dẫn ôn chắc →
+                  </button>
+                  <button
+                    className="btn-ghost py-1.5 text-[12px]"
+                    onClick={() => go(`/topics/${t.id}`)}
+                  >
+                    Trang chuyên đề
+                  </button>
+                  {packs.length > 1 && (
+                    <button
+                      className="btn-ghost py-1.5 text-[12px]"
+                      onClick={() => setOpenTopic(expanded ? null : t.id)}
+                    >
+                      {expanded ? 'Thu gọn các đợt' : `Xem đủ ${packs.length} đợt`}
+                    </button>
+                  )}
+                </div>
+              </Card>
+            );
+          })}
+        </div>
+      )}
+
+      {view === 'danh-sach' && (
+        <>
       {/* Giai đoạn */}
       <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
         {stages.map((s) => {
@@ -227,11 +354,19 @@ export default function Missions() {
                       {ws?.totalItems} câu · {ws?.minutes} phút · KPI mục tiêu {m.kpiTarget}% · +{m.xp} XP
                     </div>
                   </div>
-                  <div className="shrink-0">
+                  <div className="flex shrink-0 flex-col gap-2">
                     {unlocked ? (
-                      <button className="btn-primary" onClick={() => go(`/mission/${m.id}`)}>
-                        {st ? 'Làm lại' : 'Bắt đầu'}
-                      </button>
+                      <>
+                        <button className="btn-primary" onClick={() => go(`/mission/${m.id}`)}>
+                          {st ? 'Làm lại' : 'Bắt đầu'}
+                        </button>
+                        <button
+                          className="btn-ghost py-1.5 text-[12px]"
+                          onClick={() => go(`/solution/${m.worksheetId}`)}
+                        >
+                          Bộ giải đề
+                        </button>
+                      </>
                     ) : (
                       <div className="max-w-[240px] rounded-xl bg-slate-50 p-2.5 text-[11.5px] leading-relaxed text-slate-500">
                         🔒 {reason}
@@ -249,6 +384,8 @@ export default function Missions() {
             </button>
           )}
         </div>
+      )}
+        </>
       )}
     </div>
   );

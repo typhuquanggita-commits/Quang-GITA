@@ -3,7 +3,8 @@ import { useApp, go } from '@/state';
 import { TOPICS, topicById } from '@/data/topics';
 import { STRANDS, strandById } from '@/data/schools';
 import { QUESTIONS, questionsByTopic } from '@/data/questions';
-import { MISSIONS } from '@/data/catalog';
+import { MISSIONS, sheetsOfTopic, missionByWorksheet } from '@/data/catalog';
+import { sheetSpec, SHEET_TYPES } from '@/data/sheets';
 import { TIERS } from '@/data/gita';
 import { BRAND_TRACK_STYLE } from '@/data/brand';
 import { Card, SectionTitle, Badge, LevelDots, Progress, MathText, Empty, Callout } from '@/components/ui';
@@ -143,6 +144,7 @@ export function TopicDetail({ id }: { id: string }) {
   const s = strandById(topic.strand);
   const questions = questionsByTopic(topic.id);
   const missions = MISSIONS.filter((m) => m.topicId === topic.id);
+  const packsOfTopic = topic.tracks.flatMap((tr) => sheetsOfTopic(tr, topic.id));
   const prereqs = topic.prerequisites.map(topicById).filter(Boolean);
   const nextTopics = TOPICS.filter((t) => t.prerequisites.includes(topic.id));
   const activeTier = TIERS.find((t) => t.id === tier)!;
@@ -359,22 +361,39 @@ export function TopicDetail({ id }: { id: string }) {
 
       {missions.length > 0 && (
         <Card className="p-5">
-          <h3 className="text-[15px] font-extrabold text-slate-900">
-            {missions.length} nhiệm vụ luyện gắn với chuyên đề này
-          </h3>
-          <div className="mt-3 flex flex-wrap gap-1.5">
-            {missions.slice(0, 24).map((m) => (
-              <button
-                key={m.id}
-                className="chip bg-slate-100 text-slate-700 hover:bg-brand-50 hover:text-brand-800"
-                onClick={() => go(`/mission/${m.id}`)}
-              >
-                {m.id} · L{m.level}
-              </button>
-            ))}
-            {missions.length > 24 && (
-              <span className="chip bg-slate-50 text-slate-400">+{missions.length - 24} nữa</span>
-            )}
+          <h3 className="text-[15px] font-extrabold text-slate-900">Bộ phiếu của chuyên đề</h3>
+          <p className="mt-1 text-[12.5px] leading-relaxed text-slate-600">
+            {SHEET_TYPES.length} phiếu theo thứ tự sư phạm, lặp lại theo nhiều đợt với nội dung khác
+            nhau. Mỗi phiếu có phiếu lời giải &amp; phân tích chuyên sâu đi kèm.
+          </p>
+          {packsOfTopic.slice(0, 3).map((p) => (
+            <div key={p.pack} className="mt-3 flex flex-wrap items-center gap-1.5">
+              <span className="mr-1 w-14 text-[11.5px] font-extrabold text-slate-400">
+                Đợt {p.pack}
+              </span>
+              {p.sheets.map((w) => {
+                const m = missionByWorksheet(w.id);
+                const spec = sheetSpec(w.sheetType);
+                return (
+                  <button
+                    key={w.id}
+                    className="chip"
+                    style={{ background: `${spec.color}14`, color: spec.color }}
+                    onClick={() => m && go(`/mission/${m.id}`)}
+                  >
+                    {spec.order}. {spec.short}
+                  </button>
+                );
+              })}
+            </div>
+          ))}
+          <div className="mt-4 flex flex-wrap gap-2">
+            <button className="btn-primary py-1.5 text-[12.5px]" onClick={() => go(`/guide/${topic.id}`)}>
+              Phiếu hướng dẫn ôn chắc chuyên đề →
+            </button>
+            <span className="self-center text-[12px] text-slate-500">
+              Tổng {missions.length} nhiệm vụ · {packsOfTopic.length} đợt
+            </span>
           </div>
         </Card>
       )}

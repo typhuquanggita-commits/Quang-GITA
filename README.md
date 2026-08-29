@@ -28,14 +28,39 @@ Mô thức xuyên suốt mọi tầng: thư mục tài liệu, quy trình, giả
 | Hạng mục | Số lượng |
 | --- | --- |
 | Phiếu luyện | **2.000** (600 chuyên · 600 vào 10 · 800 THPT 10–12) |
+| Bộ phiếu chuyên đề | **45** chuyên đề × 6 loại phiếu × nhiều đợt |
 | Nhiệm vụ | **2.000** (1 nhiệm vụ ↔ 1 phiếu, có KPI và điều kiện mở khoá riêng) |
-| Câu hỏi sinh ra | **16.000** (8 câu/phiếu, mỗi câu có lời giải từng bước) |
-| Dạng bài tham số hoá | **64** bộ sinh đề |
+| Câu hỏi sinh ra | **16.664**, mỗi câu có lời giải từng bước + bảng phân tích dạng bài |
+| Dạng bài tham số hoá | **64** bộ sinh đề, **64** hồ sơ phân tích chuyên sâu |
 | Chuyên đề | 56, phân theo 10 mạch kiến thức và 5 tầng hấp thu |
 | Thư mục tài liệu | 408 thư mục · 1.097 đầu tài liệu bổ trợ |
 | Ma trận đề | 7 kỳ thi / trường |
 | Bí kíp · thói quen · phương pháp | 30 · 8 · 8 |
 | Vai trò phân quyền | 8 vai trò (4 học sinh · 3 giáo viên · 1 quản trị) |
+
+### Bộ phiếu theo chuyên đề
+
+Mỗi chuyên đề là **một bộ phiếu hoàn chỉnh**, đi theo đúng thứ tự sư phạm:
+
+| # | Phiếu | Mã | Mục đích |
+| --- | --- | --- | --- |
+| 1 | Lý thuyết nền | LT | Đọc tóm tắt rồi kiểm tra công thức, điều kiện áp dụng |
+| 2 | Dạng bài & Đọc vị đề | DB | Nhìn đề là biết dạng nào, đi hướng nào — chưa cần tính |
+| 3 | Kỹ năng & Phương pháp | KN | Thứ tự các bước của quy trình chuẩn, bẫy hay mắc |
+| 4 | Luyện nâng cao | NC | Nâng một bậc, thêm biến thể lạ |
+| 5 | Ôn thi tổng hợp | OT | Trộn dạng cùng mạch, mô phỏng đề không báo trước |
+| 6 | Phiếu thi | TH | Tính giờ, độ khó cao nhất, quyết định việc lên mức |
+
+Hai phiếu đi kèm, không tính vào 2.000 phiếu luyện:
+
+- **Phiếu lời giải & phân tích chuyên sâu** (`…-LG`) — đi kèm **từng** phiếu: toàn văn đề, đáp án, lời giải từng bước, ma trận phiếu, và phân tích từng dạng (dấu hiệu nhận dạng → quy trình chuẩn → bẫy hay mắc → liên hệ đề thi thật → dấu hiệu đã thành thạo).
+- **Phiếu hướng dẫn ôn chắc chuyên đề** (`…-HD`) — một phiếu cho cả chuyên đề: thứ tự học sáu phiếu, lộ trình năm tầng, checklist "ôn chắc", công thức – kỹ thuật – lỗi, lịch ôn lại 1–3–7–21.
+
+Câu hỏi ở phiếu **Đọc vị** và **Kỹ năng** được dựng trực tiếp từ bảng phân tích dạng bài, nên phương án nhiễu luôn là mô tả thật của một dạng bài khác — không phải phương án bịa.
+
+### Hồ sơ học viên
+
+Mọi câu làm sai được lưu kèm đề, đáp án, lời giải và phân tích vào **hồ sơ học viên** (`/portfolio`). Hồ sơ gồm bốn phần: tổng quan năng lực, **lộ trình tối ưu**, ngân hàng lỗi sai, và nhật ký làm bài. Lộ trình tối ưu xếp hạng chuyên đề theo công thức *tần suất ra đề × mật độ lỗi × độ mới của lỗi × độ phù hợp mức độ*, đánh dấu nhóm 20/80 và đề xuất nhiệm vụ cụ thể. Hồ sơ xuất/nhập được bằng tệp JSON.
 
 ### Vì sao 2.000 phiếu được sinh chứ không gõ tay
 
@@ -46,18 +71,21 @@ Mỗi phiếu được dựng từ các **bộ sinh đề tham số hoá** với
 - **Tái lập được**: cùng mã phiếu luôn cho cùng nội dung ở mọi máy.
 - Các phương án nhiễu được xây từ **lỗi sai điển hình**, nên việc chọn sai nói lên nguyên nhân — đó là dữ liệu đầu vào cho phần chẩn đoán.
 
-Chạy `npm run smoke` để sinh toàn bộ 16.000 câu và kiểm tra tính hợp lệ.
+Chạy `npm run smoke` để sinh toàn bộ 16.664 câu và kiểm tra tính hợp lệ (4 phương án phân biệt, có lời giải, không câu trùng trong cùng phiếu, mọi dạng bài đều có hồ sơ phân tích).
 
 ---
 
 ## Vòng lặp luyện tập
 
 ```
-Nhận nhiệm vụ → Phần 1 Khởi động → Phần 2 Luyện chuẩn → Phần 3 Thử thách
-      → Nộp bài → Chấm tự động → Báo KPI tổng & từng phần
+Chọn chuyên đề → Bộ phiếu (LT → DB → KN → NC → OT → TH)
+      → Làm từng phần của phiếu → Nộp bài
+      → Chấm tự động → Báo KPI tổng & từng phần
       → Nhận xét tình hình (sai kỹ năng nào, vì sao)
       → Giải pháp tối ưu (việc cụ thể cần làm)
-      → Định hướng: làm lại đề mới | nhiệm vụ tiếp | thử thách | nâng Level
+      → Xem đáp án + lời giải từng bước + phân tích dạng bài (phiếu …-LG)
+      → Lưu câu sai vào hồ sơ học viên → cập nhật lộ trình tối ưu
+      → Định hướng: làm lại đề mới | phiếu tiếp theo | nâng Level
 ```
 
 **Quy tắc thăng cấp**
@@ -82,7 +110,7 @@ npm install
 npm run dev        # http://localhost:3000
 npm run build      # typecheck + build production
 npm run typecheck
-npm run smoke      # sinh và kiểm tra toàn bộ 2.000 phiếu / 16.000 câu
+npm run smoke      # sinh và kiểm tra toàn bộ 2.000 phiếu / 16.664 câu
 ```
 
 Không cần API key hay dịch vụ ngoài. Toàn bộ tiến độ học tập được lưu trong `localStorage` của trình duyệt.
@@ -98,7 +126,10 @@ src/
     topics-qg.ts     Cây chuyên đề THPT lớp 10–12
     generators.ts    Bộ sinh đề luồng chuyên & vào 10
     generators-qg.ts Bộ sinh đề luồng THPT 10–12
-    catalog.ts       15 giai đoạn · 2.000 phiếu · 2.000 nhiệm vụ
+    sheets.ts        6 loại phiếu + 2 phiếu đi kèm
+    catalog.ts       15 giai đoạn · bộ phiếu theo chuyên đề · 2.000 phiếu / nhiệm vụ
+    analysis.ts      64 hồ sơ phân tích chuyên sâu theo dạng bài
+    recognition.ts   Bộ sinh câu "đọc vị đề" và "kỹ năng – phương pháp"
     questions.ts     Bài mẫu viết tay có lời giải và barem
     gita.ts          Mô thức GITA, tầng hấp thu, cấp chuyên môn, môi trường
     library-tree.ts  Kiến trúc thư mục tài liệu
@@ -111,7 +142,7 @@ src/
     roadmap.ts       Sinh lộ trình cá nhân hoá
     auth.ts          Kiểm tra quyền phía client
     storage.ts       Lưu trạng thái vào localStorage
-  pages/           14 trang giao diện
+  pages/           17 trang giao diện (gồm Bộ giải đề, Hồ sơ học viên, Phiếu hướng dẫn)
   components/      Thư viện UI + biểu đồ SVG tự vẽ
 ```
 

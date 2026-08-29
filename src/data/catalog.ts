@@ -1,6 +1,9 @@
 import type { StrandId, TrackId } from '@/types';
 import { Rng, hashSeed } from '@/lib/rng';
 import { GENERATORS, generateItem, generatorById, type GenItem, type ItemGenerator } from './generators';
+import { buildMethodItem, buildRecognitionItem } from './recognition';
+import { SHEET_TYPES, sheetSpec, type SheetType } from './sheets';
+import { TOPICS, topicById } from './topics';
 
 /* ============================================================
    GIAI ĐOẠN (STAGE) — khung tiến trình của mỗi luồng
@@ -205,8 +208,9 @@ export const stageById = (id: string) => STAGES.find((s) => s.id === id)!;
 export const stagesByTrack = (track: TrackId) =>
   STAGES.filter((s) => s.track === track).sort((a, b) => a.order - b.order);
 
+
 /* ============================================================
-   PHIẾU LUYỆN (2000 phiếu)
+   BỘ PHIẾU THEO CHUYÊN ĐỀ — 2000 phiếu luyện
    ============================================================ */
 
 export interface WorksheetMeta {
@@ -215,6 +219,9 @@ export interface WorksheetMeta {
   track: TrackId;
   stageId: string;
   level: 1 | 2 | 3 | 4 | 5;
+  sheetType: SheetType;
+  /** Đợt thứ mấy của bộ phiếu chuyên đề này. */
+  pack: number;
   generatorId: string;
   topicId: string;
   strand: StrandId;
@@ -231,8 +238,15 @@ export interface WorksheetPart {
   items: GenItem[];
 }
 
+export interface ReadingBlock {
+  title: string;
+  lines: string[];
+}
+
 export interface Worksheet extends WorksheetMeta {
   parts: WorksheetPart[];
+  /** Phần đọc tóm tắt, chỉ có ở phiếu Lý thuyết nền. */
+  reading?: ReadingBlock[];
 }
 
 /** Phân bổ 2000 phiếu cho ba luồng. */
@@ -245,14 +259,42 @@ export const TOTAL_WORKSHEETS = Object.values(TRACK_QUOTA).reduce((a, b) => a + 
 
 const pad = (n: number, w: number) => String(n).padStart(w, '0');
 
-/** Các dạng bài khả dụng cho một luồng ở một mức độ (nới biên khi thiếu). */
-function poolFor(track: TrackId, level: number): ItemGenerator[] {
-  const exact = GENERATORS.filter((g) => g.tracks.includes(track) && g.level === level);
-  if (exact.length >= 2) return exact;
-  const near = GENERATORS.filter(
-    (g) => g.tracks.includes(track) && Math.abs(g.level - level) <= 1,
+/** Chuyên đề có ít nhất một bộ sinh đề thì mới dựng được bộ phiếu luyện. */
+export function generatorsOfTopic(track: TrackId, topicId: string): ItemGenerator[] {
+  return GENERATORS.filter((g) => g.tracks.includes(track) && g.topicId === topicId);
+}
+
+function generatorsOfStrand(track: TrackId, strand: StrandId, level: number): ItemGenerator[] {
+  const exact = GENERATORS.filter(
+    (g) => g.tracks.includes(track) && g.strand === strand && Math.abs(g.level - level) <= 1,
   );
-  return near.length ? near : GENERATORS.filter((g) => g.tracks.includes(track));
+  if (exact.length) return exact;
+  const any = GENERATORS.filter((g) => g.tracks.includes(track) && g.strand === strand);
+  return any.length ? any : GENERATORS.filter((g) => g.tracks.includes(track));
+}
+
+/** Chuyên đề thuộc giai đoạn nào của luồng — chọn giai đoạn có mức độ gần nhất. */
+export function stageForTopic(track: TrackId, level: number, grade?: number): Stage {
+  const stages = stagesByTrack(track);
+  if (track === 'thpt-qg' && grade) {
+    const byGrade: Record<number, string> = { 10: 'Q1', 11: 'Q2', 12: 'Q3' };
+    const found = stages.find((s) => s.id === byGrade[grade]);
+    if (found) return found;
+  }
+  const exact = stages.find((s) => s.levels.includes(level as 1 | 2 | 3 | 4 | 5));
+  if (exact) return exact;
+  return stages.reduce((best, s) => {
+    const avg = s.levels.reduce((a, b) => a + b, 0) / s.levels.length;
+    const bestAvg = best.levels.reduce((a, b) => a + b, 0) / best.levels.length;
+    return Math.abs(avg - level) < Math.abs(bestAvg - level) ? s : best;
+  }, stages[0]);
+}
+
+/** Các chuyên đề có bộ phiếu luyện của một luồng, giữ nguyên thứ tự sư phạm. */
+export function packedTopics(track: TrackId) {
+  return TOPICS.filter(
+    (t) => t.tracks.includes(track) && generatorsOfTopic(track, t.id).length > 0,
+  ).sort((a, b) => (a.grade ?? 9) - (b.grade ?? 9) || a.level - b.level || b.frequency - a.frequency);
 }
 
 function buildCatalog(): WorksheetMeta[] {
@@ -260,34 +302,44 @@ function buildCatalog(): WorksheetMeta[] {
   let counter = 0;
 
   for (const track of ['thpt', 'chuyen', 'thpt-qg'] as TrackId[]) {
-    const stages = stagesByTrack(track);
-    const total = TRACK_QUOTA[track];
-    const perStage = Math.floor(total / stages.length);
+    const quota = TRACK_QUOTA[track];
+    const topics = packedTopics(track);
+    let made = 0;
+    let pack = 1;
 
-    stages.forEach((stage, si) => {
-      const count = si === stages.length - 1 ? total - perStage * (stages.length - 1) : perStage;
-      for (let i = 0; i < count; i++) {
-        counter += 1;
-        const level = stage.levels[i % stage.levels.length];
-        const pool = poolFor(track, level);
-        const primary = pool[i % pool.length];
-        const id = `PL-${pad(counter, 4)}`;
-        out.push({
-          id,
-          index: counter,
-          track,
-          stageId: stage.id,
-          level,
-          generatorId: primary.id,
-          topicId: primary.topicId,
-          strand: primary.strand,
-          title: `${primary.name} — Phiếu ${pad(Math.floor(i / pool.length) + 1, 2)}`,
-          minutes: 18 + level * 4,
-          totalItems: 8,
-          seed: hashSeed(`${id}:${primary.id}:${level}`),
-        });
+    while (made < quota) {
+      for (const topic of topics) {
+        if (made >= quota) break;
+        const primary = generatorsOfTopic(track, topic.id)[0];
+        const stage = stageForTopic(track, topic.level, topic.grade);
+
+        for (const spec of SHEET_TYPES) {
+          if (made >= quota) break;
+          counter += 1;
+          made += 1;
+          const level = Math.min(5, Math.max(1, topic.level + spec.levelDelta)) as 1 | 2 | 3 | 4 | 5;
+          const id = `PL-${pad(counter, 4)}`;
+          out.push({
+            id,
+            index: counter,
+            track,
+            stageId: stage.id,
+            level,
+            sheetType: spec.id,
+            pack,
+            generatorId: primary.id,
+            topicId: topic.id,
+            strand: topic.strand,
+            title: `${topic.name} — ${spec.short}${pack > 1 ? ` (đợt ${pack})` : ''}`,
+            minutes: spec.minutes,
+            totalItems: spec.items,
+            seed: hashSeed(`${id}:${topic.id}:${spec.id}:${pack}`),
+          });
+        }
       }
-    });
+      pack += 1;
+      if (pack > 60) break; // chốt chặn an toàn
+    }
   }
   return out;
 }
@@ -295,25 +347,109 @@ function buildCatalog(): WorksheetMeta[] {
 export const WORKSHEETS: WorksheetMeta[] = buildCatalog();
 export const worksheetById = (id: string) => WORKSHEETS.find((w) => w.id === id);
 
-const PART_SPECS = [
-  { name: 'Phần 1 · Khởi động', purpose: 'Làm nóng kỹ năng nền, bảo đảm không sai bước cơ bản.', count: 3, dl: -1 },
-  { name: 'Phần 2 · Luyện chuẩn', purpose: 'Đúng dạng trọng tâm của phiếu, đúng mức độ mục tiêu.', count: 3, dl: 0 },
-  { name: 'Phần 3 · Thử thách', purpose: 'Nâng một bậc để kiểm tra khả năng bứt phá.', count: 2, dl: 1 },
-];
+/** Toàn bộ phiếu của một chuyên đề, nhóm theo đợt. */
+export function sheetsOfTopic(track: TrackId, topicId: string) {
+  const all = WORKSHEETS.filter((w) => w.track === track && w.topicId === topicId);
+  const packs = [...new Set(all.map((w) => w.pack))].sort((a, b) => a - b);
+  return packs.map((p) => ({
+    pack: p,
+    sheets: SHEET_TYPES.map((spec) => all.find((w) => w.pack === p && w.sheetType === spec.id)).filter(
+      (w): w is WorksheetMeta => !!w,
+    ),
+  }));
+}
+
+/* ---------------- Sinh nội dung của một phiếu ---------------- */
+
+interface PartPlan {
+  name: string;
+  purpose: string;
+  count: number;
+  mode: 'compute' | 'recognize' | 'method';
+  levelDelta: number;
+  mixed: boolean;
+}
+
+function planParts(sheetType: SheetType, items: number): PartPlan[] {
+  const half = Math.ceil(items / 2);
+  const rest = items - half;
+  switch (sheetType) {
+    case 'ly-thuyet':
+      return [
+        { name: 'Phần 1 · Nhớ công thức & điều kiện', purpose: 'Kiểm tra bạn đã thuộc phần nền chưa.', count: half, mode: 'compute', levelDelta: -1, mixed: false },
+        { name: 'Phần 2 · Áp dụng trực tiếp', purpose: 'Dùng ngay công thức vừa đọc, chưa cần biến đổi phức tạp.', count: rest, mode: 'compute', levelDelta: -1, mixed: false },
+      ];
+    case 'dang-bai':
+      return [
+        { name: 'Phần 1 · Đọc vị đề', purpose: 'Nhìn đề và nhận ra dạng bài, chưa cần tính tới đáp số.', count: half, mode: 'recognize', levelDelta: 0, mixed: false },
+        { name: 'Phần 2 · Kiểm chứng bằng bài tính', purpose: 'Giải thật để xác nhận bạn đã nhận dạng đúng.', count: rest, mode: 'compute', levelDelta: 0, mixed: false },
+      ];
+    case 'ky-nang':
+      return [
+        { name: 'Phần 1 · Quy trình chuẩn', purpose: 'Nắm đúng thứ tự các bước và các bẫy của dạng bài.', count: half, mode: 'method', levelDelta: 0, mixed: false },
+        { name: 'Phần 2 · Thực hành quy trình', purpose: 'Áp dụng đúng quy trình vừa ôn vào bài cụ thể.', count: rest, mode: 'compute', levelDelta: 0, mixed: false },
+      ];
+    case 'nang-cao':
+      return [
+        { name: 'Phần 1 · Nâng một bậc', purpose: 'Cùng dạng nhưng mức độ cao hơn.', count: half, mode: 'compute', levelDelta: 1, mixed: false },
+        { name: 'Phần 2 · Biến thể lạ', purpose: 'Dạng liên quan cùng mạch, kiểm tra bạn hiểu bản chất hay chỉ nhớ khuôn.', count: rest, mode: 'compute', levelDelta: 1, mixed: true },
+      ];
+    case 'on-thi':
+      return [
+        { name: 'Phần 1 · Trọng tâm chuyên đề', purpose: 'Giữ chắc phần lõi trước khi trộn dạng.', count: half, mode: 'compute', levelDelta: 0, mixed: false },
+        { name: 'Phần 2 · Trộn cùng mạch', purpose: 'Các dạng xuất hiện xen kẽ, không báo trước — giống đề thi thật.', count: rest, mode: 'compute', levelDelta: 0, mixed: true },
+      ];
+    default:
+      return [
+        { name: 'Phần 1 · Đề thi — phần cơ bản', purpose: 'Nhóm câu bắt buộc phải lấy trọn.', count: half, mode: 'compute', levelDelta: 0, mixed: true },
+        { name: 'Phần 2 · Đề thi — phần phân hoá', purpose: 'Nhóm câu quyết định thứ hạng.', count: rest, mode: 'compute', levelDelta: 1, mixed: true },
+      ];
+  }
+}
+
+function readingFor(topicId: string): ReadingBlock[] | undefined {
+  const t = topicById(topicId);
+  if (!t) return undefined;
+  const blocks: ReadingBlock[] = [
+    { title: 'Chuyên đề này nói về gì', lines: [t.summary] },
+    { title: 'Chuẩn đầu ra', lines: t.outcomes },
+    { title: 'Kỹ thuật cốt lõi', lines: t.techniques },
+  ];
+  if (t.keyFormulas?.length) blocks.push({ title: 'Công thức cần thuộc', lines: t.keyFormulas });
+  blocks.push({ title: 'Lỗi thường gặp', lines: t.pitfalls });
+  return blocks;
+}
 
 /** Sinh nội dung đầy đủ của một phiếu từ metadata (luôn tái lập được từ seed). */
 export function buildWorksheet(meta: WorksheetMeta, variant = 0): Worksheet {
   const r = new Rng(meta.seed + variant * 7919);
   const primary = generatorById(meta.generatorId)!;
+  const topicPool = generatorsOfTopic(meta.track, meta.topicId);
+  const spec = sheetSpec(meta.sheetType);
 
-  // Không để hai câu trùng đề trong cùng một phiếu
   const usedPrompts = new Set<string>();
-  const pushUnique = (items: GenItem[], gen: ItemGenerator, pool: ItemGenerator[]) => {
-    // Thử sinh lại cùng dạng trước; nếu vẫn trùng thì đổi sang dạng khác cùng mức.
-    const candidates = [gen, ...pool.filter((g) => g.id !== gen.id)];
-    for (const candidate of candidates) {
-      for (let attempt = 0; attempt < 20; attempt++) {
-        const item = generateItem(candidate, r);
+
+  const makeItem = (gen: ItemGenerator, mode: PartPlan['mode'], analysisPool: ItemGenerator[]) =>
+    mode === 'recognize'
+      ? buildRecognitionItem(gen, analysisPool, r)
+      : mode === 'method'
+        ? buildMethodItem(gen, analysisPool, r)
+        : generateItem(gen, r);
+
+  /**
+   * Không để hai câu trùng đề trong cùng một phiếu. Thử sinh lại với dạng ưu tiên
+   * trước; nếu không gian tham số của dạng đó đã cạn thì chuyển sang dạng khác
+   * cùng mạch — vẫn đúng trọng tâm nhưng đủ đa dạng.
+   */
+  const pushUnique = (
+    items: GenItem[],
+    candidates: ItemGenerator[],
+    mode: PartPlan['mode'],
+    analysisPool: ItemGenerator[],
+  ) => {
+    for (const gen of candidates) {
+      for (let attempt = 0; attempt < 16; attempt++) {
+        const item = makeItem(gen, mode, analysisPool);
         if (!usedPrompts.has(item.prompt)) {
           usedPrompts.add(item.prompt);
           items.push(item);
@@ -321,29 +457,47 @@ export function buildWorksheet(meta: WorksheetMeta, variant = 0): Worksheet {
         }
       }
     }
-    items.push(generateItem(gen, r));
+    items.push(makeItem(candidates[0] ?? primary, mode, analysisPool));
   };
 
-  const parts: WorksheetPart[] = PART_SPECS.map((spec, pi) => {
-    const targetLevel = Math.min(5, Math.max(1, meta.level + spec.dl));
-    const pool = poolFor(meta.track, targetLevel);
+  const trackPool = GENERATORS.filter((g) => g.tracks.includes(meta.track));
+
+  const parts: WorksheetPart[] = planParts(meta.sheetType, meta.totalItems).map((plan, pi) => {
+    const level = Math.min(5, Math.max(1, meta.level + plan.levelDelta));
+    const strandPool = generatorsOfStrand(meta.track, meta.strand, level);
+    const base = plan.mixed ? strandPool : topicPool.length ? topicPool : strandPool;
+
     const items: GenItem[] = [];
-    for (let i = 0; i < spec.count; i++) {
-      // Phần 2 bám sát dạng chính; các phần khác lấy từ pool cùng mức
-      const gen = pi === 1 ? primary : pool[r.int(0, pool.length - 1)];
-      pushUnique(items, gen, pool);
+    for (let i = 0; i < plan.count; i++) {
+      const preferred = plan.mixed
+        ? base[r.int(0, base.length - 1)]
+        : (base[i % base.length] ?? primary);
+      // Ưu tiên dạng chính → các dạng còn lại cùng chuyên đề → cùng mạch → cùng luồng
+      const seen = new Set([preferred.id]);
+      const candidates: ItemGenerator[] = [preferred];
+      for (const g of [...base, ...strandPool, ...trackPool]) {
+        if (!seen.has(g.id)) {
+          seen.add(g.id);
+          candidates.push(g);
+        }
+      }
+      pushUnique(items, candidates, plan.mode, strandPool);
     }
-    return { order: pi + 1, name: spec.name, purpose: spec.purpose, items };
+    return { order: pi + 1, name: plan.name, purpose: plan.purpose, items };
   });
 
-  return { ...meta, parts };
+  return {
+    ...meta,
+    parts,
+    reading: spec.id === 'ly-thuyet' ? readingFor(meta.topicId) : undefined,
+  };
 }
 
 /* ============================================================
-   NHIỆM VỤ (2000 nhiệm vụ) — mỗi nhiệm vụ giao đúng một phiếu
+   NHIỆM VỤ — mỗi nhiệm vụ giao đúng một phiếu
    ============================================================ */
 
-export type MissionKind = 'khoi-dong' | 'ren-luyen' | 'kiem-tra' | 'thu-thach' | 'tong-duyet';
+export type MissionKind = SheetType;
 
 export interface Mission {
   id: string;
@@ -355,51 +509,30 @@ export interface Mission {
   topicId: string;
   strand: StrandId;
   kind: MissionKind;
+  pack: number;
   title: string;
   objective: string;
   kpiTarget: number;
   xp: number;
-  /** Nhiệm vụ liền trước trong cùng giai đoạn — dùng cho quy tắc mở khoá tuần tự. */
   previousId?: string;
 }
 
-export const MISSION_KIND_META: Record<MissionKind, { label: string; color: string; hint: string }> = {
-  'khoi-dong': {
-    label: 'Khởi động',
-    color: '#0891b2',
-    hint: 'Làm nóng kỹ năng, ưu tiên độ chính xác hơn tốc độ.',
-  },
-  'ren-luyen': {
-    label: 'Rèn luyện',
-    color: '#4f46e5',
-    hint: 'Lặp lại dạng trọng tâm đến khi thành phản xạ.',
-  },
-  'kiem-tra': {
-    label: 'Kiểm tra',
-    color: '#b45309',
-    hint: 'Làm trong thời gian quy định, không xem gợi ý.',
-  },
-  'thu-thach': {
-    label: 'Thử thách',
-    color: '#be123c',
-    hint: 'Cao hơn mức hiện tại một bậc — sai cũng có giá trị.',
-  },
-  'tong-duyet': {
-    label: 'Tổng duyệt',
-    color: '#047857',
-    hint: 'Mô phỏng điều kiện phòng thi, chấm theo barem.',
-  },
-};
+export const MISSION_KIND_META: Record<MissionKind, { label: string; color: string; hint: string }> =
+  Object.fromEntries(
+    SHEET_TYPES.map((s) => [s.id, { label: s.short, color: s.color, hint: s.hint }]),
+  ) as Record<MissionKind, { label: string; color: string; hint: string }>;
 
-const KIND_CYCLE: MissionKind[] = ['khoi-dong', 'ren-luyen', 'ren-luyen', 'kiem-tra', 'thu-thach'];
+function buildObjective(spec: (typeof SHEET_TYPES)[number], topicName: string, level: number): string {
+  return `${spec.purpose} Chuyên đề: “${topicName}”, mức độ ${level}. Yêu cầu đạt KPI ≥ ${spec.kpiTarget}%. Kết quả mong đợi: ${spec.outcome}`;
+}
 
 function buildMissions(): Mission[] {
   const byStage = new Map<string, number>();
   return WORKSHEETS.map((w, i) => {
     const seq = (byStage.get(w.stageId) ?? 0) + 1;
     byStage.set(w.stageId, seq);
-    const stage = stageById(w.stageId);
-    const kind: MissionKind = stage.order === 5 ? 'tong-duyet' : KIND_CYCLE[(seq - 1) % KIND_CYCLE.length];
+    const spec = sheetSpec(w.sheetType);
+    const topicName = topicById(w.topicId)?.name ?? w.topicId;
     const id = `NV-${pad(i + 1, 4)}`;
     return {
       id,
@@ -410,30 +543,15 @@ function buildMissions(): Mission[] {
       level: w.level,
       topicId: w.topicId,
       strand: w.strand,
-      kind,
-      title: `${stage.name.split('·')[0].trim()} · NV${pad(seq, 3)} — ${w.title.split('—')[0].trim()}`,
-      objective: buildObjective(kind, w.level, w.title),
-      kpiTarget: kind === 'thu-thach' ? 75 : 90,
-      xp: 40 + w.level * 15 + (kind === 'kiem-tra' ? 20 : 0) + (kind === 'tong-duyet' ? 40 : 0),
+      kind: w.sheetType,
+      pack: w.pack,
+      title: `${topicName} — ${spec.name}${w.pack > 1 ? ` (đợt ${w.pack})` : ''}`,
+      objective: buildObjective(spec, topicName, w.level),
+      kpiTarget: spec.kpiTarget,
+      xp: 30 + w.level * 12 + spec.order * 6,
       previousId: seq > 1 ? `NV-${pad(i, 4)}` : undefined,
     };
   });
-}
-
-function buildObjective(kind: MissionKind, level: number, title: string): string {
-  const topic = title.split('—')[0].trim();
-  switch (kind) {
-    case 'khoi-dong':
-      return `Làm chủ lại các bước cơ bản của dạng “${topic}”. Yêu cầu: đúng ≥ 90% và không mắc lỗi điều kiện.`;
-    case 'ren-luyen':
-      return `Luyện phản xạ với dạng “${topic}” ở mức độ ${level}. Yêu cầu: đúng ≥ 90%, hoàn thành trong thời gian quy định.`;
-    case 'kiem-tra':
-      return `Kiểm tra độ vững của dạng “${topic}”: làm liên tục, không xem gợi ý, đạt KPI ≥ 90% để được xét nâng mức.`;
-    case 'thu-thach':
-      return `Thử thách vượt mức: các câu ở phần 3 cao hơn mức hiện tại một bậc. Đạt ≥ 75% là tín hiệu sẵn sàng lên Level ${Math.min(5, level + 1)}.`;
-    default:
-      return `Tổng duyệt: phiếu trộn nhiều dạng theo đúng cấu trúc đề thi. Yêu cầu KPI ≥ 90% và đúng nhịp thời gian.`;
-  }
 }
 
 export const MISSIONS: Mission[] = buildMissions();
@@ -450,6 +568,8 @@ export function missionsFiltered(opts: {
   level?: number;
   strand?: StrandId;
   kind?: MissionKind;
+  topicId?: string;
+  pack?: number;
   search?: string;
 }): Mission[] {
   const q = opts.search?.trim().toLowerCase();
@@ -459,7 +579,9 @@ export function missionsFiltered(opts: {
     if (opts.level && m.level !== opts.level) return false;
     if (opts.strand && m.strand !== opts.strand) return false;
     if (opts.kind && m.kind !== opts.kind) return false;
-    if (q && !(`${m.id} ${m.title} ${m.worksheetId}`.toLowerCase().includes(q))) return false;
+    if (opts.topicId && m.topicId !== opts.topicId) return false;
+    if (opts.pack && m.pack !== opts.pack) return false;
+    if (q && !`${m.id} ${m.title} ${m.worksheetId}`.toLowerCase().includes(q)) return false;
     return true;
   });
 }
@@ -467,19 +589,24 @@ export function missionsFiltered(opts: {
 /** Thống kê catalog để hiển thị trên trang chủ. */
 export function catalogStats() {
   const byTrack = (t: TrackId) => WORKSHEETS.filter((w) => w.track === t).length;
+  const items = WORKSHEETS.reduce((s, w) => s + w.totalItems, 0);
   const byStage = STAGES.map((s) => ({
     stage: s,
     worksheets: WORKSHEETS.filter((w) => w.stageId === s.id).length,
     missions: MISSIONS.filter((m) => m.stageId === s.id).length,
   }));
+  const packedTopicCount =
+    packedTopics('thpt').length + packedTopics('chuyen').length + packedTopics('thpt-qg').length;
   return {
     worksheets: WORKSHEETS.length,
     missions: MISSIONS.length,
-    items: WORKSHEETS.length * 8,
+    items,
     thpt: byTrack('thpt'),
     chuyen: byTrack('chuyen'),
     quocGia: byTrack('thpt-qg'),
     generators: GENERATORS.length,
+    sheetTypes: SHEET_TYPES.length,
+    packedTopics: packedTopicCount,
     byStage,
   };
 }

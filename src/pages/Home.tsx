@@ -1,6 +1,7 @@
 import { useApp, go } from '@/state';
 import { BRAND, BRAND_TRACK_STYLE } from '@/data/brand';
 import { catalogStats, stagesByTrack } from '@/data/catalog';
+import { SHEET_TYPES, COMPANION_SHEETS } from '@/data/sheets';
 import { PILLARS, TIERS } from '@/data/gita';
 import { SCHOOLS } from '@/data/schools';
 import { TOPICS } from '@/data/topics';
@@ -50,7 +51,7 @@ export default function Home() {
             {[
               ['2.000', 'phiếu luyện'],
               ['2.000', 'nhiệm vụ'],
-              [stats.items.toLocaleString('vi-VN'), 'câu hỏi có lời giải'],
+              [stats.items.toLocaleString('vi-VN'), 'câu hỏi có lời giải & phân tích'],
               ['90%', 'KPI chuẩn thăng cấp'],
             ].map(([v, l]) => (
               <div key={l}>
@@ -111,6 +112,62 @@ export default function Home() {
               </Card>
             );
           })}
+        </div>
+      </section>
+
+      {/* Bộ phiếu theo chuyên đề */}
+      <section>
+        <SectionTitle
+          eyebrow="Cấu trúc nội dung"
+          title="Mỗi chuyên đề là một bộ phiếu hoàn chỉnh"
+          desc={`${stats.packedTopics} bộ phiếu chuyên đề, mỗi bộ gồm ${SHEET_TYPES.length} phiếu đi theo đúng thứ tự sư phạm — cộng thêm hai phiếu đi kèm để học sinh hiểu bản chất chứ không chỉ làm cho xong.`}
+          right={
+            <button className="btn-ghost" onClick={() => go('/missions')}>
+              Xem theo chuyên đề →
+            </button>
+          }
+        />
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {SHEET_TYPES.map((spec) => (
+            <Card key={spec.id} className="p-5">
+              <div className="flex items-center gap-2">
+                <span
+                  className="flex h-8 w-8 items-center justify-center rounded-xl text-sm font-extrabold text-white"
+                  style={{ background: spec.color }}
+                >
+                  {spec.order}
+                </span>
+                <h3 className="text-[14.5px] font-extrabold leading-snug text-slate-900">
+                  {spec.name}
+                </h3>
+              </div>
+              <p className="mt-2 text-[12.5px] leading-relaxed text-slate-600">{spec.purpose}</p>
+              <div className="mt-2 flex flex-wrap gap-1.5">
+                <Badge>{spec.items} câu</Badge>
+                <Badge>{spec.minutes} phút</Badge>
+                <Badge tone="brand">KPI ≥ {spec.kpiTarget}%</Badge>
+              </div>
+            </Card>
+          ))}
+        </div>
+
+        <div className="mt-3 grid gap-3 lg:grid-cols-2">
+          {COMPANION_SHEETS.map((c) => (
+            <Card key={c.code} className="p-5">
+              <div className="flex flex-wrap items-center gap-2">
+                <Badge tone="amber">Phiếu đi kèm · mã …-{c.code}</Badge>
+              </div>
+              <h3 className="mt-2 text-[14.5px] font-extrabold text-slate-900">{c.name}</h3>
+              <p className="mt-0.5 text-[12px] font-semibold text-slate-500">{c.scope}</p>
+              <ul className="mt-2 space-y-1">
+                {c.contains.map((x) => (
+                  <li key={x} className="text-[12.5px] leading-relaxed text-slate-700">
+                    ❐ {x}
+                  </li>
+                ))}
+              </ul>
+            </Card>
+          ))}
         </div>
       </section>
 
@@ -200,7 +257,7 @@ export default function Home() {
             { label: 'Phiếu luyện', value: '2.000', sub: `${stats.chuyen} chuyên · ${stats.thpt} vào 10 · ${stats.quocGia} THPT` },
             { label: 'Nhiệm vụ', value: '2.000', sub: 'mỗi nhiệm vụ có KPI và điều kiện mở khoá' },
             { label: 'Thư mục tài liệu', value: String(folders), sub: `${artifacts} đầu tài liệu bổ trợ` },
-            { label: 'Dạng bài tự sinh', value: String(stats.generators), sub: 'mỗi lần làm lại là một đề mới' },
+            { label: 'Dạng bài tự sinh', value: String(stats.generators), sub: 'mỗi dạng có bảng phân tích chuyên sâu riêng' },
           ].map((s) => (
             <Card key={s.label} className="p-5">
               <div className="text-[11px] font-bold uppercase tracking-wide text-slate-400">
@@ -223,7 +280,7 @@ export default function Home() {
         <Card className="p-6">
           <ol className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {[
-              ['1', 'Làm từng phần', 'Phiếu chia 3 phần: Khởi động → Luyện chuẩn → Thử thách. Hết phần này mới sang phần sau.'],
+              ['1', 'Làm từng phần', 'Mỗi phiếu chia thành các phần theo mục đích riêng. Hết phần này mới sang phần sau.'],
               ['2', 'Chấm & báo kết quả', 'Chấm tự động ngay khi nộp, báo KPI tổng và KPI từng phần.'],
               ['3', 'Nhận xét & giải pháp', 'Chỉ rõ kỹ năng nào sai, vì sao sai, và việc cụ thể cần làm để sửa.'],
               ['4', 'Định hướng bước kế', 'Làm lại đề mới, sang nhiệm vụ tiếp, hoặc nâng Level nếu đã đạt KPI 90%.'],
