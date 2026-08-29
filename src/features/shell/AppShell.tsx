@@ -13,6 +13,7 @@ import { can, type Principal } from '../../auth/roles.ts';
 import { accountById } from '../../auth/model.ts';
 import { hashToRoute, routeToHash, ROUTE_PERMISSION, type Route, type RouteName } from './routes.ts';
 import { Badge, Button, Empty } from '../../components/ui/primitives.tsx';
+import { GitaMark } from '../../brand/Brandmark.tsx';
 import {
   IconAlert,
   IconBook,
@@ -93,6 +94,9 @@ const PacketView = lazy(() =>
 );
 const Dossier = lazy(() =>
   import('../dossier/Dossier.tsx').then((m) => ({ default: m.Dossier })),
+);
+const BrandBook = lazy(() =>
+  import('../../brand/BrandBook.tsx').then((m) => ({ default: m.BrandBook })),
 );
 const OrgMetrics = lazy(() =>
   import('../metrics/OrgMetrics.tsx').then((m) => ({ default: m.OrgMetrics })),
@@ -248,6 +252,11 @@ function Shell(): React.ReactElement {
           label: locale === 'vi' ? 'Hiệu chuẩn' : 'Calibration',
           icon: <IconSigma size={18} />,
         },
+        {
+          route: { name: 'brand' },
+          label: locale === 'vi' ? 'Nhận diện' : 'Identity',
+          icon: <IconSparkle size={18} />,
+        },
         { route: { name: 'settings' }, label: t('nav.settings'), icon: <IconSettings size={18} /> },
       ],
     },
@@ -276,7 +285,8 @@ function Shell(): React.ReactElement {
             navigate({ name: 'dashboard' });
           }}
         >
-          <span className="brand-mark" aria-hidden="true">365</span>
+          {/* The real mark, not a placeholder chip. */}
+          <GitaMark height={26} title="" />
           <span className="brand-text">
             <span className="brand-name">{t('app.name')}</span>
             <br />
@@ -450,6 +460,8 @@ function RouteView({
       return <CalibrationConsole />;
     case 'metrics':
       return <OrgMetrics navigate={navigate} />;
+    case 'brand':
+      return <BrandBook />;
     case 'settings':
       return <Settings />;
     default:

@@ -29,20 +29,12 @@
   text-decoration: none;
   color: var(--text);
 }
-.brand-mark {
-  flex: none;
-  width: 34px;
-  height: 34px;
-  border-radius: var(--radius-md);
-  background: linear-gradient(140deg, var(--primary), var(--rw) 90%);
-  color: #fff;
-  display: grid;
-  place-items: center;
-  font-weight: var(--weight-bold);
-  font-size: var(--text-xs);
-  letter-spacing: 0.02em;
-  box-shadow: var(--shadow-sm);
-}
+/*
+ * The sidebar carries the real mark, which brings its own colour. The gradient
+ * chip that used to sit here was a stand-in from before there was a brand, and
+ * a stand-in left in place beside a real identity reads as a second one.
+ */
+.sidebar .brand svg { flex: none; }
 .brand-name { font-weight: var(--weight-bold); font-size: var(--text-md); letter-spacing: -0.02em; }
 .brand-tag { font-size: var(--text-2xs); color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; }
 
@@ -850,3 +842,56 @@ mark.hl[data-note='true'] { border-bottom: 2px dotted currentColor; cursor: poin
   text-decoration: underline;
   cursor: pointer;
 }
+
+/* ================================================================== */
+/* Brand book                                                          */
+/* ================================================================== */
+
+.brand-marks { display: flex; flex-wrap: wrap; gap: var(--space-5); }
+
+.brand-swatch-block {
+  display: grid;
+  gap: var(--space-3);
+  justify-items: center;
+  padding: var(--space-5);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: #fff;
+  min-width: 12rem;
+}
+/* The mark has to survive a dark ground, so the book shows it on one. */
+.brand-dark { background: #12182a; color: #eef1f7; border-color: #2a3350; }
+
+.brand-chip {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 3px;
+  border: 1px solid var(--border-strong);
+  vertical-align: -3px;
+  margin-inline-end: var(--space-2);
+}
+
+.pillar-grid {
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+}
+
+.pillar-swatch {
+  display: grid;
+  gap: var(--space-2);
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--pillar);
+  background: var(--surface);
+}
+.pillar-letter {
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  line-height: 1;
+  color: var(--pillar);
+}
+.pillar-name { font-weight: var(--weight-semibold); }
+.pillar-role { font-size: var(--text-sm); color: var(--text-muted); line-height: var(--leading-normal); }

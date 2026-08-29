@@ -1,0 +1,224 @@
+/* ==================================================================
+   The document identity, on screen and on paper.
+
+   Two jobs. On screen these rules give a document its masthead and
+   frame; in print they add what paper needs and the screen does not —
+   page geometry, running footers, and the break rules that stop a
+   table splitting a row across two sheets.
+
+   The governing decision: printed output is a first-class artefact,
+   not a screenshot with the navigation hidden. A learner works from
+   paper, a parent reads a report on paper, and a coach files one. So
+   the print rules below are written as a document designer would write
+   them rather than as an afterthought appended to a screen stylesheet.
+   ================================================================== */
+
+/* ---------------- The lockup ---------------- */
+
+.lockup {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.lockup-rule {
+  width: 1px;
+  align-self: stretch;
+  min-height: 1.8rem;
+  background: var(--border-strong);
+}
+
+.lockup-text { display: flex; flex-direction: column; line-height: 1.15; }
+
+.lockup-name {
+  font-weight: var(--weight-bold, 700);
+  letter-spacing: 0.04em;
+  color: var(--text);
+}
+
+.lockup-tagline {
+  font-size: var(--text-2xs);
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+
+/* ---------------- The document frame ---------------- */
+
+.doc {
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  max-width: 60rem;
+  margin-inline: auto;
+}
+
+.doc-masthead {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: var(--space-4);
+  /* The rule under the masthead carries the pillar colour, so the document
+     announces which part of the model it serves before anything is read. */
+  border-bottom: 3px solid var(--pillar, var(--primary));
+}
+
+.doc[data-pillar='goal'] { --pillar: #1a5197; }
+.doc[data-pillar='inspirits'] { --pillar: #c01c22; }
+.doc[data-pillar='talent'] { --pillar: #2f6ba8; }
+.doc[data-pillar='action'] { --pillar: #0f6a5a; }
+
+.doc-masthead-meta { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; }
+
+.doc-pillar {
+  font-size: var(--text-2xs);
+  font-weight: var(--weight-semibold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--pillar);
+}
+
+.doc-kind { font-size: var(--text-sm); color: var(--text-secondary); }
+
+.doc-title-block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-5);
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-block: var(--space-5);
+}
+
+.doc-title { margin: 0; font-size: var(--text-2xl); letter-spacing: -0.02em; }
+
+.doc-meta {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 2px var(--space-3);
+  margin: 0;
+  font-size: var(--text-xs);
+}
+.doc-meta dt { color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; }
+.doc-meta dd { margin: 0; font-weight: var(--weight-medium); }
+.doc-ref { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+
+.doc-body { display: grid; gap: var(--space-5); }
+
+.doc-limits {
+  margin-top: var(--space-6);
+  padding: var(--space-4);
+  border: 1px solid var(--border-strong);
+  border-inline-start: 4px solid var(--pillar, var(--primary));
+  border-radius: var(--radius-sm);
+  font-size: var(--text-sm);
+  line-height: var(--leading-normal);
+}
+.doc-limits strong { display: block; margin-bottom: 4px; }
+.doc-limits p { margin: 0; max-width: 68ch; }
+
+/* On screen the footer is redundant with the frame; paper needs it. */
+.doc-footer { display: none; }
+
+/* ================================================================== */
+/* Paper                                                               */
+/* ================================================================== */
+
+@page {
+  size: A4;
+  margin: 16mm 14mm 18mm;
+}
+
+@media print {
+  /* Paper is white and ink is black whatever theme the screen was in. A
+     document printed from dark mode used to arrive as a black rectangle. */
+  :root {
+    color-scheme: light;
+    --bg: #fff;
+    --surface: #fff;
+    --surface-2: #fff;
+    --surface-3: #fff;
+    --text: #000;
+    --text-secondary: #333;
+    --text-muted: #555;
+    --border: #bbb;
+    --border-strong: #888;
+  }
+
+  html, body { background: #fff !important; color: #000 !important; }
+
+  /* Anything that exists to be clicked has no business on paper. */
+  .no-print,
+  .sidebar,
+  .topbar,
+  nav,
+  button:not(.print-keep),
+  .segmented,
+  [role='tablist'] { display: none !important; }
+
+  main, .page { padding: 0 !important; margin: 0 !important; max-width: none !important; }
+
+  .doc {
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+    max-width: none;
+  }
+
+  .doc-footer {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--space-4);
+    margin-top: 10mm;
+    padding-top: 3mm;
+    border-top: 0.5pt solid #999;
+    font-size: 7.5pt;
+    color: #555;
+  }
+
+  /* A masthead that repeats on every sheet, so a page found on its own
+     still names itself. */
+  .doc-masthead { position: running(masthead); }
+
+  /* --- Break rules: the difference between a document and a printout --- */
+
+  /* Never strand a heading at the foot of a page. */
+  h1, h2, h3, h4 { break-after: avoid-page; page-break-after: avoid; }
+
+  /* Never split a row, a card, or a question across two sheets. */
+  tr, .kpi, .solution-card, .sheet-question, .type-card, .pathway-step, .escalation {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* A table that runs on repeats its header, or the second page is a grid
+     of unlabelled numbers. */
+  thead { display: table-header-group; }
+  tfoot { display: table-footer-group; }
+
+  /* The limits block must never be separated from the document it limits. */
+  .doc-limits { break-inside: avoid; page-break-inside: avoid; }
+
+  /* Charts print as line art; a filled background wastes ink and reads worse. */
+  svg.chart { background: none !important; }
+
+  /* Print the destination of a link, since a printed link is otherwise a
+     dead end — but only for external ones, or every internal anchor
+     litters the page with hashes. */
+  a[href^='http']::after {
+    content: ' (' attr(href) ')';
+    font-size: 7.5pt;
+    color: #555;
+    word-break: break-all;
+  }
+
+  /* Typography set in points, because paper has a physical size. */
+  body { font-size: 10.5pt; line-height: 1.45; }
+  .doc-title { font-size: 16pt; }
+  h2 { font-size: 13pt; }
+  h3 { font-size: 11.5pt; }
+  .table { font-size: 9pt; }
+  .doc-meta { font-size: 8.5pt; }
+}

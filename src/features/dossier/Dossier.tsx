@@ -48,6 +48,7 @@ import {
   IconTarget,
 } from '../../components/ui/icons.tsx';
 import { download, formatDate, isoDate, pct } from '../../lib/util.ts';
+import { DocumentFrame } from '../../brand/DocumentFrame.tsx';
 import type { Route } from '../shell/routes.ts';
 
 /** Days of activity behind the attendance figure the route reads. */
@@ -110,7 +111,7 @@ export function Dossier({ navigate }: { navigate(route: Route): void }): React.R
 
   return (
     <div className="page stack gap-6">
-      <header className="page-head">
+      <header className="page-head no-print">
         <div className="between wrap gap-4">
           <div>
             <h1 className="page-title">{vi ? 'Hồ sơ học viên' : 'Learner dossier'}</h1>
@@ -130,6 +131,19 @@ export function Dossier({ navigate }: { navigate(route: Route): void }): React.R
         </div>
       </header>
 
+      <DocumentFrame
+        kind={vi ? 'Hồ sơ học viên' : 'Learner dossier'}
+        title={state.profile.name || (vi ? 'Học viên' : 'Learner')}
+        pillar="goal"
+        date={formatDate(dossier.generatedAt, locale)}
+        reference={`DOS-${dossier.generatedAt}`}
+        locale={locale}
+        limits={
+          vi
+            ? 'Hồ sơ tổng hợp từ dữ liệu trên thiết bị này. Mỗi bước lộ trình đều kèm bằng chứng đã dẫn tới nó; bước nào không có bằng chứng thì không được tạo ra. Tham số IRT là ước lượng của người soạn, chưa hiệu chuẩn — dùng để định hướng học tập, không dùng làm căn cứ tuyển sinh hay đánh giá chính thức.'
+            : 'Compiled from the records held on this device. Every step of the route carries the evidence that produced it, and a step with no evidence is not generated. IRT parameters are author estimates rather than calibrations — this supports study decisions, not admissions or formal assessment.'
+        }
+      >
       <div className="kpi-grid">
         <div className="kpi">
           <div className="kpi-label">{vi ? 'Điểm gần nhất' : 'Latest score'}</div>
@@ -352,6 +366,7 @@ export function Dossier({ navigate }: { navigate(route: Route): void }): React.R
           </div>
         </Card>
       )}
+      </DocumentFrame>
     </div>
   );
 }

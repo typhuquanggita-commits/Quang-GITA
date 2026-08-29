@@ -44,9 +44,29 @@ import {
   IconPrint,
   IconTarget,
 } from '../../components/ui/icons.tsx';
-import { formatClock } from '../../lib/util.ts';
+import { formatClock, formatDate, isoDate } from '../../lib/util.ts';
 import { SHEET_META } from './sheetMeta.ts';
+import { DocumentFrame, type PillarId } from '../../brand/DocumentFrame.tsx';
 import type { Route } from '../shell/routes.ts';
+
+/**
+ * Which pillar of the training model each sheet serves.
+ *
+ * Not arbitrary. Theory and recognition build the *Talent* the learner already
+ * has into something they can see themselves using; method and the two
+ * practice sheets are *Action*; the exam sheet tests against the *Goal*; and
+ * consolidation is where a learner decides the topic is finished, which is an
+ * act of *Inspirits* — the judgement to stop rather than to keep going.
+ */
+const SHEET_PILLAR: Record<SheetKind, PillarId> = {
+  theory: 'talent',
+  recognition: 'talent',
+  method: 'action',
+  advanced: 'action',
+  revision: 'action',
+  exam: 'goal',
+  consolidation: 'inspirits',
+};
 
 export function PacketView({
   skill,
@@ -132,6 +152,23 @@ export function PacketView({
         ariaLabel={vi ? 'Các phiếu trong chuyên đề' : 'Sheets in this packet'}
       />
 
+      <DocumentFrame
+        kind={vi ? SHEET_META[sheet].vi : SHEET_META[sheet].en}
+        title={vi ? packet.lesson.titleVi : packet.lesson.title}
+        pillar={SHEET_PILLAR[sheet]}
+        date={formatDate(isoDate(), locale)}
+        reference={`${packet.skill}/${sheet}`}
+        locale={locale}
+        limits={
+          PRACTICE_SHEETS.includes(sheet)
+            ? vi
+              ? `Phiếu này gồm ${active.provenance.onSkill} câu đúng chuyên đề${active.provenance.fromDomain > 0 ? ` và ${active.provenance.fromDomain} câu mượn từ cùng miền kiến thức` : ''}. Độ khó là ước lượng của người soạn, chưa hiệu chuẩn trên dữ liệu thực.`
+              : `This sheet holds ${active.provenance.onSkill} on-topic items${active.provenance.fromDomain > 0 ? ` and ${active.provenance.fromDomain} borrowed from the same domain` : ''}. Difficulty values are author estimates, not calibrations.`
+            : vi
+              ? 'Tài liệu hướng dẫn, không phải bài kiểm tra. Dùng để hiểu và ôn chắc chuyên đề; không có điểm số nào phát sinh từ phiếu này.'
+              : 'Instructional material, not an assessment. It supports understanding and consolidation; no score arises from it.'
+        }
+      >
       <SheetHeader sheet={active} locale={locale} />
 
       {sheet === 'theory' && <TheorySheet packet={packet} locale={locale} navigate={navigate} />}
@@ -141,6 +178,7 @@ export function PacketView({
         <PracticeSheet packet={packet} sheet={active} locale={locale} navigate={navigate} />
       )}
       {sheet === 'consolidation' && <ConsolidationSheet packet={packet} locale={locale} />}
+      </DocumentFrame>
 
       <div className="row gap-3 wrap no-print">
         <Button

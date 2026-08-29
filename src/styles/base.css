@@ -151,7 +151,12 @@ code, kbd, samp, pre {
   transition-duration: 0.001ms !important;
 }
 
+/*
+ * Print rules live in print.css, which treats a printed page as a document
+ * rather than as a screen with its navigation hidden. Only the escape hatch
+ * stays here, because .no-print is used all over the interface and belongs
+ * beside the other utilities.
+ */
 @media print {
-  body { background: #fff; color: #000; }
   .no-print { display: none !important; }
 }

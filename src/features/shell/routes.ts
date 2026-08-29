@@ -33,6 +33,7 @@ export type Route =
   | { name: 'student'; accountId: string }
   | { name: 'calibration' }
   | { name: 'metrics' }
+  | { name: 'brand' }
   | { name: 'settings' };
 
 export type RouteName = Route['name'];
@@ -132,6 +133,8 @@ export function hashToRoute(hash: string): Route {
       return { name: 'calibration' };
     case 'metrics':
       return { name: 'metrics' };
+    case 'brand':
+      return { name: 'brand' };
     case 'settings':
       return { name: 'settings' };
     default:
