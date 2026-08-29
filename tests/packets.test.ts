@@ -186,16 +186,31 @@ test('progress is reported in delivery order regardless of completion order', ()
 });
 
 test('a thin topic is flagged rather than presented as complete', () => {
-  // Some skills hold a single item. A packet built on one item must say so.
-  const thinnest = skillIds
-    .map((skill) => ({ skill, n: BANK.filter((q) => q.skill === skill).length }))
-    .sort((a, b) => a.n - b.n)[0];
+  /*
+   * Held against a bank starved on purpose rather than against whichever
+   * skill happens to be thinnest today. The shipped bank used to supply that
+   * case by accident, and when authoring filled the last thin skill the test
+   * started asserting that a well-stocked topic is thin. A property about
+   * honest reporting should not depend on the bank staying poor.
+   */
+  const starved = 'transitions';
+  const onSkill = BANK.filter((q) => q.skill === starved);
+  assert.ok(onSkill.length > 1, 'fixture needs a skill with items to remove');
 
-  const packet = buildPacket(thinnest.skill, BANK)!;
-  assert.ok(
-    packetIsThin(packet),
-    `${thinnest.skill} has ${thinnest.n} on-topic items and was not flagged as thin`,
-  );
+  const thinBank = BANK.filter((q) => q.skill !== starved || q.id === onSkill[0].id);
+  const packet = buildPacket(starved, thinBank)!;
+  assert.ok(packetIsThin(packet), 'a packet built on one on-topic item was not flagged');
+});
+
+test('no shipped topic is thin enough to need the warning', () => {
+  /*
+   * The other half of the same property. Every skill now holds enough items
+   * to fill its own practice sheets, so a learner working a packet is
+   * working that topic and not its domain. If authoring ever falls behind a
+   * blueprint change, this fails before a padded packet reaches anyone.
+   */
+  const thin = skillIds.filter((skill) => packetIsThin(buildPacket(skill, BANK)!));
+  assert.deepEqual(thin, [], `padded packets: ${thin.join(', ')}`);
 });
 
 test('every packet states a realistic total working time', () => {
