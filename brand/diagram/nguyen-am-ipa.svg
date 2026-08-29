@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" width="1200" height="760">
+<defs><linearGradient id="vg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F43F5E"/><stop offset="1" stop-color="#8B5CF6"/></linearGradient></defs>
+<rect width="1200" height="760" fill="#020617"/>
+<text x="120" y="68" font-family="Inter Display, Inter, sans-serif" font-size="40" font-weight="900" letter-spacing="-1" fill="#F1F5F9">12 NGUYÊN ÂM ĐƠN</text>
+<text x="120" y="106" font-family="Inter, sans-serif" font-size="20" fill="#64748B">Vị trí lưỡi trong khoang miệng — càng sang phải lưỡi càng lùi về sau.</text>
+<polygon points="268,190 988,190 956,555 428,555" fill="none" stroke="#1E293B" stroke-width="2.5"/>
+<text x="252" y="168" font-family="Inter, sans-serif" font-size="16" letter-spacing="2.5" fill="#64748B">TRƯỚC</text>
+<text x="924" y="168" font-family="Inter, sans-serif" font-size="16" letter-spacing="2.5" fill="#64748B">SAU</text>
+<text x="246" y="197.6" text-anchor="end" font-family="Inter, sans-serif" font-size="16" letter-spacing="2.5" fill="#64748B">CAO</text>
+<text x="406" y="554.8" text-anchor="end" font-family="Inter, sans-serif" font-size="16" letter-spacing="2.5" fill="#64748B">THẤP</text>
+<g>
+<circle cx="300" cy="209" r="33" fill="url(#vg)" opacity="0.16"/>
+<circle cx="300" cy="209" r="33" fill="none" stroke="url(#vg)" stroke-width="2.5"/>
+<text x="300" y="220" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="29" font-weight="bold" fill="#F1F5F9">i<tspan font-size="0.62em" dy="-0.04em">ː</tspan></text>
+<text x="300" y="265" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" fill="#64748B">sheep</text>
+</g>
+<g>
+<circle cx="412" cy="258" r="33" fill="url(#vg)" opacity="0.16"/>
+<circle cx="412" cy="258" r="33" fill="none" stroke="url(#vg)" stroke-width="2.5"/>
+<text x="412" y="269" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="29" font-weight="bold" fill="#F1F5F9">ɪ</text>
+<text x="412" y="314" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" fill="#64748B">ship</text>
+</g>
+<g>
+<circle cx="380" cy="350" r="33" fill="url(#vg)" opacity="0.16"/>
+<circle cx="380" cy="350" r="33" fill="none" stroke="url(#vg)" stroke-width="2.5"/>
+<text x="380" y="361" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="29" font-weight="bold" fill="#F1F5F9">e</text>
+<text x="380" y="406" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" fill="#64748B">bed</text>
+</g>
+<g>
+<circle cx="460" cy="513" r="33" fill="url(#vg)" opacity="0.16"/>
+<circle cx="460" cy="513" r="33" fill="none" stroke="url(#vg)" stroke-width="2.5"/>
+<text x="460" y="524" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="29" font-weight="bold" fill="#F1F5F9">æ</text>
+<text x="460" y="569" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" fill="#64748B">cat</text>
+</g>
+<g>
+<circle cx="700" cy="464" r="33" fill="url(#vg)" opacity="0.16"/>
+<circle cx="700" cy="464" r="33" fill="none" stroke="url(#vg)" stroke-width="2.5"/>
+<text x="700" y="475" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="29" font-weight="bold" fill="#F1F5F9">ʌ</text>
+<text x="700" y="520" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" fill="#64748B">cup</text>
+</g>
+<g>
+<circle cx="796" cy="524" r="33" fill="url(#vg)" opacity="0.16"/>
+<circle cx="796" cy="524" r="33" fill="none" stroke="url(#vg)" stroke-width="2.5"/>
+<text x="796" y="535" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="29" font-weight="bold" fill="#F1F5F9">ɑ<tspan font-size="0.62em" dy="-0.04em">ː</tspan></text>
+<text x="796" y="580" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" fill="#64748B">car</text>
+</g>
+<g>
+<circle cx="908" cy="494" r="33" fill="url(#vg)" opacity="0.16"/>
+<circle cx="908" cy="494" r="33" fill="none" stroke="url(#vg)" stroke-width="2.5"/>
+<text x="908" y="505" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="29" font-weight="bold" fill="#F1F5F9">ɒ</text>
+<text x="908" y="550" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" fill="#64748B">hot</text>
+</g>
+<g>
+<circle cx="940" cy="399" r="33" fill="url(#vg)" opacity="0.16"/>
+<circle cx="940" cy="399" r="33" fill="none" stroke="url(#vg)" stroke-width="2.5"/>
+<text x="940" y="410" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="29" font-weight="bold" fill="#F1F5F9">ɔ<tspan font-size="0.62em" dy="-0.04em">ː</tspan></text>
+<text x="940" y="455" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" fill="#64748B">saw</text>
+</g>
+<g>
+<circle cx="828" cy="274" r="33" fill="url(#vg)" opacity="0.16"/>
+<circle cx="828" cy="274" r="33" fill="none" stroke="url(#vg)" stroke-width="2.5"/>
+<text x="828" y="285" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="29" font-weight="bold" fill="#F1F5F9">ʊ</text>
+<text x="828" y="330" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" fill="#64748B">book</text>
+</g>
+<g>
+<circle cx="956" cy="209" r="33" fill="url(#vg)" opacity="0.16"/>
+<circle cx="956" cy="209" r="33" fill="none" stroke="url(#vg)" stroke-width="2.5"/>
+<text x="956" y="220" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="29" font-weight="bold" fill="#F1F5F9">u<tspan font-size="0.62em" dy="-0.04em">ː</tspan></text>
+<text x="956" y="265" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" fill="#64748B">blue</text>
+</g>
+<g>
+<circle cx="588" cy="365" r="33" fill="url(#vg)" opacity="0.16"/>
+<circle cx="588" cy="365" r="33" fill="none" stroke="url(#vg)" stroke-width="2.5"/>
+<text x="588" y="376" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="29" font-weight="bold" fill="#F1F5F9">ɜ<tspan font-size="0.62em" dy="-0.04em">ː</tspan></text>
+<text x="588" y="421" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" fill="#64748B">bird</text>
+</g>
+<g>
+<circle cx="684" cy="296" r="33" fill="url(#vg)" opacity="0.16"/>
+<circle cx="684" cy="296" r="33" fill="none" stroke="url(#vg)" stroke-width="2.5"/>
+<text x="684" y="307" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="29" font-weight="bold" fill="#F1F5F9">ə</text>
+<text x="684" y="352" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" fill="#64748B">about</text>
+</g>
+<text x="120" y="726" font-family="Inter, sans-serif" font-size="19" fill="#64748B">Cặp dễ nhầm nhất với người Việt: iː/ɪ (sheep–ship) · æ/ʌ (cat–cup) · ɜː/ə (bird–about)</text>
+</svg>

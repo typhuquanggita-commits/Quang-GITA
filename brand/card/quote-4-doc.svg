@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="1080" height="1920">
+<defs><linearGradient id="tier1" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#F43F5E"/><stop offset="1" stop-color="#F97316"/></linearGradient><linearGradient id="tier2" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#F97316"/><stop offset="1" stop-color="#F59E0B"/></linearGradient><linearGradient id="tier3" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#F59E0B"/><stop offset="1" stop-color="#10B981"/></linearGradient><linearGradient id="tier4" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#10B981"/><stop offset="1" stop-color="#0EA5E9"/></linearGradient><linearGradient id="tier5" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#0EA5E9"/><stop offset="1" stop-color="#8B5CF6"/></linearGradient><linearGradient id="ringGrad" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#F43F5E"/><stop offset="0.5" stop-color="#10B981"/><stop offset="1" stop-color="#8B5CF6"/></linearGradient>
+<linearGradient id="q" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#F59E0B"/><stop offset="1" stop-color="#10B981"/></linearGradient>
+<radialGradient id="h" cx="0.5" cy="0.3" r="0.7"><stop offset="0" stop-color="#10B981" stop-opacity="0.14"/><stop offset="1" stop-color="#10B981" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="1080" height="1920" fill="#020617"/>
+<rect width="1080" height="1920" fill="url(#h)"/>
+<rect x="96" y="790" width="90" height="8" rx="4" fill="url(#q)"/>
+<text x="96" y="882" font-family="Inter Display, Inter, sans-serif" font-size="62" font-weight="800" letter-spacing="-1.5" fill="#F1F5F9">Hiểu 92% và đọc tiếp mạnh</text>
+<text x="96" y="960" font-family="Inter Display, Inter, sans-serif" font-size="62" font-weight="800" letter-spacing="-1.5" fill="#F1F5F9">hơn hiểu 100% và bỏ cuộc.</text>
+<text x="96" y="1100" font-family="Inter, sans-serif" font-size="28" font-weight="400" fill="#64748B">Mô-đun tư duy — Mơ hồ</text>
+<g transform="translate(96 1770)"><path d="M 39.29 7.95 A 38.64 38.64 0 1 1 16.40 21.16" fill="none" stroke="url(#ringGrad)" stroke-width="6.90" stroke-linecap="round"/><rect x="22.45" y="50.14" width="6.62" height="10.12" rx="3.31" fill="url(#tier1)"/><rect x="32.57" y="45.08" width="6.62" height="15.18" rx="3.31" fill="url(#tier2)"/><rect x="42.69" y="40.02" width="6.62" height="20.24" rx="3.31" fill="url(#tier3)"/><rect x="52.81" y="34.96" width="6.62" height="25.30" rx="3.31" fill="url(#tier4)"/><rect x="62.93" y="29.90" width="6.62" height="30.36" rx="3.31" fill="url(#tier5)"/></g>
+<text x="206" y="1828" font-family="Inter Display, Inter, sans-serif" font-size="34" font-weight="800" letter-spacing="-1" fill="#F1F5F9">ENGWILL<tspan fill="url(#q)">365</tspan></text>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 620" width="1400" height="620">
+<defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#F43F5E"/><stop offset="1" stop-color="#10B981"/></linearGradient></defs>
+<rect width="1400" height="620" fill="#020617"/>
+<text x="120" y="72" font-family="Inter Display, Inter, sans-serif" font-size="42" font-weight="900" letter-spacing="-1" fill="#F1F5F9">VÌ SAO BẠN NGHE KHÔNG RA</text>
+<text x="120" y="112" font-family="Inter, sans-serif" font-size="22" fill="#64748B">Bạn biết hết các từ. Vấn đề là khi chúng dính vào nhau.</text>
+<g>
+<text x="120" y="190" font-family="DejaVu Sans Mono, monospace" font-size="34" fill="#94A3B8">an  apple</text>
+<text x="500" y="190" font-family="Inter, sans-serif" font-size="30" fill="#64748B">→</text>
+<text x="560" y="190" font-family="DejaVu Sans Mono, monospace" font-size="34" font-weight="bold" fill="url(#lg)">a·napple</text>
+<text x="900" y="190" font-family="Inter, sans-serif" font-size="20" fill="#64748B">Phụ âm cuối nhảy sang nguyên âm đầu</text>
+</g>
+<g>
+<text x="120" y="290" font-family="DejaVu Sans Mono, monospace" font-size="34" fill="#94A3B8">picked  up</text>
+<text x="500" y="290" font-family="Inter, sans-serif" font-size="30" fill="#64748B">→</text>
+<text x="560" y="290" font-family="DejaVu Sans Mono, monospace" font-size="34" font-weight="bold" fill="url(#lg)">pick·tup</text>
+<text x="900" y="290" font-family="Inter, sans-serif" font-size="20" fill="#64748B">Âm /d/ đọc thành /t/ rồi nối sang</text>
+</g>
+<g>
+<text x="120" y="390" font-family="DejaVu Sans Mono, monospace" font-size="34" fill="#94A3B8">what do you</text>
+<text x="500" y="390" font-family="Inter, sans-serif" font-size="30" fill="#64748B">→</text>
+<text x="560" y="390" font-family="DejaVu Sans Mono, monospace" font-size="34" font-weight="bold" fill="url(#lg)">whaddaya</text>
+<text x="900" y="390" font-family="Inter, sans-serif" font-size="20" fill="#64748B">Nuốt âm và đồng hoá</text>
+</g>
+<g>
+<text x="120" y="490" font-family="DejaVu Sans Mono, monospace" font-size="34" fill="#94A3B8">next  day</text>
+<text x="500" y="490" font-family="Inter, sans-serif" font-size="30" fill="#64748B">→</text>
+<text x="560" y="490" font-family="DejaVu Sans Mono, monospace" font-size="34" font-weight="bold" fill="url(#lg)">neks·day</text>
+<text x="900" y="490" font-family="Inter, sans-serif" font-size="20" fill="#64748B">Rụng âm /t/ giữa hai phụ âm</text>
+</g>
+<rect x="120" y="510" width="1160" height="4" rx="2" fill="#1E293B"/>
+<text x="120" y="560" font-family="Inter, sans-serif" font-size="22" fill="#94A3B8">Cách chữa: chép chính tả 45 giây mỗi ngày, phân loại lỗi thành ba nhóm.</text>
+</svg>

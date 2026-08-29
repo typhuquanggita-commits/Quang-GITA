@@ -39,6 +39,27 @@ Mỗi cấp có điều kiện vào, nhiệm vụ, thử thách, tiêu chí đ�
   dưới 20 phút, và tiêu chí quan sát được để biết lỗi đã đóng
 - Cam kết: phản hồi trong 48 giờ · chốt đúng **một** lỗi mục tiêu mỗi chu kỳ
 
+### ◈ Nhận diện thương hiệu
+Hệ thống nhận diện đầy đủ, **59 ấn phẩm sinh tự động từ dữ liệu**:
+
+```bash
+apt-get install -y librsvg2-bin fonts-inter
+node tools/make-brand.mjs                  # 59 SVG + 59 PNG, vài giây
+```
+
+Ý tưởng lõi: **vòng tròn còn hở** — 365 ngày vẽ thành một vòng nhưng không bao giờ
+khép kín, khoảng hở chính là ngày hôm nay bạn chưa học. Bên trong là năm vạch đi lên
+chuyển màu hồng → tím, ứng với năm tầng của tháp học tập. Logo vì thế là bản đồ thu
+nhỏ của lộ trình, không phải hình trang trí.
+
+Gồm: 9 file logo (4 biến thể × 2 nền + favicon) · 5 huy hiệu tầng · **25 huy hiệu cấp
+độ** · 6 ảnh bìa podcast 3000×3000 · **4 sơ đồ dạy học** (tháp học tập, quỹ đạo 36
+tháng, sơ đồ nối âm, bảng 12 nguyên âm IPA) · 10 thẻ trích dẫn. Kèm bảng màu, thang
+chữ, luật khoảng cách, luật dùng logo và brief nhiếp ảnh.
+
+Thêm một cấp độ vào `data/levels.ts` là có thêm huy hiệu; đổi một mã màu trong
+`data/brand.ts` là cả 59 file đổi theo — bộ nhận diện không bao giờ lệch khỏi nội dung.
+
 ### 🎙 Podcast — ENGWILL RADIO
 **6 tập có kịch bản đầy đủ từng câu**, 5 định dạng chương trình (5 Phút Mỗi Sáng ·
 Giải Mã Lỗi · Đối Thoại Cố Vấn · Lập Trình Tư Duy · Shadowing Lab).
@@ -178,6 +199,7 @@ data/                  Toàn bộ nội dung hệ thống, tách khỏi giao di�
   feedback.ts          Khung chấm bài 4 phần + thư viện 20 phác đồ lỗi
   production.ts        11 bản thiết kế sản xuất học liệu + trình tự triển khai
   podcast.ts           Engwill Radio — 5 định dạng, 6 tập, cấu hình pipeline
+  brand.ts             Hệ thống nhận diện — màu, chữ, khoảng cách, luật logo
 
 content/
   podcast-scripts.json Kịch bản podcast — nguồn dùng chung cho app và công cụ dựng
@@ -186,6 +208,9 @@ tools/
   make-podcast.mjs     Dựng MP3 + RSS từ kịch bản (piper / google / gemini / espeak)
   piper_batch.py       Sinh giọng theo lô — nạp mỗi model một lần, nhanh gấp 6
   fetch-voices.sh      Tải model giọng Piper
+  make-brand.mjs       Dựng 59 ấn phẩm nhận diện (SVG + PNG) từ dữ liệu
+
+brand/                 Ấn phẩm — SVG có commit, PNG dựng lại được
 
 audio/                 Sản phẩm dựng ra, không commit — xem audio/README.md
   charter.ts           LA BÀN — 11 mục hiến chương cá nhân + tuyên ngôn
