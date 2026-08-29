@@ -91,6 +91,13 @@ export interface GitaProfile {
   pillars: Record<PillarId, PillarScore>;
   /** Mean of the four pillar scores, 0–100. */
   overall: number;
+  /**
+   * How much of the profile rests on observed behaviour, 0–1. The same figure
+   * applies to every pillar, since they draw on one pool of evidence, and it
+   * lives here so callers do not have to reach into an arbitrary pillar for
+   * what is really a property of the whole profile.
+   */
+  confidence: number;
   /** The weakest pillar — where a coach should start. */
   limitingPillar: PillarId;
   /** The tier the evidence supports right now. */
@@ -275,6 +282,7 @@ export function buildProfile(input: ProfileInput): GitaProfile {
   return {
     pillars,
     overall,
+    confidence: Number(dataConfidence.toFixed(2)),
     limitingPillar,
     tier,
     nextGate: nextTier

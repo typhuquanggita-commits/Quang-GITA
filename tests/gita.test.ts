@@ -340,7 +340,11 @@ test('confidence is near zero with no evidence and high with plenty', () => {
     selfReport: {},
     today: TODAY,
   });
-  assert.ok(blank.pillars.action.confidence < 0.1, `blank confidence ${blank.pillars.action.confidence}`);
+  assert.ok(blank.confidence < 0.1, `blank confidence ${blank.confidence}`);
+  // The same figure applies to every pillar, since they share one evidence pool.
+  for (const id of PILLAR_ORDER) {
+    assert.equal(blank.pillars[id].confidence, blank.confidence, `${id} confidence`);
+  }
 
   const habits = selectHabitsFor(TIERS[3].habitIds);
   const entries: HabitEntry[] = habits.flatMap((habit) =>
@@ -354,7 +358,7 @@ test('confidence is near zero with no evidence and high with plenty', () => {
     selfReport: {},
     today: TODAY,
   });
-  assert.ok(rich.pillars.action.confidence > 0.8, `rich confidence ${rich.pillars.action.confidence}`);
+  assert.ok(rich.confidence > 0.8, `rich confidence ${rich.confidence}`);
 });
 
 test('a learner running the model well scores well', () => {

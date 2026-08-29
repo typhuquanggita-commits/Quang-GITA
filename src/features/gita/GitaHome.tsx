@@ -101,8 +101,7 @@ export function GitaHome(): React.ReactElement {
               </Badge>
             )}
             <Badge tone="info">
-              {locale === 'vi' ? 'Độ tin cậy' : 'Confidence'}{' '}
-              {pct(view.profile.pillars.action.confidence)}
+              {locale === 'vi' ? 'Độ tin cậy' : 'Confidence'} {pct(view.profile.confidence)}
             </Badge>
           </div>
 
@@ -137,7 +136,7 @@ export function GitaHome(): React.ReactElement {
 
   function ProfilePanel(): React.ReactElement {
     const summary = pillarSummary(view.profile, locale);
-    const confidence = view.profile.pillars.action.confidence;
+    const confidence = view.profile.confidence;
 
     return (
       <div className="stack gap-6">

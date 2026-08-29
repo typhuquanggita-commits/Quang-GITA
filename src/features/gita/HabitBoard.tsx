@@ -24,6 +24,15 @@ import { Badge, Button, Card, Empty } from '../../components/ui/primitives.tsx';
 import { IconCheck, IconFire, IconSparkle } from '../../components/ui/icons.tsx';
 import { isoDate } from '../../lib/util.ts';
 
+/**
+ * Study is an arena for habits but not one of the three transfer arenas, so it
+ * has no entry in `ARENAS` and needs naming here.
+ */
+function habitArenaLabel(habit: Habit, locale: 'vi' | 'en'): string {
+  if (habit.arena === 'study') return locale === 'vi' ? 'Học tập' : 'Study';
+  return arenaLabel(habit.arena, locale);
+}
+
 const CADENCE_LABEL: Record<Cadence, { vi: string; en: string }> = {
   daily: { vi: 'Hằng ngày', en: 'Daily' },
   weekday: { vi: 'Ngày trong tuần', en: 'Weekdays' },
@@ -214,12 +223,7 @@ function HabitRow({
           {locale === 'vi' ? habit.labelVi : habit.label}
         </div>
         <div className="text-xs muted">
-          {locale === 'vi' ? habit.cueVi : habit.cue} · {habit.minutes}′ ·{' '}
-          {arenaLabel(habit.arena === 'study' ? 'family' : habit.arena, locale) && habit.arena === 'study'
-            ? locale === 'vi'
-              ? 'Học tập'
-              : 'Study'
-            : arenaLabel(habit.arena as 'family' | 'school' | 'society', locale)}
+          {locale === 'vi' ? habit.cueVi : habit.cue} · {habit.minutes}′ · {habitArenaLabel(habit, locale)}
         </div>
       </div>
 
