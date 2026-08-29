@@ -216,3 +216,61 @@ Mẫu vá dùng trong `data.scripts.tuvan-ruot.js` và
 `data.tinhhuong.t5-dich.js`: chỉ điền trường đang trống, không đụng
 trường đã có, và để lại một hàm đếm phần còn nợ (`G.tvConNo()` ở
 `src/duong-vao.js`) để bộ rà soát báo đỏ tới khi con số về 0.
+
+## Màn tự soát — chủ hệ thống tự kiểm 100%
+
+`src/soat-day-du.js` · màn `soat-day-du` · chỉ `qt_trang` (R01–R02)
+
+Bộ rà soát ở `tools/ra-soat-day-du.js` chạy ở dòng lệnh, nghĩa là chủ
+Học viện phải **tin lời người viết mã**. Màn này bỏ chỗ phải tin đó đi:
+bấm một nút, hệ thống tự đếm lại từ dữ liệu đang nạp trong máy, và hiện
+ra từng con số. Không có con số nào viết sẵn trong giao diện.
+
+Năm phép soát, chạy ngay lúc dựng màn:
+
+| # | Phép soát | Bắt được gì |
+|---|---|---|
+| 1 | Con số công bố | Kho nói "1.000 kịch bản" mà đếm ra 940 |
+| 2 | Bản ghi thiếu trường | Kho có ô để trống, theo hợp đồng `G.SOAT_BAT_BUOC` |
+| 3 | Chất lượng nội dung | Câu cụt · câu chép lại giữa các bản · chữ tạm · thiếu bản dịch |
+| 4 | Dựng thử mọi màn | Màn văng lỗi · màn chỉ có khung mà không có ruột |
+| 5 | Chỗ trống có chủ đích | Liệt kê đủ, **kèm lý do từng cái** |
+
+**Phần 5 quan trọng ngang bốn phần trên.** Một chỗ trống có lý do và một
+chỗ trống bị bỏ quên nhìn giống hệt nhau trong dữ liệu. Liệt kê ra thì
+chủ hệ thống tự phán được cái nào chấp nhận được. Bài kiểm mục 34 bắt
+buộc mọi ngoại lệ trong `G.SOAT_THA` phải có lý do dài trên 30 ký tự —
+ngoại lệ không lý do chỉ là một chỗ trống được tha.
+
+### Bốn bẫy gặp khi dựng màn này
+
+- **Màn tự soát dựng thử chính nó — đệ quy vô tận.** `soatManHinh()` đi
+  qua mọi mục trong `G.NAV` và gọi `G.VIEWS[v]()`. Trong danh sách ấy có
+  chính `soat-day-du`, mà dựng nó lại gọi `soatManHinh()` — treo trình
+  duyệt và làm bộ kiểm phát hành đứng im ở mục 2 hơn mười phút. Màn tự
+  soát **không tự soát chính nó được**; phần kiểm nó nằm ở mục 34 của
+  `tools/kiem-tra.js`, chạy từ bên ngoài. Cùng lúc thêm bộ nhớ đệm: năm
+  phép soát dựng thử hơn một trăm màn nên phải chạy một lần rồi giữ lại,
+  nút "Soát lại ngay" xoá đệm trước khi dựng.
+
+- **Chuẩn soát suýt lọt ra gói mẫu công khai.** Một phép sửa khớp nhầm
+  danh sách `MO_RA` thay vì `NEN` — mà `SOAT_*` liệt kê tên mọi kho nội
+  bộ, trường bắt buộc và số bản ghi phải có. Đưa ra ngoài là vẽ sẵn bản
+  đồ kho cho người chưa được cấp phép. Mục 34 nay có bài kiểm chặn.
+- **Quét chuỗi con để tìm chữ tạm báo nhầm rất nặng.** "em vẫn đang cập
+  nhật nó" là một phương án trả lời thật, "Nhà mình sắp có đợt bận dài"
+  là một câu hỏi sát hạch thật, "F-xxx" là mẫu mã gia đình. Phải soi
+  **giá trị trọn vẹn** của trường, không quét chuỗi con.
+- **Dấu ba chấm không phải chữ tạm.** Trong tài liệu gốc, `…` là cách
+  đánh dấu ô **để điền tay** — "Họ và tên: …" trong phiếu in ra. Ô ấy
+  trống là đúng chủ đích.
+
+### Khác nhau giữa hai bộ soát
+
+| | Màn trong ứng dụng | `tools/ra-soat-day-du.js` |
+|---|---|---|
+| Ai chạy được | Chủ hệ thống, không cần máy lập trình | Người có mã nguồn |
+| Dựng màn cho | Vai đang đăng nhập | **Cả 15 vai** |
+| Khi nào dùng | Bất cứ lúc nào, tự kiểm | Trước mỗi lần phát hành |
+
+Màn trong ứng dụng nói rõ giới hạn ấy ở cuối màn, không giấu.

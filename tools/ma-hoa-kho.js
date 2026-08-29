@@ -64,7 +64,11 @@ const NEN = ['VANHANH', 'CHUYENDICH', 'CHANDUNG', 'LOTRINH', 'FAMILIES', 'TEAM',
   'MT_BANG', 'MT_BANG_MA', 'MT_BANG_TANG', 'MT_BANG_NHOM', 'MT_DO', 'MT_BANG_LUAT',
   /* Đường vào sáu bước: người mới chưa có tầng nào cũng phải đọc được,
      nên nó thuộc gói nền. */
-  'DV_BUOC', 'DV_CHAN', 'DV_HOI'];
+  'DV_BUOC', 'DV_CHAN', 'DV_HOI',
+  /* Chuẩn soát đủ ruột. Ở gói NỀN chứ không phải gói nghề: màn tự soát
+     phải chạy được ngay cả khi gói nghề chưa nạp — chính lúc đó nó mới
+     báo được kho nào chưa nạp. */
+  'SOAT_BAT_BUOC', 'SOAT_THA', 'SOAT_MOC', 'SOAT_CHATLUONG'];
 
 const NGHE = ['MOTHUC', 'SACH', 'BANDO_A3', 'POSTER', 'SODO', 'PHACDO',
   'DIEMCHAM', 'NGONTU', 'NGONTU_TANG', 'THAYVI', 'MAUTHOAI', 'PERSONA',
@@ -175,6 +179,9 @@ const MO_RA = [
      vào — khoá nó lại là khoá đúng cái cửa mình đang mời người ta qua.
      Phần học phí (HP_*) thì ngược lại: vẫn khoá trong kho nghề. */
   'DV_BUOC', 'DV_CHAN', 'DV_HOI'
+  /* SOAT_* KHÔNG nằm ở đây. Chuẩn soát liệt kê tên mọi kho nội bộ, trường
+     bắt buộc của từng kho và số bản ghi phải có — đưa vào gói mẫu công khai
+     là vẽ sẵn bản đồ kho cho người chưa được cấp phép. Nó ở gói NỀN. */
 ];
 const mau = {
   ...Object.fromEntries(MO_RA.map(k => [k, G[k]]).filter(([, v]) => v !== undefined)),

@@ -487,6 +487,7 @@ G.NAV = [
     {v:'sua-hien-thi', t:'Sửa nội dung hiển thị',      h:'Chữ nào chưa hợp lý thì sửa ngay',   ic:'book', star:1, perm:'qt_trang', capMo:'quantri'},
     {v:'duyet-tai-lieu',t:'Kiểm duyệt tài liệu',        h:'Xem · chấm chuẩn hoá · duyệt hoặc trả lại',ic:'shield', star:1, perm:'qt_trang', capMo:'quantri'},
     {v:'theo-doi-tai-nguyen',t:'Theo dõi tài nguyên',      h:'Cảnh báo khi một tài khoản chạm quá 20% kho', ic:'chart', perm:'qt_tai_nguyen', capMo:'chung', star:1},
+    {v:'soat-day-du',t:'Soát đủ ruột — tự kiểm 100%', h:'5 phép soát · đếm lại từ dữ liệu đang nạp', ic:'shield', star:1, perm:'qt_trang', capMo:'quantri'},
     {v:'nhat-ky-ht',  t:'Nhật ký hệ thống',            h:'Mọi thao tác đều để lại dấu vết',    ic:'book', perm:'qt_trang', capMo:'quantri'}
    ]}
 ];

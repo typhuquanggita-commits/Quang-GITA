@@ -176,6 +176,20 @@ G.VIEWS['kho-tong'] = function(){
         '<div class="tiny up muted mt">'+h(x[1])+'</div></div>';
     }).join('')+'</div>';
 
+  /* Kho tổng ĐẾM; màn tự soát KIỂM. Hai việc khác nhau và người cầm hệ
+     thống cần cả hai — đếm ra 1.000 kịch bản không nói được bên trong có
+     ruột hay không. Nối thẳng sang đó cho R01–R02. */
+  if(toanQuyen && G.VIEWS['soat-day-du'])
+    o += '<div class="card mt2" style="border-color:rgba(16,185,129,.4);background:rgba(16,185,129,.05)">'+
+      '<div class="row wrap" style="gap:11px;align-items:center">'+
+      '<span style="color:var(--ok)">'+ic('shield','w-5 h-5')+'</span>'+
+      '<div class="grow" style="min-width:240px">'+
+      '<b class="sm" style="display:block">Màn này ĐẾM. Muốn KIỂM thì sang bộ tự soát.</b>'+
+      '<span class="tiny muted">Đếm ra 1.000 kịch bản không nói được bên trong có ruột hay không. '+
+      'Bộ tự soát chạy năm phép: con số công bố, bản ghi thiếu trường, chất lượng nội dung, '+
+      'dựng thử mọi màn, và liệt kê đủ chỗ trống có chủ đích kèm lý do.</span></div>'+
+      '<button class="btn pri sm" data-v="soat-day-du">Mở bộ tự soát</button></div></div>';
+
   if(!toanQuyen && khoa)
     o += '<div class="card mt2" style="border-color:var(--gita-vien-1)">'+
       '<p class="sm" style="line-height:1.7">'+ic('lock','w-4 h-4')+' '+khoa+

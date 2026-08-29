@@ -2590,6 +2590,82 @@ const { chromium } = require(PW);
       ruot.thThieuDich + '/' + ruot.tongTH + ' thiếu đích');
   }
 
+
+  /* ── 34. MÀN TỰ SOÁT CỦA CHỦ HỆ THỐNG ── */
+  console.log('\n34 · MÀN TỰ SOÁT — CHỦ HỆ THỐNG TỰ KIỂM 100%');
+  if (!coKhoa) {
+    console.log('  (bỏ qua — cần bộ khoá để nạp chuẩn soát)');
+  } else {
+    await p.evaluate(() => window.G.doLogin('superadmin@gita365.vn'));
+    await p.waitForTimeout(2200);
+    const ts = await p.evaluate(() => {
+      const G = window.G;
+      if (!G.soatTatCa) return { co: false };
+      const r = G.soatTatCa();
+      return {
+        co: true, hong: r.hong,
+        conSoLech: r.conSo.filter(x => !x.dat).map(x => x.k + ' cần ' + x.can + ' có ' + x.co),
+        truongThieu: r.truong.hopDong.filter(x => !x.dat).map(x => x.kho),
+        luatChung: r.truong.luatChung.map(x => x.kho),
+        cut: r.chatLuong.cut, lap: r.chatLuong.moLap + r.chatLuong.chotLap,
+        tam: r.chatLuong.coTam, thieuEN: r.chatLuong.thieuEN.length,
+        manLoi: r.manHinh.loi, manRong: r.manHinh.rong, manOk: r.manHinh.ok,
+        soMoc: r.conSo.length, soHopDong: r.truong.hopDong.length,
+        soTha: (G.SOAT_THA || []).length,
+        /* Mọi ngoại lệ PHẢI có lý do viết ra — ngoại lệ không lý do chỉ là
+           một chỗ trống được tha, và đó chính là kiểu che giấu cần chặn */
+        thaThieuLyDo: (G.SOAT_THA || []).filter(x => !x.y || x.y.trim().length < 30).map(x => x.o)
+      };
+    });
+    bao(ts.co, 'màn tự soát chạy được trong ứng dụng, không phải chỉ ở dòng lệnh');
+    if (ts.co) {
+      bao(!ts.conSoLech.length, 'mọi con số công bố đếm ra đúng — ' + ts.soMoc + ' kho có mốc',
+        ts.conSoLech.slice(0, 4).join(' | '));
+      bao(!ts.truongThieu.length, 'mọi kho theo hợp đồng đủ trường — ' + ts.soHopDong + ' kho',
+        ts.truongThieu.join(' '));
+      bao(!ts.luatChung.length, 'không kho ngoài hợp đồng nào có trường bỏ trống',
+        ts.luatChung.slice(0, 6).join(' '));
+      bao(ts.cut === 0 && ts.lap === 0, 'nội dung không có câu cụt và không có câu chép lại',
+        'cụt ' + ts.cut + ' · lặp ' + ts.lap);
+      bao(!ts.tam.length, 'không kho nào chứa chữ tạm', ts.tam.join(' '));
+      bao(ts.thieuEN === 0, 'không mục điều hướng nào thiếu bản tiếng Anh', ts.thieuEN + ' mục');
+      bao(!ts.manLoi.length && !ts.manRong.length,
+        'dựng thử ' + ts.manOk + ' màn — không màn nào văng lỗi hay rỗng ruột',
+        ts.manLoi.concat(ts.manRong).slice(0, 4).join(' | '));
+      bao(ts.hong === 0, 'màn tự soát kết luận: không còn chỗ nào để trống', ts.hong + ' chỗ');
+      bao(!ts.thaThieuLyDo.length,
+        'cả ' + ts.soTha + ' ngoại lệ đều có lý do viết ra — ngoại lệ không lý do chỉ là chỗ trống được tha',
+        ts.thaThieuLyDo.join(' '));
+    }
+
+    /* Màn này soi vào ruột hệ thống nên chỉ R01–R02 được mở */
+    const q = await p.evaluate(async () => {
+      const G = window.G, ra = {};
+      for (const em of ['giamdoc@gita365.vn', 'tuvan@gita365.vn', 'phuhuynh@gita365.vn']) {
+        G.doLogin(em);
+        await new Promise(r => setTimeout(r, 1100));
+        let x; try { x = G.VIEWS['soat-day-du'](); } catch (e) { x = 'LOI'; }
+        ra[em] = (typeof x === 'string' &&
+          x.trim().indexOf('<div class="card center" style="padding:40px">') === 0) ? 'khoá' : 'MỞ';
+      }
+      G.doLogin('superadmin@gita365.vn');
+      await new Promise(r => setTimeout(r, 1800));
+      return ra;
+    });
+    const moNham = Object.keys(q).filter(k => q[k] !== 'khoá');
+    bao(!moNham.length,
+      'màn tự soát chỉ mở cho Super Admin và Admin — Giám đốc trở xuống đều khoá',
+      moNham.join(' '));
+
+    /* Chuẩn soát KHÔNG được lọt ra gói mẫu công khai: nó liệt kê tên mọi kho
+       nội bộ và số bản ghi phải có — đưa ra ngoài là vẽ bản đồ kho cho người
+       chưa được cấp phép */
+    const mau = JSON.parse(require('fs').readFileSync(
+      require('path').join(__dirname, '..', 'kho', 'mau.json'), 'utf8'));
+    const lot = Object.keys(mau).filter(k => k.indexOf('SOAT') === 0);
+    bao(!lot.length, 'chuẩn soát không lọt ra gói mẫu công khai', lot.join(' '));
+  }
+
   console.log('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành'));
   await b.close();
   process.exit(loi ? 1 : 0);
