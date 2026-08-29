@@ -93,7 +93,12 @@
 |---|---|
 | [MAU-GIAO-AN-GITA-CHUAN.md](02-GIAO-AN-KE-HOACH/MAU-GIAO-AN-GITA-CHUAN.md) | Mẫu giáo án chuẩn 2 buổi × 180 phút |
 | [MAU-KE-HOACH-BAI-GIANG-NAM-HOC.md](02-GIAO-AN-KE-HOACH/MAU-KE-HOACH-BAI-GIANG-NAM-HOC.md) | Mẫu KHBG năm học 48 buổi + phân phối chương trình |
-| `GIAO-AN-MAU-K**.md` | 6 giáo án mẫu hoàn chỉnh đại diện 4 giai đoạn |
+| **[GIAO-AN-K01-M2-01.md](02-GIAO-AN-KE-HOACH/GIAO-AN-K01-M2-01.md)** | ⭐ Giáo án hoàn chỉnh · K1 · *Vùng riêng tư & Quy tắc 5 ngón tay* — **T-trội**, Khởi Mầm |
+| **[GIAO-AN-K04-M6-01.md](02-GIAO-AN-KE-HOACH/GIAO-AN-K04-M6-01.md)** | ⭐ Giáo án hoàn chỉnh · K4 · *Ghi chép Cornell* — **T-trội**, Bén Rễ |
+| **[GIAO-AN-K06-M1-02.md](02-GIAO-AN-KE-HOACH/GIAO-AN-K06-M1-02.md)** | ⭐ Giáo án hoàn chỉnh · K6 · *Bảng Đòn Bẩy 20/80* — **G-trội**, Vươn Cành |
+| **[GIAO-AN-K07-M3-01.md](02-GIAO-AN-KE-HOACH/GIAO-AN-K07-M3-01.md)** | ⭐ Giáo án hoàn chỉnh · K7 · *Lật niềm tin giới hạn* — **I-trội**, Vươn Cành |
+| **[GIAO-AN-K09-M6-01.md](02-GIAO-AN-KE-HOACH/GIAO-AN-K09-M6-01.md)** | ⭐ Giáo án hoàn chỉnh · K9 · *Chiến lược thi chuyển cấp* — **G-trội**, Vươn Cành |
+| **[GIAO-AN-K11-M8-01.md](02-GIAO-AN-KE-HOACH/GIAO-AN-K11-M8-01.md)** | ⭐ Giáo án hoàn chỉnh · K11 · *Dự án tác động 3 tháng & đo lường* — **A-trội**, Cất Cánh |
 
 ### 📕 03 – KỊCH BẢN ĐÀO TẠO CHI TIẾT
 | Tệp | Nội dung |
