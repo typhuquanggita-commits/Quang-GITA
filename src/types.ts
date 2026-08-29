@@ -369,6 +369,21 @@ export interface GitaState {
   tierOverride: import('./gita/framework.ts').AbsorptionTier | null;
 }
 
+/**
+ * State for the automated coach.
+ *
+ * The programme itself is never stored — it is derived from evidence on every
+ * read, so it cannot go stale against what the learner has since done. Only
+ * the two things that are genuinely new information live here: which blocks
+ * have been cleared, and the item set a drill handed to the practice surface.
+ */
+export interface AutopilotState {
+  /** Cleared block keys, by ISO date. Trimmed to a recent window. */
+  completedBlocks: Record<string, string[]>;
+  /** Items a block queued for the practice surface to run next. */
+  queue: { blockId: string; questionIds: string[] } | null;
+}
+
 export type ThemeMode = 'light' | 'dark' | 'system' | 'high-contrast';
 export type Locale = 'vi' | 'en';
 
@@ -403,6 +418,8 @@ export interface AppState {
   org: import('./auth/model.ts').OrgState;
   /** The GITA training layer: habits, self-report, and transfer evidence. */
   gita: GitaState;
+  /** What the automated coach has queued and what the learner has cleared. */
+  autopilot: AutopilotState;
   profile: Profile;
   preferences: Preferences;
   /** Per-skill ability estimates driving the adaptive practice engine. */

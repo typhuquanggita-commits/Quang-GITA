@@ -38,6 +38,9 @@ import { Onboarding } from '../onboarding/Onboarding.tsx';
  * in the graphing calculator and the reference sheet, which a learner opening
  * the dashboard has no use for yet.
  */
+const TodayView = lazy(() =>
+  import('../autopilot/TodayView.tsx').then((m) => ({ default: m.TodayView })),
+);
 const PracticeSession = lazy(() =>
   import('../practice/PracticeSession.tsx').then((m) => ({ default: m.PracticeSession })),
 );
@@ -115,7 +118,7 @@ function Shell(): React.ReactElement {
   useEffect(() => {
     const onHashChange = () => setRoute(hashToRoute(window.location.hash));
     window.addEventListener('hashchange', onHashChange);
-    if (!window.location.hash) window.location.hash = '#/dashboard';
+    if (!window.location.hash) window.location.hash = '#/today';
     return () => window.removeEventListener('hashchange', onHashChange);
   }, []);
 
@@ -163,8 +166,9 @@ function Shell(): React.ReactElement {
     {
       label: t('nav.study'),
       items: [
+        { route: { name: 'today' }, label: t('nav.today'), icon: <IconLightning size={18} /> },
         { route: { name: 'dashboard' }, label: t('nav.dashboard'), icon: <IconHome size={18} /> },
-        { route: { name: 'practice' }, label: t('nav.practice'), icon: <IconLightning size={18} /> },
+        { route: { name: 'practice' }, label: t('nav.practice'), icon: <IconTarget size={18} /> },
         { route: { name: 'vocab' }, label: t('nav.vocab'), icon: <IconCards size={18} /> },
         { route: { name: 'plan' }, label: t('nav.plan'), icon: <IconCalendar size={18} /> },
         { route: { name: 'gita' }, label: t('nav.gita'), icon: <IconSparkle size={18} /> },
@@ -350,6 +354,8 @@ function RouteView({
   }
 
   switch (route.name) {
+    case 'today':
+      return <TodayView navigate={navigate} />;
     case 'dashboard':
       return <Dashboard navigate={navigate} />;
     case 'practice':

@@ -8,9 +8,9 @@
  * is what practice is for; a test deliberately withholds all of it.
  */
 
-import React, { useCallback, useMemo, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import type { DomainId, Question, SectionId } from '../../types.ts';
-import { BANK } from '../../data/bank.ts';
+import { BANK, QUESTION_BY_ID } from '../../data/bank.ts';
 import { DOMAINS, domainLabel, sectionLabel, skillLabel } from '../../data/blueprint.ts';
 import { selectPracticeItems } from '../../engine/adaptive.ts';
 import { estimateAbility } from '../../engine/irt.ts';
@@ -52,6 +52,35 @@ export function PracticeSession(): React.ReactElement {
   const [session, setSession] = useState<SessionState | null>(null);
 
   const exposure = useMemo(() => selectExposure(state), [state]);
+
+  /**
+   * A session queued by the automated coach starts immediately with exactly
+   * the items it chose. Re-deriving a set here would quietly discard the
+   * coach's reasoning and make the decision log a lie.
+   */
+  const queued = state.autopilot.queue;
+  useEffect(() => {
+    if (!queued || session) return;
+    const questions = queued.questionIds
+      .map((id) => QUESTION_BY_ID.get(id))
+      .filter((q): q is Question => Boolean(q));
+    if (questions.length === 0) {
+      dispatch({ type: 'autopilot/clearQueue' });
+      return;
+    }
+    setSession({
+      id: uid('ps'),
+      questions,
+      index: 0,
+      log: [],
+      startedAt: Date.now(),
+      questionStartedAt: Date.now(),
+      checked: false,
+      value: null,
+      eliminated: [],
+    });
+    dispatch({ type: 'autopilot/clearQueue' });
+  }, [queued, session, dispatch]);
 
   /** Ability the selector should target right now. */
   const currentTheta = useCallback(

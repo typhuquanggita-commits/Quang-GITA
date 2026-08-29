@@ -61,16 +61,47 @@ export function migrate(raw: unknown): Record<string, unknown> | null {
   return state;
 }
 
-/** Debounced writer so rapid state churn (a running timer) writes once. */
-export function makeDebouncedSaver(delayMs = 400): (value: unknown) => void {
+export interface DebouncedSaver {
+  (value: unknown): void;
+  /** Writes any pending value immediately. */
+  flush(): void;
+}
+
+/**
+ * Debounced writer, so rapid state churn — a running exam clock, most of all
+ * — does not write on every tick.
+ *
+ * The debounce introduces a window in which an action is on screen but not
+ * yet on disk, so the saver also exposes `flush`. The provider calls it when
+ * the page is hidden or unloaded, which is when that window would otherwise
+ * cost the learner their last action.
+ */
+export function makeDebouncedSaver(delayMs = 400): DebouncedSaver {
   let handle: ReturnType<typeof setTimeout> | null = null;
   let pending: unknown = null;
-  return (value: unknown) => {
+  let dirty = false;
+
+  const save: DebouncedSaver = ((value: unknown) => {
     pending = value;
+    dirty = true;
     if (handle) clearTimeout(handle);
     handle = setTimeout(() => {
       saveRaw(pending);
+      dirty = false;
       handle = null;
     }, delayMs);
+  }) as DebouncedSaver;
+
+  save.flush = () => {
+    if (handle) {
+      clearTimeout(handle);
+      handle = null;
+    }
+    if (dirty) {
+      saveRaw(pending);
+      dirty = false;
+    }
   };
+
+  return save;
 }

@@ -38,7 +38,20 @@ tab rồi quay lại không được thêm giờ.
 *The exam player follows the operational workflow*, down to the module clock
 being an absolute timestamp rather than a countdown in memory.
 
-**3. Mô thức GITA đo cả con người, không chỉ điểm số.**
+**3. Hệ thống huấn luyện tự động, và nó giải thích được mọi quyết định.**
+Mỗi ngày, engine đọc toàn bộ dữ liệu của người học và xếp sẵn buổi học: từng
+khối cụ thể, đúng thứ tự, câu hỏi đã chọn xong. Người học mở lên là làm được
+ngay. Quan trọng hơn: mọi khối đều truy được về một luật, và mọi luật khi kích
+hoạt đều ghi lại chính xác dữ liệu nào đã kích hoạt nó. Hệ thống cũng biết khi
+nào phải dừng lại và gọi người thật — bỏ học kéo dài, kết quả đi xuống dù vẫn
+nỗ lực, mục tiêu vượt quá quỹ thời gian.
+
+*A 100% automated coach that can always explain itself.* Every block traces to
+a rule; every rule records the evidence that fired it. It refuses to prescribe
+past what it knows, and it escalates rather than quietly issuing homework to a
+learner in trouble. See [docs/AUTOPILOT.md](docs/AUTOPILOT.md).
+
+**4. Mô thức GITA đo cả con người, không chỉ điểm số.**
 Bốn trụ — Mục tiêu, Nội lực, Tài năng, Hành động — được chấm từ hành vi nền
 tảng đã quan sát được, không phải từ bảng hỏi. Kèm năm tầng hấp thu, ba đấu
 trường ứng dụng (gia đình – trường học – xã hội), và thang cấp chuyên môn cho
@@ -84,6 +97,7 @@ No API key, no backend, no configuration. All learner data stays on the device.
 | **Chọn câu theo Fisher information** | Cân bằng nội dung và kiểm soát phơi nhiễm cho phần luyện tập |
 | **SM-2 có sửa đổi** | Quên một thẻ làm ngắn khoảng lặp chứ không đặt lại về 0 |
 | **Phân loại lỗi** | Tách hổng kiến thức, bất cẩn, và vội — ba loại cần ba cách chữa khác nhau |
+| **Hiệu chuẩn MMLE-EM** | Ước lượng tham số câu hỏi từ dữ liệu thật, kèm thống kê fit, sàng lọc DIF và liên kết thang đo |
 
 ### Delivery
 
@@ -96,6 +110,12 @@ toàn vẹn ghi đúng những gì trình duyệt quan sát được, không hơ
 166 câu hỏi phân loại theo blueprint chính thức, mỗi câu có lời giải và phân
 tích từng phương án nhiễu · bộ sinh câu toán tham số hoá với đáp án tính bằng
 code, mọi lượt sinh đều được kiểm chứng · 60 từ vựng học thuật.
+
+### Automated coaching
+
+21 luật can thiệp có thứ tự ưu tiên · chương trình học mỗi ngày với ngân sách
+thời gian theo mức tải · nhật ký quyết định trưng bằng chứng · leo thang định
+tuyến theo cấp chuyên môn người xử lý.
 
 ### Access control
 
@@ -124,6 +144,7 @@ và ghi rõ nó dành cho ai.
 | [SECURITY](docs/SECURITY.md) | Tính toàn vẹn bài thi bảo đảm được gì — và không bảo đảm được gì |
 | [ROLES](docs/ROLES.md) | Ai được làm gì, và cấp độ được *giành* chứ không được *gán* |
 | [CONTENT](docs/CONTENT.md) | Quy trình soạn, duyệt và chấp nhận một câu hỏi |
+| [AUTOPILOT](docs/AUTOPILOT.md) | Hệ tự động quyết định thế nào, và cách kiểm toán một quyết định |
 | [GITA](docs/gita/README.md) | Mô thức huấn luyện, đầy đủ bảy tài liệu |
 
 ---
@@ -133,9 +154,10 @@ và ghi rõ nó dành cho ai.
 Đây là những điều một người cân nhắc dùng hệ thống này xứng đáng được biết
 trước, không phải sau:
 
-- **Tham số IRT là giá trị tạm do người soạn gán, chưa hiệu chuẩn.** Đủ để
-  vận hành và kiểm thử toàn bộ cỗ máy chấm điểm; chưa đủ để báo cáo một điểm
-  số mà ai đó nên hành động dựa vào. Quy trình thay thế nằm trong
+- **Tham số IRT là giá trị tạm do người soạn gán, chưa hiệu chuẩn.** Cỗ máy
+  thay thế chúng đã có sẵn trong `src/engine/calibration.ts` và đã được kiểm
+  chứng bằng bài toán phục hồi tham số; thứ còn thiếu là dữ liệu bài làm thật,
+  không phải mã nguồn. Quy trình đầy đủ nằm trong
   [PSYCHOMETRICS](docs/PSYCHOMETRICS.md).
 - **Ngân hàng 166 câu đủ cho một lượt thi full-length**, nhưng vận hành thật
   cần vài trăm câu mỗi phần để kiểm soát phơi nhiễm.
@@ -150,12 +172,19 @@ trước, không phải sau:
 ## Kiểm thử / Verification
 
 ```
-109 unit tests   engine tâm trắc học, lắp ráp đề, phân quyền, GITA
- 55 browser checks  onboarding, mọi tuyến, đổi vai trò, phòng thi, máy tính, GITA
+167 unit tests      tâm trắc học, lắp ráp đề, hiệu chuẩn, phân quyền, GITA, autopilot
+ 51 browser checks  onboarding, mọi tuyến, đổi vai trò, phòng thi, máy tính, GITA
+  1 bank check      bất biến cấu trúc và độ sâu của ngân hàng câu hỏi
 ```
 
-Kiểm thử trình duyệt chạy trên bản build thật qua Playwright và yêu cầu console
-sạch tuyệt đối.
+```bash
+npm test             # unit
+npm run check:bank   # ngân hàng câu hỏi
+npm run test:browser # trên bản build thật
+```
+
+Kiểm thử trình duyệt chạy trên bản build thật qua Playwright và coi bất kỳ lỗi
+console nào là thất bại. CI chạy cả ba trên mỗi lần push.
 
 ---
 

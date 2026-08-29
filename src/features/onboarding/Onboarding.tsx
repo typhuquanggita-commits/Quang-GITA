@@ -10,7 +10,6 @@ import React, { useState } from 'react';
 import { useStore } from '../../state/store.tsx';
 import { useLocale, useT } from '../../i18n/index.ts';
 import { generatePlan } from '../../engine/studyPlan.ts';
-import { seedOrg } from '../../auth/model.ts';
 import { Button, Card, Field, Segmented } from '../../components/ui/primitives.tsx';
 import { IconSparkle } from '../../components/ui/icons.tsx';
 import { addDays, isoDate } from '../../lib/util.ts';
@@ -35,11 +34,7 @@ export function Onboarding(): React.ReactElement {
     });
 
     // Seed the organisation with this person as the sole student account.
-    dispatch({ type: 'hydrate', state: { ...state, org: seedOrg(name.trim(), state.profile.email) } });
-    dispatch({
-      type: 'profile/update',
-      patch: { name: name.trim(), targetScore: target, testDate, onboarded: true },
-    });
+    dispatch({ type: 'org/seed', name: name.trim(), email: state.profile.email });
 
     dispatch({
       type: 'plan/set',

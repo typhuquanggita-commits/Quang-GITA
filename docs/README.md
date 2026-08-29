@@ -11,6 +11,7 @@ that is a defect in this index — please fix it rather than working around it.
 | [SPEC.md](SPEC.md) | What does SAT365 claim to replicate, and where does it deliberately differ? | Programme leads, auditors |
 | [PSYCHOMETRICS.md](PSYCHOMETRICS.md) | How is a score produced, and what would make it defensible in production? | Psychometricians, technical reviewers |
 | [CONTENT.md](CONTENT.md) | How is an item authored, reviewed, and accepted into the bank? | Item writers, content leads |
+| [AUTOPILOT.md](AUTOPILOT.md) | How does the automated coach decide, and how do I audit a decision it made? | Coaches, engineers |
 
 ## Platform
 

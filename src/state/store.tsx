@@ -35,7 +35,7 @@ import type {
   ThemeMode,
 } from '../types.ts';
 import { loadRaw, makeDebouncedSaver, migrate, SCHEMA_VERSION, clearAll } from '../lib/storage.ts';
-import { isoDate, uid } from '../lib/util.ts';
+import { addDays, isoDate, uid } from '../lib/util.ts';
 import { estimateAbility } from '../engine/irt.ts';
 import { newCard, review as reviewCard, type Grade } from '../engine/srs.ts';
 import { isCorrect } from '../engine/scoring.ts';
@@ -114,6 +114,7 @@ function initialState(): AppState {
       practitionerLevel: null,
       tierOverride: null,
     },
+    autopilot: { completedBlocks: {}, queue: null },
   };
 }
 
@@ -143,6 +144,7 @@ export type Action =
   | { type: 'plan/toggleTask'; taskId: string }
   | { type: 'bookmark/toggle'; questionId: string }
   | { type: 'activity/log'; seconds: number }
+  | { type: 'org/seed'; name: string; email: string }
   | { type: 'org/switchAccount'; accountId: string }
   | { type: 'org/upsertAccount'; account: Account }
   | { type: 'org/removeAccount'; accountId: string }
@@ -162,7 +164,10 @@ export type Action =
   | { type: 'gita/selfReport'; dimensionId: string; value: 1 | 2 | 3 | 4 | 5 }
   | { type: 'gita/toggleIndicator'; indicatorId: string }
   | { type: 'gita/setPractitionerLevel'; level: PractitionerLevel | null }
-  | { type: 'gita/setTierOverride'; tier: AbsorptionTier | null };
+  | { type: 'gita/setTierOverride'; tier: AbsorptionTier | null }
+  | { type: 'autopilot/toggleBlock'; date: string; blockId: string }
+  | { type: 'autopilot/queue'; blockId: string; questionIds: string[] }
+  | { type: 'autopilot/clearQueue' };
 
 /* ------------------------------------------------------------------ */
 /* Reducer                                                             */
@@ -341,6 +346,12 @@ export function reducer(state: AppState, action: Action): AppState {
     }
 
     /* ---------------- Organisation ---------------- */
+
+    case 'org/seed':
+      // Replaces the organisation only. Hydrating the whole state here would
+      // silently revert anything dispatched alongside it, since the caller's
+      // `state` is captured before the batch is applied.
+      return { ...state, org: seedOrg(action.name, action.email) };
 
     case 'org/switchAccount':
       return { ...state, org: { ...state.org, currentAccountId: action.accountId } };
@@ -558,6 +569,37 @@ export function reducer(state: AppState, action: Action): AppState {
     case 'gita/setTierOverride':
       return { ...state, gita: { ...state.gita, tierOverride: action.tier } };
 
+    /* ---------------- Autopilot ---------------- */
+
+    case 'autopilot/toggleBlock': {
+      const forDate = state.autopilot.completedBlocks[action.date] ?? [];
+      const next = forDate.includes(action.blockId)
+        ? forDate.filter((id) => id !== action.blockId)
+        : [...forDate, action.blockId];
+
+      // Keep only a recent window of days. Completion older than that answers
+      // no question anyone asks, and the log would otherwise grow forever.
+      const cutoff = addDays(isoDate(), -60);
+      const trimmed: Record<string, string[]> = {};
+      for (const [date, ids] of Object.entries({ ...state.autopilot.completedBlocks, [action.date]: next })) {
+        if (date >= cutoff && ids.length > 0) trimmed[date] = ids;
+      }
+
+      return { ...state, autopilot: { ...state.autopilot, completedBlocks: trimmed } };
+    }
+
+    case 'autopilot/queue':
+      return {
+        ...state,
+        autopilot: {
+          ...state.autopilot,
+          queue: { blockId: action.blockId, questionIds: action.questionIds },
+        },
+      };
+
+    case 'autopilot/clearQueue':
+      return { ...state, autopilot: { ...state.autopilot, queue: null } };
+
     default:
       return state;
   }
@@ -609,6 +651,7 @@ function loadInitial(): AppState {
     preferences: { ...base.preferences, ...((migrated as Partial<AppState>).preferences ?? {}) },
     sectionAbility: { ...base.sectionAbility, ...((migrated as Partial<AppState>).sectionAbility ?? {}) },
     gita: { ...base.gita, ...((migrated as Partial<AppState>).gita ?? {}) },
+    autopilot: { ...base.autopilot, ...((migrated as Partial<AppState>).autopilot ?? {}) },
     version: SCHEMA_VERSION,
   };
 }
@@ -620,6 +663,30 @@ export function StoreProvider({ children }: { children: React.ReactNode }): Reac
   useEffect(() => {
     save(state);
   }, [state, save]);
+
+  /**
+   * Write any pending state the moment the page is hidden.
+   *
+   * `pagehide` and a hidden `visibilitychange` are the last reliable moments a
+   * browser gives a page — `beforeunload` is not fired on mobile, and a tab
+   * discarded in the background never unloads at all. Without this, an action
+   * taken inside the debounce window is lost on reload, which is exactly when
+   * a learner is most likely to notice.
+   */
+  useEffect(() => {
+    const flush = () => save.flush();
+    const onVisibility = () => {
+      if (document.visibilityState === 'hidden') flush();
+    };
+
+    window.addEventListener('pagehide', flush);
+    document.addEventListener('visibilitychange', onVisibility);
+    return () => {
+      window.removeEventListener('pagehide', flush);
+      document.removeEventListener('visibilitychange', onVisibility);
+      flush();
+    };
+  }, [save]);
 
   const answerQuestion = useCallback<StoreValue['answerQuestion']>(
     ({ attemptId, question, value, msSpent, updateAbility }) => {
@@ -677,6 +744,7 @@ export function StoreProvider({ children }: { children: React.ReactNode }): Reac
         profile: { ...base.profile, ...((migrated as Partial<AppState>).profile ?? {}) },
         preferences: { ...base.preferences, ...((migrated as Partial<AppState>).preferences ?? {}) },
         gita: { ...base.gita, ...((migrated as Partial<AppState>).gita ?? {}) },
+        autopilot: { ...base.autopilot, ...((migrated as Partial<AppState>).autopilot ?? {}) },
         version: SCHEMA_VERSION,
       } as AppState,
     });

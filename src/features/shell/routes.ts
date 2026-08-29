@@ -11,6 +11,7 @@ import type { Permission } from '../../auth/roles.ts';
 
 export type Route =
   | { name: 'dashboard' }
+  | { name: 'today' }
   | { name: 'practice' }
   | { name: 'practice-session'; sessionId: string }
   | { name: 'vocab' }
@@ -28,6 +29,7 @@ export type RouteName = Route['name'];
 
 /** The permission a route requires, if any. */
 export const ROUTE_PERMISSION: Partial<Record<RouteName, Permission>> = {
+  today: 'practice.run',
   practice: 'practice.run',
   'practice-session': 'practice.run',
   vocab: 'vocab.own',
@@ -64,6 +66,8 @@ export function hashToRoute(hash: string): Route {
       return param ? { name: 'exam', attemptId: param } : { name: 'tests' };
     case 'result':
       return param ? { name: 'result', attemptId: param } : { name: 'dashboard' };
+    case 'today':
+      return { name: 'today' };
     case 'vocab':
       return { name: 'vocab' };
     case 'plan':
