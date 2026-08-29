@@ -113,4 +113,4 @@ export const DIFFICULTY_MIX: Record<number, number> = {
 };
 
 export const STORAGE_KEY = 'hsa365:state';
-export const STORAGE_VERSION = 5;
+export const STORAGE_VERSION = 6;

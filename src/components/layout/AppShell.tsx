@@ -10,6 +10,7 @@ import { CommandPalette } from './CommandPalette';
 import {
   IconBook,
   IconChart,
+  IconCompass,
   IconClose,
   IconExam,
   IconHome,
@@ -44,6 +45,7 @@ export function AppShell({ children }: { children: ReactNode }) {
   const nav = useMemo<NavItem[]>(
     () => [
       { href: '/', label: 'Tổng quan', icon: IconHome },
+      { href: '/placement', label: 'Định vị đầu vào', icon: IconCompass },
       { href: '/exam', label: 'Thi thử', icon: IconExam },
       { href: '/practice', label: 'Luyện tập', icon: IconTarget },
       { href: '/topic', label: 'Ôn chắc chuyên đề', icon: IconBook },

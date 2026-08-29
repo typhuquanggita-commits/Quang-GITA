@@ -5,6 +5,7 @@ import { STAGES } from '../../data/curriculum';
 import { topicName } from '../../data/topics';
 import { buildInsights, summarize, type Insight } from '../../lib/analytics';
 import { addDays, dayKey, formatNumber, formatPercent, formatScore, weekdayShort } from '../../lib/format';
+import { PLACEMENT_TOTAL } from '../../lib/placement';
 import { buildDailyPlan, rankWeakTopics } from '../../lib/plan';
 import { scoreBand } from '../../lib/scoring';
 import { navigate } from '../../lib/router';
@@ -94,6 +95,24 @@ export function DashboardPage() {
         </div>
         <Badge tone="brand">{STAGES.find((s) => s.stage === state.stage)?.name}</Badge>
       </header>
+
+      {state.placement === null && (
+        <Card className="border-brand-line bg-brand-soft">
+          <div className="flex flex-wrap items-center justify-between gap-4">
+            <div className="min-w-0">
+              <h2 className="text-base font-semibold text-fg">Bắt đầu bằng bài định vị</h2>
+              <p className="mt-1 max-w-2xl text-sm text-fg-muted">
+                Chưa định vị thì mọi người học đều xuất phát từ cùng một điểm mặc định, và lộ trình chỉ thật sự
+                cá nhân hóa sau rất nhiều phiếu. {PLACEMENT_TOTAL} câu, khoảng 30 phút, đổi lại là cấp độ khởi
+                điểm đúng cho cả {Object.keys(state.tracks).length || 30} tuyến chuyên đề.
+              </p>
+            </div>
+            <Button variant="primary" onClick={() => navigate('/placement')}>
+              Làm bài định vị
+            </Button>
+          </div>
+        </Card>
+      )}
 
       <div className="grid gap-5 lg:grid-cols-[auto_1fr]">
         <Card className="flex flex-col items-center justify-center">

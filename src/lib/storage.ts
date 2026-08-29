@@ -1,7 +1,7 @@
 import { DEFAULT_TARGET_SCORE, STORAGE_KEY, STORAGE_VERSION } from '../config';
 import { STAGES } from '../data/curriculum';
 import { ROLE_BY_ID } from '../data/roles';
-import type { PersistedState, Profile, Role, ScienceSubject, Settings } from '../types';
+import type { PersistedState, PlacementRecord, Profile, Role, ScienceSubject, Settings } from '../types';
 
 /**
  * Luu tru cuc bo, co danh phien ban.
@@ -41,6 +41,7 @@ export function createInitialState(now: number = Date.now()): PersistedState {
     xp: 0,
     habits: {},
     worksheetRuns: [],
+    placement: null,
   };
 }
 
@@ -76,6 +77,8 @@ const MIGRATIONS: Record<number, Migration> = {
   3: (state) => ({ ...state, version: 4, habits: {} }),
   /** v4 → v5: luu lich su tung luot lam phieu de dung lai bo giai de. */
   4: (state) => ({ ...state, version: 5, worksheetRuns: [] }),
+  /** v5 → v6: bo sung bai kiem tra dinh vi dau vao. */
+  5: (state) => ({ ...state, version: 6, placement: null }),
 };
 
 export function migrate(raw: Record<string, unknown>): PersistedState {
@@ -117,6 +120,7 @@ function reconcile(raw: Record<string, unknown>): PersistedState {
     xp: clampInt(candidate.xp, 0, Number.MAX_SAFE_INTEGER, 0),
     habits: isRecord(candidate.habits) ? candidate.habits : {},
     worksheetRuns: Array.isArray(candidate.worksheetRuns) ? candidate.worksheetRuns : [],
+    placement: isRecord(candidate.placement) ? (candidate.placement as PlacementRecord) : null,
   };
 }
 

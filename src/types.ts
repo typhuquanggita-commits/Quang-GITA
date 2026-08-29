@@ -387,6 +387,39 @@ export interface WorksheetProgress {
   lastAttemptAt?: number;
 }
 
+/* ── Bai kiem tra dinh vi dau vao ──────────────────────────────────────── */
+
+/**
+ * Ket qua dinh vi cho MOT phan thi.
+ *
+ * Muc uoc luong la PHAN THI chu khong phai tung chuyen de, va do la mot lua
+ * chon co y: 12 cau du de uoc luong nang luc mot phan voi sai so dung duoc,
+ * nhung khong the uoc luong 10 nang luc chuyen de rieng biet. Muc chuyen de se
+ * sac dan khi nguoi hoc lam phieu that.
+ */
+export interface PlacementSectionResult {
+  section: SectionId;
+  answered: number;
+  correct: number;
+  /** Nang luc uoc luong (logit). */
+  ability: number;
+  /** Sai so chuan — cang nho thi con so cang dang tin. */
+  standardError: number;
+  /** Diem du bao cua phan nay tren thang 50. */
+  projected: number;
+}
+
+export interface PlacementRecord {
+  completedAt: number;
+  scienceSubject: ScienceSubject;
+  sections: PlacementSectionResult[];
+  /** Diem du bao toan bai tren thang 150. */
+  projected: number;
+  /** Cap do khoi diem da gan cho tung tuyen, khoa la topicId. */
+  startingLevels: Record<string, number>;
+  durationMs: number;
+}
+
 /** Tien do theo tuyen (moi chu de la mot tuyen rieng). */
 export interface TrackState {
   topicId: string;
@@ -452,4 +485,6 @@ export interface PersistedState {
    * de ho so khong phinh vo han tren may nguoi dung.
    */
   worksheetRuns: WorksheetRecord[];
+  /** Ket qua bai dinh vi dau vao. `null` = chua lam — he thong chua co diem xuat phat. */
+  placement: PlacementRecord | null;
 }

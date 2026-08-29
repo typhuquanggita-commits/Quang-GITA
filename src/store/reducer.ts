@@ -6,6 +6,7 @@ import { updateMastery } from '../lib/analytics';
 import { dayKey } from '../lib/format';
 import { gradeAttempt, isCorrect } from '../lib/scoring';
 import { createCard, schedule, type Grade } from '../lib/srs';
+import { buildPlacement, type PlacementAnswer } from '../lib/placement';
 import { sanitizeProfile, sanitizeSettings } from '../lib/storage';
 import type {
   Attempt,
@@ -13,6 +14,7 @@ import type {
   PersistedState,
   Profile,
   Response,
+  ScienceSubject,
   Settings,
   WorksheetProgress,
   WorksheetRecord,
@@ -52,6 +54,13 @@ export type Action =
   | { type: 'habit/toggle'; habitId: string; date?: string }
   | { type: 'srs/grade'; questionId: string; grade: Grade; now?: number; maxIntervalDays?: number }
   | { type: 'srs/remove'; questionId: string }
+  | {
+      type: 'placement/complete';
+      answers: readonly PlacementAnswer[];
+      scienceSubject: ScienceSubject;
+      durationMs: number;
+      now?: number;
+    }
   | { type: 'state/replace'; state: PersistedState };
 
 const EMPTY_RESPONSE = (questionId: string): Response => ({
@@ -197,6 +206,27 @@ export function reducer(state: PersistedState, action: Action): PersistedState {
       const srs = { ...state.srs };
       delete srs[action.questionId];
       return { ...state, srs };
+    }
+
+    case 'placement/complete': {
+      const outcome = buildPlacement(
+        action.answers,
+        action.scienceSubject,
+        action.durationMs,
+        action.now ?? Date.now(),
+      );
+      // Dinh vi GIEO diem xuat phat, khong ghi de tien do da co. Nguoi hoc lam
+      // lai bai dinh vi sau vai tuan van giu nguyen phieu da lam va the on tap
+      // dang den han — chi cap do va muc thanh thao duoc dat lai.
+      return {
+        ...state,
+        placement: outcome.record,
+        mastery: { ...state.mastery, ...outcome.mastery },
+        tracks: { ...state.tracks, ...outcome.tracks },
+        srs: { ...outcome.srs, ...state.srs },
+        stage: Math.max(state.stage, outcome.stage),
+        settings: { ...state.settings, scienceSubject: action.scienceSubject },
+      };
     }
 
     case 'state/replace':

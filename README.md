@@ -45,7 +45,7 @@ Các lệnh khác:
 
 ```bash
 npm run verify       # typecheck + toàn bộ test + build
-npm run test         # 187 bài test
+npm run test         # 200 bài test
 npm run build        # dựng bản phát hành vào dist/
 npm run preview      # xem thử bản đã dựng
 npm run catalogue    # xuất 2000 phiếu + 2000 nhiệm vụ + 30 phiếu hướng dẫn ra catalogue/*.csv
@@ -138,6 +138,22 @@ LG-TOA-STA-L3-004   Phiếu lời giải  — lời giải đầy đủ + bảng
 HD-TOA-STA          Phiếu hướng dẫn — một phiếu ôn chắc cho cả chuyên đề
 ```
 
+### Cửa vào: bài kiểm tra định vị
+
+36 câu, 12 mỗi phần thi, **chọn thích ứng**: sau mỗi câu hệ thống ước lượng lại năng lực
+rồi chọn câu tiếp theo có độ khó gần năng lực đó nhất. Một câu quá dễ hay quá khó gần như
+không mang thông tin gì — ai cũng đúng, hoặc ai cũng sai — nên 12 câu cho ra sai số tương
+đương một đề cố định dài gấp đôi.
+
+Kết quả gieo **cấp độ khởi điểm cho cả 30 tuyến**, mức thành thạo ban đầu, điểm dự báo và
+đưa mọi câu sai thẳng vào sổ tay lỗi sai. Không có bước này thì mọi người học đều xuất
+phát từ cùng một điểm mặc định — nghĩa là người mới, người cần giúp nhất, lại nhận được
+ít hướng dẫn nhất.
+
+Hai giới hạn được tuyên bố thẳng trên màn hình thay vì giấu đi: bài này định vị ở mức
+**phần thi, không phải từng chuyên đề** (12 câu không đủ định vị 10 chuyên đề riêng biệt),
+và nó chỉ xếp tới **tối đa cấp 4** — cấp cao hơn phải chứng minh bằng phiếu thật.
+
 ### Ngân hàng câu hỏi
 
 Phiếu chỉ tốt bằng ngân hàng câu hỏi đứng sau nó. Hiện có **455 câu** trải đều 30
@@ -223,7 +239,7 @@ src/
   store/                 Reducer + context, mọi thay đổi trạng thái đi qua đây
   components/            Hệ thống thiết kế, biểu đồ SVG tự vẽ, khung ứng dụng
   features/              Từng màn hình
-tests/                   187 bài test cho toàn bộ tầng lib, data và giao diện
+tests/                   200 bài test cho toàn bộ tầng lib, data và giao diện
 ```
 
 Nguyên tắc: **mọi quy tắc nghiệp vụ nằm trong `lib/` dưới dạng hàm thuần** — chấm
@@ -247,7 +263,7 @@ Chi tiết: [`docs/KIEN-TRUC.md`](docs/KIEN-TRUC.md).
 
 - **TypeScript nghiêm ngặt** — bật `strict`, `noUncheckedIndexedAccess`,
   `exactOptionalPropertyTypes`, `noUnusedLocals`. Không có `any` trong mã sản phẩm.
-- **187 bài test** phủ chấm điểm, chuẩn hóa đáp án, mô hình Rasch, ôn tập ngắt quãng,
+- **200 bài test** phủ chấm điểm, chuẩn hóa đáp án, mô hình Rasch, ôn tập ngắt quãng,
   di trú dữ liệu, phân quyền, tiến độ, tính toàn vẹn ngân hàng câu hỏi và khung
   chương trình, mô thức GITA và quy tắc 20/80, cộng với test giao diện đầu-cuối.
 - **Không có màn hình trắng** — `ErrorBoundary` ở gốc bắt mọi lỗi hiển thị và đưa ra

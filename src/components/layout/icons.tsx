@@ -61,6 +61,13 @@ export const IconChart = (p: SVGProps<SVGSVGElement>) => (
   </Icon>
 );
 
+export const IconCompass = (p: SVGProps<SVGSVGElement>) => (
+  <Icon {...p}>
+    <circle cx="12" cy="12" r="9" />
+    <path d="m15.5 8.5-2 5-5 2 2-5Z" />
+  </Icon>
+);
+
 export const IconRoute = (p: SVGProps<SVGSVGElement>) => (
   <Icon {...p}>
     <circle cx="6" cy="6" r="2.5" />

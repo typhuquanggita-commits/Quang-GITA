@@ -11,6 +11,9 @@ import { WorksheetPage } from './features/practice/WorksheetPage';
  * hinh con lai nap khi can, nen lan mo dau khong phai tai ca nhung trang ma
  * nguoi hoc co the khong bao gio vao.
  */
+const PlacementPage = lazy(() =>
+  import('./features/placement/PlacementPage').then((m) => ({ default: m.PlacementPage })),
+);
 const ExamPage = lazy(() => import('./features/exam/ExamPage').then((m) => ({ default: m.ExamPage })));
 const PracticePage = lazy(() =>
   import('./features/practice/PracticePage').then((m) => ({ default: m.PracticePage })),
@@ -57,6 +60,8 @@ function Routes({ path }: { path: string }) {
   switch (path) {
     case '/':
       return <DashboardPage />;
+    case '/placement':
+      return <PlacementPage />;
     case '/exam':
       return <ExamPage />;
     case '/practice':
