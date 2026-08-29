@@ -117,7 +117,8 @@ def c_m1_03(rng, lop):
 @dang_ky("C-M1-04", "C", "M1", lop=(4, 5), tu_khoa=("số hạng thứ n", "dãy cách đều"))
 def c_m1_04(rng, lop):
     dau, d, n = day_cach_deu(rng, lop)
-    vi = sorted(rng.sample(range(5, n + 1), rng.randint(4, 6)))
+    n = max(n, 12)                       # đủ chỗ để hỏi 4–6 vị trí khác nhau
+    vi = sorted(rng.sample(range(5, n + 1), min(rng.randint(4, 6), n - 4)))
     y = [(f"Số hạng thứ {sv(i)} của dãy là số nào?", sv(so_hang(dau, d, i))) for i in vi]
     return Bai(
         tieu_de="Tìm số hạng thứ n của dãy cách đều",
@@ -299,7 +300,7 @@ def c_m3_01(rng, lop):
     d = rng.choice([3, 4, 5, 6, 7, 8])
     n = rng.randint(40, 300)
     cuoi = so_hang(dau, d, n)
-    thu = [so_hang(dau, d, i) for i in sorted(rng.sample(range(3, n), 3))]
+    thu = [so_hang(dau, d, i) for i in sorted(rng.sample(range(3, max(n, 8)), 3))]
     y = [(f"Dãy có bao nhiêu số hạng?", sv(n)),
          (f"Số hạng thứ {sv(n // 2)} là số nào?", sv(so_hang(dau, d, n // 2))),
          (f"Số {sv(thu[0])} là số hạng thứ mấy?", sv((thu[0] - dau) // d + 1)),

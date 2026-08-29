@@ -10,7 +10,7 @@ from __future__ import annotations
 
 import random
 import unicodedata
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from fractions import Fraction
 
 # ───────────────────────────── ĐỊNH DẠNG SỐ ─────────────────────────────
@@ -29,6 +29,25 @@ def sv(n) -> str:
     am = n < 0
     s = f"{abs(int(n)):,}".replace(",", " ")
     return ("-" if am else "") + s
+
+
+def nam(n: int) -> str:
+    """Năm dương lịch viết liền, không tách nhóm nghìn: 1975 chứ không 1 975."""
+    return str(int(n))
+
+
+LA_MA = [(1000, "M"), (900, "CM"), (500, "D"), (400, "CD"), (100, "C"), (90, "XC"),
+         (50, "L"), (40, "XL"), (10, "X"), (9, "IX"), (5, "V"), (4, "IV"), (1, "I")]
+
+
+def la_ma(n: int) -> str:
+    """Số La Mã — dùng cho thế kỉ và tên phần của phiếu."""
+    ra, n = [], int(n)
+    for gt, ki in LA_MA:
+        while n >= gt:
+            ra.append(ki)
+            n -= gt
+    return "".join(ra)
 
 
 def ps(f: Fraction) -> str:

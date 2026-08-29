@@ -6,7 +6,7 @@ hướng giải và bảng phân tích. Không có đáp số nào được gõ 
 """
 from __future__ import annotations
 
-from .khung import Bai, chon, dang_ky, luan_phien, sv
+from .khung import Bai, dang_ky, luan_phien, sv
 
 # ─────────────────────────── tiện ích riêng của nhóm A ───────────────────────────
 

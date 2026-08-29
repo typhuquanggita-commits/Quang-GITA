@@ -635,10 +635,9 @@ def b_m4_03(rng, lop):
         x = rng.randint(5, 90)
         a = rng.randint(2, 9)
         b = rng.randint(2, 9)
-        c = rng.randint(1, 50)
         while a == b:
             b = rng.randint(2, 9)
-        # a*x + c = b*x  ⇒ c = (b-a)*x, chọn c cho khớp
+        # x × be + c = x × lon  ⇒ c = (lon − be) × x
         lon, be = max(a, b), min(a, b)
         c = (lon - be) * x
         y.append((f"x × {sv(be)} + {sv(c)} = x × {sv(lon)}", f"x = {sv(x)}"))
@@ -749,8 +748,7 @@ def b_m5_02(rng, lop):
         k = rng.randint(2, 40)
         kieu = rng.choice(["tich_gan", "chuyen_phan", "tach_bu"])
         if kieu == "tich_gan":
-            A = a * (a + 2)
-            B = (a + 1) * (a + 1)
+            # a × (a + 2) = a² + 2a luôn bé hơn (a + 1)² = a² + 2a + 1
             y.append((f"{sv(a)} × {sv(a + 2)} … {sv(a + 1)} × {sv(a + 1)}", "&lt;"))
         elif kieu == "chuyen_phan":
             y.append((f"({sv(a)} + {sv(k)}) × {sv(k)} − {sv(a)} × {sv(k)}", sv(k * k)))
