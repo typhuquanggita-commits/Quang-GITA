@@ -242,7 +242,7 @@ const GENERATORS: Generator[] = [
         [3, 4, 5], [5, 12, 13], [8, 15, 17], [7, 24, 25], [9, 40, 41], [20, 21, 29],
       ];
       const [a, b, c] = pick(rng, triples);
-      const scale = pick(rng, [1, 1, 2, 3]);
+      const scale = pick(rng, [1, 2, 3, 4, 5, 6, 7, 8]);
       const [A, B, C] = [a * scale, b * scale, c * scale];
       const key = String(C);
       const wrong = [String(A + B), String(Math.round(Math.sqrt(B * B - A * A))), String(C + scale)];
@@ -507,11 +507,26 @@ const BAND_SPREAD = 0.32;
  * A template that cannot produce a valid item within `MAX_REROLLS` draws is
  * skipped rather than allowed to ship something broken.
  */
-export function generateMathItems(seed = 20260801, perGenerator = 10): Question[] {
+export function generateMathItems(seed = 20260801, perGenerator = 30): Question[] {
   const out: Question[] = [];
 
   ALL_GENERATORS.forEach((generator, gi) => {
+    /*
+     * Two instances of one template can draw the same parameters and ship as
+     * two items that are one item — a learner meeting both in a revision sheet
+     * has been given a shorter sheet than they were promised, and the second
+     * answer is a memory test. So each template tracks what it has already
+     * produced and re-rolls on a collision.
+     *
+     * A template whose parameter space is smaller than `perGenerator` cannot
+     * satisfy the request at all. It stops early rather than padding, and
+     * `check:bank` reports the shortfall so the template can be widened
+     * deliberately instead of silently producing near-duplicates.
+     */
+    const emitted = new Set<string>();
+
     for (let i = 0; i < perGenerator; i += 1) {
+      let placed = false;
       for (let attempt = 0; attempt < MAX_REROLLS; attempt += 1) {
         const rng = makeRng(seed + gi * 9973 + i * 131 + attempt * 7717);
         const candidate = {
@@ -541,15 +556,47 @@ export function generateMathItems(seed = 20260801, perGenerator = 10): Question[
           ...generator.build({ rng, index: i }),
         } as Question;
 
-        if (validateGenerated(candidate) === null) {
-          out.push(candidate);
-          break;
-        }
+        if (validateGenerated(candidate) !== null) continue;
+
+        /*
+         * Sorted, because makeChoices shuffles. Two draws that produce the
+         * same question with its options in a different order are the same
+         * question, and a key that respected the order would wave them
+         * through — inflating the bank with items that are one item.
+         */
+        const shape = `${candidate.prompt}|${(candidate.choices ?? [])
+          .map((c) => c.text)
+          .slice()
+          .sort()
+          .join('|')}`;
+        if (emitted.has(shape)) continue;
+
+        emitted.add(shape);
+        out.push(candidate);
+        placed = true;
+        break;
       }
+
+      // The parameter space is exhausted; further draws would only repeat.
+      if (!placed) break;
     }
   });
 
   return out;
+}
+
+/**
+ * How many distinct items each template can actually produce at a given
+ * request size, so a thin template is visible rather than merely quiet.
+ */
+export function generatorYield(seed?: number, perGenerator?: number): Array<{ id: string; emitted: number; requested: number }> {
+  const items = generateMathItems(seed, perGenerator);
+  const requested = perGenerator ?? 10;
+  return ALL_GENERATORS.map((generator) => ({
+    id: generator.id,
+    emitted: items.filter((q) => q.id.startsWith(`${generator.id}_`)).length,
+    requested,
+  }));
 }
 
 export const GENERATOR_COUNT = ALL_GENERATORS.length;

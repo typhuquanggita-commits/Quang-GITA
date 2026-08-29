@@ -87,8 +87,8 @@ export const DATA_GENERATORS: Generator[] = [
     irt: { a: 1.0, b: -0.85 },
     targetSeconds: 50,
     build({ rng }) {
-      const pct = pick(rng, [10, 20, 25, 40, 50]);
-      const base = pick(rng, [40, 60, 80, 120, 200, 240]);
+      const pct = pick(rng, [5, 10, 15, 20, 25, 30, 40, 50, 60, 75, 80]);
+      const base = pick(rng, [20, 40, 60, 80, 120, 140, 160, 180, 200, 240, 300, 360, 400, 500]);
       const key = String((base * pct) / 100);
       const wrong = [String(base - pct), String(base * pct), String(Math.round(base / pct))];
       return {
@@ -112,8 +112,8 @@ export const DATA_GENERATORS: Generator[] = [
     irt: { a: 1.3, b: 1.15 },
     targetSeconds: 95,
     build({ rng }) {
-      const up = pick(rng, [10, 20, 25]);
-      const down = pick(rng, [10, 20, 25]);
+      const up = pick(rng, [5, 10, 15, 20, 25, 30, 40, 50]);
+      const down = pick(rng, [5, 10, 15, 20, 25, 30, 40, 50]);
       const factor = (1 + up / 100) * (1 - down / 100);
       const net = Math.round((factor - 1) * 1000) / 10; // one decimal place
       const key = net === 0 ? 'It is unchanged' : `It ${net > 0 ? 'increases' : 'decreases'} by ${Math.abs(net)}%`;
@@ -376,8 +376,8 @@ export const DATA_GENERATORS: Generator[] = [
     irt: { a: 1.2, b: 0.3 },
     targetSeconds: 80,
     build({ rng }) {
-      const n1 = pick(rng, [100, 200, 250]);
-      const n2 = n1 * pick(rng, [2, 4]);
+      const n1 = pick(rng, [80, 100, 120, 150, 200, 250, 300, 400, 500]);
+      const n2 = n1 * pick(rng, [2, 3, 4, 5]);
       const key = 'The margin of error would decrease';
       const wrong = [
         'The margin of error would increase',
@@ -441,7 +441,17 @@ export const DATA_GENERATORS: Generator[] = [
     irt: { a: 1.05, b: -0.55 },
     targetSeconds: 60,
     build({ rng }) {
-      const setting = pick(rng, ['a shopping centre', 'a university library', 'an online forum', 'a sports stadium']);
+      const setting = pick(rng, [
+        'a shopping centre', 'a university library', 'an online forum', 'a sports stadium',
+        'a farmers’ market', 'a commuter rail platform', 'a public swimming pool',
+        'a community noticeboard', 'a hospital waiting room', 'a music festival',
+      ]);
+      const claim = pick(rng, [
+        'most adults in the city hold a particular view',
+        'the city’s residents overwhelmingly support a proposed policy',
+        'a majority of the city’s households have changed a daily habit',
+        'residents of the city are more satisfied than they were five years ago',
+      ]);
       const key = 'The participants were not randomly selected from the population of interest';
       const wrong = [
         'The sample was too small to detect any difference',
@@ -450,7 +460,7 @@ export const DATA_GENERATORS: Generator[] = [
       ];
       return {
         format: 'mcq',
-        prompt: `A researcher surveyed people who volunteered at ${setting} and concluded that most adults in the city hold a particular view. What is the most serious problem with this conclusion?`,
+        prompt: `A researcher surveyed people who volunteered at ${setting} and concluded that ${claim}. What is the most serious problem with this conclusion?`,
         ...makeChoices(rng, key, wrong, [
           'Sample size is not the issue here; a larger self-selected sample would have the same flaw.',
           'Researchers normally write their own questions; that alone is not a design flaw.',
@@ -469,7 +479,12 @@ export const DATA_GENERATORS: Generator[] = [
     irt: { a: 1.2, b: 0.3 },
     targetSeconds: 80,
     build({ rng }) {
-      const treatment = pick(rng, ['a new study technique', 'a daily exercise routine', 'a revised diet', 'a sleep schedule']);
+      const treatment = pick(rng, [
+        'a new study technique', 'a daily exercise routine', 'a revised diet', 'a sleep schedule',
+        'a meditation programme', 'a language-learning app', 'a note-taking method',
+        'a morning reading habit', 'a structured revision timetable', 'a peer-tutoring scheme',
+      ]);
+      const outcome = pick(rng, ['scored higher', 'reported better concentration', 'completed more coursework', 'attended more sessions']);
       const key = 'No, because the participants chose for themselves whether to take part in the programme';
       const wrong = [
         'Yes, because the two groups were compared directly',
@@ -478,7 +493,7 @@ export const DATA_GENERATORS: Generator[] = [
       ];
       return {
         format: 'mcq',
-        prompt: `Participants who chose to follow ${treatment} scored higher than those who did not. Can the researchers conclude that the programme caused the higher scores?`,
+        prompt: `Participants who chose to follow ${treatment} ${outcome} compared with those who did not. Can the researchers conclude that the programme caused the difference?`,
         ...makeChoices(rng, key, wrong, [
           'Comparing two groups shows an association; it does not establish which way the causation runs, or whether something else explains both.',
           'A large difference is still a difference between two groups that may have differed to begin with.',

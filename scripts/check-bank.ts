@@ -55,6 +55,32 @@ for (const q of BANK) {
   }
 }
 
+/*
+ * Uniqueness: no two items may pose the same question.
+ *
+ * A template emitting many instances draws fresh parameters each time, but
+ * nothing forces those draws to differ — two instances can land on the same
+ * numbers and ship as two items that are one item. A learner who meets both in
+ * a revision sheet has been given a shorter sheet than they were promised, and
+ * the second answer is a memory test.
+ */
+{
+  const seenPrompt = new Map<string, string>();
+  for (const q of BANK) {
+    // Normalise whitespace only: two prompts that differ by a number are two
+    // questions, and must not be collapsed.
+    // Choices sorted: a reshuffle of the same question is the same question.
+    const key = `${q.skill}|${q.prompt.replace(/\s+/g, ' ').trim()}|${(q.choices ?? [])
+      .map((c) => c.text)
+      .slice()
+      .sort()
+      .join('|')}`;
+    const prior = seenPrompt.get(key);
+    if (prior) problems.push(`${q.id}: poses the same question as ${prior}`);
+    else seenPrompt.set(key, q.id);
+  }
+}
+
 /* Depth: a two-stage adaptive form needs a routing module plus two pathways. */
 const stats = bankStats();
 for (const section of ['rw', 'math'] as const) {

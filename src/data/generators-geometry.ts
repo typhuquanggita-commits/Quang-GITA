@@ -81,19 +81,20 @@ export const GEOMETRY_GENERATORS: Generator[] = [
     irt: { a: 1.3, b: 1.15 },
     targetSeconds: 90,
     build({ rng }) {
-      const k = pick(rng, [2, 3]);
-      const shape = pick(rng, ['circle', 'square']);
+      const k = pick(rng, [2, 3, 4, 5, 6]);
+      const shape = pick(rng, ['circle', 'square', 'equilateral triangle', 'regular hexagon']);
+      const dimension = shape === 'circle' ? 'radius' : shape === 'square' ? 'side length' : 'side length';
       const key = String(k * k);
       const wrong = [String(k), String(k * k * k), String(2 * k)];
       return {
         format: 'mcq',
-        prompt: `The ${shape === 'circle' ? 'radius' : 'side length'} of a ${shape} is multiplied by ${k}. By what factor is its area multiplied?`,
+        prompt: `The ${dimension} of a ${shape} is multiplied by ${k}. By what factor is its area multiplied?`,
         ...makeChoices(rng, key, wrong, [
           'Applied the scale factor directly. Area is two-dimensional, so it scales by the square of the factor.',
           'Applied the cube of the factor, which is how volume scales, not area.',
           'Doubled the factor instead of squaring it.',
         ]),
-        explanation: `Area depends on two dimensions, so scaling a length by ${k} scales the area by ${k}² = ${k * k}. ${shape === 'circle' ? `Concretely: π(${k}r)² = ${k * k}πr².` : `Concretely: (${k}s)² = ${k * k}s².`} Volume, depending on three dimensions, would scale by ${k}³ = ${k * k * k} — which is why the distractors here are the factor, its square, and its cube.`,
+        explanation: `Area depends on two dimensions, so scaling any length by ${k} scales the area by ${k}² = ${k * k}. ${shape === 'circle' ? `Concretely: π(${k}r)² = ${k * k}πr².` : `Every area formula for this figure carries the length squared, so replacing s with ${k}s multiplies the result by ${k * k}.`} Volume, depending on three dimensions, would scale by ${k}³ = ${k * k * k} — which is why the distractors here are the factor, its square, and its cube.`,
       };
     },
   },
@@ -185,10 +186,12 @@ export const GEOMETRY_GENERATORS: Generator[] = [
     irt: { a: 1.0, b: -0.75 },
     targetSeconds: 55,
     build({ rng }) {
-      const k = randInt(rng, 1, 5);
-      const a = 3 * k;
-      const b = 4 * k;
-      const c = 5 * k;
+      // Three primitive triples, each scaled, so the pool is 3 × 8 rather than 5.
+      const [pa, pb, pc] = pick(rng, [[3, 4, 5], [5, 12, 13], [8, 15, 17]] as const);
+      const k = randInt(rng, 1, 8);
+      const a = pa * k;
+      const b = pb * k;
+      const c = pc * k;
       const key = String(c);
       const wrong = [String(a + b), String(b - a), String(Math.round(Math.sqrt(a * a + b * b)) + 1)];
       return {
@@ -199,7 +202,7 @@ export const GEOMETRY_GENERATORS: Generator[] = [
           'Subtracted the legs, which gives a length shorter than either of them.',
           'Off by one from a correct application of the Pythagorean theorem.',
         ]),
-        explanation: `By the Pythagorean theorem, c² = ${a}² + ${b}² = ${a * a} + ${b * b} = ${c * c}, so c = ${c}. These sides are a ${k === 1 ? '' : `${k}× scaled `}3–4–5 triangle, which can be read off directly once recognised. The hypotenuse must come out longer than either leg and shorter than their sum — a check worth two seconds.`,
+        explanation: `By the Pythagorean theorem, c² = ${a}² + ${b}² = ${a * a} + ${b * b} = ${c * c}, so c = ${c}. These sides are a ${k === 1 ? '' : `${k}× scaled `}${pa}–${pb}–${pc} triangle, which can be read off directly once recognised. The hypotenuse must come out longer than either leg and shorter than their sum — a check worth two seconds.`,
       };
     },
   },
@@ -264,8 +267,8 @@ export const GEOMETRY_GENERATORS: Generator[] = [
     irt: { a: 1.3, b: 1.2 },
     targetSeconds: 95,
     build({ rng }) {
-      const r = pick(rng, [3, 6, 9, 12]);
-      const deg = pick(rng, [60, 90, 120, 180]);
+      const r = pick(rng, [2, 3, 4, 5, 6, 8, 9, 10, 12, 15]);
+      const deg = pick(rng, [30, 40, 45, 60, 72, 90, 120, 135, 150, 180, 240, 270]);
       const fraction = deg / 360;
       const areaNum = fraction * r * r;
       // "1π" is not how anyone writes π, and a trailing ".00" reads as a

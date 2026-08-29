@@ -51,8 +51,8 @@ export const ADVANCED_GENERATORS: Generator[] = [
     irt: { a: 1.15, b: 0.2 },
     targetSeconds: 75,
     build({ rng }) {
-      const a = randInt(rng, 2, 7);
-      const b = randInt(rng, 2, 8);
+      const a = randInt(rng, 2, 12);
+      const b = randInt(rng, 2, 14);
       // (ax + b)(ax − b) = a²x² − b²
       const key = `${a * a}x² − ${b * b}`;
       const wrong = [
@@ -81,8 +81,8 @@ export const ADVANCED_GENERATORS: Generator[] = [
     irt: { a: 1.25, b: 1.1 },
     targetSeconds: 95,
     build({ rng }) {
-      const a = randInt(rng, 2, 6);
-      const b = randInt(rng, 2, 7);
+      const a = randInt(rng, 2, 12);
+      const b = randInt(rng, 2, 15);
       // (x² − b²) / (x + b) = x − b, for x ≠ −b
       const key = `x − ${b}`;
       const wrong = [`x + ${b}`, `x² − ${b}`, `−${b}`];
@@ -109,7 +109,7 @@ export const ADVANCED_GENERATORS: Generator[] = [
     irt: { a: 1.05, b: -0.7 },
     targetSeconds: 60,
     build({ rng }) {
-      const r = randInt(rng, 2, 11);
+      const r = randInt(rng, 2, 25);
       const key = String(r);
       const wrong = [String(r * r), String(-r), String(Math.round(r / 2))];
       return {
@@ -134,8 +134,8 @@ export const ADVANCED_GENERATORS: Generator[] = [
     targetSeconds: 100,
     build({ rng }) {
       // Exactly one solution ⇒ discriminant zero ⇒ c = b²/(4a).
-      const a = pick(rng, [1, 2, 4]);
-      const half = randInt(rng, 2, 7);
+      const a = pick(rng, [1, 2, 3, 4, 5, 6]);
+      const half = randInt(rng, 2, 14);
       const b = 2 * a * half; // ensures b²/(4a) is an integer
       const c = (b * b) / (4 * a);
       const key = String(c);
@@ -189,8 +189,8 @@ export const ADVANCED_GENERATORS: Generator[] = [
     irt: { a: 1.15, b: 0.2 },
     targetSeconds: 80,
     build({ rng }) {
-      const r1 = randInt(rng, 1, 6);
-      const r2 = r1 + randInt(rng, 2, 6);
+      const r1 = randInt(rng, 1, 12);
+      const r2 = r1 + randInt(rng, 2, 11);
       const axis = (r1 + r2) / 2;
       const key = String(axis);
       const wrong = [String(r1), String(r2), String(r1 + r2)];
@@ -215,8 +215,8 @@ export const ADVANCED_GENERATORS: Generator[] = [
     irt: { a: 1.2, b: 0.35 },
     targetSeconds: 80,
     build({ rng }) {
-      const start = pick(rng, [200, 400, 500, 800, 1200]);
-      const pct = pick(rng, [5, 10, 20, 25]);
+      const start = pick(rng, [120, 150, 200, 250, 300, 400, 500, 600, 750, 800, 1000, 1200, 1500, 2000]);
+      const pct = pick(rng, [3, 4, 5, 8, 10, 12, 15, 20, 25, 30, 40, 50]);
       const key = `${start}(${(1 + pct / 100).toFixed(2)})^t`;
       const wrong = [
         `${start}(${(1 - pct / 100).toFixed(2)})^t`,
