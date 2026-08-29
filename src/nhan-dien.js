@@ -109,7 +109,12 @@ G.VIEWS = G.VIEWS || {};
 
 G.VIEWS['so-tay-nhan-dien'] = function(){
   var S = G.SOTAY_NHANDIEN;
-  if(!S) return G.manChuaCapPhep ? G.manChuaCapPhep('so-tay-nhan-dien') :
+  /* Chưa có kho nghề thì trả về ĐÚNG màn xin cấp phép của hệ thống, không
+     phải một thẻ một dòng. Trước đây dòng này gọi G.manChuaCapPhep — một
+     hàm chưa từng tồn tại — nên luôn rơi xuống nhánh dự phòng và màn hình
+     chỉ còn 136 ký tự: nhìn như màn rỗng ruột chứ không nói được là khoá
+     ở đâu và mở bằng cách nào. */
+  if(!S) return G.canCapPhep ? G.canCapPhep('nghe') :
     '<div class="card"><p class="sm dim">Phần này mở khi kho nghề được cấp phép.</p></div>';
 
   var o = U.ph({eyebrow:'BIÊN SOẠN CHUẨN', ic:'book', grad:1,

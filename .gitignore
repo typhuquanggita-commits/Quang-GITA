@@ -27,6 +27,9 @@ dist-ssr
 kho-goc/
 kho/khoa.json
 GITA365_v7*_*.html
+# Bản xem thử dựng từ bản giới thiệu — tệp dựng ra, không phải mã nguồn.
+# Dựng lại bằng: python3 tools/ban-xem-thu.py
+ban-xem-thu.html
 
 # Giấy phép cấp cho từng máy — mang khoá thật
 giay-phep/

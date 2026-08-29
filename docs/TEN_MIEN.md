@@ -44,6 +44,15 @@ dụng cần — `index.html`, `cau-hinh.js`, `manifest.webmanifest`, `sw.js`,
 `robots.txt`, `src/`, `assets/`, `kho/` — và **dừng hẳn** nếu phát hiện
 `kho-goc/`, `tools/`, `server/`, `docs/`, `giay-phep/` hay bộ khoá sắp lọt ra.
 
+Bật xong là xong — trang chạy ngay ở đường mặc định:
+
+```
+https://typhuquanggita-commits.github.io/Quang-GITA/
+```
+
+Không phải sửa mã, không phải chờ DNS. Cứ mở đường ấy là kiểm được toàn bộ
+ứng dụng. Bước 2 chỉ để đổi sang tên miền riêng.
+
 ### 2. Trỏ tên miền
 
 `gita.edu.vn` là tên miền gốc (không có `www`) nên phải dùng **bản ghi A**,
@@ -57,6 +66,25 @@ không dùng CNAME. Vào trang quản trị tên miền, thêm:
 185.199.110.153
 185.199.111.153
 ```
+
+### 3. Khai tên miền cho luồng chạy
+
+Chỉ khai **sau khi bốn bản ghi A ở trên đã trỏ xong**, không khai trước.
+
+`Settings → Secrets and variables → Actions → Variables → New repository
+variable`
+
+| Tên | Giá trị |
+|---|---|
+| `TEN_MIEN` | `gita.edu.vn` |
+
+Vì sao phải theo thứ tự này: khai `TEN_MIEN` là luồng chạy ghi tệp `CNAME`
+vào trang. Có `CNAME` thì GitHub Pages phục vụ ở tên miền ấy và **chuyển
+hướng cả đường github.io về đó**. DNS chưa trỏ mà đã có `CNAME` thì hỏng cả
+hai đường một lúc, và trang chỉ báo lỗi chung chung chứ không nói vì sao.
+
+Chưa khai `TEN_MIEN` thì luồng chạy bỏ qua `CNAME` và trang ở lại đường
+github.io — luôn mở được.
 
 **Bốn bản ghi AAAA** (nên có, cho IPv6):
 
@@ -73,21 +101,25 @@ không dùng CNAME. Vào trang quản trị tên miền, thêm:
 www  →  typhuquanggita-commits.github.io
 ```
 
-### 3. Khai báo tên miền với GitHub
+### 4. Khai báo tên miền với GitHub
 
 `Settings → Pages → Custom domain` → gõ `gita.edu.vn` → **Save**
 
-Tệp `CNAME` đã nằm sẵn trong kho mã và luồng phát hành cũng ghi lại nó mỗi
-lần dựng, nên không bị mất khi đẩy bản mới.
+Đã khai `TEN_MIEN` ở bước 3 thì mỗi lần dựng luồng chạy tự ghi lại tệp
+`CNAME`, nên khai báo này không bị mất khi đẩy bản mới.
 
-### 4. Bật HTTPS
+*(Tệp `CNAME` ở gốc kho mã là bản lưu cho người đọc; nó không được chép vào
+thư mục xuất bản — chỉ bước 3 mới quyết định trang có tên miền riêng hay
+không.)*
+
+### 5. Bật HTTPS
 
 Đợi GitHub cấp chứng thư — thường vài phút, có khi tới 24 giờ. Xong thì
 `Settings → Pages` → tích **Enforce HTTPS**.
 
 Chưa tích được là chứng thư chưa xong, đợi thêm. Đừng đổi DNS trong lúc đợi.
 
-### 5. Kiểm
+### 6. Kiểm
 
 ```bash
 dig gita.edu.vn +noall +answer -t A

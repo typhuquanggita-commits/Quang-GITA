@@ -162,7 +162,7 @@ npx http-server -p 8099 -s .
 node tools/ra-soat-day-du.js
 ```
 
-Chạy hết mọi màn hình của mọi vai rồi soi bảy loại chỗ trống:
+Chạy hết mọi màn hình của mọi vai rồi soi tám loại chỗ trống:
 
 | # | Bắt gì | Vì sao đáng bắt |
 |---|---|---|
@@ -173,6 +173,34 @@ Chạy hết mọi màn hình của mọi vai rồi soi bảy loại chỗ trố
 | 5 | Mảng khai báo mà rỗng | Biến có tên, không có gì bên trong |
 | 6 | Chuỗi chưa dịch | Giao diện EN hiện mã màn hình thay cho tên |
 | 7 | Nút bấm không có bộ nhận | Bấm vào không tới đâu |
+| 8 | Hàm được canh trước khi gọi mà không tồn tại | Màn vĩnh viễn rơi xuống nhánh dự phòng |
+
+**Loại 8 là loại khó thấy nhất, nên nói riêng.** Lối viết phòng hờ quen
+thuộc là:
+
+```js
+if(!S) return G.manChuaCapPhep ? G.manChuaCapPhep('so-tay-nhan-dien') :
+  '<div class="card"><p class="sm dim">Phần này mở khi kho nghề được cấp phép.</p></div>';
+```
+
+`G.manChuaCapPhep` **chưa từng được định nghĩa ở đâu trong dự án**. Câu
+điều kiện vì thế luôn sai, luôn rơi xuống nhánh dự phòng, và màn *Sổ tay
+nhận diện* dựng ra đúng 136 ký tự thay vì màn xin cấp phép đầy đủ có nút
+nạp giấy phép. Không lỗi, không cảnh báo, không màn trắng — chỉ là ruột
+rỗng đội lốt phòng hờ, và bộ kiểm phát hành không bắt được vì màn ấy *có*
+dựng ra chuỗi. Nay đã sửa thành `G.canCapPhep('nghe')`.
+
+Phép soi: đọc tĩnh `src/*.js` tìm mọi dạng `G.foo ? G.foo(` và
+`G.foo && G.foo(`, rồi hỏi ứng dụng đang chạy xem `G.foo` có thật là hàm
+không. Hiện soi 42 hàm.
+
+**Hệ quả cho màn tự soát.** Màn `soat-day-du` là màn duy nhất nói *về* chữ
+tạm, nên nếu nó in nguyên văn mấy chữ ấy ra thì loại 2 bắt chính nó. Cách
+chữa dễ dãi là tha cho nó một ngoại lệ — nhưng tha một lần là mở đường tha
+lần sau. Nên chữa bằng cách đổi câu chữ trên giao diện (cả trong
+`src/soat-day-du.js` lẫn `SOAT_CHATLUONG.CL3` ở `kho-goc/`), giữ nguyên
+luật. Chữ tạm cụ thể vẫn nằm trong biểu thức `TAM` và vẫn hiện đủ khi thật
+sự bắt được.
 
 **Mỗi ngoại lệ phải có lý do viết ra.** Bảng `THA` trong tệp ghi từng
 trường được phép để trống kèm lý do — ví dụ `AD_GIONG.ten` để trống vì

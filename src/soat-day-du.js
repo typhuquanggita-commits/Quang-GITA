@@ -263,7 +263,12 @@ G.VIEWS['soat-day-du'] = function(){
       (c.moLap + c.chotLap) ? c.moLap+' câu mở · '+c.chotLap+' câu chốt bị lặp'
         : 'nghìn bản là nghìn tình huống thật'],
     ['CL3','Không còn chữ tạm', c.coTam.length === 0,
-      c.coTam.length ? c.coTam.join(' ') : 'không kho nào chứa TODO, "đang cập nhật", "sắp có"'],
+      /* Không viết thẳng mấy chữ tạm ra màn hình. Đây là màn duy nhất nói
+         VỀ chữ tạm, nên nếu in nguyên chữ ra thì bộ rà soát chỗ trống lại
+         bắt chính màn này — và cách chữa dễ dãi là tha cho nó một ngoại lệ.
+         Tha một lần là mở đường tha lần sau, nên đổi câu chữ thay vì đổi
+         luật. Chữ tạm cụ thể vẫn hiện đủ ở nhánh trái khi thật sự bắt được. */
+      c.coTam.length ? c.coTam.join(' ') : 'không kho nào lấp chỗ trống bằng chữ đánh dấu để quay lại sau'],
     ['CL4','Đủ bản tiếng Anh', c.thieuEN.length === 0,
       c.thieuEN.length ? c.thieuEN.length+'/'+c.tongMuc+' thiếu: '+c.thieuEN.slice(0,5).join(' ')
         : c.tongMuc+'/'+c.tongMuc+' mục điều hướng']

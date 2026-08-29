@@ -31,6 +31,57 @@ Thêm `--day` thì commit và đẩy, CI dựng bộ cài Windows mới trong kh
 
 ---
 
+## Mở ứng dụng ra xem — ba đường
+
+Ba đường dưới đây cho cùng một ứng dụng, khác nhau ở chỗ mở được bao nhiêu.
+
+### Đường 1 · Máy chủ thử ngay trong máy — đủ 100%
+
+```bash
+node tools/thu-may-chu.js        # rồi mở http://127.0.0.1:8099
+```
+
+Có `kho/khoa.json` trong máy nên **mở đủ cả bảy gói**: 1.000 kịch bản, 220
+phác đồ, 250 tình huống. Đây là đường duy nhất thấy hết ruột.
+
+### Đường 2 · Một tệp HTML gửi đi được — mở phần vỏ
+
+```bash
+python3 tools/dong-goi.py        # ra GITA365_v75_GIOI_THIEU.html
+```
+
+Mở thẳng bằng trình duyệt, gửi qua email, chép vào USB. Không cần mạng,
+không cần cài gì. Chạy **chế độ mẫu**: đi được cả 124 màn, xem được toàn bộ
+khung — nhưng 33 màn lấy dữ liệu từ kho mã hoá sẽ hiện màn xin cấp phép,
+vì tệp này **không kèm kho tri thức và không kèm khoá**. Đó là chủ ý: tệp
+này để gửi ra ngoài.
+
+Muốn mở đủ ngay trên tệp ấy thì bấm **Nạp tệp giấy phép** và chọn tệp
+`.json` do Học viện cấp — xem mục *Cấp giấy phép cho đội ngũ* bên dưới.
+
+Cần bản đã bóc vỏ `<html>`/`<head>` để dán vào chỗ khác:
+
+```bash
+python3 tools/ban-xem-thu.py     # ra ban-xem-thu.html
+```
+
+### Đường 3 · Đường web thật, ai cũng bấm được
+
+`Settings → Pages → Source → GitHub Actions → Save`
+
+Đúng một lần bấm, không phải sửa mã. Luồng `.github/workflows/trang-web.yml`
+đã sẵn sàng và đang chờ ở đó; bật xong nó tự dựng và trang chạy ở:
+
+```
+https://typhuquanggita-commits.github.io/Quang-GITA/
+```
+
+Chưa bật thì luồng ấy dừng và báo đúng câu này trong nhật ký chạy. Muốn
+gắn `gita.edu.vn` thì làm tiếp theo `docs/TEN_MIEN.md` — **và chỉ khai biến
+`TEN_MIEN` sau khi DNS đã trỏ xong**, nếu không cả hai đường đều tắt.
+
+---
+
 ## Đưa lên mạng — làm một lần
 
 ### 1. Chuyển kho mã sang riêng tư

@@ -252,8 +252,37 @@ const NGAN = 700;
   bao(!khongNhan.length, 'mọi nút bấm trên giao diện đều có bộ nhận sự kiện',
     khongNhan.slice(0, 10).join(' '));
 
-  /* ══════ 5 · KHÔNG LỖI TRANG ══════ */
-  console.log('\n5 · KHÔNG LỖI TRANG');
+  /* ══════ 5 · HÀM CANH CỬA PHẢI CÓ THẬT ══════
+     Lớp chỗ trống khó thấy nhất: `G.foo ? G.foo(x) : 'một dòng dự phòng'`
+     — nếu G.foo chưa từng được định nghĩa thì câu điều kiện LUÔN rơi xuống
+     nhánh dự phòng, và màn hình vĩnh viễn chỉ có một dòng chữ. Không lỗi,
+     không cảnh báo, chỉ là ruột rỗng đội lốt phòng hờ.
+
+     Đúng một lỗi loại này đã nằm trong kho: so-tay-nhan-dien gọi
+     G.manChuaCapPhep — một hàm không tồn tại — nên màn ấy chỉ dựng ra
+     136 ký tự thay vì màn xin cấp phép đầy đủ. */
+  console.log('\n5 · HÀM CANH CỬA PHẢI CÓ THẬT');
+  {
+    const fs = require('fs'), path = require('path');
+    const thuMuc = path.join(__dirname, '..', 'src');
+    const ten = new Set();
+    for (const f of fs.readdirSync(thuMuc)) {
+      if (!f.endsWith('.js')) continue;
+      const ma = fs.readFileSync(path.join(thuMuc, f), 'utf8');
+      /* Bắt đúng dạng "G.foo ? G.foo(" và "G.foo && G.foo(" */
+      const re = /G\.([A-Za-z_$][\w$]*)\s*(\?|&&)\s*G\.\1\s*\(/g;
+      let m; while ((m = re.exec(ma))) ten.add(m[1]);
+    }
+    const ds = Array.from(ten).sort();
+    const thieu = await p.evaluate(list =>
+      list.filter(n => typeof window.G[n] !== 'function'), ds);
+    bao(!thieu.length,
+      'mọi hàm được canh trước khi gọi đều tồn tại thật — ' + ds.length + ' hàm được soi',
+      thieu.length ? ('KHÔNG CÓ: G.' + thieu.join(' · G.')) : '');
+  }
+
+  /* ══════ 6 · KHÔNG LỖI TRANG ══════ */
+  console.log('\n6 · KHÔNG LỖI TRANG');
   bao(!errs.length, 'không lỗi nào khi chạy hết mọi màn của mọi vai', errs.slice(0, 3).join(' | '));
 
   console.log('\n' + (loi
