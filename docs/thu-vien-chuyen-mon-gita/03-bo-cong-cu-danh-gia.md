@@ -12,7 +12,7 @@
 
 ---
 
-## 2. Bộ công cụ theo mốc
+## 2. Bộ công cụ theo mốc — bảng mã chuẩn duy nhất
 
 | Mã | Công cụ | Mốc dùng | Người thực hiện | Thời lượng |
 |---|---|---|---|---|
@@ -29,6 +29,7 @@
 | **CC-11** | Phiếu nghiệm thu cấp / chu kỳ | Cuối mỗi cấp | Coach + Trainer trưởng | 30' |
 | **CC-12** | Bảng chấm 12 tiêu chuẩn buổi huấn luyện | 2 buổi/ngày | Trainer trưởng | 15'/buổi |
 | **CC-13** | Portfolio | Từ T4, cập nhật mỗi quý | Học viên + Coach | — |
+| **CC-14** | Khảo sát hài lòng + NPS | D7 · D+7 · D118 · D365 | Giáo vụ | 5' |
 
 ---
 

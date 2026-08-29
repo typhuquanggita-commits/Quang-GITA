@@ -16,7 +16,7 @@ Sở GD&ĐT, nhà trường đối tác, và khi truyền thông với phụ huy
 
 | Văn bản | Nội dung liên quan | Chương trình đáp ứng bằng |
 |---|---|---|
-| **Thông tư 04/2014/TT-BGDĐT** — Quản lý hoạt động giáo dục kỹ năng sống và hoạt động giáo dục ngoài giờ chính khoá | Điều kiện về cơ sở vật chất, đội ngũ, giáo trình – tài liệu; thủ tục cấp phép; trách nhiệm của đơn vị tổ chức | Toàn bộ bộ hồ sơ 13 tài liệu; hồ sơ nhân sự (TL 10); danh mục học liệu (TL 12); hồ sơ địa điểm (TL 09) |
+| **Thông tư 04/2014/TT-BGDĐT** — Quản lý hoạt động giáo dục kỹ năng sống và hoạt động giáo dục ngoài giờ chính khoá | Điều kiện về cơ sở vật chất, đội ngũ, giáo trình – tài liệu; thủ tục cấp phép; trách nhiệm của đơn vị tổ chức | Toàn bộ bộ hồ sơ 14 tài liệu; hồ sơ nhân sự (TL 10); danh mục học liệu (TL 12); hồ sơ địa điểm (TL 09) |
 | **Thông tư 32/2018/TT-BGDĐT** — Chương trình GDPT 2018 | 5 phẩm chất, 10 năng lực; Chương trình Hoạt động trải nghiệm, hướng nghiệp | Ma trận A2, A3 dưới đây; khung năng lực TL 03 |
 | **Nghị định 80/2017/NĐ-CP** — Môi trường giáo dục an toàn, lành mạnh, thân thiện, phòng chống bạo lực học đường | Trách nhiệm bảo đảm môi trường an toàn; phòng chống bạo lực | Chính sách không trừng phạt (TL 09 §2); quy tắc ứng xử (TL 10 §5) |
 | **Thông tư 06/2019/TT-BGDĐT** — Quy tắc ứng xử trong cơ sở giáo dục | Chuẩn mực ứng xử của nhà giáo, người học | Bộ Quy tắc ứng xử Leader Boom, ký cam kết trước trại (TL 10) |

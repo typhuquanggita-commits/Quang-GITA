@@ -1,138 +1,91 @@
-# 03 · KHUNG NĂNG LỰC LEADER BOOM & BỘ RUBRIC
+# 03 · KHUNG NĂNG LỰC TẠI TRẠI & BỘ RUBRIC
 
-## 1. Cấu trúc khung
-
-**4 trụ GITA → 12 năng lực → 5 cấp độ.** Mỗi năng lực có mã, mô tả, minh chứng chấp nhận được,
-và ánh xạ sang 11 nhóm dữ liệu của hệ GITA cũng như chuẩn của Bộ GD&ĐT.
-
-| Trụ | Mã | Năng lực | Nhóm dữ liệu GITA | Năng lực CT GDPT 2018 | CASEL |
-|---|---|---|---|---|---|
-| **G** | G1 | Tầm nhìn & thiết lập mục tiêu | 13.6 Động lực – mục tiêu | Tự chủ và tự học | Self-awareness |
-| | G2 | Lập kế hoạch & quản trị ưu tiên | 13.5 Tự quản trị · 13.8 Hiệu suất | Tự chủ và tự học | Self-management |
-| | G3 | Ra quyết định & tư duy chiến lược | 13.4 Năng lực học tập | Giải quyết vấn đề và sáng tạo | Responsible decision-making |
-| **I** | I1 | Tự nhận thức & giá trị sống | 13.6 · 13.9 Tài năng | Tự chủ và tự học | Self-awareness |
-| | I2 | Động lực nội tại & niềm tin năng lực | 13.6 Động lực – mục tiêu | Tự chủ và tự học | Self-management |
-| | I3 | Bản lĩnh & khả năng phục hồi | 13.2 Hành vi · 13.3 Thói quen | Tự chủ và tự học | Self-management |
-| **T** | T1 | Nhận diện & phát huy thế mạnh | 13.9 Tài năng · 13.10 Nghề nghiệp | Các năng lực đặc thù | Social awareness |
-| | T2 | Tư duy phản biện & sáng tạo | 13.4 Năng lực học tập | Giải quyết vấn đề và sáng tạo | Responsible decision-making |
-| | T3 | Giao tiếp & trình bày có ảnh hưởng | 13.11 Dự án – Lãnh đạo | Giao tiếp và hợp tác · Ngôn ngữ | Relationship skills |
-| **A** | A1 | Kỷ luật & hệ thống thói quen | 13.3 Thói quen · 13.1 Môi trường | Tự chủ và tự học | Self-management |
-| | A2 | Hợp tác & lãnh đạo đội nhóm | 13.11 Dự án – Lãnh đạo | Giao tiếp và hợp tác | Relationship skills |
-| | A3 | Học tập suốt đời & phản tư | 13.4 · 13.5 | Tự chủ và tự học | Self-awareness |
+> **Bản chuẩn duy nhất của khung năng lực là 18 năng lực GITA**, đặt tại
+> [`../thu-vien-chuyen-mon-gita/02-khung-nang-luc-18.md`](../thu-vien-chuyen-mon-gita/02-khung-nang-luc-18.md).
+> Tài liệu này là **lát cắt dùng tại trại**: trong 7 ngày, chỉ một phần của 18 năng lực
+> quan sát được đủ tin cậy. Không tạo khung riêng, không đổi mã.
 
 ---
 
-## 2. Năm cấp độ chung
+## 1. Mười năng lực đo được tin cậy trong 7 ngày trại
 
-| Cấp | Tên | Mô tả hành vi | Mức hỗ trợ cần thiết |
+| Mã | Năng lực | Trụ | Vì sao đo được tại trại |
+|---|---|---|---|
+| **NL-01** | Nhận thức bản thân | I | Có hoạt động phản tư mỗi ngày, có bài "Chân dung tôi" |
+| **NL-02** | Thiết lập mục tiêu | G | Có sản phẩm cụ thể: bảng mục tiêu SMART, bản mục tiêu năm học |
+| **NL-03** | Tư duy | T | Chuỗi thử thách giải mã, chiến lược, thiết kế kỹ thuật |
+| **NL-10** | Giải quyết vấn đề | T | Thử thách nhiều ràng buộc, có phương án và đánh đổi |
+| **NL-11** | Giao tiếp | T | Thuyết trình mỗi ngày, hùng biện 5 phút ở D6 |
+| **NL-12** | Hợp tác | A | Toàn bộ hoạt động team, có xung đột thật để quan sát |
+| **NL-13** | Quản lý cảm xúc | I | Thắng – thua liên tục, thử thách giới hạn, xa nhà |
+| **NL-14** | Thích ứng | I | Môi trường mới, lịch mới, bạn mới trong 7 ngày |
+| **NL-15** | Lãnh đạo bản thân | I, A | Vai trò Leader luân phiên, cam kết cá nhân |
+| **NL-16** | Phản tư | A | Nhịp đúc kết bắt buộc sau mọi hoạt động + nhật ký tối |
+
+## 2. Tám năng lực **không** kết luận được tại trại
+
+| Mã | Năng lực | Vì sao cần dữ liệu ngoài trại |
+|---|---|---|
+| NL-04 Học tập · NL-05 Tự học · NL-17 Học thuật | Cần quan sát trong bối cảnh học thật, nhiều tuần |
+| NL-06 Quản lý thời gian · NL-07 Tập trung · NL-08 Xây dựng thói quen · NL-09 Tự quản | Trại có cấu trúc bên ngoài rất mạnh — **giữ được nề nếp ở trại chỉ chứng minh L2**, không chứng minh L3 |
+| NL-18 Công nghệ và AI | Cần quan sát cách dùng công cụ khi học thật ở nhà |
+
+> **Đây là điểm chuyên môn quan trọng nhất của tài liệu này.** Nhiều chương trình kết luận
+> "con đã có kỷ luật" sau 7 ngày trại. Sai. Trại cấp cho học viên một môi trường có cấu trúc
+> mạnh bất thường; hành vi trong môi trường đó **không** dự báo được hành vi ở nhà.
+> Kỷ luật và tự quản chỉ được chấm từ dữ liệu 21 ngày trở lên tại nhà.
+
+---
+
+## 3. Năm cấp độ chung
+
+| Cấp | Tên | Hành vi quan sát được | Mức hỗ trợ |
 |---|---|---|---|
 | **L1** | Nhận biết | Gọi tên được, hiểu vì sao quan trọng, nhưng chưa làm | Cần hướng dẫn từng bước |
 | **L2** | Tập luyện có hỗ trợ | Làm được khi có người nhắc hoặc có cấu trúc bên ngoài | Cần nhắc thường xuyên |
-| **L3** | Thực hiện độc lập | Duy trì được không cần nhắc, biết tự phục hồi sau gián đoạn | Hỗ trợ khi có sự cố |
-| **L4** | Chủ động dẫn dắt | Áp dụng linh hoạt ở nhiều bối cảnh; dẫn được người khác cùng làm | Hầu như tự chủ |
-| **L5** | Lan toả & kiến tạo | Tạo ra cách làm mới, kèm cặp được người đi sau, có sản phẩm để lại | Tự chủ hoàn toàn |
+| **L3** | Thực hiện độc lập | Duy trì không cần nhắc, biết tự phục hồi sau gián đoạn | Hỗ trợ khi có sự cố |
+| **L4** | Chủ động dẫn dắt | Áp dụng linh hoạt nhiều bối cảnh; dẫn được người khác | Hầu như tự chủ |
+| **L5** | Lan toả & kiến tạo | Tạo cách làm mới, kèm cặp người đi sau, có sản phẩm để lại | Tự chủ hoàn toàn |
 
-**Quy tắc chấm cấp độ (bắt buộc):**
-1. Cấp độ chỉ được nâng khi có **bằng chứng**, không nâng theo cảm nhận hoặc theo thời gian tham gia.
-2. Từ **L3 trở lên** phải kiểm đủ **4 thuộc tính năng lực** của Tầng 4: **ổn định – khái quát – thích nghi – tự chủ**.
-3. Một hành vi xuất hiện vài lần trong trại **chỉ đủ cho L2**. L3 cần bằng chứng duy trì ≥ 3 tuần ngoài trại.
+**Năm quy tắc chấm:**
+1. Cấp độ chỉ được nâng khi **có bằng chứng**, không nâng theo cảm nhận hay thời gian tham gia.
+2. Từ **L3 trở lên** phải kiểm đủ 4 thuộc tính: **ổn định · khái quát · thích nghi · tự chủ**.
+3. Một hành vi xuất hiện vài lần trong trại **chỉ đủ cho L2**.
 4. Chấm theo **4 nguồn**: học viên tự đánh giá · phụ huynh · dữ liệu hành vi · bằng chứng kết quả.
-5. Khi các nguồn mâu thuẫn: **ghi lại sự mâu thuẫn**, lấy mức thấp hơn, và đưa vào diện cần giải mã ở Tầng 2.
+5. Nguồn mâu thuẫn → **ghi lại mâu thuẫn**, lấy mức thấp hơn, đưa vào diện giải mã ở T2.
 
 ---
 
-## 3. Rubric chi tiết 12 năng lực
+## 4. Rubric mười năng lực đo tại trại
 
-### TRỤ G — MỤC TIÊU
-
-**G1 · Tầm nhìn & thiết lập mục tiêu**
-
-| Cấp | Biểu hiện | Minh chứng chấp nhận |
+**NL-01 · Nhận thức bản thân**
+| Cấp | Biểu hiện tại trại | Minh chứng |
 |---|---|---|
-| L1 | Nói được "con muốn học giỏi hơn" nhưng chưa cụ thể hoá | Phiếu tự đánh giá đầu vào |
-| L2 | Viết được mục tiêu SMART cho 1 lĩnh vực khi có mẫu và người hướng dẫn | Bảng mục tiêu D2 có chữ ký ACT |
-| L3 | Tự viết mục tiêu SMART cho ≥ 3 lĩnh vực; giải thích được vì sao chọn | Bản mục tiêu năm học trao gia đình D7 |
-| L4 | Phân rã mục tiêu năm → tháng → tuần; điều chỉnh khi hoàn cảnh thay đổi | Kế hoạch tuần liên tục ≥ 8 tuần |
-| L5 | Đặt mục tiêu cho nhóm/dự án và dẫn người khác cùng đạt | Biên bản nghiệm thu dự án Tầng 5 |
+| L1 | Kể được vài điều mình thích / không thích | Phiếu đầu vào |
+| L2 | Gọi tên được 3 điểm mạnh và 2 điểm cần cải thiện | Bài "Chân dung tôi" D2 |
+| L3 | Nêu được 5 giá trị sống cá nhân và giải thích lựa chọn | Bài thu hoạch D5 |
+| L4 | Nhận ra khoảng cách giữa giá trị tuyên bố và hành vi thực tế, tự điều chỉnh | Nhật ký phản tư có ví dụ cụ thể |
+| L5 | Dùng giá trị của mình làm nền cho quyết định khó, truyền được cho người khác | Phỏng vấn + minh chứng hành động |
 
-**G2 · Lập kế hoạch & quản trị ưu tiên**
-
+**NL-02 · Thiết lập mục tiêu**
 | Cấp | Biểu hiện | Minh chứng |
 |---|---|---|
-| L1 | Biết việc cần làm nhưng không sắp thứ tự | Quan sát D1–D2 |
-| L2 | Lập được danh sách việc theo mẫu; cần nhắc mới bắt đầu đúng giờ | Reminder rate ghi bởi ACT |
-| L3 | Tự lập kế hoạch ngày/tuần; bắt đầu đúng giờ không cần nhắc | Task log 21 ngày, start rate ≥ 80% |
-| L4 | Biết bỏ bớt việc để giữ ưu tiên; xử lý được xung đột lịch | Nhật ký + phỏng vấn Coach |
-| L5 | Thiết kế hệ thống quản trị công việc cho nhóm | Công cụ/quy trình nhóm đang chạy |
+| L1 | Nói được "con muốn học giỏi hơn" nhưng chưa cụ thể hoá | Phiếu đầu vào |
+| L2 | Viết được mục tiêu SMART cho 1 lĩnh vực khi có mẫu và hướng dẫn | Bảng mục tiêu D2 có chữ ký ACT |
+| L3 | Tự viết mục tiêu SMART cho ≥ 3 lĩnh vực, giải thích được vì sao chọn | Bản mục tiêu năm học trao gia đình D7 |
+| L4 | Phân rã năm → tháng → tuần; điều chỉnh khi hoàn cảnh đổi | Kế hoạch tuần liên tục ≥ 8 tuần *(ngoài trại)* |
+| L5 | Đặt mục tiêu cho nhóm/dự án và dẫn người khác cùng đạt | Biên bản nghiệm thu dự án |
 
-**G3 · Ra quyết định & tư duy chiến lược**
-
+**NL-03 · Tư duy** và **NL-10 · Giải quyết vấn đề**
 | Cấp | Biểu hiện | Minh chứng |
 |---|---|---|
-| L1 | Quyết định theo cảm tính hoặc theo số đông | Quan sát game D4 |
+| L1 | Quyết định theo cảm tính hoặc theo số đông | Quan sát D4 |
 | L2 | Nêu được 2 phương án và chọn 1 khi được gợi ý tiêu chí | Biên bản thảo luận team D4 |
 | L3 | Tự đặt tiêu chí, so sánh phương án, chấp nhận đánh đổi | Bài giải tình huống D4/D6 |
-| L4 | Ra quyết định dưới áp lực thời gian và nguồn lực hạn chế, giải trình được | Vai trò Leader trong thử thách có tính giờ |
-| L5 | Quyết định có tính đến hệ quả dài hạn và lợi ích của người khác | Dự án Tầng 5 |
+| L4 | Ra quyết định dưới áp lực thời gian và nguồn lực hạn chế, giải trình được | Vai trò Leader trong thử thách tính giờ |
+| L5 | Quyết định có tính đến hệ quả dài hạn và lợi ích người khác | Dự án T5 |
 
-### TRỤ I — NỘI LỰC
-
-**I1 · Tự nhận thức & giá trị sống**
-
-| Cấp | Biểu hiện | Minh chứng |
-|---|---|---|
-| L1 | Kể được vài điều mình thích/không thích | Phiếu đầu vào |
-| L2 | Gọi tên được 3 điểm mạnh và 2 điểm cần cải thiện của bản thân | Bài "Chân dung tôi" D2 |
-| L3 | Nêu được 5 giá trị sống cá nhân và giải thích lựa chọn | Bài thu hoạch D5 |
-| L4 | Nhận ra khoảng cách giữa giá trị mình tuyên bố và hành vi thực tế, tự điều chỉnh | Nhật ký phản tư có ví dụ cụ thể |
-| L5 | Dùng giá trị của mình làm nền cho quyết định khó và truyền được cho người khác | Phỏng vấn + minh chứng hành động |
-
-**I2 · Động lực nội tại & niềm tin năng lực**
-
-| Cấp | Biểu hiện | Minh chứng |
-|---|---|---|
-| L1 | Làm vì được yêu cầu hoặc vì phần thưởng | Quan sát D1 |
-| L2 | Có lý do cá nhân cho ít nhất 1 mục tiêu | Bảng mục tiêu D2 |
-| L3 | Duy trì hành động khi không có ai giám sát | Nhật ký 21 ngày, completion rate |
-| L4 | Tự tạo lại động lực sau thất bại mà không cần người ngoài kích | Sự kiện phục hồi ghi trong nhật ký |
-| L5 | Truyền động lực cho người khác một cách bền vững | Phản hồi của người được kèm |
-
-**I3 · Bản lĩnh & khả năng phục hồi**
-
-| Cấp | Biểu hiện | Minh chứng |
-|---|---|---|
-| L1 | Bỏ cuộc sớm khi gặp khó, hoặc tránh né thử thách | Quan sát D1–D3 |
-| L2 | Hoàn thành thử thách khó khi có đồng đội/ACT động viên | Ghi chú ACT D3–D5 |
-| L3 | Dùng được ≥ 2 kỹ thuật tự điều chỉnh cảm xúc khi căng thẳng | Tự báo cáo + quan sát |
-| L4 | Quay lại sau gián đoạn trong ≤ 3 ngày, có kế hoạch phục hồi | Nhật ký 90 ngày |
-| L5 | Giữ được bình tĩnh và dẫn nhóm qua khủng hoảng | Sự kiện thực tế có nhân chứng |
-
-### TRỤ T — TÀI NĂNG
-
-**T1 · Nhận diện & phát huy thế mạnh**
-
-| Cấp | Biểu hiện | Minh chứng |
-|---|---|---|
-| L1 | Nói được sở thích, chưa phân biệt sở thích với thế mạnh | Phiếu đầu vào |
-| L2 | Nhận ra vùng mình học nhanh hơn bạn cùng lứa | Tín hiệu điểm mạnh D5–D6 |
-| L3 | Xác định 3 thế mạnh có bằng chứng (sản phẩm, kết quả, phản hồi) | Hồ sơ điểm mạnh Tầng 2 |
-| L4 | Chủ động nhận việc đúng thế mạnh và giao việc đúng thế mạnh cho bạn | Phân vai trong team có giải trình |
-| L5 | Thế mạnh đã thành năng lực chuyên sâu có sản phẩm công khai | Portfolio Tầng 5 |
-
-> ⚠️ **Cấm gọi sở thích là tài năng.** Đây là lỗi chuyên môn được nêu đích danh trong hệ GITA.
-
-**T2 · Tư duy phản biện & sáng tạo**
-
-| Cấp | Biểu hiện | Minh chứng |
-|---|---|---|
-| L1 | Chấp nhận thông tin không đặt câu hỏi | Quan sát |
-| L2 | Đặt được câu hỏi "vì sao" và thử cách làm khác khi được khuyến khích | Game giải mã D4 |
-| L3 | Đề xuất giải pháp và nêu được điểm yếu của chính giải pháp mình | Bài trình bày D6 |
-| L4 | Phản biện ≥ 2 phương án khác trên tiêu chí rõ ràng, giữ thái độ tôn trọng | Hùng biện D6 |
-| L5 | Tạo ra cách tiếp cận mới được người khác áp dụng lại | Sản phẩm/quy trình được nhân rộng |
-
-**T3 · Giao tiếp & trình bày có ảnh hưởng**
-
+**NL-11 · Giao tiếp**
 | Cấp | Biểu hiện | Minh chứng |
 |---|---|---|
 | L1 | Ngại nói trước nhóm nhỏ | Quan sát D1 |
@@ -141,61 +94,94 @@ và ánh xạ sang 11 nhóm dữ liệu của hệ GITA cũng như chuẩn của
 | L4 | Điều chỉnh thông điệp theo đối tượng nghe; thuyết phục được người chưa đồng ý | Tranh biện, họp nhóm |
 | L5 | Truyền cảm hứng cho tập thể lớn, tạo hành động thực tế sau bài nói | Sự kiện có kết quả đo được |
 
-### TRỤ A — HÀNH ĐỘNG
-
-**A1 · Kỷ luật & hệ thống thói quen**
-
-| Cấp | Biểu hiện | Minh chứng |
-|---|---|---|
-| L1 | Thói quen thất thường, phụ thuộc tâm trạng | Habit log D1–D3 |
-| L2 | Giữ được nề nếp trong môi trường có cấu trúc (trại) | Bảng 5S, giờ giấc D4–D7 |
-| L3 | Duy trì ≥ 3 thói quen liên tục ≥ 21 ngày tại nhà | Nhật ký + xác nhận phụ huynh |
-| L4 | Duy trì ≥ 90 ngày, tự thiết kế lại thói quen khi lịch thay đổi | Nhật ký 90 ngày + KPI |
-| L5 | Thiết kế hệ thống thói quen cho nhóm/gia đình và duy trì được | Minh chứng nhóm |
-
-**A2 · Hợp tác & lãnh đạo đội nhóm**
-
+**NL-12 · Hợp tác**
 | Cấp | Biểu hiện | Minh chứng |
 |---|---|---|
 | L1 | Làm phần việc của mình, ít quan tâm kết quả chung | Quan sát D1–D2 |
 | L2 | Hỗ trợ đồng đội khi được phân công | Ghi chú ACT D3 |
 | L3 | Nhận vai trò Leader/đội phó, phân việc theo thế mạnh, giữ được nhóm khi thua | Kết quả team + đánh giá 360 |
 | L4 | Hoá giải xung đột trong nhóm; giúp thành viên yếu tiến bộ | Sự kiện cụ thể có nhân chứng |
-| L5 | Xây dựng được nhóm/CLB duy trì ≥ 6 tháng sau khi mình rút bớt vai trò | Minh chứng tổ chức |
+| L5 | Xây dựng nhóm/CLB duy trì ≥ 6 tháng sau khi mình rút bớt vai trò | Minh chứng tổ chức |
 
-**A3 · Học tập suốt đời & phản tư**
+**NL-13 · Quản lý cảm xúc**
+| Cấp | Biểu hiện | Minh chứng |
+|---|---|---|
+| L1 | Phản ứng mạnh khi thua, khi bị góp ý | Quan sát |
+| L2 | Nhận ra mình đang căng thẳng khi được hỏi; cần người khác giúp hạ nhiệt | Ghi chú ACT |
+| L3 | Dùng được ≥ 2 kỹ thuật tự điều chỉnh khi căng thẳng | Tự báo cáo + quan sát |
+| L4 | Tự điều chỉnh **trước khi** phản ứng; giữ bình tĩnh giúp nhóm | Sự kiện có nhân chứng |
+| L5 | Dẫn nhóm qua tình huống căng thẳng | Sự kiện thực tế |
 
+**NL-14 · Thích ứng**
+| Cấp | Biểu hiện | Minh chứng |
+|---|---|---|
+| L1 | Khó chịu rõ khi lịch hoặc nhóm thay đổi | Quan sát D1–D2 |
+| L2 | Chấp nhận thay đổi khi được giải thích và hỗ trợ | Quan sát |
+| L3 | Bắt nhịp môi trường mới trong 1–2 ngày, không cần trấn an nhiều | Ghi chú ACT |
+| L4 | Quay lại sau gián đoạn trong ≤ 3 ngày, có kế hoạch phục hồi tự lập | Nhật ký 90 ngày *(ngoài trại)* |
+| L5 | Giúp người khác thích ứng khi hoàn cảnh đổi | Sự kiện có nhân chứng |
+
+**NL-15 · Lãnh đạo bản thân**
+| Cấp | Biểu hiện | Minh chứng |
+|---|---|---|
+| L1 | Làm vì được yêu cầu hoặc vì phần thưởng | Quan sát D1 |
+| L2 | Thực hiện cam kết khi có người theo dõi | Bảng theo dõi |
+| L3 | Giữ cam kết khi không ai giám sát | Dữ liệu autonomy index |
+| L4 | Tự đặt chuẩn cao hơn yêu cầu; chủ động nhận việc khó | Ghi chú ACT + sản phẩm |
+| L5 | Trở thành chuẩn tham chiếu cho người khác | Phản hồi của bạn cùng đội |
+
+**NL-16 · Phản tư**
 | Cấp | Biểu hiện | Minh chứng |
 |---|---|---|
 | L1 | Học xong không nhìn lại | — |
 | L2 | Ghi được bài học sau hoạt động khi có câu hỏi gợi ý | Sổ ghi chép trại |
 | L3 | Tự phản tư đều đặn, rút ra được điều sẽ làm khác lần sau | Nhật ký 21/90 ngày |
-| L4 | Mang dữ liệu và đề xuất của mình vào buổi Review với Coach thay vì chờ được hỏi | Biên bản Review |
-| L5 | Tự thiết kế lộ trình học cho giai đoạn kế tiếp | Roadmap Tầng 5 do học viên dựng |
+| L4 | Mang dữ liệu và đề xuất của mình vào buổi Review thay vì chờ được hỏi | Biên bản Review |
+| L5 | Tự thiết kế lộ trình học cho giai đoạn kế tiếp | Roadmap T5 do học viên dựng |
 
 ---
 
-## 4. Bảng chấm nhanh dùng tại trại (ACT dùng mỗi tối)
+## 5. Bảng chấm nhanh dùng tại trại (BM-08)
 
-Mỗi ACT chấm cho từng học viên trong team mình, **mỗi tối 10 phút**, thang 1–5, kèm **một câu mô tả hành vi**.
+ACT chấm cho từng học viên trong team mình, **mỗi tối 10 phút**, kèm **một câu mô tả hành vi**.
 
-| Học viên | G1 | G2 | G3 | I1 | I2 | I3 | T1 | T2 | T3 | A1 | A2 | A3 | Hành vi đáng chú ý hôm nay | Số lần cần nhắc |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| … | | | | | | | | | | | | | *(mô tả, không phán xét)* | |
+| Học viên | NL-01 | NL-02 | NL-03 | NL-10 | NL-11 | NL-12 | NL-13 | NL-14 | NL-15 | NL-16 | Hành vi đáng chú ý hôm nay | Số lần cần nhắc |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| … | | | | | | | | | | | *(mô tả, không phán xét)* | |
 
 **Quy tắc điền:** ô nào không có bằng chứng quan sát trong ngày thì **để trống**, không đoán.
 Ô trống là dữ liệu hợp lệ; ô đoán làm hỏng toàn bộ baseline.
 
 ---
 
-## 5. Ánh xạ ngược: mỗi ngày trại đo năng lực nào
+## 6. Ánh xạ ngược: mỗi ngày trại đo năng lực nào
 
 | Ngày | Chủ đề | Năng lực đo được tin cậy nhất |
 |---|---|---|
-| D1 | Đánh thức nhà lãnh đạo bên trong | I1, I2, A1 (baseline), T3 (mức khởi điểm) |
-| D2 | Lãnh đạo bản thân | G1, I1, I2, A1 |
-| D3 | Lãnh đạo đội nhóm | A2, T3, I3 |
-| D4 | Tư duy chiến lược | G2, G3, T2 |
-| D5 | Lãnh đạo bằng giá trị | I1, T1, A2 |
-| D6 | Lãnh đạo tương lai | G1, T2, T3, 13.10 Nghề nghiệp |
-| D7 | Lễ trưởng thành – Family Day | A3, 13.7 Phụ huynh, chốt G1 |
+| D1 | Đánh thức nhà lãnh đạo bên trong | NL-01, NL-14 *(baseline)*, NL-11 *(mức khởi điểm)* |
+| D2 | Lãnh đạo bản thân | NL-02, NL-01, NL-15 |
+| D3 | Lãnh đạo đội nhóm | NL-12, NL-11, NL-13 |
+| D4 | Tư duy chiến lược | NL-03, NL-10 |
+| D5 | Lãnh đạo bằng giá trị | NL-01, NL-12, tín hiệu điểm mạnh *(nhóm N09)* |
+| D6 | Lãnh đạo tương lai | NL-03, NL-11, NL-10 |
+| D7 | Lễ trưởng thành – Family Day | NL-16, NL-02 *(chốt)*, nhóm N07 Phụ huynh |
+
+---
+
+## 7. Bảng ánh xạ mã cũ → mã chuẩn
+
+Các bản nháp trước của bộ tài liệu này dùng bộ mã tạm G1–G3 / I1–I3 / T1–T3 / A1–A3.
+**Bộ mã đó đã bị loại bỏ.** Dùng bảng dưới để chuyển hồ sơ cũ:
+
+| Mã cũ | Mã chuẩn | Mã cũ | Mã chuẩn |
+|---|---|---|---|
+| G1 Tầm nhìn & thiết lập mục tiêu | **NL-02** | T1 Nhận diện & phát huy thế mạnh | *(chuyển sang nhóm dữ liệu **N09 Tài năng**, không phải năng lực)* |
+| G2 Lập kế hoạch & quản trị ưu tiên | **NL-06** | T2 Tư duy phản biện & sáng tạo | **NL-03** |
+| G3 Ra quyết định & tư duy chiến lược | **NL-10** | T3 Giao tiếp & trình bày có ảnh hưởng | **NL-11** |
+| I1 Tự nhận thức & giá trị sống | **NL-01** | A1 Kỷ luật & hệ thống thói quen | **NL-08** |
+| I2 Động lực nội tại & niềm tin năng lực | **NL-15** | A2 Hợp tác & lãnh đạo đội nhóm | **NL-12** |
+| I3 Bản lĩnh & khả năng phục hồi | **NL-14** | A3 Học tập suốt đời & phản tư | **NL-16** |
+
+> **Lưu ý chuyên môn:** "Nhận diện & phát huy thế mạnh" không được giữ làm một năng lực riêng.
+> Tại trại, thế mạnh được ghi là **tín hiệu điểm mạnh** thuộc nhóm dữ liệu N09 — chưa đủ căn cứ
+> để gọi là năng lực. Việc chuyển tín hiệu thành năng lực có bằng chứng thuộc Tầng 5.

@@ -33,7 +33,7 @@
 
 ## 2. Danh mục hoạt động đã chuẩn hoá
 
-Ba mươi lăm hoạt động từ kịch bản Leader Boom, đã rà soát rủi ro. Ký hiệu:
+Năm mươi ba mã hoạt động từ kịch bản Leader Boom, đã rà soát rủi ro — **50 đang dùng, 3 đã loại và có phương án thay thế**. Ký hiệu:
 🟢 an toàn thấp · 🟡 cần giám sát · 🔴 nguy cơ cao, có yêu cầu bảo hộ · ⛔ **đã loại, có phương án thay**
 
 ### NGÀY 1 · AWAKEN THE LEADER

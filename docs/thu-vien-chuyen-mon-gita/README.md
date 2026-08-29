@@ -10,6 +10,7 @@
 | `leader-boom-365/` | **Dạy cái gì, theo chuẩn nào** | Trainer, ACT, cơ quan quản lý |
 | `he-thong-huan-luyen-gita/` | **Vận hành thế nào** — ai làm gì, khi nào, tiền ở đâu | Toàn bộ vận hành |
 | **`thu-vien-chuyen-mon-gita/`** (bộ này) | **Xử lý ca cụ thể thế nào** — tra vấn đề, chọn giải pháp, chấm năng lực, in biểu mẫu | Tư vấn, Coach, Trainer, Giáo viên |
+| [`an-toan-va-phan-quyen/`](../an-toan-va-phan-quyen/README.md) | **Ai được xem gì, làm gì** — 13 vai trò, ma trận quyền, phân loại dữ liệu, bảo mật | Công nghệ, BLĐ, toàn bộ nhân sự |
 
 Đây là bộ được mở ra **hằng ngày khi làm việc với một học viên cụ thể**, không phải bộ đọc một lần.
 
@@ -24,7 +25,7 @@
 | 02 | [`02-khung-nang-luc-18.md`](02-khung-nang-luc-18.md) | **18 năng lực chuẩn** nhóm theo G-I-T-A · 5 cấp độ · rubric · ánh xạ CT GDPT 2018 & CASEL | Chấm năng lực, viết báo cáo |
 | 03 | [`03-bo-cong-cu-danh-gia.md`](03-bo-cong-cu-danh-gia.md) | Bộ công cụ đánh giá đầu vào · SWORT GITA · quy tắc 4 nguồn · **rà soát tính hợp lệ của các công cụ đang dùng** | Tiếp nhận học viên mới |
 | 04 | [`04-bo-bieu-mau.md`](04-bo-bieu-mau.md) | **20 biểu mẫu BM-01 → BM-20**, nội dung in được | In ấn, tác nghiệp |
-| 05 | [`05-thu-vien-hoat-dong.md`](05-thu-vien-hoat-dong.md) | Mẫu phiếu hoạt động chuẩn + 24 hoạt động đã chuẩn hoá từ trại | Thiết kế buổi huấn luyện |
+| 05 | [`05-thu-vien-hoat-dong.md`](05-thu-vien-hoat-dong.md) | Mẫu phiếu hoạt động chuẩn + 53 hoạt động đã rà soát rủi ro (50 đang dùng, 3 đã loại) | Thiết kế buổi huấn luyện |
 | 06 | [`06-giao-an-lop-hoc-vien.md`](06-giao-an-lop-hoc-vien.md) | **4 mẫu giáo án lớp — bản tối ưu hoá** · nghi thức lớp · quy trình duyệt | Giáo viên, GV trưởng |
 | 07 | [`07-dong-hanh-phu-huynh.md`](07-dong-hanh-phu-huynh.md) | Hệ đồng hành phụ huynh 365 ngày · đánh giá gia đình · 20 vấn đề nhóm N07 | Coach, Tư vấn |
 | 08 | [`08-nen-tang-so-va-ai.md`](08-nen-tang-so-va-ai.md) | 9 vai trò người dùng · 18 trung tâm chức năng · phân quyền theo gói · **ranh giới AI và con người** | BLĐ, Công nghệ |

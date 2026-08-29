@@ -5,7 +5,7 @@
 | Tầng đánh giá | Đo cái gì | Thời điểm | Công cụ | Ngưỡng đạt |
 |---|---|---|---|---|
 | **L1 · Phản ứng** | Học viên và gia đình thấy thế nào | D7 và D+7 | Khảo sát 10 câu + NPS | Hài lòng ≥ 4.2/5 · NPS ≥ 50 |
-| **L2 · Học tập** | Học viên biết và làm được gì mới | D7 | Rubric 12 năng lực, sản phẩm, bài trình bày | ≥ 80% học viên tăng ≥ 1 cấp ở ≥ 3 năng lực |
+| **L2 · Học tập** | Học viên biết và làm được gì mới | D7 | Rubric 18 năng lực, sản phẩm, bài trình bày | ≥ 80% học viên tăng ≥ 1 cấp ở ≥ 3 năng lực |
 | **L3 · Hành vi** | Có làm khác đi trong đời sống thật không | D28 · D118 · D365 | Nhật ký, KPI, xác nhận phụ huynh, quan sát chéo | Reminder rate giảm ≥ 50% ở D118 |
 | **L4 · Kết quả** | Tác động lên kết quả học tập và đời sống | D118 · D365 | Kết quả học tập, đánh giá của nhà trường, dự án hoàn thành | ≥ 60% học viên có cải thiện đo được ở lĩnh vực ưu tiên |
 
@@ -31,16 +31,21 @@
 |---|---|---|---|
 | CC-01 | Phiếu tự đánh giá học viên (30 câu, 11 nhóm) | D-30 · D28 · D118 · D365 | Học viên |
 | CC-02 | Phiếu phụ huynh (30 câu, đối chiếu CC-01) | D-30 · D28 · D118 · D365 | Phụ huynh |
-| CC-03 | Nhật ký ngày (6 dòng) | Liên tục | Học viên |
-| CC-04 | Phiếu quan sát ngày tại trại | D1 – D7 | ACT |
-| CC-05 | Bảng chấm rubric 12 năng lực | D7 · D118 · D365 | ACT / Coach |
-| CC-06 | Bản đồ Nhận diện GITA | D7 | Tư vấn + Trainer trưởng |
-| CC-07 | Bản đồ Cơ chế (6 lớp) | D28 | Tư vấn + Coach |
-| CC-08 | Bảng KPI Tầng 3 | Hằng tuần trong 90 ngày | Coach |
-| CC-09 | Phiếu nghiệm thu cấp / chu kỳ | Cuối mỗi cấp và chu kỳ | Coach + Trainer trưởng |
-| CC-10 | Khảo sát hài lòng + NPS | D7 · D+7 · D118 · D365 | Giáo vụ |
-| CC-11 | Bảng chấm 12 tiêu chuẩn Mô thức GITA | 2 buổi/ngày tại trại | Trainer trưởng |
-| CC-12 | Portfolio | Cập nhật mỗi quý từ Tầng 4 | Học viên + Coach |
+| CC-03 | Phỏng vấn định vị | D-20 | Tư vấn |
+| CC-04 | Nhật ký ngày (6 dòng) | Liên tục | Học viên |
+| CC-05 | Phiếu quan sát ngày tại trại | D1 – D7 | ACT |
+| CC-06 | Bảng chấm rubric 18 năng lực | D7 · D118 · D365 | ACT / Coach |
+| CC-07 | Bảng SWORT GITA | Sau khi có đủ dữ liệu T1–T2 | Tư vấn |
+| CC-08 | Bản đồ Nhận diện GITA | D7 | Tư vấn + Trainer trưởng |
+| CC-09 | Bản đồ Cơ chế (6 lớp) | D28 | Tư vấn + Coach |
+| CC-10 | Bảng KPI hằng tuần | Trong 90 ngày | Coach |
+| CC-11 | Phiếu nghiệm thu cấp / chu kỳ | Cuối mỗi cấp và chu kỳ | Coach + Trainer trưởng |
+| CC-12 | Bảng chấm 12 tiêu chuẩn buổi huấn luyện | 2 buổi/ngày tại trại | Trainer trưởng |
+| CC-13 | Portfolio | Cập nhật mỗi quý từ T4 | Học viên + Coach |
+| CC-14 | Khảo sát hài lòng + NPS | D7 · D+7 · D118 · D365 | Giáo vụ |
+
+> **Bảng mã chuẩn duy nhất** đặt tại [`../thu-vien-chuyen-mon-gita/03-bo-cong-cu-danh-gia.md`](../thu-vien-chuyen-mon-gita/03-bo-cong-cu-danh-gia.md) §2.
+> Mọi tài liệu, biểu mẫu và phần mềm dùng đúng bộ mã này.
 
 ---
 
@@ -48,9 +53,9 @@
 
 | Lớp | Khi nào | Ai | Nội dung |
 |---|---|---|---|
-| **Lớp 1 — Quan sát dòng** | Trong hoạt động | ACT | Ghi hành vi cụ thể vào CC-04, không chấm điểm ngay |
+| **Lớp 1 — Quan sát dòng** | Trong hoạt động | ACT | Ghi hành vi cụ thể vào CC-05, không chấm điểm ngay |
 | **Lớp 2 — Tự đánh giá** | 21:00 – 21:20 | Học viên | Nhật ký: 1 điều làm tốt · 1 điều muốn làm khác · mức tự chấm 1–5 |
-| **Lớp 3 — Chấm rubric** | 21:00 – 21:20 | ACT | CC-05, chỉ chấm ô có bằng chứng quan sát trong ngày |
+| **Lớp 3 — Chấm rubric** | 21:00 – 21:20 | ACT | CC-06, chỉ chấm ô có bằng chứng quan sát trong ngày |
 
 **Đối chiếu chéo:** cuối D4 và D7, so sánh mức tự chấm của học viên với mức ACT chấm.
 Chênh lệch ≥ 2 bậc (theo cả hai chiều) là **tín hiệu quan trọng**:

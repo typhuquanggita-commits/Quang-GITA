@@ -13,6 +13,19 @@
 
 ---
 
+## 1b. Vị trí trong hệ thống tài liệu GITA
+
+| Bộ tài liệu | Trả lời câu hỏi | Ai dùng |
+|---|---|---|
+| **`leader-boom-365/`** (bộ này) | **Dạy cái gì, theo chuẩn nào** — giáo án, chuẩn đối chiếu, an toàn | Trainer, ACT, cơ quan quản lý |
+| [`../he-thong-huan-luyen-gita/`](../he-thong-huan-luyen-gita/README.md) | **Vận hành thế nào** — tuyển sinh, hậu cần, tài chính, di chuyển, 90/365 ngày | Toàn bộ vận hành |
+| [`../thu-vien-chuyen-mon-gita/`](../thu-vien-chuyen-mon-gita/README.md) | **Xử lý ca cụ thể thế nào** — 220 phác đồ, 18 năng lực, biểu mẫu | Tư vấn, Coach, Giáo viên |
+| [`../an-toan-va-phan-quyen/`](../an-toan-va-phan-quyen/README.md) | **Ai được xem gì, làm gì** — phân quyền, bảo mật, dữ liệu trẻ em | Công nghệ, BLĐ, toàn bộ nhân sự |
+
+**Quy ước ký hiệu dùng chung toàn hệ** — xem [`../he-thong-huan-luyen-gita/README.md`](../he-thong-huan-luyen-gita/README.md) §3:
+**T1–T5** tầng chuyên môn · **G1–G5** gói dịch vụ · **L1–L5** cấp độ năng lực · **N01–N11** nhóm vấn đề.
+Khung năng lực chuẩn duy nhất là **18 năng lực** tại [`../thu-vien-chuyen-mon-gita/02-khung-nang-luc-18.md`](../thu-vien-chuyen-mon-gita/02-khung-nang-luc-18.md).
+
 ## 2. Bộ hồ sơ chương trình
 
 | # | Tài liệu | Nội dung chính | Dùng cho ai |
@@ -20,7 +33,7 @@
 | 00 | `README.md` | Bản đồ tổng thể, cách dùng bộ hồ sơ | Tất cả |
 | 01 | [`01-khung-chuong-trinh-gita.md`](01-khung-chuong-trinh-gita.md) | Hợp nhất trại với hệ 5 tầng · mô thức GITA · 11 nhóm dữ liệu · 7 nguyên tắc bất di bất dịch | BLĐ, Trainer, Phụ huynh |
 | 02 | [`02-chuan-tham-chieu.md`](02-chuan-tham-chieu.md) | Đối chiếu chuẩn BGD&ĐT · chuẩn quốc tế · **12 tiêu chuẩn Mô thức GITA** · bảng kiểm đạt chuẩn | BLĐ, cơ quan quản lý |
-| 03 | [`03-khung-nang-luc-rubric.md`](03-khung-nang-luc-rubric.md) | 4 trụ × 12 năng lực × 5 cấp độ + rubric chi tiết + bảng chấm tại trại | Trainer, ACT, người đánh giá |
+| 03 | [`03-khung-nang-luc-rubric.md`](03-khung-nang-luc-rubric.md) | 4 trụ × 18 năng lực × 5 cấp độ + rubric chi tiết + bảng chấm tại trại | Trainer, ACT, người đánh giá |
 | 04 | [`04-giai-doan-tien-trai.md`](04-giai-doan-tien-trai.md) | 30 ngày tiền trại: tuyển sinh, sàng lọc, phỏng vấn định vị, cam kết 3 bên, baseline | Vận hành, Tuyển sinh |
 | 05 | [`05-trai-7-ngay.md`](05-trai-7-ngay.md) | **Giáo án 7 ngày trại** · vòng 5 nhịp · thời gian biểu · thiết kế lại hoạt động rủi ro · hệ thi đua · cổng ngày 7 | Trainer, MC, ACT |
 | 06 | [`06-tang2-giai-ma-21-ngay.md`](06-tang2-giai-ma-21-ngay.md) | Tầng 2: 6 lớp phân tích · 3 vòng × 7 ngày · Bản đồ Cơ chế | Tư vấn, Coach |
@@ -42,7 +55,7 @@ Bộ hồ sơ này **giữ nguyên phần hồn đó** và bổ sung bảy lớp
 
 1. **Nối trại vào hệ GITA 5 tầng** — trại trở thành Tầng 1 có dữ liệu, không còn là một sự kiện độc lập.
 2. **Chuẩn đầu ra đo được** — mỗi ngày có mục tiêu viết theo Bloom kèm tiêu chí đạt.
-3. **Khung năng lực 12 mục × 5 cấp** — có rubric, có minh chứng, có hồ sơ năng lực cá nhân.
+3. **Khung năng lực 18 mục × 5 cấp** — có rubric, có minh chứng, có hồ sơ năng lực cá nhân.
 4. **Đối chiếu chuẩn** — CT GDPT 2018, CASEL, OECD, ACA, ISO 21001 và 12 tiêu chuẩn nội bộ GITA.
 5. **Đánh giá 4 tầng** — phản ứng → học tập → hành vi (90 ngày) → kết quả (365 ngày).
 6. **Chuẩn an toàn và bảo vệ trẻ em** — gồm rà soát và thiết kế lại 9 điểm rủi ro trong kịch bản hiện hành.

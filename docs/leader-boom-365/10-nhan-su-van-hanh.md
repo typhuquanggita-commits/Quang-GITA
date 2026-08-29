@@ -74,7 +74,7 @@ CHUYÊN VIÊN TÂM LÝ ───────────────────
 | 60 phút | Kiến trúc 5 tầng — **vì sao trại là Tầng 1 và không được kết luận nguyên nhân** | Bài kiểm tra ngắn |
 | 60 phút | Kịch bản 7 ngày, phân vai từng hoạt động | Bảng phân công đã ký |
 | 90 phút | **Ghi dữ liệu quan sát**: thực hành phân biệt mô tả hành vi và nhận định | Bài thực hành đạt ≥ 80% |
-| 60 phút | Rubric 12 năng lực: chấm thử trên tình huống video | Đồng thuận giữa các ACT ≥ 75% |
+| 60 phút | Rubric 18 năng lực: chấm thử trên tình huống video | Đồng thuận giữa các ACT ≥ 75% |
 | 90 phút | **Bảo vệ trẻ em**: chính sách, quy trình báo cáo, tình huống thực hành | Bản ký cam kết |
 | 60 phút | An toàn và sơ cấp cứu; diễn tập quy trình khẩn cấp | Biên bản diễn tập |
 | 60 phút | **Kỷ luật phục hồi** và ngôn ngữ ghi nhận | Thực hành đóng vai |

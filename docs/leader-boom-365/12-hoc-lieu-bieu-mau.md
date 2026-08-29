@@ -61,7 +61,7 @@
 | BM-05 | Nhật ký 7 ngày trước trại | D-14 |
 | BM-06 | Cam kết 3 bên | D-15 |
 | BM-07 | Phiếu quan sát ngày (ACT) | D1–D7 |
-| BM-08 | Bảng chấm rubric 12 năng lực | D7 · D118 · D365 |
+| BM-08 | Bảng chấm rubric 18 năng lực | D7 · D118 · D365 |
 | BM-09 | **Bản đồ Nhận diện GITA** | D7 |
 | BM-10 | **Bản đồ Cơ chế (6 lớp)** | D28 |
 | BM-11 | Bảng KPI Tầng 3 | Hằng tuần, 90 ngày |

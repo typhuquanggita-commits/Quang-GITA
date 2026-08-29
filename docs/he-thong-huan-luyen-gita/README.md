@@ -43,6 +43,8 @@ rủi ro ở đâu. Hai bộ dùng chung một trục GITA và tham chiếu ché
 | 14 | [`14-he-thong-365-ngay.md`](14-he-thong-365-ngay.md) | 365 ngày kỳ tích | Coach trưởng |
 | 15 | [`15-ban-do-toi-uu-hoa.md`](15-ban-do-toi-uu-hoa.md) | Tối ưu hoá & lộ trình | Giám đốc chương trình |
 
+**Bộ tài liệu liên quan:** [`../leader-boom-365/`](../leader-boom-365/README.md) chuyên môn trại · [`../thu-vien-chuyen-mon-gita/`](../thu-vien-chuyen-mon-gita/README.md) thư viện tác nghiệp · [`../an-toan-va-phan-quyen/`](../an-toan-va-phan-quyen/README.md) **phân quyền và bảo mật**.
+
 **Nếu chỉ đọc một tài liệu:** đọc **15 — Bản đồ tối ưu hoá**. Nó nói thẳng hệ thống đang vướng gì
 và mười việc phải làm trước khoá tới.
 

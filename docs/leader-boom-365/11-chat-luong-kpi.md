@@ -6,7 +6,7 @@
    PLAN                DO                  CHECK                ACT
    ────                ──                  ─────                ───
 Thiết kế khoá   →  Vận hành trại   →   Chấm 12 tiêu chuẩn  →  Cập nhật kịch bản
-theo 13 tài liệu   theo kịch bản        + KPI + khảo sát       + tài liệu
+theo 14 tài liệu   theo kịch bản        + KPI + khảo sát       + tài liệu
                                                                     │
                     ┌───────────────────────────────────────────────┘
                     ▼
@@ -121,7 +121,7 @@ Mọi phản hồi ở câu này được Cán bộ BVTE đọc trực tiếp.
 
 | Năm | Mục tiêu chất lượng |
 |---|---|
-| **Năm 1** | Chuẩn hoá 13 tài liệu; đạt 100% KPI nhóm A; bàn giao Bản đồ Nhận diện cho 100% học viên |
+| **Năm 1** | Chuẩn hoá 14 tài liệu; đạt 100% KPI nhóm A; bàn giao Bản đồ Nhận diện cho 100% học viên |
 | **Năm 2** | Số hoá toàn bộ thu thập dữ liệu (app/biểu mẫu điện tử); dữ liệu KPI theo thời gian thực; đạt D2 ≥ 65% |
 | **Năm 3** | Có dữ liệu đối chứng 3 khoá; công bố báo cáo hiệu quả; xây chương trình đào tạo Trainer nội bộ có chứng nhận |
 | **Năm 4–5** | Đối chiếu với bộ tiêu chuẩn kiểm định trại quốc tế (ACA hoặc tương đương); mời đánh giá độc lập bên ngoài |

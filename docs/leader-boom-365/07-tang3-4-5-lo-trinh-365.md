@@ -155,7 +155,7 @@ Sở thích chưa phải tài năng; một kết quả tốt đơn lẻ chưa ph
 
 | Mục | Nội dung |
 |---|---|
-| 1 | **Hồ sơ năng lực** — 12 năng lực, cấp độ hiện tại, kèm minh chứng |
+| 1 | **Hồ sơ năng lực** — 18 năng lực, cấp độ hiện tại, kèm minh chứng |
 | 2 | **Đường tiến bộ** — biểu đồ KPI từ baseline Tầng 1 đến hiện tại |
 | 3 | **Tuyến phát triển chính** — em đang đi sâu vào đâu và vì sao |
 | 4 | **Sản phẩm & dự án** — mô tả, vai trò của em, kết quả, bằng chứng |

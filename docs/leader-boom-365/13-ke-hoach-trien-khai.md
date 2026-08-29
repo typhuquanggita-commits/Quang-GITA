@@ -21,7 +21,7 @@
 
 | Tuần | Việc | Đầu ra | Người chịu trách nhiệm |
 |---|---|---|---|
-| 1–2 | Duyệt bộ 13 tài liệu này; điều chỉnh theo thực tế Học viện | Bản v1.1 đã duyệt | Giám đốc chương trình |
+| 1–2 | Duyệt bộ 14 tài liệu này; điều chỉnh theo thực tế Học viện | Bản v1.1 đã duyệt | Giám đốc chương trình |
 | 2–3 | Rà soát pháp lý toàn bộ TL 02 và TL 09 | Danh mục văn bản đã xác minh hiệu lực | Pháp chế |
 | 3–5 | Viết **Thư viện hoạt động (NS-04)** — mỗi hoạt động 1 trang chuẩn | ~40 phiếu hoạt động | Trainer trưởng + ACT trưởng |
 | 4–6 | Thiết kế và in bộ biểu mẫu BM-01 → BM-20 | Bộ biểu mẫu | Giáo vụ |
@@ -72,7 +72,7 @@ Nếu chỉ làm được **10 việc** trước khoá tới, hãy làm đúng 1
 | 3 | Chỉ định **Cán bộ Bảo vệ trẻ em** độc lập và niêm yết số điện thoại | Không tốn chi phí, hiệu quả bảo vệ rất lớn |
 | 4 | **Bỏ toàn bộ hình phạt thể chất và kỷ luật liên đới**, thay bằng hành động khắc phục | Rủi ro pháp lý và rủi ro giáo dục cao nhất trong kịch bản hiện tại |
 | 5 | **Sửa lịch ngủ thành 06:00 – 21:30** + nghỉ trưa bắt buộc | Ảnh hưởng tới toàn bộ chất lượng 7 ngày |
-| 6 | Thiết kế lại 4 hoạt động rủi ro (TL 09 §2.3 – §2.5, §2.5) | Giữ bài học, đổi cơ chế |
+| 6 | Thiết kế lại 4 hoạt động rủi ro (TL 09 §2.3 – §2.5) | Giữ bài học, đổi cơ chế |
 | 7 | Bảo đảm **mỗi học viên được gọi về nhà ≥ 1 lần** | Quyền trẻ em, đồng thời giảm rủi ro khủng hoảng |
 | 8 | Làm **Phiếu quan sát ngày (BM-07)** và tập huấn ACT cách ghi hành vi | Không có cái này thì không có dữ liệu Tầng 1 |
 | 9 | Làm **Bản đồ Nhận diện GITA (BM-09)** và cam kết bàn giao trong 7 ngày | Đây là thứ biến trại thành đầu vào của hệ 365 |

@@ -66,7 +66,7 @@ CHUYÊN VIÊN TÂM LÝ ─── TRUYỀN THÔNG ─── TƯ VẤN / COACH (th
 | 60' | Kiến trúc 5 tầng — **vì sao trại là T1 và không được kết luận nguyên nhân** | Bài kiểm tra ngắn |
 | 60' | Kịch bản 7 ngày, phân vai từng hoạt động | Bảng phân công đã ký |
 | **90'** | **Ghi dữ liệu quan sát**: thực hành phân biệt *mô tả hành vi* và *nhận định* | Bài thực hành đạt ≥ 80% |
-| 60' | Rubric 12 năng lực: chấm thử trên tình huống video | Độ đồng thuận giữa ACT ≥ 75% |
+| 60' | Rubric 18 năng lực: chấm thử trên tình huống video | Độ đồng thuận giữa ACT ≥ 75% |
 | **90'** | **Bảo vệ trẻ em**: chính sách, quy trình báo cáo, tình huống thực hành | Bản ký cam kết |
 | 60' | An toàn và sơ cấp cứu; diễn tập quy trình khẩn cấp | Biên bản diễn tập |
 | 60' | **Kỷ luật phục hồi** và ngôn ngữ ghi nhận | Thực hành đóng vai |

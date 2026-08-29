@@ -8,7 +8,7 @@
 
 ---
 
-## NHÓM A — AN TOÀN & ĐẠO ĐỨC (🔴 tất cả)
+## 1. NHÓM A — AN TOÀN & ĐẠO ĐỨC (🔴 tất cả)
 
 | # | Vấn đề | Vì sao nghiêm trọng | Việc phải làm |
 |---|---|---|---|
@@ -25,7 +25,7 @@
 
 ---
 
-## NHÓM B — TRÙNG LẶP & MÂU THUẪN KHÁI NIỆM
+## 2. NHÓM B — TRÙNG LẶP & MÂU THUẪN KHÁI NIỆM
 
 | # | Vấn đề | Hệ quả | Việc phải làm |
 |---|---|---|---|
@@ -37,7 +37,7 @@
 
 ---
 
-## NHÓM C — KHOẢNG TRỐNG VẬN HÀNH
+## 3. NHÓM C — KHOẢNG TRỐNG VẬN HÀNH
 
 | # | Vấn đề | Hệ quả | Việc phải làm |
 |---|---|---|---|
@@ -54,7 +54,7 @@
 
 ---
 
-## NHÓM D — KINH TẾ & TRUYỀN THÔNG
+## 4. NHÓM D — KINH TẾ & TRUYỀN THÔNG
 
 | # | Vấn đề | Hệ quả | Việc phải làm |
 |---|---|---|---|
@@ -68,7 +68,7 @@
 
 ---
 
-## 2. Mười việc phải làm trước khoá tới
+## 5. Mười việc phải làm trước khoá tới
 
 Nếu chỉ làm được mười việc, làm đúng mười việc này. Thứ tự theo mức độ ưu tiên thật.
 
@@ -89,7 +89,7 @@ Nếu chỉ làm được mười việc, làm đúng mười việc này. Thứ
 
 ---
 
-## 3. Lộ trình 12 tháng
+## 6. Lộ trình 12 tháng
 
 ### Quý 1 — An toàn và nền tảng
 - Hoàn thành 10 việc ưu tiên ở trên
@@ -121,7 +121,7 @@ Nếu chỉ làm được mười việc, làm đúng mười việc này. Thứ
 
 ---
 
-## 4. Ba câu hỏi để kiểm tra tiến độ
+## 7. Ba câu hỏi để kiểm tra tiến độ
 
 Hỏi mỗi quý. Nếu cả ba đều "chưa", lộ trình đang không chạy dù danh sách việc có được tick.
 
