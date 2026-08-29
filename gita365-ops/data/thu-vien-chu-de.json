@@ -1,0 +1,591 @@
+{
+  "_mo_ta": "Ngân hàng nghi thức và chủ đề dùng để sinh lịch đăng bài. Mỗi nghi thức có 12 tiêu đề (4 tuần x 3 tháng chủ đề), đủ cho 1 quý. Sang quý mới, đổi/bổ sung tiêu đề tại đây rồi chạy lại scripts/generate_calendar.py.",
+  "chu_de_thang": {
+    "G1": [
+      "NEN_MONG",
+      "NANG_LUC",
+      "NHAN_BAN"
+    ],
+    "G2": [
+      "KET_NOI",
+      "NUOI_DAY",
+      "THINH_VUONG"
+    ]
+  },
+  "nhom": {
+    "G1": {
+      "ten": "Cộng đồng GITA365",
+      "link": "https://www.facebook.com/groups/1620445286120991",
+      "bai_moi_tuan": 14,
+      "tran_tang": 4,
+      "nghi_thuc": [
+        {
+          "thu": "T2",
+          "ma": "KHOI_NGUYEN",
+          "ten": "Khởi Nguyên",
+          "tru_cot": "Ket noi & nghi thuc",
+          "gio": "05:45",
+          "dinh_dang": "Bai check-in 3 dong",
+          "cham_soc": "CARE-2",
+          "cta": "Viet 3 dong cam ket tuan",
+          "tang": "T0",
+          "tieu_de": {
+            "NEN_MONG": [
+              "Ba dòng mở tuần: bạn muốn xong điều gì trước Chủ nhật?",
+              "Việc nhỏ nhất bạn làm được ngay sáng nay là gì?",
+              "Tuần trước bạn bỏ dở điều gì — tuần này nhặt lại chứ?",
+              "Một mục tiêu, một người nhắc bạn"
+            ],
+            "NANG_LUC": [
+              "Tuần này bạn rèn kỷ luật ở điểm nào?",
+              "Chọn một việc khó và làm nó trước 9 giờ sáng",
+              "Bạn đang tiêu thời gian vào đâu nhiều nhất?",
+              "Một kỹ năng, hai mươi phút mỗi ngày"
+            ],
+            "NHAN_BAN": [
+              "Tuần này bạn sẽ cho đi điều gì?",
+              "Ai là người bạn muốn kéo đi cùng?",
+              "Bạn đang giữ điều gì đáng lẽ nên chia sẻ?",
+              "Đặt mục tiêu cho người khác, không chỉ cho mình"
+            ]
+          }
+        },
+        {
+          "thu": "T3",
+          "ma": "GIAI_MA",
+          "ten": "Giải Mã",
+          "tru_cot": "Nhan thuc & tu duy",
+          "gio": "19:45",
+          "dinh_dang": "Bai dai + so do",
+          "cham_soc": "CARE-3",
+          "cta": "Tai cong cu tren web app",
+          "tang": "T1",
+          "tieu_de": {
+            "NEN_MONG": [
+              "Vì sao càng cố gắng bạn càng thấy mệt?",
+              "Ba tầng của một vấn đề: hiện tượng, thói quen, niềm tin",
+              "Bạn đang giải quyết vấn đề hay đang né tránh nó?",
+              "Cái giá thật của việc trì hoãn một quyết định"
+            ],
+            "NANG_LUC": [
+              "Kỷ luật không phải ý chí — nó là thiết kế",
+              "Bốn cái hố của người mới quản lý tiền",
+              "Năng lượng quan trọng hơn thời gian",
+              "Vì sao bạn học nhiều mà đổi thay ít?"
+            ],
+            "NHAN_BAN": [
+              "Cho là nhận không phải khẩu hiệu — đây là cơ chế",
+              "Người dẫn dắt khác người giỏi ở điểm nào?",
+              "Vì sao giúp người khác lại làm bạn mạnh lên?",
+              "Di sản bắt đầu từ một thói quen được truyền lại"
+            ]
+          }
+        },
+        {
+          "thu": "T4",
+          "ma": "CHO_LA_NHAN",
+          "ten": "Cho Là Nhận",
+          "tru_cot": "Thuc hanh co huong dan",
+          "gio": "05:45",
+          "dinh_dang": "Thu thach trong ngay",
+          "cham_soc": "CARE-2",
+          "cta": "Bao lai da giup ai, viec gi",
+          "tang": "T0",
+          "tieu_de": {
+            "NEN_MONG": [
+              "Hôm nay giúp một người trong nhóm này",
+              "Trả lời một người đang loay hoay giống bạn năm ngoái",
+              "Gửi một lời cảm ơn bạn nợ ai đó đã lâu",
+              "Chia sẻ một sai lầm để người khác đỡ vấp"
+            ],
+            "NANG_LUC": [
+              "Dạy lại điều bạn vừa học được tuần này",
+              "Tặng ai đó 20 phút của bạn",
+              "Chỉ cho một người cách bạn tiết kiệm được khoản đầu tiên",
+              "Giới thiệu hai người trong nhóm nên quen nhau"
+            ],
+            "NHAN_BAN": [
+              "Kèm một người mới trong nhóm suốt tuần này",
+              "Viết lại điều bạn học được để cả nhóm dùng",
+              "Mời một người bạn đang cần cộng đồng này",
+              "Nhận đỡ đầu một Tổ ấm 6"
+            ]
+          }
+        },
+        {
+          "thu": "T5",
+          "ma": "HOI_DAP",
+          "ten": "Hỏi & Đáp Cùng Cố Vấn",
+          "tru_cot": "Ket noi & nghi thuc",
+          "gio": "20:00",
+          "dinh_dang": "Livestream 30-45 phut",
+          "cham_soc": "CARE-3",
+          "cta": "Dat cau hoi truoc gio live",
+          "tang": "T2",
+          "tieu_de": {
+            "NEN_MONG": [
+              "Hỏi gì cũng được: chuyện bạn chưa dám nói ra",
+              "Gỡ rối ba tình huống khó nhất tuần này",
+              "Khi mục tiêu và thực tế không gặp nhau",
+              "Bắt đầu lại sau một lần thất bại"
+            ],
+            "NANG_LUC": [
+              "Quản trị bản thân: hỏi thẳng, đáp thật",
+              "Tiền bạc trong gia đình: những câu khó nói",
+              "Làm sao giữ nhịp khi công việc quá tải?",
+              "Học một kỹ năng mới ở tuổi 40"
+            ],
+            "NHAN_BAN": [
+              "Dẫn dắt người khác khi mình còn chưa hoàn hảo",
+              "Cho đi mà không kiệt sức",
+              "Xây một đội nhóm tin nhau",
+              "Sống có ảnh hưởng mà không mất mình"
+            ]
+          }
+        },
+        {
+          "thu": "T6",
+          "ma": "BANG_CHUNG",
+          "ten": "Bằng Chứng",
+          "tru_cot": "Bang chung & cau chuyen",
+          "gio": "19:45",
+          "dinh_dang": "Cau chuyen chuyen hoa (UGC)",
+          "cham_soc": "CARE-3",
+          "cta": "Ke cau chuyen cua ban",
+          "tang": "T1",
+          "tieu_de": {
+            "NEN_MONG": [
+              "Từ chỗ không dám nhìn vào sổ chi tiêu",
+              "Người đàn ông ba lần bỏ cuộc và lần thứ tư",
+              "Chị ấy bắt đầu bằng mười phút mỗi sáng",
+              "Ngày tôi thôi đổ lỗi cho hoàn cảnh"
+            ],
+            "NANG_LUC": [
+              "Chín mươi ngày và một cuốn sổ",
+              "Anh ấy học lại cách nói chuyện với con",
+              "Từ nợ nần đến khoản tiết kiệm đầu tiên",
+              "Cô giáo về hưu bắt đầu lại từ con số không"
+            ],
+            "NHAN_BAN": [
+              "Gia đình đầu tiên mời năm gia đình khác",
+              "Người từng im lặng nay dẫn một Tổ ấm",
+              "Chuyện của một đại sứ GITA365",
+              "Một câu nói đã đổi hướng cả nhà tôi"
+            ]
+          }
+        },
+        {
+          "thu": "T7",
+          "ma": "THUC_CHIEN",
+          "ten": "Thực Chiến",
+          "tru_cot": "Thuc hanh co huong dan",
+          "gio": "08:00",
+          "dinh_dang": "Bai tap + mau dien",
+          "cham_soc": "CARE-2",
+          "cta": "Nop bai tren web app truoc Chu nhat",
+          "tang": "T1",
+          "tieu_de": {
+            "NEN_MONG": [
+              "Bài tập: viết ra ba điều đang rút cạn năng lượng của bạn",
+              "Bài tập: bản đồ một ngày của bạn",
+              "Bài tập: bảy câu hỏi dọn nội tâm",
+              "Bài tập: chọn một điều để buông tuần này"
+            ],
+            "NANG_LUC": [
+              "Bài tập: bảng quản trị năng lượng một tuần",
+              "Bài tập: ba con số về tiền của gia đình bạn",
+              "Bài tập: thiết kế lại buổi sáng",
+              "Bài tập: cắt một thói quen tốn giờ"
+            ],
+            "NHAN_BAN": [
+              "Bài tập: viết thư cho người đã giúp bạn",
+              "Bài tập: lập kế hoạch dẫn dắt một người",
+              "Bài tập: ba việc bạn có thể trao lại",
+              "Bài tập: bản đồ ảnh hưởng của bạn"
+            ]
+          }
+        },
+        {
+          "thu": "CN",
+          "ma": "TONG_KET",
+          "ten": "Tổng Kết & Vinh Danh",
+          "tru_cot": "Moi goi hanh dong",
+          "gio": "21:00",
+          "dinh_dang": "Bang vinh danh + 1 loi moi",
+          "cham_soc": "CARE-3",
+          "cta": "Loi moi duy nhat trong tuan",
+          "tang": "T2",
+          "tieu_de": {
+            "NEN_MONG": [
+              "Tuần này cộng đồng mình đã làm được gì",
+              "Năm người xứng đáng được gọi tên",
+              "Những dòng khiến cả nhóm im lặng tuần qua",
+              "Khép tuần: điều bạn mang sang tuần sau"
+            ],
+            "NANG_LUC": [
+              "Bảng vinh danh người bền bỉ nhất tuần",
+              "Con số của tuần và ba bài học",
+              "Ai đã tiến xa nhất tuần này?",
+              "Tổng kết: điều gì hiệu quả, điều gì bỏ đi"
+            ],
+            "NHAN_BAN": [
+              "Vinh danh những người cho đi nhiều nhất",
+              "Tổ ấm nào gắn kết nhất tuần qua?",
+              "Ba câu chuyện đáng lan tỏa",
+              "Khép mùa: chúng ta đã cùng nhau đi tới đâu"
+            ]
+          }
+        }
+      ],
+      "bai_nhe": [
+        {
+          "gio": "11:45",
+          "dinh_dang": "Anh trich dan co ngu canh",
+          "tru_cot": "Nhan thuc & tu duy",
+          "tieu_de": "Một câu để mang theo hôm nay"
+        },
+        {
+          "gio": "11:45",
+          "dinh_dang": "Hau truong",
+          "tru_cot": "Bang chung & cau chuyen",
+          "tieu_de": "Hậu trường: một buổi làm việc của đội GITA365"
+        },
+        {
+          "gio": "11:45",
+          "dinh_dang": "Tra loi cau hoi that",
+          "tru_cot": "Nhan thuc & tu duy",
+          "tieu_de": "Trả lời một câu hỏi thật của thành viên"
+        },
+        {
+          "gio": "11:45",
+          "dinh_dang": "Thu ngay 5 phut",
+          "tru_cot": "Thuc hanh co huong dan",
+          "tieu_de": "Thử ngay 5 phút: viết ra ba điều đang chiếm đầu bạn"
+        },
+        {
+          "gio": "11:45",
+          "dinh_dang": "Sai lam cua toi",
+          "tru_cot": "Bang chung & cau chuyen",
+          "tieu_de": "Sai lầm tôi từng trả giá đắt"
+        },
+        {
+          "gio": "11:45",
+          "dinh_dang": "Cau hoi 1 dong",
+          "tru_cot": "Nhan thuc & tu duy",
+          "tieu_de": "Câu hỏi nhanh: khó nhất với bạn là bắt đầu hay duy trì?"
+        },
+        {
+          "gio": "11:45",
+          "dinh_dang": "Nhac tai nguyen tang 1",
+          "tru_cot": "Moi goi hanh dong",
+          "tieu_de": "Bộ công cụ tuần này đang nằm ở đâu?"
+        },
+        {
+          "gio": "11:45",
+          "dinh_dang": "Binh chon A/B",
+          "tru_cot": "Nhan thuc & tu duy",
+          "tieu_de": "Bình chọn: bạn hợp với buổi sáng hay buổi tối?"
+        },
+        {
+          "gio": "11:45",
+          "dinh_dang": "Anh trich dan tu thanh vien",
+          "tru_cot": "Bang chung & cau chuyen",
+          "tieu_de": "Một câu của thành viên khiến cả nhóm dừng lại"
+        },
+        {
+          "gio": "11:45",
+          "dinh_dang": "Chao mung nguoi moi",
+          "tru_cot": "Ket noi & nghi thuc",
+          "tieu_de": "Chào mừng những người mới của tuần"
+        },
+        {
+          "gio": "11:45",
+          "dinh_dang": "Thu ngay 5 phut",
+          "tru_cot": "Thuc hanh co huong dan",
+          "tieu_de": "Thử ngay 5 phút: gọi cho một người bạn đang nghĩ tới"
+        },
+        {
+          "gio": "11:45",
+          "dinh_dang": "Truoc va sau",
+          "tru_cot": "Bang chung & cau chuyen",
+          "tieu_de": "Trước và sau: ba mươi ngày của một thành viên"
+        },
+        {
+          "gio": "11:45",
+          "dinh_dang": "Goc nhin nguoc",
+          "tru_cot": "Nhan thuc & tu duy",
+          "tieu_de": "Điều ai cũng khuyên nhưng có thể sai với bạn"
+        },
+        {
+          "gio": "11:45",
+          "dinh_dang": "Nhac buoi dinh huong",
+          "tru_cot": "Moi goi hanh dong",
+          "tieu_de": "Buổi định hướng nhóm nhỏ tuần này còn chỗ"
+        }
+      ]
+    },
+    "G2": {
+      "ten": "Gia Đình Thịnh Vượng",
+      "link": "https://www.facebook.com/groups/giadinhthinhvuong",
+      "bai_moi_tuan": 10,
+      "tran_tang": 2,
+      "nghi_thuc": [
+        {
+          "thu": "T2",
+          "ma": "NHIEM_VU",
+          "ten": "Nhiệm Vụ Gia Đình Tuần",
+          "tru_cot": "Hoat dong gia dinh",
+          "gio": "19:45",
+          "dinh_dang": "Bai nhiem vu + cach cham diem",
+          "cham_soc": "CARE-3",
+          "cta": "Binh luan Ma gia dinh + cam ket",
+          "tang": "T0",
+          "tieu_de": {
+            "KET_NOI": [
+              "Nhiệm vụ tuần: mỗi tối tắt điện thoại 30 phút",
+              "Nhiệm vụ tuần: cả nhà ăn cơm cùng nhau 4 bữa",
+              "Nhiệm vụ tuần: mỗi người nói một lời khen cho người khác",
+              "Nhiệm vụ tuần: một buổi đi bộ cùng nhau"
+            ],
+            "NUOI_DAY": [
+              "Nhiệm vụ tuần: nghe con nói mà không ngắt lời",
+              "Nhiệm vụ tuần: cùng con làm một việc nhà",
+              "Nhiệm vụ tuần: đọc cùng con 15 phút mỗi tối",
+              "Nhiệm vụ tuần: một ngày không quát"
+            ],
+            "THINH_VUONG": [
+              "Nhiệm vụ tuần: cả nhà cùng lập quỹ nhỏ",
+              "Nhiệm vụ tuần: dạy con tiêu tiền có kế hoạch",
+              "Nhiệm vụ tuần: dọn một góc nhà cùng nhau",
+              "Nhiệm vụ tuần: viết ra nếp nhà mình muốn giữ"
+            ]
+          }
+        },
+        {
+          "thu": "T3",
+          "ma": "BAN_AN",
+          "ten": "Bàn Ăn Yêu Thương",
+          "tru_cot": "Hoat dong gia dinh",
+          "gio": "17:30",
+          "dinh_dang": "Cau hoi ban an + anh mam com",
+          "cham_soc": "CARE-2",
+          "cta": "Chup anh mam com va ke lai",
+          "tang": "T0",
+          "tieu_de": {
+            "KET_NOI": [
+              "Câu hỏi bàn ăn: hôm nay điều gì làm con cười?",
+              "Câu hỏi bàn ăn: ai đã giúp con hôm nay?",
+              "Câu hỏi bàn ăn: điều gì hôm nay khó với con?",
+              "Câu hỏi bàn ăn: con biết ơn điều gì?"
+            ],
+            "NUOI_DAY": [
+              "Câu hỏi bàn ăn: nếu được đổi một luật trong nhà, con đổi gì?",
+              "Câu hỏi bàn ăn: con muốn bố mẹ hiểu điều gì?",
+              "Câu hỏi bàn ăn: điều gì con đang cố gắng?",
+              "Câu hỏi bàn ăn: con thấy nhà mình đặc biệt ở chỗ nào?"
+            ],
+            "THINH_VUONG": [
+              "Câu hỏi bàn ăn: nhà mình giàu ở điểm nào?",
+              "Câu hỏi bàn ăn: con muốn nhà mình có truyền thống gì?",
+              "Câu hỏi bàn ăn: mười năm nữa nhà mình thế nào?",
+              "Câu hỏi bàn ăn: điều gì đáng để nhà mình giữ mãi?"
+            ]
+          }
+        },
+        {
+          "thu": "T4",
+          "ma": "VIEC_TU_TE",
+          "ten": "Việc Tử Tế Của Gia Đình",
+          "tru_cot": "Cau chuyen gia dinh",
+          "gio": "19:45",
+          "dinh_dang": "Ke lai 3 dong",
+          "cham_soc": "CARE-2",
+          "cta": "Ke viec tu te va gan the mot gia dinh khac",
+          "tang": "T0",
+          "tieu_de": {
+            "KET_NOI": [
+              "Việc tử tế nhỏ nhất nhà mình làm tuần này",
+              "Cả nhà cùng giúp một người hàng xóm",
+              "Một việc tử tế dành cho ông bà",
+              "Dạy con cho đi lần đầu tiên"
+            ],
+            "NUOI_DAY": [
+              "Để con tự chọn một việc tử tế",
+              "Việc tử tế trong chính nhà mình",
+              "Cùng con làm một món quà tặng ai đó",
+              "Khi con từ chối giúp: xử lý thế nào?"
+            ],
+            "THINH_VUONG": [
+              "Gia đình giúp gia đình: mình giúp được ai?",
+              "Cho đi một thứ nhà mình không còn dùng",
+              "Chia sẻ một kinh nghiệm nuôi con cho nhà khác",
+              "Quỹ Cho là nhận: nhà mình góp gì?"
+            ]
+          }
+        },
+        {
+          "thu": "T5",
+          "ma": "CHA_ME",
+          "ten": "Cha Mẹ Tỉnh Thức",
+          "tru_cot": "Ky nang cha me - vo chong",
+          "gio": "20:00",
+          "dinh_dang": "Bai ky nang + kich ban noi",
+          "cham_soc": "CARE-3",
+          "cta": "Thu toi nay va ke lai",
+          "tang": "T1",
+          "tieu_de": {
+            "KET_NOI": [
+              "Ba câu nói thay cho một tiếng quát",
+              "Cách hỏi để con chịu kể chuyện",
+              "Nói gì khi vợ chồng bất đồng trước mặt con",
+              "Mười phút lắng nghe đúng cách"
+            ],
+            "NUOI_DAY": [
+              "Kỷ luật tích cực: phạt mà không làm tổn thương",
+              "Khi con nói dối: bốn bước xử lý",
+              "Con dán mắt vào điện thoại: thương lượng thế nào",
+              "Khen thế nào để con không sợ thất bại"
+            ],
+            "THINH_VUONG": [
+              "Dạy con về tiền từ mấy tuổi?",
+              "Giao việc nhà theo độ tuổi",
+              "Nói chuyện với con tuổi dậy thì",
+              "Truyền nếp nhà mà không áp đặt"
+            ]
+          }
+        },
+        {
+          "thu": "T6",
+          "ma": "KHOE_NHA",
+          "ten": "Khoe Nhà Mình",
+          "tru_cot": "Cau chuyen gia dinh",
+          "gio": "19:45",
+          "dinh_dang": "Anh/video + cau chuyen",
+          "cham_soc": "CARE-3",
+          "cta": "Dang anh that kem 1 cau chuyen",
+          "tang": "T0",
+          "tieu_de": {
+            "KET_NOI": [
+              "Khoảnh khắc thật của nhà bạn tuần này",
+              "Bức ảnh làm bạn muốn giữ mãi",
+              "Góc nhỏ nhất trong nhà mà cả nhà thích nhất",
+              "Một buổi tối bình thường của nhà mình"
+            ],
+            "NUOI_DAY": [
+              "Con bạn vừa làm được điều gì?",
+              "Khoảnh khắc bạn thấy con lớn lên",
+              "Lần đầu tiên của con",
+              "Ảnh cha con / mẹ con của tuần"
+            ],
+            "THINH_VUONG": [
+              "Truyền thống riêng của nhà bạn",
+              "Bữa cơm nhà mình hôm nay",
+              "Ba thế hệ trong một khung hình",
+              "Điều nhà bạn tự hào nhất"
+            ]
+          }
+        },
+        {
+          "thu": "T7",
+          "ma": "CHOI_CUNG_NHAU",
+          "ten": "Gia Đình Chơi Cùng Nhau",
+          "tru_cot": "Hoat dong gia dinh",
+          "gio": "08:00",
+          "dinh_dang": "Huong dan tro choi 15 phut",
+          "cham_soc": "CARE-2",
+          "cta": "Choi va dang anh/video",
+          "tang": "T1",
+          "tieu_de": {
+            "KET_NOI": [
+              "Trò chơi 15 phút không cần dụng cụ",
+              "Cuộc thi kể chuyện trong nhà",
+              "Trò chơi phá băng cho cả nhà ba thế hệ",
+              "Săn tìm kho báu trong chính nhà mình"
+            ],
+            "NUOI_DAY": [
+              "Trò chơi rèn kiên nhẫn cho con",
+              "Cả nhà cùng nấu một món",
+              "Thử thách một ngày không màn hình",
+              "Trò chơi dạy con hợp tác"
+            ],
+            "THINH_VUONG": [
+              "Trò chơi dạy con quản lý tiền",
+              "Cả nhà cùng làm một dự án nhỏ",
+              "Ngày hội nhỏ tại nhà",
+              "Lập cây gia phả cùng con"
+            ]
+          }
+        },
+        {
+          "thu": "CN",
+          "ma": "VINH_DANH",
+          "ten": "Bảng Vinh Danh Gia Đình",
+          "tru_cot": "Thi dua & vinh danh",
+          "gio": "21:00",
+          "dinh_dang": "Bang xep hang 4 bang dau",
+          "cham_soc": "CARE-3",
+          "cta": "Co vu it nhat 3 gia dinh",
+          "tang": "T0",
+          "tieu_de": {
+            "KET_NOI": [
+              "Bảng vinh danh tuần: những gia đình bền bỉ nhất",
+              "Ba gia đình khiến cả nhóm ấm lòng tuần này",
+              "Kết quả tuần và những cái tên đáng nhớ",
+              "Gia đình lan tỏa nhất tuần qua"
+            ],
+            "NUOI_DAY": [
+              "Vinh danh những cha mẹ đã thay đổi cách nói",
+              "Gia đình tiến bộ nhất tuần này",
+              "Câu chuyện được yêu thích nhất tuần",
+              "Bảng xếp hạng bốn bảng đấu"
+            ],
+            "THINH_VUONG": [
+              "Tổng kết mùa: những gia đình đi trọn hành trình",
+              "Vinh danh gia đình cho đi nhiều nhất",
+              "Kỷ yếu tuần: những khoảnh khắc đẹp nhất",
+              "Khép mùa và mở mùa mới"
+            ]
+          }
+        }
+      ],
+      "bai_nhe": [
+        {
+          "gio": "11:45",
+          "dinh_dang": "Cau hoi 1 dong",
+          "tru_cot": "Ky nang cha me - vo chong",
+          "tieu_de": "Nhà bạn xử lý thế nào khi hai đứa tranh nhau đồ chơi?"
+        },
+        {
+          "gio": "11:45",
+          "dinh_dang": "Nhac bang xep hang",
+          "tru_cot": "Thi dua & vinh danh",
+          "tieu_de": "Bảng xếp hạng giữa tuần: nhà bạn đang ở đâu?"
+        },
+        {
+          "gio": "11:45",
+          "dinh_dang": "Moi nhan bo cong cu tang 1",
+          "tru_cot": "Moi nhan cong cu tang 1",
+          "tieu_de": "Tặng cả nhà bộ 30 câu hỏi bàn ăn"
+        },
+        {
+          "gio": "11:45",
+          "dinh_dang": "Binh chon A/B",
+          "tru_cot": "Ky nang cha me - vo chong",
+          "tieu_de": "Bình chọn: cuối tuần nhà bạn thích ở nhà hay đi chơi?"
+        },
+        {
+          "gio": "11:45",
+          "dinh_dang": "Goi ten gia dinh moi",
+          "tru_cot": "Thi dua & vinh danh",
+          "tieu_de": "Chào những gia đình mới đăng ký Mã gia đình tuần này"
+        },
+        {
+          "gio": "11:45",
+          "dinh_dang": "Moi nhan bo cong cu tang 1",
+          "tru_cot": "Moi nhan cong cu tang 1",
+          "tieu_de": "Bộ 12 trò chơi gắn kết cha mẹ - con cái đã có trên web app"
+        }
+      ]
+    }
+  }
+}

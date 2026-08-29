@@ -1,0 +1,13 @@
+tuan,tu_ngay,den_ngay,nhom,tong_thanh_vien,yeu_cau_tham_gia,so_duyet,ti_le_duyet_%,tv_moi_thuc_nhan,WAM,MAM,ti_le_WAM_%,so_bai_dang,so_bai_dat_chuan,ti_le_bai_dat_%,binh_luan_goc_tb,do_sau_luong,nguoi_binh_luan_lan_dau,thoi_gian_phan_hoi_phut,tai_khoan_webapp_moi,hoan_tat_tang1,ghi_danh_tang2,du_offline_tang3,so_roi_nhom,he_so_K,nick_ao_bi_chan,bao_cao_san_khach,thoi_gian_xu_ly_bao_cao_gio,hanh_dong
+NGUONG,,,G1,,,,70-85,,,,>=25,14,,>=70,>=15,>=2.0,>=10,<=30,,,,,<2%/thang,>=0.3,,,<=4,
+NGUONG,,,G2,,,,70-85,,,,>=25,10,,>=70,>=15,>=2.0,>=10,<=30,,,,khong ap dung,<2%/thang,>=0.3,,,<=4,
+0-BASELINE,,,G1,,,,,,,,,,,,,,,,,,,,,,,,,ghi so nen truoc khi trien khai
+0-BASELINE,,,G2,,,,,,,,,,,,,,,,,,,,,,,,,ghi so nen truoc khi trien khai
+1,,,G1,,,,,,,,,,,,,,,,,,,,,,,,,
+1,,,G2,,,,,,,,,,,,,,,,,,,,,,,,,
+2,,,G1,,,,,,,,,,,,,,,,,,,,,,,,,
+2,,,G2,,,,,,,,,,,,,,,,,,,,,,,,,
+3,,,G1,,,,,,,,,,,,,,,,,,,,,,,,,
+3,,,G2,,,,,,,,,,,,,,,,,,,,,,,,,
+4,,,G1,,,,,,,,,,,,,,,,,,,,,,,,,
+4,,,G2,,,,,,,,,,,,,,,,,,,,,,,,,
