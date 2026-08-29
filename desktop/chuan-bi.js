@@ -6,7 +6,10 @@ const path = require('path');
 
 const GOC = path.join(__dirname, '..');
 const DICH = path.join(__dirname, 'app');
-const LAY = ['index.html', 'cau-hinh.js', 'src', 'assets', 'manifest.webmanifest', 'kho'];
+/* gita-app.js là bản gộp của 65 tệp trong src/ — index.html nạp nó, nên
+   thiếu nó là bản máy tính mở ra màn trắng. src/ vẫn chép theo để còn
+   đọc được mã gốc khi cần dò lỗi. */
+const LAY = ['index.html', 'cau-hinh.js', 'gita-app.js', 'src', 'assets', 'manifest.webmanifest', 'kho'];
 
 function chep(tu, den) {
   const st = fs.statSync(tu);

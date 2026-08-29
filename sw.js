@@ -3,15 +3,22 @@
    Cài một lần, dùng được cả khi mất mạng. Toàn bộ kho tri thức
    nằm trong máy — không cần đường truyền để mở bản đồ nhà mình.
    ═══════════════════════════════════════════════════════════════ */
-const CACHE = 'gita365-v8-5-0';
+const CACHE = 'gita365-v8-6-0';
 /* Danh sách này phải khớp với thứ tự thẻ <script> trong index.html.
    Thiếu tệp thì lần cài đầu vẫn chạy — trình xử lý fetch bên dưới cache
    lại mọi thứ tải về — nhưng mất mạng ngay sau khi cài thì vỡ. */
 const FILES = [
-  './', './index.html', './manifest.webmanifest',
-  './assets/style.css', './kho/mau.json',
-  './kho/nen.enc', './kho/nghe.enc',
-  './kho/tang1.enc', './kho/tang2.enc', './kho/tang3.enc', './kho/tang4.enc', './kho/tang5.enc',
+  './',
+  './index.html',
+  './manifest.webmanifest',
+  './assets/style.css',
+  /* Chỉ gói MẪU nằm trong danh sách tải sẵn.
+     Bảy tệp kho/*.enc từng nằm ở đây — 12 MB tải ngay lúc cài, trước cả
+     khi người dùng đăng nhập. Phụ huynh không bao giờ mở gói "nghe"
+     (3,1 MB) mà vẫn phải tải; trên 3G là bốn phút và tiền 3G thật.
+     Bộ xử lý fetch bên dưới đã tự lưu đệm gói nào được mở, nên tải sẵn
+     cả bảy chỉ là tải hộ thứ không ai dùng. */
+  './kho/mau.json',
   './assets/style.css',
   './assets/fonts.css',
   './assets/fonts/bevietnampro-400-italic-latin.woff2',
@@ -28,29 +35,11 @@ const FILES = [
   './assets/fonts/playfairdisplay-500-italic-vietnamese.woff2',
   './assets/fonts/playfairdisplay-600-normal-latin.woff2',
   './assets/fonts/playfairdisplay-600-normal-vietnamese.woff2',
-  './assets/icons/icon-192.png', './assets/icons/icon-512.png', './assets/icons/maskable-512.png',
-  './src/data.core.js', './src/i18n.js', './src/data.tuyen.js', './src/data.accounts.js',
-  './src/ui.js', './cau-hinh.js', './src/logo-gita.js',
-  './src/nhan-dien.js', './src/nhan-dien-loi.js', './src/loi-khach.js',
-  './src/loi-hoc-vien.js', './src/quy-trinh.js', './src/mat-khau.js',
-  './src/dang-ky.js', './src/dong-bo.js', './src/nap-giay-phep.js',
-  './src/kho-khoa.js', './src/guard.js', './src/khoa-sao-chep.js',
-  './src/views.js', './src/views2.js', './src/views3.js',
-  './src/views4.js', './src/views5.js', './src/views6.js',
-  './src/views7.js', './src/views8.js', './src/views9.js',
-  './src/views10.js', './src/sua-noi-dung.js', './src/sap-xep.js',
-  './src/views11.js', './src/khung-trong.js', './src/vong-nhac.js',
-  './src/ban-do-ca-nhan.js', './src/chuyen-cam-hung.js', './src/nhat-ky-thi-viet.js',
-  './src/do-thoi-gian.js', './src/gioi-thieu.js', './src/chuyen-the-gioi.js',
-  './src/nghe-chuyen.js', './src/sat-hach.js', './src/khoa-dao-tao.js',
-  './src/ma-tran-bang.js', './src/tu-lieu-day-du.js', './src/luat-lam-viec.js',
-  './src/views-hanh-trinh.js', './src/theo-doi-tai-nguyen.js', './src/kho-tong.js',
-  './src/noi-may-chu.js', './src/kho-khach.js', './src/quy-trinh-xu-ly.js',
-  './src/tro-ly-ai.js', './src/tro-ly-chat.js', './src/thu-vien.js',
-  './src/duong-vao.js', './src/soat-day-du.js', './src/tuyen.js', './src/chieu-sau.js', './src/quy-trinh-toan-he.js', './src/kiem-theo-vai.js', './src/cong-dong.js', './src/tu-van-hanh.js',
-  './src/app.js',
-  './src/chuyen-long-ghep.js',
-  './src/may-khach.js'
+  './assets/icons/icon-192.png',
+  './assets/icons/icon-512.png',
+  './assets/icons/maskable-512.png',
+  './gita-app.js',
+  './cau-hinh.js',
 ];
 
 self.addEventListener('install', e => {
@@ -77,6 +66,30 @@ self.addEventListener('fetch', e => {
   const url = new URL(req.url);
   if (url.origin !== self.location.origin) return;   // font ngoài để trình duyệt tự lo
 
+  /* ── Tệp nặng và không đổi: lấy trong máy, KHÔNG hỏi lại mạng ──
+     Kho mã hoá, phông chữ và biểu tượng chỉ đổi khi đổi số bản, mà đổi
+     số bản là đổi tên CACHE và bản cũ bị xoá sạch ở 'activate'. Nên hỏi
+     lại mạng cho chúng là tải lại thứ y hệt cái đang có.
+
+     Trước bản này, mỗi lần một Coach đăng nhập là 11,6 MB kho được tải
+     lại ngầm dù máy đã có đủ. Không ai thấy vì nó chạy ở nền — chỉ hoá
+     đơn 3G thấy. */
+  const nangVaKhongDoi = /\.(enc|woff2|png|jpg|jpeg|webp|ico|svg)$/i.test(url.pathname);
+
+  if (nangVaKhongDoi) {
+    e.respondWith(
+      caches.match(req).then(hit => hit || fetch(req).then(res => {
+        if (res && res.status === 200) {
+          const copy = res.clone();
+          caches.open(CACHE).then(c => c.put(req, copy));
+        }
+        return res;
+      }))
+    );
+    return;
+  }
+
+  /* Trang và mã: vẫn làm mới ngầm, vì đây là đường nhận bản vá */
   e.respondWith(
     caches.match(req).then(hit => {
       const net = fetch(req).then(res => {

@@ -2871,17 +2871,52 @@ const { chromium } = require(PW);
     bao(tuyenApp.bangChuaCo === null,
       'tuyến chưa có chuẩn băng thì báo trống, không mượn tạm băng của GITA365');
 
-    /* ── index.html và sw.js phải liệt kê cùng một bộ tệp ── */
-    const dsIdx = (doc('index.html').match(/<script src="src\/[^"]+"><\/script>/g) || [])
-      .map(x => x.replace(/.*src="(src\/[^"]+)".*/, '$1'));
-    const dsSw = (doc('sw.js').match(/'\.\/src\/[^']+'/g) || [])
-      .map(x => x.replace(/'\.\/(src\/[^']+)'/, '$1'));
-    const thieuSw = dsIdx.filter(f => dsSw.indexOf(f) < 0);
-    const thuaSw = dsSw.filter(f => dsIdx.indexOf(f) < 0);
-    bao(!thieuSw.length && !thuaSw.length,
-      'bản đã cài nạp đúng bộ tệp mà trang web nạp — không tệp nào thiếu khi mất mạng',
-      (thieuSw.length ? 'sw thiếu: ' + thieuSw.join(' ') + ' ' : '') +
-      (thuaSw.length ? 'sw thừa: ' + thuaSw.join(' ') : '') || dsIdx.length + ' tệp, khớp cả hai bên');
+    /* ══ BẢN GỘP: TRANG WEB, BẢN CÀI VÀ MÃ NGUỒN PHẢI NÓI CÙNG MỘT BẢN ══
+       Từ v8.6 index.html nạp một tệp gita-app.js thay cho 65 thẻ script.
+       Phép kiểm cũ so hai danh sách thẻ src — nay cả hai đều rỗng nên nó
+       XANH MÀ KHÔNG ĐO GÌ. Đạt rỗng, đúng kiểu hỏng đã bắt hai lần trước.
+       Thay bằng bốn phép đo thật. */
+    const dsGop = JSON.parse(doc('tools/danh-sach-src.json')).tep;
+    const gop = doc('gita-app.js');
+
+    bao(/<script src="gita-app\.js"><\/script>/.test(doc('index.html')) &&
+        !/<script src="src\//.test(doc('index.html')),
+      'trang web nạp đúng một tệp mã thay cho 65 tệp — mỗi tệp là một lượt hỏi mạng',
+      dsGop.length + ' tệp gộp thành 1');
+
+    bao(doc('sw.js').indexOf("'./gita-app.js'") >= 0 &&
+        !/'\.\/src\/[^']+\.js'/.test(doc('sw.js')),
+      'bản cài ngoại tuyến cũng nạp bản gộp — không sót tệp nào khi mất mạng');
+
+    /* Bản gộp phải ĐÚNG BẰNG mã nguồn hiện tại. Quên chạy tools/gop-src.js
+       sau khi sửa src/ là phát hành một bản khác với bản trong kho mã —
+       sửa xong thấy không đổi gì, và không một dòng lỗi nào. */
+    const lech = dsGop.filter(t => {
+      if (!fs36.existsSync(px36.join(goc36, t))) return true;
+      return gop.indexOf(doc(t)) < 0;
+    });
+    bao(!lech.length, 'bản gộp khớp từng chữ với mã nguồn — không phát hành bản cũ',
+      lech.length ? 'lệch: ' + lech.slice(0, 4).join(' ') : dsGop.length + ' tệp khớp');
+
+    /* Mỗi tệp phải nằm trong một hàm riêng. Có 30 cái tên trùng nhau ở
+       phạm vi ngoài cùng giữa các tệp — trong đó docLai/ghiDoc/DA_DOC của
+       hai kho chuyện khác nhau. Nối thẳng là hai kho dùng chung một sổ
+       "đã đọc", không màn nào lỗi, không dòng nhật ký nào. */
+    const soBoc = (gop.match(/^\(function\(\)\{$/gm) || []).length;
+    bao(soBoc >= dsGop.length,
+      'mỗi tệp trong bản gộp nằm trong một hàm riêng — tên trùng không giẫm lên nhau',
+      soBoc + '/' + dsGop.length + ' tệp được bọc');
+
+    /* ══ KHÔNG TẢI SẴN 12 MB KHO LÚC CÀI ══
+       Bảy tệp kho/*.enc từng nằm trong danh sách tải sẵn của service
+       worker: 12 MB tải về trước cả khi người dùng đăng nhập, kể cả gói
+       "nghe" 3,1 MB mà phụ huynh không bao giờ mở. Bộ xử lý fetch đã tự
+       lưu đệm gói nào được mở, nên chốt lại để nó không quay lại. */
+    bao(!/'\.\/kho\/[^']+\.enc'/.test(doc('sw.js')),
+      'không tải sẵn kho mã hoá lúc cài — chỉ tải gói nào vai ấy thật sự mở',
+      'gói kho lưu đệm khi dùng');
+    bao(/nangVaKhongDoi/.test(doc('sw.js')),
+      'tệp nặng và không đổi thì lấy trong máy, không hỏi lại mạng mỗi lần chạy');
 
     /* ── Super Admin không còn giới hạn nào ──
        Chủ hệ thống phải nhìn được từ A đến Z. Ba loại giới hạn: màn bị
@@ -3341,9 +3376,14 @@ const { chromium } = require(PW);
       /* ── Trang cho máy khách ── */
       r37 = await fetch(U37 + '/', { headers: UA37 });
       const html37 = await r37.text();
-      const iCo = html37.indexOf('GITA_MAY_KHACH'), iMa = html37.indexOf('src/kho-khoa.js');
+      /* Mốc "mã ứng dụng bắt đầu" từ v8.6 là gita-app.js, không còn là
+         thẻ src/kho-khoa.js. Đo bằng thẻ script ĐẦU TIÊN của trang thì
+         đúng bất kể sau này gộp hay tách. */
+      const iCo = html37.indexOf('GITA_MAY_KHACH');
+      const iMa = html37.search(/<script src="(gita-app\.js|src\/)/);
       bao(iCo >= 0 && iMa >= 0 && iCo < iMa,
-        'cờ máy khách được tiêm TRƯỚC mọi mã ứng dụng — chặn muộn là không chặn');
+        'cờ máy khách được tiêm TRƯỚC mọi mã ứng dụng — chặn muộn là không chặn',
+        iCo >= 0 && iMa >= 0 ? 'cờ ở ' + iCo + ', mã ở ' + iMa : 'không thấy mốc');
       bao(!/serviceWorker' in navigator/.test(html37),
         'trang cho máy khách không đăng ký service worker — không có bộ đệm nằm lại');
       bao((r37.headers.get('cache-control') || '').includes('no-store'),
@@ -3361,8 +3401,13 @@ const { chromium } = require(PW);
       ].filter(x => mk37.indexOf(x[0]) < 0);
       bao(!canCo37.length, 'lớp chặn ở máy khách đủ sáu đường',
         canCo37.length ? 'thiếu: ' + canCo37.map(x => x[1]).join(', ') : 'tải · thẻ tải · in · chép · đĩa · bộ đệm');
-      bao(/<script src="src\/may-khach\.js">/.test(fs37.readFileSync(px37.join(goc37, 'index.html'), 'utf8')),
-        'lớp chặn máy khách được nạp trong index.html');
+      /* Lớp chặn nay nằm trong bản gộp chứ không còn thẻ riêng. Đo cái
+         thật sự quan trọng: nó có được NẠP không — tức có trong danh
+         sách gộp VÀ có mặt trong tệp gộp mà trang web tải về. */
+      const dsG37 = JSON.parse(fs37.readFileSync(px37.join(goc37, 'tools', 'danh-sach-src.json'), 'utf8')).tep;
+      const gop37 = fs37.readFileSync(px37.join(goc37, 'gita-app.js'), 'utf8');
+      bao(dsG37.indexOf('src/may-khach.js') >= 0 && gop37.indexOf('GITA_MAY_KHACH') >= 0,
+        'lớp chặn máy khách nằm trong bản mã mà trang web thật sự nạp');
       /* ── Chặn mà vẫn để sẵn đường vòng thì không phải chặn ──
          Bản đầu của may-khach.js giữ lại hàm createObjectURL gốc trong một
          biến "để phòng khi cần". Đó là đúng cái lỗ vừa bịt, chỉ đổi tên.
