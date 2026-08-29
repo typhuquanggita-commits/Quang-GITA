@@ -16,6 +16,7 @@ export interface NavItem {
 
 export const NAV: NavItem[] = [
   { path: '/', label: 'Tổng quan', icon: '◎', group: 'Học tập' },
+  { path: '/today', label: 'Hôm nay', icon: '☀', group: 'Học tập' },
   { path: '/dashboard', label: 'Bảng tiến độ', icon: '▤', group: 'Học tập' },
   { path: '/roadmap', label: 'Lộ trình của tôi', icon: '⟶', group: 'Học tập' },
   { path: '/missions', label: 'Nhiệm vụ & Phiếu luyện', icon: '✎', group: 'Học tập' },

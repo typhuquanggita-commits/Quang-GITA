@@ -3,6 +3,7 @@ import { Shell } from '@/components/Shell';
 import Home from '@/pages/Home';
 import Onboarding from '@/pages/Onboarding';
 import Dashboard from '@/pages/Dashboard';
+import Today from '@/pages/Today';
 import RoadmapPage from '@/pages/Roadmap';
 import Missions from '@/pages/Missions';
 import MissionRun from '@/pages/MissionRun';
@@ -31,6 +32,9 @@ export default function App() {
       break;
     case 'onboarding':
       page = <Onboarding />;
+      break;
+    case 'today':
+      page = <Today />;
       break;
     case 'dashboard':
       page = <Dashboard />;
