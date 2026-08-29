@@ -16,7 +16,8 @@ function doc(t) { return fs.readFileSync(path.join(goc, t), 'utf8'); }
 
 var css = doc('style.css');
 var TEP_JS = ['du-lieu.js', 'du-lieu-daotao.js', 'du-lieu-vanhanh.js',
-              'du-lieu-kythuat.js', 'man-hinh.js', 'giao-dien.js'];
+              'du-lieu-kythuat.js', 'du-lieu-chuyenmon.js', 'du-lieu-congdong.js',
+              'man-hinh.js', 'giao-dien.js'];
 
 var FONT = 'https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400' +
   '&family=Playfair+Display:ital,wght@0,600;1,600&family=IBM+Plex+Mono:wght@400;500&display=swap';

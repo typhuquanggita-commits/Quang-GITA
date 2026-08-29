@@ -469,3 +469,32 @@ ul.vai li span{color:var(--muc2); font-size:12.5px}
 /* cảnh báo */
 .canh{border-left:4px solid var(--lua)}
 .canh ul{margin:0; padding-left:18px; display:grid; gap:6px; font-size:13.5px; color:var(--muc)}
+
+/* ── bước có số ──────────────────────────────────────── */
+.bso{list-style:none; margin:0; padding:0; display:grid; gap:0;
+     border:1px solid var(--vien); border-radius:var(--r); background:var(--the); overflow:hidden}
+.bso li{display:grid; grid-template-columns:44px minmax(0,1fr); gap:0 14px;
+        padding:14px 20px; border-bottom:1px solid var(--vien)}
+.bso li:last-child{border-bottom:0}
+.bso .s{display:grid; place-items:center; width:30px; height:30px; border-radius:50%;
+        font-family:var(--ma); font-size:12px; color:#fff; background:var(--son); margin-top:2px}
+.bso .noi{display:grid; gap:3px; min-width:0}
+.bso .noi b{font-size:14.5px}
+.bso .noi .ai{font-family:var(--ma); font-size:11px; color:var(--muc3); letter-spacing:.03em}
+.bso .noi .y{font-size:13px; color:var(--muc2)}
+.bso .noi .ra{font-size:12.5px; color:var(--muc); padding-left:11px; border-left:2px solid var(--xanh); margin-top:3px}
+
+/* ── nhóm chiến lược ─────────────────────────────────── */
+.clg{margin-bottom:14px}
+.clg h3{margin:0 0 8px; font-size:13px; letter-spacing:.07em; color:var(--c)}
+.clg table{min-width:640px}
+
+/* ── chân dung gia đình ──────────────────────────────── */
+.cd4{border:1px solid var(--vien); border-top:3px solid var(--c); border-radius:var(--r);
+     background:var(--the); padding:16px 20px; display:grid; gap:10px; align-content:start}
+.cd4 h3{margin:0; font-size:15px; letter-spacing:.05em; color:var(--c)}
+.cd4 .d{font-size:13px; color:var(--muc2)}
+.cd4 .d b{font-family:var(--ma); font-size:9.5px; letter-spacing:.12em; text-transform:uppercase;
+          color:var(--muc3); display:block; margin-bottom:2px}
+.cd4 .d.lam{color:var(--muc); padding-left:11px; border-left:2px solid var(--c)}
+.cd4 .d.bay{color:var(--lua); padding-top:9px; border-top:1px dashed var(--vien2)}

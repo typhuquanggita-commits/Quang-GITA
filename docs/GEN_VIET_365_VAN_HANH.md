@@ -4,7 +4,10 @@
 bậc, khung năng lực, lộ trình ba mươi năm. Tập này là thứ một Coach, một đội trưởng chi
 hội hay một phụ huynh cầm lên và làm theo được từ tuần sau.
 
-Bản trực quan đầy đủ (45 màn, 8 nhóm): mở `genviet365/index.html`.
+Tập 3 — [`GEN_VIET_365_CHUYEN_MON.md`](GEN_VIET_365_CHUYEN_MON.md) — là phần nghề: cách
+đọc một ca, cách chọn giải pháp, tư vấn, ngôn ngữ và đội ngũ.
+
+Bản trực quan đầy đủ (12 nhóm · 63 màn): mở `genviet365/index.html`.
 
 ---
 

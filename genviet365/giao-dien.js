@@ -294,12 +294,15 @@
   K.diem = function (o) {
     var t = lay(o), tong = 0, i;
     for (i = 0; i < t.length; i++) tong += t[i].d;
+    var toi = 0;
+    for (i = 0; i < t.length; i++) if (t[i].d > toi) toi = t[i].d;
     return '<div class="the diem">' + ds(t, function (x) {
       return '<div class="hang-d"><span class="t">' + e(x.t) + '</span>' +
         '<span class="d">' + x.d + '</span>' +
-        '<div class="thanh"><i style="width:' + (x.d / tong * 100) + '%"></i></div>' +
+        '<div class="thanh"><i style="width:' + (x.d / toi * 100) + '%"></i></div>' +
         '<span class="n">' + e(x.n) + '</span></div>';
-    }) + '<div class="tong-d">Tổng ' + tong + ' điểm · ngưỡng đạt 85</div></div>';
+    }) + '<div class="tong-d">Tổng ' + tong + ' điểm · ngưỡng đạt ' +
+      e(o.nguong == null ? 85 : o.nguong) + '</div></div>';
   };
 
   K.quy = function (o) {
@@ -367,6 +370,44 @@
     return '<div class="the canh"><ul>' + ds(lay(o), function (x) {
       return '<li>' + e(x) + '</li>';
     }) + '</ul></div>';
+  };
+
+  /* bước có số — quy trình, đường vào, chuỗi điểm chạm */
+  K.buocso = function (o) {
+    return '<ol class="bso">' + ds(lay(o), function (x) {
+      return '<li><span class="s">' + e(x.b) + '</span><div class="noi">' +
+        '<b>' + e(x.t) + '</b>' +
+        (x.ai ? '<span class="ai">' + e(x.ai) + '</span>' : '') +
+        '<span class="y">' + e(x.n) + '</span>' +
+        (x.ra ? '<span class="ra">Đầu ra: ' + e(x.ra) + '</span>' : '') +
+        '</div></li>';
+    }) + '</ol>';
+  };
+
+  /* thư viện chiến lược — mười nhóm, mỗi nhóm một bảng mười dòng */
+  K.cl = function (o) {
+    return ds(lay(o), function (n) {
+      return '<div class="clg" style="--c:' + e(n.mau) + '">' +
+        '<h3>' + e(n.nhom) + '</h3>' +
+        '<div class="cuon"><table><thead><tr><th>#</th><th>Chiến lược</th>' +
+        '<th>Cơ chế</th><th>Trụ</th><th>Đo bằng</th></tr></thead><tbody>' +
+        ds(n.ds, function (r) {
+          return '<tr><td class="co">' + e(r[0]) + '</td><td><strong>' + e(r[1]) + '</strong></td>' +
+            '<td class="mo">' + e(r[2]) + '</td><td class="co">' + e(r[3]) + '</td>' +
+            '<td class="mo">' + e(r[4]) + '</td></tr>';
+        }) + '</tbody></table></div></div>';
+    });
+  };
+
+  /* bốn chân dung gia đình */
+  K.cd4 = function (o) {
+    return '<div class="luoi hai">' + ds(lay(o), function (x) {
+      return '<div class="cd4" style="--c:' + e(x.mau) + '"><h3>' + e(x.t) + '</h3>' +
+        '<div class="d"><b>Dấu hiệu</b>' + e(x.dh) + '</div>' +
+        '<div class="d"><b>Họ cần gì</b>' + e(x.can) + '</div>' +
+        '<div class="d lam"><b>Mình làm gì</b>' + e(x.lam) + '</div>' +
+        '<div class="d bay"><b>Bẫy</b>' + e(x.bay) + '</div></div>';
+    }) + '</div>';
   };
 
   /* ── dựng một màn ────────────────────────────────── */

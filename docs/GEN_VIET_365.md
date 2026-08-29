@@ -6,11 +6,13 @@ Học viện GITA · Sứ mệnh: *Nâng tầm trí tuệ vàng Việt Nam*
 > Đích cuối: một mạng lưới nhân tài Việt **tự tái tạo** — người được rèn quay lại rèn
 > người tiếp theo, và hệ thống sống lâu hơn người dựng ra nó.
 
-**Tập 1 — kiến trúc.** Phần vận hành chạy được ngay (giáo trình, lịch năm, sổ tay từng
-vai, cổng nghiệm thu, biểu mẫu, mô hình dữ liệu, an toàn) nằm ở tập 2:
-[`GEN_VIET_365_VAN_HANH.md`](GEN_VIET_365_VAN_HANH.md).
+**Tập 1 — kiến trúc.** Bộ tài liệu gồm ba tập:
+- Tập 2 — [`GEN_VIET_365_VAN_HANH.md`](GEN_VIET_365_VAN_HANH.md): giáo trình, lịch năm,
+  sổ tay từng vai, cổng nghiệm thu, biểu mẫu, mô hình dữ liệu, an toàn.
+- Tập 3 — [`GEN_VIET_365_CHUYEN_MON.md`](GEN_VIET_365_CHUYEN_MON.md): ma trận 8 × 8,
+  quy trình 10 bước, 11 nhóm giải pháp, 100 chiến lược, tư vấn, ngôn ngữ, nghề Coach.
 
-Bản trực quan đầy đủ (8 nhóm · 45 màn): mở `genviet365/index.html`.
+Bản trực quan đầy đủ (12 nhóm · 63 màn): mở `genviet365/index.html`.
 Gộp thành một tệp để gửi đi: `node genviet365/dong-goi-artifact.cjs`.
 
 ---
