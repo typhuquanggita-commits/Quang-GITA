@@ -10,6 +10,14 @@ Nền tảng luyện Toán ba luồng, xây quanh **mô thức huấn luyện GI
 
 ---
 
+## Nhận diện GITA365
+
+Toàn bộ hệ màu được rút trực tiếp từ logo GITA — vành ê-líp hai cung xanh – đỏ và chùm sao: **GITA Blue `#1B4F9C`**, **Orbit Blue `#2E6FBF`**, **GITA Red `#E01B24`**, **Star Navy `#0E2C58`**, **Star Gold `#F0A21B`**.
+
+Trang *Nhận diện MATH365* là nguồn chân lý duy nhất cho logo (bản đầy đủ · dấu hiệu · đảo trắng · một màu), hệ màu, thang chữ, giọng điệu và **bộ quy chuẩn tài liệu**: quy ước mã tài liệu `M365-<LUỒNG>-<GIAI ĐOẠN>-<CHUYÊN ĐỀ>-<LOẠI><ĐỢT>`, chín loại tài liệu kèm màu và ký hiệu riêng, sáu vùng bố cục trang phiếu, thang chữ bản in A4, quy chuẩn bìa, quy tắc in ấn và năm mẫu câu chữ dùng lại.
+
+---
+
 ## Mô thức GITA
 
 | | Trụ cột | Nội dung |
@@ -36,6 +44,7 @@ Mô thức xuyên suốt mọi tầng: thư mục tài liệu, quy trình, giả
 | Chuyên đề | 47, phân theo 10 mạch kiến thức và 5 tầng hấp thu |
 | Thư mục tài liệu | 408 thư mục · 1.097 đầu tài liệu bổ trợ |
 | Ma trận đề | 7 kỳ thi / trường |
+| Đề mẫu trọn vẹn | **4** đề chuẩn cấu trúc (49 câu + 16 ý đúng/sai), đủ lời giải – barem – bảng phân tích |
 | Bí kíp · thói quen · phương pháp | 30 · 8 · 8 |
 | Vai trò phân quyền | 8 vai trò (4 học sinh · 3 giáo viên · 1 quản trị) |
 
@@ -58,6 +67,26 @@ Hai phiếu đi kèm, không tính vào 2.000 phiếu luyện:
 - **Phiếu hướng dẫn ôn chắc chuyên đề** (`…-HD`) — một phiếu cho cả chuyên đề: thứ tự học sáu phiếu, lộ trình năm tầng, checklist "ôn chắc", công thức – kỹ thuật – lỗi, lịch ôn lại 1–3–7–21.
 
 Câu hỏi ở phiếu **Đọc vị** và **Kỹ năng** được dựng trực tiếp từ bảng phân tích dạng bài, nên phương án nhiễu luôn là mô tả thật của một dạng bài khác — không phải phương án bịa.
+
+### Đề mẫu trọn vẹn theo đúng cấu trúc kỳ thi
+
+Ngoài bộ phiếu theo chuyên đề, hệ thống có các **đề mẫu hoàn chỉnh** dựng đúng ma trận của từng kỳ thi — đủ số bài, đúng thang điểm, đúng thời gian.
+
+| Mã đề | Kỳ thi | Cấu trúc | Thời gian |
+| --- | --- | --- | --- |
+| `M365-V10-DM01` | Tuyển sinh lớp 10 Hà Nội | 5 bài tự luận · thang 10 | 90 phút |
+| `M365-CT-DM03` | Chuyên Toán khối chuyên Sở (Ams · Chu Văn An) | 5 bài phủ 5 mạch · thang 10 | 150 phút |
+| `M365-CT-DM02` | Toán vòng 2 Chuyên KHTN | 5 bài, nặng Số học – Tổ hợp · thang 10 | 150 phút |
+| `M365-QG-DM04` | Tốt nghiệp THPT | 12 trắc nghiệm + 4 đúng/sai (16 ý) + 6 trả lời ngắn | 90 phút |
+
+Mỗi đề mở ra bốn tab:
+
+1. **Đề thi** — làm trước, tính giờ như thi thật.
+2. **Lời giải & Barem** — đáp án, lời giải từng bước, và barem chấm gắn từng mốc 0,25 điểm với một hành động quan sát được trên bài làm. Câu đúng/sai có giải thích riêng cho từng ý và thang luỹ tiến 0,10 – 0,25 – 0,50 – 1,00.
+3. **Bảng phân tích** — với mỗi câu: *kiến thức liên quan · dạng bài · đọc vị đề · phương pháp làm · các bước giải · bẫy hay mắc và mẹo xử lí · kho bí kíp · liên hệ đề thật và biến thể*, kèm lối tắt về đúng bộ phiếu chuyên đề tương ứng.
+4. **Ma trận & Chiến thuật** — ma trận dựng ngược từ chính đề để đối chiếu với cấu trúc gốc, kế hoạch thời gian trong phòng thi, và bảng đọc điểm → việc cần làm tiếp.
+
+`npm run smoke` đối chiếu tự động từng đề với ma trận gốc: số phần, điểm từng phần, thang điểm, thời gian, tổng phút các câu, tính hợp lệ của phương án trắc nghiệm, barem cộng đủ điểm, và bảng phân tích không thiếu mục nào.
 
 ### Hồ sơ học viên
 
@@ -111,7 +140,7 @@ npm install
 npm run dev        # http://localhost:3000
 npm run build      # typecheck + build production
 npm run typecheck
-npm run smoke      # sinh và kiểm tra toàn bộ 2.000 phiếu / 16.664 câu
+npm run smoke      # sinh và kiểm tra 2.000 phiếu / 16.664 câu + đối chiếu 4 đề mẫu với ma trận
 ```
 
 Không cần API key hay dịch vụ ngoài. Toàn bộ tiến độ học tập được lưu trong `localStorage` của trình duyệt.
@@ -138,14 +167,15 @@ src/
     library-tree.ts  Kiến trúc thư mục tài liệu
     playbook.ts      Kho bí kíp, thói quen, phương pháp học
     roles.ts         Ma trận phân quyền
-    brand.ts         Bộ nhận diện GITA365 / MATH365
+    brand.ts         Bộ nhận diện GITA365 / MATH365 và quy chuẩn tài liệu
+    papers/          Đề mẫu trọn vẹn theo từng ma trận đề (đề · lời giải · barem · phân tích)
   lib/
     rng.ts           Bộ sinh ngẫu nhiên có hạt giống + tiện ích số học
     engine.ts        Chấm điểm, chẩn đoán, định hướng, thăng cấp
     roadmap.ts       Sinh lộ trình cá nhân hoá
     auth.ts          Kiểm tra quyền phía client
     storage.ts       Lưu trạng thái vào localStorage
-  pages/           17 trang giao diện (gồm Bộ giải đề, Hồ sơ học viên, Phiếu hướng dẫn)
+  pages/           19 trang giao diện (gồm Bộ giải đề, Hồ sơ học viên, Phiếu hướng dẫn)
   components/      Thư viện UI + biểu đồ SVG tự vẽ
 ```
 

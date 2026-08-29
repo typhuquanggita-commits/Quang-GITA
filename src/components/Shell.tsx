@@ -22,6 +22,7 @@ export const NAV: NavItem[] = [
   { path: '/portfolio', label: 'Hồ sơ học viên', icon: '❖', group: 'Học tập' },
   { path: '/topics', label: 'Cây chuyên đề', icon: '❑', group: 'Nội dung' },
   { path: '/exams', label: 'Kỳ thi & Cấu trúc đề', icon: '◇', group: 'Nội dung' },
+  { path: '/papers', label: 'Đề mẫu & Bộ giải đề', icon: '⬢', group: 'Nội dung' },
   { path: '/playbook', label: 'Bí kíp & Thói quen', icon: '★', group: 'Nội dung' },
   { path: '/library', label: 'Kiến trúc tài liệu', icon: '❐', group: 'Nội dung' },
   { path: '/gita', label: 'Mô thức GITA', icon: '◈', group: 'Hệ thống' },

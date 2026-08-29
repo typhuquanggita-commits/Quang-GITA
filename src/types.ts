@@ -290,3 +290,87 @@ export interface AppState {
   doneTasks: Record<string, boolean>;
   studyLog: Record<string, number>;
 }
+
+/* ---------- Đề mẫu trọn vẹn theo cấu trúc từng kỳ thi ---------- */
+
+/** Hình thức của một câu trong đề. */
+export type PaperItemFormat = 'tu-luan' | 'trac-nghiem' | 'dung-sai' | 'tra-loi-ngan';
+
+/** Bảng phân tích chi tiết đi kèm mỗi câu của đề mẫu. */
+export interface PaperItemAnalysis {
+  /** Tên dạng bài — gọi đúng tên thì mới tra được kho bí kíp. */
+  dang: string;
+  /** Kiến thức liên quan cần có trước khi làm câu này. */
+  knowledge: string[];
+  /** Đọc vị đề: những dấu hiệu trong đề bài giúp nhận ra ngay dạng. */
+  docVi: string[];
+  /** Phương pháp làm — quy trình chuẩn theo bước. */
+  method: string[];
+  /** Bẫy hay mắc và mẹo xử lý. */
+  traps: string[];
+  /** Bí kíp phòng thi cho riêng dạng này. */
+  tips: string[];
+  /** Liên hệ đề thi thật và các biến thể có thể gặp. */
+  transfer: string;
+}
+
+/** Một ý đúng/sai trong câu trắc nghiệm đúng/sai. */
+export interface PaperClaim {
+  text: string;
+  value: boolean;
+  why: string;
+}
+
+export interface PaperItem {
+  id: string;
+  /** Nhãn hiển thị: “Bài I.2”, “Câu 7”, “Phần II · Câu 3 · ý b”. */
+  label: string;
+  points: number;
+  minutes: number;
+  strand: StrandId;
+  level: 1 | 2 | 3 | 4 | 5;
+  format: PaperItemFormat;
+  /** Mã chuyên đề liên quan, để nối câu này về bộ phiếu tương ứng. */
+  topicIds: string[];
+  statement: string;
+  /** Trắc nghiệm nhiều lựa chọn. */
+  choices?: string[];
+  correctIndex?: number;
+  /** Trắc nghiệm đúng/sai — bốn mệnh đề con. */
+  claims?: PaperClaim[];
+  /** Đáp số cuối cùng, viết gọn. */
+  answer: string;
+  /** Lời giải từng bước. */
+  solution: string[];
+  /** Barem chấm: mỗi mốc điểm gắn với một hành động quan sát được. */
+  barem: { item: string; point: number }[];
+  analysis: PaperItemAnalysis;
+}
+
+export interface PaperPart {
+  label: string;
+  points: number;
+  note: string;
+  items: PaperItem[];
+}
+
+export interface ExamPaper {
+  id: string;
+  /** Mã tài liệu theo quy ước nhận diện MATH365. */
+  code: string;
+  blueprintId: string;
+  schoolId: SchoolId;
+  track: TrackId;
+  title: string;
+  subtitle: string;
+  minutes: number;
+  totalPoints: number;
+  /** Vì sao đề này bám sát cấu trúc thật — đối chiếu từng phần với ma trận. */
+  fidelity: string[];
+  parts: PaperPart[];
+  /** Lưu ý chấm cho giáo viên. */
+  gradingNotes: string[];
+  timePlan: { phase: string; minutes: string; action: string }[];
+  /** Đọc điểm để biết đang ở đâu và làm gì tiếp theo. */
+  scoreBands: { band: string; meaning: string; next: string }[];
+}

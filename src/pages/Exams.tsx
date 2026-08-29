@@ -1,8 +1,9 @@
 import { useState } from 'react';
-import { useApp } from '@/state';
+import { useApp, go } from '@/state';
 import { SCHOOLS, strandById } from '@/data/schools';
 import { BLUEPRINTS, blueprintsBySchool } from '@/data/blueprints';
 import { RESOURCES, RESOURCE_TYPE_LABEL } from '@/data/resources';
+import { papersByBlueprint } from '@/data/papers';
 import { BRAND_TRACK_STYLE } from '@/data/brand';
 import { Card, SectionTitle, Badge, Progress, Callout } from '@/components/ui';
 import type { TrackId } from '@/types';
@@ -168,6 +169,39 @@ export default function Exams() {
             {bp.format} · {bp.minutes} phút
           </p>
           <p className="mt-2 text-[13px] leading-relaxed text-slate-600">{bp.updatedNote}</p>
+
+          {(() => {
+            const papers = papersByBlueprint(bp.id);
+            if (!papers.length) {
+              return (
+                <div className="mt-4 rounded-xl border border-dashed border-slate-300 px-4 py-3 text-[12.5px] text-slate-500">
+                  Ma trận này chưa có đề mẫu trọn vẹn. Xem{' '}
+                  <button className="font-semibold text-brand-700 underline" onClick={() => go('/papers')}>
+                    kho đề mẫu
+                  </button>{' '}
+                  để luyện với các cấu trúc đã có đề.
+                </div>
+              );
+            }
+            return (
+              <div className="mt-4 rounded-xl border border-brand-200 bg-brand-50 px-4 py-3">
+                <div className="text-[12.5px] font-bold text-brand-800">
+                  Đề mẫu trọn vẹn theo đúng ma trận này
+                </div>
+                <div className="mt-2 flex flex-wrap gap-2">
+                  {papers.map((pp) => (
+                    <button
+                      key={pp.id}
+                      className="btn btn-primary px-3 py-1.5 text-[12.5px]"
+                      onClick={() => go(`/paper/${pp.id}`)}
+                    >
+                      {pp.code} · Mở đề, lời giải &amp; barem
+                    </button>
+                  ))}
+                </div>
+              </div>
+            );
+          })()}
 
           <div className="mt-5 space-y-3">
             {bp.parts.map((p) => {

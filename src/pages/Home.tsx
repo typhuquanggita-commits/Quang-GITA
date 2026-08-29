@@ -7,6 +7,7 @@ import { SCHOOLS } from '@/data/schools';
 import { TOPICS } from '@/data/topics';
 import { TIPS, HABITS } from '@/data/playbook';
 import { LIBRARY_TREE, countFolders, countArtifacts } from '@/data/library-tree';
+import { EXAM_PAPERS, paperStats } from '@/data/papers';
 import { Card, SectionTitle, Badge, Progress } from '@/components/ui';
 import type { TrackId } from '@/types';
 
@@ -267,6 +268,46 @@ export default function Home() {
               <div className="mt-1 text-[12px] leading-relaxed text-slate-500">{s.sub}</div>
             </Card>
           ))}
+        </div>
+      </section>
+
+      {/* Đề mẫu trọn vẹn */}
+      <section>
+        <SectionTitle
+          eyebrow="Đề mẫu chuẩn cấu trúc"
+          title="Đề trọn vẹn theo đúng ma trận từng kỳ thi"
+          desc="Ngoài 2.000 phiếu luyện theo chuyên đề, hệ thống có các đề mẫu hoàn chỉnh dựng đúng cấu trúc thật — đủ số bài, đúng thang điểm, đúng thời gian — kèm lời giải từng bước, barem chấm tới từng 0,25 điểm và bảng phân tích chi tiết cho mọi câu."
+          right={
+            <button className="btn btn-primary text-sm" onClick={() => go('/papers')}>
+              Vào kho đề mẫu
+            </button>
+          }
+        />
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {EXAM_PAPERS.map((p) => {
+            const ps = paperStats(p);
+            const style = BRAND_TRACK_STYLE[p.track];
+            return (
+              <Card key={p.id} className="overflow-hidden">
+                <div className="h-1.5" style={{ background: style.color }} />
+                <button className="w-full p-5 text-left" onClick={() => go(`/paper/${p.id}`)}>
+                  <div className="font-mono text-[10.5px] font-bold uppercase tracking-[0.16em]" style={{ color: style.color }}>
+                    {p.code}
+                  </div>
+                  <div className="mt-1 text-[14px] font-extrabold leading-tight text-slate-900">
+                    {p.title.replace(/^Đề mẫu \d+ · /, '')}
+                  </div>
+                  <div className="mt-1.5 text-[12px] leading-relaxed text-slate-500">
+                    {p.minutes} phút · thang {p.totalPoints} · {ps.items} câu
+                    {ps.claims ? ` (+${ps.claims} ý)` : ''}
+                  </div>
+                  <div className="mt-2 text-[12px] font-semibold" style={{ color: style.color }}>
+                    Đề · Lời giải · Barem · Phân tích ➜
+                  </div>
+                </button>
+              </Card>
+            );
+          })}
         </div>
       </section>
 

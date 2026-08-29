@@ -11,6 +11,7 @@ import Portfolio from '@/pages/Portfolio';
 import Guide from '@/pages/Guide';
 import { TopicList, TopicDetail } from '@/pages/Topics';
 import Exams from '@/pages/Exams';
+import { PaperList, PaperView } from '@/pages/Papers';
 import Playbook from '@/pages/Playbook';
 import Gita from '@/pages/Gita';
 import Library from '@/pages/Library';
@@ -57,6 +58,12 @@ export default function App() {
       break;
     case 'exams':
       page = <Exams />;
+      break;
+    case 'papers':
+      page = <PaperList />;
+      break;
+    case 'paper':
+      page = <PaperView id={param ?? ''} />;
       break;
     case 'playbook':
       page = <Playbook />;

@@ -55,14 +55,14 @@ export const BLUEPRINTS: Blueprint[] = [
       },
       {
         label: 'Bài III',
-        points: 2,
+        points: 2.5,
         minutes: 16,
         strand: 'dai-so',
         content: 'Hệ phương trình + Parabol và đường thẳng (Viète)',
         gate: 'bat-buoc',
         requirements: [
           'Ý 1 (1,0đ): giải hệ phương trình, thường cần đặt ẩn phụ (dạng 1/x, √x, |x|).',
-          'Ý 2 (1,0đ): tương giao (P): y = ax² với (d): y = mx + n — tìm m để có 2 giao điểm thoả hệ thức về x₁, x₂.',
+          'Ý 2 (1,5đ): tương giao (P): y = ax² với (d): y = mx + n — chứng minh luôn cắt tại hai điểm phân biệt, rồi tìm m thoả hệ thức về x₁, x₂.',
         ],
         tips: [
           'Đặt ẩn phụ phải kèm điều kiện của ẩn phụ, giải xong nhớ trả biến.',
