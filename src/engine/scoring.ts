@@ -29,7 +29,7 @@ import type {
   TestModule,
   ModulePathway,
 } from '../types.ts';
-import { estimateAbility, pCorrect, standardError, type ScoredResponse } from './irt.ts';
+import { estimateAbility, formReliability, pCorrect, standardError, type ScoredResponse } from './irt.ts';
 import { clamp, mean, median, roundTo } from '../lib/util.ts';
 
 /** Scale anchors. */
@@ -206,6 +206,7 @@ export function scoreSection(
     section,
     scaled: thetaToScaled(theta, pathway),
     sem: seToScalePoints(seTheta),
+    reliability: formReliability(items),
     theta,
     rawCorrect,
     rawAttempted,

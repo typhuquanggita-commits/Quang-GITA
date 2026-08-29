@@ -135,6 +135,22 @@ try {
     check(`route: ${label}`, heading.includes(marker), heading);
   }
 
+  /* ---------------- Forecast ---------------- */
+  group('Score forecast');
+  await page.evaluate(() => { window.location.hash = '#/plan'; });
+  await page.waitForTimeout(500);
+  check('onboarding produced a plan', (await page.locator('.plan-task').count()) > 0);
+  // No full-length test has been scored, so there is no baseline. Drawing a
+  // curve anyway would be exactly the failure this codebase refuses.
+  check(
+    'no baseline means no forecast curve',
+    (await page.getByText(/Chưa có bài thi thử nào được chấm/).count()) === 1,
+  );
+  check(
+    'and no chart is drawn from nothing',
+    (await page.locator('svg.chart[aria-label*="Dự báo"]').count()) === 0,
+  );
+
   /* ---------------- Lesson library ---------------- */
   group('Lesson library');
   await page.getByRole('button', { name: 'Bài giảng', exact: true }).first().click();

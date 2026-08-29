@@ -7,14 +7,15 @@
  */
 
 import React from 'react';
-import type { Attempt } from '../../types.ts';
+import type { Attempt, SectionScore } from '../../types.ts';
 import { QUESTION_BY_ID } from '../../data/bank.ts';
 import { domainLabel, sectionLabel, skillLabel } from '../../data/blueprint.ts';
 import { summariseIntegrity } from '../exam/useProctor.ts';
 import { levelForScore, studentLevelLabel } from '../../auth/roles.ts';
+import { reliabilityGrade, type ReliabilityGrade } from '../../engine/irt.ts';
 import { useStore } from '../../state/store.tsx';
 import { useLocale, useT } from '../../i18n/index.ts';
-import { Badge, Button, Card, Empty, Ring } from '../../components/ui/primitives.tsx';
+import { Badge, Bar, Button, Card, Empty, Ring } from '../../components/ui/primitives.tsx';
 import { MasteryBars, PacingChart } from '../../components/charts/charts.tsx';
 import { IconCheck, IconAlert, IconPrint, IconDownload } from '../../components/ui/icons.tsx';
 import { download, formatClock, formatDate, isoDate } from '../../lib/util.ts';
@@ -145,6 +146,27 @@ export function ScoreReport({
         </div>
       </div>
 
+      {/* ---- Measurement quality ---- */}
+      <Card
+        title={locale === 'vi' ? 'Chất lượng phép đo' : 'Measurement quality'}
+        subtitle={
+          locale === 'vi'
+            ? 'Độ tin cậy biên của chính đề đã làm, tính trên toàn dải năng lực — không phải của riêng bài này.'
+            : 'Marginal reliability of the form that was delivered, across the whole ability range — not of this one performance.'
+        }
+      >
+        <div className="stack gap-4">
+          {report.sections.map((section) => (
+            <ReliabilityRow key={section.section} section={section} locale={locale} />
+          ))}
+          <p className="text-sm muted" style={{ maxWidth: '62ch' }}>
+            {locale === 'vi'
+              ? 'Con số này tính từ tham số IRT do người soạn ước lượng, chưa hiệu chuẩn trên dữ liệu thực. Nó cho biết đề dài và phân biệt tốt đến đâu, chứ chưa phải bằng chứng đã kiểm chứng. Xem docs/PSYCHOMETRICS.md.'
+              : 'Computed from author-estimated IRT parameters, not from a calibration on real response data. It says how long and how discriminating this form is; it is not yet verified evidence. See docs/PSYCHOMETRICS.md.'}
+          </p>
+        </div>
+      </Card>
+
       {/* ---- Section detail ---- */}
       {report.sections.map((section) => (
         <Card
@@ -258,3 +280,73 @@ function Stat({ label, value }: { label: string; value: React.ReactNode }): Reac
 }
 
 export type { Attempt };
+
+/* ------------------------------------------------------------------ */
+/* Reliability row                                                     */
+/*                                                                     */
+/* Module scope: nested, it would remount on every dispatch and take    */
+/* the report's scroll position with it.                               */
+/* ------------------------------------------------------------------ */
+
+const GRADE_TEXT: Record<
+  ReliabilityGrade,
+  { en: string; vi: string; tone: 'success' | 'primary' | 'warning' | 'danger' }
+> = {
+  individual: {
+    en: 'Precise enough to act on for one student',
+    vi: 'Đủ chính xác để quyết định cho một học sinh',
+    tone: 'success',
+  },
+  adequate: {
+    en: 'Adequate for tracking progress, not for placement',
+    vi: 'Đủ để theo dõi tiến bộ, chưa đủ để xếp lớp',
+    tone: 'primary',
+  },
+  'group-only': {
+    en: 'Read at cohort level only — too coarse for one student',
+    vi: 'Chỉ nên đọc ở mức nhóm — quá thô cho từng học sinh',
+    tone: 'warning',
+  },
+  insufficient: {
+    en: 'Too short or too flat to measure reliably',
+    vi: 'Quá ngắn hoặc phân biệt quá kém để đo tin cậy',
+    tone: 'danger',
+  },
+};
+
+function ReliabilityRow({
+  section,
+  locale,
+}: {
+  section: SectionScore;
+  locale: 'vi' | 'en';
+}): React.ReactElement {
+  const grade = reliabilityGrade(section.reliability);
+  const text = GRADE_TEXT[grade];
+
+  return (
+    <div className="stack gap-2">
+      <div className="between wrap gap-3">
+        <span className="semibold">{sectionLabel(section.section, locale)}</span>
+        <span className="row gap-2">
+          <span className="semibold">ρ = {section.reliability.toFixed(2)}</span>
+          <Badge tone={text.tone}>{locale === 'vi' ? text.vi : text.en}</Badge>
+        </span>
+      </div>
+      <Bar
+        value={section.reliability}
+        max={1}
+        label={
+          locale === 'vi'
+            ? `Độ tin cậy ${sectionLabel(section.section, locale)}: ${section.reliability.toFixed(2)} trên 1`
+            : `${sectionLabel(section.section, locale)} reliability: ${section.reliability.toFixed(2)} of 1`
+        }
+      />
+      <span className="text-xs muted">
+        {locale === 'vi'
+          ? `${section.operationalCount} câu tính điểm · sai số chuẩn ± ${section.sem} điểm`
+          : `${section.operationalCount} scored items · standard error ± ${section.sem} points`}
+      </span>
+    </div>
+  );
+}

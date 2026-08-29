@@ -10,9 +10,11 @@ import React, { useMemo, useState } from 'react';
 import { QUESTION_BY_ID } from '../../data/bank.ts';
 import { collectResponses, skillStats, weakestSkills } from '../../engine/analytics.ts';
 import { assessFeasibility, generatePlan, planProgress, taskLabel } from '../../engine/studyPlan.ts';
+import { forecast } from '../../engine/autopilot.ts';
 import { selectScoredAttempts, useStore } from '../../state/store.tsx';
 import { useLocale, useT } from '../../i18n/index.ts';
 import { Badge, Button, Card, Empty, Field, Ring } from '../../components/ui/primitives.tsx';
+import { LineChart } from '../../components/charts/charts.tsx';
 import { IconAlert, IconCalendar, IconCheck } from '../../components/ui/icons.tsx';
 import { addDays, daysBetween, formatDate, isoDate } from '../../lib/util.ts';
 
@@ -217,6 +219,14 @@ export function StudyPlanView(): React.ReactElement {
             </div>
           </Card>
 
+          <ForecastCard
+            from={state.plan.baselineScore}
+            targetTotal={state.plan.targetScore}
+            testDate={state.plan.testDate}
+            weeklyHours={state.plan.hoursPerWeek}
+            locale={locale}
+          />
+
           <Card title={locale === 'vi' ? 'Kỹ năng được ưu tiên' : 'Prioritised skills'}>
             {weak.length === 0 ? (
               <p className="muted text-sm">{t('analytics.needsData')}</p>
@@ -233,5 +243,109 @@ export function StudyPlanView(): React.ReactElement {
         </>
       )}
     </div>
+  );
+}
+
+/* ------------------------------------------------------------------ */
+/* Forecast                                                            */
+/*                                                                     */
+/* Module scope, per the standing rule: nested, every task tick would   */
+/* remount the chart and lose the week the learner was looking at.      */
+/* ------------------------------------------------------------------ */
+
+function ForecastCard({
+  from,
+  targetTotal,
+  testDate,
+  weeklyHours,
+  locale,
+}: {
+  from: number | null;
+  targetTotal: number;
+  testDate: string;
+  weeklyHours: number;
+  locale: 'vi' | 'en';
+}): React.ReactElement {
+  const vi = locale === 'vi';
+  const points = useMemo(
+    () => forecast({ from, targetTotal, testDate, weeklyHours }),
+    [from, targetTotal, testDate, weeklyHours],
+  );
+
+  /*
+   * No baseline means no forecast. Projecting from an assumed starting score
+   * would draw a confident curve out of nothing — exactly the failure this
+   * codebase refuses elsewhere, where an unmeasured signal is dropped rather
+   * than defaulted to something plausible.
+   */
+  if (from === null || points.length < 2) {
+    return (
+      <Card title={vi ? 'Dự báo điểm' : 'Score forecast'}>
+        <p className="muted text-sm" style={{ maxWidth: '58ch' }}>
+          {vi
+            ? 'Chưa có bài thi thử nào được chấm, nên chưa có điểm xuất phát để dự báo. Làm một bài full-length trước — dự báo từ một con số giả định thì chỉ là một đường cong tự tin vẽ từ hư không.'
+            : 'No full-length test has been scored, so there is no starting point to project from. Sit one first: a forecast from an assumed baseline is a confident curve drawn out of nothing.'}
+        </p>
+      </Card>
+    );
+  }
+
+  const arrival = points[points.length - 1].projected;
+  const meets = arrival >= targetTotal;
+  const t0 = Date.parse(`${points[0].date}T00:00:00`);
+
+  return (
+    <Card
+      title={vi ? 'Dự báo điểm' : 'Score forecast'}
+      subtitle={
+        vi
+          ? `Từ ${from} với ${weeklyHours} giờ/tuần đến ngày thi`
+          : `From ${from} at ${weeklyHours} hours a week to test day`
+      }
+      action={
+        <Badge tone={meets ? 'success' : 'warning'}>
+          {vi ? `Tới ngày thi: ~${arrival}` : `By test day: ~${arrival}`}
+        </Badge>
+      }
+    >
+      <div className="stack gap-4">
+        <LineChart
+          height={200}
+          yMin={Math.max(400, Math.min(from, targetTotal) - 100)}
+          yMax={Math.min(1600, Math.max(arrival, targetTotal) + 100)}
+          formatX={(v) => formatDate(isoDate(new Date(v)), locale)}
+          series={[
+            {
+              name: vi ? 'Dự báo' : 'Projected',
+              points: points.map((p) => [Date.parse(`${p.date}T00:00:00`), p.projected]),
+            },
+            {
+              name: vi ? 'Mục tiêu' : 'Target',
+              points: [
+                [t0, targetTotal],
+                [Date.parse(`${points[points.length - 1].date}T00:00:00`), targetTotal],
+              ],
+              color: 'var(--text-muted)',
+            },
+          ]}
+          description={
+            vi
+              ? `Dự báo từ ${from} lên khoảng ${arrival} vào ngày thi, so với mục tiêu ${targetTotal}.`
+              : `Projected from ${from} to about ${arrival} by test day, against a target of ${targetTotal}.`
+          }
+        />
+
+        {/*
+          The caveat belongs beside the curve, not in a document nobody opens.
+          A learner who reads this line as a promise and then misses it by
+          forty points has been failed by the interface, not by themselves.
+        */}
+        <p className="text-sm muted" style={{ maxWidth: '62ch' }}>
+          {vi
+            ? 'Đây là dự báo từ số giờ đã cam kết, không phải dự đoán điểm thi. Mô hình cố ý thận trọng và nén mạnh trên 1300 — mức tăng không tiếp tục tuyến tính. Học đúng cách quan trọng hơn số giờ, và đường này không biết bạn học thế nào.'
+            : 'This projects committed hours, it does not predict a score. The model is deliberately conservative and compresses hard above 1300, because gains do not continue linearly. How the hours are spent matters more than how many there are, and this curve knows nothing about that.'}
+        </p>
+      </div>
+    </Card>
   );
 }

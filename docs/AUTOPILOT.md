@@ -85,6 +85,30 @@ rationale written for a human reader.
 | 70 | `r-inspirits-limiting` | Inspirits is limiting, with evidence to act on |
 | 71 | `r-vocab-maintenance` | Tier 2+, not tapering |
 
+## The score forecast
+
+`forecast()` projects the total forward from the last scored baseline and the
+learner's committed weekly hours, and the study plan draws it against the
+target line.
+
+Two properties keep it honest.
+
+**No baseline, no curve.** With no scored full-length test there is no
+starting point, and the plan says so rather than projecting from an assumed
+1000. A confident curve drawn out of nothing is exactly the failure this
+codebase refuses elsewhere, where an unmeasured signal is dropped rather than
+defaulted to something plausible.
+
+**It compresses.** Gains do not continue linearly: the model applies a factor
+of 0.8 above 1150, 0.55 above 1300, and 0.35 above 1400. A forecast that drew
+a straight line would set a learner up to feel they had failed when they had
+merely met a realistic curve.
+
+The caveat sits beside the chart, not in a document nobody opens: this
+projects committed hours, it does not predict a score, and how the hours are
+spent matters more than how many there are — which the curve knows nothing
+about.
+
 ## Decisions worth defending
 
 **Why rules rather than a model.** A learned policy would optimise a metric

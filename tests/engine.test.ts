@@ -17,6 +17,8 @@ import {
   logLikelihood,
   standardError,
   marginalReliability,
+  formReliability,
+  reliabilityGrade,
 } from '../src/engine/irt.ts';
 import {
   isCorrect,
@@ -117,6 +119,87 @@ test('marginal reliability is between 0 and 1 and rises as error falls', () => {
   const precise = marginalReliability([0.25, 0.3, 0.28]);
   assert.ok(noisy >= 0 && noisy <= 1);
   assert.ok(precise > noisy);
+});
+
+test('reliability weights the population, not the ability range', () => {
+  // The tails are where a form measures worst. Averaging SE evenly across the
+  // range over-counts them and understates the reliability any real cohort,
+  // which clusters near the middle, would actually experience.
+  const seValues = [1.2, 0.4, 0.3, 0.4, 1.2];
+  const weights = [0.05, 0.2, 0.5, 0.2, 0.05];
+  const flat = marginalReliability(seValues);
+  const weighted = marginalReliability(seValues, 1, weights);
+  assert.ok(weighted > flat, 'a population-weighted figure must exceed the flat average here');
+  assert.ok(weighted <= 1);
+});
+
+test('an infinite standard error does not poison the whole reliability figure', () => {
+  // A node where the form carries no information yields SE = Infinity. Left in
+  // the mean, one such node makes every form report reliability 0.
+  const withGap = marginalReliability([0.3, Infinity, 0.3]);
+  assert.ok(Number.isFinite(withGap));
+  assert.ok(withGap > 0.8, `expected a usable figure, got ${withGap}`);
+  assert.equal(marginalReliability([Infinity, Infinity]), 0, 'no information anywhere means no reliability');
+});
+
+test('form reliability rises with length', () => {
+  const short = formReliability([{ a: 1, b: 0 }, { a: 1, b: 0.5 }]);
+  const long = formReliability(Array.from({ length: 27 }, (_, i) => ({ a: 1, b: -1.3 + i * 0.1 })));
+
+  assert.ok(short >= 0 && short <= 1);
+  assert.ok(long > short, 'a longer form must measure more reliably');
+  assert.equal(formReliability([]), 0, 'a form with no items measures nothing');
+});
+
+test('discrimination only helps where the form covers the population', () => {
+  /*
+   * Measured, not assumed. Sharpening every item while holding the difficulty
+   * range fixed makes each one informative in a narrower neighbourhood, so the
+   * form stops measuring the tails at all: at a = 2.5 over b ∈ [-1.3, 1.3] the
+   * standard error at θ = 2.5 is 1.78, against 0.69 for the same form at
+   * a = 1. Marginal reliability peaks near a = 1.4 and then collapses.
+   *
+   * This is a real constraint on assembly, not a quirk of the arithmetic:
+   * chasing discrimination without widening difficulty coverage buys precision
+   * for the middle of the cohort by abandoning its ends.
+   */
+  const span = (a: number, lo: number, hi: number) =>
+    formReliability(Array.from({ length: 27 }, (_, i) => ({ a, b: lo + (i * (hi - lo)) / 26 })));
+
+  const modest = span(1, -1.3, 1.3);
+  const sharper = span(1.4, -1.3, 1.3);
+  const tooSharp = span(2.5, -1.3, 1.3);
+
+  assert.ok(sharper > modest, 'moderate discrimination should help');
+  assert.ok(
+    tooSharp < modest,
+    `extreme discrimination over a narrow range should hurt, got ${tooSharp.toFixed(2)}`,
+  );
+
+  // Widen the difficulty range to match and the same items measure superbly.
+  assert.ok(span(2.5, -2.6, 2.6) > 0.9, 'coverage is what makes discrimination pay');
+});
+
+test('a full operational module reaches the reliability a score report claims', () => {
+  // 27 operational items is what an SAT365 module delivers. If a real module
+  // cannot clear the group-only threshold, the score report is overstating
+  // what it can support and this test should fail rather than the interface
+  // quietly reporting a number nobody checked.
+  const module = Array.from({ length: 27 }, (_, i) => ({ a: 1.15, b: -1.3 + i * 0.1 }));
+  const reliability = formReliability(module);
+  assert.ok(reliability >= 0.7, `a delivered module reached only ${reliability.toFixed(2)}`);
+  assert.equal(reliabilityGrade(reliability), reliability >= 0.9 ? 'individual' : reliability >= 0.8 ? 'adequate' : 'group-only');
+});
+
+test('a reliability grade never overstates what the figure licenses', () => {
+  assert.equal(reliabilityGrade(0.95), 'individual');
+  assert.equal(reliabilityGrade(0.9), 'individual');
+  // The boundary must not round up: 0.899 is not good enough for one student.
+  assert.equal(reliabilityGrade(0.899), 'adequate');
+  assert.equal(reliabilityGrade(0.8), 'adequate');
+  assert.equal(reliabilityGrade(0.75), 'group-only');
+  assert.equal(reliabilityGrade(0.4), 'insufficient');
+  assert.equal(reliabilityGrade(0), 'insufficient');
 });
 
 test('standardError is infinite with no items and finite with them', () => {

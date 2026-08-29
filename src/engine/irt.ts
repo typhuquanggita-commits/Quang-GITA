@@ -150,9 +150,73 @@ export function standardError(theta: number, items: readonly IrtParams[]): numbe
  * Marginal reliability, the IRT analogue of Cronbach's alpha. Reported on the
  * score report so the reliability of every delivered form is visible rather
  * than assumed.
+ *
+ * The optional weights let a caller integrate over a population distribution
+ * instead of over whoever happened to sit the form. Unweighted, a set of SE
+ * values sampled evenly across the ability range would over-count the tails,
+ * where forms are least precise, and report a reliability lower than any real
+ * cohort would experience.
  */
-export function marginalReliability(seValues: readonly number[], populationVariance = 1): number {
+export function marginalReliability(
+  seValues: readonly number[],
+  populationVariance = 1,
+  weights?: readonly number[],
+): number {
   if (seValues.length === 0) return 0;
-  const meanErrorVariance = seValues.reduce((acc, se) => acc + se * se, 0) / seValues.length;
+
+  let meanErrorVariance: number;
+  if (weights && weights.length === seValues.length) {
+    let weighted = 0;
+    let total = 0;
+    for (let i = 0; i < seValues.length; i += 1) {
+      if (!Number.isFinite(seValues[i])) continue;
+      weighted += weights[i] * seValues[i] * seValues[i];
+      total += weights[i];
+    }
+    // Every node was infinite: the form measures nothing anywhere.
+    if (total <= 0) return 0;
+    meanErrorVariance = weighted / total;
+  } else {
+    const finite = seValues.filter((se) => Number.isFinite(se));
+    if (finite.length === 0) return 0;
+    meanErrorVariance = finite.reduce((acc, se) => acc + se * se, 0) / finite.length;
+  }
+
   return Math.max(0, 1 - meanErrorVariance / populationVariance);
+}
+
+/**
+ * The marginal reliability of a delivered form, integrated over the standard
+ * normal ability distribution.
+ *
+ * This is the figure that answers "how much of the variance in these scores is
+ * signal?" for the form as a whole, rather than for one examinee. It is a
+ * property of the items, so it can be computed the moment a form is assembled
+ * — and a form too short to measure anyone reliably should say so before it is
+ * delivered, not after.
+ */
+export function formReliability(items: readonly IrtParams[]): number {
+  if (items.length === 0) return 0;
+  const { nodes, priorWeights } = grid();
+  const seValues = nodes.map((theta) => standardError(theta, items));
+  return marginalReliability(seValues, 1, priorWeights);
+}
+
+/**
+ * What a reliability figure licenses.
+ *
+ * These are the conventional thresholds for score use, and they are stated
+ * here rather than left to a reader's judgement because the difference
+ * matters: a form reliable enough to compare two cohorts is not necessarily
+ * reliable enough to place one student. A number without its interpretation
+ * gets read as "high is good", which is how a 0.82 ends up justifying an
+ * individual decision it cannot support.
+ */
+export type ReliabilityGrade = 'individual' | 'adequate' | 'group-only' | 'insufficient';
+
+export function reliabilityGrade(reliability: number): ReliabilityGrade {
+  if (reliability >= 0.9) return 'individual';
+  if (reliability >= 0.8) return 'adequate';
+  if (reliability >= 0.7) return 'group-only';
+  return 'insufficient';
 }

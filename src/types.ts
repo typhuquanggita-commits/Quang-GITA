@@ -257,6 +257,13 @@ export interface SectionScore {
   scaled: number;
   /** Standard error of measurement on the scaled metric. */
   sem: number;
+  /**
+   * Marginal reliability of the delivered form for this section, integrated
+   * over the population ability distribution. A property of the items, not of
+   * this examinee — it says how much of the variance in scores this form can
+   * resolve at all.
+   */
+  reliability: number;
   /** Ability estimate on the logit scale. */
   theta: number;
   rawCorrect: number;

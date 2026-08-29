@@ -74,10 +74,57 @@ band as if it were meaningful.
 `marginalReliability` reports the IRT analogue of Cronbach's alpha:
 
 ```
-reliability = 1 − mean(SE²) / population variance
+reliability = 1 − E[SE(θ)²] / population variance
 ```
 
-Reported so the reliability of a delivered form is visible rather than assumed.
+`formReliability(items)` evaluates it for a delivered form by integrating the
+standard error over the standard normal ability distribution, using the same
+161-node quadrature grid the EAP estimator uses. **The weighting matters.**
+An unweighted average of SE across the ability range over-counts the tails,
+where every form is least precise, and reports a reliability lower than any
+real cohort — which clusters near the middle — would ever experience.
+
+It is a property of the items, so it can be computed the moment a form is
+assembled rather than after it is delivered.
+
+### What a figure licenses
+
+Stated in the interface, not left to the reader, because "high is good" is how
+a 0.82 ends up justifying a decision it cannot support:
+
+| ρ | `reliabilityGrade` | Use |
+| --- | --- | --- |
+| ≥ 0.90 | `individual` | Precise enough to act on for one student |
+| 0.80–0.90 | `adequate` | Tracking progress; not placement |
+| 0.70–0.80 | `group-only` | Cohort level; too coarse for one student |
+| < 0.70 | `insufficient` | Too short or too flat to measure |
+
+The score report shows ρ per section with its grade, and states plainly that
+the figure comes from author-estimated parameters rather than a calibration.
+
+### Discrimination pays only where the form has coverage
+
+Measured, not assumed. Over a fixed difficulty range of b ∈ [−1.3, 1.3] with
+27 items, marginal reliability behaves like this:
+
+| a | ρ |
+| --- | --- |
+| 0.8 | 0.86 |
+| 1.0 | 0.89 |
+| 1.4 | 0.90 |
+| 1.8 | 0.87 |
+| 2.5 | 0.45 |
+
+Reliability peaks near a = 1.4 and then collapses. Sharpening items narrows
+each one's information function, so a form with a fixed difficulty range stops
+measuring the tails at all: at a = 2.5 the standard error at θ = 2.5 is 1.78,
+against 0.69 for the same form at a = 1. Widen b to [−2.6, 2.6] and those same
+a = 2.5 items reach ρ = 0.95.
+
+This is a real constraint on form assembly, not a quirk of the arithmetic.
+Chasing discrimination without widening difficulty coverage buys precision for
+the middle of a cohort by abandoning its ends. Held by *discrimination only
+helps where the form covers the population* in `tests/engine.test.ts`.
 
 ## Domain and skill mastery
 
