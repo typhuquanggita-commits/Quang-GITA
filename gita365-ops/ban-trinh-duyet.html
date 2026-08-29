@@ -1,0 +1,626 @@
+<title>Vận Hành Cộng Đồng GITA365</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap">
+<style>
+:root{
+  --paper:#F1F3EF; --surface:#FFFFFF; --surface-2:#E9EDE7;
+  --ink:#131A17; --ink-2:#3B4740; --muted:#66756D;
+  --line:#D6DDD4; --line-soft:#E4E9E1;
+  --jade:#1B5E4F; --jade-soft:#DDEAE4;
+  --lacquer:#A8402A; --lacquer-soft:#F4E2DC;
+  --amber:#8A6110; --amber-soft:#F3E9D4;
+  --shadow:0 1px 2px rgba(19,26,23,.05), 0 8px 24px -18px rgba(19,26,23,.35);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#0E1311; --surface:#151C19; --surface-2:#1B231F;
+    --ink:#E7ECE7; --ink-2:#C0CBC4; --muted:#8B9A92;
+    --line:#26302B; --line-soft:#1F2823;
+    --jade:#77C4AB; --jade-soft:#16302A;
+    --lacquer:#E28568; --lacquer-soft:#33201A;
+    --amber:#D6A748; --amber-soft:#2E2716;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 30px -20px rgba(0,0,0,.9);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0E1311; --surface:#151C19; --surface-2:#1B231F;
+  --ink:#E7ECE7; --ink-2:#C0CBC4; --muted:#8B9A92;
+  --line:#26302B; --line-soft:#1F2823;
+  --jade:#77C4AB; --jade-soft:#16302A;
+  --lacquer:#E28568; --lacquer-soft:#33201A;
+  --amber:#D6A748; --amber-soft:#2E2716;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 30px -20px rgba(0,0,0,.9);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:"Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:16px; line-height:1.62; font-weight:400;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4{font-family:Lora,Georgia,"Times New Roman",serif; text-wrap:balance; margin:0; line-height:1.22}
+p{margin:0}
+a{color:var(--jade)}
+:focus-visible{outline:2px solid var(--jade); outline-offset:3px; border-radius:3px}
+
+/* ---------- shell ---------- */
+.shell{display:grid; grid-template-columns:minmax(0,1fr); max-width:1280px; margin:0 auto; padding:0 20px}
+@media (min-width:1000px){
+  .shell{grid-template-columns:232px minmax(0,1fr); gap:56px; padding:0 32px}
+}
+nav.rail{display:none}
+@media (min-width:1000px){
+  nav.rail{
+    display:block; position:sticky; top:0; align-self:start;
+    height:100vh; overflow-y:auto; padding:40px 0 40px;
+    border-right:1px solid var(--line-soft);
+  }
+}
+.rail .brand{font-family:Lora,serif; font-weight:700; font-size:17px; letter-spacing:-.01em; margin-bottom:4px}
+.rail .brand span{color:var(--jade)}
+.rail .sub{font-size:11.5px; color:var(--muted); letter-spacing:.06em; text-transform:uppercase; margin-bottom:26px}
+.rail ol{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:2px; counter-reset:r}
+.rail a{
+  display:flex; gap:10px; text-decoration:none; color:var(--ink-2); font-size:13.5px;
+  padding:6px 10px 6px 8px; border-radius:6px; border-left:2px solid transparent; line-height:1.35;
+}
+.rail a .n{color:var(--muted); font-variant-numeric:tabular-nums; font-size:11.5px; padding-top:2px; min-width:16px}
+.rail a:hover{background:var(--surface-2); color:var(--ink)}
+.rail a.on{color:var(--jade); border-left-color:var(--jade); background:var(--jade-soft); font-weight:500}
+.rail a.on .n{color:var(--jade)}
+
+main{padding:0 0 96px; min-width:0}
+
+/* ---------- masthead ---------- */
+.mast{padding:56px 0 34px; border-bottom:1px solid var(--line)}
+.status{
+  display:inline-flex; align-items:center; gap:9px; font-size:12px; font-weight:600;
+  letter-spacing:.08em; text-transform:uppercase; color:var(--lacquer);
+  background:var(--lacquer-soft); border:1px solid color-mix(in srgb, var(--lacquer) 25%, transparent);
+  padding:6px 13px; border-radius:100px;
+}
+.status .dot{width:7px; height:7px; border-radius:50%; background:var(--lacquer)}
+.mast h1{font-size:clamp(34px,5.2vw,54px); font-weight:600; letter-spacing:-.022em; margin:20px 0 0}
+.mast h1 em{font-style:italic; color:var(--jade)}
+.mast .deck{margin-top:18px; font-size:18px; color:var(--ink-2); max-width:62ch; font-weight:300}
+.meta{display:flex; flex-wrap:wrap; gap:8px 26px; margin-top:26px; font-size:13px; color:var(--muted)}
+.meta b{color:var(--ink-2); font-weight:600}
+
+/* ---------- sections ---------- */
+section{padding:52px 0; border-bottom:1px solid var(--line-soft); scroll-margin-top:24px}
+.eyebrow{
+  font-size:11.5px; font-weight:600; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--jade); margin-bottom:12px; display:flex; align-items:center; gap:10px;
+}
+.eyebrow::before{content:""; width:22px; height:1px; background:var(--jade); opacity:.55}
+h2{font-size:clamp(24px,3.2vw,32px); font-weight:600; letter-spacing:-.015em}
+h3{font-size:18px; font-weight:600; margin-top:34px}
+.lede{margin-top:14px; font-size:17px; color:var(--ink-2); max-width:66ch}
+.body{margin-top:14px; max-width:68ch; color:var(--ink-2)}
+.body + .body{margin-top:12px}
+
+/* ---------- primitives ---------- */
+.grid{display:grid; gap:14px; margin-top:26px}
+@media (min-width:640px){.g2{grid-template-columns:repeat(2,1fr)} .g3{grid-template-columns:repeat(3,1fr)} .g4{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:980px){.g4{grid-template-columns:repeat(4,1fr)}}
+.card{background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:20px; box-shadow:var(--shadow)}
+.card h4{font-size:16px; font-weight:600; margin-bottom:8px}
+.card p{font-size:14px; color:var(--ink-2); line-height:1.58}
+.tag{display:inline-block; font-size:11px; font-weight:600; letter-spacing:.06em; text-transform:uppercase; padding:3px 9px; border-radius:5px}
+.t-jade{background:var(--jade-soft); color:var(--jade)}
+.t-amber{background:var(--amber-soft); color:var(--amber)}
+.t-lacquer{background:var(--lacquer-soft); color:var(--lacquer)}
+
+.scroller{overflow-x:auto; margin-top:26px; border:1px solid var(--line); border-radius:10px; background:var(--surface)}
+table{border-collapse:collapse; width:100%; min-width:640px; font-size:14px}
+th,td{text-align:left; padding:11px 14px; border-bottom:1px solid var(--line-soft); vertical-align:top}
+thead th{
+  font-size:11.5px; font-weight:600; letter-spacing:.08em; text-transform:uppercase;
+  color:var(--muted); background:var(--surface-2); border-bottom:1px solid var(--line); white-space:nowrap;
+}
+tbody tr:last-child td{border-bottom:none}
+td.num,th.num{font-variant-numeric:tabular-nums; white-space:nowrap}
+td strong{color:var(--ink)}
+caption{caption-side:bottom; text-align:left; padding:11px 14px; font-size:12.5px; color:var(--muted); border-top:1px solid var(--line-soft)}
+
+/* ---------- ladder ---------- */
+.ladder{margin-top:26px; display:flex; flex-direction:column-reverse; gap:6px}
+.rung{
+  display:grid; grid-template-columns:64px 1fr; gap:16px; align-items:start;
+  background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:15px 18px;
+}
+.rung .lvl{font-family:Lora,serif; font-size:13px; font-weight:700; color:var(--jade); letter-spacing:.04em; padding-top:2px}
+.rung h4{font-size:15.5px; font-weight:600}
+.rung p{font-size:13.5px; color:var(--muted); margin-top:4px}
+.rung .where{margin-top:8px; display:flex; gap:6px; flex-wrap:wrap}
+.rung.locked{border-style:dashed; background:transparent}
+
+/* ---------- timeline ---------- */
+.tl{margin-top:26px; border-left:2px solid var(--line); padding-left:0; list-style:none; display:flex; flex-direction:column}
+.tl li{position:relative; padding:0 0 22px 26px}
+.tl li::before{
+  content:""; position:absolute; left:-6px; top:6px; width:10px; height:10px; border-radius:50%;
+  background:var(--paper); border:2px solid var(--jade);
+}
+.tl li.hot::before{background:var(--lacquer); border-color:var(--lacquer)}
+.tl .when{font-size:12px; font-weight:700; letter-spacing:.06em; color:var(--jade); font-variant-numeric:tabular-nums}
+.tl li.hot .when{color:var(--lacquer)}
+.tl .what{font-size:15px; font-weight:600; margin-top:2px}
+.tl .how{font-size:13.5px; color:var(--muted); margin-top:3px; max-width:60ch}
+
+/* ---------- layers ---------- */
+.layers{margin-top:26px; display:flex; flex-direction:column; gap:0; border:1px solid var(--line); border-radius:10px; overflow:hidden; background:var(--surface)}
+.layer{display:grid; grid-template-columns:44px 1fr; gap:14px; padding:14px 16px; border-bottom:1px solid var(--line-soft)}
+.layer:last-child{border-bottom:none}
+.layer .n{
+  font-family:Lora,serif; font-weight:700; font-size:15px; color:var(--jade);
+  background:var(--jade-soft); border-radius:7px; display:grid; place-items:center; height:30px;
+}
+.layer h4{font-size:15px; font-weight:600}
+.layer p{font-size:13.5px; color:var(--muted); margin-top:3px}
+
+/* ---------- pull ---------- */
+.pull{
+  margin-top:28px; border-left:3px solid var(--lacquer); background:var(--lacquer-soft);
+  padding:18px 22px; border-radius:0 10px 10px 0;
+}
+.pull .k{font-size:11.5px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--lacquer)}
+.pull p{margin-top:8px; font-size:15px; color:var(--ink); max-width:64ch}
+.note{
+  margin-top:26px; border:1px solid var(--line); border-left:3px solid var(--jade);
+  background:var(--surface); padding:18px 22px; border-radius:0 10px 10px 0;
+}
+.note .k{font-size:11.5px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--jade)}
+.note p{margin-top:8px; font-size:15px; color:var(--ink-2); max-width:64ch}
+
+/* ---------- quote / script ---------- */
+.script{
+  margin-top:16px; background:var(--surface-2); border:1px solid var(--line-soft);
+  border-radius:10px; padding:16px 18px; font-size:14.5px; color:var(--ink-2); line-height:1.6;
+}
+.script .who{font-size:11.5px; font-weight:700; letter-spacing:.09em; text-transform:uppercase; color:var(--muted); margin-bottom:7px}
+.script em{color:var(--muted)}
+
+/* ---------- stats ---------- */
+.stats{display:grid; gap:12px; margin-top:26px}
+@media (min-width:620px){.stats{grid-template-columns:repeat(4,1fr)}}
+.stat{background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:16px 18px}
+.stat .v{font-family:Lora,serif; font-size:26px; font-weight:700; letter-spacing:-.02em; font-variant-numeric:tabular-nums}
+.stat .l{font-size:12.5px; color:var(--muted); margin-top:3px; line-height:1.4}
+.stat .w{font-size:11.5px; color:var(--jade); font-weight:600; margin-top:8px; letter-spacing:.04em}
+
+ul.plain{margin:14px 0 0; padding-left:20px; color:var(--ink-2); font-size:15px; max-width:66ch}
+ul.plain li{margin-bottom:7px}
+ul.check{list-style:none; margin:20px 0 0; padding:0; display:flex; flex-direction:column; gap:9px; max-width:70ch}
+ul.check li{display:grid; grid-template-columns:22px 1fr; gap:10px; font-size:15px; color:var(--ink-2)}
+ul.check li::before{content:"☐"; color:var(--jade); font-size:17px; line-height:1.4}
+
+footer{padding:44px 0 0; color:var(--muted); font-size:13.5px; max-width:68ch}
+footer strong{color:var(--ink-2)}
+@media (prefers-reduced-motion:no-preference){
+  .rail a{transition:background .15s ease, color .15s ease}
+}
+</style>
+
+<div class="shell">
+<nav class="rail" aria-label="Mục lục">
+  <div class="brand">GITA<span>365</span></div>
+  <div class="sub">Bản trình duyệt</div>
+  <ol>
+    <li><a href="#quyet-dinh" class="on"><span class="n">01</span><span>Việc cần anh chốt</span></a></li>
+    <li><a href="#kien-truc"><span class="n">02</span><span>Hai nhóm &amp; tầng giá trị</span></a></li>
+    <li><a href="#muc-tieu"><span class="n">03</span><span>Mục tiêu 5 năm</span></a></li>
+    <li><a href="#noi-dung"><span class="n">04</span><span>Nhịp nội dung</span></a></li>
+    <li><a href="#cham-soc-bai"><span class="n">05</span><span>Chăm sóc bài đăng</span></a></li>
+    <li><a href="#cham-soc-nguoi"><span class="n">06</span><span>Chăm sóc thành viên</span></a></li>
+    <li><a href="#thu-hut"><span class="n">07</span><span>Thu hút &amp; giữ chân</span></a></li>
+    <li><a href="#bao-ve"><span class="n">08</span><span>Bảo vệ khách hàng</span></a></li>
+    <li><a href="#do-luong"><span class="n">09</span><span>Đo lường</span></a></li>
+    <li><a href="#lo-trinh"><span class="n">10</span><span>Lộ trình 90 ngày</span></a></li>
+    <li><a href="#gioi-han"><span class="n">11</span><span>Giới hạn tự động hóa</span></a></li>
+  </ol>
+</nav>
+
+<main>
+  <header class="mast">
+    <span class="status"><span class="dot"></span>Chờ anh xác nhận để triển khai</span>
+    <h1>Hệ vận hành cộng đồng <em>GITA365</em></h1>
+    <p class="deck">Một bộ máy vận hành cho hai nhóm Facebook: nghi thức tuần, quy trình chăm sóc từng bài đăng, phễu đưa thành viên vào web app và các khóa đào tạo, hệ phòng thủ chống nick ảo — tất cả xoay quanh một nguyên tắc: <strong>cho trước, nhận sau</strong>.</p>
+    <div class="meta">
+      <span><b>Phạm vi</b> · 2 nhóm, 5 năm</span>
+      <span><b>Nội dung sẵn sàng</b> · 288 bài / 12 tuần</span>
+      <span><b>Tài liệu vận hành</b> · 13 chương</span>
+      <span><b>Trạng thái</b> · bản trình duyệt</span>
+    </div>
+  </header>
+
+  <section id="quyet-dinh">
+    <div class="eyebrow">Ngày 0</div>
+    <h2>Tám việc cần anh chốt trước khi bấm nút</h2>
+    <p class="lede">Toàn bộ hệ thống đã dựng xong và đang chờ. Tám quyết định dưới đây quyết định cường độ và ngân sách — không quyết định phương pháp.</p>
+    <ul class="check">
+      <li><strong>Kịch bản mốc thời gian:</strong> A – Vượt tốc (1 triệu ở năm thứ 3) hay B – Bền vững (1 triệu ở năm thứ 5). <em>Tôi khuyến nghị B.</em></li>
+      <li><strong>Đơn vị đo mục tiêu:</strong> tương tác thật theo tháng (MAM) hay theo tuần (WAM). <em>Tôi khuyến nghị MAM.</em></li>
+      <li><strong>Duyệt luật nhóm và 4 câu hỏi cổng vào</strong> cho từng nhóm.</li>
+      <li><strong>Duyệt 7 nghi thức tuần</strong> của mỗi nhóm và khung giờ đăng.</li>
+      <li><strong>Chốt đội ngũ</strong> và người trực “30 phút vàng” cho từng khung giờ.</li>
+      <li><strong>Duyệt Cam kết bảo vệ thành viên</strong> để đăng ghim công khai.</li>
+      <li><strong>Cung cấp</strong> liên kết web app, tên khóa tầng 1–2–3, và bộ tài nguyên cửa ngõ.</li>
+      <li><strong>Xác nhận mức độ tự động hóa</strong> theo mô hình “máy soạn – người bấm”.</li>
+    </ul>
+  </section>
+
+  <section id="kien-truc">
+    <div class="eyebrow">Kiến trúc</div>
+    <h2>Hai nhóm, hai vai trò, một hệ sinh thái</h2>
+    <p class="lede">Nhóm mở nuôi nhóm lõi, nhóm lõi nuôi khóa học. Người ở tầng nào chỉ nhận lời mời của tầng kế tiếp — đó là điều giữ cho cộng đồng không bao giờ có mùi bán hàng.</p>
+
+    <div class="grid g2">
+      <div class="card">
+        <span class="tag t-jade">G1 · Nhóm lõi</span>
+        <h4 style="margin-top:10px">Cộng đồng GITA365</h4>
+        <p>Lò luyện. Nơi thành viên thực hành, chuyển hóa và thăng tiến. Mở đầy đủ tầng 0 → 4. Nhịp 14 bài/tuần và 1 buổi trực tuyến. Chỉ số Bắc Đẩu: số <strong>người thực hành</strong> hoạt động mỗi tuần.</p>
+      </div>
+      <div class="card">
+        <span class="tag t-amber">G2 · Nhóm mở</span>
+        <h4 style="margin-top:10px">Gia Đình Thịnh Vượng</h4>
+        <p>Cửa ngõ. Nơi các gia đình gặp giá trị đầu tiên. Chỉ mở tầng 1–2, không bao giờ nhắc tới khóa offline. Nhịp 10 bài/tuần. Chỉ số Bắc Đẩu: số <strong>gia đình</strong> hoạt động mỗi tuần.</p>
+      </div>
+    </div>
+
+    <h3>Thang giá trị và nơi được phép mời</h3>
+    <div class="ladder">
+      <div class="rung locked">
+        <div class="lvl">TẦNG 4</div>
+        <div>
+          <h4>Đồng hành sâu &amp; đại sứ</h4>
+          <p>Cố vấn riêng, hệ sinh thái đối tác, mạng lưới đại sứ vùng.</p>
+          <div class="where"><span class="tag t-jade">Chỉ G1 · tin nhắn riêng</span></div>
+        </div>
+      </div>
+      <div class="rung locked">
+        <div class="lvl">TẦNG 3</div>
+        <div>
+          <h4>Huấn luyện offline GITA</h4>
+          <p>Khóa trực tiếp. Chỉ mời người đã hoàn tất tầng 2 và có kết quả kiểm chứng.</p>
+          <div class="where"><span class="tag t-jade">Chỉ G1</span><span class="tag t-lacquer">Cấm ở G2</span></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl">TẦNG 2</div>
+        <div>
+          <h4>Khóa đào tạo trực tuyến</h4>
+          <p>Học theo kỳ, có cố vấn, mở sau buổi định hướng nhóm nhỏ.</p>
+          <div class="where"><span class="tag t-jade">G1 mời trực tiếp</span><span class="tag t-amber">G2 chỉ kể trải nghiệm</span></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl">TẦNG 1</div>
+        <div>
+          <h4>Web app GITA365</h4>
+          <p>Khóa nền tảng tự học, có tài khoản, có tiến độ. Đây là cửa chính của cả phễu.</p>
+          <div class="where"><span class="tag t-jade">Mở ở cả hai nhóm</span></div>
+        </div>
+      </div>
+      <div class="rung">
+        <div class="lvl">TẦNG 0</div>
+        <div>
+          <h4>Cộng đồng mở</h4>
+          <p>Hai nhóm Facebook, nghi thức tuần, nội dung miễn phí có giá trị dùng ngay.</p>
+          <div class="where"><span class="tag t-jade">Nền của mọi thứ</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="note">
+      <div class="k">Cơ chế tốt nghiệp</div>
+      <p>Gia đình ở G2 khi đủ độ chín nhận lời mời cá nhân sang G1 — kèm lý do riêng, không phải lời chào hàng. G1 là nơi duy nhất diễn ra lời mời tầng 3–4. Nhờ vậy G2 giữ được không khí cho đi, mà GITA365 vẫn có đường dẫn doanh thu rõ ràng.</p>
+    </div>
+  </section>
+
+  <section id="muc-tieu">
+    <div class="eyebrow">Mục tiêu</div>
+    <h2>Từ 1.000 đến 1.000.000 tương tác thật</h2>
+    <p class="lede">Trước khi lập lộ trình phải thống nhất cách đếm. Cùng một con số, đo theo tuần hay theo tháng chênh nhau tới ba lần khối lượng công việc.</p>
+
+    <div class="stats">
+      <div class="stat"><div class="v">1.000</div><div class="l">tương tác thật / tháng</div><div class="w">6 THÁNG · GIEO</div></div>
+      <div class="stat"><div class="v">10.000</div><div class="l">tương tác thật / tháng</div><div class="w">12 THÁNG · RỄ</div></div>
+      <div class="stat"><div class="v">100.000</div><div class="l">tương tác thật / tháng</div><div class="w">24 THÁNG · THÂN</div></div>
+      <div class="stat"><div class="v">1.000.000</div><div class="l">tương tác thật / tháng</div><div class="w">36–60 THÁNG · TÁN</div></div>
+    </div>
+
+    <h3>Tương tác thật được tính như thế nào</h3>
+    <p class="body">Một thành viên được tính khi tài khoản đã qua kiểm tra người thật và trong kỳ có <strong>ít nhất một</strong>: bình luận từ 10 từ trở lên, một bài đăng được duyệt, một bằng chứng nghi thức đã nộp, hoặc tham gia buổi trực tuyến từ 10 phút có phát biểu. <strong>Không tính</strong> thả cảm xúc, bình luận dưới 10 từ, hay lượt xem.</p>
+
+    <div class="scroller">
+      <table>
+        <caption>Lộ trình cho mỗi nhóm. Cửa kiểm chất lượng quan trọng hơn con số tăng trưởng — không đạt thì kéo dài giai đoạn, không tăng tốc thu hút.</caption>
+        <thead>
+          <tr><th>Giai đoạn</th><th class="num">Tương tác thật</th><th class="num">Tổng thành viên</th><th class="num">Người mới / tháng</th><th class="num">Hệ số K</th><th>Việc trọng tâm</th><th class="num">Cửa kiểm</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>1 · Gieo</strong><br><span style="color:var(--muted);font-size:13px">0–6 tháng</span></td><td class="num">1.000</td><td class="num">3–4 nghìn</td><td class="num">~600</td><td class="num">0,2</td><td>Chuẩn hóa nghi thức, đội ngũ, cổng lọc</td><td class="num">≥25%</td></tr>
+          <tr><td><strong>2 · Rễ</strong><br><span style="color:var(--muted);font-size:13px">7–12 tháng</span></td><td class="num">10.000</td><td class="num">30–40 nghìn</td><td class="num">~4.500</td><td class="num">0,4</td><td>Bộ máy nội dung, cohort tầng 1–2</td><td class="num">≥20%</td></tr>
+          <tr><td><strong>3 · Thân</strong><br><span style="color:var(--muted);font-size:13px">13–24 tháng</span></td><td class="num">100.000</td><td class="num">300–400 nghìn</td><td class="num">~25.000</td><td class="num">0,7</td><td>Kiến trúc cụm nhóm, đào tạo đại sứ hàng loạt</td><td class="num">≥15%</td></tr>
+          <tr><td><strong>4 · Tán</strong><br><span style="color:var(--muted);font-size:13px">25–36 tháng</span></td><td class="num">1.000.000</td><td class="num">3–4 triệu</td><td class="num">~220.000</td><td class="num">≥1,0</td><td>Truyền thông đa nền tảng, sự kiện vùng</td><td class="num">≥10%</td></tr>
+          <tr><td><strong>5 · Rừng</strong><br><span style="color:var(--muted);font-size:13px">37–60 tháng</span></td><td class="num">duy trì</td><td class="num">4–6 triệu</td><td class="num">bù hao</td><td class="num">≥0,8</td><td>Thể chế hóa, chuyển giao, giảm phụ thuộc Facebook</td><td class="num">≥10%</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="pull">
+      <div class="k">Nói thẳng để anh quyết đúng</div>
+      <p>Một triệu người tương tác thật trong <em>một</em> nhóm nghĩa là tổng quy mô 3–4 triệu thành viên — thuộc nhóm 3–5 cộng đồng lớn nhất Việt Nam. Đạt được, nhưng <strong>không thể bằng một nhóm đơn lẻ vận hành thủ công</strong>. Từ năm thứ hai bắt buộc chuyển sang kiến trúc cụm nhóm và kim tự tháp đại sứ tự quản. Giữ nguyên mô hình một nhóm, trần thực tế là 100–200 nghìn.</p>
+    </div>
+
+    <h3>Kim tự tháp tự quản — điều kiện bắt buộc để tới một triệu</h3>
+    <p class="body">Ở quy mô một triệu tương tác thật, không bộ máy hưởng lương nào kham nổi. Hệ thống phải tự quản: mỗi trưởng tổ ấm lo 6 gia đình, mỗi đại sứ khu vực lo 30 trưởng tổ, mỗi nhóm vệ tinh do một ban quản trị tình nguyện điều hành. Người nhận giá trị trở thành người trao giá trị — đó là lúc <strong>Cho là nhận</strong> thôi là khẩu hiệu và trở thành mô hình vận hành.</p>
+  </section>
+
+  <section id="noi-dung">
+    <div class="eyebrow">Nội dung</div>
+    <h2>Cộng đồng sống bằng nhịp, không bằng bài lẻ</h2>
+    <p class="lede">Thành viên không nhớ nội dung, họ nhớ thói quen. Mỗi thứ trong tuần được gán một nghi thức cố định, lặp mãi, chỉ thay chủ đề. Sau ba tuần, thành viên tự biết thứ Tư là ngày Cho là nhận và tự quay lại.</p>
+
+    <div class="scroller">
+      <table>
+        <caption>288 bài của 12 tuần đầu đã được soạn sẵn tiêu đề, định dạng, lời mời và mức chăm sóc — sẵn sàng nạp vào lịch đăng.</caption>
+        <thead><tr><th>Thứ</th><th>G1 · Cộng đồng GITA365</th><th>G2 · Gia Đình Thịnh Vượng</th><th class="num">Giờ chính</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Hai</strong></td><td>Khởi Nguyên — cam kết mục tiêu tuần</td><td>Nhiệm Vụ Gia Đình Tuần</td><td class="num">05:45 / 19:45</td></tr>
+          <tr><td><strong>Ba</strong></td><td>Giải Mã — bài sâu, cho đi hiểu biết</td><td>Bàn Ăn Yêu Thương</td><td class="num">19:45 / 17:30</td></tr>
+          <tr><td><strong>Tư</strong></td><td>Cho Là Nhận — mỗi người giúp một người</td><td>Việc Tử Tế Của Gia Đình</td><td class="num">05:45 / 19:45</td></tr>
+          <tr><td><strong>Năm</strong></td><td>Hỏi &amp; Đáp Cùng Cố Vấn — trực tuyến</td><td>Cha Mẹ Tỉnh Thức</td><td class="num">20:00</td></tr>
+          <tr><td><strong>Sáu</strong></td><td>Bằng Chứng — câu chuyện chuyển hóa</td><td>Khoe Nhà Mình</td><td class="num">19:45</td></tr>
+          <tr><td><strong>Bảy</strong></td><td>Thực Chiến — bài tập có mẫu điền</td><td>Gia Đình Chơi Cùng Nhau</td><td class="num">08:00</td></tr>
+          <tr><td><strong>Chủ nhật</strong></td><td>Tổng Kết &amp; Vinh Danh — một lời mời duy nhất</td><td>Bảng Vinh Danh Gia Đình</td><td class="num">21:00</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Khuôn một bài đăng: sáu lớp</h3>
+    <p class="body">Móc một dòng khiến người ta dừng lại → bối cảnh thật có tên có nghề → ba tới năm ý dùng được ngay → một hành động làm trong mười phút → câu hỏi mở trả lời được trong một dòng → ký hiệu nghi thức. Liên kết không bao giờ nằm trong bài — nó nằm ở bình luận đầu tiên và được ghim.</p>
+  </section>
+
+  <section id="cham-soc-bai">
+    <div class="eyebrow">GITA CARE</div>
+    <h2>Chín mốc chăm sóc một bài đăng</h2>
+    <p class="lede">Một bài đăng không được chăm sóc chỉ là tờ rơi. Toàn bộ giá trị nằm ở 72 giờ sau khi bấm nút Đăng.</p>
+    <ul class="tl">
+      <li><div class="when">T−24 GIỜ</div><div class="what">Chuẩn bị</div><div class="how">Duyệt bài theo khuôn sáu lớp, soạn ba câu hỏi mồi khác nhau, chọn 5–8 người sẽ gắn thẻ kèm lý do riêng, viết sẵn bình luận sẽ ghim.</div></li>
+      <li><div class="when">T0</div><div class="what">Đăng và ghim trong 60 giây</div><div class="how">Đăng đúng phút đã hẹn. Bình luận chứa liên kết được ghim ngay. Không sửa bài trong 60 phút.</div></li>
+      <li><div class="when">T+5 PHÚT</div><div class="what">Mồi</div><div class="how">Quản trị viên bình luận câu hỏi mồi thứ nhất, giọng cá nhân, không dạy đời.</div></li>
+      <li><div class="when">T+15 PHÚT</div><div class="what">Ba hạt giống</div><div class="how">Ba thành viên thật trả lời từ ba góc: người mới bắt đầu, người đã làm được có số liệu, người phản biện lành mạnh. Không tài khoản ảo, không “hay quá ạ”.</div></li>
+      <li class="hot"><div class="when">T+30 → T+60 PHÚT</div><div class="what">Ba mươi phút vàng</div><div class="how">Luật sắt: 100% bình luận được trả lời trong 30 phút, mỗi trả lời kết bằng một câu hỏi mở. Công thức Ghi nhận – Hỏi sâu – Mở đường.</div></li>
+      <li><div class="when">T+2 GIỜ</div><div class="what">Nuôi</div><div class="how">Đọc số liệu. Dưới 10 bình luận thì chẩn đoán và cứu bài, không bơm tương tác mù.</div></li>
+      <li><div class="when">T+6 GIỜ</div><div class="what">Ghim đỉnh</div><div class="how">Ghim bình luận giá trị nhất và trả lời thật kỹ — cả nhóm học được thế nào là bình luận đáng trân trọng.</div></li>
+      <li><div class="when">T+24 GIỜ</div><div class="what">Vòng hai</div><div class="how">Tổng hợp ba ý hay nhất, nhắn riêng 5–10 người tương tác chất lượng, cộng điểm, đánh dấu người cần mời vào tầng 1.</div></li>
+      <li><div class="when">T+48 → T+7 NGÀY</div><div class="what">Tái chế và tái sinh</div><div class="how">Bình luận hay nhất, sau khi xin phép, trở thành bài đăng mới. Bài xuất sắc quay lại ở định dạng khác sau một tuần.</div></li>
+    </ul>
+    <div class="note">
+      <div class="k">Ba điều tuyệt đối không</div>
+      <p>Không tài khoản ảo, không mua tương tác, không gắn thẻ hàng loạt vô cớ. Những việc đó giết một cộng đồng trong ba tháng và không bao giờ dựng lại được lòng tin.</p>
+    </div>
+  </section>
+
+  <section id="cham-soc-nguoi">
+    <div class="eyebrow">Kịch bản</div>
+    <h2>Chăm sóc thành viên: bảy ngày đầu quyết định tất cả</h2>
+    <p class="lede">Người không bình luận trong tuần đầu có xác suất hoạt động về sau thấp hơn nhiều lần. Vì vậy toàn bộ chuỗi chào mừng chỉ nhắm một đích duy nhất: <strong>một bình luận đầu tiên</strong>.</p>
+
+    <div class="scroller">
+      <table>
+        <thead><tr><th class="num">Ngày</th><th>Kênh</th><th>Nội dung</th><th>Đo bằng</th></tr></thead>
+        <tbody>
+          <tr><td class="num">D0</td><td>Tin nhắn khi duyệt</td><td>Chào bằng tên, nhắc lại đúng điều họ đã trả lời, tặng ngay một tài nguyên nhỏ — không đòi hỏi gì</td><td>Tỉ lệ mở</td></tr>
+          <tr><td class="num">D0</td><td>Bài trong nhóm</td><td>Gắn thẻ những người mới của tuần, mỗi người một dòng giới thiệu riêng</td><td>Số người trả lời</td></tr>
+          <tr><td class="num">D1</td><td>Bình luận riêng</td><td>Một câu hỏi rất dễ: “Anh chị đang ở tỉnh nào ạ?”</td><td>Bình luận đầu tiên</td></tr>
+          <tr><td class="num">D2</td><td>Tin nhắn</td><td>Gửi bài hay nhất của nhóm hợp với mối quan tâm họ đã chọn</td><td>Lượt bấm</td></tr>
+          <tr><td class="num">D3</td><td>Trong nhóm</td><td>Mời tham gia nghi thức gần nhất, gắn thẻ đích danh có lý do</td><td>Tham gia</td></tr>
+          <tr><td class="num">D5</td><td>Tin nhắn</td><td>Lời mời đầu tiên: nhận bộ công cụ tầng 1 trên web app</td><td>Tạo tài khoản</td></tr>
+          <tr><td class="num">D7</td><td>Tin nhắn</td><td>“Sau một tuần, nhóm giúp được gì cho anh chị chưa?”</td><td>Phân loại</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Ba kịch bản mẫu</h3>
+    <div class="script">
+      <div class="who">Chào người mới · ngày 0</div>
+      Chào anh/chị [Tên], em là [tên], phụ trách nhóm. Em đọc câu trả lời của anh/chị, thấy anh/chị đang quan tâm tới [đúng điều họ chọn]. Em gửi anh/chị [tài nguyên tải được ngay], <em>không cần làm gì cho em cả ạ</em>. Khi nào rảnh, anh/chị vào chào cả nhà một câu ở bài chào mừng nhé.
+    </div>
+    <div class="script">
+      <div class="who">Trả lời bình luận · công thức Ghi nhận – Hỏi sâu – Mở đường</div>
+      “Chỗ chị nói <em>[trích đúng chữ của họ]</em> là điều nhiều người ngại nói ra nhất. Em hỏi thêm chút: [câu hỏi sâu một nấc]? Nếu tiện, em gửi chị [tài nguyên cụ thể] để thử trong tuần này ạ.”
+    </div>
+    <div class="script">
+      <div class="who">Đánh thức · sau 30 ngày im lặng</div>
+      Anh/chị [Tên] dạo này ổn không ạ? Em thấy vắng anh/chị trong nhóm nên nhắn hỏi thăm thôi, <em>không có việc gì đâu ạ</em>. Nếu bận thì cứ để đó, khi nào quay lại cả nhà vẫn ở đây.
+    </div>
+
+    <h3>Giữ chân bằng sáu cơ chế</h3>
+    <div class="grid g3">
+      <div class="card"><h4>Tổ ấm 6</h4><p>Chia thành viên hoạt động thành tổ 5–7 người có trưởng tổ. Quan hệ cá nhân giữ chân mạnh hơn nội dung rất nhiều.</p></div>
+      <div class="card"><h4>Chuỗi 21 ngày</h4><p>Điểm danh liên tục theo nghi thức, đứt thì được một lần cứu chuỗi.</p></div>
+      <div class="card"><h4>Điểm GITA</h4><p>Chỉ thưởng cho hành vi cho đi: giúp người khác, kể chuyện thật, nộp bài, mời gia đình mới.</p></div>
+      <div class="card"><h4>Vinh danh tuần</h4><p>Chủ nhật gọi tên 3–5 người kèm lý do cụ thể. Được thấy là nhu cầu sâu nhất của thành viên.</p></div>
+      <div class="card"><h4>Vai trò có tên</h4><p>Trưởng tổ, người gác nghi thức, giám khảo thi đua. Người có vai trò gần như không rời nhóm.</p></div>
+      <div class="card"><h4>Nghi thức mốc</h4><p>Chúc mừng mốc 30, 90, 365 ngày gắn bó và mốc hoàn thành khóa học.</p></div>
+    </div>
+  </section>
+
+  <section id="thu-hut">
+    <div class="eyebrow">Tăng trưởng</div>
+    <h2>Không mua số lượng — mua tốc độ của chất lượng</h2>
+    <p class="lede">Người vào nhóm vì một câu chuyện thật sẽ ở lại. Người vào vì quà tặng biến mất sau ba ngày. Vì vậy ba kênh đầu bắt buộc chiếm ít nhất 60% lượng người mới ở mọi giai đoạn.</p>
+
+    <div class="scroller">
+      <table>
+        <thead><tr><th class="num">#</th><th>Kênh</th><th>Cách làm</th><th>Chất lượng</th><th>Tốc độ</th></tr></thead>
+        <tbody>
+          <tr><td class="num">1</td><td><strong>Giới thiệu từ thành viên</strong></td><td>“Mỗi gia đình mời một gia đình” — có nghi thức, có ghi nhận công khai, thưởng bằng danh dự</td><td>Rất cao</td><td>Trung bình</td></tr>
+          <tr><td class="num">2</td><td><strong>Câu chuyện lan tỏa</strong></td><td>Thành viên đăng chuyện của mình lên trang cá nhân, có bộ mẫu sẵn</td><td>Cao</td><td>Trung bình</td></tr>
+          <tr><td class="num">3</td><td><strong>Livestream công khai</strong></td><td>Live trên Trang GITA365, chốt bằng lời mời vào nhóm</td><td>Cao</td><td>Nhanh</td></tr>
+          <tr><td class="num">4</td><td>Video ngắn đa nền tảng</td><td>Cắt từ live và khóa học, dẫn về nhóm</td><td>Trung bình</td><td>Rất nhanh</td></tr>
+          <tr><td class="num">5</td><td>Đại sứ và trưởng tổ</td><td>Mỗi đại sứ mời 5 người/tháng, được đào tạo và cấp chứng nhận</td><td>Rất cao</td><td>Trung bình</td></tr>
+          <tr><td class="num">6</td><td>Sự kiện offline nhỏ</td><td>Ngày hội gia đình theo khu vực do đại sứ tổ chức</td><td>Rất cao</td><td>Chậm</td></tr>
+          <tr><td class="num">7</td><td>Đối tác</td><td>Trường học, hội phụ nữ, doanh nghiệp, nhóm cha mẹ</td><td>Cao</td><td>Trung bình</td></tr>
+          <tr><td class="num">8</td><td>Quảng cáo có kiểm soát</td><td>Chỉ đẩy nội dung đã chứng minh hiệu quả tự nhiên. Vượt 30% là cộng đồng loãng</td><td>Trung bình</td><td>Rất nhanh</td></tr>
+          <tr><td class="num">9</td><td>Nội dung tìm kiếm</td><td>Bài dài trả lời đúng câu hỏi của cha mẹ</td><td>Cao</td><td>Rất chậm, rất bền</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note">
+      <div class="k">Cổng lọc là một phần của tăng trưởng</div>
+      <p>Tỉ lệ từ chối 15–30% là lành mạnh. Dưới 5% nghĩa là cổng đang mở toang và nhóm sắp mất chất. Thà chậm một quý còn hơn có một triệu cái tên im lặng — một cộng đồng chết vẫn tốn chi phí và vẫn bị kẻ xấu khai thác.</p>
+    </div>
+  </section>
+
+  <section id="bao-ve">
+    <div class="eyebrow">An toàn</div>
+    <h2>Bảy lớp bảo vệ thành viên</h2>
+    <p class="lede">Cộng đồng càng lớn càng hấp dẫn kẻ khai thác. Khi nhóm vượt mười nghìn người, sẽ có người vào không phải để học mà để lấy danh sách khách hàng. Hệ phòng thủ phải dựng <strong>trước</strong> khi nhóm nổi tiếng.</p>
+
+    <div class="grid g4">
+      <div class="card"><span class="tag t-lacquer">Rất nguy hiểm</span><h4 style="margin-top:10px">Nick đi săn</h4><p>Tài khoản trông bình thường, vào là xem danh sách thành viên rồi nhắn tin hàng loạt để bán hàng.</p></div>
+      <div class="card"><span class="tag t-lacquer">Rất nguy hiểm</span><h4 style="margin-top:10px">Phần mềm quét nhóm</h4><p>Công cụ xuất danh sách thành viên rồi tự động kết bạn, nhắn tin. Không nhìn thấy trực tiếp.</p></div>
+      <div class="card"><span class="tag t-amber">Nguy hiểm</span><h4 style="margin-top:10px">Đối thủ trá hình</h4><p>Hoạt động tốt một thời gian rồi dần chèn lời mời của bên khác.</p></div>
+      <div class="card"><span class="tag t-jade">Trung bình</span><h4 style="margin-top:10px">Nick ảo, nick rác</h4><p>Tài khoản mới lập, ít bạn, ảnh lấy trên mạng, không lịch sử hoạt động.</p></div>
+    </div>
+
+    <div class="layers">
+      <div class="layer"><div class="n">1</div><div><h4>Cấu hình nhóm</h4><p>Nhóm riêng tư, tắt tính năng thành viên tự thêm người, chỉ quản trị viên được duyệt — đây là lỗ hổng số một.</p></div></div>
+      <div class="layer"><div class="n">2</div><div><h4>Cổng vào có chấm điểm</h4><p>Bốn câu hỏi bắt buộc và bảng mười dấu hiệu rủi ro. Từ bốn điểm trở lên là không duyệt.</p></div></div>
+      <div class="layer"><div class="n">3</div><div><h4>Vùng đệm bảy ngày</h4><p>Người mới chỉ đọc và bình luận trong ba ngày đầu. Kẻ đi săn cần tốc độ — vùng đệm làm chi phí tấn công tăng nhiều lần.</p></div></div>
+      <div class="layer"><div class="n">4</div><div><h4>Tài khoản mồi và tuần tra</h4><p>Ba tới năm tài khoản mồi do đội ngũ kiểm soát. Bất kỳ tin chào hàng nào gửi tới chúng là bằng chứng có người đang quét danh sách — truy ngược theo thời điểm tham gia.</p></div></div>
+      <div class="layer"><div class="n">5</div><div><h4>Kênh tố giác một chạm</h4><p>Bài ghim vĩnh viễn để báo bị nhắn tin làm phiền. Cam kết xử lý trong 4 giờ, giữ kín danh tính người báo.</p></div></div>
+      <div class="layer"><div class="n">6</div><div><h4>Chế tài không khoan nhượng</h4><p>Nhắn tin chào bán, dùng phần mềm quét, phát tán ảnh gia đình khác: chặn vĩnh viễn, không cảnh cáo, ghi sổ đen dùng chung toàn cụm nhóm.</p></div></div>
+      <div class="layer"><div class="n">7</div><div><h4>Chủ quyền dữ liệu</h4><p>Chuyển thành viên hoạt động sang web app, Zalo và danh sách thư. Mất nhóm Facebook cũng không mất cộng đồng.</p></div></div>
+    </div>
+
+    <div class="pull">
+      <div class="k">Một sự thật cần nói rõ</div>
+      <p>Không có cách nào chặn tuyệt đối việc một thành viên hợp lệ ghi lại tên những người khác — Facebook cho phép mọi thành viên xem danh sách thành viên và không có công cụ nào của nền tảng chặn được điều đó. Mọi lời quảng cáo “chặn 100% phần mềm quét nhóm” đều là nói quá. Chiến lược đúng là làm cho danh sách <em>vô giá trị với kẻ trộm</em> và chuyển tài sản thật sang nơi mình sở hữu.</p>
+    </div>
+
+    <h3>Cam kết bảo vệ thành viên — đăng ghim công khai</h3>
+    <ul class="plain">
+      <li>Chúng tôi không bán, không cho, không trao đổi thông tin của anh chị cho bất kỳ ai.</li>
+      <li>Ban quản trị không bao giờ nhắn tin đòi chuyển tiền, xin mã OTP hay mời đầu tư.</li>
+      <li>Câu chuyện anh chị chia sẻ chỉ ở lại trong nhóm; muốn dùng làm bài viết, chúng tôi hỏi trước và để anh chị duyệt.</li>
+      <li>Ảnh gia đình và trẻ em không dùng cho quảng cáo nếu không có đồng ý riêng bằng văn bản.</li>
+      <li>Anh chị có quyền yêu cầu xóa toàn bộ thông tin của mình bất cứ lúc nào, chúng tôi thực hiện trong bảy ngày.</li>
+      <li>Bị làm phiền bởi người bán hàng? Báo cho chúng tôi — xử lý trong bốn giờ, danh tính người báo được giữ kín.</li>
+      <li>Chúng tôi không dùng tài khoản ảo, không mua tương tác, không thuê người bình luận.</li>
+    </ul>
+  </section>
+
+  <section id="do-luong">
+    <div class="eyebrow">Đo lường</div>
+    <h2>Không chỉ số nào được ghi nhận mà không kèm hành động</h2>
+    <p class="lede">Bảng theo dõi tuần có 28 cột, và cột cuối cùng luôn là “hành động”. Dưới đây là các ngưỡng quyết định.</p>
+    <div class="scroller">
+      <table>
+        <thead><tr><th>Nhóm chỉ số</th><th>Chỉ số quyết định</th><th class="num">Đạt</th><th class="num">Báo động</th></tr></thead>
+        <tbody>
+          <tr><td rowspan="2"><strong>Thu hút</strong></td><td>Tỉ lệ duyệt thành viên</td><td class="num">70–85%</td><td class="num">&gt;95% hoặc &lt;50%</td></tr>
+          <tr><td>Người mới đến từ giới thiệu</td><td class="num">≥60%</td><td class="num">&lt;30%</td></tr>
+          <tr><td rowspan="3"><strong>Gắn kết</strong></td><td>Tỉ lệ tương tác thật trên tổng thành viên</td><td class="num">≥12%</td><td class="num">&lt;5%</td></tr>
+          <tr><td>Bình luận gốc trung bình mỗi bài chính</td><td class="num">≥15</td><td class="num">&lt;5</td></tr>
+          <tr><td>Thời gian phản hồi trung bình</td><td class="num">≤30 phút</td><td class="num">&gt;2 giờ</td></tr>
+          <tr><td rowspan="3"><strong>Chuyển đổi</strong></td><td>Nhóm → tài khoản web app</td><td class="num">10–15%</td><td class="num">&lt;5%</td></tr>
+          <tr><td>Hoàn tất tầng 1 → ghi danh tầng 2</td><td class="num">15–25%</td><td class="num">&lt;8%</td></tr>
+          <tr><td>Tầng 2 → offline tầng 3 (chỉ G1)</td><td class="num">6–12%</td><td class="num">&lt;3%</td></tr>
+          <tr><td rowspan="2"><strong>Giữ chân</strong></td><td>Còn hoạt động sau 30 ngày</td><td class="num">≥35%</td><td class="num">&lt;20%</td></tr>
+          <tr><td>Tỉ lệ rời nhóm mỗi tháng</td><td class="num">&lt;2%</td><td class="num">&gt;5%</td></tr>
+          <tr><td rowspan="2"><strong>An toàn</strong></td><td>Nick ảo lọt cổng (kiểm mẫu 50 người/tháng)</td><td class="num">&lt;2%</td><td class="num">&gt;5%</td></tr>
+          <tr><td>Thời gian xử lý báo cáo vi phạm</td><td class="num">≤4 giờ</td><td class="num">&gt;24 giờ</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="body">Nhịp: sổ ca mỗi tối, rà soát tuần sáng thứ Hai, mổ xẻ nội dung chiều thứ Sáu, báo cáo và kiểm toán an toàn ngày mùng một, tổng kết mùa mỗi 90 ngày.</p>
+  </section>
+
+  <section id="lo-trinh">
+    <div class="eyebrow">Triển khai</div>
+    <h2>Chín mươi ngày đầu</h2>
+    <p class="lede">Đích: mỗi nhóm đạt 1.000 tương tác thật mỗi tháng với tỉ lệ hoạt động tuần từ 25% trở lên, bộ máy chạy đủ nghi thức, cổng lọc an toàn hoạt động, và có bằng chứng chuyển đổi đầu tiên.</p>
+    <div class="grid g3">
+      <div class="card">
+        <span class="tag t-jade">Tháng 1</span>
+        <h4 style="margin-top:10px">Nền móng</h4>
+        <p><strong>Tuần 1</strong> cấu hình lại hai nhóm, đăng luật và cam kết bảo vệ, chốt đội ngũ và ca trực, dựng bảng dữ liệu, ghi số nền, tạo tài khoản mồi.<br><strong>Tuần 2–4</strong> chạy đủ bảy nghi thức, mở tài nguyên cửa ngõ, bắt đầu nhắn tin cá nhân, lập hai Tổ ấm đầu tiên.</p>
+      </div>
+      <div class="card">
+        <span class="tag t-jade">Tháng 2</span>
+        <h4 style="margin-top:10px">Nhịp điệu</h4>
+        <p>Khai mạc thử thách 21 ngày, xuất bản sáu câu chuyện thật đầu tiên, mở buổi định hướng nhóm nhỏ, khai mạc Mùa Gia Đình Thịnh Vượng. Kiểm toán an toàn lần một, đào tạo năm đại sứ mỗi nhóm.</p>
+      </div>
+      <div class="card">
+        <span class="tag t-jade">Tháng 3</span>
+        <h4 style="margin-top:10px">Nhân bản</h4>
+        <p>Livestream quy mô, mở rộng lên 15 đại sứ mỗi nhóm, mời cá nhân nhóm đủ điều kiện sang khóa offline, bế mạc mùa thi đua và xuất bản kỷ yếu.</p>
+      </div>
+    </div>
+    <div class="note">
+      <div class="k">Kỷ luật quan trọng nhất của cả lộ trình 5 năm</div>
+      <p>Nếu bất kỳ tiêu chí chất lượng nào ở cửa kiểm 90 ngày không đạt, kéo dài giai đoạn thêm một tháng và <strong>không tăng tốc thu hút</strong>. Không bao giờ đổ người mới vào một cái thùng thủng.</p>
+    </div>
+  </section>
+
+  <section id="gioi-han">
+    <div class="eyebrow">Minh bạch</div>
+    <h2>Tự động hóa được tới đâu</h2>
+    <p class="lede">Anh là Admin nên anh có quyền trao. Nhưng có một giới hạn kỹ thuật cần nói rõ trước, để anh không kỳ vọng sai.</p>
+    <div class="grid g3">
+      <div class="card">
+        <span class="tag t-jade">Vùng xanh · làm ngay</span>
+        <h4 style="margin-top:10px">Tự động hợp lệ</h4>
+        <p>Lên lịch bài trong nhóm, quy tắc trợ lý quản trị lọc cổng vào 24/7, lọc từ khóa, chuỗi nuôi dưỡng trên web app và thư điện tử, tự tính bảng xếp hạng thi đua.</p>
+      </div>
+      <div class="card">
+        <span class="tag t-amber">Vùng vàng · máy soạn, người bấm</span>
+        <h4 style="margin-top:10px">Bán tự động</h4>
+        <p>Tôi soạn sẵn toàn bộ bài đăng, bình luận mồi, kịch bản chăm sóc và báo cáo. Một người trong đội nạp vào lịch — khoảng 20–30 phút cho hai tuần.</p>
+      </div>
+      <div class="card">
+        <span class="tag t-lacquer">Vùng đỏ · cấm tuyệt đối</span>
+        <h4 style="margin-top:10px">Không bao giờ dùng</h4>
+        <p>Bot tự bình luận, tài khoản ảo, phần mềm đăng nhập tài khoản cá nhân để đăng bài hay quét thành viên, mua tương tác. Đây là con đường nhanh nhất để mất nhóm.</p>
+      </div>
+    </div>
+    <p class="body" style="margin-top:26px">Facebook đã đóng phần lớn giao diện lập trình cho Nhóm từ năm 2020. Không có cách hợp lệ để phần mềm bên thứ ba tự đăng bài, duyệt thành viên hay trả lời bình luận trong nhóm — mọi công cụ quảng cáo làm được điều đó đều hoạt động bằng cách đăng nhập tài khoản cá nhân và vi phạm điều khoản. Vì vậy phần đăng trực tiếp vẫn cần một thao tác con người: <strong>không phải vì thiếu quyền của anh, mà vì chính sách nền tảng</strong>.</p>
+    <p class="body">Với mô hình “máy soạn – người bấm”, khoảng <strong>85% khối lượng vận hành được tự động hóa</strong>. Phần còn lại là ba mươi phút vàng và những cuộc trò chuyện thật — vốn là phần <em>không nên</em> tự động hóa. Nếu anh muốn đi sâu hơn, hãy kết nối Trang Facebook GITA365, web app, Zalo OA hoặc bảng tính; ở đó tôi vận hành tự động thật.</p>
+  </section>
+
+  <footer>
+    <p><strong>Bộ tài liệu đầy đủ</strong> gồm 13 chương vận hành, ngân hàng chủ đề, lịch 288 bài cho 12 tuần, bảng theo dõi chỉ số và bộ sinh lịch — đã lưu trong kho mã nguồn, nhánh <code>claude/gita365-community-strategy-w0nlv9</code>, thư mục <code>gita365-ops/</code>.</p>
+    <p style="margin-top:12px">Trang này là bản trình duyệt. Sau khi anh chốt tám việc ở phần đầu, tôi bắt đầu triển khai theo lộ trình 90 ngày.</p>
+  </footer>
+</main>
+</div>
+
+<script>
+(function(){
+  var links = Array.prototype.slice.call(document.querySelectorAll('.rail a'));
+  var map = {};
+  links.forEach(function(a){
+    var el = document.querySelector(a.getAttribute('href'));
+    if (el) map[el.id] = a;
+  });
+  var obs = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (!e.isIntersecting) return;
+      links.forEach(function(a){ a.classList.remove('on'); });
+      var a = map[e.target.id];
+      if (a) a.classList.add('on');
+    });
+  }, { rootMargin: '-10% 0px -75% 0px', threshold: 0 });
+  Object.keys(map).forEach(function(id){ obs.observe(document.getElementById(id)); });
+})();
+</script>
