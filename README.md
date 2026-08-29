@@ -44,7 +44,7 @@ Mô thức xuyên suốt mọi tầng: thư mục tài liệu, quy trình, giả
 | Chuyên đề | 47, phân theo 10 mạch kiến thức và 5 tầng hấp thu |
 | Thư mục tài liệu | 408 thư mục · 1.097 đầu tài liệu bổ trợ |
 | Ma trận đề | 7 kỳ thi / trường |
-| Đề mẫu trọn vẹn | **4** đề chuẩn cấu trúc (49 câu + 16 ý đúng/sai), đủ lời giải – barem – bảng phân tích |
+| Đề mẫu trọn vẹn | **7/7 ma trận** đều có đề (79 câu + 16 ý đúng/sai), đủ lời giải – barem – bảng phân tích |
 | Bí kíp · thói quen · phương pháp | 30 · 8 · 8 |
 | Vai trò phân quyền | 8 vai trò (4 học sinh · 3 giáo viên · 1 quản trị) |
 
@@ -75,8 +75,11 @@ Ngoài bộ phiếu theo chuyên đề, hệ thống có các **đề mẫu hoà
 | Mã đề | Kỳ thi | Cấu trúc | Thời gian |
 | --- | --- | --- | --- |
 | `M365-V10-DM01` | Tuyển sinh lớp 10 Hà Nội | 5 bài tự luận · thang 10 | 90 phút |
-| `M365-CT-DM03` | Chuyên Toán khối chuyên Sở (Ams · Chu Văn An) | 5 bài phủ 5 mạch · thang 10 | 150 phút |
-| `M365-CT-DM02` | Toán vòng 2 Chuyên KHTN | 5 bài, nặng Số học – Tổ hợp · thang 10 | 150 phút |
+| `M365-CT-DM06` | THCS & THPT Nguyễn Tất Thành | 5 bài, ý cuối nâng một bậc | 90 phút |
+| `M365-CT-DM03` | Chuyên Toán khối chuyên Sở (Ams · Chu Văn An) | 5 bài phủ 5 mạch | 150 phút |
+| `M365-CT-DM05` | Toán vòng 1 Chuyên KHTN | 4 bài, nặng kỹ thuật biến đổi | 120 phút |
+| `M365-CT-DM02` | Toán vòng 2 Chuyên KHTN | 5 bài, nặng Số học – Tổ hợp | 150 phút |
+| `M365-CT-DM07` | Chuyên ĐH Sư phạm Hà Nội | 4 bài, tỉ trọng Đại số cao | 120 phút |
 | `M365-QG-DM04` | Tốt nghiệp THPT | 12 trắc nghiệm + 4 đúng/sai (16 ý) + 6 trả lời ngắn | 90 phút |
 
 Mỗi đề mở ra bốn tab:
@@ -86,7 +89,7 @@ Mỗi đề mở ra bốn tab:
 3. **Bảng phân tích** — với mỗi câu: *kiến thức liên quan · dạng bài · đọc vị đề · phương pháp làm · các bước giải · bẫy hay mắc và mẹo xử lí · kho bí kíp · liên hệ đề thật và biến thể*, kèm lối tắt về đúng bộ phiếu chuyên đề tương ứng.
 4. **Ma trận & Chiến thuật** — ma trận dựng ngược từ chính đề để đối chiếu với cấu trúc gốc, kế hoạch thời gian trong phòng thi, và bảng đọc điểm → việc cần làm tiếp.
 
-`npm run smoke` đối chiếu tự động từng đề với ma trận gốc: số phần, điểm từng phần, thang điểm, thời gian, tổng phút các câu, tính hợp lệ của phương án trắc nghiệm, barem cộng đủ điểm, và bảng phân tích không thiếu mục nào.
+Cả 7 ma trận đề trong hệ thống đều đã có đề mẫu trọn vẹn. `npm run smoke` đối chiếu tự động từng đề với ma trận gốc: số phần, điểm từng phần, thang điểm, thời gian, tổng phút các câu, tính hợp lệ của phương án trắc nghiệm, barem cộng đủ điểm, và bảng phân tích không thiếu mục nào.
 
 ### Hồ sơ học viên
 
@@ -140,7 +143,7 @@ npm install
 npm run dev        # http://localhost:3000
 npm run build      # typecheck + build production
 npm run typecheck
-npm run smoke      # sinh và kiểm tra 2.000 phiếu / 16.664 câu + đối chiếu 4 đề mẫu với ma trận
+npm run smoke      # sinh và kiểm tra 2.000 phiếu / 16.664 câu + đối chiếu 7 đề mẫu với ma trận
 ```
 
 Không cần API key hay dịch vụ ngoài. Toàn bộ tiến độ học tập được lưu trong `localStorage` của trình duyệt.
