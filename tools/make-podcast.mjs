@@ -64,7 +64,12 @@ const has = (cmd) => {
   }
 };
 
-const secs = (n) => `${Math.floor(n / 60)}:${String(Math.round(n % 60)).padStart(2, '0')}`;
+// Làm tròn TỔNG giây trước rồi mới tách phút — làm tròn phần dư trước sẽ cho
+// ra "20:60" khi phần dư là 59,6 giây.
+const secs = (n) => {
+  const t = Math.round(n);
+  return `${Math.floor(t / 60)}:${String(t % 60).padStart(2, '0')}`;
+};
 
 /* --------------------------- cấu hình giọng ------------------------------ */
 

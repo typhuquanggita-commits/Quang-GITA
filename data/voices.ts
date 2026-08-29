@@ -109,7 +109,13 @@ export const MC_DELIVERY: DeliverySpec[] = [
       'MC bản tin nói khoảng 150 từ/phút — đủ nhanh để không buồn ngủ, đủ chậm để nghe một lần là hiểu. Câu mẫu tiếng Anh phải chậm hơn hẳn vì học viên đang nói đuổi theo.',
     howToDirect:
       'Nếu người đọc phải hít hơi giữa câu thì đang quá nhanh. Nếu người nghe kịp nghĩ sang việc khác thì đang quá chậm.',
-  },
+    bounds: [
+      // Máy đếm được ÂM TIẾT, không đếm được TỪ — nên ngưỡng máy đặt theo âm
+      // tiết. Quy đổi: tiếng Việt khoảng 1,6 âm tiết một từ, tiếng Anh khoảng
+      // 1,4. Dải rộng vì một tập podcast trộn cả tiếng Việt (nhanh hơn) lẫn
+      // câu mẫu tiếng Anh (đọc chậm hẳn để học viên nói đuổi theo).
+      {metric: 'am_tiet_phut', min: 190, max: 300, unit: 'âm tiết/phút', scope: 'chung'},
+    ],  },
   {
     id: 'd-pitch',
     aspect: 'Cao độ và biến thiên',
@@ -119,7 +125,11 @@ export const MC_DELIVERY: DeliverySpec[] = [
       'Giọng đều một mạch làm người nghe rơi vào trạng thái lơ đãng sau khoảng bốn phút. Biến thiên là thứ giữ sự chú ý mà không cần tăng âm lượng.',
     howToDirect:
       'Mỗi câu có một từ được nhấn. Chọn trước từ đó rồi mới đọc. Không nhấn thì câu thành phẳng; nhấn ba từ thì thành kịch.',
-  },
+    bounds: [
+      {metric: 'f0', min: 110, max: 140, unit: 'Hz', scope: 'nam'},
+      {metric: 'f0', min: 190, max: 215, unit: 'Hz', scope: 'nữ'},
+      {metric: 'f0_var', min: 20, max: 32, unit: 'Hz', scope: 'chung'},
+    ],  },
   {
     id: 'd-energy',
     aspect: 'Năng lượng',
@@ -128,7 +138,10 @@ export const MC_DELIVERY: DeliverySpec[] = [
       'Chất MC không nằm ở việc hô to, mà ở chỗ giữ được cùng một mức năng lượng từ giây đầu tới giây cuối. Người nghe cảm nhận sự tụt dốc rõ hơn nhiều so với mức tuyệt đối.',
     howToDirect:
       'Đứng khi đọc, không ngồi. Đọc như đang nói với một người ngồi cách hai mét, không phải với micro cách hai mươi phân.',
-  },
+    bounds: [
+      {metric: 'troi_nang_luong', min: 0, max: 2.5, unit: 'dB lệch đầu–cuối', scope: 'chung'},
+      {metric: 'lufs', min: -17, max: -15, unit: 'LUFS', scope: 'chung'},
+    ],  },
   {
     id: 'd-clarity',
     aspect: 'Độ rõ phụ âm',
@@ -137,7 +150,10 @@ export const MC_DELIVERY: DeliverySpec[] = [
       'Người nghe qua tai nghe rẻ tiền, trên xe buýt, giữa tiếng ồn. Phụ âm là thứ mất trước tiên, và mất phụ âm là mất nghĩa.',
     howToDirect:
       'Đọc thử một câu rồi nghe lại qua loa điện thoại, không nghe qua tai nghe xịn. Nghe rõ ở đó mới là rõ.',
-  },
+    bounds: [
+      {metric: 'centroid', min: 1450, max: 1950, unit: 'Hz', scope: 'chung'},
+      {metric: 'ti_le_cao_tan', min: 0.12, max: 0.40, unit: 'phần năng lượng trên 2kHz', scope: 'chung'},
+    ],  },
   {
     id: 'd-warmth',
     aspect: 'Thái độ',
@@ -146,6 +162,8 @@ export const MC_DELIVERY: DeliverySpec[] = [
       'Học viên mở app lúc 5h45 sáng hoặc lúc mệt sau giờ làm. Giọng phải là lý do họ ở lại, không phải lý do họ tắt.',
     howToDirect:
       'Mỉm cười khi đọc — nghe được qua micro. Nhưng không cười thành tiếng và không thêm câu đùa vào kịch bản.',
+    notMeasurable:
+      'Không có ngưỡng máy đo cho tiêu chí này. Thái độ là thứ người nghe cảm được mà máy không đo được — gán cho nó một con số sẽ tạo cảm giác khách quan giả. Tiêu chí này do người duyệt chấm.',
   },
   {
     id: 'd-pause',
@@ -156,7 +174,11 @@ export const MC_DELIVERY: DeliverySpec[] = [
       'Chỗ nghỉ là chỗ người nghe kịp hiểu. MC giỏi nghỉ nhiều hơn người mới tưởng, và chính khoảng nghỉ tạo cảm giác chững chạc.',
     howToDirect:
       'Kịch bản đã đánh dấu sẵn từng khoảng nghỉ bằng giây. Bám đúng, đừng lấp bằng "ờ" hay hít hơi to.',
-  },
+    bounds: [
+      {metric: 'nghi_trung_binh', min: 0.30, max: 0.85, unit: 'giây', scope: 'chung'},
+      {metric: 'so_nghi', min: 8, max: 22, unit: 'lần/phút', scope: 'chung'},
+      {metric: 'ti_le_lang', min: 0.10, max: 0.30, unit: 'phần thời lượng', scope: 'chung'},
+    ],  },
 ];
 
 /* ---------------- BỘ ĐỐI CHIẾU ANH–ANH VÀ ANH–MỸ ------------------------ */

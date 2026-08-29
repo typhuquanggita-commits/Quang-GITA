@@ -619,12 +619,31 @@ export interface VoiceProfile {
   measured?: {f0: number; centroid: number; variation: number};
 }
 
+/**
+ * Ngưỡng đo được của một tiêu chí dẫn.
+ *
+ * Có tiêu chí đo được bằng máy (tốc độ, cao độ, nhịp nghỉ) và có tiêu chí
+ * không (thái độ, sự ấm áp). Tiêu chí nào không đo được thì để trống trường
+ * này thay vì bịa ra một con số — một ngưỡng giả còn tệ hơn không có ngưỡng.
+ */
+export interface DeliveryBound {
+  metric: string;
+  min: number;
+  max: number;
+  unit: string;
+  /** Cùng một tiêu chí có ngưỡng khác nhau cho giọng nam và giọng nữ. */
+  scope?: 'nam' | 'nữ' | 'chung';
+}
+
 export interface DeliverySpec {
   id: string;
   aspect: string;
   target: string;
   why: string;
   howToDirect: string;
+  bounds?: DeliveryBound[];
+  /** Vì sao tiêu chí này không đo được bằng máy. */
+  notMeasurable?: string;
 }
 
 export interface AccentContrast {
