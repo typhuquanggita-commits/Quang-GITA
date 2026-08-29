@@ -8,7 +8,31 @@ Một ứng dụng web trình bày trọn vẹn một hệ thống học tiếng
 mốc, thư viện phương pháp đã kiểm chứng, chuỗi bài giảng, bài luyện hằng ngày, bí kíp,
 kiến trúc thói quen, lập trình tư duy, hệ thống câu lạc bộ và cơ chế kiểm định.
 
-## Hệ thống gồm gì
+Hệ thống có **hai tầng**. Tầng **La Bàn** trả lời *vì ai và vì sao*. Tầng
+**Lộ trình** trả lời *làm gì và làm thế nào*. Thiếu tầng thứ nhất, tầng thứ hai
+chỉ là một thời khoá biểu — và thời khoá biểu nào cũng bị bỏ ở tháng thứ tư.
+
+## Tầng 1 — LA BÀN (hiến chương cá nhân, viết ở ngôi thứ nhất)
+
+| # | Mục | Nội dung |
+|---|-----|----------|
+| 01 | **Tại sao** | 3 tầng lý do + quy trình khai vấn 25 phút ◆ |
+| 02 | **Kết quả xuất sắc** | 5 bậc: điểm thi → năng lực thật → tài sản → bằng chứng công khai → tác động |
+| 03 | **Con người tôi trở thành** | Tuyên bố bản sắc + 7 đặc tính, mỗi đặc tính có "làm gì dưới áp lực" |
+| 04 | **Chiến lược** | 6 cược chiến lược, mỗi cược có đánh đổi và điều kiện chứng minh nó SAI |
+| 05 | **Kế hoạch rèn luyện** | Ngày (3 phiên bản: Đủ 105′ / Bận 35′ / Tệ 2′) · Tuần · Tháng |
+| 06 | **10 việc quan trọng** | 3 danh sách × 10 việc, xếp theo ưu tiên, đánh dấu bắt buộc |
+| 07 | **KPI** | 10 chỉ số dẫn/trễ, mỗi chỉ số có **lằn đỏ** + 5 chỉ số cố tình KHÔNG đo |
+| 08 | **Tư duy 20/80** | 7 nước đi chiếm ~80% khác biệt, mỗi cái có tình huống kích hoạt |
+| 09 | **Quy tắc thành công** | 12 quy tắc, mỗi quy tắc kèm điều khoản xử lý khi lỡ |
+| 10 | **Phương pháp khác biệt** | 8 điều làm khác số đông: "phần lớn người học" vs "tôi làm" |
+| 11 | **Điểm mạnh của tôi** | Tự kiểm 7 câu ◆ + 6 nguyên mẫu người học, mỗi loại có siêu năng lực & điểm mù |
+
+◆ = mục chỉ bạn mới trả lời được; hệ thống cung cấp bản nháp mạnh + quy trình để bạn thay thế.
+
+Kết thúc bằng **Tuyên ngôn** 8 dòng — in ra, dán lên bàn học.
+
+## Tầng 2 — LỘ TRÌNH
 
 | Phần | Số lượng | Mô tả |
 |------|----------|-------|
@@ -53,6 +77,7 @@ npm run preview  # xem thử bản build
 
 ```
 data/                  Toàn bộ nội dung hệ thống, tách khỏi giao diện
+  charter.ts           LA BÀN — 11 mục hiến chương cá nhân + tuyên ngôn
   system.ts            Hiến chương: 5 luật, 7 trụ cột, quỹ đạo, ngân sách thời gian
   roadmap.ts           12 cột mốc × 36 tháng
   methods.ts           28 phương pháp
@@ -75,9 +100,12 @@ giao diện tự cập nhật theo.
 
 ## Bắt đầu từ đâu
 
-1. Đọc [`docs/ENGWILL365.md`](docs/ENGWILL365.md) — sổ tay vận hành, 10 phút.
-2. Mở ứng dụng, vào tab **Lộ trình**, chọn cột mốc **Y1Q1**.
-3. Làm đúng buổi học của ngày mai.
+1. Mở ứng dụng, vào tab **La Bàn**. Dành 45 phút viết cho xong **mục 01 (Tại sao)**
+   và **mục 11 (Điểm mạnh)** bằng câu trả lời thật của bạn — đây là hai mục quyết
+   định bạn có đi hết 3 năm hay không.
+2. Đọc [`docs/ENGWILL365.md`](docs/ENGWILL365.md) — sổ tay vận hành, 10 phút.
+3. Sang tab **Lộ trình**, chọn cột mốc **Y1Q1**.
+4. Làm đúng buổi học của ngày mai.
 
 Hệ thống này là một bản thiết kế, không phải một lời hứa. Nó chỉ tạo ra kết quả khi được
 vận hành mỗi ngày.

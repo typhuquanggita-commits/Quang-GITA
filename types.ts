@@ -241,3 +241,116 @@ export interface Ritual {
   steps: string[];
   why: string;
 }
+
+/* ==========================================================================
+   LA BÀN — Hiến chương cá nhân (tầng "vì sao" đặt trên tầng "làm gì")
+   ========================================================================== */
+
+/** Một tầng của câu hỏi Tại sao. */
+export interface WhyLayer {
+  level: string;
+  question: string;
+  draft: string;
+  test: string;
+  yours: boolean;
+}
+
+/** Một bậc của định nghĩa "xuất sắc". */
+export interface ExcellenceTier {
+  id: string;
+  tier: string;
+  name: string;
+  why: string;
+  targets: {label: string; value: string}[];
+}
+
+/** Một đặc tính của con người tôi muốn trở thành. */
+export interface IdentityTrait {
+  id: string;
+  trait: string;
+  notThis: string;
+  proof: string;
+  underPressure: string;
+}
+
+/** Một cược chiến lược. */
+export interface StrategyBet {
+  id: string;
+  no: number;
+  bet: string;
+  instead: string;
+  rationale: string;
+  tradeoff: string;
+  provesWrongIf: string;
+}
+
+/** Mẫu kế hoạch theo chu kỳ. */
+export interface PlanTemplate {
+  scope: 'day' | 'week' | 'month';
+  name: string;
+  variants: {
+    label: string;
+    when: string;
+    minutes: number;
+    blocks: {time: string; task: string; minutes: number}[];
+  }[];
+}
+
+/** Một việc quan trọng trong danh sách 10. */
+export interface KeyAction {
+  no: number;
+  action: string;
+  why: string;
+  minutes: string;
+  nonNegotiable: boolean;
+}
+
+/** Chỉ số. */
+export interface KpiSpec {
+  id: string;
+  name: string;
+  type: 'dẫn' | 'trễ';
+  cadence: string;
+  target: string;
+  redline: string;
+  how: string;
+}
+
+/** Một nước đi tư duy trong nhóm 20%. */
+export interface ParetoMove {
+  id: string;
+  no: number;
+  move: string;
+  share: string;
+  from: string;
+  to: string;
+  trigger: string;
+  script: string;
+}
+
+/** Một quy tắc thành công. */
+export interface SuccessRule {
+  no: number;
+  rule: string;
+  meaning: string;
+  breach: string;
+}
+
+/** Một điểm làm khác với số đông. */
+export interface Differentiator {
+  id: string;
+  what: string;
+  mostPeople: string;
+  iDo: string;
+  edge: string;
+}
+
+/** Một nguyên mẫu người học — để tự định vị điểm mạnh. */
+export interface Archetype {
+  id: string;
+  name: string;
+  signs: string[];
+  superpower: string;
+  blindSpot: string;
+  strategy: string[];
+}

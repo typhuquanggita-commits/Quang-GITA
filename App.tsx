@@ -4,6 +4,7 @@
  */
 import React, {useState} from 'react';
 import {NORTH_STAR} from './data';
+import {Charter} from './components/engwill/Charter';
 import {Overview} from './components/engwill/Overview';
 import {Roadmap} from './components/engwill/Roadmap';
 import {Methods} from './components/engwill/Methods';
@@ -24,6 +25,13 @@ interface Nav {
 }
 
 const NAV: Nav[] = [
+  {
+    id: 'charter',
+    icon: '🧿',
+    label: 'La Bàn',
+    hint: 'Hiến chương cá nhân',
+    render: () => <Charter />,
+  },
   {
     id: 'overview',
     icon: '◎',
@@ -97,7 +105,7 @@ const NAV: Nav[] = [
 ];
 
 export const App: React.FC = () => {
-  const [tab, setTab] = useState('overview');
+  const [tab, setTab] = useState('charter');
   const [menuOpen, setMenuOpen] = useState(false);
   const active = NAV.find((n) => n.id === tab)!;
 
@@ -177,6 +185,9 @@ export const App: React.FC = () => {
                 tạo ra kết quả khi được vận hành mỗi ngày. Nếu bạn chỉ đọc nó
                 một lần rồi đóng lại, nó không khác gì 100 bài viết “bí quyết
                 IELTS” bạn đã đọc trước đây. Hãy bắt đầu ở tab{' '}
+                <span className="font-medium text-slate-400">La Bàn</span> — viết
+                cho xong mục 01 và mục 11 bằng câu trả lời thật của bạn. Sau đó
+                sang tab{' '}
                 <span className="font-medium text-slate-400">Lộ trình</span>, mở
                 cột mốc Y1Q1, và làm đúng buổi học của ngày mai.
               </p>

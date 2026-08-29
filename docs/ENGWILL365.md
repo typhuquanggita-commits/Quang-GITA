@@ -11,6 +11,18 @@ chạy `npm run dev` để mở.
 
 ---
 
+## 0. Hai tầng của hệ thống
+
+| Tầng | Trả lời câu hỏi | Ở đâu |
+|------|-----------------|-------|
+| **La Bàn** | Vì ai? Vì sao? Tôi trở thành ai? | Tab **La Bàn** trong ứng dụng — 11 mục |
+| **Lộ trình** | Làm gì? Làm thế nào? Khi nào? | 9 tab còn lại + tài liệu này |
+
+Làm La Bàn **trước**. Cụ thể: mục 01 (Tại sao) và mục 11 (Điểm mạnh) là hai mục
+không ai viết hộ được — dành 45 phút viết tay cho xong trước khi bắt đầu ngày học
+đầu tiên. Người bỏ qua bước này thường dừng ở tháng thứ tư, không phải vì phương
+pháp sai mà vì không có lý do đủ sâu để đi tiếp khi hết hào hứng.
+
 ## 1. Phương trình
 
 ```
@@ -196,5 +208,5 @@ Hệ thống này là một **bản thiết kế**, không phải một lời h�
 Nếu bạn đọc nó một lần rồi đóng lại, nó không khác gì 100 bài viết "bí quyết IELTS" bạn đã
 đọc trước đây.
 
-Hãy mở ứng dụng, vào tab **Lộ trình**, chọn cột mốc **Y1Q1**, và làm đúng buổi học của
-ngày mai.
+Hãy mở ứng dụng, vào tab **La Bàn**, viết cho xong mục 01 và mục 11. Rồi sang tab
+**Lộ trình**, chọn cột mốc **Y1Q1**, và làm đúng buổi học của ngày mai.
