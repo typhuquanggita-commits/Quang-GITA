@@ -18,3 +18,4 @@ export * from './academy';
 export * from './levels';
 export * from './feedback';
 export * from './production';
+export * from './podcast';

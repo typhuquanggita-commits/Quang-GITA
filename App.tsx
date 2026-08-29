@@ -20,6 +20,7 @@ import {Academy} from './components/engwill/Academy';
 import {Levels} from './components/engwill/Levels';
 import {Grading} from './components/engwill/Grading';
 import {Studio} from './components/engwill/Studio';
+import {Podcast} from './components/engwill/Podcast';
 
 interface Nav {
   id: string;
@@ -155,6 +156,14 @@ const NAV: Nav[] = [
     hint: '4 phần · 20 phác đồ lỗi',
     group: 'academy',
     render: () => <Grading />,
+  },
+  {
+    id: 'podcast',
+    icon: '🎙',
+    label: 'Podcast',
+    hint: 'Engwill Radio · 6 tập',
+    group: 'academy',
+    render: () => <Podcast />,
   },
   {
     id: 'studio',

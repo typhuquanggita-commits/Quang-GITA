@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Audio dựng ra từ kịch bản — chạy lại bằng: node tools/make-podcast.mjs
+audio/*.mp3
+audio/feed.xml
+audio/.tmp/

@@ -39,6 +39,22 @@ Mỗi cấp có điều kiện vào, nhiệm vụ, thử thách, tiêu chí đ�
   dưới 20 phút, và tiêu chí quan sát được để biết lỗi đã đóng
 - Cam kết: phản hồi trong 48 giờ · chốt đúng **một** lỗi mục tiêu mỗi chu kỳ
 
+### 🎙 Podcast — ENGWILL RADIO
+**6 tập có kịch bản đầy đủ từng câu**, 5 định dạng chương trình (5 Phút Mỗi Sáng ·
+Giải Mã Lỗi · Đối Thoại Cố Vấn · Lập Trình Tư Duy · Shadowing Lab).
+
+Kịch bản là **dữ liệu**, audio là thứ dựng ra từ dữ liệu đó:
+
+```bash
+apt-get install -y espeak-ng ffmpeg
+node tools/make-podcast.mjs --rss          # → 6 file MP3 + feed.xml, ~30 giây
+```
+
+Ba backend TTS cắm được: `espeak` (ngoại tuyến, miễn phí, dùng để duyệt kịch bản),
+`google` (Neural2, chất lượng phát hành), `gemini` (tự nhiên nhất). Output đã chuẩn
+hoá -16 LUFS, có thẻ ID3, kèm RSS để đăng lên nền tảng podcast. Sửa một câu trong
+kịch bản rồi chạy lại lệnh là có bản mới — không phải hẹn phòng thu.
+
 ### 🎥 Xưởng học liệu
 **11 bản thiết kế sản xuất** — bản vẽ kỹ thuật để ê-kíp quay dựng, không phải file media:
 video bài giảng, video cận miệng 44 âm IPA, bộ audio shadowing 150 đoạn, bộ chép chính tả
@@ -155,6 +171,15 @@ data/                  Toàn bộ nội dung hệ thống, tách khỏi giao di�
   levels.ts            25 cấp độ (5 tầng × 5 cấp)
   feedback.ts          Khung chấm bài 4 phần + thư viện 20 phác đồ lỗi
   production.ts        11 bản thiết kế sản xuất học liệu + trình tự triển khai
+  podcast.ts           Engwill Radio — 5 định dạng, 6 tập, cấu hình pipeline
+
+content/
+  podcast-scripts.json Kịch bản podcast — nguồn dùng chung cho app và công cụ dựng
+
+tools/
+  make-podcast.mjs     Dựng MP3 + RSS từ kịch bản (espeak / google / gemini)
+
+audio/                 Sản phẩm dựng ra, không commit — xem audio/README.md
   charter.ts           LA BÀN — 11 mục hiến chương cá nhân + tuyên ngôn
   system.ts            Hiến chương: 5 luật, 7 trụ cột, quỹ đạo, ngân sách thời gian
   roadmap.ts           12 cột mốc × 36 tháng
