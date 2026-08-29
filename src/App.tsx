@@ -9,6 +9,7 @@ import Missions from '@/pages/Missions';
 import MissionRun from '@/pages/MissionRun';
 import Solution from '@/pages/Solution';
 import Portfolio from '@/pages/Portfolio';
+import Report from '@/pages/Report';
 import Guide from '@/pages/Guide';
 import { TopicList, TopicDetail } from '@/pages/Topics';
 import Exams from '@/pages/Exams';
@@ -54,6 +55,9 @@ export default function App() {
       break;
     case 'portfolio':
       page = <Portfolio />;
+      break;
+    case 'report':
+      page = <Report />;
       break;
     case 'guide':
       page = <Guide topicId={param ?? ''} />;

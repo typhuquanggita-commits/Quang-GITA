@@ -21,6 +21,7 @@ export const NAV: NavItem[] = [
   { path: '/roadmap', label: 'Lộ trình của tôi', icon: '⟶', group: 'Học tập' },
   { path: '/missions', label: 'Nhiệm vụ & Phiếu luyện', icon: '✎', group: 'Học tập' },
   { path: '/portfolio', label: 'Hồ sơ học viên', icon: '❖', group: 'Học tập' },
+  { path: '/report', label: 'Báo cáo gia đình', icon: '⎙', group: 'Học tập' },
   { path: '/topics', label: 'Cây chuyên đề', icon: '❑', group: 'Nội dung' },
   { path: '/exams', label: 'Kỳ thi & Cấu trúc đề', icon: '◇', group: 'Nội dung' },
   { path: '/papers', label: 'Đề mẫu & Bộ giải đề', icon: '⬢', group: 'Nội dung' },
