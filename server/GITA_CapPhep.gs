@@ -33,7 +33,9 @@ function gitaPhamViCapPhep(hoSo) {
   var ds = ['nen'];                        // mọi tài khoản đã đăng nhập
   var lv = (ROLES[hoSo.role] || { lv: 99 }).lv;
 
-  if (lv <= 11) {                           // tư vấn, coach, quản lý, quản trị
+  /* Tới bậc 12 — khớp với G.PERM.nghe_chung trong ứng dụng. Lệch một bậc ở
+     đây thì R12 thấy mục trong trình đơn nhưng máy chủ không cấp khoá. */
+  if (lv <= 12) {                           // tư vấn, coach, quản lý, quản trị, phân tích
     ds.push('nghe');
     for (var i = 1; i <= 5; i++) ds.push('tang' + i);
     return ds;

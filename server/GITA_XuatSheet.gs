@@ -22,7 +22,7 @@ function gitaDemXuat_(u) {
   var kho = CacheService.getScriptCache();
   var k = 'XUATSHEET_' + String(u).toLowerCase() + '_' + Utilities.formatDate(new Date(), 'GMT+7', 'yyyyMMdd');
   var n = Number(kho.get(k) || 0) + 1;
-  kho.put(k, String(n), 86400);
+  kho.put(k, String(n), GITA_CACHE_NGAY);
   return n;
 }
 
@@ -51,7 +51,14 @@ function gitaXuatSheet_(y, hoSo) {
   var maBan = String(y.maBan || '').slice(0, 40) || 'GITA-' + new Date().getTime();
   var ten = maBan + ' · ' + String(y.ten || 'Bảng dữ liệu').slice(0, 80);
 
-  var ss = SpreadsheetApp.create(ten);
+  /* Dựng lưới đủ chỗ ngay từ đầu.
+     SpreadsheetApp.create(ten) cho ra trang mặc định 1.000 dòng × 26 cột,
+     trong khi trần xuất là 5.000 dòng — xuất từ 1.000 dòng trở lên là
+     getRange ném "Those rows are out of bounds" và người dùng chỉ nhận được
+     một câu báo lỗi chung chung. */
+  var soDongCan = dong.length + 1;
+  var soCotCan  = Math.max(cot.length, 1);
+  var ss = SpreadsheetApp.create(ten, Math.max(soDongCan, 20), Math.max(soCotCan, 5));
   var sh = ss.getActiveSheet();
   sh.setName(String(y.ten || 'Dữ liệu').slice(0, 90));
 
@@ -78,7 +85,7 @@ function gitaXuatSheet_(y, hoSo) {
     ['Mã bản', maBan],
     ['Loại dữ liệu', String(y.loai || '')],
     ['Người xuất', hoSo.u],
-    ['Vai', hoSo.role + ' — ' + ((ROLES[hoSo.role] || {}).n || '')],
+    ['Vai', hoSo.role + ' — ' + ((ROLES[hoSo.role] || {}).ten || '')],
     ['Lúc xuất', Utilities.formatDate(new Date(), 'GMT+7', 'dd/MM/yyyy HH:mm:ss')],
     ['Số dòng', dong.length],
     ['Ghi chú', 'Tài sản của Học viện GITA. Bản này được ghi vào nhật ký và truy nguồn được theo mã bản.']

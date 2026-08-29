@@ -95,7 +95,10 @@ function goiPhacDo(yeu){
 
 function tierColor(t){
   var x = (G.TIERS||[]).filter(function(y){return y.code===t;})[0];
-  return x ? x.color : 'var(--gold)';
+  /* Cột màu trong G.TIERS tên là c, không phải color. Đọc sai tên thì
+     hàm trả undefined và mọi màu tầng biến mất — nhánh dự phòng bên
+     dưới không bao giờ chạy vì x vẫn tồn tại. */
+  return x ? x.c : 'var(--gita)';
 }
 
 /* ═══════════════════ BỘ TEST NHẬN DIỆN ═══════════════════ */
@@ -164,7 +167,7 @@ function manThuVien(T){
   }).join('') + '</div>';
 
   o += '<p class="tiny muted center mt2">Mỗi bản in ra đều mang mật mã kín theo người nhận · '+
-    h(G.META && G.META.ten || 'GITA 365')+'</p>';
+    h(G.META && G.META.name || 'GITA 365')+'</p>';
   return o;
 }
 
@@ -387,6 +390,9 @@ on('[data-tq]', function(el){
   var st = G.S.test[p[0]] || (G.S.test[p[0]] = { dap:{}, xong:false });
   st.dap[p[1]] = U.num(p[2]);
   if(G.save) G.save();
+  /* Đánh dấu để bài làm đi lên máy chủ. Thiếu dòng này thì con làm bài trên
+     máy tính, mở điện thoại lại thấy trống. */
+  if(G.danhDau) G.danhDau('test', p[0]);
   /* Cập nhật tại chỗ để không cuộn về đầu trang khi đang làm bài */
   var b = boTest(p[0]);
   if(b){
@@ -416,12 +422,14 @@ on('[data-txong]', function(el){
   st.diem = kq.diem; st.mien = kq.mien; st.nhom = kq.nhom; st.canhBao = kq.canhBao;
   st.xong = true; st.luc = new Date().toLocaleString('vi-VN');
   if(G.save) G.save();
+  if(G.danhDau) G.danhDau('test', b.ma);
   if(G.secLog) G.secLog('Chấm bài test', b.ma+' · '+kq.diem+'/100 · nhóm '+kq.nhom.code, 'Ghi nhận');
   lai();
 });
 on('[data-tlam]', function(el){
   var ma = el.getAttribute('data-tlam');
   G.S.test[ma] = { dap:{}, xong:false };
+  if(G.danhDau) G.danhDau('test', ma);
   if(G.save) G.save();
   lai();
 });

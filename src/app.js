@@ -716,6 +716,9 @@ G.xuat = function(ma){
   fetch(G.API_CAP_PHEP, {
     method:'POST', headers:{'Content-Type':'text/plain;charset=utf-8'},
     body: JSON.stringify({ fn:'xuatSheet', u:G.S.acc && G.S.acc.u, token:G.PHIEN_TOKEN||'',
+      /* Gửi cả tên máy — đường dongBo và capKhoa đều gửi, riêng đường này
+         trước đây bỏ trống nên cột "máy" trong nhật ký xuất luôn rỗng. */
+      may: navigator.userAgent.slice(0, 120),
       loai:ma, ten:b.ten, maBan:maBan, cot:b.cot, dong:b.dong })
   }).then(function(r){ return r.json(); })
     .then(function(d){
@@ -871,10 +874,9 @@ on('[data-kb]', function(el){ document.getElementById('cmd').classList.remove('o
 on('[data-mt]', function(el){ document.getElementById('cmd').classList.remove('on'); G.moThucModal(el.getAttribute('data-mt')); });
 on('[data-bh]', function(el){ G.baiHocModal(el.getAttribute('data-bh')); });
 on('[data-cdopen]', function(el){ G.chanDungModal(el.getAttribute('data-cdopen')); });
-on('[data-aiq]', function(el){
-  var i = document.getElementById('aiQ'); if(i) i.value = el.getAttribute('data-aiq');
-  G.ask(el.getAttribute('data-aiq'));
-});
+/* [data-aiq] KHÔNG bắt ở đây. Bộ nghe duy nhất nằm trong src/tro-ly-chat.js.
+   Có lúc ba tệp cùng bắt selector này ở cấp document, nên một cú bấm chip
+   gợi ý hỏi trợ lý ba lần. */
 on('[data-sat]', function(el){
   var f = G.FAMILIES.filter(function(x){return x.id===el.getAttribute('data-sat');})[0]; if(!f) return;
   var t = G.tierOf(f.tier);
@@ -908,6 +910,38 @@ on('[data-kbf]', function(el){
     c.style.display = (f==='ALL' || c.getAttribute('data-f').indexOf(f)>=0) ? '' : 'none';
   });
 });
+/* ── Hiện thêm bản ghi ──
+   Hai lỗi cũ, cùng một gốc: đếm từ G.S.*Shown thay vì đếm từ chính danh sách.
+     1. Quay lại màn hình thì màn vẽ lại 48 thẻ đầu, nhưng biến đếm vẫn giữ
+        con số của lần trước — bấm thêm là nhảy cóc, bỏ mất cả một khối bản ghi
+        mà không cách nào xem lại được.
+     2. Bấm thêm khi đang bật một bộ lọc thì thẻ mới chèn vào không mang bộ
+        lọc ấy, nên hiện ra cả những thẻ vừa bị lọc bỏ.
+   Đếm từ DOM thì con số luôn đúng với thứ đang thấy; áp lại bộ lọc sau khi
+   chèn thì thẻ mới theo đúng luật thẻ cũ. */
+function hienThem(idList, idDem, kho, veThe, buoc, locSel){
+  var ds = kho || [], l = document.getElementById(idList);
+  if(!l) return;
+  var dangCo = l.querySelectorAll('[data-f]').length || l.children.length;
+  var toi = Math.min(ds.length, dangCo + buoc);
+  if(toi <= dangCo) return;
+  l.insertAdjacentHTML('beforeend', ds.slice(dangCo, toi).map(veThe).join(''));
+
+  /* Áp lại bộ lọc và ô tìm đang bật cho phần vừa chèn */
+  var nutLoc = document.querySelector('[' + locSel + '].on');
+  var f = nutLoc ? nutLoc.getAttribute(locSel) : 'ALL';
+  var o = document.querySelector('[data-search]');
+  var q = o ? (o.value || '').trim().toLowerCase() : '';
+  l.querySelectorAll('[data-f]').forEach(function(c){
+    var hopLoc = (f === 'ALL' || (c.getAttribute('data-f') || '').indexOf(f) >= 0);
+    var hopTim = !q || (c.getAttribute('data-s') || c.textContent || '').toLowerCase().indexOf(q) >= 0;
+    c.style.display = (hopLoc && hopTim) ? '' : 'none';
+  });
+
+  var d = document.getElementById(idDem);
+  if(d) d.textContent = toi;
+}
+
 on('[data-act]', function(el){
   var a = el.getAttribute('data-act');
   if(a==='doi-nen') return G.doiNen();
@@ -947,24 +981,30 @@ on('[data-act]', function(el){
     var i = 0; G.LANGS.forEach(function(x,n){ if(x.k===G.LANG) i=n; });
     G.setLang(G.LANGS[(i+1)%G.LANGS.length].k);
   }
+  /* Phải gọi G.danhDau, nếu không thì bấm lưu xong dữ liệu nằm lại đúng máy
+     này: gomThayDoi chỉ gom những khoá ĐÃ ĐƯỢC ĐÁNH DẤU. Trước đây hai
+     nhánh này và cả luồng làm bài test đều quên, nên bảng tầm nhìn và nhật
+     ký 365 ngày không bao giờ sang được máy khác. */
   else if(a==='save-vision'){
-    document.querySelectorAll('[data-vision]').forEach(function(t){ G.S.vision[t.getAttribute('data-vision')] = t.value; });
+    document.querySelectorAll('[data-vision]').forEach(function(t){
+      var k = t.getAttribute('data-vision');
+      G.S.vision[k] = t.value;
+      if(G.danhDau) G.danhDau('vision', k);
+    });
     save(); U.toast('Đã lưu bảng tầm nhìn của nhà mình.','ok'); render();
   }
   else if(a==='save-journal'){
-    document.querySelectorAll('[data-journal]').forEach(function(t){ G.S.journal[t.getAttribute('data-journal')] = t.value; });
+    document.querySelectorAll('[data-journal]').forEach(function(t){
+      var k = t.getAttribute('data-journal');
+      G.S.journal[k] = t.value;
+      if(G.danhDau) G.danhDau('journal', k);
+    });
     save(); U.toast('Đã ghi nhật ký tối nay. Bảy tối là có một mô thức.','ok');
   }
   else if(a==='chat-xoa'){ G.chatXoa && G.chatXoa(); }
   else if(a==='ai-ask'){ var oq=document.getElementById('aiQ'); if(oq){ G.aiHoi(oq.value); oq.value=''; } }
   else if(a==='mic') G.mic();
-  else if(a==='kb-more'){
-    var list = document.getElementById('kbList');
-    var kb = G.KICHBAN||[];
-    var n = G.S.kbShown; G.S.kbShown = Math.min(kb.length, n+60);
-    list.insertAdjacentHTML('beforeend', kb.slice(n, G.S.kbShown).map(G.kbCard).join(''));
-    document.getElementById('kbCount').textContent = G.S.kbShown;
-  }
+  else if(a==='kb-more') hienThem('kbList','kbCount', G.KICHBAN, G.kbCard, 60, 'data-kbf');
   else if(a==='quet-dau'){
     var van = (document.getElementById('quetVan')||{}).value || '';
     var kq = document.getElementById('quetKQ'); if(!kq) return;
@@ -1001,18 +1041,8 @@ on('[data-act]', function(el){
   else if(a==='duyet-mo') U.toast('Đã mở lại tài khoản. Hệ thống sẽ rà lại KPI sau 30 ngày.','ok');
   else if(a==='hoan-mo') U.toast('Đã hoãn và gửi yêu cầu bổ sung dữ liệu cho người xin mở.','ok');
   else if(a==='dat-lai') U.toast('Đã thu hồi khoá giải mã và gỡ vai. Dữ liệu gia đình giữ nguyên, không xoá.','ok');
-  else if(a==='th-more'){
-    var ds = G.TINHHUONG||[], l = document.getElementById('thList');
-    var n = G.S.thShown||48; G.S.thShown = Math.min(ds.length, n+48);
-    l.insertAdjacentHTML('beforeend', ds.slice(n, G.S.thShown).map(G.thCard).join(''));
-    document.getElementById('thCount').textContent = G.S.thShown;
-  }
-  else if(a==='qt-more'){
-    var qs = G.QUA1000||[], lq = document.getElementById('qtList');
-    var m = G.S.qtShown||60; G.S.qtShown = Math.min(qs.length, m+60);
-    lq.insertAdjacentHTML('beforeend', qs.slice(m, G.S.qtShown).map(G.qtCard).join(''));
-    document.getElementById('qtCount').textContent = G.S.qtShown;
-  }
+  else if(a==='th-more') hienThem('thList','thCount', G.TINHHUONG, G.thCard, 48, 'data-thf');
+  else if(a==='qt-more') hienThem('qtList','qtCount', G.QUA1000, G.qtCard, 60, 'data-qf');
   else if(a==='xuat') G.xuat(el.getAttribute('data-ma'));
   else if(a==='in-vanban'){ G.inTrang('Văn bản mẫu'); }
   else if(a==='quen-mk'){ G.moQuenMatKhau && G.moQuenMatKhau(); }
@@ -1063,7 +1093,7 @@ document.addEventListener('keydown', function(e){
   if((e.ctrlKey||e.metaKey) && e.key && e.key.toLowerCase()==='k'){ e.preventDefault(); if(G.S.acc) openCmd(); }
   if(e.key==='Escape'){ U.closeModal(); document.getElementById('cmd').classList.remove('on'); closeMobile(); }
   if(e.key==='Enter' && e.target.id==='inP') doLogin(document.getElementById('inU').value, e.target.value);
-  if(e.key==='Enter' && e.target.id==='aiQ') G.ask(e.target.value);
+  /* Enter trên #aiQ do src/tro-ly-chat.js xử lý — một chỗ, không ba. */
   if(e.key==='Enter' && e.target.id==='cmdIn'){
     var b = document.querySelector('#cmdRes button'); if(b) b.click();
   }

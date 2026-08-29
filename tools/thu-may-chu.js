@@ -33,6 +33,8 @@ global.Utilities={
   computeDigest:(a,s)=>Array.from(crypto.createHash('sha256').update(s,'utf8').digest())
     .map(b=>b>127?b-256:b),
   base64Encode:by=>Buffer.from(by.map?by.map(x=>x<0?x+256:x):by).toString('base64'),
+  base64Decode:t2=>Array.from(Buffer.from(t2,'base64')).map(b=>b>127?b-256:b),
+  newBlob:(by,kieu,ten)=>({_by:by,_kieu:kieu,getName:()=>ten}),
   formatDate:(d,tz,f)=>new Date(d).toISOString()
 };
 global.MailApp={sendEmail:(to,cd,than)=>{thu.push({to,cd,than});}};
@@ -46,6 +48,7 @@ const thuMuc = {
   '1jVOnIH7286glI95fC4aqfXApecxEj7Xz': {ten:'Mã máy chủ GITA365', ghiDuoc:true, tep:[]}
 };
 global.MimeType={PLAIN_TEXT:'text/plain'};
+global.LockService={getScriptLock:()=>({waitLock:()=>true, releaseLock:()=>{}})};
 global.HtmlService={
   XFrameOptionsMode:{ALLOWALL:'ALLOWALL'},
   createHtmlOutput:h2=>({_:h2, setTitle(){return this;}, addMetaTag(){return this;},
@@ -53,6 +56,7 @@ global.HtmlService={
 };
 global.ScriptApp={getService:()=>({getUrl:()=>'https://script.google.com/macros/s/GIA-LAP/exec'})};
 global.Session={getEffectiveUser:()=>({getEmail:()=>'typhuquanggita@gmail.com'})};
+function moThuMuc(id){ return global.DriveApp.getFolderById(id); }
 global.DriveApp={
   getFolderById:id=>{
     const t=thuMuc[id];
@@ -68,11 +72,25 @@ global.DriveApp={
           getBlob:()=>({getDataAsString:()=>f, getBytes:()=>Array.from(Buffer.from(f))})
         };}};
       },
-      createFile:(ten,noi)=>{
+      createFile:(a1,noi)=>{
         if(!t.ghiDuoc) throw new Error('Không có quyền ghi');
-        const f={ten, bo:false};
+        const ten=typeof a1==='string'?a1:(a1&&a1.getName?a1.getName():'blob');
+        const f={ten, bo:false, id:'DRV-'+(t.tep.length+1)};
         t.tep.push(f);
-        return {setTrashed:v=>{f.bo=v;}, getName:()=>ten};
+        return {setTrashed:v=>{f.bo=v;}, getName:()=>ten, getId:()=>f.id,
+                setDescription:()=>{}};
+      },
+      getFoldersByName:n2=>{
+        t.con=t.con||{};
+        let da=false;
+        return {hasNext:()=>!!t.con[n2]&&!da, next:()=>{da=true; return moThuMuc(t.con[n2]);}};
+      },
+      createFolder:n2=>{
+        t.con=t.con||{};
+        const idCon='SUB-'+n2+'-'+Math.random().toString(36).slice(2,7);
+        thuMuc[idCon]={ten:n2, ghiDuoc:true, tep:[]};
+        t.con[n2]=idCon;
+        return moThuMuc(idCon);
       }
     };
   },
@@ -90,8 +108,24 @@ function moTrang(ten){
     appendRow:h=>{t.push(h.slice());},
     getDataRange:()=>({getValues:()=>t.map(r=>r.slice())}),
     getLastRow:()=>t.length,
+    getLastColumn:()=>t.length?t[0].length:0,
     setFrozenRows:()=>{},
-    getRange:(d,c,nr,nc)=>({setValues:v=>{t[d-1]=v[0].slice();}})
+    getRange:(d,c,nr,nc)=>({
+      getValues:()=>{
+        const ra=[];
+        for(let i=0;i<(nr||1);i++){
+          const h=t[d-1+i]||[];
+          ra.push(h.slice(c-1, c-1+(nc||h.length)));
+        }
+        return ra;
+      },
+      setValues:v=>{
+        for(let i=0;i<v.length;i++){
+          const h=t[d-1+i]||(t[d-1+i]=[]);
+          for(let j=0;j<v[i].length;j++) h[c-1+j]=v[i][j];
+        }
+      }
+    })
   };
 }
 const so={
@@ -125,7 +159,10 @@ console.log('\nTHỬ MÁY CHỦ GITA 365 TRÊN BẢN GIẢ LẬP' +
   (process.argv.indexOf('--gop') >= 0 ? ' · BẢN GỘP MỘT TỆP' : ' · BẢY TỆP RỜI') + '\n');
 console.log('1 · CÀI ĐẶT LẦN ĐẦU');
 const cd = caiDatLanDau();
-bao(/Đã dựng 8 bảng/.test(cd), 'dựng đủ 8 bảng dữ liệu');
+const soBang = Object.keys(GITA_BANG).length;
+bao(new RegExp('Đã dựng ' + soBang + ' bảng').test(cd),
+  'dựng đủ mọi bảng dữ liệu đã khai', soBang + ' bảng');
+bao(!!GITA_BANG.tailieu, 'có khai bảng sổ tài liệu — nơi màn kiểm duyệt đọc');
 bao(/Đã tạo Admin@gita365/.test(cd), 'tạo được tài khoản Super Admin');
 const mkTam = (cd.match(/Mật khẩu tạm: (\S+)/) || [])[1];
 bao(!!mkTam && mkTam.length >= 20, 'sinh mật khẩu tạm ngẫu nhiên, đủ dài', mkTam);
@@ -433,6 +470,124 @@ console.log('\n13 · QUÊN MẬT KHẨU — NHẬN MÃ QUA EMAIL');
   bao(qEmail.ok && H.thu().length > 0,
     'gõ địa chỉ email cũng xin được mã, không bắt nhớ đúng tên đăng nhập',
     (H.thu()[0]||{}).to || 'KHÔNG GỬI ĐƯỢC');
+}
+
+console.log('\n14 · MƯỜI BỐN LỖI ĐÃ VÁ — CANH KHÔNG CHO QUAY LẠI');
+{
+  /* ── Sổ tài liệu không được mất trắng ── */
+  const admin2 = kiemTraPhien_(dn3.token, 'Admin@gita365');
+  const tepMau = Buffer.from('noi dung tai lieu thu').toString('base64');
+  const gt = gitaNapTaiLieu_({ban:{id:'TL-TEST-1', ten:'Tài liệu thử', tenTep:'thu.txt',
+    loai:'quytrinh', tang:1, moTa:'thử ghi sổ'}, dulieu:tepMau}, admin2);
+  bao(gt.ok, 'gửi được tài liệu lên', gt.error||'');
+  const so = Store.all('tailieu');
+  bao(so.length === 1 && so[0].id === 'TL-TEST-1',
+    'bản ghi VÀO ĐƯỢC sổ tài liệu, không mất trắng', so.length + ' dòng');
+  bao(so[0] && so[0].nguoiGui && so[0].driveId && so[0].trangThai === 'cho-duyet',
+    'sổ giữ đủ người gửi, mã Drive và trạng thái chờ duyệt');
+
+  /* ── Duyệt phải thật sự ghi được quyết định ── */
+  const dt = gitaDuyetTaiLieu_({ma:'TL-TEST-1', viec:'duyet'}, admin2);
+  bao(dt.ok, 'duyệt được tài liệu có thật');
+  bao((Store.find('tailieu','TL-TEST-1')||{}).trangThai === 'da-duyet',
+    'quyết định duyệt GHI ĐƯỢC vào sổ — không phải báo ok rồi thôi');
+  const dtLa = gitaDuyetTaiLieu_({ma:'TL-KHONG-CO', viec:'duyet'}, admin2);
+  bao(!dtLa.ok && dtLa.code === 'NOTFOUND',
+    'duyệt mã không có thì báo rõ, không im lặng gật đầu');
+
+  /* ── Hồ sơ ca KHÔNG được trả về cho gia đình ── */
+  const tuVan2 = kiemTraPhien_(gitaDangNhap_({u:'tuvan.thu@gita365.vn', mk:'x'}).token, '') ;
+  /* dựng thẳng hồ sơ Tư vấn để khỏi phải tạo tài khoản mới */
+  const hsTuVan = {u:'tuvan@gita365.vn', role:'R11', tier:0, khoa:false, phaiDoiMk:false,
+    phien:{uid:'TV1', username:'tuvan@gita365.vn'}};
+  gitaCaiDat_({caiDat:{ca:{luc:Date.now(), du:[{id:'C1', nha:'Nhà chị Lan · 0901xxx',
+    tom:'Con có dấu hiệu trầm cảm', du:{loiGoc:'riêng tư'}}]}}}, hsTuVan);
+
+  const hsPh = {u:hoSo.email, role:'R13', tier:1, khoa:false, phaiDoiMk:false,
+    phien:{uid:'PH1', username:hoSo.email}};
+  const nhanPh = gitaCaiDat_({caiDat:{}}, hsPh);
+  bao(!nhanPh.ca, 'phụ huynh KHÔNG nhận được hồ sơ ca của bất kỳ nhà nào');
+  bao(!nhanPh.khothem && !nhanPh.xinthem, 'phụ huynh cũng không nhận cụm tư liệu nội bộ');
+  bao(!nhanPh.phanquyen, 'phụ huynh không nhận bảng phân quyền');
+
+  const nhanTv = gitaCaiDat_({caiDat:{}}, hsTuVan);
+  bao(!!nhanTv.ca, 'Tư vấn VẪN nhận được hồ sơ ca — chặn đúng người, không chặn nhầm');
+  bao(!nhanTv.phanquyen, 'Tư vấn không nhận bảng phân quyền — đó là việc của R01–R02');
+
+  /* ── Cụm quá lớn bị từ chối riêng, không kéo đổ cả lượt ── */
+  const to = 'x'.repeat(20000);
+  const hsAdmin = {u:'Admin@gita365', role:'R01', tier:0, khoa:false, phaiDoiMk:false,
+    phien:{uid:'AD1', username:'Admin@gita365'}};
+  const kqTo = gitaCaiDat_({caiDat:{
+    noidung:{luc:Date.now()+1, du:{a:to}},
+    sapxep:{luc:Date.now()+1, du:{thuTuNhom:['g1','g2']}}
+  }}, hsAdmin);
+  bao(kqTo.__quaLon && kqTo.__quaLon.indexOf('noidung') >= 0,
+    'cụm vượt 9 KB bị từ chối RIÊNG cụm đó, nói rõ cụm nào');
+  bao(!!kqTo.sapxep, 'cụm nhỏ đi cùng lượt vẫn lưu được — không kéo đổ cả lượt đồng bộ');
+
+  /* ── Dò tài khoản ở màn đăng nhập ── */
+  const nd0 = Store.all('users').filter(x => x.username === hoSo.email)[0];
+  Store.update('users', nd0.id, {active:'FALSE'});
+  const khoaSai = gitaDangNhap_({u:hoSo.email, mk:'mat-khau-bia-dat'});
+  const laSai   = gitaDangNhap_({u:'khong-ai-o-day@gmail.com', mk:'mat-khau-bia-dat'});
+  bao(khoaSai.error === laSai.error,
+    'tài khoản bị khoá và tài khoản không có trả lời Y HỆT — không dò được ai đã đăng ký');
+  const khoaDung = gitaDangNhap_({u:hoSo.email, mk:'NhaBinhYen2027'});
+  bao(!khoaDung.ok && khoaDung.code === 'LOCKED',
+    'nhưng đúng mật khẩu thì nói thật là tài khoản đang khoá');
+  Store.update('users', nd0.id, {active:'TRUE'});
+
+  /* ── Trần đoán mật khẩu ── */
+  CacheService.getScriptCache().remove('DANGNHAP_SAI_' + hoSo.email);
+  let biChan = null;
+  for (let i = 0; i < 12; i++) {
+    const r2 = gitaDangNhap_({u:hoSo.email, mk:'sai-' + i});
+    if (r2.code === 'RATE') { biChan = r2; break; }
+  }
+  bao(!!biChan, 'đoán mật khẩu liên tiếp thì bị chặn', biChan ? biChan.error : 'KHÔNG CHẶN');
+
+  /* ── Đổi mật khẩu phải đá mọi phiên ── */
+  CacheService.getScriptCache().remove('DANGNHAP_SAI_' + hoSo.email);
+  const pA = gitaDangNhap_({u:hoSo.email, mk:'NhaBinhYen2027'});
+  const pB = gitaDangNhap_({u:hoSo.email, mk:'NhaBinhYen2027'});
+  bao(pA.ok && pB.ok && !!readSession_(pB.token), 'mở được hai phiên cùng lúc');
+  const doiMk = gitaDoiMatKhau_({token:pA.token, u:hoSo.email, cu:'NhaBinhYen2027',
+    moi:'MotChonBinhYen2028'}, kiemTraPhien_(pA.token, hoSo.email));
+  bao(doiMk.ok, 'đổi được mật khẩu', doiMk.error||'');
+  bao(!readSession_(pB.token),
+    'đổi mật khẩu ĐÁ LUÔN phiên trên thiết bị khác — kẻ giữ token cũ mất quyền ngay');
+
+  /* ── Trần gửi thư đăng ký ── */
+  H.xoaThu();
+  const hs2 = Object.assign({}, hoSo, {email:'nan.nhan.thu@gmail.com', hoTen:'Nguyễn Thử'});
+  let guiDuoc = 0;
+  for (let i = 0; i < 10; i++) { H.xoaThu(); gitaDangKy_({hoSo:hs2}); guiDuoc += H.thu().length; }
+  bao(guiDuoc <= 3, 'một địa chỉ email không nhận quá ba thư đăng ký mỗi giờ',
+    guiDuoc + ' thư trong 10 lượt');
+
+  /* ── Tên tự đặt không nhét được nội dung vào thân thư ── */
+  H.xoaThu();
+  gitaDangKy_({hoSo:Object.assign({}, hoSo, {email:'nan.nhan2@gmail.com',
+    hoTen:'A\nMUA HANG GIA RE tai http://xau.vn'})});
+  const thuXau = H.thu()[0];
+  bao(!thuXau || !/\n\s*MUA HANG/.test(thuXau.than),
+    'tên người gửi tự đặt không xuống dòng được trong thân thư');
+
+  /* ── Mật khẩu lần đầu phải qua luật mạnh yếu ── */
+  const yeuDau = gitaKichHoat_({token:'khong-co', mk:'1234567890'});
+  bao(!yeuDau.ok, 'mật khẩu dễ đoán không đặt được ngay từ lần đầu');
+
+  /* ── Trần bộ nhớ tạm không vượt giới hạn Apps Script ── */
+  bao(GITA_CACHE_NGAY <= 21600, 'trần bộ nhớ tạm nằm trong giới hạn 6 giờ của Apps Script',
+    GITA_CACHE_NGAY + ' giây');
+
+  /* ── Bổ sung cột cho bảng cũ ── */
+  H.trang.users[0] = H.trang.users[0].slice(0, 5);   /* giả lập sổ bản cũ thiếu cột */
+  dungSoDuLieu();
+  bao(H.trang.users[0].length === GITA_BANG.users.length,
+    'dựng lại sổ thì BỔ SUNG cột còn thiếu cho bảng cũ',
+    H.trang.users[0].length + '/' + GITA_BANG.users.length + ' cột');
 }
 
 console.log('\n' + (loi ? '✗ CÒN '+loi+' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — máy chủ chạy đúng'));

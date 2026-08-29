@@ -58,8 +58,12 @@ G.goiDuocCap = function () {
      của những gói tài khoản đó được cấp phép. Client không tự phong quyền. */
   var r = G.S.roleObj, ds = ['nen'];
   if (!r) return ds;
-  if (r.lv <= 11) ds.push('nghe');
-  if (r.lv <= 11 || r.portal === 'ph' || r.portal === 'hs')
+  /* Bậc 12 chứ không phải 11. Ba bảng khác đều nói kho nghề mở tới R12
+     (G.PERM.nghe_chung = 12, G.TANG_HIENTHI, và bảng tỉ lệ hiển thị), nhưng
+     chỗ này từng dừng ở 11 — nên Chuyên viên phân tích thấy mục "Kho báu vật"
+     và "Sách gốc" trong trình đơn mà bấm vào chỉ ra màn xin cấp phép. */
+  if (r.lv <= 12) ds.push('nghe');
+  if (r.lv <= 12 || r.portal === 'ph' || r.portal === 'hs')
     for (var i = 1; i <= 5; i++) ds.push('tang' + i);
   return ds;
 };

@@ -10,7 +10,26 @@ var G = window.G || {}; window.G = G;
 
 var KEY_MOC = 'gita365.moc';       // mốc sửa từng trường
 var KEY_HANG = 'gita365.hangcho';  // hàng chờ khi mất mạng
-var NHOM = ['checks', 'journal', 'vision', 'test', 'mood'];
+/* Thêm thuvien và minhchung: src/thu-vien.js vẫn gọi G.danhDau cho hai nhóm
+   này, nhưng chúng không nằm trong danh sách nên mốc bị bỏ ngay ở cửa — sổ
+   thư viện và minh chứng nhiệm vụ nằm lại đúng một trình duyệt. Phụ huynh
+   nộp minh chứng trên điện thoại, Coach mở máy mình thì không có gì. */
+var NHOM = ['checks', 'journal', 'vision', 'test', 'mood', 'thuvien', 'minhchung'];
+
+/* ─── Nhóm nào lấy dữ liệu ở đâu ───
+   Trước đây gomThayDoi luôn đọc G.S[nhom]. Nhưng sổ thư viện nằm ở
+   G.THUVIEN và sổ minh chứng nằm ở G.MINHCHUNG, nên hai nhóm ấy đánh dấu
+   xong là dữ liệu rơi vào khoảng không: mốc có, dữ liệu không, và không ai
+   nhìn thấy gì bất thường. Khai thẳng ra đây thì không đoán nữa. */
+var NGUON = {
+  thuvien:   {lay:function(){ return G.THUVIEN; },   dat:function(v){ if(Array.isArray(v)) G.THUVIEN = v; }},
+  minhchung: {lay:function(){ return G.MINHCHUNG; }, dat:function(v){ if(Array.isArray(v)) G.MINHCHUNG = v; }}
+};
+function layNguon(nhom){ return NGUON[nhom] ? NGUON[nhom].lay() : G.S[nhom]; }
+function datNguon(nhom, v){
+  if(NGUON[nhom]) NGUON[nhom].dat(v);
+  else G.S[nhom] = v;
+}
 
 G.DONGBO = { trangThai: 'chua', lanCuoi: null, choBaoNhieu: 0, loi: null };
 
@@ -39,9 +58,18 @@ function gomThayDoi(){
     if(m[k] <= lan) return;
     var i = k.indexOf('.'), nhom = k.slice(0, i), khoa = k.slice(i + 1);
     if(NHOM.indexOf(nhom) < 0) return;
-    var nguon = G.S[nhom];
-    if(!nguon || typeof nguon !== 'object') return;
-    day[nhom] = day[nhom] || {};
+    var nguon = layNguon(nhom);
+    /* Nhóm có thể là một giá trị đơn, không phải đối tượng — G.S.mood là
+       một chuỗi. Trước đây nhánh này lặng lẽ bỏ qua, nên mốc đã ghi mà dữ
+       liệu không bao giờ đi lên: không vào day, không vào mocDay, và cũng
+       không vào danh sách bỏ qua để ai đó nhìn thấy. */
+    if(nguon === undefined || nguon === null) return;
+    if(typeof nguon !== 'object'){
+      day[nhom] = nguon;
+      mocDay[k] = m[k];
+      return;
+    }
+    day[nhom] = (typeof day[nhom] === 'object' && day[nhom]) ? day[nhom] : {};
     day[nhom][khoa] = nguon[khoa];
     mocDay[k] = m[k];
   });
@@ -54,12 +82,23 @@ function nhanVe(keo, mocChu){
   var m = docMoc(), doi = 0;
   NHOM.forEach(function(nhom){
     var v = keo[nhom];
-    if(!v || typeof v !== 'object') return;
-    G.S[nhom] = G.S[nhom] || {};
+    if(v === undefined || v === null) return;
+
+    /* Nhóm là một giá trị đơn (G.S.mood là chuỗi) hoặc là một mảng
+       (sổ thư viện, sổ minh chứng): nhận nguyên khối theo mốc của nhóm. */
+    if(typeof v !== 'object' || Array.isArray(v)){
+      var khoaN = nhom + '.' + (Array.isArray(v) ? 'so' : nhom);
+      var tC = Number((mocChu || {})[khoaN] || 0), tM = Number(m[khoaN] || 0);
+      if(tC > tM){ datNguon(nhom, v); m[khoaN] = tC; doi++; }
+      return;
+    }
+
+    var hien = layNguon(nhom);
+    if(!hien || typeof hien !== 'object'){ hien = {}; datNguon(nhom, hien); }
     Object.keys(v).forEach(function(k){
       var khoa = nhom + '.' + k;
       var tChu = Number((mocChu || {})[khoa] || 0), tMay = Number(m[khoa] || 0);
-      if(tChu > tMay){ G.S[nhom][k] = v[k]; m[khoa] = tChu; doi++; }
+      if(tChu > tMay){ hien[k] = v[k]; m[khoa] = tChu; doi++; }
     });
   });
   ghiMoc(m);

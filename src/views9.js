@@ -9,7 +9,7 @@ G.VIEWS = G.VIEWS || {};
 (function(){
 var U = G.U, h = U.h, ic = U.ic;
 
-function tc(t){ var x=(G.TIERS||[]).filter(function(y){return y.code===t;})[0]; return x?x.color:'var(--gold)'; }
+function tc(t){ var x=(G.TIERS||[]).filter(function(y){return y.code===t;})[0]; return x ? x.c : 'var(--gita)'; }
 function coTang(t){ return !!(G['MATRAN_'+t] && G['MATRAN_'+t].length); }
 function lay(t, ma){ var a=G['MATRAN_'+t]||[]; for(var i=0;i<a.length;i++) if(a[i].ma===ma) return a[i]; return null; }
 

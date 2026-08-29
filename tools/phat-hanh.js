@@ -98,6 +98,10 @@ try {
   }
 }
 chay('node', ['tools/kiem-tra.js']);
+/* Dựng được không có nghĩa là bấm được. Bộ này đăng nhập TỪNG VAI, nạp lại
+   kho theo đúng phạm vi vai đó, rồi đi hết mọi mục — bắt được mục chết mà
+   bộ kiểm dựng-rồi-đếm không thấy. */
+chay('node', ['tools/di-bo-lien-ket.js']);
 if (mayChu) { try { process.kill(-mayChu.pid); } catch (e) {} }
 
 /* ─── 5a-bis. Thử mã máy chủ trên bản giả lập Apps Script ───
@@ -154,15 +158,39 @@ CAM.forEach(function (c) {
   }
 }
 
-/* Tệp .enc phải thật sự là dữ liệu đã mã hoá, không phải JSON đọc được */
+/* Tệp .enc phải thật sự là dữ liệu đã mã hoá, không phải JSON đọc được.
+   Đo bằng TỈ LỆ BYTE IN ĐƯỢC trên một cửa sổ lớn, không bắt vài ký tự lẻ:
+   dữ liệu đã mã hoá cho ra byte ngẫu nhiên nên chỉ khoảng 35–40% in được,
+   còn JSON hay mã nguồn thì gần 100%.
+
+   Bản trước bắt "có ngoặc VÀ có sáu chữ cái liền nhau" — trong hai trăm
+   byte ngẫu nhiên, chuyện đó xảy ra đủ thường xuyên để chặn nhầm một bản
+   phát hành sạch. Một bộ canh báo nhầm là bộ canh sẽ bị bỏ qua. */
 const encs = fs.readdirSync(path.join(GOC, 'kho')).filter(function (f) { return f.endsWith('.enc'); });
-let doc = 0;
+/* Đo thật trên bộ hiện tại: bảy tệp đã mã hoá cho 37–39% byte in được, còn
+   kho/mau.json (JSON tiếng Việt, nhiều byte UTF-8) cho 64%. Đặt ngưỡng ở
+   giữa hai vùng ấy — 75% thì quá cao, JSON tiếng Việt lọt qua. */
+const NGUONG_IN = 0.50;
+let doc = [];
 encs.forEach(function (f) {
-  const b = fs.readFileSync(path.join(GOC, 'kho', f)).subarray(28, 228).toString('utf8');
-  if (/[{}"]/.test(b) && /[a-zA-Z]{6}/.test(b)) doc++;
+  const b = fs.readFileSync(path.join(GOC, 'kho', f)).subarray(28, 8228);
+  if (!b.length) return;
+  let inDuoc = 0;
+  for (const x of b) if ((x >= 32 && x < 127) || x === 9 || x === 10 || x === 13) inDuoc++;
+  const ti = inDuoc / b.length;
+  /* Hai dấu hiệu bổ sung: mảnh JSON thật, hoặc mã nguồn thật */
+  const chu = b.toString('utf8');
+  const loThayRo = /"(ma|ten|tang|nhom)"\s*:|G\.[A-Z_]{3,}\s*=/.test(chu);
+  if (ti > NGUONG_IN || loThayRo)
+    doc.push(f + ' (' + Math.round(ti * 100) + '% byte in được' + (loThayRo ? ', thấy mảnh JSON' : '') + ')');
 });
-if (doc) { ro++; console.log('  ✗ ' + doc + ' tệp .enc đọc được bằng mắt — chưa mã hoá đúng'); }
-else console.log('  ✓ ' + encs.length + ' tệp .enc đều không đọc được nếu không có khoá');
+if (doc.length) {
+  ro++;
+  console.log('  ✗ ' + doc.length + ' tệp .enc đọc được bằng mắt — chưa mã hoá đúng');
+  doc.forEach(function (x) { console.log('      ' + x); });
+} else {
+  console.log('  ✓ ' + encs.length + ' tệp .enc đều không đọc được nếu không có khoá');
+}
 if (ro) { console.error('\n✗ DỪNG — có tài sản sắp lọt ra ngoài. Không đẩy gì cả.'); process.exit(1); }
 
 /* ─── 7. Đẩy ─── */

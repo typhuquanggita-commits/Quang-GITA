@@ -34,7 +34,7 @@ function gitaDemGuiNgay_(u) {
   var kho = CacheService.getScriptCache();
   var k = 'TLGUI_' + String(u).toLowerCase() + '_' + Utilities.formatDate(new Date(), 'GMT+7', 'yyyyMMdd');
   var n = Number(kho.get(k) || 0) + 1;
-  kho.put(k, String(n), 86400);
+  kho.put(k, String(n), GITA_CACHE_NGAY);
   return n;
 }
 
@@ -86,15 +86,26 @@ function gitaNapTaiLieu_(y, hoSo) {
     'Mô tả: ' + String(ban.moTa || '') + '\n' +
     'Trạng thái: CHỜ DUYỆT — chỉ vào kho sau khi Super Admin hoặc Admin duyệt.');
 
-  /* Ghi vào sổ tài liệu để màn kiểm duyệt đọc được */
+  /* Ghi vào sổ tài liệu để màn kiểm duyệt đọc được.
+     Mã tài liệu ĐI VÀO CỘT id — Store tìm theo id, nên đặt ở cột khác thì
+     sau này không ai tìm lại được bản ghi để duyệt.
+     Không nuốt lỗi ở đây: tệp đã nằm trên Drive mà sổ không ghi được thì
+     người gửi phải biết, nếu không tài liệu treo lơ lửng không ai duyệt. */
+  var maTL = String(ban.id || '') || ('TL-' + Date.now().toString(36).toUpperCase());
   try {
     Store.insert('tailieu', {
-      ma: ban.id || '', ten: ten, loai: ban.loai || '', tang: ban.tang || 0,
+      id: maTL, ten: ten, loai: ban.loai || '', tang: ban.tang || 0,
       moTa: String(ban.moTa || ''), driveId: tep.getId(), tenTep: tenTep,
       nguoiGui: hoSo.u, vaiGui: hoSo.role, luc: new Date().toISOString(),
-      trangThai: 'cho-duyet'
+      trangThai: 'cho-duyet', nguoiDuyet: '', lucDuyet: '', lyDo: ''
     });
-  } catch (e) { /* chưa có sổ thì tệp vẫn nằm đúng chỗ trên Drive */ }
+  } catch (e) {
+    ghiNhatKy_({ viec: 'GUI_TL_LOI', u: hoSo.u, role: hoSo.role,
+      chiTiet: maTL + ' · tệp đã lên Drive nhưng không ghi được sổ: ' + e.message });
+    return { ok: false, driveId: tep.getId(),
+      error: 'Tệp đã lưu lên Drive nhưng máy chủ chưa ghi được vào sổ kiểm duyệt. ' +
+             'Báo cho Admin hệ thống kèm mã ' + maTL + '.' };
+  }
 
   ghiNhatKy_({ viec: 'GUI_TL', u: hoSo.u, role: hoSo.role,
     chiTiet: (ban.id || '') + ' · ' + ten + ' · ' + Math.round(byte.length / 1024) + ' KB' });
@@ -123,14 +134,26 @@ function gitaDuyetTaiLieu_(y, hoSo) {
     return { ok: false, error: 'Phải ghi rõ lý do hoặc điều cần bổ sung.' };
 
   var tt = viec === 'duyet' ? 'da-duyet' : viec === 'sua' ? 'yeu-cau-sua' : 'tu-choi';
+  var ma = String(y.ma || '');
+
+  /* Store.find nhận một MÃ, không nhận đối tượng. Truyền {ma:…} vào đây thì
+     nó so với chuỗi "[object Object]" và luôn không tìm thấy — nên trước đây
+     hàm này trả về ok cho ứng dụng mà không đổi gì ở đâu cả: Admin tưởng đã
+     duyệt, tài liệu vẫn nằm nguyên trạng thái chờ. */
+  var b = null;
+  try { b = Store.find('tailieu', ma); } catch (e) { b = null; }
+  if (!b) return { ok: false, code: 'NOTFOUND',
+    error: 'Không tìm thấy tài liệu mã ' + ma + ' trong sổ.' };
+
   try {
-    var b = Store.find('tailieu', { ma: String(y.ma || '') });
-    if (b) Store.update('tailieu', b.id, {
+    Store.update('tailieu', b.id, {
       trangThai: tt, nguoiDuyet: hoSo.u, lucDuyet: new Date().toISOString(), lyDo: lyDo
     });
-  } catch (e) { /* không có sổ thì vẫn ghi nhật ký */ }
+  } catch (e) {
+    return { ok: false, error: 'Không ghi được quyết định: ' + e.message };
+  }
 
   ghiNhatKy_({ viec: 'DUYET_TL', u: hoSo.u, role: hoSo.role,
-    chiTiet: String(y.ma || '') + ' → ' + tt + (lyDo ? ' · ' + lyDo : '') });
-  return { ok: true, trangThai: tt, thongBao: 'Đã ghi quyết định.' };
+    chiTiet: ma + ' → ' + tt + (lyDo ? ' · ' + lyDo : '') });
+  return { ok: true, ma: ma, trangThai: tt, thongBao: 'Đã ghi quyết định.' };
 }

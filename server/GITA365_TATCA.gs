@@ -97,7 +97,13 @@ var GITA_BANG = {
   audit:          ['id','luc','uid','username','viec','doiTuong','chiTiet'],
   hosoApp:        ['id','uid','u','role','duLieu','moc','taoLuc','suaLuc'],
   hosoAppSaoLuu:  ['id','uid','duLieu','luc'],
-  thanhToan:      ['id','maKhachHang','tier','soTien','trangThai','nguoiDuyet','luc','ghiChu']
+  thanhToan:      ['id','maKhachHang','tier','soTien','trangThai','nguoiDuyet','luc','ghiChu',
+                   'daDung','dungChoHocVien','dungLuc'],
+  /* Sổ tài liệu. Trước đây bảng này KHÔNG được khai, nên Store tạo trang chỉ
+     có một cột id và mọi bản ghi gửi lên biến mất không một lời báo: tệp nằm
+     trên Drive nhưng màn kiểm duyệt không có gì để đọc. */
+  tailieu:        ['id','ten','loai','tang','moTa','driveId','tenTep','nguoiGui','vaiGui',
+                   'luc','trangThai','nguoiDuyet','lucDuyet','lyDo']
 };
 
 /* ═══════════════ BẬC VAI ═══════════════
@@ -150,9 +156,24 @@ function gitaTrang_(ten) {
 
 /** Dựng đủ mọi bảng. Chạy một lần sau khi dán mã. */
 function dungSoDuLieu() {
-  Object.keys(GITA_BANG).forEach(function (t) { gitaTrang_(t); });
-  return 'Đã dựng ' + Object.keys(GITA_BANG).length + ' bảng trong "' + GITA_TEN_SO +
-         '". Mở Drive để xem.';
+  var them = [];
+  Object.keys(GITA_BANG).forEach(function (t) {
+    var tr = gitaTrang_(t);
+    /* Trang đã có từ bản cũ thì BỔ SUNG cột còn thiếu. Không làm việc này
+       thì mọi trường mới bị Store âm thầm bỏ đi — như cột mustChangePw:
+       tài khoản vẫn tạo được, nhưng lớp chặn "mật khẩu tạm không mở kho"
+       biến mất không một lời báo. */
+    var can = GITA_BANG[t];
+    var dang = tr.getLastRow() ? tr.getRange(1, 1, 1, tr.getLastColumn()).getValues()[0] : [];
+    var thieu = can.filter(function (c) { return dang.indexOf(c) < 0; });
+    if (dang.length && thieu.length) {
+      tr.getRange(1, dang.length + 1, 1, thieu.length).setValues([thieu]);
+      them.push(t + ': +' + thieu.join(', '));
+    }
+  });
+  return 'Đã dựng ' + Object.keys(GITA_BANG).length + ' bảng trong "' + GITA_TEN_SO + '".' +
+         (them.length ? '\n  Bổ sung cột còn thiếu — ' + them.join(' · ') : '') +
+         '\n  Mở Drive để xem.';
 }
 
 /* ═══════════════ STORE ═══════════════
@@ -247,6 +268,15 @@ function safeEqual_(a, b) {
 /* ═══════════════ PHIÊN ═══════════════ */
 var GITA_HAN_PHIEN_GIO = 12;
 
+/* Trần đoán mật khẩu: sai bao nhiêu lần thì khoá, và khoá bao lâu. */
+/* CacheService chỉ giữ tối đa 21.600 giây (6 giờ). Đặt 86.400 như trước là
+   im lặng bị cắt xuống 6 giờ: nghỉ một buổi chiều là bộ đếm "mỗi ngày" về 0
+   trong cùng ngày, và trần 20 lượt xuất, 30 tệp gửi thành vô nghĩa. */
+var GITA_CACHE_NGAY = 21600;
+
+var GITA_TRAN_DANG_NHAP_SAI = 8;
+var GITA_KHOA_DANG_NHAP_GIAY = 900;      /* 15 phút */
+
 function taoPhien_(nd) {
   var id = gitaMaMoi_('S');
   var het = Date.now() + GITA_HAN_PHIEN_GIO * 3600e3;
@@ -270,6 +300,25 @@ function readSession_(token) {
 function xoaPhien_(token) {
   var s = Store.find('sessions', token);
   if (s) Store.update('sessions', token, {exp: 0});
+}
+
+/**
+ * Đóng MỌI phiên của một tài khoản.
+ *
+ * Vì sao cần: đổi mật khẩu mà chỉ đóng phiên của chính mình thì kẻ đang giữ
+ * token cũ vẫn vào được tới hết mười hai giờ — đúng lúc chủ tài khoản tin là
+ * mình vừa cắt được. Đổi mật khẩu phải có nghĩa là mọi thiết bị khác bị đá ra.
+ */
+function xoaMoiPhien_(uid, trừToken) {
+  var n = 0;
+  Store.all('sessions').forEach(function (s) {
+    if (String(s.uid) !== String(uid)) return;
+    if (trừToken && String(s.id) === String(trừToken)) return;
+    if (Number(s.exp || 0) <= Date.now()) return;
+    Store.update('sessions', s.id, {exp: 0});
+    n++;
+  });
+  return n;
 }
 
 /* ═══════════════ NHẬT KÝ ═══════════════
@@ -299,12 +348,43 @@ function gitaDangNhap_(y) {
   /* Trả lời giống nhau cho "không có tài khoản" và "sai mật khẩu" — không
      để ai dò xem email nào đã đăng ký. */
   var chung = {ok: false, error: 'Tên đăng nhập hoặc mật khẩu chưa đúng.'};
-  if (!nd) return chung;
-  if (!isTrue(nd.active) || nd.deletedAt) return {ok: false, error: 'Tài khoản đang bị khoá.'};
-  if (!safeEqual_(hashPw_(mk, nd.pwSalt), nd.pwHash)) {
+
+  /* ── Trần đoán mật khẩu ──
+     Trước đây không chỗ nào đếm số lần sai, nên một máy có thể thử hàng
+     nghìn mật khẩu liên tiếp mà không gặp cản nào. Đếm theo tên đăng nhập
+     người gọi gõ vào, kể cả khi tài khoản không có thật — nếu chỉ đếm cho
+     tài khoản có thật thì chính bộ đếm lại tố cáo tài khoản nào tồn tại. */
+  var demKey = 'DANGNHAP_SAI_' + u;
+  var cache = CacheService.getScriptCache();
+  var soSai = Number(cache.get(demKey) || 0);
+  if (soSai >= GITA_TRAN_DANG_NHAP_SAI) {
+    audit_(null, 'DANG_NHAP_CHAN', u, 'Vượt ' + GITA_TRAN_DANG_NHAP_SAI + ' lần sai');
+    return {ok: false, code: 'RATE',
+      error: 'Sai quá nhiều lần. Thử lại sau ' + Math.round(GITA_KHOA_DANG_NHAP_GIAY / 60) +
+             ' phút, hoặc dùng mục Quên mật khẩu.'};
+  }
+  function demSai() {
+    cache.put(demKey, String(soSai + 1), GITA_KHOA_DANG_NHAP_GIAY);
+  }
+
+  if (!nd) { demSai(); return chung; }
+
+  /* Tài khoản bị khoá cũng trả CÂU CHUNG — báo riêng "Tài khoản đang bị khoá"
+     là nói cho người lạ biết email đó có thật, đúng thứ dòng trên vừa nói là
+     phải tránh. Chỉ khi mật khẩu ĐÚNG mới nói thật lý do, vì lúc đó người
+     hỏi chính là chủ tài khoản. */
+  var mkDung = safeEqual_(hashPw_(mk, nd.pwSalt), nd.pwHash);
+  if (!mkDung) {
+    demSai();
     audit_({uid: nd.id, username: nd.username}, 'DANG_NHAP_SAI', nd.username, '');
     return chung;
   }
+  if (!isTrue(nd.active) || nd.deletedAt) {
+    audit_({uid: nd.id, username: nd.username}, 'DANG_NHAP_KHOA', nd.username, '');
+    return {ok: false, code: 'LOCKED',
+      error: 'Tài khoản đang bị khoá. Liên hệ Học viện GITA · 08.5555.4688.'};
+  }
+  cache.remove(demKey);   /* vào được thì xoá bộ đếm */
 
   var p = taoPhien_(nd);
   audit_({uid: nd.id, username: nd.username}, 'DANG_NHAP', nd.username, '');
@@ -475,10 +555,12 @@ function closeSession_(token) {
   try { xoaPhien_(token); } catch (e) {}
 }
 
-/** Xoá bộ đếm đăng nhập sai của một tài khoản, sau khi đặt lại mật khẩu. */
+/** Xoá bộ đếm đăng nhập sai. Khoá phải khớp đúng khoá gitaDangNhap_ ghi vào,
+    nếu không thì hàm này chạy mà không xoá gì cả. */
 function clearFail_(u) {
   try {
-    CacheService.getScriptCache().remove('DANGNHAP_SAI_' + String(u).toLowerCase());
+    var c = CacheService.getScriptCache();
+    c.remove('DANGNHAP_SAI_' + String(u).toLowerCase());
   } catch (e) {}
 }
 
@@ -681,7 +763,9 @@ function gitaPhamViCapPhep(hoSo) {
   var ds = ['nen'];                        // mọi tài khoản đã đăng nhập
   var lv = (ROLES[hoSo.role] || { lv: 99 }).lv;
 
-  if (lv <= 11) {                           // tư vấn, coach, quản lý, quản trị
+  /* Tới bậc 12 — khớp với G.PERM.nghe_chung trong ứng dụng. Lệch một bậc ở
+     đây thì R12 thấy mục trong trình đơn nhưng máy chủ không cấp khoá. */
+  if (lv <= 12) {                           // tư vấn, coach, quản lý, quản trị, phân tích
     ds.push('nghe');
     for (var i = 1; i <= 5; i++) ds.push('tang' + i);
     return ds;
@@ -899,6 +983,8 @@ function ghiNhatKy_(muc) {
 var GITA_OTP_PHUT     = 15;   /* mã sống bao lâu */
 var GITA_OTP_SAI_TOI  = 5;    /* sai bao nhiêu lần thì huỷ */
 var GITA_KICHHOAT_GIO = 24;   /* link kích hoạt sống bao lâu */
+var GITA_TRAN_DK_EMAIL_GIO = 3;    /* mỗi địa chỉ email: 3 lượt đăng ký mỗi giờ */
+var GITA_TRAN_DK_TONG_GIO  = 60;   /* cả hệ thống: 60 lượt mỗi giờ */
 
 function gitaOtpMoi_() {
   var n = '';
@@ -936,6 +1022,31 @@ function gitaDangKy_(y) {
   var thongBao = 'Nếu email này chưa có tài khoản, mã sáu số vừa được gửi tới ' + email +
                  '. Mã sống ' + GITA_OTP_PHUT + ' phút.';
 
+  /* ── Trần gửi thư ──
+     Đây là cửa duy nhất không cần phiên mà lại gửi email tới địa chỉ do
+     người gọi tự đặt, với tên do người gọi tự viết. Không có trần thì một
+     máy gửi được hàng trăm thư mang nội dung tuỳ ý, và hạn 100 thư/ngày của
+     tài khoản Google cạn sạch — kéo theo OTP và mã lấy lại mật khẩu của
+     khách hàng thật ngừng gửi cả ngày.
+
+     Đếm hai lớp: theo địa chỉ nhận, và theo tổng số lượt của cả hệ thống. */
+  var cache = CacheService.getScriptCache();
+  var kEmail = 'DK_DEM_' + email;
+  var nEmail = Number(cache.get(kEmail) || 0) + 1;
+  cache.put(kEmail, String(nEmail), 3600);
+  if (nEmail > GITA_TRAN_DK_EMAIL_GIO) {
+    audit_(null, 'DANG_KY_CHAN', email, 'Vượt ' + GITA_TRAN_DK_EMAIL_GIO + ' lượt/giờ cho một email');
+    return {ok: true, thongBao: thongBao};
+  }
+  var kChung = 'DK_DEM_TONG';
+  var nChung = Number(cache.get(kChung) || 0) + 1;
+  cache.put(kChung, String(nChung), 3600);
+  if (nChung > GITA_TRAN_DK_TONG_GIO) {
+    audit_(null, 'DANG_KY_CHAN_TONG', email,
+      'Cả hệ thống vượt ' + GITA_TRAN_DK_TONG_GIO + ' lượt đăng ký/giờ');
+    return {ok: true, thongBao: thongBao};
+  }
+
   /* Email đã có tài khoản: dừng ở đây nhưng trả lời y hệt trường hợp thường,
      và gửi một thư nhắc rằng tài khoản đã tồn tại. Người thật vẫn biết
      phải làm gì; người dò danh sách thì không biết thêm điều gì. */
@@ -956,7 +1067,9 @@ function gitaDangKy_(y) {
   var muoi = Utilities.getUuid();
   var ban = {
     email: email,
-    hoTen: String(d.hoTen || '').trim(),
+    /* Cắt ngắn và bỏ ký tự xuống dòng: tên này đi vào thân thư gửi ra ngoài,
+       để nguyên thì thành chỗ nhét nội dung tuỳ ý vào thư mang tên GITA. */
+    hoTen: String(d.hoTen || '').replace(/[\r\n]+/g, ' ').trim().slice(0, 60),
     dienThoai: dt,
     tenCon: String(d.tenCon || '').trim(),
     lop: String(d.lop || '').trim(),
@@ -1056,7 +1169,11 @@ function gitaDiaChiUngDung_() {
 function gitaKichHoat_(y) {
   var token = String(y.token || '');
   var mk = String(y.mk || '');
-  if (mk.length < 10) return {ok: false, error: 'Mật khẩu cần ít nhất 10 ký tự.'};
+  /* Dùng đúng luật mạnh yếu như chỗ đổi mật khẩu. Trước đây chỗ này chỉ đòi
+     đủ 10 ký tự, nên '1234567890' mở được tài khoản mới trong khi chính mật
+     khẩu ấy bị từ chối khi đổi — luật chặt ở cửa sau, hở ở cửa trước. */
+  var manh = checkPwStrength_(mk);
+  if (manh !== true && manh) return {ok: false, code: 'WEAK', error: String(manh)};
 
   var c = Store.all('dangKyCho').filter(function (x) {
     return String(x.tokenKichHoat || '') === token && x.trangThai === 'choKichHoat';
@@ -1065,9 +1182,22 @@ function gitaKichHoat_(y) {
   if (Number(c.tokenHan || 0) < Date.now())
     return {ok: false, error: 'Đường dẫn đã hết hạn. Xin đăng ký lại.'};
 
-  /* Mã số khách hàng: đánh số liên tục, không đoán được ai là ai từ mã. */
-  var soHienCo = Store.all('users').filter(function (x) { return x.maKhachHang; }).length;
-  var maKH = 'GITA-' + ('0000' + (soHienCo + 1)).slice(-4);
+  /* Mã số khách hàng: đánh số liên tục, không đoán được ai là ai từ mã.
+     Phải KHOÁ: hai gia đình bấm link kích hoạt cùng lúc thì hai lần chạy
+     song song cùng đọc N và cùng sinh GITA-000(N+1) — hai nhà chung một mã,
+     mà việc nâng tầng lại dò phiếu thanh toán theo đúng mã đó. */
+  var khoa = null;
+  try {
+    khoa = LockService.getScriptLock();
+    khoa.waitLock(20000);
+  } catch (e) {
+    return {ok: false, error: 'Máy chủ đang bận. Bấm lại đường dẫn sau ít giây.'};
+  }
+
+  var maKH;
+  try {
+    var soHienCo = Store.all('users').filter(function (x) { return x.maKhachHang; }).length;
+    maKH = 'GITA-' + ('0000' + (soHienCo + 1)).slice(-4);
 
   var muoi = Utilities.getUuid();
   var uid = gitaMaMoi_('U');
@@ -1087,7 +1217,11 @@ function gitaKichHoat_(y) {
     maKhachHang: maKH, boTro: c.maGioiThieu || ''
   });
 
-  Store.update('dangKyCho', c.id, {trangThai: 'xong', tokenKichHoat: '', tokenHan: 0});
+    Store.update('dangKyCho', c.id, {trangThai: 'xong', tokenKichHoat: '', tokenHan: 0});
+  } finally {
+    try { khoa.releaseLock(); } catch (e) {}
+  }
+
   audit_({uid: uid, username: c.email}, 'DANG_KY_XONG', maKH,
     'Tầng 0 · chờ hoàn thành KPI và xác nhận thanh toán' +
     (c.maGioiThieu ? ' · bảo trợ ' + c.maGioiThieu : ''));
@@ -1124,15 +1258,33 @@ function gitaNangTang_(y, hoSo) {
   if (kpi < 80)
     return {ok: false, error: 'KPI tầng đang là ' + kpi + '%. Cửa nâng tầng là 80%.'};
 
-  var tt = Store.all('thanhToan').filter(function (x) {
-    return String(x.maKhachHang) === String(y.maKhachHang || '') &&
-           Number(x.tier) === tangMoi && String(x.trangThai) === 'daXacNhan';
-  })[0];
-  if (!tt) return {ok: false, error: 'Chưa có xác nhận thanh toán cho tầng ' + tangMoi + '.'};
+  /* Mã khách hàng phải là mã của CHÍNH nhà này.
+     Trước đây mã lấy thẳng từ thân yêu cầu và không đối chiếu với hồ sơ học
+     viên, nên một phiếu thanh toán của nhà A mở được tầng cho con nhà B —
+     chỉ cần gõ nhầm hoặc cố ý gõ mã của nhà A. */
+  var ph = null;
+  try { ph = Store.find('users', hv.phuHuynhId); } catch (e) { ph = null; }
+  var maNha = ph && ph.maKhachHang;
+  if (!maNha) return {ok: false, error: 'Hồ sơ học viên chưa gắn với tài khoản phụ huynh nào.'};
+  if (String(y.maKhachHang || '') !== String(maNha))
+    return {ok: false, error: 'Mã khách hàng không khớp với hồ sơ học viên này.'};
 
+  /* Phiếu thanh toán dùng MỘT LẦN. Không đánh dấu thì cùng một phiếu mở được
+     tầng cho bao nhiêu học viên cũng được. */
+  var tt = Store.all('thanhToan').filter(function (x) {
+    return String(x.maKhachHang) === String(maNha) &&
+           Number(x.tier) === tangMoi && String(x.trangThai) === 'daXacNhan' &&
+           !isTrue(x.daDung);
+  })[0];
+  if (!tt) return {ok: false,
+    error: 'Chưa có xác nhận thanh toán còn hiệu lực cho tầng ' + tangMoi + '.'};
+
+  Store.update('thanhToan', tt.id, {
+    daDung: 'TRUE', dungChoHocVien: hv.id, dungLuc: new Date().toISOString()
+  });
   Store.update('students', hv.id, {tier: tangMoi, status: 'dangHoc'});
   audit_(hoSo.phien, 'NANG_TANG', hv.id,
-    'Lên tầng ' + tangMoi + ' · KPI ' + kpi + '% · thanh toán ' + tt.id);
+    'Lên tầng ' + tangMoi + ' · KPI ' + kpi + '% · phiếu ' + tt.id + ' · nhà ' + maNha);
   return {ok: true, tang: tangMoi, kpi: kpi};
 }
 
@@ -1188,7 +1340,9 @@ function gitaDoiMatKhau_(y, hoSo) {
   });
 
   // Đổi mật khẩu là đóng mọi phiên khác — người lạ đang dùng token cũ bị đá ra
-  try { closeSession_(y.token); } catch (e) {}
+  /* Đá MỌI phiên, không chỉ phiên đang gọi. Đổi mật khẩu mà thiết bị khác
+     vẫn vào được thì việc đổi gần như vô nghĩa. */
+  try { xoaMoiPhien_(nd.id); } catch (e) { try { closeSession_(y.token); } catch (e2) {} }
 
   ghiNhatKy_({ viec: 'DOI_MK', u: hoSo.u, role: hoSo.role, phien: hoSo.phien,
     chiTiet: 'Đổi mật khẩu thành công, đã đóng phiên' });
@@ -1315,8 +1469,13 @@ function gitaDatLaiMatKhau_(y) {
   });
   kho.remove(gitaKhoaMa_(u));
   try { clearFail_(u); } catch (e) {}
+  /* Người phải dùng tới "quên mật khẩu" thường là người vừa bị mất quyền
+     kiểm soát tài khoản. Đá mọi phiên đang mở là việc bắt buộc ở đây. */
+  var soPhien = 0;
+  try { soPhien = xoaMoiPhien_(nd.id); } catch (e) {}
 
-  ghiNhatKy_({ viec: 'DAT_LAI_MK', u: u, role: nd.role, chiTiet: 'Đặt lại mật khẩu bằng mã email' });
+  ghiNhatKy_({ viec: 'DAT_LAI_MK', u: u, role: nd.role,
+    chiTiet: 'Đặt lại mật khẩu bằng mã email · đóng ' + soPhien + ' phiên đang mở' });
   try {
     MailApp.sendEmail(nd.email || nd.username, 'GITA 365 — mật khẩu đã được đặt lại',
       'Mật khẩu tài khoản ' + nd.username + ' vừa được đặt lại lúc ' +
@@ -1369,7 +1528,7 @@ function gitaDemGuiNgay_(u) {
   var kho = CacheService.getScriptCache();
   var k = 'TLGUI_' + String(u).toLowerCase() + '_' + Utilities.formatDate(new Date(), 'GMT+7', 'yyyyMMdd');
   var n = Number(kho.get(k) || 0) + 1;
-  kho.put(k, String(n), 86400);
+  kho.put(k, String(n), GITA_CACHE_NGAY);
   return n;
 }
 
@@ -1421,15 +1580,26 @@ function gitaNapTaiLieu_(y, hoSo) {
     'Mô tả: ' + String(ban.moTa || '') + '\n' +
     'Trạng thái: CHỜ DUYỆT — chỉ vào kho sau khi Super Admin hoặc Admin duyệt.');
 
-  /* Ghi vào sổ tài liệu để màn kiểm duyệt đọc được */
+  /* Ghi vào sổ tài liệu để màn kiểm duyệt đọc được.
+     Mã tài liệu ĐI VÀO CỘT id — Store tìm theo id, nên đặt ở cột khác thì
+     sau này không ai tìm lại được bản ghi để duyệt.
+     Không nuốt lỗi ở đây: tệp đã nằm trên Drive mà sổ không ghi được thì
+     người gửi phải biết, nếu không tài liệu treo lơ lửng không ai duyệt. */
+  var maTL = String(ban.id || '') || ('TL-' + Date.now().toString(36).toUpperCase());
   try {
     Store.insert('tailieu', {
-      ma: ban.id || '', ten: ten, loai: ban.loai || '', tang: ban.tang || 0,
+      id: maTL, ten: ten, loai: ban.loai || '', tang: ban.tang || 0,
       moTa: String(ban.moTa || ''), driveId: tep.getId(), tenTep: tenTep,
       nguoiGui: hoSo.u, vaiGui: hoSo.role, luc: new Date().toISOString(),
-      trangThai: 'cho-duyet'
+      trangThai: 'cho-duyet', nguoiDuyet: '', lucDuyet: '', lyDo: ''
     });
-  } catch (e) { /* chưa có sổ thì tệp vẫn nằm đúng chỗ trên Drive */ }
+  } catch (e) {
+    ghiNhatKy_({ viec: 'GUI_TL_LOI', u: hoSo.u, role: hoSo.role,
+      chiTiet: maTL + ' · tệp đã lên Drive nhưng không ghi được sổ: ' + e.message });
+    return { ok: false, driveId: tep.getId(),
+      error: 'Tệp đã lưu lên Drive nhưng máy chủ chưa ghi được vào sổ kiểm duyệt. ' +
+             'Báo cho Admin hệ thống kèm mã ' + maTL + '.' };
+  }
 
   ghiNhatKy_({ viec: 'GUI_TL', u: hoSo.u, role: hoSo.role,
     chiTiet: (ban.id || '') + ' · ' + ten + ' · ' + Math.round(byte.length / 1024) + ' KB' });
@@ -1458,16 +1628,28 @@ function gitaDuyetTaiLieu_(y, hoSo) {
     return { ok: false, error: 'Phải ghi rõ lý do hoặc điều cần bổ sung.' };
 
   var tt = viec === 'duyet' ? 'da-duyet' : viec === 'sua' ? 'yeu-cau-sua' : 'tu-choi';
+  var ma = String(y.ma || '');
+
+  /* Store.find nhận một MÃ, không nhận đối tượng. Truyền {ma:…} vào đây thì
+     nó so với chuỗi "[object Object]" và luôn không tìm thấy — nên trước đây
+     hàm này trả về ok cho ứng dụng mà không đổi gì ở đâu cả: Admin tưởng đã
+     duyệt, tài liệu vẫn nằm nguyên trạng thái chờ. */
+  var b = null;
+  try { b = Store.find('tailieu', ma); } catch (e) { b = null; }
+  if (!b) return { ok: false, code: 'NOTFOUND',
+    error: 'Không tìm thấy tài liệu mã ' + ma + ' trong sổ.' };
+
   try {
-    var b = Store.find('tailieu', { ma: String(y.ma || '') });
-    if (b) Store.update('tailieu', b.id, {
+    Store.update('tailieu', b.id, {
       trangThai: tt, nguoiDuyet: hoSo.u, lucDuyet: new Date().toISOString(), lyDo: lyDo
     });
-  } catch (e) { /* không có sổ thì vẫn ghi nhật ký */ }
+  } catch (e) {
+    return { ok: false, error: 'Không ghi được quyết định: ' + e.message };
+  }
 
   ghiNhatKy_({ viec: 'DUYET_TL', u: hoSo.u, role: hoSo.role,
-    chiTiet: String(y.ma || '') + ' → ' + tt + (lyDo ? ' · ' + lyDo : '') });
-  return { ok: true, trangThai: tt, thongBao: 'Đã ghi quyết định.' };
+    chiTiet: ma + ' → ' + tt + (lyDo ? ' · ' + lyDo : '') });
+  return { ok: true, ma: ma, trangThai: tt, thongBao: 'Đã ghi quyết định.' };
 }
 
 
@@ -1491,7 +1673,9 @@ function gitaDuyetTaiLieu_(y, hoSo) {
 var GITA_TRAN_DONGBO_KB = 512;
 
 /** Những nhóm dữ liệu được phép đồng bộ. Ngoài danh sách này là từ chối. */
-var GITA_NHOM_DONGBO = ['checks', 'journal', 'vision', 'test', 'mood'];
+/* Phải khớp đúng NHOM trong src/dong-bo.js. Lệch một tên là dữ liệu đi lên
+   rồi bị bỏ vào danh sách "bỏ qua" mà người dùng không thấy gì bất thường. */
+var GITA_NHOM_DONGBO = ['checks', 'journal', 'vision', 'test', 'mood', 'thuvien', 'minhchung'];
 
 function gitaKhoaHoSo_(uid) { return 'HOSO_' + uid; }
 
@@ -1507,8 +1691,9 @@ function gitaKhoaHoSo_(uid) { return 'HOSO_' + uid; }
    được ghi; vai khác chỉ NHẬN về, không đẩy lên. */
 function gitaCaiDat_(y, hoSo) {
   var kho = PropertiesService.getScriptProperties();
-  var cu = {};
-  try { cu = JSON.parse(kho.getProperty('GITA_CAI_DAT') || '{}'); } catch (e) { cu = {}; }
+  var cu = gitaDocCaiDat_();
+  var truoc = JSON.parse(JSON.stringify(cu));   /* bản trước khi sửa, để trả lại nếu cụm quá lớn */
+  var doiCum = {};                              /* cụm nào thật sự đổi — chỉ ghi lại những cụm ấy */
   var lv = (ROLES[hoSo.role] || { lv: 99 }).lv;
   var gui = y.caiDat || {}, doi = 0;
 
@@ -1524,7 +1709,7 @@ function gitaCaiDat_(y, hoSo) {
       if (!v || typeof v !== 'object' || !v.du) return;
       if (Number(v.luc || 0) <= Number((cu[k] || {}).luc || 0)) return;
       cu[k] = { luc: Number(v.luc), du: v.du, boi: hoSo.u };
-      doi++;
+      doiCum[k] = 1; doi++;
     });
   } else {
     /* Gia đình và cộng tác viên: chỉ được đẩy lời XIN lên, không hơn. */
@@ -1532,7 +1717,7 @@ function gitaCaiDat_(y, hoSo) {
     if (vx && typeof vx === 'object' && vx.du &&
         Number(vx.luc || 0) > Number((cu.xinthem || {}).luc || 0)) {
       cu.xinthem = { luc: Number(vx.luc), du: vx.du, boi: hoSo.u };
-      doi++;
+      doiCum.xinthem = 1; doi++;
     }
   }
 
@@ -1543,18 +1728,122 @@ function gitaCaiDat_(y, hoSo) {
       if (!v || typeof v !== 'object' || !v.du) return;
       if (Number(v.luc || 0) <= Number((cu[k] || {}).luc || 0)) return;
       cu[k] = { luc: Number(v.luc), du: v.du, boi: hoSo.u };
-      doi++;
+      doiCum[k] = 1; doi++;
     });
   }
 
   if (doi) {
-    var tho = JSON.stringify(cu);
-    if (tho.length > 400000) return cu;            /* quá lớn thì không ghi, giữ bản cũ */
-    kho.setProperty('GITA_CAI_DAT', tho);
+    /* Script Properties chỉ nhận 9 KB MỖI GIÁ TRỊ (và 500 KB cả kho). Trần
+       400.000 ký tự đặt trước đây là sai gấp bốn mươi lần: vượt là Apps
+       Script ném "Argument too large", cả lượt đồng bộ trả về lỗi, người
+       dùng bấm lại, mỗi lần lại thêm một dòng sao lưu — mà cài đặt thì
+       vĩnh viễn không lưu được.
+
+       Cụm hồ sơ ca cộng dồn theo thời gian nên chắc chắn vượt 9 KB sớm.
+       Nên mỗi cụm nay nằm ở MỘT khoá riêng, và cụm nào quá lớn thì bị từ
+       chối riêng cụm đó, nói rõ lý do, không kéo đổ cả lượt đồng bộ. */
+    var quaLon = [];
+    Object.keys(cu).forEach(function (k) {
+      if (!doiCum[k]) return;                       /* cụm không đổi thì khỏi ghi lại */
+      var tho = JSON.stringify(cu[k]);
+      if (tho.length > GITA_TRAN_CUM_BYTE) {
+        quaLon.push(k);
+        cu[k] = truoc[k];                           /* trả về bản cũ, không mất dữ liệu */
+        return;
+      }
+      try { kho.setProperty(gitaKhoaCum_(k), tho); }
+      catch (e) { quaLon.push(k); cu[k] = truoc[k]; }
+    });
+
     ghiNhatKy_({ viec: 'DONG_BO_CAI_DAT', u: hoSo.u, role: hoSo.role,
-      chiTiet: 'Cập nhật ' + doi + ' cụm cài đặt' });
+      chiTiet: 'Cập nhật ' + doi + ' cụm' +
+        (quaLon.length ? ' · TỪ CHỐI vì quá lớn: ' + quaLon.join(',') : '') });
+    if (quaLon.length) cu.__quaLon = quaLon;
   }
-  return cu;
+
+  return gitaLocCaiDat_(cu, lv, hoSo.phien && hoSo.phien.uid);
+}
+
+/* Mỗi cụm một khoá riêng — 9 KB cho mỗi cụm thay vì 9 KB cho tất cả. */
+var GITA_TRAN_CUM_BYTE = 8500;
+var GITA_CUM_CAI_DAT = ['sapxep', 'noidung', 'phanquyen', 'khothem', 'xinthem', 'ca'];
+function gitaKhoaCum_(k) { return 'GITA_CD_' + k; }
+
+function gitaDocCaiDat_() {
+  var kho = PropertiesService.getScriptProperties();
+  var ra = {};
+  GITA_CUM_CAI_DAT.forEach(function (k) {
+    var t = kho.getProperty(gitaKhoaCum_(k));
+    if (!t) return;
+    try { ra[k] = JSON.parse(t); } catch (e) {}
+  });
+  /* Đọc nốt bản cũ gộp một khoá, để máy chủ đang chạy không mất cài đặt
+     khi nâng cấp. Đọc xong là thôi, không ghi lại vào khoá cũ nữa. */
+  try {
+    var goc = JSON.parse(kho.getProperty('GITA_CAI_DAT') || '{}');
+    Object.keys(goc).forEach(function (k) { if (!ra[k]) ra[k] = goc[k]; });
+  } catch (e) {}
+  return ra;
+}
+
+/* ══ AI ĐƯỢC NHẬN CỤM NÀO ══
+   Chặn GHI thôi thì chưa đủ: trả về cả khối là gửi hồ sơ ca của mọi nhà
+   xuống máy của từng phụ huynh. Hồ sơ ca có tên nhà, số điện thoại và
+   nguyên văn lời gia đình kể. Nó chỉ được đi tới người trong nghề. */
+function gitaLocCaiDat_(cu, lv, uid) {
+  var ra = {};
+  Object.keys(cu).forEach(function (k) {
+    if (k === '__quaLon') { ra[k] = cu[k]; return; }
+
+    /* Hồ sơ ca: chỉ người trong nghề. Nó mang tên nhà, số điện thoại và
+       nguyên văn lời gia đình kể — không được xuống máy của nhà nào cả. */
+    if (k === 'ca' && lv > 11) return;
+
+    /* Bảng phân quyền: chỉ Super Admin và Admin hệ thống */
+    if (k === 'phanquyen' && lv > 2) return;
+
+    /* Tư liệu đã gửi thêm và lời xin: gia đình PHẢI nhận được, nếu không
+       thì Tư vấn bấm gửi mà nhà kia không bao giờ mở ra được. Nhưng chỉ
+       nhận PHẦN CỦA MÌNH — cắt theo mã nhà trước khi trả về. */
+    if (k === 'khothem' || k === 'xinthem') {
+      if (lv <= 11) { ra[k] = cu[k]; return; }      /* đội ngũ: nhận cả */
+      var v = cu[k];
+      if (!v || !v.du) return;
+      ra[k] = { luc: v.luc, boi: v.boi, du: gitaCatTheoNha_(k, v.du, uid) };
+      return;
+    }
+
+    ra[k] = cu[k];
+  });
+  return ra;
+}
+
+/**
+ * Cắt phần của một nhà ra khỏi cụm dùng chung.
+ *
+ * Vì sao cần: hai cụm này đồng bộ toàn cục. Trả nguyên khối cho gia đình là
+ * gửi cho họ tư liệu và lời xin của mọi nhà khác — và tệ hơn, tư liệu gửi
+ * cho một nhà sẽ mở khoá cho tất cả các nhà.
+ */
+function gitaCatTheoNha_(cum, du, uid) {
+  var maNha = '';
+  try {
+    var nd = Store.find('users', uid);
+    if (nd) maNha = String(nd.maKhachHang || nd.studentId || '');
+  } catch (e) {}
+  if (!maNha) return (cum === 'xinthem') ? [] : {};
+
+  if (cum === 'xinthem') {
+    if (!Array.isArray(du)) return [];
+    return du.filter(function (x) { return String(x && x.nha) === maNha; });
+  }
+
+  /* khothem: khoá có dạng "<mã nhà>|<loại>·<mã tư liệu>" */
+  var ra = {};
+  Object.keys(du || {}).forEach(function (k) {
+    if (k.indexOf(maNha + '|') === 0) ra[k] = du[k];
+  });
+  return ra;
 }
 
 function gitaDongBo_(y, hoSo) {
@@ -1660,7 +1949,7 @@ function gitaDemXuat_(u) {
   var kho = CacheService.getScriptCache();
   var k = 'XUATSHEET_' + String(u).toLowerCase() + '_' + Utilities.formatDate(new Date(), 'GMT+7', 'yyyyMMdd');
   var n = Number(kho.get(k) || 0) + 1;
-  kho.put(k, String(n), 86400);
+  kho.put(k, String(n), GITA_CACHE_NGAY);
   return n;
 }
 
@@ -1689,7 +1978,14 @@ function gitaXuatSheet_(y, hoSo) {
   var maBan = String(y.maBan || '').slice(0, 40) || 'GITA-' + new Date().getTime();
   var ten = maBan + ' · ' + String(y.ten || 'Bảng dữ liệu').slice(0, 80);
 
-  var ss = SpreadsheetApp.create(ten);
+  /* Dựng lưới đủ chỗ ngay từ đầu.
+     SpreadsheetApp.create(ten) cho ra trang mặc định 1.000 dòng × 26 cột,
+     trong khi trần xuất là 5.000 dòng — xuất từ 1.000 dòng trở lên là
+     getRange ném "Those rows are out of bounds" và người dùng chỉ nhận được
+     một câu báo lỗi chung chung. */
+  var soDongCan = dong.length + 1;
+  var soCotCan  = Math.max(cot.length, 1);
+  var ss = SpreadsheetApp.create(ten, Math.max(soDongCan, 20), Math.max(soCotCan, 5));
   var sh = ss.getActiveSheet();
   sh.setName(String(y.ten || 'Dữ liệu').slice(0, 90));
 
@@ -1716,7 +2012,7 @@ function gitaXuatSheet_(y, hoSo) {
     ['Mã bản', maBan],
     ['Loại dữ liệu', String(y.loai || '')],
     ['Người xuất', hoSo.u],
-    ['Vai', hoSo.role + ' — ' + ((ROLES[hoSo.role] || {}).n || '')],
+    ['Vai', hoSo.role + ' — ' + ((ROLES[hoSo.role] || {}).ten || '')],
     ['Lúc xuất', Utilities.formatDate(new Date(), 'GMT+7', 'dd/MM/yyyy HH:mm:ss')],
     ['Số dòng', dong.length],
     ['Ghi chú', 'Tài sản của Học viện GITA. Bản này được ghi vào nhật ký và truy nguồn được theo mã bản.']

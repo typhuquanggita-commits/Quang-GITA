@@ -1340,6 +1340,59 @@ const { chromium } = require(PW);
     await p.waitForTimeout(2500);
   }
 
+  /* ═══════════ 22 · KHÔNG MỤC NÀO CHẾT TRONG TRÌNH ĐƠN ═══════════
+     Một mục hiện ra trong trình đơn nhưng bấm vào chỉ ra màn xin cấp phép
+     là mục chết. Nó không làm vỡ ứng dụng, nên bộ kiểm dựng-rồi-đếm không
+     thấy — nhưng người dùng thì thấy, và mất lòng tin.
+
+     Luật: màn nào cần gói kho nào thì quyền gắn trên mục điều hướng phải
+     hẹp bằng hoặc hẹp hơn nhóm vai được cấp gói ấy. */
+  console.log('\n22 · KHÔNG MỤC NÀO CHẾT TRONG TRÌNH ĐƠN');
+  {
+    const r = await p.evaluate(() => {
+      const G = window.G;
+      const cu = G.S.roleObj;
+      const chet = [];
+      const soVai = {};
+
+      G.ROLES.forEach(vai => {
+        G.S.roleObj = vai;
+        /* Gói kho vai này được cấp — đúng hàm thật, không đoán lại */
+        const duoc = G.goiDuocCap();
+        let n = 0;
+        G.NAV.forEach(g => g.items.forEach(it => {
+          if (it.perm && !G.can(it.perm)) return;    /* không thấy thì không tính */
+          n++;
+          const can = G.goiCanCho(it.v);
+          if (can && duoc.indexOf(can) < 0)
+            chet.push(vai.id + ' · ' + it.v + ' (cần gói ' + can + ')');
+        }));
+        soVai[vai.id] = n;
+      });
+      G.S.roleObj = cu;
+      return { chet: [...new Set(chet)], soVai: soVai };
+    });
+
+    bao(r.chet.length === 0, 'không vai nào thấy mục mà mình không mở được',
+      r.chet.length ? r.chet.slice(0, 6).join(' | ') : 'sạch');
+
+    /* Hai bảng phải khớp: ai có quyền nghe_chung thì phải được cấp gói nghe */
+    const lech = await p.evaluate(() => {
+      const G = window.G, cu = G.S.roleObj, ra = [];
+      G.ROLES.forEach(vai => {
+        G.S.roleObj = vai;
+        const coQuyen = G.can('nghe_chung');
+        const coGoi = G.goiDuocCap().indexOf('nghe') >= 0;
+        if (coQuyen !== coGoi)
+          ra.push(vai.id + ' quyền=' + coQuyen + ' gói=' + coGoi);
+      });
+      G.S.roleObj = cu;
+      return ra;
+    });
+    bao(lech.length === 0, 'bảng quyền và bảng cấp gói khớp nhau từng vai',
+      lech.length ? lech.join(' · ') : 'khớp cả 15 vai');
+  }
+
   console.log('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành'));
   await b.close();
   process.exit(loi ? 1 : 0);

@@ -44,7 +44,9 @@ function gitaDoiMatKhau_(y, hoSo) {
   });
 
   // Đổi mật khẩu là đóng mọi phiên khác — người lạ đang dùng token cũ bị đá ra
-  try { closeSession_(y.token); } catch (e) {}
+  /* Đá MỌI phiên, không chỉ phiên đang gọi. Đổi mật khẩu mà thiết bị khác
+     vẫn vào được thì việc đổi gần như vô nghĩa. */
+  try { xoaMoiPhien_(nd.id); } catch (e) { try { closeSession_(y.token); } catch (e2) {} }
 
   ghiNhatKy_({ viec: 'DOI_MK', u: hoSo.u, role: hoSo.role, phien: hoSo.phien,
     chiTiet: 'Đổi mật khẩu thành công, đã đóng phiên' });
@@ -171,8 +173,13 @@ function gitaDatLaiMatKhau_(y) {
   });
   kho.remove(gitaKhoaMa_(u));
   try { clearFail_(u); } catch (e) {}
+  /* Người phải dùng tới "quên mật khẩu" thường là người vừa bị mất quyền
+     kiểm soát tài khoản. Đá mọi phiên đang mở là việc bắt buộc ở đây. */
+  var soPhien = 0;
+  try { soPhien = xoaMoiPhien_(nd.id); } catch (e) {}
 
-  ghiNhatKy_({ viec: 'DAT_LAI_MK', u: u, role: nd.role, chiTiet: 'Đặt lại mật khẩu bằng mã email' });
+  ghiNhatKy_({ viec: 'DAT_LAI_MK', u: u, role: nd.role,
+    chiTiet: 'Đặt lại mật khẩu bằng mã email · đóng ' + soPhien + ' phiên đang mở' });
   try {
     MailApp.sendEmail(nd.email || nd.username, 'GITA 365 — mật khẩu đã được đặt lại',
       'Mật khẩu tài khoản ' + nd.username + ' vừa được đặt lại lúc ' +

@@ -37,7 +37,13 @@ var GITA_BANG = {
   audit:          ['id','luc','uid','username','viec','doiTuong','chiTiet'],
   hosoApp:        ['id','uid','u','role','duLieu','moc','taoLuc','suaLuc'],
   hosoAppSaoLuu:  ['id','uid','duLieu','luc'],
-  thanhToan:      ['id','maKhachHang','tier','soTien','trangThai','nguoiDuyet','luc','ghiChu']
+  thanhToan:      ['id','maKhachHang','tier','soTien','trangThai','nguoiDuyet','luc','ghiChu',
+                   'daDung','dungChoHocVien','dungLuc'],
+  /* Sổ tài liệu. Trước đây bảng này KHÔNG được khai, nên Store tạo trang chỉ
+     có một cột id và mọi bản ghi gửi lên biến mất không một lời báo: tệp nằm
+     trên Drive nhưng màn kiểm duyệt không có gì để đọc. */
+  tailieu:        ['id','ten','loai','tang','moTa','driveId','tenTep','nguoiGui','vaiGui',
+                   'luc','trangThai','nguoiDuyet','lucDuyet','lyDo']
 };
 
 /* ═══════════════ BẬC VAI ═══════════════
@@ -90,9 +96,24 @@ function gitaTrang_(ten) {
 
 /** Dựng đủ mọi bảng. Chạy một lần sau khi dán mã. */
 function dungSoDuLieu() {
-  Object.keys(GITA_BANG).forEach(function (t) { gitaTrang_(t); });
-  return 'Đã dựng ' + Object.keys(GITA_BANG).length + ' bảng trong "' + GITA_TEN_SO +
-         '". Mở Drive để xem.';
+  var them = [];
+  Object.keys(GITA_BANG).forEach(function (t) {
+    var tr = gitaTrang_(t);
+    /* Trang đã có từ bản cũ thì BỔ SUNG cột còn thiếu. Không làm việc này
+       thì mọi trường mới bị Store âm thầm bỏ đi — như cột mustChangePw:
+       tài khoản vẫn tạo được, nhưng lớp chặn "mật khẩu tạm không mở kho"
+       biến mất không một lời báo. */
+    var can = GITA_BANG[t];
+    var dang = tr.getLastRow() ? tr.getRange(1, 1, 1, tr.getLastColumn()).getValues()[0] : [];
+    var thieu = can.filter(function (c) { return dang.indexOf(c) < 0; });
+    if (dang.length && thieu.length) {
+      tr.getRange(1, dang.length + 1, 1, thieu.length).setValues([thieu]);
+      them.push(t + ': +' + thieu.join(', '));
+    }
+  });
+  return 'Đã dựng ' + Object.keys(GITA_BANG).length + ' bảng trong "' + GITA_TEN_SO + '".' +
+         (them.length ? '\n  Bổ sung cột còn thiếu — ' + them.join(' · ') : '') +
+         '\n  Mở Drive để xem.';
 }
 
 /* ═══════════════ STORE ═══════════════
@@ -187,6 +208,15 @@ function safeEqual_(a, b) {
 /* ═══════════════ PHIÊN ═══════════════ */
 var GITA_HAN_PHIEN_GIO = 12;
 
+/* Trần đoán mật khẩu: sai bao nhiêu lần thì khoá, và khoá bao lâu. */
+/* CacheService chỉ giữ tối đa 21.600 giây (6 giờ). Đặt 86.400 như trước là
+   im lặng bị cắt xuống 6 giờ: nghỉ một buổi chiều là bộ đếm "mỗi ngày" về 0
+   trong cùng ngày, và trần 20 lượt xuất, 30 tệp gửi thành vô nghĩa. */
+var GITA_CACHE_NGAY = 21600;
+
+var GITA_TRAN_DANG_NHAP_SAI = 8;
+var GITA_KHOA_DANG_NHAP_GIAY = 900;      /* 15 phút */
+
 function taoPhien_(nd) {
   var id = gitaMaMoi_('S');
   var het = Date.now() + GITA_HAN_PHIEN_GIO * 3600e3;
@@ -210,6 +240,25 @@ function readSession_(token) {
 function xoaPhien_(token) {
   var s = Store.find('sessions', token);
   if (s) Store.update('sessions', token, {exp: 0});
+}
+
+/**
+ * Đóng MỌI phiên của một tài khoản.
+ *
+ * Vì sao cần: đổi mật khẩu mà chỉ đóng phiên của chính mình thì kẻ đang giữ
+ * token cũ vẫn vào được tới hết mười hai giờ — đúng lúc chủ tài khoản tin là
+ * mình vừa cắt được. Đổi mật khẩu phải có nghĩa là mọi thiết bị khác bị đá ra.
+ */
+function xoaMoiPhien_(uid, trừToken) {
+  var n = 0;
+  Store.all('sessions').forEach(function (s) {
+    if (String(s.uid) !== String(uid)) return;
+    if (trừToken && String(s.id) === String(trừToken)) return;
+    if (Number(s.exp || 0) <= Date.now()) return;
+    Store.update('sessions', s.id, {exp: 0});
+    n++;
+  });
+  return n;
 }
 
 /* ═══════════════ NHẬT KÝ ═══════════════
@@ -239,12 +288,43 @@ function gitaDangNhap_(y) {
   /* Trả lời giống nhau cho "không có tài khoản" và "sai mật khẩu" — không
      để ai dò xem email nào đã đăng ký. */
   var chung = {ok: false, error: 'Tên đăng nhập hoặc mật khẩu chưa đúng.'};
-  if (!nd) return chung;
-  if (!isTrue(nd.active) || nd.deletedAt) return {ok: false, error: 'Tài khoản đang bị khoá.'};
-  if (!safeEqual_(hashPw_(mk, nd.pwSalt), nd.pwHash)) {
+
+  /* ── Trần đoán mật khẩu ──
+     Trước đây không chỗ nào đếm số lần sai, nên một máy có thể thử hàng
+     nghìn mật khẩu liên tiếp mà không gặp cản nào. Đếm theo tên đăng nhập
+     người gọi gõ vào, kể cả khi tài khoản không có thật — nếu chỉ đếm cho
+     tài khoản có thật thì chính bộ đếm lại tố cáo tài khoản nào tồn tại. */
+  var demKey = 'DANGNHAP_SAI_' + u;
+  var cache = CacheService.getScriptCache();
+  var soSai = Number(cache.get(demKey) || 0);
+  if (soSai >= GITA_TRAN_DANG_NHAP_SAI) {
+    audit_(null, 'DANG_NHAP_CHAN', u, 'Vượt ' + GITA_TRAN_DANG_NHAP_SAI + ' lần sai');
+    return {ok: false, code: 'RATE',
+      error: 'Sai quá nhiều lần. Thử lại sau ' + Math.round(GITA_KHOA_DANG_NHAP_GIAY / 60) +
+             ' phút, hoặc dùng mục Quên mật khẩu.'};
+  }
+  function demSai() {
+    cache.put(demKey, String(soSai + 1), GITA_KHOA_DANG_NHAP_GIAY);
+  }
+
+  if (!nd) { demSai(); return chung; }
+
+  /* Tài khoản bị khoá cũng trả CÂU CHUNG — báo riêng "Tài khoản đang bị khoá"
+     là nói cho người lạ biết email đó có thật, đúng thứ dòng trên vừa nói là
+     phải tránh. Chỉ khi mật khẩu ĐÚNG mới nói thật lý do, vì lúc đó người
+     hỏi chính là chủ tài khoản. */
+  var mkDung = safeEqual_(hashPw_(mk, nd.pwSalt), nd.pwHash);
+  if (!mkDung) {
+    demSai();
     audit_({uid: nd.id, username: nd.username}, 'DANG_NHAP_SAI', nd.username, '');
     return chung;
   }
+  if (!isTrue(nd.active) || nd.deletedAt) {
+    audit_({uid: nd.id, username: nd.username}, 'DANG_NHAP_KHOA', nd.username, '');
+    return {ok: false, code: 'LOCKED',
+      error: 'Tài khoản đang bị khoá. Liên hệ Học viện GITA · 08.5555.4688.'};
+  }
+  cache.remove(demKey);   /* vào được thì xoá bộ đếm */
 
   var p = taoPhien_(nd);
   audit_({uid: nd.id, username: nd.username}, 'DANG_NHAP', nd.username, '');
@@ -415,10 +495,12 @@ function closeSession_(token) {
   try { xoaPhien_(token); } catch (e) {}
 }
 
-/** Xoá bộ đếm đăng nhập sai của một tài khoản, sau khi đặt lại mật khẩu. */
+/** Xoá bộ đếm đăng nhập sai. Khoá phải khớp đúng khoá gitaDangNhap_ ghi vào,
+    nếu không thì hàm này chạy mà không xoá gì cả. */
 function clearFail_(u) {
   try {
-    CacheService.getScriptCache().remove('DANGNHAP_SAI_' + String(u).toLowerCase());
+    var c = CacheService.getScriptCache();
+    c.remove('DANGNHAP_SAI_' + String(u).toLowerCase());
   } catch (e) {}
 }
 

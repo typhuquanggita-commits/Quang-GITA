@@ -317,17 +317,9 @@ G.VIEWS['tro-ly'] = function(){
 /* Nút trợ lý nổi — mở được từ mọi màn hình */
 G.moTroLy = function(){ G.go('tro-ly'); };
 
-document.addEventListener('click', function(e){
-  var q = e.target.closest && e.target.closest('[data-aiq]');
-  if(q){
-    var i = document.getElementById('aiQ');
-    if(i) i.value = q.getAttribute('data-aiq');
-    G.aiHoi(q.getAttribute('data-aiq'));
-  }
-});
-document.addEventListener('keydown', function(e){
-  if(e.key === 'Enter' && e.target && e.target.id === 'aiQ'){
-    G.aiHoi(e.target.value); e.target.value = '';
-  }
-});
+/* Bộ nghe [data-aiq] và phím Enter nay nằm TRỌN trong src/tro-ly-chat.js.
+   Trước đây ba tệp cùng bắt một selector ở cấp document — app.js, tệp này và
+   tro-ly-chat.js — nên bấm một chip gợi ý là hỏi trợ lý ba lần, khung chat
+   lặp lại câu hỏi ba lần và nhật ký ghi ba dòng trùng. */
+
 })();

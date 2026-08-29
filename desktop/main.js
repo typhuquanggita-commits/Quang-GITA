@@ -143,6 +143,21 @@ function di(man) {
 
 /* Hỏi chính ứng dụng xem vai đang đăng nhập có quyền xuất bản in không.
    Trình đơn của tiến trình chính không biết vai, nên phải hỏi sang. */
+/* In màn hình — chỉ cho vai có quyền xuat_pdf (bậc ≤ 5). */
+async function inManHinh() {
+  if (!cuaSo) return;
+  if (!(await coQuyenIn())) {
+    dialog.showMessageBox(cuaSo, {
+      type: 'info', title: 'GITA 365',
+      message: 'Tài khoản này không in được',
+      detail: 'In và xuất PDF dành cho người của Học viện GITA từ cấp quản lý. ' +
+              'Hồ sơ của gia đình đọc trực tiếp trên ứng dụng.\n\nCần người thật: 08.5555.4688'
+    });
+    return;
+  }
+  cuaSo.webContents.print();
+}
+
 async function coQuyenIn() {
   try {
     return await cuaSo.webContents.executeJavaScript(
@@ -286,7 +301,13 @@ function dungTrinhDon() {
         { label: 'Phục hồi từ tệp sao lưu…', click: phucHoi },
         { type: 'separator' },
         { label: 'Xuất màn hình này ra PDF…', accelerator: 'CmdOrCtrl+E', click: xuatPDF },
-        { label: 'In…', accelerator: 'CmdOrCtrl+P', click: () => cuaSo && cuaSo.webContents.print() },
+        /* PHẢI kiểm quyền như mục Xuất PDF ngay trên.
+           Trước đây mục này in thẳng không hỏi gì, mà phím tắt Ctrl+P lại do
+           trình đơn của tiến trình chính bắt trước — nên nó nuốt luôn phím và
+           lớp chặn Ctrl+P bên trong trang không bao giờ chạy. Phụ huynh mở
+           Tệp ▸ In… rồi chọn "Microsoft Print to PDF" là có bản PDF hồ sơ gia
+           đình, không một dòng nhật ký nào. Đúng thứ luật của Học viện cấm. */
+        { label: 'In…', accelerator: 'CmdOrCtrl+P', click: inManHinh },
         { type: 'separator' },
         mac ? { role: 'close', label: 'Đóng cửa sổ' } : { role: 'quit', label: 'Thoát' }
       ]

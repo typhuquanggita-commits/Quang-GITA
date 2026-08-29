@@ -122,7 +122,13 @@ function nhaCuaToi(){
   var f = G.myFamily ? G.myFamily() : null;
   return (f && f.id) || '—';
 }
-function khoaTL(loai, ma){ return String(loai) + '·' + String(ma); }
+/* Khoá tư liệu PHẢI mang mã nhà.
+   Cụm này đồng bộ toàn cục, nên nếu khoá chỉ là "loại·mã" thì Tư vấn gửi
+   một tư liệu cho nhà A là mở luôn tư liệu ấy cho MỌI nhà đang dùng hệ
+   thống. Ghép mã nhà vào đầu khoá là chặn hẳn đường đó. */
+function khoaTL(loai, ma, nha){
+  return String(nha || nhaCuaToi()) + '|' + String(loai) + '·' + String(ma);
+}
 G.khoaTuLieu = khoaTL;
 
 /* ═══════════ CỬA MỞ MỘT TƯ LIỆU ═══════════
@@ -130,11 +136,13 @@ G.khoaTuLieu = khoaTL;
    Gia đình: trong phần nền 30%, hoặc đã được Tư vấn/Coach gửi thêm. */
 G.khachMoDuoc = function(loai, ma){
   if(!laKhach()) return true;
-  var k = khoaTL(loai, ma);
-  if(G.KHACH_THEM[k]) return true;
+  /* Hai khoá khác nhau, đừng lẫn:
+       · khoá TƯ LIỆU đã được gửi thêm  → có mã nhà, vì cụm này đồng bộ chung
+       · khoá THỨ HẠNG trong kho        → không mã nhà, vì thứ hạng là của kho */
+  if(G.KHACH_THEM[khoaTL(loai, ma)]) return true;
   var b = bangHang()[loai];
   if(!b) return true;                       /* kho lạ thì không tự dựng rào */
-  var r = b.bang[k];
+  var r = b.bang[String(loai) + '·' + String(ma)];
   if(r == null) return true;
   return r < Math.ceil(b.tong * G.TRAN_KHACH);
 };
@@ -195,7 +203,9 @@ G.capThemTuLieu = function(id){
   x.nguoiGui  = (G.S.acc && G.S.acc.ten) || '';
   x.vaiGui    = (G.S.roleObj && G.S.roleObj.n) || '';
   x.lucGui    = new Date().toISOString();
-  G.KHACH_THEM[x.k] = {luc: x.lucGui, boi: x.nguoiGui, vai: x.vaiGui};
+  /* Khoá đi theo nhà ĐẶT LỜI XIN, không theo nhà của người đang bấm gửi —
+     người bấm là Tư vấn, không phải gia đình. */
+  G.KHACH_THEM[x.k] = {luc: x.lucGui, boi: x.nguoiGui, vai: x.vaiGui, nha: x.nha};
   ghi();
   return {ok:true, x:x};
 };

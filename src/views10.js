@@ -7,7 +7,7 @@ var G = window.G || {}; window.G = G;
 G.VIEWS = G.VIEWS || {};
 (function(){
 var U = G.U, h = U.h, ic = U.ic;
-function tc(t){ var x=(G.TIERS||[]).filter(function(y){return y.code===t;})[0]; return x?x.color:'var(--gold)'; }
+function tc(t){ var x=(G.TIERS||[]).filter(function(y){return y.code===t;})[0]; return x ? x.c : 'var(--gita)'; }
 
 /* ═══════════════ XƯƠNG SỐNG PHƯƠNG PHÁP ═══════════════ */
 G.VIEWS['phuong-phap'] = function(){

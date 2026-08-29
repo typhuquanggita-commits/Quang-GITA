@@ -286,7 +286,11 @@ G.NAV = [
     {v:'tam-nhin',    t:'Tầm nhìn 5 – 20 năm',         h:'Cả nhà viết, không ai viết hộ ai',   ic:'sun', perm:'kh_gia_dinh', capMo:'nha'},
     {v:'chuyen-hoa',  t:'Từ nỗi đau đến khát khao',    h:'Bảy chuyển dịch làm nên một gia đình khác', ic:'flame', capMo:'chung'},
     {v:'hanh-trinh-con',t:'Hành trình của con',        h:'Từ nhiều vấn đề đến niềm tự hào',    ic:'star', perm:'kh_hanh_trinh', capMo:'con'},
-    {v:'diem-cham',   t:'Bản đồ điểm chạm cảm xúc',   h:'Chín khoảnh khắc quyết định họ ở lại', ic:'heart', perm:'kh_hanh_trinh', capMo:'con'},
+    /* Màn này viết cho ĐỘI NGŨ — chín khoảnh khắc quyết định một nhà có ở lại
+       hay không — và dữ liệu DIEMCHAM nằm trong gói nghề. Trước đây nó gắn
+       quyền kh_hanh_trinh nên phụ huynh và học viên thấy mục này trong trình
+       đơn mà bấm vào chỉ ra màn xin cấp phép: một mục chết. */
+    {v:'diem-cham',   t:'Bản đồ điểm chạm cảm xúc',   h:'Chín khoảnh khắc quyết định họ ở lại', ic:'heart', perm:'nghe_chung', capMo:'nghe'},
     {v:'dong-hanh',   t:'Người đồng hành',             h:'Cố vấn luôn lắng nghe, có mặt mọi lúc',ic:'heart', star:1, capMo:'chung'},
     {v:'wow',         t:'Chuỗi WOW',                   h:'Bảy khoảnh khắc đáng nhớ của hành trình',ic:'spark', capMo:'chung'}
    ]},
@@ -310,6 +314,10 @@ G.NAV = [
    t:'KHO BÁU VẬT', s:'Cần bí kíp nào cho đúng tình huống này?',
    essence:'1.000 kịch bản · 220 phác đồ · 25 mô thức · toàn văn sách gốc — mở khoá theo tiến trình.',
    items:[
+    /* Đặt đầu thư mục: đây là cửa nhìn toàn cảnh, ai vào cũng nên thấy trước.
+       Không gắn perm — mọi vai đều thấy TÊN các kho, còn mở được hay không
+       thì bảng bên trong nói rõ từng dòng. */
+    {v:'kho-tong',    t:'Kho tổng — toàn cảnh',        h:'9 nhóm · hơn 50 kho · số đếm thật', ic:'vault', capMo:'chung', star:1},
     {v:'thu-vien',    t:'Thư viện tài liệu',           h:'Gửi tài liệu lên · kho lớn lên từ đây', ic:'book', capMo:'chung', star:1},
     {v:'minh-chung',  t:'Minh chứng nhiệm vụ',         h:'Nộp ảnh, báo cáo xác nhận đã làm',   ic:'check', capMo:'chung', star:1},
     {v:'kho',         t:'Kho báu vật',                 h:'Toàn cảnh những gì anh chị đang có', ic:'vault', star:1, perm:'nghe_chung', capMo:'nghe'},

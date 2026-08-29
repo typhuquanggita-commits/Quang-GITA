@@ -123,6 +123,12 @@ U.tbl = function(cols, rows){
     '</tbody></table></div>';
 };
 U.list = function(arr, c){
+  /* Nhận cả mảng lẫn một chuỗi. Nhiều bản ghi trong kho khai một trường
+     lúc là mảng, lúc là chuỗi — ví dụ nguoiKhacThay trong bộ chân dung.
+     Trước đây chuỗi lọt qua kiểm .length rồi nổ ở .map, và cả mười chân
+     dung không mở ra được. */
+  if (typeof arr === 'string') arr = arr.trim() ? [arr] : [];
+  if (!Array.isArray(arr)) arr = [];
   return '<ul style="list-style:none;display:flex;flex-direction:column;gap:7px">'+
     (arr||[]).map(function(x){
       return '<li style="display:flex;gap:9px;font-size:13px;line-height:1.55;color:var(--ink-2)">'+

@@ -116,7 +116,7 @@ G.VIEWS['thu-vien'] = function(){
           '<textarea id="tl_mo" class="inp blk" rows="3" placeholder="Viết ngắn: dùng cho ai, trong tình huống nào, thay thế hay bổ sung cho tài liệu nào."></textarea></div>'+
         '<div style="grid-column:1/-1"><label class="tiny up muted">CHỌN TỆP</label>'+
           '<input id="tl_tep" type="file" class="inp blk" '+
-            'accept=".pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx,.png,.jpg,.jpeg"></div>'+
+            'accept=".pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx,.png,.jpg,.jpeg,.webp,.txt,.csv"></div>'+
       '</div>'+
       '<div class="card pad-sm mt" style="border-color:var(--gita-vien-1)">'+
         '<div class="tiny up muted mb">TỰ CHẤM TRƯỚC KHI GỬI — bảy điểm chuẩn hoá</div>'+
@@ -282,7 +282,30 @@ function quyetDinh(id, viec, canLyDo){
   luu();
   if(G.secLog) G.secLog('Kiểm duyệt tài liệu',
     t.id + ' → ' + t.trangThai + (ly ? ' · ' + ly : '') + ' · ' + (G.S.acc && G.S.acc.u), 'Ghi nhận');
-  U.toast('Đã ghi quyết định cho ' + t.id + '.', 'ok');
+
+  /* Gửi quyết định lên máy chủ.
+     Trước đây hàm này chỉ sửa localStorage: Admin duyệt hai mươi tài liệu
+     buổi sáng, sổ trên Google Sheet vẫn "chờ duyệt" cả hai mươi, và Admin
+     thứ hai mở máy mình thấy y nguyên rồi duyệt lại lần nữa. */
+  if(G.API_CAP_PHEP){
+    fetch(G.API_CAP_PHEP, {
+      method:'POST', headers:{'Content-Type':'text/plain;charset=utf-8'},
+      body: JSON.stringify({fn:'duyetTaiLieu', u:(G.S.acc && G.S.acc.u) || '',
+        token: G.PHIEN_TOKEN || '', ma: t.id, viec: viec, lyDo: ly})
+    }).then(function(r){ return r.json(); })
+      .then(function(d){
+        if(d && d.ok){ U.toast('Đã ghi quyết định cho ' + t.id + ' — máy chủ đã nhận.','ok'); return; }
+        t.chuaDongBo = true; luu();
+        U.toast('Đã ghi trên máy này, nhưng máy chủ chưa nhận: ' +
+          ((d && d.error) || 'không rõ lý do') + '. Bấm lại khi có mạng.','err');
+      })
+      .catch(function(){
+        t.chuaDongBo = true; luu();
+        U.toast('Đã ghi trên máy này. Chưa gửi được lên máy chủ — bấm lại khi có mạng.','err');
+      });
+  } else {
+    U.toast('Đã ghi quyết định cho ' + t.id + '. Bản mẫu chưa nối máy chủ nên chưa gửi đi.','ok');
+  }
   G.render();
 }
 
