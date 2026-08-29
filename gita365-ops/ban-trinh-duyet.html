@@ -1,626 +1,1181 @@
-<title>Vận Hành Cộng Đồng GITA365</title>
+<title>Bàn Điều Hành GITA365</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,400&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap">
 <style>
 :root{
-  --paper:#F1F3EF; --surface:#FFFFFF; --surface-2:#E9EDE7;
-  --ink:#131A17; --ink-2:#3B4740; --muted:#66756D;
-  --line:#D6DDD4; --line-soft:#E4E9E1;
-  --jade:#1B5E4F; --jade-soft:#DDEAE4;
-  --lacquer:#A8402A; --lacquer-soft:#F4E2DC;
-  --amber:#8A6110; --amber-soft:#F3E9D4;
-  --shadow:0 1px 2px rgba(19,26,23,.05), 0 8px 24px -18px rgba(19,26,23,.35);
+  --paper:#F2F4F0; --surface:#FFFFFF; --sunk:#E8ECE5; --raised:#FBFCFA;
+  --ink:#111815; --ink-2:#39463F; --muted:#65746B; --faint:#8B978F;
+  --line:#D5DCD2; --hair:#E5EAE2;
+  --jade:#1B5E4F; --jade-ink:#14493D; --jade-wash:#DEEAE5;
+  --lacquer:#A63E27; --lacquer-wash:#F6E2DB;
+  --amber:#8A6110; --amber-wash:#F4EAD3;
+  --s1:#0B8A6C; --s2:#C0670A; --s3:#3060A8;
+  --good:#1B6E4A; --good-wash:#DCEDE2;
+  --warn:#8A6110; --warn-wash:#F4EAD3;
+  --bad:#A63E27; --bad-wash:#F6E2DB;
+  --sh-1:0 1px 2px rgba(17,24,21,.05);
+  --sh-2:0 1px 2px rgba(17,24,21,.05), 0 10px 28px -20px rgba(17,24,21,.5);
   color-scheme:light;
 }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
-    --paper:#0E1311; --surface:#151C19; --surface-2:#1B231F;
-    --ink:#E7ECE7; --ink-2:#C0CBC4; --muted:#8B9A92;
-    --line:#26302B; --line-soft:#1F2823;
-    --jade:#77C4AB; --jade-soft:#16302A;
-    --lacquer:#E28568; --lacquer-soft:#33201A;
-    --amber:#D6A748; --amber-soft:#2E2716;
-    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 30px -20px rgba(0,0,0,.9);
+    --paper:#0C1210; --surface:#141B18; --sunk:#0F1614; --raised:#1A221E;
+    --ink:#E9EEE9; --ink-2:#C2CDC6; --muted:#8C9A92; --faint:#6E7C74;
+    --line:#252F2A; --hair:#1D2621;
+    --jade:#6FC3A9; --jade-ink:#8FD3BD; --jade-wash:#14302A;
+    --lacquer:#E08466; --lacquer-wash:#331F19;
+    --amber:#D4A54A; --amber-wash:#2D2615;
+    --s1:#12A47D; --s2:#C8851E; --s3:#5A8FD6;
+    --good:#5CBE8C; --good-wash:#14291D;
+    --warn:#D4A54A; --warn-wash:#2D2615;
+    --bad:#E08466; --bad-wash:#331F19;
+    --sh-1:0 1px 2px rgba(0,0,0,.5);
+    --sh-2:0 1px 2px rgba(0,0,0,.5), 0 12px 32px -22px #000;
     color-scheme:dark;
   }
 }
 :root[data-theme="dark"]{
-  --paper:#0E1311; --surface:#151C19; --surface-2:#1B231F;
-  --ink:#E7ECE7; --ink-2:#C0CBC4; --muted:#8B9A92;
-  --line:#26302B; --line-soft:#1F2823;
-  --jade:#77C4AB; --jade-soft:#16302A;
-  --lacquer:#E28568; --lacquer-soft:#33201A;
-  --amber:#D6A748; --amber-soft:#2E2716;
-  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 30px -20px rgba(0,0,0,.9);
+  --paper:#0C1210; --surface:#141B18; --sunk:#0F1614; --raised:#1A221E;
+  --ink:#E9EEE9; --ink-2:#C2CDC6; --muted:#8C9A92; --faint:#6E7C74;
+  --line:#252F2A; --hair:#1D2621;
+  --jade:#6FC3A9; --jade-ink:#8FD3BD; --jade-wash:#14302A;
+  --lacquer:#E08466; --lacquer-wash:#331F19;
+  --amber:#D4A54A; --amber-wash:#2D2615;
+  --s1:#12A47D; --s2:#C8851E; --s3:#5A8FD6;
+  --good:#5CBE8C; --good-wash:#14291D;
+  --warn:#D4A54A; --warn-wash:#2D2615;
+  --bad:#E08466; --bad-wash:#331F19;
+  --sh-1:0 1px 2px rgba(0,0,0,.5);
+  --sh-2:0 1px 2px rgba(0,0,0,.5), 0 12px 32px -22px #000;
   color-scheme:dark;
 }
 *{box-sizing:border-box}
-body{
-  margin:0; background:var(--paper); color:var(--ink);
+body{margin:0;background:var(--paper);color:var(--ink);
   font-family:"Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",sans-serif;
-  font-size:16px; line-height:1.62; font-weight:400;
-  -webkit-font-smoothing:antialiased;
-}
-h1,h2,h3,h4{font-family:Lora,Georgia,"Times New Roman",serif; text-wrap:balance; margin:0; line-height:1.22}
+  font-size:15.5px;line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:Lora,Georgia,serif;margin:0;line-height:1.2;text-wrap:balance}
 p{margin:0}
-a{color:var(--jade)}
-:focus-visible{outline:2px solid var(--jade); outline-offset:3px; border-radius:3px}
+button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
+:focus-visible{outline:2px solid var(--jade);outline-offset:2px;border-radius:4px}
+.num{font-variant-numeric:tabular-nums}
 
-/* ---------- shell ---------- */
-.shell{display:grid; grid-template-columns:minmax(0,1fr); max-width:1280px; margin:0 auto; padding:0 20px}
-@media (min-width:1000px){
-  .shell{grid-template-columns:232px minmax(0,1fr); gap:56px; padding:0 32px}
-}
-nav.rail{display:none}
-@media (min-width:1000px){
-  nav.rail{
-    display:block; position:sticky; top:0; align-self:start;
-    height:100vh; overflow-y:auto; padding:40px 0 40px;
-    border-right:1px solid var(--line-soft);
-  }
-}
-.rail .brand{font-family:Lora,serif; font-weight:700; font-size:17px; letter-spacing:-.01em; margin-bottom:4px}
-.rail .brand span{color:var(--jade)}
-.rail .sub{font-size:11.5px; color:var(--muted); letter-spacing:.06em; text-transform:uppercase; margin-bottom:26px}
-.rail ol{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:2px; counter-reset:r}
-.rail a{
-  display:flex; gap:10px; text-decoration:none; color:var(--ink-2); font-size:13.5px;
-  padding:6px 10px 6px 8px; border-radius:6px; border-left:2px solid transparent; line-height:1.35;
-}
-.rail a .n{color:var(--muted); font-variant-numeric:tabular-nums; font-size:11.5px; padding-top:2px; min-width:16px}
-.rail a:hover{background:var(--surface-2); color:var(--ink)}
-.rail a.on{color:var(--jade); border-left-color:var(--jade); background:var(--jade-soft); font-weight:500}
-.rail a.on .n{color:var(--jade)}
+/* topbar */
+.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--paper) 88%,transparent);
+  backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.top-in{max-width:1180px;margin:0 auto;padding:0 22px}
+.top-row{display:flex;align-items:center;gap:16px;padding:13px 0 11px;flex-wrap:wrap}
+.logo{font-family:Lora,serif;font-weight:700;font-size:17px;letter-spacing:-.01em;white-space:nowrap}
+.logo span{color:var(--jade)}
+.chip-demo{font-size:11px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--lacquer);background:var(--lacquer-wash);padding:4px 10px;border-radius:100px;
+  border:1px solid color-mix(in srgb,var(--lacquer) 22%,transparent)}
+.top-right{margin-left:auto;font-size:12.5px;color:var(--muted)}
+.tabs{display:flex;gap:2px;overflow-x:auto;padding-bottom:2px;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{padding:9px 14px 11px;font-size:14px;font-weight:500;color:var(--muted);white-space:nowrap;
+  border-bottom:2px solid transparent;border-radius:6px 6px 0 0}
+.tab:hover{color:var(--ink)}
+.tab[aria-selected="true"]{color:var(--jade);border-bottom-color:var(--jade);font-weight:600}
+.tab .idx{font-size:11px;color:var(--faint);margin-right:7px;font-variant-numeric:tabular-nums}
+.tab[aria-selected="true"] .idx{color:var(--jade)}
 
-main{padding:0 0 96px; min-width:0}
+/* layout */
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px 90px}
+.panel{padding:38px 0 0}
+.panel[hidden]{display:none!important}
+.ph{max-width:70ch}
+.eyebrow{font-size:11px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--jade);
+  display:flex;align-items:center;gap:9px;margin-bottom:11px}
+.eyebrow::before{content:"";width:20px;height:1px;background:currentColor;opacity:.5}
+h2{font-size:clamp(25px,3.4vw,34px);font-weight:600;letter-spacing:-.018em}
+h3{font-size:19px;font-weight:600;margin-top:40px}
+h4{font-size:15.5px;font-weight:600}
+.lede{margin-top:13px;color:var(--ink-2);font-size:16.5px}
+.body{margin-top:12px;color:var(--ink-2);max-width:70ch}
+.small{font-size:13px;color:var(--muted)}
 
-/* ---------- masthead ---------- */
-.mast{padding:56px 0 34px; border-bottom:1px solid var(--line)}
-.status{
-  display:inline-flex; align-items:center; gap:9px; font-size:12px; font-weight:600;
-  letter-spacing:.08em; text-transform:uppercase; color:var(--lacquer);
-  background:var(--lacquer-soft); border:1px solid color-mix(in srgb, var(--lacquer) 25%, transparent);
-  padding:6px 13px; border-radius:100px;
-}
-.status .dot{width:7px; height:7px; border-radius:50%; background:var(--lacquer)}
-.mast h1{font-size:clamp(34px,5.2vw,54px); font-weight:600; letter-spacing:-.022em; margin:20px 0 0}
-.mast h1 em{font-style:italic; color:var(--jade)}
-.mast .deck{margin-top:18px; font-size:18px; color:var(--ink-2); max-width:62ch; font-weight:300}
-.meta{display:flex; flex-wrap:wrap; gap:8px 26px; margin-top:26px; font-size:13px; color:var(--muted)}
-.meta b{color:var(--ink-2); font-weight:600}
+/* primitives */
+.row{display:grid;gap:13px;margin-top:24px}
+@media(min-width:660px){.r2{grid-template-columns:repeat(2,1fr)}.r3{grid-template-columns:repeat(3,1fr)}.r4{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.r4{grid-template-columns:repeat(4,1fr)}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:11px;padding:19px;box-shadow:var(--sh-1)}
+.card p{font-size:14px;color:var(--ink-2);margin-top:7px;line-height:1.55}
+.card.click{text-align:left;width:100%;transition:border-color .15s,transform .15s}
+.card.click:hover{border-color:var(--jade);transform:translateY(-1px)}
+.tag{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:3px 8px;border-radius:5px}
+.t-j{background:var(--jade-wash);color:var(--jade)}
+.t-a{background:var(--amber-wash);color:var(--amber)}
+.t-l{background:var(--lacquer-wash);color:var(--lacquer)}
+.pill{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;padding:3px 10px;border-radius:100px;white-space:nowrap}
+.pill::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+.p-good{background:var(--good-wash);color:var(--good)}
+.p-warn{background:var(--warn-wash);color:var(--warn)}
+.p-bad{background:var(--bad-wash);color:var(--bad)}
 
-/* ---------- sections ---------- */
-section{padding:52px 0; border-bottom:1px solid var(--line-soft); scroll-margin-top:24px}
-.eyebrow{
-  font-size:11.5px; font-weight:600; letter-spacing:.14em; text-transform:uppercase;
-  color:var(--jade); margin-bottom:12px; display:flex; align-items:center; gap:10px;
-}
-.eyebrow::before{content:""; width:22px; height:1px; background:var(--jade); opacity:.55}
-h2{font-size:clamp(24px,3.2vw,32px); font-weight:600; letter-spacing:-.015em}
-h3{font-size:18px; font-weight:600; margin-top:34px}
-.lede{margin-top:14px; font-size:17px; color:var(--ink-2); max-width:66ch}
-.body{margin-top:14px; max-width:68ch; color:var(--ink-2)}
-.body + .body{margin-top:12px}
-
-/* ---------- primitives ---------- */
-.grid{display:grid; gap:14px; margin-top:26px}
-@media (min-width:640px){.g2{grid-template-columns:repeat(2,1fr)} .g3{grid-template-columns:repeat(3,1fr)} .g4{grid-template-columns:repeat(2,1fr)}}
-@media (min-width:980px){.g4{grid-template-columns:repeat(4,1fr)}}
-.card{background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:20px; box-shadow:var(--shadow)}
-.card h4{font-size:16px; font-weight:600; margin-bottom:8px}
-.card p{font-size:14px; color:var(--ink-2); line-height:1.58}
-.tag{display:inline-block; font-size:11px; font-weight:600; letter-spacing:.06em; text-transform:uppercase; padding:3px 9px; border-radius:5px}
-.t-jade{background:var(--jade-soft); color:var(--jade)}
-.t-amber{background:var(--amber-soft); color:var(--amber)}
-.t-lacquer{background:var(--lacquer-soft); color:var(--lacquer)}
-
-.scroller{overflow-x:auto; margin-top:26px; border:1px solid var(--line); border-radius:10px; background:var(--surface)}
-table{border-collapse:collapse; width:100%; min-width:640px; font-size:14px}
-th,td{text-align:left; padding:11px 14px; border-bottom:1px solid var(--line-soft); vertical-align:top}
-thead th{
-  font-size:11.5px; font-weight:600; letter-spacing:.08em; text-transform:uppercase;
-  color:var(--muted); background:var(--surface-2); border-bottom:1px solid var(--line); white-space:nowrap;
-}
+.scroller{overflow-x:auto;margin-top:22px;border:1px solid var(--line);border-radius:11px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:600px;font-size:14px}
+th,td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--hair);vertical-align:top}
+thead th{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);
+  background:var(--sunk);white-space:nowrap;border-bottom:1px solid var(--line)}
 tbody tr:last-child td{border-bottom:none}
-td.num,th.num{font-variant-numeric:tabular-nums; white-space:nowrap}
-td strong{color:var(--ink)}
-caption{caption-side:bottom; text-align:left; padding:11px 14px; font-size:12.5px; color:var(--muted); border-top:1px solid var(--line-soft)}
+td.n,th.n{font-variant-numeric:tabular-nums;white-space:nowrap;text-align:right}
+caption{caption-side:bottom;text-align:left;padding:10px 14px;font-size:12.5px;color:var(--muted);border-top:1px solid var(--hair)}
 
-/* ---------- ladder ---------- */
-.ladder{margin-top:26px; display:flex; flex-direction:column-reverse; gap:6px}
-.rung{
-  display:grid; grid-template-columns:64px 1fr; gap:16px; align-items:start;
-  background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:15px 18px;
-}
-.rung .lvl{font-family:Lora,serif; font-size:13px; font-weight:700; color:var(--jade); letter-spacing:.04em; padding-top:2px}
-.rung h4{font-size:15.5px; font-weight:600}
-.rung p{font-size:13.5px; color:var(--muted); margin-top:4px}
-.rung .where{margin-top:8px; display:flex; gap:6px; flex-wrap:wrap}
-.rung.locked{border-style:dashed; background:transparent}
+.note{margin-top:24px;border:1px solid var(--line);border-left:3px solid var(--jade);background:var(--surface);
+  padding:16px 20px;border-radius:0 11px 11px 0}
+.note .k{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--jade)}
+.note p{margin-top:7px;color:var(--ink-2);max-width:66ch;font-size:15px}
+.note.red{border-left-color:var(--lacquer);background:var(--lacquer-wash);border-color:color-mix(in srgb,var(--lacquer) 20%,transparent)}
+.note.red .k{color:var(--lacquer)} .note.red p{color:var(--ink)}
 
-/* ---------- timeline ---------- */
-.tl{margin-top:26px; border-left:2px solid var(--line); padding-left:0; list-style:none; display:flex; flex-direction:column}
-.tl li{position:relative; padding:0 0 22px 26px}
-.tl li::before{
-  content:""; position:absolute; left:-6px; top:6px; width:10px; height:10px; border-radius:50%;
-  background:var(--paper); border:2px solid var(--jade);
-}
-.tl li.hot::before{background:var(--lacquer); border-color:var(--lacquer)}
-.tl .when{font-size:12px; font-weight:700; letter-spacing:.06em; color:var(--jade); font-variant-numeric:tabular-nums}
-.tl li.hot .when{color:var(--lacquer)}
-.tl .what{font-size:15px; font-weight:600; margin-top:2px}
-.tl .how{font-size:13.5px; color:var(--muted); margin-top:3px; max-width:60ch}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:11px;padding:16px 18px}
+.stat .v{font-family:Lora,serif;font-size:27px;font-weight:700;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.stat .l{font-size:12.5px;color:var(--muted);margin-top:2px;line-height:1.35}
+.stat .w{font-size:11px;font-weight:700;letter-spacing:.06em;color:var(--jade);margin-top:9px}
 
-/* ---------- layers ---------- */
-.layers{margin-top:26px; display:flex; flex-direction:column; gap:0; border:1px solid var(--line); border-radius:10px; overflow:hidden; background:var(--surface)}
-.layer{display:grid; grid-template-columns:44px 1fr; gap:14px; padding:14px 16px; border-bottom:1px solid var(--line-soft)}
-.layer:last-child{border-bottom:none}
-.layer .n{
-  font-family:Lora,serif; font-weight:700; font-size:15px; color:var(--jade);
-  background:var(--jade-soft); border-radius:7px; display:grid; place-items:center; height:30px;
-}
-.layer h4{font-size:15px; font-weight:600}
-.layer p{font-size:13.5px; color:var(--muted); margin-top:3px}
+/* controls */
+.ctrls{margin-top:24px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px;box-shadow:var(--sh-1)}
+.presets{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;align-items:center}
+.presets .lbl{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-right:4px}
+.preset{border:1px solid var(--line);background:var(--raised);padding:6px 13px;border-radius:100px;font-size:13px;font-weight:500}
+.preset:hover{border-color:var(--jade);color:var(--jade)}
+.preset[aria-pressed="true"]{background:var(--jade);border-color:var(--jade);color:#fff;font-weight:600}
+:root[data-theme="dark"] .preset[aria-pressed="true"]{color:#0C1210}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .preset[aria-pressed="true"]{color:#0C1210}}
+.sliders{display:grid;gap:17px}
+@media(min-width:720px){.sliders{grid-template-columns:repeat(2,1fr);gap:17px 30px}}
+.sl label{display:flex;justify-content:space-between;align-items:baseline;gap:10px;font-size:13.5px;color:var(--ink-2)}
+.sl .val{font-weight:700;color:var(--ink);font-variant-numeric:tabular-nums;font-size:14px}
+.sl input[type=range]{width:100%;margin-top:7px;accent-color:var(--jade);height:20px}
+.sl .hint{font-size:11.5px;color:var(--faint);margin-top:2px}
 
-/* ---------- pull ---------- */
-.pull{
-  margin-top:28px; border-left:3px solid var(--lacquer); background:var(--lacquer-soft);
-  padding:18px 22px; border-radius:0 10px 10px 0;
-}
-.pull .k{font-size:11.5px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--lacquer)}
-.pull p{margin-top:8px; font-size:15px; color:var(--ink); max-width:64ch}
-.note{
-  margin-top:26px; border:1px solid var(--line); border-left:3px solid var(--jade);
-  background:var(--surface); padding:18px 22px; border-radius:0 10px 10px 0;
-}
-.note .k{font-size:11.5px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--jade)}
-.note p{margin-top:8px; font-size:15px; color:var(--ink-2); max-width:64ch}
-
-/* ---------- quote / script ---------- */
-.script{
-  margin-top:16px; background:var(--surface-2); border:1px solid var(--line-soft);
-  border-radius:10px; padding:16px 18px; font-size:14.5px; color:var(--ink-2); line-height:1.6;
-}
-.script .who{font-size:11.5px; font-weight:700; letter-spacing:.09em; text-transform:uppercase; color:var(--muted); margin-bottom:7px}
-.script em{color:var(--muted)}
-
-/* ---------- stats ---------- */
-.stats{display:grid; gap:12px; margin-top:26px}
-@media (min-width:620px){.stats{grid-template-columns:repeat(4,1fr)}}
-.stat{background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:16px 18px}
-.stat .v{font-family:Lora,serif; font-size:26px; font-weight:700; letter-spacing:-.02em; font-variant-numeric:tabular-nums}
-.stat .l{font-size:12.5px; color:var(--muted); margin-top:3px; line-height:1.4}
-.stat .w{font-size:11.5px; color:var(--jade); font-weight:600; margin-top:8px; letter-spacing:.04em}
-
-ul.plain{margin:14px 0 0; padding-left:20px; color:var(--ink-2); font-size:15px; max-width:66ch}
-ul.plain li{margin-bottom:7px}
-ul.check{list-style:none; margin:20px 0 0; padding:0; display:flex; flex-direction:column; gap:9px; max-width:70ch}
-ul.check li{display:grid; grid-template-columns:22px 1fr; gap:10px; font-size:15px; color:var(--ink-2)}
-ul.check li::before{content:"☐"; color:var(--jade); font-size:17px; line-height:1.4}
-
-footer{padding:44px 0 0; color:var(--muted); font-size:13.5px; max-width:68ch}
-footer strong{color:var(--ink-2)}
-@media (prefers-reduced-motion:no-preference){
-  .rail a{transition:background .15s ease, color .15s ease}
-}
+/* chart */
+.chartbox{margin-top:22px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px 18px 12px;box-shadow:var(--sh-1)}
+.chart-head{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;flex-wrap:wrap;margin-bottom:6px}
+.chart-title{font-family:Lora,serif;font-size:17px;font-weight:600}
+.chart-sub{font-size:12.5px;color:var(--muted);margin-top:2px}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:12.5px;color:var(--ink-2)}
+.legend i{width:11px;height:11px;border-radius:3px;display:inline-block;margin-right:6px;vertical-align:-1px}
+svg{display:block;width:100%;height:auto;overflow:visible}
+.tip{position:absolute;pointer-events:none;background:var(--surface);border:1px solid var(--line);
+  border-radius:8px;padding:9px 11px;font-size:12.5px;box-shadow:var(--sh-2);opacity:0;transition:opacity .1s;z-index:5;min-width:150px}
+.tip b{font-size:12px;color:var(--muted);font-weight:600;letter-spacing:.05em;text-transform:uppercase}
+.tip .r{display:flex;justify-content:space-between;gap:14px;margin-top:5px}
+.tip .r i{width:9px;height:9px;border-radius:2px;display:inline-block;margin-right:6px}
+.tip .r span:last-child{font-variant-numeric:tabular-nums;font-weight:600}
+.plotwrap{position:relative}
 </style>
+<style>
+/* verdict list */
+.verdicts{margin-top:22px;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--surface)}
+.vd{display:grid;grid-template-columns:1fr auto;gap:8px 16px;align-items:center;padding:13px 17px;border-bottom:1px solid var(--hair)}
+.vd:last-child{border-bottom:none}
+.vd .m{font-size:14px}
+.vd .m b{font-family:Lora,serif;font-size:15px}
+.vd .m span{display:block;color:var(--muted);font-size:12.5px;margin-top:1px;font-variant-numeric:tabular-nums}
+.vd .rt{display:flex;align-items:center;gap:12px;justify-content:flex-end}
+.vd .proj{font-family:Lora,serif;font-weight:700;font-size:17px;font-variant-numeric:tabular-nums;min-width:92px;text-align:right}
 
-<div class="shell">
-<nav class="rail" aria-label="Mục lục">
-  <div class="brand">GITA<span>365</span></div>
-  <div class="sub">Bản trình duyệt</div>
-  <ol>
-    <li><a href="#quyet-dinh" class="on"><span class="n">01</span><span>Việc cần anh chốt</span></a></li>
-    <li><a href="#kien-truc"><span class="n">02</span><span>Hai nhóm &amp; tầng giá trị</span></a></li>
-    <li><a href="#muc-tieu"><span class="n">03</span><span>Mục tiêu 5 năm</span></a></li>
-    <li><a href="#noi-dung"><span class="n">04</span><span>Nhịp nội dung</span></a></li>
-    <li><a href="#cham-soc-bai"><span class="n">05</span><span>Chăm sóc bài đăng</span></a></li>
-    <li><a href="#cham-soc-nguoi"><span class="n">06</span><span>Chăm sóc thành viên</span></a></li>
-    <li><a href="#thu-hut"><span class="n">07</span><span>Thu hút &amp; giữ chân</span></a></li>
-    <li><a href="#bao-ve"><span class="n">08</span><span>Bảo vệ khách hàng</span></a></li>
-    <li><a href="#do-luong"><span class="n">09</span><span>Đo lường</span></a></li>
-    <li><a href="#lo-trinh"><span class="n">10</span><span>Lộ trình 90 ngày</span></a></li>
-    <li><a href="#gioi-han"><span class="n">11</span><span>Giới hạn tự động hóa</span></a></li>
-  </ol>
-</nav>
+/* need-table */
+.need{margin-top:20px}
 
-<main>
-  <header class="mast">
-    <span class="status"><span class="dot"></span>Chờ anh xác nhận để triển khai</span>
-    <h1>Hệ vận hành cộng đồng <em>GITA365</em></h1>
-    <p class="deck">Một bộ máy vận hành cho hai nhóm Facebook: nghi thức tuần, quy trình chăm sóc từng bài đăng, phễu đưa thành viên vào web app và các khóa đào tạo, hệ phòng thủ chống nick ảo — tất cả xoay quanh một nguyên tắc: <strong>cho trước, nhận sau</strong>.</p>
-    <div class="meta">
-      <span><b>Phạm vi</b> · 2 nhóm, 5 năm</span>
-      <span><b>Nội dung sẵn sàng</b> · 288 bài / 12 tuần</span>
-      <span><b>Tài liệu vận hành</b> · 13 chương</span>
-      <span><b>Trạng thái</b> · bản trình duyệt</span>
+/* segmented */
+.seg{display:inline-flex;background:var(--sunk);border:1px solid var(--line);border-radius:9px;padding:3px;gap:3px}
+.seg button{padding:6px 14px;border-radius:6px;font-size:13.5px;font-weight:500;color:var(--muted)}
+.seg button[aria-pressed="true"]{background:var(--surface);color:var(--ink);font-weight:600;box-shadow:var(--sh-1)}
+.filters{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:22px}
+select{font:inherit;font-size:13.5px;padding:7px 11px;border:1px solid var(--line);border-radius:8px;
+  background:var(--surface);color:var(--ink)}
+
+/* calendar */
+.week{display:grid;gap:11px;margin-top:20px}
+@media(min-width:900px){.week{grid-template-columns:repeat(7,1fr);gap:9px}}
+.day{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:11px;min-width:0}
+.day .dh{display:flex;justify-content:space-between;align-items:baseline;gap:6px;padding-bottom:8px;border-bottom:1px solid var(--hair);margin-bottom:9px}
+.day .dn{font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-2)}
+.day .dd{font-size:11px;color:var(--faint);font-variant-numeric:tabular-nums}
+.slot{width:100%;text-align:left;border-radius:8px;padding:8px 9px;margin-bottom:7px;border:1px solid var(--hair);
+  background:var(--raised);display:block;transition:border-color .15s}
+.slot:last-child{margin-bottom:0}
+.slot:hover{border-color:var(--jade)}
+.slot[aria-pressed="true"]{border-color:var(--jade);background:var(--jade-wash)}
+.slot .st{display:flex;gap:7px;align-items:center;font-size:10.5px;font-weight:700;letter-spacing:.05em;color:var(--muted);font-variant-numeric:tabular-nums}
+.slot .sn{font-size:10.5px;font-weight:700;color:var(--jade);text-transform:uppercase;letter-spacing:.04em}
+.slot .sx{font-size:12.5px;line-height:1.4;margin-top:4px;color:var(--ink)}
+.slot.light{background:transparent;border-style:dashed}
+.detail{margin-top:18px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px;box-shadow:var(--sh-1)}
+.detail .dt-head{display:flex;gap:9px;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+.detail h4{font-size:19px;font-family:Lora,serif;margin:6px 0 10px}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:5px 16px;font-size:13.5px;margin-top:12px}
+.kv dt{color:var(--muted)} .kv dd{margin:0;color:var(--ink-2)}
+.layers6{margin-top:16px;border-top:1px solid var(--hair);padding-top:14px;display:grid;gap:8px}
+.l6{display:grid;grid-template-columns:26px 1fr;gap:11px;font-size:13.5px;color:var(--ink-2)}
+.l6 b{color:var(--jade);font-family:Lora,serif;font-size:13px}
+.mixbar{display:flex;height:9px;border-radius:5px;overflow:hidden;margin-top:11px;gap:2px}
+.mixbar span{height:100%}
+.mixlegend{display:flex;gap:14px;flex-wrap:wrap;margin-top:9px;font-size:12px;color:var(--muted)}
+.mixlegend i{width:9px;height:9px;border-radius:2px;display:inline-block;margin-right:5px}
+
+/* timeline */
+.tl{margin-top:22px;list-style:none;padding:0;display:grid;gap:0;border-left:2px solid var(--line);margin-left:6px}
+.tl li{position:relative;padding:0 0 4px 24px}
+.tlb{width:100%;text-align:left;padding:11px 13px;border-radius:10px;border:1px solid transparent;margin-bottom:8px}
+.tlb:hover{background:var(--sunk)}
+.tlb[aria-pressed="true"]{background:var(--surface);border-color:var(--jade);box-shadow:var(--sh-1)}
+.tl li::before{content:"";position:absolute;left:-7px;top:19px;width:11px;height:11px;border-radius:50%;
+  background:var(--paper);border:2px solid var(--jade)}
+.tl li.hot::before{background:var(--lacquer);border-color:var(--lacquer)}
+.tl .when{font-size:11.5px;font-weight:700;letter-spacing:.07em;color:var(--jade);font-variant-numeric:tabular-nums}
+.tl li.hot .when{color:var(--lacquer)}
+.tl .what{font-size:15px;font-weight:600;margin-top:1px}
+.tl .who{font-size:12px;color:var(--muted);margin-top:2px}
+
+/* thread demo */
+.thread{margin-top:16px;background:var(--sunk);border:1px solid var(--hair);border-radius:11px;padding:15px}
+.msg{background:var(--surface);border:1px solid var(--hair);border-radius:10px;padding:11px 13px;margin-bottom:9px;font-size:13.5px;line-height:1.55;color:var(--ink-2)}
+.msg:last-child{margin-bottom:0}
+.msg.reply{margin-left:22px;border-left:2px solid var(--jade)}
+.msg .nm{font-size:12px;font-weight:700;color:var(--ink);margin-bottom:3px;display:flex;gap:8px;align-items:center}
+.msg .rolechip{font-size:9.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:2px 6px;border-radius:4px;background:var(--jade-wash);color:var(--jade)}
+.msg .gh{font-size:10.5px;font-weight:700;letter-spacing:.07em;color:var(--amber);margin-top:6px}
+
+/* gate */
+.gate{display:grid;gap:16px;margin-top:22px}
+@media(min-width:860px){.gate{grid-template-columns:1fr 300px;align-items:start}}
+.signals{background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.sig{display:grid;grid-template-columns:22px 1fr auto;gap:11px;align-items:center;padding:11px 15px;border-bottom:1px solid var(--hair);cursor:pointer;font-size:14px}
+.sig:last-child{border-bottom:none}
+.sig:hover{background:var(--sunk)}
+.sig input{width:17px;height:17px;accent-color:var(--jade);margin:0}
+.sig .pt{font-variant-numeric:tabular-nums;font-weight:700;font-size:13px;color:var(--muted)}
+.sig.on{background:var(--lacquer-wash)}
+.sig.on .pt{color:var(--lacquer)}
+.gauge{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px;position:sticky;top:120px;box-shadow:var(--sh-1)}
+.gauge .sc{font-family:Lora,serif;font-size:46px;font-weight:700;line-height:1;font-variant-numeric:tabular-nums}
+.gauge .sl{font-size:12.5px;color:var(--muted);margin-top:4px}
+.gauge .track{height:8px;border-radius:5px;background:var(--sunk);margin:16px 0 6px;overflow:hidden}
+.gauge .fill{height:100%;border-radius:5px;transition:width .18s ease,background .18s ease}
+.gauge .marks{display:flex;justify-content:space-between;font-size:11px;color:var(--faint);font-variant-numeric:tabular-nums}
+.gauge .verdict{margin-top:16px;padding:12px 14px;border-radius:9px;font-size:14px;font-weight:600;line-height:1.45}
+.gauge .act{font-size:12.5px;color:var(--muted);margin-top:9px;font-weight:400}
+
+/* leaderboard */
+.lb{margin-top:20px;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.lbr{display:grid;grid-template-columns:34px 1fr 150px 78px;gap:12px;align-items:center;padding:13px 16px;border-bottom:1px solid var(--hair)}
+.lbr:last-child{border-bottom:none}
+@media(max-width:700px){.lbr{grid-template-columns:30px 1fr 70px}.lbr .bars{display:none}}
+.lbr .rk{font-family:Lora,serif;font-weight:700;font-size:16px;color:var(--muted);text-align:center;font-variant-numeric:tabular-nums}
+.lbr.top1 .rk,.lbr.top2 .rk,.lbr.top3 .rk{color:var(--jade)}
+.lbr .nm{font-size:14.5px;font-weight:600}
+.lbr .mc{font-size:11.5px;color:var(--muted);font-variant-numeric:tabular-nums;margin-top:1px}
+.bars{display:flex;height:8px;gap:2px;border-radius:4px;overflow:hidden}
+.bars span{height:100%}
+.lbr .tot{font-family:Lora,serif;font-weight:700;font-size:17px;text-align:right;font-variant-numeric:tabular-nums}
+
+/* kpi grid */
+.kpis{display:grid;gap:12px;margin-top:22px}
+@media(min-width:660px){.kpis{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.kpis{grid-template-columns:repeat(3,1fr)}}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:11px;padding:15px 17px;box-shadow:var(--sh-1)}
+.kpi .kh{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.kpi .kn{font-size:13px;color:var(--muted);line-height:1.35;max-width:22ch}
+.kpi .kv2{font-family:Lora,serif;font-size:25px;font-weight:700;margin-top:8px;font-variant-numeric:tabular-nums}
+.kpi .kt{font-size:12px;color:var(--faint);margin-top:2px;font-variant-numeric:tabular-nums}
+.spark{display:flex;align-items:flex-end;gap:2px;height:26px;margin-top:11px}
+.spark span{flex:1;border-radius:2px 2px 0 0;background:var(--jade);opacity:.28;min-height:2px}
+.spark span:last-child{opacity:1}
+
+ul.plain{margin:13px 0 0;padding-left:19px;color:var(--ink-2);max-width:68ch}
+ul.plain li{margin-bottom:6px}
+ul.check{list-style:none;margin:20px 0 0;padding:0;display:grid;gap:8px;max-width:72ch}
+ul.check li{display:grid;grid-template-columns:20px 1fr;gap:10px;color:var(--ink-2)}
+ul.check li::before{content:"☐";color:var(--jade);font-size:16px;line-height:1.4}
+footer{margin-top:56px;padding-top:24px;border-top:1px solid var(--line);color:var(--muted);font-size:13.5px;max-width:72ch}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;background:var(--sunk);padding:1px 5px;border-radius:4px}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+<header class="top">
+  <div class="top-in">
+    <div class="top-row">
+      <div class="logo">GITA<span>365</span> · Bàn điều hành</div>
+      <span class="chip-demo">Bản demo · chờ xác nhận</span>
+      <div class="top-right">Số liệu mô phỏng — không phải dữ liệu nhóm thật</div>
     </div>
-  </header>
+    <div class="tabs" role="tablist" aria-label="Khu vực">
+      <button class="tab" role="tab" aria-selected="true" data-tab="tongquan"><span class="idx">01</span>Tổng quan</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="khathi"><span class="idx">02</span>Khả thi</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="lich"><span class="idx">03</span>Lịch đăng</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="care"><span class="idx">04</span>Chăm sóc bài</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="cong"><span class="idx">05</span>Cổng lọc</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="thidua"><span class="idx">06</span>Thi đua</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="kpi"><span class="idx">07</span>Chỉ số</button>
+    </div>
+  </div>
+</header>
 
-  <section id="quyet-dinh">
-    <div class="eyebrow">Ngày 0</div>
-    <h2>Tám việc cần anh chốt trước khi bấm nút</h2>
-    <p class="lede">Toàn bộ hệ thống đã dựng xong và đang chờ. Tám quyết định dưới đây quyết định cường độ và ngân sách — không quyết định phương pháp.</p>
-    <ul class="check">
-      <li><strong>Kịch bản mốc thời gian:</strong> A – Vượt tốc (1 triệu ở năm thứ 3) hay B – Bền vững (1 triệu ở năm thứ 5). <em>Tôi khuyến nghị B.</em></li>
-      <li><strong>Đơn vị đo mục tiêu:</strong> tương tác thật theo tháng (MAM) hay theo tuần (WAM). <em>Tôi khuyến nghị MAM.</em></li>
-      <li><strong>Duyệt luật nhóm và 4 câu hỏi cổng vào</strong> cho từng nhóm.</li>
-      <li><strong>Duyệt 7 nghi thức tuần</strong> của mỗi nhóm và khung giờ đăng.</li>
-      <li><strong>Chốt đội ngũ</strong> và người trực “30 phút vàng” cho từng khung giờ.</li>
-      <li><strong>Duyệt Cam kết bảo vệ thành viên</strong> để đăng ghim công khai.</li>
-      <li><strong>Cung cấp</strong> liên kết web app, tên khóa tầng 1–2–3, và bộ tài nguyên cửa ngõ.</li>
-      <li><strong>Xác nhận mức độ tự động hóa</strong> theo mô hình “máy soạn – người bấm”.</li>
-    </ul>
-  </section>
+<div class="wrap">
 
-  <section id="kien-truc">
-    <div class="eyebrow">Kiến trúc</div>
-    <h2>Hai nhóm, hai vai trò, một hệ sinh thái</h2>
-    <p class="lede">Nhóm mở nuôi nhóm lõi, nhóm lõi nuôi khóa học. Người ở tầng nào chỉ nhận lời mời của tầng kế tiếp — đó là điều giữ cho cộng đồng không bao giờ có mùi bán hàng.</p>
+<!-- ============ 01 TỔNG QUAN ============ -->
+<section class="panel" data-panel="tongquan">
+  <div class="ph">
+    <div class="eyebrow">Bản demo vận hành</div>
+    <h2>Toàn bộ hệ vận hành, bấm được từng phần</h2>
+    <p class="lede">Đây không phải bản thuyết trình. Sáu khu vực còn lại là bộ máy thật đang chạy trên dữ liệu đã soạn: mô hình tăng trưởng tính lại theo từng nút anh kéo, lịch 288 bài của 12 tuần, quy trình chăm sóc từng bài, cổng lọc chấm điểm nick ảo, bảng thi đua gia đình và bảng chỉ số tuần.</p>
+  </div>
 
-    <div class="grid g2">
-      <div class="card">
-        <span class="tag t-jade">G1 · Nhóm lõi</span>
-        <h4 style="margin-top:10px">Cộng đồng GITA365</h4>
-        <p>Lò luyện. Nơi thành viên thực hành, chuyển hóa và thăng tiến. Mở đầy đủ tầng 0 → 4. Nhịp 14 bài/tuần và 1 buổi trực tuyến. Chỉ số Bắc Đẩu: số <strong>người thực hành</strong> hoạt động mỗi tuần.</p>
+  <div class="row r4">
+    <div class="stat"><div class="v">288</div><div class="l">bài đã soạn sẵn tiêu đề, định dạng và lời mời</div><div class="w">12 TUẦN · 2 NHÓM</div></div>
+    <div class="stat"><div class="v">9</div><div class="l">mốc chăm sóc bắt buộc cho mỗi bài đăng</div><div class="w">T−24H → T+7 NGÀY</div></div>
+    <div class="stat"><div class="v">7</div><div class="l">lớp phòng thủ chặn nick ảo và kẻ săn khách</div><div class="w">CHẠY 24/7</div></div>
+    <div class="stat"><div class="v">60</div><div class="l">tháng lộ trình có mô hình số kiểm chứng được</div><div class="w">TỚI 1 TRIỆU</div></div>
+  </div>
+
+  <h3>Hai nhóm, hai vai trò, một hệ sinh thái</h3>
+  <div class="row r2">
+    <div class="card">
+      <span class="tag t-j">G1 · Nhóm lõi</span>
+      <h4 style="margin-top:9px">Cộng đồng GITA365</h4>
+      <p>Lò luyện — nơi thành viên thực hành và thăng tiến. Mở đầy đủ tầng 0 → 4. Nhịp 14 bài/tuần và một buổi trực tuyến. Chỉ số Bắc Đẩu: số <b>người thực hành</b> hoạt động mỗi tuần.</p>
+    </div>
+    <div class="card">
+      <span class="tag t-a">G2 · Nhóm mở</span>
+      <h4 style="margin-top:9px">Gia Đình Thịnh Vượng</h4>
+      <p>Cửa ngõ — nơi các gia đình gặp giá trị đầu tiên. Chỉ mở tầng 1–2, không bao giờ nhắc khóa offline. Nhịp 10 bài/tuần. Chỉ số Bắc Đẩu: số <b>gia đình</b> hoạt động mỗi tuần.</p>
+    </div>
+  </div>
+
+  <div class="scroller">
+    <table>
+      <caption>Tường ngăn tầng — bảng này quyết định mọi lời mời được phép nói ở đâu. Vi phạm một dòng là mất chất cộng đồng mở.</caption>
+      <thead><tr><th>Hành vi</th><th>G1 · Cộng đồng GITA365</th><th>G2 · Gia Đình Thịnh Vượng</th></tr></thead>
+      <tbody>
+        <tr><td>Chia sẻ giá trị miễn phí</td><td>Có</td><td>Có</td></tr>
+        <tr><td>Mời học <b>tầng 1</b> trên web app</td><td>Có</td><td>Có — đây là lối rẽ duy nhất</td></tr>
+        <tr><td>Mời <b>tầng 2</b> khóa trực tuyến</td><td>Mời trực tiếp, có giá, có hạn</td><td>Chỉ kể trải nghiệm, không giá, không chốt đơn</td></tr>
+        <tr><td>Mời <b>tầng 3</b> huấn luyện offline</td><td>Có</td><td><b>Tuyệt đối không</b></td></tr>
+        <tr><td>Mời <b>tầng 4</b> đồng hành sâu</td><td>Tin nhắn riêng, người đã học tầng 3</td><td><b>Tuyệt đối không</b></td></tr>
+        <tr><td>Đăng bảng giá, khuyến mãi, đếm ngược</td><td>Tối đa 1 lần/tuần</td><td><b>Không</b></td></tr>
+        <tr><td>Chuyển người sang nhóm còn lại</td><td>—</td><td>Có — đường thăng tiến chuẩn</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="note">
+    <div class="k">Cơ chế tốt nghiệp</div>
+    <p>Gia đình ở G2 khi đủ độ chín nhận lời mời cá nhân sang G1 — kèm lý do riêng, không phải lời chào hàng. G1 là nơi duy nhất diễn ra lời mời tầng 3–4. Nhờ vậy G2 giữ được không khí cho đi, mà GITA365 vẫn có đường dẫn doanh thu rõ ràng.</p>
+  </div>
+
+  <h3>Tám việc cần anh chốt trước khi bấm nút</h3>
+  <ul class="check">
+    <li><b>Kịch bản mốc thời gian</b> — A vượt tốc hay B bền vững. Mở khu vực <b>Khả thi</b> để so hai kịch bản bằng số.</li>
+    <li><b>Đơn vị đo</b> — tương tác thật theo tháng (MAM) hay theo tuần (WAM).</li>
+    <li><b>Duyệt luật nhóm và bốn câu hỏi cổng vào</b> cho từng nhóm.</li>
+    <li><b>Duyệt bảy nghi thức tuần</b> và khung giờ đăng của mỗi nhóm.</li>
+    <li><b>Chốt đội ngũ</b> và người trực ba mươi phút vàng cho từng khung giờ.</li>
+    <li><b>Duyệt Cam kết bảo vệ thành viên</b> để đăng ghim công khai.</li>
+    <li><b>Cung cấp</b> liên kết web app, tên khóa tầng 1–2–3, bộ tài nguyên cửa ngõ.</li>
+    <li><b>Xác nhận mức tự động hóa</b> — mô hình máy soạn, người bấm.</li>
+  </ul>
+</section>
+
+<!-- ============ 02 KHẢ THI ============ -->
+<section class="panel" data-panel="khathi" hidden>
+  <div class="ph">
+    <div class="eyebrow">Mô hình khả thi</div>
+    <h2>Kéo thử từng nút — xem mốc nào tới được, mốc nào không</h2>
+    <p class="lede">Mô hình chạy 60 tháng cho <b>một</b> nhóm, có bão hòa thị trường, có hao hụt, có cổng lọc. Không có con số nào được làm đẹp: nếu tham số của anh không tới mốc, bảng phía dưới nói thẳng còn thiếu bao nhiêu.</p>
+  </div>
+
+  <div class="ctrls">
+    <div class="presets">
+      <span class="lbl">Kịch bản</span>
+      <button class="preset" data-preset="coso" aria-pressed="true">Kế hoạch cơ sở</button>
+      <button class="preset" data-preset="b" aria-pressed="false">B · Bền vững</button>
+      <button class="preset" data-preset="a" aria-pressed="false">A · Vượt tốc</button>
+      <button class="preset" data-preset="yeu" aria-pressed="false">Nếu buông chăm sóc</button>
+    </div>
+    <div class="sliders">
+      <div class="sl"><label for="s_base">Người mới mỗi tháng từ kênh chủ động <span class="val" id="v_base">800</span></label>
+        <input type="range" id="s_base" min="100" max="4000" step="50" value="800">
+        <div class="hint">Livestream, video ngắn, đối tác, quảng cáo có kiểm soát</div></div>
+      <div class="sl"><label for="s_capg">Năng lực kênh tăng mỗi tháng <span class="val" id="v_capg">9%</span></label>
+        <input type="range" id="s_capg" min="0" max="30" step="1" value="9">
+        <div class="hint">Đội ngũ và đại sứ lớn lên thì kênh chủ động mạnh lên</div></div>
+      <div class="sl"><label for="s_k">Hệ số lan truyền K <span class="val" id="v_k">0,45</span></label>
+        <input type="range" id="s_k" min="0" max="150" step="1" value="45">
+        <div class="hint">Mỗi người tương tác thật kéo về bao nhiêu người mỗi tháng</div></div>
+      <div class="sl"><label for="s_eng">Tỉ lệ tương tác thật trên tổng thành viên <span class="val" id="v_eng">30%</span></label>
+        <input type="range" id="s_eng" min="3" max="45" step="1" value="30">
+        <div class="hint">Kết quả trực tiếp của quy trình chăm sóc bài đăng</div></div>
+      <div class="sl"><label for="s_churn">Rời nhóm mỗi tháng <span class="val" id="v_churn">2,0%</span></label>
+        <input type="range" id="s_churn" min="5" max="80" step="1" value="20">
+        <div class="hint">Giữ chân kém là thùng thủng — bơm bao nhiêu cũng cạn</div></div>
+      <div class="sl"><label for="s_rej">Tỉ lệ từ chối ở cổng lọc <span class="val" id="v_rej">25%</span></label>
+        <input type="range" id="s_rej" min="0" max="60" step="1" value="25">
+        <div class="hint">Chặn nick ảo làm chậm số, nhưng giữ được chất</div></div>
+      <div class="sl"><label for="s_tam">Thị trường tiềm năng <span class="val" id="v_tam">8 triệu</span></label>
+        <input type="range" id="s_tam" min="1" max="30" step="1" value="8">
+        <div class="hint">Người Việt quan tâm phát triển bản thân và gia đình</div></div>
+      <div class="sl"><label for="s_m0">Thành viên nền lúc bắt đầu <span class="val" id="v_m0">500</span></label>
+        <input type="range" id="s_m0" min="0" max="20000" step="100" value="500">
+        <div class="hint">Số thành viên nhóm đang có hôm nay</div></div>
+    </div>
+  </div>
+
+  <div class="chartbox">
+    <div class="chart-head">
+      <div>
+        <div class="chart-title">Dự phóng 60 tháng cho một nhóm</div>
+        <div class="chart-sub">Trục dọc theo thang lô-ga-rit — mỗi vạch là gấp mười lần. Vòng tròn rỗng là mốc mục tiêu.</div>
       </div>
-      <div class="card">
-        <span class="tag t-amber">G2 · Nhóm mở</span>
-        <h4 style="margin-top:10px">Gia Đình Thịnh Vượng</h4>
-        <p>Cửa ngõ. Nơi các gia đình gặp giá trị đầu tiên. Chỉ mở tầng 1–2, không bao giờ nhắc tới khóa offline. Nhịp 10 bài/tuần. Chỉ số Bắc Đẩu: số <strong>gia đình</strong> hoạt động mỗi tuần.</p>
+      <div class="legend">
+        <span><i style="background:var(--s1)"></i>Tổng thành viên</span>
+        <span><i style="background:var(--s2)"></i>Tương tác thật mỗi tháng</span>
+        <span><i style="background:var(--muted);border-radius:50%"></i>Mốc mục tiêu</span>
       </div>
     </div>
+    <div class="plotwrap"><div id="chart"></div><div class="tip" id="tip"></div></div>
+  </div>
 
-    <h3>Thang giá trị và nơi được phép mời</h3>
-    <div class="ladder">
-      <div class="rung locked">
-        <div class="lvl">TẦNG 4</div>
-        <div>
-          <h4>Đồng hành sâu &amp; đại sứ</h4>
-          <p>Cố vấn riêng, hệ sinh thái đối tác, mạng lưới đại sứ vùng.</p>
-          <div class="where"><span class="tag t-jade">Chỉ G1 · tin nhắn riêng</span></div>
-        </div>
-      </div>
-      <div class="rung locked">
-        <div class="lvl">TẦNG 3</div>
-        <div>
-          <h4>Huấn luyện offline GITA</h4>
-          <p>Khóa trực tiếp. Chỉ mời người đã hoàn tất tầng 2 và có kết quả kiểm chứng.</p>
-          <div class="where"><span class="tag t-jade">Chỉ G1</span><span class="tag t-lacquer">Cấm ở G2</span></div>
-        </div>
-      </div>
-      <div class="rung">
-        <div class="lvl">TẦNG 2</div>
-        <div>
-          <h4>Khóa đào tạo trực tuyến</h4>
-          <p>Học theo kỳ, có cố vấn, mở sau buổi định hướng nhóm nhỏ.</p>
-          <div class="where"><span class="tag t-jade">G1 mời trực tiếp</span><span class="tag t-amber">G2 chỉ kể trải nghiệm</span></div>
-        </div>
-      </div>
-      <div class="rung">
-        <div class="lvl">TẦNG 1</div>
-        <div>
-          <h4>Web app GITA365</h4>
-          <p>Khóa nền tảng tự học, có tài khoản, có tiến độ. Đây là cửa chính của cả phễu.</p>
-          <div class="where"><span class="tag t-jade">Mở ở cả hai nhóm</span></div>
-        </div>
-      </div>
-      <div class="rung">
-        <div class="lvl">TẦNG 0</div>
-        <div>
-          <h4>Cộng đồng mở</h4>
-          <p>Hai nhóm Facebook, nghi thức tuần, nội dung miễn phí có giá trị dùng ngay.</p>
-          <div class="where"><span class="tag t-jade">Nền của mọi thứ</span></div>
-        </div>
-      </div>
+  <h3 style="margin-top:34px">Mốc nào tới được</h3>
+  <div class="verdicts" id="verdicts"></div>
+
+  <h3>Bộ máy phải lớn tới đâu để gánh nổi</h3>
+  <p class="body">Bảng này tính lại theo đúng dự phóng ở trên. Đây là chỗ lộ ra vì sao từ năm thứ hai bắt buộc phải chuyển sang kiến trúc cụm nhóm và kim tự tháp đại sứ tự quản — không bộ máy hưởng lương nào kham nổi cột bên phải.</p>
+  <div class="scroller need">
+    <table>
+      <caption>Tỉ lệ chuẩn: 1 người kiểm duyệt / 2.000 thành viên · 1 người chăm sóc / 80 người được nuôi dưỡng · 1 trưởng tổ / 6 người tương tác thật · 1 đại sứ khu vực / 30 trưởng tổ · tách nhóm vệ tinh mỗi 50.000 thành viên.</caption>
+      <thead><tr><th>Mốc</th><th class="n">Tổng thành viên</th><th class="n">Tương tác thật</th><th class="n">Người mới/tháng</th><th class="n">Kiểm duyệt</th><th class="n">Chăm sóc</th><th class="n">Trưởng tổ</th><th class="n">Đại sứ</th><th class="n">Nhóm vệ tinh</th></tr></thead>
+      <tbody id="needrows"></tbody>
+    </table>
+  </div>
+
+  <div class="note red">
+    <div class="k">Điều mô hình này nói thẳng</div>
+    <p id="honest">Kéo thử nút “Tỉ lệ tương tác thật” xuống 8% — con số tổng thành viên gần như không đổi, nhưng mọi mốc đều sụp. Cộng đồng không lớn lên bằng người mới, nó lớn lên bằng người ở lại và lên tiếng. Đó là lý do quy trình chăm sóc bài đăng ở khu vực kế tiếp là phần đắt giá nhất của cả hệ thống.</p>
+  </div>
+</section>
+<!-- ============ 03 LỊCH ĐĂNG ============ -->
+<section class="panel" data-panel="lich" hidden>
+  <div class="ph">
+    <div class="eyebrow">Lịch đăng</div>
+    <h2>Mười hai tuần đã soạn xong, không phải mẫu trống</h2>
+    <p class="lede">288 bài thật: mỗi bài có nghi thức, giờ đăng, định dạng, lời mời, tầng giá trị và mức chăm sóc. Bấm vào một bài để xem khuôn viết sáu lớp và quy trình chăm sóc kèm theo.</p>
+  </div>
+
+  <div class="filters">
+    <div class="seg" role="group" aria-label="Chọn nhóm">
+      <button data-grp="0" aria-pressed="true">G1 · Cộng đồng GITA365</button>
+      <button data-grp="1" aria-pressed="false">G2 · Gia Đình Thịnh Vượng</button>
     </div>
+    <label class="small" for="wk">Tuần</label>
+    <select id="wk"></select>
+    <span class="small" id="wkinfo"></span>
+  </div>
 
-    <div class="note">
-      <div class="k">Cơ chế tốt nghiệp</div>
-      <p>Gia đình ở G2 khi đủ độ chín nhận lời mời cá nhân sang G1 — kèm lý do riêng, không phải lời chào hàng. G1 là nơi duy nhất diễn ra lời mời tầng 3–4. Nhờ vậy G2 giữ được không khí cho đi, mà GITA365 vẫn có đường dẫn doanh thu rõ ràng.</p>
-    </div>
-  </section>
+  <div class="mixbar" id="mixbar"></div>
+  <div class="mixlegend" id="mixlegend"></div>
 
-  <section id="muc-tieu">
-    <div class="eyebrow">Mục tiêu</div>
-    <h2>Từ 1.000 đến 1.000.000 tương tác thật</h2>
-    <p class="lede">Trước khi lập lộ trình phải thống nhất cách đếm. Cùng một con số, đo theo tuần hay theo tháng chênh nhau tới ba lần khối lượng công việc.</p>
+  <div class="week" id="week"></div>
+  <div class="detail" id="postdetail" hidden></div>
+</section>
 
-    <div class="stats">
-      <div class="stat"><div class="v">1.000</div><div class="l">tương tác thật / tháng</div><div class="w">6 THÁNG · GIEO</div></div>
-      <div class="stat"><div class="v">10.000</div><div class="l">tương tác thật / tháng</div><div class="w">12 THÁNG · RỄ</div></div>
-      <div class="stat"><div class="v">100.000</div><div class="l">tương tác thật / tháng</div><div class="w">24 THÁNG · THÂN</div></div>
-      <div class="stat"><div class="v">1.000.000</div><div class="l">tương tác thật / tháng</div><div class="w">36–60 THÁNG · TÁN</div></div>
-    </div>
-
-    <h3>Tương tác thật được tính như thế nào</h3>
-    <p class="body">Một thành viên được tính khi tài khoản đã qua kiểm tra người thật và trong kỳ có <strong>ít nhất một</strong>: bình luận từ 10 từ trở lên, một bài đăng được duyệt, một bằng chứng nghi thức đã nộp, hoặc tham gia buổi trực tuyến từ 10 phút có phát biểu. <strong>Không tính</strong> thả cảm xúc, bình luận dưới 10 từ, hay lượt xem.</p>
-
-    <div class="scroller">
-      <table>
-        <caption>Lộ trình cho mỗi nhóm. Cửa kiểm chất lượng quan trọng hơn con số tăng trưởng — không đạt thì kéo dài giai đoạn, không tăng tốc thu hút.</caption>
-        <thead>
-          <tr><th>Giai đoạn</th><th class="num">Tương tác thật</th><th class="num">Tổng thành viên</th><th class="num">Người mới / tháng</th><th class="num">Hệ số K</th><th>Việc trọng tâm</th><th class="num">Cửa kiểm</th></tr>
-        </thead>
-        <tbody>
-          <tr><td><strong>1 · Gieo</strong><br><span style="color:var(--muted);font-size:13px">0–6 tháng</span></td><td class="num">1.000</td><td class="num">3–4 nghìn</td><td class="num">~600</td><td class="num">0,2</td><td>Chuẩn hóa nghi thức, đội ngũ, cổng lọc</td><td class="num">≥25%</td></tr>
-          <tr><td><strong>2 · Rễ</strong><br><span style="color:var(--muted);font-size:13px">7–12 tháng</span></td><td class="num">10.000</td><td class="num">30–40 nghìn</td><td class="num">~4.500</td><td class="num">0,4</td><td>Bộ máy nội dung, cohort tầng 1–2</td><td class="num">≥20%</td></tr>
-          <tr><td><strong>3 · Thân</strong><br><span style="color:var(--muted);font-size:13px">13–24 tháng</span></td><td class="num">100.000</td><td class="num">300–400 nghìn</td><td class="num">~25.000</td><td class="num">0,7</td><td>Kiến trúc cụm nhóm, đào tạo đại sứ hàng loạt</td><td class="num">≥15%</td></tr>
-          <tr><td><strong>4 · Tán</strong><br><span style="color:var(--muted);font-size:13px">25–36 tháng</span></td><td class="num">1.000.000</td><td class="num">3–4 triệu</td><td class="num">~220.000</td><td class="num">≥1,0</td><td>Truyền thông đa nền tảng, sự kiện vùng</td><td class="num">≥10%</td></tr>
-          <tr><td><strong>5 · Rừng</strong><br><span style="color:var(--muted);font-size:13px">37–60 tháng</span></td><td class="num">duy trì</td><td class="num">4–6 triệu</td><td class="num">bù hao</td><td class="num">≥0,8</td><td>Thể chế hóa, chuyển giao, giảm phụ thuộc Facebook</td><td class="num">≥10%</td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="pull">
-      <div class="k">Nói thẳng để anh quyết đúng</div>
-      <p>Một triệu người tương tác thật trong <em>một</em> nhóm nghĩa là tổng quy mô 3–4 triệu thành viên — thuộc nhóm 3–5 cộng đồng lớn nhất Việt Nam. Đạt được, nhưng <strong>không thể bằng một nhóm đơn lẻ vận hành thủ công</strong>. Từ năm thứ hai bắt buộc chuyển sang kiến trúc cụm nhóm và kim tự tháp đại sứ tự quản. Giữ nguyên mô hình một nhóm, trần thực tế là 100–200 nghìn.</p>
-    </div>
-
-    <h3>Kim tự tháp tự quản — điều kiện bắt buộc để tới một triệu</h3>
-    <p class="body">Ở quy mô một triệu tương tác thật, không bộ máy hưởng lương nào kham nổi. Hệ thống phải tự quản: mỗi trưởng tổ ấm lo 6 gia đình, mỗi đại sứ khu vực lo 30 trưởng tổ, mỗi nhóm vệ tinh do một ban quản trị tình nguyện điều hành. Người nhận giá trị trở thành người trao giá trị — đó là lúc <strong>Cho là nhận</strong> thôi là khẩu hiệu và trở thành mô hình vận hành.</p>
-  </section>
-
-  <section id="noi-dung">
-    <div class="eyebrow">Nội dung</div>
-    <h2>Cộng đồng sống bằng nhịp, không bằng bài lẻ</h2>
-    <p class="lede">Thành viên không nhớ nội dung, họ nhớ thói quen. Mỗi thứ trong tuần được gán một nghi thức cố định, lặp mãi, chỉ thay chủ đề. Sau ba tuần, thành viên tự biết thứ Tư là ngày Cho là nhận và tự quay lại.</p>
-
-    <div class="scroller">
-      <table>
-        <caption>288 bài của 12 tuần đầu đã được soạn sẵn tiêu đề, định dạng, lời mời và mức chăm sóc — sẵn sàng nạp vào lịch đăng.</caption>
-        <thead><tr><th>Thứ</th><th>G1 · Cộng đồng GITA365</th><th>G2 · Gia Đình Thịnh Vượng</th><th class="num">Giờ chính</th></tr></thead>
-        <tbody>
-          <tr><td><strong>Hai</strong></td><td>Khởi Nguyên — cam kết mục tiêu tuần</td><td>Nhiệm Vụ Gia Đình Tuần</td><td class="num">05:45 / 19:45</td></tr>
-          <tr><td><strong>Ba</strong></td><td>Giải Mã — bài sâu, cho đi hiểu biết</td><td>Bàn Ăn Yêu Thương</td><td class="num">19:45 / 17:30</td></tr>
-          <tr><td><strong>Tư</strong></td><td>Cho Là Nhận — mỗi người giúp một người</td><td>Việc Tử Tế Của Gia Đình</td><td class="num">05:45 / 19:45</td></tr>
-          <tr><td><strong>Năm</strong></td><td>Hỏi &amp; Đáp Cùng Cố Vấn — trực tuyến</td><td>Cha Mẹ Tỉnh Thức</td><td class="num">20:00</td></tr>
-          <tr><td><strong>Sáu</strong></td><td>Bằng Chứng — câu chuyện chuyển hóa</td><td>Khoe Nhà Mình</td><td class="num">19:45</td></tr>
-          <tr><td><strong>Bảy</strong></td><td>Thực Chiến — bài tập có mẫu điền</td><td>Gia Đình Chơi Cùng Nhau</td><td class="num">08:00</td></tr>
-          <tr><td><strong>Chủ nhật</strong></td><td>Tổng Kết &amp; Vinh Danh — một lời mời duy nhất</td><td>Bảng Vinh Danh Gia Đình</td><td class="num">21:00</td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <h3>Khuôn một bài đăng: sáu lớp</h3>
-    <p class="body">Móc một dòng khiến người ta dừng lại → bối cảnh thật có tên có nghề → ba tới năm ý dùng được ngay → một hành động làm trong mười phút → câu hỏi mở trả lời được trong một dòng → ký hiệu nghi thức. Liên kết không bao giờ nằm trong bài — nó nằm ở bình luận đầu tiên và được ghim.</p>
-  </section>
-
-  <section id="cham-soc-bai">
+<!-- ============ 04 CHĂM SÓC BÀI ============ -->
+<section class="panel" data-panel="care" hidden>
+  <div class="ph">
     <div class="eyebrow">GITA CARE</div>
-    <h2>Chín mốc chăm sóc một bài đăng</h2>
-    <p class="lede">Một bài đăng không được chăm sóc chỉ là tờ rơi. Toàn bộ giá trị nằm ở 72 giờ sau khi bấm nút Đăng.</p>
-    <ul class="tl">
-      <li><div class="when">T−24 GIỜ</div><div class="what">Chuẩn bị</div><div class="how">Duyệt bài theo khuôn sáu lớp, soạn ba câu hỏi mồi khác nhau, chọn 5–8 người sẽ gắn thẻ kèm lý do riêng, viết sẵn bình luận sẽ ghim.</div></li>
-      <li><div class="when">T0</div><div class="what">Đăng và ghim trong 60 giây</div><div class="how">Đăng đúng phút đã hẹn. Bình luận chứa liên kết được ghim ngay. Không sửa bài trong 60 phút.</div></li>
-      <li><div class="when">T+5 PHÚT</div><div class="what">Mồi</div><div class="how">Quản trị viên bình luận câu hỏi mồi thứ nhất, giọng cá nhân, không dạy đời.</div></li>
-      <li><div class="when">T+15 PHÚT</div><div class="what">Ba hạt giống</div><div class="how">Ba thành viên thật trả lời từ ba góc: người mới bắt đầu, người đã làm được có số liệu, người phản biện lành mạnh. Không tài khoản ảo, không “hay quá ạ”.</div></li>
-      <li class="hot"><div class="when">T+30 → T+60 PHÚT</div><div class="what">Ba mươi phút vàng</div><div class="how">Luật sắt: 100% bình luận được trả lời trong 30 phút, mỗi trả lời kết bằng một câu hỏi mở. Công thức Ghi nhận – Hỏi sâu – Mở đường.</div></li>
-      <li><div class="when">T+2 GIỜ</div><div class="what">Nuôi</div><div class="how">Đọc số liệu. Dưới 10 bình luận thì chẩn đoán và cứu bài, không bơm tương tác mù.</div></li>
-      <li><div class="when">T+6 GIỜ</div><div class="what">Ghim đỉnh</div><div class="how">Ghim bình luận giá trị nhất và trả lời thật kỹ — cả nhóm học được thế nào là bình luận đáng trân trọng.</div></li>
-      <li><div class="when">T+24 GIỜ</div><div class="what">Vòng hai</div><div class="how">Tổng hợp ba ý hay nhất, nhắn riêng 5–10 người tương tác chất lượng, cộng điểm, đánh dấu người cần mời vào tầng 1.</div></li>
-      <li><div class="when">T+48 → T+7 NGÀY</div><div class="what">Tái chế và tái sinh</div><div class="how">Bình luận hay nhất, sau khi xin phép, trở thành bài đăng mới. Bài xuất sắc quay lại ở định dạng khác sau một tuần.</div></li>
-    </ul>
-    <div class="note">
-      <div class="k">Ba điều tuyệt đối không</div>
-      <p>Không tài khoản ảo, không mua tương tác, không gắn thẻ hàng loạt vô cớ. Những việc đó giết một cộng đồng trong ba tháng và không bao giờ dựng lại được lòng tin.</p>
+    <h2>Một bài đăng không được chăm sóc chỉ là tờ rơi</h2>
+    <p class="lede">Toàn bộ giá trị nằm ở 72 giờ sau khi bấm nút Đăng. Bấm từng mốc để xem việc phải làm, ai làm, và tiêu chuẩn đạt.</p>
+  </div>
+
+  <div class="row r2" style="align-items:start">
+    <div>
+      <ul class="tl" id="tl"></ul>
     </div>
-  </section>
-
-  <section id="cham-soc-nguoi">
-    <div class="eyebrow">Kịch bản</div>
-    <h2>Chăm sóc thành viên: bảy ngày đầu quyết định tất cả</h2>
-    <p class="lede">Người không bình luận trong tuần đầu có xác suất hoạt động về sau thấp hơn nhiều lần. Vì vậy toàn bộ chuỗi chào mừng chỉ nhắm một đích duy nhất: <strong>một bình luận đầu tiên</strong>.</p>
-
-    <div class="scroller">
-      <table>
-        <thead><tr><th class="num">Ngày</th><th>Kênh</th><th>Nội dung</th><th>Đo bằng</th></tr></thead>
-        <tbody>
-          <tr><td class="num">D0</td><td>Tin nhắn khi duyệt</td><td>Chào bằng tên, nhắc lại đúng điều họ đã trả lời, tặng ngay một tài nguyên nhỏ — không đòi hỏi gì</td><td>Tỉ lệ mở</td></tr>
-          <tr><td class="num">D0</td><td>Bài trong nhóm</td><td>Gắn thẻ những người mới của tuần, mỗi người một dòng giới thiệu riêng</td><td>Số người trả lời</td></tr>
-          <tr><td class="num">D1</td><td>Bình luận riêng</td><td>Một câu hỏi rất dễ: “Anh chị đang ở tỉnh nào ạ?”</td><td>Bình luận đầu tiên</td></tr>
-          <tr><td class="num">D2</td><td>Tin nhắn</td><td>Gửi bài hay nhất của nhóm hợp với mối quan tâm họ đã chọn</td><td>Lượt bấm</td></tr>
-          <tr><td class="num">D3</td><td>Trong nhóm</td><td>Mời tham gia nghi thức gần nhất, gắn thẻ đích danh có lý do</td><td>Tham gia</td></tr>
-          <tr><td class="num">D5</td><td>Tin nhắn</td><td>Lời mời đầu tiên: nhận bộ công cụ tầng 1 trên web app</td><td>Tạo tài khoản</td></tr>
-          <tr><td class="num">D7</td><td>Tin nhắn</td><td>“Sau một tuần, nhóm giúp được gì cho anh chị chưa?”</td><td>Phân loại</td></tr>
-        </tbody>
-      </table>
+    <div>
+      <div class="detail" id="caredetail"></div>
     </div>
+  </div>
 
-    <h3>Ba kịch bản mẫu</h3>
-    <div class="script">
-      <div class="who">Chào người mới · ngày 0</div>
-      Chào anh/chị [Tên], em là [tên], phụ trách nhóm. Em đọc câu trả lời của anh/chị, thấy anh/chị đang quan tâm tới [đúng điều họ chọn]. Em gửi anh/chị [tài nguyên tải được ngay], <em>không cần làm gì cho em cả ạ</em>. Khi nào rảnh, anh/chị vào chào cả nhà một câu ở bài chào mừng nhé.
+  <h3>Ngưỡng chất lượng một bài đăng</h3>
+  <div class="scroller">
+    <table>
+      <caption>Đo ngay sau 72 giờ. Bài rơi vào cột báo động thì phải chẩn đoán nguyên nhân, không bơm tương tác.</caption>
+      <thead><tr><th>Chỉ số</th><th class="n">Đạt</th><th class="n">Xuất sắc</th><th class="n">Báo động</th></tr></thead>
+      <tbody>
+        <tr><td>Tiếp cận trên tổng thành viên</td><td class="n">≥20%</td><td class="n">≥35%</td><td class="n">&lt;10%</td></tr>
+        <tr><td>Tương tác trên lượt tiếp cận</td><td class="n">≥6%</td><td class="n">≥12%</td><td class="n">&lt;3%</td></tr>
+        <tr><td>Bình luận gốc</td><td class="n">≥15</td><td class="n">≥40</td><td class="n">&lt;5</td></tr>
+        <tr><td>Độ sâu mỗi luồng bình luận</td><td class="n">≥2 lượt</td><td class="n">≥4 lượt</td><td class="n">1 lượt</td></tr>
+        <tr><td>Người bình luận lần đầu trong nhóm</td><td class="n">≥2</td><td class="n">≥6</td><td class="n">0</td></tr>
+        <tr><td>Người vào phễu tầng 1</td><td class="n">≥3</td><td class="n">≥10</td><td class="n">0</td></tr>
+        <tr><td>Thời gian trả lời trung bình</td><td class="n">≤30 phút</td><td class="n">≤10 phút</td><td class="n">&gt;2 giờ</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="note red">
+    <div class="k">Ba điều tuyệt đối không</div>
+    <p>Không tài khoản ảo, không mua tương tác, không gắn thẻ hàng loạt vô cớ. Ba việc đó giết một cộng đồng trong ba tháng và không bao giờ dựng lại được lòng tin. Người chăm sóc trong quy trình này là thành viên thật, dùng tài khoản thật, kể trải nghiệm thật của chính họ.</p>
+  </div>
+</section>
+
+<!-- ============ 05 CỔNG LỌC ============ -->
+<section class="panel" data-panel="cong" hidden>
+  <div class="ph">
+    <div class="eyebrow">Cổng lọc</div>
+    <h2>Thử chấm điểm một hồ sơ xin vào nhóm</h2>
+    <p class="lede">Tích các dấu hiệu quan sát được trên trang cá nhân của người xin vào. Từ bốn điểm trở lên là không duyệt. Ba dấu hiệu đầu do Trợ lý quản trị của Facebook tự lọc 24/7, phần còn lại do người kiểm duyệt và đại sứ xử lý.</p>
+  </div>
+
+  <div class="gate">
+    <div class="signals" id="signals"></div>
+    <div class="gauge">
+      <div class="sc" id="score">0</div>
+      <div class="sl">điểm rủi ro</div>
+      <div class="track"><div class="fill" id="fill" style="width:0%;background:var(--good)"></div></div>
+      <div class="marks"><span>0</span><span>4 · ngưỡng</span><span>10+</span></div>
+      <div class="verdict" id="verdict">Duyệt vào nhóm</div>
+      <div class="act" id="act">Kích hoạt chuỗi chào mừng bảy ngày, ghi câu trả lời vào sổ thành viên.</div>
     </div>
-    <div class="script">
-      <div class="who">Trả lời bình luận · công thức Ghi nhận – Hỏi sâu – Mở đường</div>
-      “Chỗ chị nói <em>[trích đúng chữ của họ]</em> là điều nhiều người ngại nói ra nhất. Em hỏi thêm chút: [câu hỏi sâu một nấc]? Nếu tiện, em gửi chị [tài nguyên cụ thể] để thử trong tuần này ạ.”
+  </div>
+
+  <h3>Bốn loại đối tượng cần chặn</h3>
+  <div class="row r4">
+    <div class="card"><span class="tag t-l">Rất nguy hiểm</span><h4 style="margin-top:9px">Nick đi săn</h4><p>Tài khoản trông bình thường, vào là xem danh sách thành viên rồi nhắn tin hàng loạt để bán hàng.</p></div>
+    <div class="card"><span class="tag t-l">Rất nguy hiểm</span><h4 style="margin-top:9px">Phần mềm quét nhóm</h4><p>Công cụ xuất danh sách thành viên rồi tự động kết bạn, nhắn tin. Không nhìn thấy trực tiếp.</p></div>
+    <div class="card"><span class="tag t-a">Nguy hiểm</span><h4 style="margin-top:9px">Đối thủ trá hình</h4><p>Hoạt động tốt một thời gian rồi dần chèn lời mời của bên khác.</p></div>
+    <div class="card"><span class="tag t-j">Trung bình</span><h4 style="margin-top:9px">Nick ảo, nick rác</h4><p>Tài khoản mới lập, ít bạn, ảnh lấy trên mạng, không lịch sử hoạt động.</p></div>
+  </div>
+
+  <h3>Bảy lớp phòng thủ</h3>
+  <div class="scroller">
+    <table>
+      <caption>Bốn lớp đầu chặn ở cổng, ba lớp sau xử lý những gì lọt qua. Lớp bảy là lớp quan trọng nhất về dài hạn.</caption>
+      <thead><tr><th class="n">Lớp</th><th>Tên</th><th>Nội dung</th></tr></thead>
+      <tbody>
+        <tr><td class="n">1</td><td><b>Cấu hình nhóm</b></td><td>Nhóm riêng tư, tắt tính năng thành viên tự thêm người, chỉ quản trị viên được duyệt — đây là lỗ hổng số một.</td></tr>
+        <tr><td class="n">2</td><td><b>Cổng vào chấm điểm</b></td><td>Bốn câu hỏi bắt buộc và bảng mười dấu hiệu rủi ro bên trên. Từ bốn điểm là không duyệt.</td></tr>
+        <tr><td class="n">3</td><td><b>Vùng đệm bảy ngày</b></td><td>Người mới chỉ đọc và bình luận trong ba ngày đầu. Kẻ đi săn cần tốc độ — vùng đệm làm chi phí tấn công tăng nhiều lần.</td></tr>
+        <tr><td class="n">4</td><td><b>Tài khoản mồi và tuần tra</b></td><td>Ba tới năm tài khoản mồi do đội ngũ kiểm soát. Bất kỳ tin chào hàng nào gửi tới chúng là bằng chứng có người đang quét danh sách — truy ngược theo thời điểm tham gia.</td></tr>
+        <tr><td class="n">5</td><td><b>Kênh tố giác một chạm</b></td><td>Bài ghim vĩnh viễn để báo bị nhắn tin làm phiền. Cam kết xử lý trong bốn giờ, giữ kín danh tính người báo.</td></tr>
+        <tr><td class="n">6</td><td><b>Chế tài không khoan nhượng</b></td><td>Nhắn tin chào bán, dùng phần mềm quét, phát tán ảnh gia đình khác: chặn vĩnh viễn, không cảnh cáo, ghi sổ đen dùng chung toàn cụm nhóm.</td></tr>
+        <tr><td class="n">7</td><td><b>Chủ quyền dữ liệu</b></td><td>Chuyển thành viên hoạt động sang web app, Zalo và danh sách thư. Mất nhóm Facebook cũng không mất cộng đồng.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="note red">
+    <div class="k">Một sự thật cần nói rõ</div>
+    <p>Không có cách nào chặn tuyệt đối việc một thành viên hợp lệ ghi lại tên những người khác — Facebook cho mọi thành viên xem danh sách thành viên và không có công cụ nào của nền tảng chặn được điều đó. Mọi lời quảng cáo “chặn 100% phần mềm quét nhóm” đều là nói quá. Chiến lược đúng là làm cho danh sách trở nên vô giá trị với kẻ trộm và chuyển tài sản thật sang nơi mình sở hữu.</p>
+  </div>
+
+  <h3>Cam kết bảo vệ thành viên — đăng ghim công khai</h3>
+  <ul class="plain">
+    <li>Chúng tôi không bán, không cho, không trao đổi thông tin của anh chị cho bất kỳ ai.</li>
+    <li>Ban quản trị không bao giờ nhắn tin đòi chuyển tiền, xin mã OTP hay mời đầu tư.</li>
+    <li>Câu chuyện anh chị chia sẻ chỉ ở lại trong nhóm; muốn dùng làm bài viết, chúng tôi hỏi trước và để anh chị duyệt.</li>
+    <li>Ảnh gia đình và trẻ em không dùng cho quảng cáo nếu không có đồng ý riêng bằng văn bản.</li>
+    <li>Anh chị có quyền yêu cầu xóa toàn bộ thông tin của mình bất cứ lúc nào, chúng tôi thực hiện trong bảy ngày.</li>
+    <li>Bị làm phiền bởi người bán hàng? Báo cho chúng tôi — xử lý trong bốn giờ, danh tính người báo được giữ kín.</li>
+    <li>Chúng tôi không dùng tài khoản ảo, không mua tương tác, không thuê người bình luận.</li>
+  </ul>
+</section>
+
+<!-- ============ 06 THI ĐUA ============ -->
+<section class="panel" data-panel="thidua" hidden>
+  <div class="ph">
+    <div class="eyebrow">Mùa Gia Đình Thịnh Vượng</div>
+    <h2>Thi đua giữa các gia đình, không phải giữa các cá nhân</h2>
+    <p class="lede">Đơn vị tham gia là một hộ, đăng ký bằng Mã gia đình. Chia bốn bảng đấu theo độ tuổi con để gia đình nhỏ không bị lép vế. Điểm chia ba trục ngang nhau — chuyên cần chỉ chiếm 40%, nên không thể thắng bằng cách đăng nhiều.</p>
+  </div>
+
+  <div class="filters">
+    <div class="seg" role="group" aria-label="Bảng đấu" id="bangdau">
+      <button data-bd="0" aria-pressed="true">Bảng Mầm</button>
+      <button data-bd="1" aria-pressed="false">Bảng Chồi</button>
+      <button data-bd="2" aria-pressed="false">Bảng Cây</button>
+      <button data-bd="3" aria-pressed="false">Bảng Cội</button>
     </div>
-    <div class="script">
-      <div class="who">Đánh thức · sau 30 ngày im lặng</div>
-      Anh/chị [Tên] dạo này ổn không ạ? Em thấy vắng anh/chị trong nhóm nên nhắn hỏi thăm thôi, <em>không có việc gì đâu ạ</em>. Nếu bận thì cứ để đó, khi nào quay lại cả nhà vẫn ở đây.
-    </div>
+    <span class="small" id="bdinfo"></span>
+  </div>
 
-    <h3>Giữ chân bằng sáu cơ chế</h3>
-    <div class="grid g3">
-      <div class="card"><h4>Tổ ấm 6</h4><p>Chia thành viên hoạt động thành tổ 5–7 người có trưởng tổ. Quan hệ cá nhân giữ chân mạnh hơn nội dung rất nhiều.</p></div>
-      <div class="card"><h4>Chuỗi 21 ngày</h4><p>Điểm danh liên tục theo nghi thức, đứt thì được một lần cứu chuỗi.</p></div>
-      <div class="card"><h4>Điểm GITA</h4><p>Chỉ thưởng cho hành vi cho đi: giúp người khác, kể chuyện thật, nộp bài, mời gia đình mới.</p></div>
-      <div class="card"><h4>Vinh danh tuần</h4><p>Chủ nhật gọi tên 3–5 người kèm lý do cụ thể. Được thấy là nhu cầu sâu nhất của thành viên.</p></div>
-      <div class="card"><h4>Vai trò có tên</h4><p>Trưởng tổ, người gác nghi thức, giám khảo thi đua. Người có vai trò gần như không rời nhóm.</p></div>
-      <div class="card"><h4>Nghi thức mốc</h4><p>Chúc mừng mốc 30, 90, 365 ngày gắn bó và mốc hoàn thành khóa học.</p></div>
-    </div>
-  </section>
+  <div class="mixlegend" style="margin-top:14px">
+    <span><i style="background:var(--s1)"></i>Chuyên cần · 40%</span>
+    <span><i style="background:var(--s2)"></i>Lan tỏa · 30%</span>
+    <span><i style="background:var(--s3)"></i>Chuyển hóa · 30%</span>
+  </div>
+  <div class="lb" id="lb"></div>
+  <p class="small" style="margin-top:12px">Số liệu mô phỏng cho tuần 7 của mùa 1, dùng để minh họa cách chấm và cách hiển thị.</p>
 
-  <section id="thu-hut">
-    <div class="eyebrow">Tăng trưởng</div>
-    <h2>Không mua số lượng — mua tốc độ của chất lượng</h2>
-    <p class="lede">Người vào nhóm vì một câu chuyện thật sẽ ở lại. Người vào vì quà tặng biến mất sau ba ngày. Vì vậy ba kênh đầu bắt buộc chiếm ít nhất 60% lượng người mới ở mọi giai đoạn.</p>
+  <h3>Bảy nghi thức tuần của một gia đình</h3>
+  <div class="scroller">
+    <table>
+      <caption>Tối đa 70 điểm mỗi tuần. Điểm thưởng: mời gia đình mới hoạt động 14 ngày +25, giúp gia đình khác hoàn thành nhiệm vụ +15, câu chuyện được chọn làm bài chính +20.</caption>
+      <thead><tr><th>Thứ</th><th>Nghi thức</th><th>Gia đình làm gì</th><th>Bằng chứng nộp</th><th class="n">Điểm</th></tr></thead>
+      <tbody>
+        <tr><td>Hai</td><td><b>Nhiệm vụ gia đình tuần</b></td><td>Cả nhà chọn và cam kết nhiệm vụ</td><td>Bình luận cam kết theo mẫu</td><td class="n">5</td></tr>
+        <tr><td>Ba</td><td><b>Bàn ăn yêu thương</b></td><td>Dùng câu hỏi bàn ăn trong bữa tối</td><td>Ảnh mâm cơm hoặc một câu con trả lời</td><td class="n">10</td></tr>
+        <tr><td>Tư</td><td><b>Việc tử tế của gia đình</b></td><td>Làm một việc tử tế trong hoặc ngoài nhà</td><td>Kể lại ba dòng</td><td class="n">10</td></tr>
+        <tr><td>Năm</td><td><b>Cha mẹ tỉnh thức</b></td><td>Thực hành một kỹ năng giao tiếp</td><td>Kể tình huống đã áp dụng</td><td class="n">10</td></tr>
+        <tr><td>Sáu</td><td><b>Khoe nhà mình</b></td><td>Chụp một khoảnh khắc thật</td><td>Ảnh hoặc video kèm câu chuyện</td><td class="n">15</td></tr>
+        <tr><td>Bảy</td><td><b>Gia đình chơi cùng nhau</b></td><td>Chơi trò được hướng dẫn</td><td>Ảnh hoặc video hoạt động</td><td class="n">15</td></tr>
+        <tr><td>CN</td><td><b>Bảng vinh danh</b></td><td>Xem kết quả, chúc mừng nhau</td><td>Cổ vũ ít nhất ba gia đình</td><td class="n">5</td></tr>
+      </tbody>
+    </table>
+  </div>
 
-    <div class="scroller">
-      <table>
-        <thead><tr><th class="num">#</th><th>Kênh</th><th>Cách làm</th><th>Chất lượng</th><th>Tốc độ</th></tr></thead>
-        <tbody>
-          <tr><td class="num">1</td><td><strong>Giới thiệu từ thành viên</strong></td><td>“Mỗi gia đình mời một gia đình” — có nghi thức, có ghi nhận công khai, thưởng bằng danh dự</td><td>Rất cao</td><td>Trung bình</td></tr>
-          <tr><td class="num">2</td><td><strong>Câu chuyện lan tỏa</strong></td><td>Thành viên đăng chuyện của mình lên trang cá nhân, có bộ mẫu sẵn</td><td>Cao</td><td>Trung bình</td></tr>
-          <tr><td class="num">3</td><td><strong>Livestream công khai</strong></td><td>Live trên Trang GITA365, chốt bằng lời mời vào nhóm</td><td>Cao</td><td>Nhanh</td></tr>
-          <tr><td class="num">4</td><td>Video ngắn đa nền tảng</td><td>Cắt từ live và khóa học, dẫn về nhóm</td><td>Trung bình</td><td>Rất nhanh</td></tr>
-          <tr><td class="num">5</td><td>Đại sứ và trưởng tổ</td><td>Mỗi đại sứ mời 5 người/tháng, được đào tạo và cấp chứng nhận</td><td>Rất cao</td><td>Trung bình</td></tr>
-          <tr><td class="num">6</td><td>Sự kiện offline nhỏ</td><td>Ngày hội gia đình theo khu vực do đại sứ tổ chức</td><td>Rất cao</td><td>Chậm</td></tr>
-          <tr><td class="num">7</td><td>Đối tác</td><td>Trường học, hội phụ nữ, doanh nghiệp, nhóm cha mẹ</td><td>Cao</td><td>Trung bình</td></tr>
-          <tr><td class="num">8</td><td>Quảng cáo có kiểm soát</td><td>Chỉ đẩy nội dung đã chứng minh hiệu quả tự nhiên. Vượt 30% là cộng đồng loãng</td><td>Trung bình</td><td>Rất nhanh</td></tr>
-          <tr><td class="num">9</td><td>Nội dung tìm kiếm</td><td>Bài dài trả lời đúng câu hỏi của cha mẹ</td><td>Cao</td><td>Rất chậm, rất bền</td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="note">
-      <div class="k">Cổng lọc là một phần của tăng trưởng</div>
-      <p>Tỉ lệ từ chối 15–30% là lành mạnh. Dưới 5% nghĩa là cổng đang mở toang và nhóm sắp mất chất. Thà chậm một quý còn hơn có một triệu cái tên im lặng — một cộng đồng chết vẫn tốn chi phí và vẫn bị kẻ xấu khai thác.</p>
-    </div>
-  </section>
-
-  <section id="bao-ve">
-    <div class="eyebrow">An toàn</div>
-    <h2>Bảy lớp bảo vệ thành viên</h2>
-    <p class="lede">Cộng đồng càng lớn càng hấp dẫn kẻ khai thác. Khi nhóm vượt mười nghìn người, sẽ có người vào không phải để học mà để lấy danh sách khách hàng. Hệ phòng thủ phải dựng <strong>trước</strong> khi nhóm nổi tiếng.</p>
-
-    <div class="grid g4">
-      <div class="card"><span class="tag t-lacquer">Rất nguy hiểm</span><h4 style="margin-top:10px">Nick đi săn</h4><p>Tài khoản trông bình thường, vào là xem danh sách thành viên rồi nhắn tin hàng loạt để bán hàng.</p></div>
-      <div class="card"><span class="tag t-lacquer">Rất nguy hiểm</span><h4 style="margin-top:10px">Phần mềm quét nhóm</h4><p>Công cụ xuất danh sách thành viên rồi tự động kết bạn, nhắn tin. Không nhìn thấy trực tiếp.</p></div>
-      <div class="card"><span class="tag t-amber">Nguy hiểm</span><h4 style="margin-top:10px">Đối thủ trá hình</h4><p>Hoạt động tốt một thời gian rồi dần chèn lời mời của bên khác.</p></div>
-      <div class="card"><span class="tag t-jade">Trung bình</span><h4 style="margin-top:10px">Nick ảo, nick rác</h4><p>Tài khoản mới lập, ít bạn, ảnh lấy trên mạng, không lịch sử hoạt động.</p></div>
-    </div>
-
-    <div class="layers">
-      <div class="layer"><div class="n">1</div><div><h4>Cấu hình nhóm</h4><p>Nhóm riêng tư, tắt tính năng thành viên tự thêm người, chỉ quản trị viên được duyệt — đây là lỗ hổng số một.</p></div></div>
-      <div class="layer"><div class="n">2</div><div><h4>Cổng vào có chấm điểm</h4><p>Bốn câu hỏi bắt buộc và bảng mười dấu hiệu rủi ro. Từ bốn điểm trở lên là không duyệt.</p></div></div>
-      <div class="layer"><div class="n">3</div><div><h4>Vùng đệm bảy ngày</h4><p>Người mới chỉ đọc và bình luận trong ba ngày đầu. Kẻ đi săn cần tốc độ — vùng đệm làm chi phí tấn công tăng nhiều lần.</p></div></div>
-      <div class="layer"><div class="n">4</div><div><h4>Tài khoản mồi và tuần tra</h4><p>Ba tới năm tài khoản mồi do đội ngũ kiểm soát. Bất kỳ tin chào hàng nào gửi tới chúng là bằng chứng có người đang quét danh sách — truy ngược theo thời điểm tham gia.</p></div></div>
-      <div class="layer"><div class="n">5</div><div><h4>Kênh tố giác một chạm</h4><p>Bài ghim vĩnh viễn để báo bị nhắn tin làm phiền. Cam kết xử lý trong 4 giờ, giữ kín danh tính người báo.</p></div></div>
-      <div class="layer"><div class="n">6</div><div><h4>Chế tài không khoan nhượng</h4><p>Nhắn tin chào bán, dùng phần mềm quét, phát tán ảnh gia đình khác: chặn vĩnh viễn, không cảnh cáo, ghi sổ đen dùng chung toàn cụm nhóm.</p></div></div>
-      <div class="layer"><div class="n">7</div><div><h4>Chủ quyền dữ liệu</h4><p>Chuyển thành viên hoạt động sang web app, Zalo và danh sách thư. Mất nhóm Facebook cũng không mất cộng đồng.</p></div></div>
-    </div>
-
-    <div class="pull">
-      <div class="k">Một sự thật cần nói rõ</div>
-      <p>Không có cách nào chặn tuyệt đối việc một thành viên hợp lệ ghi lại tên những người khác — Facebook cho phép mọi thành viên xem danh sách thành viên và không có công cụ nào của nền tảng chặn được điều đó. Mọi lời quảng cáo “chặn 100% phần mềm quét nhóm” đều là nói quá. Chiến lược đúng là làm cho danh sách <em>vô giá trị với kẻ trộm</em> và chuyển tài sản thật sang nơi mình sở hữu.</p>
-    </div>
-
-    <h3>Cam kết bảo vệ thành viên — đăng ghim công khai</h3>
-    <ul class="plain">
-      <li>Chúng tôi không bán, không cho, không trao đổi thông tin của anh chị cho bất kỳ ai.</li>
-      <li>Ban quản trị không bao giờ nhắn tin đòi chuyển tiền, xin mã OTP hay mời đầu tư.</li>
-      <li>Câu chuyện anh chị chia sẻ chỉ ở lại trong nhóm; muốn dùng làm bài viết, chúng tôi hỏi trước và để anh chị duyệt.</li>
-      <li>Ảnh gia đình và trẻ em không dùng cho quảng cáo nếu không có đồng ý riêng bằng văn bản.</li>
-      <li>Anh chị có quyền yêu cầu xóa toàn bộ thông tin của mình bất cứ lúc nào, chúng tôi thực hiện trong bảy ngày.</li>
-      <li>Bị làm phiền bởi người bán hàng? Báo cho chúng tôi — xử lý trong bốn giờ, danh tính người báo được giữ kín.</li>
-      <li>Chúng tôi không dùng tài khoản ảo, không mua tương tác, không thuê người bình luận.</li>
-    </ul>
-  </section>
-
-  <section id="do-luong">
-    <div class="eyebrow">Đo lường</div>
+  <div class="note">
+    <div class="k">Giải thưởng giữ đúng tinh thần Cho là nhận</div>
+    <p>Danh hiệu và kỷ niệm chương, một buổi trực tuyến riêng kể chuyện gia đình, suất học <b>tầng 1 và tầng 2</b> cho cả nhà, và tên trong Kỷ yếu Gia đình Thịnh vượng cuối năm. Không trao suất khóa offline tại G2 — đó là vượt tầng. Gia đình đủ chín được mời riêng sang G1 trước, rồi mới nhận lời mời tầng 3.</p>
+  </div>
+</section>
+<!-- ============ 07 CHỈ SỐ ============ -->
+<section class="panel" data-panel="kpi" hidden>
+  <div class="ph">
+    <div class="eyebrow">Bảng chỉ số tuần</div>
     <h2>Không chỉ số nào được ghi nhận mà không kèm hành động</h2>
-    <p class="lede">Bảng theo dõi tuần có 28 cột, và cột cuối cùng luôn là “hành động”. Dưới đây là các ngưỡng quyết định.</p>
-    <div class="scroller">
-      <table>
-        <thead><tr><th>Nhóm chỉ số</th><th>Chỉ số quyết định</th><th class="num">Đạt</th><th class="num">Báo động</th></tr></thead>
-        <tbody>
-          <tr><td rowspan="2"><strong>Thu hút</strong></td><td>Tỉ lệ duyệt thành viên</td><td class="num">70–85%</td><td class="num">&gt;95% hoặc &lt;50%</td></tr>
-          <tr><td>Người mới đến từ giới thiệu</td><td class="num">≥60%</td><td class="num">&lt;30%</td></tr>
-          <tr><td rowspan="3"><strong>Gắn kết</strong></td><td>Tỉ lệ tương tác thật trên tổng thành viên</td><td class="num">≥12%</td><td class="num">&lt;5%</td></tr>
-          <tr><td>Bình luận gốc trung bình mỗi bài chính</td><td class="num">≥15</td><td class="num">&lt;5</td></tr>
-          <tr><td>Thời gian phản hồi trung bình</td><td class="num">≤30 phút</td><td class="num">&gt;2 giờ</td></tr>
-          <tr><td rowspan="3"><strong>Chuyển đổi</strong></td><td>Nhóm → tài khoản web app</td><td class="num">10–15%</td><td class="num">&lt;5%</td></tr>
-          <tr><td>Hoàn tất tầng 1 → ghi danh tầng 2</td><td class="num">15–25%</td><td class="num">&lt;8%</td></tr>
-          <tr><td>Tầng 2 → offline tầng 3 (chỉ G1)</td><td class="num">6–12%</td><td class="num">&lt;3%</td></tr>
-          <tr><td rowspan="2"><strong>Giữ chân</strong></td><td>Còn hoạt động sau 30 ngày</td><td class="num">≥35%</td><td class="num">&lt;20%</td></tr>
-          <tr><td>Tỉ lệ rời nhóm mỗi tháng</td><td class="num">&lt;2%</td><td class="num">&gt;5%</td></tr>
-          <tr><td rowspan="2"><strong>An toàn</strong></td><td>Nick ảo lọt cổng (kiểm mẫu 50 người/tháng)</td><td class="num">&lt;2%</td><td class="num">&gt;5%</td></tr>
-          <tr><td>Thời gian xử lý báo cáo vi phạm</td><td class="num">≤4 giờ</td><td class="num">&gt;24 giờ</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p class="body">Nhịp: sổ ca mỗi tối, rà soát tuần sáng thứ Hai, mổ xẻ nội dung chiều thứ Sáu, báo cáo và kiểm toán an toàn ngày mùng một, tổng kết mùa mỗi 90 ngày.</p>
-  </section>
+    <p class="lede">Đây là hình dạng bảng theo dõi sau tuần thứ mười hai của giai đoạn Gieo. Mỗi ô có ngưỡng riêng và trạng thái tự bật màu; cột hành động trong bảng tính thật là cột bắt buộc điền.</p>
+  </div>
 
-  <section id="lo-trinh">
-    <div class="eyebrow">Triển khai</div>
-    <h2>Chín mươi ngày đầu</h2>
-    <p class="lede">Đích: mỗi nhóm đạt 1.000 tương tác thật mỗi tháng với tỉ lệ hoạt động tuần từ 25% trở lên, bộ máy chạy đủ nghi thức, cổng lọc an toàn hoạt động, và có bằng chứng chuyển đổi đầu tiên.</p>
-    <div class="grid g3">
-      <div class="card">
-        <span class="tag t-jade">Tháng 1</span>
-        <h4 style="margin-top:10px">Nền móng</h4>
-        <p><strong>Tuần 1</strong> cấu hình lại hai nhóm, đăng luật và cam kết bảo vệ, chốt đội ngũ và ca trực, dựng bảng dữ liệu, ghi số nền, tạo tài khoản mồi.<br><strong>Tuần 2–4</strong> chạy đủ bảy nghi thức, mở tài nguyên cửa ngõ, bắt đầu nhắn tin cá nhân, lập hai Tổ ấm đầu tiên.</p>
-      </div>
-      <div class="card">
-        <span class="tag t-jade">Tháng 2</span>
-        <h4 style="margin-top:10px">Nhịp điệu</h4>
-        <p>Khai mạc thử thách 21 ngày, xuất bản sáu câu chuyện thật đầu tiên, mở buổi định hướng nhóm nhỏ, khai mạc Mùa Gia Đình Thịnh Vượng. Kiểm toán an toàn lần một, đào tạo năm đại sứ mỗi nhóm.</p>
-      </div>
-      <div class="card">
-        <span class="tag t-jade">Tháng 3</span>
-        <h4 style="margin-top:10px">Nhân bản</h4>
-        <p>Livestream quy mô, mở rộng lên 15 đại sứ mỗi nhóm, mời cá nhân nhóm đủ điều kiện sang khóa offline, bế mạc mùa thi đua và xuất bản kỷ yếu.</p>
-      </div>
+  <div class="filters">
+    <div class="seg" role="group" aria-label="Chọn nhóm" id="kpigrp">
+      <button data-kg="0" aria-pressed="true">G1 · Cộng đồng GITA365</button>
+      <button data-kg="1" aria-pressed="false">G2 · Gia Đình Thịnh Vượng</button>
     </div>
-    <div class="note">
-      <div class="k">Kỷ luật quan trọng nhất của cả lộ trình 5 năm</div>
-      <p>Nếu bất kỳ tiêu chí chất lượng nào ở cửa kiểm 90 ngày không đạt, kéo dài giai đoạn thêm một tháng và <strong>không tăng tốc thu hút</strong>. Không bao giờ đổ người mới vào một cái thùng thủng.</p>
-    </div>
-  </section>
+    <span class="small">Tuần 12 · số liệu mô phỏng</span>
+  </div>
 
-  <section id="gioi-han">
-    <div class="eyebrow">Minh bạch</div>
-    <h2>Tự động hóa được tới đâu</h2>
-    <p class="lede">Anh là Admin nên anh có quyền trao. Nhưng có một giới hạn kỹ thuật cần nói rõ trước, để anh không kỳ vọng sai.</p>
-    <div class="grid g3">
-      <div class="card">
-        <span class="tag t-jade">Vùng xanh · làm ngay</span>
-        <h4 style="margin-top:10px">Tự động hợp lệ</h4>
-        <p>Lên lịch bài trong nhóm, quy tắc trợ lý quản trị lọc cổng vào 24/7, lọc từ khóa, chuỗi nuôi dưỡng trên web app và thư điện tử, tự tính bảng xếp hạng thi đua.</p>
-      </div>
-      <div class="card">
-        <span class="tag t-amber">Vùng vàng · máy soạn, người bấm</span>
-        <h4 style="margin-top:10px">Bán tự động</h4>
-        <p>Tôi soạn sẵn toàn bộ bài đăng, bình luận mồi, kịch bản chăm sóc và báo cáo. Một người trong đội nạp vào lịch — khoảng 20–30 phút cho hai tuần.</p>
-      </div>
-      <div class="card">
-        <span class="tag t-lacquer">Vùng đỏ · cấm tuyệt đối</span>
-        <h4 style="margin-top:10px">Không bao giờ dùng</h4>
-        <p>Bot tự bình luận, tài khoản ảo, phần mềm đăng nhập tài khoản cá nhân để đăng bài hay quét thành viên, mua tương tác. Đây là con đường nhanh nhất để mất nhóm.</p>
-      </div>
-    </div>
-    <p class="body" style="margin-top:26px">Facebook đã đóng phần lớn giao diện lập trình cho Nhóm từ năm 2020. Không có cách hợp lệ để phần mềm bên thứ ba tự đăng bài, duyệt thành viên hay trả lời bình luận trong nhóm — mọi công cụ quảng cáo làm được điều đó đều hoạt động bằng cách đăng nhập tài khoản cá nhân và vi phạm điều khoản. Vì vậy phần đăng trực tiếp vẫn cần một thao tác con người: <strong>không phải vì thiếu quyền của anh, mà vì chính sách nền tảng</strong>.</p>
-    <p class="body">Với mô hình “máy soạn – người bấm”, khoảng <strong>85% khối lượng vận hành được tự động hóa</strong>. Phần còn lại là ba mươi phút vàng và những cuộc trò chuyện thật — vốn là phần <em>không nên</em> tự động hóa. Nếu anh muốn đi sâu hơn, hãy kết nối Trang Facebook GITA365, web app, Zalo OA hoặc bảng tính; ở đó tôi vận hành tự động thật.</p>
-  </section>
+  <div class="kpis" id="kpis"></div>
+
+  <h3>Nhịp rà soát cố định</h3>
+  <div class="scroller">
+    <table>
+      <thead><tr><th>Cuộc</th><th>Khi nào</th><th class="n">Thời lượng</th><th>Đầu ra bắt buộc</th></tr></thead>
+      <tbody>
+        <tr><td>Điểm ca</td><td>Hằng ngày 21:30</td><td class="n">10 phút</td><td>Bốn dòng sổ ca của người trực</td></tr>
+        <tr><td>Rà soát tuần</td><td>Thứ Hai 9:00</td><td class="n">45 phút</td><td>Bảng chỉ số và ba điều chỉnh cho tuần tới</td></tr>
+        <tr><td>Mổ xẻ nội dung</td><td>Thứ Sáu 15:00</td><td class="n">30 phút</td><td>Ba bài tốt nhất, ba bài kém nhất, lý do</td></tr>
+        <tr><td>Báo cáo tháng</td><td>Ngày 1</td><td class="n">90 phút</td><td>Xu hướng, phễu, doanh thu, kiểm toán an toàn</td></tr>
+        <tr><td>Tổng kết mùa</td><td>Mỗi 90 ngày</td><td class="n">3 giờ</td><td>Đối chiếu cửa kiểm, quyết định có tăng tốc hay không</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Năm câu hỏi cho mọi cuộc rà soát tuần</h3>
+  <ul class="plain">
+    <li>Bài nào tạo nhiều <b>bình luận lần đầu</b> nhất? Vì sao?</li>
+    <li>Chỗ nào trong phễu tụt mạnh nhất so với tuần trước?</li>
+    <li>Bao nhiêu người đã được nhắn riêng? Bao nhiêu người trả lời?</li>
+    <li>Ba người hoặc ba gia đình nào đáng được vinh danh tuần này?</li>
+    <li>Điều gì tuần này chúng ta sẽ <b>ngừng làm</b>?</li>
+  </ul>
 
   <footer>
-    <p><strong>Bộ tài liệu đầy đủ</strong> gồm 13 chương vận hành, ngân hàng chủ đề, lịch 288 bài cho 12 tuần, bảng theo dõi chỉ số và bộ sinh lịch — đã lưu trong kho mã nguồn, nhánh <code>claude/gita365-community-strategy-w0nlv9</code>, thư mục <code>gita365-ops/</code>.</p>
-    <p style="margin-top:12px">Trang này là bản trình duyệt. Sau khi anh chốt tám việc ở phần đầu, tôi bắt đầu triển khai theo lộ trình 90 ngày.</p>
+    <p><b>Bộ tài liệu đầy đủ</b> — 13 chương vận hành, ngân hàng chủ đề, lịch 288 bài, bảng theo dõi chỉ số và bộ sinh lịch bằng Python — đã lưu trong kho mã nguồn, nhánh <code>claude/gita365-community-strategy-w0nlv9</code>, thư mục <code>gita365-ops/</code>.</p>
+    <p style="margin-top:11px">Mọi con số trên trang này là mô phỏng để anh nhìn thấy hình dạng hệ thống trước khi chạy thật. Sau khi anh chốt tám việc ở khu vực Tổng quan, tôi bắt đầu Tuần 1 của lộ trình 90 ngày.</p>
   </footer>
-</main>
+</section>
+
 </div>
 
 <script>
+const LICH=[[1,"2026-09-07","Thu Hai","05:45",0,"Khởi Nguyên","Ket noi & nghi thuc","Ba dòng mở tuần: bạn muốn xong điều gì trước Chủ nhật?","Bai check-in 3 dong","Viet 3 dong cam ket tuan","T0","CARE-2","NEN_MONG"],[1,"2026-09-07","Thu Hai","11:45",0,"Bai nhe","Nhan thuc & tu duy","Một câu để mang theo hôm nay","Anh trich dan co ngu canh","Tra loi 1 dong","T0","CARE-1","NEN_MONG"],[1,"2026-09-07","Thu Hai","11:45",1,"Bai nhe","Ky nang cha me - vo chong","Nhà bạn xử lý thế nào khi hai đứa tranh nhau đồ chơi?","Cau hoi 1 dong","Tra loi 1 dong","T0","CARE-1","KET_NOI"],[1,"2026-09-07","Thu Hai","19:45",1,"Nhiệm Vụ Gia Đình Tuần","Hoat dong gia dinh","Nhiệm vụ tuần: mỗi tối tắt điện thoại 30 phút","Bai nhiem vu + cach cham diem","Binh luan Ma gia dinh + cam ket","T0","CARE-3","KET_NOI"],[1,"2026-09-08","Thu Ba","11:45",0,"Bai nhe","Bang chung & cau chuyen","Hậu trường: một buổi làm việc của đội GITA365","Hau truong","Tra loi 1 dong","T0","CARE-1","NEN_MONG"],[1,"2026-09-08","Thu Ba","11:45",1,"Bai nhe","Thi dua & vinh danh","Bảng xếp hạng giữa tuần: nhà bạn đang ở đâu?","Nhac bang xep hang","Tra loi 1 dong","T0","CARE-1","KET_NOI"],[1,"2026-09-08","Thu Ba","17:30",1,"Bàn Ăn Yêu Thương","Hoat dong gia dinh","Câu hỏi bàn ăn: hôm nay điều gì làm con cười?","Cau hoi ban an + anh mam com","Chup anh mam com va ke lai","T0","CARE-2","KET_NOI"],[1,"2026-09-08","Thu Ba","19:45",0,"Giải Mã","Nhan thuc & tu duy","Vì sao càng cố gắng bạn càng thấy mệt?","Bai dai + so do","Tai cong cu tren web app","T1","CARE-3","NEN_MONG"],[1,"2026-09-09","Thu Tu","05:45",0,"Cho Là Nhận","Thuc hanh co huong dan","Hôm nay giúp một người trong nhóm này","Thu thach trong ngay","Bao lai da giup ai, viec gi","T0","CARE-2","NEN_MONG"],[1,"2026-09-09","Thu Tu","11:45",0,"Bai nhe","Nhan thuc & tu duy","Trả lời một câu hỏi thật của thành viên","Tra loi cau hoi that","Tra loi 1 dong","T0","CARE-1","NEN_MONG"],[1,"2026-09-09","Thu Tu","11:45",1,"Bai nhe","Moi nhan cong cu tang 1","Tặng cả nhà bộ 30 câu hỏi bàn ăn","Moi nhan bo cong cu tang 1","Tra loi 1 dong","T0","CARE-1","KET_NOI"],[1,"2026-09-09","Thu Tu","19:45",1,"Việc Tử Tế Của Gia Đình","Cau chuyen gia dinh","Việc tử tế nhỏ nhất nhà mình làm tuần này","Ke lai 3 dong","Ke viec tu te va gan the mot gia dinh khac","T0","CARE-2","KET_NOI"],[1,"2026-09-10","Thu Nam","11:45",0,"Bai nhe","Thuc hanh co huong dan","Thử ngay 5 phút: viết ra ba điều đang chiếm đầu bạn","Thu ngay 5 phut","Tra loi 1 dong","T0","CARE-1","NEN_MONG"],[1,"2026-09-10","Thu Nam","20:00",0,"Hỏi & Đáp Cùng Cố Vấn","Ket noi & nghi thuc","Hỏi gì cũng được: chuyện bạn chưa dám nói ra","Livestream 30-45 phut","Dat cau hoi truoc gio live","T2","CARE-3","NEN_MONG"],[1,"2026-09-10","Thu Nam","20:00",1,"Cha Mẹ Tỉnh Thức","Ky nang cha me - vo chong","Ba câu nói thay cho một tiếng quát","Bai ky nang + kich ban noi","Thu toi nay va ke lai","T1","CARE-3","KET_NOI"],[1,"2026-09-11","Thu Sau","11:45",0,"Bai nhe","Bang chung & cau chuyen","Sai lầm tôi từng trả giá đắt","Sai lam cua toi","Tra loi 1 dong","T0","CARE-1","NEN_MONG"],[1,"2026-09-11","Thu Sau","19:45",0,"Bằng Chứng","Bang chung & cau chuyen","Từ chỗ không dám nhìn vào sổ chi tiêu","Cau chuyen chuyen hoa (UGC)","Ke cau chuyen cua ban","T1","CARE-3","NEN_MONG"],[1,"2026-09-11","Thu Sau","19:45",1,"Khoe Nhà Mình","Cau chuyen gia dinh","Khoảnh khắc thật của nhà bạn tuần này","Anh/video + cau chuyen","Dang anh that kem 1 cau chuyen","T0","CARE-3","KET_NOI"],[1,"2026-09-12","Thu Bay","08:00",0,"Thực Chiến","Thuc hanh co huong dan","Bài tập: viết ra ba điều đang rút cạn năng lượng của bạn","Bai tap + mau dien","Nop bai tren web app truoc Chu nhat","T1","CARE-2","NEN_MONG"],[1,"2026-09-12","Thu Bay","08:00",1,"Gia Đình Chơi Cùng Nhau","Hoat dong gia dinh","Trò chơi 15 phút không cần dụng cụ","Huong dan tro choi 15 phut","Choi va dang anh/video","T1","CARE-2","KET_NOI"],[1,"2026-09-12","Thu Bay","11:45",0,"Bai nhe","Nhan thuc & tu duy","Câu hỏi nhanh: khó nhất với bạn là bắt đầu hay duy trì?","Cau hoi 1 dong","Tra loi 1 dong","T0","CARE-1","NEN_MONG"],[1,"2026-09-13","Chu Nhat","11:45",0,"Bai nhe","Moi goi hanh dong","Bộ công cụ tuần này đang nằm ở đâu?","Nhac tai nguyen tang 1","Tra loi 1 dong","T0","CARE-1","NEN_MONG"],[1,"2026-09-13","Chu Nhat","21:00",0,"Tổng Kết & Vinh Danh","Moi goi hanh dong","Tuần này cộng đồng mình đã làm được gì","Bang vinh danh + 1 loi moi","Loi moi duy nhat trong tuan","T2","CARE-3","NEN_MONG"],[1,"2026-09-13","Chu Nhat","21:00",1,"Bảng Vinh Danh Gia Đình","Thi dua & vinh danh","Bảng vinh danh tuần: những gia đình bền bỉ nhất","Bang xep hang 4 bang dau","Co vu it nhat 3 gia dinh","T0","CARE-3","KET_NOI"],[2,"2026-09-14","Thu Hai","05:45",0,"Khởi Nguyên","Ket noi & nghi thuc","Việc nhỏ nhất bạn làm được ngay sáng nay là gì?","Bai check-in 3 dong","Viet 3 dong cam ket tuan","T0","CARE-2","NEN_MONG"],[2,"2026-09-14","Thu Hai","11:45",0,"Bai nhe","Nhan thuc & tu duy","Bình chọn: bạn hợp với buổi sáng hay buổi tối?","Binh chon A/B","Tra loi 1 dong","T0","CARE-1","NEN_MONG"],[2,"2026-09-14","Thu Hai","11:45",1,"Bai nhe","Ky nang cha me - vo chong","Bình chọn: cuối tuần nhà bạn thích ở nhà hay đi chơi?","Binh chon A/B","Tra loi 1 dong","T0","CARE-1","KET_NOI"],[2,"2026-09-14","Thu Hai","19:45",1,"Nhiệm Vụ Gia Đình Tuần","Hoat dong gia dinh","Nhiệm vụ tuần: cả nhà ăn cơm cùng nhau 4 bữa","Bai nhiem vu + cach cham diem","Binh luan Ma gia dinh + cam ket","T0","CARE-3","KET_NOI"],[2,"2026-09-15","Thu Ba","11:45",0,"Bai nhe","Bang chung & cau chuyen","Một câu của thành viên khiến cả nhóm dừng lại","Anh trich dan tu thanh vien","Tra loi 1 dong","T0","CARE-1","NEN_MONG"],[2,"2026-09-15","Thu Ba","11:45",1,"Bai nhe","Thi dua & vinh danh","Chào những gia đình mới đăng ký Mã gia đình tuần này","Goi ten gia dinh moi","Tra loi 1 dong","T0","CARE-1","KET_NOI"],[2,"2026-09-15","Thu Ba","17:30",1,"Bàn Ăn Yêu Thương","Hoat dong gia dinh","Câu hỏi bàn ăn: ai đã giúp con hôm nay?","Cau hoi ban an + anh mam com","Chup anh mam com va ke lai","T0","CARE-2","KET_NOI"],[2,"2026-09-15","Thu Ba","19:45",0,"Giải Mã","Nhan thuc & tu duy","Ba tầng của một vấn đề: hiện tượng, thói quen, niềm tin","Bai dai + so do","Tai cong cu tren web app","T1","CARE-3","NEN_MONG"],[2,"2026-09-16","Thu Tu","05:45",0,"Cho Là Nhận","Thuc hanh co huong dan","Trả lời một người đang loay hoay giống bạn năm ngoái","Thu thach trong ngay","Bao lai da giup ai, viec gi","T0","CARE-2","NEN_MONG"],[2,"2026-09-16","Thu Tu","11:45",0,"Bai nhe","Ket noi & nghi thuc","Chào mừng những người mới của tuần","Chao mung nguoi moi","Tra loi 1 dong","T0","CARE-1","NEN_MONG"],[2,"2026-09-16","Thu Tu","11:45",1,"Bai nhe","Moi nhan cong cu tang 1","Bộ 12 trò chơi gắn kết cha mẹ - con cái đã có trên web app","Moi nhan bo cong cu tang 1","Tra loi 1 dong","T0","CARE-1","KET_NOI"],[2,"2026-09-16","Thu Tu","19:45",1,"Việc Tử Tế Của Gia Đình","Cau chuyen gia dinh","Cả nhà cùng giúp một người hàng xóm","Ke lai 3 dong","Ke viec tu te va gan the mot gia dinh khac","T0","CARE-2","KET_NOI"],[2,"2026-09-17","Thu Nam","11:45",0,"Bai nhe","Thuc hanh co huong dan","Thử ngay 5 phút: gọi cho một người bạn đang nghĩ tới","Thu ngay 5 phut","Tra loi 1 dong","T0","CARE-1","NEN_MONG"],[2,"2026-09-17","Thu Nam","20:00",0,"Hỏi & Đáp Cùng Cố Vấn","Ket noi & nghi thuc","Gỡ rối ba tình huống khó nhất tuần này","Livestream 30-45 phut","Dat cau hoi truoc gio live","T2","CARE-3","NEN_MONG"],[2,"2026-09-17","Thu Nam","20:00",1,"Cha Mẹ Tỉnh Thức","Ky nang cha me - vo chong","Cách hỏi để con chịu kể chuyện","Bai ky nang + kich ban noi","Thu toi nay va ke lai","T1","CARE-3","KET_NOI"],[2,"2026-09-18","Thu Sau","11:45",0,"Bai nhe","Bang chung & cau chuyen","Trước và sau: ba mươi ngày của một thành viên","Truoc va sau","Tra loi 1 dong","T0","CARE-1","NEN_MONG"],[2,"2026-09-18","Thu Sau","19:45",0,"Bằng Chứng","Bang chung & cau chuyen","Người đàn ông ba lần bỏ cuộc và lần thứ tư","Cau chuyen chuyen hoa (UGC)","Ke cau chuyen cua ban","T1","CARE-3","NEN_MONG"],[2,"2026-09-18","Thu Sau","19:45",1,"Khoe Nhà Mình","Cau chuyen gia dinh","Bức ảnh làm bạn muốn giữ mãi","Anh/video + cau chuyen","Dang anh that kem 1 cau chuyen","T0","CARE-3","KET_NOI"],[2,"2026-09-19","Thu Bay","08:00",0,"Thực Chiến","Thuc hanh co huong dan","Bài tập: bản đồ một ngày của bạn","Bai tap + mau dien","Nop bai tren web app truoc Chu nhat","T1","CARE-2","NEN_MONG"],[2,"2026-09-19","Thu Bay","08:00",1,"Gia Đình Chơi Cùng Nhau","Hoat dong gia dinh","Cuộc thi kể chuyện trong nhà","Huong dan tro choi 15 phut","Choi va dang anh/video","T1","CARE-2","KET_NOI"],[2,"2026-09-19","Thu Bay","11:45",0,"Bai nhe","Nhan thuc & tu duy","Điều ai cũng khuyên nhưng có thể sai với bạn","Goc nhin nguoc","Tra loi 1 dong","T0","CARE-1","NEN_MONG"],[2,"2026-09-20","Chu Nhat","11:45",0,"Bai nhe","Moi goi hanh dong","Buổi định hướng nhóm nhỏ tuần này còn chỗ","Nhac buoi dinh huong","Tra loi 1 dong","T0","CARE-1","NEN_MONG"],[2,"2026-09-20","Chu Nhat","21:00",0,"Tổng Kết & Vinh Danh","Moi goi hanh dong","Năm người xứng đáng được gọi tên","Bang vinh danh + 1 loi moi","Loi moi duy nhat trong tuan","T2","CARE-3","NEN_MONG"],[2,"2026-09-20","Chu Nhat","21:00",1,"Bảng Vinh Danh Gia Đình","Thi dua & vinh danh","Ba gia đình khiến cả nhóm ấm lòng tuần này","Bang xep hang 4 bang dau","Co vu it nhat 3 gia dinh","T0","CARE-3","KET_NOI"],[3,"2026-09-21","Thu Hai","05:45",0,"Khởi Nguyên","Ket noi & nghi thuc","Tuần trước bạn bỏ dở điều gì — tuần này nhặt lại chứ?","Bai check-in 3 dong","Viet 3 dong cam ket tuan","T0","CARE-2","NEN_MONG"],[3,"2026-09-21","Thu Hai","11:45",0,"Bai nhe","Nhan thuc & tu duy","Một câu để mang theo hôm nay","Anh trich dan co ngu canh","Tra loi 1 dong","T0","CARE-1","NEN_MONG"],[3,"2026-09-21","Thu Hai","11:45",1,"Bai nhe","Ky nang cha me - vo chong","Nhà bạn xử lý thế nào khi hai đứa tranh nhau đồ chơi?","Cau hoi 1 dong","Tra loi 1 dong","T0","CARE-1","KET_NOI"],[3,"2026-09-21","Thu Hai","19:45",1,"Nhiệm Vụ Gia Đình Tuần","Hoat dong gia dinh","Nhiệm vụ tuần: mỗi người nói một lời khen cho người khác","Bai nhiem vu + cach cham diem","Binh luan Ma gia dinh + cam ket","T0","CARE-3","KET_NOI"],[3,"2026-09-22","Thu Ba","11:45",0,"Bai nhe","Bang chung & cau chuyen","Hậu trường: một buổi làm việc của đội GITA365","Hau truong","Tra loi 1 dong","T0","CARE-1","NEN_MONG"],[3,"2026-09-22","Thu Ba","11:45",1,"Bai nhe","Thi dua & vinh danh","Bảng xếp hạng giữa tuần: nhà bạn đang ở đâu?","Nhac bang xep hang","Tra loi 1 dong","T0","CARE-1","KET_NOI"],[3,"2026-09-22","Thu Ba","17:30",1,"Bàn Ăn Yêu Thương","Hoat dong gia dinh","Câu hỏi bàn ăn: điều gì hôm nay khó với con?","Cau hoi ban an + anh mam com","Chup anh mam com va ke lai","T0","CARE-2","KET_NOI"],[3,"2026-09-22","Thu Ba","19:45",0,"Giải Mã","Nhan thuc & tu duy","Bạn đang giải quyết vấn đề hay đang né tránh nó?","Bai dai + so do","Tai cong cu tren web app","T1","CARE-3","NEN_MONG"],[3,"2026-09-23","Thu Tu","05:45",0,"Cho Là Nhận","Thuc hanh co huong dan","Gửi một lời cảm ơn bạn nợ ai đó đã lâu","Thu thach trong ngay","Bao lai da giup ai, viec gi","T0","CARE-2","NEN_MONG"],[3,"2026-09-23","Thu Tu","11:45",0,"Bai nhe","Nhan thuc & tu duy","Trả lời một câu hỏi thật của thành viên","Tra loi cau hoi that","Tra loi 1 dong","T0","CARE-1","NEN_MONG"],[3,"2026-09-23","Thu Tu","11:45",1,"Bai nhe","Moi nhan cong cu tang 1","Tặng cả nhà bộ 30 câu hỏi bàn ăn","Moi nhan bo cong cu tang 1","Tra loi 1 dong","T0","CARE-1","KET_NOI"],[3,"2026-09-23","Thu Tu","19:45",1,"Việc Tử Tế Của Gia Đình","Cau chuyen gia dinh","Một việc tử tế dành cho ông bà","Ke lai 3 dong","Ke viec tu te va gan the mot gia dinh khac","T0","CARE-2","KET_NOI"],[3,"2026-09-24","Thu Nam","11:45",0,"Bai nhe","Thuc hanh co huong dan","Thử ngay 5 phút: viết ra ba điều đang chiếm đầu bạn","Thu ngay 5 phut","Tra loi 1 dong","T0","CARE-1","NEN_MONG"],[3,"2026-09-24","Thu Nam","20:00",0,"Hỏi & Đáp Cùng Cố Vấn","Ket noi & nghi thuc","Khi mục tiêu và thực tế không gặp nhau","Livestream 30-45 phut","Dat cau hoi truoc gio live","T2","CARE-3","NEN_MONG"],[3,"2026-09-24","Thu Nam","20:00",1,"Cha Mẹ Tỉnh Thức","Ky nang cha me - vo chong","Nói gì khi vợ chồng bất đồng trước mặt con","Bai ky nang + kich ban noi","Thu toi nay va ke lai","T1","CARE-3","KET_NOI"],[3,"2026-09-25","Thu Sau","11:45",0,"Bai nhe","Bang chung & cau chuyen","Sai lầm tôi từng trả giá đắt","Sai lam cua toi","Tra loi 1 dong","T0","CARE-1","NEN_MONG"],[3,"2026-09-25","Thu Sau","19:45",0,"Bằng Chứng","Bang chung & cau chuyen","Chị ấy bắt đầu bằng mười phút mỗi sáng","Cau chuyen chuyen hoa (UGC)","Ke cau chuyen cua ban","T1","CARE-3","NEN_MONG"],[3,"2026-09-25","Thu Sau","19:45",1,"Khoe Nhà Mình","Cau chuyen gia dinh","Góc nhỏ nhất trong nhà mà cả nhà thích nhất","Anh/video + cau chuyen","Dang anh that kem 1 cau chuyen","T0","CARE-3","KET_NOI"],[3,"2026-09-26","Thu Bay","08:00",0,"Thực Chiến","Thuc hanh co huong dan","Bài tập: bảy câu hỏi dọn nội tâm","Bai tap + mau dien","Nop bai tren web app truoc Chu nhat","T1","CARE-2","NEN_MONG"],[3,"2026-09-26","Thu Bay","08:00",1,"Gia Đình Chơi Cùng Nhau","Hoat dong gia dinh","Trò chơi phá băng cho cả nhà ba thế hệ","Huong dan tro choi 15 phut","Choi va dang anh/video","T1","CARE-2","KET_NOI"],[3,"2026-09-26","Thu Bay","11:45",0,"Bai nhe","Nhan thuc & tu duy","Câu hỏi nhanh: khó nhất với bạn là bắt đầu hay duy trì?","Cau hoi 1 dong","Tra loi 1 dong","T0","CARE-1","NEN_MONG"],[3,"2026-09-27","Chu Nhat","11:45",0,"Bai nhe","Moi goi hanh dong","Bộ công cụ tuần này đang nằm ở đâu?","Nhac tai nguyen tang 1","Tra loi 1 dong","T0","CARE-1","NEN_MONG"],[3,"2026-09-27","Chu Nhat","21:00",0,"Tổng Kết & Vinh Danh","Moi goi hanh dong","Những dòng khiến cả nhóm im lặng tuần qua","Bang vinh danh + 1 loi moi","Loi moi duy nhat trong tuan","T2","CARE-3","NEN_MONG"],[3,"2026-09-27","Chu Nhat","21:00",1,"Bảng Vinh Danh Gia Đình","Thi dua & vinh danh","Kết quả tuần và những cái tên đáng nhớ","Bang xep hang 4 bang dau","Co vu it nhat 3 gia dinh","T0","CARE-3","KET_NOI"],[4,"2026-09-28","Thu Hai","05:45",0,"Khởi Nguyên","Ket noi & nghi thuc","Một mục tiêu, một người nhắc bạn","Bai check-in 3 dong","Viet 3 dong cam ket tuan","T0","CARE-2","NEN_MONG"],[4,"2026-09-28","Thu Hai","11:45",0,"Bai nhe","Nhan thuc & tu duy","Bình chọn: bạn hợp với buổi sáng hay buổi tối?","Binh chon A/B","Tra loi 1 dong","T0","CARE-1","NEN_MONG"],[4,"2026-09-28","Thu Hai","11:45",1,"Bai nhe","Ky nang cha me - vo chong","Bình chọn: cuối tuần nhà bạn thích ở nhà hay đi chơi?","Binh chon A/B","Tra loi 1 dong","T0","CARE-1","KET_NOI"],[4,"2026-09-28","Thu Hai","19:45",1,"Nhiệm Vụ Gia Đình Tuần","Hoat dong gia dinh","Nhiệm vụ tuần: một buổi đi bộ cùng nhau","Bai nhiem vu + cach cham diem","Binh luan Ma gia dinh + cam ket","T0","CARE-3","KET_NOI"],[4,"2026-09-29","Thu Ba","11:45",0,"Bai nhe","Bang chung & cau chuyen","Một câu của thành viên khiến cả nhóm dừng lại","Anh trich dan tu thanh vien","Tra loi 1 dong","T0","CARE-1","NEN_MONG"],[4,"2026-09-29","Thu Ba","11:45",1,"Bai nhe","Thi dua & vinh danh","Chào những gia đình mới đăng ký Mã gia đình tuần này","Goi ten gia dinh moi","Tra loi 1 dong","T0","CARE-1","KET_NOI"],[4,"2026-09-29","Thu Ba","17:30",1,"Bàn Ăn Yêu Thương","Hoat dong gia dinh","Câu hỏi bàn ăn: con biết ơn điều gì?","Cau hoi ban an + anh mam com","Chup anh mam com va ke lai","T0","CARE-2","KET_NOI"],[4,"2026-09-29","Thu Ba","19:45",0,"Giải Mã","Nhan thuc & tu duy","Cái giá thật của việc trì hoãn một quyết định","Bai dai + so do","Tai cong cu tren web app","T1","CARE-3","NEN_MONG"],[4,"2026-09-30","Thu Tu","05:45",0,"Cho Là Nhận","Thuc hanh co huong dan","Chia sẻ một sai lầm để người khác đỡ vấp","Thu thach trong ngay","Bao lai da giup ai, viec gi","T0","CARE-2","NEN_MONG"],[4,"2026-09-30","Thu Tu","11:45",0,"Bai nhe","Ket noi & nghi thuc","Chào mừng những người mới của tuần","Chao mung nguoi moi","Tra loi 1 dong","T0","CARE-1","NEN_MONG"],[4,"2026-09-30","Thu Tu","11:45",1,"Bai nhe","Moi nhan cong cu tang 1","Bộ 12 trò chơi gắn kết cha mẹ - con cái đã có trên web app","Moi nhan bo cong cu tang 1","Tra loi 1 dong","T0","CARE-1","KET_NOI"],[4,"2026-09-30","Thu Tu","19:45",1,"Việc Tử Tế Của Gia Đình","Cau chuyen gia dinh","Dạy con cho đi lần đầu tiên","Ke lai 3 dong","Ke viec tu te va gan the mot gia dinh khac","T0","CARE-2","KET_NOI"],[4,"2026-10-01","Thu Nam","11:45",0,"Bai nhe","Thuc hanh co huong dan","Thử ngay 5 phút: gọi cho một người bạn đang nghĩ tới","Thu ngay 5 phut","Tra loi 1 dong","T0","CARE-1","NEN_MONG"],[4,"2026-10-01","Thu Nam","20:00",0,"Hỏi & Đáp Cùng Cố Vấn","Ket noi & nghi thuc","Bắt đầu lại sau một lần thất bại","Livestream 30-45 phut","Dat cau hoi truoc gio live","T2","CARE-3","NEN_MONG"],[4,"2026-10-01","Thu Nam","20:00",1,"Cha Mẹ Tỉnh Thức","Ky nang cha me - vo chong","Mười phút lắng nghe đúng cách","Bai ky nang + kich ban noi","Thu toi nay va ke lai","T1","CARE-3","KET_NOI"],[4,"2026-10-02","Thu Sau","11:45",0,"Bai nhe","Bang chung & cau chuyen","Trước và sau: ba mươi ngày của một thành viên","Truoc va sau","Tra loi 1 dong","T0","CARE-1","NEN_MONG"],[4,"2026-10-02","Thu Sau","19:45",0,"Bằng Chứng","Bang chung & cau chuyen","Ngày tôi thôi đổ lỗi cho hoàn cảnh","Cau chuyen chuyen hoa (UGC)","Ke cau chuyen cua ban","T1","CARE-3","NEN_MONG"],[4,"2026-10-02","Thu Sau","19:45",1,"Khoe Nhà Mình","Cau chuyen gia dinh","Một buổi tối bình thường của nhà mình","Anh/video + cau chuyen","Dang anh that kem 1 cau chuyen","T0","CARE-3","KET_NOI"],[4,"2026-10-03","Thu Bay","08:00",0,"Thực Chiến","Thuc hanh co huong dan","Bài tập: chọn một điều để buông tuần này","Bai tap + mau dien","Nop bai tren web app truoc Chu nhat","T1","CARE-2","NEN_MONG"],[4,"2026-10-03","Thu Bay","08:00",1,"Gia Đình Chơi Cùng Nhau","Hoat dong gia dinh","Săn tìm kho báu trong chính nhà mình","Huong dan tro choi 15 phut","Choi va dang anh/video","T1","CARE-2","KET_NOI"],[4,"2026-10-03","Thu Bay","11:45",0,"Bai nhe","Nhan thuc & tu duy","Điều ai cũng khuyên nhưng có thể sai với bạn","Goc nhin nguoc","Tra loi 1 dong","T0","CARE-1","NEN_MONG"],[4,"2026-10-04","Chu Nhat","11:45",0,"Bai nhe","Moi goi hanh dong","Buổi định hướng nhóm nhỏ tuần này còn chỗ","Nhac buoi dinh huong","Tra loi 1 dong","T0","CARE-1","NEN_MONG"],[4,"2026-10-04","Chu Nhat","21:00",0,"Tổng Kết & Vinh Danh","Moi goi hanh dong","Khép tuần: điều bạn mang sang tuần sau","Bang vinh danh + 1 loi moi","Loi moi duy nhat trong tuan","T2","CARE-3","NEN_MONG"],[4,"2026-10-04","Chu Nhat","21:00",1,"Bảng Vinh Danh Gia Đình","Thi dua & vinh danh","Gia đình lan tỏa nhất tuần qua","Bang xep hang 4 bang dau","Co vu it nhat 3 gia dinh","T0","CARE-3","KET_NOI"],[5,"2026-10-05","Thu Hai","05:45",0,"Khởi Nguyên","Ket noi & nghi thuc","Tuần này bạn rèn kỷ luật ở điểm nào?","Bai check-in 3 dong","Viet 3 dong cam ket tuan","T0","CARE-2","NANG_LUC"],[5,"2026-10-05","Thu Hai","11:45",0,"Bai nhe","Nhan thuc & tu duy","Một câu để mang theo hôm nay","Anh trich dan co ngu canh","Tra loi 1 dong","T0","CARE-1","NANG_LUC"],[5,"2026-10-05","Thu Hai","11:45",1,"Bai nhe","Ky nang cha me - vo chong","Nhà bạn xử lý thế nào khi hai đứa tranh nhau đồ chơi?","Cau hoi 1 dong","Tra loi 1 dong","T0","CARE-1","NUOI_DAY"],[5,"2026-10-05","Thu Hai","19:45",1,"Nhiệm Vụ Gia Đình Tuần","Hoat dong gia dinh","Nhiệm vụ tuần: nghe con nói mà không ngắt lời","Bai nhiem vu + cach cham diem","Binh luan Ma gia dinh + cam ket","T0","CARE-3","NUOI_DAY"],[5,"2026-10-06","Thu Ba","11:45",0,"Bai nhe","Bang chung & cau chuyen","Hậu trường: một buổi làm việc của đội GITA365","Hau truong","Tra loi 1 dong","T0","CARE-1","NANG_LUC"],[5,"2026-10-06","Thu Ba","11:45",1,"Bai nhe","Thi dua & vinh danh","Bảng xếp hạng giữa tuần: nhà bạn đang ở đâu?","Nhac bang xep hang","Tra loi 1 dong","T0","CARE-1","NUOI_DAY"],[5,"2026-10-06","Thu Ba","17:30",1,"Bàn Ăn Yêu Thương","Hoat dong gia dinh","Câu hỏi bàn ăn: nếu được đổi một luật trong nhà, con đổi gì?","Cau hoi ban an + anh mam com","Chup anh mam com va ke lai","T0","CARE-2","NUOI_DAY"],[5,"2026-10-06","Thu Ba","19:45",0,"Giải Mã","Nhan thuc & tu duy","Kỷ luật không phải ý chí — nó là thiết kế","Bai dai + so do","Tai cong cu tren web app","T1","CARE-3","NANG_LUC"],[5,"2026-10-07","Thu Tu","05:45",0,"Cho Là Nhận","Thuc hanh co huong dan","Dạy lại điều bạn vừa học được tuần này","Thu thach trong ngay","Bao lai da giup ai, viec gi","T0","CARE-2","NANG_LUC"],[5,"2026-10-07","Thu Tu","11:45",0,"Bai nhe","Nhan thuc & tu duy","Trả lời một câu hỏi thật của thành viên","Tra loi cau hoi that","Tra loi 1 dong","T0","CARE-1","NANG_LUC"],[5,"2026-10-07","Thu Tu","11:45",1,"Bai nhe","Moi nhan cong cu tang 1","Tặng cả nhà bộ 30 câu hỏi bàn ăn","Moi nhan bo cong cu tang 1","Tra loi 1 dong","T0","CARE-1","NUOI_DAY"],[5,"2026-10-07","Thu Tu","19:45",1,"Việc Tử Tế Của Gia Đình","Cau chuyen gia dinh","Để con tự chọn một việc tử tế","Ke lai 3 dong","Ke viec tu te va gan the mot gia dinh khac","T0","CARE-2","NUOI_DAY"],[5,"2026-10-08","Thu Nam","11:45",0,"Bai nhe","Thuc hanh co huong dan","Thử ngay 5 phút: viết ra ba điều đang chiếm đầu bạn","Thu ngay 5 phut","Tra loi 1 dong","T0","CARE-1","NANG_LUC"],[5,"2026-10-08","Thu Nam","20:00",0,"Hỏi & Đáp Cùng Cố Vấn","Ket noi & nghi thuc","Quản trị bản thân: hỏi thẳng, đáp thật","Livestream 30-45 phut","Dat cau hoi truoc gio live","T2","CARE-3","NANG_LUC"],[5,"2026-10-08","Thu Nam","20:00",1,"Cha Mẹ Tỉnh Thức","Ky nang cha me - vo chong","Kỷ luật tích cực: phạt mà không làm tổn thương","Bai ky nang + kich ban noi","Thu toi nay va ke lai","T1","CARE-3","NUOI_DAY"],[5,"2026-10-09","Thu Sau","11:45",0,"Bai nhe","Bang chung & cau chuyen","Sai lầm tôi từng trả giá đắt","Sai lam cua toi","Tra loi 1 dong","T0","CARE-1","NANG_LUC"],[5,"2026-10-09","Thu Sau","19:45",0,"Bằng Chứng","Bang chung & cau chuyen","Chín mươi ngày và một cuốn sổ","Cau chuyen chuyen hoa (UGC)","Ke cau chuyen cua ban","T1","CARE-3","NANG_LUC"],[5,"2026-10-09","Thu Sau","19:45",1,"Khoe Nhà Mình","Cau chuyen gia dinh","Con bạn vừa làm được điều gì?","Anh/video + cau chuyen","Dang anh that kem 1 cau chuyen","T0","CARE-3","NUOI_DAY"],[5,"2026-10-10","Thu Bay","08:00",0,"Thực Chiến","Thuc hanh co huong dan","Bài tập: bảng quản trị năng lượng một tuần","Bai tap + mau dien","Nop bai tren web app truoc Chu nhat","T1","CARE-2","NANG_LUC"],[5,"2026-10-10","Thu Bay","08:00",1,"Gia Đình Chơi Cùng Nhau","Hoat dong gia dinh","Trò chơi rèn kiên nhẫn cho con","Huong dan tro choi 15 phut","Choi va dang anh/video","T1","CARE-2","NUOI_DAY"],[5,"2026-10-10","Thu Bay","11:45",0,"Bai nhe","Nhan thuc & tu duy","Câu hỏi nhanh: khó nhất với bạn là bắt đầu hay duy trì?","Cau hoi 1 dong","Tra loi 1 dong","T0","CARE-1","NANG_LUC"],[5,"2026-10-11","Chu Nhat","11:45",0,"Bai nhe","Moi goi hanh dong","Bộ công cụ tuần này đang nằm ở đâu?","Nhac tai nguyen tang 1","Tra loi 1 dong","T0","CARE-1","NANG_LUC"],[5,"2026-10-11","Chu Nhat","21:00",0,"Tổng Kết & Vinh Danh","Moi goi hanh dong","Bảng vinh danh người bền bỉ nhất tuần","Bang vinh danh + 1 loi moi","Loi moi duy nhat trong tuan","T2","CARE-3","NANG_LUC"],[5,"2026-10-11","Chu Nhat","21:00",1,"Bảng Vinh Danh Gia Đình","Thi dua & vinh danh","Vinh danh những cha mẹ đã thay đổi cách nói","Bang xep hang 4 bang dau","Co vu it nhat 3 gia dinh","T0","CARE-3","NUOI_DAY"],[6,"2026-10-12","Thu Hai","05:45",0,"Khởi Nguyên","Ket noi & nghi thuc","Chọn một việc khó và làm nó trước 9 giờ sáng","Bai check-in 3 dong","Viet 3 dong cam ket tuan","T0","CARE-2","NANG_LUC"],[6,"2026-10-12","Thu Hai","11:45",0,"Bai nhe","Nhan thuc & tu duy","Bình chọn: bạn hợp với buổi sáng hay buổi tối?","Binh chon A/B","Tra loi 1 dong","T0","CARE-1","NANG_LUC"],[6,"2026-10-12","Thu Hai","11:45",1,"Bai nhe","Ky nang cha me - vo chong","Bình chọn: cuối tuần nhà bạn thích ở nhà hay đi chơi?","Binh chon A/B","Tra loi 1 dong","T0","CARE-1","NUOI_DAY"],[6,"2026-10-12","Thu Hai","19:45",1,"Nhiệm Vụ Gia Đình Tuần","Hoat dong gia dinh","Nhiệm vụ tuần: cùng con làm một việc nhà","Bai nhiem vu + cach cham diem","Binh luan Ma gia dinh + cam ket","T0","CARE-3","NUOI_DAY"],[6,"2026-10-13","Thu Ba","11:45",0,"Bai nhe","Bang chung & cau chuyen","Một câu của thành viên khiến cả nhóm dừng lại","Anh trich dan tu thanh vien","Tra loi 1 dong","T0","CARE-1","NANG_LUC"],[6,"2026-10-13","Thu Ba","11:45",1,"Bai nhe","Thi dua & vinh danh","Chào những gia đình mới đăng ký Mã gia đình tuần này","Goi ten gia dinh moi","Tra loi 1 dong","T0","CARE-1","NUOI_DAY"],[6,"2026-10-13","Thu Ba","17:30",1,"Bàn Ăn Yêu Thương","Hoat dong gia dinh","Câu hỏi bàn ăn: con muốn bố mẹ hiểu điều gì?","Cau hoi ban an + anh mam com","Chup anh mam com va ke lai","T0","CARE-2","NUOI_DAY"],[6,"2026-10-13","Thu Ba","19:45",0,"Giải Mã","Nhan thuc & tu duy","Bốn cái hố của người mới quản lý tiền","Bai dai + so do","Tai cong cu tren web app","T1","CARE-3","NANG_LUC"],[6,"2026-10-14","Thu Tu","05:45",0,"Cho Là Nhận","Thuc hanh co huong dan","Tặng ai đó 20 phút của bạn","Thu thach trong ngay","Bao lai da giup ai, viec gi","T0","CARE-2","NANG_LUC"],[6,"2026-10-14","Thu Tu","11:45",0,"Bai nhe","Ket noi & nghi thuc","Chào mừng những người mới của tuần","Chao mung nguoi moi","Tra loi 1 dong","T0","CARE-1","NANG_LUC"],[6,"2026-10-14","Thu Tu","11:45",1,"Bai nhe","Moi nhan cong cu tang 1","Bộ 12 trò chơi gắn kết cha mẹ - con cái đã có trên web app","Moi nhan bo cong cu tang 1","Tra loi 1 dong","T0","CARE-1","NUOI_DAY"],[6,"2026-10-14","Thu Tu","19:45",1,"Việc Tử Tế Của Gia Đình","Cau chuyen gia dinh","Việc tử tế trong chính nhà mình","Ke lai 3 dong","Ke viec tu te va gan the mot gia dinh khac","T0","CARE-2","NUOI_DAY"],[6,"2026-10-15","Thu Nam","11:45",0,"Bai nhe","Thuc hanh co huong dan","Thử ngay 5 phút: gọi cho một người bạn đang nghĩ tới","Thu ngay 5 phut","Tra loi 1 dong","T0","CARE-1","NANG_LUC"],[6,"2026-10-15","Thu Nam","20:00",0,"Hỏi & Đáp Cùng Cố Vấn","Ket noi & nghi thuc","Tiền bạc trong gia đình: những câu khó nói","Livestream 30-45 phut","Dat cau hoi truoc gio live","T2","CARE-3","NANG_LUC"],[6,"2026-10-15","Thu Nam","20:00",1,"Cha Mẹ Tỉnh Thức","Ky nang cha me - vo chong","Khi con nói dối: bốn bước xử lý","Bai ky nang + kich ban noi","Thu toi nay va ke lai","T1","CARE-3","NUOI_DAY"],[6,"2026-10-16","Thu Sau","11:45",0,"Bai nhe","Bang chung & cau chuyen","Trước và sau: ba mươi ngày của một thành viên","Truoc va sau","Tra loi 1 dong","T0","CARE-1","NANG_LUC"],[6,"2026-10-16","Thu Sau","19:45",0,"Bằng Chứng","Bang chung & cau chuyen","Anh ấy học lại cách nói chuyện với con","Cau chuyen chuyen hoa (UGC)","Ke cau chuyen cua ban","T1","CARE-3","NANG_LUC"],[6,"2026-10-16","Thu Sau","19:45",1,"Khoe Nhà Mình","Cau chuyen gia dinh","Khoảnh khắc bạn thấy con lớn lên","Anh/video + cau chuyen","Dang anh that kem 1 cau chuyen","T0","CARE-3","NUOI_DAY"],[6,"2026-10-17","Thu Bay","08:00",0,"Thực Chiến","Thuc hanh co huong dan","Bài tập: ba con số về tiền của gia đình bạn","Bai tap + mau dien","Nop bai tren web app truoc Chu nhat","T1","CARE-2","NANG_LUC"],[6,"2026-10-17","Thu Bay","08:00",1,"Gia Đình Chơi Cùng Nhau","Hoat dong gia dinh","Cả nhà cùng nấu một món","Huong dan tro choi 15 phut","Choi va dang anh/video","T1","CARE-2","NUOI_DAY"],[6,"2026-10-17","Thu Bay","11:45",0,"Bai nhe","Nhan thuc & tu duy","Điều ai cũng khuyên nhưng có thể sai với bạn","Goc nhin nguoc","Tra loi 1 dong","T0","CARE-1","NANG_LUC"],[6,"2026-10-18","Chu Nhat","11:45",0,"Bai nhe","Moi goi hanh dong","Buổi định hướng nhóm nhỏ tuần này còn chỗ","Nhac buoi dinh huong","Tra loi 1 dong","T0","CARE-1","NANG_LUC"],[6,"2026-10-18","Chu Nhat","21:00",0,"Tổng Kết & Vinh Danh","Moi goi hanh dong","Con số của tuần và ba bài học","Bang vinh danh + 1 loi moi","Loi moi duy nhat trong tuan","T2","CARE-3","NANG_LUC"],[6,"2026-10-18","Chu Nhat","21:00",1,"Bảng Vinh Danh Gia Đình","Thi dua & vinh danh","Gia đình tiến bộ nhất tuần này","Bang xep hang 4 bang dau","Co vu it nhat 3 gia dinh","T0","CARE-3","NUOI_DAY"],[7,"2026-10-19","Thu Hai","05:45",0,"Khởi Nguyên","Ket noi & nghi thuc","Bạn đang tiêu thời gian vào đâu nhiều nhất?","Bai check-in 3 dong","Viet 3 dong cam ket tuan","T0","CARE-2","NANG_LUC"],[7,"2026-10-19","Thu Hai","11:45",0,"Bai nhe","Nhan thuc & tu duy","Một câu để mang theo hôm nay","Anh trich dan co ngu canh","Tra loi 1 dong","T0","CARE-1","NANG_LUC"],[7,"2026-10-19","Thu Hai","11:45",1,"Bai nhe","Ky nang cha me - vo chong","Nhà bạn xử lý thế nào khi hai đứa tranh nhau đồ chơi?","Cau hoi 1 dong","Tra loi 1 dong","T0","CARE-1","NUOI_DAY"],[7,"2026-10-19","Thu Hai","19:45",1,"Nhiệm Vụ Gia Đình Tuần","Hoat dong gia dinh","Nhiệm vụ tuần: đọc cùng con 15 phút mỗi tối","Bai nhiem vu + cach cham diem","Binh luan Ma gia dinh + cam ket","T0","CARE-3","NUOI_DAY"],[7,"2026-10-20","Thu Ba","11:45",0,"Bai nhe","Bang chung & cau chuyen","Hậu trường: một buổi làm việc của đội GITA365","Hau truong","Tra loi 1 dong","T0","CARE-1","NANG_LUC"],[7,"2026-10-20","Thu Ba","11:45",1,"Bai nhe","Thi dua & vinh danh","Bảng xếp hạng giữa tuần: nhà bạn đang ở đâu?","Nhac bang xep hang","Tra loi 1 dong","T0","CARE-1","NUOI_DAY"],[7,"2026-10-20","Thu Ba","17:30",1,"Bàn Ăn Yêu Thương","Hoat dong gia dinh","Câu hỏi bàn ăn: điều gì con đang cố gắng?","Cau hoi ban an + anh mam com","Chup anh mam com va ke lai","T0","CARE-2","NUOI_DAY"],[7,"2026-10-20","Thu Ba","19:45",0,"Giải Mã","Nhan thuc & tu duy","Năng lượng quan trọng hơn thời gian","Bai dai + so do","Tai cong cu tren web app","T1","CARE-3","NANG_LUC"],[7,"2026-10-21","Thu Tu","05:45",0,"Cho Là Nhận","Thuc hanh co huong dan","Chỉ cho một người cách bạn tiết kiệm được khoản đầu tiên","Thu thach trong ngay","Bao lai da giup ai, viec gi","T0","CARE-2","NANG_LUC"],[7,"2026-10-21","Thu Tu","11:45",0,"Bai nhe","Nhan thuc & tu duy","Trả lời một câu hỏi thật của thành viên","Tra loi cau hoi that","Tra loi 1 dong","T0","CARE-1","NANG_LUC"],[7,"2026-10-21","Thu Tu","11:45",1,"Bai nhe","Moi nhan cong cu tang 1","Tặng cả nhà bộ 30 câu hỏi bàn ăn","Moi nhan bo cong cu tang 1","Tra loi 1 dong","T0","CARE-1","NUOI_DAY"],[7,"2026-10-21","Thu Tu","19:45",1,"Việc Tử Tế Của Gia Đình","Cau chuyen gia dinh","Cùng con làm một món quà tặng ai đó","Ke lai 3 dong","Ke viec tu te va gan the mot gia dinh khac","T0","CARE-2","NUOI_DAY"],[7,"2026-10-22","Thu Nam","11:45",0,"Bai nhe","Thuc hanh co huong dan","Thử ngay 5 phút: viết ra ba điều đang chiếm đầu bạn","Thu ngay 5 phut","Tra loi 1 dong","T0","CARE-1","NANG_LUC"],[7,"2026-10-22","Thu Nam","20:00",0,"Hỏi & Đáp Cùng Cố Vấn","Ket noi & nghi thuc","Làm sao giữ nhịp khi công việc quá tải?","Livestream 30-45 phut","Dat cau hoi truoc gio live","T2","CARE-3","NANG_LUC"],[7,"2026-10-22","Thu Nam","20:00",1,"Cha Mẹ Tỉnh Thức","Ky nang cha me - vo chong","Con dán mắt vào điện thoại: thương lượng thế nào","Bai ky nang + kich ban noi","Thu toi nay va ke lai","T1","CARE-3","NUOI_DAY"],[7,"2026-10-23","Thu Sau","11:45",0,"Bai nhe","Bang chung & cau chuyen","Sai lầm tôi từng trả giá đắt","Sai lam cua toi","Tra loi 1 dong","T0","CARE-1","NANG_LUC"],[7,"2026-10-23","Thu Sau","19:45",0,"Bằng Chứng","Bang chung & cau chuyen","Từ nợ nần đến khoản tiết kiệm đầu tiên","Cau chuyen chuyen hoa (UGC)","Ke cau chuyen cua ban","T1","CARE-3","NANG_LUC"],[7,"2026-10-23","Thu Sau","19:45",1,"Khoe Nhà Mình","Cau chuyen gia dinh","Lần đầu tiên của con","Anh/video + cau chuyen","Dang anh that kem 1 cau chuyen","T0","CARE-3","NUOI_DAY"],[7,"2026-10-24","Thu Bay","08:00",0,"Thực Chiến","Thuc hanh co huong dan","Bài tập: thiết kế lại buổi sáng","Bai tap + mau dien","Nop bai tren web app truoc Chu nhat","T1","CARE-2","NANG_LUC"],[7,"2026-10-24","Thu Bay","08:00",1,"Gia Đình Chơi Cùng Nhau","Hoat dong gia dinh","Thử thách một ngày không màn hình","Huong dan tro choi 15 phut","Choi va dang anh/video","T1","CARE-2","NUOI_DAY"],[7,"2026-10-24","Thu Bay","11:45",0,"Bai nhe","Nhan thuc & tu duy","Câu hỏi nhanh: khó nhất với bạn là bắt đầu hay duy trì?","Cau hoi 1 dong","Tra loi 1 dong","T0","CARE-1","NANG_LUC"],[7,"2026-10-25","Chu Nhat","11:45",0,"Bai nhe","Moi goi hanh dong","Bộ công cụ tuần này đang nằm ở đâu?","Nhac tai nguyen tang 1","Tra loi 1 dong","T0","CARE-1","NANG_LUC"],[7,"2026-10-25","Chu Nhat","21:00",0,"Tổng Kết & Vinh Danh","Moi goi hanh dong","Ai đã tiến xa nhất tuần này?","Bang vinh danh + 1 loi moi","Loi moi duy nhat trong tuan","T2","CARE-3","NANG_LUC"],[7,"2026-10-25","Chu Nhat","21:00",1,"Bảng Vinh Danh Gia Đình","Thi dua & vinh danh","Câu chuyện được yêu thích nhất tuần","Bang xep hang 4 bang dau","Co vu it nhat 3 gia dinh","T0","CARE-3","NUOI_DAY"],[8,"2026-10-26","Thu Hai","05:45",0,"Khởi Nguyên","Ket noi & nghi thuc","Một kỹ năng, hai mươi phút mỗi ngày","Bai check-in 3 dong","Viet 3 dong cam ket tuan","T0","CARE-2","NANG_LUC"],[8,"2026-10-26","Thu Hai","11:45",0,"Bai nhe","Nhan thuc & tu duy","Bình chọn: bạn hợp với buổi sáng hay buổi tối?","Binh chon A/B","Tra loi 1 dong","T0","CARE-1","NANG_LUC"],[8,"2026-10-26","Thu Hai","11:45",1,"Bai nhe","Ky nang cha me - vo chong","Bình chọn: cuối tuần nhà bạn thích ở nhà hay đi chơi?","Binh chon A/B","Tra loi 1 dong","T0","CARE-1","NUOI_DAY"],[8,"2026-10-26","Thu Hai","19:45",1,"Nhiệm Vụ Gia Đình Tuần","Hoat dong gia dinh","Nhiệm vụ tuần: một ngày không quát","Bai nhiem vu + cach cham diem","Binh luan Ma gia dinh + cam ket","T0","CARE-3","NUOI_DAY"],[8,"2026-10-27","Thu Ba","11:45",0,"Bai nhe","Bang chung & cau chuyen","Một câu của thành viên khiến cả nhóm dừng lại","Anh trich dan tu thanh vien","Tra loi 1 dong","T0","CARE-1","NANG_LUC"],[8,"2026-10-27","Thu Ba","11:45",1,"Bai nhe","Thi dua & vinh danh","Chào những gia đình mới đăng ký Mã gia đình tuần này","Goi ten gia dinh moi","Tra loi 1 dong","T0","CARE-1","NUOI_DAY"],[8,"2026-10-27","Thu Ba","17:30",1,"Bàn Ăn Yêu Thương","Hoat dong gia dinh","Câu hỏi bàn ăn: con thấy nhà mình đặc biệt ở chỗ nào?","Cau hoi ban an + anh mam com","Chup anh mam com va ke lai","T0","CARE-2","NUOI_DAY"],[8,"2026-10-27","Thu Ba","19:45",0,"Giải Mã","Nhan thuc & tu duy","Vì sao bạn học nhiều mà đổi thay ít?","Bai dai + so do","Tai cong cu tren web app","T1","CARE-3","NANG_LUC"],[8,"2026-10-28","Thu Tu","05:45",0,"Cho Là Nhận","Thuc hanh co huong dan","Giới thiệu hai người trong nhóm nên quen nhau","Thu thach trong ngay","Bao lai da giup ai, viec gi","T0","CARE-2","NANG_LUC"],[8,"2026-10-28","Thu Tu","11:45",0,"Bai nhe","Ket noi & nghi thuc","Chào mừng những người mới của tuần","Chao mung nguoi moi","Tra loi 1 dong","T0","CARE-1","NANG_LUC"],[8,"2026-10-28","Thu Tu","11:45",1,"Bai nhe","Moi nhan cong cu tang 1","Bộ 12 trò chơi gắn kết cha mẹ - con cái đã có trên web app","Moi nhan bo cong cu tang 1","Tra loi 1 dong","T0","CARE-1","NUOI_DAY"],[8,"2026-10-28","Thu Tu","19:45",1,"Việc Tử Tế Của Gia Đình","Cau chuyen gia dinh","Khi con từ chối giúp: xử lý thế nào?","Ke lai 3 dong","Ke viec tu te va gan the mot gia dinh khac","T0","CARE-2","NUOI_DAY"],[8,"2026-10-29","Thu Nam","11:45",0,"Bai nhe","Thuc hanh co huong dan","Thử ngay 5 phút: gọi cho một người bạn đang nghĩ tới","Thu ngay 5 phut","Tra loi 1 dong","T0","CARE-1","NANG_LUC"],[8,"2026-10-29","Thu Nam","20:00",0,"Hỏi & Đáp Cùng Cố Vấn","Ket noi & nghi thuc","Học một kỹ năng mới ở tuổi 40","Livestream 30-45 phut","Dat cau hoi truoc gio live","T2","CARE-3","NANG_LUC"],[8,"2026-10-29","Thu Nam","20:00",1,"Cha Mẹ Tỉnh Thức","Ky nang cha me - vo chong","Khen thế nào để con không sợ thất bại","Bai ky nang + kich ban noi","Thu toi nay va ke lai","T1","CARE-3","NUOI_DAY"],[8,"2026-10-30","Thu Sau","11:45",0,"Bai nhe","Bang chung & cau chuyen","Trước và sau: ba mươi ngày của một thành viên","Truoc va sau","Tra loi 1 dong","T0","CARE-1","NANG_LUC"],[8,"2026-10-30","Thu Sau","19:45",0,"Bằng Chứng","Bang chung & cau chuyen","Cô giáo về hưu bắt đầu lại từ con số không","Cau chuyen chuyen hoa (UGC)","Ke cau chuyen cua ban","T1","CARE-3","NANG_LUC"],[8,"2026-10-30","Thu Sau","19:45",1,"Khoe Nhà Mình","Cau chuyen gia dinh","Ảnh cha con / mẹ con của tuần","Anh/video + cau chuyen","Dang anh that kem 1 cau chuyen","T0","CARE-3","NUOI_DAY"],[8,"2026-10-31","Thu Bay","08:00",0,"Thực Chiến","Thuc hanh co huong dan","Bài tập: cắt một thói quen tốn giờ","Bai tap + mau dien","Nop bai tren web app truoc Chu nhat","T1","CARE-2","NANG_LUC"],[8,"2026-10-31","Thu Bay","08:00",1,"Gia Đình Chơi Cùng Nhau","Hoat dong gia dinh","Trò chơi dạy con hợp tác","Huong dan tro choi 15 phut","Choi va dang anh/video","T1","CARE-2","NUOI_DAY"],[8,"2026-10-31","Thu Bay","11:45",0,"Bai nhe","Nhan thuc & tu duy","Điều ai cũng khuyên nhưng có thể sai với bạn","Goc nhin nguoc","Tra loi 1 dong","T0","CARE-1","NANG_LUC"],[8,"2026-11-01","Chu Nhat","11:45",0,"Bai nhe","Moi goi hanh dong","Buổi định hướng nhóm nhỏ tuần này còn chỗ","Nhac buoi dinh huong","Tra loi 1 dong","T0","CARE-1","NANG_LUC"],[8,"2026-11-01","Chu Nhat","21:00",0,"Tổng Kết & Vinh Danh","Moi goi hanh dong","Tổng kết: điều gì hiệu quả, điều gì bỏ đi","Bang vinh danh + 1 loi moi","Loi moi duy nhat trong tuan","T2","CARE-3","NANG_LUC"],[8,"2026-11-01","Chu Nhat","21:00",1,"Bảng Vinh Danh Gia Đình","Thi dua & vinh danh","Bảng xếp hạng bốn bảng đấu","Bang xep hang 4 bang dau","Co vu it nhat 3 gia dinh","T0","CARE-3","NUOI_DAY"],[9,"2026-11-02","Thu Hai","05:45",0,"Khởi Nguyên","Ket noi & nghi thuc","Tuần này bạn sẽ cho đi điều gì?","Bai check-in 3 dong","Viet 3 dong cam ket tuan","T0","CARE-2","NHAN_BAN"],[9,"2026-11-02","Thu Hai","11:45",0,"Bai nhe","Nhan thuc & tu duy","Một câu để mang theo hôm nay","Anh trich dan co ngu canh","Tra loi 1 dong","T0","CARE-1","NHAN_BAN"],[9,"2026-11-02","Thu Hai","11:45",1,"Bai nhe","Ky nang cha me - vo chong","Nhà bạn xử lý thế nào khi hai đứa tranh nhau đồ chơi?","Cau hoi 1 dong","Tra loi 1 dong","T0","CARE-1","THINH_VUONG"],[9,"2026-11-02","Thu Hai","19:45",1,"Nhiệm Vụ Gia Đình Tuần","Hoat dong gia dinh","Nhiệm vụ tuần: cả nhà cùng lập quỹ nhỏ","Bai nhiem vu + cach cham diem","Binh luan Ma gia dinh + cam ket","T0","CARE-3","THINH_VUONG"],[9,"2026-11-03","Thu Ba","11:45",0,"Bai nhe","Bang chung & cau chuyen","Hậu trường: một buổi làm việc của đội GITA365","Hau truong","Tra loi 1 dong","T0","CARE-1","NHAN_BAN"],[9,"2026-11-03","Thu Ba","11:45",1,"Bai nhe","Thi dua & vinh danh","Bảng xếp hạng giữa tuần: nhà bạn đang ở đâu?","Nhac bang xep hang","Tra loi 1 dong","T0","CARE-1","THINH_VUONG"],[9,"2026-11-03","Thu Ba","17:30",1,"Bàn Ăn Yêu Thương","Hoat dong gia dinh","Câu hỏi bàn ăn: nhà mình giàu ở điểm nào?","Cau hoi ban an + anh mam com","Chup anh mam com va ke lai","T0","CARE-2","THINH_VUONG"],[9,"2026-11-03","Thu Ba","19:45",0,"Giải Mã","Nhan thuc & tu duy","Cho là nhận không phải khẩu hiệu — đây là cơ chế","Bai dai + so do","Tai cong cu tren web app","T1","CARE-3","NHAN_BAN"],[9,"2026-11-04","Thu Tu","05:45",0,"Cho Là Nhận","Thuc hanh co huong dan","Kèm một người mới trong nhóm suốt tuần này","Thu thach trong ngay","Bao lai da giup ai, viec gi","T0","CARE-2","NHAN_BAN"],[9,"2026-11-04","Thu Tu","11:45",0,"Bai nhe","Nhan thuc & tu duy","Trả lời một câu hỏi thật của thành viên","Tra loi cau hoi that","Tra loi 1 dong","T0","CARE-1","NHAN_BAN"],[9,"2026-11-04","Thu Tu","11:45",1,"Bai nhe","Moi nhan cong cu tang 1","Tặng cả nhà bộ 30 câu hỏi bàn ăn","Moi nhan bo cong cu tang 1","Tra loi 1 dong","T0","CARE-1","THINH_VUONG"],[9,"2026-11-04","Thu Tu","19:45",1,"Việc Tử Tế Của Gia Đình","Cau chuyen gia dinh","Gia đình giúp gia đình: mình giúp được ai?","Ke lai 3 dong","Ke viec tu te va gan the mot gia dinh khac","T0","CARE-2","THINH_VUONG"],[9,"2026-11-05","Thu Nam","11:45",0,"Bai nhe","Thuc hanh co huong dan","Thử ngay 5 phút: viết ra ba điều đang chiếm đầu bạn","Thu ngay 5 phut","Tra loi 1 dong","T0","CARE-1","NHAN_BAN"],[9,"2026-11-05","Thu Nam","20:00",0,"Hỏi & Đáp Cùng Cố Vấn","Ket noi & nghi thuc","Dẫn dắt người khác khi mình còn chưa hoàn hảo","Livestream 30-45 phut","Dat cau hoi truoc gio live","T2","CARE-3","NHAN_BAN"],[9,"2026-11-05","Thu Nam","20:00",1,"Cha Mẹ Tỉnh Thức","Ky nang cha me - vo chong","Dạy con về tiền từ mấy tuổi?","Bai ky nang + kich ban noi","Thu toi nay va ke lai","T1","CARE-3","THINH_VUONG"],[9,"2026-11-06","Thu Sau","11:45",0,"Bai nhe","Bang chung & cau chuyen","Sai lầm tôi từng trả giá đắt","Sai lam cua toi","Tra loi 1 dong","T0","CARE-1","NHAN_BAN"],[9,"2026-11-06","Thu Sau","19:45",0,"Bằng Chứng","Bang chung & cau chuyen","Gia đình đầu tiên mời năm gia đình khác","Cau chuyen chuyen hoa (UGC)","Ke cau chuyen cua ban","T1","CARE-3","NHAN_BAN"],[9,"2026-11-06","Thu Sau","19:45",1,"Khoe Nhà Mình","Cau chuyen gia dinh","Truyền thống riêng của nhà bạn","Anh/video + cau chuyen","Dang anh that kem 1 cau chuyen","T0","CARE-3","THINH_VUONG"],[9,"2026-11-07","Thu Bay","08:00",0,"Thực Chiến","Thuc hanh co huong dan","Bài tập: viết thư cho người đã giúp bạn","Bai tap + mau dien","Nop bai tren web app truoc Chu nhat","T1","CARE-2","NHAN_BAN"],[9,"2026-11-07","Thu Bay","08:00",1,"Gia Đình Chơi Cùng Nhau","Hoat dong gia dinh","Trò chơi dạy con quản lý tiền","Huong dan tro choi 15 phut","Choi va dang anh/video","T1","CARE-2","THINH_VUONG"],[9,"2026-11-07","Thu Bay","11:45",0,"Bai nhe","Nhan thuc & tu duy","Câu hỏi nhanh: khó nhất với bạn là bắt đầu hay duy trì?","Cau hoi 1 dong","Tra loi 1 dong","T0","CARE-1","NHAN_BAN"],[9,"2026-11-08","Chu Nhat","11:45",0,"Bai nhe","Moi goi hanh dong","Bộ công cụ tuần này đang nằm ở đâu?","Nhac tai nguyen tang 1","Tra loi 1 dong","T0","CARE-1","NHAN_BAN"],[9,"2026-11-08","Chu Nhat","21:00",0,"Tổng Kết & Vinh Danh","Moi goi hanh dong","Vinh danh những người cho đi nhiều nhất","Bang vinh danh + 1 loi moi","Loi moi duy nhat trong tuan","T2","CARE-3","NHAN_BAN"],[9,"2026-11-08","Chu Nhat","21:00",1,"Bảng Vinh Danh Gia Đình","Thi dua & vinh danh","Tổng kết mùa: những gia đình đi trọn hành trình","Bang xep hang 4 bang dau","Co vu it nhat 3 gia dinh","T0","CARE-3","THINH_VUONG"],[10,"2026-11-09","Thu Hai","05:45",0,"Khởi Nguyên","Ket noi & nghi thuc","Ai là người bạn muốn kéo đi cùng?","Bai check-in 3 dong","Viet 3 dong cam ket tuan","T0","CARE-2","NHAN_BAN"],[10,"2026-11-09","Thu Hai","11:45",0,"Bai nhe","Nhan thuc & tu duy","Bình chọn: bạn hợp với buổi sáng hay buổi tối?","Binh chon A/B","Tra loi 1 dong","T0","CARE-1","NHAN_BAN"],[10,"2026-11-09","Thu Hai","11:45",1,"Bai nhe","Ky nang cha me - vo chong","Bình chọn: cuối tuần nhà bạn thích ở nhà hay đi chơi?","Binh chon A/B","Tra loi 1 dong","T0","CARE-1","THINH_VUONG"],[10,"2026-11-09","Thu Hai","19:45",1,"Nhiệm Vụ Gia Đình Tuần","Hoat dong gia dinh","Nhiệm vụ tuần: dạy con tiêu tiền có kế hoạch","Bai nhiem vu + cach cham diem","Binh luan Ma gia dinh + cam ket","T0","CARE-3","THINH_VUONG"],[10,"2026-11-10","Thu Ba","11:45",0,"Bai nhe","Bang chung & cau chuyen","Một câu của thành viên khiến cả nhóm dừng lại","Anh trich dan tu thanh vien","Tra loi 1 dong","T0","CARE-1","NHAN_BAN"],[10,"2026-11-10","Thu Ba","11:45",1,"Bai nhe","Thi dua & vinh danh","Chào những gia đình mới đăng ký Mã gia đình tuần này","Goi ten gia dinh moi","Tra loi 1 dong","T0","CARE-1","THINH_VUONG"],[10,"2026-11-10","Thu Ba","17:30",1,"Bàn Ăn Yêu Thương","Hoat dong gia dinh","Câu hỏi bàn ăn: con muốn nhà mình có truyền thống gì?","Cau hoi ban an + anh mam com","Chup anh mam com va ke lai","T0","CARE-2","THINH_VUONG"],[10,"2026-11-10","Thu Ba","19:45",0,"Giải Mã","Nhan thuc & tu duy","Người dẫn dắt khác người giỏi ở điểm nào?","Bai dai + so do","Tai cong cu tren web app","T1","CARE-3","NHAN_BAN"],[10,"2026-11-11","Thu Tu","05:45",0,"Cho Là Nhận","Thuc hanh co huong dan","Viết lại điều bạn học được để cả nhóm dùng","Thu thach trong ngay","Bao lai da giup ai, viec gi","T0","CARE-2","NHAN_BAN"],[10,"2026-11-11","Thu Tu","11:45",0,"Bai nhe","Ket noi & nghi thuc","Chào mừng những người mới của tuần","Chao mung nguoi moi","Tra loi 1 dong","T0","CARE-1","NHAN_BAN"],[10,"2026-11-11","Thu Tu","11:45",1,"Bai nhe","Moi nhan cong cu tang 1","Bộ 12 trò chơi gắn kết cha mẹ - con cái đã có trên web app","Moi nhan bo cong cu tang 1","Tra loi 1 dong","T0","CARE-1","THINH_VUONG"],[10,"2026-11-11","Thu Tu","19:45",1,"Việc Tử Tế Của Gia Đình","Cau chuyen gia dinh","Cho đi một thứ nhà mình không còn dùng","Ke lai 3 dong","Ke viec tu te va gan the mot gia dinh khac","T0","CARE-2","THINH_VUONG"],[10,"2026-11-12","Thu Nam","11:45",0,"Bai nhe","Thuc hanh co huong dan","Thử ngay 5 phút: gọi cho một người bạn đang nghĩ tới","Thu ngay 5 phut","Tra loi 1 dong","T0","CARE-1","NHAN_BAN"],[10,"2026-11-12","Thu Nam","20:00",0,"Hỏi & Đáp Cùng Cố Vấn","Ket noi & nghi thuc","Cho đi mà không kiệt sức","Livestream 30-45 phut","Dat cau hoi truoc gio live","T2","CARE-3","NHAN_BAN"],[10,"2026-11-12","Thu Nam","20:00",1,"Cha Mẹ Tỉnh Thức","Ky nang cha me - vo chong","Giao việc nhà theo độ tuổi","Bai ky nang + kich ban noi","Thu toi nay va ke lai","T1","CARE-3","THINH_VUONG"],[10,"2026-11-13","Thu Sau","11:45",0,"Bai nhe","Bang chung & cau chuyen","Trước và sau: ba mươi ngày của một thành viên","Truoc va sau","Tra loi 1 dong","T0","CARE-1","NHAN_BAN"],[10,"2026-11-13","Thu Sau","19:45",0,"Bằng Chứng","Bang chung & cau chuyen","Người từng im lặng nay dẫn một Tổ ấm","Cau chuyen chuyen hoa (UGC)","Ke cau chuyen cua ban","T1","CARE-3","NHAN_BAN"],[10,"2026-11-13","Thu Sau","19:45",1,"Khoe Nhà Mình","Cau chuyen gia dinh","Bữa cơm nhà mình hôm nay","Anh/video + cau chuyen","Dang anh that kem 1 cau chuyen","T0","CARE-3","THINH_VUONG"],[10,"2026-11-14","Thu Bay","08:00",0,"Thực Chiến","Thuc hanh co huong dan","Bài tập: lập kế hoạch dẫn dắt một người","Bai tap + mau dien","Nop bai tren web app truoc Chu nhat","T1","CARE-2","NHAN_BAN"],[10,"2026-11-14","Thu Bay","08:00",1,"Gia Đình Chơi Cùng Nhau","Hoat dong gia dinh","Cả nhà cùng làm một dự án nhỏ","Huong dan tro choi 15 phut","Choi va dang anh/video","T1","CARE-2","THINH_VUONG"],[10,"2026-11-14","Thu Bay","11:45",0,"Bai nhe","Nhan thuc & tu duy","Điều ai cũng khuyên nhưng có thể sai với bạn","Goc nhin nguoc","Tra loi 1 dong","T0","CARE-1","NHAN_BAN"],[10,"2026-11-15","Chu Nhat","11:45",0,"Bai nhe","Moi goi hanh dong","Buổi định hướng nhóm nhỏ tuần này còn chỗ","Nhac buoi dinh huong","Tra loi 1 dong","T0","CARE-1","NHAN_BAN"],[10,"2026-11-15","Chu Nhat","21:00",0,"Tổng Kết & Vinh Danh","Moi goi hanh dong","Tổ ấm nào gắn kết nhất tuần qua?","Bang vinh danh + 1 loi moi","Loi moi duy nhat trong tuan","T2","CARE-3","NHAN_BAN"],[10,"2026-11-15","Chu Nhat","21:00",1,"Bảng Vinh Danh Gia Đình","Thi dua & vinh danh","Vinh danh gia đình cho đi nhiều nhất","Bang xep hang 4 bang dau","Co vu it nhat 3 gia dinh","T0","CARE-3","THINH_VUONG"],[11,"2026-11-16","Thu Hai","05:45",0,"Khởi Nguyên","Ket noi & nghi thuc","Bạn đang giữ điều gì đáng lẽ nên chia sẻ?","Bai check-in 3 dong","Viet 3 dong cam ket tuan","T0","CARE-2","NHAN_BAN"],[11,"2026-11-16","Thu Hai","11:45",0,"Bai nhe","Nhan thuc & tu duy","Một câu để mang theo hôm nay","Anh trich dan co ngu canh","Tra loi 1 dong","T0","CARE-1","NHAN_BAN"],[11,"2026-11-16","Thu Hai","11:45",1,"Bai nhe","Ky nang cha me - vo chong","Nhà bạn xử lý thế nào khi hai đứa tranh nhau đồ chơi?","Cau hoi 1 dong","Tra loi 1 dong","T0","CARE-1","THINH_VUONG"],[11,"2026-11-16","Thu Hai","19:45",1,"Nhiệm Vụ Gia Đình Tuần","Hoat dong gia dinh","Nhiệm vụ tuần: dọn một góc nhà cùng nhau","Bai nhiem vu + cach cham diem","Binh luan Ma gia dinh + cam ket","T0","CARE-3","THINH_VUONG"],[11,"2026-11-17","Thu Ba","11:45",0,"Bai nhe","Bang chung & cau chuyen","Hậu trường: một buổi làm việc của đội GITA365","Hau truong","Tra loi 1 dong","T0","CARE-1","NHAN_BAN"],[11,"2026-11-17","Thu Ba","11:45",1,"Bai nhe","Thi dua & vinh danh","Bảng xếp hạng giữa tuần: nhà bạn đang ở đâu?","Nhac bang xep hang","Tra loi 1 dong","T0","CARE-1","THINH_VUONG"],[11,"2026-11-17","Thu Ba","17:30",1,"Bàn Ăn Yêu Thương","Hoat dong gia dinh","Câu hỏi bàn ăn: mười năm nữa nhà mình thế nào?","Cau hoi ban an + anh mam com","Chup anh mam com va ke lai","T0","CARE-2","THINH_VUONG"],[11,"2026-11-17","Thu Ba","19:45",0,"Giải Mã","Nhan thuc & tu duy","Vì sao giúp người khác lại làm bạn mạnh lên?","Bai dai + so do","Tai cong cu tren web app","T1","CARE-3","NHAN_BAN"],[11,"2026-11-18","Thu Tu","05:45",0,"Cho Là Nhận","Thuc hanh co huong dan","Mời một người bạn đang cần cộng đồng này","Thu thach trong ngay","Bao lai da giup ai, viec gi","T0","CARE-2","NHAN_BAN"],[11,"2026-11-18","Thu Tu","11:45",0,"Bai nhe","Nhan thuc & tu duy","Trả lời một câu hỏi thật của thành viên","Tra loi cau hoi that","Tra loi 1 dong","T0","CARE-1","NHAN_BAN"],[11,"2026-11-18","Thu Tu","11:45",1,"Bai nhe","Moi nhan cong cu tang 1","Tặng cả nhà bộ 30 câu hỏi bàn ăn","Moi nhan bo cong cu tang 1","Tra loi 1 dong","T0","CARE-1","THINH_VUONG"],[11,"2026-11-18","Thu Tu","19:45",1,"Việc Tử Tế Của Gia Đình","Cau chuyen gia dinh","Chia sẻ một kinh nghiệm nuôi con cho nhà khác","Ke lai 3 dong","Ke viec tu te va gan the mot gia dinh khac","T0","CARE-2","THINH_VUONG"],[11,"2026-11-19","Thu Nam","11:45",0,"Bai nhe","Thuc hanh co huong dan","Thử ngay 5 phút: viết ra ba điều đang chiếm đầu bạn","Thu ngay 5 phut","Tra loi 1 dong","T0","CARE-1","NHAN_BAN"],[11,"2026-11-19","Thu Nam","20:00",0,"Hỏi & Đáp Cùng Cố Vấn","Ket noi & nghi thuc","Xây một đội nhóm tin nhau","Livestream 30-45 phut","Dat cau hoi truoc gio live","T2","CARE-3","NHAN_BAN"],[11,"2026-11-19","Thu Nam","20:00",1,"Cha Mẹ Tỉnh Thức","Ky nang cha me - vo chong","Nói chuyện với con tuổi dậy thì","Bai ky nang + kich ban noi","Thu toi nay va ke lai","T1","CARE-3","THINH_VUONG"],[11,"2026-11-20","Thu Sau","11:45",0,"Bai nhe","Bang chung & cau chuyen","Sai lầm tôi từng trả giá đắt","Sai lam cua toi","Tra loi 1 dong","T0","CARE-1","NHAN_BAN"],[11,"2026-11-20","Thu Sau","19:45",0,"Bằng Chứng","Bang chung & cau chuyen","Chuyện của một đại sứ GITA365","Cau chuyen chuyen hoa (UGC)","Ke cau chuyen cua ban","T1","CARE-3","NHAN_BAN"],[11,"2026-11-20","Thu Sau","19:45",1,"Khoe Nhà Mình","Cau chuyen gia dinh","Ba thế hệ trong một khung hình","Anh/video + cau chuyen","Dang anh that kem 1 cau chuyen","T0","CARE-3","THINH_VUONG"],[11,"2026-11-21","Thu Bay","08:00",0,"Thực Chiến","Thuc hanh co huong dan","Bài tập: ba việc bạn có thể trao lại","Bai tap + mau dien","Nop bai tren web app truoc Chu nhat","T1","CARE-2","NHAN_BAN"],[11,"2026-11-21","Thu Bay","08:00",1,"Gia Đình Chơi Cùng Nhau","Hoat dong gia dinh","Ngày hội nhỏ tại nhà","Huong dan tro choi 15 phut","Choi va dang anh/video","T1","CARE-2","THINH_VUONG"],[11,"2026-11-21","Thu Bay","11:45",0,"Bai nhe","Nhan thuc & tu duy","Câu hỏi nhanh: khó nhất với bạn là bắt đầu hay duy trì?","Cau hoi 1 dong","Tra loi 1 dong","T0","CARE-1","NHAN_BAN"],[11,"2026-11-22","Chu Nhat","11:45",0,"Bai nhe","Moi goi hanh dong","Bộ công cụ tuần này đang nằm ở đâu?","Nhac tai nguyen tang 1","Tra loi 1 dong","T0","CARE-1","NHAN_BAN"],[11,"2026-11-22","Chu Nhat","21:00",0,"Tổng Kết & Vinh Danh","Moi goi hanh dong","Ba câu chuyện đáng lan tỏa","Bang vinh danh + 1 loi moi","Loi moi duy nhat trong tuan","T2","CARE-3","NHAN_BAN"],[11,"2026-11-22","Chu Nhat","21:00",1,"Bảng Vinh Danh Gia Đình","Thi dua & vinh danh","Kỷ yếu tuần: những khoảnh khắc đẹp nhất","Bang xep hang 4 bang dau","Co vu it nhat 3 gia dinh","T0","CARE-3","THINH_VUONG"],[12,"2026-11-23","Thu Hai","05:45",0,"Khởi Nguyên","Ket noi & nghi thuc","Đặt mục tiêu cho người khác, không chỉ cho mình","Bai check-in 3 dong","Viet 3 dong cam ket tuan","T0","CARE-2","NHAN_BAN"],[12,"2026-11-23","Thu Hai","11:45",0,"Bai nhe","Nhan thuc & tu duy","Bình chọn: bạn hợp với buổi sáng hay buổi tối?","Binh chon A/B","Tra loi 1 dong","T0","CARE-1","NHAN_BAN"],[12,"2026-11-23","Thu Hai","11:45",1,"Bai nhe","Ky nang cha me - vo chong","Bình chọn: cuối tuần nhà bạn thích ở nhà hay đi chơi?","Binh chon A/B","Tra loi 1 dong","T0","CARE-1","THINH_VUONG"],[12,"2026-11-23","Thu Hai","19:45",1,"Nhiệm Vụ Gia Đình Tuần","Hoat dong gia dinh","Nhiệm vụ tuần: viết ra nếp nhà mình muốn giữ","Bai nhiem vu + cach cham diem","Binh luan Ma gia dinh + cam ket","T0","CARE-3","THINH_VUONG"],[12,"2026-11-24","Thu Ba","11:45",0,"Bai nhe","Bang chung & cau chuyen","Một câu của thành viên khiến cả nhóm dừng lại","Anh trich dan tu thanh vien","Tra loi 1 dong","T0","CARE-1","NHAN_BAN"],[12,"2026-11-24","Thu Ba","11:45",1,"Bai nhe","Thi dua & vinh danh","Chào những gia đình mới đăng ký Mã gia đình tuần này","Goi ten gia dinh moi","Tra loi 1 dong","T0","CARE-1","THINH_VUONG"],[12,"2026-11-24","Thu Ba","17:30",1,"Bàn Ăn Yêu Thương","Hoat dong gia dinh","Câu hỏi bàn ăn: điều gì đáng để nhà mình giữ mãi?","Cau hoi ban an + anh mam com","Chup anh mam com va ke lai","T0","CARE-2","THINH_VUONG"],[12,"2026-11-24","Thu Ba","19:45",0,"Giải Mã","Nhan thuc & tu duy","Di sản bắt đầu từ một thói quen được truyền lại","Bai dai + so do","Tai cong cu tren web app","T1","CARE-3","NHAN_BAN"],[12,"2026-11-25","Thu Tu","05:45",0,"Cho Là Nhận","Thuc hanh co huong dan","Nhận đỡ đầu một Tổ ấm 6","Thu thach trong ngay","Bao lai da giup ai, viec gi","T0","CARE-2","NHAN_BAN"],[12,"2026-11-25","Thu Tu","11:45",0,"Bai nhe","Ket noi & nghi thuc","Chào mừng những người mới của tuần","Chao mung nguoi moi","Tra loi 1 dong","T0","CARE-1","NHAN_BAN"],[12,"2026-11-25","Thu Tu","11:45",1,"Bai nhe","Moi nhan cong cu tang 1","Bộ 12 trò chơi gắn kết cha mẹ - con cái đã có trên web app","Moi nhan bo cong cu tang 1","Tra loi 1 dong","T0","CARE-1","THINH_VUONG"],[12,"2026-11-25","Thu Tu","19:45",1,"Việc Tử Tế Của Gia Đình","Cau chuyen gia dinh","Quỹ Cho là nhận: nhà mình góp gì?","Ke lai 3 dong","Ke viec tu te va gan the mot gia dinh khac","T0","CARE-2","THINH_VUONG"],[12,"2026-11-26","Thu Nam","11:45",0,"Bai nhe","Thuc hanh co huong dan","Thử ngay 5 phút: gọi cho một người bạn đang nghĩ tới","Thu ngay 5 phut","Tra loi 1 dong","T0","CARE-1","NHAN_BAN"],[12,"2026-11-26","Thu Nam","20:00",0,"Hỏi & Đáp Cùng Cố Vấn","Ket noi & nghi thuc","Sống có ảnh hưởng mà không mất mình","Livestream 30-45 phut","Dat cau hoi truoc gio live","T2","CARE-3","NHAN_BAN"],[12,"2026-11-26","Thu Nam","20:00",1,"Cha Mẹ Tỉnh Thức","Ky nang cha me - vo chong","Truyền nếp nhà mà không áp đặt","Bai ky nang + kich ban noi","Thu toi nay va ke lai","T1","CARE-3","THINH_VUONG"],[12,"2026-11-27","Thu Sau","11:45",0,"Bai nhe","Bang chung & cau chuyen","Trước và sau: ba mươi ngày của một thành viên","Truoc va sau","Tra loi 1 dong","T0","CARE-1","NHAN_BAN"],[12,"2026-11-27","Thu Sau","19:45",0,"Bằng Chứng","Bang chung & cau chuyen","Một câu nói đã đổi hướng cả nhà tôi","Cau chuyen chuyen hoa (UGC)","Ke cau chuyen cua ban","T1","CARE-3","NHAN_BAN"],[12,"2026-11-27","Thu Sau","19:45",1,"Khoe Nhà Mình","Cau chuyen gia dinh","Điều nhà bạn tự hào nhất","Anh/video + cau chuyen","Dang anh that kem 1 cau chuyen","T0","CARE-3","THINH_VUONG"],[12,"2026-11-28","Thu Bay","08:00",0,"Thực Chiến","Thuc hanh co huong dan","Bài tập: bản đồ ảnh hưởng của bạn","Bai tap + mau dien","Nop bai tren web app truoc Chu nhat","T1","CARE-2","NHAN_BAN"],[12,"2026-11-28","Thu Bay","08:00",1,"Gia Đình Chơi Cùng Nhau","Hoat dong gia dinh","Lập cây gia phả cùng con","Huong dan tro choi 15 phut","Choi va dang anh/video","T1","CARE-2","THINH_VUONG"],[12,"2026-11-28","Thu Bay","11:45",0,"Bai nhe","Nhan thuc & tu duy","Điều ai cũng khuyên nhưng có thể sai với bạn","Goc nhin nguoc","Tra loi 1 dong","T0","CARE-1","NHAN_BAN"],[12,"2026-11-29","Chu Nhat","11:45",0,"Bai nhe","Moi goi hanh dong","Buổi định hướng nhóm nhỏ tuần này còn chỗ","Nhac buoi dinh huong","Tra loi 1 dong","T0","CARE-1","NHAN_BAN"],[12,"2026-11-29","Chu Nhat","21:00",0,"Tổng Kết & Vinh Danh","Moi goi hanh dong","Khép mùa: chúng ta đã cùng nhau đi tới đâu","Bang vinh danh + 1 loi moi","Loi moi duy nhat trong tuan","T2","CARE-3","NHAN_BAN"],[12,"2026-11-29","Chu Nhat","21:00",1,"Bảng Vinh Danh Gia Đình","Thi dua & vinh danh","Khép mùa và mở mùa mới","Bang xep hang 4 bang dau","Co vu it nhat 3 gia dinh","T0","CARE-3","THINH_VUONG"]];
+</script>
+<script>
 (function(){
-  var links = Array.prototype.slice.call(document.querySelectorAll('.rail a'));
-  var map = {};
-  links.forEach(function(a){
-    var el = document.querySelector(a.getAttribute('href'));
-    if (el) map[el.id] = a;
+"use strict";
+var $=function(s,r){return (r||document).querySelector(s)};
+var $$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+var vi=function(n){return Math.round(n).toLocaleString('vi-VN')};
+var gon=function(n){ // gon so lon
+  if(n>=1e6) return (n/1e6).toFixed(n>=1e7?0:1).replace('.',',')+' tr';
+  if(n>=1e3) return (n/1e3).toFixed(n>=1e4?0:1).replace('.',',')+' ng';
+  return vi(n);
+};
+
+/* ---------------- TABS ---------------- */
+$$('.tab').forEach(function(t){
+  t.addEventListener('click',function(){
+    $$('.tab').forEach(function(x){x.setAttribute('aria-selected','false')});
+    t.setAttribute('aria-selected','true');
+    $$('.panel').forEach(function(p){p.hidden = p.dataset.panel!==t.dataset.tab});
+    window.scrollTo({top:0,behavior:'smooth'});
   });
-  var obs = new IntersectionObserver(function(entries){
-    entries.forEach(function(e){
-      if (!e.isIntersecting) return;
-      links.forEach(function(a){ a.classList.remove('on'); });
-      var a = map[e.target.id];
-      if (a) a.classList.add('on');
+});
+
+/* ---------------- 02 MO HINH KHA THI ---------------- */
+var P={base:800,capg:9,k:45,eng:30,churn:20,rej:25,tam:8,m0:500};
+var PRESETS={
+  coso:{base:800,capg:9,k:45,eng:30,churn:20,rej:25,tam:8,m0:500},
+  b:   {base:1400,capg:11,k:55,eng:32,churn:18,rej:25,tam:12,m0:500},
+  a:   {base:2600,capg:16,k:75,eng:30,churn:20,rej:22,tam:20,m0:500},
+  yeu: {base:800,capg:9,k:12,eng:8,churn:55,rej:5,tam:8,m0:500}
+};
+var GOALS={
+  a:[{m:6,v:1000,l:'6 tháng'},{m:12,v:10000,l:'1 năm'},{m:24,v:100000,l:'2 năm'},{m:36,v:1000000,l:'3 năm'},{m:60,v:1000000,l:'5 năm · duy trì'}],
+  b:[{m:6,v:1000,l:'6 tháng'},{m:12,v:10000,l:'1 năm'},{m:24,v:50000,l:'2 năm'},{m:36,v:200000,l:'3 năm'},{m:60,v:1000000,l:'5 năm'}]
+};
+var goalSet='b';
+
+function sim(p){
+  var m=p.m0, out=[], tam=p.tam*1e6;
+  for(var t=1;t<=60;t++){
+    var mam=m*(p.eng/100);
+    var s=Math.max(0,1-m/tam);
+    var req=p.base*Math.pow(1+p.capg/100,t-1)+mam*(p.k/100);
+    var acc=req*(1-p.rej/100)*s;
+    m=m*(1-p.churn/1000)+acc;
+    out.push({t:t,tong:m,mam:m*(p.eng/100),moi:acc});
+  }
+  return out;
+}
+
+/* --- chart --- */
+var NS='http://www.w3.org/2000/svg';
+function el(n,a){var e=document.createElementNS(NS,n);for(var k in a)e.setAttribute(k,a[k]);return e}
+var CW=920,CH=330,ML=54,MR=68,MT=16,MB=34;
+var PW=CW-ML-MR, PH=CH-MT-MB;
+
+function drawChart(data){
+  var host=$('#chart'); host.innerHTML='';
+  var maxv=Math.max(1.2e6, data[59].tong*1.15);
+  var lo=Math.log10(100), hi=Math.log10(maxv);
+  var Y=function(v){return MT+PH-(Math.log10(Math.max(v,100))-lo)/(hi-lo)*PH};
+  var X=function(t){return ML+(t-1)/59*PW};
+  var svg=el('svg',{viewBox:'0 0 '+CW+' '+CH,role:'img','aria-label':'Dự phóng 60 tháng'});
+
+  var decades=[100,1000,10000,100000,1000000,10000000];
+  decades.forEach(function(d){
+    if(d>maxv*1.05) return;
+    var y=Y(d);
+    svg.appendChild(el('line',{x1:ML,x2:ML+PW,y1:y,y2:y,stroke:'var(--hair)','stroke-width':1}));
+    var tx=el('text',{x:ML-9,y:y+4,'text-anchor':'end','font-size':11,fill:'var(--faint)'});
+    tx.textContent=gon(d); svg.appendChild(tx);
+  });
+  [6,12,24,36,48,60].forEach(function(t){
+    var x=X(t);
+    svg.appendChild(el('line',{x1:x,x2:x,y1:MT,y2:MT+PH,stroke:'var(--hair)','stroke-width':1,'stroke-dasharray':'2 4'}));
+    var tx=el('text',{x:x,y:CH-11,'text-anchor':'middle','font-size':11,fill:'var(--faint)'});
+    tx.textContent='th '+t; svg.appendChild(tx);
+  });
+
+  function path(key,color){
+    var d=data.map(function(r,i){return (i?'L':'M')+X(r.t).toFixed(1)+' '+Y(r[key]).toFixed(1)}).join(' ');
+    svg.appendChild(el('path',{d:d,fill:'none',stroke:color,'stroke-width':2.4,'stroke-linejoin':'round','stroke-linecap':'round'}));
+  }
+  path('tong','var(--s1)');
+  path('mam','var(--s2)');
+
+  GOALS[goalSet].forEach(function(g){
+    var x=X(g.m), y=Y(g.v);
+    svg.appendChild(el('circle',{cx:x,cy:y,r:5.5,fill:'var(--surface)',stroke:'var(--muted)','stroke-width':2}));
+  });
+
+  [['tong','var(--s1)','Tổng thành viên'],['mam','var(--s2)','Tương tác thật']].forEach(function(s){
+    var last=data[59][s[0]];
+    svg.appendChild(el('circle',{cx:X(60),cy:Y(last),r:4,fill:s[1],stroke:'var(--surface)','stroke-width':2}));
+    var t1=el('text',{x:X(60)+9,y:Y(last)-1,'font-size':11.5,'font-weight':700,fill:s[1]});
+    t1.textContent=gon(last); svg.appendChild(t1);
+  });
+
+  var cross=el('line',{x1:0,x2:0,y1:MT,y2:MT+PH,stroke:'var(--muted)','stroke-width':1,opacity:0});
+  svg.appendChild(cross);
+  var d1=el('circle',{r:4.5,fill:'var(--s1)',stroke:'var(--surface)','stroke-width':2,opacity:0});
+  var d2=el('circle',{r:4.5,fill:'var(--s2)',stroke:'var(--surface)','stroke-width':2,opacity:0});
+  svg.appendChild(d1); svg.appendChild(d2);
+  var hit=el('rect',{x:ML,y:MT,width:PW,height:PH,fill:'transparent'});
+  svg.appendChild(hit);
+  host.appendChild(svg);
+
+  var tip=$('#tip'), wrap=$('.plotwrap');
+  function move(ev){
+    var r=svg.getBoundingClientRect();
+    var px=(ev.clientX-r.left)/r.width*CW;
+    var t=Math.round((px-ML)/PW*59+1);
+    if(t<1)t=1; if(t>60)t=60;
+    var row=data[t-1];
+    cross.setAttribute('x1',X(t)); cross.setAttribute('x2',X(t)); cross.setAttribute('opacity',.45);
+    d1.setAttribute('cx',X(t)); d1.setAttribute('cy',Y(row.tong)); d1.setAttribute('opacity',1);
+    d2.setAttribute('cx',X(t)); d2.setAttribute('cy',Y(row.mam)); d2.setAttribute('opacity',1);
+    tip.innerHTML='<b>Tháng '+t+'</b>'+
+      '<div class="r"><span><i style="background:var(--s1)"></i>Tổng thành viên</span><span>'+vi(row.tong)+'</span></div>'+
+      '<div class="r"><span><i style="background:var(--s2)"></i>Tương tác thật</span><span>'+vi(row.mam)+'</span></div>'+
+      '<div class="r"><span style="color:var(--muted)">Người mới tháng này</span><span>'+vi(row.moi)+'</span></div>';
+    tip.style.opacity=1;
+    var wr=wrap.getBoundingClientRect();
+    var lx=ev.clientX-wr.left+14;
+    if(lx>wr.width-180) lx=ev.clientX-wr.left-190;
+    tip.style.left=lx+'px';
+    tip.style.top=Math.max(0,ev.clientY-wr.top-70)+'px';
+  }
+  svg.addEventListener('mousemove',move);
+  svg.addEventListener('mouseleave',function(){
+    tip.style.opacity=0; cross.setAttribute('opacity',0);
+    d1.setAttribute('opacity',0); d2.setAttribute('opacity',0);
+  });
+}
+
+function drawVerdicts(data){
+  var host=$('#verdicts'); host.innerHTML='';
+  GOALS[goalSet].forEach(function(g){
+    var proj=data[g.m-1].mam;
+    var ratio=proj/g.v;
+    var cls = ratio>=1 ? 'p-good' : (ratio>=0.7 ? 'p-warn' : 'p-bad');
+    var txt = ratio>=1 ? 'Đạt · vượt '+Math.round((ratio-1)*100)+'%'
+            : (ratio>=0.7 ? 'Sát ngưỡng · thiếu '+Math.round((1-ratio)*100)+'%'
+                          : 'Chưa tới · thiếu '+Math.round((1-ratio)*100)+'%');
+    var row=document.createElement('div');
+    row.className='vd';
+    row.innerHTML='<div class="m"><b>'+g.l+'</b><span>mục tiêu '+vi(g.v)+' tương tác thật mỗi tháng</span></div>'+
+      '<div class="rt"><span class="proj" style="color:'+(ratio>=1?'var(--good)':(ratio>=0.7?'var(--warn)':'var(--bad)'))+'">'+gon(proj)+'</span>'+
+      '<span class="pill '+cls+'">'+txt+'</span></div>';
+    host.appendChild(row);
+  });
+}
+
+function drawNeed(data){
+  var host=$('#needrows'); host.innerHTML='';
+  [6,12,24,36,60].forEach(function(m){
+    var r=data[m-1];
+    var mod=Math.ceil(r.tong/2000), care=Math.ceil(r.moi/80),
+        to=Math.ceil(r.mam/6), ds=Math.ceil(to/30), ve=Math.max(1,Math.ceil(r.tong/50000));
+    var tr=document.createElement('tr');
+    tr.innerHTML='<td><b>Tháng '+m+'</b></td><td class="n">'+vi(r.tong)+'</td><td class="n">'+vi(r.mam)+'</td>'+
+      '<td class="n">'+vi(r.moi)+'</td><td class="n">'+vi(mod)+'</td><td class="n">'+vi(care)+'</td>'+
+      '<td class="n">'+vi(to)+'</td><td class="n">'+vi(ds)+'</td><td class="n">'+vi(ve)+'</td>';
+    host.appendChild(tr);
+  });
+}
+
+function fmtP(id,v){
+  if(id==='base') return vi(v);
+  if(id==='m0') return vi(v);
+  if(id==='capg'||id==='eng'||id==='rej') return v+'%';
+  if(id==='churn') return (v/10).toFixed(1).replace('.',',')+'%';
+  if(id==='k') return (v/100).toFixed(2).replace('.',',');
+  if(id==='tam') return v+' triệu';
+  return v;
+}
+function render(){
+  var data=sim(P);
+  drawChart(data); drawVerdicts(data); drawNeed(data);
+}
+['base','capg','k','eng','churn','rej','tam','m0'].forEach(function(id){
+  var inp=$('#s_'+id);
+  inp.addEventListener('input',function(){
+    P[id]=+inp.value; $('#v_'+id).textContent=fmtP(id,+inp.value);
+    $$('.preset').forEach(function(b){b.setAttribute('aria-pressed','false')});
+    render();
+  });
+});
+$$('.preset').forEach(function(b){
+  b.addEventListener('click',function(){
+    $$('.preset').forEach(function(x){x.setAttribute('aria-pressed','false')});
+    b.setAttribute('aria-pressed','true');
+    var p=PRESETS[b.dataset.preset];
+    for(var k in p){P[k]=p[k]; $('#s_'+k).value=p[k]; $('#v_'+k).textContent=fmtP(k,p[k]);}
+    goalSet = b.dataset.preset==='a' ? 'a' : 'b';
+    $$('[data-goal]').forEach(function(x){x.setAttribute('aria-pressed', x.dataset.goal===goalSet?'true':'false')});
+    render();
+  });
+});
+$('#verdicts').insertAdjacentHTML('beforebegin',
+  '<div class="filters" style="margin-top:14px"><span class="small">Thang mốc</span>'+
+  '<div class="seg" role="group" aria-label="Thang mốc">'+
+  '<button data-goal="b" aria-pressed="true">B · bền vững</button>'+
+  '<button data-goal="a" aria-pressed="false">A · vượt tốc</button></div>'+
+  '<span class="small">B dời mốc 100 nghìn và 1 triệu về năm 3 và năm 5.</span></div>');
+$$('[data-goal]').forEach(function(b){
+  b.addEventListener('click',function(){
+    goalSet=b.dataset.goal;
+    $$('[data-goal]').forEach(function(x){x.setAttribute('aria-pressed', x===b?'true':'false')});
+    render();
+  });
+});
+render();
+
+/* ---------------- 03 LICH DANG ---------------- */
+var THU=['Thu Hai','Thu Ba','Thu Tu','Thu Nam','Thu Sau','Thu Bay','Chu Nhat'];
+var THUVN=['Thứ Hai','Thứ Ba','Thứ Tư','Thứ Năm','Thứ Sáu','Thứ Bảy','Chủ nhật'];
+var THANG={NEN_MONG:'Nền móng',NANG_LUC:'Năng lực',NHAN_BAN:'Nhân bản',KET_NOI:'Kết nối',NUOI_DAY:'Nuôi dạy',THINH_VUONG:'Thịnh vượng'};
+var TRUCOT={'Nhan thuc & tu duy':'Nhận thức & tư duy','Thuc hanh co huong dan':'Thực hành có hướng dẫn','Bang chung & cau chuyen':'Bằng chứng & câu chuyện','Ket noi & nghi thuc':'Kết nối & nghi thức','Moi goi hanh dong':'Mời gọi hành động','Hoat dong gia dinh':'Hoạt động gia đình','Thi dua & vinh danh':'Thi đua & vinh danh','Cau chuyen gia dinh':'Câu chuyện gia đình','Ky nang cha me - vo chong':'Kỹ năng cha mẹ – vợ chồng','Moi nhan cong cu tang 1':'Mời nhận công cụ tầng 1'};
+var CARELV={'CARE-3':'Chăm sóc đầy đủ · 9 mốc','CARE-2':'Chăm sóc rút gọn · 5 mốc','CARE-1':'Chăm sóc nhẹ · 2 mốc'};
+var TANG={T0:'Tầng 0 · cộng đồng',T1:'Tầng 1 · web app',T2:'Tầng 2 · khóa trực tuyến'};
+var LOP6=[['1','Móc một dòng — câu đầu phải khiến người ta dừng lại'],['2','Bối cảnh thật — có tên, có nghề, có tình huống, đã xin phép'],['3','Giá trị cho đi — ba tới năm ý dùng được ngay'],['4','Cách làm hôm nay — một việc nhỏ trong mười phút'],['5','Câu hỏi mở — trả lời được trong một dòng'],['6','Ký hiệu nghi thức và gợi ý bước tiếp theo']];
+
+var grp=0, wk=1;
+var sel=$('#wk');
+for(var w=1;w<=12;w++){var o=document.createElement('option');o.value=w;o.textContent='Tuần '+w;sel.appendChild(o)}
+sel.addEventListener('change',function(){wk=+sel.value;drawWeek()});
+$$('[data-grp]').forEach(function(b){
+  b.addEventListener('click',function(){
+    grp=+b.dataset.grp;
+    $$('[data-grp]').forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});
+    drawWeek();
+  });
+});
+
+function drawWeek(){
+  var rows=LICH.filter(function(r){return r[4]===grp && r[0]===wk});
+  $('#wkinfo').textContent=rows.length+' bài · chủ đề tháng: '+(THANG[rows[0][12]]||'');
+  var host=$('#week'); host.innerHTML='';
+  THU.forEach(function(th,i){
+    var day=rows.filter(function(r){return r[2]===th}).sort(function(a,b){return a[3]<b[3]?-1:1});
+    var d=document.createElement('div'); d.className='day';
+    var dd=day.length?day[0][1].slice(8)+'/'+day[0][1].slice(5,7):'';
+    var h='<div class="dh"><span class="dn">'+THUVN[i]+'</span><span class="dd">'+dd+'</span></div>';
+    day.forEach(function(r){
+      var light=r[5]==='Bai nhe';
+      h+='<button class="slot'+(light?' light':'')+'" data-id="'+LICH.indexOf(r)+'">'+
+         '<span class="st">'+r[3]+' <span class="sn">'+(light?'Bài nhẹ':r[5])+'</span></span>'+
+         '<span class="sx">'+r[7]+'</span></button>';
     });
-  }, { rootMargin: '-10% 0px -75% 0px', threshold: 0 });
-  Object.keys(map).forEach(function(id){ obs.observe(document.getElementById(id)); });
+    d.innerHTML=h; host.appendChild(d);
+  });
+  $$('.slot',host).forEach(function(b){
+    b.addEventListener('click',function(){
+      $$('.slot').forEach(function(x){x.setAttribute('aria-pressed','false')});
+      b.setAttribute('aria-pressed','true');
+      showPost(LICH[+b.dataset.id]);
+    });
+  });
+  // ti le tru cot
+  var mix={};
+  rows.forEach(function(r){mix[r[6]]=(mix[r[6]]||0)+1});
+  var keys=Object.keys(mix).sort(function(a,b){return mix[b]-mix[a]});
+  var mb=$('#mixbar'); mb.removeAttribute('class'); mb.style.marginTop='18px';
+  mb.innerHTML='<div style="font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:8px">Tỉ lệ trụ cột nội dung của tuần '+wk+'</div>'+
+    keys.map(function(k){
+      var pct=Math.round(mix[k]/rows.length*100);
+      return '<div style="display:grid;grid-template-columns:minmax(120px,190px) 1fr 52px;gap:12px;align-items:center;font-size:12.5px;margin-bottom:5px">'+
+        '<span style="color:var(--ink-2)">'+(TRUCOT[k]||k)+'</span>'+
+        '<span style="height:8px;background:var(--sunk);border-radius:4px;overflow:hidden;display:block"><span style="display:block;height:100%;width:'+pct+'%;background:var(--s1);border-radius:4px"></span></span>'+
+        '<span class="num" style="color:var(--muted);text-align:right">'+mix[k]+' bài</span></div>';
+    }).join('');
+  $('#mixlegend').innerHTML='<span>Chuẩn G1: nhận thức 25% · thực hành 25% · bằng chứng 20% · kết nối 15% · mời gọi 15%. Chuẩn G2: hoạt động 30% · thi đua 20% · câu chuyện 20% · kỹ năng 20% · mời công cụ 10%.</span>';
+  $('#postdetail').hidden=true;
+}
+
+function showPost(r){
+  var d=$('#postdetail'); d.hidden=false;
+  d.innerHTML='<div class="dt-head"><span class="tag t-j">'+(r[5]==='Bai nhe'?'Bài nhẹ':r[5])+'</span>'+
+    '<span class="tag t-a">'+(TANG[r[10]]||r[10])+'</span>'+
+    '<span class="tag t-l">'+(CARELV[r[11]]||r[11])+'</span></div>'+
+    '<h4>'+r[7]+'</h4>'+
+    '<dl class="kv"><dt>Ngày đăng</dt><dd>'+r[1]+' · '+r[3]+'</dd>'+
+    '<dt>Trụ cột</dt><dd>'+(TRUCOT[r[6]]||r[6])+'</dd>'+
+    '<dt>Định dạng</dt><dd>'+r[8]+'</dd>'+
+    '<dt>Lời mời</dt><dd>'+r[9]+'</dd>'+
+    '<dt>Chủ đề tháng</dt><dd>'+(THANG[r[12]]||r[12])+'</dd></dl>'+
+    '<div class="layers6"><div style="font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)">Khuôn viết sáu lớp</div>'+
+    LOP6.map(function(l){return '<div class="l6"><b>'+l[0]+'</b><span>'+l[1]+'</span></div>'}).join('')+
+    '</div>'+
+    '<p class="small" style="margin-top:14px">Liên kết không nằm trong bài — đặt ở bình luận đầu tiên và ghim trong 60 giây, kèm mã theo dõi để biết chính xác bài nào tạo ra tài khoản.</p>';
+  d.scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+drawWeek();
+
+/* ---------------- 04 GITA CARE ---------------- */
+var CARE=[
+ {w:'T−24 GIỜ',t:'Chuẩn bị',who:'Nội dung + Ops',hot:false,
+  d:['Duyệt bài theo khuôn sáu lớp, câu hỏi cuối phải trả lời được trong một dòng.','Soạn ba câu hỏi mồi khác nhau: một câu dễ, một câu chạm cảm xúc, một câu chuyên sâu.','Chọn năm tới tám thành viên sẽ gắn thẻ — mỗi người một lý do riêng, không gắn thẻ hàng loạt.','Viết sẵn bình luận chứa liên kết kèm mã theo dõi để ghim.','Phân công người trực sáu mươi phút vàng.','Ảnh 4:5 hoặc video dọc 9:16, chữ trên ảnh không quá bảy từ.'],
+  ok:'Đủ sáu lớp, đủ ba câu hỏi mồi, đã có tên người trực.'},
+ {w:'T0',t:'Đăng và ghim trong 60 giây',who:'Người trực',hot:false,
+  d:['Đăng đúng phút đã hẹn — đúng giờ là thứ tạo ra thói quen.','Trong 60 giây: đăng bình luận chứa liên kết rồi ghim ngay.','Không sửa bài trong 60 phút đầu; sai sót nhỏ thì đính chính ở bình luận.'],
+  ok:'Bình luận đã ghim trước phút thứ hai.'},
+ {w:'T+5 PHÚT',t:'Mồi',who:'Quản trị viên',hot:false,
+  d:['Bình luận câu hỏi mồi thứ nhất bằng giọng cá nhân, kể vì sao viết bài này.','Không dạy đời, không tóm tắt lại bài.'],
+  ok:'Có ít nhất một câu hỏi mở đang chờ người trả lời.'},
+ {w:'T+15 PHÚT',t:'Ba hạt giống',who:'Care Team',hot:false,
+  d:['Ba thành viên thật trả lời, mỗi người một góc: người vừa bắt đầu kể khó khăn; người đã làm được kể kết quả có số; người phản biện lành mạnh nêu một băn khoăn thật.','Mỗi bình luận hai tới năm dòng, kể trải nghiệm cá nhân.','Cấm: sao chép nội dung, khen bài viết, “hay quá ạ”.'],
+  ok:'Ba góc nhìn khác nhau, không câu nào giống câu nào.'},
+ {w:'T+30 → T+60 PHÚT',t:'Ba mươi phút vàng',who:'Người trực',hot:true,
+  d:['Luật sắt: 100% bình luận được trả lời trong ba mươi phút.','Mỗi trả lời theo công thức Ghi nhận – Hỏi sâu – Mở đường, và luôn kết bằng một câu hỏi.','Ghi nhận phải trích đúng chữ của họ, không khen chung chung.'],
+  ok:'Không còn bình luận nào chưa được trả lời.'},
+ {w:'T+2 GIỜ',t:'Nuôi',who:'Ops',hot:false,
+  d:['Đọc số liệu: tiếp cận, bình luận, tỉ lệ tương tác.','Dưới mười bình luận thì chẩn đoán theo bảng cứu bài, không bơm tương tác mù.','Gắn thẻ nhóm người đã chuẩn bị, kèm lý do riêng cho từng người.'],
+  ok:'Đã biết bài đang ở mức nào và vì sao.'},
+ {w:'T+6 GIỜ',t:'Ghim đỉnh',who:'Quản trị viên',hot:false,
+  d:['Chọn bình luận giá trị nhất, ghim lên đầu.','Trả lời bình luận đó thật kỹ, ba tới năm dòng — cả nhóm học được thế nào là bình luận đáng trân trọng.'],
+  ok:'Có một bình luận được ghim và trả lời sâu.'},
+ {w:'T+24 GIỜ',t:'Vòng hai',who:'Care Team',hot:false,
+  d:['Bình luận tổng hợp ba ý hay nhất của mọi người và bổ sung một ý mới.','Nhắn riêng năm tới mười người tương tác chất lượng.','Cộng điểm cho người đóng góp; đánh dấu người bộc lộ nỗi đau rõ ràng để mời vào tầng 1.'],
+  ok:'Đã nhắn riêng đủ số người và ghi vào sổ thành viên.'},
+ {w:'T+48 GIỜ → T+7 NGÀY',t:'Tái chế và tái sinh',who:'Nội dung',hot:false,
+  d:['Bình luận hay nhất, sau khi xin phép, trở thành một bài đăng mới.','Chuyển thành ảnh trích dẫn cho khung giờ trưa và đưa vào kho bằng chứng.','Bài xuất sắc quay lại ở định dạng khác sau một tuần.','Chốt số liệu, ghi một dòng bài học: điều gì tạo bình luận, điều gì làm bài chết.'],
+  ok:'Có ít nhất một nội dung mới sinh ra từ bài cũ.'}
+];
+var tl=$('#tl');
+CARE.forEach(function(c,i){
+  var li=document.createElement('li');
+  if(c.hot) li.className='hot';
+  li.innerHTML='<button class="tlb" data-i="'+i+'"'+(i===4?' aria-pressed="true"':'')+'>'+
+    '<span class="when">'+c.w+'</span><div class="what">'+c.t+'</div><div class="who">'+c.who+'</div></button>';
+  tl.appendChild(li);
+});
+function showCare(i){
+  var c=CARE[i];
+  $('#caredetail').innerHTML='<div class="dt-head"><span class="tag '+(c.hot?'t-l':'t-j')+'">'+c.w+'</span><span class="tag t-a">'+c.who+'</span></div>'+
+    '<h4>'+c.t+'</h4>'+
+    '<ul class="plain" style="margin-top:6px">'+c.d.map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul>'+
+    '<div style="margin-top:14px;padding-top:12px;border-top:1px solid var(--hair)"><span class="tag t-j">Tiêu chuẩn đạt</span><p style="margin-top:8px;font-size:14px;color:var(--ink-2)">'+c.ok+'</p></div>'+
+    (i===4 ? '<div class="thread">'+
+      '<div style="font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:10px">Ví dụ một luồng trong ba mươi phút vàng</div>'+
+      '<div class="msg"><div class="nm">Chị Hằng · thành viên mới</div>Em đọc mà thấy đúng quá. Nhà em tối nào cũng định ngồi nói chuyện với con mà rồi lại thôi, không đủ thời gian buổi tối.</div>'+
+      '<div class="msg reply"><div class="nm">Quỳnh <span class="rolechip">Người trực</span></div>Chỗ chị nói “không đủ thời gian buổi tối” là đúng thực tế nhất, và cũng là chỗ nhiều người ngại nói ra.<br>Em hỏi thêm chút: buổi tối nhà mình thường kẹt ở khung giờ nào ạ?<br>Nếu tiện, em gửi chị mẫu mười lăm phút tối mà nhà em đang dùng.<div class="gh">GHI NHẬN → HỎI SÂU → MỞ ĐƯỜNG</div></div>'+
+      '<div class="msg"><div class="nm">Chị Hằng</div>Kẹt nhất là từ bảy đến tám giờ, vừa dọn cơm vừa kèm bài. Chị xin mẫu đó với em.</div>'+
+      '<div class="msg reply"><div class="nm">Quỳnh <span class="rolechip">Người trực</span></div>Em gửi chị rồi ạ. Tối nay chị thử đúng một việc thôi: hỏi con một câu ở bàn ăn, chưa cần làm gì thêm. Mai chị kể lại cho cả nhà nghe với nhé.</div>'+
+      '</div>' : '');
+}
+$$('.tlb').forEach(function(b){
+  b.addEventListener('click',function(){
+    $$('.tlb').forEach(function(x){x.setAttribute('aria-pressed','false')});
+    b.setAttribute('aria-pressed','true');
+    showCare(+b.dataset.i);
+  });
+});
+showCare(4);
+
+/* ---------------- 05 CONG LOC ---------------- */
+var SIG=[
+ ['Tài khoản dưới 30 ngày tuổi',2,'auto'],
+ ['Dưới 50 bạn bè hoặc ẩn hoàn toàn danh sách bạn',1,'auto'],
+ ['Không có ảnh đại diện thật, hoặc ảnh lấy trên mạng',2,'auto'],
+ ['Không có bài đăng cá nhân nào trong sáu tháng',1,''],
+ ['Trả lời câu hỏi bằng một chữ, sao chép, hoặc bỏ trống',3,''],
+ ['Tên tài khoản chứa từ khóa bán hàng',3,''],
+ ['Trang cá nhân toàn nội dung bán hàng hoặc tuyển cộng tác viên',4,''],
+ ['Không có bạn chung nào với bất kỳ thành viên nào',1,''],
+ ['Đang ở nhiều nhóm bán hàng cùng lĩnh vực',2,''],
+ ['Có tên trong sổ đen của GITA365',10,'']
+];
+var sg=$('#signals');
+SIG.forEach(function(s,i){
+  var lab=document.createElement('label');
+  lab.className='sig';
+  lab.innerHTML='<input type="checkbox" data-p="'+s[1]+'">'+
+    '<span>'+s[0]+(s[2]==='auto'?' <span class="tag t-j" style="margin-left:6px">Tự động lọc</span>':'')+'</span>'+
+    '<span class="pt">+'+s[1]+'</span>';
+  sg.appendChild(lab);
+});
+function scoreGate(){
+  var total=0;
+  $$('#signals input').forEach(function(c){
+    c.closest('.sig').classList.toggle('on',c.checked);
+    if(c.checked) total+=+c.dataset.p;
+  });
+  $('#score').textContent=total;
+  var pct=Math.min(100,total/10*100);
+  var col = total>=4 ? 'var(--bad)' : (total>=2 ? 'var(--warn)' : 'var(--good)');
+  var f=$('#fill'); f.style.width=pct+'%'; f.style.background=col;
+  var v=$('#verdict'), a=$('#act');
+  if(total>=4){
+    v.textContent='Không duyệt'; v.style.background='var(--bad-wash)'; v.style.color='var(--bad)';
+    a.textContent='Từ chối yêu cầu. Nếu có dấu hiệu săn khách hoặc tên trong sổ đen thì chặn luôn, không cần cảnh cáo.';
+  }else if(total>=2){
+    v.textContent='Chuyển xét thủ công'; v.style.background='var(--warn-wash)'; v.style.color='var(--warn)';
+    a.textContent='Người kiểm duyệt xem trang cá nhân và câu trả lời. Nếu duyệt thì giữ trong vùng đệm bảy ngày, không nâng quyền đăng bài.';
+  }else{
+    v.textContent='Duyệt vào nhóm'; v.style.background='var(--good-wash)'; v.style.color='var(--good)';
+    a.textContent='Kích hoạt chuỗi chào mừng bảy ngày, ghi câu trả lời vào sổ thành viên, gắn thẻ theo mối quan tâm đã chọn.';
+  }
+}
+$$('#signals input').forEach(function(c){c.addEventListener('change',scoreGate)});
+scoreGate();
+
+/* ---------------- 06 THI DUA ---------------- */
+var BD=[
+ {ten:'Bảng Mầm',mo:'Gia đình có con dưới 6 tuổi',ds:[
+  ['Nhà Bống & Bo','GD-HN-0142',38,27,26],['Tổ ấm Minh An','GD-HCM-0311',36,24,27],
+  ['Nhà Cún Con','GD-DN-0087',34,26,22],['Gia đình Bảo Ngọc','GD-HP-0054',31,22,24],
+  ['Nhà Su Su','GD-CT-0129',29,20,21],['Tổ ấm Hạnh Phúc','GD-HN-0203',27,19,19]]},
+ {ten:'Bảng Chồi',mo:'Gia đình có con từ 6 đến 12 tuổi',ds:[
+  ['Nhà Ba Anh Em','GD-HCM-0448',40,29,28],['Gia đình Thanh Tâm','GD-HN-0517',37,28,25],
+  ['Nhà Cô Ba','GD-BD-0092',35,23,26],['Tổ ấm Sông Hàn','GD-DN-0175',33,24,22],
+  ['Nhà Nắng Mai','GD-NA-0061',30,21,23],['Gia đình Vạn Phúc','GD-HN-0388',28,22,18]]},
+ {ten:'Bảng Cây',mo:'Gia đình có con trên 12 tuổi',ds:[
+  ['Nhà Hai Bố Con','GD-HCM-0602',39,26,29],['Gia đình Đức Trí','GD-HN-0644',36,27,24],
+  ['Tổ ấm An Nhiên','GD-KH-0033',34,22,25],['Nhà Bên Sông','GD-TG-0118',31,23,21],
+  ['Gia đình Lộc Phát','GD-HP-0207',29,20,22],['Nhà Cuối Ngõ','GD-HN-0499',26,18,20]]},
+ {ten:'Bảng Cội',mo:'Gia đình nhiều thế hệ sống chung',ds:[
+  ['Nhà Ông Bà Tư','GD-BN-0021',41,30,30],['Tổ ấm Bốn Thế Hệ','GD-HN-0009',38,28,27],
+  ['Gia đình Cụ Mai','GD-TH-0076',35,25,26],['Nhà Ba Gian','GD-HD-0044',32,24,23],
+  ['Tổ ấm Đại Đồng','GD-HCM-0155',30,22,21],['Nhà Bà Nội','GD-QN-0067',27,19,20]]}
+];
+function drawLB(i){
+  var b=BD[i];
+  $('#bdinfo').textContent=b.mo+' · '+b.ds.length+' gia đình đang thi · tuần 7 mùa 1';
+  var host=$('#lb'); host.innerHTML='';
+  var rows=b.ds.map(function(d){return {n:d[0],m:d[1],a:d[2],b:d[3],c:d[4],t:d[2]+d[3]+d[4]}})
+                .sort(function(x,y){return y.t-x.t});
+  var max=rows[0].t;
+  rows.forEach(function(r,k){
+    var div=document.createElement('div');
+    div.className='lbr'+(k<3?' top'+(k+1):'');
+    div.innerHTML='<div class="rk">'+(k+1)+'</div>'+
+      '<div><div class="nm">'+r.n+'</div><div class="mc">'+r.m+' · chuyên cần '+r.a+' · lan tỏa '+r.b+' · chuyển hóa '+r.c+'</div></div>'+
+      '<div class="bars" title="Chuyên cần '+r.a+', lan tỏa '+r.b+', chuyển hóa '+r.c+'">'+
+        '<span style="background:var(--s1);width:'+(r.a/max*100)+'%"></span>'+
+        '<span style="background:var(--s2);width:'+(r.b/max*100)+'%"></span>'+
+        '<span style="background:var(--s3);width:'+(r.c/max*100)+'%"></span></div>'+
+      '<div class="tot">'+r.t+'</div>';
+    host.appendChild(div);
+  });
+}
+$$('[data-bd]').forEach(function(b){
+  b.addEventListener('click',function(){
+    $$('[data-bd]').forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});
+    drawLB(+b.dataset.bd);
+  });
+});
+drawLB(0);
+
+/* ---------------- 07 CHI SO ---------------- */
+var KPI=[
+ [ // G1
+  {n:'Tương tác thật trong tuần',v:'412',t:'trên 3.180 thành viên · 13,0%',s:'good',sp:[31,38,44,52,61,73,88,110,168,240,330,412],note:'ngưỡng ≥12%'},
+  {n:'Bình luận gốc trung bình mỗi bài chính',v:'23',t:'ngưỡng đạt ≥15',s:'good',sp:[6,8,9,12,14,15,17,18,19,21,22,23]},
+  {n:'Thời gian phản hồi trung bình',v:'19 phút',t:'ngưỡng ≤30 phút',s:'good',sp:[95,74,60,48,41,35,32,28,25,23,21,19]},
+  {n:'Người bình luận lần đầu trong tuần',v:'14',t:'ngưỡng ≥10',s:'good',sp:[2,3,5,6,7,9,8,11,12,13,12,14]},
+  {n:'Tài khoản web app tạo mới',v:'37',t:'cộng dồn 214 · mục tiêu quý 150',s:'good',sp:[0,2,5,9,14,18,21,25,28,31,34,37]},
+  {n:'Ghi danh khóa trực tuyến tầng 2',v:'6',t:'cộng dồn 23 · mục tiêu quý 20',s:'good',sp:[0,0,0,1,1,2,3,3,4,5,5,6]},
+  {n:'Tỉ lệ bài đạt chuẩn',v:'71%',t:'ngưỡng ≥70%',s:'warn',sp:[28,34,41,48,52,58,61,63,66,68,70,71]},
+  {n:'Rời nhóm trong tháng',v:'1,4%',t:'ngưỡng <2%',s:'good',sp:[3.1,2.9,2.7,2.4,2.2,2.0,1.9,1.8,1.7,1.6,1.5,1.4]},
+  {n:'Nick ảo lọt cổng · kiểm mẫu 50 hồ sơ',v:'2,0%',t:'ngưỡng <2% · sát ngưỡng',s:'warn',sp:[12,10,8,7,6,5,4,4,3,3,2,2]}
+ ],
+ [ // G2
+  {n:'Gia đình hoạt động trong tuần',v:'268',t:'trên 2.410 thành viên · 11,1%',s:'warn',sp:[18,25,33,44,58,71,96,124,158,196,232,268],note:'ngưỡng ≥12%'},
+  {n:'Bình luận gốc trung bình mỗi bài chính',v:'31',t:'ngưỡng đạt ≥15',s:'good',sp:[9,12,14,17,19,22,24,26,27,29,30,31]},
+  {n:'Thời gian phản hồi trung bình',v:'26 phút',t:'ngưỡng ≤30 phút',s:'good',sp:[110,88,72,63,55,48,42,38,34,31,28,26]},
+  {n:'Gia đình đăng ký Mã gia đình',v:'104',t:'mục tiêu mùa 1: 100 gia đình',s:'good',sp:[0,6,14,23,35,46,58,69,78,88,96,104]},
+  {n:'Bằng chứng nghi thức nộp trong tuần',v:'389',t:'trung bình 3,7 bằng chứng mỗi gia đình',s:'good',sp:[22,38,55,79,104,138,176,221,268,309,352,389]},
+  {n:'Tài khoản web app tạo mới',v:'29',t:'cộng dồn 167 · mục tiêu quý 150',s:'good',sp:[0,1,4,7,11,15,18,21,23,25,27,29]},
+  {n:'Tỉ lệ bài đạt chuẩn',v:'76%',t:'ngưỡng ≥70%',s:'good',sp:[31,38,45,53,59,64,68,70,72,74,75,76]},
+  {n:'Người mới đến từ giới thiệu',v:'64%',t:'ngưỡng ≥60%',s:'good',sp:[22,28,34,39,44,48,52,55,58,60,62,64]},
+  {n:'Báo cáo bị nhắn tin chào bán',v:'3',t:'đã xử lý cả 3 · trung bình 2,1 giờ',s:'warn',sp:[0,0,1,0,2,1,3,2,4,3,2,3]}
+ ]
+];
+function drawKPI(g){
+  var host=$('#kpis'); host.innerHTML='';
+  KPI[g].forEach(function(k){
+    var mx=Math.max.apply(null,k.sp);
+    var d=document.createElement('div'); d.className='kpi';
+    d.innerHTML='<div class="kh"><span class="kn">'+k.n+'</span><span class="pill p-'+k.s+'">'+(k.s==='good'?'Đạt':'Theo dõi')+'</span></div>'+
+      '<div class="kv2">'+k.v+'</div><div class="kt">'+k.t+'</div>'+
+      '<div class="spark" aria-hidden="true">'+k.sp.map(function(v){return '<span style="height:'+Math.max(6,v/mx*100)+'%"></span>'}).join('')+'</div>';
+    host.appendChild(d);
+  });
+}
+$$('[data-kg]').forEach(function(b){
+  b.addEventListener('click',function(){
+    $$('[data-kg]').forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});
+    drawKPI(+b.dataset.kg);
+  });
+});
+drawKPI(0);
+
+window.addEventListener('resize',function(){ if(!$('[data-panel="khathi"]').hidden) render(); });
 })();
 </script>

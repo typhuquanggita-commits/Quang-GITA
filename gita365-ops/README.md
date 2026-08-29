@@ -40,6 +40,8 @@ Luật xương sống: **G2 nuôi G1, G1 nuôi khóa học.** Người ở G2 kh
 | [`11-lo-trinh-90-ngay.md`](11-lo-trinh-90-ngay.md) | Lộ trình triển khai 90 ngày đầu, việc từng tuần, tiêu chí qua cửa | Admin |
 | [`12-muc-tieu-tang-truong-5-nam.md`](12-muc-tieu-tang-truong-5-nam.md) | **Hệ mục tiêu 5 năm**: 1.000 → 10.000 → 100.000 → 1.000.000 tương tác thật, số học tăng trưởng, kiến trúc cụm nhóm, kim tự tháp tự quản | Admin, Ban điều hành |
 | [`13-bao-ve-thanh-vien-va-chong-nick-ao.md`](13-bao-ve-thanh-vien-va-chong-nick-ao.md) | **Hệ phòng thủ 7 lớp**: chặn nick ảo, nick đi săn, phần mềm quét nhóm; cam kết bảo vệ khách hàng | Admin, Mod |
+| [`14-mo-hinh-kha-thi.md`](14-mo-hinh-kha-thi.md) | **Mô hình khả thi**: công thức, tham số kế hoạch cơ sở, kết luận từng mốc, nhân sự cần có | Admin, Ban điều hành |
+| [`ban-trinh-duyet.html`](ban-trinh-duyet.html) | **Bản demo tương tác** 7 khu vực: mô hình khả thi kéo tay, lịch 288 bài, GITA CARE, cổng lọc, thi đua, chỉ số | Tất cả |
 
 ### Dữ liệu vận hành
 | Tệp | Mô tả |
