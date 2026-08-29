@@ -47,7 +47,7 @@ export const Methods: React.FC = () => {
             title={
               <span className="flex flex-wrap items-baseline gap-2">
                 <span>{m.vnName}</span>
-                <span className="text-xs font-normal text-slate-500">
+                <span className="text-xs font-normal text-slate-400">
                   {m.name}
                 </span>
               </span>

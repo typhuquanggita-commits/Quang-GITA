@@ -38,7 +38,7 @@ export const Habits: React.FC = () => (
           <div className="text-sm leading-relaxed text-slate-300">
             <NumberedSteps items={r.steps} />
           </div>
-          <p className="mt-4 border-t border-slate-800 pt-3 text-xs leading-relaxed text-slate-500">
+          <p className="mt-4 border-t border-slate-800 pt-3 text-xs leading-relaxed text-slate-400">
             <span className="font-semibold text-slate-400">Vì sao: </span>
             {r.why}
           </p>
@@ -54,7 +54,7 @@ export const Habits: React.FC = () => (
         <Card key={h.id}>
           <div className="mb-3 flex items-start justify-between gap-3">
             <div className="flex items-baseline gap-2.5">
-              <span className="text-sm font-bold text-slate-600">
+              <span className="text-sm font-bold text-slate-400">
                 {String(i + 1).padStart(2, '0')}
               </span>
               <h4 className="font-semibold text-slate-100">{h.name}</h4>

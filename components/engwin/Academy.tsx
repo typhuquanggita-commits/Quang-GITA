@@ -103,7 +103,7 @@ export const Academy: React.FC = () => {
               </Field>
               <div className="grid gap-3 md:grid-cols-2">
                 <div className="rounded-lg border border-rose-500/20 bg-rose-500/5 p-3">
-                  <p className="text-[10px] font-semibold uppercase tracking-wider text-rose-400">
+                  <p className="text-[11px] font-semibold uppercase tracking-wider text-rose-400">
                     ✕ Cách làm sai
                   </p>
                   <p className="mt-1 text-sm leading-relaxed text-slate-300">
@@ -111,7 +111,7 @@ export const Academy: React.FC = () => {
                   </p>
                 </div>
                 <div className="rounded-lg border border-emerald-500/20 bg-emerald-500/5 p-3">
-                  <p className="text-[10px] font-semibold uppercase tracking-wider text-emerald-400">
+                  <p className="text-[11px] font-semibold uppercase tracking-wider text-emerald-400">
                     ✓ Cách làm đúng
                   </p>
                   <p className="mt-1 text-sm leading-relaxed text-slate-300">
@@ -137,7 +137,7 @@ export const Academy: React.FC = () => {
               <div className={`rounded-[11px] bg-gradient-to-r ${t.color} p-[1px]`}>
                 <div className="rounded-[10px] bg-slate-950 p-5">
                   <div className="mb-3 flex flex-wrap items-center gap-2.5">
-                    <span className="text-2xl font-black text-slate-700">
+                    <span className="text-2xl font-black text-slate-400">
                       {t.no}
                     </span>
                     <div>
@@ -161,7 +161,7 @@ export const Academy: React.FC = () => {
                     </Field>
                   </div>
                   <div className="mt-2 rounded-lg border border-amber-500/25 bg-amber-500/5 p-3">
-                    <p className="text-[10px] font-semibold uppercase tracking-wider text-amber-400">
+                    <p className="text-[11px] font-semibold uppercase tracking-wider text-amber-400">
                       ✨ Khoảnh khắc WOW của tầng này
                     </p>
                     <p className="mt-1 text-sm leading-relaxed text-slate-200">
@@ -216,7 +216,7 @@ export const Academy: React.FC = () => {
                 </div>
               </Field>
               <div className="mt-2 rounded-lg border border-rose-500/20 bg-rose-500/5 p-3">
-                <p className="text-[10px] font-semibold uppercase tracking-wider text-rose-400">
+                <p className="text-[11px] font-semibold uppercase tracking-wider text-rose-400">
                   ⚠ Hỏng ở đâu
                 </p>
                 <p className="mt-1 text-xs leading-relaxed text-slate-300">
@@ -292,7 +292,7 @@ export const Academy: React.FC = () => {
               title={
                 <span className="flex flex-wrap items-baseline gap-2">
                   <span>{n.vnName}</span>
-                  <span className="text-xs font-normal text-slate-500">
+                  <span className="text-xs font-normal text-slate-400">
                     {n.name}
                   </span>
                 </span>
@@ -306,11 +306,11 @@ export const Academy: React.FC = () => {
                   <p className="text-slate-400">{n.appliedTo}</p>
                 </Field>
                 <Field label="Nguồn gốc">
-                  <p className="text-slate-500">{n.origin}</p>
+                  <p className="text-slate-400">{n.origin}</p>
                 </Field>
               </div>
               <div className="rounded-lg border border-rose-500/20 bg-rose-500/5 p-3">
-                <p className="text-[10px] font-semibold uppercase tracking-wider text-rose-400">
+                <p className="text-[11px] font-semibold uppercase tracking-wider text-rose-400">
                   ⚠ Cảnh báo
                 </p>
                 <p className="mt-1 text-sm leading-relaxed text-slate-300">
@@ -337,7 +337,7 @@ export const Academy: React.FC = () => {
                 <Bullets items={e.setup} marker="→" />
               </Field>
               <div className="rounded-lg border border-rose-500/20 bg-rose-500/5 p-3">
-                <p className="text-[10px] font-semibold uppercase tracking-wider text-rose-400">
+                <p className="text-[11px] font-semibold uppercase tracking-wider text-rose-400">
                   ✕ Phản mẫu
                 </p>
                 <p className="mt-1 text-xs leading-relaxed text-slate-300">
@@ -364,7 +364,7 @@ export const Academy: React.FC = () => {
         </Card>
         <div className="mb-6 overflow-hidden rounded-xl border border-slate-800">
           <table className="w-full text-left text-sm">
-            <thead className="bg-slate-900 text-xs text-slate-500">
+            <thead className="bg-slate-900 text-xs text-slate-400">
               <tr>
                 <th className="px-4 py-2.5 font-medium">✕ Người giảng</th>
                 <th className="px-4 py-2.5 font-medium">✓ Cố vấn</th>
@@ -373,7 +373,7 @@ export const Academy: React.FC = () => {
             <tbody>
               {ADVISOR_CREED.shifts.map((s, i) => (
                 <tr key={i} className="border-t border-slate-800/70">
-                  <td className="px-4 py-2.5 text-slate-500">{s.from}</td>
+                  <td className="px-4 py-2.5 text-slate-400">{s.from}</td>
                   <td className="px-4 py-2.5 font-medium text-emerald-300">
                     {s.to}
                   </td>
@@ -392,7 +392,7 @@ export const Academy: React.FC = () => {
               <h4 className="text-sm font-bold text-slate-100">{a.situation}</h4>
               <div className="mt-3 grid gap-2.5 md:grid-cols-2">
                 <div className="rounded-lg border border-rose-500/20 bg-rose-500/5 p-3">
-                  <p className="text-[10px] font-semibold uppercase tracking-wider text-rose-400">
+                  <p className="text-[11px] font-semibold uppercase tracking-wider text-rose-400">
                     ✕ Đừng
                   </p>
                   <p className="mt-1 text-xs leading-relaxed text-slate-300">
@@ -400,7 +400,7 @@ export const Academy: React.FC = () => {
                   </p>
                 </div>
                 <div className="rounded-lg border border-emerald-500/20 bg-emerald-500/5 p-3">
-                  <p className="text-[10px] font-semibold uppercase tracking-wider text-emerald-400">
+                  <p className="text-[11px] font-semibold uppercase tracking-wider text-emerald-400">
                     ✓ Thay vào đó
                   </p>
                   <p className="mt-1 text-xs leading-relaxed text-slate-300">

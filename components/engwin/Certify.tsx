@@ -55,7 +55,7 @@ export const Certify: React.FC = () => {
         {AXES.map((a) => (
           <Card key={a.id}>
             <div className="mb-2 flex items-baseline gap-2.5">
-              <span className="text-lg font-black text-slate-700">
+              <span className="text-lg font-black text-slate-400">
                 {String(a.no).padStart(2, '0')}
               </span>
               <h4 className="text-sm font-bold text-slate-100">{a.name}</h4>
@@ -65,7 +65,7 @@ export const Certify: React.FC = () => {
               <p className="text-slate-400">{a.measuredBy}</p>
             </Field>
             <div className="rounded-lg border border-rose-500/20 bg-rose-500/5 p-2.5">
-              <p className="text-[10px] font-semibold uppercase tracking-wider text-rose-400">
+              <p className="text-[11px] font-semibold uppercase tracking-wider text-rose-400">
                 Dấu hiệu chưa đạt
               </p>
               <p className="mt-1 text-xs leading-relaxed text-slate-300">
@@ -93,7 +93,7 @@ export const Certify: React.FC = () => {
                     <p className="text-sm font-black tracking-wide text-slate-100">
                       {t.name}
                     </p>
-                    <p className="font-mono text-[10px] text-slate-600">
+                    <p className="font-mono text-[11px] text-slate-400">
                       {t.millerLevel}
                     </p>
                   </div>
@@ -133,12 +133,12 @@ export const Certify: React.FC = () => {
           <h4 className="text-lg font-black tracking-wide text-slate-100">
             {r.name}
           </h4>
-          <p className="mt-1 text-xs text-slate-500">{r.who}</p>
+          <p className="mt-1 text-xs text-slate-400">{r.who}</p>
           <p className="mt-3 text-sm leading-relaxed text-slate-300">
             {r.purpose}
           </p>
           <div className="mt-4 border-t border-slate-800 pt-4">
-            <p className="mb-2 text-[10px] font-semibold uppercase tracking-wider text-slate-500">
+            <p className="mb-2 text-[11px] font-semibold uppercase tracking-wider text-slate-400">
               Trọng số trục cho vai này
             </p>
             <div className="space-y-1.5">
@@ -168,7 +168,7 @@ export const Certify: React.FC = () => {
       <div className="mb-10 grid gap-2.5 sm:grid-cols-2 lg:grid-cols-5">
         {r.levels.map((l) => (
           <Card key={l.no}>
-            <p className="text-[10px] font-medium text-slate-600">BẬC {l.no}</p>
+            <p className="text-[11px] font-medium text-slate-400">BẬC {l.no}</p>
             <p className="mt-0.5 text-sm font-black tracking-wide text-slate-100">
               {l.name}
             </p>
@@ -204,7 +204,7 @@ export const Certify: React.FC = () => {
               </span>
               <div className="min-w-0">
                 <p className="text-sm font-semibold text-slate-100">{s.rule}</p>
-                <p className="mt-1 text-xs leading-relaxed text-slate-500">
+                <p className="mt-1 text-xs leading-relaxed text-slate-400">
                   {s.why}
                 </p>
               </div>
@@ -224,7 +224,7 @@ export const Certify: React.FC = () => {
           <Bullets items={TRAINING_ENGINE.howItRuns} marker="→" />
         </Field>
         <div className="rounded-lg bg-slate-800/40 p-3">
-          <p className="text-[10px] font-semibold uppercase tracking-wider text-emerald-400">
+          <p className="text-[11px] font-semibold uppercase tracking-wider text-emerald-400">
             Tự chỉ định mô-đun bù
           </p>
           <p className="mt-1 text-xs leading-relaxed text-slate-300">
@@ -246,21 +246,21 @@ export const Certify: React.FC = () => {
                 <Chip tone="slate">{c.totalHours}h</Chip>
               </span>
             }>
-            <p className="mb-4 text-xs text-slate-500">{c.cadence}</p>
+            <p className="mb-4 text-xs text-slate-400">{c.cadence}</p>
             <Field label={`${c.modules.length} mô-đun — mỗi mô-đun có cổng`}>
               <div className="space-y-1.5">
                 {c.modules.map((m) => (
                   <div
                     key={m.no}
                     className="flex flex-col gap-2 rounded-lg bg-slate-800/30 p-3 md:flex-row">
-                    <span className="shrink-0 text-xs font-bold text-slate-600 md:w-8">
+                    <span className="shrink-0 text-xs font-bold text-slate-400 md:w-8">
                       {String(m.no).padStart(2, '0')}
                     </span>
                     <div className="min-w-0 flex-1">
                       <p className="text-sm font-semibold text-slate-200">
                         {m.name}
                       </p>
-                      <p className="mt-0.5 text-[11px] text-slate-500">
+                      <p className="mt-0.5 text-[11px] text-slate-400">
                         {m.format} · {m.minutes} phút
                       </p>
                       <p className="mt-1 text-xs leading-relaxed text-slate-400">
@@ -278,7 +278,7 @@ export const Certify: React.FC = () => {
             </Field>
             <div className="grid gap-3 md:grid-cols-2">
               <div className="rounded-lg border border-violet-500/20 bg-violet-500/5 p-3">
-                <p className="text-[10px] font-semibold uppercase tracking-wider text-violet-400">
+                <p className="text-[11px] font-semibold uppercase tracking-wider text-violet-400">
                   Chứng nhận
                 </p>
                 <p className="mt-1 text-xs leading-relaxed text-slate-300">
@@ -286,7 +286,7 @@ export const Certify: React.FC = () => {
                 </p>
               </div>
               <div className="rounded-lg border border-amber-500/20 bg-amber-500/5 p-3">
-                <p className="text-[10px] font-semibold uppercase tracking-wider text-amber-400">
+                <p className="text-[11px] font-semibold uppercase tracking-wider text-amber-400">
                   Tự chỉ định bù khi trượt
                 </p>
                 <p className="mt-1 text-xs leading-relaxed text-slate-300">

@@ -59,7 +59,7 @@ export const Playbooks: React.FC = () => {
               </p>
             </div>
             <div className="mt-4">
-              <p className="mb-1.5 text-[11px] font-semibold uppercase tracking-wider text-slate-500">
+              <p className="mb-1.5 text-[11px] font-semibold uppercase tracking-wider text-slate-400">
                 Nước đi
               </p>
               <div className="text-sm leading-relaxed text-slate-300">

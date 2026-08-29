@@ -81,7 +81,7 @@ export const Resources: React.FC = () => {
                 </Chip>
               </span>
             </div>
-            <p className="mb-3 text-xs text-slate-500">
+            <p className="mb-3 text-xs text-slate-400">
               {KIND_LABEL[r.kind]} · {r.author}
             </p>
 

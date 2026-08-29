@@ -33,7 +33,7 @@ export const Studio: React.FC = () => {
                 </span>
                 <div className="min-w-0">
                   <p className="text-sm font-semibold text-slate-100">{r.rule}</p>
-                  <p className="mt-0.5 text-xs leading-relaxed text-slate-500">
+                  <p className="mt-0.5 text-xs leading-relaxed text-slate-400">
                     {r.why}
                   </p>
                 </div>
@@ -89,7 +89,7 @@ export const Studio: React.FC = () => {
             </Field>
 
             <div className="rounded-lg border border-emerald-500/20 bg-emerald-500/5 p-3">
-              <p className="text-[10px] font-semibold uppercase tracking-wider text-emerald-400">
+              <p className="text-[11px] font-semibold uppercase tracking-wider text-emerald-400">
                 ♻ Tài sản tái sử dụng
               </p>
               <p className="mt-1 text-sm leading-relaxed text-slate-300">

@@ -149,7 +149,7 @@ export const Lock: React.FC<{onUnlocked: () => void}> = ({onUnlocked}) => {
               onEnter={submitCreate}
             />
           </div>
-          <ul className="mt-4 space-y-1 text-[11px] text-slate-500">
+          <ul className="mt-4 space-y-1 text-[11px] text-slate-400">
             <li>· Từ 8 ký tự trở lên</li>
             <li>· Có ít nhất một chữ cái và một chữ số</li>
             <li>· Không dùng mã dễ đoán</li>
@@ -198,7 +198,7 @@ export const Lock: React.FC<{onUnlocked: () => void}> = ({onUnlocked}) => {
           className="mt-5 w-full rounded-lg bg-sky-500 py-2.5 text-sm font-semibold text-slate-950 transition hover:bg-sky-400 disabled:opacity-40">
           {busy ? 'Đang mở…' : 'Mở khoá'}
         </button>
-        <p className="mt-4 text-[11px] leading-relaxed text-slate-600">
+        <p className="mt-4 text-[11px] leading-relaxed text-slate-400">
           Sau ba lần nhập sai, mỗi lần thử tiếp theo sẽ phải chờ lâu dần. Đây là
           cách chặn việc dò mã bằng máy.
         </p>

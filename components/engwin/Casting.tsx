@@ -89,14 +89,14 @@ export const Casting: React.FC = () => {
         {shown.map((v) => (
           <Card key={v.id}>
             <div className="mb-2 flex items-baseline gap-2.5">
-              <span className="text-2xl font-black text-slate-700">
+              <span className="text-2xl font-black text-slate-400">
                 {String(v.no).padStart(2, '0')}
               </span>
               <div className="min-w-0">
                 <p className="text-base font-black tracking-wide text-slate-100">
                   {v.stageName}
                 </p>
-                <p className="text-[11px] text-slate-500">
+                <p className="text-[11px] text-slate-400">
                   {v.gender} · {v.age} tuổi · {v.accent}
                 </p>
               </div>
@@ -114,7 +114,7 @@ export const Casting: React.FC = () => {
                 <Chip tone="slate">biến thiên {v.measured.variation}</Chip>
               </div>
             )}
-            <code className="mt-2 block font-mono text-[10px] text-slate-700">
+            <code className="mt-2 block font-mono text-[11px] text-slate-400">
               {v.model} · giọng {v.speaker}
             </code>
           </Card>
@@ -170,7 +170,7 @@ export const Casting: React.FC = () => {
 
       <div className="overflow-hidden rounded-xl border border-slate-800">
         <table className="w-full text-left text-sm">
-          <thead className="bg-slate-900 text-xs text-slate-500">
+          <thead className="bg-slate-900 text-xs text-slate-400">
             <tr>
               <th className="px-4 py-2.5 font-medium">Đặc điểm</th>
               <th className="px-4 py-2.5 font-medium text-rose-400">Anh–Anh</th>
@@ -185,10 +185,10 @@ export const Casting: React.FC = () => {
               <tr key={a.id} className="border-t border-slate-800/70 align-top">
                 <td className="px-4 py-3">
                   <p className="font-semibold text-slate-200">{a.feature}</p>
-                  <p className="mt-1 font-mono text-[10px] text-slate-600">
+                  <p className="mt-1 font-mono text-[11px] text-slate-400">
                     {a.example}
                   </p>
-                  <p className="mt-1.5 text-[11px] leading-relaxed text-slate-500">
+                  <p className="mt-1.5 text-[11px] leading-relaxed text-slate-400">
                     {a.matters}
                   </p>
                 </td>

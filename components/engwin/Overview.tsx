@@ -147,7 +147,7 @@ export const Overview: React.FC = () => (
     </Card>
     <div className="mb-10 overflow-x-auto">
       <table className="w-full min-w-[680px] text-left text-xs">
-        <thead className="text-slate-500">
+        <thead className="text-slate-400">
           <tr className="border-b border-slate-800">
             <th className="py-2 pr-3 font-medium">Mốc</th>
             <th className="py-2 pr-3 font-medium">Tháng</th>
@@ -161,7 +161,7 @@ export const Overview: React.FC = () => (
           {TRAJECTORY.map((t) => (
             <tr key={t.q} className="border-b border-slate-900">
               <td className="py-1.5 pr-3 font-medium text-slate-200">{t.q}</td>
-              <td className="py-1.5 pr-3 text-slate-500">{t.month}</td>
+              <td className="py-1.5 pr-3 text-slate-400">{t.month}</td>
               <td className="py-1.5 pr-3">{t.cefr}</td>
               <td className="py-1.5 pr-3 font-semibold text-sky-300">
                 {t.band.toFixed(1)}
@@ -214,7 +214,7 @@ export const Overview: React.FC = () => (
           </div>
           <p className="mb-3 text-sm italic text-sky-300/80">“{p.motto}”</p>
           <p className="text-sm leading-relaxed text-slate-400">{p.why}</p>
-          <p className="mt-3 border-t border-slate-800 pt-3 text-xs text-slate-500">
+          <p className="mt-3 border-t border-slate-800 pt-3 text-xs text-slate-400">
             <span className="font-semibold text-slate-400">Luật: </span>
             {p.law}
           </p>

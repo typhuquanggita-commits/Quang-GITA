@@ -21,7 +21,7 @@ const SPEAKER_STYLE: Record<string, string> = {
   DẪN: 'text-sky-300',
   'CỐ VẤN': 'text-violet-300',
   ANH: 'text-emerald-300',
-  LẶNG: 'text-slate-600',
+  LẶNG: 'text-slate-400',
 };
 
 export const Podcast: React.FC = () => {
@@ -74,7 +74,7 @@ export const Podcast: React.FC = () => {
                 <code className="font-mono text-[11px] text-emerald-300">
                   {c.cmd}
                 </code>
-                <span className="text-[11px] text-slate-500">{c.desc}</span>
+                <span className="text-[11px] text-slate-400">{c.desc}</span>
               </div>
             ))}
           </div>
@@ -88,11 +88,11 @@ export const Podcast: React.FC = () => {
                 <p className="mt-2 text-[11px] leading-relaxed text-slate-400">
                   {b.quality}
                 </p>
-                <p className="mt-2 text-[11px] leading-relaxed text-slate-500">
+                <p className="mt-2 text-[11px] leading-relaxed text-slate-400">
                   <span className="font-semibold text-slate-400">Dùng khi: </span>
                   {b.useFor}
                 </p>
-                <code className="mt-2 block font-mono text-[10px] text-sky-400">
+                <code className="mt-2 block font-mono text-[11px] text-sky-400">
                   {b.setup}
                 </code>
               </div>
@@ -156,11 +156,11 @@ export const Podcast: React.FC = () => {
               <h4 className="text-sm font-bold text-slate-100">{f.name}</h4>
               <Chip tone="sky">{f.duration}</Chip>
             </div>
-            <p className="text-[11px] text-slate-500">{f.cadence}</p>
+            <p className="text-[11px] text-slate-400">{f.cadence}</p>
             <p className="mt-2.5 text-xs leading-relaxed text-slate-400">
               {f.purpose}
             </p>
-            <p className="mt-3 border-t border-slate-800 pt-2.5 font-mono text-[10px] leading-relaxed text-sky-400/80">
+            <p className="mt-3 border-t border-slate-800 pt-2.5 font-mono text-[11px] leading-relaxed text-sky-400/80">
               {f.structure}
             </p>
           </Card>
@@ -192,13 +192,13 @@ export const Podcast: React.FC = () => {
                 ? 'border-sky-500/60 bg-sky-500/10'
                 : 'border-slate-800 bg-slate-900/60 hover:border-slate-700'
             }`}>
-            <p className="text-[10px] font-medium text-slate-500">
+            <p className="text-[11px] font-medium text-slate-400">
               Tập {e.no} · {PODCAST_FORMATS.find((f) => f.id === e.formatId)?.name}
             </p>
             <p className="mt-1 text-sm font-bold leading-snug text-slate-100">
               {e.title}
             </p>
-            <p className="mt-2 text-[10px] text-sky-400">
+            <p className="mt-2 text-[11px] text-sky-400">
               ≈ {mmss(estimateSeconds(e))} · {e.lines.length} câu
             </p>
           </button>
@@ -216,7 +216,7 @@ export const Podcast: React.FC = () => {
         </h3>
         <div className="mt-4 grid gap-3 md:grid-cols-2">
           <div className="rounded-lg border border-emerald-500/20 bg-emerald-500/5 p-3">
-            <p className="text-[10px] font-semibold uppercase tracking-wider text-emerald-400">
+            <p className="text-[11px] font-semibold uppercase tracking-wider text-emerald-400">
               Điều đọng lại
             </p>
             <p className="mt-1 text-sm leading-relaxed text-slate-300">
@@ -224,7 +224,7 @@ export const Podcast: React.FC = () => {
             </p>
           </div>
           <div className="rounded-lg border border-amber-500/20 bg-amber-500/5 p-3">
-            <p className="text-[10px] font-semibold uppercase tracking-wider text-amber-400">
+            <p className="text-[11px] font-semibold uppercase tracking-wider text-amber-400">
               Việc phải làm sau khi nghe
             </p>
             <p className="mt-1 text-sm leading-relaxed text-slate-300">{ep.task}</p>
@@ -242,7 +242,7 @@ export const Podcast: React.FC = () => {
               {l.s === 'LẶNG' ? (
                 <div className="my-1 flex items-center gap-3 py-1">
                   <span className="h-px flex-1 bg-slate-800" />
-                  <span className="font-mono text-[10px] text-slate-600">
+                  <span className="font-mono text-[11px] text-slate-400">
                     khoảng lặng {l.p} giây
                   </span>
                   <span className="h-px flex-1 bg-slate-800" />
@@ -250,7 +250,7 @@ export const Podcast: React.FC = () => {
               ) : (
                 <div className="flex gap-3 rounded-lg px-2 py-1.5 hover:bg-slate-800/30">
                   <span
-                    className={`w-16 shrink-0 pt-0.5 text-[10px] font-bold uppercase tracking-wider ${SPEAKER_STYLE[l.s] ?? 'text-slate-500'}`}>
+                    className={`w-16 shrink-0 pt-0.5 text-[11px] font-bold uppercase tracking-wider ${SPEAKER_STYLE[l.s] ?? 'text-slate-400'}`}>
                     {l.s}
                   </span>
                   <span
@@ -261,7 +261,7 @@ export const Podcast: React.FC = () => {
                     }`}>
                     {l.t}
                   </span>
-                  <span className="w-10 shrink-0 pt-0.5 text-right font-mono text-[10px] text-slate-700">
+                  <span className="w-10 shrink-0 pt-0.5 text-right font-mono text-[11px] text-slate-400">
                     {l.p ? `${l.p}s` : ''}
                   </span>
                 </div>
@@ -277,7 +277,7 @@ export const Podcast: React.FC = () => {
             {Object.entries(PODCAST_SERIES.voices).map(([k, v]) => (
               <div key={k} className="flex gap-3">
                 <span
-                  className={`w-16 shrink-0 text-[10px] font-bold uppercase tracking-wider ${SPEAKER_STYLE[k] ?? 'text-slate-500'}`}>
+                  className={`w-16 shrink-0 text-[11px] font-bold uppercase tracking-wider ${SPEAKER_STYLE[k] ?? 'text-slate-400'}`}>
                   {k}
                 </span>
                 <span className="min-w-0 flex-1 text-xs leading-relaxed text-slate-400">

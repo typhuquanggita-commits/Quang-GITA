@@ -119,7 +119,7 @@ const HomNay: React.FC = () => {
         <h3 className="text-sm font-bold text-slate-100">
           Thử bản giao việc — đổi bốn thông số, xem trợ lý trả về gì
         </h3>
-        <p className="mt-1.5 text-[11px] leading-relaxed text-slate-500">
+        <p className="mt-1.5 text-[11px] leading-relaxed text-slate-400">
           Đây không phải ảnh minh hoạ. Nội dung dưới đây được dựng thật từ hồ sơ
           365 ngày, 25 cấp độ và kho 1.000 đơn kê — đúng những gì trợ lý đọc.
         </p>
@@ -209,7 +209,7 @@ const HomNay: React.FC = () => {
       <Card className="border-sky-500/30 bg-slate-950/60">
         <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
           <div>
-            <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-sky-400">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-sky-400">
               Trợ lý học viện
             </p>
             <h3 className="mt-0.5 text-base font-bold text-slate-100">
@@ -255,24 +255,24 @@ const HomNay: React.FC = () => {
 
         <div className="mt-4 grid gap-3 md:grid-cols-2">
           <div className="rounded-lg border border-amber-500/25 bg-amber-500/[0.04] p-3">
-            <p className="text-[10px] font-bold uppercase tracking-widest text-amber-300">
+            <p className="text-[11px] font-bold uppercase tracking-widest text-amber-300">
               Nhiệm vụ đời thật
             </p>
             <p className="mt-1 text-[11px] leading-relaxed text-slate-300">
               {d.mission}
             </p>
-            <p className="mt-1.5 text-[11px] leading-relaxed text-slate-500">
+            <p className="mt-1.5 text-[11px] leading-relaxed text-slate-400">
               Bằng chứng phải nộp: {d.evidence}
             </p>
           </div>
           <div className="rounded-lg border border-emerald-500/25 bg-emerald-500/[0.04] p-3">
-            <p className="text-[10px] font-bold uppercase tracking-widest text-emerald-300">
+            <p className="text-[11px] font-bold uppercase tracking-widest text-emerald-300">
               Con số duy nhất được chấm hôm nay
             </p>
             <p className="mt-1 text-[11px] leading-relaxed text-slate-300">
               {d.measure}
             </p>
-            <p className="mt-1.5 text-[11px] leading-relaxed text-slate-500">
+            <p className="mt-1.5 text-[11px] leading-relaxed text-slate-400">
               {chamDuocBangMay
                 ? 'Máy chấm ngay khi bạn nộp.'
                 : 'Phần này cần coach chấm — trợ lý xếp hàng và báo khi có kết quả.'}
@@ -281,14 +281,14 @@ const HomNay: React.FC = () => {
         </div>
 
         {daBo.length > 0 && (
-          <p className="mt-3 text-[11px] leading-relaxed text-slate-500">
+          <p className="mt-3 text-[11px] leading-relaxed text-slate-400">
             Đã bỏ hôm nay: {daBo.map((b) => b.slot).join(', ')}. Bỏ khối không
             phải bỏ ngày — chuỗi vẫn liền.
           </p>
         )}
 
         {d.reviewDays.length > 0 && (
-          <p className="mt-3 text-[11px] text-slate-500">
+          <p className="mt-3 text-[11px] text-slate-400">
             Ôn lại nội dung của ngày {d.reviewDays.join(', ')} — theo lịch giãn
             cách, không phải ôn tất cả.
           </p>
@@ -296,13 +296,13 @@ const HomNay: React.FC = () => {
 
         {don && donChay && (
           <div className="mt-4 rounded-lg border border-violet-500/25 bg-violet-500/[0.04] p-3">
-            <p className="text-[10px] font-bold uppercase tracking-widest text-violet-300">
+            <p className="text-[11px] font-bold uppercase tracking-widest text-violet-300">
               Đơn kê đang chạy · {symptom.name} · {level.id}
             </p>
             <p className="mt-1 text-[11px] leading-relaxed text-slate-300">
               {don.today}
             </p>
-            <p className="mt-1.5 text-[11px] leading-relaxed text-slate-500">
+            <p className="mt-1.5 text-[11px] leading-relaxed text-slate-400">
               Đo lại: {don.remeasure}
             </p>
           </div>
@@ -317,7 +317,7 @@ const HomNay: React.FC = () => {
         )}
 
         <div className="mt-4 rounded-lg border border-rose-500/20 bg-rose-500/[0.03] p-3">
-          <p className="text-[10px] font-bold uppercase tracking-widest text-rose-300">
+          <p className="text-[11px] font-bold uppercase tracking-widest text-rose-300">
             Ở gói {goi.name}, trợ lý KHÔNG làm
           </p>
           <ul className="mt-1.5 space-y-0.5">
@@ -398,7 +398,7 @@ const Goi: React.FC = () => (
         <p className="mt-2 rounded bg-violet-500/10 px-2 py-1.5 text-[11px] leading-relaxed text-violet-200">
           {p.humanContact}
         </p>
-        <p className="mt-3 text-[10px] font-bold uppercase tracking-widest text-emerald-300">
+        <p className="mt-3 text-[11px] font-bold uppercase tracking-widest text-emerald-300">
           Trợ lý được làm
         </p>
         <ul className="mt-1 space-y-0.5">
@@ -408,7 +408,7 @@ const Goi: React.FC = () => (
             </li>
           ))}
         </ul>
-        <p className="mt-3 text-[10px] font-bold uppercase tracking-widest text-rose-300">
+        <p className="mt-3 text-[11px] font-bold uppercase tracking-widest text-rose-300">
           Trợ lý không được làm
         </p>
         <ul className="mt-1 space-y-0.5">
@@ -461,12 +461,12 @@ const ThoiQuen: React.FC = () => (
         <p className="mt-1.5 text-[11px] leading-relaxed text-slate-400">
           {h.measures}
         </p>
-        <p className="mt-1 text-[11px] leading-relaxed text-slate-600">
+        <p className="mt-1 text-[11px] leading-relaxed text-slate-400">
           Lấy từ: {h.source}
         </p>
         <div className="mt-3 grid gap-2 sm:grid-cols-2">
           <div className="rounded border border-emerald-500/25 bg-emerald-500/[0.05] p-2">
-            <p className="text-[10px] font-bold uppercase tracking-widest text-emerald-300">
+            <p className="text-[11px] font-bold uppercase tracking-widest text-emerald-300">
               Khoẻ
             </p>
             <p className="mt-0.5 text-[11px] leading-relaxed text-slate-300">
@@ -474,7 +474,7 @@ const ThoiQuen: React.FC = () => (
             </p>
           </div>
           <div className="rounded border border-rose-500/25 bg-rose-500/[0.05] p-2">
-            <p className="text-[10px] font-bold uppercase tracking-widest text-rose-300">
+            <p className="text-[11px] font-bold uppercase tracking-widest text-rose-300">
               Báo động
             </p>
             <p className="mt-0.5 text-[11px] leading-relaxed text-slate-300">
@@ -495,17 +495,17 @@ const GiuChan: React.FC = () => (
     {PERSIST_LADDER.map((r) => (
       <Card key={r.no} className="flex flex-col gap-3 md:flex-row">
         <div className="shrink-0 md:w-40">
-          <span className="text-2xl font-black text-rose-500/50">
+          <span className="text-2xl font-black text-rose-500/80">
             {String(r.no).padStart(2, '0')}
           </span>
           <p className="text-sm font-bold text-slate-100">{r.name}</p>
-          <p className="mt-0.5 text-[10px] leading-snug text-slate-500">
+          <p className="mt-0.5 text-[11px] leading-snug text-slate-400">
             {r.trigger}
           </p>
         </div>
         <div className="min-w-0 flex-1 space-y-2 text-[11px] leading-relaxed">
           <p className="text-slate-300">{r.aiDoes}</p>
-          <p className="text-slate-500">Giọng: {r.tone}</p>
+          <p className="text-slate-400">Giọng: {r.tone}</p>
           <p className="rounded bg-violet-500/10 px-2 py-1.5 text-violet-200">
             Người vào cuộc: {r.humanAt}
           </p>
@@ -519,7 +519,7 @@ const Kho: React.FC = () => (
   <div className="overflow-x-auto">
     <table className="w-full min-w-[760px] text-[11px]">
       <thead>
-        <tr className="border-b border-slate-800 text-left text-slate-500">
+        <tr className="border-b border-slate-800 text-left text-slate-400">
           <th className="py-2 pr-3 font-medium">Kho</th>
           <th className="py-2 pr-3 font-medium">Chứa gì</th>
           <th className="py-2 pr-3 font-medium">Dùng để</th>

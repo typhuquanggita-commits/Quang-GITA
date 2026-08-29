@@ -142,7 +142,7 @@ export const Brand: React.FC = () => (
             )}
           </div>
           <p className="mt-3 text-sm font-semibold text-slate-100">{v.name}</p>
-          <p className="mt-1 text-[11px] leading-snug text-slate-500">{v.use}</p>
+          <p className="mt-1 text-[11px] leading-snug text-slate-400">{v.use}</p>
         </Card>
       ))}
     </div>
@@ -175,11 +175,11 @@ export const Brand: React.FC = () => (
               <span className="text-sm font-semibold text-slate-100">
                 {c.name}
               </span>
-              <code className="font-mono text-[10px] text-slate-500">
+              <code className="font-mono text-[11px] text-slate-400">
                 {c.hex}
               </code>
             </div>
-            <p className="mt-1 text-[11px] leading-snug text-slate-500">
+            <p className="mt-1 text-[11px] leading-snug text-slate-400">
               {c.use}
             </p>
           </div>
@@ -187,7 +187,7 @@ export const Brand: React.FC = () => (
       ))}
     </div>
 
-    <h4 className="mb-2 text-xs font-semibold uppercase tracking-wider text-slate-500">
+    <h4 className="mb-2 text-xs font-semibold uppercase tracking-wider text-slate-400">
       Dải màu năm tầng — chỉ dùng để chỉ tầng, không dùng trang trí
     </h4>
     <div className="mb-4 grid gap-2 sm:grid-cols-5">
@@ -201,7 +201,7 @@ export const Brand: React.FC = () => (
             <p className="text-[11px] font-bold text-slate-200">
               {t.tier} · {t.code}
             </p>
-            <code className="mt-0.5 block font-mono text-[9px] text-slate-600">
+            <code className="mt-0.5 block font-mono text-[9px] text-slate-400">
               {t.from} → {t.to}
             </code>
           </div>
@@ -223,7 +223,7 @@ export const Brand: React.FC = () => (
         <Card key={k}>
           <p className="text-lg font-bold text-slate-100">{t.family}</p>
           <p className="mt-1 text-xs text-sky-400">{t.weights}</p>
-          <p className="mt-2 text-xs leading-relaxed text-slate-500">{t.use}</p>
+          <p className="mt-2 text-xs leading-relaxed text-slate-400">{t.use}</p>
         </Card>
       ))}
     </div>
@@ -240,10 +240,10 @@ export const Brand: React.FC = () => (
               <code className="w-20 shrink-0 font-mono text-[11px] text-sky-400">
                 {s.size}
               </code>
-              <code className="w-10 shrink-0 font-mono text-[11px] text-slate-600">
+              <code className="w-10 shrink-0 font-mono text-[11px] text-slate-400">
                 {s.weight}
               </code>
-              <span className="min-w-0 flex-1 text-[11px] text-slate-500">
+              <span className="min-w-0 flex-1 text-[11px] text-slate-400">
                 {s.use}
               </span>
             </div>
@@ -269,7 +269,7 @@ export const Brand: React.FC = () => (
               className="rounded bg-sky-500/30"
               style={{width: n, height: n, minWidth: 4}}
             />
-            <span className="mt-1 block font-mono text-[10px] text-slate-600">
+            <span className="mt-1 block font-mono text-[11px] text-slate-400">
               {n}
             </span>
           </div>
@@ -282,7 +282,7 @@ export const Brand: React.FC = () => (
               className="h-14 w-14 border border-slate-700 bg-slate-800/50"
               style={{borderRadius: v}}
             />
-            <span className="mt-1 block font-mono text-[10px] text-slate-600">
+            <span className="mt-1 block font-mono text-[11px] text-slate-400">
               {k} · {v}
             </span>
           </div>
@@ -310,11 +310,11 @@ export const Brand: React.FC = () => (
               <code className="font-mono text-[11px] text-emerald-300">
                 {cmd}
               </code>
-              <span className="text-[11px] text-slate-500">{desc}</span>
+              <span className="text-[11px] text-slate-400">{desc}</span>
             </div>
           ))}
         </div>
-        <p className="mt-3 text-xs leading-relaxed text-slate-500">
+        <p className="mt-3 text-xs leading-relaxed text-slate-400">
           Không ấn phẩm nào vẽ tay. Thêm một cấp độ trong{' '}
           <code className="font-mono text-slate-400">data/levels.ts</code> là có
           thêm một huy hiệu; đổi một mã màu trong{' '}
@@ -330,7 +330,7 @@ export const Brand: React.FC = () => (
             <h4 className="text-sm font-bold text-slate-100">{a.name}</h4>
             <Chip tone="sky">{a.count}</Chip>
           </div>
-          <code className="text-[10px] text-slate-600">{a.format}</code>
+          <code className="text-[11px] text-slate-400">{a.format}</code>
           <p className="mt-2 text-xs leading-relaxed text-slate-400">{a.note}</p>
         </Card>
       ))}
@@ -357,7 +357,7 @@ export const Brand: React.FC = () => (
             {PHOTO_DIRECTION.shotList.map((s) => (
               <div key={s.scene} className="rounded-lg bg-slate-800/40 p-2.5">
                 <p className="text-xs font-semibold text-slate-200">{s.scene}</p>
-                <p className="mt-0.5 text-[11px] leading-relaxed text-slate-500">
+                <p className="mt-0.5 text-[11px] leading-relaxed text-slate-400">
                   {s.shots}
                 </p>
               </div>

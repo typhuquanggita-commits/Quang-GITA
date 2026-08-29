@@ -13,7 +13,7 @@ const MilestoneDetail: React.FC<{m: Milestone}> = ({m}) => (
   <div className="space-y-6">
     <Card className={`border-0 bg-gradient-to-br ${m.color} p-[1px]`}>
       <div className="rounded-[11px] bg-slate-950 p-5">
-        <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-500">
+        <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-400">
           Ý tưởng lớn của cột mốc
         </p>
         <p className="mt-2 text-sm leading-relaxed text-slate-200">{m.bigIdea}</p>
@@ -39,7 +39,7 @@ const MilestoneDetail: React.FC<{m: Milestone}> = ({m}) => (
                     {k.target}
                   </span>
                 </div>
-                <p className="mt-0.5 text-[11px] text-slate-500">Đo bằng: {k.how}</p>
+                <p className="mt-0.5 text-[11px] text-slate-400">Đo bằng: {k.how}</p>
               </div>
             ))}
           </div>
@@ -53,7 +53,7 @@ const MilestoneDetail: React.FC<{m: Milestone}> = ({m}) => (
           <div className="grid min-w-[860px] grid-cols-7 gap-2">
             {DAYS.map((d) => (
               <div key={d}>
-                <p className="mb-2 text-center text-[11px] font-bold uppercase tracking-wider text-slate-500">
+                <p className="mb-2 text-center text-[11px] font-bold uppercase tracking-wider text-slate-400">
                   {d}
                 </p>
                 <div className="space-y-1.5">
@@ -63,15 +63,15 @@ const MilestoneDetail: React.FC<{m: Milestone}> = ({m}) => (
                       <div
                         key={i}
                         className="rounded-lg border border-slate-800 bg-slate-800/30 p-2">
-                        <p className="text-[10px] text-slate-500">{w.slot}</p>
+                        <p className="text-[11px] text-slate-400">{w.slot}</p>
                         <p className="mt-0.5 text-[11px] font-medium leading-tight text-slate-200">
                           {DRILL_BY_ID[w.drillId]?.name ?? w.drillId}
                         </p>
-                        <p className="mt-1 text-[10px] font-semibold text-sky-400">
+                        <p className="mt-1 text-[11px] font-semibold text-sky-400">
                           {w.minutes} phút
                         </p>
                         {w.note && (
-                          <p className="mt-1 text-[10px] leading-tight text-slate-500">
+                          <p className="mt-1 text-[11px] leading-tight text-slate-400">
                             {w.note}
                           </p>
                         )}
@@ -82,7 +82,7 @@ const MilestoneDetail: React.FC<{m: Milestone}> = ({m}) => (
             ))}
           </div>
         </div>
-        <p className="mt-3 text-[11px] text-slate-600">
+        <p className="mt-3 text-[11px] text-slate-400">
           Tổng thời lượng tuần:{' '}
           <span className="font-semibold text-slate-400">
             {Math.round(
@@ -187,13 +187,13 @@ export const Roadmap: React.FC = () => {
                 : 'border-slate-800 bg-slate-900/60 hover:border-slate-700'
             }`}>
             <div className={`mb-2.5 h-1 w-10 rounded-full bg-gradient-to-r ${ms.color}`} />
-            <p className="text-[10px] font-medium text-slate-500">
+            <p className="text-[11px] font-medium text-slate-400">
               {ms.id} · {ms.months}
             </p>
             <p className="mt-0.5 text-sm font-bold tracking-wide text-slate-100">
               {ms.codename}
             </p>
-            <p className="mt-1.5 text-[11px] leading-snug text-slate-500">
+            <p className="mt-1.5 text-[11px] leading-snug text-slate-400">
               {ms.tagline}
             </p>
             <div className="mt-2.5 flex flex-wrap items-center gap-1.5">
@@ -204,7 +204,7 @@ export const Roadmap: React.FC = () => {
                 {ms.bandFrom.toFixed(1)} → {ms.bandTo.toFixed(1)}
               </Chip>
             </div>
-            <p className="mt-2 text-[10px] text-slate-600">
+            <p className="mt-2 text-[11px] text-slate-400">
               {ms.dailyMinutes[0]}–{ms.dailyMinutes[1]} phút/ngày ·{' '}
               {ms.vocabTarget.toLocaleString('vi-VN')} từ · {ms.inputHours}h input
             </p>
@@ -216,7 +216,7 @@ export const Roadmap: React.FC = () => {
         <h3 className="text-xl font-bold text-slate-100">
           {m.id} · {m.codename}
         </h3>
-        <span className="text-sm text-slate-500">{m.months}</span>
+        <span className="text-sm text-slate-400">{m.months}</span>
         <span className="text-sm italic text-sky-300/70">“{m.tagline}”</span>
       </div>
 

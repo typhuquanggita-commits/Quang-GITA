@@ -75,16 +75,16 @@ export const Clubs: React.FC = () => (
         <Card key={cp.id} className="border-l-2 border-l-sky-500/50">
           <div className="mb-2 flex flex-wrap items-baseline justify-between gap-2">
             <div className="flex items-baseline gap-3">
-              <span className="text-sm font-bold text-slate-600">
+              <span className="text-sm font-bold text-slate-400">
                 {String(i + 1).padStart(2, '0')}
               </span>
               <h4 className="font-semibold text-slate-100">{cp.name}</h4>
-              <span className="text-xs text-slate-500">{cp.at}</span>
+              <span className="text-xs text-slate-400">{cp.at}</span>
             </div>
             <Chip tone="emerald">{cp.passBand}</Chip>
           </div>
           <p className="mb-3 pl-8 text-sm leading-relaxed text-slate-300">
-            <span className="text-[11px] font-semibold uppercase tracking-wider text-slate-500">
+            <span className="text-[11px] font-semibold uppercase tracking-wider text-slate-400">
               Bài kiểm tra ·{' '}
             </span>
             {cp.test}

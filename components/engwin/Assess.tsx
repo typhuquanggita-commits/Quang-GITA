@@ -85,7 +85,7 @@ const BoDe: React.FC = () => (
         <div className="mt-2 overflow-x-auto">
           <table className="w-full min-w-[560px] text-[11px]">
             <thead>
-              <tr className="border-b border-slate-800 text-left text-slate-500">
+              <tr className="border-b border-slate-800 text-left text-slate-400">
                 <th className="py-1.5 pr-3 font-medium">Dải</th>
                 <th className="py-1.5 pr-3 font-medium">Kết luận</th>
                 <th className="py-1.5 font-medium">Làm gì tiếp</th>
@@ -221,7 +221,7 @@ const Kho: React.FC = () => {
         <p className="mt-2 text-xs leading-relaxed text-amber-300/90">
           {SOLUTION_CREED.rule}
         </p>
-        <p className="mt-2 text-[11px] leading-relaxed text-slate-500">
+        <p className="mt-2 text-[11px] leading-relaxed text-slate-400">
           {SOLUTION_CREED.limit}
         </p>
       </Card>
@@ -280,7 +280,7 @@ const Kho: React.FC = () => {
       </div>
 
       <Card className="mb-4 border-slate-700">
-        <p className="text-[11px] font-semibold uppercase tracking-widest text-slate-500">
+        <p className="text-[11px] font-semibold uppercase tracking-widest text-slate-400">
           Học viên thường nói thế này
         </p>
         <p className="mt-1.5 text-sm italic leading-relaxed text-slate-300">
@@ -361,7 +361,7 @@ export const Assess: React.FC = () => {
           <div className="mt-2">
             <Bullets items={ASSESS_CREED.threeQuestions} />
           </div>
-          <p className="mt-3 text-xs leading-relaxed text-slate-500">
+          <p className="mt-3 text-xs leading-relaxed text-slate-400">
             {ASSESS_CREED.why}
           </p>
         </Card>

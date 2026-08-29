@@ -33,3 +33,4 @@ export * from './voices';
 export * from './certify';
 export * from './exams';
 export * from './tuyen';
+export * from './timkiem';

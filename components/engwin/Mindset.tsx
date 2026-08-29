@@ -18,7 +18,7 @@ export const Mindset: React.FC = () => (
       {MINDSET_MODULES.map((m, i) => (
         <Card key={m.id}>
           <div className="mb-3 flex items-baseline gap-3">
-            <span className="text-sm font-bold text-slate-600">
+            <span className="text-sm font-bold text-slate-400">
               {String(i + 1).padStart(2, '0')}
             </span>
             <h3 className="text-base font-bold text-slate-100">{m.name}</h3>

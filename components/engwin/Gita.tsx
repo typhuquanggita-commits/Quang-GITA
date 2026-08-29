@@ -40,14 +40,14 @@ const HanhTrinh: React.FC = () => (
     {GITA_JOURNEY.map((s) => (
       <Card key={s.no} className="flex flex-col gap-3 md:flex-row">
         <div className="shrink-0 md:w-44">
-          <span className="text-2xl font-black text-slate-700">
+          <span className="text-2xl font-black text-slate-400">
             {String(s.no).padStart(2, '0')}
           </span>
           <p className="text-sm font-bold leading-snug text-slate-100">{s.name}</p>
           <div className="mt-1.5 flex flex-wrap gap-1.5">
             <Chip tone={PHA_TONE[s.phase]}>{s.phase}</Chip>
           </div>
-          <p className="mt-1 text-[10px] text-slate-600">{s.months}</p>
+          <p className="mt-1 text-[11px] text-slate-400">{s.months}</p>
         </div>
         <div className="min-w-0 flex-1">
           <Bullets items={s.points} />
@@ -79,7 +79,7 @@ const BanDap: React.FC = () => (
     </Card>
 
     <div>
-      <h3 className="mb-3 text-[11px] font-bold uppercase tracking-widest text-slate-500">
+      <h3 className="mb-3 text-[11px] font-bold uppercase tracking-widest text-slate-400">
         Ba luồng chạy song song, cùng đổ về kỷ luật
       </h3>
       <div className="grid gap-3 lg:grid-cols-3">
@@ -89,11 +89,11 @@ const BanDap: React.FC = () => (
             <div className="mt-2 flex flex-wrap items-center gap-1">
               {l.chain.map((c, i) => (
                 <React.Fragment key={c}>
-                  <span className="rounded bg-slate-800/70 px-1.5 py-0.5 text-[10px] text-slate-300">
+                  <span className="rounded bg-slate-800/70 px-1.5 py-0.5 text-[11px] text-slate-300">
                     {c}
                   </span>
                   {i < l.chain.length - 1 && (
-                    <span className="text-[10px] text-slate-600">→</span>
+                    <span className="text-[11px] text-slate-400">→</span>
                   )}
                 </React.Fragment>
               ))}
@@ -115,7 +115,7 @@ const BanDap: React.FC = () => (
               {c}
             </span>
             {i < SUCCESS_PATH.chain.length - 1 && (
-              <span className="text-slate-600">→</span>
+              <span className="text-slate-400">→</span>
             )}
           </React.Fragment>
         ))}
@@ -125,7 +125,7 @@ const BanDap: React.FC = () => (
       </p>
       <div className="mt-4 grid gap-3 md:grid-cols-2">
         <div>
-          <p className="text-[10px] font-bold uppercase tracking-widest text-slate-500">
+          <p className="text-[11px] font-bold uppercase tracking-widest text-slate-400">
             Sáu vai của cố vấn
           </p>
           <div className="mt-1.5 flex flex-wrap gap-1.5">
@@ -135,7 +135,7 @@ const BanDap: React.FC = () => (
           </div>
         </div>
         <div>
-          <p className="text-[10px] font-bold uppercase tracking-widest text-slate-500">
+          <p className="text-[11px] font-bold uppercase tracking-widest text-slate-400">
             Ba kết quả đầu ra
           </p>
           <div className="mt-1.5">
@@ -146,14 +146,14 @@ const BanDap: React.FC = () => (
     </Card>
 
     <div>
-      <h3 className="mb-3 text-[11px] font-bold uppercase tracking-widest text-slate-500">
+      <h3 className="mb-3 text-[11px] font-bold uppercase tracking-widest text-slate-400">
         Bốn phễu lọc — nơi thông điệp của cố vấn bị méo trước khi tới học viên
       </h3>
       <div className="grid gap-3 lg:grid-cols-2">
         {FILTERS.map((f) => (
           <Card key={f.no} className="flex h-full flex-col">
             <div className="flex items-center gap-2">
-              <span className="text-lg font-black text-rose-500/50">
+              <span className="text-lg font-black text-rose-500/80">
                 {String(f.no).padStart(2, '0')}
               </span>
               <h4 className="text-sm font-bold text-slate-100">{f.name}</h4>
@@ -194,13 +194,13 @@ const Bni: React.FC = () => (
       <p className="mt-2 text-xs font-medium leading-relaxed text-slate-300">
         {BNI_CREED.theKeyIdea}
       </p>
-      <p className="mt-2 text-[10px] text-slate-600">Nguồn: {BNI_CREED.source}</p>
+      <p className="mt-2 text-[11px] text-slate-400">Nguồn: {BNI_CREED.source}</p>
     </Card>
 
     {STRATEGIC_THREADS.map((t) => (
       <Card key={t.no}>
         <div className="flex flex-wrap items-center gap-2">
-          <span className="text-lg font-black text-violet-500/50">
+          <span className="text-lg font-black text-violet-500/80">
             {String(t.no).padStart(2, '0')}
           </span>
           <h4 className="text-sm font-bold text-slate-100">{t.gita}</h4>
@@ -241,7 +241,7 @@ const BaiHoc: React.FC = () => {
         <p className="mt-2 text-xs leading-relaxed text-amber-300/90">
           {LESSON300_CREED.notLessons}
         </p>
-        <p className="mt-2 text-[11px] leading-relaxed text-slate-500">
+        <p className="mt-2 text-[11px] leading-relaxed text-slate-400">
           {LESSON300_CREED.honest}
         </p>
       </Card>
@@ -282,7 +282,7 @@ const BaiHoc: React.FC = () => {
         </div>
       </div>
 
-      <p className="mb-4 text-[11px] text-slate-500">
+      <p className="mb-4 text-[11px] text-slate-400">
         Đang hiện {shown.length} bài · tổng bộ {all.length} bài
       </p>
 
@@ -355,7 +355,7 @@ export const Gita: React.FC = () => {
           <div className="mt-2">
             <Bullets items={GITA_CREED.fourPhases} />
           </div>
-          <p className="mt-3 text-xs leading-relaxed text-slate-500">
+          <p className="mt-3 text-xs leading-relaxed text-slate-400">
             {GITA_CREED.moreThanASchool}
           </p>
         </Card>

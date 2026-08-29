@@ -56,8 +56,8 @@ const DayCard: React.FC<{d: DossierDay}> = ({d}) => (
         {d.blocks.map((b) => (
           <li key={b.slot} className="text-[11px] leading-relaxed">
             <span className="font-semibold text-slate-300">{b.slot}</span>
-            <span className="text-slate-600"> · {b.minutes}′ · </span>
-            <span className="text-slate-500">{b.what}</span>
+            <span className="text-slate-400"> · {b.minutes}′ · </span>
+            <span className="text-slate-400">{b.what}</span>
           </li>
         ))}
       </ul>
@@ -81,7 +81,7 @@ const DayCard: React.FC<{d: DossierDay}> = ({d}) => (
     <div className="mt-auto flex flex-wrap items-center gap-2 pt-4">
       <Chip>{d.minutes}′ / ngày</Chip>
       {d.reviewDays.length > 0 && (
-        <span className="text-[10px] text-slate-600">
+        <span className="text-[11px] text-slate-400">
           Ôn lại ngày {d.reviewDays.join(', ')}
         </span>
       )}
@@ -138,7 +138,7 @@ export const Dossier: React.FC = () => {
           <p className="mt-2 text-xs leading-relaxed text-slate-400">
             {DOSSIER_CREED.why}
           </p>
-          <p className="mt-3 text-xs leading-relaxed text-slate-500">
+          <p className="mt-3 text-xs leading-relaxed text-slate-400">
             {DOSSIER_CREED.structure}
           </p>
         </Card>
@@ -147,7 +147,7 @@ export const Dossier: React.FC = () => {
           <p className="mt-2 text-xs leading-relaxed text-slate-400">
             {DOSSIER_CREED.honesty}
           </p>
-          <p className="mt-3 text-xs leading-relaxed text-slate-500">
+          <p className="mt-3 text-xs leading-relaxed text-slate-400">
             {DOSSIER_CREED.measure}
           </p>
         </Card>
@@ -168,7 +168,7 @@ export const Dossier: React.FC = () => {
           <p className="mt-2 text-xs leading-relaxed text-slate-300">
             {activeQuarter.bigPromise}
           </p>
-          <p className="mt-2 text-xs italic leading-relaxed text-slate-500">
+          <p className="mt-2 text-xs italic leading-relaxed text-slate-400">
             Dịch chuyển bản sắc: {activeQuarter.identityShift}
           </p>
           <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
@@ -177,17 +177,17 @@ export const Dossier: React.FC = () => {
                 key={c.no}
                 className="rounded-lg border border-slate-800 bg-slate-950/40 p-3">
                 <p className="text-[11px] font-bold text-slate-200">{c.name}</p>
-                <p className="mt-0.5 text-[10px] text-slate-600">
+                <p className="mt-0.5 text-[11px] text-slate-400">
                   Ngày {c.dayFrom}–{c.dayTo} · {c.dailyMinutes}′/ngày
                 </p>
                 <p className="mt-2 text-[11px] leading-relaxed text-slate-400">
                   {c.promise}
                 </p>
-                <p className="mt-2 text-[10px] leading-relaxed text-emerald-400/80">
+                <p className="mt-2 text-[11px] leading-relaxed text-emerald-400/80">
                   Bài ra vòng: {c.exitTest}
                 </p>
                 {c.examId && (
-                  <p className="mt-1.5 text-[10px] leading-relaxed text-rose-400/80">
+                  <p className="mt-1.5 text-[11px] leading-relaxed text-rose-400/80">
                     Đề thi: {EXAM_NAME.get(c.examId)}
                   </p>
                 )}
@@ -238,7 +238,7 @@ export const Dossier: React.FC = () => {
           value={jump}
           onChange={(e) => setJump(e.target.value)}
           placeholder="1–365"
-          className="w-28 rounded-lg border border-slate-700 bg-slate-900 px-3 py-1.5 text-xs text-slate-200 placeholder:text-slate-600 focus:border-sky-500 focus:outline-none"
+          className="w-28 rounded-lg border border-slate-700 bg-slate-900 px-3 py-1.5 text-xs text-slate-200 placeholder:text-slate-400 focus:border-sky-500 focus:outline-none"
         />
         {jump && (
           <button
@@ -247,7 +247,7 @@ export const Dossier: React.FC = () => {
             Xoá
           </button>
         )}
-        <span className="text-[11px] text-slate-600">
+        <span className="text-[11px] text-slate-400">
           Đang hiện {shown.length} ngày
         </span>
       </div>

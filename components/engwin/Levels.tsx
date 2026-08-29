@@ -29,7 +29,7 @@ export const Levels: React.FC = () => {
               <span className="text-xs font-black tracking-wider text-slate-300">
                 TẦNG {t.no} · {t.code}
               </span>
-              <span className="text-[11px] text-slate-600">{t.name}</span>
+              <span className="text-[11px] text-slate-400">{t.name}</span>
             </div>
             <div className="grid gap-2 sm:grid-cols-3 lg:grid-cols-5">
               {LEVELS.filter((l) => l.tierId === t.id).map((l) => (
@@ -41,13 +41,13 @@ export const Levels: React.FC = () => {
                       ? 'border-emerald-500/60 bg-emerald-500/10'
                       : 'border-slate-800 bg-slate-900/60 hover:border-slate-700'
                   }`}>
-                  <p className="text-[10px] font-medium text-slate-600">
+                  <p className="text-[11px] font-medium text-slate-400">
                     {l.id} · Cấp {l.no}
                   </p>
                   <p className="mt-0.5 text-sm font-black tracking-wide text-slate-100">
                     {l.name}
                   </p>
-                  <p className="mt-1 text-[10px] leading-snug text-slate-500">
+                  <p className="mt-1 text-[11px] leading-snug text-slate-400">
                     {l.epithet}
                   </p>
                 </button>
@@ -60,7 +60,7 @@ export const Levels: React.FC = () => {
       {/* Chi tiết */}
       <div className="mb-5 border-b border-slate-800 pb-4">
         <div className="flex flex-wrap items-baseline gap-3">
-          <span className="text-xs font-medium text-slate-500">
+          <span className="text-xs font-medium text-slate-400">
             Cấp {idx + 1}/25 · {tier.code}
           </span>
           <h3 className="text-2xl font-black tracking-wide text-slate-100">
@@ -73,7 +73,7 @@ export const Levels: React.FC = () => {
       <div className="space-y-4">
         <Card className={`border-0 bg-gradient-to-br ${tier.color} p-[1px]`}>
           <div className="rounded-[11px] bg-slate-950 p-5">
-            <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-500">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-400">
               Nhiệm vụ của cấp độ
             </p>
             <p className="mt-2 text-sm leading-relaxed text-slate-200">
@@ -124,19 +124,19 @@ export const Levels: React.FC = () => {
                 <div
                   key={s.no}
                   className="flex items-start gap-2.5 rounded-lg bg-slate-800/30 px-3 py-2">
-                  <span className="text-[11px] font-bold text-slate-500">
+                  <span className="text-[11px] font-bold text-slate-400">
                     {String(s.no).padStart(2, '0')}
                   </span>
                   <span className="min-w-0 flex-1">
                     <span className="block text-xs font-medium leading-snug text-slate-200">
                       {s.name}
                     </span>
-                    <span className="text-[10px] text-slate-600">{s.phase}</span>
+                    <span className="text-[11px] text-slate-400">{s.phase}</span>
                   </span>
                 </div>
               ))}
             </div>
-            <p className="mt-3 text-[11px] text-slate-600">
+            <p className="mt-3 text-[11px] text-slate-400">
               Chi tiết từng bước — kèm lời thoại mẫu cho cố vấn — ở tab{' '}
               <span className="font-medium text-slate-400">Học viện</span>, mục 04.
             </p>

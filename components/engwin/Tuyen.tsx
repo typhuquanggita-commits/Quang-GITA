@@ -60,7 +60,7 @@ const SoSanh: React.FC = () => (
               ['Bậc thang', t.bacThang],
             ].map(([k, v]) => (
               <div key={k} className="px-5 py-3">
-                <dt className="text-[10px] font-semibold uppercase tracking-[0.15em] text-slate-600">
+                <dt className="text-[11px] font-semibold uppercase tracking-[0.15em] text-slate-400">
                   {k}
                 </dt>
                 <dd className="mt-1 text-[13px] leading-relaxed text-slate-300">
@@ -69,7 +69,7 @@ const SoSanh: React.FC = () => (
               </div>
             ))}
             <div className="px-5 py-3">
-              <dt className="text-[10px] font-semibold uppercase tracking-[0.15em] text-slate-600">
+              <dt className="text-[11px] font-semibold uppercase tracking-[0.15em] text-slate-400">
                 Mục trong app phục vụ tuyến này
               </dt>
               <dd className="mt-1 text-[13px] text-slate-300">
@@ -94,13 +94,13 @@ const SoSanh: React.FC = () => (
     </Card>
 
     <div>
-      <h3 className="mb-3 text-sm font-semibold uppercase tracking-[0.15em] text-slate-500">
+      <h3 className="mb-3 text-sm font-semibold uppercase tracking-[0.15em] text-slate-400">
         Mười trục phân kỳ
       </h3>
       <div className="overflow-x-auto">
         <table className="w-full min-w-[820px] border-collapse text-left text-[13px]">
           <thead>
-            <tr className="border-b border-slate-800 text-[10px] uppercase tracking-[0.15em] text-slate-600">
+            <tr className="border-b border-slate-800 text-[11px] uppercase tracking-[0.15em] text-slate-400">
               <th className="w-32 py-2 pr-3 font-semibold">Trục</th>
               <th className="py-2 pr-3 font-semibold text-sky-400">IELTS 8.0</th>
               <th className="py-2 pr-3 font-semibold text-amber-400">Chuyên Anh</th>
@@ -152,7 +152,7 @@ const Chung: React.FC = () => (
           key={l.no}
           className="rounded-xl border border-slate-800 bg-slate-900/60 p-5">
           <div className="flex items-baseline gap-3">
-            <span className="text-lg font-black tabular-nums text-slate-700">
+            <span className="text-lg font-black tabular-nums text-slate-400">
               {String(l.no).padStart(2, '0')}
             </span>
             <h3 className="font-semibold text-slate-100">{l.ten}</h3>
@@ -193,12 +193,12 @@ const Lan: React.FC = () => (
           className="rounded-xl border border-slate-800 bg-slate-900/60 p-5">
           <div className="flex flex-wrap items-center gap-2">
             <Chip tone={TONE[n.ai]}>{TUYEN_BY_ID[n.ai].ten}</Chip>
-            <span className="text-[11px] text-slate-600">mắc lỗi này</span>
+            <span className="text-[11px] text-slate-400">mắc lỗi này</span>
           </div>
           <h3 className="mt-2 font-semibold text-rose-200">✕ {n.sai}</h3>
           <dl className="mt-3 space-y-2 text-[13px] leading-relaxed">
             <div>
-              <dt className="inline font-semibold text-slate-500">Vì sao dễ mắc — </dt>
+              <dt className="inline font-semibold text-slate-400">Vì sao dễ mắc — </dt>
               <dd className="inline text-slate-400">{n.vi}</dd>
             </div>
             <div>
@@ -243,10 +243,10 @@ const Tinh: React.FC<{tuyen: TuyenId; onTuyen: (t: TuyenId) => void}> = ({
       </Card>
 
       <div>
-        <h3 className="mb-1 text-sm font-semibold uppercase tracking-[0.15em] text-slate-500">
+        <h3 className="mb-1 text-sm font-semibold uppercase tracking-[0.15em] text-slate-400">
           Lõi ngày — {sanPhut} phút không được cắt
         </h3>
-        <p className="mb-3 text-[13px] leading-relaxed text-slate-500">
+        <p className="mb-3 text-[13px] leading-relaxed text-slate-400">
           {tt.vongNgoai}
         </p>
         <div className="space-y-2">
@@ -256,7 +256,7 @@ const Tinh: React.FC<{tuyen: TuyenId; onTuyen: (t: TuyenId) => void}> = ({
               className="flex items-start gap-4 rounded-xl border border-slate-800 bg-slate-900/60 p-4">
               <span className="w-14 shrink-0 text-right text-lg font-black tabular-nums text-slate-300">
                 {k.phut}
-                <span className="text-[10px] font-medium text-slate-600">ph</span>
+                <span className="text-[11px] font-medium text-slate-400">ph</span>
               </span>
               <span className="min-w-0">
                 <span className="block font-semibold text-slate-100">{k.khoi}</span>
@@ -281,9 +281,9 @@ const Tinh: React.FC<{tuyen: TuyenId; onTuyen: (t: TuyenId) => void}> = ({
                 <p className="text-[11px] font-semibold text-slate-300">{b.name}</p>
                 <p className="mt-1 text-lg font-black tabular-nums text-amber-300">
                   {tongPhut(loiNgayChuyen(b.id))}
-                  <span className="text-[10px] font-medium text-slate-600"> phút/ngày</span>
+                  <span className="text-[11px] font-medium text-slate-400"> phút/ngày</span>
                 </p>
-                <p className="mt-1 text-[11px] leading-snug text-slate-500">
+                <p className="mt-1 text-[11px] leading-snug text-slate-400">
                   Khối theo giai đoạn {loiNgayChuyen(b.id)[2].phut} phút
                 </p>
               </div>
@@ -293,10 +293,10 @@ const Tinh: React.FC<{tuyen: TuyenId; onTuyen: (t: TuyenId) => void}> = ({
       </div>
 
       <div>
-        <h3 className="mb-1 text-sm font-semibold uppercase tracking-[0.15em] text-slate-500">
+        <h3 className="mb-1 text-sm font-semibold uppercase tracking-[0.15em] text-slate-400">
           {tt.donBay.length} đòn bẩy — xếp theo thời gian tới khi có hiệu lực
         </h3>
-        <p className="mb-3 text-[13px] text-slate-500">
+        <p className="mb-3 text-[13px] text-slate-400">
           {tuyen === 'chuyen'
             ? 'Lấy nguyên chín phác đồ nâng cấp trong hệ thống và sắp theo số tuần tăng dần. Còn ít thời gian thì làm từ trên xuống.'
             : 'Lọc từ tần suất xuất hiện qua mười hai mùa, cộng thêm hai việc chỉ làm một lần nhưng không bù được về sau.'}
@@ -311,11 +311,11 @@ const Tinh: React.FC<{tuyen: TuyenId; onTuyen: (t: TuyenId) => void}> = ({
                 <Chip tone={TONE[tuyen]}>{d.tuan} tuần</Chip>
               </div>
               <p className="mt-2 text-[13px] leading-relaxed text-slate-300">
-                <span className="font-semibold text-slate-500">Làm — </span>
+                <span className="font-semibold text-slate-400">Làm — </span>
                 {d.lam}
               </p>
               <p className="mt-1.5 text-[13px] leading-relaxed text-slate-400">
-                <span className="font-semibold text-slate-500">Vì — </span>
+                <span className="font-semibold text-slate-400">Vì — </span>
                 {d.vi}
               </p>
               <div className="mt-3 grid gap-2 sm:grid-cols-2">
@@ -335,7 +335,7 @@ const Tinh: React.FC<{tuyen: TuyenId; onTuyen: (t: TuyenId) => void}> = ({
 
       <div className="grid gap-4 lg:grid-cols-2">
         <div>
-          <h3 className="mb-3 text-sm font-semibold uppercase tracking-[0.15em] text-slate-500">
+          <h3 className="mb-3 text-sm font-semibold uppercase tracking-[0.15em] text-slate-400">
             Cắt bỏ — {tt.catBo.length} việc trông năng suất mà không phải
           </h3>
           <div className="space-y-2">
@@ -352,7 +352,7 @@ const Tinh: React.FC<{tuyen: TuyenId; onTuyen: (t: TuyenId) => void}> = ({
           </div>
         </div>
         <div>
-          <h3 className="mb-3 text-sm font-semibold uppercase tracking-[0.15em] text-slate-500">
+          <h3 className="mb-3 text-sm font-semibold uppercase tracking-[0.15em] text-slate-400">
             Chặn đường — {tt.chanDuong.length} lần phải dừng lại trả lời thật
           </h3>
           <div className="space-y-2">

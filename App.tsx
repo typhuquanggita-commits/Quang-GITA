@@ -35,6 +35,7 @@ const Casting = lazy(() => import('./components/engwin/Casting').then((m) => ({d
 const Exams = lazy(() => import('./components/engwin/Exams').then((m) => ({default: m.Exams})));
 const Certify = lazy(() => import('./components/engwin/Certify').then((m) => ({default: m.Certify})));
 const Tuyen = lazy(() => import('./components/engwin/Tuyen').then((m) => ({default: m.Tuyen})));
+const TimKiem = lazy(() => import('./components/engwin/TimKiem').then((m) => ({default: m.TimKiem})));
 
 /** Bối cảnh truyền xuống tab. Hầu hết tab không cần, nên chúng bỏ qua tham số. */
 interface NavCtx {
@@ -318,8 +319,24 @@ export const App: React.FC = () => {
   // Bộ lọc tuyến: 'ca-hai' hiện đủ mục, chọn một tuyến thì ẩn mục không thuộc
   // tuyến đó. Mục vận hành học viện không bị lọc vì không thuộc tuyến nào.
   const [tuyen, setTuyen] = useState<LocTuyen>('ca-hai');
+  // Ô tìm kiếm: chỉ dựng khi mở, vì chỉ mục kéo theo cả 365 ngày hồ sơ và 300
+  // bài định hướng. Nạp sẵn là bắt mọi người trả giá cho tính năng họ chưa mở.
+  const [timMo, setTimMo] = useState(false);
   // Trên web thì không có két, vào thẳng. Trên bản máy tính phải mở khoá trước.
   const [unlocked, setUnlocked] = useState(!window.engwin);
+
+  // Ctrl+K hoặc ⌘K mở ô tìm. Không bắt phím khi con trỏ đang ở trong một ô
+  // nhập liệu khác, để người dùng vẫn gõ được chữ k bình thường.
+  React.useEffect(() => {
+    const nghe = (e: KeyboardEvent) => {
+      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault();
+        setTimMo(true);
+      }
+    };
+    window.addEventListener('keydown', nghe);
+    return () => window.removeEventListener('keydown', nghe);
+  }, []);
 
   const hienTab = (n: Nav) =>
     tuyen === 'ca-hai' || n.group === 'academy' || (TAB_TUYEN[n.id] ?? []).includes(tuyen);
@@ -336,7 +353,7 @@ export const App: React.FC = () => {
     <nav className="space-y-1">
       {(['learner', 'academy'] as const).map((g) => (
         <div key={g} className={g === 'academy' ? 'pt-3' : ''}>
-          <p className="px-3 pb-1 text-[10px] font-semibold uppercase tracking-[0.15em] text-slate-600">
+          <p className="px-3 pb-1 text-[11px] font-semibold uppercase tracking-[0.15em] text-slate-400">
             {GROUP_LABEL[g]}
           </p>
           {NAV.filter((n) => n.group === g && hienTab(n)).map((n) => (
@@ -360,14 +377,14 @@ export const App: React.FC = () => {
                 <span className="block truncate text-[13px] font-medium leading-tight">
                   {n.label}
                 </span>
-                <span className="block truncate text-[10px] leading-tight text-slate-600">
+                <span className="block truncate text-[11px] leading-tight text-slate-400">
                   {n.hint}
                 </span>
               </span>
             </button>
           ))}
           {g === 'learner' && soAn > 0 && (
-            <p className="px-3 pt-1.5 text-[10px] leading-snug text-slate-700">
+            <p className="px-3 pt-1.5 text-[11px] leading-snug text-slate-400">
               Đang ẩn {soAn} mục không thuộc tuyến đã chọn.
             </p>
           )}
@@ -376,9 +393,21 @@ export const App: React.FC = () => {
     </nav>
   );
 
+  const NutTim = (
+    <button
+      onClick={() => setTimMo(true)}
+      className="mb-3 flex w-full items-center gap-2 rounded-lg border border-slate-800 bg-slate-900 px-2.5 py-2 text-left text-[12px] text-slate-400 transition hover:border-slate-700 hover:text-slate-200">
+      <span aria-hidden="true">⌕</span>
+      <span className="flex-1">Tìm trong toàn hệ thống</span>
+      <span className="rounded border border-slate-700 px-1.5 py-0.5 text-[10px] font-medium">
+        Ctrl K
+      </span>
+    </button>
+  );
+
   const LocTuyenBar = (
     <div className="mb-4">
-      <p className="px-1 pb-1.5 text-[10px] font-semibold uppercase tracking-[0.15em] text-slate-600">
+      <p className="px-1 pb-1.5 text-[11px] font-semibold uppercase tracking-[0.15em] text-slate-400">
         Tuyến của tôi
       </p>
       <div className="flex gap-1 rounded-lg bg-slate-900 p-1">
@@ -390,7 +419,7 @@ export const App: React.FC = () => {
             className={`flex-1 rounded-md px-1.5 py-1 text-[11px] font-medium transition ${
               tuyen === l.id
                 ? 'bg-slate-700 text-slate-100'
-                : 'text-slate-500 hover:text-slate-300'
+                : 'text-slate-400 hover:text-slate-300'
             }`}>
             {l.label}
           </button>
@@ -401,6 +430,26 @@ export const App: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-slate-950 font-sans text-slate-200 antialiased">
+      {timMo && (
+        <Suspense fallback={null}>
+          <TimKiem
+            onDong={() => setTimMo(false)}
+            onChon={(t) => {
+              // Kết quả có thể nằm ở mục đang bị bộ lọc tuyến ẩn. Nhảy tới đó
+              // mà không bỏ lọc thì màn hình lại bật về mục Hai tuyến, và
+              // người dùng tưởng ô tìm hỏng. Bỏ lọc là hành vi ít gây bất ngờ
+              // nhất: họ đã hỏi đích danh mục này.
+              if (!(TAB_TUYEN[t] ?? []).includes(tuyen as TuyenId)) {
+                setTuyen('ca-hai');
+              }
+              setTab(t);
+              setTimMo(false);
+              setMenuOpen(false);
+              window.scrollTo({top: 0});
+            }}
+          />
+        </Suspense>
+      )}
       <div className="mx-auto flex max-w-[1400px]">
         {/* Sidebar — desktop */}
         <aside className="sticky top-0 hidden h-screen w-64 shrink-0 flex-col border-r border-slate-800 p-5 lg:flex">
@@ -408,13 +457,14 @@ export const App: React.FC = () => {
             <p className="bg-gradient-to-r from-sky-400 to-violet-400 bg-clip-text text-xl font-black tracking-tight text-transparent">
               ENGWIN365
             </p>
-            <p className="mt-1 text-[11px] leading-snug text-slate-500">
+            <p className="mt-1 text-[11px] leading-snug text-slate-400">
               {tuyen === 'chuyen'
                 ? 'Lớp 8 → đỗ chuyên Anh trong 22 tháng'
                 : '0 → IELTS 8.0 trong 1.095 ngày'}
             </p>
           </div>
           <div className="flex-1 overflow-y-auto">
+            {NutTim}
             {LocTuyenBar}
             {NavList}
           </div>
@@ -424,11 +474,11 @@ export const App: React.FC = () => {
                 await window.engwin!.vault.lock();
                 setUnlocked(false);
               }}
-              className="mt-3 w-full rounded-lg border border-slate-800 py-1.5 text-[11px] font-medium text-slate-500 transition hover:border-slate-700 hover:text-slate-300">
+              className="mt-3 w-full rounded-lg border border-slate-800 py-1.5 text-[11px] font-medium text-slate-400 transition hover:border-slate-700 hover:text-slate-300">
               🔒 Khoá lại
             </button>
           )}
-          <p className="mt-3 hidden border-t border-slate-800 pt-3 text-[10px] leading-relaxed text-slate-600 2xl:block">
+          <p className="mt-3 hidden border-t border-slate-800 pt-3 text-[11px] leading-relaxed text-slate-400 2xl:block">
             {NORTH_STAR.bigBet}
           </p>
         </aside>
@@ -440,14 +490,23 @@ export const App: React.FC = () => {
             <p className="bg-gradient-to-r from-sky-400 to-violet-400 bg-clip-text text-lg font-black tracking-tight text-transparent">
               ENGWIN365
             </p>
-            <button
-              onClick={() => setMenuOpen(!menuOpen)}
-              className="rounded-lg border border-slate-700 px-3 py-1.5 text-sm text-slate-300">
-              {menuOpen ? '✕' : '☰'} {active.label}
-            </button>
+            <div className="flex items-center gap-2">
+              <button
+                onClick={() => setTimMo(true)}
+                aria-label="Tìm trong toàn hệ thống"
+                className="rounded-lg border border-slate-700 px-3 py-1.5 text-sm text-slate-300">
+                ⌕
+              </button>
+              <button
+                onClick={() => setMenuOpen(!menuOpen)}
+                className="rounded-lg border border-slate-700 px-3 py-1.5 text-sm text-slate-300">
+                {menuOpen ? '✕' : '☰'} {active.label}
+              </button>
+            </div>
           </header>
           {menuOpen && (
             <div className="border-b border-slate-800 bg-slate-900 p-4 lg:hidden">
+              {NutTim}
               {LocTuyenBar}
               {NavList}
             </div>
@@ -457,8 +516,8 @@ export const App: React.FC = () => {
             <Suspense fallback={<DangTai />}>
               {active.render({tuyen, setTuyen})}
             </Suspense>
-            <footer className="mt-16 border-t border-slate-800 pt-6 text-xs leading-relaxed text-slate-600">
-              <p className="font-semibold text-slate-500">
+            <footer className="mt-16 border-t border-slate-800 pt-6 text-xs leading-relaxed text-slate-400">
+              <p className="font-semibold text-slate-400">
                 ENGWIN365 — {NORTH_STAR.meaning}
               </p>
               <p className="mt-2 max-w-3xl">

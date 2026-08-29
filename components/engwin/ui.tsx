@@ -66,7 +66,7 @@ export const Accordion: React.FC<{
         onClick={() => setOpen(!open)}
         className="flex w-full items-start gap-4 p-5 text-left transition hover:bg-slate-800/40">
         <span
-          className={`mt-1 shrink-0 text-slate-500 transition-transform ${open ? 'rotate-90' : ''}`}>
+          className={`mt-1 shrink-0 text-slate-400 transition-transform ${open ? 'rotate-90' : ''}`}>
           ▶
         </span>
         <span className="min-w-0 flex-1">
@@ -91,7 +91,7 @@ export const Field: React.FC<{label: string; children: React.ReactNode}> = ({
   children,
 }) => (
   <div className="mb-4 last:mb-0">
-    <p className="mb-1.5 text-[11px] font-semibold uppercase tracking-wider text-slate-500">
+    <p className="mb-1.5 text-[11px] font-semibold uppercase tracking-wider text-slate-400">
       {label}
     </p>
     <div className="text-sm leading-relaxed text-slate-300">{children}</div>
@@ -105,7 +105,7 @@ export const Bullets: React.FC<{items: string[]; marker?: string}> = ({
   <ul className="space-y-1.5">
     {items.map((it, i) => (
       <li key={i} className="flex gap-2.5">
-        <span className="shrink-0 select-none text-slate-600">{marker}</span>
+        <span className="shrink-0 select-none text-slate-400">{marker}</span>
         <span>{it}</span>
       </li>
     ))}
@@ -154,6 +154,6 @@ export const Stat: React.FC<{
   <div className="rounded-xl border border-slate-800 bg-slate-900/60 p-4">
     <p className="text-2xl font-bold tracking-tight text-slate-100">{value}</p>
     <p className="mt-1 text-xs font-medium text-slate-400">{label}</p>
-    {sub && <p className="mt-0.5 text-[11px] text-slate-600">{sub}</p>}
+    {sub && <p className="mt-0.5 text-[11px] text-slate-400">{sub}</p>}
   </div>
 );

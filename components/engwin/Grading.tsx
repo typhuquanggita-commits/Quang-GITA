@@ -126,7 +126,7 @@ export const Grading: React.FC = () => {
             }>
             <div className="mb-4 grid gap-2.5 md:grid-cols-2">
               <div className="rounded-lg border border-rose-500/20 bg-rose-500/5 p-3">
-                <p className="text-[10px] font-semibold uppercase tracking-wider text-rose-400">
+                <p className="text-[11px] font-semibold uppercase tracking-wider text-rose-400">
                   ✕ Sai
                 </p>
                 <p className="mt-1 font-mono text-xs leading-relaxed text-slate-300">
@@ -134,7 +134,7 @@ export const Grading: React.FC = () => {
                 </p>
               </div>
               <div className="rounded-lg border border-emerald-500/20 bg-emerald-500/5 p-3">
-                <p className="text-[10px] font-semibold uppercase tracking-wider text-emerald-400">
+                <p className="text-[11px] font-semibold uppercase tracking-wider text-emerald-400">
                   ✓ Đúng
                 </p>
                 <p className="mt-1 font-mono text-xs leading-relaxed text-slate-300">
@@ -172,7 +172,7 @@ export const Grading: React.FC = () => {
               </div>
             </Field>
             <div className="rounded-lg border border-emerald-500/20 bg-emerald-500/5 p-3">
-              <p className="text-[10px] font-semibold uppercase tracking-wider text-emerald-400">
+              <p className="text-[11px] font-semibold uppercase tracking-wider text-emerald-400">
                 ✓ Nhuần nhuyễn khi
               </p>
               <p className="mt-1 text-sm leading-relaxed text-slate-300">

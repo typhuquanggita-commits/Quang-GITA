@@ -29,7 +29,7 @@ import {Card, Chip, Field, Bullets, NumberedSteps, Filters} from './ui';
 import {KeyAction} from '../../types';
 
 const YoursBadge = () => (
-  <span className="ml-2 inline-flex items-center rounded-full bg-amber-400/15 px-2 py-0.5 text-[10px] font-semibold text-amber-300 ring-1 ring-inset ring-amber-400/40">
+  <span className="ml-2 inline-flex items-center rounded-full bg-amber-400/15 px-2 py-0.5 text-[11px] font-semibold text-amber-300 ring-1 ring-inset ring-amber-400/40">
     ◆ Bạn phải tự viết
   </span>
 );
@@ -73,7 +73,7 @@ const TenList: React.FC<{items: KeyAction[]}> = ({items}) => (
           <p className="text-sm font-medium leading-snug text-slate-100">
             {a.action}
           </p>
-          <p className="mt-1 text-xs leading-relaxed text-slate-500">{a.why}</p>
+          <p className="mt-1 text-xs leading-relaxed text-slate-400">{a.why}</p>
         </div>
         <div className="flex shrink-0 flex-col items-end gap-1.5">
           <span className="text-[11px] font-semibold text-sky-400">
@@ -136,7 +136,7 @@ export const Charter: React.FC = () => {
                 {w.question}
               </p>
               <div className="mt-3 rounded-lg bg-slate-800/40 p-3">
-                <p className="mb-1.5 text-[10px] font-semibold uppercase tracking-wider text-slate-500">
+                <p className="mb-1.5 text-[11px] font-semibold uppercase tracking-wider text-slate-400">
                   Bản nháp — thay bằng câu của bạn
                 </p>
                 <p className="text-sm italic leading-relaxed text-slate-300">
@@ -182,7 +182,7 @@ export const Charter: React.FC = () => {
                   <div
                     key={g.label}
                     className="rounded-lg border border-slate-800 bg-slate-800/30 px-3 py-2">
-                    <p className="text-[11px] text-slate-500">{g.label}</p>
+                    <p className="text-[11px] text-slate-400">{g.label}</p>
                     <p className="mt-0.5 text-sm font-semibold text-emerald-300">
                       {g.value}
                     </p>
@@ -207,7 +207,7 @@ export const Charter: React.FC = () => {
             <p className="mt-4 text-sm leading-relaxed text-slate-300">
               {IDENTITY_STATEMENT.expanded}
             </p>
-            <p className="mt-4 border-t border-slate-800 pt-4 text-xs leading-relaxed text-slate-500">
+            <p className="mt-4 border-t border-slate-800 pt-4 text-xs leading-relaxed text-slate-400">
               {IDENTITY_STATEMENT.notAGoal}
             </p>
           </div>
@@ -248,13 +248,13 @@ export const Charter: React.FC = () => {
                   <p className="text-sm font-bold leading-snug text-slate-100">
                     {b.bet}
                   </p>
-                  <p className="mt-1 text-xs text-slate-500">{b.instead}</p>
+                  <p className="mt-1 text-xs text-slate-400">{b.instead}</p>
                   <p className="mt-3 text-sm leading-relaxed text-slate-300">
                     {b.rationale}
                   </p>
                   <div className="mt-3 grid gap-2.5 md:grid-cols-2">
                     <div className="rounded-lg border border-amber-500/20 bg-amber-500/5 p-2.5">
-                      <p className="text-[10px] font-semibold uppercase tracking-wider text-amber-400">
+                      <p className="text-[11px] font-semibold uppercase tracking-wider text-amber-400">
                         Đánh đổi tôi chấp nhận
                       </p>
                       <p className="mt-1 text-xs leading-relaxed text-slate-300">
@@ -262,7 +262,7 @@ export const Charter: React.FC = () => {
                       </p>
                     </div>
                     <div className="rounded-lg border border-rose-500/20 bg-rose-500/5 p-2.5">
-                      <p className="text-[10px] font-semibold uppercase tracking-wider text-rose-400">
+                      <p className="text-[11px] font-semibold uppercase tracking-wider text-rose-400">
                         Cược này sai nếu
                       </p>
                       <p className="mt-1 text-xs leading-relaxed text-slate-300">
@@ -290,7 +290,7 @@ export const Charter: React.FC = () => {
                       {r.amount}
                     </span>
                   </div>
-                  <p className="mt-1 text-xs text-slate-500">{r.split}</p>
+                  <p className="mt-1 text-xs text-slate-400">{r.split}</p>
                 </div>
               ))}
             </div>
@@ -324,7 +324,7 @@ export const Charter: React.FC = () => {
                   <Chip tone="sky">{v.minutes} phút</Chip>
                 )}
               </div>
-              <p className="mb-4 text-xs text-slate-500">{v.when}</p>
+              <p className="mb-4 text-xs text-slate-400">{v.when}</p>
               <div className="space-y-1.5">
                 {v.blocks.map((b, i) => (
                   <div
@@ -337,7 +337,7 @@ export const Charter: React.FC = () => {
                       {b.task}
                     </span>
                     {b.minutes > 0 && (
-                      <span className="shrink-0 text-[11px] text-slate-500">
+                      <span className="shrink-0 text-[11px] text-slate-400">
                         {b.minutes}′
                       </span>
                     )}
@@ -381,7 +381,7 @@ export const Charter: React.FC = () => {
         lead="Chỉ số DẪN đo hành vi hôm nay và tôi kiểm soát được 100%. Chỉ số TRỄ đo kết quả và luôn đến chậm vài tháng. Nguyên tắc: quản trị bằng chỉ số dẫn, xác nhận bằng chỉ số trễ. Mỗi chỉ số đều có LẰN ĐỎ — chạm vào là phải can thiệp ngay.">
         <div className="mb-5 overflow-x-auto rounded-xl border border-slate-800">
           <table className="w-full min-w-[820px] text-left text-sm">
-            <thead className="bg-slate-900 text-xs text-slate-500">
+            <thead className="bg-slate-900 text-xs text-slate-400">
               <tr>
                 <th className="px-4 py-2.5 font-medium">Chỉ số</th>
                 <th className="px-4 py-2.5 font-medium">Loại</th>
@@ -404,7 +404,7 @@ export const Charter: React.FC = () => {
                       {k.type}
                     </Chip>
                   </td>
-                  <td className="px-4 py-2.5 text-xs text-slate-500">
+                  <td className="px-4 py-2.5 text-xs text-slate-400">
                     {k.cadence}
                   </td>
                   <td className="px-4 py-2.5 text-xs font-medium text-emerald-300">
@@ -413,7 +413,7 @@ export const Charter: React.FC = () => {
                   <td className="px-4 py-2.5 text-xs text-rose-300/80">
                     {k.redline}
                   </td>
-                  <td className="px-4 py-2.5 text-xs text-slate-500">{k.how}</td>
+                  <td className="px-4 py-2.5 text-xs text-slate-400">{k.how}</td>
                 </tr>
               ))}
             </tbody>
@@ -445,7 +445,7 @@ export const Charter: React.FC = () => {
               </div>
               <div className="grid gap-2.5 md:grid-cols-2">
                 <div className="rounded-lg border border-rose-500/20 bg-rose-500/5 p-3">
-                  <p className="text-[10px] font-semibold uppercase tracking-wider text-rose-400">
+                  <p className="text-[11px] font-semibold uppercase tracking-wider text-rose-400">
                     ✕ Từ
                   </p>
                   <p className="mt-1 text-sm italic leading-relaxed text-slate-300">
@@ -453,7 +453,7 @@ export const Charter: React.FC = () => {
                   </p>
                 </div>
                 <div className="rounded-lg border border-emerald-500/20 bg-emerald-500/5 p-3">
-                  <p className="text-[10px] font-semibold uppercase tracking-wider text-emerald-400">
+                  <p className="text-[11px] font-semibold uppercase tracking-wider text-emerald-400">
                     ✓ Sang
                   </p>
                   <p className="mt-1 text-sm italic leading-relaxed text-slate-300">
@@ -519,7 +519,7 @@ export const Charter: React.FC = () => {
               <h4 className="mb-3 text-sm font-bold text-slate-100">{d.what}</h4>
               <div className="grid gap-2.5 md:grid-cols-2">
                 <div className="rounded-lg border border-slate-800 bg-slate-800/30 p-3">
-                  <p className="text-[10px] font-semibold uppercase tracking-wider text-slate-500">
+                  <p className="text-[11px] font-semibold uppercase tracking-wider text-slate-400">
                     Phần lớn người học
                   </p>
                   <p className="mt-1 text-xs leading-relaxed text-slate-400">
@@ -527,7 +527,7 @@ export const Charter: React.FC = () => {
                   </p>
                 </div>
                 <div className="rounded-lg border border-sky-500/25 bg-sky-500/5 p-3">
-                  <p className="text-[10px] font-semibold uppercase tracking-wider text-sky-400">
+                  <p className="text-[11px] font-semibold uppercase tracking-wider text-sky-400">
                     Tôi làm
                   </p>
                   <p className="mt-1 text-xs leading-relaxed text-slate-300">
@@ -565,7 +565,7 @@ export const Charter: React.FC = () => {
         <h3 className="mb-3 text-sm font-semibold uppercase tracking-wider text-slate-400">
           Sáu nguyên mẫu người học — tự định vị mình đang ở đâu
         </h3>
-        <p className="mb-4 max-w-3xl text-sm leading-relaxed text-slate-500">
+        <p className="mb-4 max-w-3xl text-sm leading-relaxed text-slate-400">
           Không có nguyên mẫu nào tốt hơn nguyên mẫu nào. Mỗi loại đều có một
           siêu năng lực và một điểm mù riêng. Việc của bạn là nhận ra mình thuộc
           loại nào, khai thác tối đa siêu năng lực, và canh chừng đúng điểm mù
@@ -584,7 +584,7 @@ export const Charter: React.FC = () => {
               </div>
               <div className="mt-4 space-y-2.5">
                 <div className="rounded-lg border border-emerald-500/20 bg-emerald-500/5 p-3">
-                  <p className="text-[10px] font-semibold uppercase tracking-wider text-emerald-400">
+                  <p className="text-[11px] font-semibold uppercase tracking-wider text-emerald-400">
                     ⚡ Siêu năng lực
                   </p>
                   <p className="mt-1 text-xs leading-relaxed text-slate-300">
@@ -592,7 +592,7 @@ export const Charter: React.FC = () => {
                   </p>
                 </div>
                 <div className="rounded-lg border border-rose-500/20 bg-rose-500/5 p-3">
-                  <p className="text-[10px] font-semibold uppercase tracking-wider text-rose-400">
+                  <p className="text-[11px] font-semibold uppercase tracking-wider text-rose-400">
                     ⚠ Điểm mù
                   </p>
                   <p className="mt-1 text-xs leading-relaxed text-slate-300">

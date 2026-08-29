@@ -69,7 +69,7 @@ const KemCap: React.FC = () => {
       </div>
 
       <div>
-        <h3 className="mb-3 text-[11px] font-bold uppercase tracking-widest text-slate-500">
+        <h3 className="mb-3 text-[11px] font-bold uppercase tracking-widest text-slate-400">
           Sáu mươi phút, sáu khối
         </h3>
         <div className="space-y-3">
@@ -77,14 +77,14 @@ const KemCap: React.FC = () => {
             <Card key={b.slot} className="flex flex-col gap-3 md:flex-row">
               <div className="shrink-0 md:w-32">
                 <p className="text-sm font-bold text-slate-100">{b.slot}</p>
-                <p className="text-[11px] text-slate-500">{b.minutes} phút</p>
+                <p className="text-[11px] text-slate-400">{b.minutes} phút</p>
                 <div className="mt-1.5">
                   <Chip tone={WHO_TONE[b.who]}>{b.who}</Chip>
                 </div>
               </div>
               <div className="min-w-0 flex-1">
                 <p className="text-xs leading-relaxed text-slate-300">{b.what}</p>
-                <p className="mt-1.5 text-[11px] leading-relaxed text-slate-500">
+                <p className="mt-1.5 text-[11px] leading-relaxed text-slate-400">
                   {b.why}
                 </p>
               </div>
@@ -94,17 +94,17 @@ const KemCap: React.FC = () => {
       </div>
 
       <div>
-        <h3 className="mb-3 text-[11px] font-bold uppercase tracking-widest text-slate-500">
+        <h3 className="mb-3 text-[11px] font-bold uppercase tracking-widest text-slate-400">
           Nhịp kèm giãn dần — mục tiêu là học viên không cần cố vấn nữa
         </h3>
         <div className="grid gap-3 lg:grid-cols-4">
           {MENTOR_STAGES.map((s) => (
             <Card key={s.no} className="flex h-full flex-col">
-              <p className="text-2xl font-black text-sky-500/50">
+              <p className="text-2xl font-black text-sky-500/80">
                 {String(s.no).padStart(2, '0')}
               </p>
               <p className="text-sm font-bold text-slate-100">{s.name}</p>
-              <p className="mt-0.5 text-[10px] text-slate-600">{s.when}</p>
+              <p className="mt-0.5 text-[11px] text-slate-400">{s.when}</p>
               <div className="mt-2">
                 <Chip tone="violet">{s.frequency}</Chip>
               </div>
@@ -172,7 +172,7 @@ const ThangCoach: React.FC = () => (
             </p>
           </div>
         </div>
-        <h4 className="mt-4 text-[11px] font-bold uppercase tracking-widest text-slate-500">
+        <h4 className="mt-4 text-[11px] font-bold uppercase tracking-widest text-slate-400">
           Phải chứng minh được
         </h4>
         <div className="mt-1.5">
@@ -207,7 +207,7 @@ const KhoaNangCao: React.FC = () => (
         <div className="mt-4 overflow-x-auto">
           <table className="w-full min-w-[680px] text-[11px]">
             <thead>
-              <tr className="border-b border-slate-800 text-left text-slate-500">
+              <tr className="border-b border-slate-800 text-left text-slate-400">
                 <th className="py-1.5 pr-2 font-medium">#</th>
                 <th className="py-1.5 pr-3 font-medium">Mô-đun</th>
                 <th className="py-1.5 pr-3 font-medium">Phút</th>
@@ -218,9 +218,9 @@ const KhoaNangCao: React.FC = () => (
             <tbody>
               {c.modules.map((m) => (
                 <tr key={m.no} className="border-b border-slate-900 align-top">
-                  <td className="py-2 pr-2 font-semibold text-slate-500">{m.no}</td>
+                  <td className="py-2 pr-2 font-semibold text-slate-400">{m.no}</td>
                   <td className="py-2 pr-3 font-medium text-slate-300">{m.name}</td>
-                  <td className="py-2 pr-3 tabular-nums text-slate-500">{m.minutes}</td>
+                  <td className="py-2 pr-3 tabular-nums text-slate-400">{m.minutes}</td>
                   <td className="py-2 pr-3 text-slate-400">{m.outcome}</td>
                   <td className="py-2 text-emerald-300/80">{m.gate}</td>
                 </tr>
@@ -234,7 +234,7 @@ const KhoaNangCao: React.FC = () => (
           <p className="mt-1.5 text-[11px] leading-relaxed text-slate-300">
             {c.capstone}
           </p>
-          <p className="mt-2 text-[11px] text-slate-500">{c.certification}</p>
+          <p className="mt-2 text-[11px] text-slate-400">{c.certification}</p>
         </div>
       </Accordion>
     ))}
@@ -278,21 +278,21 @@ const XuatSac: React.FC = () => (
     </Card>
 
     <div>
-      <h3 className="mb-3 text-[11px] font-bold uppercase tracking-widest text-slate-500">
+      <h3 className="mb-3 text-[11px] font-bold uppercase tracking-widest text-slate-400">
         Sáu khác biệt — không khác biệt nào là “học nhiều giờ hơn”
       </h3>
       <div className="space-y-3">
         {EXCELLENCE_SHIFTS.map((s) => (
           <Card key={s.no}>
             <div className="flex flex-wrap items-center gap-2">
-              <span className="text-lg font-black text-violet-500/50">
+              <span className="text-lg font-black text-violet-500/80">
                 {String(s.no).padStart(2, '0')}
               </span>
               <h4 className="text-sm font-bold text-slate-100">{s.dimension}</h4>
             </div>
             <div className="mt-3 grid gap-3 md:grid-cols-2">
               <div className="rounded-lg border border-slate-800 bg-slate-950/40 p-2.5">
-                <p className="text-[10px] font-semibold uppercase tracking-widest text-slate-600">
+                <p className="text-[11px] font-semibold uppercase tracking-widest text-slate-400">
                   Lộ trình chuẩn
                 </p>
                 <p className="mt-1 text-[11px] leading-relaxed text-slate-400">
@@ -300,7 +300,7 @@ const XuatSac: React.FC = () => (
                 </p>
               </div>
               <div className="rounded-lg border border-violet-500/25 bg-violet-500/[0.05] p-2.5">
-                <p className="text-[10px] font-semibold uppercase tracking-widest text-violet-400">
+                <p className="text-[11px] font-semibold uppercase tracking-widest text-violet-400">
                   Lộ trình xuất sắc
                 </p>
                 <p className="mt-1 text-[11px] leading-relaxed text-slate-300">
@@ -308,7 +308,7 @@ const XuatSac: React.FC = () => (
                 </p>
               </div>
             </div>
-            <p className="mt-2.5 text-[11px] leading-relaxed text-slate-500">
+            <p className="mt-2.5 text-[11px] leading-relaxed text-slate-400">
               {s.why}
             </p>
             <p className="mt-1.5 text-[11px] leading-relaxed text-amber-300/80">

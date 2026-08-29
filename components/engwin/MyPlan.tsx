@@ -72,7 +72,7 @@ const Intake: React.FC<{
             className={`shrink-0 rounded-lg px-4 py-2 text-sm font-semibold transition ${
               ready
                 ? 'bg-sky-500 text-slate-950 hover:bg-sky-400'
-                : 'cursor-not-allowed bg-slate-800 text-slate-600'
+                : 'cursor-not-allowed bg-slate-800 text-slate-400'
             }`}>
             Dựng kế hoạch →
           </button>
@@ -90,13 +90,13 @@ const Intake: React.FC<{
                 <p className="text-base font-semibold text-slate-100">
                   {q.question}
                   {q.kind === 'multi' && (
-                    <span className="ml-2 text-xs font-normal text-slate-500">
+                    <span className="ml-2 text-xs font-normal text-slate-400">
                       (chọn nhiều)
                     </span>
                   )}
                 </p>
                 {q.help && (
-                  <p className="mt-1.5 text-xs leading-relaxed text-slate-500">
+                  <p className="mt-1.5 text-xs leading-relaxed text-slate-400">
                     {q.help}
                   </p>
                 )}
@@ -118,7 +118,7 @@ const Intake: React.FC<{
                         {o.label}
                       </span>
                       {o.hint && (
-                        <span className="mt-0.5 block text-[11px] leading-snug text-slate-500">
+                        <span className="mt-0.5 block text-[11px] leading-snug text-slate-400">
                           {o.hint}
                         </span>
                       )}
@@ -147,7 +147,7 @@ const FeasibilityCard: React.FC<{plan: DerivedPlan}> = ({plan}) => {
   return (
     <Card className={`mb-8 ${ring[f.tone]}`}>
       <div className="mb-3 flex flex-wrap items-center gap-3">
-        <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-500">
+        <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-400">
           Tính khả thi
         </span>
         <Chip tone={f.tone}>{f.label}</Chip>
@@ -155,7 +155,7 @@ const FeasibilityCard: React.FC<{plan: DerivedPlan}> = ({plan}) => {
       <p className="text-sm leading-relaxed text-slate-200">{f.message}</p>
       {f.levers.length > 0 && (
         <div className="mt-4 space-y-2">
-          <p className="text-[11px] font-semibold uppercase tracking-wider text-slate-500">
+          <p className="text-[11px] font-semibold uppercase tracking-wider text-slate-400">
             Ba đòn bẩy — chọn một, ngay bây giờ
           </p>
           {f.levers.map((l) => (
@@ -194,7 +194,7 @@ const DayTable: React.FC<{blocks: DerivedPlan['fullDay']; total: number}> = ({
         </div>
       ))}
     </div>
-    <p className="mt-2.5 text-[11px] text-slate-600">
+    <p className="mt-2.5 text-[11px] text-slate-400">
       Tổng: <span className="font-semibold text-slate-400">{total} phút</span>
     </p>
   </div>
@@ -270,7 +270,7 @@ const Result: React.FC<{plan: DerivedPlan; onEdit: () => void}> = ({
         </div>
         <div className="grid gap-3 md:grid-cols-2">
           <div className="rounded-lg border border-emerald-500/20 bg-emerald-500/5 p-3">
-            <p className="text-[10px] font-semibold uppercase tracking-wider text-emerald-400">
+            <p className="text-[11px] font-semibold uppercase tracking-wider text-emerald-400">
               ⚡ Siêu năng lực của bạn
             </p>
             <p className="mt-1 text-xs leading-relaxed text-slate-300">
@@ -278,7 +278,7 @@ const Result: React.FC<{plan: DerivedPlan; onEdit: () => void}> = ({
             </p>
           </div>
           <div className="rounded-lg border border-rose-500/20 bg-rose-500/5 p-3">
-            <p className="text-[10px] font-semibold uppercase tracking-wider text-rose-400">
+            <p className="text-[11px] font-semibold uppercase tracking-wider text-rose-400">
               ⚠ Điểm mù phải canh suốt 36 tháng
             </p>
             <p className="mt-1 text-xs leading-relaxed text-slate-300">
@@ -329,7 +329,7 @@ const Result: React.FC<{plan: DerivedPlan; onEdit: () => void}> = ({
       </h3>
       <div className="mb-4 grid gap-3 md:grid-cols-2">
         <Card>
-          <p className="mb-3 text-[11px] leading-relaxed text-slate-500">
+          <p className="mb-3 text-[11px] leading-relaxed text-slate-400">
             {plan.learningMinutes} phút chia cho bốn trụ cột, cộng 5 phút nghi
             thức (đọc câu bản sắc, nhập Sổ Lỗi, tô ô lịch) — vừa đúng{' '}
             {plan.dailyMinutes} phút bạn đã chọn.
@@ -351,7 +351,7 @@ const Result: React.FC<{plan: DerivedPlan; onEdit: () => void}> = ({
                     }}
                   />
                 </div>
-                <p className="mt-1 text-[11px] leading-snug text-slate-500">
+                <p className="mt-1 text-[11px] leading-snug text-slate-400">
                   {a.note}
                 </p>
               </div>
@@ -389,7 +389,7 @@ const Result: React.FC<{plan: DerivedPlan; onEdit: () => void}> = ({
                   <div
                     key={a.no}
                     className="flex gap-2.5 rounded-lg bg-slate-800/30 px-3 py-2">
-                    <span className="text-[11px] font-bold text-slate-500">
+                    <span className="text-[11px] font-bold text-slate-400">
                       {a.no}
                     </span>
                     <span className="min-w-0 flex-1 text-xs leading-snug text-slate-300">
@@ -436,23 +436,23 @@ const Result: React.FC<{plan: DerivedPlan; onEdit: () => void}> = ({
               <div
                 className={`mb-2 h-1 w-8 rounded-full bg-gradient-to-r ${m.color}`}
               />
-              <p className="text-[10px] text-slate-500">{m.id}</p>
+              <p className="text-[11px] text-slate-400">{m.id}</p>
               <p className="text-xs font-bold text-slate-200">{m.codename}</p>
-              <p className="mt-1 text-[10px] text-slate-500">
+              <p className="mt-1 text-[11px] text-slate-400">
                 {m.bandFrom.toFixed(1)} → {m.bandTo.toFixed(1)}
               </p>
               {done && (
-                <p className="mt-1.5 text-[10px] font-medium text-slate-600">
+                <p className="mt-1.5 text-[11px] font-medium text-slate-400">
                   ✓ Đã qua
                 </p>
               )}
               {isEntry && (
-                <p className="mt-1.5 text-[10px] font-semibold text-sky-400">
+                <p className="mt-1.5 text-[11px] font-semibold text-sky-400">
                   ▶ Bắt đầu ở đây
                 </p>
               )}
               {beyond && !done && (
-                <p className="mt-1.5 text-[10px] text-slate-600">
+                <p className="mt-1.5 text-[11px] text-slate-400">
                   Vượt mục tiêu
                 </p>
               )}
@@ -466,7 +466,7 @@ const Result: React.FC<{plan: DerivedPlan; onEdit: () => void}> = ({
         Bộ tài liệu đã lọc cho bạn — {plan.resourceIds.length} nguồn
       </h3>
       <Card className="mb-4">
-        <p className="mb-3 text-xs leading-relaxed text-slate-500">
+        <p className="mb-3 text-xs leading-relaxed text-slate-400">
           Lọc theo trình độ, ngân sách và kiểu học của bạn. Bắt đầu bằng đúng
           những thứ này, đừng mở thư viện đầy đủ — thừa tài liệu gây tê liệt lựa
           chọn nhiều hơn thiếu tài liệu.
@@ -480,7 +480,7 @@ const Result: React.FC<{plan: DerivedPlan; onEdit: () => void}> = ({
         </div>
         {plan.excludedResourceIds.length > 0 && (
           <div className="mt-4 border-t border-slate-800 pt-3">
-            <p className="mb-2 text-[11px] font-semibold uppercase tracking-wider text-slate-500">
+            <p className="mb-2 text-[11px] font-semibold uppercase tracking-wider text-slate-400">
               Tạm bỏ khỏi lộ trình của bạn
             </p>
             <div className="flex flex-wrap gap-1.5">
@@ -499,7 +499,7 @@ const Result: React.FC<{plan: DerivedPlan; onEdit: () => void}> = ({
           <p className="text-lg font-semibold text-sky-300">
             {plan.firstNarrowTopic}
           </p>
-          <p className="mt-1.5 text-xs leading-relaxed text-slate-500">
+          <p className="mt-1.5 text-xs leading-relaxed text-slate-400">
             Chọn theo lĩnh vực bạn đã có kiến thức nền — nhờ vậy bạn đoán được
             nghĩa và bớt phải tra từ. Cày sâu chủ đề này 10 ngày từ 6–8 nguồn
             khác nhau, rồi kết thúc bằng một bài viết và một bài nói không chuẩn
@@ -510,14 +510,14 @@ const Result: React.FC<{plan: DerivedPlan; onEdit: () => void}> = ({
           <p className="text-lg font-semibold text-sky-300">
             {plan.clubsPerWeek} buổi
           </p>
-          <p className="mt-1.5 text-xs leading-relaxed text-slate-500">
+          <p className="mt-1.5 text-xs leading-relaxed text-slate-400">
             Chỉnh theo câu trả lời của bạn về việc học một mình hay có người, và
             theo số lần bạn đã bỏ dở trước đây.
           </p>
         </Field>
       </Card>
 
-      <p className="rounded-xl border border-slate-800 bg-slate-900/40 p-4 text-xs leading-relaxed text-slate-500">
+      <p className="rounded-xl border border-slate-800 bg-slate-900/40 p-4 text-xs leading-relaxed text-slate-400">
         Câu trả lời của bạn được lưu trong trình duyệt này (localStorage), không
         gửi đi đâu cả. Mọi con số ở trên được tính từ quỹ đạo giờ học có thật
         trong hệ thống — bạn có thể kiểm chứng ở tab{' '}
@@ -572,7 +572,7 @@ export const MyPlan: React.FC = () => {
               setMode('intake');
               window.scrollTo({top: 0});
             }}
-            className="text-xs text-slate-600 underline transition hover:text-slate-400">
+            className="text-xs text-slate-400 underline transition hover:text-slate-400">
             Xoá hồ sơ và làm lại từ đầu
           </button>
         </div>

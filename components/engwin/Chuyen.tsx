@@ -60,7 +60,7 @@ const TinhNguoc: React.FC = () => {
         <h3 className="text-sm font-bold text-slate-100">
           Đặt đích rồi tính ngược ra số câu phải đúng
         </h3>
-        <p className="mt-1.5 text-[11px] leading-relaxed text-slate-500">
+        <p className="mt-1.5 text-[11px] leading-relaxed text-slate-400">
           {EXAM_SPEC.formula.text}. {EXAM_SPEC.formula.note}
         </p>
         <div className="mt-4 grid gap-3 sm:grid-cols-3 lg:grid-cols-5">
@@ -102,7 +102,7 @@ const TinhNguoc: React.FC = () => {
       <div className="overflow-x-auto">
         <table className="w-full min-w-[560px] text-[11px]">
           <thead>
-            <tr className="border-b border-slate-800 text-left text-slate-500">
+            <tr className="border-b border-slate-800 text-left text-slate-400">
               <th className="py-2 pr-3 font-medium">Phần</th>
               <th className="py-2 pr-3 font-medium">Số câu</th>
               <th className="py-2 pr-3 font-medium">Cần đúng</th>
@@ -114,7 +114,7 @@ const TinhNguoc: React.FC = () => {
             {phan.map((p) => (
               <tr key={p.part} className="border-b border-slate-900">
                 <td className="py-2 pr-3 font-semibold text-slate-200">{p.part}</td>
-                <td className="py-2 pr-3 tabular-nums text-slate-500">{p.items}</td>
+                <td className="py-2 pr-3 tabular-nums text-slate-400">{p.items}</td>
                 <td className="py-2 pr-3 tabular-nums font-bold text-sky-300">
                   {p.needCorrect}
                 </td>
@@ -129,7 +129,7 @@ const TinhNguoc: React.FC = () => {
           </tbody>
         </table>
       </div>
-      <p className="mt-3 text-[11px] leading-relaxed text-slate-500">
+      <p className="mt-3 text-[11px] leading-relaxed text-slate-400">
         Phần ngắn phải đúng tỉ lệ cao hơn: mất một câu trong năm câu ngữ âm đau
         hơn nhiều so với mất một câu trong hai mươi lăm câu ngữ pháp.
       </p>
@@ -174,7 +174,7 @@ const CauTrucDe: React.FC = () => (
     {EXAM_PARTS.map((p) => (
       <Card key={p.no}>
         <div className="flex flex-wrap items-center gap-2">
-          <span className="text-lg font-black text-slate-700">
+          <span className="text-lg font-black text-slate-400">
             {String(p.no).padStart(2, '0')}
           </span>
           <h4 className="text-sm font-bold text-slate-100">{p.name}</h4>
@@ -209,7 +209,7 @@ const PhanBac: React.FC = () => (
       <p className="mt-3 rounded-lg border border-violet-500/20 bg-violet-500/[0.04] p-2.5 text-[11px] leading-relaxed text-violet-100/90">
         {ENTRY_TEST.whyParentSeparate}
       </p>
-      <p className="mt-2 text-[11px] leading-relaxed text-slate-500">
+      <p className="mt-2 text-[11px] leading-relaxed text-slate-400">
         {ENTRY_TEST.notForRanking}
       </p>
     </Card>
@@ -227,7 +227,7 @@ const PhanBac: React.FC = () => (
             <h4 className="text-sm font-bold text-slate-100">{b.name}</h4>
             <Chip tone={b.id === 'b-d' ? 'rose' : 'sky'}>{b.dailyMinutes}′/ngày</Chip>
           </div>
-          <p className="mt-1 text-[11px] text-slate-500">{b.entryScore}</p>
+          <p className="mt-1 text-[11px] text-slate-400">{b.entryScore}</p>
           <p className="mt-2 text-[11px] font-medium leading-relaxed text-slate-300">
             {b.feasible}
           </p>
@@ -262,7 +262,7 @@ const LoTrinh: React.FC = () => (
         <div className="mt-3 overflow-x-auto">
           <table className="w-full min-w-[520px] text-[11px]">
             <thead>
-              <tr className="border-b border-slate-800 text-left text-slate-500">
+              <tr className="border-b border-slate-800 text-left text-slate-400">
                 <th className="py-1.5 pr-3 font-medium">Khối</th>
                 <th className="py-1.5 pr-3 font-medium">Buổi/tuần</th>
                 <th className="py-1.5 pr-3 font-medium">Phút</th>
@@ -273,8 +273,8 @@ const LoTrinh: React.FC = () => (
               {p.weekly.map((w) => (
                 <tr key={w.block} className="border-b border-slate-900 align-top">
                   <td className="py-2 pr-3 font-semibold text-slate-300">{w.block}</td>
-                  <td className="py-2 pr-3 tabular-nums text-slate-500">{w.sessions}</td>
-                  <td className="py-2 pr-3 tabular-nums text-slate-500">{w.minutes}</td>
+                  <td className="py-2 pr-3 tabular-nums text-slate-400">{w.sessions}</td>
+                  <td className="py-2 pr-3 tabular-nums text-slate-400">{w.minutes}</td>
                   <td className="py-2 text-slate-400">{w.what}</td>
                 </tr>
               ))}
@@ -303,7 +303,7 @@ const BayCap: React.FC = () => (
     {CHUYEN_LEVELS.map((l) => (
       <Card key={l.no} className="flex flex-col gap-3 md:flex-row">
         <div className="shrink-0 md:w-36">
-          <span className="text-2xl font-black text-sky-500/50">
+          <span className="text-2xl font-black text-sky-500/80">
             {String(l.no).padStart(2, '0')}
           </span>
           <p className="text-sm font-bold text-slate-100">{l.name}</p>

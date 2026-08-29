@@ -117,6 +117,26 @@ ok('đổi sang tuyến chuyên thì lõi thành 70 phút', /Lõi ngày — 70 p
 ok('tinh tuý chuyên có 9 đòn bẩy', /9 đòn bẩy/i.test(tuyChuyen));
 ok('tinh tuý chuyên hiện nhịp bốn bậc', /90\s*phút\/ngày/.test(tuyChuyen));
 
+// 9. Ô tìm kiếm toàn hệ thống
+await p.keyboard.press('Control+k'); await p.waitForTimeout(1200);
+ok('Ctrl+K mở ô tìm', (await p.locator('[role=dialog]').count())===1);
+ok('chỉ mục nạp xong', /\d[\d.]{2,}\s*mẩu nội dung/.test(await p.locator('[role=dialog]').innerText()));
+await p.keyboard.type('phat am'); await p.waitForTimeout(700);
+const soKq=await p.locator('[data-hang]').count();
+ok('gõ KHÔNG DẤU vẫn ra kết quả', soKq>3, `${soKq} kết quả`);
+ok('kết quả trả về đúng chữ có dấu', /phát âm/i.test(await p.locator('[role=dialog]').innerText()));
+await p.keyboard.press('ArrowDown'); await p.waitForTimeout(200);
+await p.keyboard.press('Enter'); await p.waitForTimeout(900);
+ok('Enter đóng ô tìm và nhảy tới mục', (await p.locator('[role=dialog]').count())===0);
+await p.keyboard.press('Control+k'); await p.waitForTimeout(400);
+await p.keyboard.type('ngay 100'); await p.waitForTimeout(700);
+ok('tìm được một ngày trong hồ sơ 365', /Ngày 100/.test(await p.locator('[role=dialog]').innerText()));
+await p.locator('[data-hang="0"]').click(); await p.waitForTimeout(900);
+ok('bấm kết quả nhảy đúng tab Hồ sơ', /VÒNG/.test(await p.locator('main').innerText()));
+await p.keyboard.press('Control+k'); await p.waitForTimeout(300);
+await p.keyboard.press('Escape'); await p.waitForTimeout(300);
+ok('Esc đóng ô tìm', (await p.locator('[role=dialog]').count())===0);
+
 ok('không có lỗi trên bảng điều khiển', errs.length===0, errs.slice(0,2).join(' | '));
 console.log(`\n  ${bad===0?'ĐẠT':`HỎNG — ${bad} lỗi`}\n`);
 await b.close();

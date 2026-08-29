@@ -61,7 +61,7 @@ export const Exams: React.FC = () => {
             <Field label={`${e.sections.length} phần thi`}>
               <div className="overflow-x-auto">
                 <table className="w-full min-w-[640px] text-left text-sm">
-                  <thead className="text-xs text-slate-500">
+                  <thead className="text-xs text-slate-400">
                     <tr className="border-b border-slate-800">
                       <th className="w-8 py-2 font-medium">#</th>
                       <th className="py-2 pr-3 font-medium">Phần</th>
@@ -73,7 +73,7 @@ export const Exams: React.FC = () => {
                   <tbody>
                     {e.sections.map((s) => (
                       <tr key={s.no} className="border-b border-slate-900 align-top">
-                        <td className="py-2 text-xs font-bold text-slate-600">
+                        <td className="py-2 text-xs font-bold text-slate-400">
                           {s.no}
                         </td>
                         <td className="py-2 pr-3 text-xs font-semibold text-slate-200">
@@ -82,7 +82,7 @@ export const Exams: React.FC = () => {
                         <td className="py-2 pr-3 text-xs leading-relaxed text-slate-400">
                           {s.task}
                         </td>
-                        <td className="py-2 text-xs text-slate-500">
+                        <td className="py-2 text-xs text-slate-400">
                           {s.minutes || '—'}
                         </td>
                         <td className="py-2 text-xs font-medium text-emerald-300">
@@ -97,7 +97,7 @@ export const Exams: React.FC = () => {
 
             <div className="grid gap-3 md:grid-cols-3">
               <div className="rounded-lg border border-emerald-500/20 bg-emerald-500/5 p-3">
-                <p className="text-[10px] font-semibold uppercase tracking-wider text-emerald-400">
+                <p className="text-[11px] font-semibold uppercase tracking-wider text-emerald-400">
                   ✓ Điều kiện đạt
                 </p>
                 <p className="mt-1 text-xs leading-relaxed text-slate-300">
@@ -105,7 +105,7 @@ export const Exams: React.FC = () => {
                 </p>
               </div>
               <div className="rounded-lg border border-amber-500/20 bg-amber-500/5 p-3">
-                <p className="text-[10px] font-semibold uppercase tracking-wider text-amber-400">
+                <p className="text-[11px] font-semibold uppercase tracking-wider text-amber-400">
                   ↻ Nếu chưa đạt
                 </p>
                 <p className="mt-1 text-xs leading-relaxed text-slate-300">
@@ -113,7 +113,7 @@ export const Exams: React.FC = () => {
                 </p>
               </div>
               <div className="rounded-lg border border-slate-700 bg-slate-800/30 p-3">
-                <p className="text-[10px] font-semibold uppercase tracking-wider text-slate-400">
+                <p className="text-[11px] font-semibold uppercase tracking-wider text-slate-400">
                   Coi thi
                 </p>
                 <p className="mt-1 text-xs leading-relaxed text-slate-300">

@@ -63,15 +63,15 @@ export const Sprint: React.FC = () => {
               {c.focus}
             </p>
             <div className="mt-3 border-t border-slate-800 pt-3">
-              <p className="text-[10px] font-semibold uppercase tracking-wider text-violet-400">
+              <p className="text-[11px] font-semibold uppercase tracking-wider text-violet-400">
                 Cơ chế
               </p>
-              <p className="mt-1 text-[11px] leading-relaxed text-slate-500">
+              <p className="mt-1 text-[11px] leading-relaxed text-slate-400">
                 {c.mechanism}
               </p>
             </div>
             <div className="mt-3 rounded-lg bg-slate-800/40 p-2.5">
-              <p className="text-[10px] font-semibold uppercase tracking-wider text-slate-500">
+              <p className="text-[11px] font-semibold uppercase tracking-wider text-slate-400">
                 Cổng thoát
               </p>
               <p className="mt-1 text-[11px] leading-relaxed text-slate-300">
@@ -95,7 +95,7 @@ export const Sprint: React.FC = () => {
       <h3 className="mb-3 text-sm font-semibold uppercase tracking-wider text-slate-400">
         Một ngày trong chu kỳ — {total} phút chia sáu khối
       </h3>
-      <p className="mb-4 max-w-3xl text-sm leading-relaxed text-slate-500">
+      <p className="mb-4 max-w-3xl text-sm leading-relaxed text-slate-400">
         Cùng một lượng tiếp xúc, chia thành sáu lần cách nhau trong ngày cho kết
         quả nhớ tốt hơn hẳn dồn một lần. Ba câu mục tiêu của ngày xuất hiện ở cả
         sáu khối, cách nhau từ hai tới tám giờ.
@@ -113,7 +113,7 @@ export const Sprint: React.FC = () => {
                     {d.slot}
                   </span>
                 </div>
-                <p className="mt-1 text-[11px] text-slate-500">{d.clock}</p>
+                <p className="mt-1 text-[11px] text-slate-400">{d.clock}</p>
               </div>
               <div className="min-w-0 flex-1">
                 <p className="text-sm font-semibold text-slate-200">{d.name}</p>
@@ -122,7 +122,7 @@ export const Sprint: React.FC = () => {
                 </p>
                 <div className="mt-2.5 grid gap-2 md:grid-cols-2">
                   <div className="rounded-lg bg-slate-800/40 p-2.5">
-                    <p className="text-[10px] font-semibold uppercase tracking-wider text-violet-400">
+                    <p className="text-[11px] font-semibold uppercase tracking-wider text-violet-400">
                       Cơ chế
                     </p>
                     <p className="mt-0.5 text-[11px] leading-relaxed text-slate-400">
@@ -130,7 +130,7 @@ export const Sprint: React.FC = () => {
                     </p>
                   </div>
                   <div className="rounded-lg border border-emerald-500/20 bg-emerald-500/5 p-2.5">
-                    <p className="text-[10px] font-semibold uppercase tracking-wider text-emerald-400">
+                    <p className="text-[11px] font-semibold uppercase tracking-wider text-emerald-400">
                       Trong app
                     </p>
                     <p className="mt-0.5 text-[11px] leading-relaxed text-slate-300">
@@ -170,7 +170,7 @@ export const Sprint: React.FC = () => {
               </Field>
               <div
                 className={`rounded-lg border p-3 ${warn ? 'border-rose-500/30 bg-rose-500/10' : 'border-rose-500/20 bg-rose-500/5'}`}>
-                <p className="text-[10px] font-semibold uppercase tracking-wider text-rose-400">
+                <p className="text-[11px] font-semibold uppercase tracking-wider text-rose-400">
                   {warn ? '✕ Không đưa vào hệ thống' : '⚠ Không phải là'}
                 </p>
                 <p className="mt-1 text-sm leading-relaxed text-slate-300">
