@@ -14,7 +14,11 @@ Tập 6 — [`GEN_VIET_365_TRAI_NGHIEM.md`](GEN_VIET_365_TRAI_NGHIEM.md) — là
 đình nhìn vào**: hành trình 365 ngày, mười hai cam kết dịch vụ có mức đền, ba lớp bảo đảm,
 cách đo tác động thật và mười luật đỏ bảo vệ trẻ em.
 
-Bản trực quan đầy đủ (16 nhóm · 100 màn): mở `genviet365/index.html`.
+Tập 7 — [`GEN_VIET_365_THUONG_HIEU.md`](GEN_VIET_365_THUONG_HIEU.md) — **bộ nhận diện
+thương hiệu**, hồ sơ xác lập quyền, ánh xạ sang Chương trình giáo dục phổ thông 2018,
+và lộ trình ra toàn cầu.
+
+Bản trực quan đầy đủ (18 nhóm · 120 màn): mở `genviet365/index.html`.
 
 ---
 

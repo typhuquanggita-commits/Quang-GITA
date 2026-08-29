@@ -1,6 +1,6 @@
 /* ═══════════════════════════════════════════════════════════════
    GEN VIỆT 365 · ĐỊNH NGHĨA MÀN HÌNH
-   Mười sáu nhóm · 100 màn. Mỗi màn là một danh sách KHỐI; lớp giao diện biết
+   Mười tám nhóm · 120 màn. Mỗi màn là một danh sách KHỐI; lớp giao diện biết
    dựng từng loại khối. Thêm màn mới thì thêm ở đây, không đụng vào
    giao-dien.js — trừ khi cần một loại khối chưa từng có.
    Trong khối "van", dấu *…* thành chữ đậm.
@@ -157,6 +157,32 @@ GV.NHOM = [
       { v: 'phap-ly', t: 'Giấy tờ phải có', h: 'Mười hồ sơ và nhịp cập nhật' },
       { v: 'cau-hoi', t: 'Câu hỏi thường gặp', h: 'Sáu nhóm người hỏi · trả lời không né' },
       { v: 'so-loi', t: 'Sổ ghi lỗi công khai', h: 'Thứ rất ít nơi dám làm' }
+    ]},
+  { id: 'g17', no: '17', t: 'NHẬN DIỆN THƯƠNG HIỆU', s: 'Thứ khiến người ta nhận ra mình khi chưa thấy tên', mau: '#5140B4',
+    ds: [
+      { v: 'nen-thuong-hieu', t: 'Nền tảng thương hiệu', h: 'Định vị · lời hứa · tính cách · khác biệt' },
+      { v: 'kien-truc-th', t: 'Kiến trúc thương hiệu', h: 'GITA → Gen Việt 365 → sản phẩm · luật đặt tên' },
+      { v: 'an-gen-viet', t: 'Ấn Gen Việt', h: 'Dấu hiệu · ý niệm · năm biến thể · dựng hình' },
+      { v: 'an-dung-sai', t: 'Tám cách dùng sai', h: 'Vẽ ra thì hiểu nhanh hơn kể ra' },
+      { v: 'mau-th', t: 'Bảng màu', h: 'Chín màu · mã đủ hệ · luật tương phản' },
+      { v: 'chu-th', t: 'Bộ chữ', h: 'Ba phông · thang chữ · bộ thay thế' },
+      { v: 'hinh-th', t: 'Hình ảnh và hoạ tiết', h: 'Luật đạo đức trước luật thẩm mỹ' },
+      { v: 'giong-th', t: 'Giọng thương hiệu', h: 'Năm nguyên tắc · bảng nói và không nói' },
+      { v: 'ung-dung-th', t: 'Mười sáu ứng dụng', h: 'Từ con dấu tới phông nền sự kiện' },
+      { v: 'giu-th', t: 'Bộ tệp và luật giữ', h: 'Ai gác · bàn giao gì · rà khi nào' }
+    ]},
+  { id: 'g18', no: '18', t: 'BẢN QUYỀN VÀ TOÀN CẦU', s: 'Xác lập quyền, trình đề án, ra thế giới', mau: '#0E1826',
+    ds: [
+      { v: 'tai-san-tri-tue', t: 'Danh mục tài sản trí tuệ', h: 'Mười hai tài sản · loại quyền · nơi đăng ký' },
+      { v: 'quyen-tac-gia', t: 'Đăng ký quyền tác giả', h: 'Quyền đã có sẵn — đăng ký là để có chứng cứ' },
+      { v: 'nhan-hieu', t: 'Đăng ký nhãn hiệu', h: 'Tám bước · năm nhóm Nice' },
+      { v: 'de-an-quoc-gia', t: 'Đề án cấp quốc gia', h: 'Bảy bước · cấu trúc mười một phần' },
+      { v: 'anh-xa-chuan', t: 'Ánh xạ chuẩn quốc gia', h: 'Cây cầu sang Chương trình 2018' },
+      { v: 'ra-quoc-te', t: 'Ra quốc tế', h: 'Berne · Madrid · nguyên tắc nộp trước' },
+      { v: 'ban-dia-hoa', t: 'Bản địa hoá ba tầng', h: 'Dịch · thích ứng · tái tạo' },
+      { v: 'tuan-thu-vung', t: 'Tuân thủ theo vùng', h: 'GDPR · COPPA · và chuẩn chung' },
+      { v: 'lo-trinh-toan-cau', t: 'Lộ trình toàn cầu', h: 'Bốn chặng 2026 → 2056' },
+      { v: 'chong-xam-pham', t: 'Chống xâm phạm', h: 'Năm cấp · bằng chứng phải giữ sẵn' }
     ]}
 ];
 
@@ -1016,6 +1042,199 @@ GV.MAN = {
     { k: 'bang', cot: ['Lỗi', 'Ai bị ảnh hưởng', 'Đã sửa gì', 'Luật sinh ra từ lỗi này'], tu: 'TC_LOI_MAU' },
     { k: 'trich', t: 'Cột cuối cùng là cột quan trọng nhất. Lỗi không sinh ra luật mới thì sẽ lặp lại.', n: 'Cách đọc sổ' }
   ]}
+,
+
+/* ══════════ NHÓM 17 · NHẬN DIỆN THƯƠNG HIỆU ══════════ */
+'nen-thuong-hieu': { q: 'qt_noi_dung', k: 'Thương hiệu', t: 'Nền tảng thương hiệu',
+  p: 'Nhận diện không phải cái logo. Nhận diện là thứ khiến người ta nhận ra mình khi chưa nhìn thấy tên.',
+  khoi: [
+    { k: 'van', t: 'Sáu điều dưới đây là phần *không được đổi khi thấy chán*. Chúng chỉ đổi khi có bằng chứng rằng chúng sai — và bằng chứng ấy phải mạnh hơn cảm giác của bất kỳ ai.' },
+    { k: 'luoi', c: 2, tu: 'TH_NEN' },
+    { k: 'muc', t: 'Bốn khác biệt không sao chép được' },
+    { k: 'van', t: 'Khác biệt thật không nằm ở thứ mình *nói hay hơn*, mà ở thứ đối thủ **chép được hình thức nhưng phải trả giá thật để chép nội dung**.' },
+    { k: 'luoi', c: 2, tu: 'TH_KHAC_BIET' },
+    { k: 'trich', t: 'Mọi thứ chúng tôi nói về con anh chị đều có bằng chứng, và bằng chứng ấy có chữ ký của một người ngoài.', n: 'Lời hứa thương hiệu — lời hứa duy nhất' }
+  ]},
+
+'kien-truc-th': { q: 'qt_noi_dung', k: 'Thương hiệu', t: 'Kiến trúc thương hiệu',
+  p: 'Mô hình thương hiệu mẹ bảo chứng: GITA đứng sau, Gen Việt 365 đứng trước, sản phẩm mang tên riêng.',
+  khoi: [
+    { k: 'thap', tu: 'TH_KT_THAP' },
+    { k: 'muc', t: 'Bảy luật đặt tên' },
+    { k: 'van', t: 'Tên là thứ rò ra ngoài nhanh nhất và khó thu về nhất. Một tên nội bộ dùng sáu tháng thì đã thành tên chính thức, dù chưa ai duyệt.' },
+    { k: 'luat', tu: 'TH_LUAT_TEN' },
+    { k: 'trich', t: 'Tên GEN VIỆT chỉ gắn vào thứ đi qua cổng nghiệm thu của hệ.', n: 'Luật thứ nhất' }
+  ]},
+
+'an-gen-viet': { q: 'chung', k: 'Dấu hiệu', t: 'Ấn Gen Việt',
+  p: 'Ấn triện là vật chứng nhận của người Việt suốt nghìn năm: đóng dấu nghĩa là tôi chịu trách nhiệm về điều này.',
+  khoi: [
+    { k: 'an' },
+    { k: 'muc', t: 'Sáu ý niệm trong một dấu hiệu' },
+    { k: 'luoi', c: 2, tu: 'TH_AN_Y_NIEM' },
+    { k: 'muc', t: 'Năm biến thể và nơi dùng' },
+    { k: 'bang', cot: ['Mã', 'Biến thể', 'Là gì', 'Dùng ở đâu', 'Cỡ nhỏ nhất'], tu: 'TH_AN_BT_BANG' },
+    { k: 'muc', t: 'Tám luật dùng ấn' },
+    { k: 'luat', tu: 'TH_AN_LUAT' },
+    { k: 'trich', t: 'Nét trái luôn liền — bảy nguyên lý bất biến. Sáu chấm luôn có quãng — lên bậc phải có quãng, không liên tục, không tự động.', n: 'Hai điều không bao giờ được vẽ sai' }
+  ]},
+
+'an-dung-sai': { q: 'chung', k: 'Dấu hiệu', t: 'Tám cách dùng sai',
+  p: 'Vẽ ra thì hiểu nhanh hơn kể ra. Tám hình dưới đây đều sai, và mỗi hình sai theo một kiểu hay gặp.',
+  khoi: [
+    { k: 'ansai', tu: 'TH_AN_SAI' },
+    { k: 'trich', t: 'Hai cách sai nữa không vẽ được, vì chúng sai về đạo đức chứ không sai về hình: đóng dấu lên mặt người, và dùng bản đỏ son cho quảng cáo.', n: 'Xem tiếp tám luật dùng ấn ở màn trước' }
+  ]},
+
+'mau-th': { q: 'chung', k: 'Nhận diện', t: 'Bảng màu',
+  p: 'Kế thừa nguyên vẹn nhận diện Học viện GITA. Mọi mã màu chữ đều đã qua bộ kiểm tương phản, ở cả chế độ sáng và tối.',
+  khoi: [
+    { k: 'swatch', tu: 'TH_MAU' },
+    { k: 'muc', t: 'Sáu luật dùng màu' },
+    { k: 'luat', tu: 'TH_MAU_LUAT' },
+    { k: 'trich', t: 'Màu không bao giờ là thông tin duy nhất. Khoảng tám phần trăm nam giới không phân biệt được đỏ và lục.', n: 'Luật thứ ba' }
+  ]},
+
+'chu-th': { q: 'chung', k: 'Nhận diện', t: 'Bộ chữ',
+  p: 'Ba phông, mỗi phông một việc. Và một bộ thay thế bắt buộc phải chạy được khi phông ngoài bị chặn.',
+  khoi: [
+    { k: 'chuviet', tu: 'TH_CHU' },
+    { k: 'muc', t: 'Thang chữ' },
+    { k: 'bang', cot: ['Dùng ở đâu', 'Phông và độ đậm', 'Cỡ', 'Ghi chú'], tu: 'TH_THANG_CHU' },
+    { k: 'trich', t: 'Be Vietnam Pro do người Việt thiết kế, dấu tiếng Việt được vẽ riêng chứ không chắp vá. Đó là lý do chọn nó thay vì một phông quốc tế.', n: 'Vì sao là phông này' }
+  ]},
+
+'hinh-th': { q: 'qt_noi_dung', k: 'Nhận diện', t: 'Hình ảnh và hoạ tiết',
+  p: 'Luật đạo đức đứng trước luật thẩm mỹ. Một tấm ảnh đẹp mà vi phạm luật đầu thì không dùng.',
+  khoi: [
+    { k: 'muc', t: 'Sáu luật đạo đức khi chụp trẻ' },
+    { k: 'luat', tu: 'TH_HINH_DAO_DUC' },
+    { k: 'muc', t: 'Bốn nguyên tắc thẩm mỹ' },
+    { k: 'luoi', c: 2, tu: 'TH_HINH_THAM_MY' },
+    { k: 'muc', t: 'Ba hoạ tiết' },
+    { k: 'luoi', c: 3, tu: 'TH_HOA_TIET' },
+    { k: 'trich', t: 'Ảnh xếp hàng cười vào ống kính là ảnh của mọi trung tâm. Ảnh việc đang làm là ảnh của mình.', n: 'Nguyên tắc thứ nhất' }
+  ]},
+
+'giong-th': { q: 'chung', k: 'Nhận diện', t: 'Giọng thương hiệu',
+  p: 'Năm nguyên tắc, và một bảng đối chiếu để ai cũng nói giống nhau — khác ở giọng, không khác ở nội dung.',
+  khoi: [
+    { k: 'ly', tu: 'TH_GIONG' },
+    { k: 'muc', t: 'Bảng nói và không nói' },
+    { k: 'bang', cot: ['Không nói thế này', 'Nói thế này'], tu: 'TH_GIONG_BANG' },
+    { k: 'van', t: 'Bảng này nối tiếp *bảng thay vì* trong nhóm 06 — bảng kia dành cho lời nói với trẻ, bảng này dành cho lời nói của thương hiệu ra bên ngoài. Cùng một nguyên tắc: nói bằng việc, không bằng tính từ.' },
+    { k: 'trich', t: 'Bị động cách là chỗ trú của người không muốn chịu trách nhiệm.', n: 'Nguyên tắc thứ tư' }
+  ]},
+
+'ung-dung-th': { q: 'qt_noi_dung', k: 'Nhận diện', t: 'Mười sáu ứng dụng',
+  p: 'Từ con dấu chi hội tới phông nền sự kiện. Mỗi hạng mục ghi rõ dùng biến thể nào, cỡ nào, và điều gì không được quên.',
+  khoi: [
+    { k: 'bang', cot: ['Hạng mục', 'Biến thể và màu', 'Kích thước', 'Điều không được quên'], tu: 'TH_UNG_DUNG' },
+    { k: 'trich', t: 'Huy hiệu bằng kim loại, không phải nhựa. Thứ nặng tay thì được giữ lại.', n: 'Ghi chú của hạng mục thứ tư' }
+  ]},
+
+'giu-th': { q: 'qt_noi_dung', k: 'Nhận diện', t: 'Bộ tệp bàn giao và luật giữ nhận diện',
+  p: 'Một bộ nhận diện không có người gác thì sáu tháng sau không còn là bộ nhận diện.',
+  khoi: [
+    { k: 'muc', t: 'Tám hạng mục trong bộ bàn giao' },
+    { k: 'bang', cot: ['Hạng mục', 'Định dạng', 'Gồm gì'], tu: 'TH_TEP' },
+    { k: 'muc', t: 'Bảy luật giữ nhận diện' },
+    { k: 'luat', tu: 'TH_LUAT_GIU' },
+    { k: 'trich', t: 'Đề nghị đổi nhận diện phải nêu vấn đề trước, không nêu phương án trước. Chán không phải là một vấn đề.', n: 'Luật thứ năm' }
+  ]},
+
+/* ══════════ NHÓM 18 · BẢN QUYỀN VÀ TOÀN CẦU ══════════ */
+'tai-san-tri-tue': { q: 'dh_toan_he', k: 'Bản quyền', t: 'Danh mục tài sản trí tuệ',
+  p: 'Không đếm được thì không giữ được. Mười hai tài sản, mỗi thứ một loại quyền và một nơi đăng ký khác nhau.',
+  khoi: [
+    { k: 'muc', t: 'Đọc điều này trước' },
+    { k: 'luat', tu: 'BQ_RANH_GIOI' },
+    { k: 'muc', t: 'Mười hai tài sản' },
+    { k: 'bang', cot: ['Tài sản', 'Loại quyền', 'Nơi đăng ký', 'Ghi chú', 'Thứ tự ưu tiên'], tu: 'BQ_TAI_SAN' },
+    { k: 'trich', t: 'Tên miền rẻ hơn kiện tụng vài trăm lần. Mua trước, không mua sau.', n: 'Tài sản thứ mười hai' }
+  ]},
+
+'quyen-tac-gia': { q: 'dh_toan_he', k: 'Bản quyền', t: 'Đăng ký quyền tác giả',
+  p: 'Quyền đã phát sinh từ lúc tác phẩm được định hình. Đăng ký không tạo ra quyền — đăng ký tạo ra chứng cứ.',
+  khoi: [
+    { k: 'luoi', c: 2, tu: 'BQ_QUYEN_TG' },
+    { k: 'muc', t: 'Tám thứ trong hồ sơ' },
+    { k: 'bang', cot: ['Giấy tờ', 'Là gì', 'Chỗ hay sai'], tu: 'BQ_HO_SO_TG' },
+    { k: 'muc', t: 'Sáu cách đóng dấu thời gian — làm ngay, trước khi nộp' },
+    { k: 'van', t: 'Đăng ký mất thời gian. Sáu việc dưới đây làm được *ngay hôm nay*, chi phí gần bằng không, và chúng tạo ra chứng cứ về thời điểm ngay cả khi hồ sơ chưa nộp.' },
+    { k: 'luat', tu: 'BQ_DONG_DAU_TG' },
+    { k: 'trich', t: 'Khi có tranh chấp, bên đã có Giấy chứng nhận không phải chứng minh quyền của mình; bên kia phải chứng minh ngược lại. Đó là toàn bộ giá trị của việc đăng ký.', n: 'Vì sao vẫn nên đăng ký' }
+  ]},
+
+'nhan-hieu': { q: 'dh_toan_he', k: 'Bản quyền', t: 'Đăng ký nhãn hiệu',
+  p: 'Ngày nộp đơn là ngày xác lập quyền ưu tiên. Phần lớn các nước theo nguyên tắc ai nộp trước người đó được — không phải ai dùng trước.',
+  khoi: [
+    { k: 'buocso', tu: 'BQ_NHAN_HIEU' },
+    { k: 'muc', t: 'Năm nhóm phải nộp' },
+    { k: 'bang', cot: ['Nhóm', 'Phạm vi', 'Vì sao cần', 'Bảo hộ được gì'], tu: 'BQ_NHOM_NICE' },
+    { k: 'trich', t: 'Đổi tên ở bước tra cứu rẻ hơn đổi tên ở mọi bước sau.', n: 'Bước một' }
+  ]},
+
+'de-an-quoc-gia': { q: 'dh_toan_he', k: 'Đề án', t: 'Đề án cấp quốc gia',
+  p: 'Một đề án được xét dễ hơn nhiều khi nó phục vụ một chủ trương đã có, thay vì đề xuất một chủ trương mới.',
+  khoi: [
+    { k: 'buocso', tu: 'BQ_DE_AN' },
+    { k: 'muc', t: 'Cấu trúc hồ sơ mười một phần' },
+    { k: 'bang', cot: ['Phần', 'Gồm gì', 'Chỗ quyết định'], tu: 'BQ_CAU_TRUC_DA' },
+    { k: 'trich', t: 'Một chi hội chạy thật ba quý liên tiếp trên ngưỡng, có số liệu, có phụ huynh xác nhận — mạnh hơn một trăm trang lý luận.', n: 'Bước sáu' }
+  ]},
+
+'anh-xa-chuan': { q: 'nghiem_thu', k: 'Đề án', t: 'Ánh xạ sang chuẩn quốc gia',
+  p: 'Hội đồng thẩm định không đọc hệ của mình bằng ngôn ngữ của mình. Họ đọc bằng ngôn ngữ chuẩn quốc gia. Bảng này là cây cầu.',
+  khoi: [
+    { k: 'van', t: 'Đây là phần được đọc kỹ nhất trong cả hồ sơ đề án, và cũng là phần hay bị làm qua loa nhất. Làm đúng thì mọi phần khác được đọc với thiện cảm; làm ẩu thì mọi phần khác bị nghi ngờ.' },
+    { k: 'muc', t: 'Năm phẩm chất Gen Việt ↔ năm phẩm chất Chương trình 2018' },
+    { k: 'bang', cot: ['Phẩm chất Gen Việt', 'Nghĩa là gì', 'Phẩm chất Chương trình 2018', 'Bằng chứng thu được'], tu: 'BQ_ANH_XA_PC' },
+    { k: 'muc', t: 'Mười hai trục ↔ ba năng lực chung và bảy năng lực đặc thù' },
+    { k: 'bang', cot: ['Trục', 'Đo gì', 'Năng lực Chương trình 2018', 'Bằng chứng thu được'], tu: 'BQ_ANH_XA_NL' },
+    { k: 'muc', t: 'Năm luật của bảng ánh xạ' },
+    { k: 'luat', tu: 'BQ_ANH_XA_LUAT' },
+    { k: 'trich', t: 'Không tuyên bố hệ này thay thế nội dung giáo dục trong nhà trường. Nó bổ trợ — và nói rõ điều đó ở mọi hồ sơ.', n: 'Luật thứ hai' }
+  ]},
+
+'ra-quoc-te': { q: 'dh_toan_he', k: 'Toàn cầu', t: 'Ra quốc tế',
+  p: 'Quyền tác giả đã có sẵn ở phần lớn thế giới. Nhãn hiệu thì không — và nhãn hiệu là thứ bị chiếm mất.',
+  khoi: [
+    { k: 'luoi', c: 2, tu: 'BQ_QUOC_TE' },
+    { k: 'trich', t: 'Phải nộp ở một thị trường TRƯỚC KHI truyền thông về việc sẽ vào thị trường đó.', n: 'Hệ quả của nguyên tắc nộp trước' }
+  ]},
+
+'ban-dia-hoa': { q: 'dh_toan_he', k: 'Toàn cầu', t: 'Bản địa hoá ba tầng',
+  p: 'Dịch nguyên · thích ứng · tái tạo. Nhầm tầng là cách nhanh nhất để vừa mất chất vừa mất người.',
+  khoi: [
+    { k: 'cd4', tu: 'BQ_BAN_DIA',
+      nhan: ['Phần nào thuộc tầng này', 'Nguyên tắc', 'Làm thế nào', 'Bẫy'] },
+    { k: 'trich', t: 'Với nước sở tại: mời họ tự biên soạn bộ chân dung của họ theo đúng bảy nguyên tắc biên soạn của mình. Đây là cách xuất khẩu phương pháp, không xuất khẩu nội dung.', n: 'Tầng ba — và là chỗ khác biệt lớn nhất' }
+  ]},
+
+'tuan-thu-vung': { q: 'dh_toan_he', k: 'Toàn cầu', t: 'Tuân thủ theo vùng',
+  p: 'Luật bảo vệ trẻ em và dữ liệu khác nhau đáng kể giữa các vùng. Không suy diễn từ luật Việt Nam sang nước khác.',
+  khoi: [
+    { k: 'bang', cot: ['Vùng', 'Khung pháp lý chính', 'Điểm phải đáp ứng', 'Việc phải làm trước khi vào'], tu: 'BQ_TUAN_THU' },
+    { k: 'trich', t: 'Lý lịch tư pháp cho người tiếp xúc trẻ là bắt buộc ở mọi thị trường. Không có ngoại lệ vì thiếu người hay vì khác biệt pháp lý.', n: 'Dòng cuối bảng — dòng duy nhất giống nhau ở mọi nơi' }
+  ]},
+
+'lo-trinh-toan-cau': { q: 'dh_toan_he', k: 'Toàn cầu', t: 'Lộ trình toàn cầu',
+  p: 'Bốn chặng, ba mươi năm, và một cổng phải qua trước khi sang chặng sau.',
+  khoi: [
+    { k: 'van', t: 'Lộ trình này chạy *song song* với sáu chặng phát triển hệ ở nhóm 12, không thay thế. Sáu chặng kia nói hệ lớn lên thế nào; bốn chặng này nói hệ đi xa tới đâu.' },
+    { k: 'chang', tu: 'BQ_LO_TRINH' },
+    { k: 'trich', t: 'Ra quốc tế trước khi vững trong nước — lỗi phổ biến nhất và đắt nhất.', n: 'Rủi ro của chặng một' }
+  ]},
+
+'chong-xam-pham': { q: 'dh_toan_he', k: 'Bản quyền', t: 'Chống xâm phạm',
+  p: 'Năm cấp, và một nguyên tắc: bằng chứng phải có sẵn trước khi cần, không đi thu thập sau khi phát hiện.',
+  khoi: [
+    { k: 'rui', tu: 'BQ_CHONG' },
+    { k: 'muc', t: 'Bảy việc giữ bằng chứng — làm sẵn, không đợi' },
+    { k: 'luat', tu: 'BQ_BANG_CHUNG' },
+    { k: 'trich', t: 'Cấp năm là cấp duy nhất mà lợi ích thương mại không được cân nhắc: thông báo cho cơ quan chức năng trước, xử lý pháp lý sau.', n: 'Khi tên mình bị dùng để làm hại trẻ' }
+  ]}
 
 };
 
@@ -1229,5 +1448,49 @@ GV.TU = {
   TC_FAQ: GV.TC_FAQ,
   TC_SO_LOI: GV.TC_SO_LOI,
   TC_LOI_MAU: GV.TC_LOI_MAU,
+
+  /* nhóm 17 · nhận diện thương hiệu */
+  TH_NEN: GV.TH_NEN,
+  TH_KHAC_BIET: GV.TH_KHAC_BIET,
+  TH_KT_THAP: GV.TH_KIEN_TRUC.map(function (r) {
+    return { ma: r.ma, t: r.t, toc: r.tang, giu: r.n, ai: 'Admin sản phẩm (R05) gác', chi: r.vd };
+  }),
+  TH_LUAT_TEN: GV.TH_LUAT_TEN,
+  TH_AN_Y_NIEM: GV.TH_AN_Y_NIEM,
+  TH_AN_BT_BANG: GV.TH_AN_BIEN_THE.map(function (r) { return [r.ma, r.t, r.n, r.dung, r.toi]; }),
+  TH_AN_LUAT: GV.TH_AN_LUAT,
+  TH_AN_SAI: GV.TH_AN_SAI,
+  TH_MAU: GV.TH_MAU,
+  TH_MAU_LUAT: GV.TH_MAU_LUAT,
+  TH_CHU: GV.TH_CHU,
+  TH_THANG_CHU: GV.TH_THANG_CHU,
+  TH_HINH_DAO_DUC: GV.TH_HINH_DAO_DUC,
+  TH_HINH_THAM_MY: GV.TH_HINH_THAM_MY,
+  TH_HOA_TIET: GV.TH_HOA_TIET,
+  TH_GIONG: GV.TH_GIONG,
+  TH_GIONG_BANG: GV.TH_GIONG_BANG,
+  TH_UNG_DUNG: GV.TH_UNG_DUNG,
+  TH_TEP: GV.TH_TEP,
+  TH_LUAT_GIU: GV.TH_LUAT_GIU,
+
+  /* nhóm 18 · bản quyền và toàn cầu */
+  BQ_RANH_GIOI: GV.BQ_RANH_GIOI,
+  BQ_TAI_SAN: GV.BQ_TAI_SAN,
+  BQ_QUYEN_TG: GV.BQ_QUYEN_TG,
+  BQ_HO_SO_TG: GV.BQ_HO_SO_TG,
+  BQ_DONG_DAU_TG: GV.BQ_DONG_DAU_TG,
+  BQ_NHAN_HIEU: GV.BQ_NHAN_HIEU,
+  BQ_NHOM_NICE: GV.BQ_NHOM_NICE,
+  BQ_DE_AN: GV.BQ_DE_AN,
+  BQ_CAU_TRUC_DA: GV.BQ_CAU_TRUC_DA,
+  BQ_ANH_XA_PC: GV.BQ_ANH_XA_PC,
+  BQ_ANH_XA_NL: GV.BQ_ANH_XA_NL,
+  BQ_ANH_XA_LUAT: GV.BQ_ANH_XA_LUAT,
+  BQ_QUOC_TE: GV.BQ_QUOC_TE,
+  BQ_BAN_DIA: GV.BQ_BAN_DIA,
+  BQ_TUAN_THU: GV.BQ_TUAN_THU,
+  BQ_LO_TRINH: GV.BQ_LO_TRINH,
+  BQ_CHONG: GV.BQ_CHONG,
+  BQ_BANG_CHUNG: GV.BQ_BANG_CHUNG,
 
 };

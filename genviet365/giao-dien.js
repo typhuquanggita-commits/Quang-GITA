@@ -548,6 +548,153 @@
     });
   };
 
+  /* ── ẤN GEN VIỆT ────────────────────────────────────────
+     Dấu hiệu được VẼ ở đây chứ không nằm trong kho, vì nó là hình
+     chứ không phải dữ liệu. Toạ độ trong lưới 120 × 120:
+       khung  ô vuông bo góc, nét 7          — cam kết và ranh giới
+       nét trái  (38,40) → (60,84), nét 8    — bảy nguyên lý, LUÔN LIỀN
+       sáu chấm  trên đoạn (60,84) → (82,40) — sáu bậc, LUÔN CÓ QUÃNG
+     Mọi biến thể đều gọi cùng một hàm này. Không vẽ tay bản nào. */
+  var AN_CHAM = [[63.74, 76.52], [67.39, 69.22], [71.04, 61.91],
+                 [74.70, 54.61], [78.35, 47.30], [82.00, 40.00]];
+
+  function veAn(o) {
+    o = o || {};
+    var c = o.mau ? mau(o.mau) : 'currentColor';
+    var co = o.co || 120;
+    var t = [];
+    if (!o.khongKhung)
+      t.push('<rect x="10" y="10" width="100" height="100" rx="16" fill="none" ' +
+             'stroke="' + c + '" stroke-width="7"/>');
+    t.push('<path d="M38 40L60 84" fill="none" stroke="' + c + '" stroke-width="8" ' +
+           'stroke-linecap="round"' + (o.traiDut ? ' stroke-dasharray="9 7"' : '') + '/>');
+    if (o.noiLien) {
+      t.push('<path d="M60 84L82 40" fill="none" stroke="' + c + '" stroke-width="8" ' +
+             'stroke-linecap="round"/>');
+    } else {
+      AN_CHAM.forEach(function (d, i) {
+        var cc = o.chamNhieuMau ? mau(['#BE0E16', '#9E470D', '#8A6006', '#0B7350', '#0B6675', '#5140B4'][i]) : c;
+        t.push('<circle cx="' + d[0] + '" cy="' + d[1] + '" r="3.4" fill="' + cc + '"/>');
+      });
+    }
+    return '<svg class="an-h" viewBox="0 0 120 120" width="' + co + '" height="' + co + '" ' +
+      'role="img" aria-label="Ấn Gen Việt">' + t.join('') + '</svg>';
+  }
+
+  /* khoá ngang / dọc — ấn cộng tên hệ */
+  function veKhoa(doc, c) {
+    var m = G.META;
+    return '<div class="khoa' + (doc ? ' doc' : '') + '" style="--c:' + mau(c) + '">' +
+      veAn({ mau: c, co: doc ? 76 : 58 }) +
+      '<div class="khoa-chu"><span class="ten">' + e(m.ten) + '</span>' +
+      '<span class="phu">' + e(m.phu) + '</span></div></div>';
+  }
+
+  K.an = function (o) {
+    var LAM = '#185AB4', SON = '#BE0E16';
+    var h = '<div class="an-bo">';
+
+    /* bản chính, cỡ lớn, hai màu nghi lễ và thường ngày */
+    h += '<div class="an-lon">' +
+      '<figure><div class="o lam">' + veAn({ mau: LAM, co: 150 }) + '</div>' +
+      '<figcaption>Bản thường ngày · lam GITA #185AB4</figcaption></figure>' +
+      '<figure><div class="o son">' + veAn({ mau: SON, co: 150 }) + '</div>' +
+      '<figcaption>Bản nghi lễ · đỏ son #BE0E16</figcaption></figure>' +
+      '<figure><div class="o dao">' + veAn({ mau: '#FFFFFF', co: 150 }) + '</div>' +
+      '<figcaption>Bản đảo · trắng trên nền đặc</figcaption></figure>' +
+      '</div>';
+
+    /* dựng hình và vùng an toàn */
+    h += '<h3 class="muc-con">Dựng hình và vùng an toàn</h3>' +
+      '<div class="an-dung">' +
+      '<figure><div class="o luoi-an">' +
+        '<svg viewBox="-25 -25 170 170" width="200" height="200" role="img" ' +
+        'aria-label="Lưới dựng ấn với vùng an toàn">' +
+        '<rect x="-25" y="-25" width="170" height="170" fill="none" ' +
+          'stroke="currentColor" stroke-width="1" stroke-dasharray="4 4" opacity=".45"/>' +
+        '<g opacity=".28" stroke="currentColor" stroke-width="0.8">' +
+        '<line x1="60" y1="-25" x2="60" y2="145"/><line x1="-25" y1="60" x2="145" y2="60"/>' +
+        '<line x1="10" y1="-25" x2="10" y2="145"/><line x1="110" y1="-25" x2="110" y2="145"/>' +
+        '<line x1="-25" y1="10" x2="145" y2="10"/><line x1="-25" y1="110" x2="145" y2="110"/>' +
+        '</g>' +
+        '<rect x="10" y="10" width="100" height="100" rx="16" fill="none" ' +
+          'stroke="currentColor" stroke-width="7"/>' +
+        '<path d="M38 40L60 84" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>' +
+        AN_CHAM.map(function (d) {
+          return '<circle cx="' + d[0] + '" cy="' + d[1] + '" r="3.4" fill="currentColor"/>';
+        }).join('') +
+        '</svg></div>' +
+        '<figcaption>Lưới 120 × 120. Vùng an toàn 25 đơn vị mỗi phía — bằng *một phần tư* cạnh khung. Không đặt gì vào vùng ấy.</figcaption></figure>' +
+      '<figure><div class="o co-nho">' +
+        '<span>' + veAn({ mau: LAM, co: 64 }) + '<i>64 px</i></span>' +
+        '<span>' + veAn({ mau: LAM, co: 32 }) + '<i>32 px</i></span>' +
+        '<span>' + veAn({ mau: LAM, co: 16 }) + '<i>16 px</i></span>' +
+        '</div><figcaption>Cỡ nhỏ nhất là *16 px* trên màn hình và *6 mm* khi in. Nhỏ hơn thì sáu chấm dính vào nhau và ý nghĩa mất.</figcaption></figure>' +
+      '</div>';
+
+    /* năm biến thể khoá */
+    h += '<h3 class="muc-con">Năm biến thể</h3><div class="an-bt">' +
+      '<figure>' + veAn({ mau: LAM, co: 84 }) + '<figcaption><b>A · Ấn đơn</b>Huy hiệu, con dấu, thêu, ảnh đại diện</figcaption></figure>' +
+      '<figure>' + veKhoa(false, LAM) + '<figcaption><b>B · Khoá ngang</b>Giấy tiêu đề, chữ ký thư, biển hiệu</figcaption></figure>' +
+      '<figure>' + veKhoa(true, LAM) + '<figcaption><b>C · Khoá dọc</b>Bìa ấn phẩm, cờ tổ, áo</figcaption></figure>' +
+      '<figure><div class="nen-dac">' + veAn({ mau: '#FFFFFF', co: 84 }) + '</div><figcaption><b>D · Bản đảo</b>Trên nền màu đặc, trên ảnh</figcaption></figure>' +
+      '<figure>' + veAn({ mau: '#0E1826', co: 84 }) + '<figcaption><b>E · Bản một nét</b>Dập nổi, khắc, in một màu</figcaption></figure>' +
+      '</div>';
+    return h + '</div>';
+  };
+
+  /* tám cách dùng sai — vẽ ra thì hiểu nhanh hơn kể ra */
+  K.ansai = function (o) {
+    var LAM = '#185AB4';
+    var kieu = [
+      { s: 'transform:rotate(-12deg)', a: {} },
+      { a: { chamNhieuMau: true } },
+      { a: { noiLien: true } },
+      { a: { traiDut: true } },
+      { a: { khongKhung: true } },
+      { s: 'filter:drop-shadow(3px 5px 4px rgba(0,0,0,.45))', a: {} },
+      { s: 'transform:scaleX(1.38)', a: {} },
+      { nen: true, a: { mau: '#FFFFFF' } }
+    ];
+    return '<div class="an-sai">' + ds(lay(o), function (x, i) {
+      var k = kieu[i] || { a: {} };
+      var v = veAn(k.a.mau ? k.a : (function () { var b = {}; for (var q in k.a) b[q] = k.a[q]; b.mau = LAM; return b; })());
+      return '<figure><div class="o' + (k.nen ? ' ron' : '') + '">' +
+        '<div class="hinh"' + (k.s ? ' style="' + e(k.s) + '"' : '') + '>' + v + '</div>' +
+        '<span class="x" aria-hidden="true">✕</span></div>' +
+        '<figcaption><b>' + e(x[0]) + '</b>' + e(x[1]) + '</figcaption></figure>';
+    }) + '</div>';
+  };
+
+  /* bảng màu — ô màu kèm mã và tỉ số tương phản */
+  K.swatch = function (o) {
+    return '<div class="sw">' + ds(lay(o), function (x) {
+      return '<div class="sw-o"><div class="chip" style="--c:' + mau(x.mau) + '"></div>' +
+        '<div class="noi"><b>' + e(x.t) + '</b>' +
+        '<span class="ma">' + e(x.hex) + '</span>' +
+        '<span class="ma">RGB ' + e(x.rgb) + '</span>' +
+        '<span class="ma">CMYK ' + e(x.cmyk) + '</span>' +
+        '<span class="ma">' + e(x.pantone) + '</span>' +
+        '<span class="vai">' + dm(x.vai) + '</span>' +
+        '<span class="tp">Tương phản trên nền sáng: ' + e(x.tp) + '</span></div></div>';
+    }) + '</div>';
+  };
+
+  /* mẫu chữ — bày đúng bằng chính phông ấy */
+  K.chuviet = function (o) {
+    var mau2 = { 'Playfair Display': 'var(--tit)', 'Be Vietnam Pro': 'var(--chu)',
+                 'IBM Plex Mono': 'var(--ma)' };
+    return '<div class="cv">' + ds(lay(o), function (x) {
+      var f = mau2[x.t] || 'inherit';
+      return '<div class="cv-o"><div class="cv-dau"><b>' + e(x.t) + '</b>' +
+        '<span class="vai">' + e(x.vai) + '</span><span class="can">' + e(x.can) + '</span></div>' +
+        '<div class="cv-bay" style="font-family:' + f + '">' +
+          '<span class="lon">Nâng tầm trí tuệ vàng Việt Nam</span>' +
+          '<span class="vua">Ừ ĐƯỢC · nghiêng · 0123456789 · ắẳẵặễệỗộỡợửữựỳỷỹ</span>' +
+        '</div><p class="n">' + dm(x.n) + '</p><p class="vi">' + dm(x.vi) + '</p></div>';
+    }) + '</div>';
+  };
+
   /* chân dung trong Thư viện Gen Việt */
   K.nhanvat = function (o) {
     return ds(lay(o), function (x) {
@@ -593,7 +740,7 @@
   function veMan(v) {
     var m = G.MAN[v];
     if (!m) return '<div class="the"><p>Chưa có màn ' + e(v) + '.</p></div>';
-    var html = '<div class="dau"><span class="k">' + e(m.k) + '</span><h2>' + e(m.t) + '</h2>' +
+    var html = '<div class="dau"><span class="k">' + e(m.k) + '</span><h1>' + e(m.t) + '</h1>' +
       (m.p ? '<p>' + dm(m.p) + '</p>' : '') + '</div>';
     html += ds(m.khoi, function (o) {
       var f = K[o.k];
@@ -605,7 +752,7 @@
   /* Thẻ khoá — nói đúng lý do, không nói chung chung. */
   function theKhoa(v) {
     var m = G.MAN[v] || {}, ly = G.lyDoKhoa(VAI, BAC, v), r = G.timVai(VAI) || {};
-    return '<div class="dau"><span class="k">Chưa mở</span><h2>' + e(m.t || v) + '</h2></div>' +
+    return '<div class="dau"><span class="k">Chưa mở</span><h1>' + e(m.t || v) + '</h1></div>' +
       '<div class="the khoa"><h3>Đang xem với vai: ' + e(r.t || VAI) +
       (r.theoBac ? ' · bậc ' + e(BAC) : '') + '</h3>' +
       '<p>' + e(ly.n) + '</p>' +

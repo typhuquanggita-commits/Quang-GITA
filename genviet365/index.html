@@ -10,7 +10,11 @@
      style-src cần 'unsafe-inline' vì các khối tô màu bằng thuộc tính
      style="--c:#rrggbb"; giá trị ấy được lọc bằng regex trong
      giao-dien.js (hàm mau()) trước khi ghép vào thuộc tính. -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'">
+<!-- frame-ancestors CỐ Ý không đặt ở đây: trình duyệt bỏ qua chỉ thị này khi nó
+     tới bằng thẻ meta. Nó phải là ĐẦU ĐỀ HTTP do máy chủ gửi — xem hợp đồng máy
+     chủ ở tập 4. Để lại trong meta chỉ tạo ảo giác an toàn và một lỗi ở bảng điều
+     khiển. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="no-referrer">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,6 +33,8 @@
 <script src="du-lieu-trainghiem.js"></script>
 <script src="du-lieu-giatri.js"></script>
 <script src="du-lieu-tincay.js"></script>
+<script src="du-lieu-thuonghieu.js"></script>
+<script src="du-lieu-banquyen.js"></script>
 <script src="du-lieu-quyen.js"></script>
 <script src="quyen.js"></script>
 <script src="man-hinh.js"></script>

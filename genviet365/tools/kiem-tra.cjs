@@ -22,7 +22,8 @@ var vm = require('vm');
 var GOC = path.join(__dirname, '..');
 var TEP = ['du-lieu.js', 'du-lieu-daotao.js', 'du-lieu-vanhanh.js', 'du-lieu-kythuat.js',
            'du-lieu-chuyenmon.js', 'du-lieu-congdong.js', 'du-lieu-thuvien.js',
-           'du-lieu-trainghiem.js', 'du-lieu-giatri.js', 'du-lieu-tincay.js', 'du-lieu-quyen.js',
+           'du-lieu-trainghiem.js', 'du-lieu-giatri.js', 'du-lieu-tincay.js',
+           'du-lieu-thuonghieu.js', 'du-lieu-banquyen.js', 'du-lieu-quyen.js',
            'quyen.js', 'man-hinh.js'];
 var MAY = [];
 
@@ -113,7 +114,7 @@ Object.keys(G.MAN || {}).forEach(function (v) {
       o.hang.forEach(function (h, j) {
         if (h.length !== o.cot.length) L(d + ' bảng tay lệch cột ở dòng ' + j);
       });
-    } else if (!o.ds && !o.t && o.k !== 'muc' && o.k !== 'phamvi') {
+    } else if (!o.ds && !o.t && o.k !== 'muc' && o.k !== 'phamvi' && o.k !== 'an') {
       C(d + ' không có tu, ds hay t');
     }
   });
@@ -274,6 +275,66 @@ if (G.TC_FAQ) {
   if (!r[3]) L('TC_LOI_MAU[' + j + '] chưa ghi luật sinh ra từ lỗi này');
 });
 
+/* ── 6d. Nhận diện thương hiệu và bản quyền ───────────────
+      Khối "ansai" VẼ tám hình sai, còn kho TH_AN_SAI giữ tám chú
+      thích. Hai danh sách này nằm ở hai tệp khác nhau nên rất dễ
+      lệch nhau khi sửa một bên — và lệch thì hình số 7 mang chú
+      thích của cách sai số 8. Đếm và so. */
+var mSai = /var kieu = \[([\s\S]*?)\n    \];/.exec(
+  fs.readFileSync(path.join(GOC, 'giao-dien.js'), 'utf8'));
+if (!mSai) L('Không tìm thấy danh sách hình vẽ của khối ansai trong giao-dien.js');
+else {
+  var soHinh = (mSai[1].match(/\{\s*(s:|a:|nen:)/g) || []).length;
+  var soChu = (G.TH_AN_SAI || []).length;
+  if (soHinh !== soChu)
+    L('Ấn: khối ansai vẽ ' + soHinh + ' hình nhưng kho TH_AN_SAI có ' +
+      soChu + ' chú thích — hình và chú thích sẽ lệch nhau');
+}
+(G.TH_AN_SAI || []).forEach(function (r, j) {
+  if (!Array.isArray(r) || r.length !== 2 || !r[0] || !r[1])
+    L('TH_AN_SAI[' + j + '] phải có đúng hai cột: tên cách sai và vì sao sai');
+});
+
+/* Mọi mã màu trong bảng nhận diện phải đúng dạng #rrggbb, và mã
+   trong cột hex phải TRÙNG mã dùng để tô ô màu — lệch một chữ là
+   nhà in nhận sai màu. */
+(G.TH_MAU || []).forEach(function (x) {
+  ['t', 'hex', 'rgb', 'cmyk', 'pantone', 'vai', 'tp', 'mau'].forEach(function (f) {
+    if (!x[f]) L('Bảng màu · ' + (x.t || '?') + ' thiếu trường ' + f);
+  });
+  if (!/^#[0-9A-Fa-f]{6}$/.test(x.hex || ''))
+    L('Bảng màu · ' + x.t + ': mã "' + x.hex + '" không đúng dạng #rrggbb');
+  if (x.hex !== x.mau)
+    L('Bảng màu · ' + x.t + ': cột mã ghi ' + x.hex + ' nhưng ô màu tô ' + x.mau);
+});
+
+/* Ánh xạ sang chuẩn quốc gia phải phủ ĐỦ mười hai trục — thiếu một
+   trục là một câu hỏi bỏ ngỏ trước hội đồng thẩm định. */
+if (G.BQ_ANH_XA_NL && G.TRU) {
+  var truHe = [];
+  G.TRU.forEach(function (t) { t.truc.forEach(function (x) { truHe.push(t.k + x.so); }); });
+  var daAnh = G.BQ_ANH_XA_NL.map(function (r) { return String(r[0]).split(' ')[0]; });
+  truHe.forEach(function (m) {
+    if (daAnh.indexOf(m) < 0) L('Ánh xạ chuẩn quốc gia thiếu trục ' + m);
+  });
+  if (G.BQ_ANH_XA_NL.length !== truHe.length)
+    L('Ánh xạ chuẩn: có ' + G.BQ_ANH_XA_NL.length + ' dòng nhưng hệ có ' + truHe.length + ' trục');
+  ['Tự chủ và tự học', 'Giao tiếp và hợp tác', 'Giải quyết vấn đề và sáng tạo'].forEach(function (nl) {
+    var co = G.BQ_ANH_XA_NL.some(function (r) { return String(r[2]).indexOf(nl) > -1; });
+    if (!co) L('Ánh xạ chuẩn: không trục nào phủ năng lực chung “' + nl + '”');
+  });
+}
+if (G.BQ_ANH_XA_PC && G.PHAM_CHAT && G.BQ_ANH_XA_PC.length !== G.PHAM_CHAT.length)
+  L('Ánh xạ phẩm chất: có ' + G.BQ_ANH_XA_PC.length + ' dòng nhưng hệ có ' +
+    G.PHAM_CHAT.length + ' phẩm chất');
+
+/* Kho bản quyền phải luôn mở đầu bằng ranh giới của tài liệu —
+   đây là tài liệu chuẩn bị hồ sơ, không phải tư vấn pháp lý. */
+if (!G.BQ_RANH_GIOI || G.BQ_RANH_GIOI.length < 3)
+  L('Kho bản quyền thiếu phần ranh giới: phải nói rõ đây không phải tư vấn pháp lý');
+else if (!G.BQ_RANH_GIOI.join(' ').match(/không phải tư vấn pháp lý/))
+  L('Kho bản quyền: phần ranh giới chưa nói rõ “không phải tư vấn pháp lý”');
+
 /* ── 7. vỏ và bộ gộp phải nạp đủ tệp ─────────────────── */
 var html = fs.readFileSync(path.join(GOC, 'index.html'), 'utf8');
 TEP.concat(['giao-dien.js']).forEach(function (t) {
@@ -398,7 +459,60 @@ function lopChay(xong) {
         console.log('KHỔ MÀN   · soi tràn ngang ở 1400, 900 và 390 điểm ảnh');
         tran.slice(0, 8).forEach(function (m) { L('Lớp chạy: ' + m); });
         loiJs.forEach(function (m) { L('Lỗi JS khi chạy: ' + m); });
-        return b.close();
+
+        /* 4. TƯƠNG PHẢN — mọi mã màu chữ phải đạt WCAG AA (4.5:1) trên
+              nền của chính chế độ ấy, ở CẢ hai chế độ sáng và tối. Màu
+              chữ không đủ tương phản là một lỗi loại trừ người đọc, và
+              nó trôi vào kho rất dễ vì trên màn hình đẹp thì trông vẫn ổn. */
+        var TOKEN = ['--muc', '--muc2', '--muc3', '--son', '--do', '--xanh', '--vang', '--cam'];
+        function doTP(che) {
+          return b.newPage({ viewport: { width: 1280, height: 900 }, colorScheme: che })
+            .then(function (p2) {
+              return p2.goto('file://' + path.join(GOC, 'index.html'))
+                .then(function () { return p2.waitForTimeout(150); })
+                .then(function () {
+                  return p2.evaluate(function (ds) {
+                    function sang(r, g, bl) {
+                      var f = function (v) {
+                        v /= 255;
+                        return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4);
+                      };
+                      return 0.2126 * f(r) + 0.7152 * f(g) + 0.0722 * f(bl);
+                    }
+                    function tuHex(h) {
+                      h = h.replace('#', '').trim();
+                      return [0, 2, 4].map(function (i) { return parseInt(h.substr(i, 2), 16); });
+                    }
+                    var nen = getComputedStyle(document.body).backgroundColor.match(/\d+/g).map(Number);
+                    var ln = sang(nen[0], nen[1], nen[2]);
+                    var cs = getComputedStyle(document.documentElement), ra = [];
+                    ds.forEach(function (t) {
+                      var v = cs.getPropertyValue(t).trim();
+                      if (!/^#[0-9A-Fa-f]{6}$/.test(v)) { ra.push([t, v, -1]); return; }
+                      var c = tuHex(v), lc = sang(c[0], c[1], c[2]);
+                      var tp = (Math.max(ln, lc) + 0.05) / (Math.min(ln, lc) + 0.05);
+                      ra.push([t, v, Math.round(tp * 100) / 100]);
+                    });
+                    return ra;
+                  }, TOKEN);
+                })
+                .then(function (r) { return p2.close().then(function () { return r; }); });
+            });
+        }
+        return doTP('light').then(function (sang) {
+          return doTP('dark').then(function (toi) {
+            [['sáng', sang], ['tối', toi]].forEach(function (cap) {
+              cap[1].forEach(function (r) {
+                if (r[2] < 0) L('Tương phản: ' + r[0] + ' ở chế độ ' + cap[0] +
+                                ' không phải mã màu #rrggbb (' + r[1] + ')');
+                else if (r[2] < 4.5) L('Tương phản: ' + r[0] + ' ' + r[1] + ' ở chế độ ' + cap[0] +
+                                       ' chỉ đạt ' + r[2] + ':1 — dưới ngưỡng WCAG AA 4.5:1');
+              });
+            });
+            console.log('TƯƠNG PHẢN· ' + TOKEN.length + ' mã màu chữ, hai chế độ · ngưỡng WCAG AA 4.5:1');
+            return b.close();
+          });
+        });
       });
     });
   }).then(xong).catch(function (x) { L('Lớp chạy hỏng: ' + x.message); xong(); });

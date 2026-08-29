@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ẤN GEN VIỆT · bản một nét · mực
+     Học viện GITA · GEN VIỆT 365 · bản 1.0
+     Lưới 120 × 120. Nét trái LUÔN LIỀN (bảy nguyên lý).
+     Sáu chấm LUÔN CÓ QUÃNG (sáu bậc). Không vẽ lại bằng tay. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120"
+     role="img" aria-label="Ấn Gen Việt">
+  <title>Ấn Gen Việt</title>
+  <rect x="10" y="10" width="100" height="100" rx="16" fill="none" stroke="#0E1826" stroke-width="7"/>
+  <path d="M38 40L60 84" fill="none" stroke="#0E1826" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="63.74" cy="76.52" r="3.4" fill="#0E1826"/>
+  <circle cx="67.39" cy="69.22" r="3.4" fill="#0E1826"/>
+  <circle cx="71.04" cy="61.91" r="3.4" fill="#0E1826"/>
+  <circle cx="74.7" cy="54.61" r="3.4" fill="#0E1826"/>
+  <circle cx="78.35" cy="47.3" r="3.4" fill="#0E1826"/>
+  <circle cx="82" cy="40" r="3.4" fill="#0E1826"/>
+</svg>
