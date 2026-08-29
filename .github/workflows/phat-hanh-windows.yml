@@ -5,13 +5,21 @@
 # vẫn ra tệp, nhưng mọi khác biệt của trình đóng gói NSIS trên nền thật đều
 # không được kiểm. Bản phát hành phải dựng đúng trên nền nó sẽ chạy.
 #
-# Kích hoạt: đẩy một thẻ dạng v* (ví dụ v1.0.0), hoặc bấm chạy tay khi tệp này
-# đã có trên nhánh mặc định.
+# Kích hoạt bằng một trong ba cách:
+#   1. Đẩy lên nhánh phát triển một commit có chữ [phát hành] trong lời commit.
+#      Có dấu hiệu này mới chạy, vì mỗi lượt dựng ra hơn 200 MB và mất gần
+#      nửa giờ — không đáng chạy cho mọi lần sửa chữ.
+#   2. Đẩy một thẻ dạng v* (ví dụ v1.0.0).
+#   3. Bấm chạy tay, khi tệp này đã có trên nhánh mặc định.
+#
+# Thẻ phát hành do chính gh tạo từ commit đang dựng, nên không cần đẩy thẻ
+# trước — tiện cho môi trường chỉ được phép đẩy lên đúng một nhánh.
 
 name: Phát hành bản Windows
 
 on:
   push:
+    branches: ['claude/ielts-8-roadmap-3-years-jsnnc6']
     tags: ['v*']
   workflow_dispatch:
 
@@ -23,6 +31,10 @@ jobs:
     name: Dựng .exe và phát hành
     runs-on: windows-latest
     timeout-minutes: 45
+    if: >-
+      github.event_name != 'push' ||
+      startsWith(github.ref, 'refs/tags/v') ||
+      contains(github.event.head_commit.message, '[phát hành]')
 
     steps:
       - name: Lấy mã nguồn
