@@ -9,7 +9,9 @@ var G = window.G || {}; window.G = G;
 /* Dán URL triển khai của Apps Script (…/exec) vào đây.
    Để trống thì ứng dụng chạy ở CHẾ ĐỘ MẪU — xem được giao diện và phần
    giới thiệu, kho chuyên môn vẫn khoá. Xem docs/TRIEN_KHAI_WEB.md. */
-G.API_CAP_PHEP = '';
+/* Giữ giá trị đã có sẵn. Bản do Apps Script phục vụ tiêm địa chỉ máy chủ vào
+   trước khi tệp này chạy — gán đè bằng chuỗi rỗng là xoá mất nó. */
+G.API_CAP_PHEP = G.API_CAP_PHEP || '';
 
 /* Không phải ai cũng sửa được tệp này — bản cài trên máy Windows nằm trong
    thư mục chương trình. Nên Super Admin còn một đường thứ hai: vào màn

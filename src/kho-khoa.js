@@ -103,12 +103,30 @@ function xinKhoa(danhSach) {
     });
 }
 
-/* ── Giải mã một gói ── */
-function moGoi(ten, khoaB64) {
+/* ── Lấy một gói đã mã hoá ──
+   Hai đường, tuỳ bản web nằm ở đâu:
+     · bản tĩnh (GitHub Pages, tên miền, bản cài trên máy) → đọc tệp cạnh ứng dụng
+     · bản do Apps Script phục vụ → xin qua máy chủ, nhận base64
+   Gói nào cũng đã mã hoá sẵn, nên đường nào cũng không lộ gì. */
+function layGoi(ten) {
+  var nguon = window.GITA_NGUON_KHO;
+  if (nguon)
+    return fetch(nguon + encodeURIComponent(ten))
+      .then(function (r) { return r.json(); })
+      .then(function (d) {
+        if (!d || !d.ok) throw new Error((d && d.error) || 'Máy chủ không trả gói ' + ten);
+        return Uint8Array.from(atob(d.du), function (c) { return c.charCodeAt(0); });
+      });
+
   return fetch('kho/' + ten + '.enc')
     .then(function (r) { if (!r.ok) throw new Error('Không tìm thấy gói ' + ten); return r.arrayBuffer(); })
-    .then(function (buf) {
-      var b = new Uint8Array(buf);
+    .then(function (buf) { return new Uint8Array(buf); });
+}
+
+/* ── Giải mã một gói ── */
+function moGoi(ten, khoaB64) {
+  return layGoi(ten)
+    .then(function (b) {
       var iv = b.slice(0, 12), tag = b.slice(12, 28), ma = b.slice(28);
       var kem = new Uint8Array(ma.length + tag.length);
       kem.set(ma); kem.set(tag, ma.length);       // WebCrypto chờ tag ở cuối
@@ -129,7 +147,10 @@ function gop(du) {
 
 /* ── Chế độ mẫu: đủ để xem giao diện, không lộ kho ── */
 function napMau() {
-  return fetch('kho/mau.json').then(function (r) { return r.json(); })
+  /* Bản do Apps Script phục vụ không có thư mục kho/ cạnh trang, nên dữ liệu
+     mẫu cũng xin qua máy chủ như các gói khác. */
+  var duong = window.GITA_NGUON_KHO ? (window.GITA_NGUON_KHO + 'mau') : 'kho/mau.json';
+  return fetch(duong).then(function (r) { return r.json(); })
     .then(function (m) {
       G.KHO.cheDoMau = true;
       Object.keys(m).forEach(function(k){ G[k] = m[k]; });

@@ -23,7 +23,8 @@ const PHAN = [
   ['GITA_MatKhau.gs',  'MẬT KHẨU — đổi, quên, đặt lại bằng mã'],
   ['GITA_TaiLieu.gs',  'TÀI LIỆU — nhận tài liệu và minh chứng, kiểm duyệt'],
   ['GITA_DongBo.gs',   'ĐỒNG BỘ — hồ sơ và cài đặt giữa bản web và bản cài trên máy'],
-  ['GITA_XuatSheet.gs','XUẤT SHEET — đẩy bảng tính về thư mục Drive của Học viện']
+  ['GITA_XuatSheet.gs','XUẤT SHEET — đẩy bảng tính về thư mục Drive của Học viện'],
+  ['GITA_BanWeb.gs',   'BẢN WEB — doGet: phục vụ trang, trả gói kho, báo tình trạng']
 ];
 
 const DAU = `/**
@@ -103,6 +104,16 @@ catch (e) { console.error('  ✗ Tệp gộp sai cú pháp: ' + e.message); proc
 const lo = /toiyeugita365|password\s*=\s*['"]|pwHash:\s*hashPw_\(['"][^'"]{4,}['"]/.exec(ra);
 if (lo) { console.error('  ✗ Có mật khẩu nằm cứng trong mã: ' + lo[0]); process.exit(1); }
 
+/* Apps Script chỉ cho MỘT doGet và MỘT doPost trong cả dự án. Gộp nhầm hai
+   cái là dự án không lưu được, mà lỗi báo ra thì mơ hồ. Đếm ngay ở đây. */
+['doGet', 'doPost'].forEach(function (h) {
+  const n = (ra.match(new RegExp('^function\\s+' + h + '\\s*\\(', 'gm')) || []).length;
+  if (n !== 1) {
+    console.error('  ✗ Phải có đúng một hàm ' + h + ', đang có ' + n + '.');
+    process.exit(1);
+  }
+});
+
 console.log('  ✓ server/GITA365_TATCA.gs — ' + PHAN.length + ' phần · ' +
   ra.split('\n').length + ' dòng · ' + Math.round(ra.length / 1024) + ' KB');
-console.log('  ✓ cú pháp chạy được · không mật khẩu nào nằm cứng trong mã');
+console.log('  ✓ cú pháp chạy được · đúng một doGet và một doPost · không mật khẩu nằm cứng');

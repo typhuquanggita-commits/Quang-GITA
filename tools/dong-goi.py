@@ -81,3 +81,32 @@ html = html.replace('<script>\nG.boot();',
 out = 'GITA365_v75_GIOI_THIEU.html'
 open(out, 'w', encoding='utf-8').write(html)
 print('%s · %d KB' % (out, os.path.getsize(out) // 1024))
+
+# ══════════════════════════════════════════════════════════════════
+# 6. BẢN ĐẦY ĐỦ MỘT TỆP — để Apps Script phục vụ
+#
+# Khác bản giới thiệu ở đúng một chỗ: KHÔNG nhúng dữ liệu mẫu và KHÔNG
+# ghi đè napKho. Nó giữ nguyên đường xin khoá thật, nên khi Apps Script
+# tiêm địa chỉ máy chủ vào thì kho mở đủ theo vai và tầng.
+#
+# Vỏ ứng dụng đi một tệp, bảy gói .enc đi riêng — vì gộp cả 11 MB kho vào
+# một tệp HTML thì trình duyệt phải tải hết mới hiện được chữ đầu tiên,
+# kể cả với tài khoản chỉ được cấp một gói.
+# ══════════════════════════════════════════════════════════════════
+day = html  # bản trước bước 5, dựng lại từ đầu để khỏi lẫn
+day = open('index.html', encoding='utf-8').read()
+day = day.replace('<link rel="stylesheet" href="assets/style.css">', '<style>\n' + css + '\n</style>')
+day = day.replace('<link rel="stylesheet" href="assets/fonts.css">', '<style>\n' + fonts + '\n</style>')
+day = day.replace('href="assets/icons/icon-192.png"', 'href="%s"' % b64('assets/icons/icon-192.png'))
+for _ten in ('logo-gita.png', 'dau-gita.png'):
+    _d = os.path.join('assets', 'brand', _ten)
+    if os.path.exists(_d):
+        day = day.replace("assets/brand/" + _ten, b64(_d))
+day = day.replace('<link rel="manifest" href="manifest.webmanifest">', '')
+day = re.sub(r"if \('serviceWorker' in navigator.*?\n\}\n", '', day, flags=re.S)
+day = re.sub(r'<script src="([^"]+)"></script>', nhung, day)
+
+out2 = 'GITA365.html'
+open(out2, 'w', encoding='utf-8').write(day)
+print('%s · %d KB  (vỏ đầy đủ — Apps Script phục vụ, kho đi riêng)'
+      % (out2, os.path.getsize(out2) // 1024))

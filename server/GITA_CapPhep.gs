@@ -153,8 +153,10 @@ function doPost(e) {
   }
 }
 
-/** Kiểm tra máy chủ còn sống và đã nạp khoá chưa. Không trả khoá nào. */
-function doGet() {
+/** Kiểm tra máy chủ còn sống và đã nạp khoá chưa. Không trả khoá nào.
+    Apps Script chỉ cho phép MỘT hàm doGet trong cả dự án, nên hàm này không
+    còn tên doGet nữa — bộ định tuyến trong GITA_BanWeb.gs gọi nó. */
+function gitaTrangThai_() {
   var kho = {};
   try { kho = JSON.parse(PropertiesService.getScriptProperties().getProperty('GITA_KHOA_KHO') || '{}'); } catch (e) {}
   return ContentService.createTextOutput(JSON.stringify({

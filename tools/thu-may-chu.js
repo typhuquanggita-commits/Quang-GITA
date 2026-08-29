@@ -31,7 +31,8 @@ global.Utilities={
   getUuid:()=>crypto.randomUUID(),
   DigestAlgorithm:{SHA_256:'SHA-256'}, Charset:{UTF_8:'utf8'},
   computeDigest:(a,s)=>Array.from(crypto.createHash('sha256').update(s,'utf8').digest())
-    .map(b=>b>127?b-256:b)
+    .map(b=>b>127?b-256:b),
+  base64Encode:by=>Buffer.from(by.map?by.map(x=>x<0?x+256:x):by).toString('base64')
 };
 global.MailApp={sendEmail:(to,cd,than)=>{thu.push({to,cd,than});}};
 global.Logger={log:()=>{}};
@@ -44,6 +45,12 @@ const thuMuc = {
   '1jVOnIH7286glI95fC4aqfXApecxEj7Xz': {ten:'Mã máy chủ GITA365', ghiDuoc:true, tep:[]}
 };
 global.MimeType={PLAIN_TEXT:'text/plain'};
+global.HtmlService={
+  XFrameOptionsMode:{ALLOWALL:'ALLOWALL'},
+  createHtmlOutput:h2=>({_:h2, setTitle(){return this;}, addMetaTag(){return this;},
+    setXFrameOptionsMode(){return this;}})
+};
+global.ScriptApp={getService:()=>({getUrl:()=>'https://script.google.com/macros/s/GIA-LAP/exec'})};
 global.Session={getEffectiveUser:()=>({getEmail:()=>'typhuquanggita@gmail.com'})};
 global.DriveApp={
   getFolderById:id=>{
@@ -52,6 +59,14 @@ global.DriveApp={
     return {
       getName:()=>t.ten,
       addFile:()=>{},
+      getFilesByName:ten=>{
+        const f=(t.kho||{})[ten];
+        let da=false;
+        return {hasNext:()=>!!f&&!da, next:()=>{da=true; return {
+          getName:()=>ten,
+          getBlob:()=>({getDataAsString:()=>f, getBytes:()=>Array.from(Buffer.from(f))})
+        };}};
+      },
       createFile:(ten,noi)=>{
         if(!t.ghiDuoc) throw new Error('Không có quyền ghi');
         const f={ten, bo:false};
@@ -96,7 +111,7 @@ if (process.argv.indexOf('--gop') >= 0) {
   eval(fs.readFileSync('server/GITA365_TATCA.gs', 'utf8'));
 } else {
   for (const f of ['GITA_Nen.gs','GITA_CapPhep.gs','GITA_DangKy.gs','GITA_MatKhau.gs',
-                   'GITA_TaiLieu.gs','GITA_DongBo.gs','GITA_XuatSheet.gs'])
+                   'GITA_TaiLieu.gs','GITA_DongBo.gs','GITA_XuatSheet.gs','GITA_BanWeb.gs'])
     eval(fs.readFileSync('server/'+f,'utf8'));
 }
 
@@ -296,6 +311,49 @@ console.log('\n11 · MỤC LỤC HÀM');
 const ml = mucLucHam();
 ['caiDatLanDau','kiemTraQuyenDrive','napBoKhoaMotLan','datLaiMatKhauSuperAdmin']
   .forEach(h2 => bao(ml.indexOf(h2) >= 0, 'mục lục có hàm ' + h2));
+
+console.log('\n12 · BẢN WEB DO MÁY CHỦ PHỤC VỤ');
+const tmMa = __thuMuc['1jVOnIH7286glI95fC4aqfXApecxEj7Xz'];
+
+/* Chưa đặt tệp nào: phải ra trang hướng dẫn, không được trắng màn hình */
+tmMa.kho = {};
+const chua = doGet({parameter:{}})._;
+bao(/chưa đặt/i.test(chua), 'chưa đặt bản web thì ra trang hướng dẫn, không trắng màn hình');
+bao(/GITA365\.html/.test(chua) && /nghe\.enc/.test(chua),
+  'trang hướng dẫn liệt kê đúng tệp còn thiếu');
+
+/* Đặt đủ tệp */
+tmMa.kho = {'GITA365.html':'<html><head></head><body>vỏ ứng dụng</body></html>',
+  'mau.json':'{"KICHBAN":[]}'};
+['nen','nghe','tang1','tang2','tang3','tang4','tang5']
+  .forEach(g2 => { tmMa.kho[g2+'.enc'] = 'BYTE-'+g2; });
+
+const banWeb = doGet({parameter:{}})._;
+bao(/vỏ ứng dụng/.test(banWeb), 'trả đúng nội dung tệp bản web đọc từ Drive');
+bao(/GITA_NGUON_KHO/.test(banWeb) && /API_CAP_PHEP/.test(banWeb),
+  'tiêm địa chỉ máy chủ và nguồn kho vào trang');
+bao(banWeb.indexOf('<head>') < banWeb.indexOf('GITA_NGUON_KHO'),
+  'tiêm ngay sau <head>, chạy trước mọi mã của ứng dụng');
+
+const ts = JSON.parse(doGet({parameter:{viec:'trangthai'}})._);
+bao(ts.ok && ts.daNapKhoa === 7, 'đường ?viec=trangthai vẫn trả JSON tình trạng', ts.daNapKhoa+' khoá');
+
+const g1 = JSON.parse(doGet({parameter:{goi:'nghe'}})._);
+bao(g1.ok && g1.goi === 'nghe' && g1.du.length > 0, 'trả được một gói kho dạng base64');
+bao(Buffer.from(g1.du,'base64').toString() === 'BYTE-nghe', 'base64 giải ngược ra đúng byte gốc');
+
+const gm = doGet({parameter:{goi:'mau'}})._;
+bao(/KICHBAN/.test(gm), 'trả được dữ liệu mẫu cho chế độ chưa cấp phép');
+
+['bimat','../khoa','nen.enc','users'].forEach(x => {
+  const r2 = JSON.parse(doGet({parameter:{goi:x}})._);
+  bao(!r2.ok, 'tên gói "'+x+'" bị từ chối — không đọc trộm được tệp khác');
+});
+
+const thieuGoi = (() => { delete tmMa.kho['tang3.enc'];
+  return JSON.parse(doGet({parameter:{goi:'tang3'}})._); })();
+bao(!thieuGoi.ok && /tang3\.enc/.test(thieuGoi.error),
+  'thiếu một gói thì nói rõ thiếu tệp nào, không im lặng');
 
 console.log('\n' + (loi ? '✗ CÒN '+loi+' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — máy chủ chạy đúng'));
 process.exit(loi?1:0);

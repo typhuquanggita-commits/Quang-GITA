@@ -107,6 +107,10 @@ tieuDe('THỬ MÃ MÁY CHỦ');
 chay('node', ['tools/gop-may-chu.js']);
 chay('node', ['tools/thu-may-chu.js']);
 chay('node', ['tools/thu-may-chu.js', '--gop']);
+/* Bản web do Apps Script phục vụ đi một đường khác hẳn bản tĩnh — vỏ đọc từ
+   Drive, địa chỉ tiêm lúc trả trang, kho xin qua máy chủ. Thử bằng trình
+   duyệt thật, không suy ra từ bản tĩnh. */
+chay('node', ['tools/thu-ban-web.js']);
 
 /* ─── 5b. Thử bản máy tính ─── */
 tieuDe('THỬ BẢN MÁY TÍNH');
