@@ -76,10 +76,35 @@ const onDisk = [
 ok('không có bản rõ trên đĩa', !onDisk.includes('Bí mật') && !onDisk.includes('IELTS 8.0'));
 ok('không lưu mã khoá trên đĩa', !onDisk.includes('MaMoi2026') && !onDisk.includes('Engwin365!'));
 
-// 8. Quyền tệp 0600
+// 8. Quyền tệp — kiểm theo đúng cơ chế của từng hệ điều hành
+//
+// Trên Linux và macOS, quyền nằm ở mode bit và Node đặt được, nên đòi đúng 0600.
+//
+// Trên Windows KHÔNG có mode bit. Node chỉ ánh xạ được duy nhất thuộc tính
+// chỉ-đọc, và fs.stat luôn trả về 0666 hoặc 0444 dù chmod đặt gì. Đòi 0600 ở đó
+// là đòi một thứ hệ điều hành không có — bài kiểm sẽ đỏ mãi mà chẳng bảo vệ
+// thêm được gì.
+//
+// Cái BẢO VỆ THẬT trên Windows là danh sách kiểm soát truy cập của NTFS mà thư
+// mục hồ sơ người dùng truyền xuống: két nằm trong %APPDATA%\ENGWIN365, dưới
+// C:\Users\<tên>, và thư mục đó mặc định chỉ cấp quyền cho chính người dùng,
+// SYSTEM và nhóm quản trị. Người dùng thường khác trên cùng máy không đọc được.
+// Đây là mức tương đương với 0600 trên POSIX, nơi root cũng đọc được tất.
+//
+// Và ở cả hai hệ, quyền tệp chỉ là lớp phòng thủ thứ hai. Lớp thứ nhất là mã
+// hoá AES-256-GCM với khoá dẫn xuất bằng scrypt — đã kiểm ở mục 7.
+const laWindows = process.platform === 'win32';
 for (const f of ['vault.json', 'profile.enc']) {
   const mode = fs.statSync(path.join(dir, f)).mode & 0o777;
-  ok(`${f} chỉ chủ sở hữu đọc được (0600)`, mode === 0o600, `thấy ${mode.toString(8)}`);
+  if (laWindows) {
+    ok(
+      `${f} — Windows không có mode bit, quyền do ACL hồ sơ người dùng quyết định`,
+      mode === 0o666 || mode === 0o444,
+      `thấy ${mode.toString(8)}, không phải giá trị Windows thường trả về`,
+    );
+  } else {
+    ok(`${f} chỉ chủ sở hữu đọc được (0600)`, mode === 0o600, `thấy ${mode.toString(8)}`);
+  }
 }
 
 // 9. Chống sửa đổi (AES-GCM)

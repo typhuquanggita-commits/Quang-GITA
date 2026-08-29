@@ -61,6 +61,30 @@ Cụ thể:
 - Có ít nhất một chữ cái và một chữ số
 - Không phải một ký tự lặp lại, không nằm trong danh sách mã dễ đoán
 
+### Quyền tệp khác nhau giữa Windows và Linux — và vì sao vẫn đủ
+
+Trên Linux và macOS, hai tệp của két được ghi với quyền `0600`: chỉ chủ sở hữu
+đọc được.
+
+Trên Windows **không có mode bit**. Node chỉ ánh xạ được duy nhất thuộc tính
+chỉ-đọc, và `fs.stat` luôn trả về `0666` dù `chmod` đặt gì. Nói cách khác, lời
+gọi `chmod(0600)` trong mã nguồn **không có tác dụng trên Windows** — và tài
+liệu này nói thẳng điều đó thay vì để người đọc tưởng là có.
+
+Cái bảo vệ thật trên Windows là danh sách kiểm soát truy cập của NTFS mà thư mục
+hồ sơ người dùng truyền xuống. Két nằm trong `%APPDATA%\ENGWIN365`, tức dưới
+`C:\Users\<tên>`, và thư mục đó mặc định chỉ cấp quyền cho chính người dùng,
+cho SYSTEM và cho nhóm quản trị. Một người dùng thường khác trên cùng máy không
+đọc được. Đây là mức tương đương với `0600` trên POSIX — nơi `root` cũng đọc
+được tất.
+
+Ở cả hai hệ, quyền tệp chỉ là **lớp phòng thủ thứ hai**. Lớp thứ nhất là mã hoá
+AES-256-GCM với khoá dẫn xuất bằng scrypt: lấy được tệp mà không có mã khoá thì
+vẫn không đọc được gì.
+
+Bài kiểm `desktop/vault.test.cjs` kiểm đúng cơ chế của từng hệ, không đòi
+Windows một thứ hệ điều hành đó không có.
+
 ---
 
 ## 3. Bản máy tính: cách ly tiến trình

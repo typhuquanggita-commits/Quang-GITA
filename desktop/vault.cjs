@@ -88,6 +88,9 @@ class Vault {
         null,
         2,
       ),
+      // 0600 chỉ có tác dụng trên Linux và macOS. Windows không có mode bit;
+      // ở đó két được bảo vệ bằng ACL của %APPDATA%, vốn chỉ mở cho chính
+      // người dùng, SYSTEM và nhóm quản trị. Xem BAOMAT.md.
       {mode: 0o600},
     );
     this.key = key;
