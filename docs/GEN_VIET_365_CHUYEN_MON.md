@@ -10,7 +10,11 @@ phần nào trong tập này, và vì sao.
 Tập 5 — [`GEN_VIET_365_THU_VIEN.md`](GEN_VIET_365_THU_VIEN.md) — thư viện Gen Việt: 45 chân
 dung và 12 mô thức tư duy, phần *chất liệu* mà nghề này dùng để nuôi chí cho học viên.
 
-Bản trực quan đầy đủ (13 nhóm · 74 màn): mở `genviet365/index.html`.
+Tập 6 — [`GEN_VIET_365_TRAI_NGHIEM.md`](GEN_VIET_365_TRAI_NGHIEM.md) — là phần **phía gia
+đình nhìn vào**: hành trình 365 ngày, mười hai cam kết dịch vụ có mức đền, ba lớp bảo đảm,
+cách đo tác động thật và mười luật đỏ bảo vệ trẻ em.
+
+Bản trực quan đầy đủ (16 nhóm · 100 màn): mở `genviet365/index.html`.
 
 ---
 

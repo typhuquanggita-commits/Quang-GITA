@@ -67,12 +67,12 @@ dung, và tới **bậc 5 — khi em trở thành Mentor — kho nghề mở ra*
 
 | Bậc | Tên | Bậc quyền hiệu lực | % số màn | Mở thêm gì |
 |---|---|---|---|---|
-| B1 | HẠT | 16 | 43% | Hành trình của em, chi hội, nhịp tuần, bốn môi trường |
-| B2 | MẦM | 16 | 45% | Thêm sáu vòng chiều sâu và toàn bộ khoá nền |
-| B3 | THÂN | 15 | 54% | Thêm tổ mũi nhọn, sổ tay vai, biểu mẫu, bảng ngôn ngữ |
-| B4 | TRỤ | 14 | 58% | Thêm phần điều hành chi hội: bảy ghế, lịch năm, mở chi hội |
-| B5 | NGƯỜI DẪN | 13 | 71% | **Mở kho nghề** — ma trận 8×8, phác đồ, 100 chiến lược |
-| B6 | KIẾN TRÚC SƯ | 11 | 80% | Thêm cổng nghiệm thu và báo cáo |
+| B1 | HẠT | 16 | 41% | Hành trình của em, chi hội, nhịp tuần, bốn môi trường. |
+| B2 | MẦM | 16 | 42% | Thêm sáu vòng chiều sâu và toàn bộ khoá nền. |
+| B3 | THÂN | 15 | 50% | Thêm tổ mũi nhọn, sổ tay vai, biểu mẫu, bảng ngôn ngữ, cách dùng Thư viện. |
+| B4 | TRỤ | 14 | 53% | Thêm phần điều hành chi hội: bảy ghế, lịch năm, mở chi hội. |
+| B5 | NGƯỜI DẪN | 13 | 67% | MỞ KHO NGHỀ: ma trận 8×8, phác đồ, 100 chiến lược. Em đã là Mentor. |
+| B6 | KIẾN TRÚC SƯ | 11 | 78% | Thêm cổng nghiệm thu và báo cáo. Em đang giữ chuẩn. |
 
 Một số màn còn có **bậc tối thiểu riêng**, áp thêm lên trên tầng hiển thị: `vong` (B2),
 `to-mui-nhon` (B3), `ban-dieu-hanh` · `mo-chi-hoi` · `lich-nam` (B4).
@@ -96,17 +96,17 @@ Thứ tự quyết định cố ý đặt **cấm sau cho**, để cấm luôn t
 | Vai | % số màn mở được |
 |---|---|
 | R01 · R02 | 100% |
-| R03 | 98% |
+| R03 | 99% |
 | R04 | 97% |
-| R05 | 86% |
+| R05 | 84% |
 | R06 | 83% |
-| R07–R11 | 80% |
-| R12 | 77% |
-| R13 | 72% |
-| R14 | 58% |
-| R15 | 54% |
-| R16 (bậc 1) | 43% |
-| R17 | 23% |
+| R07–R11 | 78% |
+| R12 | 75% |
+| R13 | 68% |
+| R14 | 53% |
+| R15 | 50% |
+| R16 (bậc 1) | 41% |
+| R17 | 25% |
 
 Bộ kiểm phát hành đối chiếu bảng này với số đếm thật. **Lệch quá ba điểm là dừng phát
 hành** — vì lệch nghĩa là có màn bị gắn nhầm tầng, và một màn gắn nhầm tầng là một lỗ hổng
@@ -140,7 +140,7 @@ im lặng.
 
 ```bash
 node genviet365/dong-goi-artifact.cjs --vai=R16 --bac=B1 hoc-vien.html
-# Bản cắt cho R16 bậc B1: giữ 36/74 màn · 45/115 khoá tra.
+# Bản cắt cho R16 bậc B1: giữ 41/100 màn · 50/155 khoá tra.
 # Kho gốc KHÔNG nằm trong tệp ra.
 ```
 
@@ -173,17 +173,17 @@ Mã thoát khác 0 nghĩa là **không được phát hành**. Bốn lớp:
 |---|---|
 | **Tĩnh** | Màn thiếu · điều hướng trỏ sai · mã màn trùng · khối lạ · khoá tra hỏng hoặc mồ côi · bảng lệch cột · ô rỗng · chữ tạm · mã màu sai · màn chưa gắn quyền · vai không mở được màn nào · tỉ lệ hiển thị lệch · vỏ hoặc bộ gộp thiếu tệp · thiếu CSP · có `eval` · trường dữ liệu vào HTML chưa thoát |
 | **Bản cắt** | Dựng 5 bản cho vai thấp rồi soi: tệp có còn mang theo tiêu đề hay dữ liệu của màn ngoài quyền không (so **số lần xuất hiện**, để không báo nhầm chỗ được nhắc hợp lệ) |
-| **Chạy** | Dựng thật 74 màn bằng Chromium: lỗi JS · màn rỗng ruột · dấu hiệu dựng hỏng |
+| **Chạy** | Dựng thật 100 màn bằng Chromium: lỗi JS · màn rỗng ruột · dấu hiệu dựng hỏng |
 | **Cổng** | Với 8 cấu hình vai, thử **vào thẳng bằng `#hash`** vào từng màn ngoài quyền — phải ra thẻ khoá, không được ra nội dung, và mục ấy không được còn trong mục lục |
 
 Lần chạy gần nhất:
 
 ```
 BẢN CẮT   · dựng 5 bản cho vai thấp và soi rò rỉ nội dung ngoài quyền
-LỚP CHẠY  · dựng thử 74 màn với vai Super Admin
-CỔNG      · thử vào thẳng 216 màn ngoài quyền, trên 8 cấu hình vai · không chỗ nào lọt
+LỚP CHẠY  · dựng thử 100 màn với vai Super Admin
+CỔNG      · thử vào thẳng 351 màn ngoài quyền, trên 8 cấu hình vai · không chỗ nào lọt
 KHỔ MÀN   · soi tràn ngang ở 1400, 900 và 390 điểm ảnh
-KIỂM TĨNH · 74 màn · 74 mục điều hướng · 45 loại khối · 115 khoá tra
+KIỂM TĨNH · 100 màn · 100 mục điều hướng · 52 loại khối · 155 khoá tra
 
 Không lỗi. Đạt.
 ```

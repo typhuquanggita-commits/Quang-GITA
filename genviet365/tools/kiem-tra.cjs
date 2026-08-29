@@ -21,7 +21,8 @@ var vm = require('vm');
 
 var GOC = path.join(__dirname, '..');
 var TEP = ['du-lieu.js', 'du-lieu-daotao.js', 'du-lieu-vanhanh.js', 'du-lieu-kythuat.js',
-           'du-lieu-chuyenmon.js', 'du-lieu-congdong.js', 'du-lieu-thuvien.js', 'du-lieu-quyen.js',
+           'du-lieu-chuyenmon.js', 'du-lieu-congdong.js', 'du-lieu-thuvien.js',
+           'du-lieu-trainghiem.js', 'du-lieu-giatri.js', 'du-lieu-tincay.js', 'du-lieu-quyen.js',
            'quyen.js', 'man-hinh.js'];
 var MAY = [];
 
@@ -207,6 +208,71 @@ if (G.TV_QUYEN) {
     });
   });
 }
+
+/* ── 6c. Trải nghiệm · giá trị · tin cậy: đủ trường bắt buộc ── */
+var TRUONG = {
+  TN_HANH_TRINH: ['ma', 't', 'khi', 'nghi', 'so', 'lam', 'vat', 'roi', 'cuu', 'mau'],
+  TN_KHOANH_KHAC: ['so', 't', 'thuong', 'minh', 'do'],
+  TN_CAM_KET: ['ma', 'hua', 'do', 'nguong', 'den'],
+  TN_HIEN_VAT: ['t', 'khi', 'ai', 'cach', 'vi'],
+  TN_PHUC_HOI: ['b', 't', 'ai', 'n', 'ra'],
+  TN_NGHI: ['t', 'dh', 'can', 'lam', 'bay', 'mau'],
+  TN_DO_CAM: ['mau', 'b', 'n', 'lam', 'cham'],
+  GT_GOI: ['ma', 't', 'cho', 'gom', 'nhip', 'cam', 'khong', 'mau'],
+  GT_BAO_DAM: ['t', 'dk', 'duoc', 'ai', 'gioi', 'mau'],
+  GT_PHEU: ['b', 't', 'ai', 'n', 'ra'],
+  GT_PHAN_DOI: ['t', 'sau', 'hoi', 'noi', 'khong', 'mau'],
+  GT_NHA_TRUONG: ['t', 'dh', 'can', 'lam', 'bay', 'mau'],
+  GT_NHAN_RONG: ['t', 'dh', 'can', 'lam', 'bay', 'mau'],
+  TC_TANG_BC: ['so', 't', 'n', 'v'],
+  TC_THIET_KE: ['b', 't', 'ai', 'n', 'ra'],
+  TC_THEO_DOI: ['m', 't', 'v'],
+  TC_KHUNG_HOANG: ['t', 'dau', 'phanh'],
+  TC_24H: ['b', 't', 'ai', 'n', 'ra']
+};
+Object.keys(TRUONG).forEach(function (k2) {
+  var kho = G[k2];
+  if (!Array.isArray(kho)) { L('Kho ' + k2 + ' thiếu hoặc không phải mảng'); return; }
+  if (!kho.length) L('Kho ' + k2 + ' rỗng');
+  kho.forEach(function (x, j) {
+    TRUONG[k2].forEach(function (f) {
+      var v2 = x[f];
+      if (v2 == null || v2 === '' || (Array.isArray(v2) && !v2.length))
+        L('Kho ' + k2 + '[' + j + '] thiếu trường ' + f);
+    });
+  });
+});
+
+/* Mỗi cam kết dịch vụ phải có thứ ĐỀN — một lời hứa không có thứ
+   đền chỉ là một câu quảng cáo. Đây là luật của cả chương. */
+(G.TN_CAM_KET || []).forEach(function (x) {
+  if (!x.den || x.den.length < 15)
+    L('Cam kết ' + x.ma + ' chưa ghi rõ đền gì khi không giữ được');
+});
+
+/* Mỗi gói phải nói được nó KHÔNG hợp với ai. */
+(G.GT_GOI || []).forEach(function (x) {
+  if (!x.khong || x.khong.indexOf('Không phù hợp') < 0)
+    L('Gói ' + x.ma + ' chưa nói rõ không phù hợp với ai');
+});
+
+/* Câu hỏi thường gặp: đủ nhóm, mỗi câu có hỏi và có đáp. */
+if (G.TC_FAQ) {
+  if (G.TC_FAQ.length < 6) L('TC_FAQ chỉ có ' + G.TC_FAQ.length + ' nhóm, cần đủ sáu nhóm người hỏi');
+  G.TC_FAQ.forEach(function (n) {
+    if (!n.nhom || !Array.isArray(n.ds) || !n.ds.length) L('TC_FAQ có nhóm rỗng');
+    (n.ds || []).forEach(function (x, j) {
+      if (!x.h || !x.d) L('TC_FAQ · ' + n.nhom + '[' + j + '] thiếu câu hỏi hoặc câu trả lời');
+    });
+  });
+}
+
+/* Sổ ghi lỗi: cột cuối (luật sinh ra từ lỗi) không được để trống —
+   lỗi không sinh ra luật mới thì sẽ lặp lại. */
+(G.TC_LOI_MAU || []).forEach(function (r, j) {
+  if (r.length !== 4) L('TC_LOI_MAU[' + j + '] không đủ bốn cột');
+  if (!r[3]) L('TC_LOI_MAU[' + j + '] chưa ghi luật sinh ra từ lỗi này');
+});
 
 /* ── 7. vỏ và bộ gộp phải nạp đủ tệp ─────────────────── */
 var html = fs.readFileSync(path.join(GOC, 'index.html'), 'utf8');

@@ -426,14 +426,16 @@
     });
   };
 
-  /* bốn chân dung gia đình */
+  /* thẻ bốn ô — chân dung gia đình, lý do nghỉ, gói nhà trường, đường
+     nhân rộng. Bốn nhãn đặt lại được qua o.nhan, mặc định là nhãn cũ. */
   K.cd4 = function (o) {
+    var n = o.nhan || ['Dấu hiệu', 'Họ cần gì', 'Mình làm gì', 'Bẫy'];
     return '<div class="luoi hai">' + ds(lay(o), function (x) {
       return '<div class="cd4" style="--c:' + mau(x.mau) + '"><h3>' + e(x.t) + '</h3>' +
-        '<div class="d"><b>Dấu hiệu</b>' + e(x.dh) + '</div>' +
-        '<div class="d"><b>Họ cần gì</b>' + e(x.can) + '</div>' +
-        '<div class="d lam"><b>Mình làm gì</b>' + e(x.lam) + '</div>' +
-        '<div class="d bay"><b>Bẫy</b>' + e(x.bay) + '</div></div>';
+        '<div class="d"><b>' + e(n[0]) + '</b>' + dm(x.dh) + '</div>' +
+        '<div class="d"><b>' + e(n[1]) + '</b>' + dm(x.can) + '</div>' +
+        '<div class="d lam"><b>' + e(n[2]) + '</b>' + dm(x.lam) + '</div>' +
+        '<div class="d bay"><b>' + e(n[3]) + '</b>' + dm(x.bay) + '</div></div>';
     }) + '</div>';
   };
 
@@ -461,6 +463,89 @@
             return '<tr><td><strong>' + e(k.t) + '</strong></td><td class="mo">' + e(k.ly.n) + '</td></tr>';
           }) + '</tbody></table></div>'
         : '<p class="van">Vai này mở toàn bộ hệ thống, không khoá màn nào.</p>');
+  };
+
+  /* hành trình 365 ngày — mỗi chặng một thẻ có cột cảm xúc */
+  K.hanhtrinh = function (o) {
+    return '<div class="ht">' + ds(lay(o), function (x) {
+      return '<article class="ht-c" style="--c:' + mau(x.mau) + '">' +
+        '<div class="ht-dau"><span class="m">' + e(x.ma) + '</span><h3>' + e(x.t) + '</h3>' +
+        '<span class="khi">' + e(x.khi) + '</span></div>' +
+        '<div class="ht-cam"><div class="nghi"><b>Phụ huynh đang nghĩ</b>' + e(x.nghi) + '</div>' +
+        '<div class="so-ht"><b>Điều họ sợ</b>' + e(x.so) + '</div></div>' +
+        '<div class="ht-lam"><b>Hệ làm gì</b><ul>' +
+        ds(x.lam, function (y) { return '<li>' + dm(y) + '</li>'; }) + '</ul></div>' +
+        '<div class="ht-vat"><b>Gia đình cầm về</b>' + e(x.vat) + '</div>' +
+        '<div class="ht-roi"><b>Dấu hiệu đang rơi</b>' + e(x.roi) + '</div>' +
+        '<div class="ht-cuu"><b>Việc cứu</b>' + dm(x.cuu) + '</div></article>';
+    }) + '</div>';
+  };
+
+  /* khoảnh khắc quyết định — hai cột đối chiếu */
+  K.doichieu = function (o) {
+    return '<div class="dc">' + ds(lay(o), function (x) {
+      return '<div class="dc-h"><div class="dc-dau"><span class="s">' + e(x.so) + '</span>' +
+        '<h3>' + e(x.t) + '</h3></div><div class="dc-doi">' +
+        '<div class="dc-o thuong"><b>Thường thấy</b><p>' + e(x.thuong) + '</p></div>' +
+        '<div class="dc-o minh"><b>Chuẩn Gen Việt</b><p>' + dm(x.minh) + '</p></div></div>' +
+        '<div class="dc-do">Đo bằng: ' + e(x.do) + '</div></div>';
+    }) + '</div>';
+  };
+
+  /* cam kết dịch vụ — lời hứa nào cũng phải có thứ đền */
+  K.hua = function (o) {
+    return '<div class="hua">' + ds(lay(o), function (x) {
+      return '<div class="hua-h"><div class="hua-dau"><span class="m">' + e(x.ma) + '</span>' +
+        '<h3>' + e(x.hua) + '</h3></div>' +
+        '<div class="hua-o"><b>Đo bằng</b>' + e(x.do) + '</div>' +
+        '<div class="hua-o nguong"><b>Ngưỡng</b>' + e(x.nguong) + '</div>' +
+        '<div class="hua-o den"><b>Không giữ được thì đền</b>' + e(x.den) + '</div></div>';
+    }) + '</div>';
+  };
+
+  /* gói sản phẩm */
+  K.goi = function (o) {
+    return '<div class="luoi hai">' + ds(lay(o), function (x) {
+      return '<article class="goi" style="--c:' + mau(x.mau) + '">' +
+        '<div class="goi-dau"><span class="m">' + e(x.ma) + '</span><h3>' + e(x.t) + '</h3>' +
+        '<span class="nh">' + e(x.nhip) + '</span></div>' +
+        '<div class="goi-cho">' + e(x.cho) + '</div>' +
+        '<ul class="goi-gom">' + ds(x.gom, function (y) { return '<li>' + e(y) + '</li>'; }) + '</ul>' +
+        '<div class="goi-cam"><b>Cam kết đầu ra</b>' + dm(x.cam) + '</div>' +
+        '<div class="goi-khong"><b>Không phù hợp với ai</b>' + dm(x.khong) + '</div></article>';
+    }) + '</div>';
+  };
+
+  /* ba lớp bảo đảm */
+  K.baodam = function (o) {
+    return '<div class="luoi ba">' + ds(lay(o), function (x) {
+      return '<div class="bd" style="--c:' + mau(x.mau) + '"><h3>' + e(x.t) + '</h3>' +
+        '<div class="d"><b>Điều kiện</b>' + dm(x.dk) + '</div>' +
+        '<div class="d duoc"><b>Được gì</b>' + dm(x.duoc) + '</div>' +
+        '<div class="d"><b>Ai phán quyết</b>' + dm(x.ai) + '</div>' +
+        '<div class="d gioi"><b>Giới hạn nói rõ</b>' + dm(x.gioi) + '</div></div>';
+    }) + '</div>';
+  };
+
+  /* mười hai phản đối thường gặp */
+  K.phandoi = function (o) {
+    return '<div class="pd">' + ds(lay(o), function (x) {
+      return '<div class="pd-h" style="--c:' + mau(x.mau) + '"><h3>' + e(x.t) + '</h3>' +
+        '<div class="d"><b>Điều thật đằng sau</b>' + dm(x.sau) + '</div>' +
+        '<div class="d hoi-pd"><b>Hỏi lại một câu</b>' + dm(x.hoi) + '</div>' +
+        '<div class="d"><b>Nói gì</b>' + dm(x.noi) + '</div>' +
+        '<div class="d khong-pd"><b>Không nói gì</b>' + dm(x.khong) + '</div></div>';
+    }) + '</div>';
+  };
+
+  /* câu hỏi thường gặp — nhóm theo người hỏi */
+  K.faq = function (o) {
+    return ds(lay(o), function (n) {
+      return '<div class="faq" style="--c:' + mau(n.mau) + '"><h3>' + e(n.nhom) + '</h3><dl>' +
+        ds(n.ds, function (x) {
+          return '<div><dt>' + e(x.h) + '</dt><dd>' + dm(x.d) + '</dd></div>';
+        }) + '</dl></div>';
+    });
   };
 
   /* chân dung trong Thư viện Gen Việt */

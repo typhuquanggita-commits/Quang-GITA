@@ -1,6 +1,6 @@
 /* ═══════════════════════════════════════════════════════════════
    GEN VIỆT 365 · ĐỊNH NGHĨA MÀN HÌNH
-   Mười ba nhóm · 74 màn. Mỗi màn là một danh sách KHỐI; lớp giao diện biết
+   Mười sáu nhóm · 100 màn. Mỗi màn là một danh sách KHỐI; lớp giao diện biết
    dựng từng loại khối. Thêm màn mới thì thêm ở đây, không đụng vào
    giao-dien.js — trừ khi cần một loại khối chưa từng có.
    Trong khối "van", dấu *…* thành chữ đậm.
@@ -122,6 +122,41 @@ GV.NHOM = [
       { v: 'q6-duong-thoi', t: 'Quyển 6 · Người đương thời', h: 'Chân dung tập thể và trang để trống' },
       { v: 'mo-thuc-viet', t: 'Mười hai mô thức Việt', h: 'Phần dùng được hằng tuần' },
       { v: 'dung-thu-vien', t: 'Cách dùng bộ sách', h: 'Chi hội · trại · gia đình · dự án' }
+    ]},
+  { id: 'g14', no: '14', t: 'TRẢI NGHIỆM VÀ CAM KẾT', s: 'Hệ này cảm thấy thế nào từ phía gia đình', mau: '#0B6675',
+    ds: [
+      { v: 'hanh-trinh-365', t: 'Hành trình 365 ngày', h: 'Chín chặng · phụ huynh nghĩ gì, sợ gì' },
+      { v: 'khoanh-khac', t: 'Mười hai khoảnh khắc', h: 'Nơi cảm nhận cả năm được quyết định' },
+      { v: 'cam-ket-dv', t: 'Mười hai cam kết dịch vụ', h: 'Hứa gì · đo gì · sai thì đền gì' },
+      { v: 'cong-phu-huynh', t: 'Cổng phụ huynh', h: 'Thấy gì, ở đâu, khi nào' },
+      { v: 'hien-vat', t: 'Mười bốn hiện vật', h: 'Thứ cầm được, và cách trao' },
+      { v: 'phuc-hoi', t: 'Khi hỏng việc', h: 'Năm bước phục hồi dịch vụ' },
+      { v: 'giu-nguoi', t: 'Khi con muốn nghỉ', h: 'Sáu lý do thật · và cách ra đi tử tế' },
+      { v: 'do-cam-nhan', t: 'Đo cảm nhận', h: 'Sáu chỉ số không hỏi “hài lòng chứ ạ”' }
+    ]},
+  { id: 'g15', no: '15', t: 'GIÁ TRỊ VÀ TĂNG TRƯỞNG', s: 'Gói, giá, bảo đảm, và cách lớn mà không loãng', mau: '#A8801F',
+    ds: [
+      { v: 'goi-san-pham', t: 'Năm gói', h: 'Gồm gì · và không phù hợp với ai' },
+      { v: 'chong-gia-tri', t: 'Chồng giá trị', h: 'Gia đình nhận gì so với thị trường' },
+      { v: 'bao-dam', t: 'Ba lớp bảo đảm', h: '7 ngày · 90 ngày · suốt đời' },
+      { v: 'kinh-te', t: 'Đơn vị kinh tế', h: 'Chi phí thật · hoà vốn · luật vàng' },
+      { v: 'pheu', t: 'Phễu tuyển sinh', h: 'Năm tầng · ngưỡng chuyển' },
+      { v: 'thong-diep', t: 'Bộ thông điệp', h: 'Một câu · ba câu · một trang' },
+      { v: 'phan-doi', t: 'Mười hai phản đối', h: 'Điều thật đằng sau mỗi câu' },
+      { v: 'nha-truong', t: 'Hợp tác nhà trường', h: 'Bốn mô hình · bán đúng thứ họ cần' },
+      { v: 'nhan-rong', t: 'Nhân rộng', h: 'Ba đường · và lõi bất biến' }
+    ]},
+  { id: 'g16', no: '16', t: 'BẰNG CHỨNG VÀ TIN CẬY', s: 'Chứng minh, bảo vệ, và dám ghi lại cái sai', mau: '#BE0E16',
+    ds: [
+      { v: 'tac-dong', t: 'Đo tác động thật', h: 'Ba tầng bằng chứng · tám chỉ số ngoài hệ' },
+      { v: 'theo-doi-doc', t: 'Theo dõi dọc 30 năm', h: 'Tài sản không sao chép được' },
+      { v: 'kiem-dinh', t: 'Kiểm định', h: 'Nội kiểm hằng quý · ngoại kiểm hằng năm' },
+      { v: 'bao-ve-tre', t: 'Mười luật đỏ', h: 'Bảo vệ trẻ em · không có mức phạt trung gian' },
+      { v: 'du-lieu-tre', t: 'Dữ liệu của con', h: 'Thu tối thiểu · quyền của gia đình' },
+      { v: 'khung-hoang', t: 'Năm cấp khủng hoảng', h: 'Và hai mươi tư giờ vàng' },
+      { v: 'phap-ly', t: 'Giấy tờ phải có', h: 'Mười hồ sơ và nhịp cập nhật' },
+      { v: 'cau-hoi', t: 'Câu hỏi thường gặp', h: 'Sáu nhóm người hỏi · trả lời không né' },
+      { v: 'so-loi', t: 'Sổ ghi lỗi công khai', h: 'Thứ rất ít nơi dám làm' }
     ]}
 ];
 
@@ -740,6 +775,247 @@ GV.MAN = {
     { k: 'the', t: 'Phần chưa đọc được',
       n: 'Thư mục Drive 1m9VQM4bWzS67kRdUehUernmw49wFsWkU (đường dẫn /u/2/) không mở được bằng tài khoản đang kết nối. Nếu thư mục ấy chứa tài liệu khác với danh sách trên, cần chia sẻ lại để bổ sung vào bản thiết kế.' }
   ]}
+,
+
+/* ══════════ NHÓM 14 · TRẢI NGHIỆM VÀ CAM KẾT ══════════ */
+'hanh-trinh-365': { q: 'nghe_chung', k: 'Trải nghiệm', t: 'Hành trình 365 ngày của một gia đình',
+  p: 'Không phải phễu bán hàng. Đây là bản đồ cảm xúc: ở mỗi chặng phụ huynh đang nghĩ gì, sợ gì, và hệ đặt cái gì vào tay họ.',
+  khoi: [
+    { k: 'van', t: 'Kiến trúc trả lời câu hỏi *hệ này là gì*. Màn này trả lời một câu khác, khó hơn: đứng từ phía gia đình nhìn vào, hệ này *cảm thấy* như thế nào.' },
+    { k: 'trich', t: 'Người ta quên điều mình nói, quên điều mình làm, nhưng không quên cảm giác mình gây ra cho họ.', n: 'Nguyên tắc nền của chương này' },
+    { k: 'van', t: 'Mỗi chặng có một mục *dấu hiệu đang rơi* và một *việc cứu*. Đó là phần giá trị nhất: biết trước chỗ người ta hay rời đi thì mới giữ được, và giữ bằng việc đúng chứ không bằng lời hay.' },
+    { k: 'hanhtrinh', tu: 'TN_HANH_TRINH' },
+    { k: 'muc', t: 'Ba điều xuyên suốt chín chặng' },
+    { k: 'luat', tu: 'TN_XUYEN_SUOT' }
+  ]},
+
+'khoanh-khac': { q: 'nghe_chung', k: 'Trải nghiệm', t: 'Mười hai khoảnh khắc quyết định',
+  p: 'Cảm nhận của cả một năm được quyết định ở khoảng mười hai điểm. Làm đúng mười hai điểm này thì phần còn lại được tha thứ; làm sai thì phần còn lại không cứu nổi.',
+  khoi: [
+    { k: 'van', t: 'Không phải mọi phút đều nặng như nhau. Một cuộc gọi lại trong bốn giờ đáng giá hơn ba buổi dạy hay. Cột *thường thấy* không phải để chê ai — nó là mặc định mà mọi tổ chức trôi về nếu không ai giữ.' },
+    { k: 'doichieu', tu: 'TN_KHOANH_KHAC' },
+    { k: 'trich', t: 'Chuẩn không nằm ở điều mình viết ra. Chuẩn nằm ở điều mình làm lúc mệt, lúc vội, lúc không ai nhìn.', n: 'Luật của mười hai khoảnh khắc' }
+  ]},
+
+'cam-ket-dv': { q: 'kh_hanh_trinh', k: 'Cam kết', t: 'Mười hai cam kết dịch vụ',
+  p: 'Hứa ít mà giữ được. Và điều làm nên khác biệt không phải lời hứa — mà là thứ đền khi không giữ được, đền tự động, không đợi gia đình đòi.',
+  khoi: [
+    { k: 'van', t: 'Một lời hứa không có thứ để đền thì chỉ là một câu quảng cáo. Bảng dưới đây là hợp đồng thật: mỗi dòng có *ngưỡng đo được* và *thứ phải đền*. Không có dòng nào ghi “sẽ cố gắng”.' },
+    { k: 'hua', tu: 'TN_CAM_KET' },
+    { k: 'trich', t: 'Người ta không nhớ mình đúng bao nhiêu lần. Người ta nhớ cách mình xử lúc mình sai.', n: 'Vì sao cột cuối cùng là cột quan trọng nhất' }
+  ]},
+
+'cong-phu-huynh': { q: 'kh_gia_dinh', k: 'Cam kết', t: 'Cổng phụ huynh — thấy gì, ở đâu, khi nào',
+  p: 'Phụ huynh không cần biết mọi thứ. Họ cần biết bảy thứ, đúng lúc, và không phải đi hỏi.',
+  khoi: [
+    { k: 'luoi', c: 2, tu: 'TN_CONG_PH' },
+    { k: 'muc', t: 'Sáu luật của cổng' },
+    { k: 'luat', tu: 'TN_LUAT_PH' },
+    { k: 'trich', t: 'Thứ gì Coach không dám cho phụ huynh đọc thì không được ghi vào hồ sơ.', n: 'Luật thứ sáu — và là luật khó giữ nhất' }
+  ]},
+
+'hien-vat': { q: 'nghe_chung', k: 'Trải nghiệm', t: 'Mười bốn hiện vật, và cách trao',
+  p: 'Giá vốn mỗi thứ vài chục nghìn. Giá trị cảm xúc gấp trăm lần — nhưng chỉ khi trao đúng cách.',
+  khoi: [
+    { k: 'van', t: 'Phát hàng loạt cuối buổi là cách chắc chắn nhất để giết một hiện vật. Cột *cách trao* quan trọng hơn cột *là gì*: cùng một tấm huy hiệu, gài lên áo trước mặt cả tổ và đưa vào tay ở bàn lễ tân là hai vật khác nhau.' },
+    { k: 'bang', cot: ['Hiện vật', 'Trao khi nào', 'Ai trao', 'Trao thế nào', 'Vì sao quan trọng'], tu: 'TN_HIEN_VAT_BANG' },
+    { k: 'trich', t: 'Thứ mình tự làm thì mình giữ. Thứ được phát thì để đâu quên đó.', n: 'Vì sao cờ tổ mũi nhọn do tổ tự làm' }
+  ]},
+
+'phuc-hoi': { q: 'nghe_chung', k: 'Trải nghiệm', t: 'Khi hỏng việc — năm bước phục hồi',
+  p: 'Gia đình từng phàn nàn và được xử tử tế trung thành hơn gia đình chưa bao giờ phàn nàn. Phàn nàn là quà, với điều kiện mình xử nó như quà.',
+  khoi: [
+    { k: 'buocso', tu: 'TN_PHUC_HOI' },
+    { k: 'muc', t: 'Tám loại phàn nàn thường gặp' },
+    { k: 'bang', cot: ['Phàn nàn', 'Ai xử lý', 'Trong bao lâu', 'Bù gì'], tu: 'TN_PHAN_NAN' },
+    { k: 'muc', t: 'Sáu luật xử phàn nàn' },
+    { k: 'luat', tu: 'TN_LUAT_PN' },
+    { k: 'trich', t: 'Tháng nào không có phàn nàn nào là tháng đáng nghi, không phải tháng tốt.', n: 'Luật thứ ba' }
+  ]},
+
+'giu-nguoi': { q: 'nghe_chung', k: 'Trải nghiệm', t: 'Khi con muốn nghỉ',
+  p: 'Lý do được nói gần như không bao giờ là lý do thật. Chữa lý do được nói thì mất người; tìm ra lý do thật thì giữ được.',
+  khoi: [
+    { k: 'cd4', tu: 'TN_NGHI',
+      nhan: ['Lý do thật đằng sau', 'Cách kiểm', 'Việc phải làm', 'Không được làm'] },
+    { k: 'muc', t: 'Luật không được phá' },
+    { k: 'trich', t: 'Không bao giờ giữ người bằng giảm giá. Giảm giá để giữ là tự thừa nhận giá trị không đủ — và người ở lại vì giá rẻ sẽ đi khi có chỗ rẻ hơn.', n: 'Luật giữ người' },
+    { k: 'muc', t: 'Ra đi tử tế' },
+    { k: 'van', t: 'Cách một tổ chức tiễn người quyết định người ấy kể lại về nó thế nào trong mười năm sau. Đây là khoản đầu tư rẻ nhất và bị bỏ qua nhiều nhất.' },
+    { k: 'luat', tu: 'TN_RA_DI' }
+  ]},
+
+'do-cam-nhan': { q: 'nghe_quan_ly', k: 'Đo', t: 'Đo cảm nhận',
+  p: 'Không đo bằng câu “anh chị hài lòng chứ ạ”. Câu ấy chỉ đo được mức lịch sự của người được hỏi.',
+  khoi: [
+    { k: 'van', t: 'Sáu chỉ số dưới đây có một điểm chung: chúng đo *hành vi*, không đo lời khen. Và ba trong sáu chỉ số hỏi trẻ hoặc quan sát trẻ, không hỏi người trả tiền.' },
+    { k: 'mau', tu: 'TN_DO_CAM' },
+    { k: 'trich', t: 'Trên 60% gia đình dừng mà chưa từng phàn nàn câu nào — đó không phải là dấu hiệu tốt. Đó là dấu hiệu không ai tin phàn nàn có tác dụng.', n: 'Chỉ số thứ sáu' }
+  ]},
+
+/* ══════════ NHÓM 15 · GIÁ TRỊ VÀ TĂNG TRƯỞNG ══════════ */
+'goi-san-pham': { q: 'tu_van', k: 'Gói', t: 'Năm gói',
+  p: 'Mỗi gói có một mục “không phù hợp với ai”. Mục ấy quan trọng hơn mục “gồm gì”.',
+  khoi: [
+    { k: 'van', t: 'Bán đúng người thì giữ được người. Bán sai người thì mất cả tiền lẫn danh dự — và mất chậm, qua nhiều tháng, theo cách khó sửa nhất.' },
+    { k: 'goi', tu: 'GT_GOI' },
+    { k: 'muc', t: 'Bảy luật về giá' },
+    { k: 'luat', tu: 'GT_LUAT_GIA' },
+    { k: 'trich', t: 'Tiền không mua bậc. Tiền mua chỗ ngồi, mua thời gian của người kèm, mua công cụ. Bậc chỉ đổi bằng bằng chứng.', n: 'Luật trùm lên toàn bộ chương này' }
+  ]},
+
+'chong-gia-tri': { q: 'tu_van', k: 'Gói', t: 'Chồng giá trị',
+  p: 'Bảng này chỉ có tác dụng nếu từng dòng đều thật và kiểm được. Thổi phồng một dòng thì cả bảng mất giá trị.',
+  khoi: [
+    { k: 'van', t: 'Khi phụ huynh nói “đắt quá”, phần lớn không phải đắt — mà là *chưa thấy đáng*. Bảng này để đi từng dòng cùng họ, chậm rãi, và dừng lại ở ba dòng không có tương đương trên thị trường.' },
+    { k: 'bang', cot: ['Hạng mục', 'Gia đình nhận gì', 'Tương đương thị trường', 'Ghi chú trung thực'], tu: 'GT_CHONG' },
+    { k: 'trich', t: 'Đừng bao giờ dùng bảng này để so mình với một nơi cụ thể. So với thị trường thì được; chê một cái tên thì mình thành cùng loại với người mình chê.', n: 'Cách dùng bảng' }
+  ]},
+
+'bao-dam': { q: 'kh_hanh_trinh', k: 'Cam kết', t: 'Ba lớp bảo đảm',
+  p: 'Điều kiện phải rõ tới mức không cãi nhau được. Bảo đảm mập mờ còn tệ hơn không có bảo đảm.',
+  khoi: [
+    { k: 'van', t: 'Một bảo đảm mập mờ tạo kỳ vọng rồi phản bội kỳ vọng ấy đúng lúc gia đình cần mình nhất. Nên mỗi lớp dưới đây đều ghi rõ cả *giới hạn* — thứ mà bảo đảm này **không** bao gồm.' },
+    { k: 'baodam', tu: 'GT_BAO_DAM' },
+    { k: 'trich', t: 'Hội đồng phán quyết bảo đảm 90 ngày bắt buộc có một người ngoài đội tuyển sinh và ngoài đội đang kèm con. Không có điều này thì bảo đảm chỉ là một câu quảng cáo.', n: 'Điều làm nên sự khác biệt' }
+  ]},
+
+'kinh-te': { q: 'tai_chinh', k: 'Tiền', t: 'Đơn vị kinh tế',
+  p: 'Không có bảng này thì mọi lý tưởng ở các tập trước đều là lý tưởng của người khác trả tiền.',
+  khoi: [
+    { k: 'van', t: 'Một hệ huấn luyện không tự nuôi được mình thì không sống nổi ba mươi năm, dù kiến trúc có đẹp tới đâu. Các tỉ lệ dưới đây là khoảng tham chiếu để dựng mô hình, không phải con số tuyệt đối cho mọi địa phương.' },
+    { k: 'bang', cot: ['Khoản', 'Gồm gì', 'Tỉ trọng tham chiếu', 'Ghi chú'], tu: 'GT_KINH_TE' },
+    { k: 'muc', t: 'Bốn ngưỡng phải nhớ' },
+    { k: 'moc', tu: 'GT_LUAT_KT' },
+    { k: 'trich', t: 'Mở sớm một chi hội hỏng hai chi hội.', n: 'Luật vàng' }
+  ]},
+
+'pheu': { q: 'dh_toan_he', k: 'Tăng trưởng', t: 'Phễu tuyển sinh năm tầng',
+  p: 'Tầng cuối cùng là tầng duy nhất mà đầu tư vào nó không bao giờ lỗ.',
+  khoi: [
+    { k: 'buocso', tu: 'GT_PHEU' },
+    { k: 'trich', t: 'Dưới 40% người mới đến từ tiến cử thì không được tăng ngân sách quảng cáo — phải sửa chất lượng trước. Người ta chỉ đem tên mình ra bảo lãnh cho thứ họ thật sự tin.', n: 'Chỉ số trung thực nhất về chất lượng' }
+  ]},
+
+'thong-diep': { q: 'tu_van', k: 'Tăng trưởng', t: 'Bộ thông điệp',
+  p: 'Một câu, ba câu, một trang. Ai cũng phải nói được cả ba, và nói giống nhau.',
+  khoi: [
+    { k: 'van', t: 'Thông điệp không phải khẩu hiệu. Nó là *thứ mình dám bị kiểm chứng*. Mỗi câu dưới đây đều có một màn trong hệ này chứng minh cho nó — nếu không có, câu ấy phải bị bỏ.' },
+    { k: 'luoi', c: 2, tu: 'GT_THONG_DIEP_L' },
+    { k: 'trich', t: 'Chúng tôi làm loại thứ hai — và chúng tôi nói trước điều đó với mọi gia đình, ngay ở buổi tư vấn đầu tiên.', n: 'Câu mở đầu bản một trang' }
+  ]},
+
+'phan-doi': { q: 'tu_van', k: 'Tăng trưởng', t: 'Mười hai phản đối thường gặp',
+  p: 'Nguyên tắc chung: không phản bác. Hỏi lại một câu sâu hơn, rồi im lặng chờ.',
+  khoi: [
+    { k: 'van', t: 'Phản đối gần như không bao giờ là điều được nói ra. Cột *điều thật đằng sau* là cột phải đọc trước; ba cột còn lại vô dụng nếu đọc sai cột ấy.' },
+    { k: 'phandoi', tu: 'GT_PHAN_DOI' },
+    { k: 'trich', t: 'Nếu gia đình chọn nơi khác, chúc họ thật lòng. Nửa số người quay lại sau một năm.', n: 'Phản đối thứ mười một' }
+  ]},
+
+'nha-truong': { q: 'dh_toan_he', k: 'Tăng trưởng', t: 'Hợp tác nhà trường',
+  p: 'Thứ nhà trường cần không phải “kỹ năng sống”. Họ cần lớp dễ quản hơn, phong trào có sản phẩm, và phụ huynh bớt phàn nàn.',
+  khoi: [
+    { k: 'van', t: 'Bán khái niệm thì cửa đóng. Bán đúng thứ người ngồi đối diện đang phải chịu trách nhiệm thì cửa mở — và mỗi ghế trong trường chịu trách nhiệm một thứ khác nhau.' },
+    { k: 'cd4', tu: 'GT_NHA_TRUONG',
+      nhan: ['Bán cho ai', 'Họ thật sự cần gì', 'Mình đưa gì', 'Bẫy'] },
+    { k: 'trich', t: 'Gói dự án cộng đồng là gói mở cửa, không phải gói kiếm tiền. Làm thật tốt một lần thì ba gói kia tự vào.', n: 'Thứ tự vào trường' }
+  ]},
+
+'nhan-rong': { q: 'dh_toan_he', k: 'Tăng trưởng', t: 'Nhân rộng mà không loãng chất',
+  p: 'Ba đường, ba tốc độ, ba mức rủi ro. Đường lành nhất là đường chậm nhất — và chậm là tính năng, không phải lỗi.',
+  khoi: [
+    { k: 'cd4', tu: 'GT_NHAN_RONG',
+      nhan: ['Là gì', 'Điều kiện', 'Được cầm gì · không được cầm gì', 'Rủi ro chính'] },
+    { k: 'muc', t: 'Bảy thứ không bên nào được sửa' },
+    { k: 'van', t: 'Nhân rộng hỏng không phải vì đối tác kém. Nó hỏng vì lõi không được ghi rõ, nên mỗi nơi tự hiểu một kiểu, và ba năm sau không còn nhận ra nhau nữa. Bảy điều dưới đây là lõi ấy.' },
+    { k: 'luat', tu: 'GT_LOI_BAT_BIEN' },
+    { k: 'trich', t: 'Không mở quá hai nhượng quyền một năm trong năm năm đầu.', n: 'Phanh của đường nhanh nhất' }
+  ]},
+
+/* ══════════ NHÓM 16 · BẰNG CHỨNG VÀ TIN CẬY ══════════ */
+'tac-dong': { q: 'nghiem_thu', k: 'Bằng chứng', t: 'Đo tác động thật',
+  p: 'Một hệ nói về nhân tài mà không chứng minh được mình có tác dụng thì cũng chỉ là một niềm tin dễ chịu.',
+  khoi: [
+    { k: 'muc', t: 'Ba tầng bằng chứng' },
+    { k: 'van', t: 'Phần lớn tổ chức giáo dục dừng ở tầng một rồi gọi đó là kết quả. Tầng một gần như vô giá trị khi người trả lời biết mình đang được hỏi để đánh giá chính nơi mình đã trả tiền.' },
+    { k: 'ly', tu: 'TC_TANG_BC' },
+    { k: 'muc', t: 'Tám chỉ số ngoài hệ' },
+    { k: 'van', t: 'Điểm chung của tám chỉ số này: chúng xảy ra ở nơi hệ *không có mặt*. Đó là lý do chúng đáng tin.' },
+    { k: 'bang', cot: ['Chỉ số', 'Đo gì', 'Lấy ở đâu', 'Trụ'], tu: 'TC_CHI_SO' },
+    { k: 'muc', t: 'Năm bước thiết kế phép đo' },
+    { k: 'buocso', tu: 'TC_THIET_KE' },
+    { k: 'muc', t: 'Sáu luật trung thực' },
+    { k: 'luat', tu: 'TC_LUAT_DO' },
+    { k: 'trich', t: '“95% phụ huynh hài lòng” trên hai mươi người là một câu vô nghĩa.', n: 'Luật thứ hai' }
+  ]},
+
+'theo-doi-doc': { q: 'dh_toan_he', k: 'Bằng chứng', t: 'Theo dõi dọc ba mươi năm',
+  p: 'Tài sản mà không đối thủ nào sao chép được trong ngắn hạn, vì thứ duy nhất tạo ra nó là thời gian.',
+  khoi: [
+    { k: 'van', t: 'Bắt đầu từ khoá đầu tiên, năm 2026. Mỗi khoá được theo dõi ở sáu mốc, và mốc cuối cùng rơi đúng vào 2056 — năm khép vòng của cả tầm nhìn ba mươi năm.' },
+    { k: 'moc', tu: 'TC_THEO_DOI' },
+    { k: 'muc', t: 'Năm luật của dữ liệu theo dõi dọc' },
+    { k: 'luat', tu: 'TC_LUAT_TD' },
+    { k: 'trich', t: 'Con có cho con của mình vào hệ không — chỉ số trung thực nhất trong tất cả các chỉ số.', n: 'Mốc năm 20' }
+  ]},
+
+'kiem-dinh': { q: 'nghe_quan_ly', k: 'Tin cậy', t: 'Kiểm định',
+  p: 'Nội kiểm hằng quý giữ cho hệ không trôi. Ngoại kiểm hằng năm giữ cho hệ không tự huyễn hoặc.',
+  khoi: [
+    { k: 'bang', cot: ['Hạng mục', 'Ai kiểm', 'Nhịp', 'Ngưỡng', 'Không đạt thì sao'], tu: 'TC_KIEM_DINH' },
+    { k: 'trich', t: 'Hội đồng ngoại kiểm có hai phụ huynh đại diện, và báo cáo được công bố nội bộ nguyên văn — kể cả phần khó nghe.', n: 'Điều làm ngoại kiểm khác một buổi họp' }
+  ]},
+
+'bao-ve-tre': { q: 'chung', k: 'An toàn', t: 'Mười luật đỏ bảo vệ trẻ em',
+  p: 'Không có mức phạt trung gian cho luật đỏ. Vi phạm là chấm dứt, và điều tra sau khi đã đình chỉ.',
+  khoi: [
+    { k: 'van', t: 'Mười điều dưới đây không phải khuyến nghị, không phải văn hoá, không phải mong muốn. Chúng là ranh giới. Mọi người trong hệ — Coach, giáo viên, tình nguyện viên, phụ huynh hỗ trợ — ký nhận từng điều trước buổi đầu tiên tiếp xúc với trẻ.' },
+    { k: 'luat', tu: 'TC_BAO_VE' },
+    { k: 'trich', t: 'Đình chỉ trước, điều tra sau. Không có ngoại lệ vì thâm niên, vì chức vụ, vì sắp tới kỳ nghiệm thu.', n: 'Luật thứ mười' }
+  ]},
+
+'du-lieu-tre': { q: 'chung', k: 'An toàn', t: 'Dữ liệu của con',
+  p: 'Thu tối thiểu, giữ có hạn, và trả lại quyền cho chính người ấy khi đủ tuổi.',
+  khoi: [
+    { k: 'luoi', c: 2, tu: 'TC_DU_LIEU' },
+    { k: 'trich', t: 'Câu hỏi kiểm cho mọi trường dữ liệu: trường này phục vụ quyết định nào? Không trả lời được thì bỏ trường đó.', n: 'Nguyên tắc thu tối thiểu' }
+  ]},
+
+'khung-hoang': { q: 'nghe_quan_ly', k: 'An toàn', t: 'Năm cấp khủng hoảng và hai mươi tư giờ vàng',
+  p: 'Phân cấp trước, để lúc xảy ra không phải bàn xem việc này to hay nhỏ.',
+  khoi: [
+    { k: 'rui', tu: 'TC_KHUNG_HOANG' },
+    { k: 'muc', t: 'Hai mươi tư giờ vàng' },
+    { k: 'van', t: 'Trình tự này không đổi theo mức độ nghiêm trọng. Sự thật trước, xin lỗi trước, giải thích sau — kể cả khi mình tin là mình không sai.' },
+    { k: 'buocso', tu: 'TC_24H' },
+    { k: 'trich', t: '“Chúng tôi chưa biết” là một câu mạnh. “Không có bình luận” là một câu chết.', n: 'Bước một' }
+  ]},
+
+'phap-ly': { q: 'dh_toan_he', k: 'Tin cậy', t: 'Mười hồ sơ phải có',
+  p: 'Giấy tờ không tạo ra chất lượng. Nhưng thiếu giấy tờ thì một sự cố nhỏ đủ để xoá sạch mười năm gây dựng.',
+  khoi: [
+    { k: 'bang', cot: ['Hồ sơ', 'Vì sao cần · gồm gì', 'Ai giữ', 'Nhịp cập nhật'], tu: 'TC_PHAP_LY' },
+    { k: 'trich', t: 'Lý lịch tư pháp phải có trước buổi đầu tiên tiếp xúc với trẻ. Không có ngoại lệ, kể cả với người quen, kể cả khi thiếu người.', n: 'Hồ sơ số sáu' }
+  ]},
+
+'cau-hoi': { q: 'chung', k: 'Tin cậy', t: 'Câu hỏi thường gặp',
+  p: 'Sáu nhóm người hỏi. Trả lời ngắn, thật, và không né câu khó.',
+  khoi: [
+    { k: 'van', t: 'Bộ câu trả lời này là *một nguồn duy nhất*. Ai trong hệ cũng trả lời giống nhau — khác nhau ở giọng, không khác ở nội dung. Câu nào chưa có ở đây thì đưa lên quản lý chuyên môn để bổ sung, không tự chế.' },
+    { k: 'faq', tu: 'TC_FAQ' }
+  ]},
+
+'so-loi': { q: 'nghe_chung', k: 'Tin cậy', t: 'Sổ ghi lỗi công khai',
+  p: 'Rất ít tổ chức dám làm việc này. Đó chính là lý do nên làm: thứ ai cũng làm được thì không tạo ra niềm tin.',
+  khoi: [
+    { k: 'van', t: 'Một hệ nói với trẻ rằng *sai thì nhận và làm lại* mà bản thân nó không dám ghi lại cái sai của mình thì đang dạy điều ngược với điều nó nói. Trẻ học điều mình làm, không học điều mình dặn.' },
+    { k: 'luoi', c: 2, tu: 'TC_SO_LOI' },
+    { k: 'muc', t: 'Sáu lỗi đã lường trước' },
+    { k: 'van', t: 'Sáu dòng dưới đây được viết *trước khi* chúng xảy ra — đây là những lỗi mà mọi hệ đào tạo đều mắc ở năm đầu. Ghi sẵn để khi mắc thì nhận ra ngay, và để luật ở cột cuối có hiệu lực từ ngày đầu tiên.' },
+    { k: 'bang', cot: ['Lỗi', 'Ai bị ảnh hưởng', 'Đã sửa gì', 'Luật sinh ra từ lỗi này'], tu: 'TC_LOI_MAU' },
+    { k: 'trich', t: 'Cột cuối cùng là cột quan trọng nhất. Lỗi không sinh ra luật mới thì sẽ lặp lại.', n: 'Cách đọc sổ' }
+  ]}
 
 };
 
@@ -902,5 +1178,56 @@ GV.TU = {
   NGAY_90: GV.NGAY_90.map(function (r) { return [r.tuan, r.viec, r.ai, r.ra]; }),
   NAM_DAU: GV.NAM_DAU,
   CHANG: GV.CHANG,
-  NGUON: GV.NGUON.map(function (r) { return [r.t, r.l]; })
+  NGUON: GV.NGUON.map(function (r) { return [r.t, r.l]; }),
+
+  /* nhóm 14 · trải nghiệm và cam kết */
+  TN_HANH_TRINH: GV.TN_HANH_TRINH,
+  TN_XUYEN_SUOT: [
+    'Mỗi chặng phải để lại *một vật cầm được*. Chặng nào không có vật thì chặng ấy không được nhớ.',
+    'Mỗi chặng có một *dấu hiệu đang rơi* được định nghĩa trước — không đợi tới lúc gia đình nói mới biết.',
+    'Việc cứu luôn là một *việc*, không phải một lời. Gọi điện thuyết phục không phải việc cứu.'
+  ],
+  TN_KHOANH_KHAC: GV.TN_KHOANH_KHAC,
+  TN_CAM_KET: GV.TN_CAM_KET,
+  TN_CONG_PH: GV.TN_CONG_PH,
+  TN_LUAT_PH: GV.TN_LUAT_PH,
+  TN_HIEN_VAT_BANG: GV.TN_HIEN_VAT.map(function (r) { return [r.t, r.khi, r.ai, r.cach, r.vi]; }),
+  TN_PHUC_HOI: GV.TN_PHUC_HOI,
+  TN_PHAN_NAN: GV.TN_PHAN_NAN,
+  TN_LUAT_PN: GV.TN_LUAT_PN,
+  TN_NGHI: GV.TN_NGHI,
+  TN_RA_DI: GV.TN_RA_DI,
+  TN_DO_CAM: GV.TN_DO_CAM,
+
+  /* nhóm 15 · giá trị và tăng trưởng */
+  GT_GOI: GV.GT_GOI,
+  GT_LUAT_GIA: GV.GT_LUAT_GIA,
+  GT_CHONG: GV.GT_CHONG,
+  GT_BAO_DAM: GV.GT_BAO_DAM,
+  GT_KINH_TE: GV.GT_KINH_TE,
+  GT_LUAT_KT: GV.GT_LUAT_KT,
+  GT_PHEU: GV.GT_PHEU,
+  GT_THONG_DIEP_L: GV.GT_THONG_DIEP.map(function (r) { return { t: r.t, n: r.n }; }),
+  GT_PHAN_DOI: GV.GT_PHAN_DOI,
+  GT_NHA_TRUONG: GV.GT_NHA_TRUONG,
+  GT_NHAN_RONG: GV.GT_NHAN_RONG,
+  GT_LOI_BAT_BIEN: GV.GT_LOI_BAT_BIEN,
+
+  /* nhóm 16 · bằng chứng và tin cậy */
+  TC_TANG_BC: GV.TC_TANG_BC.map(function (r) { return { so: r.so, t: r.t, n: r.n, v: r.v }; }),
+  TC_CHI_SO: GV.TC_CHI_SO,
+  TC_THIET_KE: GV.TC_THIET_KE,
+  TC_LUAT_DO: GV.TC_LUAT_DO,
+  TC_THEO_DOI: GV.TC_THEO_DOI,
+  TC_LUAT_TD: GV.TC_LUAT_TD,
+  TC_KIEM_DINH: GV.TC_KIEM_DINH,
+  TC_BAO_VE: GV.TC_BAO_VE,
+  TC_DU_LIEU: GV.TC_DU_LIEU,
+  TC_KHUNG_HOANG: GV.TC_KHUNG_HOANG,
+  TC_24H: GV.TC_24H,
+  TC_PHAP_LY: GV.TC_PHAP_LY,
+  TC_FAQ: GV.TC_FAQ,
+  TC_SO_LOI: GV.TC_SO_LOI,
+  TC_LOI_MAU: GV.TC_LOI_MAU,
+
 };
