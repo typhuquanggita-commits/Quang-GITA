@@ -95,6 +95,11 @@ Lối rẽ duy nhất: mời nhận **bộ công cụ gia đình miễn phí tr�
 [6] KÝ HIỆU NGHI THỨC → #KhoiNguyen / #ChoLaNhan / #BangChung ... + gợi ý bước tiếp theo
 ```
 
+**Hai bài mỗi tuần viết để *được tìm thấy lại*** — tiêu đề đúng câu người ta gõ khi đi tìm,
+trả lời thẳng trong hai câu đầu, một bài một câu hỏi. Từ tháng 5/2026 nội dung nhóm còn xuất
+hiện trong app **Forum** có tìm kiếm bằng AI, nên một bài tốt sẽ được tìm thấy nhiều tháng sau
+(xem `15.1` và `16.2`).
+
 **Quy tắc kỹ thuật để không bị giảm hiển thị:**
 - Không đặt liên kết ngoài trong nội dung bài. Liên kết đặt ở **bình luận đầu tiên và ghim**.
 - Bài dài trên 200 từ nên có xuống dòng mỗi 2–3 câu, dùng ký tự đầu dòng.

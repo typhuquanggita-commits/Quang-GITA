@@ -24,6 +24,11 @@ Nếu quảng cáo (kênh 8) vượt 30%, cộng đồng sẽ loãng và tỉ l�
 
 ## 6.2. Vòng lặp giới thiệu — "Mỗi gia đình mời một gia đình"
 
+> ⚠️ **Cảnh báo tuân thủ**: tuyệt đối **không** đo việc giới thiệu bằng lượt chia sẻ hay gắn thẻ
+> trên Facebook — chính sách trao thưởng của Meta cấm lấy hành vi chia sẻ/gắn thẻ làm điều kiện
+> nhận thưởng (`15.2.B`). Cách đo hợp lệ duy nhất: **câu hỏi số 4 ở cổng vào** — "Ai giới thiệu
+> bạn vào nhóm?" — và chỉ ghi nhận khi người mới hoạt động đủ 14 ngày. Chi tiết ở `16.5`.
+
 **Cơ chế 5 bước:**
 1. **Lý do đủ mạnh**: người mời không nhận tiền, họ nhận **danh dự và kết quả cho người thân**.
 2. **Công cụ mời sẵn**: 3 mẫu tin nhắn mời + 1 ảnh + 1 câu chuyện mẫu (`10.7`).

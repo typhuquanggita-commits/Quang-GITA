@@ -98,7 +98,7 @@ Kịch bản mời ở `10.5`.
 
 | Cơ chế | Cách làm | Vì sao hiệu quả |
 |---|---|---|
-| **Tổ ấm 6** | Chia thành viên hoạt động thành tổ 5–7 người, có trưởng tổ (L5), sinh hoạt tuần trong chủ đề riêng hoặc nhóm chat | Quan hệ cá nhân giữ chân mạnh gấp nhiều lần nội dung |
+| **Tổ ấm 6** | Chia thành viên hoạt động thành tổ 5–7 người, có trưởng tổ (L5), sinh hoạt tuần trong chủ đề riêng của nhóm hoặc **nhóm chat Zalo riêng** (Community Chats của Facebook đang bị gỡ — xem `15.5`) | Quan hệ cá nhân giữ chân mạnh gấp nhiều lần nội dung |
 | **Chuỗi 21 ngày** | Điểm danh 21 ngày liên tục theo nghi thức; đứt thì được "1 lần cứu chuỗi" | Tạo cam kết và thói quen |
 | **Điểm GITA** | Điểm cho hành vi cho đi: giúp người khác, kể chuyện thật, nộp bài tập, mời gia đình mới | Thưởng đúng thứ ta muốn nhân lên |
 | **Vinh danh tuần** | Chủ nhật, tôn vinh 3–5 người/gia đình với lý do cụ thể, kèm ảnh | Được thấy là nhu cầu sâu nhất của thành viên |

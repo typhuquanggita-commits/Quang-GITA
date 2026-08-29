@@ -41,6 +41,8 @@ Luật xương sống: **G2 nuôi G1, G1 nuôi khóa học.** Người ở G2 kh
 | [`12-muc-tieu-tang-truong-5-nam.md`](12-muc-tieu-tang-truong-5-nam.md) | **Hệ mục tiêu 5 năm**: 1.000 → 10.000 → 100.000 → 1.000.000 tương tác thật, số học tăng trưởng, kiến trúc cụm nhóm, kim tự tháp tự quản | Admin, Ban điều hành |
 | [`13-bao-ve-thanh-vien-va-chong-nick-ao.md`](13-bao-ve-thanh-vien-va-chong-nick-ao.md) | **Hệ phòng thủ 7 lớp**: chặn nick ảo, nick đi săn, phần mềm quét nhóm; cam kết bảo vệ khách hàng | Admin, Mod |
 | [`14-mo-hinh-kha-thi.md`](14-mo-hinh-kha-thi.md) | **Mô hình khả thi**: công thức, tham số kế hoạch cơ sở, kết luận từng mốc, nhân sự cần có | Admin, Ban điều hành |
+| [`15-luat-va-thuat-toan-facebook.md`](15-luat-va-thuat-toan-facebook.md) | **Luật & thuật toán 2026**: sáu thay đổi lớn, mồi tương tác, chính sách trao thưởng, nội dung gốc, Nghị định 147/2024, bảng đèn giao thông | Toàn đội |
+| [`16-marketing-0-dong-va-trao-thuong.md`](16-marketing-0-dong-va-trao-thuong.md) | **Marketing 0 đồng**: bảy động cơ miễn phí, bộ công cụ, phân bổ kênh, hai chiến dịch trao thưởng hợp lệ và thể lệ mẫu | Growth, Content, Admin |
 | [`ban-trinh-duyet.html`](ban-trinh-duyet.html) | **Bản demo tương tác** 7 khu vực: mô hình khả thi kéo tay, lịch 288 bài, GITA CARE, cổng lọc, thi đua, chỉ số | Tất cả |
 
 ### Dữ liệu vận hành

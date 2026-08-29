@@ -41,6 +41,8 @@ hàng loạt sẽ bị thành viên nhận ra ngay.)*
 **M8 — Câu hỏi 1 dòng** (khung B): "Nếu chỉ được giữ lại một thói quen buổi sáng, anh chị giữ cái nào?"
 
 **M9 — Bình chọn 2 lựa chọn**: "Điều khó nhất với anh chị lúc này: (A) Bắt đầu — hay (B) Duy trì?"
+> ⚠️ Dùng **tính năng bình chọn của nhóm** hoặc để mọi người trả lời bằng bình luận.
+> **Không bao giờ** dùng biểu tượng cảm xúc làm phiếu ("thả 👍 nếu A") — đó là mồi tương tác và bị giảm hiển thị (`15.2.A`).
 
 **M10 — Hậu trường**: ảnh thật của đội ngũ/lớp học + 3 dòng kể chuyện.
 
@@ -183,3 +185,5 @@ Uy tín của GITA365 đắt hơn một đơn hàng.
 - [ ] Đã phân công người trực 30 phút vàng chưa?
 - [ ] Ảnh đúng tỉ lệ 4:5 hoặc 9:16 chưa?
 - [ ] Có bài nào khác đăng trong 4 giờ trước không?
+- [ ] Bài có câu nào **xin tương tác** không? ("thả tim nếu…", "share giúp em", "tag 3 người bạn") → xóa, xem `15.2.A`
+- [ ] Toàn bộ ảnh, video, trích dẫn trong bài có phải **của mình** không? Nội dung sao chép bị dìm, xem `15.2.C`
