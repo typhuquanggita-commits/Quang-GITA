@@ -4791,6 +4791,95 @@ const { chromium } = require(PW);
       'chỉ ghi điều kiện và quyền lợi, phần tiền để chủ Học viện điền');
   }
 
+  /* ═══════════ 45 · KHO KHÔNG ĐƯỢC HỤT SO VỚI BẢN ĐÃ PHÁT HÀNH ═══════════
+     kho-goc/ nằm trong .gitignore — đúng chủ ý, vì nội dung gốc chưa mã
+     hoá không được lên kho mã. Cái giá là sửa nhầm thì KHÔNG CÓ GIT ĐỂ
+     LÙI và không có diff để nhìn.
+
+     Chuyện đã xảy ra thật ở bản 9.5.1: một phép tách câu tự động chạy
+     trên toàn bộ kho-goc, đổi 18.672 chỗ. Trong đó có chỗ làm bộ test
+     rơi từ 25 bộ xuống 5 bộ, và làm 50 mã tình huống tầng một biến
+     thành tầng năm. Không lỗi cú pháp, không lỗi trang — mọi thứ vẫn
+     chạy, chỉ là nội dung sai.
+
+     Bảy gói .enc đã phát hành nằm TRONG git. Đó là bản lưu duy nhất của
+     nội dung, và là chỗ duy nhất so được. Mục này so số bản ghi và so
+     mã bản ghi: NỘI DUNG ÍT ĐI HẦU NHƯ LUÔN LÀ HỎNG, không phải sửa.
+
+     Thêm nội dung thì mục này im — thêm là việc bình thường. Chỉ hụt
+     mới đỏ. */
+  console.log('\n45 · KHO KHÔNG ĐƯỢC HỤT SO VỚI BẢN ĐÃ PHÁT HÀNH');
+  {
+    const fs45 = require('fs'), px45 = require('path'), cr45 = require('crypto');
+    const cp45 = require('child_process');
+    const goc45 = px45.join(__dirname, '..');
+    let khoa45 = null;
+    try { khoa45 = JSON.parse(fs45.readFileSync(px45.join(goc45, 'kho', 'khoa.json'), 'utf8')).khoa; }
+    catch (e) { /* máy dựng bản công khai không giữ khoá */ }
+
+    if (!khoa45) {
+      bao(true, 'không có bộ khoá trên máy này — bỏ qua phép so với bản đã phát hành',
+        'đúng: máy dựng bản công khai không được giữ khoá');
+    } else {
+      function mo45(k, buf) {
+        const de = cr45.createDecipheriv('aes-256-gcm', Buffer.from(k, 'base64'), buf.subarray(0, 12));
+        de.setAuthTag(buf.subarray(12, 28));
+        return JSON.parse(Buffer.concat([de.update(buf.subarray(28)), de.final()]).toString('utf8'));
+      }
+      const CU = {}, NAY = {};
+      let coCu = true;
+      for (const g of Object.keys(khoa45)) {
+        const tep = px45.join(goc45, 'kho', g + '.enc');
+        if (fs45.existsSync(tep)) Object.assign(NAY, mo45(khoa45[g], fs45.readFileSync(tep)));
+        try {
+          Object.assign(CU, mo45(khoa45[g], cp45.execSync('git show HEAD:kho/' + g + '.enc',
+            { cwd: goc45, maxBuffer: 1 << 30, encoding: 'buffer' })));
+        } catch (e) { coCu = false; }
+      }
+      if (!coCu) {
+        bao(true, 'chưa có bản đã phát hành trong git để so — lần đóng gói đầu', 'bỏ qua');
+      } else {
+        const dem45 = v => Array.isArray(v) ? v.length
+          : (v && typeof v === 'object') ? Object.keys(v).length : (v === undefined ? 0 : 1);
+        const ma45 = x => (x && (x.ma || x.id || x.code)) || null;
+
+        const bienMat = Object.keys(CU).filter(k => NAY[k] === undefined);
+        bao(!bienMat.length,
+          'không kho nào BIẾN MẤT so với bản đã phát hành — một kho vắng mặt là cả một mảng nội dung không còn đường về',
+          bienMat.length ? 'mất: ' + bienMat.join(' ') : Object.keys(CU).length + ' kho đều còn');
+
+        const hut = [];
+        Object.keys(CU).forEach(k => {
+          if (NAY[k] === undefined) return;
+          const na = dem45(CU[k]), nb = dem45(NAY[k]);
+          if (nb < na) hut.push(k + ' ' + na + ' → ' + nb);
+        });
+        bao(!hut.length,
+          'không kho nào ÍT BẢN GHI ĐI — nội dung ít đi hầu như luôn là hỏng, không phải sửa',
+          hut.length ? hut.slice(0, 6).join(' · ') : 'không kho nào hụt');
+
+        const bay = [];
+        Object.keys(CU).forEach(k => {
+          const a = CU[k], b = NAY[k];
+          if (!Array.isArray(a) || !Array.isArray(b) || !a.length || !ma45(a[0])) return;
+          const co = new Set(b.map(ma45));
+          const m = a.map(ma45).filter(x => x && !co.has(x));
+          if (m.length) bay.push(k + ': ' + m.slice(0, 4).join(' ') + (m.length > 4 ? ' …' : ''));
+        });
+        bao(!bay.length,
+          'không MÃ BẢN GHI nào biến mất — mã đổi thì màn hình vẫn chạy nhưng mọi mối nối trỏ vào nó gãy trong im lặng',
+          bay.length ? bay.slice(0, 5).join(' · ') : 'mọi mã đều còn');
+
+        /* Đổi rộng bất thường: không chặn phát hành, nhưng phải nói ra */
+        const doiRong = Object.keys(CU).filter(k => NAY[k] !== undefined &&
+          JSON.stringify(CU[k]) !== JSON.stringify(NAY[k])).length;
+        const tiLe = Math.round(doiRong / Object.keys(CU).length * 100);
+        console.log('  · ' + doiRong + '/' + Object.keys(CU).length + ' kho đổi nội dung (' + tiLe + '%)' +
+          (tiLe >= 30 ? '  ⚠ đổi rộng bất thường — nhìn kỹ node tools/soi-doi-kho.js trước khi đẩy' : ''));
+      }
+    }
+  }
+
   console.log('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành'));
   await b.close();
   process.exit(loi ? 1 : 0);

@@ -65,6 +65,7 @@ const NEN = ['VANHANH', 'CHUYENDICH', 'CHANDUNG', 'LOTRINH', 'FAMILIES', 'TEAM',
      màn hình, nên để ở nền không mở thêm gì cho ai. */
   'CV_TRANG', 'CV_MUC', 'CV_LUAT', 'CV_HANG', 'CV_KH_NGAY', 'CV_KH_TANG',
   'CV_KPI_CAP', 'CV_KPI_CAP_LUAT',
+  'DEHIEU_LUAT', 'DEHIEU_THAY', 'DEHIEU_TRANG', 'DEHIEU_NGUONG',
   'NK_NHIP', 'NK_O', 'THI_VIET', 'THI_LUAT',
   /* Chuẩn thời gian, chuẩn hoàn thành, thang thưởng và phạt: mọi vai đều
      phải đọc được, vì luật mà không ai đọc được thì không phải luật. */
@@ -339,7 +340,9 @@ const MO_RA = [
 
      Cùng lý do với CV_LUAT: đây là cách người ta bị đo, phải đọc được
      trước khi bị đo. */
-  'TG_NHIEMVU', 'TG_THUONG', 'TG_PHAT'
+  'TG_NHIEMVU', 'TG_THUONG', 'TG_PHAT',
+  /* Chuẩn lời dễ hiểu: ai cũng phải đọc được cách Học viện tự buộc mình viết. */
+  'DEHIEU_LUAT', 'DEHIEU_THAY', 'DEHIEU_TRANG', 'DEHIEU_NGUONG'
   /* SOAT_* KHÔNG nằm ở đây. Chuẩn soát liệt kê tên mọi kho nội bộ, trường
      bắt buộc của từng kho và số bản ghi phải có — đưa vào gói mẫu công khai
      là vẽ sẵn bản đồ kho cho người chưa được cấp phép. Nó ở gói NỀN. */

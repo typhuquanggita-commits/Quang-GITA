@@ -55,6 +55,14 @@ if (!co('kho-goc')) {
 tieuDe('MÃ HOÁ KHO');
 chay('node', ['tools/ma-hoa-kho.js']);
 
+/* ─── 1b. Kho vừa đóng đổi gì so với bản đã phát hành ───
+   kho-goc/ nằm trong .gitignore nên không có diff để nhìn. Bảy gói .enc
+   đã phát hành thì có trong git — đây là chỗ duy nhất so được. In ra
+   trước mọi bước khác, để người phát hành thấy sức công phá của việc
+   mình vừa sửa TRƯỚC khi nó đi tiếp. Không chặn, chỉ nói. */
+tieuDe('KHO VỪA ĐÓNG ĐỔI GÌ SO VỚI BẢN ĐÃ PHÁT HÀNH');
+chay('node', ['tools/soi-doi-kho.js']);
+
 /* ─── 2. Tệp nạp khoá ─── */
 tieuDe('SINH TỆP NẠP KHOÁ CHO MÁY CHỦ CẤP PHÉP');
 chay('node', ['tools/tao-nap-khoa.js']);
