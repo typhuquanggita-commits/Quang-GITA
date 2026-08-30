@@ -19,7 +19,9 @@ chuyên vào các trường top đầu Hà Nội.
 | Phiếu ôn tập mốc · Đề thi mốc · Đề đánh giá năng lực | 12 · 120 · 30 | `07-de-thi/` |
 | Bản đồ kiến thức theo kỳ | 9 | `06-ban-do-kien-thuc/` |
 | Bộ test đầu vào bốn trục | 3 | `08-test-dau-vao/` |
-| **Tổng tài liệu** | **1458** | |
+| Sơ đồ đọc vị đề bài | 24 | `10-so-do-doc-vi/` |
+| Lộ trình học 34 tuần | 6 | `05-lo-trinh/` |
+| **Tổng tài liệu** | **1488** | |
 
 **Cấu trúc bất biến của mọi phiếu học:** 90 phút · thang 100 · 5 phần × 5 bài ×
 4–10 ý · 115–170 ý một phiếu.
@@ -34,9 +36,18 @@ Mỗi buổi kèm một phiếu `GP` lời giải; mỗi cụm có một phiếu
 
 Kho được dựng bằng **bộ sinh nội dung** (`04-cong-cu/sinh/` và `04-cong-cu/lap/`) theo
 một nguyên tắc bất di bất dịch: **mọi đáp số do mã tính ra, không do người gõ**. Thư
-viện có 162 mẫu bài phủ kín 8 nhóm chuyên đề × 5 mức × 3 lớp; mỗi mẫu tự chọn số liệu,
-tự tính đáp số, và mang sẵn hướng giải, nhãn tư duy, lỗi thường gặp, gợi ý ba tầng, sáu
-cột bảng phân tích chuyên sâu và một bài tương tự.
+viện có **229 mẫu bài** phủ kín 8 nhóm chuyên đề × 5 mức × 3 lớp — cả 120 ô đều có từ
+hai mẫu trở lên, và **538/538 dạng bài** của ngân hàng đều có mẫu khớp. Mỗi mẫu tự chọn
+số liệu, tự tính đáp số, và mang sẵn hướng giải, nhãn tư duy, lỗi thường gặp, gợi ý ba
+tầng, sáu cột bảng phân tích chuyên sâu và một bài tương tự.
+
+Phiếu `GP` không chỉ trả đáp số: mỗi bài có mục **Các bước giải** đi từ đọc vị dấu hiệu
+→ kiến thức phải dùng → cách làm → lối tắt → kết quả, rồi tới **cách nghĩ chung cho mọi
+bài cùng dạng**. Cách đọc đề được rút thành **24 sơ đồ đọc vị** (`10-so-do-doc-vi/`),
+mỗi sơ đồ là một cây quyết định cho một nhóm chuyên đề ở một lớp, kèm bảng dấu hiệu,
+tám cặp chữ dễ đọc nhầm và mười đề luyện đọc vị. Thứ tự học cả năm nằm ở **6 lộ trình
+34 tuần** (`05-lo-trinh/lo-trinh-T{1,2}-L{3,4,5}.md`) với bốn cổng kiểm tra và lịch ôn
+lại năm mốc.
 
 Ba tài liệu viết tay đầu tiên — trọn cụm `GITA-T1-L4-C03` và `GITA-T2-L5-C04-NC` — được
 giữ nguyên làm **chuẩn vàng** đối chiếu; bộ sinh không ghi đè chúng.
@@ -55,9 +66,11 @@ tài liệu của khối khác thì được dẫn sang đúng bản của khố
 
 | Khối | Nội dung nhúng | Dung lượng |
 |---|---|---:|
-| Lớp 3 | 200 phiếu học + 232 phiếu kèm | 8,9 MB |
-| Lớp 4 | 200 phiếu học + 232 phiếu kèm | 9,9 MB |
-| Lớp 5 | 200 phiếu học + 232 phiếu kèm | 10,0 MB |
+| Lớp 3 | 200 phiếu học + 232 phiếu kèm + 8 sơ đồ đọc vị | 11,2 MB |
+| Lớp 4 | 200 phiếu học + 232 phiếu kèm + 8 sơ đồ đọc vị | 11,9 MB |
+| Lớp 5 | 200 phiếu học + 232 phiếu kèm + 8 sơ đồ đọc vị | 12,1 MB |
+
+Cả ba bản đều mang đủ 6 lộ trình 34 tuần và chỉ mục cả ba khối.
 
 Địa chỉ ba bản ghi tại `09-online/dia-chi-ban.json`.
 
@@ -81,14 +94,15 @@ gita-math/
 ├── 04-cong-cu/           Bộ công cụ sinh, kiểm định, kiểm toán, kết xuất bản in
 │   ├── data/             Nguồn dữ liệu duy nhất: nhóm chuyên đề, cụm, loại phiếu,
 │   │                     ngân hàng 540 dạng bài, bản đồ, đề thi, phân quyền
-│   ├── sinh/             Thư viện 162 mẫu bài tự tính đáp số, theo tám nhóm
+│   ├── sinh/             Thư viện 229 mẫu bài tự tính đáp số, theo tám nhóm
 │   ├── lap/              Bộ lắp mẫu bài thành phiếu, phiếu GP và phiếu HD
 │   └── templates/        Khuôn phiếu và quy trình biên soạn một cụm
-├── 05-lo-trinh/          Kế hoạch sản xuất
+├── 05-lo-trinh/          Kế hoạch sản xuất · 6 lộ trình học 34 tuần
 ├── 06-ban-do-kien-thuc/  9 bản đồ HK1 · HK2 · cả năm cho ba lớp
 ├── 07-de-thi/            162 đề: ôn tập mốc, thi mốc, đánh giá năng lực
 ├── 08-test-dau-vao/      Test bốn trục cho học sinh mới + công cụ xếp lớp
-└── 09-online/            Hệ thống làm bài trực tuyến
+├── 09-online/            Hệ thống làm bài trực tuyến
+└── 10-so-do-doc-vi/      24 sơ đồ đọc vị đề bài (8 nhóm × 3 lớp)
 ```
 
 ## 5. BỘ CÔNG CỤ — CHẠY THEO ĐÚNG THỨ TỰ NÀY
@@ -101,10 +115,12 @@ gita-math/
 | `python3 04-cong-cu/build_ban_do.py` | Sinh 9 bản đồ kiến thức |
 | `python3 04-cong-cu/build_de_thi.py` | Sinh chỉ mục 162 đề thi |
 | `python3 04-cong-cu/build_phan_quyen.py` | Sinh tài liệu phân quyền và bảo mật |
-| `python3 04-cong-cu/kiem_tra_mau.py` | Kiểm định 162 mẫu bài × mọi lớp × 300 hạt giống |
+| `python3 04-cong-cu/kiem_tra_mau.py` | Kiểm định 229 mẫu bài × mọi lớp × 300 hạt giống, đo độ phủ 538 dạng bài |
 | `python3 04-cong-cu/sinh_kho.py` | **Sinh trọn kho 1 296 tài liệu** (`--ghi-de` để dựng lại) |
 | `python3 04-cong-cu/validate_phieu.py --all` | Kiểm định từng phiếu theo chuẩn v2.0 |
-| `python3 04-cong-cu/kiem_toan.py` | **Kiểm toán toàn hệ thống — 12 nhóm, 35 hạng mục** |
+| `python3 04-cong-cu/build_so_do.py` | Sinh 24 sơ đồ đọc vị đề bài |
+| `python3 04-cong-cu/build_lo_trinh.py` | Sinh 6 lộ trình học 34 tuần |
+| `python3 04-cong-cu/kiem_toan.py` | **Kiểm toán toàn hệ thống — 12 nhóm, 36 hạng mục** |
 | `python3 04-cong-cu/render_html.py --all` | Kết xuất bản in A4: bản ĐỀ và bản ĐÁP ÁN |
 | `python3 04-cong-cu/build_web_data.py --lop 4` | Đóng gói dữ liệu online cho một khối lớp |
 | `python3 04-cong-cu/build_artifact.py --lop 4` | Ghép thành một trang tự chứa để xuất bản |
@@ -120,7 +136,7 @@ dữ liệu nguồn rồi chạy lại bộ sinh, **không sửa tay tệp đã 
 |---|---|
 | **Giám đốc / chủ đầu tư** | `00-thuong-hieu/01` → `01-kien-truc/01` → `05-lo-trinh/ke-hoach-san-xuat.md` |
 | **Chủ biên học liệu** | `01-kien-truc/02` chuẩn biên soạn → `04-cong-cu/sinh/khung.py` → một tệp `04-cong-cu/sinh/mau_*.py` → cụm chuẩn vàng `GITA-T1-L4-C03-*` |
-| **Giáo viên đứng lớp** | `01-kien-truc/06` khung giáo án → `06-ban-do-kien-thuc/` → phiếu `HD` của cụm đang dạy |
+| **Giáo viên đứng lớp** | `01-kien-truc/06` khung giáo án → `05-lo-trinh/lo-trinh-*` của lớp mình → `06-ban-do-kien-thuc/` → `10-so-do-doc-vi/` → phiếu `HD` của cụm đang dạy |
 | **Coach kèm học viên** | `00-thuong-hieu/02` mô thức GITA → `01-kien-truc/04` ma trận năng lực |
 | **Tư vấn tuyển sinh** | `08-test-dau-vao/00-huong-dan-test-dau-vao.md` |
 | **Quản trị hệ thống** | `01-kien-truc/07-phan-quyen-va-bao-mat.md` — đọc kỹ mục ranh giới bảo mật |

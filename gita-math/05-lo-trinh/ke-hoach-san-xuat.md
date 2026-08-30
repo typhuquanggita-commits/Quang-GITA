@@ -20,26 +20,32 @@
 | Phiếu ôn tập mốc · đề thi mốc · đề đánh giá năng lực | 12 · 120 · 30 | chỉ mục đủ, 3 đề mẫu đã soạn |
 | Bản đồ kiến thức | 9 | đủ |
 | Bộ test đầu vào bốn trục | 3 | đủ |
+| Sơ đồ đọc vị đề bài (8 nhóm × 3 lớp) | 24 | đủ |
+| Lộ trình học 34 tuần (2 tuyến × 3 lớp) | 6 | đủ |
 
 Kiểm định: `validate_phieu.py --all` → **0 lỗi**. Kiểm toán: `kiem_toan.py` →
-**35 / 35 hạng mục đạt**.
+**36 / 36 hạng mục đạt**.
 
 ## 2. CÁCH KHO ĐƯỢC DỰNG
 
 Kho không được gõ tay mà được **sinh bằng mã**, theo một nguyên tắc bất di bất dịch:
 **mọi đáp số do máy tính ra, không do người gõ.** Người biên soạn viết lời dẫn, hướng
 giải, lỗi thường gặp, gợi ý ba tầng và sáu cột bảng phân tích — tất cả đóng gói trong
-**162 mẫu bài** phủ kín 8 nhóm chuyên đề × 5 mức × 3 lớp.
+**229 mẫu bài** phủ kín 8 nhóm chuyên đề × 5 mức × 3 lớp. Cả 120 ô (lớp × nhóm × mức)
+đều có từ hai mẫu trở lên, và cả **538 dạng bài** của ngân hàng đều có mẫu khớp.
 
 | Lớp phần mềm | Nơi để | Việc |
 |---|---|---|
 | Khung mẫu bài | `04-cong-cu/sinh/khung.py` | định dạng số Việt Nam, bối cảnh, đối tượng `Bai`, `Mau` |
-| Thư viện mẫu | `04-cong-cu/sinh/mau_*.py` | 162 mẫu, mỗi mẫu tự chọn số liệu và tự tính đáp số |
+| Thư viện mẫu | `04-cong-cu/sinh/mau_*.py` | 229 mẫu, mỗi mẫu tự chọn số liệu và tự tính đáp số |
 | Bộ chọn mẫu | `04-cong-cu/lap/chon.py` | chọn năm mẫu cho một phần, ưu tiên khớp dạng bài của cụm |
 | Phần có cấu trúc | `04-cong-cu/lap/meta.py` | sơ đồ tư duy, bảng dạng bài, đọc vị, kỹ năng, thuyết trình |
 | Bộ lắp phiếu | `04-cong-cu/lap/phieu.py` | kết xuất đề và hướng dẫn giải |
 | Bộ lắp phiếu kèm | `04-cong-cu/lap/kem.py` | phiếu GP bảy mục và phiếu HD bảy mục |
 | Bộ chạy cả kho | `04-cong-cu/sinh_kho.py` | sinh 1 296 tài liệu trong khoảng 3 giây |
+| Cây đọc vị viết tay | `04-cong-cu/data/so_do_doc_vi.py` | 8 cây quyết định, 47 nút, 8 cặp chữ dễ nhầm |
+| Bộ sinh sơ đồ đọc vị | `04-cong-cu/build_so_do.py` | 24 sơ đồ trong `10-so-do-doc-vi/` |
+| Bộ sinh lộ trình | `04-cong-cu/build_lo_trinh.py` | 6 lộ trình 34 tuần trong `05-lo-trinh/` |
 
 Hạt giống ngẫu nhiên chốt theo **mã phiếu**, nên sinh lại bao nhiêu lần cũng ra đúng
 tài liệu ấy, và phiếu GP luôn khớp từng ý với phiếu học tương ứng.
@@ -82,14 +88,21 @@ Khi phân vân một phiếu sinh tự động đã đủ chất lượng chưa,
 
 ## 5. MỞ RỘNG THƯ VIỆN MẪU
 
-Thư viện 162 mẫu là **tài sản gốc** của hệ thống: thêm một mẫu tốt là nâng chất lượng
-hàng chục phiếu cùng lúc. Ưu tiên bổ sung, theo thứ tự:
+Thư viện 229 mẫu là **tài sản gốc** của hệ thống: thêm một mẫu tốt là nâng chất lượng
+hàng chục phiếu cùng lúc. Không còn ô trống và không còn dạng bài nào chưa phủ, nên
+việc mở rộng từ đây là **làm dày chỗ mỏng**, không phải vá chỗ thủng.
+
+Đo bằng `kiem_tra_mau.py`: sàn hiện tại là **2 mẫu một ô**, chạm sàn ở phần lớn các ô
+của lớp 3. Ưu tiên bổ sung, theo thứ tự:
 
 | Ưu tiên | Ô còn mỏng | Vì sao |
 |:--:|---|---|
-| 1 | Lớp 3 — mọi nhóm, mức M4 và M5 | mỗi ô chỉ có 1 mẫu, phiếu lớp 3 dễ lặp |
-| 2 | Nhóm E, F, G, H — mức M5 | phần V của phiếu lớp 4 và 5 phải phân hoá được |
-| 3 | Nhóm D — mức M4 lớp 4 | nhóm đông dạng bài nhất nhưng mỏng mẫu ở mức này |
+| 1 | Lớp 3 — nhóm A, B, C, mức M2 → M5 | đúng sàn 2 mẫu, mà lớp 3 có 200 phiếu rút từ đây |
+| 2 | Nhóm E, F, G, H — mức M5 lớp 4 và 5 | phần V phải phân hoá được học sinh giỏi với xuất sắc |
+| 3 | Nhóm D — mức M4 lớp 4 | nhóm đông dạng bài nhất, mẫu càng nhiều càng ít lặp |
+
+Ngưỡng nên giữ: **mỗi ô ≥ 2 mẫu** là bắt buộc (`kiem_tra_mau.py` báo lỗi nếu tụt),
+**≥ 4 mẫu** là mức thoải mái để một phiếu năm bài không phải dùng lại mẫu.
 
 **Cách thêm một mẫu:** viết một hàm trong `04-cong-cu/sinh/mau_x.py`, gắn `@dang_ky`,
 chạy `python3 04-cong-cu/kiem_tra_mau.py`, rồi `sinh_kho.py --ghi-de`. Không cần sửa gì
@@ -101,6 +114,9 @@ Kho đủ nặng 53 MB nên bản online tách theo khối lớp; địa chỉ b
 `09-online/dia-chi-ban.json`. Quy trình phát hành lại sau mỗi vòng duyệt:
 
 ```
+python3 04-cong-cu/sinh_kho.py --ghi-de
+python3 04-cong-cu/build_so_do.py
+python3 04-cong-cu/build_lo_trinh.py
 python3 04-cong-cu/validate_phieu.py --all
 python3 04-cong-cu/kiem_toan.py
 for L in 3 4 5; do
