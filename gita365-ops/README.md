@@ -63,7 +63,7 @@ Luật xương sống: **G2 nuôi G1, G1 nuôi khóa học.** Người ở G2 kh
 |---|---|
 | [`khoi-dong-g2/`](khoi-dong-g2/) | **Bộ khởi động G2 · Gia Đình Thịnh Vượng**: cấu hình Ngày 0, 3 bài ghim, 10 bài tuần 1, 5 kịch bản tin nhắn, phiên bản nhóm mới một người vận hành, bảng đo. Kèm trang `bo-khoi-dong.html` bấm chép–dán |
 | [`khoi-dong-g1/`](khoi-dong-g1/) | **Bộ khởi động G1 · Cộng đồng GITA365**: mô tả nhóm, 4 câu hỏi cổng vào, 3 bài ghim, **7 bài nghi thức tuần 1 viết trọn vẹn** |
-| [`kho-noi-dung/`](kho-noi-dung/) | **Kho nội dung — 176 bài viết trọn vẹn**: G2 tháng 1 *Kết nối* (40) · G2 tháng 2 *Nuôi dạy* (40) · G2 tháng 3 *Thịnh vượng* (40) · G1 tháng 1 *Nền móng* (28) · G1 tháng 2 *Năng lực* (28). Đủ **3 tháng cho G2** và **2 tháng cho G1** — không phải soạn bài trong suốt quý đầu. Mỗi bài kèm bình luận ghim, 3 câu hỏi mồi và lưu ý vận hành |
+| [`kho-noi-dung/`](kho-noi-dung/) | **Kho nội dung — 204 bài viết trọn vẹn**: G2 tháng 1 *Kết nối* (40) · G2 tháng 2 *Nuôi dạy* (40) · G2 tháng 3 *Thịnh vượng* (40) · G1 tháng 1 *Nền móng* (28) · G1 tháng 2 *Năng lực* (28) · G1 tháng 3 *Nhân bản* (28). Đủ **3 tháng cho cả hai nhóm** — không phải soạn bài trong suốt quý đầu. Mỗi bài kèm bình luận ghim, 3 câu hỏi mồi và lưu ý vận hành |
 | [`tai-nguyen/`](tai-nguyen/) | **6 trang công khai**: Thư viện Gia Đình (cửa ngõ phễu) · Xưởng ảnh bài đăng · 30 câu hỏi bàn ăn · 12 trò chơi gắn kết · Nhật ký Cho là nhận 21 ngày · Bản đồ 90 ngày |
 
 ### Dữ liệu vận hành
