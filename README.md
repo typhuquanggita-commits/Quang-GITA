@@ -237,6 +237,63 @@ nhịp hiện tại, trần của quỹ, nhịp tối thiểu cần có — luô
 chạy. Lợi ích biên tính trong thời gian hằng số, vì điểm một phần chỉ phụ thuộc độ thành
 thạo trung bình có trọng số của phần đó.
 
+### Lộ trình 150 điểm — khi mục tiêu là điểm tuyệt đối
+
+Mục tiêu 150 buộc phải đổi cách đo, và lý do là toán học chứ không phải quan điểm:
+
+> **Điểm 150 không phải một kỳ vọng, nó là một biến cố.**
+
+Mọi mô hình năng lực — Rasch, IRT hay biến thể nào — đều cho ra tỉ lệ đúng **kỳ vọng**.
+Tỉ lệ đó tiến tới 1 nhưng không bao giờ bằng 1, nên điểm kỳ vọng tiến tới 150 mà không
+bao giờ chạm. Một hệ thống hứa "lộ trình này sẽ cho bạn 150 điểm" là một hệ thống đang
+nói dối về mặt toán học.
+
+Vì vậy màn hình này không dự báo điểm. Nó trả lời câu khác và trả lời được thật: **với
+năng lực hiện tại, xác suất làm đúng cả 150 câu là bao nhiêu**, và cần nâng lên bằng cách
+nào.
+
+| Cơ hội đạt 150 | Thành thạo cần có | Điểm kỳ vọng | Biên lỗi bất cẩn |
+|---|---|---|---|
+| 10% | 98,80% | 147,7 | 1 lỗi / 66 câu |
+| 25% | 99,28% | 148,6 | 1 lỗi / 109 câu |
+| 50% | 99,64% | 149,3 | 1 lỗi / 217 câu |
+| 80% | 99,88% | 149,8 | 1 lỗi / 673 câu |
+
+Cột điểm kỳ vọng chính là điểm mấu chốt: ngay cả ở mốc 80% cơ hội, kỳ vọng vẫn là 149,8
+chứ không phải 150. Đạt điểm tuyệt đối là **thắng một phép thử**, không phải chạm một mức
+trung bình.
+
+**Ba trụ cột — và trụ cột ai cũng bỏ quên.** Mô hình tách ba yêu cầu độc lập nhau:
+
+1. **Kiến thức** — trụ cột duy nhất mà thời gian học giải quyết trực tiếp. Nhưng nó chỉ
+   là điều kiện *cần*.
+2. **Độ chính xác thực thi** — không sai bất cẩn. Đây là **kỹ năng riêng**, không phải hệ
+   quả của kiến thức.
+3. **Độ bền** — giữ được cả hai thứ trên suốt 195 phút.
+
+Trụ cột thứ hai bị bỏ qua ở gần như mọi tài liệu luyện thi, và nó **quyết định** ở vùng
+điểm trên 140. Lý do nằm ở phép nhân: xác suất sạch lỗi cả bài bằng (1 − p)¹⁵⁰.
+
+| Tỉ lệ sai mỗi câu | Cơ hội làm đúng cả 150 câu |
+|---|---|
+| 2% (1 lỗi/50 câu) | 4,8% |
+| 1% (1 lỗi/100 câu) | 22,1% |
+| 0,5% (1 lỗi/200 câu) | 47,1% |
+| 0,2% (1 lỗi/500 câu) | 74,1% |
+
+Sai 1% mỗi câu nghe rất nhỏ, nhưng chỉ cho 22% cơ hội. Đây là lý do rất nhiều người đạt
+135–140 rồi dừng lại mà không hiểu vì sao — họ đang đổ thêm giờ vào trụ cột thứ nhất
+trong khi điểm nghẽn nằm ở trụ cột thứ hai.
+
+Hệ thống đo bằng **chuyên đề yếu nhất**, không đo bằng trung bình: đề thật lấy câu ở mọi
+chuyên đề nên một lỗ hổng duy nhất đủ làm hỏng cả bài. Kèm theo là **bốn nhóm lỗi thực
+thi** với thao tác vật lý chống lại từng nhóm, **quy trình kiểm tra ba lớp** đặt vào lúc
+kiểm còn rẻ, và bốn giai đoạn trong đó **hai giai đoạn cuối không dành cho kiến thức nữa**.
+
+Tỉ lệ sai bất cẩn chỉ đo trên chuyên đề **đã thành thạo** — sai ở chuyên đề chưa học là lỗ
+hổng kiến thức chứ không phải lỗi bất cẩn, và hai thứ đó cần hai cách chữa khác nhau. Chưa
+đủ 30 câu thì hệ thống trả về "chưa đo được" thay vì một con số bịa.
+
 ### Đề mẫu trọn vẹn kèm barem
 
 Hệ thống vẫn sinh được đề thi thử từ ma trận — nhưng **ma trận không phải đề**. Một ma trận
@@ -330,10 +387,29 @@ thành lời giải đúng.
 
 ### Ngân hàng câu hỏi
 
-Phiếu chỉ tốt bằng ngân hàng câu hỏi đứng sau nó. Hiện có **572 câu** trải đều 33
+Phiếu chỉ tốt bằng ngân hàng câu hỏi đứng sau nó. Hiện có **689 câu** trải đều 33
 chuyên đề, mỗi chuyên đề **tối thiểu 15 câu** — đúng bằng số câu của một phiếu cấp 6,
 nên không phiếu nào phải lặp câu để đủ số. Mọi câu đều kèm lời giải, và câu có phương
 án nhiễu đáng chú ý thì kèm luôn chú thích bẫy.
+
+**Phân bố độ khó bám sát đề chuẩn**, và đây là điều kho phải có nếu muốn phục vụ được
+người nhắm điểm tuyệt đối:
+
+| Mức | Số câu | Tỉ lệ | Đề chuẩn |
+|---|---|---|---|
+| 4 — Vận dụng cao | 119 | 17,3% | 17% |
+| 5 — Phân loại | 67 | 9,7% | 7% |
+
+Kho từng lệch hẳn về phía dễ — chỉ **4 câu phân loại trong 572**, và 12 chuyên đề không
+có lấy một câu khó nào. Một kho như vậy vẫn đưa được người học lên mức 120 điểm, nhưng
+không thể đưa ai lên 150: họ không có gì để luyện ở đúng chỗ quyết định. Nay mỗi chuyên
+đề có tối thiểu **4 câu vận dụng cao và 2 câu phân loại**, với hai bài test khóa lại để
+kho không lệch về phía dễ trở lại.
+
+Nguyên tắc soạn câu mức 4–5 khác hẳn câu mức 1–3: câu khó không phải câu **tính dài hơn**
+mà là câu có **thêm một bước** người làm dễ bỏ qua — kiểm điều kiện áp dụng, xác định đại
+lượng quyết định, hoặc đọc ra ràng buộc ẩn. Mỗi phương án nhiễu ứng với một **lỗi suy luận
+cụ thể** chứ không phải một con số ngẫu nhiên, nhờ vậy chữa bài là dạy được.
 
 Độ phủ được tính bằng `bankCoverage()` và **hiển thị thẳng trên giao diện**: khi một
 chuyên đề chưa đủ câu, hệ thống báo cho người học biết thay vì âm thầm dùng lại câu cũ.
