@@ -106,6 +106,7 @@
 | [05-CHUAN-DAU-RA-THEO-KHOI.md](00-KHUNG-NEN-TANG/05-CHUAN-DAU-RA-THEO-KHOI.md) | Chuẩn đầu ra (Exit Profile) từng khối 1→12 |
 | [06-QUY-CHUAN-CHAT-LUONG-GITA-QC.md](00-KHUNG-NEN-TANG/06-QUY-CHUAN-CHAT-LUONG-GITA-QC.md) | Bộ 49 tiêu chí kiểm định chất lượng một buổi huấn luyện GITA |
 | [07-HE-GEN-VIET.md](00-KHUNG-NEN-TANG/07-HE-GEN-VIET.md) | Kiến trúc hệ GEN VIỆT: 5 trụ, gắn Kỷ nguyên vươn mình, quy chuẩn thành viên, tổ chức TRN–ACT–QLHV–Leader, GITA hoá ba sân |
+| **[08-DOI-CHIEU-NGUON-GOC-HOC-VIEN.md](00-KHUNG-NEN-TANG/08-DOI-CHIEU-NGUON-GOC-HOC-VIEN.md)** | 🔴 **ƯU TIÊN CAO NHẤT** — đối chiếu với thư mục nguồn "KNS 365" của Học viện *(đọc 30/08/2026)*: những chỗ **KHỚP** và **8 chỗ LỆCH phải sửa** (hệ Pin 10 cấp vs 6 đai · thang 6 bậc vs GITA-4 · 6 nhóm năng lực · Bản Đồ 30 Năm · 5 trụ cột · 7 giá trị cốt lõi · 15 cấu phần còn thiếu · 12 giáo án thật chưa đối chiếu). **Khi mâu thuẫn, nguồn gốc thắng.** |
 
 ### 📗 01 – CHƯƠNG TRÌNH KHUNG (288 chuyên đề)
 | Tệp | Nội dung |
