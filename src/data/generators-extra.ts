@@ -100,7 +100,7 @@ export const GENERATORS_EXTRA: ItemGenerator[] = [
     name: 'Đại lượng không đổi trong mô hình hai tiếp tuyến',
     topicId: 'hh-cuc-tri-co-dinh',
     strand: 'hinh-hoc',
-    tracks: ['thpt', 'chuyen'],
+    tracks: ['thpt', 'chuyen', 'chinh-khoa'],
     level: 4,
     skill: 'Chứng minh một tích không phụ thuộc vị trí điểm chạy',
     build: (r) => {
@@ -124,7 +124,7 @@ export const GENERATORS_EXTRA: ItemGenerator[] = [
     name: 'Khoảng cách từ tâm đến dây cung',
     topicId: 'hh-cuc-tri-co-dinh',
     strand: 'hinh-hoc',
-    tracks: ['thpt', 'chuyen'],
+    tracks: ['thpt', 'chuyen', 'chinh-khoa'],
     level: 3,
     skill: 'Dùng quan hệ đường kính – dây cung',
     build: (r) => {
@@ -305,7 +305,7 @@ export const GENERATORS_EXTRA: ItemGenerator[] = [
     name: 'Quy tắc trình bày & ăn điểm barem',
     topicId: 'ky-nang-trinh-bay',
     strand: 'dai-so',
-    tracks: ['thpt', 'chuyen'],
+    tracks: ['thpt', 'chuyen', 'chinh-khoa'],
     level: 1,
     skill: 'Trình bày đúng chuẩn chấm',
     build: (r) => {
@@ -327,7 +327,7 @@ export const GENERATORS_EXTRA: ItemGenerator[] = [
     name: 'Phân bổ thời gian và điểm số theo cấu trúc đề',
     topicId: 'ky-nang-quan-ly-thoi-gian',
     strand: 'dai-so',
-    tracks: ['thpt', 'chuyen'],
+    tracks: ['thpt', 'chuyen', 'chinh-khoa'],
     level: 1,
     skill: 'Nắm ma trận đề để phân bổ thời gian',
     build: (r) => {

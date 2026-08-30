@@ -39,7 +39,7 @@ export const GENERATORS_GAP: ItemGenerator[] = [
     name: 'Hệ thức cạnh góc vuông và hình chiếu',
     topicId: 'hh-he-thuc-luong',
     strand: 'hinh-hoc',
-    tracks: ['thpt', 'chuyen'],
+    tracks: ['thpt', 'chuyen', 'chinh-khoa'],
     level: 1,
     skill: 'Chọn đúng hệ thức theo dữ kiện',
     build: (r) => {
@@ -64,7 +64,7 @@ export const GENERATORS_GAP: ItemGenerator[] = [
     name: 'Đường cao ứng với cạnh huyền',
     topicId: 'hh-he-thuc-luong',
     strand: 'hinh-hoc',
-    tracks: ['thpt', 'chuyen'],
+    tracks: ['thpt', 'chuyen', 'chinh-khoa'],
     level: 1,
     skill: 'Dùng hệ thức tích hai cạnh góc vuông',
     build: (r) => {
@@ -88,7 +88,7 @@ export const GENERATORS_GAP: ItemGenerator[] = [
     name: 'Bài toán thực tế đo chiều cao bằng góc nâng',
     topicId: 'hh-he-thuc-luong',
     strand: 'hinh-hoc',
-    tracks: ['thpt', 'chuyen'],
+    tracks: ['thpt', 'chuyen', 'chinh-khoa'],
     level: 2,
     skill: 'Mô hình hoá tình huống thực tế thành tam giác vuông',
     build: (r) => {
@@ -115,7 +115,7 @@ export const GENERATORS_GAP: ItemGenerator[] = [
     name: 'Tính giá trị lượng giác còn lại',
     topicId: 'hh-he-thuc-luong',
     strand: 'hinh-hoc',
-    tracks: ['thpt', 'chuyen'],
+    tracks: ['thpt', 'chuyen', 'chinh-khoa'],
     level: 2,
     skill: 'Dùng hằng đẳng thức lượng giác cơ bản',
     build: (r) => {
@@ -141,7 +141,7 @@ export const GENERATORS_GAP: ItemGenerator[] = [
     name: 'Nhận dạng hệ thức đối xứng hay không đối xứng',
     topicId: 'ds-viete-khong-doi-xung',
     strand: 'dai-so',
-    tracks: ['thpt', 'chuyen'],
+    tracks: ['thpt', 'chuyen', 'chinh-khoa'],
     level: 2,
     skill: 'Phân loại hệ thức trước khi chọn kỹ thuật',
     build: (r) => {
@@ -192,7 +192,7 @@ export const GENERATORS_GAP: ItemGenerator[] = [
     name: 'Hệ thức dạng một nghiệm gấp k lần nghiệm kia',
     topicId: 'ds-viete-khong-doi-xung',
     strand: 'dai-so',
-    tracks: ['thpt', 'chuyen'],
+    tracks: ['thpt', 'chuyen', 'chinh-khoa'],
     level: 3,
     skill: 'Thế hệ thức không đối xứng vào tổng và tích',
     build: (r) => {
@@ -219,7 +219,7 @@ export const GENERATORS_GAP: ItemGenerator[] = [
     name: 'Hạ bậc nghiệm bằng chính phương trình',
     topicId: 'ds-viete-khong-doi-xung',
     strand: 'dai-so',
-    tracks: ['thpt', 'chuyen'],
+    tracks: ['thpt', 'chuyen', 'chinh-khoa'],
     level: 4,
     skill: 'Dùng phương trình để giảm bậc biểu thức',
     build: (r) => {
@@ -244,7 +244,7 @@ export const GENERATORS_GAP: ItemGenerator[] = [
     name: 'Lập hệ từ hệ thức bậc nhất không đối xứng',
     topicId: 'ds-viete-khong-doi-xung',
     strand: 'dai-so',
-    tracks: ['thpt', 'chuyen'],
+    tracks: ['thpt', 'chuyen', 'chinh-khoa'],
     level: 4,
     skill: 'Kết hợp hệ thức đề cho với tổng hai nghiệm',
     build: (r) => {
@@ -276,7 +276,7 @@ export const GENERATORS_GAP: ItemGenerator[] = [
     name: 'Tối ưu hàng rào với diện tích cho trước',
     topicId: 'tt-cuc-tri-thuc-te',
     strand: 'thuc-te',
-    tracks: ['thpt', 'chuyen'],
+    tracks: ['thpt', 'chuyen', 'chinh-khoa'],
     level: 3,
     skill: 'Rút về một biến rồi dùng bất đẳng thức',
     build: (r) => {
@@ -303,7 +303,7 @@ export const GENERATORS_GAP: ItemGenerator[] = [
     name: 'Diện tích lớn nhất khi chu vi cho trước',
     topicId: 'tt-cuc-tri-thuc-te',
     strand: 'thuc-te',
-    tracks: ['thpt', 'chuyen'],
+    tracks: ['thpt', 'chuyen', 'chinh-khoa'],
     level: 2,
     skill: 'Tổng không đổi thì tích lớn nhất khi hai số bằng nhau',
     build: (r) => {
@@ -329,7 +329,7 @@ export const GENERATORS_GAP: ItemGenerator[] = [
     name: 'Đọc vị chi tiết làm đổi mô hình',
     topicId: 'tt-cuc-tri-thuc-te',
     strand: 'thuc-te',
-    tracks: ['thpt', 'chuyen'],
+    tracks: ['thpt', 'chuyen', 'chinh-khoa'],
     level: 3,
     skill: 'Xác định đúng đại lượng cần tối ưu',
     build: (r) => {

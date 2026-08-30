@@ -1,6 +1,7 @@
 import type { Topic } from '@/types';
 import { TOPICS_QG } from './topics-qg';
 import { TOPICS_L6 } from './topics-l6';
+import { TOPICS_CK } from './topics-ck';
 
 /**
  * Cây chuyên đề cho hai luồng.
@@ -13,7 +14,7 @@ const TOPICS_10: Topic[] = [
     id: 'ds-can-thuc',
     name: 'Căn thức bậc hai & rút gọn biểu thức',
     strand: 'dai-so',
-    tracks: ['thpt', 'chuyen'],
+    tracks: ['thpt', 'chuyen', 'chinh-khoa'],
     level: 1,
     frequency: 100,
     hours: 10,
@@ -49,7 +50,7 @@ const TOPICS_10: Topic[] = [
     id: 'ds-pt-hpt',
     name: 'Phương trình & hệ phương trình bậc nhất hai ẩn',
     strand: 'dai-so',
-    tracks: ['thpt', 'chuyen'],
+    tracks: ['thpt', 'chuyen', 'chinh-khoa'],
     level: 1,
     frequency: 95,
     hours: 8,
@@ -77,7 +78,7 @@ const TOPICS_10: Topic[] = [
     id: 'ds-viete',
     name: 'Phương trình bậc hai, định lí Viète & tương giao parabol',
     strand: 'dai-so',
-    tracks: ['thpt', 'chuyen'],
+    tracks: ['thpt', 'chuyen', 'chinh-khoa'],
     level: 2,
     frequency: 100,
     hours: 12,
@@ -108,7 +109,7 @@ const TOPICS_10: Topic[] = [
     id: 'ds-toan-loi-van',
     name: 'Giải bài toán bằng cách lập phương trình / hệ phương trình',
     strand: 'thuc-te',
-    tracks: ['thpt'],
+    tracks: ['thpt', 'chinh-khoa'],
     level: 2,
     frequency: 100,
     hours: 10,
@@ -138,7 +139,7 @@ const TOPICS_10: Topic[] = [
     id: 'tt-hinh-khong-gian',
     name: 'Hình trụ – hình nón – hình cầu (toán thực tế)',
     strand: 'thuc-te',
-    tracks: ['thpt'],
+    tracks: ['thpt', 'chinh-khoa'],
     level: 1,
     frequency: 90,
     hours: 4,
@@ -162,7 +163,7 @@ const TOPICS_10: Topic[] = [
     id: 'hh-he-thuc-luong',
     name: 'Hệ thức lượng trong tam giác vuông & tỉ số lượng giác',
     strand: 'hinh-hoc',
-    tracks: ['thpt', 'chuyen'],
+    tracks: ['thpt', 'chuyen', 'chinh-khoa'],
     level: 1,
     frequency: 85,
     hours: 8,
@@ -196,7 +197,7 @@ const TOPICS_10: Topic[] = [
     id: 'ds-viete-khong-doi-xung',
     name: 'Viète với biểu thức không đối xứng',
     strand: 'dai-so',
-    tracks: ['thpt', 'chuyen'],
+    tracks: ['thpt', 'chuyen', 'chinh-khoa'],
     level: 3,
     frequency: 55,
     hours: 8,
@@ -230,7 +231,7 @@ const TOPICS_10: Topic[] = [
     id: 'tt-cuc-tri-thuc-te',
     name: 'Bài toán thực tế liên quan cực trị',
     strand: 'thuc-te',
-    tracks: ['thpt', 'chuyen'],
+    tracks: ['thpt', 'chuyen', 'chinh-khoa'],
     level: 3,
     frequency: 45,
     hours: 7,
@@ -264,7 +265,7 @@ const TOPICS_10: Topic[] = [
     id: 'hh-duong-tron-co-ban',
     name: 'Đường tròn & tứ giác nội tiếp',
     strand: 'hinh-hoc',
-    tracks: ['thpt', 'chuyen'],
+    tracks: ['thpt', 'chuyen', 'chinh-khoa'],
     level: 2,
     frequency: 100,
     hours: 16,
@@ -298,7 +299,7 @@ const TOPICS_10: Topic[] = [
     id: 'hh-cuc-tri-co-dinh',
     name: 'Điểm cố định – quỹ tích – cực trị hình học',
     strand: 'hinh-hoc',
-    tracks: ['thpt', 'chuyen'],
+    tracks: ['thpt', 'chuyen', 'chinh-khoa'],
     level: 4,
     frequency: 70,
     hours: 12,
@@ -327,7 +328,7 @@ const TOPICS_10: Topic[] = [
     id: 'bdt-co-ban',
     name: 'Bất đẳng thức AM–GM & Cauchy–Schwarz',
     strand: 'bat-dang-thuc',
-    tracks: ['thpt', 'chuyen'],
+    tracks: ['thpt', 'chuyen', 'chinh-khoa'],
     level: 3,
     frequency: 85,
     hours: 12,
@@ -357,7 +358,7 @@ const TOPICS_10: Topic[] = [
     id: 'tt-thong-ke-xac-suat',
     name: 'Thống kê & xác suất (Chương trình GDPT 2018)',
     strand: 'thuc-te',
-    tracks: ['thpt'],
+    tracks: ['thpt', 'chinh-khoa'],
     level: 1,
     frequency: 35,
     hours: 5,
@@ -619,7 +620,7 @@ const TOPICS_10: Topic[] = [
     id: 'hh-mo-hinh-chuan',
     name: 'Các mô hình hình học chuẩn của đề tuyển sinh',
     strand: 'hinh-hoc',
-    tracks: ['thpt', 'chuyen'],
+    tracks: ['thpt', 'chuyen', 'chinh-khoa'],
     level: 3,
     frequency: 95,
     hours: 14,
@@ -754,7 +755,7 @@ const TOPICS_10: Topic[] = [
     id: 'ky-nang-trinh-bay',
     name: 'Kỹ năng trình bày & ăn điểm theo barem',
     strand: 'dai-so',
-    tracks: ['thpt', 'chuyen'],
+    tracks: ['thpt', 'chuyen', 'chinh-khoa'],
     level: 1,
     frequency: 100,
     hours: 4,
@@ -783,7 +784,7 @@ const TOPICS_10: Topic[] = [
     id: 'ky-nang-quan-ly-thoi-gian',
     name: 'Chiến thuật phòng thi & quản lý thời gian',
     strand: 'dai-so',
-    tracks: ['thpt', 'chuyen'],
+    tracks: ['thpt', 'chuyen', 'chinh-khoa'],
     level: 1,
     frequency: 100,
     hours: 3,
@@ -801,7 +802,7 @@ const TOPICS_10: Topic[] = [
   },
 ];
 
-export const TOPICS: Topic[] = [...TOPICS_10, ...TOPICS_QG, ...TOPICS_L6];
+export const TOPICS: Topic[] = [...TOPICS_10, ...TOPICS_QG, ...TOPICS_L6, ...TOPICS_CK];
 
 export const topicById = (id: string) => TOPICS.find((t) => t.id === id);
 export const topicsByTrack = (track: string) => TOPICS.filter((t) => t.tracks.includes(track as never));

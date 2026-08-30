@@ -4,6 +4,7 @@ import { GENERATORS_QG } from './generators-qg';
 import { GENERATORS_EXTRA } from './generators-extra';
 import { GENERATORS_GAP } from './generators-gap';
 import { GENERATORS_L6 } from './generators-l6';
+import { GENERATORS_CK } from './generators-ck';
 
 export interface RawItem {
   prompt: string;
@@ -144,7 +145,7 @@ const GENERATORS_10: ItemGenerator[] = [
     name: 'Tìm điều kiện xác định',
     topicId: 'ds-can-thuc',
     strand: 'dai-so',
-    tracks: ['thpt', 'chuyen'],
+    tracks: ['thpt', 'chuyen', 'chinh-khoa'],
     level: 1,
     skill: 'Đặt điều kiện xác định',
     build: (r) => {
@@ -167,7 +168,7 @@ const GENERATORS_10: ItemGenerator[] = [
     name: 'Rút gọn căn thức lồng',
     topicId: 'ds-can-thuc',
     strand: 'dai-so',
-    tracks: ['thpt', 'chuyen'],
+    tracks: ['thpt', 'chuyen', 'chinh-khoa'],
     level: 2,
     skill: 'Nhận dạng hằng đẳng thức dưới dấu căn',
     build: (r) => {
@@ -193,7 +194,7 @@ const GENERATORS_10: ItemGenerator[] = [
     name: 'Giải phương trình bậc hai',
     topicId: 'ds-viete',
     strand: 'dai-so',
-    tracks: ['thpt', 'chuyen'],
+    tracks: ['thpt', 'chuyen', 'chinh-khoa'],
     level: 1,
     skill: 'Giải phương trình bậc hai',
     build: (r) => {
@@ -225,7 +226,7 @@ const GENERATORS_10: ItemGenerator[] = [
     name: 'Tính biểu thức đối xứng theo Viète',
     topicId: 'ds-viete',
     strand: 'dai-so',
-    tracks: ['thpt', 'chuyen'],
+    tracks: ['thpt', 'chuyen', 'chinh-khoa'],
     level: 2,
     skill: 'Biến đổi biểu thức đối xứng về S và P',
     build: (r) => {
@@ -249,7 +250,7 @@ const GENERATORS_10: ItemGenerator[] = [
     name: 'Viète với tham số',
     topicId: 'ds-viete',
     strand: 'dai-so',
-    tracks: ['thpt', 'chuyen'],
+    tracks: ['thpt', 'chuyen', 'chinh-khoa'],
     level: 3,
     skill: 'Xử lý bài toán tham số bằng Viète',
     build: (r) => {
@@ -275,7 +276,7 @@ const GENERATORS_10: ItemGenerator[] = [
     name: 'Giải hệ phương trình bậc nhất hai ẩn',
     topicId: 'ds-pt-hpt',
     strand: 'dai-so',
-    tracks: ['thpt', 'chuyen'],
+    tracks: ['thpt', 'chuyen', 'chinh-khoa'],
     level: 1,
     skill: 'Giải hệ bằng cộng đại số / thế',
     build: (r) => {
@@ -315,7 +316,7 @@ const GENERATORS_10: ItemGenerator[] = [
     name: 'Hệ phương trình đặt ẩn phụ chứa căn',
     topicId: 'ds-pt-hpt',
     strand: 'dai-so',
-    tracks: ['thpt', 'chuyen'],
+    tracks: ['thpt', 'chuyen', 'chinh-khoa'],
     level: 3,
     skill: 'Đặt ẩn phụ và trả biến',
     build: (r) => {
@@ -356,7 +357,7 @@ const GENERATORS_10: ItemGenerator[] = [
     name: 'Phương trình vô tỉ cơ bản',
     topicId: 'ds-ptvt',
     strand: 'dai-so',
-    tracks: ['thpt', 'chuyen'],
+    tracks: ['thpt', 'chuyen', 'chinh-khoa'],
     level: 3,
     skill: 'Bình phương có điều kiện & loại nghiệm ngoại lai',
     build: (r) => {
@@ -419,7 +420,7 @@ const GENERATORS_10: ItemGenerator[] = [
     name: 'Tương giao parabol và đường thẳng',
     topicId: 'ds-viete',
     strand: 'dai-so',
-    tracks: ['thpt', 'chuyen'],
+    tracks: ['thpt', 'chuyen', 'chinh-khoa'],
     level: 2,
     skill: 'Lập phương trình hoành độ giao điểm',
     build: (r) => {
@@ -482,7 +483,7 @@ const GENERATORS_10: ItemGenerator[] = [
     name: 'Toán chuyển động',
     topicId: 'ds-toan-loi-van',
     strand: 'thuc-te',
-    tracks: ['thpt'],
+    tracks: ['thpt', 'chinh-khoa'],
     level: 2,
     skill: 'Lập phương trình từ dữ kiện chuyển động',
     build: (r) => {
@@ -506,7 +507,7 @@ const GENERATORS_10: ItemGenerator[] = [
     name: 'Toán năng suất – công việc chung',
     topicId: 'ds-toan-loi-van',
     strand: 'thuc-te',
-    tracks: ['thpt'],
+    tracks: ['thpt', 'chinh-khoa'],
     level: 2,
     skill: 'Quy về năng suất 1 đơn vị thời gian',
     build: (r) => {
@@ -531,7 +532,7 @@ const GENERATORS_10: ItemGenerator[] = [
     name: 'Toán phần trăm – giảm giá',
     topicId: 'ds-toan-loi-van',
     strand: 'thuc-te',
-    tracks: ['thpt'],
+    tracks: ['thpt', 'chinh-khoa'],
     level: 1,
     skill: 'Tính toán tỉ lệ phần trăm liên tiếp',
     build: (r) => {
@@ -562,7 +563,7 @@ const GENERATORS_10: ItemGenerator[] = [
     name: 'Hình trụ – diện tích và thể tích',
     topicId: 'tt-hinh-khong-gian',
     strand: 'thuc-te',
-    tracks: ['thpt'],
+    tracks: ['thpt', 'chinh-khoa'],
     level: 1,
     skill: 'Áp dụng công thức hình trụ',
     build: (r) => {
@@ -596,7 +597,7 @@ const GENERATORS_10: ItemGenerator[] = [
     name: 'Hình nón – đường sinh và diện tích',
     topicId: 'tt-hinh-khong-gian',
     strand: 'thuc-te',
-    tracks: ['thpt'],
+    tracks: ['thpt', 'chinh-khoa'],
     level: 2,
     skill: 'Liên hệ r, h, l trong hình nón',
     build: (r) => {
@@ -618,7 +619,7 @@ const GENERATORS_10: ItemGenerator[] = [
     name: 'Hình cầu – diện tích mặt cầu',
     topicId: 'tt-hinh-khong-gian',
     strand: 'thuc-te',
-    tracks: ['thpt'],
+    tracks: ['thpt', 'chinh-khoa'],
     level: 1,
     skill: 'Áp dụng công thức hình cầu',
     build: (r) => {
@@ -641,7 +642,7 @@ const GENERATORS_10: ItemGenerator[] = [
     name: 'Xác suất của biến cố đơn giản',
     topicId: 'tt-thong-ke-xac-suat',
     strand: 'thuc-te',
-    tracks: ['thpt'],
+    tracks: ['thpt', 'chinh-khoa'],
     level: 1,
     skill: 'Đếm kết quả thuận lợi / kết quả có thể',
     build: (r) => {
@@ -665,7 +666,7 @@ const GENERATORS_10: ItemGenerator[] = [
     name: 'Số trung bình cộng của mẫu số liệu',
     topicId: 'tt-thong-ke-xac-suat',
     strand: 'thuc-te',
-    tracks: ['thpt'],
+    tracks: ['thpt', 'chinh-khoa'],
     level: 1,
     skill: 'Tính đặc trưng của mẫu số liệu',
     build: (r) => {
@@ -692,7 +693,7 @@ const GENERATORS_10: ItemGenerator[] = [
     name: 'Hệ thức lượng trong tam giác vuông',
     topicId: 'hh-duong-tron-co-ban',
     strand: 'hinh-hoc',
-    tracks: ['thpt', 'chuyen'],
+    tracks: ['thpt', 'chuyen', 'chinh-khoa'],
     level: 2,
     skill: 'Áp dụng hệ thức đường cao',
     build: (r) => {
@@ -714,7 +715,7 @@ const GENERATORS_10: ItemGenerator[] = [
     name: 'Góc với đường tròn',
     topicId: 'hh-duong-tron-co-ban',
     strand: 'hinh-hoc',
-    tracks: ['thpt', 'chuyen'],
+    tracks: ['thpt', 'chuyen', 'chinh-khoa'],
     level: 1,
     skill: 'Quan hệ góc nội tiếp – góc ở tâm – tứ giác nội tiếp',
     build: (r) => {
@@ -786,7 +787,7 @@ const GENERATORS_10: ItemGenerator[] = [
     name: 'Độ dài tiếp tuyến kẻ từ một điểm',
     topicId: 'hh-mo-hinh-chuan',
     strand: 'hinh-hoc',
-    tracks: ['thpt', 'chuyen'],
+    tracks: ['thpt', 'chuyen', 'chinh-khoa'],
     level: 2,
     skill: 'Mô hình hai tiếp tuyến cắt nhau',
     build: (r) => {
@@ -1119,7 +1120,7 @@ const GENERATORS_10: ItemGenerator[] = [
     name: 'AM–GM: giá trị nhỏ nhất của a + k/a',
     topicId: 'bdt-co-ban',
     strand: 'bat-dang-thuc',
-    tracks: ['thpt', 'chuyen'],
+    tracks: ['thpt', 'chuyen', 'chinh-khoa'],
     level: 2,
     skill: 'Áp dụng AM–GM cho hai số',
     build: (r) => {
@@ -1143,7 +1144,7 @@ const GENERATORS_10: ItemGenerator[] = [
     name: 'Cực trị của 1/a + 1/b khi a + b không đổi',
     topicId: 'bdt-co-ban',
     strand: 'bat-dang-thuc',
-    tracks: ['thpt', 'chuyen'],
+    tracks: ['thpt', 'chuyen', 'chinh-khoa'],
     level: 3,
     skill: 'Bất đẳng thức 1/a + 1/b ≥ 4/(a+b)',
     build: (r) => {
@@ -1166,7 +1167,7 @@ const GENERATORS_10: ItemGenerator[] = [
     name: 'Cực trị của tích khi tổng không đổi',
     topicId: 'bdt-co-ban',
     strand: 'bat-dang-thuc',
-    tracks: ['thpt', 'chuyen'],
+    tracks: ['thpt', 'chuyen', 'chinh-khoa'],
     level: 2,
     skill: 'AM–GM chiều ngược',
     build: (r) => {
@@ -1209,7 +1210,7 @@ const GENERATORS_10: ItemGenerator[] = [
   },
 ];
 
-export const GENERATORS: ItemGenerator[] = [...GENERATORS_10, ...GENERATORS_QG, ...GENERATORS_EXTRA, ...GENERATORS_GAP, ...GENERATORS_L6];
+export const GENERATORS: ItemGenerator[] = [...GENERATORS_10, ...GENERATORS_QG, ...GENERATORS_EXTRA, ...GENERATORS_GAP, ...GENERATORS_L6, ...GENERATORS_CK];
 
 export const generatorById = (id: string) => GENERATORS.find((g) => g.id === id);
 

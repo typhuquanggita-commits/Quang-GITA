@@ -1828,6 +1828,288 @@ export const DRILL_ANALYSIS: Record<string, DrillAnalysis> = {
       'Câu có lời văn nhiều bước là dạng chiếm nhiều điểm nhất của đề vào 6, và cũng là dạng mất điểm oan nhiều nhất.',
     mastery: 'Tự đặt được câu hỏi "của số nào" ở mỗi bước, và luôn đọc lại câu hỏi trước khi ghi đáp số.',
   },
+  /* ==================== LUỒNG CHÍNH KHOÁ · LỚP 6 – 8 ==================== */
+  'g-ck6-uoc-boi': {
+    recognize:
+      'Bài văn có hai (hoặc ba) số lượng và yêu cầu chia đều hoặc lặp lại. Từ khoá quyết định: "nhiều nhất" gợi ƯCLN, "ít nhất" hoặc "cùng lúc lặp lại" gợi BCNN.',
+    method: [
+      'Đọc câu hỏi cuối cùng trước, xác định là bài ƯCLN hay BCNN.',
+      'Phân tích các số ra thừa số nguyên tố.',
+      'ƯCLN: lấy thừa số chung với số mũ nhỏ nhất. BCNN: lấy thừa số chung và riêng với số mũ lớn nhất.',
+      'Trả lời đúng đại lượng đề hỏi, kèm đơn vị.',
+    ],
+    traps: [
+      'Nhầm ƯCLN với BCNN — hai bài toán thực tế nghe rất giống nhau.',
+      'Phân tích ra thừa số nguyên tố còn sót một thừa số.',
+      'Tính đúng ƯCLN nhưng đề hỏi mỗi phần có bao nhiêu bút, tức phải chia tiếp.',
+      'Coi 1 là số nguyên tố.',
+    ],
+    transfer:
+      'Dạng chắc chắn có trong bài kiểm tra giữa kỳ I lớp 6, và là nền cho quy đồng mẫu ở chương phân số.',
+    mastery: 'Đọc đề là phân loại được ngay ƯCLN hay BCNN, không cần thử cả hai.',
+  },
+  'g-ck6-so-nguyen': {
+    recognize: 'Biểu thức có dấu trừ đứng trước một ngoặc chứa nhiều số hạng.',
+    method: [
+      'Bỏ ngoặc và đổi dấu MỌI số hạng bên trong.',
+      'Viết lại biểu thức đã bỏ ngoặc thành một dòng riêng.',
+      'Tính lần lượt từ trái sang phải.',
+      'Kiểm tra lại dấu của kết quả bằng cách ước lượng.',
+    ],
+    traps: [
+      'Chỉ đổi dấu số hạng đầu tiên trong ngoặc.',
+      'Nhầm −a² với (−a)².',
+      'So sánh sai hai số âm.',
+      'Quên đổi dấu khi chuyển vế.',
+    ],
+    transfer:
+      'Quy tắc dấu học ở đây được dùng lại ở mọi phép biến đổi đại số cho tới hết lớp 12.',
+    mastery: 'Bỏ ngoặc đúng ngay lần đầu, không cần dừng lại kiểm tra từng dấu.',
+  },
+  'g-ck6-phan-so': {
+    recognize:
+      'Đề cho giá trị của một phân số của số cần tìm. Cấu trúc câu: "m/n của một số bằng A".',
+    method: [
+      'Xác định rõ: đề cho phần và hỏi tổng, hay cho tổng và hỏi phần.',
+      'Cho phần hỏi tổng: chia cho tử rồi nhân mẫu.',
+      'Cho tổng hỏi phần: nhân tử rồi chia mẫu.',
+      'Thử lại bằng chiều ngược lại.',
+    ],
+    traps: [
+      'Nhân thay vì chia, tức làm ngược chiều bài toán.',
+      'Trả lời giá trị một phần thay vì cả số.',
+      'Với bài nhiều bước, lấy phân số của tổng trong khi đề nói "của số còn lại".',
+      'Không thử lại nên không phát hiện sai chiều.',
+    ],
+    transfer:
+      'Cùng cấu trúc với bài tỉ số phần trăm ở lớp 6 – 7 và bài tỉ lệ ở lớp 7.',
+    mastery: 'Xác định đúng chiều bài toán trong dưới 10 giây và luôn thử lại.',
+  },
+  'g-ck6-hinh-thoi': {
+    recognize: 'Đề cho hai đường chéo (hình thoi) hoặc cạnh đáy và chiều cao (hình bình hành).',
+    method: [
+      'Vẽ hình và ghi số đo đã biết lên hình.',
+      'Chọn đúng công thức theo loại hình.',
+      'Với hình thoi, nhớ chia đôi tích hai đường chéo.',
+      'Ghi đơn vị diện tích.',
+    ],
+    traps: [
+      'Quên chia 2 ở công thức hình thoi.',
+      'Dùng cạnh thay cho đường chéo.',
+      'Ghi đơn vị cm thay vì cm².',
+      'Nhầm công thức hình thoi với hình bình hành.',
+    ],
+    transfer:
+      'Nhóm câu lấy điểm chắc của bài kiểm tra hình học lớp 6, và là nền cho hình học lớp 8.',
+    mastery: 'Viết đúng công thức trước khi thay số và không bao giờ quên hệ số chia đôi.',
+  },
+  'g-ck6-xac-suat-tn': {
+    recognize: 'Có một thí nghiệm lặp lại nhiều lần và số lần một kết quả xuất hiện.',
+    method: [
+      'Xác định tổng số lần thực hiện.',
+      'Xác định số lần sự kiện xảy ra.',
+      'Lấy thương và rút gọn phân số.',
+      'Kiểm tra kết quả nằm giữa 0 và 1.',
+    ],
+    traps: [
+      'Lấy số lần xảy ra chia cho số lần KHÔNG xảy ra.',
+      'Đảo ngược tử và mẫu.',
+      'Quên rút gọn phân số.',
+      'Nhầm xác suất thực nghiệm với xác suất lý thuyết.',
+    ],
+    transfer:
+      'Nền của chương xác suất ở lớp 7 – 8 và của xác suất cổ điển ở lớp 10.',
+    mastery: 'Viết ngay được phân số đúng và tự kiểm tra bằng khoảng giá trị hợp lý.',
+  },
+  'g-ck7-gia-tri-tuyet-doi': {
+    recognize: 'Có dấu giá trị tuyệt đối chứa ẩn, vế phải là một số dương.',
+    method: [
+      'Kiểm tra vế phải có không âm không; nếu âm thì phương trình vô nghiệm.',
+      'Chia thành hai trường hợp: biểu thức trong dấu bằng số đó, hoặc bằng số đối của nó.',
+      'Giải từng trường hợp.',
+      'Trả lời đúng đại lượng đề hỏi: tổng nghiệm, nghiệm dương, hay tập nghiệm.',
+    ],
+    traps: [
+      'Chỉ lấy một trường hợp.',
+      'Không kiểm tra dấu vế phải nên nhận nghiệm cho phương trình vô nghiệm.',
+      'Tìm được hai nghiệm nhưng trả lời sai thứ đề hỏi.',
+      'Sai dấu khi giải trường hợp thứ hai.',
+    ],
+    transfer:
+      'Kỹ thuật chia trường hợp dùng lại ở phương trình chứa dấu giá trị tuyệt đối lớp 8 – 10.',
+    mastery: 'Viết đủ hai trường hợp thành phản xạ, và luôn đọc lại câu hỏi trước khi ghi đáp số.',
+  },
+  'g-ck7-ti-le-thuc': {
+    recognize:
+      'Đề cho một tổng và một dãy tỉ số, hoặc nói "tỉ lệ với" các số cho trước.',
+    method: [
+      'Coi mỗi số trong dãy tỉ lệ là số phần bằng nhau.',
+      'Tính tổng số phần.',
+      'Giá trị một phần bằng tổng chia tổng số phần.',
+      'Nhân ra từng đại lượng và thử lại bằng tổng.',
+    ],
+    traps: [
+      'Trả lời giá trị một phần thay vì giá trị đại lượng đề hỏi.',
+      'Nhầm tỉ lệ thuận với tỉ lệ nghịch.',
+      'Cộng nhầm tổng số phần.',
+      'Không thử lại nên không phát hiện lỗi chia.',
+    ],
+    transfer:
+      'Cấu trúc y hệt bài tổng – tỉ ở tiểu học, và là nền của bài chia phần ở lớp 8 – 9.',
+    mastery: 'Vẽ hoặc hình dung sơ đồ phần trước khi tính, và luôn cộng lại để kiểm tra.',
+  },
+  'g-ck7-nghiem-da-thuc': {
+    recognize: 'Yêu cầu "tìm nghiệm của đa thức" hoặc "tìm x để P(x) = 0".',
+    method: [
+      'Cho đa thức bằng 0.',
+      'Chuyển vế hạng tử tự do, nhớ đổi dấu.',
+      'Chia hai vế cho hệ số của x.',
+      'Thay ngược vào để thử lại.',
+    ],
+    traps: [
+      'Quên đổi dấu khi chuyển vế.',
+      'Chia sai dấu khi hệ số của x âm.',
+      'Nhầm nghiệm với giá trị của đa thức.',
+      'Không thử lại.',
+    ],
+    transfer:
+      'Nền trực tiếp của phương trình bậc nhất một ẩn ở lớp 8 và phương trình bậc hai ở lớp 9.',
+    mastery: 'Giải và thử lại xong trong dưới 30 giây.',
+  },
+  'g-ck7-truong-hop-bang-nhau': {
+    recognize:
+      'Đề liệt kê các yếu tố bằng nhau của hai tam giác và hỏi trường hợp bằng nhau.',
+    method: [
+      'Vẽ hình và đánh dấu các yếu tố bằng nhau.',
+      'Đếm xem có mấy cạnh, mấy góc, và chúng xen kẽ thế nào.',
+      'Kiểm tra góc có nằm giữa hai cạnh không (điều kiện của c–g–c).',
+      'Kiểm tra cạnh có nằm giữa hai góc không (điều kiện của g–c–g).',
+    ],
+    traps: [
+      'Kết luận theo trường hợp cạnh – cạnh – góc, trường hợp này không tồn tại.',
+      'Coi góc – góc – góc là một trường hợp bằng nhau (đó là đồng dạng, không phải bằng nhau).',
+      'Ghi tên hai tam giác sai thứ tự đỉnh tương ứng.',
+      'Bỏ qua bước suy ra góc thứ ba từ tổng ba góc bằng 180°.',
+    ],
+    transfer:
+      'Là bước đầu tiên của mọi bài chứng minh hình học từ lớp 7 đến lớp 9.',
+    mastery:
+      'Nhìn giả thiết là gọi được tên trường hợp, và viết được tên hai tam giác đúng thứ tự đỉnh ngay lần đầu.',
+  },
+  'g-ck7-xac-suat-bien-co': {
+    recognize:
+      'Có một phép thử với các kết quả đồng khả năng (rút bi, gieo xúc xắc, chọn thẻ).',
+    method: [
+      'Đếm tổng số kết quả có thể xảy ra.',
+      'Đếm số kết quả thuận lợi cho biến cố.',
+      'Lấy thương và rút gọn.',
+      'Kiểm tra kết quả nằm giữa 0 và 1.',
+    ],
+    traps: [
+      'Quên cộng cả hai loại khi tính tổng số kết quả.',
+      'Lấy số thuận lợi chia số không thuận lợi.',
+      'Không rút gọn phân số.',
+      'Nhầm biến cố với biến cố đối.',
+    ],
+    transfer:
+      'Nền trực tiếp của xác suất cổ điển lớp 10 và xác suất có điều kiện lớp 12.',
+    mastery: 'Viết ra không gian mẫu trước khi đếm, và luôn kiểm tra bằng biến cố đối.',
+  },
+  'g-ck8-hang-dang-thuc': {
+    recognize:
+      'Biểu thức số là hiệu (hoặc tổng) của hai bình phương, hai lập phương; hoặc có dạng khai triển của một hằng đẳng thức.',
+    method: [
+      'Nhận dạng hằng đẳng thức phù hợp.',
+      'Viết công thức ra trước khi thay số.',
+      'Thay số và tính, ưu tiên phép nhân với số tròn.',
+      'Kiểm tra bằng ước lượng độ lớn.',
+    ],
+    traps: [
+      'Nhớ nhầm dấu ở giữa của a³ + b³ và a³ − b³.',
+      'Khai triển (a − b)² mà quên dấu trừ ở hạng tử giữa.',
+      'Tính trực tiếp thay vì dùng hằng đẳng thức, mất thời gian và dễ sai.',
+      'Nhầm a² − b² với (a − b)².',
+    ],
+    transfer:
+      'Bảy hằng đẳng thức là công cụ nền cho toàn bộ đại số lớp 8 – 9 và cho Bài I của đề vào 10.',
+    mastery: 'Viết được cả bảy hằng đẳng thức ra giấy trắng trong 2 phút và dùng được theo cả hai chiều.',
+  },
+  'g-ck8-dkxd-phan-thuc': {
+    recognize: 'Có phân thức đại số và yêu cầu tìm điều kiện xác định, hoặc yêu cầu rút gọn.',
+    method: [
+      'Phân tích mẫu thức thành nhân tử.',
+      'Cho từng nhân tử khác 0.',
+      'Gộp các điều kiện lại.',
+      'Giữ điều kiện này đến cuối bài để đối chiếu nghiệm.',
+    ],
+    traps: [
+      'Chỉ cho mẫu thức khác 0 mà không phân tích, nên bỏ sót một nghiệm.',
+      'Lấy điều kiện từ mẫu sau khi đã rút gọn.',
+      'Quên viết điều kiện — barem có riêng một mốc điểm cho dòng này.',
+      'Rút gọn khi tử và mẫu là tổng chứ không phải tích.',
+    ],
+    transfer:
+      'Là dòng đầu tiên của Bài I đề vào 10 — chuyên đề chiếm 2,0 điểm chắc nhất toàn đề.',
+    mastery: 'Viết điều kiện xác định thành phản xạ, ngay khi nhìn thấy dấu phân thức.',
+  },
+  'g-ck8-duong-thang-song-song': {
+    recognize:
+      'Có hai hàm số bậc nhất, một hàm chứa tham số, và yêu cầu về vị trí tương đối.',
+    method: [
+      'Xác định hệ số góc và tung độ gốc của cả hai đường.',
+      'Song song: hệ số góc bằng nhau VÀ tung độ gốc khác nhau.',
+      'Trùng nhau: cả hai đều bằng nhau. Cắt nhau: hệ số góc khác nhau.',
+      'Giải theo tham số rồi kiểm tra lại điều kiện còn lại.',
+    ],
+    traps: [
+      'Chỉ cho hệ số góc bằng nhau mà quên kiểm tra tung độ gốc khác nhau.',
+      'Nhầm hệ số góc với tung độ gốc.',
+      'Giải sai dấu khi chuyển vế.',
+      'Với hàm số chưa ở dạng y = ax + b, quên đưa về dạng chuẩn trước.',
+    ],
+    transfer:
+      'Nền của bài tương giao parabol – đường thẳng ở lớp 9 và của phương trình đường thẳng ở lớp 10.',
+    mastery: 'Luôn viết đủ hai điều kiện (bằng nhau và khác nhau) trong cùng một dòng.',
+  },
+  'g-ck8-thales': {
+    recognize:
+      'Trong tam giác có một đường thẳng song song với một cạnh, và đề hỏi độ dài một đoạn.',
+    method: [
+      'Vẽ hình, đánh dấu hai đường song song.',
+      'Viết tỉ lệ thức theo đúng thứ tự: các đoạn trên cùng một cạnh đứng cùng vế.',
+      'Thay số và giải tỉ lệ thức bằng nhân chéo.',
+      'Kiểm tra bằng cách so hai tỉ số.',
+    ],
+    traps: [
+      'Lập tỉ lệ thức sai thứ tự, ghép nhầm đoạn của cạnh này với đoạn của cạnh kia.',
+      'Dùng AM/AB thay cho AM/MB hoặc ngược lại mà không nhất quán ở hai vế.',
+      'Áp dụng Thalès khi hai đường không song song.',
+      'Quên đơn vị.',
+    ],
+    transfer:
+      'Cùng với tam giác đồng dạng, đây là công cụ chính của Bài IV đề vào 10.',
+    mastery:
+      'Viết đúng tỉ lệ thức ngay lần đầu và luôn kiểm tra lại bằng cách so hai tỉ số sau khi có kết quả.',
+  },
+  'g-ck8-hinh-chop': {
+    recognize:
+      'Có hình chóp đều và yêu cầu tính thể tích hoặc diện tích xung quanh.',
+    method: [
+      'Xác định đề cho chiều cao hình chóp hay trung đoạn — hai đại lượng khác nhau.',
+      'Thể tích dùng chiều cao; diện tích xung quanh dùng trung đoạn.',
+      'Tính diện tích đáy hoặc nửa chu vi đáy tuỳ công thức.',
+      'Áp công thức và ghi đúng đơn vị.',
+    ],
+    traps: [
+      'Dùng chiều cao thay cho trung đoạn khi tính diện tích xung quanh.',
+      'Quên hệ số một phần ba khi tính thể tích.',
+      'Ghi đơn vị cm² cho thể tích.',
+      'Nhầm hình chóp tam giác đều với hình chóp tứ giác đều khi tính diện tích đáy.',
+    ],
+    transfer:
+      'Nhóm câu lấy điểm của bài cuối kỳ II lớp 8, và là nền của hình không gian lớp 11 – 12.',
+    mastery: 'Đọc đề là phân biệt ngay chiều cao với trung đoạn, trước khi viết bất kỳ công thức nào.',
+  },
 };
 
 export const analysisFor = (generatorId: string): DrillAnalysis | undefined =>
