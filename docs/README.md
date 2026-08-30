@@ -25,6 +25,7 @@ that is a defect in this index — please fix it rather than working around it.
 | [SEO.md](SEO.md) | Why could a crawler not see any of this, and what was built instead? | Engineers, marketing |
 | [CERTIFICATION.md](CERTIFICATION.md) | What does the certificate certify, and what makes it hard to get? | Teachers, centre owners, candidates |
 | [PROGRAMMES.md](PROGRAMMES.md) | What does each package contain, and why is every price a placeholder? | Centre owners |
+| [ROADMAP.md](ROADMAP.md) | Over six to twelve months, does the target get reached — and what about 1600? | Learners, teachers, centre owners |
 | [CURRICULUM.md](CURRICULUM.md) | In what order should any of this be taught, and why that order? | Teachers, centre owners |
 | [GUARDIAN-REPORT.md](GUARDIAN-REPORT.md) | What does a family get told, and what does the report refuse to claim? | Teachers, centre owners |
 | [VOCABULARY.md](VOCABULARY.md) | What does the deck teach, and why is it built around second meanings? | Teachers, content authors |

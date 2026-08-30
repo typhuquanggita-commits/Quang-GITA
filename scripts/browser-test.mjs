@@ -668,6 +668,8 @@ try {
     ['the guardian report', '#/guardian-report'],
     ['the syllabus', '#/curriculum'],
     ['programmes and fees', '#/programmes'],
+    ['the SAT calendar', '#/test-dates'],
+    ['the long roadmap', '#/roadmap'],
     ['the certificate page', '#/certificate'],
     ['the topic packets', '#/topics'],
     ['the tactics treasury', '#/tactics'],
@@ -722,6 +724,28 @@ try {
    * prices, every surface must say so. A table of plausible numbers with no
    * label on it is how a wrong price reaches a parent.
    */
+  /*
+   * The roadmap must refuse to draw a plan with no diagnostic behind it. The
+   * seeded learner has not sat a full-length paper, so this is the refusal
+   * path — the one a commercial platform is most tempted to replace with a
+   * plausible-looking plan.
+   */
+  await page.evaluate(() => { window.location.hash = '#/roadmap'; });
+  await page.waitForTimeout(800);
+  const roadmapText = await page.locator('.page').innerText();
+  check(
+    'the roadmap refuses to invent a baseline',
+    roadmapText.includes('Chưa có điểm xuất phát') || roadmapText.includes('No starting point'),
+  );
+
+  await page.evaluate(() => { window.location.hash = '#/test-dates'; });
+  await page.waitForTimeout(700);
+  check('the calendar lists every administration', (await page.locator('.dates-table tbody tr').count()) === 8);
+  check(
+    'derived dates are labelled inline, not in a footnote',
+    (await page.locator('.date-derived').count()) > 10,
+  );
+
   await page.evaluate(() => { window.location.hash = '#/programmes'; });
   await page.waitForTimeout(700);
   const feeText = await page.locator('.page').innerText();

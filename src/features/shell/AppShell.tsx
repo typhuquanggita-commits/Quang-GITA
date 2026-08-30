@@ -21,6 +21,7 @@ import {
   IconCards,
   IconCalendar,
   IconChart,
+  IconClock,
   IconChevronLeft,
   IconChevronRight,
   IconClipboard,
@@ -123,6 +124,12 @@ const Certificate = lazy(() =>
 );
 const Programmes = lazy(() =>
   import('../pricing/Programmes.tsx').then((m) => ({ default: m.Programmes })),
+);
+const TestDates = lazy(() =>
+  import('../exams/TestDates.tsx').then((m) => ({ default: m.TestDates })),
+);
+const Roadmap = lazy(() =>
+  import('../roadmap/Roadmap.tsx').then((m) => ({ default: m.Roadmap })),
 );
 const OrgMetrics = lazy(() =>
   import('../metrics/OrgMetrics.tsx').then((m) => ({ default: m.OrgMetrics })),
@@ -282,7 +289,17 @@ function Shell(): React.ReactElement {
           label: locale === 'vi' ? 'Kho bí kíp' : 'Tactics',
           icon: <IconLightning size={18} />,
         },
+        {
+          route: { name: 'roadmap' },
+          label: locale === 'vi' ? 'Lộ trình dài hạn' : 'Roadmap',
+          icon: <IconTarget size={18} />,
+        },
         { route: { name: 'plan' }, label: t('nav.plan'), icon: <IconCalendar size={18} /> },
+        {
+          route: { name: 'test-dates' },
+          label: locale === 'vi' ? 'Lịch thi SAT' : 'Test dates',
+          icon: <IconClock size={18} />,
+        },
         {
           route: { name: 'certificate' },
           label: locale === 'vi' ? 'Chứng nhận' : 'Certificate',
@@ -568,6 +585,10 @@ function RouteView({
       return <Certificate />;
     case 'programmes':
       return <Programmes />;
+    case 'test-dates':
+      return <TestDates navigate={navigate} />;
+    case 'roadmap':
+      return <Roadmap navigate={navigate} />;
     case 'settings':
       return <Settings />;
     default:

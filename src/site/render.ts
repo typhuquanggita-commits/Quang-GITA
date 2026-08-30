@@ -162,6 +162,8 @@ ${schemas.map(jsonLdScript).join('\n')}
 <a href="/khoa-hoc/">Khoá học</a>
 <a href="/bai-giang/">Bài giảng</a>
 <a href="/tu-vung-sat/">Từ vựng</a>
+<a href="/lich-thi-sat/">Lịch thi</a>
+<a href="/lo-trinh-1600/">Lộ trình</a>
 <a href="/hoc-phi/">Học phí</a>
 <a href="/cau-hoi-thuong-gap/">Hỏi đáp</a>
 </nav>
@@ -173,7 +175,7 @@ ${page.blocks.map(renderBlock).join('\n')}
 </main>
 <footer><div class="wrap">
 <p>${e(site.legalName)} — nền tảng luyện thi Digital SAT. Cập nhật ${e(site.updated)}.</p>
-<p><a href="/phuong-phap-cham-diem/">Cách chấm điểm và sai số</a> · <a href="/chung-nhan/">Chứng nhận</a> · <a href="/de-thi-thu/">Đề thi thử</a></p>
+<p><a href="/phuong-phap-cham-diem/">Cách chấm điểm và sai số</a> · <a href="/chung-nhan/">Chứng nhận</a> · <a href="/de-thi-thu/">Đề thi thử</a> · <a href="/tai-lieu-chinh-thuc/">Tài liệu chính thức</a></p>
 <p>Điểm và chứng nhận trên nền tảng này là chuẩn nội bộ, không phải điểm SAT của College Board.</p>
 </div></footer>
 </body>

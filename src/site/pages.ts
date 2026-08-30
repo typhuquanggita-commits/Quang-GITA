@@ -21,6 +21,14 @@ import { TACTICS } from '../data/tactics.ts';
 import { vocabStats, vocabWithSecondSense } from '../data/vocabulary.ts';
 import { SAT365_SCHEME } from '../engine/certification.ts';
 import { PRICING, feeLabel, formatVnd, quote } from '../data/pricing.ts';
+import {
+  ADMINISTRATIONS,
+  VERIFY_NOTE,
+  VIETNAM_DEADLINE_NOTE,
+  registerBy,
+} from '../data/testDates.ts';
+import { RESOURCES, RESOURCE_PREAMBLE } from '../data/resources.ts';
+import { TOP_SCORE_CONDITIONS, TOP_SCORE_DISCLAIMER, hoursToReach } from '../engine/roadmap.ts';
 import { buildCoursePlan } from '../engine/curriculum.ts';
 import { bankStats } from '../data/bank.ts';
 import { skillLabel } from '../data/blueprint.ts';
@@ -859,6 +867,217 @@ function feesPage(): SitePage {
   };
 }
 
+
+function datesPage(): SitePage {
+  const d = (iso: string) => {
+    const [y, m, day] = iso.split('-');
+    return `${day}/${m}/${y}`;
+  };
+
+  return {
+    path: '/lich-thi-sat/',
+    title: fitTitle('Lịch thi SAT 2026–2027 và hạn đăng ký'),
+    description: fitDescription(
+      'Ngày thi, hạn đăng ký thường và muộn, ngày trả điểm cho từng kỳ SAT 2026–2027.',
+      'Kèm bẫy múi giờ khiến thí sinh Việt Nam hay lỡ hạn, và ghi rõ mốc nào là suy ra.',
+    ),
+    trail: [HOME],
+    h1: 'Lịch thi SAT 2026–2027, hạn đăng ký và ngày trả điểm',
+    priority: 0.95,
+    changefreq: 'weekly',
+    blocks: [
+      {
+        kind: 'note',
+        title: 'Bẫy múi giờ — đọc trước khi làm gì khác',
+        text: VIETNAM_DEADLINE_NOTE.vi,
+      },
+      {
+        kind: 'lead',
+        text: 'Thí sinh quốc tế thi cùng ngày với thí sinh Mỹ, có thêm phụ phí khu vực. Bảng dưới ghi rõ mốc nào lấy từ nguồn và mốc nào được suy ra từ quy luật — vì lỡ một hạn đăng ký vì phần mềm sai một cách tự tin là lỗi không cứu được.',
+      },
+      {
+        kind: 'table',
+        caption: 'Cột "Nên đăng ký trước" sớm hơn hạn chính thức 5 tuần: điểm thi ở Hà Nội và TP.HCM kín chỗ từ rất lâu trước hạn.',
+        head: ['Ngày thi', 'Nên đăng ký trước', 'Hạn thường', 'Hạn muộn', 'Trả điểm', 'Nguồn'],
+        rows: ADMINISTRATIONS.map((a) => [
+          d(a.testDate),
+          d(registerBy(a)),
+          d(a.registrationDeadline),
+          d(a.lateRegistrationDeadline),
+          d(a.scoreRelease),
+          a.provenance.registrationDeadline === 'confirmed' ? 'đã kiểm chứng' : 'suy ra',
+        ]),
+      },
+      { kind: 'h2', text: 'Vì sao có cột "nguồn"', id: 'nguon' },
+      { kind: 'p', text: VERIFY_NOTE.vi },
+      {
+        kind: 'p',
+        text: 'Quy luật được dùng để suy ra: hạn thường là trước ngày thi 15 ngày, hạn muộn trước 11 ngày, trả điểm sau 13 ngày. Quy luật này khớp CHÍNH XÁC tới từng ngày với hai kỳ thi mà mọi mốc đều được công bố độc lập (22/08/2026 và 12/09/2026) — đó là lý do việc suy ra các kỳ còn lại có căn cứ chứ không phải đoán mò.',
+      },
+      { kind: 'h2', text: 'Chọn kỳ thi nào', id: 'chon-ky' },
+      {
+        kind: 'ul',
+        items: [
+          'Đừng dồn tất cả vào một lượt cuối. Một buổi sáng xấu là mất cả kỳ, và không còn đường lùi.',
+          'Cũng đừng thi ba lượt liên tiếp ba tháng. Giữa hai lượt mà không có một giai đoạn học thì bạn đang đo cùng một năng lực nhiều lần.',
+          'Hai lượt cách nhau ít nhất tám tuần, có một giai đoạn học ở giữa, là hình dạng tạo ra điểm cao trên thực tế.',
+          'Lượt đầu tiên có một việc không liên quan tới điểm: làm cho phòng thi trở nên bình thường. Thí sinh mà phòng thi đầu tiên trong đời lại đúng là buổi tính điểm sẽ mất điểm vì cái phòng thi chứ không phải vì đề.',
+        ],
+      },
+      {
+        kind: 'cta',
+        href: '/lo-trinh-1600/',
+        label: 'Xem lộ trình 6–12 tháng ứng với từng kỳ thi',
+        note: 'Từ điểm đầu vào tới kỳ thi lấy điểm: đi qua khoá nào, trong bao lâu, thi mấy lượt.',
+      },
+    ],
+    jsonLd: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        name: 'Lịch thi SAT 2026–2027',
+        numberOfItems: ADMINISTRATIONS.length,
+        itemListElement: ADMINISTRATIONS.map((a, i) => ({
+          '@type': 'ListItem',
+          position: i + 1,
+          name: `Kỳ thi SAT ${d(a.testDate)}`,
+        })),
+      },
+    ],
+  };
+}
+
+function roadmapPage(): SitePage {
+  const paths = [
+    { from: 900, to: 1300 },
+    { from: 1100, to: 1400 },
+    { from: 1250, to: 1500 },
+    { from: 1400, to: 1550 },
+  ];
+
+  return {
+    path: '/lo-trinh-1600/',
+    title: fitTitle('Lộ trình luyện SAT 6–12 tháng, tính theo điểm đầu vào'),
+    description: fitDescription(
+      'Từ điểm đầu vào tới kỳ thi lấy điểm: đi qua khoá nào, trong bao lâu, thi mấy lượt, và cần bao nhiêu giờ cho từng mức điểm.',
+      'Kèm điều kiện thực tế của một điểm đỉnh 1550–1600.',
+    ),
+    trail: [HOME],
+    h1: 'Lộ trình luyện SAT 6–12 tháng, dựng từ điểm đầu vào',
+    priority: 0.95,
+    changefreq: 'monthly',
+    blocks: [
+      {
+        kind: 'lead',
+        text: 'Một lộ trình cần điểm xuất phát. Không có bài kiểm tra đầu vào full-length thì mọi độ dài giai đoạn và mọi mức điểm dự kiến đều là bịa — và kế hoạch dựng trên một điểm xuất phát bịa thì sai ở mọi con số nó chứa.',
+      },
+      { kind: 'h2', text: 'Bốn giai đoạn, nối theo điểm đầu vào', id: 'giai-doan' },
+      {
+        kind: 'ol',
+        items: [
+          'Nền tảng — cho người chưa gặp đủ mọi dạng bài. Dựng độ phủ trước, vì một dạng chưa từng nhận ra được thì không thể cải thiện.',
+          'Chuẩn — cho người đọc đã tốt và điểm mất đã cụ thể. Làm bốn kỹ năng Đọc–Viết và ba mảng Toán ngăn cách nhóm giữa với nhóm trên.',
+          'Tăng tốc — cho người chỉ còn mất ba bốn câu mỗi module, toàn band khó. Chỉ làm phiếu nâng cao.',
+          'Nước rút — bốn tuần cuối, cố ý không dạy gì mới. Một phương pháp gặp lần đầu trong tuần cuối sẽ được mang vào phòng thi khi chưa kịp thành phản xạ.',
+        ],
+      },
+      {
+        kind: 'p',
+        text: 'Học viên bắt đầu ở 1400 không đi qua khoá Nền tảng. Xếp giai đoạn căn cứ bài kiểm tra đầu vào chứ không căn cứ mong muốn — xếp theo cảm nhận thì sai khoảng một phần ba số trường hợp, và sai theo hướng tệ nhất.',
+      },
+      { kind: 'h2', text: 'Cần bao nhiêu giờ, theo từng mức xuất phát', id: 'so-gio' },
+      {
+        kind: 'p',
+        text: 'Mức tăng điểm NÉN LẠI khi điểm càng cao: một trăm điểm ở mức 1400 tốn hơn gấp nhiều lần một trăm điểm ở mức 1000. Bảng dưới tính bằng cách cộng dồn qua từng bậc nén, không phải áp một hệ số duy nhất — cách sau làm một lộ trình dài trông khả thi hơn thực tế tới hơn 40%.',
+      },
+      {
+        kind: 'table',
+        caption: 'Giờ học có chất lượng, theo mô hình thận trọng của hệ thống. Đây là ĐỘ LỚN của việc phải làm, không phải lời hứa.',
+        head: ['Từ', 'Tới', 'Số giờ ước tính', '6 tháng cần mỗi tuần', '12 tháng cần mỗi tuần'],
+        rows: paths.map((p) => {
+          const hours = hoursToReach(p.from, p.to);
+          return [
+            String(p.from),
+            String(p.to),
+            `${hours} giờ`,
+            `${(hours / 26).toFixed(1)} giờ`,
+            `${(hours / 52).toFixed(1)} giờ`,
+          ];
+        }),
+      },
+      { kind: 'h2', text: 'Về mục tiêu 1600', id: 'muc-tieu-1600' },
+      { kind: 'note', title: 'Không ai hứa được 1600', text: TOP_SCORE_DISCLAIMER.vi },
+      { kind: 'h3', text: 'Điều kiện thực tế của một điểm đỉnh' },
+      { kind: 'ul', items: TOP_SCORE_CONDITIONS.map((c) => c.vi) },
+      {
+        kind: 'p',
+        text: 'Hệ quả thực tế: trên khoảng 1550, học thêm không còn là đòn bẩy chính nữa — THI THÊM LƯỢT mới là. Chiến lược tạo ra điểm đỉnh trên thực tế là luyện tới bậc cao nhất mà bạn giữ được ổn định, rồi vào phòng thi hai lần.',
+      },
+      {
+        kind: 'cta',
+        href: '/lich-thi-sat/',
+        label: 'Chọn kỳ thi và tính ngược lịch học',
+        note: 'Lịch thi 2026–2027 với hạn đăng ký, ngày trả điểm và mốc nên đăng ký trước.',
+      },
+    ],
+    jsonLd: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'HowTo',
+        name: 'Lộ trình luyện thi SAT 6–12 tháng',
+        inLanguage: 'vi',
+        step: [
+          { '@type': 'HowToStep', name: 'Làm đề đầu vào full-length', text: 'Xác lập điểm xuất phát bằng một đề trọn vẹn hai phần, không phải đề lẻ.' },
+          { '@type': 'HowToStep', name: 'Xếp giai đoạn theo điểm', text: 'Bắt đầu ở khoá tương ứng khoảng điểm đầu vào, không đi qua khoá thấp hơn năng lực.' },
+          { '@type': 'HowToStep', name: 'Chọn hai kỳ thi cách nhau ít nhất tám tuần', text: 'Lượt đầu để làm quen phòng thi, lượt sau để lấy điểm.' },
+          { '@type': 'HowToStep', name: 'Kết thúc bằng khoá nước rút', text: 'Bốn tuần cuối không dạy nội dung mới, chỉ đọc vị dưới áp lực thời gian và tổng duyệt.' },
+        ],
+      },
+    ],
+  };
+}
+
+function resourcesPage(): SitePage {
+  return {
+    path: '/tai-lieu-chinh-thuc/',
+    title: fitTitle('Tài liệu SAT chính thức và SAT365 bổ trợ chỗ nào'),
+    description: fitDescription(
+      'Bluebook, đề luyện chính thức, Khan Academy — nguồn nào miễn phí, dùng để làm gì, và SAT365 KHÔNG thay thế được chỗ nào.',
+      'Danh mục dẫn link, không sao chép nội dung của ai.',
+    ),
+    trail: [HOME],
+    h1: 'Tài liệu SAT chính thức, và chỗ SAT365 không thay thế được',
+    priority: 0.8,
+    changefreq: 'yearly',
+    blocks: [
+      { kind: 'lead', text: RESOURCE_PREAMBLE.vi },
+      ...RESOURCES.flatMap((resource): Block[] => [
+        { kind: 'h2', text: `${resource.name} — ${resource.publisher}` },
+        { kind: 'p', text: resource.what.vi },
+        { kind: 'ul', items: [
+          `Chi phí: ${resource.cost.vi}`,
+          `SAT365 bổ trợ: ${resource.complements.vi}`,
+          ...(resource.doesNotReplace ? [`SAT365 KHÔNG thay thế: ${resource.doesNotReplace.vi}`] : []),
+        ] },
+        { kind: 'links', title: `Mở ${resource.name}`, items: [{ href: resource.url, label: resource.url }] },
+      ]),
+    ],
+    jsonLd: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        name: 'Tài liệu SAT chính thức',
+        itemListElement: RESOURCES.map((r, i) => ({
+          '@type': 'ListItem',
+          position: i + 1,
+          name: `${r.name} — ${r.publisher}`,
+          url: r.url,
+        })),
+      },
+    ],
+  };
+}
+
 /* ------------------------------------------------------------------ */
 
 export function buildPages(): SitePage[] {
@@ -873,6 +1092,9 @@ export function buildPages(): SitePage[] {
     certificationPage(),
     papersPage(),
     feesPage(),
+    datesPage(),
+    roadmapPage(),
+    resourcesPage(),
     faqPage(),
   ];
 }

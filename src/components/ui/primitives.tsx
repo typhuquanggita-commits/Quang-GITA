@@ -433,16 +433,26 @@ export function Empty({
   title,
   body,
   action,
+  level = 3,
 }: {
   icon?: React.ReactNode;
   title: React.ReactNode;
   body?: React.ReactNode;
   action?: React.ReactNode;
+  /*
+   * An empty state sitting directly under a page title is an h2; one inside a
+   * card is an h3, which is the common case and the default. The level is a
+   * prop for the same reason Card's is: heading order is how a screen-reader
+   * user moves through a page, and h1 followed by h3 leaves a hole in the
+   * outline.
+   */
+  level?: 2 | 3;
 }): React.ReactElement {
+  const Heading = (level === 2 ? 'h2' : 'h3') as 'h2' | 'h3';
   return (
     <div className="empty">
       {icon}
-      <h3>{title}</h3>
+      <Heading>{title}</Heading>
       {body && <p style={{ maxWidth: '46ch' }}>{body}</p>}
       {action}
     </div>

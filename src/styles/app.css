@@ -1403,3 +1403,48 @@ mark.hl[data-note='true'] { border-bottom: 2px dotted currentColor; cursor: poin
 .fees-table td { font-variant-numeric: tabular-nums; }
 .fees-table th[scope='row'] { font-weight: var(--weight-semibold); }
 .fees-table .block { display: block; font-weight: 400; }
+
+/* SAT calendar. A derived date is labelled inline rather than in a footnote:
+   a learner acting on a date needs its provenance where they read it. */
+.date-derived {
+  display: inline-block;
+  margin-left: var(--space-2);
+  padding: 0 6px;
+  border: 1px dashed var(--border-strong);
+  border-radius: var(--radius-xs);
+  font-size: var(--text-2xs);
+  color: var(--text-muted);
+  vertical-align: middle;
+}
+.dates-table td, .dates-table th { vertical-align: top; }
+.dates-table tr[data-mine] { background: var(--primary-soft); }
+.dates-table tr[data-mine] th[scope='row'] { color: var(--primary-soft-text); }
+.dates-table .block { display: block; }
+
+/* ================================================================== */
+/* The long roadmap                                                    */
+/* ================================================================== */
+
+.roadmap-phases { list-style: none; display: grid; gap: var(--space-4); }
+.roadmap-phase {
+  display: grid;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--primary);
+  border-radius: var(--radius-md);
+  break-inside: avoid;
+}
+.roadmap-phase-head { display: flex; gap: var(--space-3); align-items: flex-start; flex-wrap: wrap; }
+.roadmap-phase p { max-width: 72ch; line-height: var(--leading-normal); }
+
+.roadmap-sittings { list-style: none; display: grid; gap: var(--space-4); }
+.roadmap-sittings li {
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  background: var(--surface-2);
+  display: grid;
+  gap: var(--space-2);
+  break-inside: avoid;
+}
+.roadmap-sittings p { max-width: 72ch; line-height: var(--leading-normal); }

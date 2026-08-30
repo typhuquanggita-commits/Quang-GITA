@@ -27,6 +27,8 @@ export type Route =
   | { name: 'plan' }
   | { name: 'gita' }
   | { name: 'tests' }
+  | { name: 'test-dates' }
+  | { name: 'roadmap' }
   | { name: 'exam'; attemptId: string }
   | { name: 'result'; attemptId: string }
   | { name: 'attempt-review'; attemptId: string }
@@ -64,6 +66,8 @@ export const ROUTE_PERMISSION: Partial<Record<RouteName, Permission>> = {
   plan: 'plan.own',
   gita: 'plan.own',
   tests: 'test.take',
+  'test-dates': 'plan.own',
+  roadmap: 'plan.own',
   exam: 'test.take',
   review: 'review.own',
   'attempt-review': 'review.own',
@@ -128,6 +132,10 @@ export function hashToRoute(hash: string): Route {
       return { name: 'curriculum' };
     case 'programmes':
       return { name: 'programmes' };
+    case 'test-dates':
+      return { name: 'test-dates' };
+    case 'roadmap':
+      return { name: 'roadmap' };
     case 'certificate':
       return { name: 'certificate' };
     case 'tactics':
