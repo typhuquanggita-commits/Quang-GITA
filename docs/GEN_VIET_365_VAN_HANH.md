@@ -18,7 +18,11 @@ Tập 7 — [`GEN_VIET_365_THUONG_HIEU.md`](GEN_VIET_365_THUONG_HIEU.md) — **b
 thương hiệu**, hồ sơ xác lập quyền, ánh xạ sang Chương trình giáo dục phổ thông 2018,
 và lộ trình ra toàn cầu.
 
-Bản trực quan đầy đủ (18 nhóm · 120 màn): mở `genviet365/index.html`.
+Tập 8 — [`GEN_VIET_365_CAM_TAY.md`](GEN_VIET_365_CAM_TAY.md) — phần **giao ra thứ dùng được
+sáng mai**: bảy câu hỏi bàn ăn, bản đọc ca, giáo án từng phút, kịch bản gọi, thư mẫu, ba
+cuốn sổ của học viên, câu hỏi phỏng vấn, bảng chấm chi tiết, từ điển và Sổ Chuẩn.
+
+Bản trực quan đầy đủ (20 nhóm · 132 màn): mở `genviet365/index.html`.
 
 ---
 

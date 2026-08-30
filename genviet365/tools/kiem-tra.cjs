@@ -23,7 +23,8 @@ var GOC = path.join(__dirname, '..');
 var TEP = ['du-lieu.js', 'du-lieu-daotao.js', 'du-lieu-vanhanh.js', 'du-lieu-kythuat.js',
            'du-lieu-chuyenmon.js', 'du-lieu-congdong.js', 'du-lieu-thuvien.js',
            'du-lieu-trainghiem.js', 'du-lieu-giatri.js', 'du-lieu-tincay.js',
-           'du-lieu-thuonghieu.js', 'du-lieu-banquyen.js', 'du-lieu-quyen.js',
+           'du-lieu-thuonghieu.js', 'du-lieu-banquyen.js',
+           'du-lieu-camtay.js', 'du-lieu-tracuu.js', 'du-lieu-quyen.js',
            'quyen.js', 'man-hinh.js'];
 var MAY = [];
 
@@ -114,7 +115,7 @@ Object.keys(G.MAN || {}).forEach(function (v) {
       o.hang.forEach(function (h, j) {
         if (h.length !== o.cot.length) L(d + ' bảng tay lệch cột ở dòng ' + j);
       });
-    } else if (!o.ds && !o.t && o.k !== 'muc' && o.k !== 'phamvi' && o.k !== 'an') {
+    } else if (!o.ds && !o.t && o.k !== 'muc' && o.k !== 'phamvi' && o.k !== 'an' && o.k !== 'chimuc') {
       C(d + ' không có tu, ds hay t');
     }
   });
@@ -335,6 +336,87 @@ if (!G.BQ_RANH_GIOI || G.BQ_RANH_GIOI.length < 3)
 else if (!G.BQ_RANH_GIOI.join(' ').match(/không phải tư vấn pháp lý/))
   L('Kho bản quyền: phần ranh giới chưa nói rõ “không phải tư vấn pháp lý”');
 
+/* ── 6e. LỜI HỨA TREO ─────────────────────────────────────
+      Loại lỗi khó thấy nhất trong một hệ tài liệu lớn: kho nhắc
+      tới một hiện vật ("bộ bảy câu hỏi bàn ăn", "Sổ Chuẩn") nhiều
+      lần như thể nó có thật, mà không chỗ nào giao nội dung của
+      nó. Người đọc đi tìm và không thấy — và một hệ dạy trẻ
+      "hứa thì phải giữ" mà tự nó hứa suông thì mất nhiều hơn là
+      thiếu một trang.
+      Luật: mỗi hiện vật dưới đây phải có MỘT màn mang tên nó
+      trong tiêu đề, hoặc một khoá tra mang nội dung của nó. */
+var HUA = [
+  ['bảy câu hỏi bàn ăn', 'CT_BAY_CAU'],
+  ['bản đọc ca', 'CT_DOC_CA'],
+  ['Sổ Chuẩn', 'TC_SO_CHUAN_LA'],
+  ['sổ phục hồi', 'CT_SO_PHUC_HOI'],
+  ['Goal Map', 'CT_GOAL_MAP'],
+  ['bản đồ cá nhân', 'CT_BAN_DO_11'],
+  ['thư tuần', 'CT_THU'],
+  ['thư tay', 'CT_THU'],
+  ['giáo án', 'CT_GIAO_AN'],
+  ['bảng số bảy cột', 'CLB_BANGSO'],
+  ['sổ ghế', 'BIEU_MAU'],
+  ['hộ chiếu nhân tài', 'HO_CHIEU_JSON']
+];
+var vanKho = TEP.map(function (t) {
+  return fs.readFileSync(path.join(GOC, t), 'utf8');
+}).join('\n');
+HUA.forEach(function (h) {
+  var soNhac = (vanKho.match(new RegExp(h[0].replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi')) || []).length;
+  if (!soNhac) return;                       /* không nhắc thì không nợ */
+  var coKho = G.TU && (h[1] in G.TU);
+  if (!coKho)
+    L('LỜI HỨA TREO: kho nhắc “' + h[0] + '” ' + soNhac +
+      ' lần nhưng không có khoá tra ' + h[1] + ' giao nội dung của nó');
+});
+
+/* Mỗi khối trong nhóm "cầm lên dùng được" phải THẬT SỰ dùng được:
+   thư mẫu phải có bản viết sẵn, kịch bản phải có lời mở và lời cấm,
+   giáo án phải có lời Coach nói. Mô tả suông thì không tính. */
+(G.CT_THU || []).forEach(function (x) {
+  if (!x.vd || x.vd.length < 120)
+    L('Thư mẫu ' + x.ma + ' chưa có bản viết sẵn đủ dài để dùng thẳng');
+  if (!x.cam) L('Thư mẫu ' + x.ma + ' chưa ghi điều không được làm');
+});
+(G.CT_KICH_BAN || []).forEach(function (x) {
+  ['mo', 'ket', 'cam'].forEach(function (f) {
+    if (!x[f]) L('Kịch bản gọi ' + x.ma + ' thiếu trường ' + f);
+  });
+  if (!Array.isArray(x.giua) || x.giua.length < 3)
+    L('Kịch bản gọi ' + x.ma + ' phải có đủ ba câu giữa');
+});
+(G.CT_GIAO_AN || []).forEach(function (x, j) {
+  ['p', 't', 'ai', 'n', 'loi', 'hong'].forEach(function (f) {
+    if (!x[f]) L('Giáo án khối ' + (x.p || j) + ' thiếu trường ' + f);
+  });
+});
+if (G.CT_GIAO_AN) {
+  var tongPhut = 0;
+  G.CT_GIAO_AN.forEach(function (x) {
+    var m2 = /^(\d+)[–-](\d+)$/.exec(String(x.p).trim());
+    if (m2) tongPhut = Math.max(tongPhut, Number(m2[2]));
+  });
+  if (tongPhut !== 90)
+    L('Giáo án: khối cuối kết thúc ở phút ' + tongPhut + ', phải là 90');
+}
+/* Bảng chấm chi tiết phải cộng đúng 100 và khớp bảng cổng gốc. */
+if (G.CT_CHAM && G.CONG) {
+  var tongD = 0;
+  G.CT_CHAM.forEach(function (x) { tongD += x.d; });
+  if (tongD !== 100) L('Bảng chấm chi tiết cộng ra ' + tongD + ' điểm, phải là 100');
+  if (G.CT_CHAM.length !== G.CONG.bang.length)
+    L('Bảng chấm chi tiết có ' + G.CT_CHAM.length + ' cột nhưng cổng gốc có ' + G.CONG.bang.length);
+  G.CONG.bang.forEach(function (c3, j) {
+    var x = G.CT_CHAM[j];
+    if (!x) return;
+    if (x.t !== c3.t) L('Bảng chấm cột ' + j + ': “' + x.t + '” lệch với cổng gốc “' + c3.t + '”');
+    if (x.d !== c3.d) L('Bảng chấm cột “' + x.t + '”: ' + x.d + ' điểm, cổng gốc ghi ' + c3.d);
+    if (!Array.isArray(x.muc) || x.muc.length < 4)
+      L('Bảng chấm cột “' + x.t + '” phải có đủ bốn mức');
+  });
+}
+
 /* ── 7. vỏ và bộ gộp phải nạp đủ tệp ─────────────────── */
 var html = fs.readFileSync(path.join(GOC, 'index.html'), 'utf8');
 TEP.concat(['giao-dien.js']).forEach(function (t) {
@@ -433,6 +515,44 @@ function lopChay(xong) {
                     thuVai.length + ' cấu hình vai · ' + (hong.length ? hong.length + ' chỗ lọt' : 'không chỗ nào lọt'));
         hong.slice(0, 12).forEach(function (m) { L('CỔNG PHÂN QUYỀN: ' + m); });
         if (hong.length > 12) L('CỔNG PHÂN QUYỀN: và ' + (hong.length - 12) + ' lỗi nữa');
+        return null;
+      }).then(function () {
+        /* 2b. Ô TÌM không được là lối vòng qua cổng. Gõ đúng tiêu đề
+           một màn ngoài quyền thì kết quả phải KHÔNG có màn ấy. */
+        return p.evaluate(async function () {
+          var G = window.GV, hong = [], soThu = 0;
+          var nhip = function () { return new Promise(function (r) { setTimeout(r, 0); }); };
+          var thu = [['R16', 'B1'], ['R15', 'B1'], ['R17', 'B1'], ['R14', 'B1']];
+          for (var i = 0; i < thu.length; i++) {
+            var vai = thu[i][0], bac = thu[i][1];
+            localStorage.setItem('genviet365.vai', vai);
+            localStorage.setItem('genviet365.bac', bac);
+            location.hash = '';
+            window.GVdung(document.getElementById('ung-dung'));
+            await nhip();
+            var ds = Object.keys(G.MAN);
+            for (var j = 0; j < ds.length; j++) {
+              var v = ds[j];
+              if (G.duocPhep(vai, bac, v)) continue;
+              soThu++;
+              location.hash = 'tim=' + encodeURIComponent(G.MAN[v].t);
+              await nhip();
+              var a2 = document.querySelectorAll('.chinh .kq a');
+              for (var k = 0; k < a2.length; k++) {
+                if (a2[k].getAttribute('href') === '#' + v)
+                  hong.push(vai + '/' + bac + ' tìm ra ' + v + ' dù không có quyền');
+              }
+            }
+          }
+          localStorage.removeItem('genviet365.vai');
+          localStorage.removeItem('genviet365.bac');
+          localStorage.removeItem('genviet365.man');
+          return { hong: hong, so: soThu };
+        });
+      }).then(function (r2) {
+        console.log('Ô TÌM     · gõ đúng tiêu đề ' + r2.so + ' màn ngoài quyền, trên 4 cấu hình vai · ' +
+                    (r2.hong.length ? r2.hong.length + ' chỗ lọt' : 'không chỗ nào lọt'));
+        r2.hong.slice(0, 8).forEach(function (m) { L('Ô TÌM LỌT QUYỀN: ' + m); });
         /* 3. tràn ngang ở ba khổ */
         var kho = [[1400, 1000], [900, 800], [390, 844]];
         var buoc = Promise.resolve([]);
@@ -544,6 +664,14 @@ function lopCat() {
         if (o.tu && (o.tu in G.TU)) duocThay.TU[o.tu] = G.TU[o.tu];
       });
     });
+    /* Bộ gộp còn đóng gói THANH ĐIỀU HƯỚNG đã lọc — tên nhóm và câu
+       giới thiệu nhóm cũng đi ra theo. Mô hình "nội dung hợp lệ" phải
+       khớp đúng thứ bộ gộp thật sự gửi đi, nếu không thì một chữ nằm
+       trong câu giới thiệu nhóm sẽ bị báo là rò rỉ. */
+    duocThay.NHOM = (G.NHOM || []).map(function (n) {
+      return { id: n.id, no: n.no, t: n.t, s: n.s, mau: n.mau,
+               ds: (n.ds || []).filter(function (i) { return duocThay.MAN[i.v]; }) };
+    }).filter(function (n) { return n.ds.length; });
     var vanHopLe = JSON.stringify(duocThay);
     function dem(chuoi, kim) {
       if (!kim) return 0;

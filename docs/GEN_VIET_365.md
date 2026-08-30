@@ -6,7 +6,7 @@ Học viện GITA · Sứ mệnh: *Nâng tầm trí tuệ vàng Việt Nam*
 > Đích cuối: một mạng lưới nhân tài Việt **tự tái tạo** — người được rèn quay lại rèn
 > người tiếp theo, và hệ thống sống lâu hơn người dựng ra nó.
 
-**Tập 1 — kiến trúc.** Bộ tài liệu gồm bảy tập:
+**Tập 1 — kiến trúc.** Bộ tài liệu gồm tám tập:
 - Tập 2 — [`GEN_VIET_365_VAN_HANH.md`](GEN_VIET_365_VAN_HANH.md): giáo trình, lịch năm,
   sổ tay từng vai, cổng nghiệm thu, biểu mẫu, mô hình dữ liệu, an toàn.
 - Tập 3 — [`GEN_VIET_365_CHUYEN_MON.md`](GEN_VIET_365_CHUYEN_MON.md): ma trận 8 × 8,
@@ -20,8 +20,10 @@ Học viện GITA · Sứ mệnh: *Nâng tầm trí tuệ vàng Việt Nam*
   gia đình, cam kết dịch vụ có mức đền, gói và bảo đảm, đo tác động, bảo vệ trẻ em.
 - Tập 7 — [`GEN_VIET_365_THUONG_HIEU.md`](GEN_VIET_365_THUONG_HIEU.md): bộ nhận diện
   thương hiệu, bản quyền, ánh xạ chuẩn quốc gia và lộ trình toàn cầu.
+- Tập 8 — [`GEN_VIET_365_CAM_TAY.md`](GEN_VIET_365_CAM_TAY.md): phần cầm lên dùng được
+  ngay, và bộ tra cứu. **Nếu chỉ đọc được một tập thì đọc tập này.**
 
-Bản trực quan đầy đủ (18 nhóm · 120 màn): mở `genviet365/index.html`.
+Bản trực quan đầy đủ (20 nhóm · 132 màn): mở `genviet365/index.html`.
 Gộp thành một tệp để gửi đi: `node genviet365/dong-goi-artifact.cjs`.
 
 ---

@@ -132,16 +132,16 @@ GV.TY_LE = [
   { vai: ['R01', 'R02'], pt: 100, ghi: 'Toàn bộ, không khoá gì.' },
   { vai: ['R03'],        pt: 99,  ghi: 'Khoá bảng phân quyền.' },
   { vai: ['R04'],        pt: 98,  ghi: 'Khoá quản trị trang và tài chính.' },
-  { vai: ['R05'],        pt: 78,  ghi: 'Giữ kho nội dung và gác nhận diện thương hiệu. Khoá tiền, điều hành toàn hệ, nghiệm thu, bản quyền.' },
-  { vai: ['R06'],        pt: 74,  ghi: 'Thêm chuẩn nghề, kiểm định, khủng hoảng và đo cảm nhận.' },
-  { vai: ['R07', 'R08', 'R09', 'R10', 'R11'], pt: 70,
-    ghi: 'Kho nghề, tư vấn, nghiệm thu, chi hội, gia đình, hành trình, thư viện, trải nghiệm, ánh xạ chuẩn.' },
-  { vai: ['R12'],        pt: 67,  ghi: 'Như trên, trừ nghiệm thu và ánh xạ chuẩn quốc gia.' },
+  { vai: ['R05'],        pt: 80,  ghi: 'Giữ kho nội dung, gác nhận diện, giữ Sổ Chuẩn. Khoá tiền, điều hành toàn hệ, nghiệm thu, bản quyền.' },
+  { vai: ['R06'],        pt: 76,  ghi: 'Thêm chuẩn nghề, kiểm định, khủng hoảng, đo cảm nhận, phỏng vấn Coach.' },
+  { vai: ['R07', 'R08', 'R09', 'R10', 'R11'], pt: 71,
+    ghi: 'Kho nghề, tư vấn, nghiệm thu, chi hội, gia đình, trải nghiệm, ánh xạ chuẩn, và toàn bộ bộ cầm tay.' },
+  { vai: ['R12'],        pt: 67,  ghi: 'Như trên, trừ nghiệm thu, ánh xạ chuẩn và bảng chấm chi tiết.' },
   { vai: ['R13'],        pt: 61,  ghi: 'Kho nghề và chỉ số tổng hợp; không mở khoang tư vấn.' },
-  { vai: ['R14'],        pt: 48,  ghi: 'Chi hội, gia đình, hành trình học viên, thư viện, cam kết, dấu hiệu và bảng màu.' },
-  { vai: ['R15'],        pt: 46,  ghi: 'Phần gia đình, cổng phụ huynh, cam kết và bảo đảm, thư viện, nhận diện phần công khai.' },
-  { vai: ['R16'],        pt: 38,  ghi: 'Học viên bậc 1. Lên bậc mở thêm: B3 → 45%, B4 → 48%, B5 → 59%, B6 → 68%.' },
-  { vai: ['R17'],        pt: 25,  ghi: 'Phần chung, phần cộng đồng, luật bảo vệ trẻ, dấu hiệu và giọng thương hiệu.' }
+  { vai: ['R14'],        pt: 48,  ghi: 'Chi hội, gia đình, hành trình học viên, thư viện, cam kết, dấu hiệu, ba cuốn sổ, tra cứu.' },
+  { vai: ['R15'],        pt: 45,  ghi: 'Phần gia đình, cổng phụ huynh, cam kết và bảo đảm, thư viện, bảy câu hỏi bàn ăn, tra cứu.' },
+  { vai: ['R16'],        pt: 39,  ghi: 'Học viên bậc 1. Lên bậc mở thêm: B3 → 45%, B4 → 48%, B5 → 58%, B6 → 68%.' },
+  { vai: ['R17'],        pt: 26,  ghi: 'Phần chung, phần cộng đồng, luật bảo vệ trẻ, dấu hiệu, giọng thương hiệu, từ điển và chỉ mục.' }
 ];
 
 /* ══════════ SÁU LUẬT PHÂN QUYỀN ══════════ */

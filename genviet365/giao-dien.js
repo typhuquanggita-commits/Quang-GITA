@@ -695,6 +695,110 @@
     }) + '</div>';
   };
 
+  /* ── NHÓM 19 · CẦM LÊN DÙNG ĐƯỢC ─────────────────────── */
+
+  /* bảy câu hỏi bàn ăn — thứ in ra đưa phụ huynh */
+  K.baycau = function (o) {
+    return '<ol class="bc">' + ds(lay(o), function (x) {
+      return '<li><div class="bc-h"><span class="s">' + e(x.so) + '</span>' +
+        '<h3>' + e(x.t) + '</h3></div>' +
+        '<div class="d"><b>Vì sao hỏi câu này</b>' + dm(x.n) + '</div>' +
+        '<div class="d mo-ra"><b>Dấu hiệu con đang mở</b>' + dm(x.v) + '</div>' +
+        '<div class="d cam"><b>Không được làm</b>' + dm(x.k) + '</div></li>';
+    }) + '</ol>';
+  };
+
+  /* giáo án từng phút */
+  K.giaoan = function (o) {
+    return '<div class="ga">' + ds(lay(o), function (x) {
+      return '<div class="ga-h"><div class="ga-p">' + e(x.p) + '</div>' +
+        '<div class="ga-n"><div class="ga-dau"><h3>' + e(x.t) + '</h3>' +
+        '<span class="ai">' + e(x.ai) + '</span></div>' +
+        '<p>' + dm(x.n) + '</p>' +
+        '<div class="loi"><b>Lời Coach nói</b>' + e(x.loi) + '</div>' +
+        '<div class="hong"><b>Dấu hiệu buổi đang hỏng</b>' + e(x.hong) + '</div>' +
+        '</div></div>';
+    }) + '</div>';
+  };
+
+  /* kịch bản gọi điện */
+  K.kichban = function (o) {
+    return '<div class="kb">' + ds(lay(o), function (x) {
+      return '<article style="--c:' + mau(x.mau) + '">' +
+        '<div class="kb-dau"><span class="m">' + e(x.ma) + '</span><h3>' + e(x.t) + '</h3></div>' +
+        '<div class="kb-meta">' + e(x.khi) + ' · ' + e(x.ai) + '</div>' +
+        '<div class="cau mo"><b>Mở đầu</b>' + e(x.mo) + '</div>' +
+        '<div class="cau"><b>Ba câu giữa</b><ol>' +
+        ds(x.giua, function (y) { return '<li>' + dm(y) + '</li>'; }) + '</ol></div>' +
+        '<div class="cau ket"><b>Kết</b>' + e(x.ket) + '</div>' +
+        '<div class="cau cam"><b>Không được nói</b>' + e(x.cam) + '</div></article>';
+    }) + '</div>';
+  };
+
+  /* thư mẫu — có cả bản viết sẵn để đọc thẳng */
+  K.thumau = function (o) {
+    return '<div class="tm">' + ds(lay(o), function (x) {
+      return '<article style="--c:' + mau(x.mau) + '">' +
+        '<div class="tm-dau"><span class="m">' + e(x.ma) + '</span><h3>' + e(x.t) + '</h3>' +
+        '<span class="khi">' + e(x.khi) + '</span></div>' +
+        '<div class="cau"><b>Cấu trúc</b><ul>' +
+        ds(x.cau, function (y) { return '<li>' + dm(y) + '</li>'; }) + '</ul></div>' +
+        '<div class="vd"><b>Thư viết sẵn</b><pre>' + e(x.vd) + '</pre></div>' +
+        '<div class="cam"><b>Không được</b>' + e(x.cam) + '</div></article>';
+    }) + '</div>';
+  };
+
+  /* bảng chấm — mỗi cột mở ra thành thang mức */
+  K.cham = function (o) {
+    var t = lay(o), tong = 0;
+    t.forEach(function (x) { tong += x.d; });
+    return '<div class="ch">' + ds(t, function (x) {
+      return '<div class="ch-c" style="--c:' + mau(x.mau) + '">' +
+        '<div class="ch-dau"><h3>' + e(x.t) + '</h3><span class="d">' + e(x.d) + ' điểm</span></div>' +
+        '<div class="ch-thang">' + ds(x.muc, function (m) {
+          return '<div class="n"><span class="k">' + e(m[0]) + '</span><span>' + dm(m[1]) + '</span></div>';
+        }) + '</div></div>';
+    }) + '<div class="ch-tong">Tổng ' + tong + ' điểm · ngưỡng đạt ' +
+      e(o.nguong == null ? 85 : o.nguong) + '</div></div>';
+  };
+
+  /* ── NHÓM 20 · TRA CỨU ────────────────────────────────── */
+
+  /* từ điển thuật ngữ, xếp theo chữ cái */
+  K.tudien = function (o) {
+    return '<div class="td">' + ds(lay(o), function (n) {
+      return '<section class="td-n"><h3>' + e(n.n) + '</h3><dl>' +
+        ds(n.ds, function (x) {
+          return '<div><dt>' + e(x[0]) + '</dt><dd>' + dm(x[1]) +
+            '<span class="en">' + dm(x[2]) + '</span>' +
+            '<span class="o">' + e(x[3]) + '</span></dd></div>';
+        }) + '</dl></section>';
+    }) + '</div>';
+  };
+
+  /* chỉ mục — SINH RA từ chính kho màn lúc chạy, và chỉ liệt kê
+     những màn vai đang xem có quyền mở. Không có danh sách nào
+     phải bảo trì bằng tay, nên không bao giờ lệch. */
+  K.chimuc = function () {
+    var ds2 = [], i;
+    for (var v in G.MAN) {
+      if (!G.duocPhep(VAI, BAC, v)) continue;
+      var m = G.MAN[v];
+      ds2.push({ v: v, t: m.t, k: m.k });
+    }
+    ds2.sort(function (a, b) { return a.t.localeCompare(b.t, 'vi'); });
+    var chu = '', ra = '';
+    for (i = 0; i < ds2.length; i++) {
+      var c = ds2[i].t.charAt(0).toUpperCase();
+      if (c !== chu) { chu = c; ra += '<dt class="cm-chu">' + e(c) + '</dt>'; }
+      ra += '<dd><a href="#' + e(ds2[i].v) + '">' + e(ds2[i].t) + '</a>' +
+            '<span>' + e(ds2[i].k) + '</span></dd>';
+    }
+    return '<p class="van">Chỉ mục này *sinh ra lúc chạy* từ chính kho màn, và chỉ liệt kê ' +
+      ds2.length + ' màn vai đang xem mở được. Không có danh sách nào phải bảo trì bằng tay, ' +
+      'nên nó không bao giờ lệch với hệ.</p><dl class="cm">' + ra + '</dl>';
+  };
+
   /* chân dung trong Thư viện Gen Việt */
   K.nhanvat = function (o) {
     return ds(lay(o), function (x) {
@@ -820,6 +924,122 @@
     });
   }
 
+  /* ── TÌM KIẾM ────────────────────────────────────────────
+     Ở quy mô một trăm ba mươi màn thì mục lục không còn đủ: người
+     ta biết mình cần gì nhưng không biết nó nằm ở nhóm nào.
+     Ba điều đáng nói về cách dựng:
+       · Chỉ mục sinh từ CHÍNH KHO, không phải từ một danh sách
+         chép tay — nên không bao giờ lệch với nội dung.
+       · Bỏ dấu trước khi so, nên gõ "ho chieu" tìm ra "hộ chiếu".
+       · Lọc theo quyền TRƯỚC khi tìm. Ô tìm không được là lối
+         vòng qua cổng phân quyền. */
+  var DAU = 'àáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợởỡùúụủũưừứựửữỳýỵỷỹđ';
+  var KHONG = 'aaaaaaaaaaaaaaaaaeeeeeeeeeeeiiiiiooooooooooooooooouuuuuuuuuuuyyyyyd';
+  function boDau(t) {
+    t = String(t == null ? '' : t).toLowerCase();
+    var r = '', i, j;
+    for (i = 0; i < t.length; i++) {
+      j = DAU.indexOf(t.charAt(i));
+      r += j > -1 ? KHONG.charAt(j) : t.charAt(i);
+    }
+    return r;
+  }
+
+  /* gom mọi chuỗi trong một cấu trúc lồng nhau, có chặn độ sâu */
+  function gomChu(d, sau, ra) {
+    if (sau > 5 || d == null) return ra;
+    if (typeof d === 'string') { ra.push(d); return ra; }
+    if (typeof d === 'number') { ra.push(String(d)); return ra; }
+    if (Array.isArray(d)) {
+      for (var i = 0; i < d.length; i++) gomChu(d[i], sau + 1, ra);
+      return ra;
+    }
+    if (typeof d === 'object') {
+      for (var k in d) if (Object.prototype.hasOwnProperty.call(d, k)) gomChu(d[k], sau + 1, ra);
+    }
+    return ra;
+  }
+
+  var KHO_TIM = null;
+  function khoTim() {
+    if (KHO_TIM) return KHO_TIM;
+    KHO_TIM = [];
+    var goiY = {};
+    (G.NHOM || []).forEach(function (n) {
+      (n.ds || []).forEach(function (x) { goiY[x.v] = n.t + ' ' + (x.h || ''); });
+    });
+    for (var v in G.MAN) {
+      if (!Object.prototype.hasOwnProperty.call(G.MAN, v)) continue;
+      var m = G.MAN[v], chu = [v, m.t, m.k, m.p, goiY[v] || ''];
+      (m.khoi || []).forEach(function (o) {
+        if (o.t) chu.push(o.t);
+        if (o.n) chu.push(o.n);
+        if (o.cot) gomChu(o.cot, 0, chu);
+        gomChu(o.tu ? G.TU[o.tu] : o.ds, 0, chu);
+      });
+      KHO_TIM.push({ v: v, t: m.t, k: m.k, p: m.p || '', goi: goiY[v] || '',
+                     chu: boDau(chu.join(' · ')) });
+    }
+    return KHO_TIM;
+  }
+
+  /* 2 nếu trúng ĐẦU MỘT TỪ, 1 nếu chỉ trúng giữa từ, 0 nếu không.
+     Phân biệt này quan trọng trong tiếng Việt: tìm "tướng" mà xếp
+     "biểu tượng" lên trước "danh tướng" là xếp sai. */
+  function trungTu(hay, kim) {
+    var i = hay.indexOf(kim);
+    while (i > -1) {
+      if (i === 0 || /[\s·—–\-,.:;()"'\/]/.test(hay.charAt(i - 1))) return 2;
+      i = hay.indexOf(kim, i + 1);
+    }
+    return hay.indexOf(kim) > -1 ? 1 : 0;
+  }
+
+  function tim(q) {
+    var tu = boDau(q).split(/\s+/).filter(function (x) { return x.length > 1; });
+    if (!tu.length) return [];
+    var ra = [];
+    khoTim().forEach(function (m) {
+      if (!G.duocPhep(VAI, BAC, m.v)) return;   /* lọc quyền TRƯỚC */
+      var diem = 0, i, tt = boDau(m.t), tp = boDau(m.p), tg = boDau(m.goi || ''), du = true;
+      for (i = 0; i < tu.length; i++) {
+        if (m.chu.indexOf(tu[i]) < 0) { du = false; break; }
+        var oT = trungTu(tt, tu[i]);
+        diem += oT === 2 ? 24 : (oT === 1 ? 6 : 0);      /* tiêu đề */
+        diem += trungTu(tg, tu[i]) === 2 ? 8 : 0;        /* câu gợi ở mục lục */
+        diem += trungTu(tp, tu[i]) === 2 ? 5 : 0;        /* câu dẫn của màn */
+        diem += 1;
+      }
+      /* Cả cụm đứng liền nhau đáng giá hơn nhiều từ rời rạc. Bỏ dấu
+         làm "tướng" và "tượng" thành một, nên cụm là thứ duy nhất
+         phân biệt được "danh tướng" với "biểu tượng". */
+      if (tu.length > 1) {
+        var cum = tu.join(' ');
+        if (tt.indexOf(cum) > -1) diem += 22;
+        if (tg.indexOf(cum) > -1) diem += 16;
+        if (tp.indexOf(cum) > -1) diem += 11;
+      }
+      if (du) ra.push({ v: m.v, t: m.t, k: m.k, p: m.p, d: diem });
+    });
+    ra.sort(function (a, b) { return b.d - a.d || a.t.localeCompare(b.t, 'vi'); });
+    return ra;
+  }
+
+  function veKetQua(q) {
+    var kq = tim(q);
+    if (!kq.length) {
+      return '<div class="dau"><span class="k">Tìm</span><h1>Không thấy “' + e(q) + '”</h1>' +
+        '<p>Thử một từ ngắn hơn, hoặc bỏ dấu. Ô tìm chỉ soi những màn vai này mở được.</p></div>';
+    }
+    return '<div class="dau"><span class="k">Tìm</span><h1>' + kq.length +
+      ' màn khớp “' + e(q) + '”</h1>' +
+      '<p>Xếp theo mức khớp. Ô tìm chỉ soi những màn vai này mở được — nó không phải lối vòng qua cổng phân quyền.</p></div>' +
+      '<ol class="kq">' + ds(kq, function (x) {
+        return '<li><a href="#' + e(x.v) + '"><span class="k">' + e(x.k) + '</span>' +
+          '<b>' + e(x.t) + '</b><span class="p">' + e(x.p) + '</span></a></li>';
+      }) + '</ol>';
+  }
+
   function veVo() {
     var m = G.META;
     return '<a href="#noi-dung" class="bo-qua">Tới nội dung</a>' +
@@ -828,6 +1048,11 @@
           '<span class="phu">' + e(m.phu) + '</span></div>' +
         '<div class="ban">Bản ' + e(m.ban) + '</div>' +
         (G.KHOA_VAI ? veVaiKhoa() : veChonVai()) +
+        '<form class="tim" role="search">' +
+          '<label class="an-chu" for="o-tim">Tìm trong hệ thống</label>' +
+          '<input id="o-tim" type="search" autocomplete="off" spellcheck="false" ' +
+            'placeholder="Tìm…  (gõ / để nhảy vào đây)">' +
+        '</form>' +
         '<button class="nut-muc" type="button" aria-expanded="false">Mục lục</button>' +
       '</header>' +
       '<div class="khung">' +
@@ -847,6 +1072,23 @@
   function ve() {
     var v = location.hash.replace(/^#/, '');
     if (v === 'noi-dung') return;
+
+    /* màn kết quả tìm — không phải một màn trong kho, nên không
+       đi qua veMan() và không được ghi nhớ làm màn đang đọc */
+    if (v.indexOf('tim=') === 0) {
+      var q = '';
+      try { q = decodeURIComponent(v.slice(4).replace(/\+/g, ' ')); } catch (x) { q = v.slice(4); }
+      chinh.innerHTML = veKetQua(q);
+      Array.prototype.forEach.call(mucNav.querySelectorAll('a'), function (a3) {
+        a3.classList.remove('oo'); a3.removeAttribute('aria-current');
+      });
+      goc.classList.remove('mo');
+      if (nut) nut.setAttribute('aria-expanded', 'false');
+      if (docTo) docTo.textContent = 'Kết quả tìm: ' + q;
+      window.scrollTo(0, 0);
+      return;
+    }
+
     if (!v || !G.MAN[v]) v = PHANG.length ? PHANG[0].v : 'tong-quan';
 
     /* CỔNG LỚP HAI — chạy trước mọi lần dựng, nên vào thẳng bằng
@@ -867,6 +1109,7 @@
   }
 
   function dungLai() {
+    KHO_TIM = null;   /* quyền đổi thì phạm vi tìm cũng đổi */
     dungPhang();
     mucNav.innerHTML = veMucLuc();
     ve();
@@ -898,6 +1141,32 @@
       var mo = goc.classList.toggle('mo');
       nut.setAttribute('aria-expanded', mo ? 'true' : 'false');
     });
+    var oTim = goc.querySelector('#o-tim');
+    var fTim = goc.querySelector('.tim');
+    if (fTim) fTim.addEventListener('submit', function (ev) { ev.preventDefault(); });
+    if (oTim) {
+      var treo = 0;
+      oTim.addEventListener('input', function () {
+        clearTimeout(treo);
+        var q = oTim.value.trim();
+        treo = setTimeout(function () {
+          if (q.length < 2) {
+            if (location.hash.indexOf('#tim=') === 0) history.replaceState(null, '', '#');
+            return;
+          }
+          location.hash = 'tim=' + encodeURIComponent(q);
+        }, 180);
+      });
+      oTim.addEventListener('keydown', function (ev) {
+        if (ev.key === 'Escape') { oTim.value = ''; oTim.blur(); location.hash = ''; }
+        if (ev.key === 'Enter') {
+          ev.preventDefault();
+          var a5 = chinh.querySelector('.kq a');
+          if (a5) { oTim.blur(); location.hash = a5.getAttribute('href').slice(1); }
+        }
+      });
+    }
+
     var oVai = goc.querySelector('#o-vai'), oBac = goc.querySelector('#o-bac');
     if (oVai) oVai.addEventListener('change', function (ev) { doiVai(ev.target.value, null); });
     if (oBac) oBac.addEventListener('change', function (ev) { doiVai(null, ev.target.value); });
@@ -910,6 +1179,7 @@
       var t = ev.target || {};
       var the = (t.tagName || '').toLowerCase();
       if (the === 'input' || the === 'select' || the === 'textarea' || t.isContentEditable) return;
+      if (ev.key === '/' && oTim) { ev.preventDefault(); oTim.focus(); oTim.select(); return; }
       if (ev.key !== 'ArrowLeft' && ev.key !== 'ArrowRight') return;
       var i = -1, k;
       var hien = location.hash.replace(/^#/, '');

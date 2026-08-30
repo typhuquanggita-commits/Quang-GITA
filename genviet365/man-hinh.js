@@ -1,6 +1,6 @@
 /* ═══════════════════════════════════════════════════════════════
    GEN VIỆT 365 · ĐỊNH NGHĨA MÀN HÌNH
-   Mười tám nhóm · 120 màn. Mỗi màn là một danh sách KHỐI; lớp giao diện biết
+   Hai mươi nhóm · 132 màn. Mỗi màn là một danh sách KHỐI; lớp giao diện biết
    dựng từng loại khối. Thêm màn mới thì thêm ở đây, không đụng vào
    giao-dien.js — trừ khi cần một loại khối chưa từng có.
    Trong khối "van", dấu *…* thành chữ đậm.
@@ -183,6 +183,24 @@ GV.NHOM = [
       { v: 'tuan-thu-vung', t: 'Tuân thủ theo vùng', h: 'GDPR · COPPA · và chuẩn chung' },
       { v: 'lo-trinh-toan-cau', t: 'Lộ trình toàn cầu', h: 'Bốn chặng 2026 → 2056' },
       { v: 'chong-xam-pham', t: 'Chống xâm phạm', h: 'Năm cấp · bằng chứng phải giữ sẵn' }
+    ]},
+  { id: 'g19', no: '19', t: 'CẦM LÊN DÙNG ĐƯỢC', s: 'Thứ dùng được sáng mai, không phải mô tả', mau: '#0B7350',
+    ds: [
+      { v: 'bay-cau-hoi', t: 'Bảy câu hỏi bàn ăn', h: 'Thứ gửi gia đình trước khi bán gì' },
+      { v: 'ban-doc-ca', t: 'Bản đọc ca một trang', h: 'Gia đình cầm về dù không mua' },
+      { v: 'giao-an-buoi-1', t: 'Giáo án buổi 1 · từng phút', h: 'Chín mươi phút, có lời Coach nói' },
+      { v: 'kich-ban-goi', t: 'Bốn kịch bản gọi điện', h: 'Mở đầu · ba câu giữa · kết · cấm gì' },
+      { v: 'thu-mau', t: 'Năm lá thư mẫu', h: 'Có bản viết sẵn đọc thẳng được' },
+      { v: 'ba-cuon-so', t: 'Ba cuốn sổ của học viên', h: 'Bản đồ 11 ô · Goal Map · sổ phục hồi' },
+      { v: 'phong-van-coach', t: 'Phỏng vấn Coach', h: 'Mười hai câu · tìm gì · loại khi nào' },
+      { v: 'bang-cham', t: 'Bảng chấm cổng chi tiết', h: 'Sáu cột mở ra thành thang mức' }
+    ]},
+  { id: 'g20', no: '20', t: 'TRA CỨU', s: 'Từ điển, chỉ mục, Sổ Chuẩn, bản đồ toàn hệ', mau: '#7A8CA3',
+    ds: [
+      { v: 'tu-dien', t: 'Từ điển thuật ngữ', h: 'Có cột tiếng Anh cho hồ sơ quốc tế' },
+      { v: 'chi-muc', t: 'Chỉ mục', h: 'Sinh ra lúc chạy, không bao giờ lệch' },
+      { v: 'so-chuan', t: 'Sổ Chuẩn', h: 'Mọi lần đổi chuẩn, không xoá dòng nào' },
+      { v: 'ban-do-he', t: 'Bản đồ toàn hệ', h: 'Tám phần · mười đường đọc theo vai' }
     ]}
 ];
 
@@ -1235,6 +1253,126 @@ GV.MAN = {
     { k: 'luat', tu: 'BQ_BANG_CHUNG' },
     { k: 'trich', t: 'Cấp năm là cấp duy nhất mà lợi ích thương mại không được cân nhắc: thông báo cho cơ quan chức năng trước, xử lý pháp lý sau.', n: 'Khi tên mình bị dùng để làm hại trẻ' }
   ]}
+,
+
+/* ══════════ NHÓM 19 · CẦM LÊN DÙNG ĐƯỢC ══════════ */
+'bay-cau-hoi': { q: 'chung', k: 'Cầm tay', t: 'Bảy câu hỏi bàn ăn',
+  p: 'Thứ gửi cho gia đình ở chặng đầu tiên, trước khi bán bất cứ thứ gì. Phải dùng được cả khi họ không bao giờ mua.',
+  khoi: [
+    { k: 'van', t: 'In hai trang, đưa tận tay. Đây là thứ duy nhất trong cả hệ được phát cho người *chưa* là gia đình của mình — nên nó phải đủ tốt để đứng một mình.' },
+    { k: 'baycau', tu: 'CT_BAY_CAU' },
+    { k: 'muc', t: 'Bảy luật khi dùng' },
+    { k: 'luat', tu: 'CT_BAY_LUAT' },
+    { k: 'trich', t: 'Hỏi xong thì im lặng đếm tới bảy. Phần lớn người lớn chịu không nổi bốn giây im lặng — và chính bốn giây ấy là chỗ trẻ bắt đầu nói thật.', n: 'Luật thứ hai, và là luật khó giữ nhất' }
+  ]},
+
+'ban-doc-ca': { q: 'tu_van', k: 'Cầm tay', t: 'Bản đọc ca một trang',
+  p: 'Thứ gia đình cầm về sau buổi tư vấn đầu tiên, dù họ không mua gì. Bảy mục, đúng một trang.',
+  khoi: [
+    { k: 'luoi', c: 2, tu: 'CT_DOC_CA' },
+    { k: 'muc', t: 'Sáu luật viết bản đọc ca' },
+    { k: 'luat', tu: 'CT_DOC_CA_LUAT' },
+    { k: 'trich', t: 'Mục 7 — “điều chưa đủ dữ liệu để nói” — là mục bắt buộc. Trang nào không có mục ấy là trang đã kết luận vượt quá thứ mình biết.', n: 'Luật thứ tư' }
+  ]},
+
+'giao-an-buoi-1': { q: 'nghe_chung', k: 'Cầm tay', t: 'Giáo án buổi 1 khoá nền · chín mươi phút',
+  p: 'Chạy được từng phút. Chỗ nào cần nói đúng lời thì đã ghi nguyên văn, và mỗi khối có một dấu hiệu để biết buổi đang hỏng.',
+  khoi: [
+    { k: 'van', t: 'Giáo án này là *bản mẫu*, không phải bản duy nhất. Nhưng ba thứ trong nó thì không đổi được: đón từng người ở cửa, trao huy hiệu thành nghi thức, và tiễn ra cửa. Bỏ ba thứ đó thì còn lại là một lớp học bình thường.' },
+    { k: 'giaoan', tu: 'CT_GIAO_AN' },
+    { k: 'muc', t: 'Dụng cụ phải có sẵn trước giờ' },
+    { k: 'ds', tu: 'CT_GIAO_AN_DUNG' },
+    { k: 'trich', t: 'Danh sách chi tiết riêng của từng em — Coach học thuộc TRƯỚC buổi, không mang theo đọc.', n: 'Dụng cụ cuối cùng, và là thứ quyết định ba mươi giây đầu tiên' }
+  ]},
+
+'kich-ban-goi': { q: 'nghe_chung', k: 'Cầm tay', t: 'Bốn kịch bản gọi điện',
+  p: 'Hệ hứa nhiều cuộc gọi trong bảng cam kết dịch vụ. Đây là nội dung của chúng.',
+  khoi: [
+    { k: 'kichban', tu: 'CT_KICH_BAN' },
+    { k: 'muc', t: 'Sáu luật gọi' },
+    { k: 'luat', tu: 'CT_GOI_LUAT' },
+    { k: 'trich', t: 'Gọi, không nhắn. Việc nào nhắn tin được thì không cần kịch bản.', n: 'Luật thứ nhất' }
+  ]},
+
+'thu-mau': { q: 'nghe_chung', k: 'Cầm tay', t: 'Năm lá thư mẫu',
+  p: 'Mỗi thư có cấu trúc và một bản viết sẵn — đọc thẳng được, sửa tên là gửi.',
+  khoi: [
+    { k: 'van', t: 'Bản viết sẵn để làm mẫu *nhịp và độ dài*, không phải để chép. Chép nguyên si thì phụ huynh thứ hai sẽ nhận ra, và lúc ấy mất nhiều hơn được.' },
+    { k: 'thumau', tu: 'CT_THU' },
+    { k: 'trich', t: 'Thư tay của Coach: tuyệt đối không in. Chữ xấu vẫn hơn chữ máy. Và không viết cùng một nội dung cho hai em.', n: 'Thư T-2' }
+  ]},
+
+'ba-cuon-so': { q: 'kh_hanh_trinh', k: 'Cầm tay', t: 'Ba cuốn sổ của học viên',
+  p: 'Bản đồ cá nhân mười một ô · Goal Map · sổ phục hồi. Ba cuốn này là nơi bằng chứng của trục G1 và I6 thật sự sinh ra.',
+  khoi: [
+    { k: 'muc', t: 'Bản đồ cá nhân mười một ô' },
+    { k: 'van', t: 'Viết lần đầu ở buổi 3 khoá nền, rồi viết lại mỗi 90 ngày. *Giữ cả bản cũ* — đọc hai bản cạnh nhau là bằng chứng mạnh nhất của cả một chu kỳ.' },
+    { k: 'bang', cot: ['Ô', 'Câu hỏi trong ô', 'Vì sao có ô này'], tu: 'CT_BAN_DO_11' },
+    { k: 'muc', t: 'Goal Map — sáu ô' },
+    { k: 'luoi', c: 2, tu: 'CT_GOAL_MAP' },
+    { k: 'muc', t: 'Sổ phục hồi — năm ô' },
+    { k: 'luoi', c: 2, tu: 'CT_SO_PHUC_HOI' },
+    { k: 'muc', t: 'Sáu luật của ba cuốn sổ' },
+    { k: 'luat', tu: 'CT_SO_LUAT' },
+    { k: 'trich', t: 'Mục đích không phải là không vấp. Mục đích là quay lại nhanh hơn lần trước — và đó là con số duy nhất Coach hỏi về sổ phục hồi.', n: 'Ô thứ tư của sổ phục hồi' }
+  ]},
+
+'phong-van-coach': { q: 'nghe_quan_ly', k: 'Cầm tay', t: 'Mười hai câu phỏng vấn Coach',
+  p: 'Mỗi câu ghi rõ đang tìm gì, dấu hiệu nhận, và dấu hiệu loại.',
+  khoi: [
+    { k: 'bang', cot: ['Câu hỏi', 'Đang tìm gì', 'Dấu hiệu nhận', 'Dấu hiệu loại'], tu: 'CT_PHONG_VAN' },
+    { k: 'muc', t: 'Sáu luật phỏng vấn' },
+    { k: 'luat', tu: 'CT_PV_LUAT' },
+    { k: 'trich', t: 'Câu 11 là câu loại thẳng: trả lời sai câu ấy thì dừng, không xét tiếp, dù mọi câu khác đều tốt.', n: 'Câu về ranh giới an toàn' }
+  ]},
+
+'bang-cham': { q: 'nghiem_thu', k: 'Cầm tay', t: 'Bảng chấm cổng nghiệm thu chi tiết',
+  p: 'Sáu cột của cổng 100 điểm, mở ra thành thang chấm từng mức. Người chấm không cần biết em ấy là ai.',
+  khoi: [
+    { k: 'cham', tu: 'CT_CHAM', nguong: 85 },
+    { k: 'muc', t: 'Sáu luật chấm' },
+    { k: 'luat', tu: 'CT_CHAM_LUAT' },
+    { k: 'trich', t: 'Không có bằng chứng cho một mức thì lấy mức thấp hơn. Không “cho thêm vì em ấy cố gắng”.', n: 'Luật thứ hai' }
+  ]},
+
+/* ══════════ NHÓM 20 · TRA CỨU ══════════ */
+'tu-dien': { q: 'chung', k: 'Tra cứu', t: 'Từ điển thuật ngữ',
+  p: 'Cột tiếng Anh không phải bản dịch marketing — nó là bản giải nghĩa để dùng trong hồ sơ quốc tế.',
+  khoi: [
+    { k: 'tudien', tu: 'TC_TU_DIEN' },
+    { k: 'muc', t: 'Năm luật dùng từ' },
+    { k: 'luat', tu: 'TC_TU_LUAT' },
+    { k: 'trich', t: 'Một khái niệm — một tên. Thấy hai tên cho cùng một thứ thì chọn một và sửa hết, không để song song.', n: 'Luật thứ năm' }
+  ]},
+
+'chi-muc': { q: 'chung', k: 'Tra cứu', t: 'Chỉ mục',
+  p: 'Toàn bộ màn xếp theo chữ cái. Sinh ra lúc chạy từ chính kho, nên không bao giờ lệch với hệ.',
+  khoi: [
+    { k: 'chimuc' }
+  ]},
+
+'so-chuan': { q: 'qt_noi_dung', k: 'Tra cứu', t: 'Sổ Chuẩn',
+  p: 'Sổ ghi mọi lần chuẩn của hệ bị đổi. Không có sổ này thì bảy nguyên lý bất biến chỉ bất biến trên lời nói.',
+  khoi: [
+    { k: 'van', t: 'Sổ Chuẩn được nhắc tám lần khắp hệ trước khi nó được định nghĩa ở đây. Đó là một món nợ, và màn này trả nợ ấy.' },
+    { k: 'luoi', c: 2, tu: 'TC_SO_CHUAN_LA' },
+    { k: 'muc', t: 'Tám cột của sổ' },
+    { k: 'bang', cot: ['Cột', 'Ghi gì', 'Chỗ hay sai'], tu: 'TC_SO_CHUAN_COT' },
+    { k: 'muc', t: 'Năm dòng đầu tiên' },
+    { k: 'van', t: 'Năm dòng dưới đây là những quyết định chuẩn đã có trong quá trình dựng hệ. Dòng SC-2026-004 là dòng sinh ra từ một lỗi thật, và đó là loại dòng có giá trị nhất trong cả sổ.' },
+    { k: 'bang', cot: ['Số hiệu', 'Lớp', 'Đổi gì', 'Vì sao', 'Đã thử gì trước khi quyết', 'Trỏ về'], tu: 'TC_SO_CHUAN_MAU' },
+    { k: 'trich', t: 'Cột “đã thử gì trước khi quyết” là cột bắt buộc. Không có cột ấy thì dòng không được ghi — đó là hàng rào chống việc đổi chuẩn theo cảm giác.', n: 'Điều bắt buộc' }
+  ]},
+
+'ban-do-he': { q: 'chung', k: 'Tra cứu', t: 'Bản đồ toàn hệ',
+  p: 'Hai mươi nhóm gom thành tám phần, và mười đường đọc — mỗi vai một đường.',
+  khoi: [
+    { k: 'van', t: 'Không ai đọc hai mươi nhóm theo thứ tự, và cũng không nên. Bảng dưới gom chúng thành tám phần theo *việc*, không theo số thứ tự.' },
+    { k: 'luoi', c: 2, tu: 'TC_BAN_DO_L' },
+    { k: 'muc', t: 'Mười đường đọc' },
+    { k: 'bang', cot: ['Bạn là ai', 'Đọc theo thứ tự', 'Vì sao thứ tự này'], tu: 'TC_DUONG_DOC' },
+    { k: 'trich', t: 'Nếu chỉ có mười phút thì đọc nhóm 19. Đó là phần dùng được sáng mai.', n: 'Phần TAY' }
+  ]}
 
 };
 
@@ -1492,5 +1630,35 @@ GV.TU = {
   BQ_LO_TRINH: GV.BQ_LO_TRINH,
   BQ_CHONG: GV.BQ_CHONG,
   BQ_BANG_CHUNG: GV.BQ_BANG_CHUNG,
+
+  /* nhóm 19 · cầm lên dùng được */
+  CT_BAY_CAU: GV.CT_BAY_CAU,
+  CT_BAY_LUAT: GV.CT_BAY_LUAT,
+  CT_DOC_CA: GV.CT_DOC_CA,
+  CT_DOC_CA_LUAT: GV.CT_DOC_CA_LUAT,
+  CT_GIAO_AN: GV.CT_GIAO_AN,
+  CT_GIAO_AN_DUNG: GV.CT_GIAO_AN_DUNG,
+  CT_KICH_BAN: GV.CT_KICH_BAN,
+  CT_GOI_LUAT: GV.CT_GOI_LUAT,
+  CT_THU: GV.CT_THU,
+  CT_BAN_DO_11: GV.CT_BAN_DO_11,
+  CT_GOAL_MAP: GV.CT_GOAL_MAP,
+  CT_SO_PHUC_HOI: GV.CT_SO_PHUC_HOI,
+  CT_SO_LUAT: GV.CT_SO_LUAT,
+  CT_PHONG_VAN: GV.CT_PHONG_VAN,
+  CT_PV_LUAT: GV.CT_PV_LUAT,
+  CT_CHAM: GV.CT_CHAM,
+  CT_CHAM_LUAT: GV.CT_CHAM_LUAT,
+
+  /* nhóm 20 · tra cứu */
+  TC_TU_DIEN: GV.TC_TU_DIEN,
+  TC_TU_LUAT: GV.TC_TU_LUAT,
+  TC_SO_CHUAN_LA: GV.TC_SO_CHUAN_LA,
+  TC_SO_CHUAN_COT: GV.TC_SO_CHUAN_COT,
+  TC_SO_CHUAN_MAU: GV.TC_SO_CHUAN_MAU,
+  TC_BAN_DO_L: GV.TC_BAN_DO.map(function (r) {
+    return { t: r.t + '  ·  ' + r.nhom, n: r.n, vi: r.vi };
+  }),
+  TC_DUONG_DOC: GV.TC_DUONG_DOC,
 
 };
