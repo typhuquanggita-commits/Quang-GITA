@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import { useAuth, lockReason } from '@/lib/auth';
 import { Card, LockedBox, M, Note } from '@/components/ui';
-import { FORMULAS, GRADES, TERM_LABEL, getRoadmap, topicsOfGrade } from '@/content';
+import { FORMULAS, GRADES, TERM_LABEL, getRoadmap, getTermMindMap, topicsOfGrade } from '@/content';
 import { generateDrill } from '@/lib/exams';
 import { Logo } from '@/components/Logo';
 import type { Grade, Level, Question } from '@/types';
@@ -154,6 +154,25 @@ export const Library: React.FC = () => {
               <h2 style={{ marginBottom: 4 }}>SƠ ĐỒ TƯ DUY TỔNG HỢP — TOÁN {grade}</h2>
               <div className="faint">Hệ thống hoá toàn bộ chương trình theo chuyên đề và học kỳ</div>
             </div>
+            {(['HK1', 'HK2'] as const).map((term) => {
+              const mm = getTermMindMap(grade, term);
+              return mm ? (
+                <div key={term} className="mb8" style={{ breakInside: 'avoid' }}>
+                  <div className="row-wrap mb2"><span className="badge badge-gold">Tổng hợp {TERM_LABEL[term]}</span></div>
+                  <div className="mindmap">
+                    <div className="mm-root"><M t={mm.root} /></div>
+                    <div className="mm-branches">
+                      {mm.branches.map((b, i) => (
+                        <div className="mm-branch" key={i}>
+                          <h5><M t={b.title} /></h5>
+                          <ul>{b.items.map((it, j) => <li key={j}><M t={it} /></li>)}</ul>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              ) : null;
+            })}
             {topics.map((t) => (
               <div key={t.id} className="mb6" style={{ breakInside: 'avoid' }}>
                 <div className="row-wrap mb2">

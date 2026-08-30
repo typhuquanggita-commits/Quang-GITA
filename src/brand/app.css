@@ -205,7 +205,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 /* ================= MATH ================= */
 .mq { font-family: var(--font-math); font-size: 1.06em; white-space: nowrap; }
 .mq-blk { display: block; text-align: center; margin: var(--sp-3) 0; font-size: 1.12em; }
-.frac { display: inline-flex; flex-direction: column; vertical-align: -0.52em; text-align: center; margin: 0 .18em; line-height: 1.12; }
+.frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; margin: 0 .2em; line-height: 1.15; font-size: .94em; position: relative; top: -.06em; }
 .frac > .num { border-bottom: 1.4px solid currentColor; padding: 0 .3em .06em; }
 .frac > .den { padding: .06em .3em 0; }
 .sup { vertical-align: super; font-size: .72em; }

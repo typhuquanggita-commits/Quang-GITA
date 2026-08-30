@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link, useRouter } from '@/lib/router';
 import { useAuth, lockReason } from '@/lib/auth';
 import { Bullets, Card, DecodeView, LevelBadge, LockedBox, M, MindMapView, Note, Steps } from '@/components/ui';
-import { STRAND_LABEL, TERM_LABEL, getTopic } from '@/content';
+import { STRAND_LABEL, TERM_LABEL, getTermMindMap, getTopic } from '@/content';
 import { markStudied } from '@/lib/store';
 import { templatesOfTopic } from '@/bank';
 
@@ -130,6 +130,19 @@ export const TopicDetail: React.FC<{ id: string }> = ({ id }) => {
           <h3>Sơ đồ tư duy tổng hợp kiến thức</h3>
           <p className="muted">In ra và dán vào góc học tập. Trước mỗi bài kiểm tra, nhìn sơ đồ và tự nhắc lại nội dung từng nhánh — đó là cách ôn nhanh và chắc nhất.</p>
           <MindMapView map={topic.mindmap} />
+
+          {getTermMindMap(topic.grade, topic.term) && (
+            <>
+              <hr />
+              <h3>Sơ đồ tư duy tổng hợp — {TERM_LABEL[topic.term]}, Toán {topic.grade}</h3>
+              <p className="muted">
+                Bức tranh toàn cảnh của cả học kỳ: chuyên đề em đang học nằm ở đâu trong hệ thống,
+                và nó nối với những phần nào khác. Ôn cuối kỳ hãy bắt đầu từ sơ đồ này.
+              </p>
+              <MindMapView map={getTermMindMap(topic.grade, topic.term)!} />
+            </>
+          )}
+
           <div className="mt4 no-print">
             <button className="btn btn-outline" onClick={() => window.print()}>🖨 In sơ đồ tư duy</button>
           </div>
