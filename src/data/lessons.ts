@@ -1317,6 +1317,1368 @@ export const LESSONS: readonly Lesson[] = [
       fix: 'Từ bước 1: bỏ tiêu chí cảm giác, dùng phép thử nòng cốt. Hỏi "ai/cái gì đã cho thấy?" — câu B trả lời được là "bài thơ", câu A không trả lời được. Câu B mới là câu đúng.',
     },
   },
+  {
+    topicId: 'qualitative.vocabulary',
+    section: 'qualitative',
+    minutes: 30,
+    hook: 'Từ vựng và nghĩa của từ chiếm khoảng 6–7 câu phần Ngữ văn. Không thể học thuộc hết từ tiếng Việt, nhưng có thể học cách đọc nghĩa từ ngữ cảnh — và ngữ cảnh trong đề thi luôn đủ để xác định nghĩa mà không cần từ điển.',
+    build: [
+      {
+        idea: 'Nghĩa của từ trong câu do ngữ cảnh quyết định, không do nghĩa quen thuộc nhất quyết định.',
+        explain:
+          'Nhiều từ tiếng Việt đa nghĩa, và đề luôn chọn nghĩa ít gặp hơn để phân loại. Đọc cả câu trước khi chọn là cách duy nhất tránh được.',
+        check: 'Từ "chín" trong "suy nghĩ đã chín" mang nghĩa gì?',
+        checkAnswer: 'Đã đủ độ, đã kỹ càng — nghĩa chuyển, không phải nghĩa nấu chín.',
+      },
+      {
+        idea: 'Từ Hán Việt trang trọng hơn từ thuần Việt cùng nghĩa, và sắc thái đó là điều đề hỏi.',
+        explain:
+          '"Phụ nữ" và "đàn bà" cùng chỉ một đối tượng nhưng khác sắc thái. Chọn từ trong văn bản trang trọng phải theo sắc thái, không chỉ theo nghĩa gốc.',
+        check: 'Trong văn bản hành chính nên dùng "hy sinh" hay "chết"?',
+        checkAnswer: '"Hy sinh" — trang trọng và phù hợp sắc thái.',
+      },
+      {
+        idea: 'Từ đồng nghĩa hiếm khi thay thế được nhau ở mọi ngữ cảnh.',
+        explain:
+          'Đồng nghĩa nghĩa là gần nghĩa, không phải trùng nghĩa. Mỗi từ có phạm vi kết hợp riêng, và đề khai thác đúng chỗ hai từ không thay được cho nhau.',
+        check: 'Có nói "ăn cơm ngon miệng" và "ăn cơm ngon mồm" như nhau được không?',
+        checkAnswer: 'Không — hai từ khác sắc thái và phạm vi sử dụng.',
+      },
+    ],
+    examples: [
+      {
+        id: 'ex.voc.context',
+        patternId: 'voc.context',
+        title: 'Xác định nghĩa của từ trong ngữ cảnh',
+        problem:
+          'Trong câu "Ông là cây đại thụ của nền văn học nước nhà", từ "cây đại thụ" được dùng với nghĩa gì?',
+        steps: [
+          {
+            do: 'Đọc nghĩa đen của cụm từ trước.',
+            why: 'Nghĩa chuyển bao giờ cũng bắt nguồn từ nghĩa đen, nên hiểu nghĩa đen là có sẵn manh mối.',
+            result: 'Cây to, sống lâu năm, vững chãi',
+          },
+          {
+            do: 'Kiểm tra nghĩa đen có hợp với chủ ngữ trong câu không.',
+            why: 'Chủ ngữ là "ông" — một con người, nên nghĩa đen không dùng được và chắc chắn đây là nghĩa chuyển.',
+            result: 'Không hợp; phải là nghĩa chuyển',
+          },
+          {
+            do: 'Chuyển đặc điểm của nghĩa đen sang lĩnh vực mà câu đang nói tới.',
+            why: 'Ẩn dụ hoạt động bằng cách mượn đặc điểm; giữ đặc điểm và đổi lĩnh vực là ra nghĩa chuyển.',
+            result: 'To lớn và lâu năm trong cây → có vị thế lớn và cống hiến lâu dài trong văn học',
+          },
+        ],
+        answer: 'Chỉ người có vị thế lớn, uy tín và cống hiến lâu dài cho nền văn học.',
+        takeaway:
+          'Quy trình đọc nghĩa chuyển luôn là: hiểu nghĩa đen, thấy nghĩa đen không hợp, rồi mượn đặc điểm của nó sang lĩnh vực của câu. Không cần đoán mò.',
+      },
+      {
+        id: 'ex.voc.pair',
+        patternId: 'voc.pair',
+        title: 'Chọn từ đúng sắc thái',
+        problem:
+          'Chọn từ thích hợp điền vào chỗ trống trong câu văn trang trọng: "Nhà trường xin gửi lời … sâu sắc tới gia đình các em học sinh." với các lựa chọn: cảm ơn, cám ơn, biết ơn, tri ân.',
+        steps: [
+          {
+            do: 'Xác định sắc thái mà ngữ cảnh đòi hỏi.',
+            why: 'Câu mở đầu bằng "Nhà trường xin gửi lời" nên đây là văn bản trang trọng, sắc thái phải tương xứng.',
+            result: 'Cần từ mang sắc thái trang trọng',
+          },
+          {
+            do: 'Loại các từ đúng nghĩa nhưng lệch sắc thái.',
+            why: 'Cả bốn từ đều liên quan tới lòng biết ơn; điều phân biệt chúng là mức trang trọng và phạm vi kết hợp.',
+            result: '"Cám ơn" khẩu ngữ hơn; "biết ơn" thường không đi với "gửi lời"',
+          },
+          {
+            do: 'Kiểm tra khả năng kết hợp của các từ còn lại với cụm "gửi lời".',
+            why: 'Đồng nghĩa không đồng nghĩa với thay thế được; phạm vi kết hợp mới quyết định.',
+            result: '"Gửi lời tri ân" và "gửi lời cảm ơn" đều dùng được; "tri ân" trang trọng hơn',
+          },
+        ],
+        answer: 'Chọn "tri ân" — đúng nghĩa, đúng sắc thái trang trọng và kết hợp được với "gửi lời".',
+        takeaway:
+          'Câu chọn từ hiếm khi có phương án sai nghĩa. Chúng sai ở sắc thái hoặc ở khả năng kết hợp, nên phải đọc cả câu chứ không chỉ nhìn từ.',
+      },
+    ],
+    wrongTurn: {
+      problem: 'Giải nghĩa từ "ăn" trong câu "Xe này ăn xăng lắm" và cho biết đó là nghĩa gì.',
+      attempt: [
+        '"Ăn" nghĩa là đưa thức ăn vào miệng và nuốt.',
+        'Vậy câu này nói xe đưa xăng vào và nuốt.',
+        'Đây là nghĩa gốc của từ "ăn".',
+      ],
+      brokeAtStep: 1,
+      diagnosis:
+        'Bước 1 lấy nghĩa quen thuộc nhất của từ mà không kiểm tra nó có hợp với chủ ngữ hay không. Chủ ngữ là "xe" — một vật vô tri, nên nghĩa gốc không thể áp dụng. Đây là lỗi phổ biến vì bộ não tự động truy xuất nghĩa hay gặp nhất, và chỉ có thao tác đối chiếu với chủ ngữ mới chặn được phản xạ đó. Đề thi luôn chọn đúng những từ có nghĩa gốc quen thuộc để dựng bẫy này.',
+      fix: 'Từ bước 1: sau khi lấy nghĩa gốc, đối chiếu ngay với chủ ngữ. Xe không ăn được, nên đây là nghĩa chuyển: "ăn" ở đây nghĩa là tiêu thụ, hao tốn. Câu nói xe tiêu thụ nhiều xăng.',
+    },
+  },
+  {
+    topicId: 'qualitative.rhetoric',
+    section: 'qualitative',
+    minutes: 30,
+    hook: 'Biện pháp tu từ và phong cách chiếm khoảng 5–6 câu phần Ngữ văn. Câu hỏi hiếm khi dừng ở "đây là biện pháp gì" mà luôn hỏi thêm "để làm gì" — nên nhớ tên biện pháp là chưa đủ, phải nói được tác dụng.',
+    build: [
+      {
+        idea: 'So sánh có từ so sánh, ẩn dụ thì không — đó là dấu hiệu phân biệt duy nhất cần nhớ.',
+        explain:
+          '"Đẹp như hoa" là so sánh vì có chữ "như". "Bông hoa của lớp" là ẩn dụ vì đã gọi thẳng người là hoa. Hoán dụ thì lấy một bộ phận gọi thay cho toàn thể.',
+        check: '"Áo nâu cùng với áo xanh" dùng biện pháp gì?',
+        checkAnswer: 'Hoán dụ — lấy trang phục gọi thay cho tầng lớp người mặc.',
+      },
+      {
+        idea: 'Câu hỏi luôn đi tiếp tới TÁC DỤNG, nên phải trả lời được biện pháp đó làm gì cho câu văn.',
+        explain:
+          'Tác dụng thường thuộc ba nhóm: làm hình ảnh cụ thể hơn, làm nhịp điệu mạnh hơn, hoặc nhấn mạnh một ý. Chọn đúng nhóm là đủ điểm.',
+        check: 'Điệp ngữ thường có tác dụng gì?',
+        checkAnswer: 'Nhấn mạnh ý và tạo nhịp điệu cho câu.',
+      },
+      {
+        idea: 'Nhận diện phong cách ngôn ngữ dựa vào mục đích giao tiếp của văn bản.',
+        explain:
+          'Báo chí đưa tin, khoa học trình bày tri thức, hành chính điều hành công việc, nghệ thuật gợi cảm xúc. Hỏi văn bản này viết ra để làm gì là ra phong cách.',
+        check: 'Văn bản có số hiệu, ngày tháng, chữ ký thuộc phong cách nào?',
+        checkAnswer: 'Phong cách hành chính — công vụ.',
+      },
+    ],
+    examples: [
+      {
+        id: 'ex.rhe.identify',
+        patternId: 'rhe.identify',
+        title: 'Gọi tên biện pháp và nêu tác dụng',
+        problem:
+          'Chỉ ra biện pháp tu từ và nêu tác dụng trong câu thơ: "Ngày ngày mặt trời đi qua trên lăng / Thấy một mặt trời trong lăng rất đỏ."',
+        steps: [
+          {
+            do: 'Đối chiếu hai lần xuất hiện của cùng một hình ảnh.',
+            why: 'Một từ lặp lại với hai nghĩa khác nhau là dấu hiệu của ẩn dụ, không phải điệp ngữ đơn thuần.',
+            result: '"Mặt trời" thứ nhất là thiên thể thật; "mặt trời" thứ hai chỉ Bác Hồ',
+          },
+          {
+            do: 'Kiểm tra có từ so sánh hay không để phân biệt ẩn dụ với so sánh.',
+            why: 'Đây là dấu hiệu phân biệt duy nhất và tuyệt đối giữa hai biện pháp này.',
+            result: 'Không có "như", "tựa", "là" — nên đây là ẩn dụ',
+          },
+          {
+            do: 'Nêu tác dụng bằng cách hỏi ẩn dụ này mượn đặc điểm gì.',
+            why: 'Tác dụng của ẩn dụ luôn nằm ở đặc điểm được mượn từ vật này sang vật kia.',
+            result: 'Mượn sự vĩnh cửu và nguồn sáng của mặt trời để nói về tầm vóc của Bác',
+          },
+          {
+            do: 'Viết câu trả lời gồm cả tên biện pháp lẫn tác dụng.',
+            why: 'Câu hỏi dạng này luôn chấm cả hai vế; chỉ gọi tên biện pháp là mất một nửa số điểm.',
+            result: 'Ẩn dụ, tác dụng ca ngợi và bất tử hóa hình tượng',
+          },
+        ],
+        answer:
+          'Biện pháp ẩn dụ: "mặt trời trong lăng" chỉ Bác Hồ, mượn sự vĩnh cửu và nguồn sáng của mặt trời để ca ngợi tầm vóc và sự bất tử của Người.',
+        takeaway:
+          'Công thức trả lời cố định: gọi tên biện pháp, chỉ ra nó nằm ở đâu, rồi nói nó mượn đặc điểm gì để làm gì. Ba vế này phủ hết mọi câu hỏi tu từ.',
+      },
+      {
+        id: 'ex.rhe.style',
+        patternId: 'rhe.style',
+        title: 'Nhận diện phong cách ngôn ngữ',
+        problem:
+          'Một đoạn văn có các số liệu thống kê, trích dẫn nguồn, thuật ngữ chuyên môn và không dùng từ ngữ biểu cảm. Đoạn này thuộc phong cách ngôn ngữ nào?',
+        steps: [
+          {
+            do: 'Liệt kê các đặc điểm hình thức quan sát được.',
+            why: 'Phong cách được nhận diện qua đặc điểm hình thức lặp lại, chứ không qua chủ đề của văn bản.',
+            result: 'Số liệu · trích nguồn · thuật ngữ · không biểu cảm',
+          },
+          {
+            do: 'Hỏi văn bản này viết ra nhằm mục đích gì.',
+            why: 'Mỗi phong cách gắn với một mục đích giao tiếp riêng, nên câu hỏi này thu hẹp nhanh nhất.',
+            result: 'Trình bày tri thức một cách chính xác, khách quan',
+          },
+          {
+            do: 'Loại các phong cách có mục đích khác.',
+            why: 'Đối chiếu từng phong cách với mục đích vừa xác định thường chỉ để lại một khả năng.',
+            result:
+              'Không phải báo chí vì không đưa tin thời sự; không phải nghệ thuật vì không gợi cảm xúc; không phải hành chính vì không có thể thức công vụ',
+          },
+        ],
+        answer: 'Đoạn văn thuộc phong cách ngôn ngữ khoa học.',
+        takeaway:
+          'Một câu hỏi duy nhất — "văn bản này viết ra để làm gì?" — giải được hầu hết câu nhận diện phong cách, nhanh hơn nhiều so với dò danh sách đặc điểm.',
+      },
+    ],
+    wrongTurn: {
+      problem: 'Chỉ ra biện pháp tu từ trong câu: "Cô ấy đẹp như một đóa hoa."',
+      attempt: [
+        'Câu này ví cô ấy với đóa hoa.',
+        'Ví một người với một vật thì đó là ẩn dụ.',
+        'Vậy biện pháp tu từ ở đây là ẩn dụ.',
+      ],
+      brokeAtStep: 2,
+      diagnosis:
+        'Bước 2 gọi tên biện pháp dựa vào việc "có ví von" mà bỏ qua dấu hiệu hình thức quyết định. So sánh và ẩn dụ đều ví vật này với vật kia; điều phân biệt chúng là sự có mặt của từ so sánh. Câu này có chữ "như" nên là so sánh. Ẩn dụ là khi từ so sánh bị lược đi và vật này được gọi thẳng bằng tên vật kia, ví dụ "Cô ấy là đóa hoa của lớp".',
+      fix: 'Từ bước 2: tìm từ so sánh trước khi gọi tên. Có "như", "tựa", "giống", "bao nhiêu… bấy nhiêu" thì là so sánh; không có mà vẫn ví von thì mới là ẩn dụ.',
+    },
+  },
+  {
+    topicId: 'qualitative.logic',
+    section: 'qualitative',
+    minutes: 35,
+    hook: 'Suy luận ngôn ngữ chiếm khoảng 6–8 câu phần Ngữ văn và là nhóm câu ít liên quan tới văn học nhất: nó kiểm tra khả năng lập luận. Đây là chuyên đề công bằng nhất với người học vì không đòi hỏi thuộc gì cả, chỉ đòi hỏi làm đúng quy trình.',
+    build: [
+      {
+        idea: 'Một suy luận đúng phải đúng với MỌI trường hợp, nên chỉ cần một phản ví dụ là bác bỏ được.',
+        explain:
+          'Không cần chứng minh phương án sai là sai ở mọi mặt; chỉ cần dựng được một tình huống mà tiền đề đúng nhưng kết luận sai là đủ loại.',
+        check: 'Từ "mọi A là B" có suy ra "mọi B là A" không?',
+        checkAnswer: 'Không — mọi con mèo là động vật, nhưng không phải mọi động vật là mèo.',
+      },
+      {
+        idea: 'Bài xếp thứ tự nên vẽ ra một trục và điền dần các ràng buộc chắc chắn trước.',
+        explain:
+          'Ràng buộc dạng "A đứng ngay trước B" cố định hơn ràng buộc dạng "A đứng trước B". Điền cái chắc chắn trước thì các khả năng còn lại thu hẹp rất nhanh.',
+        check: 'Trong ba ràng buộc, nên dùng cái nào trước: "A trước B", "C ngay sau A", "D không đứng cuối"?',
+        checkAnswer: '"C ngay sau A" — chặt nhất nên thu hẹp nhiều nhất.',
+      },
+      {
+        idea: 'Điều kiện cần và điều kiện đủ không thay thế nhau được.',
+        explain:
+          '"Nếu P thì Q" cho biết P đủ để có Q, nhưng không cho biết Q chỉ xảy ra khi có P. Đảo ngược mệnh đề là lỗi logic phổ biến nhất trong cả chuyên đề.',
+        check: 'Từ "nếu trời mưa thì đường ướt" và "đường ướt" có suy ra "trời mưa" không?',
+        checkAnswer: 'Không — đường có thể ướt vì xe tưới nước.',
+      },
+    ],
+    examples: [
+      {
+        id: 'ex.log.valid',
+        patternId: 'log.valid',
+        title: 'Kiểm tra tính đúng đắn của một suy luận',
+        problem:
+          'Cho hai tiền đề: "Tất cả học sinh giỏi đều chăm chỉ" và "Nam chăm chỉ". Có thể kết luận "Nam là học sinh giỏi" không? Hãy giải thích.',
+        steps: [
+          {
+            do: 'Viết lại tiền đề dưới dạng quan hệ bao hàm giữa hai tập hợp.',
+            why: 'Chuyển ngôn ngữ sang tập hợp làm hiện ra chiều của quan hệ, vốn là chỗ mọi lỗi logic phát sinh.',
+            result: 'Tập học sinh giỏi nằm TRONG tập người chăm chỉ',
+          },
+          {
+            do: 'Xác định tiền đề thứ hai đặt Nam vào tập nào.',
+            why: 'Kết luận chỉ hợp lệ nếu vị trí của Nam bị xác định duy nhất bởi các tiền đề.',
+            result: 'Nam thuộc tập người chăm chỉ — tập lớn hơn',
+          },
+          {
+            do: 'Kiểm tra tập lớn có buộc phải nằm trong tập nhỏ không.',
+            why: 'Quan hệ bao hàm chỉ đi một chiều; thuộc tập lớn không suy ra thuộc tập con.',
+            result: 'Không — người chăm chỉ có thể không phải học sinh giỏi',
+          },
+          {
+            do: 'Dựng một phản ví dụ cụ thể để chốt lại.',
+            why: 'Một phản ví dụ là đủ và là cách nhanh nhất để bác bỏ một suy luận.',
+            result: 'Nam chăm chỉ nhưng học lực trung bình — hai tiền đề vẫn đúng, kết luận sai',
+          },
+        ],
+        answer: 'Không thể kết luận. Đây là lỗi khẳng định hệ quả — suy ngược chiều của quan hệ bao hàm.',
+        takeaway:
+          'Vẽ hai vòng tròn lồng nhau là cách nhanh nhất kiểm tra mọi suy luận dạng "tất cả A là B". Chiều mũi tên chỉ đi một hướng, và đề luôn hỏi theo hướng ngược lại.',
+      },
+      {
+        id: 'ex.log.arrange',
+        patternId: 'log.arrange',
+        title: 'Bài xếp thứ tự có ràng buộc',
+        problem:
+          'Năm người A, B, C, D, E xếp thành hàng dọc. Biết: B đứng ngay sau A; C đứng đầu hàng; D đứng sau B nhưng không đứng cuối. Hãy xác định thứ tự của cả hàng.',
+        steps: [
+          {
+            do: 'Vẽ năm ô trống và điền ràng buộc chắc chắn nhất trước.',
+            why: 'Ràng buộc cố định một vị trí cụ thể thu hẹp không gian nhiều hơn mọi ràng buộc tương đối.',
+            result: 'C ở vị trí 1: [C][ ][ ][ ][ ]',
+          },
+          {
+            do: 'Điền tiếp ràng buộc dạng cặp liền kề.',
+            why: 'Cặp "ngay sau" là một khối không tách rời được, nên nó chỉ có vài chỗ đặt.',
+            result: 'Khối AB chỉ đặt được ở vị trí 2–3, 3–4 hoặc 4–5',
+          },
+          {
+            do: 'Dùng ràng buộc còn lại để loại các khả năng.',
+            why: 'D phải đứng sau B và không được cuối, nên B không thể ở quá sát cuối hàng.',
+            result: 'Nếu AB ở 4–5 thì không còn chỗ cho D sau B; nếu AB ở 3–4 thì D phải ở 5, trái điều kiện',
+          },
+          {
+            do: 'Chốt vị trí còn lại cho người cuối cùng.',
+            why: 'Khi bốn vị trí đã xác định, người còn lại chỉ có duy nhất một chỗ.',
+            result: 'AB ở 2–3, D ở 4, E ở 5',
+          },
+        ],
+        answer: 'Thứ tự hàng là C, A, B, D, E.',
+        takeaway:
+          'Thứ tự dùng ràng buộc quyết định bài này mất một phút hay năm phút: vị trí cố định trước, cặp liền kề sau, ràng buộc tương đối cuối cùng.',
+      },
+    ],
+    wrongTurn: {
+      problem:
+        'Tiền đề: "Nếu học sinh nghỉ học thì điểm số giảm." Biết điểm số của Lan đã giảm. Có thể kết luận gì về việc Lan nghỉ học?',
+      attempt: [
+        'Tiền đề nói nghỉ học dẫn tới điểm giảm.',
+        'Điểm của Lan đã giảm, tức là hệ quả đã xảy ra.',
+        'Vậy Lan đã nghỉ học.',
+      ],
+      brokeAtStep: 3,
+      diagnosis:
+        'Bước 3 đi ngược chiều của mệnh đề kéo theo: từ "P thì Q" và "có Q" suy ra "có P". Đây là lỗi khẳng định hệ quả. Mệnh đề gốc chỉ nói nghỉ học là MỘT nguyên nhân đủ để điểm giảm, không nói đó là nguyên nhân duy nhất — điểm có thể giảm vì đề khó hơn, vì Lan ốm, vì nhiều lý do khác. Lỗi này khó nhận ra vì trong đời sống, ta thường suy ngược như vậy và thường đúng; chỉ trong logic hình thức nó mới bị bác bỏ tuyệt đối.',
+      fix: 'Từ bước 3: chiều duy nhất được phép đi là từ P sang Q, hoặc từ "không có Q" sang "không có P". Ở đây chỉ kết luận được rằng chưa xác định được Lan có nghỉ học hay không.',
+    },
+  },
+  /* ══ KHOA HỌC — VẬT LÝ ═════════════════════════════════════════════ */
+  {
+    topicId: 'science.physics.mechanics',
+    section: 'science',
+    minutes: 40,
+    hook: 'Cơ học chiếm khoảng 5 câu trong 16–17 câu của chủ đề Vật lý. Đây là nền của cả chủ đề: bảo toàn năng lượng và định luật Newton học ở đây sẽ dùng lại trong dao động, trong điện và cả trong hạt nhân.',
+    build: [
+      {
+        idea: 'Vẽ hình và đánh dấu mọi lực trước khi viết bất kỳ phương trình nào.',
+        explain:
+          'Định luật Newton nói về TỔNG các lực, nên sót một lực là sai toàn bài. Hình vẽ có mũi tên là cách duy nhất kiểm soát được việc không sót.',
+        check: 'Vật trượt trên mặt phẳng nghiêng có mấy lực tác dụng?',
+        checkAnswer: 'Ba: trọng lực, phản lực pháp tuyến và lực ma sát.',
+      },
+      {
+        idea: 'Bài nào hỏi vận tốc hoặc độ cao mà không hỏi thời gian thì nên dùng bảo toàn năng lượng.',
+        explain:
+          'Bảo toàn năng lượng bỏ qua toàn bộ quá trình ở giữa, chỉ so sánh đầu và cuối. Nó biến một bài động lực học nhiều bước thành một phương trình.',
+        check: 'Vật rơi từ độ cao h, tính vận tốc chạm đất — nên dùng công cụ nào?',
+        checkAnswer: 'Bảo toàn năng lượng: v = √(2gh).',
+      },
+      {
+        idea: 'Gia tốc là đại lượng nối động học với động lực học.',
+        explain:
+          'Biết lực thì tính được gia tốc qua F = ma; biết gia tốc thì tính được quãng đường và vận tốc qua công thức động học. Gia tốc là bản lề giữa hai nửa của cơ học.',
+        check: 'Lực 10 N tác dụng lên vật 2 kg thì gia tốc bằng bao nhiêu?',
+        checkAnswer: 'a = F/m = 5 m/s².',
+      },
+    ],
+    examples: [
+      {
+        id: 'ex.phy.energy',
+        patternId: 'phy.energy',
+        title: 'Bảo toàn năng lượng trên mặt phẳng nghiêng',
+        problem:
+          'Một vật khối lượng 2 kg trượt không ma sát từ đỉnh một mặt phẳng nghiêng cao 5 m. Tính vận tốc của vật ở chân dốc. Lấy g = 10 m/s².',
+        steps: [
+          {
+            do: 'Kiểm tra điều kiện áp dụng bảo toàn cơ năng.',
+            why: 'Cơ năng chỉ bảo toàn khi không có ma sát hay lực cản; đề nói rõ không ma sát nên dùng được.',
+            result: 'Không ma sát ⟹ cơ năng bảo toàn',
+          },
+          {
+            do: 'Viết cơ năng tại đỉnh và tại chân dốc.',
+            why: 'Bảo toàn nghĩa là hai giá trị này bằng nhau, nên chỉ cần viết ra là có ngay phương trình.',
+            result: 'Đỉnh: mgh + 0 · Chân dốc: 0 + ½mv²',
+          },
+          {
+            do: 'Cho hai cơ năng bằng nhau và rút gọn khối lượng.',
+            why: 'Khối lượng có mặt ở cả hai vế nên triệt tiêu — kết quả không phụ thuộc vật nặng hay nhẹ.',
+            result: 'gh = ½v² ⟹ v = √(2gh)',
+          },
+          {
+            do: 'Thay số vào công thức vừa rút ra.',
+            why: 'Rút gọn bằng chữ trước rồi mới thay số giúp phát hiện sớm nếu công thức sai đơn vị.',
+            result: 'v = √(2 × 10 × 5) = √100 = 10 m/s',
+          },
+        ],
+        answer: 'Vận tốc của vật ở chân dốc là 10 m/s.',
+        takeaway:
+          'Khối lượng triệt tiêu trong mọi bài rơi và trượt không ma sát. Đề cho khối lượng chỉ để thử xem thí sinh có nhận ra nó thừa hay không.',
+      },
+      {
+        id: 'ex.phy.newton',
+        patternId: 'phy.newton',
+        title: 'Định luật Newton với lực ma sát',
+        problem:
+          'Một vật 5 kg nằm trên mặt sàn ngang, bị kéo bởi lực 20 N theo phương ngang. Hệ số ma sát trượt giữa vật và sàn là 0,2. Tính gia tốc của vật. Lấy g = 10 m/s².',
+        steps: [
+          {
+            do: 'Vẽ hình và liệt kê đủ bốn lực tác dụng lên vật.',
+            why: 'Bỏ sót lực ma sát hoặc phản lực là lỗi làm hỏng cả bài; hình vẽ buộc phải kể hết.',
+            result: 'Lực kéo F · trọng lực P · phản lực N · lực ma sát Fms',
+          },
+          {
+            do: 'Chiếu lên phương thẳng đứng để tìm phản lực pháp tuyến.',
+            why: 'Lực ma sát tỉ lệ với phản lực, nên phải có N trước khi tính được ma sát.',
+            result: 'Vật không chuyển động theo phương đứng ⟹ N = P = mg = 50 N',
+          },
+          {
+            do: 'Tính độ lớn lực ma sát trượt.',
+            why: 'Ma sát trượt luôn bằng hệ số nhân phản lực, và luôn ngược chiều chuyển động.',
+            result: 'Fms = 0,2 × 50 = 10 N',
+          },
+          {
+            do: 'Chiếu lên phương ngang và áp dụng định luật II Newton.',
+            why: 'Gia tốc do TỔNG lực theo phương chuyển động gây ra, không phải do riêng lực kéo.',
+            result: 'a = (20 − 10)/5 = 2 m/s²',
+          },
+        ],
+        answer: 'Vật chuyển động với gia tốc 2 m/s² theo hướng của lực kéo.',
+        takeaway:
+          'Đề luôn để sẵn phương án 4 m/s² cho người lấy thẳng lực kéo chia khối lượng. Bước chiếu lên phương đứng để tìm N mới là bước phân loại.',
+      },
+    ],
+    wrongTurn: {
+      problem:
+        'Một vật 3 kg được kéo bởi lực 30 N trên mặt sàn có ma sát, lực ma sát 6 N. Tính gia tốc của vật.',
+      attempt: [
+        'Vật chịu lực kéo 30 N.',
+        'Áp dụng định luật II Newton: a = F/m = 30/3 = 10 m/s².',
+        'Vậy gia tốc bằng 10 m/s².',
+      ],
+      brokeAtStep: 2,
+      diagnosis:
+        'Bước 2 thay F trong công thức bằng riêng lực kéo, trong khi F trong định luật II Newton là HỢP LỰC của tất cả các lực theo phương chuyển động. Lực ma sát 6 N ngược chiều nên phải trừ đi. Lỗi này rất khó tự bắt vì công thức được viết đúng và phép chia cũng đúng — chỉ có ý nghĩa của ký hiệu F bị hiểu sai, và đề luôn cài sẵn phương án ứng với cách hiểu đó.',
+      fix: 'Từ bước 2: tính hợp lực trước, F = 30 − 6 = 24 N, rồi mới chia cho khối lượng. Gia tốc đúng là 24/3 = 8 m/s². Quy tắc: F trong F = ma luôn có nghĩa là tổng vectơ các lực.',
+    },
+  },
+  {
+    topicId: 'science.physics.oscillation',
+    section: 'science',
+    minutes: 40,
+    hook: 'Dao động và sóng chiếm khoảng 4–5 câu của chủ đề Vật lý và là nhóm câu có nhiều công thức nhất. Bù lại, gần như mọi công thức đều xoay quanh một đại lượng duy nhất là tần số góc, nên nắm được nó là nắm được cả chuyên đề.',
+    build: [
+      {
+        idea: 'Tần số góc ω là trung tâm; chu kỳ, tần số và mọi công thức khác đều suy ra từ nó.',
+        explain:
+          'T = 2π/ω và f = ω/2π. Với con lắc lò xo ω = √(k/m), với con lắc đơn ω = √(g/ℓ). Nhớ ω là suy ra được toàn bộ phần còn lại.',
+        check: 'Con lắc lò xo có k = 100 N/m, m = 1 kg thì ω bằng bao nhiêu?',
+        checkAnswer: 'ω = √(100/1) = 10 rad/s.',
+      },
+      {
+        idea: 'Chu kỳ con lắc đơn không phụ thuộc khối lượng, chỉ phụ thuộc chiều dài và gia tốc trọng trường.',
+        explain:
+          'Đây là kết quả phản trực giác nhất của chuyên đề và vì thế được hỏi nhiều nhất. Khối lượng có mặt ở cả lực kéo về lẫn quán tính nên triệt tiêu.',
+        check: 'Treo thêm vật nặng gấp đôi vào con lắc đơn thì chu kỳ đổi thế nào?',
+        checkAnswer: 'Không đổi.',
+      },
+      {
+        idea: 'Trong dao động điều hòa, động năng và thế năng đổi chỗ cho nhau nhưng tổng luôn không đổi.',
+        explain:
+          'Ở vị trí biên thế năng cực đại còn động năng bằng 0; ở vị trí cân bằng thì ngược lại. Cơ năng bằng đúng giá trị cực đại của một trong hai.',
+        check: 'Ở vị trí cân bằng, vận tốc của vật dao động điều hòa như thế nào?',
+        checkAnswer: 'Cực đại, bằng ωA.',
+      },
+    ],
+    examples: [
+      {
+        id: 'ex.osc.period',
+        patternId: 'osc.period',
+        title: 'Chu kỳ con lắc lò xo và ảnh hưởng của khối lượng',
+        problem:
+          'Con lắc lò xo có độ cứng k = 40 N/m gắn vật nặng m = 0,1 kg. Tính chu kỳ dao động, và cho biết chu kỳ đổi thế nào nếu thay bằng vật nặng gấp bốn lần.',
+        steps: [
+          {
+            do: 'Tính tần số góc từ độ cứng và khối lượng.',
+            why: 'ω là đại lượng gốc; có ω thì mọi đại lượng khác chỉ còn là phép thay số.',
+            result: 'ω = √(k/m) = √(40/0,1) = √400 = 20 rad/s',
+          },
+          {
+            do: 'Đổi tần số góc sang chu kỳ.',
+            why: 'Chu kỳ là thời gian một dao động toàn phần, liên hệ với ω qua T = 2π/ω.',
+            result: 'T = 2π/20 ≈ 0,314 s',
+          },
+          {
+            do: 'Xét quan hệ giữa chu kỳ và khối lượng để trả lời phần hai.',
+            why: 'T tỉ lệ với căn bậc hai của m, nên tăng m gấp 4 chỉ làm T tăng gấp 2 chứ không phải gấp 4.',
+            result: 'T tỉ lệ với √m ⟹ m tăng 4 lần thì T tăng 2 lần',
+          },
+        ],
+        answer: 'Chu kỳ ban đầu khoảng 0,314 s; với vật nặng gấp bốn lần, chu kỳ tăng gấp đôi thành khoảng 0,628 s.',
+        takeaway:
+          'Mọi câu hỏi "đại lượng này tăng gấp n lần thì kia đổi thế nào" đều giải bằng cách đọc số mũ trong công thức, không cần tính lại từ đầu.',
+      },
+      {
+        id: 'ex.osc.energy',
+        patternId: 'osc.energy',
+        title: 'Năng lượng trong dao động điều hòa',
+        problem:
+          'Một vật dao động điều hòa với biên độ A = 5 cm và tần số góc ω = 10 rad/s, khối lượng 0,2 kg. Tính vận tốc của vật khi nó ở vị trí có li độ x = 3 cm.',
+        steps: [
+          {
+            do: 'Viết cơ năng của dao động theo biên độ.',
+            why: 'Cơ năng là hằng số của cả dao động, nên nó là chiếc neo để so sánh mọi vị trí với nhau.',
+            result: 'W = ½mω²A²',
+          },
+          {
+            do: 'Viết cơ năng tại vị trí có li độ x, gồm cả động năng và thế năng.',
+            why: 'Tại một vị trí bất kỳ, năng lượng chia thành hai phần, và tổng vẫn bằng cơ năng.',
+            result: '½mv² + ½mω²x² = ½mω²A²',
+          },
+          {
+            do: 'Rút gọn khối lượng và giải ra vận tốc.',
+            why: 'Khối lượng có ở mọi số hạng nên triệt tiêu — vận tốc không phụ thuộc vật nặng nhẹ.',
+            result: 'v = ω√(A² − x²)',
+          },
+          {
+            do: 'Thay số với đơn vị thống nhất.',
+            why: 'Biên độ và li độ đang tính bằng xentimét nên kết quả cũng ra xentimét trên giây.',
+            result: 'v = 10 × √(25 − 9) = 10 × 4 = 40 cm/s',
+          },
+        ],
+        answer: 'Vận tốc của vật tại li độ 3 cm là 40 cm/s.',
+        takeaway:
+          'Công thức v = ω√(A² − x²) không cần học thuộc: nó rơi ra từ bảo toàn năng lượng trong hai dòng. Dựng lại được thì không bao giờ nhớ nhầm dấu.',
+      },
+    ],
+    wrongTurn: {
+      problem:
+        'Con lắc đơn dài 1 m dao động với chu kỳ T. Nếu thay quả nặng bằng quả nặng có khối lượng gấp đôi thì chu kỳ mới bằng bao nhiêu?',
+      attempt: [
+        'Chu kỳ dao động phụ thuộc khối lượng của vật nặng.',
+        'Khối lượng tăng gấp đôi nên vật dao động chậm hơn.',
+        'Chu kỳ mới bằng √2 lần chu kỳ cũ.',
+      ],
+      brokeAtStep: 1,
+      diagnosis:
+        'Bước 1 giả định chu kỳ con lắc ĐƠN phụ thuộc khối lượng, có lẽ do nhớ nhầm sang công thức con lắc lò xo T = 2π√(m/k), nơi khối lượng thật sự có mặt. Với con lắc đơn thì T = 2π√(ℓ/g) — hoàn toàn không có m. Lý do vật lý: khối lượng vừa làm tăng lực kéo về vừa làm tăng quán tính, hai tác dụng triệt tiêu nhau chính xác. Đây là kết quả phản trực giác nên nó được hỏi rất nhiều.',
+      fix: 'Từ bước 1: nhớ đúng công thức T = 2π√(ℓ/g) cho con lắc đơn. Chu kỳ không đổi khi thay quả nặng. Cách phân biệt hai công thức: lò xo có k nên phải có m đi kèm; con lắc đơn có g nên đi kèm chiều dài ℓ.',
+    },
+  },
+  {
+    topicId: 'science.physics.electricity',
+    section: 'science',
+    minutes: 40,
+    hook: 'Điện và từ chiếm khoảng 4–5 câu của chủ đề Vật lý. Phần lớn là bài mạch điện, và mạch điện là dạng bài có quy trình rõ ràng nhất trong cả chủ đề: rút gọn mạch, tính dòng tổng, rồi lần ngược ra từng nhánh.',
+    build: [
+      {
+        idea: 'Mạch nối tiếp có cùng dòng điện; mạch song song có cùng hiệu điện thế.',
+        explain:
+          'Đây là hai câu duy nhất cần nhớ để phân tích mọi mạch. Xác định sai kiểu mắc là sai từ dòng đầu tiên và không có cách nào sửa ở các bước sau.',
+        check: 'Hai điện trở mắc song song thì đại lượng nào bằng nhau?',
+        checkAnswer: 'Hiệu điện thế trên hai điện trở bằng nhau.',
+      },
+      {
+        idea: 'Điện trở tương đương của mạch song song luôn NHỎ HƠN điện trở nhỏ nhất trong mạch.',
+        explain:
+          'Thêm một đường cho dòng đi qua thì tổng trở giảm. Quy tắc này là phép tự kiểm tra nhanh: ra kết quả lớn hơn là chắc chắn sai.',
+        check: 'Hai điện trở 6 Ω và 3 Ω mắc song song cho điện trở tương đương bao nhiêu?',
+        checkAnswer: '2 Ω — nhỏ hơn cả 3 Ω.',
+      },
+      {
+        idea: 'Công suất có ba công thức tương đương, chọn công thức nào là tùy dữ kiện đề cho.',
+        explain:
+          'P = UI = I²R = U²/R. Chọn đúng công thức tiết kiệm được một bước trung gian, và tránh được sai số làm tròn tích lũy.',
+        check: 'Biết I và R, nên dùng công thức công suất nào?',
+        checkAnswer: 'P = I²R — dùng thẳng dữ kiện đã có.',
+      },
+    ],
+    examples: [
+      {
+        id: 'ex.ele.circuit',
+        patternId: 'ele.circuit',
+        title: 'Phân tích mạch hỗn hợp',
+        problem:
+          'Cho mạch điện: R₁ = 4 Ω mắc nối tiếp với cụm gồm R₂ = 6 Ω song song R₃ = 3 Ω. Hiệu điện thế nguồn U = 12 V. Tính cường độ dòng điện qua R₂.',
+        steps: [
+          {
+            do: 'Rút gọn cụm song song trước.',
+            why: 'Phải quy mạch về dạng đơn giản nhất mới tính được dòng tổng, và cụm song song là phần rút gọn được ngay.',
+            result: 'R₂₃ = (6 × 3)/(6 + 3) = 2 Ω, nhỏ hơn cả 3 Ω nên hợp lý',
+          },
+          {
+            do: 'Tính điện trở tương đương của cả mạch.',
+            why: 'R₁ nối tiếp với cụm vừa rút gọn nên cộng thẳng hai giá trị.',
+            result: 'R = 4 + 2 = 6 Ω',
+          },
+          {
+            do: 'Tính dòng điện tổng chạy qua mạch chính.',
+            why: 'Định luật Ôm cho cả mạch cho dòng tổng, và dòng này cũng chính là dòng qua R₁ vì nó nối tiếp.',
+            result: 'I = U/R = 12/6 = 2 A',
+          },
+          {
+            do: 'Tìm hiệu điện thế trên cụm song song rồi suy ra dòng qua R₂.',
+            why: 'Hai nhánh song song có cùng hiệu điện thế, nên biết U của cụm là tính được dòng từng nhánh.',
+            result: 'U₂₃ = I × R₂₃ = 2 × 2 = 4 V ⟹ I₂ = 4/6 ≈ 0,67 A',
+          },
+        ],
+        answer: 'Cường độ dòng điện qua R₂ khoảng 0,67 A.',
+        takeaway:
+          'Quy trình cố định cho mọi mạch hỗn hợp: rút gọn từ trong ra ngoài, tính dòng tổng, rồi lần ngược từ ngoài vào trong. Không bao giờ tính nhánh trước khi có dòng tổng.',
+      },
+      {
+        id: 'ex.ele.power',
+        patternId: 'ele.power',
+        title: 'Chọn công thức công suất theo dữ kiện',
+        problem:
+          'Một bóng đèn ghi 220 V – 100 W được mắc vào nguồn 110 V. Tính công suất thực tế của đèn, coi điện trở của đèn không đổi.',
+        steps: [
+          {
+            do: 'Tính điện trở của đèn từ thông số định mức.',
+            why: 'Thông số ghi trên đèn là cặp hiệu điện thế và công suất ở chế độ định mức, từ đó suy ra điện trở.',
+            result: 'R = U²/P = 220²/100 = 484 Ω',
+          },
+          {
+            do: 'Nhận ra điện trở không đổi khi đổi nguồn.',
+            why: 'Đề nói rõ điều này; nếu không có giả thiết đó thì bài không giải được vì điện trở đèn phụ thuộc nhiệt độ.',
+            result: 'R vẫn là 484 Ω ở nguồn 110 V',
+          },
+          {
+            do: 'Chọn công thức công suất khớp với dữ kiện đang có.',
+            why: 'Đã có U mới và R nên P = U²/R dùng thẳng được, không cần tính dòng trung gian.',
+            result: 'P = 110²/484 = 12100/484 = 25 W',
+          },
+        ],
+        answer: 'Công suất thực tế của đèn là 25 W, tức chỉ bằng một phần tư công suất định mức.',
+        takeaway:
+          'Hiệu điện thế giảm một nửa làm công suất giảm bốn lần, vì công suất tỉ lệ với bình phương hiệu điện thế. Đề luôn để sẵn phương án 50 W cho người nghĩ theo tỉ lệ thuận.',
+      },
+    ],
+    wrongTurn: {
+      problem: 'Tính điện trở tương đương của hai điện trở R₁ = 6 Ω và R₂ = 3 Ω mắc song song.',
+      attempt: [
+        'Công thức mạch song song: 1/R = 1/R₁ + 1/R₂.',
+        'Thay số: 1/R = 1/6 + 1/3 = 1/6 + 2/6 = 3/6 = 1/2.',
+        'Vậy R = 1/2 = 0,5 Ω.',
+      ],
+      brokeAtStep: 3,
+      diagnosis:
+        'Bước 3 lấy luôn giá trị vừa tính làm điện trở, quên rằng vế trái là 1/R chứ không phải R. Phải nghịch đảo một lần nữa mới ra R = 2 Ω. Lỗi này xuất hiện nhiều vì hai bước đầu hoàn toàn đúng và con số 1/2 trông đã như một đáp án hoàn chỉnh. Điều đáng nói là nó tự phát hiện được: 0,5 Ω nhỏ hơn cả hai điện trở thành phần rất nhiều, trong khi quy tắc nói kết quả phải nằm giữa 0 và giá trị nhỏ nhất — ở đây là gần 3 Ω hơn.',
+      fix: 'Từ bước 3: nghịch đảo kết quả, R = 2 Ω. Với đúng hai điện trở song song, dùng thẳng R = R₁R₂/(R₁+R₂) = 18/9 = 2 Ω để bỏ hẳn bước dễ quên này.',
+    },
+  },
+  {
+    topicId: 'science.physics.modern',
+    section: 'science',
+    minutes: 35,
+    hook: 'Lượng tử và hạt nhân chiếm khoảng 3 câu của chủ đề Vật lý, phần lớn ở mức nhận biết và thông hiểu. Đây là chuyên đề ít công thức nhất trong chủ đề, nên nó là chỗ gỡ điểm tốt nếu nắm chắc vài quan hệ cơ bản.',
+    build: [
+      {
+        idea: 'Năng lượng photon tỉ lệ NGHỊCH với bước sóng.',
+        explain:
+          'ε = hc/λ. Ánh sáng tím bước sóng ngắn nên năng lượng lớn; ánh sáng đỏ bước sóng dài nên năng lượng nhỏ. Nhầm chiều quan hệ này làm sai gần hết câu quang lượng tử.',
+        check: 'Ánh sáng nào mang năng lượng photon lớn hơn: đỏ hay tím?',
+        checkAnswer: 'Tím — bước sóng ngắn hơn nên năng lượng lớn hơn.',
+      },
+      {
+        idea: 'Hiện tượng quang điện chỉ xảy ra khi bước sóng nhỏ hơn giới hạn quang điện.',
+        explain:
+          'Tăng cường độ sáng không giúp gì nếu bước sóng quá dài — mỗi photon vẫn không đủ năng lượng bứt electron. Đây là điểm khác biệt căn bản với vật lý cổ điển.',
+        check: 'Chiếu ánh sáng có λ lớn hơn λ₀ với cường độ rất mạnh thì có quang điện không?',
+        checkAnswer: 'Không — cường độ không thay thế được năng lượng từng photon.',
+      },
+      {
+        idea: 'Trong phản ứng hạt nhân, số khối A và điện tích Z đều được bảo toàn.',
+        explain:
+          'Hai định luật bảo toàn này đủ để xác định hạt còn thiếu trong mọi phương trình phản ứng, mà không cần nhớ tên phản ứng.',
+        check: 'Phản ứng phóng xạ alpha làm số khối thay đổi thế nào?',
+        checkAnswer: 'Giảm 4 đơn vị, và điện tích giảm 2.',
+      },
+    ],
+    examples: [
+      {
+        id: 'ex.mod.nuclear',
+        patternId: 'mod.nuclear',
+        title: 'Xác định hạt thiếu trong phản ứng hạt nhân',
+        problem:
+          'Trong phản ứng hạt nhân: ²³⁸U₉₂ → ²³⁴Th₉₀ + X. Hãy xác định hạt X và cho biết đây là loại phóng xạ nào.',
+        steps: [
+          {
+            do: 'Áp dụng bảo toàn số khối A cho hai vế.',
+            why: 'Tổng số nuclôn không đổi qua phản ứng, nên số khối của X suy ra bằng một phép trừ.',
+            result: 'A(X) = 238 − 234 = 4',
+          },
+          {
+            do: 'Áp dụng bảo toàn điện tích Z.',
+            why: 'Tổng điện tích cũng bảo toàn, và hai định luật này đủ để nhận diện hạt.',
+            result: 'Z(X) = 92 − 90 = 2',
+          },
+          {
+            do: 'Đối chiếu cặp (A, Z) vừa tìm với các hạt đã biết.',
+            why: 'Mỗi cặp số khối và điện tích ứng với đúng một loại hạt, nên bước này cho kết quả duy nhất.',
+            result: '(4; 2) chính là hạt nhân heli, tức hạt alpha',
+          },
+          {
+            do: 'Gọi tên loại phóng xạ theo hạt phát ra.',
+            why: 'Tên phóng xạ được đặt theo hạt được phát ra, nên nhận ra hạt là biết luôn tên.',
+            result: 'Phóng xạ alpha',
+          },
+        ],
+        answer: 'X là hạt alpha (⁴He₂), và đây là phóng xạ alpha.',
+        takeaway:
+          'Không cần thuộc bảng các loại phóng xạ: hai định luật bảo toàn A và Z tự dẫn ra hạt thiếu trong mọi phản ứng, kể cả phản ứng chưa từng gặp.',
+      },
+      {
+        id: 'ex.mod.photon',
+        patternId: 'mod.photon',
+        title: 'Điều kiện xảy ra hiện tượng quang điện',
+        problem:
+          'Một kim loại có giới hạn quang điện λ₀ = 0,5 μm. Chiếu vào nó lần lượt hai chùm sáng: chùm A có bước sóng 0,4 μm cường độ yếu, chùm B có bước sóng 0,6 μm cường độ rất mạnh. Chùm nào gây ra hiện tượng quang điện?',
+        steps: [
+          {
+            do: 'Nhắc lại điều kiện xảy ra quang điện.',
+            why: 'Điều kiện chỉ liên quan tới bước sóng, không liên quan tới cường độ — đây là điểm cả bài xoay quanh.',
+            result: 'Quang điện xảy ra khi λ ≤ λ₀',
+          },
+          {
+            do: 'So sánh bước sóng của từng chùm với giới hạn quang điện.',
+            why: 'Mỗi chùm được xét độc lập, và chỉ một phép so sánh là đủ kết luận.',
+            result: 'Chùm A: 0,4 < 0,5 ⟹ thỏa · Chùm B: 0,6 > 0,5 ⟹ không thỏa',
+          },
+          {
+            do: 'Giải thích vì sao cường độ mạnh của chùm B không cứu được.',
+            why: 'Cường độ chỉ làm tăng SỐ photon, không làm tăng năng lượng của từng photon.',
+            result: 'Mỗi photon của B vẫn không đủ năng lượng bứt electron, dù có rất nhiều photon',
+          },
+        ],
+        answer:
+          'Chỉ chùm A gây ra hiện tượng quang điện, dù cường độ của nó yếu hơn chùm B rất nhiều.',
+        takeaway:
+          'Quang điện là hiện tượng "một photon đối một electron", nên nó phụ thuộc chất lượng từng photon chứ không phụ thuộc số lượng. Đây chính là điều vật lý cổ điển không giải thích được.',
+      },
+    ],
+    wrongTurn: {
+      problem:
+        'So sánh năng lượng photon của ánh sáng đỏ (λ ≈ 0,7 μm) và ánh sáng tím (λ ≈ 0,4 μm).',
+      attempt: [
+        'Năng lượng photon tính theo công thức ε = hc/λ.',
+        'Ánh sáng đỏ có bước sóng lớn hơn.',
+        'Bước sóng lớn hơn thì năng lượng lớn hơn, nên photon ánh sáng đỏ mang năng lượng lớn hơn.',
+      ],
+      brokeAtStep: 3,
+      diagnosis:
+        'Bước 3 đọc quan hệ trong công thức thành tỉ lệ thuận, trong khi λ nằm ở MẪU SỐ nên quan hệ là tỉ lệ nghịch. Bước sóng càng lớn thì năng lượng càng nhỏ. Lỗi này gần như luôn xuất phát từ việc nhớ công thức mà không đọc vị trí của từng đại lượng trong đó, và nó kéo theo hàng loạt kết luận sai về quang điện — vì tia tử ngoại bước sóng ngắn mới là tia gây quang điện mạnh, không phải tia hồng ngoại.',
+      fix: 'Từ bước 3: đại lượng ở mẫu số thì tỉ lệ nghịch. Photon ánh sáng tím mang năng lượng lớn hơn. Cách nhớ bằng hiện tượng: tia tử ngoại làm cháy da còn ánh sáng đỏ thì không — năng lượng nằm ở phía bước sóng ngắn.',
+    },
+  },
+  /* ══ KHOA HỌC — HÓA HỌC ════════════════════════════════════════════ */
+  {
+    topicId: 'science.chemistry.general',
+    section: 'science',
+    minutes: 40,
+    hook: 'Hóa đại cương chiếm khoảng 5 câu của chủ đề Hóa học và là nền của hai chuyên đề còn lại: mol, nồng độ và cân bằng phản ứng học ở đây sẽ dùng lại trong mọi bài vô cơ và hữu cơ. Bỏ qua chuyên đề này là kéo theo cả chủ đề.',
+    build: [
+      {
+        idea: 'Mol là đơn vị duy nhất nói chuyện được với phương trình hóa học.',
+        explain:
+          'Hệ số cân bằng là tỉ lệ MOL, không phải tỉ lệ khối lượng hay thể tích. Vì vậy mọi bài tính đều phải đi qua mol, kể cả khi đề cho và hỏi bằng gam.',
+        check: 'Đề cho 5,6 g Fe. Việc đầu tiên phải làm là gì?',
+        checkAnswer: 'Đổi ra mol: n = 5,6/56 = 0,1 mol.',
+      },
+      {
+        idea: 'Ba công thức tính mol phủ hết mọi cách đề có thể cho dữ kiện.',
+        explain:
+          'n = m/M cho chất rắn, n = V/22,4 cho khí ở điều kiện tiêu chuẩn, n = C·V cho dung dịch. Đọc ra đề đang cho kiểu nào là chọn được ngay công thức.',
+        check: 'Đề cho 200 ml dung dịch HCl 0,5 M thì số mol HCl bằng bao nhiêu?',
+        checkAnswer: 'n = 0,5 × 0,2 = 0,1 mol.',
+      },
+      {
+        idea: 'Khi đề cho lượng của cả hai chất tham gia, phải xác định chất nào hết trước.',
+        explain:
+          'Chất hết trước quyết định lượng sản phẩm; chất dư không đóng góp gì. Bỏ qua bước này là lỗi làm sai nhiều bài nhất của chuyên đề.',
+        check: 'Cách nhanh nhất tìm chất hết trước là gì?',
+        checkAnswer: 'Chia số mol mỗi chất cho hệ số của nó; thương nhỏ nhất là chất hết trước.',
+      },
+    ],
+    examples: [
+      {
+        id: 'ex.che.mole',
+        patternId: 'che.mole',
+        title: 'Tính theo phương trình khi cả hai chất đều có lượng cho trước',
+        problem:
+          'Cho 5,6 g Fe tác dụng với 200 ml dung dịch HCl 1M. Tính thể tích khí H₂ thu được ở điều kiện tiêu chuẩn. Biết Fe = 56.',
+        steps: [
+          {
+            do: 'Viết và cân bằng phương trình phản ứng.',
+            why: 'Hệ số cân bằng chính là tỉ lệ mol; không có phương trình đúng thì mọi phép tính sau đều vô nghĩa.',
+            result: 'Fe + 2HCl → FeCl₂ + H₂',
+          },
+          {
+            do: 'Đổi cả hai dữ kiện ra mol.',
+            why: 'Một chất cho bằng gam, một chất cho bằng dung dịch — phải quy về cùng đơn vị mol mới so sánh được.',
+            result: 'n(Fe) = 5,6/56 = 0,1 mol · n(HCl) = 1 × 0,2 = 0,2 mol',
+          },
+          {
+            do: 'Chia số mol mỗi chất cho hệ số của nó để tìm chất hết trước.',
+            why: 'Thương nhỏ nhất chỉ ra chất bị tiêu thụ hết đầu tiên, và chính nó quyết định lượng sản phẩm.',
+            result: 'Fe: 0,1/1 = 0,1 · HCl: 0,2/2 = 0,1 ⟹ hai chất vừa đủ, không dư chất nào',
+          },
+          {
+            do: 'Tính mol H₂ theo tỉ lệ rồi đổi ra thể tích.',
+            why: 'Tỉ lệ Fe : H₂ là 1 : 1, và khí ở điều kiện tiêu chuẩn quy đổi qua 22,4 lít mỗi mol.',
+            result: 'n(H₂) = 0,1 mol ⟹ V = 0,1 × 22,4 = 2,24 lít',
+          },
+        ],
+        answer: 'Thể tích khí H₂ thu được là 2,24 lít ở điều kiện tiêu chuẩn.',
+        takeaway:
+          'Bước chia cho hệ số phải làm ngay cả khi kết quả là "vừa đủ". Bỏ bước đó nghĩa là may mắn chứ không phải giải đúng, và lần sau đề sẽ cho dư một chất.',
+      },
+      {
+        id: 'ex.che.solution',
+        patternId: 'che.solution',
+        title: 'Pha loãng và trộn dung dịch',
+        problem:
+          'Trộn 100 ml dung dịch NaOH 2M với 300 ml dung dịch NaOH 1M. Tính nồng độ mol của dung dịch thu được, coi thể tích cộng được.',
+        steps: [
+          {
+            do: 'Tính số mol chất tan trong từng dung dịch.',
+            why: 'Số mol là đại lượng cộng được khi trộn, còn nồng độ thì không — đây là bước làm bài toán giải được.',
+            result: 'n₁ = 2 × 0,1 = 0,2 mol · n₂ = 1 × 0,3 = 0,3 mol',
+          },
+          {
+            do: 'Cộng số mol và cộng thể tích.',
+            why: 'Cả hai đại lượng này đều mang tính cộng dồn, khác hẳn với nồng độ vốn là một tỉ số.',
+            result: 'n = 0,5 mol · V = 0,4 lít',
+          },
+          {
+            do: 'Chia mol tổng cho thể tích tổng.',
+            why: 'Nồng độ mol theo định nghĩa là số mol chất tan trên một lít dung dịch.',
+            result: 'C = 0,5/0,4 = 1,25 M',
+          },
+          {
+            do: 'Kiểm tra kết quả có nằm giữa hai nồng độ ban đầu không.',
+            why: 'Trộn hai dung dịch luôn cho nồng độ nằm giữa; ra ngoài khoảng đó là chắc chắn sai.',
+            result: '1 < 1,25 < 2 ⟹ hợp lý',
+          },
+        ],
+        answer: 'Dung dịch thu được có nồng độ 1,25 M.',
+        takeaway:
+          'Lấy trung bình cộng hai nồng độ cho 1,5 M — sai vì hai dung dịch có thể tích khác nhau. Nồng độ chỉ trung bình được khi thể tích bằng nhau.',
+      },
+    ],
+    wrongTurn: {
+      problem:
+        'Cho 0,2 mol Zn tác dụng với 0,2 mol HCl theo phản ứng Zn + 2HCl → ZnCl₂ + H₂. Tính số mol H₂ thu được.',
+      attempt: [
+        'Hai chất có số mol bằng nhau, đều là 0,2 mol.',
+        'Vậy chúng phản ứng vừa đủ với nhau.',
+        'Tỉ lệ Zn : H₂ là 1 : 1 nên n(H₂) = 0,2 mol.',
+      ],
+      brokeAtStep: 2,
+      diagnosis:
+        'Bước 2 kết luận "vừa đủ" chỉ vì hai số mol bằng nhau, mà bỏ qua hệ số cân bằng. Phương trình cần 2 mol HCl cho mỗi mol Zn, nên 0,2 mol Zn đòi hỏi tới 0,4 mol HCl — chỉ có 0,2 mol nên HCl hết trước và Zn còn dư một nửa. Lỗi này rất phổ biến vì hai con số bằng nhau tạo cảm giác cân đối, trong khi cái quyết định là tỉ lệ với hệ số chứ không phải giá trị tuyệt đối.',
+      fix: 'Từ bước 2: chia mỗi số mol cho hệ số của nó. Zn: 0,2/1 = 0,2; HCl: 0,2/2 = 0,1. HCl có thương nhỏ hơn nên hết trước, và n(H₂) = 0,2/2 = 0,1 mol.',
+    },
+  },
+  {
+    topicId: 'science.chemistry.inorganic',
+    section: 'science',
+    minutes: 35,
+    hook: 'Hóa vô cơ chiếm khoảng 5–6 câu của chủ đề Hóa học, phần lớn ở mức nhận biết và thông hiểu. Đây là chuyên đề nặng về thuộc lòng nhất, nhưng lượng phải thuộc thì có giới hạn rõ ràng: dãy hoạt động kim loại cộng vài quy tắc phản ứng.',
+    build: [
+      {
+        idea: 'Dãy hoạt động hóa học quyết định kim loại nào phản ứng được với gì.',
+        explain:
+          'Chỉ kim loại đứng trước H mới đẩy được H₂ khỏi axit loãng; kim loại mạnh hơn đẩy được kim loại yếu hơn ra khỏi muối. Một dãy giải được phần lớn câu vô cơ.',
+        check: 'Cu có phản ứng với dung dịch HCl loãng không?',
+        checkAnswer: 'Không — Cu đứng sau H trong dãy hoạt động.',
+      },
+      {
+        idea: 'Oxit chia thành bốn nhóm và mỗi nhóm có một bộ phản ứng riêng.',
+        explain:
+          'Oxit bazơ tác dụng axit, oxit axit tác dụng bazơ, oxit lưỡng tính tác dụng cả hai, oxit trung tính không tác dụng với cả hai. Phân loại đúng là biết ngay phản ứng nào xảy ra.',
+        check: 'Al₂O₃ thuộc loại oxit nào?',
+        checkAnswer: 'Oxit lưỡng tính — tác dụng được cả với axit và bazơ mạnh.',
+      },
+      {
+        idea: 'Nhận biết chất dựa vào dấu hiệu quan sát được, không dựa vào phản ứng có xảy ra hay không.',
+        explain:
+          'Thuốc thử tốt phải cho hiện tượng nhìn thấy: kết tủa, đổi màu, sủi khí. Phản ứng không có dấu hiệu thì vô dụng cho việc nhận biết dù nó vẫn xảy ra.',
+        check: 'Thuốc thử nào nhận biết được ion sunfat trong dung dịch?',
+        checkAnswer: 'Dung dịch BaCl₂ — cho kết tủa trắng BaSO₄ không tan trong axit.',
+      },
+    ],
+    examples: [
+      {
+        id: 'ex.ino.metal',
+        patternId: 'ino.metal',
+        title: 'Dự đoán phản ứng dựa vào dãy hoạt động',
+        problem:
+          'Cho các kim loại Mg, Cu, Zn, Ag. Kim loại nào tác dụng được với dung dịch HCl loãng, và kim loại nào đẩy được Cu ra khỏi dung dịch CuSO₄?',
+        steps: [
+          {
+            do: 'Viết lại vị trí bốn kim loại trong dãy hoạt động.',
+            why: 'Toàn bộ câu trả lời nằm trong thứ tự này, nên viết ra là đã giải được nửa bài.',
+            result: 'Mg … Zn … (H) … Cu … Ag',
+          },
+          {
+            do: 'Áp dụng quy tắc với axit: chỉ kim loại trước H mới đẩy được H₂.',
+            why: 'Kim loại sau H yếu hơn hiđro nên không khử được ion H⁺ thành khí.',
+            result: 'Mg và Zn tác dụng được với HCl loãng; Cu và Ag thì không',
+          },
+          {
+            do: 'Áp dụng quy tắc với muối: kim loại mạnh hơn đẩy kim loại yếu hơn.',
+            why: 'Phản ứng chỉ xảy ra theo chiều kim loại mạnh chiếm chỗ kim loại yếu trong muối.',
+            result: 'Mg và Zn đứng trước Cu nên đẩy được Cu; Ag đứng sau nên không',
+          },
+        ],
+        answer:
+          'Mg và Zn tác dụng được với HCl loãng và cũng là hai kim loại đẩy được Cu ra khỏi dung dịch CuSO₄. Cu và Ag không làm được cả hai việc.',
+        takeaway:
+          'Một dãy hoạt động trả lời được cả hai loại câu hỏi. Mốc H chia dãy làm hai nửa cho câu axit, còn vị trí tương đối giữa hai kim loại giải quyết câu muối.',
+      },
+      {
+        id: 'ex.ino.identify',
+        patternId: 'ino.identify',
+        title: 'Chọn thuốc thử nhận biết',
+        problem:
+          'Có ba dung dịch không màu đựng riêng biệt: NaCl, Na₂SO₄ và NaOH. Hãy nêu cách nhận biết ba dung dịch chỉ bằng hai thuốc thử.',
+        steps: [
+          {
+            do: 'Tìm chất có tính chất khác hẳn hai chất còn lại.',
+            why: 'Tách được một chất ra trước sẽ giảm bài toán từ ba xuống hai, đơn giản hơn nhiều.',
+            result: 'NaOH là bazơ, hai chất kia là muối trung tính',
+          },
+          {
+            do: 'Dùng quỳ tím để tách NaOH ra.',
+            why: 'Quỳ tím cho dấu hiệu quan sát được ngay và chỉ NaOH làm nó hóa xanh.',
+            result: 'Quỳ hóa xanh ⟹ NaOH; hai mẫu còn lại quỳ không đổi màu',
+          },
+          {
+            do: 'Chọn thuốc thử phân biệt hai muối còn lại dựa vào gốc axit.',
+            why: 'Hai muối cùng cation Na⁺ nên chỉ có thể phân biệt qua anion Cl⁻ và SO₄²⁻.',
+            result: 'Dùng BaCl₂: chỉ Na₂SO₄ cho kết tủa trắng BaSO₄',
+          },
+          {
+            do: 'Chốt lại quy trình theo thứ tự thực hiện.',
+            why: 'Câu trả lời của dạng bài này là một quy trình, nên phải trình bày theo đúng trình tự làm.',
+            result: 'Quỳ tím trước, BaCl₂ sau',
+          },
+        ],
+        answer:
+          'Dùng quỳ tím nhận ra NaOH (hóa xanh); hai mẫu còn lại thử với BaCl₂, mẫu cho kết tủa trắng là Na₂SO₄, mẫu không hiện tượng là NaCl.',
+        takeaway:
+          'Bài nhận biết luôn giải theo chiến lược chia đôi: tìm tính chất tách được nhiều mẫu nhất trước, rồi mới đi vào chi tiết. Thử ngẫu nhiên từng cặp là cách tốn thuốc thử nhất.',
+      },
+    ],
+    wrongTurn: {
+      problem: 'Cho Cu vào dung dịch HCl loãng. Viết phương trình phản ứng xảy ra.',
+      attempt: [
+        'Cu là kim loại, HCl là axit.',
+        'Kim loại tác dụng với axit tạo muối và giải phóng khí hiđro.',
+        'Phương trình: Cu + 2HCl → CuCl₂ + H₂↑.',
+      ],
+      brokeAtStep: 2,
+      diagnosis:
+        'Bước 2 áp dụng quy tắc "kim loại tác dụng với axit" như một quy tắc phổ quát, trong khi nó chỉ đúng với kim loại đứng TRƯỚC hiđro trong dãy hoạt động. Cu đứng sau H nên không khử được ion H⁺, và phản ứng không xảy ra. Lời giải sai này trông rất chuẩn về hình thức — phương trình cân bằng đúng, sản phẩm hợp lý — nên nó chỉ bị phát hiện nếu người làm có thói quen kiểm tra vị trí kim loại trước khi viết phương trình.',
+      fix: 'Từ bước 2: kiểm tra vị trí kim loại so với H trước. Cu đứng sau H nên không có phản ứng. Cu chỉ tan trong axit có tính oxi hóa mạnh như HNO₃ hoặc H₂SO₄ đặc nóng, và khi đó sản phẩm khí không phải H₂.',
+    },
+  },
+  {
+    topicId: 'science.chemistry.organic',
+    section: 'science',
+    minutes: 40,
+    hook: 'Hóa hữu cơ chiếm khoảng 6 câu của chủ đề Hóa học, nhiều nhất trong ba chuyên đề. Điểm mấu chốt: hóa hữu cơ không phải học thuộc từng chất mà học theo NHÓM CHỨC — nhận ra nhóm chức là biết ngay chất đó phản ứng với gì.',
+    build: [
+      {
+        idea: 'Nhóm chức quyết định tính chất hóa học, mạch cacbon chỉ quyết định tính chất vật lý.',
+        explain:
+          'Mọi ancol đều tác dụng với Na, mọi axit cacboxylic đều làm quỳ hóa đỏ, bất kể mạch dài ngắn. Nhận ra nhóm chức là biết trọn bộ phản ứng của chất.',
+        check: 'Chất có nhóm –COOH thì phản ứng được với những gì?',
+        checkAnswer: 'Với bazơ, với kim loại trước H, với ancol tạo este, và làm quỳ hóa đỏ.',
+      },
+      {
+        idea: 'Phản ứng este hóa là phản ứng thuận nghịch giữa axit và ancol.',
+        explain:
+          'Axit cộng ancol cho este và nước, có xúc tác axit đặc. Vì thuận nghịch nên hiệu suất không bao giờ đạt 100%, và đề rất hay hỏi về hiệu suất.',
+        check: 'Sản phẩm của phản ứng giữa CH₃COOH và C₂H₅OH là gì?',
+        checkAnswer: 'Este CH₃COOC₂H₅ và nước.',
+      },
+      {
+        idea: 'Phản ứng cộng chỉ xảy ra ở liên kết bội, phản ứng thế xảy ra ở liên kết đơn.',
+        explain:
+          'Anken và ankin có liên kết đôi hoặc ba nên tham gia phản ứng cộng và làm mất màu nước brom. Ankan chỉ có liên kết đơn nên chỉ tham gia phản ứng thế.',
+        check: 'Chất nào làm mất màu dung dịch nước brom: etan hay etilen?',
+        checkAnswer: 'Etilen — có liên kết đôi nên tham gia phản ứng cộng.',
+      },
+    ],
+    examples: [
+      {
+        id: 'ex.org.group',
+        patternId: 'org.group',
+        title: 'Từ nhóm chức suy ra tính chất',
+        problem:
+          'Cho ba chất: C₂H₅OH, CH₃COOH và CH₄. Chất nào tác dụng được với Na, chất nào làm quỳ tím hóa đỏ, và chất nào không phản ứng với cả hai?',
+        steps: [
+          {
+            do: 'Xác định nhóm chức của từng chất.',
+            why: 'Tính chất hóa học do nhóm chức quyết định, nên đây luôn là bước đầu tiên của mọi bài hữu cơ.',
+            result: 'C₂H₅OH có nhóm –OH · CH₃COOH có nhóm –COOH · CH₄ không có nhóm chức',
+          },
+          {
+            do: 'Tra tính chất đặc trưng của từng nhóm chức.',
+            why: 'Mỗi nhóm chức có một bộ phản ứng cố định, dùng chung cho mọi chất mang nhóm đó.',
+            result: '–OH tác dụng Na · –COOH tác dụng Na, bazơ và làm quỳ hóa đỏ',
+          },
+          {
+            do: 'Đối chiếu với từng câu hỏi của đề.',
+            why: 'Đề hỏi ba việc khác nhau, mỗi việc ứng với một tính chất vừa liệt kê.',
+            result:
+              'Tác dụng Na: cả C₂H₅OH và CH₃COOH · Làm quỳ đỏ: chỉ CH₃COOH · Không phản ứng gì: CH₄',
+          },
+        ],
+        answer:
+          'C₂H₅OH và CH₃COOH đều tác dụng với Na; chỉ CH₃COOH làm quỳ tím hóa đỏ; CH₄ không phản ứng với cả hai.',
+        takeaway:
+          'Ancol và axit đều tác dụng với Na vì cùng có hiđro linh động, nhưng chỉ axit đủ mạnh để làm đổi màu quỳ. Đó là điểm phân biệt hai nhóm chức này.',
+      },
+      {
+        id: 'ex.org.ester',
+        patternId: 'org.ester',
+        title: 'Phản ứng este hóa có hiệu suất',
+        problem:
+          'Đun 0,1 mol CH₃COOH với 0,1 mol C₂H₅OH có H₂SO₄ đặc làm xúc tác, hiệu suất phản ứng đạt 60%. Tính khối lượng este thu được. Biết CH₃COOC₂H₅ có M = 88.',
+        steps: [
+          {
+            do: 'Viết phương trình phản ứng este hóa.',
+            why: 'Tỉ lệ mol lấy từ hệ số phương trình, và ở đây tỉ lệ là 1 : 1 : 1.',
+            result: 'CH₃COOH + C₂H₅OH ⇌ CH₃COOC₂H₅ + H₂O',
+          },
+          {
+            do: 'Xác định chất hết trước theo lý thuyết.',
+            why: 'Hiệu suất được tính trên lượng sản phẩm lý thuyết, nên phải có con số lý thuyết trước.',
+            result: 'Hai chất bằng nhau và tỉ lệ 1 : 1 ⟹ lý thuyết thu 0,1 mol este',
+          },
+          {
+            do: 'Nhân lượng lý thuyết với hiệu suất.',
+            why: 'Hiệu suất là phần trăm của lượng lý thuyết thực sự chuyển thành sản phẩm.',
+            result: 'n(este thực tế) = 0,1 × 0,6 = 0,06 mol',
+          },
+          {
+            do: 'Đổi số mol este ra khối lượng.',
+            why: 'Đề hỏi khối lượng nên bước cuối là nhân với khối lượng mol.',
+            result: 'm = 0,06 × 88 = 5,28 g',
+          },
+        ],
+        answer: 'Khối lượng este thu được là 5,28 g.',
+        takeaway:
+          'Bài có hiệu suất luôn đi hai nhịp: tính lượng lý thuyết trước, rồi mới nhân hiệu suất. Nhân hiệu suất vào dữ kiện đầu vào ngay từ đầu sẽ cho kết quả khác và sai.',
+      },
+    ],
+    wrongTurn: {
+      problem:
+        'Cho biết chất nào làm mất màu dung dịch nước brom: C₂H₆ hay C₂H₄? Giải thích lựa chọn.',
+      attempt: [
+        'C₂H₆ có nhiều nguyên tử hiđro hơn C₂H₄.',
+        'Nhiều hiđro hơn nghĩa là hoạt động hóa học mạnh hơn.',
+        'Vậy C₂H₆ làm mất màu nước brom.',
+      ],
+      brokeAtStep: 2,
+      diagnosis:
+        'Bước 2 lấy số lượng nguyên tử hiđro làm thước đo khả năng phản ứng, một tiêu chí hoàn toàn không liên quan. Điều quyết định là LOẠI LIÊN KẾT: C₂H₄ có liên kết đôi nên tham gia phản ứng cộng và làm mất màu brom, còn C₂H₆ chỉ có liên kết đơn nên chỉ phản ứng thế trong điều kiện chiếu sáng. Thực tế, ít hiđro hơn ở đây lại chính là dấu hiệu của liên kết bội — nghĩa là lập luận không những sai tiêu chí mà còn đi ngược đúng chiều.',
+      fix: 'Từ bước 2: đếm liên kết bội thay vì đếm hiđro. Công thức C₂H₄ ứng với anken có một liên kết đôi, nên chính C₂H₄ làm mất màu nước brom. Mẹo nhận ra nhanh: so công thức với ankan tương ứng CₙH₂ₙ₊₂; thiếu hai hiđro là có một liên kết bội.',
+    },
+  },
+  /* ══ KHOA HỌC — SINH HỌC ═══════════════════════════════════════════ */
+  {
+    topicId: 'science.biology.cell',
+    section: 'science',
+    minutes: 35,
+    hook: 'Sinh học tế bào chiếm khoảng 5 câu của chủ đề Sinh học. Đây là chuyên đề có nhiều câu nhận biết nhất trong chủ đề, nên nó là chỗ lấy điểm chắc: một bảng sáu dòng tên bào quan và chức năng đã phủ được phần lớn nhóm câu dễ.',
+    build: [
+      {
+        idea: 'Cấu trúc quyết định chức năng, nên biết bào quan có gì là biết nó làm được gì.',
+        explain:
+          'Ti thể có màng trong gấp nếp để tăng diện tích cho chuỗi chuyền electron; lizôxôm có màng dày để giữ enzim thủy phân không rò ra tế bào chất. Mỗi đặc điểm cấu trúc phục vụ một chức năng.',
+        check: 'Vì sao màng trong ti thể lại gấp nếp nhiều?',
+        checkAnswer: 'Để tăng diện tích chứa các phức hệ của chuỗi chuyền electron.',
+      },
+      {
+        idea: 'Mọi câu vận chuyển qua màng chỉ hỏi hai điều: xuôi hay ngược gradien, và có tốn ATP không.',
+        explain:
+          'Xuôi gradien và không tốn ATP là thụ động; ngược gradien và tốn ATP là chủ động. Việc có dùng prôtêin màng hay không thì không phân biệt được hai loại.',
+        check: 'Khuếch tán tăng cường cần prôtêin kênh — vậy nó là chủ động hay thụ động?',
+        checkAnswer: 'Thụ động, vì vẫn đi xuôi gradien và không tốn ATP.',
+      },
+      {
+        idea: 'Nguyên phân giữ nguyên bộ nhiễm sắc thể, giảm phân chia đôi bộ nhiễm sắc thể.',
+        explain:
+          'Nguyên phân có một lần nhân đôi và một lần phân chia; giảm phân có một lần nhân đôi nhưng hai lần phân chia. Đó là toàn bộ lý do bộ nhiễm sắc thể giảm một nửa.',
+        check: 'Vì sao giảm phân làm bộ nhiễm sắc thể giảm một nửa?',
+        checkAnswer: 'Vì có hai lần phân chia nhưng chỉ một lần nhân đôi ADN.',
+      },
+    ],
+    examples: [
+      {
+        id: 'ex.bio.mitosis',
+        patternId: 'bio.mitosis',
+        title: 'Tính nguyên liệu môi trường cung cấp cho nguyên phân',
+        problem:
+          'Một tế bào có bộ nhiễm sắc thể 2n = 8 trải qua 4 lần nguyên phân liên tiếp. Tính tổng số nhiễm sắc thể đơn mà môi trường nội bào phải cung cấp.',
+        steps: [
+          {
+            do: 'Tính số tế bào con sau bốn lần phân chia.',
+            why: 'Mỗi lần nguyên phân nhân đôi số tế bào, nên sau k lần có 2^k tế bào.',
+            result: '2⁴ = 16 tế bào con',
+          },
+          {
+            do: 'Xác định phần nhiễm sắc thể thực sự do môi trường cung cấp.',
+            why: 'Tế bào mẹ đã mang sẵn một bộ nhiễm sắc thể; môi trường chỉ cung cấp cho phần tăng thêm.',
+            result: 'Số bộ tăng thêm = 16 − 1 = 15 bộ',
+          },
+          {
+            do: 'Nhân số bộ tăng thêm với số nhiễm sắc thể mỗi bộ.',
+            why: 'Mỗi bộ có 2n = 8 nhiễm sắc thể đơn, nên đây là phép nhân cuối cùng.',
+            result: '15 × 8 = 120 nhiễm sắc thể đơn',
+          },
+          {
+            do: 'Kiểm tra bằng cách so với tổng số nhiễm sắc thể trong tất cả tế bào con.',
+            why: 'Tổng trong 16 tế bào là 128; hiệu 128 − 120 = 8 đúng bằng bộ ban đầu, nên kết quả nhất quán.',
+            result: '128 − 120 = 8 = 2n ⟹ hợp lý',
+          },
+        ],
+        answer: 'Môi trường nội bào phải cung cấp 120 nhiễm sắc thể đơn.',
+        takeaway:
+          'Công thức là (2^k − 1) × 2n chứ không phải 2^k × 2n. Bước kiểm tra ở cuối — hiệu phải đúng bằng một bộ — bắt được lỗi này ngay mà không cần nhớ công thức.',
+      },
+      {
+        id: 'ex.bio.transport',
+        patternId: 'bio.transport',
+        title: 'Phân biệt vận chuyển chủ động và thụ động',
+        problem:
+          'Tế bào rễ cây hút ion khoáng từ đất, dù nồng độ ion trong tế bào đã cao hơn trong đất. Hãy cho biết đây là kiểu vận chuyển nào và giải thích.',
+        steps: [
+          {
+            do: 'Xác định chiều di chuyển so với gradien nồng độ.',
+            why: 'Chiều đi là dấu hiệu bản chất phân biệt hai kiểu vận chuyển, phải xác định trước mọi thứ khác.',
+            result: 'Ion đi từ nơi nồng độ thấp (đất) vào nơi nồng độ cao (tế bào) — ngược gradien',
+          },
+          {
+            do: 'Suy ra yêu cầu về năng lượng.',
+            why: 'Đi ngược gradien không thể tự xảy ra, nên bắt buộc phải có nguồn năng lượng đẩy.',
+            result: 'Phải tiêu tốn ATP',
+          },
+          {
+            do: 'Gọi tên kiểu vận chuyển theo hai dấu hiệu vừa xác định.',
+            why: 'Hai dấu hiệu ngược gradien và tốn ATP cùng chỉ về đúng một kiểu duy nhất.',
+            result: 'Vận chuyển chủ động qua bơm prôtêin trên màng',
+          },
+        ],
+        answer:
+          'Đây là vận chuyển chủ động: ion đi ngược chiều gradien nồng độ nhờ bơm prôtêin và tiêu tốn ATP.',
+        takeaway:
+          'Câu hỏi này luôn giải được bằng đúng một phép so sánh nồng độ trong với ngoài. Việc có prôtêin tham gia hay không hoàn toàn không giúp phân biệt.',
+      },
+    ],
+    wrongTurn: {
+      problem:
+        'Một tế bào 2n = 10 đang ở kì giữa của nguyên phân. Tính số crômatit có trong tế bào lúc đó.',
+      attempt: [
+        'Tế bào có 2n = 10 nhiễm sắc thể.',
+        'Kì giữa là lúc nhiễm sắc thể xếp thành hàng ở mặt phẳng xích đạo.',
+        'Số crômatit bằng số nhiễm sắc thể, tức 10 crômatit.',
+      ],
+      brokeAtStep: 3,
+      diagnosis:
+        'Bước 3 đồng nhất số crômatit với số nhiễm sắc thể. Ở kì giữa, ADN đã nhân đôi từ kì trung gian nhưng tâm động chưa tách, nên mỗi nhiễm sắc thể đang ở dạng KÉP gồm hai crômatit dính nhau. Số crômatit vì thế gấp đôi số nhiễm sắc thể. Lỗi này đến từ việc nhớ các kì phân bào như một chuỗi tên gọi mà không gắn với trạng thái vật chất của nhiễm sắc thể ở từng kì.',
+      fix: 'Từ bước 3: kiểm tra tâm động đã tách chưa. Chưa tách thì nhiễm sắc thể còn kép, số crômatit = 2 × 10 = 20. Từ kì sau trở đi tâm động tách, nhiễm sắc thể thành đơn và số crômatit bằng 0.',
+    },
+  },
+  {
+    topicId: 'science.biology.genetics',
+    section: 'science',
+    minutes: 45,
+    hook: 'Di truyền học chiếm khoảng 6–7 câu của chủ đề Sinh học, nhiều nhất trong ba chuyên đề, và tập trung phần lớn câu vận dụng cao. Đây là chuyên đề quyết định điểm chủ đề Sinh học, nhưng bù lại nó có quy trình rõ ràng nhất: mọi bài lai đều đi qua đúng bốn tầng.',
+    build: [
+      {
+        idea: 'Nguyên tắc bổ sung A–T và G–X là gốc của mọi phép tính trên ADN.',
+        explain:
+          'Từ hai đẳng thức A = T, G = X suy ra %A + %G = 50%. Chỉ cần một dữ kiện phần trăm là tính được cả bốn loại nuclêôtit, rồi mọi đại lượng khác chỉ còn là thay số.',
+        check: 'Gen có A chiếm 30% thì G chiếm bao nhiêu phần trăm?',
+        checkAnswer: 'G chiếm 20%, vì %A + %G = 50%.',
+      },
+      {
+        idea: 'Bài lai luôn đi một chiều: kiểu gen bố mẹ → giao tử → tổ hợp → kiểu hình.',
+        explain:
+          'Nhảy bước nào cũng cho ra một tỉ lệ trông hợp lý và sai. Viết đủ bốn tầng ra giấy tốn hai mươi giây và loại bỏ gần hết rủi ro.',
+        check: 'Cơ thể Aa cho những loại giao tử nào với tỉ lệ ra sao?',
+        checkAnswer: 'Hai loại A và a, mỗi loại 50%.',
+      },
+      {
+        idea: 'Các cặp gen phân li độc lập thì tính riêng từng cặp rồi NHÂN kết quả.',
+        explain:
+          'Xác suất của các sự kiện độc lập được nhân với nhau. Cách này nhanh hơn kẻ bảng 16 ô và ít sai hơn nhiều khi số cặp gen tăng lên.',
+        check: 'AaBb × AaBb cho tỉ lệ kiểu hình bao nhiêu nếu trội hoàn toàn?',
+        checkAnswer: '(3:1) × (3:1) = 9 : 3 : 3 : 1.',
+      },
+    ],
+    examples: [
+      {
+        id: 'ex.bio.population',
+        patternId: 'bio.population',
+        title: 'Bài quần thể cân bằng di truyền',
+        problem:
+          'Một quần thể ở trạng thái cân bằng di truyền có 16% cá thể mang kiểu hình lặn. Tính tần số hai alen và tỉ lệ cá thể dị hợp trong quần thể.',
+        steps: [
+          {
+            do: 'Nhận ra tỉ lệ kiểu hình lặn chính là q².',
+            why: 'Chỉ kiểu gen đồng hợp lặn mới biểu hiện kiểu hình lặn, nên số liệu đề cho tương ứng trực tiếp với q².',
+            result: 'q² = 0,16',
+          },
+          {
+            do: 'Khai căn để có tần số alen lặn.',
+            why: 'Đây là bước bị bỏ qua nhiều nhất; lấy thẳng 0,16 làm tần số alen là sai toàn bộ các câu sau.',
+            result: 'q = √0,16 = 0,4',
+          },
+          {
+            do: 'Tính tần số alen trội từ điều kiện tổng bằng 1.',
+            why: 'Hai alen chiếm trọn vốn gen của locut nên tần số của chúng luôn cộng lại bằng 1.',
+            result: 'p = 1 − 0,4 = 0,6',
+          },
+          {
+            do: 'Tính tỉ lệ dị hợp bằng công thức 2pq.',
+            why: 'Hệ số 2 vì có hai cách tạo thể dị hợp: alen trội từ bố hoặc từ mẹ.',
+            result: '2 × 0,6 × 0,4 = 0,48 tức 48%',
+          },
+        ],
+        answer: 'Tần số alen trội p = 0,6 và alen lặn q = 0,4; tỉ lệ cá thể dị hợp là 48%.',
+        takeaway:
+          'Hai chỗ mất điểm cố định của dạng bài này: quên khai căn ở bước 2, và quên hệ số 2 ở bước 4. Kiểm tra nhanh bằng cách cộng p² + 2pq + q² xem có bằng 1 không.',
+      },
+      {
+        id: 'ex.bio.cross',
+        patternId: 'bio.cross',
+        title: 'Lai hai cặp tính trạng phân li độc lập',
+        problem:
+          'Ở đậu Hà Lan, alen A quy định hạt vàng trội hoàn toàn so với a quy định hạt xanh; alen B quy định vỏ trơn trội hoàn toàn so với b quy định vỏ nhăn. Hai cặp gen phân li độc lập. Cho cây AaBb tự thụ phấn, tính tỉ lệ cây hạt vàng vỏ nhăn ở đời con.',
+        steps: [
+          {
+            do: 'Tách bài toán thành hai phép lai một cặp tính trạng.',
+            why: 'Phân li độc lập cho phép xét riêng từng cặp; đây là điều làm bài toán nhẹ đi rất nhiều.',
+            result: 'Cặp 1: Aa × Aa · Cặp 2: Bb × Bb',
+          },
+          {
+            do: 'Tính tỉ lệ kiểu hình mong muốn cho từng cặp riêng.',
+            why: 'Mỗi phép lai dị hợp tự thụ cho tỉ lệ 3 trội : 1 lặn, một kết quả quen thuộc dùng lại được.',
+            result: 'Hạt vàng (A-): 3/4 · Vỏ nhăn (bb): 1/4',
+          },
+          {
+            do: 'Nhân hai xác suất với nhau.',
+            why: 'Hai cặp gen độc lập nên xác suất đồng thời xảy ra bằng tích hai xác suất riêng.',
+            result: '3/4 × 1/4 = 3/16',
+          },
+          {
+            do: 'Đối chiếu với tỉ lệ tổng quát 9 : 3 : 3 : 1 để kiểm tra.',
+            why: 'Nhóm A-bb đúng bằng 3 phần trong tổng 16 phần, khớp với kết quả vừa tính.',
+            result: '3/16 ⟹ nhất quán',
+          },
+        ],
+        answer: 'Tỉ lệ cây hạt vàng vỏ nhăn ở đời con là 3/16.',
+        takeaway:
+          'Nhân xác suất từng cặp nhanh hơn kẻ bảng nhiều, và càng nhiều cặp gen thì lợi thế càng lớn. Bảng 16 ô chỉ nên dùng để kiểm tra lại kết quả.',
+      },
+    ],
+    wrongTurn: {
+      problem:
+        'Một quần thể cân bằng di truyền có 9% cá thể mang kiểu hình lặn. Tính tần số alen lặn của quần thể.',
+      attempt: [
+        'Kiểu hình lặn chiếm 9% quần thể.',
+        'Kiểu hình lặn do alen lặn quy định.',
+        'Vậy tần số alen lặn là 0,09.',
+      ],
+      brokeAtStep: 3,
+      diagnosis:
+        'Bước 3 lấy thẳng tỉ lệ KIỂU HÌNH lặn làm tần số ALEN lặn. Hai đại lượng này khác nhau: tỉ lệ kiểu hình lặn là q², còn tần số alen là q, nên phải khai căn. Lỗi này đặc biệt khó tự phát hiện vì cả hai đều là số nhỏ hơn 1 và đều liên quan tới tính trạng lặn — không có gì trong con số 0,09 gợi rằng nó chưa phải kết quả cuối. Hệ quả là mọi phép tính sau đó, kể cả tỉ lệ dị hợp, đều lệch.',
+      fix: 'Từ bước 3: q² = 0,09 nên q = √0,09 = 0,3. Cách tự kiểm: tính ngược p² + 2pq + q² với p = 0,7 và q = 0,3, tổng phải đúng bằng 1.',
+    },
+  },
+  {
+    topicId: 'science.biology.organism',
+    section: 'science',
+    minutes: 40,
+    hook: 'Sinh học cơ thể và tiến hóa chiếm khoảng 5 câu của chủ đề Sinh học. Chuyên đề này ít công thức nhất nhưng nhiều cơ chế nhất, nên cách học hiệu quả là hiểu một nguyên lý chung rồi suy ra các trường hợp, thay vì học thuộc từng cơ chế rời.',
+    build: [
+      {
+        idea: 'Mọi cơ chế điều hòa nội môi đều là vòng ngược âm tính: lệch đi thì cơ thể kéo ngược lại.',
+        explain:
+          'Bộ phận tiếp nhận phát hiện sai lệch, bộ phận điều khiển phát tín hiệu, bộ phận thực hiện kéo chỉ số về mức chuẩn. Biết hướng lệch là suy ra được toàn bộ chuỗi phản ứng.',
+        check: 'Đường huyết tăng cao thì cơ thể tiết hoocmôn nào?',
+        checkAnswer: 'Insulin — để đưa glucôzơ vào tế bào và hạ đường huyết.',
+      },
+      {
+        idea: 'Mỗi đặc điểm thích nghi trả lời một sức ép cụ thể của môi trường.',
+        explain:
+          'Hỏi "đặc điểm này giải quyết vấn đề gì" là ra đáp án mà không cần thuộc ví dụ. Túi khí của chim giải quyết nhu cầu oxi khi bay; con đường C₄ giải quyết hô hấp sáng khi trời nóng.',
+        check: 'Lá biến thành gai ở cây xương rồng giải quyết vấn đề gì?',
+        checkAnswer: 'Giảm thoát hơi nước trong môi trường khô hạn.',
+      },
+      {
+        idea: 'Chọn lọc tự nhiên định hướng tiến hóa; đột biến chỉ cung cấp nguyên liệu.',
+        explain:
+          'Đột biến xảy ra vô hướng và ngẫu nhiên. Chỉ chọn lọc tự nhiên mới giữ lại cái thích nghi và loại bỏ cái kém thích nghi, nên chỉ nó quy định chiều của tiến hóa.',
+        check: 'Nhân tố nào tác động mạnh nhất ở quần thể có kích thước nhỏ?',
+        checkAnswer: 'Các yếu tố ngẫu nhiên, tức biến động di truyền.',
+      },
+    ],
+    examples: [
+      {
+        id: 'ex.bio.homeostasis',
+        patternId: 'bio.homeostasis',
+        title: 'Truy chuỗi điều hòa nội môi',
+        problem:
+          'Sau khi vận động mạnh và ra nhiều mồ hôi, áp suất thẩm thấu của máu tăng lên. Hãy mô tả cơ chế cơ thể đưa áp suất thẩm thấu trở về mức bình thường.',
+        steps: [
+          {
+            do: 'Ghi rõ chỉ số đang lệch và hướng lệch.',
+            why: 'Toàn bộ chuỗi phản ứng của cơ thể chỉ nhằm đảo ngược đúng hướng lệch này, nên xác định nó là xác định luôn chiều của mọi bước sau.',
+            result: 'Áp suất thẩm thấu máu TĂNG do mất nước',
+          },
+          {
+            do: 'Xác định bộ phận tiếp nhận và tín hiệu được phát ra.',
+            why: 'Vòng điều hòa luôn bắt đầu bằng một bộ phận cảm nhận sai lệch rồi phát tín hiệu.',
+            result: 'Vùng dưới đồi nhận biết và kích thích tuyến yên tiết ADH',
+          },
+          {
+            do: 'Truy tới cơ quan đích và tác động cụ thể.',
+            why: 'Phương án nhiễu thường đúng tên hoocmôn nhưng sai cơ quan đích hoặc sai chiều tác động.',
+            result: 'ADH làm ống góp của thận tăng tái hấp thu nước',
+          },
+          {
+            do: 'Kiểm tra kết quả có kéo chỉ số về mức chuẩn không.',
+            why: 'Nếu kết luận làm chỉ số lệch thêm thì chắc chắn đã chọn nhầm chiều ở đâu đó.',
+            result: 'Giữ nước lại ⟹ máu loãng ra ⟹ áp suất thẩm thấu giảm về bình thường',
+          },
+        ],
+        answer:
+          'Vùng dưới đồi phát hiện áp suất thẩm thấu tăng, kích thích tuyến yên tiết ADH; ADH làm thận tăng tái hấp thu nước, nước tiểu cô đặc lại và áp suất thẩm thấu máu trở về mức bình thường. Đồng thời trung khu khát được kích thích gây cảm giác khát.',
+        takeaway:
+          'Bước kiểm tra cuối cùng là công cụ mạnh nhất của chuyên đề: nếu chuỗi bạn mô tả làm chỉ số lệch thêm thay vì kéo về, chắc chắn có một mắt xích bị đảo chiều.',
+      },
+      {
+        id: 'ex.bio.ecosystem',
+        patternId: 'bio.ecosystem',
+        title: 'Dòng năng lượng qua các bậc dinh dưỡng',
+        problem:
+          'Trong một hệ sinh thái, sinh vật sản xuất tích lũy được 10⁶ kcal. Biết hiệu suất sinh thái giữa các bậc dinh dưỡng liên tiếp đều bằng 10%. Tính năng lượng tích lũy ở bậc dinh dưỡng thứ tư.',
+        steps: [
+          {
+            do: 'Đánh số các bậc dinh dưỡng, bắt đầu từ sinh vật sản xuất là bậc 1.',
+            why: 'Đếm nhầm bậc đầu tiên làm lệch kết quả đúng một bậc mười, và đề luôn có sẵn phương án ứng với lỗi đó.',
+            result: 'Bậc 1: sinh vật sản xuất, 10⁶ kcal',
+          },
+          {
+            do: 'Đếm số lần chuyển bậc để tới bậc đề hỏi.',
+            why: 'Số lần nhân hiệu suất bằng số lần CHUYỂN bậc, tức số thứ tự bậc đích trừ đi 1.',
+            result: 'Từ bậc 1 tới bậc 4 có 3 lần chuyển',
+          },
+          {
+            do: 'Nhân năng lượng ban đầu với hiệu suất đúng số lần vừa đếm.',
+            why: 'Mỗi lần chuyển bậc chỉ giữ lại 10%, nên ba lần chuyển ứng với nhân 0,1 ba lần.',
+            result: '10⁶ × 0,1³ = 10⁶ × 10⁻³ = 10³ kcal',
+          },
+        ],
+        answer: 'Năng lượng tích lũy ở bậc dinh dưỡng thứ tư là 10³ = 1000 kcal.',
+        takeaway:
+          'Đếm bậc trên đầu ngón tay trước khi bấm máy. Sai một bậc làm kết quả lệch mười lần, và cả hai đáp án lệch đều nằm sẵn trong bốn phương án.',
+      },
+    ],
+    wrongTurn: {
+      problem:
+        'Giải thích vì sao quần thể có kích thước nhỏ dễ mất đi một alen hơn quần thể lớn, và nhân tố nào chịu trách nhiệm.',
+      attempt: [
+        'Quần thể nhỏ có ít cá thể nên ít đột biến hơn.',
+        'Ít đột biến nghĩa là ít alen mới được tạo ra.',
+        'Vậy chọn lọc tự nhiên là nhân tố làm mất alen ở quần thể nhỏ.',
+      ],
+      brokeAtStep: 3,
+      diagnosis:
+        'Bước 3 quy trách nhiệm cho chọn lọc tự nhiên, trong khi cơ chế thật ở đây là các yếu tố ngẫu nhiên. Chọn lọc tự nhiên loại bỏ alen dựa trên giá trị thích nghi — tức có hướng và có lý do. Ở quần thể nhỏ, một alen có thể biến mất hoàn toàn do một biến cố tình cờ như bão hay dịch bệnh, không liên quan gì tới việc nó tốt hay xấu. Điều phân biệt hai nhân tố là CÓ HƯỚNG hay VÔ HƯỚNG, và cụm từ "kích thước quần thể nhỏ" trong đề chính là tín hiệu chỉ thẳng tới các yếu tố ngẫu nhiên.',
+      fix: 'Từ bước 3: nhận ra cụm "quần thể có kích thước nhỏ" là dấu hiệu của các yếu tố ngẫu nhiên. Quần thể càng nhỏ thì sai lệch ngẫu nhiên giữa các thế hệ càng lớn, nên một alen dễ biến mất hoặc trở nên phổ biến mà không phụ thuộc giá trị thích nghi của nó.',
+    },
+  },
 ];
 
 export const LESSON_BY_TOPIC = new Map(LESSONS.map((l) => [l.topicId, l]));
