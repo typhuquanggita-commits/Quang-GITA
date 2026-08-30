@@ -55,18 +55,17 @@ Học thuộc theo cặp **dạng bài – công thức**, không học rời.
 |---:|---|---|
 | 1 | Tính nhanh nhờ thừa số chung | Nhân một số với một tổng, một hiệu |
 | 2 | Tổng dãy số cách đều | Công thức tổng dãy cách đều |
-| 3 | Tính nhanh biểu thức phân số | Cộng phân số cùng mẫu, phân số đảo ngược |
+| 3 | Tính nhanh biểu thức số thập phân | Tính chất phép tính với số thập phân |
 | 4 | Tính nhanh tích, thương nhiều bước | Tính chất giao hoán, kết hợp của phép nhân |
 | 5 | Tìm x qua hai bước | Quan hệ các thành phần phép tính, thứ tự thực hiện |
-| 6 | Tính ngược từ cuối | Phân số của một số; phép chia; tính ngược |
+| 6 | Nhân một số với một tổng | Tính chất phân phối của phép nhân với phép cộng |
 | 7 | Tổng dãy cộng trừ xen kẽ | Ghép cặp, tính chất kết hợp |
 | 8 | Tìm x trong phép tính một bước | Quan hệ giữa các thành phần của phép tính |
-| 9 | Tìm x nhiều bước có ngoặc | Thứ tự thực hiện phép tính, quan hệ thành phần |
+| 9 | Tính nhanh biểu thức phân số | Cộng phân số cùng mẫu, phân số đảo ngược |
 | 10 | Bốn phép tính với số tự nhiên | Kĩ thuật đặt tính cộng, trừ, nhân, chia |
 | 11 | Nhân, chia số tự nhiên | Kĩ thuật đặt tính nhân, chia |
-| 12 | Tổng các tích có thừa số chung | Nhân một số với một tổng, tổng dãy cách đều |
+| 12 | Tìm x nhiều bước có ngoặc | Thứ tự thực hiện phép tính, quan hệ thành phần |
 | 13 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân |
-| 14 | Tính nhanh nhờ thừa số 0 | Tính chất nhân với 0, phép trừ hai số bằng nhau |
 
 ---
 
@@ -92,18 +91,18 @@ Trước khi tra bảng, đi qua cây quyết định đọc vị của nhóm ch
 |---|---|---|---|
 | Tính nhanh nhờ thừa số chung | Hai tích cộng hoặc trừ nhau, có chung một thừa số | Đặt thừa số chung ra ngoài rồi tính trong ngoặc | Sau khi đặt thừa số chung, tổng trong ngoặc thường tròn 10 hoặc 100. |
 | Tổng dãy số cách đều | Dãy cộng có dấu … và các số cách đều nhau | Đếm số số hạng rồi áp công thức tổng | Ghép cặp đầu – cuối: mọi cặp đều có cùng tổng, chỉ cần nhân với số cặp. |
-| Tính nhanh biểu thức phân số | Các phân số cùng mẫu, tử số cộng lại tròn mẫu | Quan sát tổng tử số; nhận diện cặp phân số đảo ngược | Nếu tổng các tử số bằng mẫu số thì kết quả bằng 1, không cần tính gì thêm. |
+| Tính nhanh biểu thức số thập phân | Các số thập phân cộng lại tròn chục hoặc có thừa số chung | Ghép cặp tròn, đặt thừa số chung | × 4 rồi × 25 là × 100 — chỉ việc dịch dấu phẩy sang phải hai chữ số. |
 | Tính nhanh tích, thương nhiều bước | Tích có thừa số 25, 125, 50, 20; hoặc chia liên tiếp | Ghép cặp cho tích tròn rồi nhân | Chia liên tiếp cho 4 rồi 25 bằng chia cho 100. |
 | Tìm x qua hai bước | x nằm trong một cụm có hai phép tính | Gỡ dần từ phép ngoài cùng vào trong | Thay x tìm được vào đề để thử — nhanh hơn dò lại từng bước. |
-| Tính ngược từ cuối | Đề bán hoặc dùng nhiều lần, lần sau lấy trên **phần còn lại** | Đi ngược từ số cuối, mỗi bước nhân mẫu chia cho phần còn lại | Bán một phần m thì còn (m − 1) phần m — nhân ngược bằng m : (m − 1) cho mỗi lần. |
+| Nhân một số với một tổng | Nhiều dòng hoá đơn dùng chung một đơn giá | Gom số lượng rồi nhân một lần | Chênh lệch tiền = chênh lệch số lượng × đơn giá, không cần tính tổng hai bên. |
 | Tổng dãy cộng trừ xen kẽ | Dấu cộng và trừ xen kẽ đều đặn | Ghép cặp, đếm số cặp, xử lí phần dư | Dãy 1 − 2 + 3 − … với n chẵn bằng −n : 2; với n lẻ bằng (n + 1) : 2. |
 | Tìm x trong phép tính một bước | Có chữ x đứng trong một phép tính | Gọi tên vai trò của x rồi dùng quy tắc tương ứng | Thử lại bằng cách thay x vào đề — mất 3 giây nhưng chắc chắn. |
-| Tìm x nhiều bước có ngoặc | x nằm trong ngoặc, ngoài ngoặc còn phép tính khác | Bóc lớp từ ngoài vào trong | Thay x tìm được vào đề, tính một lượt để thử lại. |
+| Tính nhanh biểu thức phân số | Các phân số cùng mẫu, tử số cộng lại tròn mẫu | Quan sát tổng tử số; nhận diện cặp phân số đảo ngược | Nếu tổng các tử số bằng mẫu số thì kết quả bằng 1, không cần tính gì thêm. |
 | Bốn phép tính với số tự nhiên | Yêu cầu “đặt tính rồi tính” | Đặt tính thẳng cột, tính từ hàng đơn vị | Ước lượng bằng cách làm tròn để phát hiện sai sót về độ lớn. |
 | Nhân, chia số tự nhiên | Yêu cầu “đặt tính rồi tính” với phép nhân, chia | Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ chữ số | Kiểm tra kết quả bằng phép tính ngược: thương × số chia = số bị chia. |
-| Tổng các tích có thừa số chung | Dãy cộng gồm nhiều tích cùng một thừa số | Đặt thừa số chung → tính tổng trong ngoặc bằng công thức | 1 + 2 + … + 100 = 5 050; nhớ vài mốc để nhân ngay. |
+| Tính, so sánh tích bằng kĩ thuật tách – bù | Các thừa số hơn kém nhau rất ít | Quy về số gốc chung, so phần chênh | Với hai tích có tổng hai thừa số bằng nhau, tích nào có hai thừa số gần nhau hơn thì lớn hơn. |
+| Tìm x nhiều bước có ngoặc | x nằm trong ngoặc, ngoài ngoặc còn phép tính khác | Bóc lớp từ ngoài vào trong | Thay x tìm được vào đề, tính một lượt để thử lại. |
 | So sánh biểu thức không tính giá trị | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. |
-| Tính nhanh nhờ thừa số 0 | Trong biểu thức có ngoặc chứa hai số giống nhau trừ nhau | Quét tìm cụm bằng 0 trước khi tính | Nhìn dấu ngoặc trước tiên — bẫy thường nằm ở đó. |
 
 ---
 
@@ -126,20 +125,20 @@ Trả lời được ngay trong 10 giây thì đánh ✔. Phải nghĩ lâu thì
 - [ ] **2.** Em nhớ công thức: Nhân một số với một tổng, một hiệu?
 - [ ] **3.** Em nêu được dấu hiệu nhận biết của dạng “Tổng dãy số cách đều” chứ?
 - [ ] **4.** Em nhớ công thức: Công thức tổng dãy cách đều?
-- [ ] **5.** Em nêu được dấu hiệu nhận biết của dạng “Tính nhanh biểu thức phân số” chứ?
-- [ ] **6.** Em nhớ công thức: Cộng phân số cùng mẫu, phân số đảo ngược?
+- [ ] **5.** Em nêu được dấu hiệu nhận biết của dạng “Tính nhanh biểu thức số thập phân” chứ?
+- [ ] **6.** Em nhớ công thức: Tính chất phép tính với số thập phân?
 - [ ] **7.** Em nêu được dấu hiệu nhận biết của dạng “Tính nhanh tích, thương nhiều bước” chứ?
 - [ ] **8.** Em nhớ công thức: Tính chất giao hoán, kết hợp của phép nhân?
 - [ ] **9.** Em nêu được dấu hiệu nhận biết của dạng “Tìm x qua hai bước” chứ?
 - [ ] **10.** Em nhớ công thức: Quan hệ các thành phần phép tính, thứ tự thực hiện?
-- [ ] **11.** Em nêu được dấu hiệu nhận biết của dạng “Tính ngược từ cuối” chứ?
-- [ ] **12.** Em nhớ công thức: Phân số của một số; phép chia; tính ngược?
+- [ ] **11.** Em nêu được dấu hiệu nhận biết của dạng “Nhân một số với một tổng” chứ?
+- [ ] **12.** Em nhớ công thức: Tính chất phân phối của phép nhân với phép cộng?
 - [ ] **13.** Em nêu được dấu hiệu nhận biết của dạng “Tổng dãy cộng trừ xen kẽ” chứ?
 - [ ] **14.** Em nhớ công thức: Ghép cặp, tính chất kết hợp?
 - [ ] **15.** Em nêu được dấu hiệu nhận biết của dạng “Tìm x trong phép tính một bước” chứ?
 - [ ] **16.** Em nhớ công thức: Quan hệ giữa các thành phần của phép tính?
-- [ ] **17.** Em nêu được dấu hiệu nhận biết của dạng “Tìm x nhiều bước có ngoặc” chứ?
-- [ ] **18.** Em nhớ công thức: Thứ tự thực hiện phép tính, quan hệ thành phần?
+- [ ] **17.** Em nêu được dấu hiệu nhận biết của dạng “Tính nhanh biểu thức phân số” chứ?
+- [ ] **18.** Em nhớ công thức: Cộng phân số cùng mẫu, phân số đảo ngược?
 - [ ] **19.** Em nêu được dấu hiệu nhận biết của dạng “Bốn phép tính với số tự nhiên” chứ?
 - [ ] **20.** Em nhớ công thức: Kĩ thuật đặt tính cộng, trừ, nhân, chia?
 
@@ -155,18 +154,18 @@ Trả lời được ngay trong 10 giây thì đánh ✔. Phải nghĩ lâu thì
 |---:|---|---|
 | 1 | Đặt ra ngoài một số chỉ có ở một tích. | Khoanh thừa số giống nhau ở hai tích trước khi viết dấu ngoặc. |
 | 2 | Lấy số cuối chia khoảng cách làm số số hạng, quên cộng 1. | Viết ra ba số đầu và ba số cuối để kiểm tra khoảng cách rồi mới đếm. |
-| 3 | Quy đồng ngay lập tức mà không quan sát, làm dài dòng. | Cộng nhẩm các tử số trước rồi so với mẫu số. |
+| 3 | Đặt dấu phẩy sai vị trí ở kết quả cuối. | Ước lượng độ lớn kết quả trước, dùng nó kiểm tra vị trí dấu phẩy. |
 | 4 | Nhân lần lượt từ trái sang phải nên số trung gian rất lớn. | Quét cả tích tìm cặp tròn trước khi đặt bút tính. |
 | 5 | Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. | Khoanh tròn cụm chứa x rồi coi cả cụm là một số. |
-| 6 | Lấy cả hai phân số trên số ban đầu rồi cộng lại. | Thử lại theo chiều xuôi — bài này luôn thử lại được. |
+| 6 | Nhân từng dòng rồi cộng, dài và dễ sai ở một dòng nào đó. | Nhìn cột đơn giá trước: có dòng nào trùng đơn giá không? |
 | 7 | Ghép cặp nhưng quên số hạng lẻ còn thừa ở cuối. | Đếm số số hạng trước, xác định chẵn hay lẻ rồi mới ghép cặp. |
 | 8 | Áp dụng nhầm quy tắc của số trừ cho số bị trừ. | Gọi tên x trước (x là số hạng? số bị trừ? thừa số?) rồi mới viết quy tắc. |
-| 9 | Nhân phá ngoặc sai dấu, hoặc gỡ phép trong ngoặc trước. | Ghi rõ từng bước trên một dòng riêng, mỗi dòng chỉ khác dòng trên một phép. |
+| 9 | Quy đồng ngay lập tức mà không quan sát, làm dài dòng. | Cộng nhẩm các tử số trước rồi so với mẫu số. |
 | 10 | Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số. | Đếm trước xem thương có mấy chữ số rồi mới chia. |
 | 11 | Quên viết chữ số 0 ở thương nên thương thiếu chữ số. | Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số. |
-| 12 | Nhân từng tích rồi cộng dồn, rất dài và dễ sai. | Viết lại biểu thức dưới dạng a × (1 + 2 + … + n) trước khi tính. |
-| 13 | Tính hết cả hai vế, vừa lâu vừa dễ sai. | Dùng bút gạch bỏ phần giống nhau ở hai vế trước khi so sánh. |
-| 14 | Lao vào nhân từng cặp số lớn rồi mới phát hiện kết quả bằng 0. | Đọc hết biểu thức một lượt, khoanh các cụm giống nhau bị trừ cho nhau. |
+| 12 | Nhân hết ra rồi mới so sánh — số lớn, dễ sai và mất thời gian. | Viết mỗi thừa số dưới dạng “số gốc cộng hoặc trừ mấy đơn vị”. |
+| 13 | Nhân phá ngoặc sai dấu, hoặc gỡ phép trong ngoặc trước. | Ghi rõ từng bước trên một dòng riêng, mỗi dòng chỉ khác dòng trên một phép. |
+| 14 | Tính hết cả hai vế, vừa lâu vừa dễ sai. | Dùng bút gạch bỏ phần giống nhau ở hai vế trước khi so sánh. |
 
 ---
 

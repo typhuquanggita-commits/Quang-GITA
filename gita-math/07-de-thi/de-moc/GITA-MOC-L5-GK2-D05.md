@@ -30,57 +30,58 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Trả lời nhanh, mỗi ý không quá 20 giây.
 
-a) Số liền trước và số liền sau của 4 101 171 là những số nào?
-b) Làm tròn 6 840 887 đến hàng nghìn.
-c) 2 559 526 … 2 562 572
-d) Chữ số hàng đơn vị của số 2 477 895 có giá trị bằng bao nhiêu?
-e) Chữ số hàng triệu của số 5 138 285 có giá trị bằng bao nhiêu?
-f) 1 314 353 … 1 310 383
+a) Chữ số hàng chục của số 1 624 331 có giá trị bằng bao nhiêu?
+b) 3 482 249 … 3 480 822
+c) Số liền trước và số liền sau của 1 097 250 là những số nào?
+d) Làm tròn 5 558 787 đến hàng nghìn.
+e) 244 305 … 248 924
+f) Chữ số hàng nghìn của số 6 724 974 có giá trị bằng bao nhiêu?
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
 Điền dấu <, >, = thích hợp.
 
-a) 4 dm … 8 561 m
-b) 6 kg … 1 600 yến
-c) 53 km² … 8 739 ha
-d) 86 dam … 1 982 m
-e) 77 km² … 7 129 dm²
-f) 81 dag … 8 032 hg
+a) 85 tạ … 2 142 kg
+b) 73 dm … 191 hm
+c) 79 ha … 7 036 cm²
+d) 72 km … 4 484 mm
+e) 15 yến … 79 tạ
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
 Giải bằng cách rút về đơn vị hoặc dùng tỉ số.
 
-a) Mua 14 quyển vở hết 1 260 nghìn đồng. Với 1 170 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
-b) Mua 4 quyển vở hết 208 nghìn đồng. Mua 13 quyển vở như thế hết bao nhiêu nghìn đồng?
-c) Mua 3 quyển vở hết 234 nghìn đồng. Mua 16 quyển vở như thế hết bao nhiêu nghìn đồng?
-d) Mua 15 quyển vở hết 555 nghìn đồng. Mua 15 quyển vở như thế hết bao nhiêu nghìn đồng?
+a) Mua 12 quyển vở hết 504 nghìn đồng. Mua 21 quyển vở như thế hết bao nhiêu nghìn đồng?
+b) Mua 7 quyển vở hết 455 nghìn đồng. Với 780 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+c) Mua 5 quyển vở hết 95 nghìn đồng. Mua 10 quyển vở như thế hết bao nhiêu nghìn đồng?
+d) Mua 14 quyển vở hết 840 nghìn đồng. Mua 14 quyển vở như thế hết bao nhiêu nghìn đồng?
+e) Mua 6 quyển vở hết 528 nghìn đồng. Với 704 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+f) Mua 11 quyển vở hết 341 nghìn đồng. Mua 23 quyển vở như thế hết bao nhiêu nghìn đồng?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
-Trình bày lời giải có câu trả lời.
+Áp dụng đúng công thức cho từng câu.
 
-a) Một cửa hàng có 10 thùng sữa, mỗi thùng 12 lít. Cửa hàng đã bán 7 thùng. Hỏi cửa hàng còn lại bao nhiêu lít sữa?
-b) Một cửa hàng có 6 thùng dầu, mỗi thùng 25 lít. Cửa hàng đã bán 2 thùng. Hỏi cửa hàng còn lại bao nhiêu lít dầu?
-c) Một cửa hàng có 10 thùng sữa, mỗi thùng 15 lít. Cửa hàng đã bán 9 thùng. Hỏi cửa hàng còn lại bao nhiêu lít sữa?
-d) Một cửa hàng có 19 thùng dầu, mỗi thùng 20 lít. Cửa hàng đã bán 7 thùng. Hỏi cửa hàng còn lại bao nhiêu lít dầu?
-e) Một cửa hàng có 10 thùng sữa, mỗi thùng 15 lít. Cửa hàng đã bán 8 thùng. Hỏi cửa hàng còn lại bao nhiêu lít sữa?
+a) Một người đi với vận tốc 36 km/giờ trong 4 giờ. Tính quãng đường đi được.
+b) Một người đi 240 km hết 4 giờ. Tính vận tốc.
+c) Một người đi quãng đường 30 km với vận tốc 5 km/giờ. Tính thời gian đi.
+d) Một người đi 135 km hết 3 giờ. Tính vận tốc.
+e) Một người đi quãng đường 120 km với vận tốc 20 km/giờ. Tính thời gian đi.
+f) Một người đi với vận tốc 12 km/giờ trong 3 giờ. Tính quãng đường đi được.
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
-Dùng kĩ thuật tô màu để lập luận.
+Tính thời gian gặp nhau trước.
 
-a) Một bàn cờ vuông 6 × 6 ô. Hỏi có tất cả bao nhiêu ô?
-b) Tô màu xen kẽ đen trắng như bàn cờ vua thì có bao nhiêu ô đen?
-c) Một quân đô-mi-nô phủ đúng 2 ô liền nhau. Có thể phủ kín cả bàn cờ 6 × 6 bằng các quân đô-mi-nô không?
-d) Mỗi quân đô-mi-nô luôn phủ mấy ô đen và mấy ô trắng?
-e) Nếu bỏ đi hai ô ở hai góc đối diện của bàn cờ 6 × 6 (hai ô này cùng màu) thì còn phủ kín được không?
-f) Đại lượng bất biến dùng ở đây là gì?
+a) Hai xe đi ngược chiều từ hai địa điểm cách nhau 312 km, vận tốc 54 km/giờ và 24 km/giờ. Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
+b) Hai xe đi ngược chiều từ hai địa điểm cách nhau 350 km, vận tốc 50 km/giờ và 20 km/giờ. Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
+c) Hai xe đi ngược chiều từ hai địa điểm cách nhau 375 km, vận tốc 45 km/giờ và 30 km/giờ. Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
+d) Hai xe đi ngược chiều từ hai địa điểm cách nhau 336 km, vận tốc 54 km/giờ và 30 km/giờ. Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
+e) Hai xe đi ngược chiều từ hai địa điểm cách nhau 144 km, vận tốc 60 km/giờ và 12 km/giờ. Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
 
 
 ---
@@ -90,100 +91,101 @@ f) Đại lượng bất biến dùng ở đây là gì?
 
 ### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **4 101 170 và 4 101 172**
-b) **6 841 000**
-c) **<**
-d) **5**
-e) **5 000 000**
-f) **>**
+a) **30**
+b) **>**
+c) **1 097 249 và 1 097 251**
+d) **5 559 000**
+e) **<**
+f) **4 000**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Số liền trước và số liền sau của 4 101 171 là những số nào?
+1. Xét ý a: Chữ số hàng chục của số 1 624 331 có giá trị bằng bao nhiêu?
 2. Đọc vị: đây là dạng **Ôn tập số tự nhiên**; dấu hiệu là Câu hỏi ngắn về so sánh, hàng, số liền kề, làm tròn.
 3. Kiến thức phải dùng: Thứ tự số tự nhiên, giá trị hàng, quy tắc làm tròn.
 4. Cách làm: Đếm chữ số, xét hàng từ trái sang phải.
 5. Lối tắt: Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số.
-6. Kết quả: **4 101 170 và 4 101 172**.
+6. Kết quả: **30**.
 
 *Lỗi hay mắc:* So sánh từ hàng đơn vị; hoặc làm tròn nhìn nhầm sang chính hàng cần làm tròn.
 
-### Bài 2, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 2, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **<**
+a) **>**
 b) **<**
-c) **<**
-d) **<**
-e) **>**
-f) **<**
+c) **>**
+d) **>**
+e) **<**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 4 dm … 8 561 m
+1. Xét ý a: 85 tạ … 2 142 kg
 2. Đọc vị: đây là dạng **So sánh số đo đại lượng**; dấu hiệu là Hai vế có đơn vị khác nhau.
 3. Kiến thức phải dùng: Bảng đơn vị đo, so sánh số tự nhiên.
 4. Cách làm: Đổi về cùng đơn vị rồi so sánh.
 5. Lối tắt: Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số.
-6. Kết quả: **<**.
+6. Kết quả: **>**.
 
 *Lỗi hay mắc:* So thẳng hai con số, bỏ qua đơn vị.
 
-### Bài 3, (2 điểm — mỗi ý 0,5 điểm)
+### Bài 3, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **13 quyển**
-b) **676 nghìn đồng**
-c) **1 248 nghìn đồng**
-d) **555 nghìn đồng**
+a) **882 nghìn đồng**
+b) **12 quyển**
+c) **190 nghìn đồng**
+d) **840 nghìn đồng**
+e) **8 quyển**
+f) **713 nghìn đồng**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Mua 14 quyển vở hết 1 260 nghìn đồng. Với 1 170 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+1. Xét ý a: Mua 12 quyển vở hết 504 nghìn đồng. Mua 21 quyển vở như thế hết bao nhiêu nghìn đồng?
 2. Đọc vị: đây là dạng **Tỉ lệ thuận, rút về đơn vị**; dấu hiệu là Hai đại lượng cùng tăng cùng giảm.
 3. Kiến thức phải dùng: Đại lượng tỉ lệ thuận.
 4. Cách làm: Rút về đơn vị hoặc dùng tỉ số.
 5. Lối tắt: Nếu số lượng mới gấp số lượng cũ một số nguyên lần thì nhân thẳng, không cần rút về đơn vị.
-6. Kết quả: **13 quyển**.
+6. Kết quả: **882 nghìn đồng**.
 
 *Lỗi hay mắc:* Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch.
 
-### Bài 4, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **36 lít**
-b) **100 lít**
-c) **15 lít**
-d) **240 lít**
-e) **30 lít**
-
-**Cách giải mẫu:**
-
-1. Xét ý a: Một cửa hàng có 10 thùng sữa, mỗi thùng 12 lít. Cửa hàng đã bán 7 thùng. Hỏi cửa hàng còn lại bao nhiêu lít sữa?
-2. Đọc vị: đây là dạng **Bài toán đại lượng nhiều bước**; dấu hiệu là Cho số nhóm, giá trị mỗi nhóm và số nhóm đã dùng.
-3. Kiến thức phải dùng: Nhân, trừ; đại lượng cùng loại.
-4. Cách làm: Rút gọn số bước bằng cách trừ trước, nhân sau.
-5. Lối tắt: So sánh hai đường giải, chọn đường ít phép tính hơn.
-6. Kết quả: **36 lít**.
-
-*Lỗi hay mắc:* Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại.
-
-### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
-
-a) **36**
-b) **18**
-c) **có**
-d) **1 ô đen và 1 ô trắng**
-e) **không, vì số ô đen và ô trắng không còn bằng nhau**
-f) **hiệu giữa số ô đen và số ô trắng chưa bị phủ**
+a) **144 km**
+b) **60 km/giờ**
+c) **6 giờ**
+d) **45 km/giờ**
+e) **6 giờ**
+f) **36 km**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Một bàn cờ vuông 6 × 6 ô. Hỏi có tất cả bao nhiêu ô?
-2. Đọc vị: đây là dạng **Tô màu, bất biến trên bàn cờ**; dấu hiệu là Bàn cờ, quân đô-mi-nô, câu hỏi “có thể phủ kín không”.
-3. Kiến thức phải dùng: Kĩ thuật tô màu, bất biến, tính chẵn lẻ.
-4. Cách làm: Tô màu xen kẽ, đếm hai màu, so sánh.
-5. Lối tắt: Hai ô ở hai góc đối diện của bàn cờ luôn cùng màu.
-6. Kết quả: **36**.
+1. Xét ý a: Một người đi với vận tốc 36 km/giờ trong 4 giờ. Tính quãng đường đi được.
+2. Đọc vị: đây là dạng **Ba dạng cơ bản của chuyển động đều**; dấu hiệu là Có hai trong ba đại lượng quãng đường, vận tốc, thời gian.
+3. Kiến thức phải dùng: Công thức s = v × t.
+4. Cách làm: Chọn công thức theo đại lượng cần tìm; đồng bộ đơn vị.
+5. Lối tắt: Vẽ tam giác s ở trên, v và t ở dưới: che đại lượng cần tìm là ra công thức.
+6. Kết quả: **144 km**.
 
-*Lỗi hay mắc:* Thử xếp bằng tay rồi kết luận “không xếp được” mà không chứng minh.
+*Lỗi hay mắc:* Vận tốc tính bằng km/giờ nhưng thời gian lại để bằng phút.
+
+### Bài 5, (2 điểm — mỗi ý 0,4 điểm)
+
+a) **216 km**
+b) **250 km**
+c) **225 km**
+d) **216 km**
+e) **120 km**
+
+**Cách giải mẫu:**
+
+1. Xét ý a: Hai xe đi ngược chiều từ hai địa điểm cách nhau 312 km, vận tốc 54 km/giờ và 24 km/giờ. Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
+2. Đọc vị: đây là dạng **Chuyển động ngược chiều, tính quãng đường từng xe**; dấu hiệu là Hỏi quãng đường **của một xe** tính đến lúc gặp nhau.
+3. Kiến thức phải dùng: Quãng đường – vận tốc – thời gian, tỉ lệ thuận.
+4. Cách làm: Thời gian gặp → quãng đường từng xe.
+5. Lối tắt: Quãng đường hai xe đi tỉ lệ thuận với vận tốc — chia quãng cách theo tỉ số vận tốc là ra ngay.
+6. Kết quả: **216 km**.
+
+*Lỗi hay mắc:* Chia quãng đường theo tỉ lệ sai, hoặc lấy quãng đường chia đôi.
 
 ---
 
@@ -196,8 +198,8 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài 1 | Ôn tập số tự nhiên | So sánh từ hàng đơn vị; hoặc làm tròn nhìn nhầm sang chính hàng cần làm tròn. | Nhóm chuyên đề **—** · mức — |
 | Bài 2 | So sánh số đo đại lượng | So thẳng hai con số, bỏ qua đơn vị. | Nhóm chuyên đề **—** · mức — |
 | Bài 3 | Tỉ lệ thuận, rút về đơn vị | Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch. | Nhóm chuyên đề **—** · mức — |
-| Bài 4 | Bài toán đại lượng nhiều bước | Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. | Nhóm chuyên đề **—** · mức — |
-| Bài 5 | Tô màu, bất biến trên bàn cờ | Thử xếp bằng tay rồi kết luận “không xếp được” mà không chứng minh. | Nhóm chuyên đề **—** · mức — |
+| Bài 4 | Ba dạng cơ bản của chuyển động đều | Vận tốc tính bằng km/giờ nhưng thời gian lại để bằng phút. | Nhóm chuyên đề **—** · mức — |
+| Bài 5 | Chuyển động ngược chiều, tính quãng đường từng xe | Chia quãng đường theo tỉ lệ sai, hoặc lấy quãng đường chia đôi. | Nhóm chuyên đề **—** · mức — |
 
 ---
 

@@ -30,60 +30,57 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Trả lời nhanh, mỗi ý không quá 20 giây.
 
-a) Số liền trước và số liền sau của 5 502 031 là những số nào?
-b) Chữ số hàng trăm nghìn của số 9 684 033 có giá trị bằng bao nhiêu?
-c) 1 865 511 … 1 862 749
-d) Làm tròn 113 810 đến hàng trăm.
-e) 3 988 551 … 3 985 616
-f) Làm tròn 1 980 947 đến hàng trăm.
+a) Chữ số hàng triệu của số 4 091 180 có giá trị bằng bao nhiêu?
+b) Làm tròn 8 245 726 đến hàng trăm.
+c) 8 299 781 … 8 295 112
+d) Số liền trước và số liền sau của 7 172 766 là những số nào?
+e) Chữ số hàng triệu của số 5 467 337 có giá trị bằng bao nhiêu?
+f) Làm tròn 7 028 572 đến hàng trăm.
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
 Điền số thích hợp vào chỗ chấm.
 
-a) 8 500 dam² = … hm²
-b) 43 hm² = … m²
-c) 53 km² = … ha
-d) 38 dam² = … m²
-e) 61 ha = … m²
-f) 60 km² = … ha
+a) 150 000 m² = … ha
+b) 14 km² = … ha
+c) 7 800 dam² = … hm²
+d) 1 600 m² = … dam²
+e) 770 000 m² = … hm²
+f) 65 ha = … m²
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
 Ghi rõ đại lượng nào ứng với 100%.
 
-a) Mua một món hàng 120 000 đồng rồi bán 144 000 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
-b) Một món hàng giá 80 000 đồng, tăng giá 20%. Giá mới là bao nhiêu?
-c) Một chiếc cặp giá 400 000 đồng được giảm 5%. Hỏi giá sau khi giảm là bao nhiêu?
-d) Mua một món hàng 80 000 đồng rồi bán 88 000 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
-e) Một chiếc cặp giá 150 000 đồng được giảm 5%. Hỏi giá sau khi giảm là bao nhiêu?
-f) Một món hàng giá 80 000 đồng, tăng giá 30%. Giá mới là bao nhiêu?
+a) Một món hàng giá 240 000 đồng, tăng giá 25%. Giá mới là bao nhiêu?
+b) Mua một món hàng 80 000 đồng rồi bán 92 000 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
+c) Một chiếc cặp giá 240 000 đồng được giảm 25%. Hỏi giá sau khi giảm là bao nhiêu?
+d) Mua một món hàng 120 000 đồng rồi bán 144 000 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
-Chú ý đơn vị mà đề hỏi.
+Ghi kết quả theo giờ và phút.
 
-a) Một xe chở 19 bao phân bón, mỗi bao 40 kg. Hỏi xe chở bao nhiêu tạ phân bón?
-b) Một xe chở 17 bao xi măng, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ xi măng?
-c) Một xe chở 28 bao thóc, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ thóc?
-d) Một xe chở 34 bao xi măng, mỗi bao 50 kg. Hỏi xe chở bao nhiêu tạ xi măng?
-e) Một xe chở 13 bao phân bón, mỗi bao 40 kg. Hỏi xe chở bao nhiêu tạ phân bón?
-f) Một xe chở 30 bao gạo, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ gạo?
+a) Một chuyến tàu khởi hành lúc 14 giờ 10 phút và đi hết 5 giờ 14 phút. Tàu đến nơi lúc mấy giờ?
+b) Một chuyến tàu khởi hành lúc 5 giờ 20 phút và đi hết 6 giờ 3 phút. Tàu đến nơi lúc mấy giờ?
+c) Một chuyến tàu khởi hành lúc 9 giờ 25 phút và đi hết 2 giờ 59 phút. Tàu đến nơi lúc mấy giờ?
+d) Một chuyến tàu khởi hành lúc 15 giờ 30 phút và đi hết 1 giờ 6 phút. Tàu đến nơi lúc mấy giờ?
+e) Một chuyến tàu khởi hành lúc 12 giờ 15 phút và đi hết 4 giờ 44 phút. Tàu đến nơi lúc mấy giờ?
+f) Một chuyến tàu khởi hành lúc 6 giờ 45 phút và đi hết 1 giờ 25 phút. Tàu đến nơi lúc mấy giờ?
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
-Tìm cho ra thứ **không đổi** qua mỗi bước.
+Trước khi đếm, xác định điều kiện rơi vào hàng nào.
 
-a) Trên bảng viết các số từ 1 đến 25. Tổng của chúng bằng bao nhiêu?
-b) Mỗi bước, xoá hai số bất kì và viết thay vào **tổng** của chúng. Tổng các số trên bảng có thay đổi không?
-c) Sau nhiều bước chỉ còn một số. Số đó bằng bao nhiêu?
-d) Nếu mỗi bước thay hai số bằng **hiệu** của chúng thì tổng giảm đi bao nhiêu?
-e) Vì thế tính chẵn lẻ của tổng có thay đổi không?
-f) Số cuối cùng trong trường hợp thay bằng hiệu là số chẵn hay số lẻ?
+a) Từ các chữ số 1, 3, 4, 9, lập được bao nhiêu số lẻ có ba chữ số **khác nhau**?
+b) Từ các chữ số 1, 5, 6, 8, 9, lập được bao nhiêu số chia hết cho 3 có ba chữ số **khác nhau**?
+c) Từ các chữ số 1, 5, 7, 8, lập được bao nhiêu số lẻ có ba chữ số **khác nhau**?
+d) Từ các chữ số 1, 3, 4, 5, 6, lập được bao nhiêu số chẵn có ba chữ số **khác nhau**?
+e) Từ các chữ số 2, 3, 4, 5, lập được bao nhiêu số chia hết cho 3 có ba chữ số **khác nhau**?
 
 
 ---
@@ -93,103 +90,99 @@ f) Số cuối cùng trong trường hợp thay bằng hiệu là số chẵn ha
 
 ### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **5 502 030 và 5 502 032**
-b) **600 000**
+a) **4 000 000**
+b) **8 245 700**
 c) **>**
-d) **113 800**
-e) **>**
-f) **1 980 900**
+d) **7 172 765 và 7 172 767**
+e) **5 000 000**
+f) **7 028 600**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Số liền trước và số liền sau của 5 502 031 là những số nào?
+1. Xét ý a: Chữ số hàng triệu của số 4 091 180 có giá trị bằng bao nhiêu?
 2. Đọc vị: đây là dạng **Ôn tập số tự nhiên**; dấu hiệu là Câu hỏi ngắn về so sánh, hàng, số liền kề, làm tròn.
 3. Kiến thức phải dùng: Thứ tự số tự nhiên, giá trị hàng, quy tắc làm tròn.
 4. Cách làm: Đếm chữ số, xét hàng từ trái sang phải.
 5. Lối tắt: Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số.
-6. Kết quả: **5 502 030 và 5 502 032**.
+6. Kết quả: **4 000 000**.
 
 *Lỗi hay mắc:* So sánh từ hàng đơn vị; hoặc làm tròn nhìn nhầm sang chính hàng cần làm tròn.
 
 ### Bài 2, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **85**
-b) **430 000**
-c) **5 300**
-d) **3 800**
-e) **610 000**
-f) **6 000**
+a) **15**
+b) **1 400**
+c) **78**
+d) **16**
+e) **77**
+f) **650 000**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 8 500 dam² = … hm²
+1. Xét ý a: 150 000 m² = … ha
 2. Đọc vị: đây là dạng **Đổi đơn vị diện tích**; dấu hiệu là Đơn vị có mũ hai, hoặc ha, km².
 3. Kiến thức phải dùng: Bảng đơn vị đo diện tích.
 4. Cách làm: Đếm bậc rồi nhân, chia 100.
 5. Lối tắt: Mỗi bậc thêm hai chữ số 0 — nhớ “diện tích thì gấp đôi số 0”.
-6. Kết quả: **85**.
+6. Kết quả: **15**.
 
 *Lỗi hay mắc:* Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc.
 
-### Bài 3, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 3, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **20%**
-b) **96 000 đồng**
-c) **380 000 đồng**
-d) **10%**
-e) **142 500 đồng**
-f) **104 000 đồng**
+a) **300 000 đồng**
+b) **15%**
+c) **180 000 đồng**
+d) **20%**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Mua một món hàng 120 000 đồng rồi bán 144 000 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
+1. Xét ý a: Một món hàng giá 240 000 đồng, tăng giá 25%. Giá mới là bao nhiêu?
 2. Đọc vị: đây là dạng **Tỉ số phần trăm trong mua bán**; dấu hiệu là Từ khoá “giảm giá”, “tăng giá”, “lãi”, “lỗ”.
 3. Kiến thức phải dùng: Tỉ số phần trăm, mốc quy chiếu 100%.
 4. Cách làm: Chốt mốc 100% rồi cộng trừ phần trăm.
 5. Lối tắt: Giảm 20% nghĩa là còn 80% — nhân thẳng một lần thay vì trừ hai bước.
-6. Kết quả: **20%**.
+6. Kết quả: **300 000 đồng**.
 
 *Lỗi hay mắc:* Chia tiền lãi cho giá bán nên ra tỉ lệ nhỏ hơn thực tế.
 
 ### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **7 tạ 60 kg**
-b) **5 tạ 10 kg**
-c) **7 tạ**
-d) **17 tạ**
-e) **5 tạ 20 kg**
-f) **18 tạ**
+a) **19 giờ 24 phút**
+b) **11 giờ 23 phút**
+c) **12 giờ 24 phút**
+d) **16 giờ 36 phút**
+e) **16 giờ 59 phút**
+f) **8 giờ 10 phút**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Một xe chở 19 bao phân bón, mỗi bao 40 kg. Hỏi xe chở bao nhiêu tạ phân bón?
-2. Đọc vị: đây là dạng **Bài toán đại lượng có lời văn**; dấu hiệu là Đơn vị trong câu hỏi khác đơn vị trong dữ kiện.
-3. Kiến thức phải dùng: Nhân, chia số tự nhiên; đổi đơn vị khối lượng.
-4. Cách làm: Tính theo đơn vị dữ kiện rồi đổi ở bước cuối.
-5. Lối tắt: 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ.
-6. Kết quả: **7 tạ 60 kg**.
+1. Xét ý a: Một chuyến tàu khởi hành lúc 14 giờ 10 phút và đi hết 5 giờ 14 phút. Tàu đến nơi lúc mấy giờ?
+2. Đọc vị: đây là dạng **Tính thời điểm trong ngày**; dấu hiệu là Cho thời điểm bắt đầu và khoảng thời gian.
+3. Kiến thức phải dùng: Quan hệ giờ – phút, phép chia có dư.
+4. Cách làm: Quy về phút, cộng trừ, đổi lại.
+5. Lối tắt: Cộng tròn giờ trước rồi cộng phần phút lẻ sau.
+6. Kết quả: **19 giờ 24 phút**.
 
-*Lỗi hay mắc:* Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ.
+*Lỗi hay mắc:* Cộng phần phút thành hơn 60 mà quên đổi thành giờ.
 
-### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 5, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **325**
-b) **không thay đổi**
-c) **325**
-d) **giảm đi 2 lần số bé — luôn là một số chẵn**
-e) **không thay đổi**
-f) **lẻ**
+a) **18 số**
+b) **24 số**
+c) **18 số**
+d) **24 số**
+e) **12 số**
 
 **Cách giải mẫu:**
 
-1. Tổng ban đầu: 1 + 2 + … + 25 = (25 × 26) : 2 = 325.
-2. Thay hai số a và b bằng a + b: tổng **không đổi**, nên số cuối cùng chính là 325.
-3. Thay hai số a và b (a ≥ b) bằng a − b: tổng giảm đi 2 × b — luôn chẵn.
-4. Giảm đi một số chẵn thì tính chẵn lẻ của tổng giữ nguyên.
-5. Tổng ban đầu 325 là số lẻ, nên số cuối cùng cũng là số lẻ.
-6. Đáp số ý f: **số lẻ**.
+1. Vẽ sơ đồ cây ba tầng: hàng trăm, hàng chục, hàng đơn vị. Nhưng **đừng vẽ hết** — hãy xem điều kiện rơi vào tầng nào trước đã.
+2. Điều kiện rơi vào **chữ số hàng đơn vị**: phải lẻ. Trong bộ đã cho có 3 chữ số lẻ.
+3. Chọn hàng đơn vị trước (3 cách), rồi hai hàng còn lại.
+4. Chữ số phải khác nhau nên mỗi tầng sau ít đi một lựa chọn — đây là chỗ khác với bài đếm không có điều kiện khác nhau.
+5. Đếm hết được **18 số**.
 
-*Lỗi hay mắc:* Thử vài trường hợp rồi kết luận, không chứng minh được cho mọi cách làm.
+*Lỗi hay mắc:* Chọn hàng trăm trước rồi mới xét điều kiện ở hàng đơn vị, thành ra phải chia trường hợp rối rắm.
 
 ---
 
@@ -202,8 +195,8 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài 1 | Ôn tập số tự nhiên | So sánh từ hàng đơn vị; hoặc làm tròn nhìn nhầm sang chính hàng cần làm tròn. | Nhóm chuyên đề **—** · mức — |
 | Bài 2 | Đổi đơn vị diện tích | Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. | Nhóm chuyên đề **—** · mức — |
 | Bài 3 | Tỉ số phần trăm trong mua bán | Chia tiền lãi cho giá bán nên ra tỉ lệ nhỏ hơn thực tế. | Nhóm chuyên đề **—** · mức — |
-| Bài 4 | Bài toán đại lượng có lời văn | Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. | Nhóm chuyên đề **—** · mức — |
-| Bài 5 | Bài toán bất biến | Thử vài trường hợp rồi kết luận, không chứng minh được cho mọi cách làm. | Nhóm chuyên đề **—** · mức — |
+| Bài 4 | Tính thời điểm trong ngày | Cộng phần phút thành hơn 60 mà quên đổi thành giờ. | Nhóm chuyên đề **—** · mức — |
+| Bài 5 | Ứng dụng sơ đồ (cây, khối, mũi tên) | Chọn hàng trăm trước rồi mới xét điều kiện ở hàng đơn vị, thành ra phải chia trường hợp rối rắm. | Nhóm chuyên đề **—** · mức — |
 
 ---
 

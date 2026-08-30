@@ -51,57 +51,60 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — CỦNG CỐ NỀN — 30 CÂU TỐC ĐỘ · Mức M1 — Nhận biết · 20 phút · 25 điểm
 
-### Bài 1. (5 điểm) Quy tắc cộng, quy tắc nhân và phép đếm có phần chung
+### Bài 1. (5 điểm) Đếm hình trong lưới ô vuông
 
-Đọc kĩ chữ “và” hay chữ “hoặc”.
+Đếm có hệ thống, không đếm mò.
 
-a) Lớp có 8 bạn giỏi Toán, 9 bạn giỏi Tiếng Việt, trong đó 3 bạn giỏi cả hai môn. Hỏi có bao nhiêu bạn giỏi ít nhất một môn?
-b) Trên bàn có 4 quyển sách Toán và 4 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một** quyển sách bất kì?
-c) Có 5 quyển sách Toán và 9 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một quyển Toán và một quyển Tiếng Việt**?
-d) Trên bàn có 11 quyển sách Toán và 8 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một** quyển sách bất kì?
+a) Lưới ô vuông gồm 4 hàng và 5 cột ô vuông nhỏ. Có tất cả bao nhiêu ô vuông nhỏ?
+b) Có bao nhiêu hình chữ nhật (kể cả hình vuông) trong lưới đó?
+c) Có bao nhiêu hình vuông trong lưới đó?
+d) Nếu mỗi ô vuông nhỏ có cạnh 1 cm thì chu vi cả lưới bằng bao nhiêu?
+e) Diện tích cả lưới bằng bao nhiêu?
 
-### Bài 2. (5 điểm) Suy luận bằng phương pháp lập bảng và loại trừ
-
-Ba bạn Yến, Trang, Sơn mỗi bạn thích đúng một môn khác nhau trong ba môn Tiếng Anh, Âm nhạc, Mĩ thuật. Biết **Yến thích Tiếng Anh** và **Trang không thích Mĩ thuật**.
-
-a) Kẻ bảng ba hàng (tên bạn) và ba cột (môn học). Dữ kiện “Yến thích Tiếng Anh” cho phép đánh dấu ✔ vào ô nào?
-b) Sau dấu ✔ đó, những ô nào chắc chắn phải đánh ✘?
-c) Dữ kiện “Trang không thích Mĩ thuật” cho phép đánh ✘ vào ô nào?
-d) Đến đây, hàng Trang còn lại đúng một ô trống. Vậy Trang thích môn nào?
-e) Suy ra Sơn thích môn nào?
-f) Phương pháp vừa dùng tên là gì?
-
-### Bài 3. (5 điểm) Quy tắc nhân trong phép đếm
+### Bài 2. (5 điểm) Quy tắc nhân trong phép đếm
 
 Đếm số cách chọn.
 
-a) Có 6 chiếc áo và 6 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
-b) Có 7 chiếc áo và 6 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
-c) Có 6 chiếc áo và 6 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
-d) Có 3 chiếc áo và 6 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
+a) Có 7 chiếc áo và 8 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
+b) Có 2 chiếc áo và 2 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
+c) Có 6 chiếc áo và 3 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
+d) Có 7 chiếc áo và 4 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
 
-### Bài 4. (5 điểm) Điền dấu <, >, = thích hợp
+### Bài 3. (5 điểm) Quy tắc cộng, quy tắc nhân và phép đếm có phần chung
 
-Điền dấu thích hợp vào chỗ chấm.
+Đọc kĩ chữ “và” hay chữ “hoặc”.
 
-a) 49 914 … 49 981
-b) 449 086 … 449 154
-c) 203 071 … 203 081
-d) 424 638 … 424 688
-e) 117 524 … 117 522
-f) 139 933 … 139 952
+a) Có 4 quyển sách Toán và 3 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một quyển Toán và một quyển Tiếng Việt**?
+b) Lớp có 8 bạn giỏi Toán, 6 bạn giỏi Tiếng Việt, trong đó 5 bạn giỏi cả hai môn. Hỏi có bao nhiêu bạn giỏi ít nhất một môn?
+c) Trên bàn có 4 quyển sách Toán và 4 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một** quyển sách bất kì?
+d) Lớp có 9 bạn giỏi Toán, 8 bạn giỏi Tiếng Việt, trong đó 7 bạn giỏi cả hai môn. Hỏi có bao nhiêu bạn giỏi ít nhất một môn?
+e) Trên bàn có 3 quyển sách Toán và 11 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một** quyển sách bất kì?
+f) Có 3 quyển sách Toán và 9 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một quyển Toán và một quyển Tiếng Việt**?
+g) Trên bàn có 6 quyển sách Toán và 9 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một** quyển sách bất kì?
 
-### Bài 5. (5 điểm) Ôn tập bốn phép tính với số tự nhiên
+### Bài 4. (5 điểm) Ôn tập số tự nhiên: đọc, viết, so sánh, làm tròn
 
-Đặt tính rồi tính. Ước lượng trước để tự kiểm tra.
+Trả lời nhanh, mỗi ý không quá 20 giây.
 
-a) 862 982 − 492 813
-b) 812 831 × 431
-c) 504 688 + 141 467
-d) 423 445 308 : 858
-e) 234 550 + 717 910
-f) 788 933 × 263
-g) 343 165 424 : 752
+a) Chữ số hàng chục của số 4 044 884 có giá trị bằng bao nhiêu?
+b) 3 742 623 … 3 739 256
+c) Số liền trước và số liền sau của 9 935 496 là những số nào?
+d) Làm tròn 5 565 522 đến hàng trăm.
+e) 2 015 040 … 2 019 790
+f) Làm tròn 3 879 605 đến hàng nghìn.
+g) Số liền trước và số liền sau của 9 251 776 là những số nào?
+h) Chữ số hàng đơn vị của số 9 707 309 có giá trị bằng bao nhiêu?
+
+### Bài 5. (5 điểm) Suy luận bằng phương pháp lập bảng và loại trừ
+
+Ba bạn Hùng, Chi, Minh mỗi bạn thích đúng một môn khác nhau trong ba môn Toán, Tiếng Anh, Mĩ thuật. Biết **Hùng thích Toán** và **Chi không thích Mĩ thuật**.
+
+a) Kẻ bảng ba hàng (tên bạn) và ba cột (môn học). Dữ kiện “Hùng thích Toán” cho phép đánh dấu ✔ vào ô nào?
+b) Sau dấu ✔ đó, những ô nào chắc chắn phải đánh ✘?
+c) Dữ kiện “Chi không thích Mĩ thuật” cho phép đánh ✘ vào ô nào?
+d) Đến đây, hàng Chi còn lại đúng một ô trống. Vậy Chi thích môn nào?
+e) Suy ra Minh thích môn nào?
+f) Phương pháp vừa dùng tên là gì?
 
 ---
 
@@ -333,34 +336,34 @@ f) Mẹo nhanh em sẽ tặng lớp?
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài A.1
-**Đáp số:** a) 14 bạn · b) 8 cách · c) 45 cách · d) 19 cách
-**Hướng giải:** BẪY — Phần chung bị đếm hai lần. Chọn **một trong hai nhóm rời nhau** thì cộng. Chọn **mỗi nhóm một phần tử** thì nhân. Khi hai nhóm có phần tử chung, số phần tử thuộc ít nhất một nhóm bằng tổng hai nhóm trừ đi phần chung (vì phần chung đã bị đếm hai lần).
-**Nhãn tư duy:** TD2, TD6. Điểm chốt: Có phần chung thì phải **trừ đi một lần** phần chung.
-**Lỗi thường gặp:** Cộng thẳng hai nhóm khi chúng có phần tử chung. Phòng: Vẽ hai vòng tròn giao nhau, ghi số vào từng miền.
+**Đáp số:** a) 20 · b) 150 · c) 40 · d) 18 cm · e) 20 cm²
+**Hướng giải:** BẪY — Bỏ sót các hình ghép nhiều ô. Một hình chữ nhật trong lưới được xác định bởi hai đường kẻ ngang và hai đường kẻ dọc. Lưới m hàng có m + 1 đường ngang, n cột có n + 1 đường dọc, nên số hình chữ nhật bằng số cách chọn hai đường ngang nhân số cách chọn hai đường dọc. Đếm hình vuông thì đếm theo từng cỡ cạnh.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Đếm **theo cỡ** hoặc **theo đường kẻ**, tuyệt đối không đếm ngẫu nhiên.
+**Lỗi thường gặp:** Chỉ đếm các ô vuông nhỏ, quên các hình ghép từ nhiều ô. Phòng: Kẻ bảng theo cỡ hình: cỡ 1×1, 1×2, 2×2… rồi cộng.
 
 ### Bài A.2
-**Đáp số:** a) ô (Yến; Tiếng Anh) · b) toàn bộ hàng Yến và toàn bộ cột Tiếng Anh · c) ô (Trang; Mĩ thuật) · d) Âm nhạc · e) Mĩ thuật · f) phương pháp lập bảng và loại trừ
-**Hướng giải:** Kẻ bảng: hàng là tên người, cột là môn học. Mỗi dữ kiện cho phép đánh dấu ✘ vào một ô (không thể) hoặc ✔ vào một ô (chắc chắn). Khi một hàng chỉ còn đúng một ô trống thì ô đó là ✔; khi một cột đã có ✔ thì các ô còn lại của cột đó đều là ✘.
-**Nhãn tư duy:** TD2, TD6. Điểm chốt: Mỗi lần đánh một dấu, phải **lan toả** ngay sang cả hàng và cả cột.
-**Lỗi thường gặp:** Suy luận trong đầu, không kẻ bảng, nên bỏ sót khả năng. Phòng: Luôn kẻ bảng, kể cả khi bài có vẻ dễ.
-
-### Bài A.3
-**Đáp số:** a) 36 cách · b) 42 cách · c) 36 cách · d) 18 cách
+**Đáp số:** a) 56 cách · b) 4 cách · c) 18 cách · d) 28 cách
 **Hướng giải:** BẪY — Cộng hay nhân. Nếu công việc gồm hai bước liên tiếp, bước một có a cách, bước hai có b cách, thì cả công việc có a × b cách. Đây là **quy tắc nhân**.
 **Nhãn tư duy:** TD2, TD4. Điểm chốt: Hai việc phải làm **cùng lúc, nối tiếp** thì nhân; chọn một trong hai khả năng rời nhau thì cộng.
 **Lỗi thường gặp:** Cộng số áo với số quần. Phòng: Tự hỏi: chọn xong áo đã đủ một bộ chưa? Chưa đủ thì phải nhân.
 
+### Bài A.3
+**Đáp số:** a) 12 cách · b) 9 bạn · c) 8 cách · d) 10 bạn · e) 14 cách · f) 27 cách · g) 15 cách
+**Hướng giải:** Chọn **một trong hai nhóm rời nhau** thì cộng. Chọn **mỗi nhóm một phần tử** thì nhân. Khi hai nhóm có phần tử chung, số phần tử thuộc ít nhất một nhóm bằng tổng hai nhóm trừ đi phần chung (vì phần chung đã bị đếm hai lần).
+**Nhãn tư duy:** TD2, TD6. Điểm chốt: Có phần chung thì phải **trừ đi một lần** phần chung.
+**Lỗi thường gặp:** Cộng thẳng hai nhóm khi chúng có phần tử chung. Phòng: Vẽ hai vòng tròn giao nhau, ghi số vào từng miền.
+
 ### Bài A.4
-**Đáp số:** a) < · b) < · c) < · d) < · e) > · f) <
-**Hướng giải:** So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
-**Nhãn tư duy:** TD1, TD5. Điểm chốt: Đếm số chữ số **trước**, chỉ khi bằng nhau mới so từng hàng.
-**Lỗi thường gặp:** So từ hàng đơn vị (phải sang trái) nên kết luận sai. Phòng: Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái.
+**Đáp số:** a) 80 · b) > · c) 9 935 495 và 9 935 497 · d) 5 565 500 · e) < · f) 3 880 000 · g) 9 251 775 và 9 251 777 · h) 9
+**Hướng giải:** So sánh: số nhiều chữ số hơn thì lớn hơn; bằng số chữ số thì so từng hàng từ trái sang phải. Làm tròn: nhìn chữ số ở hàng **liền sau** hàng cần làm tròn.
+**Nhãn tư duy:** TD1, TD5. Điểm chốt: So sánh đi từ **trái sang phải**, làm tròn nhìn **một chữ số liền sau**.
+**Lỗi thường gặp:** So sánh từ hàng đơn vị; hoặc làm tròn nhìn nhầm sang chính hàng cần làm tròn. Phòng: Gạch một nét ngăn ngay sau hàng cần làm tròn.
 
 ### Bài A.5
-**Đáp số:** a) 370 169 · b) 350 330 161 · c) 646 155 · d) 493 526 · e) 952 460 · f) 207 489 379 · g) 456 337
-**Hướng giải:** Cộng, trừ thì viết thẳng hàng đơn vị. Nhân thì viết các tích riêng lùi đúng cột rồi cộng. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0.
-**Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương.
-**Lỗi thường gặp:** Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+**Đáp số:** a) ô (Hùng; Toán) · b) toàn bộ hàng Hùng và toàn bộ cột Toán · c) ô (Chi; Mĩ thuật) · d) Tiếng Anh · e) Mĩ thuật · f) phương pháp lập bảng và loại trừ
+**Hướng giải:** Kẻ bảng: hàng là tên người, cột là môn học. Mỗi dữ kiện cho phép đánh dấu ✘ vào một ô (không thể) hoặc ✔ vào một ô (chắc chắn). Khi một hàng chỉ còn đúng một ô trống thì ô đó là ✔; khi một cột đã có ✔ thì các ô còn lại của cột đó đều là ✘.
+**Nhãn tư duy:** TD2, TD6. Điểm chốt: Mỗi lần đánh một dấu, phải **lan toả** ngay sang cả hàng và cả cột.
+**Lỗi thường gặp:** Suy luận trong đầu, không kẻ bảng, nên bỏ sót khả năng. Phòng: Luôn kẻ bảng, kể cả khi bài có vẻ dễ.
 
 ### Bài B.1
 **Đáp số:** a) câu lời giải nêu rõ đang tìm đại lượng nào · b) phép tính, viết đủ dấu và đủ đơn vị · c) kết quả kèm đơn vị · d) câu đáp số · e) một phần tư số điểm của bài

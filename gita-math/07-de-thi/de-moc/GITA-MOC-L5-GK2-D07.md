@@ -30,56 +30,54 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Đặt tính rồi tính.
 
-a) 5 540 457 : 57
-b) 30 259 286 : 527
-c) 32 657 × 536
-d) 21 555 872 : 416
-e) 49 378 × 453
-f) 54 833 392 : 569
+a) 9 344 300 : 490
+b) 17 400 × 531
+c) 50 550 584 : 787
+d) 68 480 × 465
+e) 45 869 115 : 795
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
 Điền dấu <, >, = thích hợp.
 
-a) 75 m … 7 926 mm
-b) 50 cm² … 5 452 m²
-c) 6 tấn … 64 kg
-d) 75 dm² … 3 768 ha
+a) 69 m … 1 654 hm
+b) 87 m² … 7 557 ha
+c) 88 kg … 7 065 dag
+d) 45 kg … 2 490 dag
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
 Giải bằng cách quy về tổng số ngày công.
 
-a) 6 người làm xong một công việc trong 4 ngày. Hỏi 2 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
-b) 3 người làm xong một công việc trong 24 ngày. Hỏi 12 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
-c) 3 người làm xong một công việc trong 40 ngày. Hỏi 5 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
-d) 8 người làm xong một công việc trong 3 ngày. Hỏi 12 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
-e) 6 người làm xong một công việc trong 12 ngày. Hỏi 3 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
+a) 3 người làm xong một công việc trong 40 ngày. Hỏi 5 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
+b) 6 người làm xong một công việc trong 8 ngày. Hỏi 12 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
+c) 8 người làm xong một công việc trong 3 ngày. Hỏi 4 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
+d) 2 người làm xong một công việc trong 36 ngày. Hỏi 4 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
+e) 3 người làm xong một công việc trong 12 ngày. Hỏi 2 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
-Điền số thích hợp.
+Một căn phòng hình chữ nhật dài **4 m**, rộng **3 m**, lát bằng gạch vuông cạnh **20 cm**.
 
-a) 38 m³ = … dm³
-b) 82 dm³ = … lít
-c) 65 lít = … ml
-d) 49 000 cm³ = … dm³
-e) 44 dm³ = … lít
-f) 43 000 cm³ = … dm³
+a) Tính diện tích nền nhà theo mét vuông.
+b) Đổi diện tích nền nhà ra xăng-ti-mét vuông.
+c) Diện tích một viên gạch là bao nhiêu xăng-ti-mét vuông?
+d) Cần bao nhiêu viên gạch để lát kín nền nhà?
+e) Mỗi viên gạch giá 25 000 đồng. Mua gạch lát hết bao nhiêu tiền?
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
-Ghi rõ đã chọn loại nào làm chuẩn, và đổi ngược đủ cả ba loại.
+Tính thời gian gặp nhau trước.
 
-a) Mua 4 hộp lớn, 5 hộp vừa và 5 hộp nhỏ hết 248 000 đồng. Biết một hộp vừa bằng giá 2 hộp nhỏ, và một hộp lớn bằng giá 2 hộp vừa. Tính giá mỗi loại hộp.
-b) Mua 4 hộp lớn, 6 hộp vừa và 8 hộp nhỏ hết 320 000 đồng. Biết một hộp vừa bằng giá 4 hộp nhỏ, và một hộp lớn bằng giá 3 hộp vừa. Tính giá mỗi loại hộp.
-c) Mua 2 hộp lớn, 6 hộp vừa và 7 hộp nhỏ hết 86 000 đồng. Biết một hộp vừa bằng giá 3 hộp nhỏ, và một hộp lớn bằng giá 3 hộp vừa. Tính giá mỗi loại hộp.
-d) Mua 5 hộp lớn, 5 hộp vừa và 8 hộp nhỏ hết 792 000 đồng. Biết một hộp vừa bằng giá 4 hộp nhỏ, và một hộp lớn bằng giá 3 hộp vừa. Tính giá mỗi loại hộp.
-e) Mua 3 hộp lớn, 6 hộp vừa và 8 hộp nhỏ hết 224 000 đồng. Biết một hộp vừa bằng giá 2 hộp nhỏ, và một hộp lớn bằng giá 2 hộp vừa. Tính giá mỗi loại hộp.
+a) Hai xe đi ngược chiều từ hai địa điểm cách nhau 104 km, vận tốc 40 km/giờ và 12 km/giờ. Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
+b) Hai xe đi ngược chiều từ hai địa điểm cách nhau 180 km, vận tốc 40 km/giờ và 20 km/giờ. Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
+c) Hai xe đi ngược chiều từ hai địa điểm cách nhau 96 km, vận tốc 36 km/giờ và 12 km/giờ. Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
+d) Hai xe đi ngược chiều từ hai địa điểm cách nhau 270 km, vận tốc 60 km/giờ và 30 km/giờ. Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
+e) Hai xe đi ngược chiều từ hai địa điểm cách nhau 360 km, vận tốc 54 km/giờ và 18 km/giờ. Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
 
 
 ---
@@ -87,100 +85,98 @@ e) Mua 3 hộp lớn, 6 hộp vừa và 8 hộp nhỏ hết 224 000 đồng. Bi�
 ## ĐÁP ÁN VÀ BIỂU ĐIỂM
 
 
-### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 1, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **97 201**
-b) **57 418**
-c) **17 504 152**
-d) **51 817**
-e) **22 368 234**
-f) **96 368**
+a) **19 070**
+b) **9 239 400**
+c) **64 232**
+d) **31 843 200**
+e) **57 697**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 5 540 457 : 57
+1. Xét ý a: 9 344 300 : 490
 2. Đọc vị: đây là dạng **Nhân, chia số tự nhiên**; dấu hiệu là Yêu cầu “đặt tính rồi tính” với phép nhân, chia.
 3. Kiến thức phải dùng: Kĩ thuật đặt tính nhân, chia.
 4. Cách làm: Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ chữ số.
 5. Lối tắt: Kiểm tra kết quả bằng phép tính ngược: thương × số chia = số bị chia.
-6. Kết quả: **97 201**.
+6. Kết quả: **19 070**.
 
 *Lỗi hay mắc:* Quên viết chữ số 0 ở thương nên thương thiếu chữ số.
 
 ### Bài 2, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **>**
+a) **<**
 b) **<**
 c) **>**
-d) **<**
+d) **>**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 75 m … 7 926 mm
+1. Xét ý a: 69 m … 1 654 hm
 2. Đọc vị: đây là dạng **So sánh số đo đại lượng**; dấu hiệu là Hai vế có đơn vị khác nhau.
 3. Kiến thức phải dùng: Bảng đơn vị đo, so sánh số tự nhiên.
 4. Cách làm: Đổi về cùng đơn vị rồi so sánh.
 5. Lối tắt: Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số.
-6. Kết quả: **>**.
+6. Kết quả: **<**.
 
 *Lỗi hay mắc:* So thẳng hai con số, bỏ qua đơn vị.
 
 ### Bài 3, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **12 ngày**
-b) **6 ngày**
-c) **24 ngày**
-d) **2 ngày**
-e) **24 ngày**
+a) **24 ngày**
+b) **4 ngày**
+c) **6 ngày**
+d) **18 ngày**
+e) **18 ngày**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 6 người làm xong một công việc trong 4 ngày. Hỏi 2 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
+1. Xét ý a: 3 người làm xong một công việc trong 40 ngày. Hỏi 5 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
 2. Đọc vị: đây là dạng **Tỉ lệ nghịch**; dấu hiệu là Số người tăng thì thời gian giảm.
 3. Kiến thức phải dùng: Đại lượng tỉ lệ nghịch, tổng số ngày công.
 4. Cách làm: Quy về tổng số ngày công rồi chia.
 5. Lối tắt: Số người gấp đôi thì số ngày giảm một nửa — nhẩm được ngay khi tỉ số đẹp.
-6. Kết quả: **12 ngày**.
+6. Kết quả: **24 ngày**.
 
 *Lỗi hay mắc:* Nhân chia như tỉ lệ thuận nên càng nhiều người lại càng lâu.
 
-### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 4, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **38 000**
-b) **82**
-c) **65 000**
-d) **49**
-e) **44**
-f) **43**
+a) **4 × 3 = 12 m²**
+b) **12 m² = 120 000 cm²**
+c) **20 × 20 = 400 cm²**
+d) **120 000 : 400 = 300 viên**
+e) **300 × 25 000 = 7 500 000 đồng**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 38 m³ = … dm³
-2. Đọc vị: đây là dạng **Đổi đơn vị thể tích, dung tích**; dấu hiệu là Đơn vị có mũ ba, hoặc lít, mi-li-lít.
-3. Kiến thức phải dùng: Bảng đơn vị thể tích; quan hệ dm³ – lít.
-4. Cách làm: Đếm bậc rồi nhân, chia 1 000.
-5. Lối tắt: Mỗi bậc thêm ba chữ số 0.
-6. Kết quả: **38 000**.
+1. Diện tích nền: 4 × 3 = **12 m²**.
+2. Muốn chia cho diện tích viên gạch thì hai diện tích phải **cùng đơn vị**. Viên gạch đo bằng xăng-ti-mét nên đổi nền nhà ra cm²: 1 m² = 10 000 cm², nên 12 m² = 120 000 cm².
+3. Diện tích một viên: 20 × 20 = 400 cm².
+4. Số viên: 120 000 : 400 = **300 viên**.
+5. Tiền gạch: 300 × 25 000 = **7 500 000 đồng**.
 
-*Lỗi hay mắc:* Đổi như đơn vị diện tích, chỉ nhân 100.
+*Lỗi hay mắc:* Chia thẳng m² cho cm², hoặc đổi 1 m² thành 100 cm².
 
 ### Bài 5, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **nhỏ 8 000 đồng; vừa 16 000 đồng; lớn 32 000 đồng**
-b) **nhỏ 4 000 đồng; vừa 16 000 đồng; lớn 48 000 đồng**
-c) **nhỏ 2 000 đồng; vừa 6 000 đồng; lớn 18 000 đồng**
-d) **nhỏ 9 000 đồng; vừa 36 000 đồng; lớn 108 000 đồng**
-e) **nhỏ 7 000 đồng; vừa 14 000 đồng; lớn 28 000 đồng**
+a) **80 km**
+b) **120 km**
+c) **72 km**
+d) **180 km**
+e) **270 km**
 
 **Cách giải mẫu:**
 
-1. Ba loại và hai quan hệ đổi ngang. Quy tắc: **đổi hết về loại nhỏ nhất**, vì mọi quan hệ đều dẫn được về nó.
-2. Một hộp lớn = 2 hộp vừa = 2 × 2 = 4 hộp nhỏ.
-3. Đổi cả đơn hàng về hộp nhỏ: 4 × 4 + 5 × 2 + 5 = 31 (hộp nhỏ).
-4. Giá một hộp nhỏ: 248 000 : 31 = 8 000 (đồng).
-5. Đổi ngược **đủ cả hai loại còn lại** — đây là chỗ hay sót: hộp vừa 8 000 × 2 = 16 000 đồng; hộp lớn 16 000 × 2 = **32 000 đồng**.
+1. Xét ý a: Hai xe đi ngược chiều từ hai địa điểm cách nhau 104 km, vận tốc 40 km/giờ và 12 km/giờ. Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
+2. Đọc vị: đây là dạng **Chuyển động ngược chiều, tính quãng đường từng xe**; dấu hiệu là Hỏi quãng đường **của một xe** tính đến lúc gặp nhau.
+3. Kiến thức phải dùng: Quãng đường – vận tốc – thời gian, tỉ lệ thuận.
+4. Cách làm: Thời gian gặp → quãng đường từng xe.
+5. Lối tắt: Quãng đường hai xe đi tỉ lệ thuận với vận tốc — chia quãng cách theo tỉ số vận tốc là ra ngay.
+6. Kết quả: **80 km**.
 
-*Lỗi hay mắc:* Cộng hai hệ số đổi ngang, hoặc chỉ đổi ngược một loại rồi dừng.
+*Lỗi hay mắc:* Chia quãng đường theo tỉ lệ sai, hoặc lấy quãng đường chia đôi.
 
 ---
 
@@ -193,8 +189,8 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài 1 | Nhân, chia số tự nhiên | Quên viết chữ số 0 ở thương nên thương thiếu chữ số. | Nhóm chuyên đề **—** · mức — |
 | Bài 2 | So sánh số đo đại lượng | So thẳng hai con số, bỏ qua đơn vị. | Nhóm chuyên đề **—** · mức — |
 | Bài 3 | Tỉ lệ nghịch | Nhân chia như tỉ lệ thuận nên càng nhiều người lại càng lâu. | Nhóm chuyên đề **—** · mức — |
-| Bài 4 | Đổi đơn vị thể tích, dung tích | Đổi như đơn vị diện tích, chỉ nhân 100. | Nhóm chuyên đề **—** · mức — |
-| Bài 5 | Phương pháp thay thế | Cộng hai hệ số đổi ngang, hoặc chỉ đổi ngược một loại rồi dừng. | Nhóm chuyên đề **—** · mức — |
+| Bài 4 | Bài toán lát gạch nền nhà | Chia thẳng m² cho cm², hoặc đổi 1 m² thành 100 cm². | Nhóm chuyên đề **—** · mức — |
+| Bài 5 | Chuyển động ngược chiều, tính quãng đường từng xe | Chia quãng đường theo tỉ lệ sai, hoặc lấy quãng đường chia đôi. | Nhóm chuyên đề **—** · mức — |
 
 ---
 

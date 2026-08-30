@@ -30,39 +30,40 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Đặt tính rồi tính.
 
-a) 790 − 547
-b) 686 − 438
-c) 575 + 309
-d) 473 + 418
-e) 832 − 364
-f) 364 + 829
+a) 717 − 336
+b) 644 + 266
+c) 528 − 92
+d) 470 + 201
+e) 922 − 698
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
 Ghi rõ đơn vị đồng ở mọi kết quả.
 
-a) Mua 6 quyển vở, mỗi quyển 18 000 đồng. Đưa cô bán hàng một tờ 200 000 đồng. Cô phải trả lại bao nhiêu tiền?
-b) Mua 2 quyển vở, mỗi quyển 5 000 đồng. Hết bao nhiêu tiền?
-c) Đổi một tờ 50 000 đồng ra các tờ 2 000 đồng thì được mấy tờ?
-d) Mua 6 quyển vở, mỗi quyển 7 000 đồng. Đưa cô bán hàng một tờ 50 000 đồng. Cô phải trả lại bao nhiêu tiền?
-e) Mua 6 quyển vở, mỗi quyển 18 000 đồng. Hết bao nhiêu tiền?
-f) Đổi một tờ 20 000 đồng ra các tờ 1 000 đồng thì được mấy tờ?
+a) Mua 4 quyển vở, mỗi quyển 12 000 đồng. Hết bao nhiêu tiền?
+b) Mua 3 quyển vở, mỗi quyển 7 000 đồng. Đưa cô bán hàng một tờ 50 000 đồng. Cô phải trả lại bao nhiêu tiền?
+c) Đổi một tờ 10 000 đồng ra các tờ 5 000 đồng thì được mấy tờ?
+d) Đổi một tờ 50 000 đồng ra các tờ 1 000 đồng thì được mấy tờ?
+e) Mua 4 quyển vở, mỗi quyển 7 000 đồng. Hết bao nhiêu tiền?
+f) Mua 4 quyển vở, mỗi quyển 7 000 đồng. Đưa cô bán hàng một tờ 50 000 đồng. Cô phải trả lại bao nhiêu tiền?
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
 Vẽ sơ đồ trước, tính sau. Không vẽ thì không được tính.
 
-a) Quân và Bình có tất cả 162 viên bi. Quân có nhiều hơn Bình 8 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
-b) Minh và Bình có tất cả 100 viên bi. Minh có nhiều hơn Bình 28 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
-c) Minh và Sơn có tất cả 98 viên bi. Minh có nhiều hơn Sơn 24 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
-d) Khánh và Tuấn có tất cả 24 viên bi. Khánh có nhiều hơn Tuấn 4 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+a) Sơn và Hùng có tất cả 110 viên bi. Sơn có nhiều hơn Hùng 4 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+b) Nam và Ngọc có tất cả 102 viên bi. Nam có nhiều hơn Ngọc 22 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+c) Dũng và Quân có tất cả 20 viên bi. Dũng có nhiều hơn Quân 6 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+d) Dũng và Vy có tất cả 188 viên bi. Dũng có nhiều hơn Vy 8 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+e) Tuấn và Chi có tất cả 100 viên bi. Tuấn có nhiều hơn Chi 4 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+f) Lan và An có tất cả 82 viên bi. Lan có nhiều hơn An 6 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
-Cho lưới gồm 4 hàng và 4 cột ô vuông nhỏ bằng nhau.
+Cho lưới gồm 4 hàng và 2 cột ô vuông nhỏ bằng nhau.
 
 a) Lưới có bao nhiêu ô vuông nhỏ?
 b) Lưới có bao nhiêu đường kẻ ngang, bao nhiêu đường kẻ dọc?
@@ -75,12 +76,12 @@ e) Có bao nhiêu hình chữ nhật không phải hình vuông?
 
 Chú ý: chuyển đi thì bên này giảm, bên kia tăng.
 
-a) Hà và Đức có tất cả 196 quyển vở. Nếu Hà cho Đức 4 quyển thì hai bạn có số vở bằng nhau. Hỏi lúc đầu Hà có bao nhiêu quyển?
+a) Lan và Yến có tất cả 202 quyển vở. Nếu Lan cho Yến 10 quyển thì hai bạn có số vở bằng nhau. Hỏi lúc đầu Lan có bao nhiêu quyển?
 b) Sau khi cho, mỗi bạn có bao nhiêu quyển vở?
-c) Lúc đầu Đức có bao nhiêu quyển vở?
-d) Lúc đầu Hà hơn Đức bao nhiêu quyển?
-e) Một tổ có 4 bạn, mỗi bạn gấp được 9 bông hoa trong một giờ. Hỏi cả tổ gấp được bao nhiêu bông hoa trong một giờ?
-f) Cả tổ phải gấp 108 bông hoa thì làm trong mấy giờ?
+c) Lúc đầu Yến có bao nhiêu quyển vở?
+d) Lúc đầu Lan hơn Yến bao nhiêu quyển?
+e) Một tổ có 2 bạn, mỗi bạn gấp được 7 bông hoa trong một giờ. Hỏi cả tổ gấp được bao nhiêu bông hoa trong một giờ?
+f) Cả tổ phải gấp 42 bông hoa thì làm trong mấy giờ?
 
 
 ---
@@ -88,69 +89,72 @@ f) Cả tổ phải gấp 108 bông hoa thì làm trong mấy giờ?
 ## ĐÁP ÁN VÀ BIỂU ĐIỂM
 
 
-### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 1, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **243**
-b) **248**
-c) **884**
-d) **891**
-e) **468**
-f) **1 193**
+a) **381**
+b) **910**
+c) **436**
+d) **671**
+e) **224**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 790 − 547
+1. Xét ý a: 717 − 336
 2. Đọc vị: đây là dạng **Cộng, trừ số tự nhiên**; dấu hiệu là Yêu cầu “đặt tính rồi tính”.
 3. Kiến thức phải dùng: Kĩ thuật đặt tính, nhớ và mượn.
 4. Cách làm: Đặt tính thẳng hàng, tính từ hàng đơn vị.
 5. Lối tắt: Làm tròn một số hạng để ước lượng trước, dùng kết quả ước lượng để phát hiện sai sót.
-6. Kết quả: **243**.
+6. Kết quả: **381**.
 
 *Lỗi hay mắc:* Viết lệch hàng khi hai số có số chữ số khác nhau.
 
 ### Bài 2, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **92 000 đồng**
-b) **10 000 đồng**
-c) **25 tờ**
-d) **8 000 đồng**
-e) **108 000 đồng**
-f) **20 tờ**
+a) **48 000 đồng**
+b) **29 000 đồng**
+c) **2 tờ**
+d) **50 tờ**
+e) **28 000 đồng**
+f) **22 000 đồng**
 
 **Cách giải mẫu:**
 
-1. Bước 1 — tiền hàng: 18 000 × 6 = 108 000 (đồng).
-2. Bước 2 — tiền trả lại: 200 000 − 108 000 = 92 000 (đồng).
-3. Thử lại: 108 000 + 92 000 = 200 000 ✓
-4. Đáp số: **92 000 đồng**.
+1. Xét ý a: Mua 4 quyển vở, mỗi quyển 12 000 đồng. Hết bao nhiêu tiền?
+2. Đọc vị: đây là dạng **Bài toán tiền tệ hai bước**; dấu hiệu là “Đưa … đồng”, “trả lại”, “đổi ra tờ …”.
+3. Kiến thức phải dùng: Nhân, trừ với số tròn nghìn; mệnh giá tiền Việt Nam.
+4. Cách làm: Tính tiền hàng rồi trừ; đổi tiền thì chia.
+5. Lối tắt: Thử lại bằng cách cộng tiền hàng với tiền trả lại, phải đúng bằng tiền đưa.
+6. Kết quả: **48 000 đồng**.
 
 *Lỗi hay mắc:* Lấy tiền đưa trừ ngay giá một quyển vở.
 
-### Bài 3, (2 điểm — mỗi ý 0,5 điểm)
+### Bài 3, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **Quân: 85 viên, Bình: 77 viên**
-b) **Minh: 64 viên, Bình: 36 viên**
-c) **Minh: 61 viên, Sơn: 37 viên**
-d) **Khánh: 14 viên, Tuấn: 10 viên**
+a) **Sơn: 57 viên, Hùng: 53 viên**
+b) **Nam: 62 viên, Ngọc: 40 viên**
+c) **Dũng: 13 viên, Quân: 7 viên**
+d) **Dũng: 98 viên, Vy: 90 viên**
+e) **Tuấn: 52 viên, Chi: 48 viên**
+f) **Lan: 44 viên, An: 38 viên**
 
 **Cách giải mẫu:**
 
-1. Vẽ hai đoạn thẳng: đoạn của Quân dài hơn đoạn của Bình đúng 8 viên.
-2. Bước 1 — nếu bớt 8 viên của Quân thì hai đoạn bằng nhau, tổng mới là 162 − 8 = 154 (viên).
-3. Bước 2 — chia đôi tổng mới được số bi của Bình: 154 : 2 = 77 (viên).
-4. Bước 3 — số bi của Quân: 77 + 8 = 85 (viên).
-5. Thử lại: 85 + 77 = 162 ✓ và 85 − 77 = 8 ✓
-6. Đáp số: **Quân 85 viên, Bình 77 viên**.
+1. Vẽ hai đoạn thẳng: đoạn của Sơn dài hơn đoạn của Hùng đúng 4 viên.
+2. Bước 1 — nếu bớt 4 viên của Sơn thì hai đoạn bằng nhau, tổng mới là 110 − 4 = 106 (viên).
+3. Bước 2 — chia đôi tổng mới được số bi của Hùng: 106 : 2 = 53 (viên).
+4. Bước 3 — số bi của Sơn: 53 + 4 = 57 (viên).
+5. Thử lại: 57 + 53 = 110 ✓ và 57 − 53 = 4 ✓
+6. Đáp số: **Sơn 57 viên, Hùng 53 viên**.
 
 *Lỗi hay mắc:* Chia đôi tổng ngay rồi cộng hiệu vào cả hai số.
 
 ### Bài 4, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **16**
-b) **5 đường ngang, 5 đường dọc**
-c) **100**
-d) **30**
-e) **70**
+a) **8**
+b) **5 đường ngang, 3 đường dọc**
+c) **30**
+d) **11**
+e) **19**
 
 **Cách giải mẫu:**
 
@@ -159,26 +163,26 @@ e) **70**
 3. Kiến thức phải dùng: Quy tắc đếm.
 4. Cách làm: Đếm theo đường kẻ hoặc theo cỡ.
 5. Lối tắt: Số cách chọn 2 trong k là k × (k − 1) : 2.
-6. Kết quả: **16**.
+6. Kết quả: **8**.
 
 *Lỗi hay mắc:* Chỉ đếm ô nhỏ, quên hình ghép từ nhiều ô.
 
 ### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **102 quyển**
-b) **98 quyển**
-c) **94 quyển**
-d) **8 quyển**
-e) **36 bông**
+a) **111 quyển**
+b) **101 quyển**
+c) **91 quyển**
+d) **20 quyển**
+e) **14 bông**
 f) **3 giờ**
 
 **Cách giải mẫu:**
 
-1. Sau khi cho, hai bạn bằng nhau, nên mỗi bạn có 196 : 2 = 98 (quyển).
-2. Hà đã cho đi 4 quyển, nên lúc đầu Hà có 98 + 4 = 102 (quyển).
-3. Lúc đầu Đức có 196 − 102 = 94 (quyển).
-4. Hiệu lúc đầu: 102 − 94 = 8 (quyển) — đúng bằng hai lần số vở đã chuyển.
-5. Đáp số: **lúc đầu Hà có 102 quyển**.
+1. Sau khi cho, hai bạn bằng nhau, nên mỗi bạn có 202 : 2 = 101 (quyển).
+2. Lan đã cho đi 10 quyển, nên lúc đầu Lan có 101 + 10 = 111 (quyển).
+3. Lúc đầu Yến có 202 − 111 = 91 (quyển).
+4. Hiệu lúc đầu: 111 − 91 = 20 (quyển) — đúng bằng hai lần số vở đã chuyển.
+5. Đáp số: **lúc đầu Lan có 111 quyển**.
 
 *Lỗi hay mắc:* Cho rằng hiệu lúc đầu bằng đúng số vở đã chuyển.
 

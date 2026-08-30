@@ -44,7 +44,7 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 > **KIẾN THỨC NỀN CỦA CHƯƠNG**
 > 1. Diện tích hình chữ nhật, hình vuông; phép chia
-> 2. Quan hệ đường kính – bán kính
+> 2. Chu vi, đường bao của hình
 > 3. Công thức chu vi, diện tích; phép tính ngược
 > 4. Công thức chu vi, diện tích; phép chia
 
@@ -52,57 +52,56 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN I — THỬ THÁCH CÁ NHÂN — TĂNG TỐC · Mức M2 — Thông hiểu · 20 phút · 20 điểm
 
-### Bài 1. (4 điểm) Diện tích hình bình hành, hình thoi, hình tam giác
-
-Áp dụng đúng công thức từng hình.
-
-a) Hình bình hành có đáy 23 cm, chiều cao 6 cm. Tính diện tích.
-b) Hình tam giác có đáy 33 cm, chiều cao 30 cm. Tính diện tích.
-c) Hình thoi có hai đường chéo dài 32 cm và 6 cm. Tính diện tích.
-d) Hình thoi có hai đường chéo dài 30 cm và 18 cm. Tính diện tích.
-e) Hình tam giác có đáy 8 cm, chiều cao 5 cm. Tính diện tích.
-
-### Bài 2. (4 điểm) Giả thiết tạm với hai loại đối tượng
-
-Dùng phương pháp giả thiết tạm.
-
-a) Trong sân có 38 chiếc xe ô tô và xe ba bánh, đếm được tất cả 132 bánh xe. Hỏi mỗi loại có bao nhiêu chiếc?
-b) Trong sân có 45 chiếc xe ô tô và xe đạp, đếm được tất cả 144 bánh xe. Hỏi mỗi loại có bao nhiêu chiếc?
-c) Trong sân có 11 chiếc xe ba bánh và xe ô tô, đếm được tất cả 36 bánh xe. Hỏi mỗi loại có bao nhiêu chiếc?
-d) Trong sân có 32 chiếc xe đạp và xe ô tô, đếm được tất cả 82 bánh xe. Hỏi mỗi loại có bao nhiêu chiếc?
-
-### Bài 3. (4 điểm) Bài toán thực tế về chu vi và diện tích
-
-Đọc kĩ xem bài hỏi chu vi hay diện tích.
-
-a) Một mảnh đất hình chữ nhật dài 19 m, rộng 5 m. Người ta trồng cây quanh mảnh đất, hai cây liền nhau cách nhau 4 m. Hỏi cần bao nhiêu cây?
-b) Một mảnh vườn hình chữ nhật dài 79 m, rộng 64 m. Người ta rào xung quanh mảnh vườn. Hỏi cần bao nhiêu mét rào?
-c) Một mảnh vườn hình chữ nhật dài 61 m, rộng 29 m. Người ta rào xung quanh mảnh vườn. Hỏi cần bao nhiêu mét rào?
-d) Một mảnh vườn hình chữ nhật dài 35 m, rộng 21 m. Người ta rào xung quanh mảnh vườn. Hỏi cần bao nhiêu mét rào?
-e) Một nền nhà hình chữ nhật dài 36 dm, rộng 14 dm, lát bằng gạch vuông cạnh 4 dm. Hỏi cần bao nhiêu viên gạch?
-f) Một mảnh vườn hình chữ nhật dài 35 m, rộng 9 m. Người ta rào xung quanh mảnh vườn. Hỏi cần bao nhiêu mét rào?
-
-### Bài 4. (4 điểm) Dãy hình xếp theo quy luật
-
-Quan sát quy luật số que diêm rồi trả lời.
-
-a) Hình thứ 1 có 4 que diêm, mỗi hình sau hơn hình liền trước 5 que. Hình thứ 4 có bao nhiêu que diêm?
-b) Hình thứ 1 có 4 que diêm, mỗi hình sau hơn hình liền trước 5 que. Hình thứ 6 có bao nhiêu que diêm?
-c) Hình thứ 1 có 4 que diêm, mỗi hình sau hơn hình liền trước 5 que. Hình thứ 11 có bao nhiêu que diêm?
-d) Hình thứ 1 có 4 que diêm, mỗi hình sau hơn hình liền trước 5 que. Hình thứ 15 có bao nhiêu que diêm?
-e) Hình thứ 1 có 4 que diêm, mỗi hình sau hơn hình liền trước 5 que. Hình thứ 16 có bao nhiêu que diêm?
-f) Hình thứ 1 có 4 que diêm, mỗi hình sau hơn hình liền trước 5 que. Hình thứ 17 có bao nhiêu que diêm?
-g) Xếp liên tiếp 18 hình đầu tiên thì cần tất cả bao nhiêu que diêm?
-
-### Bài 5. (4 điểm) Hình tròn: tâm, bán kính, đường kính
+### Bài 1. (4 điểm) Hình tròn: tâm, bán kính, đường kính
 
 Vẽ hình tròn và ghi kí hiệu lên hình.
 
-a) Hình tròn có đường kính 14 cm. Bán kính dài bao nhiêu?
-b) Hình tròn A có bán kính 29 cm, hình tròn B có đường kính 10 cm. Hình nào lớn hơn?
-c) Hình tròn có bán kính 38 cm. Đường kính dài bao nhiêu?
-d) Hình tròn A có bán kính 6 cm, hình tròn B có đường kính 8 cm. Hình nào lớn hơn?
-e) Hình tròn có đường kính 12 cm. Bán kính dài bao nhiêu?
+a) Hình tròn có bán kính 31 cm. Đường kính dài bao nhiêu?
+b) Hình tròn có đường kính 34 cm. Bán kính dài bao nhiêu?
+c) Hình tròn A có bán kính 20 cm, hình tròn B có đường kính 40 cm. Hình nào lớn hơn?
+d) Hình tròn có đường kính 68 cm. Bán kính dài bao nhiêu?
+e) Hình tròn có bán kính 11 cm. Đường kính dài bao nhiêu?
+f) Hình tròn A có bán kính 24 cm, hình tròn B có đường kính 48 cm. Hình nào lớn hơn?
+g) Hình tròn A có bán kính 25 cm, hình tròn B có đường kính 56 cm. Hình nào lớn hơn?
+
+### Bài 2. (4 điểm) Bài toán thực tế về chu vi và diện tích
+
+Đọc kĩ xem bài hỏi chu vi hay diện tích.
+
+a) Một mảnh đất hình chữ nhật dài 10 m, rộng 6 m. Người ta trồng cây quanh mảnh đất, hai cây liền nhau cách nhau 2 m. Hỏi cần bao nhiêu cây?
+b) Một mảnh vườn hình chữ nhật dài 13 m, rộng 9 m. Người ta rào xung quanh mảnh vườn. Hỏi cần bao nhiêu mét rào?
+c) Một mảnh đất hình chữ nhật dài 10 m, rộng 9 m. Người ta trồng cây quanh mảnh đất, hai cây liền nhau cách nhau 4 m. Hỏi cần bao nhiêu cây?
+d) Một nền nhà hình chữ nhật dài 73 dm, rộng 57 dm, lát bằng gạch vuông cạnh 5 dm. Hỏi cần bao nhiêu viên gạch?
+e) Một nền nhà hình chữ nhật dài 63 dm, rộng 35 dm, lát bằng gạch vuông cạnh 5 dm. Hỏi cần bao nhiêu viên gạch?
+
+### Bài 3. (4 điểm) Rào quanh mảnh vườn
+
+Một mảnh vườn hình chữ nhật dài **36 m**, rộng **18 m**.
+
+a) Tính chu vi mảnh vườn.
+b) Rào quanh vườn hết bao nhiêu mét lưới, biết chừa một cửa rộng 2 m?
+c) Cắm cọc quanh vườn, hai cọc liền nhau cách nhau 2 m. Cần bao nhiêu cọc?
+d) Mỗi mét lưới giá 30 000 đồng. Mua lưới rào hết bao nhiêu tiền?
+e) Diện tích mảnh vườn là bao nhiêu?
+
+### Bài 4. (4 điểm) Diện tích hình bình hành, hình thoi, hình tam giác
+
+Áp dụng đúng công thức từng hình.
+
+a) Hình bình hành có đáy 13 cm, chiều cao 12 cm. Tính diện tích.
+b) Hình tam giác có đáy 20 cm, chiều cao 30 cm. Tính diện tích.
+c) Hình thoi có hai đường chéo dài 24 cm và 28 cm. Tính diện tích.
+d) Hình bình hành có đáy 36 cm, chiều cao 17 cm. Tính diện tích.
+
+### Bài 5. (4 điểm) Tính chất chia hết của tổng và hiệu
+
+Trả lời và giải thích ngắn gọn, không cần tính ra kết quả tổng.
+
+a) Tổng 86 + 1 có chia hết cho 2 không? Nếu không, số dư bằng bao nhiêu?
+b) Tổng 144 + 1 có chia hết cho 3 không? Nếu không, số dư bằng bao nhiêu?
+c) Hiệu 222 − 132 có chia hết cho 3 không?
+d) Tổng 108 + 1 có chia hết cho 2 không? Nếu không, số dư bằng bao nhiêu?
+e) Tổng 234 + 279 có chia hết cho 9 không?
 
 ---
 
@@ -112,162 +111,156 @@ e) Hình tròn có đường kính 12 cm. Bán kính dài bao nhiêu?
 
 Vẽ hình và kẻ lưới ra nháp.
 
-a) Một hình chữ nhật 4 cm × 2 cm được phủ kín bằng các hình vuông cạnh 1 cm. Cần bao nhiêu hình vuông?
+a) Một hình chữ nhật 12 cm × 2 cm được phủ kín bằng các hình vuông cạnh 2 cm. Cần bao nhiêu hình vuông?
 b) Diện tích hình chữ nhật ấy bằng bao nhiêu?
 c) Diện tích mỗi hình vuông nhỏ bằng bao nhiêu?
 d) Chia hình chữ nhật ấy thành 2 phần bằng nhau thì mỗi phần có diện tích bao nhiêu?
 e) Chia thành 4 phần bằng nhau thì mỗi phần bao nhiêu?
 f) Nếu ghép hai hình chữ nhật ấy theo chiều dài thì hình mới có chu vi bao nhiêu?
 
-### Bài 2. (4 điểm) Đếm tam giác và đoạn thẳng
+### Bài 2. (4 điểm) Tổng của các số tự nhiên liên tiếp
+
+Với mỗi ý, tìm số theo yêu cầu.
+
+a) Tổng của 7 số tự nhiên liên tiếp bằng 3 500. Tìm số bé nhất trong 7 số đó.
+b) Tổng của 7 số tự nhiên liên tiếp bằng 2 905. Tìm số bé nhất trong 7 số đó.
+c) Tổng của 5 số tự nhiên liên tiếp bằng 175. Tìm số bé nhất trong 5 số đó.
+d) Tổng của 3 số tự nhiên liên tiếp bằng 624. Tìm số bé nhất trong 3 số đó.
+e) Tổng của 7 số tự nhiên liên tiếp bằng 3 262. Tìm số bé nhất trong 7 số đó.
+f) Tổng của 5 số tự nhiên liên tiếp bằng 2 220. Tìm số bé nhất trong 5 số đó.
+
+### Bài 3. (4 điểm) Lát gạch nền nhà
+
+Một căn phòng hình chữ nhật dài **5 m**, rộng **3 m**, lát bằng gạch vuông cạnh **20 cm**.
+
+a) Tính diện tích nền nhà theo mét vuông.
+b) Đổi diện tích nền nhà ra xăng-ti-mét vuông.
+c) Diện tích một viên gạch là bao nhiêu xăng-ti-mét vuông?
+d) Cần bao nhiêu viên gạch để lát kín nền nhà?
+e) Mỗi viên gạch giá 18 000 đồng. Mua gạch lát hết bao nhiêu tiền?
+
+### Bài 4. (4 điểm) Hai nhóm có phần chung — đếm bằng hai vòng tròn
+
+Vẽ hai vòng tròn và điền số vào ba phần trước khi tính.
+
+a) Lớp 5A có 31 học sinh. Có 15 em học tiếng Anh, 17 em học vẽ, trong đó 7 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
+b) Lớp 4B có 41 học sinh. Có 23 em học vẽ, 21 em học hát, trong đó 9 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
+c) Lớp 5A có 32 học sinh. Có 14 em học bóng rổ, 22 em học cờ vua, trong đó 6 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
+d) Lớp 4B có 34 học sinh. Có 20 em học tiếng Anh, 13 em học vẽ, trong đó 3 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
+e) Lớp 4A có 21 học sinh. Có 10 em học bơi, 10 em học cờ vua, trong đó 4 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
+
+### Bài 5. (4 điểm) Đếm tam giác và đoạn thẳng
 
 Đếm có hệ thống, nêu cách đếm.
 
-a) Từ một đỉnh của tam giác lớn kẻ 4 đoạn thẳng tới cạnh đối diện. Có tất cả bao nhiêu tam giác trong hình?
+a) Từ một đỉnh của tam giác lớn kẻ 6 đoạn thẳng tới cạnh đối diện. Có tất cả bao nhiêu tam giác trong hình?
 b) Trong đó có bao nhiêu tam giác nhỏ nhất (không bị chia tiếp)?
 c) Trên một đường thẳng lấy 3 điểm phân biệt. Có bao nhiêu đoạn thẳng được tạo thành?
 d) Nếu lấy thêm một điểm nữa trên đường thẳng đó thì có thêm bao nhiêu đoạn thẳng?
 e) Với 4 điểm thì có tất cả bao nhiêu đoạn thẳng?
 
-### Bài 3. (4 điểm) Dãy số cho bởi quy tắc truy hồi
-
-Dãy số được lập theo ba quy tắc sau.
-
-- Số hạng đầu bằng 1.
-- Số hạng ở **vị trí chẵn** bằng số hạng liền trước nhân 2 rồi cộng 2.
-- Số hạng ở **vị trí lẻ** bằng số hạng liền trước cộng 2 nhân với số thứ tự của số hạng liền trước.
-
-a) Viết ba số hạng đầu tiên của dãy.
-b) Số hạng thứ 5 của dãy là số nào?
-c) Số hạng thứ 7 của dãy là số nào?
-d) Số hạng thứ 9 của dãy là số nào?
-e) Từ số hạng thứ 4 đến số hạng thứ 6, dãy tăng thêm bao nhiêu đơn vị?
-
-### Bài 4. (4 điểm) Tổng của các số tự nhiên liên tiếp
-
-Với mỗi ý, tìm số theo yêu cầu.
-
-a) Tổng của 3 số tự nhiên liên tiếp bằng 444. Tìm số bé nhất trong 3 số đó.
-b) Tổng của 9 số tự nhiên liên tiếp bằng 2 232. Tìm số bé nhất trong 9 số đó.
-c) Tổng của 7 số tự nhiên liên tiếp bằng 2 954. Tìm số bé nhất trong 7 số đó.
-d) Tổng của 3 số tự nhiên liên tiếp bằng 453. Tìm số bé nhất trong 3 số đó.
-e) Tổng của 7 số tự nhiên liên tiếp bằng 1 988. Tìm số bé nhất trong 7 số đó.
-
-### Bài 5. (4 điểm) Chữ số tận cùng của tổng, hiệu, tích
-
-Không tính hết phép tính, chỉ tìm chữ số tận cùng.
-
-a) Tổng 8 017 + 5 356 có chữ số tận cùng là chữ số nào?
-b) Hiệu 8 057 − 3 532 có chữ số tận cùng là chữ số nào?
-c) Tích 9 718 × 6 518 có chữ số tận cùng là chữ số nào?
-d) Tích 788 × 5 004 có chữ số tận cùng là chữ số nào?
-
 ---
 
 ## PHẦN III — ÔN THEO MA TRẬN ĐỀ · Mức M3 — Vận dụng · 20 phút · 25 điểm
 
-### Bài 1. (5 điểm) Tìm số ban đầu bằng cách tính ngược
+### Bài 1. (5 điểm) Đọc và phân tích bảng số liệu
 
-Vẽ sơ đồ mũi tên trước khi tính. Tính xong phải thử lại theo chiều xuôi.
+Bảng thống kê số học sinh đăng kí câu lạc bộ theo môn: **Toán: 13 · Tiếng Việt: 6 · Tiếng Anh: 5 · Khoa học: 7 · Lịch sử: 20**.
 
-a) Em nghĩ ra một số. Lấy số ấy nhân với 9, được bao nhiêu thì cộng thêm 15, rồi chia cho 3 thì được 143. Hỏi số em nghĩ ra là số nào?
-b) Em nghĩ ra một số. Lấy số ấy nhân với 3, được bao nhiêu thì cộng thêm 28, rồi chia cho 4 thì được 34. Hỏi số em nghĩ ra là số nào?
-c) Em nghĩ ra một số. Lấy số ấy nhân với 9, được bao nhiêu thì cộng thêm 24, rồi chia cho 3 thì được 41. Hỏi số em nghĩ ra là số nào?
-d) Em nghĩ ra một số. Lấy số ấy nhân với 6, được bao nhiêu thì cộng thêm 6, rồi chia cho 6 thì được 61. Hỏi số em nghĩ ra là số nào?
-e) Em nghĩ ra một số. Lấy số ấy nhân với 5, được bao nhiêu thì cộng thêm 36, rồi chia cho 4 thì được 69. Hỏi số em nghĩ ra là số nào?
-f) Em nghĩ ra một số. Lấy số ấy nhân với 9, được bao nhiêu thì cộng thêm 27, rồi chia cho 6 thì được 39. Hỏi số em nghĩ ra là số nào?
+a) Tổng số học sinh đăng kí là bao nhiêu?
+b) Môn nào có nhiều học sinh đăng kí nhất?
+c) Môn nào có ít học sinh đăng kí nhất?
+d) Môn nhiều nhất hơn môn ít nhất bao nhiêu bạn?
+e) Trung bình mỗi môn có bao nhiêu học sinh đăng kí?
+f) Số học sinh đăng kí môn Toán chiếm bao nhiêu phần trăm tổng số (làm tròn đến hàng đơn vị)?
 
-### Bài 2. (5 điểm) Nguyên lý bù trừ với hai tập hợp
+### Bài 2. (5 điểm) Tính thời điểm đến, thời gian đi
 
-Vẽ hai vòng tròn giao nhau và điền số vào từng miền.
+Ghi kết quả theo giờ và phút.
 
-a) Lớp có 33 học sinh. Có 17 bạn thích môn Toán, 24 bạn thích môn Tiếng Việt, 13 bạn thích cả hai môn. Hỏi bao nhiêu bạn thích ít nhất một trong hai môn?
-b) Bao nhiêu bạn chỉ thích môn Toán?
-c) Bao nhiêu bạn chỉ thích môn Tiếng Việt?
-d) Bao nhiêu bạn không thích môn nào trong hai môn đó?
-e) Nếu cộng thẳng số bạn thích Toán với số bạn thích Tiếng Việt thì được bao nhiêu?
-f) Con số vừa cộng lớn hơn số bạn thích ít nhất một môn bao nhiêu? Vì sao?
+a) Một chuyến tàu khởi hành lúc 12 giờ 40 phút và đi hết 49 phút. Tàu đến nơi lúc mấy giờ?
+b) Một chuyến tàu khởi hành lúc 5 giờ 0 phút và đi hết 1 giờ 34 phút. Tàu đến nơi lúc mấy giờ?
+c) Một chuyến tàu khởi hành lúc 15 giờ 0 phút và đi hết 2 giờ 40 phút. Tàu đến nơi lúc mấy giờ?
+d) Một chuyến tàu khởi hành lúc 15 giờ 10 phút và đi hết 3 giờ 52 phút. Tàu đến nơi lúc mấy giờ?
+e) Một chuyến tàu khởi hành lúc 13 giờ 30 phút và đi hết 3 giờ 58 phút. Tàu đến nơi lúc mấy giờ?
 
-### Bài 3. (5 điểm) Tính nhanh tổng dãy số cách đều
+### Bài 3. (5 điểm) Tính tiền hoá đơn theo hai cách
 
-Tính tổng mỗi dãy.
+Một quầy bán bánh, mỗi hộp **12 000 đồng**.
 
-a) 2 + 4 + 6 + … + 100
-b) 3 + 6 + 9 + … + 75
-c) 2 + 3 + 4 + … + 21
-d) 2 + 7 + 12 + … + 47
-e) 2 + 3 + 4 + … + 101
+a) Buổi sáng bán 16 hộp, buổi chiều bán 5 hộp. Tính tiền buổi sáng.
+b) Tính tiền buổi chiều.
+c) Cộng tiền hai buổi.
+d) Cách khác: cộng số hộp cả ngày trước rồi mới nhân với đơn giá. Viết phép tính và kết quả.
+e) Hôm sau bán được nhiều hơn hôm nay 5 hộp. Tiền hôm sau nhiều hơn hôm nay bao nhiêu?
 
-### Bài 4. (5 điểm) So sánh hai biểu thức mà không cần tính
+### Bài 4. (5 điểm) Chữ số tận cùng của tổng, hiệu, tích
 
-Điền dấu <, >, = và giải thích ngắn.
+Không tính hết phép tính, chỉ tìm chữ số tận cùng.
 
-a) 387 × 8 … 484 × 8
-b) 732 + 22 … 672 + 22
-c) 607 + 28 … 865 + 28
-d) 745 × 5 … 273 × 5
-e) 457 × 14 … 457 × 15
+a) Hiệu 6 436 − 1 033 có chữ số tận cùng là chữ số nào?
+b) Tích 3 183 × 7 588 có chữ số tận cùng là chữ số nào?
+c) Tổng 7 097 + 8 832 có chữ số tận cùng là chữ số nào?
+d) Hiệu 9 737 − 7 617 có chữ số tận cùng là chữ số nào?
 
-### Bài 5. (5 điểm) Cấu tạo số có hai chữ số
+### Bài 5. (5 điểm) Tìm số bằng cách thử và loại
 
-Trình bày lời giải ngắn gọn cho từng ý.
+Với mỗi câu, viết ra danh sách đã thử rồi mới ghi đáp số. Đáp số có thể gồm nhiều số.
 
-a) Tìm số có hai chữ số, biết tổng hai chữ số bằng 12 và chữ số hàng đơn vị hơn chữ số hàng chục 4 đơn vị.
-b) Số có hai chữ số 16; đổi chỗ hai chữ số ta được số nào? Hiệu của hai số đó bằng bao nhiêu?
-c) Tìm số có hai chữ số, biết tổng hai chữ số bằng 10 và chữ số hàng đơn vị hơn chữ số hàng chục 8 đơn vị.
-d) Số có hai chữ số 85; đổi chỗ hai chữ số ta được số nào? Hiệu của hai số đó bằng bao nhiêu?
-e) Số có hai chữ số 89; đổi chỗ hai chữ số ta được số nào? Hiệu của hai số đó bằng bao nhiêu?
-f) Chữ số hàng chục của số 63 gấp mấy lần chữ số hàng đơn vị (nếu chia hết), hoặc hơn bao nhiêu đơn vị?
+a) Tìm mọi số có hai chữ số vừa chia hết cho 4, vừa có tổng hai chữ số bằng 10.
+b) Tìm mọi số có hai chữ số vừa chia hết cho 6, vừa có tổng hai chữ số bằng 9.
+c) Tìm mọi số có hai chữ số vừa chia hết cho 3, vừa có tổng hai chữ số bằng 6.
+d) Tìm mọi số có hai chữ số vừa chia hết cho 5, vừa có tổng hai chữ số bằng 14.
+e) Tìm mọi số có hai chữ số vừa chia hết cho 5, vừa có tổng hai chữ số bằng 6.
+f) Tìm mọi số có hai chữ số vừa chia hết cho 4, vừa có tổng hai chữ số bằng 11.
 
 ---
 
 ## PHẦN IV — BÀI PHÂN HOÁ · Mức M4 — Vận dụng cao · 20 phút · 25 điểm
 
-### Bài 1. (5 điểm) Tính tiền vé cho cả gia đình
+### Bài 1. (5 điểm) Ghép người với môn bằng bảng đúng – sai
 
-Trước khi tính, gạch chân câu hỏi và khoanh tròn dữ kiện **không** dùng tới.
+Bắt buộc kẻ bảng ra giấy. Không được suy luận nhẩm ở bài này.
 
-a) Một gia đình gồm 2 người lớn và 3 trẻ em đi tham quan cách nhà 175 km. Vé người lớn 140 000 đồng, vé trẻ em bằng nửa vé người lớn. Hỏi cả gia đình mua vé hết bao nhiêu tiền?
-b) Một gia đình gồm 5 người lớn và 2 trẻ em đi tham quan cách nhà 128 km. Vé người lớn 130 000 đồng, vé trẻ em bằng nửa vé người lớn. Hỏi cả gia đình mua vé hết bao nhiêu tiền?
-c) Một gia đình gồm 5 người lớn và 5 trẻ em đi tham quan cách nhà 137 km. Vé người lớn 110 000 đồng, vé trẻ em bằng nửa vé người lớn. Hỏi cả gia đình mua vé hết bao nhiêu tiền?
-d) Một gia đình gồm 3 người lớn và 6 trẻ em đi tham quan cách nhà 123 km. Vé người lớn 60 000 đồng, vé trẻ em bằng nửa vé người lớn. Hỏi cả gia đình mua vé hết bao nhiêu tiền?
+a) Ba bạn Minh, Sơn và Phúc mỗi bạn học một môn năng khiếu khác nhau trong ba môn: tiếng Anh, tin học và mĩ thuật. Biết rằng: Minh không học tiếng Anh và cũng không học tin học; Sơn không học tin học. Hỏi mỗi bạn học môn nào?
+b) Ba bạn Chi, Lan và Hà mỗi bạn học một môn năng khiếu khác nhau trong ba môn: bóng đá, cầu lông và bóng rổ. Biết rằng: Chi không học bóng đá và cũng không học bóng rổ; Lan không học bóng rổ. Hỏi mỗi bạn học môn nào?
+c) Ba bạn Nam, Bình và Hùng mỗi bạn học một môn năng khiếu khác nhau trong ba môn: tiếng Anh, tin học và mĩ thuật. Biết rằng: Nam không học tin học và cũng không học mĩ thuật; Bình không học mĩ thuật. Hỏi mỗi bạn học môn nào?
+d) Ba bạn Ngọc, Hùng và Dũng mỗi bạn học một môn năng khiếu khác nhau trong ba môn: hát, múa và đàn. Biết rằng: Ngọc không học múa và cũng không học hát; Hùng không học hát. Hỏi mỗi bạn học môn nào?
 
-### Bài 2. (5 điểm) Diện tích thay đổi khi kích thước thay đổi
+### Bài 2. (5 điểm) Đặt chữ thay chữ số rồi lập luận
+
+Câu nào cũng phải viết cấu tạo số ra trước khi tính.
+
+a) Số có hai chữ số ab. Khi đổi chỗ hai chữ số thì được số mới nhỏ hơn số cũ 18 đơn vị, và tổng hai chữ số bằng 4. Tìm số ab.
+b) Tìm mọi số có hai chữ số mà số đó bằng 6 lần tổng hai chữ số của nó.
+c) Tìm mọi số có hai chữ số mà số đó bằng 9 lần tổng hai chữ số của nó.
+d) Số có hai chữ số ab. Khi đổi chỗ hai chữ số thì được số mới nhỏ hơn số cũ 27 đơn vị, và tổng hai chữ số bằng 7. Tìm số ab.
+
+### Bài 3. (5 điểm) Diện tích thay đổi khi kích thước thay đổi
 
 Vẽ hình minh hoạ phần tăng thêm.
 
-a) Hình chữ nhật dài 33 cm, rộng 7 cm. Nếu tăng chiều dài thêm 5 cm (giữ nguyên chiều rộng) thì diện tích tăng thêm bao nhiêu?
-b) Hình chữ nhật dài 48 cm, rộng 34 cm. Nếu tăng chiều dài thêm 5 cm (giữ nguyên chiều rộng) thì diện tích tăng thêm bao nhiêu?
-c) Hình chữ nhật dài 20 cm, rộng 4 cm. Nếu gấp đôi chiều dài và giữ nguyên chiều rộng thì diện tích mới gấp mấy lần diện tích cũ?
-d) Hình chữ nhật dài 22 cm, rộng 4 cm. Nếu tăng chiều dài thêm 14 cm (giữ nguyên chiều rộng) thì diện tích tăng thêm bao nhiêu?
-e) Hình chữ nhật dài 9 cm, rộng 7 cm. Nếu gấp đôi chiều dài và giữ nguyên chiều rộng thì diện tích mới gấp mấy lần diện tích cũ?
-f) Hình chữ nhật dài 21 cm, rộng 5 cm. Nếu tăng chiều dài thêm 6 cm (giữ nguyên chiều rộng) thì diện tích tăng thêm bao nhiêu?
-
-### Bài 3. (5 điểm) Nhận ra thừa số 0 để tính tức thì
-
-Tính bằng cách nhanh nhất.
-
-a) 86 × 19 × (46 − 46)
-b) (44 × 22 − 22 × 44) × 40
-c) 26 × 29 + 26 × 49 − 26 × (29 + 49)
-d) 80 × 33 × (29 − 29)
-e) (86 × 77 − 77 × 86) × 60
+a) Hình chữ nhật dài 42 cm, rộng 29 cm. Nếu gấp đôi chiều dài và giữ nguyên chiều rộng thì diện tích mới gấp mấy lần diện tích cũ?
+b) Hình chữ nhật dài 24 cm, rộng 14 cm. Nếu tăng cả chiều dài và chiều rộng thêm 6 cm thì diện tích tăng thêm bao nhiêu?
+c) Hình chữ nhật dài 38 cm, rộng 11 cm. Nếu tăng chiều dài thêm 13 cm (giữ nguyên chiều rộng) thì diện tích tăng thêm bao nhiêu?
+d) Hình chữ nhật dài 35 cm, rộng 10 cm. Nếu tăng chiều dài thêm 15 cm (giữ nguyên chiều rộng) thì diện tích tăng thêm bao nhiêu?
+e) Hình chữ nhật dài 19 cm, rộng 17 cm. Nếu gấp đôi chiều dài và giữ nguyên chiều rộng thì diện tích mới gấp mấy lần diện tích cũ?
 
 ### Bài 4. (5 điểm) Hình chữ nhật — tổng hợp chu vi, diện tích và chuyển động
 
 Bài nhiều ý nối tiếp, ý sau dùng kết quả ý trước.
 
-a) Hình chữ nhật có chiều dài 20 m, chiều rộng 14 m. Tính chu vi.
+a) Hình chữ nhật có chiều dài 20 m, chiều rộng 5 m. Tính chu vi.
 b) Tính diện tích hình chữ nhật đó.
-c) Một người đi bộ quanh hình chữ nhật ấy với vận tốc 4 m/giây. Hỏi đi hết một vòng mất bao nhiêu giây?
-d) Nếu tăng chiều dài thêm 10 m thì diện tích tăng thêm bao nhiêu?
+c) Một người đi bộ quanh hình chữ nhật ấy với vận tốc 2 m/giây. Hỏi đi hết một vòng mất bao nhiêu giây?
+d) Nếu tăng chiều dài thêm 8 m thì diện tích tăng thêm bao nhiêu?
 e) Khi đó chu vi tăng thêm bao nhiêu mét?
-f) Nếu tăng cả chiều dài và chiều rộng thêm 10 m thì diện tích mới bằng bao nhiêu?
+f) Nếu tăng cả chiều dài và chiều rộng thêm 8 m thì diện tích mới bằng bao nhiêu?
 g) Diện tích tăng thêm khi tăng cả hai chiều bằng bao nhiêu?
 
 ### Bài 5. (5 điểm) Tổng, trung bình cộng của dãy cách đều
 
-Một dãy cách đều có 10 số hạng, khoảng cách 3 đơn vị, số hạng cuối là 102.
+Một dãy cách đều có 40 số hạng, khoảng cách 2 đơn vị, số hạng cuối là 90.
 
 a) Số hạng đầu của dãy là số nào?
 b) Số hạng cuối của dãy là số nào?
@@ -282,7 +275,7 @@ f) Tổng của số hạng thứ hai và số hạng áp chót bằng bao nhiê
 
 ### Bài 1. (2 điểm) Phản biện đề số 1
 
-**Đề:** Đọc kĩ xem bài hỏi chu vi hay diện tích. Một nền nhà hình chữ nhật dài 25 dm, rộng 21 dm, lát bằng gạch vuông cạnh 4 dm. Hỏi cần bao nhiêu viên gạch?
+**Đề:** Một mảnh vườn hình chữ nhật dài **36 m**, rộng **12 m**. Tính chu vi mảnh vườn.
 
 Hai bạn thi đấu: một bạn trình bày lời giải, bạn kia phản biện bằng bảng phân tích sáu cột.
 
@@ -295,7 +288,7 @@ f) Cột 6 — Kết quả?
 
 ### Bài 2. (2 điểm) Phản biện đề số 2
 
-**Đề:** Dùng ê ke và thước đo góc để kiểm chứng. Hình chữ nhật có mấy cặp cạnh song song và mấy cặp cạnh vuông góc?
+**Đề:** Đọc kĩ xem bài hỏi chu vi hay diện tích. Một mảnh đất hình chữ nhật dài 72 m, rộng 13 m. Người ta trồng cây quanh mảnh đất, hai cây liền nhau cách nhau 5 m. Hỏi cần bao nhiêu cây?
 
 Hai bạn thi đấu: một bạn trình bày lời giải, bạn kia phản biện bằng bảng phân tích sáu cột.
 
@@ -308,7 +301,7 @@ f) Cột 6 — Kết quả?
 
 ### Bài 3. (2 điểm) Phản biện đề số 3
 
-**Đề:** Đếm có hệ thống, nêu cách đếm. Từ một đỉnh của tam giác lớn kẻ 3 đoạn thẳng tới cạnh đối diện. Có tất cả bao nhiêu tam giác trong hình?
+**Đề:** Chú ý các cạnh bị ghép vào bên trong. Ghép 2 hình vuông cạnh 14 cm thành một hàng ngang. Tính chu vi hình chữ nhật thu được.
 
 Hai bạn thi đấu: một bạn trình bày lời giải, bạn kia phản biện bằng bảng phân tích sáu cột.
 
@@ -321,7 +314,7 @@ f) Cột 6 — Kết quả?
 
 ### Bài 4. (2 điểm) Phản biện đề số 4
 
-**Đề:** Bài nhiều ý nối tiếp, ý sau dùng kết quả ý trước. Hình chữ nhật có chiều dài 49 m, chiều rộng 42 m. Tính chu vi.
+**Đề:** Bài nhiều ý nối tiếp, ý sau dùng kết quả ý trước. Hình chữ nhật có chiều dài 42 m, chiều rộng 32 m. Tính chu vi.
 
 Hai bạn thi đấu: một bạn trình bày lời giải, bạn kia phản biện bằng bảng phân tích sáu cột.
 
@@ -334,7 +327,7 @@ f) Cột 6 — Kết quả?
 
 ### Bài 5. (2 điểm) Phản biện đề số 5
 
-**Đề:** Áp dụng đúng công thức từng hình. Hình tam giác có đáy 15 cm, chiều cao 20 cm. Tính diện tích.
+**Đề:** Tính theo yêu cầu, ghi rõ đơn vị. Hình vuông có cạnh 14 cm. Tính chu vi.
 
 Hai bạn thi đấu: một bạn trình bày lời giải, bạn kia phản biện bằng bảng phân tích sáu cột.
 
@@ -352,163 +345,163 @@ f) Cột 6 — Kết quả?
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài I.1
-**Đáp số:** a) 138 cm² · b) 495 cm² · c) 96 cm² · d) 270 cm² · e) 20 cm²
-**Hướng giải:** Hình bình hành: S = đáy × chiều cao. Hình thoi: S = tích hai đường chéo chia 2. Hình tam giác: S = đáy × chiều cao chia 2.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Hình bình hành **không** chia 2; hình tam giác và hình thoi **có** chia 2.
-**Lỗi thường gặp:** Chia 2 cho hình bình hành, hoặc quên chia 2 cho hình tam giác. Phòng: Nhớ theo cặp: bình hành ↔ chữ nhật (không chia); tam giác ↔ nửa bình hành (chia 2).
-
-### Bài I.2
-**Đáp số:** a) xe ô tô: 18 chiếc, xe ba bánh: 20 chiếc · b) xe ô tô: 27 chiếc, xe đạp: 18 chiếc · c) xe ba bánh: 8 chiếc, xe ô tô: 3 chiếc · d) xe đạp: 23 chiếc, xe ô tô: 9 chiếc
-**Hướng giải:** Giả sử tất cả đều là loại có ít bánh hơn, tính tổng số bánh giả định. Số bánh còn thiếu so với thực tế chia cho hiệu số bánh của hai loại cho biết số xe loại nhiều bánh hơn.
-**Nhãn tư duy:** TD6, TD3. Điểm chốt: Chia cho **hiệu** số bánh của hai loại, không chia cho số bánh của một loại.
-**Lỗi thường gặp:** Chia số bánh thiếu cho số bánh của loại nhiều hơn. Phòng: Thử lại: nhân ngược ra tổng số bánh, phải khớp với đề.
-
-### Bài I.3
-**Đáp số:** a) 12 cây · b) 286 m · c) 180 m · d) 112 m · e) 32 viên (làm tròn lên) · f) 88 m
-**Hướng giải:** Rào xung quanh, trồng cây quanh mảnh đất là bài toán **chu vi**. Lát gạch, trải thảm, gieo hạt khắp mặt đất là bài toán **diện tích**. Số viên gạch = diện tích nền : diện tích một viên.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: “Xung quanh” → chu vi; “khắp mặt” → diện tích.
-**Lỗi thường gặp:** Lấy chu vi để tính số gạch lát nền. Phòng: Gạch chân từ khoá chỉ vị trí: xung quanh, bao quanh, khắp, phủ kín.
-
-### Bài I.4
-**Đáp số:** a) 19 · b) 29 · c) 54 · d) 74 · e) 79 · f) 84 · g) 837
-**Hướng giải:** Số que của các hình lập thành dãy cách đều. Dùng công thức số hạng thứ n để tính cho một hình bất kì, dùng công thức tổng dãy cách đều khi hỏi tổng số que của nhiều hình.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Bài toán hình nhưng lời giải là **dãy số** — đổi ngôn ngữ trước khi tính.
-**Lỗi thường gặp:** Vẽ tay từng hình để đếm, không kịp thời gian với hình thứ hai, ba chục. Phòng: Lập bảng ba hình đầu để tìm khoảng cách rồi mới dùng công thức.
-
-### Bài I.5
-**Đáp số:** a) 7 cm · b) A · c) 76 cm · d) A · e) 6 cm
+**Đáp số:** a) 62 cm · b) 17 cm · c) hai hình bằng nhau · d) 34 cm · e) 22 cm · f) hai hình bằng nhau · g) B
 **Hướng giải:** Mọi bán kính của một hình tròn đều bằng nhau. Đường kính đi qua tâm và bằng **hai lần** bán kính. Muốn so sánh hai hình tròn thì đưa về cùng một đại lượng: cùng bán kính hoặc cùng đường kính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: So sánh phải **cùng loại đại lượng** — bán kính với bán kính.
 **Lỗi thường gặp:** So bán kính của hình này với đường kính của hình kia. Phòng: Đổi hết về bán kính trước khi so sánh.
 
+### Bài I.2
+**Đáp số:** a) 16 cây · b) 44 m · c) không chia hết (38 m không chia hết cho 4 m) · d) 167 viên (làm tròn lên) · e) 89 viên (làm tròn lên)
+**Hướng giải:** Rào xung quanh, trồng cây quanh mảnh đất là bài toán **chu vi**. Lát gạch, trải thảm, gieo hạt khắp mặt đất là bài toán **diện tích**. Số viên gạch = diện tích nền : diện tích một viên.
+**Nhãn tư duy:** TD2, TD3. Điểm chốt: “Xung quanh” → chu vi; “khắp mặt” → diện tích.
+**Lỗi thường gặp:** Lấy chu vi để tính số gạch lát nền. Phòng: Gạch chân từ khoá chỉ vị trí: xung quanh, bao quanh, khắp, phủ kín.
+
+### Bài I.3
+**Đáp số:** a) (36 + 18) × 2 = 108 m · b) 108 − 2 = 106 m · c) 108 : 2 = 54 cọc · d) 106 × 30 000 = 3 180 000 đồng · e) 36 × 18 = 648 m²
+**Hướng giải:** Tính chu vi trước, mọi câu về rào và cọc đều dựa vào nó. Riêng số cọc phải nhớ đường rào khép kín nên không cộng thêm 1.
+**Nhãn tư duy:** TD2, TD4. Điểm chốt: Đường khép kín: số cọc = số khoảng. Đường thẳng có hai đầu: số cọc = số khoảng + 1.
+**Lỗi thường gặp:** Cộng thêm 1 vào số cọc như bài trồng cây trên đoạn thẳng. Phòng: Vẽ nhanh hình vuông 4 cạnh, cắm cọc thử rồi đếm.
+
+### Bài I.4
+**Đáp số:** a) 156 cm² · b) 300 cm² · c) 336 cm² · d) 612 cm²
+**Hướng giải:** Hình bình hành: S = đáy × chiều cao. Hình thoi: S = tích hai đường chéo chia 2. Hình tam giác: S = đáy × chiều cao chia 2.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Hình bình hành **không** chia 2; hình tam giác và hình thoi **có** chia 2.
+**Lỗi thường gặp:** Chia 2 cho hình bình hành, hoặc quên chia 2 cho hình tam giác. Phòng: Nhớ theo cặp: bình hành ↔ chữ nhật (không chia); tam giác ↔ nửa bình hành (chia 2).
+
+### Bài I.5
+**Đáp số:** a) không, dư 1 · b) không, dư 1 · c) có · d) không, dư 1 · e) có
+**Hướng giải:** Nếu hai số cùng chia hết cho một số thì tổng và hiệu của chúng cũng chia hết cho số đó. Nếu một số chia hết còn số kia dư r thì tổng cũng dư đúng r.
+**Nhãn tư duy:** TD2, TD5. Điểm chốt: Xét **số dư** của từng số hạng là đủ, không cần cộng ra kết quả.
+**Lỗi thường gặp:** Cộng hai số ra rồi mới chia — mất thời gian và dễ sai tính. Phòng: Ghi số dư của từng số hạng ngay bên dưới nó.
+
 ### Bài II.1
-**Đáp số:** a) 8 · b) 8 cm² · c) 1 cm² · d) 4 cm² · e) 2 cm² · f) 16 cm
+**Đáp số:** a) 6 · b) 24 cm² · c) 4 cm² · d) 12 cm² · e) 6 cm² · f) 32 cm
 **Hướng giải:** Số mảnh phủ kín bằng diện tích hình lớn chia diện tích một mảnh — nhưng chỉ đúng khi các mảnh **xếp khít không thừa**. Kiểm tra lại bằng cách đếm số hàng và số cột.
 **Nhãn tư duy:** TD3, TD4. Điểm chốt: Phép chia diện tích chỉ đúng khi mảnh **xếp khít**.
 **Lỗi thường gặp:** Chia chu vi cho cạnh mảnh thay vì chia diện tích cho diện tích. Phòng: Kẻ lưới lên hình và đếm thử một hàng.
 
 ### Bài II.2
-**Đáp số:** a) 15 · b) 5 · c) 3 · d) 3 · e) 6
-**Hướng giải:** Kẻ n đoạn thẳng từ một đỉnh chia cạnh đối diện thành n + 1 phần, tạo ra n + 1 tam giác nhỏ. Mỗi tam giác trong hình ứng với việc chọn hai trong n + 2 điểm trên cạnh đối diện, nên số tam giác = (n + 2) × (n + 1) : 2. Tương tự, k điểm trên một đường thẳng cho k × (k − 1) : 2 đoạn thẳng.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Mọi bài đếm ở đây quy về **chọn hai điểm** trong một dãy điểm.
-**Lỗi thường gặp:** Chỉ đếm tam giác nhỏ, quên các tam giác ghép. Phòng: Đánh dấu tên các điểm rồi liệt kê từng cặp một cách có thứ tự.
-
-### Bài II.3
-**Đáp số:** a) 1, 4, 8 · b) 26 · c) 66 · d) 150 · e) 36
-**Hướng giải:** Lập bảng và tính lần lượt từng số hạng theo đúng quy tắc, không nhảy cóc. Ghi rõ số thứ tự của mỗi số hạng để chọn đúng nhánh quy tắc.
-**Nhãn tư duy:** TD3, TD6. Điểm chốt: Quy tắc phụ thuộc **vị trí chẵn hay lẻ** — phải đánh số thứ tự trước.
-**Lỗi thường gặp:** Áp dụng nhầm nhánh quy tắc vì không để ý vị trí. Phòng: Kẻ bảng hai dòng: dòng trên ghi vị trí, dòng dưới ghi số hạng.
-
-### Bài II.4
-**Đáp số:** a) 147 · b) 244 · c) 419 · d) 150 · e) 281
+**Đáp số:** a) 497 · b) 412 · c) 33 · d) 207 · e) 463 · f) 442
 **Hướng giải:** Với một số **lẻ** các số tự nhiên liên tiếp, số ở giữa chính là trung bình cộng: số giữa = tổng : số lượng. Số bé nhất bằng số giữa trừ đi một nửa số lượng còn lại.
 **Nhãn tư duy:** TD3, TD4. Điểm chốt: Với số lượng lẻ thì **số giữa = tổng : số lượng** — đó là chìa khoá.
 **Lỗi thường gặp:** Lấy tổng chia cho số lượng rồi nhận luôn kết quả là số bé nhất. Phòng: Vẽ dãy số ra, đánh dấu vị trí số giữa trước khi lùi về số đầu.
 
+### Bài II.3
+**Đáp số:** a) 5 × 3 = 15 m² · b) 15 m² = 150 000 cm² · c) 20 × 20 = 400 cm² · d) 150 000 : 400 = 375 viên · e) 375 × 18 000 = 6 750 000 đồng
+**Hướng giải:** Số viên gạch = diện tích nền chia diện tích một viên, nhưng **chỉ chia được khi hai diện tích cùng đơn vị**. Nền đo bằng mét, gạch đo bằng xăng-ti-mét, nên phải đổi trước.
+**Nhãn tư duy:** TD2, TD4. Điểm chốt: 1 m² = 10 000 cm², không phải 100 cm² — đây là chỗ sai nhiều nhất.
+**Lỗi thường gặp:** Chia thẳng m² cho cm², hoặc đổi 1 m² thành 100 cm². Phòng: Viết đơn vị vào cạnh mỗi con số trước khi bấm phép chia.
+
+### Bài II.4
+**Đáp số:** a) 6 em · b) 6 em · c) 2 em · d) 4 em · e) 5 em
+**Hướng giải:** Điền phần chung vào trước, rồi trừ ra hai phần riêng. Cộng ba phần ấy được số người tham gia ít nhất một hoạt động; lấy tổng trừ đi là ra số người ngoài cả hai vòng.
+**Nhãn tư duy:** TD2, TD4. Điểm chốt: Con số đề cho cho mỗi môn **đã bao gồm** những em học cả hai. Cộng thẳng hai con số ấy là đếm phần chung hai lần.
+**Lỗi thường gặp:** Lấy tổng trừ đi tổng hai con số đề cho mà không cộng lại phần chung. Phòng: Vẽ hình trước, điền phần giữa trước, rồi mới điền hai bên.
+
 ### Bài II.5
-**Đáp số:** a) 3 · b) 5 · c) 4 · d) 2
+**Đáp số:** a) 28 · b) 7 · c) 3 · d) 3 · e) 6
+**Hướng giải:** Kẻ n đoạn thẳng từ một đỉnh chia cạnh đối diện thành n + 1 phần, tạo ra n + 1 tam giác nhỏ. Mỗi tam giác trong hình ứng với việc chọn hai trong n + 2 điểm trên cạnh đối diện, nên số tam giác = (n + 2) × (n + 1) : 2. Tương tự, k điểm trên một đường thẳng cho k × (k − 1) : 2 đoạn thẳng.
+**Nhãn tư duy:** TD4, TD3. Điểm chốt: Mọi bài đếm ở đây quy về **chọn hai điểm** trong một dãy điểm.
+**Lỗi thường gặp:** Chỉ đếm tam giác nhỏ, quên các tam giác ghép. Phòng: Đánh dấu tên các điểm rồi liệt kê từng cặp một cách có thứ tự.
+
+### Bài III.1
+**Đáp số:** a) 51 · b) Lịch sử (20 bạn) · c) Tiếng Anh (5 bạn) · d) 15 · e) 10,2 · f) 25%
+**Hướng giải:** Đọc bảng theo cột, ghi lại từng số liệu. Tổng là cộng tất cả; nhiều nhất, ít nhất là so sánh; trung bình là tổng chia số môn; tỉ số phần trăm là phần chia tổng rồi nhân 100.
+**Nhãn tư duy:** TD1, TD2. Điểm chốt: Mọi câu hỏi đều quy về **tổng, so sánh, trung bình cộng, tỉ số phần trăm**.
+**Lỗi thường gặp:** Đọc nhầm cột, hoặc quên một môn khi cộng tổng. Phòng: Đánh dấu từng số đã cộng để không sót và không cộng lặp.
+
+### Bài III.2
+**Đáp số:** a) 13 giờ 29 phút · b) 6 giờ 34 phút · c) 17 giờ 40 phút · d) 19 giờ 2 phút · e) 17 giờ 28 phút
+**Hướng giải:** Đổi cả giờ khởi hành lẫn thời gian đi về **phút**, cộng lại, rồi đổi kết quả ngược lại thành giờ và phút. Cách này tránh được lỗi nhớ khi phần phút vượt 60.
+**Nhãn tư duy:** TD3, TD2. Điểm chốt: Đổi hết về phút rồi mới cộng — an toàn hơn cộng trực tiếp.
+**Lỗi thường gặp:** Cộng phần phút thành hơn 60 mà quên đổi thành giờ. Phòng: Kiểm tra phần phút của đáp số phải bé hơn 60.
+
+### Bài III.3
+**Đáp số:** a) 192 000 đồng · b) 60 000 đồng · c) 252 000 đồng · d) (16 + 5) × 12 000 = 21 × 12 000 = 252 000 đồng · e) 5 × 12 000 = 60 000 đồng
+**Hướng giải:** Khi nhiều món có **cùng đơn giá**, cộng số lượng trước rồi nhân một lần. Đó là tính chất một số nhân một tổng, và ở hoá đơn thật nó tiết kiệm gần hết công việc.
+**Nhãn tư duy:** TD3, TD5. Điểm chốt: Cùng đơn giá thì cộng số lượng trước, nhân sau — nhân một lần thôi.
+**Lỗi thường gặp:** Nhân từng dòng rồi cộng, dài và dễ sai ở một dòng nào đó. Phòng: Nhìn cột đơn giá trước: có dòng nào trùng đơn giá không?
+
+### Bài III.4
+**Đáp số:** a) 3 · b) 4 · c) 9 · d) 0
 **Hướng giải:** Chữ số tận cùng của tổng, hiệu, tích chỉ phụ thuộc vào chữ số tận cùng của các số tham gia. Chỉ cần lấy các chữ số tận cùng ra tính với nhau rồi lấy chữ số tận cùng của kết quả.
 **Nhãn tư duy:** TD5, TD2. Điểm chốt: Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu của số.
 **Lỗi thường gặp:** Tính trọn cả phép tính, vừa lâu vừa dễ sai. Phòng: Che phần đầu của hai số, chỉ để lộ chữ số cuối cùng.
 
-### Bài III.1
-**Đáp số:** a) 46 · b) 36 · c) 11 · d) 60 · e) 48 · f) 23
-**Hướng giải:** Viết chuỗi thao tác thành sơ đồ mũi tên rồi đi ngược lại từ kết quả cuối. Mỗi bước đảo phép tính: nhân thành chia, cộng thành trừ. Thứ tự cũng phải đảo — phép làm sau cùng được gỡ trước tiên.
-**Nhãn tư duy:** TD3, TD5. Điểm chốt: Đảo **cả phép tính lẫn thứ tự**. Đảo phép tính mà giữ nguyên thứ tự thì vẫn sai.
-**Lỗi thường gặp:** Bắt đầu gỡ từ phép tính đầu tiên của đề thay vì từ phép tính cuối cùng. Phòng: Thử lại theo chiều xuôi. Bài này luôn thử lại được, nên không có lý do gì để nộp một đáp số chưa thử.
-
-### Bài III.2
-**Đáp số:** a) 28 · b) 4 · c) 11 · d) 5 · e) 41 · f) 13, vì nhóm thích cả hai môn bị đếm hai lần
-**Hướng giải:** Vẽ sơ đồ Ven hai vòng tròn. **Điền miền giữa trước**, rồi trừ ra hai miền riêng. Cộng thẳng hai nhóm sẽ đếm nhóm chung **hai lần**, nên phải trừ đi một lần.
-**Nhãn tư duy:** TD2, TD6. Điểm chốt: Điền **miền giữa trước** — mọi miền khác suy ra từ đó.
-**Lỗi thường gặp:** Cộng thẳng hai nhóm rồi coi đó là số bạn thích ít nhất một môn. Phòng: Vẽ sơ đồ Ven, ghi số vào từng miền rồi cộng lại kiểm tra với sĩ số.
-
-### Bài III.3
-**Đáp số:** a) 2 550 · b) 975 · c) 230 · d) 245 · e) 5 150
-**Hướng giải:** Đếm số số hạng: (số cuối − số đầu) : khoảng cách + 1. Tổng bằng (số đầu + số cuối) × số số hạng : 2. Cách hiểu: ghép số đầu với số cuối, số thứ hai với số áp chót… mỗi cặp có tổng bằng nhau.
-**Nhãn tư duy:** TD4, TD5. Điểm chốt: Phải đếm **số số hạng** trước; đây là chỗ sai nhiều nhất.
-**Lỗi thường gặp:** Lấy số cuối chia khoảng cách làm số số hạng, quên cộng 1. Phòng: Viết ra ba số đầu và ba số cuối để kiểm tra khoảng cách rồi mới đếm.
-
-### Bài III.4
-**Đáp số:** a) < · b) > · c) < · d) > · e) <
-**Hướng giải:** Khi hai biểu thức có phần giống nhau, chỉ cần so sánh phần khác nhau: cùng cộng thêm một số thì số nào lớn hơn vẫn lớn hơn; cùng nhân với một số khác 0 cũng vậy.
-**Nhãn tư duy:** TD5, TD2. Điểm chốt: Che phần **giống nhau** đi, chỉ so phần khác nhau.
-**Lỗi thường gặp:** Tính hết cả hai vế, vừa lâu vừa dễ sai. Phòng: Dùng bút gạch bỏ phần giống nhau ở hai vế trước khi so sánh.
-
 ### Bài III.5
-**Đáp số:** a) 48 · b) 61, hiệu 45 · c) 19 · d) 58, hiệu 27 · e) 98, hiệu 9 · f) gấp 2 lần
-**Hướng giải:** Viết số có hai chữ số dưới dạng **ab = a × 10 + b** với a là chữ số hàng chục (khác 0), b là chữ số hàng đơn vị. Từ điều kiện của đề, lập quan hệ giữa a và b rồi dùng bài toán tổng – hiệu.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Chữ số hàng chục **khác 0** và mỗi chữ số chỉ nhận giá trị từ 0 đến 9.
-**Lỗi thường gặp:** Tìm ra a hoặc b lớn hơn 9 mà vẫn nhận đáp số. Phòng: Sau khi tính xong, kiểm tra lại từng chữ số có nằm trong khoảng 0–9 không.
+**Đáp số:** a) 28, 64 · b) 18, 36, 54, 72, 90 · c) 15, 24, 33, 42, 51, 60 · d) 95 · e) 15, 60 · f) 56, 92
+**Hướng giải:** Chọn điều kiện cho ít khả năng nhất để liệt kê trước, rồi mới đem điều kiện còn lại ra thử. Làm ngược thứ tự ấy thì phải thử gấp nhiều lần.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Phải xét **hết** danh sách. Bài thử chọn thường có hơn một đáp số.
+**Lỗi thường gặp:** Tìm được một số thoả rồi dừng, bỏ sót các đáp số còn lại. Phòng: Viết danh sách ra giấy và gạch bỏ từng số, đừng thử nhẩm trong đầu.
 
 ### Bài IV.1
-**Đáp số:** a) 490 000 đồng · b) 780 000 đồng · c) 825 000 đồng · d) 360 000 đồng
-**Hướng giải:** BẪY — Dùng cả dữ kiện thừa. Tìm giá vé trẻ em trước, rồi tính riêng từng loại vé, cuối cùng mới cộng. Mỗi câu đều có một dữ kiện không dùng tới — nhận ra nó là một phần của bài.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Đề thật luôn có dữ kiện thừa. Dùng nhầm nó là mất trọn bài.
-**Lỗi thường gặp:** Đem quãng đường vào phép tính tiền vé. Phòng: Gạch chân câu hỏi cuối trước khi nhìn các con số.
-**Gợi ý 3 tầng:** (1) Đề hỏi cái gì? Gạch chân câu hỏi. — (2) Trong các con số đề cho, con số nào không liên quan tới câu hỏi? — (3) Tính giá vé trẻ em trước rồi mới cộng hai loại vé.
+**Đáp số:** a) Minh học mĩ thuật; Sơn học tiếng Anh; Phúc học tin học · b) Chi học cầu lông; Lan học bóng đá; Hà học bóng rổ · c) Nam học tiếng Anh; Bình học tin học; Hùng học mĩ thuật · d) Ngọc học đàn; Hùng học múa; Dũng học hát
+**Hướng giải:** BẪY — Đánh dấu đúng mà quên gạch phần còn lại. Mỗi dòng một người, mỗi cột một khả năng. Đánh × cho điều chắc chắn sai. Dòng nào chỉ còn một ô trống thì ô ấy là ✓ — và ngay sau đó phải gạch × cho cả cột chứa ô ấy.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Đặt được một ✓ thì **cả dòng và cả cột** còn lại đều thành ×. Bỏ bước gạch cột là chỗ bài bị tắc giữa chừng.
+**Lỗi thường gặp:** Đánh ✓ rồi đi tiếp luôn, không gạch × cho phần còn lại của cột. Phòng: Sau mỗi lần đặt ✓, dừng lại gạch đủ dòng và cột rồi mới đọc manh mối kế.
+**Gợi ý 3 tầng:** (1) Kẻ bảng ba dòng ba cột trước đã. — (2) Manh mối nào cho biết chắc chắn một ô là sai? — (3) Dòng nào chỉ còn một ô trống thì ô ấy chính là đáp án của dòng ấy.
 
 ### Bài IV.2
-**Đáp số:** a) 35 cm² · b) 170 cm² · c) 2 lần · d) 56 cm² · e) 2 lần · f) 30 cm²
+**Đáp số:** a) 31 · b) 54 · c) 81 · d) 52
+**Hướng giải:** BẪY — Quên chữ số hàng cao nhất khác 0. Viết số theo cấu tạo: số có hai chữ số ab bằng a × 10 + b. Thay vào điều kiện đề cho rồi rút gọn — thường ra một quan hệ rất gọn giữa a và b.
+**Nhãn tư duy:** TD1, TD4. Điểm chốt: Chữ số hàng cao nhất **khác 0**, và mọi chữ số chỉ nhận giá trị từ 0 đến 9. Hai ràng buộc này thường là chỗ loại bớt đáp số.
+**Lỗi thường gặp:** Tính ra a bằng 0 rồi vẫn nhận, hoặc để một chữ số vượt quá 9. Phòng: Viết sẵn hai dòng ràng buộc lên đầu bài giải rồi mới tính.
+**Gợi ý 3 tầng:** (1) Số có hai chữ số ab viết theo cấu tạo là gì? — (2) Thay cấu tạo ấy vào điều kiện đề cho, rồi rút gọn. — (3) Kiểm lại: chữ số hàng chục có khác 0 không?
+
+### Bài IV.3
+**Đáp số:** a) 2 lần · b) 264 cm² · c) 143 cm² · d) 150 cm² · e) 2 lần
 **Hướng giải:** BẪY — Phần tăng gồm ba mảnh. Tăng một chiều thêm k đơn vị thì diện tích tăng thêm đúng một hình chữ nhật có kích thước k × chiều còn lại. Tăng cả hai chiều thì phần tăng gồm ba mảnh: hai dải và một hình vuông ở góc — nên **không** bằng tích của hai phần tăng.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Tăng cả hai chiều thì phần tăng gồm **ba mảnh**, không phải một.
 **Lỗi thường gặp:** Nhân hai lượng tăng với nhau rồi coi đó là phần diện tích tăng thêm. Phòng: Vẽ hình chữ nhật cũ nằm trong hình mới, tô phần dôi ra.
 **Gợi ý 3 tầng:** (1) Vẽ hình cũ và hình mới chồng lên nhau. — (2) Phần dôi ra gồm mấy mảnh? — (3) Tính diện tích từng mảnh rồi cộng.
 
-### Bài IV.3
-**Đáp số:** a) 0 · b) 0 · c) 0 · d) 0 · e) 0
-**Hướng giải:** BẪY — Biểu thức lớn nhưng kết quả bằng 0. Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu. Vì vậy phải quan sát toàn bộ biểu thức trước khi tính, tìm cụm nào có giá trị bằng 0.
-**Nhãn tư duy:** TD5, TD6. Điểm chốt: Quét tìm **cụm bằng 0** trước; thấy rồi thì viết đáp số ngay.
-**Lỗi thường gặp:** Lao vào nhân từng cặp số lớn rồi mới phát hiện kết quả bằng 0. Phòng: Đọc hết biểu thức một lượt, khoanh các cụm giống nhau bị trừ cho nhau.
-**Gợi ý 3 tầng:** (1) Có cụm nào trong ngoặc bằng 0 không? — (2) Có hai cụm giống hệt nhau bị trừ cho nhau không? — (3) Tích có một thừa số bằng 0 thì bằng bao nhiêu?
-
 ### Bài IV.4
-**Đáp số:** a) 68 m · b) 280 m² · c) 17 giây · d) 140 m² · e) 20 m · f) 720 m² · g) 440 m²
+**Đáp số:** a) 50 m · b) 100 m² · c) 25 giây · d) 40 m² · e) 16 m · f) 364 m² · g) 264 m²
 **Hướng giải:** BẪY — Phần tăng gồm ba mảnh. Đi một vòng quanh hình là đi hết **chu vi**. Tăng một chiều thì phần diện tích dôi ra là một hình chữ nhật có kích thước bằng phần tăng nhân chiều còn lại. Tăng cả hai chiều thì phần dôi gồm **ba mảnh**.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Tăng cả hai chiều thì phần dôi ra **không phải** tích của hai phần tăng.
 **Lỗi thường gặp:** Nhân hai lượng tăng với nhau rồi coi đó là diện tích tăng thêm. Phòng: Vẽ hình cũ nằm trong hình mới rồi tô phần dôi ra.
 **Gợi ý 3 tầng:** (1) Đi một vòng là đi hết đại lượng nào? — (2) Phần diện tích dôi ra có hình dạng gì? — (3) Tăng cả hai chiều thì phần dôi gồm mấy mảnh?
 
 ### Bài IV.5
-**Đáp số:** a) 75 · b) 102 · c) 885 · d) 88,5 · e) 177 · f) 177
+**Đáp số:** a) 12 · b) 90 · c) 2 040 · d) 51 · e) 102 · f) 102
 **Hướng giải:** Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
 **Nhãn tư duy:** TD4, TD3. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
 **Lỗi thường gặp:** Tính tổng rồi chia — dài hơn và dễ sai khi số hạng nhiều. Phòng: Nhớ tính chất trung bình cộng để kiểm tra chéo kết quả tổng.
 **Gợi ý 3 tầng:** (1) Từ số hạng cuối lùi về số hạng đầu qua mấy khoảng? — (2) Trung bình cộng bằng nửa tổng của hai số hạng ở hai đầu. — (3) Tổng bằng trung bình cộng nhân số số hạng.
 
 ### Bài V.1
-**Đáp số:** a) Chu vi, diện tích trong tình huống thực tế · b) Công thức chu vi, diện tích; phép chia · c) Từ khoá “rào xung quanh”, “lát gạch”, “trồng cây quanh” · d) Đọc vị chu vi hay diện tích rồi tính · e) Nhìn đơn vị của đáp số: mét thì là chu vi, mét vuông thì là diện tích. · f) 33 viên (làm tròn lên) · 172 m · không chia hết (70 m không chia hết cho 4 m) · 44 m…
+**Đáp số:** a) Chu vi hình chữ nhật · b) Chu vi, diện tích hình chữ nhật; bài toán trồng cây · c) Một mảnh đất có kích thước, cần rào hoặc cắm cọc quanh · d) Tính chu vi rồi chia cho khoảng cách giữa hai cọc · e) Chu vi chia khoảng cách ra ngay số cọc, không phải cộng trừ gì thêm. · f) (36 + 12) × 2 = 96 m · 96 − 2 = 94 m · 96 : 2 = 48 cọc · 94 × 45 000 = 4 230 000 đồng…
+**Hướng giải:** Thi đấu phản biện: bạn trình bày nói lời giải, bạn phản biện phải chỉ ra được ít nhất một cột trong bảng mà lời giải chưa nói tới. Ai chỉ ra được nhiều hơn thì thắng.
+**Nhãn tư duy:** TD2, TD4. Điểm chốt: Đường khép kín: số cọc = số khoảng. Đường thẳng có hai đầu: số cọc = số khoảng + 1.
+**Lỗi thường gặp:** Cộng thêm 1 vào số cọc như bài trồng cây trên đoạn thẳng. Phòng: Vẽ nhanh hình vuông 4 cạnh, cắm cọc thử rồi đếm.
+**Gợi ý 3 tầng:** (1) Điền cột 1 và cột 3 trước — đó là hai cột dễ nhất. — (2) Cột 4 và cột 5 khác nhau: một cột nói cách làm, một cột nói lối tắt. — (3) Cột 6 chỉ ghi kết quả, không ghi lời giải.
+
+### Bài V.2
+**Đáp số:** a) Chu vi, diện tích trong tình huống thực tế · b) Công thức chu vi, diện tích; phép chia · c) Từ khoá “rào xung quanh”, “lát gạch”, “trồng cây quanh” · d) Đọc vị chu vi hay diện tích rồi tính · e) Nhìn đơn vị của đáp số: mét thì là chu vi, mét vuông thì là diện tích. · f) 34 cây · không chia hết (48 m không chia hết cho 5 m) · không chia hết (246 m không chia hết cho 5 m) · không chia hết (130 m không chia hết cho 4 m)…
 **Hướng giải:** Thi đấu phản biện: bạn trình bày nói lời giải, bạn phản biện phải chỉ ra được ít nhất một cột trong bảng mà lời giải chưa nói tới. Ai chỉ ra được nhiều hơn thì thắng.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: “Xung quanh” → chu vi; “khắp mặt” → diện tích.
 **Lỗi thường gặp:** Lấy chu vi để tính số gạch lát nền. Phòng: Gạch chân từ khoá chỉ vị trí: xung quanh, bao quanh, khắp, phủ kín.
 **Gợi ý 3 tầng:** (1) Điền cột 1 và cột 3 trước — đó là hai cột dễ nhất. — (2) Cột 4 và cột 5 khác nhau: một cột nói cách làm, một cột nói lối tắt. — (3) Cột 6 chỉ ghi kết quả, không ghi lời giải.
 
-### Bài V.2
-**Đáp số:** a) Nhận biết và phân loại góc · b) Số đo góc; hai đường thẳng vuông góc, song song · c) Đề cho số đo góc hoặc hỏi về cạnh của hình · d) So số đo với hai mốc 90° và 180° · e) Ê ke chính là một góc vuông cầm tay — áp vào là biết ngay. · f) 2 cặp song song, 4 cặp vuông góc · góc tù · lớn hơn · lớn hơn…
-**Hướng giải:** Thi đấu phản biện: bạn trình bày nói lời giải, bạn phản biện phải chỉ ra được ít nhất một cột trong bảng mà lời giải chưa nói tới. Ai chỉ ra được nhiều hơn thì thắng.
-**Nhãn tư duy:** TD1, TD2. Điểm chốt: Hai mốc **90°** và **180°** chia hết các loại góc.
-**Lỗi thường gặp:** Gọi góc 90° là góc nhọn vì thấy “nhỏ”. Phòng: Áp ê ke vào góc trước khi gọi tên.
-**Gợi ý 3 tầng:** (1) Điền cột 1 và cột 3 trước — đó là hai cột dễ nhất. — (2) Cột 4 và cột 5 khác nhau: một cột nói cách làm, một cột nói lối tắt. — (3) Cột 6 chỉ ghi kết quả, không ghi lời giải.
-
 ### Bài V.3
-**Đáp số:** a) Đếm hình bằng quy tắc chọn hai điểm · b) Quy tắc đếm, tổ hợp chập hai · c) Hình có nhiều đoạn kẻ từ cùng một đỉnh, hoặc nhiều điểm trên một đường · d) Quy về số cách chọn hai điểm · e) Số cách chọn 2 trong k là k × (k − 1) : 2 — thuộc công thức này là xong. · f) 10 · 4 · 15 · 6…
+**Đáp số:** a) Cắt ghép hình, biến thiên chu vi · b) Chu vi, đường bao của hình · c) Từ khoá “ghép”, “cắt thành”, “xếp thành” · d) Xác định đường bao mới rồi cộng độ dài · e) Mỗi nhát cắt làm tổng chu vi tăng thêm hai lần chiều dài nhát cắt. · f) 84 cm · 156 cm · 432 cm · 102 cm
 **Hướng giải:** Thi đấu phản biện: bạn trình bày nói lời giải, bạn phản biện phải chỉ ra được ít nhất một cột trong bảng mà lời giải chưa nói tới. Ai chỉ ra được nhiều hơn thì thắng.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Mọi bài đếm ở đây quy về **chọn hai điểm** trong một dãy điểm.
-**Lỗi thường gặp:** Chỉ đếm tam giác nhỏ, quên các tam giác ghép. Phòng: Đánh dấu tên các điểm rồi liệt kê từng cặp một cách có thứ tự.
+**Nhãn tư duy:** TD6, TD3. Điểm chốt: Diện tích giữ nguyên khi cắt ghép, nhưng **chu vi thay đổi**.
+**Lỗi thường gặp:** Cộng chu vi các hình nhỏ lại rồi coi đó là chu vi hình ghép. Phòng: Tô đậm đường bao của hình mới rồi mới tính.
 **Gợi ý 3 tầng:** (1) Điền cột 1 và cột 3 trước — đó là hai cột dễ nhất. — (2) Cột 4 và cột 5 khác nhau: một cột nói cách làm, một cột nói lối tắt. — (3) Cột 6 chỉ ghi kết quả, không ghi lời giải.
 
 ### Bài V.4
-**Đáp số:** a) Hình chữ nhật tổng hợp · b) Chu vi, diện tích hình chữ nhật; s = v × t · c) Một hình nhưng nhiều câu hỏi nối tiếp · d) Tính chu vi và diện tích trước, dùng lại cho các ý sau · e) Chu vi tăng đúng 2 lần phần tăng, dù tăng chiều nào. · f) 182 m · 2 058 m² · 45,5 giây · 252 m²…
+**Đáp số:** a) Hình chữ nhật tổng hợp · b) Chu vi, diện tích hình chữ nhật; s = v × t · c) Một hình nhưng nhiều câu hỏi nối tiếp · d) Tính chu vi và diện tích trước, dùng lại cho các ý sau · e) Chu vi tăng đúng 2 lần phần tăng, dù tăng chiều nào. · f) 148 m · 1 344 m² · 29,6 giây · 128 m²…
 **Hướng giải:** Thi đấu phản biện: bạn trình bày nói lời giải, bạn phản biện phải chỉ ra được ít nhất một cột trong bảng mà lời giải chưa nói tới. Ai chỉ ra được nhiều hơn thì thắng.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Tăng cả hai chiều thì phần dôi ra **không phải** tích của hai phần tăng.
 **Lỗi thường gặp:** Nhân hai lượng tăng với nhau rồi coi đó là diện tích tăng thêm. Phòng: Vẽ hình cũ nằm trong hình mới rồi tô phần dôi ra.
 **Gợi ý 3 tầng:** (1) Điền cột 1 và cột 3 trước — đó là hai cột dễ nhất. — (2) Cột 4 và cột 5 khác nhau: một cột nói cách làm, một cột nói lối tắt. — (3) Cột 6 chỉ ghi kết quả, không ghi lời giải.
 
 ### Bài V.5
-**Đáp số:** a) Diện tích các hình phẳng cơ bản · b) Công thức diện tích hình bình hành, hình thoi, hình tam giác · c) Đề cho đáy và chiều cao, hoặc hai đường chéo · d) Nhận dạng hình rồi chọn công thức · e) Tam giác bằng nửa hình bình hành cùng đáy cùng chiều cao. · f) 150 cm² · 322 cm² · 308 cm² · 135 cm²
+**Đáp số:** a) Chu vi, diện tích hình cơ bản · b) Công thức chu vi, diện tích hình chữ nhật và hình vuông · c) Cho chiều dài, chiều rộng hoặc cạnh · d) Chọn đúng công thức, ghi đúng đơn vị · e) Hình vuông là hình chữ nhật có dài bằng rộng — chỉ cần nhớ một bộ công thức. · f) 56 cm · 104 cm² · 1 024 cm² · 200 cm…
 **Hướng giải:** Thi đấu phản biện: bạn trình bày nói lời giải, bạn phản biện phải chỉ ra được ít nhất một cột trong bảng mà lời giải chưa nói tới. Ai chỉ ra được nhiều hơn thì thắng.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Hình bình hành **không** chia 2; hình tam giác và hình thoi **có** chia 2.
-**Lỗi thường gặp:** Chia 2 cho hình bình hành, hoặc quên chia 2 cho hình tam giác. Phòng: Nhớ theo cặp: bình hành ↔ chữ nhật (không chia); tam giác ↔ nửa bình hành (chia 2).
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi ghi đơn vị **cm**, diện tích ghi đơn vị **cm²** — sai đơn vị là mất điểm.
+**Lỗi thường gặp:** Nhầm công thức chu vi với diện tích; quên nhân 2 ở chu vi. Phòng: Vẽ hình và ghi số đo lên hình trước khi tính.
 **Gợi ý 3 tầng:** (1) Điền cột 1 và cột 3 trước — đó là hai cột dễ nhất. — (2) Cột 4 và cột 5 khác nhau: một cột nói cách làm, một cột nói lối tắt. — (3) Cột 6 chỉ ghi kết quả, không ghi lời giải.
 
 ---

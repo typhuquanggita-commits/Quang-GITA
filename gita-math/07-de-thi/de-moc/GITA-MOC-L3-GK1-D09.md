@@ -30,41 +30,41 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Đặt tính rồi tính.
 
-a) 2 016 : 3
-b) 598 × 2
-c) 5 382 : 9
-d) 2 670 : 6
-e) 2 013 : 3
-f) 846 × 4
+a) 4 968 : 8
+b) 1 068 : 6
+c) 1 746 : 9
+d) 595 × 4
+e) 898 × 5
+f) 976 × 2
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
-Đặt tính rồi tính.
+Ba món trong giỏ: **cà chua** 94 000 đồng · **gạo** 68 000 đồng · **cá** 27 500 đồng.
 
-a) 7 994 : 8
-b) 450 × 4
-c) 8 874 : 9
-d) 796 × 4
-e) 3 393 : 5
+a) Làm tròn giá từng món đến hàng chục nghìn để nhẩm cho nhanh.
+b) Cộng các giá đã làm tròn, được tổng ước lượng là bao nhiêu?
+c) Tính tổng đúng bằng cách cộng các giá gốc.
+d) Tổng ước lượng lệch bao nhiêu so với tổng đúng?
+e) Người mua đưa tờ 200 000 đồng. Người bán phải trả lại bao nhiêu?
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
-Giải từng bài toán nhỏ.
+Tóm tắt bằng sơ đồ đoạn thẳng rồi giải.
 
-a) Trung bình mỗi ngày cửa hàng bán được 33 kg gạo. 3 ngày đầu bán được 34, 36, 31 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
-b) Trung bình mỗi ngày cửa hàng bán được 207 kg gạo. 4 ngày đầu bán được 204, 203, 210, 206 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
-c) Trung bình mỗi ngày bán được 246 kg gạo. Hỏi 4 ngày bán được tất cả bao nhiêu ki-lô-gam?
-d) Trung bình mỗi ngày bán được 50 kg gạo. Hỏi 6 ngày bán được tất cả bao nhiêu ki-lô-gam?
-e) 4 ngày đầu tuần một cửa hàng bán được lần lượt 229, 225, 216, 222 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
+a) Kho A và cửa hàng chứa tất cả 656 kg gạo. Kho A chứa nhiều hơn cửa hàng 114 kg. Mỗi nơi chứa bao nhiêu kg?
+b) Đội Một và tổ Một trồng được 142 cây. Đội Một trồng nhiều hơn tổ Một 30 cây. Mỗi tổ trồng bao nhiêu cây?
+c) Hai lớp 3B và 4C có tất cả 536 quyển sách. Lớp 3B có nhiều hơn lớp 4C 82 quyển. Mỗi lớp có bao nhiêu quyển?
+d) Hai lớp 5C và 3B có tất cả 624 quyển sách. Lớp 5C có nhiều hơn lớp 3B 50 quyển. Mỗi lớp có bao nhiêu quyển?
+e) Trang trại và hợp tác xã chứa tất cả 418 kg phân bón. Trang trại chứa nhiều hơn hợp tác xã 138 kg. Mỗi nơi chứa bao nhiêu kg?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
 Vẽ hình và kẻ lưới ra nháp.
 
-a) Một hình chữ nhật 6 cm × 2 cm được phủ kín bằng các hình vuông cạnh 2 cm. Cần bao nhiêu hình vuông?
+a) Một hình chữ nhật 16 cm × 10 cm được phủ kín bằng các hình vuông cạnh 1 cm. Cần bao nhiêu hình vuông?
 b) Diện tích hình chữ nhật ấy bằng bao nhiêu?
 c) Diện tích mỗi hình vuông nhỏ bằng bao nhiêu?
 d) Chia hình chữ nhật ấy thành 2 phần bằng nhau thì mỗi phần có diện tích bao nhiêu?
@@ -74,14 +74,14 @@ f) Nếu ghép hai hình chữ nhật ấy theo chiều dài thì hình mới c�
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
-Một hình chữ nhật có chiều dài 14 cm, chiều rộng 10 cm.
+Đếm có hệ thống, nêu rõ cách đếm.
 
-a) Tính chu vi hình chữ nhật đó.
-b) Tính diện tích hình chữ nhật đó.
-c) Nếu tăng chiều dài thêm 3 cm, giữ nguyên chiều rộng thì diện tích tăng thêm bao nhiêu?
-d) Khi đó chu vi tăng thêm bao nhiêu?
-e) Nếu thay vào đó tăng chiều rộng thêm 3 cm thì diện tích tăng thêm bao nhiêu?
-f) Tăng chiều nào thì diện tích tăng nhiều hơn? Vì sao?
+a) Trên một đường thẳng lấy 4 điểm. Có bao nhiêu đoạn thẳng?
+b) Nếu lấy thêm một điểm nữa thì có thêm bao nhiêu đoạn thẳng?
+c) Với 5 điểm thì có tất cả bao nhiêu đoạn thẳng?
+d) Từ một đỉnh của tam giác lớn kẻ 5 đoạn thẳng tới cạnh đối diện. Cạnh đối diện bị chia thành mấy phần?
+e) Có tất cả bao nhiêu tam giác trong hình đó?
+f) Trong đó có bao nhiêu tam giác nhỏ nhất?
 
 
 ---
@@ -91,100 +91,99 @@ f) Tăng chiều nào thì diện tích tăng nhiều hơn? Vì sao?
 
 ### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **672**
-b) **1 196**
-c) **598**
-d) **445**
-e) **671**
-f) **3 384**
+a) **621**
+b) **178**
+c) **194**
+d) **2 380**
+e) **4 490**
+f) **1 952**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 2 016 : 3
+1. Xét ý a: 4 968 : 8
 2. Đọc vị: đây là dạng **Nhân, chia số tự nhiên**; dấu hiệu là Yêu cầu “đặt tính rồi tính” với phép nhân, chia.
 3. Kiến thức phải dùng: Kĩ thuật đặt tính nhân, chia.
 4. Cách làm: Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ chữ số.
 5. Lối tắt: Kiểm tra kết quả bằng phép tính ngược: thương × số chia = số bị chia.
-6. Kết quả: **672**.
+6. Kết quả: **621**.
 
 *Lỗi hay mắc:* Quên viết chữ số 0 ở thương nên thương thiếu chữ số.
 
 ### Bài 2, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **999 dư 2**
-b) **1 800**
-c) **986**
-d) **3 184**
-e) **678 dư 3**
+a) **cà chua: 90 000 · gạo: 70 000 · cá: 30 000**
+b) **190 000**
+c) **189 500**
+d) **500 đồng**
+e) **10 500 đồng**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 7 994 : 8
-2. Đọc vị: đây là dạng **Nhân, chia với số có một chữ số**; dấu hiệu là Số bị chia có hai hoặc ba chữ số, số chia một chữ số.
-3. Kiến thức phải dùng: Kĩ thuật đặt tính nhân, chia.
-4. Cách làm: Đặt tính, tính theo cột.
-5. Lối tắt: Ước lượng bằng cách làm tròn để phát hiện sai về độ lớn.
-6. Kết quả: **999 dư 2**.
+1. Đi chợ thì cần **biết nhanh khoảng bao nhiêu** trước, biết chính xác sau. Vì vậy nhẩm bằng số tròn trước rồi mới cộng số lẻ để bù.
+2. cà chua 94 000 → 90 000 · gạo 68 000 → 70 000 · cá 27 500 → 30 000
+3. Cộng số tròn: 90 000 + 70 000 + 30 000 = 190 000 đồng — đây là con số nhẩm trong đầu khi đứng ở chợ.
+4. Tổng đúng: 94 000 + 68 000 + 27 500 = **189 500 đồng**, lệch 500 đồng so với số nhẩm.
+5. Tiền trả lại: 200 000 − 189 500 = **10 500 đồng**.
 
-*Lỗi hay mắc:* Quên chữ số 0 ở giữa thương nên thương thiếu chữ số.
+*Lỗi hay mắc:* Lấy tổng đã làm tròn ra trả tiền.
 
 ### Bài 3, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **31 kg**
-b) **212 kg**
-c) **984 kg**
-d) **300 kg**
-e) **223 kg**
+a) **kho A: 385 kg, cửa hàng: 271 kg**
+b) **đội Một: 86 cây, tổ Một: 56 cây**
+c) **3B: 309 quyển, 4C: 227 quyển**
+d) **5C: 337 quyển, 3B: 287 quyển**
+e) **trang trại: 278 kg, hợp tác xã: 140 kg**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Trung bình mỗi ngày cửa hàng bán được 33 kg gạo. 3 ngày đầu bán được 34, 36, 31 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
-2. Đọc vị: đây là dạng **Ba dạng bài trung bình cộng**; dấu hiệu là Cụm “trung bình mỗi …”.
-3. Kiến thức phải dùng: Quan hệ tổng – số lượng – trung bình cộng.
-4. Cách làm: Đi qua tổng làm trung gian.
-5. Lối tắt: Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng.
-6. Kết quả: **31 kg**.
+1. Xét ý a: Kho A và cửa hàng chứa tất cả 656 kg gạo. Kho A chứa nhiều hơn cửa hàng 114 kg. Mỗi nơi chứa bao nhiêu kg?
+2. Đọc vị: đây là dạng **Tổng – hiệu có lời văn**; dấu hiệu là “Có tất cả …” và “… nhiều hơn … là …”.
+3. Kiến thức phải dùng: Công thức tổng – hiệu, sơ đồ đoạn thẳng.
+4. Cách làm: Đọc vị tổng và hiệu → sơ đồ → công thức.
+5. Lối tắt: Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần.
+6. Kết quả: **kho A: 385 kg, cửa hàng: 271 kg**.
 
-*Lỗi hay mắc:* Đi tìm ngay số còn thiếu mà chưa tính tổng.
+*Lỗi hay mắc:* Nhầm hiệu thành tổng khi đề diễn đạt vòng vo.
 
 ### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **3**
-b) **12 cm²**
-c) **4 cm²**
-d) **6 cm²**
-e) **3 cm²**
-f) **20 cm**
+a) **160**
+b) **160 cm²**
+c) **1 cm²**
+d) **80 cm²**
+e) **40 cm²**
+f) **72 cm**
 
 **Cách giải mẫu:**
 
-1. Bước 1 — diện tích hình chữ nhật: 6 × 2 = 12 (cm²).
-2. Bước 2 — diện tích một hình vuông nhỏ: 2 × 2 = 4 (cm²).
-3. Bước 3 — số hình vuông cần dùng: 12 : 4 = 3 (hình).
-4. Kiểm tra: xếp được 3 hàng, mỗi hàng 1 hình — đúng 3 hình ✓
-5. Đáp số: **3 hình vuông**.
+1. Bước 1 — diện tích hình chữ nhật: 16 × 10 = 160 (cm²).
+2. Bước 2 — diện tích một hình vuông nhỏ: 1 × 1 = 1 (cm²).
+3. Bước 3 — số hình vuông cần dùng: 160 : 1 = 160 (hình).
+4. Kiểm tra: xếp được 16 hàng, mỗi hàng 10 hình — đúng 160 hình ✓
+5. Đáp số: **160 hình vuông**.
 
 *Lỗi hay mắc:* Chia chu vi cho cạnh mảnh thay vì chia diện tích cho diện tích.
 
 ### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **48 cm**
-b) **140 cm²**
-c) **30 cm²**
-d) **6 cm**
-e) **42 cm²**
-f) **tăng chiều rộng, vì phần tăng thêm nhân với chiều dài (là chiều lớn hơn)**
+a) **6**
+b) **4**
+c) **10**
+d) **6**
+e) **21**
+f) **6**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Tính chu vi hình chữ nhật đó.
-2. Đọc vị: đây là dạng **Biến thiên chu vi và diện tích**; dấu hiệu là “Tăng chiều … thêm … cm”.
-3. Kiến thức phải dùng: Chu vi, diện tích hình chữ nhật.
-4. Cách làm: Vẽ hình chồng, xác định phần dôi ra.
-5. Lối tắt: Chu vi tăng 2 × k dù tăng chiều nào; diện tích thì phụ thuộc chiều còn lại.
-6. Kết quả: **48 cm**.
+1. Mỗi đoạn thẳng được xác định bởi **hai điểm**.
+2. Mỗi điểm nối được với 3 điểm còn lại, tổng 4 × 3 = 12 lượt.
+3. Mỗi đoạn bị đếm hai lần (một lần từ mỗi đầu), nên chia 2.
+4. Số đoạn thẳng: 12 : 2 = 6.
+5. Kiểm tra với 3 điểm: 3 × 2 : 2 = 3 đoạn ✓
+6. Đáp số: **6 đoạn thẳng**.
 
-*Lỗi hay mắc:* Cho rằng tăng chiều dài thì diện tích tăng nhiều hơn vì chiều dài lớn hơn.
+*Lỗi hay mắc:* Chỉ đếm các đoạn nhỏ nhất, quên các đoạn ghép.
 
 ---
 
@@ -195,10 +194,10 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài | Đo cái gì | Sai bài này nghĩa là | Học lại ở đâu |
 |:--:|---|---|---|
 | Bài 1 | Nhân, chia số tự nhiên | Quên viết chữ số 0 ở thương nên thương thiếu chữ số. | Nhóm chuyên đề **—** · mức — |
-| Bài 2 | Nhân, chia với số có một chữ số | Quên chữ số 0 ở giữa thương nên thương thiếu chữ số. | Nhóm chuyên đề **—** · mức — |
-| Bài 3 | Ba dạng bài trung bình cộng | Đi tìm ngay số còn thiếu mà chưa tính tổng. | Nhóm chuyên đề **—** · mức — |
+| Bài 2 | Tính nhanh tổng | Lấy tổng đã làm tròn ra trả tiền. | Nhóm chuyên đề **—** · mức — |
+| Bài 3 | Tổng – hiệu có lời văn | Nhầm hiệu thành tổng khi đề diễn đạt vòng vo. | Nhóm chuyên đề **—** · mức — |
 | Bài 4 | Phủ hình, chia hình | Chia chu vi cho cạnh mảnh thay vì chia diện tích cho diện tích. | Nhóm chuyên đề **—** · mức — |
-| Bài 5 | Biến thiên chu vi và diện tích | Cho rằng tăng chiều dài thì diện tích tăng nhiều hơn vì chiều dài lớn hơn. | Nhóm chuyên đề **—** · mức — |
+| Bài 5 | Đếm hình bằng quy tắc chọn hai điểm | Chỉ đếm các đoạn nhỏ nhất, quên các đoạn ghép. | Nhóm chuyên đề **—** · mức — |
 
 ---
 

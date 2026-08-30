@@ -112,43 +112,43 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 
 Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: đây là dạng bài gì, và dấu hiệu nào cho biết điều đó.
 
-**Đề 1.** Chú ý: chuyển đi thì bên này giảm, bên kia tăng. Đội Hai có 180 quyển sách, nhóm Sao Mai có 120 quyển. Hỏi phải chuyển bao nhiêu quyển từ đội Hai sang nhóm Sao Mai để số sách hai tổ bằng nhau?
+**Đề 1.** Chú ý: chuyển đi thì bên này giảm, bên kia tăng. Tổ Hai có 140 quyển sách, tổ Một có 112 quyển. Hỏi phải chuyển bao nhiêu quyển từ tổ Hai sang tổ Một để số sách hai tổ bằng nhau?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 2.** Vẽ sơ đồ đoạn thẳng rồi giải. Tổ Ba và tổ Một trồng được tất cả 33 cây. Số cây của tổ Ba bằng 1 phần 2 số cây của tổ Một. Mỗi tổ trồng được bao nhiêu cây?
+**Đề 2.** Tính trung bình cộng. Tìm trung bình cộng của 4 số: 89, 73, 77, 81.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 3.** Chú ý điều gì thay đổi và điều gì không đổi theo thời gian. Tuổi bố gấp 5 lần tuổi con. Tổng số tuổi của hai bố con là 48 tuổi. Tính tuổi mỗi người.
+**Đề 3.** Dùng phương pháp giả thiết tạm. Vừa gà vừa chó có 14 con, đếm được tất cả 48 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 4.** Dùng phương pháp giả thiết tạm. Vừa gà vừa chó có 30 con, đếm được tất cả 94 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
+**Đề 4.** Tìm hai số trong mỗi trường hợp. Tổng hai số là 1 064, hiệu hai số là 224. Tìm hai số đó.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 5.** Giải bằng phương pháp rút về đơn vị. 6 bao phân bón nặng 204 kg. Hỏi 16 bao như thế nặng bao nhiêu kg?
+**Đề 5.** Coi cả công việc là 1 đơn vị. Vòi thứ nhất chảy một mình đầy bể trong 2 giờ, vòi thứ hai chảy một mình đầy bể trong 8 giờ. Mở cả hai vòi thì sau bao lâu đầy bể?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 6.** Bài mô phỏng phần tự luận của đề thi chất lượng cao. Ba số có tổng 330. Số thứ hai hơn số thứ nhất 6, số thứ ba hơn số thứ hai 6. Tìm số thứ hai.
+**Đề 6.** Bài mô phỏng phần tự luận của đề thi chất lượng cao. Ba số có tổng 126. Số thứ hai hơn số thứ nhất 8, số thứ ba hơn số thứ hai 8. Tìm số thứ hai.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 7.** Đọc kĩ “của số nào” trước khi tính. Một cửa hàng có 192 kg gạo. Ngày đầu bán 1 phần 4 số gạo, ngày thứ hai bán 1 phần 2 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
+**Đề 7.** Trước khi tính, gạch chân câu hỏi và khoanh tròn dữ kiện **không** dùng tới. Một gia đình gồm 2 người lớn và 2 trẻ em đi tham quan cách nhà 74 km. Vé người lớn 170 000 đồng, vé trẻ em bằng nửa vé người lớn. Hỏi cả gia đình mua vé hết bao nhiêu tiền?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 8.** Tóm tắt bằng sơ đồ đoạn thẳng rồi giải. Hai lớp 4B và 4A có tất cả 720 quyển sách. Lớp 4B có nhiều hơn lớp 4A 234 quyển. Mỗi lớp có bao nhiêu quyển?
+**Đề 8.** Giải bằng cách rút về đơn vị hoặc dùng tỉ số. Mua 14 quyển vở hết 280 nghìn đồng. Mua 19 quyển vở như thế hết bao nhiêu nghìn đồng?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 9.** Ghi rõ đơn vị của từng đại lượng. Một người đi xe đạp với vận tốc 60 km/giờ trong 3 giờ. Tính quãng đường đi được.
+**Đề 9.** Vẽ sơ đồ đoạn thẳng rồi giải. Đội Hai và nhóm Hoa Phượng trồng được tất cả 930 cây. Số cây của đội Hai bằng 2 phần 3 số cây của nhóm Hoa Phượng. Mỗi tổ trồng được bao nhiêu cây?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 10.** Vẽ sơ đồ đoạn thẳng rồi giải. Kho B chứa nhiều hơn kho A 111 kg phân bón. Số phân bón ở kho A bằng 1 phần 4 số phân bón ở kho B. Mỗi nơi chứa bao nhiêu kg?
+**Đề 10.** Giải từng bài toán nhỏ. Trung bình mỗi ngày cửa hàng bán được 239 kg gạo. 2 ngày đầu bán được 247, 235 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
@@ -159,15 +159,15 @@ Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: 
 | # | Dạng bài | Dấu hiệu |
 |:--:|---|---|
 | 1 | Chuyển đổi giữa hai đại lượng, tổng không đổi | “Chuyển … từ bên này sang bên kia” |
-| 2 | Bài toán tổng – tỉ | Đề cho **tổng** và **tỉ số** (phân số hoặc “gấp … lần”) |
-| 3 | Bài toán tuổi | Xuất hiện mốc thời gian: hiện nay, sau … năm, cách đây … năm |
-| 4 | Giả thiết tạm | Hai loại đối tượng, biết tổng số và tổng của một đại lượng khác |
-| 5 | Rút về đơn vị | Cho giá trị của một nhóm, hỏi giá trị của nhóm khác cùng loại |
+| 2 | Tìm trung bình cộng | Từ khoá “trung bình cộng”, “trung bình mỗi …” |
+| 3 | Giả thiết tạm | Hai loại đối tượng, biết tổng số và tổng của một đại lượng khác |
+| 4 | Bài toán tổng – hiệu | Đề cho **tổng** và **hiệu** của hai số |
+| 5 | Công việc chung | “Làm một mình trong … giờ” đi cùng “cùng làm” |
 | 6 | Tổng nhiều số có ràng buộc; tổng – tỉ | Ba số hơn kém nhau cùng một lượng; hoặc tổng đi cùng tỉ số |
-| 7 | Tìm phân số của một số, nhiều bước | Cụm “… số còn lại”, “… số đó” |
-| 8 | Tổng – hiệu có lời văn | “Có tất cả …” và “… nhiều hơn … là …” |
-| 9 | Ba dạng cơ bản của chuyển động đều | Có hai trong ba đại lượng quãng đường, vận tốc, thời gian |
-| 10 | Bài toán hiệu – tỉ | Đề cho **hiệu** và **tỉ số** |
+| 7 | Bài toán giá vé và cước phí | Đề kể một tình huống đời thường và cho **nhiều số hơn mức cần** |
+| 8 | Tỉ lệ thuận, rút về đơn vị | Hai đại lượng cùng tăng cùng giảm |
+| 9 | Bài toán tổng – tỉ | Đề cho **tổng** và **tỉ số** (phân số hoặc “gấp … lần”) |
+| 10 | Ba dạng bài trung bình cộng | Cụm “trung bình mỗi …” |
 
 ---
 

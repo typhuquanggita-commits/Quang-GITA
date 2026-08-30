@@ -30,11 +30,11 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần A**
 
-- **Bài A.1** — a) 70 000 · b) 6 000 · c) 8 600 · d) 560 000 · e) 600 000 · f) 480 000 · g) 470 000
-- **Bài A.2** — a) 202 · b) 7 giờ 55 phút · c) 4 giờ 14 phút · d) 42 phút · e) 24 phút
-- **Bài A.3** — a) 670 000 · b) 8 300 · c) 780 000 · d) 89 000 · e) 4 500 · f) 8 500 · g) 4 000 · h) 440
-- **Bài A.4** — a) 6 tấn 5 tạ 37 kg · b) 2 tấn 3 tạ 57 kg · c) 6 tạ 70 kg · d) 6 142 · e) 2 174 · f) 6 397
-- **Bài A.5** — a) 689 642 · b) 521 185 · c) 179 580 · d) 367 985 · e) 979 387
+- **Bài A.1** — a) số lớn 775, số bé 527 · b) số lớn 857, số bé 701 · c) số lớn 343, số bé 341 · d) số lớn 227, số bé 201 · e) số lớn 255, số bé 207 · f) số lớn 1 089, số bé 559
+- **Bài A.2** — a) 2 184 · b) 2 526 · c) 3 tấn 4 tạ 32 kg · d) 2 tấn 4 tạ 97 kg · e) 6 175 · f) 3 tấn 6 tạ 45 kg · g) 396
+- **Bài A.3** — a) 2 600 · b) 2 300 · c) 290 000 · d) 8 300
+- **Bài A.4** — a) 770 · b) 78 000 · c) 74 000 · d) 60 000 · e) 890 000
+- **Bài A.5** — a) 9 giờ 42 phút · b) 8 giờ 29 phút · c) 2 giờ 45 phút · d) 355 · e) 8 giờ 45 phút · f) 6 giờ 49 phút · g) 5 giờ 48 phút
 
 **Phần B**
 
@@ -74,75 +74,31 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 Mỗi bài có hai phần: **các bước giải** với số liệu thật của chính bài ấy, và **cách nghĩ** áp dụng cho mọi bài cùng dạng. Đọc kĩ phần chữ đậm — đó là câu cần nhớ, không phải con số.
 
-### Bài A.1 — Đổi đơn vị đo diện tích
-
-> **BẪY — 100 lần chứ không phải 10 lần.**
+### Bài A.1 — Tìm hai số khi biết tổng và hiệu
 
 **Các bước giải**
 
-Xét ý a: 7 ha = … m²
+Xét ý a: Tổng hai số là 1 302, hiệu hai số là 248. Tìm hai số đó.
 
-Đọc vị: đây là dạng **Đổi đơn vị diện tích**; dấu hiệu là Đơn vị có mũ hai: m², cm², km², ha.
+Đọc vị: đây là dạng **Bài toán tổng – hiệu**; dấu hiệu là Đề cho **tổng** và **hiệu** của hai số.
 
-Kiến thức phải dùng: Bảng đơn vị đo diện tích.
+Kiến thức phải dùng: Công thức tổng – hiệu, sơ đồ đoạn thẳng.
 
-Cách làm: Đếm bậc rồi nhân, chia 100.
+Cách làm: Vẽ sơ đồ, đưa về hai phần bằng nhau.
 
-Lối tắt: Mỗi bậc thêm hai chữ số 0 — nhớ “diện tích thì gấp đôi số 0”.
+Lối tắt: Số lớn và số bé luôn có trung bình cộng bằng nửa tổng.
 
-Kết quả: **70 000**.
+Kết quả: **số lớn 775, số bé 527**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần** (chứ không phải 10 lần như đơn vị độ dài), vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Số lớn = (tổng + hiệu) : 2. Số bé = (tổng − hiệu) : 2. Cách hiểu: vẽ hai đoạn thẳng, đoạn dài hơn phần hiệu; bớt phần hiệu đi thì hai đoạn bằng nhau, mỗi đoạn là số bé.
 
-*Điểm chốt:* Đơn vị diện tích nhảy **100 lần** mỗi bậc.
+*Điểm chốt:* Cộng hiệu ra **số lớn**, trừ hiệu ra **số bé** — nhớ đúng chiều.
 
-### Bài A.2 — Đơn vị đo thời gian: giờ và phút
-
-> **BẪY — Cơ số 60 chứ không phải 10.**
+### Bài A.2 — Đổi số đo khối lượng có nhiều đơn vị
 
 **Các bước giải**
 
-Xét ý a: 3 giờ 22 phút = … phút
-
-Đọc vị: đây là dạng **Đổi và tính toán với đơn vị thời gian**; dấu hiệu là Số đo có chữ “giờ”, “phút”, “giây”.
-
-Kiến thức phải dùng: Quan hệ giờ – phút – giây.
-
-Cách làm: Quy về phút rồi tính, cuối cùng đổi lại giờ và phút.
-
-Lối tắt: Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm.
-
-Kết quả: **202**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
-
-*Điểm chốt:* Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
-
-### Bài A.3 — Đổi đơn vị đo độ dài và khối lượng
-
-**Các bước giải**
-
-Xét ý a: 67 tấn = … hg
-
-Đọc vị: đây là dạng **Đổi đơn vị đo**; dấu hiệu là Dấu … giữa hai đơn vị khác nhau.
-
-Kiến thức phải dùng: Bảng đơn vị đo độ dài, khối lượng.
-
-Cách làm: Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10.
-
-Lối tắt: Số bậc chính là số chữ số 0 phải thêm vào (hoặc bớt đi).
-
-Kết quả: **670 000**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
-
-*Điểm chốt:* Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
-
-### Bài A.4 — Đổi số đo khối lượng có nhiều đơn vị
-
-**Các bước giải**
-
-Xét ý a: 6 537 kg = … tấn … tạ … kg
+Xét ý a: 2 tấn 1 tạ 84 kg = … kg
 
 Đọc vị: đây là dạng **Số đo có nhiều đơn vị**; dấu hiệu là Số đo viết dưới dạng “… tấn … tạ … kg”.
 
@@ -152,31 +108,75 @@ Cách làm: Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư.
 
 Lối tắt: Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ.
 
-Kết quả: **6 tấn 5 tạ 37 kg**.
+Kết quả: **2 184**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** 1 tấn = 10 tạ = 1 000 kg; 1 tạ = 100 kg; 1 yến = 10 kg. Đổi tất cả về ki-lô-gam rồi cộng lại; hoặc ngược lại, chia dần từ đơn vị lớn xuống đơn vị bé và lấy phần dư.
 
 *Điểm chốt:* Đổi hết về **một đơn vị chung** trước khi cộng.
 
-### Bài A.5 — Viết số khi biết tổng các giá trị hàng
+### Bài A.3 — Đổi đơn vị đo diện tích
+
+> **BẪY — 100 lần chứ không phải 10 lần.**
 
 **Các bước giải**
 
-Xét ý a: Viết số gồm tổng: 600 000 + 80 000 + 9 000 + 600 + 40 + 2
+Xét ý a: 26 dm² = … cm²
 
-Đọc vị: đây là dạng **Viết số từ dạng tổng theo hàng**; dấu hiệu là Tổng gồm các số tròn chục, tròn trăm, tròn nghìn….
+Đọc vị: đây là dạng **Đổi đơn vị diện tích**; dấu hiệu là Đơn vị có mũ hai: m², cm², km², ha.
 
-Kiến thức phải dùng: Cấu tạo thập phân của số tự nhiên.
+Kiến thức phải dùng: Bảng đơn vị đo diện tích.
 
-Cách làm: Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết.
+Cách làm: Đếm bậc rồi nhân, chia 100.
 
-Lối tắt: Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số.
+Lối tắt: Mỗi bậc thêm hai chữ số 0 — nhớ “diện tích thì gấp đôi số 0”.
 
-Kết quả: **689 642**.
+Kết quả: **2 600**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Mỗi số hạng cho biết một hàng. Xếp các chữ số vào đúng hàng của nó, hàng nào khuyết thì viết chữ số 0.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần** (chứ không phải 10 lần như đơn vị độ dài), vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
 
-*Điểm chốt:* Hàng khuyết trong tổng vẫn phải có chữ số **0** trong số viết ra.
+*Điểm chốt:* Đơn vị diện tích nhảy **100 lần** mỗi bậc.
+
+### Bài A.4 — Đổi đơn vị đo độ dài và khối lượng
+
+> **BẪY — Chiều đổi đơn vị.**
+
+**Các bước giải**
+
+Xét ý a: 77 tấn = … tạ
+
+Đọc vị: đây là dạng **Đổi đơn vị đo**; dấu hiệu là Dấu … giữa hai đơn vị khác nhau.
+
+Kiến thức phải dùng: Bảng đơn vị đo độ dài, khối lượng.
+
+Cách làm: Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10.
+
+Lối tắt: Số bậc chính là số chữ số 0 phải thêm vào (hoặc bớt đi).
+
+Kết quả: **770**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
+
+*Điểm chốt:* Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
+
+### Bài A.5 — Đơn vị đo thời gian: giờ và phút
+
+**Các bước giải**
+
+Xét ý a: 582 phút = … giờ … phút
+
+Đọc vị: đây là dạng **Đổi và tính toán với đơn vị thời gian**; dấu hiệu là Số đo có chữ “giờ”, “phút”, “giây”.
+
+Kiến thức phải dùng: Quan hệ giờ – phút – giây.
+
+Cách làm: Quy về phút rồi tính, cuối cùng đổi lại giờ và phút.
+
+Lối tắt: Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm.
+
+Kết quả: **9 giờ 42 phút**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
+
+*Điểm chốt:* Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
 
 ### Bài B.1 — Bốn dòng bắt buộc của một lời giải
 
@@ -586,11 +586,11 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
-| A.1 | Đổi đơn vị diện tích | Bảng đơn vị đo diện tích | Đơn vị có mũ hai: m², cm², km², ha | Đếm bậc rồi nhân, chia 100 | Mỗi bậc thêm hai chữ số 0 — nhớ “diện tích thì gấp đôi số 0”. | 70 000 · 6 000 · 8 600 · 560 000… |
-| A.2 | Đổi và tính toán với đơn vị thời gian | Quan hệ giờ – phút – giây | Số đo có chữ “giờ”, “phút”, “giây” | Quy về phút rồi tính, cuối cùng đổi lại giờ và phút | Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm. | 202 · 7 giờ 55 phút · 4 giờ 14 phút · 42 phút… |
-| A.3 | Đổi đơn vị đo | Bảng đơn vị đo độ dài, khối lượng | Dấu … giữa hai đơn vị khác nhau | Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10 | Số bậc chính là số chữ số 0 phải thêm vào (hoặc bớt đi). | 670 000 · 8 300 · 780 000 · 89 000… |
-| A.4 | Số đo có nhiều đơn vị | Bảng đơn vị khối lượng | Số đo viết dưới dạng “… tấn … tạ … kg” | Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư | Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ. | 6 tấn 5 tạ 37 kg · 2 tấn 3 tạ 57 kg · 6 tạ 70 kg · 6 142… |
-| A.5 | Viết số từ dạng tổng theo hàng | Cấu tạo thập phân của số tự nhiên | Tổng gồm các số tròn chục, tròn trăm, tròn nghìn… | Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết | Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số. | 689 642 · 521 185 · 179 580 · 367 985… |
+| A.1 | Bài toán tổng – hiệu | Công thức tổng – hiệu, sơ đồ đoạn thẳng | Đề cho **tổng** và **hiệu** của hai số | Vẽ sơ đồ, đưa về hai phần bằng nhau | Số lớn và số bé luôn có trung bình cộng bằng nửa tổng. | số lớn 775, số bé 527 · số lớn 857, số bé 701 · số lớn 343, số bé 341 · số lớn 227, số bé 201… |
+| A.2 | Số đo có nhiều đơn vị | Bảng đơn vị khối lượng | Số đo viết dưới dạng “… tấn … tạ … kg” | Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư | Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ. | 2 184 · 2 526 · 3 tấn 4 tạ 32 kg · 2 tấn 4 tạ 97 kg… |
+| A.3 | Đổi đơn vị diện tích | Bảng đơn vị đo diện tích | Đơn vị có mũ hai: m², cm², km², ha | Đếm bậc rồi nhân, chia 100 | Mỗi bậc thêm hai chữ số 0 — nhớ “diện tích thì gấp đôi số 0”. | 2 600 · 2 300 · 290 000 · 8 300 |
+| A.4 | Đổi đơn vị đo | Bảng đơn vị đo độ dài, khối lượng | Dấu … giữa hai đơn vị khác nhau | Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10 | Số bậc chính là số chữ số 0 phải thêm vào (hoặc bớt đi). | 770 · 78 000 · 74 000 · 60 000… |
+| A.5 | Đổi và tính toán với đơn vị thời gian | Quan hệ giờ – phút – giây | Số đo có chữ “giờ”, “phút”, “giây” | Quy về phút rồi tính, cuối cùng đổi lại giờ và phút | Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm. | 9 giờ 42 phút · 8 giờ 29 phút · 2 giờ 45 phút · 355… |
 | B.1 | Kỹ năng trình bày | Chuẩn trình bày bài giải | Yêu cầu “trình bày lời giải” | Viết đủ bốn dòng | Viết câu lời giải trước, phép tính sau — không bao giờ ngược lại. | câu lời giải nêu rõ đang tìm đại lượng nào · phép tính, viết đủ dấu và đủ đơn vị · kết quả kèm đơn vị · câu đáp số… |
 | B.2 | Kỹ năng viết câu lời giải | Chuẩn trình bày | Đề hỏi gì thì câu lời giải nhắc lại điều đó | Lấy cụm từ trong câu hỏi làm câu lời giải | Sao chép cụm từ trong câu hỏi là cách viết câu lời giải nhanh và chắc nhất. | “Đại lượng khối lượng, chia phần và làm tròn lên là:” · “Bài toán đại lượng nhiều bước là:” · “Đổi đơn vị diện tích là:” · “Lịch và đơn vị thời gian lớn là:”… |
 | B.3 | Kỹ năng ghi đơn vị | Đơn vị đo các đại lượng | Đáp số của bài có đại lượng đo | Kiểm tra đơn vị ở bước cuối | Nhìn đơn vị của đáp số là biết ngay mình có nhầm chu vi với diện tích không. | không ghi trong dấu ngoặc phép tính · có, bắt buộc · có, bắt buộc · đơn vị vuông, ví dụ cm²… |
@@ -618,11 +618,11 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 
 | Bài | Nhãn tư duy | Điểm chốt |
 |---|---|---|
-| A.1 | TD1, TD2 | Đơn vị diện tích nhảy **100 lần** mỗi bậc. |
-| A.2 | TD1, TD3 | Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác. |
-| A.3 | TD1 | Đếm đúng **số bậc** giữa hai đơn vị trên bảng. |
-| A.4 | TD1, TD3 | Đổi hết về **một đơn vị chung** trước khi cộng. |
-| A.5 | TD1, TD3 | Hàng khuyết trong tổng vẫn phải có chữ số **0** trong số viết ra. |
+| A.1 | TD1, TD3 | Cộng hiệu ra **số lớn**, trừ hiệu ra **số bé** — nhớ đúng chiều. |
+| A.2 | TD1, TD3 | Đổi hết về **một đơn vị chung** trước khi cộng. |
+| A.3 | TD1, TD2 | Đơn vị diện tích nhảy **100 lần** mỗi bậc. |
+| A.4 | TD1 | Đếm đúng **số bậc** giữa hai đơn vị trên bảng. |
+| A.5 | TD1, TD3 | Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác. |
 | B.1 | TD1 | Có lời giải đúng mà trình bày thiếu vẫn **mất điểm thật**. |
 | B.2 | TD1 | Câu lời giải phải **nêu đúng đại lượng** đang tìm. |
 | B.3 | TD1 | Diện tích **luôn** có đơn vị vuông, thể tích luôn có đơn vị khối. |
@@ -652,11 +652,11 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 
 | Bài | Lỗi thường gặp | Cách phòng |
 |---|---|---|
-| A.1 | Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. | Viết bảng đơn vị diện tích riêng, ghi rõ “×100” giữa hai bậc. |
-| A.2 | Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. | Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không. |
-| A.3 | Đổi ngược chiều nên nhân thành chia. | Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay. |
-| A.4 | Cộng thẳng các số đứng trước những đơn vị khác nhau. | Viết mỗi thành phần thành số ki-lô-gam ngay bên dưới rồi mới cộng. |
-| A.5 | Bỏ qua hàng khuyết nên số viết ra bị ngắn đi một chữ số. | Kẻ sẵn các ô hàng rồi mới điền chữ số vào ô tương ứng. |
+| A.1 | Lấy (tổng + hiệu) : 2 rồi gọi đó là số bé. | Vẽ sơ đồ đoạn thẳng trước, đoạn dài hơn luôn là số lớn. |
+| A.2 | Cộng thẳng các số đứng trước những đơn vị khác nhau. | Viết mỗi thành phần thành số ki-lô-gam ngay bên dưới rồi mới cộng. |
+| A.3 | Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. | Viết bảng đơn vị diện tích riêng, ghi rõ “×100” giữa hai bậc. |
+| A.4 | Đổi ngược chiều nên nhân thành chia. | Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay. |
+| A.5 | Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. | Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không. |
 | B.1 | Viết thẳng phép tính, bỏ câu lời giải. | Đọc lại bài đã làm, đếm xem có đủ bốn dòng chưa. |
 | B.2 | Viết câu lời giải chung chung cho mọi bài. | Lấy đúng cụm từ trong câu hỏi của đề làm câu lời giải. |
 | B.3 | Ghi diện tích bằng cm thay vì cm². | Trước khi viết đáp số, hỏi: đại lượng này đo bằng gì? |
@@ -684,11 +684,11 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 
 Đọc tầng 1 trước; chỉ đọc tầng sau khi đã thử lại ít nhất 3 phút.
 
-**Bài A.1** — (1) Đơn vị diện tích liền kề hơn kém nhau mấy lần? — (2) Đếm số bậc giữa hai đơn vị. — (3) Mỗi bậc nhân hoặc chia 100.
-**Bài A.2** — (1) 1 giờ bằng bao nhiêu phút? — (2) Chia số phút cho 60, lấy thương và số dư. — (3) Phần phút của kết quả phải bé hơn 60.
-**Bài A.3** — (1) Viết bảng đơn vị từ lớn đến bé. — (2) Đếm xem hai đơn vị cách nhau mấy bậc. — (3) Từ lớn sang bé thì nhân, mỗi bậc nhân 10.
-**Bài A.4** — (1) 1 tấn bằng bao nhiêu ki-lô-gam? — (2) Đổi từng phần về ki-lô-gam. — (3) Cộng tất cả lại.
-**Bài A.5** — (1) Số hạng lớn nhất cho biết hàng cao nhất. — (2) Kẻ đủ ô từ hàng cao nhất xuống hàng đơn vị. — (3) Ô nào không có số hạng tương ứng thì điền 0.
+**Bài A.1** — (1) Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. — (2) Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau, tổng mới bằng bao nhiêu? — (3) Chia đôi tổng mới để ra số bé.
+**Bài A.2** — (1) 1 tấn bằng bao nhiêu ki-lô-gam? — (2) Đổi từng phần về ki-lô-gam. — (3) Cộng tất cả lại.
+**Bài A.3** — (1) Đơn vị diện tích liền kề hơn kém nhau mấy lần? — (2) Đếm số bậc giữa hai đơn vị. — (3) Mỗi bậc nhân hoặc chia 100.
+**Bài A.4** — (1) Viết bảng đơn vị từ lớn đến bé. — (2) Đếm xem hai đơn vị cách nhau mấy bậc. — (3) Từ lớn sang bé thì nhân, mỗi bậc nhân 10.
+**Bài A.5** — (1) 1 giờ bằng bao nhiêu phút? — (2) Chia số phút cho 60, lấy thương và số dư. — (3) Phần phút của kết quả phải bé hơn 60.
 **Bài B.1** — (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 **Bài B.2** — (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 **Bài B.3** — (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
@@ -718,11 +718,11 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 
 | Bài | Đề tương tự | Đáp số |
 |---|---|---|
-| A.1 | 3 m² = … cm² | 30 000 |
-| A.2 | 155 phút = … giờ … phút | 2 giờ 35 phút |
-| A.3 | 5 km = … m | 5 000 |
-| A.4 | 3 450 kg = … tấn … tạ … kg | 3 tấn 4 tạ 50 kg |
-| A.5 | Viết số gồm tổng: 30 000 + 400 + 7 | 30 407 |
+| A.1 | Tổng hai số là 100, hiệu là 20. Tìm hai số. | 60 và 40 |
+| A.2 | 3 450 kg = … tấn … tạ … kg | 3 tấn 4 tạ 50 kg |
+| A.3 | 3 m² = … cm² | 30 000 |
+| A.4 | 5 km = … m | 5 000 |
+| A.5 | 155 phút = … giờ … phút | 2 giờ 35 phút |
 | B.1 | Một lời giải đạt chuẩn GITA có mấy dòng bắt buộc? | 4 dòng |
 | B.2 | Đề hỏi “mỗi tổ trồng mấy cây” thì câu lời giải viết thế nào? | “Số cây mỗi tổ trồng được là:” |
 | B.3 | Diện tích hình vuông cạnh 5 cm ghi đơn vị gì? | cm² |

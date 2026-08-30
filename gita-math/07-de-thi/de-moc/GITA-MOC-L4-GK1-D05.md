@@ -30,56 +30,56 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Viết số tự nhiên ứng với mỗi tổng dưới đây.
 
-a) Viết số gồm tổng: 800 000 + 30 000 + 8 000 + 100 + 5
-b) Viết số gồm tổng: 500 000 + 60 000 + 9 000 + 200 + 8
-c) Viết số gồm tổng: 700 000 + 40 000 + 1 000 + 500 + 1
-d) Viết số gồm tổng: 300 000 + 20 000 + 2 000 + 300 + 40 + 5
+a) Viết số gồm tổng: 400 000 + 80 000 + 8 000 + 400 + 10 + 2
+b) Viết số gồm tổng: 900 000 + 30 000 + 5 000 + 300 + 60 + 1
+c) Viết số gồm tổng: 200 000 + 30 000 + 3 000 + 600 + 60 + 5
+d) Viết số gồm tổng: 500 000 + 30 000 + 1 000 + 400 + 90 + 5
+e) Viết số gồm tổng: 10 000 + 7 000 + 100 + 70 + 1
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
 Tính bằng cách thuận tiện nhất.
 
-a) 26 + 360 + 74
-b) 207 + 66 − 66
-c) 28 + 14 + 72 + 86
-d) 25 + 132 + 75
-e) 84 + 74 + 16 + 26
-f) 60 + 121 + 40
+a) 1 640 : 4 : 10
+b) 96 × 125 × 8
+c) 41 × 25 × 4
+d) 14 × 125 × 8
+e) 50 × 96 × 2
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
-Giải từng bài toán nhỏ.
+Tóm tắt bằng sơ đồ đoạn thẳng rồi giải.
 
-a) Trung bình mỗi ngày cửa hàng bán được 186 kg gạo. 3 ngày đầu bán được 190, 183, 192 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
-b) 4 ngày đầu tuần một cửa hàng bán được lần lượt 216, 214, 224, 234 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
-c) Trung bình mỗi ngày bán được 160 kg gạo. Hỏi 6 ngày bán được tất cả bao nhiêu ki-lô-gam?
-d) Trung bình mỗi ngày bán được 289 kg gạo. Hỏi 6 ngày bán được tất cả bao nhiêu ki-lô-gam?
-e) Trung bình mỗi ngày cửa hàng bán được 97 kg gạo. 2 ngày đầu bán được 104, 88 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
-f) Trung bình mỗi ngày cửa hàng bán được 81 kg gạo. 3 ngày đầu bán được 75, 92, 83 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
+a) Nhóm Hoa Phượng và đội Một trồng được 896 cây. Nhóm Hoa Phượng trồng nhiều hơn đội Một 56 cây. Mỗi tổ trồng bao nhiêu cây?
+b) Trang trại và xưởng chứa tất cả 832 kg muối. Trang trại chứa nhiều hơn xưởng 252 kg. Mỗi nơi chứa bao nhiêu kg?
+c) Hai lớp 3B và 5C có tất cả 572 quyển sách. Lớp 3B có nhiều hơn lớp 5C 156 quyển. Mỗi lớp có bao nhiêu quyển?
+d) Trang trại và cửa hàng chứa tất cả 760 kg gạo. Trang trại chứa nhiều hơn cửa hàng 108 kg. Mỗi nơi chứa bao nhiêu kg?
+e) Tổ Một và tổ Ba trồng được 678 cây. Tổ Một trồng nhiều hơn tổ Ba 126 cây. Mỗi tổ trồng bao nhiêu cây?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
-Trình bày lời giải có câu trả lời.
+Vẽ hình minh hoạ phần tăng thêm.
 
-a) Một cửa hàng có 12 thùng sữa, mỗi thùng 25 lít. Cửa hàng đã bán 5 thùng. Hỏi cửa hàng còn lại bao nhiêu lít sữa?
-b) Một cửa hàng có 11 thùng nước mắm, mỗi thùng 15 lít. Cửa hàng đã bán 10 thùng. Hỏi cửa hàng còn lại bao nhiêu lít nước mắm?
-c) Một cửa hàng có 10 thùng nước, mỗi thùng 15 lít. Cửa hàng đã bán 7 thùng. Hỏi cửa hàng còn lại bao nhiêu lít nước?
-d) Một cửa hàng có 15 thùng nước mắm, mỗi thùng 18 lít. Cửa hàng đã bán 10 thùng. Hỏi cửa hàng còn lại bao nhiêu lít nước mắm?
-e) Một cửa hàng có 11 thùng nước, mỗi thùng 12 lít. Cửa hàng đã bán 7 thùng. Hỏi cửa hàng còn lại bao nhiêu lít nước?
+a) Hình chữ nhật dài 46 cm, rộng 39 cm. Nếu tăng chiều dài thêm 14 cm (giữ nguyên chiều rộng) thì diện tích tăng thêm bao nhiêu?
+b) Hình chữ nhật dài 48 cm, rộng 36 cm. Nếu tăng chiều dài thêm 11 cm (giữ nguyên chiều rộng) thì diện tích tăng thêm bao nhiêu?
+c) Hình chữ nhật dài 27 cm, rộng 10 cm. Nếu gấp đôi chiều dài và giữ nguyên chiều rộng thì diện tích mới gấp mấy lần diện tích cũ?
+d) Hình chữ nhật dài 12 cm, rộng 11 cm. Nếu tăng cả chiều dài và chiều rộng thêm 5 cm thì diện tích tăng thêm bao nhiêu?
+e) Hình chữ nhật dài 45 cm, rộng 26 cm. Nếu tăng chiều dài thêm 10 cm (giữ nguyên chiều rộng) thì diện tích tăng thêm bao nhiêu?
+f) Hình chữ nhật dài 29 cm, rộng 21 cm. Nếu tăng chiều dài thêm 5 cm (giữ nguyên chiều rộng) thì diện tích tăng thêm bao nhiêu?
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
 Bài mô phỏng phần tự luận của đề thi chất lượng cao.
 
-a) Ba số có tổng 282. Số thứ hai hơn số thứ nhất 6, số thứ ba hơn số thứ hai 6. Tìm số thứ hai.
+a) Ba số có tổng 348. Số thứ hai hơn số thứ nhất 3, số thứ ba hơn số thứ hai 3. Tìm số thứ hai.
 b) Tìm số thứ nhất.
 c) Tìm số thứ ba.
 d) Vì sao số thứ hai bằng tổng ba số chia cho 3?
-e) Hai số khác có tổng 144 và số bé bằng 1 phần 2 số lớn. Tìm số bé.
+e) Hai số khác có tổng 63 và số bé bằng 2 phần 5 số lớn. Tìm số bé.
 f) Tìm số lớn.
 
 
@@ -88,100 +88,100 @@ f) Tìm số lớn.
 ## ĐÁP ÁN VÀ BIỂU ĐIỂM
 
 
-### Bài 1, (2 điểm — mỗi ý 0,5 điểm)
+### Bài 1, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **838 105**
-b) **569 208**
-c) **741 501**
-d) **322 345**
+a) **488 412**
+b) **935 361**
+c) **233 665**
+d) **531 495**
+e) **17 171**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Viết số gồm tổng: 800 000 + 30 000 + 8 000 + 100 + 5
+1. Xét ý a: Viết số gồm tổng: 400 000 + 80 000 + 8 000 + 400 + 10 + 2
 2. Đọc vị: đây là dạng **Viết số từ dạng tổng theo hàng**; dấu hiệu là Tổng gồm các số tròn chục, tròn trăm, tròn nghìn….
 3. Kiến thức phải dùng: Cấu tạo thập phân của số tự nhiên.
 4. Cách làm: Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết.
 5. Lối tắt: Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số.
-6. Kết quả: **838 105**.
+6. Kết quả: **488 412**.
 
 *Lỗi hay mắc:* Bỏ qua hàng khuyết nên số viết ra bị ngắn đi một chữ số.
 
-### Bài 2, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 2, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **460**
-b) **207**
-c) **200**
-d) **232**
-e) **200**
-f) **221**
-
-**Cách giải mẫu:**
-
-1. Xét ý a: 26 + 360 + 74
-2. Đọc vị: đây là dạng **Tính nhanh tổng nhiều số hạng**; dấu hiệu là Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm.
-3. Kiến thức phải dùng: Tính chất giao hoán, kết hợp của phép cộng.
-4. Cách làm: Ghép cặp tròn rồi cộng.
-5. Lối tắt: Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10.
-6. Kết quả: **460**.
-
-*Lỗi hay mắc:* Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn.
-
-### Bài 3, (2 điểm — mỗi ý 0,33 điểm)
-
-a) **179 kg**
-b) **222 kg**
-c) **960 kg**
-d) **1 734 kg**
-e) **99 kg**
-f) **74 kg**
+a) **41**
+b) **96 000**
+c) **4 100**
+d) **14 000**
+e) **9 600**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Trung bình mỗi ngày cửa hàng bán được 186 kg gạo. 3 ngày đầu bán được 190, 183, 192 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
-2. Đọc vị: đây là dạng **Ba dạng bài trung bình cộng**; dấu hiệu là Cụm “trung bình mỗi …”.
-3. Kiến thức phải dùng: Quan hệ tổng – số lượng – trung bình cộng.
-4. Cách làm: Đi qua tổng làm trung gian.
-5. Lối tắt: Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng.
-6. Kết quả: **179 kg**.
+1. Xét ý a: 1 640 : 4 : 10
+2. Đọc vị: đây là dạng **Tính nhanh tích, thương nhiều bước**; dấu hiệu là Tích có thừa số 25, 125, 50, 20; hoặc chia liên tiếp.
+3. Kiến thức phải dùng: Tính chất giao hoán, kết hợp của phép nhân.
+4. Cách làm: Ghép cặp cho tích tròn rồi nhân.
+5. Lối tắt: Chia liên tiếp cho 4 rồi 25 bằng chia cho 100.
+6. Kết quả: **41**.
 
-*Lỗi hay mắc:* Đi tìm ngay số còn thiếu mà chưa tính tổng.
+*Lỗi hay mắc:* Nhân lần lượt từ trái sang phải nên số trung gian rất lớn.
 
-### Bài 4, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 3, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **175 lít**
-b) **15 lít**
-c) **45 lít**
-d) **90 lít**
-e) **48 lít**
+a) **nhóm Hoa Phượng: 476 cây, đội Một: 420 cây**
+b) **trang trại: 542 kg, xưởng: 290 kg**
+c) **3B: 364 quyển, 5C: 208 quyển**
+d) **trang trại: 434 kg, cửa hàng: 326 kg**
+e) **tổ Một: 402 cây, tổ Ba: 276 cây**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Một cửa hàng có 12 thùng sữa, mỗi thùng 25 lít. Cửa hàng đã bán 5 thùng. Hỏi cửa hàng còn lại bao nhiêu lít sữa?
-2. Đọc vị: đây là dạng **Bài toán đại lượng nhiều bước**; dấu hiệu là Cho số nhóm, giá trị mỗi nhóm và số nhóm đã dùng.
-3. Kiến thức phải dùng: Nhân, trừ; đại lượng cùng loại.
-4. Cách làm: Rút gọn số bước bằng cách trừ trước, nhân sau.
-5. Lối tắt: So sánh hai đường giải, chọn đường ít phép tính hơn.
-6. Kết quả: **175 lít**.
+1. Xét ý a: Nhóm Hoa Phượng và đội Một trồng được 896 cây. Nhóm Hoa Phượng trồng nhiều hơn đội Một 56 cây. Mỗi tổ trồng bao nhiêu cây?
+2. Đọc vị: đây là dạng **Tổng – hiệu có lời văn**; dấu hiệu là “Có tất cả …” và “… nhiều hơn … là …”.
+3. Kiến thức phải dùng: Công thức tổng – hiệu, sơ đồ đoạn thẳng.
+4. Cách làm: Đọc vị tổng và hiệu → sơ đồ → công thức.
+5. Lối tắt: Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần.
+6. Kết quả: **nhóm Hoa Phượng: 476 cây, đội Một: 420 cây**.
 
-*Lỗi hay mắc:* Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại.
+*Lỗi hay mắc:* Nhầm hiệu thành tổng khi đề diễn đạt vòng vo.
+
+### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
+
+a) **546 cm²**
+b) **396 cm²**
+c) **2 lần**
+d) **140 cm²**
+e) **260 cm²**
+f) **105 cm²**
+
+**Cách giải mẫu:**
+
+1. Xét ý a: Hình chữ nhật dài 46 cm, rộng 39 cm. Nếu tăng chiều dài thêm 14 cm (giữ nguyên chiều rộng) thì diện tích tăng thêm bao nhiêu?
+2. Đọc vị: đây là dạng **Biến thiên diện tích theo kích thước**; dấu hiệu là “Tăng chiều dài thêm …”, “gấp đôi chiều …”.
+3. Kiến thức phải dùng: Diện tích hình chữ nhật, phân tích hình.
+4. Cách làm: Vẽ hình chồng, tách phần dôi ra thành các mảnh chữ nhật.
+5. Lối tắt: Gấp đôi một chiều thì diện tích gấp đôi; gấp đôi cả hai chiều thì gấp bốn.
+6. Kết quả: **546 cm²**.
+
+*Lỗi hay mắc:* Nhân hai lượng tăng với nhau rồi coi đó là phần diện tích tăng thêm.
 
 ### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **94**
-b) **88**
-c) **100**
+a) **116**
+b) **113**
+c) **119**
 d) **vì ba số cách đều nên số ở giữa là trung bình cộng**
-e) **48**
-f) **96**
+e) **18**
+f) **45**
 
 **Cách giải mẫu:**
 
-1. Ba số cách đều nhau 6 đơn vị nên số ở giữa là trung bình cộng.
-2. Bước 1 — số thứ hai: 282 : 3 = 94.
-3. Bước 2 — số thứ nhất: 94 − 6 = 88.
-4. Bước 3 — số thứ ba: 94 + 6 = 100.
-5. Thử lại: 88 + 94 + 100 = 282 ✓
-6. Đáp số: **88, 94, 100**.
+1. Ba số cách đều nhau 3 đơn vị nên số ở giữa là trung bình cộng.
+2. Bước 1 — số thứ hai: 348 : 3 = 116.
+3. Bước 2 — số thứ nhất: 116 − 3 = 113.
+4. Bước 3 — số thứ ba: 116 + 3 = 119.
+5. Thử lại: 113 + 116 + 119 = 348 ✓
+6. Đáp số: **113, 116, 119**.
 
 *Lỗi hay mắc:* Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi.
 
@@ -194,9 +194,9 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài | Đo cái gì | Sai bài này nghĩa là | Học lại ở đâu |
 |:--:|---|---|---|
 | Bài 1 | Viết số từ dạng tổng theo hàng | Bỏ qua hàng khuyết nên số viết ra bị ngắn đi một chữ số. | Nhóm chuyên đề **—** · mức — |
-| Bài 2 | Tính nhanh tổng nhiều số hạng | Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. | Nhóm chuyên đề **—** · mức — |
-| Bài 3 | Ba dạng bài trung bình cộng | Đi tìm ngay số còn thiếu mà chưa tính tổng. | Nhóm chuyên đề **—** · mức — |
-| Bài 4 | Bài toán đại lượng nhiều bước | Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. | Nhóm chuyên đề **—** · mức — |
+| Bài 2 | Tính nhanh tích, thương nhiều bước | Nhân lần lượt từ trái sang phải nên số trung gian rất lớn. | Nhóm chuyên đề **—** · mức — |
+| Bài 3 | Tổng – hiệu có lời văn | Nhầm hiệu thành tổng khi đề diễn đạt vòng vo. | Nhóm chuyên đề **—** · mức — |
+| Bài 4 | Biến thiên diện tích theo kích thước | Nhân hai lượng tăng với nhau rồi coi đó là phần diện tích tăng thêm. | Nhóm chuyên đề **—** · mức — |
 | Bài 5 | Tổng nhiều số có ràng buộc; tổng – tỉ | Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. | Nhóm chuyên đề **—** · mức — |
 
 ---

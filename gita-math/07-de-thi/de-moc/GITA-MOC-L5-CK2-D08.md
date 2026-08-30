@@ -30,56 +30,58 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Trả lời nhanh, mỗi ý không quá 20 giây.
 
-a) Làm tròn 451 089 đến hàng nghìn.
-b) Chữ số hàng trăm của số 8 333 378 có giá trị bằng bao nhiêu?
-c) Số liền trước và số liền sau của 7 983 428 là những số nào?
-d) 6 537 391 … 6 540 534
-e) Chữ số hàng trăm của số 6 151 166 có giá trị bằng bao nhiêu?
-f) 6 972 890 … 6 970 342
+a) Làm tròn 4 831 540 đến hàng nghìn.
+b) Chữ số hàng triệu của số 7 127 945 có giá trị bằng bao nhiêu?
+c) Số liền trước và số liền sau của 6 589 241 là những số nào?
+d) 1 358 429 … 1 362 905
+e) Số liền trước và số liền sau của 5 206 033 là những số nào?
+f) 4 633 931 … 4 636 290
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
 Điền số thích hợp vào chỗ chấm.
 
-a) 4 600 ha = … km²
-b) 66 hm² = … dam²
-c) 61 ha = … m²
-d) 4 dam² = … m²
-e) 62 hm² = … m²
-f) 5 500 m² = … dam²
+a) 85 hm² = … m²
+b) 64 hm² = … dam²
+c) 5 600 ha = … km²
+d) 83 ha = … m²
+e) 5 900 m² = … dam²
+f) 2 500 m² = … dam²
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
 Ghi rõ đại lượng nào ứng với 100%.
 
-a) Một chiếc cặp giá 400 000 đồng được giảm 25%. Hỏi giá sau khi giảm là bao nhiêu?
-b) Mua một món hàng 240 000 đồng rồi bán 336 000 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
-c) Một món hàng giá 200 000 đồng, tăng giá 30%. Giá mới là bao nhiêu?
-d) Một chiếc cặp giá 150 000 đồng được giảm 15%. Hỏi giá sau khi giảm là bao nhiêu?
+a) Mua một món hàng 120 000 đồng rồi bán 132 000 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
+b) Một chiếc cặp giá 400 000 đồng được giảm 15%. Hỏi giá sau khi giảm là bao nhiêu?
+c) Một món hàng giá 150 000 đồng, tăng giá 5%. Giá mới là bao nhiêu?
+d) Một chiếc cặp giá 500 000 đồng được giảm 25%. Hỏi giá sau khi giảm là bao nhiêu?
+e) Một món hàng giá 120 000 đồng, tăng giá 15%. Giá mới là bao nhiêu?
+f) Mua một món hàng 300 000 đồng rồi bán 360 000 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
-Ghi rõ đơn vị: cm² cho diện tích, cm³ cho thể tích.
+Chú ý đơn vị mà đề hỏi.
 
-a) Hình hộp chữ nhật có đáy 16 cm × 16 cm, chiều cao 14 cm. Tính diện tích xung quanh.
-b) Hình lập phương có cạnh 8 cm. Tính thể tích và diện tích toàn phần.
-c) Hình hộp chữ nhật có đáy 15 cm × 20 cm, chiều cao 5 cm. Tính diện tích toàn phần.
-d) Hình hộp chữ nhật có ba kích thước 18 cm, 19 cm, 12 cm. Tính thể tích.
-e) Hình hộp chữ nhật có đáy 12 cm × 15 cm, chiều cao 14 cm. Tính diện tích toàn phần.
-f) Hình hộp chữ nhật có ba kích thước 11 cm, 16 cm, 14 cm. Tính thể tích.
+a) Một xe chở 36 bao gạo, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ gạo?
+b) Một xe chở 11 bao phân bón, mỗi bao 50 kg. Hỏi xe chở bao nhiêu tạ phân bón?
+c) Một xe chở 17 bao muối, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ muối?
+d) Một xe chở 7 bao gạo, mỗi bao 40 kg. Hỏi xe chở bao nhiêu tạ gạo?
+e) Một xe chở 26 bao thóc, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ thóc?
+f) Một xe chở 12 bao xi măng, mỗi bao 40 kg. Hỏi xe chở bao nhiêu tạ xi măng?
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
-Câu nào cũng phải quy về **một đơn vị thời gian** hoặc **một người** trước khi tính.
+Dùng phương pháp giả thiết tạm.
 
-a) Vòi thứ nhất chảy một mình thì đầy bể sau 8 giờ. Vòi thứ hai chảy một mình thì đầy bể sau 8 giờ. Hỏi mở cả hai vòi cùng lúc thì sau bao lâu đầy bể?
-b) 10 người làm xong một công việc trong 14 ngày. Hỏi 2 người làm xong công việc ấy trong bao nhiêu ngày, biết sức làm của mỗi người như nhau?
-c) Vòi thứ nhất chảy một mình thì đầy bể sau 12 giờ. Vòi thứ hai chảy một mình thì đầy bể sau 4 giờ. Hỏi mở cả hai vòi cùng lúc thì sau bao lâu đầy bể?
-d) 12 người làm xong một công việc trong 11 ngày. Hỏi 2 người làm xong công việc ấy trong bao nhiêu ngày, biết sức làm của mỗi người như nhau?
+a) Vừa gà vừa chó có 69 con, đếm được tất cả 202 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
+b) Vừa gà vừa chó có 48 con, đếm được tất cả 120 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
+c) Vừa gà vừa chó có 42 con, đếm được tất cả 136 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
+d) Vừa gà vừa chó có 15 con, đếm được tất cả 48 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
 
 
 ---
@@ -89,97 +91,99 @@ d) 12 người làm xong một công việc trong 11 ngày. Hỏi 2 người là
 
 ### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **451 000**
-b) **300**
-c) **7 983 427 và 7 983 429**
+a) **4 832 000**
+b) **7 000 000**
+c) **6 589 240 và 6 589 242**
 d) **<**
-e) **100**
-f) **>**
+e) **5 206 032 và 5 206 034**
+f) **<**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Làm tròn 451 089 đến hàng nghìn.
+1. Xét ý a: Làm tròn 4 831 540 đến hàng nghìn.
 2. Đọc vị: đây là dạng **Ôn tập số tự nhiên**; dấu hiệu là Câu hỏi ngắn về so sánh, hàng, số liền kề, làm tròn.
 3. Kiến thức phải dùng: Thứ tự số tự nhiên, giá trị hàng, quy tắc làm tròn.
 4. Cách làm: Đếm chữ số, xét hàng từ trái sang phải.
 5. Lối tắt: Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số.
-6. Kết quả: **451 000**.
+6. Kết quả: **4 832 000**.
 
 *Lỗi hay mắc:* So sánh từ hàng đơn vị; hoặc làm tròn nhìn nhầm sang chính hàng cần làm tròn.
 
 ### Bài 2, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **46**
-b) **6 600**
-c) **610 000**
-d) **400**
-e) **620 000**
-f) **55**
+a) **850 000**
+b) **6 400**
+c) **56**
+d) **830 000**
+e) **59**
+f) **25**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 4 600 ha = … km²
-2. Đọc vị: đây là dạng **Đổi đơn vị diện tích**; dấu hiệu là Đơn vị có mũ hai, hoặc ha, km².
-3. Kiến thức phải dùng: Bảng đơn vị đo diện tích.
-4. Cách làm: Đếm bậc rồi nhân, chia 100.
-5. Lối tắt: Mỗi bậc thêm hai chữ số 0 — nhớ “diện tích thì gấp đôi số 0”.
-6. Kết quả: **46**.
+1. 1 hm² = 10 000 m².
+2. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**.
+3. 85 × 10 000 = 850 000 (m²).
+4. Đáp số: **850 000 m²**.
 
 *Lỗi hay mắc:* Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc.
 
-### Bài 3, (2 điểm — mỗi ý 0,5 điểm)
+### Bài 3, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **300 000 đồng**
-b) **40%**
-c) **260 000 đồng**
-d) **127 500 đồng**
+a) **10%**
+b) **340 000 đồng**
+c) **157 500 đồng**
+d) **375 000 đồng**
+e) **138 000 đồng**
+f) **20%**
 
 **Cách giải mẫu:**
 
-1. Giá gốc ứng với 100%.
-2. Bước 1 — số tiền giảm: 400 000 : 100 × 25 = 100 000 (đồng).
-3. Bước 2 — giá sau khi giảm: 400 000 − 100 000 = 300 000 (đồng).
-4. Cách nhanh: giảm 25% nghĩa là còn 75%, tức 400 000 : 100 × 75 = 300 000 (đồng).
-5. Đáp số: **300 000 đồng**.
+1. Xét ý a: Mua một món hàng 120 000 đồng rồi bán 132 000 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
+2. Đọc vị: đây là dạng **Tỉ số phần trăm trong mua bán**; dấu hiệu là Từ khoá “giảm giá”, “tăng giá”, “lãi”, “lỗ”.
+3. Kiến thức phải dùng: Tỉ số phần trăm, mốc quy chiếu 100%.
+4. Cách làm: Chốt mốc 100% rồi cộng trừ phần trăm.
+5. Lối tắt: Giảm 20% nghĩa là còn 80% — nhân thẳng một lần thay vì trừ hai bước.
+6. Kết quả: **10%**.
 
 *Lỗi hay mắc:* Chia tiền lãi cho giá bán nên ra tỉ lệ nhỏ hơn thực tế.
 
 ### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **896 cm²**
-b) **thể tích 512 cm³, diện tích toàn phần 384 cm²**
-c) **950 cm²**
-d) **4 104 cm³**
-e) **1 116 cm²**
-f) **2 464 cm³**
+a) **9 tạ**
+b) **5 tạ 50 kg**
+c) **4 tạ 25 kg**
+d) **2 tạ 80 kg**
+e) **15 tạ 60 kg**
+f) **4 tạ 80 kg**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Hình hộp chữ nhật có đáy 16 cm × 16 cm, chiều cao 14 cm. Tính diện tích xung quanh.
-2. Đọc vị: đây là dạng **Hình hộp chữ nhật, hình lập phương**; dấu hiệu là Đề cho ba kích thước hoặc cạnh hình lập phương.
-3. Kiến thức phải dùng: Công thức thể tích, diện tích xung quanh, toàn phần.
-4. Cách làm: Xác định loại diện tích cần tính, đếm đủ số mặt.
-5. Lối tắt: Hình lập phương cạnh a: toàn phần 6 × a × a, thể tích a × a × a.
-6. Kết quả: **896 cm²**.
+1. Xét ý a: Một xe chở 36 bao gạo, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ gạo?
+2. Đọc vị: đây là dạng **Bài toán đại lượng có lời văn**; dấu hiệu là Đơn vị trong câu hỏi khác đơn vị trong dữ kiện.
+3. Kiến thức phải dùng: Nhân, chia số tự nhiên; đổi đơn vị khối lượng.
+4. Cách làm: Tính theo đơn vị dữ kiện rồi đổi ở bước cuối.
+5. Lối tắt: 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ.
+6. Kết quả: **9 tạ**.
 
-*Lỗi hay mắc:* Cộng thiếu một mặt đáy khi tính diện tích toàn phần.
+*Lỗi hay mắc:* Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ.
 
 ### Bài 5, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **4 giờ**
-b) **70 ngày**
-c) **3 giờ**
-d) **66 ngày**
+a) **37 con gà, 32 con chó**
+b) **36 con gà, 12 con chó**
+c) **16 con gà, 26 con chó**
+d) **6 con gà, 9 con chó**
 
 **Cách giải mẫu:**
 
-1. Không được cộng hai khoảng thời gian, cũng không được lấy trung bình. Phải **rút về đơn vị**: xét trong một giờ.
-2. Một giờ vòi thứ nhất chảy được 1 phần 8 bể.
-3. Một giờ vòi thứ hai chảy được 1 phần 8 bể.
-4. Một giờ cả hai vòi chảy được 1 phần 8 + 1 phần 8 = 1 phần 4 (bể).
-5. Thời gian đầy bể: 1 : 1 phần 4 = **4 giờ**.
+1. Xét ý a: Vừa gà vừa chó có 69 con, đếm được tất cả 202 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
+2. Đọc vị: đây là dạng **Giả thiết tạm**; dấu hiệu là Hai loại đối tượng, biết tổng số và tổng của một đại lượng khác.
+3. Kiến thức phải dùng: Phương pháp giả thiết tạm.
+4. Cách làm: Giả sử đồng nhất một loại → tính phần chênh → chia cho hiệu đơn vị.
+5. Lối tắt: Số chó = (số chân − 2 × số con) : 2 — thuộc công thức rút gọn để nhẩm.
+6. Kết quả: **37 con gà, 32 con chó**.
 
-*Lỗi hay mắc:* Cộng hai khoảng thời gian của hai vòi, hoặc nhân thẳng số người với số ngày theo kiểu tỉ lệ thuận.
+*Lỗi hay mắc:* Chia số chân thiếu cho 4 thay vì cho hiệu số chân của hai loài.
 
 ---
 
@@ -192,8 +196,8 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài 1 | Ôn tập số tự nhiên | So sánh từ hàng đơn vị; hoặc làm tròn nhìn nhầm sang chính hàng cần làm tròn. | Nhóm chuyên đề **—** · mức — |
 | Bài 2 | Đổi đơn vị diện tích | Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. | Nhóm chuyên đề **—** · mức — |
 | Bài 3 | Tỉ số phần trăm trong mua bán | Chia tiền lãi cho giá bán nên ra tỉ lệ nhỏ hơn thực tế. | Nhóm chuyên đề **—** · mức — |
-| Bài 4 | Hình hộp chữ nhật, hình lập phương | Cộng thiếu một mặt đáy khi tính diện tích toàn phần. | Nhóm chuyên đề **—** · mức — |
-| Bài 5 | Rút về đơn vị | Cộng hai khoảng thời gian của hai vòi, hoặc nhân thẳng số người với số ngày theo kiểu tỉ lệ thuận. | Nhóm chuyên đề **—** · mức — |
+| Bài 4 | Bài toán đại lượng có lời văn | Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. | Nhóm chuyên đề **—** · mức — |
+| Bài 5 | Giả thiết tạm | Chia số chân thiếu cho 4 thay vì cho hiệu số chân của hai loài. | Nhóm chuyên đề **—** · mức — |
 
 ---
 

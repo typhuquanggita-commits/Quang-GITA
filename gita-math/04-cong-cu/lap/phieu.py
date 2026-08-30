@@ -322,12 +322,21 @@ def chon_bay(rng, phan) -> dict[tuple[int, int], str]:
     """Chọn 2–4 bài để đánh dấu BẪY, ưu tiên hai phần cuối."""
     uu = [(i, j, b.bay) for i in (3, 4) for j, b in enumerate(phan[i]) if b.bay]
     con = [(i, j, b.bay) for i in (0, 1, 2) for j, b in enumerate(phan[i]) if b.bay]
-    ds = uu + con
-    if len(ds) < 2:                       # chương không có mẫu cài bẫy: tự đặt bẫy
-        them = [(4, j, phan[4][j].loi) for j in range(5)][:2 - len(ds)]
-        ds = ds + them
-    rng.shuffle(ds[:0])                   # giữ nguyên thứ tự ưu tiên
-    lay = ds[:max(2, min(4, len(uu) or 2))]
+    so_can = max(2, min(4, len(uu) or 2))
+    lay = (uu + con)[:so_can]
+
+    # Chương không có đủ mẫu cài sẵn bẫy thì lấy chính "lỗi thường gặp" của bài
+    # ở phần cuối làm bẫy. Phải **bỏ qua những ô đã chọn**: bản cũ lấy thẳng
+    # phần 4 từ bài đầu tiên, nên khi danh sách sẵn có đúng một mục và mục ấy
+    # cũng nằm ở phần 4 bài 1, hai mục trùng toạ độ và chồng lên nhau lúc dựng
+    # thành từ điển — phiếu tưởng có 2 bẫy mà thật ra chỉ còn 1.
+    da = {(i, j) for i, j, _ in lay}
+    for j in range(len(phan[4])):
+        if len(lay) >= 2:
+            break
+        if (4, j) not in da:
+            lay.append((4, j, phan[4][j].loi))
+            da.add((4, j))
     return {(i, j): b for i, j, b in lay}
 
 

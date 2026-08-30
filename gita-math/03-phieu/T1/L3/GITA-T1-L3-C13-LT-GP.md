@@ -30,11 +30,11 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần A**
 
-- **Bài A.1** — a) 8 tạ 34 kg · b) 1 tấn 98 kg · c) 2 959 · d) 4 553 · e) 3 501 · f) 2 260 · g) 2 tấn 1 tạ 4 kg
-- **Bài A.2** — a) 2 100 · b) 4 600 · c) 330 · d) 230 000 · e) 320 · f) 730 000 · g) 400 · h) 580
-- **Bài A.3** — a) 2 718 · b) 7 000 · c) > · d) 16 · e) 36 · f) 9 000
-- **Bài A.4** — a) 7 giờ 6 phút · b) 100 · c) 6 giờ · d) 4 giờ 13 phút · e) 203 · f) 4 giờ 44 phút · g) 3 giờ 6 phút
-- **Bài A.5** — a) 7 · b) 10 · c) 14 · d) 11 · e) 13 · f) 15 · g) 14 · h) 7
+- **Bài A.1** — a) 450 · b) 80 · c) 800 · d) 30 000 · e) 4 100
+- **Bài A.2** — a) > · b) 34 000 · c) 20 · d) 19 634 · e) 38 · f) > · g) 18 000
+- **Bài A.3** — a) 11 160 · b) 30 617 · c) 34 927 · d) 77 876 · e) 98 533
+- **Bài A.4** — a) 185 · b) 4 giờ 41 phút · c) 1 giờ 10 phút · d) 9 giờ 26 phút · e) 3 giờ 19 phút
+- **Bài A.5** — a) 4 tấn 2 tạ 32 kg · b) 5 tấn 3 tạ 35 kg · c) 1 844 · d) 3 099 · e) 4 237 · f) 6 tấn 6 tạ 93 kg · g) 5 tấn 3 tạ 18 kg
 
 **Phần B**
 
@@ -62,11 +62,11 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần E**
 
-- **Bài E.1** — a) 59 000 · b) 190 · c) 900 · d) 86 000 · e) 14 000 · f) 81 000 · g) 8 000 · h) 4 700
-- **Bài E.2** — a) 70 · b) 50 · c) 190 · d) Phúc (70) · e) Quân (20) · f) 50 · g) 6 hình
-- **Bài E.3** — a) 9 000 đồng · b) 5 000 đồng · c) 25 tờ · d) 90 000 đồng · e) 10 000 đồng · f) 25 tờ
-- **Bài E.4** — a) tổ Một: 203 cây, nhóm Hoa Phượng: 195 cây · b) 5B: 322 quyển, 4C: 280 quyển · c) xưởng: 458 kg, trang trại: 334 kg · d) 4B: 362 quyển, 5C: 218 quyển
-- **Bài E.5** — a) 230 · b) 320 · c) 192 · d) 89 · e) 394 · f) 200 · g) 327
+- **Bài E.1** — a) 13 · b) (25 − 7) : 2 + 1 = 10 nhà · c) 7 + (6 − 1) × 2 = 17 · d) (17 − 7) : 2 + 1 = 6 · e) số lẻ — bắt đầu từ một số lẻ rồi cứ cộng thêm 2, cộng 2 không làm đổi tính chẵn lẻ
+- **Bài E.2** — a) (36 + 14) × 2 = 100 m · b) 100 − 2 = 98 m · c) 100 : 2 = 50 cọc · d) 98 × 45 000 = 4 410 000 đồng · e) 36 × 14 = 504 m²
+- **Bài E.3** — a) mỗi bạn 7 cái, thừa 5 cái · b) 5 cái · c) 5 cái · d) 8 cái · e) mỗi bạn 8 cái, thừa 3 cái · f) phải là số chia hết cho 10
+- **Bài E.4** — a) 89 000 · b) 73 000 · c) 7 600 · d) 52 000 · e) 550
+- **Bài E.5** — a) 9 000 đồng · b) 5 tờ · c) 50 000 đồng · d) 75 000 đồng · e) 2 tờ · f) 28 000 đồng
 
 ---
 
@@ -74,33 +74,11 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 Mỗi bài có hai phần: **các bước giải** với số liệu thật của chính bài ấy, và **cách nghĩ** áp dụng cho mọi bài cùng dạng. Đọc kĩ phần chữ đậm — đó là câu cần nhớ, không phải con số.
 
-### Bài A.1 — Đổi số đo khối lượng có nhiều đơn vị
+### Bài A.1 — Đổi đơn vị đo độ dài và khối lượng
 
 **Các bước giải**
 
-Xét ý a: 834 kg = … tấn … tạ … kg
-
-Đọc vị: đây là dạng **Số đo có nhiều đơn vị**; dấu hiệu là Số đo viết dưới dạng “… tấn … tạ … kg”.
-
-Kiến thức phải dùng: Bảng đơn vị khối lượng.
-
-Cách làm: Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư.
-
-Lối tắt: Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ.
-
-Kết quả: **8 tạ 34 kg**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** 1 tấn = 10 tạ = 1 000 kg; 1 tạ = 100 kg; 1 yến = 10 kg. Đổi tất cả về ki-lô-gam rồi cộng lại; hoặc ngược lại, chia dần từ đơn vị lớn xuống đơn vị bé và lấy phần dư.
-
-*Điểm chốt:* Đổi hết về **một đơn vị chung** trước khi cộng.
-
-### Bài A.2 — Đổi đơn vị đo độ dài và khối lượng
-
-> **BẪY — Chiều đổi đơn vị.**
-
-**Các bước giải**
-
-Xét ý a: 21 dam = … dm
+Xét ý a: 45 cm = … mm
 
 Đọc vị: đây là dạng **Đổi đơn vị đo**; dấu hiệu là Dấu … giữa hai đơn vị khác nhau.
 
@@ -110,17 +88,17 @@ Cách làm: Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10.
 
 Lối tắt: Số bậc chính là số chữ số 0 phải thêm vào (hoặc bớt đi).
 
-Kết quả: **2 100**.
+Kết quả: **450**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
 
 *Điểm chốt:* Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
 
-### Bài A.3 — Mi-li-lít và lít
+### Bài A.2 — Mi-li-lít và lít
 
 **Các bước giải**
 
-Xét ý a: 2 l 718 ml = … ml
+Xét ý a: 35 l … 3 635 ml
 
 Đọc vị: đây là dạng **Đổi và so sánh đơn vị dung tích**; dấu hiệu là Có chữ l, ml trong đề.
 
@@ -130,7 +108,7 @@ Cách làm: Đưa về cùng đơn vị rồi tính hoặc so sánh.
 
 Lối tắt: Nhân 1 000 là thêm ba chữ số 0 vào bên phải.
 
-Kết quả: **2 718**.
+Kết quả: **>**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** 1 lít = 1 000 mi-li-lít. Đổi từ đơn vị lớn sang đơn vị bé thì nhân, ngược lại thì chia. Muốn so sánh thì phải đưa về cùng một đơn vị trước.
 
@@ -140,11 +118,31 @@ Kết quả: **2 718**.
 
 *Phải chắc trước khi làm bài này:* Nhân, chia với 1 000 và so sánh số tự nhiên.
 
+### Bài A.3 — Số chẵn – số lẻ, số liền trước – số liền sau
+
+**Các bước giải**
+
+Xét ý a: Số liền sau của 11 159 là số nào?
+
+Đọc vị: đây là dạng **Nhận biết chẵn – lẻ và số liền kề**; dấu hiệu là Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau”.
+
+Kiến thức phải dùng: Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2.
+
+Cách làm: Xét chữ số tận cùng; cộng hoặc trừ 1 đơn vị.
+
+Lối tắt: Che hết các chữ số, chỉ để lộ chữ số cuối.
+
+Kết quả: **11 160**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Số chẵn là số có chữ số tận cùng 0, 2, 4, 6, 8; số lẻ tận cùng 1, 3, 5, 7, 9. Số liền trước kém 1 đơn vị, số liền sau hơn 1 đơn vị. Hai số chẵn liên tiếp hơn kém nhau 2 đơn vị.
+
+*Điểm chốt:* Chỉ cần nhìn **chữ số tận cùng** là biết chẵn hay lẻ, dù số dài bao nhiêu.
+
 ### Bài A.4 — Đơn vị đo thời gian: giờ và phút
 
 **Các bước giải**
 
-Xét ý a: 7 giờ 43 phút − 37 phút = … (viết dạng giờ và phút)
+Xét ý a: 3 giờ 5 phút = … phút
 
 Đọc vị: đây là dạng **Đổi và tính toán với đơn vị thời gian**; dấu hiệu là Số đo có chữ “giờ”, “phút”, “giây”.
 
@@ -154,31 +152,31 @@ Cách làm: Quy về phút rồi tính, cuối cùng đổi lại giờ và phú
 
 Lối tắt: Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm.
 
-Kết quả: **7 giờ 6 phút**.
+Kết quả: **185**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
 
 *Điểm chốt:* Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
 
-### Bài A.5 — Tìm một phần mấy của một số
+### Bài A.5 — Đổi số đo khối lượng có nhiều đơn vị
 
 **Các bước giải**
 
-Muốn tìm một phần mấy của một số, ta **chia** số đó cho mẫu số.
+Xét ý a: 4 232 kg = … tấn … tạ … kg
 
-Ví dụ tìm một phần tư của 20: 20 : 4 = 5.
+Đọc vị: đây là dạng **Số đo có nhiều đơn vị**; dấu hiệu là Số đo viết dưới dạng “… tấn … tạ … kg”.
 
-Kết quả luôn **bé hơn** số ban đầu — dùng để tự kiểm tra.
+Kiến thức phải dùng: Bảng đơn vị khối lượng.
 
-Đáp số ý a: xem phép chia tương ứng.
+Cách làm: Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Chia số đã cho cho mẫu số. Chia hình thành mấy phần bằng nhau thì lấy một phần trong số đó.
+Lối tắt: Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ.
 
-*Điểm chốt:* Một phần mấy thì **chia**, không nhân.
+Kết quả: **4 tấn 2 tạ 32 kg**.
 
-*Muốn khó hơn:* Tìm hai phần ba của một số — chia rồi nhân.
+**Cách nghĩ chung cho mọi bài cùng dạng.** 1 tấn = 10 tạ = 1 000 kg; 1 tạ = 100 kg; 1 yến = 10 kg. Đổi tất cả về ki-lô-gam rồi cộng lại; hoặc ngược lại, chia dần từ đơn vị lớn xuống đơn vị bé và lấy phần dư.
 
-*Phải chắc trước khi làm bài này:* Bảng chia từ 2 đến 9.
+*Điểm chốt:* Đổi hết về **một đơn vị chung** trước khi cộng.
 
 ### Bài B.1 — Vì sao phải học chương này
 
@@ -480,11 +478,83 @@ Kết quả: **Phép chia hết và chia có dư; đơn vị khối lượng**.
 
 *Điểm chốt:* Chia không hết nghĩa là **không cân được** bằng loại quả cân ấy.
 
-### Bài E.1 — Đổi đơn vị đo ở lớp 3
+### Bài E.1 — Số nhà trên một dãy phố
+
+> **BẪY — Đếm số nhà bằng cách lấy hiệu chia khoảng cách.**
 
 **Các bước giải**
 
-Xét ý a: 59 kg = … g
+Dãy số nhà một bên phố là **dãy cách đều 2 đơn vị**: 7, 9, 11, …
+
+Số nhà thứ 6: đi từ nhà đầu tiên thì phải bước 6 − 1 = 5 lần, mỗi lần 2 đơn vị, nên số nhà là 7 + 5 × 2 = **17**.
+
+Đếm số nhà cả dãy: (25 − 7) : 2 = 9 — đó mới là **số khoảng cách**, chưa phải số nhà. Cộng thêm 1 mới ra **10 nhà**.
+
+Đây là bẫy quen thuộc nhất của dãy cách đều: giữa n vật thì chỉ có n − 1 khoảng, như trồng cây hai đầu một đoạn đường.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Dãy số nhà là dãy cách đều. Số hạng thứ k bằng số đầu cộng (k − 1) lần khoảng cách; còn **số lượng số hạng** bằng số khoảng cách cộng 1.
+
+*Điểm chốt:* Số khoảng cách luôn ít hơn số vật đúng 1 — quên cộng 1 là mất bài.
+
+*Muốn khó hơn:* Hỏi tổng tất cả các số nhà trong dãy.
+
+*Phải chắc trước khi làm bài này:* Dãy số cách đều và phép chia hết.
+
+### Bài E.2 — Rào quanh mảnh vườn
+
+> **BẪY — Quên rằng quanh vườn khép kín thì số cọc bằng số khoảng.**
+
+**Các bước giải**
+
+Chu vi hình chữ nhật = (dài + rộng) × 2 = (36 + 14) × 2 = **100 m**.
+
+Chừa cửa 2 m thì lưới chỉ cần 100 − 2 = 98 m.
+
+Số cọc: đường rào là một **đường khép kín**, nên cọc đầu tiên cũng chính là cọc cuối cùng — **số cọc bằng đúng số khoảng**, không cộng thêm 1. Vậy 100 : 2 = **50 cọc**.
+
+Tiền lưới: 98 × 45 000 = **4 410 000 đồng**.
+
+Diện tích: 36 × 14 = **504 m²** — chú ý đơn vị là mét vuông, khác với chu vi tính bằng mét.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Tính chu vi trước, mọi câu về rào và cọc đều dựa vào nó. Riêng số cọc phải nhớ đường rào khép kín nên không cộng thêm 1.
+
+*Điểm chốt:* Đường khép kín: số cọc = số khoảng. Đường thẳng có hai đầu: số cọc = số khoảng + 1.
+
+*Muốn khó hơn:* Chừa hai cửa ở hai cạnh khác nhau rồi hỏi lại số cọc.
+
+*Phải chắc trước khi làm bài này:* Công thức chu vi, diện tích hình chữ nhật.
+
+### Bài E.3 — Chia kẹo — chia hết và chia có dư
+
+> **BẪY — Thêm vào khác với bớt đi.**
+
+**Các bước giải**
+
+Bước 1 — chia: 75 : 10 = 7 dư 5.
+
+Mỗi bạn được 7 cái, còn thừa 5 cái.
+
+Muốn chia hết thì bớt đúng phần dư: bớt 5 cái.
+
+Hoặc thêm cho đủ một suất nữa: thêm 10 − 5 = 5 (cái).
+
+Thử lại: 10 × 7 + 5 = 75 ✓
+
+Đáp số: **mỗi bạn 7 cái, thừa 5 cái**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Trong phép chia có dư, **số dư luôn bé hơn số chia**. Muốn chia hết thì hoặc bớt đi đúng phần dư, hoặc thêm vào phần còn thiếu để đủ một suất — phần còn thiếu bằng số chia trừ số dư.
+
+*Điểm chốt:* Thêm vào thì thêm **số chia trừ số dư**, không phải thêm số dư.
+
+*Muốn khó hơn:* Chia sao cho mỗi bạn được số kẹo khác nhau và chênh nhau 1 cái.
+
+*Phải chắc trước khi làm bài này:* Phép chia có dư trong bảng và ngoài bảng.
+
+### Bài E.4 — Đổi đơn vị đo ở lớp 3
+
+**Các bước giải**
+
+Xét ý a: 89 kg = … g
 
 Đọc vị: đây là dạng **Đổi đơn vị đo**; dấu hiệu là Hai đơn vị khác nhau nối bởi dấu ….
 
@@ -494,37 +564,13 @@ Cách làm: Nhớ quan hệ rồi nhân.
 
 Lối tắt: Thêm đúng số chữ số 0 tương ứng: 3 số 0 cho km→m, 2 số 0 cho m→cm.
 
-Kết quả: **59 000**.
+Kết quả: **89 000**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** 1 km = 1 000 m; 1 m = 100 cm; 1 cm = 10 mm; 1 kg = 1 000 g; 1 l = 1 000 ml. Đổi từ đơn vị lớn sang đơn vị bé thì nhân.
 
 *Điểm chốt:* Nhớ đúng **số lần** giữa hai đơn vị.
 
-### Bài E.2 — Đọc và lập biểu đồ tranh
-
-> **BẪY — Một hình không phải một đơn vị.**
-
-**Các bước giải**
-
-Đọc chú thích trước: mỗi hình ● ứng với 10 lá cờ.
-
-Bạn Phúc có 7 hình ●.
-
-Số lá cờ của bạn ấy: 7 × 10 = 70.
-
-Làm tương tự cho ba bạn còn lại rồi cộng để có tổng 190.
-
-Đáp số ý a: **70 lá cờ**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Việc đầu tiên khi đọc biểu đồ tranh là đọc **chú thích**: mỗi hình ứng với bao nhiêu đơn vị. Sau đó nhân số hình với số ấy. Muốn lập biểu đồ thì làm ngược lại: chia số thật cho số đơn vị mỗi hình.
-
-*Điểm chốt:* Mỗi hình **không phải một đơn vị** — phải đọc chú thích trước.
-
-*Muốn khó hơn:* Đổi sang biểu đồ cột, hỏi cùng những câu ấy.
-
-*Phải chắc trước khi làm bài này:* Bảng nhân và cách đọc bảng số liệu.
-
-### Bài E.3 — Tiền Việt Nam: mua bán, đổi tiền, trả lại
+### Bài E.5 — Tiền Việt Nam: mua bán, đổi tiền, trả lại
 
 **Các bước giải**
 
@@ -548,46 +594,6 @@ Kết quả: **9 000 đồng**.
 
 *Phải chắc trước khi làm bài này:* Nhân, trừ với số tròn nghìn.
 
-### Bài E.4 — Bài toán tổng – hiệu có lời văn
-
-**Các bước giải**
-
-Xét ý a: Tổ Một và nhóm Hoa Phượng trồng được 398 cây. Tổ Một trồng nhiều hơn nhóm Hoa Phượng 8 cây. Mỗi tổ trồng bao nhiêu cây?
-
-Đọc vị: đây là dạng **Tổng – hiệu có lời văn**; dấu hiệu là “Có tất cả …” và “… nhiều hơn … là …”.
-
-Kiến thức phải dùng: Công thức tổng – hiệu, sơ đồ đoạn thẳng.
-
-Cách làm: Đọc vị tổng và hiệu → sơ đồ → công thức.
-
-Lối tắt: Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần.
-
-Kết quả: **tổ Một: 203 cây, nhóm Hoa Phượng: 195 cây**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Đọc đề, xác định đâu là **tổng**, đâu là **hiệu**. Vẽ sơ đồ hai đoạn thẳng. Số lớn = (tổng + hiệu) : 2; số bé = tổng − số lớn.
-
-*Điểm chốt:* Cụm “có tất cả” cho **tổng**; cụm “nhiều hơn” cho **hiệu**.
-
-### Bài E.5 — Tính nhanh bằng cách ghép số tròn
-
-**Các bước giải**
-
-Xét ý a: 230 + 66 − 66
-
-Đọc vị: đây là dạng **Tính nhanh tổng nhiều số hạng**; dấu hiệu là Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm.
-
-Kiến thức phải dùng: Tính chất giao hoán, kết hợp của phép cộng.
-
-Cách làm: Ghép cặp tròn rồi cộng.
-
-Lối tắt: Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10.
-
-Kết quả: **230**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Dùng tính chất giao hoán và kết hợp của phép cộng để đổi chỗ, nhóm những số cộng lại thành số tròn chục, tròn trăm rồi mới cộng phần còn lại.
-
-*Điểm chốt:* Tìm **cặp cộng tròn 100** trước khi cộng theo thứ tự.
-
 ---
 
 ## 3. BẢNG PHÂN TÍCH CHUYÊN SÂU
@@ -596,11 +602,11 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
-| A.1 | Số đo có nhiều đơn vị | Bảng đơn vị khối lượng | Số đo viết dưới dạng “… tấn … tạ … kg” | Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư | Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ. | 8 tạ 34 kg · 1 tấn 98 kg · 2 959 · 4 553… |
-| A.2 | Đổi đơn vị đo | Bảng đơn vị đo độ dài, khối lượng | Dấu … giữa hai đơn vị khác nhau | Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10 | Số bậc chính là số chữ số 0 phải thêm vào (hoặc bớt đi). | 2 100 · 4 600 · 330 · 230 000… |
-| A.3 | Đổi và so sánh đơn vị dung tích | Quan hệ lít – mi-li-lít | Có chữ l, ml trong đề | Đưa về cùng đơn vị rồi tính hoặc so sánh | Nhân 1 000 là thêm ba chữ số 0 vào bên phải. | 2 718 · 7 000 · > · 16… |
-| A.4 | Đổi và tính toán với đơn vị thời gian | Quan hệ giờ – phút – giây | Số đo có chữ “giờ”, “phút”, “giây” | Quy về phút rồi tính, cuối cùng đổi lại giờ và phút | Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm. | 7 giờ 6 phút · 100 · 6 giờ · 4 giờ 13 phút… |
-| A.5 | Tìm một phần mấy của một số | Phân số dạng một phần mấy | Cụm “một phần mấy của …” | Chia số đó cho mẫu số | Kết quả luôn nhỏ hơn số ban đầu. | 7 · 10 · 14 · 11… |
+| A.1 | Đổi đơn vị đo | Bảng đơn vị đo độ dài, khối lượng | Dấu … giữa hai đơn vị khác nhau | Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10 | Số bậc chính là số chữ số 0 phải thêm vào (hoặc bớt đi). | 450 · 80 · 800 · 30 000… |
+| A.2 | Đổi và so sánh đơn vị dung tích | Quan hệ lít – mi-li-lít | Có chữ l, ml trong đề | Đưa về cùng đơn vị rồi tính hoặc so sánh | Nhân 1 000 là thêm ba chữ số 0 vào bên phải. | > · 34 000 · 20 · 19 634… |
+| A.3 | Nhận biết chẵn – lẻ và số liền kề | Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2 | Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” | Xét chữ số tận cùng; cộng hoặc trừ 1 đơn vị | Che hết các chữ số, chỉ để lộ chữ số cuối. | 11 160 · 30 617 · 34 927 · 77 876… |
+| A.4 | Đổi và tính toán với đơn vị thời gian | Quan hệ giờ – phút – giây | Số đo có chữ “giờ”, “phút”, “giây” | Quy về phút rồi tính, cuối cùng đổi lại giờ và phút | Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm. | 185 · 4 giờ 41 phút · 1 giờ 10 phút · 9 giờ 26 phút… |
+| A.5 | Số đo có nhiều đơn vị | Bảng đơn vị khối lượng | Số đo viết dưới dạng “… tấn … tạ … kg” | Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư | Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ. | 4 tấn 2 tạ 32 kg · 5 tấn 3 tạ 35 kg · 1 844 · 3 099… |
 | B.1 | Định vị chương trong hệ thống | Tên chương, nhóm chuyên đề, số dạng bài | Phần đầu phiếu ghi rõ tên cụm và nhóm chuyên đề | Đọc phần đầu phiếu rồi trả lời theo đúng tên gọi | Ghi tên chương ra góc vở, mỗi lần mở vở là đọc lại một lần. | Dung tích, thời gian và đổi đơn vị tổng hợp · E — Đại lượng – Đo lường – Thời gian · 4 · ở mọi bài thuộc đại lượng – đo lường – thời gian, vì các chương sau đều dùng lại nền này… |
 | B.2 | Liệt kê dạng bài của chương | Danh mục dạng bài | Bảng dạng bài ở phiếu Dạng bài & Đọc vị của cùng cụm | Chép theo bảng, giữ nguyên thứ tự | Học thuộc số lượng dạng bài trước, tên từng dạng sau. | Đơn vị đo dung tích: mi-li-lít và lít · Bài toán về thời gian: bắt đầu – kết thúc – kéo dài · Bài toán đổi đơn vị đo tổng hợp · Ôn tập đại lượng và đo lường |
 | B.3 | Định vị chương theo thời gian | Kế hoạch năm học, mốc kiểm tra | Phần đầu phiếu ghi tuần, học kỳ, mốc | Đọc phần đầu phiếu | Mỗi cụm luôn có đúng 6 buổi và 1 phiếu hướng dẫn ôn chắc. | HK2 · tuần 26 · Cuối kỳ II · cụm 13… |
@@ -616,11 +622,11 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | D.3 | Lịch, tháng, năm nhuận | Số ngày các tháng, năm nhuận, chu kì 7 ngày | Đề nhắc tới ngày, tháng, thứ trong tuần | Tra quy tắc tháng; chia cho 7 lấy dư để tìm thứ | Cùng một thứ lặp lại ở các ngày cách nhau 7, 14, 21, 28. | Số ngày các tháng, năm nhuận, chu kì 7 ngày · Lịch, tháng, năm nhuận · Đề nhắc tới ngày, tháng, thứ trong tuần · Tra quy tắc tháng; chia cho 7 lấy dư để tìm thứ… |
 | D.4 | Tính thời gian trong ngày | Quan hệ giờ – phút | Có chữ “giờ”, “phút”, “sau … phút nữa” | Quy về phút, tính, đổi lại | Cộng tròn giờ trước, cộng phút lẻ sau. | Quan hệ giờ – phút · Tính thời gian trong ngày · Có chữ “giờ”, “phút”, “sau … phút nữa” · Quy về phút, tính, đổi lại… |
 | D.5 | Bài toán cân, chia hết | Phép chia hết và chia có dư; đơn vị khối lượng | Cân đĩa với một loại quả cân | Chia và xét số dư | Đổi cả hai về cùng đơn vị rồi chia. | Phép chia hết và chia có dư; đơn vị khối lượng · Bài toán cân, chia hết · Cân đĩa với một loại quả cân · Chia và xét số dư… |
-| E.1 | Đổi đơn vị đo | Bảng đơn vị đo lớp 3 | Hai đơn vị khác nhau nối bởi dấu … | Nhớ quan hệ rồi nhân | Thêm đúng số chữ số 0 tương ứng: 3 số 0 cho km→m, 2 số 0 cho m→cm. | 59 000 · 190 · 900 · 86 000… |
-| E.2 | Đọc và lập biểu đồ tranh | Biểu đồ tranh, phép nhân và chia | Có hình vẽ lặp lại kèm một dòng chú thích | Đọc chú thích → nhân số hình với đơn vị | Nếu mọi bạn đều dùng cùng một loại hình thì so số hình là đủ để biết ai nhiều nhất. | 70 · 50 · 190 · Phúc (70)… |
-| E.3 | Bài toán tiền tệ hai bước | Nhân, trừ với số tròn nghìn; mệnh giá tiền Việt Nam | “Đưa … đồng”, “trả lại”, “đổi ra tờ …” | Tính tiền hàng rồi trừ; đổi tiền thì chia | Thử lại bằng cách cộng tiền hàng với tiền trả lại, phải đúng bằng tiền đưa. | 9 000 đồng · 5 000 đồng · 25 tờ · 90 000 đồng… |
-| E.4 | Tổng – hiệu có lời văn | Công thức tổng – hiệu, sơ đồ đoạn thẳng | “Có tất cả …” và “… nhiều hơn … là …” | Đọc vị tổng và hiệu → sơ đồ → công thức | Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần. | tổ Một: 203 cây, nhóm Hoa Phượng: 195 cây · 5B: 322 quyển, 4C: 280 quyển · xưởng: 458 kg, trang trại: 334 kg · 4B: 362 quyển, 5C: 218 quyển |
-| E.5 | Tính nhanh tổng nhiều số hạng | Tính chất giao hoán, kết hợp của phép cộng | Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm | Ghép cặp tròn rồi cộng | Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10. | 230 · 320 · 192 · 89… |
+| E.1 | Dãy số cách đều | Số hạng thứ n của dãy cách đều; đếm số hạng | Một dãy số thật ngoài đời, các số cách nhau đều nhau | Số hạng thứ k = số đầu + (k − 1) × khoảng cách | Nhớ một câu: **số vật = số khoảng + 1** khi đếm cả hai đầu. | 13 · (25 − 7) : 2 + 1 = 10 nhà · 7 + (6 − 1) × 2 = 17 · (17 − 7) : 2 + 1 = 6… |
+| E.2 | Chu vi hình chữ nhật | Chu vi, diện tích hình chữ nhật; bài toán trồng cây | Một mảnh đất có kích thước, cần rào hoặc cắm cọc quanh | Tính chu vi rồi chia cho khoảng cách giữa hai cọc | Chu vi chia khoảng cách ra ngay số cọc, không phải cộng trừ gì thêm. | (36 + 14) × 2 = 100 m · 100 − 2 = 98 m · 100 : 2 = 50 cọc · 98 × 45 000 = 4 410 000 đồng… |
+| E.3 | Chia hết và chia có dư trong tình huống chia phần | Phép chia có dư; số dư bé hơn số chia | “Chia đều cho … bạn”, “còn thừa” | Chia lấy thương và dư, rồi lập luận thêm hoặc bớt | Thử lại bằng công thức số bị chia = số chia × thương + số dư. | mỗi bạn 7 cái, thừa 5 cái · 5 cái · 5 cái · 8 cái… |
+| E.4 | Đổi đơn vị đo | Bảng đơn vị đo lớp 3 | Hai đơn vị khác nhau nối bởi dấu … | Nhớ quan hệ rồi nhân | Thêm đúng số chữ số 0 tương ứng: 3 số 0 cho km→m, 2 số 0 cho m→cm. | 89 000 · 73 000 · 7 600 · 52 000… |
+| E.5 | Bài toán tiền tệ hai bước | Nhân, trừ với số tròn nghìn; mệnh giá tiền Việt Nam | “Đưa … đồng”, “trả lại”, “đổi ra tờ …” | Tính tiền hàng rồi trừ; đổi tiền thì chia | Thử lại bằng cách cộng tiền hàng với tiền trả lại, phải đúng bằng tiền đưa. | 9 000 đồng · 5 tờ · 50 000 đồng · 75 000 đồng… |
 
 ---
 
@@ -628,11 +634,11 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 
 | Bài | Nhãn tư duy | Điểm chốt |
 |---|---|---|
-| A.1 | TD1, TD3 | Đổi hết về **một đơn vị chung** trước khi cộng. |
-| A.2 | TD1 | Đếm đúng **số bậc** giữa hai đơn vị trên bảng. |
-| A.3 | TD1 | So sánh **chỉ sau khi** đã đưa về cùng đơn vị. |
+| A.1 | TD1 | Đếm đúng **số bậc** giữa hai đơn vị trên bảng. |
+| A.2 | TD1 | So sánh **chỉ sau khi** đã đưa về cùng đơn vị. |
+| A.3 | TD1 | Chỉ cần nhìn **chữ số tận cùng** là biết chẵn hay lẻ, dù số dài bao nhiêu. |
 | A.4 | TD1, TD3 | Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác. |
-| A.5 | TD1 | Một phần mấy thì **chia**, không nhân. |
+| A.5 | TD1, TD3 | Đổi hết về **một đơn vị chung** trước khi cộng. |
 | B.1 | TD1 | Gọi đúng **tên chương** và **tên nhóm chuyên đề** là bước đầu tiên để xếp kiến thức vào đúng ngăn trong đầu. |
 | B.2 | TD1, TD3 | Biết chương có **bao nhiêu dạng** thì mới biết mình còn thiếu dạng nào. |
 | B.3 | TD1 | Biết chương nằm ở đâu trong năm thì mới **ôn đúng lúc**. |
@@ -648,11 +654,11 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | D.3 | TD4, TD1 | Thứ trong tuần **tuần hoàn chu kì 7** — chia lấy dư là ra. |
 | D.4 | TD1, TD3 | Thời gian đếm theo **60**, không theo 10. |
 | D.5 | TD2, TD6 | Chia không hết nghĩa là **không cân được** bằng loại quả cân ấy. |
-| E.1 | TD1 | Nhớ đúng **số lần** giữa hai đơn vị. |
-| E.2 | TD1, TD2 | Mỗi hình **không phải một đơn vị** — phải đọc chú thích trước. |
-| E.3 | TD2, TD3 | Phải tính **tiền hàng** trước khi trừ. |
-| E.4 | TD2, TD3 | Cụm “có tất cả” cho **tổng**; cụm “nhiều hơn” cho **hiệu**. |
-| E.5 | TD5, TD3 | Tìm **cặp cộng tròn 100** trước khi cộng theo thứ tự. |
+| E.1 | TD2, TD4 | Số khoảng cách luôn ít hơn số vật đúng 1 — quên cộng 1 là mất bài. |
+| E.2 | TD2, TD4 | Đường khép kín: số cọc = số khoảng. Đường thẳng có hai đầu: số cọc = số khoảng + 1. |
+| E.3 | TD1, TD2 | Thêm vào thì thêm **số chia trừ số dư**, không phải thêm số dư. |
+| E.4 | TD1 | Nhớ đúng **số lần** giữa hai đơn vị. |
+| E.5 | TD2, TD3 | Phải tính **tiền hàng** trước khi trừ. |
 
 ---
 
@@ -662,11 +668,11 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 
 | Bài | Lỗi thường gặp | Cách phòng |
 |---|---|---|
-| A.1 | Cộng thẳng các số đứng trước những đơn vị khác nhau. | Viết mỗi thành phần thành số ki-lô-gam ngay bên dưới rồi mới cộng. |
-| A.2 | Đổi ngược chiều nên nhân thành chia. | Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay. |
-| A.3 | So thẳng hai con số mà bỏ qua đơn vị. | Viết lại cả hai vế theo mi-li-lít rồi mới so. |
+| A.1 | Đổi ngược chiều nên nhân thành chia. | Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay. |
+| A.2 | So thẳng hai con số mà bỏ qua đơn vị. | Viết lại cả hai vế theo mi-li-lít rồi mới so. |
+| A.3 | Nhầm “liền trước” với “bé hơn”, trả lời một số bất kì bé hơn. | Liền trước – liền sau chỉ hơn kém đúng **1** đơn vị. |
 | A.4 | Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. | Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không. |
-| A.5 | Nhân thay vì chia. | Kiểm tra: kết quả phải bé hơn số ban đầu. |
+| A.5 | Cộng thẳng các số đứng trước những đơn vị khác nhau. | Viết mỗi thành phần thành số ki-lô-gam ngay bên dưới rồi mới cộng. |
 | B.1 | Trả lời chung chung “để học giỏi toán”. | Bắt buộc nhắc tên chương và tên nhóm chuyên đề trong câu trả lời. |
 | B.2 | Kể thiếu dạng bài, hoặc gộp hai dạng làm một. | Đếm số dạng trước khi kể, kể xong đếm lại. |
 | B.3 | Không nhớ mốc kiểm tra nên ôn muộn. | Ghi mốc kiểm tra vào lịch học ngay buổi đầu của cụm. |
@@ -682,11 +688,11 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 | D.3 | Đếm tay từng ngày nên vừa lâu vừa sai. | Đếm số ngày cách nhau rồi chia 7 lấy dư. |
 | D.4 | Cộng phần phút thành hơn 60 mà quên đổi thành giờ. | Kiểm tra: phần phút của đáp số phải bé hơn 60. |
 | D.5 | Làm tròn lên rồi coi như cân được. | Kiểm tra phép chia có dư hay không trước khi kết luận. |
-| E.1 | Nhầm 1 m = 10 cm. | Học thuộc bảng năm quan hệ trên và đọc lại trước khi làm. |
-| E.2 | Đếm số hình rồi trả lời luôn, quên nhân với số đơn vị mỗi hình. | Khoanh tròn dòng chú thích trước khi trả lời bất kỳ câu nào. |
-| E.3 | Lấy tiền đưa trừ ngay giá một quyển vở. | Viết rõ dòng “Tiền hàng là …” rồi mới sang bước hai. |
-| E.4 | Nhầm hiệu thành tổng khi đề diễn đạt vòng vo. | Ghi riêng ra hai dòng: Tổng = … ; Hiệu = … trước khi tính. |
-| E.5 | Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. | Đọc lướt cả dãy, khoanh tròn cặp số cộng lại tròn chục, tròn trăm. |
+| E.1 | Lấy (số cuối − số đầu) : 2 rồi trả lời luôn. | Thử với dãy ngắn: 1, 3, 5 có 3 số nhưng chỉ 2 khoảng. |
+| E.2 | Cộng thêm 1 vào số cọc như bài trồng cây trên đoạn thẳng. | Vẽ nhanh hình vuông 4 cạnh, cắm cọc thử rồi đếm. |
+| E.3 | Nhầm “thêm bao nhiêu” với “bớt bao nhiêu”, cả hai đều lấy số dư. | Vẽ một hàng ô: phần dư còn thiếu bao nhiêu ô nữa thì đầy một suất? |
+| E.4 | Nhầm 1 m = 10 cm. | Học thuộc bảng năm quan hệ trên và đọc lại trước khi làm. |
+| E.5 | Lấy tiền đưa trừ ngay giá một quyển vở. | Viết rõ dòng “Tiền hàng là …” rồi mới sang bước hai. |
 
 ---
 
@@ -694,11 +700,11 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 
 Đọc tầng 1 trước; chỉ đọc tầng sau khi đã thử lại ít nhất 3 phút.
 
-**Bài A.1** — (1) 1 tấn bằng bao nhiêu ki-lô-gam? — (2) Đổi từng phần về ki-lô-gam. — (3) Cộng tất cả lại.
-**Bài A.2** — (1) Viết bảng đơn vị từ lớn đến bé. — (2) Đếm xem hai đơn vị cách nhau mấy bậc. — (3) Từ lớn sang bé thì nhân, mỗi bậc nhân 10.
-**Bài A.3** — (1) 1 lít bằng bao nhiêu mi-li-lít? — (2) Đơn vị nào lớn hơn? — (3) Từ lớn sang bé thì nhân.
+**Bài A.1** — (1) Viết bảng đơn vị từ lớn đến bé. — (2) Đếm xem hai đơn vị cách nhau mấy bậc. — (3) Từ lớn sang bé thì nhân, mỗi bậc nhân 10.
+**Bài A.2** — (1) 1 lít bằng bao nhiêu mi-li-lít? — (2) Đơn vị nào lớn hơn? — (3) Từ lớn sang bé thì nhân.
+**Bài A.3** — (1) Nhìn chữ số cuối cùng bên phải. — (2) Liền trước = trừ 1; liền sau = cộng 1. — (3) Hai số chẵn liên tiếp cách nhau 2 đơn vị.
 **Bài A.4** — (1) 1 giờ bằng bao nhiêu phút? — (2) Chia số phút cho 60, lấy thương và số dư. — (3) Phần phút của kết quả phải bé hơn 60.
-**Bài A.5** — (1) Chia số đó thành mấy phần bằng nhau? — (2) Lấy mấy phần? — (3) Vậy phải làm phép tính gì?
+**Bài A.5** — (1) 1 tấn bằng bao nhiêu ki-lô-gam? — (2) Đổi từng phần về ki-lô-gam. — (3) Cộng tất cả lại.
 **Bài B.1** — (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 **Bài B.2** — (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 **Bài B.3** — (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
@@ -714,11 +720,11 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 **Bài D.3** — (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 **Bài D.4** — (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 **Bài D.5** — (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
-**Bài E.1** — (1) Đơn vị nào lớn hơn? — (2) Một đơn vị lớn bằng bao nhiêu đơn vị bé? — (3) Nhân số đã cho với số lần đó.
-**Bài E.2** — (1) Mỗi hình ● ứng với bao nhiêu đơn vị? — (2) Bạn ấy có bao nhiêu hình ●? — (3) Nhân hai số ấy với nhau.
-**Bài E.3** — (1) Mua tất cả hết bao nhiêu tiền? — (2) Đưa cho cô bán hàng bao nhiêu? — (3) Lấy tiền đưa trừ tiền hàng.
-**Bài E.4** — (1) Câu nào cho biết tổng của hai đại lượng? — (2) Câu nào cho biết chúng hơn kém nhau bao nhiêu? — (3) Vẽ sơ đồ rồi áp công thức.
-**Bài E.5** — (1) Có cặp nào cộng lại tròn 100 không? — (2) Đổi chỗ để hai số đó đứng cạnh nhau. — (3) Cộng cặp tròn trước, phần còn lại sau.
+**Bài E.1** — (1) Hai nhà liền nhau hơn kém nhau mấy đơn vị? — (2) Từ nhà đầu tới nhà thứ k phải bước bao nhiêu lần? — (3) Đếm số nhà thì cộng thêm 1 vào số khoảng cách.
+**Bài E.2** — (1) Muốn biết rào hết bao nhiêu mét thì phải tính cái gì trước? — (2) Đường rào có điểm đầu và điểm cuối tách rời nhau không? — (3) Với đường khép kín thì số cọc bằng đúng số khoảng.
+**Bài E.3** — (1) Chia thử xem mỗi bạn được mấy cái, thừa mấy cái. — (2) Bớt đi thì bớt đúng phần thừa. — (3) Thêm vào thì thêm phần còn thiếu để đủ một suất nữa.
+**Bài E.4** — (1) Đơn vị nào lớn hơn? — (2) Một đơn vị lớn bằng bao nhiêu đơn vị bé? — (3) Nhân số đã cho với số lần đó.
+**Bài E.5** — (1) Mua tất cả hết bao nhiêu tiền? — (2) Đưa cho cô bán hàng bao nhiêu? — (3) Lấy tiền đưa trừ tiền hàng.
 
 ---
 
@@ -728,11 +734,11 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 
 | Bài | Đề tương tự | Đáp số |
 |---|---|---|
-| A.1 | 3 450 kg = … tấn … tạ … kg | 3 tấn 4 tạ 50 kg |
-| A.2 | 5 km = … m | 5 000 |
-| A.3 | 3 l = … ml | 3 000 |
+| A.1 | 5 km = … m | 5 000 |
+| A.2 | 3 l = … ml | 3 000 |
+| A.3 | Số liền sau của 11 159 là số nào? | 11 160 |
 | A.4 | 155 phút = … giờ … phút | 2 giờ 35 phút |
-| A.5 | Tìm 1 phần 4 của 20. | 5 |
+| A.5 | 3 450 kg = … tấn … tạ … kg | 3 tấn 4 tạ 50 kg |
 | B.1 | Chương “Dung tích, thời gian và đổi đơn vị tổng hợp” thuộc nhóm chuyên đề nào? | E — Đại lượng – Đo lường – Thời gian |
 | B.2 | Chương này có mấy dạng bài chính? | 4 |
 | B.3 | Một cụm chuyên đề GITA gồm mấy buổi học? | 6 buổi |
@@ -748,11 +754,11 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | D.3 | Ngày 1 tháng 5 là Thứ Ba, ngày 15 tháng 5 là thứ mấy? | Thứ Ba |
 | D.4 | 7 giờ 40 phút, sau 30 phút nữa là mấy giờ? | 8 giờ 10 phút |
 | D.5 | Quả cân 200 g, vật nặng 1 000 g. Cần mấy quả? | 5 quả |
-| E.1 | 5 m = … cm | 500 |
-| E.2 | Mỗi hình ứng với 5 quyển sách, bạn A có 4 hình. A có mấy quyển? | 20 quyển |
-| E.3 | Mua 3 quyển vở 5 000 đồng một quyển, đưa 20 000 đồng. Trả lại bao nhiêu? | 5 000 đồng |
-| E.4 | Hai lớp có 90 quyển sách, lớp A nhiều hơn lớp B 10 quyển. Mỗi lớp có mấy quyển? | 50 và 40 |
-| E.5 | Tính nhanh: 37 + 145 + 63 | 245 |
+| E.1 | Một dãy phố có các nhà số lẻ từ 1 đến 39. Dãy ấy có bao nhiêu nhà? | 20 nhà |
+| E.2 | Vườn dài 20 m, rộng 10 m, cắm cọc quanh vườn cách nhau 2 m. Cần bao nhiêu cọc? | 30 cọc |
+| E.3 | Có 26 cái kẹo chia đều cho 5 bạn. Mỗi bạn mấy cái, thừa mấy cái? | 5 cái, thừa 1 cái |
+| E.4 | 5 m = … cm | 500 |
+| E.5 | Mua 3 quyển vở 5 000 đồng một quyển, đưa 20 000 đồng. Trả lại bao nhiêu? | 5 000 đồng |
 
 ---
 

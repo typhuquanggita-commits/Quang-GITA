@@ -30,57 +30,59 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Đặt tính rồi tính. Ước lượng trước để tự kiểm tra.
 
-a) 940 832 × 446
-b) 693 809 − 70 389
-c) 267 418 008 : 627
-d) 172 958 + 357 609
-e) 373 703 838 : 606
+a) 160 241 004 : 324
+b) 867 892 + 119 546
+c) 739 324 × 648
+d) 332 311 − 204 283
+e) 501 074 − 137 589
+f) 205 618 482 : 477
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
 Tìm x, trình bày từng bước.
 
-a) (x + 271) × 8 = 3 656
-b) 474 − x × 7 = 243
-c) x × 11 + 271 = 1 580
-d) x × 8 + 70 = 750
-e) x × 10 − 129 = 931
-f) (x − 68) × 4 = 500
+a) 492 − x × 10 = 282
+b) x × 11 − 101 = 1 087
+c) (x − 114) × 11 = 451
+d) (x − 50) × 7 = -196
+e) x × 9 − 281 = -47
+f) x × 10 + 17 = 107
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
 Giải từng bài toán nhỏ.
 
-a) Trung bình mỗi ngày bán được 284 kg gạo. Hỏi 3 ngày bán được tất cả bao nhiêu ki-lô-gam?
-b) Trung bình mỗi ngày cửa hàng bán được 187 kg gạo. 3 ngày đầu bán được 185, 176, 194 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
-c) 4 ngày đầu tuần một cửa hàng bán được lần lượt 98, 104, 104, 118 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
-d) Trung bình mỗi ngày cửa hàng bán được 127 kg gạo. 5 ngày đầu bán được 123, 131, 120, 138, 130 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
-e) 6 ngày đầu tuần một cửa hàng bán được lần lượt 133, 149, 154, 134, 138, 150 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
-f) Trung bình mỗi ngày bán được 79 kg gạo. Hỏi 5 ngày bán được tất cả bao nhiêu ki-lô-gam?
+a) 6 ngày đầu tuần một cửa hàng bán được lần lượt 214, 212, 226, 221, 212, 211 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
+b) 3 ngày đầu tuần một cửa hàng bán được lần lượt 288, 276, 282 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
+c) Trung bình mỗi ngày bán được 170 kg gạo. Hỏi 5 ngày bán được tất cả bao nhiêu ki-lô-gam?
+d) Trung bình mỗi ngày cửa hàng bán được 227 kg gạo. 5 ngày đầu bán được 216, 224, 227, 227, 232 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
+e) Trung bình mỗi ngày cửa hàng bán được 161 kg gạo. 3 ngày đầu bán được 162, 154, 169 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
+f) Trung bình mỗi ngày cửa hàng bán được 245 kg gạo. 2 ngày đầu bán được 235, 255 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
-Chú ý đơn vị mà đề hỏi.
+Ghi kết quả theo giờ và phút.
 
-a) Một xe chở 35 bao đường, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ đường?
-b) Một xe chở 10 bao gạo, mỗi bao 50 kg. Hỏi xe chở bao nhiêu tạ gạo?
-c) Một xe chở 23 bao xi măng, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ xi măng?
-d) Một xe chở 10 bao thóc, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ thóc?
+a) Một chuyến tàu khởi hành lúc 9 giờ 10 phút và đi hết 1 giờ 43 phút. Tàu đến nơi lúc mấy giờ?
+b) Một chuyến tàu khởi hành lúc 7 giờ 0 phút và đi hết 2 giờ 53 phút. Tàu đến nơi lúc mấy giờ?
+c) Một chuyến tàu khởi hành lúc 6 giờ 30 phút và đi hết 5 giờ 30 phút. Tàu đến nơi lúc mấy giờ?
+d) Một chuyến tàu khởi hành lúc 6 giờ 40 phút và đi hết 5 giờ 43 phút. Tàu đến nơi lúc mấy giờ?
+e) Một chuyến tàu khởi hành lúc 5 giờ 20 phút và đi hết 4 giờ 4 phút. Tàu đến nơi lúc mấy giờ?
+f) Một chuyến tàu khởi hành lúc 7 giờ 50 phút và đi hết 2 giờ 46 phút. Tàu đến nơi lúc mấy giờ?
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
-Dùng kĩ thuật tô màu để lập luận.
+Tính nhanh mỗi tổng, nêu công thức đã dùng.
 
-a) Một bàn cờ vuông 4 × 4 ô. Hỏi có tất cả bao nhiêu ô?
-b) Tô màu xen kẽ đen trắng như bàn cờ vua thì có bao nhiêu ô đen?
-c) Một quân đô-mi-nô phủ đúng 2 ô liền nhau. Có thể phủ kín cả bàn cờ 4 × 4 bằng các quân đô-mi-nô không?
-d) Mỗi quân đô-mi-nô luôn phủ mấy ô đen và mấy ô trắng?
-e) Nếu bỏ đi hai ô ở hai góc đối diện của bàn cờ 4 × 4 (hai ô này cùng màu) thì còn phủ kín được không?
-f) Đại lượng bất biến dùng ở đây là gì?
+a) 1 + 3 + 5 + … + 99 (tổng 50 số lẻ đầu tiên)
+b) 1 + 2 + 3 + … + 20
+c) 2 + 4 + 6 + … + 50 (tổng 25 số chẵn đầu tiên)
+d) 2 + 4 + 6 + … + 20 (tổng 10 số chẵn đầu tiên)
+e) 1 + 3 + 5 + … + 39 (tổng 20 số lẻ đầu tiên)
 
 
 ---
@@ -88,101 +90,104 @@ f) Đại lượng bất biến dùng ở đây là gì?
 ## ĐÁP ÁN VÀ BIỂU ĐIỂM
 
 
-### Bài 1, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **419 611 072**
-b) **623 420**
-c) **426 504**
-d) **530 567**
-e) **616 673**
+a) **494 571**
+b) **987 438**
+c) **479 081 952**
+d) **128 028**
+e) **363 485**
+f) **431 066**
 
 **Cách giải mẫu:**
 
-1. Đặt tính, nhân lần lượt từng chữ số của 446 với 940 832.
-2. Mỗi tích riêng viết lùi sang trái một cột.
-3. Cộng các tích riêng lại: 940 832 × 446 = 419 611 072.
-4. Ước lượng kiểm tra: khoảng 941 000 × 400 ≈ 376 400 000 — cùng độ lớn ✓
-5. Đáp số: **419 611 072**.
+1. Xét ý a: 160 241 004 : 324
+2. Đọc vị: đây là dạng **Bốn phép tính với số tự nhiên**; dấu hiệu là Yêu cầu “đặt tính rồi tính”.
+3. Kiến thức phải dùng: Kĩ thuật đặt tính cộng, trừ, nhân, chia.
+4. Cách làm: Đặt tính thẳng cột, tính từ hàng đơn vị.
+5. Lối tắt: Ước lượng bằng cách làm tròn để phát hiện sai sót về độ lớn.
+6. Kết quả: **494 571**.
 
 *Lỗi hay mắc:* Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số.
 
 ### Bài 2, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **x = 186**
-b) **x = 33**
-c) **x = 119**
-d) **x = 85**
-e) **x = 106**
-f) **x = 193**
+a) **x = 21**
+b) **x = 108**
+c) **x = 155**
+d) **x = 22**
+e) **x = 26**
+f) **x = 9**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: (x + 271) × 8 = 3 656
+1. Xét ý a: 492 − x × 10 = 282
 2. Đọc vị: đây là dạng **Tìm x qua hai bước**; dấu hiệu là x nằm trong một cụm có hai phép tính.
 3. Kiến thức phải dùng: Quan hệ các thành phần phép tính, thứ tự thực hiện.
 4. Cách làm: Gỡ dần từ phép ngoài cùng vào trong.
 5. Lối tắt: Thay x tìm được vào đề để thử — nhanh hơn dò lại từng bước.
-6. Kết quả: **x = 186**.
+6. Kết quả: **x = 21**.
 
 *Lỗi hay mắc:* Gỡ phép nhân trước khi gỡ phép cộng ở ngoài.
 
 ### Bài 3, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **852 kg**
-b) **193 kg**
-c) **106 kg**
-d) **120 kg**
-e) **143 kg**
-f) **395 kg**
+a) **216 kg**
+b) **282 kg**
+c) **850 kg**
+d) **236 kg**
+e) **159 kg**
+f) **245 kg**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Trung bình mỗi ngày bán được 284 kg gạo. Hỏi 3 ngày bán được tất cả bao nhiêu ki-lô-gam?
+1. Xét ý a: 6 ngày đầu tuần một cửa hàng bán được lần lượt 214, 212, 226, 221, 212, 211 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
 2. Đọc vị: đây là dạng **Ba dạng bài trung bình cộng**; dấu hiệu là Cụm “trung bình mỗi …”.
 3. Kiến thức phải dùng: Quan hệ tổng – số lượng – trung bình cộng.
 4. Cách làm: Đi qua tổng làm trung gian.
 5. Lối tắt: Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng.
-6. Kết quả: **852 kg**.
+6. Kết quả: **216 kg**.
 
 *Lỗi hay mắc:* Đi tìm ngay số còn thiếu mà chưa tính tổng.
 
-### Bài 4, (2 điểm — mỗi ý 0,5 điểm)
+### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **10 tạ 50 kg**
-b) **5 tạ**
-c) **6 tạ 90 kg**
-d) **3 tạ**
-
-**Cách giải mẫu:**
-
-1. Xét ý a: Một xe chở 35 bao đường, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ đường?
-2. Đọc vị: đây là dạng **Bài toán đại lượng có lời văn**; dấu hiệu là Đơn vị trong câu hỏi khác đơn vị trong dữ kiện.
-3. Kiến thức phải dùng: Nhân, chia số tự nhiên; đổi đơn vị khối lượng.
-4. Cách làm: Tính theo đơn vị dữ kiện rồi đổi ở bước cuối.
-5. Lối tắt: 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ.
-6. Kết quả: **10 tạ 50 kg**.
-
-*Lỗi hay mắc:* Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ.
-
-### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
-
-a) **16**
-b) **8**
-c) **có**
-d) **1 ô đen và 1 ô trắng**
-e) **không, vì số ô đen và ô trắng không còn bằng nhau**
-f) **hiệu giữa số ô đen và số ô trắng chưa bị phủ**
+a) **10 giờ 53 phút**
+b) **9 giờ 53 phút**
+c) **12 giờ 0 phút**
+d) **12 giờ 23 phút**
+e) **9 giờ 24 phút**
+f) **10 giờ 36 phút**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Một bàn cờ vuông 4 × 4 ô. Hỏi có tất cả bao nhiêu ô?
-2. Đọc vị: đây là dạng **Tô màu, bất biến trên bàn cờ**; dấu hiệu là Bàn cờ, quân đô-mi-nô, câu hỏi “có thể phủ kín không”.
-3. Kiến thức phải dùng: Kĩ thuật tô màu, bất biến, tính chẵn lẻ.
-4. Cách làm: Tô màu xen kẽ, đếm hai màu, so sánh.
-5. Lối tắt: Hai ô ở hai góc đối diện của bàn cờ luôn cùng màu.
-6. Kết quả: **16**.
+1. Xét ý a: Một chuyến tàu khởi hành lúc 9 giờ 10 phút và đi hết 1 giờ 43 phút. Tàu đến nơi lúc mấy giờ?
+2. Đọc vị: đây là dạng **Tính thời điểm trong ngày**; dấu hiệu là Cho thời điểm bắt đầu và khoảng thời gian.
+3. Kiến thức phải dùng: Quan hệ giờ – phút, phép chia có dư.
+4. Cách làm: Quy về phút, cộng trừ, đổi lại.
+5. Lối tắt: Cộng tròn giờ trước rồi cộng phần phút lẻ sau.
+6. Kết quả: **10 giờ 53 phút**.
 
-*Lỗi hay mắc:* Thử xếp bằng tay rồi kết luận “không xếp được” mà không chứng minh.
+*Lỗi hay mắc:* Cộng phần phút thành hơn 60 mà quên đổi thành giờ.
+
+### Bài 5, (2 điểm — mỗi ý 0,4 điểm)
+
+a) **2 500**
+b) **210**
+c) **650**
+d) **110**
+e) **400**
+
+**Cách giải mẫu:**
+
+1. Xét ý a: 1 + 3 + 5 + … + 99 (tổng 50 số lẻ đầu tiên)
+2. Đọc vị: đây là dạng **Tổng dãy đặc biệt**; dấu hiệu là Dãy toàn số lẻ, toàn số chẵn, hoặc số tự nhiên liên tiếp.
+3. Kiến thức phải dùng: Ba công thức tổng cơ bản.
+4. Cách làm: Đếm số số hạng rồi áp công thức.
+5. Lối tắt: Tổng n số lẻ đầu tiên luôn là một số chính phương — dùng để kiểm tra nhanh.
+6. Kết quả: **2 500**.
+
+*Lỗi hay mắc:* Nhầm số hạng cuối với số lượng số hạng khi áp công thức.
 
 ---
 
@@ -195,8 +200,8 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài 1 | Bốn phép tính với số tự nhiên | Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số. | Nhóm chuyên đề **—** · mức — |
 | Bài 2 | Tìm x qua hai bước | Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. | Nhóm chuyên đề **—** · mức — |
 | Bài 3 | Ba dạng bài trung bình cộng | Đi tìm ngay số còn thiếu mà chưa tính tổng. | Nhóm chuyên đề **—** · mức — |
-| Bài 4 | Bài toán đại lượng có lời văn | Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. | Nhóm chuyên đề **—** · mức — |
-| Bài 5 | Tô màu, bất biến trên bàn cờ | Thử xếp bằng tay rồi kết luận “không xếp được” mà không chứng minh. | Nhóm chuyên đề **—** · mức — |
+| Bài 4 | Tính thời điểm trong ngày | Cộng phần phút thành hơn 60 mà quên đổi thành giờ. | Nhóm chuyên đề **—** · mức — |
+| Bài 5 | Tổng dãy đặc biệt | Nhầm số hạng cuối với số lượng số hạng khi áp công thức. | Nhóm chuyên đề **—** · mức — |
 
 ---
 

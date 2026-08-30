@@ -131,176 +131,175 @@ e) Dạng “Bài toán giải bằng hai phép tính” — cách xử lý nhan
 
 ## PHẦN B — DẠNG 1 – DẠNG 2 · Mức M2 — Thông hiểu · 25 phút · 25 điểm
 
-### Bài 1. (5 điểm) Trung bình cộng trong tình huống thực tế
+### Bài 1. (5 điểm) Đếm số cách chọn bằng quy tắc nhân
 
-Giải từng bài toán nhỏ.
+Vẽ sơ đồ cây rồi đếm.
 
-a) Trung bình mỗi ngày cửa hàng bán được 182 kg gạo. 4 ngày đầu bán được 189, 181, 189, 171 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
-b) 5 ngày đầu tuần một cửa hàng bán được lần lượt 256, 260, 270, 263, 251 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
-c) Trung bình mỗi ngày bán được 263 kg gạo. Hỏi 6 ngày bán được tất cả bao nhiêu ki-lô-gam?
-d) 5 ngày đầu tuần một cửa hàng bán được lần lượt 291, 295, 272, 287, 275 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
+a) Có 5 loại bánh và 2 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
+b) Có 3 loại bánh và 2 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
+c) Có 5 loại bánh và 6 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
+d) Có 4 loại bánh và 3 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
 
-### Bài 2. (5 điểm) Đọc bảng số liệu
-
-Bảng ghi số bông hoa mỗi bạn gấp được: Sơn: 20 · Trang: 25 · Quân: 20 · Chi: 13.
-
-a) Cả bốn bạn gấp được bao nhiêu bông hoa?
-b) Bạn nào gấp được nhiều nhất?
-c) Bạn nào gấp được ít nhất?
-d) Bạn nhiều nhất hơn bạn ít nhất bao nhiêu bông?
-e) Nếu bốn bạn khác gấp được 7, 3, 9, 21 bông thì trung bình mỗi bạn gấp được bao nhiêu bông?
-
-### Bài 3. (5 điểm) Bài toán tổng – hiệu có lời văn
-
-Tóm tắt bằng sơ đồ đoạn thẳng rồi giải.
-
-a) Hợp tác xã và thư viện chứa tất cả 72 kg gạo. Hợp tác xã chứa nhiều hơn thư viện 22 kg. Mỗi nơi chứa bao nhiêu kg?
-b) Đội Một và tổ Một trồng được 604 cây. Đội Một trồng nhiều hơn tổ Một 198 cây. Mỗi tổ trồng bao nhiêu cây?
-c) Hai lớp 5C và 5B có tất cả 458 quyển sách. Lớp 5C có nhiều hơn lớp 5B 130 quyển. Mỗi lớp có bao nhiêu quyển?
-d) Hai lớp 5C và 4B có tất cả 510 quyển sách. Lớp 5C có nhiều hơn lớp 4B 74 quyển. Mỗi lớp có bao nhiêu quyển?
-e) Cửa hàng và kho A chứa tất cả 148 kg đường. Cửa hàng chứa nhiều hơn kho A 48 kg. Mỗi nơi chứa bao nhiêu kg?
-
-### Bài 4. (5 điểm) Chia kẹo — chia hết và chia có dư
-
-Ghi rõ thương và số dư trong mọi câu trả lời.
-
-a) Có 43 cái kẹo chia đều cho 8 bạn. Mỗi bạn được mấy cái và còn thừa mấy cái?
-b) Muốn chia hết, phải bớt đi ít nhất bao nhiêu cái kẹo?
-c) Hoặc phải thêm vào ít nhất bao nhiêu cái kẹo?
-d) Nếu thêm 5 cái thì mỗi bạn được mấy cái?
-e) Nếu chỉ chia cho 7 bạn thì mỗi bạn được mấy cái, thừa mấy cái?
-f) Số kẹo phải là số như thế nào để chia hết cho 8 bạn?
-
-### Bài 5. (5 điểm) Tổng – hiệu bằng sơ đồ đoạn thẳng
+### Bài 2. (5 điểm) Tổng – hiệu bằng sơ đồ đoạn thẳng
 
 Vẽ sơ đồ trước, tính sau. Không vẽ thì không được tính.
 
-a) Lan và An có tất cả 102 viên bi. Lan có nhiều hơn An 14 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
-b) Bình và Đức có tất cả 132 viên bi. Bình có nhiều hơn Đức 22 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
-c) An và Vy có tất cả 20 viên bi. An có nhiều hơn Vy 4 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
-d) Chi và Thảo có tất cả 158 viên bi. Chi có nhiều hơn Thảo 34 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
-e) Đức và Quân có tất cả 80 viên bi. Đức có nhiều hơn Quân 6 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+a) Quân và Nam có tất cả 186 viên bi. Quân có nhiều hơn Nam 26 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+b) Hùng và Ngọc có tất cả 78 viên bi. Hùng có nhiều hơn Ngọc 8 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+c) Vy và Tuấn có tất cả 50 viên bi. Vy có nhiều hơn Tuấn 12 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+d) Đức và Vy có tất cả 170 viên bi. Đức có nhiều hơn Vy 56 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+e) Lan và Chi có tất cả 200 viên bi. Lan có nhiều hơn Chi 16 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+
+### Bài 3. (5 điểm) Trồng cây và chia đoạn — năm trường hợp
+
+Vẽ một hình nhỏ ba khoảng để kiểm tra trước khi áp công thức.
+
+a) Đoạn đường dài 170 m, cây cách nhau 5 m, chỉ trồng ở một đầu. Cần bao nhiêu cây?
+b) Đoạn đường dài 24 m, cây cách nhau 3 m, không trồng ở cả hai đầu. Cần bao nhiêu cây?
+c) Đoạn đường dài 58 m, trồng cây cách nhau 2 m, trồng cả ở hai đầu. Cần bao nhiêu cây?
+d) Cưa một khúc gỗ dài 155 m thành các đoạn dài 5 m. Phải cưa bao nhiêu nhát?
+e) Quanh một hồ nước có chu vi 66 m, trồng cây cách nhau 2 m. Cần bao nhiêu cây?
+f) Quanh một hồ nước có chu vi 84 m, trồng cây cách nhau 6 m. Cần bao nhiêu cây?
+g) Cưa một khúc gỗ dài 150 m thành các đoạn dài 5 m. Phải cưa bao nhiêu nhát?
+
+### Bài 4. (5 điểm) Trung bình cộng trong tình huống thực tế
+
+Giải từng bài toán nhỏ.
+
+a) 5 ngày đầu tuần một cửa hàng bán được lần lượt 145, 151, 165, 163, 151 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
+b) 6 ngày đầu tuần một cửa hàng bán được lần lượt 161, 178, 170, 174, 161, 176 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
+c) Trung bình mỗi ngày bán được 219 kg gạo. Hỏi 4 ngày bán được tất cả bao nhiêu ki-lô-gam?
+d) Trung bình mỗi ngày cửa hàng bán được 123 kg gạo. 3 ngày đầu bán được 120, 130, 131 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
+e) Trung bình mỗi ngày bán được 26 kg gạo. Hỏi 5 ngày bán được tất cả bao nhiêu ki-lô-gam?
+f) Trung bình mỗi ngày bán được 205 kg gạo. Hỏi 4 ngày bán được tất cả bao nhiêu ki-lô-gam?
+
+### Bài 5. (5 điểm) Bài toán tổng – hiệu có lời văn
+
+Tóm tắt bằng sơ đồ đoạn thẳng rồi giải.
+
+a) Đội Một và tổ Hai trồng được 368 cây. Đội Một trồng nhiều hơn tổ Hai 84 cây. Mỗi tổ trồng bao nhiêu cây?
+b) Hai lớp 3B và 4C có tất cả 454 quyển sách. Lớp 3B có nhiều hơn lớp 4C 106 quyển. Mỗi lớp có bao nhiêu quyển?
+c) Thư viện và trang trại chứa tất cả 422 kg xi măng. Thư viện chứa nhiều hơn trang trại 64 kg. Mỗi nơi chứa bao nhiêu kg?
+d) Tổ Hai và nhóm Hoa Phượng trồng được 140 cây. Tổ Hai trồng nhiều hơn nhóm Hoa Phượng 44 cây. Mỗi tổ trồng bao nhiêu cây?
+e) Kho B và thư viện chứa tất cả 648 kg đường. Kho B chứa nhiều hơn thư viện 18 kg. Mỗi nơi chứa bao nhiêu kg?
+f) Hai lớp 4B và 5C có tất cả 790 quyển sách. Lớp 4B có nhiều hơn lớp 5C 56 quyển. Mỗi lớp có bao nhiêu quyển?
 
 ---
 
 ## PHẦN C — DẠNG 3 – DẠNG 4 · Mức M2 — Thông hiểu · 25 phút · 25 điểm
 
-### Bài 1. (5 điểm) Nhân, chia với số có một chữ số
+### Bài 1. (5 điểm) Đọc và lập biểu đồ tranh
 
-Đặt tính rồi tính.
+Biểu đồ tranh số bông hoa của bốn bạn — mỗi hình ● ứng với **2 bông hoa**:
 
-a) 7 211 : 8
-b) 979 × 5
-c) 3 796 : 4
-d) 4 819 : 8
-e) 6 012 : 9
+Hùng: ●●●●●●● · Thảo: ●●●●●● · Hà: ●●●●●●● · Nam: ●●●
 
-### Bài 2. (5 điểm) Tiền Việt Nam: mua bán, đổi tiền, trả lại
+a) Mỗi hình ● ứng với 2 bông hoa. Bạn Hùng có bao nhiêu bông hoa?
+b) Bạn Thảo có bao nhiêu bông hoa?
+c) Cả bốn bạn có tất cả bao nhiêu bông hoa?
+d) Bạn nào có nhiều bông hoa nhất?
+e) Bạn nào có ít bông hoa nhất?
+f) Bạn nhiều nhất hơn bạn ít nhất bao nhiêu bông hoa?
+g) Nếu một bạn có 12 bông hoa thì phải vẽ mấy hình ●?
 
-Ghi rõ đơn vị đồng ở mọi kết quả.
+### Bài 2. (5 điểm) Chia kẹo — chia hết và chia có dư
 
-a) Mua 5 quyển vở, mỗi quyển 8 000 đồng. Hết bao nhiêu tiền?
-b) Đổi một tờ 50 000 đồng ra các tờ 5 000 đồng thì được mấy tờ?
-c) Mua 4 quyển vở, mỗi quyển 5 000 đồng. Đưa cô bán hàng một tờ 50 000 đồng. Cô phải trả lại bao nhiêu tiền?
-d) Đổi một tờ 20 000 đồng ra các tờ 1 000 đồng thì được mấy tờ?
-e) Mua 5 quyển vở, mỗi quyển 18 000 đồng. Hết bao nhiêu tiền?
+Ghi rõ thương và số dư trong mọi câu trả lời.
 
-### Bài 3. (5 điểm) Tìm x và tính chất của phép nhân
+a) Có 35 cái kẹo chia đều cho 9 bạn. Mỗi bạn được mấy cái và còn thừa mấy cái?
+b) Muốn chia hết, phải bớt đi ít nhất bao nhiêu cái kẹo?
+c) Hoặc phải thêm vào ít nhất bao nhiêu cái kẹo?
+d) Nếu thêm 1 cái thì mỗi bạn được mấy cái?
+e) Nếu chỉ chia cho 8 bạn thì mỗi bạn được mấy cái, thừa mấy cái?
+f) Số kẹo phải là số như thế nào để chia hết cho 9 bạn?
+
+### Bài 3. (5 điểm) Số nhà trên một dãy phố
+
+Một bên phố có các nhà mang số lẻ, bắt đầu từ số **1** và kết thúc ở số **33**, hai nhà liền nhau hơn kém nhau 2.
+
+a) Số nhà đầu dãy là 1, các nhà tiếp theo là 3, 5, … Số nhà thứ tư là số nào?
+b) Số nhà cuối dãy là 33. Dãy phố này có bao nhiêu nhà?
+c) Nhà thứ 8 tính từ đầu dãy mang số nào?
+d) Nhà mang số 31 là nhà thứ mấy tính từ đầu dãy?
+e) Các số nhà trong dãy này là số chẵn hay số lẻ? Vì sao?
+
+### Bài 4. (5 điểm) Tìm x và tính chất của phép nhân
 
 Tìm x hoặc điền số thích hợp.
 
-a) 150 × 1 × 0 = …
-b) x − 210 = 117
-c) 2 × 198 = 198 × …
-d) x + 17 = 219
-e) x + 73 = 353
-f) 4 × 129 = 129 × …
+a) 6 × 46 = 46 × …
+b) 59 × 1 × 0 = …
+c) x + 260 = 596
+d) x − 292 = 203
+e) x + 28 = 183
+f) 248 × 1 × 0 = …
+g) x − 145 = 45
 
-### Bài 4. (5 điểm) Phép chia có dư
+### Bài 5. (5 điểm) Tính nhanh bằng cách ghép số tròn
 
-Thực hiện phép chia, ghi rõ thương và số dư.
+Tính bằng cách thuận tiện nhất.
 
-a) 752 : 3 = ? (dư ?)
-b) 255 : 6 = ? (dư ?)
-c) 401 : 4 = ? (dư ?)
-d) 2 173 : 8 = ? (dư ?)
-e) 2 210 : 6 = ? (dư ?)
-f) 868 : 8 = ? (dư ?)
-g) 1 145 : 3 = ? (dư ?)
-
-### Bài 5. (5 điểm) Đọc và lập biểu đồ tranh
-
-Biểu đồ tranh số chiếc bút của bốn bạn — mỗi hình ● ứng với **2 chiếc bút**:
-
-Hùng: ●●●● · Tuấn: ●●●●●●●● · Sơn: ●●●● · Hà: ●●
-
-a) Mỗi hình ● ứng với 2 chiếc bút. Bạn Hùng có bao nhiêu chiếc bút?
-b) Bạn Tuấn có bao nhiêu chiếc bút?
-c) Cả bốn bạn có tất cả bao nhiêu chiếc bút?
-d) Bạn nào có nhiều chiếc bút nhất?
-e) Bạn nào có ít chiếc bút nhất?
-f) Bạn nhiều nhất hơn bạn ít nhất bao nhiêu chiếc bút?
-g) Nếu một bạn có 12 chiếc bút thì phải vẽ mấy hình ●?
+a) 87 + 192 + 13
+b) 281 + 84 − 84
+c) 46 + 295 + 54
+d) 48 + 100 + 52
+e) 220 + 63 − 63
 
 ---
 
 ## PHẦN D — DẠNG 5 – DẠNG 6 VÀ DẠNG PHỐI HỢP · Mức M3 — Vận dụng · 20 phút · 20 điểm
 
-### Bài 1. (4 điểm) Tổng – tỉ, hiệu – tỉ và so sánh một phần mấy
+### Bài 1. (4 điểm) Đếm hình trong lưới ô vuông
 
-Vẽ sơ đồ đoạn thẳng cho mọi bài trước khi tính.
+Cho lưới gồm 2 hàng và 4 cột ô vuông nhỏ bằng nhau.
 
-a) Đội Một trồng nhiều hơn tổ Một 40 cây, và số cây của đội Một gấp 3 lần số cây của tổ Một. Mỗi tổ trồng bao nhiêu cây?
-b) Đội Một và nhóm Hoa Phượng trồng được tất cả 20 cây. Số cây của nhóm Hoa Phượng gấp 4 lần số cây của đội Một. Mỗi tổ trồng bao nhiêu cây?
-c) Nhóm Sao Mai trồng 22 cây, đội Hai trồng 66 cây. Số cây của nhóm Sao Mai bằng một phần mấy số cây của đội Hai?
-d) Đội Một và nhóm Sao Mai trồng được tất cả 144 cây. Số cây của nhóm Sao Mai gấp 5 lần số cây của đội Một. Mỗi tổ trồng bao nhiêu cây?
-e) Nhóm Sao Mai trồng 13 cây, tổ Một trồng 39 cây. Số cây của nhóm Sao Mai bằng một phần mấy số cây của tổ Một?
+a) Lưới có bao nhiêu ô vuông nhỏ?
+b) Lưới có bao nhiêu đường kẻ ngang, bao nhiêu đường kẻ dọc?
+c) Có tất cả bao nhiêu hình chữ nhật (kể cả hình vuông)?
+d) Có bao nhiêu hình vuông?
+e) Có bao nhiêu hình chữ nhật không phải hình vuông?
 
-### Bài 2. (4 điểm) Nguyên lý bù trừ với hai tập hợp
-
-Vẽ hai vòng tròn giao nhau và điền số vào từng miền.
-
-a) Lớp có 33 học sinh. Có 13 bạn thích môn Toán, 21 bạn thích môn Tiếng Việt, 3 bạn thích cả hai môn. Hỏi bao nhiêu bạn thích ít nhất một trong hai môn?
-b) Bao nhiêu bạn chỉ thích môn Toán?
-c) Bao nhiêu bạn chỉ thích môn Tiếng Việt?
-d) Bao nhiêu bạn không thích môn nào trong hai môn đó?
-e) Nếu cộng thẳng số bạn thích Toán với số bạn thích Tiếng Việt thì được bao nhiêu?
-f) Con số vừa cộng lớn hơn số bạn thích ít nhất một môn bao nhiêu? Vì sao?
-
-### Bài 3. (4 điểm) Bài toán giải bằng hai phép tính
+### Bài 2. (4 điểm) Bài toán giải bằng hai phép tính
 
 Trình bày lời giải có câu trả lời cho từng bước.
 
-a) Đội Hai trồng được 17 cây. Nhóm Sao Mai trồng được gấp 3 lần đội Hai. Hỏi cả hai tổ trồng được bao nhiêu cây?
-b) Tổ Một trồng được 37 cây. Tổ Hai trồng được gấp 6 lần tổ Một. Hỏi cả hai tổ trồng được bao nhiêu cây?
-c) Nhóm Sao Mai trồng được 51 cây. Tổ Ba trồng được gấp 6 lần nhóm Sao Mai. Hỏi cả hai tổ trồng được bao nhiêu cây?
-d) Nhóm Hoa Phượng trồng được 30 cây. Tổ Hai trồng được gấp 5 lần nhóm Hoa Phượng. Hỏi cả hai tổ trồng được bao nhiêu cây?
-e) Đội Hai trồng được 40 cây. Tổ Ba trồng được gấp 2 lần đội Hai. Hỏi cả hai tổ trồng được bao nhiêu cây?
-f) Tổ Một trồng được 37 cây. Nhóm Sao Mai trồng được gấp 4 lần tổ Một. Hỏi cả hai tổ trồng được bao nhiêu cây?
+a) Nhóm Sao Mai trồng được 12 cây. Tổ Ba trồng được gấp 5 lần nhóm Sao Mai. Hỏi cả hai tổ trồng được bao nhiêu cây?
+b) Tổ Một trồng được 53 cây. Đội Một trồng được gấp 3 lần tổ Một. Hỏi cả hai tổ trồng được bao nhiêu cây?
+c) Tổ Hai trồng được 18 cây. Tổ Một trồng được gấp 3 lần tổ Hai. Hỏi cả hai tổ trồng được bao nhiêu cây?
+d) Đội Một trồng được 23 cây. Đội Hai trồng được gấp 5 lần đội Một. Hỏi cả hai tổ trồng được bao nhiêu cây?
+e) Nhóm Hoa Phượng trồng được 50 cây. Tổ Ba trồng được gấp 6 lần nhóm Hoa Phượng. Hỏi cả hai tổ trồng được bao nhiêu cây?
 
-### Bài 4. (4 điểm) Dấu hiệu chia hết cho 2, 3, 5, 9
+### Bài 3. (4 điểm) Dấu hiệu chia hết cho 2, 3, 5, 9
 
 Không đặt tính chia, chỉ dùng dấu hiệu.
 
-a) Số 2 445 có chia hết cho 2 không? Vì sao?
-b) Số 2 980 có chia hết cho 3 không? Vì sao?
-c) Số 4 012 có chia hết cho 9 không? Vì sao?
-d) Số 7 337 có chia hết cho 5 không? Vì sao?
-e) Số 3 036 có chia hết cho 5 không? Vì sao?
-f) Số 3 685 có chia hết cho 3 không? Vì sao?
-g) Số 7 050 có chia hết cho 9 không? Vì sao?
-h) Số 914 có chia hết cho 2 không? Vì sao?
+a) Số 1 084 có chia hết cho 9 không? Vì sao?
+b) Số 575 có chia hết cho 2 không? Vì sao?
+c) Số 1 950 có chia hết cho 5 không? Vì sao?
+d) Số 6 165 có chia hết cho 3 không? Vì sao?
+e) Số 6 688 có chia hết cho 9 không? Vì sao?
+f) Số 7 081 có chia hết cho 2 không? Vì sao?
 
-### Bài 5. (4 điểm) Tháng, năm và cách xem lịch
+### Bài 4. (4 điểm) Tháng, năm và cách xem lịch
 
 Kẻ một bảng lịch nhỏ ra nháp rồi trả lời.
 
-a) Tháng 3 năm 2023 có bao nhiêu ngày?
-b) Năm 2023 có phải năm nhuận không?
-c) Ngày 1 tháng 3 là Thứ Hai. Hỏi ngày 21 tháng ấy là thứ mấy?
+a) Tháng 12 năm 2031 có bao nhiêu ngày?
+b) Năm 2031 có phải năm nhuận không?
+c) Ngày 1 tháng 12 là Thứ Hai. Hỏi ngày 23 tháng ấy là thứ mấy?
 d) Tháng ấy có bao nhiêu ngày Chủ nhật?
 e) Ngày cuối cùng của tháng là thứ mấy?
 f) Một năm thường có bao nhiêu ngày, năm nhuận có bao nhiêu ngày?
+
+### Bài 5. (4 điểm) Tổng – tỉ, hiệu – tỉ và so sánh một phần mấy
+
+Vẽ sơ đồ đoạn thẳng cho mọi bài trước khi tính.
+
+a) Tổ Hai và tổ Ba trồng được tất cả 51 cây. Số cây của tổ Ba gấp 2 lần số cây của tổ Hai. Mỗi tổ trồng bao nhiêu cây?
+b) Tổ Ba trồng 17 cây, nhóm Sao Mai trồng 34 cây. Số cây của tổ Ba bằng một phần mấy số cây của nhóm Sao Mai?
+c) Tổ Một trồng nhiều hơn nhóm Hoa Phượng 18 cây, và số cây của tổ Một gấp 2 lần số cây của nhóm Hoa Phượng. Mỗi tổ trồng bao nhiêu cây?
+d) Đội Một và nhóm Hoa Phượng trồng được tất cả 36 cây. Số cây của nhóm Hoa Phượng gấp 5 lần số cây của đội Một. Mỗi tổ trồng bao nhiêu cây?
+e) Tổ Hai trồng nhiều hơn đội Hai 8 cây, và số cây của tổ Hai gấp 3 lần số cây của đội Hai. Mỗi tổ trồng bao nhiêu cây?
 
 ---
 
@@ -308,7 +307,7 @@ f) Một năm thường có bao nhiêu ngày, năm nhuận có bao nhiêu ngày?
 
 ### Bài 1. (4 điểm) Đọc vị đề số 1
 
-**Đề:** Mỗi ý một phép tính, trả lời gọn. Tổ Hai có 38 lá cờ, tổ Một có gấp 4 lần tổ Hai. Tổ Một có bao nhiêu lá cờ?
+**Đề:** Mỗi ý một phép tính, trả lời gọn. Nhóm Sao Mai có 28 lá cờ, tổ Một có gấp 4 lần nhóm Sao Mai. Tổ Một có bao nhiêu lá cờ?
 
 a) Đề này thuộc dạng bài nào?
 b) Dấu hiệu nào giúp em nhận ra?
@@ -319,7 +318,7 @@ f) Lỗi nào dễ mắc ở đề này?
 
 ### Bài 2. (4 điểm) Đọc vị đề số 2
 
-**Đề:** Trình bày lời giải đủ bước, ghi rõ đơn vị. 2 hộp bút có 22 chiếc. Hỏi 8 hộp như thế có bao nhiêu chiếc bút?
+**Đề:** Trình bày lời giải đủ bước, ghi rõ đơn vị. Mua 8 quyển vở, mỗi quyển 8 000 đồng. Đưa người bán 100 000 đồng. Hỏi được trả lại bao nhiêu tiền?
 
 a) Đề này thuộc dạng bài nào?
 b) Dấu hiệu nào giúp em nhận ra?
@@ -330,7 +329,7 @@ f) Lỗi nào dễ mắc ở đề này?
 
 ### Bài 3. (4 điểm) Đọc vị đề số 3
 
-**Đề:** Đọc kĩ rồi trả lời từng câu. Đức có 60 quyển vở, số vở của Dũng kém 6 lần số vở của Đức. Dũng có bao nhiêu quyển vở?
+**Đề:** Đọc kĩ rồi trả lời từng câu. Quân có 34 quyển vở, Ngọc có số vở gấp 5 lần Quân. Ngọc có bao nhiêu quyển vở?
 
 a) Đề này thuộc dạng bài nào?
 b) Dấu hiệu nào giúp em nhận ra?
@@ -341,7 +340,7 @@ f) Lỗi nào dễ mắc ở đề này?
 
 ### Bài 4. (4 điểm) Đọc vị đề số 4
 
-**Đề:** Giải từng bài toán nhỏ. Trung bình mỗi ngày cửa hàng bán được 272 kg gạo. 2 ngày đầu bán được 268, 269 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
+**Đề:** Giải từng bài toán nhỏ. Trung bình mỗi ngày cửa hàng bán được 260 kg gạo. 4 ngày đầu bán được 251, 265, 257, 261 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
 
 a) Đề này thuộc dạng bài nào?
 b) Dấu hiệu nào giúp em nhận ra?
@@ -352,7 +351,7 @@ f) Lỗi nào dễ mắc ở đề này?
 
 ### Bài 5. (4 điểm) Đọc vị đề số 5
 
-**Đề:** Vẽ sơ đồ trước, tính sau. Không vẽ thì không được tính. Sơn và Khánh có tất cả 30 viên bi. Sơn có nhiều hơn Khánh 10 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+**Đề:** Vẽ sơ đồ trước, tính sau. Không vẽ thì không được tính. Sơn và Phúc có tất cả 96 viên bi. Sơn có nhiều hơn Phúc 32 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
 
 a) Đề này thuộc dạng bài nào?
 b) Dấu hiệu nào giúp em nhận ra?
@@ -398,99 +397,99 @@ f) Lỗi nào dễ mắc ở đề này?
 **Lỗi thường gặp:** Điền từng cột rời rạc, không đối chiếu ngang. Phòng: Điền xong thì đọc lại theo hàng, mỗi hàng phải thành một câu có nghĩa.
 
 ### Bài B.1
-**Đáp số:** a) 180 kg · b) 260 kg · c) 1 578 kg · d) 284 kg
-**Hướng giải:** Ba dạng ngược nhau: biết các số tìm trung bình cộng (cộng rồi chia); biết trung bình cộng tìm tổng (nhân); biết trung bình cộng và một số số hạng, tìm số hạng còn thiếu (lấy tổng trừ đi các số đã biết).
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Từ trung bình cộng luôn tìm được **tổng** trước, rồi mới tính tiếp.
-**Lỗi thường gặp:** Đi tìm ngay số còn thiếu mà chưa tính tổng. Phòng: Bước đầu tiên luôn viết: “Tổng = trung bình cộng × số ngày”.
+**Đáp số:** a) 10 cách · b) 6 cách · c) 30 cách · d) 12 cách
+**Hướng giải:** Với mỗi loại bánh có đủ số cách chọn nước, nên tổng số cách bằng số loại bánh nhân số loại nước. Vẽ sơ đồ cây để nhìn thấy điều đó.
+**Nhãn tư duy:** TD2, TD4. Điểm chốt: Hai việc **nối tiếp nhau** thì nhân, không cộng.
+**Lỗi thường gặp:** Cộng số loại bánh với số loại nước. Phòng: Vẽ sơ đồ cây với hai nhánh đầu để thấy rõ.
 
 ### Bài B.2
-**Đáp số:** a) 78 · b) Trang (25 bông) · c) Chi (13 bông) · d) 12 · e) 10
-**Hướng giải:** Đọc bảng theo từng cột, ghi lại các số. Tổng là cộng tất cả; nhiều nhất, ít nhất là so sánh; trung bình cộng là tổng chia số bạn.
-**Nhãn tư duy:** TD1, TD2. Điểm chốt: Đọc **đúng cột** — mỗi số gắn với đúng một tên.
-**Lỗi thường gặp:** Đọc lệch cột nên gán nhầm số cho bạn khác. Phòng: Dùng ngón tay dò theo cột khi đọc bảng.
-
-### Bài B.3
-**Đáp số:** a) hợp tác xã: 47 kg, thư viện: 25 kg · b) đội Một: 401 cây, tổ Một: 203 cây · c) 5C: 294 quyển, 5B: 164 quyển · d) 5C: 292 quyển, 4B: 218 quyển · e) cửa hàng: 98 kg, kho A: 50 kg
-**Hướng giải:** Đọc đề, xác định đâu là **tổng**, đâu là **hiệu**. Vẽ sơ đồ hai đoạn thẳng. Số lớn = (tổng + hiệu) : 2; số bé = tổng − số lớn.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Cụm “có tất cả” cho **tổng**; cụm “nhiều hơn” cho **hiệu**.
-**Lỗi thường gặp:** Nhầm hiệu thành tổng khi đề diễn đạt vòng vo. Phòng: Ghi riêng ra hai dòng: Tổng = … ; Hiệu = … trước khi tính.
-
-### Bài B.4
-**Đáp số:** a) mỗi bạn 5 cái, thừa 3 cái · b) 3 cái · c) 5 cái · d) 6 cái · e) mỗi bạn 6 cái, thừa 1 cái · f) phải là số chia hết cho 8
-**Hướng giải:** Trong phép chia có dư, **số dư luôn bé hơn số chia**. Muốn chia hết thì hoặc bớt đi đúng phần dư, hoặc thêm vào phần còn thiếu để đủ một suất — phần còn thiếu bằng số chia trừ số dư.
-**Nhãn tư duy:** TD1, TD2. Điểm chốt: Thêm vào thì thêm **số chia trừ số dư**, không phải thêm số dư.
-**Lỗi thường gặp:** Nhầm “thêm bao nhiêu” với “bớt bao nhiêu”, cả hai đều lấy số dư. Phòng: Vẽ một hàng ô: phần dư còn thiếu bao nhiêu ô nữa thì đầy một suất?
-
-### Bài B.5
-**Đáp số:** a) Lan: 58 viên, An: 44 viên · b) Bình: 77 viên, Đức: 55 viên · c) An: 12 viên, Vy: 8 viên · d) Chi: 96 viên, Thảo: 62 viên · e) Đức: 43 viên, Quân: 37 viên
+**Đáp số:** a) Quân: 106 viên, Nam: 80 viên · b) Hùng: 43 viên, Ngọc: 35 viên · c) Vy: 31 viên, Tuấn: 19 viên · d) Đức: 113 viên, Vy: 57 viên · e) Lan: 108 viên, Chi: 92 viên
 **Hướng giải:** Vẽ hai đoạn thẳng, đoạn dài hơn đúng phần hiệu. Bớt phần hiệu đi thì hai đoạn bằng nhau; chia đôi tổng mới ra số bé, cộng hiệu ra số lớn.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: **Bớt hiệu rồi mới chia đôi** — đảo thứ tự là sai.
 **Lỗi thường gặp:** Chia đôi tổng ngay rồi cộng hiệu vào cả hai số. Phòng: Tô phần hiệu bằng bút khác màu trên sơ đồ.
 
+### Bài B.3
+**Đáp số:** a) 34 · b) 7 · c) 30 · d) 30 · e) 33 · f) 14 · g) 29
+**Hướng giải:** Tính **số khoảng** trước: độ dài chia khoảng cách. Rồi chọn công thức theo trường hợp — trồng cả hai đầu thì cộng 1, một đầu thì bằng, không đầu nào thì trừ 1, khép kín thì bằng, cưa thành đoạn thì trừ 1.
+**Nhãn tư duy:** TD3, TD6. Điểm chốt: Năm trường hợp cho **năm đáp số khác nhau** với cùng một số khoảng.
+**Lỗi thường gặp:** Máy móc cộng 1 cho mọi trường hợp. Phòng: Vẽ hình ba khoảng, đếm tay rồi mới áp dụng cho số lớn.
+
+### Bài B.4
+**Đáp số:** a) 155 kg · b) 170 kg · c) 876 kg · d) 111 kg · e) 130 kg · f) 820 kg
+**Hướng giải:** Ba dạng ngược nhau: biết các số tìm trung bình cộng (cộng rồi chia); biết trung bình cộng tìm tổng (nhân); biết trung bình cộng và một số số hạng, tìm số hạng còn thiếu (lấy tổng trừ đi các số đã biết).
+**Nhãn tư duy:** TD2, TD3. Điểm chốt: Từ trung bình cộng luôn tìm được **tổng** trước, rồi mới tính tiếp.
+**Lỗi thường gặp:** Đi tìm ngay số còn thiếu mà chưa tính tổng. Phòng: Bước đầu tiên luôn viết: “Tổng = trung bình cộng × số ngày”.
+
+### Bài B.5
+**Đáp số:** a) đội Một: 226 cây, tổ Hai: 142 cây · b) 3B: 280 quyển, 4C: 174 quyển · c) thư viện: 243 kg, trang trại: 179 kg · d) tổ Hai: 92 cây, nhóm Hoa Phượng: 48 cây · e) kho B: 333 kg, thư viện: 315 kg · f) 4B: 423 quyển, 5C: 367 quyển
+**Hướng giải:** Đọc đề, xác định đâu là **tổng**, đâu là **hiệu**. Vẽ sơ đồ hai đoạn thẳng. Số lớn = (tổng + hiệu) : 2; số bé = tổng − số lớn.
+**Nhãn tư duy:** TD2, TD3. Điểm chốt: Cụm “có tất cả” cho **tổng**; cụm “nhiều hơn” cho **hiệu**.
+**Lỗi thường gặp:** Nhầm hiệu thành tổng khi đề diễn đạt vòng vo. Phòng: Ghi riêng ra hai dòng: Tổng = … ; Hiệu = … trước khi tính.
+
 ### Bài C.1
-**Đáp số:** a) 901 dư 3 · b) 4 895 · c) 949 · d) 602 dư 3 · e) 668
-**Hướng giải:** Nhân từ hàng đơn vị sang trái, nhớ sang hàng liền trước. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. Số dư luôn bé hơn số chia.
-**Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là bắt buộc viết một chữ số ở thương.
-**Lỗi thường gặp:** Quên chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
-
-### Bài C.2
-**Đáp số:** a) 40 000 đồng · b) 10 tờ · c) 30 000 đồng · d) 20 tờ · e) 90 000 đồng
-**Hướng giải:** Tính tiền hàng trước bằng phép nhân, rồi mới lấy tiền đưa trừ đi tiền hàng. Đổi tiền là phép chia: tờ lớn chia cho tờ nhỏ.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Phải tính **tiền hàng** trước khi trừ.
-**Lỗi thường gặp:** Lấy tiền đưa trừ ngay giá một quyển vở. Phòng: Viết rõ dòng “Tiền hàng là …” rồi mới sang bước hai.
-
-### Bài C.3
-**Đáp số:** a) 0 · b) x = 327 · c) 2 · d) x = 202 · e) x = 280 · f) 4
-**Hướng giải:** Gọi tên vai trò của x trước: số hạng, số bị trừ hay số trừ. Phép nhân có tính giao hoán và kết hợp; nhân với 1 giữ nguyên, nhân với 0 luôn bằng 0.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu.
-**Lỗi thường gặp:** Áp dụng quy tắc của số trừ cho số bị trừ. Phòng: Viết ra vai trò của x trước khi viết phép tính.
-
-### Bài C.4
-**Đáp số:** a) 250 dư 2 · b) 42 dư 3 · c) 100 dư 1 · d) 271 dư 5 · e) 368 dư 2 · f) 108 dư 4 · g) 381 dư 2
-**Hướng giải:** Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
-**Nhãn tư duy:** TD1. Điểm chốt: Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
-**Lỗi thường gặp:** Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. Phòng: Thử lại bằng công thức số bị chia = số chia × thương + số dư.
-
-### Bài C.5
-**Đáp số:** a) 8 · b) 16 · c) 36 · d) Tuấn (16) · e) Hà (4) · f) 12 · g) 6 hình
+**Đáp số:** a) 14 · b) 12 · c) 46 · d) Hùng (14) · e) Nam (6) · f) 8 · g) 6 hình
 **Hướng giải:** Việc đầu tiên khi đọc biểu đồ tranh là đọc **chú thích**: mỗi hình ứng với bao nhiêu đơn vị. Sau đó nhân số hình với số ấy. Muốn lập biểu đồ thì làm ngược lại: chia số thật cho số đơn vị mỗi hình.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Mỗi hình **không phải một đơn vị** — phải đọc chú thích trước.
 **Lỗi thường gặp:** Đếm số hình rồi trả lời luôn, quên nhân với số đơn vị mỗi hình. Phòng: Khoanh tròn dòng chú thích trước khi trả lời bất kỳ câu nào.
 
+### Bài C.2
+**Đáp số:** a) mỗi bạn 3 cái, thừa 8 cái · b) 8 cái · c) 1 cái · d) 4 cái · e) mỗi bạn 4 cái, thừa 3 cái · f) phải là số chia hết cho 9
+**Hướng giải:** Trong phép chia có dư, **số dư luôn bé hơn số chia**. Muốn chia hết thì hoặc bớt đi đúng phần dư, hoặc thêm vào phần còn thiếu để đủ một suất — phần còn thiếu bằng số chia trừ số dư.
+**Nhãn tư duy:** TD1, TD2. Điểm chốt: Thêm vào thì thêm **số chia trừ số dư**, không phải thêm số dư.
+**Lỗi thường gặp:** Nhầm “thêm bao nhiêu” với “bớt bao nhiêu”, cả hai đều lấy số dư. Phòng: Vẽ một hàng ô: phần dư còn thiếu bao nhiêu ô nữa thì đầy một suất?
+
+### Bài C.3
+**Đáp số:** a) 7 · b) (33 − 1) : 2 + 1 = 17 nhà · c) 1 + (8 − 1) × 2 = 15 · d) (31 − 1) : 2 + 1 = 16 · e) số lẻ — bắt đầu từ một số lẻ rồi cứ cộng thêm 2, cộng 2 không làm đổi tính chẵn lẻ
+**Hướng giải:** Dãy số nhà là dãy cách đều. Số hạng thứ k bằng số đầu cộng (k − 1) lần khoảng cách; còn **số lượng số hạng** bằng số khoảng cách cộng 1.
+**Nhãn tư duy:** TD2, TD4. Điểm chốt: Số khoảng cách luôn ít hơn số vật đúng 1 — quên cộng 1 là mất bài.
+**Lỗi thường gặp:** Lấy (số cuối − số đầu) : 2 rồi trả lời luôn. Phòng: Thử với dãy ngắn: 1, 3, 5 có 3 số nhưng chỉ 2 khoảng.
+
+### Bài C.4
+**Đáp số:** a) 6 · b) 0 · c) x = 336 · d) x = 495 · e) x = 155 · f) 0 · g) x = 190
+**Hướng giải:** Gọi tên vai trò của x trước: số hạng, số bị trừ hay số trừ. Phép nhân có tính giao hoán và kết hợp; nhân với 1 giữ nguyên, nhân với 0 luôn bằng 0.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu.
+**Lỗi thường gặp:** Áp dụng quy tắc của số trừ cho số bị trừ. Phòng: Viết ra vai trò của x trước khi viết phép tính.
+
+### Bài C.5
+**Đáp số:** a) 292 · b) 281 · c) 395 · d) 200 · e) 220
+**Hướng giải:** Dùng tính chất giao hoán và kết hợp của phép cộng để đổi chỗ, nhóm những số cộng lại thành số tròn chục, tròn trăm rồi mới cộng phần còn lại.
+**Nhãn tư duy:** TD5, TD3. Điểm chốt: Tìm **cặp cộng tròn 100** trước khi cộng theo thứ tự.
+**Lỗi thường gặp:** Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. Phòng: Đọc lướt cả dãy, khoanh tròn cặp số cộng lại tròn chục, tròn trăm.
+
 ### Bài D.1
-**Đáp số:** a) tổ Một: 20 cây, đội Một: 60 cây · b) đội Một: 4 cây, nhóm Hoa Phượng: 16 cây · c) 1 phần 3 · d) đội Một: 24 cây, nhóm Sao Mai: 120 cây · e) 1 phần 3
-**Hướng giải:** BẪY — Tổng số phần hay hiệu số phần. Tỉ số cho biết số phần bằng nhau. Bài cho tổng thì chia tổng cho **tổng số phần**; bài cho hiệu thì chia hiệu cho **hiệu số phần**. So sánh một phần mấy là lấy số bé chia số lớn.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Cho tổng thì chia cho tổng số phần, cho hiệu thì chia cho hiệu số phần.
-**Lỗi thường gặp:** Dùng nhầm công thức tổng – tỉ cho bài hiệu – tỉ. Phòng: Gạch chân “có tất cả” hay “nhiều hơn” trước khi vẽ sơ đồ.
-**Gợi ý 3 tầng:** (1) Vẽ mỗi tổ mấy phần bằng nhau? — (2) Đề cho tổng hay cho hiệu? — (3) Một phần bằng bao nhiêu?
+**Đáp số:** a) 8 · b) 3 đường ngang, 5 đường dọc · c) 30 · d) 11 · e) 19
+**Hướng giải:** BẪY — Bỏ sót hình ghép. Chọn hai đường kẻ ngang và hai đường kẻ dọc thì được đúng một hình chữ nhật. Số cách chọn 2 trong k đường là k × (k − 1) : 2. Đếm hình vuông thì đếm theo từng cỡ cạnh 1, 2, 3…
+**Nhãn tư duy:** TD4, TD3. Điểm chốt: Đếm **theo cỡ** hoặc **theo đường kẻ** — không đếm mò.
+**Lỗi thường gặp:** Chỉ đếm ô nhỏ, quên hình ghép từ nhiều ô. Phòng: Kẻ bảng theo cỡ hình rồi cộng.
+**Gợi ý 3 tầng:** (1) Lưới có bao nhiêu đường kẻ mỗi chiều? — (2) Chọn hai đường ngang và hai đường dọc được gì? — (3) Đếm hình vuông theo từng cỡ cạnh.
 
 ### Bài D.2
-**Đáp số:** a) 31 · b) 10 · c) 18 · d) 2 · e) 34 · f) 3, vì nhóm thích cả hai môn bị đếm hai lần
-**Hướng giải:** BẪY — Phần chung bị đếm hai lần. Vẽ sơ đồ Ven hai vòng tròn. **Điền miền giữa trước**, rồi trừ ra hai miền riêng. Cộng thẳng hai nhóm sẽ đếm nhóm chung **hai lần**, nên phải trừ đi một lần.
-**Nhãn tư duy:** TD2, TD6. Điểm chốt: Điền **miền giữa trước** — mọi miền khác suy ra từ đó.
-**Lỗi thường gặp:** Cộng thẳng hai nhóm rồi coi đó là số bạn thích ít nhất một môn. Phòng: Vẽ sơ đồ Ven, ghi số vào từng miền rồi cộng lại kiểm tra với sĩ số.
-**Gợi ý 3 tầng:** (1) Bao nhiêu bạn thích cả hai môn? — (2) Chỉ thích Toán thì bằng số thích Toán trừ đi đâu? — (3) Cộng ba miền lại rồi lấy sĩ số trừ đi.
-
-### Bài D.3
-**Đáp số:** a) 68 cây · b) 259 cây · c) 357 cây · d) 180 cây · e) 120 cây · f) 185 cây
+**Đáp số:** a) 72 cây · b) 212 cây · c) 72 cây · d) 138 cây · e) 350 cây
 **Hướng giải:** BẪY — Đọc kĩ câu hỏi cuối. Bước 1: tìm đại lượng chưa biết bằng quan hệ gấp – kém. Bước 2: cộng hai đại lượng lại theo yêu cầu của đề. Mỗi bước phải có một câu lời giải riêng.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Câu hỏi cuối hỏi **cả hai tổ**, nên phải cộng ở bước hai.
 **Lỗi thường gặp:** Dừng lại ở bước một, trả lời số cây của một tổ. Phòng: Đọc lại câu hỏi sau khi tính xong bước một.
 **Gợi ý 3 tầng:** (1) Tổ thứ hai trồng được bao nhiêu cây? — (2) Đề hỏi số cây của một tổ hay cả hai tổ? — (3) Cộng hai kết quả lại.
 
-### Bài D.4
-**Đáp số:** a) không (tận cùng là 5) · b) không (tổng các chữ số bằng 19) · c) không (tổng các chữ số bằng 7) · d) không (tận cùng là 7) · e) không (tận cùng là 6) · f) không (tổng các chữ số bằng 22) · g) không (tổng các chữ số bằng 12) · h) có (tận cùng là 4)
+### Bài D.3
+**Đáp số:** a) không (tổng các chữ số bằng 13) · b) không (tận cùng là 5) · c) có (tận cùng là 0) · d) có (tổng các chữ số bằng 18) · e) không (tổng các chữ số bằng 28) · f) không (tận cùng là 1)
 **Hướng giải:** BẪY — Dấu hiệu của 2, 5 khác hẳn dấu hiệu của 3, 9. Chia hết cho 2: tận cùng 0, 2, 4, 6, 8. Chia hết cho 5: tận cùng 0 hoặc 5. Chia hết cho 3 hoặc 9: cộng các chữ số rồi xét tổng.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: 2 và 5 nhìn **đuôi**; 3 và 9 nhìn **tổng**.
 **Lỗi thường gặp:** Dùng dấu hiệu của 3 để kết luận cho 2. Phòng: Ghi tổng các chữ số ra bên cạnh trước khi kết luận.
 **Gợi ý 3 tầng:** (1) Số chia là 2 hay 5 thì nhìn chữ số cuối. — (2) Số chia là 3 hay 9 thì cộng các chữ số. — (3) Tổng vẫn còn lớn thì cộng tiếp một lần nữa.
 
-### Bài D.5
-**Đáp số:** a) 31 · b) không · c) Chủ nhật · d) 4 · e) Thứ Tư · f) 365 ngày và 366 ngày
-**Hướng giải:** Các tháng 1, 3, 5, 7, 8, 10, 12 có 31 ngày; tháng 4, 6, 9, 11 có 30 ngày; tháng 2 có 28 ngày, năm nhuận 29 ngày. Thứ trong tuần lặp lại sau mỗi 7 ngày, nên chia cho 7 lấy số dư.
+### Bài D.4
+**Đáp số:** a) 31 · b) không · c) Thứ Ba · d) 4 · e) Thứ Tư · f) 365 ngày và 366 ngày
+**Hướng giải:** BẪY — Tháng 2 và năm nhuận. Các tháng 1, 3, 5, 7, 8, 10, 12 có 31 ngày; tháng 4, 6, 9, 11 có 30 ngày; tháng 2 có 28 ngày, năm nhuận 29 ngày. Thứ trong tuần lặp lại sau mỗi 7 ngày, nên chia cho 7 lấy số dư.
 **Nhãn tư duy:** TD4, TD1. Điểm chốt: Thứ trong tuần **tuần hoàn chu kì 7** — chia lấy dư là ra.
 **Lỗi thường gặp:** Đếm tay từng ngày nên vừa lâu vừa sai. Phòng: Đếm số ngày cách nhau rồi chia 7 lấy dư.
 **Gợi ý 3 tầng:** (1) Tháng này có bao nhiêu ngày? — (2) Từ ngày 1 đến ngày cần tìm cách nhau bao nhiêu ngày? — (3) Chia số đó cho 7 và lấy số dư.
+
+### Bài D.5
+**Đáp số:** a) tổ Hai: 17 cây, tổ Ba: 34 cây · b) 1 phần 2 · c) nhóm Hoa Phượng: 18 cây, tổ Một: 36 cây · d) đội Một: 6 cây, nhóm Hoa Phượng: 30 cây · e) đội Hai: 4 cây, tổ Hai: 12 cây
+**Hướng giải:** Tỉ số cho biết số phần bằng nhau. Bài cho tổng thì chia tổng cho **tổng số phần**; bài cho hiệu thì chia hiệu cho **hiệu số phần**. So sánh một phần mấy là lấy số bé chia số lớn.
+**Nhãn tư duy:** TD3, TD2. Điểm chốt: Cho tổng thì chia cho tổng số phần, cho hiệu thì chia cho hiệu số phần.
+**Lỗi thường gặp:** Dùng nhầm công thức tổng – tỉ cho bài hiệu – tỉ. Phòng: Gạch chân “có tất cả” hay “nhiều hơn” trước khi vẽ sơ đồ.
+**Gợi ý 3 tầng:** (1) Vẽ mỗi tổ mấy phần bằng nhau? — (2) Đề cho tổng hay cho hiệu? — (3) Một phần bằng bao nhiêu?
 
 ### Bài E.1
 **Đáp số:** a) Toán điển hình: gấp, kém, nhiều hơn, ít hơn · b) “Gấp … lần”, “nhiều hơn”, “cho thêm”, “để bằng nhau” · c) Bốn quan hệ cơ bản; phép cộng, trừ, nhân, chia · d) Tính từng bước, bám vào tổng có đổi hay không · e) Cho thêm: thêm đúng hiệu. Chuyển qua lại: chuyển nửa hiệu. · f) Nhầm hai tình huống: cho thêm và chuyển qua lại.

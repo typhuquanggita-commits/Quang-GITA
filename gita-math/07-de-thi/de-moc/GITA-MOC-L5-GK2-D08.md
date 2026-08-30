@@ -30,60 +30,57 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Đặt tính rồi tính.
 
-a) 74 885 × 352
-b) 3 908 631 : 109
-c) 87 470 × 75
-d) 2 145 264 : 102
-e) 9 741 600 : 288
-f) 35 572 631 : 953
+a) 42 346 731 : 813
+b) 6 415 980 : 244
+c) 79 189 × 50
+d) 21 101 × 997
+e) 57 872 × 480
+f) 82 657 × 161
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
 Điền dấu <, >, = thích hợp.
 
-a) 55 dm² … 4 431 m²
-b) 60 hm … 3 773 m
-c) 61 hg … 7 875 tạ
-d) 84 hm … 5 887 km
-e) 54 kg … 8 060 tấn
-f) 83 m² … 3 280 km²
+a) 22 dm² … 4 657 ha
+b) 80 dag … 3 570 g
+c) 50 km … 6 936 hm
+d) 32 tấn … 4 096 tạ
+e) 44 m² … 3 603 dm²
+f) 53 m … 5 332 dam
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
 Ghi rõ đại lượng nào ứng với 100%.
 
-a) Một món hàng giá 240 000 đồng, tăng giá 20%. Giá mới là bao nhiêu?
-b) Mua một món hàng 150 000 đồng rồi bán 187 500 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
-c) Một chiếc cặp giá 300 000 đồng được giảm 40%. Hỏi giá sau khi giảm là bao nhiêu?
-d) Một chiếc cặp giá 400 000 đồng được giảm 10%. Hỏi giá sau khi giảm là bao nhiêu?
-e) Mua một món hàng 300 000 đồng rồi bán 315 000 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
-f) Một món hàng giá 240 000 đồng, tăng giá 40%. Giá mới là bao nhiêu?
+a) Một món hàng giá 300 000 đồng, tăng giá 5%. Giá mới là bao nhiêu?
+b) Một chiếc cặp giá 300 000 đồng được giảm 20%. Hỏi giá sau khi giảm là bao nhiêu?
+c) Mua một món hàng 80 000 đồng rồi bán 100 000 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
+d) Một món hàng giá 150 000 đồng, tăng giá 5%. Giá mới là bao nhiêu?
+e) Mua một món hàng 240 000 đồng rồi bán 288 000 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
 Ghi rõ đơn vị: cm² cho diện tích, cm³ cho thể tích.
 
-a) Hình hộp chữ nhật có đáy 3 cm × 13 cm, chiều cao 5 cm. Tính diện tích xung quanh.
-b) Hình lập phương có cạnh 18 cm. Tính thể tích và diện tích toàn phần.
-c) Hình hộp chữ nhật có đáy 16 cm × 9 cm, chiều cao 10 cm. Tính diện tích toàn phần.
-d) Hình hộp chữ nhật có ba kích thước 17 cm, 6 cm, 7 cm. Tính thể tích.
-e) Hình lập phương có cạnh 4 cm. Tính thể tích và diện tích toàn phần.
-f) Hình hộp chữ nhật có ba kích thước 16 cm, 20 cm, 12 cm. Tính thể tích.
+a) Hình hộp chữ nhật có đáy 11 cm × 2 cm, chiều cao 3 cm. Tính diện tích xung quanh.
+b) Hình hộp chữ nhật có ba kích thước 14 cm, 11 cm, 14 cm. Tính thể tích.
+c) Hình hộp chữ nhật có đáy 3 cm × 16 cm, chiều cao 7 cm. Tính diện tích toàn phần.
+d) Hình lập phương có cạnh 7 cm. Tính thể tích và diện tích toàn phần.
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
-Tính thời gian gặp nhau trước.
+Dùng kĩ thuật tô màu để lập luận.
 
-a) Hai xe đi ngược chiều từ hai địa điểm cách nhau 171 km, vận tốc 45 km/giờ và 12 km/giờ. Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
-b) Hai xe đi ngược chiều từ hai địa điểm cách nhau 198 km, vận tốc 36 km/giờ và 30 km/giờ. Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
-c) Hai xe đi ngược chiều từ hai địa điểm cách nhau 375 km, vận tốc 45 km/giờ và 30 km/giờ. Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
-d) Hai xe đi ngược chiều từ hai địa điểm cách nhau 204 km, vận tốc 36 km/giờ và 15 km/giờ. Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
-e) Hai xe đi ngược chiều từ hai địa điểm cách nhau 390 km, vận tốc 48 km/giờ và 30 km/giờ. Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
-f) Hai xe đi ngược chiều từ hai địa điểm cách nhau 300 km, vận tốc 45 km/giờ và 30 km/giờ. Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
+a) Một bàn cờ vuông 6 × 6 ô. Hỏi có tất cả bao nhiêu ô?
+b) Tô màu xen kẽ đen trắng như bàn cờ vua thì có bao nhiêu ô đen?
+c) Một quân đô-mi-nô phủ đúng 2 ô liền nhau. Có thể phủ kín cả bàn cờ 6 × 6 bằng các quân đô-mi-nô không?
+d) Mỗi quân đô-mi-nô luôn phủ mấy ô đen và mấy ô trắng?
+e) Nếu bỏ đi hai ô ở hai góc đối diện của bàn cờ 6 × 6 (hai ô này cùng màu) thì còn phủ kín được không?
+f) Đại lượng bất biến dùng ở đây là gì?
 
 
 ---
@@ -93,36 +90,36 @@ f) Hai xe đi ngược chiều từ hai địa điểm cách nhau 300 km, vận 
 
 ### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **26 359 520**
-b) **35 859**
-c) **6 560 250**
-d) **21 032**
-e) **33 825**
-f) **37 327**
+a) **52 087**
+b) **26 295**
+c) **3 959 450**
+d) **21 037 697**
+e) **27 778 560**
+f) **13 307 777**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 74 885 × 352
+1. Xét ý a: 42 346 731 : 813
 2. Đọc vị: đây là dạng **Nhân, chia số tự nhiên**; dấu hiệu là Yêu cầu “đặt tính rồi tính” với phép nhân, chia.
 3. Kiến thức phải dùng: Kĩ thuật đặt tính nhân, chia.
 4. Cách làm: Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ chữ số.
 5. Lối tắt: Kiểm tra kết quả bằng phép tính ngược: thương × số chia = số bị chia.
-6. Kết quả: **26 359 520**.
+6. Kết quả: **52 087**.
 
 *Lỗi hay mắc:* Quên viết chữ số 0 ở thương nên thương thiếu chữ số.
 
 ### Bài 2, (2 điểm — mỗi ý 0,33 điểm)
 
 a) **<**
-b) **>**
+b) **<**
 c) **<**
 d) **<**
-e) **<**
+e) **>**
 f) **<**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 55 dm² … 4 431 m²
+1. Xét ý a: 22 dm² … 4 657 ha
 2. Đọc vị: đây là dạng **So sánh số đo đại lượng**; dấu hiệu là Hai vế có đơn vị khác nhau.
 3. Kiến thức phải dùng: Bảng đơn vị đo, so sánh số tự nhiên.
 4. Cách làm: Đổi về cùng đơn vị rồi so sánh.
@@ -131,65 +128,62 @@ f) **<**
 
 *Lỗi hay mắc:* So thẳng hai con số, bỏ qua đơn vị.
 
-### Bài 3, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 3, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **288 000 đồng**
-b) **25%**
-c) **180 000 đồng**
-d) **360 000 đồng**
-e) **5%**
-f) **336 000 đồng**
+a) **315 000 đồng**
+b) **240 000 đồng**
+c) **25%**
+d) **157 500 đồng**
+e) **20%**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Một món hàng giá 240 000 đồng, tăng giá 20%. Giá mới là bao nhiêu?
+1. Xét ý a: Một món hàng giá 300 000 đồng, tăng giá 5%. Giá mới là bao nhiêu?
 2. Đọc vị: đây là dạng **Tỉ số phần trăm trong mua bán**; dấu hiệu là Từ khoá “giảm giá”, “tăng giá”, “lãi”, “lỗ”.
 3. Kiến thức phải dùng: Tỉ số phần trăm, mốc quy chiếu 100%.
 4. Cách làm: Chốt mốc 100% rồi cộng trừ phần trăm.
 5. Lối tắt: Giảm 20% nghĩa là còn 80% — nhân thẳng một lần thay vì trừ hai bước.
-6. Kết quả: **288 000 đồng**.
+6. Kết quả: **315 000 đồng**.
 
 *Lỗi hay mắc:* Chia tiền lãi cho giá bán nên ra tỉ lệ nhỏ hơn thực tế.
 
-### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 4, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **160 cm²**
-b) **thể tích 5 832 cm³, diện tích toàn phần 1 944 cm²**
-c) **788 cm²**
-d) **714 cm³**
-e) **thể tích 64 cm³, diện tích toàn phần 96 cm²**
-f) **3 840 cm³**
+a) **78 cm²**
+b) **2 156 cm³**
+c) **362 cm²**
+d) **thể tích 343 cm³, diện tích toàn phần 294 cm²**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Hình hộp chữ nhật có đáy 3 cm × 13 cm, chiều cao 5 cm. Tính diện tích xung quanh.
+1. Xét ý a: Hình hộp chữ nhật có đáy 11 cm × 2 cm, chiều cao 3 cm. Tính diện tích xung quanh.
 2. Đọc vị: đây là dạng **Hình hộp chữ nhật, hình lập phương**; dấu hiệu là Đề cho ba kích thước hoặc cạnh hình lập phương.
 3. Kiến thức phải dùng: Công thức thể tích, diện tích xung quanh, toàn phần.
 4. Cách làm: Xác định loại diện tích cần tính, đếm đủ số mặt.
 5. Lối tắt: Hình lập phương cạnh a: toàn phần 6 × a × a, thể tích a × a × a.
-6. Kết quả: **160 cm²**.
+6. Kết quả: **78 cm²**.
 
 *Lỗi hay mắc:* Cộng thiếu một mặt đáy khi tính diện tích toàn phần.
 
 ### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **135 km**
-b) **108 km**
-c) **225 km**
-d) **144 km**
-e) **240 km**
-f) **180 km**
+a) **36**
+b) **18**
+c) **có**
+d) **1 ô đen và 1 ô trắng**
+e) **không, vì số ô đen và ô trắng không còn bằng nhau**
+f) **hiệu giữa số ô đen và số ô trắng chưa bị phủ**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Hai xe đi ngược chiều từ hai địa điểm cách nhau 171 km, vận tốc 45 km/giờ và 12 km/giờ. Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
-2. Đọc vị: đây là dạng **Chuyển động ngược chiều, tính quãng đường từng xe**; dấu hiệu là Hỏi quãng đường **của một xe** tính đến lúc gặp nhau.
-3. Kiến thức phải dùng: Quãng đường – vận tốc – thời gian, tỉ lệ thuận.
-4. Cách làm: Thời gian gặp → quãng đường từng xe.
-5. Lối tắt: Quãng đường hai xe đi tỉ lệ thuận với vận tốc — chia quãng cách theo tỉ số vận tốc là ra ngay.
-6. Kết quả: **135 km**.
+1. Xét ý a: Một bàn cờ vuông 6 × 6 ô. Hỏi có tất cả bao nhiêu ô?
+2. Đọc vị: đây là dạng **Tô màu, bất biến trên bàn cờ**; dấu hiệu là Bàn cờ, quân đô-mi-nô, câu hỏi “có thể phủ kín không”.
+3. Kiến thức phải dùng: Kĩ thuật tô màu, bất biến, tính chẵn lẻ.
+4. Cách làm: Tô màu xen kẽ, đếm hai màu, so sánh.
+5. Lối tắt: Hai ô ở hai góc đối diện của bàn cờ luôn cùng màu.
+6. Kết quả: **36**.
 
-*Lỗi hay mắc:* Chia quãng đường theo tỉ lệ sai, hoặc lấy quãng đường chia đôi.
+*Lỗi hay mắc:* Thử xếp bằng tay rồi kết luận “không xếp được” mà không chứng minh.
 
 ---
 
@@ -203,7 +197,7 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài 2 | So sánh số đo đại lượng | So thẳng hai con số, bỏ qua đơn vị. | Nhóm chuyên đề **—** · mức — |
 | Bài 3 | Tỉ số phần trăm trong mua bán | Chia tiền lãi cho giá bán nên ra tỉ lệ nhỏ hơn thực tế. | Nhóm chuyên đề **—** · mức — |
 | Bài 4 | Hình hộp chữ nhật, hình lập phương | Cộng thiếu một mặt đáy khi tính diện tích toàn phần. | Nhóm chuyên đề **—** · mức — |
-| Bài 5 | Chuyển động ngược chiều, tính quãng đường từng xe | Chia quãng đường theo tỉ lệ sai, hoặc lấy quãng đường chia đôi. | Nhóm chuyên đề **—** · mức — |
+| Bài 5 | Tô màu, bất biến trên bàn cờ | Thử xếp bằng tay rồi kết luận “không xếp được” mà không chứng minh. | Nhóm chuyên đề **—** · mức — |
 
 ---
 

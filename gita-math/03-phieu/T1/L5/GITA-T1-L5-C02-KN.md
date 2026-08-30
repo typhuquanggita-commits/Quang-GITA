@@ -51,55 +51,56 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — CỦNG CỐ NỀN — 30 CÂU TỐC ĐỘ · Mức M1 — Nhận biết · 20 phút · 25 điểm
 
-### Bài 1. (5 điểm) Đơn vị đo thời gian: giờ và phút
+### Bài 1. (5 điểm) Đặt tính rồi tính (cộng, trừ)
 
-Điền kết quả, viết dạng giờ và phút.
+Đặt tính rồi tính.
 
-a) 8 giờ 33 phút − 410 phút = … (viết dạng giờ và phút)
-b) 4 giờ 35 phút + 31 phút = … (viết dạng giờ và phút)
-c) 449 phút = … giờ … phút
-d) 5 giờ 22 phút = … phút
+a) 700 185 − 454 958
+b) 927 075 + 931 007
+c) 723 419 + 203 685
+d) 146 068 − 106 761
+e) 323 386 + 331 204
 
-### Bài 2. (5 điểm) Đổi đơn vị đo độ dài và khối lượng
-
-Điền số thích hợp vào chỗ chấm.
-
-a) 39 yến = … hg
-b) 41 km = … m
-c) 86 tạ = … g
-d) 32 hm = … cm
-e) 50 yến = … g
-
-### Bài 3. (5 điểm) Đổi số đo khối lượng có nhiều đơn vị
+### Bài 2. (5 điểm) Đổi số đo khối lượng có nhiều đơn vị
 
 Điền vào chỗ chấm.
 
-a) 6 142 kg = … tấn … tạ … kg
-b) 5 tấn 7 tạ 78 kg = … kg
-c) 4 421 kg = … tấn … tạ … kg
-d) 1 632 kg = … tấn … tạ … kg
-e) 4 516 kg = … tấn … tạ … kg
+a) 806 kg = … tấn … tạ … kg
+b) 236 kg = … tấn … tạ … kg
+c) 4 905 kg = … tấn … tạ … kg
+d) 2 917 kg = … tấn … tạ … kg
+e) 6 tấn 1 tạ 81 kg = … kg
+f) 2 015 kg = … tấn … tạ … kg
 
-### Bài 4. (5 điểm) Chu vi và diện tích hình chữ nhật, hình vuông
-
-Tính theo yêu cầu, ghi rõ đơn vị.
-
-a) Hình vuông có cạnh 48 cm. Tính diện tích.
-b) Hình chữ nhật có chiều dài 57 cm, chiều rộng 5 cm. Tính diện tích.
-c) Hình vuông có cạnh 14 cm. Tính chu vi.
-d) Hình chữ nhật có chiều dài 27 cm, chiều rộng 12 cm. Tính chu vi.
-e) Hình chữ nhật có chiều dài 18 cm, chiều rộng 17 cm. Tính diện tích.
-f) Hình vuông có cạnh 53 cm. Tính chu vi.
-g) Hình vuông có cạnh 11 cm. Tính diện tích.
-
-### Bài 5. (5 điểm) Đổi đơn vị đo diện tích
+### Bài 3. (5 điểm) Đổi đơn vị đo diện tích
 
 Điền số thích hợp.
 
-a) 70 m² = … dm²
-b) 17 m² = … cm²
-c) 61 km² = … ha
-d) 74 m² = … dm²
+a) 74 m² = … dm²
+b) 89 km² = … ha
+c) 53 km² = … ha
+d) 61 km² = … ha
+e) 51 km² = … ha
+
+### Bài 4. (5 điểm) Đổi đơn vị đo độ dài và khối lượng
+
+Điền số thích hợp vào chỗ chấm.
+
+a) 88 tạ = … kg
+b) 55 hm = … m
+c) 52 dam = … mm
+d) 42 yến = … kg
+e) 87 hm = … m
+f) 42 tấn = … hg
+
+### Bài 5. (5 điểm) Đơn vị đo thời gian: giờ và phút
+
+Điền kết quả, viết dạng giờ và phút.
+
+a) 297 phút = … giờ … phút
+b) 3 giờ 26 phút + 147 phút = … (viết dạng giờ và phút)
+c) 2 giờ 31 phút − 105 phút = … (viết dạng giờ và phút)
+d) 5 giờ 46 phút = … phút
 
 ---
 
@@ -331,34 +332,34 @@ f) Mẹo nhanh em sẽ tặng lớp?
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài A.1
-**Đáp số:** a) 1 giờ 43 phút · b) 5 giờ 6 phút · c) 7 giờ 29 phút · d) 322
-**Hướng giải:** BẪY — Cơ số 60 chứ không phải 10. 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
-**Lỗi thường gặp:** Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. Phòng: Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không.
+**Đáp số:** a) 245 227 · b) 1 858 082 · c) 927 104 · d) 39 307 · e) 654 590
+**Hướng giải:** Viết các số thẳng hàng theo đúng hàng đơn vị, cộng hoặc trừ từ phải sang trái, nhớ sang hàng liền trước khi tổng vượt quá 9 hoặc khi phải mượn.
+**Nhãn tư duy:** TD1. Điểm chốt: Thẳng hàng **đơn vị**, không thẳng theo chữ số đầu.
+**Lỗi thường gặp:** Viết lệch hàng khi hai số có số chữ số khác nhau. Phòng: Kẻ cột dọc cho từng hàng trước khi viết số.
 
 ### Bài A.2
-**Đáp số:** a) 3 900 · b) 41 000 · c) 8 600 000 · d) 320 000 · e) 500 000
-**Hướng giải:** BẪY — Chiều đổi đơn vị. Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
-**Nhãn tư duy:** TD1. Điểm chốt: Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
-**Lỗi thường gặp:** Đổi ngược chiều nên nhân thành chia. Phòng: Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.
-
-### Bài A.3
-**Đáp số:** a) 6 tấn 1 tạ 42 kg · b) 5 778 · c) 4 tấn 4 tạ 21 kg · d) 1 tấn 6 tạ 32 kg · e) 4 tấn 5 tạ 16 kg
+**Đáp số:** a) 8 tạ 6 kg · b) 2 tạ 36 kg · c) 4 tấn 9 tạ 5 kg · d) 2 tấn 9 tạ 17 kg · e) 6 181 · f) 2 tấn 15 kg
 **Hướng giải:** 1 tấn = 10 tạ = 1 000 kg; 1 tạ = 100 kg; 1 yến = 10 kg. Đổi tất cả về ki-lô-gam rồi cộng lại; hoặc ngược lại, chia dần từ đơn vị lớn xuống đơn vị bé và lấy phần dư.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Đổi hết về **một đơn vị chung** trước khi cộng.
 **Lỗi thường gặp:** Cộng thẳng các số đứng trước những đơn vị khác nhau. Phòng: Viết mỗi thành phần thành số ki-lô-gam ngay bên dưới rồi mới cộng.
 
-### Bài A.4
-**Đáp số:** a) 2 304 cm² · b) 285 cm² · c) 56 cm · d) 78 cm · e) 306 cm² · f) 212 cm · g) 121 cm²
-**Hướng giải:** Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích hình chữ nhật = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi ghi đơn vị **cm**, diện tích ghi đơn vị **cm²** — sai đơn vị là mất điểm.
-**Lỗi thường gặp:** Nhầm công thức chu vi với diện tích; quên nhân 2 ở chu vi. Phòng: Vẽ hình và ghi số đo lên hình trước khi tính.
-
-### Bài A.5
-**Đáp số:** a) 7 000 · b) 170 000 · c) 6 100 · d) 7 400
-**Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần** (chứ không phải 10 lần như đơn vị độ dài), vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
+### Bài A.3
+**Đáp số:** a) 7 400 · b) 8 900 · c) 5 300 · d) 6 100 · e) 5 100
+**Hướng giải:** BẪY — 100 lần chứ không phải 10 lần. Hai đơn vị diện tích liền kề hơn kém nhau **100 lần** (chứ không phải 10 lần như đơn vị độ dài), vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc.
 **Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết bảng đơn vị diện tích riêng, ghi rõ “×100” giữa hai bậc.
+
+### Bài A.4
+**Đáp số:** a) 8 800 · b) 5 500 · c) 520 000 · d) 420 · e) 8 700 · f) 420 000
+**Hướng giải:** BẪY — Chiều đổi đơn vị. Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
+**Nhãn tư duy:** TD1. Điểm chốt: Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
+**Lỗi thường gặp:** Đổi ngược chiều nên nhân thành chia. Phòng: Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.
+
+### Bài A.5
+**Đáp số:** a) 4 giờ 57 phút · b) 5 giờ 53 phút · c) 46 phút · d) 346
+**Hướng giải:** 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
+**Lỗi thường gặp:** Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. Phòng: Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không.
 
 ### Bài B.1
 **Đáp số:** a) câu lời giải nêu rõ đang tìm đại lượng nào · b) phép tính, viết đủ dấu và đủ đơn vị · c) kết quả kèm đơn vị · d) câu đáp số · e) một phần tư số điểm của bài

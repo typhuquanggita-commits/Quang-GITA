@@ -55,55 +55,55 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Điền số thích hợp vào chỗ chấm.
 
-a) 90 km = … cm
-b) 47 hg = … g
-c) 13 kg = … dag
-d) 85 dam = … dm
-e) 63 hm = … dm
-f) 51 kg = … dag
+a) 61 kg = … hg
+b) 57 cm = … mm
+c) 75 tạ = … hg
+d) 64 m = … cm
+e) 59 dam = … mm
+f) 14 tấn = … dag
 
-### Bài 2. (5 điểm) Quãng đường – vận tốc – thời gian
+### Bài 2. (5 điểm) Đếm chữ số và tính tổng các chữ số
 
-Ghi rõ đơn vị của từng đại lượng.
+Với mỗi số dưới đây, trả lời đủ hai ý.
 
-a) Một người đi quãng đường 108 km với vận tốc 36 km/giờ. Tính thời gian đi.
-b) Một người đi 80 km hết 2 giờ. Tính vận tốc.
-c) Một người đi xe đạp với vận tốc 36 km/giờ trong 6 giờ. Tính quãng đường đi được.
-d) Một người đi xe đạp với vận tốc 15 km/giờ trong 5 giờ. Tính quãng đường đi được.
-e) Một người đi 144 km hết 4 giờ. Tính vận tốc.
+a) Số 648 761 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
+b) Số 1 346 295 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
+c) Số 7 794 924 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
+d) Số 3 730 699 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
+e) Số 320 814 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
 
-### Bài 3. (5 điểm) Đơn vị đo thời gian: giờ và phút
-
-Điền kết quả, viết dạng giờ và phút.
-
-a) 290 phút = … giờ … phút
-b) 4 giờ 7 phút = … phút
-c) 8 giờ 18 phút − 195 phút = … (viết dạng giờ và phút)
-d) 3 giờ 49 phút + 62 phút = … (viết dạng giờ và phút)
-e) 110 phút = … giờ … phút
-f) 2 giờ 54 phút − 99 phút = … (viết dạng giờ và phút)
-
-### Bài 4. (5 điểm) Đổi đơn vị đo diện tích
+### Bài 3. (5 điểm) Đổi đơn vị đo diện tích
 
 Điền số thích hợp.
 
-a) 21 m² = … cm²
-b) 89 dm² = … cm²
-c) 82 m² = … dm²
-d) 87 dm² = … cm²
-e) 15 m² = … dm²
-f) 54 km² = … ha
-g) 82 ha = … m²
+a) 86 m² = … cm²
+b) 30 ha = … m²
+c) 32 m² = … cm²
+d) 23 m² = … dm²
+e) 45 m² = … cm²
+
+### Bài 4. (5 điểm) Đơn vị đo thời gian: giờ và phút
+
+Điền kết quả, viết dạng giờ và phút.
+
+a) 2 giờ 57 phút = … phút
+b) 5 giờ 31 phút + 156 phút = … (viết dạng giờ và phút)
+c) 416 phút = … giờ … phút
+d) 1 giờ 41 phút − 13 phút = … (viết dạng giờ và phút)
+e) 4 giờ 30 phút − 26 phút = … (viết dạng giờ và phút)
+f) 4 giờ 2 phút = … phút
+g) 1 giờ 5 phút + 78 phút = … (viết dạng giờ và phút)
 
 ### Bài 5. (5 điểm) Đổi số đo khối lượng có nhiều đơn vị
 
 Điền vào chỗ chấm.
 
-a) 1 934 kg = … tấn … tạ … kg
-b) 3 tấn 6 tạ 47 kg = … kg
-c) 1 647 kg = … tấn … tạ … kg
-d) 5 568 kg = … tấn … tạ … kg
-e) 3 tấn 5 tạ 35 kg = … kg
+a) 5 tấn 3 tạ 58 kg = … kg
+b) 3 022 kg = … tấn … tạ … kg
+c) 1 tấn 9 tạ 99 kg = … kg
+d) 2 981 kg = … tấn … tạ … kg
+e) 6 742 kg = … tấn … tạ … kg
+f) 3 tấn 1 tạ 20 kg = … kg
 
 ---
 
@@ -335,31 +335,31 @@ f) Mẹo nhanh em sẽ tặng lớp?
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài A.1
-**Đáp số:** a) 9 000 000 · b) 4 700 · c) 1 300 · d) 8 500 · e) 63 000 · f) 5 100
+**Đáp số:** a) 610 · b) 570 · c) 75 000 · d) 6 400 · e) 590 000 · f) 1 400 000
 **Hướng giải:** BẪY — Chiều đổi đơn vị. Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
 **Nhãn tư duy:** TD1. Điểm chốt: Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
 **Lỗi thường gặp:** Đổi ngược chiều nên nhân thành chia. Phòng: Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.
 
 ### Bài A.2
-**Đáp số:** a) 3 giờ · b) 40 km/giờ · c) 216 km · d) 75 km · e) 36 km/giờ
-**Hướng giải:** BẪY — Đơn vị thời gian. Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng kia.
-**Lỗi thường gặp:** Vận tốc km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
+**Đáp số:** a) 6 chữ số, tổng 32 · b) 7 chữ số, tổng 30 · c) 7 chữ số, tổng 42 · d) 7 chữ số, tổng 37 · e) 6 chữ số, tổng 18
+**Hướng giải:** Đếm số chữ số bằng cách tách số theo lớp (mỗi lớp 3 chữ số). Tổng các chữ số là cộng tất cả các chữ số lại, không phân biệt hàng.
+**Nhãn tư duy:** TD1. Điểm chốt: Tổng các chữ số **không** phụ thuộc thứ tự các chữ số.
+**Lỗi thường gặp:** Cộng cả giá trị hàng (ví dụ cộng 300 thay vì cộng 3). Phòng: Viết rời từng chữ số ra rồi mới cộng.
 
 ### Bài A.3
-**Đáp số:** a) 4 giờ 50 phút · b) 247 · c) 5 giờ 3 phút · d) 4 giờ 51 phút · e) 1 giờ 50 phút · f) 1 giờ 15 phút
+**Đáp số:** a) 860 000 · b) 300 000 · c) 320 000 · d) 2 300 · e) 450 000
+**Hướng giải:** BẪY — 100 lần chứ không phải 10 lần. Hai đơn vị diện tích liền kề hơn kém nhau **100 lần** (chứ không phải 10 lần như đơn vị độ dài), vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
+**Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc.
+**Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết bảng đơn vị diện tích riêng, ghi rõ “×100” giữa hai bậc.
+
+### Bài A.4
+**Đáp số:** a) 177 · b) 8 giờ 7 phút · c) 6 giờ 56 phút · d) 1 giờ 28 phút · e) 4 giờ 4 phút · f) 242 · g) 2 giờ 23 phút
 **Hướng giải:** 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
 **Lỗi thường gặp:** Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. Phòng: Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không.
 
-### Bài A.4
-**Đáp số:** a) 210 000 · b) 8 900 · c) 8 200 · d) 8 700 · e) 1 500 · f) 5 400 · g) 820 000
-**Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần** (chứ không phải 10 lần như đơn vị độ dài), vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
-**Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc.
-**Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết bảng đơn vị diện tích riêng, ghi rõ “×100” giữa hai bậc.
-
 ### Bài A.5
-**Đáp số:** a) 1 tấn 9 tạ 34 kg · b) 3 647 · c) 1 tấn 6 tạ 47 kg · d) 5 tấn 5 tạ 68 kg · e) 3 535
+**Đáp số:** a) 5 358 · b) 3 tấn 22 kg · c) 1 999 · d) 2 tấn 9 tạ 81 kg · e) 6 tấn 7 tạ 42 kg · f) 3 120
 **Hướng giải:** 1 tấn = 10 tạ = 1 000 kg; 1 tạ = 100 kg; 1 yến = 10 kg. Đổi tất cả về ki-lô-gam rồi cộng lại; hoặc ngược lại, chia dần từ đơn vị lớn xuống đơn vị bé và lấy phần dư.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Đổi hết về **một đơn vị chung** trước khi cộng.
 **Lỗi thường gặp:** Cộng thẳng các số đứng trước những đơn vị khác nhau. Phòng: Viết mỗi thành phần thành số ki-lô-gam ngay bên dưới rồi mới cộng.

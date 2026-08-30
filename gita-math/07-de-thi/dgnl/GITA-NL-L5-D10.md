@@ -29,111 +29,121 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Mỗi câu 2 điểm. Chọn một phương án đúng.
 
-**Câu 1.** Làm tròn 8 585 494 đến hàng nghìn.
-   **A.** 17 170 000   **B.** 7 585 000   **C.** 85 850 000   **D.** 8 585 000
+**Câu 1.** Làm tròn 34 463 đến hàng nghìn.
+   **A.** 43 000   **B.** 34 000   **C.** 44 000   **D.** 24 000
 
-**Câu 2.** 419 651 − 208 631
-   **A.** 211 020   **B.** 121 020   **C.** 2 110 200   **D.** 111 020
+**Câu 2.** 5 448 150 : 75
+   **A.** 82 642   **B.** 72 642   **C.** 145 284   **D.** 36 321
 
-**Câu 3.** 8, 13, 18, 23, …, 33
-   **A.** 28   **B.** 2   **C.** 38   **D.** 27
+**Câu 3.** 28, 37, 46, …, 64, 73
+   **A.** 55   **B.** 54   **C.** 550   **D.** 65
 
-**Câu 4.** Quân có 47 quyển vở, Chi có ít hơn Quân 19 quyển. Chi có bao nhiêu quyển vở?
-   **A.** 28   **B.** 2   **C.** 56   **D.** 18
+**Câu 4.** Tìm trung bình cộng của 5 số: 133, 128, 132, 137, 130.
+   **A.** 32   **B.** 132   **C.** 66   **D.** 312
 
-**Câu 5.** 76 m = … dm
-   **A.** 670   **B.** 760   **C.** 660   **D.** 76
+**Câu 5.** 5 m² = … cm²
+   **A.** 50 000   **B.** 5 000   **C.** 60 000   **D.** 100 000
 
-**Câu 6.** Hình chữ nhật có diện tích 385 cm², chiều rộng 7 cm. Tính chiều dài.
-   **A.** 65 cm   **B.** 54 cm   **C.** 55 cm   **D.** 56 cm
+**Câu 6.** Hình vuông có cạnh 26 cm. Tính chu vi.
+   **A.** 140 cm   **B.** 10 cm   **C.** 204 cm   **D.** 104 cm
 
-**Câu 7.** Có 4 chiếc áo và 8 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
-   **A.** 22 cách   **B.** 64 cách   **C.** 32 cách   **D.** 42 cách
+**Câu 7.** Có 8 quyển sách Toán và 11 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một quyển Toán và một quyển Tiếng Việt**?
+   **A.** 176 cách   **B.** 44 cách   **C.** 88 cách   **D.** 98 cách
 
-**Câu 8.** Trong số 591,219, chữ số ở hàng phần mười là chữ số nào?
-   **A.** 4   **B.** 2   **C.** 20   **D.** 3
+**Câu 8.** Trong số 715,269, chữ số ở hàng phần mười là chữ số nào?
+   **A.** 1   **B.** 4   **C.** 3   **D.** 2
 
-**Câu 9.** Số 7 708 có chia hết cho 3 không? Vì sao?
-   **A.** 32 không (tổng chữ số  )   **B.** 44 không (tổng chữ số  )   **C.** 23 không (tổng chữ số  )   **D.** không (tổng chữ số 22)
+**Câu 9.** Tìm tất cả chữ số thay cho dấu * để số *682 chia hết cho 9.
+   **A.** 4   **B.** 1   **C.** 2   **D.** 3
 
-**Câu 10.** 43 + 47 + 57 + 53
-   **A.** 100   **B.** 2 000   **C.** 200   **D.** 400
+**Câu 10.** 132 + 14 − 14
+   **A.** 264   **B.** 1 320   **C.** 132   **D.** 66
 
-**Câu 11.** Tính tổng: 6 + 9 + 12 + … + 78
-   **A.** 1 050   **B.** 525   **C.** 150   **D.** 2 100
+**Câu 11.** Hình thứ 1 có 3 que diêm, mỗi hình sau hơn hình liền trước 4 que. Hình thứ 5 có bao nhiêu que diêm?
+   **A.** 19   **B.** 91   **C.** 18   **D.** 29
 
-**Câu 12.** Một chiếc cặp giá 240 000 đồng được giảm 20%. Hỏi giá sau khi giảm là bao nhiêu?
-   **A.** 192 000 đồng   **B.** 1 920 000 đồng   **C.** 912 000 đồng   **D.** 92 000 đồng
+**Câu 12.** Một món hàng giá 500 000 đồng, tăng giá 25%. Giá mới là bao nhiêu?
+   **A.** 725 000 đồng   **B.** 625 000 đồng   **C.** 525 000 đồng   **D.** 62 500 đồng
 
-**Câu 13.** 46 km² = … ha
-   **A.** 4 600   **B.** 5 600   **C.** 2 300   **D.** 6 400
+**Câu 13.** 36 m 65 cm × 7 = … cm
+   **A.** 25 655   **B.** 256 550   **C.** 52 655   **D.** 35 655
 
-**Câu 14.** Hình lập phương cạnh 11 cm có diện tích toàn phần bằng bao nhiêu?
-   **A.** 363 cm²   **B.** 72 cm²   **C.** 826 cm²   **D.** 726 cm²
+**Câu 14.** Hình thang có đáy lớn 12 cm, đáy bé 9 cm, chiều cao 20 cm. Tính diện tích.
+   **A.** 110 cm²   **B.** 210 cm²   **C.** 21 cm²   **D.** 2 100 cm²
 
-**Câu 15.** Cưa một khúc gỗ dài 96 m thành các đoạn dài 3 m. Phải cưa bao nhiêu nhát?
-   **A.** 13   **B.** 3   **C.** 41   **D.** 31
+**Câu 15.** Đoạn đường dài 120 m, cây cách nhau 6 m, chỉ trồng ở một đầu. Cần bao nhiêu cây?
+   **A.** 200   **B.** 30   **C.** 21   **D.** 20
 
-**Câu 16.** Tìm tỉ số phần trăm của 80 và 200.
-   **A.** 40%   **B.** 400 %   **C.** 41 %   **D.** 39 %
+**Câu 16.** Biết 25% của một số là 15. Tìm số đó.
+   **A.** 60   **B.** 600   **C.** 59   **D.** 61
 
-**Câu 17.** Tổng của 3 số tự nhiên liên tiếp bằng 1 068. Tìm số bé nhất trong 3 số đó.
-   **A.** 3 550   **B.** 355   **C.** 535   **D.** 455
+**Câu 17.** Làm tròn số ki-lô-mét đầu năm 62 288 đến hàng nghìn.
+   **A.** 124 000   **B.** 62 000   **C.** 52 000   **D.** 72 000
 
-**Câu 18.** 3 + 6 + 9 + … + 150
-   **A.** 2 825   **B.** 3 825   **C.** 3 852   **D.** 7 650
+**Câu 18.** Buổi sáng bán 8 hộp, buổi chiều bán 5 hộp. Tính tiền buổi sáng.
+   **A.** 44 000 đồng   **B.** 144 000 đồng   **C.** 72 000 đồng   **D.** 244 000 đồng
 
-**Câu 19.** Số hạng thứ 9 của dãy là số nào?
-   **A.** 2 650   **B.** 256   **C.** 165   **D.** 265
+**Câu 19.** Dãy có bao nhiêu số hạng?
+   **A.** 386   **B.** 913   **C.** 93   **D.** 193
 
-**Câu 20.** Một cửa hàng có 224 kg gạo. Ngày đầu bán 1 phần 4 số gạo, ngày thứ hai bán 1 phần 2 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
-   **A.** 42 kg   **B.** 168 kg   **C.** 840 kg   **D.** 84 kg
+**Câu 20.** Hợp tác xã chứa 39 kg xi măng. Nếu hợp tác xã nhận thêm 117 kg thì bằng số xi măng ở trang trại. Hỏi cả hai nơi chứa bao nhiêu kg?
+   **A.** 295 kg   **B.** 1 950 kg   **C.** 195 kg   **D.** 159 kg
 
 
 ## PHẦN II — TRẢ LỜI NGẮN · 10 câu · 12 phút · 20 điểm
 
 Mỗi câu 2 điểm. Chỉ ghi đáp số, không cần trình bày.
 
-**Câu 1.** Một đoạn đường dài 15 m được vẽ trên bản đồ tỉ lệ 1 : 100. Trên bản đồ đoạn ấy dài bao nhiêu xăng-ti-mét?
+**Câu 1.** Cửa hàng và kho B chứa tất cả 322 kg đường. Cửa hàng chứa nhiều hơn kho B 44 kg. Mỗi nơi chứa bao nhiêu kg?
    Đáp số: ......................
 
-**Câu 2.** Tháng 10 năm 2078 có bao nhiêu ngày?
+**Câu 2.** 45 hm² = … m²
    Đáp số: ......................
 
-**Câu 3.** Hình tròn có đường kính 52 cm. Bán kính dài bao nhiêu?
+**Câu 3.** Tổng độ dài tất cả các cạnh của hình hộp ấy bằng bao nhiêu?
    Đáp số: ......................
 
-**Câu 4.** Trong sân có 31 chiếc xe ô tô và xe đạp, đếm được tất cả 108 bánh xe. Hỏi mỗi loại có bao nhiêu chiếc?
+**Câu 4.** Trong sân có 29 chiếc xe đạp và xe ba bánh, đếm được tất cả 72 bánh xe. Hỏi mỗi loại có bao nhiêu chiếc?
    Đáp số: ......................
 
-**Câu 5.** Tìm tỉ số phần trăm của 24 và 40.
+**Câu 5.** 3 phần 2 : 2 phần 3
    Đáp số: ......................
 
-**Câu 6.** Hiệu 4 591 − 4 228 có chữ số tận cùng là chữ số nào?
+**Câu 6.** Hiệu 6 997 − 4 636 có chữ số tận cùng là chữ số nào?
    Đáp số: ......................
 
-**Câu 7.** 291 × 12 … 291 × 13
+**Câu 7.** 1 + 4 + 7 + … + 58
    Đáp số: ......................
 
-**Câu 8.** Từ 1 đến 500, chữ số 9 xuất hiện bao nhiêu lần?
+**Câu 8.** Số hạng thứ 7 của dãy là số nào?
    Đáp số: ......................
 
-**Câu 9.** Số thóc ở trang trại bằng 4 phần 3 số thóc ở xưởng. Nếu chuyển 27 kg từ trang trại sang xưởng thì trang trại vẫn còn nhiều hơn. Biết trang trại hơn xưởng 27 kg, tìm số thóc mỗi nơi.
+**Câu 9.** Hiện nay bố 24 tuổi, con 12 tuổi. Sau 8 năm nữa, tổng số tuổi hai bố con là bao nhiêu?
    Đáp số: ......................
 
-**Câu 10.** Một chuyến tàu khởi hành lúc 10 giờ 20 phút và đi hết 5 giờ 9 phút. Tàu đến nơi lúc mấy giờ?
+**Câu 10.** Một xe chở 35 bao đường, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ đường?
    Đáp số: ......................
 
 
 ## PHẦN III — ĐỌC HIỂU SỐ LIỆU · 8 phút · 10 điểm
 
-Bảng thống kê số học sinh đăng kí câu lạc bộ theo môn: **Toán: 5 · Tiếng Việt: 20 · Tiếng Anh: 14 · Khoa học: 19**.
+Biểu đồ ghi số ngày mưa của năm tháng liên tiếp tại một trạm đo:
 
-a) Tổng số học sinh đăng kí là bao nhiêu?
-b) Môn nào có nhiều học sinh đăng kí nhất?
-c) Môn nào có ít học sinh đăng kí nhất?
-d) Môn nhiều nhất hơn môn ít nhất bao nhiêu bạn?
-e) Trung bình mỗi môn có bao nhiêu học sinh đăng kí?
+| Tháng | Biểu đồ (mỗi ô = 2 ngày) | Số ngày mưa |
+|:--:|---|---:|
+| Tháng 5 | ████████ | 16 |
+| Tháng 6 | ████ | 8 |
+| Tháng 7 | █ | 2 |
+| Tháng 8 | ███████████ | 22 |
+| Tháng 9 | ██████ | 12 |
+
+Dùng chung biểu đồ này cho mọi ý.
+
+a) Tháng nào có nhiều ngày mưa nhất, và bao nhiêu ngày?
+b) Tháng nào có ít ngày mưa nhất?
+c) Cả năm tháng có tất cả bao nhiêu ngày mưa?
+d) Trung bình mỗi tháng có bao nhiêu ngày mưa?
+e) Tháng 8 nhiều hơn Tháng 7 bao nhiêu ngày mưa?
 
 
 ## PHẦN IV — TỰ LUẬN · 15 phút · 20 điểm
@@ -144,36 +154,36 @@ Trình bày đủ lời giải, không chỉ ghi đáp số.
 
 Giải từng bài toán nhỏ.
 
-a) Trung bình mỗi ngày bán được 292 kg gạo. Hỏi 4 ngày bán được tất cả bao nhiêu ki-lô-gam?
-b) 5 ngày đầu tuần một cửa hàng bán được lần lượt 292, 299, 278, 293, 283 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
-c) 6 ngày đầu tuần một cửa hàng bán được lần lượt 185, 186, 194, 193, 182, 194 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
+a) 5 ngày đầu tuần một cửa hàng bán được lần lượt 48, 42, 46, 53, 41 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
+b) Trung bình mỗi ngày bán được 98 kg gạo. Hỏi 6 ngày bán được tất cả bao nhiêu ki-lô-gam?
+c) Trung bình mỗi ngày cửa hàng bán được 80 kg gạo. 4 ngày đầu bán được 75, 82, 74, 92 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
 
-### Bài 2, (6,7 điểm) Tìm hai số khi biết hiệu và tỉ số
+### Bài 2, (6,7 điểm) Tìm phân số của một số qua hai bước
+
+Đọc kĩ “của số nào” trước khi tính.
+
+a) Một cửa hàng có 30 kg gạo. Ngày đầu bán 1 phần 2 số gạo, ngày thứ hai bán 1 phần 3 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
+b) Một cửa hàng có 228 kg gạo. Ngày đầu bán 1 phần 4 số gạo, ngày thứ hai bán 1 phần 3 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
+c) Một cửa hàng có 450 kg gạo. Ngày đầu bán 1 phần 5 số gạo, ngày thứ hai bán 1 phần 5 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
+
+### Bài 3, (6,7 điểm) Tìm hai số khi biết hiệu và tỉ số
 
 Vẽ sơ đồ đoạn thẳng rồi giải.
 
-a) Kho A chứa nhiều hơn xưởng 71 kg phân bón. Số phân bón ở xưởng bằng 3 phần 4 số phân bón ở kho A. Mỗi nơi chứa bao nhiêu kg?
-b) Trang trại chứa nhiều hơn xưởng 420 kg xi măng. Số xi măng ở xưởng bằng 2 phần 7 số xi măng ở trang trại. Mỗi nơi chứa bao nhiêu kg?
-c) Kho A chứa nhiều hơn cửa hàng 110 kg phân bón. Số phân bón ở cửa hàng bằng 1 phần 6 số phân bón ở kho A. Mỗi nơi chứa bao nhiêu kg?
-
-### Bài 3, (6,7 điểm) Tìm hai số khi biết tổng và tỉ số
-
-Vẽ sơ đồ đoạn thẳng rồi giải.
-
-a) Tổ Một và nhóm Hoa Phượng trồng được tất cả 144 cây. Số cây của tổ Một bằng 1 phần 2 số cây của nhóm Hoa Phượng. Mỗi tổ trồng được bao nhiêu cây?
-b) Tổ Ba và đội Hai trồng được tất cả 729 cây. Số cây của tổ Ba bằng 1 phần 2 số cây của đội Hai. Mỗi tổ trồng được bao nhiêu cây?
-c) Đội Một và tổ Một trồng được tất cả 712 cây. Số cây của đội Một bằng 1 phần 3 số cây của tổ Một. Mỗi tổ trồng được bao nhiêu cây?
+a) Cửa hàng chứa nhiều hơn thư viện 308 kg đường. Số đường ở thư viện bằng 1 phần 3 số đường ở cửa hàng. Mỗi nơi chứa bao nhiêu kg?
+b) Kho B chứa nhiều hơn cửa hàng 158 kg đường. Số đường ở cửa hàng bằng 2 phần 3 số đường ở kho B. Mỗi nơi chứa bao nhiêu kg?
+c) Trang trại chứa nhiều hơn hợp tác xã 468 kg gạo. Số gạo ở hợp tác xã bằng 1 phần 3 số gạo ở trang trại. Mỗi nơi chứa bao nhiêu kg?
 
 
 ## PHẦN V — BÀI PHÂN HOÁ · 5 phút · 10 điểm
 
 Mức đề trường chuyên. Làm xong bốn phần trên rồi mới vào đây.
 
-Nêu rõ ngăn kéo là gì, đồ vật là gì.
+Vẽ hình và tô phần cần tính trước khi làm.
 
-a) Có 16 học sinh sinh trong 5 tháng khác nhau. Chứng tỏ rằng có ít nhất 4 bạn sinh cùng một tháng. Hỏi nếu bớt đi một bạn thì kết luận đó còn đúng không?
-b) Có 17 học sinh sinh trong 8 tháng khác nhau. Chứng tỏ rằng có ít nhất 3 bạn sinh cùng một tháng. Hỏi nếu bớt đi một bạn thì kết luận đó còn đúng không?
-c) Có 9 học sinh sinh trong 8 tháng khác nhau. Chứng tỏ rằng có ít nhất 2 bạn sinh cùng một tháng. Hỏi nếu bớt đi một bạn thì kết luận đó còn đúng không?
+a) Hình chữ nhật có chiều dài 13 cm, chiều rộng 12 cm. Tính diện tích.
+b) Cắt hình ấy thành 3 phần bằng nhau. Mỗi phần có diện tích bao nhiêu?
+c) Nối trung điểm hai cạnh dài lại, hình bị chia thành hai phần. Mỗi phần có diện tích bao nhiêu?
 
 
 ---
@@ -184,89 +194,89 @@ c) Có 9 học sinh sinh trong 8 tháng khác nhau. Chứng tỏ rằng có ít 
 
 | Câu | Đáp án | Câu | Đáp án | Câu | Đáp án | Câu | Đáp án |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| 1 | **D** | 2 | **A** | 3 | **A** | 4 | **A** |
-| 5 | **B** | 6 | **C** | 7 | **C** | 8 | **B** |
-| 9 | **D** | 10 | **C** | 11 | **A** | 12 | **A** |
-| 13 | **A** | 14 | **D** | 15 | **D** | 16 | **A** |
-| 17 | **B** | 18 | **B** | 19 | **D** | 20 | **D** |
+| 1 | **B** | 2 | **B** | 3 | **A** | 4 | **B** |
+| 5 | **A** | 6 | **D** | 7 | **C** | 8 | **D** |
+| 9 | **C** | 10 | **C** | 11 | **A** | 12 | **B** |
+| 13 | **A** | 14 | **B** | 15 | **D** | 16 | **A** |
+| 17 | **B** | 18 | **B** | 19 | **D** | 20 | **C** |
 
 *Trả lời đúng cả 20 câu trong 20 phút là mức tốc độ của học viên nhắm trường top.*
 
 ### Phần II — trả lời ngắn
 
-1. **15 cm**
-2. **31**
-3. **26 cm**
-4. **xe ô tô: 23 chiếc, xe đạp: 8 chiếc**
-5. **60%**
-6. **3**
-7. **<**
-8. **100**
-9. **xưởng: 81 kg, trang trại: 108 kg**
-10. **15 giờ 29 phút**
+1. **cửa hàng: 183 kg, kho B: 139 kg**
+2. **450 000**
+3. **84 cm**
+4. **xe đạp: 15 chiếc, xe ba bánh: 14 chiếc**
+5. **9 phần 4**
+6. **1**
+7. **590**
+8. **82**
+9. **52 tuổi**
+10. **10 tạ 50 kg**
 
 ### Phần III — đọc hiểu số liệu
 
-a) **58**
-b) **Tiếng Việt (20 bạn)**
-c) **Toán (5 bạn)**
-d) **15**
-e) **14,5**
+a) **Tháng 8 — 22 ngày**
+b) **Tháng 7 — 2 ngày**
+c) **60 ngày**
+d) **60 : 5 = 12 ngày**
+e) **20 ngày**
 
 ### Phần IV — tự luận
 
 **Bài 1.**
-a) **1 168 kg**
-b) **289 kg**
-c) **189 kg**
+a) **46 kg**
+b) **588 kg**
+c) **77 kg**
 
 Cách giải mẫu:
-1. Xét ý a: Trung bình mỗi ngày bán được 292 kg gạo. Hỏi 4 ngày bán được tất cả bao nhiêu ki-lô-gam?
+1. Xét ý a: 5 ngày đầu tuần một cửa hàng bán được lần lượt 48, 42, 46, 53, 41 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
 2. Đọc vị: đây là dạng **Ba dạng bài trung bình cộng**; dấu hiệu là Cụm “trung bình mỗi …”.
 3. Kiến thức phải dùng: Quan hệ tổng – số lượng – trung bình cộng.
 4. Cách làm: Đi qua tổng làm trung gian.
 5. Lối tắt: Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng.
-6. Kết quả: **1 168 kg**.
+6. Kết quả: **46 kg**.
 
 **Bài 2.**
-a) **xưởng: 213 kg, kho A: 284 kg**
-b) **xưởng: 168 kg, trang trại: 588 kg**
-c) **cửa hàng: 22 kg, kho A: 132 kg**
+a) **10 kg**
+b) **114 kg**
+c) **288 kg**
 
 Cách giải mẫu:
-1. Xét ý a: Kho A chứa nhiều hơn xưởng 71 kg phân bón. Số phân bón ở xưởng bằng 3 phần 4 số phân bón ở kho A. Mỗi nơi chứa bao nhiêu kg?
+1. Xét ý a: Một cửa hàng có 30 kg gạo. Ngày đầu bán 1 phần 2 số gạo, ngày thứ hai bán 1 phần 3 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
+2. Đọc vị: đây là dạng **Tìm phân số của một số, nhiều bước**; dấu hiệu là Cụm “… số còn lại”, “… số đó”.
+3. Kiến thức phải dùng: Tìm phân số của một số.
+4. Cách làm: Tính tuần tự, sau mỗi bước ghi lại số còn lại.
+5. Lối tắt: Còn lại sau ngày đầu là (1 − phân số) của tổng; nhân trực tiếp cho nhanh.
+6. Kết quả: **10 kg**.
+
+**Bài 3.**
+a) **thư viện: 154 kg, cửa hàng: 462 kg**
+b) **cửa hàng: 316 kg, kho B: 474 kg**
+c) **hợp tác xã: 234 kg, trang trại: 702 kg**
+
+Cách giải mẫu:
+1. Xét ý a: Cửa hàng chứa nhiều hơn thư viện 308 kg đường. Số đường ở thư viện bằng 1 phần 3 số đường ở cửa hàng. Mỗi nơi chứa bao nhiêu kg?
 2. Đọc vị: đây là dạng **Bài toán hiệu – tỉ**; dấu hiệu là Đề cho **hiệu** và **tỉ số**.
 3. Kiến thức phải dùng: Tỉ số, sơ đồ đoạn thẳng.
 4. Cách làm: Sơ đồ → hiệu số phần → giá trị một phần.
 5. Lối tắt: Hiệu luôn chia hết cho hiệu số phần — dùng để kiểm tra đã đọc đúng tỉ số chưa.
-6. Kết quả: **xưởng: 213 kg, kho A: 284 kg**.
-
-**Bài 3.**
-a) **tổ Một: 48 cây, nhóm Hoa Phượng: 96 cây**
-b) **tổ Ba: 243 cây, đội Hai: 486 cây**
-c) **đội Một: 178 cây, tổ Một: 534 cây**
-
-Cách giải mẫu:
-1. Xét ý a: Tổ Một và nhóm Hoa Phượng trồng được tất cả 144 cây. Số cây của tổ Một bằng 1 phần 2 số cây của nhóm Hoa Phượng. Mỗi tổ trồng được bao nhiêu cây?
-2. Đọc vị: đây là dạng **Bài toán tổng – tỉ**; dấu hiệu là Đề cho **tổng** và **tỉ số** (phân số hoặc “gấp … lần”).
-3. Kiến thức phải dùng: Tỉ số, sơ đồ đoạn thẳng, chia theo tỉ lệ.
-4. Cách làm: Sơ đồ phần bằng nhau → giá trị một phần → nhân.
-5. Lối tắt: Tổng luôn chia hết cho tổng số phần — nếu không chia hết là đọc sai tỉ số.
-6. Kết quả: **tổ Một: 48 cây, nhóm Hoa Phượng: 96 cây**.
+6. Kết quả: **thư viện: 154 kg, cửa hàng: 462 kg**.
 
 ### Phần V — bài phân hoá
 
-a) **không còn đúng (15 bạn có thể chia đều 3 bạn mỗi tháng)**
-b) **không còn đúng (16 bạn có thể chia đều 2 bạn mỗi tháng)**
-c) **không còn đúng (8 bạn có thể chia đều 1 bạn mỗi tháng)**
+a) **156 cm²**
+b) **52 cm²**
+c) **78 cm²**
 
 Cách giải mẫu:
-1. Xét ý a: Có 16 học sinh sinh trong 5 tháng khác nhau. Chứng tỏ rằng có ít nhất 4 bạn sinh cùng một tháng. Hỏi nếu bớt đi một bạn thì kết luận đó còn đúng không?
-2. Đọc vị: đây là dạng **Đi-rích-lê dạng chứng minh**; dấu hiệu là “Chứng tỏ rằng có ít nhất … cùng …”.
-3. Kiến thức phải dùng: Nguyên lí ngăn kéo.
-4. Cách làm: Đặt tên ngăn kéo và đồ vật, tính ngưỡng.
-5. Lối tắt: Ngưỡng = số ngăn × (số cần − 1) + 1.
-6. Kết quả: **không còn đúng (15 bạn có thể chia đều 3 bạn mỗi tháng)**.
+1. Diện tích hình chữ nhật: 13 × 12 = 156 (cm²).
+2. Nối một đỉnh với trung điểm cạnh đối diện được một tam giác có đáy bằng nửa cạnh và chiều cao bằng cạnh kia.
+3. Diện tích tam giác = đáy × chiều cao : 2, tức bằng (nửa cạnh × cạnh kia) : 2 = **một phần tư** diện tích hình chữ nhật.
+4. Cụ thể: 156 : 4 = 39 (cm²).
+5. Ghép hai hình theo chiều rộng: diện tích cộng lại, nhưng chu vi thì không cộng vì hai cạnh dán vào trong.
+6. Đáp số ý d: **một phần tư**.
 
 ---
 
@@ -278,9 +288,9 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 |:--:|---|---|---|
 | I | Tốc độ và độ rộng — 20 dạng trong 20 phút | Đúng nhưng không kịp giờ là hổng tốc độ, không phải hổng kiến thức | Phiếu `KN` của mọi cụm — phần kỹ thuật tính nhanh |
 | II | Độ chính xác khi không có phương án gợi ý | Làm đúng phần I mà sai phần II là đang đoán chứ chưa chắc | Phiếu `DB` — đọc vị dạng bài |
-| III | Đọc hiểu bảng và biểu đồ | Đọc nhầm cột, hoặc quên một môn khi cộng tổng. | Nhóm chuyên đề **H — Thống kê & Số liệu** |
+| III | Đọc hiểu bảng và biểu đồ | Đếm số ô rồi trả lời luôn, quên nhân với giá trị mỗi ô. | Nhóm chuyên đề **H — Thống kê & Số liệu** |
 | IV | Toán điển hình và cách trình bày lời giải | Ra đúng đáp số nhưng trình bày thiếu bước vẫn mất điểm trong phòng thi | Nhóm **D** và phiếu `KN` phần trình bày |
-| V | Mức phân hoá của đề trường chuyên | Nói chung chung “vì nhiều người quá nên phải trùng” mà không chỉ ra con số. | Phiếu `NC` của tuyến 2 và các sơ đồ đọc vị |
+| V | Mức phân hoá của đề trường chuyên | Cộng chu vi hai hình nhỏ lại thành chu vi hình ghép. | Phiếu `NC` của tuyến 2 và các sơ đồ đọc vị |
 
 ---
 

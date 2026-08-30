@@ -53,57 +53,52 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ### Bài 1. (1 điểm) Suy luận bằng phương pháp lập bảng và loại trừ
 
-Ba bạn Dũng, Nam, Yến mỗi bạn thích đúng một môn khác nhau trong ba môn Toán, Tiếng Việt, Mĩ thuật. Biết **Dũng thích Toán** và **Nam không thích Mĩ thuật**.
+Ba bạn Trang, Dũng, Bình mỗi bạn thích đúng một môn khác nhau trong ba môn Mĩ thuật, Tiếng Việt, Toán. Biết **Trang thích Mĩ thuật** và **Dũng không thích Toán**.
 
-a) Kẻ bảng ba hàng (tên bạn) và ba cột (môn học). Dữ kiện “Dũng thích Toán” cho phép đánh dấu ✔ vào ô nào?
+a) Kẻ bảng ba hàng (tên bạn) và ba cột (môn học). Dữ kiện “Trang thích Mĩ thuật” cho phép đánh dấu ✔ vào ô nào?
 b) Sau dấu ✔ đó, những ô nào chắc chắn phải đánh ✘?
-c) Dữ kiện “Nam không thích Mĩ thuật” cho phép đánh ✘ vào ô nào?
-d) Đến đây, hàng Nam còn lại đúng một ô trống. Vậy Nam thích môn nào?
-e) Suy ra Yến thích môn nào?
+c) Dữ kiện “Dũng không thích Toán” cho phép đánh ✘ vào ô nào?
+d) Đến đây, hàng Dũng còn lại đúng một ô trống. Vậy Dũng thích môn nào?
+e) Suy ra Bình thích môn nào?
 f) Phương pháp vừa dùng tên là gì?
 
-### Bài 2. (1 điểm) Quy tắc nhân trong phép đếm
+### Bài 2. (1 điểm) Viết số khi biết tổng các giá trị hàng
 
-Đếm số cách chọn.
+Viết số tự nhiên ứng với mỗi tổng dưới đây.
 
-a) Có 4 chiếc áo và 5 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
-b) Có 5 chiếc áo và 3 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
-c) Có 3 chiếc áo và 7 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
-d) Có 8 chiếc áo và 2 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
+a) Viết số gồm tổng: 500 000 + 10 000 + 400 + 30 + 7
+b) Viết số gồm tổng: 200 000 + 80 000 + 2 000 + 100 + 10 + 1
+c) Viết số gồm tổng: 800 000 + 90 000 + 4 000 + 900 + 10 + 8
+d) Viết số gồm tổng: 900 000 + 60 000 + 7 000 + 70 + 3
 
-### Bài 3. (1 điểm) Số chẵn – số lẻ, số liền trước – số liền sau
-
-Trả lời ngắn gọn từng câu.
-
-a) Số liền sau của 84 766 là số nào?
-b) Số 138 220 là số chẵn hay số lẻ?
-c) Số liền trước của 418 641 là số nào?
-d) Số liền trước của 593 927 là số nào?
-e) Số 739 571 là số chẵn hay số lẻ?
-f) Số chẵn bé nhất lớn hơn 813 829 là số nào?
-
-### Bài 4. (1 điểm) Đặt tính rồi tính (nhân, chia)
+### Bài 3. (1 điểm) Đặt tính rồi tính (nhân, chia)
 
 Đặt tính rồi tính.
 
-a) 415 674 : 42
-b) 227 077 : 97
-c) 5 935 × 36
-d) 375 696 : 48
-e) 9 949 × 75
-f) 4 650 × 90
+a) 305 676 : 36
+b) 2 801 × 66
+c) 4 438 × 65
+d) 5 545 × 75
+e) 2 188 × 24
+f) 5 225 × 46
 
-### Bài 5. (1 điểm) Quy tắc cộng, quy tắc nhân và phép đếm có phần chung
+### Bài 4. (1 điểm) Quy tắc cộng, quy tắc nhân và phép đếm có phần chung
 
 Đọc kĩ chữ “và” hay chữ “hoặc”.
 
-a) Trên bàn có 3 quyển sách Toán và 4 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một** quyển sách bất kì?
-b) Lớp có 3 bạn giỏi Toán, 12 bạn giỏi Tiếng Việt, trong đó 1 bạn giỏi cả hai môn. Hỏi có bao nhiêu bạn giỏi ít nhất một môn?
-c) Có 11 quyển sách Toán và 3 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một quyển Toán và một quyển Tiếng Việt**?
-d) Có 8 quyển sách Toán và 9 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một quyển Toán và một quyển Tiếng Việt**?
-e) Lớp có 11 bạn giỏi Toán, 9 bạn giỏi Tiếng Việt, trong đó 9 bạn giỏi cả hai môn. Hỏi có bao nhiêu bạn giỏi ít nhất một môn?
-f) Trên bàn có 12 quyển sách Toán và 9 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một** quyển sách bất kì?
-g) Có 12 quyển sách Toán và 5 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một quyển Toán và một quyển Tiếng Việt**?
+a) Có 8 quyển sách Toán và 6 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một quyển Toán và một quyển Tiếng Việt**?
+b) Trên bàn có 8 quyển sách Toán và 11 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một** quyển sách bất kì?
+c) Lớp có 11 bạn giỏi Toán, 7 bạn giỏi Tiếng Việt, trong đó 7 bạn giỏi cả hai môn. Hỏi có bao nhiêu bạn giỏi ít nhất một môn?
+d) Lớp có 4 bạn giỏi Toán, 11 bạn giỏi Tiếng Việt, trong đó 4 bạn giỏi cả hai môn. Hỏi có bao nhiêu bạn giỏi ít nhất một môn?
+
+### Bài 5. (1 điểm) Quy tắc nhân trong phép đếm
+
+Đếm số cách chọn.
+
+a) Có 5 chiếc áo và 8 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
+b) Có 6 chiếc áo và 3 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
+c) Có 4 chiếc áo và 7 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
+d) Có 6 chiếc áo và 4 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
 
 ---
 
@@ -279,65 +274,62 @@ f) Làm lại ví dụ mẫu ở trên và ghi đáp số.
 
 ## PHẦN E — LUYỆN NHẬN BIẾT – THÔNG HIỂU · Mức M2 — Thông hiểu · 30 phút · 40 điểm
 
-### Bài 1. (8 điểm) Chia kẹo — chia hết và chia có dư
+### Bài 1. (8 điểm) Bài toán nói thật – nói dối
 
-Ghi rõ thương và số dư trong mọi câu trả lời.
-
-a) Có 19 cái kẹo chia đều cho 6 bạn. Mỗi bạn được mấy cái và còn thừa mấy cái?
-b) Muốn chia hết, phải bớt đi ít nhất bao nhiêu cái kẹo?
-c) Hoặc phải thêm vào ít nhất bao nhiêu cái kẹo?
-d) Nếu thêm 5 cái thì mỗi bạn được mấy cái?
-e) Nếu chỉ chia cho 5 bạn thì mỗi bạn được mấy cái, thừa mấy cái?
-f) Số kẹo phải là số như thế nào để chia hết cho 6 bạn?
-
-### Bài 2. (8 điểm) Tính chất chia hết của tổng và hiệu
-
-Trả lời và giải thích ngắn gọn, không cần tính ra kết quả tổng.
-
-a) Tổng 144 + 252 có chia hết cho 9 không?
-b) Tổng 60 + 4 có chia hết cho 5 không? Nếu không, số dư bằng bao nhiêu?
-c) Tổng 33 + 153 có chia hết cho 3 không?
-d) Tổng 40 + 1 có chia hết cho 2 không? Nếu không, số dư bằng bao nhiêu?
-e) Tổng 54 + 34 có chia hết cho 2 không?
-
-### Bài 3. (8 điểm) Bài toán nói thật – nói dối
-
-Ba bạn Quân, Phúc, Minh, trong đó đúng một bạn làm vỡ lọ hoa.
-- Quân nói: “Tôi không làm.”
-- Phúc nói: “Minh làm.”
-- Minh nói: “Phúc nói dối.”
+Ba bạn Ngọc, An, Chi, trong đó đúng một bạn làm vỡ lọ hoa.
+- Ngọc nói: “Tôi không làm.”
+- An nói: “Chi làm.”
+- Chi nói: “An nói dối.”
 
 Biết rằng trong ba bạn chỉ có đúng **một** bạn nói thật.
 
-a) Câu nói của Phúc và câu nói của Minh có thể cùng đúng được không? Vì sao?
+a) Câu nói của An và câu nói của Chi có thể cùng đúng được không? Vì sao?
 b) Hai câu đó có thể cùng sai được không?
-c) Vậy trong hai bạn Phúc và Minh có đúng mấy bạn nói thật?
-d) Đề cho biết cả ba bạn chỉ có một bạn nói thật. Suy ra Quân nói thật hay nói dối?
-e) Câu của Quân là “Tôi không làm.” Câu đó sai thì điều gì đúng?
+c) Vậy trong hai bạn An và Chi có đúng mấy bạn nói thật?
+d) Đề cho biết cả ba bạn chỉ có một bạn nói thật. Suy ra Ngọc nói thật hay nói dối?
+e) Câu của Ngọc là “Tôi không làm.” Câu đó sai thì điều gì đúng?
 f) Ai là người làm vỡ lọ hoa?
+
+### Bài 2. (8 điểm) Giả thiết tạm với hai loại đối tượng
+
+Dùng phương pháp giả thiết tạm.
+
+a) Trong sân có 32 chiếc xe ô tô và xe ba bánh, đếm được tất cả 99 bánh xe. Hỏi mỗi loại có bao nhiêu chiếc?
+b) Trong sân có 50 chiếc xe đạp và xe ba bánh, đếm được tất cả 120 bánh xe. Hỏi mỗi loại có bao nhiêu chiếc?
+c) Trong sân có 53 chiếc xe ba bánh và xe ô tô, đếm được tất cả 185 bánh xe. Hỏi mỗi loại có bao nhiêu chiếc?
+d) Trong sân có 55 chiếc xe ô tô và xe ba bánh, đếm được tất cả 192 bánh xe. Hỏi mỗi loại có bao nhiêu chiếc?
+e) Trong sân có 34 chiếc xe đạp và xe ô tô, đếm được tất cả 80 bánh xe. Hỏi mỗi loại có bao nhiêu chiếc?
+
+### Bài 3. (8 điểm) Rào quanh mảnh vườn
+
+Một mảnh vườn hình chữ nhật dài **16 m**, rộng **10 m**.
+
+a) Tính chu vi mảnh vườn.
+b) Rào quanh vườn hết bao nhiêu mét lưới, biết chừa một cửa rộng 2 m?
+c) Cắm cọc quanh vườn, hai cọc liền nhau cách nhau 2 m. Cần bao nhiêu cọc?
+d) Mỗi mét lưới giá 30 000 đồng. Mua lưới rào hết bao nhiêu tiền?
+e) Diện tích mảnh vườn là bao nhiêu?
 
 ### Bài 4. (8 điểm) Trồng cây và chia đoạn — năm trường hợp
 
 Vẽ một hình nhỏ ba khoảng để kiểm tra trước khi áp công thức.
 
-a) Đoạn đường dài 27 m, cây cách nhau 3 m, không trồng ở cả hai đầu. Cần bao nhiêu cây?
-b) Đoạn đường dài 108 m, trồng cây cách nhau 6 m, trồng cả ở hai đầu. Cần bao nhiêu cây?
-c) Quanh một hồ nước có chu vi 85 m, trồng cây cách nhau 5 m. Cần bao nhiêu cây?
-d) Đoạn đường dài 60 m, cây cách nhau 5 m, chỉ trồng ở một đầu. Cần bao nhiêu cây?
-e) Cưa một khúc gỗ dài 75 m thành các đoạn dài 5 m. Phải cưa bao nhiêu nhát?
-f) Quanh một hồ nước có chu vi 76 m, trồng cây cách nhau 2 m. Cần bao nhiêu cây?
-g) Đoạn đường dài 48 m, cây cách nhau 2 m, không trồng ở cả hai đầu. Cần bao nhiêu cây?
+a) Quanh một hồ nước có chu vi 96 m, trồng cây cách nhau 4 m. Cần bao nhiêu cây?
+b) Đoạn đường dài 160 m, trồng cây cách nhau 4 m, trồng cả ở hai đầu. Cần bao nhiêu cây?
+c) Cưa một khúc gỗ dài 87 m thành các đoạn dài 3 m. Phải cưa bao nhiêu nhát?
+d) Đoạn đường dài 60 m, cây cách nhau 6 m, không trồng ở cả hai đầu. Cần bao nhiêu cây?
+e) Đoạn đường dài 128 m, cây cách nhau 4 m, chỉ trồng ở một đầu. Cần bao nhiêu cây?
 
-### Bài 5. (8 điểm) Giả thiết tạm với hai loại đối tượng
+### Bài 5. (8 điểm) Chia kẹo — chia hết và chia có dư
 
-Dùng phương pháp giả thiết tạm.
+Ghi rõ thương và số dư trong mọi câu trả lời.
 
-a) Trong sân có 40 chiếc xe đạp và xe ba bánh, đếm được tất cả 101 bánh xe. Hỏi mỗi loại có bao nhiêu chiếc?
-b) Trong sân có 9 chiếc xe ô tô và xe ba bánh, đếm được tất cả 30 bánh xe. Hỏi mỗi loại có bao nhiêu chiếc?
-c) Trong sân có 18 chiếc xe đạp và xe ba bánh, đếm được tất cả 42 bánh xe. Hỏi mỗi loại có bao nhiêu chiếc?
-d) Trong sân có 34 chiếc xe đạp và xe ba bánh, đếm được tất cả 73 bánh xe. Hỏi mỗi loại có bao nhiêu chiếc?
-e) Trong sân có 54 chiếc xe ba bánh và xe ô tô, đếm được tất cả 192 bánh xe. Hỏi mỗi loại có bao nhiêu chiếc?
-f) Trong sân có 42 chiếc xe đạp và xe ba bánh, đếm được tất cả 101 bánh xe. Hỏi mỗi loại có bao nhiêu chiếc?
+a) Có 23 cái kẹo chia đều cho 4 bạn. Mỗi bạn được mấy cái và còn thừa mấy cái?
+b) Muốn chia hết, phải bớt đi ít nhất bao nhiêu cái kẹo?
+c) Hoặc phải thêm vào ít nhất bao nhiêu cái kẹo?
+d) Nếu thêm 1 cái thì mỗi bạn được mấy cái?
+e) Nếu chỉ chia cho 3 bạn thì mỗi bạn được mấy cái, thừa mấy cái?
+f) Số kẹo phải là số như thế nào để chia hết cho 4 bạn?
 
 ---
 
@@ -346,34 +338,34 @@ f) Trong sân có 42 chiếc xe đạp và xe ba bánh, đếm được tất c�
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài A.1
-**Đáp số:** a) ô (Dũng; Toán) · b) toàn bộ hàng Dũng và toàn bộ cột Toán · c) ô (Nam; Mĩ thuật) · d) Tiếng Việt · e) Mĩ thuật · f) phương pháp lập bảng và loại trừ
+**Đáp số:** a) ô (Trang; Mĩ thuật) · b) toàn bộ hàng Trang và toàn bộ cột Mĩ thuật · c) ô (Dũng; Toán) · d) Tiếng Việt · e) Toán · f) phương pháp lập bảng và loại trừ
 **Hướng giải:** Kẻ bảng: hàng là tên người, cột là môn học. Mỗi dữ kiện cho phép đánh dấu ✘ vào một ô (không thể) hoặc ✔ vào một ô (chắc chắn). Khi một hàng chỉ còn đúng một ô trống thì ô đó là ✔; khi một cột đã có ✔ thì các ô còn lại của cột đó đều là ✘.
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Mỗi lần đánh một dấu, phải **lan toả** ngay sang cả hàng và cả cột.
 **Lỗi thường gặp:** Suy luận trong đầu, không kẻ bảng, nên bỏ sót khả năng. Phòng: Luôn kẻ bảng, kể cả khi bài có vẻ dễ.
 
 ### Bài A.2
-**Đáp số:** a) 20 cách · b) 15 cách · c) 21 cách · d) 16 cách
-**Hướng giải:** Nếu công việc gồm hai bước liên tiếp, bước một có a cách, bước hai có b cách, thì cả công việc có a × b cách. Đây là **quy tắc nhân**.
-**Nhãn tư duy:** TD2, TD4. Điểm chốt: Hai việc phải làm **cùng lúc, nối tiếp** thì nhân; chọn một trong hai khả năng rời nhau thì cộng.
-**Lỗi thường gặp:** Cộng số áo với số quần. Phòng: Tự hỏi: chọn xong áo đã đủ một bộ chưa? Chưa đủ thì phải nhân.
+**Đáp số:** a) 510 437 · b) 282 111 · c) 894 918 · d) 967 073
+**Hướng giải:** Mỗi số hạng cho biết một hàng. Xếp các chữ số vào đúng hàng của nó, hàng nào khuyết thì viết chữ số 0.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Hàng khuyết trong tổng vẫn phải có chữ số **0** trong số viết ra.
+**Lỗi thường gặp:** Bỏ qua hàng khuyết nên số viết ra bị ngắn đi một chữ số. Phòng: Kẻ sẵn các ô hàng rồi mới điền chữ số vào ô tương ứng.
 
 ### Bài A.3
-**Đáp số:** a) 84 767 · b) số chẵn · c) 418 640 · d) 593 926 · e) số lẻ · f) 813 830
-**Hướng giải:** Số chẵn là số có chữ số tận cùng 0, 2, 4, 6, 8; số lẻ tận cùng 1, 3, 5, 7, 9. Số liền trước kém 1 đơn vị, số liền sau hơn 1 đơn vị. Hai số chẵn liên tiếp hơn kém nhau 2 đơn vị.
-**Nhãn tư duy:** TD1. Điểm chốt: Chỉ cần nhìn **chữ số tận cùng** là biết chẵn hay lẻ, dù số dài bao nhiêu.
-**Lỗi thường gặp:** Nhầm “liền trước” với “bé hơn”, trả lời một số bất kì bé hơn. Phòng: Liền trước – liền sau chỉ hơn kém đúng **1** đơn vị.
-
-### Bài A.4
-**Đáp số:** a) 9 897 · b) 2 341 · c) 213 660 · d) 7 827 · e) 746 175 · f) 418 500
+**Đáp số:** a) 8 491 · b) 184 866 · c) 288 470 · d) 415 875 · e) 52 512 · f) 240 350
 **Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
 
-### Bài A.5
-**Đáp số:** a) 7 cách · b) 14 bạn · c) 33 cách · d) 72 cách · e) 11 bạn · f) 21 cách · g) 60 cách
+### Bài A.4
+**Đáp số:** a) 48 cách · b) 19 cách · c) 11 bạn · d) 11 bạn
 **Hướng giải:** Chọn **một trong hai nhóm rời nhau** thì cộng. Chọn **mỗi nhóm một phần tử** thì nhân. Khi hai nhóm có phần tử chung, số phần tử thuộc ít nhất một nhóm bằng tổng hai nhóm trừ đi phần chung (vì phần chung đã bị đếm hai lần).
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Có phần chung thì phải **trừ đi một lần** phần chung.
 **Lỗi thường gặp:** Cộng thẳng hai nhóm khi chúng có phần tử chung. Phòng: Vẽ hai vòng tròn giao nhau, ghi số vào từng miền.
+
+### Bài A.5
+**Đáp số:** a) 40 cách · b) 18 cách · c) 28 cách · d) 24 cách
+**Hướng giải:** Nếu công việc gồm hai bước liên tiếp, bước một có a cách, bước hai có b cách, thì cả công việc có a × b cách. Đây là **quy tắc nhân**.
+**Nhãn tư duy:** TD2, TD4. Điểm chốt: Hai việc phải làm **cùng lúc, nối tiếp** thì nhân; chọn một trong hai khả năng rời nhau thì cộng.
+**Lỗi thường gặp:** Cộng số áo với số quần. Phòng: Tự hỏi: chọn xong áo đã đủ một bộ chưa? Chưa đủ thì phải nhân.
 
 ### Bài B.1
 **Đáp số:** a) Suy luận tổng hợp và mô phỏng đề CLC · b) G — Suy luận logic & Toán đếm · c) 4 · d) ở mọi bài thuộc suy luận logic & toán đếm, vì các chương sau đều dùng lại nền này · e) giải nhanh và chắc các bài suy luận logic tổng hợp với nhiều dữ kiện
@@ -471,39 +463,39 @@ f) Trong sân có 42 chiếc xe đạp và xe ba bánh, đếm được tất c�
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.1
-**Đáp số:** a) mỗi bạn 3 cái, thừa 1 cái · b) 1 cái · c) 5 cái · d) 4 cái · e) mỗi bạn 3 cái, thừa 4 cái · f) phải là số chia hết cho 6
-**Hướng giải:** BẪY — Thêm vào khác với bớt đi. Trong phép chia có dư, **số dư luôn bé hơn số chia**. Muốn chia hết thì hoặc bớt đi đúng phần dư, hoặc thêm vào phần còn thiếu để đủ một suất — phần còn thiếu bằng số chia trừ số dư.
-**Nhãn tư duy:** TD1, TD2. Điểm chốt: Thêm vào thì thêm **số chia trừ số dư**, không phải thêm số dư.
-**Lỗi thường gặp:** Nhầm “thêm bao nhiêu” với “bớt bao nhiêu”, cả hai đều lấy số dư. Phòng: Vẽ một hàng ô: phần dư còn thiếu bao nhiêu ô nữa thì đầy một suất?
-**Gợi ý 3 tầng:** (1) Chia thử xem mỗi bạn được mấy cái, thừa mấy cái. — (2) Bớt đi thì bớt đúng phần thừa. — (3) Thêm vào thì thêm phần còn thiếu để đủ một suất nữa.
-
-### Bài E.2
-**Đáp số:** a) có · b) không, dư 4 · c) có · d) không, dư 1 · e) có
-**Hướng giải:** Nếu hai số cùng chia hết cho một số thì tổng và hiệu của chúng cũng chia hết cho số đó. Nếu một số chia hết còn số kia dư r thì tổng cũng dư đúng r.
-**Nhãn tư duy:** TD2, TD5. Điểm chốt: Xét **số dư** của từng số hạng là đủ, không cần cộng ra kết quả.
-**Lỗi thường gặp:** Cộng hai số ra rồi mới chia — mất thời gian và dễ sai tính. Phòng: Ghi số dư của từng số hạng ngay bên dưới nó.
-**Gợi ý 3 tầng:** (1) Mỗi số hạng có chia hết cho số đó không? — (2) Nếu cả hai cùng chia hết thì tổng chia hết. — (3) Nếu một số dư r, tổng cũng dư r.
-
-### Bài E.3
-**Đáp số:** a) không, vì hai câu phủ định nhau · b) không, vì chúng phủ định nhau · c) đúng một bạn · d) nói dối · e) Quân chính là người làm vỡ lọ hoa · f) Quân
+**Đáp số:** a) không, vì hai câu phủ định nhau · b) không, vì chúng phủ định nhau · c) đúng một bạn · d) nói dối · e) Ngọc chính là người làm vỡ lọ hoa · f) Ngọc
 **Hướng giải:** BẪY — Cặp câu phủ định nhau. Tìm hai câu nói **phủ định nhau**: trong hai câu đó chắc chắn có đúng một câu đúng. Vì cả ba chỉ có một câu đúng, câu đúng ấy nằm trong cặp phủ định, nên câu còn lại (của người thứ ba) là sai. Đọc nội dung câu sai đó để kết luận.
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Cặp câu **phủ định nhau** luôn có đúng một câu đúng — đó là điểm tựa.
 **Lỗi thường gặp:** Thử từng người một cách rời rạc mà không dùng ràng buộc tổng số câu nói thật. Phòng: Đánh số các câu nói, ghi rõ câu nào phủ định câu nào.
 **Gợi ý 3 tầng:** (1) Có hai câu nào phủ định lẫn nhau không? — (2) Trong hai câu đó có mấy câu đúng? — (3) Vậy câu của người thứ ba đúng hay sai?
 
+### Bài E.2
+**Đáp số:** a) xe ô tô: 3 chiếc, xe ba bánh: 29 chiếc · b) xe đạp: 30 chiếc, xe ba bánh: 20 chiếc · c) xe ba bánh: 27 chiếc, xe ô tô: 26 chiếc · d) xe ô tô: 27 chiếc, xe ba bánh: 28 chiếc · e) xe đạp: 28 chiếc, xe ô tô: 6 chiếc
+**Hướng giải:** BẪY — Chia cho hiệu, không chia cho một loại. Giả sử tất cả đều là loại có ít bánh hơn, tính tổng số bánh giả định. Số bánh còn thiếu so với thực tế chia cho hiệu số bánh của hai loại cho biết số xe loại nhiều bánh hơn.
+**Nhãn tư duy:** TD6, TD3. Điểm chốt: Chia cho **hiệu** số bánh của hai loại, không chia cho số bánh của một loại.
+**Lỗi thường gặp:** Chia số bánh thiếu cho số bánh của loại nhiều hơn. Phòng: Thử lại: nhân ngược ra tổng số bánh, phải khớp với đề.
+**Gợi ý 3 tầng:** (1) Giả sử tất cả đều là loại ít bánh thì có bao nhiêu bánh? — (2) So với thực tế thì thiếu bao nhiêu bánh? — (3) Mỗi lần đổi một chiếc thì số bánh tăng thêm bao nhiêu?
+
+### Bài E.3
+**Đáp số:** a) (16 + 10) × 2 = 52 m · b) 52 − 2 = 50 m · c) 52 : 2 = 26 cọc · d) 50 × 30 000 = 1 500 000 đồng · e) 16 × 10 = 160 m²
+**Hướng giải:** BẪY — Quên rằng quanh vườn khép kín thì số cọc bằng số khoảng. Tính chu vi trước, mọi câu về rào và cọc đều dựa vào nó. Riêng số cọc phải nhớ đường rào khép kín nên không cộng thêm 1.
+**Nhãn tư duy:** TD2, TD4. Điểm chốt: Đường khép kín: số cọc = số khoảng. Đường thẳng có hai đầu: số cọc = số khoảng + 1.
+**Lỗi thường gặp:** Cộng thêm 1 vào số cọc như bài trồng cây trên đoạn thẳng. Phòng: Vẽ nhanh hình vuông 4 cạnh, cắm cọc thử rồi đếm.
+**Gợi ý 3 tầng:** (1) Muốn biết rào hết bao nhiêu mét thì phải tính cái gì trước? — (2) Đường rào có điểm đầu và điểm cuối tách rời nhau không? — (3) Với đường khép kín thì số cọc bằng đúng số khoảng.
+
 ### Bài E.4
-**Đáp số:** a) 8 · b) 19 · c) 17 · d) 12 · e) 14 · f) 38 · g) 23
+**Đáp số:** a) 24 · b) 41 · c) 28 · d) 9 · e) 32
 **Hướng giải:** BẪY — Năm trường hợp khác nhau. Tính **số khoảng** trước: độ dài chia khoảng cách. Rồi chọn công thức theo trường hợp — trồng cả hai đầu thì cộng 1, một đầu thì bằng, không đầu nào thì trừ 1, khép kín thì bằng, cưa thành đoạn thì trừ 1.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Năm trường hợp cho **năm đáp số khác nhau** với cùng một số khoảng.
 **Lỗi thường gặp:** Máy móc cộng 1 cho mọi trường hợp. Phòng: Vẽ hình ba khoảng, đếm tay rồi mới áp dụng cho số lớn.
 **Gợi ý 3 tầng:** (1) Số khoảng bằng bao nhiêu? — (2) Đề nói trồng cả hai đầu, một đầu, hay khép kín? — (3) Cưa thành đoạn thì số nhát cưa ít hơn số đoạn 1.
 
 ### Bài E.5
-**Đáp số:** a) xe đạp: 19 chiếc, xe ba bánh: 21 chiếc · b) xe ô tô: 3 chiếc, xe ba bánh: 6 chiếc · c) xe đạp: 12 chiếc, xe ba bánh: 6 chiếc · d) xe đạp: 29 chiếc, xe ba bánh: 5 chiếc · e) xe ba bánh: 24 chiếc, xe ô tô: 30 chiếc · f) xe đạp: 25 chiếc, xe ba bánh: 17 chiếc
-**Hướng giải:** BẪY — Chia cho hiệu, không chia cho một loại. Giả sử tất cả đều là loại có ít bánh hơn, tính tổng số bánh giả định. Số bánh còn thiếu so với thực tế chia cho hiệu số bánh của hai loại cho biết số xe loại nhiều bánh hơn.
-**Nhãn tư duy:** TD6, TD3. Điểm chốt: Chia cho **hiệu** số bánh của hai loại, không chia cho số bánh của một loại.
-**Lỗi thường gặp:** Chia số bánh thiếu cho số bánh của loại nhiều hơn. Phòng: Thử lại: nhân ngược ra tổng số bánh, phải khớp với đề.
-**Gợi ý 3 tầng:** (1) Giả sử tất cả đều là loại ít bánh thì có bao nhiêu bánh? — (2) So với thực tế thì thiếu bao nhiêu bánh? — (3) Mỗi lần đổi một chiếc thì số bánh tăng thêm bao nhiêu?
+**Đáp số:** a) mỗi bạn 5 cái, thừa 3 cái · b) 3 cái · c) 1 cái · d) 6 cái · e) mỗi bạn 7 cái, thừa 2 cái · f) phải là số chia hết cho 4
+**Hướng giải:** Trong phép chia có dư, **số dư luôn bé hơn số chia**. Muốn chia hết thì hoặc bớt đi đúng phần dư, hoặc thêm vào phần còn thiếu để đủ một suất — phần còn thiếu bằng số chia trừ số dư.
+**Nhãn tư duy:** TD1, TD2. Điểm chốt: Thêm vào thì thêm **số chia trừ số dư**, không phải thêm số dư.
+**Lỗi thường gặp:** Nhầm “thêm bao nhiêu” với “bớt bao nhiêu”, cả hai đều lấy số dư. Phòng: Vẽ một hàng ô: phần dư còn thiếu bao nhiêu ô nữa thì đầy một suất?
+**Gợi ý 3 tầng:** (1) Chia thử xem mỗi bạn được mấy cái, thừa mấy cái. — (2) Bớt đi thì bớt đúng phần thừa. — (3) Thêm vào thì thêm phần còn thiếu để đủ một suất nữa.
 
 ---
 

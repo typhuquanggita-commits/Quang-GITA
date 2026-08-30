@@ -28,60 +28,59 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ### Bài 1. (2 điểm — 10 phút) Tính và điền kết quả
 
-Cho số **71 771**.
+Cho số **51 157**.
 
-a) Số 71 771 có bao nhiêu chữ số?
+a) Số 51 157 có bao nhiêu chữ số?
 b) Chữ số hàng đơn vị là chữ số nào?
 c) Chữ số hàng trăm là chữ số nào?
 d) Chữ số hàng nghìn là chữ số nào?
-e) Viết số 71 771 thành tổng các giá trị hàng.
-f) Tổng các chữ số của số 71 771 bằng bao nhiêu?
+e) Viết số 51 157 thành tổng các giá trị hàng.
+f) Tổng các chữ số của số 51 157 bằng bao nhiêu?
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
 Tìm x.
 
-a) x × 9 = 621
-b) x × 3 = 51
-c) x + 8 = 36
-d) x : 4 = 44
-e) x − 3 = 76
-f) x : 6 = 69
+a) x − 4 = 31
+b) x + 8 = 35
+c) x + 9 = 70
+d) x + 6 = 41
+e) x + 8 = 59
+f) x − 7 = 80
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
 Đọc kĩ rồi trả lời từng câu.
 
-a) An có 16 quyển vở, Khánh có số vở gấp 4 lần An. Khánh có bao nhiêu quyển vở?
-b) An có 26 quyển vở, Khánh có ít hơn An 17 quyển. Khánh có bao nhiêu quyển vở?
-c) An có 38 quyển vở, Khánh có nhiều hơn An 19 quyển. Khánh có bao nhiêu quyển vở?
-d) An có 112 quyển vở, số vở của Khánh kém 2 lần số vở của An. Khánh có bao nhiêu quyển vở?
+a) Quân có 34 quyển vở, Dũng có nhiều hơn Quân 27 quyển. Dũng có bao nhiêu quyển vở?
+b) Quân có 71 quyển vở, Dũng có ít hơn Quân 18 quyển. Dũng có bao nhiêu quyển vở?
+c) Quân có 36 quyển vở, số vở của Dũng kém 4 lần số vở của Quân. Dũng có bao nhiêu quyển vở?
+d) Quân có 58 quyển vở, Dũng có số vở gấp 6 lần Quân. Dũng có bao nhiêu quyển vở?
+e) Quân có 125 quyển vở, số vở của Dũng kém 5 lần số vở của Quân. Dũng có bao nhiêu quyển vở?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
-Vẽ hình tròn và ghi kí hiệu lên hình.
+Một mảnh vườn hình chữ nhật dài **14 m**, rộng **6 m**.
 
-a) Hình tròn có đường kính 30 cm. Bán kính dài bao nhiêu?
-b) Hình tròn A có bán kính 35 cm, hình tròn B có đường kính 10 cm. Hình nào lớn hơn?
-c) Hình tròn có bán kính 9 cm. Đường kính dài bao nhiêu?
-d) Hình tròn có bán kính 13 cm. Đường kính dài bao nhiêu?
-e) Hình tròn A có bán kính 35 cm, hình tròn B có đường kính 76 cm. Hình nào lớn hơn?
-f) Hình tròn có đường kính 80 cm. Bán kính dài bao nhiêu?
+a) Tính chu vi mảnh vườn.
+b) Rào quanh vườn hết bao nhiêu mét lưới, biết chừa một cửa rộng 2 m?
+c) Cắm cọc quanh vườn, hai cọc liền nhau cách nhau 2 m. Cần bao nhiêu cọc?
+d) Mỗi mét lưới giá 25 000 đồng. Mua lưới rào hết bao nhiêu tiền?
+e) Diện tích mảnh vườn là bao nhiêu?
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
-Xét trường hợp xấu nhất, không xét trường hợp may mắn.
+Vẽ hình minh hoạ trước khi tính.
 
-a) Có 3 gói kẹo giống hệt nhau, trong đó đúng một gói nhẹ hơn. Dùng cân đĩa không có quả cân, cần cân ít nhất mấy lần để tìm ra gói nhẹ?
-b) Một lần cân bằng cân đĩa cho mấy kết quả khác nhau?
-c) Vì thế mỗi lần cân nên chia số gói thành mấy phần?
-d) Sau lần cân thứ nhất, số gói còn phải xét nhiều nhất là bao nhiêu?
-e) Biết Chi nặng hơn Minh, Minh nặng hơn Trang. Ai nhẹ nhất?
-f) Với ba bạn ấy, cần cân ít nhất mấy lần để xếp thứ tự từ nhẹ đến nặng?
+a) Đoạn đường dài 96 m, trồng cây cách nhau 4 m, không trồng ở hai đầu. Cần bao nhiêu cây?
+b) Đoạn đường dài 44 m, trồng cây cách nhau 4 m, chỉ trồng ở một đầu. Cần bao nhiêu cây?
+c) Quanh một cái ao có chu vi 84 m, trồng cây cách nhau 4 m. Cần bao nhiêu cây?
+d) Đoạn đường dài 50 m, trồng cây cách nhau 2 m, trồng cả hai đầu. Cần bao nhiêu cây?
+e) Đoạn đường dài 32 m, trồng cây cách nhau 2 m, không trồng ở hai đầu. Cần bao nhiêu cây?
 
 
 ---
@@ -92,99 +91,98 @@ f) Với ba bạn ấy, cần cân ít nhất mấy lần để xếp thứ tự
 ### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
 a) **5**
-b) **1**
-c) **7**
+b) **7**
+c) **1**
 d) **1**
-e) **70 000 + 1 000 + 700 + 70 + 1**
-f) **23**
+e) **50 000 + 1 000 + 100 + 50 + 7**
+f) **19**
 
 **Cách giải mẫu:**
 
 1. Đếm từ phải sang trái: đơn vị, chục, trăm, nghìn, chục nghìn.
-2. Số 71 771 có 5 chữ số.
-3. Chữ số hàng đơn vị là chữ số cuối cùng bên phải: 1.
-4. Viết thành tổng: 70 000 + 1 000 + 700 + 70 + 1.
-5. Cộng các chữ số: 7 + 1 + 7 + 7 + 1 = 23.
+2. Số 51 157 có 5 chữ số.
+3. Chữ số hàng đơn vị là chữ số cuối cùng bên phải: 7.
+4. Viết thành tổng: 50 000 + 1 000 + 100 + 50 + 7.
+5. Cộng các chữ số: 5 + 1 + 1 + 5 + 7 = 19.
 6. Đáp số ý a: **5 chữ số**.
 
 *Lỗi hay mắc:* Đếm hàng từ trái sang phải nên lệch hàng.
 
 ### Bài 2, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **x = 69**
-b) **x = 17**
-c) **x = 28**
-d) **x = 176**
-e) **x = 79**
-f) **x = 414**
+a) **x = 35**
+b) **x = 27**
+c) **x = 61**
+d) **x = 35**
+e) **x = 51**
+f) **x = 87**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: x × 9 = 621
+1. Xét ý a: x − 4 = 31
 2. Đọc vị: đây là dạng **Tìm x trong phép tính một bước**; dấu hiệu là Có chữ x đứng trong một phép tính.
 3. Kiến thức phải dùng: Quan hệ giữa các thành phần của phép tính.
 4. Cách làm: Gọi tên vai trò của x rồi dùng quy tắc tương ứng.
 5. Lối tắt: Thử lại bằng cách thay x vào đề — mất 3 giây nhưng chắc chắn.
-6. Kết quả: **x = 69**.
+6. Kết quả: **x = 35**.
 
 *Lỗi hay mắc:* Áp dụng nhầm quy tắc của số trừ cho số bị trừ.
 
-### Bài 3, (2 điểm — mỗi ý 0,5 điểm)
+### Bài 3, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **64**
-b) **9**
-c) **57**
-d) **56**
+a) **61**
+b) **53**
+c) **9**
+d) **348**
+e) **25**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: An có 16 quyển vở, Khánh có số vở gấp 4 lần An. Khánh có bao nhiêu quyển vở?
+1. Xét ý a: Quân có 34 quyển vở, Dũng có nhiều hơn Quân 27 quyển. Dũng có bao nhiêu quyển vở?
 2. Đọc vị: đây là dạng **Quan hệ nhiều hơn – ít hơn, gấp – kém**; dấu hiệu là Các cụm “nhiều hơn”, “ít hơn”, “gấp … lần”, “kém … lần”.
 3. Kiến thức phải dùng: Bốn phép tính, từ khoá chỉ quan hệ.
 4. Cách làm: Đọc vị từ khoá → chọn phép tính.
 5. Lối tắt: Kết quả lớn hơn hay bé hơn số đã cho? Trả lời được là biết ngay phép tính.
-6. Kết quả: **64**.
+6. Kết quả: **61**.
 
 *Lỗi hay mắc:* Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”.
 
-### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 4, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **15 cm**
-b) **A**
-c) **18 cm**
-d) **26 cm**
-e) **B**
-f) **40 cm**
-
-**Cách giải mẫu:**
-
-1. Xét ý a: Hình tròn có đường kính 30 cm. Bán kính dài bao nhiêu?
-2. Đọc vị: đây là dạng **Nhận biết hình tròn và các yếu tố**; dấu hiệu là Đề nhắc tâm, bán kính, đường kính.
-3. Kiến thức phải dùng: Quan hệ đường kính – bán kính.
-4. Cách làm: Quy về bán kính rồi so sánh hoặc tính.
-5. Lối tắt: Nhìn đơn vị và tên đại lượng trước khi so sánh.
-6. Kết quả: **15 cm**.
-
-*Lỗi hay mắc:* So bán kính của hình này với đường kính của hình kia.
-
-### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
-
-a) **1 lần**
-b) **3 kết quả: nghiêng trái, nghiêng phải, thăng bằng**
-c) **3 phần**
-d) **1**
-e) **Trang**
-f) **2 lần**
+a) **(14 + 6) × 2 = 40 m**
+b) **40 − 2 = 38 m**
+c) **40 : 2 = 20 cọc**
+d) **38 × 25 000 = 950 000 đồng**
+e) **14 × 6 = 84 m²**
 
 **Cách giải mẫu:**
 
-1. Cân đĩa cho **ba** kết quả, nên mỗi lần cân chia được số gói thành ba phần và loại ngay hai phần.
-2. Chia 3 gói thành ba phần, mỗi phần nhiều nhất 1 gói.
-3. Đặt hai phần bằng nhau lên hai đĩa: bên nào nhẹ hơn thì gói nhẹ ở đó; cân bằng thì gói nhẹ ở phần còn lại.
-4. Lặp lại cách ấy, sau 1 lần thì còn đúng một gói.
-5. Đáp số: **1 lần**.
+1. Chu vi hình chữ nhật = (dài + rộng) × 2 = (14 + 6) × 2 = **40 m**.
+2. Chừa cửa 2 m thì lưới chỉ cần 40 − 2 = 38 m.
+3. Số cọc: đường rào là một **đường khép kín**, nên cọc đầu tiên cũng chính là cọc cuối cùng — **số cọc bằng đúng số khoảng**, không cộng thêm 1. Vậy 40 : 2 = **20 cọc**.
+4. Tiền lưới: 38 × 25 000 = **950 000 đồng**.
+5. Diện tích: 14 × 6 = **84 m²** — chú ý đơn vị là mét vuông, khác với chu vi tính bằng mét.
 
-*Lỗi hay mắc:* Chia đôi như tìm kiếm thông thường nên cần nhiều lần cân hơn mức cần thiết.
+*Lỗi hay mắc:* Cộng thêm 1 vào số cọc như bài trồng cây trên đoạn thẳng.
+
+### Bài 5, (2 điểm — mỗi ý 0,4 điểm)
+
+a) **23**
+b) **11**
+c) **21**
+d) **26**
+e) **15**
+
+**Cách giải mẫu:**
+
+1. Xét ý a: Đoạn đường dài 96 m, trồng cây cách nhau 4 m, không trồng ở hai đầu. Cần bao nhiêu cây?
+2. Đọc vị: đây là dạng **Bài toán trồng cây**; dấu hiệu là “Trồng cây”, “cột điện”, “quanh ao”.
+3. Kiến thức phải dùng: Quan hệ số cây – số khoảng.
+4. Cách làm: Số khoảng rồi chọn công thức theo trường hợp.
+5. Lối tắt: Khép kín thì số cây bằng đúng số khoảng.
+6. Kết quả: **23**.
+
+*Lỗi hay mắc:* Máy móc cộng 1 cho mọi trường hợp.
 
 ---
 
@@ -197,8 +195,8 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài 1 | Đọc, viết, cấu tạo số | Đếm hàng từ trái sang phải nên lệch hàng. | Nhóm chuyên đề **—** · mức — |
 | Bài 2 | Tìm x trong phép tính một bước | Áp dụng nhầm quy tắc của số trừ cho số bị trừ. | Nhóm chuyên đề **—** · mức — |
 | Bài 3 | Quan hệ nhiều hơn – ít hơn, gấp – kém | Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. | Nhóm chuyên đề **—** · mức — |
-| Bài 4 | Nhận biết hình tròn và các yếu tố | So bán kính của hình này với đường kính của hình kia. | Nhóm chuyên đề **—** · mức — |
-| Bài 5 | Cân đĩa, tìm vật khác biệt | Chia đôi như tìm kiếm thông thường nên cần nhiều lần cân hơn mức cần thiết. | Nhóm chuyên đề **—** · mức — |
+| Bài 4 | Chu vi hình chữ nhật | Cộng thêm 1 vào số cọc như bài trồng cây trên đoạn thẳng. | Nhóm chuyên đề **—** · mức — |
+| Bài 5 | Bài toán trồng cây | Máy móc cộng 1 cho mọi trường hợp. | Nhóm chuyên đề **—** · mức — |
 
 ---
 

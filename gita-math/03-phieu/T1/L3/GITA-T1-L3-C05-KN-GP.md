@@ -30,11 +30,11 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần A**
 
-- **Bài A.1** — a) chữ số 6, giá trị 60 000 · b) chữ số 8, giá trị 8 000 · c) chữ số 6, giá trị 600 · d) chữ số 8, giá trị 80 · e) chữ số 7, giá trị 7
-- **Bài A.2** — a) 6 tấn 4 tạ 46 kg · b) 6 tấn 9 tạ 80 kg · c) 1 tấn 5 tạ 47 kg · d) 1 tấn 2 tạ 3 kg
-- **Bài A.3** — a) 6 000 · b) 2 000 · c) 110 · d) 310 · e) 460 · f) 30 · g) 3 800
-- **Bài A.4** — a) 9 812 · b) > · c) 40 · d) 22 000 · e) 8 · f) 36 535 · g) > · h) 39 000
-- **Bài A.5** — a) 4 giờ 52 phút · b) 9 giờ 51 phút · c) 428 · d) 2 giờ 19 phút
+- **Bài A.1** — a) 5 chữ số, tổng 23 · b) 5 chữ số, tổng 15 · c) 5 chữ số, tổng 29 · d) 5 chữ số, tổng 20 · e) 5 chữ số, tổng 28 · f) 5 chữ số, tổng 36
+- **Bài A.2** — a) 11 425 · b) 15 · c) > · d) 36 000 · e) 5 000 · f) > · g) 33 844 · h) 38
+- **Bài A.3** — a) 4 giờ 50 phút · b) 264 · c) 1 giờ 8 phút · d) 7 giờ 11 phút · e) 448 · f) 6 giờ 41 phút · g) 10 phút
+- **Bài A.4** — a) 6 313 · b) 1 tấn 8 tạ 75 kg · c) 5 tấn 1 tạ 6 kg · d) 3 436
+- **Bài A.5** — a) 90 · b) 700 000 · c) 550 000 · d) 3 500 · e) 7 500
 
 **Phần B**
 
@@ -74,75 +74,33 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 Mỗi bài có hai phần: **các bước giải** với số liệu thật của chính bài ấy, và **cách nghĩ** áp dụng cho mọi bài cùng dạng. Đọc kĩ phần chữ đậm — đó là câu cần nhớ, không phải con số.
 
-### Bài A.1 — Đọc giá trị của chữ số theo hàng
+### Bài A.1 — Đếm chữ số và tính tổng các chữ số
 
 **Các bước giải**
 
-Xét ý a: Chữ số ở hàng **chục nghìn** của số 68 687 là chữ số nào, và nó có giá trị bằng bao nhiêu?
+Xét ý a: Số 77 234 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
 
-Đọc vị: đây là dạng **Xác định chữ số và giá trị chữ số theo hàng**; dấu hiệu là Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …”.
+Đọc vị: đây là dạng **Đếm chữ số, tính tổng chữ số**; dấu hiệu là Yêu cầu “có mấy chữ số”, “tổng các chữ số”.
 
-Kiến thức phải dùng: Cấu tạo thập phân của số tự nhiên.
+Kiến thức phải dùng: Cấu tạo số, tổng chữ số.
 
-Cách làm: Đánh số hàng từ phải sang trái rồi tra bảng hàng.
+Cách làm: Tách lớp để đếm; cộng rời từng chữ số.
 
-Lối tắt: Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị.
+Lối tắt: Ghép cặp các chữ số cộng lại tròn 10 rồi cộng nhanh.
 
-Kết quả: **chữ số 6, giá trị 60 000**.
+Kết quả: **5 chữ số, tổng 23**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Đếm hàng từ phải sang trái: đơn vị – chục – trăm – nghìn – chục nghìn – trăm nghìn – triệu. Giá trị của một chữ số bằng chính chữ số đó nhân với giá trị của hàng nó đứng.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Đếm số chữ số bằng cách tách số theo lớp (mỗi lớp 3 chữ số). Tổng các chữ số là cộng tất cả các chữ số lại, không phân biệt hàng.
 
-*Điểm chốt:* Phân biệt **chữ số** (một kí hiệu) với **giá trị** của chữ số (chữ số nhân giá trị hàng).
+*Điểm chốt:* Tổng các chữ số **không** phụ thuộc thứ tự các chữ số.
 
-### Bài A.2 — Đổi số đo khối lượng có nhiều đơn vị
-
-**Các bước giải**
-
-Xét ý a: 6 446 kg = … tấn … tạ … kg
-
-Đọc vị: đây là dạng **Số đo có nhiều đơn vị**; dấu hiệu là Số đo viết dưới dạng “… tấn … tạ … kg”.
-
-Kiến thức phải dùng: Bảng đơn vị khối lượng.
-
-Cách làm: Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư.
-
-Lối tắt: Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ.
-
-Kết quả: **6 tấn 4 tạ 46 kg**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** 1 tấn = 10 tạ = 1 000 kg; 1 tạ = 100 kg; 1 yến = 10 kg. Đổi tất cả về ki-lô-gam rồi cộng lại; hoặc ngược lại, chia dần từ đơn vị lớn xuống đơn vị bé và lấy phần dư.
-
-*Điểm chốt:* Đổi hết về **một đơn vị chung** trước khi cộng.
-
-### Bài A.3 — Đổi đơn vị đo độ dài và khối lượng
-
-> **BẪY — Chiều đổi đơn vị.**
-
-**Các bước giải**
-
-Xét ý a: 6 hm = … dm
-
-Đọc vị: đây là dạng **Đổi đơn vị đo**; dấu hiệu là Dấu … giữa hai đơn vị khác nhau.
-
-Kiến thức phải dùng: Bảng đơn vị đo độ dài, khối lượng.
-
-Cách làm: Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10.
-
-Lối tắt: Số bậc chính là số chữ số 0 phải thêm vào (hoặc bớt đi).
-
-Kết quả: **6 000**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
-
-*Điểm chốt:* Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
-
-### Bài A.4 — Mi-li-lít và lít
+### Bài A.2 — Mi-li-lít và lít
 
 > **BẪY — Đơn vị khác nhau.**
 
 **Các bước giải**
 
-Xét ý a: 9 l 812 ml = … ml
+Xét ý a: 11 l 425 ml = … ml
 
 Đọc vị: đây là dạng **Đổi và so sánh đơn vị dung tích**; dấu hiệu là Có chữ l, ml trong đề.
 
@@ -152,7 +110,7 @@ Cách làm: Đưa về cùng đơn vị rồi tính hoặc so sánh.
 
 Lối tắt: Nhân 1 000 là thêm ba chữ số 0 vào bên phải.
 
-Kết quả: **9 812**.
+Kết quả: **11 425**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** 1 lít = 1 000 mi-li-lít. Đổi từ đơn vị lớn sang đơn vị bé thì nhân, ngược lại thì chia. Muốn so sánh thì phải đưa về cùng một đơn vị trước.
 
@@ -162,11 +120,13 @@ Kết quả: **9 812**.
 
 *Phải chắc trước khi làm bài này:* Nhân, chia với 1 000 và so sánh số tự nhiên.
 
-### Bài A.5 — Đơn vị đo thời gian: giờ và phút
+### Bài A.3 — Đơn vị đo thời gian: giờ và phút
+
+> **BẪY — Cơ số 60 chứ không phải 10.**
 
 **Các bước giải**
 
-Xét ý a: 2 giờ 46 phút + 126 phút = … (viết dạng giờ và phút)
+Xét ý a: 290 phút = … giờ … phút
 
 Đọc vị: đây là dạng **Đổi và tính toán với đơn vị thời gian**; dấu hiệu là Số đo có chữ “giờ”, “phút”, “giây”.
 
@@ -176,11 +136,51 @@ Cách làm: Quy về phút rồi tính, cuối cùng đổi lại giờ và phú
 
 Lối tắt: Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm.
 
-Kết quả: **4 giờ 52 phút**.
+Kết quả: **4 giờ 50 phút**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
 
 *Điểm chốt:* Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
+
+### Bài A.4 — Đổi số đo khối lượng có nhiều đơn vị
+
+**Các bước giải**
+
+Xét ý a: 6 tấn 3 tạ 13 kg = … kg
+
+Đọc vị: đây là dạng **Số đo có nhiều đơn vị**; dấu hiệu là Số đo viết dưới dạng “… tấn … tạ … kg”.
+
+Kiến thức phải dùng: Bảng đơn vị khối lượng.
+
+Cách làm: Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư.
+
+Lối tắt: Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ.
+
+Kết quả: **6 313**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** 1 tấn = 10 tạ = 1 000 kg; 1 tạ = 100 kg; 1 yến = 10 kg. Đổi tất cả về ki-lô-gam rồi cộng lại; hoặc ngược lại, chia dần từ đơn vị lớn xuống đơn vị bé và lấy phần dư.
+
+*Điểm chốt:* Đổi hết về **một đơn vị chung** trước khi cộng.
+
+### Bài A.5 — Đổi đơn vị đo độ dài và khối lượng
+
+**Các bước giải**
+
+Xét ý a: 9 kg = … hg
+
+Đọc vị: đây là dạng **Đổi đơn vị đo**; dấu hiệu là Dấu … giữa hai đơn vị khác nhau.
+
+Kiến thức phải dùng: Bảng đơn vị đo độ dài, khối lượng.
+
+Cách làm: Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10.
+
+Lối tắt: Số bậc chính là số chữ số 0 phải thêm vào (hoặc bớt đi).
+
+Kết quả: **90**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
+
+*Điểm chốt:* Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
 
 ### Bài B.1 — Bốn dòng bắt buộc của một lời giải
 
@@ -590,11 +590,11 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
-| A.1 | Xác định chữ số và giá trị chữ số theo hàng | Cấu tạo thập phân của số tự nhiên | Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” | Đánh số hàng từ phải sang trái rồi tra bảng hàng | Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị. | chữ số 6, giá trị 60 000 · chữ số 8, giá trị 8 000 · chữ số 6, giá trị 600 · chữ số 8, giá trị 80… |
-| A.2 | Số đo có nhiều đơn vị | Bảng đơn vị khối lượng | Số đo viết dưới dạng “… tấn … tạ … kg” | Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư | Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ. | 6 tấn 4 tạ 46 kg · 6 tấn 9 tạ 80 kg · 1 tấn 5 tạ 47 kg · 1 tấn 2 tạ 3 kg |
-| A.3 | Đổi đơn vị đo | Bảng đơn vị đo độ dài, khối lượng | Dấu … giữa hai đơn vị khác nhau | Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10 | Số bậc chính là số chữ số 0 phải thêm vào (hoặc bớt đi). | 6 000 · 2 000 · 110 · 310… |
-| A.4 | Đổi và so sánh đơn vị dung tích | Quan hệ lít – mi-li-lít | Có chữ l, ml trong đề | Đưa về cùng đơn vị rồi tính hoặc so sánh | Nhân 1 000 là thêm ba chữ số 0 vào bên phải. | 9 812 · > · 40 · 22 000… |
-| A.5 | Đổi và tính toán với đơn vị thời gian | Quan hệ giờ – phút – giây | Số đo có chữ “giờ”, “phút”, “giây” | Quy về phút rồi tính, cuối cùng đổi lại giờ và phút | Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm. | 4 giờ 52 phút · 9 giờ 51 phút · 428 · 2 giờ 19 phút |
+| A.1 | Đếm chữ số, tính tổng chữ số | Cấu tạo số, tổng chữ số | Yêu cầu “có mấy chữ số”, “tổng các chữ số” | Tách lớp để đếm; cộng rời từng chữ số | Ghép cặp các chữ số cộng lại tròn 10 rồi cộng nhanh. | 5 chữ số, tổng 23 · 5 chữ số, tổng 15 · 5 chữ số, tổng 29 · 5 chữ số, tổng 20… |
+| A.2 | Đổi và so sánh đơn vị dung tích | Quan hệ lít – mi-li-lít | Có chữ l, ml trong đề | Đưa về cùng đơn vị rồi tính hoặc so sánh | Nhân 1 000 là thêm ba chữ số 0 vào bên phải. | 11 425 · 15 · > · 36 000… |
+| A.3 | Đổi và tính toán với đơn vị thời gian | Quan hệ giờ – phút – giây | Số đo có chữ “giờ”, “phút”, “giây” | Quy về phút rồi tính, cuối cùng đổi lại giờ và phút | Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm. | 4 giờ 50 phút · 264 · 1 giờ 8 phút · 7 giờ 11 phút… |
+| A.4 | Số đo có nhiều đơn vị | Bảng đơn vị khối lượng | Số đo viết dưới dạng “… tấn … tạ … kg” | Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư | Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ. | 6 313 · 1 tấn 8 tạ 75 kg · 5 tấn 1 tạ 6 kg · 3 436 |
+| A.5 | Đổi đơn vị đo | Bảng đơn vị đo độ dài, khối lượng | Dấu … giữa hai đơn vị khác nhau | Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10 | Số bậc chính là số chữ số 0 phải thêm vào (hoặc bớt đi). | 90 · 700 000 · 550 000 · 3 500… |
 | B.1 | Kỹ năng trình bày | Chuẩn trình bày bài giải | Yêu cầu “trình bày lời giải” | Viết đủ bốn dòng | Viết câu lời giải trước, phép tính sau — không bao giờ ngược lại. | câu lời giải nêu rõ đang tìm đại lượng nào · phép tính, viết đủ dấu và đủ đơn vị · kết quả kèm đơn vị · câu đáp số… |
 | B.2 | Kỹ năng viết câu lời giải | Chuẩn trình bày | Đề hỏi gì thì câu lời giải nhắc lại điều đó | Lấy cụm từ trong câu hỏi làm câu lời giải | Sao chép cụm từ trong câu hỏi là cách viết câu lời giải nhanh và chắc nhất. | “Tính thời gian trong ngày là:” · “Số đo có nhiều đơn vị là:” · “Bài toán cân, chia hết là:” · “Bài toán tiền tệ hai bước là:”… |
 | B.3 | Kỹ năng ghi đơn vị | Đơn vị đo các đại lượng | Đáp số của bài có đại lượng đo | Kiểm tra đơn vị ở bước cuối | Nhìn đơn vị của đáp số là biết ngay mình có nhầm chu vi với diện tích không. | không ghi trong dấu ngoặc phép tính · có, bắt buộc · có, bắt buộc · đơn vị vuông, ví dụ cm²… |
@@ -622,11 +622,11 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 
 | Bài | Nhãn tư duy | Điểm chốt |
 |---|---|---|
-| A.1 | TD1 | Phân biệt **chữ số** (một kí hiệu) với **giá trị** của chữ số (chữ số nhân giá trị hàng). |
-| A.2 | TD1, TD3 | Đổi hết về **một đơn vị chung** trước khi cộng. |
-| A.3 | TD1 | Đếm đúng **số bậc** giữa hai đơn vị trên bảng. |
-| A.4 | TD1 | So sánh **chỉ sau khi** đã đưa về cùng đơn vị. |
-| A.5 | TD1, TD3 | Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác. |
+| A.1 | TD1 | Tổng các chữ số **không** phụ thuộc thứ tự các chữ số. |
+| A.2 | TD1 | So sánh **chỉ sau khi** đã đưa về cùng đơn vị. |
+| A.3 | TD1, TD3 | Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác. |
+| A.4 | TD1, TD3 | Đổi hết về **một đơn vị chung** trước khi cộng. |
+| A.5 | TD1 | Đếm đúng **số bậc** giữa hai đơn vị trên bảng. |
 | B.1 | TD1 | Có lời giải đúng mà trình bày thiếu vẫn **mất điểm thật**. |
 | B.2 | TD1 | Câu lời giải phải **nêu đúng đại lượng** đang tìm. |
 | B.3 | TD1 | Diện tích **luôn** có đơn vị vuông, thể tích luôn có đơn vị khối. |
@@ -656,11 +656,11 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 
 | Bài | Lỗi thường gặp | Cách phòng |
 |---|---|---|
-| A.1 | Đếm hàng từ trái sang phải nên lệch hàng. | Luôn viết số ra nháp rồi đánh dấu hàng đơn vị trước, đi ngược về trái. |
-| A.2 | Cộng thẳng các số đứng trước những đơn vị khác nhau. | Viết mỗi thành phần thành số ki-lô-gam ngay bên dưới rồi mới cộng. |
-| A.3 | Đổi ngược chiều nên nhân thành chia. | Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay. |
-| A.4 | So thẳng hai con số mà bỏ qua đơn vị. | Viết lại cả hai vế theo mi-li-lít rồi mới so. |
-| A.5 | Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. | Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không. |
+| A.1 | Cộng cả giá trị hàng (ví dụ cộng 300 thay vì cộng 3). | Viết rời từng chữ số ra rồi mới cộng. |
+| A.2 | So thẳng hai con số mà bỏ qua đơn vị. | Viết lại cả hai vế theo mi-li-lít rồi mới so. |
+| A.3 | Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. | Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không. |
+| A.4 | Cộng thẳng các số đứng trước những đơn vị khác nhau. | Viết mỗi thành phần thành số ki-lô-gam ngay bên dưới rồi mới cộng. |
+| A.5 | Đổi ngược chiều nên nhân thành chia. | Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay. |
 | B.1 | Viết thẳng phép tính, bỏ câu lời giải. | Đọc lại bài đã làm, đếm xem có đủ bốn dòng chưa. |
 | B.2 | Viết câu lời giải chung chung cho mọi bài. | Lấy đúng cụm từ trong câu hỏi của đề làm câu lời giải. |
 | B.3 | Ghi diện tích bằng cm thay vì cm². | Trước khi viết đáp số, hỏi: đại lượng này đo bằng gì? |
@@ -688,11 +688,11 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 
 Đọc tầng 1 trước; chỉ đọc tầng sau khi đã thử lại ít nhất 3 phút.
 
-**Bài A.1** — (1) Hàng đơn vị là chữ số cuối cùng bên phải. — (2) Đếm ngược: đơn vị, chục, trăm, nghìn… — (3) Giá trị = chữ số × 1, 10, 100, 1 000… tuỳ hàng.
-**Bài A.2** — (1) 1 tấn bằng bao nhiêu ki-lô-gam? — (2) Đổi từng phần về ki-lô-gam. — (3) Cộng tất cả lại.
-**Bài A.3** — (1) Viết bảng đơn vị từ lớn đến bé. — (2) Đếm xem hai đơn vị cách nhau mấy bậc. — (3) Từ lớn sang bé thì nhân, mỗi bậc nhân 10.
-**Bài A.4** — (1) 1 lít bằng bao nhiêu mi-li-lít? — (2) Đơn vị nào lớn hơn? — (3) Từ lớn sang bé thì nhân.
-**Bài A.5** — (1) 1 giờ bằng bao nhiêu phút? — (2) Chia số phút cho 60, lấy thương và số dư. — (3) Phần phút của kết quả phải bé hơn 60.
+**Bài A.1** — (1) Tách số thành từng lớp ba chữ số. — (2) Viết các chữ số cách nhau ra nháp. — (3) Cộng các chữ số, không cộng giá trị hàng.
+**Bài A.2** — (1) 1 lít bằng bao nhiêu mi-li-lít? — (2) Đơn vị nào lớn hơn? — (3) Từ lớn sang bé thì nhân.
+**Bài A.3** — (1) 1 giờ bằng bao nhiêu phút? — (2) Chia số phút cho 60, lấy thương và số dư. — (3) Phần phút của kết quả phải bé hơn 60.
+**Bài A.4** — (1) 1 tấn bằng bao nhiêu ki-lô-gam? — (2) Đổi từng phần về ki-lô-gam. — (3) Cộng tất cả lại.
+**Bài A.5** — (1) Viết bảng đơn vị từ lớn đến bé. — (2) Đếm xem hai đơn vị cách nhau mấy bậc. — (3) Từ lớn sang bé thì nhân, mỗi bậc nhân 10.
 **Bài B.1** — (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 **Bài B.2** — (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 **Bài B.3** — (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
@@ -722,11 +722,11 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 
 | Bài | Đề tương tự | Đáp số |
 |---|---|---|
-| A.1 | Chữ số hàng chục của số 68 687 có giá trị bao nhiêu? | 80 |
-| A.2 | 3 450 kg = … tấn … tạ … kg | 3 tấn 4 tạ 50 kg |
-| A.3 | 5 km = … m | 5 000 |
-| A.4 | 3 l = … ml | 3 000 |
-| A.5 | 155 phút = … giờ … phút | 2 giờ 35 phút |
+| A.1 | Số 40 506 có mấy chữ số và tổng các chữ số bằng bao nhiêu? | 5 chữ số, tổng 15 |
+| A.2 | 3 l = … ml | 3 000 |
+| A.3 | 155 phút = … giờ … phút | 2 giờ 35 phút |
+| A.4 | 3 450 kg = … tấn … tạ … kg | 3 tấn 4 tạ 50 kg |
+| A.5 | 5 km = … m | 5 000 |
 | B.1 | Một lời giải đạt chuẩn GITA có mấy dòng bắt buộc? | 4 dòng |
 | B.2 | Đề hỏi “mỗi tổ trồng mấy cây” thì câu lời giải viết thế nào? | “Số cây mỗi tổ trồng được là:” |
 | B.3 | Diện tích hình vuông cạnh 5 cm ghi đơn vị gì? | cm² |

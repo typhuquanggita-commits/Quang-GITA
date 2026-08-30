@@ -53,12 +53,13 @@ Học thuộc theo cặp **dạng bài – công thức**, không học rời.
 
 | # | Dùng cho dạng bài | Công thức hoặc quy tắc |
 |---:|---|---|
-| 1 | Tìm phân số của một số qua nhiều bước | Phân số một phần mấy, phép trừ liên tiếp |
+| 1 | Tìm số khi biết một phần mấy | Quan hệ ngược của phép chia |
 | 2 | Đọc và lập biểu đồ tranh | Biểu đồ tranh, phép nhân và chia |
-| 3 | Tìm một phần mấy rồi tính phần còn lại | Phân số một phần mấy, phép trừ |
-| 4 | Tìm số khi biết một phần mấy của nó | Quan hệ ngược của phép chia |
-| 5 | Đọc bảng số liệu | Thống kê đơn giản, trung bình cộng |
-| 6 | Tìm một phần mấy của một số | Phân số dạng một phần mấy |
+| 3 | Đọc bảng số liệu thống kê | Đọc bảng; cộng trừ trong phạm vi 100 |
+| 4 | Tìm một phần mấy của một số | Phân số dạng một phần mấy |
+| 5 | Tìm một phần mấy rồi tính phần còn lại | Phân số một phần mấy, phép trừ |
+| 6 | Tìm phân số của một số qua nhiều bước | Phân số một phần mấy, phép trừ liên tiếp |
+| 7 | Đọc bảng số liệu | Thống kê đơn giản, trung bình cộng |
 
 ---
 
@@ -82,13 +83,14 @@ Trước khi tra bảng, đi qua cây quyết định đọc vị của nhóm ch
 
 | Dạng bài | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất |
 |---|---|---|---|
-| Tìm phân số của một số qua nhiều bước | Cụm “… số còn lại” | Tính tuần tự, ghi lại số còn lại sau mỗi bước | Lấy đi 1 phần m thì còn (m − 1) phần m — nhân trực tiếp cho nhanh. |
-| Đọc và lập biểu đồ tranh | Có hình vẽ lặp lại kèm một dòng chú thích | Đọc chú thích → nhân số hình với đơn vị | Nếu mọi bạn đều dùng cùng một loại hình thì so số hình là đủ để biết ai nhiều nhất. |
-| Tìm một phần mấy rồi tính phần còn lại | “Đã bán một phần mấy”, hỏi “còn lại” | Chia để tìm phần đã dùng rồi trừ | Bán 1 phần 4 thì còn 3 phần 4 — chia rồi nhân 3, một bước là xong. |
-| Tìm số khi biết một phần mấy của nó | “Một phần mấy của một số là …, tìm số đó” | Nhân giá trị một phần với mẫu số | Kết quả phải lớn hơn số đã cho — dùng để loại đáp số sai ngay. |
-| Đọc bảng số liệu | Đề cho bảng số liệu kèm nhiều câu hỏi | Ghi lại số liệu rồi trả lời từng câu | Tính tổng một lần rồi dùng lại cho các câu sau. |
-| Tìm một phần mấy của một số | Cụm “một phần mấy của …” | Chia số đó cho mẫu số | Kết quả luôn nhỏ hơn số ban đầu. |
 | Tìm số khi biết một phần mấy | “Một phần mấy của một số là …” | Nhân giá trị một phần với mẫu số | Kết quả phải lớn hơn số đã cho — loại đáp số sai ngay. |
+| Đọc và lập biểu đồ tranh | Có hình vẽ lặp lại kèm một dòng chú thích | Đọc chú thích → nhân số hình với đơn vị | Nếu mọi bạn đều dùng cùng một loại hình thì so số hình là đủ để biết ai nhiều nhất. |
+| Đọc bảng số liệu thống kê | Một bảng hai chiều: hàng là nhóm, cột là loại số liệu | Cộng theo hàng cho từng nhóm, cộng theo cột cho toàn bộ | Tổng theo hàng và tổng theo cột luôn bằng nhau, dùng để soát lại. |
+| Tìm một phần mấy của một số | Cụm “một phần mấy của …” | Chia số đó cho mẫu số | Kết quả luôn nhỏ hơn số ban đầu — dùng để kiểm tra ngay. |
+| Tìm một phần mấy rồi tính phần còn lại | “Đã bán một phần mấy”, hỏi “còn lại” | Chia để tìm phần đã dùng rồi trừ | Bán 1 phần 4 thì còn 3 phần 4 — chia rồi nhân 3, một bước là xong. |
+| Tìm phân số của một số qua nhiều bước | Cụm “… số còn lại” | Tính tuần tự, ghi lại số còn lại sau mỗi bước | Lấy đi 1 phần m thì còn (m − 1) phần m — nhân trực tiếp cho nhanh. |
+| Đọc bảng số liệu | Đề cho bảng số liệu kèm nhiều câu hỏi | Ghi lại số liệu rồi trả lời từng câu | Tính tổng một lần rồi dùng lại cho các câu sau. |
+| Tìm số khi biết một phần mấy của nó | “Một phần mấy của một số là …, tìm số đó” | Nhân giá trị một phần với mẫu số | Kết quả phải lớn hơn số đã cho — dùng để loại đáp số sai ngay. |
 
 ---
 
@@ -107,26 +109,26 @@ Trước khi tra bảng, đi qua cây quyết định đọc vị của nhóm ch
 
 Trả lời được ngay trong 10 giây thì đánh ✔. Phải nghĩ lâu thì đánh ✘ và làm lại phần tương ứng.
 
-- [ ] **1.** Em nêu được dấu hiệu nhận biết của dạng “Tìm phân số của một số qua nhiều bước” chứ?
-- [ ] **2.** Em nhớ công thức: Phân số một phần mấy, phép trừ liên tiếp?
+- [ ] **1.** Em nêu được dấu hiệu nhận biết của dạng “Tìm số khi biết một phần mấy” chứ?
+- [ ] **2.** Em nhớ công thức: Quan hệ ngược của phép chia?
 - [ ] **3.** Em nêu được dấu hiệu nhận biết của dạng “Đọc và lập biểu đồ tranh” chứ?
 - [ ] **4.** Em nhớ công thức: Biểu đồ tranh, phép nhân và chia?
-- [ ] **5.** Em nêu được dấu hiệu nhận biết của dạng “Tìm một phần mấy rồi tính phần còn lại” chứ?
-- [ ] **6.** Em nhớ công thức: Phân số một phần mấy, phép trừ?
-- [ ] **7.** Em nêu được dấu hiệu nhận biết của dạng “Tìm số khi biết một phần mấy của nó” chứ?
-- [ ] **8.** Em nhớ công thức: Quan hệ ngược của phép chia?
-- [ ] **9.** Em nêu được dấu hiệu nhận biết của dạng “Đọc bảng số liệu” chứ?
-- [ ] **10.** Em nhớ công thức: Thống kê đơn giản, trung bình cộng?
-- [ ] **11.** Em nêu được dấu hiệu nhận biết của dạng “Tìm một phần mấy của một số” chứ?
-- [ ] **12.** Em nhớ công thức: Phân số dạng một phần mấy?
-- [ ] **13.** Em nêu được dấu hiệu nhận biết của dạng “Tìm một phần mấy của một số” chứ?
-- [ ] **14.** Em nhớ công thức: Phân số dạng một phần mấy?
-- [ ] **15.** Em nêu được dấu hiệu nhận biết của dạng “Tìm phân số của một số qua nhiều bước” chứ?
-- [ ] **16.** Em nhớ công thức: Phân số một phần mấy, phép trừ liên tiếp?
-- [ ] **17.** Em nêu được dấu hiệu nhận biết của dạng “Đọc bảng số liệu” chứ?
-- [ ] **18.** Em nhớ công thức: Thống kê đơn giản, trung bình cộng?
-- [ ] **19.** Em nêu được dấu hiệu nhận biết của dạng “Tìm số khi biết một phần mấy” chứ?
-- [ ] **20.** Em nhớ công thức: Quan hệ ngược của phép chia?
+- [ ] **5.** Em nêu được dấu hiệu nhận biết của dạng “Đọc bảng số liệu thống kê” chứ?
+- [ ] **6.** Em nhớ công thức: Đọc bảng; cộng trừ trong phạm vi 100?
+- [ ] **7.** Em nêu được dấu hiệu nhận biết của dạng “Tìm một phần mấy của một số” chứ?
+- [ ] **8.** Em nhớ công thức: Phân số dạng một phần mấy?
+- [ ] **9.** Em nêu được dấu hiệu nhận biết của dạng “Tìm một phần mấy rồi tính phần còn lại” chứ?
+- [ ] **10.** Em nhớ công thức: Phân số một phần mấy, phép trừ?
+- [ ] **11.** Em nêu được dấu hiệu nhận biết của dạng “Tìm phân số của một số qua nhiều bước” chứ?
+- [ ] **12.** Em nhớ công thức: Phân số một phần mấy, phép trừ liên tiếp?
+- [ ] **13.** Em nêu được dấu hiệu nhận biết của dạng “Đọc bảng số liệu” chứ?
+- [ ] **14.** Em nhớ công thức: Thống kê đơn giản, trung bình cộng?
+- [ ] **15.** Em nêu được dấu hiệu nhận biết của dạng “Tìm một phần mấy của một số” chứ?
+- [ ] **16.** Em nhớ công thức: Phân số dạng một phần mấy?
+- [ ] **17.** Em nêu được dấu hiệu nhận biết của dạng “Tìm phân số của một số qua nhiều bước” chứ?
+- [ ] **18.** Em nhớ công thức: Phân số một phần mấy, phép trừ liên tiếp?
+- [ ] **19.** Em nêu được dấu hiệu nhận biết của dạng “Đọc bảng số liệu” chứ?
+- [ ] **20.** Em nhớ công thức: Thống kê đơn giản, trung bình cộng?
 
 **Chuẩn đạt:** ✔ từ 18/20 câu trở lên.
 
@@ -138,14 +140,15 @@ Trả lời được ngay trong 10 giây thì đánh ✔. Phải nghĩ lâu thì
 
 | # | Lỗi thường gặp | Cách phòng |
 |---:|---|---|
-| 1 | Lấy cả hai phân số tính trên tổng ban đầu. | Viết một dòng “còn lại … quyển” sau mỗi bước. |
+| 1 | Chia thay vì nhân khi đã biết giá trị một phần. | Kiểm tra: số tìm được phải **lớn hơn** số đã cho. |
 | 2 | Đếm số hình rồi trả lời luôn, quên nhân với số đơn vị mỗi hình. | Khoanh tròn dòng chú thích trước khi trả lời bất kỳ câu nào. |
-| 3 | Dừng ở bước một, trả lời số gạo đã bán. | Đọc lại câu hỏi sau khi tính xong bước một. |
-| 4 | Chia thay vì nhân. | Kiểm tra: số tìm được phải **lớn hơn** số đã cho. |
-| 5 | Đọc lệch cột nên gán nhầm số cho ngày khác. | Dùng ngón tay dò theo cột khi đọc bảng. |
-| 6 | Nhân thay vì chia. | Kiểm tra: kết quả phải bé hơn số ban đầu. |
-| 7 | Đọc lệch cột nên gán nhầm số cho bạn khác. | Dùng ngón tay dò theo cột khi đọc bảng. |
-| 8 | Chia thay vì nhân khi đã biết giá trị một phần. | Kiểm tra: số tìm được phải **lớn hơn** số đã cho. |
+| 3 | Đọc nhầm cột, lấy số bạn nữ trả lời câu hỏi về bạn nam. | Lấy ngón tay dò theo hàng, đọc tên cột trước khi lấy số. |
+| 4 | Nhân thay vì chia. | Kiểm tra: kết quả phải **bé hơn** số ban đầu. |
+| 5 | Dừng ở bước một, trả lời số gạo đã bán. | Đọc lại câu hỏi sau khi tính xong bước một. |
+| 6 | Lấy cả hai phân số tính trên tổng ban đầu. | Viết một dòng “còn lại … quyển” sau mỗi bước. |
+| 7 | Đọc lệch cột nên gán nhầm số cho ngày khác. | Dùng ngón tay dò theo cột khi đọc bảng. |
+| 8 | Đọc lệch cột nên gán nhầm số cho bạn khác. | Dùng ngón tay dò theo cột khi đọc bảng. |
+| 9 | Chia thay vì nhân. | Kiểm tra: số tìm được phải **lớn hơn** số đã cho. |
 
 ---
 

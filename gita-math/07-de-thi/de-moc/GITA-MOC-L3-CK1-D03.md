@@ -30,59 +30,55 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Đặt tính rồi tính.
 
-a) 585 + 672
-b) 599 + 276
-c) 928 − 74
-d) 805 + 661
-e) 518 + 271
-f) 477 + 320
+a) 330 + 651
+b) 809 − 728
+c) 833 + 103
+d) 508 − 330
+e) 437 − 264
+f) 620 + 981
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
-Đặt tính rồi tính.
+Tính bằng cách thuận tiện nhất.
 
-a) 1 024 : 8
-b) 971 : 7
-c) 603 × 9
-d) 1 710 : 2
-e) 5 608 : 9
+a) 88 + 238 + 12
+b) 43 + 20 − 20
+c) 77 + 80 + 23 + 20
+d) 25 + 46 − 46
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
-Tóm tắt bằng sơ đồ đoạn thẳng rồi giải.
+Vẽ sơ đồ trước, tính sau. Không vẽ thì không được tính.
 
-a) Hai lớp 3B và 4A có tất cả 400 quyển sách. Lớp 3B có nhiều hơn lớp 4A 130 quyển. Mỗi lớp có bao nhiêu quyển?
-b) Trang trại và kho A chứa tất cả 738 kg xi măng. Trang trại chứa nhiều hơn kho A 242 kg. Mỗi nơi chứa bao nhiêu kg?
-c) Đội Một và nhóm Sao Mai trồng được 642 cây. Đội Một trồng nhiều hơn nhóm Sao Mai 210 cây. Mỗi tổ trồng bao nhiêu cây?
-d) Hai lớp 4B và 5B có tất cả 622 quyển sách. Lớp 4B có nhiều hơn lớp 5B 84 quyển. Mỗi lớp có bao nhiêu quyển?
-e) Xưởng và cửa hàng chứa tất cả 782 kg đường. Xưởng chứa nhiều hơn cửa hàng 256 kg. Mỗi nơi chứa bao nhiêu kg?
-f) Tổ Hai và đội Hai trồng được 180 cây. Tổ Hai trồng nhiều hơn đội Hai 24 cây. Mỗi tổ trồng bao nhiêu cây?
+a) Lan và Ngọc có tất cả 72 viên bi. Lan có nhiều hơn Ngọc 8 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+b) Trang và Chi có tất cả 132 viên bi. Trang có nhiều hơn Chi 10 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+c) Đức và Khánh có tất cả 184 viên bi. Đức có nhiều hơn Khánh 52 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+d) Trang và Phúc có tất cả 28 viên bi. Trang có nhiều hơn Phúc 8 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
 Ghi kết quả theo giờ và phút.
 
-a) Bây giờ là 2 giờ 45 phút. Sau 25 phút nữa là mấy giờ?
-b) Bây giờ là 7 giờ 30 phút. Cách đây 15 phút là mấy giờ?
-c) 9 giờ 20 phút = … phút
-d) Bây giờ là 8 giờ 30 phút. Sau 45 phút nữa là mấy giờ?
-e) 8 giờ 0 phút = … phút
-f) Bây giờ là 5 giờ 25 phút. Cách đây 10 phút là mấy giờ?
+a) Bây giờ là 7 giờ 35 phút. Cách đây 60 phút là mấy giờ?
+b) 5 giờ 30 phút = … phút
+c) Bây giờ là 5 giờ 10 phút. Sau 60 phút nữa là mấy giờ?
+d) 3 giờ 5 phút = … phút
+e) Bây giờ là 7 giờ 55 phút. Sau 30 phút nữa là mấy giờ?
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
-Mỗi ý một phép tính, trả lời gọn.
+Chú ý: chuyển đi thì bên này giảm, bên kia tăng.
 
-a) Tổ Hai có 8 lá cờ, tổ Ba có gấp 2 lần tổ Hai. Tổ Ba có bao nhiêu lá cờ?
-b) Cả hai tổ có bao nhiêu lá cờ?
-c) Tổ Ba nhiều hơn tổ Hai bao nhiêu lá cờ?
-d) Nếu tổ Hai được cho thêm 8 lá cờ thì tổ Hai có bao nhiêu lá?
-e) Khi đó tổ Ba còn nhiều hơn tổ Hai bao nhiêu lá?
-f) Phải cho tổ Hai thêm bao nhiêu lá nữa thì hai tổ bằng nhau?
+a) Bình và Yến có tất cả 294 quyển vở. Nếu Bình cho Yến 24 quyển thì hai bạn có số vở bằng nhau. Hỏi lúc đầu Bình có bao nhiêu quyển?
+b) Sau khi cho, mỗi bạn có bao nhiêu quyển vở?
+c) Lúc đầu Yến có bao nhiêu quyển vở?
+d) Lúc đầu Bình hơn Yến bao nhiêu quyển?
+e) Một tổ có 4 bạn, mỗi bạn gấp được 12 bông hoa trong một giờ. Hỏi cả tổ gấp được bao nhiêu bông hoa trong một giờ?
+f) Cả tổ phải gấp 144 bông hoa thì làm trong mấy giờ?
 
 
 ---
@@ -92,101 +88,97 @@ f) Phải cho tổ Hai thêm bao nhiêu lá nữa thì hai tổ bằng nhau?
 
 ### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **1 257**
-b) **875**
-c) **854**
-d) **1 466**
-e) **789**
-f) **797**
+a) **981**
+b) **81**
+c) **936**
+d) **178**
+e) **173**
+f) **1 601**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 585 + 672
+1. Xét ý a: 330 + 651
 2. Đọc vị: đây là dạng **Cộng, trừ số tự nhiên**; dấu hiệu là Yêu cầu “đặt tính rồi tính”.
 3. Kiến thức phải dùng: Kĩ thuật đặt tính, nhớ và mượn.
 4. Cách làm: Đặt tính thẳng hàng, tính từ hàng đơn vị.
 5. Lối tắt: Làm tròn một số hạng để ước lượng trước, dùng kết quả ước lượng để phát hiện sai sót.
-6. Kết quả: **1 257**.
+6. Kết quả: **981**.
 
 *Lỗi hay mắc:* Viết lệch hàng khi hai số có số chữ số khác nhau.
 
-### Bài 2, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 2, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **128**
-b) **138 dư 5**
-c) **5 427**
-d) **855**
-e) **623 dư 1**
-
-**Cách giải mẫu:**
-
-1. Xét ý a: 1 024 : 8
-2. Đọc vị: đây là dạng **Nhân, chia với số có một chữ số**; dấu hiệu là Số bị chia có hai hoặc ba chữ số, số chia một chữ số.
-3. Kiến thức phải dùng: Kĩ thuật đặt tính nhân, chia.
-4. Cách làm: Đặt tính, tính theo cột.
-5. Lối tắt: Ước lượng bằng cách làm tròn để phát hiện sai về độ lớn.
-6. Kết quả: **128**.
-
-*Lỗi hay mắc:* Quên chữ số 0 ở giữa thương nên thương thiếu chữ số.
-
-### Bài 3, (2 điểm — mỗi ý 0,33 điểm)
-
-a) **3B: 265 quyển, 4A: 135 quyển**
-b) **trang trại: 490 kg, kho A: 248 kg**
-c) **đội Một: 426 cây, nhóm Sao Mai: 216 cây**
-d) **4B: 353 quyển, 5B: 269 quyển**
-e) **xưởng: 519 kg, cửa hàng: 263 kg**
-f) **tổ Hai: 102 cây, đội Hai: 78 cây**
+a) **338**
+b) **43**
+c) **200**
+d) **25**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Hai lớp 3B và 4A có tất cả 400 quyển sách. Lớp 3B có nhiều hơn lớp 4A 130 quyển. Mỗi lớp có bao nhiêu quyển?
-2. Đọc vị: đây là dạng **Tổng – hiệu có lời văn**; dấu hiệu là “Có tất cả …” và “… nhiều hơn … là …”.
-3. Kiến thức phải dùng: Công thức tổng – hiệu, sơ đồ đoạn thẳng.
-4. Cách làm: Đọc vị tổng và hiệu → sơ đồ → công thức.
-5. Lối tắt: Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần.
-6. Kết quả: **3B: 265 quyển, 4A: 135 quyển**.
+1. Xét ý a: 88 + 238 + 12
+2. Đọc vị: đây là dạng **Tính nhanh tổng nhiều số hạng**; dấu hiệu là Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm.
+3. Kiến thức phải dùng: Tính chất giao hoán, kết hợp của phép cộng.
+4. Cách làm: Ghép cặp tròn rồi cộng.
+5. Lối tắt: Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10.
+6. Kết quả: **338**.
 
-*Lỗi hay mắc:* Nhầm hiệu thành tổng khi đề diễn đạt vòng vo.
+*Lỗi hay mắc:* Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn.
 
-### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 3, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **3 giờ 10 phút**
-b) **7 giờ 15 phút**
-c) **560**
-d) **9 giờ 15 phút**
-e) **480**
-f) **5 giờ 15 phút**
+a) **Lan: 40 viên, Ngọc: 32 viên**
+b) **Trang: 71 viên, Chi: 61 viên**
+c) **Đức: 118 viên, Khánh: 66 viên**
+d) **Trang: 18 viên, Phúc: 10 viên**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Bây giờ là 2 giờ 45 phút. Sau 25 phút nữa là mấy giờ?
+1. Vẽ hai đoạn thẳng: đoạn của Lan dài hơn đoạn của Ngọc đúng 8 viên.
+2. Bước 1 — nếu bớt 8 viên của Lan thì hai đoạn bằng nhau, tổng mới là 72 − 8 = 64 (viên).
+3. Bước 2 — chia đôi tổng mới được số bi của Ngọc: 64 : 2 = 32 (viên).
+4. Bước 3 — số bi của Lan: 32 + 8 = 40 (viên).
+5. Thử lại: 40 + 32 = 72 ✓ và 40 − 32 = 8 ✓
+6. Đáp số: **Lan 40 viên, Ngọc 32 viên**.
+
+*Lỗi hay mắc:* Chia đôi tổng ngay rồi cộng hiệu vào cả hai số.
+
+### Bài 4, (2 điểm — mỗi ý 0,4 điểm)
+
+a) **6 giờ 35 phút**
+b) **330**
+c) **6 giờ 10 phút**
+d) **185**
+e) **8 giờ 25 phút**
+
+**Cách giải mẫu:**
+
+1. Xét ý a: Bây giờ là 7 giờ 35 phút. Cách đây 60 phút là mấy giờ?
 2. Đọc vị: đây là dạng **Tính thời gian trong ngày**; dấu hiệu là Có chữ “giờ”, “phút”, “sau … phút nữa”.
 3. Kiến thức phải dùng: Quan hệ giờ – phút.
 4. Cách làm: Quy về phút, tính, đổi lại.
 5. Lối tắt: Cộng tròn giờ trước, cộng phút lẻ sau.
-6. Kết quả: **3 giờ 10 phút**.
+6. Kết quả: **6 giờ 35 phút**.
 
 *Lỗi hay mắc:* Cộng phần phút thành hơn 60 mà quên đổi thành giờ.
 
 ### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **16**
-b) **24**
-c) **8**
-d) **16**
-e) **0**
-f) **8**
+a) **171 quyển**
+b) **147 quyển**
+c) **123 quyển**
+d) **48 quyển**
+e) **48 bông**
+f) **3 giờ**
 
 **Cách giải mẫu:**
 
-1. Bước 1 — số cờ của tổ Ba: 8 × 2 = 16 (lá).
-2. Bước 2 — cả hai tổ: 8 + 16 = 24 (lá).
-3. Bước 3 — tổ Ba nhiều hơn: 16 − 8 = 8 (lá).
-4. Bước 4 — muốn hai tổ bằng nhau thì cho tổ Hai thêm đúng phần hơn ấy, tức 8 lá.
-5. Đáp số ý a: **16 lá cờ**.
+1. Sau khi cho, hai bạn bằng nhau, nên mỗi bạn có 294 : 2 = 147 (quyển).
+2. Bình đã cho đi 24 quyển, nên lúc đầu Bình có 147 + 24 = 171 (quyển).
+3. Lúc đầu Yến có 294 − 171 = 123 (quyển).
+4. Hiệu lúc đầu: 171 − 123 = 48 (quyển) — đúng bằng hai lần số vở đã chuyển.
+5. Đáp số: **lúc đầu Bình có 171 quyển**.
 
-*Lỗi hay mắc:* Nhầm hai tình huống: cho thêm và chuyển qua lại.
+*Lỗi hay mắc:* Cho rằng hiệu lúc đầu bằng đúng số vở đã chuyển.
 
 ---
 
@@ -197,10 +189,10 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài | Đo cái gì | Sai bài này nghĩa là | Học lại ở đâu |
 |:--:|---|---|---|
 | Bài 1 | Cộng, trừ số tự nhiên | Viết lệch hàng khi hai số có số chữ số khác nhau. | Nhóm chuyên đề **—** · mức — |
-| Bài 2 | Nhân, chia với số có một chữ số | Quên chữ số 0 ở giữa thương nên thương thiếu chữ số. | Nhóm chuyên đề **—** · mức — |
-| Bài 3 | Tổng – hiệu có lời văn | Nhầm hiệu thành tổng khi đề diễn đạt vòng vo. | Nhóm chuyên đề **—** · mức — |
+| Bài 2 | Tính nhanh tổng nhiều số hạng | Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. | Nhóm chuyên đề **—** · mức — |
+| Bài 3 | Bài toán tổng – hiệu | Chia đôi tổng ngay rồi cộng hiệu vào cả hai số. | Nhóm chuyên đề **—** · mức — |
 | Bài 4 | Tính thời gian trong ngày | Cộng phần phút thành hơn 60 mà quên đổi thành giờ. | Nhóm chuyên đề **—** · mức — |
-| Bài 5 | Toán điển hình: gấp, kém, nhiều hơn, ít hơn | Nhầm hai tình huống: cho thêm và chuyển qua lại. | Nhóm chuyên đề **—** · mức — |
+| Bài 5 | Tổng – hiệu có hiệu ẩn sau một lần chuyển | Cho rằng hiệu lúc đầu bằng đúng số vở đã chuyển. | Nhóm chuyên đề **—** · mức — |
 
 ---
 

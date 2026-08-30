@@ -30,55 +30,56 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Trả lời nhanh, mỗi ý không quá 20 giây.
 
-a) Chữ số hàng trăm của số 8 826 405 có giá trị bằng bao nhiêu?
-b) Làm tròn 8 539 347 đến hàng trăm.
-c) 3 957 747 … 3 962 208
-d) Số liền trước và số liền sau của 1 515 647 là những số nào?
-e) Làm tròn 1 624 828 đến hàng nghìn.
+a) Làm tròn 9 722 660 đến hàng trăm.
+b) Chữ số hàng đơn vị của số 1 982 589 có giá trị bằng bao nhiêu?
+c) 3 292 211 … 3 292 205
+d) Số liền trước và số liền sau của 792 469 là những số nào?
+e) Chữ số hàng nghìn của số 4 108 934 có giá trị bằng bao nhiêu?
+f) Làm tròn 5 045 939 đến hàng trăm.
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
 Tính bằng cách thuận tiện nhất.
 
-a) 4 100 : 5 : 10
-b) 19 × 125 × 8
-c) 50 × 11 × 2
-d) 50 × 74 × 2
+a) 129 + 74 − 74
+b) 135 + 83 − 83
+c) 217 + 88 − 88
+d) 73 + 16 − 16
+e) 81 + 330 + 19
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
-Chú ý đổi đơn vị ở bước cuối.
+Giải từng bài toán nhỏ.
 
-a) Trên bản đồ tỉ lệ 1 : 10 000, một đoạn đường đo được 16 cm. Hỏi đoạn đường đó dài bao nhiêu mét trên thực tế?
-b) Một đoạn đường dài 2 400 m được vẽ trên bản đồ tỉ lệ 1 : 10 000. Trên bản đồ đoạn ấy dài bao nhiêu xăng-ti-mét?
-c) Trên bản đồ tỉ lệ 1 : 100, một đoạn đường đo được 2 cm. Hỏi đoạn đường đó dài bao nhiêu mét trên thực tế?
-d) Một đoạn đường dài 26 m được vẽ trên bản đồ tỉ lệ 1 : 100. Trên bản đồ đoạn ấy dài bao nhiêu xăng-ti-mét?
+a) Trung bình mỗi ngày cửa hàng bán được 288 kg gạo. 5 ngày đầu bán được 290, 278, 278, 299, 285 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
+b) 5 ngày đầu tuần một cửa hàng bán được lần lượt 117, 105, 120, 101, 117 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
+c) 4 ngày đầu tuần một cửa hàng bán được lần lượt 31, 35, 17, 21 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
+d) Trung bình mỗi ngày bán được 233 kg gạo. Hỏi 6 ngày bán được tất cả bao nhiêu ki-lô-gam?
+e) Trung bình mỗi ngày cửa hàng bán được 264 kg gạo. 4 ngày đầu bán được 269, 263, 273, 255 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
-Chú ý đơn vị mà đề hỏi.
+Ghi kết quả theo giờ và phút.
 
-a) Một xe chở 37 bao đường, mỗi bao 50 kg. Hỏi xe chở bao nhiêu tạ đường?
-b) Một xe chở 16 bao gạo, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ gạo?
-c) Một xe chở 13 bao muối, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ muối?
-d) Một xe chở 30 bao xi măng, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ xi măng?
-e) Một xe chở 28 bao thóc, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ thóc?
-f) Một xe chở 10 bao thóc, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ thóc?
+a) Một chuyến tàu khởi hành lúc 11 giờ 40 phút và đi hết 1 giờ 28 phút. Tàu đến nơi lúc mấy giờ?
+b) Một chuyến tàu khởi hành lúc 13 giờ 20 phút và đi hết 4 giờ 10 phút. Tàu đến nơi lúc mấy giờ?
+c) Một chuyến tàu khởi hành lúc 8 giờ 20 phút và đi hết 3 giờ 21 phút. Tàu đến nơi lúc mấy giờ?
+d) Một chuyến tàu khởi hành lúc 14 giờ 30 phút và đi hết 5 giờ 26 phút. Tàu đến nơi lúc mấy giờ?
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
-Dùng phương pháp giả thiết tạm.
+Bài mô phỏng phần tự luận của đề thi chất lượng cao.
 
-a) Vừa gà vừa chó có 28 con, đếm được tất cả 102 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
-b) Vừa gà vừa chó có 46 con, đếm được tất cả 150 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
-c) Vừa gà vừa chó có 61 con, đếm được tất cả 196 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
-d) Vừa gà vừa chó có 19 con, đếm được tất cả 52 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
-e) Vừa gà vừa chó có 57 con, đếm được tất cả 192 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
-f) Vừa gà vừa chó có 13 con, đếm được tất cả 40 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
+a) Ba số có tổng 246. Số thứ hai hơn số thứ nhất 10, số thứ ba hơn số thứ hai 10. Tìm số thứ hai.
+b) Tìm số thứ nhất.
+c) Tìm số thứ ba.
+d) Vì sao số thứ hai bằng tổng ba số chia cho 3?
+e) Hai số khác có tổng 36 và số bé bằng 1 phần 2 số lớn. Tìm số bé.
+f) Tìm số lớn.
 
 
 ---
@@ -86,98 +87,101 @@ f) Vừa gà vừa chó có 13 con, đếm được tất cả 40 chân. Hỏi c
 ## ĐÁP ÁN VÀ BIỂU ĐIỂM
 
 
-### Bài 1, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **400**
-b) **8 539 300**
-c) **<**
-d) **1 515 646 và 1 515 648**
-e) **1 625 000**
+a) **9 722 700**
+b) **9**
+c) **>**
+d) **792 468 và 792 470**
+e) **8 000**
+f) **5 045 900**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Chữ số hàng trăm của số 8 826 405 có giá trị bằng bao nhiêu?
+1. Xét ý a: Làm tròn 9 722 660 đến hàng trăm.
 2. Đọc vị: đây là dạng **Ôn tập số tự nhiên**; dấu hiệu là Câu hỏi ngắn về so sánh, hàng, số liền kề, làm tròn.
 3. Kiến thức phải dùng: Thứ tự số tự nhiên, giá trị hàng, quy tắc làm tròn.
 4. Cách làm: Đếm chữ số, xét hàng từ trái sang phải.
 5. Lối tắt: Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số.
-6. Kết quả: **400**.
+6. Kết quả: **9 722 700**.
 
 *Lỗi hay mắc:* So sánh từ hàng đơn vị; hoặc làm tròn nhìn nhầm sang chính hàng cần làm tròn.
 
-### Bài 2, (2 điểm — mỗi ý 0,5 điểm)
+### Bài 2, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **82**
-b) **19 000**
-c) **1 100**
-d) **7 400**
-
-**Cách giải mẫu:**
-
-1. Xét ý a: 4 100 : 5 : 10
-2. Đọc vị: đây là dạng **Tính nhanh tích, thương nhiều bước**; dấu hiệu là Tích có thừa số 25, 125, 50, 20; hoặc chia liên tiếp.
-3. Kiến thức phải dùng: Tính chất giao hoán, kết hợp của phép nhân.
-4. Cách làm: Ghép cặp cho tích tròn rồi nhân.
-5. Lối tắt: Chia liên tiếp cho 4 rồi 25 bằng chia cho 100.
-6. Kết quả: **82**.
-
-*Lỗi hay mắc:* Nhân lần lượt từ trái sang phải nên số trung gian rất lớn.
-
-### Bài 3, (2 điểm — mỗi ý 0,5 điểm)
-
-a) **1 600 m**
-b) **24 cm**
-c) **2 m**
-d) **26 cm**
+a) **129**
+b) **135**
+c) **217**
+d) **73**
+e) **430**
 
 **Cách giải mẫu:**
 
-1. Tỉ lệ 1 : 10 000 nghĩa là 1 cm trên bản đồ ứng với 10 000 cm thật.
-2. Bước 1 — độ dài thật tính bằng xăng-ti-mét: 16 × 10 000 = 160 000 (cm).
-3. Bước 2 — đổi ra mét: 160 000 : 100 = 1 600 (m).
-4. Đáp số: **1 600 m**.
+1. Xét ý a: 129 + 74 − 74
+2. Đọc vị: đây là dạng **Tính nhanh tổng nhiều số hạng**; dấu hiệu là Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm.
+3. Kiến thức phải dùng: Tính chất giao hoán, kết hợp của phép cộng.
+4. Cách làm: Ghép cặp tròn rồi cộng.
+5. Lối tắt: Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10.
+6. Kết quả: **129**.
 
-*Lỗi hay mắc:* Đổi mét sang xăng-ti-mét ngay từ đầu rồi lại nhân tỉ lệ một lần nữa.
+*Lỗi hay mắc:* Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn.
 
-### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 3, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **18 tạ 50 kg**
-b) **9 tạ 60 kg**
-c) **3 tạ 90 kg**
-d) **18 tạ**
-e) **16 tạ 80 kg**
-f) **6 tạ**
+a) **298 kg**
+b) **112 kg**
+c) **26 kg**
+d) **1 398 kg**
+e) **260 kg**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Một xe chở 37 bao đường, mỗi bao 50 kg. Hỏi xe chở bao nhiêu tạ đường?
-2. Đọc vị: đây là dạng **Bài toán đại lượng có lời văn**; dấu hiệu là Đơn vị trong câu hỏi khác đơn vị trong dữ kiện.
-3. Kiến thức phải dùng: Nhân, chia số tự nhiên; đổi đơn vị khối lượng.
-4. Cách làm: Tính theo đơn vị dữ kiện rồi đổi ở bước cuối.
-5. Lối tắt: 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ.
-6. Kết quả: **18 tạ 50 kg**.
+1. Xét ý a: Trung bình mỗi ngày cửa hàng bán được 288 kg gạo. 5 ngày đầu bán được 290, 278, 278, 299, 285 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
+2. Đọc vị: đây là dạng **Ba dạng bài trung bình cộng**; dấu hiệu là Cụm “trung bình mỗi …”.
+3. Kiến thức phải dùng: Quan hệ tổng – số lượng – trung bình cộng.
+4. Cách làm: Đi qua tổng làm trung gian.
+5. Lối tắt: Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng.
+6. Kết quả: **298 kg**.
 
-*Lỗi hay mắc:* Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ.
+*Lỗi hay mắc:* Đi tìm ngay số còn thiếu mà chưa tính tổng.
+
+### Bài 4, (2 điểm — mỗi ý 0,5 điểm)
+
+a) **13 giờ 8 phút**
+b) **17 giờ 30 phút**
+c) **11 giờ 41 phút**
+d) **19 giờ 56 phút**
+
+**Cách giải mẫu:**
+
+1. Xét ý a: Một chuyến tàu khởi hành lúc 11 giờ 40 phút và đi hết 1 giờ 28 phút. Tàu đến nơi lúc mấy giờ?
+2. Đọc vị: đây là dạng **Tính thời điểm trong ngày**; dấu hiệu là Cho thời điểm bắt đầu và khoảng thời gian.
+3. Kiến thức phải dùng: Quan hệ giờ – phút, phép chia có dư.
+4. Cách làm: Quy về phút, cộng trừ, đổi lại.
+5. Lối tắt: Cộng tròn giờ trước rồi cộng phần phút lẻ sau.
+6. Kết quả: **13 giờ 8 phút**.
+
+*Lỗi hay mắc:* Cộng phần phút thành hơn 60 mà quên đổi thành giờ.
 
 ### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **5 con gà, 23 con chó**
-b) **17 con gà, 29 con chó**
-c) **24 con gà, 37 con chó**
-d) **12 con gà, 7 con chó**
-e) **18 con gà, 39 con chó**
-f) **6 con gà, 7 con chó**
+a) **82**
+b) **72**
+c) **92**
+d) **vì ba số cách đều nên số ở giữa là trung bình cộng**
+e) **12**
+f) **24**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Vừa gà vừa chó có 28 con, đếm được tất cả 102 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
-2. Đọc vị: đây là dạng **Giả thiết tạm**; dấu hiệu là Hai loại đối tượng, biết tổng số và tổng của một đại lượng khác.
-3. Kiến thức phải dùng: Phương pháp giả thiết tạm.
-4. Cách làm: Giả sử đồng nhất một loại → tính phần chênh → chia cho hiệu đơn vị.
-5. Lối tắt: Số chó = (số chân − 2 × số con) : 2 — thuộc công thức rút gọn để nhẩm.
-6. Kết quả: **5 con gà, 23 con chó**.
+1. Ba số cách đều nhau 10 đơn vị nên số ở giữa là trung bình cộng.
+2. Bước 1 — số thứ hai: 246 : 3 = 82.
+3. Bước 2 — số thứ nhất: 82 − 10 = 72.
+4. Bước 3 — số thứ ba: 82 + 10 = 92.
+5. Thử lại: 72 + 82 + 92 = 246 ✓
+6. Đáp số: **72, 82, 92**.
 
-*Lỗi hay mắc:* Chia số chân thiếu cho 4 thay vì cho hiệu số chân của hai loài.
+*Lỗi hay mắc:* Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi.
 
 ---
 
@@ -188,10 +192,10 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài | Đo cái gì | Sai bài này nghĩa là | Học lại ở đâu |
 |:--:|---|---|---|
 | Bài 1 | Ôn tập số tự nhiên | So sánh từ hàng đơn vị; hoặc làm tròn nhìn nhầm sang chính hàng cần làm tròn. | Nhóm chuyên đề **—** · mức — |
-| Bài 2 | Tính nhanh tích, thương nhiều bước | Nhân lần lượt từ trái sang phải nên số trung gian rất lớn. | Nhóm chuyên đề **—** · mức — |
-| Bài 3 | Tỉ lệ bản đồ, tỉ lệ xích | Đổi mét sang xăng-ti-mét ngay từ đầu rồi lại nhân tỉ lệ một lần nữa. | Nhóm chuyên đề **—** · mức — |
-| Bài 4 | Bài toán đại lượng có lời văn | Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. | Nhóm chuyên đề **—** · mức — |
-| Bài 5 | Giả thiết tạm | Chia số chân thiếu cho 4 thay vì cho hiệu số chân của hai loài. | Nhóm chuyên đề **—** · mức — |
+| Bài 2 | Tính nhanh tổng nhiều số hạng | Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. | Nhóm chuyên đề **—** · mức — |
+| Bài 3 | Ba dạng bài trung bình cộng | Đi tìm ngay số còn thiếu mà chưa tính tổng. | Nhóm chuyên đề **—** · mức — |
+| Bài 4 | Tính thời điểm trong ngày | Cộng phần phút thành hơn 60 mà quên đổi thành giờ. | Nhóm chuyên đề **—** · mức — |
+| Bài 5 | Tổng nhiều số có ràng buộc; tổng – tỉ | Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. | Nhóm chuyên đề **—** · mức — |
 
 ---
 

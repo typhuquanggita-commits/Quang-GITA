@@ -53,57 +53,57 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ### Bài 1. (5 điểm) Suy luận bằng phương pháp lập bảng và loại trừ
 
-Ba bạn Đức, Nam, Lan mỗi bạn thích đúng một môn khác nhau trong ba môn Âm nhạc, Mĩ thuật, Tiếng Anh. Biết **Đức thích Âm nhạc** và **Nam không thích Tiếng Anh**.
+Ba bạn Bình, Hà, An mỗi bạn thích đúng một môn khác nhau trong ba môn Tiếng Việt, Toán, Tiếng Anh. Biết **Bình thích Tiếng Việt** và **Hà không thích Tiếng Anh**.
 
-a) Kẻ bảng ba hàng (tên bạn) và ba cột (môn học). Dữ kiện “Đức thích Âm nhạc” cho phép đánh dấu ✔ vào ô nào?
+a) Kẻ bảng ba hàng (tên bạn) và ba cột (môn học). Dữ kiện “Bình thích Tiếng Việt” cho phép đánh dấu ✔ vào ô nào?
 b) Sau dấu ✔ đó, những ô nào chắc chắn phải đánh ✘?
-c) Dữ kiện “Nam không thích Tiếng Anh” cho phép đánh ✘ vào ô nào?
-d) Đến đây, hàng Nam còn lại đúng một ô trống. Vậy Nam thích môn nào?
-e) Suy ra Lan thích môn nào?
+c) Dữ kiện “Hà không thích Tiếng Anh” cho phép đánh ✘ vào ô nào?
+d) Đến đây, hàng Hà còn lại đúng một ô trống. Vậy Hà thích môn nào?
+e) Suy ra An thích môn nào?
 f) Phương pháp vừa dùng tên là gì?
 
-### Bài 2. (5 điểm) Quy tắc cộng, quy tắc nhân và phép đếm có phần chung
-
-Đọc kĩ chữ “và” hay chữ “hoặc”.
-
-a) Trên bàn có 12 quyển sách Toán và 5 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một** quyển sách bất kì?
-b) Lớp có 7 bạn giỏi Toán, 11 bạn giỏi Tiếng Việt, trong đó 4 bạn giỏi cả hai môn. Hỏi có bao nhiêu bạn giỏi ít nhất một môn?
-c) Có 12 quyển sách Toán và 3 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một quyển Toán và một quyển Tiếng Việt**?
-d) Có 7 quyển sách Toán và 8 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một quyển Toán và một quyển Tiếng Việt**?
-e) Lớp có 9 bạn giỏi Toán, 9 bạn giỏi Tiếng Việt, trong đó 7 bạn giỏi cả hai môn. Hỏi có bao nhiêu bạn giỏi ít nhất một môn?
-
-### Bài 3. (5 điểm) Quy tắc nhân trong phép đếm
+### Bài 2. (5 điểm) Quy tắc nhân trong phép đếm
 
 Đếm số cách chọn.
 
-a) Có 7 chiếc áo và 7 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
-b) Có 8 chiếc áo và 3 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
-c) Có 3 chiếc áo và 4 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
-d) Có 4 chiếc áo và 7 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
-e) Có 7 chiếc áo và 3 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
+a) Có 3 chiếc áo và 3 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
+b) Có 7 chiếc áo và 8 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
+c) Có 4 chiếc áo và 3 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
+d) Có 8 chiếc áo và 2 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
+e) Có 5 chiếc áo và 5 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
 
-### Bài 4. (5 điểm) Ôn tập bốn phép tính với số tự nhiên
+### Bài 3. (5 điểm) Ôn tập bốn phép tính với số tự nhiên
 
 Đặt tính rồi tính. Ước lượng trước để tự kiểm tra.
 
-a) 694 823 × 487
-b) 24 328 647 : 441
-c) 976 803 + 836 984
-d) 817 690 − 795 466
-e) 269 412 + 516 307
-f) 291 062 × 419
-g) 207 486 − 83 637
+a) 210 996 × 294
+b) 682 173 − 411 613
+c) 75 752 + 446 591
+d) 11 094 432 : 489
+e) 783 926 × 366
+f) 682 194 − 308 062
+g) 503 171 + 292 118
 
-### Bài 5. (5 điểm) Đặt tính rồi tính (cộng, trừ)
+### Bài 4. (5 điểm) Đặt tính rồi tính (nhân, chia)
 
 Đặt tính rồi tính.
 
-a) 760 335 + 50 956
-b) 628 990 − 571 540
-c) 123 914 + 193 715
-d) 151 119 + 378 940
-e) 909 619 + 652 052
-f) 599 342 − 312 512
+a) 81 440 × 116
+b) 3 049 641 : 63
+c) 13 951 × 186
+d) 17 425 650 : 295
+e) 41 839 910 : 907
+f) 58 587 112 : 619
+g) 83 444 × 325
+
+### Bài 5. (5 điểm) Quy tắc cộng, quy tắc nhân và phép đếm có phần chung
+
+Đọc kĩ chữ “và” hay chữ “hoặc”.
+
+a) Lớp có 8 bạn giỏi Toán, 7 bạn giỏi Tiếng Việt, trong đó 2 bạn giỏi cả hai môn. Hỏi có bao nhiêu bạn giỏi ít nhất một môn?
+b) Có 5 quyển sách Toán và 9 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một quyển Toán và một quyển Tiếng Việt**?
+c) Trên bàn có 3 quyển sách Toán và 4 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một** quyển sách bất kì?
+d) Lớp có 9 bạn giỏi Toán, 12 bạn giỏi Tiếng Việt, trong đó 1 bạn giỏi cả hai môn. Hỏi có bao nhiêu bạn giỏi ít nhất một môn?
 
 ---
 
@@ -335,34 +335,34 @@ f) Mẹo nhanh em sẽ tặng lớp?
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài A.1
-**Đáp số:** a) ô (Đức; Âm nhạc) · b) toàn bộ hàng Đức và toàn bộ cột Âm nhạc · c) ô (Nam; Tiếng Anh) · d) Mĩ thuật · e) Tiếng Anh · f) phương pháp lập bảng và loại trừ
+**Đáp số:** a) ô (Bình; Tiếng Việt) · b) toàn bộ hàng Bình và toàn bộ cột Tiếng Việt · c) ô (Hà; Tiếng Anh) · d) Toán · e) Tiếng Anh · f) phương pháp lập bảng và loại trừ
 **Hướng giải:** Kẻ bảng: hàng là tên người, cột là môn học. Mỗi dữ kiện cho phép đánh dấu ✘ vào một ô (không thể) hoặc ✔ vào một ô (chắc chắn). Khi một hàng chỉ còn đúng một ô trống thì ô đó là ✔; khi một cột đã có ✔ thì các ô còn lại của cột đó đều là ✘.
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Mỗi lần đánh một dấu, phải **lan toả** ngay sang cả hàng và cả cột.
 **Lỗi thường gặp:** Suy luận trong đầu, không kẻ bảng, nên bỏ sót khả năng. Phòng: Luôn kẻ bảng, kể cả khi bài có vẻ dễ.
 
 ### Bài A.2
-**Đáp số:** a) 17 cách · b) 14 bạn · c) 36 cách · d) 56 cách · e) 11 bạn
-**Hướng giải:** BẪY — Phần chung bị đếm hai lần. Chọn **một trong hai nhóm rời nhau** thì cộng. Chọn **mỗi nhóm một phần tử** thì nhân. Khi hai nhóm có phần tử chung, số phần tử thuộc ít nhất một nhóm bằng tổng hai nhóm trừ đi phần chung (vì phần chung đã bị đếm hai lần).
-**Nhãn tư duy:** TD2, TD6. Điểm chốt: Có phần chung thì phải **trừ đi một lần** phần chung.
-**Lỗi thường gặp:** Cộng thẳng hai nhóm khi chúng có phần tử chung. Phòng: Vẽ hai vòng tròn giao nhau, ghi số vào từng miền.
-
-### Bài A.3
-**Đáp số:** a) 49 cách · b) 24 cách · c) 12 cách · d) 28 cách · e) 21 cách
+**Đáp số:** a) 9 cách · b) 56 cách · c) 12 cách · d) 16 cách · e) 25 cách
 **Hướng giải:** BẪY — Cộng hay nhân. Nếu công việc gồm hai bước liên tiếp, bước một có a cách, bước hai có b cách, thì cả công việc có a × b cách. Đây là **quy tắc nhân**.
 **Nhãn tư duy:** TD2, TD4. Điểm chốt: Hai việc phải làm **cùng lúc, nối tiếp** thì nhân; chọn một trong hai khả năng rời nhau thì cộng.
 **Lỗi thường gặp:** Cộng số áo với số quần. Phòng: Tự hỏi: chọn xong áo đã đủ một bộ chưa? Chưa đủ thì phải nhân.
 
-### Bài A.4
-**Đáp số:** a) 338 378 801 · b) 55 167 · c) 1 813 787 · d) 22 224 · e) 785 719 · f) 121 954 978 · g) 123 849
-**Hướng giải:** Cộng, trừ thì viết thẳng hàng đơn vị. Nhân thì viết các tích riêng lùi đúng cột rồi cộng. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0.
+### Bài A.3
+**Đáp số:** a) 62 032 824 · b) 270 560 · c) 522 343 · d) 22 688 · e) 286 916 916 · f) 374 132 · g) 795 289
+**Hướng giải:** BẪY — Chữ số 0 ở giữa thương. Cộng, trừ thì viết thẳng hàng đơn vị. Nhân thì viết các tích riêng lùi đúng cột rồi cộng. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
 
+### Bài A.4
+**Đáp số:** a) 9 447 040 · b) 48 407 · c) 2 594 886 · d) 59 070 · e) 46 130 · f) 94 648 · g) 27 119 300
+**Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
+**Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
+**Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+
 ### Bài A.5
-**Đáp số:** a) 811 291 · b) 57 450 · c) 317 629 · d) 530 059 · e) 1 561 671 · f) 286 830
-**Hướng giải:** Viết các số thẳng hàng theo đúng hàng đơn vị, cộng hoặc trừ từ phải sang trái, nhớ sang hàng liền trước khi tổng vượt quá 9 hoặc khi phải mượn.
-**Nhãn tư duy:** TD1. Điểm chốt: Thẳng hàng **đơn vị**, không thẳng theo chữ số đầu.
-**Lỗi thường gặp:** Viết lệch hàng khi hai số có số chữ số khác nhau. Phòng: Kẻ cột dọc cho từng hàng trước khi viết số.
+**Đáp số:** a) 13 bạn · b) 45 cách · c) 7 cách · d) 20 bạn
+**Hướng giải:** Chọn **một trong hai nhóm rời nhau** thì cộng. Chọn **mỗi nhóm một phần tử** thì nhân. Khi hai nhóm có phần tử chung, số phần tử thuộc ít nhất một nhóm bằng tổng hai nhóm trừ đi phần chung (vì phần chung đã bị đếm hai lần).
+**Nhãn tư duy:** TD2, TD6. Điểm chốt: Có phần chung thì phải **trừ đi một lần** phần chung.
+**Lỗi thường gặp:** Cộng thẳng hai nhóm khi chúng có phần tử chung. Phòng: Vẽ hai vòng tròn giao nhau, ghi số vào từng miền.
 
 ### Bài B.1
 **Đáp số:** a) câu lời giải nêu rõ đang tìm đại lượng nào · b) phép tính, viết đủ dấu và đủ đơn vị · c) kết quả kèm đơn vị · d) câu đáp số · e) một phần tư số điểm của bài

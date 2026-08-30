@@ -28,59 +28,58 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ### Bài 1. (2 điểm — 10 phút) Tính và điền kết quả
 
-Cho số **39 533**.
+Cho số **72 910**.
 
-a) Số 39 533 có bao nhiêu chữ số?
+a) Số 72 910 có bao nhiêu chữ số?
 b) Chữ số hàng đơn vị là chữ số nào?
 c) Chữ số hàng trăm là chữ số nào?
 d) Chữ số hàng nghìn là chữ số nào?
-e) Viết số 39 533 thành tổng các giá trị hàng.
-f) Tổng các chữ số của số 39 533 bằng bao nhiêu?
+e) Viết số 72 910 thành tổng các giá trị hàng.
+f) Tổng các chữ số của số 72 910 bằng bao nhiêu?
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
-Ghi rõ đơn vị đồng ở mọi kết quả.
+Tính bằng cách thuận tiện nhất.
 
-a) Mua 4 quyển vở, mỗi quyển 7 000 đồng. Hết bao nhiêu tiền?
-b) Mua 2 quyển vở, mỗi quyển 8 000 đồng. Đưa cô bán hàng một tờ 20 000 đồng. Cô phải trả lại bao nhiêu tiền?
-c) Đổi một tờ 50 000 đồng ra các tờ 1 000 đồng thì được mấy tờ?
-d) Mua 5 quyển vở, mỗi quyển 5 000 đồng. Đưa cô bán hàng một tờ 50 000 đồng. Cô phải trả lại bao nhiêu tiền?
-e) Đổi một tờ 50 000 đồng ra các tờ 1 000 đồng thì được mấy tờ?
+a) 54 + 154 + 46
+b) 354 + 54 − 54
+c) 77 + 68 + 23 + 32
+d) 72 + 394 + 28
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
-Vẽ sơ đồ trước, tính sau. Không vẽ thì không được tính.
+Tóm tắt bằng sơ đồ đoạn thẳng rồi giải.
 
-a) Ngọc và Hùng có tất cả 124 viên bi. Ngọc có nhiều hơn Hùng 22 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
-b) Sơn và Trang có tất cả 136 viên bi. Sơn có nhiều hơn Trang 34 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
-c) Chi và Vy có tất cả 144 viên bi. Chi có nhiều hơn Vy 48 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
-d) Trang và Lan có tất cả 198 viên bi. Trang có nhiều hơn Lan 26 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
-e) Tuấn và Nam có tất cả 174 viên bi. Tuấn có nhiều hơn Nam 36 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+a) Hai lớp 5C và 3B có tất cả 608 quyển sách. Lớp 5C có nhiều hơn lớp 3B 20 quyển. Mỗi lớp có bao nhiêu quyển?
+b) Cửa hàng và kho A chứa tất cả 514 kg xi măng. Cửa hàng chứa nhiều hơn kho A 134 kg. Mỗi nơi chứa bao nhiêu kg?
+c) Nhóm Hoa Phượng và tổ Hai trồng được 632 cây. Nhóm Hoa Phượng trồng nhiều hơn tổ Hai 196 cây. Mỗi tổ trồng bao nhiêu cây?
+d) Đội Một và đội Hai trồng được 600 cây. Đội Một trồng nhiều hơn đội Hai 200 cây. Mỗi tổ trồng bao nhiêu cây?
+e) Hai lớp 5C và 4C có tất cả 156 quyển sách. Lớp 5C có nhiều hơn lớp 4C 22 quyển. Mỗi lớp có bao nhiêu quyển?
+f) Thư viện và cửa hàng chứa tất cả 874 kg phân bón. Thư viện chứa nhiều hơn cửa hàng 250 kg. Mỗi nơi chứa bao nhiêu kg?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
-Làm ngược lại công thức.
+Trình bày lời giải có câu trả lời cho từng bước.
 
-a) Hình vuông có chu vi 148 cm. Tính cạnh và diện tích.
-b) Hình chữ nhật có chu vi 74 cm, chiều dài 23 cm. Tính chiều rộng.
-c) Hình vuông cạnh 2 cm và hình chữ nhật 6 cm × 2 cm. Hình nào có diện tích lớn hơn?
-d) Hình chữ nhật có chu vi 42 cm, chiều dài 14 cm. Tính chiều rộng.
-e) Hình vuông có chu vi 76 cm. Tính cạnh và diện tích.
+a) Có 11 can dầu, mỗi can 5 lít. Đổ đều vào các chai 1 lít thì được bao nhiêu chai?
+b) Có 3 tấm vải, mỗi tấm dài 6 m. Cắt mỗi tấm đi 5 m. Hỏi còn lại tất cả bao nhiêu mét vải?
+c) Một cửa hàng có 12 bao gạo, mỗi bao 40 kg. Giá mỗi ki-lô-gam là 20 000 đồng. Bán hết số gạo ấy được bao nhiêu tiền?
+d) Có 10 can dầu, mỗi can 2 lít. Đổ đều vào các chai 1 lít thì được bao nhiêu chai?
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
-Vẽ một hàng ô ra nháp rồi đánh dấu vị trí.
+Mỗi ý một phép tính, trả lời gọn.
 
-a) Quân cao hơn Minh, Minh cao hơn Đức. Ai cao nhất?
-b) Ai thấp nhất?
-c) Xếp ba bạn theo thứ tự từ thấp đến cao.
-d) Có 8 bạn xếp thành một hàng dọc. Quân đứng thứ 3 từ đầu hàng. Hỏi Quân đứng thứ mấy từ cuối hàng?
-e) Trước Quân có mấy bạn?
-f) Sau Quân có mấy bạn?
+a) Nhóm Sao Mai có 22 lá cờ, tổ Ba có gấp 3 lần nhóm Sao Mai. Tổ Ba có bao nhiêu lá cờ?
+b) Cả hai tổ có bao nhiêu lá cờ?
+c) Tổ Ba nhiều hơn nhóm Sao Mai bao nhiêu lá cờ?
+d) Nếu nhóm Sao Mai được cho thêm 17 lá cờ thì nhóm Sao Mai có bao nhiêu lá?
+e) Khi đó tổ Ba còn nhiều hơn nhóm Sao Mai bao nhiêu lá?
+f) Phải cho nhóm Sao Mai thêm bao nhiêu lá nữa thì hai tổ bằng nhau?
 
 
 ---
@@ -91,99 +90,97 @@ f) Sau Quân có mấy bạn?
 ### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
 a) **5**
-b) **3**
-c) **5**
-d) **9**
-e) **30 000 + 9 000 + 500 + 30 + 3**
-f) **23**
+b) **0**
+c) **9**
+d) **2**
+e) **70 000 + 2 000 + 900 + 10**
+f) **19**
 
 **Cách giải mẫu:**
 
 1. Đếm từ phải sang trái: đơn vị, chục, trăm, nghìn, chục nghìn.
-2. Số 39 533 có 5 chữ số.
-3. Chữ số hàng đơn vị là chữ số cuối cùng bên phải: 3.
-4. Viết thành tổng: 30 000 + 9 000 + 500 + 30 + 3.
-5. Cộng các chữ số: 3 + 9 + 5 + 3 + 3 = 23.
+2. Số 72 910 có 5 chữ số.
+3. Chữ số hàng đơn vị là chữ số cuối cùng bên phải: 0.
+4. Viết thành tổng: 70 000 + 2 000 + 900 + 10.
+5. Cộng các chữ số: 7 + 2 + 9 + 1 + 0 = 19.
 6. Đáp số ý a: **5 chữ số**.
 
 *Lỗi hay mắc:* Đếm hàng từ trái sang phải nên lệch hàng.
 
-### Bài 2, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 2, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **28 000 đồng**
-b) **4 000 đồng**
-c) **50 tờ**
-d) **25 000 đồng**
-e) **50 tờ**
-
-**Cách giải mẫu:**
-
-1. Xét ý a: Mua 4 quyển vở, mỗi quyển 7 000 đồng. Hết bao nhiêu tiền?
-2. Đọc vị: đây là dạng **Bài toán tiền tệ hai bước**; dấu hiệu là “Đưa … đồng”, “trả lại”, “đổi ra tờ …”.
-3. Kiến thức phải dùng: Nhân, trừ với số tròn nghìn; mệnh giá tiền Việt Nam.
-4. Cách làm: Tính tiền hàng rồi trừ; đổi tiền thì chia.
-5. Lối tắt: Thử lại bằng cách cộng tiền hàng với tiền trả lại, phải đúng bằng tiền đưa.
-6. Kết quả: **28 000 đồng**.
-
-*Lỗi hay mắc:* Lấy tiền đưa trừ ngay giá một quyển vở.
-
-### Bài 3, (2 điểm — mỗi ý 0,4 điểm)
-
-a) **Ngọc: 73 viên, Hùng: 51 viên**
-b) **Sơn: 85 viên, Trang: 51 viên**
-c) **Chi: 96 viên, Vy: 48 viên**
-d) **Trang: 112 viên, Lan: 86 viên**
-e) **Tuấn: 105 viên, Nam: 69 viên**
+a) **254**
+b) **354**
+c) **200**
+d) **494**
 
 **Cách giải mẫu:**
 
-1. Vẽ hai đoạn thẳng: đoạn của Ngọc dài hơn đoạn của Hùng đúng 22 viên.
-2. Bước 1 — nếu bớt 22 viên của Ngọc thì hai đoạn bằng nhau, tổng mới là 124 − 22 = 102 (viên).
-3. Bước 2 — chia đôi tổng mới được số bi của Hùng: 102 : 2 = 51 (viên).
-4. Bước 3 — số bi của Ngọc: 51 + 22 = 73 (viên).
-5. Thử lại: 73 + 51 = 124 ✓ và 73 − 51 = 22 ✓
-6. Đáp số: **Ngọc 73 viên, Hùng 51 viên**.
+1. Xét ý a: 54 + 154 + 46
+2. Đọc vị: đây là dạng **Tính nhanh tổng nhiều số hạng**; dấu hiệu là Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm.
+3. Kiến thức phải dùng: Tính chất giao hoán, kết hợp của phép cộng.
+4. Cách làm: Ghép cặp tròn rồi cộng.
+5. Lối tắt: Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10.
+6. Kết quả: **254**.
 
-*Lỗi hay mắc:* Chia đôi tổng ngay rồi cộng hiệu vào cả hai số.
+*Lỗi hay mắc:* Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn.
 
-### Bài 4, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 3, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **cạnh 37 cm, diện tích 1 369 cm²**
-b) **14 cm**
-c) **hình chữ nhật**
-d) **7 cm**
-e) **cạnh 19 cm, diện tích 361 cm²**
+a) **5C: 314 quyển, 3B: 294 quyển**
+b) **cửa hàng: 324 kg, kho A: 190 kg**
+c) **nhóm Hoa Phượng: 414 cây, tổ Hai: 218 cây**
+d) **đội Một: 400 cây, đội Hai: 200 cây**
+e) **5C: 89 quyển, 4C: 67 quyển**
+f) **thư viện: 562 kg, cửa hàng: 312 kg**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Hình vuông có chu vi 148 cm. Tính cạnh và diện tích.
-2. Đọc vị: đây là dạng **Tìm kích thước từ chu vi, diện tích**; dấu hiệu là Cho chu vi hoặc diện tích và một kích thước.
-3. Kiến thức phải dùng: Công thức chu vi, diện tích; phép tính ngược.
-4. Cách làm: Đi ngược công thức qua bước nửa chu vi.
-5. Lối tắt: Nửa chu vi = chu vi : 2 — luôn tính bước này đầu tiên.
-6. Kết quả: **cạnh 37 cm, diện tích 1 369 cm²**.
+1. Xét ý a: Hai lớp 5C và 3B có tất cả 608 quyển sách. Lớp 5C có nhiều hơn lớp 3B 20 quyển. Mỗi lớp có bao nhiêu quyển?
+2. Đọc vị: đây là dạng **Tổng – hiệu có lời văn**; dấu hiệu là “Có tất cả …” và “… nhiều hơn … là …”.
+3. Kiến thức phải dùng: Công thức tổng – hiệu, sơ đồ đoạn thẳng.
+4. Cách làm: Đọc vị tổng và hiệu → sơ đồ → công thức.
+5. Lối tắt: Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần.
+6. Kết quả: **5C: 314 quyển, 3B: 294 quyển**.
 
-*Lỗi hay mắc:* Trừ thẳng chiều dài khỏi chu vi mà chưa chia đôi.
+*Lỗi hay mắc:* Nhầm hiệu thành tổng khi đề diễn đạt vòng vo.
+
+### Bài 4, (2 điểm — mỗi ý 0,5 điểm)
+
+a) **55 chai**
+b) **3 m**
+c) **9 600 000 đồng**
+d) **20 chai**
+
+**Cách giải mẫu:**
+
+1. Xét ý a: Có 11 can dầu, mỗi can 5 lít. Đổ đều vào các chai 1 lít thì được bao nhiêu chai?
+2. Đọc vị: đây là dạng **Bài toán đại lượng nhiều bước**; dấu hiệu là Cho số nhóm, giá trị mỗi nhóm và một thao tác thêm bớt.
+3. Kiến thức phải dùng: Nhân, trừ; đơn vị khối lượng, độ dài, dung tích.
+4. Cách làm: Tính đại lượng trung gian rồi trả lời.
+5. Lối tắt: Trừ trước rồi nhân thường ít phép tính hơn nhân trước rồi trừ.
+6. Kết quả: **55 chai**.
+
+*Lỗi hay mắc:* Nhân số bao với giá tiền một ki-lô-gam.
 
 ### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **Quân**
-b) **Đức**
-c) **Đức, Minh, Quân**
-d) **6**
-e) **2 bạn**
-f) **5 bạn**
+a) **66**
+b) **88**
+c) **44**
+d) **39**
+e) **27**
+f) **44**
 
 **Cách giải mẫu:**
 
-1. Vẽ 8 ô liền nhau tượng trưng cho 8 bạn.
-2. Quân đứng thứ 3 từ đầu, nên trước Quân có 2 bạn.
-3. Sau Quân còn 8 − 3 = 5 bạn.
-4. Tính từ cuối hàng, Quân đứng thứ 5 + 1 = 6.
-5. Kiểm tra: 2 + 1 + 5 = 8 ✓
-6. Đáp số ý d: **thứ 6 từ cuối**.
+1. Bước 1 — số cờ của tổ Ba: 22 × 3 = 66 (lá).
+2. Bước 2 — cả hai tổ: 22 + 66 = 88 (lá).
+3. Bước 3 — tổ Ba nhiều hơn: 66 − 22 = 44 (lá).
+4. Bước 4 — muốn hai tổ bằng nhau thì cho nhóm Sao Mai thêm đúng phần hơn ấy, tức 44 lá.
+5. Đáp số ý a: **66 lá cờ**.
 
-*Lỗi hay mắc:* Lấy tổng số bạn trừ thứ tự từ đầu rồi ghi luôn, quên cộng 1.
+*Lỗi hay mắc:* Nhầm hai tình huống: cho thêm và chuyển qua lại.
 
 ---
 
@@ -194,10 +191,10 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài | Đo cái gì | Sai bài này nghĩa là | Học lại ở đâu |
 |:--:|---|---|---|
 | Bài 1 | Đọc, viết, cấu tạo số | Đếm hàng từ trái sang phải nên lệch hàng. | Nhóm chuyên đề **—** · mức — |
-| Bài 2 | Bài toán tiền tệ hai bước | Lấy tiền đưa trừ ngay giá một quyển vở. | Nhóm chuyên đề **—** · mức — |
-| Bài 3 | Bài toán tổng – hiệu | Chia đôi tổng ngay rồi cộng hiệu vào cả hai số. | Nhóm chuyên đề **—** · mức — |
-| Bài 4 | Tìm kích thước từ chu vi, diện tích | Trừ thẳng chiều dài khỏi chu vi mà chưa chia đôi. | Nhóm chuyên đề **—** · mức — |
-| Bài 5 | Suy luận thứ tự, vị trí trong hàng | Lấy tổng số bạn trừ thứ tự từ đầu rồi ghi luôn, quên cộng 1. | Nhóm chuyên đề **—** · mức — |
+| Bài 2 | Tính nhanh tổng nhiều số hạng | Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. | Nhóm chuyên đề **—** · mức — |
+| Bài 3 | Tổng – hiệu có lời văn | Nhầm hiệu thành tổng khi đề diễn đạt vòng vo. | Nhóm chuyên đề **—** · mức — |
+| Bài 4 | Bài toán đại lượng nhiều bước | Nhân số bao với giá tiền một ki-lô-gam. | Nhóm chuyên đề **—** · mức — |
+| Bài 5 | Toán điển hình: gấp, kém, nhiều hơn, ít hơn | Nhầm hai tình huống: cho thêm và chuyển qua lại. | Nhóm chuyên đề **—** · mức — |
 
 ---
 

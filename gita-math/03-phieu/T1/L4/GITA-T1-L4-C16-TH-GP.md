@@ -30,43 +30,43 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần I**
 
-- **Bài I.1** — a) x = 194 · b) x = 5 172 · c) x = 387 · d) x = 782 · e) x = 7 056
-- **Bài I.2** — a) 751 448 · b) 97 966 · c) 43 038 · d) 445 588 · e) 206 386 · f) 8 981 · g) 936 540
-- **Bài I.3** — a) 570 · b) 8 568 · c) 293 · d) 227 · e) 594 · f) 130 · g) 560
-- **Bài I.4** — a) 3 353 · b) 668 600 · c) 6 039 · d) 7 209 · e) 5 953 000 · f) 8 594 · g) 8 588 000 · h) 6 081
-- **Bài I.5** — a) 385 353 · b) 354 772 · c) 133 535 076 · d) 304 290 · e) 122 101 · f) 666 643 964
+- **Bài I.1** — a) 33 · b) 462 · c) 116 · d) 2 418 · e) 1 967 · f) 34 · g) 1 540 · h) 992
+- **Bài I.2** — a) x = 9 048 · b) x = 340 · c) x = 5 962 · d) x = 421 · e) x = 784 · f) x = 517
+- **Bài I.3** — a) 278 392 · b) 611 302 · c) 268 860 · d) 2 111 · e) 2 817 · f) 2 828 · g) 1 728 · h) 7 094
+- **Bài I.4** — a) 4 383 · b) 44 650 · c) 5 300 · d) 5 725 000 · e) 22 370 · f) 5 916
+- **Bài I.5** — a) 575 183 301 · b) 833 819 · c) 893 202 · d) 521 018 · e) 964 499 · f) 346 775 · g) 97 158 855
 
 **Phần II**
 
-- **Bài II.1** — a) 7 600 · b) 82 · c) 61 · d) 1 900 · e) 9 300 · f) 4 600 · g) 81
-- **Bài II.2** — a) 2 580 · b) 189 · c) 470 · d) 918 · e) 1 890 · f) 1 116
-- **Bài II.3** — a) 5 841 · b) 9 009 · c) 1 520 · d) 5 555 · e) 1 023
-- **Bài II.4** — a) 300 · b) 93 · c) 357 · d) 122 · e) 338 · f) 308
-- **Bài II.5** — a) x = 96 · b) x = 182 · c) x = 175 · d) x = 38
+- **Bài II.1** — a) x = 115 · b) x = 66 · c) x = 28 · d) x = 104 · e) x = 191 · f) x = 105
+- **Bài II.2** — a) 45 000 · b) 4 600 · c) 2 100 · d) 3 900 · e) 84 000
+- **Bài II.3** — a) 365 · b) 314 · c) 200 · d) 200 · e) 230 · f) 319
+- **Bài II.4** — a) 6 391 · b) 1 421 · c) 1 520 · d) 6 136 · e) 7 290 · f) 2 627 · g) 3 082
+- **Bài II.5** — a) đậu phụ: 40 000 · gạo: 10 000 · thịt lợn: 50 000 · b) 100 000 · c) 104 000 · d) 4 000 đồng · e) 46 000 đồng
 
 **Phần III**
 
-- **Bài III.1** — a) 5 · b) 20 cm² · c) 4 cm² · d) 10 cm² · e) 5 cm² · f) 28 cm
-- **Bài III.2** — a) 1 550 · b) 1 325 · c) 14 950 · d) 420 · e) 275 · f) 165
-- **Bài III.3** — a) x = 46 · b) x = 80 · c) x = 83 · d) x = 35 · e) x = 32
-- **Bài III.4** — a) > · b) < · c) < · d) < · e) <
-- **Bài III.5** — a) 26 · b) 22 · c) 24 · d) 34 · e) 22
+- **Bài III.1** — a) 450 000 đồng · b) 100 000 đồng · c) 550 000 đồng · d) (18 + 4) × 25 000 = 22 × 25 000 = 550 000 đồng · e) 7 × 25 000 = 175 000 đồng
+- **Bài III.2** — a) < · b) < · c) < · d) < · e) <
+- **Bài III.3** — a) x = 98 · b) x = 105 · c) x = 10 · d) x = 6 · e) x = 71
+- **Bài III.4** — a) 25 250 · b) 110 · c) 325 · d) 3 725 · e) 230
+- **Bài III.5** — a) 94 · b) 146 · c) 16 · d) 60 · e) không · f) 13 865
 
 **Phần IV**
 
-- **Bài IV.1** — a) 2 925 · b) 2 600 · c) 5 100 · d) 1 470
-- **Bài IV.2** — a) 75 lít · b) 198 lít · c) 90 lít · d) 40 lít · e) 350 lít · f) 60 lít
-- **Bài IV.3** — a) 0 · b) 0 · c) 0 · d) 0 · e) 0
-- **Bài IV.4** — a) 2 lần · b) 3 kết quả: nghiêng trái, nghiêng phải, thăng bằng · c) 3 phần · d) 2 · e) Nam · f) 2 lần
-- **Bài IV.5** — a) x = 9 · b) x = 29 · c) x = 47 · d) x = 82 · e) x = 27
+- **Bài IV.1** — a) 13 phần 18 · 2 phần 3 · 1 phần 3 · 1 phần 2 · 2 phần 9 · b) 2 phần 9 < 1 phần 3 < 1 phần 2 < 2 phần 3 < 13 phần 18 · c) 13 phần 18 · d) 2 phần 9 · e) 1 phần 2 · f) không, tất cả đều bé hơn 1
+- **Bài IV.2** — a) 11 phần 20 · b) 21 phần 8 · c) 19 phần 9 · d) 242 phần 63 · e) 41 phần 12
+- **Bài IV.3** — a) x = 16 · b) x = 85 · c) x = 69 · d) x = 42 · e) x = 82
+- **Bài IV.4** — a) 0 · b) 0 · c) 0 · d) 0 · e) 0
+- **Bài IV.5** — a) 11 475 · b) 5 100 · c) 8 925 · d) 110 · e) 840
 
 **Phần V**
 
-- **Bài V.1** — a) -50 · b) -5 · c) -25 · d) -25 · e) -10
-- **Bài V.2** — a) 8 · b) 8 · c) 4 · d) 1 · e) 4 · f) 1 850
-- **Bài V.3** — a) 400 · b) < · c) < · d) < · e) 35
-- **Bài V.4** — a) 1 phần 2 · 2 phần 3 · 3 phần 4 · 4 phần 5 · b) 11 phần 12 · c) đều bé hơn 1 · d) tăng dần · e) vì phần bù tới 1 là 1 phần (n + 1) càng lúc càng bé · f) 1 phần 12
-- **Bài V.5** — a) 1 · b) 1 260 · c) có · d) tổng các số dư là 9, chia 9 dư 0 · e) 0 · f) 0
+- **Bài V.1** — a) < · b) > · c) < · d) >
+- **Bài V.2** — a) 1 phần 2 · 2 phần 3 · 3 phần 4 · 4 phần 5 · b) 7 phần 8 · c) đều bé hơn 1 · d) tăng dần · e) vì phần bù tới 1 là 1 phần (n + 1) càng lúc càng bé · f) 1 phần 8
+- **Bài V.3** — a) 26 · b) 64 · c) < · d) 196 · e) <
+- **Bài V.4** — a) -50 · b) 13 · c) -25 · d) -15 · e) -30
+- **Bài V.5** — a) 2 471 kg · b) 24 tạ 71 kg · c) 1 235 kg, thừa 1 kg · d) 3 xe · e) 12 tạ 36 kg · f) vì phần thóc còn lại vẫn cần thêm một xe nữa để chở
 
 ---
 
@@ -74,51 +74,11 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 Mỗi bài có hai phần: **các bước giải** với số liệu thật của chính bài ấy, và **cách nghĩ** áp dụng cho mọi bài cùng dạng. Đọc kĩ phần chữ đậm — đó là câu cần nhớ, không phải con số.
 
-### Bài I.1 — Tìm thành phần chưa biết của phép tính
+### Bài I.1 — Tính giá trị biểu thức
 
 **Các bước giải**
 
-Xét ý a: x − 23 = 171
-
-Đọc vị: đây là dạng **Tìm x trong phép tính một bước**; dấu hiệu là Có chữ x đứng trong một phép tính.
-
-Kiến thức phải dùng: Quan hệ giữa các thành phần của phép tính.
-
-Cách làm: Gọi tên vai trò của x rồi dùng quy tắc tương ứng.
-
-Lối tắt: Thử lại bằng cách thay x vào đề — mất 3 giây nhưng chắc chắn.
-
-Kết quả: **x = 194**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Nhớ quy tắc: số hạng chưa biết = tổng − số hạng đã biết; số bị trừ = hiệu + số trừ; thừa số chưa biết = tích : thừa số đã biết; số bị chia = thương × số chia.
-
-*Điểm chốt:* x đứng ở **vị trí nào** trong phép tính quyết định quy tắc dùng.
-
-### Bài I.2 — Đặt tính rồi tính (nhân, chia)
-
-**Các bước giải**
-
-Xét ý a: 9 164 × 82
-
-Đọc vị: đây là dạng **Nhân, chia số tự nhiên**; dấu hiệu là Yêu cầu “đặt tính rồi tính” với phép nhân, chia.
-
-Kiến thức phải dùng: Kĩ thuật đặt tính nhân, chia.
-
-Cách làm: Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ chữ số.
-
-Lối tắt: Kiểm tra kết quả bằng phép tính ngược: thương × số chia = số bị chia.
-
-Kết quả: **751 448**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
-
-*Điểm chốt:* Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
-
-### Bài I.3 — Tính giá trị biểu thức
-
-**Các bước giải**
-
-Xét ý a: (110 + 4) × 5
+Xét ý a: 103 − 14 × 5
 
 Đọc vị: đây là dạng **Tính giá trị biểu thức số**; dấu hiệu là Biểu thức có nhiều phép tính, có thể có ngoặc.
 
@@ -128,17 +88,57 @@ Cách làm: Xét ngoặc → nhân chia → cộng trừ, trái sang phải.
 
 Lối tắt: Nếu thấy dạng a × b + a × c thì đưa ngay về a × (b + c).
 
-Kết quả: **570**.
+Kết quả: **33**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Trong biểu thức không có dấu ngoặc: nhân và chia làm trước, cộng và trừ làm sau; cùng mức thì làm từ trái sang phải. Có dấu ngoặc thì làm trong ngoặc trước.
 
 *Điểm chốt:* Dấu ngoặc **đảo ngược** thứ tự ưu tiên — nhìn ngoặc trước khi tính.
 
+### Bài I.2 — Tìm thành phần chưa biết của phép tính
+
+**Các bước giải**
+
+Xét ý a: x : 29 = 312
+
+Đọc vị: đây là dạng **Tìm x trong phép tính một bước**; dấu hiệu là Có chữ x đứng trong một phép tính.
+
+Kiến thức phải dùng: Quan hệ giữa các thành phần của phép tính.
+
+Cách làm: Gọi tên vai trò của x rồi dùng quy tắc tương ứng.
+
+Lối tắt: Thử lại bằng cách thay x vào đề — mất 3 giây nhưng chắc chắn.
+
+Kết quả: **x = 9 048**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Nhớ quy tắc: số hạng chưa biết = tổng − số hạng đã biết; số bị trừ = hiệu + số trừ; thừa số chưa biết = tích : thừa số đã biết; số bị chia = thương × số chia.
+
+*Điểm chốt:* x đứng ở **vị trí nào** trong phép tính quyết định quy tắc dùng.
+
+### Bài I.3 — Đặt tính rồi tính (nhân, chia)
+
+**Các bước giải**
+
+Xét ý a: 3 026 × 92
+
+Đọc vị: đây là dạng **Nhân, chia số tự nhiên**; dấu hiệu là Yêu cầu “đặt tính rồi tính” với phép nhân, chia.
+
+Kiến thức phải dùng: Kĩ thuật đặt tính nhân, chia.
+
+Cách làm: Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ chữ số.
+
+Lối tắt: Kiểm tra kết quả bằng phép tính ngược: thương × số chia = số bị chia.
+
+Kết quả: **278 392**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
+
+*Điểm chốt:* Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
+
 ### Bài I.4 — Nhân, chia nhẩm với 10, 100, 1 000
 
 **Các bước giải**
 
-Xét ý a: 335 300 : 100
+Xét ý a: 4 383 000 : 1 000
 
 Đọc vị: đây là dạng **Nhân, chia nhẩm với số tròn chục, trăm, nghìn**; dấu hiệu là Thừa số hoặc số chia là 10, 100, 1 000.
 
@@ -148,7 +148,7 @@ Cách làm: Thêm hoặc bớt chữ số 0.
 
 Lối tắt: Nhân với 20 = nhân 2 rồi thêm một chữ số 0.
 
-Kết quả: **3 353**.
+Kết quả: **4 383**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Nhân một số với 10, 100, 1 000 thì viết thêm 1, 2, 3 chữ số 0 vào bên phải số đó. Chia cho 10, 100, 1 000 thì bớt đi 1, 2, 3 chữ số 0 ở bên phải.
 
@@ -158,17 +158,15 @@ Kết quả: **3 353**.
 
 **Các bước giải**
 
-Xét ý a: 344 103 + 41 250
+Đặt tính, nhân lần lượt từng chữ số của 861 với 668 041.
 
-Đọc vị: đây là dạng **Bốn phép tính với số tự nhiên**; dấu hiệu là Yêu cầu “đặt tính rồi tính”.
+Mỗi tích riêng viết lùi sang trái một cột.
 
-Kiến thức phải dùng: Kĩ thuật đặt tính cộng, trừ, nhân, chia.
+Cộng các tích riêng lại: 668 041 × 861 = 575 183 301.
 
-Cách làm: Đặt tính thẳng cột, tính từ hàng đơn vị.
+Ước lượng kiểm tra: khoảng 668 000 × 900 ≈ 601 200 000 — cùng độ lớn ✓
 
-Lối tắt: Ước lượng bằng cách làm tròn để phát hiện sai sót về độ lớn.
-
-Kết quả: **385 353**.
+Đáp số: **575 183 301**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Cộng, trừ thì viết thẳng hàng đơn vị. Nhân thì viết các tích riêng lùi đúng cột rồi cộng. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0.
 
@@ -178,91 +176,11 @@ Kết quả: **385 353**.
 
 *Phải chắc trước khi làm bài này:* Bảng nhân chia và kĩ thuật đặt tính.
 
-### Bài II.1 — Tính nhanh nhờ ghép cặp thừa số tròn
+### Bài II.1 — Tìm x qua hai bước
 
 **Các bước giải**
 
-Xét ý a: 76 × 25 × 4
-
-Đọc vị: đây là dạng **Tính nhanh tích, thương nhiều bước**; dấu hiệu là Tích có thừa số 25, 125, 50, 20; hoặc chia liên tiếp.
-
-Kiến thức phải dùng: Tính chất giao hoán, kết hợp của phép nhân.
-
-Cách làm: Ghép cặp cho tích tròn rồi nhân.
-
-Lối tắt: Chia liên tiếp cho 4 rồi 25 bằng chia cho 100.
-
-Kết quả: **7 600**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Trong một tích, được phép đổi chỗ và nhóm các thừa số. Ghép các cặp cho tích tròn: 25 × 4 = 100, 125 × 8 = 1 000, 50 × 2 = 100, 20 × 5 = 100. Chia liên tiếp cho hai số bằng chia cho tích hai số đó.
-
-*Điểm chốt:* Thuộc lòng bốn cặp tròn: **25 × 4**, **125 × 8**, **50 × 2**, **20 × 5**.
-
-### Bài II.2 — Nhân một số với một tổng, một hiệu
-
-**Các bước giải**
-
-Xét ý a: 86 × 11 + 86 × 19
-
-Đọc vị: đây là dạng **Tính nhanh nhờ thừa số chung**; dấu hiệu là Hai tích cộng hoặc trừ nhau, có chung một thừa số.
-
-Kiến thức phải dùng: Nhân một số với một tổng, một hiệu.
-
-Cách làm: Đặt thừa số chung ra ngoài rồi tính trong ngoặc.
-
-Lối tắt: Sau khi đặt thừa số chung, tổng trong ngoặc thường tròn 10 hoặc 100.
-
-Kết quả: **2 580**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Nhận ra thừa số chung rồi đặt nó ra ngoài: a × b + a × c = a × (b + c) và a × b − a × c = a × (b − c). Sau khi đặt thừa số chung, phép tính trong ngoặc thường ra số tròn.
-
-*Điểm chốt:* Thừa số chung phải xuất hiện ở **cả hai** tích thì mới đặt ra ngoài được.
-
-### Bài II.3 — Nhân nhẩm với số gần tròn chục, tròn trăm
-
-**Các bước giải**
-
-Xét ý a: 59 × 99
-
-Đọc vị: đây là dạng **Nhân nhẩm nhờ tách thừa số**; dấu hiệu là Thừa số là 9, 11, 19, 21, 99, 101….
-
-Kiến thức phải dùng: Nhân một số với một tổng, một hiệu.
-
-Cách làm: Tách về số tròn rồi bù trừ.
-
-Lối tắt: × 11 với số có hai chữ số: viết hai chữ số ra hai đầu, tổng của chúng đặt vào giữa (nhớ sang trái nếu tổng vượt 9).
-
-Kết quả: **5 841**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Đưa thừa số về dạng tròn chục, tròn trăm cộng hoặc trừ một ít: × 9 = × 10 − 1 lần; × 11 = × 10 + 1 lần; × 99 = × 100 − 1 lần; × 101 = × 100 + 1 lần.
-
-*Điểm chốt:* Tách thừa số thành **tròn chục ± 1 đơn vị** rồi dùng nhân với một tổng, một hiệu.
-
-### Bài II.4 — Tính nhanh bằng cách ghép số tròn
-
-**Các bước giải**
-
-Xét ý a: 300 + 29 − 29
-
-Đọc vị: đây là dạng **Tính nhanh tổng nhiều số hạng**; dấu hiệu là Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm.
-
-Kiến thức phải dùng: Tính chất giao hoán, kết hợp của phép cộng.
-
-Cách làm: Ghép cặp tròn rồi cộng.
-
-Lối tắt: Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10.
-
-Kết quả: **300**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Dùng tính chất giao hoán và kết hợp của phép cộng để đổi chỗ, nhóm những số cộng lại thành số tròn chục, tròn trăm rồi mới cộng phần còn lại.
-
-*Điểm chốt:* Tìm **cặp cộng tròn 100** trước khi cộng theo thứ tự.
-
-### Bài II.5 — Tìm x qua hai bước
-
-**Các bước giải**
-
-Xét ý a: (x − 166) × 11 = -770
+Xét ý a: 527 − x × 3 = 182
 
 Đọc vị: đây là dạng **Tìm x qua hai bước**; dấu hiệu là x nằm trong một cụm có hai phép tính.
 
@@ -272,79 +190,119 @@ Cách làm: Gỡ dần từ phép ngoài cùng vào trong.
 
 Lối tắt: Thay x tìm được vào đề để thử — nhanh hơn dò lại từng bước.
 
-Kết quả: **x = 96**.
+Kết quả: **x = 115**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, sau đó mới tìm x bên trong cụm. Làm ngược lại thứ tự thực hiện phép tính.
 
 *Điểm chốt:* Đi **ngược** thứ tự thực hiện: phép ngoài cùng gỡ trước.
 
-### Bài III.1 — Phủ hình và chia hình thành phần bằng nhau
+### Bài II.2 — Tính nhanh nhờ ghép cặp thừa số tròn
 
 **Các bước giải**
 
-Bước 1 — diện tích hình chữ nhật: 10 × 2 = 20 (cm²).
+Xét ý a: 45 × 125 × 8
 
-Bước 2 — diện tích một hình vuông nhỏ: 2 × 2 = 4 (cm²).
+Đọc vị: đây là dạng **Tính nhanh tích, thương nhiều bước**; dấu hiệu là Tích có thừa số 25, 125, 50, 20; hoặc chia liên tiếp.
 
-Bước 3 — số hình vuông cần dùng: 20 : 4 = 5 (hình).
+Kiến thức phải dùng: Tính chất giao hoán, kết hợp của phép nhân.
 
-Kiểm tra: xếp được 5 hàng, mỗi hàng 1 hình — đúng 5 hình ✓
+Cách làm: Ghép cặp cho tích tròn rồi nhân.
 
-Đáp số: **5 hình vuông**.
+Lối tắt: Chia liên tiếp cho 4 rồi 25 bằng chia cho 100.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Số mảnh phủ kín bằng diện tích hình lớn chia diện tích một mảnh — nhưng chỉ đúng khi các mảnh **xếp khít không thừa**. Kiểm tra lại bằng cách đếm số hàng và số cột.
+Kết quả: **45 000**.
 
-*Điểm chốt:* Phép chia diện tích chỉ đúng khi mảnh **xếp khít**.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Trong một tích, được phép đổi chỗ và nhóm các thừa số. Ghép các cặp cho tích tròn: 25 × 4 = 100, 125 × 8 = 1 000, 50 × 2 = 100, 20 × 5 = 100. Chia liên tiếp cho hai số bằng chia cho tích hai số đó.
 
-*Muốn khó hơn:* Đổi mảnh phủ thành hình chữ nhật 1 × 2 — hỏi có mấy cách xếp khác nhau.
+*Điểm chốt:* Thuộc lòng bốn cặp tròn: **25 × 4**, **125 × 8**, **50 × 2**, **20 × 5**.
 
-*Phải chắc trước khi làm bài này:* Diện tích hình chữ nhật và phép chia hết.
-
-### Bài III.2 — Tính nhanh tổng dãy số cách đều
+### Bài II.3 — Tính nhanh bằng cách ghép số tròn
 
 **Các bước giải**
 
-Xét ý a: 2 + 7 + 12 + … + 122
+Xét ý a: 365 + 14 − 14
 
-Đọc vị: đây là dạng **Tổng dãy số cách đều**; dấu hiệu là Dãy cộng có dấu … và các số cách đều nhau.
+Đọc vị: đây là dạng **Tính nhanh tổng nhiều số hạng**; dấu hiệu là Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm.
 
-Kiến thức phải dùng: Công thức tổng dãy cách đều.
+Kiến thức phải dùng: Tính chất giao hoán, kết hợp của phép cộng.
 
-Cách làm: Đếm số số hạng rồi áp công thức tổng.
+Cách làm: Ghép cặp tròn rồi cộng.
 
-Lối tắt: Ghép cặp đầu – cuối: mọi cặp đều có cùng tổng, chỉ cần nhân với số cặp.
+Lối tắt: Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10.
 
-Kết quả: **1 550**.
+Kết quả: **365**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Đếm số số hạng: (số cuối − số đầu) : khoảng cách + 1. Tổng bằng (số đầu + số cuối) × số số hạng : 2. Cách hiểu: ghép số đầu với số cuối, số thứ hai với số áp chót… mỗi cặp có tổng bằng nhau.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Dùng tính chất giao hoán và kết hợp của phép cộng để đổi chỗ, nhóm những số cộng lại thành số tròn chục, tròn trăm rồi mới cộng phần còn lại.
 
-*Điểm chốt:* Phải đếm **số số hạng** trước; đây là chỗ sai nhiều nhất.
+*Điểm chốt:* Tìm **cặp cộng tròn 100** trước khi cộng theo thứ tự.
 
-### Bài III.3 — Tìm x qua ba bước, có dấu ngoặc
-
-**Các bước giải**
-
-Xét ý a: (x + 21) × 6 − 6 = 396
-
-Đọc vị: đây là dạng **Tìm x nhiều bước có ngoặc**; dấu hiệu là x nằm trong ngoặc, ngoài ngoặc còn phép tính khác.
-
-Kiến thức phải dùng: Thứ tự thực hiện phép tính, quan hệ thành phần.
-
-Cách làm: Bóc lớp từ ngoài vào trong.
-
-Lối tắt: Thay x tìm được vào đề, tính một lượt để thử lại.
-
-Kết quả: **x = 46**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Gỡ dần từ ngoài vào trong: xác định phép tính ngoài cùng, coi phần còn lại là một số, tìm giá trị của nó, rồi lặp lại cho tới khi x đứng riêng.
-
-*Điểm chốt:* Mỗi bước chỉ gỡ **một** phép tính, đừng gỡ hai phép cùng lúc.
-
-### Bài III.4 — So sánh hai biểu thức mà không cần tính
+### Bài II.4 — Nhân một số với một tổng, một hiệu
 
 **Các bước giải**
 
-Xét ý a: 838 × 15 … 576 × 15
+Xét ý a: 83 × 31 + 83 × 46
+
+Đọc vị: đây là dạng **Tính nhanh nhờ thừa số chung**; dấu hiệu là Hai tích cộng hoặc trừ nhau, có chung một thừa số.
+
+Kiến thức phải dùng: Nhân một số với một tổng, một hiệu.
+
+Cách làm: Đặt thừa số chung ra ngoài rồi tính trong ngoặc.
+
+Lối tắt: Sau khi đặt thừa số chung, tổng trong ngoặc thường tròn 10 hoặc 100.
+
+Kết quả: **6 391**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Nhận ra thừa số chung rồi đặt nó ra ngoài: a × b + a × c = a × (b + c) và a × b − a × c = a × (b − c). Sau khi đặt thừa số chung, phép tính trong ngoặc thường ra số tròn.
+
+*Điểm chốt:* Thừa số chung phải xuất hiện ở **cả hai** tích thì mới đặt ra ngoài được.
+
+### Bài II.5 — Nhẩm tiền khi đi chợ
+
+**Các bước giải**
+
+Đi chợ thì cần **biết nhanh khoảng bao nhiêu** trước, biết chính xác sau. Vì vậy nhẩm bằng số tròn trước rồi mới cộng số lẻ để bù.
+
+đậu phụ 42 500 → 40 000 · gạo 13 000 → 10 000 · thịt lợn 48 500 → 50 000
+
+Cộng số tròn: 40 000 + 10 000 + 50 000 = 100 000 đồng — đây là con số nhẩm trong đầu khi đứng ở chợ.
+
+Tổng đúng: 42 500 + 13 000 + 48 500 = **104 000 đồng**, lệch 4 000 đồng so với số nhẩm.
+
+Tiền trả lại: 150 000 − 104 000 = **46 000 đồng**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Làm tròn từng giá đến hàng chục nghìn để cộng nhẩm, rồi cộng lại số gốc để có tổng đúng. Hai con số ấy dùng vào hai việc khác nhau: một để biết đủ tiền không, một để trả tiền.
+
+*Điểm chốt:* Ước lượng và tính đúng là hai việc khác nhau, đừng lẫn.
+
+*Muốn khó hơn:* Thêm một món được giảm giá và hỏi lại tiền trả lại.
+
+*Phải chắc trước khi làm bài này:* Làm tròn số và cộng trừ số có sáu chữ số.
+
+### Bài III.1 — Tính tiền hoá đơn theo hai cách
+
+**Các bước giải**
+
+Cách dài: tính riêng từng buổi rồi cộng. 18 × 25 000 = 450 000; 4 × 25 000 = 100 000; cộng lại được 550 000 đồng.
+
+Cách ngắn: cộng số hộp trước — 18 + 4 = 22 hộp — rồi nhân một lần: 22 × 25 000 = **550 000 đồng**.
+
+Hai cách cho cùng kết quả vì `a × c + b × c = (a + b) × c`. Cách ngắn chỉ phải nhân **một lần** thay vì hai, nên vừa nhanh vừa ít sai.
+
+Câu cuối dùng chính tính chất ấy theo chiều ngược: chênh 7 hộp thì chênh 7 × 25 000 = 175 000 đồng, không cần tính tiền cả hai ngày.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Khi nhiều món có **cùng đơn giá**, cộng số lượng trước rồi nhân một lần. Đó là tính chất một số nhân một tổng, và ở hoá đơn thật nó tiết kiệm gần hết công việc.
+
+*Điểm chốt:* Cùng đơn giá thì cộng số lượng trước, nhân sau — nhân một lần thôi.
+
+*Muốn khó hơn:* Thêm một loại bánh khác giá khác và hỏi tổng cả hai loại.
+
+*Phải chắc trước khi làm bài này:* Nhân số có hai chữ số với số tròn nghìn.
+
+### Bài III.2 — So sánh hai biểu thức mà không cần tính
+
+**Các bước giải**
+
+Xét ý a: 401 × 6 … 401 × 7
 
 Đọc vị: đây là dạng **So sánh biểu thức không tính giá trị**; dấu hiệu là Hai vế có chung một số hạng hoặc một thừa số.
 
@@ -354,81 +312,141 @@ Cách làm: Triệt tiêu phần chung rồi so phần riêng.
 
 Lối tắt: Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn.
 
-Kết quả: **>**.
+Kết quả: **<**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Khi hai biểu thức có phần giống nhau, chỉ cần so sánh phần khác nhau: cùng cộng thêm một số thì số nào lớn hơn vẫn lớn hơn; cùng nhân với một số khác 0 cũng vậy.
 
 *Điểm chốt:* Che phần **giống nhau** đi, chỉ so phần khác nhau.
 
-### Bài III.5 — Tìm số ban đầu bằng cách tính ngược
+### Bài III.3 — Tìm x qua ba bước, có dấu ngoặc
 
 **Các bước giải**
 
-Viết chuỗi thao tác thành sơ đồ mũi tên: số cần tìm → × 3 → + 42 → : 5 → 24.
+Xét ý a: (49 + x) × 3 + 8 = 449
 
-Đi **ngược mũi tên**, và mỗi bước làm phép tính ngược lại. Phép cuối cùng là chia cho 5, nên bước đầu khi đi ngược là nhân với 5: 24 × 5 = 120.
+Đọc vị: đây là dạng **Tìm x nhiều bước có ngoặc**; dấu hiệu là x nằm trong ngoặc, ngoài ngoặc còn phép tính khác.
 
-Phép trước đó là cộng 42, đi ngược thì trừ: 120 − 42 = 78.
+Kiến thức phải dùng: Thứ tự thực hiện phép tính, quan hệ thành phần.
 
-Phép đầu tiên là nhân 3, đi ngược thì chia: 78 : 3 = 26.
+Cách làm: Bóc lớp từ ngoài vào trong.
 
-Số cần tìm là **26**. Thử lại xuôi: 26 × 3 = 78, cộng 42 được 120, chia 5 được 24 — đúng bằng đề cho.
+Lối tắt: Thay x tìm được vào đề, tính một lượt để thử lại.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Viết chuỗi thao tác thành sơ đồ mũi tên rồi đi ngược lại từ kết quả cuối. Mỗi bước đảo phép tính: nhân thành chia, cộng thành trừ. Thứ tự cũng phải đảo — phép làm sau cùng được gỡ trước tiên.
+Kết quả: **x = 98**.
 
-*Điểm chốt:* Đảo **cả phép tính lẫn thứ tự**. Đảo phép tính mà giữ nguyên thứ tự thì vẫn sai.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Gỡ dần từ ngoài vào trong: xác định phép tính ngoài cùng, coi phần còn lại là một số, tìm giá trị của nó, rồi lặp lại cho tới khi x đứng riêng.
 
-*Muốn khó hơn:* Thêm bước “trừ đi một nửa số đang có” để học sinh phải gỡ một phép tính có liên quan tới chính số ấy.
+*Điểm chốt:* Mỗi bước chỉ gỡ **một** phép tính, đừng gỡ hai phép cùng lúc.
 
-*Phải chắc trước khi làm bài này:* Bốn phép tính với số có hai chữ số và thứ tự thực hiện phép tính.
-
-### Bài IV.1 — Tính nhanh tổng nhiều tích có thừa số chung
+### Bài III.4 — Tính nhanh tổng dãy số cách đều
 
 **Các bước giải**
 
-Xét ý a: 9 × 1 + 9 × 2 + 9 × 3 + … + 9 × 25
+Xét ý a: 5 + 10 + 15 + … + 500
 
-Đọc vị: đây là dạng **Tổng các tích có thừa số chung**; dấu hiệu là Dãy cộng gồm nhiều tích cùng một thừa số.
+Đọc vị: đây là dạng **Tổng dãy số cách đều**; dấu hiệu là Dãy cộng có dấu … và các số cách đều nhau.
 
-Kiến thức phải dùng: Nhân một số với một tổng, tổng dãy cách đều.
+Kiến thức phải dùng: Công thức tổng dãy cách đều.
 
-Cách làm: Đặt thừa số chung → tính tổng trong ngoặc bằng công thức.
+Cách làm: Đếm số số hạng rồi áp công thức tổng.
 
-Lối tắt: 1 + 2 + … + 100 = 5 050; nhớ vài mốc để nhân ngay.
+Lối tắt: Ghép cặp đầu – cuối: mọi cặp đều có cùng tổng, chỉ cần nhân với số cặp.
 
-Kết quả: **2 925**.
+Kết quả: **25 250**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Tất cả các tích đều có chung một thừa số. Đặt thừa số chung ra ngoài, trong ngoặc còn tổng của dãy số tự nhiên liên tiếp — dùng công thức tổng dãy cách đều để tính.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Đếm số số hạng: (số cuối − số đầu) : khoảng cách + 1. Tổng bằng (số đầu + số cuối) × số số hạng : 2. Cách hiểu: ghép số đầu với số cuối, số thứ hai với số áp chót… mỗi cặp có tổng bằng nhau.
 
-*Điểm chốt:* Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
+*Điểm chốt:* Phải đếm **số số hạng** trước; đây là chỗ sai nhiều nhất.
 
-### Bài IV.2 — Bài toán đại lượng nhiều bước
+### Bài III.5 — Định vị số hạng trong dãy cách đều
 
 **Các bước giải**
 
-Xét ý a: Một cửa hàng có 8 thùng nước, mỗi thùng 25 lít. Cửa hàng đã bán 5 thùng. Hỏi cửa hàng còn lại bao nhiêu lít nước?
+Xét ý a: Dãy có bao nhiêu số hạng?
 
-Đọc vị: đây là dạng **Bài toán đại lượng nhiều bước**; dấu hiệu là Cho số nhóm, giá trị mỗi nhóm và số nhóm đã dùng.
+Đọc vị: đây là dạng **Định vị số hạng, kiểm tra một số có thuộc dãy**; dấu hiệu là Câu hỏi “là số hạng thứ mấy”, “có thuộc dãy không”.
 
-Kiến thức phải dùng: Nhân, trừ; đại lượng cùng loại.
+Kiến thức phải dùng: Dãy cách đều, phép chia có dư.
 
-Cách làm: Rút gọn số bước bằng cách trừ trước, nhân sau.
+Cách làm: (số − đầu) : khoảng cách, xét dư rồi cộng 1.
 
-Lối tắt: So sánh hai đường giải, chọn đường ít phép tính hơn.
+Lối tắt: Mọi số hạng của dãy đều có cùng số dư khi chia cho khoảng cách.
 
-Kết quả: **75 lít**.
+Kết quả: **94**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Muốn biết một số là số hạng thứ mấy: lấy số đó trừ số hạng đầu, chia cho khoảng cách rồi cộng 1. Nếu phép chia còn dư thì số đó **không thuộc** dãy.
 
-*Điểm chốt:* Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
+*Điểm chốt:* Phép chia **có dư** là bằng chứng số đó không thuộc dãy.
 
-### Bài IV.3 — Nhận ra thừa số 0 để tính tức thì
+### Bài IV.1 — Rút gọn, so sánh và sắp thứ tự phân số
+
+**Các bước giải**
+
+Các phân số đều có cùng mẫu số 18 nên so sánh **tử số** là đủ.
+
+Sắp tử số từ bé đến lớn rồi ghi lại phân số tương ứng.
+
+Kết quả: 2 phần 9 < 1 phần 3 < 1 phần 2 < 2 phần 3 < 13 phần 18.
+
+Hiệu của phân số lớn nhất và bé nhất: 13 phần 18 − 2 phần 9 = 1 phần 2.
+
+Đáp số ý b: **2 phần 9 < 1 phần 3 < 1 phần 2 < 2 phần 3 < 13 phần 18**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Cùng mẫu số thì so tử số. Khác mẫu thì quy đồng hoặc so với 1 và với một nửa. Rút gọn về tối giản trước khi trình bày kết quả.
+
+*Điểm chốt:* Cùng mẫu số thì **chỉ cần so tử số**.
+
+*Muốn khó hơn:* Trộn thêm số thập phân vào dãy để sắp thứ tự chung.
+
+*Phải chắc trước khi làm bài này:* Rút gọn phân số và quy đồng mẫu số.
+
+### Bài IV.2 — Biểu thức nhiều phép tính với phân số
+
+**Các bước giải**
+
+Xét ý a: (5 phần 4 + 3 phần 2) × 1 phần 5
+
+Đọc vị: đây là dạng **Biểu thức phân số nhiều phép tính**; dấu hiệu là Biểu thức gồm nhiều phân số và nhiều phép tính.
+
+Kiến thức phải dùng: Thứ tự thực hiện phép tính, tính chất phân phối.
+
+Cách làm: Quan sát rút gọn trước, sau đó theo thứ tự thực hiện.
+
+Lối tắt: Rút gọn chéo tử với mẫu trước khi nhân.
+
+Kết quả: **11 phần 20**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
+
+*Điểm chốt:* Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều.
+
+### Bài IV.3 — Tìm x khi x xuất hiện ở cả hai vế
+
+**Các bước giải**
+
+Xét ý a: x × 4 + 32 = x × 6
+
+Đọc vị: đây là dạng **Tìm x xuất hiện hai vế**; dấu hiệu là Chữ x xuất hiện ở cả hai vế của dấu bằng.
+
+Kiến thức phải dùng: So sánh hai biểu thức, sơ đồ đoạn thẳng.
+
+Cách làm: Trừ bớt số lần x chung rồi đưa về phép chia.
+
+Lối tắt: Vẽ sơ đồ đoạn thẳng cho mỗi vế — nhìn ra ngay phần chênh.
+
+Kết quả: **x = 16**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Vế phải có nhiều x hơn vế trái. Bớt đi ở cả hai vế số lần x của vế ít hơn, phần chênh lệch số lần x ở vế phải chính bằng số hạng còn lại ở vế trái. Từ đó tìm x bằng một phép chia.
+
+*Điểm chốt:* Lấy **hiệu số lần x** giữa hai vế, rồi chia số đã biết cho hiệu đó.
+
+### Bài IV.4 — Nhận ra thừa số 0 để tính tức thì
 
 > **BẪY — Biểu thức lớn nhưng kết quả bằng 0.**
 
 **Các bước giải**
 
-Xét ý a: (24 × 35 − 35 × 24) × 43
+Xét ý a: 18 × 61 × (17 − 17)
 
 Đọc vị: đây là dạng **Tính nhanh nhờ thừa số 0**; dấu hiệu là Trong biểu thức có ngoặc chứa hai số giống nhau trừ nhau.
 
@@ -444,53 +462,97 @@ Kết quả: **0**.
 
 *Điểm chốt:* Quét tìm **cụm bằng 0** trước; thấy rồi thì viết đáp số ngay.
 
-### Bài IV.4 — Cân đĩa và số lần cân ít nhất
-
-> **BẪY — Chia ba chứ không chia đôi.**
+### Bài IV.5 — Tính nhanh tổng nhiều tích có thừa số chung
 
 **Các bước giải**
 
-Cân đĩa cho **ba** kết quả, nên mỗi lần cân chia được số gói thành ba phần và loại ngay hai phần.
+Xét ý a: 9 × 1 + 9 × 2 + 9 × 3 + … + 9 × 50
 
-Chia 4 gói thành ba phần, mỗi phần nhiều nhất 2 gói.
+Đọc vị: đây là dạng **Tổng các tích có thừa số chung**; dấu hiệu là Dãy cộng gồm nhiều tích cùng một thừa số.
 
-Đặt hai phần bằng nhau lên hai đĩa: bên nào nhẹ hơn thì gói nhẹ ở đó; cân bằng thì gói nhẹ ở phần còn lại.
+Kiến thức phải dùng: Nhân một số với một tổng, tổng dãy cách đều.
 
-Lặp lại cách ấy, sau 2 lần thì còn đúng một gói.
+Cách làm: Đặt thừa số chung → tính tổng trong ngoặc bằng công thức.
 
-Đáp số: **2 lần**.
+Lối tắt: 1 + 2 + … + 100 = 5 050; nhớ vài mốc để nhân ngay.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Mỗi lần cân bằng cân đĩa cho ba kết quả, nên chia ba chứ không chia đôi. Sau k lần cân phân biệt được nhiều nhất 3 nhân với chính nó k lần vật. Luôn lập luận theo **trường hợp xấu nhất**.
+Kết quả: **11 475**.
 
-*Điểm chốt:* Cân đĩa cho **ba** kết quả nên chia ba, không chia đôi.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Tất cả các tích đều có chung một thừa số. Đặt thừa số chung ra ngoài, trong ngoặc còn tổng của dãy số tự nhiên liên tiếp — dùng công thức tổng dãy cách đều để tính.
 
-*Muốn khó hơn:* Không biết gói khác biệt nặng hơn hay nhẹ hơn — số lần cân tăng lên.
+*Điểm chốt:* Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
 
-*Phải chắc trước khi làm bài này:* Phép chia và thói quen lập luận theo trường hợp xấu nhất.
+### Bài V.1 — So sánh phân số bằng phần bù và phân số trung gian
 
-### Bài IV.5 — Tìm x khi x xuất hiện ở cả hai vế
+> **BẪY — Chiều của phần bù.**
 
 **Các bước giải**
 
-Xét ý a: x × 2 + 45 = x × 7
+Xét ý a: 28 phần 29 … 29 phần 30
 
-Đọc vị: đây là dạng **Tìm x xuất hiện hai vế**; dấu hiệu là Chữ x xuất hiện ở cả hai vế của dấu bằng.
+Đọc vị: đây là dạng **So sánh phân số bằng kĩ thuật đặc biệt**; dấu hiệu là Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2.
 
-Kiến thức phải dùng: So sánh hai biểu thức, sơ đồ đoạn thẳng.
+Kiến thức phải dùng: Phần bù tới 1, phân số trung gian.
 
-Cách làm: Trừ bớt số lần x chung rồi đưa về phép chia.
+Cách làm: So phần bù; hoặc chèn phân số trung gian.
 
-Lối tắt: Vẽ sơ đồ đoạn thẳng cho mỗi vế — nhìn ra ngay phần chênh.
+Lối tắt: Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn.
 
-Kết quả: **x = 9**.
+Kết quả: **<**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Vế phải có nhiều x hơn vế trái. Bớt đi ở cả hai vế số lần x của vế ít hơn, phần chênh lệch số lần x ở vế phải chính bằng số hạng còn lại ở vế trái. Từ đó tìm x bằng một phép chia.
+**Cách nghĩ chung cho mọi bài cùng dạng.** **Phần bù tới 1:** hai phân số đều thiếu một chút nữa thì bằng 1; phân số nào có phần bù **bé hơn** thì lớn hơn. **Phân số trung gian:** chọn một phân số dễ so (thường là 1 phần 2 hoặc 1 phần 3) rồi so mỗi phân số với nó.
 
-*Điểm chốt:* Lấy **hiệu số lần x** giữa hai vế, rồi chia số đã biết cho hiệu đó.
+*Điểm chốt:* Phần bù **bé hơn** nghĩa là phân số **lớn hơn** — dễ nhớ nhầm chiều.
 
-### Bài V.1 — Tổng dãy cộng trừ xen kẽ
+### Bài V.2 — Dãy phân số dạng n phần (n + 1)
 
-> **BẪY — Số hạng lẻ còn thừa ở cuối dãy.**
+> **BẪY — Chiều của phần bù.**
+
+**Các bước giải**
+
+Bốn phân số đầu: 1 phần 2 · 2 phần 3 · 3 phần 4 · 4 phần 5.
+
+Phân số thứ n có tử là n và mẫu là n + 1.
+
+Phân số thứ 7 là 7 phần 8.
+
+Mỗi phân số còn thiếu đúng 1 phần (n + 1) nữa thì bằng 1.
+
+Phần thiếu ấy càng lúc càng bé, nên dãy **tăng dần**.
+
+Đáp số ý b: **7 phần 8**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Phân số dạng n phần (n + 1) luôn bé hơn 1 và còn thiếu đúng 1 phần (n + 1) nữa thì bằng 1. Phần thiếu càng bé thì phân số càng lớn — đó là kỹ thuật **so sánh bằng phần bù**.
+
+*Điểm chốt:* Phần bù **bé hơn** nghĩa là phân số **lớn hơn**.
+
+*Muốn khó hơn:* Dãy 1 phần 2, 2 phần 3, 3 phần 4 … nhân tất cả lại bằng bao nhiêu?
+
+*Phải chắc trước khi làm bài này:* So sánh phân số và phép trừ phân số.
+
+### Bài V.3 — Kĩ thuật tách – bù để tính và so sánh
+
+> **BẪY — Hai tích trông bằng nhau nhưng không bằng.**
+
+**Các bước giải**
+
+Xét ý a: 469 × 26 − 468 × 26
+
+Đọc vị: đây là dạng **Tính, so sánh tích bằng kĩ thuật tách – bù**; dấu hiệu là Các thừa số hơn kém nhau rất ít.
+
+Kiến thức phải dùng: Nhân một số với một tổng, một hiệu.
+
+Cách làm: Quy về số gốc chung, so phần chênh.
+
+Lối tắt: Với hai tích có tổng hai thừa số bằng nhau, tích nào có hai thừa số gần nhau hơn thì lớn hơn.
+
+Kết quả: **26**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Khi hai tích có các thừa số gần nhau, viết chúng theo cùng một số gốc rồi so phần chênh lệch. Khi hai tích cùng một thừa số, hiệu của chúng bằng thừa số chung nhân với hiệu hai thừa số kia.
+
+*Điểm chốt:* Đưa mọi số về **cùng một số gốc** rồi mới so hoặc trừ.
+
+### Bài V.4 — Tổng dãy cộng trừ xen kẽ
 
 **Các bước giải**
 
@@ -510,91 +572,27 @@ Kết quả: **-50**.
 
 *Điểm chốt:* Ghép cặp từ **đầu dãy**; số số hạng lẻ thì luôn dư đúng một số hạng cuối.
 
-### Bài V.2 — Dãy số lặp lại theo chu kì
-
-> **BẪY — Số dư 0 ứng với phần tử cuối chu kì.**
+### Bài V.5 — Đại lượng khối lượng — đổi đơn vị và chia phần
 
 **Các bước giải**
 
-Xét ý a: Số hạng thứ 232 của dãy là số nào?
+Bước 1 — đổi về ki-lô-gam: 2 tấn = 2 000 kg; 4 tạ = 400 kg.
 
-Đọc vị: đây là dạng **Dãy tuần hoàn**; dấu hiệu là Dãy lặp lại một nhóm số cố định.
+Tổng: 2 000 + 400 + 71 = 2 471 (kg).
 
-Kiến thức phải dùng: Phép chia có dư, tính tuần hoàn.
+Bước 2 — chia cho 2 xe: 2 471 : 2 = 1 235 dư 1.
 
-Cách làm: Chia vị trí cho chu kì, dùng số dư định vị.
+Bước 3 — mỗi xe chở 1 tấn = 1 000 kg, cần 2 471 : 1 000 = 2 xe đầy, còn 471 kg nữa nên phải thêm một xe.
 
-Lối tắt: Tổng n số hạng = tổng một chu kì × số chu kì đầy đủ + tổng phần dư.
+Đáp số ý a: **2 471 kg**.
 
-Kết quả: **8**.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Quy hết về một đơn vị rồi mới tính. Với câu hỏi “cần ít nhất bao nhiêu xe”, phần dư vẫn phải có một xe chở, nên **làm tròn lên**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Dãy lặp lại theo chu kì độ dài k. Muốn tìm số hạng thứ n, lấy n chia cho k: số dư cho biết vị trí trong chu kì (dư 0 ứng với phần tử cuối chu kì). Muốn tính tổng n số hạng đầu, lấy tổng một chu kì nhân số chu kì đầy đủ rồi cộng phần dư.
+*Điểm chốt:* Câu hỏi “ít nhất bao nhiêu xe” luôn **làm tròn lên**.
 
-*Điểm chốt:* Số dư **0** ứng với phần tử **cuối** chu kì, không phải phần tử đầu.
+*Muốn khó hơn:* Mỗi xe chở tối đa 1,5 tấn — phải đổi sang đơn vị chung trước.
 
-### Bài V.3 — Kĩ thuật tách – bù để tính và so sánh
-
-**Các bước giải**
-
-Xét ý a: (901 + 20) × 20 − 901 × 20
-
-Đọc vị: đây là dạng **Tính, so sánh tích bằng kĩ thuật tách – bù**; dấu hiệu là Các thừa số hơn kém nhau rất ít.
-
-Kiến thức phải dùng: Nhân một số với một tổng, một hiệu.
-
-Cách làm: Quy về số gốc chung, so phần chênh.
-
-Lối tắt: Với hai tích có tổng hai thừa số bằng nhau, tích nào có hai thừa số gần nhau hơn thì lớn hơn.
-
-Kết quả: **400**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Khi hai tích có các thừa số gần nhau, viết chúng theo cùng một số gốc rồi so phần chênh lệch. Khi hai tích cùng một thừa số, hiệu của chúng bằng thừa số chung nhân với hiệu hai thừa số kia.
-
-*Điểm chốt:* Đưa mọi số về **cùng một số gốc** rồi mới so hoặc trừ.
-
-### Bài V.4 — Dãy phân số dạng n phần (n + 1)
-
-**Các bước giải**
-
-Bốn phân số đầu: 1 phần 2 · 2 phần 3 · 3 phần 4 · 4 phần 5.
-
-Phân số thứ n có tử là n và mẫu là n + 1.
-
-Phân số thứ 11 là 11 phần 12.
-
-Mỗi phân số còn thiếu đúng 1 phần (n + 1) nữa thì bằng 1.
-
-Phần thiếu ấy càng lúc càng bé, nên dãy **tăng dần**.
-
-Đáp số ý b: **11 phần 12**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Phân số dạng n phần (n + 1) luôn bé hơn 1 và còn thiếu đúng 1 phần (n + 1) nữa thì bằng 1. Phần thiếu càng bé thì phân số càng lớn — đó là kỹ thuật **so sánh bằng phần bù**.
-
-*Điểm chốt:* Phần bù **bé hơn** nghĩa là phân số **lớn hơn**.
-
-*Muốn khó hơn:* Dãy 1 phần 2, 2 phần 3, 3 phần 4 … nhân tất cả lại bằng bao nhiêu?
-
-*Phải chắc trước khi làm bài này:* So sánh phân số và phép trừ phân số.
-
-### Bài V.5 — Số dư của tổng — lập luận không cần tính hết
-
-**Các bước giải**
-
-Xét ý a: Dãy số: 220, 392, 648. Có bao nhiêu số trong dãy chia hết cho 9?
-
-Đọc vị: đây là dạng **Xét số dư của tổng**; dấu hiệu là Đề hỏi chia hết hay số dư của một tổng dài.
-
-Kiến thức phải dùng: Tính chất số dư của tổng.
-
-Cách làm: Rút gọn từng số hạng về số dư rồi cộng.
-
-Lối tắt: Với d = 9, số dư của một số bằng số dư của tổng các chữ số của nó.
-
-Kết quả: **1**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Số dư của một tổng khi chia cho d bằng số dư của tổng các số dư. Nhờ đó, muốn biết tổng có chia hết cho d không thì chỉ cần cộng các số dư, không cần cộng các số.
-
-*Điểm chốt:* Làm việc với **số dư** thay vì với số — đây là kỹ thuật rút gọn mạnh nhất.
+*Phải chắc trước khi làm bài này:* Bảng đơn vị khối lượng và phép chia có dư.
 
 ---
 
@@ -604,31 +602,31 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
-| I.1 | Tìm x trong phép tính một bước | Quan hệ giữa các thành phần của phép tính | Có chữ x đứng trong một phép tính | Gọi tên vai trò của x rồi dùng quy tắc tương ứng | Thử lại bằng cách thay x vào đề — mất 3 giây nhưng chắc chắn. | x = 194 · x = 5 172 · x = 387 · x = 782… |
-| I.2 | Nhân, chia số tự nhiên | Kĩ thuật đặt tính nhân, chia | Yêu cầu “đặt tính rồi tính” với phép nhân, chia | Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ chữ số | Kiểm tra kết quả bằng phép tính ngược: thương × số chia = số bị chia. | 751 448 · 97 966 · 43 038 · 445 588… |
-| I.3 | Tính giá trị biểu thức số | Thứ tự thực hiện các phép tính | Biểu thức có nhiều phép tính, có thể có ngoặc | Xét ngoặc → nhân chia → cộng trừ, trái sang phải | Nếu thấy dạng a × b + a × c thì đưa ngay về a × (b + c). | 570 · 8 568 · 293 · 227… |
-| I.4 | Nhân, chia nhẩm với số tròn chục, trăm, nghìn | Cấu tạo thập phân | Thừa số hoặc số chia là 10, 100, 1 000 | Thêm hoặc bớt chữ số 0 | Nhân với 20 = nhân 2 rồi thêm một chữ số 0. | 3 353 · 668 600 · 6 039 · 7 209… |
-| I.5 | Bốn phép tính với số tự nhiên | Kĩ thuật đặt tính cộng, trừ, nhân, chia | Yêu cầu “đặt tính rồi tính” | Đặt tính thẳng cột, tính từ hàng đơn vị | Ước lượng bằng cách làm tròn để phát hiện sai sót về độ lớn. | 385 353 · 354 772 · 133 535 076 · 304 290… |
-| II.1 | Tính nhanh tích, thương nhiều bước | Tính chất giao hoán, kết hợp của phép nhân | Tích có thừa số 25, 125, 50, 20; hoặc chia liên tiếp | Ghép cặp cho tích tròn rồi nhân | Chia liên tiếp cho 4 rồi 25 bằng chia cho 100. | 7 600 · 82 · 61 · 1 900… |
-| II.2 | Tính nhanh nhờ thừa số chung | Nhân một số với một tổng, một hiệu | Hai tích cộng hoặc trừ nhau, có chung một thừa số | Đặt thừa số chung ra ngoài rồi tính trong ngoặc | Sau khi đặt thừa số chung, tổng trong ngoặc thường tròn 10 hoặc 100. | 2 580 · 189 · 470 · 918… |
-| II.3 | Nhân nhẩm nhờ tách thừa số | Nhân một số với một tổng, một hiệu | Thừa số là 9, 11, 19, 21, 99, 101… | Tách về số tròn rồi bù trừ | × 11 với số có hai chữ số: viết hai chữ số ra hai đầu, tổng của chúng đặt vào giữa (nhớ sang trái nếu tổng vượt 9). | 5 841 · 9 009 · 1 520 · 5 555… |
-| II.4 | Tính nhanh tổng nhiều số hạng | Tính chất giao hoán, kết hợp của phép cộng | Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm | Ghép cặp tròn rồi cộng | Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10. | 300 · 93 · 357 · 122… |
-| II.5 | Tìm x qua hai bước | Quan hệ các thành phần phép tính, thứ tự thực hiện | x nằm trong một cụm có hai phép tính | Gỡ dần từ phép ngoài cùng vào trong | Thay x tìm được vào đề để thử — nhanh hơn dò lại từng bước. | x = 96 · x = 182 · x = 175 · x = 38 |
-| III.1 | Phủ hình, chia hình | Diện tích hình chữ nhật, hình vuông; phép chia | “Phủ kín bằng các hình vuông cạnh …”, “chia thành … phần bằng nhau” | Chia diện tích cho diện tích, kiểm tra bằng số hàng, số cột | Đếm số hàng nhân số cột nhanh hơn và tự kiểm tra được. | 5 · 20 cm² · 4 cm² · 10 cm²… |
-| III.2 | Tổng dãy số cách đều | Công thức tổng dãy cách đều | Dãy cộng có dấu … và các số cách đều nhau | Đếm số số hạng rồi áp công thức tổng | Ghép cặp đầu – cuối: mọi cặp đều có cùng tổng, chỉ cần nhân với số cặp. | 1 550 · 1 325 · 14 950 · 420… |
-| III.3 | Tìm x nhiều bước có ngoặc | Thứ tự thực hiện phép tính, quan hệ thành phần | x nằm trong ngoặc, ngoài ngoặc còn phép tính khác | Bóc lớp từ ngoài vào trong | Thay x tìm được vào đề, tính một lượt để thử lại. | x = 46 · x = 80 · x = 83 · x = 35… |
-| III.4 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | > · < · < · <… |
-| III.5 | Tính ngược từ cuối | Bốn phép tính; quan hệ giữa phép tính và phép tính ngược | Đề kể một **chuỗi thao tác** rồi cho kết quả cuối, hỏi số ban đầu | Vẽ sơ đồ mũi tên, đi ngược và đảo từng phép tính | Gỡ từ phải sang trái, mỗi bước một phép tính ngược — không cần đặt ẩn. | 26 · 22 · 24 · 34… |
-| IV.1 | Tổng các tích có thừa số chung | Nhân một số với một tổng, tổng dãy cách đều | Dãy cộng gồm nhiều tích cùng một thừa số | Đặt thừa số chung → tính tổng trong ngoặc bằng công thức | 1 + 2 + … + 100 = 5 050; nhớ vài mốc để nhân ngay. | 2 925 · 2 600 · 5 100 · 1 470 |
-| IV.2 | Bài toán đại lượng nhiều bước | Nhân, trừ; đại lượng cùng loại | Cho số nhóm, giá trị mỗi nhóm và số nhóm đã dùng | Rút gọn số bước bằng cách trừ trước, nhân sau | So sánh hai đường giải, chọn đường ít phép tính hơn. | 75 lít · 198 lít · 90 lít · 40 lít… |
-| IV.3 | Tính nhanh nhờ thừa số 0 | Tính chất nhân với 0, phép trừ hai số bằng nhau | Trong biểu thức có ngoặc chứa hai số giống nhau trừ nhau | Quét tìm cụm bằng 0 trước khi tính | Nhìn dấu ngoặc trước tiên — bẫy thường nằm ở đó. | 0 · 0 · 0 · 0… |
-| IV.4 | Cân đĩa, tìm vật khác biệt | Lập luận trường hợp xấu nhất; chia nhóm ba | Cân đĩa không có quả cân, tìm vật nhẹ hơn | Chia ba phần mỗi lần cân | 3 gói → 1 lần; 9 gói → 2 lần; 27 gói → 3 lần. | 2 lần · 3 kết quả: nghiêng trái, nghiêng phải, thăng bằng · 3 phần · 2… |
-| IV.5 | Tìm x xuất hiện hai vế | So sánh hai biểu thức, sơ đồ đoạn thẳng | Chữ x xuất hiện ở cả hai vế của dấu bằng | Trừ bớt số lần x chung rồi đưa về phép chia | Vẽ sơ đồ đoạn thẳng cho mỗi vế — nhìn ra ngay phần chênh. | x = 9 · x = 29 · x = 47 · x = 82… |
-| V.1 | Tổng dãy cộng trừ xen kẽ | Ghép cặp, tính chất kết hợp | Dấu cộng và trừ xen kẽ đều đặn | Ghép cặp, đếm số cặp, xử lí phần dư | Dãy 1 − 2 + 3 − … với n chẵn bằng −n : 2; với n lẻ bằng (n + 1) : 2. | -50 · -5 · -25 · -25… |
-| V.2 | Dãy tuần hoàn | Phép chia có dư, tính tuần hoàn | Dãy lặp lại một nhóm số cố định | Chia vị trí cho chu kì, dùng số dư định vị | Tổng n số hạng = tổng một chu kì × số chu kì đầy đủ + tổng phần dư. | 8 · 8 · 4 · 1… |
-| V.3 | Tính, so sánh tích bằng kĩ thuật tách – bù | Nhân một số với một tổng, một hiệu | Các thừa số hơn kém nhau rất ít | Quy về số gốc chung, so phần chênh | Với hai tích có tổng hai thừa số bằng nhau, tích nào có hai thừa số gần nhau hơn thì lớn hơn. | 400 · < · < · <… |
-| V.4 | Dãy phân số, so sánh bằng phần bù | Phần bù tới 1; quy luật dãy phân số | Tử và mẫu hơn kém nhau đúng 1 đơn vị | Xét phần bù tới 1 rồi so sánh | n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. | 1 phần 2 · 2 phần 3 · 3 phần 4 · 4 phần 5 · 11 phần 12 · đều bé hơn 1 · tăng dần… |
-| V.5 | Xét số dư của tổng | Tính chất số dư của tổng | Đề hỏi chia hết hay số dư của một tổng dài | Rút gọn từng số hạng về số dư rồi cộng | Với d = 9, số dư của một số bằng số dư của tổng các chữ số của nó. | 1 · 1 260 · có · tổng các số dư là 9, chia 9 dư 0… |
+| I.1 | Tính giá trị biểu thức số | Thứ tự thực hiện các phép tính | Biểu thức có nhiều phép tính, có thể có ngoặc | Xét ngoặc → nhân chia → cộng trừ, trái sang phải | Nếu thấy dạng a × b + a × c thì đưa ngay về a × (b + c). | 33 · 462 · 116 · 2 418… |
+| I.2 | Tìm x trong phép tính một bước | Quan hệ giữa các thành phần của phép tính | Có chữ x đứng trong một phép tính | Gọi tên vai trò của x rồi dùng quy tắc tương ứng | Thử lại bằng cách thay x vào đề — mất 3 giây nhưng chắc chắn. | x = 9 048 · x = 340 · x = 5 962 · x = 421… |
+| I.3 | Nhân, chia số tự nhiên | Kĩ thuật đặt tính nhân, chia | Yêu cầu “đặt tính rồi tính” với phép nhân, chia | Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ chữ số | Kiểm tra kết quả bằng phép tính ngược: thương × số chia = số bị chia. | 278 392 · 611 302 · 268 860 · 2 111… |
+| I.4 | Nhân, chia nhẩm với số tròn chục, trăm, nghìn | Cấu tạo thập phân | Thừa số hoặc số chia là 10, 100, 1 000 | Thêm hoặc bớt chữ số 0 | Nhân với 20 = nhân 2 rồi thêm một chữ số 0. | 4 383 · 44 650 · 5 300 · 5 725 000… |
+| I.5 | Bốn phép tính với số tự nhiên | Kĩ thuật đặt tính cộng, trừ, nhân, chia | Yêu cầu “đặt tính rồi tính” | Đặt tính thẳng cột, tính từ hàng đơn vị | Ước lượng bằng cách làm tròn để phát hiện sai sót về độ lớn. | 575 183 301 · 833 819 · 893 202 · 521 018… |
+| II.1 | Tìm x qua hai bước | Quan hệ các thành phần phép tính, thứ tự thực hiện | x nằm trong một cụm có hai phép tính | Gỡ dần từ phép ngoài cùng vào trong | Thay x tìm được vào đề để thử — nhanh hơn dò lại từng bước. | x = 115 · x = 66 · x = 28 · x = 104… |
+| II.2 | Tính nhanh tích, thương nhiều bước | Tính chất giao hoán, kết hợp của phép nhân | Tích có thừa số 25, 125, 50, 20; hoặc chia liên tiếp | Ghép cặp cho tích tròn rồi nhân | Chia liên tiếp cho 4 rồi 25 bằng chia cho 100. | 45 000 · 4 600 · 2 100 · 3 900… |
+| II.3 | Tính nhanh tổng nhiều số hạng | Tính chất giao hoán, kết hợp của phép cộng | Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm | Ghép cặp tròn rồi cộng | Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10. | 365 · 314 · 200 · 200… |
+| II.4 | Tính nhanh nhờ thừa số chung | Nhân một số với một tổng, một hiệu | Hai tích cộng hoặc trừ nhau, có chung một thừa số | Đặt thừa số chung ra ngoài rồi tính trong ngoặc | Sau khi đặt thừa số chung, tổng trong ngoặc thường tròn 10 hoặc 100. | 6 391 · 1 421 · 1 520 · 6 136… |
+| II.5 | Tính nhanh tổng | Làm tròn; cộng trừ trong phạm vi trăm nghìn | Vài món hàng có giá lẻ, cần biết nhanh tổng khoảng bao nhiêu | Làm tròn để nhẩm, cộng số gốc để lấy kết quả đúng | Cộng phần nghìn trước rồi cộng phần lẻ sau, không đặt tính. | đậu phụ: 40 000 · gạo: 10 000 · thịt lợn: 50 000 · 100 000 · 104 000 · 4 000 đồng… |
+| III.1 | Nhân một số với một tổng | Tính chất phân phối của phép nhân với phép cộng | Nhiều dòng hoá đơn dùng chung một đơn giá | Gom số lượng rồi nhân một lần | Chênh lệch tiền = chênh lệch số lượng × đơn giá, không cần tính tổng hai bên. | 450 000 đồng · 100 000 đồng · 550 000 đồng · (18 + 4) × 25 000 = 22 × 25 000 = 550 000 đồng… |
+| III.2 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | < · < · < · <… |
+| III.3 | Tìm x nhiều bước có ngoặc | Thứ tự thực hiện phép tính, quan hệ thành phần | x nằm trong ngoặc, ngoài ngoặc còn phép tính khác | Bóc lớp từ ngoài vào trong | Thay x tìm được vào đề, tính một lượt để thử lại. | x = 98 · x = 105 · x = 10 · x = 6… |
+| III.4 | Tổng dãy số cách đều | Công thức tổng dãy cách đều | Dãy cộng có dấu … và các số cách đều nhau | Đếm số số hạng rồi áp công thức tổng | Ghép cặp đầu – cuối: mọi cặp đều có cùng tổng, chỉ cần nhân với số cặp. | 25 250 · 110 · 325 · 3 725… |
+| III.5 | Định vị số hạng, kiểm tra một số có thuộc dãy | Dãy cách đều, phép chia có dư | Câu hỏi “là số hạng thứ mấy”, “có thuộc dãy không” | (số − đầu) : khoảng cách, xét dư rồi cộng 1 | Mọi số hạng của dãy đều có cùng số dư khi chia cho khoảng cách. | 94 · 146 · 16 · 60… |
+| IV.1 | Rút gọn, so sánh, sắp thứ tự phân số | Tính chất cơ bản của phân số; so sánh phân số | Một nhóm phân số cần sắp thứ tự | Rút gọn → so cùng mẫu hoặc quy đồng | So với 1 và với một nửa trước — nhiều phân số phân loại được ngay. | 13 phần 18 · 2 phần 3 · 1 phần 3 · 1 phần 2 · 2 phần 9 · 2 phần 9 < 1 phần 3 < 1 phần 2 < 2 phần 3 < 13 phần 18 · 13 phần 18 · 2 phần 9… |
+| IV.2 | Biểu thức phân số nhiều phép tính | Thứ tự thực hiện phép tính, tính chất phân phối | Biểu thức gồm nhiều phân số và nhiều phép tính | Quan sát rút gọn trước, sau đó theo thứ tự thực hiện | Rút gọn chéo tử với mẫu trước khi nhân. | 11 phần 20 · 21 phần 8 · 19 phần 9 · 242 phần 63… |
+| IV.3 | Tìm x xuất hiện hai vế | So sánh hai biểu thức, sơ đồ đoạn thẳng | Chữ x xuất hiện ở cả hai vế của dấu bằng | Trừ bớt số lần x chung rồi đưa về phép chia | Vẽ sơ đồ đoạn thẳng cho mỗi vế — nhìn ra ngay phần chênh. | x = 16 · x = 85 · x = 69 · x = 42… |
+| IV.4 | Tính nhanh nhờ thừa số 0 | Tính chất nhân với 0, phép trừ hai số bằng nhau | Trong biểu thức có ngoặc chứa hai số giống nhau trừ nhau | Quét tìm cụm bằng 0 trước khi tính | Nhìn dấu ngoặc trước tiên — bẫy thường nằm ở đó. | 0 · 0 · 0 · 0… |
+| IV.5 | Tổng các tích có thừa số chung | Nhân một số với một tổng, tổng dãy cách đều | Dãy cộng gồm nhiều tích cùng một thừa số | Đặt thừa số chung → tính tổng trong ngoặc bằng công thức | 1 + 2 + … + 100 = 5 050; nhớ vài mốc để nhân ngay. | 11 475 · 5 100 · 8 925 · 110… |
+| V.1 | So sánh phân số bằng kĩ thuật đặc biệt | Phần bù tới 1, phân số trung gian | Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 | So phần bù; hoặc chèn phân số trung gian | Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. | < · > · < · > |
+| V.2 | Dãy phân số, so sánh bằng phần bù | Phần bù tới 1; quy luật dãy phân số | Tử và mẫu hơn kém nhau đúng 1 đơn vị | Xét phần bù tới 1 rồi so sánh | n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. | 1 phần 2 · 2 phần 3 · 3 phần 4 · 4 phần 5 · 7 phần 8 · đều bé hơn 1 · tăng dần… |
+| V.3 | Tính, so sánh tích bằng kĩ thuật tách – bù | Nhân một số với một tổng, một hiệu | Các thừa số hơn kém nhau rất ít | Quy về số gốc chung, so phần chênh | Với hai tích có tổng hai thừa số bằng nhau, tích nào có hai thừa số gần nhau hơn thì lớn hơn. | 26 · 64 · < · 196… |
+| V.4 | Tổng dãy cộng trừ xen kẽ | Ghép cặp, tính chất kết hợp | Dấu cộng và trừ xen kẽ đều đặn | Ghép cặp, đếm số cặp, xử lí phần dư | Dãy 1 − 2 + 3 − … với n chẵn bằng −n : 2; với n lẻ bằng (n + 1) : 2. | -50 · 13 · -25 · -15… |
+| V.5 | Đại lượng khối lượng, chia phần và làm tròn lên | Bảng đơn vị khối lượng; phép chia có dư | Số đo nhiều đơn vị; câu hỏi “ít nhất bao nhiêu” | Quy về một đơn vị, chia, xét phần dư | 1 tấn = 1 000 kg nên chia cho 1 000 là bớt ba chữ số 0. | 2 471 kg · 24 tạ 71 kg · 1 235 kg, thừa 1 kg · 3 xe… |
 
 ---
 
@@ -636,31 +634,31 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 
 | Bài | Nhãn tư duy | Điểm chốt |
 |---|---|---|
-| I.1 | TD1, TD3 | x đứng ở **vị trí nào** trong phép tính quyết định quy tắc dùng. |
-| I.2 | TD1 | Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0. |
-| I.3 | TD1, TD3 | Dấu ngoặc **đảo ngược** thứ tự ưu tiên — nhìn ngoặc trước khi tính. |
+| I.1 | TD1, TD3 | Dấu ngoặc **đảo ngược** thứ tự ưu tiên — nhìn ngoặc trước khi tính. |
+| I.2 | TD1, TD3 | x đứng ở **vị trí nào** trong phép tính quyết định quy tắc dùng. |
+| I.3 | TD1 | Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0. |
 | I.4 | TD5 | Đếm đúng **số chữ số 0** của số nhân hay số chia. |
 | I.5 | TD1 | Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương. |
-| II.1 | TD5, TD3 | Thuộc lòng bốn cặp tròn: **25 × 4**, **125 × 8**, **50 × 2**, **20 × 5**. |
-| II.2 | TD3, TD5 | Thừa số chung phải xuất hiện ở **cả hai** tích thì mới đặt ra ngoài được. |
-| II.3 | TD5, TD3 | Tách thừa số thành **tròn chục ± 1 đơn vị** rồi dùng nhân với một tổng, một hiệu. |
-| II.4 | TD5, TD3 | Tìm **cặp cộng tròn 100** trước khi cộng theo thứ tự. |
-| II.5 | TD3 | Đi **ngược** thứ tự thực hiện: phép ngoài cùng gỡ trước. |
-| III.1 | TD3, TD4 | Phép chia diện tích chỉ đúng khi mảnh **xếp khít**. |
-| III.2 | TD4, TD5 | Phải đếm **số số hạng** trước; đây là chỗ sai nhiều nhất. |
+| II.1 | TD3 | Đi **ngược** thứ tự thực hiện: phép ngoài cùng gỡ trước. |
+| II.2 | TD5, TD3 | Thuộc lòng bốn cặp tròn: **25 × 4**, **125 × 8**, **50 × 2**, **20 × 5**. |
+| II.3 | TD5, TD3 | Tìm **cặp cộng tròn 100** trước khi cộng theo thứ tự. |
+| II.4 | TD3, TD5 | Thừa số chung phải xuất hiện ở **cả hai** tích thì mới đặt ra ngoài được. |
+| II.5 | TD1, TD3 | Ước lượng và tính đúng là hai việc khác nhau, đừng lẫn. |
+| III.1 | TD3, TD5 | Cùng đơn giá thì cộng số lượng trước, nhân sau — nhân một lần thôi. |
+| III.2 | TD5, TD2 | Che phần **giống nhau** đi, chỉ so phần khác nhau. |
 | III.3 | TD3, TD2 | Mỗi bước chỉ gỡ **một** phép tính, đừng gỡ hai phép cùng lúc. |
-| III.4 | TD5, TD2 | Che phần **giống nhau** đi, chỉ so phần khác nhau. |
-| III.5 | TD3, TD5 | Đảo **cả phép tính lẫn thứ tự**. Đảo phép tính mà giữ nguyên thứ tự thì vẫn sai. |
-| IV.1 | TD3, TD4 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
-| IV.2 | TD3, TD5 | Trừ **số thùng** trước khi nhân thì ít phép tính hơn. |
-| IV.3 | TD5, TD6 | Quét tìm **cụm bằng 0** trước; thấy rồi thì viết đáp số ngay. |
-| IV.4 | TD6, TD2 | Cân đĩa cho **ba** kết quả nên chia ba, không chia đôi. |
-| IV.5 | TD3, TD6 | Lấy **hiệu số lần x** giữa hai vế, rồi chia số đã biết cho hiệu đó. |
-| V.1 | TD4, TD6 | Ghép cặp từ **đầu dãy**; số số hạng lẻ thì luôn dư đúng một số hạng cuối. |
-| V.2 | TD4, TD6 | Số dư **0** ứng với phần tử **cuối** chu kì, không phải phần tử đầu. |
+| III.4 | TD4, TD5 | Phải đếm **số số hạng** trước; đây là chỗ sai nhiều nhất. |
+| III.5 | TD4, TD2 | Phép chia **có dư** là bằng chứng số đó không thuộc dãy. |
+| IV.1 | TD1, TD5 | Cùng mẫu số thì **chỉ cần so tử số**. |
+| IV.2 | TD3, TD5 | Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều. |
+| IV.3 | TD3, TD6 | Lấy **hiệu số lần x** giữa hai vế, rồi chia số đã biết cho hiệu đó. |
+| IV.4 | TD5, TD6 | Quét tìm **cụm bằng 0** trước; thấy rồi thì viết đáp số ngay. |
+| IV.5 | TD3, TD4 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
+| V.1 | TD6, TD5 | Phần bù **bé hơn** nghĩa là phân số **lớn hơn** — dễ nhớ nhầm chiều. |
+| V.2 | TD6, TD5 | Phần bù **bé hơn** nghĩa là phân số **lớn hơn**. |
 | V.3 | TD5, TD6 | Đưa mọi số về **cùng một số gốc** rồi mới so hoặc trừ. |
-| V.4 | TD6, TD5 | Phần bù **bé hơn** nghĩa là phân số **lớn hơn**. |
-| V.5 | TD2, TD6 | Làm việc với **số dư** thay vì với số — đây là kỹ thuật rút gọn mạnh nhất. |
+| V.4 | TD4, TD6 | Ghép cặp từ **đầu dãy**; số số hạng lẻ thì luôn dư đúng một số hạng cuối. |
+| V.5 | TD3, TD6 | Câu hỏi “ít nhất bao nhiêu xe” luôn **làm tròn lên**. |
 
 ---
 
@@ -670,31 +668,31 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 
 | Bài | Lỗi thường gặp | Cách phòng |
 |---|---|---|
-| I.1 | Áp dụng nhầm quy tắc của số trừ cho số bị trừ. | Gọi tên x trước (x là số hạng? số bị trừ? thừa số?) rồi mới viết quy tắc. |
-| I.2 | Quên viết chữ số 0 ở thương nên thương thiếu chữ số. | Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số. |
-| I.3 | Cộng trước nhân khi biểu thức không có ngoặc. | Gạch chân phép nhân, phép chia trước khi bắt đầu tính. |
+| I.1 | Cộng trước nhân khi biểu thức không có ngoặc. | Gạch chân phép nhân, phép chia trước khi bắt đầu tính. |
+| I.2 | Áp dụng nhầm quy tắc của số trừ cho số bị trừ. | Gọi tên x trước (x là số hạng? số bị trừ? thừa số?) rồi mới viết quy tắc. |
+| I.3 | Quên viết chữ số 0 ở thương nên thương thiếu chữ số. | Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số. |
 | I.4 | Thêm hoặc bớt thiếu một chữ số 0. | Đếm số chữ số 0 rồi viết chấm tương ứng trước khi ghi kết quả. |
 | I.5 | Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số. | Đếm trước xem thương có mấy chữ số rồi mới chia. |
-| II.1 | Nhân lần lượt từ trái sang phải nên số trung gian rất lớn. | Quét cả tích tìm cặp tròn trước khi đặt bút tính. |
-| II.2 | Đặt ra ngoài một số chỉ có ở một tích. | Khoanh thừa số giống nhau ở hai tích trước khi viết dấu ngoặc. |
-| II.3 | Nhân với 10 rồi quên cộng hoặc trừ phần bù. | Viết luôn dấu ± và số bù ra bên cạnh trước khi nhân. |
-| II.4 | Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. | Đọc lướt cả dãy, khoanh tròn cặp số cộng lại tròn chục, tròn trăm. |
-| II.5 | Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. | Khoanh tròn cụm chứa x rồi coi cả cụm là một số. |
-| III.1 | Chia chu vi cho cạnh mảnh thay vì chia diện tích cho diện tích. | Kẻ lưới lên hình và đếm thử một hàng. |
-| III.2 | Lấy số cuối chia khoảng cách làm số số hạng, quên cộng 1. | Viết ra ba số đầu và ba số cuối để kiểm tra khoảng cách rồi mới đếm. |
+| II.1 | Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. | Khoanh tròn cụm chứa x rồi coi cả cụm là một số. |
+| II.2 | Nhân lần lượt từ trái sang phải nên số trung gian rất lớn. | Quét cả tích tìm cặp tròn trước khi đặt bút tính. |
+| II.3 | Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. | Đọc lướt cả dãy, khoanh tròn cặp số cộng lại tròn chục, tròn trăm. |
+| II.4 | Đặt ra ngoài một số chỉ có ở một tích. | Khoanh thừa số giống nhau ở hai tích trước khi viết dấu ngoặc. |
+| II.5 | Lấy tổng đã làm tròn ra trả tiền. | Nhẩm xong luôn hỏi: con số này để ước chừng hay để trả tiền? |
+| III.1 | Nhân từng dòng rồi cộng, dài và dễ sai ở một dòng nào đó. | Nhìn cột đơn giá trước: có dòng nào trùng đơn giá không? |
+| III.2 | Tính hết cả hai vế, vừa lâu vừa dễ sai. | Dùng bút gạch bỏ phần giống nhau ở hai vế trước khi so sánh. |
 | III.3 | Nhân phá ngoặc sai dấu, hoặc gỡ phép trong ngoặc trước. | Ghi rõ từng bước trên một dòng riêng, mỗi dòng chỉ khác dòng trên một phép. |
-| III.4 | Tính hết cả hai vế, vừa lâu vừa dễ sai. | Dùng bút gạch bỏ phần giống nhau ở hai vế trước khi so sánh. |
-| III.5 | Bắt đầu gỡ từ phép tính đầu tiên của đề thay vì từ phép tính cuối cùng. | Thử lại theo chiều xuôi. Bài này luôn thử lại được, nên không có lý do gì để nộp một đáp số chưa thử. |
-| IV.1 | Nhân từng tích rồi cộng dồn, rất dài và dễ sai. | Viết lại biểu thức dưới dạng a × (1 + 2 + … + n) trước khi tính. |
-| IV.2 | Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. | Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng. |
-| IV.3 | Lao vào nhân từng cặp số lớn rồi mới phát hiện kết quả bằng 0. | Đọc hết biểu thức một lượt, khoanh các cụm giống nhau bị trừ cho nhau. |
-| IV.4 | Chia đôi như tìm kiếm thông thường nên cần nhiều lần cân hơn mức cần thiết. | Nhớ ba kết quả: nghiêng trái, nghiêng phải, thăng bằng. |
-| IV.5 | Chuyển vế nhưng quên đổi dấu, hoặc trừ nhầm số lần x. | Vẽ sơ đồ đoạn thẳng: vế trái mấy đoạn x, vế phải mấy đoạn x. |
-| V.1 | Ghép cặp nhưng quên số hạng lẻ còn thừa ở cuối. | Đếm số số hạng trước, xác định chẵn hay lẻ rồi mới ghép cặp. |
-| V.2 | Lấy số dư 0 rồi lấy phần tử đầu tiên của chu kì. | Kiểm chứng bằng một vị trí nhỏ đã biết trước khi làm vị trí lớn. |
+| III.4 | Lấy số cuối chia khoảng cách làm số số hạng, quên cộng 1. | Viết ra ba số đầu và ba số cuối để kiểm tra khoảng cách rồi mới đếm. |
+| III.5 | Chia được số nguyên rồi quên cộng 1, hoặc bỏ qua phần dư. | Luôn ghi rõ thương và số dư khi chia. |
+| IV.1 | Rút gọn xong quên rằng thứ tự vẫn giữ nguyên, đi quy đồng lại từ đầu. | Ghi cả phân số gốc và phân số tối giản cạnh nhau để đối chiếu. |
+| IV.2 | Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. | Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút. |
+| IV.3 | Chuyển vế nhưng quên đổi dấu, hoặc trừ nhầm số lần x. | Vẽ sơ đồ đoạn thẳng: vế trái mấy đoạn x, vế phải mấy đoạn x. |
+| IV.4 | Lao vào nhân từng cặp số lớn rồi mới phát hiện kết quả bằng 0. | Đọc hết biểu thức một lượt, khoanh các cụm giống nhau bị trừ cho nhau. |
+| IV.5 | Nhân từng tích rồi cộng dồn, rất dài và dễ sai. | Viết lại biểu thức dưới dạng a × (1 + 2 + … + n) trước khi tính. |
+| V.1 | So phần bù rồi kết luận cùng chiều với phần bù. | Nghĩ tới chiếc bánh: thiếu ít hơn thì phần đang có nhiều hơn. |
+| V.2 | So phần bù rồi kết luận cùng chiều với phần bù. | Nghĩ tới chiếc bánh: thiếu ít hơn thì phần đang có nhiều hơn. |
 | V.3 | Nhân hết ra rồi mới so sánh — số lớn, dễ sai và mất thời gian. | Viết mỗi thừa số dưới dạng “số gốc cộng hoặc trừ mấy đơn vị”. |
-| V.4 | So phần bù rồi kết luận cùng chiều với phần bù. | Nghĩ tới chiếc bánh: thiếu ít hơn thì phần đang có nhiều hơn. |
-| V.5 | Cộng hết cả dãy rồi mới chia, mất thời gian và dễ sai. | Ghi số dư của từng số ngay dưới số đó rồi cộng dòng số dư. |
+| V.4 | Ghép cặp nhưng quên số hạng lẻ còn thừa ở cuối. | Đếm số số hạng trước, xác định chẵn hay lẻ rồi mới ghép cặp. |
+| V.5 | Chia rồi lấy phần nguyên, bỏ quên phần dư vẫn cần một xe. | Hỏi lại: phần thóc dư có tự bay đi được không? |
 
 ---
 
@@ -702,31 +700,31 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 
 Đọc tầng 1 trước; chỉ đọc tầng sau khi đã thử lại ít nhất 3 phút.
 
-**Bài I.1** — (1) x đóng vai trò gì trong phép tính? — (2) Viết ra quy tắc tương ứng với vai trò đó. — (3) Thay x tìm được vào đề để thử lại.
-**Bài I.2** — (1) Viết các tích riêng lùi đúng cột. — (2) Khi chia, mỗi lần hạ một chữ số thì viết một chữ số ở thương. — (3) Thử lại bằng phép tính ngược.
-**Bài I.3** — (1) Biểu thức có dấu ngoặc không? — (2) Gạch chân các phép nhân và chia. — (3) Làm nhân chia trước, cộng trừ sau.
+**Bài I.1** — (1) Biểu thức có dấu ngoặc không? — (2) Gạch chân các phép nhân và chia. — (3) Làm nhân chia trước, cộng trừ sau.
+**Bài I.2** — (1) x đóng vai trò gì trong phép tính? — (2) Viết ra quy tắc tương ứng với vai trò đó. — (3) Thay x tìm được vào đề để thử lại.
+**Bài I.3** — (1) Viết các tích riêng lùi đúng cột. — (2) Khi chia, mỗi lần hạ một chữ số thì viết một chữ số ở thương. — (3) Thử lại bằng phép tính ngược.
 **Bài I.4** — (1) Số nhân có mấy chữ số 0? — (2) Thêm đúng bấy nhiêu chữ số 0 vào bên phải. — (3) Với phép chia thì làm ngược lại.
 **Bài I.5** — (1) Viết các số thẳng hàng đơn vị. — (2) Với phép nhân, tích riêng lùi sang trái một cột. — (3) Với phép chia, hạ một chữ số thì viết một chữ số ở thương.
-**Bài II.1** — (1) Trong tích có 25, 125, 50 hay 20 không? — (2) Tìm thừa số ghép với nó cho tích tròn. — (3) Nhân cặp tròn trước, phần còn lại sau.
-**Bài II.2** — (1) Hai tích có thừa số nào giống nhau? — (2) Đặt thừa số đó ra ngoài dấu ngoặc. — (3) Tính trong ngoặc trước rồi nhân.
-**Bài II.3** — (1) Thừa số kia gần số tròn nào? — (2) Viết nó thành số tròn cộng hoặc trừ mấy đơn vị. — (3) Nhân với số tròn trước rồi bù lại.
-**Bài II.4** — (1) Có cặp nào cộng lại tròn 100 không? — (2) Đổi chỗ để hai số đó đứng cạnh nhau. — (3) Cộng cặp tròn trước, phần còn lại sau.
-**Bài II.5** — (1) Khoanh cụm chứa x lại, coi là một số. — (2) Cụm đó đóng vai trò gì trong phép tính ngoài cùng? — (3) Tìm giá trị của cụm rồi mới tìm x.
-**Bài III.1** — (1) Diện tích hình lớn bằng bao nhiêu? — (2) Diện tích một mảnh bằng bao nhiêu? — (3) Chia hai diện tích cho nhau rồi đếm lại theo hàng.
-**Bài III.2** — (1) Khoảng cách giữa hai số liên tiếp là bao nhiêu? — (2) Dãy có bao nhiêu số hạng? — (3) Tổng = (đầu + cuối) × số số hạng : 2.
+**Bài II.1** — (1) Khoanh cụm chứa x lại, coi là một số. — (2) Cụm đó đóng vai trò gì trong phép tính ngoài cùng? — (3) Tìm giá trị của cụm rồi mới tìm x.
+**Bài II.2** — (1) Trong tích có 25, 125, 50 hay 20 không? — (2) Tìm thừa số ghép với nó cho tích tròn. — (3) Nhân cặp tròn trước, phần còn lại sau.
+**Bài II.3** — (1) Có cặp nào cộng lại tròn 100 không? — (2) Đổi chỗ để hai số đó đứng cạnh nhau. — (3) Cộng cặp tròn trước, phần còn lại sau.
+**Bài II.4** — (1) Hai tích có thừa số nào giống nhau? — (2) Đặt thừa số đó ra ngoài dấu ngoặc. — (3) Tính trong ngoặc trước rồi nhân.
+**Bài II.5** — (1) Làm tròn từng giá đến hàng chục nghìn trước. — (2) Cộng các số tròn — phép này nhẩm được trong đầu. — (3) Rồi cộng lại giá gốc để lấy số đúng, và so hai kết quả.
+**Bài III.1** — (1) Hai buổi có cùng một đơn giá không? — (2) Nếu cùng đơn giá, con cộng cái gì trước cho gọn? — (3) Viết lại thành (a + b) × đơn giá rồi nhân một lần.
+**Bài III.2** — (1) Hai vế có phần nào giống hệt nhau? — (2) Gạch bỏ phần giống nhau đi. — (3) So sánh phần còn lại.
 **Bài III.3** — (1) Phép tính ngoài cùng là phép nào? — (2) Coi cả cụm còn lại là một số và tìm giá trị của nó. — (3) Lặp lại cho tới khi chỉ còn x.
-**Bài III.4** — (1) Hai vế có phần nào giống hệt nhau? — (2) Gạch bỏ phần giống nhau đi. — (3) So sánh phần còn lại.
-**Bài III.5** — (1) Đề đã làm những phép tính nào, theo thứ tự nào? — (2) Phép nào làm sau cùng? Gỡ phép ấy trước tiên. — (3) Nhân thì gỡ bằng chia, cộng thì gỡ bằng trừ.
-**Bài IV.1** — (1) Các tích có thừa số nào giống nhau? — (2) Đặt thừa số đó ra ngoài dấu ngoặc. — (3) Tổng trong ngoặc là dãy số cách đều — tính bằng công thức.
-**Bài IV.2** — (1) Còn lại bao nhiêu thùng? — (2) Mỗi thùng bao nhiêu lít? — (3) Nhân hai kết quả đó.
-**Bài IV.3** — (1) Có cụm nào trong ngoặc bằng 0 không? — (2) Có hai cụm giống hệt nhau bị trừ cho nhau không? — (3) Tích có một thừa số bằng 0 thì bằng bao nhiêu?
-**Bài IV.4** — (1) Một lần cân cho mấy kết quả? — (2) Vậy nên chia số gói thành mấy phần? — (3) Sau mỗi lần cân còn lại nhiều nhất bao nhiêu gói?
-**Bài IV.5** — (1) Vế trái có mấy lần x? Vế phải có mấy lần x? — (2) Vế phải hơn vế trái mấy lần x? — (3) Phần hơn đó ứng với số nào đã biết?
-**Bài V.1** — (1) Dãy có bao nhiêu số hạng? — (2) Ghép hai số hạng liền nhau, mỗi cặp bằng bao nhiêu? — (3) Số số hạng là chẵn hay lẻ? Có số hạng nào lẻ ra không?
-**Bài V.2** — (1) Chu kì của dãy dài bao nhiêu số hạng? — (2) Chia vị trí cần tìm cho độ dài chu kì. — (3) Số dư cho biết vị trí trong chu kì; dư 0 là phần tử cuối.
+**Bài III.4** — (1) Khoảng cách giữa hai số liên tiếp là bao nhiêu? — (2) Dãy có bao nhiêu số hạng? — (3) Tổng = (đầu + cuối) × số số hạng : 2.
+**Bài III.5** — (1) Lấy số đó trừ số hạng đầu. — (2) Chia hiệu cho khoảng cách — có chia hết không? — (3) Chia hết thì cộng 1 để ra thứ tự; không chia hết thì số đó không thuộc dãy.
+**Bài IV.1** — (1) Các phân số có cùng mẫu số không? — (2) Nếu cùng mẫu thì so gì? — (3) Rút gọn không làm thay đổi giá trị nên không đổi thứ tự.
+**Bài IV.2** — (1) Biểu thức có dấu ngoặc không? — (2) Có thừa số chung ở hai tích không? — (3) Làm nhân chia trước, cộng trừ sau.
+**Bài IV.3** — (1) Vế trái có mấy lần x? Vế phải có mấy lần x? — (2) Vế phải hơn vế trái mấy lần x? — (3) Phần hơn đó ứng với số nào đã biết?
+**Bài IV.4** — (1) Có cụm nào trong ngoặc bằng 0 không? — (2) Có hai cụm giống hệt nhau bị trừ cho nhau không? — (3) Tích có một thừa số bằng 0 thì bằng bao nhiêu?
+**Bài IV.5** — (1) Các tích có thừa số nào giống nhau? — (2) Đặt thừa số đó ra ngoài dấu ngoặc. — (3) Tổng trong ngoặc là dãy số cách đều — tính bằng công thức.
+**Bài V.1** — (1) Mỗi phân số còn thiếu bao nhiêu nữa thì bằng 1? — (2) Phân số nào thiếu ít hơn? — (3) Thiếu ít hơn thì lớn hơn.
+**Bài V.2** — (1) Mỗi phân số còn thiếu bao nhiêu nữa thì bằng 1? — (2) Phần thiếu ấy thay đổi thế nào khi n tăng? — (3) Thiếu ít hơn thì phân số lớn hơn.
 **Bài V.3** — (1) Hai tích có thừa số nào giống nhau không? — (2) Viết các thừa số theo cùng một số gốc. — (3) Hiệu hai tích cùng thừa số chung bằng thừa số chung nhân hiệu hai thừa số kia.
-**Bài V.4** — (1) Mỗi phân số còn thiếu bao nhiêu nữa thì bằng 1? — (2) Phần thiếu ấy thay đổi thế nào khi n tăng? — (3) Thiếu ít hơn thì phân số lớn hơn.
-**Bài V.5** — (1) Tính số dư của từng số khi chia cho d. — (2) Cộng các số dư lại. — (3) Lấy tổng các số dư chia tiếp cho d.
+**Bài V.4** — (1) Dãy có bao nhiêu số hạng? — (2) Ghép hai số hạng liền nhau, mỗi cặp bằng bao nhiêu? — (3) Số số hạng là chẵn hay lẻ? Có số hạng nào lẻ ra không?
+**Bài V.5** — (1) Đổi tất cả về ki-lô-gam. — (2) Chia cho sức chở mỗi xe. — (3) Còn dư thì có cần thêm xe không?
 
 ---
 
@@ -736,31 +734,31 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 
 | Bài | Đề tương tự | Đáp số |
 |---|---|---|
-| I.1 | Tìm x: x × 7 = 91 | x = 13 |
-| I.2 | Đặt tính rồi tính: 3 045 × 24 | 73 080 |
-| I.3 | Tính: 25 + 8 × 4 | 57 |
+| I.1 | Tính: 25 + 8 × 4 | 57 |
+| I.2 | Tìm x: x × 7 = 91 | x = 13 |
+| I.3 | Đặt tính rồi tính: 3 045 × 24 | 73 080 |
 | I.4 | Tính nhẩm: 358 × 100 | 35 800 |
 | I.5 | Đặt tính rồi tính: 3 045 × 24 | 73 080 |
-| II.1 | Tính nhanh: 37 × 25 × 4 | 3 700 |
-| II.2 | Tính nhanh: 47 × 25 + 47 × 75 | 4 700 |
-| II.3 | Tính nhẩm: 46 × 11 | 506 |
-| II.4 | Tính nhanh: 37 + 145 + 63 | 245 |
-| II.5 | Tìm x: x × 6 + 14 = 92 | x = 13 |
-| III.1 | Hình chữ nhật 6 cm × 4 cm phủ bằng hình vuông cạnh 2 cm. Cần mấy hình? | 6 hình |
-| III.2 | Tính nhanh: 1 + 2 + 3 + … + 100 | 5 050 |
+| II.1 | Tìm x: x × 6 + 14 = 92 | x = 13 |
+| II.2 | Tính nhanh: 37 × 25 × 4 | 3 700 |
+| II.3 | Tính nhanh: 37 + 145 + 63 | 245 |
+| II.4 | Tính nhanh: 47 × 25 + 47 × 75 | 4 700 |
+| II.5 | Ba món giá 28 000, 41 500 và 19 000 đồng. Đưa 100 000 đồng thì được trả lại bao nhiêu? | 11 500 đồng |
+| III.1 | Mỗi hộp 15 000 đồng, sáng bán 12 hộp, chiều bán 8 hộp. Cả ngày thu bao nhiêu tiền? | 300 000 đồng |
+| III.2 | So sánh: 234 × 7 … 234 × 8 | < |
 | III.3 | Tìm x: (x + 12) × 5 − 8 = 132 | x = 16 |
-| III.4 | So sánh: 234 × 7 … 234 × 8 | < |
-| III.5 | Một số nhân 3, cộng 7, chia 2 thì được 20. Tìm số ấy. | 11 |
-| IV.1 | Tính nhanh: 5 × 1 + 5 × 2 + … + 5 × 10 | 275 |
-| IV.2 | Có 10 thùng dầu, mỗi thùng 20 lít, đã bán 3 thùng. Còn bao nhiêu lít? | 140 lít |
-| IV.3 | Tính nhanh: 1 234 × 567 × (89 − 89) | 0 |
-| IV.4 | Có 9 gói kẹo, một gói nhẹ hơn. Cần cân mấy lần? | 2 lần |
-| IV.5 | Tìm x: x × 3 + 24 = x × 5 | x = 12 |
-| V.1 | Tính nhanh: 1 − 2 + 3 − 4 + … + 9 − 10 | −5 |
-| V.2 | Dãy 1, 2, 3, 1, 2, 3, … số hạng thứ 100 là số nào? | 1 |
+| III.4 | Tính nhanh: 1 + 2 + 3 + … + 100 | 5 050 |
+| III.5 | Dãy 2, 7, 12, … Số 47 là số hạng thứ mấy? | 10 |
+| IV.1 | Sắp xếp từ bé đến lớn: 3 phần 8, 5 phần 8, 1 phần 8 | 1 phần 8 < 3 phần 8 < 5 phần 8 |
+| IV.2 | Tính: (1 phần 2 + 1 phần 3) × 6 phần 5 | 1 |
+| IV.3 | Tìm x: x × 3 + 24 = x × 5 | x = 12 |
+| IV.4 | Tính nhanh: 1 234 × 567 × (89 − 89) | 0 |
+| IV.5 | Tính nhanh: 5 × 1 + 5 × 2 + … + 5 × 10 | 275 |
+| V.1 | So sánh: 5 phần 6 … 7 phần 8 | < |
+| V.2 | So sánh 5 phần 6 và 7 phần 8. | 5 phần 6 < 7 phần 8 |
 | V.3 | So sánh: 99 × 101 … 100 × 100 | < |
-| V.4 | So sánh 5 phần 6 và 7 phần 8. | 5 phần 6 < 7 phần 8 |
-| V.5 | Tổng 123 + 234 + 345 chia cho 9 dư mấy? | dư 0 |
+| V.4 | Tính nhanh: 1 − 2 + 3 − 4 + … + 9 − 10 | −5 |
+| V.5 | 3 tấn 4 tạ 50 kg = … kg | 3 450 kg |
 
 ---
 

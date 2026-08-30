@@ -122,173 +122,167 @@ e) Dạng “So sánh số đo đại lượng” — cách xử lý nhanh nhấ
 
 ## PHẦN B — DẠNG 1 – DẠNG 2 · Mức M2 — Thông hiểu · 25 phút · 25 điểm
 
-### Bài 1. (5 điểm) Đơn vị đo diện tích
-
-Điền số thích hợp vào chỗ chấm.
-
-a) 2 hm² = … m²
-b) 3 600 dam² = … hm²
-c) 55 dam² = … m²
-d) 1 800 ha = … km²
-e) 10 ha = … m²
-f) 2 900 dam² = … hm²
-g) 7 ha = … m²
-h) 1 300 m² = … dam²
-
-### Bài 2. (5 điểm) Lịch, thế kỉ, năm nhuận
+### Bài 1. (5 điểm) Lịch, thế kỉ, năm nhuận
 
 Trả lời ngắn gọn.
 
-a) Tháng 6 năm 2095 có bao nhiêu ngày?
-b) Năm 2052 thuộc thế kỉ thứ mấy?
-c) 27 ngày bằng bao nhiêu tuần lễ và mấy ngày?
-d) Năm 1985 có phải năm nhuận không?
-e) Năm 1976 thuộc thế kỉ thứ mấy?
+a) Tháng 3 năm 1928 có bao nhiêu ngày?
+b) Năm 2055 thuộc thế kỉ thứ mấy?
+c) 16 ngày bằng bao nhiêu tuần lễ và mấy ngày?
+d) Năm 2086 có phải năm nhuận không?
+e) Năm 1986 thuộc thế kỉ thứ mấy?
 
-### Bài 3. (5 điểm) Phần trăm trong mua bán: lãi, lỗ, giảm giá
-
-Ghi rõ đại lượng nào ứng với 100%.
-
-a) Mua một món hàng 500 000 đồng rồi bán 550 000 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
-b) Một chiếc cặp giá 120 000 đồng được giảm 40%. Hỏi giá sau khi giảm là bao nhiêu?
-c) Một món hàng giá 500 000 đồng, tăng giá 5%. Giá mới là bao nhiêu?
-d) Mua một món hàng 120 000 đồng rồi bán 144 000 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
-
-### Bài 4. (5 điểm) Tính toán với số đo đại lượng
+### Bài 2. (5 điểm) Tính toán với số đo đại lượng
 
 Đổi về cùng đơn vị rồi tính.
 
-a) 5 kg 798 g − 399 g = … g
-b) 38 kg 396 g − 198 g = … g
-c) 7 kg 680 g − 340 g = … g
-d) 26 m 21 cm × 8 = … cm
-e) 25 m 62 cm + 262 cm = … cm
+a) 5 214 cm : 6 = … cm
+b) 8 kg 246 g − 123 g = … g
+c) 21 m 67 cm + 367 cm = … cm
+d) 11 715 cm : 5 = … cm
+e) 25 200 cm : 8 = … cm
 
-### Bài 5. (5 điểm) So sánh hai số đo khác đơn vị
+### Bài 3. (5 điểm) So sánh hai số đo khác đơn vị
 
 Điền dấu <, >, = thích hợp.
 
-a) 28 m² … 8 192 km²
-b) 9 dam … 8 638 dm
-c) 38 yến … 7 535 g
-d) 16 cm … 6 455 dam
-e) 52 tấn … 4 075 g
-f) 73 dm² … 651 m²
+a) 18 kg … 4 943 g
+b) 17 m² … 4 058 ha
+c) 67 km … 103 hm
+d) 50 km² … 1 488 m²
+
+### Bài 4. (5 điểm) Đơn vị đo diện tích
+
+Điền số thích hợp vào chỗ chấm.
+
+a) 460 000 m² = … ha
+b) 13 hm² = … m²
+c) 72 hm² = … dam²
+d) 2 800 m² = … dam²
+e) 6 200 ha = … km²
+f) 290 000 m² = … ha
+g) 43 dam² = … m²
+h) 5 100 ha = … km²
+
+### Bài 5. (5 điểm) Giả thiết tạm với hai loại đối tượng
+
+Dùng phương pháp giả thiết tạm.
+
+a) Trong sân có 51 chiếc xe ba bánh và xe đạp, đếm được tất cả 130 bánh xe. Hỏi mỗi loại có bao nhiêu chiếc?
+b) Trong sân có 29 chiếc xe đạp và xe ô tô, đếm được tất cả 64 bánh xe. Hỏi mỗi loại có bao nhiêu chiếc?
+c) Trong sân có 41 chiếc xe đạp và xe ba bánh, đếm được tất cả 102 bánh xe. Hỏi mỗi loại có bao nhiêu chiếc?
+d) Trong sân có 44 chiếc xe ô tô và xe đạp, đếm được tất cả 134 bánh xe. Hỏi mỗi loại có bao nhiêu chiếc?
+e) Trong sân có 29 chiếc xe ba bánh và xe đạp, đếm được tất cả 65 bánh xe. Hỏi mỗi loại có bao nhiêu chiếc?
+f) Trong sân có 48 chiếc xe ô tô và xe ba bánh, đếm được tất cả 170 bánh xe. Hỏi mỗi loại có bao nhiêu chiếc?
 
 ---
 
 ## PHẦN C — DẠNG 3 – DẠNG 4 · Mức M2 — Thông hiểu · 25 phút · 25 điểm
 
-### Bài 1. (5 điểm) Bài toán tổng – hiệu có lời văn
+### Bài 1. (5 điểm) Đại lượng tỉ lệ thuận
 
-Tóm tắt bằng sơ đồ đoạn thẳng rồi giải.
+Giải bằng cách rút về đơn vị hoặc dùng tỉ số.
 
-a) Hai lớp 5A và 3A có tất cả 460 quyển sách. Lớp 5A có nhiều hơn lớp 3A 116 quyển. Mỗi lớp có bao nhiêu quyển?
-b) Kho A và cửa hàng chứa tất cả 408 kg muối. Kho A chứa nhiều hơn cửa hàng 72 kg. Mỗi nơi chứa bao nhiêu kg?
-c) Tổ Một và tổ Hai trồng được 680 cây. Tổ Một trồng nhiều hơn tổ Hai 48 cây. Mỗi tổ trồng bao nhiêu cây?
-d) Hợp tác xã và trang trại chứa tất cả 494 kg muối. Hợp tác xã chứa nhiều hơn trang trại 102 kg. Mỗi nơi chứa bao nhiêu kg?
-e) Nhóm Hoa Phượng và đội Một trồng được 348 cây. Nhóm Hoa Phượng trồng nhiều hơn đội Một 86 cây. Mỗi tổ trồng bao nhiêu cây?
-f) Hai lớp 4C và 4B có tất cả 640 quyển sách. Lớp 4C có nhiều hơn lớp 4B 182 quyển. Mỗi lớp có bao nhiêu quyển?
+a) Mua 13 quyển vở hết 754 nghìn đồng. Với 1 566 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+b) Mua 4 quyển vở hết 136 nghìn đồng. Với 136 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+c) Mua 6 quyển vở hết 30 nghìn đồng. Mua 23 quyển vở như thế hết bao nhiêu nghìn đồng?
+d) Mua 13 quyển vở hết 572 nghìn đồng. Với 748 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
 
-### Bài 2. (5 điểm) Diện tích hình thang
+### Bài 2. (5 điểm) Phần trăm trong mua bán: lãi, lỗ, giảm giá
+
+Ghi rõ đại lượng nào ứng với 100%.
+
+a) Một chiếc cặp giá 200 000 đồng được giảm 30%. Hỏi giá sau khi giảm là bao nhiêu?
+b) Một món hàng giá 200 000 đồng, tăng giá 5%. Giá mới là bao nhiêu?
+c) Mua một món hàng 200 000 đồng rồi bán 230 000 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
+d) Một món hàng giá 500 000 đồng, tăng giá 30%. Giá mới là bao nhiêu?
+
+### Bài 3. (5 điểm) Diện tích hình thang
 
 Áp dụng công thức, ghi rõ đơn vị.
 
-a) Hình thang có đáy lớn 31 cm, đáy bé 22 cm, chiều cao 14 cm. Tính diện tích.
-b) Hình thang có đáy lớn 34 cm, đáy bé 26 cm, chiều cao 30 cm. Tính diện tích.
-c) Hình thang có đáy lớn 33 cm, đáy bé 11 cm, chiều cao 26 cm. Tính diện tích.
-d) Hình thang có đáy lớn 23 cm, đáy bé 22 cm, chiều cao 20 cm. Tính diện tích.
-e) Hình thang có đáy lớn 14 cm, đáy bé 7 cm, chiều cao 22 cm. Tính diện tích.
+a) Hình thang có đáy lớn 32 cm, đáy bé 16 cm, chiều cao 12 cm. Tính diện tích.
+b) Hình thang có đáy lớn 11 cm, đáy bé 10 cm, chiều cao 14 cm. Tính diện tích.
+c) Hình thang có đáy lớn 15 cm, đáy bé 4 cm, chiều cao 20 cm. Tính diện tích.
+d) Hình thang có đáy lớn 22 cm, đáy bé 14 cm, chiều cao 30 cm. Tính diện tích.
+e) Hình thang có đáy lớn 36 cm, đáy bé 24 cm, chiều cao 26 cm. Tính diện tích.
 
-### Bài 3. (5 điểm) Tìm chữ số để số chia hết cho một số cho trước
+### Bài 4. (5 điểm) Bài toán nói thật – nói dối
 
-Với mỗi câu, tìm **tất cả** các chữ số thoả mãn.
+Ba bạn Nam, Hà, Trang, trong đó đúng một bạn làm vỡ lọ hoa.
+- Nam nói: “Tôi không làm.”
+- Hà nói: “Trang làm.”
+- Trang nói: “Hà nói dối.”
 
-a) Tìm tất cả chữ số thay cho dấu * để số 436* chia hết cho 3.
-b) Tìm tất cả chữ số thay cho dấu * để số 3*8 chia hết cho 3.
-c) Tìm tất cả chữ số thay cho dấu * để số *728 chia hết cho 5.
-d) Tìm tất cả chữ số thay cho dấu * để số 41*0 chia hết cho 5.
-e) Tìm tất cả chữ số thay cho dấu * để số 881* chia hết cho 2.
-f) Tìm tất cả chữ số thay cho dấu * để số 882* chia hết cho 3.
+Biết rằng trong ba bạn chỉ có đúng **một** bạn nói thật.
 
-### Bài 4. (5 điểm) Dãy hình xếp theo quy luật
+a) Câu nói của Hà và câu nói của Trang có thể cùng đúng được không? Vì sao?
+b) Hai câu đó có thể cùng sai được không?
+c) Vậy trong hai bạn Hà và Trang có đúng mấy bạn nói thật?
+d) Đề cho biết cả ba bạn chỉ có một bạn nói thật. Suy ra Nam nói thật hay nói dối?
+e) Câu của Nam là “Tôi không làm.” Câu đó sai thì điều gì đúng?
+f) Ai là người làm vỡ lọ hoa?
 
-Quan sát quy luật số que diêm rồi trả lời.
+### Bài 5. (5 điểm) Trung bình cộng trong tình huống thực tế
 
-a) Hình thứ 1 có 1 que diêm, mỗi hình sau hơn hình liền trước 5 que. Hình thứ 4 có bao nhiêu que diêm?
-b) Hình thứ 1 có 1 que diêm, mỗi hình sau hơn hình liền trước 5 que. Hình thứ 11 có bao nhiêu que diêm?
-c) Hình thứ 1 có 1 que diêm, mỗi hình sau hơn hình liền trước 5 que. Hình thứ 16 có bao nhiêu que diêm?
-d) Hình thứ 1 có 1 que diêm, mỗi hình sau hơn hình liền trước 5 que. Hình thứ 18 có bao nhiêu que diêm?
-e) Hình thứ 1 có 1 que diêm, mỗi hình sau hơn hình liền trước 5 que. Hình thứ 21 có bao nhiêu que diêm?
-f) Xếp liên tiếp 25 hình đầu tiên thì cần tất cả bao nhiêu que diêm?
+Giải từng bài toán nhỏ.
 
-### Bài 5. (5 điểm) Ba dạng cơ bản của tỉ số phần trăm
-
-Xác định rõ đề cho gì, hỏi gì.
-
-a) Tìm tỉ số phần trăm của 240 và 400.
-b) Tìm 80% của 40.
-c) Biết 60% của một số là 180. Tìm số đó.
-d) Biết 50% của một số là 20. Tìm số đó.
-e) Tìm 25% của 40.
-f) Tìm tỉ số phần trăm của 50 và 200.
-g) Tìm 80% của 100.
+a) Trung bình mỗi ngày bán được 172 kg gạo. Hỏi 5 ngày bán được tất cả bao nhiêu ki-lô-gam?
+b) Trung bình mỗi ngày cửa hàng bán được 190 kg gạo. 5 ngày đầu bán được 181, 198, 183, 196, 197 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
+c) Trung bình mỗi ngày cửa hàng bán được 139 kg gạo. 3 ngày đầu bán được 141, 141, 127 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
+d) Trung bình mỗi ngày bán được 194 kg gạo. Hỏi 3 ngày bán được tất cả bao nhiêu ki-lô-gam?
+e) 5 ngày đầu tuần một cửa hàng bán được lần lượt 267, 271, 277, 279, 281 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
 
 ---
 
 ## PHẦN D — DẠNG 5 – DẠNG 6 VÀ DẠNG PHỐI HỢP · Mức M3 — Vận dụng · 20 phút · 20 điểm
 
-### Bài 1. (4 điểm) Đơn vị đo thể tích và dung tích
-
-Điền số thích hợp.
-
-a) 80 000 cm³ = … dm³
-b) 79 lít = … ml
-c) 34 m³ = … dm³
-d) 18 dm³ = … lít
-e) 76 000 cm³ = … dm³
-
-### Bài 2. (4 điểm) Bài toán thực tế về khối lượng
+### Bài 1. (4 điểm) Bài toán thực tế về khối lượng
 
 Chú ý đơn vị mà đề hỏi.
 
-a) Một xe chở 35 bao phân bón, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ phân bón?
-b) Một xe chở 15 bao gạo, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ gạo?
-c) Một xe chở 31 bao xi măng, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ xi măng?
-d) Một xe chở 16 bao phân bón, mỗi bao 50 kg. Hỏi xe chở bao nhiêu tạ phân bón?
-e) Một xe chở 28 bao thóc, mỗi bao 50 kg. Hỏi xe chở bao nhiêu tạ thóc?
+a) Một xe chở 27 bao gạo, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ gạo?
+b) Một xe chở 6 bao gạo, mỗi bao 50 kg. Hỏi xe chở bao nhiêu tạ gạo?
+c) Một xe chở 32 bao phân bón, mỗi bao 50 kg. Hỏi xe chở bao nhiêu tạ phân bón?
+d) Một xe chở 21 bao xi măng, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ xi măng?
 
-### Bài 3. (4 điểm) Tính thời điểm đến, thời gian đi
+### Bài 2. (4 điểm) Tính thời điểm đến, thời gian đi
 
 Ghi kết quả theo giờ và phút.
 
-a) Một chuyến tàu khởi hành lúc 6 giờ 25 phút và đi hết 5 giờ 50 phút. Tàu đến nơi lúc mấy giờ?
-b) Một chuyến tàu khởi hành lúc 13 giờ 10 phút và đi hết 4 giờ 47 phút. Tàu đến nơi lúc mấy giờ?
-c) Một chuyến tàu khởi hành lúc 6 giờ 40 phút và đi hết 1 giờ 10 phút. Tàu đến nơi lúc mấy giờ?
-d) Một chuyến tàu khởi hành lúc 9 giờ 50 phút và đi hết 6 giờ 24 phút. Tàu đến nơi lúc mấy giờ?
-e) Một chuyến tàu khởi hành lúc 15 giờ 20 phút và đi hết 3 giờ 49 phút. Tàu đến nơi lúc mấy giờ?
+a) Một chuyến tàu khởi hành lúc 7 giờ 50 phút và đi hết 5 giờ 41 phút. Tàu đến nơi lúc mấy giờ?
+b) Một chuyến tàu khởi hành lúc 10 giờ 50 phút và đi hết 4 giờ 41 phút. Tàu đến nơi lúc mấy giờ?
+c) Một chuyến tàu khởi hành lúc 8 giờ 10 phút và đi hết 1 giờ 42 phút. Tàu đến nơi lúc mấy giờ?
+d) Một chuyến tàu khởi hành lúc 12 giờ 15 phút và đi hết 2 giờ 57 phút. Tàu đến nơi lúc mấy giờ?
 
-### Bài 4. (4 điểm) Tổng của các số tự nhiên liên tiếp
+### Bài 3. (4 điểm) Lát gạch nền nhà
 
-Với mỗi ý, tìm số theo yêu cầu.
+Một căn phòng hình chữ nhật dài **7 m**, rộng **3 m**, lát bằng gạch vuông cạnh **40 cm**.
 
-a) Tổng của 3 số tự nhiên liên tiếp bằng 1 440. Tìm số bé nhất trong 3 số đó.
-b) Tổng của 9 số tự nhiên liên tiếp bằng 3 888. Tìm số bé nhất trong 9 số đó.
-c) Tổng của 5 số tự nhiên liên tiếp bằng 2 370. Tìm số bé nhất trong 5 số đó.
-d) Tổng của 7 số tự nhiên liên tiếp bằng 2 142. Tìm số bé nhất trong 7 số đó.
-e) Tổng của 9 số tự nhiên liên tiếp bằng 4 230. Tìm số bé nhất trong 9 số đó.
-f) Tổng của 5 số tự nhiên liên tiếp bằng 1 355. Tìm số bé nhất trong 5 số đó.
+a) Tính diện tích nền nhà theo mét vuông.
+b) Đổi diện tích nền nhà ra xăng-ti-mét vuông.
+c) Diện tích một viên gạch là bao nhiêu xăng-ti-mét vuông?
+d) Cần bao nhiêu viên gạch để lát kín nền nhà?
+e) Mỗi viên gạch giá 18 000 đồng. Mua gạch lát hết bao nhiêu tiền?
 
-### Bài 5. (4 điểm) Hai nhóm có phần chung — đếm bằng hai vòng tròn
+### Bài 4. (4 điểm) Số ki-lô-mét trên đồng hồ xe
 
-Vẽ hai vòng tròn và điền số vào ba phần trước khi tính.
+Đồng hồ xe máy nhà bạn Trang đầu năm chỉ **59 183 km**, cuối năm chỉ **60 965 km**.
 
-a) Lớp 5B có 31 học sinh. Có 15 em học cờ vua, 21 em học vẽ, trong đó 5 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
-b) Lớp 5B có 33 học sinh. Có 22 em học bơi, 20 em học hát, trong đó 11 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
-c) Lớp 4B có 32 học sinh. Có 20 em học bơi, 24 em học bóng rổ, trong đó 12 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
-d) Lớp 5B có 36 học sinh. Có 26 em học tiếng Anh, 12 em học cờ vua, trong đó 6 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
-e) Lớp 4A có 29 học sinh. Có 13 em học cờ vua, 19 em học bơi, trong đó 7 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
-f) Lớp 4B có 38 học sinh. Có 23 em học cờ vua, 19 em học vẽ, trong đó 10 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
+a) Làm tròn số ki-lô-mét đầu năm 59 183 đến hàng nghìn.
+b) Làm tròn số ki-lô-mét cuối năm 60 965 đến hàng nghìn.
+c) Cả năm chiếc xe đã đi bao nhiêu ki-lô-mét? Tính bằng số chính xác.
+d) Bạn Nam lấy hai số đã làm tròn trừ cho nhau và được 2 000 km. Kết quả ấy lệch bao nhiêu so với số đúng?
+e) Nếu mỗi tháng xe đi được số ki-lô-mét như nhau thì trung bình mỗi tháng đi bao nhiêu? Làm tròn đến hàng đơn vị.
+
+### Bài 5. (4 điểm) Đơn vị đo thể tích và dung tích
+
+Điền số thích hợp.
+
+a) 83 000 cm³ = … dm³
+b) 83 lít = … ml
+c) 38 dm³ = … lít
+d) 20 m³ = … dm³
 
 ---
 
@@ -296,7 +290,7 @@ f) Lớp 4B có 38 học sinh. Có 23 em học cờ vua, 19 em học vẽ, trong
 
 ### Bài 1. (4 điểm) Đọc vị đề số 1
 
-**Đề:** Chú ý đơn vị mà đề hỏi. Một xe chở 14 bao gạo, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ gạo?
+**Đề:** Chú ý đơn vị mà đề hỏi. Một xe chở 20 bao gạo, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ gạo?
 
 a) Đề này thuộc dạng bài nào?
 b) Dấu hiệu nào giúp em nhận ra?
@@ -307,7 +301,7 @@ f) Lỗi nào dễ mắc ở đề này?
 
 ### Bài 2. (4 điểm) Đọc vị đề số 2
 
-**Đề:** Điền số thích hợp. 23 000 cm³ = … dm³
+**Đề:** Điền số thích hợp. 46 m³ = … dm³
 
 a) Đề này thuộc dạng bài nào?
 b) Dấu hiệu nào giúp em nhận ra?
@@ -318,7 +312,7 @@ f) Lỗi nào dễ mắc ở đề này?
 
 ### Bài 3. (4 điểm) Đọc vị đề số 3
 
-**Đề:** Đổi về cùng đơn vị rồi tính. 27 kg 880 g − 440 g = … g
+**Đề:** Đổi về cùng đơn vị rồi tính. 22 kg 532 g − 266 g = … g
 
 a) Đề này thuộc dạng bài nào?
 b) Dấu hiệu nào giúp em nhận ra?
@@ -329,7 +323,7 @@ f) Lỗi nào dễ mắc ở đề này?
 
 ### Bài 4. (4 điểm) Đọc vị đề số 4
 
-**Đề:** Chú ý: vận tốc trung bình không phải trung bình cộng hai vận tốc. Một người đi 2 giờ đầu với vận tốc 15 km/giờ, 2 giờ sau với vận tốc 30 km/giờ. Tính vận tốc trung bình trên cả quãng đường.
+**Đề:** Chú ý: vận tốc trung bình không phải trung bình cộng hai vận tốc. Một người đi 1 giờ đầu với vận tốc 12 km/giờ, 2 giờ sau với vận tốc 40 km/giờ. Tính vận tốc trung bình trên cả quãng đường.
 
 a) Đề này thuộc dạng bài nào?
 b) Dấu hiệu nào giúp em nhận ra?
@@ -340,7 +334,7 @@ f) Lỗi nào dễ mắc ở đề này?
 
 ### Bài 5. (4 điểm) Đọc vị đề số 5
 
-**Đề:** Điền số thích hợp. 27 m² = … dm²
+**Đề:** Điền số thích hợp. 47 dm² = … cm²
 
 a) Đề này thuộc dạng bài nào?
 b) Dấu hiệu nào giúp em nhận ra?
@@ -386,99 +380,99 @@ f) Lỗi nào dễ mắc ở đề này?
 **Lỗi thường gặp:** Điền từng cột rời rạc, không đối chiếu ngang. Phòng: Điền xong thì đọc lại theo hàng, mỗi hàng phải thành một câu có nghĩa.
 
 ### Bài B.1
-**Đáp số:** a) 20 000 · b) 36 · c) 5 500 · d) 18 · e) 100 000 · f) 29 · g) 70 000 · h) 13
-**Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần**, vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
-**Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc, không phải 10 lần.
-**Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết riêng bảng đơn vị diện tích, ghi rõ “× 100” giữa hai bậc liền nhau.
-
-### Bài B.2
-**Đáp số:** a) 30 · b) XXI · c) 3 tuần 6 ngày · d) không · e) XX
+**Đáp số:** a) 31 · b) XXI · c) 2 tuần 2 ngày · d) không · e) XX
 **Hướng giải:** Các tháng 1, 3, 5, 7, 8, 10, 12 có 31 ngày; các tháng 4, 6, 9, 11 có 30 ngày; tháng 2 có 28 ngày, năm nhuận có 29 ngày. Năm nhuận là năm chia hết cho 4, riêng năm tròn trăm thì phải chia hết cho 400. Thế kỉ thứ n gồm các năm từ (n − 1) × 100 + 1 đến n × 100.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Năm tròn trăm chỉ nhuận khi chia hết cho **400** (1900 không nhuận, 2000 có nhuận).
 **Lỗi thường gặp:** Coi mọi năm chia hết cho 4 đều là năm nhuận. Phòng: Gặp năm tròn trăm thì kiểm tra thêm điều kiện chia hết cho 400.
 
-### Bài B.3
-**Đáp số:** a) 10% · b) 72 000 đồng · c) 525 000 đồng · d) 20%
-**Hướng giải:** Giá gốc luôn ứng với 100%. Giảm p% thì giá mới ứng với (100 − p)%; tăng p% thì ứng với (100 + p)%. Lãi tính theo **giá mua**.
-**Nhãn tư duy:** TD2, TD6. Điểm chốt: Phần trăm lãi tính theo **giá mua**, không theo giá bán.
-**Lỗi thường gặp:** Chia tiền lãi cho giá bán nên ra tỉ lệ nhỏ hơn thực tế. Phòng: Viết dòng đầu tiên: “Giá mua = 100%”.
-
-### Bài B.4
-**Đáp số:** a) 5 399 · b) 38 198 · c) 7 340 · d) 20 968 · e) 2 824
+### Bài B.2
+**Đáp số:** a) 869 · b) 8 123 · c) 2 534 · d) 2 343 · e) 3 150
 **Hướng giải:** Chỉ cộng, trừ được các số đo **cùng đơn vị**. Bước đầu tiên luôn là đổi tất cả về đơn vị mà đề yêu cầu ở kết quả, sau đó tính như với số tự nhiên rồi ghi kèm đơn vị.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của **kết quả** quyết định ta đổi về đơn vị nào.
 **Lỗi thường gặp:** Cộng số mét với số xăng-ti-mét mà chưa đổi. Phòng: Gạch chân đơn vị ở chỗ chấm rồi đổi mọi số hạng về đơn vị đó.
 
-### Bài B.5
-**Đáp số:** a) < · b) < · c) > · d) < · e) > · f) <
+### Bài B.3
+**Đáp số:** a) > · b) < · c) > · d) >
 **Hướng giải:** Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.
 
+### Bài B.4
+**Đáp số:** a) 46 · b) 130 000 · c) 7 200 · d) 28 · e) 62 · f) 29 · g) 4 300 · h) 51
+**Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần**, vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
+**Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc, không phải 10 lần.
+**Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết riêng bảng đơn vị diện tích, ghi rõ “× 100” giữa hai bậc liền nhau.
+
+### Bài B.5
+**Đáp số:** a) xe ba bánh: 28 chiếc, xe đạp: 23 chiếc · b) xe đạp: 26 chiếc, xe ô tô: 3 chiếc · c) xe đạp: 21 chiếc, xe ba bánh: 20 chiếc · d) xe ô tô: 23 chiếc, xe đạp: 21 chiếc · e) xe ba bánh: 7 chiếc, xe đạp: 22 chiếc · f) xe ô tô: 26 chiếc, xe ba bánh: 22 chiếc
+**Hướng giải:** Giả sử tất cả đều là loại có ít bánh hơn, tính tổng số bánh giả định. Số bánh còn thiếu so với thực tế chia cho hiệu số bánh của hai loại cho biết số xe loại nhiều bánh hơn.
+**Nhãn tư duy:** TD6, TD3. Điểm chốt: Chia cho **hiệu** số bánh của hai loại, không chia cho số bánh của một loại.
+**Lỗi thường gặp:** Chia số bánh thiếu cho số bánh của loại nhiều hơn. Phòng: Thử lại: nhân ngược ra tổng số bánh, phải khớp với đề.
+
 ### Bài C.1
-**Đáp số:** a) 5A: 288 quyển, 3A: 172 quyển · b) kho A: 240 kg, cửa hàng: 168 kg · c) tổ Một: 364 cây, tổ Hai: 316 cây · d) hợp tác xã: 298 kg, trang trại: 196 kg · e) nhóm Hoa Phượng: 217 cây, đội Một: 131 cây · f) 4C: 411 quyển, 4B: 229 quyển
-**Hướng giải:** Đọc đề, xác định đâu là **tổng**, đâu là **hiệu**. Vẽ sơ đồ hai đoạn thẳng. Số lớn = (tổng + hiệu) : 2; số bé = tổng − số lớn.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Cụm “có tất cả” cho **tổng**; cụm “nhiều hơn” cho **hiệu**.
-**Lỗi thường gặp:** Nhầm hiệu thành tổng khi đề diễn đạt vòng vo. Phòng: Ghi riêng ra hai dòng: Tổng = … ; Hiệu = … trước khi tính.
+**Đáp số:** a) 27 quyển · b) 4 quyển · c) 115 nghìn đồng · d) 17 quyển
+**Hướng giải:** Số vở tăng bao nhiêu lần thì số tiền tăng bấy nhiêu lần. Có hai cách: rút về đơn vị (tìm giá một quyển rồi nhân) hoặc dùng tỉ số (số vở mới gấp mấy lần số vở cũ thì tiền cũng gấp bấy nhiêu lần).
+**Nhãn tư duy:** TD2, TD3. Điểm chốt: Hai đại lượng **cùng tăng, cùng giảm** thì tỉ lệ thuận.
+**Lỗi thường gặp:** Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch. Phòng: Tự hỏi: mua nhiều hơn thì trả nhiều hơn hay ít hơn?
 
 ### Bài C.2
-**Đáp số:** a) 371 cm² · b) 900 cm² · c) 572 cm² · d) 450 cm² · e) 231 cm²
+**Đáp số:** a) 140 000 đồng · b) 210 000 đồng · c) 15% · d) 650 000 đồng
+**Hướng giải:** Giá gốc luôn ứng với 100%. Giảm p% thì giá mới ứng với (100 − p)%; tăng p% thì ứng với (100 + p)%. Lãi tính theo **giá mua**.
+**Nhãn tư duy:** TD2, TD6. Điểm chốt: Phần trăm lãi tính theo **giá mua**, không theo giá bán.
+**Lỗi thường gặp:** Chia tiền lãi cho giá bán nên ra tỉ lệ nhỏ hơn thực tế. Phòng: Viết dòng đầu tiên: “Giá mua = 100%”.
+
+### Bài C.3
+**Đáp số:** a) 288 cm² · b) 147 cm² · c) 190 cm² · d) 540 cm² · e) 780 cm²
 **Hướng giải:** Diện tích hình thang = (đáy lớn + đáy bé) × chiều cao : 2. Cách nhớ: ghép hai hình thang bằng nhau thành một hình bình hành có đáy bằng tổng hai đáy, nên phải chia đôi.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng **hai đáy** trước rồi mới nhân chiều cao và chia 2.
 **Lỗi thường gặp:** Nhân riêng từng đáy với chiều cao rồi cộng, quên chia 2. Phòng: Viết công thức đầy đủ ra trước khi thay số.
 
-### Bài C.3
-**Đáp số:** a) 2, 5, 8 · b) 1, 4, 7 · c) không có chữ số nào · d) 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 · e) 0, 2, 4, 6, 8 · f) 0, 3, 6, 9
-**Hướng giải:** Xét dấu hiệu chia hết ứng với số chia, rồi thử lần lượt 10 chữ số từ 0 đến 9. Nếu dấu * đứng ở hàng cao nhất thì loại chữ số 0.
-**Nhãn tư duy:** TD2, TD5. Điểm chốt: Phải tìm **tất cả** chữ số thoả mãn, không dừng ở chữ số đầu tiên tìm được.
-**Lỗi thường gặp:** Chỉ nêu một đáp số, hoặc nhận cả chữ số 0 ở hàng cao nhất. Phòng: Liệt kê đủ 10 chữ số ra nháp rồi gạch dần chữ số không đạt.
-
 ### Bài C.4
-**Đáp số:** a) 16 · b) 51 · c) 76 · d) 86 · e) 101 · f) 1 525
-**Hướng giải:** Số que của các hình lập thành dãy cách đều. Dùng công thức số hạng thứ n để tính cho một hình bất kì, dùng công thức tổng dãy cách đều khi hỏi tổng số que của nhiều hình.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Bài toán hình nhưng lời giải là **dãy số** — đổi ngôn ngữ trước khi tính.
-**Lỗi thường gặp:** Vẽ tay từng hình để đếm, không kịp thời gian với hình thứ hai, ba chục. Phòng: Lập bảng ba hình đầu để tìm khoảng cách rồi mới dùng công thức.
+**Đáp số:** a) không, vì hai câu phủ định nhau · b) không, vì chúng phủ định nhau · c) đúng một bạn · d) nói dối · e) Nam chính là người làm vỡ lọ hoa · f) Nam
+**Hướng giải:** Tìm hai câu nói **phủ định nhau**: trong hai câu đó chắc chắn có đúng một câu đúng. Vì cả ba chỉ có một câu đúng, câu đúng ấy nằm trong cặp phủ định, nên câu còn lại (của người thứ ba) là sai. Đọc nội dung câu sai đó để kết luận.
+**Nhãn tư duy:** TD2, TD6. Điểm chốt: Cặp câu **phủ định nhau** luôn có đúng một câu đúng — đó là điểm tựa.
+**Lỗi thường gặp:** Thử từng người một cách rời rạc mà không dùng ràng buộc tổng số câu nói thật. Phòng: Đánh số các câu nói, ghi rõ câu nào phủ định câu nào.
 
 ### Bài C.5
-**Đáp số:** a) 60% · b) 32 · c) 300 · d) 40 · e) 10 · f) 25% · g) 80
-**Hướng giải:** Dạng 1 — tìm tỉ số phần trăm của a và b: lấy a chia b rồi nhân 100 và viết kí hiệu %. Dạng 2 — tìm p% của b: lấy b chia 100 rồi nhân p. Dạng 3 — biết p% của một số là a, tìm số đó: lấy a chia p rồi nhân 100.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Nhận đúng **dạng nào trong ba dạng** là xong một nửa bài.
-**Lỗi thường gặp:** Nhầm dạng 2 với dạng 3 nên nhân thay vì chia. Phòng: Gạch chân: cái gì là “toàn bộ” (ứng với 100%), cái gì là “một phần”.
+**Đáp số:** a) 860 kg · b) 185 kg · c) 147 kg · d) 582 kg · e) 275 kg
+**Hướng giải:** Ba dạng ngược nhau: biết các số tìm trung bình cộng (cộng rồi chia); biết trung bình cộng tìm tổng (nhân); biết trung bình cộng và một số số hạng, tìm số hạng còn thiếu (lấy tổng trừ đi các số đã biết).
+**Nhãn tư duy:** TD2, TD3. Điểm chốt: Từ trung bình cộng luôn tìm được **tổng** trước, rồi mới tính tiếp.
+**Lỗi thường gặp:** Đi tìm ngay số còn thiếu mà chưa tính tổng. Phòng: Bước đầu tiên luôn viết: “Tổng = trung bình cộng × số ngày”.
 
 ### Bài D.1
-**Đáp số:** a) 80 · b) 79 000 · c) 34 000 · d) 18 · e) 76
-**Hướng giải:** BẪY — 1 000 lần mỗi bậc. Hai đơn vị thể tích liền kề hơn kém nhau **1 000 lần**. 1 dm³ = 1 lít; 1 lít = 1 000 ml; 1 m³ = 1 000 dm³ = 1 000 lít.
-**Nhãn tư duy:** TD1, TD2. Điểm chốt: Thể tích nhảy **1 000 lần** mỗi bậc (độ dài 10, diện tích 100, thể tích 1 000).
-**Lỗi thường gặp:** Đổi như đơn vị diện tích, chỉ nhân 100. Phòng: Nhớ dãy 10 – 100 – 1 000 ứng với độ dài – diện tích – thể tích.
-**Gợi ý 3 tầng:** (1) Đơn vị thể tích liền kề hơn kém nhau mấy lần? — (2) Đếm số bậc giữa hai đơn vị. — (3) 1 dm³ bằng đúng 1 lít.
-
-### Bài D.2
-**Đáp số:** a) 21 tạ · b) 9 tạ · c) 7 tạ 75 kg · d) 8 tạ · e) 14 tạ
+**Đáp số:** a) 8 tạ 10 kg · b) 3 tạ · c) 16 tạ · d) 12 tạ 60 kg
 **Hướng giải:** BẪY — Đơn vị của câu trả lời. Tính tổng khối lượng theo ki-lô-gam trước, sau đó mới đổi sang đơn vị mà đề hỏi. Đừng đổi đơn vị ngay từ đầu vì dễ nhầm.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Câu hỏi đòi đơn vị nào thì bước **cuối cùng** mới đổi sang đơn vị đó.
 **Lỗi thường gặp:** Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. Phòng: Khoanh tròn đơn vị trong câu hỏi trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Tính tổng khối lượng theo ki-lô-gam. — (2) Đề hỏi kết quả theo đơn vị nào? — (3) Đổi kết quả sang đơn vị đó.
 
-### Bài D.3
-**Đáp số:** a) 12 giờ 15 phút · b) 17 giờ 57 phút · c) 7 giờ 50 phút · d) 16 giờ 14 phút · e) 19 giờ 9 phút
+### Bài D.2
+**Đáp số:** a) 13 giờ 31 phút · b) 15 giờ 31 phút · c) 9 giờ 52 phút · d) 15 giờ 12 phút
 **Hướng giải:** BẪY — Phần phút vượt quá 60. Đổi cả giờ khởi hành lẫn thời gian đi về **phút**, cộng lại, rồi đổi kết quả ngược lại thành giờ và phút. Cách này tránh được lỗi nhớ khi phần phút vượt 60.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Đổi hết về phút rồi mới cộng — an toàn hơn cộng trực tiếp.
 **Lỗi thường gặp:** Cộng phần phút thành hơn 60 mà quên đổi thành giờ. Phòng: Kiểm tra phần phút của đáp số phải bé hơn 60.
 **Gợi ý 3 tầng:** (1) Đổi giờ khởi hành ra phút tính từ 0 giờ. — (2) Cộng thêm thời gian đi (tính bằng phút). — (3) Đổi tổng số phút trở lại thành giờ và phút.
 
+### Bài D.3
+**Đáp số:** a) 7 × 3 = 21 m² · b) 21 m² = 210 000 cm² · c) 40 × 40 = 1 600 cm² · d) 210 000 : 1 600 = 131 viên · e) 131 × 18 000 = 2 358 000 đồng
+**Hướng giải:** BẪY — Không đổi về cùng đơn vị trước khi chia. Số viên gạch = diện tích nền chia diện tích một viên, nhưng **chỉ chia được khi hai diện tích cùng đơn vị**. Nền đo bằng mét, gạch đo bằng xăng-ti-mét, nên phải đổi trước.
+**Nhãn tư duy:** TD2, TD4. Điểm chốt: 1 m² = 10 000 cm², không phải 100 cm² — đây là chỗ sai nhiều nhất.
+**Lỗi thường gặp:** Chia thẳng m² cho cm², hoặc đổi 1 m² thành 100 cm². Phòng: Viết đơn vị vào cạnh mỗi con số trước khi bấm phép chia.
+**Gợi ý 3 tầng:** (1) Diện tích nền nhà tính theo đơn vị gì? Còn viên gạch? — (2) 1 m² bằng bao nhiêu cm²? Vẽ hình vuông cạnh 1 m rồi đếm. — (3) Đổi xong mới chia diện tích nền cho diện tích một viên.
+
 ### Bài D.4
-**Đáp số:** a) 479 · b) 428 · c) 472 · d) 303 · e) 466 · f) 269
-**Hướng giải:** Với một số **lẻ** các số tự nhiên liên tiếp, số ở giữa chính là trung bình cộng: số giữa = tổng : số lượng. Số bé nhất bằng số giữa trừ đi một nửa số lượng còn lại.
-**Nhãn tư duy:** TD3, TD4. Điểm chốt: Với số lượng lẻ thì **số giữa = tổng : số lượng** — đó là chìa khoá.
-**Lỗi thường gặp:** Lấy tổng chia cho số lượng rồi nhận luôn kết quả là số bé nhất. Phòng: Vẽ dãy số ra, đánh dấu vị trí số giữa trước khi lùi về số đầu.
-**Gợi ý 3 tầng:** (1) Số lượng số hạng là số chẵn hay lẻ? — (2) Với số lượng lẻ, số ở giữa bằng tổng chia số lượng. — (3) Từ số giữa lùi về đầu dãy mấy đơn vị?
+**Đáp số:** a) 59 000 · b) 61 000 · c) 60 965 − 59 183 = 1 782 km · d) lệch 218 km · e) 1 782 : 12 ≈ 148 km
+**Hướng giải:** BẪY — Làm tròn rồi mới trừ. Làm tròn để **nói cho gọn**, không phải để tính. Muốn có số đúng thì trừ trước, làm tròn sau — nếu cần làm tròn.
+**Nhãn tư duy:** TD2, TD4. Điểm chốt: Làm tròn trước khi tính thì sai số của hai lần làm tròn cộng lại.
+**Lỗi thường gặp:** Trừ hai số đã làm tròn rồi coi đó là kết quả đúng. Phòng: Hỏi: đề cần số gọn để nói, hay số đúng để tính?
+**Gợi ý 3 tầng:** (1) Làm tròn đến hàng nghìn thì nhìn chữ số ở hàng nào? — (2) Muốn biết đi được bao nhiêu km, con dùng số đã làm tròn hay số gốc? — (3) Tính cả hai cách rồi so hai kết quả xem lệch bao nhiêu.
 
 ### Bài D.5
-**Đáp số:** a) 0 em · b) 2 em · c) 0 em · d) 4 em · e) 4 em · f) 6 em
-**Hướng giải:** BẪY — Cộng thẳng, quên trừ phần chung. Điền phần chung vào trước, rồi trừ ra hai phần riêng. Cộng ba phần ấy được số người tham gia ít nhất một hoạt động; lấy tổng trừ đi là ra số người ngoài cả hai vòng.
-**Nhãn tư duy:** TD2, TD4. Điểm chốt: Con số đề cho cho mỗi môn **đã bao gồm** những em học cả hai. Cộng thẳng hai con số ấy là đếm phần chung hai lần.
-**Lỗi thường gặp:** Lấy tổng trừ đi tổng hai con số đề cho mà không cộng lại phần chung. Phòng: Vẽ hình trước, điền phần giữa trước, rồi mới điền hai bên.
-**Gợi ý 3 tầng:** (1) Bao nhiêu em học cả hai môn? Điền số ấy vào phần chồng nhau. — (2) Vậy chỉ học riêng mỗi môn là bao nhiêu em? — (3) Cộng ba phần rồi lấy sĩ số lớp trừ đi.
+**Đáp số:** a) 83 · b) 83 000 · c) 38 · d) 20 000
+**Hướng giải:** Hai đơn vị thể tích liền kề hơn kém nhau **1 000 lần**. 1 dm³ = 1 lít; 1 lít = 1 000 ml; 1 m³ = 1 000 dm³ = 1 000 lít.
+**Nhãn tư duy:** TD1, TD2. Điểm chốt: Thể tích nhảy **1 000 lần** mỗi bậc (độ dài 10, diện tích 100, thể tích 1 000).
+**Lỗi thường gặp:** Đổi như đơn vị diện tích, chỉ nhân 100. Phòng: Nhớ dãy 10 – 100 – 1 000 ứng với độ dài – diện tích – thể tích.
+**Gợi ý 3 tầng:** (1) Đơn vị thể tích liền kề hơn kém nhau mấy lần? — (2) Đếm số bậc giữa hai đơn vị. — (3) 1 dm³ bằng đúng 1 lít.
 
 ### Bài E.1
 **Đáp số:** a) Bài toán đại lượng có lời văn · b) Đơn vị trong câu hỏi khác đơn vị trong dữ kiện · c) Nhân, chia số tự nhiên; đổi đơn vị khối lượng · d) Tính theo đơn vị dữ kiện rồi đổi ở bước cuối · e) 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ. · f) Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ.

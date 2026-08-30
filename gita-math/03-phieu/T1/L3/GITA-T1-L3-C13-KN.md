@@ -51,59 +51,63 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — CỦNG CỐ NỀN — 30 CÂU TỐC ĐỘ · Mức M1 — Nhận biết · 20 phút · 25 điểm
 
-### Bài 1. (5 điểm) Tìm trung bình cộng của nhiều số
+### Bài 1. (5 điểm) Điền số còn thiếu trong dãy
 
-Tính trung bình cộng.
+Điền số thích hợp vào chỗ chấm.
 
-a) Tìm trung bình cộng của 2 số: 11, 15.
-b) Tìm trung bình cộng của 5 số: 54, 55, 35, 37, 54.
-c) Tìm trung bình cộng của 4 số: 53, 61, 43, 47.
-d) Tìm trung bình cộng của 3 số: 52, 63, 65.
-e) Tìm trung bình cộng của 4 số: 67, 60, 50, 47.
-f) Tìm trung bình cộng của 5 số: 34, 23, 18, 20, 20.
+a) 12, 27, 42, 57, …, 87
+b) 3, 6, 9, 12, …, 18
+c) 12, 15, 18, 21, …, 27
+d) 30, 39, …, 57, 66, 75
 
 ### Bài 2. (5 điểm) Đổi đơn vị đo độ dài và khối lượng
 
 Điền số thích hợp vào chỗ chấm.
 
-a) 34 hm = … mm
-b) 84 tấn = … tạ
-c) 38 dm = … mm
-d) 67 yến = … kg
-e) 69 km = … hm
-f) 66 hg = … g
+a) 42 tạ = … kg
+b) 25 m = … dm
+c) 58 kg = … g
+d) 88 hm = … m
+e) 29 hg = … dag
+f) 39 hm = … dm
+g) 54 yến = … hg
+h) 47 hm = … cm
 
 ### Bài 3. (5 điểm) Đơn vị đo thời gian: giờ và phút
 
 Điền kết quả, viết dạng giờ và phút.
 
-a) 213 phút = … giờ … phút
-b) 7 giờ 28 phút = … phút
-c) 7 giờ 10 phút − 256 phút = … (viết dạng giờ và phút)
-d) 2 giờ 24 phút + 144 phút = … (viết dạng giờ và phút)
-e) 1 giờ 34 phút + 24 phút = … (viết dạng giờ và phút)
+a) 9 giờ 37 phút = … phút
+b) 196 phút = … giờ … phút
+c) 2 giờ 24 phút − 83 phút = … (viết dạng giờ và phút)
+d) 8 giờ 35 phút + 164 phút = … (viết dạng giờ và phút)
+e) 183 phút = … giờ … phút
+f) 3 giờ 24 phút − 49 phút = … (viết dạng giờ và phút)
 
-### Bài 4. (5 điểm) Đổi số đo khối lượng có nhiều đơn vị
-
-Điền vào chỗ chấm.
-
-a) 2 tấn 8 tạ 21 kg = … kg
-b) 5 tấn 4 tạ 38 kg = … kg
-c) 3 092 kg = … tấn … tạ … kg
-d) 4 tấn 8 tạ 36 kg = … kg
-e) 3 565 kg = … tấn … tạ … kg
-
-### Bài 5. (5 điểm) Mi-li-lít và lít
+### Bài 4. (5 điểm) Mi-li-lít và lít
 
 Điền số hoặc dấu thích hợp.
 
-a) 11 l 205 ml = … ml
-b) 18 l … 999 ml
-c) 38 l = … ml
-d) 25 000 ml = … l
-e) 9 000 ml = … l
-f) 30 l … 1 611 ml
-g) 20 l = … ml
+a) 32 l 808 ml = … ml
+b) 25 l = … ml
+c) 36 000 ml = … l
+d) 6 l … 2 956 ml
+e) 21 000 ml = … l
+f) 40 l = … ml
+g) 6 l 439 ml = … ml
+h) 6 l … 1 931 ml
+
+### Bài 5. (5 điểm) Đổi số đo khối lượng có nhiều đơn vị
+
+Điền vào chỗ chấm.
+
+a) 1 tạ 52 kg = … kg
+b) 4 112 kg = … tấn … tạ … kg
+c) 6 tấn 4 tạ 11 kg = … kg
+d) 6 tấn 9 tạ 26 kg = … kg
+e) 3 543 kg = … tấn … tạ … kg
+f) 6 484 kg = … tấn … tạ … kg
+g) 3 078 kg = … tấn … tạ … kg
 
 ---
 
@@ -335,34 +339,34 @@ f) Mẹo nhanh em sẽ tặng lớp?
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài A.1
-**Đáp số:** a) 13 · b) 47 · c) 51 · d) 60 · e) 56 · f) 23
-**Hướng giải:** Trung bình cộng của nhiều số bằng tổng các số đó chia cho số lượng các số. Cộng cho hết rồi mới chia, không chia từng số một.
-**Nhãn tư duy:** TD1. Điểm chốt: Chia cho **số lượng số hạng**, không phải chia cho một số bất kì.
-**Lỗi thường gặp:** Đếm sai số lượng số hạng nên chia nhầm. Phòng: Đánh số thứ tự từng số trước khi cộng.
+**Đáp số:** a) 72 · b) 15 · c) 24 · d) 48
+**Hướng giải:** BẪY — Hai số hai bên chỗ trống cách nhau hai khoảng. Tìm khoảng cách của dãy từ những cặp số đã biết đứng cạnh nhau, rồi lấy số đứng trước chỗ trống cộng thêm khoảng cách đó.
+**Nhãn tư duy:** TD4, TD1. Điểm chốt: Tìm khoảng cách ở **chỗ có hai số liền nhau đã biết**.
+**Lỗi thường gặp:** Lấy hiệu của hai số cách nhau một chỗ trống làm khoảng cách. Phòng: Đánh số thứ tự vị trí rồi mới tính khoảng cách.
 
 ### Bài A.2
-**Đáp số:** a) 3 400 000 · b) 840 · c) 3 800 · d) 670 · e) 690 · f) 6 600
+**Đáp số:** a) 4 200 · b) 250 · c) 58 000 · d) 8 800 · e) 290 · f) 39 000 · g) 5 400 · h) 470 000
 **Hướng giải:** BẪY — Chiều đổi đơn vị. Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
 **Nhãn tư duy:** TD1. Điểm chốt: Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
 **Lỗi thường gặp:** Đổi ngược chiều nên nhân thành chia. Phòng: Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.
 
 ### Bài A.3
-**Đáp số:** a) 3 giờ 33 phút · b) 448 · c) 2 giờ 54 phút · d) 4 giờ 48 phút · e) 1 giờ 58 phút
-**Hướng giải:** BẪY — Cơ số 60 chứ không phải 10. 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
+**Đáp số:** a) 577 · b) 3 giờ 16 phút · c) 1 giờ 1 phút · d) 11 giờ 19 phút · e) 3 giờ 3 phút · f) 2 giờ 35 phút
+**Hướng giải:** 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
 **Lỗi thường gặp:** Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. Phòng: Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không.
 
 ### Bài A.4
-**Đáp số:** a) 2 821 · b) 5 438 · c) 3 tấn 92 kg · d) 4 836 · e) 3 tấn 5 tạ 65 kg
-**Hướng giải:** 1 tấn = 10 tạ = 1 000 kg; 1 tạ = 100 kg; 1 yến = 10 kg. Đổi tất cả về ki-lô-gam rồi cộng lại; hoặc ngược lại, chia dần từ đơn vị lớn xuống đơn vị bé và lấy phần dư.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Đổi hết về **một đơn vị chung** trước khi cộng.
-**Lỗi thường gặp:** Cộng thẳng các số đứng trước những đơn vị khác nhau. Phòng: Viết mỗi thành phần thành số ki-lô-gam ngay bên dưới rồi mới cộng.
-
-### Bài A.5
-**Đáp số:** a) 11 205 · b) > · c) 38 000 · d) 25 · e) 9 · f) > · g) 20 000
+**Đáp số:** a) 32 808 · b) 25 000 · c) 36 · d) > · e) 21 · f) 40 000 · g) 6 439 · h) >
 **Hướng giải:** 1 lít = 1 000 mi-li-lít. Đổi từ đơn vị lớn sang đơn vị bé thì nhân, ngược lại thì chia. Muốn so sánh thì phải đưa về cùng một đơn vị trước.
 **Nhãn tư duy:** TD1. Điểm chốt: So sánh **chỉ sau khi** đã đưa về cùng đơn vị.
 **Lỗi thường gặp:** So thẳng hai con số mà bỏ qua đơn vị. Phòng: Viết lại cả hai vế theo mi-li-lít rồi mới so.
+
+### Bài A.5
+**Đáp số:** a) 152 · b) 4 tấn 1 tạ 12 kg · c) 6 411 · d) 6 926 · e) 3 tấn 5 tạ 43 kg · f) 6 tấn 4 tạ 84 kg · g) 3 tấn 78 kg
+**Hướng giải:** 1 tấn = 10 tạ = 1 000 kg; 1 tạ = 100 kg; 1 yến = 10 kg. Đổi tất cả về ki-lô-gam rồi cộng lại; hoặc ngược lại, chia dần từ đơn vị lớn xuống đơn vị bé và lấy phần dư.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Đổi hết về **một đơn vị chung** trước khi cộng.
+**Lỗi thường gặp:** Cộng thẳng các số đứng trước những đơn vị khác nhau. Phòng: Viết mỗi thành phần thành số ki-lô-gam ngay bên dưới rồi mới cộng.
 
 ### Bài B.1
 **Đáp số:** a) câu lời giải nêu rõ đang tìm đại lượng nào · b) phép tính, viết đủ dấu và đủ đơn vị · c) kết quả kèm đơn vị · d) câu đáp số · e) một phần tư số điểm của bài

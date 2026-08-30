@@ -28,60 +28,60 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ### Bài 1. (2 điểm — 10 phút) Tính và điền kết quả
 
-Cho số **86 844**.
+Cho số **75 516**.
 
-a) Số 86 844 có bao nhiêu chữ số?
+a) Số 75 516 có bao nhiêu chữ số?
 b) Chữ số hàng đơn vị là chữ số nào?
 c) Chữ số hàng trăm là chữ số nào?
 d) Chữ số hàng nghìn là chữ số nào?
-e) Viết số 86 844 thành tổng các giá trị hàng.
-f) Tổng các chữ số của số 86 844 bằng bao nhiêu?
+e) Viết số 75 516 thành tổng các giá trị hàng.
+f) Tổng các chữ số của số 75 516 bằng bao nhiêu?
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
-Tính bằng cách thuận tiện nhất.
+Ghi rõ đơn vị đồng ở mọi kết quả.
 
-a) 26 + 86 + 74 + 14
-b) 32 + 286 + 68
-c) 368 + 45 − 45
-d) 82 + 334 + 18
-e) 61 + 41 − 41
+a) Mua 3 quyển vở, mỗi quyển 5 000 đồng. Hết bao nhiêu tiền?
+b) Đổi một tờ 20 000 đồng ra các tờ 5 000 đồng thì được mấy tờ?
+c) Mua 3 quyển vở, mỗi quyển 25 000 đồng. Đưa cô bán hàng một tờ 100 000 đồng. Cô phải trả lại bao nhiêu tiền?
+d) Mua 6 quyển vở, mỗi quyển 18 000 đồng. Đưa cô bán hàng một tờ 200 000 đồng. Cô phải trả lại bao nhiêu tiền?
+e) Mua 2 quyển vở, mỗi quyển 18 000 đồng. Hết bao nhiêu tiền?
+f) Đổi một tờ 10 000 đồng ra các tờ 1 000 đồng thì được mấy tờ?
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
 Vẽ sơ đồ trước, tính sau. Không vẽ thì không được tính.
 
-a) Dũng và Phúc có tất cả 50 viên bi. Dũng có nhiều hơn Phúc 12 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
-b) Yến và Hà có tất cả 60 viên bi. Yến có nhiều hơn Hà 4 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
-c) Ngọc và Quân có tất cả 142 viên bi. Ngọc có nhiều hơn Quân 12 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
-d) Thảo và Tuấn có tất cả 66 viên bi. Thảo có nhiều hơn Tuấn 4 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
-e) Hùng và Tuấn có tất cả 152 viên bi. Hùng có nhiều hơn Tuấn 2 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+a) Minh và Phúc có tất cả 44 viên bi. Minh có nhiều hơn Phúc 4 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+b) Hùng và Phúc có tất cả 182 viên bi. Hùng có nhiều hơn Phúc 44 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+c) Nam và Lan có tất cả 138 viên bi. Nam có nhiều hơn Lan 44 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+d) An và Trang có tất cả 94 viên bi. An có nhiều hơn Trang 20 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+e) Trang và Phúc có tất cả 122 viên bi. Trang có nhiều hơn Phúc 14 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
-Kẻ một bảng lịch nhỏ ra nháp rồi trả lời.
+Cho lưới gồm 2 hàng và 2 cột ô vuông nhỏ bằng nhau.
 
-a) Tháng 2 năm 2021 có bao nhiêu ngày?
-b) Năm 2021 có phải năm nhuận không?
-c) Ngày 1 tháng 2 là Thứ Ba. Hỏi ngày 20 tháng ấy là thứ mấy?
-d) Tháng ấy có bao nhiêu ngày Chủ nhật?
-e) Ngày cuối cùng của tháng là thứ mấy?
-f) Một năm thường có bao nhiêu ngày, năm nhuận có bao nhiêu ngày?
+a) Lưới có bao nhiêu ô vuông nhỏ?
+b) Lưới có bao nhiêu đường kẻ ngang, bao nhiêu đường kẻ dọc?
+c) Có tất cả bao nhiêu hình chữ nhật (kể cả hình vuông)?
+d) Có bao nhiêu hình vuông?
+e) Có bao nhiêu hình chữ nhật không phải hình vuông?
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
 Chú ý: chuyển đi thì bên này giảm, bên kia tăng.
 
-a) Quân và Phúc có tất cả 246 quyển vở. Nếu Quân cho Phúc 27 quyển thì hai bạn có số vở bằng nhau. Hỏi lúc đầu Quân có bao nhiêu quyển?
+a) Nam và Tuấn có tất cả 226 quyển vở. Nếu Nam cho Tuấn 30 quyển thì hai bạn có số vở bằng nhau. Hỏi lúc đầu Nam có bao nhiêu quyển?
 b) Sau khi cho, mỗi bạn có bao nhiêu quyển vở?
-c) Lúc đầu Phúc có bao nhiêu quyển vở?
-d) Lúc đầu Quân hơn Phúc bao nhiêu quyển?
-e) Một tổ có 6 bạn, mỗi bạn gấp được 12 bông hoa trong một giờ. Hỏi cả tổ gấp được bao nhiêu bông hoa trong một giờ?
-f) Cả tổ phải gấp 216 bông hoa thì làm trong mấy giờ?
+c) Lúc đầu Tuấn có bao nhiêu quyển vở?
+d) Lúc đầu Nam hơn Tuấn bao nhiêu quyển?
+e) Một tổ có 3 bạn, mỗi bạn gấp được 6 bông hoa trong một giờ. Hỏi cả tổ gấp được bao nhiêu bông hoa trong một giờ?
+f) Cả tổ phải gấp 54 bông hoa thì làm trong mấy giờ?
 
 
 ---
@@ -92,96 +92,97 @@ f) Cả tổ phải gấp 216 bông hoa thì làm trong mấy giờ?
 ### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
 a) **5**
-b) **4**
-c) **8**
-d) **6**
-e) **80 000 + 6 000 + 800 + 40 + 4**
-f) **30**
+b) **6**
+c) **5**
+d) **5**
+e) **70 000 + 5 000 + 500 + 10 + 6**
+f) **24**
 
 **Cách giải mẫu:**
 
 1. Đếm từ phải sang trái: đơn vị, chục, trăm, nghìn, chục nghìn.
-2. Số 86 844 có 5 chữ số.
-3. Chữ số hàng đơn vị là chữ số cuối cùng bên phải: 4.
-4. Viết thành tổng: 80 000 + 6 000 + 800 + 40 + 4.
-5. Cộng các chữ số: 8 + 6 + 8 + 4 + 4 = 30.
+2. Số 75 516 có 5 chữ số.
+3. Chữ số hàng đơn vị là chữ số cuối cùng bên phải: 6.
+4. Viết thành tổng: 70 000 + 5 000 + 500 + 10 + 6.
+5. Cộng các chữ số: 7 + 5 + 5 + 1 + 6 = 24.
 6. Đáp số ý a: **5 chữ số**.
 
 *Lỗi hay mắc:* Đếm hàng từ trái sang phải nên lệch hàng.
 
-### Bài 2, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 2, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **200**
-b) **386**
-c) **368**
-d) **434**
-e) **61**
+a) **15 000 đồng**
+b) **4 tờ**
+c) **25 000 đồng**
+d) **92 000 đồng**
+e) **36 000 đồng**
+f) **10 tờ**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 26 + 86 + 74 + 14
-2. Đọc vị: đây là dạng **Tính nhanh tổng nhiều số hạng**; dấu hiệu là Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm.
-3. Kiến thức phải dùng: Tính chất giao hoán, kết hợp của phép cộng.
-4. Cách làm: Ghép cặp tròn rồi cộng.
-5. Lối tắt: Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10.
-6. Kết quả: **200**.
+1. Xét ý a: Mua 3 quyển vở, mỗi quyển 5 000 đồng. Hết bao nhiêu tiền?
+2. Đọc vị: đây là dạng **Bài toán tiền tệ hai bước**; dấu hiệu là “Đưa … đồng”, “trả lại”, “đổi ra tờ …”.
+3. Kiến thức phải dùng: Nhân, trừ với số tròn nghìn; mệnh giá tiền Việt Nam.
+4. Cách làm: Tính tiền hàng rồi trừ; đổi tiền thì chia.
+5. Lối tắt: Thử lại bằng cách cộng tiền hàng với tiền trả lại, phải đúng bằng tiền đưa.
+6. Kết quả: **15 000 đồng**.
 
-*Lỗi hay mắc:* Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn.
+*Lỗi hay mắc:* Lấy tiền đưa trừ ngay giá một quyển vở.
 
 ### Bài 3, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **Dũng: 31 viên, Phúc: 19 viên**
-b) **Yến: 32 viên, Hà: 28 viên**
-c) **Ngọc: 77 viên, Quân: 65 viên**
-d) **Thảo: 35 viên, Tuấn: 31 viên**
-e) **Hùng: 77 viên, Tuấn: 75 viên**
+a) **Minh: 24 viên, Phúc: 20 viên**
+b) **Hùng: 113 viên, Phúc: 69 viên**
+c) **Nam: 91 viên, Lan: 47 viên**
+d) **An: 57 viên, Trang: 37 viên**
+e) **Trang: 68 viên, Phúc: 54 viên**
 
 **Cách giải mẫu:**
 
-1. Vẽ hai đoạn thẳng: đoạn của Dũng dài hơn đoạn của Phúc đúng 12 viên.
-2. Bước 1 — nếu bớt 12 viên của Dũng thì hai đoạn bằng nhau, tổng mới là 50 − 12 = 38 (viên).
-3. Bước 2 — chia đôi tổng mới được số bi của Phúc: 38 : 2 = 19 (viên).
-4. Bước 3 — số bi của Dũng: 19 + 12 = 31 (viên).
-5. Thử lại: 31 + 19 = 50 ✓ và 31 − 19 = 12 ✓
-6. Đáp số: **Dũng 31 viên, Phúc 19 viên**.
+1. Vẽ hai đoạn thẳng: đoạn của Minh dài hơn đoạn của Phúc đúng 4 viên.
+2. Bước 1 — nếu bớt 4 viên của Minh thì hai đoạn bằng nhau, tổng mới là 44 − 4 = 40 (viên).
+3. Bước 2 — chia đôi tổng mới được số bi của Phúc: 40 : 2 = 20 (viên).
+4. Bước 3 — số bi của Minh: 20 + 4 = 24 (viên).
+5. Thử lại: 24 + 20 = 44 ✓ và 24 − 20 = 4 ✓
+6. Đáp số: **Minh 24 viên, Phúc 20 viên**.
 
 *Lỗi hay mắc:* Chia đôi tổng ngay rồi cộng hiệu vào cả hai số.
 
-### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 4, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **28**
-b) **không**
-c) **Chủ nhật**
-d) **4**
-e) **Thứ Hai**
-f) **365 ngày và 366 ngày**
+a) **4**
+b) **3 đường ngang, 3 đường dọc**
+c) **9**
+d) **5**
+e) **4**
 
 **Cách giải mẫu:**
 
-1. Tháng 2 là tháng 2, nên có 28 ngày.
-2. Ngày 1 là Thứ Ba. Cứ sau 7 ngày thì lặp lại đúng thứ ấy.
-3. Từ ngày 1 đến ngày 20 cách nhau 19 ngày.
-4. 19 : 7 dư 5, nên lùi 5 bước từ Thứ Ba.
-5. Vậy ngày 20 là **Chủ nhật**.
+1. Xét ý a: Lưới có bao nhiêu ô vuông nhỏ?
+2. Đọc vị: đây là dạng **Đếm hình trong lưới**; dấu hiệu là Lưới ô vuông đều.
+3. Kiến thức phải dùng: Quy tắc đếm.
+4. Cách làm: Đếm theo đường kẻ hoặc theo cỡ.
+5. Lối tắt: Số cách chọn 2 trong k là k × (k − 1) : 2.
+6. Kết quả: **4**.
 
-*Lỗi hay mắc:* Đếm tay từng ngày nên vừa lâu vừa sai.
+*Lỗi hay mắc:* Chỉ đếm ô nhỏ, quên hình ghép từ nhiều ô.
 
 ### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **150 quyển**
-b) **123 quyển**
-c) **96 quyển**
-d) **54 quyển**
-e) **72 bông**
+a) **143 quyển**
+b) **113 quyển**
+c) **83 quyển**
+d) **60 quyển**
+e) **18 bông**
 f) **3 giờ**
 
 **Cách giải mẫu:**
 
-1. Sau khi cho, hai bạn bằng nhau, nên mỗi bạn có 246 : 2 = 123 (quyển).
-2. Quân đã cho đi 27 quyển, nên lúc đầu Quân có 123 + 27 = 150 (quyển).
-3. Lúc đầu Phúc có 246 − 150 = 96 (quyển).
-4. Hiệu lúc đầu: 150 − 96 = 54 (quyển) — đúng bằng hai lần số vở đã chuyển.
-5. Đáp số: **lúc đầu Quân có 150 quyển**.
+1. Sau khi cho, hai bạn bằng nhau, nên mỗi bạn có 226 : 2 = 113 (quyển).
+2. Nam đã cho đi 30 quyển, nên lúc đầu Nam có 113 + 30 = 143 (quyển).
+3. Lúc đầu Tuấn có 226 − 143 = 83 (quyển).
+4. Hiệu lúc đầu: 143 − 83 = 60 (quyển) — đúng bằng hai lần số vở đã chuyển.
+5. Đáp số: **lúc đầu Nam có 143 quyển**.
 
 *Lỗi hay mắc:* Cho rằng hiệu lúc đầu bằng đúng số vở đã chuyển.
 
@@ -194,9 +195,9 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài | Đo cái gì | Sai bài này nghĩa là | Học lại ở đâu |
 |:--:|---|---|---|
 | Bài 1 | Đọc, viết, cấu tạo số | Đếm hàng từ trái sang phải nên lệch hàng. | Nhóm chuyên đề **—** · mức — |
-| Bài 2 | Tính nhanh tổng nhiều số hạng | Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. | Nhóm chuyên đề **—** · mức — |
+| Bài 2 | Bài toán tiền tệ hai bước | Lấy tiền đưa trừ ngay giá một quyển vở. | Nhóm chuyên đề **—** · mức — |
 | Bài 3 | Bài toán tổng – hiệu | Chia đôi tổng ngay rồi cộng hiệu vào cả hai số. | Nhóm chuyên đề **—** · mức — |
-| Bài 4 | Lịch, tháng, năm nhuận | Đếm tay từng ngày nên vừa lâu vừa sai. | Nhóm chuyên đề **—** · mức — |
+| Bài 4 | Đếm hình trong lưới | Chỉ đếm ô nhỏ, quên hình ghép từ nhiều ô. | Nhóm chuyên đề **—** · mức — |
 | Bài 5 | Tổng – hiệu có hiệu ẩn sau một lần chuyển | Cho rằng hiệu lúc đầu bằng đúng số vở đã chuyển. | Nhóm chuyên đề **—** · mức — |
 
 ---

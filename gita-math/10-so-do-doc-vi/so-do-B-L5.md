@@ -67,6 +67,7 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 | M3 | x nằm trong ngoặc, ngoài ngoặc còn phép tính khác | Tìm x nhiều bước có ngoặc | Bóc lớp từ ngoài vào trong | Thay x tìm được vào đề, tính một lượt để thử lại. | — |
 | M3 | Các phân số cùng mẫu, tử số cộng lại tròn mẫu | Tính nhanh biểu thức phân số | Quan sát tổng tử số; nhận diện cặp phân số đảo ngược | Nếu tổng các tử số bằng mẫu số thì kết quả bằng 1, không cần tính gì thêm. | — |
 | M3 | Đề kể một **chuỗi thao tác** rồi cho kết quả cuối, hỏi số ban đầu | Tính ngược từ cuối | Vẽ sơ đồ mũi tên, đi ngược và đảo từng phép tính | Gỡ từ phải sang trái, mỗi bước một phép tính ngược — không cần đặt ẩn. | Đi ngược nhưng không đảo thứ tự |
+| M3 | Nhiều dòng hoá đơn dùng chung một đơn giá | Nhân một số với một tổng | Gom số lượng rồi nhân một lần | Chênh lệch tiền = chênh lệch số lượng × đơn giá, không cần tính tổng hai bên. | — |
 | M4 | Trong biểu thức có ngoặc chứa hai số giống nhau trừ nhau | Tính nhanh nhờ thừa số 0 | Quét tìm cụm bằng 0 trước khi tính | Nhìn dấu ngoặc trước tiên — bẫy thường nằm ở đó. | Biểu thức lớn nhưng kết quả bằng 0 |
 | M4 | Dãy cộng gồm nhiều tích cùng một thừa số | Tổng các tích có thừa số chung | Đặt thừa số chung → tính tổng trong ngoặc bằng công thức | 1 + 2 + … + 100 = 5 050; nhớ vài mốc để nhân ngay. | — |
 | M4 | Chữ x xuất hiện ở cả hai vế của dấu bằng | Tìm x xuất hiện hai vế | Trừ bớt số lần x chung rồi đưa về phép chia | Vẽ sơ đồ đoạn thẳng cho mỗi vế — nhìn ra ngay phần chênh. | — |
@@ -98,43 +99,43 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 
 Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: đây là dạng bài gì, và dấu hiệu nào cho biết điều đó.
 
-**Đề 1.** Đặt tính rồi tính. 96 650 800 : 970
+**Đề 1.** Tính bằng cách thuận tiện nhất. 1 phần 2 × 2
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 2.** Tìm x, trình bày đủ các bước. (x + 11) × 5 − 9 = 166
+**Đề 2.** Tính bằng cách nhanh nhất. 96 × 69 + 96 × 49 − 96 × (69 + 49)
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 3.** Tính bằng cách thuận tiện nhất. 8 + 9 + 2
+**Đề 3.** Đặt tính rồi tính. Ước lượng trước để tự kiểm tra. 144 841 675 : 965
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 4.** Tính bằng cách thuận tiện nhất. 86 + 81 + 14
+**Đề 4.** Tính tổng mỗi biểu thức. 7 × 1 + 7 × 2 + 7 × 3 + … + 7 × 50
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 5.** Tính tổng mỗi dãy. 1 phần 2 + 1 phần 6 + 1 phần 12 + … + 1 phần 110
+**Đề 5.** Tìm x, trình bày đủ các bước. (x × 9 − 30) × 9 = 4 023
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 6.** Tính tổng mỗi dãy. 1 + 6 + 11 + … + 496
+**Đề 6.** Tìm x, trình bày từng bước. x × 10 + 122 = 1 602
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 7.** Điền dấu <, >, = và giải thích ngắn. 235 × 17 … 235 × 18
+**Đề 7.** Vẽ sơ đồ mũi tên trước khi tính. Tính xong phải thử lại theo chiều xuôi. Em nghĩ ra một số. Lấy số ấy nhân với 3, được bao nhiêu thì cộng thêm 36, rồi chia cho 3 thì được 55. Hỏi số em nghĩ ra là số nào?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 8.** Tính giá trị của mỗi biểu thức. 100 − 20 × 3
+**Đề 8.** Tính bằng cách thuận tiện nhất. 84 + 20 + 16 + 80
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 9.** Tính nhẩm, nêu cách nhẩm. 49 × 21
+**Đề 9.** Tính hoặc so sánh bằng cách khéo nhất, không tính hết. 308 × 310 … 309 × 309
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 10.** Tính bằng cách thuận tiện nhất. 1 phần 3 + 2 phần 3
+**Đề 10.** Tính bằng cách thuận tiện nhất. 55 × 52 + 55 × 25
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
@@ -144,16 +145,16 @@ Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: 
 
 | # | Dạng bài | Dấu hiệu |
 |:--:|---|---|
-| 1 | Nhân, chia số tự nhiên | Yêu cầu “đặt tính rồi tính” với phép nhân, chia |
-| 2 | Tìm x nhiều bước có ngoặc | x nằm trong ngoặc, ngoài ngoặc còn phép tính khác |
-| 3 | Tính nhanh biểu thức số thập phân | Các số thập phân cộng lại tròn chục hoặc có thừa số chung |
-| 4 | Tính nhanh tổng nhiều số hạng | Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm |
-| 5 | Tổng dãy phân số có mẫu là tích hai số liên tiếp | Mẫu số là 2, 6, 12, 20, 30… (tích hai số liên tiếp) |
-| 6 | Tổng dãy số cách đều | Dãy cộng có dấu … và các số cách đều nhau |
-| 7 | So sánh biểu thức không tính giá trị | Hai vế có chung một số hạng hoặc một thừa số |
-| 8 | Tính giá trị biểu thức số | Biểu thức có nhiều phép tính, có thể có ngoặc |
-| 9 | Nhân nhẩm nhờ tách thừa số | Thừa số là 9, 11, 19, 21, 99, 101… |
-| 10 | Tính nhanh biểu thức phân số | Các phân số cùng mẫu, tử số cộng lại tròn mẫu |
+| 1 | Tính nhanh biểu thức phân số | Các phân số cùng mẫu, tử số cộng lại tròn mẫu |
+| 2 | Tính nhanh nhờ thừa số 0 | Trong biểu thức có ngoặc chứa hai số giống nhau trừ nhau |
+| 3 | Bốn phép tính với số tự nhiên | Yêu cầu “đặt tính rồi tính” |
+| 4 | Tổng các tích có thừa số chung | Dãy cộng gồm nhiều tích cùng một thừa số |
+| 5 | Tìm x nhiều bước có ngoặc | x nằm trong ngoặc, ngoài ngoặc còn phép tính khác |
+| 6 | Tìm x qua hai bước | x nằm trong một cụm có hai phép tính |
+| 7 | Tính ngược từ cuối | Đề kể một **chuỗi thao tác** rồi cho kết quả cuối, hỏi số ban đầu |
+| 8 | Tính nhanh tổng nhiều số hạng | Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm |
+| 9 | Tính, so sánh tích bằng kĩ thuật tách – bù | Các thừa số hơn kém nhau rất ít |
+| 10 | Tính nhanh nhờ thừa số chung | Hai tích cộng hoặc trừ nhau, có chung một thừa số |
 
 ---
 

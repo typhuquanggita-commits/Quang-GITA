@@ -30,55 +30,55 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Đặt tính rồi tính. Ước lượng trước để tự kiểm tra.
 
-a) 4 286 191 : 481
-b) 10 292 + 560 678
-c) 87 804 × 23
-d) 416 659 − 385 687
-e) 573 496 + 448 582
+a) 188 309 625 : 805
+b) 979 491 − 69 944
+c) 492 568 + 408 282
+d) 605 020 × 287
+e) 316 522 728 : 354
+f) 666 317 × 201
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
 Tính bằng cách thuận tiện nhất.
 
-a) 57 + 353 + 43
-b) 17 + 343 + 83
-c) 29 + 398 + 71
-d) 74 + 314 + 26
-e) 53 + 199 + 47
+a) 89 + 43 + 11 + 57
+b) 55 + 54 + 45 + 46
+c) 36 + 41 + 64 + 59
+d) 240 + 88 − 88
+e) 385 + 56 − 56
+f) 43 + 86 + 57 + 14
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
 Giải từng bài toán nhỏ.
 
-a) Trung bình mỗi ngày bán được 184 kg gạo. Hỏi 3 ngày bán được tất cả bao nhiêu ki-lô-gam?
-b) Trung bình mỗi ngày cửa hàng bán được 40 kg gạo. 4 ngày đầu bán được 50, 34, 37, 51 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
-c) Trung bình mỗi ngày cửa hàng bán được 232 kg gạo. 4 ngày đầu bán được 233, 233, 238, 222 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
-d) Trung bình mỗi ngày cửa hàng bán được 26 kg gạo. 3 ngày đầu bán được 20, 38, 18 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
+a) Trung bình mỗi ngày bán được 61 kg gạo. Hỏi 6 ngày bán được tất cả bao nhiêu ki-lô-gam?
+b) 5 ngày đầu tuần một cửa hàng bán được lần lượt 268, 284, 275, 289, 279 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
+c) Trung bình mỗi ngày cửa hàng bán được 212 kg gạo. 3 ngày đầu bán được 223, 200, 209 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
+d) Trung bình mỗi ngày bán được 84 kg gạo. Hỏi 4 ngày bán được tất cả bao nhiêu ki-lô-gam?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
 Ghi kết quả theo giờ và phút.
 
-a) Một chuyến tàu khởi hành lúc 6 giờ 20 phút và đi hết 3 giờ 24 phút. Tàu đến nơi lúc mấy giờ?
-b) Một chuyến tàu khởi hành lúc 10 giờ 10 phút và đi hết 4 giờ 44 phút. Tàu đến nơi lúc mấy giờ?
-c) Một chuyến tàu khởi hành lúc 5 giờ 45 phút và đi hết 5 giờ 41 phút. Tàu đến nơi lúc mấy giờ?
-d) Một chuyến tàu khởi hành lúc 9 giờ 20 phút và đi hết 56 phút. Tàu đến nơi lúc mấy giờ?
-e) Một chuyến tàu khởi hành lúc 8 giờ 30 phút và đi hết 2 giờ 51 phút. Tàu đến nơi lúc mấy giờ?
-f) Một chuyến tàu khởi hành lúc 9 giờ 0 phút và đi hết 6 giờ 9 phút. Tàu đến nơi lúc mấy giờ?
+a) Một chuyến tàu khởi hành lúc 13 giờ 20 phút và đi hết 1 giờ 56 phút. Tàu đến nơi lúc mấy giờ?
+b) Một chuyến tàu khởi hành lúc 6 giờ 0 phút và đi hết 48 phút. Tàu đến nơi lúc mấy giờ?
+c) Một chuyến tàu khởi hành lúc 11 giờ 20 phút và đi hết 5 giờ 2 phút. Tàu đến nơi lúc mấy giờ?
+d) Một chuyến tàu khởi hành lúc 13 giờ 50 phút và đi hết 5 giờ 13 phút. Tàu đến nơi lúc mấy giờ?
+e) Một chuyến tàu khởi hành lúc 5 giờ 20 phút và đi hết 5 giờ 15 phút. Tàu đến nơi lúc mấy giờ?
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
-Dùng phương pháp giả thiết tạm.
+Câu nào cũng phải quy về **một đơn vị thời gian** hoặc **một người** trước khi tính.
 
-a) Vừa gà vừa chó có 68 con, đếm được tất cả 216 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
-b) Vừa gà vừa chó có 41 con, đếm được tất cả 108 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
-c) Vừa gà vừa chó có 25 con, đếm được tất cả 88 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
-d) Vừa gà vừa chó có 45 con, đếm được tất cả 126 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
-e) Vừa gà vừa chó có 18 con, đếm được tất cả 44 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
+a) Vòi thứ nhất chảy một mình thì đầy bể sau 6 giờ. Vòi thứ hai chảy một mình thì đầy bể sau 3 giờ. Hỏi mở cả hai vòi cùng lúc thì sau bao lâu đầy bể?
+b) 11 người làm xong một công việc trong 18 ngày. Hỏi 2 người làm xong công việc ấy trong bao nhiêu ngày, biết sức làm của mỗi người như nhau?
+c) Vòi thứ nhất chảy một mình thì đầy bể sau 12 giờ. Vòi thứ hai chảy một mình thì đầy bể sau 4 giờ. Hỏi mở cả hai vòi cùng lúc thì sau bao lâu đầy bể?
+d) 5 người làm xong một công việc trong 14 ngày. Hỏi 2 người làm xong công việc ấy trong bao nhiêu ngày, biết sức làm của mỗi người như nhau?
 
 
 ---
@@ -86,100 +86,99 @@ e) Vừa gà vừa chó có 18 con, đếm được tất cả 44 chân. Hỏi c
 ## ĐÁP ÁN VÀ BIỂU ĐIỂM
 
 
-### Bài 1, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **8 911**
-b) **570 970**
-c) **2 019 492**
-d) **30 972**
-e) **1 022 078**
+a) **233 925**
+b) **909 547**
+c) **900 850**
+d) **173 640 740**
+e) **894 132**
+f) **133 929 717**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 4 286 191 : 481
+1. Xét ý a: 188 309 625 : 805
 2. Đọc vị: đây là dạng **Bốn phép tính với số tự nhiên**; dấu hiệu là Yêu cầu “đặt tính rồi tính”.
 3. Kiến thức phải dùng: Kĩ thuật đặt tính cộng, trừ, nhân, chia.
 4. Cách làm: Đặt tính thẳng cột, tính từ hàng đơn vị.
 5. Lối tắt: Ước lượng bằng cách làm tròn để phát hiện sai sót về độ lớn.
-6. Kết quả: **8 911**.
+6. Kết quả: **233 925**.
 
 *Lỗi hay mắc:* Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số.
 
-### Bài 2, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 2, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **453**
-b) **443**
-c) **498**
-d) **414**
-e) **299**
+a) **200**
+b) **200**
+c) **200**
+d) **240**
+e) **385**
+f) **200**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 57 + 353 + 43
+1. Xét ý a: 89 + 43 + 11 + 57
 2. Đọc vị: đây là dạng **Tính nhanh tổng nhiều số hạng**; dấu hiệu là Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm.
 3. Kiến thức phải dùng: Tính chất giao hoán, kết hợp của phép cộng.
 4. Cách làm: Ghép cặp tròn rồi cộng.
 5. Lối tắt: Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10.
-6. Kết quả: **453**.
+6. Kết quả: **200**.
 
 *Lỗi hay mắc:* Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn.
 
 ### Bài 3, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **552 kg**
-b) **28 kg**
-c) **234 kg**
-d) **28 kg**
+a) **366 kg**
+b) **279 kg**
+c) **216 kg**
+d) **336 kg**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Trung bình mỗi ngày bán được 184 kg gạo. Hỏi 3 ngày bán được tất cả bao nhiêu ki-lô-gam?
+1. Xét ý a: Trung bình mỗi ngày bán được 61 kg gạo. Hỏi 6 ngày bán được tất cả bao nhiêu ki-lô-gam?
 2. Đọc vị: đây là dạng **Ba dạng bài trung bình cộng**; dấu hiệu là Cụm “trung bình mỗi …”.
 3. Kiến thức phải dùng: Quan hệ tổng – số lượng – trung bình cộng.
 4. Cách làm: Đi qua tổng làm trung gian.
 5. Lối tắt: Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng.
-6. Kết quả: **552 kg**.
+6. Kết quả: **366 kg**.
 
 *Lỗi hay mắc:* Đi tìm ngay số còn thiếu mà chưa tính tổng.
 
-### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 4, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **9 giờ 44 phút**
-b) **14 giờ 54 phút**
-c) **11 giờ 26 phút**
-d) **10 giờ 16 phút**
-e) **11 giờ 21 phút**
-f) **15 giờ 9 phút**
+a) **15 giờ 16 phút**
+b) **6 giờ 48 phút**
+c) **16 giờ 22 phút**
+d) **19 giờ 3 phút**
+e) **10 giờ 35 phút**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Một chuyến tàu khởi hành lúc 6 giờ 20 phút và đi hết 3 giờ 24 phút. Tàu đến nơi lúc mấy giờ?
+1. Xét ý a: Một chuyến tàu khởi hành lúc 13 giờ 20 phút và đi hết 1 giờ 56 phút. Tàu đến nơi lúc mấy giờ?
 2. Đọc vị: đây là dạng **Tính thời điểm trong ngày**; dấu hiệu là Cho thời điểm bắt đầu và khoảng thời gian.
 3. Kiến thức phải dùng: Quan hệ giờ – phút, phép chia có dư.
 4. Cách làm: Quy về phút, cộng trừ, đổi lại.
 5. Lối tắt: Cộng tròn giờ trước rồi cộng phần phút lẻ sau.
-6. Kết quả: **9 giờ 44 phút**.
+6. Kết quả: **15 giờ 16 phút**.
 
 *Lỗi hay mắc:* Cộng phần phút thành hơn 60 mà quên đổi thành giờ.
 
-### Bài 5, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 5, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **28 con gà, 40 con chó**
-b) **28 con gà, 13 con chó**
-c) **6 con gà, 19 con chó**
-d) **27 con gà, 18 con chó**
-e) **14 con gà, 4 con chó**
+a) **2 giờ**
+b) **99 ngày**
+c) **3 giờ**
+d) **35 ngày**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Vừa gà vừa chó có 68 con, đếm được tất cả 216 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
-2. Đọc vị: đây là dạng **Giả thiết tạm**; dấu hiệu là Hai loại đối tượng, biết tổng số và tổng của một đại lượng khác.
-3. Kiến thức phải dùng: Phương pháp giả thiết tạm.
-4. Cách làm: Giả sử đồng nhất một loại → tính phần chênh → chia cho hiệu đơn vị.
-5. Lối tắt: Số chó = (số chân − 2 × số con) : 2 — thuộc công thức rút gọn để nhẩm.
-6. Kết quả: **28 con gà, 40 con chó**.
+1. Không được cộng hai khoảng thời gian, cũng không được lấy trung bình. Phải **rút về đơn vị**: xét trong một giờ.
+2. Một giờ vòi thứ nhất chảy được 1 phần 6 bể.
+3. Một giờ vòi thứ hai chảy được 1 phần 3 bể.
+4. Một giờ cả hai vòi chảy được 1 phần 6 + 1 phần 3 = 1 phần 2 (bể).
+5. Thời gian đầy bể: 1 : 1 phần 2 = **2 giờ**.
 
-*Lỗi hay mắc:* Chia số chân thiếu cho 4 thay vì cho hiệu số chân của hai loài.
+*Lỗi hay mắc:* Cộng hai khoảng thời gian của hai vòi, hoặc nhân thẳng số người với số ngày theo kiểu tỉ lệ thuận.
 
 ---
 
@@ -193,7 +192,7 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài 2 | Tính nhanh tổng nhiều số hạng | Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. | Nhóm chuyên đề **—** · mức — |
 | Bài 3 | Ba dạng bài trung bình cộng | Đi tìm ngay số còn thiếu mà chưa tính tổng. | Nhóm chuyên đề **—** · mức — |
 | Bài 4 | Tính thời điểm trong ngày | Cộng phần phút thành hơn 60 mà quên đổi thành giờ. | Nhóm chuyên đề **—** · mức — |
-| Bài 5 | Giả thiết tạm | Chia số chân thiếu cho 4 thay vì cho hiệu số chân của hai loài. | Nhóm chuyên đề **—** · mức — |
+| Bài 5 | Rút về đơn vị | Cộng hai khoảng thời gian của hai vòi, hoặc nhân thẳng số người với số ngày theo kiểu tỉ lệ thuận. | Nhóm chuyên đề **—** · mức — |
 
 ---
 

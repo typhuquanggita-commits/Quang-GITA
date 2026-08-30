@@ -52,17 +52,19 @@ Học thuộc theo cặp **dạng bài – công thức**, không học rời.
 
 | # | Dùng cho dạng bài | Công thức hoặc quy tắc |
 |---:|---|---|
-| 1 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu |
-| 2 | Rút gọn phân số | Tính chất cơ bản của phân số |
-| 3 | Đọc và lập biểu đồ tranh | Biểu đồ tranh, phép nhân và chia |
-| 4 | Rút gọn, so sánh, sắp thứ tự phân số | Tính chất cơ bản của phân số; so sánh phân số |
-| 5 | Dãy phân số, so sánh bằng phần bù | Phần bù tới 1; quy luật dãy phân số |
+| 1 | Đọc biểu đồ cột | Đọc biểu đồ; trung bình cộng; so sánh số |
+| 2 | So sánh phân số bằng kĩ thuật đặc biệt | Phần bù tới 1, phân số trung gian |
+| 3 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu |
+| 4 | Đọc và lập biểu đồ tranh | Biểu đồ tranh, phép nhân và chia |
+| 5 | Rút gọn phân số | Tính chất cơ bản của phân số |
 | 6 | Bốn phép tính với phân số | Quy đồng, nhân chia phân số |
-| 7 | Tìm phân số của một số | Nhân số tự nhiên với phân số |
-| 8 | Đọc bảng số liệu thống kê | Thống kê mô tả sơ cấp, trung bình cộng, tỉ số phần trăm |
-| 9 | So sánh phân số bằng kĩ thuật đặc biệt | Phần bù tới 1, phân số trung gian |
-| 10 | Biểu thức phân số nhiều phép tính | Thứ tự thực hiện phép tính, tính chất phân phối |
+| 7 | Biểu thức phân số nhiều phép tính | Thứ tự thực hiện phép tính, tính chất phân phối |
+| 8 | Đọc bảng số liệu thống kê | Đọc bảng; cộng trừ trong phạm vi 100 |
+| 9 | Tìm phân số của một số | Nhân số tự nhiên với phân số |
+| 10 | Rút gọn, so sánh, sắp thứ tự phân số | Tính chất cơ bản của phân số; so sánh phân số |
 | 11 | Biểu đồ Ven | Phép cộng, phép trừ; đếm không trùng lặp |
+| 12 | Đọc bảng số liệu thống kê | Thống kê mô tả sơ cấp, trung bình cộng, tỉ số phần trăm |
+| 13 | Dãy phân số, so sánh bằng phần bù | Phần bù tới 1; quy luật dãy phân số |
 
 ---
 
@@ -86,17 +88,18 @@ Trước khi tra bảng, đi qua cây quyết định đọc vị của nhóm ch
 
 | Dạng bài | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất |
 |---|---|---|---|
-| So sánh phân số | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. |
-| Rút gọn phân số | Tử số và mẫu số có ước chung lớn hơn 1 | Chia cả tử và mẫu cho ước chung | Tìm ngay ước chung lớn nhất để rút gọn một lần là xong. |
-| Đọc và lập biểu đồ tranh | Có hình vẽ lặp lại kèm một dòng chú thích | Đọc chú thích → nhân số hình với đơn vị | Nếu mọi bạn đều dùng cùng một loại hình thì so số hình là đủ để biết ai nhiều nhất. |
-| Rút gọn, so sánh, sắp thứ tự phân số | Một nhóm phân số cần sắp thứ tự | Rút gọn → so cùng mẫu hoặc quy đồng | So với 1 và với một nửa trước — nhiều phân số phân loại được ngay. |
-| Dãy phân số, so sánh bằng phần bù | Tử và mẫu hơn kém nhau đúng 1 đơn vị | Xét phần bù tới 1 rồi so sánh | n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. |
-| Bốn phép tính với phân số | Biểu thức chỉ gồm phân số | Chọn quy tắc theo phép tính, rút gọn cuối cùng | Rút gọn chéo trước khi nhân để số nhỏ, tính nhanh và ít sai. |
-| Tìm phân số của một số | Cụm “bằng … của …” | Chia theo mẫu số rồi nhân theo tử số | Chia trước, nhân sau — số nhỏ hơn nên tính nhẩm được. |
-| Đọc bảng số liệu thống kê | Đề cho bảng hoặc biểu đồ kèm nhiều câu hỏi | Ghi lại số liệu, trả lời từng câu bằng công cụ tương ứng | Tính tổng một lần rồi dùng lại cho mọi câu hỏi phần trăm. |
+| Đọc biểu đồ cột | Biểu đồ có chú thích tỉ lệ, mỗi ô thay cho nhiều đơn vị | Đổi biểu đồ về dãy số rồi làm như bài số liệu thường | Ghi cả dãy số ra nháp một lần, mọi câu sau đều dùng lại dãy ấy. |
 | So sánh phân số bằng kĩ thuật đặc biệt | Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 | So phần bù; hoặc chèn phân số trung gian | Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. |
+| So sánh phân số | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. |
+| Đọc và lập biểu đồ tranh | Có hình vẽ lặp lại kèm một dòng chú thích | Đọc chú thích → nhân số hình với đơn vị | Nếu mọi bạn đều dùng cùng một loại hình thì so số hình là đủ để biết ai nhiều nhất. |
+| Rút gọn phân số | Tử số và mẫu số có ước chung lớn hơn 1 | Chia cả tử và mẫu cho ước chung | Tìm ngay ước chung lớn nhất để rút gọn một lần là xong. |
+| Bốn phép tính với phân số | Biểu thức chỉ gồm phân số | Chọn quy tắc theo phép tính, rút gọn cuối cùng | Rút gọn chéo trước khi nhân để số nhỏ, tính nhanh và ít sai. |
 | Biểu thức phân số nhiều phép tính | Biểu thức gồm nhiều phân số và nhiều phép tính | Quan sát rút gọn trước, sau đó theo thứ tự thực hiện | Rút gọn chéo tử với mẫu trước khi nhân. |
+| Đọc bảng số liệu thống kê | Một bảng hai chiều: hàng là nhóm, cột là loại số liệu | Cộng theo hàng cho từng nhóm, cộng theo cột cho toàn bộ | Tổng theo hàng và tổng theo cột luôn bằng nhau, dùng để soát lại. |
+| Tìm phân số của một số | Cụm “bằng … của …” | Chia theo mẫu số rồi nhân theo tử số | Chia trước, nhân sau — số nhỏ hơn nên tính nhẩm được. |
+| Rút gọn, so sánh, sắp thứ tự phân số | Một nhóm phân số cần sắp thứ tự | Rút gọn → so cùng mẫu hoặc quy đồng | So với 1 và với một nửa trước — nhiều phân số phân loại được ngay. |
 | Biểu đồ Ven | Đề cho số người của từng nhóm **và** số người thuộc cả hai nhóm | Vẽ hai vòng tròn, điền phần chung trước rồi mới trừ ra phần riêng | Số người ít nhất một nhóm = nhóm A + nhóm B − phần chung. |
+| Dãy phân số, so sánh bằng phần bù | Tử và mẫu hơn kém nhau đúng 1 đơn vị | Xét phần bù tới 1 rồi so sánh | n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. |
 
 ---
 
@@ -115,26 +118,26 @@ Trước khi tra bảng, đi qua cây quyết định đọc vị của nhóm ch
 
 Trả lời được ngay trong 10 giây thì đánh ✔. Phải nghĩ lâu thì đánh ✘ và làm lại phần tương ứng.
 
-- [ ] **1.** Em nêu được dấu hiệu nhận biết của dạng “So sánh phân số” chứ?
-- [ ] **2.** Em nhớ công thức: Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu?
-- [ ] **3.** Em nêu được dấu hiệu nhận biết của dạng “Rút gọn phân số” chứ?
-- [ ] **4.** Em nhớ công thức: Tính chất cơ bản của phân số?
-- [ ] **5.** Em nêu được dấu hiệu nhận biết của dạng “Đọc và lập biểu đồ tranh” chứ?
-- [ ] **6.** Em nhớ công thức: Biểu đồ tranh, phép nhân và chia?
-- [ ] **7.** Em nêu được dấu hiệu nhận biết của dạng “Rút gọn, so sánh, sắp thứ tự phân số” chứ?
-- [ ] **8.** Em nhớ công thức: Tính chất cơ bản của phân số; so sánh phân số?
-- [ ] **9.** Em nêu được dấu hiệu nhận biết của dạng “Dãy phân số, so sánh bằng phần bù” chứ?
-- [ ] **10.** Em nhớ công thức: Phần bù tới 1; quy luật dãy phân số?
+- [ ] **1.** Em nêu được dấu hiệu nhận biết của dạng “Đọc biểu đồ cột” chứ?
+- [ ] **2.** Em nhớ công thức: Đọc biểu đồ; trung bình cộng; so sánh số?
+- [ ] **3.** Em nêu được dấu hiệu nhận biết của dạng “So sánh phân số bằng kĩ thuật đặc biệt” chứ?
+- [ ] **4.** Em nhớ công thức: Phần bù tới 1, phân số trung gian?
+- [ ] **5.** Em nêu được dấu hiệu nhận biết của dạng “So sánh phân số” chứ?
+- [ ] **6.** Em nhớ công thức: Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu?
+- [ ] **7.** Em nêu được dấu hiệu nhận biết của dạng “Đọc và lập biểu đồ tranh” chứ?
+- [ ] **8.** Em nhớ công thức: Biểu đồ tranh, phép nhân và chia?
+- [ ] **9.** Em nêu được dấu hiệu nhận biết của dạng “Rút gọn phân số” chứ?
+- [ ] **10.** Em nhớ công thức: Tính chất cơ bản của phân số?
 - [ ] **11.** Em nêu được dấu hiệu nhận biết của dạng “Bốn phép tính với phân số” chứ?
 - [ ] **12.** Em nhớ công thức: Quy đồng, nhân chia phân số?
-- [ ] **13.** Em nêu được dấu hiệu nhận biết của dạng “Tìm phân số của một số” chứ?
-- [ ] **14.** Em nhớ công thức: Nhân số tự nhiên với phân số?
+- [ ] **13.** Em nêu được dấu hiệu nhận biết của dạng “Biểu thức phân số nhiều phép tính” chứ?
+- [ ] **14.** Em nhớ công thức: Thứ tự thực hiện phép tính, tính chất phân phối?
 - [ ] **15.** Em nêu được dấu hiệu nhận biết của dạng “Đọc bảng số liệu thống kê” chứ?
-- [ ] **16.** Em nhớ công thức: Thống kê mô tả sơ cấp, trung bình cộng, tỉ số phần trăm?
-- [ ] **17.** Em nêu được dấu hiệu nhận biết của dạng “So sánh phân số bằng kĩ thuật đặc biệt” chứ?
-- [ ] **18.** Em nhớ công thức: Phần bù tới 1, phân số trung gian?
-- [ ] **19.** Em nêu được dấu hiệu nhận biết của dạng “Biểu thức phân số nhiều phép tính” chứ?
-- [ ] **20.** Em nhớ công thức: Thứ tự thực hiện phép tính, tính chất phân phối?
+- [ ] **16.** Em nhớ công thức: Đọc bảng; cộng trừ trong phạm vi 100?
+- [ ] **17.** Em nêu được dấu hiệu nhận biết của dạng “Tìm phân số của một số” chứ?
+- [ ] **18.** Em nhớ công thức: Nhân số tự nhiên với phân số?
+- [ ] **19.** Em nêu được dấu hiệu nhận biết của dạng “Rút gọn, so sánh, sắp thứ tự phân số” chứ?
+- [ ] **20.** Em nhớ công thức: Tính chất cơ bản của phân số; so sánh phân số?
 
 **Chuẩn đạt:** ✔ từ 18/20 câu trở lên.
 
@@ -146,16 +149,18 @@ Trả lời được ngay trong 10 giây thì đánh ✔. Phải nghĩ lâu thì
 
 | # | Lỗi thường gặp | Cách phòng |
 |---:|---|---|
-| 1 | Thấy mẫu số lớn thì kết luận phân số lớn. | Nghĩ tới chiếc bánh: chia càng nhiều phần thì mỗi phần càng bé. |
-| 2 | Chỉ chia tử số hoặc chỉ chia mẫu số. | Viết phép chia cho cả hai dòng, kiểm tra lại bằng cách nhân ngược. |
-| 3 | Đếm số hình rồi trả lời luôn, quên nhân với số đơn vị mỗi hình. | Khoanh tròn dòng chú thích trước khi trả lời bất kỳ câu nào. |
-| 4 | Rút gọn xong quên rằng thứ tự vẫn giữ nguyên, đi quy đồng lại từ đầu. | Ghi cả phân số gốc và phân số tối giản cạnh nhau để đối chiếu. |
-| 5 | So phần bù rồi kết luận cùng chiều với phần bù. | Nghĩ tới chiếc bánh: thiếu ít hơn thì phần đang có nhiều hơn. |
+| 1 | Đếm số ô rồi trả lời luôn, quên nhân với giá trị mỗi ô. | Khoanh tròn dòng chú thích trước khi nhìn vào cột nào. |
+| 2 | So phần bù rồi kết luận cùng chiều với phần bù. | Nghĩ tới chiếc bánh: thiếu ít hơn thì phần đang có nhiều hơn. |
+| 3 | Thấy mẫu số lớn thì kết luận phân số lớn. | Nghĩ tới chiếc bánh: chia càng nhiều phần thì mỗi phần càng bé. |
+| 4 | Đếm số hình rồi trả lời luôn, quên nhân với số đơn vị mỗi hình. | Khoanh tròn dòng chú thích trước khi trả lời bất kỳ câu nào. |
+| 5 | Chỉ chia tử số hoặc chỉ chia mẫu số. | Viết phép chia cho cả hai dòng, kiểm tra lại bằng cách nhân ngược. |
 | 6 | Quy đồng cả khi nhân, hoặc cộng thẳng tử với tử và mẫu với mẫu. | Trước khi tính, khoanh dấu phép tính và tự nhắc “có phải quy đồng không”. |
-| 7 | Nhân phân số với đại lượng khác, không phải đại lượng đề chỉ định. | Gạch chân cụm “bằng … số cây của …” để xác định số bị nhân. |
-| 8 | Đọc nhầm cột, hoặc quên một môn khi cộng tổng. | Đánh dấu từng số đã cộng để không sót và không cộng lặp. |
-| 9 | Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. | Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút. |
-| 10 | Lấy tổng trừ đi tổng hai con số đề cho mà không cộng lại phần chung. | Vẽ hình trước, điền phần giữa trước, rồi mới điền hai bên. |
+| 7 | Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. | Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút. |
+| 8 | Đọc nhầm cột, lấy số bạn nữ trả lời câu hỏi về bạn nam. | Lấy ngón tay dò theo hàng, đọc tên cột trước khi lấy số. |
+| 9 | Nhân phân số với đại lượng khác, không phải đại lượng đề chỉ định. | Gạch chân cụm “bằng … số cây của …” để xác định số bị nhân. |
+| 10 | Rút gọn xong quên rằng thứ tự vẫn giữ nguyên, đi quy đồng lại từ đầu. | Ghi cả phân số gốc và phân số tối giản cạnh nhau để đối chiếu. |
+| 11 | Lấy tổng trừ đi tổng hai con số đề cho mà không cộng lại phần chung. | Vẽ hình trước, điền phần giữa trước, rồi mới điền hai bên. |
+| 12 | Đọc nhầm cột, hoặc quên một môn khi cộng tổng. | Đánh dấu từng số đã cộng để không sót và không cộng lặp. |
 
 ---
 

@@ -30,42 +30,40 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Đặt tính rồi tính.
 
-a) 88 478 + 71 099
-b) 58 855 − 29 560
-c) 63 705 − 31 175
-d) 54 792 + 74 395
-e) 19 020 + 33 457
+a) 96 266 − 85 738
+b) 61 660 − 49 564
+c) 39 022 − 5 036
+d) 79 080 − 11 496
+e) 40 761 + 11 132
+f) 25 752 − 9 888
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
-Tính bằng cách thuận tiện nhất.
+Tìm x, trình bày từng bước.
 
-a) 41 + 147 + 59
-b) 24 + 302 + 76
-c) 74 + 88 + 26 + 12
-d) 82 + 60 + 18 + 40
-e) 84 + 371 + 16
-f) 171 + 43 − 43
+a) x × 2 + 185 = 479
+b) 879 − x × 10 = 249
+c) 1 960 − x × 12 = 292
+d) x × 6 − 253 = 569
+e) x × 2 − 17 = 251
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
-Tóm tắt bằng sơ đồ đoạn thẳng rồi giải.
+Giải bằng cách rút về đơn vị hoặc dùng tỉ số.
 
-a) Hai lớp 4A và 4B có tất cả 758 quyển sách. Lớp 4A có nhiều hơn lớp 4B 80 quyển. Mỗi lớp có bao nhiêu quyển?
-b) Nhóm Sao Mai và tổ Ba trồng được 302 cây. Nhóm Sao Mai trồng nhiều hơn tổ Ba 56 cây. Mỗi tổ trồng bao nhiêu cây?
-c) Trang trại và kho B chứa tất cả 504 kg đường. Trang trại chứa nhiều hơn kho B 134 kg. Mỗi nơi chứa bao nhiêu kg?
-d) Xưởng và cửa hàng chứa tất cả 366 kg muối. Xưởng chứa nhiều hơn cửa hàng 50 kg. Mỗi nơi chứa bao nhiêu kg?
-e) Hai lớp 4C và 4A có tất cả 328 quyển sách. Lớp 4C có nhiều hơn lớp 4A 98 quyển. Mỗi lớp có bao nhiêu quyển?
-f) Nhóm Sao Mai và tổ Ba trồng được 84 cây. Nhóm Sao Mai trồng nhiều hơn tổ Ba 4 cây. Mỗi tổ trồng bao nhiêu cây?
+a) Mua 13 quyển vở hết 52 nghìn đồng. Với 76 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+b) Mua 13 quyển vở hết 390 nghìn đồng. Với 120 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+c) Mua 12 quyển vở hết 852 nghìn đồng. Mua 6 quyển vở như thế hết bao nhiêu nghìn đồng?
+d) Mua 6 quyển vở hết 318 nghìn đồng. Mua 17 quyển vở như thế hết bao nhiêu nghìn đồng?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
 Vẽ hình và kẻ lưới ra nháp.
 
-a) Một hình chữ nhật 6 cm × 2 cm được phủ kín bằng các hình vuông cạnh 2 cm. Cần bao nhiêu hình vuông?
+a) Một hình chữ nhật 12 cm × 10 cm được phủ kín bằng các hình vuông cạnh 2 cm. Cần bao nhiêu hình vuông?
 b) Diện tích hình chữ nhật ấy bằng bao nhiêu?
 c) Diện tích mỗi hình vuông nhỏ bằng bao nhiêu?
 d) Chia hình chữ nhật ấy thành 2 phần bằng nhau thì mỗi phần có diện tích bao nhiêu?
@@ -75,12 +73,14 @@ f) Nếu ghép hai hình chữ nhật ấy theo chiều dài thì hình mới c�
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
-Tính rồi so sánh hai phương án.
+Đổi hết về ki-lô-gam trước khi tính.
 
-a) 3 người làm xong một công việc trong 20 ngày. Nếu có thêm 5 người nữa (làm khoẻ như nhau) thì công việc đó hoàn thành sớm hơn bao nhiêu ngày?
-b) 11 người làm xong một công việc trong 18 ngày. Nếu có thêm 3 người nữa (làm khoẻ như nhau) thì công việc đó hoàn thành sớm hơn bao nhiêu ngày?
-c) 5 người làm xong một công việc trong 10 ngày. Nếu có thêm 1 người nữa (làm khoẻ như nhau) thì công việc đó hoàn thành sớm hơn bao nhiêu ngày?
-d) 7 người làm xong một công việc trong 6 ngày. Nếu có thêm 6 người nữa (làm khoẻ như nhau) thì công việc đó hoàn thành sớm hơn bao nhiêu ngày?
+a) Một kho chứa 5 tấn 9 tạ 85 kg thóc. Đổi ra ki-lô-gam.
+b) Số thóc ấy nặng bao nhiêu tạ và bao nhiêu ki-lô-gam?
+c) Chở đều bằng 5 xe thì mỗi xe chở bao nhiêu ki-lô-gam, còn thừa bao nhiêu?
+d) Nếu mỗi xe chỉ chở được 1 tấn thì cần ít nhất bao nhiêu xe?
+e) Bán 2 992 kg thì còn lại bao nhiêu tạ và ki-lô-gam?
+f) Vì sao ở ý d phải làm tròn lên chứ không làm tròn xuống?
 
 
 ---
@@ -88,101 +88,100 @@ d) 7 người làm xong một công việc trong 6 ngày. Nếu có thêm 6 ngư
 ## ĐÁP ÁN VÀ BIỂU ĐIỂM
 
 
-### Bài 1, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **159 577**
-b) **29 295**
-c) **32 530**
-d) **129 187**
-e) **52 477**
+a) **10 528**
+b) **12 096**
+c) **33 986**
+d) **67 584**
+e) **51 893**
+f) **15 864**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 88 478 + 71 099
+1. Xét ý a: 96 266 − 85 738
 2. Đọc vị: đây là dạng **Cộng, trừ số tự nhiên**; dấu hiệu là Yêu cầu “đặt tính rồi tính”.
 3. Kiến thức phải dùng: Kĩ thuật đặt tính, nhớ và mượn.
 4. Cách làm: Đặt tính thẳng hàng, tính từ hàng đơn vị.
 5. Lối tắt: Làm tròn một số hạng để ước lượng trước, dùng kết quả ước lượng để phát hiện sai sót.
-6. Kết quả: **159 577**.
+6. Kết quả: **10 528**.
 
 *Lỗi hay mắc:* Viết lệch hàng khi hai số có số chữ số khác nhau.
 
-### Bài 2, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 2, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **247**
-b) **402**
-c) **200**
-d) **200**
-e) **471**
-f) **171**
-
-**Cách giải mẫu:**
-
-1. Xét ý a: 41 + 147 + 59
-2. Đọc vị: đây là dạng **Tính nhanh tổng nhiều số hạng**; dấu hiệu là Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm.
-3. Kiến thức phải dùng: Tính chất giao hoán, kết hợp của phép cộng.
-4. Cách làm: Ghép cặp tròn rồi cộng.
-5. Lối tắt: Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10.
-6. Kết quả: **247**.
-
-*Lỗi hay mắc:* Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn.
-
-### Bài 3, (2 điểm — mỗi ý 0,33 điểm)
-
-a) **4A: 419 quyển, 4B: 339 quyển**
-b) **nhóm Sao Mai: 179 cây, tổ Ba: 123 cây**
-c) **trang trại: 319 kg, kho B: 185 kg**
-d) **xưởng: 208 kg, cửa hàng: 158 kg**
-e) **4C: 213 quyển, 4A: 115 quyển**
-f) **nhóm Sao Mai: 44 cây, tổ Ba: 40 cây**
+a) **x = 147**
+b) **x = 63**
+c) **x = 139**
+d) **x = 137**
+e) **x = 134**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Hai lớp 4A và 4B có tất cả 758 quyển sách. Lớp 4A có nhiều hơn lớp 4B 80 quyển. Mỗi lớp có bao nhiêu quyển?
-2. Đọc vị: đây là dạng **Tổng – hiệu có lời văn**; dấu hiệu là “Có tất cả …” và “… nhiều hơn … là …”.
-3. Kiến thức phải dùng: Công thức tổng – hiệu, sơ đồ đoạn thẳng.
-4. Cách làm: Đọc vị tổng và hiệu → sơ đồ → công thức.
-5. Lối tắt: Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần.
-6. Kết quả: **4A: 419 quyển, 4B: 339 quyển**.
+1. Xét ý a: x × 2 + 185 = 479
+2. Đọc vị: đây là dạng **Tìm x qua hai bước**; dấu hiệu là x nằm trong một cụm có hai phép tính.
+3. Kiến thức phải dùng: Quan hệ các thành phần phép tính, thứ tự thực hiện.
+4. Cách làm: Gỡ dần từ phép ngoài cùng vào trong.
+5. Lối tắt: Thay x tìm được vào đề để thử — nhanh hơn dò lại từng bước.
+6. Kết quả: **x = 147**.
 
-*Lỗi hay mắc:* Nhầm hiệu thành tổng khi đề diễn đạt vòng vo.
+*Lỗi hay mắc:* Gỡ phép nhân trước khi gỡ phép cộng ở ngoài.
+
+### Bài 3, (2 điểm — mỗi ý 0,5 điểm)
+
+a) **19 quyển**
+b) **4 quyển**
+c) **426 nghìn đồng**
+d) **901 nghìn đồng**
+
+**Cách giải mẫu:**
+
+1. Xét ý a: Mua 13 quyển vở hết 52 nghìn đồng. Với 76 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+2. Đọc vị: đây là dạng **Tỉ lệ thuận, rút về đơn vị**; dấu hiệu là Hai đại lượng cùng tăng cùng giảm.
+3. Kiến thức phải dùng: Đại lượng tỉ lệ thuận.
+4. Cách làm: Rút về đơn vị hoặc dùng tỉ số.
+5. Lối tắt: Nếu số lượng mới gấp số lượng cũ một số nguyên lần thì nhân thẳng, không cần rút về đơn vị.
+6. Kết quả: **19 quyển**.
+
+*Lỗi hay mắc:* Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch.
 
 ### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **3**
-b) **12 cm²**
+a) **30**
+b) **120 cm²**
 c) **4 cm²**
-d) **6 cm²**
-e) **3 cm²**
-f) **20 cm**
+d) **60 cm²**
+e) **30 cm²**
+f) **64 cm**
 
 **Cách giải mẫu:**
 
-1. Bước 1 — diện tích hình chữ nhật: 6 × 2 = 12 (cm²).
+1. Bước 1 — diện tích hình chữ nhật: 12 × 10 = 120 (cm²).
 2. Bước 2 — diện tích một hình vuông nhỏ: 2 × 2 = 4 (cm²).
-3. Bước 3 — số hình vuông cần dùng: 12 : 4 = 3 (hình).
-4. Kiểm tra: xếp được 3 hàng, mỗi hàng 1 hình — đúng 3 hình ✓
-5. Đáp số: **3 hình vuông**.
+3. Bước 3 — số hình vuông cần dùng: 120 : 4 = 30 (hình).
+4. Kiểm tra: xếp được 6 hàng, mỗi hàng 5 hình — đúng 30 hình ✓
+5. Đáp số: **30 hình vuông**.
 
 *Lỗi hay mắc:* Chia chu vi cho cạnh mảnh thay vì chia diện tích cho diện tích.
 
-### Bài 5, (2 điểm — mỗi ý 0,5 điểm)
+### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **12,5 ngày**
-b) **3,86 ngày**
-c) **1,67 ngày**
-d) **2,77 ngày**
+a) **5 985 kg**
+b) **59 tạ 85 kg**
+c) **1 197 kg, không thừa**
+d) **6 xe**
+e) **29 tạ 93 kg**
+f) **vì phần thóc còn lại vẫn cần thêm một xe nữa để chở**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 3 người làm xong một công việc trong 20 ngày. Nếu có thêm 5 người nữa (làm khoẻ như nhau) thì công việc đó hoàn thành sớm hơn bao nhiêu ngày?
-2. Đọc vị: đây là dạng **Tỉ lệ nghịch, so sánh hai phương án**; dấu hiệu là Thay đổi số người, hỏi thay đổi thời gian.
-3. Kiến thức phải dùng: Đại lượng tỉ lệ nghịch, tổng số ngày công.
-4. Cách làm: Bám vào tổng số ngày công không đổi.
-5. Lối tắt: Số người tăng gấp k lần thì số ngày giảm còn 1 phần k.
-6. Kết quả: **12,5 ngày**.
+1. Bước 1 — đổi về ki-lô-gam: 5 tấn = 5 000 kg; 9 tạ = 900 kg.
+2. Tổng: 5 000 + 900 + 85 = 5 985 (kg).
+3. Bước 2 — chia cho 5 xe: 5 985 : 5 = 1 197 .
+4. Bước 3 — mỗi xe chở 1 tấn = 1 000 kg, cần 5 985 : 1 000 = 5 xe đầy, còn 985 kg nữa nên phải thêm một xe.
+5. Đáp số ý a: **5 985 kg**.
 
-*Lỗi hay mắc:* Trừ thẳng số người rồi lấy hiệu làm số ngày rút ngắn.
+*Lỗi hay mắc:* Chia rồi lấy phần nguyên, bỏ quên phần dư vẫn cần một xe.
 
 ---
 
@@ -193,10 +192,10 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài | Đo cái gì | Sai bài này nghĩa là | Học lại ở đâu |
 |:--:|---|---|---|
 | Bài 1 | Cộng, trừ số tự nhiên | Viết lệch hàng khi hai số có số chữ số khác nhau. | Nhóm chuyên đề **—** · mức — |
-| Bài 2 | Tính nhanh tổng nhiều số hạng | Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. | Nhóm chuyên đề **—** · mức — |
-| Bài 3 | Tổng – hiệu có lời văn | Nhầm hiệu thành tổng khi đề diễn đạt vòng vo. | Nhóm chuyên đề **—** · mức — |
+| Bài 2 | Tìm x qua hai bước | Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. | Nhóm chuyên đề **—** · mức — |
+| Bài 3 | Tỉ lệ thuận, rút về đơn vị | Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch. | Nhóm chuyên đề **—** · mức — |
 | Bài 4 | Phủ hình, chia hình | Chia chu vi cho cạnh mảnh thay vì chia diện tích cho diện tích. | Nhóm chuyên đề **—** · mức — |
-| Bài 5 | Tỉ lệ nghịch, so sánh hai phương án | Trừ thẳng số người rồi lấy hiệu làm số ngày rút ngắn. | Nhóm chuyên đề **—** · mức — |
+| Bài 5 | Đại lượng khối lượng, chia phần và làm tròn lên | Chia rồi lấy phần nguyên, bỏ quên phần dư vẫn cần một xe. | Nhóm chuyên đề **—** · mức — |
 
 ---
 

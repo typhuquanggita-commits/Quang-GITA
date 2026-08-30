@@ -28,60 +28,59 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ### Bài 1. (2 điểm — 10 phút) Tính và điền kết quả
 
-Cho số **60 784**.
+Cho số **79 002**.
 
-a) Số 60 784 có bao nhiêu chữ số?
+a) Số 79 002 có bao nhiêu chữ số?
 b) Chữ số hàng đơn vị là chữ số nào?
 c) Chữ số hàng trăm là chữ số nào?
 d) Chữ số hàng nghìn là chữ số nào?
-e) Viết số 60 784 thành tổng các giá trị hàng.
-f) Tổng các chữ số của số 60 784 bằng bao nhiêu?
+e) Viết số 79 002 thành tổng các giá trị hàng.
+f) Tổng các chữ số của số 79 002 bằng bao nhiêu?
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
-Tính bằng cách thuận tiện nhất.
+Đặt tính rồi tính.
 
-a) 66 + 150 + 34
-b) 25 + 87 + 75
-c) 63 + 236 + 37
-d) 39 + 34 + 61 + 66
-e) 59 + 87 + 41
+a) 6 193 : 9
+b) 399 × 2
+c) 1 892 : 4
+d) 6 084 : 9
+e) 402 × 5
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
 Tóm tắt bằng sơ đồ đoạn thẳng rồi giải.
 
-a) Hợp tác xã và xưởng chứa tất cả 564 kg muối. Hợp tác xã chứa nhiều hơn xưởng 114 kg. Mỗi nơi chứa bao nhiêu kg?
-b) Tổ Hai và đội Một trồng được 630 cây. Tổ Hai trồng nhiều hơn đội Một 22 cây. Mỗi tổ trồng bao nhiêu cây?
-c) Hai lớp 3B và 3A có tất cả 756 quyển sách. Lớp 3B có nhiều hơn lớp 3A 160 quyển. Mỗi lớp có bao nhiêu quyển?
-d) Tổ Hai và nhóm Sao Mai trồng được 478 cây. Tổ Hai trồng nhiều hơn nhóm Sao Mai 102 cây. Mỗi tổ trồng bao nhiêu cây?
-e) Hai lớp 3A và 5A có tất cả 182 quyển sách. Lớp 3A có nhiều hơn lớp 5A 4 quyển. Mỗi lớp có bao nhiêu quyển?
-f) Thư viện và hợp tác xã chứa tất cả 98 kg gạo. Thư viện chứa nhiều hơn hợp tác xã 4 kg. Mỗi nơi chứa bao nhiêu kg?
+a) Nhóm Hoa Phượng và tổ Ba trồng được 450 cây. Nhóm Hoa Phượng trồng nhiều hơn tổ Ba 118 cây. Mỗi tổ trồng bao nhiêu cây?
+b) Trang trại và thư viện chứa tất cả 262 kg thóc. Trang trại chứa nhiều hơn thư viện 74 kg. Mỗi nơi chứa bao nhiêu kg?
+c) Hai lớp 4B và 3B có tất cả 292 quyển sách. Lớp 4B có nhiều hơn lớp 3B 60 quyển. Mỗi lớp có bao nhiêu quyển?
+d) Tổ Một và nhóm Hoa Phượng trồng được 394 cây. Tổ Một trồng nhiều hơn nhóm Hoa Phượng 112 cây. Mỗi tổ trồng bao nhiêu cây?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
-Cho lưới gồm 4 hàng và 3 cột ô vuông nhỏ bằng nhau.
+Kẻ một bảng lịch nhỏ ra nháp rồi trả lời.
 
-a) Lưới có bao nhiêu ô vuông nhỏ?
-b) Lưới có bao nhiêu đường kẻ ngang, bao nhiêu đường kẻ dọc?
-c) Có tất cả bao nhiêu hình chữ nhật (kể cả hình vuông)?
-d) Có bao nhiêu hình vuông?
-e) Có bao nhiêu hình chữ nhật không phải hình vuông?
+a) Tháng 1 năm 2027 có bao nhiêu ngày?
+b) Năm 2027 có phải năm nhuận không?
+c) Ngày 1 tháng 1 là Thứ Bảy. Hỏi ngày 18 tháng ấy là thứ mấy?
+d) Tháng ấy có bao nhiêu ngày Chủ nhật?
+e) Ngày cuối cùng của tháng là thứ mấy?
+f) Một năm thường có bao nhiêu ngày, năm nhuận có bao nhiêu ngày?
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
-Chú ý: chuyển đi thì bên này giảm, bên kia tăng.
+Mỗi ý một phép tính, trả lời gọn.
 
-a) Vy và Minh có tất cả 114 quyển vở. Nếu Vy cho Minh 10 quyển thì hai bạn có số vở bằng nhau. Hỏi lúc đầu Vy có bao nhiêu quyển?
-b) Sau khi cho, mỗi bạn có bao nhiêu quyển vở?
-c) Lúc đầu Minh có bao nhiêu quyển vở?
-d) Lúc đầu Vy hơn Minh bao nhiêu quyển?
-e) Một tổ có 6 bạn, mỗi bạn gấp được 9 bông hoa trong một giờ. Hỏi cả tổ gấp được bao nhiêu bông hoa trong một giờ?
-f) Cả tổ phải gấp 162 bông hoa thì làm trong mấy giờ?
+a) Nhóm Hoa Phượng có 22 lá cờ, tổ Ba có gấp 4 lần nhóm Hoa Phượng. Tổ Ba có bao nhiêu lá cờ?
+b) Cả hai tổ có bao nhiêu lá cờ?
+c) Tổ Ba nhiều hơn nhóm Hoa Phượng bao nhiêu lá cờ?
+d) Nếu nhóm Hoa Phượng được cho thêm 17 lá cờ thì nhóm Hoa Phượng có bao nhiêu lá?
+e) Khi đó tổ Ba còn nhiều hơn nhóm Hoa Phượng bao nhiêu lá?
+f) Phải cho nhóm Hoa Phượng thêm bao nhiêu lá nữa thì hai tổ bằng nhau?
 
 
 ---
@@ -92,99 +91,97 @@ f) Cả tổ phải gấp 162 bông hoa thì làm trong mấy giờ?
 ### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
 a) **5**
-b) **4**
-c) **7**
-d) **0**
-e) **60 000 + 700 + 80 + 4**
-f) **25**
+b) **2**
+c) **0**
+d) **9**
+e) **70 000 + 9 000 + 2**
+f) **18**
 
 **Cách giải mẫu:**
 
 1. Đếm từ phải sang trái: đơn vị, chục, trăm, nghìn, chục nghìn.
-2. Số 60 784 có 5 chữ số.
-3. Chữ số hàng đơn vị là chữ số cuối cùng bên phải: 4.
-4. Viết thành tổng: 60 000 + 700 + 80 + 4.
-5. Cộng các chữ số: 6 + 0 + 7 + 8 + 4 = 25.
+2. Số 79 002 có 5 chữ số.
+3. Chữ số hàng đơn vị là chữ số cuối cùng bên phải: 2.
+4. Viết thành tổng: 70 000 + 9 000 + 2.
+5. Cộng các chữ số: 7 + 9 + 0 + 0 + 2 = 18.
 6. Đáp số ý a: **5 chữ số**.
 
 *Lỗi hay mắc:* Đếm hàng từ trái sang phải nên lệch hàng.
 
 ### Bài 2, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **250**
-b) **187**
-c) **336**
-d) **200**
-e) **187**
+a) **688 dư 1**
+b) **798**
+c) **473**
+d) **676**
+e) **2 010**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 66 + 150 + 34
-2. Đọc vị: đây là dạng **Tính nhanh tổng nhiều số hạng**; dấu hiệu là Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm.
-3. Kiến thức phải dùng: Tính chất giao hoán, kết hợp của phép cộng.
-4. Cách làm: Ghép cặp tròn rồi cộng.
-5. Lối tắt: Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10.
-6. Kết quả: **250**.
+1. Xét ý a: 6 193 : 9
+2. Đọc vị: đây là dạng **Nhân, chia với số có một chữ số**; dấu hiệu là Số bị chia có hai hoặc ba chữ số, số chia một chữ số.
+3. Kiến thức phải dùng: Kĩ thuật đặt tính nhân, chia.
+4. Cách làm: Đặt tính, tính theo cột.
+5. Lối tắt: Ước lượng bằng cách làm tròn để phát hiện sai về độ lớn.
+6. Kết quả: **688 dư 1**.
 
-*Lỗi hay mắc:* Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn.
+*Lỗi hay mắc:* Quên chữ số 0 ở giữa thương nên thương thiếu chữ số.
 
-### Bài 3, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 3, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **hợp tác xã: 339 kg, xưởng: 225 kg**
-b) **tổ Hai: 326 cây, đội Một: 304 cây**
-c) **3B: 458 quyển, 3A: 298 quyển**
-d) **tổ Hai: 290 cây, nhóm Sao Mai: 188 cây**
-e) **3A: 93 quyển, 5A: 89 quyển**
-f) **thư viện: 51 kg, hợp tác xã: 47 kg**
+a) **nhóm Hoa Phượng: 284 cây, tổ Ba: 166 cây**
+b) **trang trại: 168 kg, thư viện: 94 kg**
+c) **4B: 176 quyển, 3B: 116 quyển**
+d) **tổ Một: 253 cây, nhóm Hoa Phượng: 141 cây**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Hợp tác xã và xưởng chứa tất cả 564 kg muối. Hợp tác xã chứa nhiều hơn xưởng 114 kg. Mỗi nơi chứa bao nhiêu kg?
+1. Xét ý a: Nhóm Hoa Phượng và tổ Ba trồng được 450 cây. Nhóm Hoa Phượng trồng nhiều hơn tổ Ba 118 cây. Mỗi tổ trồng bao nhiêu cây?
 2. Đọc vị: đây là dạng **Tổng – hiệu có lời văn**; dấu hiệu là “Có tất cả …” và “… nhiều hơn … là …”.
 3. Kiến thức phải dùng: Công thức tổng – hiệu, sơ đồ đoạn thẳng.
 4. Cách làm: Đọc vị tổng và hiệu → sơ đồ → công thức.
 5. Lối tắt: Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần.
-6. Kết quả: **hợp tác xã: 339 kg, xưởng: 225 kg**.
+6. Kết quả: **nhóm Hoa Phượng: 284 cây, tổ Ba: 166 cây**.
 
 *Lỗi hay mắc:* Nhầm hiệu thành tổng khi đề diễn đạt vòng vo.
 
-### Bài 4, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **12**
-b) **5 đường ngang, 4 đường dọc**
-c) **60**
-d) **20**
-e) **40**
+a) **31**
+b) **không**
+c) **Thứ Ba**
+d) **5**
+e) **Thứ Hai**
+f) **365 ngày và 366 ngày**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Lưới có bao nhiêu ô vuông nhỏ?
-2. Đọc vị: đây là dạng **Đếm hình trong lưới**; dấu hiệu là Lưới ô vuông đều.
-3. Kiến thức phải dùng: Quy tắc đếm.
-4. Cách làm: Đếm theo đường kẻ hoặc theo cỡ.
-5. Lối tắt: Số cách chọn 2 trong k là k × (k − 1) : 2.
-6. Kết quả: **12**.
+1. Tháng 1 thuộc nhóm tháng 31 ngày, nên có 31 ngày.
+2. Ngày 1 là Thứ Bảy. Cứ sau 7 ngày thì lặp lại đúng thứ ấy.
+3. Từ ngày 1 đến ngày 18 cách nhau 17 ngày.
+4. 17 : 7 dư 3, nên lùi 3 bước từ Thứ Bảy.
+5. Vậy ngày 18 là **Thứ Ba**.
 
-*Lỗi hay mắc:* Chỉ đếm ô nhỏ, quên hình ghép từ nhiều ô.
+*Lỗi hay mắc:* Đếm tay từng ngày nên vừa lâu vừa sai.
 
 ### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **67 quyển**
-b) **57 quyển**
-c) **47 quyển**
-d) **20 quyển**
-e) **54 bông**
-f) **3 giờ**
+a) **88**
+b) **110**
+c) **66**
+d) **39**
+e) **49**
+f) **66**
 
 **Cách giải mẫu:**
 
-1. Sau khi cho, hai bạn bằng nhau, nên mỗi bạn có 114 : 2 = 57 (quyển).
-2. Vy đã cho đi 10 quyển, nên lúc đầu Vy có 57 + 10 = 67 (quyển).
-3. Lúc đầu Minh có 114 − 67 = 47 (quyển).
-4. Hiệu lúc đầu: 67 − 47 = 20 (quyển) — đúng bằng hai lần số vở đã chuyển.
-5. Đáp số: **lúc đầu Vy có 67 quyển**.
+1. Bước 1 — số cờ của tổ Ba: 22 × 4 = 88 (lá).
+2. Bước 2 — cả hai tổ: 22 + 88 = 110 (lá).
+3. Bước 3 — tổ Ba nhiều hơn: 88 − 22 = 66 (lá).
+4. Bước 4 — muốn hai tổ bằng nhau thì cho nhóm Hoa Phượng thêm đúng phần hơn ấy, tức 66 lá.
+5. Đáp số ý a: **88 lá cờ**.
 
-*Lỗi hay mắc:* Cho rằng hiệu lúc đầu bằng đúng số vở đã chuyển.
+*Lỗi hay mắc:* Nhầm hai tình huống: cho thêm và chuyển qua lại.
 
 ---
 
@@ -195,10 +192,10 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài | Đo cái gì | Sai bài này nghĩa là | Học lại ở đâu |
 |:--:|---|---|---|
 | Bài 1 | Đọc, viết, cấu tạo số | Đếm hàng từ trái sang phải nên lệch hàng. | Nhóm chuyên đề **—** · mức — |
-| Bài 2 | Tính nhanh tổng nhiều số hạng | Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. | Nhóm chuyên đề **—** · mức — |
+| Bài 2 | Nhân, chia với số có một chữ số | Quên chữ số 0 ở giữa thương nên thương thiếu chữ số. | Nhóm chuyên đề **—** · mức — |
 | Bài 3 | Tổng – hiệu có lời văn | Nhầm hiệu thành tổng khi đề diễn đạt vòng vo. | Nhóm chuyên đề **—** · mức — |
-| Bài 4 | Đếm hình trong lưới | Chỉ đếm ô nhỏ, quên hình ghép từ nhiều ô. | Nhóm chuyên đề **—** · mức — |
-| Bài 5 | Tổng – hiệu có hiệu ẩn sau một lần chuyển | Cho rằng hiệu lúc đầu bằng đúng số vở đã chuyển. | Nhóm chuyên đề **—** · mức — |
+| Bài 4 | Lịch, tháng, năm nhuận | Đếm tay từng ngày nên vừa lâu vừa sai. | Nhóm chuyên đề **—** · mức — |
+| Bài 5 | Toán điển hình: gấp, kém, nhiều hơn, ít hơn | Nhầm hai tình huống: cho thêm và chuyển qua lại. | Nhóm chuyên đề **—** · mức — |
 
 ---
 

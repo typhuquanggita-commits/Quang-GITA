@@ -30,58 +30,58 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Đặt tính rồi tính.
 
-a) 690 075 : 75
-b) 3 804 × 74
-c) 344 705 : 71
-d) 217 360 : 44
-e) 6 534 × 34
-f) 9 526 × 82
+a) 7 193 × 20
+b) 56 865 : 15
+c) 3 838 × 50
+d) 7 346 × 65
+e) 129 114 : 27
+f) 393 000 : 75
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
-Điền dấu <, >, = thích hợp.
+Trả lời ngắn gọn.
 
-a) 54 tạ … 7 184 kg
-b) 77 m … 3 047 mm
-c) 30 cm² … 1 761 km²
-d) 2 km … 6 342 dam
-e) 89 km² … 5 870 dm²
-f) 67 dag … 6 339 yến
+a) Năm 2004 thuộc thế kỉ thứ mấy?
+b) Tháng 6 năm 2069 có bao nhiêu ngày?
+c) 53 ngày bằng bao nhiêu tuần lễ và mấy ngày?
+d) Năm 1933 có phải năm nhuận không?
+e) 16 ngày bằng bao nhiêu tuần lễ và mấy ngày?
+f) Năm 2090 thuộc thế kỉ thứ mấy?
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
-Tóm tắt bằng sơ đồ đoạn thẳng rồi giải.
+Giải bằng cách rút về đơn vị hoặc dùng tỉ số.
 
-a) Kho B và kho A chứa tất cả 242 kg xi măng. Kho B chứa nhiều hơn kho A 50 kg. Mỗi nơi chứa bao nhiêu kg?
-b) Nhóm Sao Mai và tổ Một trồng được 252 cây. Nhóm Sao Mai trồng nhiều hơn tổ Một 78 cây. Mỗi tổ trồng bao nhiêu cây?
-c) Hai lớp 3B và 5C có tất cả 870 quyển sách. Lớp 3B có nhiều hơn lớp 5C 72 quyển. Mỗi lớp có bao nhiêu quyển?
-d) Đội Hai và nhóm Sao Mai trồng được 242 cây. Đội Hai trồng nhiều hơn nhóm Sao Mai 68 cây. Mỗi tổ trồng bao nhiêu cây?
-e) Xưởng và cửa hàng chứa tất cả 390 kg đường. Xưởng chứa nhiều hơn cửa hàng 4 kg. Mỗi nơi chứa bao nhiêu kg?
+a) Mua 6 quyển vở hết 222 nghìn đồng. Với 259 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+b) Mua 3 quyển vở hết 132 nghìn đồng. Với 1 232 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+c) Mua 10 quyển vở hết 120 nghìn đồng. Mua 6 quyển vở như thế hết bao nhiêu nghìn đồng?
+d) Mua 6 quyển vở hết 366 nghìn đồng. Mua 13 quyển vở như thế hết bao nhiêu nghìn đồng?
+e) Mua 4 quyển vở hết 180 nghìn đồng. Với 135 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
-Đếm có hệ thống, nêu cách đếm.
+Một căn phòng hình chữ nhật dài **6 m**, rộng **3 m**, lát bằng gạch vuông cạnh **50 cm**.
 
-a) Từ một đỉnh của tam giác lớn kẻ 2 đoạn thẳng tới cạnh đối diện. Có tất cả bao nhiêu tam giác trong hình?
-b) Trong đó có bao nhiêu tam giác nhỏ nhất (không bị chia tiếp)?
-c) Trên một đường thẳng lấy 3 điểm phân biệt. Có bao nhiêu đoạn thẳng được tạo thành?
-d) Nếu lấy thêm một điểm nữa trên đường thẳng đó thì có thêm bao nhiêu đoạn thẳng?
-e) Với 4 điểm thì có tất cả bao nhiêu đoạn thẳng?
+a) Tính diện tích nền nhà theo mét vuông.
+b) Đổi diện tích nền nhà ra xăng-ti-mét vuông.
+c) Diện tích một viên gạch là bao nhiêu xăng-ti-mét vuông?
+d) Cần bao nhiêu viên gạch để lát kín nền nhà?
+e) Mỗi viên gạch giá 18 000 đồng. Mua gạch lát hết bao nhiêu tiền?
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
-Cho dãy lặp lại vô hạn theo nhóm: 3, 1, 4, 3, 1, 4, 3, …
+Mỗi ý làm trong 60 giây. Ghi thẳng đáp số, không cần trình bày.
 
-a) Số hạng thứ 103 của dãy là số nào?
-b) Số hạng thứ 198 của dãy là số nào?
-c) Số hạng thứ 136 của dãy là số nào?
-d) Số hạng thứ 140 của dãy là số nào?
-e) Số hạng thứ 329 của dãy là số nào?
-f) Tổng 300 số hạng đầu tiên bằng bao nhiêu?
+a) Có 7 bạn, mỗi bạn bắt tay với tất cả các bạn còn lại đúng một lần. Có bao nhiêu cái bắt tay?
+b) Có 10 áo và 9 quần. Có bao nhiêu cách chọn một bộ?
+c) Hộp có bi 6 màu. Lấy ít nhất mấy viên để chắc chắn có 4 viên cùng màu?
+d) Đoạn đường dài 44 m, trồng cây cách nhau 4 m, trồng cả hai đầu. Cần bao nhiêu cây?
+e) Từ ba chữ số 1, 2, 3 lập được bao nhiêu số có ba chữ số khác nhau?
+f) Trên một đường thẳng có 7 điểm. Có bao nhiêu đoạn thẳng?
 
 
 ---
@@ -91,101 +91,99 @@ f) Tổng 300 số hạng đầu tiên bằng bao nhiêu?
 
 ### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **9 201**
-b) **281 496**
-c) **4 855**
-d) **4 940**
-e) **222 156**
-f) **781 132**
+a) **143 860**
+b) **3 791**
+c) **191 900**
+d) **477 490**
+e) **4 782**
+f) **5 240**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 690 075 : 75
+1. Xét ý a: 7 193 × 20
 2. Đọc vị: đây là dạng **Nhân, chia số tự nhiên**; dấu hiệu là Yêu cầu “đặt tính rồi tính” với phép nhân, chia.
 3. Kiến thức phải dùng: Kĩ thuật đặt tính nhân, chia.
 4. Cách làm: Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ chữ số.
 5. Lối tắt: Kiểm tra kết quả bằng phép tính ngược: thương × số chia = số bị chia.
-6. Kết quả: **9 201**.
+6. Kết quả: **143 860**.
 
 *Lỗi hay mắc:* Quên viết chữ số 0 ở thương nên thương thiếu chữ số.
 
 ### Bài 2, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **<**
-b) **>**
-c) **<**
-d) **<**
-e) **>**
-f) **<**
+a) **XXI**
+b) **30**
+c) **7 tuần 4 ngày**
+d) **không**
+e) **2 tuần 2 ngày**
+f) **XXI**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 54 tạ … 7 184 kg
-2. Đọc vị: đây là dạng **So sánh số đo đại lượng**; dấu hiệu là Hai vế có đơn vị khác nhau.
-3. Kiến thức phải dùng: Bảng đơn vị đo, so sánh số tự nhiên.
-4. Cách làm: Đổi về cùng đơn vị rồi so sánh.
-5. Lối tắt: Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số.
-6. Kết quả: **<**.
+1. Xét ý a: Năm 2004 thuộc thế kỉ thứ mấy?
+2. Đọc vị: đây là dạng **Lịch và đơn vị thời gian lớn**; dấu hiệu là Đề hỏi về tháng, năm, thế kỉ.
+3. Kiến thức phải dùng: Số ngày các tháng, năm nhuận, thế kỉ.
+4. Cách làm: Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400.
+5. Lối tắt: Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ.
+6. Kết quả: **XXI**.
 
-*Lỗi hay mắc:* So thẳng hai con số, bỏ qua đơn vị.
+*Lỗi hay mắc:* Coi mọi năm chia hết cho 4 đều là năm nhuận.
 
 ### Bài 3, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **kho B: 146 kg, kho A: 96 kg**
-b) **nhóm Sao Mai: 165 cây, tổ Một: 87 cây**
-c) **3B: 471 quyển, 5C: 399 quyển**
-d) **đội Hai: 155 cây, nhóm Sao Mai: 87 cây**
-e) **xưởng: 197 kg, cửa hàng: 193 kg**
+a) **7 quyển**
+b) **28 quyển**
+c) **72 nghìn đồng**
+d) **793 nghìn đồng**
+e) **3 quyển**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Kho B và kho A chứa tất cả 242 kg xi măng. Kho B chứa nhiều hơn kho A 50 kg. Mỗi nơi chứa bao nhiêu kg?
-2. Đọc vị: đây là dạng **Tổng – hiệu có lời văn**; dấu hiệu là “Có tất cả …” và “… nhiều hơn … là …”.
-3. Kiến thức phải dùng: Công thức tổng – hiệu, sơ đồ đoạn thẳng.
-4. Cách làm: Đọc vị tổng và hiệu → sơ đồ → công thức.
-5. Lối tắt: Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần.
-6. Kết quả: **kho B: 146 kg, kho A: 96 kg**.
+1. Xét ý a: Mua 6 quyển vở hết 222 nghìn đồng. Với 259 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+2. Đọc vị: đây là dạng **Tỉ lệ thuận, rút về đơn vị**; dấu hiệu là Hai đại lượng cùng tăng cùng giảm.
+3. Kiến thức phải dùng: Đại lượng tỉ lệ thuận.
+4. Cách làm: Rút về đơn vị hoặc dùng tỉ số.
+5. Lối tắt: Nếu số lượng mới gấp số lượng cũ một số nguyên lần thì nhân thẳng, không cần rút về đơn vị.
+6. Kết quả: **7 quyển**.
 
-*Lỗi hay mắc:* Nhầm hiệu thành tổng khi đề diễn đạt vòng vo.
+*Lỗi hay mắc:* Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch.
 
 ### Bài 4, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **6**
-b) **3**
-c) **3**
-d) **3**
-e) **6**
+a) **6 × 3 = 18 m²**
+b) **18 m² = 180 000 cm²**
+c) **50 × 50 = 2 500 cm²**
+d) **180 000 : 2 500 = 72 viên**
+e) **72 × 18 000 = 1 296 000 đồng**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Từ một đỉnh của tam giác lớn kẻ 2 đoạn thẳng tới cạnh đối diện. Có tất cả bao nhiêu tam giác trong hình?
-2. Đọc vị: đây là dạng **Đếm hình bằng quy tắc chọn hai điểm**; dấu hiệu là Hình có nhiều đoạn kẻ từ cùng một đỉnh, hoặc nhiều điểm trên một đường.
-3. Kiến thức phải dùng: Quy tắc đếm, tổ hợp chập hai.
-4. Cách làm: Quy về số cách chọn hai điểm.
-5. Lối tắt: Số cách chọn 2 trong k là k × (k − 1) : 2 — thuộc công thức này là xong.
-6. Kết quả: **6**.
+1. Diện tích nền: 6 × 3 = **18 m²**.
+2. Muốn chia cho diện tích viên gạch thì hai diện tích phải **cùng đơn vị**. Viên gạch đo bằng xăng-ti-mét nên đổi nền nhà ra cm²: 1 m² = 10 000 cm², nên 18 m² = 180 000 cm².
+3. Diện tích một viên: 50 × 50 = 2 500 cm².
+4. Số viên: 180 000 : 2 500 = **72 viên**.
+5. Tiền gạch: 72 × 18 000 = **1 296 000 đồng**.
 
-*Lỗi hay mắc:* Chỉ đếm tam giác nhỏ, quên các tam giác ghép.
+*Lỗi hay mắc:* Chia thẳng m² cho cm², hoặc đổi 1 m² thành 100 cm².
 
 ### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **3**
-b) **4**
-c) **3**
-d) **1**
-e) **1**
-f) **800**
+a) **21**
+b) **90**
+c) **19**
+d) **12**
+e) **6**
+f) **21**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Số hạng thứ 103 của dãy là số nào?
-2. Đọc vị: đây là dạng **Dãy tuần hoàn**; dấu hiệu là Dãy lặp lại một nhóm số cố định.
-3. Kiến thức phải dùng: Phép chia có dư, tính tuần hoàn.
-4. Cách làm: Chia vị trí cho chu kì, dùng số dư định vị.
-5. Lối tắt: Tổng n số hạng = tổng một chu kì × số chu kì đầy đủ + tổng phần dư.
-6. Kết quả: **3**.
+1. Ý a — bắt tay: mỗi bạn bắt tay 6 bạn, tổng 7 × 6 = 42 lượt.
+2. Mỗi cái bắt tay có hai người nên bị đếm hai lần: 42 : 2 = 21 (cái).
+3. Ý c — xấu nhất mỗi màu lấy 3 viên mà vẫn chưa đủ: 6 × 3 = 18 viên; lấy thêm 1 viên nữa là chắc chắn đủ.
+4. Ý d — số khoảng 44 : 4 = 11; trồng cả hai đầu nên cộng 1.
+5. Đáp số ý a: **21 cái bắt tay**.
 
-*Lỗi hay mắc:* Lấy số dư 0 rồi lấy phần tử đầu tiên của chu kì.
+*Lỗi hay mắc:* Đếm cặp mà quên chia 2; “chắc chắn có” mà quên cộng 1.
 
 ---
 
@@ -196,10 +194,10 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài | Đo cái gì | Sai bài này nghĩa là | Học lại ở đâu |
 |:--:|---|---|---|
 | Bài 1 | Nhân, chia số tự nhiên | Quên viết chữ số 0 ở thương nên thương thiếu chữ số. | Nhóm chuyên đề **—** · mức — |
-| Bài 2 | So sánh số đo đại lượng | So thẳng hai con số, bỏ qua đơn vị. | Nhóm chuyên đề **—** · mức — |
-| Bài 3 | Tổng – hiệu có lời văn | Nhầm hiệu thành tổng khi đề diễn đạt vòng vo. | Nhóm chuyên đề **—** · mức — |
-| Bài 4 | Đếm hình bằng quy tắc chọn hai điểm | Chỉ đếm tam giác nhỏ, quên các tam giác ghép. | Nhóm chuyên đề **—** · mức — |
-| Bài 5 | Dãy tuần hoàn | Lấy số dư 0 rồi lấy phần tử đầu tiên của chu kì. | Nhóm chuyên đề **—** · mức — |
+| Bài 2 | Lịch và đơn vị thời gian lớn | Coi mọi năm chia hết cho 4 đều là năm nhuận. | Nhóm chuyên đề **—** · mức — |
+| Bài 3 | Tỉ lệ thuận, rút về đơn vị | Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch. | Nhóm chuyên đề **—** · mức — |
+| Bài 4 | Bài toán lát gạch nền nhà | Chia thẳng m² cho cm², hoặc đổi 1 m² thành 100 cm². | Nhóm chuyên đề **—** · mức — |
+| Bài 5 | Trắc nghiệm đếm nhanh | Đếm cặp mà quên chia 2; “chắc chắn có” mà quên cộng 1. | Nhóm chuyên đề **—** · mức — |
 
 ---
 

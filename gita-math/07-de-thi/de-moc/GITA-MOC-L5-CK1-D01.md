@@ -30,56 +30,57 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Đặt tính rồi tính. Ước lượng trước để tự kiểm tra.
 
-a) 10 080 304 : 104
-b) 253 040 × 996
-c) 874 647 + 833 111
-d) 651 920 − 246 914
-e) 524 458 + 43 882
-f) 186 546 580 : 199
+a) 568 510 − 308 006
+b) 598 440 + 724 969
+c) 811 517 694 : 897
+d) 852 369 × 809
+e) 37 824 962 : 109
+f) 996 027 × 982
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
 Tính bằng cách thuận tiện nhất.
 
-a) 53 + 345 + 47
-b) 71 + 164 + 29
-c) 72 + 89 − 89
-d) 80 + 64 − 64
-e) 62 + 40 + 38 + 60
-f) 79 + 280 + 21
+a) 13 + 360 + 87
+b) 45 + 85 + 55 + 15
+c) 80 + 297 + 20
+d) 50 + 12 − 12
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
 Giải từng bài toán nhỏ.
 
-a) Trung bình mỗi ngày bán được 197 kg gạo. Hỏi 4 ngày bán được tất cả bao nhiêu ki-lô-gam?
-b) Trung bình mỗi ngày cửa hàng bán được 37 kg gạo. 3 ngày đầu bán được 42, 40, 35 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
-c) Trung bình mỗi ngày cửa hàng bán được 87 kg gạo. 5 ngày đầu bán được 84, 94, 78, 82, 91 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
-d) 3 ngày đầu tuần một cửa hàng bán được lần lượt 289, 297, 278 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
+a) Trung bình mỗi ngày cửa hàng bán được 215 kg gạo. 2 ngày đầu bán được 208, 214 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
+b) Trung bình mỗi ngày cửa hàng bán được 33 kg gạo. 4 ngày đầu bán được 40, 42, 31, 27 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
+c) Trung bình mỗi ngày bán được 108 kg gạo. Hỏi 4 ngày bán được tất cả bao nhiêu ki-lô-gam?
+d) Trung bình mỗi ngày cửa hàng bán được 300 kg gạo. 4 ngày đầu bán được 310, 297, 312, 290 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
+e) Trung bình mỗi ngày cửa hàng bán được 75 kg gạo. 4 ngày đầu bán được 65, 71, 75, 80 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
-Ghi kết quả theo giờ và phút.
+Chú ý đơn vị mà đề hỏi.
 
-a) Một chuyến tàu khởi hành lúc 9 giờ 20 phút và đi hết 3 giờ 41 phút. Tàu đến nơi lúc mấy giờ?
-b) Một chuyến tàu khởi hành lúc 13 giờ 30 phút và đi hết 6 giờ 17 phút. Tàu đến nơi lúc mấy giờ?
-c) Một chuyến tàu khởi hành lúc 11 giờ 20 phút và đi hết 2 giờ 44 phút. Tàu đến nơi lúc mấy giờ?
-d) Một chuyến tàu khởi hành lúc 13 giờ 15 phút và đi hết 5 giờ 18 phút. Tàu đến nơi lúc mấy giờ?
+a) Một xe chở 39 bao phân bón, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ phân bón?
+b) Một xe chở 33 bao phân bón, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ phân bón?
+c) Một xe chở 6 bao đường, mỗi bao 50 kg. Hỏi xe chở bao nhiêu tạ đường?
+d) Một xe chở 30 bao gạo, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ gạo?
+e) Một xe chở 32 bao phân bón, mỗi bao 50 kg. Hỏi xe chở bao nhiêu tạ phân bón?
+f) Một xe chở 40 bao đường, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ đường?
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
-Dãy số bắt đầu bằng 3; hiệu giữa hai số hạng liên tiếp lần lượt là 2, 4, 6, 8, … (mỗi hiệu hơn hiệu trước 2 đơn vị).
+Tính nhanh mỗi tổng, nêu công thức đã dùng.
 
-a) Viết bốn số hạng đầu của dãy.
-b) Số hạng thứ 6 là số nào?
-c) Số hạng thứ 10 là số nào?
-d) Hiệu giữa số hạng thứ 10 và số hạng thứ 9 bằng bao nhiêu?
-e) Dãy các hiệu của dãy trên có phải dãy cách đều không? Khoảng cách bằng bao nhiêu?
-f) Tổng của bốn số hạng đầu bằng bao nhiêu?
+a) 1 + 3 + 5 + … + 39 (tổng 20 số lẻ đầu tiên)
+b) 2 + 4 + 6 + … + 50 (tổng 25 số chẵn đầu tiên)
+c) 1 + 2 + 3 + … + 25
+d) 2 + 4 + 6 + … + 40 (tổng 20 số chẵn đầu tiên)
+e) 1 + 2 + 3 + … + 10
+f) 1 + 3 + 5 + … + 199 (tổng 100 số lẻ đầu tiên)
 
 
 ---
@@ -89,99 +90,100 @@ f) Tổng của bốn số hạng đầu bằng bao nhiêu?
 
 ### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **96 926**
-b) **252 027 840**
-c) **1 707 758**
-d) **405 006**
-e) **568 340**
-f) **937 420**
+a) **260 504**
+b) **1 323 409**
+c) **904 702**
+d) **689 566 521**
+e) **347 018**
+f) **978 098 514**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 10 080 304 : 104
+1. Xét ý a: 568 510 − 308 006
 2. Đọc vị: đây là dạng **Bốn phép tính với số tự nhiên**; dấu hiệu là Yêu cầu “đặt tính rồi tính”.
 3. Kiến thức phải dùng: Kĩ thuật đặt tính cộng, trừ, nhân, chia.
 4. Cách làm: Đặt tính thẳng cột, tính từ hàng đơn vị.
 5. Lối tắt: Ước lượng bằng cách làm tròn để phát hiện sai sót về độ lớn.
-6. Kết quả: **96 926**.
+6. Kết quả: **260 504**.
 
 *Lỗi hay mắc:* Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số.
 
-### Bài 2, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 2, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **445**
-b) **264**
-c) **72**
-d) **80**
-e) **200**
-f) **380**
+a) **460**
+b) **200**
+c) **397**
+d) **50**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 53 + 345 + 47
+1. Xét ý a: 13 + 360 + 87
 2. Đọc vị: đây là dạng **Tính nhanh tổng nhiều số hạng**; dấu hiệu là Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm.
 3. Kiến thức phải dùng: Tính chất giao hoán, kết hợp của phép cộng.
 4. Cách làm: Ghép cặp tròn rồi cộng.
 5. Lối tắt: Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10.
-6. Kết quả: **445**.
+6. Kết quả: **460**.
 
 *Lỗi hay mắc:* Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn.
 
-### Bài 3, (2 điểm — mỗi ý 0,5 điểm)
+### Bài 3, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **788 kg**
-b) **31 kg**
-c) **93 kg**
-d) **288 kg**
+a) **223 kg**
+b) **25 kg**
+c) **432 kg**
+d) **291 kg**
+e) **84 kg**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Trung bình mỗi ngày bán được 197 kg gạo. Hỏi 4 ngày bán được tất cả bao nhiêu ki-lô-gam?
+1. Xét ý a: Trung bình mỗi ngày cửa hàng bán được 215 kg gạo. 2 ngày đầu bán được 208, 214 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
 2. Đọc vị: đây là dạng **Ba dạng bài trung bình cộng**; dấu hiệu là Cụm “trung bình mỗi …”.
 3. Kiến thức phải dùng: Quan hệ tổng – số lượng – trung bình cộng.
 4. Cách làm: Đi qua tổng làm trung gian.
 5. Lối tắt: Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng.
-6. Kết quả: **788 kg**.
+6. Kết quả: **223 kg**.
 
 *Lỗi hay mắc:* Đi tìm ngay số còn thiếu mà chưa tính tổng.
 
-### Bài 4, (2 điểm — mỗi ý 0,5 điểm)
+### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **13 giờ 1 phút**
-b) **19 giờ 47 phút**
-c) **14 giờ 4 phút**
-d) **18 giờ 33 phút**
+a) **23 tạ 40 kg**
+b) **19 tạ 80 kg**
+c) **3 tạ**
+d) **7 tạ 50 kg**
+e) **16 tạ**
+f) **10 tạ**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Một chuyến tàu khởi hành lúc 9 giờ 20 phút và đi hết 3 giờ 41 phút. Tàu đến nơi lúc mấy giờ?
-2. Đọc vị: đây là dạng **Tính thời điểm trong ngày**; dấu hiệu là Cho thời điểm bắt đầu và khoảng thời gian.
-3. Kiến thức phải dùng: Quan hệ giờ – phút, phép chia có dư.
-4. Cách làm: Quy về phút, cộng trừ, đổi lại.
-5. Lối tắt: Cộng tròn giờ trước rồi cộng phần phút lẻ sau.
-6. Kết quả: **13 giờ 1 phút**.
+1. Xét ý a: Một xe chở 39 bao phân bón, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ phân bón?
+2. Đọc vị: đây là dạng **Bài toán đại lượng có lời văn**; dấu hiệu là Đơn vị trong câu hỏi khác đơn vị trong dữ kiện.
+3. Kiến thức phải dùng: Nhân, chia số tự nhiên; đổi đơn vị khối lượng.
+4. Cách làm: Tính theo đơn vị dữ kiện rồi đổi ở bước cuối.
+5. Lối tắt: 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ.
+6. Kết quả: **23 tạ 40 kg**.
 
-*Lỗi hay mắc:* Cộng phần phút thành hơn 60 mà quên đổi thành giờ.
+*Lỗi hay mắc:* Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ.
 
 ### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **3, 5, 9, 15**
-b) **33**
-c) **93**
-d) **18**
-e) **có, khoảng cách 2**
-f) **32**
+a) **400**
+b) **650**
+c) **325**
+d) **420**
+e) **55**
+f) **10 000**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Viết bốn số hạng đầu của dãy.
-2. Đọc vị: đây là dạng **Dãy có hiệu tăng đều (hiệu bậc hai)**; dấu hiệu là Hiệu giữa các số hạng tăng đều đặn.
-3. Kiến thức phải dùng: Dãy hiệu, tổng dãy cách đều.
-4. Cách làm: Lập dãy hiệu, tính tổng hiệu, cộng vào số hạng đầu.
-5. Lối tắt: Với hiệu 1, 2, 3, … thì số hạng thứ n = số đầu + (n − 1) × n : 2.
-6. Kết quả: **3, 5, 9, 15**.
+1. Xét ý a: 1 + 3 + 5 + … + 39 (tổng 20 số lẻ đầu tiên)
+2. Đọc vị: đây là dạng **Tổng dãy đặc biệt**; dấu hiệu là Dãy toàn số lẻ, toàn số chẵn, hoặc số tự nhiên liên tiếp.
+3. Kiến thức phải dùng: Ba công thức tổng cơ bản.
+4. Cách làm: Đếm số số hạng rồi áp công thức.
+5. Lối tắt: Tổng n số lẻ đầu tiên luôn là một số chính phương — dùng để kiểm tra nhanh.
+6. Kết quả: **400**.
 
-*Lỗi hay mắc:* Cộng n hiệu thay vì (n − 1) hiệu.
+*Lỗi hay mắc:* Nhầm số hạng cuối với số lượng số hạng khi áp công thức.
 
 ---
 
@@ -194,8 +196,8 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài 1 | Bốn phép tính với số tự nhiên | Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số. | Nhóm chuyên đề **—** · mức — |
 | Bài 2 | Tính nhanh tổng nhiều số hạng | Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. | Nhóm chuyên đề **—** · mức — |
 | Bài 3 | Ba dạng bài trung bình cộng | Đi tìm ngay số còn thiếu mà chưa tính tổng. | Nhóm chuyên đề **—** · mức — |
-| Bài 4 | Tính thời điểm trong ngày | Cộng phần phút thành hơn 60 mà quên đổi thành giờ. | Nhóm chuyên đề **—** · mức — |
-| Bài 5 | Dãy có hiệu tăng đều (hiệu bậc hai) | Cộng n hiệu thay vì (n − 1) hiệu. | Nhóm chuyên đề **—** · mức — |
+| Bài 4 | Bài toán đại lượng có lời văn | Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. | Nhóm chuyên đề **—** · mức — |
+| Bài 5 | Tổng dãy đặc biệt | Nhầm số hạng cuối với số lượng số hạng khi áp công thức. | Nhóm chuyên đề **—** · mức — |
 
 ---
 

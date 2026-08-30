@@ -51,58 +51,60 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — CỦNG CỐ NỀN — 30 CÂU TỐC ĐỘ · Mức M1 — Nhận biết · 20 phút · 25 điểm
 
-### Bài 1. (5 điểm) Đọc giá trị của chữ số theo hàng
+### Bài 1. (5 điểm) Đếm chữ số và tính tổng các chữ số
 
-Cho số **68 687**.
+Với mỗi số dưới đây, trả lời đủ hai ý.
 
-a) Chữ số ở hàng **chục nghìn** của số 68 687 là chữ số nào, và nó có giá trị bằng bao nhiêu?
-b) Chữ số ở hàng **nghìn** của số 68 687 là chữ số nào, và nó có giá trị bằng bao nhiêu?
-c) Chữ số ở hàng **trăm** của số 68 687 là chữ số nào, và nó có giá trị bằng bao nhiêu?
-d) Chữ số ở hàng **chục** của số 68 687 là chữ số nào, và nó có giá trị bằng bao nhiêu?
-e) Chữ số ở hàng **đơn vị** của số 68 687 là chữ số nào, và nó có giá trị bằng bao nhiêu?
+a) Số 77 234 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
+b) Số 18 132 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
+c) Số 83 369 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
+d) Số 93 242 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
+e) Số 92 269 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
+f) Số 69 777 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
 
-### Bài 2. (5 điểm) Đổi số đo khối lượng có nhiều đơn vị
-
-Điền vào chỗ chấm.
-
-a) 6 446 kg = … tấn … tạ … kg
-b) 6 980 kg = … tấn … tạ … kg
-c) 1 547 kg = … tấn … tạ … kg
-d) 1 203 kg = … tấn … tạ … kg
-
-### Bài 3. (5 điểm) Đổi đơn vị đo độ dài và khối lượng
-
-Điền số thích hợp vào chỗ chấm.
-
-a) 6 hm = … dm
-b) 20 kg = … dag
-c) 11 cm = … mm
-d) 31 hg = … dag
-e) 46 tấn = … tạ
-f) 3 km = … hm
-g) 38 m = … cm
-
-### Bài 4. (5 điểm) Mi-li-lít và lít
+### Bài 2. (5 điểm) Mi-li-lít và lít
 
 Điền số hoặc dấu thích hợp.
 
-a) 9 l 812 ml = … ml
-b) 40 l … 3 684 ml
-c) 40 000 ml = … l
-d) 22 l = … ml
-e) 8 000 ml = … l
-f) 36 l 535 ml = … ml
-g) 14 l … 1 703 ml
-h) 39 l = … ml
+a) 11 l 425 ml = … ml
+b) 15 000 ml = … l
+c) 15 l … 1 191 ml
+d) 36 l = … ml
+e) 5 l = … ml
+f) 14 l … 512 ml
+g) 33 l 844 ml = … ml
+h) 38 000 ml = … l
 
-### Bài 5. (5 điểm) Đơn vị đo thời gian: giờ và phút
+### Bài 3. (5 điểm) Đơn vị đo thời gian: giờ và phút
 
 Điền kết quả, viết dạng giờ và phút.
 
-a) 2 giờ 46 phút + 126 phút = … (viết dạng giờ và phút)
-b) 591 phút = … giờ … phút
-c) 7 giờ 8 phút = … phút
-d) 4 giờ 28 phút − 129 phút = … (viết dạng giờ và phút)
+a) 290 phút = … giờ … phút
+b) 4 giờ 24 phút = … phút
+c) 7 giờ 49 phút − 401 phút = … (viết dạng giờ và phút)
+d) 4 giờ 27 phút + 164 phút = … (viết dạng giờ và phút)
+e) 7 giờ 28 phút = … phút
+f) 401 phút = … giờ … phút
+g) 1 giờ 33 phút − 83 phút = … (viết dạng giờ và phút)
+
+### Bài 4. (5 điểm) Đổi số đo khối lượng có nhiều đơn vị
+
+Điền vào chỗ chấm.
+
+a) 6 tấn 3 tạ 13 kg = … kg
+b) 1 875 kg = … tấn … tạ … kg
+c) 5 106 kg = … tấn … tạ … kg
+d) 3 tấn 4 tạ 36 kg = … kg
+
+### Bài 5. (5 điểm) Đổi đơn vị đo độ dài và khối lượng
+
+Điền số thích hợp vào chỗ chấm.
+
+a) 9 kg = … hg
+b) 70 dam = … mm
+c) 55 hm = … cm
+d) 35 yến = … hg
+e) 75 dam = … dm
 
 ---
 
@@ -334,34 +336,34 @@ f) Mẹo nhanh em sẽ tặng lớp?
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài A.1
-**Đáp số:** a) chữ số 6, giá trị 60 000 · b) chữ số 8, giá trị 8 000 · c) chữ số 6, giá trị 600 · d) chữ số 8, giá trị 80 · e) chữ số 7, giá trị 7
-**Hướng giải:** Đếm hàng từ phải sang trái: đơn vị – chục – trăm – nghìn – chục nghìn – trăm nghìn – triệu. Giá trị của một chữ số bằng chính chữ số đó nhân với giá trị của hàng nó đứng.
-**Nhãn tư duy:** TD1. Điểm chốt: Phân biệt **chữ số** (một kí hiệu) với **giá trị** của chữ số (chữ số nhân giá trị hàng).
-**Lỗi thường gặp:** Đếm hàng từ trái sang phải nên lệch hàng. Phòng: Luôn viết số ra nháp rồi đánh dấu hàng đơn vị trước, đi ngược về trái.
+**Đáp số:** a) 5 chữ số, tổng 23 · b) 5 chữ số, tổng 15 · c) 5 chữ số, tổng 29 · d) 5 chữ số, tổng 20 · e) 5 chữ số, tổng 28 · f) 5 chữ số, tổng 36
+**Hướng giải:** Đếm số chữ số bằng cách tách số theo lớp (mỗi lớp 3 chữ số). Tổng các chữ số là cộng tất cả các chữ số lại, không phân biệt hàng.
+**Nhãn tư duy:** TD1. Điểm chốt: Tổng các chữ số **không** phụ thuộc thứ tự các chữ số.
+**Lỗi thường gặp:** Cộng cả giá trị hàng (ví dụ cộng 300 thay vì cộng 3). Phòng: Viết rời từng chữ số ra rồi mới cộng.
 
 ### Bài A.2
-**Đáp số:** a) 6 tấn 4 tạ 46 kg · b) 6 tấn 9 tạ 80 kg · c) 1 tấn 5 tạ 47 kg · d) 1 tấn 2 tạ 3 kg
-**Hướng giải:** 1 tấn = 10 tạ = 1 000 kg; 1 tạ = 100 kg; 1 yến = 10 kg. Đổi tất cả về ki-lô-gam rồi cộng lại; hoặc ngược lại, chia dần từ đơn vị lớn xuống đơn vị bé và lấy phần dư.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Đổi hết về **một đơn vị chung** trước khi cộng.
-**Lỗi thường gặp:** Cộng thẳng các số đứng trước những đơn vị khác nhau. Phòng: Viết mỗi thành phần thành số ki-lô-gam ngay bên dưới rồi mới cộng.
-
-### Bài A.3
-**Đáp số:** a) 6 000 · b) 2 000 · c) 110 · d) 310 · e) 460 · f) 30 · g) 3 800
-**Hướng giải:** BẪY — Chiều đổi đơn vị. Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
-**Nhãn tư duy:** TD1. Điểm chốt: Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
-**Lỗi thường gặp:** Đổi ngược chiều nên nhân thành chia. Phòng: Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.
-
-### Bài A.4
-**Đáp số:** a) 9 812 · b) > · c) 40 · d) 22 000 · e) 8 · f) 36 535 · g) > · h) 39 000
+**Đáp số:** a) 11 425 · b) 15 · c) > · d) 36 000 · e) 5 000 · f) > · g) 33 844 · h) 38
 **Hướng giải:** BẪY — Đơn vị khác nhau. 1 lít = 1 000 mi-li-lít. Đổi từ đơn vị lớn sang đơn vị bé thì nhân, ngược lại thì chia. Muốn so sánh thì phải đưa về cùng một đơn vị trước.
 **Nhãn tư duy:** TD1. Điểm chốt: So sánh **chỉ sau khi** đã đưa về cùng đơn vị.
 **Lỗi thường gặp:** So thẳng hai con số mà bỏ qua đơn vị. Phòng: Viết lại cả hai vế theo mi-li-lít rồi mới so.
 
-### Bài A.5
-**Đáp số:** a) 4 giờ 52 phút · b) 9 giờ 51 phút · c) 428 · d) 2 giờ 19 phút
-**Hướng giải:** 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
+### Bài A.3
+**Đáp số:** a) 4 giờ 50 phút · b) 264 · c) 1 giờ 8 phút · d) 7 giờ 11 phút · e) 448 · f) 6 giờ 41 phút · g) 10 phút
+**Hướng giải:** BẪY — Cơ số 60 chứ không phải 10. 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
 **Lỗi thường gặp:** Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. Phòng: Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không.
+
+### Bài A.4
+**Đáp số:** a) 6 313 · b) 1 tấn 8 tạ 75 kg · c) 5 tấn 1 tạ 6 kg · d) 3 436
+**Hướng giải:** 1 tấn = 10 tạ = 1 000 kg; 1 tạ = 100 kg; 1 yến = 10 kg. Đổi tất cả về ki-lô-gam rồi cộng lại; hoặc ngược lại, chia dần từ đơn vị lớn xuống đơn vị bé và lấy phần dư.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Đổi hết về **một đơn vị chung** trước khi cộng.
+**Lỗi thường gặp:** Cộng thẳng các số đứng trước những đơn vị khác nhau. Phòng: Viết mỗi thành phần thành số ki-lô-gam ngay bên dưới rồi mới cộng.
+
+### Bài A.5
+**Đáp số:** a) 90 · b) 700 000 · c) 550 000 · d) 3 500 · e) 7 500
+**Hướng giải:** Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
+**Nhãn tư duy:** TD1. Điểm chốt: Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
+**Lỗi thường gặp:** Đổi ngược chiều nên nhân thành chia. Phòng: Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.
 
 ### Bài B.1
 **Đáp số:** a) câu lời giải nêu rõ đang tìm đại lượng nào · b) phép tính, viết đủ dấu và đủ đơn vị · c) kết quả kèm đơn vị · d) câu đáp số · e) một phần tư số điểm của bài

@@ -51,55 +51,55 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — CỦNG CỐ NỀN — 30 CÂU TỐC ĐỘ · Mức M1 — Nhận biết · 20 phút · 25 điểm
 
-### Bài 1. (5 điểm) Tìm hai số khi biết tổng và hiệu
+### Bài 1. (5 điểm) Tìm trung bình cộng của nhiều số
 
-Tìm hai số trong mỗi trường hợp.
+Tính trung bình cộng.
 
-a) Tổng hai số là 92, hiệu hai số là 14. Tìm hai số đó.
-b) Tổng hai số là 378, hiệu hai số là 68. Tìm hai số đó.
-c) Tổng hai số là 370, hiệu hai số là 34. Tìm hai số đó.
-d) Tổng hai số là 228, hiệu hai số là 18. Tìm hai số đó.
+a) Tìm trung bình cộng của 4 số: 53, 49, 58, 64.
+b) Tìm trung bình cộng của 5 số: 27, 10, 12, 4, 27.
+c) Tìm trung bình cộng của 2 số: 50, 46.
+d) Tìm trung bình cộng của 3 số: 46, 46, 64.
 
 ### Bài 2. (5 điểm) Nhiều hơn – ít hơn, gấp – kém
 
 Đọc kĩ rồi trả lời từng câu.
 
-a) Hà có 75 quyển vở, số vở của Yến kém 5 lần số vở của Hà. Yến có bao nhiêu quyển vở?
-b) Hà có 54 quyển vở, Yến có nhiều hơn Hà 3 quyển. Yến có bao nhiêu quyển vở?
-c) Hà có 7 quyển vở, Yến có số vở gấp 4 lần Hà. Yến có bao nhiêu quyển vở?
-d) Hà có 63 quyển vở, Yến có ít hơn Hà 10 quyển. Yến có bao nhiêu quyển vở?
-e) Hà có 96 quyển vở, số vở của Yến kém 6 lần số vở của Hà. Yến có bao nhiêu quyển vở?
+a) Chi có 54 quyển vở, An có nhiều hơn Chi 22 quyển. An có bao nhiêu quyển vở?
+b) Chi có 54 quyển vở, An có ít hơn Chi 23 quyển. An có bao nhiêu quyển vở?
+c) Chi có 17 quyển vở, An có số vở gấp 5 lần Chi. An có bao nhiêu quyển vở?
+d) Chi có 38 quyển vở, số vở của An kém 2 lần số vở của Chi. An có bao nhiêu quyển vở?
+e) Chi có 28 quyển vở, An có số vở gấp 3 lần Chi. An có bao nhiêu quyển vở?
+f) Chi có 50 quyển vở, An có nhiều hơn Chi 8 quyển. An có bao nhiêu quyển vở?
 
-### Bài 3. (5 điểm) Bài toán rút về đơn vị
+### Bài 3. (5 điểm) Tìm hai số khi biết tổng và hiệu
 
-Giải bằng phương pháp rút về đơn vị.
+Tìm hai số trong mỗi trường hợp.
 
-a) 11 bao gạo nặng 319 kg. Hỏi 16 bao như thế nặng bao nhiêu kg?
-b) 3 bao đường nặng 138 kg. Hỏi 15 bao như thế nặng bao nhiêu kg?
-c) 8 bao phân bón nặng 440 kg. Hỏi 16 bao như thế nặng bao nhiêu kg?
-d) 4 bao phân bón nặng 156 kg. Hỏi 4 bao như thế nặng bao nhiêu kg?
-e) 3 bao phân bón nặng 51 kg. Hỏi 7 bao như thế nặng bao nhiêu kg?
+a) Tổng hai số là 124, hiệu hai số là 40. Tìm hai số đó.
+b) Tổng hai số là 118, hiệu hai số là 36. Tìm hai số đó.
+c) Tổng hai số là 306, hiệu hai số là 6. Tìm hai số đó.
+d) Tổng hai số là 128, hiệu hai số là 36. Tìm hai số đó.
 
-### Bài 4. (5 điểm) Tìm trung bình cộng của nhiều số
-
-Tính trung bình cộng.
-
-a) Tìm trung bình cộng của 4 số: 17, 8, 27, 12.
-b) Tìm trung bình cộng của 2 số: 56, 48.
-c) Tìm trung bình cộng của 5 số: 28, 42, 46, 33, 36.
-d) Tìm trung bình cộng của 3 số: 53, 40, 60.
-e) Tìm trung bình cộng của 5 số: 43, 54, 54, 59, 55.
-
-### Bài 5. (5 điểm) Bài toán giải bằng hai phép tính
+### Bài 4. (5 điểm) Bài toán giải bằng hai phép tính
 
 Mỗi bài trình bày đủ hai bước, mỗi bước một câu lời giải.
 
-a) Đội Hai có 47 lá cờ. Tổ Một có ít hơn đội Hai 11 lá cờ. Hỏi cả hai tổ có bao nhiêu lá cờ?
-b) Nhóm Hoa Phượng có 48 lá cờ. Đội Một có gấp 3 lần nhóm Hoa Phượng. Hỏi cả hai tổ có bao nhiêu lá cờ?
-c) Đội Hai có 47 lá cờ. Nhóm Hoa Phượng có nhiều hơn đội Hai 19 lá cờ. Hỏi cả hai tổ có bao nhiêu lá cờ?
-d) Nhóm Sao Mai có 42 lá cờ. Nhóm Hoa Phượng có nhiều hơn nhóm Sao Mai 11 lá cờ. Hỏi cả hai tổ có bao nhiêu lá cờ?
-e) Tổ Hai có 37 lá cờ. Đội Hai có ít hơn tổ Hai 24 lá cờ. Hỏi cả hai tổ có bao nhiêu lá cờ?
-f) Đội Một có 38 lá cờ. Đội Hai có gấp 4 lần đội Một. Hỏi cả hai tổ có bao nhiêu lá cờ?
+a) Đội Một có 30 lá cờ. Tổ Hai có nhiều hơn đội Một 21 lá cờ. Hỏi cả hai tổ có bao nhiêu lá cờ?
+b) Tổ Ba có 35 lá cờ. Tổ Một có gấp 2 lần tổ Ba. Hỏi cả hai tổ có bao nhiêu lá cờ?
+c) Đội Một có 31 lá cờ. Đội Hai có ít hơn đội Một 18 lá cờ. Hỏi cả hai tổ có bao nhiêu lá cờ?
+d) Đội Hai có 50 lá cờ. Tổ Hai có nhiều hơn đội Hai 28 lá cờ. Hỏi cả hai tổ có bao nhiêu lá cờ?
+e) Nhóm Hoa Phượng có 66 lá cờ. Đội Một có ít hơn nhóm Hoa Phượng 15 lá cờ. Hỏi cả hai tổ có bao nhiêu lá cờ?
+
+### Bài 5. (5 điểm) Bài toán rút về đơn vị
+
+Giải bằng phương pháp rút về đơn vị.
+
+a) 2 bao muối nặng 18 kg. Hỏi 11 bao như thế nặng bao nhiêu kg?
+b) 10 bao đường nặng 430 kg. Hỏi 4 bao như thế nặng bao nhiêu kg?
+c) 11 bao đường nặng 451 kg. Hỏi 11 bao như thế nặng bao nhiêu kg?
+d) 7 bao đường nặng 315 kg. Hỏi 7 bao như thế nặng bao nhiêu kg?
+e) 4 bao thóc nặng 236 kg. Hỏi 14 bao như thế nặng bao nhiêu kg?
+f) 10 bao thóc nặng 150 kg. Hỏi 15 bao như thế nặng bao nhiêu kg?
 
 ---
 
@@ -331,34 +331,34 @@ f) Mẹo nhanh em sẽ tặng lớp?
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài A.1
-**Đáp số:** a) số lớn 53, số bé 39 · b) số lớn 223, số bé 155 · c) số lớn 202, số bé 168 · d) số lớn 123, số bé 105
-**Hướng giải:** Số lớn = (tổng + hiệu) : 2. Số bé = (tổng − hiệu) : 2. Cách hiểu: vẽ hai đoạn thẳng, đoạn dài hơn phần hiệu; bớt phần hiệu đi thì hai đoạn bằng nhau, mỗi đoạn là số bé.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng hiệu ra **số lớn**, trừ hiệu ra **số bé** — nhớ đúng chiều.
-**Lỗi thường gặp:** Lấy (tổng + hiệu) : 2 rồi gọi đó là số bé. Phòng: Vẽ sơ đồ đoạn thẳng trước, đoạn dài hơn luôn là số lớn.
+**Đáp số:** a) 56 · b) 16 · c) 48 · d) 52
+**Hướng giải:** Trung bình cộng của nhiều số bằng tổng các số đó chia cho số lượng các số. Cộng cho hết rồi mới chia, không chia từng số một.
+**Nhãn tư duy:** TD1. Điểm chốt: Chia cho **số lượng số hạng**, không phải chia cho một số bất kì.
+**Lỗi thường gặp:** Đếm sai số lượng số hạng nên chia nhầm. Phòng: Đánh số thứ tự từng số trước khi cộng.
 
 ### Bài A.2
-**Đáp số:** a) 15 · b) 57 · c) 28 · d) 53 · e) 16
+**Đáp số:** a) 76 · b) 31 · c) 85 · d) 19 · e) 84 · f) 58
 **Hướng giải:** BẪY — Gấp và kém dùng hai phép tính ngược nhau. “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
 
 ### Bài A.3
-**Đáp số:** a) 464 · b) 690 · c) 880 · d) 156 · e) 119
-**Hướng giải:** Bước 1 — rút về đơn vị: tìm giá trị của **một** đơn vị bằng phép chia. Bước 2: nhân giá trị một đơn vị với số đơn vị cần tìm.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Bước rút về đơn vị luôn là phép **chia**, và phải làm trước.
-**Lỗi thường gặp:** Nhân ngay hai số đã cho mà bỏ qua bước chia. Phòng: Viết rõ câu “Một bao nặng … kg” trước khi làm bước hai.
+**Đáp số:** a) số lớn 82, số bé 42 · b) số lớn 77, số bé 41 · c) số lớn 156, số bé 150 · d) số lớn 82, số bé 46
+**Hướng giải:** Số lớn = (tổng + hiệu) : 2. Số bé = (tổng − hiệu) : 2. Cách hiểu: vẽ hai đoạn thẳng, đoạn dài hơn phần hiệu; bớt phần hiệu đi thì hai đoạn bằng nhau, mỗi đoạn là số bé.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng hiệu ra **số lớn**, trừ hiệu ra **số bé** — nhớ đúng chiều.
+**Lỗi thường gặp:** Lấy (tổng + hiệu) : 2 rồi gọi đó là số bé. Phòng: Vẽ sơ đồ đoạn thẳng trước, đoạn dài hơn luôn là số lớn.
 
 ### Bài A.4
-**Đáp số:** a) 16 · b) 52 · c) 37 · d) 51 · e) 53
-**Hướng giải:** Trung bình cộng của nhiều số bằng tổng các số đó chia cho số lượng các số. Cộng cho hết rồi mới chia, không chia từng số một.
-**Nhãn tư duy:** TD1. Điểm chốt: Chia cho **số lượng số hạng**, không phải chia cho một số bất kì.
-**Lỗi thường gặp:** Đếm sai số lượng số hạng nên chia nhầm. Phòng: Đánh số thứ tự từng số trước khi cộng.
-
-### Bài A.5
-**Đáp số:** a) 83 lá cờ · b) 192 lá cờ · c) 113 lá cờ · d) 95 lá cờ · e) 50 lá cờ · f) 190 lá cờ
+**Đáp số:** a) 81 lá cờ · b) 105 lá cờ · c) 44 lá cờ · d) 128 lá cờ · e) 117 lá cờ
 **Hướng giải:** BẪY — Đọc kĩ câu hỏi cuối. Bước 1 tìm đại lượng còn thiếu bằng quan hệ nhiều hơn – ít hơn – gấp. Bước 2 mới trả lời câu hỏi của đề. Không được gộp hai bước làm một.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Câu hỏi cuối hỏi **cả hai tổ**, nên bước hai bắt buộc phải cộng.
 **Lỗi thường gặp:** Dừng ở bước một, trả lời số lá cờ của một tổ. Phòng: Đọc lại câu hỏi sau khi tính xong bước một, gạch chân chữ “cả hai”.
+
+### Bài A.5
+**Đáp số:** a) 99 · b) 172 · c) 451 · d) 315 · e) 826 · f) 225
+**Hướng giải:** Bước 1 — rút về đơn vị: tìm giá trị của **một** đơn vị bằng phép chia. Bước 2: nhân giá trị một đơn vị với số đơn vị cần tìm.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Bước rút về đơn vị luôn là phép **chia**, và phải làm trước.
+**Lỗi thường gặp:** Nhân ngay hai số đã cho mà bỏ qua bước chia. Phòng: Viết rõ câu “Một bao nặng … kg” trước khi làm bước hai.
 
 ### Bài B.1
 **Đáp số:** a) câu lời giải nêu rõ đang tìm đại lượng nào · b) phép tính, viết đủ dấu và đủ đơn vị · c) kết quả kèm đơn vị · d) câu đáp số · e) một phần tư số điểm của bài

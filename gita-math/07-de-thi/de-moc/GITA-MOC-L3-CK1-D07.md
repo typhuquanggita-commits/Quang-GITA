@@ -30,59 +30,53 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Đặt tính rồi tính.
 
-a) 331 − 233
-b) 950 − 413
-c) 911 − 259
-d) 728 + 391
-e) 472 + 625
-f) 999 − 877
+a) 693 − 476
+b) 985 − 823
+c) 672 + 185
+d) 788 + 581
+e) 361 + 768
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
 Ghi rõ đơn vị đồng ở mọi kết quả.
 
-a) Mua 2 quyển vở, mỗi quyển 7 000 đồng. Hết bao nhiêu tiền?
-b) Mua 3 quyển vở, mỗi quyển 25 000 đồng. Đưa cô bán hàng một tờ 100 000 đồng. Cô phải trả lại bao nhiêu tiền?
-c) Đổi một tờ 50 000 đồng ra các tờ 2 000 đồng thì được mấy tờ?
-d) Đổi một tờ 20 000 đồng ra các tờ 2 000 đồng thì được mấy tờ?
-e) Mua 6 quyển vở, mỗi quyển 3 000 đồng. Đưa cô bán hàng một tờ 20 000 đồng. Cô phải trả lại bao nhiêu tiền?
+a) Đổi một tờ 10 000 đồng ra các tờ 1 000 đồng thì được mấy tờ?
+b) Mua 3 quyển vở, mỗi quyển 15 000 đồng. Hết bao nhiêu tiền?
+c) Mua 6 quyển vở, mỗi quyển 18 000 đồng. Đưa cô bán hàng một tờ 200 000 đồng. Cô phải trả lại bao nhiêu tiền?
+d) Mua 6 quyển vở, mỗi quyển 15 000 đồng. Hết bao nhiêu tiền?
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
 Tóm tắt bằng sơ đồ đoạn thẳng rồi giải.
 
-a) Nhóm Hoa Phượng và tổ Ba trồng được 644 cây. Nhóm Hoa Phượng trồng nhiều hơn tổ Ba 36 cây. Mỗi tổ trồng bao nhiêu cây?
-b) Hai lớp 4B và 3A có tất cả 742 quyển sách. Lớp 4B có nhiều hơn lớp 3A 38 quyển. Mỗi lớp có bao nhiêu quyển?
-c) Kho A và kho B chứa tất cả 460 kg đường. Kho A chứa nhiều hơn kho B 118 kg. Mỗi nơi chứa bao nhiêu kg?
-d) Đội Hai và nhóm Hoa Phượng trồng được 616 cây. Đội Hai trồng nhiều hơn nhóm Hoa Phượng 88 cây. Mỗi tổ trồng bao nhiêu cây?
-e) Hai lớp 3B và 5B có tất cả 622 quyển sách. Lớp 3B có nhiều hơn lớp 5B 184 quyển. Mỗi lớp có bao nhiêu quyển?
-f) Cửa hàng và trang trại chứa tất cả 372 kg phân bón. Cửa hàng chứa nhiều hơn trang trại 70 kg. Mỗi nơi chứa bao nhiêu kg?
+a) Nhóm Hoa Phượng và nhóm Sao Mai trồng được 864 cây. Nhóm Hoa Phượng trồng nhiều hơn nhóm Sao Mai 66 cây. Mỗi tổ trồng bao nhiêu cây?
+b) Hợp tác xã và xưởng chứa tất cả 424 kg thóc. Hợp tác xã chứa nhiều hơn xưởng 54 kg. Mỗi nơi chứa bao nhiêu kg?
+c) Hai lớp 4C và 5B có tất cả 94 quyển sách. Lớp 4C có nhiều hơn lớp 5B 24 quyển. Mỗi lớp có bao nhiêu quyển?
+d) Kho A và xưởng chứa tất cả 856 kg đường. Kho A chứa nhiều hơn xưởng 70 kg. Mỗi nơi chứa bao nhiêu kg?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
 Ghi kết quả theo giờ và phút.
 
-a) Bây giờ là 7 giờ 0 phút. Sau 40 phút nữa là mấy giờ?
-b) 6 giờ 55 phút = … phút
-c) Bây giờ là 1 giờ 0 phút. Cách đây 55 phút là mấy giờ?
-d) Bây giờ là 10 giờ 5 phút. Cách đây 90 phút là mấy giờ?
-e) Bây giờ là 6 giờ 35 phút. Sau 90 phút nữa là mấy giờ?
-f) 6 giờ 10 phút = … phút
+a) 11 giờ 25 phút = … phút
+b) Bây giờ là 11 giờ 5 phút. Sau 45 phút nữa là mấy giờ?
+c) Bây giờ là 5 giờ 20 phút. Cách đây 30 phút là mấy giờ?
+d) 8 giờ 20 phút = … phút
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
 Vẽ một hàng ô ra nháp rồi đánh dấu vị trí.
 
-a) Minh cao hơn Dũng, Dũng cao hơn Quân. Ai cao nhất?
+a) Hùng cao hơn Lan, Lan cao hơn Trang. Ai cao nhất?
 b) Ai thấp nhất?
 c) Xếp ba bạn theo thứ tự từ thấp đến cao.
-d) Có 4 bạn xếp thành một hàng dọc. Minh đứng thứ 3 từ đầu hàng. Hỏi Minh đứng thứ mấy từ cuối hàng?
-e) Trước Minh có mấy bạn?
-f) Sau Minh có mấy bạn?
+d) Có 4 bạn xếp thành một hàng dọc. Hùng đứng thứ 3 từ đầu hàng. Hỏi Hùng đứng thứ mấy từ cuối hàng?
+e) Trước Hùng có mấy bạn?
+f) Sau Hùng có mấy bạn?
 
 
 ---
@@ -90,90 +84,84 @@ f) Sau Minh có mấy bạn?
 ## ĐÁP ÁN VÀ BIỂU ĐIỂM
 
 
-### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 1, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **98**
-b) **537**
-c) **652**
-d) **1 119**
-e) **1 097**
-f) **122**
+a) **217**
+b) **162**
+c) **857**
+d) **1 369**
+e) **1 129**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 331 − 233
+1. Xét ý a: 693 − 476
 2. Đọc vị: đây là dạng **Cộng, trừ số tự nhiên**; dấu hiệu là Yêu cầu “đặt tính rồi tính”.
 3. Kiến thức phải dùng: Kĩ thuật đặt tính, nhớ và mượn.
 4. Cách làm: Đặt tính thẳng hàng, tính từ hàng đơn vị.
 5. Lối tắt: Làm tròn một số hạng để ước lượng trước, dùng kết quả ước lượng để phát hiện sai sót.
-6. Kết quả: **98**.
+6. Kết quả: **217**.
 
 *Lỗi hay mắc:* Viết lệch hàng khi hai số có số chữ số khác nhau.
 
-### Bài 2, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 2, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **14 000 đồng**
-b) **25 000 đồng**
-c) **25 tờ**
-d) **10 tờ**
-e) **2 000 đồng**
+a) **10 tờ**
+b) **45 000 đồng**
+c) **92 000 đồng**
+d) **90 000 đồng**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Mua 2 quyển vở, mỗi quyển 7 000 đồng. Hết bao nhiêu tiền?
+1. Xét ý a: Đổi một tờ 10 000 đồng ra các tờ 1 000 đồng thì được mấy tờ?
 2. Đọc vị: đây là dạng **Bài toán tiền tệ hai bước**; dấu hiệu là “Đưa … đồng”, “trả lại”, “đổi ra tờ …”.
 3. Kiến thức phải dùng: Nhân, trừ với số tròn nghìn; mệnh giá tiền Việt Nam.
 4. Cách làm: Tính tiền hàng rồi trừ; đổi tiền thì chia.
 5. Lối tắt: Thử lại bằng cách cộng tiền hàng với tiền trả lại, phải đúng bằng tiền đưa.
-6. Kết quả: **14 000 đồng**.
+6. Kết quả: **10 tờ**.
 
 *Lỗi hay mắc:* Lấy tiền đưa trừ ngay giá một quyển vở.
 
-### Bài 3, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 3, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **nhóm Hoa Phượng: 340 cây, tổ Ba: 304 cây**
-b) **4B: 390 quyển, 3A: 352 quyển**
-c) **kho A: 289 kg, kho B: 171 kg**
-d) **đội Hai: 352 cây, nhóm Hoa Phượng: 264 cây**
-e) **3B: 403 quyển, 5B: 219 quyển**
-f) **cửa hàng: 221 kg, trang trại: 151 kg**
+a) **nhóm Hoa Phượng: 465 cây, nhóm Sao Mai: 399 cây**
+b) **hợp tác xã: 239 kg, xưởng: 185 kg**
+c) **4C: 59 quyển, 5B: 35 quyển**
+d) **kho A: 463 kg, xưởng: 393 kg**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Nhóm Hoa Phượng và tổ Ba trồng được 644 cây. Nhóm Hoa Phượng trồng nhiều hơn tổ Ba 36 cây. Mỗi tổ trồng bao nhiêu cây?
+1. Xét ý a: Nhóm Hoa Phượng và nhóm Sao Mai trồng được 864 cây. Nhóm Hoa Phượng trồng nhiều hơn nhóm Sao Mai 66 cây. Mỗi tổ trồng bao nhiêu cây?
 2. Đọc vị: đây là dạng **Tổng – hiệu có lời văn**; dấu hiệu là “Có tất cả …” và “… nhiều hơn … là …”.
 3. Kiến thức phải dùng: Công thức tổng – hiệu, sơ đồ đoạn thẳng.
 4. Cách làm: Đọc vị tổng và hiệu → sơ đồ → công thức.
 5. Lối tắt: Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần.
-6. Kết quả: **nhóm Hoa Phượng: 340 cây, tổ Ba: 304 cây**.
+6. Kết quả: **nhóm Hoa Phượng: 465 cây, nhóm Sao Mai: 399 cây**.
 
 *Lỗi hay mắc:* Nhầm hiệu thành tổng khi đề diễn đạt vòng vo.
 
-### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 4, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **7 giờ 40 phút**
-b) **415**
-c) **0 giờ 5 phút**
-d) **8 giờ 35 phút**
-e) **8 giờ 5 phút**
-f) **370**
+a) **685**
+b) **11 giờ 50 phút**
+c) **4 giờ 50 phút**
+d) **500**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Bây giờ là 7 giờ 0 phút. Sau 40 phút nữa là mấy giờ?
+1. Xét ý a: 11 giờ 25 phút = … phút
 2. Đọc vị: đây là dạng **Tính thời gian trong ngày**; dấu hiệu là Có chữ “giờ”, “phút”, “sau … phút nữa”.
 3. Kiến thức phải dùng: Quan hệ giờ – phút.
 4. Cách làm: Quy về phút, tính, đổi lại.
 5. Lối tắt: Cộng tròn giờ trước, cộng phút lẻ sau.
-6. Kết quả: **7 giờ 40 phút**.
+6. Kết quả: **685**.
 
 *Lỗi hay mắc:* Cộng phần phút thành hơn 60 mà quên đổi thành giờ.
 
 ### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **Minh**
-b) **Quân**
-c) **Quân, Dũng, Minh**
+a) **Hùng**
+b) **Trang**
+c) **Trang, Lan, Hùng**
 d) **2**
 e) **2 bạn**
 f) **1 bạn**
@@ -181,9 +169,9 @@ f) **1 bạn**
 **Cách giải mẫu:**
 
 1. Vẽ 4 ô liền nhau tượng trưng cho 4 bạn.
-2. Minh đứng thứ 3 từ đầu, nên trước Minh có 2 bạn.
-3. Sau Minh còn 4 − 3 = 1 bạn.
-4. Tính từ cuối hàng, Minh đứng thứ 1 + 1 = 2.
+2. Hùng đứng thứ 3 từ đầu, nên trước Hùng có 2 bạn.
+3. Sau Hùng còn 4 − 3 = 1 bạn.
+4. Tính từ cuối hàng, Hùng đứng thứ 1 + 1 = 2.
 5. Kiểm tra: 2 + 1 + 1 = 4 ✓
 6. Đáp số ý d: **thứ 2 từ cuối**.
 

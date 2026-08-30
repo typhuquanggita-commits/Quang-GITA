@@ -30,56 +30,53 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Viết số tự nhiên ứng với mỗi tổng dưới đây.
 
-a) Viết số gồm tổng: 500 000 + 80 000 + 8 000 + 700 + 50 + 1
-b) Viết số gồm tổng: 700 000 + 4 000 + 600 + 40 + 2
-c) Viết số gồm tổng: 800 000 + 40 000 + 3 000 + 100 + 80 + 8
-d) Viết số gồm tổng: 200 000 + 20 000 + 9 000 + 600 + 4
-e) Viết số gồm tổng: 100 000 + 80 000 + 300 + 70 + 5
-f) Viết số gồm tổng: 600 000 + 20 000 + 4 000 + 100 + 40 + 4
+a) Viết số gồm tổng: 100 000 + 70 000 + 3 000 + 900 + 9
+b) Viết số gồm tổng: 50 000 + 7 000 + 400 + 80 + 7
+c) Viết số gồm tổng: 800 000 + 30 000 + 3 000 + 300 + 30 + 5
+d) Viết số gồm tổng: 300 000 + 70 000 + 9 000 + 60
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
 Điền dấu <, >, = thích hợp.
 
-a) 48 ha … 6 404 cm²
-b) 48 hm … 8 982 cm
-c) 48 yến … 6 321 hg
-d) 69 km … 8 758 hm
-e) 58 tấn … 5 329 yến
+a) 32 m² … 6 365 cm²
+b) 7 dag … 254 hg
+c) 83 mm … 2 869 m
+d) 79 ha … 1 003 dm²
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
 Chú ý đổi đơn vị ở bước cuối.
 
-a) Một đoạn đường dài 170 m được vẽ trên bản đồ tỉ lệ 1 : 1 000. Trên bản đồ đoạn ấy dài bao nhiêu xăng-ti-mét?
-b) Trên bản đồ tỉ lệ 1 : 100, một đoạn đường đo được 10 cm. Hỏi đoạn đường đó dài bao nhiêu mét trên thực tế?
-c) Trên bản đồ tỉ lệ 1 : 10 000, một đoạn đường đo được 29 cm. Hỏi đoạn đường đó dài bao nhiêu mét trên thực tế?
-d) Một đoạn đường dài 150 m được vẽ trên bản đồ tỉ lệ 1 : 1 000. Trên bản đồ đoạn ấy dài bao nhiêu xăng-ti-mét?
-e) Trên bản đồ tỉ lệ 1 : 100, một đoạn đường đo được 9 cm. Hỏi đoạn đường đó dài bao nhiêu mét trên thực tế?
-f) Một đoạn đường dài 650 m được vẽ trên bản đồ tỉ lệ 1 : 5 000. Trên bản đồ đoạn ấy dài bao nhiêu xăng-ti-mét?
+a) Trên bản đồ tỉ lệ 1 : 100, một đoạn đường đo được 28 cm. Hỏi đoạn đường đó dài bao nhiêu mét trên thực tế?
+b) Một đoạn đường dài 2 700 m được vẽ trên bản đồ tỉ lệ 1 : 10 000. Trên bản đồ đoạn ấy dài bao nhiêu xăng-ti-mét?
+c) Một đoạn đường dài 8 m được vẽ trên bản đồ tỉ lệ 1 : 100. Trên bản đồ đoạn ấy dài bao nhiêu xăng-ti-mét?
+d) Trên bản đồ tỉ lệ 1 : 2 000, một đoạn đường đo được 8 cm. Hỏi đoạn đường đó dài bao nhiêu mét trên thực tế?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
-Ghi kết quả theo giờ và phút.
+Chú ý đơn vị mà đề hỏi.
 
-a) Một chuyến tàu khởi hành lúc 9 giờ 50 phút và đi hết 2 giờ 16 phút. Tàu đến nơi lúc mấy giờ?
-b) Một chuyến tàu khởi hành lúc 8 giờ 20 phút và đi hết 4 giờ 42 phút. Tàu đến nơi lúc mấy giờ?
-c) Một chuyến tàu khởi hành lúc 7 giờ 10 phút và đi hết 4 giờ 33 phút. Tàu đến nơi lúc mấy giờ?
-d) Một chuyến tàu khởi hành lúc 14 giờ 25 phút và đi hết 5 giờ 53 phút. Tàu đến nơi lúc mấy giờ?
+a) Một xe chở 9 bao gạo, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ gạo?
+b) Một xe chở 8 bao đường, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ đường?
+c) Một xe chở 36 bao muối, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ muối?
+d) Một xe chở 40 bao thóc, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ thóc?
+e) Một xe chở 23 bao thóc, mỗi bao 50 kg. Hỏi xe chở bao nhiêu tạ thóc?
+f) Một xe chở 39 bao đường, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ đường?
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
 Bài mô phỏng phần tự luận của đề thi chất lượng cao.
 
-a) Ba số có tổng 333. Số thứ hai hơn số thứ nhất 4, số thứ ba hơn số thứ hai 4. Tìm số thứ hai.
+a) Ba số có tổng 345. Số thứ hai hơn số thứ nhất 5, số thứ ba hơn số thứ hai 5. Tìm số thứ hai.
 b) Tìm số thứ nhất.
 c) Tìm số thứ ba.
 d) Vì sao số thứ hai bằng tổng ba số chia cho 3?
-e) Hai số khác có tổng 80 và số bé bằng 1 phần 4 số lớn. Tìm số bé.
+e) Hai số khác có tổng 91 và số bé bằng 3 phần 4 số lớn. Tìm số bé.
 f) Tìm số lớn.
 
 
@@ -88,37 +85,34 @@ f) Tìm số lớn.
 ## ĐÁP ÁN VÀ BIỂU ĐIỂM
 
 
-### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 1, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **588 751**
-b) **704 642**
-c) **843 188**
-d) **229 604**
-e) **180 375**
-f) **624 144**
+a) **173 909**
+b) **57 487**
+c) **833 335**
+d) **379 060**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Viết số gồm tổng: 500 000 + 80 000 + 8 000 + 700 + 50 + 1
+1. Xét ý a: Viết số gồm tổng: 100 000 + 70 000 + 3 000 + 900 + 9
 2. Đọc vị: đây là dạng **Viết số từ dạng tổng theo hàng**; dấu hiệu là Tổng gồm các số tròn chục, tròn trăm, tròn nghìn….
 3. Kiến thức phải dùng: Cấu tạo thập phân của số tự nhiên.
 4. Cách làm: Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết.
 5. Lối tắt: Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số.
-6. Kết quả: **588 751**.
+6. Kết quả: **173 909**.
 
 *Lỗi hay mắc:* Bỏ qua hàng khuyết nên số viết ra bị ngắn đi một chữ số.
 
-### Bài 2, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 2, (2 điểm — mỗi ý 0,5 điểm)
 
 a) **>**
-b) **>**
+b) **<**
 c) **<**
-d) **<**
-e) **>**
+d) **>**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 48 ha … 6 404 cm²
+1. Xét ý a: 32 m² … 6 365 cm²
 2. Đọc vị: đây là dạng **So sánh số đo đại lượng**; dấu hiệu là Hai vế có đơn vị khác nhau.
 3. Kiến thức phải dùng: Bảng đơn vị đo, so sánh số tự nhiên.
 4. Cách làm: Đổi về cùng đơn vị rồi so sánh.
@@ -127,61 +121,59 @@ e) **>**
 
 *Lỗi hay mắc:* So thẳng hai con số, bỏ qua đơn vị.
 
-### Bài 3, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 3, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **17 cm**
-b) **10 m**
-c) **2 900 m**
-d) **15 cm**
-e) **9 m**
-f) **13 cm**
+a) **28 m**
+b) **27 cm**
+c) **8 cm**
+d) **160 m**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Một đoạn đường dài 170 m được vẽ trên bản đồ tỉ lệ 1 : 1 000. Trên bản đồ đoạn ấy dài bao nhiêu xăng-ti-mét?
-2. Đọc vị: đây là dạng **Tỉ lệ bản đồ, tỉ lệ xích**; dấu hiệu là Có kí hiệu tỉ lệ dạng 1 : n.
-3. Kiến thức phải dùng: Tỉ lệ, đổi đơn vị đo độ dài.
-4. Cách làm: Nhân hoặc chia theo tỉ lệ rồi đổi đơn vị.
-5. Lối tắt: Tỉ lệ 1 : 1 000 thì 1 cm bản đồ đúng bằng 10 m thật.
-6. Kết quả: **17 cm**.
+1. Tỉ lệ 1 : 100 nghĩa là 1 cm trên bản đồ ứng với 100 cm thật.
+2. Bước 1 — độ dài thật tính bằng xăng-ti-mét: 28 × 100 = 2 800 (cm).
+3. Bước 2 — đổi ra mét: 2 800 : 100 = 28 (m).
+4. Đáp số: **28 m**.
 
 *Lỗi hay mắc:* Đổi mét sang xăng-ti-mét ngay từ đầu rồi lại nhân tỉ lệ một lần nữa.
 
-### Bài 4, (2 điểm — mỗi ý 0,5 điểm)
+### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **12 giờ 6 phút**
-b) **13 giờ 2 phút**
-c) **11 giờ 43 phút**
-d) **20 giờ 18 phút**
+a) **2 tạ 25 kg**
+b) **4 tạ 80 kg**
+c) **21 tạ 60 kg**
+d) **24 tạ**
+e) **11 tạ 50 kg**
+f) **9 tạ 75 kg**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Một chuyến tàu khởi hành lúc 9 giờ 50 phút và đi hết 2 giờ 16 phút. Tàu đến nơi lúc mấy giờ?
-2. Đọc vị: đây là dạng **Tính thời điểm trong ngày**; dấu hiệu là Cho thời điểm bắt đầu và khoảng thời gian.
-3. Kiến thức phải dùng: Quan hệ giờ – phút, phép chia có dư.
-4. Cách làm: Quy về phút, cộng trừ, đổi lại.
-5. Lối tắt: Cộng tròn giờ trước rồi cộng phần phút lẻ sau.
-6. Kết quả: **12 giờ 6 phút**.
+1. Xét ý a: Một xe chở 9 bao gạo, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ gạo?
+2. Đọc vị: đây là dạng **Bài toán đại lượng có lời văn**; dấu hiệu là Đơn vị trong câu hỏi khác đơn vị trong dữ kiện.
+3. Kiến thức phải dùng: Nhân, chia số tự nhiên; đổi đơn vị khối lượng.
+4. Cách làm: Tính theo đơn vị dữ kiện rồi đổi ở bước cuối.
+5. Lối tắt: 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ.
+6. Kết quả: **2 tạ 25 kg**.
 
-*Lỗi hay mắc:* Cộng phần phút thành hơn 60 mà quên đổi thành giờ.
+*Lỗi hay mắc:* Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ.
 
 ### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **111**
-b) **107**
-c) **115**
+a) **115**
+b) **110**
+c) **120**
 d) **vì ba số cách đều nên số ở giữa là trung bình cộng**
-e) **16**
-f) **64**
+e) **39**
+f) **52**
 
 **Cách giải mẫu:**
 
-1. Ba số cách đều nhau 4 đơn vị nên số ở giữa là trung bình cộng.
-2. Bước 1 — số thứ hai: 333 : 3 = 111.
-3. Bước 2 — số thứ nhất: 111 − 4 = 107.
-4. Bước 3 — số thứ ba: 111 + 4 = 115.
-5. Thử lại: 107 + 111 + 115 = 333 ✓
-6. Đáp số: **107, 111, 115**.
+1. Ba số cách đều nhau 5 đơn vị nên số ở giữa là trung bình cộng.
+2. Bước 1 — số thứ hai: 345 : 3 = 115.
+3. Bước 2 — số thứ nhất: 115 − 5 = 110.
+4. Bước 3 — số thứ ba: 115 + 5 = 120.
+5. Thử lại: 110 + 115 + 120 = 345 ✓
+6. Đáp số: **110, 115, 120**.
 
 *Lỗi hay mắc:* Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi.
 
@@ -196,7 +188,7 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài 1 | Viết số từ dạng tổng theo hàng | Bỏ qua hàng khuyết nên số viết ra bị ngắn đi một chữ số. | Nhóm chuyên đề **—** · mức — |
 | Bài 2 | So sánh số đo đại lượng | So thẳng hai con số, bỏ qua đơn vị. | Nhóm chuyên đề **—** · mức — |
 | Bài 3 | Tỉ lệ bản đồ, tỉ lệ xích | Đổi mét sang xăng-ti-mét ngay từ đầu rồi lại nhân tỉ lệ một lần nữa. | Nhóm chuyên đề **—** · mức — |
-| Bài 4 | Tính thời điểm trong ngày | Cộng phần phút thành hơn 60 mà quên đổi thành giờ. | Nhóm chuyên đề **—** · mức — |
+| Bài 4 | Bài toán đại lượng có lời văn | Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. | Nhóm chuyên đề **—** · mức — |
 | Bài 5 | Tổng nhiều số có ràng buộc; tổng – tỉ | Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. | Nhóm chuyên đề **—** · mức — |
 
 ---

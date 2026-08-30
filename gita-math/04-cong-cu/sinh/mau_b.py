@@ -709,8 +709,9 @@ def b_m4_04(rng, lop):
 @dang_ky("B-M5-01", "B", "M5", lop=(5,), tu_khoa=("dãy phân số", "khử liên tiếp", "tính nhanh"))
 def b_m5_01(rng, lop):
     y = []
-    for _ in range(rng.randint(4, 6)):
-        n = rng.choice([5, 6, 8, 9, 10, 12])
+    # Cũng vậy: sáu giá trị n cho tối đa sáu ý, rút trùng là hỏng bài.
+    for n in rng.sample([5, 6, 7, 8, 9, 10, 11, 12, 14, 15, 20], 
+                        rng.randint(4, 6)):
         tong = Fraction(0)
         for i in range(1, n + 1):
             tong += Fraction(1, i * (i + 1))
@@ -782,8 +783,10 @@ def b_m5_02(rng, lop):
 @dang_ky("B-M5-03", "B", "M5", lop=(4, 5), tu_khoa=("tính nhanh", "dãy xen kẽ", "cộng trừ"))
 def b_m5_03(rng, lop):
     y = []
-    for _ in range(rng.randint(4, 6)):
-        n = rng.choice([10, 20, 50, 100])
+    # Rút các giá trị n **khác nhau**: chỉ có bốn giá trị mà đòi bốn tới sáu ý
+    # thì bài chắc chắn có hai ý trùng nhau từng chữ.
+    for n in rng.sample([10, 15, 20, 25, 30, 40, 50, 60, 75, 99, 100], 
+                        rng.randint(4, 6)):
         # 1 - 2 + 3 - 4 + ... ± n
         tong = 0
         for i in range(1, n + 1):

@@ -42,69 +42,65 @@ Phiếu lời giải và phân tích chuyên sâu đi kèm: `GITA-T2-L3-C11-LT-G
 Họ và tên: ......................................... Lớp: ......... Điểm: ......../100
 
 > **KIẾN THỨC NỀN CỦA CHƯƠNG**
-> 1. Quan hệ số cây – số khoảng
-> 2. Dãy cách đều, dãy nhân, dãy hiệu tăng đều
+> 1. Dãy cách đều
+> 2. Quan hệ số cây – số khoảng
 > 3. Dãy cách đều, dấu hiệu chia hết
-> 4. Phép chia có dư, tính tuần hoàn
+> 4. Dãy hiệu, tổng dãy cách đều
 
 ---
 
 ## PHẦN A — VÍ DỤ DẪN VÀO CHỦ ĐỀ · Mức M1 — Nhận biết · 5 phút · 5 điểm
 
-### Bài 1. (1 điểm) Điền số còn thiếu trong dãy
+### Bài 1. (1 điểm) Đếm chữ số và tính tổng các chữ số
 
-Điền số thích hợp vào chỗ chấm.
+Với mỗi số dưới đây, trả lời đủ hai ý.
 
-a) 22, 25, 28, 31, …, 37
-b) 29, 36, …, 50, 57, 64
-c) 12, 14, 16, 18, …, 22
-d) 11, 18, …, 32, 39, 46
-e) 21, 32, …, 54, 65, 76
-f) 31, 35, 39, …, 47, 51
+a) Số 11 753 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
+b) Số 68 353 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
+c) Số 31 264 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
+d) Số 86 583 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
 
-### Bài 2. (1 điểm) Đọc giá trị của chữ số theo hàng
+### Bài 2. (1 điểm) Tìm thành phần chưa biết của phép tính
 
-Cho số **25 118**.
+Tìm x.
 
-a) Chữ số ở hàng **chục nghìn** của số 25 118 là chữ số nào, và nó có giá trị bằng bao nhiêu?
-b) Chữ số ở hàng **nghìn** của số 25 118 là chữ số nào, và nó có giá trị bằng bao nhiêu?
-c) Chữ số ở hàng **trăm** của số 25 118 là chữ số nào, và nó có giá trị bằng bao nhiêu?
-d) Chữ số ở hàng **chục** của số 25 118 là chữ số nào, và nó có giá trị bằng bao nhiêu?
-e) Chữ số ở hàng **đơn vị** của số 25 118 là chữ số nào, và nó có giá trị bằng bao nhiêu?
+a) x × 8 = 408
+b) x − 3 = 46
+c) x + 3 = 61
+d) x + 8 = 63
 
-### Bài 3. (1 điểm) Đọc, viết và phân tích cấu tạo số
-
-Cho số **51 878**.
-
-a) Số 51 878 có bao nhiêu chữ số?
-b) Chữ số hàng đơn vị là chữ số nào?
-c) Chữ số hàng trăm là chữ số nào?
-d) Chữ số hàng nghìn là chữ số nào?
-e) Viết số 51 878 thành tổng các giá trị hàng.
-f) Tổng các chữ số của số 51 878 bằng bao nhiêu?
-g) Số liền sau của 51 878 là số nào?
-
-### Bài 4. (1 điểm) Tìm một phần mấy của một số
-
-Tính rồi ghi kết quả.
-
-a) Tìm 1 phần 3 của 18.
-b) Tìm 1 phần 4 của 60.
-c) Tìm 1 phần 6 của 36.
-d) Tìm 1 phần 5 của 65.
-e) Tìm 1 phần 8 của 32.
-
-### Bài 5. (1 điểm) Viết tiếp ba số hạng của dãy
+### Bài 3. (1 điểm) Viết tiếp ba số hạng của dãy
 
 Tìm quy luật rồi viết tiếp ba số hạng của mỗi dãy.
 
-a) 9, 19, 29, 39, …
-b) 3, 9, 15, 21, …
-c) 17, 24, 31, 38, …
-d) 3, 18, 33, 48, …
-e) 38, 53, 68, 83, …
-f) 28, 43, 58, 73, …
-g) 28, 33, 38, 43, …
+a) 27, 36, 45, 54, …
+b) 7, 10, 13, 16, …
+c) 8, 33, 58, 83, …
+d) 37, 39, 41, 43, …
+
+### Bài 4. (1 điểm) Đọc, viết và phân tích cấu tạo số
+
+Cho số **4 619**.
+
+a) Số 4 619 có bao nhiêu chữ số?
+b) Chữ số hàng đơn vị là chữ số nào?
+c) Chữ số hàng trăm là chữ số nào?
+d) Chữ số hàng nghìn là chữ số nào?
+e) Viết số 4 619 thành tổng các giá trị hàng.
+f) Tổng các chữ số của số 4 619 bằng bao nhiêu?
+g) Số liền sau của 4 619 là số nào?
+
+### Bài 5. (1 điểm) Điền số còn thiếu trong dãy
+
+Điền số thích hợp vào chỗ chấm.
+
+a) 31, …, 53, 64, 75, 86
+b) 28, 43, …, 73, 88, 103
+c) 36, 42, 48, …, 60, 66
+d) 8, 23, 38, …, 68, 83
+e) 29, 34, 39, …, 49, 54
+f) 9, 19, 29, …, 49, 59
+g) 17, 26, 35, 44, …, 62
 
 ---
 
@@ -146,10 +142,10 @@ Mỗi dạng bài có những từ khoá riêng. Ghi lại từ khoá em nhận 
 
 a) Nêu một dấu hiệu nhận biết của dạng “Điền số hạng còn thiếu”.
 b) Nêu một dấu hiệu nhận biết của dạng “Tìm quy luật dãy cách đều”.
-c) Nêu một dấu hiệu nhận biết của dạng “Bài toán trồng cây”.
+c) Nêu một dấu hiệu nhận biết của dạng “Quy luật hình đưa về dãy số”.
 d) Nêu một dấu hiệu nhận biết của dạng “Dãy có hiệu tăng đều”.
-e) Nêu một dấu hiệu nhận biết của dạng “Tìm quy luật dãy số”.
-f) Nêu một dấu hiệu nhận biết của dạng “Đếm số hạng dãy cách đều theo điều kiện”.
+e) Nêu một dấu hiệu nhận biết của dạng “Dãy số cách đều”.
+f) Nêu một dấu hiệu nhận biết của dạng “Bài toán trồng cây”.
 
 ### Bài 5. (1 điểm) Mục tiêu của riêng em
 
@@ -181,10 +177,10 @@ e) Kể tên nội dung chính cuối cùng.
 
 a) Công thức hoặc quy tắc dùng cho dạng “Điền số hạng còn thiếu”?
 b) Công thức hoặc quy tắc dùng cho dạng “Tìm quy luật dãy cách đều”?
-c) Công thức hoặc quy tắc dùng cho dạng “Bài toán trồng cây”?
+c) Công thức hoặc quy tắc dùng cho dạng “Quy luật hình đưa về dãy số”?
 d) Công thức hoặc quy tắc dùng cho dạng “Dãy có hiệu tăng đều”?
-e) Công thức hoặc quy tắc dùng cho dạng “Tìm quy luật dãy số”?
-f) Công thức hoặc quy tắc dùng cho dạng “Đếm số hạng dãy cách đều theo điều kiện”?
+e) Công thức hoặc quy tắc dùng cho dạng “Dãy số cách đều”?
+f) Công thức hoặc quy tắc dùng cho dạng “Bài toán trồng cây”?
 
 ### Bài 3. (4 điểm) Ô 4 và ô 5 — hình vẽ và bài tập minh hoạ
 
@@ -192,9 +188,9 @@ Với mỗi dạng bài, chọn một cách minh hoạ.
 
 a) Dạng “Điền số hạng còn thiếu” nên minh hoạ bằng hình vẽ hay bằng bảng?
 b) Dạng “Tìm quy luật dãy cách đều” nên minh hoạ bằng hình vẽ hay bằng bảng?
-c) Dạng “Bài toán trồng cây” nên minh hoạ bằng hình vẽ hay bằng bảng?
+c) Dạng “Quy luật hình đưa về dãy số” nên minh hoạ bằng hình vẽ hay bằng bảng?
 d) Dạng “Dãy có hiệu tăng đều” nên minh hoạ bằng hình vẽ hay bằng bảng?
-e) Dạng “Tìm quy luật dãy số” nên minh hoạ bằng hình vẽ hay bằng bảng?
+e) Dạng “Dãy số cách đều” nên minh hoạ bằng hình vẽ hay bằng bảng?
 
 ### Bài 4. (4 điểm) Ô 6 — dạng bài và dấu hiệu nhận biết
 
@@ -202,10 +198,10 @@ Ghép mỗi dạng bài với dấu hiệu nhận biết của nó.
 
 a) Dấu hiệu nào cho biết đề thuộc dạng “Điền số hạng còn thiếu”?
 b) Dấu hiệu nào cho biết đề thuộc dạng “Tìm quy luật dãy cách đều”?
-c) Dấu hiệu nào cho biết đề thuộc dạng “Bài toán trồng cây”?
+c) Dấu hiệu nào cho biết đề thuộc dạng “Quy luật hình đưa về dãy số”?
 d) Dấu hiệu nào cho biết đề thuộc dạng “Dãy có hiệu tăng đều”?
-e) Dấu hiệu nào cho biết đề thuộc dạng “Tìm quy luật dãy số”?
-f) Dấu hiệu nào cho biết đề thuộc dạng “Đếm số hạng dãy cách đều theo điều kiện”?
+e) Dấu hiệu nào cho biết đề thuộc dạng “Dãy số cách đều”?
+f) Dấu hiệu nào cho biết đề thuộc dạng “Bài toán trồng cây”?
 
 ### Bài 5. (4 điểm) Ô 7 — phương pháp ghi điểm 10
 
@@ -213,10 +209,10 @@ Ghi lại cách xử lý nhanh nhất của từng dạng.
 
 a) Cách xử lý nhanh nhất của dạng “Điền số hạng còn thiếu” là gì?
 b) Cách xử lý nhanh nhất của dạng “Tìm quy luật dãy cách đều” là gì?
-c) Cách xử lý nhanh nhất của dạng “Bài toán trồng cây” là gì?
+c) Cách xử lý nhanh nhất của dạng “Quy luật hình đưa về dãy số” là gì?
 d) Cách xử lý nhanh nhất của dạng “Dãy có hiệu tăng đều” là gì?
-e) Cách xử lý nhanh nhất của dạng “Tìm quy luật dãy số” là gì?
-f) Cách xử lý nhanh nhất của dạng “Đếm số hạng dãy cách đều theo điều kiện” là gì?
+e) Cách xử lý nhanh nhất của dạng “Dãy số cách đều” là gì?
+f) Cách xử lý nhanh nhất của dạng “Bài toán trồng cây” là gì?
 
 ---
 
@@ -244,9 +240,9 @@ d) Phương pháp áp dụng key này là gì?
 e) Lỗi thường gặp khi dùng key này?
 f) Làm lại ví dụ mẫu ở trên và ghi đáp số.
 
-### Bài 3. (6 điểm) Key 3 — Bài toán trồng cây
+### Bài 3. (6 điểm) Key 3 — Quy luật hình đưa về dãy số
 
-**Phát biểu:** Quan hệ số cây – số khoảng. **Ví dụ mẫu:** Đường dài 20 m, cây cách nhau 4 m, trồng cả hai đầu. Mấy cây? → 6.
+**Phát biểu:** Dãy cách đều, số hạng thứ n. **Ví dụ mẫu:** Hình 1 có 3 que, mỗi hình sau hơn 2 que. Hình thứ 10 có mấy que? → 21.
 
 a) Phát biểu lại key này bằng lời của em.
 b) Key này dùng cho dạng bài nào?
@@ -266,9 +262,9 @@ d) Phương pháp áp dụng key này là gì?
 e) Lỗi thường gặp khi dùng key này?
 f) Làm lại ví dụ mẫu ở trên và ghi đáp số.
 
-### Bài 5. (6 điểm) Key 5 — Tìm quy luật dãy số
+### Bài 5. (6 điểm) Key 5 — Dãy số cách đều
 
-**Phát biểu:** Dãy cách đều, dãy nhân, dãy hiệu tăng đều. **Ví dụ mẫu:** Viết tiếp: 1, 3, 6, 10, … → 15.
+**Phát biểu:** Số hạng thứ n của dãy cách đều; đếm số hạng. **Ví dụ mẫu:** Một dãy phố có các nhà số lẻ từ 1 đến 39. Dãy ấy có bao nhiêu nhà? → 20 nhà.
 
 a) Phát biểu lại key này bằng lời của em.
 b) Key này dùng cho dạng bài nào?
@@ -281,59 +277,62 @@ f) Làm lại ví dụ mẫu ở trên và ghi đáp số.
 
 ## PHẦN E — LUYỆN NHẬN BIẾT – THÔNG HIỂU · Mức M2 — Thông hiểu · 30 phút · 40 điểm
 
-### Bài 1. (8 điểm) Tìm x và tính chất của phép nhân
-
-Tìm x hoặc điền số thích hợp.
-
-a) x − 186 = 213
-b) 32 × 1 × 0 = …
-c) x + 102 = 277
-d) 4 × 27 = 27 × …
-e) 2 × 97 = 97 × …
-
-### Bài 2. (8 điểm) Đọc bảng số liệu
-
-Bảng ghi số bông hoa mỗi bạn gấp được: Đức: 18 · Thảo: 21 · Yến: 3 · Bình: 3.
-
-a) Cả bốn bạn gấp được bao nhiêu bông hoa?
-b) Bạn nào gấp được nhiều nhất?
-c) Bạn nào gấp được ít nhất?
-d) Bạn nhiều nhất hơn bạn ít nhất bao nhiêu bông?
-e) Nếu bốn bạn khác gấp được 27, 8, 24, 5 bông thì trung bình mỗi bạn gấp được bao nhiêu bông?
-
-### Bài 3. (8 điểm) Trồng cây và chia đoạn — năm trường hợp
+### Bài 1. (8 điểm) Trồng cây và chia đoạn — năm trường hợp
 
 Vẽ một hình nhỏ ba khoảng để kiểm tra trước khi áp công thức.
 
-a) Quanh một hồ nước có chu vi 150 m, trồng cây cách nhau 6 m. Cần bao nhiêu cây?
-b) Đoạn đường dài 150 m, cây cách nhau 6 m, chỉ trồng ở một đầu. Cần bao nhiêu cây?
-c) Đoạn đường dài 12 m, cây cách nhau 2 m, không trồng ở cả hai đầu. Cần bao nhiêu cây?
-d) Cưa một khúc gỗ dài 78 m thành các đoạn dài 3 m. Phải cưa bao nhiêu nhát?
-e) Đoạn đường dài 40 m, trồng cây cách nhau 4 m, trồng cả ở hai đầu. Cần bao nhiêu cây?
-f) Đoạn đường dài 138 m, trồng cây cách nhau 6 m, trồng cả ở hai đầu. Cần bao nhiêu cây?
-g) Đoạn đường dài 128 m, cây cách nhau 4 m, không trồng ở cả hai đầu. Cần bao nhiêu cây?
+a) Cưa một khúc gỗ dài 228 m thành các đoạn dài 6 m. Phải cưa bao nhiêu nhát?
+b) Quanh một hồ nước có chu vi 75 m, trồng cây cách nhau 5 m. Cần bao nhiêu cây?
+c) Đoạn đường dài 36 m, cây cách nhau 3 m, chỉ trồng ở một đầu. Cần bao nhiêu cây?
+d) Đoạn đường dài 75 m, trồng cây cách nhau 3 m, trồng cả ở hai đầu. Cần bao nhiêu cây?
+e) Đoạn đường dài 64 m, cây cách nhau 2 m, không trồng ở cả hai đầu. Cần bao nhiêu cây?
 
-### Bài 4. (8 điểm) Điền số còn thiếu trong dãy
+### Bài 2. (8 điểm) Điền số còn thiếu trong dãy
 
 Điền số thích hợp vào chỗ chấm.
 
-a) 9, 11, 13, …, 17, 19
-b) 14, 24, 34, 44, …, 64
-c) 30, …, 36, 39, 42, 45
-d) 29, 39, …, 59, 69, 79
-e) 9, 19, 29, 39, …, 59
-f) 28, …, 38, 43, 48, 53
-g) 6, 12, 18, …, 30, 36
-h) 4, 14, …, 34, 44, 54
+a) 3, 9, 15, 21, …, 33
+b) 7, …, 13, 16, 19, 22
+c) 22, …, 32, 37, 42, 47
+d) 17, 20, …, 26, 29, 32
+e) 5, 7, …, 11, 13, 15
+f) 22, 25, 28, 31, …, 37
+g) 1, 5, 9, …, 17, 21
+h) 22, …, 34, 40, 46, 52
+
+### Bài 3. (8 điểm) Tìm x và tính chất của phép nhân
+
+Tìm x hoặc điền số thích hợp.
+
+a) x + 101 = 176
+b) 88 × 1 × 0 = …
+c) 2 × 157 = 157 × …
+d) x − 254 = 17
+e) 58 × 1 × 0 = …
+f) x − 185 = 314
+g) x + 5 = 194
+h) 5 × 268 = 268 × …
+
+### Bài 4. (8 điểm) Số nhà trên một dãy phố
+
+Một bên phố có các nhà mang số lẻ, bắt đầu từ số **7** và kết thúc ở số **23**, hai nhà liền nhau hơn kém nhau 2.
+
+a) Số nhà đầu dãy là 7, các nhà tiếp theo là 9, 11, … Số nhà thứ tư là số nào?
+b) Số nhà cuối dãy là 23. Dãy phố này có bao nhiêu nhà?
+c) Nhà thứ 7 tính từ đầu dãy mang số nào?
+d) Nhà mang số 17 là nhà thứ mấy tính từ đầu dãy?
+e) Các số nhà trong dãy này là số chẵn hay số lẻ? Vì sao?
 
 ### Bài 5. (8 điểm) Đếm số hạng của dãy cách đều
 
 Đếm số số hạng của mỗi dãy.
 
-a) Dãy 2, 6, 10, …, 26 có bao nhiêu số hạng?
-b) Dãy 8, 10, 12, …, 74 có bao nhiêu số hạng?
-c) Dãy 14, 24, 34, …, 254 có bao nhiêu số hạng?
-d) Dãy 9, 13, 17, …, 153 có bao nhiêu số hạng?
+a) Dãy 1, 5, 9, …, 57 có bao nhiêu số hạng?
+b) Dãy 11, 16, 21, …, 81 có bao nhiêu số hạng?
+c) Dãy 1, 5, 9, …, 41 có bao nhiêu số hạng?
+d) Dãy 13, 17, 21, …, 129 có bao nhiêu số hạng?
+e) Dãy 7, 10, 13, …, 106 có bao nhiêu số hạng?
+f) Dãy 10, 13, 16, …, 73 có bao nhiêu số hạng?
 
 ---
 
@@ -342,34 +341,34 @@ d) Dãy 9, 13, 17, …, 153 có bao nhiêu số hạng?
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài A.1
-**Đáp số:** a) 34 · b) 43 · c) 20 · d) 25 · e) 43 · f) 43
-**Hướng giải:** Tìm khoảng cách của dãy từ những cặp số đã biết đứng cạnh nhau, rồi lấy số đứng trước chỗ trống cộng thêm khoảng cách đó.
-**Nhãn tư duy:** TD4, TD1. Điểm chốt: Tìm khoảng cách ở **chỗ có hai số liền nhau đã biết**.
-**Lỗi thường gặp:** Lấy hiệu của hai số cách nhau một chỗ trống làm khoảng cách. Phòng: Đánh số thứ tự vị trí rồi mới tính khoảng cách.
+**Đáp số:** a) 5 chữ số, tổng 17 · b) 5 chữ số, tổng 25 · c) 5 chữ số, tổng 16 · d) 5 chữ số, tổng 30
+**Hướng giải:** Đếm số chữ số bằng cách tách số theo lớp (mỗi lớp 3 chữ số). Tổng các chữ số là cộng tất cả các chữ số lại, không phân biệt hàng.
+**Nhãn tư duy:** TD1. Điểm chốt: Tổng các chữ số **không** phụ thuộc thứ tự các chữ số.
+**Lỗi thường gặp:** Cộng cả giá trị hàng (ví dụ cộng 300 thay vì cộng 3). Phòng: Viết rời từng chữ số ra rồi mới cộng.
 
 ### Bài A.2
-**Đáp số:** a) chữ số 2, giá trị 20 000 · b) chữ số 5, giá trị 5 000 · c) chữ số 1, giá trị 100 · d) chữ số 1, giá trị 10 · e) chữ số 8, giá trị 8
-**Hướng giải:** Đếm hàng từ phải sang trái: đơn vị – chục – trăm – nghìn – chục nghìn – trăm nghìn – triệu. Giá trị của một chữ số bằng chính chữ số đó nhân với giá trị của hàng nó đứng.
-**Nhãn tư duy:** TD1. Điểm chốt: Phân biệt **chữ số** (một kí hiệu) với **giá trị** của chữ số (chữ số nhân giá trị hàng).
-**Lỗi thường gặp:** Đếm hàng từ trái sang phải nên lệch hàng. Phòng: Luôn viết số ra nháp rồi đánh dấu hàng đơn vị trước, đi ngược về trái.
+**Đáp số:** a) x = 51 · b) x = 49 · c) x = 58 · d) x = 55
+**Hướng giải:** Nhớ quy tắc: số hạng chưa biết = tổng − số hạng đã biết; số bị trừ = hiệu + số trừ; thừa số chưa biết = tích : thừa số đã biết; số bị chia = thương × số chia.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: x đứng ở **vị trí nào** trong phép tính quyết định quy tắc dùng.
+**Lỗi thường gặp:** Áp dụng nhầm quy tắc của số trừ cho số bị trừ. Phòng: Gọi tên x trước (x là số hạng? số bị trừ? thừa số?) rồi mới viết quy tắc.
 
 ### Bài A.3
-**Đáp số:** a) 5 · b) 8 · c) 8 · d) 1 · e) 50 000 + 1 000 + 800 + 70 + 8 · f) 29 · g) 51 879
+**Đáp số:** a) 63, 72, 81 · b) 19, 22, 25 · c) 108, 133, 158 · d) 45, 47, 49
+**Hướng giải:** Lấy số hạng sau trừ số hạng liền trước để tìm khoảng cách. Nếu các hiệu bằng nhau thì đó là dãy cách đều; cứ cộng thêm khoảng cách để viết tiếp.
+**Nhãn tư duy:** TD4. Điểm chốt: Kiểm tra hiệu ở **ít nhất ba cặp** liên tiếp trước khi kết luận quy luật.
+**Lỗi thường gặp:** Chỉ xét hai số đầu rồi vội kết luận. Phòng: Viết hiệu giữa các số hạng ngay dưới dấu ngoặc giữa chúng.
+
+### Bài A.4
+**Đáp số:** a) 4 · b) 9 · c) 6 · d) 4 · e) 4 000 + 600 + 10 + 9 · f) 20 · g) 4 620
 **Hướng giải:** Đếm hàng từ phải sang trái. Giá trị của một chữ số bằng chính chữ số đó nhân với giá trị hàng nó đứng. Hàng nào khuyết thì viết chữ số 0.
 **Nhãn tư duy:** TD1. Điểm chốt: Phân biệt **chữ số** với **giá trị** của chữ số.
 **Lỗi thường gặp:** Đếm hàng từ trái sang phải nên lệch hàng. Phòng: Đánh dấu hàng đơn vị trước, rồi đi ngược về bên trái.
 
-### Bài A.4
-**Đáp số:** a) 6 · b) 15 · c) 6 · d) 13 · e) 4
-**Hướng giải:** Chia số đã cho cho mẫu số. Chia hình thành mấy phần bằng nhau thì lấy một phần trong số đó.
-**Nhãn tư duy:** TD1. Điểm chốt: Một phần mấy thì **chia**, không nhân.
-**Lỗi thường gặp:** Nhân thay vì chia. Phòng: Kiểm tra: kết quả phải bé hơn số ban đầu.
-
 ### Bài A.5
-**Đáp số:** a) 49, 59, 69 · b) 27, 33, 39 · c) 45, 52, 59 · d) 63, 78, 93 · e) 98, 113, 128 · f) 88, 103, 118 · g) 48, 53, 58
-**Hướng giải:** Lấy số hạng sau trừ số hạng liền trước để tìm khoảng cách. Nếu các hiệu bằng nhau thì đó là dãy cách đều; cứ cộng thêm khoảng cách để viết tiếp.
-**Nhãn tư duy:** TD4. Điểm chốt: Kiểm tra hiệu ở **ít nhất ba cặp** liên tiếp trước khi kết luận quy luật.
-**Lỗi thường gặp:** Chỉ xét hai số đầu rồi vội kết luận. Phòng: Viết hiệu giữa các số hạng ngay dưới dấu ngoặc giữa chúng.
+**Đáp số:** a) 42 · b) 58 · c) 54 · d) 53 · e) 44 · f) 39 · g) 53
+**Hướng giải:** Tìm khoảng cách của dãy từ những cặp số đã biết đứng cạnh nhau, rồi lấy số đứng trước chỗ trống cộng thêm khoảng cách đó.
+**Nhãn tư duy:** TD4, TD1. Điểm chốt: Tìm khoảng cách ở **chỗ có hai số liền nhau đã biết**.
+**Lỗi thường gặp:** Lấy hiệu của hai số cách nhau một chỗ trống làm khoảng cách. Phòng: Đánh số thứ tự vị trí rồi mới tính khoảng cách.
 
 ### Bài B.1
 **Đáp số:** a) Tổng dãy số và quy luật nâng cao · b) C — Dãy số & Quy luật · c) 5 · d) ở mọi bài thuộc dãy số & quy luật, vì các chương sau đều dùng lại nền này · e) giải nhanh và chắc các bài tổng dãy số cách đều — kỹ thuật ghép cặp
@@ -390,7 +389,7 @@ d) Dãy 9, 13, 17, …, 153 có bao nhiêu số hạng?
 **Lỗi thường gặp:** Không nhớ mốc kiểm tra nên ôn muộn. Phòng: Ghi mốc kiểm tra vào lịch học ngay buổi đầu của cụm.
 
 ### Bài B.4
-**Đáp số:** a) Dãy có ô trống ở giữa · b) Dãy số kèm dấu … ở cuối · c) “Trồng cây”, “cột điện”, “quanh ao” · d) Hiệu giữa các số hạng tăng đều đặn · e) Dãy số kết thúc bằng dấu … · f) “Có bao nhiêu số … từ … đến …”
+**Đáp số:** a) Dãy có ô trống ở giữa · b) Dãy số kèm dấu … ở cuối · c) Hình xếp thêm đều đặn theo thứ tự · d) Hiệu giữa các số hạng tăng đều đặn · e) Một dãy số thật ngoài đời, các số cách nhau đều nhau · f) “Trồng cây”, “cột điện”, “quanh ao”
 **Hướng giải:** Dấu hiệu nhận biết là những chữ có mặt trong đề bài, không phải là cách giải. Đọc lại cột “Dữ liệu nhận biết” trong bảng phân tích chuyên sâu.
 **Nhãn tư duy:** TD2. Điểm chốt: Dấu hiệu nằm ở **chữ trong đề**, không nằm ở phép tính.
 **Lỗi thường gặp:** Trả lời bằng cách giải thay vì bằng dấu hiệu. Phòng: Tự hỏi: em nhìn thấy chữ gì trong đề thì biết đây là dạng này?
@@ -408,25 +407,25 @@ d) Dãy 9, 13, 17, …, 153 có bao nhiêu số hạng?
 **Lỗi thường gặp:** Vẽ sơ đồ thành danh sách gạch đầu dòng, mất tính liên kết. Phòng: Bắt buộc vẽ toả từ tâm, mỗi nhánh một màu.
 
 ### Bài C.2
-**Đáp số:** a) Dãy số cách đều · b) Dãy số cách đều · c) Quan hệ số cây – số khoảng · d) Dãy hiệu, tổng dãy cách đều · e) Dãy cách đều, dãy nhân, dãy hiệu tăng đều · f) Dãy cách đều, dấu hiệu chia hết
+**Đáp số:** a) Dãy số cách đều · b) Dãy số cách đều · c) Dãy cách đều, số hạng thứ n · d) Dãy hiệu, tổng dãy cách đều · e) Số hạng thứ n của dãy cách đều; đếm số hạng · f) Quan hệ số cây – số khoảng
 **Hướng giải:** Mỗi dạng bài có một công thức hoặc một quy tắc gốc. Chép lại từ cột “Kiến thức liên quan” của bảng phân tích chuyên sâu.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Công thức phải **thuộc lòng**, không tra sách khi làm bài.
 **Lỗi thường gặp:** Nhớ công thức nhưng không nhớ nó dùng cho dạng nào. Phòng: Luôn viết công thức kèm tên dạng bài đi cùng nó.
 
 ### Bài C.3
-**Đáp số:** a) Xác định khoảng cách từ cặp liền nhau · b) Tính hiệu các cặp liên tiếp rồi cộng tiếp · c) Số khoảng rồi chọn công thức theo trường hợp · d) Lập dãy hiệu rồi cộng dần · e) Thử hiệu → thử thương → thử dãy hiệu
+**Đáp số:** a) Xác định khoảng cách từ cặp liền nhau · b) Tính hiệu các cặp liên tiếp rồi cộng tiếp · c) Lập bảng ba hình đầu rồi áp công thức · d) Lập dãy hiệu rồi cộng dần · e) Số hạng thứ k = số đầu + (k − 1) × khoảng cách
 **Hướng giải:** Dạng nào có quan hệ hơn kém thì vẽ sơ đồ đoạn thẳng; dạng nào có nhiều trường hợp thì kẻ bảng; dạng nào về hình thì vẽ hình và ghi số đo lên hình.
 **Nhãn tư duy:** TD3. Điểm chốt: Chọn đúng **kiểu minh hoạ** giúp nhìn ra lời giải nhanh hơn hẳn.
 **Lỗi thường gặp:** Dạng nào cũng vẽ sơ đồ đoạn thẳng, kể cả bài đếm. Phòng: Hỏi trước: bài này có quan hệ hơn kém, có nhiều trường hợp, hay có hình?
 
 ### Bài C.4
-**Đáp số:** a) Dãy có ô trống ở giữa · b) Dãy số kèm dấu … ở cuối · c) “Trồng cây”, “cột điện”, “quanh ao” · d) Hiệu giữa các số hạng tăng đều đặn · e) Dãy số kết thúc bằng dấu … · f) “Có bao nhiêu số … từ … đến …”
+**Đáp số:** a) Dãy có ô trống ở giữa · b) Dãy số kèm dấu … ở cuối · c) Hình xếp thêm đều đặn theo thứ tự · d) Hiệu giữa các số hạng tăng đều đặn · e) Một dãy số thật ngoài đời, các số cách nhau đều nhau · f) “Trồng cây”, “cột điện”, “quanh ao”
 **Hướng giải:** Dấu hiệu nhận biết luôn là **chữ có trong đề**: một cụm từ khoá, một kiểu dữ kiện, hoặc một cách hỏi.
 **Nhãn tư duy:** TD2. Điểm chốt: Đọc vị được đề là **đã đi được nửa đường**.
 **Lỗi thường gặp:** Lẫn dấu hiệu nhận biết với phương pháp giải. Phòng: Dấu hiệu trả lời câu “thấy gì?”, phương pháp trả lời câu “làm gì?”.
 
 ### Bài C.5
-**Đáp số:** a) Chỗ trống nằm giữa hai số đã biết thì bằng trung bình cộng của chúng. · b) Ghi khoảng cách vào giữa các số hạng để nhìn ra quy luật ngay. · c) Khép kín thì số cây bằng đúng số khoảng. · d) Số hạng thứ n = số đầu + (n − 1) × n : 2 khi hiệu là 1, 2, 3… · e) Số sau gấp đôi số trước là dấu hiệu quen nhất của dãy nhân. · f) Số các số chia hết cho d từ 1 đến n bằng phần nguyên của n : d.
+**Đáp số:** a) Chỗ trống nằm giữa hai số đã biết thì bằng trung bình cộng của chúng. · b) Ghi khoảng cách vào giữa các số hạng để nhìn ra quy luật ngay. · c) Ba hình đầu là đủ để khẳng định quy luật cách đều. · d) Số hạng thứ n = số đầu + (n − 1) × n : 2 khi hiệu là 1, 2, 3… · e) Nhớ một câu: **số vật = số khoảng + 1** khi đếm cả hai đầu. · f) Khép kín thì số cây bằng đúng số khoảng.
 **Hướng giải:** Cách xử lý nhanh nhất thường là một nhận xét giúp bỏ bớt một hai bước tính. Chép lại từ cột “Cách xử lý nhanh nhất”.
 **Nhãn tư duy:** TD5, TD6. Điểm chốt: Điểm 10 đến từ **mẹo đúng bản chất**, không phải mẹo học vẹt.
 **Lỗi thường gặp:** Dùng mẹo mà không hiểu vì sao đúng nên áp dụng sai chỗ. Phòng: Với mỗi mẹo, viết thêm một dòng “mẹo này đúng vì …”.
@@ -446,10 +445,10 @@ d) Dãy 9, 13, 17, …, 153 có bao nhiêu số hạng?
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài D.3
-**Đáp số:** a) Quan hệ số cây – số khoảng · b) Bài toán trồng cây · c) “Trồng cây”, “cột điện”, “quanh ao” · d) Số khoảng rồi chọn công thức theo trường hợp · e) Máy móc cộng 1 cho mọi trường hợp. · f) 6
-**Hướng giải:** Tính số khoảng trước: độ dài chia khoảng cách. Trồng cả hai đầu thì số cây hơn số khoảng 1; trồng một đầu thì bằng số khoảng; không trồng đầu nào thì kém 1; trồng khép kín thì bằng đúng số khoảng.
-**Nhãn tư duy:** TD3, TD6. Điểm chốt: Bốn trường hợp cho **bốn đáp số khác nhau** — đọc kĩ đề.
-**Lỗi thường gặp:** Máy móc cộng 1 cho mọi trường hợp. Phòng: Vẽ một hình nhỏ với ba khoảng để đếm thử.
+**Đáp số:** a) Dãy cách đều, số hạng thứ n · b) Quy luật hình đưa về dãy số · c) Hình xếp thêm đều đặn theo thứ tự · d) Lập bảng ba hình đầu rồi áp công thức · e) Nhân khoảng cách với n nên thừa đúng một khoảng. · f) 21
+**Hướng giải:** Số que các hình lập thành dãy cách đều. Số hạng thứ n = số đầu + (n − 1) × khoảng cách. Nhân với **(n − 1)** vì đếm khoảng, không đếm hình.
+**Nhãn tư duy:** TD4, TD3. Điểm chốt: Nhân với **(n − 1)** chứ không phải n.
+**Lỗi thường gặp:** Nhân khoảng cách với n nên thừa đúng một khoảng. Phòng: Kiểm chứng công thức với hình thứ 2 trước khi dùng cho hình thứ n.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài D.4
@@ -460,43 +459,43 @@ d) Dãy 9, 13, 17, …, 153 có bao nhiêu số hạng?
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài D.5
-**Đáp số:** a) Dãy cách đều, dãy nhân, dãy hiệu tăng đều · b) Tìm quy luật dãy số · c) Dãy số kết thúc bằng dấu … · d) Thử hiệu → thử thương → thử dãy hiệu · e) Không tìm ra hiệu đều thì bỏ cuộc. · f) 15
-**Hướng giải:** Thử theo thứ tự: (1) lấy hiệu hai số liên tiếp — bằng nhau thì là dãy cách đều; (2) lấy thương — bằng nhau thì là dãy nhân; (3) xem dãy hiệu có tăng đều không.
-**Nhãn tư duy:** TD4, TD6. Điểm chốt: Thử đủ **ba hướng**, đừng dừng ở hướng thứ nhất.
-**Lỗi thường gặp:** Không tìm ra hiệu đều thì bỏ cuộc. Phòng: Viết dãy hiệu xuống ngay dưới dãy gốc.
+**Đáp số:** a) Số hạng thứ n của dãy cách đều; đếm số hạng · b) Dãy số cách đều · c) Một dãy số thật ngoài đời, các số cách nhau đều nhau · d) Số hạng thứ k = số đầu + (k − 1) × khoảng cách · e) Lấy (số cuối − số đầu) : 2 rồi trả lời luôn. · f) 20 nhà
+**Hướng giải:** Dãy số nhà là dãy cách đều. Số hạng thứ k bằng số đầu cộng (k − 1) lần khoảng cách; còn **số lượng số hạng** bằng số khoảng cách cộng 1.
+**Nhãn tư duy:** TD2, TD4. Điểm chốt: Số khoảng cách luôn ít hơn số vật đúng 1 — quên cộng 1 là mất bài.
+**Lỗi thường gặp:** Lấy (số cuối − số đầu) : 2 rồi trả lời luôn. Phòng: Thử với dãy ngắn: 1, 3, 5 có 3 số nhưng chỉ 2 khoảng.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.1
-**Đáp số:** a) x = 399 · b) 0 · c) x = 175 · d) 4 · e) 2
-**Hướng giải:** BẪY — Thừa số 0. Gọi tên vai trò của x trước: số hạng, số bị trừ hay số trừ. Phép nhân có tính giao hoán và kết hợp; nhân với 1 giữ nguyên, nhân với 0 luôn bằng 0.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu.
-**Lỗi thường gặp:** Áp dụng quy tắc của số trừ cho số bị trừ. Phòng: Viết ra vai trò của x trước khi viết phép tính.
-**Gợi ý 3 tầng:** (1) x đóng vai trò gì trong phép tính? — (2) Viết quy tắc tương ứng ra nháp. — (3) Thay x tìm được vào đề để thử lại.
-
-### Bài E.2
-**Đáp số:** a) 45 · b) Thảo (21 bông) · c) Yến (3 bông) · d) 18 · e) 16
-**Hướng giải:** Đọc bảng theo từng cột, ghi lại các số. Tổng là cộng tất cả; nhiều nhất, ít nhất là so sánh; trung bình cộng là tổng chia số bạn.
-**Nhãn tư duy:** TD1, TD2. Điểm chốt: Đọc **đúng cột** — mỗi số gắn với đúng một tên.
-**Lỗi thường gặp:** Đọc lệch cột nên gán nhầm số cho bạn khác. Phòng: Dùng ngón tay dò theo cột khi đọc bảng.
-**Gợi ý 3 tầng:** (1) Ghi lại các số liệu ra một hàng. — (2) Cộng tất cả để có tổng. — (3) So sánh để tìm lớn nhất, bé nhất.
-
-### Bài E.3
-**Đáp số:** a) 25 · b) 25 · c) 5 · d) 25 · e) 11 · f) 24 · g) 31
+**Đáp số:** a) 37 · b) 15 · c) 12 · d) 26 · e) 31
 **Hướng giải:** BẪY — Năm trường hợp khác nhau. Tính **số khoảng** trước: độ dài chia khoảng cách. Rồi chọn công thức theo trường hợp — trồng cả hai đầu thì cộng 1, một đầu thì bằng, không đầu nào thì trừ 1, khép kín thì bằng, cưa thành đoạn thì trừ 1.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Năm trường hợp cho **năm đáp số khác nhau** với cùng một số khoảng.
 **Lỗi thường gặp:** Máy móc cộng 1 cho mọi trường hợp. Phòng: Vẽ hình ba khoảng, đếm tay rồi mới áp dụng cho số lớn.
 **Gợi ý 3 tầng:** (1) Số khoảng bằng bao nhiêu? — (2) Đề nói trồng cả hai đầu, một đầu, hay khép kín? — (3) Cưa thành đoạn thì số nhát cưa ít hơn số đoạn 1.
 
-### Bài E.4
-**Đáp số:** a) 15 · b) 54 · c) 33 · d) 49 · e) 49 · f) 33 · g) 24 · h) 24
+### Bài E.2
+**Đáp số:** a) 27 · b) 10 · c) 27 · d) 23 · e) 9 · f) 34 · g) 13 · h) 28
 **Hướng giải:** BẪY — Hai số hai bên chỗ trống cách nhau hai khoảng. Tìm khoảng cách từ hai số liền nhau đã biết, rồi cộng khoảng cách ấy vào số đứng trước chỗ trống. Kiểm tra lại bằng số đứng sau.
 **Nhãn tư duy:** TD4, TD1. Điểm chốt: Tìm khoảng cách ở chỗ có **hai số liền nhau** đã biết.
 **Lỗi thường gặp:** Lấy hiệu hai số cách nhau một chỗ trống làm khoảng cách. Phòng: Đánh số thứ tự vị trí rồi mới tính khoảng cách.
 **Gợi ý 3 tầng:** (1) Tìm hai số liền nhau đã biết. — (2) Hiệu của chúng là khoảng cách. — (3) Cộng khoảng cách vào số đứng ngay trước chỗ trống.
 
+### Bài E.3
+**Đáp số:** a) x = 75 · b) 0 · c) 2 · d) x = 271 · e) 0 · f) x = 499 · g) x = 189 · h) 5
+**Hướng giải:** BẪY — Thừa số 0. Gọi tên vai trò của x trước: số hạng, số bị trừ hay số trừ. Phép nhân có tính giao hoán và kết hợp; nhân với 1 giữ nguyên, nhân với 0 luôn bằng 0.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu.
+**Lỗi thường gặp:** Áp dụng quy tắc của số trừ cho số bị trừ. Phòng: Viết ra vai trò của x trước khi viết phép tính.
+**Gợi ý 3 tầng:** (1) x đóng vai trò gì trong phép tính? — (2) Viết quy tắc tương ứng ra nháp. — (3) Thay x tìm được vào đề để thử lại.
+
+### Bài E.4
+**Đáp số:** a) 13 · b) (23 − 7) : 2 + 1 = 9 nhà · c) 7 + (7 − 1) × 2 = 19 · d) (17 − 7) : 2 + 1 = 6 · e) số lẻ — bắt đầu từ một số lẻ rồi cứ cộng thêm 2, cộng 2 không làm đổi tính chẵn lẻ
+**Hướng giải:** BẪY — Đếm số nhà bằng cách lấy hiệu chia khoảng cách. Dãy số nhà là dãy cách đều. Số hạng thứ k bằng số đầu cộng (k − 1) lần khoảng cách; còn **số lượng số hạng** bằng số khoảng cách cộng 1.
+**Nhãn tư duy:** TD2, TD4. Điểm chốt: Số khoảng cách luôn ít hơn số vật đúng 1 — quên cộng 1 là mất bài.
+**Lỗi thường gặp:** Lấy (số cuối − số đầu) : 2 rồi trả lời luôn. Phòng: Thử với dãy ngắn: 1, 3, 5 có 3 số nhưng chỉ 2 khoảng.
+**Gợi ý 3 tầng:** (1) Hai nhà liền nhau hơn kém nhau mấy đơn vị? — (2) Từ nhà đầu tới nhà thứ k phải bước bao nhiêu lần? — (3) Đếm số nhà thì cộng thêm 1 vào số khoảng cách.
+
 ### Bài E.5
-**Đáp số:** a) 7 · b) 34 · c) 25 · d) 37
-**Hướng giải:** BẪY — Quên cộng 1. Số số hạng = (số cuối − số đầu) : khoảng cách + 1. Phần chia cho biết số khoảng; số số hạng nhiều hơn số khoảng đúng 1.
+**Đáp số:** a) 15 · b) 15 · c) 11 · d) 30 · e) 34 · f) 22
+**Hướng giải:** Số số hạng = (số cuối − số đầu) : khoảng cách + 1. Phần chia cho biết số khoảng; số số hạng nhiều hơn số khoảng đúng 1.
 **Nhãn tư duy:** TD4, TD3. Điểm chốt: Số khoảng ít hơn số số hạng đúng **1**.
 **Lỗi thường gặp:** Quên cộng 1. Phòng: Thử với dãy ngắn ba số để kiểm tra công thức.
 **Gợi ý 3 tầng:** (1) Khoảng cách của dãy bằng bao nhiêu? — (2) Từ số đầu tới số cuối có mấy khoảng? — (3) Số số hạng nhiều hơn số khoảng 1.

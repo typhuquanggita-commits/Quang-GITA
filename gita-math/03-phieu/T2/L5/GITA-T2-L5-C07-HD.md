@@ -64,7 +64,7 @@ Học thuộc theo cặp **dạng bài – công thức**, không học rời.
 | 10 | Tính nhanh tổng nhiều số hạng | Tính chất giao hoán, kết hợp của phép cộng |
 | 11 | Tìm x trong phép tính một bước | Quan hệ giữa các thành phần của phép tính |
 | 12 | Tìm x nhiều bước có ngoặc | Thứ tự thực hiện phép tính, quan hệ thành phần |
-| 13 | Tính nhanh nhờ thừa số 0 | Tính chất nhân với 0, phép trừ hai số bằng nhau |
+| 13 | Nhân một số với một tổng | Tính chất phân phối của phép nhân với phép cộng |
 
 ---
 
@@ -101,7 +101,7 @@ Trước khi tra bảng, đi qua cây quyết định đọc vị của nhóm ch
 | Tính nhanh tổng nhiều số hạng | Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm | Ghép cặp tròn rồi cộng | Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10. |
 | Tìm x trong phép tính một bước | Có chữ x đứng trong một phép tính | Gọi tên vai trò của x rồi dùng quy tắc tương ứng | Thử lại bằng cách thay x vào đề — mất 3 giây nhưng chắc chắn. |
 | Tìm x nhiều bước có ngoặc | x nằm trong ngoặc, ngoài ngoặc còn phép tính khác | Bóc lớp từ ngoài vào trong | Thay x tìm được vào đề, tính một lượt để thử lại. |
-| Tính nhanh nhờ thừa số 0 | Trong biểu thức có ngoặc chứa hai số giống nhau trừ nhau | Quét tìm cụm bằng 0 trước khi tính | Nhìn dấu ngoặc trước tiên — bẫy thường nằm ở đó. |
+| Nhân một số với một tổng | Nhiều dòng hoá đơn dùng chung một đơn giá | Gom số lượng rồi nhân một lần | Chênh lệch tiền = chênh lệch số lượng × đơn giá, không cần tính tổng hai bên. |
 
 ---
 
@@ -164,7 +164,7 @@ Trả lời được ngay trong 10 giây thì đánh ✔. Phải nghĩ lâu thì
 | 11 | Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. | Đọc lướt cả dãy, khoanh tròn cặp số cộng lại tròn chục, tròn trăm. |
 | 12 | Áp dụng nhầm quy tắc của số trừ cho số bị trừ. | Gọi tên x trước (x là số hạng? số bị trừ? thừa số?) rồi mới viết quy tắc. |
 | 13 | Nhân phá ngoặc sai dấu, hoặc gỡ phép trong ngoặc trước. | Ghi rõ từng bước trên một dòng riêng, mỗi dòng chỉ khác dòng trên một phép. |
-| 14 | Lao vào nhân từng cặp số lớn rồi mới phát hiện kết quả bằng 0. | Đọc hết biểu thức một lượt, khoanh các cụm giống nhau bị trừ cho nhau. |
+| 14 | Nhân từng dòng rồi cộng, dài và dễ sai ở một dòng nào đó. | Nhìn cột đơn giá trước: có dòng nào trùng đơn giá không? |
 
 ---
 

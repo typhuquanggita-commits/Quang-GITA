@@ -30,43 +30,43 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần I**
 
-- **Bài I.1** — a) 5 · b) 13 · c) 10 · d) 11 · e) 4 · f) 11
-- **Bài I.2** — a) số lớn 191, số bé 165 · b) số lớn 110, số bé 70 · c) số lớn 220, số bé 146 · d) số lớn 168, số bé 84 · e) số lớn 89, số bé 47 · f) số lớn 49, số bé 31
-- **Bài I.3** — a) 31 · b) 45 · c) 63 · d) 26
-- **Bài I.4** — a) 3 864 · b) 3 228 · c) 383 · d) 964 · e) 405
-- **Bài I.5** — a) 5 · b) 4 · c) 9 · d) 3 · e) 3 · f) 13 · g) 12
+- **Bài I.1** — a) 14 · b) 6 · c) 14 · d) 7 · e) 10 · f) 6 · g) 15 · h) 2
+- **Bài I.2** — a) > · b) 5 · c) 38 000 · d) 2 628 · e) 16 · f) > · g) 18 851
+- **Bài I.3** — a) 55 · b) 153 · c) 22 · d) 54 · e) 17
+- **Bài I.4** — a) 4 · b) 8 · c) 8 · d) 16 · e) 3
+- **Bài I.5** — a) 2 427 · b) 493 · c) 445 · d) 284 · e) 7 936 · f) 306
 
 **Phần II**
 
-- **Bài II.1** — a) 103 kg · b) 235 kg · c) 103 kg · d) 1 092 kg · e) 189 kg · f) 54 kg
-- **Bài II.2** — a) 12 · b) 8 · c) 30 · d) Hà (12) · e) Chi (4) · f) 8 · g) 6 hình
-- **Bài II.3** — a) 43 · b) Thảo (18 bông) · c) Quân (6 bông) · d) 12 · e) 8
-- **Bài II.4** — a) 8 · b) x = 176 · c) 0 · d) x = 563 · e) 0 · f) x = 238 · g) 3
-- **Bài II.5** — a) 585 · b) 565 dư 1 · c) 5 616 · d) 550 dư 6 · e) 798
+- **Bài II.1** — a) 30 · b) 30 · c) 210 · d) Sơn (80) · e) Yến (30) · f) 50 · g) 6 hình
+- **Bài II.2** — a) 72 · b) Tuấn (23 bông) · c) Minh (6 bông) · d) 17 · e) 15
+- **Bài II.3** — a) Tổ 3 — 16 bạn · b) Tổ 1 — 12 bạn · c) 25 bạn nam và 30 bạn nữ · d) 55 bạn · e) 16 − 12 = 4 bạn · f) nữ nhiều hơn 5 bạn
+- **Bài II.4** — a) 290 kg · b) 752 kg · c) 66 kg · d) 141 kg
+- **Bài II.5** — a) hợp tác xã: 228 kg, thư viện: 126 kg · b) 5A: 41 quyển, 5B: 23 quyển · c) nhóm Sao Mai: 390 cây, đội Một: 352 cây · d) 3B: 170 quyển, 5B: 102 quyển · e) hợp tác xã: 148 kg, thư viện: 100 kg
 
 **Phần III**
 
-- **Bài III.1** — a) 36 · b) 144 cm² · c) 4 cm² · d) 72 cm² · e) 36 cm² · f) 68 cm
-- **Bài III.2** — a) 288 · b) 43 · c) 20 · d) 49
-- **Bài III.3** — a) có (tổng các chữ số bằng 18) · b) không (tận cùng là 4) · c) có (tận cùng là 2) · d) không (tổng các chữ số bằng 13) · e) không (tận cùng là 1) · f) không (tận cùng là 4) · g) không (tổng các chữ số bằng 16)
-- **Bài III.4** — a) 109 · b) Thứ Sáu (38 quyển) · c) Thứ Năm (5 quyển) · d) 33 · e) 54 · f) 22
-- **Bài III.5** — a) 40 kg · b) 36 kg · c) 32 kg · d) 14 kg · e) 36 kg
+- **Bài III.1** — a) 94 · b) Thứ Ba (40 quyển) · c) Thứ Tư (5 quyển) · d) 35 · e) 65 · f) 29
+- **Bài III.2** — a) 30 kg · b) 20 kg · c) 100 kg · d) 16 kg · e) 9 kg
+- **Bài III.3** — a) 16 · b) 5 đường ngang, 5 đường dọc · c) 100 · d) 30 · e) 70
+- **Bài III.4** — a) 8 · b) 10 · c) 28 · d) hình thứ 6 · e) 204
+- **Bài III.5** — a) 200 · b) 70 · c) 83 · d) 57 · e) 207 · f) 65
 
 **Phần IV**
 
-- **Bài IV.1** — a) chu vi 72 cm, diện tích 288 cm² · b) chu vi 88 cm, diện tích 363 cm² · c) chu vi 72 cm, diện tích 288 cm² · d) chu vi 42 cm, diện tích 98 cm² · e) chu vi 30 cm, diện tích 36 cm²
-- **Bài IV.2** — a) cạnh 37 cm, diện tích 1 369 cm² · b) 18 cm · c) hình chữ nhật · d) hình chữ nhật · e) cạnh 31 cm, diện tích 961 cm² · f) 4 cm
-- **Bài IV.3** — a) 1 phần 5 · b) 30 quyển · c) 110 · d) 12 quyển · e) 51 · f) 1 phần 2 · g) 32 quyển
-- **Bài IV.4** — a) 250 g · b) 1 000 g · c) 100 g · d) 100 g
-- **Bài IV.5** — a) 55 · b) 132 · c) 117 · d) 174
+- **Bài IV.1** — a) 150 g · b) 600 g · c) 750 g · d) 125 g
+- **Bài IV.2** — a) 96 · b) 114 · c) 84 · d) 200 · e) 192 · f) 144
+- **Bài IV.3** — a) 45 · b) 1 phần 2 · c) 104 quyển · d) 1 phần 3 · e) 26 quyển
+- **Bài IV.4** — a) x = 31 · b) x = 160 · c) x = 129 : 4 · d) x = 23
+- **Bài IV.5** — a) 118 · b) 148 · c) 44 · d) 113 · e) 17 · f) 60 · g) 95
 
 **Phần V**
 
-- **Bài V.1** — a) 48 quyển · b) 48 quyển · c) 16 quyển · d) 32 quyển · e) 64 quyển · f) 32 quyển
-- **Bài V.2** — a) 171 quyển · b) 42 quyển · c) 78 quyển · d) 96 quyển
-- **Bài V.3** — a) 4 · b) 5 · c) 7 · d) 0 · e) 7 · f) 8
-- **Bài V.4** — a) 325 · b) 2 550 · c) 420 · d) 55 · e) 110
-- **Bài V.5** — a) 28 · b) không thay đổi · c) 28 · d) giảm đi 2 lần số bé — luôn là một số chẵn · e) không thay đổi · f) chẵn · g) có
+- **Bài V.1** — a) 300 · b) không thay đổi · c) 300 · d) giảm đi 2 lần số bé — luôn là một số chẵn · e) không thay đổi · f) chẵn · g) có
+- **Bài V.2** — a) 51 quyển · b) 153 quyển · c) 51 quyển · d) 102 quyển · e) 102 quyển · f) 68 quyển
+- **Bài V.3** — a) 189 · b) 51 · c) 342 · d) 252
+- **Bài V.4** — a) 6 quyển · b) 27 quyển · c) 57 quyển · d) 84 quyển · e) 30 quyển
+- **Bài V.5** — a) 0 · b) 2 · c) 3 · d) 4 · e) 2 · f) 4 · g) 1
 
 ---
 
@@ -75,86 +75,6 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 Mỗi bài có hai phần: **các bước giải** với số liệu thật của chính bài ấy, và **cách nghĩ** áp dụng cho mọi bài cùng dạng. Đọc kĩ phần chữ đậm — đó là câu cần nhớ, không phải con số.
 
 ### Bài I.1 — Tìm một phần mấy của một số
-
-**Các bước giải**
-
-Xét ý a: Tìm 1 phần 2 của 10.
-
-Đọc vị: đây là dạng **Tìm một phần mấy của một số**; dấu hiệu là Cụm “một phần mấy của …”.
-
-Kiến thức phải dùng: Phân số dạng một phần mấy.
-
-Cách làm: Chia số đó cho mẫu số.
-
-Lối tắt: Kết quả luôn nhỏ hơn số ban đầu — dùng để kiểm tra ngay.
-
-Kết quả: **5**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Muốn tìm một phần mấy của một số, ta chia số đó cho mẫu số. Ví dụ tìm một phần tư của 20 thì lấy 20 chia 4.
-
-*Điểm chốt:* Một phần mấy thì **chia** cho số đó.
-
-### Bài I.2 — Tìm hai số khi biết tổng và hiệu
-
-**Các bước giải**
-
-Xét ý a: Tổng hai số là 356, hiệu hai số là 26. Tìm hai số đó.
-
-Đọc vị: đây là dạng **Bài toán tổng – hiệu**; dấu hiệu là Đề cho **tổng** và **hiệu** của hai số.
-
-Kiến thức phải dùng: Công thức tổng – hiệu, sơ đồ đoạn thẳng.
-
-Cách làm: Vẽ sơ đồ, đưa về hai phần bằng nhau.
-
-Lối tắt: Số lớn và số bé luôn có trung bình cộng bằng nửa tổng.
-
-Kết quả: **số lớn 191, số bé 165**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Số lớn = (tổng + hiệu) : 2. Số bé = (tổng − hiệu) : 2. Cách hiểu: vẽ hai đoạn thẳng, đoạn dài hơn phần hiệu; bớt phần hiệu đi thì hai đoạn bằng nhau, mỗi đoạn là số bé.
-
-*Điểm chốt:* Cộng hiệu ra **số lớn**, trừ hiệu ra **số bé** — nhớ đúng chiều.
-
-### Bài I.3 — Nhiều hơn – ít hơn, gấp – kém
-
-**Các bước giải**
-
-Xét ý a: Hà có 39 quyển vở, Trang có ít hơn Hà 8 quyển. Trang có bao nhiêu quyển vở?
-
-Đọc vị: đây là dạng **Quan hệ nhiều hơn – ít hơn, gấp – kém**; dấu hiệu là Các cụm “nhiều hơn”, “ít hơn”, “gấp … lần”, “kém … lần”.
-
-Kiến thức phải dùng: Bốn phép tính, từ khoá chỉ quan hệ.
-
-Cách làm: Đọc vị từ khoá → chọn phép tính.
-
-Lối tắt: Kết quả lớn hơn hay bé hơn số đã cho? Trả lời được là biết ngay phép tính.
-
-Kết quả: **31**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
-
-*Điểm chốt:* Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
-
-### Bài I.4 — Đặt tính rồi tính (nhân, chia)
-
-**Các bước giải**
-
-Xét ý a: 483 × 8
-
-Đọc vị: đây là dạng **Nhân, chia số tự nhiên**; dấu hiệu là Yêu cầu “đặt tính rồi tính” với phép nhân, chia.
-
-Kiến thức phải dùng: Kĩ thuật đặt tính nhân, chia.
-
-Cách làm: Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ chữ số.
-
-Lối tắt: Kiểm tra kết quả bằng phép tính ngược: thương × số chia = số bị chia.
-
-Kết quả: **3 864**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
-
-*Điểm chốt:* Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
-
-### Bài I.5 — Tìm một phần mấy của một số
 
 **Các bước giải**
 
@@ -174,39 +94,103 @@ Kết quả luôn **bé hơn** số ban đầu — dùng để tự kiểm tra.
 
 *Phải chắc trước khi làm bài này:* Bảng chia từ 2 đến 9.
 
-### Bài II.1 — Trung bình cộng trong tình huống thực tế
+### Bài I.2 — Mi-li-lít và lít
 
 **Các bước giải**
 
-Xét ý a: 4 ngày đầu tuần một cửa hàng bán được lần lượt 94, 108, 106, 104 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
+Xét ý a: 6 l … 2 597 ml
 
-Đọc vị: đây là dạng **Ba dạng bài trung bình cộng**; dấu hiệu là Cụm “trung bình mỗi …”.
+Đọc vị: đây là dạng **Đổi và so sánh đơn vị dung tích**; dấu hiệu là Có chữ l, ml trong đề.
 
-Kiến thức phải dùng: Quan hệ tổng – số lượng – trung bình cộng.
+Kiến thức phải dùng: Quan hệ lít – mi-li-lít.
 
-Cách làm: Đi qua tổng làm trung gian.
+Cách làm: Đưa về cùng đơn vị rồi tính hoặc so sánh.
 
-Lối tắt: Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng.
+Lối tắt: Nhân 1 000 là thêm ba chữ số 0 vào bên phải.
 
-Kết quả: **103 kg**.
+Kết quả: **>**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Ba dạng ngược nhau: biết các số tìm trung bình cộng (cộng rồi chia); biết trung bình cộng tìm tổng (nhân); biết trung bình cộng và một số số hạng, tìm số hạng còn thiếu (lấy tổng trừ đi các số đã biết).
+**Cách nghĩ chung cho mọi bài cùng dạng.** 1 lít = 1 000 mi-li-lít. Đổi từ đơn vị lớn sang đơn vị bé thì nhân, ngược lại thì chia. Muốn so sánh thì phải đưa về cùng một đơn vị trước.
 
-*Điểm chốt:* Từ trung bình cộng luôn tìm được **tổng** trước, rồi mới tính tiếp.
+*Điểm chốt:* So sánh **chỉ sau khi** đã đưa về cùng đơn vị.
 
-### Bài II.2 — Đọc và lập biểu đồ tranh
+*Muốn khó hơn:* Bài rót nước: một can 5 lít rót đầy mấy chai 500 ml.
+
+*Phải chắc trước khi làm bài này:* Nhân, chia với 1 000 và so sánh số tự nhiên.
+
+### Bài I.3 — Nhiều hơn – ít hơn, gấp – kém
 
 **Các bước giải**
 
-Đọc chú thích trước: mỗi hình ● ứng với 2 lá cờ.
+Xét ý a: Hùng có 81 quyển vở, An có ít hơn Hùng 26 quyển. An có bao nhiêu quyển vở?
 
-Bạn Hà có 6 hình ●.
+Đọc vị: đây là dạng **Quan hệ nhiều hơn – ít hơn, gấp – kém**; dấu hiệu là Các cụm “nhiều hơn”, “ít hơn”, “gấp … lần”, “kém … lần”.
 
-Số lá cờ của bạn ấy: 6 × 2 = 12.
+Kiến thức phải dùng: Bốn phép tính, từ khoá chỉ quan hệ.
 
-Làm tương tự cho ba bạn còn lại rồi cộng để có tổng 30.
+Cách làm: Đọc vị từ khoá → chọn phép tính.
 
-Đáp số ý a: **12 lá cờ**.
+Lối tắt: Kết quả lớn hơn hay bé hơn số đã cho? Trả lời được là biết ngay phép tính.
+
+Kết quả: **55**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
+
+*Điểm chốt:* Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
+
+### Bài I.4 — Tìm một phần mấy của một số
+
+**Các bước giải**
+
+Xét ý a: Tìm 1 phần 5 của 20.
+
+Đọc vị: đây là dạng **Tìm một phần mấy của một số**; dấu hiệu là Cụm “một phần mấy của …”.
+
+Kiến thức phải dùng: Phân số dạng một phần mấy.
+
+Cách làm: Chia số đó cho mẫu số.
+
+Lối tắt: Kết quả luôn nhỏ hơn số ban đầu — dùng để kiểm tra ngay.
+
+Kết quả: **4**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Muốn tìm một phần mấy của một số, ta chia số đó cho mẫu số. Ví dụ tìm một phần tư của 20 thì lấy 20 chia 4.
+
+*Điểm chốt:* Một phần mấy thì **chia** cho số đó.
+
+### Bài I.5 — Đặt tính rồi tính (nhân, chia)
+
+**Các bước giải**
+
+Xét ý a: 809 × 3
+
+Đọc vị: đây là dạng **Nhân, chia số tự nhiên**; dấu hiệu là Yêu cầu “đặt tính rồi tính” với phép nhân, chia.
+
+Kiến thức phải dùng: Kĩ thuật đặt tính nhân, chia.
+
+Cách làm: Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ chữ số.
+
+Lối tắt: Kiểm tra kết quả bằng phép tính ngược: thương × số chia = số bị chia.
+
+Kết quả: **2 427**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
+
+*Điểm chốt:* Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
+
+### Bài II.1 — Đọc và lập biểu đồ tranh
+
+**Các bước giải**
+
+Đọc chú thích trước: mỗi hình ● ứng với 10 lá cờ.
+
+Bạn Yến có 3 hình ●.
+
+Số lá cờ của bạn ấy: 3 × 10 = 30.
+
+Làm tương tự cho ba bạn còn lại rồi cộng để có tổng 210.
+
+Đáp số ý a: **30 lá cờ**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Việc đầu tiên khi đọc biểu đồ tranh là đọc **chú thích**: mỗi hình ứng với bao nhiêu đơn vị. Sau đó nhân số hình với số ấy. Muốn lập biểu đồ thì làm ngược lại: chia số thật cho số đơn vị mỗi hình.
 
@@ -216,7 +200,7 @@ Làm tương tự cho ba bạn còn lại rồi cộng để có tổng 30.
 
 *Phải chắc trước khi làm bài này:* Bảng nhân và cách đọc bảng số liệu.
 
-### Bài II.3 — Đọc bảng số liệu
+### Bài II.2 — Đọc bảng số liệu
 
 **Các bước giải**
 
@@ -230,133 +214,85 @@ Cách làm: Ghi lại số liệu rồi trả lời từng câu.
 
 Lối tắt: Tính tổng một lần rồi dùng lại cho các câu sau.
 
-Kết quả: **43**.
+Kết quả: **72**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Đọc bảng theo từng cột, ghi lại các số. Tổng là cộng tất cả; nhiều nhất, ít nhất là so sánh; trung bình cộng là tổng chia số bạn.
 
 *Điểm chốt:* Đọc **đúng cột** — mỗi số gắn với đúng một tên.
 
-### Bài II.4 — Tìm x và tính chất của phép nhân
+### Bài II.3 — Đọc bảng thống kê của lớp
 
 **Các bước giải**
 
-Xét ý a: 8 × 252 = 252 × …
+Đọc bảng thì đọc **tên cột trước, số sau**. Cột thứ hai là số bạn nam, cột thứ ba là số bạn nữ — mỗi tổ nằm trên một hàng.
 
-Đọc vị: đây là dạng **Tìm thành phần chưa biết; tính chất phép nhân**; dấu hiệu là Có chữ x, hoặc có dấu … trong một đẳng thức.
+Muốn biết mỗi tổ có bao nhiêu bạn thì cộng hai cột của hàng ấy: Tổ 1 5 + 7 = 12 · Tổ 2 5 + 7 = 12 · Tổ 3 9 + 7 = 16 · Tổ 4 6 + 9 = 15.
 
-Kiến thức phải dùng: Quan hệ các thành phần phép tính; giao hoán, kết hợp, nhân 0 và 1.
+So bốn số vừa tính: nhiều nhất là Tổ 3 với 16 bạn, ít nhất là Tổ 1 với 12 bạn.
 
-Cách làm: Gọi tên vai trò rồi dùng quy tắc.
+Cả lớp: cộng theo **cột** — nam 25 bạn, nữ 30 bạn, tất cả **55 bạn**. Cộng theo hàng rồi cộng lại cũng ra đúng con số ấy, đó là cách tự kiểm tra.
 
-Lối tắt: Thử lại bằng cách thay số vừa tìm vào đề — mất ba giây nhưng chắc chắn.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Cộng theo hàng để biết từng tổ, cộng theo cột để biết cả lớp. Hai cách phải cho cùng một tổng — đó là cách tự kiểm tra không cần ai chấm.
 
-Kết quả: **8**.
+*Điểm chốt:* Cộng theo hàng và cộng theo cột phải ra cùng một tổng.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Gọi tên vai trò của x trước: số hạng, số bị trừ hay số trừ. Phép nhân có tính giao hoán và kết hợp; nhân với 1 giữ nguyên, nhân với 0 luôn bằng 0.
+*Muốn khó hơn:* Vẽ biểu đồ cột cho bảng này rồi trả lời lại các câu hỏi.
 
-*Điểm chốt:* Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu.
+*Phải chắc trước khi làm bài này:* Kỹ năng đọc bảng và cộng trừ trong phạm vi 100.
 
-*Muốn khó hơn:* Cho x xuất hiện hai lần: x + x + 12 = 40.
-
-*Phải chắc trước khi làm bài này:* Cộng, trừ trong phạm vi 1 000 và bảng nhân chia.
-
-### Bài II.5 — Nhân, chia với số có một chữ số
+### Bài II.4 — Trung bình cộng trong tình huống thực tế
 
 **Các bước giải**
 
-Xét ý a: 2 925 : 5
+Xét ý a: Trung bình mỗi ngày bán được 58 kg gạo. Hỏi 5 ngày bán được tất cả bao nhiêu ki-lô-gam?
 
-Đọc vị: đây là dạng **Nhân, chia với số có một chữ số**; dấu hiệu là Số bị chia có hai hoặc ba chữ số, số chia một chữ số.
+Đọc vị: đây là dạng **Ba dạng bài trung bình cộng**; dấu hiệu là Cụm “trung bình mỗi …”.
 
-Kiến thức phải dùng: Kĩ thuật đặt tính nhân, chia.
+Kiến thức phải dùng: Quan hệ tổng – số lượng – trung bình cộng.
 
-Cách làm: Đặt tính, tính theo cột.
+Cách làm: Đi qua tổng làm trung gian.
 
-Lối tắt: Ước lượng bằng cách làm tròn để phát hiện sai về độ lớn.
+Lối tắt: Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng.
 
-Kết quả: **585**.
+Kết quả: **290 kg**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Nhân từ hàng đơn vị sang trái, nhớ sang hàng liền trước. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. Số dư luôn bé hơn số chia.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Ba dạng ngược nhau: biết các số tìm trung bình cộng (cộng rồi chia); biết trung bình cộng tìm tổng (nhân); biết trung bình cộng và một số số hạng, tìm số hạng còn thiếu (lấy tổng trừ đi các số đã biết).
 
-*Điểm chốt:* Mỗi lần hạ một chữ số là bắt buộc viết một chữ số ở thương.
+*Điểm chốt:* Từ trung bình cộng luôn tìm được **tổng** trước, rồi mới tính tiếp.
 
-*Muốn khó hơn:* Chia mà thương có chữ số 0 ở giữa, ví dụ 618 : 3.
-
-*Phải chắc trước khi làm bài này:* Bảng nhân, bảng chia từ 2 đến 9.
-
-### Bài III.1 — Phủ hình và chia hình thành phần bằng nhau
+### Bài II.5 — Bài toán tổng – hiệu có lời văn
 
 **Các bước giải**
 
-Bước 1 — diện tích hình chữ nhật: 18 × 8 = 144 (cm²).
+Xét ý a: Hợp tác xã và thư viện chứa tất cả 354 kg phân bón. Hợp tác xã chứa nhiều hơn thư viện 102 kg. Mỗi nơi chứa bao nhiêu kg?
 
-Bước 2 — diện tích một hình vuông nhỏ: 2 × 2 = 4 (cm²).
+Đọc vị: đây là dạng **Tổng – hiệu có lời văn**; dấu hiệu là “Có tất cả …” và “… nhiều hơn … là …”.
 
-Bước 3 — số hình vuông cần dùng: 144 : 4 = 36 (hình).
+Kiến thức phải dùng: Công thức tổng – hiệu, sơ đồ đoạn thẳng.
 
-Kiểm tra: xếp được 9 hàng, mỗi hàng 4 hình — đúng 36 hình ✓
+Cách làm: Đọc vị tổng và hiệu → sơ đồ → công thức.
 
-Đáp số: **36 hình vuông**.
+Lối tắt: Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Số mảnh phủ kín bằng diện tích hình lớn chia diện tích một mảnh — nhưng chỉ đúng khi các mảnh **xếp khít không thừa**. Kiểm tra lại bằng cách đếm số hàng và số cột.
+Kết quả: **hợp tác xã: 228 kg, thư viện: 126 kg**.
 
-*Điểm chốt:* Phép chia diện tích chỉ đúng khi mảnh **xếp khít**.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Đọc đề, xác định đâu là **tổng**, đâu là **hiệu**. Vẽ sơ đồ hai đoạn thẳng. Số lớn = (tổng + hiệu) : 2; số bé = tổng − số lớn.
 
-*Muốn khó hơn:* Đổi mảnh phủ thành hình chữ nhật 1 × 2 — hỏi có mấy cách xếp khác nhau.
+*Điểm chốt:* Cụm “có tất cả” cho **tổng**; cụm “nhiều hơn” cho **hiệu**.
 
-*Phải chắc trước khi làm bài này:* Diện tích hình chữ nhật và phép chia hết.
-
-### Bài III.2 — Tìm quy luật của dãy số
+### Bài III.1 — Đọc bảng số liệu
 
 **Các bước giải**
 
-Xét ý a: 9, 18, 36, 72, 144, …
+Ghi lại các số liệu ra một hàng: 25, 40, 5, 18, 6.
 
-Đọc vị: đây là dạng **Tìm quy luật dãy số**; dấu hiệu là Dãy số kết thúc bằng dấu ….
+Cộng tất cả: 25 + 40 + 5 + 18 + 6 = 94.
 
-Kiến thức phải dùng: Dãy cách đều, dãy nhân, dãy hiệu tăng đều.
+So sánh để tìm số lớn nhất 40 và số bé nhất 5.
 
-Cách làm: Thử hiệu → thử thương → thử dãy hiệu.
+Hiệu: 40 − 5 = 35.
 
-Lối tắt: Số sau gấp đôi số trước là dấu hiệu quen nhất của dãy nhân.
-
-Kết quả: **288**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Thử theo thứ tự: (1) lấy hiệu hai số liên tiếp — bằng nhau thì là dãy cách đều; (2) lấy thương — bằng nhau thì là dãy nhân; (3) xem dãy hiệu có tăng đều không.
-
-*Điểm chốt:* Thử đủ **ba hướng**, đừng dừng ở hướng thứ nhất.
-
-### Bài III.3 — Dấu hiệu chia hết cho 2, 3, 5, 9
-
-**Các bước giải**
-
-Số chia là 3, nên phải cộng các chữ số.
-
-Tổng các chữ số: 9 + 8 + 0 + 1 = 18.
-
-18 chia hết cho 3, nên 9 801 cũng vậy.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Chia hết cho 2: tận cùng 0, 2, 4, 6, 8. Chia hết cho 5: tận cùng 0 hoặc 5. Chia hết cho 3 hoặc 9: cộng các chữ số rồi xét tổng.
-
-*Điểm chốt:* 2 và 5 nhìn **đuôi**; 3 và 9 nhìn **tổng**.
-
-*Muốn khó hơn:* Hỏi số dư khi chia cho 9 — bằng số dư của tổng các chữ số.
-
-*Phải chắc trước khi làm bài này:* Bảng chia và phép cộng các số một chữ số.
-
-### Bài III.4 — Đọc bảng số liệu
-
-**Các bước giải**
-
-Ghi lại các số liệu ra một hàng: 36, 18, 12, 5, 38.
-
-Cộng tất cả: 36 + 18 + 12 + 5 + 38 = 109.
-
-So sánh để tìm số lớn nhất 38 và số bé nhất 5.
-
-Hiệu: 38 − 5 = 33.
-
-Đáp số ý a: **109 quyển**.
+Đáp số ý a: **94 quyển**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Đọc bảng theo cột, ghi lại từng số liệu. Tổng là cộng tất cả; nhiều nhất, ít nhất là so sánh; trung bình cộng là tổng chia số ngày.
 
@@ -366,11 +302,11 @@ Hiệu: 38 − 5 = 33.
 
 *Phải chắc trước khi làm bài này:* Cộng nhiều số và so sánh số tự nhiên.
 
-### Bài III.5 — Một phần mấy của một số — bài toán có lời văn
+### Bài III.2 — Một phần mấy của một số — bài toán có lời văn
 
 **Các bước giải**
 
-Xét ý a: Một cửa hàng có 60 kg gạo, đã bán 1 phần 3 số gạo đó. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
+Xét ý a: Một cửa hàng có 40 kg gạo, đã bán 1 phần 4 số gạo đó. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
 
 Đọc vị: đây là dạng **Tìm một phần mấy rồi tính phần còn lại**; dấu hiệu là “Đã bán một phần mấy”, hỏi “còn lại”.
 
@@ -380,91 +316,83 @@ Cách làm: Chia để tìm phần đã dùng rồi trừ.
 
 Lối tắt: Bán 1 phần 4 thì còn 3 phần 4 — chia rồi nhân 3, một bước là xong.
 
-Kết quả: **40 kg**.
+Kết quả: **30 kg**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Bước 1: tìm số gạo đã bán bằng cách chia tổng cho mẫu số. Bước 2: lấy tổng trừ đi số đã bán để ra số còn lại.
 
 *Điểm chốt:* Đề hỏi số **còn lại**, nên phải trừ ở bước hai.
 
-### Bài IV.1 — Ghép hình vuông thành hình chữ nhật
-
-> **BẪY — Chu vi không cộng như diện tích.**
+### Bài III.3 — Đếm hình trong lưới ô vuông
 
 **Các bước giải**
 
-Xét ý a: Ghép 2 hình vuông cạnh 12 cm thành một hàng ngang. Tính chu vi và diện tích hình chữ nhật thu được.
+Xét ý a: Lưới có bao nhiêu ô vuông nhỏ?
 
-Đọc vị: đây là dạng **Ghép hình, chu vi và diện tích**; dấu hiệu là “Ghép … hình vuông thành …”.
+Đọc vị: đây là dạng **Đếm hình trong lưới**; dấu hiệu là Lưới ô vuông đều.
 
-Kiến thức phải dùng: Chu vi, diện tích hình chữ nhật.
+Kiến thức phải dùng: Quy tắc đếm.
 
-Cách làm: Xác định kích thước hình mới rồi áp công thức.
+Cách làm: Đếm theo đường kẻ hoặc theo cỡ.
 
-Lối tắt: Ghép thành hàng ngang thì chiều rộng vẫn bằng cạnh hình vuông.
+Lối tắt: Số cách chọn 2 trong k là k × (k − 1) : 2.
 
-Kết quả: **chu vi 72 cm, diện tích 288 cm²**.
+Kết quả: **16**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Ghép n hình vuông cạnh a thành một hàng thì được hình chữ nhật có chiều dài n × a và chiều rộng a. Diện tích cộng lại đúng bằng tổng diện tích các hình vuông, nhưng **chu vi thì không** cộng lại như vậy vì các cạnh dán vào trong không còn nằm trên đường bao.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Chọn hai đường kẻ ngang và hai đường kẻ dọc thì được đúng một hình chữ nhật. Số cách chọn 2 trong k đường là k × (k − 1) : 2. Đếm hình vuông thì đếm theo từng cỡ cạnh 1, 2, 3…
 
-*Điểm chốt:* Diện tích cộng được, **chu vi thì không**.
+*Điểm chốt:* Đếm **theo cỡ** hoặc **theo đường kẻ** — không đếm mò.
 
-### Bài IV.2 — Tìm kích thước từ chu vi, diện tích
-
-> **BẪY — Quên chia đôi chu vi.**
+### Bài III.4 — Dãy hình xếp theo quy luật
 
 **Các bước giải**
 
-Xét ý a: Hình vuông có chu vi 148 cm. Tính cạnh và diện tích.
+Hình 1 có 6 que; mỗi hình sau thêm 2 que.
 
-Đọc vị: đây là dạng **Tìm kích thước từ chu vi, diện tích**; dấu hiệu là Cho chu vi hoặc diện tích và một kích thước.
+Từ hình 1 đến hình 12 phải thêm 12 − 1 = 11 lần.
 
-Kiến thức phải dùng: Công thức chu vi, diện tích; phép tính ngược.
+Số que hình thứ 12: 6 + 11 × 2 = 28 (que).
 
-Cách làm: Đi ngược công thức qua bước nửa chu vi.
+Kiểm tra với hình 2: 6 + 1 × 2 = 8 ✓
 
-Lối tắt: Nửa chu vi = chu vi : 2 — luôn tính bước này đầu tiên.
+Đáp số: **28 que**.
 
-Kết quả: **cạnh 37 cm, diện tích 1 369 cm²**.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Số que các hình lập thành dãy cách đều. Số hạng thứ n = số đầu + (n − 1) × khoảng cách. Nhân với **(n − 1)** vì đếm khoảng, không đếm hình.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Từ chu vi hình chữ nhật, chia đôi được **nửa chu vi** — chính là tổng chiều dài và chiều rộng — rồi trừ chiều đã biết. Từ chu vi hình vuông, chia 4 được cạnh.
+*Điểm chốt:* Nhân với **(n − 1)** chứ không phải n.
 
-*Điểm chốt:* Chia chu vi cho **2** ra nửa chu vi — bước trung gian không được bỏ.
+*Muốn khó hơn:* Hỏi hình thứ mấy có đúng 100 que — phép chia ngược.
 
-*Muốn khó hơn:* Cho chu vi và biết chiều dài gấp đôi chiều rộng.
+*Phải chắc trước khi làm bài này:* Nhân, cộng trong phạm vi 1 000.
 
-*Phải chắc trước khi làm bài này:* Công thức chu vi, diện tích hình chữ nhật và hình vuông.
-
-### Bài IV.3 — Tìm số khi biết một phần mấy của nó
-
-> **BẪY — Nhân chứ không chia.**
+### Bài III.5 — Tính giá trị biểu thức
 
 **Các bước giải**
 
-Xét ý a: Số 30 bằng một phần mấy số 150?
+Xét ý a: (19 + 6) × 8
 
-Đọc vị: đây là dạng **Tìm số khi biết một phần mấy**; dấu hiệu là “Một phần mấy của một số là …”.
+Đọc vị: đây là dạng **Tính giá trị biểu thức**; dấu hiệu là Biểu thức nhiều phép tính, có thể có ngoặc.
 
-Kiến thức phải dùng: Quan hệ ngược của phép chia.
+Kiến thức phải dùng: Thứ tự thực hiện các phép tính.
 
-Cách làm: Nhân giá trị một phần với mẫu số.
+Cách làm: Ngoặc → nhân chia → cộng trừ.
 
-Lối tắt: Kết quả phải lớn hơn số đã cho — loại đáp số sai ngay.
+Lối tắt: Nhìn dấu ngoặc trước tiên, mất một giây nhưng tránh sai cả bài.
 
-Kết quả: **1 phần 5**.
+Kết quả: **200**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Biết một phần thì **nhân** với mẫu số để ra cả số; biết cả số thì **chia** để ra một phần. Bài hỏi phần còn lại thì phải trừ ở bước cuối.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Không có ngoặc: nhân chia trước, cộng trừ sau, cùng mức thì từ trái sang phải. Có ngoặc: làm trong ngoặc trước.
 
-*Điểm chốt:* Biết một phần thì nhân; biết cả số thì chia.
+*Điểm chốt:* Dấu ngoặc **đảo ngược** thứ tự ưu tiên.
 
-*Muốn khó hơn:* Biết hai phần ba của một số là 18 — tìm số đó.
+*Muốn khó hơn:* Thêm ngoặc vào biểu thức cho sẵn để kết quả thành một số cho trước.
 
-*Phải chắc trước khi làm bài này:* Bảng nhân, bảng chia và khái niệm một phần mấy.
+*Phải chắc trước khi làm bài này:* Bốn phép tính trong phạm vi 1 000.
 
-### Bài IV.4 — Bài toán đại lượng hai bước
+### Bài IV.1 — Bài toán đại lượng hai bước
 
 **Các bước giải**
 
-Xét ý a: Có 4 gói kẹo, mỗi gói 125 g. Lấy ra 2 gói. Hỏi số kẹo còn lại nặng bao nhiêu gam?
+Xét ý a: Có 8 gói kẹo, mỗi gói 50 g. Lấy ra 5 gói. Hỏi số kẹo còn lại nặng bao nhiêu gam?
 
 Đọc vị: đây là dạng **Bài toán đại lượng hai bước**; dấu hiệu là Cho số nhóm, khối lượng mỗi nhóm, số nhóm đã lấy.
 
@@ -474,19 +402,19 @@ Cách làm: Trừ trước, nhân sau.
 
 Lối tắt: So hai đường giải, chọn đường ít phép tính.
 
-Kết quả: **250 g**.
+Kết quả: **150 g**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Có hai đường: tính tổng rồi trừ phần lấy ra; hoặc tính số gói còn lại rồi nhân. Đường thứ hai ngắn hơn.
 
 *Điểm chốt:* Trừ **số gói** trước khi nhân thì ít phép tính hơn.
 
-### Bài IV.5 — Tìm một số khi biết một phần mấy của nó
+### Bài IV.2 — Tìm một số khi biết một phần mấy của nó
 
 > **BẪY — Nhân chứ không chia.**
 
 **Các bước giải**
 
-Xét ý a: Biết 1 phần 5 của một số là 11. Tìm số đó.
+Xét ý a: Biết 1 phần 6 của một số là 16. Tìm số đó.
 
 Đọc vị: đây là dạng **Tìm số khi biết một phần mấy của nó**; dấu hiệu là “Một phần mấy của một số là …, tìm số đó”.
 
@@ -496,117 +424,97 @@ Cách làm: Nhân giá trị một phần với mẫu số.
 
 Lối tắt: Kết quả phải lớn hơn số đã cho — dùng để loại đáp số sai ngay.
 
-Kết quả: **55**.
+Kết quả: **96**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Nếu một phần mấy của một số bằng a thì số đó bằng a nhân với mẫu số. Vì số đó được chia thành mấy phần bằng nhau, mỗi phần bằng a.
 
 *Điểm chốt:* Biết một phần thì **nhân** để ra cả số; biết cả số thì **chia** để ra một phần.
 
-### Bài V.1 — Một phần mấy qua hai bước — chú ý “số còn lại”
+### Bài IV.3 — Tìm số khi biết một phần mấy của nó
+
+> **BẪY — Nhân chứ không chia.**
 
 **Các bước giải**
 
-Bước 1 — ngày đầu phát: 96 : 2 = 48 (quyển).
+Số đó được chia thành 3 phần bằng nhau.
 
-Bước 2 — còn lại: 96 − 48 = 48 (quyển).
+Mỗi phần bằng 15.
 
-Bước 3 — ngày thứ hai tính trên **số còn lại**: 48 : 3 = 16 (quyển).
+Cả số gồm 3 phần: 15 × 3 = 45.
 
-Bước 4 — sau hai ngày còn: 48 − 16 = 32 (quyển).
+Thử lại: 45 : 3 = 15 ✓
 
-So sánh: nếu tính trên tổng ban đầu thì được 32 quyển — khác hẳn.
+Đáp số: **45**.
 
-Đáp số ý c: **16 quyển**.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Biết một phần thì **nhân** với mẫu số để ra cả số; biết cả số thì **chia** để ra một phần. Bài hỏi phần còn lại thì phải trừ ở bước cuối.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Cụm “số còn lại” đổi hẳn số bị chia ở bước hai. Sau mỗi bước phải ghi rõ “còn lại … quyển” rồi mới sang bước sau.
+*Điểm chốt:* Biết một phần thì nhân; biết cả số thì chia.
 
-*Điểm chốt:* Phân số của bước hai tính trên **số còn lại**, không phải tổng ban đầu.
+*Muốn khó hơn:* Biết hai phần ba của một số là 18 — tìm số đó.
 
-*Muốn khó hơn:* Thêm ngày thứ ba, cũng tính trên số còn lại.
+*Phải chắc trước khi làm bài này:* Bảng nhân, bảng chia và khái niệm một phần mấy.
 
-*Phải chắc trước khi làm bài này:* Tìm một phần mấy của một số và phép trừ.
-
-### Bài V.2 — Hai lần lấy một phần mấy
+### Bài IV.4 — Tìm x qua hai bước
 
 **Các bước giải**
 
-Xét ý a: Có 304 quyển vở. Ngày đầu phát 1 phần 4 số vở, ngày thứ hai phát 1 phần 4 **số vở còn lại**. Hỏi còn lại bao nhiêu quyển vở?
+Xét ý a: 64 − x = 33
 
-Đọc vị: đây là dạng **Tìm phân số của một số qua nhiều bước**; dấu hiệu là Cụm “… số còn lại”.
+Đọc vị: đây là dạng **Tìm x hai bước**; dấu hiệu là x nằm trong một cụm có hai phép tính.
 
-Kiến thức phải dùng: Phân số một phần mấy, phép trừ liên tiếp.
+Kiến thức phải dùng: Quan hệ các thành phần của phép tính.
 
-Cách làm: Tính tuần tự, ghi lại số còn lại sau mỗi bước.
+Cách làm: Gỡ dần từ ngoài vào trong.
 
-Lối tắt: Lấy đi 1 phần m thì còn (m − 1) phần m — nhân trực tiếp cho nhanh.
+Lối tắt: Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước.
 
-Kết quả: **171 quyển**.
+Kết quả: **x = 31**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Bước 1: tính số vở phát ngày đầu và số vở còn lại sau ngày đầu. Bước 2: phân số của ngày thứ hai tính trên **số còn lại**, không phải trên tổng ban đầu. Bước 3: trừ tiếp để ra số cuối cùng.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
 
-*Điểm chốt:* Cụm “số còn lại” đổi hẳn số bị chia ở bước hai.
+*Điểm chốt:* Gỡ **phép tính ngoài cùng trước**, phép trong sau.
 
-### Bài V.3 — Chữ số tận cùng của tổng và tích
+### Bài IV.5 — Đếm số thoả điều kiện trong một khoảng
 
-**Các bước giải**
-
-Xét ý a: Tích 246 × 633 × 8 có chữ số tận cùng là chữ số nào?
-
-Đọc vị: đây là dạng **Chữ số tận cùng**; dấu hiệu là Câu hỏi chỉ hỏi chữ số tận cùng.
-
-Kiến thức phải dùng: Tính chất chữ số tận cùng của tổng, tích.
-
-Cách làm: Rút gọn về chữ số tận cùng rồi tính.
-
-Lối tắt: Tích có thừa số tận cùng 0 hoặc 5 thì tận cùng là 0 hoặc 5.
-
-Kết quả: **4**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Chữ số tận cùng của tổng và của tích chỉ phụ thuộc chữ số tận cùng của các số tham gia. Che phần đầu, chỉ tính với chữ số cuối.
-
-*Điểm chốt:* Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu.
-
-*Muốn khó hơn:* Hỏi chữ số tận cùng của tích nhiều thừa số giống nhau — tìm chu kì lặp.
-
-*Phải chắc trước khi làm bài này:* Bảng nhân và thói quen quan sát trước khi tính.
-
-### Bài V.4 — Tính nhanh tổng dãy số cách đều
+> **BẪY — Hai đầu khoảng chưa chắc thoả điều kiện.**
 
 **Các bước giải**
 
-Dãy có 25 số hạng, số đầu 1, số cuối 25.
+Xét ý a: Có bao nhiêu số chia hết cho 3 từ 129 đến 480?
 
-Ghép số đầu với số cuối: 1 + 25 = 26.
+Đọc vị: đây là dạng **Đếm số hạng dãy cách đều theo điều kiện**; dấu hiệu là “Có bao nhiêu số … từ … đến …”.
 
-Ghép số thứ hai với số áp chót cũng được 26.
+Kiến thức phải dùng: Dãy cách đều, dấu hiệu chia hết.
 
-Có 25 : 2 = 12 cặp như thế.
+Cách làm: Tìm hai đầu hợp lệ rồi đếm.
 
-Tổng: 26 × 12 = 325.
+Lối tắt: Số các số chia hết cho d từ 1 đến n bằng phần nguyên của n : d.
 
-Đáp số: **325**.
+Kết quả: **118**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Ghép số đầu với số cuối, số thứ hai với số áp chót… mỗi cặp có cùng một tổng. Đếm số cặp rồi nhân. Số số hạng lẻ thì còn dư số ở giữa.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Các số cần đếm lập thành dãy cách đều. Tìm đúng số đầu và số cuối **nằm trong khoảng**, rồi dùng công thức (cuối − đầu) : khoảng cách + 1.
 
-*Điểm chốt:* Mọi cặp đầu – cuối đều có **cùng một tổng**.
+*Điểm chốt:* Hai đầu khoảng **chưa chắc** thoả điều kiện.
 
-*Muốn khó hơn:* Dãy có số số hạng lẻ — còn một số ở giữa không ghép cặp được.
+*Muốn khó hơn:* Đếm số vừa chẵn vừa chia hết cho 3.
 
-*Phải chắc trước khi làm bài này:* Đếm số hạng của dãy cách đều.
+*Phải chắc trước khi làm bài này:* Dấu hiệu chia hết và phép chia có dư.
 
-### Bài V.5 — Đại lượng bất biến: tính chẵn lẻ của tổng
+### Bài V.1 — Đại lượng bất biến: tính chẵn lẻ của tổng
+
+> **BẪY — Phải chứng minh, không được thử vài trường hợp.**
 
 **Các bước giải**
 
-Tổng ban đầu: 1 + 2 + … + 7 = (7 × 8) : 2 = 28.
+Tổng ban đầu: 1 + 2 + … + 24 = (24 × 25) : 2 = 300.
 
-Thay hai số a và b bằng a + b: tổng **không đổi**, nên số cuối cùng chính là 28.
+Thay hai số a và b bằng a + b: tổng **không đổi**, nên số cuối cùng chính là 300.
 
 Thay hai số a và b (a ≥ b) bằng a − b: tổng giảm đi 2 × b — luôn chẵn.
 
 Giảm đi một số chẵn thì tính chẵn lẻ của tổng giữ nguyên.
 
-Tổng ban đầu 28 là số chẵn, nên số cuối cùng cũng là số chẵn.
+Tổng ban đầu 300 là số chẵn, nên số cuối cùng cũng là số chẵn.
 
 Đáp số ý f: **số chẵn**.
 
@@ -618,6 +526,94 @@ Tổng ban đầu 28 là số chẵn, nên số cuối cùng cũng là số ch�
 
 *Phải chắc trước khi làm bài này:* Tổng dãy số tự nhiên liên tiếp và khái niệm chẵn lẻ.
 
+### Bài V.2 — Một phần mấy qua hai bước — chú ý “số còn lại”
+
+**Các bước giải**
+
+Bước 1 — ngày đầu phát: 204 : 4 = 51 (quyển).
+
+Bước 2 — còn lại: 204 − 51 = 153 (quyển).
+
+Bước 3 — ngày thứ hai tính trên **số còn lại**: 153 : 3 = 51 (quyển).
+
+Bước 4 — sau hai ngày còn: 153 − 51 = 102 (quyển).
+
+So sánh: nếu tính trên tổng ban đầu thì được 68 quyển — khác hẳn.
+
+Đáp số ý c: **51 quyển**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Cụm “số còn lại” đổi hẳn số bị chia ở bước hai. Sau mỗi bước phải ghi rõ “còn lại … quyển” rồi mới sang bước sau.
+
+*Điểm chốt:* Phân số của bước hai tính trên **số còn lại**, không phải tổng ban đầu.
+
+*Muốn khó hơn:* Thêm ngày thứ ba, cũng tính trên số còn lại.
+
+*Phải chắc trước khi làm bài này:* Tìm một phần mấy của một số và phép trừ.
+
+### Bài V.3 — Đếm chữ số dùng để đánh số trang
+
+**Các bước giải**
+
+Xét ý a: Một quyển vở có 99 trang, đánh số từ 1. Phải viết tất cả bao nhiêu chữ số?
+
+Đọc vị: đây là dạng **Đếm chữ số theo nhóm**; dấu hiệu là Bài toán đánh số trang.
+
+Kiến thức phải dùng: Đếm số hạng, cấu tạo số.
+
+Cách làm: Chia nhóm theo độ dài số rồi nhân, cộng.
+
+Lối tắt: Sách 99 trang dùng đúng 189 chữ số — nhớ mốc này.
+
+Kết quả: **189**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Từ trang 1 đến trang 9 có 9 trang, mỗi trang 1 chữ số. Từ trang 10 đến trang 99 có 90 trang, mỗi trang 2 chữ số. Từ trang 100 trở đi mỗi trang 3 chữ số. Nhân rồi cộng; nhóm cuối thường không đầy đủ.
+
+*Điểm chốt:* Nhóm cuối cùng **không đầy đủ** — phải đếm đúng số trang còn lại.
+
+### Bài V.4 — Hai lần lấy một phần mấy
+
+**Các bước giải**
+
+Xét ý a: Có 16 quyển vở. Ngày đầu phát 1 phần 2 số vở, ngày thứ hai phát 1 phần 4 **số vở còn lại**. Hỏi còn lại bao nhiêu quyển vở?
+
+Đọc vị: đây là dạng **Tìm phân số của một số qua nhiều bước**; dấu hiệu là Cụm “… số còn lại”.
+
+Kiến thức phải dùng: Phân số một phần mấy, phép trừ liên tiếp.
+
+Cách làm: Tính tuần tự, ghi lại số còn lại sau mỗi bước.
+
+Lối tắt: Lấy đi 1 phần m thì còn (m − 1) phần m — nhân trực tiếp cho nhanh.
+
+Kết quả: **6 quyển**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Bước 1: tính số vở phát ngày đầu và số vở còn lại sau ngày đầu. Bước 2: phân số của ngày thứ hai tính trên **số còn lại**, không phải trên tổng ban đầu. Bước 3: trừ tiếp để ra số cuối cùng.
+
+*Điểm chốt:* Cụm “số còn lại” đổi hẳn số bị chia ở bước hai.
+
+### Bài V.5 — Chữ số tận cùng của tổng và tích
+
+**Các bước giải**
+
+Xét ý a: Tích 691 × 245 × 4 có chữ số tận cùng là chữ số nào?
+
+Đọc vị: đây là dạng **Chữ số tận cùng**; dấu hiệu là Câu hỏi chỉ hỏi chữ số tận cùng.
+
+Kiến thức phải dùng: Tính chất chữ số tận cùng của tổng, tích.
+
+Cách làm: Rút gọn về chữ số tận cùng rồi tính.
+
+Lối tắt: Tích có thừa số tận cùng 0 hoặc 5 thì tận cùng là 0 hoặc 5.
+
+Kết quả: **0**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Chữ số tận cùng của tổng và của tích chỉ phụ thuộc chữ số tận cùng của các số tham gia. Che phần đầu, chỉ tính với chữ số cuối.
+
+*Điểm chốt:* Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu.
+
+*Muốn khó hơn:* Hỏi chữ số tận cùng của tích nhiều thừa số giống nhau — tìm chu kì lặp.
+
+*Phải chắc trước khi làm bài này:* Bảng nhân và thói quen quan sát trước khi tính.
+
 ---
 
 ## 3. BẢNG PHÂN TÍCH CHUYÊN SÂU
@@ -626,31 +622,31 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
-| I.1 | Tìm một phần mấy của một số | Phân số dạng một phần mấy | Cụm “một phần mấy của …” | Chia số đó cho mẫu số | Kết quả luôn nhỏ hơn số ban đầu — dùng để kiểm tra ngay. | 5 · 13 · 10 · 11… |
-| I.2 | Bài toán tổng – hiệu | Công thức tổng – hiệu, sơ đồ đoạn thẳng | Đề cho **tổng** và **hiệu** của hai số | Vẽ sơ đồ, đưa về hai phần bằng nhau | Số lớn và số bé luôn có trung bình cộng bằng nửa tổng. | số lớn 191, số bé 165 · số lớn 110, số bé 70 · số lớn 220, số bé 146 · số lớn 168, số bé 84… |
-| I.3 | Quan hệ nhiều hơn – ít hơn, gấp – kém | Bốn phép tính, từ khoá chỉ quan hệ | Các cụm “nhiều hơn”, “ít hơn”, “gấp … lần”, “kém … lần” | Đọc vị từ khoá → chọn phép tính | Kết quả lớn hơn hay bé hơn số đã cho? Trả lời được là biết ngay phép tính. | 31 · 45 · 63 · 26 |
-| I.4 | Nhân, chia số tự nhiên | Kĩ thuật đặt tính nhân, chia | Yêu cầu “đặt tính rồi tính” với phép nhân, chia | Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ chữ số | Kiểm tra kết quả bằng phép tính ngược: thương × số chia = số bị chia. | 3 864 · 3 228 · 383 · 964… |
-| I.5 | Tìm một phần mấy của một số | Phân số dạng một phần mấy | Cụm “một phần mấy của …” | Chia số đó cho mẫu số | Kết quả luôn nhỏ hơn số ban đầu. | 5 · 4 · 9 · 3… |
-| II.1 | Ba dạng bài trung bình cộng | Quan hệ tổng – số lượng – trung bình cộng | Cụm “trung bình mỗi …” | Đi qua tổng làm trung gian | Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng. | 103 kg · 235 kg · 103 kg · 1 092 kg… |
-| II.2 | Đọc và lập biểu đồ tranh | Biểu đồ tranh, phép nhân và chia | Có hình vẽ lặp lại kèm một dòng chú thích | Đọc chú thích → nhân số hình với đơn vị | Nếu mọi bạn đều dùng cùng một loại hình thì so số hình là đủ để biết ai nhiều nhất. | 12 · 8 · 30 · Hà (12)… |
-| II.3 | Đọc bảng số liệu | Thống kê đơn giản, trung bình cộng | Đề cho bảng số liệu kèm nhiều câu hỏi | Ghi lại số liệu rồi trả lời từng câu | Tính tổng một lần rồi dùng lại cho các câu sau. | 43 · Thảo (18 bông) · Quân (6 bông) · 12… |
-| II.4 | Tìm thành phần chưa biết; tính chất phép nhân | Quan hệ các thành phần phép tính; giao hoán, kết hợp, nhân 0 và 1 | Có chữ x, hoặc có dấu … trong một đẳng thức | Gọi tên vai trò rồi dùng quy tắc | Thử lại bằng cách thay số vừa tìm vào đề — mất ba giây nhưng chắc chắn. | 8 · x = 176 · 0 · x = 563… |
-| II.5 | Nhân, chia với số có một chữ số | Kĩ thuật đặt tính nhân, chia | Số bị chia có hai hoặc ba chữ số, số chia một chữ số | Đặt tính, tính theo cột | Ước lượng bằng cách làm tròn để phát hiện sai về độ lớn. | 585 · 565 dư 1 · 5 616 · 550 dư 6… |
-| III.1 | Phủ hình, chia hình | Diện tích hình chữ nhật, hình vuông; phép chia | “Phủ kín bằng các hình vuông cạnh …”, “chia thành … phần bằng nhau” | Chia diện tích cho diện tích, kiểm tra bằng số hàng, số cột | Đếm số hàng nhân số cột nhanh hơn và tự kiểm tra được. | 36 · 144 cm² · 4 cm² · 72 cm²… |
-| III.2 | Tìm quy luật dãy số | Dãy cách đều, dãy nhân, dãy hiệu tăng đều | Dãy số kết thúc bằng dấu … | Thử hiệu → thử thương → thử dãy hiệu | Số sau gấp đôi số trước là dấu hiệu quen nhất của dãy nhân. | 288 · 43 · 20 · 49 |
-| III.3 | Kiểm tra chia hết bằng dấu hiệu | Dấu hiệu chia hết cho 2, 3, 5, 9 | Câu hỏi “có chia hết cho … không” | Chọn dấu hiệu theo số chia rồi kiểm tra | Số chia hết cho 9 thì chắc chắn chia hết cho 3; điều ngược lại không đúng. | có (tổng các chữ số bằng 18) · không (tận cùng là 4) · có (tận cùng là 2) · không (tổng các chữ số bằng 13)… |
-| III.4 | Đọc bảng số liệu | Thống kê đơn giản, trung bình cộng | Đề cho bảng số liệu kèm nhiều câu hỏi | Ghi lại số liệu rồi trả lời từng câu | Tính tổng một lần rồi dùng lại cho các câu sau. | 109 · Thứ Sáu (38 quyển) · Thứ Năm (5 quyển) · 33… |
-| III.5 | Tìm một phần mấy rồi tính phần còn lại | Phân số một phần mấy, phép trừ | “Đã bán một phần mấy”, hỏi “còn lại” | Chia để tìm phần đã dùng rồi trừ | Bán 1 phần 4 thì còn 3 phần 4 — chia rồi nhân 3, một bước là xong. | 40 kg · 36 kg · 32 kg · 14 kg… |
-| IV.1 | Ghép hình, chu vi và diện tích | Chu vi, diện tích hình chữ nhật | “Ghép … hình vuông thành …” | Xác định kích thước hình mới rồi áp công thức | Ghép thành hàng ngang thì chiều rộng vẫn bằng cạnh hình vuông. | chu vi 72 cm, diện tích 288 cm² · chu vi 88 cm, diện tích 363 cm² · chu vi 72 cm, diện tích 288 cm² · chu vi 42 cm, diện tích 98 cm²… |
-| IV.2 | Tìm kích thước từ chu vi, diện tích | Công thức chu vi, diện tích; phép tính ngược | Cho chu vi hoặc diện tích và một kích thước | Đi ngược công thức qua bước nửa chu vi | Nửa chu vi = chu vi : 2 — luôn tính bước này đầu tiên. | cạnh 37 cm, diện tích 1 369 cm² · 18 cm · hình chữ nhật · hình chữ nhật… |
-| IV.3 | Tìm số khi biết một phần mấy | Quan hệ ngược của phép chia | “Một phần mấy của một số là …” | Nhân giá trị một phần với mẫu số | Kết quả phải lớn hơn số đã cho — loại đáp số sai ngay. | 1 phần 5 · 30 quyển · 110 · 12 quyển… |
-| IV.4 | Bài toán đại lượng hai bước | Nhân, trừ; đơn vị khối lượng | Cho số nhóm, khối lượng mỗi nhóm, số nhóm đã lấy | Trừ trước, nhân sau | So hai đường giải, chọn đường ít phép tính. | 250 g · 1 000 g · 100 g · 100 g |
-| IV.5 | Tìm số khi biết một phần mấy của nó | Quan hệ ngược của phép chia | “Một phần mấy của một số là …, tìm số đó” | Nhân giá trị một phần với mẫu số | Kết quả phải lớn hơn số đã cho — dùng để loại đáp số sai ngay. | 55 · 132 · 117 · 174 |
-| V.1 | Tìm phân số của một số qua nhiều bước | Phân số một phần mấy, phép trừ liên tiếp | Cụm “… số còn lại” | Tính tuần tự, ghi lại số còn lại sau mỗi bước | Lấy đi 1 phần m thì còn (m − 1) phần m — nhân trực tiếp cho nhanh. | 48 quyển · 48 quyển · 16 quyển · 32 quyển… |
-| V.2 | Tìm phân số của một số qua nhiều bước | Phân số một phần mấy, phép trừ liên tiếp | Cụm “… số còn lại” | Tính tuần tự, ghi lại số còn lại sau mỗi bước | Lấy đi 1 phần m thì còn (m − 1) phần m — nhân trực tiếp cho nhanh. | 171 quyển · 42 quyển · 78 quyển · 96 quyển |
-| V.3 | Chữ số tận cùng | Tính chất chữ số tận cùng của tổng, tích | Câu hỏi chỉ hỏi chữ số tận cùng | Rút gọn về chữ số tận cùng rồi tính | Tích có thừa số tận cùng 0 hoặc 5 thì tận cùng là 0 hoặc 5. | 4 · 5 · 7 · 0… |
-| V.4 | Tổng dãy số cách đều | Ghép cặp, tổng dãy cách đều | Dãy cộng dài có dấu … | Ghép cặp đầu – cuối rồi nhân | 1 + 2 + … + 100 = 5 050 — nhớ mốc này để kiểm tra. | 325 · 2 550 · 420 · 55… |
-| V.5 | Bài toán bất biến | Tính chẵn lẻ; tổng dãy số tự nhiên liên tiếp | Một quá trình lặp nhiều bước, hỏi trạng thái cuối | Tìm đại lượng không đổi rồi so hai đầu quá trình | Thử với n nhỏ (n = 3, 4) để đoán, rồi chứng minh bằng bất biến. | 28 · không thay đổi · 28 · giảm đi 2 lần số bé — luôn là một số chẵn… |
+| I.1 | Tìm một phần mấy của một số | Phân số dạng một phần mấy | Cụm “một phần mấy của …” | Chia số đó cho mẫu số | Kết quả luôn nhỏ hơn số ban đầu. | 14 · 6 · 14 · 7… |
+| I.2 | Đổi và so sánh đơn vị dung tích | Quan hệ lít – mi-li-lít | Có chữ l, ml trong đề | Đưa về cùng đơn vị rồi tính hoặc so sánh | Nhân 1 000 là thêm ba chữ số 0 vào bên phải. | > · 5 · 38 000 · 2 628… |
+| I.3 | Quan hệ nhiều hơn – ít hơn, gấp – kém | Bốn phép tính, từ khoá chỉ quan hệ | Các cụm “nhiều hơn”, “ít hơn”, “gấp … lần”, “kém … lần” | Đọc vị từ khoá → chọn phép tính | Kết quả lớn hơn hay bé hơn số đã cho? Trả lời được là biết ngay phép tính. | 55 · 153 · 22 · 54… |
+| I.4 | Tìm một phần mấy của một số | Phân số dạng một phần mấy | Cụm “một phần mấy của …” | Chia số đó cho mẫu số | Kết quả luôn nhỏ hơn số ban đầu — dùng để kiểm tra ngay. | 4 · 8 · 8 · 16… |
+| I.5 | Nhân, chia số tự nhiên | Kĩ thuật đặt tính nhân, chia | Yêu cầu “đặt tính rồi tính” với phép nhân, chia | Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ chữ số | Kiểm tra kết quả bằng phép tính ngược: thương × số chia = số bị chia. | 2 427 · 493 · 445 · 284… |
+| II.1 | Đọc và lập biểu đồ tranh | Biểu đồ tranh, phép nhân và chia | Có hình vẽ lặp lại kèm một dòng chú thích | Đọc chú thích → nhân số hình với đơn vị | Nếu mọi bạn đều dùng cùng một loại hình thì so số hình là đủ để biết ai nhiều nhất. | 30 · 30 · 210 · Sơn (80)… |
+| II.2 | Đọc bảng số liệu | Thống kê đơn giản, trung bình cộng | Đề cho bảng số liệu kèm nhiều câu hỏi | Ghi lại số liệu rồi trả lời từng câu | Tính tổng một lần rồi dùng lại cho các câu sau. | 72 · Tuấn (23 bông) · Minh (6 bông) · 17… |
+| II.3 | Đọc bảng số liệu thống kê | Đọc bảng; cộng trừ trong phạm vi 100 | Một bảng hai chiều: hàng là nhóm, cột là loại số liệu | Cộng theo hàng cho từng nhóm, cộng theo cột cho toàn bộ | Tổng theo hàng và tổng theo cột luôn bằng nhau, dùng để soát lại. | Tổ 3 — 16 bạn · Tổ 1 — 12 bạn · 25 bạn nam và 30 bạn nữ · 55 bạn… |
+| II.4 | Ba dạng bài trung bình cộng | Quan hệ tổng – số lượng – trung bình cộng | Cụm “trung bình mỗi …” | Đi qua tổng làm trung gian | Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng. | 290 kg · 752 kg · 66 kg · 141 kg |
+| II.5 | Tổng – hiệu có lời văn | Công thức tổng – hiệu, sơ đồ đoạn thẳng | “Có tất cả …” và “… nhiều hơn … là …” | Đọc vị tổng và hiệu → sơ đồ → công thức | Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần. | hợp tác xã: 228 kg, thư viện: 126 kg · 5A: 41 quyển, 5B: 23 quyển · nhóm Sao Mai: 390 cây, đội Một: 352 cây · 3B: 170 quyển, 5B: 102 quyển… |
+| III.1 | Đọc bảng số liệu | Thống kê đơn giản, trung bình cộng | Đề cho bảng số liệu kèm nhiều câu hỏi | Ghi lại số liệu rồi trả lời từng câu | Tính tổng một lần rồi dùng lại cho các câu sau. | 94 · Thứ Ba (40 quyển) · Thứ Tư (5 quyển) · 35… |
+| III.2 | Tìm một phần mấy rồi tính phần còn lại | Phân số một phần mấy, phép trừ | “Đã bán một phần mấy”, hỏi “còn lại” | Chia để tìm phần đã dùng rồi trừ | Bán 1 phần 4 thì còn 3 phần 4 — chia rồi nhân 3, một bước là xong. | 30 kg · 20 kg · 100 kg · 16 kg… |
+| III.3 | Đếm hình trong lưới | Quy tắc đếm | Lưới ô vuông đều | Đếm theo đường kẻ hoặc theo cỡ | Số cách chọn 2 trong k là k × (k − 1) : 2. | 16 · 5 đường ngang, 5 đường dọc · 100 · 30… |
+| III.4 | Quy luật hình đưa về dãy số | Dãy cách đều, số hạng thứ n | Hình xếp thêm đều đặn theo thứ tự | Lập bảng ba hình đầu rồi áp công thức | Ba hình đầu là đủ để khẳng định quy luật cách đều. | 8 · 10 · 28 · hình thứ 6… |
+| III.5 | Tính giá trị biểu thức | Thứ tự thực hiện các phép tính | Biểu thức nhiều phép tính, có thể có ngoặc | Ngoặc → nhân chia → cộng trừ | Nhìn dấu ngoặc trước tiên, mất một giây nhưng tránh sai cả bài. | 200 · 70 · 83 · 57… |
+| IV.1 | Bài toán đại lượng hai bước | Nhân, trừ; đơn vị khối lượng | Cho số nhóm, khối lượng mỗi nhóm, số nhóm đã lấy | Trừ trước, nhân sau | So hai đường giải, chọn đường ít phép tính. | 150 g · 600 g · 750 g · 125 g |
+| IV.2 | Tìm số khi biết một phần mấy của nó | Quan hệ ngược của phép chia | “Một phần mấy của một số là …, tìm số đó” | Nhân giá trị một phần với mẫu số | Kết quả phải lớn hơn số đã cho — dùng để loại đáp số sai ngay. | 96 · 114 · 84 · 200… |
+| IV.3 | Tìm số khi biết một phần mấy | Quan hệ ngược của phép chia | “Một phần mấy của một số là …” | Nhân giá trị một phần với mẫu số | Kết quả phải lớn hơn số đã cho — loại đáp số sai ngay. | 45 · 1 phần 2 · 104 quyển · 1 phần 3… |
+| IV.4 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 31 · x = 160 · x = 129 : 4 · x = 23 |
+| IV.5 | Đếm số hạng dãy cách đều theo điều kiện | Dãy cách đều, dấu hiệu chia hết | “Có bao nhiêu số … từ … đến …” | Tìm hai đầu hợp lệ rồi đếm | Số các số chia hết cho d từ 1 đến n bằng phần nguyên của n : d. | 118 · 148 · 44 · 113… |
+| V.1 | Bài toán bất biến | Tính chẵn lẻ; tổng dãy số tự nhiên liên tiếp | Một quá trình lặp nhiều bước, hỏi trạng thái cuối | Tìm đại lượng không đổi rồi so hai đầu quá trình | Thử với n nhỏ (n = 3, 4) để đoán, rồi chứng minh bằng bất biến. | 300 · không thay đổi · 300 · giảm đi 2 lần số bé — luôn là một số chẵn… |
+| V.2 | Tìm phân số của một số qua nhiều bước | Phân số một phần mấy, phép trừ liên tiếp | Cụm “… số còn lại” | Tính tuần tự, ghi lại số còn lại sau mỗi bước | Lấy đi 1 phần m thì còn (m − 1) phần m — nhân trực tiếp cho nhanh. | 51 quyển · 153 quyển · 51 quyển · 102 quyển… |
+| V.3 | Đếm chữ số theo nhóm | Đếm số hạng, cấu tạo số | Bài toán đánh số trang | Chia nhóm theo độ dài số rồi nhân, cộng | Sách 99 trang dùng đúng 189 chữ số — nhớ mốc này. | 189 · 51 · 342 · 252 |
+| V.4 | Tìm phân số của một số qua nhiều bước | Phân số một phần mấy, phép trừ liên tiếp | Cụm “… số còn lại” | Tính tuần tự, ghi lại số còn lại sau mỗi bước | Lấy đi 1 phần m thì còn (m − 1) phần m — nhân trực tiếp cho nhanh. | 6 quyển · 27 quyển · 57 quyển · 84 quyển… |
+| V.5 | Chữ số tận cùng | Tính chất chữ số tận cùng của tổng, tích | Câu hỏi chỉ hỏi chữ số tận cùng | Rút gọn về chữ số tận cùng rồi tính | Tích có thừa số tận cùng 0 hoặc 5 thì tận cùng là 0 hoặc 5. | 0 · 2 · 3 · 4… |
 
 ---
 
@@ -658,31 +654,31 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 
 | Bài | Nhãn tư duy | Điểm chốt |
 |---|---|---|
-| I.1 | TD1 | Một phần mấy thì **chia** cho số đó. |
-| I.2 | TD1, TD3 | Cộng hiệu ra **số lớn**, trừ hiệu ra **số bé** — nhớ đúng chiều. |
+| I.1 | TD1 | Một phần mấy thì **chia**, không nhân. |
+| I.2 | TD1 | So sánh **chỉ sau khi** đã đưa về cùng đơn vị. |
 | I.3 | TD1, TD2 | Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài. |
-| I.4 | TD1 | Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0. |
-| I.5 | TD1 | Một phần mấy thì **chia**, không nhân. |
-| II.1 | TD2, TD3 | Từ trung bình cộng luôn tìm được **tổng** trước, rồi mới tính tiếp. |
-| II.2 | TD1, TD2 | Mỗi hình **không phải một đơn vị** — phải đọc chú thích trước. |
-| II.3 | TD1, TD2 | Đọc **đúng cột** — mỗi số gắn với đúng một tên. |
-| II.4 | TD1, TD3 | Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu. |
-| II.5 | TD1 | Mỗi lần hạ một chữ số là bắt buộc viết một chữ số ở thương. |
-| III.1 | TD3, TD4 | Phép chia diện tích chỉ đúng khi mảnh **xếp khít**. |
-| III.2 | TD4, TD6 | Thử đủ **ba hướng**, đừng dừng ở hướng thứ nhất. |
-| III.3 | TD1, TD5 | 2 và 5 nhìn **đuôi**; 3 và 9 nhìn **tổng**. |
-| III.4 | TD1, TD2 | Đọc **đúng cột** — mỗi số gắn với đúng một ngày. |
-| III.5 | TD2, TD3 | Đề hỏi số **còn lại**, nên phải trừ ở bước hai. |
-| IV.1 | TD3, TD6 | Diện tích cộng được, **chu vi thì không**. |
-| IV.2 | TD3, TD2 | Chia chu vi cho **2** ra nửa chu vi — bước trung gian không được bỏ. |
+| I.4 | TD1 | Một phần mấy thì **chia** cho số đó. |
+| I.5 | TD1 | Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0. |
+| II.1 | TD1, TD2 | Mỗi hình **không phải một đơn vị** — phải đọc chú thích trước. |
+| II.2 | TD1, TD2 | Đọc **đúng cột** — mỗi số gắn với đúng một tên. |
+| II.3 | TD1, TD2 | Cộng theo hàng và cộng theo cột phải ra cùng một tổng. |
+| II.4 | TD2, TD3 | Từ trung bình cộng luôn tìm được **tổng** trước, rồi mới tính tiếp. |
+| II.5 | TD2, TD3 | Cụm “có tất cả” cho **tổng**; cụm “nhiều hơn” cho **hiệu**. |
+| III.1 | TD1, TD2 | Đọc **đúng cột** — mỗi số gắn với đúng một ngày. |
+| III.2 | TD2, TD3 | Đề hỏi số **còn lại**, nên phải trừ ở bước hai. |
+| III.3 | TD4, TD3 | Đếm **theo cỡ** hoặc **theo đường kẻ** — không đếm mò. |
+| III.4 | TD4, TD3 | Nhân với **(n − 1)** chứ không phải n. |
+| III.5 | TD1, TD3 | Dấu ngoặc **đảo ngược** thứ tự ưu tiên. |
+| IV.1 | TD3, TD5 | Trừ **số gói** trước khi nhân thì ít phép tính hơn. |
+| IV.2 | TD3, TD2 | Biết một phần thì **nhân** để ra cả số; biết cả số thì **chia** để ra một phần. |
 | IV.3 | TD3, TD2 | Biết một phần thì nhân; biết cả số thì chia. |
-| IV.4 | TD3, TD5 | Trừ **số gói** trước khi nhân thì ít phép tính hơn. |
-| IV.5 | TD3, TD2 | Biết một phần thì **nhân** để ra cả số; biết cả số thì **chia** để ra một phần. |
-| V.1 | TD6, TD2 | Phân số của bước hai tính trên **số còn lại**, không phải tổng ban đầu. |
-| V.2 | TD6, TD2 | Cụm “số còn lại” đổi hẳn số bị chia ở bước hai. |
-| V.3 | TD5, TD2 | Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu. |
-| V.4 | TD4, TD5 | Mọi cặp đầu – cuối đều có **cùng một tổng**. |
-| V.5 | TD6, TD2 | Tìm đại lượng **bất biến** rồi so trạng thái đầu với trạng thái cuối. |
+| IV.4 | TD3 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
+| IV.5 | TD4, TD1 | Hai đầu khoảng **chưa chắc** thoả điều kiện. |
+| V.1 | TD6, TD2 | Tìm đại lượng **bất biến** rồi so trạng thái đầu với trạng thái cuối. |
+| V.2 | TD6, TD2 | Phân số của bước hai tính trên **số còn lại**, không phải tổng ban đầu. |
+| V.3 | TD4, TD6 | Nhóm cuối cùng **không đầy đủ** — phải đếm đúng số trang còn lại. |
+| V.4 | TD6, TD2 | Cụm “số còn lại” đổi hẳn số bị chia ở bước hai. |
+| V.5 | TD5, TD2 | Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu. |
 
 ---
 
@@ -692,31 +688,31 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 
 | Bài | Lỗi thường gặp | Cách phòng |
 |---|---|---|
-| I.1 | Nhân thay vì chia. | Kiểm tra: kết quả phải **bé hơn** số ban đầu. |
-| I.2 | Lấy (tổng + hiệu) : 2 rồi gọi đó là số bé. | Vẽ sơ đồ đoạn thẳng trước, đoạn dài hơn luôn là số lớn. |
+| I.1 | Nhân thay vì chia. | Kiểm tra: kết quả phải bé hơn số ban đầu. |
+| I.2 | So thẳng hai con số mà bỏ qua đơn vị. | Viết lại cả hai vế theo mi-li-lít rồi mới so. |
 | I.3 | Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. | Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh. |
-| I.4 | Quên viết chữ số 0 ở thương nên thương thiếu chữ số. | Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số. |
-| I.5 | Nhân thay vì chia. | Kiểm tra: kết quả phải bé hơn số ban đầu. |
-| II.1 | Đi tìm ngay số còn thiếu mà chưa tính tổng. | Bước đầu tiên luôn viết: “Tổng = trung bình cộng × số ngày”. |
-| II.2 | Đếm số hình rồi trả lời luôn, quên nhân với số đơn vị mỗi hình. | Khoanh tròn dòng chú thích trước khi trả lời bất kỳ câu nào. |
-| II.3 | Đọc lệch cột nên gán nhầm số cho bạn khác. | Dùng ngón tay dò theo cột khi đọc bảng. |
-| II.4 | Áp dụng quy tắc của số trừ cho số bị trừ. | Viết ra vai trò của x trước khi viết phép tính. |
-| II.5 | Quên chữ số 0 ở giữa thương nên thương thiếu chữ số. | Đếm trước xem thương có mấy chữ số rồi mới chia. |
-| III.1 | Chia chu vi cho cạnh mảnh thay vì chia diện tích cho diện tích. | Kẻ lưới lên hình và đếm thử một hàng. |
-| III.2 | Không tìm ra hiệu đều thì bỏ cuộc. | Viết dãy hiệu xuống ngay dưới dãy gốc. |
-| III.3 | Dùng dấu hiệu của 3 để kết luận cho 2. | Ghi tổng các chữ số ra bên cạnh trước khi kết luận. |
-| III.4 | Đọc lệch cột nên gán nhầm số cho ngày khác. | Dùng ngón tay dò theo cột khi đọc bảng. |
-| III.5 | Dừng ở bước một, trả lời số gạo đã bán. | Đọc lại câu hỏi sau khi tính xong bước một. |
-| IV.1 | Nhân chu vi một hình vuông với số hình. | Vẽ hình ghép và tô đậm đường bao trước khi tính. |
-| IV.2 | Trừ thẳng chiều dài khỏi chu vi mà chưa chia đôi. | Viết dòng “Nửa chu vi = …” trước khi trừ. |
+| I.4 | Nhân thay vì chia. | Kiểm tra: kết quả phải **bé hơn** số ban đầu. |
+| I.5 | Quên viết chữ số 0 ở thương nên thương thiếu chữ số. | Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số. |
+| II.1 | Đếm số hình rồi trả lời luôn, quên nhân với số đơn vị mỗi hình. | Khoanh tròn dòng chú thích trước khi trả lời bất kỳ câu nào. |
+| II.2 | Đọc lệch cột nên gán nhầm số cho bạn khác. | Dùng ngón tay dò theo cột khi đọc bảng. |
+| II.3 | Đọc nhầm cột, lấy số bạn nữ trả lời câu hỏi về bạn nam. | Lấy ngón tay dò theo hàng, đọc tên cột trước khi lấy số. |
+| II.4 | Đi tìm ngay số còn thiếu mà chưa tính tổng. | Bước đầu tiên luôn viết: “Tổng = trung bình cộng × số ngày”. |
+| II.5 | Nhầm hiệu thành tổng khi đề diễn đạt vòng vo. | Ghi riêng ra hai dòng: Tổng = … ; Hiệu = … trước khi tính. |
+| III.1 | Đọc lệch cột nên gán nhầm số cho ngày khác. | Dùng ngón tay dò theo cột khi đọc bảng. |
+| III.2 | Dừng ở bước một, trả lời số gạo đã bán. | Đọc lại câu hỏi sau khi tính xong bước một. |
+| III.3 | Chỉ đếm ô nhỏ, quên hình ghép từ nhiều ô. | Kẻ bảng theo cỡ hình rồi cộng. |
+| III.4 | Nhân khoảng cách với n nên thừa đúng một khoảng. | Kiểm chứng công thức với hình thứ 2 trước khi dùng cho hình thứ n. |
+| III.5 | Cộng trước nhân khi biểu thức không có ngoặc. | Gạch chân phép nhân, phép chia trước khi tính. |
+| IV.1 | Trừ số gói cho số gam, hai đại lượng khác loại. | Ghi đơn vị sau mỗi số để không trừ nhầm. |
+| IV.2 | Chia thay vì nhân. | Kiểm tra: số tìm được phải **lớn hơn** số đã cho. |
 | IV.3 | Chia thay vì nhân khi đã biết giá trị một phần. | Kiểm tra: số tìm được phải **lớn hơn** số đã cho. |
-| IV.4 | Trừ số gói cho số gam, hai đại lượng khác loại. | Ghi đơn vị sau mỗi số để không trừ nhầm. |
-| IV.5 | Chia thay vì nhân. | Kiểm tra: số tìm được phải **lớn hơn** số đã cho. |
-| V.1 | Lấy cả hai phân số tính trên tổng ban đầu. | Viết một dòng “còn lại … quyển” sau mỗi bước. |
-| V.2 | Lấy cả hai phân số tính trên tổng ban đầu. | Sau mỗi bước, viết rõ “còn lại … quyển” rồi mới sang bước sau. |
-| V.3 | Tính trọn cả phép tính, vừa lâu vừa dễ sai. | Lấy tay che phần đầu của hai số, chỉ để lộ chữ số cuối. |
-| V.4 | Cộng dồn từ đầu đến cuối, rất lâu và dễ sai. | Viết ba cặp đầu để thấy rõ chúng bằng nhau. |
-| V.5 | Thử vài trường hợp rồi kết luận, không chứng minh được cho mọi cách làm. | Sau khi đoán, kiểm tra: đại lượng đó đổi thế nào sau **một** bước? |
+| IV.4 | Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. | Khoanh tròn cụm chứa x rồi coi cả cụm là một số. |
+| IV.5 | Lấy luôn hai đầu khoảng làm số đầu và số cuối của dãy. | Viết ba số đầu và ba số cuối của dãy trước khi áp công thức. |
+| V.1 | Thử vài trường hợp rồi kết luận, không chứng minh được cho mọi cách làm. | Sau khi đoán, kiểm tra: đại lượng đó đổi thế nào sau **một** bước? |
+| V.2 | Lấy cả hai phân số tính trên tổng ban đầu. | Viết một dòng “còn lại … quyển” sau mỗi bước. |
+| V.3 | Lấy số trang nhân với 2 hoặc 3 cho toàn bộ. | Kẻ bảng: khoảng trang – số trang – số chữ số. |
+| V.4 | Lấy cả hai phân số tính trên tổng ban đầu. | Sau mỗi bước, viết rõ “còn lại … quyển” rồi mới sang bước sau. |
+| V.5 | Tính trọn cả phép tính, vừa lâu vừa dễ sai. | Lấy tay che phần đầu của hai số, chỉ để lộ chữ số cuối. |
 
 ---
 
@@ -725,30 +721,30 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 Đọc tầng 1 trước; chỉ đọc tầng sau khi đã thử lại ít nhất 3 phút.
 
 **Bài I.1** — (1) Chia số đó thành mấy phần bằng nhau? — (2) Lấy mấy phần? — (3) Vậy phải làm phép tính gì?
-**Bài I.2** — (1) Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. — (2) Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau, tổng mới bằng bao nhiêu? — (3) Chia đôi tổng mới để ra số bé.
+**Bài I.2** — (1) 1 lít bằng bao nhiêu mi-li-lít? — (2) Đơn vị nào lớn hơn? — (3) Từ lớn sang bé thì nhân.
 **Bài I.3** — (1) Gạch chân cụm từ chỉ quan hệ. — (2) “Nhiều hơn, ít hơn” dùng cộng, trừ. — (3) “Gấp … lần” dùng nhân; “kém … lần” dùng chia.
-**Bài I.4** — (1) Viết các tích riêng lùi đúng cột. — (2) Khi chia, mỗi lần hạ một chữ số thì viết một chữ số ở thương. — (3) Thử lại bằng phép tính ngược.
-**Bài I.5** — (1) Chia số đó thành mấy phần bằng nhau? — (2) Lấy mấy phần? — (3) Vậy phải làm phép tính gì?
-**Bài II.1** — (1) Đề cho gì và hỏi gì? — (2) Tính tổng trước bằng cách nhân trung bình cộng với số lượng. — (3) Lấy tổng trừ các số đã biết để ra số còn thiếu.
-**Bài II.2** — (1) Mỗi hình ● ứng với bao nhiêu đơn vị? — (2) Bạn ấy có bao nhiêu hình ●? — (3) Nhân hai số ấy với nhau.
-**Bài II.3** — (1) Ghi lại các số liệu ra một hàng. — (2) Cộng tất cả để có tổng. — (3) So sánh để tìm lớn nhất, bé nhất.
-**Bài II.4** — (1) x đóng vai trò gì trong phép tính? — (2) Viết quy tắc tương ứng ra nháp. — (3) Thay x tìm được vào đề để thử lại.
-**Bài II.5** — (1) Đặt tính thẳng hàng đơn vị. — (2) Nhân hoặc chia từ trái sang phải với phép chia. — (3) Thử lại bằng phép tính ngược.
-**Bài III.1** — (1) Diện tích hình lớn bằng bao nhiêu? — (2) Diện tích một mảnh bằng bao nhiêu? — (3) Chia hai diện tích cho nhau rồi đếm lại theo hàng.
-**Bài III.2** — (1) Lấy hiệu các số liên tiếp — có bằng nhau không? — (2) Lấy thương — có bằng nhau không? — (3) Dãy hiệu có tăng đều không?
-**Bài III.3** — (1) Số chia là 2 hay 5 thì nhìn chữ số cuối. — (2) Số chia là 3 hay 9 thì cộng các chữ số. — (3) Tổng vẫn còn lớn thì cộng tiếp một lần nữa.
-**Bài III.4** — (1) Ghi lại các số liệu ra một hàng. — (2) Cộng tất cả để có tổng. — (3) So sánh để tìm lớn nhất và bé nhất.
-**Bài III.5** — (1) Đã bán bao nhiêu ki-lô-gam? — (2) Đề hỏi số đã bán hay số còn lại? — (3) Lấy tổng trừ đi số đã bán.
-**Bài IV.1** — (1) Chiều dài hình mới bằng bao nhiêu? — (2) Chiều rộng hình mới bằng bao nhiêu? — (3) Áp công thức chu vi và diện tích hình chữ nhật.
-**Bài IV.2** — (1) Nửa chu vi bằng bao nhiêu? — (2) Nửa chu vi là tổng của hai chiều nào? — (3) Trừ đi chiều đã biết.
+**Bài I.4** — (1) Chia số đó thành mấy phần bằng nhau? — (2) Lấy mấy phần? — (3) Vậy phải làm phép tính gì?
+**Bài I.5** — (1) Viết các tích riêng lùi đúng cột. — (2) Khi chia, mỗi lần hạ một chữ số thì viết một chữ số ở thương. — (3) Thử lại bằng phép tính ngược.
+**Bài II.1** — (1) Mỗi hình ● ứng với bao nhiêu đơn vị? — (2) Bạn ấy có bao nhiêu hình ●? — (3) Nhân hai số ấy với nhau.
+**Bài II.2** — (1) Ghi lại các số liệu ra một hàng. — (2) Cộng tất cả để có tổng. — (3) So sánh để tìm lớn nhất, bé nhất.
+**Bài II.3** — (1) Mỗi hàng của bảng nói về cái gì? Mỗi cột nói về cái gì? — (2) Muốn biết một tổ có bao nhiêu bạn thì cộng những số nào? — (3) Cộng theo cột rồi so với tổng cộng theo hàng để kiểm tra.
+**Bài II.4** — (1) Đề cho gì và hỏi gì? — (2) Tính tổng trước bằng cách nhân trung bình cộng với số lượng. — (3) Lấy tổng trừ các số đã biết để ra số còn thiếu.
+**Bài II.5** — (1) Câu nào cho biết tổng của hai đại lượng? — (2) Câu nào cho biết chúng hơn kém nhau bao nhiêu? — (3) Vẽ sơ đồ rồi áp công thức.
+**Bài III.1** — (1) Ghi lại các số liệu ra một hàng. — (2) Cộng tất cả để có tổng. — (3) So sánh để tìm lớn nhất và bé nhất.
+**Bài III.2** — (1) Đã bán bao nhiêu ki-lô-gam? — (2) Đề hỏi số đã bán hay số còn lại? — (3) Lấy tổng trừ đi số đã bán.
+**Bài III.3** — (1) Lưới có bao nhiêu đường kẻ mỗi chiều? — (2) Chọn hai đường ngang và hai đường dọc được gì? — (3) Đếm hình vuông theo từng cỡ cạnh.
+**Bài III.4** — (1) Từ hình 1 đến hình thứ n phải thêm mấy lần? — (2) Mỗi lần thêm bao nhiêu que? — (3) Cộng vào số que hình đầu.
+**Bài III.5** — (1) Biểu thức có dấu ngoặc không? — (2) Gạch chân nhân và chia. — (3) Làm nhân chia trước, cộng trừ sau.
+**Bài IV.1** — (1) Còn lại bao nhiêu gói? — (2) Mỗi gói nặng bao nhiêu gam? — (3) Nhân hai kết quả.
+**Bài IV.2** — (1) Số đó được chia thành mấy phần bằng nhau? — (2) Mỗi phần bằng bao nhiêu? — (3) Cả số gồm mấy phần như thế?
 **Bài IV.3** — (1) Số đó chia thành mấy phần bằng nhau? — (2) Mỗi phần bằng bao nhiêu? — (3) Cả số gồm mấy phần như thế?
-**Bài IV.4** — (1) Còn lại bao nhiêu gói? — (2) Mỗi gói nặng bao nhiêu gam? — (3) Nhân hai kết quả.
-**Bài IV.5** — (1) Số đó được chia thành mấy phần bằng nhau? — (2) Mỗi phần bằng bao nhiêu? — (3) Cả số gồm mấy phần như thế?
-**Bài V.1** — (1) Ngày đầu phát bao nhiêu quyển? — (2) Sau ngày đầu còn lại bao nhiêu? — (3) Ngày thứ hai lấy một phần mấy của số nào?
+**Bài IV.4** — (1) Khoanh cụm chứa x, coi là một số. — (2) Cụm đó là số hạng, số bị trừ hay thừa số? — (3) Tìm giá trị của cụm rồi tìm x.
+**Bài IV.5** — (1) Số đầu tiên trong khoảng thoả điều kiện là số nào? — (2) Số cuối cùng thoả điều kiện là số nào? — (3) Số lượng = (cuối − đầu) : khoảng cách + 1.
+**Bài V.1** — (1) Sau mỗi bước, tổng các số trên bảng đổi bao nhiêu? — (2) Lượng thay đổi ấy là số chẵn hay số lẻ? — (3) Vậy tính chẵn lẻ của tổng có đổi không?
 **Bài V.2** — (1) Ngày đầu phát bao nhiêu quyển? — (2) Sau ngày đầu còn lại bao nhiêu? — (3) Ngày thứ hai lấy một phần mấy của số nào?
-**Bài V.3** — (1) Chữ số tận cùng của mỗi số là gì? — (2) Tính riêng với hai chữ số ấy. — (3) Lấy chữ số tận cùng của kết quả vừa tính.
-**Bài V.4** — (1) Số đầu cộng số cuối bằng bao nhiêu? — (2) Có bao nhiêu cặp như thế? — (3) Nhân tổng một cặp với số cặp.
-**Bài V.5** — (1) Sau mỗi bước, tổng các số trên bảng đổi bao nhiêu? — (2) Lượng thay đổi ấy là số chẵn hay số lẻ? — (3) Vậy tính chẵn lẻ của tổng có đổi không?
+**Bài V.3** — (1) Từ 1 đến 9 dùng mấy chữ số? — (2) Từ 10 đến 99 có bao nhiêu trang? — (3) Nhóm cuối có bao nhiêu trang?
+**Bài V.4** — (1) Ngày đầu phát bao nhiêu quyển? — (2) Sau ngày đầu còn lại bao nhiêu? — (3) Ngày thứ hai lấy một phần mấy của số nào?
+**Bài V.5** — (1) Chữ số tận cùng của mỗi số là gì? — (2) Tính riêng với hai chữ số ấy. — (3) Lấy chữ số tận cùng của kết quả vừa tính.
 
 ---
 
@@ -759,30 +755,30 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | Bài | Đề tương tự | Đáp số |
 |---|---|---|
 | I.1 | Tìm 1 phần 4 của 20. | 5 |
-| I.2 | Tổng hai số là 100, hiệu là 20. Tìm hai số. | 60 và 40 |
+| I.2 | 3 l = … ml | 3 000 |
 | I.3 | An có 12 quyển vở, Bình có gấp 3 lần An. Bình có mấy quyển? | 36 |
-| I.4 | Đặt tính rồi tính: 3 045 × 24 | 73 080 |
-| I.5 | Tìm 1 phần 4 của 20. | 5 |
-| II.1 | Trung bình mỗi ngày bán 40 kg, hỏi 5 ngày bán bao nhiêu? | 200 kg |
-| II.2 | Mỗi hình ứng với 5 quyển sách, bạn A có 4 hình. A có mấy quyển? | 20 quyển |
-| II.3 | Ba bạn gấp 5, 8, 11 bông. Trung bình mỗi bạn mấy bông? | 8 bông |
-| II.4 | Tìm x: x + 25 = 60 | x = 35 |
-| II.5 | Đặt tính rồi tính: 246 × 3 | 738 |
-| III.1 | Hình chữ nhật 6 cm × 4 cm phủ bằng hình vuông cạnh 2 cm. Cần mấy hình? | 6 hình |
-| III.2 | Viết tiếp: 1, 3, 6, 10, … | 15 |
-| III.3 | Số 342 có chia hết cho 9 không? | có, vì 3 + 4 + 2 = 9 |
-| III.4 | Ba ngày bán 5, 8, 11 quyển. Trung bình mỗi ngày mấy quyển? | 8 quyển |
-| III.5 | Có 20 kg gạo, bán 1 phần 4. Còn bao nhiêu kg? | 15 kg |
-| IV.1 | Ghép 3 hình vuông cạnh 4 cm thành hàng. Chu vi bằng bao nhiêu? | 32 cm |
-| IV.2 | Hình chữ nhật chu vi 30 cm, dài 10 cm. Chiều rộng bằng bao nhiêu? | 5 cm |
+| I.4 | Tìm 1 phần 4 của 20. | 5 |
+| I.5 | Đặt tính rồi tính: 3 045 × 24 | 73 080 |
+| II.1 | Mỗi hình ứng với 5 quyển sách, bạn A có 4 hình. A có mấy quyển? | 20 quyển |
+| II.2 | Ba bạn gấp 5, 8, 11 bông. Trung bình mỗi bạn mấy bông? | 8 bông |
+| II.3 | Tổ 1 có 5 nam 4 nữ, tổ 2 có 6 nam 6 nữ. Hai tổ có tất cả bao nhiêu bạn? | 21 bạn |
+| II.4 | Trung bình mỗi ngày bán 40 kg, hỏi 5 ngày bán bao nhiêu? | 200 kg |
+| II.5 | Hai lớp có 90 quyển sách, lớp A nhiều hơn lớp B 10 quyển. Mỗi lớp có mấy quyển? | 50 và 40 |
+| III.1 | Ba ngày bán 5, 8, 11 quyển. Trung bình mỗi ngày mấy quyển? | 8 quyển |
+| III.2 | Có 20 kg gạo, bán 1 phần 4. Còn bao nhiêu kg? | 15 kg |
+| III.3 | Lưới 2 × 2 có mấy hình vuông? | 5 |
+| III.4 | Hình 1 có 3 que, mỗi hình sau hơn 2 que. Hình thứ 10 có mấy que? | 21 |
+| III.5 | Tính: 25 + 8 × 4 | 57 |
+| IV.1 | Có 5 gói kẹo, mỗi gói 200 g, lấy ra 2 gói. Còn lại bao nhiêu gam? | 600 g |
+| IV.2 | 1 phần 3 của một số là 7. Tìm số đó. | 21 |
 | IV.3 | 1 phần 3 của một số là 7. Tìm số đó. | 21 |
-| IV.4 | Có 5 gói kẹo, mỗi gói 200 g, lấy ra 2 gói. Còn lại bao nhiêu gam? | 600 g |
-| IV.5 | 1 phần 3 của một số là 7. Tìm số đó. | 21 |
-| V.1 | Có 24 quyển vở, phát 1 phần 2, rồi phát 1 phần 3 số còn lại. Còn mấy quyển? | 8 quyển |
+| IV.4 | Tìm x: x × 4 + 8 = 36 | x = 7 |
+| IV.5 | Có bao nhiêu số chẵn từ 10 đến 40? | 16 |
+| V.1 | Viết các số 1 đến 4, mỗi bước thay hai số bằng hiệu. Số cuối chẵn hay lẻ? | chẵn |
 | V.2 | Có 24 quyển vở, phát 1 phần 2, rồi phát 1 phần 3 số còn lại. Còn mấy quyển? | 8 quyển |
-| V.3 | Tích 137 × 46 có chữ số tận cùng là chữ số nào? | 2 |
-| V.4 | Tính: 2 + 4 + 6 + … + 20 | 110 |
-| V.5 | Viết các số 1 đến 4, mỗi bước thay hai số bằng hiệu. Số cuối chẵn hay lẻ? | chẵn |
+| V.3 | Vở 20 trang dùng hết bao nhiêu chữ số? | 31 |
+| V.4 | Có 24 quyển vở, phát 1 phần 2, rồi phát 1 phần 3 số còn lại. Còn mấy quyển? | 8 quyển |
+| V.5 | Tích 137 × 46 có chữ số tận cùng là chữ số nào? | 2 |
 
 ---
 

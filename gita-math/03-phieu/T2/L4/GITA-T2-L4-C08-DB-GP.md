@@ -31,42 +31,42 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần A**
 
 - **Bài A.1** — a) Phân số: rút gọn, quy đồng, so sánh nâng cao · b) So sánh phân số bằng phần bù, phần hơn và số trung gian · c) Bốn phép tính với phân số — kỹ thuật tính nhanh · d) Tìm phân số của một số và bài toán ngược · e) Bài toán có lời văn với phân số nâng cao · f) Bài toán phân số dạng đề thi vào lớp 6 · g) Tổng ôn phân số nâng cao
-- **Bài A.2** — a) Cụm “bằng … của …” · b) Biểu thức chỉ gồm phân số · c) Hai phân số nối bởi dấu … · d) Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 · e) Đề cho bảng hoặc biểu đồ kèm nhiều câu hỏi
-- **Bài A.3** — a) Xét cùng mẫu → cùng tử → quy đồng · b) So phần bù; hoặc chèn phân số trung gian · c) Ghi lại số liệu, trả lời từng câu bằng công cụ tương ứng · d) Quan sát rút gọn trước, sau đó theo thứ tự thực hiện · e) Rút gọn → so cùng mẫu hoặc quy đồng
-- **Bài A.4** — a) Thống kê mô tả sơ cấp, trung bình cộng, tỉ số phần trăm · b) Thứ tự thực hiện phép tính, tính chất phân phối · c) Tính chất cơ bản của phân số; so sánh phân số · d) Phần bù tới 1; quy luật dãy phân số · e) Biểu đồ tranh, phép nhân và chia
-- **Bài A.5** — a) So với 1 và với một nửa trước — nhiều phân số phân loại được ngay. · b) n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. · c) Nếu mọi bạn đều dùng cùng một loại hình thì so số hình là đủ để biết ai nhiều nhất. · d) Tìm ngay ước chung lớn nhất để rút gọn một lần là xong. · e) Số người ít nhất một nhóm = nhóm A + nhóm B − phần chung.
+- **Bài A.2** — a) Cụm “bằng … của …” · b) Một bảng hai chiều: hàng là nhóm, cột là loại số liệu · c) Hai phân số nối bởi dấu … · d) Biểu thức chỉ gồm phân số · e) Đề cho số người của từng nhóm **và** số người thuộc cả hai nhóm
+- **Bài A.3** — a) Xét cùng mẫu → cùng tử → quy đồng · b) Chọn quy tắc theo phép tính, rút gọn cuối cùng · c) Vẽ hai vòng tròn, điền phần chung trước rồi mới trừ ra phần riêng · d) So phần bù; hoặc chèn phân số trung gian · e) Rút gọn → so cùng mẫu hoặc quy đồng
+- **Bài A.4** — a) Phép cộng, phép trừ; đếm không trùng lặp · b) Phần bù tới 1, phân số trung gian · c) Tính chất cơ bản của phân số; so sánh phân số · d) Đọc biểu đồ; trung bình cộng; so sánh số · e) Thứ tự thực hiện phép tính, tính chất phân phối
+- **Bài A.5** — a) So với 1 và với một nửa trước — nhiều phân số phân loại được ngay. · b) Ghi cả dãy số ra nháp một lần, mọi câu sau đều dùng lại dãy ấy. · c) Rút gọn chéo tử với mẫu trước khi nhân. · d) n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. · e) Nếu mọi bạn đều dùng cùng một loại hình thì so số hình là đủ để biết ai nhiều nhất.
 
 **Phần B**
 
-- **Bài B.1** — a) 175 · b) 176 · c) 191 · d) 368 · e) 442 · f) 427 · g) 66
-- **Bài B.2** — a) 241 kg · b) 840 kg · c) 1 300 kg · d) 732 kg
-- **Bài B.3** — a) 7 phần 130 · b) 177 phần 65 · c) 32 phần 77 · d) 48 phần 35 · e) 1 phần 2 · f) 10 phần 3 · g) 1 phần 8
-- **Bài B.4** — a) 20 · b) 30 · c) 100 · d) Nam (40) · e) Quân (10) · f) 30 · g) 6 hình
-- **Bài B.5** — a) 5 viên (làm tròn lên) · b) 9 cây · c) 17 viên (làm tròn lên) · d) 111 cây · e) 129 viên (làm tròn lên)
+- **Bài B.1** — a) 80 m · b) không chia hết (82 m không chia hết cho 5 m) · c) 406 viên · d) 9 viên (làm tròn lên)
+- **Bài B.2** — a) 6 · b) 4 · c) 24 · d) Quân (10) · e) Hà (4) · f) 6 · g) 6 hình
+- **Bài B.3** — a) 89 000 · b) 19 000 · c) 7 000 · d) 7 200 · e) 9 400 · f) 1 600 · g) 2 700
+- **Bài B.4** — a) 3 phần 35 · b) 17 phần 12 · c) 11 phần 5 · d) 13 phần 10 · e) 41 phần 21 · f) 12 phần 5
+- **Bài B.5** — a) Tổ 4 — 17 bạn · b) Tổ 2 — 13 bạn · c) 29 bạn nam và 29 bạn nữ · d) 58 bạn · e) 17 − 13 = 4 bạn · f) bằng nhau
 
 **Phần C**
 
-- **Bài C.1** — a) 16 quyển · b) 13 quyển · c) 1 106 nghìn đồng · d) 30 quyển
-- **Bài C.2** — a) 36 · b) 330 000 · c) 31 · d) 7 000 · e) 89 · f) 750 000 · g) 450 000 · h) 63
-- **Bài C.3** — a) 5 · b) 7 · c) 9 · d) 11 · e) 15 · f) 19 · g) 100
-- **Bài C.4** — a) tổ Hai: 365 cây, đội Một: 231 cây · b) 5B: 428 quyển, 4A: 272 quyển · c) kho B: 392 kg, kho A: 340 kg · d) kho B: 319 kg, kho A: 213 kg
-- **Bài C.5** — a) không, vì hai câu phủ định nhau · b) không, vì chúng phủ định nhau · c) đúng một bạn · d) nói dối · e) Thảo chính là người làm vỡ lọ hoa · f) Thảo
+- **Bài C.1** — a) thư viện: 390 kg, trang trại: 214 kg · b) 4C: 553 quyển, 5B: 291 quyển · c) tổ Một: 301 cây, nhóm Hoa Phượng: 165 cây · d) tổ Ba: 245 cây, nhóm Sao Mai: 137 cây
+- **Bài C.2** — a) 5 353 · b) 5 841 · c) 2 673 · d) 1 428 · e) 1 818 · f) 475 · g) 3 663
+- **Bài C.3** — a) 162 · b) 197 · c) 144 · d) 142 · e) 159 · f) 163 · g) 84
+- **Bài C.4** — a) 158 kg · b) 122 kg · c) 264 kg · d) 245 kg · e) 48 kg
+- **Bài C.5** — a) cà chua: 50 000 · rau muống: 40 000 · gạo: 100 000 · b) 190 000 · c) 189 500 · d) 500 đồng · e) 10 500 đồng
 
 **Phần D**
 
-- **Bài D.1** — a) 6 em · b) 0 em · c) 2 em · d) 6 em · e) 2 em · f) 3 em
-- **Bài D.2** — a) 22 tạ 80 kg · b) 6 tạ 30 kg · c) 5 tạ · d) 22 tạ 20 kg
-- **Bài D.3** — a) 105 · b) Lịch sử (30 bạn) · c) Tiếng Việt (4 bạn) · d) 26 · e) 21 · f) 25%
-- **Bài D.4** — a) < · b) > · c) < · d) < · e) <
-- **Bài D.5** — a) 8 cây · b) 108 cây · c) 44 cây · d) 111 cây · e) 66 cây · f) 114 cây
+- **Bài D.1** — a) 6 em · b) 0 em · c) 0 em · d) 2 em · e) 4 em
+- **Bài D.2** — a) 200 · b) 277 · c) 422 · d) 24 · e) 385 · f) 305
+- **Bài D.3** — a) 52 cây · b) 69 cây · c) 108 cây · d) 24 cây
+- **Bài D.4** — a) 53 · b) Tiếng Anh (21 bạn) · c) Lịch sử (4 bạn) · d) 17 · e) 10,6 · f) 11%
+- **Bài D.5** — a) Tháng 7 — 22 ngày · b) Tháng 9 — 2 ngày · c) 56 ngày · d) 56 : 5 = 11,2 ngày · e) 20 ngày · f) 3 tháng
 
 **Phần E**
 
-- **Bài E.1** — a) Bốn phép tính với phân số · b) Biểu thức chỉ gồm phân số · c) Quy đồng, nhân chia phân số · d) Chọn quy tắc theo phép tính, rút gọn cuối cùng · e) Rút gọn chéo trước khi nhân để số nhỏ, tính nhanh và ít sai. · f) Quy đồng cả khi nhân, hoặc cộng thẳng tử với tử và mẫu với mẫu.
-- **Bài E.2** — a) So sánh phân số bằng kĩ thuật đặc biệt · b) Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 · c) Phần bù tới 1, phân số trung gian · d) So phần bù; hoặc chèn phân số trung gian · e) Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. · f) So phần bù rồi kết luận cùng chiều với phần bù.
-- **Bài E.3** — a) Biểu thức phân số nhiều phép tính · b) Biểu thức gồm nhiều phân số và nhiều phép tính · c) Thứ tự thực hiện phép tính, tính chất phân phối · d) Quan sát rút gọn trước, sau đó theo thứ tự thực hiện · e) Rút gọn chéo tử với mẫu trước khi nhân. · f) Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước.
-- **Bài E.4** — a) Dãy phân số, so sánh bằng phần bù · b) Tử và mẫu hơn kém nhau đúng 1 đơn vị · c) Phần bù tới 1; quy luật dãy phân số · d) Xét phần bù tới 1 rồi so sánh · e) n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. · f) So phần bù rồi kết luận cùng chiều với phần bù.
-- **Bài E.5** — a) Rút gọn phân số · b) Tử số và mẫu số có ước chung lớn hơn 1 · c) Tính chất cơ bản của phân số · d) Chia cả tử và mẫu cho ước chung · e) Tìm ngay ước chung lớn nhất để rút gọn một lần là xong. · f) Chỉ chia tử số hoặc chỉ chia mẫu số.
+- **Bài E.1** — a) Đọc bảng số liệu thống kê · b) Một bảng hai chiều: hàng là nhóm, cột là loại số liệu · c) Đọc bảng; cộng trừ trong phạm vi 100 · d) Cộng theo hàng cho từng nhóm, cộng theo cột cho toàn bộ · e) Tổng theo hàng và tổng theo cột luôn bằng nhau, dùng để soát lại. · f) Đọc nhầm cột, lấy số bạn nữ trả lời câu hỏi về bạn nam.
+- **Bài E.2** — a) Bốn phép tính với phân số · b) Biểu thức chỉ gồm phân số · c) Quy đồng, nhân chia phân số · d) Chọn quy tắc theo phép tính, rút gọn cuối cùng · e) Rút gọn chéo trước khi nhân để số nhỏ, tính nhanh và ít sai. · f) Quy đồng cả khi nhân, hoặc cộng thẳng tử với tử và mẫu với mẫu.
+- **Bài E.3** — a) So sánh phân số bằng kĩ thuật đặc biệt · b) Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 · c) Phần bù tới 1, phân số trung gian · d) So phần bù; hoặc chèn phân số trung gian · e) Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. · f) So phần bù rồi kết luận cùng chiều với phần bù.
+- **Bài E.4** — a) Đọc biểu đồ cột · b) Biểu đồ có chú thích tỉ lệ, mỗi ô thay cho nhiều đơn vị · c) Đọc biểu đồ; trung bình cộng; so sánh số · d) Đổi biểu đồ về dãy số rồi làm như bài số liệu thường · e) Ghi cả dãy số ra nháp một lần, mọi câu sau đều dùng lại dãy ấy. · f) Đếm số ô rồi trả lời luôn, quên nhân với giá trị mỗi ô.
+- **Bài E.5** — a) Dãy phân số, so sánh bằng phần bù · b) Tử và mẫu hơn kém nhau đúng 1 đơn vị · c) Phần bù tới 1; quy luật dãy phân số · d) Xét phần bù tới 1 rồi so sánh · e) n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. · f) So phần bù rồi kết luận cùng chiều với phần bù.
 
 ---
 
@@ -138,7 +138,7 @@ Kết quả: **Xét cùng mẫu → cùng tử → quy đồng**.
 
 **Các bước giải**
 
-Xét ý a: Dạng “Đọc bảng số liệu thống kê” — kiến thức phải thuộc?
+Xét ý a: Dạng “Biểu đồ Ven” — kiến thức phải thuộc?
 
 Đọc vị: đây là dạng **Lập bảng dạng bài**; dấu hiệu là Bảng có sẵn cột dạng bài, thiếu các cột còn lại.
 
@@ -148,7 +148,7 @@ Cách làm: Tra bảng phân tích của các phiếu đã học.
 
 Lối tắt: Học theo hàng ngang, không học theo cột dọc.
 
-Kết quả: **Thống kê mô tả sơ cấp, trung bình cộng, tỉ số phần trăm**.
+Kết quả: **Phép cộng, phép trừ; đếm không trùng lặp**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Cột “Kiến thức phải thuộc” lấy từ bảng phân tích chuyên sâu của các phiếu đã học. Điền xong, đọc ngang từng hàng để thấy mạch từ đề bài tới lời giải.
 
@@ -174,93 +174,11 @@ Kết quả: **So với 1 và với một nửa trước — nhiều phân số 
 
 *Điểm chốt:* Bảng chỉ có giá trị khi **đọc ngang được từng hàng**.
 
-### Bài B.1 — Tính nhanh bằng cách ghép số tròn
+### Bài B.1 — Bài toán thực tế về chu vi và diện tích
 
 **Các bước giải**
 
-Xét ý a: 175 + 77 − 77
-
-Đọc vị: đây là dạng **Tính nhanh tổng nhiều số hạng**; dấu hiệu là Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm.
-
-Kiến thức phải dùng: Tính chất giao hoán, kết hợp của phép cộng.
-
-Cách làm: Ghép cặp tròn rồi cộng.
-
-Lối tắt: Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10.
-
-Kết quả: **175**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Dùng tính chất giao hoán và kết hợp của phép cộng để đổi chỗ, nhóm những số cộng lại thành số tròn chục, tròn trăm rồi mới cộng phần còn lại.
-
-*Điểm chốt:* Tìm **cặp cộng tròn 100** trước khi cộng theo thứ tự.
-
-### Bài B.2 — Trung bình cộng trong tình huống thực tế
-
-**Các bước giải**
-
-Xét ý a: Trung bình mỗi ngày cửa hàng bán được 236 kg gạo. 3 ngày đầu bán được 228, 227, 248 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
-
-Đọc vị: đây là dạng **Ba dạng bài trung bình cộng**; dấu hiệu là Cụm “trung bình mỗi …”.
-
-Kiến thức phải dùng: Quan hệ tổng – số lượng – trung bình cộng.
-
-Cách làm: Đi qua tổng làm trung gian.
-
-Lối tắt: Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng.
-
-Kết quả: **241 kg**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Ba dạng ngược nhau: biết các số tìm trung bình cộng (cộng rồi chia); biết trung bình cộng tìm tổng (nhân); biết trung bình cộng và một số số hạng, tìm số hạng còn thiếu (lấy tổng trừ đi các số đã biết).
-
-*Điểm chốt:* Từ trung bình cộng luôn tìm được **tổng** trước, rồi mới tính tiếp.
-
-### Bài B.3 — Bốn phép tính với phân số
-
-**Các bước giải**
-
-Xét ý a: 9 phần 10 − 11 phần 13
-
-Đọc vị: đây là dạng **Bốn phép tính với phân số**; dấu hiệu là Biểu thức chỉ gồm phân số.
-
-Kiến thức phải dùng: Quy đồng, nhân chia phân số.
-
-Cách làm: Chọn quy tắc theo phép tính, rút gọn cuối cùng.
-
-Lối tắt: Rút gọn chéo trước khi nhân để số nhỏ, tính nhanh và ít sai.
-
-Kết quả: **7 phần 130**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Cộng, trừ phân số phải **quy đồng mẫu số** trước. Nhân phân số thì nhân tử với tử, mẫu với mẫu. Chia phân số thì nhân với phân số đảo ngược của số chia. Cuối cùng luôn rút gọn.
-
-*Điểm chốt:* Cộng trừ **cần** quy đồng, nhân chia **không cần** quy đồng.
-
-### Bài B.4 — Đọc và lập biểu đồ tranh
-
-**Các bước giải**
-
-Đọc chú thích trước: mỗi hình ● ứng với 5 bông hoa.
-
-Bạn Hùng có 4 hình ●.
-
-Số bông hoa của bạn ấy: 4 × 5 = 20.
-
-Làm tương tự cho ba bạn còn lại rồi cộng để có tổng 100.
-
-Đáp số ý a: **20 bông hoa**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Việc đầu tiên khi đọc biểu đồ tranh là đọc **chú thích**: mỗi hình ứng với bao nhiêu đơn vị. Sau đó nhân số hình với số ấy. Muốn lập biểu đồ thì làm ngược lại: chia số thật cho số đơn vị mỗi hình.
-
-*Điểm chốt:* Mỗi hình **không phải một đơn vị** — phải đọc chú thích trước.
-
-*Muốn khó hơn:* Đổi sang biểu đồ cột, hỏi cùng những câu ấy.
-
-*Phải chắc trước khi làm bài này:* Bảng nhân và cách đọc bảng số liệu.
-
-### Bài B.5 — Bài toán thực tế về chu vi và diện tích
-
-**Các bước giải**
-
-Xét ý a: Một nền nhà hình chữ nhật dài 12 dm, rộng 10 dm, lát bằng gạch vuông cạnh 5 dm. Hỏi cần bao nhiêu viên gạch?
+Xét ý a: Một mảnh vườn hình chữ nhật dài 35 m, rộng 5 m. Người ta rào xung quanh mảnh vườn. Hỏi cần bao nhiêu mét rào?
 
 Đọc vị: đây là dạng **Chu vi, diện tích trong tình huống thực tế**; dấu hiệu là Từ khoá “rào xung quanh”, “lát gạch”, “trồng cây quanh”.
 
@@ -270,81 +188,99 @@ Cách làm: Đọc vị chu vi hay diện tích rồi tính.
 
 Lối tắt: Nhìn đơn vị của đáp số: mét thì là chu vi, mét vuông thì là diện tích.
 
-Kết quả: **5 viên (làm tròn lên)**.
+Kết quả: **80 m**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Rào xung quanh, trồng cây quanh mảnh đất là bài toán **chu vi**. Lát gạch, trải thảm, gieo hạt khắp mặt đất là bài toán **diện tích**. Số viên gạch = diện tích nền : diện tích một viên.
 
 *Điểm chốt:* “Xung quanh” → chu vi; “khắp mặt” → diện tích.
 
-### Bài C.1 — Đại lượng tỉ lệ thuận
+### Bài B.2 — Đọc và lập biểu đồ tranh
 
 **Các bước giải**
 
-Xét ý a: Mua 4 quyển vở hết 84 nghìn đồng. Với 336 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+Đọc chú thích trước: mỗi hình ● ứng với 2 quả táo.
 
-Đọc vị: đây là dạng **Tỉ lệ thuận, rút về đơn vị**; dấu hiệu là Hai đại lượng cùng tăng cùng giảm.
+Bạn Minh có 3 hình ●.
 
-Kiến thức phải dùng: Đại lượng tỉ lệ thuận.
+Số quả táo của bạn ấy: 3 × 2 = 6.
 
-Cách làm: Rút về đơn vị hoặc dùng tỉ số.
+Làm tương tự cho ba bạn còn lại rồi cộng để có tổng 24.
 
-Lối tắt: Nếu số lượng mới gấp số lượng cũ một số nguyên lần thì nhân thẳng, không cần rút về đơn vị.
+Đáp số ý a: **6 quả táo**.
 
-Kết quả: **16 quyển**.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Việc đầu tiên khi đọc biểu đồ tranh là đọc **chú thích**: mỗi hình ứng với bao nhiêu đơn vị. Sau đó nhân số hình với số ấy. Muốn lập biểu đồ thì làm ngược lại: chia số thật cho số đơn vị mỗi hình.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Số vở tăng bao nhiêu lần thì số tiền tăng bấy nhiêu lần. Có hai cách: rút về đơn vị (tìm giá một quyển rồi nhân) hoặc dùng tỉ số (số vở mới gấp mấy lần số vở cũ thì tiền cũng gấp bấy nhiêu lần).
+*Điểm chốt:* Mỗi hình **không phải một đơn vị** — phải đọc chú thích trước.
 
-*Điểm chốt:* Hai đại lượng **cùng tăng, cùng giảm** thì tỉ lệ thuận.
+*Muốn khó hơn:* Đổi sang biểu đồ cột, hỏi cùng những câu ấy.
 
-### Bài C.2 — Đơn vị đo diện tích
+*Phải chắc trước khi làm bài này:* Bảng nhân và cách đọc bảng số liệu.
 
-**Các bước giải**
-
-Xét ý a: 3 600 dm² = … m²
-
-Đọc vị: đây là dạng **Đổi đơn vị diện tích**; dấu hiệu là Đơn vị có mũ hai, hoặc ha, km².
-
-Kiến thức phải dùng: Bảng đơn vị đo diện tích.
-
-Cách làm: Đếm bậc rồi nhân, chia 100.
-
-Lối tắt: Mỗi bậc thêm hai chữ số 0 — nhớ “diện tích thì gấp đôi số 0”.
-
-Kết quả: **36**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần**, vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
-
-*Điểm chốt:* Đơn vị diện tích nhảy **100 lần** mỗi bậc, không phải 10 lần.
-
-*Muốn khó hơn:* Đổi hỗn hợp: 2 ha 350 m² = … m².
-
-*Phải chắc trước khi làm bài này:* Bảng đơn vị đo độ dài và phép nhân, chia với 100.
-
-### Bài C.3 — Dãy hình xếp theo quy luật
+### Bài B.3 — Tính nhanh nhờ ghép cặp thừa số tròn
 
 **Các bước giải**
 
-Xét ý a: Hình thứ 1 có 1 que diêm, mỗi hình sau hơn hình liền trước 2 que. Hình thứ 3 có bao nhiêu que diêm?
+Xét ý a: 89 × 125 × 8
 
-Đọc vị: đây là dạng **Quy luật hình đưa về dãy số**; dấu hiệu là Đề mô tả hình xếp thêm đều đặn theo thứ tự.
+Đọc vị: đây là dạng **Tính nhanh tích, thương nhiều bước**; dấu hiệu là Tích có thừa số 25, 125, 50, 20; hoặc chia liên tiếp.
 
-Kiến thức phải dùng: Dãy cách đều, số hạng thứ n, tổng dãy.
+Kiến thức phải dùng: Tính chất giao hoán, kết hợp của phép nhân.
 
-Cách làm: Lập bảng vài hình đầu, tìm khoảng cách, áp công thức.
+Cách làm: Ghép cặp cho tích tròn rồi nhân.
 
-Lối tắt: Chỉ cần ba hình đầu là đủ để khẳng định quy luật cách đều.
+Lối tắt: Chia liên tiếp cho 4 rồi 25 bằng chia cho 100.
 
-Kết quả: **5**.
+Kết quả: **89 000**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Số que của các hình lập thành dãy cách đều. Dùng công thức số hạng thứ n để tính cho một hình bất kì, dùng công thức tổng dãy cách đều khi hỏi tổng số que của nhiều hình.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Trong một tích, được phép đổi chỗ và nhóm các thừa số. Ghép các cặp cho tích tròn: 25 × 4 = 100, 125 × 8 = 1 000, 50 × 2 = 100, 20 × 5 = 100. Chia liên tiếp cho hai số bằng chia cho tích hai số đó.
 
-*Điểm chốt:* Bài toán hình nhưng lời giải là **dãy số** — đổi ngôn ngữ trước khi tính.
+*Điểm chốt:* Thuộc lòng bốn cặp tròn: **25 × 4**, **125 × 8**, **50 × 2**, **20 × 5**.
 
-### Bài C.4 — Bài toán tổng – hiệu có lời văn
+### Bài B.4 — Bốn phép tính với phân số
 
 **Các bước giải**
 
-Xét ý a: Tổ Hai và đội Một trồng được 596 cây. Tổ Hai trồng nhiều hơn đội Một 134 cây. Mỗi tổ trồng bao nhiêu cây?
+Xét ý a: 3 phần 10 × 2 phần 7
+
+Đọc vị: đây là dạng **Bốn phép tính với phân số**; dấu hiệu là Biểu thức chỉ gồm phân số.
+
+Kiến thức phải dùng: Quy đồng, nhân chia phân số.
+
+Cách làm: Chọn quy tắc theo phép tính, rút gọn cuối cùng.
+
+Lối tắt: Rút gọn chéo trước khi nhân để số nhỏ, tính nhanh và ít sai.
+
+Kết quả: **3 phần 35**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Cộng, trừ phân số phải **quy đồng mẫu số** trước. Nhân phân số thì nhân tử với tử, mẫu với mẫu. Chia phân số thì nhân với phân số đảo ngược của số chia. Cuối cùng luôn rút gọn.
+
+*Điểm chốt:* Cộng trừ **cần** quy đồng, nhân chia **không cần** quy đồng.
+
+### Bài B.5 — Đọc bảng thống kê của lớp
+
+**Các bước giải**
+
+Đọc bảng thì đọc **tên cột trước, số sau**. Cột thứ hai là số bạn nam, cột thứ ba là số bạn nữ — mỗi tổ nằm trên một hàng.
+
+Muốn biết mỗi tổ có bao nhiêu bạn thì cộng hai cột của hàng ấy: Tổ 1 7 + 7 = 14 · Tổ 2 6 + 7 = 13 · Tổ 3 7 + 7 = 14 · Tổ 4 9 + 8 = 17.
+
+So bốn số vừa tính: nhiều nhất là Tổ 4 với 17 bạn, ít nhất là Tổ 2 với 13 bạn.
+
+Cả lớp: cộng theo **cột** — nam 29 bạn, nữ 29 bạn, tất cả **58 bạn**. Cộng theo hàng rồi cộng lại cũng ra đúng con số ấy, đó là cách tự kiểm tra.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Cộng theo hàng để biết từng tổ, cộng theo cột để biết cả lớp. Hai cách phải cho cùng một tổng — đó là cách tự kiểm tra không cần ai chấm.
+
+*Điểm chốt:* Cộng theo hàng và cộng theo cột phải ra cùng một tổng.
+
+*Muốn khó hơn:* Vẽ biểu đồ cột cho bảng này rồi trả lời lại các câu hỏi.
+
+*Phải chắc trước khi làm bài này:* Kỹ năng đọc bảng và cộng trừ trong phạm vi 100.
+
+### Bài C.1 — Bài toán tổng – hiệu có lời văn
+
+**Các bước giải**
+
+Xét ý a: Thư viện và trang trại chứa tất cả 604 kg đường. Thư viện chứa nhiều hơn trang trại 176 kg. Mỗi nơi chứa bao nhiêu kg?
 
 Đọc vị: đây là dạng **Tổng – hiệu có lời văn**; dấu hiệu là “Có tất cả …” và “… nhiều hơn … là …”.
 
@@ -354,31 +290,93 @@ Cách làm: Đọc vị tổng và hiệu → sơ đồ → công thức.
 
 Lối tắt: Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần.
 
-Kết quả: **tổ Hai: 365 cây, đội Một: 231 cây**.
+Kết quả: **thư viện: 390 kg, trang trại: 214 kg**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Đọc đề, xác định đâu là **tổng**, đâu là **hiệu**. Vẽ sơ đồ hai đoạn thẳng. Số lớn = (tổng + hiệu) : 2; số bé = tổng − số lớn.
 
 *Điểm chốt:* Cụm “có tất cả” cho **tổng**; cụm “nhiều hơn” cho **hiệu**.
 
-### Bài C.5 — Bài toán nói thật – nói dối
+### Bài C.2 — Nhân nhẩm với số gần tròn chục, tròn trăm
 
 **Các bước giải**
 
-Xét ý a: Câu nói của Phúc và câu nói của Tuấn có thể cùng đúng được không? Vì sao?
+Xét ý a: 53 × 101
 
-Đọc vị: đây là dạng **Suy luận nói thật – nói dối**; dấu hiệu là “Chỉ một người nói thật”, các câu nói mâu thuẫn nhau.
+Đọc vị: đây là dạng **Nhân nhẩm nhờ tách thừa số**; dấu hiệu là Thừa số là 9, 11, 19, 21, 99, 101….
 
-Kiến thức phải dùng: Logic mệnh đề sơ cấp, phương pháp loại trừ.
+Kiến thức phải dùng: Nhân một số với một tổng, một hiệu.
 
-Cách làm: Tìm cặp mâu thuẫn, khoá số câu đúng, suy ra phần còn lại.
+Cách làm: Tách về số tròn rồi bù trừ.
 
-Lối tắt: Cặp mâu thuẫn đã dùng hết “suất” nói thật, nên mọi câu ngoài cặp đều sai.
+Lối tắt: × 11 với số có hai chữ số: viết hai chữ số ra hai đầu, tổng của chúng đặt vào giữa (nhớ sang trái nếu tổng vượt 9).
 
-Kết quả: **không, vì hai câu phủ định nhau**.
+Kết quả: **5 353**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Tìm hai câu nói **phủ định nhau**: trong hai câu đó chắc chắn có đúng một câu đúng. Vì cả ba chỉ có một câu đúng, câu đúng ấy nằm trong cặp phủ định, nên câu còn lại (của người thứ ba) là sai. Đọc nội dung câu sai đó để kết luận.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Đưa thừa số về dạng tròn chục, tròn trăm cộng hoặc trừ một ít: × 9 = × 10 − 1 lần; × 11 = × 10 + 1 lần; × 99 = × 100 − 1 lần; × 101 = × 100 + 1 lần.
 
-*Điểm chốt:* Cặp câu **phủ định nhau** luôn có đúng một câu đúng — đó là điểm tựa.
+*Điểm chốt:* Tách thừa số thành **tròn chục ± 1 đơn vị** rồi dùng nhân với một tổng, một hiệu.
+
+### Bài C.3 — Đếm số hạng của dãy cách đều
+
+**Các bước giải**
+
+Xét ý a: Dãy 22, 25, 28, …, 505 có bao nhiêu số hạng?
+
+Đọc vị: đây là dạng **Đếm số hạng dãy cách đều**; dấu hiệu là Dãy có số đầu, số cuối và khoảng cách đều.
+
+Kiến thức phải dùng: Công thức đếm số hạng.
+
+Cách làm: (cuối − đầu) : khoảng cách + 1.
+
+Lối tắt: Dãy số tự nhiên liên tiếp từ a đến b có b − a + 1 số hạng.
+
+Kết quả: **162**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Số số hạng = (số hạng cuối − số hạng đầu) : khoảng cách + 1. Phần chia cho biết số khoảng, cộng 1 để đổi từ số khoảng sang số số hạng.
+
+*Điểm chốt:* Số khoảng luôn **ít hơn số số hạng đúng 1**.
+
+### Bài C.4 — Trung bình cộng trong tình huống thực tế
+
+**Các bước giải**
+
+Xét ý a: 5 ngày đầu tuần một cửa hàng bán được lần lượt 155, 157, 169, 152, 157 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
+
+Đọc vị: đây là dạng **Ba dạng bài trung bình cộng**; dấu hiệu là Cụm “trung bình mỗi …”.
+
+Kiến thức phải dùng: Quan hệ tổng – số lượng – trung bình cộng.
+
+Cách làm: Đi qua tổng làm trung gian.
+
+Lối tắt: Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng.
+
+Kết quả: **158 kg**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Ba dạng ngược nhau: biết các số tìm trung bình cộng (cộng rồi chia); biết trung bình cộng tìm tổng (nhân); biết trung bình cộng và một số số hạng, tìm số hạng còn thiếu (lấy tổng trừ đi các số đã biết).
+
+*Điểm chốt:* Từ trung bình cộng luôn tìm được **tổng** trước, rồi mới tính tiếp.
+
+### Bài C.5 — Nhẩm tiền khi đi chợ
+
+**Các bước giải**
+
+Đi chợ thì cần **biết nhanh khoảng bao nhiêu** trước, biết chính xác sau. Vì vậy nhẩm bằng số tròn trước rồi mới cộng số lẻ để bù.
+
+cà chua 49 000 → 50 000 · rau muống 45 000 → 40 000 · gạo 95 500 → 100 000
+
+Cộng số tròn: 50 000 + 40 000 + 100 000 = 190 000 đồng — đây là con số nhẩm trong đầu khi đứng ở chợ.
+
+Tổng đúng: 49 000 + 45 000 + 95 500 = **189 500 đồng**, lệch 500 đồng so với số nhẩm.
+
+Tiền trả lại: 200 000 − 189 500 = **10 500 đồng**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Làm tròn từng giá đến hàng chục nghìn để cộng nhẩm, rồi cộng lại số gốc để có tổng đúng. Hai con số ấy dùng vào hai việc khác nhau: một để biết đủ tiền không, một để trả tiền.
+
+*Điểm chốt:* Ước lượng và tính đúng là hai việc khác nhau, đừng lẫn.
+
+*Muốn khó hơn:* Thêm một món được giảm giá và hỏi lại tiền trả lại.
+
+*Phải chắc trước khi làm bài này:* Làm tròn số và cộng trừ số có sáu chữ số.
 
 ### Bài D.1 — Hai nhóm có phần chung — đếm bằng hai vòng tròn
 
@@ -386,15 +384,15 @@ Kết quả: **không, vì hai câu phủ định nhau**.
 
 **Các bước giải**
 
-Vẽ hai vòng tròn chồng nhau. Điền **phần chung trước**: 11 em học cả hai môn.
+Vẽ hai vòng tròn chồng nhau. Điền **phần chung trước**: 9 em học cả hai môn.
 
-Chỉ học bóng rổ: 21 − 11 = 10 (em).
+Chỉ học hát: 25 − 9 = 16 (em).
 
-Chỉ học tiếng Anh: 26 − 11 = 15 (em).
+Chỉ học bóng rổ: 23 − 9 = 14 (em).
 
-Số em học ít nhất một trong hai môn: 10 + 11 + 15 = 36 (em).
+Số em học ít nhất một trong hai môn: 16 + 9 + 14 = 39 (em).
 
-Số em không học môn nào: 42 − 36 = **6 em**.
+Số em không học môn nào: 45 − 39 = **6 em**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Điền phần chung vào trước, rồi trừ ra hai phần riêng. Cộng ba phần ấy được số người tham gia ít nhất một hoạt động; lấy tổng trừ đi là ra số người ngoài cả hai vòng.
 
@@ -404,29 +402,47 @@ Số em không học môn nào: 42 − 36 = **6 em**.
 
 *Phải chắc trước khi làm bài này:* Phép cộng trừ trong phạm vi 100 và cách đọc đề có nhiều số liệu.
 
-### Bài D.2 — Bài toán thực tế về khối lượng
-
-> **BẪY — Đơn vị của câu trả lời.**
+### Bài D.2 — Tổng của các số tự nhiên liên tiếp
 
 **Các bước giải**
 
-Xét ý a: Một xe chở 38 bao muối, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ muối?
+Xét ý a: Tổng của 5 số tự nhiên liên tiếp bằng 1 010. Tìm số bé nhất trong 5 số đó.
 
-Đọc vị: đây là dạng **Bài toán đại lượng có lời văn**; dấu hiệu là Đơn vị trong câu hỏi khác đơn vị trong dữ kiện.
+Đọc vị: đây là dạng **Dãy số tự nhiên liên tiếp có tổng cho trước**; dấu hiệu là Cụm “… số tự nhiên liên tiếp có tổng bằng …”.
 
-Kiến thức phải dùng: Nhân, chia số tự nhiên; đổi đơn vị khối lượng.
+Kiến thức phải dùng: Trung bình cộng, dãy cách đều.
 
-Cách làm: Tính theo đơn vị dữ kiện rồi đổi ở bước cuối.
+Cách làm: Tìm số giữa bằng phép chia rồi suy ra hai đầu dãy.
 
-Lối tắt: 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ.
+Lối tắt: Tổng của n số liên tiếp (n lẻ) luôn chia hết cho n.
 
-Kết quả: **22 tạ 80 kg**.
+Kết quả: **200**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Tính tổng khối lượng theo ki-lô-gam trước, sau đó mới đổi sang đơn vị mà đề hỏi. Đừng đổi đơn vị ngay từ đầu vì dễ nhầm.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Với một số **lẻ** các số tự nhiên liên tiếp, số ở giữa chính là trung bình cộng: số giữa = tổng : số lượng. Số bé nhất bằng số giữa trừ đi một nửa số lượng còn lại.
 
-*Điểm chốt:* Câu hỏi đòi đơn vị nào thì bước **cuối cùng** mới đổi sang đơn vị đó.
+*Điểm chốt:* Với số lượng lẻ thì **số giữa = tổng : số lượng** — đó là chìa khoá.
 
-### Bài D.3 — Đọc và phân tích bảng số liệu
+### Bài D.3 — Tìm phân số của một số
+
+**Các bước giải**
+
+Xét ý a: Đội Một trồng được 104 cây. Số cây của nhóm Hoa Phượng bằng 1 phần 2 số cây của đội Một. Hỏi nhóm Hoa Phượng trồng được bao nhiêu cây?
+
+Đọc vị: đây là dạng **Tìm phân số của một số**; dấu hiệu là Cụm “bằng … của …”.
+
+Kiến thức phải dùng: Nhân số tự nhiên với phân số.
+
+Cách làm: Chia theo mẫu số rồi nhân theo tử số.
+
+Lối tắt: Chia trước, nhân sau — số nhỏ hơn nên tính nhẩm được.
+
+Kết quả: **52 cây**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Muốn tìm phân số của một số, ta lấy số đó nhân với phân số. Cách hiểu: chia số đó thành số phần bằng mẫu số, rồi lấy số phần bằng tử số.
+
+*Điểm chốt:* Phân số tính trên **số nào** — đọc kĩ cụm “… của …”.
+
+### Bài D.4 — Đọc và phân tích bảng số liệu
 
 **Các bước giải**
 
@@ -440,53 +456,57 @@ Cách làm: Ghi lại số liệu, trả lời từng câu bằng công cụ tư
 
 Lối tắt: Tính tổng một lần rồi dùng lại cho mọi câu hỏi phần trăm.
 
-Kết quả: **105**.
+Kết quả: **53**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Đọc bảng theo cột, ghi lại từng số liệu. Tổng là cộng tất cả; nhiều nhất, ít nhất là so sánh; trung bình là tổng chia số môn; tỉ số phần trăm là phần chia tổng rồi nhân 100.
 
 *Điểm chốt:* Mọi câu hỏi đều quy về **tổng, so sánh, trung bình cộng, tỉ số phần trăm**.
 
-### Bài D.4 — So sánh hai biểu thức mà không cần tính
+### Bài D.5 — Đọc biểu đồ số ngày mưa
+
+> **BẪY — Đọc nhầm vạch của trục dọc.**
 
 **Các bước giải**
 
-Xét ý a: 367 × 22 … 674 × 22
+Đọc biểu đồ cột thì **đọc chú thích trước**: ở đây mỗi ô của cột thay cho 2 ngày, nên cột dài 6 ô nghĩa là 12 ngày, không phải 6 ngày.
 
-Đọc vị: đây là dạng **So sánh biểu thức không tính giá trị**; dấu hiệu là Hai vế có chung một số hạng hoặc một thừa số.
+Đọc từng cột ra số: Tháng 5 4 · Tháng 6 12 · Tháng 7 22 · Tháng 8 16 · Tháng 9 2.
 
-Kiến thức phải dùng: Tính chất bất đẳng thức trong phép cộng, phép nhân.
+So các số vừa đọc: cao nhất Tháng 7 (22 ngày), thấp nhất Tháng 9 (2 ngày).
 
-Cách làm: Triệt tiêu phần chung rồi so phần riêng.
+Tổng: 4 + 12 + 22 + 16 + 2 = 56 ngày. Trung bình mỗi tháng: 56 : 5 = **11,2 ngày**.
 
-Lối tắt: Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn.
+Đếm số tháng vượt mức trung bình 11,2: có **3 tháng**. Trung bình cộng không phải là số ở giữa — có thể nhiều tháng cùng nằm dưới hoặc trên nó.
 
-Kết quả: **<**.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Đọc chú thích của biểu đồ trước để biết một ô ứng với mấy đơn vị, rồi mới đổi từng cột ra số. Có số rồi thì mọi câu hỏi trở thành bài cộng trừ và trung bình cộng bình thường.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Khi hai biểu thức có phần giống nhau, chỉ cần so sánh phần khác nhau: cùng cộng thêm một số thì số nào lớn hơn vẫn lớn hơn; cùng nhân với một số khác 0 cũng vậy.
+*Điểm chốt:* Một ô của biểu đồ hiếm khi bằng 1 đơn vị — đọc chú thích trước.
 
-*Điểm chốt:* Che phần **giống nhau** đi, chỉ so phần khác nhau.
+*Muốn khó hơn:* Thêm một tháng nữa và hỏi trung bình thay đổi thế nào.
 
-### Bài D.5 — Tìm phân số của một số
-
-**Các bước giải**
-
-Xét ý a: Nhóm Hoa Phượng trồng được 16 cây. Số cây của tổ Hai bằng 1 phần 2 số cây của nhóm Hoa Phượng. Hỏi tổ Hai trồng được bao nhiêu cây?
-
-Đọc vị: đây là dạng **Tìm phân số của một số**; dấu hiệu là Cụm “bằng … của …”.
-
-Kiến thức phải dùng: Nhân số tự nhiên với phân số.
-
-Cách làm: Chia theo mẫu số rồi nhân theo tử số.
-
-Lối tắt: Chia trước, nhân sau — số nhỏ hơn nên tính nhẩm được.
-
-Kết quả: **8 cây**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Muốn tìm phân số của một số, ta lấy số đó nhân với phân số. Cách hiểu: chia số đó thành số phần bằng mẫu số, rồi lấy số phần bằng tử số.
-
-*Điểm chốt:* Phân số tính trên **số nào** — đọc kĩ cụm “… của …”.
+*Phải chắc trước khi làm bài này:* Đọc biểu đồ cột và công thức trung bình cộng.
 
 ### Bài E.1 — Đọc vị đề số 1
+
+**Các bước giải**
+
+Xét ý a: Đề này thuộc dạng bài nào?
+
+Đọc vị: đây là dạng **Đọc bảng số liệu thống kê**; dấu hiệu là Một bảng hai chiều: hàng là nhóm, cột là loại số liệu.
+
+Kiến thức phải dùng: Đọc bảng; cộng trừ trong phạm vi 100.
+
+Cách làm: Cộng theo hàng cho từng nhóm, cộng theo cột cho toàn bộ.
+
+Lối tắt: Tổng theo hàng và tổng theo cột luôn bằng nhau, dùng để soát lại.
+
+Kết quả: **Đọc bảng số liệu thống kê**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Đọc vị là trả lời năm câu hỏi theo thứ tự: dạng gì → dấu hiệu nào → kiến thức nào → phương pháp nào → có lối tắt không. Chỉ khi trả lời xong năm câu ấy mới bắt đầu tính.
+
+*Điểm chốt:* Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**.
+
+### Bài E.2 — Đọc vị đề số 2
 
 **Các bước giải**
 
@@ -506,7 +526,7 @@ Kết quả: **Bốn phép tính với phân số**.
 
 *Điểm chốt:* Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**.
 
-### Bài E.2 — Đọc vị đề số 2
+### Bài E.3 — Đọc vị đề số 3
 
 **Các bước giải**
 
@@ -526,27 +546,27 @@ Kết quả: **So sánh phân số bằng kĩ thuật đặc biệt**.
 
 *Điểm chốt:* Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**.
 
-### Bài E.3 — Đọc vị đề số 3
+### Bài E.4 — Đọc vị đề số 4
 
 **Các bước giải**
 
 Xét ý a: Đề này thuộc dạng bài nào?
 
-Đọc vị: đây là dạng **Biểu thức phân số nhiều phép tính**; dấu hiệu là Biểu thức gồm nhiều phân số và nhiều phép tính.
+Đọc vị: đây là dạng **Đọc biểu đồ cột**; dấu hiệu là Biểu đồ có chú thích tỉ lệ, mỗi ô thay cho nhiều đơn vị.
 
-Kiến thức phải dùng: Thứ tự thực hiện phép tính, tính chất phân phối.
+Kiến thức phải dùng: Đọc biểu đồ; trung bình cộng; so sánh số.
 
-Cách làm: Quan sát rút gọn trước, sau đó theo thứ tự thực hiện.
+Cách làm: Đổi biểu đồ về dãy số rồi làm như bài số liệu thường.
 
-Lối tắt: Rút gọn chéo tử với mẫu trước khi nhân.
+Lối tắt: Ghi cả dãy số ra nháp một lần, mọi câu sau đều dùng lại dãy ấy.
 
-Kết quả: **Biểu thức phân số nhiều phép tính**.
+Kết quả: **Đọc biểu đồ cột**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Đọc vị là trả lời năm câu hỏi theo thứ tự: dạng gì → dấu hiệu nào → kiến thức nào → phương pháp nào → có lối tắt không. Chỉ khi trả lời xong năm câu ấy mới bắt đầu tính.
 
 *Điểm chốt:* Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**.
 
-### Bài E.4 — Đọc vị đề số 4
+### Bài E.5 — Đọc vị đề số 5
 
 **Các bước giải**
 
@@ -566,26 +586,6 @@ Kết quả: **Dãy phân số, so sánh bằng phần bù**.
 
 *Điểm chốt:* Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**.
 
-### Bài E.5 — Đọc vị đề số 5
-
-**Các bước giải**
-
-Xét ý a: Đề này thuộc dạng bài nào?
-
-Đọc vị: đây là dạng **Rút gọn phân số**; dấu hiệu là Tử số và mẫu số có ước chung lớn hơn 1.
-
-Kiến thức phải dùng: Tính chất cơ bản của phân số.
-
-Cách làm: Chia cả tử và mẫu cho ước chung.
-
-Lối tắt: Tìm ngay ước chung lớn nhất để rút gọn một lần là xong.
-
-Kết quả: **Rút gọn phân số**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Đọc vị là trả lời năm câu hỏi theo thứ tự: dạng gì → dấu hiệu nào → kiến thức nào → phương pháp nào → có lối tắt không. Chỉ khi trả lời xong năm câu ấy mới bắt đầu tính.
-
-*Điểm chốt:* Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**.
-
 ---
 
 ## 3. BẢNG PHÂN TÍCH CHUYÊN SÂU
@@ -595,30 +595,30 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
 | A.1 | Liệt kê dạng bài | Danh mục dạng bài của chương | Bảng dạng bài đầu phiếu | Chép theo thứ tự học | Đếm số dạng bài là cách nhanh nhất để biết mình còn sót gì. | Phân số: rút gọn, quy đồng, so sánh nâng cao · So sánh phân số bằng phần bù, phần hơn và số trung gian · Bốn phép tính với phân số — kỹ thuật tính nhanh · Tìm phân số của một số và bài toán ngược… |
-| A.2 | Lập bảng dạng bài | Bảng phân tích chuyên sâu sáu cột | Bảng có sẵn cột dạng bài, thiếu các cột còn lại | Tra bảng phân tích của các phiếu đã học | Học theo hàng ngang, không học theo cột dọc. | Cụm “bằng … của …” · Biểu thức chỉ gồm phân số · Hai phân số nối bởi dấu … · Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2… |
-| A.3 | Lập bảng dạng bài | Bảng phân tích chuyên sâu sáu cột | Bảng có sẵn cột dạng bài, thiếu các cột còn lại | Tra bảng phân tích của các phiếu đã học | Học theo hàng ngang, không học theo cột dọc. | Xét cùng mẫu → cùng tử → quy đồng · So phần bù; hoặc chèn phân số trung gian · Ghi lại số liệu, trả lời từng câu bằng công cụ tương ứng · Quan sát rút gọn trước, sau đó theo thứ tự thực hiện… |
-| A.4 | Lập bảng dạng bài | Bảng phân tích chuyên sâu sáu cột | Bảng có sẵn cột dạng bài, thiếu các cột còn lại | Tra bảng phân tích của các phiếu đã học | Học theo hàng ngang, không học theo cột dọc. | Thống kê mô tả sơ cấp, trung bình cộng, tỉ số phần trăm · Thứ tự thực hiện phép tính, tính chất phân phối · Tính chất cơ bản của phân số; so sánh phân số · Phần bù tới 1; quy luật dãy phân số… |
-| A.5 | Lập bảng dạng bài | Bảng phân tích chuyên sâu sáu cột | Bảng có sẵn cột dạng bài, thiếu các cột còn lại | Tra bảng phân tích của các phiếu đã học | Học theo hàng ngang, không học theo cột dọc. | So với 1 và với một nửa trước — nhiều phân số phân loại được ngay. · n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. · Nếu mọi bạn đều dùng cùng một loại hình thì so số hình là đủ để biết ai nhiều nhất. · Tìm ngay ước chung lớn nhất để rút gọn một lần là xong.… |
-| B.1 | Tính nhanh tổng nhiều số hạng | Tính chất giao hoán, kết hợp của phép cộng | Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm | Ghép cặp tròn rồi cộng | Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10. | 175 · 176 · 191 · 368… |
-| B.2 | Ba dạng bài trung bình cộng | Quan hệ tổng – số lượng – trung bình cộng | Cụm “trung bình mỗi …” | Đi qua tổng làm trung gian | Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng. | 241 kg · 840 kg · 1 300 kg · 732 kg |
-| B.3 | Bốn phép tính với phân số | Quy đồng, nhân chia phân số | Biểu thức chỉ gồm phân số | Chọn quy tắc theo phép tính, rút gọn cuối cùng | Rút gọn chéo trước khi nhân để số nhỏ, tính nhanh và ít sai. | 7 phần 130 · 177 phần 65 · 32 phần 77 · 48 phần 35… |
-| B.4 | Đọc và lập biểu đồ tranh | Biểu đồ tranh, phép nhân và chia | Có hình vẽ lặp lại kèm một dòng chú thích | Đọc chú thích → nhân số hình với đơn vị | Nếu mọi bạn đều dùng cùng một loại hình thì so số hình là đủ để biết ai nhiều nhất. | 20 · 30 · 100 · Nam (40)… |
-| B.5 | Chu vi, diện tích trong tình huống thực tế | Công thức chu vi, diện tích; phép chia | Từ khoá “rào xung quanh”, “lát gạch”, “trồng cây quanh” | Đọc vị chu vi hay diện tích rồi tính | Nhìn đơn vị của đáp số: mét thì là chu vi, mét vuông thì là diện tích. | 5 viên (làm tròn lên) · 9 cây · 17 viên (làm tròn lên) · 111 cây… |
-| C.1 | Tỉ lệ thuận, rút về đơn vị | Đại lượng tỉ lệ thuận | Hai đại lượng cùng tăng cùng giảm | Rút về đơn vị hoặc dùng tỉ số | Nếu số lượng mới gấp số lượng cũ một số nguyên lần thì nhân thẳng, không cần rút về đơn vị. | 16 quyển · 13 quyển · 1 106 nghìn đồng · 30 quyển |
-| C.2 | Đổi đơn vị diện tích | Bảng đơn vị đo diện tích | Đơn vị có mũ hai, hoặc ha, km² | Đếm bậc rồi nhân, chia 100 | Mỗi bậc thêm hai chữ số 0 — nhớ “diện tích thì gấp đôi số 0”. | 36 · 330 000 · 31 · 7 000… |
-| C.3 | Quy luật hình đưa về dãy số | Dãy cách đều, số hạng thứ n, tổng dãy | Đề mô tả hình xếp thêm đều đặn theo thứ tự | Lập bảng vài hình đầu, tìm khoảng cách, áp công thức | Chỉ cần ba hình đầu là đủ để khẳng định quy luật cách đều. | 5 · 7 · 9 · 11… |
-| C.4 | Tổng – hiệu có lời văn | Công thức tổng – hiệu, sơ đồ đoạn thẳng | “Có tất cả …” và “… nhiều hơn … là …” | Đọc vị tổng và hiệu → sơ đồ → công thức | Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần. | tổ Hai: 365 cây, đội Một: 231 cây · 5B: 428 quyển, 4A: 272 quyển · kho B: 392 kg, kho A: 340 kg · kho B: 319 kg, kho A: 213 kg |
-| C.5 | Suy luận nói thật – nói dối | Logic mệnh đề sơ cấp, phương pháp loại trừ | “Chỉ một người nói thật”, các câu nói mâu thuẫn nhau | Tìm cặp mâu thuẫn, khoá số câu đúng, suy ra phần còn lại | Cặp mâu thuẫn đã dùng hết “suất” nói thật, nên mọi câu ngoài cặp đều sai. | không, vì hai câu phủ định nhau · không, vì chúng phủ định nhau · đúng một bạn · nói dối… |
-| D.1 | Biểu đồ Ven | Phép cộng, phép trừ; đếm không trùng lặp | Đề cho số người của từng nhóm **và** số người thuộc cả hai nhóm | Vẽ hai vòng tròn, điền phần chung trước rồi mới trừ ra phần riêng | Số người ít nhất một nhóm = nhóm A + nhóm B − phần chung. | 6 em · 0 em · 2 em · 6 em… |
-| D.2 | Bài toán đại lượng có lời văn | Nhân, chia số tự nhiên; đổi đơn vị khối lượng | Đơn vị trong câu hỏi khác đơn vị trong dữ kiện | Tính theo đơn vị dữ kiện rồi đổi ở bước cuối | 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ. | 22 tạ 80 kg · 6 tạ 30 kg · 5 tạ · 22 tạ 20 kg |
-| D.3 | Đọc bảng số liệu thống kê | Thống kê mô tả sơ cấp, trung bình cộng, tỉ số phần trăm | Đề cho bảng hoặc biểu đồ kèm nhiều câu hỏi | Ghi lại số liệu, trả lời từng câu bằng công cụ tương ứng | Tính tổng một lần rồi dùng lại cho mọi câu hỏi phần trăm. | 105 · Lịch sử (30 bạn) · Tiếng Việt (4 bạn) · 26… |
-| D.4 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | < · > · < · <… |
-| D.5 | Tìm phân số của một số | Nhân số tự nhiên với phân số | Cụm “bằng … của …” | Chia theo mẫu số rồi nhân theo tử số | Chia trước, nhân sau — số nhỏ hơn nên tính nhẩm được. | 8 cây · 108 cây · 44 cây · 111 cây… |
-| E.1 | Bốn phép tính với phân số | Quy đồng, nhân chia phân số | Biểu thức chỉ gồm phân số | Chọn quy tắc theo phép tính, rút gọn cuối cùng | Rút gọn chéo trước khi nhân để số nhỏ, tính nhanh và ít sai. | Bốn phép tính với phân số · Biểu thức chỉ gồm phân số · Quy đồng, nhân chia phân số · Chọn quy tắc theo phép tính, rút gọn cuối cùng… |
-| E.2 | So sánh phân số bằng kĩ thuật đặc biệt | Phần bù tới 1, phân số trung gian | Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 | So phần bù; hoặc chèn phân số trung gian | Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. | So sánh phân số bằng kĩ thuật đặc biệt · Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 · Phần bù tới 1, phân số trung gian · So phần bù; hoặc chèn phân số trung gian… |
-| E.3 | Biểu thức phân số nhiều phép tính | Thứ tự thực hiện phép tính, tính chất phân phối | Biểu thức gồm nhiều phân số và nhiều phép tính | Quan sát rút gọn trước, sau đó theo thứ tự thực hiện | Rút gọn chéo tử với mẫu trước khi nhân. | Biểu thức phân số nhiều phép tính · Biểu thức gồm nhiều phân số và nhiều phép tính · Thứ tự thực hiện phép tính, tính chất phân phối · Quan sát rút gọn trước, sau đó theo thứ tự thực hiện… |
-| E.4 | Dãy phân số, so sánh bằng phần bù | Phần bù tới 1; quy luật dãy phân số | Tử và mẫu hơn kém nhau đúng 1 đơn vị | Xét phần bù tới 1 rồi so sánh | n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. | Dãy phân số, so sánh bằng phần bù · Tử và mẫu hơn kém nhau đúng 1 đơn vị · Phần bù tới 1; quy luật dãy phân số · Xét phần bù tới 1 rồi so sánh… |
-| E.5 | Rút gọn phân số | Tính chất cơ bản của phân số | Tử số và mẫu số có ước chung lớn hơn 1 | Chia cả tử và mẫu cho ước chung | Tìm ngay ước chung lớn nhất để rút gọn một lần là xong. | Rút gọn phân số · Tử số và mẫu số có ước chung lớn hơn 1 · Tính chất cơ bản của phân số · Chia cả tử và mẫu cho ước chung… |
+| A.2 | Lập bảng dạng bài | Bảng phân tích chuyên sâu sáu cột | Bảng có sẵn cột dạng bài, thiếu các cột còn lại | Tra bảng phân tích của các phiếu đã học | Học theo hàng ngang, không học theo cột dọc. | Cụm “bằng … của …” · Một bảng hai chiều: hàng là nhóm, cột là loại số liệu · Hai phân số nối bởi dấu … · Biểu thức chỉ gồm phân số… |
+| A.3 | Lập bảng dạng bài | Bảng phân tích chuyên sâu sáu cột | Bảng có sẵn cột dạng bài, thiếu các cột còn lại | Tra bảng phân tích của các phiếu đã học | Học theo hàng ngang, không học theo cột dọc. | Xét cùng mẫu → cùng tử → quy đồng · Chọn quy tắc theo phép tính, rút gọn cuối cùng · Vẽ hai vòng tròn, điền phần chung trước rồi mới trừ ra phần riêng · So phần bù; hoặc chèn phân số trung gian… |
+| A.4 | Lập bảng dạng bài | Bảng phân tích chuyên sâu sáu cột | Bảng có sẵn cột dạng bài, thiếu các cột còn lại | Tra bảng phân tích của các phiếu đã học | Học theo hàng ngang, không học theo cột dọc. | Phép cộng, phép trừ; đếm không trùng lặp · Phần bù tới 1, phân số trung gian · Tính chất cơ bản của phân số; so sánh phân số · Đọc biểu đồ; trung bình cộng; so sánh số… |
+| A.5 | Lập bảng dạng bài | Bảng phân tích chuyên sâu sáu cột | Bảng có sẵn cột dạng bài, thiếu các cột còn lại | Tra bảng phân tích của các phiếu đã học | Học theo hàng ngang, không học theo cột dọc. | So với 1 và với một nửa trước — nhiều phân số phân loại được ngay. · Ghi cả dãy số ra nháp một lần, mọi câu sau đều dùng lại dãy ấy. · Rút gọn chéo tử với mẫu trước khi nhân. · n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn.… |
+| B.1 | Chu vi, diện tích trong tình huống thực tế | Công thức chu vi, diện tích; phép chia | Từ khoá “rào xung quanh”, “lát gạch”, “trồng cây quanh” | Đọc vị chu vi hay diện tích rồi tính | Nhìn đơn vị của đáp số: mét thì là chu vi, mét vuông thì là diện tích. | 80 m · không chia hết (82 m không chia hết cho 5 m) · 406 viên · 9 viên (làm tròn lên) |
+| B.2 | Đọc và lập biểu đồ tranh | Biểu đồ tranh, phép nhân và chia | Có hình vẽ lặp lại kèm một dòng chú thích | Đọc chú thích → nhân số hình với đơn vị | Nếu mọi bạn đều dùng cùng một loại hình thì so số hình là đủ để biết ai nhiều nhất. | 6 · 4 · 24 · Quân (10)… |
+| B.3 | Tính nhanh tích, thương nhiều bước | Tính chất giao hoán, kết hợp của phép nhân | Tích có thừa số 25, 125, 50, 20; hoặc chia liên tiếp | Ghép cặp cho tích tròn rồi nhân | Chia liên tiếp cho 4 rồi 25 bằng chia cho 100. | 89 000 · 19 000 · 7 000 · 7 200… |
+| B.4 | Bốn phép tính với phân số | Quy đồng, nhân chia phân số | Biểu thức chỉ gồm phân số | Chọn quy tắc theo phép tính, rút gọn cuối cùng | Rút gọn chéo trước khi nhân để số nhỏ, tính nhanh và ít sai. | 3 phần 35 · 17 phần 12 · 11 phần 5 · 13 phần 10… |
+| B.5 | Đọc bảng số liệu thống kê | Đọc bảng; cộng trừ trong phạm vi 100 | Một bảng hai chiều: hàng là nhóm, cột là loại số liệu | Cộng theo hàng cho từng nhóm, cộng theo cột cho toàn bộ | Tổng theo hàng và tổng theo cột luôn bằng nhau, dùng để soát lại. | Tổ 4 — 17 bạn · Tổ 2 — 13 bạn · 29 bạn nam và 29 bạn nữ · 58 bạn… |
+| C.1 | Tổng – hiệu có lời văn | Công thức tổng – hiệu, sơ đồ đoạn thẳng | “Có tất cả …” và “… nhiều hơn … là …” | Đọc vị tổng và hiệu → sơ đồ → công thức | Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần. | thư viện: 390 kg, trang trại: 214 kg · 4C: 553 quyển, 5B: 291 quyển · tổ Một: 301 cây, nhóm Hoa Phượng: 165 cây · tổ Ba: 245 cây, nhóm Sao Mai: 137 cây |
+| C.2 | Nhân nhẩm nhờ tách thừa số | Nhân một số với một tổng, một hiệu | Thừa số là 9, 11, 19, 21, 99, 101… | Tách về số tròn rồi bù trừ | × 11 với số có hai chữ số: viết hai chữ số ra hai đầu, tổng của chúng đặt vào giữa (nhớ sang trái nếu tổng vượt 9). | 5 353 · 5 841 · 2 673 · 1 428… |
+| C.3 | Đếm số hạng dãy cách đều | Công thức đếm số hạng | Dãy có số đầu, số cuối và khoảng cách đều | (cuối − đầu) : khoảng cách + 1 | Dãy số tự nhiên liên tiếp từ a đến b có b − a + 1 số hạng. | 162 · 197 · 144 · 142… |
+| C.4 | Ba dạng bài trung bình cộng | Quan hệ tổng – số lượng – trung bình cộng | Cụm “trung bình mỗi …” | Đi qua tổng làm trung gian | Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng. | 158 kg · 122 kg · 264 kg · 245 kg… |
+| C.5 | Tính nhanh tổng | Làm tròn; cộng trừ trong phạm vi trăm nghìn | Vài món hàng có giá lẻ, cần biết nhanh tổng khoảng bao nhiêu | Làm tròn để nhẩm, cộng số gốc để lấy kết quả đúng | Cộng phần nghìn trước rồi cộng phần lẻ sau, không đặt tính. | cà chua: 50 000 · rau muống: 40 000 · gạo: 100 000 · 190 000 · 189 500 · 500 đồng… |
+| D.1 | Biểu đồ Ven | Phép cộng, phép trừ; đếm không trùng lặp | Đề cho số người của từng nhóm **và** số người thuộc cả hai nhóm | Vẽ hai vòng tròn, điền phần chung trước rồi mới trừ ra phần riêng | Số người ít nhất một nhóm = nhóm A + nhóm B − phần chung. | 6 em · 0 em · 0 em · 2 em… |
+| D.2 | Dãy số tự nhiên liên tiếp có tổng cho trước | Trung bình cộng, dãy cách đều | Cụm “… số tự nhiên liên tiếp có tổng bằng …” | Tìm số giữa bằng phép chia rồi suy ra hai đầu dãy | Tổng của n số liên tiếp (n lẻ) luôn chia hết cho n. | 200 · 277 · 422 · 24… |
+| D.3 | Tìm phân số của một số | Nhân số tự nhiên với phân số | Cụm “bằng … của …” | Chia theo mẫu số rồi nhân theo tử số | Chia trước, nhân sau — số nhỏ hơn nên tính nhẩm được. | 52 cây · 69 cây · 108 cây · 24 cây |
+| D.4 | Đọc bảng số liệu thống kê | Thống kê mô tả sơ cấp, trung bình cộng, tỉ số phần trăm | Đề cho bảng hoặc biểu đồ kèm nhiều câu hỏi | Ghi lại số liệu, trả lời từng câu bằng công cụ tương ứng | Tính tổng một lần rồi dùng lại cho mọi câu hỏi phần trăm. | 53 · Tiếng Anh (21 bạn) · Lịch sử (4 bạn) · 17… |
+| D.5 | Đọc biểu đồ cột | Đọc biểu đồ; trung bình cộng; so sánh số | Biểu đồ có chú thích tỉ lệ, mỗi ô thay cho nhiều đơn vị | Đổi biểu đồ về dãy số rồi làm như bài số liệu thường | Ghi cả dãy số ra nháp một lần, mọi câu sau đều dùng lại dãy ấy. | Tháng 7 — 22 ngày · Tháng 9 — 2 ngày · 56 ngày · 56 : 5 = 11,2 ngày… |
+| E.1 | Đọc bảng số liệu thống kê | Đọc bảng; cộng trừ trong phạm vi 100 | Một bảng hai chiều: hàng là nhóm, cột là loại số liệu | Cộng theo hàng cho từng nhóm, cộng theo cột cho toàn bộ | Tổng theo hàng và tổng theo cột luôn bằng nhau, dùng để soát lại. | Đọc bảng số liệu thống kê · Một bảng hai chiều: hàng là nhóm, cột là loại số liệu · Đọc bảng; cộng trừ trong phạm vi 100 · Cộng theo hàng cho từng nhóm, cộng theo cột cho toàn bộ… |
+| E.2 | Bốn phép tính với phân số | Quy đồng, nhân chia phân số | Biểu thức chỉ gồm phân số | Chọn quy tắc theo phép tính, rút gọn cuối cùng | Rút gọn chéo trước khi nhân để số nhỏ, tính nhanh và ít sai. | Bốn phép tính với phân số · Biểu thức chỉ gồm phân số · Quy đồng, nhân chia phân số · Chọn quy tắc theo phép tính, rút gọn cuối cùng… |
+| E.3 | So sánh phân số bằng kĩ thuật đặc biệt | Phần bù tới 1, phân số trung gian | Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 | So phần bù; hoặc chèn phân số trung gian | Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. | So sánh phân số bằng kĩ thuật đặc biệt · Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 · Phần bù tới 1, phân số trung gian · So phần bù; hoặc chèn phân số trung gian… |
+| E.4 | Đọc biểu đồ cột | Đọc biểu đồ; trung bình cộng; so sánh số | Biểu đồ có chú thích tỉ lệ, mỗi ô thay cho nhiều đơn vị | Đổi biểu đồ về dãy số rồi làm như bài số liệu thường | Ghi cả dãy số ra nháp một lần, mọi câu sau đều dùng lại dãy ấy. | Đọc biểu đồ cột · Biểu đồ có chú thích tỉ lệ, mỗi ô thay cho nhiều đơn vị · Đọc biểu đồ; trung bình cộng; so sánh số · Đổi biểu đồ về dãy số rồi làm như bài số liệu thường… |
+| E.5 | Dãy phân số, so sánh bằng phần bù | Phần bù tới 1; quy luật dãy phân số | Tử và mẫu hơn kém nhau đúng 1 đơn vị | Xét phần bù tới 1 rồi so sánh | n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. | Dãy phân số, so sánh bằng phần bù · Tử và mẫu hơn kém nhau đúng 1 đơn vị · Phần bù tới 1; quy luật dãy phân số · Xét phần bù tới 1 rồi so sánh… |
 
 ---
 
@@ -631,21 +631,21 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | A.3 | TD2, TD3 | Bảng chỉ có giá trị khi **đọc ngang được từng hàng**. |
 | A.4 | TD2, TD3 | Bảng chỉ có giá trị khi **đọc ngang được từng hàng**. |
 | A.5 | TD2, TD3 | Bảng chỉ có giá trị khi **đọc ngang được từng hàng**. |
-| B.1 | TD5, TD3 | Tìm **cặp cộng tròn 100** trước khi cộng theo thứ tự. |
-| B.2 | TD2, TD3 | Từ trung bình cộng luôn tìm được **tổng** trước, rồi mới tính tiếp. |
-| B.3 | TD1, TD3 | Cộng trừ **cần** quy đồng, nhân chia **không cần** quy đồng. |
-| B.4 | TD1, TD2 | Mỗi hình **không phải một đơn vị** — phải đọc chú thích trước. |
-| B.5 | TD2, TD3 | “Xung quanh” → chu vi; “khắp mặt” → diện tích. |
-| C.1 | TD2, TD3 | Hai đại lượng **cùng tăng, cùng giảm** thì tỉ lệ thuận. |
-| C.2 | TD1, TD2 | Đơn vị diện tích nhảy **100 lần** mỗi bậc, không phải 10 lần. |
-| C.3 | TD4, TD3 | Bài toán hình nhưng lời giải là **dãy số** — đổi ngôn ngữ trước khi tính. |
-| C.4 | TD2, TD3 | Cụm “có tất cả” cho **tổng**; cụm “nhiều hơn” cho **hiệu**. |
-| C.5 | TD2, TD6 | Cặp câu **phủ định nhau** luôn có đúng một câu đúng — đó là điểm tựa. |
+| B.1 | TD2, TD3 | “Xung quanh” → chu vi; “khắp mặt” → diện tích. |
+| B.2 | TD1, TD2 | Mỗi hình **không phải một đơn vị** — phải đọc chú thích trước. |
+| B.3 | TD5, TD3 | Thuộc lòng bốn cặp tròn: **25 × 4**, **125 × 8**, **50 × 2**, **20 × 5**. |
+| B.4 | TD1, TD3 | Cộng trừ **cần** quy đồng, nhân chia **không cần** quy đồng. |
+| B.5 | TD1, TD2 | Cộng theo hàng và cộng theo cột phải ra cùng một tổng. |
+| C.1 | TD2, TD3 | Cụm “có tất cả” cho **tổng**; cụm “nhiều hơn” cho **hiệu**. |
+| C.2 | TD5, TD3 | Tách thừa số thành **tròn chục ± 1 đơn vị** rồi dùng nhân với một tổng, một hiệu. |
+| C.3 | TD4, TD3 | Số khoảng luôn **ít hơn số số hạng đúng 1**. |
+| C.4 | TD2, TD3 | Từ trung bình cộng luôn tìm được **tổng** trước, rồi mới tính tiếp. |
+| C.5 | TD1, TD3 | Ước lượng và tính đúng là hai việc khác nhau, đừng lẫn. |
 | D.1 | TD2, TD4 | Con số đề cho cho mỗi môn **đã bao gồm** những em học cả hai. Cộng thẳng hai con số ấy là đếm phần chung hai lần. |
-| D.2 | TD2, TD3 | Câu hỏi đòi đơn vị nào thì bước **cuối cùng** mới đổi sang đơn vị đó. |
-| D.3 | TD1, TD2 | Mọi câu hỏi đều quy về **tổng, so sánh, trung bình cộng, tỉ số phần trăm**. |
-| D.4 | TD5, TD2 | Che phần **giống nhau** đi, chỉ so phần khác nhau. |
-| D.5 | TD2, TD3 | Phân số tính trên **số nào** — đọc kĩ cụm “… của …”. |
+| D.2 | TD3, TD4 | Với số lượng lẻ thì **số giữa = tổng : số lượng** — đó là chìa khoá. |
+| D.3 | TD2, TD3 | Phân số tính trên **số nào** — đọc kĩ cụm “… của …”. |
+| D.4 | TD1, TD2 | Mọi câu hỏi đều quy về **tổng, so sánh, trung bình cộng, tỉ số phần trăm**. |
+| D.5 | TD1, TD2, TD4 | Một ô của biểu đồ hiếm khi bằng 1 đơn vị — đọc chú thích trước. |
 | E.1 | TD2, TD6 | Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**. |
 | E.2 | TD2, TD6 | Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**. |
 | E.3 | TD2, TD6 | Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**. |
@@ -665,26 +665,26 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 | A.3 | Điền từng cột rời rạc, không đối chiếu ngang. | Điền xong thì đọc lại theo hàng, mỗi hàng phải thành một câu có nghĩa. |
 | A.4 | Điền từng cột rời rạc, không đối chiếu ngang. | Điền xong thì đọc lại theo hàng, mỗi hàng phải thành một câu có nghĩa. |
 | A.5 | Điền từng cột rời rạc, không đối chiếu ngang. | Điền xong thì đọc lại theo hàng, mỗi hàng phải thành một câu có nghĩa. |
-| B.1 | Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. | Đọc lướt cả dãy, khoanh tròn cặp số cộng lại tròn chục, tròn trăm. |
-| B.2 | Đi tìm ngay số còn thiếu mà chưa tính tổng. | Bước đầu tiên luôn viết: “Tổng = trung bình cộng × số ngày”. |
-| B.3 | Quy đồng cả khi nhân, hoặc cộng thẳng tử với tử và mẫu với mẫu. | Trước khi tính, khoanh dấu phép tính và tự nhắc “có phải quy đồng không”. |
-| B.4 | Đếm số hình rồi trả lời luôn, quên nhân với số đơn vị mỗi hình. | Khoanh tròn dòng chú thích trước khi trả lời bất kỳ câu nào. |
-| B.5 | Lấy chu vi để tính số gạch lát nền. | Gạch chân từ khoá chỉ vị trí: xung quanh, bao quanh, khắp, phủ kín. |
-| C.1 | Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch. | Tự hỏi: mua nhiều hơn thì trả nhiều hơn hay ít hơn? |
-| C.2 | Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. | Viết riêng bảng đơn vị diện tích, ghi rõ “× 100” giữa hai bậc liền nhau. |
-| C.3 | Vẽ tay từng hình để đếm, không kịp thời gian với hình thứ hai, ba chục. | Lập bảng ba hình đầu để tìm khoảng cách rồi mới dùng công thức. |
-| C.4 | Nhầm hiệu thành tổng khi đề diễn đạt vòng vo. | Ghi riêng ra hai dòng: Tổng = … ; Hiệu = … trước khi tính. |
-| C.5 | Thử từng người một cách rời rạc mà không dùng ràng buộc tổng số câu nói thật. | Đánh số các câu nói, ghi rõ câu nào phủ định câu nào. |
+| B.1 | Lấy chu vi để tính số gạch lát nền. | Gạch chân từ khoá chỉ vị trí: xung quanh, bao quanh, khắp, phủ kín. |
+| B.2 | Đếm số hình rồi trả lời luôn, quên nhân với số đơn vị mỗi hình. | Khoanh tròn dòng chú thích trước khi trả lời bất kỳ câu nào. |
+| B.3 | Nhân lần lượt từ trái sang phải nên số trung gian rất lớn. | Quét cả tích tìm cặp tròn trước khi đặt bút tính. |
+| B.4 | Quy đồng cả khi nhân, hoặc cộng thẳng tử với tử và mẫu với mẫu. | Trước khi tính, khoanh dấu phép tính và tự nhắc “có phải quy đồng không”. |
+| B.5 | Đọc nhầm cột, lấy số bạn nữ trả lời câu hỏi về bạn nam. | Lấy ngón tay dò theo hàng, đọc tên cột trước khi lấy số. |
+| C.1 | Nhầm hiệu thành tổng khi đề diễn đạt vòng vo. | Ghi riêng ra hai dòng: Tổng = … ; Hiệu = … trước khi tính. |
+| C.2 | Nhân với 10 rồi quên cộng hoặc trừ phần bù. | Viết luôn dấu ± và số bù ra bên cạnh trước khi nhân. |
+| C.3 | Quên cộng 1 nên thiếu một số hạng. | Thử với dãy ngắn (3 số hạng) để kiểm chứng công thức. |
+| C.4 | Đi tìm ngay số còn thiếu mà chưa tính tổng. | Bước đầu tiên luôn viết: “Tổng = trung bình cộng × số ngày”. |
+| C.5 | Lấy tổng đã làm tròn ra trả tiền. | Nhẩm xong luôn hỏi: con số này để ước chừng hay để trả tiền? |
 | D.1 | Lấy tổng trừ đi tổng hai con số đề cho mà không cộng lại phần chung. | Vẽ hình trước, điền phần giữa trước, rồi mới điền hai bên. |
-| D.2 | Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. | Khoanh tròn đơn vị trong câu hỏi trước khi đặt bút. |
-| D.3 | Đọc nhầm cột, hoặc quên một môn khi cộng tổng. | Đánh dấu từng số đã cộng để không sót và không cộng lặp. |
-| D.4 | Tính hết cả hai vế, vừa lâu vừa dễ sai. | Dùng bút gạch bỏ phần giống nhau ở hai vế trước khi so sánh. |
-| D.5 | Nhân phân số với đại lượng khác, không phải đại lượng đề chỉ định. | Gạch chân cụm “bằng … số cây của …” để xác định số bị nhân. |
-| E.1 | Quy đồng cả khi nhân, hoặc cộng thẳng tử với tử và mẫu với mẫu. | Trước khi tính, khoanh dấu phép tính và tự nhắc “có phải quy đồng không”. |
-| E.2 | So phần bù rồi kết luận cùng chiều với phần bù. | Nghĩ tới chiếc bánh: thiếu ít hơn thì phần đang có nhiều hơn. |
-| E.3 | Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. | Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút. |
-| E.4 | So phần bù rồi kết luận cùng chiều với phần bù. | Nghĩ tới chiếc bánh: thiếu ít hơn thì phần đang có nhiều hơn. |
-| E.5 | Chỉ chia tử số hoặc chỉ chia mẫu số. | Viết phép chia cho cả hai dòng, kiểm tra lại bằng cách nhân ngược. |
+| D.2 | Lấy tổng chia cho số lượng rồi nhận luôn kết quả là số bé nhất. | Vẽ dãy số ra, đánh dấu vị trí số giữa trước khi lùi về số đầu. |
+| D.3 | Nhân phân số với đại lượng khác, không phải đại lượng đề chỉ định. | Gạch chân cụm “bằng … số cây của …” để xác định số bị nhân. |
+| D.4 | Đọc nhầm cột, hoặc quên một môn khi cộng tổng. | Đánh dấu từng số đã cộng để không sót và không cộng lặp. |
+| D.5 | Đếm số ô rồi trả lời luôn, quên nhân với giá trị mỗi ô. | Khoanh tròn dòng chú thích trước khi nhìn vào cột nào. |
+| E.1 | Đọc nhầm cột, lấy số bạn nữ trả lời câu hỏi về bạn nam. | Lấy ngón tay dò theo hàng, đọc tên cột trước khi lấy số. |
+| E.2 | Quy đồng cả khi nhân, hoặc cộng thẳng tử với tử và mẫu với mẫu. | Trước khi tính, khoanh dấu phép tính và tự nhắc “có phải quy đồng không”. |
+| E.3 | So phần bù rồi kết luận cùng chiều với phần bù. | Nghĩ tới chiếc bánh: thiếu ít hơn thì phần đang có nhiều hơn. |
+| E.4 | Đếm số ô rồi trả lời luôn, quên nhân với giá trị mỗi ô. | Khoanh tròn dòng chú thích trước khi nhìn vào cột nào. |
+| E.5 | So phần bù rồi kết luận cùng chiều với phần bù. | Nghĩ tới chiếc bánh: thiếu ít hơn thì phần đang có nhiều hơn. |
 
 ---
 
@@ -697,21 +697,21 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 **Bài A.3** — (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 **Bài A.4** — (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 **Bài A.5** — (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
-**Bài B.1** — (1) Có cặp nào cộng lại tròn 100 không? — (2) Đổi chỗ để hai số đó đứng cạnh nhau. — (3) Cộng cặp tròn trước, phần còn lại sau.
-**Bài B.2** — (1) Đề cho gì và hỏi gì? — (2) Tính tổng trước bằng cách nhân trung bình cộng với số lượng. — (3) Lấy tổng trừ các số đã biết để ra số còn thiếu.
-**Bài B.3** — (1) Phép tính là cộng, trừ hay nhân, chia? — (2) Cộng trừ thì quy đồng mẫu số trước. — (3) Chia thì đổi thành nhân với phân số đảo ngược.
-**Bài B.4** — (1) Mỗi hình ● ứng với bao nhiêu đơn vị? — (2) Bạn ấy có bao nhiêu hình ●? — (3) Nhân hai số ấy với nhau.
-**Bài B.5** — (1) Việc cần làm diễn ra ở viền hay ở mặt trong? — (2) Ở viền thì tính chu vi, ở mặt trong thì tính diện tích. — (3) Chia cho kích thước của một đơn vị (một viên gạch, một khoảng cây).
-**Bài C.1** — (1) Mua nhiều vở hơn thì tiền nhiều hơn hay ít hơn? — (2) Tìm giá của một quyển vở. — (3) Nhân giá một quyển với số quyển cần mua.
-**Bài C.2** — (1) Hai đơn vị này cách nhau mấy bậc? — (2) Mỗi bậc hơn kém nhau bao nhiêu lần? — (3) Từ lớn sang bé thì nhân.
-**Bài C.3** — (1) Hình thứ hai hơn hình thứ nhất mấy que? — (2) Hình thứ ba hơn hình thứ hai mấy que? — (3) Đưa về dãy cách đều rồi dùng công thức.
-**Bài C.4** — (1) Câu nào cho biết tổng của hai đại lượng? — (2) Câu nào cho biết chúng hơn kém nhau bao nhiêu? — (3) Vẽ sơ đồ rồi áp công thức.
-**Bài C.5** — (1) Có hai câu nào phủ định lẫn nhau không? — (2) Trong hai câu đó có mấy câu đúng? — (3) Vậy câu của người thứ ba đúng hay sai?
+**Bài B.1** — (1) Việc cần làm diễn ra ở viền hay ở mặt trong? — (2) Ở viền thì tính chu vi, ở mặt trong thì tính diện tích. — (3) Chia cho kích thước của một đơn vị (một viên gạch, một khoảng cây).
+**Bài B.2** — (1) Mỗi hình ● ứng với bao nhiêu đơn vị? — (2) Bạn ấy có bao nhiêu hình ●? — (3) Nhân hai số ấy với nhau.
+**Bài B.3** — (1) Trong tích có 25, 125, 50 hay 20 không? — (2) Tìm thừa số ghép với nó cho tích tròn. — (3) Nhân cặp tròn trước, phần còn lại sau.
+**Bài B.4** — (1) Phép tính là cộng, trừ hay nhân, chia? — (2) Cộng trừ thì quy đồng mẫu số trước. — (3) Chia thì đổi thành nhân với phân số đảo ngược.
+**Bài B.5** — (1) Mỗi hàng của bảng nói về cái gì? Mỗi cột nói về cái gì? — (2) Muốn biết một tổ có bao nhiêu bạn thì cộng những số nào? — (3) Cộng theo cột rồi so với tổng cộng theo hàng để kiểm tra.
+**Bài C.1** — (1) Câu nào cho biết tổng của hai đại lượng? — (2) Câu nào cho biết chúng hơn kém nhau bao nhiêu? — (3) Vẽ sơ đồ rồi áp công thức.
+**Bài C.2** — (1) Thừa số kia gần số tròn nào? — (2) Viết nó thành số tròn cộng hoặc trừ mấy đơn vị. — (3) Nhân với số tròn trước rồi bù lại.
+**Bài C.3** — (1) Từ số đầu tới số cuối có bao nhiêu khoảng? — (2) Mỗi khoảng bằng bao nhiêu đơn vị? — (3) Số số hạng nhiều hơn số khoảng 1 đơn vị.
+**Bài C.4** — (1) Đề cho gì và hỏi gì? — (2) Tính tổng trước bằng cách nhân trung bình cộng với số lượng. — (3) Lấy tổng trừ các số đã biết để ra số còn thiếu.
+**Bài C.5** — (1) Làm tròn từng giá đến hàng chục nghìn trước. — (2) Cộng các số tròn — phép này nhẩm được trong đầu. — (3) Rồi cộng lại giá gốc để lấy số đúng, và so hai kết quả.
 **Bài D.1** — (1) Bao nhiêu em học cả hai môn? Điền số ấy vào phần chồng nhau. — (2) Vậy chỉ học riêng mỗi môn là bao nhiêu em? — (3) Cộng ba phần rồi lấy sĩ số lớp trừ đi.
-**Bài D.2** — (1) Tính tổng khối lượng theo ki-lô-gam. — (2) Đề hỏi kết quả theo đơn vị nào? — (3) Đổi kết quả sang đơn vị đó.
-**Bài D.3** — (1) Ghi lại các số liệu ra một hàng. — (2) Cộng tất cả để có tổng. — (3) So sánh để tìm lớn nhất và bé nhất.
-**Bài D.4** — (1) Hai vế có phần nào giống hệt nhau? — (2) Gạch bỏ phần giống nhau đi. — (3) So sánh phần còn lại.
-**Bài D.5** — (1) Phân số đó tính trên số nào? — (2) Chia số đó thành mấy phần bằng nhau? — (3) Lấy mấy phần trong số đó?
+**Bài D.2** — (1) Số lượng số hạng là số chẵn hay lẻ? — (2) Với số lượng lẻ, số ở giữa bằng tổng chia số lượng. — (3) Từ số giữa lùi về đầu dãy mấy đơn vị?
+**Bài D.3** — (1) Phân số đó tính trên số nào? — (2) Chia số đó thành mấy phần bằng nhau? — (3) Lấy mấy phần trong số đó?
+**Bài D.4** — (1) Ghi lại các số liệu ra một hàng. — (2) Cộng tất cả để có tổng. — (3) So sánh để tìm lớn nhất và bé nhất.
+**Bài D.5** — (1) Mỗi ô trên biểu đồ thay cho mấy ngày? — (2) Đổi từng cột ra số ngày rồi ghi ra nháp thành một dãy. — (3) Trung bình cộng = tổng chia cho số tháng.
 **Bài E.1** — (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
 **Bài E.2** — (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
 **Bài E.3** — (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
@@ -731,26 +731,26 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | A.3 | Cột “Phương pháp áp dụng” trả lời câu hỏi gì? | làm gì |
 | A.4 | Cột “Kiến thức phải thuộc” trả lời câu hỏi gì? | làm gì |
 | A.5 | Cột “Cách xử lý nhanh nhất” trả lời câu hỏi gì? | làm gì |
-| B.1 | Tính nhanh: 37 + 145 + 63 | 245 |
-| B.2 | Trung bình mỗi ngày bán 40 kg, hỏi 5 ngày bán bao nhiêu? | 200 kg |
-| B.3 | Tính: 2 phần 3 + 1 phần 6 | 5 phần 6 |
-| B.4 | Mỗi hình ứng với 5 quyển sách, bạn A có 4 hình. A có mấy quyển? | 20 quyển |
-| B.5 | Vườn dài 20 m rộng 10 m, rào xung quanh cần bao nhiêu mét rào? | 60 m |
-| C.1 | Mua 4 quyển vở hết 24 nghìn. Mua 10 quyển hết bao nhiêu? | 60 nghìn |
-| C.2 | 3 m² = … dm² | 300 |
-| C.3 | Hình 1 có 3 que, mỗi hình sau hơn 2 que. Hình thứ 10 có mấy que? | 21 |
-| C.4 | Hai lớp có 90 quyển sách, lớp A nhiều hơn lớp B 10 quyển. Mỗi lớp có mấy quyển? | 50 và 40 |
-| C.5 | An nói “tôi không làm”, Bình nói “Chi làm”, Chi nói “Bình nói dối”, chỉ một người nói thật. Ai làm? | An |
+| B.1 | Vườn dài 20 m rộng 10 m, rào xung quanh cần bao nhiêu mét rào? | 60 m |
+| B.2 | Mỗi hình ứng với 5 quyển sách, bạn A có 4 hình. A có mấy quyển? | 20 quyển |
+| B.3 | Tính nhanh: 37 × 25 × 4 | 3 700 |
+| B.4 | Tính: 2 phần 3 + 1 phần 6 | 5 phần 6 |
+| B.5 | Tổ 1 có 5 nam 4 nữ, tổ 2 có 6 nam 6 nữ. Hai tổ có tất cả bao nhiêu bạn? | 21 bạn |
+| C.1 | Hai lớp có 90 quyển sách, lớp A nhiều hơn lớp B 10 quyển. Mỗi lớp có mấy quyển? | 50 và 40 |
+| C.2 | Tính nhẩm: 46 × 11 | 506 |
+| C.3 | Dãy 3, 6, 9, …, 99 có bao nhiêu số hạng? | 33 |
+| C.4 | Trung bình mỗi ngày bán 40 kg, hỏi 5 ngày bán bao nhiêu? | 200 kg |
+| C.5 | Ba món giá 28 000, 41 500 và 19 000 đồng. Đưa 100 000 đồng thì được trả lại bao nhiêu? | 11 500 đồng |
 | D.1 | Lớp có 40 em, 25 em học vẽ, 20 em học hát, 10 em học cả hai. Bao nhiêu em không học môn nào? | 5 em |
-| D.2 | Xe chở 20 bao gạo, mỗi bao 50 kg. Xe chở mấy tạ? | 10 tạ |
-| D.3 | Bảng: Toán 10, Văn 6, Anh 4. Trung bình mỗi môn bao nhiêu bạn? | 6,67 bạn |
-| D.4 | So sánh: 234 × 7 … 234 × 8 | < |
-| D.5 | Tổ Một trồng 60 cây, tổ Hai bằng 2 phần 3 tổ Một. Tổ Hai trồng mấy cây? | 40 cây |
-| E.1 | Tính: 2 phần 3 + 1 phần 6 | 5 phần 6 |
-| E.2 | So sánh: 5 phần 6 … 7 phần 8 | < |
-| E.3 | Tính: (1 phần 2 + 1 phần 3) × 6 phần 5 | 1 |
-| E.4 | So sánh 5 phần 6 và 7 phần 8. | 5 phần 6 < 7 phần 8 |
-| E.5 | Rút gọn 18 phần 24. | 3 phần 4 |
+| D.2 | Tổng của 5 số tự nhiên liên tiếp bằng 100. Số bé nhất là số nào? | 18 |
+| D.3 | Tổ Một trồng 60 cây, tổ Hai bằng 2 phần 3 tổ Một. Tổ Hai trồng mấy cây? | 40 cây |
+| D.4 | Bảng: Toán 10, Văn 6, Anh 4. Trung bình mỗi môn bao nhiêu bạn? | 6,67 bạn |
+| D.5 | Bốn tháng có số ngày mưa 8, 12, 10, 14. Trung bình mỗi tháng bao nhiêu ngày mưa? | 11 ngày |
+| E.1 | Tổ 1 có 5 nam 4 nữ, tổ 2 có 6 nam 6 nữ. Hai tổ có tất cả bao nhiêu bạn? | 21 bạn |
+| E.2 | Tính: 2 phần 3 + 1 phần 6 | 5 phần 6 |
+| E.3 | So sánh: 5 phần 6 … 7 phần 8 | < |
+| E.4 | Bốn tháng có số ngày mưa 8, 12, 10, 14. Trung bình mỗi tháng bao nhiêu ngày mưa? | 11 ngày |
+| E.5 | So sánh 5 phần 6 và 7 phần 8. | 5 phần 6 < 7 phần 8 |
 
 ---
 

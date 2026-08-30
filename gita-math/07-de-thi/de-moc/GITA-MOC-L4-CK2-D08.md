@@ -30,57 +30,55 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Viết số tự nhiên ứng với mỗi tổng dưới đây.
 
-a) Viết số gồm tổng: 300 000 + 80 000 + 2 000 + 800 + 20 + 1
-b) Viết số gồm tổng: 800 000 + 100 + 30 + 8
-c) Viết số gồm tổng: 400 000 + 80 000 + 8 000 + 300 + 60 + 4
-d) Viết số gồm tổng: 200 000 + 90 000 + 6 000 + 800 + 8
-e) Viết số gồm tổng: 900 000 + 70 000 + 1 000 + 600 + 9
-f) Viết số gồm tổng: 800 000 + 80 000 + 6 000 + 500 + 8
+a) Viết số gồm tổng: 400 000 + 20 000 + 9 000 + 80 + 7
+b) Viết số gồm tổng: 600 000 + 1 000 + 200 + 60 + 8
+c) Viết số gồm tổng: 900 000 + 90 000 + 2 000 + 700 + 40 + 1
+d) Viết số gồm tổng: 700 000 + 20 000 + 1 000 + 700 + 20 + 8
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
 Tính bằng cách thuận tiện nhất.
 
-a) 14 × 25 × 4
-b) 27 × 125 × 8
-c) 6 560 : 8 : 10
-d) 76 × 25 × 4
-e) 39 × 25 × 4
+a) 19 + 79 + 81 + 21
+b) 220 + 31 − 31
+c) 92 + 76 − 76
+d) 28 + 145 + 72
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
-Tóm tắt bằng sơ đồ đoạn thẳng rồi giải.
+Giải bằng cách rút về đơn vị hoặc dùng tỉ số.
 
-a) Xưởng và kho A chứa tất cả 768 kg muối. Xưởng chứa nhiều hơn kho A 126 kg. Mỗi nơi chứa bao nhiêu kg?
-b) Hai lớp 4A và 3A có tất cả 96 quyển sách. Lớp 4A có nhiều hơn lớp 3A 6 quyển. Mỗi lớp có bao nhiêu quyển?
-c) Tổ Một và nhóm Sao Mai trồng được 684 cây. Tổ Một trồng nhiều hơn nhóm Sao Mai 146 cây. Mỗi tổ trồng bao nhiêu cây?
-d) Tổ Ba và tổ Một trồng được 380 cây. Tổ Ba trồng nhiều hơn tổ Một 20 cây. Mỗi tổ trồng bao nhiêu cây?
-e) Xưởng và kho A chứa tất cả 840 kg gạo. Xưởng chứa nhiều hơn kho A 108 kg. Mỗi nơi chứa bao nhiêu kg?
-f) Hai lớp 5A và 5B có tất cả 820 quyển sách. Lớp 5A có nhiều hơn lớp 5B 66 quyển. Mỗi lớp có bao nhiêu quyển?
+a) Mua 7 quyển vở hết 42 nghìn đồng. Mua 20 quyển vở như thế hết bao nhiêu nghìn đồng?
+b) Mua 9 quyển vở hết 756 nghìn đồng. Mua 19 quyển vở như thế hết bao nhiêu nghìn đồng?
+c) Mua 3 quyển vở hết 102 nghìn đồng. Mua 23 quyển vở như thế hết bao nhiêu nghìn đồng?
+d) Mua 8 quyển vở hết 280 nghìn đồng. Mua 15 quyển vở như thế hết bao nhiêu nghìn đồng?
+e) Mua 8 quyển vở hết 96 nghìn đồng. Với 252 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+f) Mua 14 quyển vở hết 1 176 nghìn đồng. Mua 30 quyển vở như thế hết bao nhiêu nghìn đồng?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
-Đếm có hệ thống, nêu cách đếm.
+Chú ý đơn vị mà đề hỏi.
 
-a) Từ một đỉnh của tam giác lớn kẻ 4 đoạn thẳng tới cạnh đối diện. Có tất cả bao nhiêu tam giác trong hình?
-b) Trong đó có bao nhiêu tam giác nhỏ nhất (không bị chia tiếp)?
-c) Trên một đường thẳng lấy 6 điểm phân biệt. Có bao nhiêu đoạn thẳng được tạo thành?
-d) Nếu lấy thêm một điểm nữa trên đường thẳng đó thì có thêm bao nhiêu đoạn thẳng?
-e) Với 7 điểm thì có tất cả bao nhiêu đoạn thẳng?
+a) Một xe chở 25 bao gạo, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ gạo?
+b) Một xe chở 37 bao thóc, mỗi bao 50 kg. Hỏi xe chở bao nhiêu tạ thóc?
+c) Một xe chở 13 bao đường, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ đường?
+d) Một xe chở 25 bao xi măng, mỗi bao 40 kg. Hỏi xe chở bao nhiêu tạ xi măng?
+e) Một xe chở 9 bao phân bón, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ phân bón?
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
-Dùng phương pháp giả thiết tạm.
+Tính nhanh mỗi tổng, nêu công thức đã dùng.
 
-a) Vừa gà vừa chó có 43 con, đếm được tất cả 152 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
-b) Vừa gà vừa chó có 18 con, đếm được tất cả 54 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
-c) Vừa gà vừa chó có 48 con, đếm được tất cả 152 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
-d) Vừa gà vừa chó có 67 con, đếm được tất cả 198 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
-e) Vừa gà vừa chó có 37 con, đếm được tất cả 92 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
+a) 1 + 2 + 3 + … + 20
+b) 1 + 3 + 5 + … + 19 (tổng 10 số lẻ đầu tiên)
+c) 2 + 4 + 6 + … + 40 (tổng 20 số chẵn đầu tiên)
+d) 1 + 3 + 5 + … + 199 (tổng 100 số lẻ đầu tiên)
+e) 1 + 2 + 3 + … + 50
+f) 2 + 4 + 6 + … + 20 (tổng 10 số chẵn đầu tiên)
 
 
 ---
@@ -88,102 +86,100 @@ e) Vừa gà vừa chó có 37 con, đếm được tất cả 92 chân. Hỏi c
 ## ĐÁP ÁN VÀ BIỂU ĐIỂM
 
 
-### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 1, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **382 821**
-b) **800 138**
-c) **488 364**
-d) **296 808**
-e) **971 609**
-f) **886 508**
+a) **429 087**
+b) **601 268**
+c) **992 741**
+d) **721 728**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Viết số gồm tổng: 300 000 + 80 000 + 2 000 + 800 + 20 + 1
+1. Xét ý a: Viết số gồm tổng: 400 000 + 20 000 + 9 000 + 80 + 7
 2. Đọc vị: đây là dạng **Viết số từ dạng tổng theo hàng**; dấu hiệu là Tổng gồm các số tròn chục, tròn trăm, tròn nghìn….
 3. Kiến thức phải dùng: Cấu tạo thập phân của số tự nhiên.
 4. Cách làm: Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết.
 5. Lối tắt: Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số.
-6. Kết quả: **382 821**.
+6. Kết quả: **429 087**.
 
 *Lỗi hay mắc:* Bỏ qua hàng khuyết nên số viết ra bị ngắn đi một chữ số.
 
-### Bài 2, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 2, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **1 400**
-b) **27 000**
-c) **82**
-d) **7 600**
-e) **3 900**
+a) **200**
+b) **220**
+c) **92**
+d) **245**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 14 × 25 × 4
-2. Đọc vị: đây là dạng **Tính nhanh tích, thương nhiều bước**; dấu hiệu là Tích có thừa số 25, 125, 50, 20; hoặc chia liên tiếp.
-3. Kiến thức phải dùng: Tính chất giao hoán, kết hợp của phép nhân.
-4. Cách làm: Ghép cặp cho tích tròn rồi nhân.
-5. Lối tắt: Chia liên tiếp cho 4 rồi 25 bằng chia cho 100.
-6. Kết quả: **1 400**.
+1. Xét ý a: 19 + 79 + 81 + 21
+2. Đọc vị: đây là dạng **Tính nhanh tổng nhiều số hạng**; dấu hiệu là Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm.
+3. Kiến thức phải dùng: Tính chất giao hoán, kết hợp của phép cộng.
+4. Cách làm: Ghép cặp tròn rồi cộng.
+5. Lối tắt: Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10.
+6. Kết quả: **200**.
 
-*Lỗi hay mắc:* Nhân lần lượt từ trái sang phải nên số trung gian rất lớn.
+*Lỗi hay mắc:* Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn.
 
 ### Bài 3, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **xưởng: 447 kg, kho A: 321 kg**
-b) **4A: 51 quyển, 3A: 45 quyển**
-c) **tổ Một: 415 cây, nhóm Sao Mai: 269 cây**
-d) **tổ Ba: 200 cây, tổ Một: 180 cây**
-e) **xưởng: 474 kg, kho A: 366 kg**
-f) **5A: 443 quyển, 5B: 377 quyển**
+a) **120 nghìn đồng**
+b) **1 596 nghìn đồng**
+c) **782 nghìn đồng**
+d) **525 nghìn đồng**
+e) **21 quyển**
+f) **2 520 nghìn đồng**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Xưởng và kho A chứa tất cả 768 kg muối. Xưởng chứa nhiều hơn kho A 126 kg. Mỗi nơi chứa bao nhiêu kg?
-2. Đọc vị: đây là dạng **Tổng – hiệu có lời văn**; dấu hiệu là “Có tất cả …” và “… nhiều hơn … là …”.
-3. Kiến thức phải dùng: Công thức tổng – hiệu, sơ đồ đoạn thẳng.
-4. Cách làm: Đọc vị tổng và hiệu → sơ đồ → công thức.
-5. Lối tắt: Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần.
-6. Kết quả: **xưởng: 447 kg, kho A: 321 kg**.
+1. Xét ý a: Mua 7 quyển vở hết 42 nghìn đồng. Mua 20 quyển vở như thế hết bao nhiêu nghìn đồng?
+2. Đọc vị: đây là dạng **Tỉ lệ thuận, rút về đơn vị**; dấu hiệu là Hai đại lượng cùng tăng cùng giảm.
+3. Kiến thức phải dùng: Đại lượng tỉ lệ thuận.
+4. Cách làm: Rút về đơn vị hoặc dùng tỉ số.
+5. Lối tắt: Nếu số lượng mới gấp số lượng cũ một số nguyên lần thì nhân thẳng, không cần rút về đơn vị.
+6. Kết quả: **120 nghìn đồng**.
 
-*Lỗi hay mắc:* Nhầm hiệu thành tổng khi đề diễn đạt vòng vo.
+*Lỗi hay mắc:* Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch.
 
 ### Bài 4, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **15**
-b) **5**
-c) **15**
-d) **6**
-e) **21**
+a) **7 tạ 50 kg**
+b) **18 tạ 50 kg**
+c) **3 tạ 90 kg**
+d) **10 tạ**
+e) **2 tạ 70 kg**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Từ một đỉnh của tam giác lớn kẻ 4 đoạn thẳng tới cạnh đối diện. Có tất cả bao nhiêu tam giác trong hình?
-2. Đọc vị: đây là dạng **Đếm hình bằng quy tắc chọn hai điểm**; dấu hiệu là Hình có nhiều đoạn kẻ từ cùng một đỉnh, hoặc nhiều điểm trên một đường.
-3. Kiến thức phải dùng: Quy tắc đếm, tổ hợp chập hai.
-4. Cách làm: Quy về số cách chọn hai điểm.
-5. Lối tắt: Số cách chọn 2 trong k là k × (k − 1) : 2 — thuộc công thức này là xong.
-6. Kết quả: **15**.
+1. Xét ý a: Một xe chở 25 bao gạo, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ gạo?
+2. Đọc vị: đây là dạng **Bài toán đại lượng có lời văn**; dấu hiệu là Đơn vị trong câu hỏi khác đơn vị trong dữ kiện.
+3. Kiến thức phải dùng: Nhân, chia số tự nhiên; đổi đơn vị khối lượng.
+4. Cách làm: Tính theo đơn vị dữ kiện rồi đổi ở bước cuối.
+5. Lối tắt: 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ.
+6. Kết quả: **7 tạ 50 kg**.
 
-*Lỗi hay mắc:* Chỉ đếm tam giác nhỏ, quên các tam giác ghép.
+*Lỗi hay mắc:* Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ.
 
-### Bài 5, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **10 con gà, 33 con chó**
-b) **9 con gà, 9 con chó**
-c) **20 con gà, 28 con chó**
-d) **35 con gà, 32 con chó**
-e) **28 con gà, 9 con chó**
+a) **210**
+b) **100**
+c) **420**
+d) **10 000**
+e) **1 275**
+f) **110**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Vừa gà vừa chó có 43 con, đếm được tất cả 152 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
-2. Đọc vị: đây là dạng **Giả thiết tạm**; dấu hiệu là Hai loại đối tượng, biết tổng số và tổng của một đại lượng khác.
-3. Kiến thức phải dùng: Phương pháp giả thiết tạm.
-4. Cách làm: Giả sử đồng nhất một loại → tính phần chênh → chia cho hiệu đơn vị.
-5. Lối tắt: Số chó = (số chân − 2 × số con) : 2 — thuộc công thức rút gọn để nhẩm.
-6. Kết quả: **10 con gà, 33 con chó**.
+1. Xét ý a: 1 + 2 + 3 + … + 20
+2. Đọc vị: đây là dạng **Tổng dãy đặc biệt**; dấu hiệu là Dãy toàn số lẻ, toàn số chẵn, hoặc số tự nhiên liên tiếp.
+3. Kiến thức phải dùng: Ba công thức tổng cơ bản.
+4. Cách làm: Đếm số số hạng rồi áp công thức.
+5. Lối tắt: Tổng n số lẻ đầu tiên luôn là một số chính phương — dùng để kiểm tra nhanh.
+6. Kết quả: **210**.
 
-*Lỗi hay mắc:* Chia số chân thiếu cho 4 thay vì cho hiệu số chân của hai loài.
+*Lỗi hay mắc:* Nhầm số hạng cuối với số lượng số hạng khi áp công thức.
 
 ---
 
@@ -194,10 +190,10 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài | Đo cái gì | Sai bài này nghĩa là | Học lại ở đâu |
 |:--:|---|---|---|
 | Bài 1 | Viết số từ dạng tổng theo hàng | Bỏ qua hàng khuyết nên số viết ra bị ngắn đi một chữ số. | Nhóm chuyên đề **—** · mức — |
-| Bài 2 | Tính nhanh tích, thương nhiều bước | Nhân lần lượt từ trái sang phải nên số trung gian rất lớn. | Nhóm chuyên đề **—** · mức — |
-| Bài 3 | Tổng – hiệu có lời văn | Nhầm hiệu thành tổng khi đề diễn đạt vòng vo. | Nhóm chuyên đề **—** · mức — |
-| Bài 4 | Đếm hình bằng quy tắc chọn hai điểm | Chỉ đếm tam giác nhỏ, quên các tam giác ghép. | Nhóm chuyên đề **—** · mức — |
-| Bài 5 | Giả thiết tạm | Chia số chân thiếu cho 4 thay vì cho hiệu số chân của hai loài. | Nhóm chuyên đề **—** · mức — |
+| Bài 2 | Tính nhanh tổng nhiều số hạng | Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. | Nhóm chuyên đề **—** · mức — |
+| Bài 3 | Tỉ lệ thuận, rút về đơn vị | Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch. | Nhóm chuyên đề **—** · mức — |
+| Bài 4 | Bài toán đại lượng có lời văn | Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. | Nhóm chuyên đề **—** · mức — |
+| Bài 5 | Tổng dãy đặc biệt | Nhầm số hạng cuối với số lượng số hạng khi áp công thức. | Nhóm chuyên đề **—** · mức — |
 
 ---
 

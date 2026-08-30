@@ -30,56 +30,54 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Đặt tính rồi tính.
 
-a) 661 162 + 723 953
-b) 707 485 − 106 170
-c) 975 633 − 200 914
-d) 983 245 − 344 630
-e) 576 983 − 350 650
-f) 927 516 + 261 231
+a) 439 416 + 110 290
+b) 321 388 + 730 370
+c) 353 959 − 179 423
+d) 651 108 + 935 115
+e) 700 035 + 56 482
+f) 844 872 − 305 602
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
 Tính bằng cách thuận tiện nhất.
 
-a) 13 × 125 × 8
+a) 50 × 99 × 2
 b) 50 × 42 × 2
-c) 50 × 68 × 2
-d) 50 × 28 × 2
+c) 29 × 125 × 8
+d) 50 × 76 × 2
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
 Chú ý đổi đơn vị ở bước cuối.
 
-a) Trên bản đồ tỉ lệ 1 : 100, một đoạn đường đo được 10 cm. Hỏi đoạn đường đó dài bao nhiêu mét trên thực tế?
-b) Một đoạn đường dài 1 900 m được vẽ trên bản đồ tỉ lệ 1 : 10 000. Trên bản đồ đoạn ấy dài bao nhiêu xăng-ti-mét?
-c) Trên bản đồ tỉ lệ 1 : 10 000, một đoạn đường đo được 19 cm. Hỏi đoạn đường đó dài bao nhiêu mét trên thực tế?
-d) Một đoạn đường dài 350 m được vẽ trên bản đồ tỉ lệ 1 : 5 000. Trên bản đồ đoạn ấy dài bao nhiêu xăng-ti-mét?
-e) Trên bản đồ tỉ lệ 1 : 5 000, một đoạn đường đo được 17 cm. Hỏi đoạn đường đó dài bao nhiêu mét trên thực tế?
-f) Một đoạn đường dài 200 m được vẽ trên bản đồ tỉ lệ 1 : 5 000. Trên bản đồ đoạn ấy dài bao nhiêu xăng-ti-mét?
+a) Trên bản đồ tỉ lệ 1 : 2 000, một đoạn đường đo được 25 cm. Hỏi đoạn đường đó dài bao nhiêu mét trên thực tế?
+b) Một đoạn đường dài 29 m được vẽ trên bản đồ tỉ lệ 1 : 100. Trên bản đồ đoạn ấy dài bao nhiêu xăng-ti-mét?
+c) Trên bản đồ tỉ lệ 1 : 500, một đoạn đường đo được 6 cm. Hỏi đoạn đường đó dài bao nhiêu mét trên thực tế?
+d) Một đoạn đường dài 250 m được vẽ trên bản đồ tỉ lệ 1 : 1 000. Trên bản đồ đoạn ấy dài bao nhiêu xăng-ti-mét?
+e) Trên bản đồ tỉ lệ 1 : 100, một đoạn đường đo được 18 cm. Hỏi đoạn đường đó dài bao nhiêu mét trên thực tế?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
 Lấy π = 3,14. Ghi rõ đơn vị.
 
-a) Hình tròn có đường kính 58 cm. Tính chu vi (lấy π = 3,14).
-b) Hình tròn có đường kính 60 cm. Bán kính bằng bao nhiêu?
-c) Hình tròn có bán kính 5 cm. Tính chu vi (lấy π = 3,14).
-d) Hình tròn có bán kính 12 cm. Tính diện tích (lấy π = 3,14).
+a) Hình tròn có đường kính 14 cm. Tính chu vi (lấy π = 3,14).
+b) Hình tròn có bán kính 25 cm. Tính chu vi (lấy π = 3,14).
+c) Hình tròn có bán kính 24 cm. Tính diện tích (lấy π = 3,14).
+d) Hình tròn có đường kính 6 cm. Bán kính bằng bao nhiêu?
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
-Dùng phương pháp giả thiết tạm.
+Câu nào cũng phải quy về **một đơn vị thời gian** hoặc **một người** trước khi tính.
 
-a) Vừa gà vừa chó có 35 con, đếm được tất cả 118 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
-b) Vừa gà vừa chó có 73 con, đếm được tất cả 212 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
-c) Vừa gà vừa chó có 40 con, đếm được tất cả 108 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
-d) Vừa gà vừa chó có 19 con, đếm được tất cả 60 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
-e) Vừa gà vừa chó có 71 con, đếm được tất cả 208 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
-f) Vừa gà vừa chó có 58 con, đếm được tất cả 166 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
+a) 11 người làm xong một công việc trong 7 ngày. Hỏi 7 người làm xong công việc ấy trong bao nhiêu ngày, biết sức làm của mỗi người như nhau?
+b) Vòi thứ nhất chảy một mình thì đầy bể sau 10 giờ. Vòi thứ hai chảy một mình thì đầy bể sau 15 giờ. Hỏi mở cả hai vòi cùng lúc thì sau bao lâu đầy bể?
+c) 10 người làm xong một công việc trong 10 ngày. Hỏi 2 người làm xong công việc ấy trong bao nhiêu ngày, biết sức làm của mỗi người như nhau?
+d) Vòi thứ nhất chảy một mình thì đầy bể sau 3 giờ. Vòi thứ hai chảy một mình thì đầy bể sau 6 giờ. Hỏi mở cả hai vòi cùng lúc thì sau bao lâu đầy bể?
+e) Vòi thứ nhất chảy một mình thì đầy bể sau 6 giờ. Vòi thứ hai chảy một mình thì đầy bể sau 12 giờ. Hỏi mở cả hai vòi cùng lúc thì sau bao lâu đầy bể?
 
 
 ---
@@ -89,97 +87,95 @@ f) Vừa gà vừa chó có 58 con, đếm được tất cả 166 chân. Hỏi 
 
 ### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **1 385 115**
-b) **601 315**
-c) **774 719**
-d) **638 615**
-e) **226 333**
-f) **1 188 747**
+a) **549 706**
+b) **1 051 758**
+c) **174 536**
+d) **1 586 223**
+e) **756 517**
+f) **539 270**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 661 162 + 723 953
+1. Xét ý a: 439 416 + 110 290
 2. Đọc vị: đây là dạng **Cộng, trừ số tự nhiên**; dấu hiệu là Yêu cầu “đặt tính rồi tính”.
 3. Kiến thức phải dùng: Kĩ thuật đặt tính, nhớ và mượn.
 4. Cách làm: Đặt tính thẳng hàng, tính từ hàng đơn vị.
 5. Lối tắt: Làm tròn một số hạng để ước lượng trước, dùng kết quả ước lượng để phát hiện sai sót.
-6. Kết quả: **1 385 115**.
+6. Kết quả: **549 706**.
 
 *Lỗi hay mắc:* Viết lệch hàng khi hai số có số chữ số khác nhau.
 
 ### Bài 2, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **13 000**
+a) **9 900**
 b) **4 200**
-c) **6 800**
-d) **2 800**
+c) **29 000**
+d) **7 600**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 13 × 125 × 8
+1. Xét ý a: 50 × 99 × 2
 2. Đọc vị: đây là dạng **Tính nhanh tích, thương nhiều bước**; dấu hiệu là Tích có thừa số 25, 125, 50, 20; hoặc chia liên tiếp.
 3. Kiến thức phải dùng: Tính chất giao hoán, kết hợp của phép nhân.
 4. Cách làm: Ghép cặp cho tích tròn rồi nhân.
 5. Lối tắt: Chia liên tiếp cho 4 rồi 25 bằng chia cho 100.
-6. Kết quả: **13 000**.
+6. Kết quả: **9 900**.
 
 *Lỗi hay mắc:* Nhân lần lượt từ trái sang phải nên số trung gian rất lớn.
 
-### Bài 3, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 3, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **10 m**
-b) **19 cm**
-c) **1 900 m**
-d) **7 cm**
-e) **850 m**
-f) **4 cm**
+a) **500 m**
+b) **29 cm**
+c) **30 m**
+d) **25 cm**
+e) **18 m**
 
 **Cách giải mẫu:**
 
-1. Tỉ lệ 1 : 100 nghĩa là 1 cm trên bản đồ ứng với 100 cm thật.
-2. Bước 1 — độ dài thật tính bằng xăng-ti-mét: 10 × 100 = 1 000 (cm).
-3. Bước 2 — đổi ra mét: 1 000 : 100 = 10 (m).
-4. Đáp số: **10 m**.
+1. Tỉ lệ 1 : 2 000 nghĩa là 1 cm trên bản đồ ứng với 2 000 cm thật.
+2. Bước 1 — độ dài thật tính bằng xăng-ti-mét: 25 × 2 000 = 50 000 (cm).
+3. Bước 2 — đổi ra mét: 50 000 : 100 = 500 (m).
+4. Đáp số: **500 m**.
 
 *Lỗi hay mắc:* Đổi mét sang xăng-ti-mét ngay từ đầu rồi lại nhân tỉ lệ một lần nữa.
 
 ### Bài 4, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **182,12 cm**
-b) **30 cm**
-c) **31,4 cm**
-d) **452,16 cm²**
+a) **43,96 cm**
+b) **157 cm**
+c) **1 808,64 cm²**
+d) **3 cm**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Hình tròn có đường kính 58 cm. Tính chu vi (lấy π = 3,14).
+1. Xét ý a: Hình tròn có đường kính 14 cm. Tính chu vi (lấy π = 3,14).
 2. Đọc vị: đây là dạng **Chu vi, diện tích hình tròn**; dấu hiệu là Đề cho bán kính hoặc đường kính.
 3. Kiến thức phải dùng: Công thức hình tròn.
 4. Cách làm: Quy về bán kính, chọn đúng công thức.
 5. Lối tắt: Diện tích luôn có đơn vị mũ hai — nếu đáp số ghi cm là chắc chắn nhầm.
-6. Kết quả: **182,12 cm**.
+6. Kết quả: **43,96 cm**.
 
 *Lỗi hay mắc:* Lấy đường kính nhân đường kính khi tính diện tích.
 
-### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 5, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **11 con gà, 24 con chó**
-b) **40 con gà, 33 con chó**
-c) **26 con gà, 14 con chó**
-d) **8 con gà, 11 con chó**
-e) **38 con gà, 33 con chó**
-f) **33 con gà, 25 con chó**
+a) **11 ngày**
+b) **6 giờ**
+c) **50 ngày**
+d) **2 giờ**
+e) **4 giờ**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Vừa gà vừa chó có 35 con, đếm được tất cả 118 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
-2. Đọc vị: đây là dạng **Giả thiết tạm**; dấu hiệu là Hai loại đối tượng, biết tổng số và tổng của một đại lượng khác.
-3. Kiến thức phải dùng: Phương pháp giả thiết tạm.
-4. Cách làm: Giả sử đồng nhất một loại → tính phần chênh → chia cho hiệu đơn vị.
-5. Lối tắt: Số chó = (số chân − 2 × số con) : 2 — thuộc công thức rút gọn để nhẩm.
-6. Kết quả: **11 con gà, 24 con chó**.
+1. Xét ý a: 11 người làm xong một công việc trong 7 ngày. Hỏi 7 người làm xong công việc ấy trong bao nhiêu ngày, biết sức làm của mỗi người như nhau?
+2. Đọc vị: đây là dạng **Rút về đơn vị**; dấu hiệu là Đề cho **thời gian làm một mình** của từng bên, hoặc số người và số ngày.
+3. Kiến thức phải dùng: Phân số; tỉ lệ nghịch; tổng số ngày công.
+4. Cách làm: Quy về một đơn vị — một giờ hoặc một người — rồi cộng và chia.
+5. Lối tắt: Hai vòi cùng chảy thì thời gian chung = a × b : (a + b).
+6. Kết quả: **11 ngày**.
 
-*Lỗi hay mắc:* Chia số chân thiếu cho 4 thay vì cho hiệu số chân của hai loài.
+*Lỗi hay mắc:* Cộng hai khoảng thời gian của hai vòi, hoặc nhân thẳng số người với số ngày theo kiểu tỉ lệ thuận.
 
 ---
 
@@ -193,7 +189,7 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài 2 | Tính nhanh tích, thương nhiều bước | Nhân lần lượt từ trái sang phải nên số trung gian rất lớn. | Nhóm chuyên đề **—** · mức — |
 | Bài 3 | Tỉ lệ bản đồ, tỉ lệ xích | Đổi mét sang xăng-ti-mét ngay từ đầu rồi lại nhân tỉ lệ một lần nữa. | Nhóm chuyên đề **—** · mức — |
 | Bài 4 | Chu vi, diện tích hình tròn | Lấy đường kính nhân đường kính khi tính diện tích. | Nhóm chuyên đề **—** · mức — |
-| Bài 5 | Giả thiết tạm | Chia số chân thiếu cho 4 thay vì cho hiệu số chân của hai loài. | Nhóm chuyên đề **—** · mức — |
+| Bài 5 | Rút về đơn vị | Cộng hai khoảng thời gian của hai vòi, hoặc nhân thẳng số người với số ngày theo kiểu tỉ lệ thuận. | Nhóm chuyên đề **—** · mức — |
 
 ---
 

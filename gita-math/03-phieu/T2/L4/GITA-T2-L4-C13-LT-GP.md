@@ -30,11 +30,11 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần A**
 
-- **Bài A.1** — a) 303 · b) 4 giờ 32 phút · c) 15 phút · d) 9 giờ 3 phút · e) 1 giờ 2 phút
-- **Bài A.2** — a) 1 912 · b) 5 tấn 4 tạ 50 kg · c) 657 · d) 1 tạ 44 kg · e) 290
-- **Bài A.3** — a) 2 300 · b) 750 000 · c) 1 400 · d) 1 200
-- **Bài A.4** — a) 600 · b) 8 200 · c) 700 · d) 1 800 000 · e) 4 300 · f) 5 600 · g) 830
-- **Bài A.5** — a) 838 776 · b) 263 838 · c) 98 130 · d) 959 879
+- **Bài A.1** — a) 6 giờ 43 phút · b) 5 giờ 45 phút · c) 2 giờ 43 phút · d) 446
+- **Bài A.2** — a) 3 600 · b) 100 000 · c) 6 800 · d) 1 000
+- **Bài A.3** — a) 176 cm · b) 58 cm · c) 100 cm² · d) 143 cm² · e) 132 cm · f) 220 cm · g) 36 cm² · h) 1 326 cm²
+- **Bài A.4** — a) 3 tấn 6 tạ 33 kg · b) 1 964 · c) 7 tạ 13 kg · d) 1 tấn 3 tạ 90 kg
+- **Bài A.5** — a) 78 000 · b) 560 · c) 87 000 · d) 6 900 · e) 84 000 · f) 190
 
 **Phần B**
 
@@ -62,11 +62,11 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần E**
 
-- **Bài E.1** — a) 80 cm² · b) 682 cm² · c) 132 cm² · d) 160 cm² · e) 150 cm² · f) 361 cm² · g) 216 cm²
-- **Bài E.2** — a) < · b) < · c) > · d) > · e) > · f) > · g) <
-- **Bài E.3** — a) 16 · b) 3 900 · c) 400 000 · d) 45 · e) 54 · f) 850 000 · g) 73 · h) 3 300
-- **Bài E.4** — a) 2 078 · b) 1 689 · c) 6 170 · d) 2 922 · e) 1 122 · f) 3 986 · g) 3 120
-- **Bài E.5** — a) 6 tuần 0 ngày · b) XX · c) có · d) 31 · e) XXI · f) 31
+- **Bài E.1** — a) 4 tuần 4 ngày · b) XX · c) có · d) 31 · e) không
+- **Bài E.2** — a) < · b) < · c) < · d) <
+- **Bài E.3** — a) 2 chục nghìn, 4 nghìn, 5 trăm, 9 chục, 2 đơn vị · b) 24 592 − 24 280 = 312 kW·h · c) 25 000 · d) 24 592 · e) ít hơn 163 kW·h
+- **Bài E.4** — a) 44 · b) 1 400 · c) 240 000 · d) 39 · e) 21 · f) 29
+- **Bài E.5** — a) 1 036 · b) 3 115 · c) 1 184 · d) 15 318 · e) 3 322 · f) 2 288
 
 ---
 
@@ -78,7 +78,7 @@ Mỗi bài có hai phần: **các bước giải** với số liệu thật củ
 
 **Các bước giải**
 
-Xét ý a: 5 giờ 3 phút = … phút
+Xét ý a: 3 giờ 26 phút + 197 phút = … (viết dạng giờ và phút)
 
 Đọc vị: đây là dạng **Đổi và tính toán với đơn vị thời gian**; dấu hiệu là Số đo có chữ “giờ”, “phút”, “giây”.
 
@@ -88,37 +88,17 @@ Cách làm: Quy về phút rồi tính, cuối cùng đổi lại giờ và phú
 
 Lối tắt: Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm.
 
-Kết quả: **303**.
+Kết quả: **6 giờ 43 phút**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
 
 *Điểm chốt:* Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
 
-### Bài A.2 — Đổi số đo khối lượng có nhiều đơn vị
+### Bài A.2 — Đổi đơn vị đo diện tích
 
 **Các bước giải**
 
-Xét ý a: 1 tấn 9 tạ 12 kg = … kg
-
-Đọc vị: đây là dạng **Số đo có nhiều đơn vị**; dấu hiệu là Số đo viết dưới dạng “… tấn … tạ … kg”.
-
-Kiến thức phải dùng: Bảng đơn vị khối lượng.
-
-Cách làm: Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư.
-
-Lối tắt: Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ.
-
-Kết quả: **1 912**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** 1 tấn = 10 tạ = 1 000 kg; 1 tạ = 100 kg; 1 yến = 10 kg. Đổi tất cả về ki-lô-gam rồi cộng lại; hoặc ngược lại, chia dần từ đơn vị lớn xuống đơn vị bé và lấy phần dư.
-
-*Điểm chốt:* Đổi hết về **một đơn vị chung** trước khi cộng.
-
-### Bài A.3 — Đổi đơn vị đo diện tích
-
-**Các bước giải**
-
-Xét ý a: 23 dm² = … cm²
+Xét ý a: 36 km² = … ha
 
 Đọc vị: đây là dạng **Đổi đơn vị diện tích**; dấu hiệu là Đơn vị có mũ hai: m², cm², km², ha.
 
@@ -128,17 +108,57 @@ Cách làm: Đếm bậc rồi nhân, chia 100.
 
 Lối tắt: Mỗi bậc thêm hai chữ số 0 — nhớ “diện tích thì gấp đôi số 0”.
 
-Kết quả: **2 300**.
+Kết quả: **3 600**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần** (chứ không phải 10 lần như đơn vị độ dài), vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
 
 *Điểm chốt:* Đơn vị diện tích nhảy **100 lần** mỗi bậc.
 
-### Bài A.4 — Đổi đơn vị đo độ dài và khối lượng
+### Bài A.3 — Chu vi và diện tích hình chữ nhật, hình vuông
 
 **Các bước giải**
 
-Xét ý a: 60 hg = … dag
+Xét ý a: Hình vuông có cạnh 44 cm. Tính chu vi.
+
+Đọc vị: đây là dạng **Chu vi, diện tích hình cơ bản**; dấu hiệu là Cho chiều dài, chiều rộng hoặc cạnh.
+
+Kiến thức phải dùng: Công thức chu vi, diện tích hình chữ nhật và hình vuông.
+
+Cách làm: Chọn đúng công thức, ghi đúng đơn vị.
+
+Lối tắt: Hình vuông là hình chữ nhật có dài bằng rộng — chỉ cần nhớ một bộ công thức.
+
+Kết quả: **176 cm**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích hình chữ nhật = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
+
+*Điểm chốt:* Chu vi ghi đơn vị **cm**, diện tích ghi đơn vị **cm²** — sai đơn vị là mất điểm.
+
+### Bài A.4 — Đổi số đo khối lượng có nhiều đơn vị
+
+**Các bước giải**
+
+Xét ý a: 3 633 kg = … tấn … tạ … kg
+
+Đọc vị: đây là dạng **Số đo có nhiều đơn vị**; dấu hiệu là Số đo viết dưới dạng “… tấn … tạ … kg”.
+
+Kiến thức phải dùng: Bảng đơn vị khối lượng.
+
+Cách làm: Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư.
+
+Lối tắt: Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ.
+
+Kết quả: **3 tấn 6 tạ 33 kg**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** 1 tấn = 10 tạ = 1 000 kg; 1 tạ = 100 kg; 1 yến = 10 kg. Đổi tất cả về ki-lô-gam rồi cộng lại; hoặc ngược lại, chia dần từ đơn vị lớn xuống đơn vị bé và lấy phần dư.
+
+*Điểm chốt:* Đổi hết về **một đơn vị chung** trước khi cộng.
+
+### Bài A.5 — Đổi đơn vị đo độ dài và khối lượng
+
+**Các bước giải**
+
+Xét ý a: 78 yến = … dag
 
 Đọc vị: đây là dạng **Đổi đơn vị đo**; dấu hiệu là Dấu … giữa hai đơn vị khác nhau.
 
@@ -148,31 +168,11 @@ Cách làm: Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10.
 
 Lối tắt: Số bậc chính là số chữ số 0 phải thêm vào (hoặc bớt đi).
 
-Kết quả: **600**.
+Kết quả: **78 000**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
 
 *Điểm chốt:* Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
-
-### Bài A.5 — Viết số khi biết tổng các giá trị hàng
-
-**Các bước giải**
-
-Xét ý a: Viết số gồm tổng: 800 000 + 30 000 + 8 000 + 700 + 70 + 6
-
-Đọc vị: đây là dạng **Viết số từ dạng tổng theo hàng**; dấu hiệu là Tổng gồm các số tròn chục, tròn trăm, tròn nghìn….
-
-Kiến thức phải dùng: Cấu tạo thập phân của số tự nhiên.
-
-Cách làm: Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết.
-
-Lối tắt: Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số.
-
-Kết quả: **838 776**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Mỗi số hạng cho biết một hàng. Xếp các chữ số vào đúng hàng của nó, hàng nào khuyết thì viết chữ số 0.
-
-*Điểm chốt:* Hàng khuyết trong tổng vẫn phải có chữ số **0** trong số viết ra.
 
 ### Bài B.1 — Vì sao phải học chương này
 
@@ -474,27 +474,27 @@ Kết quả: **Đại lượng tỉ lệ nghịch, tổng số ngày công**.
 
 *Điểm chốt:* Đại lượng bất biến ở đây là **tổng số ngày công**.
 
-### Bài E.1 — Diện tích hình bình hành, hình thoi, hình tam giác
+### Bài E.1 — Lịch, thế kỉ, năm nhuận
 
-> **BẪY — Chia 2 hay không chia 2.**
+> **BẪY — Năm tròn trăm.**
 
 **Các bước giải**
 
-Xét ý a: Hình tam giác có đáy 32 cm, chiều cao 5 cm. Tính diện tích.
+Xét ý a: 32 ngày bằng bao nhiêu tuần lễ và mấy ngày?
 
-Đọc vị: đây là dạng **Diện tích các hình phẳng cơ bản**; dấu hiệu là Đề cho đáy và chiều cao, hoặc hai đường chéo.
+Đọc vị: đây là dạng **Lịch và đơn vị thời gian lớn**; dấu hiệu là Đề hỏi về tháng, năm, thế kỉ.
 
-Kiến thức phải dùng: Công thức diện tích hình bình hành, hình thoi, hình tam giác.
+Kiến thức phải dùng: Số ngày các tháng, năm nhuận, thế kỉ.
 
-Cách làm: Nhận dạng hình rồi chọn công thức.
+Cách làm: Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400.
 
-Lối tắt: Tam giác bằng nửa hình bình hành cùng đáy cùng chiều cao.
+Lối tắt: Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ.
 
-Kết quả: **80 cm²**.
+Kết quả: **4 tuần 4 ngày**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Hình bình hành: S = đáy × chiều cao. Hình thoi: S = tích hai đường chéo chia 2. Hình tam giác: S = đáy × chiều cao chia 2.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Các tháng 1, 3, 5, 7, 8, 10, 12 có 31 ngày; các tháng 4, 6, 9, 11 có 30 ngày; tháng 2 có 28 ngày, năm nhuận có 29 ngày. Năm nhuận là năm chia hết cho 4, riêng năm tròn trăm thì phải chia hết cho 400. Thế kỉ thứ n gồm các năm từ (n − 1) × 100 + 1 đến n × 100.
 
-*Điểm chốt:* Hình bình hành **không** chia 2; hình tam giác và hình thoi **có** chia 2.
+*Điểm chốt:* Năm tròn trăm chỉ nhuận khi chia hết cho **400** (1900 không nhuận, 2000 có nhuận).
 
 ### Bài E.2 — So sánh hai số đo khác đơn vị
 
@@ -502,7 +502,7 @@ Kết quả: **80 cm²**.
 
 **Các bước giải**
 
-Xét ý a: 77 m² … 459 km²
+Xét ý a: 71 dm … 2 553 hm
 
 Đọc vị: đây là dạng **So sánh số đo đại lượng**; dấu hiệu là Hai vế có đơn vị khác nhau.
 
@@ -518,13 +518,33 @@ Kết quả: **<**.
 
 *Điểm chốt:* Đổi về cùng đơn vị **trước**, so sánh **sau**.
 
-### Bài E.3 — Đơn vị đo diện tích
+### Bài E.3 — Đọc chỉ số công tơ điện
+
+**Các bước giải**
+
+**Chỉ số công tơ không phải là số điện đã dùng.** Nó là tổng số điện cả nhà đã dùng từ ngày lắp công tơ tới giờ, nên bao giờ cũng tăng.
+
+Tách 24 592 theo hàng, đọc từ trái sang: 2 chục nghìn, 4 nghìn, 5 trăm, 9 chục, 2 đơn vị.
+
+Số điện trong tháng = chỉ số cuối − chỉ số đầu = 24 592 − 24 280 = **312 kW·h**.
+
+Làm tròn đến hàng nghìn thì nhìn chữ số hàng trăm: hàng trăm của 24 592 là 5, từ 5 trở lên nên làm tròn lên, được 25 000.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Chỉ số công tơ là một số cộng dồn, nên số điện dùng trong tháng là **hiệu** hai chỉ số. Các ý còn lại là cấu tạo số, làm tròn và so sánh trên chính hai con số ấy.
+
+*Điểm chốt:* Chỉ số công tơ là số cộng dồn, không phải lượng dùng trong tháng.
+
+*Muốn khó hơn:* Cho thêm đơn giá một bậc và hỏi tiền điện phải trả.
+
+*Phải chắc trước khi làm bài này:* Đọc, viết số có năm chữ số và phép trừ có nhớ.
+
+### Bài E.4 — Đơn vị đo diện tích
 
 > **BẪY — 100 lần chứ không phải 10 lần.**
 
 **Các bước giải**
 
-Xét ý a: 1 600 cm² = … dm²
+Xét ý a: 4 400 cm² = … dm²
 
 Đọc vị: đây là dạng **Đổi đơn vị diện tích**; dấu hiệu là Đơn vị có mũ hai, hoặc ha, km².
 
@@ -534,7 +554,7 @@ Cách làm: Đếm bậc rồi nhân, chia 100.
 
 Lối tắt: Mỗi bậc thêm hai chữ số 0 — nhớ “diện tích thì gấp đôi số 0”.
 
-Kết quả: **16**.
+Kết quả: **44**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần**, vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
 
@@ -544,11 +564,11 @@ Kết quả: **16**.
 
 *Phải chắc trước khi làm bài này:* Bảng đơn vị đo độ dài và phép nhân, chia với 100.
 
-### Bài E.4 — Tính toán với số đo đại lượng
+### Bài E.5 — Tính toán với số đo đại lượng
 
 **Các bước giải**
 
-Xét ý a: 8 312 cm : 4 = … cm
+Xét ý a: 9 m 18 cm + 118 cm = … cm
 
 Đọc vị: đây là dạng **Bốn phép tính với số đo**; dấu hiệu là Các số hạng có đơn vị khác nhau trong cùng một phép tính.
 
@@ -558,33 +578,11 @@ Cách làm: Đổi về đơn vị của kết quả rồi tính.
 
 Lối tắt: Đọc chỗ chấm trước, biết ngay đơn vị đích.
 
-Kết quả: **2 078**.
+Kết quả: **1 036**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Chỉ cộng, trừ được các số đo **cùng đơn vị**. Bước đầu tiên luôn là đổi tất cả về đơn vị mà đề yêu cầu ở kết quả, sau đó tính như với số tự nhiên rồi ghi kèm đơn vị.
 
 *Điểm chốt:* Đơn vị của **kết quả** quyết định ta đổi về đơn vị nào.
-
-### Bài E.5 — Lịch, thế kỉ, năm nhuận
-
-> **BẪY — Năm tròn trăm.**
-
-**Các bước giải**
-
-Xét ý a: 42 ngày bằng bao nhiêu tuần lễ và mấy ngày?
-
-Đọc vị: đây là dạng **Lịch và đơn vị thời gian lớn**; dấu hiệu là Đề hỏi về tháng, năm, thế kỉ.
-
-Kiến thức phải dùng: Số ngày các tháng, năm nhuận, thế kỉ.
-
-Cách làm: Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400.
-
-Lối tắt: Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ.
-
-Kết quả: **6 tuần 0 ngày**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Các tháng 1, 3, 5, 7, 8, 10, 12 có 31 ngày; các tháng 4, 6, 9, 11 có 30 ngày; tháng 2 có 28 ngày, năm nhuận có 29 ngày. Năm nhuận là năm chia hết cho 4, riêng năm tròn trăm thì phải chia hết cho 400. Thế kỉ thứ n gồm các năm từ (n − 1) × 100 + 1 đến n × 100.
-
-*Điểm chốt:* Năm tròn trăm chỉ nhuận khi chia hết cho **400** (1900 không nhuận, 2000 có nhuận).
 
 ---
 
@@ -594,11 +592,11 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
-| A.1 | Đổi và tính toán với đơn vị thời gian | Quan hệ giờ – phút – giây | Số đo có chữ “giờ”, “phút”, “giây” | Quy về phút rồi tính, cuối cùng đổi lại giờ và phút | Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm. | 303 · 4 giờ 32 phút · 15 phút · 9 giờ 3 phút… |
-| A.2 | Số đo có nhiều đơn vị | Bảng đơn vị khối lượng | Số đo viết dưới dạng “… tấn … tạ … kg” | Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư | Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ. | 1 912 · 5 tấn 4 tạ 50 kg · 657 · 1 tạ 44 kg… |
-| A.3 | Đổi đơn vị diện tích | Bảng đơn vị đo diện tích | Đơn vị có mũ hai: m², cm², km², ha | Đếm bậc rồi nhân, chia 100 | Mỗi bậc thêm hai chữ số 0 — nhớ “diện tích thì gấp đôi số 0”. | 2 300 · 750 000 · 1 400 · 1 200 |
-| A.4 | Đổi đơn vị đo | Bảng đơn vị đo độ dài, khối lượng | Dấu … giữa hai đơn vị khác nhau | Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10 | Số bậc chính là số chữ số 0 phải thêm vào (hoặc bớt đi). | 600 · 8 200 · 700 · 1 800 000… |
-| A.5 | Viết số từ dạng tổng theo hàng | Cấu tạo thập phân của số tự nhiên | Tổng gồm các số tròn chục, tròn trăm, tròn nghìn… | Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết | Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số. | 838 776 · 263 838 · 98 130 · 959 879 |
+| A.1 | Đổi và tính toán với đơn vị thời gian | Quan hệ giờ – phút – giây | Số đo có chữ “giờ”, “phút”, “giây” | Quy về phút rồi tính, cuối cùng đổi lại giờ và phút | Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm. | 6 giờ 43 phút · 5 giờ 45 phút · 2 giờ 43 phút · 446 |
+| A.2 | Đổi đơn vị diện tích | Bảng đơn vị đo diện tích | Đơn vị có mũ hai: m², cm², km², ha | Đếm bậc rồi nhân, chia 100 | Mỗi bậc thêm hai chữ số 0 — nhớ “diện tích thì gấp đôi số 0”. | 3 600 · 100 000 · 6 800 · 1 000 |
+| A.3 | Chu vi, diện tích hình cơ bản | Công thức chu vi, diện tích hình chữ nhật và hình vuông | Cho chiều dài, chiều rộng hoặc cạnh | Chọn đúng công thức, ghi đúng đơn vị | Hình vuông là hình chữ nhật có dài bằng rộng — chỉ cần nhớ một bộ công thức. | 176 cm · 58 cm · 100 cm² · 143 cm²… |
+| A.4 | Số đo có nhiều đơn vị | Bảng đơn vị khối lượng | Số đo viết dưới dạng “… tấn … tạ … kg” | Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư | Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ. | 3 tấn 6 tạ 33 kg · 1 964 · 7 tạ 13 kg · 1 tấn 3 tạ 90 kg |
+| A.5 | Đổi đơn vị đo | Bảng đơn vị đo độ dài, khối lượng | Dấu … giữa hai đơn vị khác nhau | Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10 | Số bậc chính là số chữ số 0 phải thêm vào (hoặc bớt đi). | 78 000 · 560 · 87 000 · 6 900… |
 | B.1 | Định vị chương trong hệ thống | Tên chương, nhóm chuyên đề, số dạng bài | Phần đầu phiếu ghi rõ tên cụm và nhóm chuyên đề | Đọc phần đầu phiếu rồi trả lời theo đúng tên gọi | Ghi tên chương ra góc vở, mỗi lần mở vở là đọc lại một lần. | Đại lượng, đo lường và toán thực tế · E — Đại lượng – Đo lường – Thời gian · 4 · ở mọi bài thuộc đại lượng – đo lường – thời gian, vì các chương sau đều dùng lại nền này… |
 | B.2 | Liệt kê dạng bài của chương | Danh mục dạng bài | Bảng dạng bài ở phiếu Dạng bài & Đọc vị của cùng cụm | Chép theo bảng, giữ nguyên thứ tự | Học thuộc số lượng dạng bài trước, tên từng dạng sau. | Đổi đơn vị đo diện tích và bài toán ngược · Bài toán thực tế: đo lường, mua bán, giảm giá · Bài toán đại lượng dạng đề thi · Tổng ôn đại lượng và toán thực tế |
 | B.3 | Định vị chương theo thời gian | Kế hoạch năm học, mốc kiểm tra | Phần đầu phiếu ghi tuần, học kỳ, mốc | Đọc phần đầu phiếu | Mỗi cụm luôn có đúng 6 buổi và 1 phiếu hướng dẫn ôn chắc. | HK2 · tuần 26 · Cuối kỳ II · cụm 13… |
@@ -614,11 +612,11 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | D.3 | Đổi và tính toán với đơn vị thời gian | Quan hệ giờ – phút – giây | Số đo có chữ “giờ”, “phút”, “giây” | Quy về phút rồi tính, cuối cùng đổi lại giờ và phút | Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm. | Quan hệ giờ – phút – giây · Đổi và tính toán với đơn vị thời gian · Số đo có chữ “giờ”, “phút”, “giây” · Quy về phút rồi tính, cuối cùng đổi lại giờ và phút… |
 | D.4 | Lịch và đơn vị thời gian lớn | Số ngày các tháng, năm nhuận, thế kỉ | Đề hỏi về tháng, năm, thế kỉ | Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400 | Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ. | Số ngày các tháng, năm nhuận, thế kỉ · Lịch và đơn vị thời gian lớn · Đề hỏi về tháng, năm, thế kỉ · Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400… |
 | D.5 | Tỉ lệ nghịch, so sánh hai phương án | Đại lượng tỉ lệ nghịch, tổng số ngày công | Thay đổi số người, hỏi thay đổi thời gian | Bám vào tổng số ngày công không đổi | Số người tăng gấp k lần thì số ngày giảm còn 1 phần k. | Đại lượng tỉ lệ nghịch, tổng số ngày công · Tỉ lệ nghịch, so sánh hai phương án · Thay đổi số người, hỏi thay đổi thời gian · Bám vào tổng số ngày công không đổi… |
-| E.1 | Diện tích các hình phẳng cơ bản | Công thức diện tích hình bình hành, hình thoi, hình tam giác | Đề cho đáy và chiều cao, hoặc hai đường chéo | Nhận dạng hình rồi chọn công thức | Tam giác bằng nửa hình bình hành cùng đáy cùng chiều cao. | 80 cm² · 682 cm² · 132 cm² · 160 cm²… |
-| E.2 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | < · < · > · >… |
-| E.3 | Đổi đơn vị diện tích | Bảng đơn vị đo diện tích | Đơn vị có mũ hai, hoặc ha, km² | Đếm bậc rồi nhân, chia 100 | Mỗi bậc thêm hai chữ số 0 — nhớ “diện tích thì gấp đôi số 0”. | 16 · 3 900 · 400 000 · 45… |
-| E.4 | Bốn phép tính với số đo | Đổi đơn vị, bốn phép tính | Các số hạng có đơn vị khác nhau trong cùng một phép tính | Đổi về đơn vị của kết quả rồi tính | Đọc chỗ chấm trước, biết ngay đơn vị đích. | 2 078 · 1 689 · 6 170 · 2 922… |
-| E.5 | Lịch và đơn vị thời gian lớn | Số ngày các tháng, năm nhuận, thế kỉ | Đề hỏi về tháng, năm, thế kỉ | Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400 | Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ. | 6 tuần 0 ngày · XX · có · 31… |
+| E.1 | Lịch và đơn vị thời gian lớn | Số ngày các tháng, năm nhuận, thế kỉ | Đề hỏi về tháng, năm, thế kỉ | Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400 | Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ. | 4 tuần 4 ngày · XX · có · 31… |
+| E.2 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | < · < · < · < |
+| E.3 | Cấu tạo số có nhiều chữ số | Hàng và lớp; trừ số có năm chữ số; làm tròn số | Hai chỉ số đầu kỳ và cuối kỳ trên một thiết bị đo cộng dồn | Trừ để ra lượng dùng, rồi tách hàng trên chính số ấy | Trừ nhẩm theo hàng từ phải sang, không cần đặt tính khi hiệu nhỏ. | 2 chục nghìn, 4 nghìn, 5 trăm, 9 chục, 2 đơn vị · 24 592 − 24 280 = 312 kW·h · 25 000 · 24 592… |
+| E.4 | Đổi đơn vị diện tích | Bảng đơn vị đo diện tích | Đơn vị có mũ hai, hoặc ha, km² | Đếm bậc rồi nhân, chia 100 | Mỗi bậc thêm hai chữ số 0 — nhớ “diện tích thì gấp đôi số 0”. | 44 · 1 400 · 240 000 · 39… |
+| E.5 | Bốn phép tính với số đo | Đổi đơn vị, bốn phép tính | Các số hạng có đơn vị khác nhau trong cùng một phép tính | Đổi về đơn vị của kết quả rồi tính | Đọc chỗ chấm trước, biết ngay đơn vị đích. | 1 036 · 3 115 · 1 184 · 15 318… |
 
 ---
 
@@ -627,10 +625,10 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | Bài | Nhãn tư duy | Điểm chốt |
 |---|---|---|
 | A.1 | TD1, TD3 | Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác. |
-| A.2 | TD1, TD3 | Đổi hết về **một đơn vị chung** trước khi cộng. |
-| A.3 | TD1, TD2 | Đơn vị diện tích nhảy **100 lần** mỗi bậc. |
-| A.4 | TD1 | Đếm đúng **số bậc** giữa hai đơn vị trên bảng. |
-| A.5 | TD1, TD3 | Hàng khuyết trong tổng vẫn phải có chữ số **0** trong số viết ra. |
+| A.2 | TD1, TD2 | Đơn vị diện tích nhảy **100 lần** mỗi bậc. |
+| A.3 | TD1, TD3 | Chu vi ghi đơn vị **cm**, diện tích ghi đơn vị **cm²** — sai đơn vị là mất điểm. |
+| A.4 | TD1, TD3 | Đổi hết về **một đơn vị chung** trước khi cộng. |
+| A.5 | TD1 | Đếm đúng **số bậc** giữa hai đơn vị trên bảng. |
 | B.1 | TD1 | Gọi đúng **tên chương** và **tên nhóm chuyên đề** là bước đầu tiên để xếp kiến thức vào đúng ngăn trong đầu. |
 | B.2 | TD1, TD3 | Biết chương có **bao nhiêu dạng** thì mới biết mình còn thiếu dạng nào. |
 | B.3 | TD1 | Biết chương nằm ở đâu trong năm thì mới **ôn đúng lúc**. |
@@ -646,11 +644,11 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | D.3 | TD1, TD3 | Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác. |
 | D.4 | TD1, TD2 | Năm tròn trăm chỉ nhuận khi chia hết cho **400** (1900 không nhuận, 2000 có nhuận). |
 | D.5 | TD6, TD3 | Đại lượng bất biến ở đây là **tổng số ngày công**. |
-| E.1 | TD1, TD3 | Hình bình hành **không** chia 2; hình tam giác và hình thoi **có** chia 2. |
+| E.1 | TD1, TD2 | Năm tròn trăm chỉ nhuận khi chia hết cho **400** (1900 không nhuận, 2000 có nhuận). |
 | E.2 | TD2, TD1 | Đổi về cùng đơn vị **trước**, so sánh **sau**. |
-| E.3 | TD1, TD2 | Đơn vị diện tích nhảy **100 lần** mỗi bậc, không phải 10 lần. |
-| E.4 | TD1, TD3 | Đơn vị của **kết quả** quyết định ta đổi về đơn vị nào. |
-| E.5 | TD1, TD2 | Năm tròn trăm chỉ nhuận khi chia hết cho **400** (1900 không nhuận, 2000 có nhuận). |
+| E.3 | TD1, TD2 | Chỉ số công tơ là số cộng dồn, không phải lượng dùng trong tháng. |
+| E.4 | TD1, TD2 | Đơn vị diện tích nhảy **100 lần** mỗi bậc, không phải 10 lần. |
+| E.5 | TD1, TD3 | Đơn vị của **kết quả** quyết định ta đổi về đơn vị nào. |
 
 ---
 
@@ -661,10 +659,10 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 | Bài | Lỗi thường gặp | Cách phòng |
 |---|---|---|
 | A.1 | Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. | Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không. |
-| A.2 | Cộng thẳng các số đứng trước những đơn vị khác nhau. | Viết mỗi thành phần thành số ki-lô-gam ngay bên dưới rồi mới cộng. |
-| A.3 | Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. | Viết bảng đơn vị diện tích riêng, ghi rõ “×100” giữa hai bậc. |
-| A.4 | Đổi ngược chiều nên nhân thành chia. | Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay. |
-| A.5 | Bỏ qua hàng khuyết nên số viết ra bị ngắn đi một chữ số. | Kẻ sẵn các ô hàng rồi mới điền chữ số vào ô tương ứng. |
+| A.2 | Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. | Viết bảng đơn vị diện tích riêng, ghi rõ “×100” giữa hai bậc. |
+| A.3 | Nhầm công thức chu vi với diện tích; quên nhân 2 ở chu vi. | Vẽ hình và ghi số đo lên hình trước khi tính. |
+| A.4 | Cộng thẳng các số đứng trước những đơn vị khác nhau. | Viết mỗi thành phần thành số ki-lô-gam ngay bên dưới rồi mới cộng. |
+| A.5 | Đổi ngược chiều nên nhân thành chia. | Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay. |
 | B.1 | Trả lời chung chung “để học giỏi toán”. | Bắt buộc nhắc tên chương và tên nhóm chuyên đề trong câu trả lời. |
 | B.2 | Kể thiếu dạng bài, hoặc gộp hai dạng làm một. | Đếm số dạng trước khi kể, kể xong đếm lại. |
 | B.3 | Không nhớ mốc kiểm tra nên ôn muộn. | Ghi mốc kiểm tra vào lịch học ngay buổi đầu của cụm. |
@@ -680,11 +678,11 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 | D.3 | Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. | Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không. |
 | D.4 | Coi mọi năm chia hết cho 4 đều là năm nhuận. | Gặp năm tròn trăm thì kiểm tra thêm điều kiện chia hết cho 400. |
 | D.5 | Trừ thẳng số người rồi lấy hiệu làm số ngày rút ngắn. | Viết rõ: tổng ngày công = … ; số ngày mới = … ; sớm hơn = … . |
-| E.1 | Chia 2 cho hình bình hành, hoặc quên chia 2 cho hình tam giác. | Nhớ theo cặp: bình hành ↔ chữ nhật (không chia); tam giác ↔ nửa bình hành (chia 2). |
+| E.1 | Coi mọi năm chia hết cho 4 đều là năm nhuận. | Gặp năm tròn trăm thì kiểm tra thêm điều kiện chia hết cho 400. |
 | E.2 | So thẳng hai con số, bỏ qua đơn vị. | Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị. |
-| E.3 | Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. | Viết riêng bảng đơn vị diện tích, ghi rõ “× 100” giữa hai bậc liền nhau. |
-| E.4 | Cộng số mét với số xăng-ti-mét mà chưa đổi. | Gạch chân đơn vị ở chỗ chấm rồi đổi mọi số hạng về đơn vị đó. |
-| E.5 | Coi mọi năm chia hết cho 4 đều là năm nhuận. | Gặp năm tròn trăm thì kiểm tra thêm điều kiện chia hết cho 400. |
+| E.3 | Lấy thẳng chỉ số cuối làm số điện đã dùng. | Hỏi lại: con số này là 'đã dùng bao nhiêu' hay 'đếm tới đâu rồi'? |
+| E.4 | Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. | Viết riêng bảng đơn vị diện tích, ghi rõ “× 100” giữa hai bậc liền nhau. |
+| E.5 | Cộng số mét với số xăng-ti-mét mà chưa đổi. | Gạch chân đơn vị ở chỗ chấm rồi đổi mọi số hạng về đơn vị đó. |
 
 ---
 
@@ -693,10 +691,10 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 Đọc tầng 1 trước; chỉ đọc tầng sau khi đã thử lại ít nhất 3 phút.
 
 **Bài A.1** — (1) 1 giờ bằng bao nhiêu phút? — (2) Chia số phút cho 60, lấy thương và số dư. — (3) Phần phút của kết quả phải bé hơn 60.
-**Bài A.2** — (1) 1 tấn bằng bao nhiêu ki-lô-gam? — (2) Đổi từng phần về ki-lô-gam. — (3) Cộng tất cả lại.
-**Bài A.3** — (1) Đơn vị diện tích liền kề hơn kém nhau mấy lần? — (2) Đếm số bậc giữa hai đơn vị. — (3) Mỗi bậc nhân hoặc chia 100.
-**Bài A.4** — (1) Viết bảng đơn vị từ lớn đến bé. — (2) Đếm xem hai đơn vị cách nhau mấy bậc. — (3) Từ lớn sang bé thì nhân, mỗi bậc nhân 10.
-**Bài A.5** — (1) Số hạng lớn nhất cho biết hàng cao nhất. — (2) Kẻ đủ ô từ hàng cao nhất xuống hàng đơn vị. — (3) Ô nào không có số hạng tương ứng thì điền 0.
+**Bài A.2** — (1) Đơn vị diện tích liền kề hơn kém nhau mấy lần? — (2) Đếm số bậc giữa hai đơn vị. — (3) Mỗi bậc nhân hoặc chia 100.
+**Bài A.3** — (1) Đề hỏi chu vi hay diện tích? — (2) Viết công thức tương ứng ra trước. — (3) Ghi đơn vị đúng loại: cm cho chu vi, cm² cho diện tích.
+**Bài A.4** — (1) 1 tấn bằng bao nhiêu ki-lô-gam? — (2) Đổi từng phần về ki-lô-gam. — (3) Cộng tất cả lại.
+**Bài A.5** — (1) Viết bảng đơn vị từ lớn đến bé. — (2) Đếm xem hai đơn vị cách nhau mấy bậc. — (3) Từ lớn sang bé thì nhân, mỗi bậc nhân 10.
 **Bài B.1** — (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 **Bài B.2** — (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 **Bài B.3** — (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
@@ -712,11 +710,11 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 **Bài D.3** — (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 **Bài D.4** — (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 **Bài D.5** — (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
-**Bài E.1** — (1) Đây là hình gì? — (2) Viết công thức diện tích của hình đó. — (3) Kiểm tra xem công thức có chia 2 không.
+**Bài E.1** — (1) Tháng đó nằm trong nhóm 31 ngày hay 30 ngày? — (2) Năm đó có chia hết cho 4 không? — (3) Nếu là năm tròn trăm, có chia hết cho 400 không?
 **Bài E.2** — (1) Hai vế đang dùng đơn vị nào? — (2) Chọn một đơn vị chung, nên chọn đơn vị bé hơn. — (3) Đổi cả hai vế rồi so sánh.
-**Bài E.3** — (1) Hai đơn vị này cách nhau mấy bậc? — (2) Mỗi bậc hơn kém nhau bao nhiêu lần? — (3) Từ lớn sang bé thì nhân.
-**Bài E.4** — (1) Kết quả cần ghi theo đơn vị nào? — (2) Đổi mọi số hạng về đơn vị ấy. — (3) Tính như số tự nhiên rồi ghi đơn vị.
-**Bài E.5** — (1) Tháng đó nằm trong nhóm 31 ngày hay 30 ngày? — (2) Năm đó có chia hết cho 4 không? — (3) Nếu là năm tròn trăm, có chia hết cho 400 không?
+**Bài E.3** — (1) Hai chỉ số đầu và cuối, cái nào lớn hơn? Vì sao? — (2) Muốn biết dùng bao nhiêu trong tháng thì làm phép gì với hai số ấy? — (3) Tách số theo hàng thì đọc từ hàng lớn nhất về hàng đơn vị.
+**Bài E.4** — (1) Hai đơn vị này cách nhau mấy bậc? — (2) Mỗi bậc hơn kém nhau bao nhiêu lần? — (3) Từ lớn sang bé thì nhân.
+**Bài E.5** — (1) Kết quả cần ghi theo đơn vị nào? — (2) Đổi mọi số hạng về đơn vị ấy. — (3) Tính như số tự nhiên rồi ghi đơn vị.
 
 ---
 
@@ -727,10 +725,10 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | Bài | Đề tương tự | Đáp số |
 |---|---|---|
 | A.1 | 155 phút = … giờ … phút | 2 giờ 35 phút |
-| A.2 | 3 450 kg = … tấn … tạ … kg | 3 tấn 4 tạ 50 kg |
-| A.3 | 3 m² = … cm² | 30 000 |
-| A.4 | 5 km = … m | 5 000 |
-| A.5 | Viết số gồm tổng: 30 000 + 400 + 7 | 30 407 |
+| A.2 | 3 m² = … cm² | 30 000 |
+| A.3 | Hình chữ nhật dài 8 cm, rộng 5 cm. Tính diện tích. | 40 cm² |
+| A.4 | 3 450 kg = … tấn … tạ … kg | 3 tấn 4 tạ 50 kg |
+| A.5 | 5 km = … m | 5 000 |
 | B.1 | Chương “Đại lượng, đo lường và toán thực tế” thuộc nhóm chuyên đề nào? | E — Đại lượng – Đo lường – Thời gian |
 | B.2 | Chương này có mấy dạng bài chính? | 4 |
 | B.3 | Một cụm chuyên đề GITA gồm mấy buổi học? | 6 buổi |
@@ -746,11 +744,11 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | D.3 | 155 phút = … giờ … phút | 2 giờ 35 phút |
 | D.4 | Năm 1975 thuộc thế kỉ thứ mấy? | XX |
 | D.5 | 6 người làm xong trong 10 ngày. Thêm 4 người thì sớm hơn mấy ngày? | 4 ngày |
-| E.1 | Tam giác đáy 10 cm, cao 6 cm. Diện tích bằng bao nhiêu? | 30 cm² |
+| E.1 | Năm 1975 thuộc thế kỉ thứ mấy? | XX |
 | E.2 | So sánh: 3 kg … 2 500 g | > |
-| E.3 | 3 m² = … dm² | 300 |
-| E.4 | 2 m 30 cm + 150 cm = … cm | 380 |
-| E.5 | Năm 1975 thuộc thế kỉ thứ mấy? | XX |
+| E.3 | Công tơ đầu tháng chỉ 23 450, cuối tháng chỉ 23 610. Nhà ấy dùng bao nhiêu kW·h? | 160 kW·h |
+| E.4 | 3 m² = … dm² | 300 |
+| E.5 | 2 m 30 cm + 150 cm = … cm | 380 |
 
 ---
 

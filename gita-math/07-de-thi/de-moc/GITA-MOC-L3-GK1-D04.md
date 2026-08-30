@@ -30,59 +30,56 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Đặt tính rồi tính.
 
-a) 559 − 408
-b) 412 + 309
-c) 713 + 507
-d) 463 + 211
-e) 986 − 249
+a) 824 + 852
+b) 422 + 107
+c) 557 + 68
+d) 874 − 795
+e) 261 − 102
+f) 968 − 564
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
-Ghi rõ đơn vị đồng ở mọi kết quả.
+Ba món trong giỏ: **trứng gà** 58 500 đồng · **thịt lợn** 46 000 đồng · **đậu phụ** 48 500 đồng.
 
-a) Mua 2 quyển vở, mỗi quyển 25 000 đồng. Đưa cô bán hàng một tờ 100 000 đồng. Cô phải trả lại bao nhiêu tiền?
-b) Đổi một tờ 50 000 đồng ra các tờ 5 000 đồng thì được mấy tờ?
-c) Mua 4 quyển vở, mỗi quyển 7 000 đồng. Hết bao nhiêu tiền?
-d) Mua 5 quyển vở, mỗi quyển 15 000 đồng. Hết bao nhiêu tiền?
-e) Mua 4 quyển vở, mỗi quyển 25 000 đồng. Đưa cô bán hàng một tờ 200 000 đồng. Cô phải trả lại bao nhiêu tiền?
-f) Đổi một tờ 50 000 đồng ra các tờ 1 000 đồng thì được mấy tờ?
+a) Làm tròn giá từng món đến hàng chục nghìn để nhẩm cho nhanh.
+b) Cộng các giá đã làm tròn, được tổng ước lượng là bao nhiêu?
+c) Tính tổng đúng bằng cách cộng các giá gốc.
+d) Tổng ước lượng lệch bao nhiêu so với tổng đúng?
+e) Người mua đưa tờ 200 000 đồng. Người bán phải trả lại bao nhiêu?
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
-Vẽ sơ đồ trước, tính sau. Không vẽ thì không được tính.
+Tóm tắt bằng sơ đồ đoạn thẳng rồi giải.
 
-a) Hà và Thảo có tất cả 200 viên bi. Hà có nhiều hơn Thảo 2 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
-b) Dũng và Lan có tất cả 98 viên bi. Dũng có nhiều hơn Lan 12 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
-c) Tuấn và Bình có tất cả 62 viên bi. Tuấn có nhiều hơn Bình 16 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
-d) Vy và Dũng có tất cả 60 viên bi. Vy có nhiều hơn Dũng 6 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
-e) Yến và Thảo có tất cả 34 viên bi. Yến có nhiều hơn Thảo 2 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
-f) An và Hùng có tất cả 124 viên bi. An có nhiều hơn Hùng 8 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+a) Hai lớp 5A và 4A có tất cả 816 quyển sách. Lớp 5A có nhiều hơn lớp 4A 130 quyển. Mỗi lớp có bao nhiêu quyển?
+b) Tổ Ba và nhóm Hoa Phượng trồng được 430 cây. Tổ Ba trồng nhiều hơn nhóm Hoa Phượng 134 cây. Mỗi tổ trồng bao nhiêu cây?
+c) Kho B và cửa hàng chứa tất cả 354 kg đường. Kho B chứa nhiều hơn cửa hàng 30 kg. Mỗi nơi chứa bao nhiêu kg?
+d) Hai lớp 4A và 3A có tất cả 720 quyển sách. Lớp 4A có nhiều hơn lớp 3A 162 quyển. Mỗi lớp có bao nhiêu quyển?
+e) Cửa hàng và trang trại chứa tất cả 490 kg xi măng. Cửa hàng chứa nhiều hơn trang trại 48 kg. Mỗi nơi chứa bao nhiêu kg?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
-Kẻ một bảng lịch nhỏ ra nháp rồi trả lời.
+Ghi kết quả theo giờ và phút.
 
-a) Tháng 7 năm 2024 có bao nhiêu ngày?
-b) Năm 2024 có phải năm nhuận không?
-c) Ngày 1 tháng 7 là Thứ Hai. Hỏi ngày 9 tháng ấy là thứ mấy?
-d) Tháng ấy có bao nhiêu ngày Chủ nhật?
-e) Ngày cuối cùng của tháng là thứ mấy?
-f) Một năm thường có bao nhiêu ngày, năm nhuận có bao nhiêu ngày?
+a) Bây giờ là 11 giờ 55 phút. Sau 90 phút nữa là mấy giờ?
+b) Bây giờ là 6 giờ 40 phút. Cách đây 15 phút là mấy giờ?
+c) 5 giờ 0 phút = … phút
+d) Bây giờ là 7 giờ 55 phút. Sau 20 phút nữa là mấy giờ?
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
-Vẽ một hàng ô ra nháp rồi đánh dấu vị trí.
+Mỗi ý một phép tính, trả lời gọn.
 
-a) Hà cao hơn Phúc, Phúc cao hơn Khánh. Ai cao nhất?
-b) Ai thấp nhất?
-c) Xếp ba bạn theo thứ tự từ thấp đến cao.
-d) Có 9 bạn xếp thành một hàng dọc. Hà đứng thứ 3 từ đầu hàng. Hỏi Hà đứng thứ mấy từ cuối hàng?
-e) Trước Hà có mấy bạn?
-f) Sau Hà có mấy bạn?
+a) Tổ Một có 49 lá cờ, nhóm Hoa Phượng có gấp 4 lần tổ Một. Nhóm Hoa Phượng có bao nhiêu lá cờ?
+b) Cả hai tổ có bao nhiêu lá cờ?
+c) Nhóm Hoa Phượng nhiều hơn tổ Một bao nhiêu lá cờ?
+d) Nếu tổ Một được cho thêm 20 lá cờ thì tổ Một có bao nhiêu lá?
+e) Khi đó nhóm Hoa Phượng còn nhiều hơn tổ Một bao nhiêu lá?
+f) Phải cho tổ Một thêm bao nhiêu lá nữa thì hai tổ bằng nhau?
 
 
 ---
@@ -90,101 +87,99 @@ f) Sau Hà có mấy bạn?
 ## ĐÁP ÁN VÀ BIỂU ĐIỂM
 
 
-### Bài 1, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **151**
-b) **721**
-c) **1 220**
-d) **674**
-e) **737**
+a) **1 676**
+b) **529**
+c) **625**
+d) **79**
+e) **159**
+f) **404**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 559 − 408
+1. Xét ý a: 824 + 852
 2. Đọc vị: đây là dạng **Cộng, trừ số tự nhiên**; dấu hiệu là Yêu cầu “đặt tính rồi tính”.
 3. Kiến thức phải dùng: Kĩ thuật đặt tính, nhớ và mượn.
 4. Cách làm: Đặt tính thẳng hàng, tính từ hàng đơn vị.
 5. Lối tắt: Làm tròn một số hạng để ước lượng trước, dùng kết quả ước lượng để phát hiện sai sót.
-6. Kết quả: **151**.
+6. Kết quả: **1 676**.
 
 *Lỗi hay mắc:* Viết lệch hàng khi hai số có số chữ số khác nhau.
 
-### Bài 2, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 2, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **50 000 đồng**
-b) **10 tờ**
-c) **28 000 đồng**
-d) **75 000 đồng**
-e) **100 000 đồng**
-f) **50 tờ**
-
-**Cách giải mẫu:**
-
-1. Bước 1 — tiền hàng: 25 000 × 2 = 50 000 (đồng).
-2. Bước 2 — tiền trả lại: 100 000 − 50 000 = 50 000 (đồng).
-3. Thử lại: 50 000 + 50 000 = 100 000 ✓
-4. Đáp số: **50 000 đồng**.
-
-*Lỗi hay mắc:* Lấy tiền đưa trừ ngay giá một quyển vở.
-
-### Bài 3, (2 điểm — mỗi ý 0,33 điểm)
-
-a) **Hà: 101 viên, Thảo: 99 viên**
-b) **Dũng: 55 viên, Lan: 43 viên**
-c) **Tuấn: 39 viên, Bình: 23 viên**
-d) **Vy: 33 viên, Dũng: 27 viên**
-e) **Yến: 18 viên, Thảo: 16 viên**
-f) **An: 66 viên, Hùng: 58 viên**
+a) **trứng gà: 60 000 · thịt lợn: 50 000 · đậu phụ: 50 000**
+b) **160 000**
+c) **153 000**
+d) **7 000 đồng**
+e) **47 000 đồng**
 
 **Cách giải mẫu:**
 
-1. Vẽ hai đoạn thẳng: đoạn của Hà dài hơn đoạn của Thảo đúng 2 viên.
-2. Bước 1 — nếu bớt 2 viên của Hà thì hai đoạn bằng nhau, tổng mới là 200 − 2 = 198 (viên).
-3. Bước 2 — chia đôi tổng mới được số bi của Thảo: 198 : 2 = 99 (viên).
-4. Bước 3 — số bi của Hà: 99 + 2 = 101 (viên).
-5. Thử lại: 101 + 99 = 200 ✓ và 101 − 99 = 2 ✓
-6. Đáp số: **Hà 101 viên, Thảo 99 viên**.
+1. Đi chợ thì cần **biết nhanh khoảng bao nhiêu** trước, biết chính xác sau. Vì vậy nhẩm bằng số tròn trước rồi mới cộng số lẻ để bù.
+2. trứng gà 58 500 → 60 000 · thịt lợn 46 000 → 50 000 · đậu phụ 48 500 → 50 000
+3. Cộng số tròn: 60 000 + 50 000 + 50 000 = 160 000 đồng — đây là con số nhẩm trong đầu khi đứng ở chợ.
+4. Tổng đúng: 58 500 + 46 000 + 48 500 = **153 000 đồng**, lệch 7 000 đồng so với số nhẩm.
+5. Tiền trả lại: 200 000 − 153 000 = **47 000 đồng**.
 
-*Lỗi hay mắc:* Chia đôi tổng ngay rồi cộng hiệu vào cả hai số.
+*Lỗi hay mắc:* Lấy tổng đã làm tròn ra trả tiền.
 
-### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 3, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **31**
-b) **có**
-c) **Thứ Ba**
-d) **4**
-e) **Thứ Tư**
-f) **365 ngày và 366 ngày**
+a) **5A: 473 quyển, 4A: 343 quyển**
+b) **tổ Ba: 282 cây, nhóm Hoa Phượng: 148 cây**
+c) **kho B: 192 kg, cửa hàng: 162 kg**
+d) **4A: 441 quyển, 3A: 279 quyển**
+e) **cửa hàng: 269 kg, trang trại: 221 kg**
 
 **Cách giải mẫu:**
 
-1. Tháng 7 thuộc nhóm tháng 31 ngày, nên có 31 ngày.
-2. Ngày 1 là Thứ Hai. Cứ sau 7 ngày thì lặp lại đúng thứ ấy.
-3. Từ ngày 1 đến ngày 9 cách nhau 8 ngày.
-4. 8 : 7 dư 1, nên lùi 1 bước từ Thứ Hai.
-5. Vậy ngày 9 là **Thứ Ba**.
+1. Xét ý a: Hai lớp 5A và 4A có tất cả 816 quyển sách. Lớp 5A có nhiều hơn lớp 4A 130 quyển. Mỗi lớp có bao nhiêu quyển?
+2. Đọc vị: đây là dạng **Tổng – hiệu có lời văn**; dấu hiệu là “Có tất cả …” và “… nhiều hơn … là …”.
+3. Kiến thức phải dùng: Công thức tổng – hiệu, sơ đồ đoạn thẳng.
+4. Cách làm: Đọc vị tổng và hiệu → sơ đồ → công thức.
+5. Lối tắt: Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần.
+6. Kết quả: **5A: 473 quyển, 4A: 343 quyển**.
 
-*Lỗi hay mắc:* Đếm tay từng ngày nên vừa lâu vừa sai.
+*Lỗi hay mắc:* Nhầm hiệu thành tổng khi đề diễn đạt vòng vo.
+
+### Bài 4, (2 điểm — mỗi ý 0,5 điểm)
+
+a) **13 giờ 25 phút**
+b) **6 giờ 25 phút**
+c) **300**
+d) **8 giờ 15 phút**
+
+**Cách giải mẫu:**
+
+1. Xét ý a: Bây giờ là 11 giờ 55 phút. Sau 90 phút nữa là mấy giờ?
+2. Đọc vị: đây là dạng **Tính thời gian trong ngày**; dấu hiệu là Có chữ “giờ”, “phút”, “sau … phút nữa”.
+3. Kiến thức phải dùng: Quan hệ giờ – phút.
+4. Cách làm: Quy về phút, tính, đổi lại.
+5. Lối tắt: Cộng tròn giờ trước, cộng phút lẻ sau.
+6. Kết quả: **13 giờ 25 phút**.
+
+*Lỗi hay mắc:* Cộng phần phút thành hơn 60 mà quên đổi thành giờ.
 
 ### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **Hà**
-b) **Khánh**
-c) **Khánh, Phúc, Hà**
-d) **7**
-e) **2 bạn**
-f) **6 bạn**
+a) **196**
+b) **245**
+c) **147**
+d) **69**
+e) **127**
+f) **147**
 
 **Cách giải mẫu:**
 
-1. Vẽ 9 ô liền nhau tượng trưng cho 9 bạn.
-2. Hà đứng thứ 3 từ đầu, nên trước Hà có 2 bạn.
-3. Sau Hà còn 9 − 3 = 6 bạn.
-4. Tính từ cuối hàng, Hà đứng thứ 6 + 1 = 7.
-5. Kiểm tra: 2 + 1 + 6 = 9 ✓
-6. Đáp số ý d: **thứ 7 từ cuối**.
+1. Bước 1 — số cờ của nhóm Hoa Phượng: 49 × 4 = 196 (lá).
+2. Bước 2 — cả hai tổ: 49 + 196 = 245 (lá).
+3. Bước 3 — nhóm Hoa Phượng nhiều hơn: 196 − 49 = 147 (lá).
+4. Bước 4 — muốn hai tổ bằng nhau thì cho tổ Một thêm đúng phần hơn ấy, tức 147 lá.
+5. Đáp số ý a: **196 lá cờ**.
 
-*Lỗi hay mắc:* Lấy tổng số bạn trừ thứ tự từ đầu rồi ghi luôn, quên cộng 1.
+*Lỗi hay mắc:* Nhầm hai tình huống: cho thêm và chuyển qua lại.
 
 ---
 
@@ -195,10 +190,10 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài | Đo cái gì | Sai bài này nghĩa là | Học lại ở đâu |
 |:--:|---|---|---|
 | Bài 1 | Cộng, trừ số tự nhiên | Viết lệch hàng khi hai số có số chữ số khác nhau. | Nhóm chuyên đề **—** · mức — |
-| Bài 2 | Bài toán tiền tệ hai bước | Lấy tiền đưa trừ ngay giá một quyển vở. | Nhóm chuyên đề **—** · mức — |
-| Bài 3 | Bài toán tổng – hiệu | Chia đôi tổng ngay rồi cộng hiệu vào cả hai số. | Nhóm chuyên đề **—** · mức — |
-| Bài 4 | Lịch, tháng, năm nhuận | Đếm tay từng ngày nên vừa lâu vừa sai. | Nhóm chuyên đề **—** · mức — |
-| Bài 5 | Suy luận thứ tự, vị trí trong hàng | Lấy tổng số bạn trừ thứ tự từ đầu rồi ghi luôn, quên cộng 1. | Nhóm chuyên đề **—** · mức — |
+| Bài 2 | Tính nhanh tổng | Lấy tổng đã làm tròn ra trả tiền. | Nhóm chuyên đề **—** · mức — |
+| Bài 3 | Tổng – hiệu có lời văn | Nhầm hiệu thành tổng khi đề diễn đạt vòng vo. | Nhóm chuyên đề **—** · mức — |
+| Bài 4 | Tính thời gian trong ngày | Cộng phần phút thành hơn 60 mà quên đổi thành giờ. | Nhóm chuyên đề **—** · mức — |
+| Bài 5 | Toán điển hình: gấp, kém, nhiều hơn, ít hơn | Nhầm hai tình huống: cho thêm và chuyển qua lại. | Nhóm chuyên đề **—** · mức — |
 
 ---
 

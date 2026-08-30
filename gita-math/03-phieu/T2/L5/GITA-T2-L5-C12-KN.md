@@ -51,60 +51,62 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — CỦNG CỐ NỀN — 30 CÂU TỐC ĐỘ · Mức M1 — Nhận biết · 20 phút · 25 điểm
 
-### Bài 1. (5 điểm) Viết số khi biết tổng các giá trị hàng
-
-Viết số tự nhiên ứng với mỗi tổng dưới đây.
-
-a) Viết số gồm tổng: 600 000 + 90 000 + 7 000 + 100 + 1
-b) Viết số gồm tổng: 2 000 000 + 500 000 + 60 000 + 300 + 20 + 2
-c) Viết số gồm tổng: 4 000 000 + 200 000 + 70 000 + 1 000 + 600 + 90 + 7
-d) Viết số gồm tổng: 1 000 000 + 600 000 + 900 + 30 + 5
-e) Viết số gồm tổng: 3 000 000 + 600 000 + 50 000 + 2 000 + 600 + 10 + 5
-f) Viết số gồm tổng: 8 000 000 + 700 000 + 40 000 + 3 000 + 300 + 40 + 7
-
-### Bài 2. (5 điểm) Đặt tính rồi tính (nhân, chia)
+### Bài 1. (5 điểm) Đặt tính rồi tính (nhân, chia)
 
 Đặt tính rồi tính.
 
-a) 85 904 × 16
-b) 59 517 000 : 600
-c) 24 969 × 765
-d) 1 043 478 : 18
-e) 66 663 × 911
-f) 8 160 000 : 600
-g) 30 684 400 : 410
-h) 27 450 × 374
+a) 29 207 × 353
+b) 7 642 110 : 151
+c) 15 919 050 : 525
+d) 29 583 × 70
+e) 13 710 × 187
+f) 48 680 × 255
+g) 42 531 198 : 482
+h) 48 197 × 400
+
+### Bài 2. (5 điểm) Suy luận bằng phương pháp lập bảng và loại trừ
+
+Ba bạn Bình, Sơn, Quân mỗi bạn thích đúng một môn khác nhau trong ba môn Toán, Mĩ thuật, Tiếng Anh. Biết **Bình thích Toán** và **Sơn không thích Tiếng Anh**.
+
+a) Kẻ bảng ba hàng (tên bạn) và ba cột (môn học). Dữ kiện “Bình thích Toán” cho phép đánh dấu ✔ vào ô nào?
+b) Sau dấu ✔ đó, những ô nào chắc chắn phải đánh ✘?
+c) Dữ kiện “Sơn không thích Tiếng Anh” cho phép đánh ✘ vào ô nào?
+d) Đến đây, hàng Sơn còn lại đúng một ô trống. Vậy Sơn thích môn nào?
+e) Suy ra Quân thích môn nào?
+f) Phương pháp vừa dùng tên là gì?
 
 ### Bài 3. (5 điểm) Quy tắc nhân trong phép đếm
 
 Đếm số cách chọn.
 
-a) Có 2 chiếc áo và 4 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
-b) Có 4 chiếc áo và 3 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
-c) Có 8 chiếc áo và 3 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
-d) Có 2 chiếc áo và 8 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
+a) Có 8 chiếc áo và 7 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
+b) Có 6 chiếc áo và 6 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
+c) Có 8 chiếc áo và 2 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
+d) Có 5 chiếc áo và 5 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
+e) Có 7 chiếc áo và 8 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
+f) Có 4 chiếc áo và 2 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
 
 ### Bài 4. (5 điểm) Quy tắc cộng, quy tắc nhân và phép đếm có phần chung
 
 Đọc kĩ chữ “và” hay chữ “hoặc”.
 
-a) Có 5 quyển sách Toán và 4 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một quyển Toán và một quyển Tiếng Việt**?
-b) Lớp có 6 bạn giỏi Toán, 11 bạn giỏi Tiếng Việt, trong đó 5 bạn giỏi cả hai môn. Hỏi có bao nhiêu bạn giỏi ít nhất một môn?
-c) Trên bàn có 6 quyển sách Toán và 10 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một** quyển sách bất kì?
-d) Có 10 quyển sách Toán và 5 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một quyển Toán và một quyển Tiếng Việt**?
-e) Lớp có 12 bạn giỏi Toán, 4 bạn giỏi Tiếng Việt, trong đó 2 bạn giỏi cả hai môn. Hỏi có bao nhiêu bạn giỏi ít nhất một môn?
-f) Trên bàn có 3 quyển sách Toán và 8 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một** quyển sách bất kì?
+a) Lớp có 10 bạn giỏi Toán, 8 bạn giỏi Tiếng Việt, trong đó 4 bạn giỏi cả hai môn. Hỏi có bao nhiêu bạn giỏi ít nhất một môn?
+b) Có 9 quyển sách Toán và 6 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một quyển Toán và một quyển Tiếng Việt**?
+c) Trên bàn có 6 quyển sách Toán và 7 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một** quyển sách bất kì?
+d) Có 11 quyển sách Toán và 11 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một quyển Toán và một quyển Tiếng Việt**?
+e) Trên bàn có 5 quyển sách Toán và 4 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một** quyển sách bất kì?
+f) Lớp có 8 bạn giỏi Toán, 3 bạn giỏi Tiếng Việt, trong đó 2 bạn giỏi cả hai môn. Hỏi có bao nhiêu bạn giỏi ít nhất một môn?
 
-### Bài 5. (5 điểm) Suy luận bằng phương pháp lập bảng và loại trừ
+### Bài 5. (5 điểm) Viết số khi biết tổng các giá trị hàng
 
-Ba bạn Hà, Tuấn, Lan mỗi bạn thích đúng một môn khác nhau trong ba môn Toán, Mĩ thuật, Tiếng Việt. Biết **Hà thích Toán** và **Tuấn không thích Tiếng Việt**.
+Viết số tự nhiên ứng với mỗi tổng dưới đây.
 
-a) Kẻ bảng ba hàng (tên bạn) và ba cột (môn học). Dữ kiện “Hà thích Toán” cho phép đánh dấu ✔ vào ô nào?
-b) Sau dấu ✔ đó, những ô nào chắc chắn phải đánh ✘?
-c) Dữ kiện “Tuấn không thích Tiếng Việt” cho phép đánh ✘ vào ô nào?
-d) Đến đây, hàng Tuấn còn lại đúng một ô trống. Vậy Tuấn thích môn nào?
-e) Suy ra Lan thích môn nào?
-f) Phương pháp vừa dùng tên là gì?
+a) Viết số gồm tổng: 2 000 000 + 600 000 + 30 000 + 8 000 + 900 + 20 + 6
+b) Viết số gồm tổng: 4 000 000 + 100 000 + 40 000 + 1 000 + 400 + 20 + 8
+c) Viết số gồm tổng: 400 000 + 60 000 + 900 + 70 + 5
+d) Viết số gồm tổng: 4 000 000 + 90 000 + 1 000 + 700 + 60 + 6
+e) Viết số gồm tổng: 9 000 000 + 100 000 + 20 000 + 5 000 + 600 + 60 + 1
+f) Viết số gồm tổng: 6 000 000 + 900 000 + 60 000 + 3 000 + 600 + 50 + 1
 
 ---
 
@@ -336,34 +338,34 @@ f) Mẹo nhanh em sẽ tặng lớp?
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài A.1
-**Đáp số:** a) 697 101 · b) 2 560 322 · c) 4 271 697 · d) 1 600 935 · e) 3 652 615 · f) 8 743 347
-**Hướng giải:** Mỗi số hạng cho biết một hàng. Xếp các chữ số vào đúng hàng của nó, hàng nào khuyết thì viết chữ số 0.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Hàng khuyết trong tổng vẫn phải có chữ số **0** trong số viết ra.
-**Lỗi thường gặp:** Bỏ qua hàng khuyết nên số viết ra bị ngắn đi một chữ số. Phòng: Kẻ sẵn các ô hàng rồi mới điền chữ số vào ô tương ứng.
-
-### Bài A.2
-**Đáp số:** a) 1 374 464 · b) 99 195 · c) 19 101 285 · d) 57 971 · e) 60 729 993 · f) 13 600 · g) 74 840 · h) 10 266 300
+**Đáp số:** a) 10 310 071 · b) 50 610 · c) 30 322 · d) 2 070 810 · e) 2 563 770 · f) 12 413 400 · g) 88 239 · h) 19 278 800
 **Hướng giải:** BẪY — Chữ số 0 ở giữa thương. Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
 
+### Bài A.2
+**Đáp số:** a) ô (Bình; Toán) · b) toàn bộ hàng Bình và toàn bộ cột Toán · c) ô (Sơn; Tiếng Anh) · d) Mĩ thuật · e) Tiếng Anh · f) phương pháp lập bảng và loại trừ
+**Hướng giải:** Kẻ bảng: hàng là tên người, cột là môn học. Mỗi dữ kiện cho phép đánh dấu ✘ vào một ô (không thể) hoặc ✔ vào một ô (chắc chắn). Khi một hàng chỉ còn đúng một ô trống thì ô đó là ✔; khi một cột đã có ✔ thì các ô còn lại của cột đó đều là ✘.
+**Nhãn tư duy:** TD2, TD6. Điểm chốt: Mỗi lần đánh một dấu, phải **lan toả** ngay sang cả hàng và cả cột.
+**Lỗi thường gặp:** Suy luận trong đầu, không kẻ bảng, nên bỏ sót khả năng. Phòng: Luôn kẻ bảng, kể cả khi bài có vẻ dễ.
+
 ### Bài A.3
-**Đáp số:** a) 8 cách · b) 12 cách · c) 24 cách · d) 16 cách
+**Đáp số:** a) 56 cách · b) 36 cách · c) 16 cách · d) 25 cách · e) 56 cách · f) 8 cách
 **Hướng giải:** BẪY — Cộng hay nhân. Nếu công việc gồm hai bước liên tiếp, bước một có a cách, bước hai có b cách, thì cả công việc có a × b cách. Đây là **quy tắc nhân**.
 **Nhãn tư duy:** TD2, TD4. Điểm chốt: Hai việc phải làm **cùng lúc, nối tiếp** thì nhân; chọn một trong hai khả năng rời nhau thì cộng.
 **Lỗi thường gặp:** Cộng số áo với số quần. Phòng: Tự hỏi: chọn xong áo đã đủ một bộ chưa? Chưa đủ thì phải nhân.
 
 ### Bài A.4
-**Đáp số:** a) 20 cách · b) 12 bạn · c) 16 cách · d) 50 cách · e) 14 bạn · f) 11 cách
+**Đáp số:** a) 14 bạn · b) 54 cách · c) 13 cách · d) 121 cách · e) 9 cách · f) 9 bạn
 **Hướng giải:** Chọn **một trong hai nhóm rời nhau** thì cộng. Chọn **mỗi nhóm một phần tử** thì nhân. Khi hai nhóm có phần tử chung, số phần tử thuộc ít nhất một nhóm bằng tổng hai nhóm trừ đi phần chung (vì phần chung đã bị đếm hai lần).
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Có phần chung thì phải **trừ đi một lần** phần chung.
 **Lỗi thường gặp:** Cộng thẳng hai nhóm khi chúng có phần tử chung. Phòng: Vẽ hai vòng tròn giao nhau, ghi số vào từng miền.
 
 ### Bài A.5
-**Đáp số:** a) ô (Hà; Toán) · b) toàn bộ hàng Hà và toàn bộ cột Toán · c) ô (Tuấn; Tiếng Việt) · d) Mĩ thuật · e) Tiếng Việt · f) phương pháp lập bảng và loại trừ
-**Hướng giải:** Kẻ bảng: hàng là tên người, cột là môn học. Mỗi dữ kiện cho phép đánh dấu ✘ vào một ô (không thể) hoặc ✔ vào một ô (chắc chắn). Khi một hàng chỉ còn đúng một ô trống thì ô đó là ✔; khi một cột đã có ✔ thì các ô còn lại của cột đó đều là ✘.
-**Nhãn tư duy:** TD2, TD6. Điểm chốt: Mỗi lần đánh một dấu, phải **lan toả** ngay sang cả hàng và cả cột.
-**Lỗi thường gặp:** Suy luận trong đầu, không kẻ bảng, nên bỏ sót khả năng. Phòng: Luôn kẻ bảng, kể cả khi bài có vẻ dễ.
+**Đáp số:** a) 2 638 926 · b) 4 141 428 · c) 460 975 · d) 4 091 766 · e) 9 125 661 · f) 6 963 651
+**Hướng giải:** Mỗi số hạng cho biết một hàng. Xếp các chữ số vào đúng hàng của nó, hàng nào khuyết thì viết chữ số 0.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Hàng khuyết trong tổng vẫn phải có chữ số **0** trong số viết ra.
+**Lỗi thường gặp:** Bỏ qua hàng khuyết nên số viết ra bị ngắn đi một chữ số. Phòng: Kẻ sẵn các ô hàng rồi mới điền chữ số vào ô tương ứng.
 
 ### Bài B.1
 **Đáp số:** a) câu lời giải nêu rõ đang tìm đại lượng nào · b) phép tính, viết đủ dấu và đủ đơn vị · c) kết quả kèm đơn vị · d) câu đáp số · e) một phần tư số điểm của bài

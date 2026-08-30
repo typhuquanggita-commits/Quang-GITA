@@ -51,55 +51,58 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — VÍ DỤ DẪN VÀO CHỦ ĐỀ · Mức M1 — Nhận biết · 5 phút · 5 điểm
 
-### Bài 1. (1 điểm) Tìm trung bình cộng của nhiều số
-
-Tính trung bình cộng.
-
-a) Tìm trung bình cộng của 2 số: 24, 46.
-b) Tìm trung bình cộng của 4 số: 44, 32, 21, 35.
-c) Tìm trung bình cộng của 5 số: 34, 33, 53, 53, 52.
-d) Tìm trung bình cộng của 3 số: 31, 21, 44.
-e) Tìm trung bình cộng của 5 số: 57, 35, 53, 44, 46.
-
-### Bài 2. (1 điểm) Nhiều hơn – ít hơn, gấp – kém
-
-Đọc kĩ rồi trả lời từng câu.
-
-a) Bình có 29 quyển vở, An có nhiều hơn Bình 16 quyển. An có bao nhiêu quyển vở?
-b) Bình có 102 quyển vở, số vở của An kém 6 lần số vở của Bình. An có bao nhiêu quyển vở?
-c) Bình có 16 quyển vở, An có số vở gấp 4 lần Bình. An có bao nhiêu quyển vở?
-d) Bình có 26 quyển vở, An có ít hơn Bình 4 quyển. An có bao nhiêu quyển vở?
-e) Bình có 31 quyển vở, An có ít hơn Bình 22 quyển. An có bao nhiêu quyển vở?
-f) Bình có 42 quyển vở, An có số vở gấp 3 lần Bình. An có bao nhiêu quyển vở?
-
-### Bài 3. (1 điểm) Quy tắc nhân trong phép đếm
+### Bài 1. (1 điểm) Quy tắc nhân trong phép đếm
 
 Đếm số cách chọn.
 
-a) Có 2 chiếc áo và 2 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
-b) Có 2 chiếc áo và 3 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
-c) Có 7 chiếc áo và 6 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
-d) Có 6 chiếc áo và 6 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
+a) Có 4 chiếc áo và 2 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
+b) Có 6 chiếc áo và 5 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
+c) Có 3 chiếc áo và 4 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
+d) Có 4 chiếc áo và 8 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
+e) Có 3 chiếc áo và 2 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
+
+### Bài 2. (1 điểm) Tìm thành phần chưa biết của phép tính
+
+Tìm x.
+
+a) x : 4 = 19
+b) x × 3 = 87
+c) x − 9 = 85
+d) x : 4 = 25
+e) x × 3 = 54
+f) x : 4 = 49
+g) x : 9 = 14
+
+### Bài 3. (1 điểm) Đổi số đo khối lượng có nhiều đơn vị
+
+Điền vào chỗ chấm.
+
+a) 6 110 kg = … tấn … tạ … kg
+b) 7 tạ 43 kg = … kg
+c) 4 581 kg = … tấn … tạ … kg
+d) 3 tấn 5 tạ 96 kg = … kg
+e) 3 314 kg = … tấn … tạ … kg
+f) 2 774 kg = … tấn … tạ … kg
+g) 6 tấn 47 kg = … kg
 
 ### Bài 4. (1 điểm) Quy tắc cộng, quy tắc nhân và phép đếm có phần chung
 
 Đọc kĩ chữ “và” hay chữ “hoặc”.
 
-a) Trên bàn có 8 quyển sách Toán và 10 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một** quyển sách bất kì?
-b) Lớp có 7 bạn giỏi Toán, 9 bạn giỏi Tiếng Việt, trong đó 4 bạn giỏi cả hai môn. Hỏi có bao nhiêu bạn giỏi ít nhất một môn?
-c) Có 12 quyển sách Toán và 11 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một quyển Toán và một quyển Tiếng Việt**?
-d) Có 11 quyển sách Toán và 8 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một quyển Toán và một quyển Tiếng Việt**?
-e) Trên bàn có 5 quyển sách Toán và 4 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một** quyển sách bất kì?
+a) Có 5 quyển sách Toán và 6 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một quyển Toán và một quyển Tiếng Việt**?
+b) Trên bàn có 11 quyển sách Toán và 9 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một** quyển sách bất kì?
+c) Lớp có 11 bạn giỏi Toán, 11 bạn giỏi Tiếng Việt, trong đó 9 bạn giỏi cả hai môn. Hỏi có bao nhiêu bạn giỏi ít nhất một môn?
+d) Trên bàn có 8 quyển sách Toán và 9 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một** quyển sách bất kì?
 
 ### Bài 5. (1 điểm) Suy luận bằng phương pháp lập bảng và loại trừ
 
-Ba bạn Phúc, Sơn, Bình mỗi bạn thích đúng một môn khác nhau trong ba môn Toán, Tiếng Anh, Tiếng Việt. Biết **Phúc thích Toán** và **Sơn không thích Tiếng Việt**.
+Ba bạn Hùng, Yến, Lan mỗi bạn thích đúng một môn khác nhau trong ba môn Mĩ thuật, Tiếng Việt, Tiếng Anh. Biết **Hùng thích Mĩ thuật** và **Yến không thích Tiếng Anh**.
 
-a) Kẻ bảng ba hàng (tên bạn) và ba cột (môn học). Dữ kiện “Phúc thích Toán” cho phép đánh dấu ✔ vào ô nào?
+a) Kẻ bảng ba hàng (tên bạn) và ba cột (môn học). Dữ kiện “Hùng thích Mĩ thuật” cho phép đánh dấu ✔ vào ô nào?
 b) Sau dấu ✔ đó, những ô nào chắc chắn phải đánh ✘?
-c) Dữ kiện “Sơn không thích Tiếng Việt” cho phép đánh ✘ vào ô nào?
-d) Đến đây, hàng Sơn còn lại đúng một ô trống. Vậy Sơn thích môn nào?
-e) Suy ra Bình thích môn nào?
+c) Dữ kiện “Yến không thích Tiếng Anh” cho phép đánh ✘ vào ô nào?
+d) Đến đây, hàng Yến còn lại đúng một ô trống. Vậy Yến thích môn nào?
+e) Suy ra Lan thích môn nào?
 f) Phương pháp vừa dùng tên là gì?
 
 ---
@@ -277,58 +280,59 @@ f) Làm lại ví dụ mẫu ở trên và ghi đáp số.
 
 ## PHẦN E — LUYỆN NHẬN BIẾT – THÔNG HIỂU · Mức M2 — Thông hiểu · 30 phút · 40 điểm
 
-### Bài 1. (8 điểm) Điền số còn thiếu trong dãy
+### Bài 1. (8 điểm) Trồng cây và chia đoạn — năm trường hợp
 
-Điền số thích hợp vào chỗ chấm.
+Vẽ một hình nhỏ ba khoảng để kiểm tra trước khi áp công thức.
 
-a) 20, 30, 40, 50, …, 70
-b) 7, 9, 11, 13, …, 17
-c) 7, 10, 13, …, 19, 22
-d) 26, …, 32, 35, 38, 41
-e) 11, …, 23, 29, 35, 41
-f) 10, 20, 30, 40, …, 60
+a) Cưa một khúc gỗ dài 36 m thành các đoạn dài 6 m. Phải cưa bao nhiêu nhát?
+b) Đoạn đường dài 105 m, trồng cây cách nhau 5 m, trồng cả ở hai đầu. Cần bao nhiêu cây?
+c) Quanh một hồ nước có chu vi 80 m, trồng cây cách nhau 2 m. Cần bao nhiêu cây?
+d) Đoạn đường dài 104 m, cây cách nhau 4 m, không trồng ở cả hai đầu. Cần bao nhiêu cây?
+e) Đoạn đường dài 108 m, cây cách nhau 6 m, chỉ trồng ở một đầu. Cần bao nhiêu cây?
 
-### Bài 2. (8 điểm) Đếm số cách chọn bằng quy tắc nhân
+### Bài 2. (8 điểm) Đếm số hạng của dãy cách đều
 
-Vẽ sơ đồ cây rồi đếm.
+Đếm số số hạng của mỗi dãy.
 
-a) Có 5 loại bánh và 2 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
-b) Có 4 loại bánh và 4 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
-c) Có 3 loại bánh và 5 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
-d) Có 4 loại bánh và 6 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
-e) Có 6 loại bánh và 3 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
+a) Dãy 16, 21, 26, …, 71 có bao nhiêu số hạng?
+b) Dãy 17, 21, 25, …, 109 có bao nhiêu số hạng?
+c) Dãy 19, 22, 25, …, 58 có bao nhiêu số hạng?
+d) Dãy 10, 20, 30, …, 100 có bao nhiêu số hạng?
+e) Dãy 11, 16, 21, …, 96 có bao nhiêu số hạng?
+f) Dãy 14, 17, 20, …, 101 có bao nhiêu số hạng?
+g) Dãy 1, 6, 11, …, 151 có bao nhiêu số hạng?
 
 ### Bài 3. (8 điểm) Chia kẹo — chia hết và chia có dư
 
 Ghi rõ thương và số dư trong mọi câu trả lời.
 
-a) Có 45 cái kẹo chia đều cho 12 bạn. Mỗi bạn được mấy cái và còn thừa mấy cái?
+a) Có 95 cái kẹo chia đều cho 12 bạn. Mỗi bạn được mấy cái và còn thừa mấy cái?
 b) Muốn chia hết, phải bớt đi ít nhất bao nhiêu cái kẹo?
 c) Hoặc phải thêm vào ít nhất bao nhiêu cái kẹo?
-d) Nếu thêm 3 cái thì mỗi bạn được mấy cái?
+d) Nếu thêm 1 cái thì mỗi bạn được mấy cái?
 e) Nếu chỉ chia cho 11 bạn thì mỗi bạn được mấy cái, thừa mấy cái?
 f) Số kẹo phải là số như thế nào để chia hết cho 12 bạn?
 
-### Bài 4. (8 điểm) Trồng cây và chia đoạn — năm trường hợp
+### Bài 4. (8 điểm) Đếm số cách chọn bằng quy tắc nhân
 
-Vẽ một hình nhỏ ba khoảng để kiểm tra trước khi áp công thức.
+Vẽ sơ đồ cây rồi đếm.
 
-a) Đoạn đường dài 234 m, cây cách nhau 6 m, không trồng ở cả hai đầu. Cần bao nhiêu cây?
-b) Quanh một hồ nước có chu vi 58 m, trồng cây cách nhau 2 m. Cần bao nhiêu cây?
-c) Cưa một khúc gỗ dài 117 m thành các đoạn dài 3 m. Phải cưa bao nhiêu nhát?
-d) Đoạn đường dài 60 m, cây cách nhau 2 m, chỉ trồng ở một đầu. Cần bao nhiêu cây?
-e) Đoạn đường dài 105 m, trồng cây cách nhau 3 m, trồng cả ở hai đầu. Cần bao nhiêu cây?
-f) Cưa một khúc gỗ dài 104 m thành các đoạn dài 4 m. Phải cưa bao nhiêu nhát?
-g) Đoạn đường dài 78 m, trồng cây cách nhau 3 m, trồng cả ở hai đầu. Cần bao nhiêu cây?
+a) Có 3 loại bánh và 2 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
+b) Có 2 loại bánh và 3 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
+c) Có 5 loại bánh và 3 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
+d) Có 3 loại bánh và 3 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
 
 ### Bài 5. (8 điểm) Phép chia có dư
 
 Thực hiện phép chia, ghi rõ thương và số dư.
 
-a) 674 : 6 = ? (dư ?)
-b) 237 : 4 = ? (dư ?)
-c) 447 : 8 = ? (dư ?)
-d) 1 138 : 3 = ? (dư ?)
+a) 1 033 : 9 = ? (dư ?)
+b) 1 902 : 9 = ? (dư ?)
+c) 1 071 : 8 = ? (dư ?)
+d) 1 182 : 4 = ? (dư ?)
+e) 119 : 8 = ? (dư ?)
+f) 788 : 3 = ? (dư ?)
+g) 995 : 8 = ? (dư ?)
 
 ---
 
@@ -337,31 +341,31 @@ d) 1 138 : 3 = ? (dư ?)
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài A.1
-**Đáp số:** a) 35 · b) 33 · c) 45 · d) 32 · e) 47
-**Hướng giải:** Trung bình cộng của nhiều số bằng tổng các số đó chia cho số lượng các số. Cộng cho hết rồi mới chia, không chia từng số một.
-**Nhãn tư duy:** TD1. Điểm chốt: Chia cho **số lượng số hạng**, không phải chia cho một số bất kì.
-**Lỗi thường gặp:** Đếm sai số lượng số hạng nên chia nhầm. Phòng: Đánh số thứ tự từng số trước khi cộng.
-
-### Bài A.2
-**Đáp số:** a) 45 · b) 17 · c) 64 · d) 22 · e) 9 · f) 126
-**Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
-**Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
-**Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
-
-### Bài A.3
-**Đáp số:** a) 4 cách · b) 6 cách · c) 42 cách · d) 36 cách
+**Đáp số:** a) 8 cách · b) 30 cách · c) 12 cách · d) 32 cách · e) 6 cách
 **Hướng giải:** Nếu công việc gồm hai bước liên tiếp, bước một có a cách, bước hai có b cách, thì cả công việc có a × b cách. Đây là **quy tắc nhân**.
 **Nhãn tư duy:** TD2, TD4. Điểm chốt: Hai việc phải làm **cùng lúc, nối tiếp** thì nhân; chọn một trong hai khả năng rời nhau thì cộng.
 **Lỗi thường gặp:** Cộng số áo với số quần. Phòng: Tự hỏi: chọn xong áo đã đủ một bộ chưa? Chưa đủ thì phải nhân.
 
+### Bài A.2
+**Đáp số:** a) x = 76 · b) x = 29 · c) x = 94 · d) x = 100 · e) x = 18 · f) x = 196 · g) x = 126
+**Hướng giải:** Nhớ quy tắc: số hạng chưa biết = tổng − số hạng đã biết; số bị trừ = hiệu + số trừ; thừa số chưa biết = tích : thừa số đã biết; số bị chia = thương × số chia.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: x đứng ở **vị trí nào** trong phép tính quyết định quy tắc dùng.
+**Lỗi thường gặp:** Áp dụng nhầm quy tắc của số trừ cho số bị trừ. Phòng: Gọi tên x trước (x là số hạng? số bị trừ? thừa số?) rồi mới viết quy tắc.
+
+### Bài A.3
+**Đáp số:** a) 6 tấn 1 tạ 10 kg · b) 743 · c) 4 tấn 5 tạ 81 kg · d) 3 596 · e) 3 tấn 3 tạ 14 kg · f) 2 tấn 7 tạ 74 kg · g) 6 047
+**Hướng giải:** 1 tấn = 10 tạ = 1 000 kg; 1 tạ = 100 kg; 1 yến = 10 kg. Đổi tất cả về ki-lô-gam rồi cộng lại; hoặc ngược lại, chia dần từ đơn vị lớn xuống đơn vị bé và lấy phần dư.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Đổi hết về **một đơn vị chung** trước khi cộng.
+**Lỗi thường gặp:** Cộng thẳng các số đứng trước những đơn vị khác nhau. Phòng: Viết mỗi thành phần thành số ki-lô-gam ngay bên dưới rồi mới cộng.
+
 ### Bài A.4
-**Đáp số:** a) 18 cách · b) 12 bạn · c) 132 cách · d) 88 cách · e) 9 cách
+**Đáp số:** a) 30 cách · b) 20 cách · c) 13 bạn · d) 17 cách
 **Hướng giải:** Chọn **một trong hai nhóm rời nhau** thì cộng. Chọn **mỗi nhóm một phần tử** thì nhân. Khi hai nhóm có phần tử chung, số phần tử thuộc ít nhất một nhóm bằng tổng hai nhóm trừ đi phần chung (vì phần chung đã bị đếm hai lần).
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Có phần chung thì phải **trừ đi một lần** phần chung.
 **Lỗi thường gặp:** Cộng thẳng hai nhóm khi chúng có phần tử chung. Phòng: Vẽ hai vòng tròn giao nhau, ghi số vào từng miền.
 
 ### Bài A.5
-**Đáp số:** a) ô (Phúc; Toán) · b) toàn bộ hàng Phúc và toàn bộ cột Toán · c) ô (Sơn; Tiếng Việt) · d) Tiếng Anh · e) Tiếng Việt · f) phương pháp lập bảng và loại trừ
+**Đáp số:** a) ô (Hùng; Mĩ thuật) · b) toàn bộ hàng Hùng và toàn bộ cột Mĩ thuật · c) ô (Yến; Tiếng Anh) · d) Tiếng Việt · e) Tiếng Anh · f) phương pháp lập bảng và loại trừ
 **Hướng giải:** Kẻ bảng: hàng là tên người, cột là môn học. Mỗi dữ kiện cho phép đánh dấu ✘ vào một ô (không thể) hoặc ✔ vào một ô (chắc chắn). Khi một hàng chỉ còn đúng một ô trống thì ô đó là ✔; khi một cột đã có ✔ thì các ô còn lại của cột đó đều là ✘.
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Mỗi lần đánh một dấu, phải **lan toả** ngay sang cả hàng và cả cột.
 **Lỗi thường gặp:** Suy luận trong đầu, không kẻ bảng, nên bỏ sót khả năng. Phòng: Luôn kẻ bảng, kể cả khi bài có vẻ dễ.
@@ -462,35 +466,35 @@ d) 1 138 : 3 = ? (dư ?)
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.1
-**Đáp số:** a) 60 · b) 15 · c) 16 · d) 29 · e) 17 · f) 50
-**Hướng giải:** BẪY — Hai số hai bên chỗ trống cách nhau hai khoảng. Tìm khoảng cách từ hai số liền nhau đã biết, rồi cộng khoảng cách ấy vào số đứng trước chỗ trống. Kiểm tra lại bằng số đứng sau.
-**Nhãn tư duy:** TD4, TD1. Điểm chốt: Tìm khoảng cách ở chỗ có **hai số liền nhau** đã biết.
-**Lỗi thường gặp:** Lấy hiệu hai số cách nhau một chỗ trống làm khoảng cách. Phòng: Đánh số thứ tự vị trí rồi mới tính khoảng cách.
-**Gợi ý 3 tầng:** (1) Tìm hai số liền nhau đã biết. — (2) Hiệu của chúng là khoảng cách. — (3) Cộng khoảng cách vào số đứng ngay trước chỗ trống.
+**Đáp số:** a) 5 · b) 22 · c) 40 · d) 25 · e) 18
+**Hướng giải:** BẪY — Năm trường hợp khác nhau. Tính **số khoảng** trước: độ dài chia khoảng cách. Rồi chọn công thức theo trường hợp — trồng cả hai đầu thì cộng 1, một đầu thì bằng, không đầu nào thì trừ 1, khép kín thì bằng, cưa thành đoạn thì trừ 1.
+**Nhãn tư duy:** TD3, TD6. Điểm chốt: Năm trường hợp cho **năm đáp số khác nhau** với cùng một số khoảng.
+**Lỗi thường gặp:** Máy móc cộng 1 cho mọi trường hợp. Phòng: Vẽ hình ba khoảng, đếm tay rồi mới áp dụng cho số lớn.
+**Gợi ý 3 tầng:** (1) Số khoảng bằng bao nhiêu? — (2) Đề nói trồng cả hai đầu, một đầu, hay khép kín? — (3) Cưa thành đoạn thì số nhát cưa ít hơn số đoạn 1.
 
 ### Bài E.2
-**Đáp số:** a) 10 cách · b) 16 cách · c) 15 cách · d) 24 cách · e) 18 cách
-**Hướng giải:** BẪY — Cộng hay nhân. Với mỗi loại bánh có đủ số cách chọn nước, nên tổng số cách bằng số loại bánh nhân số loại nước. Vẽ sơ đồ cây để nhìn thấy điều đó.
-**Nhãn tư duy:** TD2, TD4. Điểm chốt: Hai việc **nối tiếp nhau** thì nhân, không cộng.
-**Lỗi thường gặp:** Cộng số loại bánh với số loại nước. Phòng: Vẽ sơ đồ cây với hai nhánh đầu để thấy rõ.
-**Gợi ý 3 tầng:** (1) Chọn xong bánh đã đủ một bộ chưa? — (2) Với mỗi loại bánh có mấy cách chọn nước? — (3) Nhân hai số lại.
+**Đáp số:** a) 12 · b) 24 · c) 14 · d) 10 · e) 18 · f) 30 · g) 31
+**Hướng giải:** BẪY — Quên cộng 1. Số số hạng = (số cuối − số đầu) : khoảng cách + 1. Phần chia cho biết số khoảng; số số hạng nhiều hơn số khoảng đúng 1.
+**Nhãn tư duy:** TD4, TD3. Điểm chốt: Số khoảng ít hơn số số hạng đúng **1**.
+**Lỗi thường gặp:** Quên cộng 1. Phòng: Thử với dãy ngắn ba số để kiểm tra công thức.
+**Gợi ý 3 tầng:** (1) Khoảng cách của dãy bằng bao nhiêu? — (2) Từ số đầu tới số cuối có mấy khoảng? — (3) Số số hạng nhiều hơn số khoảng 1.
 
 ### Bài E.3
-**Đáp số:** a) mỗi bạn 3 cái, thừa 9 cái · b) 9 cái · c) 3 cái · d) 4 cái · e) mỗi bạn 4 cái, thừa 1 cái · f) phải là số chia hết cho 12
+**Đáp số:** a) mỗi bạn 7 cái, thừa 11 cái · b) 11 cái · c) 1 cái · d) 8 cái · e) mỗi bạn 8 cái, thừa 7 cái · f) phải là số chia hết cho 12
 **Hướng giải:** BẪY — Thêm vào khác với bớt đi. Trong phép chia có dư, **số dư luôn bé hơn số chia**. Muốn chia hết thì hoặc bớt đi đúng phần dư, hoặc thêm vào phần còn thiếu để đủ một suất — phần còn thiếu bằng số chia trừ số dư.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Thêm vào thì thêm **số chia trừ số dư**, không phải thêm số dư.
 **Lỗi thường gặp:** Nhầm “thêm bao nhiêu” với “bớt bao nhiêu”, cả hai đều lấy số dư. Phòng: Vẽ một hàng ô: phần dư còn thiếu bao nhiêu ô nữa thì đầy một suất?
 **Gợi ý 3 tầng:** (1) Chia thử xem mỗi bạn được mấy cái, thừa mấy cái. — (2) Bớt đi thì bớt đúng phần thừa. — (3) Thêm vào thì thêm phần còn thiếu để đủ một suất nữa.
 
 ### Bài E.4
-**Đáp số:** a) 38 · b) 29 · c) 38 · d) 30 · e) 36 · f) 25 · g) 27
-**Hướng giải:** BẪY — Năm trường hợp khác nhau. Tính **số khoảng** trước: độ dài chia khoảng cách. Rồi chọn công thức theo trường hợp — trồng cả hai đầu thì cộng 1, một đầu thì bằng, không đầu nào thì trừ 1, khép kín thì bằng, cưa thành đoạn thì trừ 1.
-**Nhãn tư duy:** TD3, TD6. Điểm chốt: Năm trường hợp cho **năm đáp số khác nhau** với cùng một số khoảng.
-**Lỗi thường gặp:** Máy móc cộng 1 cho mọi trường hợp. Phòng: Vẽ hình ba khoảng, đếm tay rồi mới áp dụng cho số lớn.
-**Gợi ý 3 tầng:** (1) Số khoảng bằng bao nhiêu? — (2) Đề nói trồng cả hai đầu, một đầu, hay khép kín? — (3) Cưa thành đoạn thì số nhát cưa ít hơn số đoạn 1.
+**Đáp số:** a) 6 cách · b) 6 cách · c) 15 cách · d) 9 cách
+**Hướng giải:** BẪY — Cộng hay nhân. Với mỗi loại bánh có đủ số cách chọn nước, nên tổng số cách bằng số loại bánh nhân số loại nước. Vẽ sơ đồ cây để nhìn thấy điều đó.
+**Nhãn tư duy:** TD2, TD4. Điểm chốt: Hai việc **nối tiếp nhau** thì nhân, không cộng.
+**Lỗi thường gặp:** Cộng số loại bánh với số loại nước. Phòng: Vẽ sơ đồ cây với hai nhánh đầu để thấy rõ.
+**Gợi ý 3 tầng:** (1) Chọn xong bánh đã đủ một bộ chưa? — (2) Với mỗi loại bánh có mấy cách chọn nước? — (3) Nhân hai số lại.
 
 ### Bài E.5
-**Đáp số:** a) 112 dư 2 · b) 59 dư 1 · c) 55 dư 7 · d) 379 dư 1
+**Đáp số:** a) 114 dư 7 · b) 211 dư 3 · c) 133 dư 7 · d) 295 dư 2 · e) 14 dư 7 · f) 262 dư 2 · g) 124 dư 3
 **Hướng giải:** Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
 **Nhãn tư duy:** TD1. Điểm chốt: Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
 **Lỗi thường gặp:** Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. Phòng: Thử lại bằng công thức số bị chia = số chia × thương + số dư.

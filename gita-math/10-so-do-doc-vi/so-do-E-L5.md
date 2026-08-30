@@ -92,43 +92,43 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 
 Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: đây là dạng bài gì, và dấu hiệu nào cho biết điều đó.
 
-**Đề 1.** Điền kết quả, viết dạng giờ và phút. 8 giờ 31 phút + 153 phút = … (viết dạng giờ và phút)
+**Đề 1.** Điền vào chỗ chấm. 5 954 kg = … tấn … tạ … kg
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 2.** Trình bày lời giải có câu trả lời. Một cửa hàng có 12 thùng dầu, mỗi thùng 20 lít. Cửa hàng đã bán 11 thùng. Hỏi cửa hàng còn lại bao nhiêu lít dầu?
+**Đề 2.** Điền số thích hợp. 67 lít = … ml
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 3.** Đổi về cùng đơn vị rồi tính. 17 kg 743 g − 371 g = … g
+**Đề 3.** Điền số thích hợp. 59 dm² = … cm²
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 4.** Chú ý đơn vị mà đề hỏi. Một xe chở 15 bao muối, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ muối?
+**Đề 4.** Đổi hết về ki-lô-gam trước khi tính. Một kho chứa 3 tấn 9 tạ 49 kg thóc. Đổi ra ki-lô-gam.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 5.** Đổi hết về ki-lô-gam trước khi tính. Một kho chứa 6 tấn 8 tạ 71 kg thóc. Đổi ra ki-lô-gam.
+**Đề 5.** Chú ý đơn vị mà đề hỏi. Một xe chở 22 bao đường, mỗi bao 50 kg. Hỏi xe chở bao nhiêu tạ đường?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 6.** Ghi kết quả theo giờ và phút. Một chuyến tàu khởi hành lúc 9 giờ 0 phút và đi hết 1 giờ 7 phút. Tàu đến nơi lúc mấy giờ?
+**Đề 6.** Ghi kết quả theo giờ và phút. Một chuyến tàu khởi hành lúc 10 giờ 25 phút và đi hết 6 giờ 20 phút. Tàu đến nơi lúc mấy giờ?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 7.** Điền vào chỗ chấm. 5 476 kg = … tấn … tạ … kg
+**Đề 7.** Trình bày lời giải có câu trả lời. Một cửa hàng có 16 thùng nước mắm, mỗi thùng 12 lít. Cửa hàng đã bán 4 thùng. Hỏi cửa hàng còn lại bao nhiêu lít nước mắm?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 8.** Chú ý: vận tốc trung bình không phải trung bình cộng hai vận tốc. Một người đi 1 giờ đầu với vận tốc 20 km/giờ, 2 giờ sau với vận tốc 40 km/giờ. Tính vận tốc trung bình trên cả quãng đường.
+**Đề 8.** Bài mô phỏng câu hỏi thực tế của đề đánh giá năng lực. Một món hàng niêm yết 300 000 đồng, được chiết khấu 5%. Giá sau chiết khấu là bao nhiêu?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 9.** Câu nào cũng ghi rõ đang đổi từ đơn vị nào sang đơn vị nào. Khoảng cách thật từ cầu Trắng đến trạm y tế là 25 km. Hỏi trên bản đồ tỉ lệ 1 : 500 000 thì khoảng cách ấy dài bao nhiêu xăng-ti-mét?
+**Đề 9.** Câu nào cũng ghi rõ đang đổi từ đơn vị nào sang đơn vị nào. Trên bản đồ tỉ lệ 1 : 200 000, khoảng cách từ trường đến nhà văn hoá xã đo được 15 cm. Hỏi khoảng cách thật là bao nhiêu ki-lô-mét?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 10.** Bài mô phỏng câu hỏi thực tế của đề đánh giá năng lực. Một món hàng niêm yết 300 000 đồng, được chiết khấu 5%. Giá sau chiết khấu là bao nhiêu?
+**Đề 10.** Đổi về cùng đơn vị rồi tính. 28 m 72 cm + 672 cm = … cm
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
@@ -138,16 +138,16 @@ Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: 
 
 | # | Dạng bài | Dấu hiệu |
 |:--:|---|---|
-| 1 | Đổi và tính toán với đơn vị thời gian | Số đo có chữ “giờ”, “phút”, “giây” |
-| 2 | Bài toán đại lượng nhiều bước | Cho số nhóm, giá trị mỗi nhóm và số nhóm đã dùng |
-| 3 | Bốn phép tính với số đo | Các số hạng có đơn vị khác nhau trong cùng một phép tính |
-| 4 | Bài toán đại lượng có lời văn | Đơn vị trong câu hỏi khác đơn vị trong dữ kiện |
-| 5 | Đại lượng khối lượng, chia phần và làm tròn lên | Số đo nhiều đơn vị; câu hỏi “ít nhất bao nhiêu” |
+| 1 | Số đo có nhiều đơn vị | Số đo viết dưới dạng “… tấn … tạ … kg” |
+| 2 | Đổi đơn vị thể tích, dung tích | Đơn vị có mũ ba, hoặc lít, mi-li-lít |
+| 3 | Đổi đơn vị diện tích | Đơn vị có mũ hai: m², cm², km², ha |
+| 4 | Đại lượng khối lượng, chia phần và làm tròn lên | Số đo nhiều đơn vị; câu hỏi “ít nhất bao nhiêu” |
+| 5 | Bài toán đại lượng có lời văn | Đơn vị trong câu hỏi khác đơn vị trong dữ kiện |
 | 6 | Tính thời điểm trong ngày | Cho thời điểm bắt đầu và khoảng thời gian |
-| 7 | Số đo có nhiều đơn vị | Số đo viết dưới dạng “… tấn … tạ … kg” |
-| 8 | Vận tốc trung bình | Hai chặng có vận tốc khác nhau |
+| 7 | Bài toán đại lượng nhiều bước | Cho số nhóm, giá trị mỗi nhóm và số nhóm đã dùng |
+| 8 | Phần trăm nhiều bước trong mua bán | Có cả “chiết khấu” và “thuế” trong một bài |
 | 9 | Bài toán tỉ lệ bản đồ | Đề cho **tỉ lệ dạng 1 : n** cùng một khoảng cách đo trên giấy hoặc ngoài thực tế |
-| 10 | Phần trăm nhiều bước trong mua bán | Có cả “chiết khấu” và “thuế” trong một bài |
+| 10 | Bốn phép tính với số đo | Các số hạng có đơn vị khác nhau trong cùng một phép tính |
 
 ---
 

@@ -30,56 +30,58 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Đặt tính rồi tính. Ước lượng trước để tự kiểm tra.
 
-a) 374 681 − 194 269
-b) 832 380 + 69 211
-c) 67 809 080 : 82
-d) 565 765 × 47
-e) 118 236 660 : 179
-f) 123 662 − 94 233
+a) 937 641 × 699
+b) 155 240 − 124 946
+c) 868 552 + 5 641
+d) 492 251 848 : 703
+e) 492 703 698 : 591
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
 Điền số thích hợp vào chỗ chấm.
 
-a) 87 km² = … ha
-b) 12 hm² = … m²
-c) 26 dam² = … m²
-d) 24 hm² = … dam²
-e) 9 ha = … m²
+a) 83 hm² = … dam²
+b) 390 000 m² = … hm²
+c) 14 km² = … ha
+d) 62 dam² = … m²
+e) 230 000 m² = … ha
+f) 11 dam² = … m²
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
 Giải từng bài toán nhỏ.
 
-a) 3 ngày đầu tuần một cửa hàng bán được lần lượt 214, 221, 231 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
-b) 4 ngày đầu tuần một cửa hàng bán được lần lượt 263, 266, 259, 272 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
-c) Trung bình mỗi ngày cửa hàng bán được 58 kg gạo. 2 ngày đầu bán được 67, 52 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
-d) Trung bình mỗi ngày cửa hàng bán được 30 kg gạo. 4 ngày đầu bán được 24, 33, 30, 24 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
-e) Trung bình mỗi ngày bán được 284 kg gạo. Hỏi 4 ngày bán được tất cả bao nhiêu ki-lô-gam?
-f) 6 ngày đầu tuần một cửa hàng bán được lần lượt 37, 19, 26, 36, 26, 42 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
+a) Trung bình mỗi ngày cửa hàng bán được 48 kg gạo. 5 ngày đầu bán được 40, 36, 56, 53, 47 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
+b) 3 ngày đầu tuần một cửa hàng bán được lần lượt 108, 103, 116 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
+c) 5 ngày đầu tuần một cửa hàng bán được lần lượt 97, 92, 96, 90, 80 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
+d) Trung bình mỗi ngày bán được 201 kg gạo. Hỏi 4 ngày bán được tất cả bao nhiêu ki-lô-gam?
+e) Trung bình mỗi ngày bán được 288 kg gạo. Hỏi 3 ngày bán được tất cả bao nhiêu ki-lô-gam?
+f) 5 ngày đầu tuần một cửa hàng bán được lần lượt 288, 291, 280, 289, 277 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
 Chú ý đơn vị mà đề hỏi.
 
-a) Một xe chở 16 bao xi măng, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ xi măng?
-b) Một xe chở 38 bao muối, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ muối?
-c) Một xe chở 36 bao muối, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ muối?
-d) Một xe chở 38 bao gạo, mỗi bao 40 kg. Hỏi xe chở bao nhiêu tạ gạo?
-e) Một xe chở 32 bao đường, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ đường?
+a) Một xe chở 11 bao phân bón, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ phân bón?
+b) Một xe chở 12 bao đường, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ đường?
+c) Một xe chở 16 bao phân bón, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ phân bón?
+d) Một xe chở 25 bao muối, mỗi bao 40 kg. Hỏi xe chở bao nhiêu tạ muối?
+e) Một xe chở 35 bao đường, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ đường?
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
-Câu nào cũng phải quy về **một đơn vị thời gian** hoặc **một người** trước khi tính.
+Làm trong 25 phút. Trình bày như bài thi thật: có câu lời giải, có đáp số.
 
-a) 11 người làm xong một công việc trong 12 ngày. Hỏi 2 người làm xong công việc ấy trong bao nhiêu ngày, biết sức làm của mỗi người như nhau?
-b) Vòi thứ nhất chảy một mình thì đầy bể sau 6 giờ. Vòi thứ hai chảy một mình thì đầy bể sau 12 giờ. Hỏi mở cả hai vòi cùng lúc thì sau bao lâu đầy bể?
-c) 9 người làm xong một công việc trong 5 ngày. Hỏi 3 người làm xong công việc ấy trong bao nhiêu ngày, biết sức làm của mỗi người như nhau?
-d) Vòi thứ nhất chảy một mình thì đầy bể sau 6 giờ. Vòi thứ hai chảy một mình thì đầy bể sau 12 giờ. Hỏi mở cả hai vòi cùng lúc thì sau bao lâu đầy bể?
+a) Hai xe khởi hành cùng lúc từ hai địa điểm cách nhau 156 km và đi ngược chiều. Vận tốc lần lượt là 60 km/giờ và 18 km/giờ. Sau bao lâu hai xe gặp nhau?
+b) Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
+c) Chỗ gặp nhau cách điểm khởi hành của xe thứ hai bao nhiêu ki-lô-mét?
+d) Một món hàng giá 300 000 đồng, tăng giá 25%. Giá mới là bao nhiêu?
+e) Sau đó giảm giá 25% so với giá mới. Giá cuối cùng là bao nhiêu?
+f) Giá cuối cùng so với giá ban đầu là tăng hay giảm, và chênh bao nhiêu đồng?
 
 
 ---
@@ -87,99 +89,100 @@ d) Vòi thứ nhất chảy một mình thì đầy bể sau 6 giờ. Vòi thứ
 ## ĐÁP ÁN VÀ BIỂU ĐIỂM
 
 
-### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 1, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **180 412**
-b) **901 591**
-c) **826 940**
-d) **26 590 955**
-e) **660 540**
-f) **29 429**
+a) **655 411 059**
+b) **30 294**
+c) **874 193**
+d) **700 216**
+e) **833 678**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 374 681 − 194 269
-2. Đọc vị: đây là dạng **Bốn phép tính với số tự nhiên**; dấu hiệu là Yêu cầu “đặt tính rồi tính”.
-3. Kiến thức phải dùng: Kĩ thuật đặt tính cộng, trừ, nhân, chia.
-4. Cách làm: Đặt tính thẳng cột, tính từ hàng đơn vị.
-5. Lối tắt: Ước lượng bằng cách làm tròn để phát hiện sai sót về độ lớn.
-6. Kết quả: **180 412**.
+1. Đặt tính, nhân lần lượt từng chữ số của 699 với 937 641.
+2. Mỗi tích riêng viết lùi sang trái một cột.
+3. Cộng các tích riêng lại: 937 641 × 699 = 655 411 059.
+4. Ước lượng kiểm tra: khoảng 938 000 × 700 ≈ 656 600 000 — cùng độ lớn ✓
+5. Đáp số: **655 411 059**.
 
 *Lỗi hay mắc:* Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số.
 
-### Bài 2, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 2, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **8 700**
-b) **120 000**
-c) **2 600**
-d) **2 400**
-e) **90 000**
+a) **8 300**
+b) **39**
+c) **1 400**
+d) **6 200**
+e) **23**
+f) **1 100**
 
 **Cách giải mẫu:**
 
-1. 1 km² = 100 ha.
+1. 1 hm² = 100 dam².
 2. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**.
-3. 87 × 100 = 8 700 (ha).
-4. Đáp số: **8 700 ha**.
+3. 83 × 100 = 8 300 (dam²).
+4. Đáp số: **8 300 dam²**.
 
 *Lỗi hay mắc:* Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc.
 
 ### Bài 3, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **222 kg**
-b) **265 kg**
-c) **55 kg**
-d) **39 kg**
-e) **1 136 kg**
-f) **31 kg**
+a) **56 kg**
+b) **109 kg**
+c) **91 kg**
+d) **804 kg**
+e) **864 kg**
+f) **285 kg**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 3 ngày đầu tuần một cửa hàng bán được lần lượt 214, 221, 231 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
+1. Xét ý a: Trung bình mỗi ngày cửa hàng bán được 48 kg gạo. 5 ngày đầu bán được 40, 36, 56, 53, 47 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
 2. Đọc vị: đây là dạng **Ba dạng bài trung bình cộng**; dấu hiệu là Cụm “trung bình mỗi …”.
 3. Kiến thức phải dùng: Quan hệ tổng – số lượng – trung bình cộng.
 4. Cách làm: Đi qua tổng làm trung gian.
 5. Lối tắt: Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng.
-6. Kết quả: **222 kg**.
+6. Kết quả: **56 kg**.
 
 *Lỗi hay mắc:* Đi tìm ngay số còn thiếu mà chưa tính tổng.
 
 ### Bài 4, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **9 tạ 60 kg**
-b) **22 tạ 80 kg**
-c) **10 tạ 80 kg**
-d) **15 tạ 20 kg**
-e) **19 tạ 20 kg**
+a) **2 tạ 75 kg**
+b) **7 tạ 20 kg**
+c) **9 tạ 60 kg**
+d) **10 tạ**
+e) **8 tạ 75 kg**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Một xe chở 16 bao xi măng, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ xi măng?
+1. Xét ý a: Một xe chở 11 bao phân bón, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ phân bón?
 2. Đọc vị: đây là dạng **Bài toán đại lượng có lời văn**; dấu hiệu là Đơn vị trong câu hỏi khác đơn vị trong dữ kiện.
 3. Kiến thức phải dùng: Nhân, chia số tự nhiên; đổi đơn vị khối lượng.
 4. Cách làm: Tính theo đơn vị dữ kiện rồi đổi ở bước cuối.
 5. Lối tắt: 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ.
-6. Kết quả: **9 tạ 60 kg**.
+6. Kết quả: **2 tạ 75 kg**.
 
 *Lỗi hay mắc:* Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ.
 
-### Bài 5, (2 điểm — mỗi ý 0,5 điểm)
+### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **66 ngày**
-b) **4 giờ**
-c) **15 ngày**
-d) **4 giờ**
+a) **2 giờ**
+b) **120 km**
+c) **36 km**
+d) **375 000 đồng**
+e) **281 250 đồng**
+f) **giảm 18 750 đồng**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 11 người làm xong một công việc trong 12 ngày. Hỏi 2 người làm xong công việc ấy trong bao nhiêu ngày, biết sức làm của mỗi người như nhau?
-2. Đọc vị: đây là dạng **Rút về đơn vị**; dấu hiệu là Đề cho **thời gian làm một mình** của từng bên, hoặc số người và số ngày.
-3. Kiến thức phải dùng: Phân số; tỉ lệ nghịch; tổng số ngày công.
-4. Cách làm: Quy về một đơn vị — một giờ hoặc một người — rồi cộng và chia.
-5. Lối tắt: Hai vòi cùng chảy thì thời gian chung = a × b : (a + b).
-6. Kết quả: **66 ngày**.
+1. Bước 1 — mỗi giờ hai xe lại gần nhau: 60 + 18 = 78 (km).
+2. Bước 2 — thời gian gặp nhau: 156 : 78 = 2 (giờ).
+3. Bước 3 — quãng đường xe thứ nhất: 60 × 2 = 120 (km).
+4. Bước 4 — quãng đường xe thứ hai: 18 × 2 = 36 (km).
+5. Thử lại: 120 + 36 = 156 ✓
+6. Đáp số: **gặp nhau sau 2 giờ**.
 
-*Lỗi hay mắc:* Cộng hai khoảng thời gian của hai vòi, hoặc nhân thẳng số người với số ngày theo kiểu tỉ lệ thuận.
+*Lỗi hay mắc:* Ý thứ năm tính phần trăm trên giá ban đầu thay vì trên giá vừa tăng.
 
 ---
 
@@ -193,7 +196,7 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài 2 | Đổi đơn vị diện tích | Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. | Nhóm chuyên đề **—** · mức — |
 | Bài 3 | Ba dạng bài trung bình cộng | Đi tìm ngay số còn thiếu mà chưa tính tổng. | Nhóm chuyên đề **—** · mức — |
 | Bài 4 | Bài toán đại lượng có lời văn | Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. | Nhóm chuyên đề **—** · mức — |
-| Bài 5 | Rút về đơn vị | Cộng hai khoảng thời gian của hai vòi, hoặc nhân thẳng số người với số ngày theo kiểu tỉ lệ thuận. | Nhóm chuyên đề **—** · mức — |
+| Bài 5 | Đề tổng hợp nhiều mạch | Ý thứ năm tính phần trăm trên giá ban đầu thay vì trên giá vừa tăng. | Nhóm chuyên đề **—** · mức — |
 
 ---
 

@@ -52,61 +52,56 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — VÍ DỤ DẪN VÀO CHỦ ĐỀ · Mức M1 — Nhận biết · 5 phút · 5 điểm
 
-### Bài 1. (1 điểm) Bài toán rút về đơn vị
-
-Giải bằng phương pháp rút về đơn vị.
-
-a) 2 bao xi măng nặng 96 kg. Hỏi 19 bao như thế nặng bao nhiêu kg?
-b) 7 bao muối nặng 161 kg. Hỏi 2 bao như thế nặng bao nhiêu kg?
-c) 7 bao gạo nặng 210 kg. Hỏi 18 bao như thế nặng bao nhiêu kg?
-d) 11 bao gạo nặng 66 kg. Hỏi 3 bao như thế nặng bao nhiêu kg?
-e) 10 bao gạo nặng 380 kg. Hỏi 19 bao như thế nặng bao nhiêu kg?
-f) 3 bao phân bón nặng 147 kg. Hỏi 12 bao như thế nặng bao nhiêu kg?
-
-### Bài 2. (1 điểm) Tìm hai số khi biết tổng và hiệu
+### Bài 1. (1 điểm) Tìm hai số khi biết tổng và hiệu
 
 Tìm hai số trong mỗi trường hợp.
 
-a) Tổng hai số là 1 570, hiệu hai số là 240. Tìm hai số đó.
-b) Tổng hai số là 1 496, hiệu hai số là 468. Tìm hai số đó.
-c) Tổng hai số là 324, hiệu hai số là 74. Tìm hai số đó.
-d) Tổng hai số là 198, hiệu hai số là 36. Tìm hai số đó.
-e) Tổng hai số là 1 396, hiệu hai số là 86. Tìm hai số đó.
+a) Tổng hai số là 1 860, hiệu hai số là 8. Tìm hai số đó.
+b) Tổng hai số là 1 346, hiệu hai số là 328. Tìm hai số đó.
+c) Tổng hai số là 150, hiệu hai số là 32. Tìm hai số đó.
+d) Tổng hai số là 372, hiệu hai số là 40. Tìm hai số đó.
+e) Tổng hai số là 296, hiệu hai số là 62. Tìm hai số đó.
+f) Tổng hai số là 1 868, hiệu hai số là 434. Tìm hai số đó.
+g) Tổng hai số là 992, hiệu hai số là 166. Tìm hai số đó.
 
-### Bài 3. (1 điểm) Nhiều hơn – ít hơn, gấp – kém
-
-Đọc kĩ rồi trả lời từng câu.
-
-a) Chi có 59 quyển vở, Hà có nhiều hơn Chi 8 quyển. Hà có bao nhiêu quyển vở?
-b) Chi có 118 quyển vở, số vở của Hà kém 2 lần số vở của Chi. Hà có bao nhiêu quyển vở?
-c) Chi có 66 quyển vở, Hà có ít hơn Chi 24 quyển. Hà có bao nhiêu quyển vở?
-d) Chi có 43 quyển vở, Hà có số vở gấp 3 lần Chi. Hà có bao nhiêu quyển vở?
-e) Chi có 49 quyển vở, Hà có nhiều hơn Chi 13 quyển. Hà có bao nhiêu quyển vở?
-f) Chi có 260 quyển vở, số vở của Hà kém 5 lần số vở của Chi. Hà có bao nhiêu quyển vở?
-
-### Bài 4. (1 điểm) Quãng đường – vận tốc – thời gian
+### Bài 2. (1 điểm) Quãng đường – vận tốc – thời gian
 
 Ghi rõ đơn vị của từng đại lượng.
 
-a) Một người đi quãng đường 72 km với vận tốc 36 km/giờ. Tính thời gian đi.
-b) Một người đi 200 km hết 4 giờ. Tính vận tốc.
-c) Một người đi xe đạp với vận tốc 36 km/giờ trong 6 giờ. Tính quãng đường đi được.
-d) Một người đi 15 km hết 3 giờ. Tính vận tốc.
-e) Một người đi quãng đường 144 km với vận tốc 36 km/giờ. Tính thời gian đi.
-f) Một người đi xe đạp với vận tốc 60 km/giờ trong 5 giờ. Tính quãng đường đi được.
-g) Một người đi quãng đường 250 km với vận tốc 50 km/giờ. Tính thời gian đi.
+a) Một người đi 180 km hết 6 giờ. Tính vận tốc.
+b) Một người đi xe đạp với vận tốc 40 km/giờ trong 3 giờ. Tính quãng đường đi được.
+c) Một người đi quãng đường 60 km với vận tốc 20 km/giờ. Tính thời gian đi.
+d) Một người đi quãng đường 24 km với vận tốc 12 km/giờ. Tính thời gian đi.
+
+### Bài 3. (1 điểm) Bài toán rút về đơn vị
+
+Giải bằng phương pháp rút về đơn vị.
+
+a) 6 bao đường nặng 348 kg. Hỏi 4 bao như thế nặng bao nhiêu kg?
+b) 11 bao đường nặng 352 kg. Hỏi 10 bao như thế nặng bao nhiêu kg?
+c) 10 bao gạo nặng 370 kg. Hỏi 17 bao như thế nặng bao nhiêu kg?
+d) 3 bao phân bón nặng 105 kg. Hỏi 14 bao như thế nặng bao nhiêu kg?
+e) 7 bao đường nặng 287 kg. Hỏi 9 bao như thế nặng bao nhiêu kg?
+
+### Bài 4. (1 điểm) Nhiều hơn – ít hơn, gấp – kém
+
+Đọc kĩ rồi trả lời từng câu.
+
+a) Tuấn có 15 quyển vở, Phúc có nhiều hơn Tuấn 7 quyển. Phúc có bao nhiêu quyển vở?
+b) Tuấn có 20 quyển vở, Phúc có số vở gấp 6 lần Tuấn. Phúc có bao nhiêu quyển vở?
+c) Tuấn có 82 quyển vở, số vở của Phúc kém 2 lần số vở của Tuấn. Phúc có bao nhiêu quyển vở?
+d) Tuấn có 27 quyển vở, Phúc có ít hơn Tuấn 8 quyển. Phúc có bao nhiêu quyển vở?
+e) Tuấn có 198 quyển vở, số vở của Phúc kém 6 lần số vở của Tuấn. Phúc có bao nhiêu quyển vở?
 
 ### Bài 5. (1 điểm) Tìm trung bình cộng của nhiều số
 
 Tính trung bình cộng.
 
-a) Tìm trung bình cộng của 2 số: 93, 69.
-b) Tìm trung bình cộng của 3 số: 30, 12, 12.
-c) Tìm trung bình cộng của 4 số: 173, 160, 166, 169.
-d) Tìm trung bình cộng của 5 số: 165, 186, 174, 175, 175.
-e) Tìm trung bình cộng của 3 số: 40, 52, 40.
-f) Tìm trung bình cộng của 5 số: 178, 162, 184, 167, 174.
-g) Tìm trung bình cộng của 2 số: 156, 154.
+a) Tìm trung bình cộng của 3 số: 156, 137, 154.
+b) Tìm trung bình cộng của 5 số: 65, 47, 59, 46, 58.
+c) Tìm trung bình cộng của 2 số: 142, 162.
+d) Tìm trung bình cộng của 4 số: 118, 99, 100, 115.
+e) Tìm trung bình cộng của 5 số: 158, 175, 163, 177, 167.
 
 ---
 
@@ -284,52 +279,53 @@ f) Làm lại ví dụ mẫu ở trên và ghi đáp số.
 
 ## PHẦN E — LUYỆN NHẬN BIẾT – THÔNG HIỂU · Mức M2 — Thông hiểu · 30 phút · 40 điểm
 
-### Bài 1. (8 điểm) Bốn phép tính với số thập phân
-
-Đặt tính rồi tính.
-
-a) 23,36 + 94,7
-b) 57,79 × 5
-c) 242,25 : 5
-d) 41,6 − 8,17
-e) 29,31 × 5
-
-### Bài 2. (8 điểm) Đại lượng tỉ lệ thuận
-
-Giải bằng cách rút về đơn vị hoặc dùng tỉ số.
-
-a) Mua 10 quyển vở hết 790 nghìn đồng. Với 2 291 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
-b) Mua 7 quyển vở hết 119 nghìn đồng. Mua 26 quyển vở như thế hết bao nhiêu nghìn đồng?
-c) Mua 4 quyển vở hết 268 nghìn đồng. Với 603 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
-d) Mua 8 quyển vở hết 600 nghìn đồng. Với 1 875 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
-
-### Bài 3. (8 điểm) Đại lượng tỉ lệ nghịch
+### Bài 1. (8 điểm) Đại lượng tỉ lệ nghịch
 
 Giải bằng cách quy về tổng số ngày công.
 
-a) 2 người làm xong một công việc trong 36 ngày. Hỏi 6 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
-b) 3 người làm xong một công việc trong 24 ngày. Hỏi 2 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
-c) 3 người làm xong một công việc trong 8 ngày. Hỏi 4 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
-d) 6 người làm xong một công việc trong 4 ngày. Hỏi 4 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
-e) 3 người làm xong một công việc trong 24 ngày. Hỏi 12 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
+a) 3 người làm xong một công việc trong 20 ngày. Hỏi 12 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
+b) 6 người làm xong một công việc trong 4 ngày. Hỏi 2 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
+c) 2 người làm xong một công việc trong 30 ngày. Hỏi 4 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
+d) 2 người làm xong một công việc trong 24 ngày. Hỏi 3 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
+e) 6 người làm xong một công việc trong 8 ngày. Hỏi 12 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
 
-### Bài 4. (8 điểm) Bài toán tổng – hiệu có lời văn
+### Bài 2. (8 điểm) Bốn phép tính với phân số
 
-Tóm tắt bằng sơ đồ đoạn thẳng rồi giải.
+Tính rồi rút gọn kết quả.
 
-a) Hai lớp 4B và 3B có tất cả 496 quyển sách. Lớp 4B có nhiều hơn lớp 3B 42 quyển. Mỗi lớp có bao nhiêu quyển?
-b) Đội Một và tổ Hai trồng được 144 cây. Đội Một trồng nhiều hơn tổ Hai 38 cây. Mỗi tổ trồng bao nhiêu cây?
-c) Kho B và kho A chứa tất cả 836 kg gạo. Kho B chứa nhiều hơn kho A 260 kg. Mỗi nơi chứa bao nhiêu kg?
-d) Nhóm Hoa Phượng và tổ Ba trồng được 320 cây. Nhóm Hoa Phượng trồng nhiều hơn tổ Ba 52 cây. Mỗi tổ trồng bao nhiêu cây?
+a) 1 × 2 phần 5
+b) 1 phần 6 : 1 phần 6
+c) 11 phần 6 − 10 phần 13
+d) 1 phần 6 + 5 phần 8
+e) 2 × 11 phần 10
+f) 1 phần 2 : 12 phần 13
 
-### Bài 5. (8 điểm) Tỉ lệ bản đồ
+### Bài 3. (8 điểm) Đại lượng tỉ lệ thuận
 
-Chú ý đổi đơn vị ở bước cuối.
+Giải bằng cách rút về đơn vị hoặc dùng tỉ số.
 
-a) Một đoạn đường dài 115 m được vẽ trên bản đồ tỉ lệ 1 : 500. Trên bản đồ đoạn ấy dài bao nhiêu xăng-ti-mét?
-b) Trên bản đồ tỉ lệ 1 : 500, một đoạn đường đo được 12 cm. Hỏi đoạn đường đó dài bao nhiêu mét trên thực tế?
-c) Trên bản đồ tỉ lệ 1 : 2 000, một đoạn đường đo được 30 cm. Hỏi đoạn đường đó dài bao nhiêu mét trên thực tế?
-d) Một đoạn đường dài 30 m được vẽ trên bản đồ tỉ lệ 1 : 500. Trên bản đồ đoạn ấy dài bao nhiêu xăng-ti-mét?
+a) Mua 12 quyển vở hết 588 nghìn đồng. Với 833 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+b) Mua 4 quyển vở hết 200 nghìn đồng. Với 500 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+c) Mua 15 quyển vở hết 795 nghìn đồng. Với 265 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+d) Mua 15 quyển vở hết 285 nghìn đồng. Với 76 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+
+### Bài 4. (8 điểm) Trung bình cộng trong tình huống thực tế
+
+Giải từng bài toán nhỏ.
+
+a) Trung bình mỗi ngày bán được 127 kg gạo. Hỏi 6 ngày bán được tất cả bao nhiêu ki-lô-gam?
+b) 5 ngày đầu tuần một cửa hàng bán được lần lượt 97, 99, 97, 92, 95 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
+c) Trung bình mỗi ngày cửa hàng bán được 106 kg gạo. 3 ngày đầu bán được 111, 106, 95 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
+d) 5 ngày đầu tuần một cửa hàng bán được lần lượt 145, 140, 149, 133, 138 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
+
+### Bài 5. (8 điểm) Phần trăm trong mua bán: lãi, lỗ, giảm giá
+
+Ghi rõ đại lượng nào ứng với 100%.
+
+a) Mua một món hàng 240 000 đồng rồi bán 264 000 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
+b) Một món hàng giá 240 000 đồng, tăng giá 20%. Giá mới là bao nhiêu?
+c) Một chiếc cặp giá 80 000 đồng được giảm 5%. Hỏi giá sau khi giảm là bao nhiêu?
+d) Một món hàng giá 80 000 đồng, tăng giá 15%. Giá mới là bao nhiêu?
 
 ---
 
@@ -338,31 +334,31 @@ d) Một đoạn đường dài 30 m được vẽ trên bản đồ tỉ lệ 1
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài A.1
-**Đáp số:** a) 912 · b) 46 · c) 540 · d) 18 · e) 722 · f) 588
-**Hướng giải:** Bước 1 — rút về đơn vị: tìm giá trị của **một** đơn vị bằng phép chia. Bước 2: nhân giá trị một đơn vị với số đơn vị cần tìm.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Bước rút về đơn vị luôn là phép **chia**, và phải làm trước.
-**Lỗi thường gặp:** Nhân ngay hai số đã cho mà bỏ qua bước chia. Phòng: Viết rõ câu “Một bao nặng … kg” trước khi làm bước hai.
-
-### Bài A.2
-**Đáp số:** a) số lớn 905, số bé 665 · b) số lớn 982, số bé 514 · c) số lớn 199, số bé 125 · d) số lớn 117, số bé 81 · e) số lớn 741, số bé 655
+**Đáp số:** a) số lớn 934, số bé 926 · b) số lớn 837, số bé 509 · c) số lớn 91, số bé 59 · d) số lớn 206, số bé 166 · e) số lớn 179, số bé 117 · f) số lớn 1 151, số bé 717 · g) số lớn 579, số bé 413
 **Hướng giải:** Số lớn = (tổng + hiệu) : 2. Số bé = (tổng − hiệu) : 2. Cách hiểu: vẽ hai đoạn thẳng, đoạn dài hơn phần hiệu; bớt phần hiệu đi thì hai đoạn bằng nhau, mỗi đoạn là số bé.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng hiệu ra **số lớn**, trừ hiệu ra **số bé** — nhớ đúng chiều.
 **Lỗi thường gặp:** Lấy (tổng + hiệu) : 2 rồi gọi đó là số bé. Phòng: Vẽ sơ đồ đoạn thẳng trước, đoạn dài hơn luôn là số lớn.
 
-### Bài A.3
-**Đáp số:** a) 67 · b) 59 · c) 42 · d) 129 · e) 62 · f) 52
-**Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
-**Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
-**Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
-
-### Bài A.4
-**Đáp số:** a) 2 giờ · b) 50 km/giờ · c) 216 km · d) 5 km/giờ · e) 4 giờ · f) 300 km · g) 5 giờ
+### Bài A.2
+**Đáp số:** a) 30 km/giờ · b) 120 km · c) 3 giờ · d) 2 giờ
 **Hướng giải:** Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng kia.
 **Lỗi thường gặp:** Vận tốc km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
 
+### Bài A.3
+**Đáp số:** a) 232 · b) 320 · c) 629 · d) 490 · e) 369
+**Hướng giải:** Bước 1 — rút về đơn vị: tìm giá trị của **một** đơn vị bằng phép chia. Bước 2: nhân giá trị một đơn vị với số đơn vị cần tìm.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Bước rút về đơn vị luôn là phép **chia**, và phải làm trước.
+**Lỗi thường gặp:** Nhân ngay hai số đã cho mà bỏ qua bước chia. Phòng: Viết rõ câu “Một bao nặng … kg” trước khi làm bước hai.
+
+### Bài A.4
+**Đáp số:** a) 22 · b) 120 · c) 41 · d) 19 · e) 33
+**Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
+**Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
+**Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+
 ### Bài A.5
-**Đáp số:** a) 81 · b) 18 · c) 167 · d) 175 · e) 44 · f) 173 · g) 155
+**Đáp số:** a) 149 · b) 55 · c) 152 · d) 108 · e) 168
 **Hướng giải:** Trung bình cộng của nhiều số bằng tổng các số đó chia cho số lượng các số. Cộng cho hết rồi mới chia, không chia từng số một.
 **Nhãn tư duy:** TD1. Điểm chốt: Chia cho **số lượng số hạng**, không phải chia cho một số bất kì.
 **Lỗi thường gặp:** Đếm sai số lượng số hạng nên chia nhầm. Phòng: Đánh số thứ tự từng số trước khi cộng.
@@ -463,39 +459,39 @@ d) Một đoạn đường dài 30 m được vẽ trên bản đồ tỉ lệ 1
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.1
-**Đáp số:** a) 118,06 · b) 288,95 · c) 48,45 · d) 33,43 · e) 146,55
-**Hướng giải:** BẪY — Vị trí dấu phẩy ở tích. Cộng, trừ số thập phân: viết các dấu phẩy **thẳng cột** rồi tính như số tự nhiên, đặt dấu phẩy ở kết quả thẳng cột với các dấu phẩy trên. Nhân số thập phân với số tự nhiên: nhân như số tự nhiên rồi đếm số chữ số thập phân của thừa số để đặt dấu phẩy.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng trừ thì **thẳng dấu phẩy**; nhân thì **đếm chữ số thập phân**.
-**Lỗi thường gặp:** Nhân xong đặt dấu phẩy thẳng cột như phép cộng. Phòng: Đếm số chữ số sau dấu phẩy ngay khi viết đề bài.
-**Gợi ý 3 tầng:** (1) Phép tính này là cộng trừ hay nhân chia? — (2) Cộng trừ thì viết thẳng dấu phẩy. — (3) Nhân thì đếm tổng số chữ số thập phân của các thừa số.
-
-### Bài E.2
-**Đáp số:** a) 29 quyển · b) 442 nghìn đồng · c) 9 quyển · d) 25 quyển
-**Hướng giải:** Số vở tăng bao nhiêu lần thì số tiền tăng bấy nhiêu lần. Có hai cách: rút về đơn vị (tìm giá một quyển rồi nhân) hoặc dùng tỉ số (số vở mới gấp mấy lần số vở cũ thì tiền cũng gấp bấy nhiêu lần).
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Hai đại lượng **cùng tăng, cùng giảm** thì tỉ lệ thuận.
-**Lỗi thường gặp:** Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch. Phòng: Tự hỏi: mua nhiều hơn thì trả nhiều hơn hay ít hơn?
-**Gợi ý 3 tầng:** (1) Mua nhiều vở hơn thì tiền nhiều hơn hay ít hơn? — (2) Tìm giá của một quyển vở. — (3) Nhân giá một quyển với số quyển cần mua.
-
-### Bài E.3
-**Đáp số:** a) 12 ngày · b) 36 ngày · c) 6 ngày · d) 6 ngày · e) 6 ngày
+**Đáp số:** a) 5 ngày · b) 12 ngày · c) 15 ngày · d) 16 ngày · e) 4 ngày
 **Hướng giải:** BẪY — Ngược chiều chứ không cùng chiều. Tổng số ngày công là không đổi: số người × số ngày = hằng số. Tính tổng số ngày công trước, rồi chia cho số người mới để ra số ngày mới.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Càng nhiều người thì càng **ít** ngày — đại lượng biến đổi **ngược chiều**.
 **Lỗi thường gặp:** Nhân chia như tỉ lệ thuận nên càng nhiều người lại càng lâu. Phòng: Ước lượng trước: kết quả phải lớn hơn hay bé hơn số ngày ban đầu?
 **Gợi ý 3 tầng:** (1) Nhiều người hơn thì làm nhanh hơn hay chậm hơn? — (2) Tính tổng số ngày công: số người × số ngày. — (3) Chia tổng số ngày công cho số người mới.
 
+### Bài E.2
+**Đáp số:** a) 2 phần 5 · b) 1 · c) 83 phần 78 · d) 19 phần 24 · e) 11 phần 5 · f) 13 phần 24
+**Hướng giải:** BẪY — Nhân chia không cần quy đồng. Cộng, trừ phân số phải **quy đồng mẫu số** trước. Nhân phân số thì nhân tử với tử, mẫu với mẫu. Chia phân số thì nhân với phân số đảo ngược của số chia. Cuối cùng luôn rút gọn.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng trừ **cần** quy đồng, nhân chia **không cần** quy đồng.
+**Lỗi thường gặp:** Quy đồng cả khi nhân, hoặc cộng thẳng tử với tử và mẫu với mẫu. Phòng: Trước khi tính, khoanh dấu phép tính và tự nhắc “có phải quy đồng không”.
+**Gợi ý 3 tầng:** (1) Phép tính là cộng, trừ hay nhân, chia? — (2) Cộng trừ thì quy đồng mẫu số trước. — (3) Chia thì đổi thành nhân với phân số đảo ngược.
+
+### Bài E.3
+**Đáp số:** a) 17 quyển · b) 10 quyển · c) 5 quyển · d) 4 quyển
+**Hướng giải:** Số vở tăng bao nhiêu lần thì số tiền tăng bấy nhiêu lần. Có hai cách: rút về đơn vị (tìm giá một quyển rồi nhân) hoặc dùng tỉ số (số vở mới gấp mấy lần số vở cũ thì tiền cũng gấp bấy nhiêu lần).
+**Nhãn tư duy:** TD2, TD3. Điểm chốt: Hai đại lượng **cùng tăng, cùng giảm** thì tỉ lệ thuận.
+**Lỗi thường gặp:** Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch. Phòng: Tự hỏi: mua nhiều hơn thì trả nhiều hơn hay ít hơn?
+**Gợi ý 3 tầng:** (1) Mua nhiều vở hơn thì tiền nhiều hơn hay ít hơn? — (2) Tìm giá của một quyển vở. — (3) Nhân giá một quyển với số quyển cần mua.
+
 ### Bài E.4
-**Đáp số:** a) 4B: 269 quyển, 3B: 227 quyển · b) đội Một: 91 cây, tổ Hai: 53 cây · c) kho B: 548 kg, kho A: 288 kg · d) nhóm Hoa Phượng: 186 cây, tổ Ba: 134 cây
-**Hướng giải:** Đọc đề, xác định đâu là **tổng**, đâu là **hiệu**. Vẽ sơ đồ hai đoạn thẳng. Số lớn = (tổng + hiệu) : 2; số bé = tổng − số lớn.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Cụm “có tất cả” cho **tổng**; cụm “nhiều hơn” cho **hiệu**.
-**Lỗi thường gặp:** Nhầm hiệu thành tổng khi đề diễn đạt vòng vo. Phòng: Ghi riêng ra hai dòng: Tổng = … ; Hiệu = … trước khi tính.
-**Gợi ý 3 tầng:** (1) Câu nào cho biết tổng của hai đại lượng? — (2) Câu nào cho biết chúng hơn kém nhau bao nhiêu? — (3) Vẽ sơ đồ rồi áp công thức.
+**Đáp số:** a) 762 kg · b) 96 kg · c) 112 kg · d) 141 kg
+**Hướng giải:** Ba dạng ngược nhau: biết các số tìm trung bình cộng (cộng rồi chia); biết trung bình cộng tìm tổng (nhân); biết trung bình cộng và một số số hạng, tìm số hạng còn thiếu (lấy tổng trừ đi các số đã biết).
+**Nhãn tư duy:** TD2, TD3. Điểm chốt: Từ trung bình cộng luôn tìm được **tổng** trước, rồi mới tính tiếp.
+**Lỗi thường gặp:** Đi tìm ngay số còn thiếu mà chưa tính tổng. Phòng: Bước đầu tiên luôn viết: “Tổng = trung bình cộng × số ngày”.
+**Gợi ý 3 tầng:** (1) Đề cho gì và hỏi gì? — (2) Tính tổng trước bằng cách nhân trung bình cộng với số lượng. — (3) Lấy tổng trừ các số đã biết để ra số còn thiếu.
 
 ### Bài E.5
-**Đáp số:** a) 23 cm · b) 60 m · c) 600 m · d) 6 cm
-**Hướng giải:** BẪY — Đổi đơn vị đúng lúc. Tỉ lệ 1 : n nghĩa là 1 đơn vị trên bản đồ ứng với n đơn vị thật, **cùng một loại đơn vị**. Từ bản đồ ra thật thì nhân với n; từ thật về bản đồ thì chia cho n. Đổi đơn vị chỉ làm ở bước cuối.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Nhân hay chia với n trước, **đổi đơn vị sau** — làm ngược là rối.
-**Lỗi thường gặp:** Đổi mét sang xăng-ti-mét ngay từ đầu rồi lại nhân tỉ lệ một lần nữa. Phòng: Viết rõ một dòng: “1 cm bản đồ = … cm thật” trước khi tính.
-**Gợi ý 3 tầng:** (1) Tỉ lệ 1 : n nghĩa là gì? — (2) Đi từ bản đồ ra thật thì nhân hay chia? — (3) Đổi đơn vị ở bước cuối cùng.
+**Đáp số:** a) 10% · b) 288 000 đồng · c) 76 000 đồng · d) 92 000 đồng
+**Hướng giải:** BẪY — Lãi tính theo giá mua. Giá gốc luôn ứng với 100%. Giảm p% thì giá mới ứng với (100 − p)%; tăng p% thì ứng với (100 + p)%. Lãi tính theo **giá mua**.
+**Nhãn tư duy:** TD2, TD6. Điểm chốt: Phần trăm lãi tính theo **giá mua**, không theo giá bán.
+**Lỗi thường gặp:** Chia tiền lãi cho giá bán nên ra tỉ lệ nhỏ hơn thực tế. Phòng: Viết dòng đầu tiên: “Giá mua = 100%”.
+**Gợi ý 3 tầng:** (1) Số nào ứng với 100%? — (2) Số tiền chênh lệch là bao nhiêu? — (3) Chia số chênh lệch cho giá mua rồi nhân 100.
 
 ---
 

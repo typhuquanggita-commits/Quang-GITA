@@ -43,63 +43,70 @@ Phiếu lời giải và phân tích chuyên sâu đi kèm: `GITA-T2-L5-C01-LT-G
 Họ và tên: ......................................... Lớp: ......... Điểm: ......../100
 
 > **KIẾN THỨC NỀN CỦA CHƯƠNG**
-> 1. Cấu tạo thập phân; dấu hiệu chia hết; đếm có hệ thống
-> 2. Cấu tạo thập phân, phép chia có dư
-> 3. Trung bình cộng, dãy cách đều
-> 4. Thứ tự số tự nhiên, giá trị hàng, quy tắc làm tròn
+> 1. Dãy số cách đều, dấu hiệu chia hết
+> 2. Trung bình cộng, dãy cách đều
+> 3. Thứ tự số tự nhiên, giá trị hàng, quy tắc làm tròn
+> 4. Quan hệ giữa số bị chia, số chia, thương và số dư
 
 ---
 
 ## PHẦN A — VÍ DỤ DẪN VÀO CHỦ ĐỀ · Mức M1 — Nhận biết · 5 phút · 5 điểm
 
-### Bài 1. (1 điểm) Viết số khi biết tổng các giá trị hàng
+### Bài 1. (1 điểm) Ôn tập số tự nhiên: đọc, viết, so sánh, làm tròn
 
-Viết số tự nhiên ứng với mỗi tổng dưới đây.
+Trả lời nhanh, mỗi ý không quá 20 giây.
 
-a) Viết số gồm tổng: 7 000 000 + 100 000 + 60 000 + 8 000 + 400 + 80
-b) Viết số gồm tổng: 9 000 000 + 700 000 + 3 000 + 900 + 90 + 9
-c) Viết số gồm tổng: 7 000 000 + 800 000 + 20 000 + 6 000 + 300 + 30 + 1
-d) Viết số gồm tổng: 5 000 000 + 700 000 + 50 000 + 8 000 + 400 + 70 + 7
+a) 7 449 232 … 7 454 069
+b) Chữ số hàng nghìn của số 1 615 143 có giá trị bằng bao nhiêu?
+c) Làm tròn 7 906 160 đến hàng trăm.
+d) Số liền trước và số liền sau của 5 786 908 là những số nào?
+e) 1 841 500 … 1 842 498
+f) Số liền trước và số liền sau của 6 229 977 là những số nào?
 
-### Bài 2. (1 điểm) Làm tròn số đến hàng cho trước
+### Bài 2. (1 điểm) Điền dấu <, >, = thích hợp
 
-Làm tròn mỗi số dưới đây theo yêu cầu.
+Điền dấu thích hợp vào chỗ chấm.
 
-a) Làm tròn số 118 752 đến hàng chục.
-b) Làm tròn số 179 467 đến hàng trăm.
-c) Làm tròn số 520 251 đến hàng trăm.
-d) Làm tròn số 269 849 đến hàng trăm.
-e) Làm tròn số 473 938 đến hàng chục.
+a) 1 884 526 … 1 884 625
+b) 6 469 837 … 6 465 837
+c) 851 266 … 851 203
+d) 6 152 170 … 6 152 262
+e) 8 303 611 … 2 002 737
+f) 4 453 973 … 4 453 773
+g) 8 687 415 … 8 687 370
+h) 8 922 301 … 9 922 301
 
 ### Bài 3. (1 điểm) Đọc giá trị của chữ số theo hàng
 
-Cho số **6 478 918**.
+Cho số **8 794 286**.
 
-a) Chữ số ở hàng **triệu** của số 6 478 918 là chữ số nào, và nó có giá trị bằng bao nhiêu?
-b) Chữ số ở hàng **chục nghìn** của số 6 478 918 là chữ số nào, và nó có giá trị bằng bao nhiêu?
-c) Chữ số ở hàng **nghìn** của số 6 478 918 là chữ số nào, và nó có giá trị bằng bao nhiêu?
-d) Chữ số ở hàng **chục** của số 6 478 918 là chữ số nào, và nó có giá trị bằng bao nhiêu?
+a) Chữ số ở hàng **triệu** của số 8 794 286 là chữ số nào, và nó có giá trị bằng bao nhiêu?
+b) Chữ số ở hàng **trăm nghìn** của số 8 794 286 là chữ số nào, và nó có giá trị bằng bao nhiêu?
+c) Chữ số ở hàng **chục nghìn** của số 8 794 286 là chữ số nào, và nó có giá trị bằng bao nhiêu?
+d) Chữ số ở hàng **nghìn** của số 8 794 286 là chữ số nào, và nó có giá trị bằng bao nhiêu?
+e) Chữ số ở hàng **trăm** của số 8 794 286 là chữ số nào, và nó có giá trị bằng bao nhiêu?
+f) Chữ số ở hàng **đơn vị** của số 8 794 286 là chữ số nào, và nó có giá trị bằng bao nhiêu?
 
 ### Bài 4. (1 điểm) Số chẵn – số lẻ, số liền trước – số liền sau
 
 Trả lời ngắn gọn từng câu.
 
-a) Số chẵn bé nhất lớn hơn 915 834 là số nào?
-b) Số liền sau của 3 186 602 là số nào?
-c) Số liền trước của 4 380 837 là số nào?
-d) Số chẵn bé nhất lớn hơn 5 320 713 là số nào?
-e) Số 9 445 697 là số chẵn hay số lẻ?
-f) Số 9 932 255 là số chẵn hay số lẻ?
+a) Số chẵn bé nhất lớn hơn 1 482 828 là số nào?
+b) Số chẵn bé nhất lớn hơn 4 209 589 là số nào?
+c) Số chẵn bé nhất lớn hơn 6 834 573 là số nào?
+d) Số liền sau của 7 342 399 là số nào?
+e) Số chẵn bé nhất lớn hơn 9 485 359 là số nào?
 
-### Bài 5. (1 điểm) Đếm chữ số và tính tổng các chữ số
+### Bài 5. (1 điểm) Làm tròn số đến hàng cho trước
 
-Với mỗi số dưới đây, trả lời đủ hai ý.
+Làm tròn mỗi số dưới đây theo yêu cầu.
 
-a) Số 6 378 766 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
-b) Số 2 921 990 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
-c) Số 3 154 155 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
-d) Số 4 737 998 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
-e) Số 7 938 612 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
+a) Làm tròn số 373 302 đến hàng nghìn.
+b) Làm tròn số 59 198 đến hàng trăm.
+c) Làm tròn số 315 668 đến hàng trăm.
+d) Làm tròn số 479 871 đến hàng nghìn.
+e) Làm tròn số 333 151 đến hàng trăm.
+f) Làm tròn số 113 438 đến hàng chục.
 
 ---
 
@@ -145,7 +152,7 @@ b) Nêu một dấu hiệu nhận biết của dạng “Dãy số tự nhiên l
 c) Nêu một dấu hiệu nhận biết của dạng “Kiểm tra chia hết bằng dấu hiệu”.
 d) Nêu một dấu hiệu nhận biết của dạng “Tìm chữ số tận cùng của một phép tính”.
 e) Nêu một dấu hiệu nhận biết của dạng “Ôn tập số tự nhiên”.
-f) Nêu một dấu hiệu nhận biết của dạng “Số và tổng chữ số của nó”.
+f) Nêu một dấu hiệu nhận biết của dạng “Dùng chữ thay số”.
 
 ### Bài 5. (1 điểm) Mục tiêu của riêng em
 
@@ -180,7 +187,7 @@ b) Công thức hoặc quy tắc dùng cho dạng “Dãy số tự nhiên liên
 c) Công thức hoặc quy tắc dùng cho dạng “Kiểm tra chia hết bằng dấu hiệu”?
 d) Công thức hoặc quy tắc dùng cho dạng “Tìm chữ số tận cùng của một phép tính”?
 e) Công thức hoặc quy tắc dùng cho dạng “Ôn tập số tự nhiên”?
-f) Công thức hoặc quy tắc dùng cho dạng “Số và tổng chữ số của nó”?
+f) Công thức hoặc quy tắc dùng cho dạng “Dùng chữ thay số”?
 
 ### Bài 3. (4 điểm) Ô 4 và ô 5 — hình vẽ và bài tập minh hoạ
 
@@ -201,7 +208,7 @@ b) Dấu hiệu nào cho biết đề thuộc dạng “Dãy số tự nhiên li
 c) Dấu hiệu nào cho biết đề thuộc dạng “Kiểm tra chia hết bằng dấu hiệu”?
 d) Dấu hiệu nào cho biết đề thuộc dạng “Tìm chữ số tận cùng của một phép tính”?
 e) Dấu hiệu nào cho biết đề thuộc dạng “Ôn tập số tự nhiên”?
-f) Dấu hiệu nào cho biết đề thuộc dạng “Số và tổng chữ số của nó”?
+f) Dấu hiệu nào cho biết đề thuộc dạng “Dùng chữ thay số”?
 
 ### Bài 5. (4 điểm) Ô 7 — phương pháp ghi điểm 10
 
@@ -212,7 +219,7 @@ b) Cách xử lý nhanh nhất của dạng “Dãy số tự nhiên liên tiế
 c) Cách xử lý nhanh nhất của dạng “Kiểm tra chia hết bằng dấu hiệu” là gì?
 d) Cách xử lý nhanh nhất của dạng “Tìm chữ số tận cùng của một phép tính” là gì?
 e) Cách xử lý nhanh nhất của dạng “Ôn tập số tự nhiên” là gì?
-f) Cách xử lý nhanh nhất của dạng “Số và tổng chữ số của nó” là gì?
+f) Cách xử lý nhanh nhất của dạng “Dùng chữ thay số” là gì?
 
 ---
 
@@ -220,7 +227,7 @@ f) Cách xử lý nhanh nhất của dạng “Số và tổng chữ số của 
 
 ### Bài 1. (6 điểm) Key 1 — Xác định chữ số và giá trị chữ số theo hàng
 
-**Phát biểu:** Cấu tạo thập phân của số tự nhiên. **Ví dụ mẫu:** Chữ số hàng chục của số 9 414 244 có giá trị bao nhiêu? → 40.
+**Phát biểu:** Cấu tạo thập phân của số tự nhiên. **Ví dụ mẫu:** Chữ số hàng chục của số 1 429 783 có giá trị bao nhiêu? → 80.
 
 a) Phát biểu lại key này bằng lời của em.
 b) Key này dùng cho dạng bài nào?
@@ -242,7 +249,7 @@ f) Làm lại ví dụ mẫu ở trên và ghi đáp số.
 
 ### Bài 3. (6 điểm) Key 3 — Kiểm tra chia hết bằng dấu hiệu
 
-**Phát biểu:** Dấu hiệu chia hết cho 2, 3, 5, 9. **Ví dụ mẫu:** Số 3 892 có chia hết cho 9 không? → không.
+**Phát biểu:** Dấu hiệu chia hết cho 2, 3, 5, 9. **Ví dụ mẫu:** Số 214 có chia hết cho 9 không? → không.
 
 a) Phát biểu lại key này bằng lời của em.
 b) Key này dùng cho dạng bài nào?
@@ -277,57 +284,58 @@ f) Làm lại ví dụ mẫu ở trên và ghi đáp số.
 
 ## PHẦN E — LUYỆN NHẬN BIẾT – THÔNG HIỂU · Mức M2 — Thông hiểu · 30 phút · 40 điểm
 
-### Bài 1. (8 điểm) Đếm số thoả điều kiện trong một khoảng
+### Bài 1. (8 điểm) Tìm chữ số để số chia hết cho một số cho trước
+
+Với mỗi câu, tìm **tất cả** các chữ số thoả mãn.
+
+a) Tìm tất cả chữ số thay cho dấu * để số *891 chia hết cho 3.
+b) Tìm tất cả chữ số thay cho dấu * để số *304 chia hết cho 9.
+c) Tìm tất cả chữ số thay cho dấu * để số 472* chia hết cho 5.
+d) Tìm tất cả chữ số thay cho dấu * để số *276 chia hết cho 9.
+e) Tìm tất cả chữ số thay cho dấu * để số *482 chia hết cho 5.
+
+### Bài 2. (8 điểm) Đếm số thoả điều kiện trong một khoảng
 
 Đếm số lượng, không cần liệt kê.
 
-a) Có bao nhiêu số chẵn từ 16 đến 135?
-b) Có bao nhiêu số chia hết cho 3 từ 206 đến 607?
-c) Có bao nhiêu số chia hết cho 5 từ 197 đến 625?
-d) Có bao nhiêu số lẻ từ 332 đến 727?
-e) Có bao nhiêu số chẵn từ 299 đến 354?
-f) Có bao nhiêu số chia hết cho 3 từ 373 đến 476?
+a) Có bao nhiêu số chia hết cho 3 từ 165 đến 757?
+b) Có bao nhiêu số lẻ từ 381 đến 517?
+c) Có bao nhiêu số chẵn từ 129 đến 199?
+d) Có bao nhiêu số chia hết cho 5 từ 71 đến 386?
+e) Có bao nhiêu số chia hết cho 3 từ 86 đến 140?
 
-### Bài 2. (8 điểm) Dùng dấu hiệu chia hết để trả lời nhanh
+### Bài 3. (8 điểm) Phần trăm trong mua bán: lãi, lỗ, giảm giá
 
-Không đặt tính chia, hãy dùng dấu hiệu chia hết.
+Ghi rõ đại lượng nào ứng với 100%.
 
-a) Số 1 110 có chia hết cho 9 không? Vì sao?
-b) Số 2 465 có chia hết cho 9 không? Vì sao?
-c) Số 2 823 có chia hết cho 3 không? Vì sao?
-d) Số 3 334 có chia hết cho 3 không? Vì sao?
-e) Số 6 213 có chia hết cho 5 không? Vì sao?
-f) Số 7 012 có chia hết cho 2 không? Vì sao?
-g) Số 7 323 có chia hết cho 2 không? Vì sao?
-h) Số 7 765 có chia hết cho 9 không? Vì sao?
-
-### Bài 3. (8 điểm) Dãy số có quy luật phức tạp
-
-Tìm quy luật rồi viết số hạng tiếp theo.
-
-a) 7, 8, 10, 13, 17, …
-b) 2, 3, 5, 8, 8, …
-c) 3, 8, 6, 13, 9, …
-d) 1, 4, 9, 16, 25, …
-e) 25, 36, 49, 64, 81, …
+a) Một món hàng giá 200 000 đồng, tăng giá 5%. Giá mới là bao nhiêu?
+b) Một chiếc cặp giá 400 000 đồng được giảm 25%. Hỏi giá sau khi giảm là bao nhiêu?
+c) Mua một món hàng 150 000 đồng rồi bán 210 000 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
+d) Một chiếc cặp giá 150 000 đồng được giảm 5%. Hỏi giá sau khi giảm là bao nhiêu?
+e) Một món hàng giá 200 000 đồng, tăng giá 30%. Giá mới là bao nhiêu?
+f) Mua một món hàng 240 000 đồng rồi bán 288 000 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
 
 ### Bài 4. (8 điểm) Tính chất chia hết của tổng và hiệu
 
 Trả lời và giải thích ngắn gọn, không cần tính ra kết quả tổng.
 
-a) Tổng 92 + 1 có chia hết cho 2 không? Nếu không, số dư bằng bao nhiêu?
-b) Tổng 102 + 110 có chia hết cho 2 không?
-c) Tổng 52 + 1 có chia hết cho 2 không? Nếu không, số dư bằng bao nhiêu?
-d) Tổng 305 + 4 có chia hết cho 5 không? Nếu không, số dư bằng bao nhiêu?
+a) Hiệu 146 − 32 có chia hết cho 2 không?
+b) Tổng 55 + 1 có chia hết cho 5 không? Nếu không, số dư bằng bao nhiêu?
+c) Tổng 45 + 1 có chia hết cho 3 không? Nếu không, số dư bằng bao nhiêu?
+d) Hiệu 135 − 130 có chia hết cho 5 không?
+e) Hiệu 48 − 24 có chia hết cho 2 không?
+f) Tổng 450 + 1 có chia hết cho 5 không? Nếu không, số dư bằng bao nhiêu?
 
-### Bài 5. (8 điểm) Tìm chữ số để số chia hết cho một số cho trước
+### Bài 5. (8 điểm) Dùng dấu hiệu chia hết để trả lời nhanh
 
-Với mỗi câu, tìm **tất cả** các chữ số thoả mãn.
+Không đặt tính chia, hãy dùng dấu hiệu chia hết.
 
-a) Tìm tất cả chữ số thay cho dấu * để số 362* chia hết cho 9.
-b) Tìm tất cả chữ số thay cho dấu * để số *866 chia hết cho 3.
-c) Tìm tất cả chữ số thay cho dấu * để số *567 chia hết cho 5.
-d) Tìm tất cả chữ số thay cho dấu * để số 3*8 chia hết cho 2.
+a) Số 277 có chia hết cho 2 không? Vì sao?
+b) Số 3 543 có chia hết cho 9 không? Vì sao?
+c) Số 4 724 có chia hết cho 9 không? Vì sao?
+d) Số 4 868 có chia hết cho 2 không? Vì sao?
+e) Số 5 274 có chia hết cho 5 không? Vì sao?
+f) Số 8 519 có chia hết cho 3 không? Vì sao?
 
 ---
 
@@ -336,34 +344,34 @@ d) Tìm tất cả chữ số thay cho dấu * để số 3*8 chia hết cho 2.
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài A.1
-**Đáp số:** a) 7 168 480 · b) 9 703 999 · c) 7 826 331 · d) 5 758 477
-**Hướng giải:** Mỗi số hạng cho biết một hàng. Xếp các chữ số vào đúng hàng của nó, hàng nào khuyết thì viết chữ số 0.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Hàng khuyết trong tổng vẫn phải có chữ số **0** trong số viết ra.
-**Lỗi thường gặp:** Bỏ qua hàng khuyết nên số viết ra bị ngắn đi một chữ số. Phòng: Kẻ sẵn các ô hàng rồi mới điền chữ số vào ô tương ứng.
+**Đáp số:** a) < · b) 5 000 · c) 7 906 200 · d) 5 786 907 và 5 786 909 · e) < · f) 6 229 976 và 6 229 978
+**Hướng giải:** So sánh: số nhiều chữ số hơn thì lớn hơn; bằng số chữ số thì so từng hàng từ trái sang phải. Làm tròn: nhìn chữ số ở hàng **liền sau** hàng cần làm tròn.
+**Nhãn tư duy:** TD1, TD5. Điểm chốt: So sánh đi từ **trái sang phải**, làm tròn nhìn **một chữ số liền sau**.
+**Lỗi thường gặp:** So sánh từ hàng đơn vị; hoặc làm tròn nhìn nhầm sang chính hàng cần làm tròn. Phòng: Gạch một nét ngăn ngay sau hàng cần làm tròn.
 
 ### Bài A.2
-**Đáp số:** a) 118 750 · b) 179 500 · c) 520 300 · d) 269 800 · e) 473 940
-**Hướng giải:** Nhìn chữ số ở hàng **liền sau** hàng cần làm tròn: nếu chữ số đó bé hơn 5 thì giữ nguyên hàng làm tròn và thay các chữ số sau bằng 0; nếu từ 5 trở lên thì tăng hàng làm tròn thêm 1 rồi mới thay 0.
-**Nhãn tư duy:** TD1, TD5. Điểm chốt: Chỉ xét **một** chữ số liền sau, không cộng dồn cả phần đuôi.
-**Lỗi thường gặp:** Nhìn nhầm sang chữ số ở hàng cần làm tròn thay vì hàng liền sau nó. Phòng: Gạch một nét ngăn ngay sau hàng cần làm tròn rồi mới quyết định.
+**Đáp số:** a) < · b) > · c) > · d) < · e) > · f) > · g) > · h) <
+**Hướng giải:** So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
+**Nhãn tư duy:** TD1, TD5. Điểm chốt: Đếm số chữ số **trước**, chỉ khi bằng nhau mới so từng hàng.
+**Lỗi thường gặp:** So từ hàng đơn vị (phải sang trái) nên kết luận sai. Phòng: Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái.
 
 ### Bài A.3
-**Đáp số:** a) chữ số 6, giá trị 6 000 000 · b) chữ số 7, giá trị 70 000 · c) chữ số 8, giá trị 8 000 · d) chữ số 1, giá trị 10
+**Đáp số:** a) chữ số 8, giá trị 8 000 000 · b) chữ số 7, giá trị 700 000 · c) chữ số 9, giá trị 90 000 · d) chữ số 4, giá trị 4 000 · e) chữ số 2, giá trị 200 · f) chữ số 6, giá trị 6
 **Hướng giải:** Đếm hàng từ phải sang trái: đơn vị – chục – trăm – nghìn – chục nghìn – trăm nghìn – triệu. Giá trị của một chữ số bằng chính chữ số đó nhân với giá trị của hàng nó đứng.
 **Nhãn tư duy:** TD1. Điểm chốt: Phân biệt **chữ số** (một kí hiệu) với **giá trị** của chữ số (chữ số nhân giá trị hàng).
 **Lỗi thường gặp:** Đếm hàng từ trái sang phải nên lệch hàng. Phòng: Luôn viết số ra nháp rồi đánh dấu hàng đơn vị trước, đi ngược về trái.
 
 ### Bài A.4
-**Đáp số:** a) 915 836 · b) 3 186 603 · c) 4 380 836 · d) 5 320 714 · e) số lẻ · f) số lẻ
+**Đáp số:** a) 1 482 830 · b) 4 209 590 · c) 6 834 574 · d) 7 342 400 · e) 9 485 360
 **Hướng giải:** Số chẵn là số có chữ số tận cùng 0, 2, 4, 6, 8; số lẻ tận cùng 1, 3, 5, 7, 9. Số liền trước kém 1 đơn vị, số liền sau hơn 1 đơn vị. Hai số chẵn liên tiếp hơn kém nhau 2 đơn vị.
 **Nhãn tư duy:** TD1. Điểm chốt: Chỉ cần nhìn **chữ số tận cùng** là biết chẵn hay lẻ, dù số dài bao nhiêu.
 **Lỗi thường gặp:** Nhầm “liền trước” với “bé hơn”, trả lời một số bất kì bé hơn. Phòng: Liền trước – liền sau chỉ hơn kém đúng **1** đơn vị.
 
 ### Bài A.5
-**Đáp số:** a) 7 chữ số, tổng 43 · b) 7 chữ số, tổng 32 · c) 7 chữ số, tổng 24 · d) 7 chữ số, tổng 47 · e) 7 chữ số, tổng 36
-**Hướng giải:** Đếm số chữ số bằng cách tách số theo lớp (mỗi lớp 3 chữ số). Tổng các chữ số là cộng tất cả các chữ số lại, không phân biệt hàng.
-**Nhãn tư duy:** TD1. Điểm chốt: Tổng các chữ số **không** phụ thuộc thứ tự các chữ số.
-**Lỗi thường gặp:** Cộng cả giá trị hàng (ví dụ cộng 300 thay vì cộng 3). Phòng: Viết rời từng chữ số ra rồi mới cộng.
+**Đáp số:** a) 373 000 · b) 59 200 · c) 315 700 · d) 480 000 · e) 333 200 · f) 113 440
+**Hướng giải:** Nhìn chữ số ở hàng **liền sau** hàng cần làm tròn: nếu chữ số đó bé hơn 5 thì giữ nguyên hàng làm tròn và thay các chữ số sau bằng 0; nếu từ 5 trở lên thì tăng hàng làm tròn thêm 1 rồi mới thay 0.
+**Nhãn tư duy:** TD1, TD5. Điểm chốt: Chỉ xét **một** chữ số liền sau, không cộng dồn cả phần đuôi.
+**Lỗi thường gặp:** Nhìn nhầm sang chữ số ở hàng cần làm tròn thay vì hàng liền sau nó. Phòng: Gạch một nét ngăn ngay sau hàng cần làm tròn rồi mới quyết định.
 
 ### Bài B.1
 **Đáp số:** a) Cấu tạo số, chia hết, số nguyên tố và ước – bội · b) A — Số học & Cấu tạo số · c) 6 · d) ở mọi bài thuộc số học & cấu tạo số, vì các chương sau đều dùng lại nền này · e) giải nhanh và chắc các bài cấu tạo số tự nhiên và bài toán về chữ số
@@ -384,7 +392,7 @@ d) Tìm tất cả chữ số thay cho dấu * để số 3*8 chia hết cho 2.
 **Lỗi thường gặp:** Không nhớ mốc kiểm tra nên ôn muộn. Phòng: Ghi mốc kiểm tra vào lịch học ngay buổi đầu của cụm.
 
 ### Bài B.4
-**Đáp số:** a) Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” · b) Cụm “… số tự nhiên liên tiếp có tổng bằng …” · c) Câu hỏi “có chia hết cho … không” · d) Câu hỏi chỉ hỏi “chữ số tận cùng”, không hỏi kết quả · e) Câu hỏi ngắn về so sánh, hàng, số liền kề, làm tròn · f) Đề liên hệ số với tổng các chữ số của chính nó
+**Đáp số:** a) Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” · b) Cụm “… số tự nhiên liên tiếp có tổng bằng …” · c) Câu hỏi “có chia hết cho … không” · d) Câu hỏi chỉ hỏi “chữ số tận cùng”, không hỏi kết quả · e) Câu hỏi ngắn về so sánh, hàng, số liền kề, làm tròn · f) Đề viết số bằng chữ hoặc bằng dấu sao và cho quan hệ giữa các chữ số
 **Hướng giải:** Dấu hiệu nhận biết là những chữ có mặt trong đề bài, không phải là cách giải. Đọc lại cột “Dữ liệu nhận biết” trong bảng phân tích chuyên sâu.
 **Nhãn tư duy:** TD2. Điểm chốt: Dấu hiệu nằm ở **chữ trong đề**, không nằm ở phép tính.
 **Lỗi thường gặp:** Trả lời bằng cách giải thay vì bằng dấu hiệu. Phòng: Tự hỏi: em nhìn thấy chữ gì trong đề thì biết đây là dạng này?
@@ -402,7 +410,7 @@ d) Tìm tất cả chữ số thay cho dấu * để số 3*8 chia hết cho 2.
 **Lỗi thường gặp:** Vẽ sơ đồ thành danh sách gạch đầu dòng, mất tính liên kết. Phòng: Bắt buộc vẽ toả từ tâm, mỗi nhánh một màu.
 
 ### Bài C.2
-**Đáp số:** a) Cấu tạo thập phân của số tự nhiên · b) Trung bình cộng, dãy cách đều · c) Dấu hiệu chia hết cho 2, 3, 5, 9 · d) Tính chất chữ số tận cùng · e) Thứ tự số tự nhiên, giá trị hàng, quy tắc làm tròn · f) Cấu tạo thập phân, phép chia có dư
+**Đáp số:** a) Cấu tạo thập phân của số tự nhiên · b) Trung bình cộng, dãy cách đều · c) Dấu hiệu chia hết cho 2, 3, 5, 9 · d) Tính chất chữ số tận cùng · e) Thứ tự số tự nhiên, giá trị hàng, quy tắc làm tròn · f) Cấu tạo thập phân của số; tổng – hiệu
 **Hướng giải:** Mỗi dạng bài có một công thức hoặc một quy tắc gốc. Chép lại từ cột “Kiến thức liên quan” của bảng phân tích chuyên sâu.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Công thức phải **thuộc lòng**, không tra sách khi làm bài.
 **Lỗi thường gặp:** Nhớ công thức nhưng không nhớ nó dùng cho dạng nào. Phòng: Luôn viết công thức kèm tên dạng bài đi cùng nó.
@@ -414,19 +422,19 @@ d) Tìm tất cả chữ số thay cho dấu * để số 3*8 chia hết cho 2.
 **Lỗi thường gặp:** Dạng nào cũng vẽ sơ đồ đoạn thẳng, kể cả bài đếm. Phòng: Hỏi trước: bài này có quan hệ hơn kém, có nhiều trường hợp, hay có hình?
 
 ### Bài C.4
-**Đáp số:** a) Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” · b) Cụm “… số tự nhiên liên tiếp có tổng bằng …” · c) Câu hỏi “có chia hết cho … không” · d) Câu hỏi chỉ hỏi “chữ số tận cùng”, không hỏi kết quả · e) Câu hỏi ngắn về so sánh, hàng, số liền kề, làm tròn · f) Đề liên hệ số với tổng các chữ số của chính nó
+**Đáp số:** a) Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” · b) Cụm “… số tự nhiên liên tiếp có tổng bằng …” · c) Câu hỏi “có chia hết cho … không” · d) Câu hỏi chỉ hỏi “chữ số tận cùng”, không hỏi kết quả · e) Câu hỏi ngắn về so sánh, hàng, số liền kề, làm tròn · f) Đề viết số bằng chữ hoặc bằng dấu sao và cho quan hệ giữa các chữ số
 **Hướng giải:** Dấu hiệu nhận biết luôn là **chữ có trong đề**: một cụm từ khoá, một kiểu dữ kiện, hoặc một cách hỏi.
 **Nhãn tư duy:** TD2. Điểm chốt: Đọc vị được đề là **đã đi được nửa đường**.
 **Lỗi thường gặp:** Lẫn dấu hiệu nhận biết với phương pháp giải. Phòng: Dấu hiệu trả lời câu “thấy gì?”, phương pháp trả lời câu “làm gì?”.
 
 ### Bài C.5
-**Đáp số:** a) Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị. · b) Tổng của n số liên tiếp (n lẻ) luôn chia hết cho n. · c) Cộng chữ số theo cặp tròn 9, phần dư chính là số dư khi chia 9. · d) Với phép trừ, nếu chữ số cuối của số bị trừ nhỏ hơn thì mượn 10 rồi trừ. · e) Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. · f) a × 10 + b − (a + b) = 9 × a — hiệu luôn là bội của 9.
+**Đáp số:** a) Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị. · b) Tổng của n số liên tiếp (n lẻ) luôn chia hết cho n. · c) Cộng chữ số theo cặp tròn 9, phần dư chính là số dư khi chia 9. · d) Với phép trừ, nếu chữ số cuối của số bị trừ nhỏ hơn thì mượn 10 rồi trừ. · e) Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. · f) Đổi chỗ hai chữ số của số có hai chữ số thì hiệu luôn là bội của 9.
 **Hướng giải:** Cách xử lý nhanh nhất thường là một nhận xét giúp bỏ bớt một hai bước tính. Chép lại từ cột “Cách xử lý nhanh nhất”.
 **Nhãn tư duy:** TD5, TD6. Điểm chốt: Điểm 10 đến từ **mẹo đúng bản chất**, không phải mẹo học vẹt.
 **Lỗi thường gặp:** Dùng mẹo mà không hiểu vì sao đúng nên áp dụng sai chỗ. Phòng: Với mỗi mẹo, viết thêm một dòng “mẹo này đúng vì …”.
 
 ### Bài D.1
-**Đáp số:** a) Cấu tạo thập phân của số tự nhiên · b) Xác định chữ số và giá trị chữ số theo hàng · c) Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” · d) Đánh số hàng từ phải sang trái rồi tra bảng hàng · e) Đếm hàng từ trái sang phải nên lệch hàng. · f) 40
+**Đáp số:** a) Cấu tạo thập phân của số tự nhiên · b) Xác định chữ số và giá trị chữ số theo hàng · c) Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” · d) Đánh số hàng từ phải sang trái rồi tra bảng hàng · e) Đếm hàng từ trái sang phải nên lệch hàng. · f) 80
 **Hướng giải:** Đếm hàng từ phải sang trái: đơn vị – chục – trăm – nghìn – chục nghìn – trăm nghìn – triệu. Giá trị của một chữ số bằng chính chữ số đó nhân với giá trị của hàng nó đứng.
 **Nhãn tư duy:** TD1. Điểm chốt: Phân biệt **chữ số** (một kí hiệu) với **giá trị** của chữ số (chữ số nhân giá trị hàng).
 **Lỗi thường gặp:** Đếm hàng từ trái sang phải nên lệch hàng. Phòng: Luôn viết số ra nháp rồi đánh dấu hàng đơn vị trước, đi ngược về trái.
@@ -461,39 +469,39 @@ d) Tìm tất cả chữ số thay cho dấu * để số 3*8 chia hết cho 2.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.1
-**Đáp số:** a) 60 · b) 134 · c) 86 · d) 198 · e) 28 · f) 34
+**Đáp số:** a) 3, 6, 9 · b) 2 · c) 0, 5 · d) 3 · e) không có chữ số nào
+**Hướng giải:** BẪY — Chữ số hàng cao nhất không được là 0. Xét dấu hiệu chia hết ứng với số chia, rồi thử lần lượt 10 chữ số từ 0 đến 9. Nếu dấu * đứng ở hàng cao nhất thì loại chữ số 0.
+**Nhãn tư duy:** TD2, TD5. Điểm chốt: Phải tìm **tất cả** chữ số thoả mãn, không dừng ở chữ số đầu tiên tìm được.
+**Lỗi thường gặp:** Chỉ nêu một đáp số, hoặc nhận cả chữ số 0 ở hàng cao nhất. Phòng: Liệt kê đủ 10 chữ số ra nháp rồi gạch dần chữ số không đạt.
+**Gợi ý 3 tầng:** (1) Số chia là 2 hay 5 thì chỉ cần xét chữ số tận cùng. — (2) Số chia là 3 hay 9 thì tính tổng các chữ số đã biết trước. — (3) Cộng thêm dấu * và tìm chữ số làm tổng chia hết cho số đó.
+
+### Bài E.2
+**Đáp số:** a) 198 · b) 69 · c) 35 · d) 63 · e) 18
 **Hướng giải:** BẪY — Hai đầu khoảng chưa chắc thoả điều kiện. Các số cần đếm lập thành một dãy cách đều. Số lượng số hạng bằng (số cuối − số đầu) : khoảng cách + 1. Phải tìm đúng số đầu và số cuối **nằm trong khoảng đã cho**.
 **Nhãn tư duy:** TD4, TD1. Điểm chốt: Công thức có **+ 1** ở cuối; quên cộng 1 là sai một đơn vị.
 **Lỗi thường gặp:** Lấy luôn hai đầu khoảng làm số đầu và số cuối của dãy dù chúng không thoả điều kiện. Phòng: Viết ra ba số đầu và ba số cuối của dãy trước khi áp công thức.
 **Gợi ý 3 tầng:** (1) Số đầu tiên trong khoảng thoả điều kiện là số nào? — (2) Số cuối cùng trong khoảng thoả điều kiện là số nào? — (3) Số lượng = (cuối − đầu) : khoảng cách + 1.
 
-### Bài E.2
-**Đáp số:** a) không (tổng chữ số 3) · b) không (tổng chữ số 17) · c) có (tổng chữ số 15) · d) không (tổng chữ số 13) · e) không (chữ số tận cùng 3) · f) có (chữ số tận cùng 2) · g) không (chữ số tận cùng 3) · h) không (tổng chữ số 25)
-**Hướng giải:** Chia hết cho 2: tận cùng 0, 2, 4, 6, 8. Chia hết cho 5: tận cùng 0 hoặc 5. Chia hết cho 3: tổng các chữ số chia hết cho 3. Chia hết cho 9: tổng các chữ số chia hết cho 9.
-**Nhãn tư duy:** TD1, TD5. Điểm chốt: Dấu hiệu cho 2 và 5 nhìn **đuôi**; dấu hiệu cho 3 và 9 nhìn **tổng**.
-**Lỗi thường gặp:** Dùng dấu hiệu của 3 để kết luận cho 2, hoặc cộng thiếu một chữ số. Phòng: Viết rõ tổng các chữ số ra bên cạnh trước khi kết luận.
-**Gợi ý 3 tầng:** (1) Số chia là 2 hay 5 thì nhìn chữ số tận cùng. — (2) Số chia là 3 hay 9 thì cộng các chữ số. — (3) Tổng chữ số vẫn lớn thì cộng tiếp lần nữa.
-
 ### Bài E.3
-**Đáp số:** a) 22 · b) 13 · c) 18 · d) 36 · e) 100
-**Hướng giải:** Khi hiệu không đều, hãy tính hiệu của các hiệu. Nếu dãy hiệu lại là dãy cách đều thì quy luật là “cộng thêm một lượng tăng đều”. Cũng có dãy gồm hai dãy con xen kẽ nhau — tách riêng các số ở vị trí lẻ và vị trí chẵn ra xét.
-**Nhãn tư duy:** TD4, TD6. Điểm chốt: Hai hướng thử: **hiệu của hiệu** và **tách dãy con xen kẽ**.
-**Lỗi thường gặp:** Chỉ thử một hướng rồi bỏ cuộc. Phòng: Luôn viết dãy hiệu xuống dưới dãy gốc trước khi kết luận.
-**Gợi ý 3 tầng:** (1) Viết dãy các hiệu xuống dưới. — (2) Dãy hiệu có đều không? Nếu không, tính hiệu của dãy hiệu. — (3) Thử tách các số ở vị trí lẻ và vị trí chẵn thành hai dãy riêng.
+**Đáp số:** a) 210 000 đồng · b) 300 000 đồng · c) 40% · d) 142 500 đồng · e) 260 000 đồng · f) 20%
+**Hướng giải:** BẪY — Lãi tính theo giá mua. Giá gốc luôn ứng với 100%. Giảm p% thì giá mới ứng với (100 − p)%; tăng p% thì ứng với (100 + p)%. Lãi tính theo **giá mua**.
+**Nhãn tư duy:** TD2, TD6. Điểm chốt: Phần trăm lãi tính theo **giá mua**, không theo giá bán.
+**Lỗi thường gặp:** Chia tiền lãi cho giá bán nên ra tỉ lệ nhỏ hơn thực tế. Phòng: Viết dòng đầu tiên: “Giá mua = 100%”.
+**Gợi ý 3 tầng:** (1) Số nào ứng với 100%? — (2) Số tiền chênh lệch là bao nhiêu? — (3) Chia số chênh lệch cho giá mua rồi nhân 100.
 
 ### Bài E.4
-**Đáp số:** a) không, dư 1 · b) có · c) không, dư 1 · d) không, dư 4
+**Đáp số:** a) có · b) không, dư 1 · c) không, dư 1 · d) có · e) có · f) không, dư 1
 **Hướng giải:** Nếu hai số cùng chia hết cho một số thì tổng và hiệu của chúng cũng chia hết cho số đó. Nếu một số chia hết còn số kia dư r thì tổng cũng dư đúng r.
 **Nhãn tư duy:** TD2, TD5. Điểm chốt: Xét **số dư** của từng số hạng là đủ, không cần cộng ra kết quả.
 **Lỗi thường gặp:** Cộng hai số ra rồi mới chia — mất thời gian và dễ sai tính. Phòng: Ghi số dư của từng số hạng ngay bên dưới nó.
 **Gợi ý 3 tầng:** (1) Mỗi số hạng có chia hết cho số đó không? — (2) Nếu cả hai cùng chia hết thì tổng chia hết. — (3) Nếu một số dư r, tổng cũng dư r.
 
 ### Bài E.5
-**Đáp số:** a) 7 · b) 1, 4, 7 · c) không có chữ số nào · d) 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
-**Hướng giải:** BẪY — Chữ số hàng cao nhất không được là 0. Xét dấu hiệu chia hết ứng với số chia, rồi thử lần lượt 10 chữ số từ 0 đến 9. Nếu dấu * đứng ở hàng cao nhất thì loại chữ số 0.
-**Nhãn tư duy:** TD2, TD5. Điểm chốt: Phải tìm **tất cả** chữ số thoả mãn, không dừng ở chữ số đầu tiên tìm được.
-**Lỗi thường gặp:** Chỉ nêu một đáp số, hoặc nhận cả chữ số 0 ở hàng cao nhất. Phòng: Liệt kê đủ 10 chữ số ra nháp rồi gạch dần chữ số không đạt.
-**Gợi ý 3 tầng:** (1) Số chia là 2 hay 5 thì chỉ cần xét chữ số tận cùng. — (2) Số chia là 3 hay 9 thì tính tổng các chữ số đã biết trước. — (3) Cộng thêm dấu * và tìm chữ số làm tổng chia hết cho số đó.
+**Đáp số:** a) không (chữ số tận cùng 7) · b) không (tổng chữ số 15) · c) không (tổng chữ số 17) · d) có (chữ số tận cùng 8) · e) không (chữ số tận cùng 4) · f) không (tổng chữ số 23)
+**Hướng giải:** Chia hết cho 2: tận cùng 0, 2, 4, 6, 8. Chia hết cho 5: tận cùng 0 hoặc 5. Chia hết cho 3: tổng các chữ số chia hết cho 3. Chia hết cho 9: tổng các chữ số chia hết cho 9.
+**Nhãn tư duy:** TD1, TD5. Điểm chốt: Dấu hiệu cho 2 và 5 nhìn **đuôi**; dấu hiệu cho 3 và 9 nhìn **tổng**.
+**Lỗi thường gặp:** Dùng dấu hiệu của 3 để kết luận cho 2, hoặc cộng thiếu một chữ số. Phòng: Viết rõ tổng các chữ số ra bên cạnh trước khi kết luận.
+**Gợi ý 3 tầng:** (1) Số chia là 2 hay 5 thì nhìn chữ số tận cùng. — (2) Số chia là 3 hay 9 thì cộng các chữ số. — (3) Tổng chữ số vẫn lớn thì cộng tiếp lần nữa.
 
 ---
 

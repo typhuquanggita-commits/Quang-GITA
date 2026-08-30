@@ -28,59 +28,59 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ### Bài 1. (2 điểm — 10 phút) Tính và điền kết quả
 
-Cho số **32 815**.
+Cho số **99 411**.
 
-a) Số 32 815 có bao nhiêu chữ số?
+a) Số 99 411 có bao nhiêu chữ số?
 b) Chữ số hàng đơn vị là chữ số nào?
 c) Chữ số hàng trăm là chữ số nào?
 d) Chữ số hàng nghìn là chữ số nào?
-e) Viết số 32 815 thành tổng các giá trị hàng.
-f) Tổng các chữ số của số 32 815 bằng bao nhiêu?
+e) Viết số 99 411 thành tổng các giá trị hàng.
+f) Tổng các chữ số của số 99 411 bằng bao nhiêu?
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
-Điền số thích hợp.
+Ghi rõ đơn vị đồng ở mọi kết quả.
 
-a) 18 cm = … mm
-b) 10 kg = … g
-c) 76 l = … ml
-d) 86 km = … m
-e) 51 m = … cm
-f) 31 cm = … mm
+a) Đổi một tờ 10 000 đồng ra các tờ 1 000 đồng thì được mấy tờ?
+b) Mua 5 quyển vở, mỗi quyển 8 000 đồng. Hết bao nhiêu tiền?
+c) Mua 4 quyển vở, mỗi quyển 5 000 đồng. Đưa cô bán hàng một tờ 50 000 đồng. Cô phải trả lại bao nhiêu tiền?
+d) Đổi một tờ 20 000 đồng ra các tờ 5 000 đồng thì được mấy tờ?
+e) Mua 6 quyển vở, mỗi quyển 12 000 đồng. Đưa cô bán hàng một tờ 100 000 đồng. Cô phải trả lại bao nhiêu tiền?
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
-Vẽ sơ đồ trước, tính sau. Không vẽ thì không được tính.
+Giải từng bài toán nhỏ.
 
-a) Khánh và Đức có tất cả 22 viên bi. Khánh có nhiều hơn Đức 4 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
-b) Sơn và Ngọc có tất cả 122 viên bi. Sơn có nhiều hơn Ngọc 6 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
-c) Hùng và Thảo có tất cả 70 viên bi. Hùng có nhiều hơn Thảo 18 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
-d) Bình và Ngọc có tất cả 196 viên bi. Bình có nhiều hơn Ngọc 58 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
-e) Yến và Phúc có tất cả 26 viên bi. Yến có nhiều hơn Phúc 6 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
-f) Hà và Yến có tất cả 36 viên bi. Hà có nhiều hơn Yến 8 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+a) 4 ngày đầu tuần một cửa hàng bán được lần lượt 186, 192, 175, 195 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
+b) Trung bình mỗi ngày bán được 194 kg gạo. Hỏi 6 ngày bán được tất cả bao nhiêu ki-lô-gam?
+c) Trung bình mỗi ngày cửa hàng bán được 199 kg gạo. 3 ngày đầu bán được 191, 209, 192 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
+d) Trung bình mỗi ngày cửa hàng bán được 156 kg gạo. 2 ngày đầu bán được 162, 153 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
+e) Trung bình mỗi ngày bán được 179 kg gạo. Hỏi 5 ngày bán được tất cả bao nhiêu ki-lô-gam?
+f) Trung bình mỗi ngày cửa hàng bán được 79 kg gạo. 4 ngày đầu bán được 89, 71, 69, 85 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
-Cho lưới gồm 3 hàng và 4 cột ô vuông nhỏ bằng nhau.
+Vẽ hình và kẻ lưới ra nháp.
 
-a) Lưới có bao nhiêu ô vuông nhỏ?
-b) Lưới có bao nhiêu đường kẻ ngang, bao nhiêu đường kẻ dọc?
-c) Có tất cả bao nhiêu hình chữ nhật (kể cả hình vuông)?
-d) Có bao nhiêu hình vuông?
-e) Có bao nhiêu hình chữ nhật không phải hình vuông?
+a) Một hình chữ nhật 10 cm × 4 cm được phủ kín bằng các hình vuông cạnh 1 cm. Cần bao nhiêu hình vuông?
+b) Diện tích hình chữ nhật ấy bằng bao nhiêu?
+c) Diện tích mỗi hình vuông nhỏ bằng bao nhiêu?
+d) Chia hình chữ nhật ấy thành 2 phần bằng nhau thì mỗi phần có diện tích bao nhiêu?
+e) Chia thành 4 phần bằng nhau thì mỗi phần bao nhiêu?
+f) Nếu ghép hai hình chữ nhật ấy theo chiều dài thì hình mới có chu vi bao nhiêu?
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
 Đếm có hệ thống, nêu rõ cách đếm.
 
-a) Trên một đường thẳng lấy 3 điểm. Có bao nhiêu đoạn thẳng?
+a) Trên một đường thẳng lấy 4 điểm. Có bao nhiêu đoạn thẳng?
 b) Nếu lấy thêm một điểm nữa thì có thêm bao nhiêu đoạn thẳng?
-c) Với 4 điểm thì có tất cả bao nhiêu đoạn thẳng?
-d) Từ một đỉnh của tam giác lớn kẻ 5 đoạn thẳng tới cạnh đối diện. Cạnh đối diện bị chia thành mấy phần?
+c) Với 5 điểm thì có tất cả bao nhiêu đoạn thẳng?
+d) Từ một đỉnh của tam giác lớn kẻ 4 đoạn thẳng tới cạnh đối diện. Cạnh đối diện bị chia thành mấy phần?
 e) Có tất cả bao nhiêu tam giác trong hình đó?
 f) Trong đó có bao nhiêu tam giác nhỏ nhất?
 
@@ -93,99 +93,98 @@ f) Trong đó có bao nhiêu tam giác nhỏ nhất?
 ### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
 a) **5**
-b) **5**
-c) **8**
-d) **2**
-e) **30 000 + 2 000 + 800 + 10 + 5**
-f) **19**
+b) **1**
+c) **4**
+d) **9**
+e) **90 000 + 9 000 + 400 + 10 + 1**
+f) **24**
 
 **Cách giải mẫu:**
 
 1. Đếm từ phải sang trái: đơn vị, chục, trăm, nghìn, chục nghìn.
-2. Số 32 815 có 5 chữ số.
-3. Chữ số hàng đơn vị là chữ số cuối cùng bên phải: 5.
-4. Viết thành tổng: 30 000 + 2 000 + 800 + 10 + 5.
-5. Cộng các chữ số: 3 + 2 + 8 + 1 + 5 = 19.
+2. Số 99 411 có 5 chữ số.
+3. Chữ số hàng đơn vị là chữ số cuối cùng bên phải: 1.
+4. Viết thành tổng: 90 000 + 9 000 + 400 + 10 + 1.
+5. Cộng các chữ số: 9 + 9 + 4 + 1 + 1 = 24.
 6. Đáp số ý a: **5 chữ số**.
 
 *Lỗi hay mắc:* Đếm hàng từ trái sang phải nên lệch hàng.
 
-### Bài 2, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 2, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **180**
-b) **10 000**
-c) **76 000**
-d) **86 000**
-e) **5 100**
-f) **310**
+a) **10 tờ**
+b) **40 000 đồng**
+c) **30 000 đồng**
+d) **4 tờ**
+e) **28 000 đồng**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 18 cm = … mm
-2. Đọc vị: đây là dạng **Đổi đơn vị đo**; dấu hiệu là Hai đơn vị khác nhau nối bởi dấu ….
-3. Kiến thức phải dùng: Bảng đơn vị đo lớp 3.
-4. Cách làm: Nhớ quan hệ rồi nhân.
-5. Lối tắt: Thêm đúng số chữ số 0 tương ứng: 3 số 0 cho km→m, 2 số 0 cho m→cm.
-6. Kết quả: **180**.
+1. Xét ý a: Đổi một tờ 10 000 đồng ra các tờ 1 000 đồng thì được mấy tờ?
+2. Đọc vị: đây là dạng **Bài toán tiền tệ hai bước**; dấu hiệu là “Đưa … đồng”, “trả lại”, “đổi ra tờ …”.
+3. Kiến thức phải dùng: Nhân, trừ với số tròn nghìn; mệnh giá tiền Việt Nam.
+4. Cách làm: Tính tiền hàng rồi trừ; đổi tiền thì chia.
+5. Lối tắt: Thử lại bằng cách cộng tiền hàng với tiền trả lại, phải đúng bằng tiền đưa.
+6. Kết quả: **10 tờ**.
 
-*Lỗi hay mắc:* Nhầm 1 m = 10 cm.
+*Lỗi hay mắc:* Lấy tiền đưa trừ ngay giá một quyển vở.
 
 ### Bài 3, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **Khánh: 13 viên, Đức: 9 viên**
-b) **Sơn: 64 viên, Ngọc: 58 viên**
-c) **Hùng: 44 viên, Thảo: 26 viên**
-d) **Bình: 127 viên, Ngọc: 69 viên**
-e) **Yến: 16 viên, Phúc: 10 viên**
-f) **Hà: 22 viên, Yến: 14 viên**
+a) **187 kg**
+b) **1 164 kg**
+c) **204 kg**
+d) **153 kg**
+e) **895 kg**
+f) **81 kg**
 
 **Cách giải mẫu:**
 
-1. Vẽ hai đoạn thẳng: đoạn của Khánh dài hơn đoạn của Đức đúng 4 viên.
-2. Bước 1 — nếu bớt 4 viên của Khánh thì hai đoạn bằng nhau, tổng mới là 22 − 4 = 18 (viên).
-3. Bước 2 — chia đôi tổng mới được số bi của Đức: 18 : 2 = 9 (viên).
-4. Bước 3 — số bi của Khánh: 9 + 4 = 13 (viên).
-5. Thử lại: 13 + 9 = 22 ✓ và 13 − 9 = 4 ✓
-6. Đáp số: **Khánh 13 viên, Đức 9 viên**.
+1. Xét ý a: 4 ngày đầu tuần một cửa hàng bán được lần lượt 186, 192, 175, 195 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
+2. Đọc vị: đây là dạng **Ba dạng bài trung bình cộng**; dấu hiệu là Cụm “trung bình mỗi …”.
+3. Kiến thức phải dùng: Quan hệ tổng – số lượng – trung bình cộng.
+4. Cách làm: Đi qua tổng làm trung gian.
+5. Lối tắt: Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng.
+6. Kết quả: **187 kg**.
 
-*Lỗi hay mắc:* Chia đôi tổng ngay rồi cộng hiệu vào cả hai số.
+*Lỗi hay mắc:* Đi tìm ngay số còn thiếu mà chưa tính tổng.
 
-### Bài 4, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **12**
-b) **4 đường ngang, 5 đường dọc**
-c) **60**
-d) **20**
-e) **40**
+a) **40**
+b) **40 cm²**
+c) **1 cm²**
+d) **20 cm²**
+e) **10 cm²**
+f) **36 cm**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Lưới có bao nhiêu ô vuông nhỏ?
-2. Đọc vị: đây là dạng **Đếm hình trong lưới**; dấu hiệu là Lưới ô vuông đều.
-3. Kiến thức phải dùng: Quy tắc đếm.
-4. Cách làm: Đếm theo đường kẻ hoặc theo cỡ.
-5. Lối tắt: Số cách chọn 2 trong k là k × (k − 1) : 2.
-6. Kết quả: **12**.
+1. Bước 1 — diện tích hình chữ nhật: 10 × 4 = 40 (cm²).
+2. Bước 2 — diện tích một hình vuông nhỏ: 1 × 1 = 1 (cm²).
+3. Bước 3 — số hình vuông cần dùng: 40 : 1 = 40 (hình).
+4. Kiểm tra: xếp được 10 hàng, mỗi hàng 4 hình — đúng 40 hình ✓
+5. Đáp số: **40 hình vuông**.
 
-*Lỗi hay mắc:* Chỉ đếm ô nhỏ, quên hình ghép từ nhiều ô.
+*Lỗi hay mắc:* Chia chu vi cho cạnh mảnh thay vì chia diện tích cho diện tích.
 
 ### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **3**
-b) **3**
-c) **6**
-d) **6**
-e) **21**
-f) **6**
+a) **6**
+b) **4**
+c) **10**
+d) **5**
+e) **15**
+f) **5**
 
 **Cách giải mẫu:**
 
 1. Mỗi đoạn thẳng được xác định bởi **hai điểm**.
-2. Mỗi điểm nối được với 2 điểm còn lại, tổng 3 × 2 = 6 lượt.
+2. Mỗi điểm nối được với 3 điểm còn lại, tổng 4 × 3 = 12 lượt.
 3. Mỗi đoạn bị đếm hai lần (một lần từ mỗi đầu), nên chia 2.
-4. Số đoạn thẳng: 6 : 2 = 3.
+4. Số đoạn thẳng: 12 : 2 = 6.
 5. Kiểm tra với 3 điểm: 3 × 2 : 2 = 3 đoạn ✓
-6. Đáp số: **3 đoạn thẳng**.
+6. Đáp số: **6 đoạn thẳng**.
 
 *Lỗi hay mắc:* Chỉ đếm các đoạn nhỏ nhất, quên các đoạn ghép.
 
@@ -198,9 +197,9 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài | Đo cái gì | Sai bài này nghĩa là | Học lại ở đâu |
 |:--:|---|---|---|
 | Bài 1 | Đọc, viết, cấu tạo số | Đếm hàng từ trái sang phải nên lệch hàng. | Nhóm chuyên đề **—** · mức — |
-| Bài 2 | Đổi đơn vị đo | Nhầm 1 m = 10 cm. | Nhóm chuyên đề **—** · mức — |
-| Bài 3 | Bài toán tổng – hiệu | Chia đôi tổng ngay rồi cộng hiệu vào cả hai số. | Nhóm chuyên đề **—** · mức — |
-| Bài 4 | Đếm hình trong lưới | Chỉ đếm ô nhỏ, quên hình ghép từ nhiều ô. | Nhóm chuyên đề **—** · mức — |
+| Bài 2 | Bài toán tiền tệ hai bước | Lấy tiền đưa trừ ngay giá một quyển vở. | Nhóm chuyên đề **—** · mức — |
+| Bài 3 | Ba dạng bài trung bình cộng | Đi tìm ngay số còn thiếu mà chưa tính tổng. | Nhóm chuyên đề **—** · mức — |
+| Bài 4 | Phủ hình, chia hình | Chia chu vi cho cạnh mảnh thay vì chia diện tích cho diện tích. | Nhóm chuyên đề **—** · mức — |
 | Bài 5 | Đếm hình bằng quy tắc chọn hai điểm | Chỉ đếm các đoạn nhỏ nhất, quên các đoạn ghép. | Nhóm chuyên đề **—** · mức — |
 
 ---

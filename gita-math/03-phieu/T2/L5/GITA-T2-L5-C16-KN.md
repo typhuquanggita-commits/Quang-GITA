@@ -55,52 +55,55 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Giải bằng phương pháp rút về đơn vị.
 
-a) 12 bao muối nặng 276 kg. Hỏi 14 bao như thế nặng bao nhiêu kg?
-b) 8 bao thóc nặng 168 kg. Hỏi 10 bao như thế nặng bao nhiêu kg?
-c) 6 bao muối nặng 330 kg. Hỏi 5 bao như thế nặng bao nhiêu kg?
-d) 2 bao phân bón nặng 66 kg. Hỏi 3 bao như thế nặng bao nhiêu kg?
-e) 7 bao thóc nặng 98 kg. Hỏi 17 bao như thế nặng bao nhiêu kg?
+a) 3 bao xi măng nặng 72 kg. Hỏi 15 bao như thế nặng bao nhiêu kg?
+b) 4 bao muối nặng 64 kg. Hỏi 9 bao như thế nặng bao nhiêu kg?
+c) 3 bao xi măng nặng 9 kg. Hỏi 12 bao như thế nặng bao nhiêu kg?
+d) 5 bao gạo nặng 70 kg. Hỏi 5 bao như thế nặng bao nhiêu kg?
+e) 7 bao phân bón nặng 322 kg. Hỏi 8 bao như thế nặng bao nhiêu kg?
 
-### Bài 2. (5 điểm) Tìm hai số khi biết tổng và hiệu
-
-Tìm hai số trong mỗi trường hợp.
-
-a) Tổng hai số là 756, hiệu hai số là 208. Tìm hai số đó.
-b) Tổng hai số là 504, hiệu hai số là 92. Tìm hai số đó.
-c) Tổng hai số là 1 568, hiệu hai số là 340. Tìm hai số đó.
-d) Tổng hai số là 1 398, hiệu hai số là 314. Tìm hai số đó.
-e) Tổng hai số là 1 668, hiệu hai số là 530. Tìm hai số đó.
-f) Tổng hai số là 1 352, hiệu hai số là 106. Tìm hai số đó.
-
-### Bài 3. (5 điểm) Nhiều hơn – ít hơn, gấp – kém
-
-Đọc kĩ rồi trả lời từng câu.
-
-a) Khánh có 34 quyển vở, Chi có nhiều hơn Khánh 9 quyển. Chi có bao nhiêu quyển vở?
-b) Khánh có 192 quyển vở, số vở của Chi kém 6 lần số vở của Khánh. Chi có bao nhiêu quyển vở?
-c) Khánh có 57 quyển vở, Chi có ít hơn Khánh 16 quyển. Chi có bao nhiêu quyển vở?
-d) Khánh có 39 quyển vở, Chi có số vở gấp 5 lần Khánh. Chi có bao nhiêu quyển vở?
-e) Khánh có 42 quyển vở, Chi có nhiều hơn Khánh 22 quyển. Chi có bao nhiêu quyển vở?
-
-### Bài 4. (5 điểm) Quãng đường – vận tốc – thời gian
-
-Ghi rõ đơn vị của từng đại lượng.
-
-a) Một người đi 270 km hết 6 giờ. Tính vận tốc.
-b) Một người đi xe đạp với vận tốc 36 km/giờ trong 3 giờ. Tính quãng đường đi được.
-c) Một người đi quãng đường 24 km với vận tốc 12 km/giờ. Tính thời gian đi.
-d) Một người đi xe đạp với vận tốc 15 km/giờ trong 4 giờ. Tính quãng đường đi được.
-e) Một người đi quãng đường 108 km với vận tốc 36 km/giờ. Tính thời gian đi.
-
-### Bài 5. (5 điểm) Tìm trung bình cộng của nhiều số
+### Bài 2. (5 điểm) Tìm trung bình cộng của nhiều số
 
 Tính trung bình cộng.
 
-a) Tìm trung bình cộng của 4 số: 68, 88, 86, 70.
-b) Tìm trung bình cộng của 3 số: 80, 60, 76.
-c) Tìm trung bình cộng của 2 số: 30, 20.
-d) Tìm trung bình cộng của 5 số: 97, 82, 83, 81, 87.
-e) Tìm trung bình cộng của 3 số: 133, 117, 131.
+a) Tìm trung bình cộng của 3 số: 37, 42, 26.
+b) Tìm trung bình cộng của 5 số: 176, 169, 170, 165, 180.
+c) Tìm trung bình cộng của 2 số: 65, 45.
+d) Tìm trung bình cộng của 4 số: 135, 153, 147, 129.
+e) Tìm trung bình cộng của 2 số: 192, 194.
+f) Tìm trung bình cộng của 4 số: 192, 192, 209, 203.
+g) Tìm trung bình cộng của 3 số: 28, 27, 23.
+
+### Bài 3. (5 điểm) Quãng đường – vận tốc – thời gian
+
+Ghi rõ đơn vị của từng đại lượng.
+
+a) Một người đi quãng đường 144 km với vận tốc 36 km/giờ. Tính thời gian đi.
+b) Một người đi xe đạp với vận tốc 30 km/giờ trong 3 giờ. Tính quãng đường đi được.
+c) Một người đi 36 km hết 3 giờ. Tính vận tốc.
+d) Một người đi quãng đường 100 km với vận tốc 20 km/giờ. Tính thời gian đi.
+e) Một người đi xe đạp với vận tốc 30 km/giờ trong 5 giờ. Tính quãng đường đi được.
+f) Một người đi 180 km hết 5 giờ. Tính vận tốc.
+
+### Bài 4. (5 điểm) Tìm hai số khi biết tổng và hiệu
+
+Tìm hai số trong mỗi trường hợp.
+
+a) Tổng hai số là 446, hiệu hai số là 106. Tìm hai số đó.
+b) Tổng hai số là 1 716, hiệu hai số là 458. Tìm hai số đó.
+c) Tổng hai số là 752, hiệu hai số là 112. Tìm hai số đó.
+d) Tổng hai số là 1 376, hiệu hai số là 24. Tìm hai số đó.
+e) Tổng hai số là 1 854, hiệu hai số là 152. Tìm hai số đó.
+f) Tổng hai số là 178, hiệu hai số là 30. Tìm hai số đó.
+g) Tổng hai số là 1 954, hiệu hai số là 350. Tìm hai số đó.
+
+### Bài 5. (5 điểm) Nhiều hơn – ít hơn, gấp – kém
+
+Đọc kĩ rồi trả lời từng câu.
+
+a) Thảo có 16 quyển vở, Lan có nhiều hơn Thảo 26 quyển. Lan có bao nhiêu quyển vở?
+b) Thảo có 64 quyển vở, Lan có ít hơn Thảo 27 quyển. Lan có bao nhiêu quyển vở?
+c) Thảo có 135 quyển vở, số vở của Lan kém 3 lần số vở của Thảo. Lan có bao nhiêu quyển vở?
+d) Thảo có 52 quyển vở, Lan có số vở gấp 2 lần Thảo. Lan có bao nhiêu quyển vở?
 
 ---
 
@@ -332,34 +335,34 @@ f) Mẹo nhanh em sẽ tặng lớp?
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài A.1
-**Đáp số:** a) 322 · b) 210 · c) 275 · d) 99 · e) 238
+**Đáp số:** a) 360 · b) 144 · c) 36 · d) 70 · e) 368
 **Hướng giải:** Bước 1 — rút về đơn vị: tìm giá trị của **một** đơn vị bằng phép chia. Bước 2: nhân giá trị một đơn vị với số đơn vị cần tìm.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Bước rút về đơn vị luôn là phép **chia**, và phải làm trước.
 **Lỗi thường gặp:** Nhân ngay hai số đã cho mà bỏ qua bước chia. Phòng: Viết rõ câu “Một bao nặng … kg” trước khi làm bước hai.
 
 ### Bài A.2
-**Đáp số:** a) số lớn 482, số bé 274 · b) số lớn 298, số bé 206 · c) số lớn 954, số bé 614 · d) số lớn 856, số bé 542 · e) số lớn 1 099, số bé 569 · f) số lớn 729, số bé 623
-**Hướng giải:** Số lớn = (tổng + hiệu) : 2. Số bé = (tổng − hiệu) : 2. Cách hiểu: vẽ hai đoạn thẳng, đoạn dài hơn phần hiệu; bớt phần hiệu đi thì hai đoạn bằng nhau, mỗi đoạn là số bé.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng hiệu ra **số lớn**, trừ hiệu ra **số bé** — nhớ đúng chiều.
-**Lỗi thường gặp:** Lấy (tổng + hiệu) : 2 rồi gọi đó là số bé. Phòng: Vẽ sơ đồ đoạn thẳng trước, đoạn dài hơn luôn là số lớn.
+**Đáp số:** a) 35 · b) 172 · c) 55 · d) 141 · e) 193 · f) 199 · g) 26
+**Hướng giải:** Trung bình cộng của nhiều số bằng tổng các số đó chia cho số lượng các số. Cộng cho hết rồi mới chia, không chia từng số một.
+**Nhãn tư duy:** TD1. Điểm chốt: Chia cho **số lượng số hạng**, không phải chia cho một số bất kì.
+**Lỗi thường gặp:** Đếm sai số lượng số hạng nên chia nhầm. Phòng: Đánh số thứ tự từng số trước khi cộng.
 
 ### Bài A.3
-**Đáp số:** a) 43 · b) 32 · c) 41 · d) 195 · e) 64
-**Hướng giải:** BẪY — Gấp và kém dùng hai phép tính ngược nhau. “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
-**Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
-**Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
-
-### Bài A.4
-**Đáp số:** a) 45 km/giờ · b) 108 km · c) 2 giờ · d) 60 km · e) 3 giờ
+**Đáp số:** a) 4 giờ · b) 90 km · c) 12 km/giờ · d) 5 giờ · e) 150 km · f) 36 km/giờ
 **Hướng giải:** BẪY — Đơn vị thời gian. Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng kia.
 **Lỗi thường gặp:** Vận tốc km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
 
+### Bài A.4
+**Đáp số:** a) số lớn 276, số bé 170 · b) số lớn 1 087, số bé 629 · c) số lớn 432, số bé 320 · d) số lớn 700, số bé 676 · e) số lớn 1 003, số bé 851 · f) số lớn 104, số bé 74 · g) số lớn 1 152, số bé 802
+**Hướng giải:** Số lớn = (tổng + hiệu) : 2. Số bé = (tổng − hiệu) : 2. Cách hiểu: vẽ hai đoạn thẳng, đoạn dài hơn phần hiệu; bớt phần hiệu đi thì hai đoạn bằng nhau, mỗi đoạn là số bé.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng hiệu ra **số lớn**, trừ hiệu ra **số bé** — nhớ đúng chiều.
+**Lỗi thường gặp:** Lấy (tổng + hiệu) : 2 rồi gọi đó là số bé. Phòng: Vẽ sơ đồ đoạn thẳng trước, đoạn dài hơn luôn là số lớn.
+
 ### Bài A.5
-**Đáp số:** a) 78 · b) 72 · c) 25 · d) 86 · e) 127
-**Hướng giải:** Trung bình cộng của nhiều số bằng tổng các số đó chia cho số lượng các số. Cộng cho hết rồi mới chia, không chia từng số một.
-**Nhãn tư duy:** TD1. Điểm chốt: Chia cho **số lượng số hạng**, không phải chia cho một số bất kì.
-**Lỗi thường gặp:** Đếm sai số lượng số hạng nên chia nhầm. Phòng: Đánh số thứ tự từng số trước khi cộng.
+**Đáp số:** a) 42 · b) 37 · c) 45 · d) 104
+**Hướng giải:** BẪY — Gấp và kém dùng hai phép tính ngược nhau. “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
+**Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
+**Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
 
 ### Bài B.1
 **Đáp số:** a) câu lời giải nêu rõ đang tìm đại lượng nào · b) phép tính, viết đủ dấu và đủ đơn vị · c) kết quả kèm đơn vị · d) câu đáp số · e) một phần tư số điểm của bài

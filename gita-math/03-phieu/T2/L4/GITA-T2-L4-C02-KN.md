@@ -42,66 +42,68 @@ Phiếu lời giải và phân tích chuyên sâu đi kèm: `GITA-T2-L4-C02-KN-G
 Họ và tên: ......................................... Lớp: ......... Điểm: ......../100
 
 > **KIẾN THỨC NỀN CỦA CHƯƠNG**
-> 1. Dãy cách đều, trung bình cộng
-> 2. Quan hệ số cây – số khoảng
+> 1. Quan hệ số cây – số khoảng
+> 2. Dãy cách đều; đổi đơn vị giờ – phút
 > 3. Công thức tổng dãy cách đều
-> 4. Dãy cách đều, bội chung nhỏ nhất
+> 4. Dãy hiệu, dãy con xen kẽ
 
 ---
 
 ## PHẦN A — CỦNG CỐ NỀN — 30 CÂU TỐC ĐỘ · Mức M1 — Nhận biết · 20 phút · 25 điểm
 
-### Bài 1. (5 điểm) Dãy số theo quy luật nhân
-
-Tìm quy luật rồi viết số hạng tiếp theo.
-
-a) 1, 4, 16, 64, …
-b) 4, 12, 36, 108, …
-c) 3, 9, 27, 81, …
-d) 6, 18, 54, 162, …
-
-### Bài 2. (5 điểm) Tìm số hạng thứ n của dãy cách đều
-
-Cho dãy số: 7, 13, 19, 25, … (mỗi số hơn số liền trước 6 đơn vị).
-
-a) Số hạng thứ 10 của dãy là số nào?
-b) Số hạng thứ 15 của dãy là số nào?
-c) Số hạng thứ 16 của dãy là số nào?
-d) Số hạng thứ 27 của dãy là số nào?
-e) Số hạng thứ 41 của dãy là số nào?
-
-### Bài 3. (5 điểm) Viết tiếp ba số hạng của dãy
+### Bài 1. (5 điểm) Viết tiếp ba số hạng của dãy
 
 Tìm quy luật rồi viết tiếp ba số hạng của mỗi dãy.
 
-a) 4, 29, 54, 79, …
-b) 26, 33, 40, 47, …
-c) 23, 34, 45, 56, …
-d) 17, 42, 67, 92, …
-e) 36, 41, 46, 51, …
-f) 18, 29, 40, 51, …
+a) 29, 33, 37, 41, …
+b) 40, 43, 46, 49, …
+c) 23, 32, 41, 50, …
+d) 33, 35, 37, 39, …
+e) 39, 48, 57, 66, …
+f) 8, 14, 20, 26, …
+g) 23, 26, 29, 32, …
 
-### Bài 4. (5 điểm) Điền số còn thiếu trong dãy
+### Bài 2. (5 điểm) Điền số còn thiếu trong dãy
 
 Điền số thích hợp vào chỗ chấm.
 
-a) 26, 33, 40, 47, …, 61
-b) 24, 30, 36, …, 48, 54
-c) 29, 40, 51, …, 73, 84
-d) 9, …, 59, 84, 109, 134
-e) 6, …, 24, 33, 42, 51
+a) 9, 13, 17, …, 25, 29
+b) 29, …, 37, 41, 45, 49
+c) 21, 31, 41, 51, …, 71
+d) 4, 8, …, 16, 20, 24
+e) 28, 34, 40, …, 52, 58
+f) 32, 57, …, 107, 132, 157
+g) 27, …, 33, 36, 39, 42
 
-### Bài 5. (5 điểm) Đặt tính rồi tính (nhân, chia)
+### Bài 3. (5 điểm) Tìm số hạng thứ n của dãy cách đều
 
-Đặt tính rồi tính.
+Cho dãy số: 37, 41, 45, 49, … (mỗi số hơn số liền trước 4 đơn vị).
 
-a) 2 193 × 61
-b) 148 600 : 40
-c) 8 362 × 70
-d) 279 027 : 63
-e) 873 456 : 93
-f) 3 314 × 25
-g) 83 650 : 70
+a) Số hạng thứ 11 của dãy là số nào?
+b) Số hạng thứ 17 của dãy là số nào?
+c) Số hạng thứ 20 của dãy là số nào?
+d) Số hạng thứ 22 của dãy là số nào?
+
+### Bài 4. (5 điểm) Dãy số theo quy luật nhân
+
+Tìm quy luật rồi viết số hạng tiếp theo.
+
+a) 5, 10, 20, 40, …
+b) 4, 16, 64, 256, …
+c) 3, 12, 48, 192, …
+d) 6, 12, 24, 48, …
+e) 4, 12, 36, 108, …
+
+### Bài 5. (5 điểm) Đọc giá trị của chữ số theo hàng
+
+Cho số **739 576**.
+
+a) Chữ số ở hàng **trăm nghìn** của số 739 576 là chữ số nào, và nó có giá trị bằng bao nhiêu?
+b) Chữ số ở hàng **chục nghìn** của số 739 576 là chữ số nào, và nó có giá trị bằng bao nhiêu?
+c) Chữ số ở hàng **nghìn** của số 739 576 là chữ số nào, và nó có giá trị bằng bao nhiêu?
+d) Chữ số ở hàng **trăm** của số 739 576 là chữ số nào, và nó có giá trị bằng bao nhiêu?
+e) Chữ số ở hàng **chục** của số 739 576 là chữ số nào, và nó có giá trị bằng bao nhiêu?
+f) Chữ số ở hàng **đơn vị** của số 739 576 là chữ số nào, và nó có giá trị bằng bao nhiêu?
 
 ---
 
@@ -121,11 +123,11 @@ e) Thiếu câu lời giải thì bị trừ bao nhiêu phần điểm của bà
 
 Với mỗi dạng bài, viết một câu lời giải mẫu.
 
-a) Câu lời giải mở đầu cho dạng “Điền số hạng còn thiếu của dãy cách đều”?
-b) Câu lời giải mở đầu cho dạng “Tìm số hạng thứ n của dãy cách đều”?
-c) Câu lời giải mở đầu cho dạng “Tổng dãy số cách đều”?
-d) Câu lời giải mở đầu cho dạng “Định vị số hạng, kiểm tra một số có thuộc dãy”?
-e) Câu lời giải mở đầu cho dạng “Tổng dãy đặc biệt”?
+a) Câu lời giải mở đầu cho dạng “Tìm số hạng thứ n của dãy cách đều”?
+b) Câu lời giải mở đầu cho dạng “Quy luật hình đưa về dãy số”?
+c) Câu lời giải mở đầu cho dạng “Đếm và tính tổng dãy con thoả điều kiện chia hết”?
+d) Câu lời giải mở đầu cho dạng “Đếm số lần xuất hiện của một chữ số”?
+e) Câu lời giải mở đầu cho dạng “Tổng và trung bình cộng của dãy cách đều”?
 
 ### Bài 3. (3 điểm) Ghi đơn vị đúng chỗ
 
@@ -142,12 +144,12 @@ f) Vận tốc ghi đơn vị gì?
 
 Mỗi ý nêu một lỗi. Hãy nói cách sửa.
 
-a) Lỗi: Lấy hiệu của hai số cách nhau một chỗ trống làm khoảng cách. — cách phòng?
-b) Lỗi: Nhân khoảng cách với n nên kết quả thừa đúng một khoảng. — cách phòng?
-c) Lỗi: Quên chia 2, kết quả gấp đôi đáp số đúng. — cách phòng?
-d) Lỗi: Chia được số nguyên rồi quên cộng 1, hoặc bỏ qua phần dư. — cách phòng?
-e) Lỗi: Nhầm số hạng cuối với số lượng số hạng khi áp công thức. — cách phòng?
-f) Lỗi: Duyệt từng số hạng để đếm — không kịp khi dãy dài hàng trăm số. — cách phòng?
+a) Lỗi: Nhân khoảng cách với n nên kết quả thừa đúng một khoảng. — cách phòng?
+b) Lỗi: Vẽ tay từng hình để đếm, không kịp thời gian với hình thứ hai, ba chục. — cách phòng?
+c) Lỗi: Duyệt từng số hạng để đếm — không kịp khi dãy dài hàng trăm số. — cách phòng?
+d) Lỗi: Đếm số lượng **số** chứa chữ số đó thay vì số **lần** xuất hiện. — cách phòng?
+e) Lỗi: Tính tổng rồi chia — dài hơn và dễ sai khi số hạng nhiều. — cách phòng?
+f) Lỗi: Máy móc cộng 1 cho mọi trường hợp. — cách phòng?
 
 ### Bài 5. (3 điểm) Tự chấm bài theo thang điểm
 
@@ -175,7 +177,7 @@ e) Dò ba tầng mất bao lâu cho một bài?
 
 ### Bài 2. (3 điểm) Dò soát tình huống 1
 
-**Tình huống:** một bạn làm bài dạng “Điền số hạng còn thiếu của dãy cách đều” và mắc lỗi: Lấy hiệu của hai số cách nhau một chỗ trống làm khoảng cách.
+**Tình huống:** một bạn làm bài dạng “Tìm số hạng thứ n của dãy cách đều” và mắc lỗi: Nhân khoảng cách với n nên kết quả thừa đúng một khoảng.
 
 a) Lỗi này bị bắt ở tầng dò soát nào?
 b) Cách phòng lỗi này là gì?
@@ -185,7 +187,7 @@ e) Điểm chốt của dạng này là gì?
 
 ### Bài 3. (3 điểm) Dò soát tình huống 2
 
-**Tình huống:** một bạn làm bài dạng “Định vị số hạng, kiểm tra một số có thuộc dãy” và mắc lỗi: Chia được số nguyên rồi quên cộng 1, hoặc bỏ qua phần dư.
+**Tình huống:** một bạn làm bài dạng “Đếm số lần xuất hiện của một chữ số” và mắc lỗi: Đếm số lượng **số** chứa chữ số đó thay vì số **lần** xuất hiện.
 
 a) Lỗi này bị bắt ở tầng dò soát nào?
 b) Cách phòng lỗi này là gì?
@@ -195,7 +197,7 @@ e) Điểm chốt của dạng này là gì?
 
 ### Bài 4. (3 điểm) Dò soát tình huống 3
 
-**Tình huống:** một bạn làm bài dạng “Tìm quy luật dãy cách đều” và mắc lỗi: Chỉ xét hai số đầu rồi vội kết luận.
+**Tình huống:** một bạn làm bài dạng “Điền số hạng còn thiếu của dãy cách đều” và mắc lỗi: Lấy hiệu của hai số cách nhau một chỗ trống làm khoảng cách.
 
 a) Lỗi này bị bắt ở tầng dò soát nào?
 b) Cách phòng lỗi này là gì?
@@ -205,7 +207,7 @@ e) Điểm chốt của dạng này là gì?
 
 ### Bài 5. (3 điểm) Dò soát tình huống 4
 
-**Tình huống:** một bạn làm bài dạng “Dãy tuần hoàn” và mắc lỗi: Lấy số dư 0 rồi lấy phần tử đầu tiên của chu kì.
+**Tình huống:** một bạn làm bài dạng “Tổng dãy đặc biệt” và mắc lỗi: Nhầm số hạng cuối với số lượng số hạng khi áp công thức.
 
 a) Lỗi này bị bắt ở tầng dò soát nào?
 b) Cách phòng lỗi này là gì?
@@ -227,7 +229,7 @@ c) Mỗi nhánh chính đặt tên theo gì?
 d) Mỗi nhánh chính có mấy nhánh con bắt buộc?
 e) Vẽ xong, tự chấm bằng cách nào?
 
-### Bài 2. (5 điểm) Nhánh 1 — Tìm số hạng thứ n của dãy cách đều
+### Bài 2. (5 điểm) Nhánh 1 — Quy luật hình đưa về dãy số
 
 Điền ba nhánh con bắt buộc của nhánh này.
 
@@ -237,7 +239,7 @@ c) Nhánh con 3 — lỗi hay mắc?
 d) Ghi thêm: kiến thức phải thuộc?
 e) Ghi thêm: cách xử lý nhanh nhất?
 
-### Bài 3. (5 điểm) Nhánh 2 — Định vị số hạng, kiểm tra một số có thuộc dãy
+### Bài 3. (5 điểm) Nhánh 2 — Đếm số lần xuất hiện của một chữ số
 
 Điền ba nhánh con bắt buộc của nhánh này.
 
@@ -247,7 +249,7 @@ c) Nhánh con 3 — lỗi hay mắc?
 d) Ghi thêm: kiến thức phải thuộc?
 e) Ghi thêm: cách xử lý nhanh nhất?
 
-### Bài 4. (5 điểm) Nhánh 3 — Đếm và tính tổng dãy con thoả điều kiện chia hết
+### Bài 4. (5 điểm) Nhánh 3 — Bài toán trồng cây
 
 Điền ba nhánh con bắt buộc của nhánh này.
 
@@ -257,7 +259,7 @@ c) Nhánh con 3 — lỗi hay mắc?
 d) Ghi thêm: kiến thức phải thuộc?
 e) Ghi thêm: cách xử lý nhanh nhất?
 
-### Bài 5. (5 điểm) Nhánh 4 — Dãy số theo quy luật nhân
+### Bài 5. (5 điểm) Nhánh 4 — Tổng dãy số cách đều
 
 Điền ba nhánh con bắt buộc của nhánh này.
 
@@ -282,7 +284,7 @@ d) Phút 4 nói gì?
 e) Phút 5 nói gì?
 f) Ai trong nhóm nói phần nào?
 
-### Bài 2. (4 điểm) Nội dung giảng — Điền số hạng còn thiếu của dãy cách đều
+### Bài 2. (4 điểm) Nội dung giảng — Tìm số hạng thứ n của dãy cách đều
 
 Chuẩn bị nội dung để giảng dạng bài này cho lớp.
 
@@ -293,7 +295,7 @@ d) Ví dụ mẫu em sẽ giảng?
 e) Lỗi em sẽ cảnh báo cho lớp?
 f) Mẹo nhanh em sẽ tặng lớp?
 
-### Bài 3. (4 điểm) Nội dung giảng — Tổng dãy số cách đều
+### Bài 3. (4 điểm) Nội dung giảng — Đếm và tính tổng dãy con thoả điều kiện chia hết
 
 Chuẩn bị nội dung để giảng dạng bài này cho lớp.
 
@@ -304,7 +306,7 @@ d) Ví dụ mẫu em sẽ giảng?
 e) Lỗi em sẽ cảnh báo cho lớp?
 f) Mẹo nhanh em sẽ tặng lớp?
 
-### Bài 4. (4 điểm) Nội dung giảng — Tổng dãy đặc biệt
+### Bài 4. (4 điểm) Nội dung giảng — Tổng và trung bình cộng của dãy cách đều
 
 Chuẩn bị nội dung để giảng dạng bài này cho lớp.
 
@@ -315,7 +317,7 @@ d) Ví dụ mẫu em sẽ giảng?
 e) Lỗi em sẽ cảnh báo cho lớp?
 f) Mẹo nhanh em sẽ tặng lớp?
 
-### Bài 5. (4 điểm) Nội dung giảng — Tìm quy luật dãy cách đều
+### Bài 5. (4 điểm) Nội dung giảng — Điền số hạng còn thiếu của dãy cách đều
 
 Chuẩn bị nội dung để giảng dạng bài này cho lớp.
 
@@ -333,34 +335,34 @@ f) Mẹo nhanh em sẽ tặng lớp?
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài A.1
-**Đáp số:** a) 256 · b) 324 · c) 243 · d) 486
-**Hướng giải:** Nếu các hiệu không bằng nhau, hãy thử phép chia: lấy số hạng sau chia số hạng liền trước. Nếu các thương bằng nhau thì đó là dãy nhân, viết tiếp bằng cách nhân với thương đó.
-**Nhãn tư duy:** TD4. Điểm chốt: Hiệu không đều thì **thử thương** — đó là bước tiếp theo bắt buộc.
-**Lỗi thường gặp:** Cố ép dãy nhân thành dãy cộng nên tìm ra quy luật sai. Phòng: Thử cả hai: hiệu trước, thương sau.
-
-### Bài A.2
-**Đáp số:** a) 61 · b) 91 · c) 97 · d) 163 · e) 247
-**Hướng giải:** BẪY — Nhân với n thay vì (n − 1). Số hạng thứ n = số hạng đầu + (n − 1) × khoảng cách. Chữ **(n − 1)** vì từ số hạng đầu đến số hạng thứ n phải đi qua n − 1 khoảng.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Nhân với **(n − 1)** chứ không phải n — đếm khoảng chứ không đếm số hạng.
-**Lỗi thường gặp:** Nhân khoảng cách với n nên kết quả thừa đúng một khoảng. Phòng: Kiểm chứng công thức với n = 1: phải ra đúng số hạng đầu.
-
-### Bài A.3
-**Đáp số:** a) 104, 129, 154 · b) 54, 61, 68 · c) 67, 78, 89 · d) 117, 142, 167 · e) 56, 61, 66 · f) 62, 73, 84
+**Đáp số:** a) 45, 49, 53 · b) 52, 55, 58 · c) 59, 68, 77 · d) 41, 43, 45 · e) 75, 84, 93 · f) 32, 38, 44 · g) 35, 38, 41
 **Hướng giải:** Lấy số hạng sau trừ số hạng liền trước để tìm khoảng cách. Nếu các hiệu bằng nhau thì đó là dãy cách đều; cứ cộng thêm khoảng cách để viết tiếp.
 **Nhãn tư duy:** TD4. Điểm chốt: Kiểm tra hiệu ở **ít nhất ba cặp** liên tiếp trước khi kết luận quy luật.
 **Lỗi thường gặp:** Chỉ xét hai số đầu rồi vội kết luận. Phòng: Viết hiệu giữa các số hạng ngay dưới dấu ngoặc giữa chúng.
 
-### Bài A.4
-**Đáp số:** a) 54 · b) 42 · c) 62 · d) 34 · e) 15
+### Bài A.2
+**Đáp số:** a) 21 · b) 33 · c) 61 · d) 12 · e) 46 · f) 82 · g) 30
 **Hướng giải:** BẪY — Hai số hai bên chỗ trống cách nhau hai khoảng. Tìm khoảng cách của dãy từ những cặp số đã biết đứng cạnh nhau, rồi lấy số đứng trước chỗ trống cộng thêm khoảng cách đó.
 **Nhãn tư duy:** TD4, TD1. Điểm chốt: Tìm khoảng cách ở **chỗ có hai số liền nhau đã biết**.
 **Lỗi thường gặp:** Lấy hiệu của hai số cách nhau một chỗ trống làm khoảng cách. Phòng: Đánh số thứ tự vị trí rồi mới tính khoảng cách.
 
+### Bài A.3
+**Đáp số:** a) 77 · b) 101 · c) 113 · d) 121
+**Hướng giải:** BẪY — Nhân với n thay vì (n − 1). Số hạng thứ n = số hạng đầu + (n − 1) × khoảng cách. Chữ **(n − 1)** vì từ số hạng đầu đến số hạng thứ n phải đi qua n − 1 khoảng.
+**Nhãn tư duy:** TD4, TD3. Điểm chốt: Nhân với **(n − 1)** chứ không phải n — đếm khoảng chứ không đếm số hạng.
+**Lỗi thường gặp:** Nhân khoảng cách với n nên kết quả thừa đúng một khoảng. Phòng: Kiểm chứng công thức với n = 1: phải ra đúng số hạng đầu.
+
+### Bài A.4
+**Đáp số:** a) 80 · b) 1 024 · c) 768 · d) 96 · e) 324
+**Hướng giải:** Nếu các hiệu không bằng nhau, hãy thử phép chia: lấy số hạng sau chia số hạng liền trước. Nếu các thương bằng nhau thì đó là dãy nhân, viết tiếp bằng cách nhân với thương đó.
+**Nhãn tư duy:** TD4. Điểm chốt: Hiệu không đều thì **thử thương** — đó là bước tiếp theo bắt buộc.
+**Lỗi thường gặp:** Cố ép dãy nhân thành dãy cộng nên tìm ra quy luật sai. Phòng: Thử cả hai: hiệu trước, thương sau.
+
 ### Bài A.5
-**Đáp số:** a) 133 773 · b) 3 715 · c) 585 340 · d) 4 429 · e) 9 392 · f) 82 850 · g) 1 195
-**Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
-**Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
-**Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+**Đáp số:** a) chữ số 7, giá trị 700 000 · b) chữ số 3, giá trị 30 000 · c) chữ số 9, giá trị 9 000 · d) chữ số 5, giá trị 500 · e) chữ số 7, giá trị 70 · f) chữ số 6, giá trị 6
+**Hướng giải:** Đếm hàng từ phải sang trái: đơn vị – chục – trăm – nghìn – chục nghìn – trăm nghìn – triệu. Giá trị của một chữ số bằng chính chữ số đó nhân với giá trị của hàng nó đứng.
+**Nhãn tư duy:** TD1. Điểm chốt: Phân biệt **chữ số** (một kí hiệu) với **giá trị** của chữ số (chữ số nhân giá trị hàng).
+**Lỗi thường gặp:** Đếm hàng từ trái sang phải nên lệch hàng. Phòng: Luôn viết số ra nháp rồi đánh dấu hàng đơn vị trước, đi ngược về trái.
 
 ### Bài B.1
 **Đáp số:** a) câu lời giải nêu rõ đang tìm đại lượng nào · b) phép tính, viết đủ dấu và đủ đơn vị · c) kết quả kèm đơn vị · d) câu đáp số · e) một phần tư số điểm của bài
@@ -369,7 +371,7 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Lỗi thường gặp:** Viết thẳng phép tính, bỏ câu lời giải. Phòng: Đọc lại bài đã làm, đếm xem có đủ bốn dòng chưa.
 
 ### Bài B.2
-**Đáp số:** a) “Điền số hạng còn thiếu của dãy cách đều là:” · b) “Tìm số hạng thứ n của dãy cách đều là:” · c) “Tổng dãy số cách đều là:” · d) “Định vị số hạng, kiểm tra một số có thuộc dãy là:” · e) “Tổng dãy đặc biệt là:”
+**Đáp số:** a) “Tìm số hạng thứ n của dãy cách đều là:” · b) “Quy luật hình đưa về dãy số là:” · c) “Đếm và tính tổng dãy con thoả điều kiện chia hết là:” · d) “Đếm số lần xuất hiện của một chữ số là:” · e) “Tổng và trung bình cộng của dãy cách đều là:”
 **Hướng giải:** Câu lời giải chỉ cần nhắc lại đại lượng đang tìm, không cần dài dòng.
 **Nhãn tư duy:** TD1. Điểm chốt: Câu lời giải phải **nêu đúng đại lượng** đang tìm.
 **Lỗi thường gặp:** Viết câu lời giải chung chung cho mọi bài. Phòng: Lấy đúng cụm từ trong câu hỏi của đề làm câu lời giải.
@@ -381,7 +383,7 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Lỗi thường gặp:** Ghi diện tích bằng cm thay vì cm². Phòng: Trước khi viết đáp số, hỏi: đại lượng này đo bằng gì?
 
 ### Bài B.4
-**Đáp số:** a) Đánh số thứ tự vị trí rồi mới tính khoảng cách. · b) Kiểm chứng công thức với n = 1: phải ra đúng số hạng đầu. · c) Kiểm tra bằng dãy ngắn: 1 + 2 + 3 = 6, công thức phải cho đúng 6. · d) Luôn ghi rõ thương và số dư khi chia. · e) Đếm số số hạng trước rồi mới thay vào công thức. · f) Tìm số hạng đầu tiên thoả điều kiện rồi xác định khoảng cách mới.
+**Đáp số:** a) Kiểm chứng công thức với n = 1: phải ra đúng số hạng đầu. · b) Lập bảng ba hình đầu để tìm khoảng cách rồi mới dùng công thức. · c) Tìm số hạng đầu tiên thoả điều kiện rồi xác định khoảng cách mới. · d) Kẻ bảng: hàng đơn vị – hàng chục – hàng trăm, đếm riêng rồi cộng. · e) Nhớ tính chất trung bình cộng để kiểm tra chéo kết quả tổng. · f) Vẽ một đoạn ngắn với 3 khoảng để đếm thử trước khi áp dụng.
 **Hướng giải:** Mỗi lỗi đều có một cách phòng cụ thể, làm được ngay trong lúc làm bài. Chép cả cặp lỗi – cách phòng vào sổ lỗi.
 **Nhãn tư duy:** TD2. Điểm chốt: Sổ lỗi chỉ có ích khi ghi **cả cách phòng**, không chỉ ghi lỗi.
 **Lỗi thường gặp:** Ghi lỗi vào sổ nhưng không ghi cách phòng nên lần sau vẫn sai. Phòng: Mỗi dòng sổ lỗi bắt buộc có hai cột: lỗi và cách phòng.
@@ -399,28 +401,28 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Lỗi thường gặp:** Dò lại phép tính nhưng không đọc lại câu hỏi. Phòng: Sau mỗi bài, đọc to lại câu hỏi rồi đối chiếu với đáp số.
 
 ### Bài C.2
+**Đáp số:** a) tầng 2 · b) Kiểm chứng công thức với n = 1: phải ra đúng số hạng đầu. · c) toàn bộ số điểm của ý sai · d) Kiểm chứng công thức với n = 1: phải ra đúng số hạng đầu. · e) Nhân với **(n − 1)** chứ không phải n — đếm khoảng chứ không đếm số hạng.
+**Hướng giải:** Số hạng thứ n = số hạng đầu + (n − 1) × khoảng cách. Chữ **(n − 1)** vì từ số hạng đầu đến số hạng thứ n phải đi qua n − 1 khoảng.
+**Nhãn tư duy:** TD4, TD3. Điểm chốt: Nhân với **(n − 1)** chứ không phải n — đếm khoảng chứ không đếm số hạng.
+**Lỗi thường gặp:** Nhân khoảng cách với n nên kết quả thừa đúng một khoảng. Phòng: Kiểm chứng công thức với n = 1: phải ra đúng số hạng đầu.
+
+### Bài C.3
+**Đáp số:** a) tầng 2 · b) Kẻ bảng: hàng đơn vị – hàng chục – hàng trăm, đếm riêng rồi cộng. · c) toàn bộ số điểm của ý sai · d) Kẻ bảng: hàng đơn vị – hàng chục – hàng trăm, đếm riêng rồi cộng. · e) Một số có thể chứa chữ số đó **nhiều lần**; đếm theo hàng thì không sót.
+**Hướng giải:** Đếm theo từng hàng: đếm số lần chữ số đó đứng ở hàng đơn vị, rồi hàng chục, rồi hàng trăm. Ở mỗi hàng, các số thoả mãn lập thành dãy cách đều, dùng công thức đếm số hạng.
+**Nhãn tư duy:** TD4, TD6. Điểm chốt: Một số có thể chứa chữ số đó **nhiều lần**; đếm theo hàng thì không sót.
+**Lỗi thường gặp:** Đếm số lượng **số** chứa chữ số đó thay vì số **lần** xuất hiện. Phòng: Kẻ bảng: hàng đơn vị – hàng chục – hàng trăm, đếm riêng rồi cộng.
+
+### Bài C.4
 **Đáp số:** a) tầng 2 · b) Đánh số thứ tự vị trí rồi mới tính khoảng cách. · c) toàn bộ số điểm của ý sai · d) Đánh số thứ tự vị trí rồi mới tính khoảng cách. · e) Tìm khoảng cách ở **chỗ có hai số liền nhau đã biết**.
 **Hướng giải:** Tìm khoảng cách của dãy từ những cặp số đã biết đứng cạnh nhau, rồi lấy số đứng trước chỗ trống cộng thêm khoảng cách đó.
 **Nhãn tư duy:** TD4, TD1. Điểm chốt: Tìm khoảng cách ở **chỗ có hai số liền nhau đã biết**.
 **Lỗi thường gặp:** Lấy hiệu của hai số cách nhau một chỗ trống làm khoảng cách. Phòng: Đánh số thứ tự vị trí rồi mới tính khoảng cách.
 
-### Bài C.3
-**Đáp số:** a) tầng 2 · b) Luôn ghi rõ thương và số dư khi chia. · c) toàn bộ số điểm của ý sai · d) Luôn ghi rõ thương và số dư khi chia. · e) Phép chia **có dư** là bằng chứng số đó không thuộc dãy.
-**Hướng giải:** Muốn biết một số là số hạng thứ mấy: lấy số đó trừ số hạng đầu, chia cho khoảng cách rồi cộng 1. Nếu phép chia còn dư thì số đó **không thuộc** dãy.
-**Nhãn tư duy:** TD4, TD2. Điểm chốt: Phép chia **có dư** là bằng chứng số đó không thuộc dãy.
-**Lỗi thường gặp:** Chia được số nguyên rồi quên cộng 1, hoặc bỏ qua phần dư. Phòng: Luôn ghi rõ thương và số dư khi chia.
-
-### Bài C.4
-**Đáp số:** a) tầng 2 · b) Viết hiệu giữa các số hạng ngay dưới dấu ngoặc giữa chúng. · c) toàn bộ số điểm của ý sai · d) Viết hiệu giữa các số hạng ngay dưới dấu ngoặc giữa chúng. · e) Kiểm tra hiệu ở **ít nhất ba cặp** liên tiếp trước khi kết luận quy luật.
-**Hướng giải:** Lấy số hạng sau trừ số hạng liền trước để tìm khoảng cách. Nếu các hiệu bằng nhau thì đó là dãy cách đều; cứ cộng thêm khoảng cách để viết tiếp.
-**Nhãn tư duy:** TD4. Điểm chốt: Kiểm tra hiệu ở **ít nhất ba cặp** liên tiếp trước khi kết luận quy luật.
-**Lỗi thường gặp:** Chỉ xét hai số đầu rồi vội kết luận. Phòng: Viết hiệu giữa các số hạng ngay dưới dấu ngoặc giữa chúng.
-
 ### Bài C.5
-**Đáp số:** a) tầng 2 · b) Kiểm chứng bằng một vị trí nhỏ đã biết trước khi làm vị trí lớn. · c) toàn bộ số điểm của ý sai · d) Kiểm chứng bằng một vị trí nhỏ đã biết trước khi làm vị trí lớn. · e) Số dư **0** ứng với phần tử **cuối** chu kì, không phải phần tử đầu.
-**Hướng giải:** Dãy lặp lại theo chu kì độ dài k. Muốn tìm số hạng thứ n, lấy n chia cho k: số dư cho biết vị trí trong chu kì (dư 0 ứng với phần tử cuối chu kì). Muốn tính tổng n số hạng đầu, lấy tổng một chu kì nhân số chu kì đầy đủ rồi cộng phần dư.
-**Nhãn tư duy:** TD4, TD6. Điểm chốt: Số dư **0** ứng với phần tử **cuối** chu kì, không phải phần tử đầu.
-**Lỗi thường gặp:** Lấy số dư 0 rồi lấy phần tử đầu tiên của chu kì. Phòng: Kiểm chứng bằng một vị trí nhỏ đã biết trước khi làm vị trí lớn.
+**Đáp số:** a) tầng 2 · b) Đếm số số hạng trước rồi mới thay vào công thức. · c) toàn bộ số điểm của ý sai · d) Đếm số số hạng trước rồi mới thay vào công thức. · e) Phải xác định đúng **n là số lượng số hạng**, không phải số hạng cuối.
+**Hướng giải:** Tổng n số tự nhiên đầu tiên bằng n × (n + 1) : 2. Tổng n số lẻ đầu tiên bằng n × n. Tổng n số chẵn đầu tiên bằng n × (n + 1). Cả ba đều suy ra từ công thức tổng dãy cách đều.
+**Nhãn tư duy:** TD4, TD5. Điểm chốt: Phải xác định đúng **n là số lượng số hạng**, không phải số hạng cuối.
+**Lỗi thường gặp:** Nhầm số hạng cuối với số lượng số hạng khi áp công thức. Phòng: Đếm số số hạng trước rồi mới thay vào công thức.
 
 ### Bài D.1
 **Đáp số:** a) Dãy số cách đều và quy luật bảng số · b) 5 · c) tên một dạng bài của chương · d) 3 nhánh con: dấu hiệu · phương pháp · lỗi hay mắc · e) so với bảng dạng bài ở phiếu Dạng bài & Đọc vị
@@ -430,31 +432,31 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài D.2
-**Đáp số:** a) Đề hỏi “số hạng thứ …” · b) Đếm số khoảng rồi nhân với khoảng cách · c) Nhân khoảng cách với n nên kết quả thừa đúng một khoảng. · d) Công thức số hạng tổng quát của dãy cách đều · e) Thử công thức với n = 1 và n = 2 để chắc chắn không lệch một khoảng.
+**Đáp số:** a) Đề mô tả hình xếp thêm đều đặn theo thứ tự · b) Lập bảng vài hình đầu, tìm khoảng cách, áp công thức · c) Vẽ tay từng hình để đếm, không kịp thời gian với hình thứ hai, ba chục. · d) Dãy cách đều, số hạng thứ n, tổng dãy · e) Chỉ cần ba hình đầu là đủ để khẳng định quy luật cách đều.
 **Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Nhân với **(n − 1)** chứ không phải n — đếm khoảng chứ không đếm số hạng.
-**Lỗi thường gặp:** Nhân khoảng cách với n nên kết quả thừa đúng một khoảng. Phòng: Kiểm chứng công thức với n = 1: phải ra đúng số hạng đầu.
+**Nhãn tư duy:** TD4, TD3. Điểm chốt: Bài toán hình nhưng lời giải là **dãy số** — đổi ngôn ngữ trước khi tính.
+**Lỗi thường gặp:** Vẽ tay từng hình để đếm, không kịp thời gian với hình thứ hai, ba chục. Phòng: Lập bảng ba hình đầu để tìm khoảng cách rồi mới dùng công thức.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài D.3
-**Đáp số:** a) Câu hỏi “là số hạng thứ mấy”, “có thuộc dãy không” · b) (số − đầu) : khoảng cách, xét dư rồi cộng 1 · c) Chia được số nguyên rồi quên cộng 1, hoặc bỏ qua phần dư. · d) Dãy cách đều, phép chia có dư · e) Mọi số hạng của dãy đều có cùng số dư khi chia cho khoảng cách.
+**Đáp số:** a) Câu hỏi “chữ số … xuất hiện bao nhiêu lần” · b) Đếm theo từng hàng rồi cộng · c) Đếm số lượng **số** chứa chữ số đó thay vì số **lần** xuất hiện. · d) Dãy cách đều, cấu tạo số · e) Từ 1 đến 100, mỗi chữ số từ 1 đến 9 xuất hiện đúng 20 lần (riêng chữ số 1 là 21 lần vì có số 100).
 **Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
-**Nhãn tư duy:** TD4, TD2. Điểm chốt: Phép chia **có dư** là bằng chứng số đó không thuộc dãy.
-**Lỗi thường gặp:** Chia được số nguyên rồi quên cộng 1, hoặc bỏ qua phần dư. Phòng: Luôn ghi rõ thương và số dư khi chia.
+**Nhãn tư duy:** TD4, TD6. Điểm chốt: Một số có thể chứa chữ số đó **nhiều lần**; đếm theo hàng thì không sót.
+**Lỗi thường gặp:** Đếm số lượng **số** chứa chữ số đó thay vì số **lần** xuất hiện. Phòng: Kẻ bảng: hàng đơn vị – hàng chục – hàng trăm, đếm riêng rồi cộng.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài D.4
-**Đáp số:** a) Đề hỏi riêng các số chẵn, số chia hết cho … trong một dãy · b) Xác định dãy con cách đều rồi đếm, tính tổng · c) Duyệt từng số hạng để đếm — không kịp khi dãy dài hàng trăm số. · d) Dãy cách đều, bội chung nhỏ nhất · e) Nếu khoảng cách của dãy gốc đã chia hết cho số chia thì hoặc tất cả, hoặc không số hạng nào thoả điều kiện.
+**Đáp số:** a) Từ khoá “trồng cây”, “cột điện”, “quanh ao”, “hai đầu” · b) Tính số khoảng rồi chọn đúng công thức theo trường hợp · c) Máy móc cộng 1 cho mọi trường hợp. · d) Quan hệ số cây – số khoảng · e) Khép kín thì số cây bằng đúng số khoảng — không cộng, không trừ.
 **Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
-**Nhãn tư duy:** TD4, TD2. Điểm chốt: Dãy con cũng **cách đều**, chỉ khác khoảng cách.
-**Lỗi thường gặp:** Duyệt từng số hạng để đếm — không kịp khi dãy dài hàng trăm số. Phòng: Tìm số hạng đầu tiên thoả điều kiện rồi xác định khoảng cách mới.
+**Nhãn tư duy:** TD3, TD6. Điểm chốt: Đọc kĩ **có trồng ở hai đầu hay không** — bốn trường hợp cho bốn đáp số khác nhau.
+**Lỗi thường gặp:** Máy móc cộng 1 cho mọi trường hợp. Phòng: Vẽ một đoạn ngắn với 3 khoảng để đếm thử trước khi áp dụng.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài D.5
-**Đáp số:** a) Các số tăng rất nhanh, hiệu không đều · b) Thử hiệu, rồi thử thương · c) Cố ép dãy nhân thành dãy cộng nên tìm ra quy luật sai. · d) Dãy nhân, phép nhân liên tiếp · e) Số sau gấp đôi số trước là dấu hiệu quen nhất của dãy nhân.
+**Đáp số:** a) Dãy cộng dài, các số cách đều · b) Đếm số hạng → (đầu + cuối) × số hạng : 2 · c) Quên chia 2, kết quả gấp đôi đáp số đúng. · d) Công thức tổng dãy cách đều · e) Tổng = trung bình cộng của số đầu và số cuối, nhân với số số hạng.
 **Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
-**Nhãn tư duy:** TD4. Điểm chốt: Hiệu không đều thì **thử thương** — đó là bước tiếp theo bắt buộc.
-**Lỗi thường gặp:** Cố ép dãy nhân thành dãy cộng nên tìm ra quy luật sai. Phòng: Thử cả hai: hiệu trước, thương sau.
+**Nhãn tư duy:** TD4, TD5. Điểm chốt: Chia cho 2 ở cuối vì mỗi số hạng đã được **đếm hai lần** khi ghép cặp.
+**Lỗi thường gặp:** Quên chia 2, kết quả gấp đôi đáp số đúng. Phòng: Kiểm tra bằng dãy ngắn: 1 + 2 + 3 = 6, công thức phải cho đúng 6.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.1
@@ -465,31 +467,31 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.2
+**Đáp số:** a) “Hôm nay nhóm mình nói về Tìm số hạng thứ n của dãy cách đều.” · b) Đề hỏi “số hạng thứ …” · c) Công thức số hạng tổng quát của dãy cách đều · d) Dãy 5, 9, 13, … số hạng thứ 20 là số nào? → 81 · e) Nhân khoảng cách với n nên kết quả thừa đúng một khoảng. · f) Thử công thức với n = 1 và n = 2 để chắc chắn không lệch một khoảng.
+**Hướng giải:** Số hạng thứ n = số hạng đầu + (n − 1) × khoảng cách. Chữ **(n − 1)** vì từ số hạng đầu đến số hạng thứ n phải đi qua n − 1 khoảng.
+**Nhãn tư duy:** TD4, TD3. Điểm chốt: Nhân với **(n − 1)** chứ không phải n — đếm khoảng chứ không đếm số hạng.
+**Lỗi thường gặp:** Nhân khoảng cách với n nên kết quả thừa đúng một khoảng. Phòng: Kiểm chứng công thức với n = 1: phải ra đúng số hạng đầu.
+**Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
+
+### Bài E.3
+**Đáp số:** a) “Hôm nay nhóm mình nói về Đếm và tính tổng dãy con thoả điều kiện chia hết.” · b) Đề hỏi riêng các số chẵn, số chia hết cho … trong một dãy · c) Dãy cách đều, bội chung nhỏ nhất · d) Dãy 1, 4, 7, …, 100 có bao nhiêu số chẵn? → 17 · e) Duyệt từng số hạng để đếm — không kịp khi dãy dài hàng trăm số. · f) Nếu khoảng cách của dãy gốc đã chia hết cho số chia thì hoặc tất cả, hoặc không số hạng nào thoả điều kiện.
+**Hướng giải:** Các số hạng thoả thêm một điều kiện chia hết cũng lập thành một dãy cách đều mới, có khoảng cách là bội chung nhỏ nhất của khoảng cách cũ và số chia. Tìm số hạng đầu tiên thoả điều kiện rồi đếm trên dãy mới.
+**Nhãn tư duy:** TD4, TD2. Điểm chốt: Dãy con cũng **cách đều**, chỉ khác khoảng cách.
+**Lỗi thường gặp:** Duyệt từng số hạng để đếm — không kịp khi dãy dài hàng trăm số. Phòng: Tìm số hạng đầu tiên thoả điều kiện rồi xác định khoảng cách mới.
+**Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
+
+### Bài E.4
+**Đáp số:** a) “Hôm nay nhóm mình nói về Tổng và trung bình cộng của dãy cách đều.” · b) Đề cho số số hạng, khoảng cách và một đầu của dãy · c) Dãy cách đều, trung bình cộng · d) Dãy cách đều 10 số hạng, đầu 5, cuối 50. Tổng bằng bao nhiêu? → 275 · e) Tính tổng rồi chia — dài hơn và dễ sai khi số hạng nhiều. · f) Mọi cặp số hạng cách đều hai đầu đều có tổng bằng nhau.
+**Hướng giải:** Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
+**Nhãn tư duy:** TD4, TD3. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
+**Lỗi thường gặp:** Tính tổng rồi chia — dài hơn và dễ sai khi số hạng nhiều. Phòng: Nhớ tính chất trung bình cộng để kiểm tra chéo kết quả tổng.
+**Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
+
+### Bài E.5
 **Đáp số:** a) “Hôm nay nhóm mình nói về Điền số hạng còn thiếu của dãy cách đều.” · b) Dãy có ô trống ở giữa · c) Dãy số cách đều · d) Điền số: 4, 9, …, 19, 24 → 14 · e) Lấy hiệu của hai số cách nhau một chỗ trống làm khoảng cách. · f) Nếu chỗ trống nằm giữa hai số đã biết thì nó bằng trung bình cộng của hai số ấy.
 **Hướng giải:** Tìm khoảng cách của dãy từ những cặp số đã biết đứng cạnh nhau, rồi lấy số đứng trước chỗ trống cộng thêm khoảng cách đó.
 **Nhãn tư duy:** TD4, TD1. Điểm chốt: Tìm khoảng cách ở **chỗ có hai số liền nhau đã biết**.
 **Lỗi thường gặp:** Lấy hiệu của hai số cách nhau một chỗ trống làm khoảng cách. Phòng: Đánh số thứ tự vị trí rồi mới tính khoảng cách.
-**Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
-
-### Bài E.3
-**Đáp số:** a) “Hôm nay nhóm mình nói về Tổng dãy số cách đều.” · b) Dãy cộng dài, các số cách đều · c) Công thức tổng dãy cách đều · d) Tính: 2 + 4 + 6 + … + 20 → 110 · e) Quên chia 2, kết quả gấp đôi đáp số đúng. · f) Tổng = trung bình cộng của số đầu và số cuối, nhân với số số hạng.
-**Hướng giải:** Đếm số số hạng trước. Sau đó ghép số đầu với số cuối, số thứ hai với số áp chót…, mỗi cặp có tổng bằng nhau. Tổng = (đầu + cuối) × số số hạng : 2.
-**Nhãn tư duy:** TD4, TD5. Điểm chốt: Chia cho 2 ở cuối vì mỗi số hạng đã được **đếm hai lần** khi ghép cặp.
-**Lỗi thường gặp:** Quên chia 2, kết quả gấp đôi đáp số đúng. Phòng: Kiểm tra bằng dãy ngắn: 1 + 2 + 3 = 6, công thức phải cho đúng 6.
-**Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
-
-### Bài E.4
-**Đáp số:** a) “Hôm nay nhóm mình nói về Tổng dãy đặc biệt.” · b) Dãy toàn số lẻ, toàn số chẵn, hoặc số tự nhiên liên tiếp · c) Ba công thức tổng cơ bản · d) Tính: 1 + 3 + 5 + … + 19 → 100 · e) Nhầm số hạng cuối với số lượng số hạng khi áp công thức. · f) Tổng n số lẻ đầu tiên luôn là một số chính phương — dùng để kiểm tra nhanh.
-**Hướng giải:** Tổng n số tự nhiên đầu tiên bằng n × (n + 1) : 2. Tổng n số lẻ đầu tiên bằng n × n. Tổng n số chẵn đầu tiên bằng n × (n + 1). Cả ba đều suy ra từ công thức tổng dãy cách đều.
-**Nhãn tư duy:** TD4, TD5. Điểm chốt: Phải xác định đúng **n là số lượng số hạng**, không phải số hạng cuối.
-**Lỗi thường gặp:** Nhầm số hạng cuối với số lượng số hạng khi áp công thức. Phòng: Đếm số số hạng trước rồi mới thay vào công thức.
-**Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
-
-### Bài E.5
-**Đáp số:** a) “Hôm nay nhóm mình nói về Tìm quy luật dãy cách đều.” · b) Dãy số kèm dấu … ở cuối · c) Dãy số cách đều · d) Viết tiếp ba số: 2, 5, 8, 11, … → 14, 17, 20 · e) Chỉ xét hai số đầu rồi vội kết luận. · f) Ghi khoảng cách vào giữa các số hạng để nhìn ra quy luật ngay.
-**Hướng giải:** Lấy số hạng sau trừ số hạng liền trước để tìm khoảng cách. Nếu các hiệu bằng nhau thì đó là dãy cách đều; cứ cộng thêm khoảng cách để viết tiếp.
-**Nhãn tư duy:** TD4. Điểm chốt: Kiểm tra hiệu ở **ít nhất ba cặp** liên tiếp trước khi kết luận quy luật.
-**Lỗi thường gặp:** Chỉ xét hai số đầu rồi vội kết luận. Phòng: Viết hiệu giữa các số hạng ngay dưới dấu ngoặc giữa chúng.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ---

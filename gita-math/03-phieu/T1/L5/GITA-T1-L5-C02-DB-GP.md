@@ -38,27 +38,27 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần B**
 
-- **Bài B.1** — a) 7 tuần 4 ngày · b) 31 · c) không · d) XXI
-- **Bài B.2** — a) 8 128 · b) 10 218 · c) 2 102 · d) 9 927 · e) 13 952 · f) 39 421 · g) 6 272
-- **Bài B.3** — a) 59 · b) 25 · c) 400 000 · d) 76 · e) 4 500 · f) 52 · g) 520 000 · h) 17
-- **Bài B.4** — a) < · b) < · c) > · d) < · e) > · f) > · g) <
-- **Bài B.5** — a) 700 cm² · b) 304 cm² · c) 100 cm² · d) 371 cm² · e) 240 cm² · f) 108 cm²
+- **Bài B.1** — a) 3 tuần 1 ngày · b) XX · c) 30 · d) không · e) không
+- **Bài B.2** — a) 36 188 · b) 2 498 · c) 3 716 · d) 18 907
+- **Bài B.3** — a) 87,04 · b) 6,22 · c) 67,16 · d) 383,4 · e) 79,39 · f) 285,04 · g) 63,91
+- **Bài B.4** — a) < · b) < · c) < · d) > · e) > · f) <
+- **Bài B.5** — a) 33 · b) 5 600 · c) 39 · d) 85 · e) 100 000 · f) 29
 
 **Phần C**
 
-- **Bài C.1** — a) 10 · b) 26 · c) 38 · d) 50 · e) 450
-- **Bài C.2** — a) xe ô tô: 30 chiếc, xe đạp: 6 chiếc · b) xe ba bánh: 15 chiếc, xe đạp: 12 chiếc · c) xe ô tô: 30 chiếc, xe đạp: 17 chiếc · d) xe ba bánh: 7 chiếc, xe ô tô: 25 chiếc · e) xe ô tô: 26 chiếc, xe đạp: 26 chiếc
-- **Bài C.3** — a) 561 cm² · b) 60 cm² · c) 44 cm² · d) 221 cm² · e) 16 cm² · f) 540 cm²
-- **Bài C.4** — a) 174 m · b) không chia hết (86 m không chia hết cho 4 m) · c) 87 cây · d) không chia hết (142 m không chia hết cho 5 m)
-- **Bài C.5** — a) 675 nghìn đồng · b) 70 nghìn đồng · c) 26 quyển · d) 26 quyển · e) 14 quyển
+- **Bài C.1** — a) 3, 6, 9 · b) 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 · c) 1, 4, 7 · d) 7
+- **Bài C.2** — a) 60 cm² · b) 25 cm² · c) 72 cm² · d) 432 cm²
+- **Bài C.3** — a) A · b) 66 cm · c) 5 cm · d) 16 cm
+- **Bài C.4** — a) 24 quyển · b) 5 quyển · c) 1 392 nghìn đồng · d) 18 quyển
+- **Bài C.5** — a) 152 cm² · b) 39 cm² · c) 285 cm² · d) 275 cm²
 
 **Phần D**
 
-- **Bài D.1** — a) 157 cm · b) 50,24 cm · c) 2 640,74 cm² · d) 30 cm
-- **Bài D.2** — a) 9 tạ · b) 3 tạ · c) 7 tạ 60 kg · d) 15 tạ 50 kg · e) 21 tạ · f) 4 tạ
-- **Bài D.3** — a) 58 000 · b) 58 · c) 77 · d) 41 000 · e) 29 000
-- **Bài D.4** — a) 16 giờ 39 phút · b) 18 giờ 11 phút · c) 14 giờ 42 phút · d) 15 giờ 53 phút
-- **Bài D.5** — a) 152 · 38 · 38 cây · b) 570 000 đồng · c) 800 000 đồng · d) 44 · 22 · 11 cây · e) 290 000 đồng · f) 24 · 36 · 24 cây
+- **Bài D.1** — a) 5 · b) 8 · c) 1 · d) 4 · e) 1 · f) 2
+- **Bài D.2** — a) 16 giờ 53 phút · b) 12 giờ 17 phút · c) 14 giờ 33 phút · d) 22 giờ 12 phút · e) 10 giờ 57 phút
+- **Bài D.3** — a) 4 · b) 64 · c) 84 000 · d) 86 000 · e) 90
+- **Bài D.4** — a) 4 tạ 20 kg · b) 6 tạ 90 kg · c) 15 tạ · d) 15 tạ 60 kg
+- **Bài D.5** — a) 9 × 4 = 36 m² · b) 36 m² = 360 000 cm² · c) 40 × 40 = 1 600 cm² · d) 360 000 : 1 600 = 225 viên · e) 225 × 18 000 = 4 050 000 đồng
 
 **Phần E**
 
@@ -178,7 +178,7 @@ Kết quả: **Mỗi bậc thêm ba chữ số 0.**.
 
 **Các bước giải**
 
-Xét ý a: 53 ngày bằng bao nhiêu tuần lễ và mấy ngày?
+Xét ý a: 22 ngày bằng bao nhiêu tuần lễ và mấy ngày?
 
 Đọc vị: đây là dạng **Lịch và đơn vị thời gian lớn**; dấu hiệu là Đề hỏi về tháng, năm, thế kỉ.
 
@@ -188,7 +188,7 @@ Cách làm: Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400.
 
 Lối tắt: Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ.
 
-Kết quả: **7 tuần 4 ngày**.
+Kết quả: **3 tuần 1 ngày**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Các tháng 1, 3, 5, 7, 8, 10, 12 có 31 ngày; các tháng 4, 6, 9, 11 có 30 ngày; tháng 2 có 28 ngày, năm nhuận có 29 ngày. Năm nhuận là năm chia hết cho 4, riêng năm tròn trăm thì phải chia hết cho 400. Thế kỉ thứ n gồm các năm từ (n − 1) × 100 + 1 đến n × 100.
 
@@ -198,7 +198,7 @@ Kết quả: **7 tuần 4 ngày**.
 
 **Các bước giải**
 
-Xét ý a: 40 m 64 cm × 2 = … cm
+Xét ý a: 36 kg 376 g − 188 g = … g
 
 Đọc vị: đây là dạng **Bốn phép tính với số đo**; dấu hiệu là Các số hạng có đơn vị khác nhau trong cùng một phép tính.
 
@@ -208,41 +208,37 @@ Cách làm: Đổi về đơn vị của kết quả rồi tính.
 
 Lối tắt: Đọc chỗ chấm trước, biết ngay đơn vị đích.
 
-Kết quả: **8 128**.
+Kết quả: **36 188**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Chỉ cộng, trừ được các số đo **cùng đơn vị**. Bước đầu tiên luôn là đổi tất cả về đơn vị mà đề yêu cầu ở kết quả, sau đó tính như với số tự nhiên rồi ghi kèm đơn vị.
 
 *Điểm chốt:* Đơn vị của **kết quả** quyết định ta đổi về đơn vị nào.
 
-### Bài B.3 — Đơn vị đo diện tích
+### Bài B.3 — Bốn phép tính với số thập phân
 
 **Các bước giải**
 
-Xét ý a: 5 900 ha = … km²
+Xét ý a: 89,4 − 2,36
 
-Đọc vị: đây là dạng **Đổi đơn vị diện tích**; dấu hiệu là Đơn vị có mũ hai, hoặc ha, km².
+Đọc vị: đây là dạng **Bốn phép tính với số thập phân**; dấu hiệu là Các số có dấu phẩy.
 
-Kiến thức phải dùng: Bảng đơn vị đo diện tích.
+Kiến thức phải dùng: Kĩ thuật tính với số thập phân.
 
-Cách làm: Đếm bậc rồi nhân, chia 100.
+Cách làm: Chọn quy tắc đặt dấu phẩy theo phép tính.
 
-Lối tắt: Mỗi bậc thêm hai chữ số 0 — nhớ “diện tích thì gấp đôi số 0”.
+Lối tắt: Ước lượng bằng cách làm tròn để kiểm tra vị trí dấu phẩy.
 
-Kết quả: **59**.
+Kết quả: **87,04**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần**, vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Cộng, trừ số thập phân: viết các dấu phẩy **thẳng cột** rồi tính như số tự nhiên, đặt dấu phẩy ở kết quả thẳng cột với các dấu phẩy trên. Nhân số thập phân với số tự nhiên: nhân như số tự nhiên rồi đếm số chữ số thập phân của thừa số để đặt dấu phẩy.
 
-*Điểm chốt:* Đơn vị diện tích nhảy **100 lần** mỗi bậc, không phải 10 lần.
-
-*Muốn khó hơn:* Đổi hỗn hợp: 2 ha 350 m² = … m².
-
-*Phải chắc trước khi làm bài này:* Bảng đơn vị đo độ dài và phép nhân, chia với 100.
+*Điểm chốt:* Cộng trừ thì **thẳng dấu phẩy**; nhân thì **đếm chữ số thập phân**.
 
 ### Bài B.4 — So sánh hai số đo khác đơn vị
 
 **Các bước giải**
 
-Xét ý a: 32 dam … 8 225 km
+Xét ý a: 22 hg … 3 325 kg
 
 Đọc vị: đây là dạng **So sánh số đo đại lượng**; dấu hiệu là Hai vế có đơn vị khác nhau.
 
@@ -258,71 +254,55 @@ Kết quả: **<**.
 
 *Điểm chốt:* Đổi về cùng đơn vị **trước**, so sánh **sau**.
 
-### Bài B.5 — Diện tích hình thang
+### Bài B.5 — Đơn vị đo diện tích
 
 **Các bước giải**
 
-Xét ý a: Hình thang có đáy lớn 29 cm, đáy bé 27 cm, chiều cao 25 cm. Tính diện tích.
+Xét ý a: 3 300 ha = … km²
 
-Đọc vị: đây là dạng **Diện tích hình thang**; dấu hiệu là Đề cho hai đáy và chiều cao.
+Đọc vị: đây là dạng **Đổi đơn vị diện tích**; dấu hiệu là Đơn vị có mũ hai, hoặc ha, km².
 
-Kiến thức phải dùng: Công thức diện tích hình thang.
+Kiến thức phải dùng: Bảng đơn vị đo diện tích.
 
-Cách làm: Tổng hai đáy × chiều cao : 2.
+Cách làm: Đếm bậc rồi nhân, chia 100.
 
-Lối tắt: Nếu tổng hai đáy là số chẵn thì chia 2 ngay từ đầu cho gọn.
+Lối tắt: Mỗi bậc thêm hai chữ số 0 — nhớ “diện tích thì gấp đôi số 0”.
 
-Kết quả: **700 cm²**.
+Kết quả: **33**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Diện tích hình thang = (đáy lớn + đáy bé) × chiều cao : 2. Cách nhớ: ghép hai hình thang bằng nhau thành một hình bình hành có đáy bằng tổng hai đáy, nên phải chia đôi.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần**, vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
 
-*Điểm chốt:* Cộng **hai đáy** trước rồi mới nhân chiều cao và chia 2.
+*Điểm chốt:* Đơn vị diện tích nhảy **100 lần** mỗi bậc, không phải 10 lần.
 
-### Bài C.1 — Dãy hình xếp theo quy luật
+*Muốn khó hơn:* Đổi hỗn hợp: 2 ha 350 m² = … m².
 
-**Các bước giải**
+*Phải chắc trước khi làm bài này:* Bảng đơn vị đo độ dài và phép nhân, chia với 100.
 
-Xét ý a: Hình thứ 1 có 2 que diêm, mỗi hình sau hơn hình liền trước 4 que. Hình thứ 3 có bao nhiêu que diêm?
-
-Đọc vị: đây là dạng **Quy luật hình đưa về dãy số**; dấu hiệu là Đề mô tả hình xếp thêm đều đặn theo thứ tự.
-
-Kiến thức phải dùng: Dãy cách đều, số hạng thứ n, tổng dãy.
-
-Cách làm: Lập bảng vài hình đầu, tìm khoảng cách, áp công thức.
-
-Lối tắt: Chỉ cần ba hình đầu là đủ để khẳng định quy luật cách đều.
-
-Kết quả: **10**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Số que của các hình lập thành dãy cách đều. Dùng công thức số hạng thứ n để tính cho một hình bất kì, dùng công thức tổng dãy cách đều khi hỏi tổng số que của nhiều hình.
-
-*Điểm chốt:* Bài toán hình nhưng lời giải là **dãy số** — đổi ngôn ngữ trước khi tính.
-
-### Bài C.2 — Giả thiết tạm với hai loại đối tượng
+### Bài C.1 — Tìm chữ số để số chia hết cho một số cho trước
 
 **Các bước giải**
 
-Xét ý a: Trong sân có 36 chiếc xe ô tô và xe đạp, đếm được tất cả 132 bánh xe. Hỏi mỗi loại có bao nhiêu chiếc?
+Xét ý a: Tìm tất cả chữ số thay cho dấu * để số *171 chia hết cho 3.
 
-Đọc vị: đây là dạng **Giả thiết tạm hai loại**; dấu hiệu là Hai loại đối tượng, biết tổng số và tổng của một đại lượng phụ.
+Đọc vị: đây là dạng **Điền chữ số theo điều kiện chia hết**; dấu hiệu là Số có ô trống hoặc dấu *, kèm điều kiện chia hết.
 
-Kiến thức phải dùng: Phương pháp giả thiết tạm.
+Kiến thức phải dùng: Dấu hiệu chia hết, chữ số hàng cao nhất khác 0.
 
-Cách làm: Giả sử đồng nhất → tính chênh → chia cho hiệu đơn vị.
+Cách làm: Dùng dấu hiệu để lập điều kiện cho dấu * rồi thử 0–9.
 
-Lối tắt: Kiểm tra ngay: số bánh phải nằm giữa tổng × (số bánh ít nhất) và tổng × (số bánh nhiều nhất).
+Lối tắt: Với 3 và 9: tính tổng các chữ số đã biết một lần duy nhất, rồi tìm phần bù cần thêm.
 
-Kết quả: **xe ô tô: 30 chiếc, xe đạp: 6 chiếc**.
+Kết quả: **3, 6, 9**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Giả sử tất cả đều là loại có ít bánh hơn, tính tổng số bánh giả định. Số bánh còn thiếu so với thực tế chia cho hiệu số bánh của hai loại cho biết số xe loại nhiều bánh hơn.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Xét dấu hiệu chia hết ứng với số chia, rồi thử lần lượt 10 chữ số từ 0 đến 9. Nếu dấu * đứng ở hàng cao nhất thì loại chữ số 0.
 
-*Điểm chốt:* Chia cho **hiệu** số bánh của hai loại, không chia cho số bánh của một loại.
+*Điểm chốt:* Phải tìm **tất cả** chữ số thoả mãn, không dừng ở chữ số đầu tiên tìm được.
 
-### Bài C.3 — Diện tích hình bình hành, hình thoi, hình tam giác
+### Bài C.2 — Diện tích hình bình hành, hình thoi, hình tam giác
 
 **Các bước giải**
 
-Xét ý a: Hình bình hành có đáy 33 cm, chiều cao 17 cm. Tính diện tích.
+Xét ý a: Hình bình hành có đáy 15 cm, chiều cao 4 cm. Tính diện tích.
 
 Đọc vị: đây là dạng **Diện tích các hình phẳng cơ bản**; dấu hiệu là Đề cho đáy và chiều cao, hoặc hai đường chéo.
 
@@ -332,37 +312,41 @@ Cách làm: Nhận dạng hình rồi chọn công thức.
 
 Lối tắt: Tam giác bằng nửa hình bình hành cùng đáy cùng chiều cao.
 
-Kết quả: **561 cm²**.
+Kết quả: **60 cm²**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Hình bình hành: S = đáy × chiều cao. Hình thoi: S = tích hai đường chéo chia 2. Hình tam giác: S = đáy × chiều cao chia 2.
 
 *Điểm chốt:* Hình bình hành **không** chia 2; hình tam giác và hình thoi **có** chia 2.
 
-### Bài C.4 — Bài toán thực tế về chu vi và diện tích
+### Bài C.3 — Hình tròn: tâm, bán kính, đường kính
 
 **Các bước giải**
 
-Xét ý a: Một mảnh vườn hình chữ nhật dài 44 m, rộng 43 m. Người ta rào xung quanh mảnh vườn. Hỏi cần bao nhiêu mét rào?
+Xét ý a: Hình tròn A có bán kính 26 cm, hình tròn B có đường kính 38 cm. Hình nào lớn hơn?
 
-Đọc vị: đây là dạng **Chu vi, diện tích trong tình huống thực tế**; dấu hiệu là Từ khoá “rào xung quanh”, “lát gạch”, “trồng cây quanh”.
+Đọc vị: đây là dạng **Nhận biết hình tròn và các yếu tố**; dấu hiệu là Đề nhắc tâm, bán kính, đường kính.
 
-Kiến thức phải dùng: Công thức chu vi, diện tích; phép chia.
+Kiến thức phải dùng: Quan hệ đường kính – bán kính.
 
-Cách làm: Đọc vị chu vi hay diện tích rồi tính.
+Cách làm: Quy về bán kính rồi so sánh hoặc tính.
 
-Lối tắt: Nhìn đơn vị của đáp số: mét thì là chu vi, mét vuông thì là diện tích.
+Lối tắt: Nhìn đơn vị và tên đại lượng trước khi so sánh.
 
-Kết quả: **174 m**.
+Kết quả: **A**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Rào xung quanh, trồng cây quanh mảnh đất là bài toán **chu vi**. Lát gạch, trải thảm, gieo hạt khắp mặt đất là bài toán **diện tích**. Số viên gạch = diện tích nền : diện tích một viên.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Mọi bán kính của một hình tròn đều bằng nhau. Đường kính đi qua tâm và bằng **hai lần** bán kính. Muốn so sánh hai hình tròn thì đưa về cùng một đại lượng: cùng bán kính hoặc cùng đường kính.
 
-*Điểm chốt:* “Xung quanh” → chu vi; “khắp mặt” → diện tích.
+*Điểm chốt:* So sánh phải **cùng loại đại lượng** — bán kính với bán kính.
 
-### Bài C.5 — Đại lượng tỉ lệ thuận
+*Muốn khó hơn:* Ba hình tròn cùng tâm — tính khoảng cách giữa hai đường tròn liên tiếp.
+
+*Phải chắc trước khi làm bài này:* Nhân, chia với 2 và cách dùng com-pa.
+
+### Bài C.4 — Đại lượng tỉ lệ thuận
 
 **Các bước giải**
 
-Xét ý a: Mua 6 quyển vở hết 270 nghìn đồng. Mua 15 quyển vở như thế hết bao nhiêu nghìn đồng?
+Xét ý a: Mua 11 quyển vở hết 935 nghìn đồng. Với 2 040 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
 
 Đọc vị: đây là dạng **Tỉ lệ thuận, rút về đơn vị**; dấu hiệu là Hai đại lượng cùng tăng cùng giảm.
 
@@ -372,85 +356,59 @@ Cách làm: Rút về đơn vị hoặc dùng tỉ số.
 
 Lối tắt: Nếu số lượng mới gấp số lượng cũ một số nguyên lần thì nhân thẳng, không cần rút về đơn vị.
 
-Kết quả: **675 nghìn đồng**.
+Kết quả: **24 quyển**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Số vở tăng bao nhiêu lần thì số tiền tăng bấy nhiêu lần. Có hai cách: rút về đơn vị (tìm giá một quyển rồi nhân) hoặc dùng tỉ số (số vở mới gấp mấy lần số vở cũ thì tiền cũng gấp bấy nhiêu lần).
 
 *Điểm chốt:* Hai đại lượng **cùng tăng, cùng giảm** thì tỉ lệ thuận.
 
-### Bài D.1 — Chu vi và diện tích hình tròn
-
-> **BẪY — Đường kính hay bán kính.**
+### Bài C.5 — Diện tích hình thang
 
 **Các bước giải**
 
-Xét ý a: Hình tròn có đường kính 50 cm. Tính chu vi (lấy π = 3,14).
+Xét ý a: Hình thang có đáy lớn 22 cm, đáy bé 16 cm, chiều cao 8 cm. Tính diện tích.
 
-Đọc vị: đây là dạng **Chu vi, diện tích hình tròn**; dấu hiệu là Đề cho bán kính hoặc đường kính.
+Đọc vị: đây là dạng **Diện tích hình thang**; dấu hiệu là Đề cho hai đáy và chiều cao.
 
-Kiến thức phải dùng: Công thức hình tròn.
+Kiến thức phải dùng: Công thức diện tích hình thang.
 
-Cách làm: Quy về bán kính, chọn đúng công thức.
+Cách làm: Tổng hai đáy × chiều cao : 2.
 
-Lối tắt: Diện tích luôn có đơn vị mũ hai — nếu đáp số ghi cm là chắc chắn nhầm.
+Lối tắt: Nếu tổng hai đáy là số chẵn thì chia 2 ngay từ đầu cho gọn.
 
-Kết quả: **157 cm**.
+Kết quả: **152 cm²**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Chu vi hình tròn = đường kính × 3,14 = bán kính × 2 × 3,14. Diện tích hình tròn = bán kính × bán kính × 3,14. Đường kính gấp đôi bán kính.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Diện tích hình thang = (đáy lớn + đáy bé) × chiều cao : 2. Cách nhớ: ghép hai hình thang bằng nhau thành một hình bình hành có đáy bằng tổng hai đáy, nên phải chia đôi.
 
-*Điểm chốt:* Chu vi dùng **đường kính**, diện tích dùng **bán kính nhân bán kính**.
+*Điểm chốt:* Cộng **hai đáy** trước rồi mới nhân chiều cao và chia 2.
 
-### Bài D.2 — Bài toán thực tế về khối lượng
-
-> **BẪY — Đơn vị của câu trả lời.**
+### Bài D.1 — Chữ số tận cùng của tổng, hiệu, tích
 
 **Các bước giải**
 
-Xét ý a: Một xe chở 18 bao gạo, mỗi bao 50 kg. Hỏi xe chở bao nhiêu tạ gạo?
+Xét ý a: Hiệu 6 244 − 5 409 có chữ số tận cùng là chữ số nào?
 
-Đọc vị: đây là dạng **Bài toán đại lượng có lời văn**; dấu hiệu là Đơn vị trong câu hỏi khác đơn vị trong dữ kiện.
+Đọc vị: đây là dạng **Tìm chữ số tận cùng của một phép tính**; dấu hiệu là Câu hỏi chỉ hỏi “chữ số tận cùng”, không hỏi kết quả.
 
-Kiến thức phải dùng: Nhân, chia số tự nhiên; đổi đơn vị khối lượng.
+Kiến thức phải dùng: Tính chất chữ số tận cùng.
 
-Cách làm: Tính theo đơn vị dữ kiện rồi đổi ở bước cuối.
+Cách làm: Rút gọn về chữ số tận cùng rồi tính.
 
-Lối tắt: 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ.
+Lối tắt: Với phép trừ, nếu chữ số cuối của số bị trừ nhỏ hơn thì mượn 10 rồi trừ.
 
-Kết quả: **9 tạ**.
+Kết quả: **5**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Tính tổng khối lượng theo ki-lô-gam trước, sau đó mới đổi sang đơn vị mà đề hỏi. Đừng đổi đơn vị ngay từ đầu vì dễ nhầm.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Chữ số tận cùng của tổng, hiệu, tích chỉ phụ thuộc vào chữ số tận cùng của các số tham gia. Chỉ cần lấy các chữ số tận cùng ra tính với nhau rồi lấy chữ số tận cùng của kết quả.
 
-*Điểm chốt:* Câu hỏi đòi đơn vị nào thì bước **cuối cùng** mới đổi sang đơn vị đó.
+*Điểm chốt:* Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu của số.
 
-### Bài D.3 — Đơn vị đo thể tích và dung tích
-
-> **BẪY — 1 000 lần mỗi bậc.**
-
-**Các bước giải**
-
-Xét ý a: 58 lít = … ml
-
-Đọc vị: đây là dạng **Đổi đơn vị thể tích, dung tích**; dấu hiệu là Đơn vị có mũ ba, hoặc lít, mi-li-lít.
-
-Kiến thức phải dùng: Bảng đơn vị thể tích; quan hệ dm³ – lít.
-
-Cách làm: Đếm bậc rồi nhân, chia 1 000.
-
-Lối tắt: Mỗi bậc thêm ba chữ số 0.
-
-Kết quả: **58 000**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Hai đơn vị thể tích liền kề hơn kém nhau **1 000 lần**. 1 dm³ = 1 lít; 1 lít = 1 000 ml; 1 m³ = 1 000 dm³ = 1 000 lít.
-
-*Điểm chốt:* Thể tích nhảy **1 000 lần** mỗi bậc (độ dài 10, diện tích 100, thể tích 1 000).
-
-### Bài D.4 — Tính thời điểm đến, thời gian đi
+### Bài D.2 — Tính thời điểm đến, thời gian đi
 
 > **BẪY — Phần phút vượt quá 60.**
 
 **Các bước giải**
 
-Xét ý a: Một chuyến tàu khởi hành lúc 14 giờ 0 phút và đi hết 2 giờ 39 phút. Tàu đến nơi lúc mấy giờ?
+Xét ý a: Một chuyến tàu khởi hành lúc 11 giờ 30 phút và đi hết 5 giờ 23 phút. Tàu đến nơi lúc mấy giờ?
 
 Đọc vị: đây là dạng **Tính thời điểm trong ngày**; dấu hiệu là Cho thời điểm bắt đầu và khoảng thời gian.
 
@@ -460,35 +418,79 @@ Cách làm: Quy về phút, cộng trừ, đổi lại.
 
 Lối tắt: Cộng tròn giờ trước rồi cộng phần phút lẻ sau.
 
-Kết quả: **16 giờ 39 phút**.
+Kết quả: **16 giờ 53 phút**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Đổi cả giờ khởi hành lẫn thời gian đi về **phút**, cộng lại, rồi đổi kết quả ngược lại thành giờ và phút. Cách này tránh được lỗi nhớ khi phần phút vượt 60.
 
 *Điểm chốt:* Đổi hết về phút rồi mới cộng — an toàn hơn cộng trực tiếp.
 
-### Bài D.5 — Chia theo tỉ lệ ba phần và bài toán trộn
+### Bài D.3 — Đơn vị đo thể tích và dung tích
+
+> **BẪY — 1 000 lần mỗi bậc.**
 
 **Các bước giải**
 
-Vẽ ba đoạn thẳng: 4 phần, 1 phần, 1 phần.
+Xét ý a: 4 000 cm³ = … dm³
 
-Bước 1 — tổng số phần: 4 + 1 + 1 = 6 (phần).
+Đọc vị: đây là dạng **Đổi đơn vị thể tích, dung tích**; dấu hiệu là Đơn vị có mũ ba, hoặc lít, mi-li-lít.
 
-Bước 2 — một phần: 228 : 6 = 38 (cây).
+Kiến thức phải dùng: Bảng đơn vị thể tích; quan hệ dm³ – lít.
 
-Bước 3 — nhân ra từng tổ: 38 × 4 = 152; 38 × 1 = 38; 38 × 1 = 38 (cây).
+Cách làm: Đếm bậc rồi nhân, chia 1 000.
 
-Thử lại: 152 + 38 + 38 = 228 ✓
+Lối tắt: Mỗi bậc thêm ba chữ số 0.
 
-Đáp số: **152, 38, 38 cây**.
+Kết quả: **4**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Chia một tổng theo tỉ lệ ba số: cộng ba số phần lại, chia tổng cho tổng số phần được giá trị một phần, rồi nhân ra từng đại lượng. Bài trộn thì tính riêng từng loại rồi cộng.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Hai đơn vị thể tích liền kề hơn kém nhau **1 000 lần**. 1 dm³ = 1 lít; 1 lít = 1 000 ml; 1 m³ = 1 000 dm³ = 1 000 lít.
 
-*Điểm chốt:* Chia cho **tổng số phần**, không chia cho số đại lượng.
+*Điểm chốt:* Thể tích nhảy **1 000 lần** mỗi bậc (độ dài 10, diện tích 100, thể tích 1 000).
 
-*Muốn khó hơn:* Hỏi giá trung bình một ki-lô-gam gạo sau khi trộn.
+### Bài D.4 — Bài toán thực tế về khối lượng
 
-*Phải chắc trước khi làm bài này:* Bài toán tổng – tỉ hai đại lượng và phép nhân với số lớn.
+> **BẪY — Đơn vị của câu trả lời.**
+
+**Các bước giải**
+
+Xét ý a: Một xe chở 7 bao đường, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ đường?
+
+Đọc vị: đây là dạng **Bài toán đại lượng có lời văn**; dấu hiệu là Đơn vị trong câu hỏi khác đơn vị trong dữ kiện.
+
+Kiến thức phải dùng: Nhân, chia số tự nhiên; đổi đơn vị khối lượng.
+
+Cách làm: Tính theo đơn vị dữ kiện rồi đổi ở bước cuối.
+
+Lối tắt: 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ.
+
+Kết quả: **4 tạ 20 kg**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Tính tổng khối lượng theo ki-lô-gam trước, sau đó mới đổi sang đơn vị mà đề hỏi. Đừng đổi đơn vị ngay từ đầu vì dễ nhầm.
+
+*Điểm chốt:* Câu hỏi đòi đơn vị nào thì bước **cuối cùng** mới đổi sang đơn vị đó.
+
+### Bài D.5 — Lát gạch nền nhà
+
+> **BẪY — Không đổi về cùng đơn vị trước khi chia.**
+
+**Các bước giải**
+
+Diện tích nền: 9 × 4 = **36 m²**.
+
+Muốn chia cho diện tích viên gạch thì hai diện tích phải **cùng đơn vị**. Viên gạch đo bằng xăng-ti-mét nên đổi nền nhà ra cm²: 1 m² = 10 000 cm², nên 36 m² = 360 000 cm².
+
+Diện tích một viên: 40 × 40 = 1 600 cm².
+
+Số viên: 360 000 : 1 600 = **225 viên**.
+
+Tiền gạch: 225 × 18 000 = **4 050 000 đồng**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Số viên gạch = diện tích nền chia diện tích một viên, nhưng **chỉ chia được khi hai diện tích cùng đơn vị**. Nền đo bằng mét, gạch đo bằng xăng-ti-mét, nên phải đổi trước.
+
+*Điểm chốt:* 1 m² = 10 000 cm², không phải 100 cm² — đây là chỗ sai nhiều nhất.
+
+*Muốn khó hơn:* Cho gạch bán theo hộp 6 viên và hỏi phải mua mấy hộp.
+
+*Phải chắc trước khi làm bài này:* Diện tích hình chữ nhật và bảng đơn vị đo diện tích.
 
 ### Bài E.1 — Đọc vị đề số 1
 
@@ -603,21 +605,21 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | A.3 | Lập bảng dạng bài | Bảng phân tích chuyên sâu sáu cột | Bảng có sẵn cột dạng bài, thiếu các cột còn lại | Tra bảng phân tích của các phiếu đã học | Học theo hàng ngang, không học theo cột dọc. | Đổi về đơn vị của kết quả rồi tính · Đổi về cùng đơn vị rồi so sánh · Tính theo đơn vị dữ kiện rồi đổi ở bước cuối · Bám vào tổng số ngày công không đổi… |
 | A.4 | Lập bảng dạng bài | Bảng phân tích chuyên sâu sáu cột | Bảng có sẵn cột dạng bài, thiếu các cột còn lại | Tra bảng phân tích của các phiếu đã học | Học theo hàng ngang, không học theo cột dọc. | Nhân, chia số tự nhiên; đổi đơn vị khối lượng · Đại lượng tỉ lệ nghịch, tổng số ngày công · Bảng đơn vị thể tích; quan hệ dm³ – lít · Công thức s = v × t… |
 | A.5 | Lập bảng dạng bài | Bảng phân tích chuyên sâu sáu cột | Bảng có sẵn cột dạng bài, thiếu các cột còn lại | Tra bảng phân tích của các phiếu đã học | Học theo hàng ngang, không học theo cột dọc. | Mỗi bậc thêm ba chữ số 0. · Vẽ tam giác s ở trên, v và t ở dưới: che đại lượng cần tìm là ra công thức. · So sánh hai đường giải, chọn đường ít phép tính hơn. · Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm.… |
-| B.1 | Lịch và đơn vị thời gian lớn | Số ngày các tháng, năm nhuận, thế kỉ | Đề hỏi về tháng, năm, thế kỉ | Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400 | Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ. | 7 tuần 4 ngày · 31 · không · XXI |
-| B.2 | Bốn phép tính với số đo | Đổi đơn vị, bốn phép tính | Các số hạng có đơn vị khác nhau trong cùng một phép tính | Đổi về đơn vị của kết quả rồi tính | Đọc chỗ chấm trước, biết ngay đơn vị đích. | 8 128 · 10 218 · 2 102 · 9 927… |
-| B.3 | Đổi đơn vị diện tích | Bảng đơn vị đo diện tích | Đơn vị có mũ hai, hoặc ha, km² | Đếm bậc rồi nhân, chia 100 | Mỗi bậc thêm hai chữ số 0 — nhớ “diện tích thì gấp đôi số 0”. | 59 · 25 · 400 000 · 76… |
-| B.4 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | < · < · > · <… |
-| B.5 | Diện tích hình thang | Công thức diện tích hình thang | Đề cho hai đáy và chiều cao | Tổng hai đáy × chiều cao : 2 | Nếu tổng hai đáy là số chẵn thì chia 2 ngay từ đầu cho gọn. | 700 cm² · 304 cm² · 100 cm² · 371 cm²… |
-| C.1 | Quy luật hình đưa về dãy số | Dãy cách đều, số hạng thứ n, tổng dãy | Đề mô tả hình xếp thêm đều đặn theo thứ tự | Lập bảng vài hình đầu, tìm khoảng cách, áp công thức | Chỉ cần ba hình đầu là đủ để khẳng định quy luật cách đều. | 10 · 26 · 38 · 50… |
-| C.2 | Giả thiết tạm hai loại | Phương pháp giả thiết tạm | Hai loại đối tượng, biết tổng số và tổng của một đại lượng phụ | Giả sử đồng nhất → tính chênh → chia cho hiệu đơn vị | Kiểm tra ngay: số bánh phải nằm giữa tổng × (số bánh ít nhất) và tổng × (số bánh nhiều nhất). | xe ô tô: 30 chiếc, xe đạp: 6 chiếc · xe ba bánh: 15 chiếc, xe đạp: 12 chiếc · xe ô tô: 30 chiếc, xe đạp: 17 chiếc · xe ba bánh: 7 chiếc, xe ô tô: 25 chiếc… |
-| C.3 | Diện tích các hình phẳng cơ bản | Công thức diện tích hình bình hành, hình thoi, hình tam giác | Đề cho đáy và chiều cao, hoặc hai đường chéo | Nhận dạng hình rồi chọn công thức | Tam giác bằng nửa hình bình hành cùng đáy cùng chiều cao. | 561 cm² · 60 cm² · 44 cm² · 221 cm²… |
-| C.4 | Chu vi, diện tích trong tình huống thực tế | Công thức chu vi, diện tích; phép chia | Từ khoá “rào xung quanh”, “lát gạch”, “trồng cây quanh” | Đọc vị chu vi hay diện tích rồi tính | Nhìn đơn vị của đáp số: mét thì là chu vi, mét vuông thì là diện tích. | 174 m · không chia hết (86 m không chia hết cho 4 m) · 87 cây · không chia hết (142 m không chia hết cho 5 m) |
-| C.5 | Tỉ lệ thuận, rút về đơn vị | Đại lượng tỉ lệ thuận | Hai đại lượng cùng tăng cùng giảm | Rút về đơn vị hoặc dùng tỉ số | Nếu số lượng mới gấp số lượng cũ một số nguyên lần thì nhân thẳng, không cần rút về đơn vị. | 675 nghìn đồng · 70 nghìn đồng · 26 quyển · 26 quyển… |
-| D.1 | Chu vi, diện tích hình tròn | Công thức hình tròn | Đề cho bán kính hoặc đường kính | Quy về bán kính, chọn đúng công thức | Diện tích luôn có đơn vị mũ hai — nếu đáp số ghi cm là chắc chắn nhầm. | 157 cm · 50,24 cm · 2 640,74 cm² · 30 cm |
-| D.2 | Bài toán đại lượng có lời văn | Nhân, chia số tự nhiên; đổi đơn vị khối lượng | Đơn vị trong câu hỏi khác đơn vị trong dữ kiện | Tính theo đơn vị dữ kiện rồi đổi ở bước cuối | 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ. | 9 tạ · 3 tạ · 7 tạ 60 kg · 15 tạ 50 kg… |
-| D.3 | Đổi đơn vị thể tích, dung tích | Bảng đơn vị thể tích; quan hệ dm³ – lít | Đơn vị có mũ ba, hoặc lít, mi-li-lít | Đếm bậc rồi nhân, chia 1 000 | Mỗi bậc thêm ba chữ số 0. | 58 000 · 58 · 77 · 41 000… |
-| D.4 | Tính thời điểm trong ngày | Quan hệ giờ – phút, phép chia có dư | Cho thời điểm bắt đầu và khoảng thời gian | Quy về phút, cộng trừ, đổi lại | Cộng tròn giờ trước rồi cộng phần phút lẻ sau. | 16 giờ 39 phút · 18 giờ 11 phút · 14 giờ 42 phút · 15 giờ 53 phút |
-| D.5 | Chia tỉ lệ nhiều phần; bài toán trộn | Tỉ số, chia theo tỉ lệ, nhân với đơn giá | “Tỉ lệ với … , … , …” hoặc “trộn … với …” | Tổng số phần → giá trị một phần → nhân | Tổng luôn chia hết cho tổng số phần; không chia hết là đọc sai tỉ lệ. | 152 · 38 · 38 cây · 570 000 đồng · 800 000 đồng · 44 · 22 · 11 cây… |
+| B.1 | Lịch và đơn vị thời gian lớn | Số ngày các tháng, năm nhuận, thế kỉ | Đề hỏi về tháng, năm, thế kỉ | Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400 | Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ. | 3 tuần 1 ngày · XX · 30 · không… |
+| B.2 | Bốn phép tính với số đo | Đổi đơn vị, bốn phép tính | Các số hạng có đơn vị khác nhau trong cùng một phép tính | Đổi về đơn vị của kết quả rồi tính | Đọc chỗ chấm trước, biết ngay đơn vị đích. | 36 188 · 2 498 · 3 716 · 18 907 |
+| B.3 | Bốn phép tính với số thập phân | Kĩ thuật tính với số thập phân | Các số có dấu phẩy | Chọn quy tắc đặt dấu phẩy theo phép tính | Ước lượng bằng cách làm tròn để kiểm tra vị trí dấu phẩy. | 87,04 · 6,22 · 67,16 · 383,4… |
+| B.4 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | < · < · < · >… |
+| B.5 | Đổi đơn vị diện tích | Bảng đơn vị đo diện tích | Đơn vị có mũ hai, hoặc ha, km² | Đếm bậc rồi nhân, chia 100 | Mỗi bậc thêm hai chữ số 0 — nhớ “diện tích thì gấp đôi số 0”. | 33 · 5 600 · 39 · 85… |
+| C.1 | Điền chữ số theo điều kiện chia hết | Dấu hiệu chia hết, chữ số hàng cao nhất khác 0 | Số có ô trống hoặc dấu *, kèm điều kiện chia hết | Dùng dấu hiệu để lập điều kiện cho dấu * rồi thử 0–9 | Với 3 và 9: tính tổng các chữ số đã biết một lần duy nhất, rồi tìm phần bù cần thêm. | 3, 6, 9 · 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 · 1, 4, 7 · 7 |
+| C.2 | Diện tích các hình phẳng cơ bản | Công thức diện tích hình bình hành, hình thoi, hình tam giác | Đề cho đáy và chiều cao, hoặc hai đường chéo | Nhận dạng hình rồi chọn công thức | Tam giác bằng nửa hình bình hành cùng đáy cùng chiều cao. | 60 cm² · 25 cm² · 72 cm² · 432 cm² |
+| C.3 | Nhận biết hình tròn và các yếu tố | Quan hệ đường kính – bán kính | Đề nhắc tâm, bán kính, đường kính | Quy về bán kính rồi so sánh hoặc tính | Nhìn đơn vị và tên đại lượng trước khi so sánh. | A · 66 cm · 5 cm · 16 cm |
+| C.4 | Tỉ lệ thuận, rút về đơn vị | Đại lượng tỉ lệ thuận | Hai đại lượng cùng tăng cùng giảm | Rút về đơn vị hoặc dùng tỉ số | Nếu số lượng mới gấp số lượng cũ một số nguyên lần thì nhân thẳng, không cần rút về đơn vị. | 24 quyển · 5 quyển · 1 392 nghìn đồng · 18 quyển |
+| C.5 | Diện tích hình thang | Công thức diện tích hình thang | Đề cho hai đáy và chiều cao | Tổng hai đáy × chiều cao : 2 | Nếu tổng hai đáy là số chẵn thì chia 2 ngay từ đầu cho gọn. | 152 cm² · 39 cm² · 285 cm² · 275 cm² |
+| D.1 | Tìm chữ số tận cùng của một phép tính | Tính chất chữ số tận cùng | Câu hỏi chỉ hỏi “chữ số tận cùng”, không hỏi kết quả | Rút gọn về chữ số tận cùng rồi tính | Với phép trừ, nếu chữ số cuối của số bị trừ nhỏ hơn thì mượn 10 rồi trừ. | 5 · 8 · 1 · 4… |
+| D.2 | Tính thời điểm trong ngày | Quan hệ giờ – phút, phép chia có dư | Cho thời điểm bắt đầu và khoảng thời gian | Quy về phút, cộng trừ, đổi lại | Cộng tròn giờ trước rồi cộng phần phút lẻ sau. | 16 giờ 53 phút · 12 giờ 17 phút · 14 giờ 33 phút · 22 giờ 12 phút… |
+| D.3 | Đổi đơn vị thể tích, dung tích | Bảng đơn vị thể tích; quan hệ dm³ – lít | Đơn vị có mũ ba, hoặc lít, mi-li-lít | Đếm bậc rồi nhân, chia 1 000 | Mỗi bậc thêm ba chữ số 0. | 4 · 64 · 84 000 · 86 000… |
+| D.4 | Bài toán đại lượng có lời văn | Nhân, chia số tự nhiên; đổi đơn vị khối lượng | Đơn vị trong câu hỏi khác đơn vị trong dữ kiện | Tính theo đơn vị dữ kiện rồi đổi ở bước cuối | 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ. | 4 tạ 20 kg · 6 tạ 90 kg · 15 tạ · 15 tạ 60 kg |
+| D.5 | Bài toán lát gạch nền nhà | Diện tích hình chữ nhật, hình vuông; đổi đơn vị đo diện tích | Kích thước một mặt phẳng và kích thước vật dùng để phủ kín nó | Đổi về cùng đơn vị rồi chia hai diện tích | Đổi cạnh viên gạch ra mét trước cũng được, khi ấy chia m² cho m². | 9 × 4 = 36 m² · 36 m² = 360 000 cm² · 40 × 40 = 1 600 cm² · 360 000 : 1 600 = 225 viên… |
 | E.1 | Đổi đơn vị diện tích | Bảng đơn vị đo diện tích | Đơn vị có mũ hai, hoặc ha, km² | Đếm bậc rồi nhân, chia 100 | Mỗi bậc thêm hai chữ số 0 — nhớ “diện tích thì gấp đôi số 0”. | Đổi đơn vị diện tích · Đơn vị có mũ hai, hoặc ha, km² · Bảng đơn vị đo diện tích · Đếm bậc rồi nhân, chia 100… |
 | E.2 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | So sánh số đo đại lượng · Hai vế có đơn vị khác nhau · Bảng đơn vị đo, so sánh số tự nhiên · Đổi về cùng đơn vị rồi so sánh… |
 | E.3 | Tỉ lệ nghịch, so sánh hai phương án | Đại lượng tỉ lệ nghịch, tổng số ngày công | Thay đổi số người, hỏi thay đổi thời gian | Bám vào tổng số ngày công không đổi | Số người tăng gấp k lần thì số ngày giảm còn 1 phần k. | Tỉ lệ nghịch, so sánh hai phương án · Thay đổi số người, hỏi thay đổi thời gian · Đại lượng tỉ lệ nghịch, tổng số ngày công · Bám vào tổng số ngày công không đổi… |
@@ -637,19 +639,19 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | A.5 | TD2, TD3 | Bảng chỉ có giá trị khi **đọc ngang được từng hàng**. |
 | B.1 | TD1, TD2 | Năm tròn trăm chỉ nhuận khi chia hết cho **400** (1900 không nhuận, 2000 có nhuận). |
 | B.2 | TD1, TD3 | Đơn vị của **kết quả** quyết định ta đổi về đơn vị nào. |
-| B.3 | TD1, TD2 | Đơn vị diện tích nhảy **100 lần** mỗi bậc, không phải 10 lần. |
+| B.3 | TD1, TD3 | Cộng trừ thì **thẳng dấu phẩy**; nhân thì **đếm chữ số thập phân**. |
 | B.4 | TD2, TD1 | Đổi về cùng đơn vị **trước**, so sánh **sau**. |
-| B.5 | TD1, TD3 | Cộng **hai đáy** trước rồi mới nhân chiều cao và chia 2. |
-| C.1 | TD4, TD3 | Bài toán hình nhưng lời giải là **dãy số** — đổi ngôn ngữ trước khi tính. |
-| C.2 | TD6, TD3 | Chia cho **hiệu** số bánh của hai loại, không chia cho số bánh của một loại. |
-| C.3 | TD1, TD3 | Hình bình hành **không** chia 2; hình tam giác và hình thoi **có** chia 2. |
-| C.4 | TD2, TD3 | “Xung quanh” → chu vi; “khắp mặt” → diện tích. |
-| C.5 | TD2, TD3 | Hai đại lượng **cùng tăng, cùng giảm** thì tỉ lệ thuận. |
-| D.1 | TD1, TD3 | Chu vi dùng **đường kính**, diện tích dùng **bán kính nhân bán kính**. |
-| D.2 | TD2, TD3 | Câu hỏi đòi đơn vị nào thì bước **cuối cùng** mới đổi sang đơn vị đó. |
+| B.5 | TD1, TD2 | Đơn vị diện tích nhảy **100 lần** mỗi bậc, không phải 10 lần. |
+| C.1 | TD2, TD5 | Phải tìm **tất cả** chữ số thoả mãn, không dừng ở chữ số đầu tiên tìm được. |
+| C.2 | TD1, TD3 | Hình bình hành **không** chia 2; hình tam giác và hình thoi **có** chia 2. |
+| C.3 | TD1, TD2 | So sánh phải **cùng loại đại lượng** — bán kính với bán kính. |
+| C.4 | TD2, TD3 | Hai đại lượng **cùng tăng, cùng giảm** thì tỉ lệ thuận. |
+| C.5 | TD1, TD3 | Cộng **hai đáy** trước rồi mới nhân chiều cao và chia 2. |
+| D.1 | TD5, TD2 | Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu của số. |
+| D.2 | TD3, TD2 | Đổi hết về phút rồi mới cộng — an toàn hơn cộng trực tiếp. |
 | D.3 | TD1, TD2 | Thể tích nhảy **1 000 lần** mỗi bậc (độ dài 10, diện tích 100, thể tích 1 000). |
-| D.4 | TD3, TD2 | Đổi hết về phút rồi mới cộng — an toàn hơn cộng trực tiếp. |
-| D.5 | TD3, TD2 | Chia cho **tổng số phần**, không chia cho số đại lượng. |
+| D.4 | TD2, TD3 | Câu hỏi đòi đơn vị nào thì bước **cuối cùng** mới đổi sang đơn vị đó. |
+| D.5 | TD2, TD4 | 1 m² = 10 000 cm², không phải 100 cm² — đây là chỗ sai nhiều nhất. |
 | E.1 | TD2, TD6 | Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**. |
 | E.2 | TD2, TD6 | Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**. |
 | E.3 | TD2, TD6 | Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**. |
@@ -671,19 +673,19 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 | A.5 | Điền từng cột rời rạc, không đối chiếu ngang. | Điền xong thì đọc lại theo hàng, mỗi hàng phải thành một câu có nghĩa. |
 | B.1 | Coi mọi năm chia hết cho 4 đều là năm nhuận. | Gặp năm tròn trăm thì kiểm tra thêm điều kiện chia hết cho 400. |
 | B.2 | Cộng số mét với số xăng-ti-mét mà chưa đổi. | Gạch chân đơn vị ở chỗ chấm rồi đổi mọi số hạng về đơn vị đó. |
-| B.3 | Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. | Viết riêng bảng đơn vị diện tích, ghi rõ “× 100” giữa hai bậc liền nhau. |
+| B.3 | Nhân xong đặt dấu phẩy thẳng cột như phép cộng. | Đếm số chữ số sau dấu phẩy ngay khi viết đề bài. |
 | B.4 | So thẳng hai con số, bỏ qua đơn vị. | Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị. |
-| B.5 | Nhân riêng từng đáy với chiều cao rồi cộng, quên chia 2. | Viết công thức đầy đủ ra trước khi thay số. |
-| C.1 | Vẽ tay từng hình để đếm, không kịp thời gian với hình thứ hai, ba chục. | Lập bảng ba hình đầu để tìm khoảng cách rồi mới dùng công thức. |
-| C.2 | Chia số bánh thiếu cho số bánh của loại nhiều hơn. | Thử lại: nhân ngược ra tổng số bánh, phải khớp với đề. |
-| C.3 | Chia 2 cho hình bình hành, hoặc quên chia 2 cho hình tam giác. | Nhớ theo cặp: bình hành ↔ chữ nhật (không chia); tam giác ↔ nửa bình hành (chia 2). |
-| C.4 | Lấy chu vi để tính số gạch lát nền. | Gạch chân từ khoá chỉ vị trí: xung quanh, bao quanh, khắp, phủ kín. |
-| C.5 | Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch. | Tự hỏi: mua nhiều hơn thì trả nhiều hơn hay ít hơn? |
-| D.1 | Lấy đường kính nhân đường kính khi tính diện tích. | Ghi rõ r = … và d = … lên hình trước khi thay số. |
-| D.2 | Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. | Khoanh tròn đơn vị trong câu hỏi trước khi đặt bút. |
+| B.5 | Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. | Viết riêng bảng đơn vị diện tích, ghi rõ “× 100” giữa hai bậc liền nhau. |
+| C.1 | Chỉ nêu một đáp số, hoặc nhận cả chữ số 0 ở hàng cao nhất. | Liệt kê đủ 10 chữ số ra nháp rồi gạch dần chữ số không đạt. |
+| C.2 | Chia 2 cho hình bình hành, hoặc quên chia 2 cho hình tam giác. | Nhớ theo cặp: bình hành ↔ chữ nhật (không chia); tam giác ↔ nửa bình hành (chia 2). |
+| C.3 | So bán kính của hình này với đường kính của hình kia. | Đổi hết về bán kính trước khi so sánh. |
+| C.4 | Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch. | Tự hỏi: mua nhiều hơn thì trả nhiều hơn hay ít hơn? |
+| C.5 | Nhân riêng từng đáy với chiều cao rồi cộng, quên chia 2. | Viết công thức đầy đủ ra trước khi thay số. |
+| D.1 | Tính trọn cả phép tính, vừa lâu vừa dễ sai. | Che phần đầu của hai số, chỉ để lộ chữ số cuối cùng. |
+| D.2 | Cộng phần phút thành hơn 60 mà quên đổi thành giờ. | Kiểm tra phần phút của đáp số phải bé hơn 60. |
 | D.3 | Đổi như đơn vị diện tích, chỉ nhân 100. | Nhớ dãy 10 – 100 – 1 000 ứng với độ dài – diện tích – thể tích. |
-| D.4 | Cộng phần phút thành hơn 60 mà quên đổi thành giờ. | Kiểm tra phần phút của đáp số phải bé hơn 60. |
-| D.5 | Chia tổng cho 3 vì thấy có ba tổ. | Đếm số phần trên sơ đồ trước khi chia. |
+| D.4 | Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. | Khoanh tròn đơn vị trong câu hỏi trước khi đặt bút. |
+| D.5 | Chia thẳng m² cho cm², hoặc đổi 1 m² thành 100 cm². | Viết đơn vị vào cạnh mỗi con số trước khi bấm phép chia. |
 | E.1 | Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. | Viết riêng bảng đơn vị diện tích, ghi rõ “× 100” giữa hai bậc liền nhau. |
 | E.2 | So thẳng hai con số, bỏ qua đơn vị. | Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị. |
 | E.3 | Trừ thẳng số người rồi lấy hiệu làm số ngày rút ngắn. | Viết rõ: tổng ngày công = … ; số ngày mới = … ; sớm hơn = … . |
@@ -703,19 +705,19 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 **Bài A.5** — (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 **Bài B.1** — (1) Tháng đó nằm trong nhóm 31 ngày hay 30 ngày? — (2) Năm đó có chia hết cho 4 không? — (3) Nếu là năm tròn trăm, có chia hết cho 400 không?
 **Bài B.2** — (1) Kết quả cần ghi theo đơn vị nào? — (2) Đổi mọi số hạng về đơn vị ấy. — (3) Tính như số tự nhiên rồi ghi đơn vị.
-**Bài B.3** — (1) Hai đơn vị này cách nhau mấy bậc? — (2) Mỗi bậc hơn kém nhau bao nhiêu lần? — (3) Từ lớn sang bé thì nhân.
+**Bài B.3** — (1) Phép tính này là cộng trừ hay nhân chia? — (2) Cộng trừ thì viết thẳng dấu phẩy. — (3) Nhân thì đếm tổng số chữ số thập phân của các thừa số.
 **Bài B.4** — (1) Hai vế đang dùng đơn vị nào? — (2) Chọn một đơn vị chung, nên chọn đơn vị bé hơn. — (3) Đổi cả hai vế rồi so sánh.
-**Bài B.5** — (1) Tổng hai đáy bằng bao nhiêu? — (2) Nhân tổng đó với chiều cao. — (3) Chia kết quả cho 2.
-**Bài C.1** — (1) Hình thứ hai hơn hình thứ nhất mấy que? — (2) Hình thứ ba hơn hình thứ hai mấy que? — (3) Đưa về dãy cách đều rồi dùng công thức.
-**Bài C.2** — (1) Giả sử tất cả đều là loại ít bánh thì có bao nhiêu bánh? — (2) So với thực tế thì thiếu bao nhiêu bánh? — (3) Mỗi lần đổi một chiếc thì số bánh tăng thêm bao nhiêu?
-**Bài C.3** — (1) Đây là hình gì? — (2) Viết công thức diện tích của hình đó. — (3) Kiểm tra xem công thức có chia 2 không.
-**Bài C.4** — (1) Việc cần làm diễn ra ở viền hay ở mặt trong? — (2) Ở viền thì tính chu vi, ở mặt trong thì tính diện tích. — (3) Chia cho kích thước của một đơn vị (một viên gạch, một khoảng cây).
-**Bài C.5** — (1) Mua nhiều vở hơn thì tiền nhiều hơn hay ít hơn? — (2) Tìm giá của một quyển vở. — (3) Nhân giá một quyển với số quyển cần mua.
-**Bài D.1** — (1) Đề cho bán kính hay đường kính? — (2) Chu vi dùng đường kính; diện tích dùng bán kính. — (3) Nhân với 3,14 ở bước cuối.
-**Bài D.2** — (1) Tính tổng khối lượng theo ki-lô-gam. — (2) Đề hỏi kết quả theo đơn vị nào? — (3) Đổi kết quả sang đơn vị đó.
+**Bài B.5** — (1) Hai đơn vị này cách nhau mấy bậc? — (2) Mỗi bậc hơn kém nhau bao nhiêu lần? — (3) Từ lớn sang bé thì nhân.
+**Bài C.1** — (1) Số chia là 2 hay 5 thì chỉ cần xét chữ số tận cùng. — (2) Số chia là 3 hay 9 thì tính tổng các chữ số đã biết trước. — (3) Cộng thêm dấu * và tìm chữ số làm tổng chia hết cho số đó.
+**Bài C.2** — (1) Đây là hình gì? — (2) Viết công thức diện tích của hình đó. — (3) Kiểm tra xem công thức có chia 2 không.
+**Bài C.3** — (1) Đường kính gấp mấy lần bán kính? — (2) Đưa cả hai hình về cùng bán kính. — (3) So hai bán kính vừa tính.
+**Bài C.4** — (1) Mua nhiều vở hơn thì tiền nhiều hơn hay ít hơn? — (2) Tìm giá của một quyển vở. — (3) Nhân giá một quyển với số quyển cần mua.
+**Bài C.5** — (1) Tổng hai đáy bằng bao nhiêu? — (2) Nhân tổng đó với chiều cao. — (3) Chia kết quả cho 2.
+**Bài D.1** — (1) Chữ số tận cùng của mỗi số là chữ số nào? — (2) Thực hiện phép tính với riêng hai chữ số tận cùng đó. — (3) Lấy chữ số tận cùng của kết quả vừa tính.
+**Bài D.2** — (1) Đổi giờ khởi hành ra phút tính từ 0 giờ. — (2) Cộng thêm thời gian đi (tính bằng phút). — (3) Đổi tổng số phút trở lại thành giờ và phút.
 **Bài D.3** — (1) Đơn vị thể tích liền kề hơn kém nhau mấy lần? — (2) Đếm số bậc giữa hai đơn vị. — (3) 1 dm³ bằng đúng 1 lít.
-**Bài D.4** — (1) Đổi giờ khởi hành ra phút tính từ 0 giờ. — (2) Cộng thêm thời gian đi (tính bằng phút). — (3) Đổi tổng số phút trở lại thành giờ và phút.
-**Bài D.5** — (1) Vẽ ba đoạn thẳng theo đúng số phần. — (2) Tổng cộng có bao nhiêu phần bằng nhau? — (3) Một phần bằng bao nhiêu?
+**Bài D.4** — (1) Tính tổng khối lượng theo ki-lô-gam. — (2) Đề hỏi kết quả theo đơn vị nào? — (3) Đổi kết quả sang đơn vị đó.
+**Bài D.5** — (1) Diện tích nền nhà tính theo đơn vị gì? Còn viên gạch? — (2) 1 m² bằng bao nhiêu cm²? Vẽ hình vuông cạnh 1 m rồi đếm. — (3) Đổi xong mới chia diện tích nền cho diện tích một viên.
 **Bài E.1** — (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
 **Bài E.2** — (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
 **Bài E.3** — (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
@@ -737,19 +739,19 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | A.5 | Cột “Cách xử lý nhanh nhất” trả lời câu hỏi gì? | làm gì |
 | B.1 | Năm 1975 thuộc thế kỉ thứ mấy? | XX |
 | B.2 | 2 m 30 cm + 150 cm = … cm | 380 |
-| B.3 | 3 m² = … dm² | 300 |
+| B.3 | Tính: 3,25 × 4 | 13 |
 | B.4 | So sánh: 3 kg … 2 500 g | > |
-| B.5 | Hình thang đáy 12 cm và 8 cm, cao 5 cm. Diện tích bằng bao nhiêu? | 50 cm² |
-| C.1 | Hình 1 có 3 que, mỗi hình sau hơn 2 que. Hình thứ 10 có mấy que? | 21 |
-| C.2 | 10 xe đạp và ô tô, 28 bánh. Có mấy ô tô? | 4 ô tô |
-| C.3 | Tam giác đáy 10 cm, cao 6 cm. Diện tích bằng bao nhiêu? | 30 cm² |
-| C.4 | Vườn dài 20 m rộng 10 m, rào xung quanh cần bao nhiêu mét rào? | 60 m |
-| C.5 | Mua 4 quyển vở hết 24 nghìn. Mua 10 quyển hết bao nhiêu? | 60 nghìn |
-| D.1 | Hình tròn bán kính 5 cm. Tính diện tích. | 78,5 cm² |
-| D.2 | Xe chở 20 bao gạo, mỗi bao 50 kg. Xe chở mấy tạ? | 10 tạ |
+| B.5 | 3 m² = … dm² | 300 |
+| C.1 | Tìm chữ số thay cho * để 12* chia hết cho 5. | 0, 5 |
+| C.2 | Tam giác đáy 10 cm, cao 6 cm. Diện tích bằng bao nhiêu? | 30 cm² |
+| C.3 | Hình tròn đường kính 10 cm có bán kính bao nhiêu? | 5 cm |
+| C.4 | Mua 4 quyển vở hết 24 nghìn. Mua 10 quyển hết bao nhiêu? | 60 nghìn |
+| C.5 | Hình thang đáy 12 cm và 8 cm, cao 5 cm. Diện tích bằng bao nhiêu? | 50 cm² |
+| D.1 | Tích 137 × 46 có chữ số tận cùng là chữ số nào? | 2 |
+| D.2 | Tàu chạy lúc 7 giờ 40 phút, đi hết 2 giờ 35 phút. Đến lúc mấy giờ? | 10 giờ 15 phút |
 | D.3 | 2 m³ = … lít | 2 000 |
-| D.4 | Tàu chạy lúc 7 giờ 40 phút, đi hết 2 giờ 35 phút. Đến lúc mấy giờ? | 10 giờ 15 phút |
-| D.5 | Chia 120 cây theo tỉ lệ 1 : 2 : 3. Mỗi phần bao nhiêu cây? | 20, 40, 60 |
+| D.4 | Xe chở 20 bao gạo, mỗi bao 50 kg. Xe chở mấy tạ? | 10 tạ |
+| D.5 | Phòng dài 6 m, rộng 4 m, lát gạch vuông cạnh 40 cm. Cần bao nhiêu viên gạch? | 150 viên |
 | E.1 | 3 m² = … dm² | 300 |
 | E.2 | So sánh: 3 kg … 2 500 g | > |
 | E.3 | 6 người làm xong trong 10 ngày. Thêm 4 người thì sớm hơn mấy ngày? | 4 ngày |

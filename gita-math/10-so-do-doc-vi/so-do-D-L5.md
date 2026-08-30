@@ -124,43 +124,43 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 
 Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: đây là dạng bài gì, và dấu hiệu nào cho biết điều đó.
 
-**Đề 1.** Làm trong 25 phút. Trình bày như bài thi thật: có câu lời giải, có đáp số. Hai xe khởi hành cùng lúc từ hai địa điểm cách nhau 144 km và đi ngược chiều. Vận tốc lần lượt là 60 km/giờ và 12 km/giờ. Sau bao lâu hai xe gặp nhau?
+**Đề 1.** Tìm hai số trong mỗi trường hợp. Tổng hai số là 744, hiệu hai số là 168. Tìm hai số đó.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 2.** Viết hai lần mua thành hai dòng thẳng cột nhau rồi mới trừ. Lần thứ nhất mua 4 kg thóc và 6 kg xi măng hết 194 000 đồng. Lần thứ hai mua 4 kg thóc và 8 kg xi măng hết 220 000 đồng. Tính giá một kg xi măng và một kg thóc.
+**Đề 2.** Viết hai lần mua thành hai dòng thẳng cột nhau rồi mới trừ. Lần thứ nhất mua 3 kg phân bón và 3 kg thóc hết 138 000 đồng. Lần thứ hai mua 3 kg phân bón và 5 kg thóc hết 190 000 đồng. Tính giá một kg thóc và một kg phân bón.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 3.** Vẽ sơ đồ đoạn thẳng rồi giải. Kho A chứa nhiều hơn trang trại 21 kg muối. Số muối ở trang trại bằng 6 phần 7 số muối ở kho A. Mỗi nơi chứa bao nhiêu kg?
+**Đề 3.** Tính thời gian gặp nhau trước. Hai xe đi ngược chiều từ hai địa điểm cách nhau 168 km, vận tốc 54 km/giờ và 30 km/giờ. Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 4.** Ghi rõ đơn vị của từng đại lượng. Một người đi 216 km hết 6 giờ. Tính vận tốc.
+**Đề 4.** Giải bằng cách rút về đơn vị hoặc dùng tỉ số. Mua 11 quyển vở hết 275 nghìn đồng. Mua 25 quyển vở như thế hết bao nhiêu nghìn đồng?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 5.** Câu nào cũng ghi rõ quãng đường tàu đi được gồm những phần nào. Một đoàn tàu chạy với vận tốc 18 km/giờ, chạy qua một cột điện bên đường hết 17 giây. Tính chiều dài đoàn tàu.
+**Đề 5.** Chú ý đổi đơn vị ở bước cuối. Trên bản đồ tỉ lệ 1 : 1 000, một đoạn đường đo được 19 cm. Hỏi đoạn đường đó dài bao nhiêu mét trên thực tế?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 6.** Việc đầu tiên là gọi tên dữ kiện bị giấu. Số thóc ở cửa hàng bằng 5 phần 2 số thóc ở kho A. Nếu chuyển 48 kg từ cửa hàng sang kho A thì cửa hàng vẫn còn nhiều hơn. Biết cửa hàng hơn kho A 96 kg, tìm số thóc mỗi nơi.
+**Đề 6.** Xác định rõ hai xe lại gần nhau hay đuổi nhau. Hai xe khởi hành cùng lúc từ hai địa điểm cách nhau 140 km và đi ngược chiều để gặp nhau. Xe thứ nhất đi 60 km/giờ, xe thứ hai đi 10 km/giờ. Sau bao lâu hai xe gặp nhau?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 7.** Coi cả công việc là 1 đơn vị. Người thứ nhất làm một mình xong công việc trong 2 giờ, người thứ hai làm một mình xong trong 12 giờ. Nếu hai người cùng làm thì sau bao lâu xong công việc?
+**Đề 7.** Ghi rõ đã chọn loại nào làm chuẩn trước khi tính. Mua 5 chiếc bút và 11 chiếc cặp hết 279 000 đồng. Biết giá một chiếc bút bằng giá 4 chiếc cặp. Tính giá một chiếc cặp và giá một chiếc bút.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 8.** Xác định rõ hai xe lại gần nhau hay đuổi nhau. Một xe máy đi 20 km/giờ khởi hành trước. Cùng lúc đó một ô tô đi 50 km/giờ đuổi theo từ điểm cách xe máy 30 km. Sau bao lâu ô tô đuổi kịp xe máy?
+**Đề 8.** Câu nào cũng ghi rõ quãng đường tàu đi được gồm những phần nào. Một đoàn tàu chạy với vận tốc 36 km/giờ, chạy qua một cột điện bên đường hết 8 giây. Tính chiều dài đoàn tàu.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 9.** Chú ý điều gì thay đổi và điều gì không đổi theo thời gian. Hiện nay bố 55 tuổi, con 11 tuổi. Cách đây 8 năm, bố hơn con bao nhiêu tuổi?
+**Đề 9.** Tóm tắt bằng sơ đồ đoạn thẳng rồi giải. Đội Hai và đội Một trồng được 318 cây. Đội Hai trồng nhiều hơn đội Một 98 cây. Mỗi tổ trồng bao nhiêu cây?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 10.** Tính thời gian gặp nhau trước. Hai xe đi ngược chiều từ hai địa điểm cách nhau 256 km, vận tốc 40 km/giờ và 24 km/giờ. Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
+**Đề 10.** Ghi rõ đại lượng nào ứng với 100%. Mua một món hàng 80 000 đồng rồi bán 84 000 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
@@ -170,16 +170,16 @@ Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: 
 
 | # | Dạng bài | Dấu hiệu |
 |:--:|---|---|
-| 1 | Đề tổng hợp nhiều mạch | Một đề dài gồm nhiều ý nối tiếp nhau |
+| 1 | Bài toán tổng – hiệu | Đề cho **tổng** và **hiệu** của hai số |
 | 2 | Phương pháp khử | Đề cho **hai lần mua** cùng hai loại hàng với hai tổng tiền khác nhau |
-| 3 | Bài toán hiệu – tỉ | Đề cho **hiệu** và **tỉ số** |
-| 4 | Ba dạng cơ bản của chuyển động đều | Có hai trong ba đại lượng quãng đường, vận tốc, thời gian |
-| 5 | Vật chuyển động có chiều dài đáng kể | Đề cho **chiều dài của chính vật chuyển động** — đoàn tàu, đoàn người, khúc gỗ |
-| 6 | Tổng – tỉ, hiệu – tỉ dạng ẩn | Đề mô tả vòng thay vì cho số: “nếu … thì …”, “chia thành … phần” |
-| 7 | Công việc chung | “Làm một mình trong … giờ”, “cùng làm” |
-| 8 | Chuyển động ngược chiều, cùng chiều | “Đi ngược chiều để gặp nhau”, “đuổi theo” |
-| 9 | Bài toán tuổi | Xuất hiện mốc thời gian: hiện nay, sau … năm, cách đây … năm |
-| 10 | Chuyển động ngược chiều, tính quãng đường từng xe | Hỏi quãng đường **của một xe** tính đến lúc gặp nhau |
+| 3 | Chuyển động ngược chiều, tính quãng đường từng xe | Hỏi quãng đường **của một xe** tính đến lúc gặp nhau |
+| 4 | Tỉ lệ thuận, rút về đơn vị | Hai đại lượng cùng tăng cùng giảm |
+| 5 | Tỉ lệ bản đồ, tỉ lệ xích | Có kí hiệu tỉ lệ dạng 1 : n |
+| 6 | Chuyển động ngược chiều, cùng chiều | “Đi ngược chiều để gặp nhau”, “đuổi theo” |
+| 7 | Phương pháp thay thế | Đề cho **quan hệ đổi ngang** giữa hai loại cùng một tổng chung |
+| 8 | Vật chuyển động có chiều dài đáng kể | Đề cho **chiều dài của chính vật chuyển động** — đoàn tàu, đoàn người, khúc gỗ |
+| 9 | Tổng – hiệu có lời văn | “Có tất cả …” và “… nhiều hơn … là …” |
+| 10 | Tỉ số phần trăm trong mua bán | Từ khoá “giảm giá”, “tăng giá”, “lãi”, “lỗ” |
 
 ---
 

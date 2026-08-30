@@ -30,56 +30,58 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Đặt tính rồi tính.
 
-a) 432 + 949
-b) 486 − 154
-c) 929 + 642
-d) 644 − 223
-e) 897 − 185
-f) 267 + 965
+a) 930 − 411
+b) 718 − 491
+c) 275 + 168
+d) 165 + 489
+e) 501 + 232
+f) 959 − 183
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
 Đặt tính rồi tính.
 
-a) 4 896 : 8
-b) 424 × 4
-c) 1 430 : 5
-d) 847 × 3
-e) 1 524 : 3
-f) 119 × 7
+a) 7 452 : 9
+b) 3 894 : 6
+c) 833 × 4
+d) 376 × 8
+e) 5 598 : 6
+f) 4 968 : 8
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
 Tính trung bình cộng.
 
-a) Tìm trung bình cộng của 5 số: 58, 57, 39, 42, 49.
-b) Tìm trung bình cộng của 2 số: 21, 19.
-c) Tìm trung bình cộng của 4 số: 38, 28, 28, 26.
-d) Tìm trung bình cộng của 3 số: 55, 54, 56.
+a) Tìm trung bình cộng của 2 số: 20, 22.
+b) Tìm trung bình cộng của 5 số: 43, 46, 31, 26, 44.
+c) Tìm trung bình cộng của 3 số: 59, 50, 38.
+d) Tìm trung bình cộng của 4 số: 45, 42, 34, 43.
+e) Tìm trung bình cộng của 5 số: 60, 63, 56, 50, 46.
+f) Tìm trung bình cộng của 4 số: 68, 53, 65, 54.
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
 Điền số thích hợp.
 
-a) 89 l = … ml
-b) 60 cm = … mm
-c) 62 km = … m
-d) 33 m = … cm
-e) 52 kg = … g
-f) 38 kg = … g
+a) 86 kg = … g
+b) 7 l = … ml
+c) 23 km = … m
+d) 11 cm = … mm
+e) 89 m = … cm
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
-Vẽ hình minh hoạ trước khi tính.
+Trình bày lời giải đủ bước, ghi rõ đơn vị.
 
-a) Quanh một cái ao có chu vi 50 m, trồng cây cách nhau 2 m. Cần bao nhiêu cây?
-b) Đoạn đường dài 75 m, trồng cây cách nhau 3 m, trồng cả hai đầu. Cần bao nhiêu cây?
-c) Đoạn đường dài 22 m, trồng cây cách nhau 2 m, chỉ trồng ở một đầu. Cần bao nhiêu cây?
-d) Đoạn đường dài 24 m, trồng cây cách nhau 3 m, không trồng ở hai đầu. Cần bao nhiêu cây?
+a) 2 hộp bút có 14 chiếc. Hỏi 8 hộp như thế có bao nhiêu chiếc bút?
+b) Mua 7 quyển vở, mỗi quyển 5 000 đồng. Đưa người bán 50 000 đồng. Hỏi được trả lại bao nhiêu tiền?
+c) Tuổi mẹ gấp 3 lần tuổi con. Mẹ hơn con 24 tuổi. Tính tuổi mỗi người.
+d) Mua 9 quyển vở, mỗi quyển 6 000 đồng. Đưa người bán 100 000 đồng. Hỏi được trả lại bao nhiêu tiền?
+e) Tuổi mẹ gấp 3 lần tuổi con. Mẹ hơn con 20 tuổi. Tính tuổi mỗi người.
 
 
 ---
@@ -89,99 +91,101 @@ d) Đoạn đường dài 24 m, trồng cây cách nhau 3 m, không trồng ở 
 
 ### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **1 381**
-b) **332**
-c) **1 571**
-d) **421**
-e) **712**
-f) **1 232**
+a) **519**
+b) **227**
+c) **443**
+d) **654**
+e) **733**
+f) **776**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 432 + 949
+1. Xét ý a: 930 − 411
 2. Đọc vị: đây là dạng **Cộng, trừ số tự nhiên**; dấu hiệu là Yêu cầu “đặt tính rồi tính”.
 3. Kiến thức phải dùng: Kĩ thuật đặt tính, nhớ và mượn.
 4. Cách làm: Đặt tính thẳng hàng, tính từ hàng đơn vị.
 5. Lối tắt: Làm tròn một số hạng để ước lượng trước, dùng kết quả ước lượng để phát hiện sai sót.
-6. Kết quả: **1 381**.
+6. Kết quả: **519**.
 
 *Lỗi hay mắc:* Viết lệch hàng khi hai số có số chữ số khác nhau.
 
 ### Bài 2, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **612**
-b) **1 696**
-c) **286**
-d) **2 541**
-e) **508**
-f) **833**
+a) **828**
+b) **649**
+c) **3 332**
+d) **3 008**
+e) **933**
+f) **621**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 4 896 : 8
+1. Xét ý a: 7 452 : 9
 2. Đọc vị: đây là dạng **Nhân, chia số tự nhiên**; dấu hiệu là Yêu cầu “đặt tính rồi tính” với phép nhân, chia.
 3. Kiến thức phải dùng: Kĩ thuật đặt tính nhân, chia.
 4. Cách làm: Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ chữ số.
 5. Lối tắt: Kiểm tra kết quả bằng phép tính ngược: thương × số chia = số bị chia.
-6. Kết quả: **612**.
+6. Kết quả: **828**.
 
 *Lỗi hay mắc:* Quên viết chữ số 0 ở thương nên thương thiếu chữ số.
 
-### Bài 3, (2 điểm — mỗi ý 0,5 điểm)
+### Bài 3, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **49**
-b) **20**
-c) **30**
-d) **55**
+a) **21**
+b) **38**
+c) **49**
+d) **41**
+e) **55**
+f) **60**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Tìm trung bình cộng của 5 số: 58, 57, 39, 42, 49.
+1. Xét ý a: Tìm trung bình cộng của 2 số: 20, 22.
 2. Đọc vị: đây là dạng **Tìm trung bình cộng**; dấu hiệu là Từ khoá “trung bình cộng”, “trung bình mỗi …”.
 3. Kiến thức phải dùng: Định nghĩa trung bình cộng.
 4. Cách làm: Tổng chia số lượng.
 5. Lối tắt: Ước lượng: trung bình cộng luôn nằm giữa số bé nhất và số lớn nhất.
-6. Kết quả: **49**.
+6. Kết quả: **21**.
 
 *Lỗi hay mắc:* Đếm sai số lượng số hạng nên chia nhầm.
 
-### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 4, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **89 000**
-b) **600**
-c) **62 000**
-d) **3 300**
-e) **52 000**
-f) **38 000**
+a) **86 000**
+b) **7 000**
+c) **23 000**
+d) **110**
+e) **8 900**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 89 l = … ml
+1. Xét ý a: 86 kg = … g
 2. Đọc vị: đây là dạng **Đổi đơn vị đo**; dấu hiệu là Hai đơn vị khác nhau nối bởi dấu ….
 3. Kiến thức phải dùng: Bảng đơn vị đo lớp 3.
 4. Cách làm: Nhớ quan hệ rồi nhân.
 5. Lối tắt: Thêm đúng số chữ số 0 tương ứng: 3 số 0 cho km→m, 2 số 0 cho m→cm.
-6. Kết quả: **89 000**.
+6. Kết quả: **86 000**.
 
 *Lỗi hay mắc:* Nhầm 1 m = 10 cm.
 
-### Bài 5, (2 điểm — mỗi ý 0,5 điểm)
+### Bài 5, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **25**
-b) **26**
-c) **11**
-d) **7**
+a) **56 chiếc**
+b) **15 000 đồng**
+c) **mẹ 36 tuổi, con 12 tuổi**
+d) **46 000 đồng**
+e) **mẹ 30 tuổi, con 10 tuổi**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Quanh một cái ao có chu vi 50 m, trồng cây cách nhau 2 m. Cần bao nhiêu cây?
-2. Đọc vị: đây là dạng **Bài toán trồng cây**; dấu hiệu là “Trồng cây”, “cột điện”, “quanh ao”.
-3. Kiến thức phải dùng: Quan hệ số cây – số khoảng.
-4. Cách làm: Số khoảng rồi chọn công thức theo trường hợp.
-5. Lối tắt: Khép kín thì số cây bằng đúng số khoảng.
-6. Kết quả: **25**.
+1. Xét ý a: 2 hộp bút có 14 chiếc. Hỏi 8 hộp như thế có bao nhiêu chiếc bút?
+2. Đọc vị: đây là dạng **Toán điển hình lớp 3: tuổi, mua bán, tỉ lệ**; dấu hiệu là “Gấp … lần” + “hơn … tuổi”; “đưa … đồng”; “… hộp có … chiếc”.
+3. Kiến thức phải dùng: Hiệu – tỉ; nhân chia rút về đơn vị; phép trừ tiền.
+4. Cách làm: Tìm đại lượng trung gian rồi trả lời câu hỏi.
+5. Lối tắt: Bài tỉ lệ có số hộp mới chia hết cho số hộp cũ thì nhân thẳng tỉ số.
+6. Kết quả: **56 chiếc**.
 
-*Lỗi hay mắc:* Máy móc cộng 1 cho mọi trường hợp.
+*Lỗi hay mắc:* Trừ ngay số tiền đưa cho giá một quyển vở.
 
 ---
 
@@ -195,7 +199,7 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài 2 | Nhân, chia số tự nhiên | Quên viết chữ số 0 ở thương nên thương thiếu chữ số. | Nhóm chuyên đề **—** · mức — |
 | Bài 3 | Tìm trung bình cộng | Đếm sai số lượng số hạng nên chia nhầm. | Nhóm chuyên đề **—** · mức — |
 | Bài 4 | Đổi đơn vị đo | Nhầm 1 m = 10 cm. | Nhóm chuyên đề **—** · mức — |
-| Bài 5 | Bài toán trồng cây | Máy móc cộng 1 cho mọi trường hợp. | Nhóm chuyên đề **—** · mức — |
+| Bài 5 | Toán điển hình lớp 3: tuổi, mua bán, tỉ lệ | Trừ ngay số tiền đưa cho giá một quyển vở. | Nhóm chuyên đề **—** · mức — |
 
 ---
 

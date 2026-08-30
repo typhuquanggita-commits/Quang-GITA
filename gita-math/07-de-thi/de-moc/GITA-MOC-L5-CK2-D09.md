@@ -30,56 +30,56 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Đặt tính rồi tính.
 
-a) 46 498 608 : 936
-b) 10 952 465 : 685
-c) 85 085 × 669
-d) 58 199 × 17
-e) 36 525 × 725
-f) 20 955 907 : 217
+a) 9 393 222 : 881
+b) 44 046 × 286
+c) 34 748 × 553
+d) 18 576 × 853
+e) 22 801 842 : 438
+f) 37 756 × 707
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
 Tính bằng cách thuận tiện nhất.
 
-a) 72 × 125 × 8
-b) 50 × 31 × 2
-c) 50 × 85 × 2
-d) 68 × 125 × 8
+a) 18 × 25 × 4
+b) 19 × 125 × 8
+c) 55 × 25 × 4
+d) 2 160 : 8 : 10
+e) 3 120 : 4 : 10
+f) 3 950 : 5 : 10
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
 Ghi rõ đại lượng nào ứng với 100%.
 
-a) Một chiếc cặp giá 500 000 đồng được giảm 20%. Hỏi giá sau khi giảm là bao nhiêu?
-b) Một món hàng giá 120 000 đồng, tăng giá 15%. Giá mới là bao nhiêu?
-c) Mua một món hàng 240 000 đồng rồi bán 312 000 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
-d) Mua một món hàng 120 000 đồng rồi bán 126 000 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
-e) Một chiếc cặp giá 150 000 đồng được giảm 25%. Hỏi giá sau khi giảm là bao nhiêu?
+a) Một món hàng giá 500 000 đồng, tăng giá 15%. Giá mới là bao nhiêu?
+b) Mua một món hàng 150 000 đồng rồi bán 172 500 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
+c) Một chiếc cặp giá 240 000 đồng được giảm 15%. Hỏi giá sau khi giảm là bao nhiêu?
+d) Mua một món hàng 150 000 đồng rồi bán 187 500 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
-Chú ý đơn vị mà đề hỏi.
+Ghi rõ đơn vị: cm² cho diện tích, cm³ cho thể tích.
 
-a) Một xe chở 30 bao đường, mỗi bao 50 kg. Hỏi xe chở bao nhiêu tạ đường?
-b) Một xe chở 30 bao xi măng, mỗi bao 40 kg. Hỏi xe chở bao nhiêu tạ xi măng?
-c) Một xe chở 20 bao gạo, mỗi bao 50 kg. Hỏi xe chở bao nhiêu tạ gạo?
-d) Một xe chở 21 bao gạo, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ gạo?
-e) Một xe chở 38 bao phân bón, mỗi bao 50 kg. Hỏi xe chở bao nhiêu tạ phân bón?
+a) Hình hộp chữ nhật có đáy 6 cm × 14 cm, chiều cao 9 cm. Tính diện tích xung quanh.
+b) Hình hộp chữ nhật có đáy 15 cm × 17 cm, chiều cao 6 cm. Tính diện tích toàn phần.
+c) Hình hộp chữ nhật có ba kích thước 12 cm, 15 cm, 6 cm. Tính thể tích.
+d) Hình lập phương có cạnh 14 cm. Tính thể tích và diện tích toàn phần.
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
-Đổi hết về ki-lô-gam trước khi tính.
+Trả lời bằng lập luận tỉ lệ, hạn chế tính số lớn.
 
-a) Một kho chứa 5 tấn 1 tạ 19 kg thóc. Đổi ra ki-lô-gam.
-b) Số thóc ấy nặng bao nhiêu tạ và bao nhiêu ki-lô-gam?
-c) Chở đều bằng 2 xe thì mỗi xe chở bao nhiêu ki-lô-gam, còn thừa bao nhiêu?
-d) Nếu mỗi xe chỉ chở được 1 tấn thì cần ít nhất bao nhiêu xe?
-e) Bán 2 559 kg thì còn lại bao nhiêu tạ và ki-lô-gam?
-f) Vì sao ở ý d phải làm tròn lên chứ không làm tròn xuống?
+a) Hình chữ nhật có chiều dài 33 cm, chiều rộng 23 cm. Tính diện tích.
+b) Gấp chiều dài lên 2 lần, giữ nguyên chiều rộng. Diện tích mới gấp mấy lần?
+c) Gấp cả hai chiều lên 2 lần. Diện tích mới gấp mấy lần diện tích cũ?
+d) Diện tích mới khi gấp cả hai chiều bằng bao nhiêu?
+e) Chu vi mới khi gấp cả hai chiều gấp mấy lần chu vi cũ?
+f) Nếu giảm chiều rộng đi 4 cm và tăng chiều dài thêm 4 cm thì diện tích mới bằng bao nhiêu?
 
 
 ---
@@ -89,97 +89,99 @@ f) Vì sao ở ý d phải làm tròn lên chứ không làm tròn xuống?
 
 ### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **49 678**
-b) **15 989**
-c) **56 921 865**
-d) **989 383**
-e) **26 480 625**
-f) **96 571**
+a) **10 662**
+b) **12 597 156**
+c) **19 215 644**
+d) **15 845 328**
+e) **52 059**
+f) **26 693 492**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 46 498 608 : 936
+1. Xét ý a: 9 393 222 : 881
 2. Đọc vị: đây là dạng **Nhân, chia số tự nhiên**; dấu hiệu là Yêu cầu “đặt tính rồi tính” với phép nhân, chia.
 3. Kiến thức phải dùng: Kĩ thuật đặt tính nhân, chia.
 4. Cách làm: Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ chữ số.
 5. Lối tắt: Kiểm tra kết quả bằng phép tính ngược: thương × số chia = số bị chia.
-6. Kết quả: **49 678**.
+6. Kết quả: **10 662**.
 
 *Lỗi hay mắc:* Quên viết chữ số 0 ở thương nên thương thiếu chữ số.
 
-### Bài 2, (2 điểm — mỗi ý 0,5 điểm)
+### Bài 2, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **72 000**
-b) **3 100**
-c) **8 500**
-d) **68 000**
+a) **1 800**
+b) **19 000**
+c) **5 500**
+d) **27**
+e) **78**
+f) **79**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 72 × 125 × 8
+1. Xét ý a: 18 × 25 × 4
 2. Đọc vị: đây là dạng **Tính nhanh tích, thương nhiều bước**; dấu hiệu là Tích có thừa số 25, 125, 50, 20; hoặc chia liên tiếp.
 3. Kiến thức phải dùng: Tính chất giao hoán, kết hợp của phép nhân.
 4. Cách làm: Ghép cặp cho tích tròn rồi nhân.
 5. Lối tắt: Chia liên tiếp cho 4 rồi 25 bằng chia cho 100.
-6. Kết quả: **72 000**.
+6. Kết quả: **1 800**.
 
 *Lỗi hay mắc:* Nhân lần lượt từ trái sang phải nên số trung gian rất lớn.
 
-### Bài 3, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 3, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **400 000 đồng**
-b) **138 000 đồng**
-c) **30%**
-d) **5%**
-e) **112 500 đồng**
+a) **575 000 đồng**
+b) **15%**
+c) **204 000 đồng**
+d) **25%**
 
 **Cách giải mẫu:**
 
-1. Giá gốc ứng với 100%.
-2. Bước 1 — số tiền giảm: 500 000 : 100 × 20 = 100 000 (đồng).
-3. Bước 2 — giá sau khi giảm: 500 000 − 100 000 = 400 000 (đồng).
-4. Cách nhanh: giảm 20% nghĩa là còn 80%, tức 500 000 : 100 × 80 = 400 000 (đồng).
-5. Đáp số: **400 000 đồng**.
+1. Xét ý a: Một món hàng giá 500 000 đồng, tăng giá 15%. Giá mới là bao nhiêu?
+2. Đọc vị: đây là dạng **Tỉ số phần trăm trong mua bán**; dấu hiệu là Từ khoá “giảm giá”, “tăng giá”, “lãi”, “lỗ”.
+3. Kiến thức phải dùng: Tỉ số phần trăm, mốc quy chiếu 100%.
+4. Cách làm: Chốt mốc 100% rồi cộng trừ phần trăm.
+5. Lối tắt: Giảm 20% nghĩa là còn 80% — nhân thẳng một lần thay vì trừ hai bước.
+6. Kết quả: **575 000 đồng**.
 
 *Lỗi hay mắc:* Chia tiền lãi cho giá bán nên ra tỉ lệ nhỏ hơn thực tế.
 
-### Bài 4, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 4, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **15 tạ**
-b) **12 tạ**
-c) **10 tạ**
-d) **6 tạ 30 kg**
-e) **19 tạ**
+a) **360 cm²**
+b) **894 cm²**
+c) **1 080 cm³**
+d) **thể tích 2 744 cm³, diện tích toàn phần 1 176 cm²**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Một xe chở 30 bao đường, mỗi bao 50 kg. Hỏi xe chở bao nhiêu tạ đường?
-2. Đọc vị: đây là dạng **Bài toán đại lượng có lời văn**; dấu hiệu là Đơn vị trong câu hỏi khác đơn vị trong dữ kiện.
-3. Kiến thức phải dùng: Nhân, chia số tự nhiên; đổi đơn vị khối lượng.
-4. Cách làm: Tính theo đơn vị dữ kiện rồi đổi ở bước cuối.
-5. Lối tắt: 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ.
-6. Kết quả: **15 tạ**.
+1. Xét ý a: Hình hộp chữ nhật có đáy 6 cm × 14 cm, chiều cao 9 cm. Tính diện tích xung quanh.
+2. Đọc vị: đây là dạng **Hình hộp chữ nhật, hình lập phương**; dấu hiệu là Đề cho ba kích thước hoặc cạnh hình lập phương.
+3. Kiến thức phải dùng: Công thức thể tích, diện tích xung quanh, toàn phần.
+4. Cách làm: Xác định loại diện tích cần tính, đếm đủ số mặt.
+5. Lối tắt: Hình lập phương cạnh a: toàn phần 6 × a × a, thể tích a × a × a.
+6. Kết quả: **360 cm²**.
 
-*Lỗi hay mắc:* Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ.
+*Lỗi hay mắc:* Cộng thiếu một mặt đáy khi tính diện tích toàn phần.
 
 ### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **5 119 kg**
-b) **51 tạ 19 kg**
-c) **2 559 kg, thừa 1 kg**
-d) **6 xe**
-e) **25 tạ 60 kg**
-f) **vì phần thóc còn lại vẫn cần thêm một xe nữa để chở**
+a) **759 cm²**
+b) **2 lần**
+c) **4 lần**
+d) **3 036 cm²**
+e) **2 lần**
+f) **703 cm²**
 
 **Cách giải mẫu:**
 
-1. Bước 1 — đổi về ki-lô-gam: 5 tấn = 5 000 kg; 1 tạ = 100 kg.
-2. Tổng: 5 000 + 100 + 19 = 5 119 (kg).
-3. Bước 2 — chia cho 2 xe: 5 119 : 2 = 2 559 dư 1.
-4. Bước 3 — mỗi xe chở 1 tấn = 1 000 kg, cần 5 119 : 1 000 = 5 xe đầy, còn 119 kg nữa nên phải thêm một xe.
-5. Đáp số ý a: **5 119 kg**.
+1. Diện tích ban đầu: 33 × 23 = 759 (cm²).
+2. Gấp một chiều lên 2 lần thì diện tích gấp 2 lần, vì chiều kia giữ nguyên.
+3. Gấp cả hai chiều lên 2 lần thì diện tích gấp 2 × 2 = 4 lần.
+4. Diện tích mới: 759 × 4 = 3 036 (cm²).
+5. Chu vi chỉ gấp 2 lần, vì chu vi là tổng độ dài chứ không phải tích.
+6. Đáp số ý c: **gấp 4 lần**.
 
-*Lỗi hay mắc:* Chia rồi lấy phần nguyên, bỏ quên phần dư vẫn cần một xe.
+*Lỗi hay mắc:* Cho rằng gấp đôi hai chiều thì diện tích cũng chỉ gấp đôi.
 
 ---
 
@@ -192,8 +194,8 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài 1 | Nhân, chia số tự nhiên | Quên viết chữ số 0 ở thương nên thương thiếu chữ số. | Nhóm chuyên đề **—** · mức — |
 | Bài 2 | Tính nhanh tích, thương nhiều bước | Nhân lần lượt từ trái sang phải nên số trung gian rất lớn. | Nhóm chuyên đề **—** · mức — |
 | Bài 3 | Tỉ số phần trăm trong mua bán | Chia tiền lãi cho giá bán nên ra tỉ lệ nhỏ hơn thực tế. | Nhóm chuyên đề **—** · mức — |
-| Bài 4 | Bài toán đại lượng có lời văn | Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. | Nhóm chuyên đề **—** · mức — |
-| Bài 5 | Đại lượng khối lượng, chia phần và làm tròn lên | Chia rồi lấy phần nguyên, bỏ quên phần dư vẫn cần một xe. | Nhóm chuyên đề **—** · mức — |
+| Bài 4 | Hình hộp chữ nhật, hình lập phương | Cộng thiếu một mặt đáy khi tính diện tích toàn phần. | Nhóm chuyên đề **—** · mức — |
+| Bài 5 | Biến thiên diện tích và chu vi theo tỉ lệ | Cho rằng gấp đôi hai chiều thì diện tích cũng chỉ gấp đôi. | Nhóm chuyên đề **—** · mức — |
 
 ---
 

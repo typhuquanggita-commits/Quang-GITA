@@ -55,6 +55,7 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 | M1 | Dãy có ô trống ở giữa | Điền số hạng còn thiếu của dãy cách đều | Xác định khoảng cách từ cặp liền nhau đã biết | Nếu chỗ trống nằm giữa hai số đã biết thì nó bằng trung bình cộng của hai số ấy. | Hai số hai bên chỗ trống cách nhau hai khoảng |
 | M2 | Dãy có số đầu, số cuối, khoảng cách đều | Đếm số hạng dãy cách đều | (cuối − đầu) : khoảng cách + 1 | Dãy số liên tiếp từ a đến b có b − a + 1 số hạng. | Quên cộng 1 |
 | M2 | Dãy có ô trống ở giữa | Điền số hạng còn thiếu | Xác định khoảng cách từ cặp liền nhau | Chỗ trống nằm giữa hai số đã biết thì bằng trung bình cộng của chúng. | Hai số hai bên chỗ trống cách nhau hai khoảng |
+| M2 | Một dãy số thật ngoài đời, các số cách nhau đều nhau | Dãy số cách đều | Số hạng thứ k = số đầu + (k − 1) × khoảng cách | Nhớ một câu: **số vật = số khoảng + 1** khi đếm cả hai đầu. | Đếm số nhà bằng cách lấy hiệu chia khoảng cách |
 | M3 | Dãy số kết thúc bằng dấu … | Tìm quy luật dãy số | Thử hiệu → thử thương → thử dãy hiệu | Số sau gấp đôi số trước là dấu hiệu quen nhất của dãy nhân. | — |
 | M3 | Hình xếp thêm đều đặn theo thứ tự | Quy luật hình đưa về dãy số | Lập bảng ba hình đầu rồi áp công thức | Ba hình đầu là đủ để khẳng định quy luật cách đều. | Nhân với n thay vì (n − 1) |
 | M4 | “Trồng cây”, “cột điện”, “quanh ao” | Bài toán trồng cây | Số khoảng rồi chọn công thức theo trường hợp | Khép kín thì số cây bằng đúng số khoảng. | Bốn trường hợp trồng cây |
@@ -85,43 +86,43 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 
 Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: đây là dạng bài gì, và dấu hiệu nào cho biết điều đó.
 
-**Đề 1.** Điền số thích hợp vào chỗ chấm. 17, 19, 21, 23, …, 27
+**Đề 1.** Dãy bắt đầu bằng 2; hiệu giữa hai số hạng liên tiếp lần lượt là 1, 2, 3, 4, … Viết năm số hạng đầu của dãy.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 2.** Vẽ hình minh hoạ trước khi tính. Đoạn đường dài 50 m, trồng cây cách nhau 5 m, chỉ trồng ở một đầu. Cần bao nhiêu cây?
+**Đề 2.** Dãy lặp lại mãi nhóm 5, 9, 9, 1, 6: 5, 9, 9, 1, 6, 5, 9, 9, 1, 6, … Số hạng thứ 96 của dãy là số nào?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 3.** Tìm quy luật rồi viết tiếp ba số hạng của mỗi dãy. 25, 35, 45, 55, …
+**Đề 3.** Vẽ ba hình đầu ra nháp rồi tìm quy luật. Hình thứ 1 có 6 que diêm, mỗi hình sau hơn hình trước 4 que. Hình thứ 2 có bao nhiêu que?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 4.** Đếm số số hạng của mỗi dãy. Dãy 2, 6, 10, …, 46 có bao nhiêu số hạng?
+**Đề 4.** Tìm quy luật rồi viết số hạng tiếp theo. 1, 5, 9, 13, 17, …
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 5.** Dãy lặp lại mãi nhóm 9, 1, 1, 5, 7: 9, 1, 1, 5, 7, 9, 1, 1, 5, 7, … Số hạng thứ 111 của dãy là số nào?
+**Đề 5.** Điền số thích hợp vào chỗ chấm. 26, 31, 36, …, 46, 51
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 6.** Dãy bắt đầu bằng 3; hiệu giữa hai số hạng liên tiếp lần lượt là 1, 2, 3, 4, … Viết năm số hạng đầu của dãy.
+**Đề 6.** Điền số thích hợp vào chỗ chấm. 39, …, 43, 45, 47, 49
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 7.** Vẽ ba hình đầu ra nháp rồi tìm quy luật. Hình thứ 1 có 6 que diêm, mỗi hình sau hơn hình trước 3 que. Hình thứ 2 có bao nhiêu que?
+**Đề 7.** Một bên phố có các nhà mang số lẻ, bắt đầu từ số **1** và kết thúc ở số **27**, hai nhà liền nhau hơn kém nhau 2. Số nhà đầu dãy là 1, các nhà tiếp theo là 3, 5, … Số nhà thứ tư là số nào?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 8.** Tìm quy luật rồi viết số hạng tiếp theo. 2, 10, 18, 26, 34, …
+**Đề 8.** Tìm quy luật rồi viết tiếp ba số hạng của mỗi dãy. 19, 24, 29, 34, …
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 9.** Điền số thích hợp vào chỗ chấm. 32, …, 44, 50, 56, 62
+**Đề 9.** Đếm số số hạng của mỗi dãy. Dãy 16, 20, 24, …, 48 có bao nhiêu số hạng?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 10.** Đếm số lượng, không cần liệt kê. Có bao nhiêu số chẵn từ 58 đến 236?
+**Đề 10.** Vẽ hình minh hoạ trước khi tính. Quanh một cái ao có chu vi 100 m, trồng cây cách nhau 5 m. Cần bao nhiêu cây?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
@@ -131,16 +132,16 @@ Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: 
 
 | # | Dạng bài | Dấu hiệu |
 |:--:|---|---|
-| 1 | Điền số hạng còn thiếu | Dãy có ô trống ở giữa |
-| 2 | Bài toán trồng cây | “Trồng cây”, “cột điện”, “quanh ao” |
-| 3 | Tìm quy luật dãy cách đều | Dãy số kèm dấu … ở cuối |
-| 4 | Đếm số hạng dãy cách đều | Dãy có số đầu, số cuối, khoảng cách đều |
-| 5 | Dãy tuần hoàn | Dãy lặp lại một nhóm số cố định |
-| 6 | Dãy có hiệu tăng đều | Hiệu giữa các số hạng tăng đều đặn |
-| 7 | Quy luật hình đưa về dãy số | Hình xếp thêm đều đặn theo thứ tự |
-| 8 | Tìm quy luật dãy số | Dãy số kết thúc bằng dấu … |
-| 9 | Điền số hạng còn thiếu của dãy cách đều | Dãy có ô trống ở giữa |
-| 10 | Đếm số hạng dãy cách đều theo điều kiện | “Có bao nhiêu số … từ … đến …” |
+| 1 | Dãy có hiệu tăng đều | Hiệu giữa các số hạng tăng đều đặn |
+| 2 | Dãy tuần hoàn | Dãy lặp lại một nhóm số cố định |
+| 3 | Quy luật hình đưa về dãy số | Hình xếp thêm đều đặn theo thứ tự |
+| 4 | Tìm quy luật dãy số | Dãy số kết thúc bằng dấu … |
+| 5 | Điền số hạng còn thiếu | Dãy có ô trống ở giữa |
+| 6 | Điền số hạng còn thiếu của dãy cách đều | Dãy có ô trống ở giữa |
+| 7 | Dãy số cách đều | Một dãy số thật ngoài đời, các số cách nhau đều nhau |
+| 8 | Tìm quy luật dãy cách đều | Dãy số kèm dấu … ở cuối |
+| 9 | Đếm số hạng dãy cách đều | Dãy có số đầu, số cuối, khoảng cách đều |
+| 10 | Bài toán trồng cây | “Trồng cây”, “cột điện”, “quanh ao” |
 
 ---
 

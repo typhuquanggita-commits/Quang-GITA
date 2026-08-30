@@ -61,89 +61,89 @@ Viết lại từ trí nhớ. Mỗi ý bỏ trống là một chỗ phải ôn l
 
 Áp dụng công thức, ghi rõ đơn vị.
 
-a) Hình thang có đáy lớn 27 cm, đáy bé 21 cm, chiều cao 25 cm. Tính diện tích.
-b) Hình thang có đáy lớn 37 cm, đáy bé 11 cm, chiều cao 27 cm. Tính diện tích.
-c) Hình thang có đáy lớn 14 cm, đáy bé 11 cm, chiều cao 6 cm. Tính diện tích.
-d) Hình thang có đáy lớn 21 cm, đáy bé 18 cm, chiều cao 12 cm. Tính diện tích.
-e) Hình thang có đáy lớn 27 cm, đáy bé 12 cm, chiều cao 18 cm. Tính diện tích.
+a) Hình thang có đáy lớn 38 cm, đáy bé 18 cm, chiều cao 29 cm. Tính diện tích.
+b) Hình thang có đáy lớn 35 cm, đáy bé 7 cm, chiều cao 8 cm. Tính diện tích.
+c) Hình thang có đáy lớn 26 cm, đáy bé 12 cm, chiều cao 22 cm. Tính diện tích.
+d) Hình thang có đáy lớn 37 cm, đáy bé 4 cm, chiều cao 4 cm. Tính diện tích.
+e) Hình thang có đáy lớn 38 cm, đáy bé 16 cm, chiều cao 15 cm. Tính diện tích.
 
 ### Bài 2, (8,8 điểm) Phần trăm trong mua bán: lãi, lỗ, giảm giá — cụm C10
 
 Ghi rõ đại lượng nào ứng với 100%.
 
-a) Một món hàng giá 200 000 đồng, tăng giá 5%. Giá mới là bao nhiêu?
-b) Mua một món hàng 150 000 đồng rồi bán 187 500 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
-c) Một chiếc cặp giá 300 000 đồng được giảm 30%. Hỏi giá sau khi giảm là bao nhiêu?
-d) Một món hàng giá 200 000 đồng, tăng giá 20%. Giá mới là bao nhiêu?
-e) Một chiếc cặp giá 500 000 đồng được giảm 20%. Hỏi giá sau khi giảm là bao nhiêu?
+a) Mua một món hàng 150 000 đồng rồi bán 172 500 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
+b) Một món hàng giá 150 000 đồng, tăng giá 25%. Giá mới là bao nhiêu?
+c) Một chiếc cặp giá 400 000 đồng được giảm 15%. Hỏi giá sau khi giảm là bao nhiêu?
+d) Một món hàng giá 240 000 đồng, tăng giá 30%. Giá mới là bao nhiêu?
+e) Một chiếc cặp giá 400 000 đồng được giảm 30%. Hỏi giá sau khi giảm là bao nhiêu?
 
 ### Bài 3, (8,8 điểm) Đơn vị đo diện tích — cụm C11
 
 Điền số thích hợp vào chỗ chấm.
 
-a) 48 km² = … ha
-b) 58 ha = … m²
-c) 45 hm² = … m²
-d) 72 dam² = … m²
-e) 69 hm² = … dam²
+a) 1 400 dam² = … hm²
+b) 41 km² = … ha
+c) 61 ha = … m²
+d) 32 hm² = … m²
+e) 6 300 m² = … dam²
 
-### Bài 4, (8,8 điểm) Đọc và phân tích bảng số liệu — cụm C12
+### Bài 4, (8,8 điểm) Tỉ số phần trăm trong tình huống thực tế — cụm C12
 
-Bảng thống kê số học sinh đăng kí câu lạc bộ theo môn: **Toán: 15 · Tiếng Việt: 17 · Tiếng Anh: 25 · Khoa học: 17**.
+Ghi rõ đại lượng nào ứng với 100%.
 
-a) Tổng số học sinh đăng kí là bao nhiêu?
-b) Môn nào có nhiều học sinh đăng kí nhất?
-c) Môn nào có ít học sinh đăng kí nhất?
-d) Môn nhiều nhất hơn môn ít nhất bao nhiêu bạn?
-e) Trung bình mỗi môn có bao nhiêu học sinh đăng kí?
+a) Lớp 4B có 20 học sinh, số học sinh giỏi chiếm 20%. Hỏi lớp đó có bao nhiêu học sinh giỏi?
+b) Lớp 4C có 20 học sinh, trong đó có 4 học sinh giỏi. Hỏi số học sinh giỏi chiếm bao nhiêu phần trăm số học sinh cả lớp?
+c) Lớp 5B có 25 học sinh, trong đó có 20 học sinh giỏi. Hỏi số học sinh giỏi chiếm bao nhiêu phần trăm số học sinh cả lớp?
+d) Lớp 4B có 25 học sinh, trong đó có 10 học sinh giỏi. Hỏi số học sinh giỏi chiếm bao nhiêu phần trăm số học sinh cả lớp?
+e) Lớp 5B có 50 học sinh, số học sinh giỏi chiếm 75%. Hỏi lớp đó có bao nhiêu học sinh giỏi?
 
 
 ## PHẦN D — BÀI TỔNG HỢP LIÊN CỤM · 25 phút · 30 điểm
 
 Mỗi bài dưới đây phải dùng kỹ thuật của **hai chuyên đề khác nhau**.
 
-### Bài 1, (15,0 điểm) Chu vi và diện tích hình tròn — nối nhóm F với nhóm D
+### Bài 1, (15,0 điểm) Lát gạch nền nhà — nối nhóm F với nhóm D
 
-Lấy π = 3,14. Ghi rõ đơn vị.
+Một căn phòng hình chữ nhật dài **7 m**, rộng **5 m**, lát bằng gạch vuông cạnh **40 cm**.
 
-a) Hình tròn có đường kính 18 cm. Bán kính bằng bao nhiêu?
-b) Hình tròn có đường kính 44 cm. Tính chu vi (lấy π = 3,14).
-c) Hình tròn có bán kính 21 cm. Tính diện tích (lấy π = 3,14).
-d) Hình tròn có bán kính 21 cm. Tính chu vi (lấy π = 3,14).
-e) Hình tròn có đường kính 26 cm. Bán kính bằng bao nhiêu?
+a) Tính diện tích nền nhà theo mét vuông.
+b) Đổi diện tích nền nhà ra xăng-ti-mét vuông.
+c) Diện tích một viên gạch là bao nhiêu xăng-ti-mét vuông?
+d) Cần bao nhiêu viên gạch để lát kín nền nhà?
+e) Mỗi viên gạch giá 18 000 đồng. Mua gạch lát hết bao nhiêu tiền?
 
-### Bài 2, (15,0 điểm) Tìm phân số của một số qua hai bước — nối nhóm D với nhóm E
+### Bài 2, (15,0 điểm) Đơn vị đo thể tích và dung tích — nối nhóm D với nhóm E
 
-Đọc kĩ “của số nào” trước khi tính.
+Điền số thích hợp.
 
-a) Một cửa hàng có 352 kg gạo. Ngày đầu bán 1 phần 4 số gạo, ngày thứ hai bán 1 phần 4 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
-b) Một cửa hàng có 216 kg gạo. Ngày đầu bán 1 phần 3 số gạo, ngày thứ hai bán 1 phần 2 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
-c) Một cửa hàng có 396 kg gạo. Ngày đầu bán 1 phần 4 số gạo, ngày thứ hai bán 1 phần 3 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
-d) Một cửa hàng có 240 kg gạo. Ngày đầu bán 1 phần 4 số gạo, ngày thứ hai bán 1 phần 4 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
-e) Một cửa hàng có 44 kg gạo. Ngày đầu bán 1 phần 2 số gạo, ngày thứ hai bán 1 phần 2 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
+a) 18 lít = … ml
+b) 11 m³ = … dm³
+c) 44 000 cm³ = … dm³
+d) 70 dm³ = … lít
+e) 32 m³ = … dm³
 
 
 ## PHẦN E — BÀI PHÂN HOÁ · 15 phút · 15 điểm
 
 Dành cho học viên nhắm điểm 9 – 10. Làm hết phần A đến D rồi mới vào đây.
 
-### Bài 1, (7,5 điểm — mức M4) Cân đĩa và số lần cân ít nhất
+### Bài 1, (7,5 điểm — mức M4) Bài toán bất biến — tính chẵn lẻ của tổng
 
-Xét trường hợp xấu nhất, không xét trường hợp may mắn.
+Tìm đại lượng không đổi qua mỗi bước.
 
-a) Có 9 gói kẹo giống hệt nhau, trong đó đúng một gói nhẹ hơn. Dùng cân đĩa không có quả cân, cần cân ít nhất mấy lần để tìm ra gói nhẹ?
-b) Một lần cân bằng cân đĩa cho mấy kết quả khác nhau?
-c) Vì thế mỗi lần cân nên chia số gói thành mấy phần?
-d) Sau lần cân thứ nhất, số gói còn phải xét nhiều nhất là bao nhiêu?
+a) Trên bảng viết các số từ 1 đến 15. Mỗi bước, xoá hai số bất kì và viết thay vào **hiệu** của chúng (số lớn trừ số bé). Sau nhiều bước chỉ còn một số. Số cuối cùng là số chẵn hay số lẻ?
+b) Tổng các số từ 1 đến 15 bằng bao nhiêu?
+c) Khi thay hai số a và b bằng hiệu của chúng, tổng trên bảng thay đổi bao nhiêu?
+d) Vì tổng giảm đi một số chẵn nên tính chẵn lẻ của tổng có thay đổi không?
 
-### Bài 2, (7,5 điểm — mức M5) Bài toán giả thiết tạm — gà và chó
+### Bài 2, (7,5 điểm — mức M5) Quãng đường mỗi xe đi được đến lúc gặp nhau
 
-Dùng phương pháp giả thiết tạm.
+Tính thời gian gặp nhau trước.
 
-a) Vừa gà vừa chó có 43 con, đếm được tất cả 152 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
-b) Vừa gà vừa chó có 27 con, đếm được tất cả 90 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
-c) Vừa gà vừa chó có 47 con, đếm được tất cả 160 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
-d) Vừa gà vừa chó có 45 con, đếm được tất cả 160 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
+a) Hai xe đi ngược chiều từ hai địa điểm cách nhau 189 km, vận tốc 45 km/giờ và 18 km/giờ. Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
+b) Hai xe đi ngược chiều từ hai địa điểm cách nhau 270 km, vận tốc 36 km/giờ và 18 km/giờ. Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
+c) Hai xe đi ngược chiều từ hai địa điểm cách nhau 207 km, vận tốc 54 km/giờ và 15 km/giờ. Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
+d) Hai xe đi ngược chiều từ hai địa điểm cách nhau 300 km, vận tốc 60 km/giờ và 15 km/giờ. Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
 
 
 ---
@@ -155,79 +155,80 @@ d) Vừa gà vừa chó có 45 con, đếm được tất cả 160 chân. Hỏi 
 ### Phần C
 
 **Bài 1.**
-a) **600 cm²**
-b) **648 cm²**
-c) **75 cm²**
-d) **234 cm²**
-e) **351 cm²**
+a) **812 cm²**
+b) **168 cm²**
+c) **418 cm²**
+d) **82 cm²**
+e) **405 cm²**
 
 **Bài 2.**
-a) **210 000 đồng**
-b) **25%**
-c) **210 000 đồng**
-d) **240 000 đồng**
-e) **400 000 đồng**
+a) **15%**
+b) **187 500 đồng**
+c) **340 000 đồng**
+d) **312 000 đồng**
+e) **280 000 đồng**
 
 **Bài 3.**
-a) **4 800**
-b) **580 000**
-c) **450 000**
-d) **7 200**
-e) **6 900**
+a) **14**
+b) **4 100**
+c) **610 000**
+d) **320 000**
+e) **63**
 
 **Bài 4.**
-a) **74**
-b) **Tiếng Anh (25 bạn)**
-c) **Toán (15 bạn)**
-d) **10**
-e) **18,5**
+a) **4 học sinh**
+b) **20%**
+c) **80%**
+d) **40%**
+e) **37 học sinh**
 
 
 ### Phần D
 
 **Bài 1.**
-a) **9 cm**
-b) **138,16 cm**
-c) **1 384,74 cm²**
-d) **131,88 cm**
-e) **13 cm**
+a) **7 × 5 = 35 m²**
+b) **35 m² = 350 000 cm²**
+c) **40 × 40 = 1 600 cm²**
+d) **350 000 : 1 600 = 218 viên**
+e) **218 × 18 000 = 3 924 000 đồng**
 
 **Bài 2.**
-a) **198 kg**
-b) **72 kg**
-c) **198 kg**
-d) **135 kg**
-e) **11 kg**
+a) **18 000**
+b) **11 000**
+c) **44**
+d) **70**
+e) **32 000**
 
 
 ### Phần E
 
 **Bài 1.**
-a) **2 lần**
-b) **3 kết quả: nghiêng trái, nghiêng phải, thăng bằng**
-c) **3 phần**
-d) **3**
+a) **chẵn**
+b) **120**
+c) **giảm đi 2 lần số bé**
+d) **không thay đổi**
 
 Cách giải mẫu:
-1. Cân đĩa cho **ba** kết quả, nên mỗi lần cân chia được số gói thành ba phần và loại ngay hai phần.
-2. Chia 9 gói thành ba phần, mỗi phần nhiều nhất 3 gói.
-3. Đặt hai phần bằng nhau lên hai đĩa: bên nào nhẹ hơn thì gói nhẹ ở đó; cân bằng thì gói nhẹ ở phần còn lại.
-4. Lặp lại cách ấy, sau 2 lần thì còn đúng một gói.
-5. Đáp số: **2 lần**.
+1. Xét ý a: Trên bảng viết các số từ 1 đến 15. Mỗi bước, xoá hai số bất kì và viết thay vào **hiệu** của chúng (số lớn trừ số bé). Sau nhiều bước chỉ còn một số. Số cuối cùng là số chẵn hay số lẻ?
+2. Đọc vị: đây là dạng **Bài toán bất biến**; dấu hiệu là Một quá trình lặp lại nhiều bước, hỏi trạng thái cuối.
+3. Kiến thức phải dùng: Tính chẵn lẻ, đại lượng bất biến.
+4. Cách làm: Tìm đại lượng không đổi rồi so trạng thái đầu với trạng thái cuối.
+5. Lối tắt: Thử với n nhỏ (n = 3, 4) để đoán, rồi chứng minh bằng bất biến.
+6. Kết quả: **chẵn**.
 
 **Bài 2.**
-a) **10 con gà, 33 con chó**
-b) **9 con gà, 18 con chó**
-c) **14 con gà, 33 con chó**
-d) **10 con gà, 35 con chó**
+a) **135 km**
+b) **180 km**
+c) **162 km**
+d) **240 km**
 
 Cách giải mẫu:
-1. Xét ý a: Vừa gà vừa chó có 43 con, đếm được tất cả 152 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
-2. Đọc vị: đây là dạng **Giả thiết tạm**; dấu hiệu là Hai loại đối tượng, biết tổng số và tổng của một đại lượng khác.
-3. Kiến thức phải dùng: Phương pháp giả thiết tạm.
-4. Cách làm: Giả sử đồng nhất một loại → tính phần chênh → chia cho hiệu đơn vị.
-5. Lối tắt: Số chó = (số chân − 2 × số con) : 2 — thuộc công thức rút gọn để nhẩm.
-6. Kết quả: **10 con gà, 33 con chó**.
+1. Xét ý a: Hai xe đi ngược chiều từ hai địa điểm cách nhau 189 km, vận tốc 45 km/giờ và 18 km/giờ. Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
+2. Đọc vị: đây là dạng **Chuyển động ngược chiều, tính quãng đường từng xe**; dấu hiệu là Hỏi quãng đường **của một xe** tính đến lúc gặp nhau.
+3. Kiến thức phải dùng: Quãng đường – vận tốc – thời gian, tỉ lệ thuận.
+4. Cách làm: Thời gian gặp → quãng đường từng xe.
+5. Lối tắt: Quãng đường hai xe đi tỉ lệ thuận với vận tốc — chia quãng cách theo tỉ số vận tốc là ra ngay.
+6. Kết quả: **135 km**.
 
 
 ---
@@ -241,11 +242,11 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | C1 | Cụm C09 — Hình hộp chữ nhật, hình lập phương: diện tích và thể tích | Nhân riêng từng đáy với chiều cao rồi cộng, quên chia 2. | Phiếu `NC` và `OT` của cụm C09 |
 | C2 | Cụm C10 — Vận tốc, quãng đường, thời gian và chuyển động cùng – ngược chiều | Chia tiền lãi cho giá bán nên ra tỉ lệ nhỏ hơn thực tế. | Phiếu `NC` và `OT` của cụm C10 |
 | C3 | Cụm C11 — Nhân chia số đo thời gian và đổi đơn vị tổng hợp | Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. | Phiếu `NC` và `OT` của cụm C11 |
-| C4 | Cụm C12 — Biểu đồ hình quạt, phần trăm nhiều bước và ôn tập | Đọc nhầm cột, hoặc quên một môn khi cộng tổng. | Phiếu `NC` và `OT` của cụm C12 |
+| C4 | Cụm C12 — Biểu đồ hình quạt, phần trăm nhiều bước và ôn tập | Lấy số học sinh giỏi làm mẫu số khi tính tỉ số phần trăm. | Phiếu `NC` và `OT` của cụm C12 |
 | D1 | Nối nhóm F với nhóm D | Làm được từng chuyên đề riêng nhưng chưa ghép được hai chuyên đề | Phần IV và V của phiếu `OT` các cụm liên quan |
 | D2 | Nối nhóm D với nhóm E | Làm được từng chuyên đề riêng nhưng chưa ghép được hai chuyên đề | Phần IV và V của phiếu `OT` các cụm liên quan |
-| E1 | Cân đĩa, tìm vật khác biệt | Chia đôi như tìm kiếm thông thường nên cần nhiều lần cân hơn mức cần thiết. | Nhóm chuyên đề **—** · mức — |
-| E2 | Giả thiết tạm | Chia số chân thiếu cho 4 thay vì cho hiệu số chân của hai loài. | Nhóm chuyên đề **—** · mức — |
+| E1 | Bài toán bất biến | Thử mò vài trường hợp rồi kết luận, không chứng minh được cho mọi cách làm. | Nhóm chuyên đề **—** · mức — |
+| E2 | Chuyển động ngược chiều, tính quãng đường từng xe | Chia quãng đường theo tỉ lệ sai, hoặc lấy quãng đường chia đôi. | Nhóm chuyên đề **—** · mức — |
 
 ---
 

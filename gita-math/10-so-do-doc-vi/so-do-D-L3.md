@@ -103,43 +103,43 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 
 Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: đây là dạng bài gì, và dấu hiệu nào cho biết điều đó.
 
-**Đề 1.** Vẽ sơ đồ đoạn thẳng rồi giải. Yến và Chi có tất cả 106 quyển vở. Yến có nhiều hơn Chi 20 quyển. Hỏi mỗi bạn có bao nhiêu quyển vở?
+**Đề 1.** Vẽ sơ đồ đoạn thẳng cho mọi bài trước khi tính. Đội Một trồng 29 cây, nhóm Hoa Phượng trồng 116 cây. Số cây của đội Một bằng một phần mấy số cây của nhóm Hoa Phượng?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 2.** Tính trung bình cộng. Tìm trung bình cộng của 5 số: 41, 63, 51, 61, 39.
+**Đề 2.** Vẽ sơ đồ trước, tính sau. Không vẽ thì không được tính. Chi và Bình có tất cả 134 viên bi. Chi có nhiều hơn Bình 12 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 3.** Vẽ sơ đồ đoạn thẳng cho mọi bài trước khi tính. Tổ Ba và nhóm Hoa Phượng trồng được tất cả 65 cây. Số cây của nhóm Hoa Phượng gấp 4 lần số cây của tổ Ba. Mỗi tổ trồng bao nhiêu cây?
+**Đề 3.** Vẽ sơ đồ đoạn thẳng rồi giải. Dũng và An có tất cả 96 quyển vở. Dũng có nhiều hơn An 18 quyển. Hỏi mỗi bạn có bao nhiêu quyển vở?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 4.** Đọc kĩ rồi trả lời từng câu. Vy có 30 quyển vở, số vở của Trang kém 5 lần số vở của Vy. Trang có bao nhiêu quyển vở?
+**Đề 4.** Giả sử tất cả đều là gà rồi lập luận. Vừa gà vừa chó có 25 con, đếm được 94 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 5.** Giải từng bài toán nhỏ. Trung bình mỗi ngày cửa hàng bán được 191 kg gạo. 5 ngày đầu bán được 200, 190, 195, 184, 185 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
+**Đề 5.** Giải từng bài toán nhỏ. Trung bình mỗi ngày bán được 158 kg gạo. Hỏi 6 ngày bán được tất cả bao nhiêu ki-lô-gam?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 6.** Tóm tắt bằng sơ đồ đoạn thẳng rồi giải. Hai lớp 4A và 5B có tất cả 186 quyển sách. Lớp 4A có nhiều hơn lớp 5B 26 quyển. Mỗi lớp có bao nhiêu quyển?
+**Đề 6.** Tính trung bình cộng. Tìm trung bình cộng của 2 số: 24, 46.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 7.** Vẽ sơ đồ trước, tính sau. Không vẽ thì không được tính. Đức và Khánh có tất cả 174 viên bi. Đức có nhiều hơn Khánh 42 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+**Đề 7.** Giải bằng phương pháp rút về đơn vị. 2 bao thóc nặng 10 kg. Hỏi 4 bao như thế nặng bao nhiêu kg?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 8.** Trình bày lời giải có câu trả lời cho từng bước. Tổ Một trồng được 16 cây. Tổ Ba trồng được gấp 6 lần tổ Một. Hỏi cả hai tổ trồng được bao nhiêu cây?
+**Đề 8.** Mỗi bài trình bày đủ hai bước, mỗi bước một câu lời giải. Nhóm Hoa Phượng có 14 lá cờ. Tổ Hai có gấp 2 lần nhóm Hoa Phượng. Hỏi cả hai tổ có bao nhiêu lá cờ?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 9.** Mỗi bài trình bày đủ hai bước, mỗi bước một câu lời giải. Đội Một có 48 lá cờ. Đội Hai có gấp 3 lần đội Một. Hỏi cả hai tổ có bao nhiêu lá cờ?
+**Đề 9.** Trình bày lời giải có câu trả lời cho từng bước. Nhóm Hoa Phượng trồng được 58 cây. Nhóm Sao Mai trồng được gấp 4 lần nhóm Hoa Phượng. Hỏi cả hai tổ trồng được bao nhiêu cây?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 10.** Giả sử tất cả đều là gà rồi lập luận. Vừa gà vừa chó có 40 con, đếm được 128 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
+**Đề 10.** Trình bày lời giải đủ bước, ghi rõ đơn vị. Mua 5 quyển vở, mỗi quyển 3 000 đồng. Đưa người bán 100 000 đồng. Hỏi được trả lại bao nhiêu tiền?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
@@ -149,16 +149,16 @@ Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: 
 
 | # | Dạng bài | Dấu hiệu |
 |:--:|---|---|
-| 1 | Bài toán tổng – hiệu | “Có tất cả …” và “nhiều hơn … là …” |
-| 2 | Tìm trung bình cộng | Từ khoá “trung bình cộng”, “trung bình mỗi …” |
-| 3 | Tổng – tỉ, hiệu – tỉ mức làm quen | “Gấp … lần” đi cùng “có tất cả” hoặc “nhiều hơn” |
-| 4 | Quan hệ nhiều hơn – ít hơn, gấp – kém | Các cụm “nhiều hơn”, “ít hơn”, “gấp … lần”, “kém … lần” |
+| 1 | Tổng – tỉ, hiệu – tỉ mức làm quen | “Gấp … lần” đi cùng “có tất cả” hoặc “nhiều hơn” |
+| 2 | Bài toán tổng – hiệu | “Có tất cả …” cho tổng; “nhiều hơn …” cho hiệu |
+| 3 | Bài toán tổng – hiệu | “Có tất cả …” và “nhiều hơn … là …” |
+| 4 | Giả thiết tạm | Hai loại con vật, biết tổng số con và tổng số chân |
 | 5 | Ba dạng bài trung bình cộng | Cụm “trung bình mỗi …” |
-| 6 | Tổng – hiệu có lời văn | “Có tất cả …” và “… nhiều hơn … là …” |
-| 7 | Bài toán tổng – hiệu | “Có tất cả …” cho tổng; “nhiều hơn …” cho hiệu |
-| 8 | Bài toán giải bằng hai phép tính | Đề cho một đại lượng và quan hệ, hỏi tổng |
-| 9 | Bài toán giải bằng hai phép tính | Đề cho một đại lượng và một quan hệ, câu hỏi hỏi tổng |
-| 10 | Giả thiết tạm | Hai loại con vật, biết tổng số con và tổng số chân |
+| 6 | Tìm trung bình cộng | Từ khoá “trung bình cộng”, “trung bình mỗi …” |
+| 7 | Rút về đơn vị | Cho giá trị của một nhóm, hỏi giá trị của nhóm khác cùng loại |
+| 8 | Bài toán giải bằng hai phép tính | Đề cho một đại lượng và một quan hệ, câu hỏi hỏi tổng |
+| 9 | Bài toán giải bằng hai phép tính | Đề cho một đại lượng và quan hệ, hỏi tổng |
+| 10 | Toán điển hình lớp 3: tuổi, mua bán, tỉ lệ | “Gấp … lần” + “hơn … tuổi”; “đưa … đồng”; “… hộp có … chiếc” |
 
 ---
 

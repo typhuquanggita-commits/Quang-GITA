@@ -30,59 +30,58 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Đặt tính rồi tính.
 
-a) 591 134 − 110 579
-b) 389 908 + 873 901
-c) 249 078 + 487 824
-d) 869 299 − 700 378
-e) 452 465 + 790 920
+a) 572 294 − 120 860
+b) 891 752 + 239 974
+c) 688 753 + 945 705
+d) 892 262 − 558 748
+e) 791 357 − 608 392
+f) 809 958 − 494 319
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
 Điền dấu <, >, = thích hợp.
 
-a) 30 m² … 2 117 dm²
-b) 80 tấn … 8 871 g
-c) 23 hm … 4 149 cm
-d) 26 km² … 7 773 ha
-e) 84 km … 5 892 hm
-f) 11 tấn … 440 hg
+a) 62 tạ … 1 623 tấn
+b) 6 dm … 3 394 m
+c) 18 ha … 6 931 m²
+d) 70 km² … 4 908 m²
+e) 27 tấn … 8 484 tạ
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
 Giải bằng cách quy về tổng số ngày công.
 
-a) 8 người làm xong một công việc trong 6 ngày. Hỏi 12 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
-b) 4 người làm xong một công việc trong 15 ngày. Hỏi 3 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
-c) 3 người làm xong một công việc trong 12 ngày. Hỏi 2 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
-d) 4 người làm xong một công việc trong 15 ngày. Hỏi 2 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
-e) 6 người làm xong một công việc trong 4 ngày. Hỏi 12 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
-f) 8 người làm xong một công việc trong 3 ngày. Hỏi 4 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
+a) 3 người làm xong một công việc trong 12 ngày. Hỏi 12 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
+b) 8 người làm xong một công việc trong 9 ngày. Hỏi 2 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
+c) 6 người làm xong một công việc trong 12 ngày. Hỏi 2 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
+d) 3 người làm xong một công việc trong 16 ngày. Hỏi 2 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
+e) 6 người làm xong một công việc trong 8 ngày. Hỏi 12 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
 Ghi rõ đơn vị: cm² cho diện tích, cm³ cho thể tích.
 
-a) Hình hộp chữ nhật có ba kích thước 6 cm, 10 cm, 4 cm. Tính thể tích.
-b) Hình hộp chữ nhật có đáy 13 cm × 3 cm, chiều cao 15 cm. Tính diện tích toàn phần.
-c) Hình hộp chữ nhật có đáy 18 cm × 6 cm, chiều cao 8 cm. Tính diện tích xung quanh.
-d) Hình lập phương có cạnh 6 cm. Tính thể tích và diện tích toàn phần.
-e) Hình hộp chữ nhật có ba kích thước 14 cm, 3 cm, 12 cm. Tính thể tích.
-f) Hình hộp chữ nhật có đáy 12 cm × 8 cm, chiều cao 12 cm. Tính diện tích xung quanh.
+a) Hình hộp chữ nhật có đáy 18 cm × 9 cm, chiều cao 4 cm. Tính diện tích toàn phần.
+b) Hình hộp chữ nhật có ba kích thước 19 cm, 4 cm, 13 cm. Tính thể tích.
+c) Hình lập phương có cạnh 20 cm. Tính thể tích và diện tích toàn phần.
+d) Hình hộp chữ nhật có đáy 8 cm × 18 cm, chiều cao 11 cm. Tính diện tích xung quanh.
+e) Hình hộp chữ nhật có đáy 13 cm × 20 cm, chiều cao 5 cm. Tính diện tích toàn phần.
+f) Hình lập phương có cạnh 5 cm. Tính thể tích và diện tích toàn phần.
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
-Dùng kĩ thuật tô màu để lập luận.
+Dãy số bắt đầu bằng 3; hiệu giữa hai số hạng liên tiếp lần lượt là 1, 2, 3, 4, … (mỗi hiệu hơn hiệu trước 1 đơn vị).
 
-a) Một bàn cờ vuông 4 × 4 ô. Hỏi có tất cả bao nhiêu ô?
-b) Tô màu xen kẽ đen trắng như bàn cờ vua thì có bao nhiêu ô đen?
-c) Một quân đô-mi-nô phủ đúng 2 ô liền nhau. Có thể phủ kín cả bàn cờ 4 × 4 bằng các quân đô-mi-nô không?
-d) Mỗi quân đô-mi-nô luôn phủ mấy ô đen và mấy ô trắng?
-e) Nếu bỏ đi hai ô ở hai góc đối diện của bàn cờ 4 × 4 (hai ô này cùng màu) thì còn phủ kín được không?
-f) Đại lượng bất biến dùng ở đây là gì?
+a) Viết bốn số hạng đầu của dãy.
+b) Số hạng thứ 6 là số nào?
+c) Số hạng thứ 10 là số nào?
+d) Hiệu giữa số hạng thứ 10 và số hạng thứ 9 bằng bao nhiêu?
+e) Dãy các hiệu của dãy trên có phải dãy cách đều không? Khoảng cách bằng bao nhiêu?
+f) Tổng của bốn số hạng đầu bằng bao nhiêu?
 
 
 ---
@@ -90,104 +89,103 @@ f) Đại lượng bất biến dùng ở đây là gì?
 ## ĐÁP ÁN VÀ BIỂU ĐIỂM
 
 
-### Bài 1, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **480 555**
-b) **1 263 809**
-c) **736 902**
-d) **168 921**
-e) **1 243 385**
+a) **451 434**
+b) **1 131 726**
+c) **1 634 458**
+d) **333 514**
+e) **182 965**
+f) **315 639**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 591 134 − 110 579
+1. Xét ý a: 572 294 − 120 860
 2. Đọc vị: đây là dạng **Cộng, trừ số tự nhiên**; dấu hiệu là Yêu cầu “đặt tính rồi tính”.
 3. Kiến thức phải dùng: Kĩ thuật đặt tính, nhớ và mượn.
 4. Cách làm: Đặt tính thẳng hàng, tính từ hàng đơn vị.
 5. Lối tắt: Làm tròn một số hạng để ước lượng trước, dùng kết quả ước lượng để phát hiện sai sót.
-6. Kết quả: **480 555**.
+6. Kết quả: **451 434**.
 
 *Lỗi hay mắc:* Viết lệch hàng khi hai số có số chữ số khác nhau.
 
-### Bài 2, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 2, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **>**
-b) **>**
+a) **<**
+b) **<**
 c) **>**
-d) **<**
+d) **>**
 e) **<**
-f) **>**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 30 m² … 2 117 dm²
+1. Xét ý a: 62 tạ … 1 623 tấn
 2. Đọc vị: đây là dạng **So sánh số đo đại lượng**; dấu hiệu là Hai vế có đơn vị khác nhau.
 3. Kiến thức phải dùng: Bảng đơn vị đo, so sánh số tự nhiên.
 4. Cách làm: Đổi về cùng đơn vị rồi so sánh.
 5. Lối tắt: Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số.
-6. Kết quả: **>**.
+6. Kết quả: **<**.
 
 *Lỗi hay mắc:* So thẳng hai con số, bỏ qua đơn vị.
 
-### Bài 3, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 3, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **4 ngày**
-b) **20 ngày**
-c) **18 ngày**
-d) **30 ngày**
-e) **2 ngày**
-f) **6 ngày**
+a) **3 ngày**
+b) **36 ngày**
+c) **36 ngày**
+d) **24 ngày**
+e) **4 ngày**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 8 người làm xong một công việc trong 6 ngày. Hỏi 12 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
+1. Xét ý a: 3 người làm xong một công việc trong 12 ngày. Hỏi 12 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
 2. Đọc vị: đây là dạng **Tỉ lệ nghịch**; dấu hiệu là Số người tăng thì thời gian giảm.
 3. Kiến thức phải dùng: Đại lượng tỉ lệ nghịch, tổng số ngày công.
 4. Cách làm: Quy về tổng số ngày công rồi chia.
 5. Lối tắt: Số người gấp đôi thì số ngày giảm một nửa — nhẩm được ngay khi tỉ số đẹp.
-6. Kết quả: **4 ngày**.
+6. Kết quả: **3 ngày**.
 
 *Lỗi hay mắc:* Nhân chia như tỉ lệ thuận nên càng nhiều người lại càng lâu.
 
 ### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **240 cm³**
-b) **558 cm²**
-c) **384 cm²**
-d) **thể tích 216 cm³, diện tích toàn phần 216 cm²**
-e) **504 cm³**
-f) **480 cm²**
+a) **540 cm²**
+b) **988 cm³**
+c) **thể tích 8 000 cm³, diện tích toàn phần 2 400 cm²**
+d) **572 cm²**
+e) **850 cm²**
+f) **thể tích 125 cm³, diện tích toàn phần 150 cm²**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Hình hộp chữ nhật có ba kích thước 6 cm, 10 cm, 4 cm. Tính thể tích.
+1. Xét ý a: Hình hộp chữ nhật có đáy 18 cm × 9 cm, chiều cao 4 cm. Tính diện tích toàn phần.
 2. Đọc vị: đây là dạng **Hình hộp chữ nhật, hình lập phương**; dấu hiệu là Đề cho ba kích thước hoặc cạnh hình lập phương.
 3. Kiến thức phải dùng: Công thức thể tích, diện tích xung quanh, toàn phần.
 4. Cách làm: Xác định loại diện tích cần tính, đếm đủ số mặt.
 5. Lối tắt: Hình lập phương cạnh a: toàn phần 6 × a × a, thể tích a × a × a.
-6. Kết quả: **240 cm³**.
+6. Kết quả: **540 cm²**.
 
 *Lỗi hay mắc:* Cộng thiếu một mặt đáy khi tính diện tích toàn phần.
 
 ### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **16**
-b) **8**
-c) **có**
-d) **1 ô đen và 1 ô trắng**
-e) **không, vì số ô đen và ô trắng không còn bằng nhau**
-f) **hiệu giữa số ô đen và số ô trắng chưa bị phủ**
+a) **3, 4, 6, 9**
+b) **18**
+c) **48**
+d) **9**
+e) **có, khoảng cách 1**
+f) **22**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Một bàn cờ vuông 4 × 4 ô. Hỏi có tất cả bao nhiêu ô?
-2. Đọc vị: đây là dạng **Tô màu, bất biến trên bàn cờ**; dấu hiệu là Bàn cờ, quân đô-mi-nô, câu hỏi “có thể phủ kín không”.
-3. Kiến thức phải dùng: Kĩ thuật tô màu, bất biến, tính chẵn lẻ.
-4. Cách làm: Tô màu xen kẽ, đếm hai màu, so sánh.
-5. Lối tắt: Hai ô ở hai góc đối diện của bàn cờ luôn cùng màu.
-6. Kết quả: **16**.
+1. Xét ý a: Viết bốn số hạng đầu của dãy.
+2. Đọc vị: đây là dạng **Dãy có hiệu tăng đều (hiệu bậc hai)**; dấu hiệu là Hiệu giữa các số hạng tăng đều đặn.
+3. Kiến thức phải dùng: Dãy hiệu, tổng dãy cách đều.
+4. Cách làm: Lập dãy hiệu, tính tổng hiệu, cộng vào số hạng đầu.
+5. Lối tắt: Với hiệu 1, 2, 3, … thì số hạng thứ n = số đầu + (n − 1) × n : 2.
+6. Kết quả: **3, 4, 6, 9**.
 
-*Lỗi hay mắc:* Thử xếp bằng tay rồi kết luận “không xếp được” mà không chứng minh.
+*Lỗi hay mắc:* Cộng n hiệu thay vì (n − 1) hiệu.
 
 ---
 
@@ -201,7 +199,7 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài 2 | So sánh số đo đại lượng | So thẳng hai con số, bỏ qua đơn vị. | Nhóm chuyên đề **—** · mức — |
 | Bài 3 | Tỉ lệ nghịch | Nhân chia như tỉ lệ thuận nên càng nhiều người lại càng lâu. | Nhóm chuyên đề **—** · mức — |
 | Bài 4 | Hình hộp chữ nhật, hình lập phương | Cộng thiếu một mặt đáy khi tính diện tích toàn phần. | Nhóm chuyên đề **—** · mức — |
-| Bài 5 | Tô màu, bất biến trên bàn cờ | Thử xếp bằng tay rồi kết luận “không xếp được” mà không chứng minh. | Nhóm chuyên đề **—** · mức — |
+| Bài 5 | Dãy có hiệu tăng đều (hiệu bậc hai) | Cộng n hiệu thay vì (n − 1) hiệu. | Nhóm chuyên đề **—** · mức — |
 
 ---
 

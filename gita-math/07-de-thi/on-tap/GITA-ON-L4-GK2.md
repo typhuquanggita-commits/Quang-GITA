@@ -57,68 +57,71 @@ Viết lại từ trí nhớ. Mỗi ý bỏ trống là một chỗ phải ôn l
 
 ## PHẦN C — LUYỆN LẠI THEO TỪNG CỤM · 30 phút · 35 điểm
 
-### Bài 1, (8,8 điểm) Bốn phép tính với phân số — cụm C09
+### Bài 1, (8,8 điểm) Đọc và lập biểu đồ tranh — cụm C09
 
-Tính rồi rút gọn kết quả.
+Biểu đồ tranh số quyển sách của bốn bạn — mỗi hình ● ứng với **2 quyển sách**:
 
-a) 2 − 3 phần 7
-b) 7 phần 4 : 9 phần 14
-c) 3 phần 2 × 7 phần 9
-d) 1 + 5 phần 6
-e) 6 phần 5 − 3 phần 4
+Lan: ●●●●●●●● · Phúc: ●●● · An: ●●● · Quân: ●●
+
+a) Mỗi hình ● ứng với 2 quyển sách. Bạn Lan có bao nhiêu quyển sách?
+b) Bạn Phúc có bao nhiêu quyển sách?
+c) Cả bốn bạn có tất cả bao nhiêu quyển sách?
+d) Bạn nào có nhiều quyển sách nhất?
+e) Bạn nào có ít quyển sách nhất?
 
 ### Bài 2, (8,8 điểm) Đại lượng tỉ lệ thuận — cụm C10
 
 Giải bằng cách rút về đơn vị hoặc dùng tỉ số.
 
-a) Mua 7 quyển vở hết 315 nghìn đồng. Với 900 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
-b) Mua 13 quyển vở hết 884 nghìn đồng. Mua 10 quyển vở như thế hết bao nhiêu nghìn đồng?
-c) Mua 6 quyển vở hết 486 nghìn đồng. Với 486 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
-d) Mua 12 quyển vở hết 420 nghìn đồng. Mua 9 quyển vở như thế hết bao nhiêu nghìn đồng?
+a) Mua 15 quyển vở hết 885 nghìn đồng. Với 1 062 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+b) Mua 3 quyển vở hết 123 nghìn đồng. Với 697 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+c) Mua 14 quyển vở hết 924 nghìn đồng. Mua 24 quyển vở như thế hết bao nhiêu nghìn đồng?
+d) Mua 14 quyển vở hết 126 nghìn đồng. Với 243 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+e) Mua 5 quyển vở hết 300 nghìn đồng. Với 1 380 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
 
 ### Bài 3, (8,8 điểm) Diện tích hình bình hành, hình thoi, hình tam giác — cụm C11
 
 Áp dụng đúng công thức từng hình.
 
-a) Hình bình hành có đáy 21 cm, chiều cao 29 cm. Tính diện tích.
-b) Hình tam giác có đáy 8 cm, chiều cao 16 cm. Tính diện tích.
-c) Hình thoi có hai đường chéo dài 4 cm và 6 cm. Tính diện tích.
-d) Hình bình hành có đáy 5 cm, chiều cao 24 cm. Tính diện tích.
+a) Hình thoi có hai đường chéo dài 12 cm và 12 cm. Tính diện tích.
+b) Hình bình hành có đáy 23 cm, chiều cao 18 cm. Tính diện tích.
+c) Hình tam giác có đáy 15 cm, chiều cao 18 cm. Tính diện tích.
+d) Hình bình hành có đáy 4 cm, chiều cao 23 cm. Tính diện tích.
 
-### Bài 4, (8,8 điểm) Nguyên lý bù trừ với hai tập hợp — cụm C12
+### Bài 4, (8,8 điểm) Bài toán cân đĩa tìm vật khác biệt — cụm C12
 
-Vẽ hai vòng tròn giao nhau và điền số vào từng miền.
+Chú ý mỗi lần cân cho bao nhiêu kết quả.
 
-a) Lớp có 65 học sinh. Có 35 bạn thích môn Toán, 36 bạn thích môn Tiếng Việt, 13 bạn thích cả hai môn. Hỏi bao nhiêu bạn thích ít nhất một trong hai môn?
-b) Bao nhiêu bạn chỉ thích môn Toán?
-c) Bao nhiêu bạn chỉ thích môn Tiếng Việt?
-d) Bao nhiêu bạn không thích môn nào trong hai môn đó?
-e) Nếu cộng thẳng số bạn thích Toán với số bạn thích Tiếng Việt thì được bao nhiêu?
+a) Có 3 đồng tiền giống hệt nhau, trong đó có đúng một đồng nhẹ hơn. Dùng cân đĩa (không quả cân), cần cân ít nhất mấy lần để tìm ra đồng nhẹ?
+b) Mỗi lần cân, ta chia số đồng tiền thành mấy phần?
+c) Vì sao lại chia thành ba phần chứ không phải hai?
+d) Sau lần cân thứ nhất, số đồng tiền còn phải xét nhiều nhất là bao nhiêu?
+e) Nếu có 3 đồng tiền thì cần cân mấy lần?
 
 
 ## PHẦN D — BÀI TỔNG HỢP LIÊN CỤM · 25 phút · 30 điểm
 
 Mỗi bài dưới đây phải dùng kỹ thuật của **hai chuyên đề khác nhau**.
 
-### Bài 1, (15,0 điểm) Tìm hai số khi biết hiệu và tỉ số — nối nhóm H với nhóm D
+### Bài 1, (15,0 điểm) Tìm hai số khi biết tổng và tỉ số — nối nhóm H với nhóm D
 
 Vẽ sơ đồ đoạn thẳng rồi giải.
 
-a) Trang trại chứa nhiều hơn kho B 90 kg thóc. Số thóc ở kho B bằng 5 phần 6 số thóc ở trang trại. Mỗi nơi chứa bao nhiêu kg?
-b) Hợp tác xã chứa nhiều hơn thư viện 49 kg xi măng. Số xi măng ở thư viện bằng 3 phần 4 số xi măng ở hợp tác xã. Mỗi nơi chứa bao nhiêu kg?
-c) Cửa hàng chứa nhiều hơn trang trại 72 kg muối. Số muối ở trang trại bằng 1 phần 4 số muối ở cửa hàng. Mỗi nơi chứa bao nhiêu kg?
-d) Hợp tác xã chứa nhiều hơn kho B 16 kg xi măng. Số xi măng ở kho B bằng 3 phần 4 số xi măng ở hợp tác xã. Mỗi nơi chứa bao nhiêu kg?
-e) Cửa hàng chứa nhiều hơn hợp tác xã 192 kg muối. Số muối ở hợp tác xã bằng 1 phần 2 số muối ở cửa hàng. Mỗi nơi chứa bao nhiêu kg?
+a) Tổ Một và đội Một trồng được tất cả 54 cây. Số cây của tổ Một bằng 1 phần 2 số cây của đội Một. Mỗi tổ trồng được bao nhiêu cây?
+b) Nhóm Sao Mai và đội Một trồng được tất cả 574 cây. Số cây của nhóm Sao Mai bằng 2 phần 5 số cây của đội Một. Mỗi tổ trồng được bao nhiêu cây?
+c) Tổ Một và tổ Ba trồng được tất cả 342 cây. Số cây của tổ Một bằng 1 phần 2 số cây của tổ Ba. Mỗi tổ trồng được bao nhiêu cây?
+d) Nhóm Hoa Phượng và tổ Một trồng được tất cả 228 cây. Số cây của nhóm Hoa Phượng bằng 1 phần 5 số cây của tổ Một. Mỗi tổ trồng được bao nhiêu cây?
+e) Đội Một và nhóm Sao Mai trồng được tất cả 522 cây. Số cây của đội Một bằng 1 phần 2 số cây của nhóm Sao Mai. Mỗi tổ trồng được bao nhiêu cây?
 
-### Bài 2, (15,0 điểm) Tìm phân số của một số qua hai bước — nối nhóm D với nhóm F
+### Bài 2, (15,0 điểm) Tổng – tỉ, hiệu – tỉ khi một dữ kiện bị giấu — nối nhóm D với nhóm F
 
-Đọc kĩ “của số nào” trước khi tính.
+Việc đầu tiên là gọi tên dữ kiện bị giấu.
 
-a) Một cửa hàng có 100 kg gạo. Ngày đầu bán 1 phần 5 số gạo, ngày thứ hai bán 1 phần 5 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
-b) Một cửa hàng có 162 kg gạo. Ngày đầu bán 1 phần 3 số gạo, ngày thứ hai bán 1 phần 2 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
-c) Một cửa hàng có 54 kg gạo. Ngày đầu bán 1 phần 3 số gạo, ngày thứ hai bán 1 phần 3 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
-d) Một cửa hàng có 120 kg gạo. Ngày đầu bán 1 phần 5 số gạo, ngày thứ hai bán 1 phần 3 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
-e) Một cửa hàng có 340 kg gạo. Ngày đầu bán 1 phần 4 số gạo, ngày thứ hai bán 1 phần 5 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
+a) Trang trại và xưởng chứa tất cả 360 kg phân bón. Nếu chia số phân bón ở trang trại thành 4 phần bằng nhau thì số phân bón ở xưởng bằng 5 phần như thế. Mỗi nơi chứa bao nhiêu kg?
+b) Kho B chứa 20 kg phân bón. Nếu kho B nhận thêm 30 kg thì bằng số phân bón ở hợp tác xã. Hỏi cả hai nơi chứa bao nhiêu kg?
+c) Số phân bón ở xưởng bằng 3 số phân bón ở thư viện. Nếu chuyển 56 kg từ xưởng sang thư viện thì xưởng vẫn còn nhiều hơn. Biết xưởng hơn thư viện 112 kg, tìm số phân bón mỗi nơi.
+d) Hợp tác xã chứa 185 kg muối. Nếu hợp tác xã nhận thêm 37 kg thì bằng số muối ở kho A. Hỏi cả hai nơi chứa bao nhiêu kg?
+e) Trang trại và kho B chứa tất cả 99 kg gạo. Nếu chia số gạo ở trang trại thành 4 phần bằng nhau thì số gạo ở kho B bằng 5 phần như thế. Mỗi nơi chứa bao nhiêu kg?
 
 
 ## PHẦN E — BÀI PHÂN HOÁ · 15 phút · 15 điểm
@@ -129,19 +132,19 @@ Dành cho học viên nhắm điểm 9 – 10. Làm hết phần A đến D rồ
 
 Tính số cây cần trồng trong mỗi trường hợp.
 
-a) Trồng cây quanh một cái ao hình tròn có chu vi 132 m, hai cây liền nhau cách nhau 4 m. Cần bao nhiêu cây?
-b) Trồng cây trên đoạn đường dài 62 m, hai cây liền nhau cách nhau 2 m, không trồng ở cả hai đầu. Cần bao nhiêu cây?
-c) Trồng cây suốt một đoạn đường dài 24 m, hai cây liền nhau cách nhau 3 m, trồng cả ở hai đầu đường. Cần bao nhiêu cây?
-d) Trồng cây trên đoạn đường dài 80 m, hai cây liền nhau cách nhau 2 m, chỉ trồng ở một đầu đường. Cần bao nhiêu cây?
+a) Trồng cây suốt một đoạn đường dài 288 m, hai cây liền nhau cách nhau 6 m, trồng cả ở hai đầu đường. Cần bao nhiêu cây?
+b) Trồng cây quanh một cái ao hình tròn có chu vi 75 m, hai cây liền nhau cách nhau 3 m. Cần bao nhiêu cây?
+c) Trồng cây trên đoạn đường dài 168 m, hai cây liền nhau cách nhau 4 m, chỉ trồng ở một đầu đường. Cần bao nhiêu cây?
+d) Trồng cây trên đoạn đường dài 210 m, hai cây liền nhau cách nhau 6 m, không trồng ở cả hai đầu. Cần bao nhiêu cây?
 
-### Bài 2, (7,5 điểm — mức M5) Đi-rích-lê ở dạng chứng minh
+### Bài 2, (7,5 điểm — mức M5) Đại lượng bất biến: tính chẵn lẻ của tổng
 
-Nêu rõ ngăn kéo là gì, đồ vật là gì.
+Tìm cho ra thứ **không đổi** qua mỗi bước.
 
-a) Có 25 học sinh sinh trong 8 tháng khác nhau. Chứng tỏ rằng có ít nhất 4 bạn sinh cùng một tháng. Hỏi nếu bớt đi một bạn thì kết luận đó còn đúng không?
-b) Có 17 học sinh sinh trong 4 tháng khác nhau. Chứng tỏ rằng có ít nhất 5 bạn sinh cùng một tháng. Hỏi nếu bớt đi một bạn thì kết luận đó còn đúng không?
-c) Có 10 học sinh sinh trong 9 tháng khác nhau. Chứng tỏ rằng có ít nhất 2 bạn sinh cùng một tháng. Hỏi nếu bớt đi một bạn thì kết luận đó còn đúng không?
-d) Có 22 học sinh sinh trong 7 tháng khác nhau. Chứng tỏ rằng có ít nhất 4 bạn sinh cùng một tháng. Hỏi nếu bớt đi một bạn thì kết luận đó còn đúng không?
+a) Trên bảng viết các số từ 1 đến 20. Tổng của chúng bằng bao nhiêu?
+b) Mỗi bước, xoá hai số bất kì và viết thay vào **tổng** của chúng. Tổng các số trên bảng có thay đổi không?
+c) Sau nhiều bước chỉ còn một số. Số đó bằng bao nhiêu?
+d) Nếu mỗi bước thay hai số bằng **hiệu** của chúng thì tổng giảm đi bao nhiêu?
 
 
 ---
@@ -153,78 +156,79 @@ d) Có 22 học sinh sinh trong 7 tháng khác nhau. Chứng tỏ rằng có ít
 ### Phần C
 
 **Bài 1.**
-a) **11 phần 7**
-b) **49 phần 18**
-c) **7 phần 6**
-d) **11 phần 6**
-e) **9 phần 20**
+a) **16**
+b) **6**
+c) **32**
+d) **Lan (16)**
+e) **Quân (4)**
 
 **Bài 2.**
-a) **20 quyển**
-b) **680 nghìn đồng**
-c) **6 quyển**
-d) **315 nghìn đồng**
+a) **18 quyển**
+b) **17 quyển**
+c) **1 584 nghìn đồng**
+d) **27 quyển**
+e) **23 quyển**
 
 **Bài 3.**
-a) **609 cm²**
-b) **64 cm²**
-c) **12 cm²**
-d) **120 cm²**
+a) **72 cm²**
+b) **414 cm²**
+c) **135 cm²**
+d) **92 cm²**
 
 **Bài 4.**
-a) **58**
-b) **22**
-c) **23**
-d) **7**
-e) **71**
+a) **1 lần**
+b) **3 phần**
+c) **vì mỗi lần cân có ba kết quả: trái nặng hơn, phải nặng hơn, hoặc cân bằng**
+d) **1**
+e) **1 lần**
 
 
 ### Phần D
 
 **Bài 1.**
-a) **kho B: 450 kg, trang trại: 540 kg**
-b) **thư viện: 147 kg, hợp tác xã: 196 kg**
-c) **trang trại: 24 kg, cửa hàng: 96 kg**
-d) **kho B: 48 kg, hợp tác xã: 64 kg**
-e) **hợp tác xã: 192 kg, cửa hàng: 384 kg**
+a) **tổ Một: 18 cây, đội Một: 36 cây**
+b) **nhóm Sao Mai: 164 cây, đội Một: 410 cây**
+c) **tổ Một: 114 cây, tổ Ba: 228 cây**
+d) **nhóm Hoa Phượng: 38 cây, tổ Một: 190 cây**
+e) **đội Một: 174 cây, nhóm Sao Mai: 348 cây**
 
 **Bài 2.**
-a) **64 kg**
-b) **54 kg**
-c) **24 kg**
-d) **64 kg**
-e) **204 kg**
+a) **trang trại: 160 kg, xưởng: 200 kg**
+b) **70 kg**
+c) **thư viện: 56 kg, xưởng: 168 kg**
+d) **407 kg**
+e) **trang trại: 44 kg, kho B: 55 kg**
 
 
 ### Phần E
 
 **Bài 1.**
-a) **33**
-b) **30**
-c) **9**
-d) **40**
+a) **49**
+b) **25**
+c) **42**
+d) **34**
 
 Cách giải mẫu:
-1. Xét ý a: Trồng cây quanh một cái ao hình tròn có chu vi 132 m, hai cây liền nhau cách nhau 4 m. Cần bao nhiêu cây?
+1. Xét ý a: Trồng cây suốt một đoạn đường dài 288 m, hai cây liền nhau cách nhau 6 m, trồng cả ở hai đầu đường. Cần bao nhiêu cây?
 2. Đọc vị: đây là dạng **Bài toán trồng cây**; dấu hiệu là Từ khoá “trồng cây”, “cột điện”, “quanh ao”, “hai đầu”.
 3. Kiến thức phải dùng: Quan hệ số cây – số khoảng.
 4. Cách làm: Tính số khoảng rồi chọn đúng công thức theo trường hợp.
 5. Lối tắt: Khép kín thì số cây bằng đúng số khoảng — không cộng, không trừ.
-6. Kết quả: **33**.
+6. Kết quả: **49**.
 
 **Bài 2.**
-a) **không còn đúng (24 bạn có thể chia đều 3 bạn mỗi tháng)**
-b) **không còn đúng (16 bạn có thể chia đều 4 bạn mỗi tháng)**
-c) **không còn đúng (9 bạn có thể chia đều 1 bạn mỗi tháng)**
-d) **không còn đúng (21 bạn có thể chia đều 3 bạn mỗi tháng)**
+a) **210**
+b) **không thay đổi**
+c) **210**
+d) **giảm đi 2 lần số bé — luôn là một số chẵn**
 
 Cách giải mẫu:
-1. Xét ý a: Có 25 học sinh sinh trong 8 tháng khác nhau. Chứng tỏ rằng có ít nhất 4 bạn sinh cùng một tháng. Hỏi nếu bớt đi một bạn thì kết luận đó còn đúng không?
-2. Đọc vị: đây là dạng **Đi-rích-lê dạng chứng minh**; dấu hiệu là “Chứng tỏ rằng có ít nhất … cùng …”.
-3. Kiến thức phải dùng: Nguyên lí ngăn kéo.
-4. Cách làm: Đặt tên ngăn kéo và đồ vật, tính ngưỡng.
-5. Lối tắt: Ngưỡng = số ngăn × (số cần − 1) + 1.
-6. Kết quả: **không còn đúng (24 bạn có thể chia đều 3 bạn mỗi tháng)**.
+1. Tổng ban đầu: 1 + 2 + … + 20 = (20 × 21) : 2 = 210.
+2. Thay hai số a và b bằng a + b: tổng **không đổi**, nên số cuối cùng chính là 210.
+3. Thay hai số a và b (a ≥ b) bằng a − b: tổng giảm đi 2 × b — luôn chẵn.
+4. Giảm đi một số chẵn thì tính chẵn lẻ của tổng giữ nguyên.
+5. Tổng ban đầu 210 là số chẵn, nên số cuối cùng cũng là số chẵn.
+6. Đáp số ý f: **số chẵn**.
 
 
 ---
@@ -235,14 +239,14 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 
 | Bài | Đo cái gì | Sai bài này nghĩa là | Học lại ở đâu |
 |:--:|---|---|---|
-| C1 | Cụm C09 — Phân số: khái niệm đến bốn phép tính | Quy đồng cả khi nhân, hoặc cộng thẳng tử với tử và mẫu với mẫu. | Phiếu `NC` và `OT` của cụm C09 |
+| C1 | Cụm C09 — Phân số: khái niệm đến bốn phép tính | Đếm số hình rồi trả lời luôn, quên nhân với số đơn vị mỗi hình. | Phiếu `NC` và `OT` của cụm C09 |
 | C2 | Cụm C10 — Tổng – tỉ, hiệu – tỉ, tỉ lệ bản đồ và toán tuổi | Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch. | Phiếu `NC` và `OT` của cụm C10 |
 | C3 | Cụm C11 — Hình thoi, diện tích và bài toán hình học tổng hợp | Chia 2 cho hình bình hành, hoặc quên chia 2 cho hình tam giác. | Phiếu `NC` và `OT` của cụm C11 |
-| C4 | Cụm C12 — Suy luận logic, đếm hình và toán đếm | Cộng thẳng hai nhóm rồi coi đó là số bạn thích ít nhất một môn. | Phiếu `NC` và `OT` của cụm C12 |
+| C4 | Cụm C12 — Suy luận logic, đếm hình và toán đếm | Chia đôi như tìm kiếm thông thường nên cần nhiều lần cân hơn mức cần thiết. | Phiếu `NC` và `OT` của cụm C12 |
 | D1 | Nối nhóm H với nhóm D | Làm được từng chuyên đề riêng nhưng chưa ghép được hai chuyên đề | Phần IV và V của phiếu `OT` các cụm liên quan |
 | D2 | Nối nhóm D với nhóm F | Làm được từng chuyên đề riêng nhưng chưa ghép được hai chuyên đề | Phần IV và V của phiếu `OT` các cụm liên quan |
 | E1 | Bài toán trồng cây | Máy móc cộng 1 cho mọi trường hợp. | Nhóm chuyên đề **—** · mức — |
-| E2 | Đi-rích-lê dạng chứng minh | Nói chung chung “vì nhiều người quá nên phải trùng” mà không chỉ ra con số. | Nhóm chuyên đề **—** · mức — |
+| E2 | Bài toán bất biến | Thử vài trường hợp rồi kết luận, không chứng minh được cho mọi cách làm. | Nhóm chuyên đề **—** · mức — |
 
 ---
 

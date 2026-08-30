@@ -28,44 +28,47 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ### Bài 1. (2 điểm — 10 phút) Tính và điền kết quả
 
-Cho số **39 802**.
+Cho số **49 466**.
 
-a) Số 39 802 có bao nhiêu chữ số?
+a) Số 49 466 có bao nhiêu chữ số?
 b) Chữ số hàng đơn vị là chữ số nào?
 c) Chữ số hàng trăm là chữ số nào?
 d) Chữ số hàng nghìn là chữ số nào?
-e) Viết số 39 802 thành tổng các giá trị hàng.
-f) Tổng các chữ số của số 39 802 bằng bao nhiêu?
+e) Viết số 49 466 thành tổng các giá trị hàng.
+f) Tổng các chữ số của số 49 466 bằng bao nhiêu?
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
-Tính bằng cách thuận tiện nhất.
+Đặt tính rồi tính.
 
-a) 361 + 80 − 80
-b) 39 + 23 + 61 + 77
-c) 82 + 60 − 60
-d) 246 + 48 − 48
-e) 36 + 59 + 64 + 41
+a) 645 : 2
+b) 385 × 8
+c) 973 : 7
+d) 703 × 6
+e) 1 536 : 3
+f) 4 222 : 6
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
-Vẽ sơ đồ trước, tính sau. Không vẽ thì không được tính.
+Tóm tắt bằng sơ đồ đoạn thẳng rồi giải.
 
-a) Khánh và Quân có tất cả 144 viên bi. Khánh có nhiều hơn Quân 44 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
-b) Vy và Ngọc có tất cả 192 viên bi. Vy có nhiều hơn Ngọc 56 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
-c) Khánh và Vy có tất cả 104 viên bi. Khánh có nhiều hơn Vy 8 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
-d) Dũng và Quân có tất cả 96 viên bi. Dũng có nhiều hơn Quân 22 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+a) Hai lớp 5B và 5A có tất cả 812 quyển sách. Lớp 5B có nhiều hơn lớp 5A 168 quyển. Mỗi lớp có bao nhiêu quyển?
+b) Trang trại và hợp tác xã chứa tất cả 482 kg đường. Trang trại chứa nhiều hơn hợp tác xã 120 kg. Mỗi nơi chứa bao nhiêu kg?
+c) Đội Hai và đội Một trồng được 498 cây. Đội Hai trồng nhiều hơn đội Một 40 cây. Mỗi tổ trồng bao nhiêu cây?
+d) Xưởng và hợp tác xã chứa tất cả 772 kg gạo. Xưởng chứa nhiều hơn hợp tác xã 228 kg. Mỗi nơi chứa bao nhiêu kg?
+e) Tổ Ba và nhóm Hoa Phượng trồng được 838 cây. Tổ Ba trồng nhiều hơn nhóm Hoa Phượng 254 cây. Mỗi tổ trồng bao nhiêu cây?
+f) Hai lớp 4C và 4B có tất cả 76 quyển sách. Lớp 4C có nhiều hơn lớp 4B 18 quyển. Mỗi lớp có bao nhiêu quyển?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
 Kẻ một bảng lịch nhỏ ra nháp rồi trả lời.
 
-a) Tháng 5 năm 2020 có bao nhiêu ngày?
-b) Năm 2020 có phải năm nhuận không?
-c) Ngày 1 tháng 5 là Thứ Tư. Hỏi ngày 29 tháng ấy là thứ mấy?
+a) Tháng 12 năm 2033 có bao nhiêu ngày?
+b) Năm 2033 có phải năm nhuận không?
+c) Ngày 1 tháng 12 là Thứ Tư. Hỏi ngày 14 tháng ấy là thứ mấy?
 d) Tháng ấy có bao nhiêu ngày Chủ nhật?
 e) Ngày cuối cùng của tháng là thứ mấy?
 f) Một năm thường có bao nhiêu ngày, năm nhuận có bao nhiêu ngày?
@@ -73,13 +76,14 @@ f) Một năm thường có bao nhiêu ngày, năm nhuận có bao nhiêu ngày?
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
-Suy nghĩ theo số lần chứa.
+Một hình chữ nhật có chiều dài 17 cm, chiều rộng 4 cm.
 
-a) Một chiếc cân đĩa chỉ có các quả cân loại 200 g. Muốn cân một vật nặng 600 g thì cần bao nhiêu quả cân như thế?
-b) Một chiếc cân đĩa chỉ có các quả cân loại 100 g. Muốn cân một vật nặng 200 g thì cần bao nhiêu quả cân như thế?
-c) Một chiếc cân đĩa chỉ có các quả cân loại 100 g. Muốn cân một vật nặng 500 g thì cần bao nhiêu quả cân như thế?
-d) Một chiếc cân đĩa chỉ có các quả cân loại 100 g. Muốn cân một vật nặng 600 g thì cần bao nhiêu quả cân như thế?
-e) Một chiếc cân đĩa chỉ có các quả cân loại 100 g. Muốn cân một vật nặng 400 g thì cần bao nhiêu quả cân như thế?
+a) Tính chu vi hình chữ nhật đó.
+b) Tính diện tích hình chữ nhật đó.
+c) Nếu tăng chiều dài thêm 3 cm, giữ nguyên chiều rộng thì diện tích tăng thêm bao nhiêu?
+d) Khi đó chu vi tăng thêm bao nhiêu?
+e) Nếu thay vào đó tăng chiều rộng thêm 3 cm thì diện tích tăng thêm bao nhiêu?
+f) Tăng chiều nào thì diện tích tăng nhiều hơn? Vì sao?
 
 
 ---
@@ -90,97 +94,101 @@ e) Một chiếc cân đĩa chỉ có các quả cân loại 100 g. Muốn cân 
 ### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
 a) **5**
-b) **2**
-c) **8**
+b) **6**
+c) **4**
 d) **9**
-e) **30 000 + 9 000 + 800 + 2**
-f) **22**
+e) **40 000 + 9 000 + 400 + 60 + 6**
+f) **29**
 
 **Cách giải mẫu:**
 
 1. Đếm từ phải sang trái: đơn vị, chục, trăm, nghìn, chục nghìn.
-2. Số 39 802 có 5 chữ số.
-3. Chữ số hàng đơn vị là chữ số cuối cùng bên phải: 2.
-4. Viết thành tổng: 30 000 + 9 000 + 800 + 2.
-5. Cộng các chữ số: 3 + 9 + 8 + 0 + 2 = 22.
+2. Số 49 466 có 5 chữ số.
+3. Chữ số hàng đơn vị là chữ số cuối cùng bên phải: 6.
+4. Viết thành tổng: 40 000 + 9 000 + 400 + 60 + 6.
+5. Cộng các chữ số: 4 + 9 + 4 + 6 + 6 = 29.
 6. Đáp số ý a: **5 chữ số**.
 
 *Lỗi hay mắc:* Đếm hàng từ trái sang phải nên lệch hàng.
 
-### Bài 2, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 2, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **361**
-b) **200**
-c) **82**
-d) **246**
-e) **200**
-
-**Cách giải mẫu:**
-
-1. Xét ý a: 361 + 80 − 80
-2. Đọc vị: đây là dạng **Tính nhanh tổng nhiều số hạng**; dấu hiệu là Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm.
-3. Kiến thức phải dùng: Tính chất giao hoán, kết hợp của phép cộng.
-4. Cách làm: Ghép cặp tròn rồi cộng.
-5. Lối tắt: Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10.
-6. Kết quả: **361**.
-
-*Lỗi hay mắc:* Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn.
-
-### Bài 3, (2 điểm — mỗi ý 0,5 điểm)
-
-a) **Khánh: 94 viên, Quân: 50 viên**
-b) **Vy: 124 viên, Ngọc: 68 viên**
-c) **Khánh: 56 viên, Vy: 48 viên**
-d) **Dũng: 59 viên, Quân: 37 viên**
+a) **322 dư 1**
+b) **3 080**
+c) **139**
+d) **4 218**
+e) **512**
+f) **703 dư 4**
 
 **Cách giải mẫu:**
 
-1. Vẽ hai đoạn thẳng: đoạn của Khánh dài hơn đoạn của Quân đúng 44 viên.
-2. Bước 1 — nếu bớt 44 viên của Khánh thì hai đoạn bằng nhau, tổng mới là 144 − 44 = 100 (viên).
-3. Bước 2 — chia đôi tổng mới được số bi của Quân: 100 : 2 = 50 (viên).
-4. Bước 3 — số bi của Khánh: 50 + 44 = 94 (viên).
-5. Thử lại: 94 + 50 = 144 ✓ và 94 − 50 = 44 ✓
-6. Đáp số: **Khánh 94 viên, Quân 50 viên**.
+1. Xét ý a: 645 : 2
+2. Đọc vị: đây là dạng **Nhân, chia với số có một chữ số**; dấu hiệu là Số bị chia có hai hoặc ba chữ số, số chia một chữ số.
+3. Kiến thức phải dùng: Kĩ thuật đặt tính nhân, chia.
+4. Cách làm: Đặt tính, tính theo cột.
+5. Lối tắt: Ước lượng bằng cách làm tròn để phát hiện sai về độ lớn.
+6. Kết quả: **322 dư 1**.
 
-*Lỗi hay mắc:* Chia đôi tổng ngay rồi cộng hiệu vào cả hai số.
+*Lỗi hay mắc:* Quên chữ số 0 ở giữa thương nên thương thiếu chữ số.
+
+### Bài 3, (2 điểm — mỗi ý 0,33 điểm)
+
+a) **5B: 490 quyển, 5A: 322 quyển**
+b) **trang trại: 301 kg, hợp tác xã: 181 kg**
+c) **đội Hai: 269 cây, đội Một: 229 cây**
+d) **xưởng: 500 kg, hợp tác xã: 272 kg**
+e) **tổ Ba: 546 cây, nhóm Hoa Phượng: 292 cây**
+f) **4C: 47 quyển, 4B: 29 quyển**
+
+**Cách giải mẫu:**
+
+1. Xét ý a: Hai lớp 5B và 5A có tất cả 812 quyển sách. Lớp 5B có nhiều hơn lớp 5A 168 quyển. Mỗi lớp có bao nhiêu quyển?
+2. Đọc vị: đây là dạng **Tổng – hiệu có lời văn**; dấu hiệu là “Có tất cả …” và “… nhiều hơn … là …”.
+3. Kiến thức phải dùng: Công thức tổng – hiệu, sơ đồ đoạn thẳng.
+4. Cách làm: Đọc vị tổng và hiệu → sơ đồ → công thức.
+5. Lối tắt: Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần.
+6. Kết quả: **5B: 490 quyển, 5A: 322 quyển**.
+
+*Lỗi hay mắc:* Nhầm hiệu thành tổng khi đề diễn đạt vòng vo.
 
 ### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
 
 a) **31**
-b) **có**
-c) **Thứ Tư**
+b) **không**
+c) **Thứ Ba**
 d) **4**
 e) **Thứ Sáu**
 f) **365 ngày và 366 ngày**
 
 **Cách giải mẫu:**
 
-1. Tháng 5 thuộc nhóm tháng 31 ngày, nên có 31 ngày.
+1. Tháng 12 thuộc nhóm tháng 31 ngày, nên có 31 ngày.
 2. Ngày 1 là Thứ Tư. Cứ sau 7 ngày thì lặp lại đúng thứ ấy.
-3. Từ ngày 1 đến ngày 29 cách nhau 28 ngày.
-4. 28 : 7 dư 0, nên lùi 0 bước từ Thứ Tư.
-5. Vậy ngày 29 là **Thứ Tư**.
+3. Từ ngày 1 đến ngày 14 cách nhau 13 ngày.
+4. 13 : 7 dư 6, nên lùi 6 bước từ Thứ Tư.
+5. Vậy ngày 14 là **Thứ Ba**.
 
 *Lỗi hay mắc:* Đếm tay từng ngày nên vừa lâu vừa sai.
 
-### Bài 5, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **3 quả**
-b) **2 quả**
-c) **5 quả**
-d) **6 quả**
-e) **4 quả**
+a) **42 cm**
+b) **68 cm²**
+c) **12 cm²**
+d) **6 cm**
+e) **51 cm²**
+f) **tăng chiều rộng, vì phần tăng thêm nhân với chiều dài (là chiều lớn hơn)**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Một chiếc cân đĩa chỉ có các quả cân loại 200 g. Muốn cân một vật nặng 600 g thì cần bao nhiêu quả cân như thế?
-2. Đọc vị: đây là dạng **Bài toán cân, chia hết**; dấu hiệu là Cân đĩa với một loại quả cân.
-3. Kiến thức phải dùng: Phép chia hết và chia có dư; đơn vị khối lượng.
-4. Cách làm: Chia và xét số dư.
-5. Lối tắt: Đổi cả hai về cùng đơn vị rồi chia.
-6. Kết quả: **3 quả**.
+1. Xét ý a: Tính chu vi hình chữ nhật đó.
+2. Đọc vị: đây là dạng **Biến thiên chu vi và diện tích**; dấu hiệu là “Tăng chiều … thêm … cm”.
+3. Kiến thức phải dùng: Chu vi, diện tích hình chữ nhật.
+4. Cách làm: Vẽ hình chồng, xác định phần dôi ra.
+5. Lối tắt: Chu vi tăng 2 × k dù tăng chiều nào; diện tích thì phụ thuộc chiều còn lại.
+6. Kết quả: **42 cm**.
 
-*Lỗi hay mắc:* Làm tròn lên rồi coi như cân được.
+*Lỗi hay mắc:* Cho rằng tăng chiều dài thì diện tích tăng nhiều hơn vì chiều dài lớn hơn.
 
 ---
 
@@ -191,10 +199,10 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài | Đo cái gì | Sai bài này nghĩa là | Học lại ở đâu |
 |:--:|---|---|---|
 | Bài 1 | Đọc, viết, cấu tạo số | Đếm hàng từ trái sang phải nên lệch hàng. | Nhóm chuyên đề **—** · mức — |
-| Bài 2 | Tính nhanh tổng nhiều số hạng | Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. | Nhóm chuyên đề **—** · mức — |
-| Bài 3 | Bài toán tổng – hiệu | Chia đôi tổng ngay rồi cộng hiệu vào cả hai số. | Nhóm chuyên đề **—** · mức — |
+| Bài 2 | Nhân, chia với số có một chữ số | Quên chữ số 0 ở giữa thương nên thương thiếu chữ số. | Nhóm chuyên đề **—** · mức — |
+| Bài 3 | Tổng – hiệu có lời văn | Nhầm hiệu thành tổng khi đề diễn đạt vòng vo. | Nhóm chuyên đề **—** · mức — |
 | Bài 4 | Lịch, tháng, năm nhuận | Đếm tay từng ngày nên vừa lâu vừa sai. | Nhóm chuyên đề **—** · mức — |
-| Bài 5 | Bài toán cân, chia hết | Làm tròn lên rồi coi như cân được. | Nhóm chuyên đề **—** · mức — |
+| Bài 5 | Biến thiên chu vi và diện tích | Cho rằng tăng chiều dài thì diện tích tăng nhiều hơn vì chiều dài lớn hơn. | Nhóm chuyên đề **—** · mức — |
 
 ---
 

@@ -29,99 +29,99 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Mỗi câu 2 điểm. Chọn một phương án đúng.
 
-**Câu 1.** Chữ số hàng trăm là chữ số nào?
-   **A.** 18   **B.** 10   **C.** 8   **D.** 9
+**Câu 1.** Số 42 531 có bao nhiêu chữ số?
+   **A.** 5   **B.** 4   **C.** 6   **D.** 50
 
-**Câu 2.** 1 980 : 6
-   **A.** 330   **B.** 230   **C.** 165   **D.** 33
+**Câu 2.** 566 + 155
+   **A.** 1 442   **B.** 7 210   **C.** 271   **D.** 721
 
-**Câu 3.** 24, 35, 46, 57, …, 79
-   **A.** 6   **B.** 34   **C.** 68   **D.** 58
+**Câu 3.** 8, …, 16, 20, 24, 28
+   **A.** 12   **B.** 21   **C.** 22   **D.** 6
 
-**Câu 4.** Tìm trung bình cộng của 5 số: 31, 27, 28, 16, 38.
-   **A.** 38   **B.** 82   **C.** 28   **D.** 14
+**Câu 4.** 9 bao xi măng nặng 189 kg. Hỏi 15 bao như thế nặng bao nhiêu kg?
+   **A.** 3 150   **B.** 315   **C.** 415   **D.** 630
 
-**Câu 5.** 9 giờ 31 phút = … phút
-   **A.** 471   **B.** 1 142   **C.** 571   **D.** 517
+**Câu 5.** 69 kg = … dag
+   **A.** 6 900   **B.** 69 000   **C.** 7 900   **D.** 9 600
 
 **Câu 6.** Một hình chữ nhật có mấy góc vuông?
-   **A.** 3 góc vuông   **B.** 8 góc vuông   **C.** 4 góc vuông   **D.** 2 góc vuông
+   **A.** 2 góc vuông   **B.** 8 góc vuông   **C.** 5 góc vuông   **D.** 4 góc vuông
 
-**Câu 7.** Có 3 chiếc áo và 7 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
-   **A.** 2 cách   **B.** 12 cách   **C.** 20 cách   **D.** 21 cách
+**Câu 7.** Có 11 quyển sách Toán và 4 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một quyển Toán và một quyển Tiếng Việt**?
+   **A.** 45 cách   **B.** 88 cách   **C.** 43 cách   **D.** 44 cách
 
-**Câu 8.** Tìm 1 phần 3 của 42.
-   **A.** 13   **B.** 15   **C.** 14   **D.** 7
+**Câu 8.** Tìm 1 phần 5 của 90.
+   **A.** 18   **B.** 36   **C.** 9   **D.** 28
 
-**Câu 9.** 9 × 180 = 180 × …
-   **A.** 90   **B.** 10   **C.** 9   **D.** 8
+**Câu 9.** 9 × 197 = 197 × …
+   **A.** 18   **B.** 9   **C.** 90   **D.** 8
 
-**Câu 10.** 4 480 : 8
-   **A.** 1 120   **B.** 660   **C.** 560   **D.** 506
+**Câu 10.** Người mua đưa tờ 150 000 đồng. Người bán phải trả lại bao nhiêu?
+   **A.** 35 500 đồng   **B.** 71 000 đồng   **C.** 3 550 đồng   **D.** 25 500 đồng
 
-**Câu 11.** Dãy 20, 24, 28, …, 60 có bao nhiêu số hạng?
-   **A.** 110   **B.** 10   **C.** 1   **D.** 11
+**Câu 11.** Dãy 10, 12, 14, …, 46 có bao nhiêu số hạng?
+   **A.** 190   **B.** 19   **C.** 29   **D.** 1
 
-**Câu 12.** Trung bình mỗi ngày bán được 138 kg gạo. Hỏi 4 ngày bán được tất cả bao nhiêu ki-lô-gam?
-   **A.** 552 kg   **B.** 1 104 kg   **C.** 55 kg   **D.** 452 kg
+**Câu 12.** Trung bình mỗi ngày cửa hàng bán được 298 kg gạo. 5 ngày đầu bán được 299, 291, 306, 302, 294 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
+   **A.** 196 kg   **B.** 592 kg   **C.** 296 kg   **D.** 396 kg
 
-**Câu 13.** Đổi một tờ 20 000 đồng ra các tờ 1 000 đồng thì được mấy tờ?
-   **A.** 20 tờ   **B.** 200 tờ   **C.** 10 tờ   **D.** 19 tờ
+**Câu 13.** Mua 5 quyển vở, mỗi quyển 7 000 đồng. Hết bao nhiêu tiền?
+   **A.** 45 000 đồng   **B.** 35 000 đồng   **C.** 25 000 đồng   **D.** 350 000 đồng
 
-**Câu 14.** Hình tròn có bán kính 32 cm. Đường kính dài bao nhiêu?
-   **A.** 74 cm   **B.** 64 cm   **C.** 128 cm   **D.** 32 cm
+**Câu 14.** Hình vuông cạnh 37 cm. Tính chu vi.
+   **A.** 248 cm   **B.** 148 cm   **C.** 14 cm   **D.** 296 cm
 
-**Câu 15.** Đoạn đường dài 42 m, cây cách nhau 6 m, không trồng ở cả hai đầu. Cần bao nhiêu cây?
-   **A.** 3   **B.** 6   **C.** 7   **D.** 5
+**Câu 15.** Số kẹo phải là số như thế nào để chia hết cho 4 bạn?
+   **A.** 2 phải là số chia hết cho   **B.** 8 phải là số chia hết cho   **C.** 40 phải là số chia hết cho   **D.** phải là số chia hết cho 4
 
-**Câu 16.** Nếu một bạn có 60 bông hoa thì phải vẽ mấy hình ●?
-   **A.** 6 hình   **B.** 3 hình   **C.** 5 hình   **D.** 12 hình
+**Câu 16.** Nếu một bạn có 60 lá cờ thì phải vẽ mấy hình ●?
+   **A.** 5 hình   **B.** 60 hình   **C.** 6 hình   **D.** 7 hình
 
-**Câu 17.** Hiệu của số lớn nhất và số bé nhất bằng bao nhiêu?
-   **A.** 694   **B.** 594   **C.** 549   **D.** 954
+**Câu 17.** Số bé nhất là số nào?
+   **A.** 78   **B.** 17   **C.** 178   **D.** 356
 
-**Câu 18.** 672 : 8 − 4
-   **A.** 80   **B.** 70   **C.** 90   **D.** 160
+**Câu 18.** 46 + 3 × 5
+   **A.** 61   **B.** 71   **C.** 6   **D.** 51
 
-**Câu 19.** 7, 21, 63, 189, 567, …
-   **A.** 1 701   **B.** 3 402   **C.** 17 010   **D.** 2 701
+**Câu 19.** 5, 6, 8, 11, 15, …
+   **A.** 20   **B.** 40   **C.** 2   **D.** 200
 
-**Câu 20.** Tổ Ba trồng được 59 cây. Tổ Hai trồng được gấp 5 lần tổ Ba. Hỏi cả hai tổ trồng được bao nhiêu cây?
-   **A.** 3 540 cây   **B.** 254 cây   **C.** 708 cây   **D.** 354 cây
+**Câu 20.** Nhóm Sao Mai trồng được 22 cây. Tổ Ba trồng được gấp 5 lần nhóm Sao Mai. Hỏi cả hai tổ trồng được bao nhiêu cây?
+   **A.** 312 cây   **B.** 32 cây   **C.** 66 cây   **D.** 132 cây
 
 
 ## PHẦN II — TRẢ LỜI NGẮN · 10 câu · 12 phút · 20 điểm
 
 Mỗi câu 2 điểm. Chỉ ghi đáp số, không cần trình bày.
 
-**Câu 1.** Kho B và kho A chứa tất cả 846 kg xi măng. Kho B chứa nhiều hơn kho A 84 kg. Mỗi nơi chứa bao nhiêu kg?
+**Câu 1.** Sơn và Thảo có tất cả 66 viên bi. Sơn có nhiều hơn Thảo 20 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
    Đáp số: ......................
 
-**Câu 2.** 7 kg = … g
+**Câu 2.** 70 l = … ml
    Đáp số: ......................
 
-**Câu 3.** Hình vuông cạnh 13 cm. Tính chu vi.
+**Câu 3.** Rào quanh vườn hết bao nhiêu mét lưới, biết chừa một cửa rộng 2 m?
    Đáp số: ......................
 
-**Câu 4.** Có 3 loại bánh và 3 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
+**Câu 4.** Đoạn đường dài 210 m, trồng cây cách nhau 6 m, trồng cả ở hai đầu. Cần bao nhiêu cây?
    Đáp số: ......................
 
-**Câu 5.** Nếu bốn bạn khác gấp được 14, 9, 17, 8 bông thì trung bình mỗi bạn gấp được bao nhiêu bông?
+**Câu 5.** Bạn nào gấp được ít nhất?
    Đáp số: ......................
 
-**Câu 6.** Số 2 770 có chia hết cho 9 không? Vì sao?
+**Câu 6.** Số 4 118 có chia hết cho 2 không? Vì sao?
    Đáp số: ......................
 
-**Câu 7.** 87 + 359 + 13
+**Câu 7.** 24 + 324 + 76
    Đáp số: ......................
 
-**Câu 8.** Hình thứ 3 có bao nhiêu que?
+**Câu 8.** Hình nào có đúng 16 que?
    Đáp số: ......................
 
-**Câu 9.** Tổ Một trồng 9 cây, đội Hai trồng 45 cây. Số cây của tổ Một bằng một phần mấy số cây của đội Hai?
+**Câu 9.** Nhóm Hoa Phượng trồng 6 cây, đội Hai trồng 18 cây. Số cây của nhóm Hoa Phượng bằng một phần mấy số cây của đội Hai?
    Đáp số: ......................
 
-**Câu 10.** Một năm thường có bao nhiêu ngày, năm nhuận có bao nhiêu ngày?
+**Câu 10.** Tháng 9 năm 2032 có bao nhiêu ngày?
    Đáp số: ......................
 
 
@@ -129,51 +129,51 @@ Mỗi câu 2 điểm. Chỉ ghi đáp số, không cần trình bày.
 
 Trình bày lời giải hai bước.
 
-a) Một cửa hàng có 76 kg gạo, đã bán 1 phần 4 số gạo đó. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
-b) Một cửa hàng có 48 kg gạo, đã bán 1 phần 4 số gạo đó. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
-c) Một cửa hàng có 54 kg gạo, đã bán 1 phần 3 số gạo đó. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
-d) Một cửa hàng có 44 kg gạo, đã bán 1 phần 2 số gạo đó. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
-e) Một cửa hàng có 95 kg gạo, đã bán 1 phần 5 số gạo đó. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
+a) Một cửa hàng có 96 kg gạo, đã bán 1 phần 4 số gạo đó. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
+b) Một cửa hàng có 45 kg gạo, đã bán 1 phần 3 số gạo đó. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
+c) Một cửa hàng có 30 kg gạo, đã bán 1 phần 3 số gạo đó. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
+d) Một cửa hàng có 92 kg gạo, đã bán 1 phần 4 số gạo đó. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
+e) Một cửa hàng có 68 kg gạo, đã bán 1 phần 4 số gạo đó. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
 
 
 ## PHẦN IV — TỰ LUẬN · 15 phút · 20 điểm
 
 Trình bày đủ lời giải, không chỉ ghi đáp số.
 
-### Bài 1, (6,7 điểm) Tổng – hiệu bằng sơ đồ đoạn thẳng
+### Bài 1, (6,7 điểm) Bài toán tổng – hiệu có lời văn
 
-Vẽ sơ đồ trước, tính sau. Không vẽ thì không được tính.
+Tóm tắt bằng sơ đồ đoạn thẳng rồi giải.
 
-a) Thảo và Hà có tất cả 108 viên bi. Thảo có nhiều hơn Hà 12 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
-b) Vy và Dũng có tất cả 116 viên bi. Vy có nhiều hơn Dũng 10 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
-c) Quân và Phúc có tất cả 38 viên bi. Quân có nhiều hơn Phúc 2 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+a) Xưởng và hợp tác xã chứa tất cả 272 kg xi măng. Xưởng chứa nhiều hơn hợp tác xã 56 kg. Mỗi nơi chứa bao nhiêu kg?
+b) Đội Một và nhóm Sao Mai trồng được 440 cây. Đội Một trồng nhiều hơn nhóm Sao Mai 48 cây. Mỗi tổ trồng bao nhiêu cây?
+c) Hai lớp 4C và 3B có tất cả 66 quyển sách. Lớp 4C có nhiều hơn lớp 3B 4 quyển. Mỗi lớp có bao nhiêu quyển?
 
 ### Bài 2, (6,7 điểm) Tổng – tỉ, hiệu – tỉ và so sánh một phần mấy
 
 Vẽ sơ đồ đoạn thẳng cho mọi bài trước khi tính.
 
-a) Nhóm Sao Mai và đội Một trồng được tất cả 85 cây. Số cây của đội Một gấp 4 lần số cây của nhóm Sao Mai. Mỗi tổ trồng bao nhiêu cây?
-b) Đội Một trồng 21 cây, tổ Hai trồng 42 cây. Số cây của đội Một bằng một phần mấy số cây của tổ Hai?
-c) Nhóm Sao Mai trồng nhiều hơn đội Hai 21 cây, và số cây của nhóm Sao Mai gấp 2 lần số cây của đội Hai. Mỗi tổ trồng bao nhiêu cây?
+a) Đội Một trồng nhiều hơn nhóm Hoa Phượng 24 cây, và số cây của đội Một gấp 4 lần số cây của nhóm Hoa Phượng. Mỗi tổ trồng bao nhiêu cây?
+b) Tổ Một và nhóm Hoa Phượng trồng được tất cả 95 cây. Số cây của nhóm Hoa Phượng gấp 4 lần số cây của tổ Một. Mỗi tổ trồng bao nhiêu cây?
+c) Tổ Một trồng 5 cây, tổ Ba trồng 25 cây. Số cây của tổ Một bằng một phần mấy số cây của tổ Ba?
 
 ### Bài 3, (6,7 điểm) Tổng – tỉ, hiệu – tỉ và so sánh một phần mấy
 
 Vẽ sơ đồ đoạn thẳng cho mọi bài trước khi tính.
 
-a) Nhóm Sao Mai và đội Một trồng được tất cả 85 cây. Số cây của đội Một gấp 4 lần số cây của nhóm Sao Mai. Mỗi tổ trồng bao nhiêu cây?
-b) Đội Một trồng 21 cây, tổ Hai trồng 42 cây. Số cây của đội Một bằng một phần mấy số cây của tổ Hai?
-c) Nhóm Sao Mai trồng nhiều hơn đội Hai 21 cây, và số cây của nhóm Sao Mai gấp 2 lần số cây của đội Hai. Mỗi tổ trồng bao nhiêu cây?
+a) Đội Một trồng nhiều hơn nhóm Hoa Phượng 24 cây, và số cây của đội Một gấp 4 lần số cây của nhóm Hoa Phượng. Mỗi tổ trồng bao nhiêu cây?
+b) Tổ Một và nhóm Hoa Phượng trồng được tất cả 95 cây. Số cây của nhóm Hoa Phượng gấp 4 lần số cây của tổ Một. Mỗi tổ trồng bao nhiêu cây?
+c) Tổ Một trồng 5 cây, tổ Ba trồng 25 cây. Số cây của tổ Một bằng một phần mấy số cây của tổ Ba?
 
 
 ## PHẦN V — BÀI PHÂN HOÁ · 5 phút · 10 điểm
 
 Mức đề trường chuyên. Làm xong bốn phần trên rồi mới vào đây.
 
-Đếm số cái bắt tay, không đếm số lượt.
+Một hình chữ nhật có chiều dài 16 cm, chiều rộng 12 cm.
 
-a) Có 7 bạn, mỗi bạn bắt tay với tất cả các bạn còn lại đúng một lần. Có tất cả bao nhiêu cái bắt tay?
-b) Có 10 bạn, mỗi bạn bắt tay với tất cả các bạn còn lại đúng một lần. Có tất cả bao nhiêu cái bắt tay?
-c) Có 6 bạn, mỗi bạn bắt tay với tất cả các bạn còn lại đúng một lần. Có tất cả bao nhiêu cái bắt tay?
+a) Tính chu vi hình chữ nhật đó.
+b) Tính diện tích hình chữ nhật đó.
+c) Nếu tăng chiều dài thêm 8 cm, giữ nguyên chiều rộng thì diện tích tăng thêm bao nhiêu?
 
 
 ---
@@ -184,89 +184,89 @@ c) Có 6 bạn, mỗi bạn bắt tay với tất cả các bạn còn lại đ�
 
 | Câu | Đáp án | Câu | Đáp án | Câu | Đáp án | Câu | Đáp án |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| 1 | **D** | 2 | **A** | 3 | **C** | 4 | **C** |
-| 5 | **C** | 6 | **C** | 7 | **D** | 8 | **C** |
-| 9 | **C** | 10 | **C** | 11 | **D** | 12 | **A** |
-| 13 | **A** | 14 | **B** | 15 | **B** | 16 | **A** |
-| 17 | **B** | 18 | **A** | 19 | **A** | 20 | **D** |
+| 1 | **A** | 2 | **D** | 3 | **A** | 4 | **B** |
+| 5 | **A** | 6 | **D** | 7 | **D** | 8 | **A** |
+| 9 | **B** | 10 | **A** | 11 | **B** | 12 | **C** |
+| 13 | **B** | 14 | **B** | 15 | **D** | 16 | **C** |
+| 17 | **C** | 18 | **A** | 19 | **A** | 20 | **D** |
 
 *Trả lời đúng cả 20 câu trong 20 phút là mức tốc độ của học viên nhắm trường top.*
 
 ### Phần II — trả lời ngắn
 
-1. **kho B: 465 kg, kho A: 381 kg**
-2. **7 000**
-3. **52 cm**
-4. **9 cách**
-5. **12**
-6. **không (tổng các chữ số bằng 16)**
-7. **459**
-8. **8**
-9. **1 phần 5**
-10. **365 ngày và 366 ngày**
+1. **Sơn: 43 viên, Thảo: 23 viên**
+2. **70 000**
+3. **100 − 2 = 98 m**
+4. **36**
+5. **Ngọc (5 bông)**
+6. **có (tận cùng là 8)**
+7. **424**
+8. **hình thứ 6**
+9. **1 phần 3**
+10. **30**
 
 ### Phần III — đọc hiểu số liệu
 
-a) **57 kg**
-b) **36 kg**
-c) **36 kg**
-d) **22 kg**
-e) **76 kg**
+a) **72 kg**
+b) **30 kg**
+c) **20 kg**
+d) **69 kg**
+e) **51 kg**
 
 ### Phần IV — tự luận
 
 **Bài 1.**
-a) **Thảo: 60 viên, Hà: 48 viên**
-b) **Vy: 63 viên, Dũng: 53 viên**
-c) **Quân: 20 viên, Phúc: 18 viên**
+a) **xưởng: 164 kg, hợp tác xã: 108 kg**
+b) **đội Một: 244 cây, nhóm Sao Mai: 196 cây**
+c) **4C: 35 quyển, 3B: 31 quyển**
 
 Cách giải mẫu:
-1. Vẽ hai đoạn thẳng: đoạn của Thảo dài hơn đoạn của Hà đúng 12 viên.
-2. Bước 1 — nếu bớt 12 viên của Thảo thì hai đoạn bằng nhau, tổng mới là 108 − 12 = 96 (viên).
-3. Bước 2 — chia đôi tổng mới được số bi của Hà: 96 : 2 = 48 (viên).
-4. Bước 3 — số bi của Thảo: 48 + 12 = 60 (viên).
-5. Thử lại: 60 + 48 = 108 ✓ và 60 − 48 = 12 ✓
-6. Đáp số: **Thảo 60 viên, Hà 48 viên**.
+1. Xét ý a: Xưởng và hợp tác xã chứa tất cả 272 kg xi măng. Xưởng chứa nhiều hơn hợp tác xã 56 kg. Mỗi nơi chứa bao nhiêu kg?
+2. Đọc vị: đây là dạng **Tổng – hiệu có lời văn**; dấu hiệu là “Có tất cả …” và “… nhiều hơn … là …”.
+3. Kiến thức phải dùng: Công thức tổng – hiệu, sơ đồ đoạn thẳng.
+4. Cách làm: Đọc vị tổng và hiệu → sơ đồ → công thức.
+5. Lối tắt: Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần.
+6. Kết quả: **xưởng: 164 kg, hợp tác xã: 108 kg**.
 
 **Bài 2.**
-a) **nhóm Sao Mai: 17 cây, đội Một: 68 cây**
-b) **1 phần 2**
-c) **đội Hai: 21 cây, nhóm Sao Mai: 42 cây**
+a) **nhóm Hoa Phượng: 8 cây, đội Một: 32 cây**
+b) **tổ Một: 19 cây, nhóm Hoa Phượng: 76 cây**
+c) **1 phần 5**
 
 Cách giải mẫu:
-1. Vẽ sơ đồ: nhóm Sao Mai 1 phần, đội Một 4 phần bằng nhau.
-2. Bước 1 — tổng số phần: 1 + 4 = 5 (phần).
-3. Bước 2 — một phần: 85 : 5 = 17 (cây).
-4. Bước 3 — số cây của đội Một: 17 × 4 = 68 (cây).
-5. Thử lại: 17 + 68 = 85 ✓
-6. Đáp số: **nhóm Sao Mai 17 cây, đội Một 68 cây**.
+1. Xét ý a: Đội Một trồng nhiều hơn nhóm Hoa Phượng 24 cây, và số cây của đội Một gấp 4 lần số cây của nhóm Hoa Phượng. Mỗi tổ trồng bao nhiêu cây?
+2. Đọc vị: đây là dạng **Tổng – tỉ, hiệu – tỉ mức làm quen**; dấu hiệu là “Gấp … lần” đi cùng “có tất cả” hoặc “nhiều hơn”.
+3. Kiến thức phải dùng: Tỉ số, sơ đồ đoạn thẳng, chia theo tỉ lệ.
+4. Cách làm: Sơ đồ phần bằng nhau → giá trị một phần → nhân.
+5. Lối tắt: Tổng chia hết cho tổng số phần; không chia hết là đã đọc sai tỉ số.
+6. Kết quả: **nhóm Hoa Phượng: 8 cây, đội Một: 32 cây**.
 
 **Bài 3.**
-a) **nhóm Sao Mai: 17 cây, đội Một: 68 cây**
-b) **1 phần 2**
-c) **đội Hai: 21 cây, nhóm Sao Mai: 42 cây**
+a) **nhóm Hoa Phượng: 8 cây, đội Một: 32 cây**
+b) **tổ Một: 19 cây, nhóm Hoa Phượng: 76 cây**
+c) **1 phần 5**
 
 Cách giải mẫu:
-1. Vẽ sơ đồ: nhóm Sao Mai 1 phần, đội Một 4 phần bằng nhau.
-2. Bước 1 — tổng số phần: 1 + 4 = 5 (phần).
-3. Bước 2 — một phần: 85 : 5 = 17 (cây).
-4. Bước 3 — số cây của đội Một: 17 × 4 = 68 (cây).
-5. Thử lại: 17 + 68 = 85 ✓
-6. Đáp số: **nhóm Sao Mai 17 cây, đội Một 68 cây**.
+1. Xét ý a: Đội Một trồng nhiều hơn nhóm Hoa Phượng 24 cây, và số cây của đội Một gấp 4 lần số cây của nhóm Hoa Phượng. Mỗi tổ trồng bao nhiêu cây?
+2. Đọc vị: đây là dạng **Tổng – tỉ, hiệu – tỉ mức làm quen**; dấu hiệu là “Gấp … lần” đi cùng “có tất cả” hoặc “nhiều hơn”.
+3. Kiến thức phải dùng: Tỉ số, sơ đồ đoạn thẳng, chia theo tỉ lệ.
+4. Cách làm: Sơ đồ phần bằng nhau → giá trị một phần → nhân.
+5. Lối tắt: Tổng chia hết cho tổng số phần; không chia hết là đã đọc sai tỉ số.
+6. Kết quả: **nhóm Hoa Phượng: 8 cây, đội Một: 32 cây**.
 
 ### Phần V — bài phân hoá
 
-a) **21 cái**
-b) **45 cái**
-c) **15 cái**
+a) **56 cm**
+b) **192 cm²**
+c) **96 cm²**
 
 Cách giải mẫu:
-1. Xét ý a: Có 7 bạn, mỗi bạn bắt tay với tất cả các bạn còn lại đúng một lần. Có tất cả bao nhiêu cái bắt tay?
-2. Đọc vị: đây là dạng **Đếm số cặp**; dấu hiệu là “Mỗi người với tất cả những người còn lại”.
-3. Kiến thức phải dùng: Đếm cặp, nguyên tắc đếm lặp.
-4. Cách làm: n × (n − 1) : 2.
-5. Lối tắt: 5 bạn có 10 cái bắt tay; 10 bạn có 45 cái.
-6. Kết quả: **21 cái**.
+1. Xét ý a: Tính chu vi hình chữ nhật đó.
+2. Đọc vị: đây là dạng **Biến thiên chu vi và diện tích**; dấu hiệu là “Tăng chiều … thêm … cm”.
+3. Kiến thức phải dùng: Chu vi, diện tích hình chữ nhật.
+4. Cách làm: Vẽ hình chồng, xác định phần dôi ra.
+5. Lối tắt: Chu vi tăng 2 × k dù tăng chiều nào; diện tích thì phụ thuộc chiều còn lại.
+6. Kết quả: **56 cm**.
 
 ---
 
@@ -280,7 +280,7 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | II | Độ chính xác khi không có phương án gợi ý | Làm đúng phần I mà sai phần II là đang đoán chứ chưa chắc | Phiếu `DB` — đọc vị dạng bài |
 | III | Đọc hiểu bảng và biểu đồ | Dừng ở bước một, trả lời số gạo đã bán. | Nhóm chuyên đề **H — Thống kê & Số liệu** |
 | IV | Toán điển hình và cách trình bày lời giải | Ra đúng đáp số nhưng trình bày thiếu bước vẫn mất điểm trong phòng thi | Nhóm **D** và phiếu `KN` phần trình bày |
-| V | Mức phân hoá của đề trường chuyên | Quên chia 2 nên đáp số gấp đôi. | Phiếu `NC` của tuyến 2 và các sơ đồ đọc vị |
+| V | Mức phân hoá của đề trường chuyên | Cho rằng tăng chiều dài thì diện tích tăng nhiều hơn vì chiều dài lớn hơn. | Phiếu `NC` của tuyến 2 và các sơ đồ đọc vị |
 
 ---
 

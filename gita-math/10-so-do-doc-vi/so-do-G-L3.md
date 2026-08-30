@@ -94,43 +94,43 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 
 Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: đây là dạng bài gì, và dấu hiệu nào cho biết điều đó.
 
-**Đề 1.** Vẽ sơ đồ cây rồi đếm. Có 6 loại bánh và 3 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
+**Đề 1.** Xét trường hợp xấu nhất. Trong hộp có bút thuộc 5 màu khác nhau, mỗi màu rất nhiều chiếc. Phải lấy ít nhất bao nhiêu chiếc (không nhìn) để chắc chắn có 4 chiếc cùng màu?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 2.** Vẽ hai vòng tròn giao nhau và điền số vào từng miền. Lớp có 28 học sinh. Có 16 bạn thích môn Toán, 11 bạn thích môn Tiếng Việt, 4 bạn thích cả hai môn. Hỏi bao nhiêu bạn thích ít nhất một trong hai môn?
+**Đề 2.** Vẽ hai vòng tròn giao nhau và điền số vào từng miền. Lớp có 48 học sinh. Có 30 bạn thích môn Toán, 22 bạn thích môn Tiếng Việt, 6 bạn thích cả hai môn. Hỏi bao nhiêu bạn thích ít nhất một trong hai môn?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 3.** Đọc kĩ chữ “và” hay chữ “hoặc”. Trên bàn có 5 quyển sách Toán và 7 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một** quyển sách bất kì?
+**Đề 3.** Ghi rõ thương và số dư trong mọi câu trả lời. Có 39 cái kẹo chia đều cho 4 bạn. Mỗi bạn được mấy cái và còn thừa mấy cái?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 4.** Xét trường hợp xấu nhất. Trong hộp có bút thuộc 5 màu khác nhau, mỗi màu rất nhiều chiếc. Phải lấy ít nhất bao nhiêu chiếc (không nhìn) để chắc chắn có 2 chiếc cùng màu?
+**Đề 4.** Vẽ một hàng ô ra nháp rồi đánh dấu vị trí. Nam cao hơn Ngọc, Ngọc cao hơn Yến. Ai cao nhất?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 5.** Ba bạn Bình, Vy, Khánh mỗi bạn thích đúng một loại quả khác nhau trong ba loại táo, lê, cam. Biết **Bình thích táo** và **Vy không thích cam**. Kẻ bảng ba hàng, ba cột. Dấu ✔ đầu tiên đặt vào ô nào?
+**Đề 5.** Vẽ sơ đồ cây rồi đếm. Có 5 loại bánh và 2 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 6.** Tìm cho ra thứ **không đổi** qua mỗi bước. Trên bảng viết các số từ 1 đến 6. Tổng của chúng bằng bao nhiêu?
+**Đề 6.** Vẽ một hình nhỏ ba khoảng để kiểm tra trước khi áp công thức. Cưa một khúc gỗ dài 66 m thành các đoạn dài 3 m. Phải cưa bao nhiêu nhát?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 7.** Đếm số cách chọn. Có 5 chiếc áo và 3 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
+**Đề 7.** Đọc kĩ chữ “và” hay chữ “hoặc”. Trên bàn có 5 quyển sách Toán và 5 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một** quyển sách bất kì?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 8.** Đếm số cái bắt tay, không đếm số lượt. Có 4 bạn, mỗi bạn bắt tay với tất cả các bạn còn lại đúng một lần. Có tất cả bao nhiêu cái bắt tay?
+**Đề 8.** Xét trường hợp xấu nhất, không xét trường hợp may mắn. Có 3 gói kẹo giống hệt nhau, trong đó đúng một gói nhẹ hơn. Dùng cân đĩa không có quả cân, cần cân ít nhất mấy lần để tìm ra gói nhẹ?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 9.** Ba bạn Dũng, Tuấn, Minh mỗi bạn thích đúng một môn khác nhau trong ba môn Tiếng Việt, Mĩ thuật, Âm nhạc. Biết **Dũng thích Tiếng Việt** và **Tuấn không thích Âm nhạc**. Kẻ bảng ba hàng (tên bạn) và ba cột (môn học). Dữ kiện “Dũng thích Tiếng Việt” cho phép đánh dấu ✔ vào ô nào?
+**Đề 9.** Đếm số cách chọn. Có 7 chiếc áo và 5 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 10.** Xét trường hợp xấu nhất, không xét trường hợp may mắn. Có 8 gói kẹo giống hệt nhau, trong đó đúng một gói nhẹ hơn. Dùng cân đĩa không có quả cân, cần cân ít nhất mấy lần để tìm ra gói nhẹ?
+**Đề 10.** Đếm số cái bắt tay, không đếm số lượt. Có 6 bạn, mỗi bạn bắt tay với tất cả các bạn còn lại đúng một lần. Có tất cả bao nhiêu cái bắt tay?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
@@ -140,16 +140,16 @@ Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: 
 
 | # | Dạng bài | Dấu hiệu |
 |:--:|---|---|
-| 1 | Quy tắc nhân | Chọn một phần tử từ mỗi nhóm |
+| 1 | Nguyên lí ngăn kéo | “Ít nhất … để chắc chắn …” |
 | 2 | Nguyên lý bù trừ, sơ đồ Ven | Có cụm “cả hai”, “ít nhất một”, “không … nào” |
-| 3 | Đếm bằng quy tắc cộng, nhân, bù trừ | Từ khoá “và”, “hoặc”, “cả hai”, “ít nhất một” |
-| 4 | Nguyên lí ngăn kéo | “Ít nhất … để chắc chắn …” |
-| 5 | Suy luận loại trừ có bảng | Mỗi người ứng với đúng một đối tượng |
-| 6 | Bài toán bất biến | Một quá trình lặp nhiều bước, hỏi trạng thái cuối |
-| 7 | Quy tắc nhân | Chọn một phần tử từ mỗi nhóm để ghép thành một bộ |
-| 8 | Đếm số cặp | “Mỗi người với tất cả những người còn lại” |
-| 9 | Suy luận loại trừ có bảng | Mỗi người ứng với đúng một đối tượng, đề cho các dữ kiện phủ định |
-| 10 | Cân đĩa, tìm vật khác biệt | Cân đĩa không có quả cân, tìm vật nhẹ hơn |
+| 3 | Chia hết và chia có dư trong tình huống chia phần | “Chia đều cho … bạn”, “còn thừa” |
+| 4 | Suy luận thứ tự, vị trí trong hàng | “Đứng thứ … từ đầu”, “cao hơn”, “thấp hơn” |
+| 5 | Quy tắc nhân | Chọn một phần tử từ mỗi nhóm |
+| 6 | Bài toán trồng cây, chia đoạn | “Trồng cây”, “cột điện”, “quanh hồ”, “cưa thành đoạn” |
+| 7 | Đếm bằng quy tắc cộng, nhân, bù trừ | Từ khoá “và”, “hoặc”, “cả hai”, “ít nhất một” |
+| 8 | Cân đĩa, tìm vật khác biệt | Cân đĩa không có quả cân, tìm vật nhẹ hơn |
+| 9 | Quy tắc nhân | Chọn một phần tử từ mỗi nhóm để ghép thành một bộ |
+| 10 | Đếm số cặp | “Mỗi người với tất cả những người còn lại” |
 
 ---
 

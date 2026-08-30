@@ -44,63 +44,62 @@ Họ và tên: ......................................... Lớp: ......... Điể
 > **KIẾN THỨC NỀN CỦA CHƯƠNG**
 > 1. Dãy số cách đều
 > 2. Dãy cách đều
-> 3. Phép chia có dư, tính tuần hoàn
-> 4. Quan hệ số cây – số khoảng
+> 3. Dãy hiệu, tổng dãy cách đều
+> 4. Dãy cách đều, số hạng thứ n
 
 ---
 
 ## PHẦN A — CỦNG CỐ NỀN — 30 CÂU TỐC ĐỘ · Mức M1 — Nhận biết · 20 phút · 25 điểm
 
-### Bài 1. (5 điểm) Mi-li-lít và lít
+### Bài 1. (5 điểm) Số chẵn – số lẻ, số liền trước – số liền sau
 
-Điền số hoặc dấu thích hợp.
+Trả lời ngắn gọn từng câu.
 
-a) 36 l … 3 713 ml
-b) 33 l = … ml
-c) 9 000 ml = … l
-d) 31 l 183 ml = … ml
-e) 22 l 281 ml = … ml
+a) Số chẵn bé nhất lớn hơn 7 706 là số nào?
+b) Số liền trước của 24 033 là số nào?
+c) Số chẵn bé nhất lớn hơn 44 854 là số nào?
+d) Số chẵn bé nhất lớn hơn 62 492 là số nào?
+e) Số 64 158 là số chẵn hay số lẻ?
+f) Số chẵn bé nhất lớn hơn 66 093 là số nào?
 
 ### Bài 2. (5 điểm) Tìm một phần mấy của một số
 
 Tính rồi ghi kết quả.
 
-a) Tìm 1 phần 6 của 54.
-b) Tìm 1 phần 6 của 66.
-c) Tìm 1 phần 8 của 96.
-d) Tìm 1 phần 2 của 36.
-e) Tìm 1 phần 4 của 80.
-f) Tìm 1 phần 5 của 25.
+a) Tìm 1 phần 3 của 45.
+b) Tìm 1 phần 2 của 16.
+c) Tìm 1 phần 4 của 48.
+d) Tìm 1 phần 6 của 78.
+e) Tìm 1 phần 5 của 10.
 
-### Bài 3. (5 điểm) Nhiều hơn – ít hơn, gấp – kém
+### Bài 3. (5 điểm) Bài toán rút về đơn vị
 
-Đọc kĩ rồi trả lời từng câu.
+Giải bằng phương pháp rút về đơn vị.
 
-a) Quân có 23 quyển vở, Khánh có ít hơn Quân 11 quyển. Khánh có bao nhiêu quyển vở?
-b) Quân có 108 quyển vở, số vở của Khánh kém 3 lần số vở của Quân. Khánh có bao nhiêu quyển vở?
-c) Quân có 33 quyển vở, Khánh có nhiều hơn Quân 9 quyển. Khánh có bao nhiêu quyển vở?
-d) Quân có 41 quyển vở, Khánh có số vở gấp 5 lần Quân. Khánh có bao nhiêu quyển vở?
+a) 3 bao phân bón nặng 126 kg. Hỏi 14 bao như thế nặng bao nhiêu kg?
+b) 9 bao gạo nặng 378 kg. Hỏi 12 bao như thế nặng bao nhiêu kg?
+c) 4 bao đường nặng 172 kg. Hỏi 3 bao như thế nặng bao nhiêu kg?
+d) 7 bao xi măng nặng 84 kg. Hỏi 14 bao như thế nặng bao nhiêu kg?
+e) 10 bao phân bón nặng 290 kg. Hỏi 18 bao như thế nặng bao nhiêu kg?
+f) 7 bao phân bón nặng 266 kg. Hỏi 9 bao như thế nặng bao nhiêu kg?
 
-### Bài 4. (5 điểm) Viết tiếp ba số hạng của dãy
-
-Tìm quy luật rồi viết tiếp ba số hạng của mỗi dãy.
-
-a) 14, 20, 26, 32, …
-b) 19, 29, 39, 49, …
-c) 2, 11, 20, 29, …
-d) 32, 42, 52, 62, …
-e) 3, 7, 11, 15, …
-
-### Bài 5. (5 điểm) Điền số còn thiếu trong dãy
+### Bài 4. (5 điểm) Điền số còn thiếu trong dãy
 
 Điền số thích hợp vào chỗ chấm.
 
-a) 2, …, 6, 8, 10, 12
-b) 4, 14, …, 34, 44, 54
-c) 11, 20, 29, …, 47, 56
-d) 29, 33, 37, 41, …, 49
-e) 2, 8, …, 20, 26, 32
-f) 28, 35, 42, …, 56, 63
+a) 30, …, 36, 39, 42, 45
+b) 18, …, 28, 33, 38, 43
+c) 26, 30, …, 38, 42, 46
+d) 2, 17, …, 47, 62, 77
+
+### Bài 5. (5 điểm) Viết tiếp ba số hạng của dãy
+
+Tìm quy luật rồi viết tiếp ba số hạng của mỗi dãy.
+
+a) 8, 15, 22, 29, …
+b) 14, 39, 64, 89, …
+c) 13, 19, 25, 31, …
+d) 25, 28, 31, 34, …
 
 ---
 
@@ -122,7 +121,7 @@ Với mỗi dạng bài, viết một câu lời giải mẫu.
 
 a) Câu lời giải mở đầu cho dạng “Điền số hạng còn thiếu của dãy cách đều”?
 b) Câu lời giải mở đầu cho dạng “Điền số hạng còn thiếu”?
-c) Câu lời giải mở đầu cho dạng “Tìm quy luật dãy số”?
+c) Câu lời giải mở đầu cho dạng “Dãy số cách đều”?
 d) Câu lời giải mở đầu cho dạng “Bài toán trồng cây”?
 e) Câu lời giải mở đầu cho dạng “Đếm số hạng dãy cách đều theo điều kiện”?
 
@@ -143,7 +142,7 @@ Mỗi ý nêu một lỗi. Hãy nói cách sửa.
 
 a) Lỗi: Lấy hiệu của hai số cách nhau một chỗ trống làm khoảng cách. — cách phòng?
 b) Lỗi: Lấy hiệu hai số cách nhau một chỗ trống làm khoảng cách. — cách phòng?
-c) Lỗi: Không tìm ra hiệu đều thì bỏ cuộc. — cách phòng?
+c) Lỗi: Lấy (số cuối − số đầu) : 2 rồi trả lời luôn. — cách phòng?
 d) Lỗi: Máy móc cộng 1 cho mọi trường hợp. — cách phòng?
 e) Lỗi: Lấy luôn hai đầu khoảng làm số đầu và số cuối của dãy. — cách phòng?
 f) Lỗi: Quên cộng 1. — cách phòng?
@@ -194,7 +193,7 @@ e) Điểm chốt của dạng này là gì?
 
 ### Bài 4. (3 điểm) Dò soát tình huống 3
 
-**Tình huống:** một bạn làm bài dạng “Dãy tuần hoàn” và mắc lỗi: Dư 0 mà lấy phần tử đầu tiên.
+**Tình huống:** một bạn làm bài dạng “Quy luật hình đưa về dãy số” và mắc lỗi: Nhân khoảng cách với n nên thừa đúng một khoảng.
 
 a) Lỗi này bị bắt ở tầng dò soát nào?
 b) Cách phòng lỗi này là gì?
@@ -204,7 +203,7 @@ e) Điểm chốt của dạng này là gì?
 
 ### Bài 5. (3 điểm) Dò soát tình huống 4
 
-**Tình huống:** một bạn làm bài dạng “Tìm quy luật dãy cách đều” và mắc lỗi: Chỉ xét hai số đầu rồi vội kết luận.
+**Tình huống:** một bạn làm bài dạng “Dãy có hiệu tăng đều” và mắc lỗi: Không tìm ra hiệu đều thì bỏ cuộc, không thử dãy hiệu.
 
 a) Lỗi này bị bắt ở tầng dò soát nào?
 b) Cách phòng lỗi này là gì?
@@ -256,7 +255,7 @@ c) Nhánh con 3 — lỗi hay mắc?
 d) Ghi thêm: kiến thức phải thuộc?
 e) Ghi thêm: cách xử lý nhanh nhất?
 
-### Bài 5. (5 điểm) Nhánh 4 — Quy luật hình đưa về dãy số
+### Bài 5. (5 điểm) Nhánh 4 — Dãy tuần hoàn
 
 Điền ba nhánh con bắt buộc của nhánh này.
 
@@ -292,7 +291,7 @@ d) Ví dụ mẫu em sẽ giảng?
 e) Lỗi em sẽ cảnh báo cho lớp?
 f) Mẹo nhanh em sẽ tặng lớp?
 
-### Bài 3. (4 điểm) Nội dung giảng — Tìm quy luật dãy số
+### Bài 3. (4 điểm) Nội dung giảng — Dãy số cách đều
 
 Chuẩn bị nội dung để giảng dạng bài này cho lớp.
 
@@ -314,7 +313,7 @@ d) Ví dụ mẫu em sẽ giảng?
 e) Lỗi em sẽ cảnh báo cho lớp?
 f) Mẹo nhanh em sẽ tặng lớp?
 
-### Bài 5. (4 điểm) Nội dung giảng — Dãy tuần hoàn
+### Bài 5. (4 điểm) Nội dung giảng — Quy luật hình đưa về dãy số
 
 Chuẩn bị nội dung để giảng dạng bài này cho lớp.
 
@@ -332,34 +331,34 @@ f) Mẹo nhanh em sẽ tặng lớp?
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài A.1
-**Đáp số:** a) > · b) 33 000 · c) 9 · d) 31 183 · e) 22 281
-**Hướng giải:** BẪY — Đơn vị khác nhau. 1 lít = 1 000 mi-li-lít. Đổi từ đơn vị lớn sang đơn vị bé thì nhân, ngược lại thì chia. Muốn so sánh thì phải đưa về cùng một đơn vị trước.
-**Nhãn tư duy:** TD1. Điểm chốt: So sánh **chỉ sau khi** đã đưa về cùng đơn vị.
-**Lỗi thường gặp:** So thẳng hai con số mà bỏ qua đơn vị. Phòng: Viết lại cả hai vế theo mi-li-lít rồi mới so.
+**Đáp số:** a) 7 708 · b) 24 032 · c) 44 856 · d) 62 494 · e) số chẵn · f) 66 094
+**Hướng giải:** Số chẵn là số có chữ số tận cùng 0, 2, 4, 6, 8; số lẻ tận cùng 1, 3, 5, 7, 9. Số liền trước kém 1 đơn vị, số liền sau hơn 1 đơn vị. Hai số chẵn liên tiếp hơn kém nhau 2 đơn vị.
+**Nhãn tư duy:** TD1. Điểm chốt: Chỉ cần nhìn **chữ số tận cùng** là biết chẵn hay lẻ, dù số dài bao nhiêu.
+**Lỗi thường gặp:** Nhầm “liền trước” với “bé hơn”, trả lời một số bất kì bé hơn. Phòng: Liền trước – liền sau chỉ hơn kém đúng **1** đơn vị.
 
 ### Bài A.2
-**Đáp số:** a) 9 · b) 11 · c) 12 · d) 18 · e) 20 · f) 5
-**Hướng giải:** BẪY — Chia chứ không nhân. Muốn tìm một phần mấy của một số, ta chia số đó cho mẫu số. Ví dụ tìm một phần tư của 20 thì lấy 20 chia 4.
-**Nhãn tư duy:** TD1. Điểm chốt: Một phần mấy thì **chia** cho số đó.
-**Lỗi thường gặp:** Nhân thay vì chia. Phòng: Kiểm tra: kết quả phải **bé hơn** số ban đầu.
+**Đáp số:** a) 15 · b) 8 · c) 12 · d) 13 · e) 2
+**Hướng giải:** BẪY — Chia chứ không nhân. Chia số đã cho cho mẫu số. Chia hình thành mấy phần bằng nhau thì lấy một phần trong số đó.
+**Nhãn tư duy:** TD1. Điểm chốt: Một phần mấy thì **chia**, không nhân.
+**Lỗi thường gặp:** Nhân thay vì chia. Phòng: Kiểm tra: kết quả phải bé hơn số ban đầu.
 
 ### Bài A.3
-**Đáp số:** a) 12 · b) 36 · c) 42 · d) 205
-**Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
-**Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
-**Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+**Đáp số:** a) 588 · b) 504 · c) 129 · d) 168 · e) 522 · f) 342
+**Hướng giải:** Bước 1 — rút về đơn vị: tìm giá trị của **một** đơn vị bằng phép chia. Bước 2: nhân giá trị một đơn vị với số đơn vị cần tìm.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Bước rút về đơn vị luôn là phép **chia**, và phải làm trước.
+**Lỗi thường gặp:** Nhân ngay hai số đã cho mà bỏ qua bước chia. Phòng: Viết rõ câu “Một bao nặng … kg” trước khi làm bước hai.
 
 ### Bài A.4
-**Đáp số:** a) 38, 44, 50 · b) 59, 69, 79 · c) 38, 47, 56 · d) 72, 82, 92 · e) 19, 23, 27
+**Đáp số:** a) 33 · b) 23 · c) 34 · d) 32
+**Hướng giải:** BẪY — Hai số hai bên chỗ trống cách nhau hai khoảng. Tìm khoảng cách của dãy từ những cặp số đã biết đứng cạnh nhau, rồi lấy số đứng trước chỗ trống cộng thêm khoảng cách đó.
+**Nhãn tư duy:** TD4, TD1. Điểm chốt: Tìm khoảng cách ở **chỗ có hai số liền nhau đã biết**.
+**Lỗi thường gặp:** Lấy hiệu của hai số cách nhau một chỗ trống làm khoảng cách. Phòng: Đánh số thứ tự vị trí rồi mới tính khoảng cách.
+
+### Bài A.5
+**Đáp số:** a) 36, 43, 50 · b) 114, 139, 164 · c) 37, 43, 49 · d) 37, 40, 43
 **Hướng giải:** Lấy số hạng sau trừ số hạng liền trước để tìm khoảng cách. Nếu các hiệu bằng nhau thì đó là dãy cách đều; cứ cộng thêm khoảng cách để viết tiếp.
 **Nhãn tư duy:** TD4. Điểm chốt: Kiểm tra hiệu ở **ít nhất ba cặp** liên tiếp trước khi kết luận quy luật.
 **Lỗi thường gặp:** Chỉ xét hai số đầu rồi vội kết luận. Phòng: Viết hiệu giữa các số hạng ngay dưới dấu ngoặc giữa chúng.
-
-### Bài A.5
-**Đáp số:** a) 4 · b) 24 · c) 38 · d) 45 · e) 14 · f) 49
-**Hướng giải:** Tìm khoảng cách của dãy từ những cặp số đã biết đứng cạnh nhau, rồi lấy số đứng trước chỗ trống cộng thêm khoảng cách đó.
-**Nhãn tư duy:** TD4, TD1. Điểm chốt: Tìm khoảng cách ở **chỗ có hai số liền nhau đã biết**.
-**Lỗi thường gặp:** Lấy hiệu của hai số cách nhau một chỗ trống làm khoảng cách. Phòng: Đánh số thứ tự vị trí rồi mới tính khoảng cách.
 
 ### Bài B.1
 **Đáp số:** a) câu lời giải nêu rõ đang tìm đại lượng nào · b) phép tính, viết đủ dấu và đủ đơn vị · c) kết quả kèm đơn vị · d) câu đáp số · e) một phần tư số điểm của bài
@@ -368,7 +367,7 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Lỗi thường gặp:** Viết thẳng phép tính, bỏ câu lời giải. Phòng: Đọc lại bài đã làm, đếm xem có đủ bốn dòng chưa.
 
 ### Bài B.2
-**Đáp số:** a) “Điền số hạng còn thiếu của dãy cách đều là:” · b) “Điền số hạng còn thiếu là:” · c) “Tìm quy luật dãy số là:” · d) “Bài toán trồng cây là:” · e) “Đếm số hạng dãy cách đều theo điều kiện là:”
+**Đáp số:** a) “Điền số hạng còn thiếu của dãy cách đều là:” · b) “Điền số hạng còn thiếu là:” · c) “Dãy số cách đều là:” · d) “Bài toán trồng cây là:” · e) “Đếm số hạng dãy cách đều theo điều kiện là:”
 **Hướng giải:** Câu lời giải chỉ cần nhắc lại đại lượng đang tìm, không cần dài dòng.
 **Nhãn tư duy:** TD1. Điểm chốt: Câu lời giải phải **nêu đúng đại lượng** đang tìm.
 **Lỗi thường gặp:** Viết câu lời giải chung chung cho mọi bài. Phòng: Lấy đúng cụm từ trong câu hỏi của đề làm câu lời giải.
@@ -380,7 +379,7 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Lỗi thường gặp:** Ghi diện tích bằng cm thay vì cm². Phòng: Trước khi viết đáp số, hỏi: đại lượng này đo bằng gì?
 
 ### Bài B.4
-**Đáp số:** a) Đánh số thứ tự vị trí rồi mới tính khoảng cách. · b) Đánh số thứ tự vị trí rồi mới tính khoảng cách. · c) Viết dãy hiệu xuống ngay dưới dãy gốc. · d) Vẽ một hình nhỏ với ba khoảng để đếm thử. · e) Viết ba số đầu và ba số cuối của dãy trước khi áp công thức. · f) Thử với dãy ngắn ba số để kiểm tra công thức.
+**Đáp số:** a) Đánh số thứ tự vị trí rồi mới tính khoảng cách. · b) Đánh số thứ tự vị trí rồi mới tính khoảng cách. · c) Thử với dãy ngắn: 1, 3, 5 có 3 số nhưng chỉ 2 khoảng. · d) Vẽ một hình nhỏ với ba khoảng để đếm thử. · e) Viết ba số đầu và ba số cuối của dãy trước khi áp công thức. · f) Thử với dãy ngắn ba số để kiểm tra công thức.
 **Hướng giải:** Mỗi lỗi đều có một cách phòng cụ thể, làm được ngay trong lúc làm bài. Chép cả cặp lỗi – cách phòng vào sổ lỗi.
 **Nhãn tư duy:** TD2. Điểm chốt: Sổ lỗi chỉ có ích khi ghi **cả cách phòng**, không chỉ ghi lỗi.
 **Lỗi thường gặp:** Ghi lỗi vào sổ nhưng không ghi cách phòng nên lần sau vẫn sai. Phòng: Mỗi dòng sổ lỗi bắt buộc có hai cột: lỗi và cách phòng.
@@ -410,16 +409,16 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Lỗi thường gặp:** Máy móc cộng 1 cho mọi trường hợp. Phòng: Vẽ một hình nhỏ với ba khoảng để đếm thử.
 
 ### Bài C.4
-**Đáp số:** a) tầng 2 · b) Kiểm chứng với một vị trí nhỏ đã biết trước khi làm vị trí lớn. · c) toàn bộ số điểm của ý sai · d) Kiểm chứng với một vị trí nhỏ đã biết trước khi làm vị trí lớn. · e) Dư 0 ứng với phần tử **cuối** chu kì, không phải phần tử đầu.
-**Hướng giải:** Chia vị trí cần tìm cho độ dài chu kì. Số dư cho biết vị trí trong chu kì; nếu chia hết (dư 0) thì đó là phần tử **cuối** chu kì.
-**Nhãn tư duy:** TD4, TD6. Điểm chốt: Dư 0 ứng với phần tử **cuối** chu kì, không phải phần tử đầu.
-**Lỗi thường gặp:** Dư 0 mà lấy phần tử đầu tiên. Phòng: Kiểm chứng với một vị trí nhỏ đã biết trước khi làm vị trí lớn.
+**Đáp số:** a) tầng 2 · b) Kiểm chứng công thức với hình thứ 2 trước khi dùng cho hình thứ n. · c) toàn bộ số điểm của ý sai · d) Kiểm chứng công thức với hình thứ 2 trước khi dùng cho hình thứ n. · e) Nhân với **(n − 1)** chứ không phải n.
+**Hướng giải:** Số que các hình lập thành dãy cách đều. Số hạng thứ n = số đầu + (n − 1) × khoảng cách. Nhân với **(n − 1)** vì đếm khoảng, không đếm hình.
+**Nhãn tư duy:** TD4, TD3. Điểm chốt: Nhân với **(n − 1)** chứ không phải n.
+**Lỗi thường gặp:** Nhân khoảng cách với n nên thừa đúng một khoảng. Phòng: Kiểm chứng công thức với hình thứ 2 trước khi dùng cho hình thứ n.
 
 ### Bài C.5
-**Đáp số:** a) tầng 2 · b) Viết hiệu giữa các số hạng ngay dưới dấu ngoặc giữa chúng. · c) toàn bộ số điểm của ý sai · d) Viết hiệu giữa các số hạng ngay dưới dấu ngoặc giữa chúng. · e) Kiểm tra hiệu ở **ít nhất ba cặp** liên tiếp trước khi kết luận quy luật.
-**Hướng giải:** Lấy số hạng sau trừ số hạng liền trước để tìm khoảng cách. Nếu các hiệu bằng nhau thì đó là dãy cách đều; cứ cộng thêm khoảng cách để viết tiếp.
-**Nhãn tư duy:** TD4. Điểm chốt: Kiểm tra hiệu ở **ít nhất ba cặp** liên tiếp trước khi kết luận quy luật.
-**Lỗi thường gặp:** Chỉ xét hai số đầu rồi vội kết luận. Phòng: Viết hiệu giữa các số hạng ngay dưới dấu ngoặc giữa chúng.
+**Đáp số:** a) tầng 2 · b) Luôn viết dãy hiệu trước khi kết luận không có quy luật. · c) toàn bộ số điểm của ý sai · d) Luôn viết dãy hiệu trước khi kết luận không có quy luật. · e) Viết **dãy hiệu** xuống dưới dãy gốc là bước bắt buộc.
+**Hướng giải:** Khi hiệu không đều, hãy viết dãy các hiệu xuống dưới. Nếu dãy hiệu lại cách đều thì cộng dần từng hiệu là ra số hạng cần tìm.
+**Nhãn tư duy:** TD4, TD6. Điểm chốt: Viết **dãy hiệu** xuống dưới dãy gốc là bước bắt buộc.
+**Lỗi thường gặp:** Không tìm ra hiệu đều thì bỏ cuộc, không thử dãy hiệu. Phòng: Luôn viết dãy hiệu trước khi kết luận không có quy luật.
 
 ### Bài D.1
 **Đáp số:** a) Tổng dãy số và quy luật nâng cao · b) 5 · c) tên một dạng bài của chương · d) 3 nhánh con: dấu hiệu · phương pháp · lỗi hay mắc · e) so với bảng dạng bài ở phiếu Dạng bài & Đọc vị
@@ -450,10 +449,10 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài D.5
-**Đáp số:** a) Hình xếp thêm đều đặn theo thứ tự · b) Lập bảng ba hình đầu rồi áp công thức · c) Nhân khoảng cách với n nên thừa đúng một khoảng. · d) Dãy cách đều, số hạng thứ n · e) Ba hình đầu là đủ để khẳng định quy luật cách đều.
+**Đáp số:** a) Dãy lặp lại một nhóm số cố định · b) Chia lấy dư để định vị · c) Dư 0 mà lấy phần tử đầu tiên. · d) Phép chia có dư, tính tuần hoàn · e) Tổng n số hạng = tổng một chu kì × số chu kì đầy đủ + phần dư.
 **Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Nhân với **(n − 1)** chứ không phải n.
-**Lỗi thường gặp:** Nhân khoảng cách với n nên thừa đúng một khoảng. Phòng: Kiểm chứng công thức với hình thứ 2 trước khi dùng cho hình thứ n.
+**Nhãn tư duy:** TD4, TD6. Điểm chốt: Dư 0 ứng với phần tử **cuối** chu kì, không phải phần tử đầu.
+**Lỗi thường gặp:** Dư 0 mà lấy phần tử đầu tiên. Phòng: Kiểm chứng với một vị trí nhỏ đã biết trước khi làm vị trí lớn.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.1
@@ -471,10 +470,10 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.3
-**Đáp số:** a) “Hôm nay nhóm mình nói về Tìm quy luật dãy số.” · b) Dãy số kết thúc bằng dấu … · c) Dãy cách đều, dãy nhân, dãy hiệu tăng đều · d) Viết tiếp: 1, 3, 6, 10, … → 15 · e) Không tìm ra hiệu đều thì bỏ cuộc. · f) Số sau gấp đôi số trước là dấu hiệu quen nhất của dãy nhân.
-**Hướng giải:** Thử theo thứ tự: (1) lấy hiệu hai số liên tiếp — bằng nhau thì là dãy cách đều; (2) lấy thương — bằng nhau thì là dãy nhân; (3) xem dãy hiệu có tăng đều không.
-**Nhãn tư duy:** TD4, TD6. Điểm chốt: Thử đủ **ba hướng**, đừng dừng ở hướng thứ nhất.
-**Lỗi thường gặp:** Không tìm ra hiệu đều thì bỏ cuộc. Phòng: Viết dãy hiệu xuống ngay dưới dãy gốc.
+**Đáp số:** a) “Hôm nay nhóm mình nói về Dãy số cách đều.” · b) Một dãy số thật ngoài đời, các số cách nhau đều nhau · c) Số hạng thứ n của dãy cách đều; đếm số hạng · d) Một dãy phố có các nhà số lẻ từ 1 đến 39. Dãy ấy có bao nhiêu nhà? → 20 nhà · e) Lấy (số cuối − số đầu) : 2 rồi trả lời luôn. · f) Nhớ một câu: **số vật = số khoảng + 1** khi đếm cả hai đầu.
+**Hướng giải:** Dãy số nhà là dãy cách đều. Số hạng thứ k bằng số đầu cộng (k − 1) lần khoảng cách; còn **số lượng số hạng** bằng số khoảng cách cộng 1.
+**Nhãn tư duy:** TD2, TD4. Điểm chốt: Số khoảng cách luôn ít hơn số vật đúng 1 — quên cộng 1 là mất bài.
+**Lỗi thường gặp:** Lấy (số cuối − số đầu) : 2 rồi trả lời luôn. Phòng: Thử với dãy ngắn: 1, 3, 5 có 3 số nhưng chỉ 2 khoảng.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.4
@@ -485,10 +484,10 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.5
-**Đáp số:** a) “Hôm nay nhóm mình nói về Dãy tuần hoàn.” · b) Dãy lặp lại một nhóm số cố định · c) Phép chia có dư, tính tuần hoàn · d) Dãy 1, 2, 3, 1, 2, 3, … số hạng thứ 20 là số nào? → 2 · e) Dư 0 mà lấy phần tử đầu tiên. · f) Tổng n số hạng = tổng một chu kì × số chu kì đầy đủ + phần dư.
-**Hướng giải:** Chia vị trí cần tìm cho độ dài chu kì. Số dư cho biết vị trí trong chu kì; nếu chia hết (dư 0) thì đó là phần tử **cuối** chu kì.
-**Nhãn tư duy:** TD4, TD6. Điểm chốt: Dư 0 ứng với phần tử **cuối** chu kì, không phải phần tử đầu.
-**Lỗi thường gặp:** Dư 0 mà lấy phần tử đầu tiên. Phòng: Kiểm chứng với một vị trí nhỏ đã biết trước khi làm vị trí lớn.
+**Đáp số:** a) “Hôm nay nhóm mình nói về Quy luật hình đưa về dãy số.” · b) Hình xếp thêm đều đặn theo thứ tự · c) Dãy cách đều, số hạng thứ n · d) Hình 1 có 3 que, mỗi hình sau hơn 2 que. Hình thứ 10 có mấy que? → 21 · e) Nhân khoảng cách với n nên thừa đúng một khoảng. · f) Ba hình đầu là đủ để khẳng định quy luật cách đều.
+**Hướng giải:** Số que các hình lập thành dãy cách đều. Số hạng thứ n = số đầu + (n − 1) × khoảng cách. Nhân với **(n − 1)** vì đếm khoảng, không đếm hình.
+**Nhãn tư duy:** TD4, TD3. Điểm chốt: Nhân với **(n − 1)** chứ không phải n.
+**Lỗi thường gặp:** Nhân khoảng cách với n nên thừa đúng một khoảng. Phòng: Kiểm chứng công thức với hình thứ 2 trước khi dùng cho hình thứ n.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ---

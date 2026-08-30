@@ -51,20 +51,20 @@ Học thuộc theo cặp **dạng bài – công thức**, không học rời.
 
 | # | Dùng cho dạng bài | Công thức hoặc quy tắc |
 |---:|---|---|
-| 1 | Khối lập phương sơn màu | Cấu tạo hình lập phương: 8 đỉnh, 12 cạnh, 6 mặt |
-| 2 | Hình chữ nhật tổng hợp | Chu vi, diện tích hình chữ nhật; s = v × t |
-| 3 | Biến thiên diện tích và chu vi theo tỉ lệ | Diện tích, chu vi hình chữ nhật; tỉ lệ |
-| 4 | Nhận biết và phân loại góc | Số đo góc; hai đường thẳng vuông góc, song song |
-| 5 | Chu vi, diện tích trong tình huống thực tế | Công thức chu vi, diện tích; phép chia |
-| 6 | Nhận biết hình tròn và các yếu tố | Quan hệ đường kính – bán kính |
-| 7 | Diện tích hình thang | Công thức diện tích hình thang |
-| 8 | Nhận dạng hình khối; thể tích, diện tích toàn phần | Đặc điểm hình hộp, lập phương, trụ, cầu |
-| 9 | Đếm hình trong lưới | Quy tắc đếm, tổ hợp đơn giản |
-| 10 | Cắt ghép hình, biến thiên chu vi | Chu vi, đường bao của hình |
-| 11 | Hình hộp chữ nhật, hình lập phương | Công thức thể tích, diện tích xung quanh, toàn phần |
-| 12 | Diện tích các hình phẳng cơ bản | Công thức diện tích hình bình hành, hình thoi, hình tam giác |
-| 13 | Biến thiên diện tích theo kích thước | Diện tích hình chữ nhật, phân tích hình |
-| 14 | Cắt ghép hình, tỉ số diện tích | Diện tích hình chữ nhật, tam giác; đường bao |
+| 1 | Nhận dạng hình khối; thể tích, diện tích toàn phần | Đặc điểm hình hộp, lập phương, trụ, cầu |
+| 2 | Cắt ghép hình, tỉ số diện tích | Diện tích hình chữ nhật, tam giác; đường bao |
+| 3 | Diện tích xung quanh hình hộp chữ nhật | Diện tích xung quanh, diện tích toàn phần; làm tròn lên |
+| 4 | Diện tích hình thang | Công thức diện tích hình thang |
+| 5 | Diện tích các hình phẳng cơ bản | Công thức diện tích hình bình hành, hình thoi, hình tam giác |
+| 6 | Diện tích phần tô màu | Diện tích hình tròn, hình vuông; phép trừ diện tích |
+| 7 | Nhận biết và phân loại góc | Số đo góc; hai đường thẳng vuông góc, song song |
+| 8 | Nhận biết hình tròn và các yếu tố | Quan hệ đường kính – bán kính |
+| 9 | Bài toán lát gạch nền nhà | Diện tích hình chữ nhật, hình vuông; đổi đơn vị đo diện tích |
+| 10 | Phương pháp diện tích | Diện tích tam giác; tỉ số; tam giác chung chiều cao |
+| 11 | Biến thiên diện tích và chu vi theo tỉ lệ | Diện tích, chu vi hình chữ nhật; tỉ lệ |
+| 12 | Đếm hình trong lưới | Quy tắc đếm, tổ hợp đơn giản |
+| 13 | Hình chữ nhật tổng hợp | Chu vi, diện tích hình chữ nhật; s = v × t |
+| 14 | Hình hộp chữ nhật, hình lập phương | Công thức thể tích, diện tích xung quanh, toàn phần |
 
 ---
 
@@ -90,20 +90,20 @@ Trước khi tra bảng, đi qua cây quyết định đọc vị của nhóm ch
 
 | Dạng bài | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất |
 |---|---|---|---|
-| Khối lập phương sơn màu | “Ghép từ … khối nhỏ”, “sơn mặt ngoài” | Phân loại theo vị trí rồi đếm từng loại | Số khối không sơn luôn là (n − 2) nhân ba lần chính nó. |
-| Hình chữ nhật tổng hợp | Một hình nhưng nhiều câu hỏi nối tiếp | Tính chu vi và diện tích trước, dùng lại cho các ý sau | Chu vi tăng đúng 2 lần phần tăng, dù tăng chiều nào. |
-| Biến thiên diện tích và chu vi theo tỉ lệ | “Gấp … lần”, “tăng … cm rồi giảm … cm” | Lập luận trên tỉ lệ trước, chỉ tính số khi cần | Tăng một chiều và giảm chiều kia cùng một lượng thì diện tích luôn **giảm**, trừ khi hai chiều ban đầu chênh nhau đúng lượng ấy. |
-| Nhận biết và phân loại góc | Đề cho số đo góc hoặc hỏi về cạnh của hình | So số đo với hai mốc 90° và 180° | Ê ke chính là một góc vuông cầm tay — áp vào là biết ngay. |
-| Chu vi, diện tích trong tình huống thực tế | Từ khoá “rào xung quanh”, “lát gạch”, “trồng cây quanh” | Đọc vị chu vi hay diện tích rồi tính | Nhìn đơn vị của đáp số: mét thì là chu vi, mét vuông thì là diện tích. |
-| Nhận biết hình tròn và các yếu tố | Đề nhắc tâm, bán kính, đường kính | Quy về bán kính rồi so sánh hoặc tính | Nhìn đơn vị và tên đại lượng trước khi so sánh. |
-| Diện tích hình thang | Đề cho hai đáy và chiều cao | Tổng hai đáy × chiều cao : 2 | Nếu tổng hai đáy là số chẵn thì chia 2 ngay từ đầu cho gọn. |
 | Nhận dạng hình khối; thể tích, diện tích toàn phần | Đề hỏi số mặt, số cạnh, hoặc cho ba kích thước | Đếm theo nhóm; áp công thức thể tích | Tổng độ dài các cạnh = (dài + rộng + cao) × 4. |
-| Đếm hình trong lưới | Hình vẽ là lưới ô vuông đều | Đếm theo đường kẻ hoặc theo cỡ hình | Số cách chọn 2 trong k đường kẻ là k × (k − 1) : 2. |
-| Cắt ghép hình, biến thiên chu vi | Từ khoá “ghép”, “cắt thành”, “xếp thành” | Xác định đường bao mới rồi cộng độ dài | Mỗi nhát cắt làm tổng chu vi tăng thêm hai lần chiều dài nhát cắt. |
-| Hình hộp chữ nhật, hình lập phương | Đề cho ba kích thước hoặc cạnh hình lập phương | Xác định loại diện tích cần tính, đếm đủ số mặt | Hình lập phương cạnh a: toàn phần 6 × a × a, thể tích a × a × a. |
-| Diện tích các hình phẳng cơ bản | Đề cho đáy và chiều cao, hoặc hai đường chéo | Nhận dạng hình rồi chọn công thức | Tam giác bằng nửa hình bình hành cùng đáy cùng chiều cao. |
-| Biến thiên diện tích theo kích thước | “Tăng chiều dài thêm …”, “gấp đôi chiều …” | Vẽ hình chồng, tách phần dôi ra thành các mảnh chữ nhật | Gấp đôi một chiều thì diện tích gấp đôi; gấp đôi cả hai chiều thì gấp bốn. |
 | Cắt ghép hình, tỉ số diện tích | “Cắt thành … phần”, “nối trung điểm”, “ghép hai hình” | Vẽ hình, xác định đáy và chiều cao, so tỉ số | Tam giác nối một đỉnh với trung điểm cạnh đối diện luôn bằng một phần tư. |
+| Diện tích xung quanh hình hộp chữ nhật | Kích thước một căn phòng kèm kích thước các cửa | Diện tích xung quanh trừ diện tích các cửa | Chu vi đáy nhân chiều cao ra ngay diện tích xung quanh. |
+| Diện tích hình thang | Đề cho hai đáy và chiều cao | Tổng hai đáy × chiều cao : 2 | Nếu tổng hai đáy là số chẵn thì chia 2 ngay từ đầu cho gọn. |
+| Diện tích các hình phẳng cơ bản | Đề cho đáy và chiều cao, hoặc hai đường chéo | Nhận dạng hình rồi chọn công thức | Tam giác bằng nửa hình bình hành cùng đáy cùng chiều cao. |
+| Diện tích phần tô màu | Hình gồm nhiều hình lồng nhau, hỏi phần còn lại | Tách thành hiệu các hình cơ bản | Hình tròn nội tiếp hình vuông chiếm khoảng 78,5% diện tích hình vuông. |
+| Nhận biết và phân loại góc | Đề cho số đo góc hoặc hỏi về cạnh của hình | So số đo với hai mốc 90° và 180° | Ê ke chính là một góc vuông cầm tay — áp vào là biết ngay. |
+| Nhận biết hình tròn và các yếu tố | Đề nhắc tâm, bán kính, đường kính | Quy về bán kính rồi so sánh hoặc tính | Nhìn đơn vị và tên đại lượng trước khi so sánh. |
+| Bài toán lát gạch nền nhà | Kích thước một mặt phẳng và kích thước vật dùng để phủ kín nó | Đổi về cùng đơn vị rồi chia hai diện tích | Đổi cạnh viên gạch ra mét trước cũng được, khi ấy chia m² cho m². |
+| Phương pháp diện tích | Hình bị chia thành nhiều phần, đề cho diện tích một phần và tỉ số hai đoạn trên cùng một cạnh | Lập tỉ số diện tích bằng tỉ số hai đáy của hai tam giác chung chiều cao | Không cần biết chiều cao là bao nhiêu — nó tự triệt tiêu trong tỉ số. |
+| Biến thiên diện tích và chu vi theo tỉ lệ | “Gấp … lần”, “tăng … cm rồi giảm … cm” | Lập luận trên tỉ lệ trước, chỉ tính số khi cần | Tăng một chiều và giảm chiều kia cùng một lượng thì diện tích luôn **giảm**, trừ khi hai chiều ban đầu chênh nhau đúng lượng ấy. |
+| Đếm hình trong lưới | Hình vẽ là lưới ô vuông đều | Đếm theo đường kẻ hoặc theo cỡ hình | Số cách chọn 2 trong k đường kẻ là k × (k − 1) : 2. |
+| Hình chữ nhật tổng hợp | Một hình nhưng nhiều câu hỏi nối tiếp | Tính chu vi và diện tích trước, dùng lại cho các ý sau | Chu vi tăng đúng 2 lần phần tăng, dù tăng chiều nào. |
+| Hình hộp chữ nhật, hình lập phương | Đề cho ba kích thước hoặc cạnh hình lập phương | Xác định loại diện tích cần tính, đếm đủ số mặt | Hình lập phương cạnh a: toàn phần 6 × a × a, thể tích a × a × a. |
 
 ---
 
@@ -122,26 +122,26 @@ Trước khi tra bảng, đi qua cây quyết định đọc vị của nhóm ch
 
 Trả lời được ngay trong 10 giây thì đánh ✔. Phải nghĩ lâu thì đánh ✘ và làm lại phần tương ứng.
 
-- [ ] **1.** Em nêu được dấu hiệu nhận biết của dạng “Khối lập phương sơn màu” chứ?
-- [ ] **2.** Em nhớ công thức: Cấu tạo hình lập phương: 8 đỉnh, 12 cạnh, 6 mặt?
-- [ ] **3.** Em nêu được dấu hiệu nhận biết của dạng “Hình chữ nhật tổng hợp” chứ?
-- [ ] **4.** Em nhớ công thức: Chu vi, diện tích hình chữ nhật; s = v × t?
-- [ ] **5.** Em nêu được dấu hiệu nhận biết của dạng “Biến thiên diện tích và chu vi theo tỉ lệ” chứ?
-- [ ] **6.** Em nhớ công thức: Diện tích, chu vi hình chữ nhật; tỉ lệ?
-- [ ] **7.** Em nêu được dấu hiệu nhận biết của dạng “Nhận biết và phân loại góc” chứ?
-- [ ] **8.** Em nhớ công thức: Số đo góc; hai đường thẳng vuông góc, song song?
-- [ ] **9.** Em nêu được dấu hiệu nhận biết của dạng “Chu vi, diện tích trong tình huống thực tế” chứ?
-- [ ] **10.** Em nhớ công thức: Công thức chu vi, diện tích; phép chia?
-- [ ] **11.** Em nêu được dấu hiệu nhận biết của dạng “Nhận biết hình tròn và các yếu tố” chứ?
-- [ ] **12.** Em nhớ công thức: Quan hệ đường kính – bán kính?
-- [ ] **13.** Em nêu được dấu hiệu nhận biết của dạng “Diện tích hình thang” chứ?
-- [ ] **14.** Em nhớ công thức: Công thức diện tích hình thang?
-- [ ] **15.** Em nêu được dấu hiệu nhận biết của dạng “Nhận dạng hình khối; thể tích, diện tích toàn phần” chứ?
-- [ ] **16.** Em nhớ công thức: Đặc điểm hình hộp, lập phương, trụ, cầu?
-- [ ] **17.** Em nêu được dấu hiệu nhận biết của dạng “Đếm hình trong lưới” chứ?
-- [ ] **18.** Em nhớ công thức: Quy tắc đếm, tổ hợp đơn giản?
-- [ ] **19.** Em nêu được dấu hiệu nhận biết của dạng “Cắt ghép hình, biến thiên chu vi” chứ?
-- [ ] **20.** Em nhớ công thức: Chu vi, đường bao của hình?
+- [ ] **1.** Em nêu được dấu hiệu nhận biết của dạng “Nhận dạng hình khối; thể tích, diện tích toàn phần” chứ?
+- [ ] **2.** Em nhớ công thức: Đặc điểm hình hộp, lập phương, trụ, cầu?
+- [ ] **3.** Em nêu được dấu hiệu nhận biết của dạng “Cắt ghép hình, tỉ số diện tích” chứ?
+- [ ] **4.** Em nhớ công thức: Diện tích hình chữ nhật, tam giác; đường bao?
+- [ ] **5.** Em nêu được dấu hiệu nhận biết của dạng “Diện tích xung quanh hình hộp chữ nhật” chứ?
+- [ ] **6.** Em nhớ công thức: Diện tích xung quanh, diện tích toàn phần; làm tròn lên?
+- [ ] **7.** Em nêu được dấu hiệu nhận biết của dạng “Diện tích hình thang” chứ?
+- [ ] **8.** Em nhớ công thức: Công thức diện tích hình thang?
+- [ ] **9.** Em nêu được dấu hiệu nhận biết của dạng “Diện tích các hình phẳng cơ bản” chứ?
+- [ ] **10.** Em nhớ công thức: Công thức diện tích hình bình hành, hình thoi, hình tam giác?
+- [ ] **11.** Em nêu được dấu hiệu nhận biết của dạng “Diện tích phần tô màu” chứ?
+- [ ] **12.** Em nhớ công thức: Diện tích hình tròn, hình vuông; phép trừ diện tích?
+- [ ] **13.** Em nêu được dấu hiệu nhận biết của dạng “Nhận biết và phân loại góc” chứ?
+- [ ] **14.** Em nhớ công thức: Số đo góc; hai đường thẳng vuông góc, song song?
+- [ ] **15.** Em nêu được dấu hiệu nhận biết của dạng “Nhận biết hình tròn và các yếu tố” chứ?
+- [ ] **16.** Em nhớ công thức: Quan hệ đường kính – bán kính?
+- [ ] **17.** Em nêu được dấu hiệu nhận biết của dạng “Bài toán lát gạch nền nhà” chứ?
+- [ ] **18.** Em nhớ công thức: Diện tích hình chữ nhật, hình vuông; đổi đơn vị đo diện tích?
+- [ ] **19.** Em nêu được dấu hiệu nhận biết của dạng “Phương pháp diện tích” chứ?
+- [ ] **20.** Em nhớ công thức: Diện tích tam giác; tỉ số; tam giác chung chiều cao?
 
 **Chuẩn đạt:** ✔ từ 18/20 câu trở lên.
 
@@ -153,20 +153,20 @@ Trả lời được ngay trong 10 giây thì đánh ✔. Phải nghĩ lâu thì
 
 | # | Lỗi thường gặp | Cách phòng |
 |---:|---|---|
-| 1 | Đếm cả khối ở đỉnh vào nhóm khối ở cạnh, thành ra đếm trùng. | Trừ hai đầu mỗi cạnh khi đếm khối sơn 2 mặt. |
-| 2 | Nhân hai lượng tăng với nhau rồi coi đó là diện tích tăng thêm. | Vẽ hình cũ nằm trong hình mới rồi tô phần dôi ra. |
-| 3 | Cho rằng gấp đôi hai chiều thì diện tích cũng chỉ gấp đôi. | Thử với hình 1 × 1 và 2 × 2 để thấy diện tích gấp 4 lần. |
-| 4 | Gọi góc 90° là góc nhọn vì thấy “nhỏ”. | Áp ê ke vào góc trước khi gọi tên. |
-| 5 | Lấy chu vi để tính số gạch lát nền. | Gạch chân từ khoá chỉ vị trí: xung quanh, bao quanh, khắp, phủ kín. |
-| 6 | So bán kính của hình này với đường kính của hình kia. | Đổi hết về bán kính trước khi so sánh. |
-| 7 | Nhân riêng từng đáy với chiều cao rồi cộng, quên chia 2. | Viết công thức đầy đủ ra trước khi thay số. |
-| 8 | Nhân tổng ba kích thước với 12. | Đếm cạnh theo nhóm: 4 cạnh dài, 4 cạnh rộng, 4 cạnh cao. |
-| 9 | Chỉ đếm các ô vuông nhỏ, quên các hình ghép từ nhiều ô. | Kẻ bảng theo cỡ hình: cỡ 1×1, 1×2, 2×2… rồi cộng. |
-| 10 | Cộng chu vi các hình nhỏ lại rồi coi đó là chu vi hình ghép. | Tô đậm đường bao của hình mới rồi mới tính. |
-| 11 | Cộng thiếu một mặt đáy khi tính diện tích toàn phần. | Đếm đủ 6 mặt của hình hộp trước khi cộng. |
-| 12 | Chia 2 cho hình bình hành, hoặc quên chia 2 cho hình tam giác. | Nhớ theo cặp: bình hành ↔ chữ nhật (không chia); tam giác ↔ nửa bình hành (chia 2). |
-| 13 | Nhân hai lượng tăng với nhau rồi coi đó là phần diện tích tăng thêm. | Vẽ hình chữ nhật cũ nằm trong hình mới, tô phần dôi ra. |
-| 14 | Cộng chu vi hai hình nhỏ lại thành chu vi hình ghép. | Tô đậm đường bao của hình mới rồi mới tính chu vi. |
+| 1 | Nhân tổng ba kích thước với 12. | Đếm cạnh theo nhóm: 4 cạnh dài, 4 cạnh rộng, 4 cạnh cao. |
+| 2 | Cộng chu vi hai hình nhỏ lại thành chu vi hình ghép. | Tô đậm đường bao của hình mới rồi mới tính chu vi. |
+| 3 | Lấy luôn diện tích xung quanh làm diện tích phải sơn. | Đọc lại đề, khoanh tròn mọi thứ 'khoét vào tường': cửa, ô thoáng. |
+| 4 | Nhân riêng từng đáy với chiều cao rồi cộng, quên chia 2. | Viết công thức đầy đủ ra trước khi thay số. |
+| 5 | Chia 2 cho hình bình hành, hoặc quên chia 2 cho hình tam giác. | Nhớ theo cặp: bình hành ↔ chữ nhật (không chia); tam giác ↔ nửa bình hành (chia 2). |
+| 6 | Lấy bán kính hình tròn làm cạnh hình vuông. | Vẽ lại hình, ghi số đo lên hình trước khi tính. |
+| 7 | Gọi góc 90° là góc nhọn vì thấy “nhỏ”. | Áp ê ke vào góc trước khi gọi tên. |
+| 8 | So bán kính của hình này với đường kính của hình kia. | Đổi hết về bán kính trước khi so sánh. |
+| 9 | Chia thẳng m² cho cm², hoặc đổi 1 m² thành 100 cm². | Viết đơn vị vào cạnh mỗi con số trước khi bấm phép chia. |
+| 10 | Đem so hai tam giác không chung đỉnh, hoặc hai đáy không cùng nằm trên một đường thẳng. | Chỉ vào đỉnh chung và vào đường thẳng chứa hai đáy trước khi lập tỉ số. |
+| 11 | Cho rằng gấp đôi hai chiều thì diện tích cũng chỉ gấp đôi. | Thử với hình 1 × 1 và 2 × 2 để thấy diện tích gấp 4 lần. |
+| 12 | Chỉ đếm các ô vuông nhỏ, quên các hình ghép từ nhiều ô. | Kẻ bảng theo cỡ hình: cỡ 1×1, 1×2, 2×2… rồi cộng. |
+| 13 | Nhân hai lượng tăng với nhau rồi coi đó là diện tích tăng thêm. | Vẽ hình cũ nằm trong hình mới rồi tô phần dôi ra. |
+| 14 | Cộng thiếu một mặt đáy khi tính diện tích toàn phần. | Đếm đủ 6 mặt của hình hộp trước khi cộng. |
 
 ---
 

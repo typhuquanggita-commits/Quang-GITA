@@ -30,55 +30,56 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Trả lời nhanh, mỗi ý không quá 20 giây.
 
-a) Làm tròn 8 484 497 đến hàng trăm.
-b) Chữ số hàng chục nghìn của số 1 477 639 có giá trị bằng bao nhiêu?
-c) 4 941 314 … 4 940 762
-d) Số liền trước và số liền sau của 7 149 288 là những số nào?
-e) Chữ số hàng triệu của số 1 861 493 có giá trị bằng bao nhiêu?
+a) 4 450 411 … 4 454 021
+b) Làm tròn 6 359 696 đến hàng trăm.
+c) Chữ số hàng đơn vị của số 2 316 837 có giá trị bằng bao nhiêu?
+d) Số liền trước và số liền sau của 5 623 369 là những số nào?
+e) Số liền trước và số liền sau của 5 308 782 là những số nào?
+f) 9 319 879 … 9 317 034
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
 Tính bằng cách thuận tiện nhất.
 
-a) 50 × 68 × 2
-b) 29 × 25 × 4
-c) 13 × 25 × 4
-d) 50 × 69 × 2
+a) 38 + 12 + 62 + 88
+b) 35 + 60 + 65
+c) 39 + 30 + 61 + 70
+d) 85 + 167 + 15
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
-Giải bằng cách rút về đơn vị hoặc dùng tỉ số.
+Tóm tắt bằng sơ đồ đoạn thẳng rồi giải.
 
-a) Mua 5 quyển vở hết 225 nghìn đồng. Với 945 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
-b) Mua 11 quyển vở hết 110 nghìn đồng. Mua 29 quyển vở như thế hết bao nhiêu nghìn đồng?
-c) Mua 3 quyển vở hết 234 nghìn đồng. Mua 20 quyển vở như thế hết bao nhiêu nghìn đồng?
-d) Mua 10 quyển vở hết 50 nghìn đồng. Với 40 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+a) Xưởng và thư viện chứa tất cả 270 kg muối. Xưởng chứa nhiều hơn thư viện 18 kg. Mỗi nơi chứa bao nhiêu kg?
+b) Hai lớp 3B và 4C có tất cả 776 quyển sách. Lớp 3B có nhiều hơn lớp 4C 180 quyển. Mỗi lớp có bao nhiêu quyển?
+c) Tổ Hai và nhóm Sao Mai trồng được 780 cây. Tổ Hai trồng nhiều hơn nhóm Sao Mai 6 cây. Mỗi tổ trồng bao nhiêu cây?
+d) Trang trại và kho A chứa tất cả 634 kg muối. Trang trại chứa nhiều hơn kho A 52 kg. Mỗi nơi chứa bao nhiêu kg?
+e) Đội Một và nhóm Sao Mai trồng được 810 cây. Đội Một trồng nhiều hơn nhóm Sao Mai 212 cây. Mỗi tổ trồng bao nhiêu cây?
+f) Hai lớp 5A và 4B có tất cả 482 quyển sách. Lớp 5A có nhiều hơn lớp 4B 110 quyển. Mỗi lớp có bao nhiêu quyển?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
-Vẽ hình và kẻ lưới ra nháp.
+Chú ý đơn vị mà đề hỏi.
 
-a) Một hình chữ nhật 14 cm × 10 cm được phủ kín bằng các hình vuông cạnh 2 cm. Cần bao nhiêu hình vuông?
-b) Diện tích hình chữ nhật ấy bằng bao nhiêu?
-c) Diện tích mỗi hình vuông nhỏ bằng bao nhiêu?
-d) Chia hình chữ nhật ấy thành 2 phần bằng nhau thì mỗi phần có diện tích bao nhiêu?
-e) Chia thành 4 phần bằng nhau thì mỗi phần bao nhiêu?
-f) Nếu ghép hai hình chữ nhật ấy theo chiều dài thì hình mới có chu vi bao nhiêu?
+a) Một xe chở 34 bao đường, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ đường?
+b) Một xe chở 23 bao xi măng, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ xi măng?
+c) Một xe chở 18 bao phân bón, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ phân bón?
+d) Một xe chở 11 bao xi măng, mỗi bao 40 kg. Hỏi xe chở bao nhiêu tạ xi măng?
+e) Một xe chở 31 bao đường, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ đường?
+f) Một xe chở 18 bao xi măng, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ xi măng?
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
-Bài mô phỏng phần tự luận của đề thi chất lượng cao.
+Tính nhanh mỗi tổng, nêu công thức đã dùng.
 
-a) Ba số có tổng 264. Số thứ hai hơn số thứ nhất 8, số thứ ba hơn số thứ hai 8. Tìm số thứ hai.
-b) Tìm số thứ nhất.
-c) Tìm số thứ ba.
-d) Vì sao số thứ hai bằng tổng ba số chia cho 3?
-e) Hai số khác có tổng 75 và số bé bằng 1 phần 4 số lớn. Tìm số bé.
-f) Tìm số lớn.
+a) 2 + 4 + 6 + … + 200 (tổng 100 số chẵn đầu tiên)
+b) 1 + 3 + 5 + … + 199 (tổng 100 số lẻ đầu tiên)
+c) 1 + 2 + 3 + … + 50
+d) 2 + 4 + 6 + … + 20 (tổng 10 số chẵn đầu tiên)
 
 
 ---
@@ -86,99 +87,101 @@ f) Tìm số lớn.
 ## ĐÁP ÁN VÀ BIỂU ĐIỂM
 
 
-### Bài 1, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **8 484 500**
-b) **70 000**
-c) **>**
-d) **7 149 287 và 7 149 289**
-e) **1 000 000**
+a) **<**
+b) **6 359 700**
+c) **7**
+d) **5 623 368 và 5 623 370**
+e) **5 308 781 và 5 308 783**
+f) **>**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Làm tròn 8 484 497 đến hàng trăm.
+1. Xét ý a: 4 450 411 … 4 454 021
 2. Đọc vị: đây là dạng **Ôn tập số tự nhiên**; dấu hiệu là Câu hỏi ngắn về so sánh, hàng, số liền kề, làm tròn.
 3. Kiến thức phải dùng: Thứ tự số tự nhiên, giá trị hàng, quy tắc làm tròn.
 4. Cách làm: Đếm chữ số, xét hàng từ trái sang phải.
 5. Lối tắt: Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số.
-6. Kết quả: **8 484 500**.
+6. Kết quả: **<**.
 
 *Lỗi hay mắc:* So sánh từ hàng đơn vị; hoặc làm tròn nhìn nhầm sang chính hàng cần làm tròn.
 
 ### Bài 2, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **6 800**
-b) **2 900**
-c) **1 300**
-d) **6 900**
+a) **200**
+b) **160**
+c) **200**
+d) **267**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 50 × 68 × 2
-2. Đọc vị: đây là dạng **Tính nhanh tích, thương nhiều bước**; dấu hiệu là Tích có thừa số 25, 125, 50, 20; hoặc chia liên tiếp.
-3. Kiến thức phải dùng: Tính chất giao hoán, kết hợp của phép nhân.
-4. Cách làm: Ghép cặp cho tích tròn rồi nhân.
-5. Lối tắt: Chia liên tiếp cho 4 rồi 25 bằng chia cho 100.
-6. Kết quả: **6 800**.
+1. Xét ý a: 38 + 12 + 62 + 88
+2. Đọc vị: đây là dạng **Tính nhanh tổng nhiều số hạng**; dấu hiệu là Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm.
+3. Kiến thức phải dùng: Tính chất giao hoán, kết hợp của phép cộng.
+4. Cách làm: Ghép cặp tròn rồi cộng.
+5. Lối tắt: Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10.
+6. Kết quả: **200**.
 
-*Lỗi hay mắc:* Nhân lần lượt từ trái sang phải nên số trung gian rất lớn.
+*Lỗi hay mắc:* Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn.
 
-### Bài 3, (2 điểm — mỗi ý 0,5 điểm)
+### Bài 3, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **21 quyển**
-b) **290 nghìn đồng**
-c) **1 560 nghìn đồng**
-d) **8 quyển**
+a) **xưởng: 144 kg, thư viện: 126 kg**
+b) **3B: 478 quyển, 4C: 298 quyển**
+c) **tổ Hai: 393 cây, nhóm Sao Mai: 387 cây**
+d) **trang trại: 343 kg, kho A: 291 kg**
+e) **đội Một: 511 cây, nhóm Sao Mai: 299 cây**
+f) **5A: 296 quyển, 4B: 186 quyển**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Mua 5 quyển vở hết 225 nghìn đồng. Với 945 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
-2. Đọc vị: đây là dạng **Tỉ lệ thuận, rút về đơn vị**; dấu hiệu là Hai đại lượng cùng tăng cùng giảm.
-3. Kiến thức phải dùng: Đại lượng tỉ lệ thuận.
-4. Cách làm: Rút về đơn vị hoặc dùng tỉ số.
-5. Lối tắt: Nếu số lượng mới gấp số lượng cũ một số nguyên lần thì nhân thẳng, không cần rút về đơn vị.
-6. Kết quả: **21 quyển**.
+1. Xét ý a: Xưởng và thư viện chứa tất cả 270 kg muối. Xưởng chứa nhiều hơn thư viện 18 kg. Mỗi nơi chứa bao nhiêu kg?
+2. Đọc vị: đây là dạng **Tổng – hiệu có lời văn**; dấu hiệu là “Có tất cả …” và “… nhiều hơn … là …”.
+3. Kiến thức phải dùng: Công thức tổng – hiệu, sơ đồ đoạn thẳng.
+4. Cách làm: Đọc vị tổng và hiệu → sơ đồ → công thức.
+5. Lối tắt: Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần.
+6. Kết quả: **xưởng: 144 kg, thư viện: 126 kg**.
 
-*Lỗi hay mắc:* Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch.
+*Lỗi hay mắc:* Nhầm hiệu thành tổng khi đề diễn đạt vòng vo.
 
 ### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **35**
-b) **140 cm²**
-c) **4 cm²**
-d) **70 cm²**
-e) **35 cm²**
-f) **68 cm**
+a) **8 tạ 50 kg**
+b) **5 tạ 75 kg**
+c) **10 tạ 80 kg**
+d) **4 tạ 40 kg**
+e) **9 tạ 30 kg**
+f) **4 tạ 50 kg**
 
 **Cách giải mẫu:**
 
-1. Bước 1 — diện tích hình chữ nhật: 14 × 10 = 140 (cm²).
-2. Bước 2 — diện tích một hình vuông nhỏ: 2 × 2 = 4 (cm²).
-3. Bước 3 — số hình vuông cần dùng: 140 : 4 = 35 (hình).
-4. Kiểm tra: xếp được 7 hàng, mỗi hàng 5 hình — đúng 35 hình ✓
-5. Đáp số: **35 hình vuông**.
+1. Xét ý a: Một xe chở 34 bao đường, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ đường?
+2. Đọc vị: đây là dạng **Bài toán đại lượng có lời văn**; dấu hiệu là Đơn vị trong câu hỏi khác đơn vị trong dữ kiện.
+3. Kiến thức phải dùng: Nhân, chia số tự nhiên; đổi đơn vị khối lượng.
+4. Cách làm: Tính theo đơn vị dữ kiện rồi đổi ở bước cuối.
+5. Lối tắt: 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ.
+6. Kết quả: **8 tạ 50 kg**.
 
-*Lỗi hay mắc:* Chia chu vi cho cạnh mảnh thay vì chia diện tích cho diện tích.
+*Lỗi hay mắc:* Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ.
 
-### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 5, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **88**
-b) **80**
-c) **96**
-d) **vì ba số cách đều nên số ở giữa là trung bình cộng**
-e) **15**
-f) **60**
+a) **10 100**
+b) **10 000**
+c) **1 275**
+d) **110**
 
 **Cách giải mẫu:**
 
-1. Ba số cách đều nhau 8 đơn vị nên số ở giữa là trung bình cộng.
-2. Bước 1 — số thứ hai: 264 : 3 = 88.
-3. Bước 2 — số thứ nhất: 88 − 8 = 80.
-4. Bước 3 — số thứ ba: 88 + 8 = 96.
-5. Thử lại: 80 + 88 + 96 = 264 ✓
-6. Đáp số: **80, 88, 96**.
+1. Xét ý a: 2 + 4 + 6 + … + 200 (tổng 100 số chẵn đầu tiên)
+2. Đọc vị: đây là dạng **Tổng dãy đặc biệt**; dấu hiệu là Dãy toàn số lẻ, toàn số chẵn, hoặc số tự nhiên liên tiếp.
+3. Kiến thức phải dùng: Ba công thức tổng cơ bản.
+4. Cách làm: Đếm số số hạng rồi áp công thức.
+5. Lối tắt: Tổng n số lẻ đầu tiên luôn là một số chính phương — dùng để kiểm tra nhanh.
+6. Kết quả: **10 100**.
 
-*Lỗi hay mắc:* Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi.
+*Lỗi hay mắc:* Nhầm số hạng cuối với số lượng số hạng khi áp công thức.
 
 ---
 
@@ -189,10 +192,10 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài | Đo cái gì | Sai bài này nghĩa là | Học lại ở đâu |
 |:--:|---|---|---|
 | Bài 1 | Ôn tập số tự nhiên | So sánh từ hàng đơn vị; hoặc làm tròn nhìn nhầm sang chính hàng cần làm tròn. | Nhóm chuyên đề **—** · mức — |
-| Bài 2 | Tính nhanh tích, thương nhiều bước | Nhân lần lượt từ trái sang phải nên số trung gian rất lớn. | Nhóm chuyên đề **—** · mức — |
-| Bài 3 | Tỉ lệ thuận, rút về đơn vị | Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch. | Nhóm chuyên đề **—** · mức — |
-| Bài 4 | Phủ hình, chia hình | Chia chu vi cho cạnh mảnh thay vì chia diện tích cho diện tích. | Nhóm chuyên đề **—** · mức — |
-| Bài 5 | Tổng nhiều số có ràng buộc; tổng – tỉ | Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. | Nhóm chuyên đề **—** · mức — |
+| Bài 2 | Tính nhanh tổng nhiều số hạng | Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. | Nhóm chuyên đề **—** · mức — |
+| Bài 3 | Tổng – hiệu có lời văn | Nhầm hiệu thành tổng khi đề diễn đạt vòng vo. | Nhóm chuyên đề **—** · mức — |
+| Bài 4 | Bài toán đại lượng có lời văn | Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. | Nhóm chuyên đề **—** · mức — |
+| Bài 5 | Tổng dãy đặc biệt | Nhầm số hạng cuối với số lượng số hạng khi áp công thức. | Nhóm chuyên đề **—** · mức — |
 
 ---
 

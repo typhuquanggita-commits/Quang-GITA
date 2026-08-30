@@ -30,58 +30,57 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Điền dấu thích hợp vào chỗ chấm.
 
-a) 92 063 … 92 067
-b) 1 929 … 1 925
-c) 75 564 … 75 567
-d) 70 900 … 76 593
-e) 74 894 … 22 119
-f) 43 812 … 43 889
+a) 69 981 … 69 977
+b) 70 369 … 70 386
+c) 71 170 … 71 262
+d) 4 041 … 4 741
+e) 32 100 … 32 600
+f) 15 941 … 15 945
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
-Đặt tính rồi tính.
+Tính bằng cách thuận tiện nhất.
 
-a) 645 × 7
-b) 4 509 : 9
-c) 8 718 : 9
-d) 1 231 : 5
-e) 1 088 : 2
-f) 878 × 9
+a) 374 + 26 − 26
+b) 169 + 52 − 52
+c) 154 + 41 − 41
+d) 125 + 33 − 33
+e) 35 + 155 + 65
+f) 236 + 84 − 84
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
-Tóm tắt bằng sơ đồ đoạn thẳng rồi giải.
+Vẽ sơ đồ trước, tính sau. Không vẽ thì không được tính.
 
-a) Hai lớp 5A và 4B có tất cả 258 quyển sách. Lớp 5A có nhiều hơn lớp 4B 86 quyển. Mỗi lớp có bao nhiêu quyển?
-b) Đội Một và nhóm Hoa Phượng trồng được 304 cây. Đội Một trồng nhiều hơn nhóm Hoa Phượng 84 cây. Mỗi tổ trồng bao nhiêu cây?
-c) Thư viện và kho B chứa tất cả 714 kg đường. Thư viện chứa nhiều hơn kho B 140 kg. Mỗi nơi chứa bao nhiêu kg?
-d) Nhóm Sao Mai và nhóm Hoa Phượng trồng được 824 cây. Nhóm Sao Mai trồng nhiều hơn nhóm Hoa Phượng 222 cây. Mỗi tổ trồng bao nhiêu cây?
+a) Dũng và Sơn có tất cả 140 viên bi. Dũng có nhiều hơn Sơn 44 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+b) Trang và Tuấn có tất cả 122 viên bi. Trang có nhiều hơn Tuấn 34 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+c) Quân và Ngọc có tất cả 158 viên bi. Quân có nhiều hơn Ngọc 6 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+d) Chi và Đức có tất cả 36 viên bi. Chi có nhiều hơn Đức 12 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
-Kẻ một bảng lịch nhỏ ra nháp rồi trả lời.
+Cho lưới gồm 2 hàng và 2 cột ô vuông nhỏ bằng nhau.
 
-a) Tháng 6 năm 2029 có bao nhiêu ngày?
-b) Năm 2029 có phải năm nhuận không?
-c) Ngày 1 tháng 6 là Thứ Năm. Hỏi ngày 17 tháng ấy là thứ mấy?
-d) Tháng ấy có bao nhiêu ngày Chủ nhật?
-e) Ngày cuối cùng của tháng là thứ mấy?
-f) Một năm thường có bao nhiêu ngày, năm nhuận có bao nhiêu ngày?
+a) Lưới có bao nhiêu ô vuông nhỏ?
+b) Lưới có bao nhiêu đường kẻ ngang, bao nhiêu đường kẻ dọc?
+c) Có tất cả bao nhiêu hình chữ nhật (kể cả hình vuông)?
+d) Có bao nhiêu hình vuông?
+e) Có bao nhiêu hình chữ nhật không phải hình vuông?
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
-Chú ý: chuyển đi thì bên này giảm, bên kia tăng.
+Dãy lặp lại mãi nhóm 9, 3, 1, 1: 9, 3, 1, 1, 9, 3, 1, 1, …
 
-a) Hùng và Vy có tất cả 52 quyển vở. Nếu Hùng cho Vy 6 quyển thì hai bạn có số vở bằng nhau. Hỏi lúc đầu Hùng có bao nhiêu quyển?
-b) Sau khi cho, mỗi bạn có bao nhiêu quyển vở?
-c) Lúc đầu Vy có bao nhiêu quyển vở?
-d) Lúc đầu Hùng hơn Vy bao nhiêu quyển?
-e) Một tổ có 5 bạn, mỗi bạn gấp được 10 bông hoa trong một giờ. Hỏi cả tổ gấp được bao nhiêu bông hoa trong một giờ?
-f) Cả tổ phải gấp 150 bông hoa thì làm trong mấy giờ?
+a) Số hạng thứ 24 của dãy là số nào?
+b) Số hạng thứ 95 của dãy là số nào?
+c) Số hạng thứ 97 của dãy là số nào?
+d) Số hạng thứ 21 của dãy là số nào?
+e) Số hạng thứ 114 của dãy là số nào?
+f) Tổng 60 số hạng đầu tiên bằng bao nhiêu?
 
 
 ---
@@ -91,98 +90,100 @@ f) Cả tổ phải gấp 150 bông hoa thì làm trong mấy giờ?
 
 ### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **<**
-b) **>**
+a) **>**
+b) **<**
 c) **<**
 d) **<**
-e) **>**
+e) **<**
 f) **<**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 92 063 … 92 067
+1. Xét ý a: 69 981 … 69 977
 2. Đọc vị: đây là dạng **So sánh hai số tự nhiên**; dấu hiệu là Dấu … giữa hai số, yêu cầu điền <, >, =.
 3. Kiến thức phải dùng: Thứ tự trong tập số tự nhiên.
 4. Cách làm: Đếm chữ số → so từng hàng từ trái sang phải.
 5. Lối tắt: Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số.
-6. Kết quả: **<**.
+6. Kết quả: **>**.
 
 *Lỗi hay mắc:* So từ hàng đơn vị (phải sang trái) nên kết luận sai.
 
 ### Bài 2, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **4 515**
-b) **501**
-c) **968 dư 6**
-d) **246 dư 1**
-e) **544**
-f) **7 902**
+a) **374**
+b) **169**
+c) **154**
+d) **125**
+e) **255**
+f) **236**
 
 **Cách giải mẫu:**
 
-1. Đặt tính: viết 7 thẳng dưới hàng đơn vị của 645.
-2. Nhân 7 lần lượt với từng chữ số của 645, từ phải sang trái.
-3. Kết quả: 645 × 7 = 4 515.
-4. Ước lượng kiểm tra: khoảng 600 × 7 = 4 200 — cùng độ lớn ✓
-5. Đáp số: **4 515**.
+1. Xét ý a: 374 + 26 − 26
+2. Đọc vị: đây là dạng **Tính nhanh tổng nhiều số hạng**; dấu hiệu là Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm.
+3. Kiến thức phải dùng: Tính chất giao hoán, kết hợp của phép cộng.
+4. Cách làm: Ghép cặp tròn rồi cộng.
+5. Lối tắt: Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10.
+6. Kết quả: **374**.
 
-*Lỗi hay mắc:* Quên chữ số 0 ở giữa thương nên thương thiếu chữ số.
+*Lỗi hay mắc:* Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn.
 
 ### Bài 3, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **5A: 172 quyển, 4B: 86 quyển**
-b) **đội Một: 194 cây, nhóm Hoa Phượng: 110 cây**
-c) **thư viện: 427 kg, kho B: 287 kg**
-d) **nhóm Sao Mai: 523 cây, nhóm Hoa Phượng: 301 cây**
+a) **Dũng: 92 viên, Sơn: 48 viên**
+b) **Trang: 78 viên, Tuấn: 44 viên**
+c) **Quân: 82 viên, Ngọc: 76 viên**
+d) **Chi: 24 viên, Đức: 12 viên**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Hai lớp 5A và 4B có tất cả 258 quyển sách. Lớp 5A có nhiều hơn lớp 4B 86 quyển. Mỗi lớp có bao nhiêu quyển?
-2. Đọc vị: đây là dạng **Tổng – hiệu có lời văn**; dấu hiệu là “Có tất cả …” và “… nhiều hơn … là …”.
-3. Kiến thức phải dùng: Công thức tổng – hiệu, sơ đồ đoạn thẳng.
-4. Cách làm: Đọc vị tổng và hiệu → sơ đồ → công thức.
-5. Lối tắt: Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần.
-6. Kết quả: **5A: 172 quyển, 4B: 86 quyển**.
+1. Vẽ hai đoạn thẳng: đoạn của Dũng dài hơn đoạn của Sơn đúng 44 viên.
+2. Bước 1 — nếu bớt 44 viên của Dũng thì hai đoạn bằng nhau, tổng mới là 140 − 44 = 96 (viên).
+3. Bước 2 — chia đôi tổng mới được số bi của Sơn: 96 : 2 = 48 (viên).
+4. Bước 3 — số bi của Dũng: 48 + 44 = 92 (viên).
+5. Thử lại: 92 + 48 = 140 ✓ và 92 − 48 = 44 ✓
+6. Đáp số: **Dũng 92 viên, Sơn 48 viên**.
 
-*Lỗi hay mắc:* Nhầm hiệu thành tổng khi đề diễn đạt vòng vo.
+*Lỗi hay mắc:* Chia đôi tổng ngay rồi cộng hiệu vào cả hai số.
 
-### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 4, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **30**
-b) **không**
-c) **Thứ Bảy**
-d) **4**
-e) **Thứ Sáu**
-f) **365 ngày và 366 ngày**
+a) **4**
+b) **3 đường ngang, 3 đường dọc**
+c) **9**
+d) **5**
+e) **4**
 
 **Cách giải mẫu:**
 
-1. Tháng 6 thuộc nhóm tháng 30 ngày, nên có 30 ngày.
-2. Ngày 1 là Thứ Năm. Cứ sau 7 ngày thì lặp lại đúng thứ ấy.
-3. Từ ngày 1 đến ngày 17 cách nhau 16 ngày.
-4. 16 : 7 dư 2, nên lùi 2 bước từ Thứ Năm.
-5. Vậy ngày 17 là **Thứ Bảy**.
+1. Xét ý a: Lưới có bao nhiêu ô vuông nhỏ?
+2. Đọc vị: đây là dạng **Đếm hình trong lưới**; dấu hiệu là Lưới ô vuông đều.
+3. Kiến thức phải dùng: Quy tắc đếm.
+4. Cách làm: Đếm theo đường kẻ hoặc theo cỡ.
+5. Lối tắt: Số cách chọn 2 trong k là k × (k − 1) : 2.
+6. Kết quả: **4**.
 
-*Lỗi hay mắc:* Đếm tay từng ngày nên vừa lâu vừa sai.
+*Lỗi hay mắc:* Chỉ đếm ô nhỏ, quên hình ghép từ nhiều ô.
 
 ### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **32 quyển**
-b) **26 quyển**
-c) **20 quyển**
-d) **12 quyển**
-e) **50 bông**
-f) **3 giờ**
+a) **1**
+b) **1**
+c) **9**
+d) **9**
+e) **3**
+f) **210**
 
 **Cách giải mẫu:**
 
-1. Sau khi cho, hai bạn bằng nhau, nên mỗi bạn có 52 : 2 = 26 (quyển).
-2. Hùng đã cho đi 6 quyển, nên lúc đầu Hùng có 26 + 6 = 32 (quyển).
-3. Lúc đầu Vy có 52 − 32 = 20 (quyển).
-4. Hiệu lúc đầu: 32 − 20 = 12 (quyển) — đúng bằng hai lần số vở đã chuyển.
-5. Đáp số: **lúc đầu Hùng có 32 quyển**.
+1. Xét ý a: Số hạng thứ 24 của dãy là số nào?
+2. Đọc vị: đây là dạng **Dãy tuần hoàn**; dấu hiệu là Dãy lặp lại một nhóm số cố định.
+3. Kiến thức phải dùng: Phép chia có dư, tính tuần hoàn.
+4. Cách làm: Chia lấy dư để định vị.
+5. Lối tắt: Tổng n số hạng = tổng một chu kì × số chu kì đầy đủ + phần dư.
+6. Kết quả: **1**.
 
-*Lỗi hay mắc:* Cho rằng hiệu lúc đầu bằng đúng số vở đã chuyển.
+*Lỗi hay mắc:* Dư 0 mà lấy phần tử đầu tiên.
 
 ---
 
@@ -193,10 +194,10 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài | Đo cái gì | Sai bài này nghĩa là | Học lại ở đâu |
 |:--:|---|---|---|
 | Bài 1 | So sánh hai số tự nhiên | So từ hàng đơn vị (phải sang trái) nên kết luận sai. | Nhóm chuyên đề **—** · mức — |
-| Bài 2 | Nhân, chia với số có một chữ số | Quên chữ số 0 ở giữa thương nên thương thiếu chữ số. | Nhóm chuyên đề **—** · mức — |
-| Bài 3 | Tổng – hiệu có lời văn | Nhầm hiệu thành tổng khi đề diễn đạt vòng vo. | Nhóm chuyên đề **—** · mức — |
-| Bài 4 | Lịch, tháng, năm nhuận | Đếm tay từng ngày nên vừa lâu vừa sai. | Nhóm chuyên đề **—** · mức — |
-| Bài 5 | Tổng – hiệu có hiệu ẩn sau một lần chuyển | Cho rằng hiệu lúc đầu bằng đúng số vở đã chuyển. | Nhóm chuyên đề **—** · mức — |
+| Bài 2 | Tính nhanh tổng nhiều số hạng | Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. | Nhóm chuyên đề **—** · mức — |
+| Bài 3 | Bài toán tổng – hiệu | Chia đôi tổng ngay rồi cộng hiệu vào cả hai số. | Nhóm chuyên đề **—** · mức — |
+| Bài 4 | Đếm hình trong lưới | Chỉ đếm ô nhỏ, quên hình ghép từ nhiều ô. | Nhóm chuyên đề **—** · mức — |
+| Bài 5 | Dãy tuần hoàn | Dư 0 mà lấy phần tử đầu tiên. | Nhóm chuyên đề **—** · mức — |
 
 ---
 

@@ -30,55 +30,58 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Đặt tính rồi tính.
 
-a) 913 702 − 713 856
-b) 885 369 + 244 439
-c) 602 262 + 686 708
-d) 255 077 + 745 050
-e) 558 504 − 540 892
+a) 964 817 − 831 315
+b) 667 725 + 153 725
+c) 265 163 − 155 809
+d) 382 526 + 199 660
+e) 590 588 + 512 213
+f) 439 630 + 64 897
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
 Tìm x, trình bày từng bước.
 
-a) 264 − x × 2 = 158
-b) x × 10 − 285 = 35
-c) x × 9 − 117 = 1 449
-d) (x + 187) × 8 = 2 256
-e) (x − 248) × 7 = -1 386
-f) (x − 124) × 5 = -535
+a) (x + 101) × 4 = 588
+b) x × 7 − 166 = 443
+c) 848 − x × 4 = 264
+d) x × 2 − 162 = 144
+e) 494 − x × 7 = 277
+f) x × 10 − 95 = 565
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
 Ghi rõ đại lượng nào ứng với 100%.
 
-a) Một chiếc cặp giá 240 000 đồng được giảm 10%. Hỏi giá sau khi giảm là bao nhiêu?
-b) Mua một món hàng 500 000 đồng rồi bán 550 000 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
-c) Một món hàng giá 150 000 đồng, tăng giá 40%. Giá mới là bao nhiêu?
-d) Một món hàng giá 120 000 đồng, tăng giá 20%. Giá mới là bao nhiêu?
+a) Mua một món hàng 200 000 đồng rồi bán 230 000 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
+b) Một chiếc cặp giá 150 000 đồng được giảm 40%. Hỏi giá sau khi giảm là bao nhiêu?
+c) Một món hàng giá 300 000 đồng, tăng giá 25%. Giá mới là bao nhiêu?
+d) Mua một món hàng 240 000 đồng rồi bán 312 000 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
+e) Một món hàng giá 300 000 đồng, tăng giá 40%. Giá mới là bao nhiêu?
+f) Một chiếc cặp giá 150 000 đồng được giảm 15%. Hỏi giá sau khi giảm là bao nhiêu?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
-Ghi kết quả theo giờ và phút.
+Lấy π = 3,14. Ghi rõ đơn vị.
 
-a) Một chuyến tàu khởi hành lúc 5 giờ 30 phút và đi hết 6 giờ 35 phút. Tàu đến nơi lúc mấy giờ?
-b) Một chuyến tàu khởi hành lúc 8 giờ 45 phút và đi hết 59 phút. Tàu đến nơi lúc mấy giờ?
-c) Một chuyến tàu khởi hành lúc 14 giờ 50 phút và đi hết 2 giờ 10 phút. Tàu đến nơi lúc mấy giờ?
-d) Một chuyến tàu khởi hành lúc 10 giờ 20 phút và đi hết 3 giờ 3 phút. Tàu đến nơi lúc mấy giờ?
-e) Một chuyến tàu khởi hành lúc 11 giờ 30 phút và đi hết 1 giờ 9 phút. Tàu đến nơi lúc mấy giờ?
-f) Một chuyến tàu khởi hành lúc 6 giờ 50 phút và đi hết 3 giờ 12 phút. Tàu đến nơi lúc mấy giờ?
+a) Hình tròn có bán kính 18 cm. Tính diện tích (lấy π = 3,14).
+b) Hình tròn có đường kính 50 cm. Tính chu vi (lấy π = 3,14).
+c) Hình tròn có đường kính 28 cm. Bán kính bằng bao nhiêu?
+d) Hình tròn có bán kính 30 cm. Tính chu vi (lấy π = 3,14).
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
-Chú ý các cạnh bị ghép vào bên trong.
+Đổi hết về ki-lô-gam trước khi tính.
 
-a) Cắt một hình vuông cạnh 30 cm thành hai hình chữ nhật bằng nhau. Tổng chu vi hai hình chữ nhật đó bằng bao nhiêu?
-b) Ghép 4 hình vuông cạnh 13 cm thành một hình vuông lớn. Tính chu vi hình vuông lớn.
-c) Ghép 2 hình vuông cạnh 11 cm thành một hàng ngang. Tính chu vi hình chữ nhật thu được.
-d) Ghép 6 hình vuông cạnh 15 cm thành một hàng ngang. Tính chu vi hình chữ nhật thu được.
+a) Một kho chứa 2 tấn 8 tạ 36 kg thóc. Đổi ra ki-lô-gam.
+b) Số thóc ấy nặng bao nhiêu tạ và bao nhiêu ki-lô-gam?
+c) Chở đều bằng 2 xe thì mỗi xe chở bao nhiêu ki-lô-gam, còn thừa bao nhiêu?
+d) Nếu mỗi xe chỉ chở được 1 tấn thì cần ít nhất bao nhiêu xe?
+e) Bán 1 418 kg thì còn lại bao nhiêu tạ và ki-lô-gam?
+f) Vì sao ở ý d phải làm tròn lên chứ không làm tròn xuống?
 
 
 ---
@@ -86,99 +89,102 @@ d) Ghép 6 hình vuông cạnh 15 cm thành một hàng ngang. Tính chu vi hìn
 ## ĐÁP ÁN VÀ BIỂU ĐIỂM
 
 
-### Bài 1, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **199 846**
-b) **1 129 808**
-c) **1 288 970**
-d) **1 000 127**
-e) **17 612**
+a) **133 502**
+b) **821 450**
+c) **109 354**
+d) **582 186**
+e) **1 102 801**
+f) **504 527**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 913 702 − 713 856
+1. Xét ý a: 964 817 − 831 315
 2. Đọc vị: đây là dạng **Cộng, trừ số tự nhiên**; dấu hiệu là Yêu cầu “đặt tính rồi tính”.
 3. Kiến thức phải dùng: Kĩ thuật đặt tính, nhớ và mượn.
 4. Cách làm: Đặt tính thẳng hàng, tính từ hàng đơn vị.
 5. Lối tắt: Làm tròn một số hạng để ước lượng trước, dùng kết quả ước lượng để phát hiện sai sót.
-6. Kết quả: **199 846**.
+6. Kết quả: **133 502**.
 
 *Lỗi hay mắc:* Viết lệch hàng khi hai số có số chữ số khác nhau.
 
 ### Bài 2, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **x = 53**
-b) **x = 32**
-c) **x = 174**
-d) **x = 95**
-e) **x = 50**
-f) **x = 17**
+a) **x = 46**
+b) **x = 87**
+c) **x = 146**
+d) **x = 153**
+e) **x = 31**
+f) **x = 66**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 264 − x × 2 = 158
+1. Xét ý a: (x + 101) × 4 = 588
 2. Đọc vị: đây là dạng **Tìm x qua hai bước**; dấu hiệu là x nằm trong một cụm có hai phép tính.
 3. Kiến thức phải dùng: Quan hệ các thành phần phép tính, thứ tự thực hiện.
 4. Cách làm: Gỡ dần từ phép ngoài cùng vào trong.
 5. Lối tắt: Thay x tìm được vào đề để thử — nhanh hơn dò lại từng bước.
-6. Kết quả: **x = 53**.
+6. Kết quả: **x = 46**.
 
 *Lỗi hay mắc:* Gỡ phép nhân trước khi gỡ phép cộng ở ngoài.
 
-### Bài 3, (2 điểm — mỗi ý 0,5 điểm)
+### Bài 3, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **216 000 đồng**
-b) **10%**
-c) **210 000 đồng**
-d) **144 000 đồng**
+a) **15%**
+b) **90 000 đồng**
+c) **375 000 đồng**
+d) **30%**
+e) **420 000 đồng**
+f) **127 500 đồng**
 
 **Cách giải mẫu:**
 
-1. Giá gốc ứng với 100%.
-2. Bước 1 — số tiền giảm: 240 000 : 100 × 10 = 24 000 (đồng).
-3. Bước 2 — giá sau khi giảm: 240 000 − 24 000 = 216 000 (đồng).
-4. Cách nhanh: giảm 10% nghĩa là còn 90%, tức 240 000 : 100 × 90 = 216 000 (đồng).
-5. Đáp số: **216 000 đồng**.
+1. Xét ý a: Mua một món hàng 200 000 đồng rồi bán 230 000 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
+2. Đọc vị: đây là dạng **Tỉ số phần trăm trong mua bán**; dấu hiệu là Từ khoá “giảm giá”, “tăng giá”, “lãi”, “lỗ”.
+3. Kiến thức phải dùng: Tỉ số phần trăm, mốc quy chiếu 100%.
+4. Cách làm: Chốt mốc 100% rồi cộng trừ phần trăm.
+5. Lối tắt: Giảm 20% nghĩa là còn 80% — nhân thẳng một lần thay vì trừ hai bước.
+6. Kết quả: **15%**.
 
 *Lỗi hay mắc:* Chia tiền lãi cho giá bán nên ra tỉ lệ nhỏ hơn thực tế.
 
-### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 4, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **12 giờ 5 phút**
-b) **9 giờ 44 phút**
-c) **17 giờ 0 phút**
-d) **13 giờ 23 phút**
-e) **12 giờ 39 phút**
-f) **10 giờ 2 phút**
+a) **1 017,36 cm²**
+b) **157 cm**
+c) **14 cm**
+d) **188,4 cm**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Một chuyến tàu khởi hành lúc 5 giờ 30 phút và đi hết 6 giờ 35 phút. Tàu đến nơi lúc mấy giờ?
-2. Đọc vị: đây là dạng **Tính thời điểm trong ngày**; dấu hiệu là Cho thời điểm bắt đầu và khoảng thời gian.
-3. Kiến thức phải dùng: Quan hệ giờ – phút, phép chia có dư.
-4. Cách làm: Quy về phút, cộng trừ, đổi lại.
-5. Lối tắt: Cộng tròn giờ trước rồi cộng phần phút lẻ sau.
-6. Kết quả: **12 giờ 5 phút**.
+1. Xét ý a: Hình tròn có bán kính 18 cm. Tính diện tích (lấy π = 3,14).
+2. Đọc vị: đây là dạng **Chu vi, diện tích hình tròn**; dấu hiệu là Đề cho bán kính hoặc đường kính.
+3. Kiến thức phải dùng: Công thức hình tròn.
+4. Cách làm: Quy về bán kính, chọn đúng công thức.
+5. Lối tắt: Diện tích luôn có đơn vị mũ hai — nếu đáp số ghi cm là chắc chắn nhầm.
+6. Kết quả: **1 017,36 cm²**.
 
-*Lỗi hay mắc:* Cộng phần phút thành hơn 60 mà quên đổi thành giờ.
+*Lỗi hay mắc:* Lấy đường kính nhân đường kính khi tính diện tích.
 
-### Bài 5, (2 điểm — mỗi ý 0,5 điểm)
+### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **180 cm**
-b) **104 cm**
-c) **66 cm**
-d) **210 cm**
+a) **2 836 kg**
+b) **28 tạ 36 kg**
+c) **1 418 kg, không thừa**
+d) **3 xe**
+e) **14 tạ 18 kg**
+f) **vì phần thóc còn lại vẫn cần thêm một xe nữa để chở**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Cắt một hình vuông cạnh 30 cm thành hai hình chữ nhật bằng nhau. Tổng chu vi hai hình chữ nhật đó bằng bao nhiêu?
-2. Đọc vị: đây là dạng **Cắt ghép hình, biến thiên chu vi**; dấu hiệu là Từ khoá “ghép”, “cắt thành”, “xếp thành”.
-3. Kiến thức phải dùng: Chu vi, đường bao của hình.
-4. Cách làm: Xác định đường bao mới rồi cộng độ dài.
-5. Lối tắt: Mỗi nhát cắt làm tổng chu vi tăng thêm hai lần chiều dài nhát cắt.
-6. Kết quả: **180 cm**.
+1. Bước 1 — đổi về ki-lô-gam: 2 tấn = 2 000 kg; 8 tạ = 800 kg.
+2. Tổng: 2 000 + 800 + 36 = 2 836 (kg).
+3. Bước 2 — chia cho 2 xe: 2 836 : 2 = 1 418 .
+4. Bước 3 — mỗi xe chở 1 tấn = 1 000 kg, cần 2 836 : 1 000 = 2 xe đầy, còn 836 kg nữa nên phải thêm một xe.
+5. Đáp số ý a: **2 836 kg**.
 
-*Lỗi hay mắc:* Cộng chu vi các hình nhỏ lại rồi coi đó là chu vi hình ghép.
+*Lỗi hay mắc:* Chia rồi lấy phần nguyên, bỏ quên phần dư vẫn cần một xe.
 
 ---
 
@@ -191,8 +197,8 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài 1 | Cộng, trừ số tự nhiên | Viết lệch hàng khi hai số có số chữ số khác nhau. | Nhóm chuyên đề **—** · mức — |
 | Bài 2 | Tìm x qua hai bước | Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. | Nhóm chuyên đề **—** · mức — |
 | Bài 3 | Tỉ số phần trăm trong mua bán | Chia tiền lãi cho giá bán nên ra tỉ lệ nhỏ hơn thực tế. | Nhóm chuyên đề **—** · mức — |
-| Bài 4 | Tính thời điểm trong ngày | Cộng phần phút thành hơn 60 mà quên đổi thành giờ. | Nhóm chuyên đề **—** · mức — |
-| Bài 5 | Cắt ghép hình, biến thiên chu vi | Cộng chu vi các hình nhỏ lại rồi coi đó là chu vi hình ghép. | Nhóm chuyên đề **—** · mức — |
+| Bài 4 | Chu vi, diện tích hình tròn | Lấy đường kính nhân đường kính khi tính diện tích. | Nhóm chuyên đề **—** · mức — |
+| Bài 5 | Đại lượng khối lượng, chia phần và làm tròn lên | Chia rồi lấy phần nguyên, bỏ quên phần dư vẫn cần một xe. | Nhóm chuyên đề **—** · mức — |
 
 ---
 

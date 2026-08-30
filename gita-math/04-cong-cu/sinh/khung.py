@@ -250,12 +250,48 @@ def dang_ky(ma: str, nhom: str, muc: str, lop=(3, 4, 5), tu_khoa=(),
     MA_DA_DUNG.add(ma)
 
     def bao(f):
-        m = Mau(ma=ma, nhom=nhom, muc=muc, lop=tuple(lop), sinh=f,
+        m = Mau(ma=ma, nhom=nhom, muc=muc, lop=tuple(lop), sinh=_khong_trung_y(f),
                 tu_khoa=tuple(tu_khoa), dang_bai=tuple(dang_bai),
                 thuc_te=thuc_te, bay=bay)
         KHO.setdefault(nhom, {}).setdefault(muc, []).append(m)
         return f
     return bao
+
+
+def _khong_trung_y(f):
+    """Bọc hàm sinh lại, bảo đảm trong một bài không có hai ý giống hệt nhau.
+
+    Mọi mẫu đều rút số ngẫu nhiên, nên thỉnh thoảng hai ý của cùng một bài
+    trùng nhau từng chữ. Đo trên toàn kho: **107 trong 265 mẫu** từng rơi vào
+    cảnh ấy. Trên phiếu, một bài trùng ý trông đúng là cẩu thả — học sinh làm
+    tới ý d rồi nhận ra mình vừa chép lại ý b, và niềm tin vào cả tập phiếu
+    hỏng từ đó.
+
+    Cách chữa là **rút lại chứ không bỏ bớt**: bỏ bớt thì bài ngắn đi và có thể
+    tụt xuống dưới số ý tối thiểu của chuẩn v2.0. Chỉ khi rút bốn mươi lần vẫn
+    trùng — dấu hiệu mẫu ấy có quá ít khả năng để chọn — mới chấp nhận bỏ ý
+    trùng, và khi ấy phải dời `y_mau` theo, vì lời giải mẫu gắn với **một ý cụ
+    thể** chứ không gắn với vị trí thứ mấy.
+    """
+    def sinh(rng, lop):
+        goc = rng.getrandbits(62)
+        cuoi = None
+        for lan in range(40):
+            b = f(random.Random(goc + lan), lop)
+            cau = [c for c, _ in b.y]
+            if len(set(cau)) == len(cau):
+                return b
+            cuoi = b
+        neo_y = cuoi.y[cuoi.y_mau] if cuoi.y_mau < len(cuoi.y) else None
+        da, giu = set(), []
+        for c, d in cuoi.y:
+            if c not in da:
+                da.add(c)
+                giu.append((c, d))
+        cuoi.y = giu
+        cuoi.y_mau = giu.index(neo_y) if neo_y in giu else 0
+        return cuoi
+    return sinh
 
 
 MA_DA_DUNG: set[str] = set()

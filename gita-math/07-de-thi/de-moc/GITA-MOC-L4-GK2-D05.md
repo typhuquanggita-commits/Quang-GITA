@@ -30,56 +30,56 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Trả lời nhanh, mỗi ý không quá 20 giây.
 
-a) Chữ số hàng triệu của số 8 339 709 có giá trị bằng bao nhiêu?
-b) Làm tròn 3 086 859 đến hàng trăm.
-c) Số liền trước và số liền sau của 1 872 877 là những số nào?
-d) 1 587 923 … 1 590 345
-e) Làm tròn 9 581 837 đến hàng nghìn.
-f) Số liền trước và số liền sau của 2 167 437 là những số nào?
+a) Chữ số hàng chục của số 7 618 092 có giá trị bằng bao nhiêu?
+b) Làm tròn 4 354 874 đến hàng nghìn.
+c) Số liền trước và số liền sau của 6 392 873 là những số nào?
+d) 6 839 495 … 6 839 954
+e) Chữ số hàng chục nghìn của số 5 571 397 có giá trị bằng bao nhiêu?
+f) 3 798 567 … 3 799 938
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
-Tính bằng cách thuận tiện nhất.
+Điền số thích hợp vào chỗ chấm.
 
-a) 3 440 : 8 : 10
-b) 4 080 : 8 : 10
-c) 50 × 59 × 2
-d) 11 × 125 × 8
+a) 40 m² = … cm²
+b) 8 100 dm² = … m²
+c) 23 dm² = … cm²
+d) 1 700 cm² = … dm²
+e) 45 m² = … cm²
+f) 700 dm² = … m²
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
-Tóm tắt bằng sơ đồ đoạn thẳng rồi giải.
+Giải bằng cách rút về đơn vị hoặc dùng tỉ số.
 
-a) Hai lớp 4C và 5A có tất cả 480 quyển sách. Lớp 4C có nhiều hơn lớp 5A 80 quyển. Mỗi lớp có bao nhiêu quyển?
-b) Nhóm Sao Mai và nhóm Hoa Phượng trồng được 374 cây. Nhóm Sao Mai trồng nhiều hơn nhóm Hoa Phượng 90 cây. Mỗi tổ trồng bao nhiêu cây?
-c) Thư viện và kho A chứa tất cả 402 kg đường. Thư viện chứa nhiều hơn kho A 64 kg. Mỗi nơi chứa bao nhiêu kg?
-d) Kho B và kho A chứa tất cả 114 kg phân bón. Kho B chứa nhiều hơn kho A 12 kg. Mỗi nơi chứa bao nhiêu kg?
+a) Mua 15 quyển vở hết 510 nghìn đồng. Với 170 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+b) Mua 6 quyển vở hết 492 nghìn đồng. Với 1 394 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+c) Mua 5 quyển vở hết 315 nghìn đồng. Mua 14 quyển vở như thế hết bao nhiêu nghìn đồng?
+d) Mua 5 quyển vở hết 250 nghìn đồng. Với 450 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
-Bài nhiều ý nối tiếp, ý sau dùng kết quả ý trước.
+Trình bày lời giải có câu trả lời.
 
-a) Hình chữ nhật có chiều dài 59 m, chiều rộng 27 m. Tính chu vi.
-b) Tính diện tích hình chữ nhật đó.
-c) Một người đi bộ quanh hình chữ nhật ấy với vận tốc 2 m/giây. Hỏi đi hết một vòng mất bao nhiêu giây?
-d) Nếu tăng chiều dài thêm 4 m thì diện tích tăng thêm bao nhiêu?
-e) Khi đó chu vi tăng thêm bao nhiêu mét?
-f) Nếu tăng cả chiều dài và chiều rộng thêm 4 m thì diện tích mới bằng bao nhiêu?
+a) Một cửa hàng có 18 thùng sữa, mỗi thùng 25 lít. Cửa hàng đã bán 10 thùng. Hỏi cửa hàng còn lại bao nhiêu lít sữa?
+b) Một cửa hàng có 16 thùng nước, mỗi thùng 20 lít. Cửa hàng đã bán 15 thùng. Hỏi cửa hàng còn lại bao nhiêu lít nước?
+c) Một cửa hàng có 10 thùng nước, mỗi thùng 18 lít. Cửa hàng đã bán 2 thùng. Hỏi cửa hàng còn lại bao nhiêu lít nước?
+d) Một cửa hàng có 13 thùng nước, mỗi thùng 24 lít. Cửa hàng đã bán 5 thùng. Hỏi cửa hàng còn lại bao nhiêu lít nước?
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
-Mỗi ý làm trong 60 giây. Ghi thẳng đáp số, không cần trình bày.
+Bài mô phỏng phần tự luận của đề thi chất lượng cao.
 
-a) Có 8 bạn, mỗi bạn bắt tay với tất cả các bạn còn lại đúng một lần. Có bao nhiêu cái bắt tay?
-b) Có 7 áo và 6 quần. Có bao nhiêu cách chọn một bộ?
-c) Hộp có bi 4 màu. Lấy ít nhất mấy viên để chắc chắn có 3 viên cùng màu?
-d) Đoạn đường dài 36 m, trồng cây cách nhau 4 m, trồng cả hai đầu. Cần bao nhiêu cây?
-e) Từ ba chữ số 1, 2, 3 lập được bao nhiêu số có ba chữ số khác nhau?
-f) Trên một đường thẳng có 8 điểm. Có bao nhiêu đoạn thẳng?
+a) Ba số có tổng 321. Số thứ hai hơn số thứ nhất 11, số thứ ba hơn số thứ hai 11. Tìm số thứ hai.
+b) Tìm số thứ nhất.
+c) Tìm số thứ ba.
+d) Vì sao số thứ hai bằng tổng ba số chia cho 3?
+e) Hai số khác có tổng 174 và số bé bằng 1 phần 2 số lớn. Tìm số bé.
+f) Tìm số lớn.
 
 
 ---
@@ -89,97 +89,97 @@ f) Trên một đường thẳng có 8 điểm. Có bao nhiêu đoạn thẳng?
 
 ### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **8 000 000**
-b) **3 086 900**
-c) **1 872 876 và 1 872 878**
+a) **90**
+b) **4 355 000**
+c) **6 392 872 và 6 392 874**
 d) **<**
-e) **9 582 000**
-f) **2 167 436 và 2 167 438**
+e) **70 000**
+f) **<**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Chữ số hàng triệu của số 8 339 709 có giá trị bằng bao nhiêu?
+1. Xét ý a: Chữ số hàng chục của số 7 618 092 có giá trị bằng bao nhiêu?
 2. Đọc vị: đây là dạng **Ôn tập số tự nhiên**; dấu hiệu là Câu hỏi ngắn về so sánh, hàng, số liền kề, làm tròn.
 3. Kiến thức phải dùng: Thứ tự số tự nhiên, giá trị hàng, quy tắc làm tròn.
 4. Cách làm: Đếm chữ số, xét hàng từ trái sang phải.
 5. Lối tắt: Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số.
-6. Kết quả: **8 000 000**.
+6. Kết quả: **90**.
 
 *Lỗi hay mắc:* So sánh từ hàng đơn vị; hoặc làm tròn nhìn nhầm sang chính hàng cần làm tròn.
 
-### Bài 2, (2 điểm — mỗi ý 0,5 điểm)
+### Bài 2, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **43**
-b) **51**
-c) **5 900**
-d) **11 000**
+a) **400 000**
+b) **81**
+c) **2 300**
+d) **17**
+e) **450 000**
+f) **7**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 3 440 : 8 : 10
-2. Đọc vị: đây là dạng **Tính nhanh tích, thương nhiều bước**; dấu hiệu là Tích có thừa số 25, 125, 50, 20; hoặc chia liên tiếp.
-3. Kiến thức phải dùng: Tính chất giao hoán, kết hợp của phép nhân.
-4. Cách làm: Ghép cặp cho tích tròn rồi nhân.
-5. Lối tắt: Chia liên tiếp cho 4 rồi 25 bằng chia cho 100.
-6. Kết quả: **43**.
+1. 1 m² = 10 000 cm².
+2. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**.
+3. 40 × 10 000 = 400 000 (cm²).
+4. Đáp số: **400 000 cm²**.
 
-*Lỗi hay mắc:* Nhân lần lượt từ trái sang phải nên số trung gian rất lớn.
+*Lỗi hay mắc:* Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc.
 
 ### Bài 3, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **4C: 280 quyển, 5A: 200 quyển**
-b) **nhóm Sao Mai: 232 cây, nhóm Hoa Phượng: 142 cây**
-c) **thư viện: 233 kg, kho A: 169 kg**
-d) **kho B: 63 kg, kho A: 51 kg**
+a) **5 quyển**
+b) **17 quyển**
+c) **882 nghìn đồng**
+d) **9 quyển**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Hai lớp 4C và 5A có tất cả 480 quyển sách. Lớp 4C có nhiều hơn lớp 5A 80 quyển. Mỗi lớp có bao nhiêu quyển?
-2. Đọc vị: đây là dạng **Tổng – hiệu có lời văn**; dấu hiệu là “Có tất cả …” và “… nhiều hơn … là …”.
-3. Kiến thức phải dùng: Công thức tổng – hiệu, sơ đồ đoạn thẳng.
-4. Cách làm: Đọc vị tổng và hiệu → sơ đồ → công thức.
-5. Lối tắt: Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần.
-6. Kết quả: **4C: 280 quyển, 5A: 200 quyển**.
+1. Xét ý a: Mua 15 quyển vở hết 510 nghìn đồng. Với 170 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+2. Đọc vị: đây là dạng **Tỉ lệ thuận, rút về đơn vị**; dấu hiệu là Hai đại lượng cùng tăng cùng giảm.
+3. Kiến thức phải dùng: Đại lượng tỉ lệ thuận.
+4. Cách làm: Rút về đơn vị hoặc dùng tỉ số.
+5. Lối tắt: Nếu số lượng mới gấp số lượng cũ một số nguyên lần thì nhân thẳng, không cần rút về đơn vị.
+6. Kết quả: **5 quyển**.
 
-*Lỗi hay mắc:* Nhầm hiệu thành tổng khi đề diễn đạt vòng vo.
+*Lỗi hay mắc:* Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch.
 
-### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 4, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **172 m**
-b) **1 593 m²**
-c) **86 giây**
-d) **108 m²**
-e) **8 m**
-f) **1 953 m²**
+a) **200 lít**
+b) **20 lít**
+c) **144 lít**
+d) **192 lít**
 
 **Cách giải mẫu:**
 
-1. Bước 1 — chu vi: (59 + 27) × 2 = 172 (m).
-2. Bước 2 — diện tích: 59 × 27 = 1 593 (m²).
-3. Bước 3 — đi một vòng chính là đi hết chu vi: 172 : 2 = 86 (giây).
-4. Bước 4 — tăng chiều dài thêm 4 m thì phần dôi ra là một hình chữ nhật 4 m × 27 m, diện tích 108 (m²).
-5. Đáp số ý a: **172 m**.
+1. Xét ý a: Một cửa hàng có 18 thùng sữa, mỗi thùng 25 lít. Cửa hàng đã bán 10 thùng. Hỏi cửa hàng còn lại bao nhiêu lít sữa?
+2. Đọc vị: đây là dạng **Bài toán đại lượng nhiều bước**; dấu hiệu là Cho số nhóm, giá trị mỗi nhóm và số nhóm đã dùng.
+3. Kiến thức phải dùng: Nhân, trừ; đại lượng cùng loại.
+4. Cách làm: Rút gọn số bước bằng cách trừ trước, nhân sau.
+5. Lối tắt: So sánh hai đường giải, chọn đường ít phép tính hơn.
+6. Kết quả: **200 lít**.
 
-*Lỗi hay mắc:* Nhân hai lượng tăng với nhau rồi coi đó là diện tích tăng thêm.
+*Lỗi hay mắc:* Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại.
 
 ### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **28**
-b) **42**
-c) **9**
-d) **10**
-e) **6**
-f) **28**
+a) **107**
+b) **96**
+c) **118**
+d) **vì ba số cách đều nên số ở giữa là trung bình cộng**
+e) **58**
+f) **116**
 
 **Cách giải mẫu:**
 
-1. Ý a — bắt tay: mỗi bạn bắt tay 7 bạn, tổng 8 × 7 = 56 lượt.
-2. Mỗi cái bắt tay có hai người nên bị đếm hai lần: 56 : 2 = 28 (cái).
-3. Ý c — xấu nhất mỗi màu lấy 2 viên mà vẫn chưa đủ: 4 × 2 = 8 viên; lấy thêm 1 viên nữa là chắc chắn đủ.
-4. Ý d — số khoảng 36 : 4 = 9; trồng cả hai đầu nên cộng 1.
-5. Đáp số ý a: **28 cái bắt tay**.
+1. Ba số cách đều nhau 11 đơn vị nên số ở giữa là trung bình cộng.
+2. Bước 1 — số thứ hai: 321 : 3 = 107.
+3. Bước 2 — số thứ nhất: 107 − 11 = 96.
+4. Bước 3 — số thứ ba: 107 + 11 = 118.
+5. Thử lại: 96 + 107 + 118 = 321 ✓
+6. Đáp số: **96, 107, 118**.
 
-*Lỗi hay mắc:* Đếm cặp mà quên chia 2; “chắc chắn có” mà quên cộng 1.
+*Lỗi hay mắc:* Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi.
 
 ---
 
@@ -190,10 +190,10 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài | Đo cái gì | Sai bài này nghĩa là | Học lại ở đâu |
 |:--:|---|---|---|
 | Bài 1 | Ôn tập số tự nhiên | So sánh từ hàng đơn vị; hoặc làm tròn nhìn nhầm sang chính hàng cần làm tròn. | Nhóm chuyên đề **—** · mức — |
-| Bài 2 | Tính nhanh tích, thương nhiều bước | Nhân lần lượt từ trái sang phải nên số trung gian rất lớn. | Nhóm chuyên đề **—** · mức — |
-| Bài 3 | Tổng – hiệu có lời văn | Nhầm hiệu thành tổng khi đề diễn đạt vòng vo. | Nhóm chuyên đề **—** · mức — |
-| Bài 4 | Hình chữ nhật tổng hợp | Nhân hai lượng tăng với nhau rồi coi đó là diện tích tăng thêm. | Nhóm chuyên đề **—** · mức — |
-| Bài 5 | Trắc nghiệm đếm nhanh | Đếm cặp mà quên chia 2; “chắc chắn có” mà quên cộng 1. | Nhóm chuyên đề **—** · mức — |
+| Bài 2 | Đổi đơn vị diện tích | Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. | Nhóm chuyên đề **—** · mức — |
+| Bài 3 | Tỉ lệ thuận, rút về đơn vị | Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch. | Nhóm chuyên đề **—** · mức — |
+| Bài 4 | Bài toán đại lượng nhiều bước | Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. | Nhóm chuyên đề **—** · mức — |
+| Bài 5 | Tổng nhiều số có ràng buộc; tổng – tỉ | Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. | Nhóm chuyên đề **—** · mức — |
 
 ---
 

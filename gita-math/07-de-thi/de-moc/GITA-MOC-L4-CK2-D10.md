@@ -30,56 +30,54 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Trả lời nhanh, mỗi ý không quá 20 giây.
 
-a) 7 631 926 … 7 629 330
-b) Số liền trước và số liền sau của 4 072 607 là những số nào?
-c) Chữ số hàng chục nghìn của số 5 781 311 có giá trị bằng bao nhiêu?
-d) Làm tròn 6 525 583 đến hàng trăm.
-e) 9 957 388 … 9 961 078
-f) Làm tròn 9 962 334 đến hàng nghìn.
+a) 4 756 816 … 4 752 644
+b) Làm tròn 9 804 693 đến hàng nghìn.
+c) Chữ số hàng đơn vị của số 8 526 826 có giá trị bằng bao nhiêu?
+d) Số liền trước và số liền sau của 619 988 là những số nào?
+e) 211 874 … 214 764
+f) Làm tròn 2 252 176 đến hàng trăm.
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
-Điền số thích hợp vào chỗ chấm.
+Tính bằng cách thuận tiện nhất.
 
-a) 23 m² = … cm²
-b) 68 m² = … dm²
-c) 75 dm² = … cm²
-d) 8 300 dm² = … m²
-e) 2 m² = … cm²
+a) 1 280 : 8 : 10
+b) 52 × 125 × 8
+c) 83 × 25 × 4
+d) 1 960 : 4 : 10
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
 Giải từng bài toán nhỏ.
 
-a) Trung bình mỗi ngày bán được 49 kg gạo. Hỏi 6 ngày bán được tất cả bao nhiêu ki-lô-gam?
-b) Trung bình mỗi ngày bán được 28 kg gạo. Hỏi 6 ngày bán được tất cả bao nhiêu ki-lô-gam?
-c) Trung bình mỗi ngày bán được 48 kg gạo. Hỏi 6 ngày bán được tất cả bao nhiêu ki-lô-gam?
-d) Trung bình mỗi ngày cửa hàng bán được 275 kg gạo. 3 ngày đầu bán được 286, 265, 279 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
-e) Trung bình mỗi ngày bán được 137 kg gạo. Hỏi 3 ngày bán được tất cả bao nhiêu ki-lô-gam?
-f) Trung bình mỗi ngày bán được 185 kg gạo. Hỏi 4 ngày bán được tất cả bao nhiêu ki-lô-gam?
+a) Trung bình mỗi ngày bán được 139 kg gạo. Hỏi 6 ngày bán được tất cả bao nhiêu ki-lô-gam?
+b) 4 ngày đầu tuần một cửa hàng bán được lần lượt 189, 207, 190, 198 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
+c) Trung bình mỗi ngày bán được 257 kg gạo. Hỏi 3 ngày bán được tất cả bao nhiêu ki-lô-gam?
+d) Trung bình mỗi ngày cửa hàng bán được 280 kg gạo. 2 ngày đầu bán được 281, 289 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
 Chú ý đơn vị mà đề hỏi.
 
-a) Một xe chở 36 bao phân bón, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ phân bón?
-b) Một xe chở 30 bao phân bón, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ phân bón?
-c) Một xe chở 25 bao gạo, mỗi bao 50 kg. Hỏi xe chở bao nhiêu tạ gạo?
-d) Một xe chở 13 bao xi măng, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ xi măng?
+a) Một xe chở 30 bao thóc, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ thóc?
+b) Một xe chở 21 bao đường, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ đường?
+c) Một xe chở 20 bao gạo, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ gạo?
+d) Một xe chở 36 bao xi măng, mỗi bao 40 kg. Hỏi xe chở bao nhiêu tạ xi măng?
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
-Nêu rõ ngăn kéo là gì, đồ vật là gì.
+Tính nhanh mỗi tổng, nêu công thức đã dùng.
 
-a) Có 7 học sinh sinh trong 6 tháng khác nhau. Chứng tỏ rằng có ít nhất 2 bạn sinh cùng một tháng. Hỏi nếu bớt đi một bạn thì kết luận đó còn đúng không?
-b) Có 37 học sinh sinh trong 9 tháng khác nhau. Chứng tỏ rằng có ít nhất 5 bạn sinh cùng một tháng. Hỏi nếu bớt đi một bạn thì kết luận đó còn đúng không?
-c) Có 37 học sinh sinh trong 12 tháng khác nhau. Chứng tỏ rằng có ít nhất 4 bạn sinh cùng một tháng. Hỏi nếu bớt đi một bạn thì kết luận đó còn đúng không?
-d) Có 33 học sinh sinh trong 8 tháng khác nhau. Chứng tỏ rằng có ít nhất 5 bạn sinh cùng một tháng. Hỏi nếu bớt đi một bạn thì kết luận đó còn đúng không?
-e) Có 25 học sinh sinh trong 12 tháng khác nhau. Chứng tỏ rằng có ít nhất 3 bạn sinh cùng một tháng. Hỏi nếu bớt đi một bạn thì kết luận đó còn đúng không?
+a) 2 + 4 + 6 + … + 100 (tổng 50 số chẵn đầu tiên)
+b) 1 + 2 + 3 + … + 10
+c) 1 + 3 + 5 + … + 39 (tổng 20 số lẻ đầu tiên)
+d) 2 + 4 + 6 + … + 20 (tổng 10 số chẵn đầu tiên)
+e) 1 + 3 + 5 + … + 199 (tổng 100 số lẻ đầu tiên)
+f) 1 + 2 + 3 + … + 100
 
 
 ---
@@ -90,15 +88,15 @@ e) Có 25 học sinh sinh trong 12 tháng khác nhau. Chứng tỏ rằng có í
 ### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
 a) **>**
-b) **4 072 606 và 4 072 608**
-c) **80 000**
-d) **6 525 600**
+b) **9 805 000**
+c) **6**
+d) **619 987 và 619 989**
 e) **<**
-f) **9 962 000**
+f) **2 252 200**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 7 631 926 … 7 629 330
+1. Xét ý a: 4 756 816 … 4 752 644
 2. Đọc vị: đây là dạng **Ôn tập số tự nhiên**; dấu hiệu là Câu hỏi ngắn về so sánh, hàng, số liền kề, làm tròn.
 3. Kiến thức phải dùng: Thứ tự số tự nhiên, giá trị hàng, quy tắc làm tròn.
 4. Cách làm: Đếm chữ số, xét hàng từ trái sang phải.
@@ -107,79 +105,79 @@ f) **9 962 000**
 
 *Lỗi hay mắc:* So sánh từ hàng đơn vị; hoặc làm tròn nhìn nhầm sang chính hàng cần làm tròn.
 
-### Bài 2, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 2, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **230 000**
-b) **6 800**
-c) **7 500**
-d) **83**
-e) **20 000**
+a) **16**
+b) **52 000**
+c) **8 300**
+d) **49**
 
 **Cách giải mẫu:**
 
-1. 1 m² = 10 000 cm².
-2. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**.
-3. 23 × 10 000 = 230 000 (cm²).
-4. Đáp số: **230 000 cm²**.
+1. Xét ý a: 1 280 : 8 : 10
+2. Đọc vị: đây là dạng **Tính nhanh tích, thương nhiều bước**; dấu hiệu là Tích có thừa số 25, 125, 50, 20; hoặc chia liên tiếp.
+3. Kiến thức phải dùng: Tính chất giao hoán, kết hợp của phép nhân.
+4. Cách làm: Ghép cặp cho tích tròn rồi nhân.
+5. Lối tắt: Chia liên tiếp cho 4 rồi 25 bằng chia cho 100.
+6. Kết quả: **16**.
 
-*Lỗi hay mắc:* Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc.
+*Lỗi hay mắc:* Nhân lần lượt từ trái sang phải nên số trung gian rất lớn.
 
-### Bài 3, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 3, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **294 kg**
-b) **168 kg**
-c) **288 kg**
+a) **834 kg**
+b) **196 kg**
+c) **771 kg**
 d) **270 kg**
-e) **411 kg**
-f) **740 kg**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Trung bình mỗi ngày bán được 49 kg gạo. Hỏi 6 ngày bán được tất cả bao nhiêu ki-lô-gam?
+1. Xét ý a: Trung bình mỗi ngày bán được 139 kg gạo. Hỏi 6 ngày bán được tất cả bao nhiêu ki-lô-gam?
 2. Đọc vị: đây là dạng **Ba dạng bài trung bình cộng**; dấu hiệu là Cụm “trung bình mỗi …”.
 3. Kiến thức phải dùng: Quan hệ tổng – số lượng – trung bình cộng.
 4. Cách làm: Đi qua tổng làm trung gian.
 5. Lối tắt: Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng.
-6. Kết quả: **294 kg**.
+6. Kết quả: **834 kg**.
 
 *Lỗi hay mắc:* Đi tìm ngay số còn thiếu mà chưa tính tổng.
 
 ### Bài 4, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **10 tạ 80 kg**
-b) **18 tạ**
-c) **12 tạ 50 kg**
-d) **7 tạ 80 kg**
+a) **18 tạ**
+b) **6 tạ 30 kg**
+c) **5 tạ**
+d) **14 tạ 40 kg**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Một xe chở 36 bao phân bón, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ phân bón?
+1. Xét ý a: Một xe chở 30 bao thóc, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ thóc?
 2. Đọc vị: đây là dạng **Bài toán đại lượng có lời văn**; dấu hiệu là Đơn vị trong câu hỏi khác đơn vị trong dữ kiện.
 3. Kiến thức phải dùng: Nhân, chia số tự nhiên; đổi đơn vị khối lượng.
 4. Cách làm: Tính theo đơn vị dữ kiện rồi đổi ở bước cuối.
 5. Lối tắt: 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ.
-6. Kết quả: **10 tạ 80 kg**.
+6. Kết quả: **18 tạ**.
 
 *Lỗi hay mắc:* Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ.
 
-### Bài 5, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **không còn đúng (6 bạn có thể chia đều 1 bạn mỗi tháng)**
-b) **không còn đúng (36 bạn có thể chia đều 4 bạn mỗi tháng)**
-c) **không còn đúng (36 bạn có thể chia đều 3 bạn mỗi tháng)**
-d) **không còn đúng (32 bạn có thể chia đều 4 bạn mỗi tháng)**
-e) **không còn đúng (24 bạn có thể chia đều 2 bạn mỗi tháng)**
+a) **2 550**
+b) **55**
+c) **400**
+d) **110**
+e) **10 000**
+f) **5 050**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Có 7 học sinh sinh trong 6 tháng khác nhau. Chứng tỏ rằng có ít nhất 2 bạn sinh cùng một tháng. Hỏi nếu bớt đi một bạn thì kết luận đó còn đúng không?
-2. Đọc vị: đây là dạng **Đi-rích-lê dạng chứng minh**; dấu hiệu là “Chứng tỏ rằng có ít nhất … cùng …”.
-3. Kiến thức phải dùng: Nguyên lí ngăn kéo.
-4. Cách làm: Đặt tên ngăn kéo và đồ vật, tính ngưỡng.
-5. Lối tắt: Ngưỡng = số ngăn × (số cần − 1) + 1.
-6. Kết quả: **không còn đúng (6 bạn có thể chia đều 1 bạn mỗi tháng)**.
+1. Xét ý a: 2 + 4 + 6 + … + 100 (tổng 50 số chẵn đầu tiên)
+2. Đọc vị: đây là dạng **Tổng dãy đặc biệt**; dấu hiệu là Dãy toàn số lẻ, toàn số chẵn, hoặc số tự nhiên liên tiếp.
+3. Kiến thức phải dùng: Ba công thức tổng cơ bản.
+4. Cách làm: Đếm số số hạng rồi áp công thức.
+5. Lối tắt: Tổng n số lẻ đầu tiên luôn là một số chính phương — dùng để kiểm tra nhanh.
+6. Kết quả: **2 550**.
 
-*Lỗi hay mắc:* Nói chung chung “vì nhiều người quá nên phải trùng” mà không chỉ ra con số.
+*Lỗi hay mắc:* Nhầm số hạng cuối với số lượng số hạng khi áp công thức.
 
 ---
 
@@ -190,10 +188,10 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài | Đo cái gì | Sai bài này nghĩa là | Học lại ở đâu |
 |:--:|---|---|---|
 | Bài 1 | Ôn tập số tự nhiên | So sánh từ hàng đơn vị; hoặc làm tròn nhìn nhầm sang chính hàng cần làm tròn. | Nhóm chuyên đề **—** · mức — |
-| Bài 2 | Đổi đơn vị diện tích | Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. | Nhóm chuyên đề **—** · mức — |
+| Bài 2 | Tính nhanh tích, thương nhiều bước | Nhân lần lượt từ trái sang phải nên số trung gian rất lớn. | Nhóm chuyên đề **—** · mức — |
 | Bài 3 | Ba dạng bài trung bình cộng | Đi tìm ngay số còn thiếu mà chưa tính tổng. | Nhóm chuyên đề **—** · mức — |
 | Bài 4 | Bài toán đại lượng có lời văn | Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. | Nhóm chuyên đề **—** · mức — |
-| Bài 5 | Đi-rích-lê dạng chứng minh | Nói chung chung “vì nhiều người quá nên phải trùng” mà không chỉ ra con số. | Nhóm chuyên đề **—** · mức — |
+| Bài 5 | Tổng dãy đặc biệt | Nhầm số hạng cuối với số lượng số hạng khi áp công thức. | Nhóm chuyên đề **—** · mức — |
 
 ---
 

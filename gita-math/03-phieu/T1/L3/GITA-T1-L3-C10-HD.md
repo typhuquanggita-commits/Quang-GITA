@@ -52,16 +52,17 @@ Học thuộc theo cặp **dạng bài – công thức**, không học rời.
 
 | # | Dùng cho dạng bài | Công thức hoặc quy tắc |
 |---:|---|---|
-| 1 | Góc vuông; điểm ở giữa và trung điểm | Định nghĩa trung điểm; cách dùng ê ke |
-| 2 | Đếm hình trong lưới | Quy tắc đếm, tổ hợp đơn giản |
-| 3 | Đếm hình bằng quy tắc chọn hai điểm | Đếm cặp |
-| 4 | Chu vi, diện tích hình cơ bản | Công thức chu vi, diện tích hình chữ nhật và hình vuông |
-| 5 | Ghép hình, chu vi và diện tích | Chu vi, diện tích hình chữ nhật |
+| 1 | Đếm hình trong lưới | Quy tắc đếm, tổ hợp đơn giản |
+| 2 | Đếm hình bằng quy tắc chọn hai điểm | Đếm cặp |
+| 3 | Nhận biết hình tròn và các yếu tố | Quan hệ đường kính – bán kính |
+| 4 | Ghép hình, chu vi và diện tích | Chu vi, diện tích hình chữ nhật |
+| 5 | Góc vuông; điểm ở giữa và trung điểm | Định nghĩa trung điểm; cách dùng ê ke |
 | 6 | Phủ hình, chia hình | Diện tích hình chữ nhật, hình vuông; phép chia |
-| 7 | Nhận biết hình tròn và các yếu tố | Quan hệ đường kính – bán kính |
-| 8 | Tìm kích thước từ chu vi, diện tích | Công thức chu vi, diện tích; phép tính ngược |
-| 9 | Chu vi, diện tích hình cơ bản | Công thức chu vi, diện tích |
-| 10 | Đếm hình trong lưới | Quy tắc đếm |
+| 7 | Chu vi, diện tích hình cơ bản | Công thức chu vi, diện tích hình chữ nhật và hình vuông |
+| 8 | Đếm hình trong lưới | Quy tắc đếm |
+| 9 | Tìm kích thước từ chu vi, diện tích | Công thức chu vi, diện tích; phép tính ngược |
+| 10 | Chu vi, diện tích hình cơ bản | Công thức chu vi, diện tích |
+| 11 | Chu vi hình chữ nhật | Chu vi, diện tích hình chữ nhật; bài toán trồng cây |
 
 ---
 
@@ -87,15 +88,16 @@ Trước khi tra bảng, đi qua cây quyết định đọc vị của nhóm ch
 
 | Dạng bài | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất |
 |---|---|---|---|
-| Góc vuông; điểm ở giữa và trung điểm | Đề nhắc tới “trung điểm”, “nằm giữa”, “góc vuông” | Kiểm tra đủ hai điều kiện của trung điểm | AM = AB : 2 là điều kiện gọn nhất để nhận ra trung điểm. |
 | Đếm hình trong lưới | Hình vẽ là lưới ô vuông đều | Đếm theo đường kẻ hoặc theo cỡ hình | Số cách chọn 2 trong k đường kẻ là k × (k − 1) : 2. |
 | Đếm hình bằng quy tắc chọn hai điểm | Nhiều điểm trên một đường, hoặc nhiều đoạn kẻ từ một đỉnh | Quy về số cách chọn hai điểm | Số cách chọn 2 trong k là k × (k − 1) : 2 — thuộc là xong. |
-| Chu vi, diện tích hình cơ bản | Cho chiều dài, chiều rộng hoặc cạnh | Chọn đúng công thức, ghi đúng đơn vị | Hình vuông là hình chữ nhật có dài bằng rộng — chỉ cần nhớ một bộ công thức. |
-| Ghép hình, chu vi và diện tích | “Ghép … hình vuông thành …” | Xác định kích thước hình mới rồi áp công thức | Ghép thành hàng ngang thì chiều rộng vẫn bằng cạnh hình vuông. |
-| Phủ hình, chia hình | “Phủ kín bằng các hình vuông cạnh …”, “chia thành … phần bằng nhau” | Chia diện tích cho diện tích, kiểm tra bằng số hàng, số cột | Đếm số hàng nhân số cột nhanh hơn và tự kiểm tra được. |
 | Nhận biết hình tròn và các yếu tố | Đề nhắc tâm, bán kính, đường kính | Quy về bán kính rồi so sánh hoặc tính | Nhìn đơn vị và tên đại lượng trước khi so sánh. |
+| Ghép hình, chu vi và diện tích | “Ghép … hình vuông thành …” | Xác định kích thước hình mới rồi áp công thức | Ghép thành hàng ngang thì chiều rộng vẫn bằng cạnh hình vuông. |
+| Góc vuông; điểm ở giữa và trung điểm | Đề nhắc tới “trung điểm”, “nằm giữa”, “góc vuông” | Kiểm tra đủ hai điều kiện của trung điểm | AM = AB : 2 là điều kiện gọn nhất để nhận ra trung điểm. |
+| Phủ hình, chia hình | “Phủ kín bằng các hình vuông cạnh …”, “chia thành … phần bằng nhau” | Chia diện tích cho diện tích, kiểm tra bằng số hàng, số cột | Đếm số hàng nhân số cột nhanh hơn và tự kiểm tra được. |
+| Chu vi, diện tích hình cơ bản | Cho chiều dài, chiều rộng hoặc cạnh | Chọn đúng công thức, ghi đúng đơn vị | Hình vuông là hình chữ nhật có dài bằng rộng — chỉ cần nhớ một bộ công thức. |
 | Tìm kích thước từ chu vi, diện tích | Cho chu vi hoặc diện tích và một kích thước | Đi ngược công thức qua bước nửa chu vi | Nửa chu vi = chu vi : 2 — luôn tính bước này đầu tiên. |
 | Biến thiên chu vi và diện tích | “Tăng chiều … thêm … cm” | Vẽ hình chồng, xác định phần dôi ra | Chu vi tăng 2 × k dù tăng chiều nào; diện tích thì phụ thuộc chiều còn lại. |
+| Chu vi hình chữ nhật | Một mảnh đất có kích thước, cần rào hoặc cắm cọc quanh | Tính chu vi rồi chia cho khoảng cách giữa hai cọc | Chu vi chia khoảng cách ra ngay số cọc, không phải cộng trừ gì thêm. |
 
 ---
 
@@ -114,26 +116,26 @@ Trước khi tra bảng, đi qua cây quyết định đọc vị của nhóm ch
 
 Trả lời được ngay trong 10 giây thì đánh ✔. Phải nghĩ lâu thì đánh ✘ và làm lại phần tương ứng.
 
-- [ ] **1.** Em nêu được dấu hiệu nhận biết của dạng “Góc vuông; điểm ở giữa và trung điểm” chứ?
-- [ ] **2.** Em nhớ công thức: Định nghĩa trung điểm; cách dùng ê ke?
-- [ ] **3.** Em nêu được dấu hiệu nhận biết của dạng “Đếm hình trong lưới” chứ?
-- [ ] **4.** Em nhớ công thức: Quy tắc đếm, tổ hợp đơn giản?
-- [ ] **5.** Em nêu được dấu hiệu nhận biết của dạng “Đếm hình bằng quy tắc chọn hai điểm” chứ?
-- [ ] **6.** Em nhớ công thức: Đếm cặp?
-- [ ] **7.** Em nêu được dấu hiệu nhận biết của dạng “Chu vi, diện tích hình cơ bản” chứ?
-- [ ] **8.** Em nhớ công thức: Công thức chu vi, diện tích hình chữ nhật và hình vuông?
-- [ ] **9.** Em nêu được dấu hiệu nhận biết của dạng “Ghép hình, chu vi và diện tích” chứ?
-- [ ] **10.** Em nhớ công thức: Chu vi, diện tích hình chữ nhật?
+- [ ] **1.** Em nêu được dấu hiệu nhận biết của dạng “Đếm hình trong lưới” chứ?
+- [ ] **2.** Em nhớ công thức: Quy tắc đếm, tổ hợp đơn giản?
+- [ ] **3.** Em nêu được dấu hiệu nhận biết của dạng “Đếm hình bằng quy tắc chọn hai điểm” chứ?
+- [ ] **4.** Em nhớ công thức: Đếm cặp?
+- [ ] **5.** Em nêu được dấu hiệu nhận biết của dạng “Nhận biết hình tròn và các yếu tố” chứ?
+- [ ] **6.** Em nhớ công thức: Quan hệ đường kính – bán kính?
+- [ ] **7.** Em nêu được dấu hiệu nhận biết của dạng “Ghép hình, chu vi và diện tích” chứ?
+- [ ] **8.** Em nhớ công thức: Chu vi, diện tích hình chữ nhật?
+- [ ] **9.** Em nêu được dấu hiệu nhận biết của dạng “Góc vuông; điểm ở giữa và trung điểm” chứ?
+- [ ] **10.** Em nhớ công thức: Định nghĩa trung điểm; cách dùng ê ke?
 - [ ] **11.** Em nêu được dấu hiệu nhận biết của dạng “Phủ hình, chia hình” chứ?
 - [ ] **12.** Em nhớ công thức: Diện tích hình chữ nhật, hình vuông; phép chia?
-- [ ] **13.** Em nêu được dấu hiệu nhận biết của dạng “Nhận biết hình tròn và các yếu tố” chứ?
-- [ ] **14.** Em nhớ công thức: Quan hệ đường kính – bán kính?
-- [ ] **15.** Em nêu được dấu hiệu nhận biết của dạng “Tìm kích thước từ chu vi, diện tích” chứ?
-- [ ] **16.** Em nhớ công thức: Công thức chu vi, diện tích; phép tính ngược?
-- [ ] **17.** Em nêu được dấu hiệu nhận biết của dạng “Biến thiên chu vi và diện tích” chứ?
-- [ ] **18.** Em nhớ công thức: Chu vi, diện tích hình chữ nhật?
-- [ ] **19.** Em nêu được dấu hiệu nhận biết của dạng “Chu vi, diện tích hình cơ bản” chứ?
-- [ ] **20.** Em nhớ công thức: Công thức chu vi, diện tích?
+- [ ] **13.** Em nêu được dấu hiệu nhận biết của dạng “Chu vi, diện tích hình cơ bản” chứ?
+- [ ] **14.** Em nhớ công thức: Công thức chu vi, diện tích hình chữ nhật và hình vuông?
+- [ ] **15.** Em nêu được dấu hiệu nhận biết của dạng “Đếm hình trong lưới” chứ?
+- [ ] **16.** Em nhớ công thức: Quy tắc đếm?
+- [ ] **17.** Em nêu được dấu hiệu nhận biết của dạng “Tìm kích thước từ chu vi, diện tích” chứ?
+- [ ] **18.** Em nhớ công thức: Công thức chu vi, diện tích; phép tính ngược?
+- [ ] **19.** Em nêu được dấu hiệu nhận biết của dạng “Biến thiên chu vi và diện tích” chứ?
+- [ ] **20.** Em nhớ công thức: Chu vi, diện tích hình chữ nhật?
 
 **Chuẩn đạt:** ✔ từ 18/20 câu trở lên.
 
@@ -145,17 +147,18 @@ Trả lời được ngay trong 10 giây thì đánh ✔. Phải nghĩ lâu thì
 
 | # | Lỗi thường gặp | Cách phòng |
 |---:|---|---|
-| 1 | Thấy điểm nằm giữa là kết luận ngay đó là trung điểm. | Đo cả hai đoạn AM và MB rồi mới kết luận. |
-| 2 | Chỉ đếm các ô vuông nhỏ, quên các hình ghép từ nhiều ô. | Kẻ bảng theo cỡ hình: cỡ 1×1, 1×2, 2×2… rồi cộng. |
-| 3 | Chỉ đếm các đoạn nhỏ nhất, quên các đoạn ghép. | Đặt tên các điểm rồi liệt kê từng cặp theo thứ tự. |
-| 4 | Nhầm công thức chu vi với diện tích; quên nhân 2 ở chu vi. | Vẽ hình và ghi số đo lên hình trước khi tính. |
-| 5 | Nhân chu vi một hình vuông với số hình. | Vẽ hình ghép và tô đậm đường bao trước khi tính. |
+| 1 | Chỉ đếm các ô vuông nhỏ, quên các hình ghép từ nhiều ô. | Kẻ bảng theo cỡ hình: cỡ 1×1, 1×2, 2×2… rồi cộng. |
+| 2 | Chỉ đếm các đoạn nhỏ nhất, quên các đoạn ghép. | Đặt tên các điểm rồi liệt kê từng cặp theo thứ tự. |
+| 3 | So bán kính của hình này với đường kính của hình kia. | Đổi hết về bán kính trước khi so sánh. |
+| 4 | Nhân chu vi một hình vuông với số hình. | Vẽ hình ghép và tô đậm đường bao trước khi tính. |
+| 5 | Thấy điểm nằm giữa là kết luận ngay đó là trung điểm. | Đo cả hai đoạn AM và MB rồi mới kết luận. |
 | 6 | Chia chu vi cho cạnh mảnh thay vì chia diện tích cho diện tích. | Kẻ lưới lên hình và đếm thử một hàng. |
-| 7 | So bán kính của hình này với đường kính của hình kia. | Đổi hết về bán kính trước khi so sánh. |
-| 8 | Trừ thẳng chiều dài khỏi chu vi mà chưa chia đôi. | Viết dòng “Nửa chu vi = …” trước khi trừ. |
-| 9 | Cho rằng tăng chiều dài thì diện tích tăng nhiều hơn vì chiều dài lớn hơn. | Vẽ hình cũ nằm trong hình mới và tô phần dôi ra. |
-| 10 | Nhầm công thức chu vi với diện tích. | Vẽ hình và ghi số đo lên hình trước khi tính. |
-| 11 | Chỉ đếm ô nhỏ, quên hình ghép từ nhiều ô. | Kẻ bảng theo cỡ hình rồi cộng. |
+| 7 | Nhầm công thức chu vi với diện tích; quên nhân 2 ở chu vi. | Vẽ hình và ghi số đo lên hình trước khi tính. |
+| 8 | Chỉ đếm ô nhỏ, quên hình ghép từ nhiều ô. | Kẻ bảng theo cỡ hình rồi cộng. |
+| 9 | Trừ thẳng chiều dài khỏi chu vi mà chưa chia đôi. | Viết dòng “Nửa chu vi = …” trước khi trừ. |
+| 10 | Cho rằng tăng chiều dài thì diện tích tăng nhiều hơn vì chiều dài lớn hơn. | Vẽ hình cũ nằm trong hình mới và tô phần dôi ra. |
+| 11 | Nhầm công thức chu vi với diện tích. | Vẽ hình và ghi số đo lên hình trước khi tính. |
+| 12 | Cộng thêm 1 vào số cọc như bài trồng cây trên đoạn thẳng. | Vẽ nhanh hình vuông 4 cạnh, cắm cọc thử rồi đếm. |
 
 ---
 

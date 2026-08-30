@@ -87,43 +87,43 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 
 Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: đây là dạng bài gì, và dấu hiệu nào cho biết điều đó.
 
-**Đề 1.** Trình bày lời giải có câu trả lời cho từng bước. Có 5 can dầu, mỗi can 10 lít. Đổ đều vào các chai 1 lít thì được bao nhiêu chai?
+**Đề 1.** Trình bày lời giải có câu trả lời cho từng bước. Có 8 tấm vải, mỗi tấm dài 5 m. Cắt mỗi tấm đi 1 m. Hỏi còn lại tất cả bao nhiêu mét vải?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 2.** Điền kết quả, viết dạng giờ và phút. 2 giờ 21 phút = … phút
+**Đề 2.** Điền vào chỗ chấm. 6 tấn 8 tạ 50 kg = … kg
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 3.** Điền số thích hợp. 55 ha = … m²
+**Đề 3.** Đổi về cùng đơn vị rồi tính. 33 m 22 cm + 122 cm = … cm
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 4.** Trình bày lời giải có câu trả lời. Một cửa hàng có 20 thùng dầu, mỗi thùng 12 lít. Cửa hàng đã bán 3 thùng. Hỏi cửa hàng còn lại bao nhiêu lít dầu?
+**Đề 4.** Đổi hết về ki-lô-gam trước khi tính. Một kho chứa 7 tấn 8 tạ 86 kg thóc. Đổi ra ki-lô-gam.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 5.** Đổi hết về ki-lô-gam trước khi tính. Một kho chứa 9 tấn 4 tạ 47 kg thóc. Đổi ra ki-lô-gam.
+**Đề 5.** Điền số thích hợp vào chỗ chấm. 39 m² = … cm²
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 6.** Chú ý đơn vị mà đề hỏi. Một xe chở 30 bao muối, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ muối?
+**Đề 6.** Điền số thích hợp. 43 ha = … m²
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 7.** Tính rồi so sánh hai phương án. 11 người làm xong một công việc trong 7 ngày. Nếu có thêm 8 người nữa (làm khoẻ như nhau) thì công việc đó hoàn thành sớm hơn bao nhiêu ngày?
+**Đề 7.** Trả lời ngắn gọn. Tháng 6 năm 2059 có bao nhiêu ngày?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 8.** Điền vào chỗ chấm. 3 188 kg = … tấn … tạ … kg
+**Đề 8.** Điền dấu <, >, = thích hợp. 44 km … 4 145 cm
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 9.** Điền dấu <, >, = thích hợp. 18 dag … 3 879 hg
+**Đề 9.** Chú ý đơn vị mà đề hỏi. Một xe chở 36 bao thóc, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ thóc?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 10.** Điền số thích hợp vào chỗ chấm. 6 300 dm² = … m²
+**Đề 10.** Trình bày lời giải có câu trả lời. Một cửa hàng có 17 thùng dầu, mỗi thùng 15 lít. Cửa hàng đã bán 3 thùng. Hỏi cửa hàng còn lại bao nhiêu lít dầu?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
@@ -134,15 +134,15 @@ Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: 
 | # | Dạng bài | Dấu hiệu |
 |:--:|---|---|
 | 1 | Bài toán đại lượng nhiều bước | Cho số nhóm, giá trị mỗi nhóm và một thao tác thêm bớt |
-| 2 | Đổi và tính toán với đơn vị thời gian | Số đo có chữ “giờ”, “phút”, “giây” |
-| 3 | Đổi đơn vị diện tích | Đơn vị có mũ hai: m², cm², km², ha |
-| 4 | Bài toán đại lượng nhiều bước | Cho số nhóm, giá trị mỗi nhóm và số nhóm đã dùng |
-| 5 | Đại lượng khối lượng, chia phần và làm tròn lên | Số đo nhiều đơn vị; câu hỏi “ít nhất bao nhiêu” |
-| 6 | Bài toán đại lượng có lời văn | Đơn vị trong câu hỏi khác đơn vị trong dữ kiện |
-| 7 | Tỉ lệ nghịch, so sánh hai phương án | Thay đổi số người, hỏi thay đổi thời gian |
-| 8 | Số đo có nhiều đơn vị | Số đo viết dưới dạng “… tấn … tạ … kg” |
-| 9 | So sánh số đo đại lượng | Hai vế có đơn vị khác nhau |
-| 10 | Đổi đơn vị diện tích | Đơn vị có mũ hai, hoặc ha, km² |
+| 2 | Số đo có nhiều đơn vị | Số đo viết dưới dạng “… tấn … tạ … kg” |
+| 3 | Bốn phép tính với số đo | Các số hạng có đơn vị khác nhau trong cùng một phép tính |
+| 4 | Đại lượng khối lượng, chia phần và làm tròn lên | Số đo nhiều đơn vị; câu hỏi “ít nhất bao nhiêu” |
+| 5 | Đổi đơn vị diện tích | Đơn vị có mũ hai, hoặc ha, km² |
+| 6 | Đổi đơn vị diện tích | Đơn vị có mũ hai: m², cm², km², ha |
+| 7 | Lịch và đơn vị thời gian lớn | Đề hỏi về tháng, năm, thế kỉ |
+| 8 | So sánh số đo đại lượng | Hai vế có đơn vị khác nhau |
+| 9 | Bài toán đại lượng có lời văn | Đơn vị trong câu hỏi khác đơn vị trong dữ kiện |
+| 10 | Bài toán đại lượng nhiều bước | Cho số nhóm, giá trị mỗi nhóm và số nhóm đã dùng |
 
 ---
 

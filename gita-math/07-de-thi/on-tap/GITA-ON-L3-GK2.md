@@ -57,70 +57,69 @@ Viết lại từ trí nhớ. Mỗi ý bỏ trống là một chỗ phải ôn l
 
 ## PHẦN C — LUYỆN LẠI THEO TỪNG CỤM · 30 phút · 35 điểm
 
-### Bài 1, (8,8 điểm) Tìm x và tính chất của phép nhân — cụm C09
+### Bài 1, (8,8 điểm) Đọc chỉ số công tơ điện — cụm C09
 
-Tìm x hoặc điền số thích hợp.
+Công tơ điện nhà bạn Ngọc đầu tháng chỉ **21 869**, cuối tháng chỉ **22 020**. Dùng hai số này cho cả bài.
 
-a) 7 × 179 = 179 × …
-b) x − 194 = 194
-c) x + 233 = 499
-d) 300 × 1 × 0 = …
-e) 213 × 1 × 0 = …
+a) Chỉ số cuối tháng là 22 020. Số ấy gồm mấy chục nghìn, mấy nghìn, mấy trăm, mấy chục và mấy đơn vị?
+b) Số điện dùng trong tháng bằng chỉ số cuối trừ chỉ số đầu. Nhà bạn ấy dùng bao nhiêu kW·h?
+c) Làm tròn chỉ số cuối 22 020 đến hàng nghìn.
+d) Nhà bên cạnh có chỉ số cuối là 28 420. Chỉ số nào lớn hơn?
+e) Tháng sau chỉ số cuối là 22 248. Tháng sau nhà bạn ấy dùng nhiều hơn hay ít hơn tháng này, và chênh bao nhiêu kW·h?
 
 ### Bài 2, (8,8 điểm) Chu vi và diện tích hình chữ nhật, hình vuông — cụm C10
 
 Tính và ghi rõ đơn vị.
 
-a) Hình chữ nhật dài 22 cm, rộng 12 cm. Tính chu vi.
-b) Hình chữ nhật dài 22 cm, rộng 3 cm. Tính diện tích.
-c) Hình vuông cạnh 21 cm. Tính diện tích.
-d) Hình vuông cạnh 23 cm. Tính chu vi.
-e) Hình vuông cạnh 38 cm. Tính chu vi.
+a) Hình vuông cạnh 31 cm. Tính chu vi.
+b) Hình chữ nhật dài 34 cm, rộng 6 cm. Tính chu vi.
+c) Hình vuông cạnh 35 cm. Tính diện tích.
+d) Hình chữ nhật dài 9 cm, rộng 3 cm. Tính diện tích.
+e) Hình chữ nhật dài 21 cm, rộng 2 cm. Tính diện tích.
 
-### Bài 3, (8,8 điểm) Điền số còn thiếu trong dãy — cụm C11
+### Bài 3, (8,8 điểm) Đếm số hạng của dãy cách đều — cụm C11
 
-Điền số thích hợp vào chỗ chấm.
+Đếm số số hạng của mỗi dãy.
 
-a) 28, …, 40, 46, 52, 58
-b) 24, 27, 30, …, 36, 39
-c) 16, 19, …, 25, 28, 31
-d) 20, 24, 28, …, 36, 40
-e) 15, 18, …, 24, 27, 30
+a) Dãy 20, 24, 28, …, 80 có bao nhiêu số hạng?
+b) Dãy 3, 7, 11, …, 67 có bao nhiêu số hạng?
+c) Dãy 6, 9, 12, …, 33 có bao nhiêu số hạng?
+d) Dãy 20, 24, 28, …, 60 có bao nhiêu số hạng?
+e) Dãy 15, 18, 21, …, 87 có bao nhiêu số hạng?
 
 ### Bài 4, (8,8 điểm) Tổng – tỉ, hiệu – tỉ và so sánh một phần mấy — cụm C12
 
 Vẽ sơ đồ đoạn thẳng cho mọi bài trước khi tính.
 
-a) Tổ Ba trồng 24 cây, đội Một trồng 72 cây. Số cây của tổ Ba bằng một phần mấy số cây của đội Một?
-b) Tổ Hai và tổ Ba trồng được tất cả 39 cây. Số cây của tổ Ba gấp 2 lần số cây của tổ Hai. Mỗi tổ trồng bao nhiêu cây?
-c) Tổ Hai trồng nhiều hơn tổ Một 12 cây, và số cây của tổ Hai gấp 2 lần số cây của tổ Một. Mỗi tổ trồng bao nhiêu cây?
-d) Tổ Ba và nhóm Hoa Phượng trồng được tất cả 105 cây. Số cây của nhóm Hoa Phượng gấp 4 lần số cây của tổ Ba. Mỗi tổ trồng bao nhiêu cây?
-e) Đội Hai trồng 5 cây, tổ Hai trồng 20 cây. Số cây của đội Hai bằng một phần mấy số cây của tổ Hai?
+a) Nhóm Hoa Phượng và tổ Một trồng được tất cả 110 cây. Số cây của tổ Một gấp 4 lần số cây của nhóm Hoa Phượng. Mỗi tổ trồng bao nhiêu cây?
+b) Nhóm Sao Mai trồng 24 cây, tổ Một trồng 96 cây. Số cây của nhóm Sao Mai bằng một phần mấy số cây của tổ Một?
+c) Tổ Hai trồng nhiều hơn đội Một 27 cây, và số cây của tổ Hai gấp 4 lần số cây của đội Một. Mỗi tổ trồng bao nhiêu cây?
+d) Nhóm Sao Mai trồng nhiều hơn tổ Ba 16 cây, và số cây của nhóm Sao Mai gấp 3 lần số cây của tổ Ba. Mỗi tổ trồng bao nhiêu cây?
 
 
 ## PHẦN D — BÀI TỔNG HỢP LIÊN CỤM · 25 phút · 30 điểm
 
 Mỗi bài dưới đây phải dùng kỹ thuật của **hai chuyên đề khác nhau**.
 
-### Bài 1, (15,0 điểm) Đếm hình trong lưới ô vuông — nối nhóm A với nhóm F
+### Bài 1, (15,0 điểm) Lập số có ba chữ số khác nhau — nối nhóm A với nhóm F
 
-Cho lưới gồm 4 hàng và 3 cột ô vuông nhỏ bằng nhau.
+Cho ba chữ số **1, 7, 9**.
+
+a) Viết tất cả các số có ba chữ số khác nhau lập được, từ bé đến lớn.
+b) Lập được bao nhiêu số?
+c) Số lớn nhất là số nào?
+d) Số bé nhất là số nào?
+e) Hiệu của số lớn nhất và số bé nhất bằng bao nhiêu?
+
+### Bài 2, (15,0 điểm) Đếm hình trong lưới ô vuông — nối nhóm F với nhóm C
+
+Cho lưới gồm 2 hàng và 2 cột ô vuông nhỏ bằng nhau.
 
 a) Lưới có bao nhiêu ô vuông nhỏ?
 b) Lưới có bao nhiêu đường kẻ ngang, bao nhiêu đường kẻ dọc?
 c) Có tất cả bao nhiêu hình chữ nhật (kể cả hình vuông)?
 d) Có bao nhiêu hình vuông?
 e) Có bao nhiêu hình chữ nhật không phải hình vuông?
-
-### Bài 2, (15,0 điểm) Tìm quy luật của dãy số — nối nhóm F với nhóm C
-
-Tìm quy luật rồi viết số hạng tiếp theo.
-
-a) 1, 3, 5, 7, 9, …
-b) 6, 7, 9, 12, 16, …
-c) 6, 18, 54, 162, 486, …
-d) 2, 4, 8, 16, 32, …
-e) 1, 2, 4, 7, 11, …
 
 
 ## PHẦN E — BÀI PHÂN HOÁ · 15 phút · 15 điểm
@@ -131,18 +130,18 @@ Dành cho học viên nhắm điểm 9 – 10. Làm hết phần A đến D rồ
 
 Vẽ hình minh hoạ trước khi tính.
 
-a) Đoạn đường dài 36 m, trồng cây cách nhau 2 m, trồng cả hai đầu. Cần bao nhiêu cây?
-b) Đoạn đường dài 90 m, trồng cây cách nhau 5 m, chỉ trồng ở một đầu. Cần bao nhiêu cây?
-c) Đoạn đường dài 52 m, trồng cây cách nhau 4 m, không trồng ở hai đầu. Cần bao nhiêu cây?
-d) Quanh một cái ao có chu vi 64 m, trồng cây cách nhau 4 m. Cần bao nhiêu cây?
+a) Đoạn đường dài 42 m, trồng cây cách nhau 3 m, trồng cả hai đầu. Cần bao nhiêu cây?
+b) Quanh một cái ao có chu vi 32 m, trồng cây cách nhau 2 m. Cần bao nhiêu cây?
+c) Đoạn đường dài 24 m, trồng cây cách nhau 4 m, không trồng ở hai đầu. Cần bao nhiêu cây?
+d) Đoạn đường dài 85 m, trồng cây cách nhau 5 m, chỉ trồng ở một đầu. Cần bao nhiêu cây?
 
 ### Bài 2, (7,5 điểm — mức M5) Diện tích thay đổi khi kích thước thay đổi
 
-Một hình chữ nhật có chiều dài 14 cm, chiều rộng 7 cm.
+Một hình chữ nhật có chiều dài 20 cm, chiều rộng 10 cm.
 
 a) Tính chu vi hình chữ nhật đó.
 b) Tính diện tích hình chữ nhật đó.
-c) Nếu tăng chiều dài thêm 3 cm, giữ nguyên chiều rộng thì diện tích tăng thêm bao nhiêu?
+c) Nếu tăng chiều dài thêm 2 cm, giữ nguyên chiều rộng thì diện tích tăng thêm bao nhiêu?
 d) Khi đó chu vi tăng thêm bao nhiêu?
 
 
@@ -155,72 +154,71 @@ d) Khi đó chu vi tăng thêm bao nhiêu?
 ### Phần C
 
 **Bài 1.**
-a) **7**
-b) **x = 388**
-c) **x = 266**
-d) **0**
-e) **0**
+a) **2 chục nghìn, 2 nghìn, 0 trăm, 2 chục, 0 đơn vị**
+b) **22 020 − 21 869 = 151 kW·h**
+c) **22 000**
+d) **28 420**
+e) **nhiều hơn 77 kW·h**
 
 **Bài 2.**
-a) **68 cm**
-b) **66 cm²**
-c) **441 cm²**
-d) **92 cm**
-e) **152 cm**
+a) **124 cm**
+b) **80 cm**
+c) **1 225 cm²**
+d) **27 cm²**
+e) **42 cm²**
 
 **Bài 3.**
-a) **34**
-b) **33**
-c) **22**
-d) **32**
-e) **21**
+a) **16**
+b) **17**
+c) **10**
+d) **11**
+e) **25**
 
 **Bài 4.**
-a) **1 phần 3**
-b) **tổ Hai: 13 cây, tổ Ba: 26 cây**
-c) **tổ Một: 12 cây, tổ Hai: 24 cây**
-d) **tổ Ba: 21 cây, nhóm Hoa Phượng: 84 cây**
-e) **1 phần 4**
+a) **nhóm Hoa Phượng: 22 cây, tổ Một: 88 cây**
+b) **1 phần 4**
+c) **đội Một: 9 cây, tổ Hai: 36 cây**
+d) **tổ Ba: 8 cây, nhóm Sao Mai: 24 cây**
 
 
 ### Phần D
 
 **Bài 1.**
-a) **12**
-b) **5 đường ngang, 4 đường dọc**
-c) **60**
-d) **20**
-e) **40**
+a) **179 · 197 · 719 · 791 · 917 · 971**
+b) **6**
+c) **971**
+d) **179**
+e) **792**
 
 **Bài 2.**
-a) **11**
-b) **21**
-c) **1 458**
-d) **64**
-e) **16**
+a) **4**
+b) **3 đường ngang, 3 đường dọc**
+c) **9**
+d) **5**
+e) **4**
 
 
 ### Phần E
 
 **Bài 1.**
-a) **19**
-b) **18**
-c) **12**
-d) **16**
+a) **15**
+b) **16**
+c) **5**
+d) **17**
 
 Cách giải mẫu:
-1. Xét ý a: Đoạn đường dài 36 m, trồng cây cách nhau 2 m, trồng cả hai đầu. Cần bao nhiêu cây?
+1. Xét ý a: Đoạn đường dài 42 m, trồng cây cách nhau 3 m, trồng cả hai đầu. Cần bao nhiêu cây?
 2. Đọc vị: đây là dạng **Bài toán trồng cây**; dấu hiệu là “Trồng cây”, “cột điện”, “quanh ao”.
 3. Kiến thức phải dùng: Quan hệ số cây – số khoảng.
 4. Cách làm: Số khoảng rồi chọn công thức theo trường hợp.
 5. Lối tắt: Khép kín thì số cây bằng đúng số khoảng.
-6. Kết quả: **19**.
+6. Kết quả: **15**.
 
 **Bài 2.**
-a) **42 cm**
-b) **98 cm²**
-c) **21 cm²**
-d) **6 cm**
+a) **60 cm**
+b) **200 cm²**
+c) **20 cm²**
+d) **4 cm**
 
 Cách giải mẫu:
 1. Xét ý a: Tính chu vi hình chữ nhật đó.
@@ -228,7 +226,7 @@ Cách giải mẫu:
 3. Kiến thức phải dùng: Chu vi, diện tích hình chữ nhật.
 4. Cách làm: Vẽ hình chồng, xác định phần dôi ra.
 5. Lối tắt: Chu vi tăng 2 × k dù tăng chiều nào; diện tích thì phụ thuộc chiều còn lại.
-6. Kết quả: **42 cm**.
+6. Kết quả: **60 cm**.
 
 
 ---
@@ -239,9 +237,9 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 
 | Bài | Đo cái gì | Sai bài này nghĩa là | Học lại ở đâu |
 |:--:|---|---|---|
-| C1 | Cụm C09 — Số có bốn chữ số và số có năm chữ số | Áp dụng quy tắc của số trừ cho số bị trừ. | Phiếu `NC` và `OT` của cụm C09 |
+| C1 | Cụm C09 — Số có bốn chữ số và số có năm chữ số | Lấy thẳng chỉ số cuối làm số điện đã dùng. | Phiếu `NC` và `OT` của cụm C09 |
 | C2 | Cụm C10 — Diện tích, ghép hình và đếm hình | Nhầm công thức chu vi với diện tích. | Phiếu `NC` và `OT` của cụm C10 |
-| C3 | Cụm C11 — Dãy số và quy luật | Lấy hiệu hai số cách nhau một chỗ trống làm khoảng cách. | Phiếu `NC` và `OT` của cụm C11 |
+| C3 | Cụm C11 — Dãy số và quy luật | Quên cộng 1. | Phiếu `NC` và `OT` của cụm C11 |
 | C4 | Cụm C12 — Trung bình cộng, mua bán và giải toán tổng hợp | Dùng nhầm công thức tổng – tỉ cho bài hiệu – tỉ. | Phiếu `NC` và `OT` của cụm C12 |
 | D1 | Nối nhóm A với nhóm F | Làm được từng chuyên đề riêng nhưng chưa ghép được hai chuyên đề | Phần IV và V của phiếu `OT` các cụm liên quan |
 | D2 | Nối nhóm F với nhóm C | Làm được từng chuyên đề riêng nhưng chưa ghép được hai chuyên đề | Phần IV và V của phiếu `OT` các cụm liên quan |

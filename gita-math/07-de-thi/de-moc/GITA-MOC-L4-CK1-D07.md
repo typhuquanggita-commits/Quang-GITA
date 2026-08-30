@@ -30,58 +30,56 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Trả lời nhanh, mỗi ý không quá 20 giây.
 
-a) 5 632 073 … 5 629 162
-b) Chữ số hàng triệu của số 7 641 993 có giá trị bằng bao nhiêu?
-c) Làm tròn 7 901 413 đến hàng trăm.
-d) Số liền trước và số liền sau của 7 713 256 là những số nào?
-e) Làm tròn 8 241 582 đến hàng trăm.
+a) Làm tròn 4 947 041 đến hàng trăm.
+b) Số liền trước và số liền sau của 4 608 191 là những số nào?
+c) Chữ số hàng chục nghìn của số 2 491 191 có giá trị bằng bao nhiêu?
+d) 6 506 367 … 6 510 948
+e) 8 296 996 … 8 298 531
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
 Điền dấu <, >, = thích hợp.
 
-a) 89 m … 4 149 hm
-b) 34 km² … 6 379 ha
-c) 26 dag … 6 759 kg
-d) 41 dm … 1 638 dam
-e) 33 yến … 8 085 g
-f) 69 m² … 3 318 km²
+a) 11 dm² … 1 835 cm²
+b) 26 hg … 8 619 kg
+c) 29 km … 1 374 hm
+d) 75 g … 6 355 yến
+e) 79 ha … 3 086 cm²
+f) 90 dam … 7 698 dm
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
 Giải bằng cách rút về đơn vị hoặc dùng tỉ số.
 
-a) Mua 7 quyển vở hết 308 nghìn đồng. Với 220 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
-b) Mua 4 quyển vở hết 196 nghìn đồng. Với 392 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
-c) Mua 10 quyển vở hết 620 nghìn đồng. Mua 12 quyển vở như thế hết bao nhiêu nghìn đồng?
-d) Mua 12 quyển vở hết 864 nghìn đồng. Mua 18 quyển vở như thế hết bao nhiêu nghìn đồng?
-e) Mua 13 quyển vở hết 793 nghìn đồng. Mua 26 quyển vở như thế hết bao nhiêu nghìn đồng?
-f) Mua 8 quyển vở hết 320 nghìn đồng. Mua 7 quyển vở như thế hết bao nhiêu nghìn đồng?
+a) Mua 12 quyển vở hết 936 nghìn đồng. Mua 13 quyển vở như thế hết bao nhiêu nghìn đồng?
+b) Mua 5 quyển vở hết 90 nghìn đồng. Với 162 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+c) Mua 9 quyển vở hết 576 nghìn đồng. Với 192 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+d) Mua 14 quyển vở hết 1 022 nghìn đồng. Với 657 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
 Chú ý đơn vị mà đề hỏi.
 
-a) Một xe chở 40 bao đường, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ đường?
-b) Một xe chở 16 bao phân bón, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ phân bón?
-c) Một xe chở 33 bao thóc, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ thóc?
-d) Một xe chở 23 bao muối, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ muối?
-e) Một xe chở 31 bao xi măng, mỗi bao 50 kg. Hỏi xe chở bao nhiêu tạ xi măng?
-f) Một xe chở 19 bao đường, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ đường?
+a) Một xe chở 12 bao phân bón, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ phân bón?
+b) Một xe chở 31 bao gạo, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ gạo?
+c) Một xe chở 35 bao gạo, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ gạo?
+d) Một xe chở 13 bao xi măng, mỗi bao 40 kg. Hỏi xe chở bao nhiêu tạ xi măng?
+e) Một xe chở 27 bao muối, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ muối?
+f) Một xe chở 40 bao phân bón, mỗi bao 50 kg. Hỏi xe chở bao nhiêu tạ phân bón?
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
 Bài mô phỏng phần tự luận của đề thi chất lượng cao.
 
-a) Ba số có tổng 276. Số thứ hai hơn số thứ nhất 8, số thứ ba hơn số thứ hai 8. Tìm số thứ hai.
+a) Ba số có tổng 144. Số thứ hai hơn số thứ nhất 10, số thứ ba hơn số thứ hai 10. Tìm số thứ hai.
 b) Tìm số thứ nhất.
 c) Tìm số thứ ba.
 d) Vì sao số thứ hai bằng tổng ba số chia cho 3?
-e) Hai số khác có tổng 105 và số bé bằng 3 phần 4 số lớn. Tìm số bé.
+e) Hai số khác có tổng 90 và số bé bằng 2 phần 3 số lớn. Tìm số bé.
 f) Tìm số lớn.
 
 
@@ -92,20 +90,20 @@ f) Tìm số lớn.
 
 ### Bài 1, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **>**
-b) **7 000 000**
-c) **7 901 400**
-d) **7 713 255 và 7 713 257**
-e) **8 241 600**
+a) **4 947 000**
+b) **4 608 190 và 4 608 192**
+c) **90 000**
+d) **<**
+e) **<**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 5 632 073 … 5 629 162
+1. Xét ý a: Làm tròn 4 947 041 đến hàng trăm.
 2. Đọc vị: đây là dạng **Ôn tập số tự nhiên**; dấu hiệu là Câu hỏi ngắn về so sánh, hàng, số liền kề, làm tròn.
 3. Kiến thức phải dùng: Thứ tự số tự nhiên, giá trị hàng, quy tắc làm tròn.
 4. Cách làm: Đếm chữ số, xét hàng từ trái sang phải.
 5. Lối tắt: Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số.
-6. Kết quả: **>**.
+6. Kết quả: **4 947 000**.
 
 *Lỗi hay mắc:* So sánh từ hàng đơn vị; hoặc làm tròn nhìn nhầm sang chính hàng cần làm tròn.
 
@@ -116,11 +114,11 @@ b) **<**
 c) **<**
 d) **<**
 e) **>**
-f) **<**
+f) **>**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 89 m … 4 149 hm
+1. Xét ý a: 11 dm² … 1 835 cm²
 2. Đọc vị: đây là dạng **So sánh số đo đại lượng**; dấu hiệu là Hai vế có đơn vị khác nhau.
 3. Kiến thức phải dùng: Bảng đơn vị đo, so sánh số tự nhiên.
 4. Cách làm: Đổi về cùng đơn vị rồi so sánh.
@@ -129,63 +127,61 @@ f) **<**
 
 *Lỗi hay mắc:* So thẳng hai con số, bỏ qua đơn vị.
 
-### Bài 3, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 3, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **5 quyển**
-b) **8 quyển**
-c) **744 nghìn đồng**
-d) **1 296 nghìn đồng**
-e) **1 586 nghìn đồng**
-f) **280 nghìn đồng**
+a) **1 014 nghìn đồng**
+b) **9 quyển**
+c) **3 quyển**
+d) **9 quyển**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Mua 7 quyển vở hết 308 nghìn đồng. Với 220 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+1. Xét ý a: Mua 12 quyển vở hết 936 nghìn đồng. Mua 13 quyển vở như thế hết bao nhiêu nghìn đồng?
 2. Đọc vị: đây là dạng **Tỉ lệ thuận, rút về đơn vị**; dấu hiệu là Hai đại lượng cùng tăng cùng giảm.
 3. Kiến thức phải dùng: Đại lượng tỉ lệ thuận.
 4. Cách làm: Rút về đơn vị hoặc dùng tỉ số.
 5. Lối tắt: Nếu số lượng mới gấp số lượng cũ một số nguyên lần thì nhân thẳng, không cần rút về đơn vị.
-6. Kết quả: **5 quyển**.
+6. Kết quả: **1 014 nghìn đồng**.
 
 *Lỗi hay mắc:* Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch.
 
 ### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **12 tạ**
-b) **4 tạ 80 kg**
-c) **8 tạ 25 kg**
-d) **13 tạ 80 kg**
-e) **15 tạ 50 kg**
-f) **11 tạ 40 kg**
+a) **3 tạ**
+b) **7 tạ 75 kg**
+c) **10 tạ 50 kg**
+d) **5 tạ 20 kg**
+e) **6 tạ 75 kg**
+f) **20 tạ**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Một xe chở 40 bao đường, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ đường?
+1. Xét ý a: Một xe chở 12 bao phân bón, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ phân bón?
 2. Đọc vị: đây là dạng **Bài toán đại lượng có lời văn**; dấu hiệu là Đơn vị trong câu hỏi khác đơn vị trong dữ kiện.
 3. Kiến thức phải dùng: Nhân, chia số tự nhiên; đổi đơn vị khối lượng.
 4. Cách làm: Tính theo đơn vị dữ kiện rồi đổi ở bước cuối.
 5. Lối tắt: 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ.
-6. Kết quả: **12 tạ**.
+6. Kết quả: **3 tạ**.
 
 *Lỗi hay mắc:* Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ.
 
 ### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **92**
-b) **84**
-c) **100**
+a) **48**
+b) **38**
+c) **58**
 d) **vì ba số cách đều nên số ở giữa là trung bình cộng**
-e) **45**
-f) **60**
+e) **36**
+f) **54**
 
 **Cách giải mẫu:**
 
-1. Ba số cách đều nhau 8 đơn vị nên số ở giữa là trung bình cộng.
-2. Bước 1 — số thứ hai: 276 : 3 = 92.
-3. Bước 2 — số thứ nhất: 92 − 8 = 84.
-4. Bước 3 — số thứ ba: 92 + 8 = 100.
-5. Thử lại: 84 + 92 + 100 = 276 ✓
-6. Đáp số: **84, 92, 100**.
+1. Ba số cách đều nhau 10 đơn vị nên số ở giữa là trung bình cộng.
+2. Bước 1 — số thứ hai: 144 : 3 = 48.
+3. Bước 2 — số thứ nhất: 48 − 10 = 38.
+4. Bước 3 — số thứ ba: 48 + 10 = 58.
+5. Thử lại: 38 + 48 + 58 = 144 ✓
+6. Đáp số: **38, 48, 58**.
 
 *Lỗi hay mắc:* Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi.
 

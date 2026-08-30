@@ -28,59 +28,60 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ### Bài 1. (2 điểm — 10 phút) Tính và điền kết quả
 
-Cho số **88 075**.
+Cho số **55 827**.
 
-a) Số 88 075 có bao nhiêu chữ số?
+a) Số 55 827 có bao nhiêu chữ số?
 b) Chữ số hàng đơn vị là chữ số nào?
 c) Chữ số hàng trăm là chữ số nào?
 d) Chữ số hàng nghìn là chữ số nào?
-e) Viết số 88 075 thành tổng các giá trị hàng.
-f) Tổng các chữ số của số 88 075 bằng bao nhiêu?
+e) Viết số 55 827 thành tổng các giá trị hàng.
+f) Tổng các chữ số của số 55 827 bằng bao nhiêu?
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
-Ghi rõ đơn vị đồng ở mọi kết quả.
+Đặt tính rồi tính.
 
-a) Mua 6 quyển vở, mỗi quyển 3 000 đồng. Hết bao nhiêu tiền?
-b) Đổi một tờ 50 000 đồng ra các tờ 2 000 đồng thì được mấy tờ?
-c) Mua 3 quyển vở, mỗi quyển 8 000 đồng. Đưa cô bán hàng một tờ 50 000 đồng. Cô phải trả lại bao nhiêu tiền?
-d) Mua 5 quyển vở, mỗi quyển 3 000 đồng. Hết bao nhiêu tiền?
-e) Mua 3 quyển vở, mỗi quyển 12 000 đồng. Đưa cô bán hàng một tờ 50 000 đồng. Cô phải trả lại bao nhiêu tiền?
+a) 3 070 : 4
+b) 146 × 3
+c) 7 168 : 8
+d) 765 × 8
+e) 704 : 4
+f) 385 : 3
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
-Vẽ sơ đồ trước, tính sau. Không vẽ thì không được tính.
+Giải từng bài toán nhỏ.
 
-a) Yến và An có tất cả 62 viên bi. Yến có nhiều hơn An 18 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
-b) Yến và Minh có tất cả 106 viên bi. Yến có nhiều hơn Minh 12 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
-c) Bình và Hùng có tất cả 22 viên bi. Bình có nhiều hơn Hùng 4 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
-d) Tuấn và Minh có tất cả 56 viên bi. Tuấn có nhiều hơn Minh 16 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+a) Trung bình mỗi ngày cửa hàng bán được 117 kg gạo. 4 ngày đầu bán được 129, 126, 114, 110 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
+b) 3 ngày đầu tuần một cửa hàng bán được lần lượt 182, 189, 199 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
+c) Trung bình mỗi ngày cửa hàng bán được 227 kg gạo. 3 ngày đầu bán được 239, 233, 219 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
+d) Trung bình mỗi ngày bán được 217 kg gạo. Hỏi 3 ngày bán được tất cả bao nhiêu ki-lô-gam?
+e) 6 ngày đầu tuần một cửa hàng bán được lần lượt 50, 36, 40, 48, 40, 32 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
-Vẽ hình và kẻ lưới ra nháp.
+Ghi kết quả theo giờ và phút.
 
-a) Một hình chữ nhật 12 cm × 10 cm được phủ kín bằng các hình vuông cạnh 1 cm. Cần bao nhiêu hình vuông?
-b) Diện tích hình chữ nhật ấy bằng bao nhiêu?
-c) Diện tích mỗi hình vuông nhỏ bằng bao nhiêu?
-d) Chia hình chữ nhật ấy thành 2 phần bằng nhau thì mỗi phần có diện tích bao nhiêu?
-e) Chia thành 4 phần bằng nhau thì mỗi phần bao nhiêu?
-f) Nếu ghép hai hình chữ nhật ấy theo chiều dài thì hình mới có chu vi bao nhiêu?
+a) 3 giờ 20 phút = … phút
+b) Bây giờ là 9 giờ 50 phút. Cách đây 10 phút là mấy giờ?
+c) Bây giờ là 11 giờ 40 phút. Sau 30 phút nữa là mấy giờ?
+d) Bây giờ là 3 giờ 50 phút. Sau 45 phút nữa là mấy giờ?
+e) 2 giờ 20 phút = … phút
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
-Chú ý: chuyển đi thì bên này giảm, bên kia tăng.
+Mỗi ý một phép tính, trả lời gọn.
 
-a) Khánh và Đức có tất cả 48 quyển vở. Nếu Khánh cho Đức 7 quyển thì hai bạn có số vở bằng nhau. Hỏi lúc đầu Khánh có bao nhiêu quyển?
-b) Sau khi cho, mỗi bạn có bao nhiêu quyển vở?
-c) Lúc đầu Đức có bao nhiêu quyển vở?
-d) Lúc đầu Khánh hơn Đức bao nhiêu quyển?
-e) Một tổ có 5 bạn, mỗi bạn gấp được 6 bông hoa trong một giờ. Hỏi cả tổ gấp được bao nhiêu bông hoa trong một giờ?
-f) Cả tổ phải gấp 90 bông hoa thì làm trong mấy giờ?
+a) Nhóm Sao Mai có 47 lá cờ, đội Hai có gấp 3 lần nhóm Sao Mai. Đội Hai có bao nhiêu lá cờ?
+b) Cả hai tổ có bao nhiêu lá cờ?
+c) Đội Hai nhiều hơn nhóm Sao Mai bao nhiêu lá cờ?
+d) Nếu nhóm Sao Mai được cho thêm 16 lá cờ thì nhóm Sao Mai có bao nhiêu lá?
+e) Khi đó đội Hai còn nhiều hơn nhóm Sao Mai bao nhiêu lá?
+f) Phải cho nhóm Sao Mai thêm bao nhiêu lá nữa thì hai tổ bằng nhau?
 
 
 ---
@@ -91,97 +92,99 @@ f) Cả tổ phải gấp 90 bông hoa thì làm trong mấy giờ?
 ### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
 a) **5**
-b) **5**
-c) **0**
-d) **8**
-e) **80 000 + 8 000 + 70 + 5**
-f) **28**
+b) **7**
+c) **8**
+d) **5**
+e) **50 000 + 5 000 + 800 + 20 + 7**
+f) **27**
 
 **Cách giải mẫu:**
 
 1. Đếm từ phải sang trái: đơn vị, chục, trăm, nghìn, chục nghìn.
-2. Số 88 075 có 5 chữ số.
-3. Chữ số hàng đơn vị là chữ số cuối cùng bên phải: 5.
-4. Viết thành tổng: 80 000 + 8 000 + 70 + 5.
-5. Cộng các chữ số: 8 + 8 + 0 + 7 + 5 = 28.
+2. Số 55 827 có 5 chữ số.
+3. Chữ số hàng đơn vị là chữ số cuối cùng bên phải: 7.
+4. Viết thành tổng: 50 000 + 5 000 + 800 + 20 + 7.
+5. Cộng các chữ số: 5 + 5 + 8 + 2 + 7 = 27.
 6. Đáp số ý a: **5 chữ số**.
 
 *Lỗi hay mắc:* Đếm hàng từ trái sang phải nên lệch hàng.
 
-### Bài 2, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 2, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **18 000 đồng**
-b) **25 tờ**
-c) **26 000 đồng**
-d) **15 000 đồng**
-e) **14 000 đồng**
-
-**Cách giải mẫu:**
-
-1. Xét ý a: Mua 6 quyển vở, mỗi quyển 3 000 đồng. Hết bao nhiêu tiền?
-2. Đọc vị: đây là dạng **Bài toán tiền tệ hai bước**; dấu hiệu là “Đưa … đồng”, “trả lại”, “đổi ra tờ …”.
-3. Kiến thức phải dùng: Nhân, trừ với số tròn nghìn; mệnh giá tiền Việt Nam.
-4. Cách làm: Tính tiền hàng rồi trừ; đổi tiền thì chia.
-5. Lối tắt: Thử lại bằng cách cộng tiền hàng với tiền trả lại, phải đúng bằng tiền đưa.
-6. Kết quả: **18 000 đồng**.
-
-*Lỗi hay mắc:* Lấy tiền đưa trừ ngay giá một quyển vở.
-
-### Bài 3, (2 điểm — mỗi ý 0,5 điểm)
-
-a) **Yến: 40 viên, An: 22 viên**
-b) **Yến: 59 viên, Minh: 47 viên**
-c) **Bình: 13 viên, Hùng: 9 viên**
-d) **Tuấn: 36 viên, Minh: 20 viên**
+a) **767 dư 2**
+b) **438**
+c) **896**
+d) **6 120**
+e) **176**
+f) **128 dư 1**
 
 **Cách giải mẫu:**
 
-1. Vẽ hai đoạn thẳng: đoạn của Yến dài hơn đoạn của An đúng 18 viên.
-2. Bước 1 — nếu bớt 18 viên của Yến thì hai đoạn bằng nhau, tổng mới là 62 − 18 = 44 (viên).
-3. Bước 2 — chia đôi tổng mới được số bi của An: 44 : 2 = 22 (viên).
-4. Bước 3 — số bi của Yến: 22 + 18 = 40 (viên).
-5. Thử lại: 40 + 22 = 62 ✓ và 40 − 22 = 18 ✓
-6. Đáp số: **Yến 40 viên, An 22 viên**.
+1. Xét ý a: 3 070 : 4
+2. Đọc vị: đây là dạng **Nhân, chia với số có một chữ số**; dấu hiệu là Số bị chia có hai hoặc ba chữ số, số chia một chữ số.
+3. Kiến thức phải dùng: Kĩ thuật đặt tính nhân, chia.
+4. Cách làm: Đặt tính, tính theo cột.
+5. Lối tắt: Ước lượng bằng cách làm tròn để phát hiện sai về độ lớn.
+6. Kết quả: **767 dư 2**.
 
-*Lỗi hay mắc:* Chia đôi tổng ngay rồi cộng hiệu vào cả hai số.
+*Lỗi hay mắc:* Quên chữ số 0 ở giữa thương nên thương thiếu chữ số.
 
-### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 3, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **120**
-b) **120 cm²**
-c) **1 cm²**
-d) **60 cm²**
-e) **30 cm²**
-f) **64 cm**
+a) **106 kg**
+b) **190 kg**
+c) **217 kg**
+d) **651 kg**
+e) **41 kg**
 
 **Cách giải mẫu:**
 
-1. Bước 1 — diện tích hình chữ nhật: 12 × 10 = 120 (cm²).
-2. Bước 2 — diện tích một hình vuông nhỏ: 1 × 1 = 1 (cm²).
-3. Bước 3 — số hình vuông cần dùng: 120 : 1 = 120 (hình).
-4. Kiểm tra: xếp được 12 hàng, mỗi hàng 10 hình — đúng 120 hình ✓
-5. Đáp số: **120 hình vuông**.
+1. Xét ý a: Trung bình mỗi ngày cửa hàng bán được 117 kg gạo. 4 ngày đầu bán được 129, 126, 114, 110 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
+2. Đọc vị: đây là dạng **Ba dạng bài trung bình cộng**; dấu hiệu là Cụm “trung bình mỗi …”.
+3. Kiến thức phải dùng: Quan hệ tổng – số lượng – trung bình cộng.
+4. Cách làm: Đi qua tổng làm trung gian.
+5. Lối tắt: Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng.
+6. Kết quả: **106 kg**.
 
-*Lỗi hay mắc:* Chia chu vi cho cạnh mảnh thay vì chia diện tích cho diện tích.
+*Lỗi hay mắc:* Đi tìm ngay số còn thiếu mà chưa tính tổng.
+
+### Bài 4, (2 điểm — mỗi ý 0,4 điểm)
+
+a) **200**
+b) **9 giờ 40 phút**
+c) **12 giờ 10 phút**
+d) **4 giờ 35 phút**
+e) **140**
+
+**Cách giải mẫu:**
+
+1. Xét ý a: 3 giờ 20 phút = … phút
+2. Đọc vị: đây là dạng **Tính thời gian trong ngày**; dấu hiệu là Có chữ “giờ”, “phút”, “sau … phút nữa”.
+3. Kiến thức phải dùng: Quan hệ giờ – phút.
+4. Cách làm: Quy về phút, tính, đổi lại.
+5. Lối tắt: Cộng tròn giờ trước, cộng phút lẻ sau.
+6. Kết quả: **200**.
+
+*Lỗi hay mắc:* Cộng phần phút thành hơn 60 mà quên đổi thành giờ.
 
 ### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **31 quyển**
-b) **24 quyển**
-c) **17 quyển**
-d) **14 quyển**
-e) **30 bông**
-f) **3 giờ**
+a) **141**
+b) **188**
+c) **94**
+d) **63**
+e) **78**
+f) **94**
 
 **Cách giải mẫu:**
 
-1. Sau khi cho, hai bạn bằng nhau, nên mỗi bạn có 48 : 2 = 24 (quyển).
-2. Khánh đã cho đi 7 quyển, nên lúc đầu Khánh có 24 + 7 = 31 (quyển).
-3. Lúc đầu Đức có 48 − 31 = 17 (quyển).
-4. Hiệu lúc đầu: 31 − 17 = 14 (quyển) — đúng bằng hai lần số vở đã chuyển.
-5. Đáp số: **lúc đầu Khánh có 31 quyển**.
+1. Bước 1 — số cờ của đội Hai: 47 × 3 = 141 (lá).
+2. Bước 2 — cả hai tổ: 47 + 141 = 188 (lá).
+3. Bước 3 — đội Hai nhiều hơn: 141 − 47 = 94 (lá).
+4. Bước 4 — muốn hai tổ bằng nhau thì cho nhóm Sao Mai thêm đúng phần hơn ấy, tức 94 lá.
+5. Đáp số ý a: **141 lá cờ**.
 
-*Lỗi hay mắc:* Cho rằng hiệu lúc đầu bằng đúng số vở đã chuyển.
+*Lỗi hay mắc:* Nhầm hai tình huống: cho thêm và chuyển qua lại.
 
 ---
 
@@ -192,10 +195,10 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài | Đo cái gì | Sai bài này nghĩa là | Học lại ở đâu |
 |:--:|---|---|---|
 | Bài 1 | Đọc, viết, cấu tạo số | Đếm hàng từ trái sang phải nên lệch hàng. | Nhóm chuyên đề **—** · mức — |
-| Bài 2 | Bài toán tiền tệ hai bước | Lấy tiền đưa trừ ngay giá một quyển vở. | Nhóm chuyên đề **—** · mức — |
-| Bài 3 | Bài toán tổng – hiệu | Chia đôi tổng ngay rồi cộng hiệu vào cả hai số. | Nhóm chuyên đề **—** · mức — |
-| Bài 4 | Phủ hình, chia hình | Chia chu vi cho cạnh mảnh thay vì chia diện tích cho diện tích. | Nhóm chuyên đề **—** · mức — |
-| Bài 5 | Tổng – hiệu có hiệu ẩn sau một lần chuyển | Cho rằng hiệu lúc đầu bằng đúng số vở đã chuyển. | Nhóm chuyên đề **—** · mức — |
+| Bài 2 | Nhân, chia với số có một chữ số | Quên chữ số 0 ở giữa thương nên thương thiếu chữ số. | Nhóm chuyên đề **—** · mức — |
+| Bài 3 | Ba dạng bài trung bình cộng | Đi tìm ngay số còn thiếu mà chưa tính tổng. | Nhóm chuyên đề **—** · mức — |
+| Bài 4 | Tính thời gian trong ngày | Cộng phần phút thành hơn 60 mà quên đổi thành giờ. | Nhóm chuyên đề **—** · mức — |
+| Bài 5 | Toán điển hình: gấp, kém, nhiều hơn, ít hơn | Nhầm hai tình huống: cho thêm và chuyển qua lại. | Nhóm chuyên đề **—** · mức — |
 
 ---
 

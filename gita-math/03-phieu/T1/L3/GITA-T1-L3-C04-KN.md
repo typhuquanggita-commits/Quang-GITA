@@ -55,50 +55,52 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Tìm hai số trong mỗi trường hợp.
 
-a) Tổng hai số là 390, hiệu hai số là 34. Tìm hai số đó.
-b) Tổng hai số là 62, hiệu hai số là 18. Tìm hai số đó.
-c) Tổng hai số là 292, hiệu hai số là 34. Tìm hai số đó.
-d) Tổng hai số là 108, hiệu hai số là 10. Tìm hai số đó.
-e) Tổng hai số là 312, hiệu hai số là 66. Tìm hai số đó.
+a) Tổng hai số là 316, hiệu hai số là 74. Tìm hai số đó.
+b) Tổng hai số là 62, hiệu hai số là 16. Tìm hai số đó.
+c) Tổng hai số là 334, hiệu hai số là 12. Tìm hai số đó.
+d) Tổng hai số là 72, hiệu hai số là 4. Tìm hai số đó.
+e) Tổng hai số là 346, hiệu hai số là 58. Tìm hai số đó.
 
-### Bài 2. (5 điểm) Bài toán giải bằng hai phép tính
-
-Mỗi bài trình bày đủ hai bước, mỗi bước một câu lời giải.
-
-a) Tổ Ba có 73 lá cờ. Tổ Một có ít hơn tổ Ba 14 lá cờ. Hỏi cả hai tổ có bao nhiêu lá cờ?
-b) Tổ Hai có 40 lá cờ. Đội Một có gấp 3 lần tổ Hai. Hỏi cả hai tổ có bao nhiêu lá cờ?
-c) Nhóm Sao Mai có 53 lá cờ. Nhóm Hoa Phượng có nhiều hơn nhóm Sao Mai 17 lá cờ. Hỏi cả hai tổ có bao nhiêu lá cờ?
-d) Tổ Ba có 31 lá cờ. Nhóm Hoa Phượng có nhiều hơn tổ Ba 4 lá cờ. Hỏi cả hai tổ có bao nhiêu lá cờ?
-
-### Bài 3. (5 điểm) Bài toán rút về đơn vị
+### Bài 2. (5 điểm) Bài toán rút về đơn vị
 
 Giải bằng phương pháp rút về đơn vị.
 
-a) 12 bao xi măng nặng 132 kg. Hỏi 2 bao như thế nặng bao nhiêu kg?
-b) 6 bao phân bón nặng 42 kg. Hỏi 2 bao như thế nặng bao nhiêu kg?
-c) 2 bao muối nặng 116 kg. Hỏi 11 bao như thế nặng bao nhiêu kg?
-d) 5 bao xi măng nặng 70 kg. Hỏi 3 bao như thế nặng bao nhiêu kg?
+a) 5 bao gạo nặng 270 kg. Hỏi 9 bao như thế nặng bao nhiêu kg?
+b) 9 bao xi măng nặng 90 kg. Hỏi 17 bao như thế nặng bao nhiêu kg?
+c) 12 bao thóc nặng 624 kg. Hỏi 6 bao như thế nặng bao nhiêu kg?
+d) 12 bao đường nặng 228 kg. Hỏi 3 bao như thế nặng bao nhiêu kg?
 
-### Bài 4. (5 điểm) Nhiều hơn – ít hơn, gấp – kém
+### Bài 3. (5 điểm) Bài toán giải bằng hai phép tính
 
-Đọc kĩ rồi trả lời từng câu.
+Mỗi bài trình bày đủ hai bước, mỗi bước một câu lời giải.
 
-a) Ngọc có 30 quyển vở, Sơn có nhiều hơn Ngọc 4 quyển. Sơn có bao nhiêu quyển vở?
-b) Ngọc có 27 quyển vở, Sơn có số vở gấp 5 lần Ngọc. Sơn có bao nhiêu quyển vở?
-c) Ngọc có 29 quyển vở, Sơn có ít hơn Ngọc 3 quyển. Sơn có bao nhiêu quyển vở?
-d) Ngọc có 204 quyển vở, số vở của Sơn kém 4 lần số vở của Ngọc. Sơn có bao nhiêu quyển vở?
-e) Ngọc có 17 quyển vở, Sơn có ít hơn Ngọc 11 quyển. Sơn có bao nhiêu quyển vở?
-f) Ngọc có 37 quyển vở, Sơn có nhiều hơn Ngọc 5 quyển. Sơn có bao nhiêu quyển vở?
+a) Tổ Một có 19 lá cờ. Tổ Ba có ít hơn tổ Một 7 lá cờ. Hỏi cả hai tổ có bao nhiêu lá cờ?
+b) Tổ Ba có 25 lá cờ. Nhóm Sao Mai có nhiều hơn tổ Ba 21 lá cờ. Hỏi cả hai tổ có bao nhiêu lá cờ?
+c) Đội Một có 32 lá cờ. Nhóm Hoa Phượng có gấp 3 lần đội Một. Hỏi cả hai tổ có bao nhiêu lá cờ?
+d) Tổ Ba có 20 lá cờ. Tổ Một có gấp 2 lần tổ Ba. Hỏi cả hai tổ có bao nhiêu lá cờ?
+e) Tổ Ba có 42 lá cờ. Tổ Một có nhiều hơn tổ Ba 8 lá cờ. Hỏi cả hai tổ có bao nhiêu lá cờ?
+f) Đội Một có 50 lá cờ. Tổ Ba có ít hơn đội Một 11 lá cờ. Hỏi cả hai tổ có bao nhiêu lá cờ?
 
-### Bài 5. (5 điểm) Tìm trung bình cộng của nhiều số
+### Bài 4. (5 điểm) Tìm trung bình cộng của nhiều số
 
 Tính trung bình cộng.
 
-a) Tìm trung bình cộng của 3 số: 27, 37, 47.
-b) Tìm trung bình cộng của 2 số: 41, 47.
-c) Tìm trung bình cộng của 4 số: 17, 16, 21, 34.
-d) Tìm trung bình cộng của 5 số: 36, 27, 19, 21, 17.
-e) Tìm trung bình cộng của 5 số: 50, 36, 56, 37, 41.
+a) Tìm trung bình cộng của 5 số: 41, 43, 55, 34, 52.
+b) Tìm trung bình cộng của 3 số: 20, 16, 24.
+c) Tìm trung bình cộng của 4 số: 34, 45, 46, 39.
+d) Tìm trung bình cộng của 2 số: 12, 28.
+e) Tìm trung bình cộng của 5 số: 44, 65, 63, 43, 50.
+
+### Bài 5. (5 điểm) Nhiều hơn – ít hơn, gấp – kém
+
+Đọc kĩ rồi trả lời từng câu.
+
+a) Tuấn có 49 quyển vở, Hùng có số vở gấp 4 lần Tuấn. Hùng có bao nhiêu quyển vở?
+b) Tuấn có 66 quyển vở, Hùng có ít hơn Tuấn 13 quyển. Hùng có bao nhiêu quyển vở?
+c) Tuấn có 360 quyển vở, số vở của Hùng kém 6 lần số vở của Tuấn. Hùng có bao nhiêu quyển vở?
+d) Tuấn có 42 quyển vở, Hùng có nhiều hơn Tuấn 7 quyển. Hùng có bao nhiêu quyển vở?
+e) Tuấn có 20 quyển vở, Hùng có số vở gấp 5 lần Tuấn. Hùng có bao nhiêu quyển vở?
+f) Tuấn có 57 quyển vở, Hùng có ít hơn Tuấn 27 quyển. Hùng có bao nhiêu quyển vở?
 
 ---
 
@@ -330,34 +332,34 @@ f) Mẹo nhanh em sẽ tặng lớp?
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài A.1
-**Đáp số:** a) số lớn 212, số bé 178 · b) số lớn 40, số bé 22 · c) số lớn 163, số bé 129 · d) số lớn 59, số bé 49 · e) số lớn 189, số bé 123
+**Đáp số:** a) số lớn 195, số bé 121 · b) số lớn 39, số bé 23 · c) số lớn 173, số bé 161 · d) số lớn 38, số bé 34 · e) số lớn 202, số bé 144
 **Hướng giải:** Số lớn = (tổng + hiệu) : 2. Số bé = (tổng − hiệu) : 2. Cách hiểu: vẽ hai đoạn thẳng, đoạn dài hơn phần hiệu; bớt phần hiệu đi thì hai đoạn bằng nhau, mỗi đoạn là số bé.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng hiệu ra **số lớn**, trừ hiệu ra **số bé** — nhớ đúng chiều.
 **Lỗi thường gặp:** Lấy (tổng + hiệu) : 2 rồi gọi đó là số bé. Phòng: Vẽ sơ đồ đoạn thẳng trước, đoạn dài hơn luôn là số lớn.
 
 ### Bài A.2
-**Đáp số:** a) 132 lá cờ · b) 160 lá cờ · c) 123 lá cờ · d) 66 lá cờ
-**Hướng giải:** BẪY — Đọc kĩ câu hỏi cuối. Bước 1 tìm đại lượng còn thiếu bằng quan hệ nhiều hơn – ít hơn – gấp. Bước 2 mới trả lời câu hỏi của đề. Không được gộp hai bước làm một.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Câu hỏi cuối hỏi **cả hai tổ**, nên bước hai bắt buộc phải cộng.
-**Lỗi thường gặp:** Dừng ở bước một, trả lời số lá cờ của một tổ. Phòng: Đọc lại câu hỏi sau khi tính xong bước một, gạch chân chữ “cả hai”.
-
-### Bài A.3
-**Đáp số:** a) 22 · b) 14 · c) 638 · d) 42
+**Đáp số:** a) 486 · b) 170 · c) 312 · d) 57
 **Hướng giải:** Bước 1 — rút về đơn vị: tìm giá trị của **một** đơn vị bằng phép chia. Bước 2: nhân giá trị một đơn vị với số đơn vị cần tìm.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Bước rút về đơn vị luôn là phép **chia**, và phải làm trước.
 **Lỗi thường gặp:** Nhân ngay hai số đã cho mà bỏ qua bước chia. Phòng: Viết rõ câu “Một bao nặng … kg” trước khi làm bước hai.
 
-### Bài A.4
-**Đáp số:** a) 34 · b) 135 · c) 26 · d) 51 · e) 6 · f) 42
-**Hướng giải:** BẪY — Gấp và kém dùng hai phép tính ngược nhau. “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
-**Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
-**Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+### Bài A.3
+**Đáp số:** a) 31 lá cờ · b) 71 lá cờ · c) 128 lá cờ · d) 60 lá cờ · e) 92 lá cờ · f) 89 lá cờ
+**Hướng giải:** BẪY — Đọc kĩ câu hỏi cuối. Bước 1 tìm đại lượng còn thiếu bằng quan hệ nhiều hơn – ít hơn – gấp. Bước 2 mới trả lời câu hỏi của đề. Không được gộp hai bước làm một.
+**Nhãn tư duy:** TD2, TD3. Điểm chốt: Câu hỏi cuối hỏi **cả hai tổ**, nên bước hai bắt buộc phải cộng.
+**Lỗi thường gặp:** Dừng ở bước một, trả lời số lá cờ của một tổ. Phòng: Đọc lại câu hỏi sau khi tính xong bước một, gạch chân chữ “cả hai”.
 
-### Bài A.5
-**Đáp số:** a) 37 · b) 44 · c) 22 · d) 24 · e) 44
+### Bài A.4
+**Đáp số:** a) 45 · b) 20 · c) 41 · d) 20 · e) 53
 **Hướng giải:** Trung bình cộng của nhiều số bằng tổng các số đó chia cho số lượng các số. Cộng cho hết rồi mới chia, không chia từng số một.
 **Nhãn tư duy:** TD1. Điểm chốt: Chia cho **số lượng số hạng**, không phải chia cho một số bất kì.
 **Lỗi thường gặp:** Đếm sai số lượng số hạng nên chia nhầm. Phòng: Đánh số thứ tự từng số trước khi cộng.
+
+### Bài A.5
+**Đáp số:** a) 196 · b) 53 · c) 60 · d) 49 · e) 100 · f) 30
+**Hướng giải:** BẪY — Gấp và kém dùng hai phép tính ngược nhau. “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
+**Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
+**Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
 
 ### Bài B.1
 **Đáp số:** a) câu lời giải nêu rõ đang tìm đại lượng nào · b) phép tính, viết đủ dấu và đủ đơn vị · c) kết quả kèm đơn vị · d) câu đáp số · e) một phần tư số điểm của bài

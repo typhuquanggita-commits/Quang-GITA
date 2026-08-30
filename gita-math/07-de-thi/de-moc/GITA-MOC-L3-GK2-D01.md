@@ -28,59 +28,58 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ### Bài 1. (2 điểm — 10 phút) Tính và điền kết quả
 
-Cho số **97 918**.
+Cho số **30 662**.
 
-a) Số 97 918 có bao nhiêu chữ số?
+a) Số 30 662 có bao nhiêu chữ số?
 b) Chữ số hàng đơn vị là chữ số nào?
 c) Chữ số hàng trăm là chữ số nào?
 d) Chữ số hàng nghìn là chữ số nào?
-e) Viết số 97 918 thành tổng các giá trị hàng.
-f) Tổng các chữ số của số 97 918 bằng bao nhiêu?
+e) Viết số 30 662 thành tổng các giá trị hàng.
+f) Tổng các chữ số của số 30 662 bằng bao nhiêu?
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
 Tính bằng cách thuận tiện nhất.
 
-a) 318 + 33 − 33
-b) 34 + 45 + 66
-c) 27 + 61 + 73 + 39
-d) 156 + 19 − 19
-e) 16 + 45 + 84 + 55
-f) 17 + 241 + 83
+a) 78 + 99 + 22
+b) 174 + 62 − 62
+c) 53 + 354 + 47
+d) 62 + 78 + 38
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
-Tóm tắt bằng sơ đồ đoạn thẳng rồi giải.
+Vẽ sơ đồ trước, tính sau. Không vẽ thì không được tính.
 
-a) Nhóm Hoa Phượng và đội Hai trồng được 612 cây. Nhóm Hoa Phượng trồng nhiều hơn đội Hai 34 cây. Mỗi tổ trồng bao nhiêu cây?
-b) Thư viện và xưởng chứa tất cả 168 kg đường. Thư viện chứa nhiều hơn xưởng 6 kg. Mỗi nơi chứa bao nhiêu kg?
-c) Hai lớp 5C và 3B có tất cả 624 quyển sách. Lớp 5C có nhiều hơn lớp 3B 70 quyển. Mỗi lớp có bao nhiêu quyển?
-d) Tổ Một và nhóm Hoa Phượng trồng được 130 cây. Tổ Một trồng nhiều hơn nhóm Hoa Phượng 4 cây. Mỗi tổ trồng bao nhiêu cây?
+a) Vy và Khánh có tất cả 166 viên bi. Vy có nhiều hơn Khánh 14 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+b) Trang và Sơn có tất cả 60 viên bi. Trang có nhiều hơn Sơn 12 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+c) Ngọc và Quân có tất cả 88 viên bi. Ngọc có nhiều hơn Quân 10 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+d) Sơn và Bình có tất cả 198 viên bi. Sơn có nhiều hơn Bình 66 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+e) An và Lan có tất cả 20 viên bi. An có nhiều hơn Lan 6 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+f) Bình và Minh có tất cả 172 viên bi. Bình có nhiều hơn Minh 8 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
-Vẽ hình và kẻ lưới ra nháp.
+Cho lưới gồm 4 hàng và 4 cột ô vuông nhỏ bằng nhau.
 
-a) Một hình chữ nhật 8 cm × 6 cm được phủ kín bằng các hình vuông cạnh 1 cm. Cần bao nhiêu hình vuông?
-b) Diện tích hình chữ nhật ấy bằng bao nhiêu?
-c) Diện tích mỗi hình vuông nhỏ bằng bao nhiêu?
-d) Chia hình chữ nhật ấy thành 2 phần bằng nhau thì mỗi phần có diện tích bao nhiêu?
-e) Chia thành 4 phần bằng nhau thì mỗi phần bao nhiêu?
-f) Nếu ghép hai hình chữ nhật ấy theo chiều dài thì hình mới có chu vi bao nhiêu?
+a) Lưới có bao nhiêu ô vuông nhỏ?
+b) Lưới có bao nhiêu đường kẻ ngang, bao nhiêu đường kẻ dọc?
+c) Có tất cả bao nhiêu hình chữ nhật (kể cả hình vuông)?
+d) Có bao nhiêu hình vuông?
+e) Có bao nhiêu hình chữ nhật không phải hình vuông?
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
-Dãy lặp lại mãi nhóm 6, 2, 6, 1: 6, 2, 6, 1, 6, 2, 6, 1, …
+Dãy lặp lại mãi nhóm 8, 2, 3: 8, 2, 3, 8, 2, 3, …
 
-a) Số hạng thứ 58 của dãy là số nào?
-b) Số hạng thứ 26 của dãy là số nào?
-c) Số hạng thứ 107 của dãy là số nào?
-d) Số hạng thứ 28 của dãy là số nào?
-e) Tổng 30 số hạng đầu tiên bằng bao nhiêu?
+a) Số hạng thứ 40 của dãy là số nào?
+b) Số hạng thứ 82 của dãy là số nào?
+c) Số hạng thứ 85 của dãy là số nào?
+d) Số hạng thứ 39 của dãy là số nào?
+e) Tổng 90 số hạng đầu tiên bằng bao nhiêu?
 
 
 ---
@@ -91,96 +90,96 @@ e) Tổng 30 số hạng đầu tiên bằng bao nhiêu?
 ### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
 a) **5**
-b) **8**
-c) **9**
-d) **7**
-e) **90 000 + 7 000 + 900 + 10 + 8**
-f) **34**
+b) **2**
+c) **6**
+d) **0**
+e) **30 000 + 600 + 60 + 2**
+f) **17**
 
 **Cách giải mẫu:**
 
 1. Đếm từ phải sang trái: đơn vị, chục, trăm, nghìn, chục nghìn.
-2. Số 97 918 có 5 chữ số.
-3. Chữ số hàng đơn vị là chữ số cuối cùng bên phải: 8.
-4. Viết thành tổng: 90 000 + 7 000 + 900 + 10 + 8.
-5. Cộng các chữ số: 9 + 7 + 9 + 1 + 8 = 34.
+2. Số 30 662 có 5 chữ số.
+3. Chữ số hàng đơn vị là chữ số cuối cùng bên phải: 2.
+4. Viết thành tổng: 30 000 + 600 + 60 + 2.
+5. Cộng các chữ số: 3 + 0 + 6 + 6 + 2 = 17.
 6. Đáp số ý a: **5 chữ số**.
 
 *Lỗi hay mắc:* Đếm hàng từ trái sang phải nên lệch hàng.
 
-### Bài 2, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 2, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **318**
-b) **145**
-c) **200**
-d) **156**
-e) **200**
-f) **341**
+a) **199**
+b) **174**
+c) **454**
+d) **178**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 318 + 33 − 33
+1. Xét ý a: 78 + 99 + 22
 2. Đọc vị: đây là dạng **Tính nhanh tổng nhiều số hạng**; dấu hiệu là Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm.
 3. Kiến thức phải dùng: Tính chất giao hoán, kết hợp của phép cộng.
 4. Cách làm: Ghép cặp tròn rồi cộng.
 5. Lối tắt: Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10.
-6. Kết quả: **318**.
+6. Kết quả: **199**.
 
 *Lỗi hay mắc:* Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn.
 
-### Bài 3, (2 điểm — mỗi ý 0,5 điểm)
+### Bài 3, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **nhóm Hoa Phượng: 323 cây, đội Hai: 289 cây**
-b) **thư viện: 87 kg, xưởng: 81 kg**
-c) **5C: 347 quyển, 3B: 277 quyển**
-d) **tổ Một: 67 cây, nhóm Hoa Phượng: 63 cây**
-
-**Cách giải mẫu:**
-
-1. Xét ý a: Nhóm Hoa Phượng và đội Hai trồng được 612 cây. Nhóm Hoa Phượng trồng nhiều hơn đội Hai 34 cây. Mỗi tổ trồng bao nhiêu cây?
-2. Đọc vị: đây là dạng **Tổng – hiệu có lời văn**; dấu hiệu là “Có tất cả …” và “… nhiều hơn … là …”.
-3. Kiến thức phải dùng: Công thức tổng – hiệu, sơ đồ đoạn thẳng.
-4. Cách làm: Đọc vị tổng và hiệu → sơ đồ → công thức.
-5. Lối tắt: Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần.
-6. Kết quả: **nhóm Hoa Phượng: 323 cây, đội Hai: 289 cây**.
-
-*Lỗi hay mắc:* Nhầm hiệu thành tổng khi đề diễn đạt vòng vo.
-
-### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
-
-a) **48**
-b) **48 cm²**
-c) **1 cm²**
-d) **24 cm²**
-e) **12 cm²**
-f) **40 cm**
+a) **Vy: 90 viên, Khánh: 76 viên**
+b) **Trang: 36 viên, Sơn: 24 viên**
+c) **Ngọc: 49 viên, Quân: 39 viên**
+d) **Sơn: 132 viên, Bình: 66 viên**
+e) **An: 13 viên, Lan: 7 viên**
+f) **Bình: 90 viên, Minh: 82 viên**
 
 **Cách giải mẫu:**
 
-1. Bước 1 — diện tích hình chữ nhật: 8 × 6 = 48 (cm²).
-2. Bước 2 — diện tích một hình vuông nhỏ: 1 × 1 = 1 (cm²).
-3. Bước 3 — số hình vuông cần dùng: 48 : 1 = 48 (hình).
-4. Kiểm tra: xếp được 8 hàng, mỗi hàng 6 hình — đúng 48 hình ✓
-5. Đáp số: **48 hình vuông**.
+1. Vẽ hai đoạn thẳng: đoạn của Vy dài hơn đoạn của Khánh đúng 14 viên.
+2. Bước 1 — nếu bớt 14 viên của Vy thì hai đoạn bằng nhau, tổng mới là 166 − 14 = 152 (viên).
+3. Bước 2 — chia đôi tổng mới được số bi của Khánh: 152 : 2 = 76 (viên).
+4. Bước 3 — số bi của Vy: 76 + 14 = 90 (viên).
+5. Thử lại: 90 + 76 = 166 ✓ và 90 − 76 = 14 ✓
+6. Đáp số: **Vy 90 viên, Khánh 76 viên**.
 
-*Lỗi hay mắc:* Chia chu vi cho cạnh mảnh thay vì chia diện tích cho diện tích.
+*Lỗi hay mắc:* Chia đôi tổng ngay rồi cộng hiệu vào cả hai số.
+
+### Bài 4, (2 điểm — mỗi ý 0,4 điểm)
+
+a) **16**
+b) **5 đường ngang, 5 đường dọc**
+c) **100**
+d) **30**
+e) **70**
+
+**Cách giải mẫu:**
+
+1. Xét ý a: Lưới có bao nhiêu ô vuông nhỏ?
+2. Đọc vị: đây là dạng **Đếm hình trong lưới**; dấu hiệu là Lưới ô vuông đều.
+3. Kiến thức phải dùng: Quy tắc đếm.
+4. Cách làm: Đếm theo đường kẻ hoặc theo cỡ.
+5. Lối tắt: Số cách chọn 2 trong k là k × (k − 1) : 2.
+6. Kết quả: **16**.
+
+*Lỗi hay mắc:* Chỉ đếm ô nhỏ, quên hình ghép từ nhiều ô.
 
 ### Bài 5, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **2**
-b) **2**
-c) **6**
-d) **1**
-e) **113**
+a) **8**
+b) **8**
+c) **8**
+d) **3**
+e) **390**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Số hạng thứ 58 của dãy là số nào?
+1. Xét ý a: Số hạng thứ 40 của dãy là số nào?
 2. Đọc vị: đây là dạng **Dãy tuần hoàn**; dấu hiệu là Dãy lặp lại một nhóm số cố định.
 3. Kiến thức phải dùng: Phép chia có dư, tính tuần hoàn.
 4. Cách làm: Chia lấy dư để định vị.
 5. Lối tắt: Tổng n số hạng = tổng một chu kì × số chu kì đầy đủ + phần dư.
-6. Kết quả: **2**.
+6. Kết quả: **8**.
 
 *Lỗi hay mắc:* Dư 0 mà lấy phần tử đầu tiên.
 
@@ -194,8 +193,8 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 |:--:|---|---|---|
 | Bài 1 | Đọc, viết, cấu tạo số | Đếm hàng từ trái sang phải nên lệch hàng. | Nhóm chuyên đề **—** · mức — |
 | Bài 2 | Tính nhanh tổng nhiều số hạng | Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. | Nhóm chuyên đề **—** · mức — |
-| Bài 3 | Tổng – hiệu có lời văn | Nhầm hiệu thành tổng khi đề diễn đạt vòng vo. | Nhóm chuyên đề **—** · mức — |
-| Bài 4 | Phủ hình, chia hình | Chia chu vi cho cạnh mảnh thay vì chia diện tích cho diện tích. | Nhóm chuyên đề **—** · mức — |
+| Bài 3 | Bài toán tổng – hiệu | Chia đôi tổng ngay rồi cộng hiệu vào cả hai số. | Nhóm chuyên đề **—** · mức — |
+| Bài 4 | Đếm hình trong lưới | Chỉ đếm ô nhỏ, quên hình ghép từ nhiều ô. | Nhóm chuyên đề **—** · mức — |
 | Bài 5 | Dãy tuần hoàn | Dư 0 mà lấy phần tử đầu tiên. | Nhóm chuyên đề **—** · mức — |
 
 ---

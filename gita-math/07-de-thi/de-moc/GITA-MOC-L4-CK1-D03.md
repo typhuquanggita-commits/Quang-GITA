@@ -30,57 +30,56 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Viết số tự nhiên ứng với mỗi tổng dưới đây.
 
-a) Viết số gồm tổng: 700 000 + 50 000 + 2 000 + 600 + 80 + 9
-b) Viết số gồm tổng: 700 000 + 30 000 + 8 000 + 600 + 40 + 4
-c) Viết số gồm tổng: 100 000 + 70 000 + 7 000 + 200 + 20 + 7
-d) Viết số gồm tổng: 100 000 + 80 000 + 8 000 + 500 + 20 + 9
-e) Viết số gồm tổng: 400 000 + 60 000 + 200 + 4
-f) Viết số gồm tổng: 900 000 + 10 000 + 4 000 + 300 + 80 + 9
+a) Viết số gồm tổng: 900 000 + 70 000 + 6 000 + 100 + 80 + 8
+b) Viết số gồm tổng: 100 000 + 50 000 + 2 000 + 600 + 90 + 2
+c) Viết số gồm tổng: 800 000 + 50 000 + 4 000 + 300 + 40 + 5
+d) Viết số gồm tổng: 600 000 + 80 000 + 4 000 + 100 + 40
+e) Viết số gồm tổng: 300 000 + 80 000 + 6 000 + 700 + 90 + 4
+f) Viết số gồm tổng: 800 000 + 50 000 + 3 000 + 800
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
 Tính bằng cách thuận tiện nhất.
 
-a) 76 + 133 + 24
-b) 82 + 89 + 18
-c) 24 + 61 + 76 + 39
-d) 48 + 73 + 52 + 27
-e) 38 + 88 + 62 + 12
-f) 110 + 69 − 69
+a) 54 × 46 − 54 × 33
+b) 59 × 24 − 59 × 21
+c) 32 × 17 + 32 × 33
+d) 19 × 44 − 19 × 28
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
-Giải từng bài toán nhỏ.
+Giải bằng cách rút về đơn vị hoặc dùng tỉ số.
 
-a) Trung bình mỗi ngày bán được 153 kg gạo. Hỏi 6 ngày bán được tất cả bao nhiêu ki-lô-gam?
-b) Trung bình mỗi ngày bán được 53 kg gạo. Hỏi 3 ngày bán được tất cả bao nhiêu ki-lô-gam?
-c) Trung bình mỗi ngày cửa hàng bán được 228 kg gạo. 3 ngày đầu bán được 221, 229, 239 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
-d) Trung bình mỗi ngày cửa hàng bán được 292 kg gạo. 4 ngày đầu bán được 295, 283, 290, 296 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
-e) 5 ngày đầu tuần một cửa hàng bán được lần lượt 66, 71, 60, 55, 78 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
+a) Mua 15 quyển vở hết 945 nghìn đồng. Mua 25 quyển vở như thế hết bao nhiêu nghìn đồng?
+b) Mua 12 quyển vở hết 936 nghìn đồng. Mua 18 quyển vở như thế hết bao nhiêu nghìn đồng?
+c) Mua 3 quyển vở hết 156 nghìn đồng. Với 208 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+d) Mua 13 quyển vở hết 1 131 nghìn đồng. Với 2 088 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+e) Mua 9 quyển vở hết 504 nghìn đồng. Với 784 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+f) Mua 11 quyển vở hết 814 nghìn đồng. Mua 25 quyển vở như thế hết bao nhiêu nghìn đồng?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
-Ghi kết quả theo giờ và phút.
+Chú ý đơn vị mà đề hỏi.
 
-a) Một chuyến tàu khởi hành lúc 11 giờ 25 phút và đi hết 6 giờ 23 phút. Tàu đến nơi lúc mấy giờ?
-b) Một chuyến tàu khởi hành lúc 10 giờ 50 phút và đi hết 4 giờ 9 phút. Tàu đến nơi lúc mấy giờ?
-c) Một chuyến tàu khởi hành lúc 5 giờ 20 phút và đi hết 1 giờ 42 phút. Tàu đến nơi lúc mấy giờ?
-d) Một chuyến tàu khởi hành lúc 14 giờ 40 phút và đi hết 5 giờ 37 phút. Tàu đến nơi lúc mấy giờ?
-e) Một chuyến tàu khởi hành lúc 14 giờ 45 phút và đi hết 3 giờ 40 phút. Tàu đến nơi lúc mấy giờ?
-f) Một chuyến tàu khởi hành lúc 11 giờ 0 phút và đi hết 4 giờ 46 phút. Tàu đến nơi lúc mấy giờ?
+a) Một xe chở 24 bao đường, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ đường?
+b) Một xe chở 9 bao gạo, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ gạo?
+c) Một xe chở 31 bao phân bón, mỗi bao 50 kg. Hỏi xe chở bao nhiêu tạ phân bón?
+d) Một xe chở 23 bao thóc, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ thóc?
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
 Tính nhanh mỗi tổng, nêu công thức đã dùng.
 
-a) 1 + 2 + 3 + … + 10
-b) 1 + 3 + 5 + … + 199 (tổng 100 số lẻ đầu tiên)
-c) 2 + 4 + 6 + … + 200 (tổng 100 số chẵn đầu tiên)
-d) 1 + 3 + 5 + … + 19 (tổng 10 số lẻ đầu tiên)
+a) 1 + 3 + 5 + … + 199 (tổng 100 số lẻ đầu tiên)
+b) 1 + 2 + 3 + … + 100
+c) 2 + 4 + 6 + … + 50 (tổng 25 số chẵn đầu tiên)
+d) 1 + 3 + 5 + … + 49 (tổng 25 số lẻ đầu tiên)
+e) 1 + 2 + 3 + … + 20
+f) 2 + 4 + 6 + … + 20 (tổng 10 số chẵn đầu tiên)
 
 
 ---
@@ -90,98 +89,97 @@ d) 1 + 3 + 5 + … + 19 (tổng 10 số lẻ đầu tiên)
 
 ### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **752 689**
-b) **738 644**
-c) **177 227**
-d) **188 529**
-e) **460 204**
-f) **914 389**
+a) **976 188**
+b) **152 692**
+c) **854 345**
+d) **684 140**
+e) **386 794**
+f) **853 800**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Viết số gồm tổng: 700 000 + 50 000 + 2 000 + 600 + 80 + 9
+1. Xét ý a: Viết số gồm tổng: 900 000 + 70 000 + 6 000 + 100 + 80 + 8
 2. Đọc vị: đây là dạng **Viết số từ dạng tổng theo hàng**; dấu hiệu là Tổng gồm các số tròn chục, tròn trăm, tròn nghìn….
 3. Kiến thức phải dùng: Cấu tạo thập phân của số tự nhiên.
 4. Cách làm: Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết.
 5. Lối tắt: Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số.
-6. Kết quả: **752 689**.
+6. Kết quả: **976 188**.
 
 *Lỗi hay mắc:* Bỏ qua hàng khuyết nên số viết ra bị ngắn đi một chữ số.
 
-### Bài 2, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 2, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **233**
-b) **189**
-c) **200**
-d) **200**
-e) **200**
+a) **702**
+b) **177**
+c) **1 600**
+d) **304**
+
+**Cách giải mẫu:**
+
+1. Xét ý a: 54 × 46 − 54 × 33
+2. Đọc vị: đây là dạng **Tính nhanh nhờ thừa số chung**; dấu hiệu là Hai tích cộng hoặc trừ nhau, có chung một thừa số.
+3. Kiến thức phải dùng: Nhân một số với một tổng, một hiệu.
+4. Cách làm: Đặt thừa số chung ra ngoài rồi tính trong ngoặc.
+5. Lối tắt: Sau khi đặt thừa số chung, tổng trong ngoặc thường tròn 10 hoặc 100.
+6. Kết quả: **702**.
+
+*Lỗi hay mắc:* Đặt ra ngoài một số chỉ có ở một tích.
+
+### Bài 3, (2 điểm — mỗi ý 0,33 điểm)
+
+a) **1 575 nghìn đồng**
+b) **1 404 nghìn đồng**
+c) **4 quyển**
+d) **24 quyển**
+e) **14 quyển**
+f) **1 850 nghìn đồng**
+
+**Cách giải mẫu:**
+
+1. Xét ý a: Mua 15 quyển vở hết 945 nghìn đồng. Mua 25 quyển vở như thế hết bao nhiêu nghìn đồng?
+2. Đọc vị: đây là dạng **Tỉ lệ thuận, rút về đơn vị**; dấu hiệu là Hai đại lượng cùng tăng cùng giảm.
+3. Kiến thức phải dùng: Đại lượng tỉ lệ thuận.
+4. Cách làm: Rút về đơn vị hoặc dùng tỉ số.
+5. Lối tắt: Nếu số lượng mới gấp số lượng cũ một số nguyên lần thì nhân thẳng, không cần rút về đơn vị.
+6. Kết quả: **1 575 nghìn đồng**.
+
+*Lỗi hay mắc:* Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch.
+
+### Bài 4, (2 điểm — mỗi ý 0,5 điểm)
+
+a) **7 tạ 20 kg**
+b) **2 tạ 25 kg**
+c) **15 tạ 50 kg**
+d) **13 tạ 80 kg**
+
+**Cách giải mẫu:**
+
+1. Xét ý a: Một xe chở 24 bao đường, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ đường?
+2. Đọc vị: đây là dạng **Bài toán đại lượng có lời văn**; dấu hiệu là Đơn vị trong câu hỏi khác đơn vị trong dữ kiện.
+3. Kiến thức phải dùng: Nhân, chia số tự nhiên; đổi đơn vị khối lượng.
+4. Cách làm: Tính theo đơn vị dữ kiện rồi đổi ở bước cuối.
+5. Lối tắt: 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ.
+6. Kết quả: **7 tạ 20 kg**.
+
+*Lỗi hay mắc:* Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ.
+
+### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
+
+a) **10 000**
+b) **5 050**
+c) **650**
+d) **625**
+e) **210**
 f) **110**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 76 + 133 + 24
-2. Đọc vị: đây là dạng **Tính nhanh tổng nhiều số hạng**; dấu hiệu là Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm.
-3. Kiến thức phải dùng: Tính chất giao hoán, kết hợp của phép cộng.
-4. Cách làm: Ghép cặp tròn rồi cộng.
-5. Lối tắt: Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10.
-6. Kết quả: **233**.
-
-*Lỗi hay mắc:* Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn.
-
-### Bài 3, (2 điểm — mỗi ý 0,4 điểm)
-
-a) **918 kg**
-b) **159 kg**
-c) **223 kg**
-d) **296 kg**
-e) **66 kg**
-
-**Cách giải mẫu:**
-
-1. Xét ý a: Trung bình mỗi ngày bán được 153 kg gạo. Hỏi 6 ngày bán được tất cả bao nhiêu ki-lô-gam?
-2. Đọc vị: đây là dạng **Ba dạng bài trung bình cộng**; dấu hiệu là Cụm “trung bình mỗi …”.
-3. Kiến thức phải dùng: Quan hệ tổng – số lượng – trung bình cộng.
-4. Cách làm: Đi qua tổng làm trung gian.
-5. Lối tắt: Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng.
-6. Kết quả: **918 kg**.
-
-*Lỗi hay mắc:* Đi tìm ngay số còn thiếu mà chưa tính tổng.
-
-### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
-
-a) **17 giờ 48 phút**
-b) **14 giờ 59 phút**
-c) **7 giờ 2 phút**
-d) **20 giờ 17 phút**
-e) **18 giờ 25 phút**
-f) **15 giờ 46 phút**
-
-**Cách giải mẫu:**
-
-1. Xét ý a: Một chuyến tàu khởi hành lúc 11 giờ 25 phút và đi hết 6 giờ 23 phút. Tàu đến nơi lúc mấy giờ?
-2. Đọc vị: đây là dạng **Tính thời điểm trong ngày**; dấu hiệu là Cho thời điểm bắt đầu và khoảng thời gian.
-3. Kiến thức phải dùng: Quan hệ giờ – phút, phép chia có dư.
-4. Cách làm: Quy về phút, cộng trừ, đổi lại.
-5. Lối tắt: Cộng tròn giờ trước rồi cộng phần phút lẻ sau.
-6. Kết quả: **17 giờ 48 phút**.
-
-*Lỗi hay mắc:* Cộng phần phút thành hơn 60 mà quên đổi thành giờ.
-
-### Bài 5, (2 điểm — mỗi ý 0,5 điểm)
-
-a) **55**
-b) **10 000**
-c) **10 100**
-d) **100**
-
-**Cách giải mẫu:**
-
-1. Xét ý a: 1 + 2 + 3 + … + 10
+1. Xét ý a: 1 + 3 + 5 + … + 199 (tổng 100 số lẻ đầu tiên)
 2. Đọc vị: đây là dạng **Tổng dãy đặc biệt**; dấu hiệu là Dãy toàn số lẻ, toàn số chẵn, hoặc số tự nhiên liên tiếp.
 3. Kiến thức phải dùng: Ba công thức tổng cơ bản.
 4. Cách làm: Đếm số số hạng rồi áp công thức.
 5. Lối tắt: Tổng n số lẻ đầu tiên luôn là một số chính phương — dùng để kiểm tra nhanh.
-6. Kết quả: **55**.
+6. Kết quả: **10 000**.
 
 *Lỗi hay mắc:* Nhầm số hạng cuối với số lượng số hạng khi áp công thức.
 
@@ -194,9 +192,9 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài | Đo cái gì | Sai bài này nghĩa là | Học lại ở đâu |
 |:--:|---|---|---|
 | Bài 1 | Viết số từ dạng tổng theo hàng | Bỏ qua hàng khuyết nên số viết ra bị ngắn đi một chữ số. | Nhóm chuyên đề **—** · mức — |
-| Bài 2 | Tính nhanh tổng nhiều số hạng | Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. | Nhóm chuyên đề **—** · mức — |
-| Bài 3 | Ba dạng bài trung bình cộng | Đi tìm ngay số còn thiếu mà chưa tính tổng. | Nhóm chuyên đề **—** · mức — |
-| Bài 4 | Tính thời điểm trong ngày | Cộng phần phút thành hơn 60 mà quên đổi thành giờ. | Nhóm chuyên đề **—** · mức — |
+| Bài 2 | Tính nhanh nhờ thừa số chung | Đặt ra ngoài một số chỉ có ở một tích. | Nhóm chuyên đề **—** · mức — |
+| Bài 3 | Tỉ lệ thuận, rút về đơn vị | Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch. | Nhóm chuyên đề **—** · mức — |
+| Bài 4 | Bài toán đại lượng có lời văn | Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. | Nhóm chuyên đề **—** · mức — |
 | Bài 5 | Tổng dãy đặc biệt | Nhầm số hạng cuối với số lượng số hạng khi áp công thức. | Nhóm chuyên đề **—** · mức — |
 
 ---

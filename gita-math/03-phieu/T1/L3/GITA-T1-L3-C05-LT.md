@@ -52,57 +52,61 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — VÍ DỤ DẪN VÀO CHỦ ĐỀ · Mức M1 — Nhận biết · 5 phút · 5 điểm
 
-### Bài 1. (1 điểm) Đổi số đo khối lượng có nhiều đơn vị
-
-Điền vào chỗ chấm.
-
-a) 6 tấn 1 tạ 93 kg = … kg
-b) 3 tấn 5 tạ 52 kg = … kg
-c) 2 tạ 96 kg = … kg
-d) 5 tấn 2 tạ 89 kg = … kg
-
-### Bài 2. (1 điểm) Đơn vị đo thời gian: giờ và phút
-
-Điền kết quả, viết dạng giờ và phút.
-
-a) 520 phút = … giờ … phút
-b) 5 giờ 47 phút + 180 phút = … (viết dạng giờ và phút)
-c) 8 giờ 5 phút − 421 phút = … (viết dạng giờ và phút)
-d) 4 giờ 27 phút = … phút
-
-### Bài 3. (1 điểm) Mi-li-lít và lít
-
-Điền số hoặc dấu thích hợp.
-
-a) 23 l 167 ml = … ml
-b) 13 000 ml = … l
-c) 36 l … 3 301 ml
-d) 23 l = … ml
-e) 37 l … 1 007 ml
-f) 35 l 848 ml = … ml
-g) 19 000 ml = … l
-
-### Bài 4. (1 điểm) Đọc, viết và phân tích cấu tạo số
-
-Cho số **13 819**.
-
-a) Số 13 819 có bao nhiêu chữ số?
-b) Chữ số hàng đơn vị là chữ số nào?
-c) Chữ số hàng trăm là chữ số nào?
-d) Chữ số hàng nghìn là chữ số nào?
-e) Viết số 13 819 thành tổng các giá trị hàng.
-f) Tổng các chữ số của số 13 819 bằng bao nhiêu?
-g) Số liền sau của 13 819 là số nào?
-
-### Bài 5. (1 điểm) Đổi đơn vị đo độ dài và khối lượng
+### Bài 1. (1 điểm) Đổi đơn vị đo độ dài và khối lượng
 
 Điền số thích hợp vào chỗ chấm.
 
-a) 60 km = … cm
-b) 47 kg = … g
-c) 15 yến = … g
-d) 83 m = … dm
-e) 41 tấn = … dag
+a) 15 m = … mm
+b) 52 tấn = … kg
+c) 47 km = … cm
+d) 19 tấn = … hg
+e) 16 kg = … hg
+f) 83 m = … cm
+
+### Bài 2. (1 điểm) Mi-li-lít và lít
+
+Điền số hoặc dấu thích hợp.
+
+a) 18 l 274 ml = … ml
+b) 28 000 ml = … l
+c) 21 l = … ml
+d) 22 l … 2 302 ml
+e) 8 l … 2 547 ml
+f) 27 l = … ml
+g) 7 000 ml = … l
+h) 12 l 828 ml = … ml
+
+### Bài 3. (1 điểm) Đổi số đo khối lượng có nhiều đơn vị
+
+Điền vào chỗ chấm.
+
+a) 1 tấn 8 tạ 56 kg = … kg
+b) 5 tấn 2 tạ 27 kg = … kg
+c) 2 tấn 51 kg = … kg
+d) 6 tấn 8 tạ 53 kg = … kg
+e) 3 312 kg = … tấn … tạ … kg
+
+### Bài 4. (1 điểm) Đọc, viết và phân tích cấu tạo số
+
+Cho số **57 185**.
+
+a) Số 57 185 có bao nhiêu chữ số?
+b) Chữ số hàng đơn vị là chữ số nào?
+c) Chữ số hàng trăm là chữ số nào?
+d) Chữ số hàng nghìn là chữ số nào?
+e) Viết số 57 185 thành tổng các giá trị hàng.
+f) Tổng các chữ số của số 57 185 bằng bao nhiêu?
+g) Số liền sau của 57 185 là số nào?
+
+### Bài 5. (1 điểm) Đơn vị đo thời gian: giờ và phút
+
+Điền kết quả, viết dạng giờ và phút.
+
+a) 9 giờ 21 phút = … phút
+b) 508 phút = … giờ … phút
+c) 1 giờ 6 phút + 167 phút = … (viết dạng giờ và phút)
+d) 8 giờ 10 phút − 36 phút = … (viết dạng giờ và phút)
+e) 9 giờ 3 phút = … phút
 
 ---
 
@@ -279,58 +283,58 @@ f) Làm lại ví dụ mẫu ở trên và ghi đáp số.
 
 ## PHẦN E — LUYỆN NHẬN BIẾT – THÔNG HIỂU · Mức M2 — Thông hiểu · 30 phút · 40 điểm
 
-### Bài 1. (8 điểm) Trung bình cộng trong tình huống thực tế
+### Bài 1. (8 điểm) Rào quanh mảnh vườn
 
-Giải từng bài toán nhỏ.
+Một mảnh vườn hình chữ nhật dài **32 m**, rộng **20 m**.
 
-a) 6 ngày đầu tuần một cửa hàng bán được lần lượt 40, 34, 22, 31, 28, 25 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
-b) 5 ngày đầu tuần một cửa hàng bán được lần lượt 288, 275, 298, 281, 288 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
-c) Trung bình mỗi ngày cửa hàng bán được 32 kg gạo. 5 ngày đầu bán được 39, 24, 27, 41, 39 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
-d) Trung bình mỗi ngày cửa hàng bán được 245 kg gạo. 4 ngày đầu bán được 238, 251, 239, 250 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
+a) Tính chu vi mảnh vườn.
+b) Rào quanh vườn hết bao nhiêu mét lưới, biết chừa một cửa rộng 2 m?
+c) Cắm cọc quanh vườn, hai cọc liền nhau cách nhau 4 m. Cần bao nhiêu cọc?
+d) Mỗi mét lưới giá 25 000 đồng. Mua lưới rào hết bao nhiêu tiền?
+e) Diện tích mảnh vườn là bao nhiêu?
 
-### Bài 2. (8 điểm) Hình tròn: tâm, bán kính, đường kính
+### Bài 2. (8 điểm) Số nhà trên một dãy phố
 
-Vẽ hình tròn và ghi kí hiệu lên hình.
+Một bên phố có các nhà mang số lẻ, bắt đầu từ số **3** và kết thúc ở số **37**, hai nhà liền nhau hơn kém nhau 2.
 
-a) Hình tròn A có bán kính 29 cm, hình tròn B có đường kính 8 cm. Hình nào lớn hơn?
-b) Hình tròn có đường kính 14 cm. Bán kính dài bao nhiêu?
-c) Hình tròn có bán kính 40 cm. Đường kính dài bao nhiêu?
-d) Hình tròn A có bán kính 33 cm, hình tròn B có đường kính 64 cm. Hình nào lớn hơn?
-e) Hình tròn có đường kính 46 cm. Bán kính dài bao nhiêu?
-f) Hình tròn có bán kính 22 cm. Đường kính dài bao nhiêu?
-g) Hình tròn có bán kính 28 cm. Đường kính dài bao nhiêu?
+a) Số nhà đầu dãy là 3, các nhà tiếp theo là 5, 7, … Số nhà thứ tư là số nào?
+b) Số nhà cuối dãy là 37. Dãy phố này có bao nhiêu nhà?
+c) Nhà thứ 9 tính từ đầu dãy mang số nào?
+d) Nhà mang số 35 là nhà thứ mấy tính từ đầu dãy?
+e) Các số nhà trong dãy này là số chẵn hay số lẻ? Vì sao?
 
 ### Bài 3. (8 điểm) Tiền Việt Nam: mua bán, đổi tiền, trả lại
 
 Ghi rõ đơn vị đồng ở mọi kết quả.
 
-a) Mua 4 quyển vở, mỗi quyển 5 000 đồng. Hết bao nhiêu tiền?
-b) Mua 6 quyển vở, mỗi quyển 18 000 đồng. Đưa cô bán hàng một tờ 200 000 đồng. Cô phải trả lại bao nhiêu tiền?
-c) Đổi một tờ 20 000 đồng ra các tờ 1 000 đồng thì được mấy tờ?
-d) Đổi một tờ 20 000 đồng ra các tờ 1 000 đồng thì được mấy tờ?
+a) Đổi một tờ 10 000 đồng ra các tờ 2 000 đồng thì được mấy tờ?
+b) Mua 3 quyển vở, mỗi quyển 18 000 đồng. Hết bao nhiêu tiền?
+c) Mua 4 quyển vở, mỗi quyển 12 000 đồng. Đưa cô bán hàng một tờ 50 000 đồng. Cô phải trả lại bao nhiêu tiền?
+d) Mua 4 quyển vở, mỗi quyển 12 000 đồng. Hết bao nhiêu tiền?
+e) Đổi một tờ 20 000 đồng ra các tờ 2 000 đồng thì được mấy tờ?
+f) Mua 3 quyển vở, mỗi quyển 18 000 đồng. Đưa cô bán hàng một tờ 100 000 đồng. Cô phải trả lại bao nhiêu tiền?
 
-### Bài 4. (8 điểm) Đổi đơn vị đo ở lớp 3
+### Bài 4. (8 điểm) Chu vi và diện tích hình chữ nhật, hình vuông
+
+Tính và ghi rõ đơn vị.
+
+a) Hình chữ nhật dài 5 cm, rộng 3 cm. Tính diện tích.
+b) Hình vuông cạnh 28 cm. Tính chu vi.
+c) Hình chữ nhật dài 31 cm, rộng 19 cm. Tính chu vi.
+d) Hình vuông cạnh 17 cm. Tính diện tích.
+e) Hình vuông cạnh 26 cm. Tính diện tích.
+
+### Bài 5. (8 điểm) Đổi đơn vị đo ở lớp 3
 
 Điền số thích hợp.
 
-a) 19 l = … ml
-b) 33 kg = … g
-c) 64 cm = … mm
-d) 90 m = … cm
-e) 49 km = … m
-f) 62 cm = … mm
-g) 63 m = … cm
-h) 66 km = … m
-
-### Bài 5. (8 điểm) Đếm số cách chọn bằng quy tắc nhân
-
-Vẽ sơ đồ cây rồi đếm.
-
-a) Có 3 loại bánh và 4 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
-b) Có 2 loại bánh và 6 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
-c) Có 3 loại bánh và 3 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
-d) Có 5 loại bánh và 3 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
-e) Có 5 loại bánh và 6 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
+a) 21 km = … m
+b) 66 kg = … g
+c) 8 cm = … mm
+d) 86 m = … cm
+e) 42 l = … ml
+f) 80 km = … m
+g) 71 kg = … g
 
 ---
 
@@ -339,34 +343,34 @@ e) Có 5 loại bánh và 6 loại nước. Chọn một loại bánh và một 
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài A.1
-**Đáp số:** a) 6 193 · b) 3 552 · c) 296 · d) 5 289
-**Hướng giải:** 1 tấn = 10 tạ = 1 000 kg; 1 tạ = 100 kg; 1 yến = 10 kg. Đổi tất cả về ki-lô-gam rồi cộng lại; hoặc ngược lại, chia dần từ đơn vị lớn xuống đơn vị bé và lấy phần dư.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Đổi hết về **một đơn vị chung** trước khi cộng.
-**Lỗi thường gặp:** Cộng thẳng các số đứng trước những đơn vị khác nhau. Phòng: Viết mỗi thành phần thành số ki-lô-gam ngay bên dưới rồi mới cộng.
+**Đáp số:** a) 15 000 · b) 52 000 · c) 4 700 000 · d) 190 000 · e) 160 · f) 8 300
+**Hướng giải:** Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
+**Nhãn tư duy:** TD1. Điểm chốt: Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
+**Lỗi thường gặp:** Đổi ngược chiều nên nhân thành chia. Phòng: Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.
 
 ### Bài A.2
-**Đáp số:** a) 8 giờ 40 phút · b) 8 giờ 47 phút · c) 1 giờ 4 phút · d) 267
-**Hướng giải:** 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
-**Lỗi thường gặp:** Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. Phòng: Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không.
-
-### Bài A.3
-**Đáp số:** a) 23 167 · b) 13 · c) > · d) 23 000 · e) > · f) 35 848 · g) 19
+**Đáp số:** a) 18 274 · b) 28 · c) 21 000 · d) > · e) > · f) 27 000 · g) 7 · h) 12 828
 **Hướng giải:** 1 lít = 1 000 mi-li-lít. Đổi từ đơn vị lớn sang đơn vị bé thì nhân, ngược lại thì chia. Muốn so sánh thì phải đưa về cùng một đơn vị trước.
 **Nhãn tư duy:** TD1. Điểm chốt: So sánh **chỉ sau khi** đã đưa về cùng đơn vị.
 **Lỗi thường gặp:** So thẳng hai con số mà bỏ qua đơn vị. Phòng: Viết lại cả hai vế theo mi-li-lít rồi mới so.
 
+### Bài A.3
+**Đáp số:** a) 1 856 · b) 5 227 · c) 2 051 · d) 6 853 · e) 3 tấn 3 tạ 12 kg
+**Hướng giải:** 1 tấn = 10 tạ = 1 000 kg; 1 tạ = 100 kg; 1 yến = 10 kg. Đổi tất cả về ki-lô-gam rồi cộng lại; hoặc ngược lại, chia dần từ đơn vị lớn xuống đơn vị bé và lấy phần dư.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Đổi hết về **một đơn vị chung** trước khi cộng.
+**Lỗi thường gặp:** Cộng thẳng các số đứng trước những đơn vị khác nhau. Phòng: Viết mỗi thành phần thành số ki-lô-gam ngay bên dưới rồi mới cộng.
+
 ### Bài A.4
-**Đáp số:** a) 5 · b) 9 · c) 8 · d) 3 · e) 10 000 + 3 000 + 800 + 10 + 9 · f) 22 · g) 13 820
+**Đáp số:** a) 5 · b) 5 · c) 1 · d) 7 · e) 50 000 + 7 000 + 100 + 80 + 5 · f) 26 · g) 57 186
 **Hướng giải:** Đếm hàng từ phải sang trái. Giá trị của một chữ số bằng chính chữ số đó nhân với giá trị hàng nó đứng. Hàng nào khuyết thì viết chữ số 0.
 **Nhãn tư duy:** TD1. Điểm chốt: Phân biệt **chữ số** với **giá trị** của chữ số.
 **Lỗi thường gặp:** Đếm hàng từ trái sang phải nên lệch hàng. Phòng: Đánh dấu hàng đơn vị trước, rồi đi ngược về bên trái.
 
 ### Bài A.5
-**Đáp số:** a) 6 000 000 · b) 47 000 · c) 150 000 · d) 830 · e) 4 100 000
-**Hướng giải:** Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
-**Nhãn tư duy:** TD1. Điểm chốt: Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
-**Lỗi thường gặp:** Đổi ngược chiều nên nhân thành chia. Phòng: Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.
+**Đáp số:** a) 561 · b) 8 giờ 28 phút · c) 3 giờ 53 phút · d) 7 giờ 34 phút · e) 543
+**Hướng giải:** 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
+**Lỗi thường gặp:** Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. Phòng: Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không.
 
 ### Bài B.1
 **Đáp số:** a) Đo độ dài, khối lượng, thời gian và tiền Việt Nam · b) E — Đại lượng – Đo lường – Thời gian · c) 5 · d) ở mọi bài thuộc đại lượng – đo lường – thời gian, vì các chương sau đều dùng lại nền này · e) giải nhanh và chắc các bài đơn vị đo độ dài mm, cm, dm, m, km — đổi và tính toán
@@ -464,39 +468,39 @@ e) Có 5 loại bánh và 6 loại nước. Chọn một loại bánh và một 
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.1
-**Đáp số:** a) 30 kg · b) 286 kg · c) 22 kg · d) 247 kg
-**Hướng giải:** Ba dạng ngược nhau: biết các số tìm trung bình cộng (cộng rồi chia); biết trung bình cộng tìm tổng (nhân); biết trung bình cộng và một số số hạng, tìm số hạng còn thiếu (lấy tổng trừ đi các số đã biết).
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Từ trung bình cộng luôn tìm được **tổng** trước, rồi mới tính tiếp.
-**Lỗi thường gặp:** Đi tìm ngay số còn thiếu mà chưa tính tổng. Phòng: Bước đầu tiên luôn viết: “Tổng = trung bình cộng × số ngày”.
-**Gợi ý 3 tầng:** (1) Đề cho gì và hỏi gì? — (2) Tính tổng trước bằng cách nhân trung bình cộng với số lượng. — (3) Lấy tổng trừ các số đã biết để ra số còn thiếu.
+**Đáp số:** a) (32 + 20) × 2 = 104 m · b) 104 − 2 = 102 m · c) 104 : 4 = 26 cọc · d) 102 × 25 000 = 2 550 000 đồng · e) 32 × 20 = 640 m²
+**Hướng giải:** BẪY — Quên rằng quanh vườn khép kín thì số cọc bằng số khoảng. Tính chu vi trước, mọi câu về rào và cọc đều dựa vào nó. Riêng số cọc phải nhớ đường rào khép kín nên không cộng thêm 1.
+**Nhãn tư duy:** TD2, TD4. Điểm chốt: Đường khép kín: số cọc = số khoảng. Đường thẳng có hai đầu: số cọc = số khoảng + 1.
+**Lỗi thường gặp:** Cộng thêm 1 vào số cọc như bài trồng cây trên đoạn thẳng. Phòng: Vẽ nhanh hình vuông 4 cạnh, cắm cọc thử rồi đếm.
+**Gợi ý 3 tầng:** (1) Muốn biết rào hết bao nhiêu mét thì phải tính cái gì trước? — (2) Đường rào có điểm đầu và điểm cuối tách rời nhau không? — (3) Với đường khép kín thì số cọc bằng đúng số khoảng.
 
 ### Bài E.2
-**Đáp số:** a) A · b) 7 cm · c) 80 cm · d) A · e) 23 cm · f) 44 cm · g) 56 cm
-**Hướng giải:** BẪY — Bán kính hay đường kính. Mọi bán kính của một hình tròn đều bằng nhau. Đường kính đi qua tâm và bằng **hai lần** bán kính. Muốn so sánh hai hình tròn thì đưa về cùng một đại lượng: cùng bán kính hoặc cùng đường kính.
-**Nhãn tư duy:** TD1, TD2. Điểm chốt: So sánh phải **cùng loại đại lượng** — bán kính với bán kính.
-**Lỗi thường gặp:** So bán kính của hình này với đường kính của hình kia. Phòng: Đổi hết về bán kính trước khi so sánh.
-**Gợi ý 3 tầng:** (1) Đường kính gấp mấy lần bán kính? — (2) Đưa cả hai hình về cùng bán kính. — (3) So hai bán kính vừa tính.
+**Đáp số:** a) 9 · b) (37 − 3) : 2 + 1 = 18 nhà · c) 3 + (9 − 1) × 2 = 19 · d) (35 − 3) : 2 + 1 = 17 · e) số lẻ — bắt đầu từ một số lẻ rồi cứ cộng thêm 2, cộng 2 không làm đổi tính chẵn lẻ
+**Hướng giải:** BẪY — Đếm số nhà bằng cách lấy hiệu chia khoảng cách. Dãy số nhà là dãy cách đều. Số hạng thứ k bằng số đầu cộng (k − 1) lần khoảng cách; còn **số lượng số hạng** bằng số khoảng cách cộng 1.
+**Nhãn tư duy:** TD2, TD4. Điểm chốt: Số khoảng cách luôn ít hơn số vật đúng 1 — quên cộng 1 là mất bài.
+**Lỗi thường gặp:** Lấy (số cuối − số đầu) : 2 rồi trả lời luôn. Phòng: Thử với dãy ngắn: 1, 3, 5 có 3 số nhưng chỉ 2 khoảng.
+**Gợi ý 3 tầng:** (1) Hai nhà liền nhau hơn kém nhau mấy đơn vị? — (2) Từ nhà đầu tới nhà thứ k phải bước bao nhiêu lần? — (3) Đếm số nhà thì cộng thêm 1 vào số khoảng cách.
 
 ### Bài E.3
-**Đáp số:** a) 20 000 đồng · b) 92 000 đồng · c) 20 tờ · d) 20 tờ
+**Đáp số:** a) 5 tờ · b) 54 000 đồng · c) 2 000 đồng · d) 48 000 đồng · e) 10 tờ · f) 46 000 đồng
 **Hướng giải:** Tính tiền hàng trước bằng phép nhân, rồi mới lấy tiền đưa trừ đi tiền hàng. Đổi tiền là phép chia: tờ lớn chia cho tờ nhỏ.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Phải tính **tiền hàng** trước khi trừ.
 **Lỗi thường gặp:** Lấy tiền đưa trừ ngay giá một quyển vở. Phòng: Viết rõ dòng “Tiền hàng là …” rồi mới sang bước hai.
 **Gợi ý 3 tầng:** (1) Mua tất cả hết bao nhiêu tiền? — (2) Đưa cho cô bán hàng bao nhiêu? — (3) Lấy tiền đưa trừ tiền hàng.
 
 ### Bài E.4
-**Đáp số:** a) 19 000 · b) 33 000 · c) 640 · d) 9 000 · e) 49 000 · f) 620 · g) 6 300 · h) 66 000
+**Đáp số:** a) 15 cm² · b) 112 cm · c) 100 cm · d) 289 cm² · e) 676 cm²
+**Hướng giải:** BẪY — Đơn vị diện tích. Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi ghi **cm**, diện tích ghi **cm²**.
+**Lỗi thường gặp:** Nhầm công thức chu vi với diện tích. Phòng: Vẽ hình và ghi số đo lên hình trước khi tính.
+**Gợi ý 3 tầng:** (1) Đề hỏi chu vi hay diện tích? — (2) Viết công thức ra trước. — (3) Ghi đúng đơn vị.
+
+### Bài E.5
+**Đáp số:** a) 21 000 · b) 66 000 · c) 80 · d) 8 600 · e) 42 000 · f) 80 000 · g) 71 000
 **Hướng giải:** 1 km = 1 000 m; 1 m = 100 cm; 1 cm = 10 mm; 1 kg = 1 000 g; 1 l = 1 000 ml. Đổi từ đơn vị lớn sang đơn vị bé thì nhân.
 **Nhãn tư duy:** TD1. Điểm chốt: Nhớ đúng **số lần** giữa hai đơn vị.
 **Lỗi thường gặp:** Nhầm 1 m = 10 cm. Phòng: Học thuộc bảng năm quan hệ trên và đọc lại trước khi làm.
 **Gợi ý 3 tầng:** (1) Đơn vị nào lớn hơn? — (2) Một đơn vị lớn bằng bao nhiêu đơn vị bé? — (3) Nhân số đã cho với số lần đó.
-
-### Bài E.5
-**Đáp số:** a) 12 cách · b) 12 cách · c) 9 cách · d) 15 cách · e) 30 cách
-**Hướng giải:** BẪY — Cộng hay nhân. Với mỗi loại bánh có đủ số cách chọn nước, nên tổng số cách bằng số loại bánh nhân số loại nước. Vẽ sơ đồ cây để nhìn thấy điều đó.
-**Nhãn tư duy:** TD2, TD4. Điểm chốt: Hai việc **nối tiếp nhau** thì nhân, không cộng.
-**Lỗi thường gặp:** Cộng số loại bánh với số loại nước. Phòng: Vẽ sơ đồ cây với hai nhánh đầu để thấy rõ.
-**Gợi ý 3 tầng:** (1) Chọn xong bánh đã đủ một bộ chưa? — (2) Với mỗi loại bánh có mấy cách chọn nước? — (3) Nhân hai số lại.
 
 ---
 

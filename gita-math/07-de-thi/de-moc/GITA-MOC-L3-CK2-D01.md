@@ -30,56 +30,56 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Đặt tính rồi tính.
 
-a) 363 × 5
-b) 533 × 6
-c) 2 596 : 4
-d) 1 401 : 3
-e) 3 528 : 8
+a) 252 × 6
+b) 1 944 : 3
+c) 121 × 2
+d) 3 368 : 8
+e) 1 062 : 6
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
-Đặt tính rồi tính.
+Ba món trong giỏ: **cá** 67 000 đồng · **chuối** 63 500 đồng · **cà chua** 29 500 đồng.
 
-a) 550 × 8
-b) 7 812 : 9
-c) 883 : 2
-d) 837 : 2
-e) 1 272 : 4
-f) 760 × 3
+a) Làm tròn giá từng món đến hàng chục nghìn để nhẩm cho nhanh.
+b) Cộng các giá đã làm tròn, được tổng ước lượng là bao nhiêu?
+c) Tính tổng đúng bằng cách cộng các giá gốc.
+d) Tổng ước lượng lệch bao nhiêu so với tổng đúng?
+e) Người mua đưa tờ 200 000 đồng. Người bán phải trả lại bao nhiêu?
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
-Giải từng bài toán nhỏ.
+Tóm tắt bằng sơ đồ đoạn thẳng rồi giải.
 
-a) 5 ngày đầu tuần một cửa hàng bán được lần lượt 287, 290, 279, 301, 288 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
-b) Trung bình mỗi ngày cửa hàng bán được 249 kg gạo. 5 ngày đầu bán được 257, 241, 238, 257, 249 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
-c) Trung bình mỗi ngày cửa hàng bán được 287 kg gạo. 3 ngày đầu bán được 276, 291, 290 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
-d) Trung bình mỗi ngày bán được 78 kg gạo. Hỏi 5 ngày bán được tất cả bao nhiêu ki-lô-gam?
+a) Cửa hàng và xưởng chứa tất cả 480 kg thóc. Cửa hàng chứa nhiều hơn xưởng 138 kg. Mỗi nơi chứa bao nhiêu kg?
+b) Nhóm Hoa Phượng và tổ Hai trồng được 324 cây. Nhóm Hoa Phượng trồng nhiều hơn tổ Hai 36 cây. Mỗi tổ trồng bao nhiêu cây?
+c) Hai lớp 4A và 4C có tất cả 782 quyển sách. Lớp 4A có nhiều hơn lớp 4C 260 quyển. Mỗi lớp có bao nhiêu quyển?
+d) Kho B và trang trại chứa tất cả 896 kg xi măng. Kho B chứa nhiều hơn trang trại 234 kg. Mỗi nơi chứa bao nhiêu kg?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
-Cho lưới gồm 3 hàng và 4 cột ô vuông nhỏ bằng nhau.
+Kẻ một bảng lịch nhỏ ra nháp rồi trả lời.
 
-a) Lưới có bao nhiêu ô vuông nhỏ?
-b) Lưới có bao nhiêu đường kẻ ngang, bao nhiêu đường kẻ dọc?
-c) Có tất cả bao nhiêu hình chữ nhật (kể cả hình vuông)?
-d) Có bao nhiêu hình vuông?
-e) Có bao nhiêu hình chữ nhật không phải hình vuông?
+a) Tháng 2 năm 2035 có bao nhiêu ngày?
+b) Năm 2035 có phải năm nhuận không?
+c) Ngày 1 tháng 2 là Thứ Hai. Hỏi ngày 17 tháng ấy là thứ mấy?
+d) Tháng ấy có bao nhiêu ngày Chủ nhật?
+e) Ngày cuối cùng của tháng là thứ mấy?
+f) Một năm thường có bao nhiêu ngày, năm nhuận có bao nhiêu ngày?
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
-Vẽ một hàng ô ra nháp rồi đánh dấu vị trí.
+Chú ý: chuyển đi thì bên này giảm, bên kia tăng.
 
-a) Hùng cao hơn Ngọc, Ngọc cao hơn Thảo. Ai cao nhất?
-b) Ai thấp nhất?
-c) Xếp ba bạn theo thứ tự từ thấp đến cao.
-d) Có 9 bạn xếp thành một hàng dọc. Hùng đứng thứ 3 từ đầu hàng. Hỏi Hùng đứng thứ mấy từ cuối hàng?
-e) Trước Hùng có mấy bạn?
-f) Sau Hùng có mấy bạn?
+a) An và Thảo có tất cả 282 quyển vở. Nếu An cho Thảo 29 quyển thì hai bạn có số vở bằng nhau. Hỏi lúc đầu An có bao nhiêu quyển?
+b) Sau khi cho, mỗi bạn có bao nhiêu quyển vở?
+c) Lúc đầu Thảo có bao nhiêu quyển vở?
+d) Lúc đầu An hơn Thảo bao nhiêu quyển?
+e) Một tổ có 2 bạn, mỗi bạn gấp được 4 bông hoa trong một giờ. Hỏi cả tổ gấp được bao nhiêu bông hoa trong một giờ?
+f) Cả tổ phải gấp 24 bông hoa thì làm trong mấy giờ?
 
 
 ---
@@ -89,98 +89,96 @@ f) Sau Hùng có mấy bạn?
 
 ### Bài 1, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **1 815**
-b) **3 198**
-c) **649**
-d) **467**
-e) **441**
+a) **1 512**
+b) **648**
+c) **242**
+d) **421**
+e) **177**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 363 × 5
+1. Xét ý a: 252 × 6
 2. Đọc vị: đây là dạng **Nhân, chia số tự nhiên**; dấu hiệu là Yêu cầu “đặt tính rồi tính” với phép nhân, chia.
 3. Kiến thức phải dùng: Kĩ thuật đặt tính nhân, chia.
 4. Cách làm: Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ chữ số.
 5. Lối tắt: Kiểm tra kết quả bằng phép tính ngược: thương × số chia = số bị chia.
-6. Kết quả: **1 815**.
+6. Kết quả: **1 512**.
 
 *Lỗi hay mắc:* Quên viết chữ số 0 ở thương nên thương thiếu chữ số.
 
-### Bài 2, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 2, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **4 400**
-b) **868**
-c) **441 dư 1**
-d) **418 dư 1**
-e) **318**
-f) **2 280**
+a) **cá: 70 000 · chuối: 60 000 · cà chua: 30 000**
+b) **160 000**
+c) **160 000**
+d) **0 đồng**
+e) **40 000 đồng**
 
 **Cách giải mẫu:**
 
-1. Đặt tính: viết 8 thẳng dưới hàng đơn vị của 550.
-2. Nhân 8 lần lượt với từng chữ số của 550, từ phải sang trái.
-3. Kết quả: 550 × 8 = 4 400.
-4. Ước lượng kiểm tra: khoảng 600 × 8 = 4 800 — cùng độ lớn ✓
-5. Đáp số: **4 400**.
+1. Đi chợ thì cần **biết nhanh khoảng bao nhiêu** trước, biết chính xác sau. Vì vậy nhẩm bằng số tròn trước rồi mới cộng số lẻ để bù.
+2. cá 67 000 → 70 000 · chuối 63 500 → 60 000 · cà chua 29 500 → 30 000
+3. Cộng số tròn: 70 000 + 60 000 + 30 000 = 160 000 đồng — đây là con số nhẩm trong đầu khi đứng ở chợ.
+4. Tổng đúng: 67 000 + 63 500 + 29 500 = **160 000 đồng**, lệch 0 đồng so với số nhẩm.
+5. Tiền trả lại: 200 000 − 160 000 = **40 000 đồng**.
 
-*Lỗi hay mắc:* Quên chữ số 0 ở giữa thương nên thương thiếu chữ số.
+*Lỗi hay mắc:* Lấy tổng đã làm tròn ra trả tiền.
 
 ### Bài 3, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **289 kg**
-b) **252 kg**
-c) **291 kg**
-d) **390 kg**
+a) **cửa hàng: 309 kg, xưởng: 171 kg**
+b) **nhóm Hoa Phượng: 180 cây, tổ Hai: 144 cây**
+c) **4A: 521 quyển, 4C: 261 quyển**
+d) **kho B: 565 kg, trang trại: 331 kg**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 5 ngày đầu tuần một cửa hàng bán được lần lượt 287, 290, 279, 301, 288 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
-2. Đọc vị: đây là dạng **Ba dạng bài trung bình cộng**; dấu hiệu là Cụm “trung bình mỗi …”.
-3. Kiến thức phải dùng: Quan hệ tổng – số lượng – trung bình cộng.
-4. Cách làm: Đi qua tổng làm trung gian.
-5. Lối tắt: Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng.
-6. Kết quả: **289 kg**.
+1. Xét ý a: Cửa hàng và xưởng chứa tất cả 480 kg thóc. Cửa hàng chứa nhiều hơn xưởng 138 kg. Mỗi nơi chứa bao nhiêu kg?
+2. Đọc vị: đây là dạng **Tổng – hiệu có lời văn**; dấu hiệu là “Có tất cả …” và “… nhiều hơn … là …”.
+3. Kiến thức phải dùng: Công thức tổng – hiệu, sơ đồ đoạn thẳng.
+4. Cách làm: Đọc vị tổng và hiệu → sơ đồ → công thức.
+5. Lối tắt: Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần.
+6. Kết quả: **cửa hàng: 309 kg, xưởng: 171 kg**.
 
-*Lỗi hay mắc:* Đi tìm ngay số còn thiếu mà chưa tính tổng.
+*Lỗi hay mắc:* Nhầm hiệu thành tổng khi đề diễn đạt vòng vo.
 
-### Bài 4, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **12**
-b) **4 đường ngang, 5 đường dọc**
-c) **60**
-d) **20**
-e) **40**
+a) **28**
+b) **không**
+c) **Thứ Tư**
+d) **4**
+e) **Chủ nhật**
+f) **365 ngày và 366 ngày**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Lưới có bao nhiêu ô vuông nhỏ?
-2. Đọc vị: đây là dạng **Đếm hình trong lưới**; dấu hiệu là Lưới ô vuông đều.
-3. Kiến thức phải dùng: Quy tắc đếm.
-4. Cách làm: Đếm theo đường kẻ hoặc theo cỡ.
-5. Lối tắt: Số cách chọn 2 trong k là k × (k − 1) : 2.
-6. Kết quả: **12**.
+1. Tháng 2 là tháng 2, nên có 28 ngày.
+2. Ngày 1 là Thứ Hai. Cứ sau 7 ngày thì lặp lại đúng thứ ấy.
+3. Từ ngày 1 đến ngày 17 cách nhau 16 ngày.
+4. 16 : 7 dư 2, nên lùi 2 bước từ Thứ Hai.
+5. Vậy ngày 17 là **Thứ Tư**.
 
-*Lỗi hay mắc:* Chỉ đếm ô nhỏ, quên hình ghép từ nhiều ô.
+*Lỗi hay mắc:* Đếm tay từng ngày nên vừa lâu vừa sai.
 
 ### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **Hùng**
-b) **Thảo**
-c) **Thảo, Ngọc, Hùng**
-d) **7**
-e) **2 bạn**
-f) **6 bạn**
+a) **170 quyển**
+b) **141 quyển**
+c) **112 quyển**
+d) **58 quyển**
+e) **8 bông**
+f) **3 giờ**
 
 **Cách giải mẫu:**
 
-1. Vẽ 9 ô liền nhau tượng trưng cho 9 bạn.
-2. Hùng đứng thứ 3 từ đầu, nên trước Hùng có 2 bạn.
-3. Sau Hùng còn 9 − 3 = 6 bạn.
-4. Tính từ cuối hàng, Hùng đứng thứ 6 + 1 = 7.
-5. Kiểm tra: 2 + 1 + 6 = 9 ✓
-6. Đáp số ý d: **thứ 7 từ cuối**.
+1. Sau khi cho, hai bạn bằng nhau, nên mỗi bạn có 282 : 2 = 141 (quyển).
+2. An đã cho đi 29 quyển, nên lúc đầu An có 141 + 29 = 170 (quyển).
+3. Lúc đầu Thảo có 282 − 170 = 112 (quyển).
+4. Hiệu lúc đầu: 170 − 112 = 58 (quyển) — đúng bằng hai lần số vở đã chuyển.
+5. Đáp số: **lúc đầu An có 170 quyển**.
 
-*Lỗi hay mắc:* Lấy tổng số bạn trừ thứ tự từ đầu rồi ghi luôn, quên cộng 1.
+*Lỗi hay mắc:* Cho rằng hiệu lúc đầu bằng đúng số vở đã chuyển.
 
 ---
 
@@ -191,10 +189,10 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài | Đo cái gì | Sai bài này nghĩa là | Học lại ở đâu |
 |:--:|---|---|---|
 | Bài 1 | Nhân, chia số tự nhiên | Quên viết chữ số 0 ở thương nên thương thiếu chữ số. | Nhóm chuyên đề **—** · mức — |
-| Bài 2 | Nhân, chia với số có một chữ số | Quên chữ số 0 ở giữa thương nên thương thiếu chữ số. | Nhóm chuyên đề **—** · mức — |
-| Bài 3 | Ba dạng bài trung bình cộng | Đi tìm ngay số còn thiếu mà chưa tính tổng. | Nhóm chuyên đề **—** · mức — |
-| Bài 4 | Đếm hình trong lưới | Chỉ đếm ô nhỏ, quên hình ghép từ nhiều ô. | Nhóm chuyên đề **—** · mức — |
-| Bài 5 | Suy luận thứ tự, vị trí trong hàng | Lấy tổng số bạn trừ thứ tự từ đầu rồi ghi luôn, quên cộng 1. | Nhóm chuyên đề **—** · mức — |
+| Bài 2 | Tính nhanh tổng | Lấy tổng đã làm tròn ra trả tiền. | Nhóm chuyên đề **—** · mức — |
+| Bài 3 | Tổng – hiệu có lời văn | Nhầm hiệu thành tổng khi đề diễn đạt vòng vo. | Nhóm chuyên đề **—** · mức — |
+| Bài 4 | Lịch, tháng, năm nhuận | Đếm tay từng ngày nên vừa lâu vừa sai. | Nhóm chuyên đề **—** · mức — |
+| Bài 5 | Tổng – hiệu có hiệu ẩn sau một lần chuyển | Cho rằng hiệu lúc đầu bằng đúng số vở đã chuyển. | Nhóm chuyên đề **—** · mức — |
 
 ---
 

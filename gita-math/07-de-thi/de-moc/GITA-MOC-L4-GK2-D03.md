@@ -30,55 +30,56 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Đặt tính rồi tính.
 
-a) 83 648 − 60 243
-b) 96 372 + 60 948
-c) 81 994 − 46 867
-d) 66 172 − 26 658
-e) 78 743 + 31 178
+a) 59 103 + 80 419
+b) 87 685 + 57 039
+c) 85 923 + 62 748
+d) 93 436 + 19 504
+e) 35 237 + 90 239
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
-Điền số thích hợp vào chỗ chấm.
+Tìm x, trình bày từng bước.
 
-a) 86 m² = … cm²
-b) 23 dm² = … cm²
-c) 66 m² = … dm²
-d) 4 000 dm² = … m²
-e) 14 m² = … cm²
-f) 40 dm² = … cm²
+a) x × 6 − 165 = 855
+b) (x + 38) × 9 = 1 998
+c) x × 3 + 13 = 316
+d) (x − 190) × 9 = -99
+e) x × 5 + 234 = 339
+f) (x − 294) × 8 = -1 296
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
 Giải bằng cách quy về tổng số ngày công.
 
-a) 4 người làm xong một công việc trong 9 ngày. Hỏi 3 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
-b) 4 người làm xong một công việc trong 18 ngày. Hỏi 6 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
-c) 6 người làm xong một công việc trong 12 ngày. Hỏi 3 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
-d) 3 người làm xong một công việc trong 12 ngày. Hỏi 2 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
-e) 4 người làm xong một công việc trong 6 ngày. Hỏi 6 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
-f) 4 người làm xong một công việc trong 30 ngày. Hỏi 5 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
+a) 4 người làm xong một công việc trong 18 ngày. Hỏi 6 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
+b) 2 người làm xong một công việc trong 60 ngày. Hỏi 6 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
+c) 4 người làm xong một công việc trong 9 ngày. Hỏi 12 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
+d) 2 người làm xong một công việc trong 18 ngày. Hỏi 4 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
-Chú ý đơn vị mà đề hỏi.
+Một căn phòng hình chữ nhật dài **7 m**, rộng **4 m**, lát bằng gạch vuông cạnh **20 cm**.
 
-a) Một xe chở 20 bao xi măng, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ xi măng?
-b) Một xe chở 9 bao gạo, mỗi bao 50 kg. Hỏi xe chở bao nhiêu tạ gạo?
-c) Một xe chở 22 bao đường, mỗi bao 40 kg. Hỏi xe chở bao nhiêu tạ đường?
-d) Một xe chở 16 bao muối, mỗi bao 40 kg. Hỏi xe chở bao nhiêu tạ muối?
+a) Tính diện tích nền nhà theo mét vuông.
+b) Đổi diện tích nền nhà ra xăng-ti-mét vuông.
+c) Diện tích một viên gạch là bao nhiêu xăng-ti-mét vuông?
+d) Cần bao nhiêu viên gạch để lát kín nền nhà?
+e) Mỗi viên gạch giá 25 000 đồng. Mua gạch lát hết bao nhiêu tiền?
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
 Dùng phương pháp giả thiết tạm.
 
-a) Vừa gà vừa chó có 27 con, đếm được tất cả 78 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
-b) Vừa gà vừa chó có 39 con, đếm được tất cả 148 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
-c) Vừa gà vừa chó có 48 con, đếm được tất cả 138 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
-d) Vừa gà vừa chó có 57 con, đếm được tất cả 194 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
+a) Vừa gà vừa chó có 69 con, đếm được tất cả 198 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
+b) Vừa gà vừa chó có 67 con, đếm được tất cả 200 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
+c) Vừa gà vừa chó có 64 con, đếm được tất cả 204 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
+d) Vừa gà vừa chó có 52 con, đếm được tất cả 152 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
+e) Vừa gà vừa chó có 46 con, đếm được tất cả 104 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
+f) Vừa gà vừa chó có 31 con, đếm được tất cả 84 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
 
 
 ---
@@ -88,53 +89,53 @@ d) Vừa gà vừa chó có 57 con, đếm được tất cả 194 chân. Hỏi 
 
 ### Bài 1, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **23 405**
-b) **157 320**
-c) **35 127**
-d) **39 514**
-e) **109 921**
+a) **139 522**
+b) **144 724**
+c) **148 671**
+d) **112 940**
+e) **125 476**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 83 648 − 60 243
+1. Xét ý a: 59 103 + 80 419
 2. Đọc vị: đây là dạng **Cộng, trừ số tự nhiên**; dấu hiệu là Yêu cầu “đặt tính rồi tính”.
 3. Kiến thức phải dùng: Kĩ thuật đặt tính, nhớ và mượn.
 4. Cách làm: Đặt tính thẳng hàng, tính từ hàng đơn vị.
 5. Lối tắt: Làm tròn một số hạng để ước lượng trước, dùng kết quả ước lượng để phát hiện sai sót.
-6. Kết quả: **23 405**.
+6. Kết quả: **139 522**.
 
 *Lỗi hay mắc:* Viết lệch hàng khi hai số có số chữ số khác nhau.
 
 ### Bài 2, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **860 000**
-b) **2 300**
-c) **6 600**
-d) **40**
-e) **140 000**
-f) **4 000**
+a) **x = 170**
+b) **x = 184**
+c) **x = 101**
+d) **x = 179**
+e) **x = 21**
+f) **x = 132**
 
 **Cách giải mẫu:**
 
-1. 1 m² = 10 000 cm².
-2. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**.
-3. 86 × 10 000 = 860 000 (cm²).
-4. Đáp số: **860 000 cm²**.
+1. Xét ý a: x × 6 − 165 = 855
+2. Đọc vị: đây là dạng **Tìm x qua hai bước**; dấu hiệu là x nằm trong một cụm có hai phép tính.
+3. Kiến thức phải dùng: Quan hệ các thành phần phép tính, thứ tự thực hiện.
+4. Cách làm: Gỡ dần từ phép ngoài cùng vào trong.
+5. Lối tắt: Thay x tìm được vào đề để thử — nhanh hơn dò lại từng bước.
+6. Kết quả: **x = 170**.
 
-*Lỗi hay mắc:* Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc.
+*Lỗi hay mắc:* Gỡ phép nhân trước khi gỡ phép cộng ở ngoài.
 
-### Bài 3, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 3, (2 điểm — mỗi ý 0,5 điểm)
 
 a) **12 ngày**
-b) **12 ngày**
-c) **24 ngày**
-d) **18 ngày**
-e) **4 ngày**
-f) **24 ngày**
+b) **20 ngày**
+c) **3 ngày**
+d) **9 ngày**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 4 người làm xong một công việc trong 9 ngày. Hỏi 3 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
+1. Xét ý a: 4 người làm xong một công việc trong 18 ngày. Hỏi 6 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
 2. Đọc vị: đây là dạng **Tỉ lệ nghịch**; dấu hiệu là Số người tăng thì thời gian giảm.
 3. Kiến thức phải dùng: Đại lượng tỉ lệ nghịch, tổng số ngày công.
 4. Cách làm: Quy về tổng số ngày công rồi chia.
@@ -143,39 +144,41 @@ f) **24 ngày**
 
 *Lỗi hay mắc:* Nhân chia như tỉ lệ thuận nên càng nhiều người lại càng lâu.
 
-### Bài 4, (2 điểm — mỗi ý 0,5 điểm)
+### Bài 4, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **12 tạ**
-b) **4 tạ 50 kg**
-c) **8 tạ 80 kg**
-d) **6 tạ 40 kg**
-
-**Cách giải mẫu:**
-
-1. Xét ý a: Một xe chở 20 bao xi măng, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ xi măng?
-2. Đọc vị: đây là dạng **Bài toán đại lượng có lời văn**; dấu hiệu là Đơn vị trong câu hỏi khác đơn vị trong dữ kiện.
-3. Kiến thức phải dùng: Nhân, chia số tự nhiên; đổi đơn vị khối lượng.
-4. Cách làm: Tính theo đơn vị dữ kiện rồi đổi ở bước cuối.
-5. Lối tắt: 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ.
-6. Kết quả: **12 tạ**.
-
-*Lỗi hay mắc:* Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ.
-
-### Bài 5, (2 điểm — mỗi ý 0,5 điểm)
-
-a) **15 con gà, 12 con chó**
-b) **4 con gà, 35 con chó**
-c) **27 con gà, 21 con chó**
-d) **17 con gà, 40 con chó**
+a) **7 × 4 = 28 m²**
+b) **28 m² = 280 000 cm²**
+c) **20 × 20 = 400 cm²**
+d) **280 000 : 400 = 700 viên**
+e) **700 × 25 000 = 17 500 000 đồng**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Vừa gà vừa chó có 27 con, đếm được tất cả 78 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
+1. Diện tích nền: 7 × 4 = **28 m²**.
+2. Muốn chia cho diện tích viên gạch thì hai diện tích phải **cùng đơn vị**. Viên gạch đo bằng xăng-ti-mét nên đổi nền nhà ra cm²: 1 m² = 10 000 cm², nên 28 m² = 280 000 cm².
+3. Diện tích một viên: 20 × 20 = 400 cm².
+4. Số viên: 280 000 : 400 = **700 viên**.
+5. Tiền gạch: 700 × 25 000 = **17 500 000 đồng**.
+
+*Lỗi hay mắc:* Chia thẳng m² cho cm², hoặc đổi 1 m² thành 100 cm².
+
+### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
+
+a) **39 con gà, 30 con chó**
+b) **34 con gà, 33 con chó**
+c) **26 con gà, 38 con chó**
+d) **28 con gà, 24 con chó**
+e) **40 con gà, 6 con chó**
+f) **20 con gà, 11 con chó**
+
+**Cách giải mẫu:**
+
+1. Xét ý a: Vừa gà vừa chó có 69 con, đếm được tất cả 198 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
 2. Đọc vị: đây là dạng **Giả thiết tạm**; dấu hiệu là Hai loại đối tượng, biết tổng số và tổng của một đại lượng khác.
 3. Kiến thức phải dùng: Phương pháp giả thiết tạm.
 4. Cách làm: Giả sử đồng nhất một loại → tính phần chênh → chia cho hiệu đơn vị.
 5. Lối tắt: Số chó = (số chân − 2 × số con) : 2 — thuộc công thức rút gọn để nhẩm.
-6. Kết quả: **15 con gà, 12 con chó**.
+6. Kết quả: **39 con gà, 30 con chó**.
 
 *Lỗi hay mắc:* Chia số chân thiếu cho 4 thay vì cho hiệu số chân của hai loài.
 
@@ -188,9 +191,9 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài | Đo cái gì | Sai bài này nghĩa là | Học lại ở đâu |
 |:--:|---|---|---|
 | Bài 1 | Cộng, trừ số tự nhiên | Viết lệch hàng khi hai số có số chữ số khác nhau. | Nhóm chuyên đề **—** · mức — |
-| Bài 2 | Đổi đơn vị diện tích | Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. | Nhóm chuyên đề **—** · mức — |
+| Bài 2 | Tìm x qua hai bước | Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. | Nhóm chuyên đề **—** · mức — |
 | Bài 3 | Tỉ lệ nghịch | Nhân chia như tỉ lệ thuận nên càng nhiều người lại càng lâu. | Nhóm chuyên đề **—** · mức — |
-| Bài 4 | Bài toán đại lượng có lời văn | Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. | Nhóm chuyên đề **—** · mức — |
+| Bài 4 | Bài toán lát gạch nền nhà | Chia thẳng m² cho cm², hoặc đổi 1 m² thành 100 cm². | Nhóm chuyên đề **—** · mức — |
 | Bài 5 | Giả thiết tạm | Chia số chân thiếu cho 4 thay vì cho hiệu số chân của hai loài. | Nhóm chuyên đề **—** · mức — |
 
 ---

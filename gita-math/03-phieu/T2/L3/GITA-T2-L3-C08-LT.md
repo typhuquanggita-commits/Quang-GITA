@@ -51,64 +51,55 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — VÍ DỤ DẪN VÀO CHỦ ĐỀ · Mức M1 — Nhận biết · 5 phút · 5 điểm
 
-### Bài 1. (1 điểm) Đổi đơn vị đo độ dài và khối lượng
-
-Điền số thích hợp vào chỗ chấm.
-
-a) 19 tạ = … kg
-b) 38 cm = … mm
-c) 36 dam = … m
-d) 64 tạ = … g
-e) 41 hg = … g
-f) 84 m = … dm
-g) 78 tạ = … hg
-h) 25 km = … dm
-
-### Bài 2. (1 điểm) Đổi số đo khối lượng có nhiều đơn vị
-
-Điền vào chỗ chấm.
-
-a) 1 890 kg = … tấn … tạ … kg
-b) 5 492 kg = … tấn … tạ … kg
-c) 83 kg = … kg
-d) 5 tạ 24 kg = … kg
-e) 2 tấn 3 tạ 2 kg = … kg
-f) 4 195 kg = … tấn … tạ … kg
-g) 4 986 kg = … tấn … tạ … kg
-
-### Bài 3. (1 điểm) Chu vi và diện tích hình chữ nhật, hình vuông
-
-Tính theo yêu cầu, ghi rõ đơn vị.
-
-a) Hình vuông có cạnh 19 cm. Tính diện tích.
-b) Hình chữ nhật có chiều dài 39 cm, chiều rộng 21 cm. Tính chu vi.
-c) Hình chữ nhật có chiều dài 54 cm, chiều rộng 13 cm. Tính diện tích.
-d) Hình vuông có cạnh 49 cm. Tính chu vi.
-e) Hình vuông có cạnh 55 cm. Tính diện tích.
-f) Hình chữ nhật có chiều dài 58 cm, chiều rộng 37 cm. Tính chu vi.
-g) Hình vuông có cạnh 21 cm. Tính chu vi.
-
-### Bài 4. (1 điểm) Mi-li-lít và lít
+### Bài 1. (1 điểm) Mi-li-lít và lít
 
 Điền số hoặc dấu thích hợp.
 
-a) 20 l 342 ml = … ml
-b) 25 l = … ml
-c) 28 000 ml = … l
-d) 31 l … 2 538 ml
-e) 40 l 151 ml = … ml
+a) 40 000 ml = … l
+b) 10 l 628 ml = … ml
+c) 28 l … 2 046 ml
+d) 29 l = … ml
+e) 28 000 ml = … l
+f) 12 l … 1 073 ml
+g) 37 l = … ml
+
+### Bài 2. (1 điểm) Đổi đơn vị đo độ dài và khối lượng
+
+Điền số thích hợp vào chỗ chấm.
+
+a) 85 km = … dam
+b) 90 kg = … dag
+c) 76 yến = … dag
+d) 31 m = … dm
+e) 62 tấn = … kg
+f) 61 m = … dm
+
+### Bài 3. (1 điểm) Tìm thành phần chưa biết của phép tính
+
+Tìm x.
+
+a) x : 9 = 69
+b) x × 6 = 438
+c) x : 7 = 28
+d) x + 6 = 93
+
+### Bài 4. (1 điểm) Đổi số đo khối lượng có nhiều đơn vị
+
+Điền vào chỗ chấm.
+
+a) 1 tấn 9 tạ 32 kg = … kg
+b) 5 767 kg = … tấn … tạ … kg
+c) 6 908 kg = … tấn … tạ … kg
+d) 4 tấn 5 tạ 83 kg = … kg
 
 ### Bài 5. (1 điểm) Đơn vị đo thời gian: giờ và phút
 
 Điền kết quả, viết dạng giờ và phút.
 
-a) 4 giờ 46 phút − 32 phút = … (viết dạng giờ và phút)
-b) 3 giờ 13 phút + 73 phút = … (viết dạng giờ và phút)
-c) 9 giờ 33 phút = … phút
-d) 203 phút = … giờ … phút
-e) 6 giờ 26 phút = … phút
-f) 8 giờ 10 phút + 101 phút = … (viết dạng giờ và phút)
-g) 4 giờ 44 phút − 197 phút = … (viết dạng giờ và phút)
+a) 5 giờ 56 phút − 290 phút = … (viết dạng giờ và phút)
+b) 1 giờ 44 phút + 22 phút = … (viết dạng giờ và phút)
+c) 173 phút = … giờ … phút
+d) 4 giờ 16 phút = … phút
 
 ---
 
@@ -286,57 +277,55 @@ f) Làm lại ví dụ mẫu ở trên và ghi đáp số.
 
 ## PHẦN E — LUYỆN NHẬN BIẾT – THÔNG HIỂU · Mức M2 — Thông hiểu · 30 phút · 40 điểm
 
-### Bài 1. (8 điểm) Đổi đơn vị đo ở lớp 3
+### Bài 1. (8 điểm) Đọc chỉ số công tơ điện
 
-Điền số thích hợp.
+Công tơ điện nhà bạn Bình đầu tháng chỉ **41 825**, cuối tháng chỉ **41 929**. Dùng hai số này cho cả bài.
 
-a) 38 cm = … mm
-b) 86 kg = … g
-c) 7 km = … m
-d) 53 l = … ml
-e) 26 m = … cm
+a) Chỉ số cuối tháng là 41 929. Số ấy gồm mấy chục nghìn, mấy nghìn, mấy trăm, mấy chục và mấy đơn vị?
+b) Số điện dùng trong tháng bằng chỉ số cuối trừ chỉ số đầu. Nhà bạn ấy dùng bao nhiêu kW·h?
+c) Làm tròn chỉ số cuối 41 929 đến hàng nghìn.
+d) Nhà bên cạnh có chỉ số cuối là 50 629. Chỉ số nào lớn hơn?
+e) Tháng sau chỉ số cuối là 42 060. Tháng sau nhà bạn ấy dùng nhiều hơn hay ít hơn tháng này, và chênh bao nhiêu kW·h?
 
-### Bài 2. (8 điểm) Phép chia có dư
-
-Thực hiện phép chia, ghi rõ thương và số dư.
-
-a) 1 167 : 5 = ? (dư ?)
-b) 1 342 : 6 = ? (dư ?)
-c) 1 684 : 6 = ? (dư ?)
-d) 827 : 6 = ? (dư ?)
-e) 2 609 : 9 = ? (dư ?)
-
-### Bài 3. (8 điểm) Tiền Việt Nam: mua bán, đổi tiền, trả lại
+### Bài 2. (8 điểm) Tiền Việt Nam: mua bán, đổi tiền, trả lại
 
 Ghi rõ đơn vị đồng ở mọi kết quả.
 
-a) Đổi một tờ 20 000 đồng ra các tờ 1 000 đồng thì được mấy tờ?
-b) Mua 6 quyển vở, mỗi quyển 7 000 đồng. Hết bao nhiêu tiền?
-c) Mua 4 quyển vở, mỗi quyển 3 000 đồng. Đưa cô bán hàng một tờ 20 000 đồng. Cô phải trả lại bao nhiêu tiền?
-d) Mua 6 quyển vở, mỗi quyển 7 000 đồng. Hết bao nhiêu tiền?
-e) Mua 3 quyển vở, mỗi quyển 3 000 đồng. Đưa cô bán hàng một tờ 10 000 đồng. Cô phải trả lại bao nhiêu tiền?
+a) Đổi một tờ 20 000 đồng ra các tờ 5 000 đồng thì được mấy tờ?
+b) Mua 3 quyển vở, mỗi quyển 3 000 đồng. Hết bao nhiêu tiền?
+c) Mua 6 quyển vở, mỗi quyển 25 000 đồng. Đưa cô bán hàng một tờ 200 000 đồng. Cô phải trả lại bao nhiêu tiền?
+d) Đổi một tờ 50 000 đồng ra các tờ 1 000 đồng thì được mấy tờ?
+e) Mua 4 quyển vở, mỗi quyển 8 000 đồng. Đưa cô bán hàng một tờ 50 000 đồng. Cô phải trả lại bao nhiêu tiền?
 
-### Bài 4. (8 điểm) Đếm số hạng của dãy cách đều
+### Bài 3. (8 điểm) Số nhà trên một dãy phố
 
-Đếm số số hạng của mỗi dãy.
+Một bên phố có các nhà mang số lẻ, bắt đầu từ số **1** và kết thúc ở số **39**, hai nhà liền nhau hơn kém nhau 2.
 
-a) Dãy 16, 18, 20, …, 62 có bao nhiêu số hạng?
-b) Dãy 3, 13, 23, …, 103 có bao nhiêu số hạng?
-c) Dãy 7, 11, 15, …, 155 có bao nhiêu số hạng?
-d) Dãy 6, 8, 10, …, 44 có bao nhiêu số hạng?
-e) Dãy 4, 6, 8, …, 80 có bao nhiêu số hạng?
-f) Dãy 7, 12, 17, …, 122 có bao nhiêu số hạng?
+a) Số nhà đầu dãy là 1, các nhà tiếp theo là 3, 5, … Số nhà thứ tư là số nào?
+b) Số nhà cuối dãy là 39. Dãy phố này có bao nhiêu nhà?
+c) Nhà thứ 7 tính từ đầu dãy mang số nào?
+d) Nhà mang số 27 là nhà thứ mấy tính từ đầu dãy?
+e) Các số nhà trong dãy này là số chẵn hay số lẻ? Vì sao?
 
-### Bài 5. (8 điểm) Chia kẹo — chia hết và chia có dư
+### Bài 4. (8 điểm) Đổi đơn vị đo ở lớp 3
 
-Ghi rõ thương và số dư trong mọi câu trả lời.
+Điền số thích hợp.
 
-a) Có 79 cái kẹo chia đều cho 10 bạn. Mỗi bạn được mấy cái và còn thừa mấy cái?
-b) Muốn chia hết, phải bớt đi ít nhất bao nhiêu cái kẹo?
-c) Hoặc phải thêm vào ít nhất bao nhiêu cái kẹo?
-d) Nếu thêm 1 cái thì mỗi bạn được mấy cái?
-e) Nếu chỉ chia cho 9 bạn thì mỗi bạn được mấy cái, thừa mấy cái?
-f) Số kẹo phải là số như thế nào để chia hết cho 10 bạn?
+a) 41 m = … cm
+b) 18 km = … m
+c) 60 kg = … g
+d) 80 cm = … mm
+e) 84 l = … ml
+
+### Bài 5. (8 điểm) Rào quanh mảnh vườn
+
+Một mảnh vườn hình chữ nhật dài **38 m**, rộng **22 m**.
+
+a) Tính chu vi mảnh vườn.
+b) Rào quanh vườn hết bao nhiêu mét lưới, biết chừa một cửa rộng 2 m?
+c) Cắm cọc quanh vườn, hai cọc liền nhau cách nhau 2 m. Cần bao nhiêu cọc?
+d) Mỗi mét lưới giá 45 000 đồng. Mua lưới rào hết bao nhiêu tiền?
+e) Diện tích mảnh vườn là bao nhiêu?
 
 ---
 
@@ -345,31 +334,31 @@ f) Số kẹo phải là số như thế nào để chia hết cho 10 bạn?
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài A.1
-**Đáp số:** a) 1 900 · b) 380 · c) 360 · d) 6 400 000 · e) 4 100 · f) 840 · g) 78 000 · h) 250 000
-**Hướng giải:** Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
-**Nhãn tư duy:** TD1. Điểm chốt: Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
-**Lỗi thường gặp:** Đổi ngược chiều nên nhân thành chia. Phòng: Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.
-
-### Bài A.2
-**Đáp số:** a) 1 tấn 8 tạ 90 kg · b) 5 tấn 4 tạ 92 kg · c) 83 · d) 524 · e) 2 302 · f) 4 tấn 1 tạ 95 kg · g) 4 tấn 9 tạ 86 kg
-**Hướng giải:** 1 tấn = 10 tạ = 1 000 kg; 1 tạ = 100 kg; 1 yến = 10 kg. Đổi tất cả về ki-lô-gam rồi cộng lại; hoặc ngược lại, chia dần từ đơn vị lớn xuống đơn vị bé và lấy phần dư.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Đổi hết về **một đơn vị chung** trước khi cộng.
-**Lỗi thường gặp:** Cộng thẳng các số đứng trước những đơn vị khác nhau. Phòng: Viết mỗi thành phần thành số ki-lô-gam ngay bên dưới rồi mới cộng.
-
-### Bài A.3
-**Đáp số:** a) 361 cm² · b) 120 cm · c) 702 cm² · d) 196 cm · e) 3 025 cm² · f) 190 cm · g) 84 cm
-**Hướng giải:** Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích hình chữ nhật = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi ghi đơn vị **cm**, diện tích ghi đơn vị **cm²** — sai đơn vị là mất điểm.
-**Lỗi thường gặp:** Nhầm công thức chu vi với diện tích; quên nhân 2 ở chu vi. Phòng: Vẽ hình và ghi số đo lên hình trước khi tính.
-
-### Bài A.4
-**Đáp số:** a) 20 342 · b) 25 000 · c) 28 · d) > · e) 40 151
+**Đáp số:** a) 40 · b) 10 628 · c) > · d) 29 000 · e) 28 · f) > · g) 37 000
 **Hướng giải:** 1 lít = 1 000 mi-li-lít. Đổi từ đơn vị lớn sang đơn vị bé thì nhân, ngược lại thì chia. Muốn so sánh thì phải đưa về cùng một đơn vị trước.
 **Nhãn tư duy:** TD1. Điểm chốt: So sánh **chỉ sau khi** đã đưa về cùng đơn vị.
 **Lỗi thường gặp:** So thẳng hai con số mà bỏ qua đơn vị. Phòng: Viết lại cả hai vế theo mi-li-lít rồi mới so.
 
+### Bài A.2
+**Đáp số:** a) 8 500 · b) 9 000 · c) 76 000 · d) 310 · e) 62 000 · f) 610
+**Hướng giải:** Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
+**Nhãn tư duy:** TD1. Điểm chốt: Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
+**Lỗi thường gặp:** Đổi ngược chiều nên nhân thành chia. Phòng: Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.
+
+### Bài A.3
+**Đáp số:** a) x = 621 · b) x = 73 · c) x = 196 · d) x = 87
+**Hướng giải:** Nhớ quy tắc: số hạng chưa biết = tổng − số hạng đã biết; số bị trừ = hiệu + số trừ; thừa số chưa biết = tích : thừa số đã biết; số bị chia = thương × số chia.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: x đứng ở **vị trí nào** trong phép tính quyết định quy tắc dùng.
+**Lỗi thường gặp:** Áp dụng nhầm quy tắc của số trừ cho số bị trừ. Phòng: Gọi tên x trước (x là số hạng? số bị trừ? thừa số?) rồi mới viết quy tắc.
+
+### Bài A.4
+**Đáp số:** a) 1 932 · b) 5 tấn 7 tạ 67 kg · c) 6 tấn 9 tạ 8 kg · d) 4 583
+**Hướng giải:** 1 tấn = 10 tạ = 1 000 kg; 1 tạ = 100 kg; 1 yến = 10 kg. Đổi tất cả về ki-lô-gam rồi cộng lại; hoặc ngược lại, chia dần từ đơn vị lớn xuống đơn vị bé và lấy phần dư.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Đổi hết về **một đơn vị chung** trước khi cộng.
+**Lỗi thường gặp:** Cộng thẳng các số đứng trước những đơn vị khác nhau. Phòng: Viết mỗi thành phần thành số ki-lô-gam ngay bên dưới rồi mới cộng.
+
 ### Bài A.5
-**Đáp số:** a) 4 giờ 14 phút · b) 4 giờ 26 phút · c) 573 · d) 3 giờ 23 phút · e) 386 · f) 9 giờ 51 phút · g) 1 giờ 27 phút
+**Đáp số:** a) 1 giờ 6 phút · b) 2 giờ 6 phút · c) 2 giờ 53 phút · d) 256
 **Hướng giải:** 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
 **Lỗi thường gặp:** Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. Phòng: Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không.
@@ -470,39 +459,39 @@ f) Số kẹo phải là số như thế nào để chia hết cho 10 bạn?
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.1
-**Đáp số:** a) 380 · b) 86 000 · c) 7 000 · d) 53 000 · e) 2 600
-**Hướng giải:** 1 km = 1 000 m; 1 m = 100 cm; 1 cm = 10 mm; 1 kg = 1 000 g; 1 l = 1 000 ml. Đổi từ đơn vị lớn sang đơn vị bé thì nhân.
-**Nhãn tư duy:** TD1. Điểm chốt: Nhớ đúng **số lần** giữa hai đơn vị.
-**Lỗi thường gặp:** Nhầm 1 m = 10 cm. Phòng: Học thuộc bảng năm quan hệ trên và đọc lại trước khi làm.
-**Gợi ý 3 tầng:** (1) Đơn vị nào lớn hơn? — (2) Một đơn vị lớn bằng bao nhiêu đơn vị bé? — (3) Nhân số đã cho với số lần đó.
+**Đáp số:** a) 4 chục nghìn, 1 nghìn, 9 trăm, 2 chục, 9 đơn vị · b) 41 929 − 41 825 = 104 kW·h · c) 42 000 · d) 50 629 · e) nhiều hơn 27 kW·h
+**Hướng giải:** Chỉ số công tơ là một số cộng dồn, nên số điện dùng trong tháng là **hiệu** hai chỉ số. Các ý còn lại là cấu tạo số, làm tròn và so sánh trên chính hai con số ấy.
+**Nhãn tư duy:** TD1, TD2. Điểm chốt: Chỉ số công tơ là số cộng dồn, không phải lượng dùng trong tháng.
+**Lỗi thường gặp:** Lấy thẳng chỉ số cuối làm số điện đã dùng. Phòng: Hỏi lại: con số này là 'đã dùng bao nhiêu' hay 'đếm tới đâu rồi'?
+**Gợi ý 3 tầng:** (1) Hai chỉ số đầu và cuối, cái nào lớn hơn? Vì sao? — (2) Muốn biết dùng bao nhiêu trong tháng thì làm phép gì với hai số ấy? — (3) Tách số theo hàng thì đọc từ hàng lớn nhất về hàng đơn vị.
 
 ### Bài E.2
-**Đáp số:** a) 233 dư 2 · b) 223 dư 4 · c) 280 dư 4 · d) 137 dư 5 · e) 289 dư 8
-**Hướng giải:** BẪY — Số dư phải bé hơn số chia. Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
-**Nhãn tư duy:** TD1. Điểm chốt: Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
-**Lỗi thường gặp:** Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. Phòng: Thử lại bằng công thức số bị chia = số chia × thương + số dư.
-**Gợi ý 3 tầng:** (1) Đặt tính chia theo cột. — (2) Mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. — (3) Thử lại: nhân thương với số chia rồi cộng số dư.
-
-### Bài E.3
-**Đáp số:** a) 20 tờ · b) 42 000 đồng · c) 8 000 đồng · d) 42 000 đồng · e) 1 000 đồng
+**Đáp số:** a) 4 tờ · b) 9 000 đồng · c) 50 000 đồng · d) 50 tờ · e) 18 000 đồng
 **Hướng giải:** Tính tiền hàng trước bằng phép nhân, rồi mới lấy tiền đưa trừ đi tiền hàng. Đổi tiền là phép chia: tờ lớn chia cho tờ nhỏ.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Phải tính **tiền hàng** trước khi trừ.
 **Lỗi thường gặp:** Lấy tiền đưa trừ ngay giá một quyển vở. Phòng: Viết rõ dòng “Tiền hàng là …” rồi mới sang bước hai.
 **Gợi ý 3 tầng:** (1) Mua tất cả hết bao nhiêu tiền? — (2) Đưa cho cô bán hàng bao nhiêu? — (3) Lấy tiền đưa trừ tiền hàng.
 
+### Bài E.3
+**Đáp số:** a) 7 · b) (39 − 1) : 2 + 1 = 20 nhà · c) 1 + (7 − 1) × 2 = 13 · d) (27 − 1) : 2 + 1 = 14 · e) số lẻ — bắt đầu từ một số lẻ rồi cứ cộng thêm 2, cộng 2 không làm đổi tính chẵn lẻ
+**Hướng giải:** BẪY — Đếm số nhà bằng cách lấy hiệu chia khoảng cách. Dãy số nhà là dãy cách đều. Số hạng thứ k bằng số đầu cộng (k − 1) lần khoảng cách; còn **số lượng số hạng** bằng số khoảng cách cộng 1.
+**Nhãn tư duy:** TD2, TD4. Điểm chốt: Số khoảng cách luôn ít hơn số vật đúng 1 — quên cộng 1 là mất bài.
+**Lỗi thường gặp:** Lấy (số cuối − số đầu) : 2 rồi trả lời luôn. Phòng: Thử với dãy ngắn: 1, 3, 5 có 3 số nhưng chỉ 2 khoảng.
+**Gợi ý 3 tầng:** (1) Hai nhà liền nhau hơn kém nhau mấy đơn vị? — (2) Từ nhà đầu tới nhà thứ k phải bước bao nhiêu lần? — (3) Đếm số nhà thì cộng thêm 1 vào số khoảng cách.
+
 ### Bài E.4
-**Đáp số:** a) 24 · b) 11 · c) 38 · d) 20 · e) 39 · f) 24
-**Hướng giải:** BẪY — Quên cộng 1. Số số hạng = (số cuối − số đầu) : khoảng cách + 1. Phần chia cho biết số khoảng; số số hạng nhiều hơn số khoảng đúng 1.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Số khoảng ít hơn số số hạng đúng **1**.
-**Lỗi thường gặp:** Quên cộng 1. Phòng: Thử với dãy ngắn ba số để kiểm tra công thức.
-**Gợi ý 3 tầng:** (1) Khoảng cách của dãy bằng bao nhiêu? — (2) Từ số đầu tới số cuối có mấy khoảng? — (3) Số số hạng nhiều hơn số khoảng 1.
+**Đáp số:** a) 4 100 · b) 18 000 · c) 60 000 · d) 800 · e) 84 000
+**Hướng giải:** 1 km = 1 000 m; 1 m = 100 cm; 1 cm = 10 mm; 1 kg = 1 000 g; 1 l = 1 000 ml. Đổi từ đơn vị lớn sang đơn vị bé thì nhân.
+**Nhãn tư duy:** TD1. Điểm chốt: Nhớ đúng **số lần** giữa hai đơn vị.
+**Lỗi thường gặp:** Nhầm 1 m = 10 cm. Phòng: Học thuộc bảng năm quan hệ trên và đọc lại trước khi làm.
+**Gợi ý 3 tầng:** (1) Đơn vị nào lớn hơn? — (2) Một đơn vị lớn bằng bao nhiêu đơn vị bé? — (3) Nhân số đã cho với số lần đó.
 
 ### Bài E.5
-**Đáp số:** a) mỗi bạn 7 cái, thừa 9 cái · b) 9 cái · c) 1 cái · d) 8 cái · e) mỗi bạn 8 cái, thừa 7 cái · f) phải là số chia hết cho 10
-**Hướng giải:** BẪY — Thêm vào khác với bớt đi. Trong phép chia có dư, **số dư luôn bé hơn số chia**. Muốn chia hết thì hoặc bớt đi đúng phần dư, hoặc thêm vào phần còn thiếu để đủ một suất — phần còn thiếu bằng số chia trừ số dư.
-**Nhãn tư duy:** TD1, TD2. Điểm chốt: Thêm vào thì thêm **số chia trừ số dư**, không phải thêm số dư.
-**Lỗi thường gặp:** Nhầm “thêm bao nhiêu” với “bớt bao nhiêu”, cả hai đều lấy số dư. Phòng: Vẽ một hàng ô: phần dư còn thiếu bao nhiêu ô nữa thì đầy một suất?
-**Gợi ý 3 tầng:** (1) Chia thử xem mỗi bạn được mấy cái, thừa mấy cái. — (2) Bớt đi thì bớt đúng phần thừa. — (3) Thêm vào thì thêm phần còn thiếu để đủ một suất nữa.
+**Đáp số:** a) (38 + 22) × 2 = 120 m · b) 120 − 2 = 118 m · c) 120 : 2 = 60 cọc · d) 118 × 45 000 = 5 310 000 đồng · e) 38 × 22 = 836 m²
+**Hướng giải:** BẪY — Quên rằng quanh vườn khép kín thì số cọc bằng số khoảng. Tính chu vi trước, mọi câu về rào và cọc đều dựa vào nó. Riêng số cọc phải nhớ đường rào khép kín nên không cộng thêm 1.
+**Nhãn tư duy:** TD2, TD4. Điểm chốt: Đường khép kín: số cọc = số khoảng. Đường thẳng có hai đầu: số cọc = số khoảng + 1.
+**Lỗi thường gặp:** Cộng thêm 1 vào số cọc như bài trồng cây trên đoạn thẳng. Phòng: Vẽ nhanh hình vuông 4 cạnh, cắm cọc thử rồi đếm.
+**Gợi ý 3 tầng:** (1) Muốn biết rào hết bao nhiêu mét thì phải tính cái gì trước? — (2) Đường rào có điểm đầu và điểm cuối tách rời nhau không? — (3) Với đường khép kín thì số cọc bằng đúng số khoảng.
 
 ---
 

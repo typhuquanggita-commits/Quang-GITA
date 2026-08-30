@@ -52,19 +52,20 @@ Học thuộc theo cặp **dạng bài – công thức**, không học rời.
 
 | # | Dùng cho dạng bài | Công thức hoặc quy tắc |
 |---:|---|---|
-| 1 | Phủ hình, chia hình | Diện tích hình chữ nhật, hình vuông; phép chia |
-| 2 | Đếm hình bằng quy tắc chọn hai điểm | Quy tắc đếm, tổ hợp chập hai |
+| 1 | Cắt ghép hình, biến thiên chu vi | Chu vi, đường bao của hình |
+| 2 | Chu vi hình chữ nhật | Chu vi, diện tích hình chữ nhật; bài toán trồng cây |
 | 3 | Chu vi, diện tích trong tình huống thực tế | Công thức chu vi, diện tích; phép chia |
-| 4 | Hình chữ nhật tổng hợp | Chu vi, diện tích hình chữ nhật; s = v × t |
+| 4 | Biến thiên diện tích theo kích thước | Diện tích hình chữ nhật, phân tích hình |
 | 5 | Đếm hình trong lưới | Quy tắc đếm, tổ hợp đơn giản |
 | 6 | Tìm kích thước từ chu vi, diện tích | Công thức chu vi, diện tích; phép tính ngược |
 | 7 | Nhận biết và phân loại góc | Số đo góc; hai đường thẳng vuông góc, song song |
 | 8 | Cắt ghép hình, tỉ số diện tích | Diện tích hình chữ nhật, tam giác; đường bao |
-| 9 | Cắt ghép hình, biến thiên chu vi | Chu vi, đường bao của hình |
-| 10 | Nhận biết hình tròn và các yếu tố | Quan hệ đường kính – bán kính |
-| 11 | Chu vi, diện tích hình cơ bản | Công thức chu vi, diện tích hình chữ nhật và hình vuông |
-| 12 | Biến thiên diện tích theo kích thước | Diện tích hình chữ nhật, phân tích hình |
-| 13 | Diện tích các hình phẳng cơ bản | Công thức diện tích hình bình hành, hình thoi, hình tam giác |
+| 9 | Đếm hình bằng quy tắc chọn hai điểm | Quy tắc đếm, tổ hợp chập hai |
+| 10 | Bài toán lát gạch nền nhà | Diện tích hình chữ nhật, hình vuông; đổi đơn vị đo diện tích |
+| 11 | Nhận biết hình tròn và các yếu tố | Quan hệ đường kính – bán kính |
+| 12 | Chu vi, diện tích hình cơ bản | Công thức chu vi, diện tích hình chữ nhật và hình vuông |
+| 13 | Phủ hình, chia hình | Diện tích hình chữ nhật, hình vuông; phép chia |
+| 14 | Hình chữ nhật tổng hợp | Chu vi, diện tích hình chữ nhật; s = v × t |
 
 ---
 
@@ -90,19 +91,20 @@ Trước khi tra bảng, đi qua cây quyết định đọc vị của nhóm ch
 
 | Dạng bài | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất |
 |---|---|---|---|
-| Phủ hình, chia hình | “Phủ kín bằng các hình vuông cạnh …”, “chia thành … phần bằng nhau” | Chia diện tích cho diện tích, kiểm tra bằng số hàng, số cột | Đếm số hàng nhân số cột nhanh hơn và tự kiểm tra được. |
-| Đếm hình bằng quy tắc chọn hai điểm | Hình có nhiều đoạn kẻ từ cùng một đỉnh, hoặc nhiều điểm trên một đường | Quy về số cách chọn hai điểm | Số cách chọn 2 trong k là k × (k − 1) : 2 — thuộc công thức này là xong. |
+| Cắt ghép hình, biến thiên chu vi | Từ khoá “ghép”, “cắt thành”, “xếp thành” | Xác định đường bao mới rồi cộng độ dài | Mỗi nhát cắt làm tổng chu vi tăng thêm hai lần chiều dài nhát cắt. |
+| Chu vi hình chữ nhật | Một mảnh đất có kích thước, cần rào hoặc cắm cọc quanh | Tính chu vi rồi chia cho khoảng cách giữa hai cọc | Chu vi chia khoảng cách ra ngay số cọc, không phải cộng trừ gì thêm. |
 | Chu vi, diện tích trong tình huống thực tế | Từ khoá “rào xung quanh”, “lát gạch”, “trồng cây quanh” | Đọc vị chu vi hay diện tích rồi tính | Nhìn đơn vị của đáp số: mét thì là chu vi, mét vuông thì là diện tích. |
-| Hình chữ nhật tổng hợp | Một hình nhưng nhiều câu hỏi nối tiếp | Tính chu vi và diện tích trước, dùng lại cho các ý sau | Chu vi tăng đúng 2 lần phần tăng, dù tăng chiều nào. |
+| Biến thiên diện tích theo kích thước | “Tăng chiều dài thêm …”, “gấp đôi chiều …” | Vẽ hình chồng, tách phần dôi ra thành các mảnh chữ nhật | Gấp đôi một chiều thì diện tích gấp đôi; gấp đôi cả hai chiều thì gấp bốn. |
 | Đếm hình trong lưới | Hình vẽ là lưới ô vuông đều | Đếm theo đường kẻ hoặc theo cỡ hình | Số cách chọn 2 trong k đường kẻ là k × (k − 1) : 2. |
 | Tìm kích thước từ chu vi, diện tích | Cho chu vi hoặc diện tích và một kích thước | Đi ngược công thức, qua bước nửa chu vi | Nửa chu vi = chu vi : 2 — luôn tính bước này đầu tiên. |
 | Nhận biết và phân loại góc | Đề cho số đo góc hoặc hỏi về cạnh của hình | So số đo với hai mốc 90° và 180° | Ê ke chính là một góc vuông cầm tay — áp vào là biết ngay. |
 | Cắt ghép hình, tỉ số diện tích | “Cắt thành … phần”, “nối trung điểm”, “ghép hai hình” | Vẽ hình, xác định đáy và chiều cao, so tỉ số | Tam giác nối một đỉnh với trung điểm cạnh đối diện luôn bằng một phần tư. |
-| Cắt ghép hình, biến thiên chu vi | Từ khoá “ghép”, “cắt thành”, “xếp thành” | Xác định đường bao mới rồi cộng độ dài | Mỗi nhát cắt làm tổng chu vi tăng thêm hai lần chiều dài nhát cắt. |
+| Đếm hình bằng quy tắc chọn hai điểm | Hình có nhiều đoạn kẻ từ cùng một đỉnh, hoặc nhiều điểm trên một đường | Quy về số cách chọn hai điểm | Số cách chọn 2 trong k là k × (k − 1) : 2 — thuộc công thức này là xong. |
+| Bài toán lát gạch nền nhà | Kích thước một mặt phẳng và kích thước vật dùng để phủ kín nó | Đổi về cùng đơn vị rồi chia hai diện tích | Đổi cạnh viên gạch ra mét trước cũng được, khi ấy chia m² cho m². |
 | Nhận biết hình tròn và các yếu tố | Đề nhắc tâm, bán kính, đường kính | Quy về bán kính rồi so sánh hoặc tính | Nhìn đơn vị và tên đại lượng trước khi so sánh. |
 | Chu vi, diện tích hình cơ bản | Cho chiều dài, chiều rộng hoặc cạnh | Chọn đúng công thức, ghi đúng đơn vị | Hình vuông là hình chữ nhật có dài bằng rộng — chỉ cần nhớ một bộ công thức. |
-| Biến thiên diện tích theo kích thước | “Tăng chiều dài thêm …”, “gấp đôi chiều …” | Vẽ hình chồng, tách phần dôi ra thành các mảnh chữ nhật | Gấp đôi một chiều thì diện tích gấp đôi; gấp đôi cả hai chiều thì gấp bốn. |
-| Diện tích các hình phẳng cơ bản | Đề cho đáy và chiều cao, hoặc hai đường chéo | Nhận dạng hình rồi chọn công thức | Tam giác bằng nửa hình bình hành cùng đáy cùng chiều cao. |
+| Phủ hình, chia hình | “Phủ kín bằng các hình vuông cạnh …”, “chia thành … phần bằng nhau” | Chia diện tích cho diện tích, kiểm tra bằng số hàng, số cột | Đếm số hàng nhân số cột nhanh hơn và tự kiểm tra được. |
+| Hình chữ nhật tổng hợp | Một hình nhưng nhiều câu hỏi nối tiếp | Tính chu vi và diện tích trước, dùng lại cho các ý sau | Chu vi tăng đúng 2 lần phần tăng, dù tăng chiều nào. |
 
 ---
 
@@ -121,14 +123,14 @@ Trước khi tra bảng, đi qua cây quyết định đọc vị của nhóm ch
 
 Trả lời được ngay trong 10 giây thì đánh ✔. Phải nghĩ lâu thì đánh ✘ và làm lại phần tương ứng.
 
-- [ ] **1.** Em nêu được dấu hiệu nhận biết của dạng “Phủ hình, chia hình” chứ?
-- [ ] **2.** Em nhớ công thức: Diện tích hình chữ nhật, hình vuông; phép chia?
-- [ ] **3.** Em nêu được dấu hiệu nhận biết của dạng “Đếm hình bằng quy tắc chọn hai điểm” chứ?
-- [ ] **4.** Em nhớ công thức: Quy tắc đếm, tổ hợp chập hai?
+- [ ] **1.** Em nêu được dấu hiệu nhận biết của dạng “Cắt ghép hình, biến thiên chu vi” chứ?
+- [ ] **2.** Em nhớ công thức: Chu vi, đường bao của hình?
+- [ ] **3.** Em nêu được dấu hiệu nhận biết của dạng “Chu vi hình chữ nhật” chứ?
+- [ ] **4.** Em nhớ công thức: Chu vi, diện tích hình chữ nhật; bài toán trồng cây?
 - [ ] **5.** Em nêu được dấu hiệu nhận biết của dạng “Chu vi, diện tích trong tình huống thực tế” chứ?
 - [ ] **6.** Em nhớ công thức: Công thức chu vi, diện tích; phép chia?
-- [ ] **7.** Em nêu được dấu hiệu nhận biết của dạng “Hình chữ nhật tổng hợp” chứ?
-- [ ] **8.** Em nhớ công thức: Chu vi, diện tích hình chữ nhật; s = v × t?
+- [ ] **7.** Em nêu được dấu hiệu nhận biết của dạng “Biến thiên diện tích theo kích thước” chứ?
+- [ ] **8.** Em nhớ công thức: Diện tích hình chữ nhật, phân tích hình?
 - [ ] **9.** Em nêu được dấu hiệu nhận biết của dạng “Đếm hình trong lưới” chứ?
 - [ ] **10.** Em nhớ công thức: Quy tắc đếm, tổ hợp đơn giản?
 - [ ] **11.** Em nêu được dấu hiệu nhận biết của dạng “Tìm kích thước từ chu vi, diện tích” chứ?
@@ -137,10 +139,10 @@ Trả lời được ngay trong 10 giây thì đánh ✔. Phải nghĩ lâu thì
 - [ ] **14.** Em nhớ công thức: Số đo góc; hai đường thẳng vuông góc, song song?
 - [ ] **15.** Em nêu được dấu hiệu nhận biết của dạng “Cắt ghép hình, tỉ số diện tích” chứ?
 - [ ] **16.** Em nhớ công thức: Diện tích hình chữ nhật, tam giác; đường bao?
-- [ ] **17.** Em nêu được dấu hiệu nhận biết của dạng “Cắt ghép hình, biến thiên chu vi” chứ?
-- [ ] **18.** Em nhớ công thức: Chu vi, đường bao của hình?
-- [ ] **19.** Em nêu được dấu hiệu nhận biết của dạng “Nhận biết hình tròn và các yếu tố” chứ?
-- [ ] **20.** Em nhớ công thức: Quan hệ đường kính – bán kính?
+- [ ] **17.** Em nêu được dấu hiệu nhận biết của dạng “Đếm hình bằng quy tắc chọn hai điểm” chứ?
+- [ ] **18.** Em nhớ công thức: Quy tắc đếm, tổ hợp chập hai?
+- [ ] **19.** Em nêu được dấu hiệu nhận biết của dạng “Bài toán lát gạch nền nhà” chứ?
+- [ ] **20.** Em nhớ công thức: Diện tích hình chữ nhật, hình vuông; đổi đơn vị đo diện tích?
 
 **Chuẩn đạt:** ✔ từ 18/20 câu trở lên.
 
@@ -152,19 +154,20 @@ Trả lời được ngay trong 10 giây thì đánh ✔. Phải nghĩ lâu thì
 
 | # | Lỗi thường gặp | Cách phòng |
 |---:|---|---|
-| 1 | Chia chu vi cho cạnh mảnh thay vì chia diện tích cho diện tích. | Kẻ lưới lên hình và đếm thử một hàng. |
-| 2 | Chỉ đếm tam giác nhỏ, quên các tam giác ghép. | Đánh dấu tên các điểm rồi liệt kê từng cặp một cách có thứ tự. |
+| 1 | Cộng chu vi các hình nhỏ lại rồi coi đó là chu vi hình ghép. | Tô đậm đường bao của hình mới rồi mới tính. |
+| 2 | Cộng thêm 1 vào số cọc như bài trồng cây trên đoạn thẳng. | Vẽ nhanh hình vuông 4 cạnh, cắm cọc thử rồi đếm. |
 | 3 | Lấy chu vi để tính số gạch lát nền. | Gạch chân từ khoá chỉ vị trí: xung quanh, bao quanh, khắp, phủ kín. |
-| 4 | Nhân hai lượng tăng với nhau rồi coi đó là diện tích tăng thêm. | Vẽ hình cũ nằm trong hình mới rồi tô phần dôi ra. |
+| 4 | Nhân hai lượng tăng với nhau rồi coi đó là phần diện tích tăng thêm. | Vẽ hình chữ nhật cũ nằm trong hình mới, tô phần dôi ra. |
 | 5 | Chỉ đếm các ô vuông nhỏ, quên các hình ghép từ nhiều ô. | Kẻ bảng theo cỡ hình: cỡ 1×1, 1×2, 2×2… rồi cộng. |
 | 6 | Trừ thẳng chiều dài khỏi chu vi mà chưa chia đôi. | Viết dòng “Nửa chu vi = …” trước khi trừ. |
 | 7 | Gọi góc 90° là góc nhọn vì thấy “nhỏ”. | Áp ê ke vào góc trước khi gọi tên. |
 | 8 | Cộng chu vi hai hình nhỏ lại thành chu vi hình ghép. | Tô đậm đường bao của hình mới rồi mới tính chu vi. |
-| 9 | Cộng chu vi các hình nhỏ lại rồi coi đó là chu vi hình ghép. | Tô đậm đường bao của hình mới rồi mới tính. |
-| 10 | So bán kính của hình này với đường kính của hình kia. | Đổi hết về bán kính trước khi so sánh. |
-| 11 | Nhầm công thức chu vi với diện tích; quên nhân 2 ở chu vi. | Vẽ hình và ghi số đo lên hình trước khi tính. |
-| 12 | Nhân hai lượng tăng với nhau rồi coi đó là phần diện tích tăng thêm. | Vẽ hình chữ nhật cũ nằm trong hình mới, tô phần dôi ra. |
-| 13 | Chia 2 cho hình bình hành, hoặc quên chia 2 cho hình tam giác. | Nhớ theo cặp: bình hành ↔ chữ nhật (không chia); tam giác ↔ nửa bình hành (chia 2). |
+| 9 | Chỉ đếm tam giác nhỏ, quên các tam giác ghép. | Đánh dấu tên các điểm rồi liệt kê từng cặp một cách có thứ tự. |
+| 10 | Chia thẳng m² cho cm², hoặc đổi 1 m² thành 100 cm². | Viết đơn vị vào cạnh mỗi con số trước khi bấm phép chia. |
+| 11 | So bán kính của hình này với đường kính của hình kia. | Đổi hết về bán kính trước khi so sánh. |
+| 12 | Nhầm công thức chu vi với diện tích; quên nhân 2 ở chu vi. | Vẽ hình và ghi số đo lên hình trước khi tính. |
+| 13 | Chia chu vi cho cạnh mảnh thay vì chia diện tích cho diện tích. | Kẻ lưới lên hình và đếm thử một hàng. |
+| 14 | Nhân hai lượng tăng với nhau rồi coi đó là diện tích tăng thêm. | Vẽ hình cũ nằm trong hình mới rồi tô phần dôi ra. |
 
 ---
 

@@ -30,11 +30,11 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần A**
 
-- **Bài A.1** — a) 22 · b) 51 · c) 234 · d) 77 · e) 25 · f) 29
-- **Bài A.2** — a) 78 · b) 164 · c) 192 · d) 147
-- **Bài A.3** — a) 2 giờ · b) 15 km · c) 60 km/giờ · d) 6 giờ
-- **Bài A.4** — a) 78 · b) 210 · c) 49 · d) 108 · e) 84 · f) 510
-- **Bài A.5** — a) số lớn 427, số bé 409 · b) số lớn 1 236, số bé 656 · c) số lớn 95, số bé 77 · d) số lớn 209, số bé 177 · e) số lớn 646, số bé 338 · f) số lớn 1 111, số bé 583
+- **Bài A.1** — a) 30 · b) 27 · c) 75 · d) 28 · e) 37 · f) 72
+- **Bài A.2** — a) 130 · b) 178 · c) 57 · d) 191 · e) 191
+- **Bài A.3** — a) 45 km/giờ · b) 3 giờ · c) 8 km · d) 4 giờ
+- **Bài A.4** — a) 459 · b) 216 · c) 720 · d) 912 · e) 247
+- **Bài A.5** — a) số lớn 410, số bé 296 · b) số lớn 993, số bé 669 · c) số lớn 593, số bé 461 · d) số lớn 683, số bé 399
 
 **Phần B**
 
@@ -80,7 +80,7 @@ Mỗi bài có hai phần: **các bước giải** với số liệu thật củ
 
 **Các bước giải**
 
-Xét ý a: Minh có 29 quyển vở, Hà có ít hơn Minh 7 quyển. Hà có bao nhiêu quyển vở?
+Xét ý a: Khánh có 7 quyển vở, Lan có nhiều hơn Khánh 23 quyển. Lan có bao nhiêu quyển vở?
 
 Đọc vị: đây là dạng **Quan hệ nhiều hơn – ít hơn, gấp – kém**; dấu hiệu là Các cụm “nhiều hơn”, “ít hơn”, “gấp … lần”, “kém … lần”.
 
@@ -90,7 +90,7 @@ Cách làm: Đọc vị từ khoá → chọn phép tính.
 
 Lối tắt: Kết quả lớn hơn hay bé hơn số đã cho? Trả lời được là biết ngay phép tính.
 
-Kết quả: **22**.
+Kết quả: **30**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 
@@ -100,7 +100,7 @@ Kết quả: **22**.
 
 **Các bước giải**
 
-Xét ý a: Tìm trung bình cộng của 4 số: 83, 89, 69, 71.
+Xét ý a: Tìm trung bình cộng của 4 số: 137, 122, 138, 123.
 
 Đọc vị: đây là dạng **Tìm trung bình cộng**; dấu hiệu là Từ khoá “trung bình cộng”, “trung bình mỗi …”.
 
@@ -110,7 +110,7 @@ Cách làm: Tổng chia số lượng.
 
 Lối tắt: Ước lượng: trung bình cộng luôn nằm giữa số bé nhất và số lớn nhất.
 
-Kết quả: **78**.
+Kết quả: **130**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Trung bình cộng của nhiều số bằng tổng các số đó chia cho số lượng các số. Cộng cho hết rồi mới chia, không chia từng số một.
 
@@ -122,7 +122,7 @@ Kết quả: **78**.
 
 **Các bước giải**
 
-Xét ý a: Một người đi quãng đường 80 km với vận tốc 40 km/giờ. Tính thời gian đi.
+Xét ý a: Một người đi 270 km hết 6 giờ. Tính vận tốc.
 
 Đọc vị: đây là dạng **Ba dạng cơ bản của chuyển động đều**; dấu hiệu là Có hai trong ba đại lượng quãng đường, vận tốc, thời gian.
 
@@ -132,7 +132,7 @@ Cách làm: Chọn công thức theo đại lượng cần tìm, đồng bộ đ
 
 Lối tắt: Vẽ tam giác: s ở trên, v và t ở dưới; che đại lượng cần tìm là ra công thức.
 
-Kết quả: **2 giờ**.
+Kết quả: **45 km/giờ**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
 
@@ -146,7 +146,7 @@ Kết quả: **2 giờ**.
 
 **Các bước giải**
 
-Xét ý a: 10 bao muối nặng 60 kg. Hỏi 13 bao như thế nặng bao nhiêu kg?
+Xét ý a: 2 bao phân bón nặng 102 kg. Hỏi 9 bao như thế nặng bao nhiêu kg?
 
 Đọc vị: đây là dạng **Rút về đơn vị**; dấu hiệu là Cho giá trị của một nhóm, hỏi giá trị của nhóm khác cùng loại.
 
@@ -156,7 +156,7 @@ Cách làm: Chia để rút về một đơn vị rồi nhân.
 
 Lối tắt: Nếu số bao mới gấp đôi số bao cũ thì khối lượng cũng gấp đôi — dùng tỉ số để bỏ qua bước chia.
 
-Kết quả: **78**.
+Kết quả: **459**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Bước 1 — rút về đơn vị: tìm giá trị của **một** đơn vị bằng phép chia. Bước 2: nhân giá trị một đơn vị với số đơn vị cần tìm.
 
@@ -166,7 +166,7 @@ Kết quả: **78**.
 
 **Các bước giải**
 
-Xét ý a: Tổng hai số là 836, hiệu hai số là 18. Tìm hai số đó.
+Xét ý a: Tổng hai số là 706, hiệu hai số là 114. Tìm hai số đó.
 
 Đọc vị: đây là dạng **Bài toán tổng – hiệu**; dấu hiệu là Đề cho **tổng** và **hiệu** của hai số.
 
@@ -176,7 +176,7 @@ Cách làm: Vẽ sơ đồ, đưa về hai phần bằng nhau.
 
 Lối tắt: Số lớn và số bé luôn có trung bình cộng bằng nửa tổng.
 
-Kết quả: **số lớn 427, số bé 409**.
+Kết quả: **số lớn 410, số bé 296**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Số lớn = (tổng + hiệu) : 2. Số bé = (tổng − hiệu) : 2. Cách hiểu: vẽ hai đoạn thẳng, đoạn dài hơn phần hiệu; bớt phần hiệu đi thì hai đoạn bằng nhau, mỗi đoạn là số bé.
 
@@ -590,11 +590,11 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
-| A.1 | Quan hệ nhiều hơn – ít hơn, gấp – kém | Bốn phép tính, từ khoá chỉ quan hệ | Các cụm “nhiều hơn”, “ít hơn”, “gấp … lần”, “kém … lần” | Đọc vị từ khoá → chọn phép tính | Kết quả lớn hơn hay bé hơn số đã cho? Trả lời được là biết ngay phép tính. | 22 · 51 · 234 · 77… |
-| A.2 | Tìm trung bình cộng | Định nghĩa trung bình cộng | Từ khoá “trung bình cộng”, “trung bình mỗi …” | Tổng chia số lượng | Ước lượng: trung bình cộng luôn nằm giữa số bé nhất và số lớn nhất. | 78 · 164 · 192 · 147 |
-| A.3 | Ba dạng cơ bản của chuyển động đều | s = v × t | Có hai trong ba đại lượng quãng đường, vận tốc, thời gian | Chọn công thức theo đại lượng cần tìm, đồng bộ đơn vị | Vẽ tam giác: s ở trên, v và t ở dưới; che đại lượng cần tìm là ra công thức. | 2 giờ · 15 km · 60 km/giờ · 6 giờ |
-| A.4 | Rút về đơn vị | Đại lượng tỉ lệ thuận, phép chia và phép nhân | Cho giá trị của một nhóm, hỏi giá trị của nhóm khác cùng loại | Chia để rút về một đơn vị rồi nhân | Nếu số bao mới gấp đôi số bao cũ thì khối lượng cũng gấp đôi — dùng tỉ số để bỏ qua bước chia. | 78 · 210 · 49 · 108… |
-| A.5 | Bài toán tổng – hiệu | Công thức tổng – hiệu, sơ đồ đoạn thẳng | Đề cho **tổng** và **hiệu** của hai số | Vẽ sơ đồ, đưa về hai phần bằng nhau | Số lớn và số bé luôn có trung bình cộng bằng nửa tổng. | số lớn 427, số bé 409 · số lớn 1 236, số bé 656 · số lớn 95, số bé 77 · số lớn 209, số bé 177… |
+| A.1 | Quan hệ nhiều hơn – ít hơn, gấp – kém | Bốn phép tính, từ khoá chỉ quan hệ | Các cụm “nhiều hơn”, “ít hơn”, “gấp … lần”, “kém … lần” | Đọc vị từ khoá → chọn phép tính | Kết quả lớn hơn hay bé hơn số đã cho? Trả lời được là biết ngay phép tính. | 30 · 27 · 75 · 28… |
+| A.2 | Tìm trung bình cộng | Định nghĩa trung bình cộng | Từ khoá “trung bình cộng”, “trung bình mỗi …” | Tổng chia số lượng | Ước lượng: trung bình cộng luôn nằm giữa số bé nhất và số lớn nhất. | 130 · 178 · 57 · 191… |
+| A.3 | Ba dạng cơ bản của chuyển động đều | s = v × t | Có hai trong ba đại lượng quãng đường, vận tốc, thời gian | Chọn công thức theo đại lượng cần tìm, đồng bộ đơn vị | Vẽ tam giác: s ở trên, v và t ở dưới; che đại lượng cần tìm là ra công thức. | 45 km/giờ · 3 giờ · 8 km · 4 giờ |
+| A.4 | Rút về đơn vị | Đại lượng tỉ lệ thuận, phép chia và phép nhân | Cho giá trị của một nhóm, hỏi giá trị của nhóm khác cùng loại | Chia để rút về một đơn vị rồi nhân | Nếu số bao mới gấp đôi số bao cũ thì khối lượng cũng gấp đôi — dùng tỉ số để bỏ qua bước chia. | 459 · 216 · 720 · 912… |
+| A.5 | Bài toán tổng – hiệu | Công thức tổng – hiệu, sơ đồ đoạn thẳng | Đề cho **tổng** và **hiệu** của hai số | Vẽ sơ đồ, đưa về hai phần bằng nhau | Số lớn và số bé luôn có trung bình cộng bằng nửa tổng. | số lớn 410, số bé 296 · số lớn 993, số bé 669 · số lớn 593, số bé 461 · số lớn 683, số bé 399 |
 | B.1 | Kỹ năng trình bày | Chuẩn trình bày bài giải | Yêu cầu “trình bày lời giải” | Viết đủ bốn dòng | Viết câu lời giải trước, phép tính sau — không bao giờ ngược lại. | câu lời giải nêu rõ đang tìm đại lượng nào · phép tính, viết đủ dấu và đủ đơn vị · kết quả kèm đơn vị · câu đáp số… |
 | B.2 | Kỹ năng viết câu lời giải | Chuẩn trình bày | Đề hỏi gì thì câu lời giải nhắc lại điều đó | Lấy cụm từ trong câu hỏi làm câu lời giải | Sao chép cụm từ trong câu hỏi là cách viết câu lời giải nhanh và chắc nhất. | “Tỉ lệ bản đồ, tỉ lệ xích là:” · “Tổng – tỉ có tỉ số thay đổi là:” · “Công việc chung là:” · “Tổng – hiệu có lời văn là:”… |
 | B.3 | Kỹ năng ghi đơn vị | Đơn vị đo các đại lượng | Đáp số của bài có đại lượng đo | Kiểm tra đơn vị ở bước cuối | Nhìn đơn vị của đáp số là biết ngay mình có nhầm chu vi với diện tích không. | không ghi trong dấu ngoặc phép tính · có, bắt buộc · có, bắt buộc · đơn vị vuông, ví dụ cm²… |

@@ -30,57 +30,57 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Đặt tính rồi tính. Ước lượng trước để tự kiểm tra.
 
-a) 103 585 + 739 292
-b) 48 327 × 176
-c) 563 106 − 94 786
-d) 660 703 560 : 968
-e) 366 432 + 709 133
-f) 639 876 × 660
+a) 158 666 − 128 947
+b) 214 533 + 888 307
+c) 63 388 302 : 723
+d) 507 908 × 548
+e) 45 704 + 621 924
+f) 235 508 × 294
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
-Điền số thích hợp vào chỗ chấm.
+Tính bằng cách thuận tiện nhất.
 
-a) 26 m² = … cm²
-b) 79 m² = … dm²
-c) 53 dm² = … cm²
-d) 20 m² = … dm²
-e) 39 dm² = … cm²
-f) 40 000 cm² = … m²
+a) 70 + 85 − 85
+b) 41 + 115 + 59
+c) 53 + 68 + 47 + 32
+d) 125 + 83 − 83
+e) 53 + 34 + 47 + 66
+f) 329 + 77 − 77
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
 Giải bằng cách rút về đơn vị hoặc dùng tỉ số.
 
-a) Mua 6 quyển vở hết 96 nghìn đồng. Với 48 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
-b) Mua 15 quyển vở hết 240 nghìn đồng. Mua 19 quyển vở như thế hết bao nhiêu nghìn đồng?
-c) Mua 8 quyển vở hết 120 nghìn đồng. Với 420 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
-d) Mua 12 quyển vở hết 240 nghìn đồng. Mua 6 quyển vở như thế hết bao nhiêu nghìn đồng?
-e) Mua 15 quyển vở hết 510 nghìn đồng. Với 408 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
-f) Mua 13 quyển vở hết 143 nghìn đồng. Với 110 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+a) Mua 5 quyển vở hết 125 nghìn đồng. Mua 12 quyển vở như thế hết bao nhiêu nghìn đồng?
+b) Mua 12 quyển vở hết 720 nghìn đồng. Mua 7 quyển vở như thế hết bao nhiêu nghìn đồng?
+c) Mua 14 quyển vở hết 1 134 nghìn đồng. Mua 16 quyển vở như thế hết bao nhiêu nghìn đồng?
+d) Mua 12 quyển vở hết 696 nghìn đồng. Với 986 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+e) Mua 5 quyển vở hết 420 nghìn đồng. Với 2 436 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
-Chú ý đơn vị mà đề hỏi.
+Ghi kết quả theo giờ và phút.
 
-a) Một xe chở 25 bao đường, mỗi bao 40 kg. Hỏi xe chở bao nhiêu tạ đường?
-b) Một xe chở 11 bao muối, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ muối?
-c) Một xe chở 13 bao gạo, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ gạo?
-d) Một xe chở 18 bao đường, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ đường?
+a) Một chuyến tàu khởi hành lúc 10 giờ 15 phút và đi hết 55 phút. Tàu đến nơi lúc mấy giờ?
+b) Một chuyến tàu khởi hành lúc 5 giờ 45 phút và đi hết 6 giờ 37 phút. Tàu đến nơi lúc mấy giờ?
+c) Một chuyến tàu khởi hành lúc 14 giờ 0 phút và đi hết 4 giờ 5 phút. Tàu đến nơi lúc mấy giờ?
+d) Một chuyến tàu khởi hành lúc 7 giờ 10 phút và đi hết 1 giờ 12 phút. Tàu đến nơi lúc mấy giờ?
+e) Một chuyến tàu khởi hành lúc 7 giờ 40 phút và đi hết 2 giờ 53 phút. Tàu đến nơi lúc mấy giờ?
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
-Tính nhanh mỗi tổng, nêu công thức đã dùng.
+Xác định đại lượng nào giữ nguyên.
 
-a) 1 + 3 + 5 + … + 39 (tổng 20 số lẻ đầu tiên)
-b) 1 + 2 + 3 + … + 10
-c) 2 + 4 + 6 + … + 40 (tổng 20 số chẵn đầu tiên)
-d) 2 + 4 + 6 + … + 100 (tổng 50 số chẵn đầu tiên)
-e) 1 + 2 + 3 + … + 20
+a) Số lớn gấp 5 lần số bé và tổng hai số là 222. Phải thêm vào số lớn bao nhiêu đơn vị để số lớn gấp 7 lần số bé?
+b) Số lớn gấp 4 lần số bé và tổng hai số là 110. Phải thêm vào số lớn bao nhiêu đơn vị để số lớn gấp 9 lần số bé?
+c) Số lớn gấp 4 lần số bé và tổng hai số là 105. Phải thêm vào số lớn bao nhiêu đơn vị để số lớn gấp 5 lần số bé?
+d) Số lớn gấp 3 lần số bé và tổng hai số là 136. Phải thêm vào số lớn bao nhiêu đơn vị để số lớn gấp 9 lần số bé?
+e) Số lớn gấp 3 lần số bé và tổng hai số là 160. Phải thêm vào số lớn bao nhiêu đơn vị để số lớn gấp 9 lần số bé?
 
 
 ---
@@ -90,98 +90,100 @@ e) 1 + 2 + 3 + … + 20
 
 ### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **842 877**
-b) **8 505 552**
-c) **468 320**
-d) **682 545**
-e) **1 075 565**
-f) **422 318 160**
+a) **29 719**
+b) **1 102 840**
+c) **87 674**
+d) **278 333 584**
+e) **667 628**
+f) **69 239 352**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 103 585 + 739 292
+1. Xét ý a: 158 666 − 128 947
 2. Đọc vị: đây là dạng **Bốn phép tính với số tự nhiên**; dấu hiệu là Yêu cầu “đặt tính rồi tính”.
 3. Kiến thức phải dùng: Kĩ thuật đặt tính cộng, trừ, nhân, chia.
 4. Cách làm: Đặt tính thẳng cột, tính từ hàng đơn vị.
 5. Lối tắt: Ước lượng bằng cách làm tròn để phát hiện sai sót về độ lớn.
-6. Kết quả: **842 877**.
+6. Kết quả: **29 719**.
 
 *Lỗi hay mắc:* Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số.
 
 ### Bài 2, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **260 000**
-b) **7 900**
-c) **5 300**
-d) **2 000**
-e) **3 900**
-f) **4**
+a) **70**
+b) **215**
+c) **200**
+d) **125**
+e) **200**
+f) **329**
 
 **Cách giải mẫu:**
 
-1. 1 m² = 10 000 cm².
-2. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**.
-3. 26 × 10 000 = 260 000 (cm²).
-4. Đáp số: **260 000 cm²**.
+1. Xét ý a: 70 + 85 − 85
+2. Đọc vị: đây là dạng **Tính nhanh tổng nhiều số hạng**; dấu hiệu là Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm.
+3. Kiến thức phải dùng: Tính chất giao hoán, kết hợp của phép cộng.
+4. Cách làm: Ghép cặp tròn rồi cộng.
+5. Lối tắt: Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10.
+6. Kết quả: **70**.
 
-*Lỗi hay mắc:* Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc.
+*Lỗi hay mắc:* Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn.
 
-### Bài 3, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 3, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **3 quyển**
-b) **304 nghìn đồng**
-c) **28 quyển**
-d) **120 nghìn đồng**
-e) **12 quyển**
-f) **10 quyển**
+a) **300 nghìn đồng**
+b) **420 nghìn đồng**
+c) **1 296 nghìn đồng**
+d) **17 quyển**
+e) **29 quyển**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Mua 6 quyển vở hết 96 nghìn đồng. Với 48 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+1. Xét ý a: Mua 5 quyển vở hết 125 nghìn đồng. Mua 12 quyển vở như thế hết bao nhiêu nghìn đồng?
 2. Đọc vị: đây là dạng **Tỉ lệ thuận, rút về đơn vị**; dấu hiệu là Hai đại lượng cùng tăng cùng giảm.
 3. Kiến thức phải dùng: Đại lượng tỉ lệ thuận.
 4. Cách làm: Rút về đơn vị hoặc dùng tỉ số.
 5. Lối tắt: Nếu số lượng mới gấp số lượng cũ một số nguyên lần thì nhân thẳng, không cần rút về đơn vị.
-6. Kết quả: **3 quyển**.
+6. Kết quả: **300 nghìn đồng**.
 
 *Lỗi hay mắc:* Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch.
 
-### Bài 4, (2 điểm — mỗi ý 0,5 điểm)
+### Bài 4, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **10 tạ**
-b) **2 tạ 75 kg**
-c) **3 tạ 25 kg**
-d) **5 tạ 40 kg**
+a) **11 giờ 10 phút**
+b) **12 giờ 22 phút**
+c) **18 giờ 5 phút**
+d) **8 giờ 22 phút**
+e) **10 giờ 33 phút**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Một xe chở 25 bao đường, mỗi bao 40 kg. Hỏi xe chở bao nhiêu tạ đường?
-2. Đọc vị: đây là dạng **Bài toán đại lượng có lời văn**; dấu hiệu là Đơn vị trong câu hỏi khác đơn vị trong dữ kiện.
-3. Kiến thức phải dùng: Nhân, chia số tự nhiên; đổi đơn vị khối lượng.
-4. Cách làm: Tính theo đơn vị dữ kiện rồi đổi ở bước cuối.
-5. Lối tắt: 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ.
-6. Kết quả: **10 tạ**.
+1. Xét ý a: Một chuyến tàu khởi hành lúc 10 giờ 15 phút và đi hết 55 phút. Tàu đến nơi lúc mấy giờ?
+2. Đọc vị: đây là dạng **Tính thời điểm trong ngày**; dấu hiệu là Cho thời điểm bắt đầu và khoảng thời gian.
+3. Kiến thức phải dùng: Quan hệ giờ – phút, phép chia có dư.
+4. Cách làm: Quy về phút, cộng trừ, đổi lại.
+5. Lối tắt: Cộng tròn giờ trước rồi cộng phần phút lẻ sau.
+6. Kết quả: **11 giờ 10 phút**.
 
-*Lỗi hay mắc:* Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ.
+*Lỗi hay mắc:* Cộng phần phút thành hơn 60 mà quên đổi thành giờ.
 
 ### Bài 5, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **400**
-b) **55**
-c) **420**
-d) **2 550**
-e) **210**
+a) **74 đơn vị**
+b) **110 đơn vị**
+c) **21 đơn vị**
+d) **204 đơn vị**
+e) **240 đơn vị**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 1 + 3 + 5 + … + 39 (tổng 20 số lẻ đầu tiên)
-2. Đọc vị: đây là dạng **Tổng dãy đặc biệt**; dấu hiệu là Dãy toàn số lẻ, toàn số chẵn, hoặc số tự nhiên liên tiếp.
-3. Kiến thức phải dùng: Ba công thức tổng cơ bản.
-4. Cách làm: Đếm số số hạng rồi áp công thức.
-5. Lối tắt: Tổng n số lẻ đầu tiên luôn là một số chính phương — dùng để kiểm tra nhanh.
-6. Kết quả: **400**.
+1. Xét ý a: Số lớn gấp 5 lần số bé và tổng hai số là 222. Phải thêm vào số lớn bao nhiêu đơn vị để số lớn gấp 7 lần số bé?
+2. Đọc vị: đây là dạng **Tổng – tỉ có tỉ số thay đổi**; dấu hiệu là “Phải thêm (bớt) bao nhiêu để tỉ số trở thành …”.
+3. Kiến thức phải dùng: Tổng – tỉ, đại lượng không đổi.
+4. Cách làm: Xác định đại lượng bất biến → tính lại đại lượng kia.
+5. Lối tắt: Số cần thêm = số bé × (tỉ số mới − tỉ số cũ).
+6. Kết quả: **74 đơn vị**.
 
-*Lỗi hay mắc:* Nhầm số hạng cuối với số lượng số hạng khi áp công thức.
+*Lỗi hay mắc:* Lấy hiệu hai tỉ số nhân với tổng ban đầu.
 
 ---
 
@@ -192,10 +194,10 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài | Đo cái gì | Sai bài này nghĩa là | Học lại ở đâu |
 |:--:|---|---|---|
 | Bài 1 | Bốn phép tính với số tự nhiên | Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số. | Nhóm chuyên đề **—** · mức — |
-| Bài 2 | Đổi đơn vị diện tích | Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. | Nhóm chuyên đề **—** · mức — |
+| Bài 2 | Tính nhanh tổng nhiều số hạng | Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. | Nhóm chuyên đề **—** · mức — |
 | Bài 3 | Tỉ lệ thuận, rút về đơn vị | Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch. | Nhóm chuyên đề **—** · mức — |
-| Bài 4 | Bài toán đại lượng có lời văn | Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. | Nhóm chuyên đề **—** · mức — |
-| Bài 5 | Tổng dãy đặc biệt | Nhầm số hạng cuối với số lượng số hạng khi áp công thức. | Nhóm chuyên đề **—** · mức — |
+| Bài 4 | Tính thời điểm trong ngày | Cộng phần phút thành hơn 60 mà quên đổi thành giờ. | Nhóm chuyên đề **—** · mức — |
+| Bài 5 | Tổng – tỉ có tỉ số thay đổi | Lấy hiệu hai tỉ số nhân với tổng ban đầu. | Nhóm chuyên đề **—** · mức — |
 
 ---
 

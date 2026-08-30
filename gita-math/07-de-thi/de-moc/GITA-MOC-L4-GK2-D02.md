@@ -30,54 +30,57 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Trả lời nhanh, mỗi ý không quá 20 giây.
 
-a) Chữ số hàng chục nghìn của số 2 367 148 có giá trị bằng bao nhiêu?
-b) Số liền trước và số liền sau của 1 182 949 là những số nào?
-c) Làm tròn 4 298 822 đến hàng trăm.
-d) 1 736 552 … 1 738 629
-e) 9 777 276 … 9 778 254
+a) Làm tròn 3 942 319 đến hàng nghìn.
+b) Số liền trước và số liền sau của 5 110 806 là những số nào?
+c) Chữ số hàng chục của số 1 219 075 có giá trị bằng bao nhiêu?
+d) 7 364 848 … 7 366 003
+e) Làm tròn 9 594 408 đến hàng trăm.
+f) 7 583 732 … 7 584 318
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
-Trả lời ngắn gọn.
+Tìm x, trình bày từng bước.
 
-a) 8 ngày bằng bao nhiêu tuần lễ và mấy ngày?
-b) Năm 1904 thuộc thế kỉ thứ mấy?
-c) Năm 2040 có phải năm nhuận không?
-d) Tháng 7 năm 2002 có bao nhiêu ngày?
+a) (x + 248) × 8 = 2 080
+b) (x − 165) × 6 = -72
+c) x × 2 + 281 = 667
+d) (x − 239) × 4 = -200
+e) x × 11 + 231 = 1 100
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
-Tóm tắt bằng sơ đồ đoạn thẳng rồi giải.
+Chú ý đổi đơn vị ở bước cuối.
 
-a) Đội Hai và đội Một trồng được 524 cây. Đội Hai trồng nhiều hơn đội Một 8 cây. Mỗi tổ trồng bao nhiêu cây?
-b) Cửa hàng và xưởng chứa tất cả 624 kg phân bón. Cửa hàng chứa nhiều hơn xưởng 18 kg. Mỗi nơi chứa bao nhiêu kg?
-c) Hai lớp 3A và 4B có tất cả 652 quyển sách. Lớp 3A có nhiều hơn lớp 4B 44 quyển. Mỗi lớp có bao nhiêu quyển?
-d) Tổ Ba và đội Hai trồng được 680 cây. Tổ Ba trồng nhiều hơn đội Hai 182 cây. Mỗi tổ trồng bao nhiêu cây?
+a) Trên bản đồ tỉ lệ 1 : 10 000, một đoạn đường đo được 12 cm. Hỏi đoạn đường đó dài bao nhiêu mét trên thực tế?
+b) Một đoạn đường dài 19 m được vẽ trên bản đồ tỉ lệ 1 : 100. Trên bản đồ đoạn ấy dài bao nhiêu xăng-ti-mét?
+c) Một đoạn đường dài 15 m được vẽ trên bản đồ tỉ lệ 1 : 500. Trên bản đồ đoạn ấy dài bao nhiêu xăng-ti-mét?
+d) Trên bản đồ tỉ lệ 1 : 5 000, một đoạn đường đo được 23 cm. Hỏi đoạn đường đó dài bao nhiêu mét trên thực tế?
+e) Trên bản đồ tỉ lệ 1 : 5 000, một đoạn đường đo được 8 cm. Hỏi đoạn đường đó dài bao nhiêu mét trên thực tế?
+f) Một đoạn đường dài 190 m được vẽ trên bản đồ tỉ lệ 1 : 1 000. Trên bản đồ đoạn ấy dài bao nhiêu xăng-ti-mét?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
-Vẽ hình và kẻ lưới ra nháp.
+Đếm có hệ thống, nêu cách đếm.
 
-a) Một hình chữ nhật 12 cm × 4 cm được phủ kín bằng các hình vuông cạnh 1 cm. Cần bao nhiêu hình vuông?
-b) Diện tích hình chữ nhật ấy bằng bao nhiêu?
-c) Diện tích mỗi hình vuông nhỏ bằng bao nhiêu?
-d) Chia hình chữ nhật ấy thành 2 phần bằng nhau thì mỗi phần có diện tích bao nhiêu?
-e) Chia thành 4 phần bằng nhau thì mỗi phần bao nhiêu?
-f) Nếu ghép hai hình chữ nhật ấy theo chiều dài thì hình mới có chu vi bao nhiêu?
+a) Từ một đỉnh của tam giác lớn kẻ 5 đoạn thẳng tới cạnh đối diện. Có tất cả bao nhiêu tam giác trong hình?
+b) Trong đó có bao nhiêu tam giác nhỏ nhất (không bị chia tiếp)?
+c) Trên một đường thẳng lấy 5 điểm phân biệt. Có bao nhiêu đoạn thẳng được tạo thành?
+d) Nếu lấy thêm một điểm nữa trên đường thẳng đó thì có thêm bao nhiêu đoạn thẳng?
+e) Với 6 điểm thì có tất cả bao nhiêu đoạn thẳng?
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
 Bài mô phỏng phần tự luận của đề thi chất lượng cao.
 
-a) Ba số có tổng 354. Số thứ hai hơn số thứ nhất 8, số thứ ba hơn số thứ hai 8. Tìm số thứ hai.
+a) Ba số có tổng 255. Số thứ hai hơn số thứ nhất 12, số thứ ba hơn số thứ hai 12. Tìm số thứ hai.
 b) Tìm số thứ nhất.
 c) Tìm số thứ ba.
 d) Vì sao số thứ hai bằng tổng ba số chia cho 3?
-e) Hai số khác có tổng 175 và số bé bằng 2 phần 5 số lớn. Tìm số bé.
+e) Hai số khác có tổng 70 và số bé bằng 1 phần 4 số lớn. Tìm số bé.
 f) Tìm số lớn.
 
 
@@ -86,97 +89,99 @@ f) Tìm số lớn.
 ## ĐÁP ÁN VÀ BIỂU ĐIỂM
 
 
-### Bài 1, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **60 000**
-b) **1 182 948 và 1 182 950**
-c) **4 298 800**
+a) **3 942 000**
+b) **5 110 805 và 5 110 807**
+c) **70**
 d) **<**
-e) **<**
+e) **9 594 400**
+f) **<**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Chữ số hàng chục nghìn của số 2 367 148 có giá trị bằng bao nhiêu?
+1. Xét ý a: Làm tròn 3 942 319 đến hàng nghìn.
 2. Đọc vị: đây là dạng **Ôn tập số tự nhiên**; dấu hiệu là Câu hỏi ngắn về so sánh, hàng, số liền kề, làm tròn.
 3. Kiến thức phải dùng: Thứ tự số tự nhiên, giá trị hàng, quy tắc làm tròn.
 4. Cách làm: Đếm chữ số, xét hàng từ trái sang phải.
 5. Lối tắt: Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số.
-6. Kết quả: **60 000**.
+6. Kết quả: **3 942 000**.
 
 *Lỗi hay mắc:* So sánh từ hàng đơn vị; hoặc làm tròn nhìn nhầm sang chính hàng cần làm tròn.
 
-### Bài 2, (2 điểm — mỗi ý 0,5 điểm)
+### Bài 2, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **1 tuần 1 ngày**
-b) **XX**
-c) **có**
-d) **31**
-
-**Cách giải mẫu:**
-
-1. Xét ý a: 8 ngày bằng bao nhiêu tuần lễ và mấy ngày?
-2. Đọc vị: đây là dạng **Lịch và đơn vị thời gian lớn**; dấu hiệu là Đề hỏi về tháng, năm, thế kỉ.
-3. Kiến thức phải dùng: Số ngày các tháng, năm nhuận, thế kỉ.
-4. Cách làm: Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400.
-5. Lối tắt: Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ.
-6. Kết quả: **1 tuần 1 ngày**.
-
-*Lỗi hay mắc:* Coi mọi năm chia hết cho 4 đều là năm nhuận.
-
-### Bài 3, (2 điểm — mỗi ý 0,5 điểm)
-
-a) **đội Hai: 266 cây, đội Một: 258 cây**
-b) **cửa hàng: 321 kg, xưởng: 303 kg**
-c) **3A: 348 quyển, 4B: 304 quyển**
-d) **tổ Ba: 431 cây, đội Hai: 249 cây**
+a) **x = 12**
+b) **x = 153**
+c) **x = 193**
+d) **x = 189**
+e) **x = 79**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Đội Hai và đội Một trồng được 524 cây. Đội Hai trồng nhiều hơn đội Một 8 cây. Mỗi tổ trồng bao nhiêu cây?
-2. Đọc vị: đây là dạng **Tổng – hiệu có lời văn**; dấu hiệu là “Có tất cả …” và “… nhiều hơn … là …”.
-3. Kiến thức phải dùng: Công thức tổng – hiệu, sơ đồ đoạn thẳng.
-4. Cách làm: Đọc vị tổng và hiệu → sơ đồ → công thức.
-5. Lối tắt: Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần.
-6. Kết quả: **đội Hai: 266 cây, đội Một: 258 cây**.
+1. Xét ý a: (x + 248) × 8 = 2 080
+2. Đọc vị: đây là dạng **Tìm x qua hai bước**; dấu hiệu là x nằm trong một cụm có hai phép tính.
+3. Kiến thức phải dùng: Quan hệ các thành phần phép tính, thứ tự thực hiện.
+4. Cách làm: Gỡ dần từ phép ngoài cùng vào trong.
+5. Lối tắt: Thay x tìm được vào đề để thử — nhanh hơn dò lại từng bước.
+6. Kết quả: **x = 12**.
 
-*Lỗi hay mắc:* Nhầm hiệu thành tổng khi đề diễn đạt vòng vo.
+*Lỗi hay mắc:* Gỡ phép nhân trước khi gỡ phép cộng ở ngoài.
 
-### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 3, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **48**
-b) **48 cm²**
-c) **1 cm²**
-d) **24 cm²**
-e) **12 cm²**
-f) **40 cm**
+a) **1 200 m**
+b) **19 cm**
+c) **3 cm**
+d) **1 150 m**
+e) **400 m**
+f) **19 cm**
 
 **Cách giải mẫu:**
 
-1. Bước 1 — diện tích hình chữ nhật: 12 × 4 = 48 (cm²).
-2. Bước 2 — diện tích một hình vuông nhỏ: 1 × 1 = 1 (cm²).
-3. Bước 3 — số hình vuông cần dùng: 48 : 1 = 48 (hình).
-4. Kiểm tra: xếp được 12 hàng, mỗi hàng 4 hình — đúng 48 hình ✓
-5. Đáp số: **48 hình vuông**.
+1. Tỉ lệ 1 : 10 000 nghĩa là 1 cm trên bản đồ ứng với 10 000 cm thật.
+2. Bước 1 — độ dài thật tính bằng xăng-ti-mét: 12 × 10 000 = 120 000 (cm).
+3. Bước 2 — đổi ra mét: 120 000 : 100 = 1 200 (m).
+4. Đáp số: **1 200 m**.
 
-*Lỗi hay mắc:* Chia chu vi cho cạnh mảnh thay vì chia diện tích cho diện tích.
+*Lỗi hay mắc:* Đổi mét sang xăng-ti-mét ngay từ đầu rồi lại nhân tỉ lệ một lần nữa.
+
+### Bài 4, (2 điểm — mỗi ý 0,4 điểm)
+
+a) **21**
+b) **6**
+c) **10**
+d) **5**
+e) **15**
+
+**Cách giải mẫu:**
+
+1. Xét ý a: Từ một đỉnh của tam giác lớn kẻ 5 đoạn thẳng tới cạnh đối diện. Có tất cả bao nhiêu tam giác trong hình?
+2. Đọc vị: đây là dạng **Đếm hình bằng quy tắc chọn hai điểm**; dấu hiệu là Hình có nhiều đoạn kẻ từ cùng một đỉnh, hoặc nhiều điểm trên một đường.
+3. Kiến thức phải dùng: Quy tắc đếm, tổ hợp chập hai.
+4. Cách làm: Quy về số cách chọn hai điểm.
+5. Lối tắt: Số cách chọn 2 trong k là k × (k − 1) : 2 — thuộc công thức này là xong.
+6. Kết quả: **21**.
+
+*Lỗi hay mắc:* Chỉ đếm tam giác nhỏ, quên các tam giác ghép.
 
 ### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **118**
-b) **110**
-c) **126**
+a) **85**
+b) **73**
+c) **97**
 d) **vì ba số cách đều nên số ở giữa là trung bình cộng**
-e) **50**
-f) **125**
+e) **14**
+f) **56**
 
 **Cách giải mẫu:**
 
-1. Ba số cách đều nhau 8 đơn vị nên số ở giữa là trung bình cộng.
-2. Bước 1 — số thứ hai: 354 : 3 = 118.
-3. Bước 2 — số thứ nhất: 118 − 8 = 110.
-4. Bước 3 — số thứ ba: 118 + 8 = 126.
-5. Thử lại: 110 + 118 + 126 = 354 ✓
-6. Đáp số: **110, 118, 126**.
+1. Ba số cách đều nhau 12 đơn vị nên số ở giữa là trung bình cộng.
+2. Bước 1 — số thứ hai: 255 : 3 = 85.
+3. Bước 2 — số thứ nhất: 85 − 12 = 73.
+4. Bước 3 — số thứ ba: 85 + 12 = 97.
+5. Thử lại: 73 + 85 + 97 = 255 ✓
+6. Đáp số: **73, 85, 97**.
 
 *Lỗi hay mắc:* Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi.
 
@@ -189,9 +194,9 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài | Đo cái gì | Sai bài này nghĩa là | Học lại ở đâu |
 |:--:|---|---|---|
 | Bài 1 | Ôn tập số tự nhiên | So sánh từ hàng đơn vị; hoặc làm tròn nhìn nhầm sang chính hàng cần làm tròn. | Nhóm chuyên đề **—** · mức — |
-| Bài 2 | Lịch và đơn vị thời gian lớn | Coi mọi năm chia hết cho 4 đều là năm nhuận. | Nhóm chuyên đề **—** · mức — |
-| Bài 3 | Tổng – hiệu có lời văn | Nhầm hiệu thành tổng khi đề diễn đạt vòng vo. | Nhóm chuyên đề **—** · mức — |
-| Bài 4 | Phủ hình, chia hình | Chia chu vi cho cạnh mảnh thay vì chia diện tích cho diện tích. | Nhóm chuyên đề **—** · mức — |
+| Bài 2 | Tìm x qua hai bước | Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. | Nhóm chuyên đề **—** · mức — |
+| Bài 3 | Tỉ lệ bản đồ, tỉ lệ xích | Đổi mét sang xăng-ti-mét ngay từ đầu rồi lại nhân tỉ lệ một lần nữa. | Nhóm chuyên đề **—** · mức — |
+| Bài 4 | Đếm hình bằng quy tắc chọn hai điểm | Chỉ đếm tam giác nhỏ, quên các tam giác ghép. | Nhóm chuyên đề **—** · mức — |
 | Bài 5 | Tổng nhiều số có ràng buộc; tổng – tỉ | Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. | Nhóm chuyên đề **—** · mức — |
 
 ---

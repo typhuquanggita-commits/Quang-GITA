@@ -30,57 +30,57 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Viết số tự nhiên ứng với mỗi tổng dưới đây.
 
-a) Viết số gồm tổng: 2 000 000 + 900 000 + 10 000 + 700 + 6
-b) Viết số gồm tổng: 2 000 000 + 800 000 + 50 000 + 400 + 40 + 6
-c) Viết số gồm tổng: 5 000 000 + 400 000 + 40 000 + 4 000 + 700 + 50 + 5
-d) Viết số gồm tổng: 8 000 000 + 700 000 + 20 000 + 4 000 + 300 + 60 + 3
+a) Viết số gồm tổng: 9 000 000 + 300 000 + 70 000 + 6 000 + 50 + 3
+b) Viết số gồm tổng: 5 000 000 + 300 000 + 80 000 + 8 000 + 500 + 60 + 3
+c) Viết số gồm tổng: 8 000 000 + 800 000 + 20 000 + 3 000 + 100 + 50 + 8
+d) Viết số gồm tổng: 7 000 000 + 800 000 + 20 000 + 700 + 80
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
 Điền dấu <, >, = thích hợp.
 
-a) 73 dam … 1 669 m
-b) 34 cm² … 4 080 km²
-c) 84 g … 1 374 kg
-d) 81 dag … 5 352 tạ
-e) 37 cm² … 7 173 dm²
-f) 82 cm … 6 701 km
+a) 47 hm … 2 226 m
+b) 15 dm² … 2 778 m²
+c) 13 yến … 2 041 tạ
+d) 57 dam … 5 203 km
+e) 18 dag … 7 383 yến
+f) 63 dm² … 6 435 m²
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
 Ghi rõ đại lượng nào ứng với 100%.
 
-a) Một món hàng giá 240 000 đồng, tăng giá 30%. Giá mới là bao nhiêu?
-b) Một chiếc cặp giá 120 000 đồng được giảm 30%. Hỏi giá sau khi giảm là bao nhiêu?
-c) Mua một món hàng 150 000 đồng rồi bán 195 000 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
-d) Mua một món hàng 300 000 đồng rồi bán 375 000 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
-e) Một món hàng giá 400 000 đồng, tăng giá 10%. Giá mới là bao nhiêu?
+a) Một món hàng giá 120 000 đồng, tăng giá 20%. Giá mới là bao nhiêu?
+b) Một chiếc cặp giá 500 000 đồng được giảm 25%. Hỏi giá sau khi giảm là bao nhiêu?
+c) Mua một món hàng 500 000 đồng rồi bán 525 000 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
+d) Mua một món hàng 120 000 đồng rồi bán 126 000 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
+e) Một chiếc cặp giá 300 000 đồng được giảm 5%. Hỏi giá sau khi giảm là bao nhiêu?
+f) Một món hàng giá 240 000 đồng, tăng giá 15%. Giá mới là bao nhiêu?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
-Điền số thích hợp.
+Ghi rõ đơn vị: cm² cho diện tích, cm³ cho thể tích.
 
-a) 59 lít = … ml
-b) 22 000 cm³ = … dm³
-c) 88 m³ = … dm³
-d) 26 dm³ = … lít
-e) 71 000 cm³ = … dm³
-f) 50 m³ = … dm³
+a) Hình hộp chữ nhật có ba kích thước 10 cm, 14 cm, 2 cm. Tính thể tích.
+b) Hình hộp chữ nhật có đáy 3 cm × 11 cm, chiều cao 11 cm. Tính diện tích xung quanh.
+c) Hình hộp chữ nhật có đáy 10 cm × 10 cm, chiều cao 12 cm. Tính diện tích toàn phần.
+d) Hình lập phương có cạnh 4 cm. Tính thể tích và diện tích toàn phần.
+e) Hình lập phương có cạnh 7 cm. Tính thể tích và diện tích toàn phần.
+f) Hình hộp chữ nhật có đáy 14 cm × 4 cm, chiều cao 11 cm. Tính diện tích xung quanh.
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
-Dùng kĩ thuật tô màu để lập luận.
+Tính thời gian gặp nhau trước.
 
-a) Một bàn cờ vuông 4 × 4 ô. Hỏi có tất cả bao nhiêu ô?
-b) Tô màu xen kẽ đen trắng như bàn cờ vua thì có bao nhiêu ô đen?
-c) Một quân đô-mi-nô phủ đúng 2 ô liền nhau. Có thể phủ kín cả bàn cờ 4 × 4 bằng các quân đô-mi-nô không?
-d) Mỗi quân đô-mi-nô luôn phủ mấy ô đen và mấy ô trắng?
-e) Nếu bỏ đi hai ô ở hai góc đối diện của bàn cờ 4 × 4 (hai ô này cùng màu) thì còn phủ kín được không?
-f) Đại lượng bất biến dùng ở đây là gì?
+a) Hai xe đi ngược chiều từ hai địa điểm cách nhau 240 km, vận tốc 50 km/giờ và 30 km/giờ. Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
+b) Hai xe đi ngược chiều từ hai địa điểm cách nhau 128 km, vận tốc 40 km/giờ và 24 km/giờ. Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
+c) Hai xe đi ngược chiều từ hai địa điểm cách nhau 288 km, vận tốc 60 km/giờ và 12 km/giờ. Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
+d) Hai xe đi ngược chiều từ hai địa điểm cách nhau 130 km, vận tốc 50 km/giờ và 15 km/giờ. Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
+e) Hai xe đi ngược chiều từ hai địa điểm cách nhau 310 km, vận tốc 50 km/giờ và 12 km/giờ. Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
 
 
 ---
@@ -90,25 +90,25 @@ f) Đại lượng bất biến dùng ở đây là gì?
 
 ### Bài 1, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **2 910 706**
-b) **2 850 446**
-c) **5 444 755**
-d) **8 724 363**
+a) **9 376 053**
+b) **5 388 563**
+c) **8 823 158**
+d) **7 820 780**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Viết số gồm tổng: 2 000 000 + 900 000 + 10 000 + 700 + 6
+1. Xét ý a: Viết số gồm tổng: 9 000 000 + 300 000 + 70 000 + 6 000 + 50 + 3
 2. Đọc vị: đây là dạng **Viết số từ dạng tổng theo hàng**; dấu hiệu là Tổng gồm các số tròn chục, tròn trăm, tròn nghìn….
 3. Kiến thức phải dùng: Cấu tạo thập phân của số tự nhiên.
 4. Cách làm: Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết.
 5. Lối tắt: Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số.
-6. Kết quả: **2 910 706**.
+6. Kết quả: **9 376 053**.
 
 *Lỗi hay mắc:* Bỏ qua hàng khuyết nên số viết ra bị ngắn đi một chữ số.
 
 ### Bài 2, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **<**
+a) **>**
 b) **<**
 c) **<**
 d) **<**
@@ -117,73 +117,73 @@ f) **<**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 73 dam … 1 669 m
+1. Xét ý a: 47 hm … 2 226 m
 2. Đọc vị: đây là dạng **So sánh số đo đại lượng**; dấu hiệu là Hai vế có đơn vị khác nhau.
 3. Kiến thức phải dùng: Bảng đơn vị đo, so sánh số tự nhiên.
 4. Cách làm: Đổi về cùng đơn vị rồi so sánh.
 5. Lối tắt: Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số.
-6. Kết quả: **<**.
+6. Kết quả: **>**.
 
 *Lỗi hay mắc:* So thẳng hai con số, bỏ qua đơn vị.
 
-### Bài 3, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 3, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **312 000 đồng**
-b) **84 000 đồng**
-c) **30%**
-d) **25%**
-e) **440 000 đồng**
+a) **144 000 đồng**
+b) **375 000 đồng**
+c) **5%**
+d) **5%**
+e) **285 000 đồng**
+f) **276 000 đồng**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Một món hàng giá 240 000 đồng, tăng giá 30%. Giá mới là bao nhiêu?
+1. Xét ý a: Một món hàng giá 120 000 đồng, tăng giá 20%. Giá mới là bao nhiêu?
 2. Đọc vị: đây là dạng **Tỉ số phần trăm trong mua bán**; dấu hiệu là Từ khoá “giảm giá”, “tăng giá”, “lãi”, “lỗ”.
 3. Kiến thức phải dùng: Tỉ số phần trăm, mốc quy chiếu 100%.
 4. Cách làm: Chốt mốc 100% rồi cộng trừ phần trăm.
 5. Lối tắt: Giảm 20% nghĩa là còn 80% — nhân thẳng một lần thay vì trừ hai bước.
-6. Kết quả: **312 000 đồng**.
+6. Kết quả: **144 000 đồng**.
 
 *Lỗi hay mắc:* Chia tiền lãi cho giá bán nên ra tỉ lệ nhỏ hơn thực tế.
 
 ### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **59 000**
-b) **22**
-c) **88 000**
-d) **26**
-e) **71**
-f) **50 000**
+a) **280 cm³**
+b) **308 cm²**
+c) **680 cm²**
+d) **thể tích 64 cm³, diện tích toàn phần 96 cm²**
+e) **thể tích 343 cm³, diện tích toàn phần 294 cm²**
+f) **396 cm²**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 59 lít = … ml
-2. Đọc vị: đây là dạng **Đổi đơn vị thể tích, dung tích**; dấu hiệu là Đơn vị có mũ ba, hoặc lít, mi-li-lít.
-3. Kiến thức phải dùng: Bảng đơn vị thể tích; quan hệ dm³ – lít.
-4. Cách làm: Đếm bậc rồi nhân, chia 1 000.
-5. Lối tắt: Mỗi bậc thêm ba chữ số 0.
-6. Kết quả: **59 000**.
+1. Xét ý a: Hình hộp chữ nhật có ba kích thước 10 cm, 14 cm, 2 cm. Tính thể tích.
+2. Đọc vị: đây là dạng **Hình hộp chữ nhật, hình lập phương**; dấu hiệu là Đề cho ba kích thước hoặc cạnh hình lập phương.
+3. Kiến thức phải dùng: Công thức thể tích, diện tích xung quanh, toàn phần.
+4. Cách làm: Xác định loại diện tích cần tính, đếm đủ số mặt.
+5. Lối tắt: Hình lập phương cạnh a: toàn phần 6 × a × a, thể tích a × a × a.
+6. Kết quả: **280 cm³**.
 
-*Lỗi hay mắc:* Đổi như đơn vị diện tích, chỉ nhân 100.
+*Lỗi hay mắc:* Cộng thiếu một mặt đáy khi tính diện tích toàn phần.
 
-### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 5, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **16**
-b) **8**
-c) **có**
-d) **1 ô đen và 1 ô trắng**
-e) **không, vì số ô đen và ô trắng không còn bằng nhau**
-f) **hiệu giữa số ô đen và số ô trắng chưa bị phủ**
+a) **150 km**
+b) **80 km**
+c) **240 km**
+d) **100 km**
+e) **250 km**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Một bàn cờ vuông 4 × 4 ô. Hỏi có tất cả bao nhiêu ô?
-2. Đọc vị: đây là dạng **Tô màu, bất biến trên bàn cờ**; dấu hiệu là Bàn cờ, quân đô-mi-nô, câu hỏi “có thể phủ kín không”.
-3. Kiến thức phải dùng: Kĩ thuật tô màu, bất biến, tính chẵn lẻ.
-4. Cách làm: Tô màu xen kẽ, đếm hai màu, so sánh.
-5. Lối tắt: Hai ô ở hai góc đối diện của bàn cờ luôn cùng màu.
-6. Kết quả: **16**.
+1. Xét ý a: Hai xe đi ngược chiều từ hai địa điểm cách nhau 240 km, vận tốc 50 km/giờ và 30 km/giờ. Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
+2. Đọc vị: đây là dạng **Chuyển động ngược chiều, tính quãng đường từng xe**; dấu hiệu là Hỏi quãng đường **của một xe** tính đến lúc gặp nhau.
+3. Kiến thức phải dùng: Quãng đường – vận tốc – thời gian, tỉ lệ thuận.
+4. Cách làm: Thời gian gặp → quãng đường từng xe.
+5. Lối tắt: Quãng đường hai xe đi tỉ lệ thuận với vận tốc — chia quãng cách theo tỉ số vận tốc là ra ngay.
+6. Kết quả: **150 km**.
 
-*Lỗi hay mắc:* Thử xếp bằng tay rồi kết luận “không xếp được” mà không chứng minh.
+*Lỗi hay mắc:* Chia quãng đường theo tỉ lệ sai, hoặc lấy quãng đường chia đôi.
 
 ---
 
@@ -196,8 +196,8 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài 1 | Viết số từ dạng tổng theo hàng | Bỏ qua hàng khuyết nên số viết ra bị ngắn đi một chữ số. | Nhóm chuyên đề **—** · mức — |
 | Bài 2 | So sánh số đo đại lượng | So thẳng hai con số, bỏ qua đơn vị. | Nhóm chuyên đề **—** · mức — |
 | Bài 3 | Tỉ số phần trăm trong mua bán | Chia tiền lãi cho giá bán nên ra tỉ lệ nhỏ hơn thực tế. | Nhóm chuyên đề **—** · mức — |
-| Bài 4 | Đổi đơn vị thể tích, dung tích | Đổi như đơn vị diện tích, chỉ nhân 100. | Nhóm chuyên đề **—** · mức — |
-| Bài 5 | Tô màu, bất biến trên bàn cờ | Thử xếp bằng tay rồi kết luận “không xếp được” mà không chứng minh. | Nhóm chuyên đề **—** · mức — |
+| Bài 4 | Hình hộp chữ nhật, hình lập phương | Cộng thiếu một mặt đáy khi tính diện tích toàn phần. | Nhóm chuyên đề **—** · mức — |
+| Bài 5 | Chuyển động ngược chiều, tính quãng đường từng xe | Chia quãng đường theo tỉ lệ sai, hoặc lấy quãng đường chia đôi. | Nhóm chuyên đề **—** · mức — |
 
 ---
 

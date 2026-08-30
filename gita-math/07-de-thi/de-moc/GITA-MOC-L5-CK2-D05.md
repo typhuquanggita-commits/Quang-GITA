@@ -30,55 +30,58 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Đặt tính rồi tính. Ước lượng trước để tự kiểm tra.
 
-a) 160 859 028 : 636
-b) 426 588 × 151
-c) 172 642 − 23 865
-d) 106 724 + 405 850
-e) 595 038 − 276 234
+a) 291 683 − 64 471
+b) 240 238 188 : 636
+c) 346 357 + 303 905
+d) 313 482 × 636
+e) 468 850 × 302
+f) 46 943 138 : 506
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
 Điền số thích hợp vào chỗ chấm.
 
-a) 47 hm² = … m²
-b) 57 ha = … m²
-c) 7 400 dam² = … hm²
-d) 600 ha = … km²
-e) 3 100 m² = … dam²
+a) 4 800 ha = … km²
+b) 83 ha = … m²
+c) 800 dam² = … hm²
+d) 52 dam² = … m²
+e) 24 hm² = … m²
+f) 3 100 m² = … dam²
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
 Chú ý đổi đơn vị ở bước cuối.
 
-a) Một đoạn đường dài 1 200 m được vẽ trên bản đồ tỉ lệ 1 : 5 000. Trên bản đồ đoạn ấy dài bao nhiêu xăng-ti-mét?
-b) Trên bản đồ tỉ lệ 1 : 1 000, một đoạn đường đo được 10 cm. Hỏi đoạn đường đó dài bao nhiêu mét trên thực tế?
-c) Trên bản đồ tỉ lệ 1 : 5 000, một đoạn đường đo được 7 cm. Hỏi đoạn đường đó dài bao nhiêu mét trên thực tế?
-d) Một đoạn đường dài 600 m được vẽ trên bản đồ tỉ lệ 1 : 5 000. Trên bản đồ đoạn ấy dài bao nhiêu xăng-ti-mét?
-e) Một đoạn đường dài 1 350 m được vẽ trên bản đồ tỉ lệ 1 : 5 000. Trên bản đồ đoạn ấy dài bao nhiêu xăng-ti-mét?
+a) Một đoạn đường dài 20 m được vẽ trên bản đồ tỉ lệ 1 : 1 000. Trên bản đồ đoạn ấy dài bao nhiêu xăng-ti-mét?
+b) Trên bản đồ tỉ lệ 1 : 1 000, một đoạn đường đo được 16 cm. Hỏi đoạn đường đó dài bao nhiêu mét trên thực tế?
+c) Một đoạn đường dài 560 m được vẽ trên bản đồ tỉ lệ 1 : 2 000. Trên bản đồ đoạn ấy dài bao nhiêu xăng-ti-mét?
+d) Trên bản đồ tỉ lệ 1 : 100, một đoạn đường đo được 18 cm. Hỏi đoạn đường đó dài bao nhiêu mét trên thực tế?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
-Câu nào cũng ghi rõ đang đổi từ đơn vị nào sang đơn vị nào.
+Áp dụng đúng công thức cho từng câu.
 
-a) Trên bản đồ tỉ lệ 1 : 200 000, khoảng cách từ thị trấn A đến thị trấn B đo được 11 cm. Hỏi khoảng cách thật là bao nhiêu ki-lô-mét?
-b) Khoảng cách thật từ xã Đông đến xã Đoài là 50 km. Hỏi trên bản đồ tỉ lệ 1 : 500 000 thì khoảng cách ấy dài bao nhiêu xăng-ti-mét?
-c) Trên bản đồ tỉ lệ 1 : 500 000, khoảng cách từ trường đến nhà văn hoá xã đo được 11 cm. Hỏi khoảng cách thật là bao nhiêu ki-lô-mét?
-d) Khoảng cách thật từ bến xe đến chợ huyện là 34 km. Hỏi trên bản đồ tỉ lệ 1 : 100 000 thì khoảng cách ấy dài bao nhiêu xăng-ti-mét?
+a) Một người đi quãng đường 15 km với vận tốc 5 km/giờ. Tính thời gian đi.
+b) Một người đi với vận tốc 50 km/giờ trong 2 giờ. Tính quãng đường đi được.
+c) Một người đi 60 km hết 2 giờ. Tính vận tốc.
+d) Một người đi quãng đường 90 km với vận tốc 45 km/giờ. Tính thời gian đi.
+e) Một người đi 180 km hết 4 giờ. Tính vận tốc.
+f) Một người đi với vận tốc 20 km/giờ trong 2 giờ. Tính quãng đường đi được.
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
-Dùng kĩ thuật tô màu để lập luận.
+Làm trong 25 phút. Trình bày như bài thi thật: có câu lời giải, có đáp số.
 
-a) Một bàn cờ vuông 5 × 5 ô. Hỏi có tất cả bao nhiêu ô?
-b) Tô màu xen kẽ đen trắng như bàn cờ vua thì có bao nhiêu ô đen?
-c) Một quân đô-mi-nô phủ đúng 2 ô liền nhau. Có thể phủ kín cả bàn cờ 5 × 5 bằng các quân đô-mi-nô không?
-d) Mỗi quân đô-mi-nô luôn phủ mấy ô đen và mấy ô trắng?
-e) Nếu bỏ đi hai ô ở hai góc đối diện của bàn cờ 5 × 5 (hai ô này cùng màu) thì còn phủ kín được không?
-f) Đại lượng bất biến dùng ở đây là gì?
+a) Hai xe khởi hành cùng lúc từ hai địa điểm cách nhau 234 km và đi ngược chiều. Vận tốc lần lượt là 48 km/giờ và 30 km/giờ. Sau bao lâu hai xe gặp nhau?
+b) Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
+c) Chỗ gặp nhau cách điểm khởi hành của xe thứ hai bao nhiêu ki-lô-mét?
+d) Một món hàng giá 400 000 đồng, tăng giá 10%. Giá mới là bao nhiêu?
+e) Sau đó giảm giá 10% so với giá mới. Giá cuối cùng là bao nhiêu?
+f) Giá cuối cùng so với giá ban đầu là tăng hay giảm, và chênh bao nhiêu đồng?
 
 
 ---
@@ -86,96 +89,103 @@ f) Đại lượng bất biến dùng ở đây là gì?
 ## ĐÁP ÁN VÀ BIỂU ĐIỂM
 
 
-### Bài 1, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **252 923**
-b) **64 414 788**
-c) **148 777**
-d) **512 574**
-e) **318 804**
+a) **227 212**
+b) **377 733**
+c) **650 262**
+d) **199 374 552**
+e) **141 592 700**
+f) **92 773**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 160 859 028 : 636
+1. Xét ý a: 291 683 − 64 471
 2. Đọc vị: đây là dạng **Bốn phép tính với số tự nhiên**; dấu hiệu là Yêu cầu “đặt tính rồi tính”.
 3. Kiến thức phải dùng: Kĩ thuật đặt tính cộng, trừ, nhân, chia.
 4. Cách làm: Đặt tính thẳng cột, tính từ hàng đơn vị.
 5. Lối tắt: Ước lượng bằng cách làm tròn để phát hiện sai sót về độ lớn.
-6. Kết quả: **252 923**.
+6. Kết quả: **227 212**.
 
 *Lỗi hay mắc:* Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số.
 
-### Bài 2, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 2, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **470 000**
-b) **570 000**
-c) **74**
-d) **6**
-e) **31**
+a) **48**
+b) **830 000**
+c) **8**
+d) **5 200**
+e) **240 000**
+f) **31**
 
 **Cách giải mẫu:**
 
-1. 1 hm² = 10 000 m².
-2. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**.
-3. 47 × 10 000 = 470 000 (m²).
-4. Đáp số: **470 000 m²**.
+1. Xét ý a: 4 800 ha = … km²
+2. Đọc vị: đây là dạng **Đổi đơn vị diện tích**; dấu hiệu là Đơn vị có mũ hai, hoặc ha, km².
+3. Kiến thức phải dùng: Bảng đơn vị đo diện tích.
+4. Cách làm: Đếm bậc rồi nhân, chia 100.
+5. Lối tắt: Mỗi bậc thêm hai chữ số 0 — nhớ “diện tích thì gấp đôi số 0”.
+6. Kết quả: **48**.
 
 *Lỗi hay mắc:* Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc.
 
-### Bài 3, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 3, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **24 cm**
-b) **100 m**
-c) **350 m**
-d) **12 cm**
-e) **27 cm**
+a) **2 cm**
+b) **160 m**
+c) **28 cm**
+d) **18 m**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Một đoạn đường dài 1 200 m được vẽ trên bản đồ tỉ lệ 1 : 5 000. Trên bản đồ đoạn ấy dài bao nhiêu xăng-ti-mét?
+1. Xét ý a: Một đoạn đường dài 20 m được vẽ trên bản đồ tỉ lệ 1 : 1 000. Trên bản đồ đoạn ấy dài bao nhiêu xăng-ti-mét?
 2. Đọc vị: đây là dạng **Tỉ lệ bản đồ, tỉ lệ xích**; dấu hiệu là Có kí hiệu tỉ lệ dạng 1 : n.
 3. Kiến thức phải dùng: Tỉ lệ, đổi đơn vị đo độ dài.
 4. Cách làm: Nhân hoặc chia theo tỉ lệ rồi đổi đơn vị.
 5. Lối tắt: Tỉ lệ 1 : 1 000 thì 1 cm bản đồ đúng bằng 10 m thật.
-6. Kết quả: **24 cm**.
+6. Kết quả: **2 cm**.
 
 *Lỗi hay mắc:* Đổi mét sang xăng-ti-mét ngay từ đầu rồi lại nhân tỉ lệ một lần nữa.
 
-### Bài 4, (2 điểm — mỗi ý 0,5 điểm)
+### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **22 km**
-b) **10 cm**
-c) **55 km**
-d) **34 cm**
+a) **3 giờ**
+b) **100 km**
+c) **30 km/giờ**
+d) **2 giờ**
+e) **45 km/giờ**
+f) **40 km**
 
 **Cách giải mẫu:**
 
-1. Tỉ lệ 1 : 200 000 nghĩa là 1 cm trên bản đồ ứng với 200 000 cm ngoài thực tế.
-2. Khoảng cách thật tính bằng xăng-ti-mét: 11 × 200 000 = 2 200 000 (cm).
-3. Đây là bước hay bị quên: đề hỏi ki-lô-mét chứ không hỏi xăng-ti-mét. 1 km = 100 000 cm.
-4. Đổi ra ki-lô-mét: 2 200 000 : 100 000 = **22 km**.
+1. Xét ý a: Một người đi quãng đường 15 km với vận tốc 5 km/giờ. Tính thời gian đi.
+2. Đọc vị: đây là dạng **Ba dạng cơ bản của chuyển động đều**; dấu hiệu là Có hai trong ba đại lượng quãng đường, vận tốc, thời gian.
+3. Kiến thức phải dùng: Công thức s = v × t.
+4. Cách làm: Chọn công thức theo đại lượng cần tìm; đồng bộ đơn vị.
+5. Lối tắt: Vẽ tam giác s ở trên, v và t ở dưới: che đại lượng cần tìm là ra công thức.
+6. Kết quả: **3 giờ**.
 
-*Lỗi hay mắc:* Trả lời con số xăng-ti-mét nhưng ghi đơn vị là ki-lô-mét.
+*Lỗi hay mắc:* Vận tốc tính bằng km/giờ nhưng thời gian lại để bằng phút.
 
 ### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **25**
-b) **13**
-c) **không, vì số ô là số lẻ**
-d) **1 ô đen và 1 ô trắng**
-e) **không, vì số ô còn lại là số lẻ**
-f) **hiệu giữa số ô đen và số ô trắng chưa bị phủ**
+a) **3 giờ**
+b) **144 km**
+c) **90 km**
+d) **440 000 đồng**
+e) **396 000 đồng**
+f) **giảm 4 000 đồng**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Một bàn cờ vuông 5 × 5 ô. Hỏi có tất cả bao nhiêu ô?
-2. Đọc vị: đây là dạng **Tô màu, bất biến trên bàn cờ**; dấu hiệu là Bàn cờ, quân đô-mi-nô, câu hỏi “có thể phủ kín không”.
-3. Kiến thức phải dùng: Kĩ thuật tô màu, bất biến, tính chẵn lẻ.
-4. Cách làm: Tô màu xen kẽ, đếm hai màu, so sánh.
-5. Lối tắt: Hai ô ở hai góc đối diện của bàn cờ luôn cùng màu.
-6. Kết quả: **25**.
+1. Bước 1 — mỗi giờ hai xe lại gần nhau: 48 + 30 = 78 (km).
+2. Bước 2 — thời gian gặp nhau: 234 : 78 = 3 (giờ).
+3. Bước 3 — quãng đường xe thứ nhất: 48 × 3 = 144 (km).
+4. Bước 4 — quãng đường xe thứ hai: 30 × 3 = 90 (km).
+5. Thử lại: 144 + 90 = 234 ✓
+6. Đáp số: **gặp nhau sau 3 giờ**.
 
-*Lỗi hay mắc:* Thử xếp bằng tay rồi kết luận “không xếp được” mà không chứng minh.
+*Lỗi hay mắc:* Ý thứ năm tính phần trăm trên giá ban đầu thay vì trên giá vừa tăng.
 
 ---
 
@@ -188,8 +198,8 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài 1 | Bốn phép tính với số tự nhiên | Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số. | Nhóm chuyên đề **—** · mức — |
 | Bài 2 | Đổi đơn vị diện tích | Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. | Nhóm chuyên đề **—** · mức — |
 | Bài 3 | Tỉ lệ bản đồ, tỉ lệ xích | Đổi mét sang xăng-ti-mét ngay từ đầu rồi lại nhân tỉ lệ một lần nữa. | Nhóm chuyên đề **—** · mức — |
-| Bài 4 | Bài toán tỉ lệ bản đồ | Trả lời con số xăng-ti-mét nhưng ghi đơn vị là ki-lô-mét. | Nhóm chuyên đề **—** · mức — |
-| Bài 5 | Tô màu, bất biến trên bàn cờ | Thử xếp bằng tay rồi kết luận “không xếp được” mà không chứng minh. | Nhóm chuyên đề **—** · mức — |
+| Bài 4 | Ba dạng cơ bản của chuyển động đều | Vận tốc tính bằng km/giờ nhưng thời gian lại để bằng phút. | Nhóm chuyên đề **—** · mức — |
+| Bài 5 | Đề tổng hợp nhiều mạch | Ý thứ năm tính phần trăm trên giá ban đầu thay vì trên giá vừa tăng. | Nhóm chuyên đề **—** · mức — |
 
 ---
 

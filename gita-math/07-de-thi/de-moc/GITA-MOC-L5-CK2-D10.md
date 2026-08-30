@@ -30,55 +30,54 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Viết số tự nhiên ứng với mỗi tổng dưới đây.
 
-a) Viết số gồm tổng: 2 000 000 + 50 000 + 5 000 + 200 + 50 + 5
-b) Viết số gồm tổng: 8 000 000 + 800 000 + 70 000 + 3 000 + 400 + 8
-c) Viết số gồm tổng: 4 000 000 + 500 000 + 50 000 + 400 + 50 + 9
-d) Viết số gồm tổng: 1 000 000 + 900 000 + 30 000 + 4 000 + 100 + 90 + 9
+a) Viết số gồm tổng: 400 000 + 40 000 + 9 000 + 700 + 6
+b) Viết số gồm tổng: 5 000 000 + 300 000 + 10 000 + 3 000 + 100 + 90 + 9
+c) Viết số gồm tổng: 6 000 000 + 100 000 + 2 000 + 100 + 10 + 8
+d) Viết số gồm tổng: 2 000 000 + 300 000 + 60 000 + 8 000 + 100 + 90 + 8
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
 Điền số thích hợp vào chỗ chấm.
 
-a) 43 hm² = … dam²
-b) 76 hm² = … m²
-c) 58 dam² = … m²
-d) 700 000 m² = … ha
-e) 76 km² = … ha
+a) 46 hm² = … dam²
+b) 71 dam² = … m²
+c) 310 000 m² = … hm²
+d) 1 300 ha = … km²
+e) 30 ha = … m²
+f) 84 km² = … ha
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
 Ghi rõ đại lượng nào ứng với 100%.
 
-a) Mua một món hàng 240 000 đồng rồi bán 288 000 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
-b) Một chiếc cặp giá 200 000 đồng được giảm 10%. Hỏi giá sau khi giảm là bao nhiêu?
-c) Một món hàng giá 500 000 đồng, tăng giá 15%. Giá mới là bao nhiêu?
-d) Mua một món hàng 400 000 đồng rồi bán 520 000 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
-e) Một chiếc cặp giá 200 000 đồng được giảm 20%. Hỏi giá sau khi giảm là bao nhiêu?
+a) Một chiếc cặp giá 400 000 đồng được giảm 10%. Hỏi giá sau khi giảm là bao nhiêu?
+b) Một món hàng giá 80 000 đồng, tăng giá 25%. Giá mới là bao nhiêu?
+c) Mua một món hàng 400 000 đồng rồi bán 440 000 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
+d) Mua một món hàng 300 000 đồng rồi bán 390 000 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
+e) Một món hàng giá 500 000 đồng, tăng giá 15%. Giá mới là bao nhiêu?
+f) Một chiếc cặp giá 80 000 đồng được giảm 20%. Hỏi giá sau khi giảm là bao nhiêu?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
-Ghi rõ đơn vị: cm² cho diện tích, cm³ cho thể tích.
+Chú ý đơn vị mà đề hỏi.
 
-a) Hình hộp chữ nhật có ba kích thước 20 cm, 2 cm, 8 cm. Tính thể tích.
-b) Hình hộp chữ nhật có đáy 20 cm × 19 cm, chiều cao 15 cm. Tính diện tích toàn phần.
-c) Hình hộp chữ nhật có đáy 13 cm × 16 cm, chiều cao 7 cm. Tính diện tích xung quanh.
-d) Hình lập phương có cạnh 16 cm. Tính thể tích và diện tích toàn phần.
-e) Hình hộp chữ nhật có đáy 11 cm × 12 cm, chiều cao 9 cm. Tính diện tích xung quanh.
-f) Hình hộp chữ nhật có đáy 12 cm × 15 cm, chiều cao 10 cm. Tính diện tích toàn phần.
+a) Một xe chở 23 bao thóc, mỗi bao 50 kg. Hỏi xe chở bao nhiêu tạ thóc?
+b) Một xe chở 36 bao xi măng, mỗi bao 40 kg. Hỏi xe chở bao nhiêu tạ xi măng?
+c) Một xe chở 7 bao xi măng, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ xi măng?
+d) Một xe chở 32 bao xi măng, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ xi măng?
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
 Tính nhanh mỗi tổng, nêu công thức đã dùng.
 
-a) 1 + 2 + 3 + … + 10
-b) 2 + 4 + 6 + … + 50 (tổng 25 số chẵn đầu tiên)
-c) 1 + 3 + 5 + … + 19 (tổng 10 số lẻ đầu tiên)
-d) 1 + 3 + 5 + … + 199 (tổng 100 số lẻ đầu tiên)
-e) 1 + 2 + 3 + … + 10
+a) 1 + 2 + 3 + … + 20
+b) 2 + 4 + 6 + … + 20 (tổng 10 số chẵn đầu tiên)
+c) 1 + 3 + 5 + … + 99 (tổng 50 số lẻ đầu tiên)
+d) 1 + 2 + 3 + … + 25
 
 
 ---
@@ -88,94 +87,92 @@ e) 1 + 2 + 3 + … + 10
 
 ### Bài 1, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **2 055 255**
-b) **8 873 408**
-c) **4 550 459**
-d) **1 934 199**
+a) **449 706**
+b) **5 313 199**
+c) **6 102 118**
+d) **2 368 198**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Viết số gồm tổng: 2 000 000 + 50 000 + 5 000 + 200 + 50 + 5
+1. Xét ý a: Viết số gồm tổng: 400 000 + 40 000 + 9 000 + 700 + 6
 2. Đọc vị: đây là dạng **Viết số từ dạng tổng theo hàng**; dấu hiệu là Tổng gồm các số tròn chục, tròn trăm, tròn nghìn….
 3. Kiến thức phải dùng: Cấu tạo thập phân của số tự nhiên.
 4. Cách làm: Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết.
 5. Lối tắt: Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số.
-6. Kết quả: **2 055 255**.
+6. Kết quả: **449 706**.
 
 *Lỗi hay mắc:* Bỏ qua hàng khuyết nên số viết ra bị ngắn đi một chữ số.
 
-### Bài 2, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 2, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **4 300**
-b) **760 000**
-c) **5 800**
-d) **70**
-e) **7 600**
+a) **4 600**
+b) **7 100**
+c) **31**
+d) **13**
+e) **300 000**
+f) **8 400**
 
 **Cách giải mẫu:**
 
 1. 1 hm² = 100 dam².
 2. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**.
-3. 43 × 100 = 4 300 (dam²).
-4. Đáp số: **4 300 dam²**.
+3. 46 × 100 = 4 600 (dam²).
+4. Đáp số: **4 600 dam²**.
 
 *Lỗi hay mắc:* Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc.
 
-### Bài 3, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 3, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **20%**
-b) **180 000 đồng**
-c) **575 000 đồng**
+a) **360 000 đồng**
+b) **100 000 đồng**
+c) **10%**
 d) **30%**
-e) **160 000 đồng**
+e) **575 000 đồng**
+f) **64 000 đồng**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Mua một món hàng 240 000 đồng rồi bán 288 000 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
-2. Đọc vị: đây là dạng **Tỉ số phần trăm trong mua bán**; dấu hiệu là Từ khoá “giảm giá”, “tăng giá”, “lãi”, “lỗ”.
-3. Kiến thức phải dùng: Tỉ số phần trăm, mốc quy chiếu 100%.
-4. Cách làm: Chốt mốc 100% rồi cộng trừ phần trăm.
-5. Lối tắt: Giảm 20% nghĩa là còn 80% — nhân thẳng một lần thay vì trừ hai bước.
-6. Kết quả: **20%**.
+1. Giá gốc ứng với 100%.
+2. Bước 1 — số tiền giảm: 400 000 : 100 × 10 = 40 000 (đồng).
+3. Bước 2 — giá sau khi giảm: 400 000 − 40 000 = 360 000 (đồng).
+4. Cách nhanh: giảm 10% nghĩa là còn 90%, tức 400 000 : 100 × 90 = 360 000 (đồng).
+5. Đáp số: **360 000 đồng**.
 
 *Lỗi hay mắc:* Chia tiền lãi cho giá bán nên ra tỉ lệ nhỏ hơn thực tế.
 
-### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 4, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **320 cm³**
-b) **1 930 cm²**
-c) **406 cm²**
-d) **thể tích 4 096 cm³, diện tích toàn phần 1 536 cm²**
-e) **414 cm²**
-f) **900 cm²**
+a) **11 tạ 50 kg**
+b) **14 tạ 40 kg**
+c) **1 tạ 75 kg**
+d) **8 tạ**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Hình hộp chữ nhật có ba kích thước 20 cm, 2 cm, 8 cm. Tính thể tích.
-2. Đọc vị: đây là dạng **Hình hộp chữ nhật, hình lập phương**; dấu hiệu là Đề cho ba kích thước hoặc cạnh hình lập phương.
-3. Kiến thức phải dùng: Công thức thể tích, diện tích xung quanh, toàn phần.
-4. Cách làm: Xác định loại diện tích cần tính, đếm đủ số mặt.
-5. Lối tắt: Hình lập phương cạnh a: toàn phần 6 × a × a, thể tích a × a × a.
-6. Kết quả: **320 cm³**.
+1. Xét ý a: Một xe chở 23 bao thóc, mỗi bao 50 kg. Hỏi xe chở bao nhiêu tạ thóc?
+2. Đọc vị: đây là dạng **Bài toán đại lượng có lời văn**; dấu hiệu là Đơn vị trong câu hỏi khác đơn vị trong dữ kiện.
+3. Kiến thức phải dùng: Nhân, chia số tự nhiên; đổi đơn vị khối lượng.
+4. Cách làm: Tính theo đơn vị dữ kiện rồi đổi ở bước cuối.
+5. Lối tắt: 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ.
+6. Kết quả: **11 tạ 50 kg**.
 
-*Lỗi hay mắc:* Cộng thiếu một mặt đáy khi tính diện tích toàn phần.
+*Lỗi hay mắc:* Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ.
 
-### Bài 5, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 5, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **55**
-b) **650**
-c) **100**
-d) **10 000**
-e) **55**
+a) **210**
+b) **110**
+c) **2 500**
+d) **325**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 1 + 2 + 3 + … + 10
+1. Xét ý a: 1 + 2 + 3 + … + 20
 2. Đọc vị: đây là dạng **Tổng dãy đặc biệt**; dấu hiệu là Dãy toàn số lẻ, toàn số chẵn, hoặc số tự nhiên liên tiếp.
 3. Kiến thức phải dùng: Ba công thức tổng cơ bản.
 4. Cách làm: Đếm số số hạng rồi áp công thức.
 5. Lối tắt: Tổng n số lẻ đầu tiên luôn là một số chính phương — dùng để kiểm tra nhanh.
-6. Kết quả: **55**.
+6. Kết quả: **210**.
 
 *Lỗi hay mắc:* Nhầm số hạng cuối với số lượng số hạng khi áp công thức.
 
@@ -190,7 +187,7 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài 1 | Viết số từ dạng tổng theo hàng | Bỏ qua hàng khuyết nên số viết ra bị ngắn đi một chữ số. | Nhóm chuyên đề **—** · mức — |
 | Bài 2 | Đổi đơn vị diện tích | Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. | Nhóm chuyên đề **—** · mức — |
 | Bài 3 | Tỉ số phần trăm trong mua bán | Chia tiền lãi cho giá bán nên ra tỉ lệ nhỏ hơn thực tế. | Nhóm chuyên đề **—** · mức — |
-| Bài 4 | Hình hộp chữ nhật, hình lập phương | Cộng thiếu một mặt đáy khi tính diện tích toàn phần. | Nhóm chuyên đề **—** · mức — |
+| Bài 4 | Bài toán đại lượng có lời văn | Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. | Nhóm chuyên đề **—** · mức — |
 | Bài 5 | Tổng dãy đặc biệt | Nhầm số hạng cuối với số lượng số hạng khi áp công thức. | Nhóm chuyên đề **—** · mức — |
 
 ---

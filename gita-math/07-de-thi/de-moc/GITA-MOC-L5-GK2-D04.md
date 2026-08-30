@@ -30,57 +30,55 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Trả lời nhanh, mỗi ý không quá 20 giây.
 
-a) 1 742 086 … 1 742 623
-b) Số liền trước và số liền sau của 3 861 183 là những số nào?
-c) Làm tròn 2 335 315 đến hàng nghìn.
-d) Chữ số hàng chục nghìn của số 7 779 576 có giá trị bằng bao nhiêu?
-e) Số liền trước và số liền sau của 339 103 là những số nào?
-f) Chữ số hàng trăm nghìn của số 3 324 790 có giá trị bằng bao nhiêu?
+a) Số liền trước và số liền sau của 901 440 là những số nào?
+b) 2 502 531 … 2 505 670
+c) Chữ số hàng chục của số 3 379 613 có giá trị bằng bao nhiêu?
+d) Làm tròn 4 992 550 đến hàng nghìn.
+e) Số liền trước và số liền sau của 444 406 là những số nào?
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
 Tính bằng cách thuận tiện nhất.
 
-a) 55 + 77 + 45 + 23
-b) 36 + 304 + 64
-c) 84 + 59 + 16 + 41
-d) 37 + 202 + 63
-e) 28 + 301 + 72
-f) 64 + 49 − 49
+a) 243 + 88 − 88
+b) 37 + 66 + 63 + 34
+c) 84 + 295 + 16
+d) 71 + 204 + 29
+e) 324 + 40 − 40
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
 Giải bằng cách rút về đơn vị hoặc dùng tỉ số.
 
-a) Mua 13 quyển vở hết 273 nghìn đồng. Với 294 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
-b) Mua 6 quyển vở hết 300 nghìn đồng. Mua 13 quyển vở như thế hết bao nhiêu nghìn đồng?
-c) Mua 15 quyển vở hết 240 nghìn đồng. Mua 26 quyển vở như thế hết bao nhiêu nghìn đồng?
-d) Mua 9 quyển vở hết 441 nghìn đồng. Với 784 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
-e) Mua 11 quyển vở hết 418 nghìn đồng. Mua 4 quyển vở như thế hết bao nhiêu nghìn đồng?
+a) Mua 11 quyển vở hết 286 nghìn đồng. Mua 5 quyển vở như thế hết bao nhiêu nghìn đồng?
+b) Mua 3 quyển vở hết 243 nghìn đồng. Với 1 134 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+c) Mua 14 quyển vở hết 672 nghìn đồng. Với 1 200 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+d) Mua 6 quyển vở hết 522 nghìn đồng. Với 1 566 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
-Ghi rõ đơn vị: cm² cho diện tích, cm³ cho thể tích.
+Một căn phòng hình chữ nhật dài **5 m**, rộng **5 m**, lát bằng gạch vuông cạnh **50 cm**.
 
-a) Hình lập phương có cạnh 7 cm. Tính thể tích và diện tích toàn phần.
-b) Hình hộp chữ nhật có đáy 20 cm × 8 cm, chiều cao 4 cm. Tính diện tích toàn phần.
-c) Hình hộp chữ nhật có đáy 3 cm × 15 cm, chiều cao 9 cm. Tính diện tích xung quanh.
-d) Hình hộp chữ nhật có ba kích thước 11 cm, 18 cm, 10 cm. Tính thể tích.
-e) Hình lập phương có cạnh 3 cm. Tính thể tích và diện tích toàn phần.
-f) Hình hộp chữ nhật có đáy 3 cm × 16 cm, chiều cao 13 cm. Tính diện tích xung quanh.
+a) Tính diện tích nền nhà theo mét vuông.
+b) Đổi diện tích nền nhà ra xăng-ti-mét vuông.
+c) Diện tích một viên gạch là bao nhiêu xăng-ti-mét vuông?
+d) Cần bao nhiêu viên gạch để lát kín nền nhà?
+e) Mỗi viên gạch giá 12 000 đồng. Mua gạch lát hết bao nhiêu tiền?
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
-Tính thời gian gặp nhau trước.
+Dùng kĩ thuật tô màu để lập luận.
 
-a) Hai xe đi ngược chiều từ hai địa điểm cách nhau 132 km, vận tốc 36 km/giờ và 30 km/giờ. Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
-b) Hai xe đi ngược chiều từ hai địa điểm cách nhau 290 km, vận tốc 40 km/giờ và 18 km/giờ. Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
-c) Hai xe đi ngược chiều từ hai địa điểm cách nhau 168 km, vận tốc 60 km/giờ và 24 km/giờ. Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
-d) Hai xe đi ngược chiều từ hai địa điểm cách nhau 207 km, vận tốc 54 km/giờ và 15 km/giờ. Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
+a) Một bàn cờ vuông 8 × 8 ô. Hỏi có tất cả bao nhiêu ô?
+b) Tô màu xen kẽ đen trắng như bàn cờ vua thì có bao nhiêu ô đen?
+c) Một quân đô-mi-nô phủ đúng 2 ô liền nhau. Có thể phủ kín cả bàn cờ 8 × 8 bằng các quân đô-mi-nô không?
+d) Mỗi quân đô-mi-nô luôn phủ mấy ô đen và mấy ô trắng?
+e) Nếu bỏ đi hai ô ở hai góc đối diện của bàn cờ 8 × 8 (hai ô này cùng màu) thì còn phủ kín được không?
+f) Đại lượng bất biến dùng ở đây là gì?
 
 
 ---
@@ -88,102 +86,99 @@ d) Hai xe đi ngược chiều từ hai địa điểm cách nhau 207 km, vận 
 ## ĐÁP ÁN VÀ BIỂU ĐIỂM
 
 
-### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 1, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **<**
-b) **3 861 182 và 3 861 184**
-c) **2 335 000**
-d) **70 000**
-e) **339 102 và 339 104**
-f) **300 000**
+a) **901 439 và 901 441**
+b) **<**
+c) **10**
+d) **4 993 000**
+e) **444 405 và 444 407**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 1 742 086 … 1 742 623
+1. Xét ý a: Số liền trước và số liền sau của 901 440 là những số nào?
 2. Đọc vị: đây là dạng **Ôn tập số tự nhiên**; dấu hiệu là Câu hỏi ngắn về so sánh, hàng, số liền kề, làm tròn.
 3. Kiến thức phải dùng: Thứ tự số tự nhiên, giá trị hàng, quy tắc làm tròn.
 4. Cách làm: Đếm chữ số, xét hàng từ trái sang phải.
 5. Lối tắt: Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số.
-6. Kết quả: **<**.
+6. Kết quả: **901 439 và 901 441**.
 
 *Lỗi hay mắc:* So sánh từ hàng đơn vị; hoặc làm tròn nhìn nhầm sang chính hàng cần làm tròn.
 
-### Bài 2, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 2, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **200**
-b) **404**
-c) **200**
-d) **302**
-e) **401**
-f) **64**
+a) **243**
+b) **200**
+c) **395**
+d) **304**
+e) **324**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 55 + 77 + 45 + 23
+1. Xét ý a: 243 + 88 − 88
 2. Đọc vị: đây là dạng **Tính nhanh tổng nhiều số hạng**; dấu hiệu là Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm.
 3. Kiến thức phải dùng: Tính chất giao hoán, kết hợp của phép cộng.
 4. Cách làm: Ghép cặp tròn rồi cộng.
 5. Lối tắt: Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10.
-6. Kết quả: **200**.
+6. Kết quả: **243**.
 
 *Lỗi hay mắc:* Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn.
 
-### Bài 3, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 3, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **14 quyển**
-b) **650 nghìn đồng**
-c) **416 nghìn đồng**
-d) **16 quyển**
-e) **152 nghìn đồng**
+a) **130 nghìn đồng**
+b) **14 quyển**
+c) **25 quyển**
+d) **18 quyển**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Mua 13 quyển vở hết 273 nghìn đồng. Với 294 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+1. Xét ý a: Mua 11 quyển vở hết 286 nghìn đồng. Mua 5 quyển vở như thế hết bao nhiêu nghìn đồng?
 2. Đọc vị: đây là dạng **Tỉ lệ thuận, rút về đơn vị**; dấu hiệu là Hai đại lượng cùng tăng cùng giảm.
 3. Kiến thức phải dùng: Đại lượng tỉ lệ thuận.
 4. Cách làm: Rút về đơn vị hoặc dùng tỉ số.
 5. Lối tắt: Nếu số lượng mới gấp số lượng cũ một số nguyên lần thì nhân thẳng, không cần rút về đơn vị.
-6. Kết quả: **14 quyển**.
+6. Kết quả: **130 nghìn đồng**.
 
 *Lỗi hay mắc:* Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch.
 
-### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 4, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **thể tích 343 cm³, diện tích toàn phần 294 cm²**
-b) **544 cm²**
-c) **324 cm²**
-d) **1 980 cm³**
-e) **thể tích 27 cm³, diện tích toàn phần 54 cm²**
-f) **494 cm²**
-
-**Cách giải mẫu:**
-
-1. Xét ý a: Hình lập phương có cạnh 7 cm. Tính thể tích và diện tích toàn phần.
-2. Đọc vị: đây là dạng **Hình hộp chữ nhật, hình lập phương**; dấu hiệu là Đề cho ba kích thước hoặc cạnh hình lập phương.
-3. Kiến thức phải dùng: Công thức thể tích, diện tích xung quanh, toàn phần.
-4. Cách làm: Xác định loại diện tích cần tính, đếm đủ số mặt.
-5. Lối tắt: Hình lập phương cạnh a: toàn phần 6 × a × a, thể tích a × a × a.
-6. Kết quả: **thể tích 343 cm³, diện tích toàn phần 294 cm²**.
-
-*Lỗi hay mắc:* Cộng thiếu một mặt đáy khi tính diện tích toàn phần.
-
-### Bài 5, (2 điểm — mỗi ý 0,5 điểm)
-
-a) **72 km**
-b) **200 km**
-c) **120 km**
-d) **162 km**
+a) **5 × 5 = 25 m²**
+b) **25 m² = 250 000 cm²**
+c) **50 × 50 = 2 500 cm²**
+d) **250 000 : 2 500 = 100 viên**
+e) **100 × 12 000 = 1 200 000 đồng**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Hai xe đi ngược chiều từ hai địa điểm cách nhau 132 km, vận tốc 36 km/giờ và 30 km/giờ. Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
-2. Đọc vị: đây là dạng **Chuyển động ngược chiều, tính quãng đường từng xe**; dấu hiệu là Hỏi quãng đường **của một xe** tính đến lúc gặp nhau.
-3. Kiến thức phải dùng: Quãng đường – vận tốc – thời gian, tỉ lệ thuận.
-4. Cách làm: Thời gian gặp → quãng đường từng xe.
-5. Lối tắt: Quãng đường hai xe đi tỉ lệ thuận với vận tốc — chia quãng cách theo tỉ số vận tốc là ra ngay.
-6. Kết quả: **72 km**.
+1. Diện tích nền: 5 × 5 = **25 m²**.
+2. Muốn chia cho diện tích viên gạch thì hai diện tích phải **cùng đơn vị**. Viên gạch đo bằng xăng-ti-mét nên đổi nền nhà ra cm²: 1 m² = 10 000 cm², nên 25 m² = 250 000 cm².
+3. Diện tích một viên: 50 × 50 = 2 500 cm².
+4. Số viên: 250 000 : 2 500 = **100 viên**.
+5. Tiền gạch: 100 × 12 000 = **1 200 000 đồng**.
 
-*Lỗi hay mắc:* Chia quãng đường theo tỉ lệ sai, hoặc lấy quãng đường chia đôi.
+*Lỗi hay mắc:* Chia thẳng m² cho cm², hoặc đổi 1 m² thành 100 cm².
+
+### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
+
+a) **64**
+b) **32**
+c) **có**
+d) **1 ô đen và 1 ô trắng**
+e) **không, vì số ô đen và ô trắng không còn bằng nhau**
+f) **hiệu giữa số ô đen và số ô trắng chưa bị phủ**
+
+**Cách giải mẫu:**
+
+1. Xét ý a: Một bàn cờ vuông 8 × 8 ô. Hỏi có tất cả bao nhiêu ô?
+2. Đọc vị: đây là dạng **Tô màu, bất biến trên bàn cờ**; dấu hiệu là Bàn cờ, quân đô-mi-nô, câu hỏi “có thể phủ kín không”.
+3. Kiến thức phải dùng: Kĩ thuật tô màu, bất biến, tính chẵn lẻ.
+4. Cách làm: Tô màu xen kẽ, đếm hai màu, so sánh.
+5. Lối tắt: Hai ô ở hai góc đối diện của bàn cờ luôn cùng màu.
+6. Kết quả: **64**.
+
+*Lỗi hay mắc:* Thử xếp bằng tay rồi kết luận “không xếp được” mà không chứng minh.
 
 ---
 
@@ -196,8 +191,8 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài 1 | Ôn tập số tự nhiên | So sánh từ hàng đơn vị; hoặc làm tròn nhìn nhầm sang chính hàng cần làm tròn. | Nhóm chuyên đề **—** · mức — |
 | Bài 2 | Tính nhanh tổng nhiều số hạng | Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. | Nhóm chuyên đề **—** · mức — |
 | Bài 3 | Tỉ lệ thuận, rút về đơn vị | Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch. | Nhóm chuyên đề **—** · mức — |
-| Bài 4 | Hình hộp chữ nhật, hình lập phương | Cộng thiếu một mặt đáy khi tính diện tích toàn phần. | Nhóm chuyên đề **—** · mức — |
-| Bài 5 | Chuyển động ngược chiều, tính quãng đường từng xe | Chia quãng đường theo tỉ lệ sai, hoặc lấy quãng đường chia đôi. | Nhóm chuyên đề **—** · mức — |
+| Bài 4 | Bài toán lát gạch nền nhà | Chia thẳng m² cho cm², hoặc đổi 1 m² thành 100 cm². | Nhóm chuyên đề **—** · mức — |
+| Bài 5 | Tô màu, bất biến trên bàn cờ | Thử xếp bằng tay rồi kết luận “không xếp được” mà không chứng minh. | Nhóm chuyên đề **—** · mức — |
 
 ---
 

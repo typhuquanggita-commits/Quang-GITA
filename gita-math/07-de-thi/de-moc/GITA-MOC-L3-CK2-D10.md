@@ -30,40 +30,40 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Đặt tính rồi tính.
 
-a) 172 + 489
-b) 430 + 731
-c) 609 + 878
-d) 885 − 410
-e) 853 − 390
-f) 803 + 161
+a) 468 − 152
+b) 521 + 388
+c) 936 + 367
+d) 121 + 813
+e) 483 + 550
+f) 635 − 372
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
-Ghi rõ đơn vị đồng ở mọi kết quả.
+Đặt tính rồi tính.
 
-a) Mua 3 quyển vở, mỗi quyển 8 000 đồng. Hết bao nhiêu tiền?
-b) Mua 5 quyển vở, mỗi quyển 7 000 đồng. Đưa cô bán hàng một tờ 50 000 đồng. Cô phải trả lại bao nhiêu tiền?
-c) Đổi một tờ 20 000 đồng ra các tờ 5 000 đồng thì được mấy tờ?
-d) Đổi một tờ 20 000 đồng ra các tờ 1 000 đồng thì được mấy tờ?
-e) Mua 4 quyển vở, mỗi quyển 25 000 đồng. Hết bao nhiêu tiền?
+a) 369 × 6
+b) 3 527 : 6
+c) 244 : 2
+d) 6 298 : 7
+e) 563 × 6
+f) 1 854 : 3
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
-Giải từng bài toán nhỏ.
+Tóm tắt bằng sơ đồ đoạn thẳng rồi giải.
 
-a) 4 ngày đầu tuần một cửa hàng bán được lần lượt 173, 158, 169, 160 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
-b) Trung bình mỗi ngày bán được 139 kg gạo. Hỏi 6 ngày bán được tất cả bao nhiêu ki-lô-gam?
-c) Trung bình mỗi ngày cửa hàng bán được 231 kg gạo. 5 ngày đầu bán được 231, 220, 237, 222, 239 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
-d) Trung bình mỗi ngày bán được 85 kg gạo. Hỏi 4 ngày bán được tất cả bao nhiêu ki-lô-gam?
-e) Trung bình mỗi ngày bán được 77 kg gạo. Hỏi 6 ngày bán được tất cả bao nhiêu ki-lô-gam?
-f) Trung bình mỗi ngày cửa hàng bán được 288 kg gạo. 2 ngày đầu bán được 296, 288 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
+a) Xưởng và kho A chứa tất cả 184 kg muối. Xưởng chứa nhiều hơn kho A 32 kg. Mỗi nơi chứa bao nhiêu kg?
+b) Hai lớp 5C và 3B có tất cả 294 quyển sách. Lớp 5C có nhiều hơn lớp 3B 20 quyển. Mỗi lớp có bao nhiêu quyển?
+c) Đội Hai và tổ Một trồng được 640 cây. Đội Hai trồng nhiều hơn tổ Một 20 cây. Mỗi tổ trồng bao nhiêu cây?
+d) Kho A và hợp tác xã chứa tất cả 240 kg gạo. Kho A chứa nhiều hơn hợp tác xã 56 kg. Mỗi nơi chứa bao nhiêu kg?
+e) Hai lớp 5A và 4A có tất cả 358 quyển sách. Lớp 5A có nhiều hơn lớp 4A 96 quyển. Mỗi lớp có bao nhiêu quyển?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
-Cho lưới gồm 4 hàng và 2 cột ô vuông nhỏ bằng nhau.
+Cho lưới gồm 4 hàng và 4 cột ô vuông nhỏ bằng nhau.
 
 a) Lưới có bao nhiêu ô vuông nhỏ?
 b) Lưới có bao nhiêu đường kẻ ngang, bao nhiêu đường kẻ dọc?
@@ -74,14 +74,13 @@ e) Có bao nhiêu hình chữ nhật không phải hình vuông?
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
-Dãy bắt đầu bằng 4; hiệu giữa hai số hạng liên tiếp lần lượt là 1, 2, 3, 4, …
+Dãy lặp lại mãi nhóm 7, 7, 1, 6: 7, 7, 1, 6, 7, 7, 1, 6, …
 
-a) Viết năm số hạng đầu của dãy.
-b) Hiệu giữa hai số hạng liên tiếp là những số nào?
-c) Số hạng thứ 6 là số nào?
-d) Số hạng thứ 8 là số nào?
-e) Số hạng thứ 10 là số nào?
-f) Tổng năm số hạng đầu bằng bao nhiêu?
+a) Số hạng thứ 44 của dãy là số nào?
+b) Số hạng thứ 65 của dãy là số nào?
+c) Số hạng thứ 110 của dãy là số nào?
+d) Số hạng thứ 74 của dãy là số nào?
+e) Tổng 90 số hạng đầu tiên bằng bao nhiêu?
 
 
 ---
@@ -91,70 +90,69 @@ f) Tổng năm số hạng đầu bằng bao nhiêu?
 
 ### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **661**
-b) **1 161**
-c) **1 487**
-d) **475**
-e) **463**
-f) **964**
+a) **316**
+b) **909**
+c) **1 303**
+d) **934**
+e) **1 033**
+f) **263**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 172 + 489
+1. Xét ý a: 468 − 152
 2. Đọc vị: đây là dạng **Cộng, trừ số tự nhiên**; dấu hiệu là Yêu cầu “đặt tính rồi tính”.
 3. Kiến thức phải dùng: Kĩ thuật đặt tính, nhớ và mượn.
 4. Cách làm: Đặt tính thẳng hàng, tính từ hàng đơn vị.
 5. Lối tắt: Làm tròn một số hạng để ước lượng trước, dùng kết quả ước lượng để phát hiện sai sót.
-6. Kết quả: **661**.
+6. Kết quả: **316**.
 
 *Lỗi hay mắc:* Viết lệch hàng khi hai số có số chữ số khác nhau.
 
-### Bài 2, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 2, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **24 000 đồng**
-b) **15 000 đồng**
-c) **4 tờ**
-d) **20 tờ**
-e) **100 000 đồng**
-
-**Cách giải mẫu:**
-
-1. Xét ý a: Mua 3 quyển vở, mỗi quyển 8 000 đồng. Hết bao nhiêu tiền?
-2. Đọc vị: đây là dạng **Bài toán tiền tệ hai bước**; dấu hiệu là “Đưa … đồng”, “trả lại”, “đổi ra tờ …”.
-3. Kiến thức phải dùng: Nhân, trừ với số tròn nghìn; mệnh giá tiền Việt Nam.
-4. Cách làm: Tính tiền hàng rồi trừ; đổi tiền thì chia.
-5. Lối tắt: Thử lại bằng cách cộng tiền hàng với tiền trả lại, phải đúng bằng tiền đưa.
-6. Kết quả: **24 000 đồng**.
-
-*Lỗi hay mắc:* Lấy tiền đưa trừ ngay giá một quyển vở.
-
-### Bài 3, (2 điểm — mỗi ý 0,33 điểm)
-
-a) **165 kg**
-b) **834 kg**
-c) **237 kg**
-d) **340 kg**
-e) **462 kg**
-f) **280 kg**
+a) **2 214**
+b) **587 dư 5**
+c) **122**
+d) **899 dư 5**
+e) **3 378**
+f) **618**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 4 ngày đầu tuần một cửa hàng bán được lần lượt 173, 158, 169, 160 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
-2. Đọc vị: đây là dạng **Ba dạng bài trung bình cộng**; dấu hiệu là Cụm “trung bình mỗi …”.
-3. Kiến thức phải dùng: Quan hệ tổng – số lượng – trung bình cộng.
-4. Cách làm: Đi qua tổng làm trung gian.
-5. Lối tắt: Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng.
-6. Kết quả: **165 kg**.
+1. Đặt tính: viết 6 thẳng dưới hàng đơn vị của 369.
+2. Nhân 6 lần lượt với từng chữ số của 369, từ phải sang trái.
+3. Kết quả: 369 × 6 = 2 214.
+4. Ước lượng kiểm tra: khoảng 400 × 6 = 2 400 — cùng độ lớn ✓
+5. Đáp số: **2 214**.
 
-*Lỗi hay mắc:* Đi tìm ngay số còn thiếu mà chưa tính tổng.
+*Lỗi hay mắc:* Quên chữ số 0 ở giữa thương nên thương thiếu chữ số.
+
+### Bài 3, (2 điểm — mỗi ý 0,4 điểm)
+
+a) **xưởng: 108 kg, kho A: 76 kg**
+b) **5C: 157 quyển, 3B: 137 quyển**
+c) **đội Hai: 330 cây, tổ Một: 310 cây**
+d) **kho A: 148 kg, hợp tác xã: 92 kg**
+e) **5A: 227 quyển, 4A: 131 quyển**
+
+**Cách giải mẫu:**
+
+1. Xét ý a: Xưởng và kho A chứa tất cả 184 kg muối. Xưởng chứa nhiều hơn kho A 32 kg. Mỗi nơi chứa bao nhiêu kg?
+2. Đọc vị: đây là dạng **Tổng – hiệu có lời văn**; dấu hiệu là “Có tất cả …” và “… nhiều hơn … là …”.
+3. Kiến thức phải dùng: Công thức tổng – hiệu, sơ đồ đoạn thẳng.
+4. Cách làm: Đọc vị tổng và hiệu → sơ đồ → công thức.
+5. Lối tắt: Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần.
+6. Kết quả: **xưởng: 108 kg, kho A: 76 kg**.
+
+*Lỗi hay mắc:* Nhầm hiệu thành tổng khi đề diễn đạt vòng vo.
 
 ### Bài 4, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **8**
-b) **5 đường ngang, 3 đường dọc**
-c) **30**
-d) **11**
-e) **19**
+a) **16**
+b) **5 đường ngang, 5 đường dọc**
+c) **100**
+d) **30**
+e) **70**
 
 **Cách giải mẫu:**
 
@@ -163,29 +161,28 @@ e) **19**
 3. Kiến thức phải dùng: Quy tắc đếm.
 4. Cách làm: Đếm theo đường kẻ hoặc theo cỡ.
 5. Lối tắt: Số cách chọn 2 trong k là k × (k − 1) : 2.
-6. Kết quả: **8**.
+6. Kết quả: **16**.
 
 *Lỗi hay mắc:* Chỉ đếm ô nhỏ, quên hình ghép từ nhiều ô.
 
-### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 5, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **4 · 5 · 7 · 10 · 14**
-b) **1, 2, 3, 4, 5, …**
-c) **19**
-d) **32**
-e) **49**
-f) **40**
+a) **6**
+b) **7**
+c) **7**
+d) **7**
+e) **476**
 
 **Cách giải mẫu:**
 
-1. Số hạng đầu là 4.
-2. Số hạng thứ 2 = 4 + 1 = 5.
-3. Số hạng thứ 3 = 5 + 2 = 7.
-4. Cứ thế, số hạng thứ 6 = 14 + 5 = 19.
-5. Nhận xét: số hạng thứ n = 4 + (1 + 2 + … + (n − 1)).
-6. Đáp số ý c: **19**.
+1. Xét ý a: Số hạng thứ 44 của dãy là số nào?
+2. Đọc vị: đây là dạng **Dãy tuần hoàn**; dấu hiệu là Dãy lặp lại một nhóm số cố định.
+3. Kiến thức phải dùng: Phép chia có dư, tính tuần hoàn.
+4. Cách làm: Chia lấy dư để định vị.
+5. Lối tắt: Tổng n số hạng = tổng một chu kì × số chu kì đầy đủ + phần dư.
+6. Kết quả: **6**.
 
-*Lỗi hay mắc:* Không tìm ra hiệu đều thì bỏ cuộc, không thử dãy hiệu.
+*Lỗi hay mắc:* Dư 0 mà lấy phần tử đầu tiên.
 
 ---
 
@@ -196,10 +193,10 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài | Đo cái gì | Sai bài này nghĩa là | Học lại ở đâu |
 |:--:|---|---|---|
 | Bài 1 | Cộng, trừ số tự nhiên | Viết lệch hàng khi hai số có số chữ số khác nhau. | Nhóm chuyên đề **—** · mức — |
-| Bài 2 | Bài toán tiền tệ hai bước | Lấy tiền đưa trừ ngay giá một quyển vở. | Nhóm chuyên đề **—** · mức — |
-| Bài 3 | Ba dạng bài trung bình cộng | Đi tìm ngay số còn thiếu mà chưa tính tổng. | Nhóm chuyên đề **—** · mức — |
+| Bài 2 | Nhân, chia với số có một chữ số | Quên chữ số 0 ở giữa thương nên thương thiếu chữ số. | Nhóm chuyên đề **—** · mức — |
+| Bài 3 | Tổng – hiệu có lời văn | Nhầm hiệu thành tổng khi đề diễn đạt vòng vo. | Nhóm chuyên đề **—** · mức — |
 | Bài 4 | Đếm hình trong lưới | Chỉ đếm ô nhỏ, quên hình ghép từ nhiều ô. | Nhóm chuyên đề **—** · mức — |
-| Bài 5 | Dãy có hiệu tăng đều | Không tìm ra hiệu đều thì bỏ cuộc, không thử dãy hiệu. | Nhóm chuyên đề **—** · mức — |
+| Bài 5 | Dãy tuần hoàn | Dư 0 mà lấy phần tử đầu tiên. | Nhóm chuyên đề **—** · mức — |
 
 ---
 

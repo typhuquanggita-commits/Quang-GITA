@@ -37,6 +37,51 @@ def co(duong: str) -> bool:
     return (GOC / duong).exists()
 
 
+def _o_thieu_thuc_te() -> int:
+    """Đếm ô (lớp × nhóm chuyên đề) chưa có mẫu bối cảnh thực tế nào.
+
+    Trước khi vá, nhóm A, B, C trống ở cả ba lớp — ba nhóm chiếm phần lớn thời
+    lượng chương trình mà không có lấy một bài đặt trong tình huống thật.
+    """
+    try:
+        import sinh                                   # noqa: F401
+        from sinh import KHO
+    except Exception:
+        return 99
+    n = 0
+    for l in (3, 4, 5):
+        for g in "ABCDEFGH":
+            if not [x for m in KHO.get(g, {}).values() for x in m
+                    if l in x.lop and x.thuc_te]:
+                n += 1
+    return n
+
+
+def _mau_trung_y() -> int:
+    """Đếm mẫu bài từng sinh ra hai ý giống hệt nhau trong cùng một bài."""
+    import random
+    try:
+        import sinh                                   # noqa: F401
+        from sinh import KHO
+    except Exception:
+        return 99
+    xau = set()
+    for g in KHO:
+        for m in KHO[g]:
+            for x in KHO[g][m]:
+                for l in x.lop:
+                    for h in range(200):
+                        try:
+                            b = x.sinh(random.Random(h), l)
+                        except Exception:
+                            continue
+                        cau = [c for c, _ in b.y]
+                        if len(set(cau)) != len(cau):
+                            xau.add(x.ma)
+                            break
+    return len(xau)
+
+
 def _o_trong_mam() -> int:
     """Đếm ô (chủ đề × vai) của khối Mầm chưa có mẫu bài nào của đúng chủ đề.
 
@@ -220,6 +265,13 @@ YEU_CAU = [
      "Đề thi lên website công khai để bắt truy vấn tìm đề",
      lambda: len(list((GOC / "11-seo" / "site" / "de-thi").rglob("index.html")))
      if co("11-seo/site/de-thi") else 0, 166, "trang đề thi"),
+
+    ("Chất lượng chuyên đề",
+     "Trục bối cảnh thực tế phủ mọi nhóm chuyên đề ở cả ba lớp",
+     lambda: 24 - _o_thieu_thuc_te(), 24, "ô (lớp × nhóm) có mẫu thực tế"),
+    ("Chất lượng chuyên đề",
+     "Không mẫu bài nào sinh ra hai ý giống hệt nhau trong cùng một bài",
+     lambda: _mau_trung_y() == 0, True, "đã kiểm 200 hạt mỗi mẫu × lớp"),
 
     # ── khối Mầm: tiền tiểu học, lớp 1, lớp 2 ─────────────────────────
     ("Khối Mầm",

@@ -31,42 +31,42 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần A**
 
 - **Bài A.1** — a) Chia số thập phân cho số tự nhiên · b) Chia một số cho số thập phân · c) Tỉ số phần trăm — khái niệm và cách viết · d) Toán tỉ số phần trăm dạng 1: tìm tỉ số phần trăm của hai số · e) Toán tỉ số phần trăm dạng 2: tìm giá trị phần trăm của một số · f) Toán tỉ số phần trăm dạng 3: tìm một số biết giá trị phần trăm
-- **Bài A.2** — a) Một nhóm phân số cần sắp thứ tự · b) Kí hiệu %, cụm “… % của …” · c) Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 · d) Tử số và mẫu số có ước chung lớn hơn 1 · e) Đề cho **ba nhóm**, ba phần chung đôi và một phần chung cả ba
-- **Bài A.3** — a) So phần bù; hoặc chèn phân số trung gian · b) Chia cả tử và mẫu cho ước chung · c) Cộng ba nhóm, trừ ba phần chung đôi, cộng lại phần chung cả ba · d) Chọn quy tắc đặt dấu phẩy theo phép tính · e) Xác định lại mốc 100% trước mỗi bước
-- **Bài A.4** — a) Đếm không trùng lặp; nguyên lý bù trừ · b) Kĩ thuật tính với số thập phân · c) Ba dạng tỉ số phần trăm; mốc quy chiếu · d) Quy đồng, nhân chia phân số · e) Nhân, cộng số lớn; đọc bảng giá nhiều bậc
-- **Bài A.5** — a) Nhân hai tỉ lệ rồi chia 100 là ra tỉ lệ so với mốc gốc. · b) Rút gọn chéo trước khi nhân để số nhỏ, tính nhanh và ít sai. · c) Nếu lượng dùng vượt hết các bậc thấp thì ba bậc đầu luôn cho cùng một số tiền — tính sẵn một lần rồi dùng lại. · d) Giảm 20% rồi 10% tương đương còn 80% × 90% = 72% giá gốc. · e) Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị.
+- **Bài A.2** — a) Hai tỉ lệ phần trăm nối tiếp nhau trong cùng một bài · b) Kí hiệu %, cụm “… % của …” · c) Đề cho **ba nhóm**, ba phần chung đôi và một phần chung cả ba · d) Tử số và mẫu số có ước chung lớn hơn 1 · e) Biểu thức gồm nhiều phân số và nhiều phép tính
+- **Bài A.3** — a) Cộng ba nhóm, trừ ba phần chung đôi, cộng lại phần chung cả ba · b) Chia cả tử và mẫu cho ước chung · c) Quan sát rút gọn trước, sau đó theo thứ tự thực hiện · d) Chọn quy tắc đặt dấu phẩy theo phép tính · e) Rút gọn → so cùng mẫu hoặc quy đồng
+- **Bài A.4** — a) Thứ tự thực hiện phép tính, tính chất phân phối · b) Kĩ thuật tính với số thập phân · c) Tính chất cơ bản của phân số; so sánh phân số · d) Tỉ số phần trăm; tìm giá trị phần trăm của một số · e) Nhân, cộng số lớn; đọc bảng giá nhiều bậc
+- **Bài A.5** — a) So với 1 và với một nửa trước — nhiều phân số phân loại được ngay. · b) Sau hai năm với lãi suất a% thì số tiền bằng gốc nhân (100 + a) × (100 + a) rồi chia 10 000. · c) Nếu lượng dùng vượt hết các bậc thấp thì ba bậc đầu luôn cho cùng một số tiền — tính sẵn một lần rồi dùng lại. · d) So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. · e) Giảm 20% rồi 10% tương đương còn 80% × 90% = 72% giá gốc.
 
 **Phần B**
 
-- **Bài B.1** — a) 100 · b) 25% · c) 32 · d) 60 · e) 80 · f) 40% · g) 5
-- **Bài B.2** — a) 4 ngày · b) 6 ngày · c) 30 ngày · d) 16 ngày · e) 12 ngày · f) 18 ngày
-- **Bài B.3** — a) 1 463 · b) 1 953 · c) 494 · d) 7 524 · e) 1 615
-- **Bài B.4** — a) 84,55 · b) 539,36 · c) 3,36 · d) 17,7 · e) 137,01 · f) 226,4 · g) 86,88 · h) 45,82
-- **Bài B.5** — a) 1 · b) 19 phần 10 · c) 22 phần 7 · d) 5 phần 36 · e) 2 · f) 11 phần 21 · g) 11 phần 10 · h) 3 phần 11
+- **Bài B.1** — a) 600 cm² · b) 854 cm² · c) 325 cm² · d) 854 cm²
+- **Bài B.2** — a) 25 phần 81 · b) 11 phần 5 · c) 3 phần 2 · d) 3 phần 2 · e) 7 phần 3 · f) 3 phần 56 · g) 4 phần 21
+- **Bài B.3** — a) 25 · b) 80 · c) 109 · d) 165
+- **Bài B.4** — a) 40 · b) 180 · c) 15% · d) 200
+- **Bài B.5** — a) 24,77 · b) 41,83 · c) 367,04 · d) 89,86 · e) 551,28 · f) 27,36 · g) 97,32 · h) 8,74
 
 **Phần C**
 
-- **Bài C.1** — a) 72 000 · b) 9 800 · c) 94 000 · d) 8 400 · e) 2 900 · f) 15
-- **Bài C.2** — a) mỗi bạn 3 cái, thừa 1 cái · b) 1 cái · c) 6 cái · d) 4 cái · e) mỗi bạn 3 cái, thừa 4 cái · f) phải là số chia hết cho 7
-- **Bài C.3** — a) 30 285 · b) 3 316 · c) 822 · d) 2 550 · e) 2 436 · f) 3 160
-- **Bài C.4** — a) xe ba bánh: 6 chiếc, xe ô tô: 13 chiếc · b) xe ba bánh: 14 chiếc, xe đạp: 15 chiếc · c) xe ba bánh: 17 chiếc, xe đạp: 30 chiếc · d) xe ô tô: 12 chiếc, xe đạp: 21 chiếc · e) xe ô tô: 13 chiếc, xe ba bánh: 14 chiếc
-- **Bài C.5** — a) 260 000 đồng · b) 30% · c) 170 000 đồng · d) 625 000 đồng
+- **Bài C.1** — a) không chia hết (66 m không chia hết cho 5 m) · b) không chia hết (150 m không chia hết cho 4 m) · c) 403 viên · d) 81 cây · e) 32 cây · f) 84 viên (làm tròn lên)
+- **Bài C.2** — a) không có chữ số nào · b) 2, 5, 8 · c) 0, 3, 6, 9 · d) không có chữ số nào · e) không có chữ số nào · f) 8
+- **Bài C.3** — a) 6 mặt, 8 đỉnh, 12 cạnh · b) có ba kích thước bằng nhau, sáu mặt đều là hình vuông · c) 2 mặt đáy, đều là hình tròn bằng nhau · d) không có mặt đáy · e) 240 cm³ · f) 80 cm · g) 600 cm²
+- **Bài C.4** — a) 250 000 đồng · b) 15% · c) 190 000 đồng · d) 30% · e) 170 000 đồng
+- **Bài C.5** — a) 231 cm² · b) 384 cm² · c) 391 cm² · d) 240 cm² · e) 696 cm²
 
 **Phần D**
 
-- **Bài D.1** — a) 75% · b) 20 học sinh · c) 10 học sinh · d) 10 học sinh · e) 16 học sinh · f) 16 học sinh
-- **Bài D.2** — a) 6 em · b) 0 em · c) 0 em · d) 0 em · e) 0 em · f) 3 em
-- **Bài D.3** — a) 24 cây · b) 39 cây · c) 40 cây · d) 80 cây
-- **Bài D.4** — a) 21 · b) 45 · c) 57 · d) 18 · e) 25 · f) 51
-- **Bài D.5** — a) 90 · b) Lịch sử (29 bạn) · c) Tiếng Anh (7 bạn) · d) 22 · e) 18 · f) 30%
+- **Bài D.1** — a) 77 · b) Toán (25 bạn) · c) Tiếng Việt (5 bạn) · d) 20 · e) 15,4 · f) 32%
+- **Bài D.2** — a) 4 học sinh · b) 12 học sinh · c) 25 học sinh · d) 12 học sinh · e) 60% · f) 50%
+- **Bài D.3** — a) 0 em · b) 1 em · c) 4 em · d) 6 em · e) 5 em
+- **Bài D.4** — a) Tháng 6 — 22 ngày · b) Tháng 7 — 6 ngày · c) 60 ngày · d) 60 : 5 = 12 ngày · e) 16 ngày · f) 2 tháng
+- **Bài D.5** — a) 32 · 160 · 192 cây · b) 300 000 đồng · c) 400 000 đồng · d) 39 · 195 · 78 cây · e) 390 000 đồng · f) 33 · 132 · 132 cây
 
 **Phần E**
 
 - **Bài E.1** — a) Ba dạng toán tỉ số phần trăm · b) Kí hiệu %, cụm “… % của …” · c) Tỉ số phần trăm · d) Xác định đại lượng ứng với 100% rồi chọn dạng · e) Coi 100% là “cả phần”, 1% là “cả phần chia 100” — mọi dạng đều quy về 1%. · f) Nhầm dạng 2 với dạng 3 nên nhân thay vì chia.
 - **Bài E.2** — a) Rút gọn phân số · b) Tử số và mẫu số có ước chung lớn hơn 1 · c) Tính chất cơ bản của phân số · d) Chia cả tử và mẫu cho ước chung · e) Tìm ngay ước chung lớn nhất để rút gọn một lần là xong. · f) Chỉ chia tử số hoặc chỉ chia mẫu số.
 - **Bài E.3** — a) Bốn phép tính với số thập phân · b) Các số có dấu phẩy · c) Kĩ thuật tính với số thập phân · d) Chọn quy tắc đặt dấu phẩy theo phép tính · e) Ước lượng bằng cách làm tròn để kiểm tra vị trí dấu phẩy. · f) Nhân xong đặt dấu phẩy thẳng cột như phép cộng.
-- **Bài E.4** — a) Bốn phép tính với phân số · b) Biểu thức chỉ gồm phân số · c) Quy đồng, nhân chia phân số · d) Chọn quy tắc theo phép tính, rút gọn cuối cùng · e) Rút gọn chéo trước khi nhân để số nhỏ, tính nhanh và ít sai. · f) Quy đồng cả khi nhân, hoặc cộng thẳng tử với tử và mẫu với mẫu.
-- **Bài E.5** — a) Bài toán giảm giá và khuyến mãi · b) Đề nhắc **giảm giá**, **khuyến mãi**, và có thể giảm nhiều lần · c) Tỉ số phần trăm; tìm giá trị phần trăm của một số · d) Mỗi lần giảm nhân với (100 − a) rồi chia 100, làm lần lượt · e) Giảm 20% rồi 10% tương đương còn 80% × 90% = 72% giá gốc. · f) Cộng hai lần giảm giá thành một lần rồi tính một phép.
+- **Bài E.4** — a) Bài toán lãi suất tiết kiệm · b) Đề nhắc **gửi tiếp cả gốc lẫn lãi**, hoặc hỏi sau nhiều năm · c) Tỉ số phần trăm; tìm giá trị phần trăm của một số · d) Tính lần lượt từng kỳ, mỗi kỳ lãi tính trên số tiền cuối kỳ trước · e) Sau hai năm với lãi suất a% thì số tiền bằng gốc nhân (100 + a) × (100 + a) rồi chia 10 000. · f) Lấy lãi một năm nhân với hai.
+- **Bài E.5** — a) So sánh phân số · b) Hai phân số nối bởi dấu … · c) Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu · d) Xét cùng mẫu → cùng tử → quy đồng · e) So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. · f) Thấy mẫu số lớn thì kết luận phân số lớn.
 
 ---
 
@@ -98,7 +98,7 @@ Kết quả: **Chia số thập phân cho số tự nhiên**.
 
 **Các bước giải**
 
-Xét ý a: Dạng “Rút gọn, so sánh, sắp thứ tự phân số” — dấu hiệu nhận biết?
+Xét ý a: Dạng “Tỉ số phần trăm nhiều bước” — dấu hiệu nhận biết?
 
 Đọc vị: đây là dạng **Lập bảng dạng bài**; dấu hiệu là Bảng có sẵn cột dạng bài, thiếu các cột còn lại.
 
@@ -108,7 +108,7 @@ Cách làm: Tra bảng phân tích của các phiếu đã học.
 
 Lối tắt: Học theo hàng ngang, không học theo cột dọc.
 
-Kết quả: **Một nhóm phân số cần sắp thứ tự**.
+Kết quả: **Hai tỉ lệ phần trăm nối tiếp nhau trong cùng một bài**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Cột “Dấu hiệu nhận biết” lấy từ bảng phân tích chuyên sâu của các phiếu đã học. Điền xong, đọc ngang từng hàng để thấy mạch từ đề bài tới lời giải.
 
@@ -118,7 +118,7 @@ Kết quả: **Một nhóm phân số cần sắp thứ tự**.
 
 **Các bước giải**
 
-Xét ý a: Dạng “So sánh phân số bằng kĩ thuật đặc biệt” — phương pháp áp dụng?
+Xét ý a: Dạng “Biểu đồ Ven” — phương pháp áp dụng?
 
 Đọc vị: đây là dạng **Lập bảng dạng bài**; dấu hiệu là Bảng có sẵn cột dạng bài, thiếu các cột còn lại.
 
@@ -128,7 +128,7 @@ Cách làm: Tra bảng phân tích của các phiếu đã học.
 
 Lối tắt: Học theo hàng ngang, không học theo cột dọc.
 
-Kết quả: **So phần bù; hoặc chèn phân số trung gian**.
+Kết quả: **Cộng ba nhóm, trừ ba phần chung đôi, cộng lại phần chung cả ba**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Cột “Phương pháp áp dụng” lấy từ bảng phân tích chuyên sâu của các phiếu đã học. Điền xong, đọc ngang từng hàng để thấy mạch từ đề bài tới lời giải.
 
@@ -138,7 +138,7 @@ Kết quả: **So phần bù; hoặc chèn phân số trung gian**.
 
 **Các bước giải**
 
-Xét ý a: Dạng “Biểu đồ Ven” — kiến thức phải thuộc?
+Xét ý a: Dạng “Biểu thức phân số nhiều phép tính” — kiến thức phải thuộc?
 
 Đọc vị: đây là dạng **Lập bảng dạng bài**; dấu hiệu là Bảng có sẵn cột dạng bài, thiếu các cột còn lại.
 
@@ -148,7 +148,7 @@ Cách làm: Tra bảng phân tích của các phiếu đã học.
 
 Lối tắt: Học theo hàng ngang, không học theo cột dọc.
 
-Kết quả: **Đếm không trùng lặp; nguyên lý bù trừ**.
+Kết quả: **Thứ tự thực hiện phép tính, tính chất phân phối**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Cột “Kiến thức phải thuộc” lấy từ bảng phân tích chuyên sâu của các phiếu đã học. Điền xong, đọc ngang từng hàng để thấy mạch từ đề bài tới lời giải.
 
@@ -158,7 +158,7 @@ Kết quả: **Đếm không trùng lặp; nguyên lý bù trừ**.
 
 **Các bước giải**
 
-Xét ý a: Dạng “Tỉ số phần trăm nhiều bước” — cách xử lý nhanh nhất?
+Xét ý a: Dạng “Rút gọn, so sánh, sắp thứ tự phân số” — cách xử lý nhanh nhất?
 
 Đọc vị: đây là dạng **Lập bảng dạng bài**; dấu hiệu là Bảng có sẵn cột dạng bài, thiếu các cột còn lại.
 
@@ -168,97 +168,37 @@ Cách làm: Tra bảng phân tích của các phiếu đã học.
 
 Lối tắt: Học theo hàng ngang, không học theo cột dọc.
 
-Kết quả: **Nhân hai tỉ lệ rồi chia 100 là ra tỉ lệ so với mốc gốc.**.
+Kết quả: **So với 1 và với một nửa trước — nhiều phân số phân loại được ngay.**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Cột “Cách xử lý nhanh nhất” lấy từ bảng phân tích chuyên sâu của các phiếu đã học. Điền xong, đọc ngang từng hàng để thấy mạch từ đề bài tới lời giải.
 
 *Điểm chốt:* Bảng chỉ có giá trị khi **đọc ngang được từng hàng**.
 
-### Bài B.1 — Ba dạng cơ bản của tỉ số phần trăm
+### Bài B.1 — Diện tích hình thang
 
 **Các bước giải**
 
-Xét ý a: Biết 60% của một số là 60. Tìm số đó.
+Xét ý a: Hình thang có đáy lớn 27 cm, đáy bé 21 cm, chiều cao 25 cm. Tính diện tích.
 
-Đọc vị: đây là dạng **Ba dạng toán tỉ số phần trăm**; dấu hiệu là Kí hiệu %, cụm “… % của …”.
+Đọc vị: đây là dạng **Diện tích hình thang**; dấu hiệu là Đề cho hai đáy và chiều cao.
 
-Kiến thức phải dùng: Tỉ số phần trăm.
+Kiến thức phải dùng: Công thức diện tích hình thang.
 
-Cách làm: Xác định đại lượng ứng với 100% rồi chọn dạng.
+Cách làm: Tổng hai đáy × chiều cao : 2.
 
-Lối tắt: Coi 100% là “cả phần”, 1% là “cả phần chia 100” — mọi dạng đều quy về 1%.
+Lối tắt: Nếu tổng hai đáy là số chẵn thì chia 2 ngay từ đầu cho gọn.
 
-Kết quả: **100**.
+Kết quả: **600 cm²**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Dạng 1 — tìm tỉ số phần trăm của a và b: lấy a chia b rồi nhân 100 và viết kí hiệu %. Dạng 2 — tìm p% của b: lấy b chia 100 rồi nhân p. Dạng 3 — biết p% của một số là a, tìm số đó: lấy a chia p rồi nhân 100.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Diện tích hình thang = (đáy lớn + đáy bé) × chiều cao : 2. Cách nhớ: ghép hai hình thang bằng nhau thành một hình bình hành có đáy bằng tổng hai đáy, nên phải chia đôi.
 
-*Điểm chốt:* Nhận đúng **dạng nào trong ba dạng** là xong một nửa bài.
+*Điểm chốt:* Cộng **hai đáy** trước rồi mới nhân chiều cao và chia 2.
 
-### Bài B.2 — Đại lượng tỉ lệ nghịch
-
-**Các bước giải**
-
-Xét ý a: 2 người làm xong một công việc trong 24 ngày. Hỏi 12 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
-
-Đọc vị: đây là dạng **Tỉ lệ nghịch**; dấu hiệu là Số người tăng thì thời gian giảm.
-
-Kiến thức phải dùng: Đại lượng tỉ lệ nghịch, tổng số ngày công.
-
-Cách làm: Quy về tổng số ngày công rồi chia.
-
-Lối tắt: Số người gấp đôi thì số ngày giảm một nửa — nhẩm được ngay khi tỉ số đẹp.
-
-Kết quả: **4 ngày**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Tổng số ngày công là không đổi: số người × số ngày = hằng số. Tính tổng số ngày công trước, rồi chia cho số người mới để ra số ngày mới.
-
-*Điểm chốt:* Càng nhiều người thì càng **ít** ngày — đại lượng biến đổi **ngược chiều**.
-
-### Bài B.3 — Nhân nhẩm với số gần tròn chục, tròn trăm
+### Bài B.2 — Bốn phép tính với phân số
 
 **Các bước giải**
 
-Xét ý a: 77 × 19
-
-Đọc vị: đây là dạng **Nhân nhẩm nhờ tách thừa số**; dấu hiệu là Thừa số là 9, 11, 19, 21, 99, 101….
-
-Kiến thức phải dùng: Nhân một số với một tổng, một hiệu.
-
-Cách làm: Tách về số tròn rồi bù trừ.
-
-Lối tắt: × 11 với số có hai chữ số: viết hai chữ số ra hai đầu, tổng của chúng đặt vào giữa (nhớ sang trái nếu tổng vượt 9).
-
-Kết quả: **1 463**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Đưa thừa số về dạng tròn chục, tròn trăm cộng hoặc trừ một ít: × 9 = × 10 − 1 lần; × 11 = × 10 + 1 lần; × 99 = × 100 − 1 lần; × 101 = × 100 + 1 lần.
-
-*Điểm chốt:* Tách thừa số thành **tròn chục ± 1 đơn vị** rồi dùng nhân với một tổng, một hiệu.
-
-### Bài B.4 — Bốn phép tính với số thập phân
-
-**Các bước giải**
-
-Xét ý a: 92,65 − 8,1
-
-Đọc vị: đây là dạng **Bốn phép tính với số thập phân**; dấu hiệu là Các số có dấu phẩy.
-
-Kiến thức phải dùng: Kĩ thuật tính với số thập phân.
-
-Cách làm: Chọn quy tắc đặt dấu phẩy theo phép tính.
-
-Lối tắt: Ước lượng bằng cách làm tròn để kiểm tra vị trí dấu phẩy.
-
-Kết quả: **84,55**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Cộng, trừ số thập phân: viết các dấu phẩy **thẳng cột** rồi tính như số tự nhiên, đặt dấu phẩy ở kết quả thẳng cột với các dấu phẩy trên. Nhân số thập phân với số tự nhiên: nhân như số tự nhiên rồi đếm số chữ số thập phân của thừa số để đặt dấu phẩy.
-
-*Điểm chốt:* Cộng trừ thì **thẳng dấu phẩy**; nhân thì **đếm chữ số thập phân**.
-
-### Bài B.5 — Bốn phép tính với phân số
-
-**Các bước giải**
-
-Xét ý a: 2 × 1 phần 2
+Xét ý a: 5 phần 9 : 9 phần 5
 
 Đọc vị: đây là dạng **Bốn phép tính với phân số**; dấu hiệu là Biểu thức chỉ gồm phân số.
 
@@ -268,101 +208,137 @@ Cách làm: Chọn quy tắc theo phép tính, rút gọn cuối cùng.
 
 Lối tắt: Rút gọn chéo trước khi nhân để số nhỏ, tính nhanh và ít sai.
 
-Kết quả: **1**.
+Kết quả: **25 phần 81**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Cộng, trừ phân số phải **quy đồng mẫu số** trước. Nhân phân số thì nhân tử với tử, mẫu với mẫu. Chia phân số thì nhân với phân số đảo ngược của số chia. Cuối cùng luôn rút gọn.
 
 *Điểm chốt:* Cộng trừ **cần** quy đồng, nhân chia **không cần** quy đồng.
 
-### Bài C.1 — Tính nhanh nhờ ghép cặp thừa số tròn
+### Bài B.3 — Đếm số thoả điều kiện trong một khoảng
 
 **Các bước giải**
 
-Xét ý a: 72 × 125 × 8
+Xét ý a: Có bao nhiêu số lẻ từ 271 đến 320?
 
-Đọc vị: đây là dạng **Tính nhanh tích, thương nhiều bước**; dấu hiệu là Tích có thừa số 25, 125, 50, 20; hoặc chia liên tiếp.
+Đọc vị: đây là dạng **Đếm số hạng của dãy cách đều theo điều kiện chia hết**; dấu hiệu là Cụm “có bao nhiêu số … từ … đến …”.
 
-Kiến thức phải dùng: Tính chất giao hoán, kết hợp của phép nhân.
+Kiến thức phải dùng: Dãy số cách đều, dấu hiệu chia hết.
 
-Cách làm: Ghép cặp cho tích tròn rồi nhân.
+Cách làm: Tìm số đầu, số cuối hợp lệ rồi dùng công thức đếm.
 
-Lối tắt: Chia liên tiếp cho 4 rồi 25 bằng chia cho 100.
+Lối tắt: Số các số chia hết cho d từ 1 đến n bằng phần nguyên của n : d, nên đếm từ a đến b là b : d trừ đi (a − 1) : d.
 
-Kết quả: **72 000**.
+Kết quả: **25**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Trong một tích, được phép đổi chỗ và nhóm các thừa số. Ghép các cặp cho tích tròn: 25 × 4 = 100, 125 × 8 = 1 000, 50 × 2 = 100, 20 × 5 = 100. Chia liên tiếp cho hai số bằng chia cho tích hai số đó.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Các số cần đếm lập thành một dãy cách đều. Số lượng số hạng bằng (số cuối − số đầu) : khoảng cách + 1. Phải tìm đúng số đầu và số cuối **nằm trong khoảng đã cho**.
 
-*Điểm chốt:* Thuộc lòng bốn cặp tròn: **25 × 4**, **125 × 8**, **50 × 2**, **20 × 5**.
+*Điểm chốt:* Công thức có **+ 1** ở cuối; quên cộng 1 là sai một đơn vị.
 
-### Bài C.2 — Chia kẹo — chia hết và chia có dư
-
-**Các bước giải**
-
-Bước 1 — chia: 22 : 7 = 3 dư 1.
-
-Mỗi bạn được 3 cái, còn thừa 1 cái.
-
-Muốn chia hết thì bớt đúng phần dư: bớt 1 cái.
-
-Hoặc thêm cho đủ một suất nữa: thêm 7 − 1 = 6 (cái).
-
-Thử lại: 7 × 3 + 1 = 22 ✓
-
-Đáp số: **mỗi bạn 3 cái, thừa 1 cái**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Trong phép chia có dư, **số dư luôn bé hơn số chia**. Muốn chia hết thì hoặc bớt đi đúng phần dư, hoặc thêm vào phần còn thiếu để đủ một suất — phần còn thiếu bằng số chia trừ số dư.
-
-*Điểm chốt:* Thêm vào thì thêm **số chia trừ số dư**, không phải thêm số dư.
-
-*Muốn khó hơn:* Chia sao cho mỗi bạn được số kẹo khác nhau và chênh nhau 1 cái.
-
-*Phải chắc trước khi làm bài này:* Phép chia có dư trong bảng và ngoài bảng.
-
-### Bài C.3 — Tính toán với số đo đại lượng
+### Bài B.4 — Ba dạng cơ bản của tỉ số phần trăm
 
 **Các bước giải**
 
-Xét ý a: 33 m 65 cm × 9 = … cm
+Xét ý a: Biết 60% của một số là 24. Tìm số đó.
 
-Đọc vị: đây là dạng **Bốn phép tính với số đo**; dấu hiệu là Các số hạng có đơn vị khác nhau trong cùng một phép tính.
+Đọc vị: đây là dạng **Ba dạng toán tỉ số phần trăm**; dấu hiệu là Kí hiệu %, cụm “… % của …”.
 
-Kiến thức phải dùng: Đổi đơn vị, bốn phép tính.
+Kiến thức phải dùng: Tỉ số phần trăm.
 
-Cách làm: Đổi về đơn vị của kết quả rồi tính.
+Cách làm: Xác định đại lượng ứng với 100% rồi chọn dạng.
 
-Lối tắt: Đọc chỗ chấm trước, biết ngay đơn vị đích.
+Lối tắt: Coi 100% là “cả phần”, 1% là “cả phần chia 100” — mọi dạng đều quy về 1%.
 
-Kết quả: **30 285**.
+Kết quả: **40**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Chỉ cộng, trừ được các số đo **cùng đơn vị**. Bước đầu tiên luôn là đổi tất cả về đơn vị mà đề yêu cầu ở kết quả, sau đó tính như với số tự nhiên rồi ghi kèm đơn vị.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Dạng 1 — tìm tỉ số phần trăm của a và b: lấy a chia b rồi nhân 100 và viết kí hiệu %. Dạng 2 — tìm p% của b: lấy b chia 100 rồi nhân p. Dạng 3 — biết p% của một số là a, tìm số đó: lấy a chia p rồi nhân 100.
 
-*Điểm chốt:* Đơn vị của **kết quả** quyết định ta đổi về đơn vị nào.
+*Điểm chốt:* Nhận đúng **dạng nào trong ba dạng** là xong một nửa bài.
 
-### Bài C.4 — Giả thiết tạm với hai loại đối tượng
-
-**Các bước giải**
-
-Xét ý a: Trong sân có 19 chiếc xe ba bánh và xe ô tô, đếm được tất cả 70 bánh xe. Hỏi mỗi loại có bao nhiêu chiếc?
-
-Đọc vị: đây là dạng **Giả thiết tạm hai loại**; dấu hiệu là Hai loại đối tượng, biết tổng số và tổng của một đại lượng phụ.
-
-Kiến thức phải dùng: Phương pháp giả thiết tạm.
-
-Cách làm: Giả sử đồng nhất → tính chênh → chia cho hiệu đơn vị.
-
-Lối tắt: Kiểm tra ngay: số bánh phải nằm giữa tổng × (số bánh ít nhất) và tổng × (số bánh nhiều nhất).
-
-Kết quả: **xe ba bánh: 6 chiếc, xe ô tô: 13 chiếc**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Giả sử tất cả đều là loại có ít bánh hơn, tính tổng số bánh giả định. Số bánh còn thiếu so với thực tế chia cho hiệu số bánh của hai loại cho biết số xe loại nhiều bánh hơn.
-
-*Điểm chốt:* Chia cho **hiệu** số bánh của hai loại, không chia cho số bánh của một loại.
-
-### Bài C.5 — Phần trăm trong mua bán: lãi, lỗ, giảm giá
+### Bài B.5 — Bốn phép tính với số thập phân
 
 **Các bước giải**
 
-Xét ý a: Một món hàng giá 200 000 đồng, tăng giá 30%. Giá mới là bao nhiêu?
+Xét ý a: 39,87 − 15,1
+
+Đọc vị: đây là dạng **Bốn phép tính với số thập phân**; dấu hiệu là Các số có dấu phẩy.
+
+Kiến thức phải dùng: Kĩ thuật tính với số thập phân.
+
+Cách làm: Chọn quy tắc đặt dấu phẩy theo phép tính.
+
+Lối tắt: Ước lượng bằng cách làm tròn để kiểm tra vị trí dấu phẩy.
+
+Kết quả: **24,77**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Cộng, trừ số thập phân: viết các dấu phẩy **thẳng cột** rồi tính như số tự nhiên, đặt dấu phẩy ở kết quả thẳng cột với các dấu phẩy trên. Nhân số thập phân với số tự nhiên: nhân như số tự nhiên rồi đếm số chữ số thập phân của thừa số để đặt dấu phẩy.
+
+*Điểm chốt:* Cộng trừ thì **thẳng dấu phẩy**; nhân thì **đếm chữ số thập phân**.
+
+### Bài C.1 — Bài toán thực tế về chu vi và diện tích
+
+**Các bước giải**
+
+Xét ý a: Một mảnh đất hình chữ nhật dài 19 m, rộng 14 m. Người ta trồng cây quanh mảnh đất, hai cây liền nhau cách nhau 5 m. Hỏi cần bao nhiêu cây?
+
+Đọc vị: đây là dạng **Chu vi, diện tích trong tình huống thực tế**; dấu hiệu là Từ khoá “rào xung quanh”, “lát gạch”, “trồng cây quanh”.
+
+Kiến thức phải dùng: Công thức chu vi, diện tích; phép chia.
+
+Cách làm: Đọc vị chu vi hay diện tích rồi tính.
+
+Lối tắt: Nhìn đơn vị của đáp số: mét thì là chu vi, mét vuông thì là diện tích.
+
+Kết quả: **không chia hết (66 m không chia hết cho 5 m)**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Rào xung quanh, trồng cây quanh mảnh đất là bài toán **chu vi**. Lát gạch, trải thảm, gieo hạt khắp mặt đất là bài toán **diện tích**. Số viên gạch = diện tích nền : diện tích một viên.
+
+*Điểm chốt:* “Xung quanh” → chu vi; “khắp mặt” → diện tích.
+
+### Bài C.2 — Tìm chữ số để số chia hết cho một số cho trước
+
+**Các bước giải**
+
+Xét ý a: Tìm tất cả chữ số thay cho dấu * để số 94*4 chia hết cho 5.
+
+Đọc vị: đây là dạng **Điền chữ số theo điều kiện chia hết**; dấu hiệu là Số có ô trống hoặc dấu *, kèm điều kiện chia hết.
+
+Kiến thức phải dùng: Dấu hiệu chia hết, chữ số hàng cao nhất khác 0.
+
+Cách làm: Dùng dấu hiệu để lập điều kiện cho dấu * rồi thử 0–9.
+
+Lối tắt: Với 3 và 9: tính tổng các chữ số đã biết một lần duy nhất, rồi tìm phần bù cần thêm.
+
+Kết quả: **không có chữ số nào**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Xét dấu hiệu chia hết ứng với số chia, rồi thử lần lượt 10 chữ số từ 0 đến 9. Nếu dấu * đứng ở hàng cao nhất thì loại chữ số 0.
+
+*Điểm chốt:* Phải tìm **tất cả** chữ số thoả mãn, không dừng ở chữ số đầu tiên tìm được.
+
+### Bài C.3 — Nhận dạng hình khối và tính thể tích
+
+**Các bước giải**
+
+Hình hộp chữ nhật có 6 mặt, 8 đỉnh, 12 cạnh; các cạnh chia thành ba nhóm, mỗi nhóm 4 cạnh bằng nhau.
+
+Thể tích: 10 × 6 × 4 = 240 (cm³).
+
+Tổng độ dài các cạnh: (10 + 6 + 4) × 4 = 80 (cm).
+
+Đáp số ý e: **240 cm³**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Nhớ bộ ba số của hình hộp chữ nhật: 6 mặt, 8 đỉnh, 12 cạnh. 12 cạnh chia thành ba nhóm, mỗi nhóm 4 cạnh bằng nhau, nên tổng độ dài các cạnh bằng 4 lần tổng ba kích thước.
+
+*Điểm chốt:* 12 cạnh = **4 nhóm ba kích thước**, nên nhân 4 chứ không nhân 12.
+
+*Muốn khó hơn:* Vẽ hình khai triển của hình hộp và tính diện tích tấm bìa cần dùng.
+
+*Phải chắc trước khi làm bài này:* Công thức thể tích và diện tích toàn phần hình hộp chữ nhật.
+
+### Bài C.4 — Phần trăm trong mua bán: lãi, lỗ, giảm giá
+
+**Các bước giải**
+
+Xét ý a: Một món hàng giá 200 000 đồng, tăng giá 25%. Giá mới là bao nhiêu?
 
 Đọc vị: đây là dạng **Tỉ số phần trăm trong mua bán**; dấu hiệu là Từ khoá “giảm giá”, “tăng giá”, “lãi”, “lỗ”.
 
@@ -372,7 +348,7 @@ Cách làm: Chốt mốc 100% rồi cộng trừ phần trăm.
 
 Lối tắt: Giảm 20% nghĩa là còn 80% — nhân thẳng một lần thay vì trừ hai bước.
 
-Kết quả: **260 000 đồng**.
+Kết quả: **250 000 đồng**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Giá gốc luôn ứng với 100%. Giảm p% thì giá mới ứng với (100 − p)%; tăng p% thì ứng với (100 + p)%. Lãi tính theo **giá mua**.
 
@@ -382,95 +358,27 @@ Kết quả: **260 000 đồng**.
 
 *Phải chắc trước khi làm bài này:* Tìm tỉ số phần trăm của hai số và tìm p% của một số.
 
-### Bài D.1 — Tỉ số phần trăm trong tình huống thực tế
+### Bài C.5 — Diện tích hình bình hành, hình thoi, hình tam giác
 
 **Các bước giải**
 
-Xét ý a: Lớp 5B có 25 học sinh, trong đó có 18 học sinh giỏi. Hỏi số học sinh giỏi chiếm bao nhiêu phần trăm số học sinh cả lớp?
+Xét ý a: Hình bình hành có đáy 21 cm, chiều cao 11 cm. Tính diện tích.
 
-Đọc vị: đây là dạng **Tỉ số phần trăm có lời văn**; dấu hiệu là Cụm “chiếm bao nhiêu phần trăm”, “so với cả lớp”.
+Đọc vị: đây là dạng **Diện tích các hình phẳng cơ bản**; dấu hiệu là Đề cho đáy và chiều cao, hoặc hai đường chéo.
 
-Kiến thức phải dùng: Tỉ số phần trăm.
+Kiến thức phải dùng: Công thức diện tích hình bình hành, hình thoi, hình tam giác.
 
-Cách làm: Chốt đại lượng 100% rồi chọn dạng.
+Cách làm: Nhận dạng hình rồi chọn công thức.
 
-Lối tắt: Nếu tỉ số là 1 phần 4 thì bằng 25%; nhớ vài mốc quen để nhẩm.
+Lối tắt: Tam giác bằng nửa hình bình hành cùng đáy cùng chiều cao.
 
-Kết quả: **75%**.
+Kết quả: **231 cm²**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Đại lượng đứng sau chữ “của” hoặc “so với” là đại lượng ứng với 100%. Tìm tỉ số phần trăm thì lấy phần chia cho toàn bộ rồi nhân 100. Tìm giá trị của phần thì lấy toàn bộ chia 100 rồi nhân số phần trăm.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Hình bình hành: S = đáy × chiều cao. Hình thoi: S = tích hai đường chéo chia 2. Hình tam giác: S = đáy × chiều cao chia 2.
 
-*Điểm chốt:* Xác định **đại lượng ứng với 100%** trước mọi phép tính.
+*Điểm chốt:* Hình bình hành **không** chia 2; hình tam giác và hình thoi **có** chia 2.
 
-### Bài D.2 — Hai nhóm có phần chung — đếm bằng hai vòng tròn
-
-> **BẪY — Cộng thẳng, quên trừ phần chung.**
-
-**Các bước giải**
-
-Vẽ hai vòng tròn chồng nhau. Điền **phần chung trước**: 4 em học cả hai môn.
-
-Chỉ học tiếng Anh: 13 − 4 = 9 (em).
-
-Chỉ học vẽ: 24 − 4 = 20 (em).
-
-Số em học ít nhất một trong hai môn: 9 + 4 + 20 = 33 (em).
-
-Số em không học môn nào: 39 − 33 = **6 em**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Điền phần chung vào trước, rồi trừ ra hai phần riêng. Cộng ba phần ấy được số người tham gia ít nhất một hoạt động; lấy tổng trừ đi là ra số người ngoài cả hai vòng.
-
-*Điểm chốt:* Con số đề cho cho mỗi môn **đã bao gồm** những em học cả hai. Cộng thẳng hai con số ấy là đếm phần chung hai lần.
-
-*Muốn khó hơn:* Thêm nhóm thứ ba để phải vẽ ba vòng tròn và trừ ba phần chung đôi một.
-
-*Phải chắc trước khi làm bài này:* Phép cộng trừ trong phạm vi 100 và cách đọc đề có nhiều số liệu.
-
-### Bài D.3 — Tìm phân số của một số
-
-**Các bước giải**
-
-Xét ý a: Tổ Ba trồng được 144 cây. Số cây của nhóm Sao Mai bằng 1 phần 6 số cây của tổ Ba. Hỏi nhóm Sao Mai trồng được bao nhiêu cây?
-
-Đọc vị: đây là dạng **Tìm phân số của một số**; dấu hiệu là Cụm “bằng … của …”.
-
-Kiến thức phải dùng: Nhân số tự nhiên với phân số.
-
-Cách làm: Chia theo mẫu số rồi nhân theo tử số.
-
-Lối tắt: Chia trước, nhân sau — số nhỏ hơn nên tính nhẩm được.
-
-Kết quả: **24 cây**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Muốn tìm phân số của một số, ta lấy số đó nhân với phân số. Cách hiểu: chia số đó thành số phần bằng mẫu số, rồi lấy số phần bằng tử số.
-
-*Điểm chốt:* Phân số tính trên **số nào** — đọc kĩ cụm “… của …”.
-
-### Bài D.4 — Tìm số ban đầu bằng cách tính ngược
-
-> **BẪY — Đi ngược nhưng không đảo thứ tự.**
-
-**Các bước giải**
-
-Viết chuỗi thao tác thành sơ đồ mũi tên: số cần tìm → × 5 → + 15 → : 4 → 30.
-
-Đi **ngược mũi tên**, và mỗi bước làm phép tính ngược lại. Phép cuối cùng là chia cho 4, nên bước đầu khi đi ngược là nhân với 4: 30 × 4 = 120.
-
-Phép trước đó là cộng 15, đi ngược thì trừ: 120 − 15 = 105.
-
-Phép đầu tiên là nhân 5, đi ngược thì chia: 105 : 5 = 21.
-
-Số cần tìm là **21**. Thử lại xuôi: 21 × 5 = 105, cộng 15 được 120, chia 4 được 30 — đúng bằng đề cho.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Viết chuỗi thao tác thành sơ đồ mũi tên rồi đi ngược lại từ kết quả cuối. Mỗi bước đảo phép tính: nhân thành chia, cộng thành trừ. Thứ tự cũng phải đảo — phép làm sau cùng được gỡ trước tiên.
-
-*Điểm chốt:* Đảo **cả phép tính lẫn thứ tự**. Đảo phép tính mà giữ nguyên thứ tự thì vẫn sai.
-
-*Muốn khó hơn:* Thêm bước “trừ đi một nửa số đang có” để học sinh phải gỡ một phép tính có liên quan tới chính số ấy.
-
-*Phải chắc trước khi làm bài này:* Bốn phép tính với số có hai chữ số và thứ tự thực hiện phép tính.
-
-### Bài D.5 — Đọc và phân tích bảng số liệu
+### Bài D.1 — Đọc và phân tích bảng số liệu
 
 **Các bước giải**
 
@@ -484,11 +392,105 @@ Cách làm: Ghi lại số liệu, trả lời từng câu bằng công cụ tư
 
 Lối tắt: Tính tổng một lần rồi dùng lại cho mọi câu hỏi phần trăm.
 
-Kết quả: **90**.
+Kết quả: **77**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Đọc bảng theo cột, ghi lại từng số liệu. Tổng là cộng tất cả; nhiều nhất, ít nhất là so sánh; trung bình là tổng chia số môn; tỉ số phần trăm là phần chia tổng rồi nhân 100.
 
 *Điểm chốt:* Mọi câu hỏi đều quy về **tổng, so sánh, trung bình cộng, tỉ số phần trăm**.
+
+### Bài D.2 — Tỉ số phần trăm trong tình huống thực tế
+
+**Các bước giải**
+
+Xét ý a: Lớp 4C có 20 học sinh, số học sinh giỏi chiếm 20%. Hỏi lớp đó có bao nhiêu học sinh giỏi?
+
+Đọc vị: đây là dạng **Tỉ số phần trăm có lời văn**; dấu hiệu là Cụm “chiếm bao nhiêu phần trăm”, “so với cả lớp”.
+
+Kiến thức phải dùng: Tỉ số phần trăm.
+
+Cách làm: Chốt đại lượng 100% rồi chọn dạng.
+
+Lối tắt: Nếu tỉ số là 1 phần 4 thì bằng 25%; nhớ vài mốc quen để nhẩm.
+
+Kết quả: **4 học sinh**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Đại lượng đứng sau chữ “của” hoặc “so với” là đại lượng ứng với 100%. Tìm tỉ số phần trăm thì lấy phần chia cho toàn bộ rồi nhân 100. Tìm giá trị của phần thì lấy toàn bộ chia 100 rồi nhân số phần trăm.
+
+*Điểm chốt:* Xác định **đại lượng ứng với 100%** trước mọi phép tính.
+
+### Bài D.3 — Hai nhóm có phần chung — đếm bằng hai vòng tròn
+
+> **BẪY — Cộng thẳng, quên trừ phần chung.**
+
+**Các bước giải**
+
+Vẽ hai vòng tròn chồng nhau. Điền **phần chung trước**: 8 em học cả hai môn.
+
+Chỉ học tiếng Anh: 20 − 8 = 12 (em).
+
+Chỉ học cờ vua: 27 − 8 = 19 (em).
+
+Số em học ít nhất một trong hai môn: 12 + 8 + 19 = 39 (em).
+
+Số em không học môn nào: 39 − 39 = **0 em**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Điền phần chung vào trước, rồi trừ ra hai phần riêng. Cộng ba phần ấy được số người tham gia ít nhất một hoạt động; lấy tổng trừ đi là ra số người ngoài cả hai vòng.
+
+*Điểm chốt:* Con số đề cho cho mỗi môn **đã bao gồm** những em học cả hai. Cộng thẳng hai con số ấy là đếm phần chung hai lần.
+
+*Muốn khó hơn:* Thêm nhóm thứ ba để phải vẽ ba vòng tròn và trừ ba phần chung đôi một.
+
+*Phải chắc trước khi làm bài này:* Phép cộng trừ trong phạm vi 100 và cách đọc đề có nhiều số liệu.
+
+### Bài D.4 — Đọc biểu đồ số ngày mưa
+
+> **BẪY — Đọc nhầm vạch của trục dọc.**
+
+**Các bước giải**
+
+Đọc biểu đồ cột thì **đọc chú thích trước**: ở đây mỗi ô của cột thay cho 2 ngày, nên cột dài 6 ô nghĩa là 12 ngày, không phải 6 ngày.
+
+Đọc từng cột ra số: Tháng 5 16 · Tháng 6 22 · Tháng 7 6 · Tháng 8 8 · Tháng 9 8.
+
+So các số vừa đọc: cao nhất Tháng 6 (22 ngày), thấp nhất Tháng 7 (6 ngày).
+
+Tổng: 16 + 22 + 6 + 8 + 8 = 60 ngày. Trung bình mỗi tháng: 60 : 5 = **12 ngày**.
+
+Đếm số tháng vượt mức trung bình 12: có **2 tháng**. Trung bình cộng không phải là số ở giữa — có thể nhiều tháng cùng nằm dưới hoặc trên nó.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Đọc chú thích của biểu đồ trước để biết một ô ứng với mấy đơn vị, rồi mới đổi từng cột ra số. Có số rồi thì mọi câu hỏi trở thành bài cộng trừ và trung bình cộng bình thường.
+
+*Điểm chốt:* Một ô của biểu đồ hiếm khi bằng 1 đơn vị — đọc chú thích trước.
+
+*Muốn khó hơn:* Thêm một tháng nữa và hỏi trung bình thay đổi thế nào.
+
+*Phải chắc trước khi làm bài này:* Đọc biểu đồ cột và công thức trung bình cộng.
+
+### Bài D.5 — Chia theo tỉ lệ ba phần và bài toán trộn
+
+> **BẪY — Chia cho tổng số phần, không phải cho số đại lượng.**
+
+**Các bước giải**
+
+Vẽ ba đoạn thẳng: 1 phần, 5 phần, 6 phần.
+
+Bước 1 — tổng số phần: 1 + 5 + 6 = 12 (phần).
+
+Bước 2 — một phần: 384 : 12 = 32 (cây).
+
+Bước 3 — nhân ra từng tổ: 32 × 1 = 32; 32 × 5 = 160; 32 × 6 = 192 (cây).
+
+Thử lại: 32 + 160 + 192 = 384 ✓
+
+Đáp số: **32, 160, 192 cây**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Chia một tổng theo tỉ lệ ba số: cộng ba số phần lại, chia tổng cho tổng số phần được giá trị một phần, rồi nhân ra từng đại lượng. Bài trộn thì tính riêng từng loại rồi cộng.
+
+*Điểm chốt:* Chia cho **tổng số phần**, không chia cho số đại lượng.
+
+*Muốn khó hơn:* Hỏi giá trung bình một ki-lô-gam gạo sau khi trộn.
+
+*Phải chắc trước khi làm bài này:* Bài toán tổng – tỉ hai đại lượng và phép nhân với số lớn.
 
 ### Bài E.1 — Đọc vị đề số 1
 
@@ -556,15 +558,15 @@ Kết quả: **Bốn phép tính với số thập phân**.
 
 Xét ý a: Đề này thuộc dạng bài nào?
 
-Đọc vị: đây là dạng **Bốn phép tính với phân số**; dấu hiệu là Biểu thức chỉ gồm phân số.
+Đọc vị: đây là dạng **Bài toán lãi suất tiết kiệm**; dấu hiệu là Đề nhắc **gửi tiếp cả gốc lẫn lãi**, hoặc hỏi sau nhiều năm.
 
-Kiến thức phải dùng: Quy đồng, nhân chia phân số.
+Kiến thức phải dùng: Tỉ số phần trăm; tìm giá trị phần trăm của một số.
 
-Cách làm: Chọn quy tắc theo phép tính, rút gọn cuối cùng.
+Cách làm: Tính lần lượt từng kỳ, mỗi kỳ lãi tính trên số tiền cuối kỳ trước.
 
-Lối tắt: Rút gọn chéo trước khi nhân để số nhỏ, tính nhanh và ít sai.
+Lối tắt: Sau hai năm với lãi suất a% thì số tiền bằng gốc nhân (100 + a) × (100 + a) rồi chia 10 000.
 
-Kết quả: **Bốn phép tính với phân số**.
+Kết quả: **Bài toán lãi suất tiết kiệm**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Đọc vị là trả lời năm câu hỏi theo thứ tự: dạng gì → dấu hiệu nào → kiến thức nào → phương pháp nào → có lối tắt không. Chỉ khi trả lời xong năm câu ấy mới bắt đầu tính.
 
@@ -576,15 +578,15 @@ Kết quả: **Bốn phép tính với phân số**.
 
 Xét ý a: Đề này thuộc dạng bài nào?
 
-Đọc vị: đây là dạng **Bài toán giảm giá và khuyến mãi**; dấu hiệu là Đề nhắc **giảm giá**, **khuyến mãi**, và có thể giảm nhiều lần.
+Đọc vị: đây là dạng **So sánh phân số**; dấu hiệu là Hai phân số nối bởi dấu ….
 
-Kiến thức phải dùng: Tỉ số phần trăm; tìm giá trị phần trăm của một số.
+Kiến thức phải dùng: Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu.
 
-Cách làm: Mỗi lần giảm nhân với (100 − a) rồi chia 100, làm lần lượt.
+Cách làm: Xét cùng mẫu → cùng tử → quy đồng.
 
-Lối tắt: Giảm 20% rồi 10% tương đương còn 80% × 90% = 72% giá gốc.
+Lối tắt: So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay.
 
-Kết quả: **Bài toán giảm giá và khuyến mãi**.
+Kết quả: **So sánh phân số**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Đọc vị là trả lời năm câu hỏi theo thứ tự: dạng gì → dấu hiệu nào → kiến thức nào → phương pháp nào → có lối tắt không. Chỉ khi trả lời xong năm câu ấy mới bắt đầu tính.
 
@@ -599,30 +601,30 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
 | A.1 | Liệt kê dạng bài | Danh mục dạng bài của chương | Bảng dạng bài đầu phiếu | Chép theo thứ tự học | Đếm số dạng bài là cách nhanh nhất để biết mình còn sót gì. | Chia số thập phân cho số tự nhiên · Chia một số cho số thập phân · Tỉ số phần trăm — khái niệm và cách viết · Toán tỉ số phần trăm dạng 1: tìm tỉ số phần trăm của hai số… |
-| A.2 | Lập bảng dạng bài | Bảng phân tích chuyên sâu sáu cột | Bảng có sẵn cột dạng bài, thiếu các cột còn lại | Tra bảng phân tích của các phiếu đã học | Học theo hàng ngang, không học theo cột dọc. | Một nhóm phân số cần sắp thứ tự · Kí hiệu %, cụm “… % của …” · Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 · Tử số và mẫu số có ước chung lớn hơn 1… |
-| A.3 | Lập bảng dạng bài | Bảng phân tích chuyên sâu sáu cột | Bảng có sẵn cột dạng bài, thiếu các cột còn lại | Tra bảng phân tích của các phiếu đã học | Học theo hàng ngang, không học theo cột dọc. | So phần bù; hoặc chèn phân số trung gian · Chia cả tử và mẫu cho ước chung · Cộng ba nhóm, trừ ba phần chung đôi, cộng lại phần chung cả ba · Chọn quy tắc đặt dấu phẩy theo phép tính… |
-| A.4 | Lập bảng dạng bài | Bảng phân tích chuyên sâu sáu cột | Bảng có sẵn cột dạng bài, thiếu các cột còn lại | Tra bảng phân tích của các phiếu đã học | Học theo hàng ngang, không học theo cột dọc. | Đếm không trùng lặp; nguyên lý bù trừ · Kĩ thuật tính với số thập phân · Ba dạng tỉ số phần trăm; mốc quy chiếu · Quy đồng, nhân chia phân số… |
-| A.5 | Lập bảng dạng bài | Bảng phân tích chuyên sâu sáu cột | Bảng có sẵn cột dạng bài, thiếu các cột còn lại | Tra bảng phân tích của các phiếu đã học | Học theo hàng ngang, không học theo cột dọc. | Nhân hai tỉ lệ rồi chia 100 là ra tỉ lệ so với mốc gốc. · Rút gọn chéo trước khi nhân để số nhỏ, tính nhanh và ít sai. · Nếu lượng dùng vượt hết các bậc thấp thì ba bậc đầu luôn cho cùng một số tiền — tính sẵn một lần rồi dùng lại. · Giảm 20% rồi 10% tương đương còn 80% × 90% = 72% giá gốc.… |
-| B.1 | Ba dạng toán tỉ số phần trăm | Tỉ số phần trăm | Kí hiệu %, cụm “… % của …” | Xác định đại lượng ứng với 100% rồi chọn dạng | Coi 100% là “cả phần”, 1% là “cả phần chia 100” — mọi dạng đều quy về 1%. | 100 · 25% · 32 · 60… |
-| B.2 | Tỉ lệ nghịch | Đại lượng tỉ lệ nghịch, tổng số ngày công | Số người tăng thì thời gian giảm | Quy về tổng số ngày công rồi chia | Số người gấp đôi thì số ngày giảm một nửa — nhẩm được ngay khi tỉ số đẹp. | 4 ngày · 6 ngày · 30 ngày · 16 ngày… |
-| B.3 | Nhân nhẩm nhờ tách thừa số | Nhân một số với một tổng, một hiệu | Thừa số là 9, 11, 19, 21, 99, 101… | Tách về số tròn rồi bù trừ | × 11 với số có hai chữ số: viết hai chữ số ra hai đầu, tổng của chúng đặt vào giữa (nhớ sang trái nếu tổng vượt 9). | 1 463 · 1 953 · 494 · 7 524… |
-| B.4 | Bốn phép tính với số thập phân | Kĩ thuật tính với số thập phân | Các số có dấu phẩy | Chọn quy tắc đặt dấu phẩy theo phép tính | Ước lượng bằng cách làm tròn để kiểm tra vị trí dấu phẩy. | 84,55 · 539,36 · 3,36 · 17,7… |
-| B.5 | Bốn phép tính với phân số | Quy đồng, nhân chia phân số | Biểu thức chỉ gồm phân số | Chọn quy tắc theo phép tính, rút gọn cuối cùng | Rút gọn chéo trước khi nhân để số nhỏ, tính nhanh và ít sai. | 1 · 19 phần 10 · 22 phần 7 · 5 phần 36… |
-| C.1 | Tính nhanh tích, thương nhiều bước | Tính chất giao hoán, kết hợp của phép nhân | Tích có thừa số 25, 125, 50, 20; hoặc chia liên tiếp | Ghép cặp cho tích tròn rồi nhân | Chia liên tiếp cho 4 rồi 25 bằng chia cho 100. | 72 000 · 9 800 · 94 000 · 8 400… |
-| C.2 | Chia hết và chia có dư trong tình huống chia phần | Phép chia có dư; số dư bé hơn số chia | “Chia đều cho … bạn”, “còn thừa” | Chia lấy thương và dư, rồi lập luận thêm hoặc bớt | Thử lại bằng công thức số bị chia = số chia × thương + số dư. | mỗi bạn 3 cái, thừa 1 cái · 1 cái · 6 cái · 4 cái… |
-| C.3 | Bốn phép tính với số đo | Đổi đơn vị, bốn phép tính | Các số hạng có đơn vị khác nhau trong cùng một phép tính | Đổi về đơn vị của kết quả rồi tính | Đọc chỗ chấm trước, biết ngay đơn vị đích. | 30 285 · 3 316 · 822 · 2 550… |
-| C.4 | Giả thiết tạm hai loại | Phương pháp giả thiết tạm | Hai loại đối tượng, biết tổng số và tổng của một đại lượng phụ | Giả sử đồng nhất → tính chênh → chia cho hiệu đơn vị | Kiểm tra ngay: số bánh phải nằm giữa tổng × (số bánh ít nhất) và tổng × (số bánh nhiều nhất). | xe ba bánh: 6 chiếc, xe ô tô: 13 chiếc · xe ba bánh: 14 chiếc, xe đạp: 15 chiếc · xe ba bánh: 17 chiếc, xe đạp: 30 chiếc · xe ô tô: 12 chiếc, xe đạp: 21 chiếc… |
-| C.5 | Tỉ số phần trăm trong mua bán | Tỉ số phần trăm, mốc quy chiếu 100% | Từ khoá “giảm giá”, “tăng giá”, “lãi”, “lỗ” | Chốt mốc 100% rồi cộng trừ phần trăm | Giảm 20% nghĩa là còn 80% — nhân thẳng một lần thay vì trừ hai bước. | 260 000 đồng · 30% · 170 000 đồng · 625 000 đồng |
-| D.1 | Tỉ số phần trăm có lời văn | Tỉ số phần trăm | Cụm “chiếm bao nhiêu phần trăm”, “so với cả lớp” | Chốt đại lượng 100% rồi chọn dạng | Nếu tỉ số là 1 phần 4 thì bằng 25%; nhớ vài mốc quen để nhẩm. | 75% · 20 học sinh · 10 học sinh · 10 học sinh… |
-| D.2 | Biểu đồ Ven | Phép cộng, phép trừ; đếm không trùng lặp | Đề cho số người của từng nhóm **và** số người thuộc cả hai nhóm | Vẽ hai vòng tròn, điền phần chung trước rồi mới trừ ra phần riêng | Số người ít nhất một nhóm = nhóm A + nhóm B − phần chung. | 6 em · 0 em · 0 em · 0 em… |
-| D.3 | Tìm phân số của một số | Nhân số tự nhiên với phân số | Cụm “bằng … của …” | Chia theo mẫu số rồi nhân theo tử số | Chia trước, nhân sau — số nhỏ hơn nên tính nhẩm được. | 24 cây · 39 cây · 40 cây · 80 cây |
-| D.4 | Tính ngược từ cuối | Bốn phép tính; quan hệ giữa phép tính và phép tính ngược | Đề kể một **chuỗi thao tác** rồi cho kết quả cuối, hỏi số ban đầu | Vẽ sơ đồ mũi tên, đi ngược và đảo từng phép tính | Gỡ từ phải sang trái, mỗi bước một phép tính ngược — không cần đặt ẩn. | 21 · 45 · 57 · 18… |
-| D.5 | Đọc bảng số liệu thống kê | Thống kê mô tả sơ cấp, trung bình cộng, tỉ số phần trăm | Đề cho bảng hoặc biểu đồ kèm nhiều câu hỏi | Ghi lại số liệu, trả lời từng câu bằng công cụ tương ứng | Tính tổng một lần rồi dùng lại cho mọi câu hỏi phần trăm. | 90 · Lịch sử (29 bạn) · Tiếng Anh (7 bạn) · 22… |
+| A.2 | Lập bảng dạng bài | Bảng phân tích chuyên sâu sáu cột | Bảng có sẵn cột dạng bài, thiếu các cột còn lại | Tra bảng phân tích của các phiếu đã học | Học theo hàng ngang, không học theo cột dọc. | Hai tỉ lệ phần trăm nối tiếp nhau trong cùng một bài · Kí hiệu %, cụm “… % của …” · Đề cho **ba nhóm**, ba phần chung đôi và một phần chung cả ba · Tử số và mẫu số có ước chung lớn hơn 1… |
+| A.3 | Lập bảng dạng bài | Bảng phân tích chuyên sâu sáu cột | Bảng có sẵn cột dạng bài, thiếu các cột còn lại | Tra bảng phân tích của các phiếu đã học | Học theo hàng ngang, không học theo cột dọc. | Cộng ba nhóm, trừ ba phần chung đôi, cộng lại phần chung cả ba · Chia cả tử và mẫu cho ước chung · Quan sát rút gọn trước, sau đó theo thứ tự thực hiện · Chọn quy tắc đặt dấu phẩy theo phép tính… |
+| A.4 | Lập bảng dạng bài | Bảng phân tích chuyên sâu sáu cột | Bảng có sẵn cột dạng bài, thiếu các cột còn lại | Tra bảng phân tích của các phiếu đã học | Học theo hàng ngang, không học theo cột dọc. | Thứ tự thực hiện phép tính, tính chất phân phối · Kĩ thuật tính với số thập phân · Tính chất cơ bản của phân số; so sánh phân số · Tỉ số phần trăm; tìm giá trị phần trăm của một số… |
+| A.5 | Lập bảng dạng bài | Bảng phân tích chuyên sâu sáu cột | Bảng có sẵn cột dạng bài, thiếu các cột còn lại | Tra bảng phân tích của các phiếu đã học | Học theo hàng ngang, không học theo cột dọc. | So với 1 và với một nửa trước — nhiều phân số phân loại được ngay. · Sau hai năm với lãi suất a% thì số tiền bằng gốc nhân (100 + a) × (100 + a) rồi chia 10 000. · Nếu lượng dùng vượt hết các bậc thấp thì ba bậc đầu luôn cho cùng một số tiền — tính sẵn một lần rồi dùng lại. · So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay.… |
+| B.1 | Diện tích hình thang | Công thức diện tích hình thang | Đề cho hai đáy và chiều cao | Tổng hai đáy × chiều cao : 2 | Nếu tổng hai đáy là số chẵn thì chia 2 ngay từ đầu cho gọn. | 600 cm² · 854 cm² · 325 cm² · 854 cm² |
+| B.2 | Bốn phép tính với phân số | Quy đồng, nhân chia phân số | Biểu thức chỉ gồm phân số | Chọn quy tắc theo phép tính, rút gọn cuối cùng | Rút gọn chéo trước khi nhân để số nhỏ, tính nhanh và ít sai. | 25 phần 81 · 11 phần 5 · 3 phần 2 · 3 phần 2… |
+| B.3 | Đếm số hạng của dãy cách đều theo điều kiện chia hết | Dãy số cách đều, dấu hiệu chia hết | Cụm “có bao nhiêu số … từ … đến …” | Tìm số đầu, số cuối hợp lệ rồi dùng công thức đếm | Số các số chia hết cho d từ 1 đến n bằng phần nguyên của n : d, nên đếm từ a đến b là b : d trừ đi (a − 1) : d. | 25 · 80 · 109 · 165 |
+| B.4 | Ba dạng toán tỉ số phần trăm | Tỉ số phần trăm | Kí hiệu %, cụm “… % của …” | Xác định đại lượng ứng với 100% rồi chọn dạng | Coi 100% là “cả phần”, 1% là “cả phần chia 100” — mọi dạng đều quy về 1%. | 40 · 180 · 15% · 200 |
+| B.5 | Bốn phép tính với số thập phân | Kĩ thuật tính với số thập phân | Các số có dấu phẩy | Chọn quy tắc đặt dấu phẩy theo phép tính | Ước lượng bằng cách làm tròn để kiểm tra vị trí dấu phẩy. | 24,77 · 41,83 · 367,04 · 89,86… |
+| C.1 | Chu vi, diện tích trong tình huống thực tế | Công thức chu vi, diện tích; phép chia | Từ khoá “rào xung quanh”, “lát gạch”, “trồng cây quanh” | Đọc vị chu vi hay diện tích rồi tính | Nhìn đơn vị của đáp số: mét thì là chu vi, mét vuông thì là diện tích. | không chia hết (66 m không chia hết cho 5 m) · không chia hết (150 m không chia hết cho 4 m) · 403 viên · 81 cây… |
+| C.2 | Điền chữ số theo điều kiện chia hết | Dấu hiệu chia hết, chữ số hàng cao nhất khác 0 | Số có ô trống hoặc dấu *, kèm điều kiện chia hết | Dùng dấu hiệu để lập điều kiện cho dấu * rồi thử 0–9 | Với 3 và 9: tính tổng các chữ số đã biết một lần duy nhất, rồi tìm phần bù cần thêm. | không có chữ số nào · 2, 5, 8 · 0, 3, 6, 9 · không có chữ số nào… |
+| C.3 | Nhận dạng hình khối; thể tích, diện tích toàn phần | Đặc điểm hình hộp, lập phương, trụ, cầu | Đề hỏi số mặt, số cạnh, hoặc cho ba kích thước | Đếm theo nhóm; áp công thức thể tích | Tổng độ dài các cạnh = (dài + rộng + cao) × 4. | 6 mặt, 8 đỉnh, 12 cạnh · có ba kích thước bằng nhau, sáu mặt đều là hình vuông · 2 mặt đáy, đều là hình tròn bằng nhau · không có mặt đáy… |
+| C.4 | Tỉ số phần trăm trong mua bán | Tỉ số phần trăm, mốc quy chiếu 100% | Từ khoá “giảm giá”, “tăng giá”, “lãi”, “lỗ” | Chốt mốc 100% rồi cộng trừ phần trăm | Giảm 20% nghĩa là còn 80% — nhân thẳng một lần thay vì trừ hai bước. | 250 000 đồng · 15% · 190 000 đồng · 30%… |
+| C.5 | Diện tích các hình phẳng cơ bản | Công thức diện tích hình bình hành, hình thoi, hình tam giác | Đề cho đáy và chiều cao, hoặc hai đường chéo | Nhận dạng hình rồi chọn công thức | Tam giác bằng nửa hình bình hành cùng đáy cùng chiều cao. | 231 cm² · 384 cm² · 391 cm² · 240 cm²… |
+| D.1 | Đọc bảng số liệu thống kê | Thống kê mô tả sơ cấp, trung bình cộng, tỉ số phần trăm | Đề cho bảng hoặc biểu đồ kèm nhiều câu hỏi | Ghi lại số liệu, trả lời từng câu bằng công cụ tương ứng | Tính tổng một lần rồi dùng lại cho mọi câu hỏi phần trăm. | 77 · Toán (25 bạn) · Tiếng Việt (5 bạn) · 20… |
+| D.2 | Tỉ số phần trăm có lời văn | Tỉ số phần trăm | Cụm “chiếm bao nhiêu phần trăm”, “so với cả lớp” | Chốt đại lượng 100% rồi chọn dạng | Nếu tỉ số là 1 phần 4 thì bằng 25%; nhớ vài mốc quen để nhẩm. | 4 học sinh · 12 học sinh · 25 học sinh · 12 học sinh… |
+| D.3 | Biểu đồ Ven | Phép cộng, phép trừ; đếm không trùng lặp | Đề cho số người của từng nhóm **và** số người thuộc cả hai nhóm | Vẽ hai vòng tròn, điền phần chung trước rồi mới trừ ra phần riêng | Số người ít nhất một nhóm = nhóm A + nhóm B − phần chung. | 0 em · 1 em · 4 em · 6 em… |
+| D.4 | Đọc biểu đồ cột | Đọc biểu đồ; trung bình cộng; so sánh số | Biểu đồ có chú thích tỉ lệ, mỗi ô thay cho nhiều đơn vị | Đổi biểu đồ về dãy số rồi làm như bài số liệu thường | Ghi cả dãy số ra nháp một lần, mọi câu sau đều dùng lại dãy ấy. | Tháng 6 — 22 ngày · Tháng 7 — 6 ngày · 60 ngày · 60 : 5 = 12 ngày… |
+| D.5 | Chia tỉ lệ nhiều phần; bài toán trộn | Tỉ số, chia theo tỉ lệ, nhân với đơn giá | “Tỉ lệ với … , … , …” hoặc “trộn … với …” | Tổng số phần → giá trị một phần → nhân | Tổng luôn chia hết cho tổng số phần; không chia hết là đọc sai tỉ lệ. | 32 · 160 · 192 cây · 300 000 đồng · 400 000 đồng · 39 · 195 · 78 cây… |
 | E.1 | Ba dạng toán tỉ số phần trăm | Tỉ số phần trăm | Kí hiệu %, cụm “… % của …” | Xác định đại lượng ứng với 100% rồi chọn dạng | Coi 100% là “cả phần”, 1% là “cả phần chia 100” — mọi dạng đều quy về 1%. | Ba dạng toán tỉ số phần trăm · Kí hiệu %, cụm “… % của …” · Tỉ số phần trăm · Xác định đại lượng ứng với 100% rồi chọn dạng… |
 | E.2 | Rút gọn phân số | Tính chất cơ bản của phân số | Tử số và mẫu số có ước chung lớn hơn 1 | Chia cả tử và mẫu cho ước chung | Tìm ngay ước chung lớn nhất để rút gọn một lần là xong. | Rút gọn phân số · Tử số và mẫu số có ước chung lớn hơn 1 · Tính chất cơ bản của phân số · Chia cả tử và mẫu cho ước chung… |
 | E.3 | Bốn phép tính với số thập phân | Kĩ thuật tính với số thập phân | Các số có dấu phẩy | Chọn quy tắc đặt dấu phẩy theo phép tính | Ước lượng bằng cách làm tròn để kiểm tra vị trí dấu phẩy. | Bốn phép tính với số thập phân · Các số có dấu phẩy · Kĩ thuật tính với số thập phân · Chọn quy tắc đặt dấu phẩy theo phép tính… |
-| E.4 | Bốn phép tính với phân số | Quy đồng, nhân chia phân số | Biểu thức chỉ gồm phân số | Chọn quy tắc theo phép tính, rút gọn cuối cùng | Rút gọn chéo trước khi nhân để số nhỏ, tính nhanh và ít sai. | Bốn phép tính với phân số · Biểu thức chỉ gồm phân số · Quy đồng, nhân chia phân số · Chọn quy tắc theo phép tính, rút gọn cuối cùng… |
-| E.5 | Bài toán giảm giá và khuyến mãi | Tỉ số phần trăm; tìm giá trị phần trăm của một số | Đề nhắc **giảm giá**, **khuyến mãi**, và có thể giảm nhiều lần | Mỗi lần giảm nhân với (100 − a) rồi chia 100, làm lần lượt | Giảm 20% rồi 10% tương đương còn 80% × 90% = 72% giá gốc. | Bài toán giảm giá và khuyến mãi · Đề nhắc **giảm giá**, **khuyến mãi**, và có thể giảm nhiều lần · Tỉ số phần trăm; tìm giá trị phần trăm của một số · Mỗi lần giảm nhân với (100 − a) rồi chia 100, làm lần lượt… |
+| E.4 | Bài toán lãi suất tiết kiệm | Tỉ số phần trăm; tìm giá trị phần trăm của một số | Đề nhắc **gửi tiếp cả gốc lẫn lãi**, hoặc hỏi sau nhiều năm | Tính lần lượt từng kỳ, mỗi kỳ lãi tính trên số tiền cuối kỳ trước | Sau hai năm với lãi suất a% thì số tiền bằng gốc nhân (100 + a) × (100 + a) rồi chia 10 000. | Bài toán lãi suất tiết kiệm · Đề nhắc **gửi tiếp cả gốc lẫn lãi**, hoặc hỏi sau nhiều năm · Tỉ số phần trăm; tìm giá trị phần trăm của một số · Tính lần lượt từng kỳ, mỗi kỳ lãi tính trên số tiền cuối kỳ trước… |
+| E.5 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | So sánh phân số · Hai phân số nối bởi dấu … · Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu · Xét cùng mẫu → cùng tử → quy đồng… |
 
 ---
 
@@ -635,21 +637,21 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | A.3 | TD2, TD3 | Bảng chỉ có giá trị khi **đọc ngang được từng hàng**. |
 | A.4 | TD2, TD3 | Bảng chỉ có giá trị khi **đọc ngang được từng hàng**. |
 | A.5 | TD2, TD3 | Bảng chỉ có giá trị khi **đọc ngang được từng hàng**. |
-| B.1 | TD2, TD3 | Nhận đúng **dạng nào trong ba dạng** là xong một nửa bài. |
-| B.2 | TD2, TD3 | Càng nhiều người thì càng **ít** ngày — đại lượng biến đổi **ngược chiều**. |
-| B.3 | TD5, TD3 | Tách thừa số thành **tròn chục ± 1 đơn vị** rồi dùng nhân với một tổng, một hiệu. |
-| B.4 | TD1, TD3 | Cộng trừ thì **thẳng dấu phẩy**; nhân thì **đếm chữ số thập phân**. |
-| B.5 | TD1, TD3 | Cộng trừ **cần** quy đồng, nhân chia **không cần** quy đồng. |
-| C.1 | TD5, TD3 | Thuộc lòng bốn cặp tròn: **25 × 4**, **125 × 8**, **50 × 2**, **20 × 5**. |
-| C.2 | TD1, TD2 | Thêm vào thì thêm **số chia trừ số dư**, không phải thêm số dư. |
-| C.3 | TD1, TD3 | Đơn vị của **kết quả** quyết định ta đổi về đơn vị nào. |
-| C.4 | TD6, TD3 | Chia cho **hiệu** số bánh của hai loại, không chia cho số bánh của một loại. |
-| C.5 | TD2, TD6 | Phần trăm lãi tính theo **giá mua**, không theo giá bán. |
-| D.1 | TD2, TD3 | Xác định **đại lượng ứng với 100%** trước mọi phép tính. |
-| D.2 | TD2, TD4 | Con số đề cho cho mỗi môn **đã bao gồm** những em học cả hai. Cộng thẳng hai con số ấy là đếm phần chung hai lần. |
-| D.3 | TD2, TD3 | Phân số tính trên **số nào** — đọc kĩ cụm “… của …”. |
-| D.4 | TD3, TD5 | Đảo **cả phép tính lẫn thứ tự**. Đảo phép tính mà giữ nguyên thứ tự thì vẫn sai. |
-| D.5 | TD1, TD2 | Mọi câu hỏi đều quy về **tổng, so sánh, trung bình cộng, tỉ số phần trăm**. |
+| B.1 | TD1, TD3 | Cộng **hai đáy** trước rồi mới nhân chiều cao và chia 2. |
+| B.2 | TD1, TD3 | Cộng trừ **cần** quy đồng, nhân chia **không cần** quy đồng. |
+| B.3 | TD4, TD1 | Công thức có **+ 1** ở cuối; quên cộng 1 là sai một đơn vị. |
+| B.4 | TD2, TD3 | Nhận đúng **dạng nào trong ba dạng** là xong một nửa bài. |
+| B.5 | TD1, TD3 | Cộng trừ thì **thẳng dấu phẩy**; nhân thì **đếm chữ số thập phân**. |
+| C.1 | TD2, TD3 | “Xung quanh” → chu vi; “khắp mặt” → diện tích. |
+| C.2 | TD2, TD5 | Phải tìm **tất cả** chữ số thoả mãn, không dừng ở chữ số đầu tiên tìm được. |
+| C.3 | TD1, TD3 | 12 cạnh = **4 nhóm ba kích thước**, nên nhân 4 chứ không nhân 12. |
+| C.4 | TD2, TD6 | Phần trăm lãi tính theo **giá mua**, không theo giá bán. |
+| C.5 | TD1, TD3 | Hình bình hành **không** chia 2; hình tam giác và hình thoi **có** chia 2. |
+| D.1 | TD1, TD2 | Mọi câu hỏi đều quy về **tổng, so sánh, trung bình cộng, tỉ số phần trăm**. |
+| D.2 | TD2, TD3 | Xác định **đại lượng ứng với 100%** trước mọi phép tính. |
+| D.3 | TD2, TD4 | Con số đề cho cho mỗi môn **đã bao gồm** những em học cả hai. Cộng thẳng hai con số ấy là đếm phần chung hai lần. |
+| D.4 | TD1, TD2, TD4 | Một ô của biểu đồ hiếm khi bằng 1 đơn vị — đọc chú thích trước. |
+| D.5 | TD3, TD2 | Chia cho **tổng số phần**, không chia cho số đại lượng. |
 | E.1 | TD2, TD6 | Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**. |
 | E.2 | TD2, TD6 | Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**. |
 | E.3 | TD2, TD6 | Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**. |
@@ -669,26 +671,26 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 | A.3 | Điền từng cột rời rạc, không đối chiếu ngang. | Điền xong thì đọc lại theo hàng, mỗi hàng phải thành một câu có nghĩa. |
 | A.4 | Điền từng cột rời rạc, không đối chiếu ngang. | Điền xong thì đọc lại theo hàng, mỗi hàng phải thành một câu có nghĩa. |
 | A.5 | Điền từng cột rời rạc, không đối chiếu ngang. | Điền xong thì đọc lại theo hàng, mỗi hàng phải thành một câu có nghĩa. |
-| B.1 | Nhầm dạng 2 với dạng 3 nên nhân thay vì chia. | Gạch chân: cái gì là “toàn bộ” (ứng với 100%), cái gì là “một phần”. |
-| B.2 | Nhân chia như tỉ lệ thuận nên càng nhiều người lại càng lâu. | Ước lượng trước: kết quả phải lớn hơn hay bé hơn số ngày ban đầu? |
-| B.3 | Nhân với 10 rồi quên cộng hoặc trừ phần bù. | Viết luôn dấu ± và số bù ra bên cạnh trước khi nhân. |
-| B.4 | Nhân xong đặt dấu phẩy thẳng cột như phép cộng. | Đếm số chữ số sau dấu phẩy ngay khi viết đề bài. |
-| B.5 | Quy đồng cả khi nhân, hoặc cộng thẳng tử với tử và mẫu với mẫu. | Trước khi tính, khoanh dấu phép tính và tự nhắc “có phải quy đồng không”. |
-| C.1 | Nhân lần lượt từ trái sang phải nên số trung gian rất lớn. | Quét cả tích tìm cặp tròn trước khi đặt bút tính. |
-| C.2 | Nhầm “thêm bao nhiêu” với “bớt bao nhiêu”, cả hai đều lấy số dư. | Vẽ một hàng ô: phần dư còn thiếu bao nhiêu ô nữa thì đầy một suất? |
-| C.3 | Cộng số mét với số xăng-ti-mét mà chưa đổi. | Gạch chân đơn vị ở chỗ chấm rồi đổi mọi số hạng về đơn vị đó. |
-| C.4 | Chia số bánh thiếu cho số bánh của loại nhiều hơn. | Thử lại: nhân ngược ra tổng số bánh, phải khớp với đề. |
-| C.5 | Chia tiền lãi cho giá bán nên ra tỉ lệ nhỏ hơn thực tế. | Viết dòng đầu tiên: “Giá mua = 100%”. |
-| D.1 | Lấy số học sinh giỏi làm mẫu số khi tính tỉ số phần trăm. | Viết rõ một dòng: “Cả lớp = 100%” trước khi tính. |
-| D.2 | Lấy tổng trừ đi tổng hai con số đề cho mà không cộng lại phần chung. | Vẽ hình trước, điền phần giữa trước, rồi mới điền hai bên. |
-| D.3 | Nhân phân số với đại lượng khác, không phải đại lượng đề chỉ định. | Gạch chân cụm “bằng … số cây của …” để xác định số bị nhân. |
-| D.4 | Bắt đầu gỡ từ phép tính đầu tiên của đề thay vì từ phép tính cuối cùng. | Thử lại theo chiều xuôi. Bài này luôn thử lại được, nên không có lý do gì để nộp một đáp số chưa thử. |
-| D.5 | Đọc nhầm cột, hoặc quên một môn khi cộng tổng. | Đánh dấu từng số đã cộng để không sót và không cộng lặp. |
+| B.1 | Nhân riêng từng đáy với chiều cao rồi cộng, quên chia 2. | Viết công thức đầy đủ ra trước khi thay số. |
+| B.2 | Quy đồng cả khi nhân, hoặc cộng thẳng tử với tử và mẫu với mẫu. | Trước khi tính, khoanh dấu phép tính và tự nhắc “có phải quy đồng không”. |
+| B.3 | Lấy luôn hai đầu khoảng làm số đầu và số cuối của dãy dù chúng không thoả điều kiện. | Viết ra ba số đầu và ba số cuối của dãy trước khi áp công thức. |
+| B.4 | Nhầm dạng 2 với dạng 3 nên nhân thay vì chia. | Gạch chân: cái gì là “toàn bộ” (ứng với 100%), cái gì là “một phần”. |
+| B.5 | Nhân xong đặt dấu phẩy thẳng cột như phép cộng. | Đếm số chữ số sau dấu phẩy ngay khi viết đề bài. |
+| C.1 | Lấy chu vi để tính số gạch lát nền. | Gạch chân từ khoá chỉ vị trí: xung quanh, bao quanh, khắp, phủ kín. |
+| C.2 | Chỉ nêu một đáp số, hoặc nhận cả chữ số 0 ở hàng cao nhất. | Liệt kê đủ 10 chữ số ra nháp rồi gạch dần chữ số không đạt. |
+| C.3 | Nhân tổng ba kích thước với 12. | Đếm cạnh theo nhóm: 4 cạnh dài, 4 cạnh rộng, 4 cạnh cao. |
+| C.4 | Chia tiền lãi cho giá bán nên ra tỉ lệ nhỏ hơn thực tế. | Viết dòng đầu tiên: “Giá mua = 100%”. |
+| C.5 | Chia 2 cho hình bình hành, hoặc quên chia 2 cho hình tam giác. | Nhớ theo cặp: bình hành ↔ chữ nhật (không chia); tam giác ↔ nửa bình hành (chia 2). |
+| D.1 | Đọc nhầm cột, hoặc quên một môn khi cộng tổng. | Đánh dấu từng số đã cộng để không sót và không cộng lặp. |
+| D.2 | Lấy số học sinh giỏi làm mẫu số khi tính tỉ số phần trăm. | Viết rõ một dòng: “Cả lớp = 100%” trước khi tính. |
+| D.3 | Lấy tổng trừ đi tổng hai con số đề cho mà không cộng lại phần chung. | Vẽ hình trước, điền phần giữa trước, rồi mới điền hai bên. |
+| D.4 | Đếm số ô rồi trả lời luôn, quên nhân với giá trị mỗi ô. | Khoanh tròn dòng chú thích trước khi nhìn vào cột nào. |
+| D.5 | Chia tổng cho 3 vì thấy có ba tổ. | Đếm số phần trên sơ đồ trước khi chia. |
 | E.1 | Nhầm dạng 2 với dạng 3 nên nhân thay vì chia. | Gạch chân: cái gì là “toàn bộ” (ứng với 100%), cái gì là “một phần”. |
 | E.2 | Chỉ chia tử số hoặc chỉ chia mẫu số. | Viết phép chia cho cả hai dòng, kiểm tra lại bằng cách nhân ngược. |
 | E.3 | Nhân xong đặt dấu phẩy thẳng cột như phép cộng. | Đếm số chữ số sau dấu phẩy ngay khi viết đề bài. |
-| E.4 | Quy đồng cả khi nhân, hoặc cộng thẳng tử với tử và mẫu với mẫu. | Trước khi tính, khoanh dấu phép tính và tự nhắc “có phải quy đồng không”. |
-| E.5 | Cộng hai lần giảm giá thành một lần rồi tính một phép. | Viết ra giá sau lần giảm thứ nhất trước khi làm lần thứ hai. |
+| E.4 | Lấy lãi một năm nhân với hai. | So đáp số với cách nhân đôi lãi — kết quả đúng phải **lớn hơn**. |
+| E.5 | Thấy mẫu số lớn thì kết luận phân số lớn. | Nghĩ tới chiếc bánh: chia càng nhiều phần thì mỗi phần càng bé. |
 
 ---
 
@@ -701,21 +703,21 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 **Bài A.3** — (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 **Bài A.4** — (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 **Bài A.5** — (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
-**Bài B.1** — (1) Trong bài, số nào ứng với 100%? — (2) Đề hỏi tỉ số, hỏi giá trị của phần, hay hỏi toàn bộ? — (3) Chọn công thức của đúng dạng đó.
-**Bài B.2** — (1) Nhiều người hơn thì làm nhanh hơn hay chậm hơn? — (2) Tính tổng số ngày công: số người × số ngày. — (3) Chia tổng số ngày công cho số người mới.
-**Bài B.3** — (1) Thừa số kia gần số tròn nào? — (2) Viết nó thành số tròn cộng hoặc trừ mấy đơn vị. — (3) Nhân với số tròn trước rồi bù lại.
-**Bài B.4** — (1) Phép tính này là cộng trừ hay nhân chia? — (2) Cộng trừ thì viết thẳng dấu phẩy. — (3) Nhân thì đếm tổng số chữ số thập phân của các thừa số.
-**Bài B.5** — (1) Phép tính là cộng, trừ hay nhân, chia? — (2) Cộng trừ thì quy đồng mẫu số trước. — (3) Chia thì đổi thành nhân với phân số đảo ngược.
-**Bài C.1** — (1) Trong tích có 25, 125, 50 hay 20 không? — (2) Tìm thừa số ghép với nó cho tích tròn. — (3) Nhân cặp tròn trước, phần còn lại sau.
-**Bài C.2** — (1) Chia thử xem mỗi bạn được mấy cái, thừa mấy cái. — (2) Bớt đi thì bớt đúng phần thừa. — (3) Thêm vào thì thêm phần còn thiếu để đủ một suất nữa.
-**Bài C.3** — (1) Kết quả cần ghi theo đơn vị nào? — (2) Đổi mọi số hạng về đơn vị ấy. — (3) Tính như số tự nhiên rồi ghi đơn vị.
-**Bài C.4** — (1) Giả sử tất cả đều là loại ít bánh thì có bao nhiêu bánh? — (2) So với thực tế thì thiếu bao nhiêu bánh? — (3) Mỗi lần đổi một chiếc thì số bánh tăng thêm bao nhiêu?
-**Bài C.5** — (1) Số nào ứng với 100%? — (2) Số tiền chênh lệch là bao nhiêu? — (3) Chia số chênh lệch cho giá mua rồi nhân 100.
-**Bài D.1** — (1) Số nào ứng với 100%? — (2) Số nào là phần cần tính tỉ lệ? — (3) Lấy phần chia toàn bộ rồi nhân 100.
-**Bài D.2** — (1) Bao nhiêu em học cả hai môn? Điền số ấy vào phần chồng nhau. — (2) Vậy chỉ học riêng mỗi môn là bao nhiêu em? — (3) Cộng ba phần rồi lấy sĩ số lớp trừ đi.
-**Bài D.3** — (1) Phân số đó tính trên số nào? — (2) Chia số đó thành mấy phần bằng nhau? — (3) Lấy mấy phần trong số đó?
-**Bài D.4** — (1) Đề đã làm những phép tính nào, theo thứ tự nào? — (2) Phép nào làm sau cùng? Gỡ phép ấy trước tiên. — (3) Nhân thì gỡ bằng chia, cộng thì gỡ bằng trừ.
-**Bài D.5** — (1) Ghi lại các số liệu ra một hàng. — (2) Cộng tất cả để có tổng. — (3) So sánh để tìm lớn nhất và bé nhất.
+**Bài B.1** — (1) Tổng hai đáy bằng bao nhiêu? — (2) Nhân tổng đó với chiều cao. — (3) Chia kết quả cho 2.
+**Bài B.2** — (1) Phép tính là cộng, trừ hay nhân, chia? — (2) Cộng trừ thì quy đồng mẫu số trước. — (3) Chia thì đổi thành nhân với phân số đảo ngược.
+**Bài B.3** — (1) Số đầu tiên trong khoảng thoả điều kiện là số nào? — (2) Số cuối cùng trong khoảng thoả điều kiện là số nào? — (3) Số lượng = (cuối − đầu) : khoảng cách + 1.
+**Bài B.4** — (1) Trong bài, số nào ứng với 100%? — (2) Đề hỏi tỉ số, hỏi giá trị của phần, hay hỏi toàn bộ? — (3) Chọn công thức của đúng dạng đó.
+**Bài B.5** — (1) Phép tính này là cộng trừ hay nhân chia? — (2) Cộng trừ thì viết thẳng dấu phẩy. — (3) Nhân thì đếm tổng số chữ số thập phân của các thừa số.
+**Bài C.1** — (1) Việc cần làm diễn ra ở viền hay ở mặt trong? — (2) Ở viền thì tính chu vi, ở mặt trong thì tính diện tích. — (3) Chia cho kích thước của một đơn vị (một viên gạch, một khoảng cây).
+**Bài C.2** — (1) Số chia là 2 hay 5 thì chỉ cần xét chữ số tận cùng. — (2) Số chia là 3 hay 9 thì tính tổng các chữ số đã biết trước. — (3) Cộng thêm dấu * và tìm chữ số làm tổng chia hết cho số đó.
+**Bài C.3** — (1) Hình hộp có bao nhiêu cạnh? — (2) Các cạnh chia thành mấy nhóm bằng nhau? — (3) Mỗi nhóm có mấy cạnh?
+**Bài C.4** — (1) Số nào ứng với 100%? — (2) Số tiền chênh lệch là bao nhiêu? — (3) Chia số chênh lệch cho giá mua rồi nhân 100.
+**Bài C.5** — (1) Đây là hình gì? — (2) Viết công thức diện tích của hình đó. — (3) Kiểm tra xem công thức có chia 2 không.
+**Bài D.1** — (1) Ghi lại các số liệu ra một hàng. — (2) Cộng tất cả để có tổng. — (3) So sánh để tìm lớn nhất và bé nhất.
+**Bài D.2** — (1) Số nào ứng với 100%? — (2) Số nào là phần cần tính tỉ lệ? — (3) Lấy phần chia toàn bộ rồi nhân 100.
+**Bài D.3** — (1) Bao nhiêu em học cả hai môn? Điền số ấy vào phần chồng nhau. — (2) Vậy chỉ học riêng mỗi môn là bao nhiêu em? — (3) Cộng ba phần rồi lấy sĩ số lớp trừ đi.
+**Bài D.4** — (1) Mỗi ô trên biểu đồ thay cho mấy ngày? — (2) Đổi từng cột ra số ngày rồi ghi ra nháp thành một dãy. — (3) Trung bình cộng = tổng chia cho số tháng.
+**Bài D.5** — (1) Vẽ ba đoạn thẳng theo đúng số phần. — (2) Tổng cộng có bao nhiêu phần bằng nhau? — (3) Một phần bằng bao nhiêu?
 **Bài E.1** — (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
 **Bài E.2** — (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
 **Bài E.3** — (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
@@ -735,26 +737,26 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | A.3 | Cột “Phương pháp áp dụng” trả lời câu hỏi gì? | làm gì |
 | A.4 | Cột “Kiến thức phải thuộc” trả lời câu hỏi gì? | làm gì |
 | A.5 | Cột “Cách xử lý nhanh nhất” trả lời câu hỏi gì? | làm gì |
-| B.1 | Tìm 25% của 200. | 50 |
-| B.2 | 6 người làm xong trong 8 ngày. 12 người làm xong trong mấy ngày? | 4 ngày |
-| B.3 | Tính nhẩm: 46 × 11 | 506 |
-| B.4 | Tính: 3,25 × 4 | 13 |
-| B.5 | Tính: 2 phần 3 + 1 phần 6 | 5 phần 6 |
-| C.1 | Tính nhanh: 37 × 25 × 4 | 3 700 |
-| C.2 | Có 26 cái kẹo chia đều cho 5 bạn. Mỗi bạn mấy cái, thừa mấy cái? | 5 cái, thừa 1 cái |
-| C.3 | 2 m 30 cm + 150 cm = … cm | 380 |
-| C.4 | 10 xe đạp và ô tô, 28 bánh. Có mấy ô tô? | 4 ô tô |
-| C.5 | Hàng giá 500 000 đồng giảm 20%. Giá còn lại bao nhiêu? | 400 000 đồng |
-| D.1 | Lớp có 40 học sinh, 10 em giỏi. Học sinh giỏi chiếm bao nhiêu phần trăm? | 25% |
-| D.2 | Lớp có 40 em, 25 em học vẽ, 20 em học hát, 10 em học cả hai. Bao nhiêu em không học môn nào? | 5 em |
-| D.3 | Tổ Một trồng 60 cây, tổ Hai bằng 2 phần 3 tổ Một. Tổ Hai trồng mấy cây? | 40 cây |
-| D.4 | Một số nhân 3, cộng 7, chia 2 thì được 20. Tìm số ấy. | 11 |
-| D.5 | Bảng: Toán 10, Văn 6, Anh 4. Trung bình mỗi môn bao nhiêu bạn? | 6,67 bạn |
+| B.1 | Hình thang đáy 12 cm và 8 cm, cao 5 cm. Diện tích bằng bao nhiêu? | 50 cm² |
+| B.2 | Tính: 2 phần 3 + 1 phần 6 | 5 phần 6 |
+| B.3 | Có bao nhiêu số chẵn từ 10 đến 40? | 16 |
+| B.4 | Tìm 25% của 200. | 50 |
+| B.5 | Tính: 3,25 × 4 | 13 |
+| C.1 | Vườn dài 20 m rộng 10 m, rào xung quanh cần bao nhiêu mét rào? | 60 m |
+| C.2 | Tìm chữ số thay cho * để 12* chia hết cho 5. | 0, 5 |
+| C.3 | Hình lập phương cạnh 3 cm có diện tích toàn phần bao nhiêu? | 54 cm² |
+| C.4 | Hàng giá 500 000 đồng giảm 20%. Giá còn lại bao nhiêu? | 400 000 đồng |
+| C.5 | Tam giác đáy 10 cm, cao 6 cm. Diện tích bằng bao nhiêu? | 30 cm² |
+| D.1 | Bảng: Toán 10, Văn 6, Anh 4. Trung bình mỗi môn bao nhiêu bạn? | 6,67 bạn |
+| D.2 | Lớp có 40 học sinh, 10 em giỏi. Học sinh giỏi chiếm bao nhiêu phần trăm? | 25% |
+| D.3 | Lớp có 40 em, 25 em học vẽ, 20 em học hát, 10 em học cả hai. Bao nhiêu em không học môn nào? | 5 em |
+| D.4 | Bốn tháng có số ngày mưa 8, 12, 10, 14. Trung bình mỗi tháng bao nhiêu ngày mưa? | 11 ngày |
+| D.5 | Chia 120 cây theo tỉ lệ 1 : 2 : 3. Mỗi phần bao nhiêu cây? | 20, 40, 60 |
 | E.1 | Tìm 25% của 200. | 50 |
 | E.2 | Rút gọn 18 phần 24. | 3 phần 4 |
 | E.3 | Tính: 3,25 × 4 | 13 |
-| E.4 | Tính: 2 phần 3 + 1 phần 6 | 5 phần 6 |
-| E.5 | Áo giá 300 000 đồng, giảm 20% rồi giảm tiếp 10%. Giá cuối là bao nhiêu? | 216 000 đồng |
+| E.4 | Gửi 20 000 000 đồng, lãi 5% một năm, gửi tiếp cả gốc lẫn lãi. Sau hai năm có bao nhiêu tiền? | 22 050 000 đồng |
+| E.5 | So sánh: 3 phần 5 … 3 phần 7 | > |
 
 ---
 

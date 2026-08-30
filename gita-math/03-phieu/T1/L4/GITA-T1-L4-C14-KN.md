@@ -51,60 +51,60 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — CỦNG CỐ NỀN — 30 CÂU TỐC ĐỘ · Mức M1 — Nhận biết · 20 phút · 25 điểm
 
-### Bài 1. (5 điểm) Đơn vị đo thời gian: giờ và phút
-
-Điền kết quả, viết dạng giờ và phút.
-
-a) 5 giờ 43 phút = … phút
-b) 311 phút = … giờ … phút
-c) 6 giờ 9 phút − 284 phút = … (viết dạng giờ và phút)
-d) 2 giờ 7 phút + 106 phút = … (viết dạng giờ và phút)
-e) 2 giờ 32 phút = … phút
-f) 2 giờ 9 phút − 41 phút = … (viết dạng giờ và phút)
-
-### Bài 2. (5 điểm) Đổi đơn vị đo độ dài và khối lượng
+### Bài 1. (5 điểm) Đổi đơn vị đo độ dài và khối lượng
 
 Điền số thích hợp vào chỗ chấm.
 
-a) 46 kg = … g
-b) 83 dm = … mm
-c) 5 yến = … hg
-d) 46 km = … dm
-e) 85 kg = … g
-f) 30 cm = … mm
-g) 12 tấn = … yến
-h) 30 hm = … dm
+a) 40 yến = … g
+b) 17 km = … m
+c) 72 tấn = … tạ
+d) 43 hm = … dam
+e) 3 tạ = … yến
 
-### Bài 3. (5 điểm) Quãng đường – vận tốc – thời gian
+### Bài 2. (5 điểm) Đơn vị đo thời gian: giờ và phút
 
-Ghi rõ đơn vị của từng đại lượng.
+Điền kết quả, viết dạng giờ và phút.
 
-a) Một người đi quãng đường 200 km với vận tốc 50 km/giờ. Tính thời gian đi.
-b) Một người đi 240 km hết 4 giờ. Tính vận tốc.
-c) Một người đi xe đạp với vận tốc 36 km/giờ trong 6 giờ. Tính quãng đường đi được.
-d) Một người đi quãng đường 90 km với vận tốc 30 km/giờ. Tính thời gian đi.
-e) Một người đi 180 km hết 4 giờ. Tính vận tốc.
-f) Một người đi xe đạp với vận tốc 4 km/giờ trong 3 giờ. Tính quãng đường đi được.
-g) Một người đi 360 km hết 6 giờ. Tính vận tốc.
+a) 229 phút = … giờ … phút
+b) 3 giờ 55 phút = … phút
+c) 8 giờ 35 phút − 479 phút = … (viết dạng giờ và phút)
+d) 1 giờ 45 phút + 86 phút = … (viết dạng giờ và phút)
+e) 7 giờ 45 phút = … phút
+f) 9 giờ 56 phút + 200 phút = … (viết dạng giờ và phút)
 
-### Bài 4. (5 điểm) Đổi đơn vị đo diện tích
+### Bài 3. (5 điểm) Đổi đơn vị đo diện tích
 
 Điền số thích hợp.
 
-a) 9 ha = … m²
-b) 39 m² = … cm²
-c) 51 dm² = … cm²
-d) 2 km² = … m²
+a) 48 dm² = … cm²
+b) 22 m² = … cm²
+c) 80 ha = … m²
+d) 81 km² = … ha
+e) 79 m² = … cm²
+
+### Bài 4. (5 điểm) Quãng đường – vận tốc – thời gian
+
+Ghi rõ đơn vị của từng đại lượng.
+
+a) Một người đi 108 km hết 3 giờ. Tính vận tốc.
+b) Một người đi xe đạp với vận tốc 36 km/giờ trong 5 giờ. Tính quãng đường đi được.
+c) Một người đi quãng đường 150 km với vận tốc 50 km/giờ. Tính thời gian đi.
+d) Một người đi quãng đường 180 km với vận tốc 60 km/giờ. Tính thời gian đi.
+e) Một người đi 120 km hết 3 giờ. Tính vận tốc.
+f) Một người đi xe đạp với vận tốc 50 km/giờ trong 4 giờ. Tính quãng đường đi được.
+g) Một người đi 15 km hết 3 giờ. Tính vận tốc.
 
 ### Bài 5. (5 điểm) Đổi số đo khối lượng có nhiều đơn vị
 
 Điền vào chỗ chấm.
 
-a) 3 tấn 5 tạ 21 kg = … kg
-b) 487 kg = … tấn … tạ … kg
-c) 6 tạ 28 kg = … kg
-d) 1 094 kg = … tấn … tạ … kg
-e) 3 888 kg = … tấn … tạ … kg
+a) 5 024 kg = … tấn … tạ … kg
+b) 3 555 kg = … tấn … tạ … kg
+c) 6 tấn 6 tạ 45 kg = … kg
+d) 223 kg = … tấn … tạ … kg
+e) 1 tấn 3 tạ 78 kg = … kg
+f) 6 tấn 5 tạ 74 kg = … kg
+g) 3 tấn 8 tạ 26 kg = … kg
 
 ---
 
@@ -336,31 +336,31 @@ f) Mẹo nhanh em sẽ tặng lớp?
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài A.1
-**Đáp số:** a) 343 · b) 5 giờ 11 phút · c) 1 giờ 25 phút · d) 3 giờ 53 phút · e) 152 · f) 1 giờ 28 phút
-**Hướng giải:** BẪY — Cơ số 60 chứ không phải 10. 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
-**Lỗi thường gặp:** Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. Phòng: Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không.
-
-### Bài A.2
-**Đáp số:** a) 46 000 · b) 8 300 · c) 500 · d) 460 000 · e) 85 000 · f) 300 · g) 1 200 · h) 30 000
+**Đáp số:** a) 400 000 · b) 17 000 · c) 720 · d) 430 · e) 30
 **Hướng giải:** BẪY — Chiều đổi đơn vị. Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
 **Nhãn tư duy:** TD1. Điểm chốt: Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
 **Lỗi thường gặp:** Đổi ngược chiều nên nhân thành chia. Phòng: Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.
 
-### Bài A.3
-**Đáp số:** a) 4 giờ · b) 60 km/giờ · c) 216 km · d) 3 giờ · e) 45 km/giờ · f) 12 km · g) 60 km/giờ
-**Hướng giải:** Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng kia.
-**Lỗi thường gặp:** Vận tốc km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
+### Bài A.2
+**Đáp số:** a) 3 giờ 49 phút · b) 235 · c) 36 phút · d) 3 giờ 11 phút · e) 465 · f) 13 giờ 16 phút
+**Hướng giải:** BẪY — Cơ số 60 chứ không phải 10. 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
+**Lỗi thường gặp:** Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. Phòng: Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không.
 
-### Bài A.4
-**Đáp số:** a) 90 000 · b) 390 000 · c) 5 100 · d) 2 000 000
+### Bài A.3
+**Đáp số:** a) 4 800 · b) 220 000 · c) 800 000 · d) 8 100 · e) 790 000
 **Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần** (chứ không phải 10 lần như đơn vị độ dài), vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc.
 **Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết bảng đơn vị diện tích riêng, ghi rõ “×100” giữa hai bậc.
 
+### Bài A.4
+**Đáp số:** a) 36 km/giờ · b) 180 km · c) 3 giờ · d) 3 giờ · e) 40 km/giờ · f) 200 km · g) 5 km/giờ
+**Hướng giải:** Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng kia.
+**Lỗi thường gặp:** Vận tốc km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
+
 ### Bài A.5
-**Đáp số:** a) 3 521 · b) 4 tạ 87 kg · c) 628 · d) 1 tấn 94 kg · e) 3 tấn 8 tạ 88 kg
+**Đáp số:** a) 5 tấn 24 kg · b) 3 tấn 5 tạ 55 kg · c) 6 645 · d) 2 tạ 23 kg · e) 1 378 · f) 6 574 · g) 3 826
 **Hướng giải:** 1 tấn = 10 tạ = 1 000 kg; 1 tạ = 100 kg; 1 yến = 10 kg. Đổi tất cả về ki-lô-gam rồi cộng lại; hoặc ngược lại, chia dần từ đơn vị lớn xuống đơn vị bé và lấy phần dư.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Đổi hết về **một đơn vị chung** trước khi cộng.
 **Lỗi thường gặp:** Cộng thẳng các số đứng trước những đơn vị khác nhau. Phòng: Viết mỗi thành phần thành số ki-lô-gam ngay bên dưới rồi mới cộng.

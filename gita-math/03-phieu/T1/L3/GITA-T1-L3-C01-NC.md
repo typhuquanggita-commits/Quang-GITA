@@ -52,112 +52,117 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN I — KHỞI ĐỘNG · NỀN CHẮC · Mức M1 — Nhận biết · 12 phút · 15 điểm
 
-### Bài 1. (3 điểm) Quy tắc cộng, quy tắc nhân và phép đếm có phần chung
-
-Đọc kĩ chữ “và” hay chữ “hoặc”.
-
-a) Có 11 quyển sách Toán và 5 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một quyển Toán và một quyển Tiếng Việt**?
-b) Trên bàn có 3 quyển sách Toán và 5 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một** quyển sách bất kì?
-c) Lớp có 6 bạn giỏi Toán, 5 bạn giỏi Tiếng Việt, trong đó 5 bạn giỏi cả hai môn. Hỏi có bao nhiêu bạn giỏi ít nhất một môn?
-d) Có 7 quyển sách Toán và 7 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một quyển Toán và một quyển Tiếng Việt**?
-e) Lớp có 7 bạn giỏi Toán, 9 bạn giỏi Tiếng Việt, trong đó 2 bạn giỏi cả hai môn. Hỏi có bao nhiêu bạn giỏi ít nhất một môn?
-
-### Bài 2. (3 điểm) Đặt tính rồi tính (nhân, chia)
-
-Đặt tính rồi tính.
-
-a) 771 × 6
-b) 743 × 4
-c) 982 : 2
-d) 7 176 : 8
-e) 1 932 : 2
-
-### Bài 3. (3 điểm) Tìm thành phần chưa biết của phép tính
+### Bài 1. (3 điểm) Tìm thành phần chưa biết của phép tính
 
 Tìm x.
 
-a) x − 4 = 25
-b) x + 4 = 41
-c) x + 3 = 35
-d) x − 6 = 22
-e) x − 5 = 30
-f) x + 7 = 41
+a) x − 7 = 47
+b) x × 3 = 81
+c) x − 8 = 84
+d) x + 4 = 61
+e) x : 3 = 43
 
-### Bài 4. (3 điểm) Đặt tính rồi tính (cộng, trừ)
-
-Đặt tính rồi tính.
-
-a) 898 − 242
-b) 125 + 961
-c) 195 + 842
-d) 566 + 151
-e) 873 + 419
-
-### Bài 5. (3 điểm) Tính giá trị biểu thức
+### Bài 2. (3 điểm) Tính giá trị biểu thức
 
 Tính giá trị của mỗi biểu thức.
 
-a) 51 × 9 + 51 × 8
-b) 27 × (2 + 8)
-c) 28 + 4 × 4
-d) 46 + 2 × 2
-e) (31 + 3) × 9
-f) 58 × (8 + 4)
-g) 66 − 6 × 7
-h) (22 + 3) × 2
+a) 28 × 9 + 28 × 6
+b) 53 − 8 × 2
+c) 56 − 2 × 3
+d) 27 × 2 + 27 × 5
+e) 24 + 8 × 9
+
+### Bài 3. (3 điểm) Đặt tính rồi tính (nhân, chia)
+
+Đặt tính rồi tính.
+
+a) 365 × 5
+b) 522 × 4
+c) 501 × 8
+d) 1 940 : 5
+e) 2 562 : 7
+f) 151 × 3
+g) 717 × 3
+
+### Bài 4. (3 điểm) Đếm hình trong lưới ô vuông
+
+Đếm có hệ thống, không đếm mò.
+
+a) Lưới ô vuông gồm 4 hàng và 2 cột ô vuông nhỏ. Có tất cả bao nhiêu ô vuông nhỏ?
+b) Có bao nhiêu hình chữ nhật (kể cả hình vuông) trong lưới đó?
+c) Có bao nhiêu hình vuông trong lưới đó?
+d) Nếu mỗi ô vuông nhỏ có cạnh 1 cm thì chu vi cả lưới bằng bao nhiêu?
+e) Diện tích cả lưới bằng bao nhiêu?
+
+### Bài 5. (3 điểm) Đặt tính rồi tính (cộng, trừ)
+
+Đặt tính rồi tính.
+
+a) 479 + 520
+b) 863 − 861
+c) 844 − 829
+d) 310 + 55
+e) 670 + 651
 
 ---
 
 ## PHẦN II — LUYỆN CHUẨN · THÀNH THẠO · Mức M2 — Thông hiểu · 15 phút · 20 điểm
 
-### Bài 1. (4 điểm) Trồng cây và chia đoạn — năm trường hợp
-
-Vẽ một hình nhỏ ba khoảng để kiểm tra trước khi áp công thức.
-
-a) Cưa một khúc gỗ dài 120 m thành các đoạn dài 4 m. Phải cưa bao nhiêu nhát?
-b) Đoạn đường dài 110 m, cây cách nhau 5 m, chỉ trồng ở một đầu. Cần bao nhiêu cây?
-c) Quanh một hồ nước có chu vi 150 m, trồng cây cách nhau 6 m. Cần bao nhiêu cây?
-d) Đoạn đường dài 48 m, trồng cây cách nhau 2 m, trồng cả ở hai đầu. Cần bao nhiêu cây?
-e) Đoạn đường dài 192 m, cây cách nhau 6 m, không trồng ở cả hai đầu. Cần bao nhiêu cây?
-
-### Bài 2. (4 điểm) Tổng – hiệu bằng sơ đồ đoạn thẳng
-
-Vẽ sơ đồ trước, tính sau. Không vẽ thì không được tính.
-
-a) Chi và Hà có tất cả 46 viên bi. Chi có nhiều hơn Hà 8 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
-b) Bình và An có tất cả 142 viên bi. Bình có nhiều hơn An 16 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
-c) Trang và Minh có tất cả 162 viên bi. Trang có nhiều hơn Minh 26 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
-d) Nam và Chi có tất cả 164 viên bi. Nam có nhiều hơn Chi 28 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
-
-### Bài 3. (4 điểm) Tính nhanh bằng cách ghép số tròn
+### Bài 1. (4 điểm) Tính nhanh bằng cách ghép số tròn
 
 Tính bằng cách thuận tiện nhất.
 
-a) 105 + 86 − 86
-b) 15 + 271 + 85
-c) 17 + 137 + 83
-d) 84 + 360 + 16
+a) 149 + 59 − 59
+b) 69 + 180 + 31
+c) 303 + 46 − 46
+d) 195 + 50 − 50
 
-### Bài 4. (4 điểm) Nhân, chia với số có một chữ số
+### Bài 2. (4 điểm) Nhân, chia với số có một chữ số
 
 Đặt tính rồi tính.
 
-a) 853 × 9
-b) 1 923 : 2
-c) 4 023 : 9
-d) 2 140 : 4
-e) 2 605 : 4
+a) 750 × 4
+b) 3 681 : 9
+c) 3 954 : 9
+d) 2 715 : 4
+e) 508 × 9
+f) 1 868 : 4
+g) 525 : 2
+h) 5 024 : 8
 
-### Bài 5. (4 điểm) Đổi đơn vị đo ở lớp 3
+### Bài 3. (4 điểm) Trung bình cộng trong tình huống thực tế
 
-Điền số thích hợp.
+Giải từng bài toán nhỏ.
 
-a) 5 l = … ml
-b) 25 kg = … g
-c) 38 cm = … mm
-d) 90 m = … cm
-e) 59 km = … m
-f) 39 l = … ml
+a) 3 ngày đầu tuần một cửa hàng bán được lần lượt 305, 289, 303 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
+b) Trung bình mỗi ngày cửa hàng bán được 67 kg gạo. 2 ngày đầu bán được 65, 63 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
+c) Trung bình mỗi ngày cửa hàng bán được 237 kg gạo. 3 ngày đầu bán được 246, 229, 236 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
+d) Trung bình mỗi ngày cửa hàng bán được 231 kg gạo. 4 ngày đầu bán được 242, 232, 222, 229 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
+e) Trung bình mỗi ngày bán được 142 kg gạo. Hỏi 6 ngày bán được tất cả bao nhiêu ki-lô-gam?
+
+### Bài 4. (4 điểm) Đọc và lập biểu đồ tranh
+
+Biểu đồ tranh số chiếc bút của bốn bạn — mỗi hình ● ứng với **10 chiếc bút**:
+
+Bình: ●●●●●●● · Yến: ●● · Khánh: ●●●●●●●● · Ngọc: ●●●●
+
+a) Mỗi hình ● ứng với 10 chiếc bút. Bạn Bình có bao nhiêu chiếc bút?
+b) Bạn Yến có bao nhiêu chiếc bút?
+c) Cả bốn bạn có tất cả bao nhiêu chiếc bút?
+d) Bạn nào có nhiều chiếc bút nhất?
+e) Bạn nào có ít chiếc bút nhất?
+f) Bạn nhiều nhất hơn bạn ít nhất bao nhiêu chiếc bút?
+g) Nếu một bạn có 60 chiếc bút thì phải vẽ mấy hình ●?
+
+### Bài 5. (4 điểm) Nhẩm tiền khi đi chợ
+
+Ba món trong giỏ: **đậu phụ** 12 500 đồng · **trứng gà** 53 500 đồng · **cá** 31 000 đồng.
+
+a) Làm tròn giá từng món đến hàng chục nghìn để nhẩm cho nhanh.
+b) Cộng các giá đã làm tròn, được tổng ước lượng là bao nhiêu?
+c) Tính tổng đúng bằng cách cộng các giá gốc.
+d) Tổng ước lượng lệch bao nhiêu so với tổng đúng?
+e) Người mua đưa tờ 100 000 đồng. Người bán phải trả lại bao nhiêu?
 
 ---
 
@@ -167,128 +172,135 @@ f) 39 l = … ml
 
 Vẽ hai vòng tròn giao nhau và điền số vào từng miền.
 
-a) Lớp có 34 học sinh. Có 10 bạn thích môn Toán, 21 bạn thích môn Tiếng Việt, 3 bạn thích cả hai môn. Hỏi bao nhiêu bạn thích ít nhất một trong hai môn?
+a) Lớp có 32 học sinh. Có 14 bạn thích môn Toán, 19 bạn thích môn Tiếng Việt, 4 bạn thích cả hai môn. Hỏi bao nhiêu bạn thích ít nhất một trong hai môn?
 b) Bao nhiêu bạn chỉ thích môn Toán?
 c) Bao nhiêu bạn chỉ thích môn Tiếng Việt?
 d) Bao nhiêu bạn không thích môn nào trong hai môn đó?
 e) Nếu cộng thẳng số bạn thích Toán với số bạn thích Tiếng Việt thì được bao nhiêu?
 f) Con số vừa cộng lớn hơn số bạn thích ít nhất một môn bao nhiêu? Vì sao?
 
-### Bài 2. (5 điểm) Tìm quy luật của dãy số
+### Bài 2. (5 điểm) Suy luận bằng bảng loại trừ
 
-Tìm quy luật rồi viết số hạng tiếp theo.
+Ba bạn Đức, Sơn, Vy mỗi bạn thích đúng một loại quả khác nhau trong ba loại xoài, cam, lê. Biết **Đức thích xoài** và **Sơn không thích lê**.
 
-a) 1, 2, 4, 7, 11, …
-b) 5, 13, 21, 29, 37, …
-c) 3, 9, 27, 81, 243, …
-d) 5, 6, 8, 11, 15, …
+a) Kẻ bảng ba hàng, ba cột. Dấu ✔ đầu tiên đặt vào ô nào?
+b) Sau dấu ✔ đó, cột xoài còn ô nào có thể đúng không?
+c) Dữ kiện thứ hai cho đánh ✘ vào ô nào?
+d) Vậy Sơn thích quả gì?
+e) Vậy Vy thích quả gì?
 
-### Bài 3. (5 điểm) Tính nhanh bằng cách quan sát
+### Bài 3. (5 điểm) Bài toán giải bằng hai phép tính
 
-Tính bằng cách thuận tiện nhất.
+Trình bày lời giải có câu trả lời cho từng bước.
 
-a) 3 × 335 × 0
-b) 162 + 35 − 35
-c) 55 + 248 + 45
-d) 155 + 27 − 27
+a) Nhóm Sao Mai trồng được 19 cây. Tổ Một trồng được gấp 4 lần nhóm Sao Mai. Hỏi cả hai tổ trồng được bao nhiêu cây?
+b) Tổ Một trồng được 32 cây. Đội Hai trồng được gấp 5 lần tổ Một. Hỏi cả hai tổ trồng được bao nhiêu cây?
+c) Tổ Hai trồng được 29 cây. Đội Một trồng được gấp 5 lần tổ Hai. Hỏi cả hai tổ trồng được bao nhiêu cây?
+d) Tổ Hai trồng được 45 cây. Nhóm Sao Mai trồng được gấp 3 lần tổ Hai. Hỏi cả hai tổ trồng được bao nhiêu cây?
 
 ### Bài 4. (5 điểm) Tính giá trị biểu thức
 
 Tính giá trị của mỗi biểu thức.
 
-a) (68 + 2) × 6
-b) 265 : 5 − 7
-c) 51 + 6 × 9
-d) 84 + 7 × 9
-e) 65 : 5 − 9
-f) (70 + 6) × 4
+a) 61 + 5 × 6
+b) 90 : 5 − 4
+c) (44 + 8) × 2
+d) 29 + 5 × 8
+e) (79 + 8) × 4
+f) 180 : 4 − 3
+g) 82 + 8 × 6
+h) (27 + 6) × 2
 
-### Bài 5. (5 điểm) Phủ hình và chia hình thành phần bằng nhau
+### Bài 5. (5 điểm) Tính nhanh bằng cách quan sát
 
-Vẽ hình và kẻ lưới ra nháp.
+Tính bằng cách thuận tiện nhất.
 
-a) Một hình chữ nhật 6 cm × 4 cm được phủ kín bằng các hình vuông cạnh 1 cm. Cần bao nhiêu hình vuông?
-b) Diện tích hình chữ nhật ấy bằng bao nhiêu?
-c) Diện tích mỗi hình vuông nhỏ bằng bao nhiêu?
-d) Chia hình chữ nhật ấy thành 2 phần bằng nhau thì mỗi phần có diện tích bao nhiêu?
-e) Chia thành 4 phần bằng nhau thì mỗi phần bao nhiêu?
-f) Nếu ghép hai hình chữ nhật ấy theo chiều dài thì hình mới có chu vi bao nhiêu?
+a) 34 + 199 + 66
+b) 120 + 21 − 21
+c) 8 × 271 × 0
+d) 245 + 76 − 76
+e) 18 + 390 + 82
+f) 9 × 38 × 0
 
 ---
 
 ## PHẦN IV — VẬN DỤNG CAO · Mức M4 — Vận dụng cao · 25 phút · 25 điểm
 
-### Bài 1. (5 điểm) Lấy ít nhất bao nhiêu để chắc chắn
+### Bài 1. (5 điểm) Tìm số khi biết một phần mấy của nó
 
-Xét trường hợp xấu nhất.
+Làm ngược lại phép chia.
 
-a) Trong hộp có bút thuộc 5 màu khác nhau, mỗi màu rất nhiều chiếc. Phải lấy ít nhất bao nhiêu chiếc (không nhìn) để chắc chắn có 2 chiếc cùng màu?
-b) Trong hộp có bút thuộc 2 màu khác nhau, mỗi màu rất nhiều chiếc. Phải lấy ít nhất bao nhiêu chiếc (không nhìn) để chắc chắn có 2 chiếc cùng màu?
-c) Trong hộp có bút thuộc 2 màu khác nhau, mỗi màu rất nhiều chiếc. Phải lấy ít nhất bao nhiêu chiếc (không nhìn) để chắc chắn có 4 chiếc cùng màu?
-d) Trong hộp có bút thuộc 2 màu khác nhau, mỗi màu rất nhiều chiếc. Phải lấy ít nhất bao nhiêu chiếc (không nhìn) để chắc chắn có 2 chiếc cùng màu?
+a) Có 95 quyển vở, đã dùng 1 phần 5 số vở. Còn lại bao nhiêu quyển?
+b) Số 26 bằng một phần mấy số 130?
+c) Biết 1 phần 4 của một số là 12. Tìm số đó.
+d) Có 16 quyển vở, đã dùng 1 phần 4 số vở. Còn lại bao nhiêu quyển?
+e) Số 6 bằng một phần mấy số 18?
+f) Biết 1 phần 3 của một số là 28. Tìm số đó.
+g) Biết 1 phần 2 của một số là 10. Tìm số đó.
 
-### Bài 2. (5 điểm) Cân đĩa và số lần cân ít nhất
+### Bài 2. (5 điểm) Tìm một số khi biết một phần mấy của nó
 
-Xét trường hợp xấu nhất, không xét trường hợp may mắn.
+Làm ngược lại phép chia.
 
-a) Có 12 gói kẹo giống hệt nhau, trong đó đúng một gói nhẹ hơn. Dùng cân đĩa không có quả cân, cần cân ít nhất mấy lần để tìm ra gói nhẹ?
-b) Một lần cân bằng cân đĩa cho mấy kết quả khác nhau?
-c) Vì thế mỗi lần cân nên chia số gói thành mấy phần?
-d) Sau lần cân thứ nhất, số gói còn phải xét nhiều nhất là bao nhiêu?
-e) Biết Khánh nặng hơn Bình, Bình nặng hơn Sơn. Ai nhẹ nhất?
-f) Với ba bạn ấy, cần cân ít nhất mấy lần để xếp thứ tự từ nhẹ đến nặng?
+a) Biết 1 phần 6 của một số là 22. Tìm số đó.
+b) Biết 1 phần 4 của một số là 32. Tìm số đó.
+c) Biết 1 phần 6 của một số là 38. Tìm số đó.
+d) Biết 1 phần 6 của một số là 24. Tìm số đó.
+e) Biết 1 phần 2 của một số là 16. Tìm số đó.
+f) Biết 1 phần 2 của một số là 21. Tìm số đó.
 
 ### Bài 3. (5 điểm) Tính nhanh bằng cách tách số
 
 Nêu rõ cách tách trước khi tính.
 
-a) 77 × 9
-b) 56 + 44 + 20
-c) 71 × 11
-d) 67 × 11
-e) 14 × 9
-f) 25 + 75 + 87
+a) 52 + 48 + 59
+b) 48 × 9
+c) 90 × 11
+d) 34 + 66 + 16
+e) 79 × 11
+f) 71 × 9
 
-### Bài 4. (5 điểm) Tìm số khi biết một phần mấy của nó
-
-Làm ngược lại phép chia.
-
-a) Số 9 bằng một phần mấy số 36?
-b) Có 44 quyển vở, đã dùng 1 phần 2 số vở. Còn lại bao nhiêu quyển?
-c) Biết 1 phần 2 của một số là 15. Tìm số đó.
-d) Biết 1 phần 5 của một số là 10. Tìm số đó.
-e) Số 21 bằng một phần mấy số 63?
-f) Có 46 quyển vở, đã dùng 1 phần 2 số vở. Còn lại bao nhiêu quyển?
-
-### Bài 5. (5 điểm) Tìm x qua hai bước
+### Bài 4. (5 điểm) Tìm x qua hai bước
 
 Tìm x, trình bày từng bước.
 
-a) x : 2 + 8 = 24
-b) x × 5 + 61 = 151
-c) x × 3 − 84 = 81
-d) 72 − x = 16
+a) x × 8 + 19 = 451
+b) x : 5 + 67 = 94
+c) 55 − x = 31
+d) x × 9 − 13 = 63
+e) x × 8 + 8 = 240
+
+### Bài 5. (5 điểm) Tìm hai số khi biết tổng và hiệu
+
+Vẽ sơ đồ đoạn thẳng rồi giải.
+
+a) Tuấn và Quân có tất cả 40 quyển vở. Tuấn có nhiều hơn Quân 6 quyển. Hỏi mỗi bạn có bao nhiêu quyển vở?
+b) Chi và Vy có tất cả 120 quyển vở. Chi có nhiều hơn Vy 8 quyển. Hỏi mỗi bạn có bao nhiêu quyển vở?
+c) An và Hà có tất cả 174 quyển vở. An có nhiều hơn Hà 24 quyển. Hỏi mỗi bạn có bao nhiêu quyển vở?
+d) Ngọc và Hà có tất cả 144 quyển vở. Ngọc có nhiều hơn Hà 10 quyển. Hỏi mỗi bạn có bao nhiêu quyển vở?
+e) Hùng và Đức có tất cả 66 quyển vở. Hùng có nhiều hơn Đức 6 quyển. Hỏi mỗi bạn có bao nhiêu quyển vở?
+f) An và Nam có tất cả 192 quyển vở. An có nhiều hơn Nam 12 quyển. Hỏi mỗi bạn có bao nhiêu quyển vở?
 
 ---
 
 ## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
 
-### Bài 1. (3 điểm) Cân đĩa và quả cân
+### Bài 1. (3 điểm) Tổng – hiệu khi hiệu bị giấu sau một lần chuyển
 
-Suy nghĩ theo số lần chứa.
+Chú ý: chuyển đi thì bên này giảm, bên kia tăng.
 
-a) Một chiếc cân đĩa chỉ có các quả cân loại 200 g. Muốn cân một vật nặng 600 g thì cần bao nhiêu quả cân như thế?
-b) Một chiếc cân đĩa chỉ có các quả cân loại 200 g. Muốn cân một vật nặng 800 g thì cần bao nhiêu quả cân như thế?
-c) Một chiếc cân đĩa chỉ có các quả cân loại 500 g. Muốn cân một vật nặng 1 000 g thì cần bao nhiêu quả cân như thế?
-d) Một chiếc cân đĩa chỉ có các quả cân loại 500 g. Muốn cân một vật nặng 3 000 g thì cần bao nhiêu quả cân như thế?
-e) Một chiếc cân đĩa chỉ có các quả cân loại 200 g. Muốn cân một vật nặng 400 g thì cần bao nhiêu quả cân như thế?
-f) Một chiếc cân đĩa chỉ có các quả cân loại 200 g. Muốn cân một vật nặng 1 000 g thì cần bao nhiêu quả cân như thế?
+a) Trang và Vy có tất cả 190 quyển vở. Nếu Trang cho Vy 18 quyển thì hai bạn có số vở bằng nhau. Hỏi lúc đầu Trang có bao nhiêu quyển?
+b) Sau khi cho, mỗi bạn có bao nhiêu quyển vở?
+c) Lúc đầu Vy có bao nhiêu quyển vở?
+d) Lúc đầu Trang hơn Vy bao nhiêu quyển?
+e) Một tổ có 3 bạn, mỗi bạn gấp được 12 bông hoa trong một giờ. Hỏi cả tổ gấp được bao nhiêu bông hoa trong một giờ?
+f) Cả tổ phải gấp 108 bông hoa thì làm trong mấy giờ?
 
 ### Bài 2. (3 điểm) Đại lượng bất biến: tính chẵn lẻ của tổng
 
 Tìm cho ra thứ **không đổi** qua mỗi bước.
 
-a) Trên bảng viết các số từ 1 đến 28. Tổng của chúng bằng bao nhiêu?
+a) Trên bảng viết các số từ 1 đến 17. Tổng của chúng bằng bao nhiêu?
 b) Mỗi bước, xoá hai số bất kì và viết thay vào **tổng** của chúng. Tổng các số trên bảng có thay đổi không?
 c) Sau nhiều bước chỉ còn một số. Số đó bằng bao nhiêu?
 d) Nếu mỗi bước thay hai số bằng **hiệu** của chúng thì tổng giảm đi bao nhiêu?
@@ -300,32 +312,30 @@ g) Số cuối cùng ấy có thể bằng 0 không?
 
 Tính tổng mỗi dãy bằng cách ghép cặp.
 
-a) 1 + 2 + 3 + … + 50
-b) 1 + 2 + 3 + … + 20
-c) 1 + 2 + 3 + … + 10
+a) 1 + 2 + 3 + … + 10
+b) 1 + 2 + 3 + … + 50
+c) 1 + 2 + 3 + … + 100
 d) 1 + 2 + 3 + … + 25
-e) 1 + 2 + 3 + … + 100
-f) 1 + 2 + 3 + … + 25
 
 ### Bài 4. (3 điểm) Tính nhanh tổng dãy số cách đều
 
 Ghép cặp rồi tính.
 
-a) 1 + 2 + 3 + … + 50
-b) 2 + 4 + 6 + … + 40
-c) 5 + 10 + 15 + … + 50
+a) 5 + 10 + 15 + … + 100
+b) 1 + 2 + 3 + … + 10
+c) 5 + 10 + 15 + … + 250
 d) 1 + 2 + 3 + … + 25
-e) 5 + 10 + 15 + … + 50
 
-### Bài 5. (3 điểm) Bài toán gà và chó
+### Bài 5. (3 điểm) Một phần mấy qua hai bước — chú ý “số còn lại”
 
-Giả sử tất cả đều là gà rồi lập luận.
+Đọc kĩ: phân số ở bước hai tính trên số nào?
 
-a) Vừa gà vừa chó có 32 con, đếm được 84 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
-b) Vừa gà vừa chó có 9 con, đếm được 28 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
-c) Vừa gà vừa chó có 28 con, đếm được 74 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
-d) Vừa gà vừa chó có 19 con, đếm được 64 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
-e) Vừa gà vừa chó có 24 con, đếm được 54 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
+a) Có 108 quyển vở. Ngày đầu phát 1 phần 3 số vở. Ngày đầu phát bao nhiêu quyển?
+b) Sau ngày đầu còn lại bao nhiêu quyển?
+c) Ngày thứ hai phát 1 phần 2 **số vở còn lại**. Ngày thứ hai phát bao nhiêu quyển?
+d) Sau hai ngày còn lại bao nhiêu quyển?
+e) Cả hai ngày phát tất cả bao nhiêu quyển?
+f) Nếu ngày thứ hai cũng phát 1 phần 2 của **tổng ban đầu** thì phát bao nhiêu quyển?
 
 ---
 
@@ -334,164 +344,164 @@ e) Vừa gà vừa chó có 24 con, đếm được 54 chân. Hỏi có bao nhi�
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài I.1
-**Đáp số:** a) 55 cách · b) 8 cách · c) 6 bạn · d) 49 cách · e) 14 bạn
-**Hướng giải:** Chọn **một trong hai nhóm rời nhau** thì cộng. Chọn **mỗi nhóm một phần tử** thì nhân. Khi hai nhóm có phần tử chung, số phần tử thuộc ít nhất một nhóm bằng tổng hai nhóm trừ đi phần chung (vì phần chung đã bị đếm hai lần).
-**Nhãn tư duy:** TD2, TD6. Điểm chốt: Có phần chung thì phải **trừ đi một lần** phần chung.
-**Lỗi thường gặp:** Cộng thẳng hai nhóm khi chúng có phần tử chung. Phòng: Vẽ hai vòng tròn giao nhau, ghi số vào từng miền.
-
-### Bài I.2
-**Đáp số:** a) 4 626 · b) 2 972 · c) 491 · d) 897 · e) 966
-**Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
-**Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
-**Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
-
-### Bài I.3
-**Đáp số:** a) x = 29 · b) x = 37 · c) x = 32 · d) x = 28 · e) x = 35 · f) x = 34
+**Đáp số:** a) x = 54 · b) x = 27 · c) x = 92 · d) x = 57 · e) x = 129
 **Hướng giải:** Nhớ quy tắc: số hạng chưa biết = tổng − số hạng đã biết; số bị trừ = hiệu + số trừ; thừa số chưa biết = tích : thừa số đã biết; số bị chia = thương × số chia.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: x đứng ở **vị trí nào** trong phép tính quyết định quy tắc dùng.
 **Lỗi thường gặp:** Áp dụng nhầm quy tắc của số trừ cho số bị trừ. Phòng: Gọi tên x trước (x là số hạng? số bị trừ? thừa số?) rồi mới viết quy tắc.
 
-### Bài I.4
-**Đáp số:** a) 656 · b) 1 086 · c) 1 037 · d) 717 · e) 1 292
-**Hướng giải:** Viết các số thẳng hàng theo đúng hàng đơn vị, cộng hoặc trừ từ phải sang trái, nhớ sang hàng liền trước khi tổng vượt quá 9 hoặc khi phải mượn.
-**Nhãn tư duy:** TD1. Điểm chốt: Thẳng hàng **đơn vị**, không thẳng theo chữ số đầu.
-**Lỗi thường gặp:** Viết lệch hàng khi hai số có số chữ số khác nhau. Phòng: Kẻ cột dọc cho từng hàng trước khi viết số.
-
-### Bài I.5
-**Đáp số:** a) 867 · b) 270 · c) 44 · d) 50 · e) 306 · f) 696 · g) 24 · h) 50
+### Bài I.2
+**Đáp số:** a) 420 · b) 37 · c) 50 · d) 189 · e) 96
 **Hướng giải:** Trong biểu thức không có dấu ngoặc: nhân và chia làm trước, cộng và trừ làm sau; cùng mức thì làm từ trái sang phải. Có dấu ngoặc thì làm trong ngoặc trước.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Dấu ngoặc **đảo ngược** thứ tự ưu tiên — nhìn ngoặc trước khi tính.
 **Lỗi thường gặp:** Cộng trước nhân khi biểu thức không có ngoặc. Phòng: Gạch chân phép nhân, phép chia trước khi bắt đầu tính.
 
+### Bài I.3
+**Đáp số:** a) 1 825 · b) 2 088 · c) 4 008 · d) 388 · e) 366 · f) 453 · g) 2 151
+**Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
+**Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
+**Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+
+### Bài I.4
+**Đáp số:** a) 8 · b) 30 · c) 11 · d) 12 cm · e) 8 cm²
+**Hướng giải:** Một hình chữ nhật trong lưới được xác định bởi hai đường kẻ ngang và hai đường kẻ dọc. Lưới m hàng có m + 1 đường ngang, n cột có n + 1 đường dọc, nên số hình chữ nhật bằng số cách chọn hai đường ngang nhân số cách chọn hai đường dọc. Đếm hình vuông thì đếm theo từng cỡ cạnh.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Đếm **theo cỡ** hoặc **theo đường kẻ**, tuyệt đối không đếm ngẫu nhiên.
+**Lỗi thường gặp:** Chỉ đếm các ô vuông nhỏ, quên các hình ghép từ nhiều ô. Phòng: Kẻ bảng theo cỡ hình: cỡ 1×1, 1×2, 2×2… rồi cộng.
+
+### Bài I.5
+**Đáp số:** a) 999 · b) 2 · c) 15 · d) 365 · e) 1 321
+**Hướng giải:** Viết các số thẳng hàng theo đúng hàng đơn vị, cộng hoặc trừ từ phải sang trái, nhớ sang hàng liền trước khi tổng vượt quá 9 hoặc khi phải mượn.
+**Nhãn tư duy:** TD1. Điểm chốt: Thẳng hàng **đơn vị**, không thẳng theo chữ số đầu.
+**Lỗi thường gặp:** Viết lệch hàng khi hai số có số chữ số khác nhau. Phòng: Kẻ cột dọc cho từng hàng trước khi viết số.
+
 ### Bài II.1
-**Đáp số:** a) 29 · b) 22 · c) 25 · d) 25 · e) 31
-**Hướng giải:** Tính **số khoảng** trước: độ dài chia khoảng cách. Rồi chọn công thức theo trường hợp — trồng cả hai đầu thì cộng 1, một đầu thì bằng, không đầu nào thì trừ 1, khép kín thì bằng, cưa thành đoạn thì trừ 1.
-**Nhãn tư duy:** TD3, TD6. Điểm chốt: Năm trường hợp cho **năm đáp số khác nhau** với cùng một số khoảng.
-**Lỗi thường gặp:** Máy móc cộng 1 cho mọi trường hợp. Phòng: Vẽ hình ba khoảng, đếm tay rồi mới áp dụng cho số lớn.
-
-### Bài II.2
-**Đáp số:** a) Chi: 27 viên, Hà: 19 viên · b) Bình: 79 viên, An: 63 viên · c) Trang: 94 viên, Minh: 68 viên · d) Nam: 96 viên, Chi: 68 viên
-**Hướng giải:** Vẽ hai đoạn thẳng, đoạn dài hơn đúng phần hiệu. Bớt phần hiệu đi thì hai đoạn bằng nhau; chia đôi tổng mới ra số bé, cộng hiệu ra số lớn.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: **Bớt hiệu rồi mới chia đôi** — đảo thứ tự là sai.
-**Lỗi thường gặp:** Chia đôi tổng ngay rồi cộng hiệu vào cả hai số. Phòng: Tô phần hiệu bằng bút khác màu trên sơ đồ.
-
-### Bài II.3
-**Đáp số:** a) 105 · b) 371 · c) 237 · d) 460
+**Đáp số:** a) 149 · b) 280 · c) 303 · d) 195
 **Hướng giải:** Dùng tính chất giao hoán và kết hợp của phép cộng để đổi chỗ, nhóm những số cộng lại thành số tròn chục, tròn trăm rồi mới cộng phần còn lại.
 **Nhãn tư duy:** TD5, TD3. Điểm chốt: Tìm **cặp cộng tròn 100** trước khi cộng theo thứ tự.
 **Lỗi thường gặp:** Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. Phòng: Đọc lướt cả dãy, khoanh tròn cặp số cộng lại tròn chục, tròn trăm.
 
-### Bài II.4
-**Đáp số:** a) 7 677 · b) 961 dư 1 · c) 447 · d) 535 · e) 651 dư 1
+### Bài II.2
+**Đáp số:** a) 3 000 · b) 409 · c) 439 dư 3 · d) 678 dư 3 · e) 4 572 · f) 467 · g) 262 dư 1 · h) 628
 **Hướng giải:** Nhân từ hàng đơn vị sang trái, nhớ sang hàng liền trước. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. Số dư luôn bé hơn số chia.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là bắt buộc viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
 
+### Bài II.3
+**Đáp số:** a) 299 kg · b) 73 kg · c) 237 kg · d) 230 kg · e) 852 kg
+**Hướng giải:** Ba dạng ngược nhau: biết các số tìm trung bình cộng (cộng rồi chia); biết trung bình cộng tìm tổng (nhân); biết trung bình cộng và một số số hạng, tìm số hạng còn thiếu (lấy tổng trừ đi các số đã biết).
+**Nhãn tư duy:** TD2, TD3. Điểm chốt: Từ trung bình cộng luôn tìm được **tổng** trước, rồi mới tính tiếp.
+**Lỗi thường gặp:** Đi tìm ngay số còn thiếu mà chưa tính tổng. Phòng: Bước đầu tiên luôn viết: “Tổng = trung bình cộng × số ngày”.
+
+### Bài II.4
+**Đáp số:** a) 70 · b) 20 · c) 210 · d) Khánh (80) · e) Yến (20) · f) 60 · g) 6 hình
+**Hướng giải:** Việc đầu tiên khi đọc biểu đồ tranh là đọc **chú thích**: mỗi hình ứng với bao nhiêu đơn vị. Sau đó nhân số hình với số ấy. Muốn lập biểu đồ thì làm ngược lại: chia số thật cho số đơn vị mỗi hình.
+**Nhãn tư duy:** TD1, TD2. Điểm chốt: Mỗi hình **không phải một đơn vị** — phải đọc chú thích trước.
+**Lỗi thường gặp:** Đếm số hình rồi trả lời luôn, quên nhân với số đơn vị mỗi hình. Phòng: Khoanh tròn dòng chú thích trước khi trả lời bất kỳ câu nào.
+
 ### Bài II.5
-**Đáp số:** a) 5 000 · b) 25 000 · c) 380 · d) 9 000 · e) 59 000 · f) 39 000
-**Hướng giải:** 1 km = 1 000 m; 1 m = 100 cm; 1 cm = 10 mm; 1 kg = 1 000 g; 1 l = 1 000 ml. Đổi từ đơn vị lớn sang đơn vị bé thì nhân.
-**Nhãn tư duy:** TD1. Điểm chốt: Nhớ đúng **số lần** giữa hai đơn vị.
-**Lỗi thường gặp:** Nhầm 1 m = 10 cm. Phòng: Học thuộc bảng năm quan hệ trên và đọc lại trước khi làm.
+**Đáp số:** a) đậu phụ: 10 000 · trứng gà: 50 000 · cá: 30 000 · b) 90 000 · c) 97 000 · d) 7 000 đồng · e) 3 000 đồng
+**Hướng giải:** Làm tròn từng giá đến hàng chục nghìn để cộng nhẩm, rồi cộng lại số gốc để có tổng đúng. Hai con số ấy dùng vào hai việc khác nhau: một để biết đủ tiền không, một để trả tiền.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Ước lượng và tính đúng là hai việc khác nhau, đừng lẫn.
+**Lỗi thường gặp:** Lấy tổng đã làm tròn ra trả tiền. Phòng: Nhẩm xong luôn hỏi: con số này để ước chừng hay để trả tiền?
 
 ### Bài III.1
-**Đáp số:** a) 28 · b) 7 · c) 18 · d) 6 · e) 31 · f) 3, vì nhóm thích cả hai môn bị đếm hai lần
+**Đáp số:** a) 29 · b) 10 · c) 15 · d) 3 · e) 33 · f) 4, vì nhóm thích cả hai môn bị đếm hai lần
 **Hướng giải:** Vẽ sơ đồ Ven hai vòng tròn. **Điền miền giữa trước**, rồi trừ ra hai miền riêng. Cộng thẳng hai nhóm sẽ đếm nhóm chung **hai lần**, nên phải trừ đi một lần.
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Điền **miền giữa trước** — mọi miền khác suy ra từ đó.
 **Lỗi thường gặp:** Cộng thẳng hai nhóm rồi coi đó là số bạn thích ít nhất một môn. Phòng: Vẽ sơ đồ Ven, ghi số vào từng miền rồi cộng lại kiểm tra với sĩ số.
 
 ### Bài III.2
-**Đáp số:** a) 16 · b) 45 · c) 729 · d) 20
-**Hướng giải:** Thử theo thứ tự: (1) lấy hiệu hai số liên tiếp — bằng nhau thì là dãy cách đều; (2) lấy thương — bằng nhau thì là dãy nhân; (3) xem dãy hiệu có tăng đều không.
-**Nhãn tư duy:** TD4, TD6. Điểm chốt: Thử đủ **ba hướng**, đừng dừng ở hướng thứ nhất.
-**Lỗi thường gặp:** Không tìm ra hiệu đều thì bỏ cuộc. Phòng: Viết dãy hiệu xuống ngay dưới dãy gốc.
+**Đáp số:** a) ô (Đức; xoài) · b) không · c) ô (Sơn; lê) · d) cam · e) lê
+**Hướng giải:** Kẻ bảng tên người × loại quả. Mỗi dữ kiện cho một dấu ✔ hoặc ✘. Sau mỗi dấu ✔, gạch bỏ toàn bộ hàng và toàn bộ cột chứa nó. Khi một hàng chỉ còn một ô trống thì ô đó là ✔.
+**Nhãn tư duy:** TD2, TD6. Điểm chốt: Mỗi dấu ✔ **lan toả** ra cả hàng và cả cột.
+**Lỗi thường gặp:** Suy luận nhẩm trong đầu nên bỏ sót khả năng. Phòng: Luôn kẻ bảng, dù bài trông dễ.
 
 ### Bài III.3
-**Đáp số:** a) 0 · b) 162 · c) 348 · d) 155
-**Hướng giải:** Trước khi tính, hãy nhìn cả biểu thức: có cặp nào cộng lại tròn trăm không, có thừa số 0 không, có hai số giống nhau cộng rồi trừ không. Nhận ra được thì viết đáp số gần như ngay lập tức.
-**Nhãn tư duy:** TD5, TD6. Điểm chốt: **Nhìn trước, tính sau** — đó là toàn bộ bí quyết tính nhanh.
-**Lỗi thường gặp:** Lao vào tính từ trái sang phải, bỏ lỡ mọi lối tắt. Phòng: Đọc hết biểu thức một lượt trước khi đặt bút.
+**Đáp số:** a) 95 cây · b) 192 cây · c) 174 cây · d) 180 cây
+**Hướng giải:** Bước 1: tìm đại lượng chưa biết bằng quan hệ gấp – kém. Bước 2: cộng hai đại lượng lại theo yêu cầu của đề. Mỗi bước phải có một câu lời giải riêng.
+**Nhãn tư duy:** TD2, TD3. Điểm chốt: Câu hỏi cuối hỏi **cả hai tổ**, nên phải cộng ở bước hai.
+**Lỗi thường gặp:** Dừng lại ở bước một, trả lời số cây của một tổ. Phòng: Đọc lại câu hỏi sau khi tính xong bước một.
 
 ### Bài III.4
-**Đáp số:** a) 420 · b) 46 · c) 105 · d) 147 · e) 4 · f) 304
+**Đáp số:** a) 91 · b) 14 · c) 104 · d) 69 · e) 348 · f) 42 · g) 130 · h) 66
 **Hướng giải:** Không có ngoặc: nhân chia trước, cộng trừ sau, cùng mức thì từ trái sang phải. Có ngoặc: làm trong ngoặc trước.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Dấu ngoặc **đảo ngược** thứ tự ưu tiên.
 **Lỗi thường gặp:** Cộng trước nhân khi biểu thức không có ngoặc. Phòng: Gạch chân phép nhân, phép chia trước khi tính.
 
 ### Bài III.5
-**Đáp số:** a) 24 · b) 24 cm² · c) 1 cm² · d) 12 cm² · e) 6 cm² · f) 28 cm
-**Hướng giải:** Số mảnh phủ kín bằng diện tích hình lớn chia diện tích một mảnh — nhưng chỉ đúng khi các mảnh **xếp khít không thừa**. Kiểm tra lại bằng cách đếm số hàng và số cột.
-**Nhãn tư duy:** TD3, TD4. Điểm chốt: Phép chia diện tích chỉ đúng khi mảnh **xếp khít**.
-**Lỗi thường gặp:** Chia chu vi cho cạnh mảnh thay vì chia diện tích cho diện tích. Phòng: Kẻ lưới lên hình và đếm thử một hàng.
+**Đáp số:** a) 299 · b) 120 · c) 0 · d) 245 · e) 490 · f) 0
+**Hướng giải:** Trước khi tính, hãy nhìn cả biểu thức: có cặp nào cộng lại tròn trăm không, có thừa số 0 không, có hai số giống nhau cộng rồi trừ không. Nhận ra được thì viết đáp số gần như ngay lập tức.
+**Nhãn tư duy:** TD5, TD6. Điểm chốt: **Nhìn trước, tính sau** — đó là toàn bộ bí quyết tính nhanh.
+**Lỗi thường gặp:** Lao vào tính từ trái sang phải, bỏ lỡ mọi lối tắt. Phòng: Đọc hết biểu thức một lượt trước khi đặt bút.
 
 ### Bài IV.1
-**Đáp số:** a) 6 chiếc · b) 3 chiếc · c) 7 chiếc · d) 3 chiếc
-**Hướng giải:** BẪY — Trường hợp xấu nhất. Xấu nhất là mỗi màu lấy được đúng (số cần − 1) chiếc mà vẫn chưa đủ. Lấy thêm một chiếc nữa thì chắc chắn có đủ số chiếc cùng màu.
-**Nhãn tư duy:** TD6, TD2. Điểm chốt: Luôn xuất phát từ **trường hợp xấu nhất** rồi cộng thêm 1.
-**Lỗi thường gặp:** Nhân số màu với số chiếc cần rồi lấy luôn kết quả. Phòng: Viết rõ câu “Xấu nhất là mỗi màu lấy được … chiếc mà vẫn chưa đủ”.
-**Gợi ý 3 tầng:** (1) Xấu nhất mỗi màu lấy được mấy chiếc mà vẫn chưa đủ? — (2) Tổng cộng lấy được bao nhiêu chiếc? — (3) Lấy thêm một chiếc nữa thì sao?
+**Đáp số:** a) 76 quyển · b) 1 phần 5 · c) 48 · d) 12 quyển · e) 1 phần 3 · f) 84 · g) 20
+**Hướng giải:** BẪY — Nhân chứ không chia. Biết một phần thì **nhân** với mẫu số để ra cả số; biết cả số thì **chia** để ra một phần. Bài hỏi phần còn lại thì phải trừ ở bước cuối.
+**Nhãn tư duy:** TD3, TD2. Điểm chốt: Biết một phần thì nhân; biết cả số thì chia.
+**Lỗi thường gặp:** Chia thay vì nhân khi đã biết giá trị một phần. Phòng: Kiểm tra: số tìm được phải **lớn hơn** số đã cho.
+**Gợi ý 3 tầng:** (1) Số đó chia thành mấy phần bằng nhau? — (2) Mỗi phần bằng bao nhiêu? — (3) Cả số gồm mấy phần như thế?
 
 ### Bài IV.2
-**Đáp số:** a) 3 lần · b) 3 kết quả: nghiêng trái, nghiêng phải, thăng bằng · c) 3 phần · d) 4 · e) Sơn · f) 2 lần
-**Hướng giải:** BẪY — Chia ba chứ không chia đôi. Mỗi lần cân bằng cân đĩa cho ba kết quả, nên chia ba chứ không chia đôi. Sau k lần cân phân biệt được nhiều nhất 3 nhân với chính nó k lần vật. Luôn lập luận theo **trường hợp xấu nhất**.
-**Nhãn tư duy:** TD6, TD2. Điểm chốt: Cân đĩa cho **ba** kết quả nên chia ba, không chia đôi.
-**Lỗi thường gặp:** Chia đôi như tìm kiếm thông thường nên cần nhiều lần cân hơn mức cần thiết. Phòng: Nhớ ba kết quả: nghiêng trái, nghiêng phải, thăng bằng.
-**Gợi ý 3 tầng:** (1) Một lần cân cho mấy kết quả? — (2) Vậy nên chia số gói thành mấy phần? — (3) Sau mỗi lần cân còn lại nhiều nhất bao nhiêu gói?
+**Đáp số:** a) 132 · b) 128 · c) 228 · d) 144 · e) 32 · f) 42
+**Hướng giải:** BẪY — Nhân chứ không chia. Nếu một phần mấy của một số bằng a thì số đó bằng a nhân với mẫu số. Vì số đó được chia thành mấy phần bằng nhau, mỗi phần bằng a.
+**Nhãn tư duy:** TD3, TD2. Điểm chốt: Biết một phần thì **nhân** để ra cả số; biết cả số thì **chia** để ra một phần.
+**Lỗi thường gặp:** Chia thay vì nhân. Phòng: Kiểm tra: số tìm được phải **lớn hơn** số đã cho.
+**Gợi ý 3 tầng:** (1) Số đó được chia thành mấy phần bằng nhau? — (2) Mỗi phần bằng bao nhiêu? — (3) Cả số gồm mấy phần như thế?
 
 ### Bài IV.3
-**Đáp số:** a) 693 · b) 120 · c) 781 · d) 737 · e) 126 · f) 187
+**Đáp số:** a) 159 · b) 432 · c) 990 · d) 116 · e) 869 · f) 639
 **Hướng giải:** Đưa thừa số về số tròn chục rồi bù trừ: × 9 = × 10 rồi bớt một lần; × 11 = × 10 rồi thêm một lần. Với phép cộng thì tìm cặp cộng lại tròn trăm.
 **Nhãn tư duy:** TD5, TD3. Điểm chốt: Tách về **số tròn** rồi bù — nhân với số tròn bao giờ cũng dễ hơn.
 **Lỗi thường gặp:** Nhân với 10 rồi quên bù trừ phần chênh. Phòng: Viết luôn dấu cộng hoặc trừ và số bù ra bên cạnh trước khi nhân.
 **Gợi ý 3 tầng:** (1) Thừa số kia gần số tròn nào? — (2) Viết nó thành số tròn cộng hoặc trừ mấy đơn vị. — (3) Nhân với số tròn trước rồi bù lại.
 
 ### Bài IV.4
-**Đáp số:** a) 1 phần 4 · b) 22 quyển · c) 30 · d) 50 · e) 1 phần 3 · f) 23 quyển
-**Hướng giải:** BẪY — Nhân chứ không chia. Biết một phần thì **nhân** với mẫu số để ra cả số; biết cả số thì **chia** để ra một phần. Bài hỏi phần còn lại thì phải trừ ở bước cuối.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Biết một phần thì nhân; biết cả số thì chia.
-**Lỗi thường gặp:** Chia thay vì nhân khi đã biết giá trị một phần. Phòng: Kiểm tra: số tìm được phải **lớn hơn** số đã cho.
-**Gợi ý 3 tầng:** (1) Số đó chia thành mấy phần bằng nhau? — (2) Mỗi phần bằng bao nhiêu? — (3) Cả số gồm mấy phần như thế?
-
-### Bài IV.5
-**Đáp số:** a) x = 32 · b) x = 18 · c) x = 55 · d) x = 56
+**Đáp số:** a) x = 54 · b) x = 135 · c) x = 24 · d) x = 76 : 9 · e) x = 29
 **Hướng giải:** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
 **Nhãn tư duy:** TD3. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
 **Lỗi thường gặp:** Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. Phòng: Khoanh tròn cụm chứa x rồi coi cả cụm là một số.
 **Gợi ý 3 tầng:** (1) Khoanh cụm chứa x, coi là một số. — (2) Cụm đó là số hạng, số bị trừ hay thừa số? — (3) Tìm giá trị của cụm rồi tìm x.
 
+### Bài IV.5
+**Đáp số:** a) Tuấn: 23 quyển, Quân: 17 quyển · b) Chi: 64 quyển, Vy: 56 quyển · c) An: 99 quyển, Hà: 75 quyển · d) Ngọc: 77 quyển, Hà: 67 quyển · e) Hùng: 36 quyển, Đức: 30 quyển · f) An: 102 quyển, Nam: 90 quyển
+**Hướng giải:** Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
+**Nhãn tư duy:** TD3, TD2. Điểm chốt: Bớt hiệu rồi mới chia đôi — thứ tự không được đảo.
+**Lỗi thường gặp:** Chia đôi tổng ngay rồi cộng hiệu vào cả hai số. Phòng: Vẽ sơ đồ và tô phần hiệu bằng bút khác màu.
+**Gợi ý 3 tầng:** (1) Vẽ hai đoạn thẳng, đoạn nào dài hơn? — (2) Bớt phần hơn đi thì tổng còn lại bao nhiêu? — (3) Chia đôi tổng mới để ra số bé.
+
 ### Bài V.1
-**Đáp số:** a) 3 quả · b) 4 quả · c) 2 quả · d) 6 quả · e) 2 quả · f) 5 quả
-**Hướng giải:** BẪY — Phép chia có dư. Số quả cân cần dùng bằng khối lượng của vật chia cho khối lượng một quả cân. Nếu chia không hết thì không thể cân chính xác bằng loại quả cân đó.
-**Nhãn tư duy:** TD2, TD6. Điểm chốt: Chia không hết nghĩa là **không cân được** bằng loại quả cân ấy.
-**Lỗi thường gặp:** Làm tròn lên rồi coi như cân được. Phòng: Kiểm tra phép chia có dư hay không trước khi kết luận.
-**Gợi ý 3 tầng:** (1) Một quả cân nặng bao nhiêu? — (2) Vật nặng gấp mấy lần một quả cân? — (3) Phép chia có dư không?
+**Đáp số:** a) 113 quyển · b) 95 quyển · c) 77 quyển · d) 36 quyển · e) 36 bông · f) 3 giờ
+**Hướng giải:** BẪY — Hiệu thay đổi gấp đôi số chuyển. Tổng không đổi khi chuyển qua lại, nên sau khi cho, mỗi bạn có nửa tổng. Từ đó đi ngược lại: cộng phần đã cho để ra số lúc đầu. Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển.
+**Nhãn tư duy:** TD6, TD3. Điểm chốt: Tổng là đại lượng **bất biến**; hiệu đổi gấp đôi số chuyển.
+**Lỗi thường gặp:** Cho rằng hiệu lúc đầu bằng đúng số vở đã chuyển. Phòng: Thử lại: cộng trừ ra hai số lúc đầu rồi kiểm tra cả tổng và hiệu.
+**Gợi ý 3 tầng:** (1) Khi chuyển vở qua lại, tổng số vở có đổi không? — (2) Sau khi cho, mỗi bạn có bao nhiêu quyển? — (3) Đi ngược lại: lúc đầu bạn cho có nhiều hơn bấy nhiêu quyển.
 
 ### Bài V.2
-**Đáp số:** a) 406 · b) không thay đổi · c) 406 · d) giảm đi 2 lần số bé — luôn là một số chẵn · e) không thay đổi · f) chẵn · g) có
-**Hướng giải:** Chìa khoá là tìm một đại lượng **không đổi** qua mỗi bước. Ở đây là tính chẵn lẻ của tổng: mỗi bước tổng giảm đi một số chẵn nên tính chẵn lẻ giữ nguyên từ đầu đến cuối.
+**Đáp số:** a) 153 · b) không thay đổi · c) 153 · d) giảm đi 2 lần số bé — luôn là một số chẵn · e) không thay đổi · f) lẻ · g) không
+**Hướng giải:** BẪY — Phải chứng minh, không được thử vài trường hợp. Chìa khoá là tìm một đại lượng **không đổi** qua mỗi bước. Ở đây là tính chẵn lẻ của tổng: mỗi bước tổng giảm đi một số chẵn nên tính chẵn lẻ giữ nguyên từ đầu đến cuối.
 **Nhãn tư duy:** TD6, TD2. Điểm chốt: Tìm đại lượng **bất biến** rồi so trạng thái đầu với trạng thái cuối.
 **Lỗi thường gặp:** Thử vài trường hợp rồi kết luận, không chứng minh được cho mọi cách làm. Phòng: Sau khi đoán, kiểm tra: đại lượng đó đổi thế nào sau **một** bước?
 **Gợi ý 3 tầng:** (1) Sau mỗi bước, tổng các số trên bảng đổi bao nhiêu? — (2) Lượng thay đổi ấy là số chẵn hay số lẻ? — (3) Vậy tính chẵn lẻ của tổng có đổi không?
 
 ### Bài V.3
-**Đáp số:** a) 1 275 · b) 210 · c) 55 · d) 325 · e) 5 050 · f) 325
+**Đáp số:** a) 55 · b) 1 275 · c) 5 050 · d) 325
 **Hướng giải:** Ghép số đầu với số cuối, số thứ hai với số áp chót… mỗi cặp có cùng một tổng. Đếm số cặp rồi nhân. Nếu số số hạng lẻ thì còn dư số ở giữa, phải cộng thêm.
 **Nhãn tư duy:** TD4, TD5. Điểm chốt: Ghép cặp đầu – cuối, mọi cặp có **tổng bằng nhau**.
 **Lỗi thường gặp:** Cộng dồn từ đầu đến cuối, rất lâu và dễ sai. Phòng: Viết ra ba cặp đầu để thấy rõ các cặp có cùng tổng.
 **Gợi ý 3 tầng:** (1) Ghép số đầu với số cuối, tổng bằng bao nhiêu? — (2) Ghép số thứ hai với số áp chót, tổng bằng bao nhiêu? — (3) Có bao nhiêu cặp như thế?
 
 ### Bài V.4
-**Đáp số:** a) 1 275 · b) 420 · c) 275 · d) 325 · e) 275
+**Đáp số:** a) 1 050 · b) 55 · c) 6 375 · d) 325
 **Hướng giải:** Ghép số đầu với số cuối, số thứ hai với số áp chót… mỗi cặp có cùng một tổng. Đếm số cặp rồi nhân. Số số hạng lẻ thì còn dư số ở giữa.
 **Nhãn tư duy:** TD4, TD5. Điểm chốt: Mọi cặp đầu – cuối đều có **cùng một tổng**.
 **Lỗi thường gặp:** Cộng dồn từ đầu đến cuối, rất lâu và dễ sai. Phòng: Viết ba cặp đầu để thấy rõ chúng bằng nhau.
 **Gợi ý 3 tầng:** (1) Số đầu cộng số cuối bằng bao nhiêu? — (2) Có bao nhiêu cặp như thế? — (3) Nhân tổng một cặp với số cặp.
 
 ### Bài V.5
-**Đáp số:** a) 22 con gà, 10 con chó · b) 4 con gà, 5 con chó · c) 19 con gà, 9 con chó · d) 6 con gà, 13 con chó · e) 21 con gà, 3 con chó
-**Hướng giải:** Giả sử tất cả đều là gà thì số chân bằng số con nhân 2. Số chân đó thiếu so với thực tế; mỗi con chó bị tính thiếu 2 chân, nên lấy số chân thiếu chia 2 được số chó.
-**Nhãn tư duy:** TD6, TD3. Điểm chốt: Chia số chân thiếu cho **2** (là 4 − 2), không chia cho 4.
-**Lỗi thường gặp:** Chia số chân thiếu cho 4. Phòng: Thử lại: nhân ngược ra tổng số chân xem có khớp đề không.
-**Gợi ý 3 tầng:** (1) Nếu tất cả đều là gà thì có bao nhiêu chân? — (2) Số chân đó thiếu bao nhiêu so với thực tế? — (3) Một con chó nhiều hơn một con gà mấy chân?
+**Đáp số:** a) 36 quyển · b) 72 quyển · c) 36 quyển · d) 36 quyển · e) 72 quyển · f) 54 quyển
+**Hướng giải:** Cụm “số còn lại” đổi hẳn số bị chia ở bước hai. Sau mỗi bước phải ghi rõ “còn lại … quyển” rồi mới sang bước sau.
+**Nhãn tư duy:** TD6, TD2. Điểm chốt: Phân số của bước hai tính trên **số còn lại**, không phải tổng ban đầu.
+**Lỗi thường gặp:** Lấy cả hai phân số tính trên tổng ban đầu. Phòng: Viết một dòng “còn lại … quyển” sau mỗi bước.
+**Gợi ý 3 tầng:** (1) Ngày đầu phát bao nhiêu quyển? — (2) Sau ngày đầu còn lại bao nhiêu? — (3) Ngày thứ hai lấy một phần mấy của số nào?
 
 ---
 

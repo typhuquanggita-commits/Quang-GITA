@@ -52,62 +52,55 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — VÍ DỤ DẪN VÀO CHỦ ĐỀ · Mức M1 — Nhận biết · 5 phút · 5 điểm
 
-### Bài 1. (1 điểm) Đổi số đo khối lượng có nhiều đơn vị
-
-Điền vào chỗ chấm.
-
-a) 6 tấn 4 tạ 86 kg = … kg
-b) 2 tấn 9 tạ 65 kg = … kg
-c) 4 tấn 46 kg = … kg
-d) 860 kg = … tấn … tạ … kg
-e) 5 tạ 98 kg = … kg
-f) 2 tấn 8 tạ 19 kg = … kg
-g) 5 439 kg = … tấn … tạ … kg
-
-### Bài 2. (1 điểm) Đổi đơn vị đo diện tích
+### Bài 1. (1 điểm) Đổi đơn vị đo diện tích
 
 Điền số thích hợp.
 
-a) 24 ha = … m²
-b) 26 km² = … ha
-c) 18 m² = … dm²
-d) 77 ha = … m²
+a) 45 km² = … ha
+b) 2 km² = … m²
+c) 24 dm² = … cm²
+d) 47 km² = … ha
 
-### Bài 3. (1 điểm) Đổi đơn vị đo độ dài và khối lượng
+### Bài 2. (1 điểm) Đổi đơn vị đo độ dài và khối lượng
 
 Điền số thích hợp vào chỗ chấm.
 
-a) 75 yến = … g
-b) 54 dam = … mm
-c) 64 hm = … mm
-d) 2 tấn = … g
-e) 80 km = … cm
-f) 24 dag = … g
-g) 5 tấn = … tạ
-h) 21 hm = … cm
+a) 43 kg = … dag
+b) 5 dm = … cm
+c) 16 km = … dm
+d) 43 tấn = … hg
+e) 62 dam = … cm
+
+### Bài 3. (1 điểm) Đổi số đo khối lượng có nhiều đơn vị
+
+Điền vào chỗ chấm.
+
+a) 3 tấn 8 tạ 30 kg = … kg
+b) 2 750 kg = … tấn … tạ … kg
+c) 2 tấn 4 tạ 10 kg = … kg
+d) 6 tấn 2 tạ 34 kg = … kg
 
 ### Bài 4. (1 điểm) Ôn tập số tự nhiên: đọc, viết, so sánh, làm tròn
 
 Trả lời nhanh, mỗi ý không quá 20 giây.
 
-a) Chữ số hàng triệu của số 6 670 650 có giá trị bằng bao nhiêu?
-b) Số liền trước và số liền sau của 4 544 955 là những số nào?
-c) 7 245 375 … 7 249 350
-d) Làm tròn 6 192 544 đến hàng nghìn.
-e) 5 376 712 … 5 380 305
-f) Làm tròn 88 691 đến hàng nghìn.
+a) Chữ số hàng trăm của số 1 238 088 có giá trị bằng bao nhiêu?
+b) Làm tròn 3 920 882 đến hàng nghìn.
+c) 3 109 185 … 3 110 491
+d) Số liền trước và số liền sau của 4 746 133 là những số nào?
+e) Số liền trước và số liền sau của 3 496 115 là những số nào?
 
 ### Bài 5. (1 điểm) Đơn vị đo thời gian: giờ và phút
 
 Điền kết quả, viết dạng giờ và phút.
 
-a) 7 giờ 42 phút − 449 phút = … (viết dạng giờ và phút)
-b) 9 giờ 40 phút = … phút
-c) 5 giờ 13 phút + 155 phút = … (viết dạng giờ và phút)
-d) 297 phút = … giờ … phút
-e) 2 giờ 57 phút + 179 phút = … (viết dạng giờ và phút)
-f) 386 phút = … giờ … phút
-g) 2 giờ 38 phút − 114 phút = … (viết dạng giờ và phút)
+a) 2 giờ 40 phút − 54 phút = … (viết dạng giờ và phút)
+b) 8 giờ 33 phút + 20 phút = … (viết dạng giờ và phút)
+c) 4 giờ 8 phút = … phút
+d) 216 phút = … giờ … phút
+e) 2 giờ 43 phút − 127 phút = … (viết dạng giờ và phút)
+f) 7 giờ 50 phút = … phút
+g) 9 giờ 21 phút + 171 phút = … (viết dạng giờ và phút)
 
 ---
 
@@ -284,62 +277,58 @@ f) Làm lại ví dụ mẫu ở trên và ghi đáp số.
 
 ## PHẦN E — LUYỆN NHẬN BIẾT – THÔNG HIỂU · Mức M2 — Thông hiểu · 30 phút · 40 điểm
 
-### Bài 1. (8 điểm) Tính toán với số đo đại lượng
+### Bài 1. (8 điểm) So sánh hai số đo khác đơn vị
 
-Đổi về cùng đơn vị rồi tính.
+Điền dấu <, >, = thích hợp.
 
-a) 20 kg 131 g − 65 g = … g
-b) 1 252 cm : 4 = … cm
-c) 28 m 14 cm × 4 = … cm
-d) 30 kg 330 g − 165 g = … g
-e) 5 082 cm : 3 = … cm
+a) 42 km … 8 700 hm
+b) 76 dag … 6 793 tạ
+c) 51 ha … 4 875 km²
+d) 24 ha … 7 327 dm²
 
 ### Bài 2. (8 điểm) Đơn vị đo diện tích
 
 Điền số thích hợp vào chỗ chấm.
 
-a) 45 hm² = … m²
-b) 85 dam² = … m²
-c) 53 hm² = … dam²
-d) 89 ha = … m²
-e) 49 km² = … ha
-f) 640 000 m² = … hm²
-g) 73 km² = … ha
-h) 6 500 m² = … dam²
+a) 62 dam² = … m²
+b) 490 000 m² = … ha
+c) 71 hm² = … dam²
+d) 58 hm² = … m²
+e) 4 400 ha = … km²
+f) 420 000 m² = … hm²
 
-### Bài 3. (8 điểm) So sánh hai số đo khác đơn vị
+### Bài 3. (8 điểm) Tính toán với số đo đại lượng
 
-Điền dấu <, >, = thích hợp.
+Đổi về cùng đơn vị rồi tính.
 
-a) 77 tấn … 8 026 g
-b) 29 cm² … 1 714 m²
-c) 60 m … 6 444 hm
-d) 54 dam … 7 387 mm
-e) 35 dag … 3 497 hg
-f) 42 km² … 2 511 cm²
-g) 76 mm … 6 470 cm
+a) 4 kg 836 g − 418 g = … g
+b) 10 m 95 cm + 795 cm = … cm
+c) 38 m 11 cm × 6 = … cm
+d) 13 m 22 cm + 722 cm = … cm
 
-### Bài 4. (8 điểm) Bốn phép tính với số thập phân
-
-Đặt tính rồi tính.
-
-a) 47,9 − 28,76
-b) 39,98 : 2
-c) 4,08 + 56,8
-d) 44,3 × 8
-e) 21,05 + 97,1
-f) 68,17 × 6
-g) 240,54 : 3
-
-### Bài 5. (8 điểm) Lịch, thế kỉ, năm nhuận
+### Bài 4. (8 điểm) Lịch, thế kỉ, năm nhuận
 
 Trả lời ngắn gọn.
 
-a) 29 ngày bằng bao nhiêu tuần lễ và mấy ngày?
-b) Tháng 5 năm 2026 có bao nhiêu ngày?
-c) Năm 2023 thuộc thế kỉ thứ mấy?
-d) Năm 1914 có phải năm nhuận không?
-e) Năm 1908 có phải năm nhuận không?
+a) Năm 1920 có phải năm nhuận không?
+b) Năm 1913 thuộc thế kỉ thứ mấy?
+c) Tháng 4 năm 1936 có bao nhiêu ngày?
+d) 25 ngày bằng bao nhiêu tuần lễ và mấy ngày?
+e) Năm 1908 thuộc thế kỉ thứ mấy?
+f) Năm 1932 có phải năm nhuận không?
+g) 51 ngày bằng bao nhiêu tuần lễ và mấy ngày?
+
+### Bài 5. (8 điểm) Bốn phép tính với số thập phân
+
+Đặt tính rồi tính.
+
+a) 493,05 : 5
+b) 91,51 − 11,9
+c) 60,19 + 48,9
+d) 92,81 × 8
+e) 76,45 × 9
+f) 65,43 − 10,1
+g) 365,94 : 9
 
 ---
 
@@ -348,31 +337,31 @@ e) Năm 1908 có phải năm nhuận không?
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài A.1
-**Đáp số:** a) 6 486 · b) 2 965 · c) 4 046 · d) 8 tạ 60 kg · e) 598 · f) 2 819 · g) 5 tấn 4 tạ 39 kg
-**Hướng giải:** 1 tấn = 10 tạ = 1 000 kg; 1 tạ = 100 kg; 1 yến = 10 kg. Đổi tất cả về ki-lô-gam rồi cộng lại; hoặc ngược lại, chia dần từ đơn vị lớn xuống đơn vị bé và lấy phần dư.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Đổi hết về **một đơn vị chung** trước khi cộng.
-**Lỗi thường gặp:** Cộng thẳng các số đứng trước những đơn vị khác nhau. Phòng: Viết mỗi thành phần thành số ki-lô-gam ngay bên dưới rồi mới cộng.
-
-### Bài A.2
-**Đáp số:** a) 240 000 · b) 2 600 · c) 1 800 · d) 770 000
+**Đáp số:** a) 4 500 · b) 2 000 000 · c) 2 400 · d) 4 700
 **Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần** (chứ không phải 10 lần như đơn vị độ dài), vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc.
 **Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết bảng đơn vị diện tích riêng, ghi rõ “×100” giữa hai bậc.
 
-### Bài A.3
-**Đáp số:** a) 750 000 · b) 540 000 · c) 6 400 000 · d) 2 000 000 · e) 8 000 000 · f) 240 · g) 50 · h) 210 000
+### Bài A.2
+**Đáp số:** a) 4 300 · b) 50 · c) 160 000 · d) 430 000 · e) 62 000
 **Hướng giải:** Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
 **Nhãn tư duy:** TD1. Điểm chốt: Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
 **Lỗi thường gặp:** Đổi ngược chiều nên nhân thành chia. Phòng: Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.
 
+### Bài A.3
+**Đáp số:** a) 3 830 · b) 2 tấn 7 tạ 50 kg · c) 2 410 · d) 6 234
+**Hướng giải:** 1 tấn = 10 tạ = 1 000 kg; 1 tạ = 100 kg; 1 yến = 10 kg. Đổi tất cả về ki-lô-gam rồi cộng lại; hoặc ngược lại, chia dần từ đơn vị lớn xuống đơn vị bé và lấy phần dư.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Đổi hết về **một đơn vị chung** trước khi cộng.
+**Lỗi thường gặp:** Cộng thẳng các số đứng trước những đơn vị khác nhau. Phòng: Viết mỗi thành phần thành số ki-lô-gam ngay bên dưới rồi mới cộng.
+
 ### Bài A.4
-**Đáp số:** a) 6 000 000 · b) 4 544 954 và 4 544 956 · c) < · d) 6 193 000 · e) < · f) 89 000
+**Đáp số:** a) 0 · b) 3 921 000 · c) < · d) 4 746 132 và 4 746 134 · e) 3 496 114 và 3 496 116
 **Hướng giải:** So sánh: số nhiều chữ số hơn thì lớn hơn; bằng số chữ số thì so từng hàng từ trái sang phải. Làm tròn: nhìn chữ số ở hàng **liền sau** hàng cần làm tròn.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: So sánh đi từ **trái sang phải**, làm tròn nhìn **một chữ số liền sau**.
 **Lỗi thường gặp:** So sánh từ hàng đơn vị; hoặc làm tròn nhìn nhầm sang chính hàng cần làm tròn. Phòng: Gạch một nét ngăn ngay sau hàng cần làm tròn.
 
 ### Bài A.5
-**Đáp số:** a) 13 phút · b) 580 · c) 7 giờ 48 phút · d) 4 giờ 57 phút · e) 5 giờ 56 phút · f) 6 giờ 26 phút · g) 44 phút
+**Đáp số:** a) 1 giờ 46 phút · b) 8 giờ 53 phút · c) 248 · d) 3 giờ 36 phút · e) 36 phút · f) 470 · g) 12 giờ 12 phút
 **Hướng giải:** 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
 **Lỗi thường gặp:** Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. Phòng: Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không.
@@ -473,39 +462,39 @@ e) Năm 1908 có phải năm nhuận không?
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.1
-**Đáp số:** a) 20 066 · b) 313 · c) 11 256 · d) 30 165 · e) 1 694
-**Hướng giải:** Chỉ cộng, trừ được các số đo **cùng đơn vị**. Bước đầu tiên luôn là đổi tất cả về đơn vị mà đề yêu cầu ở kết quả, sau đó tính như với số tự nhiên rồi ghi kèm đơn vị.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của **kết quả** quyết định ta đổi về đơn vị nào.
-**Lỗi thường gặp:** Cộng số mét với số xăng-ti-mét mà chưa đổi. Phòng: Gạch chân đơn vị ở chỗ chấm rồi đổi mọi số hạng về đơn vị đó.
-**Gợi ý 3 tầng:** (1) Kết quả cần ghi theo đơn vị nào? — (2) Đổi mọi số hạng về đơn vị ấy. — (3) Tính như số tự nhiên rồi ghi đơn vị.
+**Đáp số:** a) < · b) < · c) < · d) >
+**Hướng giải:** BẪY — Đơn vị khác nhau. Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
+**Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
+**Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.
+**Gợi ý 3 tầng:** (1) Hai vế đang dùng đơn vị nào? — (2) Chọn một đơn vị chung, nên chọn đơn vị bé hơn. — (3) Đổi cả hai vế rồi so sánh.
 
 ### Bài E.2
-**Đáp số:** a) 450 000 · b) 8 500 · c) 5 300 · d) 890 000 · e) 4 900 · f) 64 · g) 7 300 · h) 65
+**Đáp số:** a) 6 200 · b) 49 · c) 7 100 · d) 580 000 · e) 44 · f) 42
 **Hướng giải:** BẪY — 100 lần chứ không phải 10 lần. Hai đơn vị diện tích liền kề hơn kém nhau **100 lần**, vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc, không phải 10 lần.
 **Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết riêng bảng đơn vị diện tích, ghi rõ “× 100” giữa hai bậc liền nhau.
 **Gợi ý 3 tầng:** (1) Hai đơn vị này cách nhau mấy bậc? — (2) Mỗi bậc hơn kém nhau bao nhiêu lần? — (3) Từ lớn sang bé thì nhân.
 
 ### Bài E.3
-**Đáp số:** a) > · b) < · c) < · d) > · e) < · f) > · g) <
-**Hướng giải:** BẪY — Đơn vị khác nhau. Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
-**Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
-**Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.
-**Gợi ý 3 tầng:** (1) Hai vế đang dùng đơn vị nào? — (2) Chọn một đơn vị chung, nên chọn đơn vị bé hơn. — (3) Đổi cả hai vế rồi so sánh.
+**Đáp số:** a) 4 418 · b) 1 890 · c) 22 866 · d) 2 044
+**Hướng giải:** Chỉ cộng, trừ được các số đo **cùng đơn vị**. Bước đầu tiên luôn là đổi tất cả về đơn vị mà đề yêu cầu ở kết quả, sau đó tính như với số tự nhiên rồi ghi kèm đơn vị.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của **kết quả** quyết định ta đổi về đơn vị nào.
+**Lỗi thường gặp:** Cộng số mét với số xăng-ti-mét mà chưa đổi. Phòng: Gạch chân đơn vị ở chỗ chấm rồi đổi mọi số hạng về đơn vị đó.
+**Gợi ý 3 tầng:** (1) Kết quả cần ghi theo đơn vị nào? — (2) Đổi mọi số hạng về đơn vị ấy. — (3) Tính như số tự nhiên rồi ghi đơn vị.
 
 ### Bài E.4
-**Đáp số:** a) 19,14 · b) 19,99 · c) 60,88 · d) 354,4 · e) 118,15 · f) 409,02 · g) 80,18
-**Hướng giải:** BẪY — Vị trí dấu phẩy ở tích. Cộng, trừ số thập phân: viết các dấu phẩy **thẳng cột** rồi tính như số tự nhiên, đặt dấu phẩy ở kết quả thẳng cột với các dấu phẩy trên. Nhân số thập phân với số tự nhiên: nhân như số tự nhiên rồi đếm số chữ số thập phân của thừa số để đặt dấu phẩy.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng trừ thì **thẳng dấu phẩy**; nhân thì **đếm chữ số thập phân**.
-**Lỗi thường gặp:** Nhân xong đặt dấu phẩy thẳng cột như phép cộng. Phòng: Đếm số chữ số sau dấu phẩy ngay khi viết đề bài.
-**Gợi ý 3 tầng:** (1) Phép tính này là cộng trừ hay nhân chia? — (2) Cộng trừ thì viết thẳng dấu phẩy. — (3) Nhân thì đếm tổng số chữ số thập phân của các thừa số.
-
-### Bài E.5
-**Đáp số:** a) 4 tuần 1 ngày · b) 31 · c) XXI · d) không · e) có
+**Đáp số:** a) có · b) XX · c) 30 · d) 3 tuần 4 ngày · e) XX · f) có · g) 7 tuần 2 ngày
 **Hướng giải:** BẪY — Năm tròn trăm. Các tháng 1, 3, 5, 7, 8, 10, 12 có 31 ngày; các tháng 4, 6, 9, 11 có 30 ngày; tháng 2 có 28 ngày, năm nhuận có 29 ngày. Năm nhuận là năm chia hết cho 4, riêng năm tròn trăm thì phải chia hết cho 400. Thế kỉ thứ n gồm các năm từ (n − 1) × 100 + 1 đến n × 100.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Năm tròn trăm chỉ nhuận khi chia hết cho **400** (1900 không nhuận, 2000 có nhuận).
 **Lỗi thường gặp:** Coi mọi năm chia hết cho 4 đều là năm nhuận. Phòng: Gặp năm tròn trăm thì kiểm tra thêm điều kiện chia hết cho 400.
 **Gợi ý 3 tầng:** (1) Tháng đó nằm trong nhóm 31 ngày hay 30 ngày? — (2) Năm đó có chia hết cho 4 không? — (3) Nếu là năm tròn trăm, có chia hết cho 400 không?
+
+### Bài E.5
+**Đáp số:** a) 98,61 · b) 79,61 · c) 109,09 · d) 742,48 · e) 688,05 · f) 55,33 · g) 40,66
+**Hướng giải:** BẪY — Vị trí dấu phẩy ở tích. Cộng, trừ số thập phân: viết các dấu phẩy **thẳng cột** rồi tính như số tự nhiên, đặt dấu phẩy ở kết quả thẳng cột với các dấu phẩy trên. Nhân số thập phân với số tự nhiên: nhân như số tự nhiên rồi đếm số chữ số thập phân của thừa số để đặt dấu phẩy.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng trừ thì **thẳng dấu phẩy**; nhân thì **đếm chữ số thập phân**.
+**Lỗi thường gặp:** Nhân xong đặt dấu phẩy thẳng cột như phép cộng. Phòng: Đếm số chữ số sau dấu phẩy ngay khi viết đề bài.
+**Gợi ý 3 tầng:** (1) Phép tính này là cộng trừ hay nhân chia? — (2) Cộng trừ thì viết thẳng dấu phẩy. — (3) Nhân thì đếm tổng số chữ số thập phân của các thừa số.
 
 ---
 

@@ -30,58 +30,57 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Viết số tự nhiên ứng với mỗi tổng dưới đây.
 
-a) Viết số gồm tổng: 900 000 + 70 000 + 8 000 + 200 + 60 + 7
-b) Viết số gồm tổng: 900 000 + 40 000 + 4 000 + 800 + 30 + 7
-c) Viết số gồm tổng: 400 000 + 70 000 + 9 000 + 90 + 3
-d) Viết số gồm tổng: 800 000 + 20 000 + 8 000 + 700 + 30 + 4
-e) Viết số gồm tổng: 200 000 + 90 000 + 3 000 + 100 + 40 + 3
+a) Viết số gồm tổng: 400 000 + 20 000 + 5 000 + 800 + 10 + 6
+b) Viết số gồm tổng: 700 000 + 60 000 + 1 000 + 800 + 10 + 4
+c) Viết số gồm tổng: 900 000 + 10 000 + 3 000 + 900 + 50 + 1
+d) Viết số gồm tổng: 800 000 + 60 000 + 4 000 + 300 + 90 + 2
+e) Viết số gồm tổng: 100 000 + 80 000 + 1 000 + 600 + 40 + 6
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
-Điền số thích hợp vào chỗ chấm.
+Tính bằng cách thuận tiện nhất.
 
-a) 78 m² = … cm²
-b) 15 dm² = … cm²
-c) 22 m² = … dm²
-d) 58 m² = … dm²
-e) 1 100 cm² = … dm²
+a) 123 + 56 − 56
+b) 11 + 83 + 89 + 17
+c) 11 + 385 + 89
+d) 59 + 382 + 41
+e) 341 + 52 − 52
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
-Tóm tắt bằng sơ đồ đoạn thẳng rồi giải.
+Chú ý đổi đơn vị ở bước cuối.
 
-a) Tổ Ba và đội Một trồng được 204 cây. Tổ Ba trồng nhiều hơn đội Một 12 cây. Mỗi tổ trồng bao nhiêu cây?
-b) Thư viện và kho A chứa tất cả 318 kg gạo. Thư viện chứa nhiều hơn kho A 42 kg. Mỗi nơi chứa bao nhiêu kg?
-c) Hai lớp 4C và 5C có tất cả 678 quyển sách. Lớp 4C có nhiều hơn lớp 5C 28 quyển. Mỗi lớp có bao nhiêu quyển?
-d) Hai lớp 3A và 4A có tất cả 72 quyển sách. Lớp 3A có nhiều hơn lớp 4A 6 quyển. Mỗi lớp có bao nhiêu quyển?
-e) Thư viện và cửa hàng chứa tất cả 538 kg gạo. Thư viện chứa nhiều hơn cửa hàng 4 kg. Mỗi nơi chứa bao nhiêu kg?
-f) Tổ Hai và nhóm Hoa Phượng trồng được 676 cây. Tổ Hai trồng nhiều hơn nhóm Hoa Phượng 90 cây. Mỗi tổ trồng bao nhiêu cây?
+a) Trên bản đồ tỉ lệ 1 : 10 000, một đoạn đường đo được 8 cm. Hỏi đoạn đường đó dài bao nhiêu mét trên thực tế?
+b) Một đoạn đường dài 900 m được vẽ trên bản đồ tỉ lệ 1 : 10 000. Trên bản đồ đoạn ấy dài bao nhiêu xăng-ti-mét?
+c) Một đoạn đường dài 11 m được vẽ trên bản đồ tỉ lệ 1 : 100. Trên bản đồ đoạn ấy dài bao nhiêu xăng-ti-mét?
+d) Trên bản đồ tỉ lệ 1 : 5 000, một đoạn đường đo được 12 cm. Hỏi đoạn đường đó dài bao nhiêu mét trên thực tế?
+e) Trên bản đồ tỉ lệ 1 : 10 000, một đoạn đường đo được 22 cm. Hỏi đoạn đường đó dài bao nhiêu mét trên thực tế?
+f) Một đoạn đường dài 140 m được vẽ trên bản đồ tỉ lệ 1 : 2 000. Trên bản đồ đoạn ấy dài bao nhiêu xăng-ti-mét?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
-Bài nhiều ý nối tiếp, ý sau dùng kết quả ý trước.
+Trình bày lời giải có câu trả lời.
 
-a) Hình chữ nhật có chiều dài 25 m, chiều rộng 5 m. Tính chu vi.
-b) Tính diện tích hình chữ nhật đó.
-c) Một người đi bộ quanh hình chữ nhật ấy với vận tốc 4 m/giây. Hỏi đi hết một vòng mất bao nhiêu giây?
-d) Nếu tăng chiều dài thêm 4 m thì diện tích tăng thêm bao nhiêu?
-e) Khi đó chu vi tăng thêm bao nhiêu mét?
-f) Nếu tăng cả chiều dài và chiều rộng thêm 4 m thì diện tích mới bằng bao nhiêu?
+a) Một cửa hàng có 14 thùng dầu, mỗi thùng 24 lít. Cửa hàng đã bán 5 thùng. Hỏi cửa hàng còn lại bao nhiêu lít dầu?
+b) Một cửa hàng có 20 thùng dầu, mỗi thùng 12 lít. Cửa hàng đã bán 16 thùng. Hỏi cửa hàng còn lại bao nhiêu lít dầu?
+c) Một cửa hàng có 19 thùng dầu, mỗi thùng 15 lít. Cửa hàng đã bán 16 thùng. Hỏi cửa hàng còn lại bao nhiêu lít dầu?
+d) Một cửa hàng có 14 thùng nước, mỗi thùng 20 lít. Cửa hàng đã bán 9 thùng. Hỏi cửa hàng còn lại bao nhiêu lít nước?
+e) Một cửa hàng có 13 thùng nước, mỗi thùng 20 lít. Cửa hàng đã bán 6 thùng. Hỏi cửa hàng còn lại bao nhiêu lít nước?
+f) Một cửa hàng có 5 thùng nước, mỗi thùng 24 lít. Cửa hàng đã bán 4 thùng. Hỏi cửa hàng còn lại bao nhiêu lít nước?
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
-Dùng phương pháp giả thiết tạm.
+Tính nhanh mỗi tổng, nêu công thức đã dùng.
 
-a) Vừa gà vừa chó có 14 con, đếm được tất cả 36 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
-b) Vừa gà vừa chó có 46 con, đếm được tất cả 104 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
-c) Vừa gà vừa chó có 53 con, đếm được tất cả 162 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
-d) Vừa gà vừa chó có 31 con, đếm được tất cả 114 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
-e) Vừa gà vừa chó có 21 con, đếm được tất cả 70 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
-f) Vừa gà vừa chó có 26 con, đếm được tất cả 96 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
+a) 1 + 2 + 3 + … + 100
+b) 2 + 4 + 6 + … + 100 (tổng 50 số chẵn đầu tiên)
+c) 1 + 3 + 5 + … + 49 (tổng 25 số lẻ đầu tiên)
+d) 2 + 4 + 6 + … + 50 (tổng 25 số chẵn đầu tiên)
+e) 1 + 2 + 3 + … + 10
 
 
 ---
@@ -91,98 +90,98 @@ f) Vừa gà vừa chó có 26 con, đếm được tất cả 96 chân. Hỏi c
 
 ### Bài 1, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **978 267**
-b) **944 837**
-c) **479 093**
-d) **828 734**
-e) **293 143**
+a) **425 816**
+b) **761 814**
+c) **913 951**
+d) **864 392**
+e) **181 646**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Viết số gồm tổng: 900 000 + 70 000 + 8 000 + 200 + 60 + 7
+1. Xét ý a: Viết số gồm tổng: 400 000 + 20 000 + 5 000 + 800 + 10 + 6
 2. Đọc vị: đây là dạng **Viết số từ dạng tổng theo hàng**; dấu hiệu là Tổng gồm các số tròn chục, tròn trăm, tròn nghìn….
 3. Kiến thức phải dùng: Cấu tạo thập phân của số tự nhiên.
 4. Cách làm: Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết.
 5. Lối tắt: Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số.
-6. Kết quả: **978 267**.
+6. Kết quả: **425 816**.
 
 *Lỗi hay mắc:* Bỏ qua hàng khuyết nên số viết ra bị ngắn đi một chữ số.
 
 ### Bài 2, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **780 000**
-b) **1 500**
-c) **2 200**
-d) **5 800**
-e) **11**
+a) **123**
+b) **200**
+c) **485**
+d) **482**
+e) **341**
 
 **Cách giải mẫu:**
 
-1. 1 m² = 10 000 cm².
-2. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**.
-3. 78 × 10 000 = 780 000 (cm²).
-4. Đáp số: **780 000 cm²**.
+1. Xét ý a: 123 + 56 − 56
+2. Đọc vị: đây là dạng **Tính nhanh tổng nhiều số hạng**; dấu hiệu là Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm.
+3. Kiến thức phải dùng: Tính chất giao hoán, kết hợp của phép cộng.
+4. Cách làm: Ghép cặp tròn rồi cộng.
+5. Lối tắt: Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10.
+6. Kết quả: **123**.
 
-*Lỗi hay mắc:* Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc.
+*Lỗi hay mắc:* Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn.
 
 ### Bài 3, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **tổ Ba: 108 cây, đội Một: 96 cây**
-b) **thư viện: 180 kg, kho A: 138 kg**
-c) **4C: 353 quyển, 5C: 325 quyển**
-d) **3A: 39 quyển, 4A: 33 quyển**
-e) **thư viện: 271 kg, cửa hàng: 267 kg**
-f) **tổ Hai: 383 cây, nhóm Hoa Phượng: 293 cây**
+a) **800 m**
+b) **9 cm**
+c) **11 cm**
+d) **600 m**
+e) **2 200 m**
+f) **7 cm**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Tổ Ba và đội Một trồng được 204 cây. Tổ Ba trồng nhiều hơn đội Một 12 cây. Mỗi tổ trồng bao nhiêu cây?
-2. Đọc vị: đây là dạng **Tổng – hiệu có lời văn**; dấu hiệu là “Có tất cả …” và “… nhiều hơn … là …”.
-3. Kiến thức phải dùng: Công thức tổng – hiệu, sơ đồ đoạn thẳng.
-4. Cách làm: Đọc vị tổng và hiệu → sơ đồ → công thức.
-5. Lối tắt: Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần.
-6. Kết quả: **tổ Ba: 108 cây, đội Một: 96 cây**.
+1. Tỉ lệ 1 : 10 000 nghĩa là 1 cm trên bản đồ ứng với 10 000 cm thật.
+2. Bước 1 — độ dài thật tính bằng xăng-ti-mét: 8 × 10 000 = 80 000 (cm).
+3. Bước 2 — đổi ra mét: 80 000 : 100 = 800 (m).
+4. Đáp số: **800 m**.
 
-*Lỗi hay mắc:* Nhầm hiệu thành tổng khi đề diễn đạt vòng vo.
+*Lỗi hay mắc:* Đổi mét sang xăng-ti-mét ngay từ đầu rồi lại nhân tỉ lệ một lần nữa.
 
 ### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **60 m**
-b) **125 m²**
-c) **15 giây**
-d) **20 m²**
-e) **8 m**
-f) **261 m²**
+a) **216 lít**
+b) **48 lít**
+c) **45 lít**
+d) **100 lít**
+e) **140 lít**
+f) **24 lít**
 
 **Cách giải mẫu:**
 
-1. Bước 1 — chu vi: (25 + 5) × 2 = 60 (m).
-2. Bước 2 — diện tích: 25 × 5 = 125 (m²).
-3. Bước 3 — đi một vòng chính là đi hết chu vi: 60 : 4 = 15 (giây).
-4. Bước 4 — tăng chiều dài thêm 4 m thì phần dôi ra là một hình chữ nhật 4 m × 5 m, diện tích 20 (m²).
-5. Đáp số ý a: **60 m**.
+1. Xét ý a: Một cửa hàng có 14 thùng dầu, mỗi thùng 24 lít. Cửa hàng đã bán 5 thùng. Hỏi cửa hàng còn lại bao nhiêu lít dầu?
+2. Đọc vị: đây là dạng **Bài toán đại lượng nhiều bước**; dấu hiệu là Cho số nhóm, giá trị mỗi nhóm và số nhóm đã dùng.
+3. Kiến thức phải dùng: Nhân, trừ; đại lượng cùng loại.
+4. Cách làm: Rút gọn số bước bằng cách trừ trước, nhân sau.
+5. Lối tắt: So sánh hai đường giải, chọn đường ít phép tính hơn.
+6. Kết quả: **216 lít**.
 
-*Lỗi hay mắc:* Nhân hai lượng tăng với nhau rồi coi đó là diện tích tăng thêm.
+*Lỗi hay mắc:* Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại.
 
-### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 5, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **10 con gà, 4 con chó**
-b) **40 con gà, 6 con chó**
-c) **25 con gà, 28 con chó**
-d) **5 con gà, 26 con chó**
-e) **7 con gà, 14 con chó**
-f) **4 con gà, 22 con chó**
+a) **5 050**
+b) **2 550**
+c) **625**
+d) **650**
+e) **55**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Vừa gà vừa chó có 14 con, đếm được tất cả 36 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
-2. Đọc vị: đây là dạng **Giả thiết tạm**; dấu hiệu là Hai loại đối tượng, biết tổng số và tổng của một đại lượng khác.
-3. Kiến thức phải dùng: Phương pháp giả thiết tạm.
-4. Cách làm: Giả sử đồng nhất một loại → tính phần chênh → chia cho hiệu đơn vị.
-5. Lối tắt: Số chó = (số chân − 2 × số con) : 2 — thuộc công thức rút gọn để nhẩm.
-6. Kết quả: **10 con gà, 4 con chó**.
+1. Xét ý a: 1 + 2 + 3 + … + 100
+2. Đọc vị: đây là dạng **Tổng dãy đặc biệt**; dấu hiệu là Dãy toàn số lẻ, toàn số chẵn, hoặc số tự nhiên liên tiếp.
+3. Kiến thức phải dùng: Ba công thức tổng cơ bản.
+4. Cách làm: Đếm số số hạng rồi áp công thức.
+5. Lối tắt: Tổng n số lẻ đầu tiên luôn là một số chính phương — dùng để kiểm tra nhanh.
+6. Kết quả: **5 050**.
 
-*Lỗi hay mắc:* Chia số chân thiếu cho 4 thay vì cho hiệu số chân của hai loài.
+*Lỗi hay mắc:* Nhầm số hạng cuối với số lượng số hạng khi áp công thức.
 
 ---
 
@@ -193,10 +192,10 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài | Đo cái gì | Sai bài này nghĩa là | Học lại ở đâu |
 |:--:|---|---|---|
 | Bài 1 | Viết số từ dạng tổng theo hàng | Bỏ qua hàng khuyết nên số viết ra bị ngắn đi một chữ số. | Nhóm chuyên đề **—** · mức — |
-| Bài 2 | Đổi đơn vị diện tích | Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. | Nhóm chuyên đề **—** · mức — |
-| Bài 3 | Tổng – hiệu có lời văn | Nhầm hiệu thành tổng khi đề diễn đạt vòng vo. | Nhóm chuyên đề **—** · mức — |
-| Bài 4 | Hình chữ nhật tổng hợp | Nhân hai lượng tăng với nhau rồi coi đó là diện tích tăng thêm. | Nhóm chuyên đề **—** · mức — |
-| Bài 5 | Giả thiết tạm | Chia số chân thiếu cho 4 thay vì cho hiệu số chân của hai loài. | Nhóm chuyên đề **—** · mức — |
+| Bài 2 | Tính nhanh tổng nhiều số hạng | Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. | Nhóm chuyên đề **—** · mức — |
+| Bài 3 | Tỉ lệ bản đồ, tỉ lệ xích | Đổi mét sang xăng-ti-mét ngay từ đầu rồi lại nhân tỉ lệ một lần nữa. | Nhóm chuyên đề **—** · mức — |
+| Bài 4 | Bài toán đại lượng nhiều bước | Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. | Nhóm chuyên đề **—** · mức — |
+| Bài 5 | Tổng dãy đặc biệt | Nhầm số hạng cuối với số lượng số hạng khi áp công thức. | Nhóm chuyên đề **—** · mức — |
 
 ---
 

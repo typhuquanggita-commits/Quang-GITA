@@ -30,53 +30,54 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Đặt tính rồi tính. Ước lượng trước để tự kiểm tra.
 
-a) 78 407 × 195
-b) 188 065 380 : 835
-c) 592 117 − 262 179
-d) 648 494 + 223 022
-e) 198 573 + 688 041
+a) 79 271 050 : 670
+b) 172 032 × 938
+c) 795 952 − 760 539
+d) 340 604 + 657 597
+e) 673 976 518 : 677
+f) 615 332 × 672
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
 Đặt tính rồi tính.
 
-a) 32 430 × 172
-b) 72 011 088 : 738
-c) 55 860 × 544
-d) 45 895 × 549
-e) 17 505 124 : 182
-f) 28 786 × 859
+a) 37 263 × 610
+b) 21 375 368 : 248
+c) 84 236 × 253
+d) 7 082 931 : 87
+e) 61 703 × 554
+f) 8 775 558 : 253
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
 Đọc kĩ rồi trả lời từng câu.
 
-a) Trang có 76 quyển vở, Phúc có ít hơn Trang 19 quyển. Phúc có bao nhiêu quyển vở?
-b) Trang có 39 quyển vở, Phúc có nhiều hơn Trang 25 quyển. Phúc có bao nhiêu quyển vở?
-c) Trang có 37 quyển vở, Phúc có số vở gấp 2 lần Trang. Phúc có bao nhiêu quyển vở?
-d) Trang có 208 quyển vở, số vở của Phúc kém 4 lần số vở của Trang. Phúc có bao nhiêu quyển vở?
+a) Phúc có 42 quyển vở, số vở của Ngọc kém 2 lần số vở của Phúc. Ngọc có bao nhiêu quyển vở?
+b) Phúc có 67 quyển vở, Ngọc có ít hơn Phúc 17 quyển. Ngọc có bao nhiêu quyển vở?
+c) Phúc có 59 quyển vở, Ngọc có số vở gấp 2 lần Phúc. Ngọc có bao nhiêu quyển vở?
+d) Phúc có 15 quyển vở, Ngọc có nhiều hơn Phúc 14 quyển. Ngọc có bao nhiêu quyển vở?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
 Vẽ hình tròn và ghi kí hiệu lên hình.
 
-a) Hình tròn A có bán kính 36 cm, hình tròn B có đường kính 56 cm. Hình nào lớn hơn?
-b) Hình tròn có bán kính 7 cm. Đường kính dài bao nhiêu?
-c) Hình tròn có đường kính 72 cm. Bán kính dài bao nhiêu?
-d) Hình tròn có đường kính 68 cm. Bán kính dài bao nhiêu?
+a) Hình tròn có bán kính 29 cm. Đường kính dài bao nhiêu?
+b) Hình tròn có đường kính 54 cm. Bán kính dài bao nhiêu?
+c) Hình tròn A có bán kính 37 cm, hình tròn B có đường kính 20 cm. Hình nào lớn hơn?
+d) Hình tròn có đường kính 30 cm. Bán kính dài bao nhiêu?
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
 Coi cả công việc là 1 đơn vị.
 
-a) Vòi thứ nhất chảy một mình đầy bể trong 2 giờ, vòi thứ hai chảy một mình đầy bể trong 15 giờ. Mở cả hai vòi thì sau bao lâu đầy bể?
-b) Vòi thứ nhất chảy một mình đầy bể trong 10 giờ, vòi thứ hai chảy một mình đầy bể trong 2 giờ. Mở cả hai vòi thì sau bao lâu đầy bể?
-c) Vòi thứ nhất chảy một mình đầy bể trong 8 giờ, vòi thứ hai chảy một mình đầy bể trong 3 giờ. Mở cả hai vòi thì sau bao lâu đầy bể?
-d) Vòi thứ nhất chảy một mình đầy bể trong 4 giờ, vòi thứ hai chảy một mình đầy bể trong 2 giờ. Mở cả hai vòi thì sau bao lâu đầy bể?
+a) Vòi thứ nhất chảy một mình đầy bể trong 6 giờ, vòi thứ hai chảy một mình đầy bể trong 20 giờ. Mở cả hai vòi thì sau bao lâu đầy bể?
+b) Vòi thứ nhất chảy một mình đầy bể trong 6 giờ, vòi thứ hai chảy một mình đầy bể trong 4 giờ. Mở cả hai vòi thì sau bao lâu đầy bể?
+c) Vòi thứ nhất chảy một mình đầy bể trong 12 giờ, vòi thứ hai chảy một mình đầy bể trong 2 giờ. Mở cả hai vòi thì sau bao lâu đầy bể?
+d) Vòi thứ nhất chảy một mình đầy bể trong 8 giờ, vòi thứ hai chảy một mình đầy bể trong 20 giờ. Mở cả hai vòi thì sau bao lâu đầy bể?
 
 
 ---
@@ -84,95 +85,94 @@ d) Vòi thứ nhất chảy một mình đầy bể trong 4 giờ, vòi thứ ha
 ## ĐÁP ÁN VÀ BIỂU ĐIỂM
 
 
-### Bài 1, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **15 289 365**
-b) **225 228**
-c) **329 938**
-d) **871 516**
-e) **886 614**
+a) **118 315**
+b) **161 366 016**
+c) **35 413**
+d) **998 201**
+e) **995 534**
+f) **413 503 104**
 
 **Cách giải mẫu:**
 
-1. Đặt tính, nhân lần lượt từng chữ số của 195 với 78 407.
-2. Mỗi tích riêng viết lùi sang trái một cột.
-3. Cộng các tích riêng lại: 78 407 × 195 = 15 289 365.
-4. Ước lượng kiểm tra: khoảng 78 000 × 200 ≈ 15 600 000 — cùng độ lớn ✓
-5. Đáp số: **15 289 365**.
+1. Xét ý a: 79 271 050 : 670
+2. Đọc vị: đây là dạng **Bốn phép tính với số tự nhiên**; dấu hiệu là Yêu cầu “đặt tính rồi tính”.
+3. Kiến thức phải dùng: Kĩ thuật đặt tính cộng, trừ, nhân, chia.
+4. Cách làm: Đặt tính thẳng cột, tính từ hàng đơn vị.
+5. Lối tắt: Ước lượng bằng cách làm tròn để phát hiện sai sót về độ lớn.
+6. Kết quả: **118 315**.
 
 *Lỗi hay mắc:* Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số.
 
 ### Bài 2, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **5 577 960**
-b) **97 576**
-c) **30 387 840**
-d) **25 196 355**
-e) **96 182**
-f) **24 727 174**
+a) **22 730 430**
+b) **86 191**
+c) **21 311 708**
+d) **81 413**
+e) **34 183 462**
+f) **34 686**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 32 430 × 172
+1. Xét ý a: 37 263 × 610
 2. Đọc vị: đây là dạng **Nhân, chia số tự nhiên**; dấu hiệu là Yêu cầu “đặt tính rồi tính” với phép nhân, chia.
 3. Kiến thức phải dùng: Kĩ thuật đặt tính nhân, chia.
 4. Cách làm: Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ chữ số.
 5. Lối tắt: Kiểm tra kết quả bằng phép tính ngược: thương × số chia = số bị chia.
-6. Kết quả: **5 577 960**.
+6. Kết quả: **22 730 430**.
 
 *Lỗi hay mắc:* Quên viết chữ số 0 ở thương nên thương thiếu chữ số.
 
 ### Bài 3, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **57**
-b) **64**
-c) **74**
-d) **52**
+a) **21**
+b) **50**
+c) **118**
+d) **29**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Trang có 76 quyển vở, Phúc có ít hơn Trang 19 quyển. Phúc có bao nhiêu quyển vở?
+1. Xét ý a: Phúc có 42 quyển vở, số vở của Ngọc kém 2 lần số vở của Phúc. Ngọc có bao nhiêu quyển vở?
 2. Đọc vị: đây là dạng **Quan hệ nhiều hơn – ít hơn, gấp – kém**; dấu hiệu là Các cụm “nhiều hơn”, “ít hơn”, “gấp … lần”, “kém … lần”.
 3. Kiến thức phải dùng: Bốn phép tính, từ khoá chỉ quan hệ.
 4. Cách làm: Đọc vị từ khoá → chọn phép tính.
 5. Lối tắt: Kết quả lớn hơn hay bé hơn số đã cho? Trả lời được là biết ngay phép tính.
-6. Kết quả: **57**.
+6. Kết quả: **21**.
 
 *Lỗi hay mắc:* Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”.
 
 ### Bài 4, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **A**
-b) **14 cm**
-c) **36 cm**
-d) **34 cm**
+a) **58 cm**
+b) **27 cm**
+c) **A**
+d) **15 cm**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Hình tròn A có bán kính 36 cm, hình tròn B có đường kính 56 cm. Hình nào lớn hơn?
-2. Đọc vị: đây là dạng **Nhận biết hình tròn và các yếu tố**; dấu hiệu là Đề nhắc tâm, bán kính, đường kính.
-3. Kiến thức phải dùng: Quan hệ đường kính – bán kính.
-4. Cách làm: Quy về bán kính rồi so sánh hoặc tính.
-5. Lối tắt: Nhìn đơn vị và tên đại lượng trước khi so sánh.
-6. Kết quả: **A**.
+1. Đường kính đi qua tâm và bằng hai lần bán kính.
+2. Đường kính = 29 × 2 = 58 (cm).
+3. Đáp số: **58 cm**.
 
 *Lỗi hay mắc:* So bán kính của hình này với đường kính của hình kia.
 
 ### Bài 5, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **30 phần 17 giờ**
-b) **1 giờ 40 phút**
-c) **24 phần 11 giờ**
-d) **1 giờ 20 phút**
+a) **60 phần 13 giờ**
+b) **2 giờ 24 phút**
+c) **12 phần 7 giờ**
+d) **40 phần 7 giờ**
 
 **Cách giải mẫu:**
 
 1. Coi cả bể là 1 đơn vị công việc.
-2. Bước 1 — mỗi giờ vòi thứ nhất chảy được 1 phần 2 bể, vòi thứ hai chảy được 1 phần 15 bể.
-3. Bước 2 — mỗi giờ cả hai vòi chảy được 1 phần 2 + 1 phần 15 = 17 phần 30 bể.
-4. Bước 3 — thời gian đầy bể: 1 : 17 phần 30 = 30 phần 17 giờ = 30 phần 17 giờ.
-5. Kiểm tra nhanh: kết quả phải bé hơn 2 giờ ✓
-6. Đáp số: **30 phần 17 giờ**.
+2. Bước 1 — mỗi giờ vòi thứ nhất chảy được 1 phần 6 bể, vòi thứ hai chảy được 1 phần 20 bể.
+3. Bước 2 — mỗi giờ cả hai vòi chảy được 1 phần 6 + 1 phần 20 = 13 phần 60 bể.
+4. Bước 3 — thời gian đầy bể: 1 : 13 phần 60 = 60 phần 13 giờ = 60 phần 13 giờ.
+5. Kiểm tra nhanh: kết quả phải bé hơn 6 giờ ✓
+6. Đáp số: **60 phần 13 giờ**.
 
 *Lỗi hay mắc:* Cộng hai khoảng thời gian rồi chia đôi.
 

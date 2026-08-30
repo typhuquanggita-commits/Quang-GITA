@@ -30,57 +30,58 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Viết số tự nhiên ứng với mỗi tổng dưới đây.
 
-a) Viết số gồm tổng: 200 000 + 70 000 + 1 000 + 700 + 30 + 4
-b) Viết số gồm tổng: 70 000 + 9 000 + 200 + 90 + 3
-c) Viết số gồm tổng: 800 000 + 90 000 + 9 000 + 600 + 40 + 1
-d) Viết số gồm tổng: 100 000 + 20 000 + 1 000 + 800 + 50 + 4
-e) Viết số gồm tổng: 800 000 + 90 000 + 9 000 + 80 + 8
+a) Viết số gồm tổng: 30 000 + 2 000 + 200 + 90 + 7
+b) Viết số gồm tổng: 100 000 + 50 000 + 2 000 + 50
+c) Viết số gồm tổng: 20 000 + 4 000 + 200 + 90 + 8
+d) Viết số gồm tổng: 100 000 + 40 000 + 9 000 + 700 + 30 + 2
+e) Viết số gồm tổng: 600 000 + 40 000 + 3 000 + 70 + 5
+f) Viết số gồm tổng: 900 000 + 50 000 + 1 000 + 70 + 2
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
-Điền số thích hợp vào chỗ chấm.
+Tính bằng cách thuận tiện nhất.
 
-a) 2 300 cm² = … dm²
-b) 58 m² = … cm²
-c) 3 300 dm² = … m²
-d) 71 m² = … cm²
-e) 84 dm² = … cm²
-f) 2 800 dm² = … m²
+a) 251 + 21 − 21
+b) 44 + 15 + 56 + 85
+c) 332 + 23 − 23
+d) 312 + 77 − 77
+e) 47 + 236 + 53
+f) 21 + 67 + 79 + 33
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
-Chú ý đổi đơn vị ở bước cuối.
+Giải bằng cách rút về đơn vị hoặc dùng tỉ số.
 
-a) Một đoạn đường dài 250 m được vẽ trên bản đồ tỉ lệ 1 : 5 000. Trên bản đồ đoạn ấy dài bao nhiêu xăng-ti-mét?
-b) Trên bản đồ tỉ lệ 1 : 10 000, một đoạn đường đo được 13 cm. Hỏi đoạn đường đó dài bao nhiêu mét trên thực tế?
-c) Một đoạn đường dài 150 m được vẽ trên bản đồ tỉ lệ 1 : 1 000. Trên bản đồ đoạn ấy dài bao nhiêu xăng-ti-mét?
-d) Trên bản đồ tỉ lệ 1 : 5 000, một đoạn đường đo được 25 cm. Hỏi đoạn đường đó dài bao nhiêu mét trên thực tế?
-e) Một đoạn đường dài 35 m được vẽ trên bản đồ tỉ lệ 1 : 500. Trên bản đồ đoạn ấy dài bao nhiêu xăng-ti-mét?
+a) Mua 10 quyển vở hết 60 nghìn đồng. Với 66 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+b) Mua 9 quyển vở hết 234 nghìn đồng. Mua 17 quyển vở như thế hết bao nhiêu nghìn đồng?
+c) Mua 7 quyển vở hết 182 nghìn đồng. Mua 17 quyển vở như thế hết bao nhiêu nghìn đồng?
+d) Mua 7 quyển vở hết 42 nghìn đồng. Mua 8 quyển vở như thế hết bao nhiêu nghìn đồng?
+e) Mua 6 quyển vở hết 354 nghìn đồng. Với 1 298 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+f) Mua 15 quyển vở hết 645 nghìn đồng. Mua 28 quyển vở như thế hết bao nhiêu nghìn đồng?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
-Ghi kết quả theo giờ và phút.
+Một căn phòng hình chữ nhật dài **4 m**, rộng **3 m**, lát bằng gạch vuông cạnh **20 cm**.
 
-a) Một chuyến tàu khởi hành lúc 15 giờ 40 phút và đi hết 2 giờ 5 phút. Tàu đến nơi lúc mấy giờ?
-b) Một chuyến tàu khởi hành lúc 15 giờ 40 phút và đi hết 1 giờ 9 phút. Tàu đến nơi lúc mấy giờ?
-c) Một chuyến tàu khởi hành lúc 6 giờ 25 phút và đi hết 2 giờ 18 phút. Tàu đến nơi lúc mấy giờ?
-d) Một chuyến tàu khởi hành lúc 10 giờ 30 phút và đi hết 4 giờ 34 phút. Tàu đến nơi lúc mấy giờ?
-e) Một chuyến tàu khởi hành lúc 7 giờ 25 phút và đi hết 4 giờ 47 phút. Tàu đến nơi lúc mấy giờ?
-f) Một chuyến tàu khởi hành lúc 9 giờ 45 phút và đi hết 54 phút. Tàu đến nơi lúc mấy giờ?
+a) Tính diện tích nền nhà theo mét vuông.
+b) Đổi diện tích nền nhà ra xăng-ti-mét vuông.
+c) Diện tích một viên gạch là bao nhiêu xăng-ti-mét vuông?
+d) Cần bao nhiêu viên gạch để lát kín nền nhà?
+e) Mỗi viên gạch giá 40 000 đồng. Mua gạch lát hết bao nhiêu tiền?
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
 Bài mô phỏng phần tự luận của đề thi chất lượng cao.
 
-a) Ba số có tổng 192. Số thứ hai hơn số thứ nhất 11, số thứ ba hơn số thứ hai 11. Tìm số thứ hai.
+a) Ba số có tổng 72. Số thứ hai hơn số thứ nhất 3, số thứ ba hơn số thứ hai 3. Tìm số thứ hai.
 b) Tìm số thứ nhất.
 c) Tìm số thứ ba.
 d) Vì sao số thứ hai bằng tổng ba số chia cho 3?
-e) Hai số khác có tổng 24 và số bé bằng 1 phần 3 số lớn. Tìm số bé.
+e) Hai số khác có tổng 102 và số bé bằng 1 phần 5 số lớn. Tìm số bé.
 f) Tìm số lớn.
 
 
@@ -89,101 +90,101 @@ f) Tìm số lớn.
 ## ĐÁP ÁN VÀ BIỂU ĐIỂM
 
 
-### Bài 1, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **271 734**
-b) **79 293**
-c) **899 641**
-d) **121 854**
-e) **899 088**
+a) **32 297**
+b) **152 050**
+c) **24 298**
+d) **149 732**
+e) **643 075**
+f) **951 072**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Viết số gồm tổng: 200 000 + 70 000 + 1 000 + 700 + 30 + 4
+1. Xét ý a: Viết số gồm tổng: 30 000 + 2 000 + 200 + 90 + 7
 2. Đọc vị: đây là dạng **Viết số từ dạng tổng theo hàng**; dấu hiệu là Tổng gồm các số tròn chục, tròn trăm, tròn nghìn….
 3. Kiến thức phải dùng: Cấu tạo thập phân của số tự nhiên.
 4. Cách làm: Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết.
 5. Lối tắt: Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số.
-6. Kết quả: **271 734**.
+6. Kết quả: **32 297**.
 
 *Lỗi hay mắc:* Bỏ qua hàng khuyết nên số viết ra bị ngắn đi một chữ số.
 
 ### Bài 2, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **23**
-b) **580 000**
-c) **33**
-d) **710 000**
-e) **8 400**
-f) **28**
+a) **251**
+b) **200**
+c) **332**
+d) **312**
+e) **336**
+f) **200**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 2 300 cm² = … dm²
-2. Đọc vị: đây là dạng **Đổi đơn vị diện tích**; dấu hiệu là Đơn vị có mũ hai, hoặc ha, km².
-3. Kiến thức phải dùng: Bảng đơn vị đo diện tích.
-4. Cách làm: Đếm bậc rồi nhân, chia 100.
-5. Lối tắt: Mỗi bậc thêm hai chữ số 0 — nhớ “diện tích thì gấp đôi số 0”.
-6. Kết quả: **23**.
+1. Xét ý a: 251 + 21 − 21
+2. Đọc vị: đây là dạng **Tính nhanh tổng nhiều số hạng**; dấu hiệu là Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm.
+3. Kiến thức phải dùng: Tính chất giao hoán, kết hợp của phép cộng.
+4. Cách làm: Ghép cặp tròn rồi cộng.
+5. Lối tắt: Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10.
+6. Kết quả: **251**.
 
-*Lỗi hay mắc:* Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc.
+*Lỗi hay mắc:* Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn.
 
-### Bài 3, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 3, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **5 cm**
-b) **1 300 m**
-c) **15 cm**
-d) **1 250 m**
-e) **7 cm**
-
-**Cách giải mẫu:**
-
-1. Xét ý a: Một đoạn đường dài 250 m được vẽ trên bản đồ tỉ lệ 1 : 5 000. Trên bản đồ đoạn ấy dài bao nhiêu xăng-ti-mét?
-2. Đọc vị: đây là dạng **Tỉ lệ bản đồ, tỉ lệ xích**; dấu hiệu là Có kí hiệu tỉ lệ dạng 1 : n.
-3. Kiến thức phải dùng: Tỉ lệ, đổi đơn vị đo độ dài.
-4. Cách làm: Nhân hoặc chia theo tỉ lệ rồi đổi đơn vị.
-5. Lối tắt: Tỉ lệ 1 : 1 000 thì 1 cm bản đồ đúng bằng 10 m thật.
-6. Kết quả: **5 cm**.
-
-*Lỗi hay mắc:* Đổi mét sang xăng-ti-mét ngay từ đầu rồi lại nhân tỉ lệ một lần nữa.
-
-### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
-
-a) **17 giờ 45 phút**
-b) **16 giờ 49 phút**
-c) **8 giờ 43 phút**
-d) **15 giờ 4 phút**
-e) **12 giờ 12 phút**
-f) **10 giờ 39 phút**
+a) **11 quyển**
+b) **442 nghìn đồng**
+c) **442 nghìn đồng**
+d) **48 nghìn đồng**
+e) **22 quyển**
+f) **1 204 nghìn đồng**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Một chuyến tàu khởi hành lúc 15 giờ 40 phút và đi hết 2 giờ 5 phút. Tàu đến nơi lúc mấy giờ?
-2. Đọc vị: đây là dạng **Tính thời điểm trong ngày**; dấu hiệu là Cho thời điểm bắt đầu và khoảng thời gian.
-3. Kiến thức phải dùng: Quan hệ giờ – phút, phép chia có dư.
-4. Cách làm: Quy về phút, cộng trừ, đổi lại.
-5. Lối tắt: Cộng tròn giờ trước rồi cộng phần phút lẻ sau.
-6. Kết quả: **17 giờ 45 phút**.
+1. Xét ý a: Mua 10 quyển vở hết 60 nghìn đồng. Với 66 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+2. Đọc vị: đây là dạng **Tỉ lệ thuận, rút về đơn vị**; dấu hiệu là Hai đại lượng cùng tăng cùng giảm.
+3. Kiến thức phải dùng: Đại lượng tỉ lệ thuận.
+4. Cách làm: Rút về đơn vị hoặc dùng tỉ số.
+5. Lối tắt: Nếu số lượng mới gấp số lượng cũ một số nguyên lần thì nhân thẳng, không cần rút về đơn vị.
+6. Kết quả: **11 quyển**.
 
-*Lỗi hay mắc:* Cộng phần phút thành hơn 60 mà quên đổi thành giờ.
+*Lỗi hay mắc:* Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch.
+
+### Bài 4, (2 điểm — mỗi ý 0,4 điểm)
+
+a) **4 × 3 = 12 m²**
+b) **12 m² = 120 000 cm²**
+c) **20 × 20 = 400 cm²**
+d) **120 000 : 400 = 300 viên**
+e) **300 × 40 000 = 12 000 000 đồng**
+
+**Cách giải mẫu:**
+
+1. Diện tích nền: 4 × 3 = **12 m²**.
+2. Muốn chia cho diện tích viên gạch thì hai diện tích phải **cùng đơn vị**. Viên gạch đo bằng xăng-ti-mét nên đổi nền nhà ra cm²: 1 m² = 10 000 cm², nên 12 m² = 120 000 cm².
+3. Diện tích một viên: 20 × 20 = 400 cm².
+4. Số viên: 120 000 : 400 = **300 viên**.
+5. Tiền gạch: 300 × 40 000 = **12 000 000 đồng**.
+
+*Lỗi hay mắc:* Chia thẳng m² cho cm², hoặc đổi 1 m² thành 100 cm².
 
 ### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **64**
-b) **53**
-c) **75**
+a) **24**
+b) **21**
+c) **27**
 d) **vì ba số cách đều nên số ở giữa là trung bình cộng**
-e) **6**
-f) **18**
+e) **17**
+f) **85**
 
 **Cách giải mẫu:**
 
-1. Ba số cách đều nhau 11 đơn vị nên số ở giữa là trung bình cộng.
-2. Bước 1 — số thứ hai: 192 : 3 = 64.
-3. Bước 2 — số thứ nhất: 64 − 11 = 53.
-4. Bước 3 — số thứ ba: 64 + 11 = 75.
-5. Thử lại: 53 + 64 + 75 = 192 ✓
-6. Đáp số: **53, 64, 75**.
+1. Ba số cách đều nhau 3 đơn vị nên số ở giữa là trung bình cộng.
+2. Bước 1 — số thứ hai: 72 : 3 = 24.
+3. Bước 2 — số thứ nhất: 24 − 3 = 21.
+4. Bước 3 — số thứ ba: 24 + 3 = 27.
+5. Thử lại: 21 + 24 + 27 = 72 ✓
+6. Đáp số: **21, 24, 27**.
 
 *Lỗi hay mắc:* Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi.
 
@@ -196,9 +197,9 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài | Đo cái gì | Sai bài này nghĩa là | Học lại ở đâu |
 |:--:|---|---|---|
 | Bài 1 | Viết số từ dạng tổng theo hàng | Bỏ qua hàng khuyết nên số viết ra bị ngắn đi một chữ số. | Nhóm chuyên đề **—** · mức — |
-| Bài 2 | Đổi đơn vị diện tích | Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. | Nhóm chuyên đề **—** · mức — |
-| Bài 3 | Tỉ lệ bản đồ, tỉ lệ xích | Đổi mét sang xăng-ti-mét ngay từ đầu rồi lại nhân tỉ lệ một lần nữa. | Nhóm chuyên đề **—** · mức — |
-| Bài 4 | Tính thời điểm trong ngày | Cộng phần phút thành hơn 60 mà quên đổi thành giờ. | Nhóm chuyên đề **—** · mức — |
+| Bài 2 | Tính nhanh tổng nhiều số hạng | Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. | Nhóm chuyên đề **—** · mức — |
+| Bài 3 | Tỉ lệ thuận, rút về đơn vị | Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch. | Nhóm chuyên đề **—** · mức — |
+| Bài 4 | Bài toán lát gạch nền nhà | Chia thẳng m² cho cm², hoặc đổi 1 m² thành 100 cm². | Nhóm chuyên đề **—** · mức — |
 | Bài 5 | Tổng nhiều số có ràng buộc; tổng – tỉ | Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. | Nhóm chuyên đề **—** · mức — |
 
 ---

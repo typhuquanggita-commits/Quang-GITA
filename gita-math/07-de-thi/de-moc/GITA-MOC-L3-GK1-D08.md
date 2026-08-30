@@ -30,58 +30,56 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Đặt tính rồi tính.
 
-a) 948 : 4
-b) 1 875 : 3
-c) 930 × 3
-d) 143 × 9
-e) 653 × 7
+a) 474 : 3
+b) 3 493 : 7
+c) 1 720 : 4
+d) 923 × 2
+e) 1 002 : 6
+f) 1 832 : 4
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
 Ghi rõ đơn vị đồng ở mọi kết quả.
 
-a) Mua 3 quyển vở, mỗi quyển 5 000 đồng. Đưa cô bán hàng một tờ 20 000 đồng. Cô phải trả lại bao nhiêu tiền?
-b) Mua 4 quyển vở, mỗi quyển 7 000 đồng. Hết bao nhiêu tiền?
-c) Đổi một tờ 50 000 đồng ra các tờ 5 000 đồng thì được mấy tờ?
-d) Mua 6 quyển vở, mỗi quyển 12 000 đồng. Hết bao nhiêu tiền?
-e) Mua 3 quyển vở, mỗi quyển 3 000 đồng. Đưa cô bán hàng một tờ 10 000 đồng. Cô phải trả lại bao nhiêu tiền?
-f) Đổi một tờ 50 000 đồng ra các tờ 1 000 đồng thì được mấy tờ?
+a) Mua 5 quyển vở, mỗi quyển 15 000 đồng. Đưa cô bán hàng một tờ 100 000 đồng. Cô phải trả lại bao nhiêu tiền?
+b) Đổi một tờ 50 000 đồng ra các tờ 1 000 đồng thì được mấy tờ?
+c) Mua 6 quyển vở, mỗi quyển 15 000 đồng. Hết bao nhiêu tiền?
+d) Đổi một tờ 20 000 đồng ra các tờ 1 000 đồng thì được mấy tờ?
+e) Mua 2 quyển vở, mỗi quyển 15 000 đồng. Đưa cô bán hàng một tờ 50 000 đồng. Cô phải trả lại bao nhiêu tiền?
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
 Tóm tắt bằng sơ đồ đoạn thẳng rồi giải.
 
-a) Nhóm Hoa Phượng và tổ Ba trồng được 872 cây. Nhóm Hoa Phượng trồng nhiều hơn tổ Ba 76 cây. Mỗi tổ trồng bao nhiêu cây?
-b) Kho B và kho A chứa tất cả 712 kg phân bón. Kho B chứa nhiều hơn kho A 168 kg. Mỗi nơi chứa bao nhiêu kg?
-c) Hai lớp 5B và 5C có tất cả 240 quyển sách. Lớp 5B có nhiều hơn lớp 5C 78 quyển. Mỗi lớp có bao nhiêu quyển?
-d) Đội Hai và tổ Một trồng được 346 cây. Đội Hai trồng nhiều hơn tổ Một 74 cây. Mỗi tổ trồng bao nhiêu cây?
-e) Hai lớp 5B và 4B có tất cả 650 quyển sách. Lớp 5B có nhiều hơn lớp 4B 78 quyển. Mỗi lớp có bao nhiêu quyển?
+a) Nhóm Sao Mai và tổ Một trồng được 798 cây. Nhóm Sao Mai trồng nhiều hơn tổ Một 144 cây. Mỗi tổ trồng bao nhiêu cây?
+b) Trang trại và kho A chứa tất cả 678 kg muối. Trang trại chứa nhiều hơn kho A 74 kg. Mỗi nơi chứa bao nhiêu kg?
+c) Hai lớp 3B và 5B có tất cả 772 quyển sách. Lớp 3B có nhiều hơn lớp 5B 80 quyển. Mỗi lớp có bao nhiêu quyển?
+d) Kho B và xưởng chứa tất cả 574 kg đường. Kho B chứa nhiều hơn xưởng 138 kg. Mỗi nơi chứa bao nhiêu kg?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
-Kẻ một bảng lịch nhỏ ra nháp rồi trả lời.
+Vẽ hình và kẻ lưới ra nháp.
 
-a) Tháng 10 năm 2027 có bao nhiêu ngày?
-b) Năm 2027 có phải năm nhuận không?
-c) Ngày 1 tháng 10 là Thứ Hai. Hỏi ngày 29 tháng ấy là thứ mấy?
-d) Tháng ấy có bao nhiêu ngày Chủ nhật?
-e) Ngày cuối cùng của tháng là thứ mấy?
-f) Một năm thường có bao nhiêu ngày, năm nhuận có bao nhiêu ngày?
+a) Một hình chữ nhật 10 cm × 8 cm được phủ kín bằng các hình vuông cạnh 2 cm. Cần bao nhiêu hình vuông?
+b) Diện tích hình chữ nhật ấy bằng bao nhiêu?
+c) Diện tích mỗi hình vuông nhỏ bằng bao nhiêu?
+d) Chia hình chữ nhật ấy thành 2 phần bằng nhau thì mỗi phần có diện tích bao nhiêu?
+e) Chia thành 4 phần bằng nhau thì mỗi phần bao nhiêu?
+f) Nếu ghép hai hình chữ nhật ấy theo chiều dài thì hình mới có chu vi bao nhiêu?
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
-Mỗi ý một phép tính, trả lời gọn.
+Giả sử tất cả đều là gà rồi lập luận.
 
-a) Nhóm Sao Mai có 48 lá cờ, nhóm Hoa Phượng có gấp 3 lần nhóm Sao Mai. Nhóm Hoa Phượng có bao nhiêu lá cờ?
-b) Cả hai tổ có bao nhiêu lá cờ?
-c) Nhóm Hoa Phượng nhiều hơn nhóm Sao Mai bao nhiêu lá cờ?
-d) Nếu nhóm Sao Mai được cho thêm 12 lá cờ thì nhóm Sao Mai có bao nhiêu lá?
-e) Khi đó nhóm Hoa Phượng còn nhiều hơn nhóm Sao Mai bao nhiêu lá?
-f) Phải cho nhóm Sao Mai thêm bao nhiêu lá nữa thì hai tổ bằng nhau?
+a) Vừa gà vừa chó có 28 con, đếm được 72 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
+b) Vừa gà vừa chó có 19 con, đếm được 44 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
+c) Vừa gà vừa chó có 30 con, đếm được 98 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
+d) Vừa gà vừa chó có 27 con, đếm được 70 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
+e) Vừa gà vừa chó có 34 con, đếm được 88 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
 
 
 ---
@@ -89,99 +87,98 @@ f) Phải cho nhóm Sao Mai thêm bao nhiêu lá nữa thì hai tổ bằng nhau
 ## ĐÁP ÁN VÀ BIỂU ĐIỂM
 
 
-### Bài 1, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **237**
-b) **625**
-c) **2 790**
-d) **1 287**
-e) **4 571**
+a) **158**
+b) **499**
+c) **430**
+d) **1 846**
+e) **167**
+f) **458**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 948 : 4
+1. Xét ý a: 474 : 3
 2. Đọc vị: đây là dạng **Nhân, chia số tự nhiên**; dấu hiệu là Yêu cầu “đặt tính rồi tính” với phép nhân, chia.
 3. Kiến thức phải dùng: Kĩ thuật đặt tính nhân, chia.
 4. Cách làm: Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ chữ số.
 5. Lối tắt: Kiểm tra kết quả bằng phép tính ngược: thương × số chia = số bị chia.
-6. Kết quả: **237**.
+6. Kết quả: **158**.
 
 *Lỗi hay mắc:* Quên viết chữ số 0 ở thương nên thương thiếu chữ số.
 
-### Bài 2, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 2, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **5 000 đồng**
-b) **28 000 đồng**
-c) **10 tờ**
-d) **72 000 đồng**
-e) **1 000 đồng**
-f) **50 tờ**
+a) **25 000 đồng**
+b) **50 tờ**
+c) **90 000 đồng**
+d) **20 tờ**
+e) **20 000 đồng**
 
 **Cách giải mẫu:**
 
-1. Bước 1 — tiền hàng: 5 000 × 3 = 15 000 (đồng).
-2. Bước 2 — tiền trả lại: 20 000 − 15 000 = 5 000 (đồng).
-3. Thử lại: 15 000 + 5 000 = 20 000 ✓
-4. Đáp số: **5 000 đồng**.
+1. Bước 1 — tiền hàng: 15 000 × 5 = 75 000 (đồng).
+2. Bước 2 — tiền trả lại: 100 000 − 75 000 = 25 000 (đồng).
+3. Thử lại: 75 000 + 25 000 = 100 000 ✓
+4. Đáp số: **25 000 đồng**.
 
 *Lỗi hay mắc:* Lấy tiền đưa trừ ngay giá một quyển vở.
 
-### Bài 3, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 3, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **nhóm Hoa Phượng: 474 cây, tổ Ba: 398 cây**
-b) **kho B: 440 kg, kho A: 272 kg**
-c) **5B: 159 quyển, 5C: 81 quyển**
-d) **đội Hai: 210 cây, tổ Một: 136 cây**
-e) **5B: 364 quyển, 4B: 286 quyển**
+a) **nhóm Sao Mai: 471 cây, tổ Một: 327 cây**
+b) **trang trại: 376 kg, kho A: 302 kg**
+c) **3B: 426 quyển, 5B: 346 quyển**
+d) **kho B: 356 kg, xưởng: 218 kg**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Nhóm Hoa Phượng và tổ Ba trồng được 872 cây. Nhóm Hoa Phượng trồng nhiều hơn tổ Ba 76 cây. Mỗi tổ trồng bao nhiêu cây?
+1. Xét ý a: Nhóm Sao Mai và tổ Một trồng được 798 cây. Nhóm Sao Mai trồng nhiều hơn tổ Một 144 cây. Mỗi tổ trồng bao nhiêu cây?
 2. Đọc vị: đây là dạng **Tổng – hiệu có lời văn**; dấu hiệu là “Có tất cả …” và “… nhiều hơn … là …”.
 3. Kiến thức phải dùng: Công thức tổng – hiệu, sơ đồ đoạn thẳng.
 4. Cách làm: Đọc vị tổng và hiệu → sơ đồ → công thức.
 5. Lối tắt: Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần.
-6. Kết quả: **nhóm Hoa Phượng: 474 cây, tổ Ba: 398 cây**.
+6. Kết quả: **nhóm Sao Mai: 471 cây, tổ Một: 327 cây**.
 
 *Lỗi hay mắc:* Nhầm hiệu thành tổng khi đề diễn đạt vòng vo.
 
 ### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **31**
-b) **không**
-c) **Thứ Hai**
-d) **4**
-e) **Thứ Tư**
-f) **365 ngày và 366 ngày**
+a) **20**
+b) **80 cm²**
+c) **4 cm²**
+d) **40 cm²**
+e) **20 cm²**
+f) **52 cm**
 
 **Cách giải mẫu:**
 
-1. Tháng 10 thuộc nhóm tháng 31 ngày, nên có 31 ngày.
-2. Ngày 1 là Thứ Hai. Cứ sau 7 ngày thì lặp lại đúng thứ ấy.
-3. Từ ngày 1 đến ngày 29 cách nhau 28 ngày.
-4. 28 : 7 dư 0, nên lùi 0 bước từ Thứ Hai.
-5. Vậy ngày 29 là **Thứ Hai**.
+1. Bước 1 — diện tích hình chữ nhật: 10 × 8 = 80 (cm²).
+2. Bước 2 — diện tích một hình vuông nhỏ: 2 × 2 = 4 (cm²).
+3. Bước 3 — số hình vuông cần dùng: 80 : 4 = 20 (hình).
+4. Kiểm tra: xếp được 5 hàng, mỗi hàng 4 hình — đúng 20 hình ✓
+5. Đáp số: **20 hình vuông**.
 
-*Lỗi hay mắc:* Đếm tay từng ngày nên vừa lâu vừa sai.
+*Lỗi hay mắc:* Chia chu vi cho cạnh mảnh thay vì chia diện tích cho diện tích.
 
-### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 5, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **144**
-b) **192**
-c) **96**
-d) **60**
-e) **84**
-f) **96**
+a) **20 con gà, 8 con chó**
+b) **16 con gà, 3 con chó**
+c) **11 con gà, 19 con chó**
+d) **19 con gà, 8 con chó**
+e) **24 con gà, 10 con chó**
 
 **Cách giải mẫu:**
 
-1. Bước 1 — số cờ của nhóm Hoa Phượng: 48 × 3 = 144 (lá).
-2. Bước 2 — cả hai tổ: 48 + 144 = 192 (lá).
-3. Bước 3 — nhóm Hoa Phượng nhiều hơn: 144 − 48 = 96 (lá).
-4. Bước 4 — muốn hai tổ bằng nhau thì cho nhóm Sao Mai thêm đúng phần hơn ấy, tức 96 lá.
-5. Đáp số ý a: **144 lá cờ**.
+1. Xét ý a: Vừa gà vừa chó có 28 con, đếm được 72 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
+2. Đọc vị: đây là dạng **Giả thiết tạm**; dấu hiệu là Hai loại con vật, biết tổng số con và tổng số chân.
+3. Kiến thức phải dùng: Phương pháp giả thiết tạm.
+4. Cách làm: Giả sử đồng nhất → tính chênh → chia cho hiệu số chân.
+5. Lối tắt: Số chó = (số chân − 2 × số con) : 2.
+6. Kết quả: **20 con gà, 8 con chó**.
 
-*Lỗi hay mắc:* Nhầm hai tình huống: cho thêm và chuyển qua lại.
+*Lỗi hay mắc:* Chia số chân thiếu cho 4.
 
 ---
 
@@ -194,8 +191,8 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài 1 | Nhân, chia số tự nhiên | Quên viết chữ số 0 ở thương nên thương thiếu chữ số. | Nhóm chuyên đề **—** · mức — |
 | Bài 2 | Bài toán tiền tệ hai bước | Lấy tiền đưa trừ ngay giá một quyển vở. | Nhóm chuyên đề **—** · mức — |
 | Bài 3 | Tổng – hiệu có lời văn | Nhầm hiệu thành tổng khi đề diễn đạt vòng vo. | Nhóm chuyên đề **—** · mức — |
-| Bài 4 | Lịch, tháng, năm nhuận | Đếm tay từng ngày nên vừa lâu vừa sai. | Nhóm chuyên đề **—** · mức — |
-| Bài 5 | Toán điển hình: gấp, kém, nhiều hơn, ít hơn | Nhầm hai tình huống: cho thêm và chuyển qua lại. | Nhóm chuyên đề **—** · mức — |
+| Bài 4 | Phủ hình, chia hình | Chia chu vi cho cạnh mảnh thay vì chia diện tích cho diện tích. | Nhóm chuyên đề **—** · mức — |
+| Bài 5 | Giả thiết tạm | Chia số chân thiếu cho 4. | Nhóm chuyên đề **—** · mức — |
 
 ---
 

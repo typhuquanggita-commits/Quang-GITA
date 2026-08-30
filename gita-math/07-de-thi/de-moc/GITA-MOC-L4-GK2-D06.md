@@ -30,56 +30,57 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Trả lời nhanh, mỗi ý không quá 20 giây.
 
-a) 4 195 569 … 4 196 102
-b) Làm tròn 6 527 786 đến hàng trăm.
-c) Chữ số hàng triệu của số 4 124 386 có giá trị bằng bao nhiêu?
-d) Số liền trước và số liền sau của 7 702 799 là những số nào?
-e) Chữ số hàng trăm nghìn của số 733 621 có giá trị bằng bao nhiêu?
-f) 5 926 896 … 5 925 352
+a) Làm tròn 9 859 803 đến hàng nghìn.
+b) 3 354 103 … 3 354 872
+c) Số liền trước và số liền sau của 1 180 695 là những số nào?
+d) Chữ số hàng trăm của số 2 218 719 có giá trị bằng bao nhiêu?
+e) Số liền trước và số liền sau của 540 001 là những số nào?
+f) 5 059 231 … 5 061 047
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
 Đặt tính rồi tính.
 
-a) 4 626 × 95
-b) 4 274 × 44
-c) 421 314 : 71
-d) 1 427 × 16
-e) 5 806 × 59
-f) 91 740 : 55
+a) 6 750 × 19
+b) 2 088 × 40
+c) 8 700 × 28
+d) 344 365 : 35
+e) 136 660 : 20
+f) 8 475 × 88
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
 Đọc kĩ rồi trả lời từng câu.
 
-a) Hùng có 61 quyển vở, Bình có ít hơn Hùng 16 quyển. Bình có bao nhiêu quyển vở?
-b) Hùng có 44 quyển vở, Bình có số vở gấp 3 lần Hùng. Bình có bao nhiêu quyển vở?
-c) Hùng có 11 quyển vở, Bình có nhiều hơn Hùng 25 quyển. Bình có bao nhiêu quyển vở?
-d) Hùng có 180 quyển vở, số vở của Bình kém 6 lần số vở của Hùng. Bình có bao nhiêu quyển vở?
+a) Chi có 170 quyển vở, số vở của Hùng kém 5 lần số vở của Chi. Hùng có bao nhiêu quyển vở?
+b) Chi có 56 quyển vở, Hùng có nhiều hơn Chi 29 quyển. Hùng có bao nhiêu quyển vở?
+c) Chi có 53 quyển vở, Hùng có số vở gấp 2 lần Chi. Hùng có bao nhiêu quyển vở?
+d) Chi có 45 quyển vở, Hùng có ít hơn Chi 7 quyển. Hùng có bao nhiêu quyển vở?
+e) Chi có 17 quyển vở, Hùng có số vở gấp 3 lần Chi. Hùng có bao nhiêu quyển vở?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
-Điền dấu <, >, = thích hợp.
+Vẽ hình tròn và ghi kí hiệu lên hình.
 
-a) 24 hg … 6 688 g
-b) 77 dam … 5 554 cm
-c) 53 m² … 1 233 ha
-d) 20 m² … 386 ha
-e) 54 dag … 7 156 tấn
+a) Hình tròn A có bán kính 31 cm, hình tròn B có đường kính 78 cm. Hình nào lớn hơn?
+b) Hình tròn có bán kính 17 cm. Đường kính dài bao nhiêu?
+c) Hình tròn có đường kính 78 cm. Bán kính dài bao nhiêu?
+d) Hình tròn có bán kính 27 cm. Đường kính dài bao nhiêu?
+e) Hình tròn có đường kính 80 cm. Bán kính dài bao nhiêu?
+f) Hình tròn A có bán kính 5 cm, hình tròn B có đường kính 78 cm. Hình nào lớn hơn?
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
 Tính số cây cần trồng trong mỗi trường hợp.
 
-a) Trồng cây trên đoạn đường dài 66 m, hai cây liền nhau cách nhau 6 m, chỉ trồng ở một đầu đường. Cần bao nhiêu cây?
-b) Trồng cây quanh một cái ao hình tròn có chu vi 40 m, hai cây liền nhau cách nhau 2 m. Cần bao nhiêu cây?
-c) Trồng cây suốt một đoạn đường dài 156 m, hai cây liền nhau cách nhau 4 m, trồng cả ở hai đầu đường. Cần bao nhiêu cây?
-d) Trồng cây trên đoạn đường dài 26 m, hai cây liền nhau cách nhau 2 m, không trồng ở cả hai đầu. Cần bao nhiêu cây?
-e) Trồng cây trên đoạn đường dài 84 m, hai cây liền nhau cách nhau 2 m, không trồng ở cả hai đầu. Cần bao nhiêu cây?
+a) Trồng cây trên đoạn đường dài 140 m, hai cây liền nhau cách nhau 5 m, chỉ trồng ở một đầu đường. Cần bao nhiêu cây?
+b) Trồng cây suốt một đoạn đường dài 184 m, hai cây liền nhau cách nhau 4 m, trồng cả ở hai đầu đường. Cần bao nhiêu cây?
+c) Trồng cây quanh một cái ao hình tròn có chu vi 36 m, hai cây liền nhau cách nhau 4 m. Cần bao nhiêu cây?
+d) Trồng cây trên đoạn đường dài 144 m, hai cây liền nhau cách nhau 4 m, không trồng ở cả hai đầu. Cần bao nhiêu cây?
 
 
 ---
@@ -89,97 +90,98 @@ e) Trồng cây trên đoạn đường dài 84 m, hai cây liền nhau cách nh
 
 ### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **<**
-b) **6 527 800**
-c) **4 000 000**
-d) **7 702 798 và 7 702 800**
-e) **700 000**
-f) **>**
+a) **9 860 000**
+b) **<**
+c) **1 180 694 và 1 180 696**
+d) **700**
+e) **540 000 và 540 002**
+f) **<**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 4 195 569 … 4 196 102
+1. Xét ý a: Làm tròn 9 859 803 đến hàng nghìn.
 2. Đọc vị: đây là dạng **Ôn tập số tự nhiên**; dấu hiệu là Câu hỏi ngắn về so sánh, hàng, số liền kề, làm tròn.
 3. Kiến thức phải dùng: Thứ tự số tự nhiên, giá trị hàng, quy tắc làm tròn.
 4. Cách làm: Đếm chữ số, xét hàng từ trái sang phải.
 5. Lối tắt: Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số.
-6. Kết quả: **<**.
+6. Kết quả: **9 860 000**.
 
 *Lỗi hay mắc:* So sánh từ hàng đơn vị; hoặc làm tròn nhìn nhầm sang chính hàng cần làm tròn.
 
 ### Bài 2, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **439 470**
-b) **188 056**
-c) **5 934**
-d) **22 832**
-e) **342 554**
-f) **1 668**
+a) **128 250**
+b) **83 520**
+c) **243 600**
+d) **9 839**
+e) **6 833**
+f) **745 800**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 4 626 × 95
+1. Xét ý a: 6 750 × 19
 2. Đọc vị: đây là dạng **Nhân, chia số tự nhiên**; dấu hiệu là Yêu cầu “đặt tính rồi tính” với phép nhân, chia.
 3. Kiến thức phải dùng: Kĩ thuật đặt tính nhân, chia.
 4. Cách làm: Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ chữ số.
 5. Lối tắt: Kiểm tra kết quả bằng phép tính ngược: thương × số chia = số bị chia.
-6. Kết quả: **439 470**.
+6. Kết quả: **128 250**.
 
 *Lỗi hay mắc:* Quên viết chữ số 0 ở thương nên thương thiếu chữ số.
 
-### Bài 3, (2 điểm — mỗi ý 0,5 điểm)
+### Bài 3, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **45**
-b) **132**
-c) **36**
-d) **30**
+a) **34**
+b) **85**
+c) **106**
+d) **38**
+e) **51**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Hùng có 61 quyển vở, Bình có ít hơn Hùng 16 quyển. Bình có bao nhiêu quyển vở?
+1. Xét ý a: Chi có 170 quyển vở, số vở của Hùng kém 5 lần số vở của Chi. Hùng có bao nhiêu quyển vở?
 2. Đọc vị: đây là dạng **Quan hệ nhiều hơn – ít hơn, gấp – kém**; dấu hiệu là Các cụm “nhiều hơn”, “ít hơn”, “gấp … lần”, “kém … lần”.
 3. Kiến thức phải dùng: Bốn phép tính, từ khoá chỉ quan hệ.
 4. Cách làm: Đọc vị từ khoá → chọn phép tính.
 5. Lối tắt: Kết quả lớn hơn hay bé hơn số đã cho? Trả lời được là biết ngay phép tính.
-6. Kết quả: **45**.
+6. Kết quả: **34**.
 
 *Lỗi hay mắc:* Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”.
 
-### Bài 4, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **<**
-b) **>**
-c) **<**
-d) **<**
-e) **<**
-
-**Cách giải mẫu:**
-
-1. Xét ý a: 24 hg … 6 688 g
-2. Đọc vị: đây là dạng **So sánh số đo đại lượng**; dấu hiệu là Hai vế có đơn vị khác nhau.
-3. Kiến thức phải dùng: Bảng đơn vị đo, so sánh số tự nhiên.
-4. Cách làm: Đổi về cùng đơn vị rồi so sánh.
-5. Lối tắt: Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số.
-6. Kết quả: **<**.
-
-*Lỗi hay mắc:* So thẳng hai con số, bỏ qua đơn vị.
-
-### Bài 5, (2 điểm — mỗi ý 0,4 điểm)
-
-a) **11**
-b) **20**
-c) **40**
-d) **12**
-e) **41**
+a) **B**
+b) **34 cm**
+c) **39 cm**
+d) **54 cm**
+e) **40 cm**
+f) **B**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Trồng cây trên đoạn đường dài 66 m, hai cây liền nhau cách nhau 6 m, chỉ trồng ở một đầu đường. Cần bao nhiêu cây?
+1. Xét ý a: Hình tròn A có bán kính 31 cm, hình tròn B có đường kính 78 cm. Hình nào lớn hơn?
+2. Đọc vị: đây là dạng **Nhận biết hình tròn và các yếu tố**; dấu hiệu là Đề nhắc tâm, bán kính, đường kính.
+3. Kiến thức phải dùng: Quan hệ đường kính – bán kính.
+4. Cách làm: Quy về bán kính rồi so sánh hoặc tính.
+5. Lối tắt: Nhìn đơn vị và tên đại lượng trước khi so sánh.
+6. Kết quả: **B**.
+
+*Lỗi hay mắc:* So bán kính của hình này với đường kính của hình kia.
+
+### Bài 5, (2 điểm — mỗi ý 0,5 điểm)
+
+a) **28**
+b) **47**
+c) **9**
+d) **35**
+
+**Cách giải mẫu:**
+
+1. Xét ý a: Trồng cây trên đoạn đường dài 140 m, hai cây liền nhau cách nhau 5 m, chỉ trồng ở một đầu đường. Cần bao nhiêu cây?
 2. Đọc vị: đây là dạng **Bài toán trồng cây**; dấu hiệu là Từ khoá “trồng cây”, “cột điện”, “quanh ao”, “hai đầu”.
 3. Kiến thức phải dùng: Quan hệ số cây – số khoảng.
 4. Cách làm: Tính số khoảng rồi chọn đúng công thức theo trường hợp.
 5. Lối tắt: Khép kín thì số cây bằng đúng số khoảng — không cộng, không trừ.
-6. Kết quả: **11**.
+6. Kết quả: **28**.
 
 *Lỗi hay mắc:* Máy móc cộng 1 cho mọi trường hợp.
 
@@ -194,7 +196,7 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài 1 | Ôn tập số tự nhiên | So sánh từ hàng đơn vị; hoặc làm tròn nhìn nhầm sang chính hàng cần làm tròn. | Nhóm chuyên đề **—** · mức — |
 | Bài 2 | Nhân, chia số tự nhiên | Quên viết chữ số 0 ở thương nên thương thiếu chữ số. | Nhóm chuyên đề **—** · mức — |
 | Bài 3 | Quan hệ nhiều hơn – ít hơn, gấp – kém | Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. | Nhóm chuyên đề **—** · mức — |
-| Bài 4 | So sánh số đo đại lượng | So thẳng hai con số, bỏ qua đơn vị. | Nhóm chuyên đề **—** · mức — |
+| Bài 4 | Nhận biết hình tròn và các yếu tố | So bán kính của hình này với đường kính của hình kia. | Nhóm chuyên đề **—** · mức — |
 | Bài 5 | Bài toán trồng cây | Máy móc cộng 1 cho mọi trường hợp. | Nhóm chuyên đề **—** · mức — |
 
 ---

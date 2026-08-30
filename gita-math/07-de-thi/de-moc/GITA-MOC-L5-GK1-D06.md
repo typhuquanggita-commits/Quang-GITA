@@ -30,46 +30,46 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Đặt tính rồi tính.
 
-a) 873 565 + 314 072
-b) 231 568 − 142 709
-c) 871 332 + 978 672
-d) 335 347 + 726 523
-e) 859 463 + 54 834
-f) 632 074 − 373 836
+a) 925 455 − 158 756
+b) 517 542 − 339 266
+c) 895 597 − 220 318
+d) 541 961 − 285 178
+e) 567 261 + 904 349
+f) 267 514 + 528 833
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
 Đặt tính rồi tính. Ước lượng trước để tự kiểm tra.
 
-a) 281 782 − 267 219
-b) 115 980 200 : 185
-c) 816 442 × 737
-d) 236 317 + 173 926
-e) 69 365 910 : 465
-f) 449 545 + 619 761
+a) 4 936 × 197
+b) 327 341 504 : 448
+c) 960 974 + 672 917
+d) 387 330 − 131 585
+e) 716 227 704 : 802
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
 Giải bằng phương pháp rút về đơn vị.
 
-a) 3 bao gạo nặng 36 kg. Hỏi 9 bao như thế nặng bao nhiêu kg?
-b) 11 bao muối nặng 528 kg. Hỏi 20 bao như thế nặng bao nhiêu kg?
-c) 12 bao xi măng nặng 192 kg. Hỏi 10 bao như thế nặng bao nhiêu kg?
-d) 6 bao thóc nặng 324 kg. Hỏi 6 bao như thế nặng bao nhiêu kg?
+a) 4 bao muối nặng 80 kg. Hỏi 4 bao như thế nặng bao nhiêu kg?
+b) 2 bao gạo nặng 106 kg. Hỏi 7 bao như thế nặng bao nhiêu kg?
+c) 4 bao gạo nặng 108 kg. Hỏi 10 bao như thế nặng bao nhiêu kg?
+d) 7 bao phân bón nặng 147 kg. Hỏi 6 bao như thế nặng bao nhiêu kg?
+e) 12 bao xi măng nặng 660 kg. Hỏi 11 bao như thế nặng bao nhiêu kg?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
 Điền số thích hợp vào chỗ chấm.
 
-a) 59 km² = … ha
-b) 200 dam² = … hm²
-c) 40 dam² = … m²
-d) 480 000 m² = … ha
-e) 23 hm² = … m²
-f) 10 hm² = … m²
+a) 34 dam² = … m²
+b) 900 dam² = … hm²
+c) 84 km² = … ha
+d) 83 ha = … m²
+e) 5 hm² = … m²
+f) 9 hm² = … m²
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
@@ -80,7 +80,7 @@ a) Có 27 gói kẹo giống hệt nhau, trong đó đúng một gói nhẹ hơn
 b) Một lần cân bằng cân đĩa cho mấy kết quả khác nhau?
 c) Vì thế mỗi lần cân nên chia số gói thành mấy phần?
 d) Sau lần cân thứ nhất, số gói còn phải xét nhiều nhất là bao nhiêu?
-e) Biết Hà nặng hơn Lan, Lan nặng hơn Nam. Ai nhẹ nhất?
+e) Biết Yến nặng hơn Chi, Chi nặng hơn Nam. Ai nhẹ nhất?
 f) Với ba bạn ấy, cần cân ít nhất mấy lần để xếp thứ tự từ nhẹ đến nặng?
 
 
@@ -91,77 +91,76 @@ f) Với ba bạn ấy, cần cân ít nhất mấy lần để xếp thứ tự
 
 ### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **1 187 637**
-b) **88 859**
-c) **1 850 004**
-d) **1 061 870**
-e) **914 297**
-f) **258 238**
+a) **766 699**
+b) **178 276**
+c) **675 279**
+d) **256 783**
+e) **1 471 610**
+f) **796 347**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 873 565 + 314 072
+1. Xét ý a: 925 455 − 158 756
 2. Đọc vị: đây là dạng **Cộng, trừ số tự nhiên**; dấu hiệu là Yêu cầu “đặt tính rồi tính”.
 3. Kiến thức phải dùng: Kĩ thuật đặt tính, nhớ và mượn.
 4. Cách làm: Đặt tính thẳng hàng, tính từ hàng đơn vị.
 5. Lối tắt: Làm tròn một số hạng để ước lượng trước, dùng kết quả ước lượng để phát hiện sai sót.
-6. Kết quả: **1 187 637**.
+6. Kết quả: **766 699**.
 
 *Lỗi hay mắc:* Viết lệch hàng khi hai số có số chữ số khác nhau.
 
-### Bài 2, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 2, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **14 563**
-b) **626 920**
-c) **601 717 754**
-d) **410 243**
-e) **149 174**
-f) **1 069 306**
+a) **972 392**
+b) **730 673**
+c) **1 633 891**
+d) **255 745**
+e) **893 052**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 281 782 − 267 219
-2. Đọc vị: đây là dạng **Bốn phép tính với số tự nhiên**; dấu hiệu là Yêu cầu “đặt tính rồi tính”.
-3. Kiến thức phải dùng: Kĩ thuật đặt tính cộng, trừ, nhân, chia.
-4. Cách làm: Đặt tính thẳng cột, tính từ hàng đơn vị.
-5. Lối tắt: Ước lượng bằng cách làm tròn để phát hiện sai sót về độ lớn.
-6. Kết quả: **14 563**.
+1. Đặt tính, nhân lần lượt từng chữ số của 197 với 4 936.
+2. Mỗi tích riêng viết lùi sang trái một cột.
+3. Cộng các tích riêng lại: 4 936 × 197 = 972 392.
+4. Ước lượng kiểm tra: khoảng 5 000 × 200 ≈ 1 000 000 — cùng độ lớn ✓
+5. Đáp số: **972 392**.
 
 *Lỗi hay mắc:* Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số.
 
-### Bài 3, (2 điểm — mỗi ý 0,5 điểm)
+### Bài 3, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **108**
-b) **960**
-c) **160**
-d) **324**
+a) **80**
+b) **371**
+c) **270**
+d) **126**
+e) **605**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 3 bao gạo nặng 36 kg. Hỏi 9 bao như thế nặng bao nhiêu kg?
+1. Xét ý a: 4 bao muối nặng 80 kg. Hỏi 4 bao như thế nặng bao nhiêu kg?
 2. Đọc vị: đây là dạng **Rút về đơn vị**; dấu hiệu là Cho giá trị của một nhóm, hỏi giá trị của nhóm khác cùng loại.
 3. Kiến thức phải dùng: Đại lượng tỉ lệ thuận, phép chia và phép nhân.
 4. Cách làm: Chia để rút về một đơn vị rồi nhân.
 5. Lối tắt: Nếu số bao mới gấp đôi số bao cũ thì khối lượng cũng gấp đôi — dùng tỉ số để bỏ qua bước chia.
-6. Kết quả: **108**.
+6. Kết quả: **80**.
 
 *Lỗi hay mắc:* Nhân ngay hai số đã cho mà bỏ qua bước chia.
 
 ### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **5 900**
-b) **2**
-c) **4 000**
-d) **48**
-e) **230 000**
-f) **100 000**
+a) **3 400**
+b) **9**
+c) **8 400**
+d) **830 000**
+e) **50 000**
+f) **90 000**
 
 **Cách giải mẫu:**
 
-1. 1 km² = 100 ha.
+1. 1 dam² = 100 m².
 2. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**.
-3. 59 × 100 = 5 900 (ha).
-4. Đáp số: **5 900 ha**.
+3. 34 × 100 = 3 400 (m²).
+4. Đáp số: **3 400 m²**.
 
 *Lỗi hay mắc:* Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc.
 

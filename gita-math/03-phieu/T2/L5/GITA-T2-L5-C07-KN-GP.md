@@ -30,18 +30,18 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần A**
 
-- **Bài A.1** — a) x = 4 584 · b) x = 213 · c) x = 7 514 · d) x = 754 · e) x = 740 · f) x = 891
-- **Bài A.2** — a) 1 039 000 · b) 75 340 · c) 3 939 000 · d) 8 605 · e) 987 100 · f) 6 037 · g) 4 523 000 · h) 47 010
-- **Bài A.3** — a) 37 973 · b) 765 004 032 · c) 439 705 · d) 841 116 · e) 659 269
-- **Bài A.4** — a) 141 · b) 2 096 · c) 3 471 · d) 396 · e) 2 968 · f) 3 648
-- **Bài A.5** — a) 66 823 946 · b) 17 297 · c) 56 187 · d) 22 717 812 · e) 12 125 750 · f) 78 586 941 · g) 69 974
+- **Bài A.1** — a) 5 046 · b) 290 · c) 9 092 000 · d) 3 168 · e) 2 862 · f) 1 664 000
+- **Bài A.2** — a) 34 017 · b) 35 146 · c) 95 230 · d) 48 024 · e) 32 312 · f) 6 820 065
+- **Bài A.3** — a) 3 588 · b) 3 660 · c) 126 · d) 166 · e) 171 · f) 5 928 · g) 303
+- **Bài A.4** — a) x = 41 · b) x = 733 · c) x = 15 080 · d) x = 6 103 · e) x = 123 · f) x = 277
+- **Bài A.5** — a) 196 707 704 · b) 25 140 · c) 1 071 284 · d) 485 602 · e) 53 367 080 · f) 13 799 · g) 588 159
 
 **Phần B**
 
 - **Bài B.1** — a) câu lời giải nêu rõ đang tìm đại lượng nào · b) phép tính, viết đủ dấu và đủ đơn vị · c) kết quả kèm đơn vị · d) câu đáp số · e) một phần tư số điểm của bài
-- **Bài B.2** — a) “Tính nhanh nhờ thừa số chung là:” · b) “Tổng các tích có thừa số chung là:” · c) “Tính nhanh nhờ thừa số 0 là:” · d) “Tính giá trị biểu thức số là:” · e) “Tổng dãy phân số có mẫu là tích hai số liên tiếp là:”
+- **Bài B.2** — a) “Tính nhanh nhờ thừa số chung là:” · b) “Tính nhanh nhờ thừa số 0 là:” · c) “Nhân một số với một tổng là:” · d) “Tính giá trị biểu thức số là:” · e) “Tính nhanh biểu thức số thập phân là:”
 - **Bài B.3** — a) không ghi trong dấu ngoặc phép tính · b) có, bắt buộc · c) có, bắt buộc · d) đơn vị vuông, ví dụ cm² · e) đơn vị khối, ví dụ cm³ · f) km/giờ hoặc m/phút
-- **Bài B.4** — a) Khoanh thừa số giống nhau ở hai tích trước khi viết dấu ngoặc. · b) Viết lại biểu thức dưới dạng a × (1 + 2 + … + n) trước khi tính. · c) Đọc hết biểu thức một lượt, khoanh các cụm giống nhau bị trừ cho nhau. · d) Gạch chân phép nhân, phép chia trước khi bắt đầu tính. · e) Viết ba số hạng đầu dưới dạng hiệu để thấy quy luật khử trước khi viết cả dãy. · f) Đếm số số hạng trước, xác định chẵn hay lẻ rồi mới ghép cặp.
+- **Bài B.4** — a) Khoanh thừa số giống nhau ở hai tích trước khi viết dấu ngoặc. · b) Đọc hết biểu thức một lượt, khoanh các cụm giống nhau bị trừ cho nhau. · c) Nhìn cột đơn giá trước: có dòng nào trùng đơn giá không? · d) Gạch chân phép nhân, phép chia trước khi bắt đầu tính. · e) Ước lượng độ lớn kết quả trước, dùng nó kiểm tra vị trí dấu phẩy. · f) Đếm số số hạng trước, xác định chẵn hay lẻ rồi mới ghép cặp.
 - **Bài B.5** — a) 1 phần trong 4 · b) 2 phần trong 4 · c) 1 phần trong 4 · d) 3 phần trong 4 · e) 1 đến 2 phần trong 4
 
 **Phần C**
@@ -55,17 +55,17 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần D**
 
 - **Bài D.1** — a) Tính nhanh dãy phân số, khử liên tiếp và so sánh biểu thức · b) 6 · c) tên một dạng bài của chương · d) 3 nhánh con: dấu hiệu · phương pháp · lỗi hay mắc · e) so với bảng dạng bài ở phiếu Dạng bài & Đọc vị
-- **Bài D.2** — a) Dãy cộng gồm nhiều tích cùng một thừa số · b) Đặt thừa số chung → tính tổng trong ngoặc bằng công thức · c) Nhân từng tích rồi cộng dồn, rất dài và dễ sai. · d) Nhân một số với một tổng, tổng dãy cách đều · e) 1 + 2 + … + 100 = 5 050; nhớ vài mốc để nhân ngay.
+- **Bài D.2** — a) Trong biểu thức có ngoặc chứa hai số giống nhau trừ nhau · b) Quét tìm cụm bằng 0 trước khi tính · c) Lao vào nhân từng cặp số lớn rồi mới phát hiện kết quả bằng 0. · d) Tính chất nhân với 0, phép trừ hai số bằng nhau · e) Nhìn dấu ngoặc trước tiên — bẫy thường nằm ở đó.
 - **Bài D.3** — a) Biểu thức có nhiều phép tính, có thể có ngoặc · b) Xét ngoặc → nhân chia → cộng trừ, trái sang phải · c) Cộng trước nhân khi biểu thức không có ngoặc. · d) Thứ tự thực hiện các phép tính · e) Nếu thấy dạng a × b + a × c thì đưa ngay về a × (b + c).
 - **Bài D.4** — a) Dấu cộng và trừ xen kẽ đều đặn · b) Ghép cặp, đếm số cặp, xử lí phần dư · c) Ghép cặp nhưng quên số hạng lẻ còn thừa ở cuối. · d) Ghép cặp, tính chất kết hợp · e) Dãy 1 − 2 + 3 − … với n chẵn bằng −n : 2; với n lẻ bằng (n + 1) : 2.
-- **Bài D.5** — a) Các thừa số hơn kém nhau rất ít · b) Quy về số gốc chung, so phần chênh · c) Nhân hết ra rồi mới so sánh — số lớn, dễ sai và mất thời gian. · d) Nhân một số với một tổng, một hiệu · e) Với hai tích có tổng hai thừa số bằng nhau, tích nào có hai thừa số gần nhau hơn thì lớn hơn.
+- **Bài D.5** — a) Mẫu số là 2, 6, 12, 20, 30… (tích hai số liên tiếp) · b) Tách thành hiệu, khử liên tiếp, giữ lại hai đầu · c) Quy đồng cả dãy — mẫu số chung khổng lồ, không làm nổi. · d) Tách phân số thành hiệu, phép trừ phân số · e) Kết quả luôn là 1 trừ 1 phần (n + 1), tức là n phần (n + 1).
 
 **Phần E**
 
 - **Bài E.1** — a) giới thiệu chương “Tính nhanh dãy phân số, khử liên tiếp và so sánh biểu thức” và mục tiêu · b) trình bày sơ đồ tư duy chương · c) giảng một dạng bài kèm ví dụ mẫu · d) nêu lỗi hay mắc và cách phòng · e) ra một bài cho lớp làm và chữa nhanh · f) tự phân công, mỗi bạn ít nhất một phút
 - **Bài E.2** — a) “Hôm nay nhóm mình nói về Tính nhanh nhờ thừa số chung.” · b) Hai tích cộng hoặc trừ nhau, có chung một thừa số · c) Nhân một số với một tổng, một hiệu · d) Tính nhanh: 47 × 25 + 47 × 75 → 4 700 · e) Đặt ra ngoài một số chỉ có ở một tích. · f) Sau khi đặt thừa số chung, tổng trong ngoặc thường tròn 10 hoặc 100.
-- **Bài E.3** — a) “Hôm nay nhóm mình nói về Tính nhanh nhờ thừa số 0.” · b) Trong biểu thức có ngoặc chứa hai số giống nhau trừ nhau · c) Tính chất nhân với 0, phép trừ hai số bằng nhau · d) Tính nhanh: 1 234 × 567 × (89 − 89) → 0 · e) Lao vào nhân từng cặp số lớn rồi mới phát hiện kết quả bằng 0. · f) Nhìn dấu ngoặc trước tiên — bẫy thường nằm ở đó.
-- **Bài E.4** — a) “Hôm nay nhóm mình nói về Tổng dãy phân số có mẫu là tích hai số liên tiếp.” · b) Mẫu số là 2, 6, 12, 20, 30… (tích hai số liên tiếp) · c) Tách phân số thành hiệu, phép trừ phân số · d) Tính nhanh: 1 phần 2 + 1 phần 6 + 1 phần 12 → 3 phần 4 · e) Quy đồng cả dãy — mẫu số chung khổng lồ, không làm nổi. · f) Kết quả luôn là 1 trừ 1 phần (n + 1), tức là n phần (n + 1).
+- **Bài E.3** — a) “Hôm nay nhóm mình nói về Nhân một số với một tổng.” · b) Nhiều dòng hoá đơn dùng chung một đơn giá · c) Tính chất phân phối của phép nhân với phép cộng · d) Mỗi hộp 15 000 đồng, sáng bán 12 hộp, chiều bán 8 hộp. Cả ngày thu bao nhiêu tiền? → 300 000 đồng · e) Nhân từng dòng rồi cộng, dài và dễ sai ở một dòng nào đó. · f) Chênh lệch tiền = chênh lệch số lượng × đơn giá, không cần tính tổng hai bên.
+- **Bài E.4** — a) “Hôm nay nhóm mình nói về Tính nhanh biểu thức số thập phân.” · b) Các số thập phân cộng lại tròn chục hoặc có thừa số chung · c) Tính chất phép tính với số thập phân · d) Tính nhanh: 2,5 × 4 × 25 → 250 · e) Đặt dấu phẩy sai vị trí ở kết quả cuối. · f) × 4 rồi × 25 là × 100 — chỉ việc dịch dấu phẩy sang phải hai chữ số.
 - **Bài E.5** — a) “Hôm nay nhóm mình nói về Tính ngược từ cuối.” · b) Đề bán hoặc dùng nhiều lần, lần sau lấy trên **phần còn lại** · c) Phân số của một số; phép chia; tính ngược · d) Bán 1/2 số cam, rồi bán 1/3 số còn lại, cuối cùng còn 10 quả. Lúc đầu có bao nhiêu quả? → 30 quả · e) Lấy cả hai phân số trên số ban đầu rồi cộng lại. · f) Bán một phần m thì còn (m − 1) phần m — nhân ngược bằng m : (m − 1) cho mỗi lần.
 
 ---
@@ -74,31 +74,11 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 Mỗi bài có hai phần: **các bước giải** với số liệu thật của chính bài ấy, và **cách nghĩ** áp dụng cho mọi bài cùng dạng. Đọc kĩ phần chữ đậm — đó là câu cần nhớ, không phải con số.
 
-### Bài A.1 — Tìm thành phần chưa biết của phép tính
+### Bài A.1 — Nhân, chia nhẩm với 10, 100, 1 000
 
 **Các bước giải**
 
-Xét ý a: x : 24 = 191
-
-Đọc vị: đây là dạng **Tìm x trong phép tính một bước**; dấu hiệu là Có chữ x đứng trong một phép tính.
-
-Kiến thức phải dùng: Quan hệ giữa các thành phần của phép tính.
-
-Cách làm: Gọi tên vai trò của x rồi dùng quy tắc tương ứng.
-
-Lối tắt: Thử lại bằng cách thay x vào đề — mất 3 giây nhưng chắc chắn.
-
-Kết quả: **x = 4 584**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Nhớ quy tắc: số hạng chưa biết = tổng − số hạng đã biết; số bị trừ = hiệu + số trừ; thừa số chưa biết = tích : thừa số đã biết; số bị chia = thương × số chia.
-
-*Điểm chốt:* x đứng ở **vị trí nào** trong phép tính quyết định quy tắc dùng.
-
-### Bài A.2 — Nhân, chia nhẩm với 10, 100, 1 000
-
-**Các bước giải**
-
-Xét ý a: 1 039 × 1 000
+Xét ý a: 50 460 : 10
 
 Đọc vị: đây là dạng **Nhân, chia nhẩm với số tròn chục, trăm, nghìn**; dấu hiệu là Thừa số hoặc số chia là 10, 100, 1 000.
 
@@ -108,65 +88,19 @@ Cách làm: Thêm hoặc bớt chữ số 0.
 
 Lối tắt: Nhân với 20 = nhân 2 rồi thêm một chữ số 0.
 
-Kết quả: **1 039 000**.
+Kết quả: **5 046**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Nhân một số với 10, 100, 1 000 thì viết thêm 1, 2, 3 chữ số 0 vào bên phải số đó. Chia cho 10, 100, 1 000 thì bớt đi 1, 2, 3 chữ số 0 ở bên phải.
 
 *Điểm chốt:* Đếm đúng **số chữ số 0** của số nhân hay số chia.
 
-### Bài A.3 — Ôn tập bốn phép tính với số tự nhiên
+### Bài A.2 — Đặt tính rồi tính (nhân, chia)
 
 > **BẪY — Chữ số 0 ở giữa thương.**
 
 **Các bước giải**
 
-Xét ý a: 185 898 − 147 925
-
-Đọc vị: đây là dạng **Bốn phép tính với số tự nhiên**; dấu hiệu là Yêu cầu “đặt tính rồi tính”.
-
-Kiến thức phải dùng: Kĩ thuật đặt tính cộng, trừ, nhân, chia.
-
-Cách làm: Đặt tính thẳng cột, tính từ hàng đơn vị.
-
-Lối tắt: Ước lượng bằng cách làm tròn để phát hiện sai sót về độ lớn.
-
-Kết quả: **37 973**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Cộng, trừ thì viết thẳng hàng đơn vị. Nhân thì viết các tích riêng lùi đúng cột rồi cộng. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0.
-
-*Điểm chốt:* Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương.
-
-*Muốn khó hơn:* Thêm phép tính có dấu ngoặc để ôn thứ tự thực hiện.
-
-*Phải chắc trước khi làm bài này:* Bảng nhân chia và kĩ thuật đặt tính.
-
-### Bài A.4 — Tính giá trị biểu thức
-
-> **BẪY — Thiếu ngoặc mà vẫn cộng trước.**
-
-**Các bước giải**
-
-Xét ý a: 261 − 15 × 8
-
-Đọc vị: đây là dạng **Tính giá trị biểu thức số**; dấu hiệu là Biểu thức có nhiều phép tính, có thể có ngoặc.
-
-Kiến thức phải dùng: Thứ tự thực hiện các phép tính.
-
-Cách làm: Xét ngoặc → nhân chia → cộng trừ, trái sang phải.
-
-Lối tắt: Nếu thấy dạng a × b + a × c thì đưa ngay về a × (b + c).
-
-Kết quả: **141**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Trong biểu thức không có dấu ngoặc: nhân và chia làm trước, cộng và trừ làm sau; cùng mức thì làm từ trái sang phải. Có dấu ngoặc thì làm trong ngoặc trước.
-
-*Điểm chốt:* Dấu ngoặc **đảo ngược** thứ tự ưu tiên — nhìn ngoặc trước khi tính.
-
-### Bài A.5 — Đặt tính rồi tính (nhân, chia)
-
-**Các bước giải**
-
-Xét ý a: 97 411 × 686
+Xét ý a: 1 020 510 : 30
 
 Đọc vị: đây là dạng **Nhân, chia số tự nhiên**; dấu hiệu là Yêu cầu “đặt tính rồi tính” với phép nhân, chia.
 
@@ -176,11 +110,75 @@ Cách làm: Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ
 
 Lối tắt: Kiểm tra kết quả bằng phép tính ngược: thương × số chia = số bị chia.
 
-Kết quả: **66 823 946**.
+Kết quả: **34 017**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
 
 *Điểm chốt:* Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
+
+### Bài A.3 — Tính giá trị biểu thức
+
+> **BẪY — Thiếu ngoặc mà vẫn cộng trước.**
+
+**Các bước giải**
+
+Xét ý a: 299 × (3 + 9)
+
+Đọc vị: đây là dạng **Tính giá trị biểu thức số**; dấu hiệu là Biểu thức có nhiều phép tính, có thể có ngoặc.
+
+Kiến thức phải dùng: Thứ tự thực hiện các phép tính.
+
+Cách làm: Xét ngoặc → nhân chia → cộng trừ, trái sang phải.
+
+Lối tắt: Nếu thấy dạng a × b + a × c thì đưa ngay về a × (b + c).
+
+Kết quả: **3 588**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Trong biểu thức không có dấu ngoặc: nhân và chia làm trước, cộng và trừ làm sau; cùng mức thì làm từ trái sang phải. Có dấu ngoặc thì làm trong ngoặc trước.
+
+*Điểm chốt:* Dấu ngoặc **đảo ngược** thứ tự ưu tiên — nhìn ngoặc trước khi tính.
+
+### Bài A.4 — Tìm thành phần chưa biết của phép tính
+
+**Các bước giải**
+
+Xét ý a: x × 11 = 451
+
+Đọc vị: đây là dạng **Tìm x trong phép tính một bước**; dấu hiệu là Có chữ x đứng trong một phép tính.
+
+Kiến thức phải dùng: Quan hệ giữa các thành phần của phép tính.
+
+Cách làm: Gọi tên vai trò của x rồi dùng quy tắc tương ứng.
+
+Lối tắt: Thử lại bằng cách thay x vào đề — mất 3 giây nhưng chắc chắn.
+
+Kết quả: **x = 41**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Nhớ quy tắc: số hạng chưa biết = tổng − số hạng đã biết; số bị trừ = hiệu + số trừ; thừa số chưa biết = tích : thừa số đã biết; số bị chia = thương × số chia.
+
+*Điểm chốt:* x đứng ở **vị trí nào** trong phép tính quyết định quy tắc dùng.
+
+### Bài A.5 — Ôn tập bốn phép tính với số tự nhiên
+
+**Các bước giải**
+
+Đặt tính, nhân lần lượt từng chữ số của 844 với 233 066.
+
+Mỗi tích riêng viết lùi sang trái một cột.
+
+Cộng các tích riêng lại: 233 066 × 844 = 196 707 704.
+
+Ước lượng kiểm tra: khoảng 233 000 × 800 ≈ 186 400 000 — cùng độ lớn ✓
+
+Đáp số: **196 707 704**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Cộng, trừ thì viết thẳng hàng đơn vị. Nhân thì viết các tích riêng lùi đúng cột rồi cộng. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0.
+
+*Điểm chốt:* Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương.
+
+*Muốn khó hơn:* Thêm phép tính có dấu ngoặc để ôn thứ tự thực hiện.
+
+*Phải chắc trước khi làm bài này:* Bảng nhân chia và kĩ thuật đặt tính.
 
 ### Bài B.1 — Bốn dòng bắt buộc của một lời giải
 
@@ -402,25 +400,25 @@ Kết quả: **Tính nhanh dãy phân số, khử liên tiếp và so sánh bi�
 
 *Điểm chốt:* Vẽ **từ trí nhớ** mới có tác dụng; chép lại thì không.
 
-### Bài D.2 — Nhánh 1 — Tổng các tích có thừa số chung
+### Bài D.2 — Nhánh 1 — Tính nhanh nhờ thừa số 0
 
 **Các bước giải**
 
 Xét ý a: Nhánh con 1 — dấu hiệu nhận biết?
 
-Đọc vị: đây là dạng **Tổng các tích có thừa số chung**; dấu hiệu là Dãy cộng gồm nhiều tích cùng một thừa số.
+Đọc vị: đây là dạng **Tính nhanh nhờ thừa số 0**; dấu hiệu là Trong biểu thức có ngoặc chứa hai số giống nhau trừ nhau.
 
-Kiến thức phải dùng: Nhân một số với một tổng, tổng dãy cách đều.
+Kiến thức phải dùng: Tính chất nhân với 0, phép trừ hai số bằng nhau.
 
-Cách làm: Đặt thừa số chung → tính tổng trong ngoặc bằng công thức.
+Cách làm: Quét tìm cụm bằng 0 trước khi tính.
 
-Lối tắt: 1 + 2 + … + 100 = 5 050; nhớ vài mốc để nhân ngay.
+Lối tắt: Nhìn dấu ngoặc trước tiên — bẫy thường nằm ở đó.
 
-Kết quả: **Dãy cộng gồm nhiều tích cùng một thừa số**.
+Kết quả: **Trong biểu thức có ngoặc chứa hai số giống nhau trừ nhau**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
 
-*Điểm chốt:* Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
+*Điểm chốt:* Quét tìm **cụm bằng 0** trước; thấy rồi thì viết đáp số ngay.
 
 ### Bài D.3 — Nhánh 2 — Tính giá trị biểu thức số
 
@@ -462,25 +460,25 @@ Kết quả: **Dấu cộng và trừ xen kẽ đều đặn**.
 
 *Điểm chốt:* Ghép cặp từ **đầu dãy**; số số hạng lẻ thì luôn dư đúng một số hạng cuối.
 
-### Bài D.5 — Nhánh 4 — Tính, so sánh tích bằng kĩ thuật tách – bù
+### Bài D.5 — Nhánh 4 — Tổng dãy phân số có mẫu là tích hai số liên tiếp
 
 **Các bước giải**
 
 Xét ý a: Nhánh con 1 — dấu hiệu nhận biết?
 
-Đọc vị: đây là dạng **Tính, so sánh tích bằng kĩ thuật tách – bù**; dấu hiệu là Các thừa số hơn kém nhau rất ít.
+Đọc vị: đây là dạng **Tổng dãy phân số có mẫu là tích hai số liên tiếp**; dấu hiệu là Mẫu số là 2, 6, 12, 20, 30… (tích hai số liên tiếp).
 
-Kiến thức phải dùng: Nhân một số với một tổng, một hiệu.
+Kiến thức phải dùng: Tách phân số thành hiệu, phép trừ phân số.
 
-Cách làm: Quy về số gốc chung, so phần chênh.
+Cách làm: Tách thành hiệu, khử liên tiếp, giữ lại hai đầu.
 
-Lối tắt: Với hai tích có tổng hai thừa số bằng nhau, tích nào có hai thừa số gần nhau hơn thì lớn hơn.
+Lối tắt: Kết quả luôn là 1 trừ 1 phần (n + 1), tức là n phần (n + 1).
 
-Kết quả: **Các thừa số hơn kém nhau rất ít**.
+Kết quả: **Mẫu số là 2, 6, 12, 20, 30… (tích hai số liên tiếp)**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
 
-*Điểm chốt:* Đưa mọi số về **cùng một số gốc** rồi mới so hoặc trừ.
+*Điểm chốt:* Tách mỗi phân số thành **hiệu hai phân số** rồi để chúng khử nhau.
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
@@ -522,45 +520,45 @@ Kết quả: **“Hôm nay nhóm mình nói về Tính nhanh nhờ thừa số c
 
 *Điểm chốt:* Thừa số chung phải xuất hiện ở **cả hai** tích thì mới đặt ra ngoài được.
 
-### Bài E.3 — Nội dung giảng — Tính nhanh nhờ thừa số 0
+### Bài E.3 — Nội dung giảng — Nhân một số với một tổng
 
 **Các bước giải**
 
 Xét ý a: Câu mở đầu giới thiệu dạng bài?
 
-Đọc vị: đây là dạng **Tính nhanh nhờ thừa số 0**; dấu hiệu là Trong biểu thức có ngoặc chứa hai số giống nhau trừ nhau.
+Đọc vị: đây là dạng **Nhân một số với một tổng**; dấu hiệu là Nhiều dòng hoá đơn dùng chung một đơn giá.
 
-Kiến thức phải dùng: Tính chất nhân với 0, phép trừ hai số bằng nhau.
+Kiến thức phải dùng: Tính chất phân phối của phép nhân với phép cộng.
 
-Cách làm: Quét tìm cụm bằng 0 trước khi tính.
+Cách làm: Gom số lượng rồi nhân một lần.
 
-Lối tắt: Nhìn dấu ngoặc trước tiên — bẫy thường nằm ở đó.
+Lối tắt: Chênh lệch tiền = chênh lệch số lượng × đơn giá, không cần tính tổng hai bên.
 
-Kết quả: **“Hôm nay nhóm mình nói về Tính nhanh nhờ thừa số 0.”**.
+Kết quả: **“Hôm nay nhóm mình nói về Nhân một số với một tổng.”**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu. Vì vậy phải quan sát toàn bộ biểu thức trước khi tính, tìm cụm nào có giá trị bằng 0.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Khi nhiều món có **cùng đơn giá**, cộng số lượng trước rồi nhân một lần. Đó là tính chất một số nhân một tổng, và ở hoá đơn thật nó tiết kiệm gần hết công việc.
 
-*Điểm chốt:* Quét tìm **cụm bằng 0** trước; thấy rồi thì viết đáp số ngay.
+*Điểm chốt:* Cùng đơn giá thì cộng số lượng trước, nhân sau — nhân một lần thôi.
 
-### Bài E.4 — Nội dung giảng — Tổng dãy phân số có mẫu là tích hai số liên tiếp
+### Bài E.4 — Nội dung giảng — Tính nhanh biểu thức số thập phân
 
 **Các bước giải**
 
 Xét ý a: Câu mở đầu giới thiệu dạng bài?
 
-Đọc vị: đây là dạng **Tổng dãy phân số có mẫu là tích hai số liên tiếp**; dấu hiệu là Mẫu số là 2, 6, 12, 20, 30… (tích hai số liên tiếp).
+Đọc vị: đây là dạng **Tính nhanh biểu thức số thập phân**; dấu hiệu là Các số thập phân cộng lại tròn chục hoặc có thừa số chung.
 
-Kiến thức phải dùng: Tách phân số thành hiệu, phép trừ phân số.
+Kiến thức phải dùng: Tính chất phép tính với số thập phân.
 
-Cách làm: Tách thành hiệu, khử liên tiếp, giữ lại hai đầu.
+Cách làm: Ghép cặp tròn, đặt thừa số chung.
 
-Lối tắt: Kết quả luôn là 1 trừ 1 phần (n + 1), tức là n phần (n + 1).
+Lối tắt: × 4 rồi × 25 là × 100 — chỉ việc dịch dấu phẩy sang phải hai chữ số.
 
-Kết quả: **“Hôm nay nhóm mình nói về Tổng dãy phân số có mẫu là tích hai số liên tiếp.”**.
+Kết quả: **“Hôm nay nhóm mình nói về Tính nhanh biểu thức số thập phân.”**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Mỗi mẫu số là tích của hai số tự nhiên liên tiếp: 2 = 1 × 2, 6 = 2 × 3, 12 = 3 × 4… Mỗi phân số dạng 1 phần (n × (n + 1)) tách được thành 1 phần n trừ 1 phần (n + 1). Khi cộng cả dãy, các phần giữa khử hết nhau, chỉ còn số hạng đầu và số hạng cuối.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Các tính chất giao hoán, kết hợp, nhân với một tổng đúng cả với số thập phân. Ghép cặp cộng lại tròn chục, ghép cặp nhân lại tròn trăm, đặt thừa số chung ra ngoài.
 
-*Điểm chốt:* Tách mỗi phân số thành **hiệu hai phân số** rồi để chúng khử nhau.
+*Điểm chốt:* Dấu phẩy không làm thay đổi các tính chất — cách làm giống hệt số tự nhiên.
 
 ### Bài E.5 — Nội dung giảng — Tính ngược từ cuối
 
@@ -590,15 +588,15 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
-| A.1 | Tìm x trong phép tính một bước | Quan hệ giữa các thành phần của phép tính | Có chữ x đứng trong một phép tính | Gọi tên vai trò của x rồi dùng quy tắc tương ứng | Thử lại bằng cách thay x vào đề — mất 3 giây nhưng chắc chắn. | x = 4 584 · x = 213 · x = 7 514 · x = 754… |
-| A.2 | Nhân, chia nhẩm với số tròn chục, trăm, nghìn | Cấu tạo thập phân | Thừa số hoặc số chia là 10, 100, 1 000 | Thêm hoặc bớt chữ số 0 | Nhân với 20 = nhân 2 rồi thêm một chữ số 0. | 1 039 000 · 75 340 · 3 939 000 · 8 605… |
-| A.3 | Bốn phép tính với số tự nhiên | Kĩ thuật đặt tính cộng, trừ, nhân, chia | Yêu cầu “đặt tính rồi tính” | Đặt tính thẳng cột, tính từ hàng đơn vị | Ước lượng bằng cách làm tròn để phát hiện sai sót về độ lớn. | 37 973 · 765 004 032 · 439 705 · 841 116… |
-| A.4 | Tính giá trị biểu thức số | Thứ tự thực hiện các phép tính | Biểu thức có nhiều phép tính, có thể có ngoặc | Xét ngoặc → nhân chia → cộng trừ, trái sang phải | Nếu thấy dạng a × b + a × c thì đưa ngay về a × (b + c). | 141 · 2 096 · 3 471 · 396… |
-| A.5 | Nhân, chia số tự nhiên | Kĩ thuật đặt tính nhân, chia | Yêu cầu “đặt tính rồi tính” với phép nhân, chia | Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ chữ số | Kiểm tra kết quả bằng phép tính ngược: thương × số chia = số bị chia. | 66 823 946 · 17 297 · 56 187 · 22 717 812… |
+| A.1 | Nhân, chia nhẩm với số tròn chục, trăm, nghìn | Cấu tạo thập phân | Thừa số hoặc số chia là 10, 100, 1 000 | Thêm hoặc bớt chữ số 0 | Nhân với 20 = nhân 2 rồi thêm một chữ số 0. | 5 046 · 290 · 9 092 000 · 3 168… |
+| A.2 | Nhân, chia số tự nhiên | Kĩ thuật đặt tính nhân, chia | Yêu cầu “đặt tính rồi tính” với phép nhân, chia | Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ chữ số | Kiểm tra kết quả bằng phép tính ngược: thương × số chia = số bị chia. | 34 017 · 35 146 · 95 230 · 48 024… |
+| A.3 | Tính giá trị biểu thức số | Thứ tự thực hiện các phép tính | Biểu thức có nhiều phép tính, có thể có ngoặc | Xét ngoặc → nhân chia → cộng trừ, trái sang phải | Nếu thấy dạng a × b + a × c thì đưa ngay về a × (b + c). | 3 588 · 3 660 · 126 · 166… |
+| A.4 | Tìm x trong phép tính một bước | Quan hệ giữa các thành phần của phép tính | Có chữ x đứng trong một phép tính | Gọi tên vai trò của x rồi dùng quy tắc tương ứng | Thử lại bằng cách thay x vào đề — mất 3 giây nhưng chắc chắn. | x = 41 · x = 733 · x = 15 080 · x = 6 103… |
+| A.5 | Bốn phép tính với số tự nhiên | Kĩ thuật đặt tính cộng, trừ, nhân, chia | Yêu cầu “đặt tính rồi tính” | Đặt tính thẳng cột, tính từ hàng đơn vị | Ước lượng bằng cách làm tròn để phát hiện sai sót về độ lớn. | 196 707 704 · 25 140 · 1 071 284 · 485 602… |
 | B.1 | Kỹ năng trình bày | Chuẩn trình bày bài giải | Yêu cầu “trình bày lời giải” | Viết đủ bốn dòng | Viết câu lời giải trước, phép tính sau — không bao giờ ngược lại. | câu lời giải nêu rõ đang tìm đại lượng nào · phép tính, viết đủ dấu và đủ đơn vị · kết quả kèm đơn vị · câu đáp số… |
-| B.2 | Kỹ năng viết câu lời giải | Chuẩn trình bày | Đề hỏi gì thì câu lời giải nhắc lại điều đó | Lấy cụm từ trong câu hỏi làm câu lời giải | Sao chép cụm từ trong câu hỏi là cách viết câu lời giải nhanh và chắc nhất. | “Tính nhanh nhờ thừa số chung là:” · “Tổng các tích có thừa số chung là:” · “Tính nhanh nhờ thừa số 0 là:” · “Tính giá trị biểu thức số là:”… |
+| B.2 | Kỹ năng viết câu lời giải | Chuẩn trình bày | Đề hỏi gì thì câu lời giải nhắc lại điều đó | Lấy cụm từ trong câu hỏi làm câu lời giải | Sao chép cụm từ trong câu hỏi là cách viết câu lời giải nhanh và chắc nhất. | “Tính nhanh nhờ thừa số chung là:” · “Tính nhanh nhờ thừa số 0 là:” · “Nhân một số với một tổng là:” · “Tính giá trị biểu thức số là:”… |
 | B.3 | Kỹ năng ghi đơn vị | Đơn vị đo các đại lượng | Đáp số của bài có đại lượng đo | Kiểm tra đơn vị ở bước cuối | Nhìn đơn vị của đáp số là biết ngay mình có nhầm chu vi với diện tích không. | không ghi trong dấu ngoặc phép tính · có, bắt buộc · có, bắt buộc · đơn vị vuông, ví dụ cm²… |
-| B.4 | Sổ lỗi và cách phòng | Lỗi thường gặp của chương | Cột “Lỗi thường gặp” trong bảng phân tích | Ghép cặp lỗi với cách phòng | Đọc lại sổ lỗi 3 phút trước mỗi bài kiểm tra. | Khoanh thừa số giống nhau ở hai tích trước khi viết dấu ngoặc. · Viết lại biểu thức dưới dạng a × (1 + 2 + … + n) trước khi tính. · Đọc hết biểu thức một lượt, khoanh các cụm giống nhau bị trừ cho nhau. · Gạch chân phép nhân, phép chia trước khi bắt đầu tính.… |
+| B.4 | Sổ lỗi và cách phòng | Lỗi thường gặp của chương | Cột “Lỗi thường gặp” trong bảng phân tích | Ghép cặp lỗi với cách phòng | Đọc lại sổ lỗi 3 phút trước mỗi bài kiểm tra. | Khoanh thừa số giống nhau ở hai tích trước khi viết dấu ngoặc. · Đọc hết biểu thức một lượt, khoanh các cụm giống nhau bị trừ cho nhau. · Nhìn cột đơn giá trước: có dòng nào trùng đơn giá không? · Gạch chân phép nhân, phép chia trước khi bắt đầu tính.… |
 | B.5 | Kỹ năng tự chấm | Thang điểm và chuẩn chấm | Bài đã làm xong, cần tự đánh giá | Chia bài thành bốn phần rồi chấm từng phần | Tự chấm bài của bạn giúp nhớ chuẩn chấm nhanh hơn tự chấm bài của mình. | 1 phần trong 4 · 2 phần trong 4 · 1 phần trong 4 · 3 phần trong 4… |
 | C.1 | Kỹ năng dò soát | Quy trình ba tầng | Bài đã làm xong, còn thời gian | Dò theo thứ tự đơn vị → phép tính → câu hỏi | Đọc lại **câu hỏi** trước, đọc lại bài làm sau. | đơn vị đo — mọi số có cùng đơn vị chưa · phép tính — cộng trừ nhân chia có đúng thứ tự chưa · đề hỏi gì — mình đã trả lời đúng câu hỏi chưa · tầng 3 — trả lời lệch câu hỏi… |
 | C.2 | Tính nhanh nhờ thừa số chung | Nhân một số với một tổng, một hiệu | Hai tích cộng hoặc trừ nhau, có chung một thừa số | Đặt thừa số chung ra ngoài rồi tính trong ngoặc | Sau khi đặt thừa số chung, tổng trong ngoặc thường tròn 10 hoặc 100. | tầng 2 · Khoanh thừa số giống nhau ở hai tích trước khi viết dấu ngoặc. · toàn bộ số điểm của ý sai · Khoanh thừa số giống nhau ở hai tích trước khi viết dấu ngoặc.… |
@@ -606,14 +604,14 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | C.4 | Tính ngược từ cuối | Phân số của một số; phép chia; tính ngược | Đề bán hoặc dùng nhiều lần, lần sau lấy trên **phần còn lại** | Đi ngược từ số cuối, mỗi bước nhân mẫu chia cho phần còn lại | Bán một phần m thì còn (m − 1) phần m — nhân ngược bằng m : (m − 1) cho mỗi lần. | tầng 2 · Thử lại theo chiều xuôi — bài này luôn thử lại được. · toàn bộ số điểm của ý sai · Thử lại theo chiều xuôi — bài này luôn thử lại được.… |
 | C.5 | Bốn phép tính với số tự nhiên | Kĩ thuật đặt tính cộng, trừ, nhân, chia | Yêu cầu “đặt tính rồi tính” | Đặt tính thẳng cột, tính từ hàng đơn vị | Ước lượng bằng cách làm tròn để phát hiện sai sót về độ lớn. | tầng 2 · Đếm trước xem thương có mấy chữ số rồi mới chia. · toàn bộ số điểm của ý sai · Đếm trước xem thương có mấy chữ số rồi mới chia.… |
 | D.1 | Sơ đồ tư duy tổng hợp | Hệ thống hoá toàn chương | Yêu cầu vẽ lại sơ đồ không nhìn tài liệu | Vẽ từ trí nhớ rồi đối chiếu | Chỗ nào quên khi vẽ chính là chỗ phải ôn lại đầu tiên. | Tính nhanh dãy phân số, khử liên tiếp và so sánh biểu thức · 6 · tên một dạng bài của chương · 3 nhánh con: dấu hiệu · phương pháp · lỗi hay mắc… |
-| D.2 | Tổng các tích có thừa số chung | Nhân một số với một tổng, tổng dãy cách đều | Dãy cộng gồm nhiều tích cùng một thừa số | Đặt thừa số chung → tính tổng trong ngoặc bằng công thức | 1 + 2 + … + 100 = 5 050; nhớ vài mốc để nhân ngay. | Dãy cộng gồm nhiều tích cùng một thừa số · Đặt thừa số chung → tính tổng trong ngoặc bằng công thức · Nhân từng tích rồi cộng dồn, rất dài và dễ sai. · Nhân một số với một tổng, tổng dãy cách đều… |
+| D.2 | Tính nhanh nhờ thừa số 0 | Tính chất nhân với 0, phép trừ hai số bằng nhau | Trong biểu thức có ngoặc chứa hai số giống nhau trừ nhau | Quét tìm cụm bằng 0 trước khi tính | Nhìn dấu ngoặc trước tiên — bẫy thường nằm ở đó. | Trong biểu thức có ngoặc chứa hai số giống nhau trừ nhau · Quét tìm cụm bằng 0 trước khi tính · Lao vào nhân từng cặp số lớn rồi mới phát hiện kết quả bằng 0. · Tính chất nhân với 0, phép trừ hai số bằng nhau… |
 | D.3 | Tính giá trị biểu thức số | Thứ tự thực hiện các phép tính | Biểu thức có nhiều phép tính, có thể có ngoặc | Xét ngoặc → nhân chia → cộng trừ, trái sang phải | Nếu thấy dạng a × b + a × c thì đưa ngay về a × (b + c). | Biểu thức có nhiều phép tính, có thể có ngoặc · Xét ngoặc → nhân chia → cộng trừ, trái sang phải · Cộng trước nhân khi biểu thức không có ngoặc. · Thứ tự thực hiện các phép tính… |
 | D.4 | Tổng dãy cộng trừ xen kẽ | Ghép cặp, tính chất kết hợp | Dấu cộng và trừ xen kẽ đều đặn | Ghép cặp, đếm số cặp, xử lí phần dư | Dãy 1 − 2 + 3 − … với n chẵn bằng −n : 2; với n lẻ bằng (n + 1) : 2. | Dấu cộng và trừ xen kẽ đều đặn · Ghép cặp, đếm số cặp, xử lí phần dư · Ghép cặp nhưng quên số hạng lẻ còn thừa ở cuối. · Ghép cặp, tính chất kết hợp… |
-| D.5 | Tính, so sánh tích bằng kĩ thuật tách – bù | Nhân một số với một tổng, một hiệu | Các thừa số hơn kém nhau rất ít | Quy về số gốc chung, so phần chênh | Với hai tích có tổng hai thừa số bằng nhau, tích nào có hai thừa số gần nhau hơn thì lớn hơn. | Các thừa số hơn kém nhau rất ít · Quy về số gốc chung, so phần chênh · Nhân hết ra rồi mới so sánh — số lớn, dễ sai và mất thời gian. · Nhân một số với một tổng, một hiệu… |
+| D.5 | Tổng dãy phân số có mẫu là tích hai số liên tiếp | Tách phân số thành hiệu, phép trừ phân số | Mẫu số là 2, 6, 12, 20, 30… (tích hai số liên tiếp) | Tách thành hiệu, khử liên tiếp, giữ lại hai đầu | Kết quả luôn là 1 trừ 1 phần (n + 1), tức là n phần (n + 1). | Mẫu số là 2, 6, 12, 20, 30… (tích hai số liên tiếp) · Tách thành hiệu, khử liên tiếp, giữ lại hai đầu · Quy đồng cả dãy — mẫu số chung khổng lồ, không làm nổi. · Tách phân số thành hiệu, phép trừ phân số… |
 | E.1 | Kỹ năng thuyết trình theo nhóm | Hệ thống hoá và diễn đạt | Yêu cầu giảng lại chương theo nhóm | Chia kịch bản theo phút, phân công rõ người | Người giảng nhớ lâu hơn người nghe khoảng ba lần. | giới thiệu chương “Tính nhanh dãy phân số, khử liên tiếp và so sánh biểu thức” và mục tiêu · trình bày sơ đồ tư duy chương · giảng một dạng bài kèm ví dụ mẫu · nêu lỗi hay mắc và cách phòng… |
 | E.2 | Tính nhanh nhờ thừa số chung | Nhân một số với một tổng, một hiệu | Hai tích cộng hoặc trừ nhau, có chung một thừa số | Đặt thừa số chung ra ngoài rồi tính trong ngoặc | Sau khi đặt thừa số chung, tổng trong ngoặc thường tròn 10 hoặc 100. | “Hôm nay nhóm mình nói về Tính nhanh nhờ thừa số chung.” · Hai tích cộng hoặc trừ nhau, có chung một thừa số · Nhân một số với một tổng, một hiệu · Tính nhanh: 47 × 25 + 47 × 75 → 4 700… |
-| E.3 | Tính nhanh nhờ thừa số 0 | Tính chất nhân với 0, phép trừ hai số bằng nhau | Trong biểu thức có ngoặc chứa hai số giống nhau trừ nhau | Quét tìm cụm bằng 0 trước khi tính | Nhìn dấu ngoặc trước tiên — bẫy thường nằm ở đó. | “Hôm nay nhóm mình nói về Tính nhanh nhờ thừa số 0.” · Trong biểu thức có ngoặc chứa hai số giống nhau trừ nhau · Tính chất nhân với 0, phép trừ hai số bằng nhau · Tính nhanh: 1 234 × 567 × (89 − 89) → 0… |
-| E.4 | Tổng dãy phân số có mẫu là tích hai số liên tiếp | Tách phân số thành hiệu, phép trừ phân số | Mẫu số là 2, 6, 12, 20, 30… (tích hai số liên tiếp) | Tách thành hiệu, khử liên tiếp, giữ lại hai đầu | Kết quả luôn là 1 trừ 1 phần (n + 1), tức là n phần (n + 1). | “Hôm nay nhóm mình nói về Tổng dãy phân số có mẫu là tích hai số liên tiếp.” · Mẫu số là 2, 6, 12, 20, 30… (tích hai số liên tiếp) · Tách phân số thành hiệu, phép trừ phân số · Tính nhanh: 1 phần 2 + 1 phần 6 + 1 phần 12 → 3 phần 4… |
+| E.3 | Nhân một số với một tổng | Tính chất phân phối của phép nhân với phép cộng | Nhiều dòng hoá đơn dùng chung một đơn giá | Gom số lượng rồi nhân một lần | Chênh lệch tiền = chênh lệch số lượng × đơn giá, không cần tính tổng hai bên. | “Hôm nay nhóm mình nói về Nhân một số với một tổng.” · Nhiều dòng hoá đơn dùng chung một đơn giá · Tính chất phân phối của phép nhân với phép cộng · Mỗi hộp 15 000 đồng, sáng bán 12 hộp, chiều bán 8 hộp. Cả ngày thu bao nhiêu tiền? → 300 000 đồng… |
+| E.4 | Tính nhanh biểu thức số thập phân | Tính chất phép tính với số thập phân | Các số thập phân cộng lại tròn chục hoặc có thừa số chung | Ghép cặp tròn, đặt thừa số chung | × 4 rồi × 25 là × 100 — chỉ việc dịch dấu phẩy sang phải hai chữ số. | “Hôm nay nhóm mình nói về Tính nhanh biểu thức số thập phân.” · Các số thập phân cộng lại tròn chục hoặc có thừa số chung · Tính chất phép tính với số thập phân · Tính nhanh: 2,5 × 4 × 25 → 250… |
 | E.5 | Tính ngược từ cuối | Phân số của một số; phép chia; tính ngược | Đề bán hoặc dùng nhiều lần, lần sau lấy trên **phần còn lại** | Đi ngược từ số cuối, mỗi bước nhân mẫu chia cho phần còn lại | Bán một phần m thì còn (m − 1) phần m — nhân ngược bằng m : (m − 1) cho mỗi lần. | “Hôm nay nhóm mình nói về Tính ngược từ cuối.” · Đề bán hoặc dùng nhiều lần, lần sau lấy trên **phần còn lại** · Phân số của một số; phép chia; tính ngược · Bán 1/2 số cam, rồi bán 1/3 số còn lại, cuối cùng còn 10 quả. Lúc đầu có bao nhiêu quả? → 30 quả… |
 
 ---
@@ -622,11 +620,11 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 
 | Bài | Nhãn tư duy | Điểm chốt |
 |---|---|---|
-| A.1 | TD1, TD3 | x đứng ở **vị trí nào** trong phép tính quyết định quy tắc dùng. |
-| A.2 | TD5 | Đếm đúng **số chữ số 0** của số nhân hay số chia. |
-| A.3 | TD1 | Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương. |
-| A.4 | TD1, TD3 | Dấu ngoặc **đảo ngược** thứ tự ưu tiên — nhìn ngoặc trước khi tính. |
-| A.5 | TD1 | Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0. |
+| A.1 | TD5 | Đếm đúng **số chữ số 0** của số nhân hay số chia. |
+| A.2 | TD1 | Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0. |
+| A.3 | TD1, TD3 | Dấu ngoặc **đảo ngược** thứ tự ưu tiên — nhìn ngoặc trước khi tính. |
+| A.4 | TD1, TD3 | x đứng ở **vị trí nào** trong phép tính quyết định quy tắc dùng. |
+| A.5 | TD1 | Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương. |
 | B.1 | TD1 | Có lời giải đúng mà trình bày thiếu vẫn **mất điểm thật**. |
 | B.2 | TD1 | Câu lời giải phải **nêu đúng đại lượng** đang tìm. |
 | B.3 | TD1 | Diện tích **luôn** có đơn vị vuông, thể tích luôn có đơn vị khối. |
@@ -638,14 +636,14 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | C.4 | TD3, TD5, TD6 | Phân số của lần sau lấy trên **phần còn lại**, không lấy trên số ban đầu. Đây là bẫy chính của cả dạng bài. |
 | C.5 | TD1 | Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương. |
 | D.1 | TD3 | Vẽ **từ trí nhớ** mới có tác dụng; chép lại thì không. |
-| D.2 | TD3, TD4 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
+| D.2 | TD5, TD6 | Quét tìm **cụm bằng 0** trước; thấy rồi thì viết đáp số ngay. |
 | D.3 | TD1, TD3 | Dấu ngoặc **đảo ngược** thứ tự ưu tiên — nhìn ngoặc trước khi tính. |
 | D.4 | TD4, TD6 | Ghép cặp từ **đầu dãy**; số số hạng lẻ thì luôn dư đúng một số hạng cuối. |
-| D.5 | TD5, TD6 | Đưa mọi số về **cùng một số gốc** rồi mới so hoặc trừ. |
+| D.5 | TD4, TD6 | Tách mỗi phân số thành **hiệu hai phân số** rồi để chúng khử nhau. |
 | E.1 | TD3, TD6 | Giảng được cho bạn hiểu mới là **đã hiểu**. |
 | E.2 | TD3, TD5 | Thừa số chung phải xuất hiện ở **cả hai** tích thì mới đặt ra ngoài được. |
-| E.3 | TD5, TD6 | Quét tìm **cụm bằng 0** trước; thấy rồi thì viết đáp số ngay. |
-| E.4 | TD4, TD6 | Tách mỗi phân số thành **hiệu hai phân số** rồi để chúng khử nhau. |
+| E.3 | TD3, TD5 | Cùng đơn giá thì cộng số lượng trước, nhân sau — nhân một lần thôi. |
+| E.4 | TD5, TD3 | Dấu phẩy không làm thay đổi các tính chất — cách làm giống hệt số tự nhiên. |
 | E.5 | TD3, TD5, TD6 | Phân số của lần sau lấy trên **phần còn lại**, không lấy trên số ban đầu. Đây là bẫy chính của cả dạng bài. |
 
 ---
@@ -656,11 +654,11 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 
 | Bài | Lỗi thường gặp | Cách phòng |
 |---|---|---|
-| A.1 | Áp dụng nhầm quy tắc của số trừ cho số bị trừ. | Gọi tên x trước (x là số hạng? số bị trừ? thừa số?) rồi mới viết quy tắc. |
-| A.2 | Thêm hoặc bớt thiếu một chữ số 0. | Đếm số chữ số 0 rồi viết chấm tương ứng trước khi ghi kết quả. |
-| A.3 | Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số. | Đếm trước xem thương có mấy chữ số rồi mới chia. |
-| A.4 | Cộng trước nhân khi biểu thức không có ngoặc. | Gạch chân phép nhân, phép chia trước khi bắt đầu tính. |
-| A.5 | Quên viết chữ số 0 ở thương nên thương thiếu chữ số. | Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số. |
+| A.1 | Thêm hoặc bớt thiếu một chữ số 0. | Đếm số chữ số 0 rồi viết chấm tương ứng trước khi ghi kết quả. |
+| A.2 | Quên viết chữ số 0 ở thương nên thương thiếu chữ số. | Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số. |
+| A.3 | Cộng trước nhân khi biểu thức không có ngoặc. | Gạch chân phép nhân, phép chia trước khi bắt đầu tính. |
+| A.4 | Áp dụng nhầm quy tắc của số trừ cho số bị trừ. | Gọi tên x trước (x là số hạng? số bị trừ? thừa số?) rồi mới viết quy tắc. |
+| A.5 | Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số. | Đếm trước xem thương có mấy chữ số rồi mới chia. |
 | B.1 | Viết thẳng phép tính, bỏ câu lời giải. | Đọc lại bài đã làm, đếm xem có đủ bốn dòng chưa. |
 | B.2 | Viết câu lời giải chung chung cho mọi bài. | Lấy đúng cụm từ trong câu hỏi của đề làm câu lời giải. |
 | B.3 | Ghi diện tích bằng cm thay vì cm². | Trước khi viết đáp số, hỏi: đại lượng này đo bằng gì? |
@@ -672,14 +670,14 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 | C.4 | Lấy cả hai phân số trên số ban đầu rồi cộng lại. | Thử lại theo chiều xuôi — bài này luôn thử lại được. |
 | C.5 | Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số. | Đếm trước xem thương có mấy chữ số rồi mới chia. |
 | D.1 | Vừa vẽ vừa nhìn phiếu Lý thuyết. | Úp phiếu Lý thuyết xuống bàn trước khi bắt đầu vẽ. |
-| D.2 | Nhân từng tích rồi cộng dồn, rất dài và dễ sai. | Viết lại biểu thức dưới dạng a × (1 + 2 + … + n) trước khi tính. |
+| D.2 | Lao vào nhân từng cặp số lớn rồi mới phát hiện kết quả bằng 0. | Đọc hết biểu thức một lượt, khoanh các cụm giống nhau bị trừ cho nhau. |
 | D.3 | Cộng trước nhân khi biểu thức không có ngoặc. | Gạch chân phép nhân, phép chia trước khi bắt đầu tính. |
 | D.4 | Ghép cặp nhưng quên số hạng lẻ còn thừa ở cuối. | Đếm số số hạng trước, xác định chẵn hay lẻ rồi mới ghép cặp. |
-| D.5 | Nhân hết ra rồi mới so sánh — số lớn, dễ sai và mất thời gian. | Viết mỗi thừa số dưới dạng “số gốc cộng hoặc trừ mấy đơn vị”. |
+| D.5 | Quy đồng cả dãy — mẫu số chung khổng lồ, không làm nổi. | Viết ba số hạng đầu dưới dạng hiệu để thấy quy luật khử trước khi viết cả dãy. |
 | E.1 | Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình. | Cấm cầm phiếu khi thuyết trình; chỉ được cầm sơ đồ tư duy tự vẽ. |
 | E.2 | Đặt ra ngoài một số chỉ có ở một tích. | Khoanh thừa số giống nhau ở hai tích trước khi viết dấu ngoặc. |
-| E.3 | Lao vào nhân từng cặp số lớn rồi mới phát hiện kết quả bằng 0. | Đọc hết biểu thức một lượt, khoanh các cụm giống nhau bị trừ cho nhau. |
-| E.4 | Quy đồng cả dãy — mẫu số chung khổng lồ, không làm nổi. | Viết ba số hạng đầu dưới dạng hiệu để thấy quy luật khử trước khi viết cả dãy. |
+| E.3 | Nhân từng dòng rồi cộng, dài và dễ sai ở một dòng nào đó. | Nhìn cột đơn giá trước: có dòng nào trùng đơn giá không? |
+| E.4 | Đặt dấu phẩy sai vị trí ở kết quả cuối. | Ước lượng độ lớn kết quả trước, dùng nó kiểm tra vị trí dấu phẩy. |
 | E.5 | Lấy cả hai phân số trên số ban đầu rồi cộng lại. | Thử lại theo chiều xuôi — bài này luôn thử lại được. |
 
 ---
@@ -688,11 +686,11 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 
 Đọc tầng 1 trước; chỉ đọc tầng sau khi đã thử lại ít nhất 3 phút.
 
-**Bài A.1** — (1) x đóng vai trò gì trong phép tính? — (2) Viết ra quy tắc tương ứng với vai trò đó. — (3) Thay x tìm được vào đề để thử lại.
-**Bài A.2** — (1) Số nhân có mấy chữ số 0? — (2) Thêm đúng bấy nhiêu chữ số 0 vào bên phải. — (3) Với phép chia thì làm ngược lại.
-**Bài A.3** — (1) Viết các số thẳng hàng đơn vị. — (2) Với phép nhân, tích riêng lùi sang trái một cột. — (3) Với phép chia, hạ một chữ số thì viết một chữ số ở thương.
-**Bài A.4** — (1) Biểu thức có dấu ngoặc không? — (2) Gạch chân các phép nhân và chia. — (3) Làm nhân chia trước, cộng trừ sau.
-**Bài A.5** — (1) Viết các tích riêng lùi đúng cột. — (2) Khi chia, mỗi lần hạ một chữ số thì viết một chữ số ở thương. — (3) Thử lại bằng phép tính ngược.
+**Bài A.1** — (1) Số nhân có mấy chữ số 0? — (2) Thêm đúng bấy nhiêu chữ số 0 vào bên phải. — (3) Với phép chia thì làm ngược lại.
+**Bài A.2** — (1) Viết các tích riêng lùi đúng cột. — (2) Khi chia, mỗi lần hạ một chữ số thì viết một chữ số ở thương. — (3) Thử lại bằng phép tính ngược.
+**Bài A.3** — (1) Biểu thức có dấu ngoặc không? — (2) Gạch chân các phép nhân và chia. — (3) Làm nhân chia trước, cộng trừ sau.
+**Bài A.4** — (1) x đóng vai trò gì trong phép tính? — (2) Viết ra quy tắc tương ứng với vai trò đó. — (3) Thay x tìm được vào đề để thử lại.
+**Bài A.5** — (1) Viết các số thẳng hàng đơn vị. — (2) Với phép nhân, tích riêng lùi sang trái một cột. — (3) Với phép chia, hạ một chữ số thì viết một chữ số ở thương.
 **Bài B.1** — (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 **Bài B.2** — (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 **Bài B.3** — (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
@@ -722,10 +720,10 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 
 | Bài | Đề tương tự | Đáp số |
 |---|---|---|
-| A.1 | Tìm x: x × 7 = 91 | x = 13 |
-| A.2 | Tính nhẩm: 358 × 100 | 35 800 |
-| A.3 | Đặt tính rồi tính: 3 045 × 24 | 73 080 |
-| A.4 | Tính: 25 + 8 × 4 | 57 |
+| A.1 | Tính nhẩm: 358 × 100 | 35 800 |
+| A.2 | Đặt tính rồi tính: 3 045 × 24 | 73 080 |
+| A.3 | Tính: 25 + 8 × 4 | 57 |
+| A.4 | Tìm x: x × 7 = 91 | x = 13 |
 | A.5 | Đặt tính rồi tính: 3 045 × 24 | 73 080 |
 | B.1 | Một lời giải đạt chuẩn GITA có mấy dòng bắt buộc? | 4 dòng |
 | B.2 | Đề hỏi “mỗi tổ trồng mấy cây” thì câu lời giải viết thế nào? | “Số cây mỗi tổ trồng được là:” |
@@ -738,14 +736,14 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | C.4 | Bán 1/2 số cam, rồi bán 1/3 số còn lại, cuối cùng còn 10 quả. Lúc đầu có bao nhiêu quả? | 30 quả |
 | C.5 | Đặt tính rồi tính: 3 045 × 24 | 73 080 |
 | D.1 | Vẽ sơ đồ mà nhìn tài liệu thì mất tác dụng gì? | mất tác dụng kiểm tra trí nhớ |
-| D.2 | Tính nhanh: 5 × 1 + 5 × 2 + … + 5 × 10 | 275 |
+| D.2 | Tính nhanh: 1 234 × 567 × (89 − 89) | 0 |
 | D.3 | Tính: 25 + 8 × 4 | 57 |
 | D.4 | Tính nhanh: 1 − 2 + 3 − 4 + … + 9 − 10 | −5 |
-| D.5 | So sánh: 99 × 101 … 100 × 100 | < |
+| D.5 | Tính nhanh: 1 phần 2 + 1 phần 6 + 1 phần 12 | 3 phần 4 |
 | E.1 | Vì sao phải giảng lại cho bạn? | vì giảng được mới là hiểu thật |
 | E.2 | Tính nhanh: 47 × 25 + 47 × 75 | 4 700 |
-| E.3 | Tính nhanh: 1 234 × 567 × (89 − 89) | 0 |
-| E.4 | Tính nhanh: 1 phần 2 + 1 phần 6 + 1 phần 12 | 3 phần 4 |
+| E.3 | Mỗi hộp 15 000 đồng, sáng bán 12 hộp, chiều bán 8 hộp. Cả ngày thu bao nhiêu tiền? | 300 000 đồng |
+| E.4 | Tính nhanh: 2,5 × 4 × 25 | 250 |
 | E.5 | Bán 1/2 số cam, rồi bán 1/3 số còn lại, cuối cùng còn 10 quả. Lúc đầu có bao nhiêu quả? | 30 quả |
 
 ---

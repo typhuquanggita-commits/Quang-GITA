@@ -59,6 +59,7 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 | M1 | Hình vẽ là lưới ô vuông đều | Đếm hình trong lưới | Đếm theo đường kẻ hoặc theo cỡ hình | Số cách chọn 2 trong k đường kẻ là k × (k − 1) : 2. | Bỏ sót các hình ghép nhiều ô |
 | M1 | Đề nhắc tới “trung điểm”, “nằm giữa”, “góc vuông” | Góc vuông; điểm ở giữa và trung điểm | Kiểm tra đủ hai điều kiện của trung điểm | AM = AB : 2 là điều kiện gọn nhất để nhận ra trung điểm. | Nằm giữa nhưng không chia đôi |
 | M2 | Đề nhắc tâm, bán kính, đường kính | Nhận biết hình tròn và các yếu tố | Quy về bán kính rồi so sánh hoặc tính | Nhìn đơn vị và tên đại lượng trước khi so sánh. | Bán kính hay đường kính |
+| M2 | Một mảnh đất có kích thước, cần rào hoặc cắm cọc quanh | Chu vi hình chữ nhật | Tính chu vi rồi chia cho khoảng cách giữa hai cọc | Chu vi chia khoảng cách ra ngay số cọc, không phải cộng trừ gì thêm. | Quên rằng quanh vườn khép kín thì số cọc bằng số khoảng |
 | M3 | “Phủ kín bằng các hình vuông cạnh …”, “chia thành … phần bằng nhau” | Phủ hình, chia hình | Chia diện tích cho diện tích, kiểm tra bằng số hàng, số cột | Đếm số hàng nhân số cột nhanh hơn và tự kiểm tra được. | Chia diện tích, không chia chu vi |
 | M4 | “Ghép … hình vuông thành …” | Ghép hình, chu vi và diện tích | Xác định kích thước hình mới rồi áp công thức | Ghép thành hàng ngang thì chiều rộng vẫn bằng cạnh hình vuông. | Chu vi không cộng như diện tích |
 | M4 | Cho chu vi hoặc diện tích và một kích thước | Tìm kích thước từ chu vi, diện tích | Đi ngược công thức qua bước nửa chu vi | Nửa chu vi = chu vi : 2 — luôn tính bước này đầu tiên. | Quên chia đôi chu vi |
@@ -88,11 +89,11 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 
 Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: đây là dạng bài gì, và dấu hiệu nào cho biết điều đó.
 
-**Đề 1.** Vẽ hình rồi tính. Ghép 4 hình vuông cạnh 5 cm thành một hàng ngang. Tính chu vi và diện tích hình chữ nhật thu được.
+**Đề 1.** Một hình chữ nhật có chiều dài 14 cm, chiều rộng 10 cm. Tính chu vi hình chữ nhật đó.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 2.** Tính và ghi rõ đơn vị. Hình chữ nhật dài 10 cm, rộng 2 cm. Tính diện tích.
+**Đề 2.** Tính theo yêu cầu, ghi rõ đơn vị. Hình vuông có cạnh 50 cm. Tính diện tích.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
@@ -100,31 +101,31 @@ Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: 
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 4.** Đếm có hệ thống, nêu rõ cách đếm. Trên một đường thẳng lấy 5 điểm. Có bao nhiêu đoạn thẳng?
+**Đề 4.** Vẽ hình tròn và ghi kí hiệu lên hình. Hình tròn A có bán kính 40 cm, hình tròn B có đường kính 52 cm. Hình nào lớn hơn?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 5.** Đếm có hệ thống, không đếm mò. Lưới ô vuông gồm 3 hàng và 2 cột ô vuông nhỏ. Có tất cả bao nhiêu ô vuông nhỏ?
+**Đề 5.** Đếm có hệ thống, không đếm mò. Lưới ô vuông gồm 5 hàng và 4 cột ô vuông nhỏ. Có tất cả bao nhiêu ô vuông nhỏ?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 6.** Làm ngược lại công thức. Hình vuông có chu vi 96 cm. Tính cạnh và diện tích.
+**Đề 6.** Vẽ hình rồi tính. Ghép 2 hình vuông cạnh 13 cm thành một hàng ngang. Tính chu vi và diện tích hình chữ nhật thu được.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 7.** Vẽ hình ra nháp trước khi trả lời. Dùng ê ke để kiểm tra một góc, ta áp cạnh nào của ê ke vào góc?
+**Đề 7.** Vẽ hình và kẻ lưới ra nháp. Một hình chữ nhật 6 cm × 4 cm được phủ kín bằng các hình vuông cạnh 2 cm. Cần bao nhiêu hình vuông?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 8.** Vẽ hình và kẻ lưới ra nháp. Một hình chữ nhật 4 cm × 2 cm được phủ kín bằng các hình vuông cạnh 1 cm. Cần bao nhiêu hình vuông?
+**Đề 8.** Vẽ hình ra nháp trước khi trả lời. Dùng ê ke để kiểm tra một góc, ta áp cạnh nào của ê ke vào góc?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 9.** Một hình chữ nhật có chiều dài 14 cm, chiều rộng 8 cm. Tính chu vi hình chữ nhật đó.
+**Đề 9.** Đếm có hệ thống, nêu rõ cách đếm. Trên một đường thẳng lấy 6 điểm. Có bao nhiêu đoạn thẳng?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 10.** Vẽ hình tròn và ghi kí hiệu lên hình. Hình tròn A có bán kính 3 cm, hình tròn B có đường kính 4 cm. Hình nào lớn hơn?
+**Đề 10.** Tính và ghi rõ đơn vị. Hình chữ nhật dài 5 cm, rộng 4 cm. Tính chu vi.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
@@ -134,16 +135,16 @@ Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: 
 
 | # | Dạng bài | Dấu hiệu |
 |:--:|---|---|
-| 1 | Ghép hình, chu vi và diện tích | “Ghép … hình vuông thành …” |
+| 1 | Biến thiên chu vi và diện tích | “Tăng chiều … thêm … cm” |
 | 2 | Chu vi, diện tích hình cơ bản | Cho chiều dài, chiều rộng hoặc cạnh |
 | 3 | Đếm hình trong lưới | Lưới ô vuông đều |
-| 4 | Đếm hình bằng quy tắc chọn hai điểm | Nhiều điểm trên một đường, hoặc nhiều đoạn kẻ từ một đỉnh |
+| 4 | Nhận biết hình tròn và các yếu tố | Đề nhắc tâm, bán kính, đường kính |
 | 5 | Đếm hình trong lưới | Hình vẽ là lưới ô vuông đều |
-| 6 | Tìm kích thước từ chu vi, diện tích | Cho chu vi hoặc diện tích và một kích thước |
-| 7 | Góc vuông; điểm ở giữa và trung điểm | Đề nhắc tới “trung điểm”, “nằm giữa”, “góc vuông” |
-| 8 | Phủ hình, chia hình | “Phủ kín bằng các hình vuông cạnh …”, “chia thành … phần bằng nhau” |
-| 9 | Biến thiên chu vi và diện tích | “Tăng chiều … thêm … cm” |
-| 10 | Nhận biết hình tròn và các yếu tố | Đề nhắc tâm, bán kính, đường kính |
+| 6 | Ghép hình, chu vi và diện tích | “Ghép … hình vuông thành …” |
+| 7 | Phủ hình, chia hình | “Phủ kín bằng các hình vuông cạnh …”, “chia thành … phần bằng nhau” |
+| 8 | Góc vuông; điểm ở giữa và trung điểm | Đề nhắc tới “trung điểm”, “nằm giữa”, “góc vuông” |
+| 9 | Đếm hình bằng quy tắc chọn hai điểm | Nhiều điểm trên một đường, hoặc nhiều đoạn kẻ từ một đỉnh |
+| 10 | Chu vi, diện tích hình cơ bản | Cho chiều dài, chiều rộng hoặc cạnh |
 
 ---
 

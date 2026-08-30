@@ -73,53 +73,53 @@ Viết lại từ trí nhớ. Mỗi ý bỏ trống là một chỗ phải ôn l
 
 ## PHẦN C — LUYỆN LẠI THEO TỪNG CỤM · 30 phút · 35 điểm
 
-### Bài 1, (7,0 điểm) Nhân, chia với số có một chữ số — cụm C01
+### Bài 1, (7,0 điểm) Nhẩm tiền khi đi chợ — cụm C01
 
-Đặt tính rồi tính.
+Ba món trong giỏ: **đậu phụ** 80 000 đồng · **trứng gà** 29 500 đồng · **chuối** 83 000 đồng.
 
-a) 954 × 4
-b) 1 084 : 4
-c) 7 591 : 8
-d) 6 543 : 9
-e) 640 × 9
+a) Làm tròn giá từng món đến hàng chục nghìn để nhẩm cho nhanh.
+b) Cộng các giá đã làm tròn, được tổng ước lượng là bao nhiêu?
+c) Tính tổng đúng bằng cách cộng các giá gốc.
+d) Tổng ước lượng lệch bao nhiêu so với tổng đúng?
+e) Người mua đưa tờ 200 000 đồng. Người bán phải trả lại bao nhiêu?
 
-### Bài 2, (7,0 điểm) Tìm x và tính chất của phép nhân — cụm C02
+### Bài 2, (7,0 điểm) Đọc chỉ số công tơ điện — cụm C02
 
-Tìm x hoặc điền số thích hợp.
+Công tơ điện nhà bạn Hà đầu tháng chỉ **26 865**, cuối tháng chỉ **27 045**. Dùng hai số này cho cả bài.
 
-a) 4 × 250 = 250 × …
-b) x + 68 = 254
-c) x − 157 = 147
-d) 261 × 1 × 0 = …
-e) 9 × 102 = 102 × …
+a) Chỉ số cuối tháng là 27 045. Số ấy gồm mấy chục nghìn, mấy nghìn, mấy trăm, mấy chục và mấy đơn vị?
+b) Số điện dùng trong tháng bằng chỉ số cuối trừ chỉ số đầu. Nhà bạn ấy dùng bao nhiêu kW·h?
+c) Làm tròn chỉ số cuối 27 045 đến hàng nghìn.
+d) Nhà bên cạnh có chỉ số cuối là 20 045. Chỉ số nào lớn hơn?
+e) Tháng sau chỉ số cuối là 27 312. Tháng sau nhà bạn ấy dùng nhiều hơn hay ít hơn tháng này, và chênh bao nhiêu kW·h?
 
-### Bài 3, (7,0 điểm) Hình tròn: tâm, bán kính, đường kính — cụm C03
+### Bài 3, (7,0 điểm) Chu vi và diện tích hình chữ nhật, hình vuông — cụm C03
 
-Vẽ hình tròn và ghi kí hiệu lên hình.
+Tính và ghi rõ đơn vị.
 
-a) Hình tròn có bán kính 6 cm. Đường kính dài bao nhiêu?
-b) Hình tròn có đường kính 64 cm. Bán kính dài bao nhiêu?
-c) Hình tròn A có bán kính 7 cm, hình tròn B có đường kính 78 cm. Hình nào lớn hơn?
-d) Hình tròn A có bán kính 15 cm, hình tròn B có đường kính 40 cm. Hình nào lớn hơn?
-e) Hình tròn có bán kính 7 cm. Đường kính dài bao nhiêu?
+a) Hình vuông cạnh 36 cm. Tính chu vi.
+b) Hình chữ nhật dài 5 cm, rộng 3 cm. Tính chu vi.
+c) Hình vuông cạnh 38 cm. Tính diện tích.
+d) Hình chữ nhật dài 21 cm, rộng 11 cm. Tính diện tích.
+e) Hình vuông cạnh 8 cm. Tính chu vi.
 
 ### Bài 4, (7,0 điểm) Tổng – tỉ, hiệu – tỉ và so sánh một phần mấy — cụm C04
 
 Vẽ sơ đồ đoạn thẳng cho mọi bài trước khi tính.
 
-a) Tổ Một trồng 24 cây, nhóm Sao Mai trồng 48 cây. Số cây của tổ Một bằng một phần mấy số cây của nhóm Sao Mai?
-b) Đội Hai trồng nhiều hơn nhóm Sao Mai 54 cây, và số cây của đội Hai gấp 3 lần số cây của nhóm Sao Mai. Mỗi tổ trồng bao nhiêu cây?
-c) Tổ Hai và nhóm Sao Mai trồng được tất cả 36 cây. Số cây của nhóm Sao Mai gấp 5 lần số cây của tổ Hai. Mỗi tổ trồng bao nhiêu cây?
-d) Tổ Hai trồng 26 cây, nhóm Sao Mai trồng 52 cây. Số cây của tổ Hai bằng một phần mấy số cây của nhóm Sao Mai?
-e) Nhóm Sao Mai trồng nhiều hơn tổ Ba 24 cây, và số cây của nhóm Sao Mai gấp 5 lần số cây của tổ Ba. Mỗi tổ trồng bao nhiêu cây?
+a) Đội Hai trồng nhiều hơn đội Một 14 cây, và số cây của đội Hai gấp 2 lần số cây của đội Một. Mỗi tổ trồng bao nhiêu cây?
+b) Nhóm Sao Mai trồng 5 cây, đội Một trồng 15 cây. Số cây của nhóm Sao Mai bằng một phần mấy số cây của đội Một?
+c) Tổ Một và nhóm Hoa Phượng trồng được tất cả 48 cây. Số cây của nhóm Hoa Phượng gấp 5 lần số cây của tổ Một. Mỗi tổ trồng bao nhiêu cây?
+d) Tổ Một trồng 26 cây, đội Một trồng 78 cây. Số cây của tổ Một bằng một phần mấy số cây của đội Một?
+e) Đội Một và tổ Một trồng được tất cả 18 cây. Số cây của tổ Một gấp 2 lần số cây của đội Một. Mỗi tổ trồng bao nhiêu cây?
 
 ### Bài 5, (7,0 điểm) Tháng, năm và cách xem lịch — cụm C05
 
 Kẻ một bảng lịch nhỏ ra nháp rồi trả lời.
 
-a) Tháng 8 năm 2025 có bao nhiêu ngày?
-b) Năm 2025 có phải năm nhuận không?
-c) Ngày 1 tháng 8 là Thứ Hai. Hỏi ngày 8 tháng ấy là thứ mấy?
+a) Tháng 2 năm 2020 có bao nhiêu ngày?
+b) Năm 2020 có phải năm nhuận không?
+c) Ngày 1 tháng 2 là Thứ Bảy. Hỏi ngày 29 tháng ấy là thứ mấy?
 d) Tháng ấy có bao nhiêu ngày Chủ nhật?
 e) Ngày cuối cùng của tháng là thứ mấy?
 
@@ -128,68 +128,66 @@ e) Ngày cuối cùng của tháng là thứ mấy?
 
 Mỗi bài dưới đây phải dùng kỹ thuật của **hai chuyên đề khác nhau**.
 
-### Bài 1, (7,5 điểm) Lập số có ba chữ số khác nhau — nối nhóm B với nhóm A
+### Bài 1, (7,5 điểm) Tính giá trị biểu thức — nối nhóm B với nhóm A
 
-Cho ba chữ số **3, 6, 9**.
+Tính giá trị của mỗi biểu thức.
 
-a) Viết tất cả các số có ba chữ số khác nhau lập được, từ bé đến lớn.
-b) Lập được bao nhiêu số?
-c) Số lớn nhất là số nào?
-d) Số bé nhất là số nào?
-e) Hiệu của số lớn nhất và số bé nhất bằng bao nhiêu?
+a) (15 + 4) × 9
+b) 40 : 2 − 3
+c) 30 + 2 × 4
+d) 560 : 7 − 7
+e) (90 + 7) × 5
 
-### Bài 2, (7,5 điểm) Dấu hiệu chia hết cho 2, 3, 5, 9 — nối nhóm A với nhóm F
-
-Không đặt tính chia, chỉ dùng dấu hiệu.
-
-a) Số 3 536 có chia hết cho 9 không? Vì sao?
-b) Số 6 819 có chia hết cho 5 không? Vì sao?
-c) Số 8 214 có chia hết cho 3 không? Vì sao?
-d) Số 7 291 có chia hết cho 2 không? Vì sao?
-e) Số 9 066 có chia hết cho 3 không? Vì sao?
-
-### Bài 3, (7,5 điểm) Phủ hình và chia hình thành phần bằng nhau — nối nhóm F với nhóm D
+### Bài 2, (7,5 điểm) Phủ hình và chia hình thành phần bằng nhau — nối nhóm A với nhóm F
 
 Vẽ hình và kẻ lưới ra nháp.
 
-a) Một hình chữ nhật 10 cm × 2 cm được phủ kín bằng các hình vuông cạnh 1 cm. Cần bao nhiêu hình vuông?
+a) Một hình chữ nhật 8 cm × 6 cm được phủ kín bằng các hình vuông cạnh 1 cm. Cần bao nhiêu hình vuông?
 b) Diện tích hình chữ nhật ấy bằng bao nhiêu?
 c) Diện tích mỗi hình vuông nhỏ bằng bao nhiêu?
 d) Chia hình chữ nhật ấy thành 2 phần bằng nhau thì mỗi phần có diện tích bao nhiêu?
 e) Chia thành 4 phần bằng nhau thì mỗi phần bao nhiêu?
 
+### Bài 3, (7,5 điểm) Bài toán giải bằng hai phép tính — nối nhóm F với nhóm D
+
+Trình bày lời giải có câu trả lời cho từng bước.
+
+a) Tổ Hai trồng được 36 cây. Đội Hai trồng được gấp 2 lần tổ Hai. Hỏi cả hai tổ trồng được bao nhiêu cây?
+b) Nhóm Hoa Phượng trồng được 34 cây. Đội Một trồng được gấp 6 lần nhóm Hoa Phượng. Hỏi cả hai tổ trồng được bao nhiêu cây?
+c) Tổ Ba trồng được 26 cây. Nhóm Hoa Phượng trồng được gấp 2 lần tổ Ba. Hỏi cả hai tổ trồng được bao nhiêu cây?
+d) Đội Một trồng được 48 cây. Nhóm Sao Mai trồng được gấp 5 lần đội Một. Hỏi cả hai tổ trồng được bao nhiêu cây?
+
 ### Bài 4, (7,5 điểm) Xem đồng hồ và tính thời gian — nối nhóm D với nhóm E
 
 Ghi kết quả theo giờ và phút.
 
-a) 7 giờ 5 phút = … phút
-b) Bây giờ là 3 giờ 55 phút. Sau 60 phút nữa là mấy giờ?
-c) Bây giờ là 11 giờ 35 phút. Cách đây 30 phút là mấy giờ?
-d) Bây giờ là 3 giờ 20 phút. Sau 20 phút nữa là mấy giờ?
-e) Bây giờ là 6 giờ 30 phút. Cách đây 10 phút là mấy giờ?
+a) Bây giờ là 10 giờ 15 phút. Cách đây 25 phút là mấy giờ?
+b) 2 giờ 15 phút = … phút
+c) Bây giờ là 1 giờ 45 phút. Sau 10 phút nữa là mấy giờ?
+d) Bây giờ là 5 giờ 30 phút. Cách đây 45 phút là mấy giờ?
 
 
 ## PHẦN E — BÀI PHÂN HOÁ · 15 phút · 15 điểm
 
 Dành cho học viên nhắm điểm 9 – 10. Làm hết phần A đến D rồi mới vào đây.
 
-### Bài 1, (7,5 điểm — mức M4) Bài toán trồng cây
+### Bài 1, (7,5 điểm — mức M4) Tìm kích thước từ chu vi, diện tích
 
-Vẽ hình minh hoạ trước khi tính.
+Làm ngược lại công thức.
 
-a) Đoạn đường dài 25 m, trồng cây cách nhau 5 m, chỉ trồng ở một đầu. Cần bao nhiêu cây?
-b) Đoạn đường dài 60 m, trồng cây cách nhau 5 m, không trồng ở hai đầu. Cần bao nhiêu cây?
-c) Đoạn đường dài 48 m, trồng cây cách nhau 4 m, trồng cả hai đầu. Cần bao nhiêu cây?
-d) Quanh một cái ao có chu vi 42 m, trồng cây cách nhau 3 m. Cần bao nhiêu cây?
+a) Hình vuông có chu vi 160 cm. Tính cạnh và diện tích.
+b) Hình vuông cạnh 5 cm và hình chữ nhật 6 cm × 5 cm. Hình nào có diện tích lớn hơn?
+c) Hình chữ nhật có chu vi 50 cm, chiều dài 15 cm. Tính chiều rộng.
+d) Hình vuông có chu vi 52 cm. Tính cạnh và diện tích.
 
-### Bài 2, (7,5 điểm — mức M5) Đếm đoạn thẳng và tam giác
+### Bài 2, (7,5 điểm — mức M5) Tổng – hiệu khi hiệu bị giấu sau một lần chuyển
 
-Đếm có hệ thống, nêu rõ cách đếm.
+Chú ý: chuyển đi thì bên này giảm, bên kia tăng.
 
-a) Trên một đường thẳng lấy 3 điểm. Có bao nhiêu đoạn thẳng?
-b) Nếu lấy thêm một điểm nữa thì có thêm bao nhiêu đoạn thẳng?
-c) Với 4 điểm thì có tất cả bao nhiêu đoạn thẳng?
-d) Từ một đỉnh của tam giác lớn kẻ 2 đoạn thẳng tới cạnh đối diện. Cạnh đối diện bị chia thành mấy phần?
+a) Quân và Phúc có tất cả 92 quyển vở. Nếu Quân cho Phúc 2 quyển thì hai bạn có số vở bằng nhau. Hỏi lúc đầu Quân có bao nhiêu quyển?
+b) Sau khi cho, mỗi bạn có bao nhiêu quyển vở?
+c) Lúc đầu Phúc có bao nhiêu quyển vở?
+d) Lúc đầu Quân hơn Phúc bao nhiêu quyển?
 
 
 ---
@@ -201,101 +199,98 @@ d) Từ một đỉnh của tam giác lớn kẻ 2 đoạn thẳng tới cạnh 
 ### Phần C
 
 **Bài 1.**
-a) **3 816**
-b) **271**
-c) **948 dư 7**
-d) **727**
-e) **5 760**
+a) **đậu phụ: 80 000 · trứng gà: 30 000 · chuối: 80 000**
+b) **190 000**
+c) **192 500**
+d) **2 500 đồng**
+e) **7 500 đồng**
 
 **Bài 2.**
-a) **4**
-b) **x = 186**
-c) **x = 304**
-d) **0**
-e) **9**
+a) **2 chục nghìn, 7 nghìn, 0 trăm, 4 chục, 5 đơn vị**
+b) **27 045 − 26 865 = 180 kW·h**
+c) **27 000**
+d) **27 045**
+e) **nhiều hơn 87 kW·h**
 
 **Bài 3.**
-a) **12 cm**
-b) **32 cm**
-c) **B**
-d) **B**
-e) **14 cm**
+a) **144 cm**
+b) **16 cm**
+c) **1 444 cm²**
+d) **231 cm²**
+e) **32 cm**
 
 **Bài 4.**
-a) **1 phần 2**
-b) **nhóm Sao Mai: 27 cây, đội Hai: 81 cây**
-c) **tổ Hai: 6 cây, nhóm Sao Mai: 30 cây**
-d) **1 phần 2**
-e) **tổ Ba: 6 cây, nhóm Sao Mai: 30 cây**
+a) **đội Một: 14 cây, đội Hai: 28 cây**
+b) **1 phần 3**
+c) **tổ Một: 8 cây, nhóm Hoa Phượng: 40 cây**
+d) **1 phần 3**
+e) **đội Một: 6 cây, tổ Một: 12 cây**
 
 **Bài 5.**
-a) **31**
-b) **không**
-c) **Thứ Hai**
+a) **29**
+b) **có**
+c) **Thứ Bảy**
 d) **4**
-e) **Thứ Tư**
+e) **Thứ Bảy**
 
 
 ### Phần D
 
 **Bài 1.**
-a) **369 · 396 · 639 · 693 · 936 · 963**
-b) **6**
-c) **963**
-d) **369**
-e) **594**
+a) **171**
+b) **17**
+c) **38**
+d) **73**
+e) **485**
 
 **Bài 2.**
-a) **không (tổng các chữ số bằng 17)**
-b) **không (tận cùng là 9)**
-c) **có (tổng các chữ số bằng 15)**
-d) **không (tận cùng là 1)**
-e) **có (tổng các chữ số bằng 21)**
+a) **48**
+b) **48 cm²**
+c) **1 cm²**
+d) **24 cm²**
+e) **12 cm²**
 
 **Bài 3.**
-a) **20**
-b) **20 cm²**
-c) **1 cm²**
-d) **10 cm²**
-e) **5 cm²**
+a) **108 cây**
+b) **238 cây**
+c) **78 cây**
+d) **288 cây**
 
 **Bài 4.**
-a) **425**
-b) **4 giờ 55 phút**
-c) **11 giờ 5 phút**
-d) **3 giờ 40 phút**
-e) **6 giờ 20 phút**
+a) **9 giờ 50 phút**
+b) **135**
+c) **1 giờ 55 phút**
+d) **4 giờ 45 phút**
 
 
 ### Phần E
 
 **Bài 1.**
-a) **5**
-b) **11**
-c) **13**
-d) **14**
+a) **cạnh 40 cm, diện tích 1 600 cm²**
+b) **hình chữ nhật**
+c) **10 cm**
+d) **cạnh 13 cm, diện tích 169 cm²**
 
 Cách giải mẫu:
-1. Xét ý a: Đoạn đường dài 25 m, trồng cây cách nhau 5 m, chỉ trồng ở một đầu. Cần bao nhiêu cây?
-2. Đọc vị: đây là dạng **Bài toán trồng cây**; dấu hiệu là “Trồng cây”, “cột điện”, “quanh ao”.
-3. Kiến thức phải dùng: Quan hệ số cây – số khoảng.
-4. Cách làm: Số khoảng rồi chọn công thức theo trường hợp.
-5. Lối tắt: Khép kín thì số cây bằng đúng số khoảng.
-6. Kết quả: **5**.
+1. Xét ý a: Hình vuông có chu vi 160 cm. Tính cạnh và diện tích.
+2. Đọc vị: đây là dạng **Tìm kích thước từ chu vi, diện tích**; dấu hiệu là Cho chu vi hoặc diện tích và một kích thước.
+3. Kiến thức phải dùng: Công thức chu vi, diện tích; phép tính ngược.
+4. Cách làm: Đi ngược công thức qua bước nửa chu vi.
+5. Lối tắt: Nửa chu vi = chu vi : 2 — luôn tính bước này đầu tiên.
+6. Kết quả: **cạnh 40 cm, diện tích 1 600 cm²**.
 
 **Bài 2.**
-a) **3**
-b) **3**
-c) **6**
-d) **3**
+a) **48 quyển**
+b) **46 quyển**
+c) **44 quyển**
+d) **4 quyển**
 
 Cách giải mẫu:
-1. Mỗi đoạn thẳng được xác định bởi **hai điểm**.
-2. Mỗi điểm nối được với 2 điểm còn lại, tổng 3 × 2 = 6 lượt.
-3. Mỗi đoạn bị đếm hai lần (một lần từ mỗi đầu), nên chia 2.
-4. Số đoạn thẳng: 6 : 2 = 3.
-5. Kiểm tra với 3 điểm: 3 × 2 : 2 = 3 đoạn ✓
-6. Đáp số: **3 đoạn thẳng**.
+1. Sau khi cho, hai bạn bằng nhau, nên mỗi bạn có 92 : 2 = 46 (quyển).
+2. Quân đã cho đi 2 quyển, nên lúc đầu Quân có 46 + 2 = 48 (quyển).
+3. Lúc đầu Phúc có 92 − 48 = 44 (quyển).
+4. Hiệu lúc đầu: 48 − 44 = 4 (quyển) — đúng bằng hai lần số vở đã chuyển.
+5. Đáp số: **lúc đầu Quân có 48 quyển**.
 
 
 ---
@@ -306,17 +301,17 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 
 | Bài | Đo cái gì | Sai bài này nghĩa là | Học lại ở đâu |
 |:--:|---|---|---|
-| C1 | Cụm C01 — Bảng nhân, bảng chia và bốn phép tính nền tảng | Quên chữ số 0 ở giữa thương nên thương thiếu chữ số. | Phiếu `NC` và `OT` của cụm C01 |
-| C2 | Cụm C02 — Số trong phạm vi 1 000 và tìm thành phần chưa biết | Áp dụng quy tắc của số trừ cho số bị trừ. | Phiếu `NC` và `OT` của cụm C02 |
-| C3 | Cụm C03 — Hình phẳng, góc và chu vi | So bán kính của hình này với đường kính của hình kia. | Phiếu `NC` và `OT` của cụm C03 |
+| C1 | Cụm C01 — Bảng nhân, bảng chia và bốn phép tính nền tảng | Lấy tổng đã làm tròn ra trả tiền. | Phiếu `NC` và `OT` của cụm C01 |
+| C2 | Cụm C02 — Số trong phạm vi 1 000 và tìm thành phần chưa biết | Lấy thẳng chỉ số cuối làm số điện đã dùng. | Phiếu `NC` và `OT` của cụm C02 |
+| C3 | Cụm C03 — Hình phẳng, góc và chu vi | Nhầm công thức chu vi với diện tích. | Phiếu `NC` và `OT` của cụm C03 |
 | C4 | Cụm C04 — Giải toán một bước, gấp và giảm số lần | Dùng nhầm công thức tổng – tỉ cho bài hiệu – tỉ. | Phiếu `NC` và `OT` của cụm C04 |
 | C5 | Cụm C05 — Đo độ dài, khối lượng, thời gian và tiền Việt Nam | Đếm tay từng ngày nên vừa lâu vừa sai. | Phiếu `NC` và `OT` của cụm C05 |
 | D1 | Nối nhóm B với nhóm A | Làm được từng chuyên đề riêng nhưng chưa ghép được hai chuyên đề | Phần IV và V của phiếu `OT` các cụm liên quan |
 | D2 | Nối nhóm A với nhóm F | Làm được từng chuyên đề riêng nhưng chưa ghép được hai chuyên đề | Phần IV và V của phiếu `OT` các cụm liên quan |
 | D3 | Nối nhóm F với nhóm D | Làm được từng chuyên đề riêng nhưng chưa ghép được hai chuyên đề | Phần IV và V của phiếu `OT` các cụm liên quan |
 | D4 | Nối nhóm D với nhóm E | Làm được từng chuyên đề riêng nhưng chưa ghép được hai chuyên đề | Phần IV và V của phiếu `OT` các cụm liên quan |
-| E1 | Bài toán trồng cây | Máy móc cộng 1 cho mọi trường hợp. | Nhóm chuyên đề **—** · mức — |
-| E2 | Đếm hình bằng quy tắc chọn hai điểm | Chỉ đếm các đoạn nhỏ nhất, quên các đoạn ghép. | Nhóm chuyên đề **—** · mức — |
+| E1 | Tìm kích thước từ chu vi, diện tích | Trừ thẳng chiều dài khỏi chu vi mà chưa chia đôi. | Nhóm chuyên đề **—** · mức — |
+| E2 | Tổng – hiệu có hiệu ẩn sau một lần chuyển | Cho rằng hiệu lúc đầu bằng đúng số vở đã chuyển. | Nhóm chuyên đề **—** · mức — |
 
 ---
 

@@ -36,6 +36,13 @@ def kiem_mot(b) -> list[str]:
         e.append("thiếu tiêu đề hoặc không có ý nào")
     if any(not t or not d for t, d in b.y):
         e.append("có ý rỗng hoặc thiếu đáp số")
+    # Hai ý giống hệt nhau là lỗi nhìn thấy ngay trên phiếu: học sinh làm tới ý
+    # d rồi nhận ra vừa chép lại ý b. `dang_ky` đã bọc mọi mẫu bằng bộ rút lại
+    # nên lỗi này về nguyên tắc không lọt qua được — kiểm ở đây để nếu ai gỡ
+    # lớp bọc ấy thì bộ kiểm định bắt được ngay, chứ không im lặng.
+    cau = [t for t, _ in b.y]
+    if len(set(cau)) != len(cau):
+        e.append("có hai ý giống hệt nhau")
     if not b.goi_y or len(b.goi_y) != 3:
         e.append("gợi ý phải đủ ba tầng")
     if not (b.tuong_tu[0] and b.tuong_tu[1]):
@@ -129,6 +136,15 @@ def main() -> int:
     print(f"  {V if not thieu_dang else X} Mọi dạng bài trong ngân hàng đều có mẫu khớp"
           + ("" if not thieu_dang else f" — thiếu {len(thieu_dang)}: {thieu_dang[:5]}"))
 
+    # Trục bối cảnh thực tế phải phủ **mọi nhóm ở mọi lớp**. Trước đợt này,
+    # nhóm A, B, C không có mẫu thực tế nào ở cả ba lớp — tức là ba nhóm chiếm
+    # phần lớn thời lượng chương trình đang được dạy hoàn toàn trừu tượng.
+    o_tt = [f"lớp {l} nhóm {g}" for l in (3, 4, 5) for g in NHOM
+            if not [x for m in MUC for x in KHO[g].get(m, [])
+                    if l in x.lop and x.thuc_te]]
+    print(f"  {V if not o_tt else X} Mọi nhóm ở mọi lớp đều có mẫu bối cảnh thực tế"
+          + ("" if not o_tt else f" — còn trống {len(o_tt)}: {o_tt[:6]}"))
+
     thieu_pp = phu_phuong_phap()
     print(f"  {V if not thieu_pp else X} Mọi phương pháp giải đều có mẫu bài dạy nó"
           + ("" if not thieu_pp else f" — vắng: {', '.join(thieu_pp)}"))
@@ -156,15 +172,17 @@ def main() -> int:
         print(f"      {D}lớp {lp}: {c} mẫu dùng được\033[0m")
 
     print("─" * 72)
-    if loi or trong or mong or thieu_dang or thieu_pp:
+    if loi or trong or mong or thieu_dang or thieu_pp or o_tt:
         print(f"\033[31m\033[1m  KẾT LUẬN: CÒN LỖI — {len(loi)} mẫu hỏng, "
               f"{len(trong)} ô trống, {len(mong)} ô mỏng, "
               f"{len(thieu_dang)} dạng bài chưa phủ, "
-              f"{len(thieu_pp)} phương pháp chưa có mẫu\033[0m")
+              f"{len(thieu_pp)} phương pháp chưa có mẫu, "
+              f"{len(o_tt)} ô thiếu bối cảnh thực tế\033[0m")
         return 1
     print(f"\033[32m\033[1m  KẾT LUẬN: SẠCH LỖI · {tong_mau} mẫu · "
           f"{n:,} bài sinh thử · 538/538 dạng bài · "
-          f"{len(PHUONG_PHAP)}/{len(PHUONG_PHAP)} phương pháp đã phủ\033[0m".replace(",", " "))
+          f"{len(PHUONG_PHAP)}/{len(PHUONG_PHAP)} phương pháp đã phủ · "
+          f"24/24 ô có bối cảnh thực tế\033[0m".replace(",", " "))
     return 0
 
 

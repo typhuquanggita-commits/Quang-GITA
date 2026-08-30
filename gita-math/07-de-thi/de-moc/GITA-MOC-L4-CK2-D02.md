@@ -30,60 +30,53 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Đặt tính rồi tính. Ước lượng trước để tự kiểm tra.
 
-a) 893 190 − 116 272
-b) 732 556 × 311
-c) 875 010 + 233 215
-d) 101 087 691 : 241
-e) 612 976 − 354 518
-f) 523 801 + 918 376
+a) 66 856 − 17 094
+b) 683 976 × 922
+c) 26 737 956 : 63
+d) 419 879 + 957 795
+e) 700 565 − 90 737
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
-Tính bằng cách thuận tiện nhất.
+Ba món trong giỏ: **thịt lợn** 34 500 đồng · **đậu phụ** 67 000 đồng · **rau muống** 47 500 đồng.
 
-a) 6 640 : 8 : 10
-b) 1 200 : 5 : 10
-c) 800 : 4 : 10
-d) 57 × 25 × 4
-e) 27 × 25 × 4
-f) 2 600 : 4 : 10
+a) Làm tròn giá từng món đến hàng chục nghìn để nhẩm cho nhanh.
+b) Cộng các giá đã làm tròn, được tổng ước lượng là bao nhiêu?
+c) Tính tổng đúng bằng cách cộng các giá gốc.
+d) Tổng ước lượng lệch bao nhiêu so với tổng đúng?
+e) Người mua đưa tờ 150 000 đồng. Người bán phải trả lại bao nhiêu?
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
-Tóm tắt bằng sơ đồ đoạn thẳng rồi giải.
+Giải từng bài toán nhỏ.
 
-a) Tổ Hai và đội Một trồng được 808 cây. Tổ Hai trồng nhiều hơn đội Một 126 cây. Mỗi tổ trồng bao nhiêu cây?
-b) Hai lớp 3B và 4A có tất cả 734 quyển sách. Lớp 3B có nhiều hơn lớp 4A 116 quyển. Mỗi lớp có bao nhiêu quyển?
-c) Thư viện và kho A chứa tất cả 516 kg thóc. Thư viện chứa nhiều hơn kho A 80 kg. Mỗi nơi chứa bao nhiêu kg?
-d) Hai lớp 4A và 5A có tất cả 554 quyển sách. Lớp 4A có nhiều hơn lớp 5A 104 quyển. Mỗi lớp có bao nhiêu quyển?
-e) Tổ Ba và đội Một trồng được 568 cây. Tổ Ba trồng nhiều hơn đội Một 92 cây. Mỗi tổ trồng bao nhiêu cây?
-f) Thư viện và hợp tác xã chứa tất cả 806 kg gạo. Thư viện chứa nhiều hơn hợp tác xã 8 kg. Mỗi nơi chứa bao nhiêu kg?
+a) Trung bình mỗi ngày bán được 279 kg gạo. Hỏi 3 ngày bán được tất cả bao nhiêu ki-lô-gam?
+b) Trung bình mỗi ngày cửa hàng bán được 269 kg gạo. 2 ngày đầu bán được 272, 263 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
+c) 5 ngày đầu tuần một cửa hàng bán được lần lượt 50, 34, 47, 54, 45 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
+d) 4 ngày đầu tuần một cửa hàng bán được lần lượt 169, 168, 149, 154 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
-Chú ý đơn vị mà đề hỏi.
+Ghi kết quả theo giờ và phút.
 
-a) Một xe chở 39 bao thóc, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ thóc?
-b) Một xe chở 10 bao gạo, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ gạo?
-c) Một xe chở 8 bao muối, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ muối?
-d) Một xe chở 6 bao đường, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ đường?
-e) Một xe chở 38 bao muối, mỗi bao 40 kg. Hỏi xe chở bao nhiêu tạ muối?
-f) Một xe chở 36 bao muối, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ muối?
+a) Một chuyến tàu khởi hành lúc 11 giờ 30 phút và đi hết 4 giờ 58 phút. Tàu đến nơi lúc mấy giờ?
+b) Một chuyến tàu khởi hành lúc 11 giờ 30 phút và đi hết 4 giờ 28 phút. Tàu đến nơi lúc mấy giờ?
+c) Một chuyến tàu khởi hành lúc 7 giờ 15 phút và đi hết 1 giờ 28 phút. Tàu đến nơi lúc mấy giờ?
+d) Một chuyến tàu khởi hành lúc 6 giờ 10 phút và đi hết 3 giờ 49 phút. Tàu đến nơi lúc mấy giờ?
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
-Bài mô phỏng phần tự luận của đề thi chất lượng cao.
+Tính nhanh mỗi tổng, nêu công thức đã dùng.
 
-a) Ba số có tổng 273. Số thứ hai hơn số thứ nhất 11, số thứ ba hơn số thứ hai 11. Tìm số thứ hai.
-b) Tìm số thứ nhất.
-c) Tìm số thứ ba.
-d) Vì sao số thứ hai bằng tổng ba số chia cho 3?
-e) Hai số khác có tổng 24 và số bé bằng 1 phần 2 số lớn. Tìm số bé.
-f) Tìm số lớn.
+a) 2 + 4 + 6 + … + 50 (tổng 25 số chẵn đầu tiên)
+b) 1 + 2 + 3 + … + 25
+c) 1 + 3 + 5 + … + 19 (tổng 10 số lẻ đầu tiên)
+d) 1 + 2 + 3 + … + 100
+e) 2 + 4 + 6 + … + 40 (tổng 20 số chẵn đầu tiên)
 
 
 ---
@@ -91,105 +84,97 @@ f) Tìm số lớn.
 ## ĐÁP ÁN VÀ BIỂU ĐIỂM
 
 
-### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 1, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **776 918**
-b) **227 824 916**
-c) **1 108 225**
-d) **419 451**
-e) **258 458**
-f) **1 442 177**
+a) **49 762**
+b) **630 625 872**
+c) **424 412**
+d) **1 377 674**
+e) **609 828**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 893 190 − 116 272
+1. Xét ý a: 66 856 − 17 094
 2. Đọc vị: đây là dạng **Bốn phép tính với số tự nhiên**; dấu hiệu là Yêu cầu “đặt tính rồi tính”.
 3. Kiến thức phải dùng: Kĩ thuật đặt tính cộng, trừ, nhân, chia.
 4. Cách làm: Đặt tính thẳng cột, tính từ hàng đơn vị.
 5. Lối tắt: Ước lượng bằng cách làm tròn để phát hiện sai sót về độ lớn.
-6. Kết quả: **776 918**.
+6. Kết quả: **49 762**.
 
 *Lỗi hay mắc:* Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số.
 
-### Bài 2, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 2, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **83**
-b) **24**
-c) **20**
-d) **5 700**
-e) **2 700**
-f) **65**
-
-**Cách giải mẫu:**
-
-1. Xét ý a: 6 640 : 8 : 10
-2. Đọc vị: đây là dạng **Tính nhanh tích, thương nhiều bước**; dấu hiệu là Tích có thừa số 25, 125, 50, 20; hoặc chia liên tiếp.
-3. Kiến thức phải dùng: Tính chất giao hoán, kết hợp của phép nhân.
-4. Cách làm: Ghép cặp cho tích tròn rồi nhân.
-5. Lối tắt: Chia liên tiếp cho 4 rồi 25 bằng chia cho 100.
-6. Kết quả: **83**.
-
-*Lỗi hay mắc:* Nhân lần lượt từ trái sang phải nên số trung gian rất lớn.
-
-### Bài 3, (2 điểm — mỗi ý 0,33 điểm)
-
-a) **tổ Hai: 467 cây, đội Một: 341 cây**
-b) **3B: 425 quyển, 4A: 309 quyển**
-c) **thư viện: 298 kg, kho A: 218 kg**
-d) **4A: 329 quyển, 5A: 225 quyển**
-e) **tổ Ba: 330 cây, đội Một: 238 cây**
-f) **thư viện: 407 kg, hợp tác xã: 399 kg**
+a) **thịt lợn: 30 000 · đậu phụ: 70 000 · rau muống: 50 000**
+b) **150 000**
+c) **149 000**
+d) **1 000 đồng**
+e) **1 000 đồng**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Tổ Hai và đội Một trồng được 808 cây. Tổ Hai trồng nhiều hơn đội Một 126 cây. Mỗi tổ trồng bao nhiêu cây?
-2. Đọc vị: đây là dạng **Tổng – hiệu có lời văn**; dấu hiệu là “Có tất cả …” và “… nhiều hơn … là …”.
-3. Kiến thức phải dùng: Công thức tổng – hiệu, sơ đồ đoạn thẳng.
-4. Cách làm: Đọc vị tổng và hiệu → sơ đồ → công thức.
-5. Lối tắt: Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần.
-6. Kết quả: **tổ Hai: 467 cây, đội Một: 341 cây**.
+1. Đi chợ thì cần **biết nhanh khoảng bao nhiêu** trước, biết chính xác sau. Vì vậy nhẩm bằng số tròn trước rồi mới cộng số lẻ để bù.
+2. thịt lợn 34 500 → 30 000 · đậu phụ 67 000 → 70 000 · rau muống 47 500 → 50 000
+3. Cộng số tròn: 30 000 + 70 000 + 50 000 = 150 000 đồng — đây là con số nhẩm trong đầu khi đứng ở chợ.
+4. Tổng đúng: 34 500 + 67 000 + 47 500 = **149 000 đồng**, lệch 1 000 đồng so với số nhẩm.
+5. Tiền trả lại: 150 000 − 149 000 = **1 000 đồng**.
 
-*Lỗi hay mắc:* Nhầm hiệu thành tổng khi đề diễn đạt vòng vo.
+*Lỗi hay mắc:* Lấy tổng đã làm tròn ra trả tiền.
 
-### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 3, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **9 tạ 75 kg**
-b) **3 tạ**
-c) **4 tạ 80 kg**
-d) **1 tạ 80 kg**
-e) **15 tạ 20 kg**
-f) **21 tạ 60 kg**
+a) **837 kg**
+b) **272 kg**
+c) **46 kg**
+d) **160 kg**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Một xe chở 39 bao thóc, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ thóc?
-2. Đọc vị: đây là dạng **Bài toán đại lượng có lời văn**; dấu hiệu là Đơn vị trong câu hỏi khác đơn vị trong dữ kiện.
-3. Kiến thức phải dùng: Nhân, chia số tự nhiên; đổi đơn vị khối lượng.
-4. Cách làm: Tính theo đơn vị dữ kiện rồi đổi ở bước cuối.
-5. Lối tắt: 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ.
-6. Kết quả: **9 tạ 75 kg**.
+1. Xét ý a: Trung bình mỗi ngày bán được 279 kg gạo. Hỏi 3 ngày bán được tất cả bao nhiêu ki-lô-gam?
+2. Đọc vị: đây là dạng **Ba dạng bài trung bình cộng**; dấu hiệu là Cụm “trung bình mỗi …”.
+3. Kiến thức phải dùng: Quan hệ tổng – số lượng – trung bình cộng.
+4. Cách làm: Đi qua tổng làm trung gian.
+5. Lối tắt: Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng.
+6. Kết quả: **837 kg**.
 
-*Lỗi hay mắc:* Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ.
+*Lỗi hay mắc:* Đi tìm ngay số còn thiếu mà chưa tính tổng.
 
-### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 4, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **91**
-b) **80**
-c) **102**
-d) **vì ba số cách đều nên số ở giữa là trung bình cộng**
-e) **8**
-f) **16**
+a) **16 giờ 28 phút**
+b) **15 giờ 58 phút**
+c) **8 giờ 43 phút**
+d) **9 giờ 59 phút**
 
 **Cách giải mẫu:**
 
-1. Ba số cách đều nhau 11 đơn vị nên số ở giữa là trung bình cộng.
-2. Bước 1 — số thứ hai: 273 : 3 = 91.
-3. Bước 2 — số thứ nhất: 91 − 11 = 80.
-4. Bước 3 — số thứ ba: 91 + 11 = 102.
-5. Thử lại: 80 + 91 + 102 = 273 ✓
-6. Đáp số: **80, 91, 102**.
+1. Xét ý a: Một chuyến tàu khởi hành lúc 11 giờ 30 phút và đi hết 4 giờ 58 phút. Tàu đến nơi lúc mấy giờ?
+2. Đọc vị: đây là dạng **Tính thời điểm trong ngày**; dấu hiệu là Cho thời điểm bắt đầu và khoảng thời gian.
+3. Kiến thức phải dùng: Quan hệ giờ – phút, phép chia có dư.
+4. Cách làm: Quy về phút, cộng trừ, đổi lại.
+5. Lối tắt: Cộng tròn giờ trước rồi cộng phần phút lẻ sau.
+6. Kết quả: **16 giờ 28 phút**.
 
-*Lỗi hay mắc:* Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi.
+*Lỗi hay mắc:* Cộng phần phút thành hơn 60 mà quên đổi thành giờ.
+
+### Bài 5, (2 điểm — mỗi ý 0,4 điểm)
+
+a) **650**
+b) **325**
+c) **100**
+d) **5 050**
+e) **420**
+
+**Cách giải mẫu:**
+
+1. Xét ý a: 2 + 4 + 6 + … + 50 (tổng 25 số chẵn đầu tiên)
+2. Đọc vị: đây là dạng **Tổng dãy đặc biệt**; dấu hiệu là Dãy toàn số lẻ, toàn số chẵn, hoặc số tự nhiên liên tiếp.
+3. Kiến thức phải dùng: Ba công thức tổng cơ bản.
+4. Cách làm: Đếm số số hạng rồi áp công thức.
+5. Lối tắt: Tổng n số lẻ đầu tiên luôn là một số chính phương — dùng để kiểm tra nhanh.
+6. Kết quả: **650**.
+
+*Lỗi hay mắc:* Nhầm số hạng cuối với số lượng số hạng khi áp công thức.
 
 ---
 
@@ -200,10 +185,10 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài | Đo cái gì | Sai bài này nghĩa là | Học lại ở đâu |
 |:--:|---|---|---|
 | Bài 1 | Bốn phép tính với số tự nhiên | Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số. | Nhóm chuyên đề **—** · mức — |
-| Bài 2 | Tính nhanh tích, thương nhiều bước | Nhân lần lượt từ trái sang phải nên số trung gian rất lớn. | Nhóm chuyên đề **—** · mức — |
-| Bài 3 | Tổng – hiệu có lời văn | Nhầm hiệu thành tổng khi đề diễn đạt vòng vo. | Nhóm chuyên đề **—** · mức — |
-| Bài 4 | Bài toán đại lượng có lời văn | Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. | Nhóm chuyên đề **—** · mức — |
-| Bài 5 | Tổng nhiều số có ràng buộc; tổng – tỉ | Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. | Nhóm chuyên đề **—** · mức — |
+| Bài 2 | Tính nhanh tổng | Lấy tổng đã làm tròn ra trả tiền. | Nhóm chuyên đề **—** · mức — |
+| Bài 3 | Ba dạng bài trung bình cộng | Đi tìm ngay số còn thiếu mà chưa tính tổng. | Nhóm chuyên đề **—** · mức — |
+| Bài 4 | Tính thời điểm trong ngày | Cộng phần phút thành hơn 60 mà quên đổi thành giờ. | Nhóm chuyên đề **—** · mức — |
+| Bài 5 | Tổng dãy đặc biệt | Nhầm số hạng cuối với số lượng số hạng khi áp công thức. | Nhóm chuyên đề **—** · mức — |
 
 ---
 

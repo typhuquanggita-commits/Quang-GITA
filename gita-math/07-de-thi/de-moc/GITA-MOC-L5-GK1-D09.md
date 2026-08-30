@@ -30,51 +30,53 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Viết số tự nhiên ứng với mỗi tổng dưới đây.
 
-a) Viết số gồm tổng: 200 000 + 20 000 + 4 000 + 700 + 40 + 5
-b) Viết số gồm tổng: 6 000 000 + 600 000 + 90 000 + 4 000 + 400 + 20 + 3
-c) Viết số gồm tổng: 5 000 000 + 900 000 + 80 000 + 30 + 1
-d) Viết số gồm tổng: 8 000 000 + 200 000 + 2 000 + 400 + 10 + 1
-e) Viết số gồm tổng: 100 000 + 80 000 + 2 000 + 100 + 10 + 9
+a) Viết số gồm tổng: 4 000 000 + 500 000 + 30 000 + 3 000 + 200 + 40 + 7
+b) Viết số gồm tổng: 7 000 000 + 200 000 + 10 000 + 8 000 + 200 + 10 + 9
+c) Viết số gồm tổng: 9 000 000 + 400 000 + 90 000 + 800 + 60 + 7
+d) Viết số gồm tổng: 3 000 000 + 700 000 + 60 000 + 5 000 + 100 + 70 + 2
+e) Viết số gồm tổng: 5 000 000 + 400 000 + 40 000 + 8 000 + 300 + 10
+f) Viết số gồm tổng: 8 000 000 + 400 000 + 80 000 + 8 000 + 70 + 1
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
 Tính bằng cách thuận tiện nhất.
 
-a) 35 + 40 + 65 + 60
-b) 257 + 74 − 74
-c) 277 + 46 − 46
-d) 22 + 286 + 78
-e) 45 + 77 + 55 + 23
+a) 333 + 32 − 32
+b) 76 + 301 + 24
+c) 47 + 179 + 53
+d) 231 + 37 − 37
+e) 52 + 212 + 48
+f) 26 + 87 − 87
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
 Giải bằng cách rút về đơn vị hoặc dùng tỉ số.
 
-a) Mua 6 quyển vở hết 360 nghìn đồng. Mua 12 quyển vở như thế hết bao nhiêu nghìn đồng?
-b) Mua 12 quyển vở hết 636 nghìn đồng. Mua 17 quyển vở như thế hết bao nhiêu nghìn đồng?
-c) Mua 7 quyển vở hết 441 nghìn đồng. Mua 6 quyển vở như thế hết bao nhiêu nghìn đồng?
-d) Mua 7 quyển vở hết 287 nghìn đồng. Mua 17 quyển vở như thế hết bao nhiêu nghìn đồng?
+a) Mua 6 quyển vở hết 150 nghìn đồng. Với 750 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+b) Mua 15 quyển vở hết 600 nghìn đồng. Mua 7 quyển vở như thế hết bao nhiêu nghìn đồng?
+c) Mua 7 quyển vở hết 119 nghìn đồng. Mua 6 quyển vở như thế hết bao nhiêu nghìn đồng?
+d) Mua 14 quyển vở hết 1 246 nghìn đồng. Mua 25 quyển vở như thế hết bao nhiêu nghìn đồng?
+e) Mua 13 quyển vở hết 1 066 nghìn đồng. Mua 14 quyển vở như thế hết bao nhiêu nghìn đồng?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
-Điền số thích hợp.
+Chú ý đơn vị mà đề hỏi.
 
-a) 43 m³ = … dm³
-b) 14 lít = … ml
-c) 33 dm³ = … lít
-d) 73 000 cm³ = … dm³
-e) 7 dm³ = … lít
-f) 32 m³ = … dm³
+a) Một xe chở 11 bao đường, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ đường?
+b) Một xe chở 33 bao thóc, mỗi bao 50 kg. Hỏi xe chở bao nhiêu tạ thóc?
+c) Một xe chở 27 bao phân bón, mỗi bao 50 kg. Hỏi xe chở bao nhiêu tạ phân bón?
+d) Một xe chở 13 bao gạo, mỗi bao 50 kg. Hỏi xe chở bao nhiêu tạ gạo?
+e) Một xe chở 17 bao xi măng, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ xi măng?
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
 Vẽ hình và tô phần cần tính trước khi làm.
 
-a) Hình chữ nhật có chiều dài 11 cm, chiều rộng 4 cm. Tính diện tích.
+a) Hình chữ nhật có chiều dài 8 cm, chiều rộng 6 cm. Tính diện tích.
 b) Cắt hình ấy thành 4 phần bằng nhau. Mỗi phần có diện tích bao nhiêu?
 c) Nối trung điểm hai cạnh dài lại, hình bị chia thành hai phần. Mỗi phần có diện tích bao nhiêu?
 d) Nối một đỉnh với trung điểm cạnh đối diện, được một tam giác. Diện tích tam giác ấy bằng bao nhiêu phần diện tích hình chữ nhật?
@@ -87,97 +89,99 @@ f) Nếu ghép hai hình chữ nhật ấy theo chiều rộng thì hình mới 
 ## ĐÁP ÁN VÀ BIỂU ĐIỂM
 
 
-### Bài 1, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **224 745**
-b) **6 694 423**
-c) **5 980 031**
-d) **8 202 411**
-e) **182 119**
+a) **4 533 247**
+b) **7 218 219**
+c) **9 490 867**
+d) **3 765 172**
+e) **5 448 310**
+f) **8 488 071**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Viết số gồm tổng: 200 000 + 20 000 + 4 000 + 700 + 40 + 5
+1. Xét ý a: Viết số gồm tổng: 4 000 000 + 500 000 + 30 000 + 3 000 + 200 + 40 + 7
 2. Đọc vị: đây là dạng **Viết số từ dạng tổng theo hàng**; dấu hiệu là Tổng gồm các số tròn chục, tròn trăm, tròn nghìn….
 3. Kiến thức phải dùng: Cấu tạo thập phân của số tự nhiên.
 4. Cách làm: Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết.
 5. Lối tắt: Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số.
-6. Kết quả: **224 745**.
+6. Kết quả: **4 533 247**.
 
 *Lỗi hay mắc:* Bỏ qua hàng khuyết nên số viết ra bị ngắn đi một chữ số.
 
-### Bài 2, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 2, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **200**
-b) **257**
-c) **277**
-d) **386**
-e) **200**
+a) **333**
+b) **401**
+c) **279**
+d) **231**
+e) **312**
+f) **26**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 35 + 40 + 65 + 60
+1. Xét ý a: 333 + 32 − 32
 2. Đọc vị: đây là dạng **Tính nhanh tổng nhiều số hạng**; dấu hiệu là Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm.
 3. Kiến thức phải dùng: Tính chất giao hoán, kết hợp của phép cộng.
 4. Cách làm: Ghép cặp tròn rồi cộng.
 5. Lối tắt: Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10.
-6. Kết quả: **200**.
+6. Kết quả: **333**.
 
 *Lỗi hay mắc:* Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn.
 
-### Bài 3, (2 điểm — mỗi ý 0,5 điểm)
+### Bài 3, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **720 nghìn đồng**
-b) **901 nghìn đồng**
-c) **378 nghìn đồng**
-d) **697 nghìn đồng**
+a) **30 quyển**
+b) **280 nghìn đồng**
+c) **102 nghìn đồng**
+d) **2 225 nghìn đồng**
+e) **1 148 nghìn đồng**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Mua 6 quyển vở hết 360 nghìn đồng. Mua 12 quyển vở như thế hết bao nhiêu nghìn đồng?
+1. Xét ý a: Mua 6 quyển vở hết 150 nghìn đồng. Với 750 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
 2. Đọc vị: đây là dạng **Tỉ lệ thuận, rút về đơn vị**; dấu hiệu là Hai đại lượng cùng tăng cùng giảm.
 3. Kiến thức phải dùng: Đại lượng tỉ lệ thuận.
 4. Cách làm: Rút về đơn vị hoặc dùng tỉ số.
 5. Lối tắt: Nếu số lượng mới gấp số lượng cũ một số nguyên lần thì nhân thẳng, không cần rút về đơn vị.
-6. Kết quả: **720 nghìn đồng**.
+6. Kết quả: **30 quyển**.
 
 *Lỗi hay mắc:* Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch.
 
-### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 4, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **43 000**
-b) **14 000**
-c) **33**
-d) **73**
-e) **7**
-f) **32 000**
+a) **2 tạ 75 kg**
+b) **16 tạ 50 kg**
+c) **13 tạ 50 kg**
+d) **6 tạ 50 kg**
+e) **5 tạ 10 kg**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 43 m³ = … dm³
-2. Đọc vị: đây là dạng **Đổi đơn vị thể tích, dung tích**; dấu hiệu là Đơn vị có mũ ba, hoặc lít, mi-li-lít.
-3. Kiến thức phải dùng: Bảng đơn vị thể tích; quan hệ dm³ – lít.
-4. Cách làm: Đếm bậc rồi nhân, chia 1 000.
-5. Lối tắt: Mỗi bậc thêm ba chữ số 0.
-6. Kết quả: **43 000**.
+1. Xét ý a: Một xe chở 11 bao đường, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ đường?
+2. Đọc vị: đây là dạng **Bài toán đại lượng có lời văn**; dấu hiệu là Đơn vị trong câu hỏi khác đơn vị trong dữ kiện.
+3. Kiến thức phải dùng: Nhân, chia số tự nhiên; đổi đơn vị khối lượng.
+4. Cách làm: Tính theo đơn vị dữ kiện rồi đổi ở bước cuối.
+5. Lối tắt: 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ.
+6. Kết quả: **2 tạ 75 kg**.
 
-*Lỗi hay mắc:* Đổi như đơn vị diện tích, chỉ nhân 100.
+*Lỗi hay mắc:* Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ.
 
 ### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **44 cm²**
-b) **11 cm²**
-c) **22 cm²**
+a) **48 cm²**
+b) **12 cm²**
+c) **24 cm²**
 d) **1 phần 4**
-e) **11 cm²**
-f) **diện tích 88 cm², chu vi 38 cm**
+e) **12 cm²**
+f) **diện tích 96 cm², chu vi 40 cm**
 
 **Cách giải mẫu:**
 
-1. Diện tích hình chữ nhật: 11 × 4 = 44 (cm²).
+1. Diện tích hình chữ nhật: 8 × 6 = 48 (cm²).
 2. Nối một đỉnh với trung điểm cạnh đối diện được một tam giác có đáy bằng nửa cạnh và chiều cao bằng cạnh kia.
 3. Diện tích tam giác = đáy × chiều cao : 2, tức bằng (nửa cạnh × cạnh kia) : 2 = **một phần tư** diện tích hình chữ nhật.
-4. Cụ thể: 44 : 4 = 11 (cm²).
+4. Cụ thể: 48 : 4 = 12 (cm²).
 5. Ghép hai hình theo chiều rộng: diện tích cộng lại, nhưng chu vi thì không cộng vì hai cạnh dán vào trong.
 6. Đáp số ý d: **một phần tư**.
 
@@ -194,7 +198,7 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài 1 | Viết số từ dạng tổng theo hàng | Bỏ qua hàng khuyết nên số viết ra bị ngắn đi một chữ số. | Nhóm chuyên đề **—** · mức — |
 | Bài 2 | Tính nhanh tổng nhiều số hạng | Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. | Nhóm chuyên đề **—** · mức — |
 | Bài 3 | Tỉ lệ thuận, rút về đơn vị | Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch. | Nhóm chuyên đề **—** · mức — |
-| Bài 4 | Đổi đơn vị thể tích, dung tích | Đổi như đơn vị diện tích, chỉ nhân 100. | Nhóm chuyên đề **—** · mức — |
+| Bài 4 | Bài toán đại lượng có lời văn | Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. | Nhóm chuyên đề **—** · mức — |
 | Bài 5 | Cắt ghép hình, tỉ số diện tích | Cộng chu vi hai hình nhỏ lại thành chu vi hình ghép. | Nhóm chuyên đề **—** · mức — |
 
 ---

@@ -54,6 +54,7 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 | M1 | Cụm “một phần mấy của …” | Tìm một phần mấy của một số | Chia số đó cho mẫu số | Kết quả luôn nhỏ hơn số ban đầu — dùng để kiểm tra ngay. | Chia chứ không nhân |
 | M2 | Đề cho bảng số liệu kèm nhiều câu hỏi | Đọc bảng số liệu | Ghi lại số liệu rồi trả lời từng câu | Tính tổng một lần rồi dùng lại cho các câu sau. | — |
 | M2 | Có hình vẽ lặp lại kèm một dòng chú thích | Đọc và lập biểu đồ tranh | Đọc chú thích → nhân số hình với đơn vị | Nếu mọi bạn đều dùng cùng một loại hình thì so số hình là đủ để biết ai nhiều nhất. | Một hình không phải một đơn vị |
+| M2 | Một bảng hai chiều: hàng là nhóm, cột là loại số liệu | Đọc bảng số liệu thống kê | Cộng theo hàng cho từng nhóm, cộng theo cột cho toàn bộ | Tổng theo hàng và tổng theo cột luôn bằng nhau, dùng để soát lại. | — |
 | M3 | “Đã bán một phần mấy”, hỏi “còn lại” | Tìm một phần mấy rồi tính phần còn lại | Chia để tìm phần đã dùng rồi trừ | Bán 1 phần 4 thì còn 3 phần 4 — chia rồi nhân 3, một bước là xong. | Câu hỏi hỏi phần còn lại |
 | M4 | “Một phần mấy của một số là …, tìm số đó” | Tìm số khi biết một phần mấy của nó | Nhân giá trị một phần với mẫu số | Kết quả phải lớn hơn số đã cho — dùng để loại đáp số sai ngay. | Nhân chứ không chia |
 | M4 | “Một phần mấy của một số là …” | Tìm số khi biết một phần mấy | Nhân giá trị một phần với mẫu số | Kết quả phải lớn hơn số đã cho — loại đáp số sai ngay. | Nhân chứ không chia |
@@ -82,45 +83,52 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 
 Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: đây là dạng bài gì, và dấu hiệu nào cho biết điều đó.
 
-**Đề 1.** Đọc kĩ: phân số ở bước hai tính trên số nào? Có 40 quyển vở. Ngày đầu phát 1 phần 4 số vở. Ngày đầu phát bao nhiêu quyển?
+**Đề 1.** Làm ngược lại phép chia. Biết 1 phần 5 của một số là 19. Tìm số đó.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 2.** Bảng ghi số bông hoa mỗi bạn gấp được: An: 23 · Dũng: 5 · Tuấn: 23 · Bình: 24. Cả bốn bạn gấp được bao nhiêu bông hoa?
+**Đề 2.** Bảng ghi số bông hoa mỗi bạn gấp được: Ngọc: 9 · Yến: 18 · Thảo: 24 · Trang: 13. Cả bốn bạn gấp được bao nhiêu bông hoa?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 3.** Tính rồi ghi kết quả. Tìm 1 phần 6 của 48.
+**Đề 3.** Trình bày lời giải hai bước. Một cửa hàng có 75 kg gạo, đã bán 1 phần 3 số gạo đó. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 4.** Tính rồi ghi kết quả. Tìm 1 phần 4 của 64.
+**Đề 4.** Chú ý cụm “số còn lại”. Có 120 quyển vở. Ngày đầu phát 1 phần 2 số vở, ngày thứ hai phát 1 phần 4 **số vở còn lại**. Hỏi còn lại bao nhiêu quyển vở?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 5.** Làm ngược lại phép chia. Số 20 bằng một phần mấy số 60?
+**Đề 5.** Đọc kĩ: phân số ở bước hai tính trên số nào? Có 48 quyển vở. Ngày đầu phát 1 phần 3 số vở. Ngày đầu phát bao nhiêu quyển?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 6.** Bảng số vở bán được trong tuần: **Thứ Hai: 12 · Thứ Ba: 16 · Thứ Tư: 34 · Thứ Năm: 18 · Thứ Sáu: 5**. Cả tuần cửa hàng bán được bao nhiêu quyển vở?
+**Đề 6.** Làm ngược lại phép chia. Có 60 quyển vở, đã dùng 1 phần 4 số vở. Còn lại bao nhiêu quyển?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 7.** Biểu đồ tranh số quyển sách của bốn bạn — mỗi hình ● ứng với **5 quyển sách**:
-
-Yến: ●●● · Vy: ●● · Tuấn: ●●●●● · Thảo: ●●● Mỗi hình ● ứng với 5 quyển sách. Bạn Yến có bao nhiêu quyển sách?
+**Đề 7.** Bảng số vở bán được trong tuần: **Thứ Hai: 10 · Thứ Ba: 31 · Thứ Tư: 14 · Thứ Năm: 27 · Thứ Sáu: 20**. Cả tuần cửa hàng bán được bao nhiêu quyển vở?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 8.** Chú ý cụm “số còn lại”. Có 68 quyển vở. Ngày đầu phát 1 phần 2 số vở, ngày thứ hai phát 1 phần 2 **số vở còn lại**. Hỏi còn lại bao nhiêu quyển vở?
+**Đề 8.** Bảng ghi số bạn nam và số bạn nữ của bốn tổ trong một lớp:
+
+| Tổ | Số bạn nam | Số bạn nữ |
+|:--:|---:|---:|
+| Tổ 1 | 9 | 9 |
+| Tổ 2 | 8 | 4 |
+| Tổ 3 | 8 | 4 |
+| Tổ 4 | 9 | 4 |
+
+Dùng chung bảng này cho mọi ý. Tổ nào có nhiều bạn nhất, và tổ ấy có bao nhiêu bạn?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 9.** Trình bày lời giải hai bước. Một cửa hàng có 32 kg gạo, đã bán 1 phần 2 số gạo đó. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
+**Đề 9.** Tính rồi ghi kết quả. Tìm 1 phần 5 của 40.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 10.** Làm ngược lại phép chia. Biết 1 phần 2 của một số là 27. Tìm số đó.
+**Đề 10.** Tính rồi ghi kết quả. Tìm 1 phần 2 của 16.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
@@ -130,16 +138,16 @@ Yến: ●●● · Vy: ●● · Tuấn: ●●●●● · Thảo: ●●● M
 
 | # | Dạng bài | Dấu hiệu |
 |:--:|---|---|
-| 1 | Tìm phân số của một số qua nhiều bước | Cụm “… số còn lại” |
+| 1 | Tìm số khi biết một phần mấy của nó | “Một phần mấy của một số là …, tìm số đó” |
 | 2 | Đọc bảng số liệu | Đề cho bảng số liệu kèm nhiều câu hỏi |
-| 3 | Tìm một phần mấy của một số | Cụm “một phần mấy của …” |
-| 4 | Tìm một phần mấy của một số | Cụm “một phần mấy của …” |
-| 5 | Tìm số khi biết một phần mấy | “Một phần mấy của một số là …” |
-| 6 | Đọc bảng số liệu | Đề cho bảng số liệu kèm nhiều câu hỏi |
-| 7 | Đọc và lập biểu đồ tranh | Có hình vẽ lặp lại kèm một dòng chú thích |
-| 8 | Tìm phân số của một số qua nhiều bước | Cụm “… số còn lại” |
-| 9 | Tìm một phần mấy rồi tính phần còn lại | “Đã bán một phần mấy”, hỏi “còn lại” |
-| 10 | Tìm số khi biết một phần mấy của nó | “Một phần mấy của một số là …, tìm số đó” |
+| 3 | Tìm một phần mấy rồi tính phần còn lại | “Đã bán một phần mấy”, hỏi “còn lại” |
+| 4 | Tìm phân số của một số qua nhiều bước | Cụm “… số còn lại” |
+| 5 | Tìm phân số của một số qua nhiều bước | Cụm “… số còn lại” |
+| 6 | Tìm số khi biết một phần mấy | “Một phần mấy của một số là …” |
+| 7 | Đọc bảng số liệu | Đề cho bảng số liệu kèm nhiều câu hỏi |
+| 8 | Đọc bảng số liệu thống kê | Một bảng hai chiều: hàng là nhóm, cột là loại số liệu |
+| 9 | Tìm một phần mấy của một số | Cụm “một phần mấy của …” |
+| 10 | Tìm một phần mấy của một số | Cụm “một phần mấy của …” |
 
 ---
 

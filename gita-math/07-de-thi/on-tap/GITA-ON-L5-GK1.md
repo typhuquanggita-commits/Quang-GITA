@@ -61,86 +61,87 @@ Viết lại từ trí nhớ. Mỗi ý bỏ trống là một chỗ phải ôn l
 
 Xác định rõ đề cho gì, hỏi gì.
 
-a) Tìm 10% của 100.
-b) Biết 15% của một số là 12. Tìm số đó.
-c) Tìm tỉ số phần trăm của 15 và 50.
-d) Biết 20% của một số là 80. Tìm số đó.
-e) Tìm tỉ số phần trăm của 40 và 200.
+a) Biết 20% của một số là 60. Tìm số đó.
+b) Tìm tỉ số phần trăm của 10 và 100.
+c) Tìm 30% của 200.
+d) Tìm tỉ số phần trăm của 5 và 100.
+e) Biết 25% của một số là 10. Tìm số đó.
 
 ### Bài 2, (8,8 điểm) So sánh hai số đo khác đơn vị — cụm C02
 
 Điền dấu <, >, = thích hợp.
 
-a) 2 tấn … 822 g
-b) 17 m … 5 904 dam
-c) 87 dm² … 3 688 km²
-d) 52 cm² … 7 283 dm²
+a) 24 m² … 4 281 dm²
+b) 33 dm … 7 789 cm
+c) 80 kg … 1 489 g
+d) 54 dam … 995 km
+e) 15 ha … 802 cm²
 
 ### Bài 3, (8,8 điểm) Trung bình cộng trong tình huống thực tế — cụm C03
 
 Giải từng bài toán nhỏ.
 
-a) 5 ngày đầu tuần một cửa hàng bán được lần lượt 87, 80, 88, 72, 68 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
-b) Trung bình mỗi ngày bán được 286 kg gạo. Hỏi 4 ngày bán được tất cả bao nhiêu ki-lô-gam?
-c) Trung bình mỗi ngày cửa hàng bán được 139 kg gạo. 2 ngày đầu bán được 140, 129 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
-d) Trung bình mỗi ngày cửa hàng bán được 79 kg gạo. 5 ngày đầu bán được 68, 84, 75, 90, 67 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
-e) 5 ngày đầu tuần một cửa hàng bán được lần lượt 81, 87, 80, 82, 75 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
+a) Trung bình mỗi ngày cửa hàng bán được 280 kg gạo. 4 ngày đầu bán được 282, 286, 269, 284 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
+b) Trung bình mỗi ngày cửa hàng bán được 139 kg gạo. 2 ngày đầu bán được 137, 151 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
+c) 6 ngày đầu tuần một cửa hàng bán được lần lượt 281, 290, 302, 293, 292, 288 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
+d) Trung bình mỗi ngày bán được 254 kg gạo. Hỏi 3 ngày bán được tất cả bao nhiêu ki-lô-gam?
+e) Trung bình mỗi ngày cửa hàng bán được 123 kg gạo. 4 ngày đầu bán được 128, 122, 118, 117 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
 
-### Bài 4, (8,8 điểm) Tính nhanh tổng dãy số cách đều — cụm C04
+### Bài 4, (8,8 điểm) Tính nhanh với phân số — cụm C04
 
-Tính tổng mỗi dãy.
+Tính bằng cách thuận tiện nhất.
 
-a) 1 + 3 + 5 + … + 199
-b) 1 + 4 + 7 + … + 148
-c) 1 + 2 + 3 + … + 20
-d) 1 + 6 + 11 + … + 121
-e) 1 + 4 + 7 + … + 28
+a) 2 × 1 phần 2
+b) 3 phần 5 + 1 phần 3 + 1 phần 15
+c) 2 phần 5 + 3 phần 5
+d) 9 phần 11 + 1 phần 11 + 1 phần 11
 
 
 ## PHẦN D — BÀI TỔNG HỢP LIÊN CỤM · 25 phút · 30 điểm
 
 Mỗi bài dưới đây phải dùng kỹ thuật của **hai chuyên đề khác nhau**.
 
-### Bài 1, (15,0 điểm) Bài toán thực tế về khối lượng — nối nhóm H với nhóm E
+### Bài 1, (15,0 điểm) Tính thời điểm đến, thời gian đi — nối nhóm H với nhóm E
+
+Ghi kết quả theo giờ và phút.
+
+a) Một chuyến tàu khởi hành lúc 8 giờ 30 phút và đi hết 41 phút. Tàu đến nơi lúc mấy giờ?
+b) Một chuyến tàu khởi hành lúc 13 giờ 0 phút và đi hết 6 giờ 11 phút. Tàu đến nơi lúc mấy giờ?
+c) Một chuyến tàu khởi hành lúc 7 giờ 10 phút và đi hết 6 giờ 38 phút. Tàu đến nơi lúc mấy giờ?
+d) Một chuyến tàu khởi hành lúc 11 giờ 40 phút và đi hết 58 phút. Tàu đến nơi lúc mấy giờ?
+
+### Bài 2, (15,0 điểm) Bài toán thực tế về khối lượng — nối nhóm E với nhóm D
 
 Chú ý đơn vị mà đề hỏi.
 
-a) Một xe chở 17 bao xi măng, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ xi măng?
-b) Một xe chở 27 bao muối, mỗi bao 40 kg. Hỏi xe chở bao nhiêu tạ muối?
-c) Một xe chở 14 bao gạo, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ gạo?
-d) Một xe chở 35 bao phân bón, mỗi bao 40 kg. Hỏi xe chở bao nhiêu tạ phân bón?
-
-### Bài 2, (15,0 điểm) Chia theo tỉ lệ ba phần và bài toán trộn — nối nhóm E với nhóm D
-
-Vẽ sơ đồ ba đoạn thẳng cho bài chia tỉ lệ.
-
-a) Trộn 7 kg gạo giá 12 000 đồng một ki-lô-gam với 7 kg gạo giá 30 000 đồng một ki-lô-gam. Hỏi tổng số tiền là bao nhiêu?
-b) Ba tổ trồng được 192 cây. Số cây tổ Một, tổ Hai, tổ Ba tỉ lệ với 3, 1, 4. Mỗi tổ trồng bao nhiêu cây?
-c) Ba tổ trồng được 88 cây. Số cây tổ Một, tổ Hai, tổ Ba tỉ lệ với 4, 3, 1. Mỗi tổ trồng bao nhiêu cây?
-d) Trộn 5 kg gạo giá 15 000 đồng một ki-lô-gam với 3 kg gạo giá 25 000 đồng một ki-lô-gam. Hỏi tổng số tiền là bao nhiêu?
+a) Một xe chở 13 bao đường, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ đường?
+b) Một xe chở 36 bao muối, mỗi bao 40 kg. Hỏi xe chở bao nhiêu tạ muối?
+c) Một xe chở 15 bao phân bón, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ phân bón?
+d) Một xe chở 11 bao đường, mỗi bao 40 kg. Hỏi xe chở bao nhiêu tạ đường?
+e) Một xe chở 12 bao gạo, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ gạo?
 
 
 ## PHẦN E — BÀI PHÂN HOÁ · 15 phút · 15 điểm
 
 Dành cho học viên nhắm điểm 9 – 10. Làm hết phần A đến D rồi mới vào đây.
 
-### Bài 1, (7,5 điểm — mức M4) Diện tích thay đổi khi kích thước thay đổi
+### Bài 1, (7,5 điểm — mức M4) Tính tiền vé cho cả gia đình
 
-Vẽ hình minh hoạ phần tăng thêm.
+Trước khi tính, gạch chân câu hỏi và khoanh tròn dữ kiện **không** dùng tới.
 
-a) Hình chữ nhật dài 29 cm, rộng 15 cm. Nếu gấp đôi chiều dài và giữ nguyên chiều rộng thì diện tích mới gấp mấy lần diện tích cũ?
-b) Hình chữ nhật dài 22 cm, rộng 7 cm. Nếu tăng cả chiều dài và chiều rộng thêm 15 cm thì diện tích tăng thêm bao nhiêu?
-c) Hình chữ nhật dài 32 cm, rộng 16 cm. Nếu gấp đôi chiều dài và giữ nguyên chiều rộng thì diện tích mới gấp mấy lần diện tích cũ?
-d) Hình chữ nhật dài 30 cm, rộng 13 cm. Nếu tăng cả chiều dài và chiều rộng thêm 9 cm thì diện tích tăng thêm bao nhiêu?
+a) Một gia đình gồm 5 người lớn và 6 trẻ em đi tham quan cách nhà 40 km. Vé người lớn 110 000 đồng, vé trẻ em bằng nửa vé người lớn. Hỏi cả gia đình mua vé hết bao nhiêu tiền?
+b) Một gia đình gồm 3 người lớn và 6 trẻ em đi tham quan cách nhà 60 km. Vé người lớn 70 000 đồng, vé trẻ em bằng nửa vé người lớn. Hỏi cả gia đình mua vé hết bao nhiêu tiền?
+c) Một gia đình gồm 4 người lớn và 3 trẻ em đi tham quan cách nhà 29 km. Vé người lớn 100 000 đồng, vé trẻ em bằng nửa vé người lớn. Hỏi cả gia đình mua vé hết bao nhiêu tiền?
+d) Một gia đình gồm 2 người lớn và 2 trẻ em đi tham quan cách nhà 173 km. Vé người lớn 110 000 đồng, vé trẻ em bằng nửa vé người lớn. Hỏi cả gia đình mua vé hết bao nhiêu tiền?
 
-### Bài 2, (7,5 điểm — mức M5) Tô màu và phủ bàn cờ
+### Bài 2, (7,5 điểm — mức M5) Lên dốc, xuống dốc — vận tốc trung bình
 
-Dùng kĩ thuật tô màu để lập luận.
+Tính riêng thời gian từng đoạn trước, tuyệt đối không cộng hai vận tốc rồi chia đôi.
 
-a) Một bàn cờ vuông 5 × 5 ô. Hỏi có tất cả bao nhiêu ô?
-b) Tô màu xen kẽ đen trắng như bàn cờ vua thì có bao nhiêu ô đen?
-c) Một quân đô-mi-nô phủ đúng 2 ô liền nhau. Có thể phủ kín cả bàn cờ 5 × 5 bằng các quân đô-mi-nô không?
-d) Mỗi quân đô-mi-nô luôn phủ mấy ô đen và mấy ô trắng?
+a) Một người đi xe đạp lên dốc dài 18 km với vận tốc 9 km/giờ, rồi xuống dốc chính con dốc ấy với vận tốc 18 km/giờ. Tính vận tốc trung bình của cả lượt đi và lượt về.
+b) Một người đi xe đạp lên dốc dài 30 km với vận tốc 10 km/giờ, rồi xuống dốc chính con dốc ấy với vận tốc 15 km/giờ. Tính vận tốc trung bình của cả lượt đi và lượt về.
+c) Một người đi xe đạp lên dốc dài 30 km với vận tốc 6 km/giờ, rồi xuống dốc chính con dốc ấy với vận tốc 30 km/giờ. Tính vận tốc trung bình của cả lượt đi và lượt về.
+d) Một người đi xe đạp lên dốc dài 30 km với vận tốc 15 km/giờ, rồi xuống dốc chính con dốc ấy với vận tốc 30 km/giờ. Tính vận tốc trung bình của cả lượt đi và lượt về.
 
 
 ---
@@ -152,77 +153,76 @@ d) Mỗi quân đô-mi-nô luôn phủ mấy ô đen và mấy ô trắng?
 ### Phần C
 
 **Bài 1.**
-a) **10**
-b) **80**
-c) **30%**
-d) **400**
-e) **20%**
+a) **300**
+b) **10%**
+c) **60**
+d) **5%**
+e) **40**
 
 **Bài 2.**
-a) **>**
+a) **<**
 b) **<**
-c) **<**
+c) **>**
 d) **<**
+e) **>**
 
 **Bài 3.**
-a) **79 kg**
-b) **1 144 kg**
-c) **148 kg**
-d) **90 kg**
-e) **81 kg**
+a) **279 kg**
+b) **129 kg**
+c) **291 kg**
+d) **762 kg**
+e) **130 kg**
 
 **Bài 4.**
-a) **10 000**
-b) **3 725**
-c) **210**
-d) **1 525**
-e) **145**
+a) **1**
+b) **1**
+c) **1**
+d) **1**
 
 
 ### Phần D
 
 **Bài 1.**
-a) **4 tạ 25 kg**
-b) **10 tạ 80 kg**
-c) **8 tạ 40 kg**
-d) **14 tạ**
+a) **9 giờ 11 phút**
+b) **19 giờ 11 phút**
+c) **13 giờ 48 phút**
+d) **12 giờ 38 phút**
 
 **Bài 2.**
-a) **294 000 đồng**
-b) **72 · 24 · 96 cây**
-c) **44 · 33 · 11 cây**
-d) **150 000 đồng**
+a) **7 tạ 80 kg**
+b) **14 tạ 40 kg**
+c) **4 tạ 50 kg**
+d) **4 tạ 40 kg**
+e) **7 tạ 20 kg**
 
 
 ### Phần E
 
 **Bài 1.**
-a) **2 lần**
-b) **660 cm²**
-c) **2 lần**
-d) **468 cm²**
+a) **880 000 đồng**
+b) **420 000 đồng**
+c) **550 000 đồng**
+d) **330 000 đồng**
 
 Cách giải mẫu:
-1. Xét ý a: Hình chữ nhật dài 29 cm, rộng 15 cm. Nếu gấp đôi chiều dài và giữ nguyên chiều rộng thì diện tích mới gấp mấy lần diện tích cũ?
-2. Đọc vị: đây là dạng **Biến thiên diện tích theo kích thước**; dấu hiệu là “Tăng chiều dài thêm …”, “gấp đôi chiều …”.
-3. Kiến thức phải dùng: Diện tích hình chữ nhật, phân tích hình.
-4. Cách làm: Vẽ hình chồng, tách phần dôi ra thành các mảnh chữ nhật.
-5. Lối tắt: Gấp đôi một chiều thì diện tích gấp đôi; gấp đôi cả hai chiều thì gấp bốn.
-6. Kết quả: **2 lần**.
+1. Đọc kỹ câu hỏi: đề hỏi **tiền vé**, không hỏi gì về quãng đường. Con số 40 km là **dữ kiện thừa** — đề thật luôn có, và biết bỏ qua nó mới là đọc đề đúng.
+2. Giá vé trẻ em: 110 000 : 2 = 55 000 (đồng).
+3. Tiền vé người lớn: 5 × 110 000 = 550 000 (đồng).
+4. Tiền vé trẻ em: 6 × 55 000 = 330 000 (đồng).
+5. Cả gia đình: 550 000 + 330 000 = **880 000 đồng**.
 
 **Bài 2.**
-a) **25**
-b) **13**
-c) **không, vì số ô là số lẻ**
-d) **1 ô đen và 1 ô trắng**
+a) **12 km/giờ**
+b) **12 km/giờ**
+c) **10 km/giờ**
+d) **20 km/giờ**
 
 Cách giải mẫu:
-1. Xét ý a: Một bàn cờ vuông 5 × 5 ô. Hỏi có tất cả bao nhiêu ô?
-2. Đọc vị: đây là dạng **Tô màu, bất biến trên bàn cờ**; dấu hiệu là Bàn cờ, quân đô-mi-nô, câu hỏi “có thể phủ kín không”.
-3. Kiến thức phải dùng: Kĩ thuật tô màu, bất biến, tính chẵn lẻ.
-4. Cách làm: Tô màu xen kẽ, đếm hai màu, so sánh.
-5. Lối tắt: Hai ô ở hai góc đối diện của bàn cờ luôn cùng màu.
-6. Kết quả: **25**.
+1. Đây là bẫy kinh điển: **không** được lấy trung bình cộng hai vận tốc, vì thời gian đi hai đoạn không bằng nhau.
+2. Thời gian lên dốc: 18 : 9 = 2 (giờ).
+3. Thời gian xuống dốc: 18 : 18 = 1 (giờ).
+4. Tổng quãng đường cả đi lẫn về: 18 × 2 = 36 (km). Tổng thời gian: 2 + 1 = 3 (giờ).
+5. Vận tốc trung bình = tổng quãng đường : tổng thời gian = 36 : 3 = **12 km/giờ**.
 
 
 ---
@@ -236,11 +236,11 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | C1 | Cụm C01 — Phân số, hỗn số và số thập phân: khái niệm đến phép nhân | Nhầm dạng 2 với dạng 3 nên nhân thay vì chia. | Phiếu `NC` và `OT` của cụm C01 |
 | C2 | Cụm C02 — Đơn vị đo độ dài, khối lượng, diện tích, thể tích và thời gian | So thẳng hai con số, bỏ qua đơn vị. | Phiếu `NC` và `OT` của cụm C02 |
 | C3 | Cụm C03 — Tỉ lệ thuận – nghịch, trung bình cộng và bài toán số thập phân | Đi tìm ngay số còn thiếu mà chưa tính tổng. | Phiếu `NC` và `OT` của cụm C03 |
-| C4 | Cụm C04 — Bốn phép tính, tính nhanh và tìm x với phân số, số thập phân | Lấy số cuối chia khoảng cách làm số số hạng, quên cộng 1. | Phiếu `NC` và `OT` của cụm C04 |
+| C4 | Cụm C04 — Bốn phép tính, tính nhanh và tìm x với phân số, số thập phân | Quy đồng ngay lập tức mà không quan sát, làm dài dòng. | Phiếu `NC` và `OT` của cụm C04 |
 | D1 | Nối nhóm H với nhóm E | Làm được từng chuyên đề riêng nhưng chưa ghép được hai chuyên đề | Phần IV và V của phiếu `OT` các cụm liên quan |
 | D2 | Nối nhóm E với nhóm D | Làm được từng chuyên đề riêng nhưng chưa ghép được hai chuyên đề | Phần IV và V của phiếu `OT` các cụm liên quan |
-| E1 | Biến thiên diện tích theo kích thước | Nhân hai lượng tăng với nhau rồi coi đó là phần diện tích tăng thêm. | Nhóm chuyên đề **—** · mức — |
-| E2 | Tô màu, bất biến trên bàn cờ | Thử xếp bằng tay rồi kết luận “không xếp được” mà không chứng minh. | Nhóm chuyên đề **—** · mức — |
+| E1 | Bài toán giá vé và cước phí | Đem quãng đường vào phép tính tiền vé. | Nhóm chuyên đề **—** · mức — |
+| E2 | Chuyển động lên dốc xuống dốc | Lấy (vận tốc lên + vận tốc xuống) : 2. | Nhóm chuyên đề **—** · mức — |
 
 ---
 

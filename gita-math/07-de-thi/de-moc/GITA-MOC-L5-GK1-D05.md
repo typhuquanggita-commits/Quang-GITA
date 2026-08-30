@@ -30,58 +30,56 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Điền dấu thích hợp vào chỗ chấm.
 
-a) 9 000 974 … 3 810 052
-b) 2 706 053 … 2 706 056
-c) 7 616 771 … 7 616 678
-d) 4 323 090 … 4 323 047
-e) 7 234 624 … 7 234 644
-f) 946 958 … 646 958
+a) 3 772 828 … 3 772 800
+b) 9 228 964 … 9 221 964
+c) 2 317 354 … 2 317 349
+d) 4 559 338 … 4 553 338
+e) 152 847 … 152 852
+f) 6 350 068 … 6 350 025
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
 Tìm x, trình bày từng bước.
 
-a) x × 9 − 77 = 211
-b) (x − 37) × 12 = 1 488
-c) x × 2 + 131 = 189
-d) (x + 196) × 9 = 3 492
-e) x × 2 + 68 = 342
+a) (x + 135) × 4 = 640
+b) 600 − x × 11 = 193
+c) x × 12 − 298 = 422
+d) x × 5 + 226 = 1 011
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
 Giải bằng cách rút về đơn vị hoặc dùng tỉ số.
 
-a) Mua 3 quyển vở hết 15 nghìn đồng. Với 25 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
-b) Mua 15 quyển vở hết 540 nghìn đồng. Mua 21 quyển vở như thế hết bao nhiêu nghìn đồng?
-c) Mua 4 quyển vở hết 296 nghìn đồng. Với 1 406 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
-d) Mua 9 quyển vở hết 117 nghìn đồng. Mua 24 quyển vở như thế hết bao nhiêu nghìn đồng?
-e) Mua 6 quyển vở hết 288 nghìn đồng. Với 288 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
-f) Mua 6 quyển vở hết 378 nghìn đồng. Với 756 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+a) Mua 13 quyển vở hết 481 nghìn đồng. Mua 14 quyển vở như thế hết bao nhiêu nghìn đồng?
+b) Mua 11 quyển vở hết 869 nghìn đồng. Với 1 027 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+c) Mua 6 quyển vở hết 48 nghìn đồng. Mua 21 quyển vở như thế hết bao nhiêu nghìn đồng?
+d) Mua 8 quyển vở hết 504 nghìn đồng. Với 819 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+e) Mua 6 quyển vở hết 432 nghìn đồng. Với 864 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+f) Mua 15 quyển vở hết 435 nghìn đồng. Mua 4 quyển vở như thế hết bao nhiêu nghìn đồng?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
-Tưởng tượng khối lớn và xét theo vị trí: góc, cạnh, mặt, trong lõi.
+Vẽ hình minh hoạ phần tăng thêm.
 
-a) Một khối lập phương lớn ghép từ 4 × 4 × 4 khối lập phương nhỏ. Hỏi có tất cả bao nhiêu khối nhỏ?
-b) Sơn toàn bộ mặt ngoài khối lớn. Có bao nhiêu khối nhỏ được sơn 3 mặt?
-c) Có bao nhiêu khối nhỏ được sơn 2 mặt?
-d) Có bao nhiêu khối nhỏ được sơn 1 mặt?
-e) Có bao nhiêu khối nhỏ không được sơn mặt nào?
-f) Cộng bốn loại trên lại có bằng tổng số khối nhỏ không?
+a) Hình chữ nhật dài 42 cm, rộng 13 cm. Nếu gấp đôi chiều dài và giữ nguyên chiều rộng thì diện tích mới gấp mấy lần diện tích cũ?
+b) Hình chữ nhật dài 34 cm, rộng 32 cm. Nếu gấp đôi chiều dài và giữ nguyên chiều rộng thì diện tích mới gấp mấy lần diện tích cũ?
+c) Hình chữ nhật dài 41 cm, rộng 26 cm. Nếu tăng chiều dài thêm 2 cm (giữ nguyên chiều rộng) thì diện tích tăng thêm bao nhiêu?
+d) Hình chữ nhật dài 25 cm, rộng 5 cm. Nếu gấp đôi chiều dài và giữ nguyên chiều rộng thì diện tích mới gấp mấy lần diện tích cũ?
+e) Hình chữ nhật dài 8 cm, rộng 6 cm. Nếu tăng cả chiều dài và chiều rộng thêm 9 cm thì diện tích tăng thêm bao nhiêu?
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
 Câu nào cũng phải quy về **một đơn vị thời gian** hoặc **một người** trước khi tính.
 
-a) Vòi thứ nhất chảy một mình thì đầy bể sau 12 giờ. Vòi thứ hai chảy một mình thì đầy bể sau 4 giờ. Hỏi mở cả hai vòi cùng lúc thì sau bao lâu đầy bể?
-b) 6 người làm xong một công việc trong 8 ngày. Hỏi 2 người làm xong công việc ấy trong bao nhiêu ngày, biết sức làm của mỗi người như nhau?
-c) 8 người làm xong một công việc trong 18 ngày. Hỏi 2 người làm xong công việc ấy trong bao nhiêu ngày, biết sức làm của mỗi người như nhau?
-d) Vòi thứ nhất chảy một mình thì đầy bể sau 3 giờ. Vòi thứ hai chảy một mình thì đầy bể sau 6 giờ. Hỏi mở cả hai vòi cùng lúc thì sau bao lâu đầy bể?
-e) 7 người làm xong một công việc trong 20 ngày. Hỏi 2 người làm xong công việc ấy trong bao nhiêu ngày, biết sức làm của mỗi người như nhau?
+a) 3 người làm xong một công việc trong 9 ngày. Hỏi 9 người làm xong công việc ấy trong bao nhiêu ngày, biết sức làm của mỗi người như nhau?
+b) Vòi thứ nhất chảy một mình thì đầy bể sau 3 giờ. Vòi thứ hai chảy một mình thì đầy bể sau 6 giờ. Hỏi mở cả hai vòi cùng lúc thì sau bao lâu đầy bể?
+c) 6 người làm xong một công việc trong 13 ngày. Hỏi 2 người làm xong công việc ấy trong bao nhiêu ngày, biết sức làm của mỗi người như nhau?
+d) Vòi thứ nhất chảy một mình thì đầy bể sau 10 giờ. Vòi thứ hai chảy một mình thì đầy bể sau 15 giờ. Hỏi mở cả hai vòi cùng lúc thì sau bao lâu đầy bể?
+e) Vòi thứ nhất chảy một mình thì đầy bể sau 6 giờ. Vòi thứ hai chảy một mình thì đầy bể sau 3 giờ. Hỏi mở cả hai vòi cùng lúc thì sau bao lâu đầy bể?
 
 
 ---
@@ -92,7 +90,7 @@ e) 7 người làm xong một công việc trong 20 ngày. Hỏi 2 người làm
 ### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
 a) **>**
-b) **<**
+b) **>**
 c) **>**
 d) **>**
 e) **<**
@@ -100,7 +98,7 @@ f) **>**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 9 000 974 … 3 810 052
+1. Xét ý a: 3 772 828 … 3 772 800
 2. Đọc vị: đây là dạng **So sánh hai số tự nhiên**; dấu hiệu là Dấu … giữa hai số, yêu cầu điền <, >, =.
 3. Kiến thức phải dùng: Thứ tự trong tập số tự nhiên.
 4. Cách làm: Đếm chữ số → so từng hàng từ trái sang phải.
@@ -109,80 +107,79 @@ f) **>**
 
 *Lỗi hay mắc:* So từ hàng đơn vị (phải sang trái) nên kết luận sai.
 
-### Bài 2, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 2, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **x = 32**
-b) **x = 161**
-c) **x = 29**
-d) **x = 192**
-e) **x = 137**
+a) **x = 25**
+b) **x = 37**
+c) **x = 60**
+d) **x = 157**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: x × 9 − 77 = 211
+1. Xét ý a: (x + 135) × 4 = 640
 2. Đọc vị: đây là dạng **Tìm x qua hai bước**; dấu hiệu là x nằm trong một cụm có hai phép tính.
 3. Kiến thức phải dùng: Quan hệ các thành phần phép tính, thứ tự thực hiện.
 4. Cách làm: Gỡ dần từ phép ngoài cùng vào trong.
 5. Lối tắt: Thay x tìm được vào đề để thử — nhanh hơn dò lại từng bước.
-6. Kết quả: **x = 32**.
+6. Kết quả: **x = 25**.
 
 *Lỗi hay mắc:* Gỡ phép nhân trước khi gỡ phép cộng ở ngoài.
 
 ### Bài 3, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **5 quyển**
-b) **756 nghìn đồng**
-c) **19 quyển**
-d) **312 nghìn đồng**
-e) **6 quyển**
-f) **12 quyển**
+a) **518 nghìn đồng**
+b) **13 quyển**
+c) **168 nghìn đồng**
+d) **13 quyển**
+e) **12 quyển**
+f) **116 nghìn đồng**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Mua 3 quyển vở hết 15 nghìn đồng. Với 25 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+1. Xét ý a: Mua 13 quyển vở hết 481 nghìn đồng. Mua 14 quyển vở như thế hết bao nhiêu nghìn đồng?
 2. Đọc vị: đây là dạng **Tỉ lệ thuận, rút về đơn vị**; dấu hiệu là Hai đại lượng cùng tăng cùng giảm.
 3. Kiến thức phải dùng: Đại lượng tỉ lệ thuận.
 4. Cách làm: Rút về đơn vị hoặc dùng tỉ số.
 5. Lối tắt: Nếu số lượng mới gấp số lượng cũ một số nguyên lần thì nhân thẳng, không cần rút về đơn vị.
-6. Kết quả: **5 quyển**.
+6. Kết quả: **518 nghìn đồng**.
 
 *Lỗi hay mắc:* Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch.
 
-### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 4, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **64**
-b) **8**
-c) **24**
-d) **24**
-e) **8**
-f) **có, 8 + 24 + 24 + 8 = 64**
+a) **2 lần**
+b) **2 lần**
+c) **52 cm²**
+d) **2 lần**
+e) **207 cm²**
 
 **Cách giải mẫu:**
 
-1. Khối lớn gồm 4 × 4 × 4 = 64 khối nhỏ.
-2. Khối ở **đỉnh** được sơn 3 mặt: hình lập phương có 8 đỉnh nên có 8 khối.
-3. Khối ở **cạnh** (không tính hai đầu) được sơn 2 mặt: mỗi cạnh có 2 khối, có 12 cạnh nên 24 khối.
-4. Khối ở **giữa mặt** được sơn 1 mặt: mỗi mặt có 2 × 2 = 4 khối, có 6 mặt nên 24 khối.
-5. Khối **trong lõi** không được sơn: 2 × 2 × 2 = 8 khối.
-6. Thử lại: 8 + 24 + 24 + 8 = 64 ✓
+1. Xét ý a: Hình chữ nhật dài 42 cm, rộng 13 cm. Nếu gấp đôi chiều dài và giữ nguyên chiều rộng thì diện tích mới gấp mấy lần diện tích cũ?
+2. Đọc vị: đây là dạng **Biến thiên diện tích theo kích thước**; dấu hiệu là “Tăng chiều dài thêm …”, “gấp đôi chiều …”.
+3. Kiến thức phải dùng: Diện tích hình chữ nhật, phân tích hình.
+4. Cách làm: Vẽ hình chồng, tách phần dôi ra thành các mảnh chữ nhật.
+5. Lối tắt: Gấp đôi một chiều thì diện tích gấp đôi; gấp đôi cả hai chiều thì gấp bốn.
+6. Kết quả: **2 lần**.
 
-*Lỗi hay mắc:* Đếm cả khối ở đỉnh vào nhóm khối ở cạnh, thành ra đếm trùng.
+*Lỗi hay mắc:* Nhân hai lượng tăng với nhau rồi coi đó là phần diện tích tăng thêm.
 
 ### Bài 5, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **3 giờ**
-b) **24 ngày**
-c) **72 ngày**
-d) **2 giờ**
-e) **70 ngày**
+a) **3 ngày**
+b) **2 giờ**
+c) **39 ngày**
+d) **6 giờ**
+e) **2 giờ**
 
 **Cách giải mẫu:**
 
-1. Không được cộng hai khoảng thời gian, cũng không được lấy trung bình. Phải **rút về đơn vị**: xét trong một giờ.
-2. Một giờ vòi thứ nhất chảy được 1 phần 12 bể.
-3. Một giờ vòi thứ hai chảy được 1 phần 4 bể.
-4. Một giờ cả hai vòi chảy được 1 phần 12 + 1 phần 4 = 1 phần 3 (bể).
-5. Thời gian đầy bể: 1 : 1 phần 3 = **3 giờ**.
+1. Xét ý a: 3 người làm xong một công việc trong 9 ngày. Hỏi 9 người làm xong công việc ấy trong bao nhiêu ngày, biết sức làm của mỗi người như nhau?
+2. Đọc vị: đây là dạng **Rút về đơn vị**; dấu hiệu là Đề cho **thời gian làm một mình** của từng bên, hoặc số người và số ngày.
+3. Kiến thức phải dùng: Phân số; tỉ lệ nghịch; tổng số ngày công.
+4. Cách làm: Quy về một đơn vị — một giờ hoặc một người — rồi cộng và chia.
+5. Lối tắt: Hai vòi cùng chảy thì thời gian chung = a × b : (a + b).
+6. Kết quả: **3 ngày**.
 
 *Lỗi hay mắc:* Cộng hai khoảng thời gian của hai vòi, hoặc nhân thẳng số người với số ngày theo kiểu tỉ lệ thuận.
 
@@ -197,7 +194,7 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài 1 | So sánh hai số tự nhiên | So từ hàng đơn vị (phải sang trái) nên kết luận sai. | Nhóm chuyên đề **—** · mức — |
 | Bài 2 | Tìm x qua hai bước | Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. | Nhóm chuyên đề **—** · mức — |
 | Bài 3 | Tỉ lệ thuận, rút về đơn vị | Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch. | Nhóm chuyên đề **—** · mức — |
-| Bài 4 | Khối lập phương sơn màu | Đếm cả khối ở đỉnh vào nhóm khối ở cạnh, thành ra đếm trùng. | Nhóm chuyên đề **—** · mức — |
+| Bài 4 | Biến thiên diện tích theo kích thước | Nhân hai lượng tăng với nhau rồi coi đó là phần diện tích tăng thêm. | Nhóm chuyên đề **—** · mức — |
 | Bài 5 | Rút về đơn vị | Cộng hai khoảng thời gian của hai vòi, hoặc nhân thẳng số người với số ngày theo kiểu tỉ lệ thuận. | Nhóm chuyên đề **—** · mức — |
 
 ---

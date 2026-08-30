@@ -30,52 +30,51 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Đặt tính rồi tính. Ước lượng trước để tự kiểm tra.
 
-a) 304 596 × 411
-b) 264 281 − 117 492
-c) 399 224 + 968 298
-d) 11 965 730 : 70
-e) 273 969 773 : 583
-f) 650 322 × 291
+a) 691 097 − 475 899
+b) 968 775 × 206
+c) 796 645 + 942 797
+d) 130 624 481 : 221
+e) 90 075 × 540
+f) 373 000 + 795 018
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
 Tính bằng cách thuận tiện nhất.
 
-a) 50 × 45 × 2
-b) 71 × 125 × 8
-c) 50 × 86 × 2
-d) 72 × 125 × 8
-e) 64 × 25 × 4
-f) 34 × 25 × 4
+a) 97 × 25 × 4
+b) 6 640 : 8 : 10
+c) 50 × 13 × 2
+d) 3 850 : 5 : 10
+e) 50 × 25 × 4
+f) 13 × 125 × 8
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
 Giải bằng cách rút về đơn vị hoặc dùng tỉ số.
 
-a) Mua 9 quyển vở hết 117 nghìn đồng. Mua 29 quyển vở như thế hết bao nhiêu nghìn đồng?
-b) Mua 6 quyển vở hết 120 nghìn đồng. Mua 9 quyển vở như thế hết bao nhiêu nghìn đồng?
-c) Mua 8 quyển vở hết 528 nghìn đồng. Với 1 056 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
-d) Mua 3 quyển vở hết 102 nghìn đồng. Mua 18 quyển vở như thế hết bao nhiêu nghìn đồng?
-e) Mua 3 quyển vở hết 39 nghìn đồng. Mua 17 quyển vở như thế hết bao nhiêu nghìn đồng?
+a) Mua 4 quyển vở hết 112 nghìn đồng. Với 280 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+b) Mua 7 quyển vở hết 357 nghìn đồng. Mua 26 quyển vở như thế hết bao nhiêu nghìn đồng?
+c) Mua 6 quyển vở hết 144 nghìn đồng. Mua 6 quyển vở như thế hết bao nhiêu nghìn đồng?
+d) Mua 3 quyển vở hết 264 nghìn đồng. Với 1 760 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+e) Mua 11 quyển vở hết 847 nghìn đồng. Mua 20 quyển vở như thế hết bao nhiêu nghìn đồng?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
-Ghi kết quả theo giờ và phút.
+Một căn phòng hình chữ nhật dài **6 m**, rộng **3 m**, lát bằng gạch vuông cạnh **50 cm**.
 
-a) Một chuyến tàu khởi hành lúc 12 giờ 50 phút và đi hết 4 giờ 56 phút. Tàu đến nơi lúc mấy giờ?
-b) Một chuyến tàu khởi hành lúc 5 giờ 40 phút và đi hết 3 giờ 29 phút. Tàu đến nơi lúc mấy giờ?
-c) Một chuyến tàu khởi hành lúc 6 giờ 50 phút và đi hết 2 giờ 34 phút. Tàu đến nơi lúc mấy giờ?
-d) Một chuyến tàu khởi hành lúc 13 giờ 40 phút và đi hết 1 giờ 24 phút. Tàu đến nơi lúc mấy giờ?
-e) Một chuyến tàu khởi hành lúc 13 giờ 50 phút và đi hết 2 giờ 50 phút. Tàu đến nơi lúc mấy giờ?
-f) Một chuyến tàu khởi hành lúc 9 giờ 15 phút và đi hết 5 giờ 30 phút. Tàu đến nơi lúc mấy giờ?
+a) Tính diện tích nền nhà theo mét vuông.
+b) Đổi diện tích nền nhà ra xăng-ti-mét vuông.
+c) Diện tích một viên gạch là bao nhiêu xăng-ti-mét vuông?
+d) Cần bao nhiêu viên gạch để lát kín nền nhà?
+e) Mỗi viên gạch giá 12 000 đồng. Mua gạch lát hết bao nhiêu tiền?
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
-Dãy số bắt đầu bằng 1; hiệu giữa hai số hạng liên tiếp lần lượt là 2, 4, 6, 8, … (mỗi hiệu hơn hiệu trước 2 đơn vị).
+Dãy số bắt đầu bằng 2; hiệu giữa hai số hạng liên tiếp lần lượt là 2, 4, 6, 8, … (mỗi hiệu hơn hiệu trước 2 đơn vị).
 
 a) Viết bốn số hạng đầu của dãy.
 b) Số hạng thứ 6 là số nào?
@@ -92,90 +91,89 @@ f) Tổng của bốn số hạng đầu bằng bao nhiêu?
 
 ### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **125 188 956**
-b) **146 789**
-c) **1 367 522**
-d) **170 939**
-e) **469 931**
-f) **189 243 702**
+a) **215 198**
+b) **199 567 650**
+c) **1 739 442**
+d) **591 061**
+e) **48 640 500**
+f) **1 168 018**
 
 **Cách giải mẫu:**
 
-1. Đặt tính, nhân lần lượt từng chữ số của 411 với 304 596.
-2. Mỗi tích riêng viết lùi sang trái một cột.
-3. Cộng các tích riêng lại: 304 596 × 411 = 125 188 956.
-4. Ước lượng kiểm tra: khoảng 305 000 × 400 ≈ 122 000 000 — cùng độ lớn ✓
-5. Đáp số: **125 188 956**.
+1. Xét ý a: 691 097 − 475 899
+2. Đọc vị: đây là dạng **Bốn phép tính với số tự nhiên**; dấu hiệu là Yêu cầu “đặt tính rồi tính”.
+3. Kiến thức phải dùng: Kĩ thuật đặt tính cộng, trừ, nhân, chia.
+4. Cách làm: Đặt tính thẳng cột, tính từ hàng đơn vị.
+5. Lối tắt: Ước lượng bằng cách làm tròn để phát hiện sai sót về độ lớn.
+6. Kết quả: **215 198**.
 
 *Lỗi hay mắc:* Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số.
 
 ### Bài 2, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **4 500**
-b) **71 000**
-c) **8 600**
-d) **72 000**
-e) **6 400**
-f) **3 400**
+a) **9 700**
+b) **83**
+c) **1 300**
+d) **77**
+e) **5 000**
+f) **13 000**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 50 × 45 × 2
+1. Xét ý a: 97 × 25 × 4
 2. Đọc vị: đây là dạng **Tính nhanh tích, thương nhiều bước**; dấu hiệu là Tích có thừa số 25, 125, 50, 20; hoặc chia liên tiếp.
 3. Kiến thức phải dùng: Tính chất giao hoán, kết hợp của phép nhân.
 4. Cách làm: Ghép cặp cho tích tròn rồi nhân.
 5. Lối tắt: Chia liên tiếp cho 4 rồi 25 bằng chia cho 100.
-6. Kết quả: **4 500**.
+6. Kết quả: **9 700**.
 
 *Lỗi hay mắc:* Nhân lần lượt từ trái sang phải nên số trung gian rất lớn.
 
 ### Bài 3, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **377 nghìn đồng**
-b) **180 nghìn đồng**
-c) **16 quyển**
-d) **612 nghìn đồng**
-e) **221 nghìn đồng**
+a) **10 quyển**
+b) **1 326 nghìn đồng**
+c) **144 nghìn đồng**
+d) **20 quyển**
+e) **1 540 nghìn đồng**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Mua 9 quyển vở hết 117 nghìn đồng. Mua 29 quyển vở như thế hết bao nhiêu nghìn đồng?
+1. Xét ý a: Mua 4 quyển vở hết 112 nghìn đồng. Với 280 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
 2. Đọc vị: đây là dạng **Tỉ lệ thuận, rút về đơn vị**; dấu hiệu là Hai đại lượng cùng tăng cùng giảm.
 3. Kiến thức phải dùng: Đại lượng tỉ lệ thuận.
 4. Cách làm: Rút về đơn vị hoặc dùng tỉ số.
 5. Lối tắt: Nếu số lượng mới gấp số lượng cũ một số nguyên lần thì nhân thẳng, không cần rút về đơn vị.
-6. Kết quả: **377 nghìn đồng**.
+6. Kết quả: **10 quyển**.
 
 *Lỗi hay mắc:* Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch.
 
-### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 4, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **17 giờ 46 phút**
-b) **9 giờ 9 phút**
-c) **9 giờ 24 phút**
-d) **15 giờ 4 phút**
-e) **16 giờ 40 phút**
-f) **14 giờ 45 phút**
+a) **6 × 3 = 18 m²**
+b) **18 m² = 180 000 cm²**
+c) **50 × 50 = 2 500 cm²**
+d) **180 000 : 2 500 = 72 viên**
+e) **72 × 12 000 = 864 000 đồng**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Một chuyến tàu khởi hành lúc 12 giờ 50 phút và đi hết 4 giờ 56 phút. Tàu đến nơi lúc mấy giờ?
-2. Đọc vị: đây là dạng **Tính thời điểm trong ngày**; dấu hiệu là Cho thời điểm bắt đầu và khoảng thời gian.
-3. Kiến thức phải dùng: Quan hệ giờ – phút, phép chia có dư.
-4. Cách làm: Quy về phút, cộng trừ, đổi lại.
-5. Lối tắt: Cộng tròn giờ trước rồi cộng phần phút lẻ sau.
-6. Kết quả: **17 giờ 46 phút**.
+1. Diện tích nền: 6 × 3 = **18 m²**.
+2. Muốn chia cho diện tích viên gạch thì hai diện tích phải **cùng đơn vị**. Viên gạch đo bằng xăng-ti-mét nên đổi nền nhà ra cm²: 1 m² = 10 000 cm², nên 18 m² = 180 000 cm².
+3. Diện tích một viên: 50 × 50 = 2 500 cm².
+4. Số viên: 180 000 : 2 500 = **72 viên**.
+5. Tiền gạch: 72 × 12 000 = **864 000 đồng**.
 
-*Lỗi hay mắc:* Cộng phần phút thành hơn 60 mà quên đổi thành giờ.
+*Lỗi hay mắc:* Chia thẳng m² cho cm², hoặc đổi 1 m² thành 100 cm².
 
 ### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **1, 3, 7, 13**
-b) **31**
-c) **91**
+a) **2, 4, 8, 14**
+b) **32**
+c) **92**
 d) **18**
 e) **có, khoảng cách 2**
-f) **24**
+f) **28**
 
 **Cách giải mẫu:**
 
@@ -184,7 +182,7 @@ f) **24**
 3. Kiến thức phải dùng: Dãy hiệu, tổng dãy cách đều.
 4. Cách làm: Lập dãy hiệu, tính tổng hiệu, cộng vào số hạng đầu.
 5. Lối tắt: Với hiệu 1, 2, 3, … thì số hạng thứ n = số đầu + (n − 1) × n : 2.
-6. Kết quả: **1, 3, 7, 13**.
+6. Kết quả: **2, 4, 8, 14**.
 
 *Lỗi hay mắc:* Cộng n hiệu thay vì (n − 1) hiệu.
 
@@ -199,7 +197,7 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài 1 | Bốn phép tính với số tự nhiên | Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số. | Nhóm chuyên đề **—** · mức — |
 | Bài 2 | Tính nhanh tích, thương nhiều bước | Nhân lần lượt từ trái sang phải nên số trung gian rất lớn. | Nhóm chuyên đề **—** · mức — |
 | Bài 3 | Tỉ lệ thuận, rút về đơn vị | Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch. | Nhóm chuyên đề **—** · mức — |
-| Bài 4 | Tính thời điểm trong ngày | Cộng phần phút thành hơn 60 mà quên đổi thành giờ. | Nhóm chuyên đề **—** · mức — |
+| Bài 4 | Bài toán lát gạch nền nhà | Chia thẳng m² cho cm², hoặc đổi 1 m² thành 100 cm². | Nhóm chuyên đề **—** · mức — |
 | Bài 5 | Dãy có hiệu tăng đều (hiệu bậc hai) | Cộng n hiệu thay vì (n − 1) hiệu. | Nhóm chuyên đề **—** · mức — |
 
 ---

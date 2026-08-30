@@ -30,53 +30,53 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Đặt tính rồi tính. Ước lượng trước để tự kiểm tra.
 
-a) 810 143 × 123
-b) 845 654 + 183 570
-c) 425 863 600 : 850
-d) 896 768 − 677 175
-e) 495 642 + 377 313
-f) 234 746 757 : 511
+a) 895 601 − 563 109
+b) 716 456 × 124
+c) 40 646 865 : 345
+d) 540 705 + 539 819
+e) 443 427 + 53 840
+f) 165 651 980 : 460
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
 Điền số thích hợp vào chỗ chấm.
 
-a) 13 hm² = … m²
-b) 83 ha = … m²
-c) 43 km² = … ha
-d) 85 hm² = … dam²
-e) 26 dam² = … m²
-f) 3 100 m² = … dam²
+a) 35 ha = … m²
+b) 2 500 dam² = … hm²
+c) 83 dam² = … m²
+d) 6 800 ha = … km²
+e) 67 hm² = … m²
+f) 5 800 dam² = … hm²
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
 Giải bằng cách rút về đơn vị hoặc dùng tỉ số.
 
-a) Mua 3 quyển vở hết 60 nghìn đồng. Mua 26 quyển vở như thế hết bao nhiêu nghìn đồng?
-b) Mua 15 quyển vở hết 135 nghìn đồng. Với 189 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
-c) Mua 7 quyển vở hết 273 nghìn đồng. Với 390 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
-d) Mua 7 quyển vở hết 84 nghìn đồng. Mua 17 quyển vở như thế hết bao nhiêu nghìn đồng?
-e) Mua 15 quyển vở hết 990 nghìn đồng. Mua 14 quyển vở như thế hết bao nhiêu nghìn đồng?
-f) Mua 4 quyển vở hết 68 nghìn đồng. Mua 15 quyển vở như thế hết bao nhiêu nghìn đồng?
+a) Mua 7 quyển vở hết 476 nghìn đồng. Với 1 292 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+b) Mua 4 quyển vở hết 344 nghìn đồng. Mua 27 quyển vở như thế hết bao nhiêu nghìn đồng?
+c) Mua 12 quyển vở hết 564 nghìn đồng. Mua 30 quyển vở như thế hết bao nhiêu nghìn đồng?
+d) Mua 4 quyển vở hết 32 nghìn đồng. Với 72 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+e) Mua 13 quyển vở hết 1 092 nghìn đồng. Với 1 932 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+f) Mua 14 quyển vở hết 182 nghìn đồng. Với 351 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
-Chú ý đơn vị mà đề hỏi.
+Lấy π = 3,14. Ghi rõ đơn vị.
 
-a) Một xe chở 9 bao thóc, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ thóc?
-b) Một xe chở 9 bao xi măng, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ xi măng?
-c) Một xe chở 33 bao xi măng, mỗi bao 40 kg. Hỏi xe chở bao nhiêu tạ xi măng?
-d) Một xe chở 39 bao xi măng, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ xi măng?
-e) Một xe chở 19 bao xi măng, mỗi bao 50 kg. Hỏi xe chở bao nhiêu tạ xi măng?
-f) Một xe chở 33 bao thóc, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ thóc?
+a) Hình tròn có đường kính 8 cm. Bán kính bằng bao nhiêu?
+b) Hình tròn có đường kính 8 cm. Tính chu vi (lấy π = 3,14).
+c) Hình tròn có bán kính 10 cm. Tính chu vi (lấy π = 3,14).
+d) Hình tròn có bán kính 2 cm. Tính diện tích (lấy π = 3,14).
+e) Hình tròn có bán kính 24 cm. Tính diện tích (lấy π = 3,14).
+f) Hình tròn có bán kính 19 cm. Tính chu vi (lấy π = 3,14).
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
-Dãy số bắt đầu bằng 2; hiệu giữa hai số hạng liên tiếp lần lượt là 3, 6, 9, 12, … (mỗi hiệu hơn hiệu trước 3 đơn vị).
+Dãy số bắt đầu bằng 1; hiệu giữa hai số hạng liên tiếp lần lượt là 1, 2, 3, 4, … (mỗi hiệu hơn hiệu trước 1 đơn vị).
 
 a) Viết bốn số hạng đầu của dãy.
 b) Số hạng thứ 6 là số nào?
@@ -93,89 +93,90 @@ f) Tổng của bốn số hạng đầu bằng bao nhiêu?
 
 ### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **99 647 589**
-b) **1 029 224**
-c) **501 016**
-d) **219 593**
-e) **872 955**
-f) **459 387**
+a) **332 492**
+b) **88 840 544**
+c) **117 817**
+d) **1 080 524**
+e) **497 267**
+f) **360 113**
 
 **Cách giải mẫu:**
 
-1. Đặt tính, nhân lần lượt từng chữ số của 123 với 810 143.
-2. Mỗi tích riêng viết lùi sang trái một cột.
-3. Cộng các tích riêng lại: 810 143 × 123 = 99 647 589.
-4. Ước lượng kiểm tra: khoảng 810 000 × 100 ≈ 81 000 000 — cùng độ lớn ✓
-5. Đáp số: **99 647 589**.
+1. Xét ý a: 895 601 − 563 109
+2. Đọc vị: đây là dạng **Bốn phép tính với số tự nhiên**; dấu hiệu là Yêu cầu “đặt tính rồi tính”.
+3. Kiến thức phải dùng: Kĩ thuật đặt tính cộng, trừ, nhân, chia.
+4. Cách làm: Đặt tính thẳng cột, tính từ hàng đơn vị.
+5. Lối tắt: Ước lượng bằng cách làm tròn để phát hiện sai sót về độ lớn.
+6. Kết quả: **332 492**.
 
 *Lỗi hay mắc:* Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số.
 
 ### Bài 2, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **130 000**
-b) **830 000**
-c) **4 300**
-d) **8 500**
-e) **2 600**
-f) **31**
+a) **350 000**
+b) **25**
+c) **8 300**
+d) **68**
+e) **670 000**
+f) **58**
 
 **Cách giải mẫu:**
 
-1. 1 hm² = 10 000 m².
+1. 1 ha = 10 000 m².
 2. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**.
-3. 13 × 10 000 = 130 000 (m²).
-4. Đáp số: **130 000 m²**.
+3. 35 × 10 000 = 350 000 (m²).
+4. Đáp số: **350 000 m²**.
 
 *Lỗi hay mắc:* Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc.
 
 ### Bài 3, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **520 nghìn đồng**
-b) **21 quyển**
-c) **10 quyển**
-d) **204 nghìn đồng**
-e) **924 nghìn đồng**
-f) **255 nghìn đồng**
+a) **19 quyển**
+b) **2 322 nghìn đồng**
+c) **1 410 nghìn đồng**
+d) **9 quyển**
+e) **23 quyển**
+f) **27 quyển**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Mua 3 quyển vở hết 60 nghìn đồng. Mua 26 quyển vở như thế hết bao nhiêu nghìn đồng?
+1. Xét ý a: Mua 7 quyển vở hết 476 nghìn đồng. Với 1 292 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
 2. Đọc vị: đây là dạng **Tỉ lệ thuận, rút về đơn vị**; dấu hiệu là Hai đại lượng cùng tăng cùng giảm.
 3. Kiến thức phải dùng: Đại lượng tỉ lệ thuận.
 4. Cách làm: Rút về đơn vị hoặc dùng tỉ số.
 5. Lối tắt: Nếu số lượng mới gấp số lượng cũ một số nguyên lần thì nhân thẳng, không cần rút về đơn vị.
-6. Kết quả: **520 nghìn đồng**.
+6. Kết quả: **19 quyển**.
 
 *Lỗi hay mắc:* Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch.
 
 ### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **2 tạ 25 kg**
-b) **2 tạ 70 kg**
-c) **13 tạ 20 kg**
-d) **11 tạ 70 kg**
-e) **9 tạ 50 kg**
-f) **8 tạ 25 kg**
+a) **4 cm**
+b) **25,12 cm**
+c) **62,8 cm**
+d) **12,56 cm²**
+e) **1 808,64 cm²**
+f) **119,32 cm**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Một xe chở 9 bao thóc, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ thóc?
-2. Đọc vị: đây là dạng **Bài toán đại lượng có lời văn**; dấu hiệu là Đơn vị trong câu hỏi khác đơn vị trong dữ kiện.
-3. Kiến thức phải dùng: Nhân, chia số tự nhiên; đổi đơn vị khối lượng.
-4. Cách làm: Tính theo đơn vị dữ kiện rồi đổi ở bước cuối.
-5. Lối tắt: 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ.
-6. Kết quả: **2 tạ 25 kg**.
+1. Xét ý a: Hình tròn có đường kính 8 cm. Bán kính bằng bao nhiêu?
+2. Đọc vị: đây là dạng **Chu vi, diện tích hình tròn**; dấu hiệu là Đề cho bán kính hoặc đường kính.
+3. Kiến thức phải dùng: Công thức hình tròn.
+4. Cách làm: Quy về bán kính, chọn đúng công thức.
+5. Lối tắt: Diện tích luôn có đơn vị mũ hai — nếu đáp số ghi cm là chắc chắn nhầm.
+6. Kết quả: **4 cm**.
 
-*Lỗi hay mắc:* Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ.
+*Lỗi hay mắc:* Lấy đường kính nhân đường kính khi tính diện tích.
 
 ### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **2, 5, 11, 20**
-b) **47**
-c) **137**
-d) **27**
-e) **có, khoảng cách 3**
-f) **38**
+a) **1, 2, 4, 7**
+b) **16**
+c) **46**
+d) **9**
+e) **có, khoảng cách 1**
+f) **14**
 
 **Cách giải mẫu:**
 
@@ -184,7 +185,7 @@ f) **38**
 3. Kiến thức phải dùng: Dãy hiệu, tổng dãy cách đều.
 4. Cách làm: Lập dãy hiệu, tính tổng hiệu, cộng vào số hạng đầu.
 5. Lối tắt: Với hiệu 1, 2, 3, … thì số hạng thứ n = số đầu + (n − 1) × n : 2.
-6. Kết quả: **2, 5, 11, 20**.
+6. Kết quả: **1, 2, 4, 7**.
 
 *Lỗi hay mắc:* Cộng n hiệu thay vì (n − 1) hiệu.
 
@@ -199,7 +200,7 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài 1 | Bốn phép tính với số tự nhiên | Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số. | Nhóm chuyên đề **—** · mức — |
 | Bài 2 | Đổi đơn vị diện tích | Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. | Nhóm chuyên đề **—** · mức — |
 | Bài 3 | Tỉ lệ thuận, rút về đơn vị | Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch. | Nhóm chuyên đề **—** · mức — |
-| Bài 4 | Bài toán đại lượng có lời văn | Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. | Nhóm chuyên đề **—** · mức — |
+| Bài 4 | Chu vi, diện tích hình tròn | Lấy đường kính nhân đường kính khi tính diện tích. | Nhóm chuyên đề **—** · mức — |
 | Bài 5 | Dãy có hiệu tăng đều (hiệu bậc hai) | Cộng n hiệu thay vì (n − 1) hiệu. | Nhóm chuyên đề **—** · mức — |
 
 ---

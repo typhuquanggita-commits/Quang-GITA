@@ -30,57 +30,54 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Đặt tính rồi tính. Ước lượng trước để tự kiểm tra.
 
-a) 283 268 + 980 563
-b) 38 448 000 : 320
-c) 164 189 − 71 501
-d) 178 167 × 710
-e) 568 587 − 103 220
-f) 47 926 + 289 793
+a) 57 375 630 : 855
+b) 210 508 + 125 666
+c) 701 790 − 630 203
+d) 648 910 × 260
+e) 444 986 − 37 930
+f) 128 565 432 : 186
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
 Tính bằng cách thuận tiện nhất.
 
-a) 2 120 : 4 : 10
-b) 50 × 87 × 2
-c) 34 × 25 × 4
-d) 59 × 25 × 4
-e) 50 × 43 × 2
+a) 50 × 40 × 2
+b) 53 × 125 × 8
+c) 4 300 : 5 : 10
+d) 31 × 125 × 8
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
 Giải bằng cách rút về đơn vị hoặc dùng tỉ số.
 
-a) Mua 3 quyển vở hết 126 nghìn đồng. Mua 7 quyển vở như thế hết bao nhiêu nghìn đồng?
-b) Mua 10 quyển vở hết 890 nghìn đồng. Mua 27 quyển vở như thế hết bao nhiêu nghìn đồng?
-c) Mua 3 quyển vở hết 96 nghìn đồng. Với 736 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
-d) Mua 6 quyển vở hết 138 nghìn đồng. Với 368 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
-e) Mua 10 quyển vở hết 390 nghìn đồng. Mua 9 quyển vở như thế hết bao nhiêu nghìn đồng?
+a) Mua 4 quyển vở hết 68 nghìn đồng. Với 306 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+b) Mua 7 quyển vở hết 602 nghìn đồng. Mua 6 quyển vở như thế hết bao nhiêu nghìn đồng?
+c) Mua 12 quyển vở hết 600 nghìn đồng. Với 450 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+d) Mua 14 quyển vở hết 448 nghìn đồng. Mua 28 quyển vở như thế hết bao nhiêu nghìn đồng?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
-Lấy π = 3,14. Ghi rõ đơn vị.
+Ghi kết quả theo giờ và phút.
 
-a) Hình tròn có bán kính 8 cm. Tính chu vi (lấy π = 3,14).
-b) Hình tròn có bán kính 11 cm. Tính diện tích (lấy π = 3,14).
-c) Hình tròn có đường kính 28 cm. Tính chu vi (lấy π = 3,14).
-d) Hình tròn có đường kính 12 cm. Bán kính bằng bao nhiêu?
-e) Hình tròn có đường kính 46 cm. Tính chu vi (lấy π = 3,14).
+a) Một chuyến tàu khởi hành lúc 11 giờ 40 phút và đi hết 1 giờ 23 phút. Tàu đến nơi lúc mấy giờ?
+b) Một chuyến tàu khởi hành lúc 14 giờ 25 phút và đi hết 2 giờ 46 phút. Tàu đến nơi lúc mấy giờ?
+c) Một chuyến tàu khởi hành lúc 11 giờ 45 phút và đi hết 6 giờ 38 phút. Tàu đến nơi lúc mấy giờ?
+d) Một chuyến tàu khởi hành lúc 8 giờ 10 phút và đi hết 1 giờ 44 phút. Tàu đến nơi lúc mấy giờ?
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
-Dãy số bắt đầu bằng 2; hiệu giữa hai số hạng liên tiếp lần lượt là 4, 8, 12, 16, … (mỗi hiệu hơn hiệu trước 4 đơn vị).
+Tính nhanh mỗi tổng, nêu công thức đã dùng.
 
-a) Viết bốn số hạng đầu của dãy.
-b) Số hạng thứ 6 là số nào?
-c) Số hạng thứ 10 là số nào?
-d) Hiệu giữa số hạng thứ 10 và số hạng thứ 9 bằng bao nhiêu?
-e) Dãy các hiệu của dãy trên có phải dãy cách đều không? Khoảng cách bằng bao nhiêu?
-f) Tổng của bốn số hạng đầu bằng bao nhiêu?
+a) 1 + 3 + 5 + … + 199 (tổng 100 số lẻ đầu tiên)
+b) 2 + 4 + 6 + … + 40 (tổng 20 số chẵn đầu tiên)
+c) 1 + 2 + 3 + … + 10
+d) 2 + 4 + 6 + … + 200 (tổng 100 số chẵn đầu tiên)
+e) 1 + 2 + 3 + … + 20
+f) 1 + 3 + 5 + … + 19 (tổng 10 số lẻ đầu tiên)
 
 
 ---
@@ -90,100 +87,97 @@ f) Tổng của bốn số hạng đầu bằng bao nhiêu?
 
 ### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **1 263 831**
-b) **120 150**
-c) **92 688**
-d) **126 498 570**
-e) **465 367**
-f) **337 719**
+a) **67 106**
+b) **336 174**
+c) **71 587**
+d) **168 716 600**
+e) **407 056**
+f) **691 212**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 283 268 + 980 563
+1. Xét ý a: 57 375 630 : 855
 2. Đọc vị: đây là dạng **Bốn phép tính với số tự nhiên**; dấu hiệu là Yêu cầu “đặt tính rồi tính”.
 3. Kiến thức phải dùng: Kĩ thuật đặt tính cộng, trừ, nhân, chia.
 4. Cách làm: Đặt tính thẳng cột, tính từ hàng đơn vị.
 5. Lối tắt: Ước lượng bằng cách làm tròn để phát hiện sai sót về độ lớn.
-6. Kết quả: **1 263 831**.
+6. Kết quả: **67 106**.
 
 *Lỗi hay mắc:* Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số.
 
-### Bài 2, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 2, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **53**
-b) **8 700**
-c) **3 400**
-d) **5 900**
-e) **4 300**
+a) **4 000**
+b) **53 000**
+c) **86**
+d) **31 000**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 2 120 : 4 : 10
+1. Xét ý a: 50 × 40 × 2
 2. Đọc vị: đây là dạng **Tính nhanh tích, thương nhiều bước**; dấu hiệu là Tích có thừa số 25, 125, 50, 20; hoặc chia liên tiếp.
 3. Kiến thức phải dùng: Tính chất giao hoán, kết hợp của phép nhân.
 4. Cách làm: Ghép cặp cho tích tròn rồi nhân.
 5. Lối tắt: Chia liên tiếp cho 4 rồi 25 bằng chia cho 100.
-6. Kết quả: **53**.
+6. Kết quả: **4 000**.
 
 *Lỗi hay mắc:* Nhân lần lượt từ trái sang phải nên số trung gian rất lớn.
 
-### Bài 3, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 3, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **294 nghìn đồng**
-b) **2 403 nghìn đồng**
-c) **23 quyển**
-d) **16 quyển**
-e) **351 nghìn đồng**
+a) **18 quyển**
+b) **516 nghìn đồng**
+c) **9 quyển**
+d) **896 nghìn đồng**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Mua 3 quyển vở hết 126 nghìn đồng. Mua 7 quyển vở như thế hết bao nhiêu nghìn đồng?
+1. Xét ý a: Mua 4 quyển vở hết 68 nghìn đồng. Với 306 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
 2. Đọc vị: đây là dạng **Tỉ lệ thuận, rút về đơn vị**; dấu hiệu là Hai đại lượng cùng tăng cùng giảm.
 3. Kiến thức phải dùng: Đại lượng tỉ lệ thuận.
 4. Cách làm: Rút về đơn vị hoặc dùng tỉ số.
 5. Lối tắt: Nếu số lượng mới gấp số lượng cũ một số nguyên lần thì nhân thẳng, không cần rút về đơn vị.
-6. Kết quả: **294 nghìn đồng**.
+6. Kết quả: **18 quyển**.
 
 *Lỗi hay mắc:* Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch.
 
-### Bài 4, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 4, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **50,24 cm**
-b) **379,94 cm²**
-c) **87,92 cm**
-d) **6 cm**
-e) **144,44 cm**
+a) **13 giờ 3 phút**
+b) **17 giờ 11 phút**
+c) **18 giờ 23 phút**
+d) **9 giờ 54 phút**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Hình tròn có bán kính 8 cm. Tính chu vi (lấy π = 3,14).
-2. Đọc vị: đây là dạng **Chu vi, diện tích hình tròn**; dấu hiệu là Đề cho bán kính hoặc đường kính.
-3. Kiến thức phải dùng: Công thức hình tròn.
-4. Cách làm: Quy về bán kính, chọn đúng công thức.
-5. Lối tắt: Diện tích luôn có đơn vị mũ hai — nếu đáp số ghi cm là chắc chắn nhầm.
-6. Kết quả: **50,24 cm**.
+1. Xét ý a: Một chuyến tàu khởi hành lúc 11 giờ 40 phút và đi hết 1 giờ 23 phút. Tàu đến nơi lúc mấy giờ?
+2. Đọc vị: đây là dạng **Tính thời điểm trong ngày**; dấu hiệu là Cho thời điểm bắt đầu và khoảng thời gian.
+3. Kiến thức phải dùng: Quan hệ giờ – phút, phép chia có dư.
+4. Cách làm: Quy về phút, cộng trừ, đổi lại.
+5. Lối tắt: Cộng tròn giờ trước rồi cộng phần phút lẻ sau.
+6. Kết quả: **13 giờ 3 phút**.
 
-*Lỗi hay mắc:* Lấy đường kính nhân đường kính khi tính diện tích.
+*Lỗi hay mắc:* Cộng phần phút thành hơn 60 mà quên đổi thành giờ.
 
 ### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **2, 6, 14, 26**
-b) **62**
-c) **182**
-d) **36**
-e) **có, khoảng cách 4**
-f) **48**
+a) **10 000**
+b) **420**
+c) **55**
+d) **10 100**
+e) **210**
+f) **100**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Viết bốn số hạng đầu của dãy.
-2. Đọc vị: đây là dạng **Dãy có hiệu tăng đều (hiệu bậc hai)**; dấu hiệu là Hiệu giữa các số hạng tăng đều đặn.
-3. Kiến thức phải dùng: Dãy hiệu, tổng dãy cách đều.
-4. Cách làm: Lập dãy hiệu, tính tổng hiệu, cộng vào số hạng đầu.
-5. Lối tắt: Với hiệu 1, 2, 3, … thì số hạng thứ n = số đầu + (n − 1) × n : 2.
-6. Kết quả: **2, 6, 14, 26**.
+1. Xét ý a: 1 + 3 + 5 + … + 199 (tổng 100 số lẻ đầu tiên)
+2. Đọc vị: đây là dạng **Tổng dãy đặc biệt**; dấu hiệu là Dãy toàn số lẻ, toàn số chẵn, hoặc số tự nhiên liên tiếp.
+3. Kiến thức phải dùng: Ba công thức tổng cơ bản.
+4. Cách làm: Đếm số số hạng rồi áp công thức.
+5. Lối tắt: Tổng n số lẻ đầu tiên luôn là một số chính phương — dùng để kiểm tra nhanh.
+6. Kết quả: **10 000**.
 
-*Lỗi hay mắc:* Cộng n hiệu thay vì (n − 1) hiệu.
+*Lỗi hay mắc:* Nhầm số hạng cuối với số lượng số hạng khi áp công thức.
 
 ---
 
@@ -196,8 +190,8 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài 1 | Bốn phép tính với số tự nhiên | Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số. | Nhóm chuyên đề **—** · mức — |
 | Bài 2 | Tính nhanh tích, thương nhiều bước | Nhân lần lượt từ trái sang phải nên số trung gian rất lớn. | Nhóm chuyên đề **—** · mức — |
 | Bài 3 | Tỉ lệ thuận, rút về đơn vị | Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch. | Nhóm chuyên đề **—** · mức — |
-| Bài 4 | Chu vi, diện tích hình tròn | Lấy đường kính nhân đường kính khi tính diện tích. | Nhóm chuyên đề **—** · mức — |
-| Bài 5 | Dãy có hiệu tăng đều (hiệu bậc hai) | Cộng n hiệu thay vì (n − 1) hiệu. | Nhóm chuyên đề **—** · mức — |
+| Bài 4 | Tính thời điểm trong ngày | Cộng phần phút thành hơn 60 mà quên đổi thành giờ. | Nhóm chuyên đề **—** · mức — |
+| Bài 5 | Tổng dãy đặc biệt | Nhầm số hạng cuối với số lượng số hạng khi áp công thức. | Nhóm chuyên đề **—** · mức — |
 
 ---
 

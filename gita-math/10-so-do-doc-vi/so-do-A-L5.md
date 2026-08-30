@@ -68,6 +68,7 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 | M3 | Cụm “vừa chia hết cho … vừa chia hết cho …” | Đếm số chia hết đồng thời cho nhiều số | Quy về một số chia duy nhất là BCNN rồi đếm | Chia hết cho 2 và 5 thì tận cùng là 0; chia hết cho 2 và 3 thì chia hết cho 6. | BCNN chứ không phải tích hai số chia |
 | M3 | Cụm “… số tự nhiên liên tiếp có tổng bằng …” | Dãy số tự nhiên liên tiếp có tổng cho trước | Tìm số giữa bằng phép chia rồi suy ra hai đầu dãy | Tổng của n số liên tiếp (n lẻ) luôn chia hết cho n. | — |
 | M3 | Câu hỏi chỉ hỏi “chữ số tận cùng”, không hỏi kết quả | Tìm chữ số tận cùng của một phép tính | Rút gọn về chữ số tận cùng rồi tính | Với phép trừ, nếu chữ số cuối của số bị trừ nhỏ hơn thì mượn 10 rồi trừ. | — |
+| M3 | Hai số đo cộng dồn của cùng một thiết bị, cách nhau một năm | Làm tròn số | Trừ trên số gốc, chỉ làm tròn ở bước cuối | Hiệu hai số gần nhau tính nhẩm nhanh hơn hẳn đặt tính. | Làm tròn rồi mới trừ |
 | M4 | Đề nói “xoá chữ số”, “viết thêm chữ số”, “đổi chỗ” | Biến đổi số bằng cách thêm, bớt, đổi chỗ chữ số | Viết cả hai số theo cấu tạo rồi lấy hiệu | Đổi chỗ hàng trăm với hàng đơn vị: hiệu = 99 × (hiệu hai chữ số). | Bên trái hay bên phải |
 | M4 | Từ khoá “ước chung lớn nhất”, “bội chung nhỏ nhất” | Ước, bội, ƯCLN, BCNN | Liệt kê theo cặp ước; dùng quan hệ tích = ƯCLN × BCNN | ƯCLN × BCNN = tích hai số — tìm được một cái là suy ra cái kia. | — |
 | M4 | Hai điều kiện “chia cho … dư …” đi cùng nhau | Tìm số thoả nhiều điều kiện chia có dư | Lập dãy theo điều kiện chặt hơn rồi lọc theo điều kiện còn lại | Chọn điều kiện có số chia **lớn hơn** để lập dãy — dãy thưa hơn nên thử nhanh hơn. | — |
@@ -103,43 +104,43 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 
 Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: đây là dạng bài gì, và dấu hiệu nào cho biết điều đó.
 
-**Đề 1.** Trả lời và nêu căn cứ. Số 45 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
+**Đề 1.** Phân tích số theo cấu tạo rồi trả lời. Viết thêm chữ số 1 vào bên trái số 492 thì được số mới. Số mới hơn số ban đầu bao nhiêu đơn vị?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 2.** Dùng tính chất số dư, hạn chế tính toán. Dãy số: 293, 532, 889. Có bao nhiêu số trong dãy chia hết cho 2?
+**Đề 2.** Dùng tính chất số dư, hạn chế tính toán. Dãy số: 299, 338, 441, 642, 927, 930. Có bao nhiêu số trong dãy chia hết cho 2?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 3.** Với mỗi số dưới đây, trả lời đủ hai ý. Số 4 175 989 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
+**Đề 3.** Số chính phương là số bằng tích của một số tự nhiên với chính nó. Viết 7 số chính phương đầu tiên.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 4.** Trình bày lời giải ngắn gọn cho từng ý. Chữ số hàng chục của số 57 gấp mấy lần chữ số hàng đơn vị (nếu chia hết), hoặc hơn bao nhiêu đơn vị?
+**Đề 4.** Trả lời nhanh, mỗi ý không quá 20 giây. Chữ số hàng đơn vị của số 4 106 296 có giá trị bằng bao nhiêu?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 5.** Trình bày lập luận đầy đủ. Số có hai chữ số 61 gấp tổng hai chữ số của nó bao nhiêu lần? (viết dưới dạng thương và số dư)
+**Đề 5.** Câu nào cũng phải viết cấu tạo số ra trước khi tính. Số có hai chữ số ab. Khi đổi chỗ hai chữ số thì được số mới nhỏ hơn số cũ 27 đơn vị, và tổng hai chữ số bằng 5. Tìm số ab.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 6.** Tìm số bé nhất thoả mãn. Tìm số bé nhất không quá 300 chia cho 8 dư 4 và chia cho 9 dư 4.
+**Đề 6.** Trả lời gọn, có thể dùng dãy cách đều. Có bao nhiêu số từ 174 đến 832 vừa chia hết cho 5 vừa chia hết cho 9? Số bé nhất trong đó là số nào?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 7.** Cho số **1 794 923**. Chữ số ở hàng **triệu** của số 1 794 923 là chữ số nào, và nó có giá trị bằng bao nhiêu?
+**Đề 7.** Cho ba chữ số **0, 3, 8**. Lập các số có ba chữ số khác nhau từ ba chữ số này. Viết tất cả các số lập được (theo thứ tự từ bé đến lớn).
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 8.** Viết số tự nhiên ứng với mỗi tổng dưới đây. Viết số gồm tổng: 1 000 000 + 800 000 + 40 000 + 3 000 + 800 + 80 + 1
+**Đề 8.** Với mỗi ý, tìm số theo yêu cầu. Tổng của 5 số tự nhiên liên tiếp bằng 1 360. Tìm số bé nhất trong 5 số đó.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 9.** Đếm số lượng, không cần liệt kê. Có bao nhiêu số chẵn từ 93 đến 384?
+**Đề 9.** Tính số chữ số cần dùng. Một quyển sách có 73 trang, đánh số trang từ 1. Phải dùng tất cả bao nhiêu chữ số?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 10.** Tìm quy luật rồi trả lời. Tích của 32 thừa số đều bằng 3 có chữ số tận cùng là chữ số nào?
+**Đề 10.** Làm tròn mỗi số dưới đây theo yêu cầu. Làm tròn số 313 828 đến hàng trăm.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
@@ -149,16 +150,16 @@ Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: 
 
 | # | Dạng bài | Dấu hiệu |
 |:--:|---|---|
-| 1 | Nhận biết số nguyên tố, hợp số | Câu hỏi “là số nguyên tố hay hợp số” |
+| 1 | Biến đổi số bằng cách thêm, bớt, đổi chỗ chữ số | Đề nói “xoá chữ số”, “viết thêm chữ số”, “đổi chỗ” |
 | 2 | Xét số dư của tổng | Đề hỏi chia hết hay số dư của một tổng dài |
-| 3 | Đếm chữ số, tính tổng chữ số | Yêu cầu “có mấy chữ số”, “tổng các chữ số” |
-| 4 | Tìm số theo điều kiện của các chữ số | Đề cho quan hệ giữa các chữ số chứ không cho số |
-| 5 | Số và tổng chữ số của nó | Đề liên hệ số với tổng các chữ số của chính nó |
-| 6 | Tìm số thoả nhiều điều kiện chia có dư | Hai điều kiện “chia cho … dư …” đi cùng nhau |
-| 7 | Xác định chữ số và giá trị chữ số theo hàng | Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” |
-| 8 | Viết số từ dạng tổng theo hàng | Tổng gồm các số tròn chục, tròn trăm, tròn nghìn… |
-| 9 | Đếm số hạng của dãy cách đều theo điều kiện chia hết | Cụm “có bao nhiêu số … từ … đến …” |
-| 10 | Chữ số tận cùng của luỹ thừa | Tích nhiều thừa số giống nhau, số thừa số lớn |
+| 3 | Số chính phương | Có cụm “bình phương”, “nhân với chính nó”, “số chính phương” |
+| 4 | Ôn tập số tự nhiên | Câu hỏi ngắn về so sánh, hàng, số liền kề, làm tròn |
+| 5 | Dùng chữ thay số | Đề viết số bằng chữ hoặc bằng dấu sao và cho quan hệ giữa các chữ số |
+| 6 | Đếm số chia hết đồng thời cho nhiều số | Cụm “vừa chia hết cho … vừa chia hết cho …” |
+| 7 | Lập số và đếm số lập được từ một bộ chữ số | Đề cho một bộ chữ số và yêu cầu lập số |
+| 8 | Dãy số tự nhiên liên tiếp có tổng cho trước | Cụm “… số tự nhiên liên tiếp có tổng bằng …” |
+| 9 | Đếm chữ số theo nhóm độ dài | Bài toán đánh số trang, đánh số nhà, đánh số vé |
+| 10 | Làm tròn số tự nhiên | Cụm từ “làm tròn đến hàng …” |
 
 ---
 

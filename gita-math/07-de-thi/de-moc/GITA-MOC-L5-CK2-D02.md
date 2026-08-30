@@ -30,57 +30,55 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Trả lời nhanh, mỗi ý không quá 20 giây.
 
-a) Chữ số hàng chục nghìn của số 4 141 219 có giá trị bằng bao nhiêu?
-b) Số liền trước và số liền sau của 4 270 909 là những số nào?
-c) 1 076 740 … 1 079 211
-d) Làm tròn 4 739 857 đến hàng trăm.
-e) 5 975 199 … 5 977 007
-f) Chữ số hàng chục của số 7 963 213 có giá trị bằng bao nhiêu?
+a) Số liền trước và số liền sau của 8 858 913 là những số nào?
+b) Làm tròn 5 775 261 đến hàng trăm.
+c) 6 548 361 … 6 544 207
+d) Chữ số hàng chục nghìn của số 9 653 351 có giá trị bằng bao nhiêu?
+e) 4 732 286 … 4 735 241
+f) Chữ số hàng trăm nghìn của số 6 270 038 có giá trị bằng bao nhiêu?
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
 Tính bằng cách thuận tiện nhất.
 
-a) 62 + 33 + 38 + 67
-b) 87 + 36 + 13 + 64
-c) 42 + 366 + 58
-d) 54 + 192 + 46
-e) 62 + 52 − 52
+a) 336 + 47 − 47
+b) 49 + 24 + 51 + 76
+c) 89 + 48 − 48
+d) 330 + 26 − 26
+e) 35 + 67 + 65 + 33
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
 Ghi rõ đại lượng nào ứng với 100%.
 
-a) Một món hàng giá 80 000 đồng, tăng giá 15%. Giá mới là bao nhiêu?
-b) Mua một món hàng 200 000 đồng rồi bán 260 000 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
-c) Một chiếc cặp giá 120 000 đồng được giảm 15%. Hỏi giá sau khi giảm là bao nhiêu?
-d) Một món hàng giá 120 000 đồng, tăng giá 30%. Giá mới là bao nhiêu?
+a) Một chiếc cặp giá 120 000 đồng được giảm 40%. Hỏi giá sau khi giảm là bao nhiêu?
+b) Mua một món hàng 240 000 đồng rồi bán 264 000 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
+c) Một món hàng giá 300 000 đồng, tăng giá 20%. Giá mới là bao nhiêu?
+d) Một món hàng giá 240 000 đồng, tăng giá 5%. Giá mới là bao nhiêu?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
 Lấy π = 3,14. Ghi rõ đơn vị.
 
-a) Hình tròn có đường kính 60 cm. Bán kính bằng bao nhiêu?
-b) Hình tròn có đường kính 22 cm. Tính chu vi (lấy π = 3,14).
-c) Hình tròn có bán kính 21 cm. Tính chu vi (lấy π = 3,14).
-d) Hình tròn có bán kính 16 cm. Tính diện tích (lấy π = 3,14).
-e) Hình tròn có bán kính 27 cm. Tính diện tích (lấy π = 3,14).
-f) Hình tròn có bán kính 28 cm. Tính chu vi (lấy π = 3,14).
+a) Hình tròn có bán kính 14 cm. Tính diện tích (lấy π = 3,14).
+b) Hình tròn có bán kính 2 cm. Tính chu vi (lấy π = 3,14).
+c) Hình tròn có đường kính 18 cm. Tính chu vi (lấy π = 3,14).
+d) Hình tròn có đường kính 32 cm. Bán kính bằng bao nhiêu?
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
-Tính thời gian gặp nhau trước.
+Dùng phương pháp giả thiết tạm.
 
-a) Hai xe đi ngược chiều từ hai địa điểm cách nhau 288 km, vận tốc 60 km/giờ và 12 km/giờ. Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
-b) Hai xe đi ngược chiều từ hai địa điểm cách nhau 198 km, vận tốc 54 km/giờ và 12 km/giờ. Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
-c) Hai xe đi ngược chiều từ hai địa điểm cách nhau 325 km, vận tốc 45 km/giờ và 20 km/giờ. Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
-d) Hai xe đi ngược chiều từ hai địa điểm cách nhau 296 km, vận tốc 54 km/giờ và 20 km/giờ. Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
-e) Hai xe đi ngược chiều từ hai địa điểm cách nhau 350 km, vận tốc 40 km/giờ và 30 km/giờ. Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
-f) Hai xe đi ngược chiều từ hai địa điểm cách nhau 120 km, vận tốc 36 km/giờ và 24 km/giờ. Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
+a) Vừa gà vừa chó có 53 con, đếm được tất cả 166 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
+b) Vừa gà vừa chó có 48 con, đếm được tất cả 166 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
+c) Vừa gà vừa chó có 36 con, đếm được tất cả 88 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
+d) Vừa gà vừa chó có 46 con, đếm được tất cả 132 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
+e) Vừa gà vừa chó có 28 con, đếm được tất cả 70 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
+f) Vừa gà vừa chó có 60 con, đếm được tất cả 198 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
 
 
 ---
@@ -90,100 +88,97 @@ f) Hai xe đi ngược chiều từ hai địa điểm cách nhau 120 km, vận 
 
 ### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **40 000**
-b) **4 270 908 và 4 270 910**
-c) **<**
-d) **4 739 900**
+a) **8 858 912 và 8 858 914**
+b) **5 775 300**
+c) **>**
+d) **50 000**
 e) **<**
-f) **10**
+f) **200 000**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Chữ số hàng chục nghìn của số 4 141 219 có giá trị bằng bao nhiêu?
+1. Xét ý a: Số liền trước và số liền sau của 8 858 913 là những số nào?
 2. Đọc vị: đây là dạng **Ôn tập số tự nhiên**; dấu hiệu là Câu hỏi ngắn về so sánh, hàng, số liền kề, làm tròn.
 3. Kiến thức phải dùng: Thứ tự số tự nhiên, giá trị hàng, quy tắc làm tròn.
 4. Cách làm: Đếm chữ số, xét hàng từ trái sang phải.
 5. Lối tắt: Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số.
-6. Kết quả: **40 000**.
+6. Kết quả: **8 858 912 và 8 858 914**.
 
 *Lỗi hay mắc:* So sánh từ hàng đơn vị; hoặc làm tròn nhìn nhầm sang chính hàng cần làm tròn.
 
 ### Bài 2, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **200**
+a) **336**
 b) **200**
-c) **466**
-d) **292**
-e) **62**
+c) **89**
+d) **330**
+e) **200**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 62 + 33 + 38 + 67
+1. Xét ý a: 336 + 47 − 47
 2. Đọc vị: đây là dạng **Tính nhanh tổng nhiều số hạng**; dấu hiệu là Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm.
 3. Kiến thức phải dùng: Tính chất giao hoán, kết hợp của phép cộng.
 4. Cách làm: Ghép cặp tròn rồi cộng.
 5. Lối tắt: Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10.
-6. Kết quả: **200**.
+6. Kết quả: **336**.
 
 *Lỗi hay mắc:* Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn.
 
 ### Bài 3, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **92 000 đồng**
-b) **30%**
-c) **102 000 đồng**
-d) **156 000 đồng**
+a) **72 000 đồng**
+b) **10%**
+c) **360 000 đồng**
+d) **252 000 đồng**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Một món hàng giá 80 000 đồng, tăng giá 15%. Giá mới là bao nhiêu?
-2. Đọc vị: đây là dạng **Tỉ số phần trăm trong mua bán**; dấu hiệu là Từ khoá “giảm giá”, “tăng giá”, “lãi”, “lỗ”.
-3. Kiến thức phải dùng: Tỉ số phần trăm, mốc quy chiếu 100%.
-4. Cách làm: Chốt mốc 100% rồi cộng trừ phần trăm.
-5. Lối tắt: Giảm 20% nghĩa là còn 80% — nhân thẳng một lần thay vì trừ hai bước.
-6. Kết quả: **92 000 đồng**.
+1. Giá gốc ứng với 100%.
+2. Bước 1 — số tiền giảm: 120 000 : 100 × 40 = 48 000 (đồng).
+3. Bước 2 — giá sau khi giảm: 120 000 − 48 000 = 72 000 (đồng).
+4. Cách nhanh: giảm 40% nghĩa là còn 60%, tức 120 000 : 100 × 60 = 72 000 (đồng).
+5. Đáp số: **72 000 đồng**.
 
 *Lỗi hay mắc:* Chia tiền lãi cho giá bán nên ra tỉ lệ nhỏ hơn thực tế.
 
-### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 4, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **30 cm**
-b) **69,08 cm**
-c) **131,88 cm**
-d) **803,84 cm²**
-e) **2 289,06 cm²**
-f) **175,84 cm**
+a) **615,44 cm²**
+b) **12,56 cm**
+c) **56,52 cm**
+d) **16 cm**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Hình tròn có đường kính 60 cm. Bán kính bằng bao nhiêu?
+1. Xét ý a: Hình tròn có bán kính 14 cm. Tính diện tích (lấy π = 3,14).
 2. Đọc vị: đây là dạng **Chu vi, diện tích hình tròn**; dấu hiệu là Đề cho bán kính hoặc đường kính.
 3. Kiến thức phải dùng: Công thức hình tròn.
 4. Cách làm: Quy về bán kính, chọn đúng công thức.
 5. Lối tắt: Diện tích luôn có đơn vị mũ hai — nếu đáp số ghi cm là chắc chắn nhầm.
-6. Kết quả: **30 cm**.
+6. Kết quả: **615,44 cm²**.
 
 *Lỗi hay mắc:* Lấy đường kính nhân đường kính khi tính diện tích.
 
 ### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **240 km**
-b) **162 km**
-c) **225 km**
-d) **216 km**
-e) **200 km**
-f) **72 km**
+a) **23 con gà, 30 con chó**
+b) **13 con gà, 35 con chó**
+c) **28 con gà, 8 con chó**
+d) **26 con gà, 20 con chó**
+e) **21 con gà, 7 con chó**
+f) **21 con gà, 39 con chó**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Hai xe đi ngược chiều từ hai địa điểm cách nhau 288 km, vận tốc 60 km/giờ và 12 km/giờ. Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
-2. Đọc vị: đây là dạng **Chuyển động ngược chiều, tính quãng đường từng xe**; dấu hiệu là Hỏi quãng đường **của một xe** tính đến lúc gặp nhau.
-3. Kiến thức phải dùng: Quãng đường – vận tốc – thời gian, tỉ lệ thuận.
-4. Cách làm: Thời gian gặp → quãng đường từng xe.
-5. Lối tắt: Quãng đường hai xe đi tỉ lệ thuận với vận tốc — chia quãng cách theo tỉ số vận tốc là ra ngay.
-6. Kết quả: **240 km**.
+1. Xét ý a: Vừa gà vừa chó có 53 con, đếm được tất cả 166 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
+2. Đọc vị: đây là dạng **Giả thiết tạm**; dấu hiệu là Hai loại đối tượng, biết tổng số và tổng của một đại lượng khác.
+3. Kiến thức phải dùng: Phương pháp giả thiết tạm.
+4. Cách làm: Giả sử đồng nhất một loại → tính phần chênh → chia cho hiệu đơn vị.
+5. Lối tắt: Số chó = (số chân − 2 × số con) : 2 — thuộc công thức rút gọn để nhẩm.
+6. Kết quả: **23 con gà, 30 con chó**.
 
-*Lỗi hay mắc:* Chia quãng đường theo tỉ lệ sai, hoặc lấy quãng đường chia đôi.
+*Lỗi hay mắc:* Chia số chân thiếu cho 4 thay vì cho hiệu số chân của hai loài.
 
 ---
 
@@ -197,7 +192,7 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài 2 | Tính nhanh tổng nhiều số hạng | Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. | Nhóm chuyên đề **—** · mức — |
 | Bài 3 | Tỉ số phần trăm trong mua bán | Chia tiền lãi cho giá bán nên ra tỉ lệ nhỏ hơn thực tế. | Nhóm chuyên đề **—** · mức — |
 | Bài 4 | Chu vi, diện tích hình tròn | Lấy đường kính nhân đường kính khi tính diện tích. | Nhóm chuyên đề **—** · mức — |
-| Bài 5 | Chuyển động ngược chiều, tính quãng đường từng xe | Chia quãng đường theo tỉ lệ sai, hoặc lấy quãng đường chia đôi. | Nhóm chuyên đề **—** · mức — |
+| Bài 5 | Giả thiết tạm | Chia số chân thiếu cho 4 thay vì cho hiệu số chân của hai loài. | Nhóm chuyên đề **—** · mức — |
 
 ---
 

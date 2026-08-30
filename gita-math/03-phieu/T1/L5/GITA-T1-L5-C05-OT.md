@@ -44,81 +44,107 @@ Phiếu lời giải và phân tích chuyên sâu đi kèm: `GITA-T1-L5-C05-OT-G
 Họ và tên: ......................................... Lớp: ......... Điểm: ......../100
 
 > **KIẾN THỨC NỀN CỦA CHƯƠNG**
-> 1. Thứ tự thực hiện phép tính, tính chất phân phối
-> 2. Nhân, cộng số lớn; đọc bảng giá nhiều bậc
-> 3. Tỉ số phần trăm; tìm giá trị phần trăm của một số
-> 4. Cấu tạo số thập phân, quan hệ phân số – số thập phân
+> 1. Nhân, cộng số lớn; đọc bảng giá nhiều bậc
+> 2. Tỉ số phần trăm, mốc quy chiếu
+> 3. Thứ tự thực hiện phép tính, tính chất phân phối
+> 4. Tỉ số phần trăm, tăng giảm theo phần trăm
 
 ---
 
 ## PHẦN I — THỬ THÁCH CÁ NHÂN — TĂNG TỐC · Mức M2 — Thông hiểu · 20 phút · 20 điểm
 
-### Bài 1. (4 điểm) Nhận dạng hình khối và tính thể tích
-
-Cầm mô hình hoặc vẽ hình khai triển ra nháp.
-
-a) Hình hộp chữ nhật có mấy mặt, mấy đỉnh, mấy cạnh?
-b) Hình lập phương khác hình hộp chữ nhật ở điểm nào?
-c) Hình trụ có mấy mặt đáy và hai mặt đáy đó là hình gì?
-d) Hình cầu có mặt đáy không?
-e) Hình hộp chữ nhật ba kích thước 2 cm, 6 cm, 6 cm có thể tích bằng bao nhiêu?
-f) Tổng độ dài tất cả các cạnh của hình hộp ấy bằng bao nhiêu?
-g) Hình lập phương cạnh 2 cm có diện tích toàn phần bằng bao nhiêu?
-
-### Bài 2. (4 điểm) Phần trăm trong mua bán: lãi, lỗ, giảm giá
+### Bài 1. (4 điểm) Phần trăm trong mua bán: lãi, lỗ, giảm giá
 
 Ghi rõ đại lượng nào ứng với 100%.
 
-a) Một chiếc cặp giá 200 000 đồng được giảm 15%. Hỏi giá sau khi giảm là bao nhiêu?
-b) Mua một món hàng 240 000 đồng rồi bán 252 000 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
-c) Một món hàng giá 500 000 đồng, tăng giá 20%. Giá mới là bao nhiêu?
-d) Mua một món hàng 150 000 đồng rồi bán 180 000 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
-e) Một món hàng giá 240 000 đồng, tăng giá 5%. Giá mới là bao nhiêu?
+a) Mua một món hàng 400 000 đồng rồi bán 500 000 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
+b) Một món hàng giá 80 000 đồng, tăng giá 5%. Giá mới là bao nhiêu?
+c) Một chiếc cặp giá 300 000 đồng được giảm 5%. Hỏi giá sau khi giảm là bao nhiêu?
+d) Mua một món hàng 120 000 đồng rồi bán 132 000 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
+e) Một chiếc cặp giá 80 000 đồng được giảm 40%. Hỏi giá sau khi giảm là bao nhiêu?
 
-### Bài 3. (4 điểm) Bốn phép tính với số thập phân
+### Bài 2. (4 điểm) Ba dạng cơ bản của tỉ số phần trăm
 
-Đặt tính rồi tính.
+Xác định rõ đề cho gì, hỏi gì.
 
-a) 20,32 − 17,4
-b) 94,96 : 4
-c) 99,09 × 7
-d) 75,44 + 55,3
-e) 41,92 × 6
-f) 52,8 − 2,16
-g) 17,98 + 96,2
-h) 329,04 : 6
+a) Biết 60% của một số là 60. Tìm số đó.
+b) Tìm 30% của 50.
+c) Tìm tỉ số phần trăm của 96 và 120.
+d) Biết 50% của một số là 40. Tìm số đó.
+
+### Bài 3. (4 điểm) Tìm chữ số để số chia hết cho một số cho trước
+
+Với mỗi câu, tìm **tất cả** các chữ số thoả mãn.
+
+a) Tìm tất cả chữ số thay cho dấu * để số 1*34 chia hết cho 5.
+b) Tìm tất cả chữ số thay cho dấu * để số *081 chia hết cho 3.
+c) Tìm tất cả chữ số thay cho dấu * để số 35*7 chia hết cho 9.
+d) Tìm tất cả chữ số thay cho dấu * để số *632 chia hết cho 2.
+e) Tìm tất cả chữ số thay cho dấu * để số 5*67 chia hết cho 9.
+f) Tìm tất cả chữ số thay cho dấu * để số 1*13 chia hết cho 2.
 
 ### Bài 4. (4 điểm) Bốn phép tính với phân số
 
 Tính rồi rút gọn kết quả.
 
-a) 3 phần 2 − 1 phần 7
-b) 1 phần 2 × 5 phần 3
-c) 2 phần 15 + 2
-d) 10 phần 7 : 7 phần 10
-e) 1 − 11 phần 12
-f) 1 : 11 phần 9
-g) 8 phần 9 × 7 phần 5
+a) 11 phần 9 : 1
+b) 8 phần 9 + 12 phần 7
+c) 7 phần 10 × 1
+d) 5 phần 8 − 4 phần 15
+e) 4 phần 5 + 8 phần 9
+f) 3 phần 2 : 1 phần 11
 
-### Bài 5. (4 điểm) Ba dạng cơ bản của tỉ số phần trăm
+### Bài 5. (4 điểm) Bốn phép tính với số thập phân
 
-Xác định rõ đề cho gì, hỏi gì.
+Đặt tính rồi tính.
 
-a) Tìm tỉ số phần trăm của 40 và 200.
-b) Tìm 25% của 200.
-c) Biết 10% của một số là 10. Tìm số đó.
-d) Tìm tỉ số phần trăm của 40 và 80.
-e) Tìm 5% của 300.
-f) Biết 5% của một số là 20. Tìm số đó.
-g) Tìm tỉ số phần trăm của 9 và 60.
+a) 53,13 + 83,9
+b) 91,78 − 85,6
+c) 612,64 : 8
+d) 9,54 × 8
+e) 68,29 × 4
+f) 25,36 : 2
+g) 32,25 − 28,7
+h) 15,62 + 44,9
 
 ---
 
 ## PHẦN II — THI ĐẤU CẶP ĐÔI · Mức M3 — Vận dụng · 20 phút · 20 điểm
 
-### Bài 1. (4 điểm) Đọc và phân tích bảng số liệu
+### Bài 1. (4 điểm) Tìm phân số của một số
 
-Bảng thống kê số học sinh đăng kí câu lạc bộ theo môn: **Toán: 14 · Tiếng Việt: 7 · Tiếng Anh: 12 · Khoa học: 23**.
+Trình bày lời giải có câu trả lời.
+
+a) Nhóm Sao Mai trồng được 30 cây. Số cây của nhóm Hoa Phượng bằng 1 phần 2 số cây của nhóm Sao Mai. Hỏi nhóm Hoa Phượng trồng được bao nhiêu cây?
+b) Tổ Hai trồng được 51 cây. Số cây của đội Một bằng 1 phần 3 số cây của tổ Hai. Hỏi đội Một trồng được bao nhiêu cây?
+c) Đội Một trồng được 88 cây. Số cây của nhóm Hoa Phượng bằng 1 phần 4 số cây của đội Một. Hỏi nhóm Hoa Phượng trồng được bao nhiêu cây?
+d) Đội Hai trồng được 26 cây. Số cây của nhóm Hoa Phượng bằng 1 phần 2 số cây của đội Hai. Hỏi nhóm Hoa Phượng trồng được bao nhiêu cây?
+e) Nhóm Hoa Phượng trồng được 135 cây. Số cây của nhóm Sao Mai bằng 2 phần 5 số cây của nhóm Hoa Phượng. Hỏi nhóm Sao Mai trồng được bao nhiêu cây?
+
+### Bài 2. (4 điểm) Đọc biểu đồ số ngày mưa
+
+Biểu đồ ghi số ngày mưa của năm tháng liên tiếp tại một trạm đo:
+
+| Tháng | Biểu đồ (mỗi ô = 2 ngày) | Số ngày mưa |
+|:--:|---|---:|
+| Tháng 5 | ████ | 8 |
+| Tháng 6 | ████ | 8 |
+| Tháng 7 | ████ | 8 |
+| Tháng 8 | ███████████ | 22 |
+| Tháng 9 | █████ | 10 |
+
+Dùng chung biểu đồ này cho mọi ý.
+
+a) Tháng nào có nhiều ngày mưa nhất, và bao nhiêu ngày?
+b) Tháng nào có ít ngày mưa nhất?
+c) Cả năm tháng có tất cả bao nhiêu ngày mưa?
+d) Trung bình mỗi tháng có bao nhiêu ngày mưa?
+e) Tháng 8 nhiều hơn Tháng 5 bao nhiêu ngày mưa?
+f) Có mấy tháng có số ngày mưa nhiều hơn mức trung bình?
+
+### Bài 3. (4 điểm) Đọc và phân tích bảng số liệu
+
+Bảng thống kê số học sinh đăng kí câu lạc bộ theo môn: **Toán: 30 · Tiếng Việt: 24 · Tiếng Anh: 29 · Khoa học: 18 · Lịch sử: 29**.
 
 a) Tổng số học sinh đăng kí là bao nhiêu?
 b) Môn nào có nhiều học sinh đăng kí nhất?
@@ -127,112 +153,104 @@ d) Môn nhiều nhất hơn môn ít nhất bao nhiêu bạn?
 e) Trung bình mỗi môn có bao nhiêu học sinh đăng kí?
 f) Số học sinh đăng kí môn Toán chiếm bao nhiêu phần trăm tổng số (làm tròn đến hàng đơn vị)?
 
-### Bài 2. (4 điểm) Tìm phân số của một số
-
-Trình bày lời giải có câu trả lời.
-
-a) Đội Hai trồng được 128 cây. Số cây của nhóm Sao Mai bằng 1 phần 2 số cây của đội Hai. Hỏi nhóm Sao Mai trồng được bao nhiêu cây?
-b) Tổ Một trồng được 130 cây. Số cây của tổ Ba bằng 3 phần 5 số cây của tổ Một. Hỏi tổ Ba trồng được bao nhiêu cây?
-c) Nhóm Hoa Phượng trồng được 114 cây. Số cây của tổ Ba bằng 2 phần 3 số cây của nhóm Hoa Phượng. Hỏi tổ Ba trồng được bao nhiêu cây?
-d) Tổ Ba trồng được 224 cây. Số cây của nhóm Sao Mai bằng 1 phần 4 số cây của tổ Ba. Hỏi nhóm Sao Mai trồng được bao nhiêu cây?
-e) Nhóm Sao Mai trồng được 20 cây. Số cây của nhóm Hoa Phượng bằng 3 phần 4 số cây của nhóm Sao Mai. Hỏi nhóm Hoa Phượng trồng được bao nhiêu cây?
-
-### Bài 3. (4 điểm) Nguyên lý bù trừ với hai tập hợp
-
-Vẽ hai vòng tròn giao nhau và điền số vào từng miền.
-
-a) Lớp có 48 học sinh. Có 33 bạn thích môn Toán, 26 bạn thích môn Tiếng Việt, 14 bạn thích cả hai môn. Hỏi bao nhiêu bạn thích ít nhất một trong hai môn?
-b) Bao nhiêu bạn chỉ thích môn Toán?
-c) Bao nhiêu bạn chỉ thích môn Tiếng Việt?
-d) Bao nhiêu bạn không thích môn nào trong hai môn đó?
-e) Nếu cộng thẳng số bạn thích Toán với số bạn thích Tiếng Việt thì được bao nhiêu?
-f) Con số vừa cộng lớn hơn số bạn thích ít nhất một môn bao nhiêu? Vì sao?
-
-### Bài 4. (4 điểm) Tỉ số phần trăm trong tình huống thực tế
-
-Ghi rõ đại lượng nào ứng với 100%.
-
-a) Lớp 3A có 20 học sinh, trong đó có 10 học sinh giỏi. Hỏi số học sinh giỏi chiếm bao nhiêu phần trăm số học sinh cả lớp?
-b) Lớp 3A có 50 học sinh, trong đó có 25 học sinh giỏi. Hỏi số học sinh giỏi chiếm bao nhiêu phần trăm số học sinh cả lớp?
-c) Lớp 5C có 40 học sinh, trong đó có 20 học sinh giỏi. Hỏi số học sinh giỏi chiếm bao nhiêu phần trăm số học sinh cả lớp?
-d) Lớp 3A có 20 học sinh, số học sinh giỏi chiếm 50%. Hỏi lớp đó có bao nhiêu học sinh giỏi?
-e) Lớp 3A có 25 học sinh, trong đó có 18 học sinh giỏi. Hỏi số học sinh giỏi chiếm bao nhiêu phần trăm số học sinh cả lớp?
-
-### Bài 5. (4 điểm) Hai nhóm có phần chung — đếm bằng hai vòng tròn
+### Bài 4. (4 điểm) Hai nhóm có phần chung — đếm bằng hai vòng tròn
 
 Vẽ hai vòng tròn và điền số vào ba phần trước khi tính.
 
-a) Lớp 5A có 26 học sinh. Có 13 em học tiếng Anh, 19 em học bóng rổ, trong đó 6 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
-b) Lớp 4B có 39 học sinh. Có 16 em học cờ vua, 25 em học bóng rổ, trong đó 6 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
-c) Lớp 5A có 38 học sinh. Có 24 em học bơi, 24 em học vẽ, trong đó 12 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
-d) Lớp 4A có 45 học sinh. Có 26 em học vẽ, 19 em học tiếng Anh, trong đó 6 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
+a) Lớp 4A có 32 học sinh. Có 18 em học bóng rổ, 21 em học hát, trong đó 9 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
+b) Lớp 4B có 44 học sinh. Có 25 em học cờ vua, 24 em học hát, trong đó 8 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
+c) Lớp 4B có 44 học sinh. Có 23 em học cờ vua, 23 em học hát, trong đó 7 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
+d) Lớp 4A có 26 học sinh. Có 17 em học bóng rổ, 11 em học cờ vua, trong đó 5 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
+e) Lớp 4A có 43 học sinh. Có 24 em học vẽ, 26 em học hát, trong đó 12 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
+f) Lớp 5B có 38 học sinh. Có 18 em học hát, 28 em học vẽ, trong đó 9 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
+
+### Bài 5. (4 điểm) Tỉ số phần trăm trong tình huống thực tế
+
+Ghi rõ đại lượng nào ứng với 100%.
+
+a) Lớp 4A có 20 học sinh, trong đó có 5 học sinh giỏi. Hỏi số học sinh giỏi chiếm bao nhiêu phần trăm số học sinh cả lớp?
+b) Lớp 5A có 20 học sinh, trong đó có 5 học sinh giỏi. Hỏi số học sinh giỏi chiếm bao nhiêu phần trăm số học sinh cả lớp?
+c) Lớp 5B có 50 học sinh, số học sinh giỏi chiếm 80%. Hỏi lớp đó có bao nhiêu học sinh giỏi?
+d) Lớp 3A có 40 học sinh, số học sinh giỏi chiếm 25%. Hỏi lớp đó có bao nhiêu học sinh giỏi?
+e) Lớp 4A có 40 học sinh, trong đó có 8 học sinh giỏi. Hỏi số học sinh giỏi chiếm bao nhiêu phần trăm số học sinh cả lớp?
 
 ---
 
 ## PHẦN III — ÔN THEO MA TRẬN ĐỀ · Mức M3 — Vận dụng · 20 phút · 25 điểm
 
-### Bài 1. (5 điểm) Tính thời điểm đến, thời gian đi
+### Bài 1. (5 điểm) Tìm hai số khi biết tổng và tỉ số
 
-Ghi kết quả theo giờ và phút.
+Vẽ sơ đồ đoạn thẳng rồi giải.
 
-a) Một chuyến tàu khởi hành lúc 15 giờ 10 phút và đi hết 4 giờ 19 phút. Tàu đến nơi lúc mấy giờ?
-b) Một chuyến tàu khởi hành lúc 6 giờ 20 phút và đi hết 5 giờ 2 phút. Tàu đến nơi lúc mấy giờ?
-c) Một chuyến tàu khởi hành lúc 6 giờ 45 phút và đi hết 48 phút. Tàu đến nơi lúc mấy giờ?
-d) Một chuyến tàu khởi hành lúc 11 giờ 10 phút và đi hết 6 giờ 3 phút. Tàu đến nơi lúc mấy giờ?
+a) Tổ Hai và tổ Một trồng được tất cả 66 cây. Số cây của tổ Hai bằng 1 phần 2 số cây của tổ Một. Mỗi tổ trồng được bao nhiêu cây?
+b) Đội Một và tổ Hai trồng được tất cả 714 cây. Số cây của đội Một bằng 1 phần 5 số cây của tổ Hai. Mỗi tổ trồng được bao nhiêu cây?
+c) Đội Hai và nhóm Hoa Phượng trồng được tất cả 100 cây. Số cây của đội Hai bằng 1 phần 3 số cây của nhóm Hoa Phượng. Mỗi tổ trồng được bao nhiêu cây?
+d) Đội Hai và nhóm Sao Mai trồng được tất cả 1 090 cây. Số cây của đội Hai bằng 2 phần 3 số cây của nhóm Sao Mai. Mỗi tổ trồng được bao nhiêu cây?
+e) Đội Hai và nhóm Sao Mai trồng được tất cả 658 cây. Số cây của đội Hai bằng 1 phần 6 số cây của nhóm Sao Mai. Mỗi tổ trồng được bao nhiêu cây?
 
-### Bài 2. (5 điểm) Tổng của các số tự nhiên liên tiếp
+### Bài 2. (5 điểm) Chia theo tỉ lệ ba phần và bài toán trộn
 
-Với mỗi ý, tìm số theo yêu cầu.
+Vẽ sơ đồ ba đoạn thẳng cho bài chia tỉ lệ.
 
-a) Tổng của 7 số tự nhiên liên tiếp bằng 1 540. Tìm số bé nhất trong 7 số đó.
-b) Tổng của 9 số tự nhiên liên tiếp bằng 3 303. Tìm số bé nhất trong 9 số đó.
-c) Tổng của 7 số tự nhiên liên tiếp bằng 2 387. Tìm số bé nhất trong 7 số đó.
-d) Tổng của 9 số tự nhiên liên tiếp bằng 990. Tìm số bé nhất trong 9 số đó.
+a) Ba tổ trồng được 280 cây. Số cây tổ Một, tổ Hai, tổ Ba tỉ lệ với 1, 5, 1. Mỗi tổ trồng bao nhiêu cây?
+b) Trộn 7 kg gạo giá 15 000 đồng một ki-lô-gam với 4 kg gạo giá 50 000 đồng một ki-lô-gam. Hỏi tổng số tiền là bao nhiêu?
+c) Ba tổ trồng được 184 cây. Số cây tổ Một, tổ Hai, tổ Ba tỉ lệ với 4, 1, 3. Mỗi tổ trồng bao nhiêu cây?
+d) Trộn 7 kg gạo giá 12 000 đồng một ki-lô-gam với 7 kg gạo giá 30 000 đồng một ki-lô-gam. Hỏi tổng số tiền là bao nhiêu?
+e) Trộn 5 kg gạo giá 10 000 đồng một ki-lô-gam với 10 kg gạo giá 25 000 đồng một ki-lô-gam. Hỏi tổng số tiền là bao nhiêu?
 
-### Bài 3. (5 điểm) Tính nhanh với phân số
+### Bài 3. (5 điểm) Nguyên lí Đi-rích-lê (nguyên lí ngăn kéo)
 
-Tính bằng cách thuận tiện nhất.
+Xét trường hợp xấu nhất.
 
-a) 3 phần 11 + 7 phần 11 + 1 phần 11
-b) 3 phần 11 × 11 phần 3
-c) 5 phần 9 + 4 phần 9
-d) 3 phần 14 + 11 phần 14
+a) Trong một hộp có bi thuộc 3 màu (đỏ, xanh, vàng), mỗi màu có rất nhiều viên. Hỏi phải lấy ra ít nhất bao nhiêu viên (không nhìn) để chắc chắn có 5 viên cùng màu?
+b) Trong một hộp có bi thuộc 5 màu (đỏ, xanh, vàng, trắng, tím), mỗi màu có rất nhiều viên. Hỏi phải lấy ra ít nhất bao nhiêu viên (không nhìn) để chắc chắn có 2 viên cùng màu?
+c) Trong một hộp có bi thuộc 6 màu (đỏ, xanh, vàng, trắng, tím, nâu), mỗi màu có rất nhiều viên. Hỏi phải lấy ra ít nhất bao nhiêu viên (không nhìn) để chắc chắn có 3 viên cùng màu?
+d) Trong một hộp có bi thuộc 3 màu (đỏ, xanh, vàng), mỗi màu có rất nhiều viên. Hỏi phải lấy ra ít nhất bao nhiêu viên (không nhìn) để chắc chắn có 4 viên cùng màu?
 
-### Bài 4. (5 điểm) Tính nhanh tổng dãy số cách đều
+### Bài 4. (5 điểm) Bài toán thực tế về khối lượng
 
-Tính tổng mỗi dãy.
+Chú ý đơn vị mà đề hỏi.
 
-a) 2 + 7 + 12 + … + 97
-b) 1 + 2 + 3 + … + 50
-c) 2 + 4 + 6 + … + 50
-d) 2 + 5 + 8 + … + 29
-e) 1 + 2 + 3 + … + 100
-f) 5 + 10 + 15 + … + 50
+a) Một xe chở 9 bao xi măng, mỗi bao 40 kg. Hỏi xe chở bao nhiêu tạ xi măng?
+b) Một xe chở 36 bao muối, mỗi bao 50 kg. Hỏi xe chở bao nhiêu tạ muối?
+c) Một xe chở 38 bao thóc, mỗi bao 40 kg. Hỏi xe chở bao nhiêu tạ thóc?
+d) Một xe chở 30 bao thóc, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ thóc?
 
-### Bài 5. (5 điểm) Bài toán về tuổi
+### Bài 5. (5 điểm) Đếm tam giác và đoạn thẳng
 
-Chú ý điều gì thay đổi và điều gì không đổi theo thời gian.
+Đếm có hệ thống, nêu cách đếm.
 
-a) Tuổi bố gấp 2 lần tuổi con. Tổng số tuổi của hai bố con là 21 tuổi. Tính tuổi mỗi người.
-b) Hiện nay bố 40 tuổi, con 10 tuổi. Cách đây 8 năm, bố hơn con bao nhiêu tuổi?
-c) Tuổi bố gấp 2 lần tuổi con. Tổng số tuổi của hai bố con là 24 tuổi. Tính tuổi mỗi người.
-d) Tuổi bố gấp 4 lần tuổi con. Tổng số tuổi của hai bố con là 55 tuổi. Tính tuổi mỗi người.
+a) Từ một đỉnh của tam giác lớn kẻ 5 đoạn thẳng tới cạnh đối diện. Có tất cả bao nhiêu tam giác trong hình?
+b) Trong đó có bao nhiêu tam giác nhỏ nhất (không bị chia tiếp)?
+c) Trên một đường thẳng lấy 4 điểm phân biệt. Có bao nhiêu đoạn thẳng được tạo thành?
+d) Nếu lấy thêm một điểm nữa trên đường thẳng đó thì có thêm bao nhiêu đoạn thẳng?
+e) Với 5 điểm thì có tất cả bao nhiêu đoạn thẳng?
 
 ---
 
 ## PHẦN IV — BÀI PHÂN HOÁ · Mức M4 — Vận dụng cao · 20 phút · 25 điểm
 
-### Bài 1. (5 điểm) Tính nhanh với số thập phân
+### Bài 1. (5 điểm) Phần trăm nhiều bước — mốc 100% thay đổi
 
-Tính bằng cách thuận tiện nhất.
+Trước mỗi ý, viết rõ: đại lượng nào đang ứng với 100%.
 
-a) 5,9 × 4 × 25
-b) 6,5 × 4 × 25
-c) 3,7 × 4 × 25
-d) 2,6 + 49 + 7,4
-e) 1,4 + 23 + 8,6
+a) Lớp có 100 học sinh, trong đó nam chiếm 25%. Lớp có bao nhiêu học sinh nam?
+b) Lớp có bao nhiêu học sinh nữ?
+c) Số học sinh nữ chiếm bao nhiêu phần trăm cả lớp?
+d) Trong số học sinh nam, có 25% đạt loại giỏi. Có bao nhiêu bạn nam giỏi?
+e) Số bạn nam giỏi chiếm bao nhiêu phần trăm cả lớp?
+f) Vì sao con số vừa tìm khác với 25%?
 
-### Bài 2. (5 điểm) Tiền điện tính theo bậc thang
+### Bài 2. (5 điểm) Biểu thức nhiều phép tính với phân số
+
+Tính giá trị biểu thức, rút gọn kết quả.
+
+a) 5 phần 3 : 3 phần 4 + 1 phần 2
+b) 8 phần 11 × 1 phần 3 + 8 phần 11 × 2
+c) 1 phần 2 : 2 + 10 phần 11
+d) 1 phần 2 : 1 + 7 phần 5
+
+### Bài 3. (5 điểm) Tiền điện tính theo bậc thang
 
 Bảng giá điện sinh hoạt (rút gọn bốn bậc):
 
@@ -245,42 +263,29 @@ Bảng giá điện sinh hoạt (rút gọn bốn bậc):
 
 Dùng chung bảng này cho mọi ý.
 
-a) Tháng vừa rồi nhà bạn Yến dùng hết 80 kW·h điện. Dựa vào bảng giá bậc thang ở đầu bài, tính số tiền điện nhà bạn ấy phải trả (chưa tính thuế).
-b) Tháng vừa rồi nhà bạn Hà dùng hết 100 kW·h điện. Dựa vào bảng giá bậc thang ở đầu bài, tính số tiền điện nhà bạn ấy phải trả (chưa tính thuế).
-c) Tháng vừa rồi nhà bạn Bình dùng hết 160 kW·h điện. Dựa vào bảng giá bậc thang ở đầu bài, tính số tiền điện nhà bạn ấy phải trả (chưa tính thuế).
-d) Tháng vừa rồi nhà bạn Vy dùng hết 290 kW·h điện. Dựa vào bảng giá bậc thang ở đầu bài, tính số tiền điện nhà bạn ấy phải trả (chưa tính thuế).
+a) Tháng vừa rồi nhà bạn Hùng dùng hết 80 kW·h điện. Dựa vào bảng giá bậc thang ở đầu bài, tính số tiền điện nhà bạn ấy phải trả (chưa tính thuế).
+b) Tháng vừa rồi nhà bạn Lan dùng hết 200 kW·h điện. Dựa vào bảng giá bậc thang ở đầu bài, tính số tiền điện nhà bạn ấy phải trả (chưa tính thuế).
+c) Tháng vừa rồi nhà bạn Trang dùng hết 250 kW·h điện. Dựa vào bảng giá bậc thang ở đầu bài, tính số tiền điện nhà bạn ấy phải trả (chưa tính thuế).
+d) Tháng vừa rồi nhà bạn Tuấn dùng hết 230 kW·h điện. Dựa vào bảng giá bậc thang ở đầu bài, tính số tiền điện nhà bạn ấy phải trả (chưa tính thuế).
+e) Tháng vừa rồi nhà bạn Ngọc dùng hết 220 kW·h điện. Dựa vào bảng giá bậc thang ở đầu bài, tính số tiền điện nhà bạn ấy phải trả (chưa tính thuế).
 
-### Bài 3. (5 điểm) Phần trăm nhiều bước — mốc 100% thay đổi
+### Bài 4. (5 điểm) Giá sau khuyến mãi
 
-Trước mỗi ý, viết rõ: đại lượng nào đang ứng với 100%.
+Ghi rõ mỗi lần giảm được tính trên giá nào.
 
-a) Lớp có 100 học sinh, trong đó nam chiếm 50%. Lớp có bao nhiêu học sinh nam?
-b) Lớp có bao nhiêu học sinh nữ?
-c) Số học sinh nữ chiếm bao nhiêu phần trăm cả lớp?
-d) Trong số học sinh nam, có 25% đạt loại giỏi. Có bao nhiêu bạn nam giỏi?
-e) Số bạn nam giỏi chiếm bao nhiêu phần trăm cả lớp?
-f) Vì sao con số vừa tìm khác với 25%?
+a) Một chiếc cặp giá niêm yết 450 000 đồng, cửa hàng giảm 20%. Hỏi giá sau khi giảm là bao nhiêu?
+b) Một chiếc balo giá niêm yết 540 000 đồng. Cửa hàng giảm 20%, sau đó giảm tiếp 20% trên giá đã giảm. Hỏi giá cuối cùng là bao nhiêu?
+c) Một chiếc balo giá niêm yết 540 000 đồng. Cửa hàng giảm 25%, sau đó giảm tiếp 25% trên giá đã giảm. Hỏi giá cuối cùng là bao nhiêu?
+d) Một chiếc áo đồng phục giá niêm yết 250 000 đồng, cửa hàng giảm 25%. Hỏi giá sau khi giảm là bao nhiêu?
 
-### Bài 4. (5 điểm) Rút gọn, so sánh và sắp thứ tự phân số
+### Bài 5. (5 điểm) Tính nhanh với số thập phân
 
-Rút gọn trước rồi mới so sánh.
+Tính bằng cách thuận tiện nhất.
 
-a) Rút gọn các phân số sau về dạng tối giản: 5 phần 12 · 1 phần 3 · 1 phần 4 · 3 phần 4 · 23 phần 24
-b) Sắp xếp các phân số ấy từ bé đến lớn.
-c) Phân số nào lớn nhất?
-d) Phân số nào bé nhất?
-e) Phân số lớn nhất hơn phân số bé nhất bao nhiêu?
-f) Có phân số nào lớn hơn 1 không?
-
-### Bài 5. (5 điểm) Tăng giá, giảm giá, lãi và lỗ
-
-Ghi rõ đại lượng nào ứng với 100%.
-
-a) Một món hàng giá 250 000 đồng, được giảm giá 20%. Giá sau khi giảm là bao nhiêu?
-b) Mua một món hàng giá 500 000 đồng rồi bán lại với giá 550 000 đồng. Hỏi người bán lãi bao nhiêu phần trăm so với giá mua?
-c) Một món hàng giá 1 000 000 đồng, sau đó tăng giá 25%. Giá mới là bao nhiêu?
-d) Một món hàng giá 200 000 đồng, sau đó tăng giá 10%. Giá mới là bao nhiêu?
-e) Mua một món hàng giá 400 000 đồng rồi bán lại với giá 420 000 đồng. Hỏi người bán lãi bao nhiêu phần trăm so với giá mua?
+a) 5,3 + 39 + 4,7
+b) 3 × 4 × 25
+c) 4,9 × 7 + 4,9 × 3
+d) 3,9 + 6 + 6,1
 
 ---
 
@@ -288,7 +293,16 @@ e) Mua một món hàng giá 400 000 đồng rồi bán lại với giá 420 000
 
 ### Bài 1. (2 điểm) Phản biện đề số 1
 
-**Đề:** Luôn tách rõ hai đại lượng: lượng chất tan và khối lượng dung dịch. Có 250 g nước muối chứa 20% muối. Trong đó có bao nhiêu gam muối?
+**Đề:** Bảng giá điện sinh hoạt (rút gọn bốn bậc):
+
+| Bậc | Lượng điện | Đơn giá (đồng/kW·h) |
+|:--:|---|---:|
+| 1 | tới 50 kW·h đầu | 1 800 |
+| 2 | từ 51 đến 100 | 1 900 |
+| 3 | từ 101 đến 200 | 2 200 |
+| 4 | từ 201 đến 300 | 2 800 |
+
+Dùng chung bảng này cho mọi ý. Tháng vừa rồi nhà bạn Tuấn dùng hết 230 kW·h điện. Dựa vào bảng giá bậc thang ở đầu bài, tính số tiền điện nhà bạn ấy phải trả (chưa tính thuế).
 
 Hai bạn thi đấu: một bạn trình bày lời giải, bạn kia phản biện bằng bảng phân tích sáu cột.
 
@@ -301,7 +315,7 @@ f) Cột 6 — Kết quả?
 
 ### Bài 2. (2 điểm) Phản biện đề số 2
 
-**Đề:** Đặt tính rồi tính. 88,69 − 69,7
+**Đề:** Vẽ hai vòng tròn và điền số vào ba phần trước khi tính. Lớp 4B có 31 học sinh. Có 25 em học bóng rổ, 16 em học bơi, trong đó 11 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
 
 Hai bạn thi đấu: một bạn trình bày lời giải, bạn kia phản biện bằng bảng phân tích sáu cột.
 
@@ -314,7 +328,7 @@ f) Cột 6 — Kết quả?
 
 ### Bài 3. (2 điểm) Phản biện đề số 3
 
-**Đề:** Rút gọn đến phân số tối giản. Rút gọn phân số 4 phần 20.
+**Đề:** Đặt tính rồi tính. 24,84 − 3,4
 
 Hai bạn thi đấu: một bạn trình bày lời giải, bạn kia phản biện bằng bảng phân tích sáu cột.
 
@@ -327,7 +341,7 @@ f) Cột 6 — Kết quả?
 
 ### Bài 4. (2 điểm) Phản biện đề số 4
 
-**Đề:** Tính giá trị biểu thức, rút gọn kết quả. 3 phần 4 : 5 phần 11 + 4 phần 11
+**Đề:** Vẽ ba vòng tròn và điền từ **phần giữa** ra ngoài. Lớp có 48 học sinh. Có 25 em học vẽ, 29 em học cờ vua, 27 em học bơi. Có 12 em học cả vẽ và cờ vua, 12 em học cả cờ vua và bơi, 14 em học cả vẽ và bơi, và 5 em học cả ba môn. Hỏi có bao nhiêu em không học môn nào?
 
 Hai bạn thi đấu: một bạn trình bày lời giải, bạn kia phản biện bằng bảng phân tích sáu cột.
 
@@ -340,7 +354,7 @@ f) Cột 6 — Kết quả?
 
 ### Bài 5. (2 điểm) Phản biện đề số 5
 
-**Đề:** Ghi rõ mỗi lần giảm được tính trên giá nào. Một chiếc balo giá niêm yết 540 000 đồng. Cửa hàng giảm 10%, sau đó giảm tiếp 10% trên giá đã giảm. Hỏi giá cuối cùng là bao nhiêu?
+**Đề:** Rút gọn đến phân số tối giản. Rút gọn phân số 12 phần 15.
 
 Hai bạn thi đấu: một bạn trình bày lời giải, bạn kia phản biện bằng bảng phân tích sáu cột.
 
@@ -358,163 +372,163 @@ f) Cột 6 — Kết quả?
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài I.1
-**Đáp số:** a) 6 mặt, 8 đỉnh, 12 cạnh · b) có ba kích thước bằng nhau, sáu mặt đều là hình vuông · c) 2 mặt đáy, đều là hình tròn bằng nhau · d) không có mặt đáy · e) 72 cm³ · f) 56 cm · g) 24 cm²
-**Hướng giải:** Nhớ bộ ba số của hình hộp chữ nhật: 6 mặt, 8 đỉnh, 12 cạnh. 12 cạnh chia thành ba nhóm, mỗi nhóm 4 cạnh bằng nhau, nên tổng độ dài các cạnh bằng 4 lần tổng ba kích thước.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: 12 cạnh = **4 nhóm ba kích thước**, nên nhân 4 chứ không nhân 12.
-**Lỗi thường gặp:** Nhân tổng ba kích thước với 12. Phòng: Đếm cạnh theo nhóm: 4 cạnh dài, 4 cạnh rộng, 4 cạnh cao.
-
-### Bài I.2
-**Đáp số:** a) 170 000 đồng · b) 5% · c) 600 000 đồng · d) 20% · e) 252 000 đồng
+**Đáp số:** a) 25% · b) 84 000 đồng · c) 285 000 đồng · d) 10% · e) 48 000 đồng
 **Hướng giải:** Giá gốc luôn ứng với 100%. Giảm p% thì giá mới ứng với (100 − p)%; tăng p% thì ứng với (100 + p)%. Lãi tính theo **giá mua**.
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Phần trăm lãi tính theo **giá mua**, không theo giá bán.
 **Lỗi thường gặp:** Chia tiền lãi cho giá bán nên ra tỉ lệ nhỏ hơn thực tế. Phòng: Viết dòng đầu tiên: “Giá mua = 100%”.
 
+### Bài I.2
+**Đáp số:** a) 100 · b) 15 · c) 80% · d) 80
+**Hướng giải:** Dạng 1 — tìm tỉ số phần trăm của a và b: lấy a chia b rồi nhân 100 và viết kí hiệu %. Dạng 2 — tìm p% của b: lấy b chia 100 rồi nhân p. Dạng 3 — biết p% của một số là a, tìm số đó: lấy a chia p rồi nhân 100.
+**Nhãn tư duy:** TD2, TD3. Điểm chốt: Nhận đúng **dạng nào trong ba dạng** là xong một nửa bài.
+**Lỗi thường gặp:** Nhầm dạng 2 với dạng 3 nên nhân thay vì chia. Phòng: Gạch chân: cái gì là “toàn bộ” (ứng với 100%), cái gì là “một phần”.
+
 ### Bài I.3
-**Đáp số:** a) 2,92 · b) 23,74 · c) 693,63 · d) 130,74 · e) 251,52 · f) 50,64 · g) 114,18 · h) 54,84
-**Hướng giải:** Cộng, trừ số thập phân: viết các dấu phẩy **thẳng cột** rồi tính như số tự nhiên, đặt dấu phẩy ở kết quả thẳng cột với các dấu phẩy trên. Nhân số thập phân với số tự nhiên: nhân như số tự nhiên rồi đếm số chữ số thập phân của thừa số để đặt dấu phẩy.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng trừ thì **thẳng dấu phẩy**; nhân thì **đếm chữ số thập phân**.
-**Lỗi thường gặp:** Nhân xong đặt dấu phẩy thẳng cột như phép cộng. Phòng: Đếm số chữ số sau dấu phẩy ngay khi viết đề bài.
+**Đáp số:** a) không có chữ số nào · b) 3, 6, 9 · c) 3 · d) 1, 2, 3, 4, 5, 6, 7, 8, 9 · e) 0, 9 · f) không có chữ số nào
+**Hướng giải:** Xét dấu hiệu chia hết ứng với số chia, rồi thử lần lượt 10 chữ số từ 0 đến 9. Nếu dấu * đứng ở hàng cao nhất thì loại chữ số 0.
+**Nhãn tư duy:** TD2, TD5. Điểm chốt: Phải tìm **tất cả** chữ số thoả mãn, không dừng ở chữ số đầu tiên tìm được.
+**Lỗi thường gặp:** Chỉ nêu một đáp số, hoặc nhận cả chữ số 0 ở hàng cao nhất. Phòng: Liệt kê đủ 10 chữ số ra nháp rồi gạch dần chữ số không đạt.
 
 ### Bài I.4
-**Đáp số:** a) 19 phần 14 · b) 5 phần 6 · c) 32 phần 15 · d) 100 phần 49 · e) 1 phần 12 · f) 9 phần 11 · g) 56 phần 45
+**Đáp số:** a) 11 phần 9 · b) 164 phần 63 · c) 7 phần 10 · d) 43 phần 120 · e) 76 phần 45 · f) 33 phần 2
 **Hướng giải:** Cộng, trừ phân số phải **quy đồng mẫu số** trước. Nhân phân số thì nhân tử với tử, mẫu với mẫu. Chia phân số thì nhân với phân số đảo ngược của số chia. Cuối cùng luôn rút gọn.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng trừ **cần** quy đồng, nhân chia **không cần** quy đồng.
 **Lỗi thường gặp:** Quy đồng cả khi nhân, hoặc cộng thẳng tử với tử và mẫu với mẫu. Phòng: Trước khi tính, khoanh dấu phép tính và tự nhắc “có phải quy đồng không”.
 
 ### Bài I.5
-**Đáp số:** a) 20% · b) 50 · c) 100 · d) 50% · e) 15 · f) 400 · g) 15%
-**Hướng giải:** Dạng 1 — tìm tỉ số phần trăm của a và b: lấy a chia b rồi nhân 100 và viết kí hiệu %. Dạng 2 — tìm p% của b: lấy b chia 100 rồi nhân p. Dạng 3 — biết p% của một số là a, tìm số đó: lấy a chia p rồi nhân 100.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Nhận đúng **dạng nào trong ba dạng** là xong một nửa bài.
-**Lỗi thường gặp:** Nhầm dạng 2 với dạng 3 nên nhân thay vì chia. Phòng: Gạch chân: cái gì là “toàn bộ” (ứng với 100%), cái gì là “một phần”.
+**Đáp số:** a) 137,03 · b) 6,18 · c) 76,58 · d) 76,32 · e) 273,16 · f) 12,68 · g) 3,55 · h) 60,52
+**Hướng giải:** Cộng, trừ số thập phân: viết các dấu phẩy **thẳng cột** rồi tính như số tự nhiên, đặt dấu phẩy ở kết quả thẳng cột với các dấu phẩy trên. Nhân số thập phân với số tự nhiên: nhân như số tự nhiên rồi đếm số chữ số thập phân của thừa số để đặt dấu phẩy.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng trừ thì **thẳng dấu phẩy**; nhân thì **đếm chữ số thập phân**.
+**Lỗi thường gặp:** Nhân xong đặt dấu phẩy thẳng cột như phép cộng. Phòng: Đếm số chữ số sau dấu phẩy ngay khi viết đề bài.
 
 ### Bài II.1
-**Đáp số:** a) 56 · b) Khoa học (23 bạn) · c) Tiếng Việt (7 bạn) · d) 16 · e) 14 · f) 25%
-**Hướng giải:** Đọc bảng theo cột, ghi lại từng số liệu. Tổng là cộng tất cả; nhiều nhất, ít nhất là so sánh; trung bình là tổng chia số môn; tỉ số phần trăm là phần chia tổng rồi nhân 100.
-**Nhãn tư duy:** TD1, TD2. Điểm chốt: Mọi câu hỏi đều quy về **tổng, so sánh, trung bình cộng, tỉ số phần trăm**.
-**Lỗi thường gặp:** Đọc nhầm cột, hoặc quên một môn khi cộng tổng. Phòng: Đánh dấu từng số đã cộng để không sót và không cộng lặp.
-
-### Bài II.2
-**Đáp số:** a) 64 cây · b) 78 cây · c) 76 cây · d) 56 cây · e) 15 cây
+**Đáp số:** a) 15 cây · b) 17 cây · c) 22 cây · d) 13 cây · e) 54 cây
 **Hướng giải:** Muốn tìm phân số của một số, ta lấy số đó nhân với phân số. Cách hiểu: chia số đó thành số phần bằng mẫu số, rồi lấy số phần bằng tử số.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Phân số tính trên **số nào** — đọc kĩ cụm “… của …”.
 **Lỗi thường gặp:** Nhân phân số với đại lượng khác, không phải đại lượng đề chỉ định. Phòng: Gạch chân cụm “bằng … số cây của …” để xác định số bị nhân.
 
+### Bài II.2
+**Đáp số:** a) Tháng 8 — 22 ngày · b) Tháng 5 — 8 ngày · c) 56 ngày · d) 56 : 5 = 11,2 ngày · e) 14 ngày · f) 1 tháng
+**Hướng giải:** Đọc chú thích của biểu đồ trước để biết một ô ứng với mấy đơn vị, rồi mới đổi từng cột ra số. Có số rồi thì mọi câu hỏi trở thành bài cộng trừ và trung bình cộng bình thường.
+**Nhãn tư duy:** TD1, TD2, TD4. Điểm chốt: Một ô của biểu đồ hiếm khi bằng 1 đơn vị — đọc chú thích trước.
+**Lỗi thường gặp:** Đếm số ô rồi trả lời luôn, quên nhân với giá trị mỗi ô. Phòng: Khoanh tròn dòng chú thích trước khi nhìn vào cột nào.
+
 ### Bài II.3
-**Đáp số:** a) 45 · b) 19 · c) 12 · d) 3 · e) 59 · f) 14, vì nhóm thích cả hai môn bị đếm hai lần
-**Hướng giải:** Vẽ sơ đồ Ven hai vòng tròn. **Điền miền giữa trước**, rồi trừ ra hai miền riêng. Cộng thẳng hai nhóm sẽ đếm nhóm chung **hai lần**, nên phải trừ đi một lần.
-**Nhãn tư duy:** TD2, TD6. Điểm chốt: Điền **miền giữa trước** — mọi miền khác suy ra từ đó.
-**Lỗi thường gặp:** Cộng thẳng hai nhóm rồi coi đó là số bạn thích ít nhất một môn. Phòng: Vẽ sơ đồ Ven, ghi số vào từng miền rồi cộng lại kiểm tra với sĩ số.
+**Đáp số:** a) 130 · b) Toán (30 bạn) · c) Khoa học (18 bạn) · d) 12 · e) 26 · f) 23%
+**Hướng giải:** Đọc bảng theo cột, ghi lại từng số liệu. Tổng là cộng tất cả; nhiều nhất, ít nhất là so sánh; trung bình là tổng chia số môn; tỉ số phần trăm là phần chia tổng rồi nhân 100.
+**Nhãn tư duy:** TD1, TD2. Điểm chốt: Mọi câu hỏi đều quy về **tổng, so sánh, trung bình cộng, tỉ số phần trăm**.
+**Lỗi thường gặp:** Đọc nhầm cột, hoặc quên một môn khi cộng tổng. Phòng: Đánh dấu từng số đã cộng để không sót và không cộng lặp.
 
 ### Bài II.4
-**Đáp số:** a) 50% · b) 50% · c) 50% · d) 10 học sinh · e) 75%
-**Hướng giải:** Đại lượng đứng sau chữ “của” hoặc “so với” là đại lượng ứng với 100%. Tìm tỉ số phần trăm thì lấy phần chia cho toàn bộ rồi nhân 100. Tìm giá trị của phần thì lấy toàn bộ chia 100 rồi nhân số phần trăm.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Xác định **đại lượng ứng với 100%** trước mọi phép tính.
-**Lỗi thường gặp:** Lấy số học sinh giỏi làm mẫu số khi tính tỉ số phần trăm. Phòng: Viết rõ một dòng: “Cả lớp = 100%” trước khi tính.
-
-### Bài II.5
-**Đáp số:** a) 0 em · b) 4 em · c) 2 em · d) 6 em
+**Đáp số:** a) 2 em · b) 3 em · c) 5 em · d) 3 em · e) 5 em · f) 1 em
 **Hướng giải:** Điền phần chung vào trước, rồi trừ ra hai phần riêng. Cộng ba phần ấy được số người tham gia ít nhất một hoạt động; lấy tổng trừ đi là ra số người ngoài cả hai vòng.
 **Nhãn tư duy:** TD2, TD4. Điểm chốt: Con số đề cho cho mỗi môn **đã bao gồm** những em học cả hai. Cộng thẳng hai con số ấy là đếm phần chung hai lần.
 **Lỗi thường gặp:** Lấy tổng trừ đi tổng hai con số đề cho mà không cộng lại phần chung. Phòng: Vẽ hình trước, điền phần giữa trước, rồi mới điền hai bên.
 
+### Bài II.5
+**Đáp số:** a) 25% · b) 25% · c) 40 học sinh · d) 10 học sinh · e) 20%
+**Hướng giải:** Đại lượng đứng sau chữ “của” hoặc “so với” là đại lượng ứng với 100%. Tìm tỉ số phần trăm thì lấy phần chia cho toàn bộ rồi nhân 100. Tìm giá trị của phần thì lấy toàn bộ chia 100 rồi nhân số phần trăm.
+**Nhãn tư duy:** TD2, TD3. Điểm chốt: Xác định **đại lượng ứng với 100%** trước mọi phép tính.
+**Lỗi thường gặp:** Lấy số học sinh giỏi làm mẫu số khi tính tỉ số phần trăm. Phòng: Viết rõ một dòng: “Cả lớp = 100%” trước khi tính.
+
 ### Bài III.1
-**Đáp số:** a) 19 giờ 29 phút · b) 11 giờ 22 phút · c) 7 giờ 33 phút · d) 17 giờ 13 phút
-**Hướng giải:** Đổi cả giờ khởi hành lẫn thời gian đi về **phút**, cộng lại, rồi đổi kết quả ngược lại thành giờ và phút. Cách này tránh được lỗi nhớ khi phần phút vượt 60.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Đổi hết về phút rồi mới cộng — an toàn hơn cộng trực tiếp.
-**Lỗi thường gặp:** Cộng phần phút thành hơn 60 mà quên đổi thành giờ. Phòng: Kiểm tra phần phút của đáp số phải bé hơn 60.
+**Đáp số:** a) tổ Hai: 22 cây, tổ Một: 44 cây · b) đội Một: 119 cây, tổ Hai: 595 cây · c) đội Hai: 25 cây, nhóm Hoa Phượng: 75 cây · d) đội Hai: 436 cây, nhóm Sao Mai: 654 cây · e) đội Hai: 94 cây, nhóm Sao Mai: 564 cây
+**Hướng giải:** Tỉ số cho biết số phần bằng nhau của mỗi đại lượng. Tổng số phần = số phần thứ nhất + số phần thứ hai. Giá trị một phần = tổng : tổng số phần. Nhân giá trị một phần với số phần của từng đại lượng.
+**Nhãn tư duy:** TD3, TD2. Điểm chốt: Phải tính **tổng số phần** trước khi chia.
+**Lỗi thường gặp:** Chia tổng cho một trong hai số của tỉ số thay vì cho tổng số phần. Phòng: Vẽ sơ đồ, đếm tổng số đoạn nhỏ trên cả hai đoạn thẳng.
 
 ### Bài III.2
-**Đáp số:** a) 217 · b) 363 · c) 338 · d) 106
-**Hướng giải:** Với một số **lẻ** các số tự nhiên liên tiếp, số ở giữa chính là trung bình cộng: số giữa = tổng : số lượng. Số bé nhất bằng số giữa trừ đi một nửa số lượng còn lại.
-**Nhãn tư duy:** TD3, TD4. Điểm chốt: Với số lượng lẻ thì **số giữa = tổng : số lượng** — đó là chìa khoá.
-**Lỗi thường gặp:** Lấy tổng chia cho số lượng rồi nhận luôn kết quả là số bé nhất. Phòng: Vẽ dãy số ra, đánh dấu vị trí số giữa trước khi lùi về số đầu.
+**Đáp số:** a) 40 · 200 · 40 cây · b) 305 000 đồng · c) 92 · 23 · 69 cây · d) 294 000 đồng · e) 300 000 đồng
+**Hướng giải:** Chia một tổng theo tỉ lệ ba số: cộng ba số phần lại, chia tổng cho tổng số phần được giá trị một phần, rồi nhân ra từng đại lượng. Bài trộn thì tính riêng từng loại rồi cộng.
+**Nhãn tư duy:** TD3, TD2. Điểm chốt: Chia cho **tổng số phần**, không chia cho số đại lượng.
+**Lỗi thường gặp:** Chia tổng cho 3 vì thấy có ba tổ. Phòng: Đếm số phần trên sơ đồ trước khi chia.
 
 ### Bài III.3
-**Đáp số:** a) 1 · b) 1 · c) 1 · d) 1
-**Hướng giải:** Quan sát trước khi tính: các phân số cùng mẫu số cộng lại có thể bằng đúng 1; một phân số nhân với phân số đảo ngược của nó bằng 1. Nhận ra được thì không phải quy đồng.
-**Nhãn tư duy:** TD5, TD3. Điểm chốt: Nhìn xem **tổng các tử số** có bằng mẫu số chung không.
-**Lỗi thường gặp:** Quy đồng ngay lập tức mà không quan sát, làm dài dòng. Phòng: Cộng nhẩm các tử số trước rồi so với mẫu số.
+**Đáp số:** a) 13 viên · b) 6 viên · c) 13 viên · d) 10 viên
+**Hướng giải:** Xét trường hợp **xấu nhất**: lấy được nhiều nhất bao nhiêu viên mà vẫn chưa đủ điều kiện? Đó là mỗi màu lấy (k − 1) viên. Lấy thêm đúng một viên nữa thì chắc chắn có k viên cùng màu.
+**Nhãn tư duy:** TD6, TD2. Điểm chốt: Luôn xuất phát từ **trường hợp xấu nhất** rồi cộng thêm 1.
+**Lỗi thường gặp:** Nhân số màu với số viên cần rồi lấy luôn kết quả đó. Phòng: Viết rõ câu “Xấu nhất là mỗi màu lấy được … viên mà vẫn chưa đủ”.
 
 ### Bài III.4
-**Đáp số:** a) 990 · b) 1 275 · c) 650 · d) 155 · e) 5 050 · f) 275
-**Hướng giải:** Đếm số số hạng: (số cuối − số đầu) : khoảng cách + 1. Tổng bằng (số đầu + số cuối) × số số hạng : 2. Cách hiểu: ghép số đầu với số cuối, số thứ hai với số áp chót… mỗi cặp có tổng bằng nhau.
-**Nhãn tư duy:** TD4, TD5. Điểm chốt: Phải đếm **số số hạng** trước; đây là chỗ sai nhiều nhất.
-**Lỗi thường gặp:** Lấy số cuối chia khoảng cách làm số số hạng, quên cộng 1. Phòng: Viết ra ba số đầu và ba số cuối để kiểm tra khoảng cách rồi mới đếm.
+**Đáp số:** a) 3 tạ 60 kg · b) 18 tạ · c) 15 tạ 20 kg · d) 7 tạ 50 kg
+**Hướng giải:** Tính tổng khối lượng theo ki-lô-gam trước, sau đó mới đổi sang đơn vị mà đề hỏi. Đừng đổi đơn vị ngay từ đầu vì dễ nhầm.
+**Nhãn tư duy:** TD2, TD3. Điểm chốt: Câu hỏi đòi đơn vị nào thì bước **cuối cùng** mới đổi sang đơn vị đó.
+**Lỗi thường gặp:** Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. Phòng: Khoanh tròn đơn vị trong câu hỏi trước khi đặt bút.
 
 ### Bài III.5
-**Đáp số:** a) bố 14 tuổi, con 7 tuổi · b) 30 tuổi · c) bố 16 tuổi, con 8 tuổi · d) bố 44 tuổi, con 11 tuổi
-**Hướng giải:** **Hiệu số tuổi của hai người không bao giờ thay đổi.** Còn tổng số tuổi thì mỗi năm tăng thêm đúng bằng số người. Tỉ số tuổi thì thay đổi theo từng năm.
-**Nhãn tư duy:** TD2, TD6. Điểm chốt: Hiệu tuổi là đại lượng **bất biến** — chìa khoá của mọi bài toán tuổi.
-**Lỗi thường gặp:** Cộng thêm số năm vào cả hiệu số tuổi. Phòng: Kẻ bảng ba dòng: trước kia – hiện nay – sau này, ghi rõ tuổi từng người.
+**Đáp số:** a) 21 · b) 6 · c) 6 · d) 4 · e) 10
+**Hướng giải:** Kẻ n đoạn thẳng từ một đỉnh chia cạnh đối diện thành n + 1 phần, tạo ra n + 1 tam giác nhỏ. Mỗi tam giác trong hình ứng với việc chọn hai trong n + 2 điểm trên cạnh đối diện, nên số tam giác = (n + 2) × (n + 1) : 2. Tương tự, k điểm trên một đường thẳng cho k × (k − 1) : 2 đoạn thẳng.
+**Nhãn tư duy:** TD4, TD3. Điểm chốt: Mọi bài đếm ở đây quy về **chọn hai điểm** trong một dãy điểm.
+**Lỗi thường gặp:** Chỉ đếm tam giác nhỏ, quên các tam giác ghép. Phòng: Đánh dấu tên các điểm rồi liệt kê từng cặp một cách có thứ tự.
 
 ### Bài IV.1
-**Đáp số:** a) 590 · b) 650 · c) 370 · d) 59 · e) 33
-**Hướng giải:** BẪY — Vị trí dấu phẩy ở kết quả. Các tính chất giao hoán, kết hợp, nhân với một tổng đúng cả với số thập phân. Ghép cặp cộng lại tròn chục, ghép cặp nhân lại tròn trăm, đặt thừa số chung ra ngoài.
-**Nhãn tư duy:** TD5, TD3. Điểm chốt: Dấu phẩy không làm thay đổi các tính chất — cách làm giống hệt số tự nhiên.
-**Lỗi thường gặp:** Đặt dấu phẩy sai vị trí ở kết quả cuối. Phòng: Ước lượng độ lớn kết quả trước, dùng nó kiểm tra vị trí dấu phẩy.
-**Gợi ý 3 tầng:** (1) Có cặp nào cộng lại tròn chục không? — (2) Có thừa số chung ở hai tích không? — (3) Ước lượng kết quả trước để đặt đúng dấu phẩy.
-
-### Bài IV.2
-**Đáp số:** a) 147 000 đồng · b) 185 000 đồng · c) 317 000 đồng · d) 657 000 đồng
-**Hướng giải:** BẪY — Nhân cả số điện cho đơn giá bậc cuối. Chia số điện đã dùng vào từng bậc theo thứ tự từ bậc một trở lên. Mỗi bậc chỉ chứa tối đa lượng điện của bậc ấy; phần dư mới tràn sang bậc sau. Nhân từng bậc rồi cộng lại.
-**Nhãn tư duy:** TD2, TD5. Điểm chốt: Không được nhân cả số điện cho một đơn giá duy nhất. Đó chính là lỗi mà cách tính bậc thang sinh ra để chống.
-**Lỗi thường gặp:** Lấy tổng số điện nhân với đơn giá của bậc cuối cùng dùng tới. Phòng: Kẻ bảng ba cột — bậc, số điện của bậc, thành tiền — rồi mới cộng.
-**Gợi ý 3 tầng:** (1) Bậc một chứa được nhiều nhất bao nhiêu kW·h? — (2) Phần dư sau bậc một tràn sang bậc mấy? — (3) Nhân từng bậc riêng rồi mới cộng lại.
-
-### Bài IV.3
-**Đáp số:** a) 50 · b) 50 · c) 50% · d) 12 · e) 12% · f) vì 25% tính trên số nam, còn câu này tính trên cả lớp
+**Đáp số:** a) 25 · b) 75 · c) 75% · d) 6 · e) 6% · f) vì 25% tính trên số nam, còn câu này tính trên cả lớp
 **Hướng giải:** BẪY — Mốc 100% khác nhau ở mỗi bước. Mỗi lần gặp một tỉ lệ phần trăm mới, phải hỏi: phần trăm này tính **trên cái gì**. Trong bài này, tỉ lệ nam giỏi tính trên số nam, không phải trên sĩ số cả lớp.
 **Nhãn tư duy:** TD6, TD2. Điểm chốt: Cùng một con số phần trăm nhưng **mốc khác nhau** thì kết quả khác nhau.
 **Lỗi thường gặp:** Lấy tỉ lệ nam giỏi nhân thẳng với sĩ số cả lớp. Phòng: Viết trước mỗi phép tính: “100% ở đây là …”.
 **Gợi ý 3 tầng:** (1) Đại lượng nào ứng với 100% ở ý này? — (2) Tỉ lệ này tính trên cả lớp hay chỉ trên số nam? — (3) Muốn quy về cả lớp thì chia cho sĩ số rồi nhân 100.
 
+### Bài IV.2
+**Đáp số:** a) 49 phần 18 · b) 56 phần 33 · c) 51 phần 44 · d) 19 phần 10
+**Hướng giải:** Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
+**Nhãn tư duy:** TD3, TD5. Điểm chốt: Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều.
+**Lỗi thường gặp:** Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. Phòng: Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút.
+**Gợi ý 3 tầng:** (1) Biểu thức có dấu ngoặc không? — (2) Có thừa số chung ở hai tích không? — (3) Làm nhân chia trước, cộng trừ sau.
+
+### Bài IV.3
+**Đáp số:** a) 147 000 đồng · b) 405 000 đồng · c) 545 000 đồng · d) 489 000 đồng · e) 461 000 đồng
+**Hướng giải:** BẪY — Nhân cả số điện cho đơn giá bậc cuối. Chia số điện đã dùng vào từng bậc theo thứ tự từ bậc một trở lên. Mỗi bậc chỉ chứa tối đa lượng điện của bậc ấy; phần dư mới tràn sang bậc sau. Nhân từng bậc rồi cộng lại.
+**Nhãn tư duy:** TD2, TD5. Điểm chốt: Không được nhân cả số điện cho một đơn giá duy nhất. Đó chính là lỗi mà cách tính bậc thang sinh ra để chống.
+**Lỗi thường gặp:** Lấy tổng số điện nhân với đơn giá của bậc cuối cùng dùng tới. Phòng: Kẻ bảng ba cột — bậc, số điện của bậc, thành tiền — rồi mới cộng.
+**Gợi ý 3 tầng:** (1) Bậc một chứa được nhiều nhất bao nhiêu kW·h? — (2) Phần dư sau bậc một tràn sang bậc mấy? — (3) Nhân từng bậc riêng rồi mới cộng lại.
+
 ### Bài IV.4
-**Đáp số:** a) 5 phần 12 · 1 phần 3 · 1 phần 4 · 3 phần 4 · 23 phần 24 · b) 1 phần 4 < 1 phần 3 < 5 phần 12 < 3 phần 4 < 23 phần 24 · c) 23 phần 24 · d) 1 phần 4 · e) 17 phần 24 · f) không, tất cả đều bé hơn 1
-**Hướng giải:** Cùng mẫu số thì so tử số. Khác mẫu thì quy đồng hoặc so với 1 và với một nửa. Rút gọn về tối giản trước khi trình bày kết quả.
-**Nhãn tư duy:** TD1, TD5. Điểm chốt: Cùng mẫu số thì **chỉ cần so tử số**.
-**Lỗi thường gặp:** Rút gọn xong quên rằng thứ tự vẫn giữ nguyên, đi quy đồng lại từ đầu. Phòng: Ghi cả phân số gốc và phân số tối giản cạnh nhau để đối chiếu.
-**Gợi ý 3 tầng:** (1) Các phân số có cùng mẫu số không? — (2) Nếu cùng mẫu thì so gì? — (3) Rút gọn không làm thay đổi giá trị nên không đổi thứ tự.
+**Đáp số:** a) 360 000 đồng · b) 345 600 đồng · c) 303 750 đồng · d) 187 500 đồng
+**Hướng giải:** BẪY — Cộng hai lần giảm giá thành một. Giảm a% thì còn (100 − a)% của giá đang xét. Giảm hai lần liên tiếp thì lần sau tính trên giá đã giảm, nên phải làm hai bước chứ không cộng hai phần trăm lại.
+**Nhãn tư duy:** TD2, TD5. Điểm chốt: Giảm 20% rồi giảm tiếp 10% **không** bằng giảm 30%.
+**Lỗi thường gặp:** Cộng hai lần giảm giá thành một lần rồi tính một phép. Phòng: Viết ra giá sau lần giảm thứ nhất trước khi làm lần thứ hai.
+**Gợi ý 3 tầng:** (1) Sau lần giảm thứ nhất còn bao nhiêu phần trăm giá niêm yết? — (2) Lần giảm thứ hai tính trên giá nào? — (3) Làm hai bước, đừng cộng gộp hai phần trăm.
 
 ### Bài IV.5
-**Đáp số:** a) 200 000 đồng · b) 10% · c) 1 250 000 đồng · d) 220 000 đồng · e) 5%
-**Hướng giải:** BẪY — Lãi tính theo giá mua. Giá gốc luôn ứng với 100%. Tăng p% thì giá mới ứng với (100 + p)%; giảm p% thì giá mới ứng với (100 − p)%. Tính lãi theo phần trăm thì lấy tiền lãi chia **giá mua** rồi nhân 100.
-**Nhãn tư duy:** TD2, TD6. Điểm chốt: Phần trăm lãi tính theo **giá mua**, không tính theo giá bán.
-**Lỗi thường gặp:** Chia tiền lãi cho giá bán nên ra tỉ lệ nhỏ hơn thực tế. Phòng: Viết rõ “Giá mua = 100%” ở dòng đầu tiên.
-**Gợi ý 3 tầng:** (1) Giá nào ứng với 100%? — (2) Tiền lãi bằng bao nhiêu? — (3) Lấy tiền lãi chia giá mua rồi nhân 100.
+**Đáp số:** a) 49 · b) 300 · c) 49 · d) 16
+**Hướng giải:** BẪY — Vị trí dấu phẩy ở kết quả. Các tính chất giao hoán, kết hợp, nhân với một tổng đúng cả với số thập phân. Ghép cặp cộng lại tròn chục, ghép cặp nhân lại tròn trăm, đặt thừa số chung ra ngoài.
+**Nhãn tư duy:** TD5, TD3. Điểm chốt: Dấu phẩy không làm thay đổi các tính chất — cách làm giống hệt số tự nhiên.
+**Lỗi thường gặp:** Đặt dấu phẩy sai vị trí ở kết quả cuối. Phòng: Ước lượng độ lớn kết quả trước, dùng nó kiểm tra vị trí dấu phẩy.
+**Gợi ý 3 tầng:** (1) Có cặp nào cộng lại tròn chục không? — (2) Có thừa số chung ở hai tích không? — (3) Ước lượng kết quả trước để đặt đúng dấu phẩy.
 
 ### Bài V.1
-**Đáp số:** a) Nồng độ phần trăm của dung dịch · b) Tỉ số phần trăm; phân biệt chất tan và dung dịch · c) “Dung dịch … %”, “đổ thêm nước”, “bỏ thêm muối” · d) Kẻ bảng theo dõi tử số và mẫu số qua từng thao tác · e) Thêm nước thì nồng độ giảm, thêm muối thì nồng độ tăng — dùng để loại đáp số sai ngay. · f) 50 g · 200 g · 350 g · không đổi, vẫn là 50 g…
+**Đáp số:** a) Bài toán tiền điện bậc thang · b) Nhân, cộng số lớn; đọc bảng giá nhiều bậc · c) Đề cho **bảng giá nhiều bậc** và một lượng tiêu thụ · d) Chia lượng tiêu thụ vào từng bậc theo thứ tự rồi cộng thành tiền · e) Nếu lượng dùng vượt hết các bậc thấp thì ba bậc đầu luôn cho cùng một số tiền — tính sẵn một lần rồi dùng lại. · f) 489 000 đồng · 657 000 đồng · 433 000 đồng · 229 000 đồng
 **Hướng giải:** Thi đấu phản biện: bạn trình bày nói lời giải, bạn phản biện phải chỉ ra được ít nhất một cột trong bảng mà lời giải chưa nói tới. Ai chỉ ra được nhiều hơn thì thắng.
-**Nhãn tư duy:** TD6, TD3. Điểm chốt: Đổ thêm nước: **lượng muối không đổi**. Bỏ thêm muối: cả hai cùng đổi.
-**Lỗi thường gặp:** Khi bỏ thêm muối thì chỉ cộng vào tử số mà quên cộng vào mẫu số. Phòng: Kẻ bảng hai dòng: lượng muối và khối lượng dung dịch, cập nhật sau mỗi thao tác.
+**Nhãn tư duy:** TD2, TD5. Điểm chốt: Không được nhân cả số điện cho một đơn giá duy nhất. Đó chính là lỗi mà cách tính bậc thang sinh ra để chống.
+**Lỗi thường gặp:** Lấy tổng số điện nhân với đơn giá của bậc cuối cùng dùng tới. Phòng: Kẻ bảng ba cột — bậc, số điện của bậc, thành tiền — rồi mới cộng.
 **Gợi ý 3 tầng:** (1) Điền cột 1 và cột 3 trước — đó là hai cột dễ nhất. — (2) Cột 4 và cột 5 khác nhau: một cột nói cách làm, một cột nói lối tắt. — (3) Cột 6 chỉ ghi kết quả, không ghi lời giải.
 
 ### Bài V.2
-**Đáp số:** a) Bốn phép tính với số thập phân · b) Kĩ thuật tính với số thập phân · c) Các số có dấu phẩy · d) Chọn quy tắc đặt dấu phẩy theo phép tính · e) Ước lượng bằng cách làm tròn để kiểm tra vị trí dấu phẩy. · f) 18,99 · 177,04 · 79,55 · 29,6…
+**Đáp số:** a) Biểu đồ Ven · b) Phép cộng, phép trừ; đếm không trùng lặp · c) Đề cho số người của từng nhóm **và** số người thuộc cả hai nhóm · d) Vẽ hai vòng tròn, điền phần chung trước rồi mới trừ ra phần riêng · e) Số người ít nhất một nhóm = nhóm A + nhóm B − phần chung. · f) 1 em · 5 em · 6 em · 2 em
+**Hướng giải:** Thi đấu phản biện: bạn trình bày nói lời giải, bạn phản biện phải chỉ ra được ít nhất một cột trong bảng mà lời giải chưa nói tới. Ai chỉ ra được nhiều hơn thì thắng.
+**Nhãn tư duy:** TD2, TD4. Điểm chốt: Con số đề cho cho mỗi môn **đã bao gồm** những em học cả hai. Cộng thẳng hai con số ấy là đếm phần chung hai lần.
+**Lỗi thường gặp:** Lấy tổng trừ đi tổng hai con số đề cho mà không cộng lại phần chung. Phòng: Vẽ hình trước, điền phần giữa trước, rồi mới điền hai bên.
+**Gợi ý 3 tầng:** (1) Điền cột 1 và cột 3 trước — đó là hai cột dễ nhất. — (2) Cột 4 và cột 5 khác nhau: một cột nói cách làm, một cột nói lối tắt. — (3) Cột 6 chỉ ghi kết quả, không ghi lời giải.
+
+### Bài V.3
+**Đáp số:** a) Bốn phép tính với số thập phân · b) Kĩ thuật tính với số thập phân · c) Các số có dấu phẩy · d) Chọn quy tắc đặt dấu phẩy theo phép tính · e) Ước lượng bằng cách làm tròn để kiểm tra vị trí dấu phẩy. · f) 21,44 · 451,2 · 104,93 · 4,89…
 **Hướng giải:** Thi đấu phản biện: bạn trình bày nói lời giải, bạn phản biện phải chỉ ra được ít nhất một cột trong bảng mà lời giải chưa nói tới. Ai chỉ ra được nhiều hơn thì thắng.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng trừ thì **thẳng dấu phẩy**; nhân thì **đếm chữ số thập phân**.
 **Lỗi thường gặp:** Nhân xong đặt dấu phẩy thẳng cột như phép cộng. Phòng: Đếm số chữ số sau dấu phẩy ngay khi viết đề bài.
 **Gợi ý 3 tầng:** (1) Điền cột 1 và cột 3 trước — đó là hai cột dễ nhất. — (2) Cột 4 và cột 5 khác nhau: một cột nói cách làm, một cột nói lối tắt. — (3) Cột 6 chỉ ghi kết quả, không ghi lời giải.
 
-### Bài V.3
-**Đáp số:** a) Rút gọn phân số · b) Tính chất cơ bản của phân số · c) Tử số và mẫu số có ước chung lớn hơn 1 · d) Chia cả tử và mẫu cho ước chung · e) Tìm ngay ước chung lớn nhất để rút gọn một lần là xong. · f) 1 phần 5 · 4 phần 11 · 1 · 3 phần 4…
-**Hướng giải:** Thi đấu phản biện: bạn trình bày nói lời giải, bạn phản biện phải chỉ ra được ít nhất một cột trong bảng mà lời giải chưa nói tới. Ai chỉ ra được nhiều hơn thì thắng.
-**Nhãn tư duy:** TD1. Điểm chốt: Phải chia **cả tử và mẫu** cho cùng một số.
-**Lỗi thường gặp:** Chỉ chia tử số hoặc chỉ chia mẫu số. Phòng: Viết phép chia cho cả hai dòng, kiểm tra lại bằng cách nhân ngược.
-**Gợi ý 3 tầng:** (1) Điền cột 1 và cột 3 trước — đó là hai cột dễ nhất. — (2) Cột 4 và cột 5 khác nhau: một cột nói cách làm, một cột nói lối tắt. — (3) Cột 6 chỉ ghi kết quả, không ghi lời giải.
-
 ### Bài V.4
-**Đáp số:** a) Biểu thức phân số nhiều phép tính · b) Thứ tự thực hiện phép tính, tính chất phân phối · c) Biểu thức gồm nhiều phân số và nhiều phép tính · d) Quan sát rút gọn trước, sau đó theo thứ tự thực hiện · e) Rút gọn chéo tử với mẫu trước khi nhân. · f) 443 phần 220 · 185 phần 84 · 7 phần 13 · 4 phần 11…
+**Đáp số:** a) Biểu đồ Ven · b) Đếm không trùng lặp; nguyên lý bù trừ · c) Đề cho **ba nhóm**, ba phần chung đôi và một phần chung cả ba · d) Cộng ba nhóm, trừ ba phần chung đôi, cộng lại phần chung cả ba · e) Điền hình từ giữa ra ngoài thì chỉ còn phép cộng bảy số, không phải nhớ dấu của công thức. · f) 0 em · 3 em · 1 em · 0 em…
 **Hướng giải:** Thi đấu phản biện: bạn trình bày nói lời giải, bạn phản biện phải chỉ ra được ít nhất một cột trong bảng mà lời giải chưa nói tới. Ai chỉ ra được nhiều hơn thì thắng.
-**Nhãn tư duy:** TD3, TD5. Điểm chốt: Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều.
-**Lỗi thường gặp:** Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. Phòng: Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút.
+**Nhãn tư duy:** TD2, TD4, TD6. Điểm chốt: Dấu của phần chung cả ba là **cộng**, không phải trừ. Đây là chỗ sai nhiều nhất của cả dạng bài.
+**Lỗi thường gặp:** Trừ luôn phần chung cả ba lần nữa, ra thiếu. Phòng: Điền số vào hình từ phần giữa ra ngoài rồi cộng bảy phần — cách này không cần nhớ công thức và không sai dấu được.
 **Gợi ý 3 tầng:** (1) Điền cột 1 và cột 3 trước — đó là hai cột dễ nhất. — (2) Cột 4 và cột 5 khác nhau: một cột nói cách làm, một cột nói lối tắt. — (3) Cột 6 chỉ ghi kết quả, không ghi lời giải.
 
 ### Bài V.5
-**Đáp số:** a) Bài toán giảm giá và khuyến mãi · b) Tỉ số phần trăm; tìm giá trị phần trăm của một số · c) Đề nhắc **giảm giá**, **khuyến mãi**, và có thể giảm nhiều lần · d) Mỗi lần giảm nhân với (100 − a) rồi chia 100, làm lần lượt · e) Giảm 20% rồi 10% tương đương còn 80% × 90% = 72% giá gốc. · f) 437 400 đồng · 544 000 đồng · 81 000 đồng · 187 500 đồng…
+**Đáp số:** a) Rút gọn phân số · b) Tính chất cơ bản của phân số · c) Tử số và mẫu số có ước chung lớn hơn 1 · d) Chia cả tử và mẫu cho ước chung · e) Tìm ngay ước chung lớn nhất để rút gọn một lần là xong. · f) 4 phần 5 · 1 phần 7 · 1 phần 6 · 2 phần 3…
 **Hướng giải:** Thi đấu phản biện: bạn trình bày nói lời giải, bạn phản biện phải chỉ ra được ít nhất một cột trong bảng mà lời giải chưa nói tới. Ai chỉ ra được nhiều hơn thì thắng.
-**Nhãn tư duy:** TD2, TD5. Điểm chốt: Giảm 20% rồi giảm tiếp 10% **không** bằng giảm 30%.
-**Lỗi thường gặp:** Cộng hai lần giảm giá thành một lần rồi tính một phép. Phòng: Viết ra giá sau lần giảm thứ nhất trước khi làm lần thứ hai.
+**Nhãn tư duy:** TD1. Điểm chốt: Phải chia **cả tử và mẫu** cho cùng một số.
+**Lỗi thường gặp:** Chỉ chia tử số hoặc chỉ chia mẫu số. Phòng: Viết phép chia cho cả hai dòng, kiểm tra lại bằng cách nhân ngược.
 **Gợi ý 3 tầng:** (1) Điền cột 1 và cột 3 trước — đó là hai cột dễ nhất. — (2) Cột 4 và cột 5 khác nhau: một cột nói cách làm, một cột nói lối tắt. — (3) Cột 6 chỉ ghi kết quả, không ghi lời giải.
 
 ---

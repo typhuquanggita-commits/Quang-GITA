@@ -51,57 +51,57 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — CỦNG CỐ NỀN — 30 CÂU TỐC ĐỘ · Mức M1 — Nhận biết · 20 phút · 25 điểm
 
-### Bài 1. (5 điểm) Mi-li-lít và lít
+### Bài 1. (5 điểm) Quy tắc nhân trong phép đếm
+
+Đếm số cách chọn.
+
+a) Có 7 chiếc áo và 8 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
+b) Có 7 chiếc áo và 4 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
+c) Có 2 chiếc áo và 7 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
+d) Có 6 chiếc áo và 4 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
+
+### Bài 2. (5 điểm) Mi-li-lít và lít
 
 Điền số hoặc dấu thích hợp.
 
-a) 26 l … 3 057 ml
-b) 18 l 682 ml = … ml
-c) 9 l = … ml
-d) 30 000 ml = … l
-e) 2 l 440 ml = … ml
+a) 22 l … 3 252 ml
+b) 37 l = … ml
+c) 2 000 ml = … l
+d) 12 l 113 ml = … ml
+e) 18 l 298 ml = … ml
+f) 25 l = … ml
+g) 28 000 ml = … l
 
-### Bài 2. (5 điểm) Đổi đơn vị đo độ dài và khối lượng
-
-Điền số thích hợp vào chỗ chấm.
-
-a) 83 cm = … mm
-b) 15 tạ = … dag
-c) 29 yến = … g
-d) 4 hm = … cm
-e) 28 km = … m
-f) 12 kg = … dag
-g) 90 tấn = … yến
-
-### Bài 3. (5 điểm) Nhiều hơn – ít hơn, gấp – kém
-
-Đọc kĩ rồi trả lời từng câu.
-
-a) Minh có 40 quyển vở, Hà có số vở gấp 3 lần Minh. Hà có bao nhiêu quyển vở?
-b) Minh có 72 quyển vở, Hà có ít hơn Minh 22 quyển. Hà có bao nhiêu quyển vở?
-c) Minh có 54 quyển vở, số vở của Hà kém 2 lần số vở của Minh. Hà có bao nhiêu quyển vở?
-d) Minh có 57 quyển vở, Hà có nhiều hơn Minh 24 quyển. Hà có bao nhiêu quyển vở?
-
-### Bài 4. (5 điểm) Đơn vị đo thời gian: giờ và phút
+### Bài 3. (5 điểm) Đơn vị đo thời gian: giờ và phút
 
 Điền kết quả, viết dạng giờ và phút.
 
-a) 9 giờ 59 phút + 35 phút = … (viết dạng giờ và phút)
-b) 502 phút = … giờ … phút
-c) 9 giờ 59 phút = … phút
-d) 5 giờ 29 phút − 165 phút = … (viết dạng giờ và phút)
-e) 202 phút = … giờ … phút
+a) 4 giờ 15 phút + 102 phút = … (viết dạng giờ và phút)
+b) 2 giờ 59 phút = … phút
+c) 9 giờ − 36 phút = … (viết dạng giờ và phút)
+d) 233 phút = … giờ … phút
+e) 496 phút = … giờ … phút
+f) 7 giờ 23 phút = … phút
 
-### Bài 5. (5 điểm) Đổi số đo khối lượng có nhiều đơn vị
+### Bài 4. (5 điểm) Đổi số đo khối lượng có nhiều đơn vị
 
 Điền vào chỗ chấm.
 
-a) 2 tạ 49 kg = … kg
-b) 5 tấn 6 tạ 62 kg = … kg
-c) 6 848 kg = … tấn … tạ … kg
-d) 4 tấn 4 tạ 72 kg = … kg
-e) 6 tấn 75 kg = … kg
-f) 3 tấn 8 tạ 52 kg = … kg
+a) 3 427 kg = … tấn … tạ … kg
+b) 619 kg = … tấn … tạ … kg
+c) 3 454 kg = … tấn … tạ … kg
+d) 3 tấn 6 tạ 77 kg = … kg
+e) 5 320 kg = … tấn … tạ … kg
+
+### Bài 5. (5 điểm) Đổi đơn vị đo độ dài và khối lượng
+
+Điền số thích hợp vào chỗ chấm.
+
+a) 4 hm = … mm
+b) 14 tấn = … tạ
+c) 36 hm = … mm
+d) 44 tấn = … kg
+e) 63 tấn = … kg
 
 ---
 
@@ -333,34 +333,34 @@ f) Mẹo nhanh em sẽ tặng lớp?
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài A.1
-**Đáp số:** a) > · b) 18 682 · c) 9 000 · d) 30 · e) 2 440
+**Đáp số:** a) 56 cách · b) 28 cách · c) 14 cách · d) 24 cách
+**Hướng giải:** BẪY — Cộng hay nhân. Nếu công việc gồm hai bước liên tiếp, bước một có a cách, bước hai có b cách, thì cả công việc có a × b cách. Đây là **quy tắc nhân**.
+**Nhãn tư duy:** TD2, TD4. Điểm chốt: Hai việc phải làm **cùng lúc, nối tiếp** thì nhân; chọn một trong hai khả năng rời nhau thì cộng.
+**Lỗi thường gặp:** Cộng số áo với số quần. Phòng: Tự hỏi: chọn xong áo đã đủ một bộ chưa? Chưa đủ thì phải nhân.
+
+### Bài A.2
+**Đáp số:** a) > · b) 37 000 · c) 2 · d) 12 113 · e) 18 298 · f) 25 000 · g) 28
 **Hướng giải:** BẪY — Đơn vị khác nhau. 1 lít = 1 000 mi-li-lít. Đổi từ đơn vị lớn sang đơn vị bé thì nhân, ngược lại thì chia. Muốn so sánh thì phải đưa về cùng một đơn vị trước.
 **Nhãn tư duy:** TD1. Điểm chốt: So sánh **chỉ sau khi** đã đưa về cùng đơn vị.
 **Lỗi thường gặp:** So thẳng hai con số mà bỏ qua đơn vị. Phòng: Viết lại cả hai vế theo mi-li-lít rồi mới so.
 
-### Bài A.2
-**Đáp số:** a) 830 · b) 150 000 · c) 290 000 · d) 40 000 · e) 28 000 · f) 1 200 · g) 9 000
-**Hướng giải:** BẪY — Chiều đổi đơn vị. Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
-**Nhãn tư duy:** TD1. Điểm chốt: Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
-**Lỗi thường gặp:** Đổi ngược chiều nên nhân thành chia. Phòng: Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.
-
 ### Bài A.3
-**Đáp số:** a) 120 · b) 50 · c) 27 · d) 81
-**Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
-**Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
-**Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
-
-### Bài A.4
-**Đáp số:** a) 10 giờ 34 phút · b) 8 giờ 22 phút · c) 599 · d) 2 giờ 44 phút · e) 3 giờ 22 phút
+**Đáp số:** a) 5 giờ 57 phút · b) 179 · c) 8 giờ 24 phút · d) 3 giờ 53 phút · e) 8 giờ 16 phút · f) 443
 **Hướng giải:** 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
 **Lỗi thường gặp:** Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. Phòng: Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không.
 
-### Bài A.5
-**Đáp số:** a) 249 · b) 5 662 · c) 6 tấn 8 tạ 48 kg · d) 4 472 · e) 6 075 · f) 3 852
+### Bài A.4
+**Đáp số:** a) 3 tấn 4 tạ 27 kg · b) 6 tạ 19 kg · c) 3 tấn 4 tạ 54 kg · d) 3 677 · e) 5 tấn 3 tạ 20 kg
 **Hướng giải:** 1 tấn = 10 tạ = 1 000 kg; 1 tạ = 100 kg; 1 yến = 10 kg. Đổi tất cả về ki-lô-gam rồi cộng lại; hoặc ngược lại, chia dần từ đơn vị lớn xuống đơn vị bé và lấy phần dư.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Đổi hết về **một đơn vị chung** trước khi cộng.
 **Lỗi thường gặp:** Cộng thẳng các số đứng trước những đơn vị khác nhau. Phòng: Viết mỗi thành phần thành số ki-lô-gam ngay bên dưới rồi mới cộng.
+
+### Bài A.5
+**Đáp số:** a) 400 000 · b) 140 · c) 3 600 000 · d) 44 000 · e) 63 000
+**Hướng giải:** Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
+**Nhãn tư duy:** TD1. Điểm chốt: Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
+**Lỗi thường gặp:** Đổi ngược chiều nên nhân thành chia. Phòng: Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.
 
 ### Bài B.1
 **Đáp số:** a) câu lời giải nêu rõ đang tìm đại lượng nào · b) phép tính, viết đủ dấu và đủ đơn vị · c) kết quả kèm đơn vị · d) câu đáp số · e) một phần tư số điểm của bài

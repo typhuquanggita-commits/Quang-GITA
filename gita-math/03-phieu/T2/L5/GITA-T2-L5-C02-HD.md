@@ -51,19 +51,19 @@ Học thuộc theo cặp **dạng bài – công thức**, không học rời.
 
 | # | Dùng cho dạng bài | Công thức hoặc quy tắc |
 |---:|---|---|
-| 1 | Tỉ số phần trăm trong mua bán | Tỉ số phần trăm, tăng giảm theo phần trăm |
+| 1 | Đọc biểu đồ cột | Đọc biểu đồ; trung bình cộng; so sánh số |
 | 2 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu |
 | 3 | Số thập phân — hàng, so sánh, chuyển đổi | Cấu tạo số thập phân, quan hệ phân số – số thập phân |
 | 4 | Tìm phân số của một số | Nhân số tự nhiên với phân số |
-| 5 | Tỉ số phần trăm nhiều bước | Ba dạng tỉ số phần trăm; mốc quy chiếu |
+| 5 | Biểu thức phân số nhiều phép tính | Thứ tự thực hiện phép tính, tính chất phân phối |
 | 6 | Dãy phân số, so sánh bằng phần bù | Phần bù tới 1; quy luật dãy phân số |
-| 7 | Bài toán tiền điện bậc thang | Nhân, cộng số lớn; đọc bảng giá nhiều bậc |
+| 7 | Rút gọn, so sánh, sắp thứ tự phân số | Tính chất cơ bản của phân số; so sánh phân số |
 | 8 | Đọc bảng số liệu thống kê | Thống kê mô tả sơ cấp, trung bình cộng, tỉ số phần trăm |
 | 9 | Rút gọn phân số | Tính chất cơ bản của phân số |
 | 10 | Nồng độ phần trăm của dung dịch | Tỉ số phần trăm; phân biệt chất tan và dung dịch |
-| 11 | Biểu đồ Ven | Đếm không trùng lặp; nguyên lý bù trừ |
+| 11 | Phần trăm thay đổi nhiều lần | Tỉ số phần trăm, mốc quy chiếu |
 | 12 | Bốn phép tính với số thập phân | Kĩ thuật tính với số thập phân |
-| 13 | So sánh phân số bằng kĩ thuật đặc biệt | Phần bù tới 1, phân số trung gian |
+| 13 | Bài toán giảm giá và khuyến mãi | Tỉ số phần trăm; tìm giá trị phần trăm của một số |
 | 14 | Biểu đồ Ven | Phép cộng, phép trừ; đếm không trùng lặp |
 
 ---
@@ -88,19 +88,20 @@ Trước khi tra bảng, đi qua cây quyết định đọc vị của nhóm ch
 
 | Dạng bài | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất |
 |---|---|---|---|
-| Tỉ số phần trăm trong mua bán | Từ khoá “tăng giá”, “giảm giá”, “lãi”, “lỗ” | Chốt mốc 100% rồi cộng trừ phần trăm | Giảm 20% nghĩa là còn 80% — nhân thẳng một lần thay vì trừ hai bước. |
+| Đọc biểu đồ cột | Biểu đồ có chú thích tỉ lệ, mỗi ô thay cho nhiều đơn vị | Đổi biểu đồ về dãy số rồi làm như bài số liệu thường | Ghi cả dãy số ra nháp một lần, mọi câu sau đều dùng lại dãy ấy. |
 | So sánh phân số | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. |
 | Số thập phân — hàng, so sánh, chuyển đổi | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 | Xét theo hàng từ trái sang phải | Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. |
 | Tìm phân số của một số | Cụm “bằng … của …” | Chia theo mẫu số rồi nhân theo tử số | Chia trước, nhân sau — số nhỏ hơn nên tính nhẩm được. |
-| Tỉ số phần trăm nhiều bước | Hai tỉ lệ phần trăm nối tiếp nhau trong cùng một bài | Xác định lại mốc 100% trước mỗi bước | Nhân hai tỉ lệ rồi chia 100 là ra tỉ lệ so với mốc gốc. |
+| Biểu thức phân số nhiều phép tính | Biểu thức gồm nhiều phân số và nhiều phép tính | Quan sát rút gọn trước, sau đó theo thứ tự thực hiện | Rút gọn chéo tử với mẫu trước khi nhân. |
 | Dãy phân số, so sánh bằng phần bù | Tử và mẫu hơn kém nhau đúng 1 đơn vị | Xét phần bù tới 1 rồi so sánh | n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. |
-| Bài toán tiền điện bậc thang | Đề cho **bảng giá nhiều bậc** và một lượng tiêu thụ | Chia lượng tiêu thụ vào từng bậc theo thứ tự rồi cộng thành tiền | Nếu lượng dùng vượt hết các bậc thấp thì ba bậc đầu luôn cho cùng một số tiền — tính sẵn một lần rồi dùng lại. |
+| Rút gọn, so sánh, sắp thứ tự phân số | Một nhóm phân số cần sắp thứ tự | Rút gọn → so cùng mẫu hoặc quy đồng | So với 1 và với một nửa trước — nhiều phân số phân loại được ngay. |
 | Đọc bảng số liệu thống kê | Đề cho bảng hoặc biểu đồ kèm nhiều câu hỏi | Ghi lại số liệu, trả lời từng câu bằng công cụ tương ứng | Tính tổng một lần rồi dùng lại cho mọi câu hỏi phần trăm. |
 | Rút gọn phân số | Tử số và mẫu số có ước chung lớn hơn 1 | Chia cả tử và mẫu cho ước chung | Tìm ngay ước chung lớn nhất để rút gọn một lần là xong. |
 | Nồng độ phần trăm của dung dịch | “Dung dịch … %”, “đổ thêm nước”, “bỏ thêm muối” | Kẻ bảng theo dõi tử số và mẫu số qua từng thao tác | Thêm nước thì nồng độ giảm, thêm muối thì nồng độ tăng — dùng để loại đáp số sai ngay. |
-| Biểu đồ Ven | Đề cho **ba nhóm**, ba phần chung đôi và một phần chung cả ba | Cộng ba nhóm, trừ ba phần chung đôi, cộng lại phần chung cả ba | Điền hình từ giữa ra ngoài thì chỉ còn phép cộng bảy số, không phải nhớ dấu của công thức. |
+| Phần trăm thay đổi nhiều lần | Hai lần tăng giảm liên tiếp | Tính tuần tự, xác định lại mốc 100% sau mỗi bước | Tăng 20% rồi giảm 20% thì còn 96% giá ban đầu — luôn thấp hơn giá cũ. |
 | Bốn phép tính với số thập phân | Các số có dấu phẩy | Chọn quy tắc đặt dấu phẩy theo phép tính | Ước lượng bằng cách làm tròn để kiểm tra vị trí dấu phẩy. |
-| So sánh phân số bằng kĩ thuật đặc biệt | Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 | So phần bù; hoặc chèn phân số trung gian | Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. |
+| Bài toán giảm giá và khuyến mãi | Đề nhắc **giảm giá**, **khuyến mãi**, và có thể giảm nhiều lần | Mỗi lần giảm nhân với (100 − a) rồi chia 100, làm lần lượt | Giảm 20% rồi 10% tương đương còn 80% × 90% = 72% giá gốc. |
+| Biểu đồ Ven | Đề cho số người của từng nhóm **và** số người thuộc cả hai nhóm | Vẽ hai vòng tròn, điền phần chung trước rồi mới trừ ra phần riêng | Số người ít nhất một nhóm = nhóm A + nhóm B − phần chung. |
 
 ---
 
@@ -119,20 +120,20 @@ Trước khi tra bảng, đi qua cây quyết định đọc vị của nhóm ch
 
 Trả lời được ngay trong 10 giây thì đánh ✔. Phải nghĩ lâu thì đánh ✘ và làm lại phần tương ứng.
 
-- [ ] **1.** Em nêu được dấu hiệu nhận biết của dạng “Tỉ số phần trăm trong mua bán” chứ?
-- [ ] **2.** Em nhớ công thức: Tỉ số phần trăm, tăng giảm theo phần trăm?
+- [ ] **1.** Em nêu được dấu hiệu nhận biết của dạng “Đọc biểu đồ cột” chứ?
+- [ ] **2.** Em nhớ công thức: Đọc biểu đồ; trung bình cộng; so sánh số?
 - [ ] **3.** Em nêu được dấu hiệu nhận biết của dạng “So sánh phân số” chứ?
 - [ ] **4.** Em nhớ công thức: Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu?
 - [ ] **5.** Em nêu được dấu hiệu nhận biết của dạng “Số thập phân — hàng, so sánh, chuyển đổi” chứ?
 - [ ] **6.** Em nhớ công thức: Cấu tạo số thập phân, quan hệ phân số – số thập phân?
 - [ ] **7.** Em nêu được dấu hiệu nhận biết của dạng “Tìm phân số của một số” chứ?
 - [ ] **8.** Em nhớ công thức: Nhân số tự nhiên với phân số?
-- [ ] **9.** Em nêu được dấu hiệu nhận biết của dạng “Tỉ số phần trăm nhiều bước” chứ?
-- [ ] **10.** Em nhớ công thức: Ba dạng tỉ số phần trăm; mốc quy chiếu?
+- [ ] **9.** Em nêu được dấu hiệu nhận biết của dạng “Biểu thức phân số nhiều phép tính” chứ?
+- [ ] **10.** Em nhớ công thức: Thứ tự thực hiện phép tính, tính chất phân phối?
 - [ ] **11.** Em nêu được dấu hiệu nhận biết của dạng “Dãy phân số, so sánh bằng phần bù” chứ?
 - [ ] **12.** Em nhớ công thức: Phần bù tới 1; quy luật dãy phân số?
-- [ ] **13.** Em nêu được dấu hiệu nhận biết của dạng “Bài toán tiền điện bậc thang” chứ?
-- [ ] **14.** Em nhớ công thức: Nhân, cộng số lớn; đọc bảng giá nhiều bậc?
+- [ ] **13.** Em nêu được dấu hiệu nhận biết của dạng “Rút gọn, so sánh, sắp thứ tự phân số” chứ?
+- [ ] **14.** Em nhớ công thức: Tính chất cơ bản của phân số; so sánh phân số?
 - [ ] **15.** Em nêu được dấu hiệu nhận biết của dạng “Đọc bảng số liệu thống kê” chứ?
 - [ ] **16.** Em nhớ công thức: Thống kê mô tả sơ cấp, trung bình cộng, tỉ số phần trăm?
 - [ ] **17.** Em nêu được dấu hiệu nhận biết của dạng “Rút gọn phân số” chứ?
@@ -150,19 +151,20 @@ Trả lời được ngay trong 10 giây thì đánh ✔. Phải nghĩ lâu thì
 
 | # | Lỗi thường gặp | Cách phòng |
 |---:|---|---|
-| 1 | Chia tiền lãi cho giá bán nên ra tỉ lệ nhỏ hơn thực tế. | Viết rõ “Giá mua = 100%” ở dòng đầu tiên. |
+| 1 | Đếm số ô rồi trả lời luôn, quên nhân với giá trị mỗi ô. | Khoanh tròn dòng chú thích trước khi nhìn vào cột nào. |
 | 2 | Thấy mẫu số lớn thì kết luận phân số lớn. | Nghĩ tới chiếc bánh: chia càng nhiều phần thì mỗi phần càng bé. |
 | 3 | Cho rằng số có nhiều chữ số sau dấu phẩy hơn thì lớn hơn. | Viết thêm chữ số 0 vào cuối để hai số có cùng số chữ số thập phân rồi mới so. |
 | 4 | Nhân phân số với đại lượng khác, không phải đại lượng đề chỉ định. | Gạch chân cụm “bằng … số cây của …” để xác định số bị nhân. |
-| 5 | Lấy tỉ lệ nam giỏi nhân thẳng với sĩ số cả lớp. | Viết trước mỗi phép tính: “100% ở đây là …”. |
+| 5 | Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. | Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút. |
 | 6 | So phần bù rồi kết luận cùng chiều với phần bù. | Nghĩ tới chiếc bánh: thiếu ít hơn thì phần đang có nhiều hơn. |
-| 7 | Lấy tổng số điện nhân với đơn giá của bậc cuối cùng dùng tới. | Kẻ bảng ba cột — bậc, số điện của bậc, thành tiền — rồi mới cộng. |
+| 7 | Rút gọn xong quên rằng thứ tự vẫn giữ nguyên, đi quy đồng lại từ đầu. | Ghi cả phân số gốc và phân số tối giản cạnh nhau để đối chiếu. |
 | 8 | Đọc nhầm cột, hoặc quên một môn khi cộng tổng. | Đánh dấu từng số đã cộng để không sót và không cộng lặp. |
 | 9 | Chỉ chia tử số hoặc chỉ chia mẫu số. | Viết phép chia cho cả hai dòng, kiểm tra lại bằng cách nhân ngược. |
 | 10 | Khi bỏ thêm muối thì chỉ cộng vào tử số mà quên cộng vào mẫu số. | Kẻ bảng hai dòng: lượng muối và khối lượng dung dịch, cập nhật sau mỗi thao tác. |
-| 11 | Trừ luôn phần chung cả ba lần nữa, ra thiếu. | Điền số vào hình từ phần giữa ra ngoài rồi cộng bảy phần — cách này không cần nhớ công thức và không sai dấu được. |
+| 11 | Cộng trừ hai số phần trăm rồi áp một lần vào giá ban đầu. | Viết ba dòng: giá ban đầu, giá sau lần 1, giá sau lần 2. |
 | 12 | Nhân xong đặt dấu phẩy thẳng cột như phép cộng. | Đếm số chữ số sau dấu phẩy ngay khi viết đề bài. |
-| 13 | Lấy tổng trừ đi tổng hai con số đề cho mà không cộng lại phần chung. | Vẽ hình trước, điền phần giữa trước, rồi mới điền hai bên. |
+| 13 | Cộng hai lần giảm giá thành một lần rồi tính một phép. | Viết ra giá sau lần giảm thứ nhất trước khi làm lần thứ hai. |
+| 14 | Lấy tổng trừ đi tổng hai con số đề cho mà không cộng lại phần chung. | Vẽ hình trước, điền phần giữa trước, rồi mới điền hai bên. |
 
 ---
 

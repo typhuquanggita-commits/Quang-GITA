@@ -30,60 +30,54 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Đặt tính rồi tính.
 
-a) 4 310 : 5
-b) 1 632 : 3
-c) 648 : 6
-d) 1 376 : 2
-e) 105 × 8
-f) 1 380 : 4
+a) 4 560 : 5
+b) 624 × 8
+c) 134 × 3
+d) 6 615 : 7
+e) 7 227 : 9
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
-Tính bằng cách thuận tiện nhất.
+Ghi rõ đơn vị đồng ở mọi kết quả.
 
-a) 359 + 17 − 17
-b) 20 + 26 + 80 + 74
-c) 156 + 83 − 83
-d) 46 + 61 − 61
-e) 44 + 252 + 56
-f) 64 + 34 − 34
+a) Mua 4 quyển vở, mỗi quyển 25 000 đồng. Đưa cô bán hàng một tờ 200 000 đồng. Cô phải trả lại bao nhiêu tiền?
+b) Mua 2 quyển vở, mỗi quyển 3 000 đồng. Hết bao nhiêu tiền?
+c) Đổi một tờ 50 000 đồng ra các tờ 2 000 đồng thì được mấy tờ?
+d) Mua 6 quyển vở, mỗi quyển 3 000 đồng. Đưa cô bán hàng một tờ 20 000 đồng. Cô phải trả lại bao nhiêu tiền?
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
 Tóm tắt bằng sơ đồ đoạn thẳng rồi giải.
 
-a) Hai lớp 3A và 5C có tất cả 858 quyển sách. Lớp 3A có nhiều hơn lớp 5C 186 quyển. Mỗi lớp có bao nhiêu quyển?
-b) Đội Hai và tổ Ba trồng được 792 cây. Đội Hai trồng nhiều hơn tổ Ba 14 cây. Mỗi tổ trồng bao nhiêu cây?
-c) Xưởng và kho A chứa tất cả 250 kg phân bón. Xưởng chứa nhiều hơn kho A 50 kg. Mỗi nơi chứa bao nhiêu kg?
-d) Tổ Một và nhóm Sao Mai trồng được 236 cây. Tổ Một trồng nhiều hơn nhóm Sao Mai 62 cây. Mỗi tổ trồng bao nhiêu cây?
-e) Hai lớp 4C và 5A có tất cả 790 quyển sách. Lớp 4C có nhiều hơn lớp 5A 122 quyển. Mỗi lớp có bao nhiêu quyển?
-f) Hợp tác xã và trang trại chứa tất cả 464 kg xi măng. Hợp tác xã chứa nhiều hơn trang trại 126 kg. Mỗi nơi chứa bao nhiêu kg?
+a) Đội Một và đội Hai trồng được 184 cây. Đội Một trồng nhiều hơn đội Hai 54 cây. Mỗi tổ trồng bao nhiêu cây?
+b) Hai lớp 5B và 3B có tất cả 436 quyển sách. Lớp 5B có nhiều hơn lớp 3B 70 quyển. Mỗi lớp có bao nhiêu quyển?
+c) Cửa hàng và xưởng chứa tất cả 306 kg muối. Cửa hàng chứa nhiều hơn xưởng 36 kg. Mỗi nơi chứa bao nhiêu kg?
+d) Kho B và thư viện chứa tất cả 740 kg xi măng. Kho B chứa nhiều hơn thư viện 116 kg. Mỗi nơi chứa bao nhiêu kg?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
-Kẻ một bảng lịch nhỏ ra nháp rồi trả lời.
+Ghi kết quả theo giờ và phút.
 
-a) Tháng 2 năm 2034 có bao nhiêu ngày?
-b) Năm 2034 có phải năm nhuận không?
-c) Ngày 1 tháng 2 là Thứ Năm. Hỏi ngày 12 tháng ấy là thứ mấy?
-d) Tháng ấy có bao nhiêu ngày Chủ nhật?
-e) Ngày cuối cùng của tháng là thứ mấy?
-f) Một năm thường có bao nhiêu ngày, năm nhuận có bao nhiêu ngày?
+a) Bây giờ là 9 giờ 40 phút. Cách đây 30 phút là mấy giờ?
+b) Bây giờ là 1 giờ 40 phút. Sau 25 phút nữa là mấy giờ?
+c) 9 giờ 50 phút = … phút
+d) Bây giờ là 2 giờ 40 phút. Cách đây 15 phút là mấy giờ?
+e) Bây giờ là 3 giờ 55 phút. Sau 40 phút nữa là mấy giờ?
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
-Mỗi ý một phép tính, trả lời gọn.
+Vẽ một hàng ô ra nháp rồi đánh dấu vị trí.
 
-a) Đội Hai có 35 lá cờ, nhóm Hoa Phượng có gấp 3 lần đội Hai. Nhóm Hoa Phượng có bao nhiêu lá cờ?
-b) Cả hai tổ có bao nhiêu lá cờ?
-c) Nhóm Hoa Phượng nhiều hơn đội Hai bao nhiêu lá cờ?
-d) Nếu đội Hai được cho thêm 5 lá cờ thì đội Hai có bao nhiêu lá?
-e) Khi đó nhóm Hoa Phượng còn nhiều hơn đội Hai bao nhiêu lá?
-f) Phải cho đội Hai thêm bao nhiêu lá nữa thì hai tổ bằng nhau?
+a) Khánh cao hơn Dũng, Dũng cao hơn Thảo. Ai cao nhất?
+b) Ai thấp nhất?
+c) Xếp ba bạn theo thứ tự từ thấp đến cao.
+d) Có 5 bạn xếp thành một hàng dọc. Khánh đứng thứ 3 từ đầu hàng. Hỏi Khánh đứng thứ mấy từ cuối hàng?
+e) Trước Khánh có mấy bạn?
+f) Sau Khánh có mấy bạn?
 
 
 ---
@@ -91,103 +85,97 @@ f) Phải cho đội Hai thêm bao nhiêu lá nữa thì hai tổ bằng nhau?
 ## ĐÁP ÁN VÀ BIỂU ĐIỂM
 
 
-### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 1, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **862**
-b) **544**
-c) **108**
-d) **688**
-e) **840**
-f) **345**
+a) **912**
+b) **4 992**
+c) **402**
+d) **945**
+e) **803**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 4 310 : 5
+1. Xét ý a: 4 560 : 5
 2. Đọc vị: đây là dạng **Nhân, chia số tự nhiên**; dấu hiệu là Yêu cầu “đặt tính rồi tính” với phép nhân, chia.
 3. Kiến thức phải dùng: Kĩ thuật đặt tính nhân, chia.
 4. Cách làm: Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ chữ số.
 5. Lối tắt: Kiểm tra kết quả bằng phép tính ngược: thương × số chia = số bị chia.
-6. Kết quả: **862**.
+6. Kết quả: **912**.
 
 *Lỗi hay mắc:* Quên viết chữ số 0 ở thương nên thương thiếu chữ số.
 
-### Bài 2, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 2, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **359**
-b) **200**
-c) **156**
-d) **46**
-e) **352**
-f) **64**
+a) **100 000 đồng**
+b) **6 000 đồng**
+c) **25 tờ**
+d) **2 000 đồng**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 359 + 17 − 17
-2. Đọc vị: đây là dạng **Tính nhanh tổng nhiều số hạng**; dấu hiệu là Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm.
-3. Kiến thức phải dùng: Tính chất giao hoán, kết hợp của phép cộng.
-4. Cách làm: Ghép cặp tròn rồi cộng.
-5. Lối tắt: Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10.
-6. Kết quả: **359**.
+1. Bước 1 — tiền hàng: 25 000 × 4 = 100 000 (đồng).
+2. Bước 2 — tiền trả lại: 200 000 − 100 000 = 100 000 (đồng).
+3. Thử lại: 100 000 + 100 000 = 200 000 ✓
+4. Đáp số: **100 000 đồng**.
 
-*Lỗi hay mắc:* Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn.
+*Lỗi hay mắc:* Lấy tiền đưa trừ ngay giá một quyển vở.
 
-### Bài 3, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 3, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **3A: 522 quyển, 5C: 336 quyển**
-b) **đội Hai: 403 cây, tổ Ba: 389 cây**
-c) **xưởng: 150 kg, kho A: 100 kg**
-d) **tổ Một: 149 cây, nhóm Sao Mai: 87 cây**
-e) **4C: 456 quyển, 5A: 334 quyển**
-f) **hợp tác xã: 295 kg, trang trại: 169 kg**
+a) **đội Một: 119 cây, đội Hai: 65 cây**
+b) **5B: 253 quyển, 3B: 183 quyển**
+c) **cửa hàng: 171 kg, xưởng: 135 kg**
+d) **kho B: 428 kg, thư viện: 312 kg**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Hai lớp 3A và 5C có tất cả 858 quyển sách. Lớp 3A có nhiều hơn lớp 5C 186 quyển. Mỗi lớp có bao nhiêu quyển?
+1. Xét ý a: Đội Một và đội Hai trồng được 184 cây. Đội Một trồng nhiều hơn đội Hai 54 cây. Mỗi tổ trồng bao nhiêu cây?
 2. Đọc vị: đây là dạng **Tổng – hiệu có lời văn**; dấu hiệu là “Có tất cả …” và “… nhiều hơn … là …”.
 3. Kiến thức phải dùng: Công thức tổng – hiệu, sơ đồ đoạn thẳng.
 4. Cách làm: Đọc vị tổng và hiệu → sơ đồ → công thức.
 5. Lối tắt: Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần.
-6. Kết quả: **3A: 522 quyển, 5C: 336 quyển**.
+6. Kết quả: **đội Một: 119 cây, đội Hai: 65 cây**.
 
 *Lỗi hay mắc:* Nhầm hiệu thành tổng khi đề diễn đạt vòng vo.
 
-### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 4, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **28**
-b) **không**
-c) **Thứ Hai**
-d) **4**
-e) **Thứ Tư**
-f) **365 ngày và 366 ngày**
+a) **9 giờ 10 phút**
+b) **2 giờ 5 phút**
+c) **590**
+d) **2 giờ 25 phút**
+e) **4 giờ 35 phút**
 
 **Cách giải mẫu:**
 
-1. Tháng 2 là tháng 2, nên có 28 ngày.
-2. Ngày 1 là Thứ Năm. Cứ sau 7 ngày thì lặp lại đúng thứ ấy.
-3. Từ ngày 1 đến ngày 12 cách nhau 11 ngày.
-4. 11 : 7 dư 4, nên lùi 4 bước từ Thứ Năm.
-5. Vậy ngày 12 là **Thứ Hai**.
+1. Xét ý a: Bây giờ là 9 giờ 40 phút. Cách đây 30 phút là mấy giờ?
+2. Đọc vị: đây là dạng **Tính thời gian trong ngày**; dấu hiệu là Có chữ “giờ”, “phút”, “sau … phút nữa”.
+3. Kiến thức phải dùng: Quan hệ giờ – phút.
+4. Cách làm: Quy về phút, tính, đổi lại.
+5. Lối tắt: Cộng tròn giờ trước, cộng phút lẻ sau.
+6. Kết quả: **9 giờ 10 phút**.
 
-*Lỗi hay mắc:* Đếm tay từng ngày nên vừa lâu vừa sai.
+*Lỗi hay mắc:* Cộng phần phút thành hơn 60 mà quên đổi thành giờ.
 
 ### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **105**
-b) **140**
-c) **70**
-d) **40**
-e) **65**
-f) **70**
+a) **Khánh**
+b) **Thảo**
+c) **Thảo, Dũng, Khánh**
+d) **3**
+e) **2 bạn**
+f) **2 bạn**
 
 **Cách giải mẫu:**
 
-1. Bước 1 — số cờ của nhóm Hoa Phượng: 35 × 3 = 105 (lá).
-2. Bước 2 — cả hai tổ: 35 + 105 = 140 (lá).
-3. Bước 3 — nhóm Hoa Phượng nhiều hơn: 105 − 35 = 70 (lá).
-4. Bước 4 — muốn hai tổ bằng nhau thì cho đội Hai thêm đúng phần hơn ấy, tức 70 lá.
-5. Đáp số ý a: **105 lá cờ**.
+1. Vẽ 5 ô liền nhau tượng trưng cho 5 bạn.
+2. Khánh đứng thứ 3 từ đầu, nên trước Khánh có 2 bạn.
+3. Sau Khánh còn 5 − 3 = 2 bạn.
+4. Tính từ cuối hàng, Khánh đứng thứ 2 + 1 = 3.
+5. Kiểm tra: 2 + 1 + 2 = 5 ✓
+6. Đáp số ý d: **thứ 3 từ cuối**.
 
-*Lỗi hay mắc:* Nhầm hai tình huống: cho thêm và chuyển qua lại.
+*Lỗi hay mắc:* Lấy tổng số bạn trừ thứ tự từ đầu rồi ghi luôn, quên cộng 1.
 
 ---
 
@@ -198,10 +186,10 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài | Đo cái gì | Sai bài này nghĩa là | Học lại ở đâu |
 |:--:|---|---|---|
 | Bài 1 | Nhân, chia số tự nhiên | Quên viết chữ số 0 ở thương nên thương thiếu chữ số. | Nhóm chuyên đề **—** · mức — |
-| Bài 2 | Tính nhanh tổng nhiều số hạng | Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. | Nhóm chuyên đề **—** · mức — |
+| Bài 2 | Bài toán tiền tệ hai bước | Lấy tiền đưa trừ ngay giá một quyển vở. | Nhóm chuyên đề **—** · mức — |
 | Bài 3 | Tổng – hiệu có lời văn | Nhầm hiệu thành tổng khi đề diễn đạt vòng vo. | Nhóm chuyên đề **—** · mức — |
-| Bài 4 | Lịch, tháng, năm nhuận | Đếm tay từng ngày nên vừa lâu vừa sai. | Nhóm chuyên đề **—** · mức — |
-| Bài 5 | Toán điển hình: gấp, kém, nhiều hơn, ít hơn | Nhầm hai tình huống: cho thêm và chuyển qua lại. | Nhóm chuyên đề **—** · mức — |
+| Bài 4 | Tính thời gian trong ngày | Cộng phần phút thành hơn 60 mà quên đổi thành giờ. | Nhóm chuyên đề **—** · mức — |
+| Bài 5 | Suy luận thứ tự, vị trí trong hàng | Lấy tổng số bạn trừ thứ tự từ đầu rồi ghi luôn, quên cộng 1. | Nhóm chuyên đề **—** · mức — |
 
 ---
 

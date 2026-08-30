@@ -28,58 +28,57 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ### Bài 1. (2 điểm — 10 phút) Tính và điền kết quả
 
-Cho số **12 448**.
+Cho số **81 572**.
 
-a) Số 12 448 có bao nhiêu chữ số?
+a) Số 81 572 có bao nhiêu chữ số?
 b) Chữ số hàng đơn vị là chữ số nào?
 c) Chữ số hàng trăm là chữ số nào?
 d) Chữ số hàng nghìn là chữ số nào?
-e) Viết số 12 448 thành tổng các giá trị hàng.
-f) Tổng các chữ số của số 12 448 bằng bao nhiêu?
+e) Viết số 81 572 thành tổng các giá trị hàng.
+f) Tổng các chữ số của số 81 572 bằng bao nhiêu?
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
 Tính bằng cách thuận tiện nhất.
 
-a) 18 + 385 + 82
-b) 28 + 63 + 72
-c) 46 + 327 + 54
-d) 24 + 71 + 76
-e) 88 + 87 + 12 + 13
+a) 69 + 46 + 31 + 54
+b) 31 + 84 + 69
+c) 372 + 57 − 57
+d) 19 + 81 + 81 + 19
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
 Tóm tắt bằng sơ đồ đoạn thẳng rồi giải.
 
-a) Hai lớp 4C và 5A có tất cả 524 quyển sách. Lớp 4C có nhiều hơn lớp 5A 90 quyển. Mỗi lớp có bao nhiêu quyển?
-b) Trang trại và hợp tác xã chứa tất cả 780 kg xi măng. Trang trại chứa nhiều hơn hợp tác xã 234 kg. Mỗi nơi chứa bao nhiêu kg?
-c) Tổ Ba và tổ Hai trồng được 870 cây. Tổ Ba trồng nhiều hơn tổ Hai 246 cây. Mỗi tổ trồng bao nhiêu cây?
-d) Nhóm Sao Mai và tổ Hai trồng được 412 cây. Nhóm Sao Mai trồng nhiều hơn tổ Hai 92 cây. Mỗi tổ trồng bao nhiêu cây?
+a) Trang trại và thư viện chứa tất cả 708 kg muối. Trang trại chứa nhiều hơn thư viện 146 kg. Mỗi nơi chứa bao nhiêu kg?
+b) Nhóm Hoa Phượng và đội Một trồng được 428 cây. Nhóm Hoa Phượng trồng nhiều hơn đội Một 30 cây. Mỗi tổ trồng bao nhiêu cây?
+c) Hai lớp 3A và 5C có tất cả 602 quyển sách. Lớp 3A có nhiều hơn lớp 5C 4 quyển. Mỗi lớp có bao nhiêu quyển?
+d) Đội Hai và tổ Một trồng được 680 cây. Đội Hai trồng nhiều hơn tổ Một 166 cây. Mỗi tổ trồng bao nhiêu cây?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
-Vẽ hình và kẻ lưới ra nháp.
+Cho lưới gồm 2 hàng và 4 cột ô vuông nhỏ bằng nhau.
 
-a) Một hình chữ nhật 10 cm × 2 cm được phủ kín bằng các hình vuông cạnh 2 cm. Cần bao nhiêu hình vuông?
-b) Diện tích hình chữ nhật ấy bằng bao nhiêu?
-c) Diện tích mỗi hình vuông nhỏ bằng bao nhiêu?
-d) Chia hình chữ nhật ấy thành 2 phần bằng nhau thì mỗi phần có diện tích bao nhiêu?
-e) Chia thành 4 phần bằng nhau thì mỗi phần bao nhiêu?
-f) Nếu ghép hai hình chữ nhật ấy theo chiều dài thì hình mới có chu vi bao nhiêu?
+a) Lưới có bao nhiêu ô vuông nhỏ?
+b) Lưới có bao nhiêu đường kẻ ngang, bao nhiêu đường kẻ dọc?
+c) Có tất cả bao nhiêu hình chữ nhật (kể cả hình vuông)?
+d) Có bao nhiêu hình vuông?
+e) Có bao nhiêu hình chữ nhật không phải hình vuông?
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
-Giả sử tất cả đều là gà rồi lập luận.
+Dãy bắt đầu bằng 1; hiệu giữa hai số hạng liên tiếp lần lượt là 1, 2, 3, 4, …
 
-a) Vừa gà vừa chó có 15 con, đếm được 38 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
-b) Vừa gà vừa chó có 44 con, đếm được 134 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
-c) Vừa gà vừa chó có 20 con, đếm được 64 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
-d) Vừa gà vừa chó có 26 con, đếm được 64 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
-e) Vừa gà vừa chó có 44 con, đếm được 136 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
+a) Viết năm số hạng đầu của dãy.
+b) Hiệu giữa hai số hạng liên tiếp là những số nào?
+c) Số hạng thứ 6 là số nào?
+d) Số hạng thứ 8 là số nào?
+e) Số hạng thứ 10 là số nào?
+f) Tổng năm số hạng đầu bằng bao nhiêu?
 
 
 ---
@@ -90,97 +89,97 @@ e) Vừa gà vừa chó có 44 con, đếm được 136 chân. Hỏi có bao nhi
 ### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
 a) **5**
-b) **8**
-c) **4**
-d) **2**
-e) **10 000 + 2 000 + 400 + 40 + 8**
-f) **19**
+b) **2**
+c) **5**
+d) **1**
+e) **80 000 + 1 000 + 500 + 70 + 2**
+f) **23**
 
 **Cách giải mẫu:**
 
 1. Đếm từ phải sang trái: đơn vị, chục, trăm, nghìn, chục nghìn.
-2. Số 12 448 có 5 chữ số.
-3. Chữ số hàng đơn vị là chữ số cuối cùng bên phải: 8.
-4. Viết thành tổng: 10 000 + 2 000 + 400 + 40 + 8.
-5. Cộng các chữ số: 1 + 2 + 4 + 4 + 8 = 19.
+2. Số 81 572 có 5 chữ số.
+3. Chữ số hàng đơn vị là chữ số cuối cùng bên phải: 2.
+4. Viết thành tổng: 80 000 + 1 000 + 500 + 70 + 2.
+5. Cộng các chữ số: 8 + 1 + 5 + 7 + 2 = 23.
 6. Đáp số ý a: **5 chữ số**.
 
 *Lỗi hay mắc:* Đếm hàng từ trái sang phải nên lệch hàng.
 
-### Bài 2, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 2, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **485**
-b) **163**
-c) **427**
-d) **171**
-e) **200**
+a) **200**
+b) **184**
+c) **372**
+d) **200**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 18 + 385 + 82
+1. Xét ý a: 69 + 46 + 31 + 54
 2. Đọc vị: đây là dạng **Tính nhanh tổng nhiều số hạng**; dấu hiệu là Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm.
 3. Kiến thức phải dùng: Tính chất giao hoán, kết hợp của phép cộng.
 4. Cách làm: Ghép cặp tròn rồi cộng.
 5. Lối tắt: Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10.
-6. Kết quả: **485**.
+6. Kết quả: **200**.
 
 *Lỗi hay mắc:* Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn.
 
 ### Bài 3, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **4C: 307 quyển, 5A: 217 quyển**
-b) **trang trại: 507 kg, hợp tác xã: 273 kg**
-c) **tổ Ba: 558 cây, tổ Hai: 312 cây**
-d) **nhóm Sao Mai: 252 cây, tổ Hai: 160 cây**
+a) **trang trại: 427 kg, thư viện: 281 kg**
+b) **nhóm Hoa Phượng: 229 cây, đội Một: 199 cây**
+c) **3A: 303 quyển, 5C: 299 quyển**
+d) **đội Hai: 423 cây, tổ Một: 257 cây**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Hai lớp 4C và 5A có tất cả 524 quyển sách. Lớp 4C có nhiều hơn lớp 5A 90 quyển. Mỗi lớp có bao nhiêu quyển?
+1. Xét ý a: Trang trại và thư viện chứa tất cả 708 kg muối. Trang trại chứa nhiều hơn thư viện 146 kg. Mỗi nơi chứa bao nhiêu kg?
 2. Đọc vị: đây là dạng **Tổng – hiệu có lời văn**; dấu hiệu là “Có tất cả …” và “… nhiều hơn … là …”.
 3. Kiến thức phải dùng: Công thức tổng – hiệu, sơ đồ đoạn thẳng.
 4. Cách làm: Đọc vị tổng và hiệu → sơ đồ → công thức.
 5. Lối tắt: Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần.
-6. Kết quả: **4C: 307 quyển, 5A: 217 quyển**.
+6. Kết quả: **trang trại: 427 kg, thư viện: 281 kg**.
 
 *Lỗi hay mắc:* Nhầm hiệu thành tổng khi đề diễn đạt vòng vo.
 
-### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 4, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **5**
-b) **20 cm²**
-c) **4 cm²**
-d) **10 cm²**
-e) **5 cm²**
-f) **28 cm**
-
-**Cách giải mẫu:**
-
-1. Bước 1 — diện tích hình chữ nhật: 10 × 2 = 20 (cm²).
-2. Bước 2 — diện tích một hình vuông nhỏ: 2 × 2 = 4 (cm²).
-3. Bước 3 — số hình vuông cần dùng: 20 : 4 = 5 (hình).
-4. Kiểm tra: xếp được 5 hàng, mỗi hàng 1 hình — đúng 5 hình ✓
-5. Đáp số: **5 hình vuông**.
-
-*Lỗi hay mắc:* Chia chu vi cho cạnh mảnh thay vì chia diện tích cho diện tích.
-
-### Bài 5, (2 điểm — mỗi ý 0,4 điểm)
-
-a) **11 con gà, 4 con chó**
-b) **21 con gà, 23 con chó**
-c) **8 con gà, 12 con chó**
-d) **20 con gà, 6 con chó**
-e) **20 con gà, 24 con chó**
+a) **8**
+b) **3 đường ngang, 5 đường dọc**
+c) **30**
+d) **11**
+e) **19**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Vừa gà vừa chó có 15 con, đếm được 38 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
-2. Đọc vị: đây là dạng **Giả thiết tạm**; dấu hiệu là Hai loại con vật, biết tổng số con và tổng số chân.
-3. Kiến thức phải dùng: Phương pháp giả thiết tạm.
-4. Cách làm: Giả sử đồng nhất → tính chênh → chia cho hiệu số chân.
-5. Lối tắt: Số chó = (số chân − 2 × số con) : 2.
-6. Kết quả: **11 con gà, 4 con chó**.
+1. Xét ý a: Lưới có bao nhiêu ô vuông nhỏ?
+2. Đọc vị: đây là dạng **Đếm hình trong lưới**; dấu hiệu là Lưới ô vuông đều.
+3. Kiến thức phải dùng: Quy tắc đếm.
+4. Cách làm: Đếm theo đường kẻ hoặc theo cỡ.
+5. Lối tắt: Số cách chọn 2 trong k là k × (k − 1) : 2.
+6. Kết quả: **8**.
 
-*Lỗi hay mắc:* Chia số chân thiếu cho 4.
+*Lỗi hay mắc:* Chỉ đếm ô nhỏ, quên hình ghép từ nhiều ô.
+
+### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
+
+a) **1 · 2 · 4 · 7 · 11**
+b) **1, 2, 3, 4, 5, …**
+c) **16**
+d) **29**
+e) **46**
+f) **25**
+
+**Cách giải mẫu:**
+
+1. Số hạng đầu là 1.
+2. Số hạng thứ 2 = 1 + 1 = 2.
+3. Số hạng thứ 3 = 2 + 2 = 4.
+4. Cứ thế, số hạng thứ 6 = 11 + 5 = 16.
+5. Nhận xét: số hạng thứ n = 1 + (1 + 2 + … + (n − 1)).
+6. Đáp số ý c: **16**.
+
+*Lỗi hay mắc:* Không tìm ra hiệu đều thì bỏ cuộc, không thử dãy hiệu.
 
 ---
 
@@ -193,8 +192,8 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài 1 | Đọc, viết, cấu tạo số | Đếm hàng từ trái sang phải nên lệch hàng. | Nhóm chuyên đề **—** · mức — |
 | Bài 2 | Tính nhanh tổng nhiều số hạng | Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. | Nhóm chuyên đề **—** · mức — |
 | Bài 3 | Tổng – hiệu có lời văn | Nhầm hiệu thành tổng khi đề diễn đạt vòng vo. | Nhóm chuyên đề **—** · mức — |
-| Bài 4 | Phủ hình, chia hình | Chia chu vi cho cạnh mảnh thay vì chia diện tích cho diện tích. | Nhóm chuyên đề **—** · mức — |
-| Bài 5 | Giả thiết tạm | Chia số chân thiếu cho 4. | Nhóm chuyên đề **—** · mức — |
+| Bài 4 | Đếm hình trong lưới | Chỉ đếm ô nhỏ, quên hình ghép từ nhiều ô. | Nhóm chuyên đề **—** · mức — |
+| Bài 5 | Dãy có hiệu tăng đều | Không tìm ra hiệu đều thì bỏ cuộc, không thử dãy hiệu. | Nhóm chuyên đề **—** · mức — |
 
 ---
 

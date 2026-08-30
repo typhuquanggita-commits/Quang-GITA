@@ -38,27 +38,27 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần B**
 
-- **Bài B.1** — a) 14 000 đồng · b) 5 tờ · c) 100 000 đồng · d) 10 tờ · e) 30 000 đồng · f) 21 000 đồng
-- **Bài B.2** — a) 16 cách · b) 6 cách · c) 6 cách · d) 36 cách · e) 8 cách
-- **Bài B.3** — a) 279 kg · b) 202 kg · c) 71 kg · d) 715 kg · e) 257 kg · f) 411 kg
-- **Bài B.4** — a) 12 000 · b) 8 600 · c) 22 000 · d) 14 000 · e) 560 · f) 61 000
-- **Bài B.5** — a) 26 · b) 21 · c) 13 · d) 10 · e) 21 · f) 32 · g) 10
+- **Bài B.1** — a) 16 000 đồng · b) 25 tờ · c) 75 000 đồng · d) 2 tờ · e) 5 000 đồng
+- **Bài B.2** — a) (38 + 18) × 2 = 112 m · b) 112 − 2 = 110 m · c) 112 : 2 = 56 cọc · d) 110 × 25 000 = 2 750 000 đồng · e) 38 × 18 = 684 m²
+- **Bài B.3** — a) 36 000 · b) 32 000 · c) 34 000 · d) 460 · e) 2 000 · f) 83 000 · g) 39 000 · h) 530
+- **Bài B.4** — a) Tổ 4 — 16 bạn · b) Tổ 2 — 12 bạn · c) 25 bạn nam và 32 bạn nữ · d) 57 bạn · e) 16 − 12 = 4 bạn · f) nữ nhiều hơn 7 bạn
+- **Bài B.5** — a) đội Hai: 345 cây, tổ Một: 207 cây · b) 3A: 121 quyển, 5A: 77 quyển · c) cửa hàng: 79 kg, hợp tác xã: 75 kg · d) tổ Một: 42 cây, đội Một: 30 cây · e) 5C: 196 quyển, 4C: 114 quyển
 
 **Phần C**
 
-- **Bài C.1** — a) 256 cm² · b) 56 cm² · c) 48 cm · d) 48 cm · e) 234 cm²
-- **Bài C.2** — a) B · b) 30 cm · c) 19 cm · d) 20 cm · e) A · f) 21 cm · g) 20 cm
-- **Bài C.3** — a) 19 · b) 37 · c) 23 · d) 28 · e) 37 · f) 41 · g) 10
-- **Bài C.4** — a) 307 dư 1 · b) 264 dư 6 · c) 310 dư 5 · d) 170 dư 1 · e) 124 dư 8 · f) 152 dư 1 · g) 223 dư 1
-- **Bài C.5** — a) 240 · b) 119 · c) 203 · d) 302 · e) 497 · f) 209
+- **Bài C.1** — a) 1 270 kg · b) 44 kg · c) 87 kg · d) 140 kg · e) 123 kg · f) 150 kg
+- **Bài C.2** — a) Vy: 118 viên, Bình: 72 viên · b) Khánh: 19 viên, Hùng: 11 viên · c) Hà: 108 viên, Khánh: 70 viên · d) Thảo: 24 viên, Bình: 18 viên · e) Phúc: 114 viên, Khánh: 82 viên · f) An: 79 viên, Vy: 69 viên
+- **Bài C.3** — a) 13 · b) (23 − 7) : 2 + 1 = 9 nhà · c) 7 + (6 − 1) × 2 = 17 · d) (13 − 7) : 2 + 1 = 4 · e) số lẻ — bắt đầu từ một số lẻ rồi cứ cộng thêm 2, cộng 2 không làm đổi tính chẵn lẻ
+- **Bài C.4** — a) 42 · b) Vy (14 bông) · c) An (7 bông) · d) 7 · e) 13
+- **Bài C.5** — a) đậu phụ: 70 000 · chuối: 70 000 · thịt lợn: 100 000 · b) 240 000 · c) 240 500 · d) 500 đồng · e) 9 500 đồng
 
 **Phần D**
 
-- **Bài D.1** — a) 10 giờ 15 phút · b) 6 giờ 40 phút · c) 375 · d) 5 giờ 5 phút · e) 4 giờ 30 phút · f) 675
-- **Bài D.2** — a) 92 kg · b) 84 kg · c) 16 kg · d) 45 kg · e) 18 kg · f) 36 kg
-- **Bài D.3** — a) nhóm Hoa Phượng: 22 cây, tổ Ba: 44 cây · b) đội Một: 26 cây, tổ Hai: 78 cây · c) 1 phần 3 · d) 1 phần 4 · e) nhóm Hoa Phượng: 22 cây, đội Một: 88 cây
-- **Bài D.4** — a) 30 · b) không · c) Chủ nhật · d) 4 · e) Thứ Sáu · f) 365 ngày và 366 ngày
-- **Bài D.5** — a) 47 · b) 18 · c) 20 · d) 7 · e) 56 · f) 9, vì nhóm thích cả hai môn bị đếm hai lần
+- **Bài D.1** — a) 31 · b) có · c) Thứ Ba · d) 5 · e) Chủ nhật · f) 365 ngày và 366 ngày
+- **Bài D.2** — a) 11 giờ 45 phút · b) 9 giờ 25 phút · c) 400 · d) 6 giờ 40 phút · e) 2 giờ 40 phút · f) 390
+- **Bài D.3** — a) 239 · 293 · 329 · 392 · 923 · 932 · b) 6 · c) 932 · d) 239 · e) 693 · f) 2
+- **Bài D.4** — a) 8 · b) 5 đường ngang, 3 đường dọc · c) 30 · d) 11 · e) 19
+- **Bài D.5** — a) 84 · b) 84 cm² · c) 1 cm² · d) 42 cm² · e) 21 cm² · f) 52 cm
 
 **Phần E**
 
@@ -178,7 +178,7 @@ Kết quả: **Đổi hết về phút, tính xong mới đổi ngược lại �
 
 **Các bước giải**
 
-Xét ý a: Mua 2 quyển vở, mỗi quyển 7 000 đồng. Hết bao nhiêu tiền?
+Xét ý a: Mua 2 quyển vở, mỗi quyển 8 000 đồng. Hết bao nhiêu tiền?
 
 Đọc vị: đây là dạng **Bài toán tiền tệ hai bước**; dấu hiệu là “Đưa … đồng”, “trả lại”, “đổi ra tờ …”.
 
@@ -188,7 +188,7 @@ Cách làm: Tính tiền hàng rồi trừ; đổi tiền thì chia.
 
 Lối tắt: Thử lại bằng cách cộng tiền hàng với tiền trả lại, phải đúng bằng tiền đưa.
 
-Kết quả: **14 000 đồng**.
+Kết quả: **16 000 đồng**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Tính tiền hàng trước bằng phép nhân, rồi mới lấy tiền đưa trừ đi tiền hàng. Đổi tiền là phép chia: tờ lớn chia cho tờ nhỏ.
 
@@ -198,51 +198,33 @@ Kết quả: **14 000 đồng**.
 
 *Phải chắc trước khi làm bài này:* Nhân, trừ với số tròn nghìn.
 
-### Bài B.2 — Đếm số cách chọn bằng quy tắc nhân
+### Bài B.2 — Rào quanh mảnh vườn
 
 **Các bước giải**
 
-Xét ý a: Có 4 loại bánh và 4 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
+Chu vi hình chữ nhật = (dài + rộng) × 2 = (38 + 18) × 2 = **112 m**.
 
-Đọc vị: đây là dạng **Quy tắc nhân**; dấu hiệu là Chọn một phần tử từ mỗi nhóm.
+Chừa cửa 2 m thì lưới chỉ cần 112 − 2 = 110 m.
 
-Kiến thức phải dùng: Quy tắc nhân trong phép đếm.
+Số cọc: đường rào là một **đường khép kín**, nên cọc đầu tiên cũng chính là cọc cuối cùng — **số cọc bằng đúng số khoảng**, không cộng thêm 1. Vậy 112 : 2 = **56 cọc**.
 
-Cách làm: Nhân số cách của các bước.
+Tiền lưới: 110 × 25 000 = **2 750 000 đồng**.
 
-Lối tắt: Vẽ sơ đồ cây hai tầng là thấy ngay phép nhân.
+Diện tích: 38 × 18 = **684 m²** — chú ý đơn vị là mét vuông, khác với chu vi tính bằng mét.
 
-Kết quả: **16 cách**.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Tính chu vi trước, mọi câu về rào và cọc đều dựa vào nó. Riêng số cọc phải nhớ đường rào khép kín nên không cộng thêm 1.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Với mỗi loại bánh có đủ số cách chọn nước, nên tổng số cách bằng số loại bánh nhân số loại nước. Vẽ sơ đồ cây để nhìn thấy điều đó.
+*Điểm chốt:* Đường khép kín: số cọc = số khoảng. Đường thẳng có hai đầu: số cọc = số khoảng + 1.
 
-*Điểm chốt:* Hai việc **nối tiếp nhau** thì nhân, không cộng.
+*Muốn khó hơn:* Chừa hai cửa ở hai cạnh khác nhau rồi hỏi lại số cọc.
 
-### Bài B.3 — Trung bình cộng trong tình huống thực tế
+*Phải chắc trước khi làm bài này:* Công thức chu vi, diện tích hình chữ nhật.
 
-**Các bước giải**
-
-Xét ý a: 4 ngày đầu tuần một cửa hàng bán được lần lượt 276, 287, 278, 275 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
-
-Đọc vị: đây là dạng **Ba dạng bài trung bình cộng**; dấu hiệu là Cụm “trung bình mỗi …”.
-
-Kiến thức phải dùng: Quan hệ tổng – số lượng – trung bình cộng.
-
-Cách làm: Đi qua tổng làm trung gian.
-
-Lối tắt: Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng.
-
-Kết quả: **279 kg**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Ba dạng ngược nhau: biết các số tìm trung bình cộng (cộng rồi chia); biết trung bình cộng tìm tổng (nhân); biết trung bình cộng và một số số hạng, tìm số hạng còn thiếu (lấy tổng trừ đi các số đã biết).
-
-*Điểm chốt:* Từ trung bình cộng luôn tìm được **tổng** trước, rồi mới tính tiếp.
-
-### Bài B.4 — Đổi đơn vị đo ở lớp 3
+### Bài B.3 — Đổi đơn vị đo ở lớp 3
 
 **Các bước giải**
 
-Xét ý a: 12 km = … m
+Xét ý a: 36 kg = … g
 
 Đọc vị: đây là dạng **Đổi đơn vị đo**; dấu hiệu là Hai đơn vị khác nhau nối bởi dấu ….
 
@@ -252,225 +234,173 @@ Cách làm: Nhớ quan hệ rồi nhân.
 
 Lối tắt: Thêm đúng số chữ số 0 tương ứng: 3 số 0 cho km→m, 2 số 0 cho m→cm.
 
-Kết quả: **12 000**.
+Kết quả: **36 000**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** 1 km = 1 000 m; 1 m = 100 cm; 1 cm = 10 mm; 1 kg = 1 000 g; 1 l = 1 000 ml. Đổi từ đơn vị lớn sang đơn vị bé thì nhân.
 
 *Điểm chốt:* Nhớ đúng **số lần** giữa hai đơn vị.
 
-### Bài B.5 — Đếm số hạng của dãy cách đều
+### Bài B.4 — Đọc bảng thống kê của lớp
 
 **Các bước giải**
 
-Xét ý a: Dãy 10, 12, 14, …, 60 có bao nhiêu số hạng?
+Đọc bảng thì đọc **tên cột trước, số sau**. Cột thứ hai là số bạn nam, cột thứ ba là số bạn nữ — mỗi tổ nằm trên một hàng.
 
-Đọc vị: đây là dạng **Đếm số hạng dãy cách đều**; dấu hiệu là Dãy có số đầu, số cuối, khoảng cách đều.
+Muốn biết mỗi tổ có bao nhiêu bạn thì cộng hai cột của hàng ấy: Tổ 1 7 + 7 = 14 · Tổ 2 4 + 8 = 12 · Tổ 3 6 + 9 = 15 · Tổ 4 8 + 8 = 16.
 
-Kiến thức phải dùng: Dãy cách đều.
+So bốn số vừa tính: nhiều nhất là Tổ 4 với 16 bạn, ít nhất là Tổ 2 với 12 bạn.
 
-Cách làm: (cuối − đầu) : khoảng cách + 1.
+Cả lớp: cộng theo **cột** — nam 25 bạn, nữ 32 bạn, tất cả **57 bạn**. Cộng theo hàng rồi cộng lại cũng ra đúng con số ấy, đó là cách tự kiểm tra.
 
-Lối tắt: Dãy số liên tiếp từ a đến b có b − a + 1 số hạng.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Cộng theo hàng để biết từng tổ, cộng theo cột để biết cả lớp. Hai cách phải cho cùng một tổng — đó là cách tự kiểm tra không cần ai chấm.
 
-Kết quả: **26**.
+*Điểm chốt:* Cộng theo hàng và cộng theo cột phải ra cùng một tổng.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Số số hạng = (số cuối − số đầu) : khoảng cách + 1. Phần chia cho biết số khoảng; số số hạng nhiều hơn số khoảng đúng 1.
+*Muốn khó hơn:* Vẽ biểu đồ cột cho bảng này rồi trả lời lại các câu hỏi.
 
-*Điểm chốt:* Số khoảng ít hơn số số hạng đúng **1**.
+*Phải chắc trước khi làm bài này:* Kỹ năng đọc bảng và cộng trừ trong phạm vi 100.
 
-### Bài C.1 — Chu vi và diện tích hình chữ nhật, hình vuông
-
-**Các bước giải**
-
-Xét ý a: Hình vuông cạnh 16 cm. Tính diện tích.
-
-Đọc vị: đây là dạng **Chu vi, diện tích hình cơ bản**; dấu hiệu là Cho chiều dài, chiều rộng hoặc cạnh.
-
-Kiến thức phải dùng: Công thức chu vi, diện tích.
-
-Cách làm: Chọn công thức, ghi đúng đơn vị.
-
-Lối tắt: Hình vuông là hình chữ nhật có dài bằng rộng.
-
-Kết quả: **256 cm²**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
-
-*Điểm chốt:* Chu vi ghi **cm**, diện tích ghi **cm²**.
-
-### Bài C.2 — Hình tròn: tâm, bán kính, đường kính
+### Bài B.5 — Bài toán tổng – hiệu có lời văn
 
 **Các bước giải**
 
-Xét ý a: Hình tròn A có bán kính 7 cm, hình tròn B có đường kính 54 cm. Hình nào lớn hơn?
+Xét ý a: Đội Hai và tổ Một trồng được 552 cây. Đội Hai trồng nhiều hơn tổ Một 138 cây. Mỗi tổ trồng bao nhiêu cây?
 
-Đọc vị: đây là dạng **Nhận biết hình tròn và các yếu tố**; dấu hiệu là Đề nhắc tâm, bán kính, đường kính.
+Đọc vị: đây là dạng **Tổng – hiệu có lời văn**; dấu hiệu là “Có tất cả …” và “… nhiều hơn … là …”.
 
-Kiến thức phải dùng: Quan hệ đường kính – bán kính.
+Kiến thức phải dùng: Công thức tổng – hiệu, sơ đồ đoạn thẳng.
 
-Cách làm: Quy về bán kính rồi so sánh hoặc tính.
+Cách làm: Đọc vị tổng và hiệu → sơ đồ → công thức.
 
-Lối tắt: Nhìn đơn vị và tên đại lượng trước khi so sánh.
+Lối tắt: Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần.
 
-Kết quả: **B**.
+Kết quả: **đội Hai: 345 cây, tổ Một: 207 cây**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Mọi bán kính của một hình tròn đều bằng nhau. Đường kính đi qua tâm và bằng **hai lần** bán kính. Muốn so sánh hai hình tròn thì đưa về cùng một đại lượng: cùng bán kính hoặc cùng đường kính.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Đọc đề, xác định đâu là **tổng**, đâu là **hiệu**. Vẽ sơ đồ hai đoạn thẳng. Số lớn = (tổng + hiệu) : 2; số bé = tổng − số lớn.
 
-*Điểm chốt:* So sánh phải **cùng loại đại lượng** — bán kính với bán kính.
+*Điểm chốt:* Cụm “có tất cả” cho **tổng**; cụm “nhiều hơn” cho **hiệu**.
 
-*Muốn khó hơn:* Ba hình tròn cùng tâm — tính khoảng cách giữa hai đường tròn liên tiếp.
-
-*Phải chắc trước khi làm bài này:* Nhân, chia với 2 và cách dùng com-pa.
-
-### Bài C.3 — Trồng cây và chia đoạn — năm trường hợp
+### Bài C.1 — Trung bình cộng trong tình huống thực tế
 
 **Các bước giải**
 
-Xét ý a: Cưa một khúc gỗ dài 60 m thành các đoạn dài 3 m. Phải cưa bao nhiêu nhát?
+Xét ý a: Trung bình mỗi ngày bán được 254 kg gạo. Hỏi 5 ngày bán được tất cả bao nhiêu ki-lô-gam?
 
-Đọc vị: đây là dạng **Bài toán trồng cây, chia đoạn**; dấu hiệu là “Trồng cây”, “cột điện”, “quanh hồ”, “cưa thành đoạn”.
+Đọc vị: đây là dạng **Ba dạng bài trung bình cộng**; dấu hiệu là Cụm “trung bình mỗi …”.
 
-Kiến thức phải dùng: Quan hệ số điểm – số khoảng.
+Kiến thức phải dùng: Quan hệ tổng – số lượng – trung bình cộng.
 
-Cách làm: Tính số khoảng rồi chọn công thức theo trường hợp.
+Cách làm: Đi qua tổng làm trung gian.
 
-Lối tắt: Khép kín thì số cây bằng đúng số khoảng — không cộng, không trừ.
+Lối tắt: Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng.
 
-Kết quả: **19**.
+Kết quả: **1 270 kg**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Tính **số khoảng** trước: độ dài chia khoảng cách. Rồi chọn công thức theo trường hợp — trồng cả hai đầu thì cộng 1, một đầu thì bằng, không đầu nào thì trừ 1, khép kín thì bằng, cưa thành đoạn thì trừ 1.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Ba dạng ngược nhau: biết các số tìm trung bình cộng (cộng rồi chia); biết trung bình cộng tìm tổng (nhân); biết trung bình cộng và một số số hạng, tìm số hạng còn thiếu (lấy tổng trừ đi các số đã biết).
 
-*Điểm chốt:* Năm trường hợp cho **năm đáp số khác nhau** với cùng một số khoảng.
+*Điểm chốt:* Từ trung bình cộng luôn tìm được **tổng** trước, rồi mới tính tiếp.
 
-*Muốn khó hơn:* Trồng cây hai bên đường — nhân đôi kết quả một bên.
-
-*Phải chắc trước khi làm bài này:* Phép chia hết và thói quen vẽ hình kiểm tra.
-
-### Bài C.4 — Phép chia có dư
+### Bài C.2 — Tổng – hiệu bằng sơ đồ đoạn thẳng
 
 **Các bước giải**
 
-Xét ý a: 922 : 3 = ? (dư ?)
+Vẽ hai đoạn thẳng: đoạn của Vy dài hơn đoạn của Bình đúng 46 viên.
 
-Đọc vị: đây là dạng **Phép chia có dư**; dấu hiệu là Đề yêu cầu ghi cả thương và số dư.
+Bước 1 — nếu bớt 46 viên của Vy thì hai đoạn bằng nhau, tổng mới là 190 − 46 = 144 (viên).
 
-Kiến thức phải dùng: Quan hệ giữa số bị chia, số chia, thương và số dư.
+Bước 2 — chia đôi tổng mới được số bi của Bình: 144 : 2 = 72 (viên).
 
-Cách làm: Đặt tính chia, kiểm tra điều kiện số dư.
+Bước 3 — số bi của Vy: 72 + 46 = 118 (viên).
 
-Lối tắt: Ước lượng thương bằng cách làm tròn số chia trước khi chia.
+Thử lại: 118 + 72 = 190 ✓ và 118 − 72 = 46 ✓
 
-Kết quả: **307 dư 1**.
+Đáp số: **Vy 118 viên, Bình 72 viên**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Vẽ hai đoạn thẳng, đoạn dài hơn đúng phần hiệu. Bớt phần hiệu đi thì hai đoạn bằng nhau; chia đôi tổng mới ra số bé, cộng hiệu ra số lớn.
 
-*Điểm chốt:* Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
+*Điểm chốt:* **Bớt hiệu rồi mới chia đôi** — đảo thứ tự là sai.
 
-### Bài C.5 — Tính nhanh bằng cách ghép số tròn
+*Muốn khó hơn:* Giấu tổng: cho biết “nếu bạn thứ nhất cho bạn kia 3 viên thì hai bạn bằng nhau” để học sinh tự suy ra hiệu.
 
-**Các bước giải**
+*Phải chắc trước khi làm bài này:* Cộng, trừ trong phạm vi 1 000 và phép chia cho 2.
 
-Xét ý a: 240 + 65 − 65
-
-Đọc vị: đây là dạng **Tính nhanh tổng nhiều số hạng**; dấu hiệu là Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm.
-
-Kiến thức phải dùng: Tính chất giao hoán, kết hợp của phép cộng.
-
-Cách làm: Ghép cặp tròn rồi cộng.
-
-Lối tắt: Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10.
-
-Kết quả: **240**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Dùng tính chất giao hoán và kết hợp của phép cộng để đổi chỗ, nhóm những số cộng lại thành số tròn chục, tròn trăm rồi mới cộng phần còn lại.
-
-*Điểm chốt:* Tìm **cặp cộng tròn 100** trước khi cộng theo thứ tự.
-
-### Bài D.1 — Xem đồng hồ và tính thời gian
-
-> **BẪY — Phần phút vượt quá 60.**
+### Bài C.3 — Số nhà trên một dãy phố
 
 **Các bước giải**
 
-Xét ý a: Bây giờ là 11 giờ 45 phút. Cách đây 90 phút là mấy giờ?
+Dãy số nhà một bên phố là **dãy cách đều 2 đơn vị**: 7, 9, 11, …
 
-Đọc vị: đây là dạng **Tính thời gian trong ngày**; dấu hiệu là Có chữ “giờ”, “phút”, “sau … phút nữa”.
+Số nhà thứ 6: đi từ nhà đầu tiên thì phải bước 6 − 1 = 5 lần, mỗi lần 2 đơn vị, nên số nhà là 7 + 5 × 2 = **17**.
 
-Kiến thức phải dùng: Quan hệ giờ – phút.
+Đếm số nhà cả dãy: (23 − 7) : 2 = 8 — đó mới là **số khoảng cách**, chưa phải số nhà. Cộng thêm 1 mới ra **9 nhà**.
 
-Cách làm: Quy về phút, tính, đổi lại.
+Đây là bẫy quen thuộc nhất của dãy cách đều: giữa n vật thì chỉ có n − 1 khoảng, như trồng cây hai đầu một đoạn đường.
 
-Lối tắt: Cộng tròn giờ trước, cộng phút lẻ sau.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Dãy số nhà là dãy cách đều. Số hạng thứ k bằng số đầu cộng (k − 1) lần khoảng cách; còn **số lượng số hạng** bằng số khoảng cách cộng 1.
 
-Kết quả: **10 giờ 15 phút**.
+*Điểm chốt:* Số khoảng cách luôn ít hơn số vật đúng 1 — quên cộng 1 là mất bài.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** 1 giờ = 60 phút. Đổi cả hai về phút rồi cộng hoặc trừ, sau đó đổi kết quả trở lại thành giờ và phút bằng phép chia cho 60 lấy thương và dư.
+*Muốn khó hơn:* Hỏi tổng tất cả các số nhà trong dãy.
 
-*Điểm chốt:* Thời gian đếm theo **60**, không theo 10.
+*Phải chắc trước khi làm bài này:* Dãy số cách đều và phép chia hết.
 
-### Bài D.2 — Một phần mấy của một số — bài toán có lời văn
-
-> **BẪY — Câu hỏi hỏi phần còn lại.**
+### Bài C.4 — Đọc bảng số liệu
 
 **Các bước giải**
 
-Xét ý a: Một cửa hàng có 115 kg gạo, đã bán 1 phần 5 số gạo đó. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
+Xét ý a: Cả bốn bạn gấp được bao nhiêu bông hoa?
 
-Đọc vị: đây là dạng **Tìm một phần mấy rồi tính phần còn lại**; dấu hiệu là “Đã bán một phần mấy”, hỏi “còn lại”.
+Đọc vị: đây là dạng **Đọc bảng số liệu**; dấu hiệu là Đề cho bảng số liệu kèm nhiều câu hỏi.
 
-Kiến thức phải dùng: Phân số một phần mấy, phép trừ.
+Kiến thức phải dùng: Thống kê đơn giản, trung bình cộng.
 
-Cách làm: Chia để tìm phần đã dùng rồi trừ.
+Cách làm: Ghi lại số liệu rồi trả lời từng câu.
 
-Lối tắt: Bán 1 phần 4 thì còn 3 phần 4 — chia rồi nhân 3, một bước là xong.
+Lối tắt: Tính tổng một lần rồi dùng lại cho các câu sau.
 
-Kết quả: **92 kg**.
+Kết quả: **42**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Bước 1: tìm số gạo đã bán bằng cách chia tổng cho mẫu số. Bước 2: lấy tổng trừ đi số đã bán để ra số còn lại.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Đọc bảng theo từng cột, ghi lại các số. Tổng là cộng tất cả; nhiều nhất, ít nhất là so sánh; trung bình cộng là tổng chia số bạn.
 
-*Điểm chốt:* Đề hỏi số **còn lại**, nên phải trừ ở bước hai.
+*Điểm chốt:* Đọc **đúng cột** — mỗi số gắn với đúng một tên.
 
-### Bài D.3 — Tổng – tỉ, hiệu – tỉ và so sánh một phần mấy
-
-> **BẪY — Tổng số phần hay hiệu số phần.**
+### Bài C.5 — Nhẩm tiền khi đi chợ
 
 **Các bước giải**
 
-Xét ý a: Tổ Ba trồng nhiều hơn nhóm Hoa Phượng 22 cây, và số cây của tổ Ba gấp 2 lần số cây của nhóm Hoa Phượng. Mỗi tổ trồng bao nhiêu cây?
+Đi chợ thì cần **biết nhanh khoảng bao nhiêu** trước, biết chính xác sau. Vì vậy nhẩm bằng số tròn trước rồi mới cộng số lẻ để bù.
 
-Đọc vị: đây là dạng **Tổng – tỉ, hiệu – tỉ mức làm quen**; dấu hiệu là “Gấp … lần” đi cùng “có tất cả” hoặc “nhiều hơn”.
+đậu phụ 71 000 → 70 000 · chuối 74 000 → 70 000 · thịt lợn 95 500 → 100 000
 
-Kiến thức phải dùng: Tỉ số, sơ đồ đoạn thẳng, chia theo tỉ lệ.
+Cộng số tròn: 70 000 + 70 000 + 100 000 = 240 000 đồng — đây là con số nhẩm trong đầu khi đứng ở chợ.
 
-Cách làm: Sơ đồ phần bằng nhau → giá trị một phần → nhân.
+Tổng đúng: 71 000 + 74 000 + 95 500 = **240 500 đồng**, lệch 500 đồng so với số nhẩm.
 
-Lối tắt: Tổng chia hết cho tổng số phần; không chia hết là đã đọc sai tỉ số.
+Tiền trả lại: 250 000 − 240 500 = **9 500 đồng**.
 
-Kết quả: **nhóm Hoa Phượng: 22 cây, tổ Ba: 44 cây**.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Làm tròn từng giá đến hàng chục nghìn để cộng nhẩm, rồi cộng lại số gốc để có tổng đúng. Hai con số ấy dùng vào hai việc khác nhau: một để biết đủ tiền không, một để trả tiền.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Tỉ số cho biết số phần bằng nhau. Bài cho tổng thì chia tổng cho **tổng số phần**; bài cho hiệu thì chia hiệu cho **hiệu số phần**. So sánh một phần mấy là lấy số bé chia số lớn.
+*Điểm chốt:* Ước lượng và tính đúng là hai việc khác nhau, đừng lẫn.
 
-*Điểm chốt:* Cho tổng thì chia cho tổng số phần, cho hiệu thì chia cho hiệu số phần.
+*Muốn khó hơn:* Thêm một món được giảm giá và hỏi lại tiền trả lại.
 
-*Muốn khó hơn:* Giấu tỉ số: cho biết “nếu tổ Một trồng thêm 6 cây nữa thì bằng tổ Hai”.
+*Phải chắc trước khi làm bài này:* Làm tròn số và cộng trừ số có sáu chữ số.
 
-*Phải chắc trước khi làm bài này:* Phép nhân, phép chia trong bảng và cách vẽ sơ đồ đoạn thẳng.
-
-### Bài D.4 — Tháng, năm và cách xem lịch
+### Bài D.1 — Tháng, năm và cách xem lịch
 
 > **BẪY — Tháng 2 và năm nhuận.**
 
 **Các bước giải**
 
-Tháng 4 thuộc nhóm tháng 30 ngày, nên có 30 ngày.
+Tháng 3 thuộc nhóm tháng 31 ngày, nên có 31 ngày.
 
-Ngày 1 là Thứ Năm. Cứ sau 7 ngày thì lặp lại đúng thứ ấy.
+Ngày 1 là Thứ Sáu. Cứ sau 7 ngày thì lặp lại đúng thứ ấy.
 
-Từ ngày 1 đến ngày 18 cách nhau 17 ngày.
+Từ ngày 1 đến ngày 26 cách nhau 25 ngày.
 
-17 : 7 dư 3, nên lùi 3 bước từ Thứ Năm.
+25 : 7 dư 4, nên lùi 4 bước từ Thứ Sáu.
 
-Vậy ngày 18 là **Chủ nhật**.
+Vậy ngày 26 là **Thứ Ba**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Các tháng 1, 3, 5, 7, 8, 10, 12 có 31 ngày; tháng 4, 6, 9, 11 có 30 ngày; tháng 2 có 28 ngày, năm nhuận 29 ngày. Thứ trong tuần lặp lại sau mỗi 7 ngày, nên chia cho 7 lấy số dư.
 
@@ -480,29 +410,93 @@ Vậy ngày 18 là **Chủ nhật**.
 
 *Phải chắc trước khi làm bài này:* Phép chia có dư và bảng số ngày các tháng.
 
-### Bài D.5 — Nguyên lý bù trừ với hai tập hợp
+### Bài D.2 — Xem đồng hồ và tính thời gian
+
+> **BẪY — Phần phút vượt quá 60.**
 
 **Các bước giải**
 
-Vẽ hai vòng tròn giao nhau. Miền giữa là 9 bạn thích cả hai môn.
+Xét ý a: Bây giờ là 10 giờ 45 phút. Sau 60 phút nữa là mấy giờ?
 
-Chỉ thích Toán: 27 − 9 = 18 (bạn).
+Đọc vị: đây là dạng **Tính thời gian trong ngày**; dấu hiệu là Có chữ “giờ”, “phút”, “sau … phút nữa”.
 
-Chỉ thích Tiếng Việt: 29 − 9 = 20 (bạn).
+Kiến thức phải dùng: Quan hệ giờ – phút.
 
-Thích ít nhất một môn: 18 + 9 + 20 = 47 (bạn).
+Cách làm: Quy về phút, tính, đổi lại.
 
-Không thích môn nào: 54 − 47 = 7 (bạn).
+Lối tắt: Cộng tròn giờ trước, cộng phút lẻ sau.
 
-Đáp số ý a: **47 bạn**.
+Kết quả: **11 giờ 45 phút**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Vẽ sơ đồ Ven hai vòng tròn. **Điền miền giữa trước**, rồi trừ ra hai miền riêng. Cộng thẳng hai nhóm sẽ đếm nhóm chung **hai lần**, nên phải trừ đi một lần.
+**Cách nghĩ chung cho mọi bài cùng dạng.** 1 giờ = 60 phút. Đổi cả hai về phút rồi cộng hoặc trừ, sau đó đổi kết quả trở lại thành giờ và phút bằng phép chia cho 60 lấy thương và dư.
 
-*Điểm chốt:* Điền **miền giữa trước** — mọi miền khác suy ra từ đó.
+*Điểm chốt:* Thời gian đếm theo **60**, không theo 10.
 
-*Muốn khó hơn:* Thêm môn thứ ba — sơ đồ Ven ba vòng, cộng ba rồi trừ ba đôi rồi cộng lại phần chung của cả ba.
+### Bài D.3 — Lập số có ba chữ số khác nhau
 
-*Phải chắc trước khi làm bài này:* Phép cộng, trừ và cách vẽ sơ đồ Ven.
+**Các bước giải**
+
+Xét ý a: Viết tất cả các số có ba chữ số khác nhau lập được, từ bé đến lớn.
+
+Đọc vị: đây là dạng **Lập số từ bộ chữ số**; dấu hiệu là Cho ba chữ số, yêu cầu lập số.
+
+Kiến thức phải dùng: Cấu tạo số có ba chữ số.
+
+Cách làm: Cố định hàng trăm rồi hoán vị hai hàng còn lại.
+
+Lối tắt: Ba chữ số khác 0 luôn lập được đúng 6 số.
+
+Kết quả: **239 · 293 · 329 · 392 · 923 · 932**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Chọn chữ số hàng trăm trước, rồi hàng chục, rồi hàng đơn vị; mỗi chữ số dùng đúng một lần. Viết theo nhóm cùng chữ số hàng trăm để không sót và không trùng.
+
+*Điểm chốt:* Viết **có thứ tự** thì mới chắc chắn đủ và không lặp.
+
+### Bài D.4 — Đếm hình trong lưới ô vuông
+
+> **BẪY — Bỏ sót hình ghép.**
+
+**Các bước giải**
+
+Xét ý a: Lưới có bao nhiêu ô vuông nhỏ?
+
+Đọc vị: đây là dạng **Đếm hình trong lưới**; dấu hiệu là Lưới ô vuông đều.
+
+Kiến thức phải dùng: Quy tắc đếm.
+
+Cách làm: Đếm theo đường kẻ hoặc theo cỡ.
+
+Lối tắt: Số cách chọn 2 trong k là k × (k − 1) : 2.
+
+Kết quả: **8**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Chọn hai đường kẻ ngang và hai đường kẻ dọc thì được đúng một hình chữ nhật. Số cách chọn 2 trong k đường là k × (k − 1) : 2. Đếm hình vuông thì đếm theo từng cỡ cạnh 1, 2, 3…
+
+*Điểm chốt:* Đếm **theo cỡ** hoặc **theo đường kẻ** — không đếm mò.
+
+### Bài D.5 — Phủ hình và chia hình thành phần bằng nhau
+
+> **BẪY — Chia diện tích, không chia chu vi.**
+
+**Các bước giải**
+
+Bước 1 — diện tích hình chữ nhật: 14 × 6 = 84 (cm²).
+
+Bước 2 — diện tích một hình vuông nhỏ: 1 × 1 = 1 (cm²).
+
+Bước 3 — số hình vuông cần dùng: 84 : 1 = 84 (hình).
+
+Kiểm tra: xếp được 14 hàng, mỗi hàng 6 hình — đúng 84 hình ✓
+
+Đáp số: **84 hình vuông**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Số mảnh phủ kín bằng diện tích hình lớn chia diện tích một mảnh — nhưng chỉ đúng khi các mảnh **xếp khít không thừa**. Kiểm tra lại bằng cách đếm số hàng và số cột.
+
+*Điểm chốt:* Phép chia diện tích chỉ đúng khi mảnh **xếp khít**.
+
+*Muốn khó hơn:* Đổi mảnh phủ thành hình chữ nhật 1 × 2 — hỏi có mấy cách xếp khác nhau.
+
+*Phải chắc trước khi làm bài này:* Diện tích hình chữ nhật và phép chia hết.
 
 ### Bài E.1 — Đọc vị đề số 1
 
@@ -617,21 +611,21 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | A.3 | Lập bảng dạng bài | Bảng phân tích chuyên sâu sáu cột | Bảng có sẵn cột dạng bài, thiếu các cột còn lại | Tra bảng phân tích của các phiếu đã học | Học theo hàng ngang, không học theo cột dọc. | Quy về phút, tính, đổi lại · Quy về phút, đếm số lần nghỉ, cộng rồi đổi lại · Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư · Nhớ quan hệ rồi nhân… |
 | A.4 | Lập bảng dạng bài | Bảng phân tích chuyên sâu sáu cột | Bảng có sẵn cột dạng bài, thiếu các cột còn lại | Tra bảng phân tích của các phiếu đã học | Học theo hàng ngang, không học theo cột dọc. | Bảng đơn vị khối lượng · Bảng đơn vị đo lớp 3 · Quan hệ giờ – phút – giây · Bảng đơn vị đo độ dài, khối lượng… |
 | A.5 | Lập bảng dạng bài | Bảng phân tích chuyên sâu sáu cột | Bảng có sẵn cột dạng bài, thiếu các cột còn lại | Tra bảng phân tích của các phiếu đã học | Học theo hàng ngang, không học theo cột dọc. | Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm. · Số bậc chính là số chữ số 0 phải thêm vào (hoặc bớt đi). · Thử lại bằng cách cộng tiền hàng với tiền trả lại, phải đúng bằng tiền đưa. · Nhân 1 000 là thêm ba chữ số 0 vào bên phải.… |
-| B.1 | Bài toán tiền tệ hai bước | Nhân, trừ với số tròn nghìn; mệnh giá tiền Việt Nam | “Đưa … đồng”, “trả lại”, “đổi ra tờ …” | Tính tiền hàng rồi trừ; đổi tiền thì chia | Thử lại bằng cách cộng tiền hàng với tiền trả lại, phải đúng bằng tiền đưa. | 14 000 đồng · 5 tờ · 100 000 đồng · 10 tờ… |
-| B.2 | Quy tắc nhân | Quy tắc nhân trong phép đếm | Chọn một phần tử từ mỗi nhóm | Nhân số cách của các bước | Vẽ sơ đồ cây hai tầng là thấy ngay phép nhân. | 16 cách · 6 cách · 6 cách · 36 cách… |
-| B.3 | Ba dạng bài trung bình cộng | Quan hệ tổng – số lượng – trung bình cộng | Cụm “trung bình mỗi …” | Đi qua tổng làm trung gian | Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng. | 279 kg · 202 kg · 71 kg · 715 kg… |
-| B.4 | Đổi đơn vị đo | Bảng đơn vị đo lớp 3 | Hai đơn vị khác nhau nối bởi dấu … | Nhớ quan hệ rồi nhân | Thêm đúng số chữ số 0 tương ứng: 3 số 0 cho km→m, 2 số 0 cho m→cm. | 12 000 · 8 600 · 22 000 · 14 000… |
-| B.5 | Đếm số hạng dãy cách đều | Dãy cách đều | Dãy có số đầu, số cuối, khoảng cách đều | (cuối − đầu) : khoảng cách + 1 | Dãy số liên tiếp từ a đến b có b − a + 1 số hạng. | 26 · 21 · 13 · 10… |
-| C.1 | Chu vi, diện tích hình cơ bản | Công thức chu vi, diện tích | Cho chiều dài, chiều rộng hoặc cạnh | Chọn công thức, ghi đúng đơn vị | Hình vuông là hình chữ nhật có dài bằng rộng. | 256 cm² · 56 cm² · 48 cm · 48 cm… |
-| C.2 | Nhận biết hình tròn và các yếu tố | Quan hệ đường kính – bán kính | Đề nhắc tâm, bán kính, đường kính | Quy về bán kính rồi so sánh hoặc tính | Nhìn đơn vị và tên đại lượng trước khi so sánh. | B · 30 cm · 19 cm · 20 cm… |
-| C.3 | Bài toán trồng cây, chia đoạn | Quan hệ số điểm – số khoảng | “Trồng cây”, “cột điện”, “quanh hồ”, “cưa thành đoạn” | Tính số khoảng rồi chọn công thức theo trường hợp | Khép kín thì số cây bằng đúng số khoảng — không cộng, không trừ. | 19 · 37 · 23 · 28… |
-| C.4 | Phép chia có dư | Quan hệ giữa số bị chia, số chia, thương và số dư | Đề yêu cầu ghi cả thương và số dư | Đặt tính chia, kiểm tra điều kiện số dư | Ước lượng thương bằng cách làm tròn số chia trước khi chia. | 307 dư 1 · 264 dư 6 · 310 dư 5 · 170 dư 1… |
-| C.5 | Tính nhanh tổng nhiều số hạng | Tính chất giao hoán, kết hợp của phép cộng | Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm | Ghép cặp tròn rồi cộng | Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10. | 240 · 119 · 203 · 302… |
-| D.1 | Tính thời gian trong ngày | Quan hệ giờ – phút | Có chữ “giờ”, “phút”, “sau … phút nữa” | Quy về phút, tính, đổi lại | Cộng tròn giờ trước, cộng phút lẻ sau. | 10 giờ 15 phút · 6 giờ 40 phút · 375 · 5 giờ 5 phút… |
-| D.2 | Tìm một phần mấy rồi tính phần còn lại | Phân số một phần mấy, phép trừ | “Đã bán một phần mấy”, hỏi “còn lại” | Chia để tìm phần đã dùng rồi trừ | Bán 1 phần 4 thì còn 3 phần 4 — chia rồi nhân 3, một bước là xong. | 92 kg · 84 kg · 16 kg · 45 kg… |
-| D.3 | Tổng – tỉ, hiệu – tỉ mức làm quen | Tỉ số, sơ đồ đoạn thẳng, chia theo tỉ lệ | “Gấp … lần” đi cùng “có tất cả” hoặc “nhiều hơn” | Sơ đồ phần bằng nhau → giá trị một phần → nhân | Tổng chia hết cho tổng số phần; không chia hết là đã đọc sai tỉ số. | nhóm Hoa Phượng: 22 cây, tổ Ba: 44 cây · đội Một: 26 cây, tổ Hai: 78 cây · 1 phần 3 · 1 phần 4… |
-| D.4 | Lịch, tháng, năm nhuận | Số ngày các tháng, năm nhuận, chu kì 7 ngày | Đề nhắc tới ngày, tháng, thứ trong tuần | Tra quy tắc tháng; chia cho 7 lấy dư để tìm thứ | Cùng một thứ lặp lại ở các ngày cách nhau 7, 14, 21, 28. | 30 · không · Chủ nhật · 4… |
-| D.5 | Nguyên lý bù trừ, sơ đồ Ven | Đếm có phần chung; sơ đồ Ven | Có cụm “cả hai”, “ít nhất một”, “không … nào” | Vẽ Ven, điền miền giữa trước, trừ dần ra | Số thích ít nhất một môn = A + B − cả hai. | 47 · 18 · 20 · 7… |
+| B.1 | Bài toán tiền tệ hai bước | Nhân, trừ với số tròn nghìn; mệnh giá tiền Việt Nam | “Đưa … đồng”, “trả lại”, “đổi ra tờ …” | Tính tiền hàng rồi trừ; đổi tiền thì chia | Thử lại bằng cách cộng tiền hàng với tiền trả lại, phải đúng bằng tiền đưa. | 16 000 đồng · 25 tờ · 75 000 đồng · 2 tờ… |
+| B.2 | Chu vi hình chữ nhật | Chu vi, diện tích hình chữ nhật; bài toán trồng cây | Một mảnh đất có kích thước, cần rào hoặc cắm cọc quanh | Tính chu vi rồi chia cho khoảng cách giữa hai cọc | Chu vi chia khoảng cách ra ngay số cọc, không phải cộng trừ gì thêm. | (38 + 18) × 2 = 112 m · 112 − 2 = 110 m · 112 : 2 = 56 cọc · 110 × 25 000 = 2 750 000 đồng… |
+| B.3 | Đổi đơn vị đo | Bảng đơn vị đo lớp 3 | Hai đơn vị khác nhau nối bởi dấu … | Nhớ quan hệ rồi nhân | Thêm đúng số chữ số 0 tương ứng: 3 số 0 cho km→m, 2 số 0 cho m→cm. | 36 000 · 32 000 · 34 000 · 460… |
+| B.4 | Đọc bảng số liệu thống kê | Đọc bảng; cộng trừ trong phạm vi 100 | Một bảng hai chiều: hàng là nhóm, cột là loại số liệu | Cộng theo hàng cho từng nhóm, cộng theo cột cho toàn bộ | Tổng theo hàng và tổng theo cột luôn bằng nhau, dùng để soát lại. | Tổ 4 — 16 bạn · Tổ 2 — 12 bạn · 25 bạn nam và 32 bạn nữ · 57 bạn… |
+| B.5 | Tổng – hiệu có lời văn | Công thức tổng – hiệu, sơ đồ đoạn thẳng | “Có tất cả …” và “… nhiều hơn … là …” | Đọc vị tổng và hiệu → sơ đồ → công thức | Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần. | đội Hai: 345 cây, tổ Một: 207 cây · 3A: 121 quyển, 5A: 77 quyển · cửa hàng: 79 kg, hợp tác xã: 75 kg · tổ Một: 42 cây, đội Một: 30 cây… |
+| C.1 | Ba dạng bài trung bình cộng | Quan hệ tổng – số lượng – trung bình cộng | Cụm “trung bình mỗi …” | Đi qua tổng làm trung gian | Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng. | 1 270 kg · 44 kg · 87 kg · 140 kg… |
+| C.2 | Bài toán tổng – hiệu | Sơ đồ đoạn thẳng; số bé = (tổng − hiệu) : 2 | “Có tất cả …” cho tổng; “nhiều hơn …” cho hiệu | Sơ đồ đoạn thẳng đưa về hai phần bằng nhau | Tìm số bé trước rồi cộng hiệu, chỉ phải chia một lần. | Vy: 118 viên, Bình: 72 viên · Khánh: 19 viên, Hùng: 11 viên · Hà: 108 viên, Khánh: 70 viên · Thảo: 24 viên, Bình: 18 viên… |
+| C.3 | Dãy số cách đều | Số hạng thứ n của dãy cách đều; đếm số hạng | Một dãy số thật ngoài đời, các số cách nhau đều nhau | Số hạng thứ k = số đầu + (k − 1) × khoảng cách | Nhớ một câu: **số vật = số khoảng + 1** khi đếm cả hai đầu. | 13 · (23 − 7) : 2 + 1 = 9 nhà · 7 + (6 − 1) × 2 = 17 · (13 − 7) : 2 + 1 = 4… |
+| C.4 | Đọc bảng số liệu | Thống kê đơn giản, trung bình cộng | Đề cho bảng số liệu kèm nhiều câu hỏi | Ghi lại số liệu rồi trả lời từng câu | Tính tổng một lần rồi dùng lại cho các câu sau. | 42 · Vy (14 bông) · An (7 bông) · 7… |
+| C.5 | Tính nhanh tổng | Làm tròn; cộng trừ trong phạm vi trăm nghìn | Vài món hàng có giá lẻ, cần biết nhanh tổng khoảng bao nhiêu | Làm tròn để nhẩm, cộng số gốc để lấy kết quả đúng | Cộng phần nghìn trước rồi cộng phần lẻ sau, không đặt tính. | đậu phụ: 70 000 · chuối: 70 000 · thịt lợn: 100 000 · 240 000 · 240 500 · 500 đồng… |
+| D.1 | Lịch, tháng, năm nhuận | Số ngày các tháng, năm nhuận, chu kì 7 ngày | Đề nhắc tới ngày, tháng, thứ trong tuần | Tra quy tắc tháng; chia cho 7 lấy dư để tìm thứ | Cùng một thứ lặp lại ở các ngày cách nhau 7, 14, 21, 28. | 31 · có · Thứ Ba · 5… |
+| D.2 | Tính thời gian trong ngày | Quan hệ giờ – phút | Có chữ “giờ”, “phút”, “sau … phút nữa” | Quy về phút, tính, đổi lại | Cộng tròn giờ trước, cộng phút lẻ sau. | 11 giờ 45 phút · 9 giờ 25 phút · 400 · 6 giờ 40 phút… |
+| D.3 | Lập số từ bộ chữ số | Cấu tạo số có ba chữ số | Cho ba chữ số, yêu cầu lập số | Cố định hàng trăm rồi hoán vị hai hàng còn lại | Ba chữ số khác 0 luôn lập được đúng 6 số. | 239 · 293 · 329 · 392 · 923 · 932 · 6 · 932 · 239… |
+| D.4 | Đếm hình trong lưới | Quy tắc đếm | Lưới ô vuông đều | Đếm theo đường kẻ hoặc theo cỡ | Số cách chọn 2 trong k là k × (k − 1) : 2. | 8 · 5 đường ngang, 3 đường dọc · 30 · 11… |
+| D.5 | Phủ hình, chia hình | Diện tích hình chữ nhật, hình vuông; phép chia | “Phủ kín bằng các hình vuông cạnh …”, “chia thành … phần bằng nhau” | Chia diện tích cho diện tích, kiểm tra bằng số hàng, số cột | Đếm số hàng nhân số cột nhanh hơn và tự kiểm tra được. | 84 · 84 cm² · 1 cm² · 42 cm²… |
 | E.1 | Bài toán cân, chia hết | Phép chia hết và chia có dư; đơn vị khối lượng | Cân đĩa với một loại quả cân | Chia và xét số dư | Đổi cả hai về cùng đơn vị rồi chia. | Bài toán cân, chia hết · Cân đĩa với một loại quả cân · Phép chia hết và chia có dư; đơn vị khối lượng · Chia và xét số dư… |
 | E.2 | Thời gian biểu, cộng thời gian | Quan hệ giờ – phút; quan hệ số khoảng – số điểm | Có nhiều tiết học và thời gian nghỉ giữa các tiết | Quy về phút, đếm số lần nghỉ, cộng rồi đổi lại | Bài này chính là bài trồng cây đội lốt thời gian. | Thời gian biểu, cộng thời gian · Có nhiều tiết học và thời gian nghỉ giữa các tiết · Quan hệ giờ – phút; quan hệ số khoảng – số điểm · Quy về phút, đếm số lần nghỉ, cộng rồi đổi lại… |
 | E.3 | Đổi đơn vị đo | Bảng đơn vị đo lớp 3 | Hai đơn vị khác nhau nối bởi dấu … | Nhớ quan hệ rồi nhân | Thêm đúng số chữ số 0 tương ứng: 3 số 0 cho km→m, 2 số 0 cho m→cm. | Đổi đơn vị đo · Hai đơn vị khác nhau nối bởi dấu … · Bảng đơn vị đo lớp 3 · Nhớ quan hệ rồi nhân… |
@@ -650,20 +644,20 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | A.4 | TD2, TD3 | Bảng chỉ có giá trị khi **đọc ngang được từng hàng**. |
 | A.5 | TD2, TD3 | Bảng chỉ có giá trị khi **đọc ngang được từng hàng**. |
 | B.1 | TD2, TD3 | Phải tính **tiền hàng** trước khi trừ. |
-| B.2 | TD2, TD4 | Hai việc **nối tiếp nhau** thì nhân, không cộng. |
-| B.3 | TD2, TD3 | Từ trung bình cộng luôn tìm được **tổng** trước, rồi mới tính tiếp. |
-| B.4 | TD1 | Nhớ đúng **số lần** giữa hai đơn vị. |
-| B.5 | TD4, TD3 | Số khoảng ít hơn số số hạng đúng **1**. |
-| C.1 | TD1, TD3 | Chu vi ghi **cm**, diện tích ghi **cm²**. |
-| C.2 | TD1, TD2 | So sánh phải **cùng loại đại lượng** — bán kính với bán kính. |
-| C.3 | TD3, TD6 | Năm trường hợp cho **năm đáp số khác nhau** với cùng một số khoảng. |
-| C.4 | TD1 | Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong. |
-| C.5 | TD5, TD3 | Tìm **cặp cộng tròn 100** trước khi cộng theo thứ tự. |
-| D.1 | TD1, TD3 | Thời gian đếm theo **60**, không theo 10. |
-| D.2 | TD2, TD3 | Đề hỏi số **còn lại**, nên phải trừ ở bước hai. |
-| D.3 | TD3, TD2 | Cho tổng thì chia cho tổng số phần, cho hiệu thì chia cho hiệu số phần. |
-| D.4 | TD4, TD1 | Thứ trong tuần **tuần hoàn chu kì 7** — chia lấy dư là ra. |
-| D.5 | TD2, TD6 | Điền **miền giữa trước** — mọi miền khác suy ra từ đó. |
+| B.2 | TD2, TD4 | Đường khép kín: số cọc = số khoảng. Đường thẳng có hai đầu: số cọc = số khoảng + 1. |
+| B.3 | TD1 | Nhớ đúng **số lần** giữa hai đơn vị. |
+| B.4 | TD1, TD2 | Cộng theo hàng và cộng theo cột phải ra cùng một tổng. |
+| B.5 | TD2, TD3 | Cụm “có tất cả” cho **tổng**; cụm “nhiều hơn” cho **hiệu**. |
+| C.1 | TD2, TD3 | Từ trung bình cộng luôn tìm được **tổng** trước, rồi mới tính tiếp. |
+| C.2 | TD3, TD2 | **Bớt hiệu rồi mới chia đôi** — đảo thứ tự là sai. |
+| C.3 | TD2, TD4 | Số khoảng cách luôn ít hơn số vật đúng 1 — quên cộng 1 là mất bài. |
+| C.4 | TD1, TD2 | Đọc **đúng cột** — mỗi số gắn với đúng một tên. |
+| C.5 | TD1, TD3 | Ước lượng và tính đúng là hai việc khác nhau, đừng lẫn. |
+| D.1 | TD4, TD1 | Thứ trong tuần **tuần hoàn chu kì 7** — chia lấy dư là ra. |
+| D.2 | TD1, TD3 | Thời gian đếm theo **60**, không theo 10. |
+| D.3 | TD4, TD3 | Viết **có thứ tự** thì mới chắc chắn đủ và không lặp. |
+| D.4 | TD4, TD3 | Đếm **theo cỡ** hoặc **theo đường kẻ** — không đếm mò. |
+| D.5 | TD3, TD4 | Phép chia diện tích chỉ đúng khi mảnh **xếp khít**. |
 | E.1 | TD2, TD6 | Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**. |
 | E.2 | TD2, TD6 | Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**. |
 | E.3 | TD2, TD6 | Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**. |
@@ -684,20 +678,20 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 | A.4 | Điền từng cột rời rạc, không đối chiếu ngang. | Điền xong thì đọc lại theo hàng, mỗi hàng phải thành một câu có nghĩa. |
 | A.5 | Điền từng cột rời rạc, không đối chiếu ngang. | Điền xong thì đọc lại theo hàng, mỗi hàng phải thành một câu có nghĩa. |
 | B.1 | Lấy tiền đưa trừ ngay giá một quyển vở. | Viết rõ dòng “Tiền hàng là …” rồi mới sang bước hai. |
-| B.2 | Cộng số loại bánh với số loại nước. | Vẽ sơ đồ cây với hai nhánh đầu để thấy rõ. |
-| B.3 | Đi tìm ngay số còn thiếu mà chưa tính tổng. | Bước đầu tiên luôn viết: “Tổng = trung bình cộng × số ngày”. |
-| B.4 | Nhầm 1 m = 10 cm. | Học thuộc bảng năm quan hệ trên và đọc lại trước khi làm. |
-| B.5 | Quên cộng 1. | Thử với dãy ngắn ba số để kiểm tra công thức. |
-| C.1 | Nhầm công thức chu vi với diện tích. | Vẽ hình và ghi số đo lên hình trước khi tính. |
-| C.2 | So bán kính của hình này với đường kính của hình kia. | Đổi hết về bán kính trước khi so sánh. |
-| C.3 | Máy móc cộng 1 cho mọi trường hợp. | Vẽ hình ba khoảng, đếm tay rồi mới áp dụng cho số lớn. |
-| C.4 | Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. | Thử lại bằng công thức số bị chia = số chia × thương + số dư. |
-| C.5 | Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. | Đọc lướt cả dãy, khoanh tròn cặp số cộng lại tròn chục, tròn trăm. |
-| D.1 | Cộng phần phút thành hơn 60 mà quên đổi thành giờ. | Kiểm tra: phần phút của đáp số phải bé hơn 60. |
-| D.2 | Dừng ở bước một, trả lời số gạo đã bán. | Đọc lại câu hỏi sau khi tính xong bước một. |
-| D.3 | Dùng nhầm công thức tổng – tỉ cho bài hiệu – tỉ. | Gạch chân “có tất cả” hay “nhiều hơn” trước khi vẽ sơ đồ. |
-| D.4 | Đếm tay từng ngày nên vừa lâu vừa sai. | Đếm số ngày cách nhau rồi chia 7 lấy dư. |
-| D.5 | Cộng thẳng hai nhóm rồi coi đó là số bạn thích ít nhất một môn. | Vẽ sơ đồ Ven, ghi số vào từng miền rồi cộng lại kiểm tra với sĩ số. |
+| B.2 | Cộng thêm 1 vào số cọc như bài trồng cây trên đoạn thẳng. | Vẽ nhanh hình vuông 4 cạnh, cắm cọc thử rồi đếm. |
+| B.3 | Nhầm 1 m = 10 cm. | Học thuộc bảng năm quan hệ trên và đọc lại trước khi làm. |
+| B.4 | Đọc nhầm cột, lấy số bạn nữ trả lời câu hỏi về bạn nam. | Lấy ngón tay dò theo hàng, đọc tên cột trước khi lấy số. |
+| B.5 | Nhầm hiệu thành tổng khi đề diễn đạt vòng vo. | Ghi riêng ra hai dòng: Tổng = … ; Hiệu = … trước khi tính. |
+| C.1 | Đi tìm ngay số còn thiếu mà chưa tính tổng. | Bước đầu tiên luôn viết: “Tổng = trung bình cộng × số ngày”. |
+| C.2 | Chia đôi tổng ngay rồi cộng hiệu vào cả hai số. | Tô phần hiệu bằng bút khác màu trên sơ đồ. |
+| C.3 | Lấy (số cuối − số đầu) : 2 rồi trả lời luôn. | Thử với dãy ngắn: 1, 3, 5 có 3 số nhưng chỉ 2 khoảng. |
+| C.4 | Đọc lệch cột nên gán nhầm số cho bạn khác. | Dùng ngón tay dò theo cột khi đọc bảng. |
+| C.5 | Lấy tổng đã làm tròn ra trả tiền. | Nhẩm xong luôn hỏi: con số này để ước chừng hay để trả tiền? |
+| D.1 | Đếm tay từng ngày nên vừa lâu vừa sai. | Đếm số ngày cách nhau rồi chia 7 lấy dư. |
+| D.2 | Cộng phần phút thành hơn 60 mà quên đổi thành giờ. | Kiểm tra: phần phút của đáp số phải bé hơn 60. |
+| D.3 | Viết lộn xộn nên vừa sót vừa trùng. | Cố định chữ số hàng trăm rồi mới đổi chỗ hai chữ số còn lại. |
+| D.4 | Chỉ đếm ô nhỏ, quên hình ghép từ nhiều ô. | Kẻ bảng theo cỡ hình rồi cộng. |
+| D.5 | Chia chu vi cho cạnh mảnh thay vì chia diện tích cho diện tích. | Kẻ lưới lên hình và đếm thử một hàng. |
 | E.1 | Làm tròn lên rồi coi như cân được. | Kiểm tra phép chia có dư hay không trước khi kết luận. |
 | E.2 | Nhân số lần nghỉ bằng số tiết nên thừa một lần nghỉ. | Vẽ một hàng: tiết – nghỉ – tiết – nghỉ – tiết, rồi đếm. |
 | E.3 | Nhầm 1 m = 10 cm. | Học thuộc bảng năm quan hệ trên và đọc lại trước khi làm. |
@@ -716,20 +710,20 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 **Bài A.4** — (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 **Bài A.5** — (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 **Bài B.1** — (1) Mua tất cả hết bao nhiêu tiền? — (2) Đưa cho cô bán hàng bao nhiêu? — (3) Lấy tiền đưa trừ tiền hàng.
-**Bài B.2** — (1) Chọn xong bánh đã đủ một bộ chưa? — (2) Với mỗi loại bánh có mấy cách chọn nước? — (3) Nhân hai số lại.
-**Bài B.3** — (1) Đề cho gì và hỏi gì? — (2) Tính tổng trước bằng cách nhân trung bình cộng với số lượng. — (3) Lấy tổng trừ các số đã biết để ra số còn thiếu.
-**Bài B.4** — (1) Đơn vị nào lớn hơn? — (2) Một đơn vị lớn bằng bao nhiêu đơn vị bé? — (3) Nhân số đã cho với số lần đó.
-**Bài B.5** — (1) Khoảng cách của dãy bằng bao nhiêu? — (2) Từ số đầu tới số cuối có mấy khoảng? — (3) Số số hạng nhiều hơn số khoảng 1.
-**Bài C.1** — (1) Đề hỏi chu vi hay diện tích? — (2) Viết công thức ra trước. — (3) Ghi đúng đơn vị.
-**Bài C.2** — (1) Đường kính gấp mấy lần bán kính? — (2) Đưa cả hai hình về cùng bán kính. — (3) So hai bán kính vừa tính.
-**Bài C.3** — (1) Số khoảng bằng bao nhiêu? — (2) Đề nói trồng cả hai đầu, một đầu, hay khép kín? — (3) Cưa thành đoạn thì số nhát cưa ít hơn số đoạn 1.
-**Bài C.4** — (1) Đặt tính chia theo cột. — (2) Mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. — (3) Thử lại: nhân thương với số chia rồi cộng số dư.
-**Bài C.5** — (1) Có cặp nào cộng lại tròn 100 không? — (2) Đổi chỗ để hai số đó đứng cạnh nhau. — (3) Cộng cặp tròn trước, phần còn lại sau.
-**Bài D.1** — (1) Đổi giờ hiện tại ra phút. — (2) Cộng hoặc trừ số phút đề cho. — (3) Chia kết quả cho 60 lấy thương và số dư.
-**Bài D.2** — (1) Đã bán bao nhiêu ki-lô-gam? — (2) Đề hỏi số đã bán hay số còn lại? — (3) Lấy tổng trừ đi số đã bán.
-**Bài D.3** — (1) Vẽ mỗi tổ mấy phần bằng nhau? — (2) Đề cho tổng hay cho hiệu? — (3) Một phần bằng bao nhiêu?
-**Bài D.4** — (1) Tháng này có bao nhiêu ngày? — (2) Từ ngày 1 đến ngày cần tìm cách nhau bao nhiêu ngày? — (3) Chia số đó cho 7 và lấy số dư.
-**Bài D.5** — (1) Bao nhiêu bạn thích cả hai môn? — (2) Chỉ thích Toán thì bằng số thích Toán trừ đi đâu? — (3) Cộng ba miền lại rồi lấy sĩ số trừ đi.
+**Bài B.2** — (1) Muốn biết rào hết bao nhiêu mét thì phải tính cái gì trước? — (2) Đường rào có điểm đầu và điểm cuối tách rời nhau không? — (3) Với đường khép kín thì số cọc bằng đúng số khoảng.
+**Bài B.3** — (1) Đơn vị nào lớn hơn? — (2) Một đơn vị lớn bằng bao nhiêu đơn vị bé? — (3) Nhân số đã cho với số lần đó.
+**Bài B.4** — (1) Mỗi hàng của bảng nói về cái gì? Mỗi cột nói về cái gì? — (2) Muốn biết một tổ có bao nhiêu bạn thì cộng những số nào? — (3) Cộng theo cột rồi so với tổng cộng theo hàng để kiểm tra.
+**Bài B.5** — (1) Câu nào cho biết tổng của hai đại lượng? — (2) Câu nào cho biết chúng hơn kém nhau bao nhiêu? — (3) Vẽ sơ đồ rồi áp công thức.
+**Bài C.1** — (1) Đề cho gì và hỏi gì? — (2) Tính tổng trước bằng cách nhân trung bình cộng với số lượng. — (3) Lấy tổng trừ các số đã biết để ra số còn thiếu.
+**Bài C.2** — (1) Vẽ hai đoạn, đoạn nào dài hơn? — (2) Bớt phần hơn đi thì tổng còn lại bao nhiêu? — (3) Chia đôi tổng mới để ra số bé.
+**Bài C.3** — (1) Hai nhà liền nhau hơn kém nhau mấy đơn vị? — (2) Từ nhà đầu tới nhà thứ k phải bước bao nhiêu lần? — (3) Đếm số nhà thì cộng thêm 1 vào số khoảng cách.
+**Bài C.4** — (1) Ghi lại các số liệu ra một hàng. — (2) Cộng tất cả để có tổng. — (3) So sánh để tìm lớn nhất, bé nhất.
+**Bài C.5** — (1) Làm tròn từng giá đến hàng chục nghìn trước. — (2) Cộng các số tròn — phép này nhẩm được trong đầu. — (3) Rồi cộng lại giá gốc để lấy số đúng, và so hai kết quả.
+**Bài D.1** — (1) Tháng này có bao nhiêu ngày? — (2) Từ ngày 1 đến ngày cần tìm cách nhau bao nhiêu ngày? — (3) Chia số đó cho 7 và lấy số dư.
+**Bài D.2** — (1) Đổi giờ hiện tại ra phút. — (2) Cộng hoặc trừ số phút đề cho. — (3) Chia kết quả cho 60 lấy thương và số dư.
+**Bài D.3** — (1) Chữ số hàng trăm có mấy cách chọn? — (2) Với mỗi hàng trăm, hai chữ số còn lại xếp mấy cách? — (3) Viết theo nhóm để kiểm soát.
+**Bài D.4** — (1) Lưới có bao nhiêu đường kẻ mỗi chiều? — (2) Chọn hai đường ngang và hai đường dọc được gì? — (3) Đếm hình vuông theo từng cỡ cạnh.
+**Bài D.5** — (1) Diện tích hình lớn bằng bao nhiêu? — (2) Diện tích một mảnh bằng bao nhiêu? — (3) Chia hai diện tích cho nhau rồi đếm lại theo hàng.
 **Bài E.1** — (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
 **Bài E.2** — (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
 **Bài E.3** — (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
@@ -750,20 +744,20 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | A.4 | Cột “Kiến thức phải thuộc” trả lời câu hỏi gì? | làm gì |
 | A.5 | Cột “Cách xử lý nhanh nhất” trả lời câu hỏi gì? | làm gì |
 | B.1 | Mua 3 quyển vở 5 000 đồng một quyển, đưa 20 000 đồng. Trả lại bao nhiêu? | 5 000 đồng |
-| B.2 | 3 loại bánh, 2 loại nước. Có mấy cách chọn một bộ? | 6 cách |
-| B.3 | Trung bình mỗi ngày bán 40 kg, hỏi 5 ngày bán bao nhiêu? | 200 kg |
-| B.4 | 5 m = … cm | 500 |
-| B.5 | Dãy 2, 4, 6, …, 20 có bao nhiêu số hạng? | 10 |
-| C.1 | Hình vuông cạnh 6 cm. Tính diện tích. | 36 cm² |
-| C.2 | Hình tròn đường kính 10 cm có bán kính bao nhiêu? | 5 cm |
-| C.3 | Đường dài 20 m, cây cách nhau 4 m, trồng cả hai đầu. Mấy cây? | 6 cây |
-| C.4 | Tìm thương và số dư của 1 234 : 7 | 176 dư 2 |
-| C.5 | Tính nhanh: 37 + 145 + 63 | 245 |
-| D.1 | 7 giờ 40 phút, sau 30 phút nữa là mấy giờ? | 8 giờ 10 phút |
-| D.2 | Có 20 kg gạo, bán 1 phần 4. Còn bao nhiêu kg? | 15 kg |
-| D.3 | Hai tổ trồng 24 cây, tổ Hai gấp 3 lần tổ Một. Mỗi tổ mấy cây? | 6 và 18 |
-| D.4 | Ngày 1 tháng 5 là Thứ Ba, ngày 15 tháng 5 là thứ mấy? | Thứ Ba |
-| D.5 | 20 bạn giỏi Toán, 15 giỏi Văn, 8 giỏi cả hai. Bao nhiêu bạn giỏi ít nhất một môn? | 27 bạn |
+| B.2 | Vườn dài 20 m, rộng 10 m, cắm cọc quanh vườn cách nhau 2 m. Cần bao nhiêu cọc? | 30 cọc |
+| B.3 | 5 m = … cm | 500 |
+| B.4 | Tổ 1 có 5 nam 4 nữ, tổ 2 có 6 nam 6 nữ. Hai tổ có tất cả bao nhiêu bạn? | 21 bạn |
+| B.5 | Hai lớp có 90 quyển sách, lớp A nhiều hơn lớp B 10 quyển. Mỗi lớp có mấy quyển? | 50 và 40 |
+| C.1 | Trung bình mỗi ngày bán 40 kg, hỏi 5 ngày bán bao nhiêu? | 200 kg |
+| C.2 | Hai bạn có 30 viên bi, bạn thứ nhất nhiều hơn 4 viên. Mỗi bạn mấy viên? | 17 và 13 |
+| C.3 | Một dãy phố có các nhà số lẻ từ 1 đến 39. Dãy ấy có bao nhiêu nhà? | 20 nhà |
+| C.4 | Ba bạn gấp 5, 8, 11 bông. Trung bình mỗi bạn mấy bông? | 8 bông |
+| C.5 | Ba món giá 28 000, 41 500 và 19 000 đồng. Đưa 100 000 đồng thì được trả lại bao nhiêu? | 11 500 đồng |
+| D.1 | Ngày 1 tháng 5 là Thứ Ba, ngày 15 tháng 5 là thứ mấy? | Thứ Ba |
+| D.2 | 7 giờ 40 phút, sau 30 phút nữa là mấy giờ? | 8 giờ 10 phút |
+| D.3 | Từ 1, 2, 3 lập được mấy số có ba chữ số khác nhau? | 6 |
+| D.4 | Lưới 2 × 2 có mấy hình vuông? | 5 |
+| D.5 | Hình chữ nhật 6 cm × 4 cm phủ bằng hình vuông cạnh 2 cm. Cần mấy hình? | 6 hình |
 | E.1 | Quả cân 200 g, vật nặng 1 000 g. Cần mấy quả? | 5 quả |
 | E.2 | Học 3 tiết, mỗi tiết 40 phút, nghỉ 10 phút. Cả buổi mấy phút? | 140 phút |
 | E.3 | 5 m = … cm | 500 |

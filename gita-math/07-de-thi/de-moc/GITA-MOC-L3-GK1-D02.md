@@ -28,55 +28,52 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ### Bài 1. (2 điểm — 10 phút) Tính và điền kết quả
 
-Cho số **78 027**.
+Cho số **62 580**.
 
-a) Số 78 027 có bao nhiêu chữ số?
+a) Số 62 580 có bao nhiêu chữ số?
 b) Chữ số hàng đơn vị là chữ số nào?
 c) Chữ số hàng trăm là chữ số nào?
 d) Chữ số hàng nghìn là chữ số nào?
-e) Viết số 78 027 thành tổng các giá trị hàng.
-f) Tổng các chữ số của số 78 027 bằng bao nhiêu?
+e) Viết số 62 580 thành tổng các giá trị hàng.
+f) Tổng các chữ số của số 62 580 bằng bao nhiêu?
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
-Đặt tính rồi tính.
+Ghi rõ đơn vị đồng ở mọi kết quả.
 
-a) 1 851 : 2
-b) 586 × 2
-c) 1 056 : 3
-d) 979 × 9
-e) 5 682 : 6
-f) 6 828 : 7
+a) Đổi một tờ 20 000 đồng ra các tờ 2 000 đồng thì được mấy tờ?
+b) Mua 3 quyển vở, mỗi quyển 8 000 đồng. Hết bao nhiêu tiền?
+c) Mua 3 quyển vở, mỗi quyển 7 000 đồng. Đưa cô bán hàng một tờ 50 000 đồng. Cô phải trả lại bao nhiêu tiền?
+d) Mua 4 quyển vở, mỗi quyển 25 000 đồng. Hết bao nhiêu tiền?
+e) Đổi một tờ 10 000 đồng ra các tờ 1 000 đồng thì được mấy tờ?
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
 Tóm tắt bằng sơ đồ đoạn thẳng rồi giải.
 
-a) Nhóm Sao Mai và tổ Một trồng được 462 cây. Nhóm Sao Mai trồng nhiều hơn tổ Một 148 cây. Mỗi tổ trồng bao nhiêu cây?
-b) Trang trại và hợp tác xã chứa tất cả 228 kg gạo. Trang trại chứa nhiều hơn hợp tác xã 4 kg. Mỗi nơi chứa bao nhiêu kg?
-c) Hai lớp 5C và 4B có tất cả 828 quyển sách. Lớp 5C có nhiều hơn lớp 4B 176 quyển. Mỗi lớp có bao nhiêu quyển?
-d) Hai lớp 5A và 5B có tất cả 742 quyển sách. Lớp 5A có nhiều hơn lớp 5B 22 quyển. Mỗi lớp có bao nhiêu quyển?
-e) Nhóm Hoa Phượng và tổ Hai trồng được 730 cây. Nhóm Hoa Phượng trồng nhiều hơn tổ Hai 132 cây. Mỗi tổ trồng bao nhiêu cây?
-f) Hợp tác xã và thư viện chứa tất cả 84 kg thóc. Hợp tác xã chứa nhiều hơn thư viện 16 kg. Mỗi nơi chứa bao nhiêu kg?
+a) Cửa hàng và thư viện chứa tất cả 380 kg phân bón. Cửa hàng chứa nhiều hơn thư viện 20 kg. Mỗi nơi chứa bao nhiêu kg?
+b) Hai lớp 4A và 5B có tất cả 564 quyển sách. Lớp 4A có nhiều hơn lớp 5B 38 quyển. Mỗi lớp có bao nhiêu quyển?
+c) Nhóm Sao Mai và tổ Một trồng được 750 cây. Nhóm Sao Mai trồng nhiều hơn tổ Một 84 cây. Mỗi tổ trồng bao nhiêu cây?
+d) Nhóm Hoa Phượng và nhóm Sao Mai trồng được 746 cây. Nhóm Hoa Phượng trồng nhiều hơn nhóm Sao Mai 220 cây. Mỗi tổ trồng bao nhiêu cây?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
-Vẽ hình và kẻ lưới ra nháp.
+Kẻ một bảng lịch nhỏ ra nháp rồi trả lời.
 
-a) Một hình chữ nhật 18 cm × 2 cm được phủ kín bằng các hình vuông cạnh 1 cm. Cần bao nhiêu hình vuông?
-b) Diện tích hình chữ nhật ấy bằng bao nhiêu?
-c) Diện tích mỗi hình vuông nhỏ bằng bao nhiêu?
-d) Chia hình chữ nhật ấy thành 2 phần bằng nhau thì mỗi phần có diện tích bao nhiêu?
-e) Chia thành 4 phần bằng nhau thì mỗi phần bao nhiêu?
-f) Nếu ghép hai hình chữ nhật ấy theo chiều dài thì hình mới có chu vi bao nhiêu?
+a) Tháng 7 năm 2033 có bao nhiêu ngày?
+b) Năm 2033 có phải năm nhuận không?
+c) Ngày 1 tháng 7 là Thứ Hai. Hỏi ngày 20 tháng ấy là thứ mấy?
+d) Tháng ấy có bao nhiêu ngày Chủ nhật?
+e) Ngày cuối cùng của tháng là thứ mấy?
+f) Một năm thường có bao nhiêu ngày, năm nhuận có bao nhiêu ngày?
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
-Dãy bắt đầu bằng 1; hiệu giữa hai số hạng liên tiếp lần lượt là 1, 2, 3, 4, …
+Dãy bắt đầu bằng 2; hiệu giữa hai số hạng liên tiếp lần lượt là 1, 2, 3, 4, …
 
 a) Viết năm số hạng đầu của dãy.
 b) Hiệu giữa hai số hạng liên tiếp là những số nào?
@@ -94,99 +91,96 @@ f) Tổng năm số hạng đầu bằng bao nhiêu?
 ### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
 a) **5**
-b) **7**
-c) **0**
-d) **8**
-e) **70 000 + 8 000 + 20 + 7**
-f) **24**
+b) **0**
+c) **5**
+d) **2**
+e) **60 000 + 2 000 + 500 + 80**
+f) **21**
 
 **Cách giải mẫu:**
 
 1. Đếm từ phải sang trái: đơn vị, chục, trăm, nghìn, chục nghìn.
-2. Số 78 027 có 5 chữ số.
-3. Chữ số hàng đơn vị là chữ số cuối cùng bên phải: 7.
-4. Viết thành tổng: 70 000 + 8 000 + 20 + 7.
-5. Cộng các chữ số: 7 + 8 + 0 + 2 + 7 = 24.
+2. Số 62 580 có 5 chữ số.
+3. Chữ số hàng đơn vị là chữ số cuối cùng bên phải: 0.
+4. Viết thành tổng: 60 000 + 2 000 + 500 + 80.
+5. Cộng các chữ số: 6 + 2 + 5 + 8 + 0 = 21.
 6. Đáp số ý a: **5 chữ số**.
 
 *Lỗi hay mắc:* Đếm hàng từ trái sang phải nên lệch hàng.
 
-### Bài 2, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 2, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **925 dư 1**
-b) **1 172**
-c) **352**
-d) **8 811**
-e) **947**
-f) **975 dư 3**
-
-**Cách giải mẫu:**
-
-1. Xét ý a: 1 851 : 2
-2. Đọc vị: đây là dạng **Nhân, chia với số có một chữ số**; dấu hiệu là Số bị chia có hai hoặc ba chữ số, số chia một chữ số.
-3. Kiến thức phải dùng: Kĩ thuật đặt tính nhân, chia.
-4. Cách làm: Đặt tính, tính theo cột.
-5. Lối tắt: Ước lượng bằng cách làm tròn để phát hiện sai về độ lớn.
-6. Kết quả: **925 dư 1**.
-
-*Lỗi hay mắc:* Quên chữ số 0 ở giữa thương nên thương thiếu chữ số.
-
-### Bài 3, (2 điểm — mỗi ý 0,33 điểm)
-
-a) **nhóm Sao Mai: 305 cây, tổ Một: 157 cây**
-b) **trang trại: 116 kg, hợp tác xã: 112 kg**
-c) **5C: 502 quyển, 4B: 326 quyển**
-d) **5A: 382 quyển, 5B: 360 quyển**
-e) **nhóm Hoa Phượng: 431 cây, tổ Hai: 299 cây**
-f) **hợp tác xã: 50 kg, thư viện: 34 kg**
+a) **10 tờ**
+b) **24 000 đồng**
+c) **29 000 đồng**
+d) **100 000 đồng**
+e) **10 tờ**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Nhóm Sao Mai và tổ Một trồng được 462 cây. Nhóm Sao Mai trồng nhiều hơn tổ Một 148 cây. Mỗi tổ trồng bao nhiêu cây?
+1. Xét ý a: Đổi một tờ 20 000 đồng ra các tờ 2 000 đồng thì được mấy tờ?
+2. Đọc vị: đây là dạng **Bài toán tiền tệ hai bước**; dấu hiệu là “Đưa … đồng”, “trả lại”, “đổi ra tờ …”.
+3. Kiến thức phải dùng: Nhân, trừ với số tròn nghìn; mệnh giá tiền Việt Nam.
+4. Cách làm: Tính tiền hàng rồi trừ; đổi tiền thì chia.
+5. Lối tắt: Thử lại bằng cách cộng tiền hàng với tiền trả lại, phải đúng bằng tiền đưa.
+6. Kết quả: **10 tờ**.
+
+*Lỗi hay mắc:* Lấy tiền đưa trừ ngay giá một quyển vở.
+
+### Bài 3, (2 điểm — mỗi ý 0,5 điểm)
+
+a) **cửa hàng: 200 kg, thư viện: 180 kg**
+b) **4A: 301 quyển, 5B: 263 quyển**
+c) **nhóm Sao Mai: 417 cây, tổ Một: 333 cây**
+d) **nhóm Hoa Phượng: 483 cây, nhóm Sao Mai: 263 cây**
+
+**Cách giải mẫu:**
+
+1. Xét ý a: Cửa hàng và thư viện chứa tất cả 380 kg phân bón. Cửa hàng chứa nhiều hơn thư viện 20 kg. Mỗi nơi chứa bao nhiêu kg?
 2. Đọc vị: đây là dạng **Tổng – hiệu có lời văn**; dấu hiệu là “Có tất cả …” và “… nhiều hơn … là …”.
 3. Kiến thức phải dùng: Công thức tổng – hiệu, sơ đồ đoạn thẳng.
 4. Cách làm: Đọc vị tổng và hiệu → sơ đồ → công thức.
 5. Lối tắt: Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần.
-6. Kết quả: **nhóm Sao Mai: 305 cây, tổ Một: 157 cây**.
+6. Kết quả: **cửa hàng: 200 kg, thư viện: 180 kg**.
 
 *Lỗi hay mắc:* Nhầm hiệu thành tổng khi đề diễn đạt vòng vo.
 
 ### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **36**
-b) **36 cm²**
-c) **1 cm²**
-d) **18 cm²**
-e) **9 cm²**
-f) **44 cm**
+a) **31**
+b) **không**
+c) **Thứ Bảy**
+d) **4**
+e) **Thứ Tư**
+f) **365 ngày và 366 ngày**
 
 **Cách giải mẫu:**
 
-1. Bước 1 — diện tích hình chữ nhật: 18 × 2 = 36 (cm²).
-2. Bước 2 — diện tích một hình vuông nhỏ: 1 × 1 = 1 (cm²).
-3. Bước 3 — số hình vuông cần dùng: 36 : 1 = 36 (hình).
-4. Kiểm tra: xếp được 18 hàng, mỗi hàng 2 hình — đúng 36 hình ✓
-5. Đáp số: **36 hình vuông**.
+1. Tháng 7 thuộc nhóm tháng 31 ngày, nên có 31 ngày.
+2. Ngày 1 là Thứ Hai. Cứ sau 7 ngày thì lặp lại đúng thứ ấy.
+3. Từ ngày 1 đến ngày 20 cách nhau 19 ngày.
+4. 19 : 7 dư 5, nên lùi 5 bước từ Thứ Hai.
+5. Vậy ngày 20 là **Thứ Bảy**.
 
-*Lỗi hay mắc:* Chia chu vi cho cạnh mảnh thay vì chia diện tích cho diện tích.
+*Lỗi hay mắc:* Đếm tay từng ngày nên vừa lâu vừa sai.
 
 ### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **1 · 2 · 4 · 7 · 11**
+a) **2 · 3 · 5 · 8 · 12**
 b) **1, 2, 3, 4, 5, …**
-c) **16**
-d) **29**
-e) **46**
-f) **25**
+c) **17**
+d) **30**
+e) **47**
+f) **30**
 
 **Cách giải mẫu:**
 
-1. Số hạng đầu là 1.
-2. Số hạng thứ 2 = 1 + 1 = 2.
-3. Số hạng thứ 3 = 2 + 2 = 4.
-4. Cứ thế, số hạng thứ 6 = 11 + 5 = 16.
-5. Nhận xét: số hạng thứ n = 1 + (1 + 2 + … + (n − 1)).
-6. Đáp số ý c: **16**.
+1. Số hạng đầu là 2.
+2. Số hạng thứ 2 = 2 + 1 = 3.
+3. Số hạng thứ 3 = 3 + 2 = 5.
+4. Cứ thế, số hạng thứ 6 = 12 + 5 = 17.
+5. Nhận xét: số hạng thứ n = 2 + (1 + 2 + … + (n − 1)).
+6. Đáp số ý c: **17**.
 
 *Lỗi hay mắc:* Không tìm ra hiệu đều thì bỏ cuộc, không thử dãy hiệu.
 
@@ -199,9 +193,9 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài | Đo cái gì | Sai bài này nghĩa là | Học lại ở đâu |
 |:--:|---|---|---|
 | Bài 1 | Đọc, viết, cấu tạo số | Đếm hàng từ trái sang phải nên lệch hàng. | Nhóm chuyên đề **—** · mức — |
-| Bài 2 | Nhân, chia với số có một chữ số | Quên chữ số 0 ở giữa thương nên thương thiếu chữ số. | Nhóm chuyên đề **—** · mức — |
+| Bài 2 | Bài toán tiền tệ hai bước | Lấy tiền đưa trừ ngay giá một quyển vở. | Nhóm chuyên đề **—** · mức — |
 | Bài 3 | Tổng – hiệu có lời văn | Nhầm hiệu thành tổng khi đề diễn đạt vòng vo. | Nhóm chuyên đề **—** · mức — |
-| Bài 4 | Phủ hình, chia hình | Chia chu vi cho cạnh mảnh thay vì chia diện tích cho diện tích. | Nhóm chuyên đề **—** · mức — |
+| Bài 4 | Lịch, tháng, năm nhuận | Đếm tay từng ngày nên vừa lâu vừa sai. | Nhóm chuyên đề **—** · mức — |
 | Bài 5 | Dãy có hiệu tăng đều | Không tìm ra hiệu đều thì bỏ cuộc, không thử dãy hiệu. | Nhóm chuyên đề **—** · mức — |
 
 ---

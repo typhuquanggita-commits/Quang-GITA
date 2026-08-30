@@ -105,34 +105,35 @@ Viết lại từ trí nhớ. Mỗi ý bỏ trống là một chỗ phải ôn l
 
 ## PHẦN C — LUYỆN LẠI THEO TỪNG CỤM · 30 phút · 35 điểm
 
-### Bài 1, (7,0 điểm) Tính chất chia hết của tổng và hiệu — cụm C01
+### Bài 1, (7,0 điểm) Đọc chỉ số công tơ điện — cụm C01
 
-Trả lời và giải thích ngắn gọn, không cần tính ra kết quả tổng.
+Công tơ điện nhà bạn Minh đầu tháng chỉ **22 896**, cuối tháng chỉ **23 021**. Dùng hai số này cho cả bài.
 
-a) Tổng 612 + 351 có chia hết cho 9 không?
-b) Tổng 210 + 132 có chia hết cho 3 không?
-c) Tổng 738 + 207 có chia hết cho 9 không?
-d) Tổng 168 + 201 có chia hết cho 3 không?
-e) Tổng 465 + 375 có chia hết cho 5 không?
+a) Chỉ số cuối tháng là 23 021. Số ấy gồm mấy chục nghìn, mấy nghìn, mấy trăm, mấy chục và mấy đơn vị?
+b) Số điện dùng trong tháng bằng chỉ số cuối trừ chỉ số đầu. Nhà bạn ấy dùng bao nhiêu kW·h?
+c) Làm tròn chỉ số cuối 23 021 đến hàng nghìn.
+d) Nhà bên cạnh có chỉ số cuối là 28 821. Chỉ số nào lớn hơn?
+e) Tháng sau chỉ số cuối là 23 260. Tháng sau nhà bạn ấy dùng nhiều hơn hay ít hơn tháng này, và chênh bao nhiêu kW·h?
 
-### Bài 2, (7,0 điểm) Tính nhanh bằng cách ghép số tròn — cụm C02
+### Bài 2, (7,0 điểm) Tìm x qua hai bước — cụm C02
 
-Tính bằng cách thuận tiện nhất.
+Tìm x, trình bày từng bước.
 
-a) 32 + 26 − 26
-b) 137 + 50 − 50
-c) 25 + 39 + 75 + 61
-d) 333 + 82 − 82
-e) 41 + 180 + 59
+a) 424 − x × 5 = 294
+b) (x − 34) × 11 = 825
+c) x × 3 − 160 = 431
+d) (x − 185) × 11 = -1 265
+e) (x + 291) × 12 = 5 808
 
 ### Bài 3, (7,0 điểm) Đại lượng tỉ lệ thuận — cụm C03
 
 Giải bằng cách rút về đơn vị hoặc dùng tỉ số.
 
-a) Mua 11 quyển vở hết 385 nghìn đồng. Mua 21 quyển vở như thế hết bao nhiêu nghìn đồng?
-b) Mua 15 quyển vở hết 1 050 nghìn đồng. Mua 15 quyển vở như thế hết bao nhiêu nghìn đồng?
-c) Mua 8 quyển vở hết 552 nghìn đồng. Mua 23 quyển vở như thế hết bao nhiêu nghìn đồng?
-d) Mua 3 quyển vở hết 201 nghìn đồng. Với 603 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+a) Mua 8 quyển vở hết 288 nghìn đồng. Với 720 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+b) Mua 5 quyển vở hết 385 nghìn đồng. Mua 12 quyển vở như thế hết bao nhiêu nghìn đồng?
+c) Mua 11 quyển vở hết 528 nghìn đồng. Mua 25 quyển vở như thế hết bao nhiêu nghìn đồng?
+d) Mua 6 quyển vở hết 408 nghìn đồng. Với 1 020 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+e) Mua 4 quyển vở hết 252 nghìn đồng. Mua 21 quyển vở như thế hết bao nhiêu nghìn đồng?
 
 ### Bài 4, (7,0 điểm) Phủ hình và chia hình thành phần bằng nhau — cụm C04
 
@@ -148,77 +149,78 @@ e) Chia thành 4 phần bằng nhau thì mỗi phần bao nhiêu?
 
 Ghi kết quả theo giờ và phút.
 
-a) Một chuyến tàu khởi hành lúc 15 giờ 45 phút và đi hết 2 giờ 16 phút. Tàu đến nơi lúc mấy giờ?
-b) Một chuyến tàu khởi hành lúc 7 giờ 10 phút và đi hết 6 giờ 6 phút. Tàu đến nơi lúc mấy giờ?
-c) Một chuyến tàu khởi hành lúc 10 giờ 20 phút và đi hết 3 giờ 37 phút. Tàu đến nơi lúc mấy giờ?
-d) Một chuyến tàu khởi hành lúc 14 giờ 20 phút và đi hết 6 giờ 5 phút. Tàu đến nơi lúc mấy giờ?
-e) Một chuyến tàu khởi hành lúc 6 giờ 30 phút và đi hết 2 giờ 36 phút. Tàu đến nơi lúc mấy giờ?
+a) Một chuyến tàu khởi hành lúc 11 giờ 25 phút và đi hết 2 giờ 16 phút. Tàu đến nơi lúc mấy giờ?
+b) Một chuyến tàu khởi hành lúc 8 giờ 45 phút và đi hết 2 giờ 43 phút. Tàu đến nơi lúc mấy giờ?
+c) Một chuyến tàu khởi hành lúc 11 giờ 0 phút và đi hết 2 giờ 51 phút. Tàu đến nơi lúc mấy giờ?
+d) Một chuyến tàu khởi hành lúc 13 giờ 15 phút và đi hết 5 giờ 24 phút. Tàu đến nơi lúc mấy giờ?
+e) Một chuyến tàu khởi hành lúc 10 giờ 20 phút và đi hết 1 giờ. Tàu đến nơi lúc mấy giờ?
 
 
 ## PHẦN D — BÀI TỔNG HỢP LIÊN CỤM · 25 phút · 30 điểm
 
 Mỗi bài dưới đây phải dùng kỹ thuật của **hai chuyên đề khác nhau**.
 
-### Bài 1, (7,5 điểm) Tính nhanh tổng dãy số cách đều — nối nhóm A với nhóm B
+### Bài 1, (7,5 điểm) Tính tiền hoá đơn theo hai cách — nối nhóm A với nhóm B
 
-Tính tổng mỗi dãy.
+Một quầy bán bánh, mỗi hộp **12 000 đồng**.
 
-a) 1 + 3 + 5 + … + 199
-b) 3 + 6 + 9 + … + 60
-c) 1 + 2 + 3 + … + 10
-d) 1 + 6 + 11 + … + 121
+a) Buổi sáng bán 19 hộp, buổi chiều bán 8 hộp. Tính tiền buổi sáng.
+b) Tính tiền buổi chiều.
+c) Cộng tiền hai buổi.
+d) Cách khác: cộng số hộp cả ngày trước rồi mới nhân với đơn giá. Viết phép tính và kết quả.
+e) Hôm sau bán được nhiều hơn hôm nay 6 hộp. Tiền hôm sau nhiều hơn hôm nay bao nhiêu?
 
-### Bài 2, (7,5 điểm) Tìm x qua ba bước, có dấu ngoặc — nối nhóm B với nhóm D
+### Bài 2, (7,5 điểm) Tìm phân số của một số qua hai bước — nối nhóm B với nhóm D
 
-Tìm x, trình bày đủ các bước.
+Đọc kĩ “của số nào” trước khi tính.
 
-a) (x + 13) × 8 − 2 = 398
-b) (33 + x) × 6 + 2 = 872
-c) (x × 9 − 13) × 6 = 2 946
-d) (x + 48) × 3 − 6 = 480
-e) (x + 36) × 4 − 8 = 276
+a) Một cửa hàng có 390 kg gạo. Ngày đầu bán 1 phần 2 số gạo, ngày thứ hai bán 1 phần 5 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
+b) Một cửa hàng có 42 kg gạo. Ngày đầu bán 1 phần 3 số gạo, ngày thứ hai bán 1 phần 2 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
+c) Một cửa hàng có 40 kg gạo. Ngày đầu bán 1 phần 2 số gạo, ngày thứ hai bán 1 phần 5 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
+d) Một cửa hàng có 550 kg gạo. Ngày đầu bán 1 phần 5 số gạo, ngày thứ hai bán 1 phần 5 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
 
-### Bài 3, (7,5 điểm) Tìm hai số khi biết hiệu và tỉ số — nối nhóm D với nhóm F
+### Bài 3, (7,5 điểm) Tổng – tỉ, hiệu – tỉ khi một dữ kiện bị giấu — nối nhóm D với nhóm F
 
-Vẽ sơ đồ đoạn thẳng rồi giải.
+Việc đầu tiên là gọi tên dữ kiện bị giấu.
 
-a) Kho A chứa nhiều hơn cửa hàng 204 kg xi măng. Số xi măng ở cửa hàng bằng 1 phần 2 số xi măng ở kho A. Mỗi nơi chứa bao nhiêu kg?
-b) Cửa hàng chứa nhiều hơn thư viện 456 kg phân bón. Số phân bón ở thư viện bằng 1 phần 7 số phân bón ở cửa hàng. Mỗi nơi chứa bao nhiêu kg?
-c) Trang trại chứa nhiều hơn kho A 238 kg gạo. Số gạo ở kho A bằng 2 phần 3 số gạo ở trang trại. Mỗi nơi chứa bao nhiêu kg?
-d) Cửa hàng chứa nhiều hơn kho A 303 kg xi măng. Số xi măng ở kho A bằng 2 phần 5 số xi măng ở cửa hàng. Mỗi nơi chứa bao nhiêu kg?
-e) Hợp tác xã chứa nhiều hơn kho B 76 kg gạo. Số gạo ở kho B bằng 3 phần 4 số gạo ở hợp tác xã. Mỗi nơi chứa bao nhiêu kg?
+a) Xưởng chứa 6 kg gạo. Nếu xưởng nhận thêm 24 kg thì bằng số gạo ở trang trại. Hỏi cả hai nơi chứa bao nhiêu kg?
+b) Số phân bón ở hợp tác xã bằng 3 phần 2 số phân bón ở xưởng. Nếu chuyển 23 kg từ hợp tác xã sang xưởng thì hợp tác xã vẫn còn nhiều hơn. Biết hợp tác xã hơn xưởng 23 kg, tìm số phân bón mỗi nơi.
+c) Hợp tác xã và cửa hàng chứa tất cả 252 kg đường. Nếu chia số đường ở hợp tác xã thành 3 phần bằng nhau thì số đường ở cửa hàng bằng 6 phần như thế. Mỗi nơi chứa bao nhiêu kg?
+d) Thư viện chứa 26 kg thóc. Nếu thư viện nhận thêm 26 kg thì bằng số thóc ở xưởng. Hỏi cả hai nơi chứa bao nhiêu kg?
+e) Số thóc ở xưởng bằng 2 số thóc ở trang trại. Nếu chuyển 4 kg từ xưởng sang trang trại thì xưởng vẫn còn nhiều hơn. Biết xưởng hơn trang trại 8 kg, tìm số thóc mỗi nơi.
 
 ### Bài 4, (7,5 điểm) Bài toán thực tế về khối lượng — nối nhóm F với nhóm E
 
 Chú ý đơn vị mà đề hỏi.
 
-a) Một xe chở 35 bao xi măng, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ xi măng?
-b) Một xe chở 27 bao thóc, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ thóc?
-c) Một xe chở 15 bao phân bón, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ phân bón?
-d) Một xe chở 25 bao phân bón, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ phân bón?
+a) Một xe chở 24 bao muối, mỗi bao 40 kg. Hỏi xe chở bao nhiêu tạ muối?
+b) Một xe chở 20 bao xi măng, mỗi bao 50 kg. Hỏi xe chở bao nhiêu tạ xi măng?
+c) Một xe chở 15 bao đường, mỗi bao 40 kg. Hỏi xe chở bao nhiêu tạ đường?
+d) Một xe chở 30 bao muối, mỗi bao 40 kg. Hỏi xe chở bao nhiêu tạ muối?
+e) Một xe chở 30 bao thóc, mỗi bao 40 kg. Hỏi xe chở bao nhiêu tạ thóc?
 
 
 ## PHẦN E — BÀI PHÂN HOÁ · 15 phút · 15 điểm
 
 Dành cho học viên nhắm điểm 9 – 10. Làm hết phần A đến D rồi mới vào đây.
 
-### Bài 1, (7,5 điểm — mức M4) Hai vòi nước, hai người cùng làm
+### Bài 1, (7,5 điểm — mức M4) Tính tiền vé cho cả gia đình
 
-Coi cả công việc là 1 đơn vị.
+Trước khi tính, gạch chân câu hỏi và khoanh tròn dữ kiện **không** dùng tới.
 
-a) Vòi thứ nhất chảy một mình đầy bể trong 2 giờ, vòi thứ hai chảy một mình đầy bể trong 8 giờ. Mở cả hai vòi thì sau bao lâu đầy bể?
-b) Vòi thứ nhất chảy một mình đầy bể trong 5 giờ, vòi thứ hai chảy một mình đầy bể trong 15 giờ. Mở cả hai vòi thì sau bao lâu đầy bể?
-c) Vòi thứ nhất chảy một mình đầy bể trong 12 giờ, vòi thứ hai chảy một mình đầy bể trong 15 giờ. Mở cả hai vòi thì sau bao lâu đầy bể?
-d) Vòi thứ nhất chảy một mình đầy bể trong 6 giờ, vòi thứ hai chảy một mình đầy bể trong 8 giờ. Mở cả hai vòi thì sau bao lâu đầy bể?
+a) Một gia đình gồm 5 người lớn và 5 trẻ em đi tham quan cách nhà 55 km. Vé người lớn 130 000 đồng, vé trẻ em bằng nửa vé người lớn. Hỏi cả gia đình mua vé hết bao nhiêu tiền?
+b) Một gia đình gồm 4 người lớn và 2 trẻ em đi tham quan cách nhà 25 km. Vé người lớn 170 000 đồng, vé trẻ em bằng nửa vé người lớn. Hỏi cả gia đình mua vé hết bao nhiêu tiền?
+c) Một gia đình gồm 4 người lớn và 5 trẻ em đi tham quan cách nhà 39 km. Vé người lớn 120 000 đồng, vé trẻ em bằng nửa vé người lớn. Hỏi cả gia đình mua vé hết bao nhiêu tiền?
+d) Một gia đình gồm 2 người lớn và 4 trẻ em đi tham quan cách nhà 139 km. Vé người lớn 60 000 đồng, vé trẻ em bằng nửa vé người lớn. Hỏi cả gia đình mua vé hết bao nhiêu tiền?
 
-### Bài 2, (7,5 điểm — mức M5) Đi-rích-lê ở dạng chứng minh
+### Bài 2, (7,5 điểm — mức M5) Trắc nghiệm nhanh — sáu kỹ thuật đếm
 
-Nêu rõ ngăn kéo là gì, đồ vật là gì.
+Mỗi ý làm trong 60 giây. Ghi thẳng đáp số, không cần trình bày.
 
-a) Có 22 học sinh sinh trong 7 tháng khác nhau. Chứng tỏ rằng có ít nhất 4 bạn sinh cùng một tháng. Hỏi nếu bớt đi một bạn thì kết luận đó còn đúng không?
-b) Có 13 học sinh sinh trong 12 tháng khác nhau. Chứng tỏ rằng có ít nhất 2 bạn sinh cùng một tháng. Hỏi nếu bớt đi một bạn thì kết luận đó còn đúng không?
-c) Có 16 học sinh sinh trong 5 tháng khác nhau. Chứng tỏ rằng có ít nhất 4 bạn sinh cùng một tháng. Hỏi nếu bớt đi một bạn thì kết luận đó còn đúng không?
-d) Có 25 học sinh sinh trong 8 tháng khác nhau. Chứng tỏ rằng có ít nhất 4 bạn sinh cùng một tháng. Hỏi nếu bớt đi một bạn thì kết luận đó còn đúng không?
+a) Có 6 bạn, mỗi bạn bắt tay với tất cả các bạn còn lại đúng một lần. Có bao nhiêu cái bắt tay?
+b) Có 9 áo và 8 quần. Có bao nhiêu cách chọn một bộ?
+c) Hộp có bi 5 màu. Lấy ít nhất mấy viên để chắc chắn có 4 viên cùng màu?
+d) Đoạn đường dài 45 m, trồng cây cách nhau 3 m, trồng cả hai đầu. Cần bao nhiêu cây?
 
 
 ---
@@ -230,24 +232,25 @@ d) Có 25 học sinh sinh trong 8 tháng khác nhau. Chứng tỏ rằng có ít
 ### Phần C
 
 **Bài 1.**
-a) **có**
-b) **có**
-c) **có**
-d) **có**
-e) **có**
+a) **2 chục nghìn, 3 nghìn, 0 trăm, 2 chục, 1 đơn vị**
+b) **23 021 − 22 896 = 125 kW·h**
+c) **23 000**
+d) **28 821**
+e) **nhiều hơn 114 kW·h**
 
 **Bài 2.**
-a) **32**
-b) **137**
-c) **200**
-d) **333**
-e) **280**
+a) **x = 26**
+b) **x = 109**
+c) **x = 197**
+d) **x = 70**
+e) **x = 193**
 
 **Bài 3.**
-a) **735 nghìn đồng**
-b) **1 050 nghìn đồng**
-c) **1 587 nghìn đồng**
-d) **9 quyển**
+a) **20 quyển**
+b) **924 nghìn đồng**
+c) **1 200 nghìn đồng**
+d) **15 quyển**
+e) **1 323 nghìn đồng**
 
 **Bài 4.**
 a) **2**
@@ -257,71 +260,70 @@ d) **4 cm²**
 e) **2 cm²**
 
 **Bài 5.**
-a) **18 giờ 1 phút**
-b) **13 giờ 16 phút**
-c) **13 giờ 57 phút**
-d) **20 giờ 25 phút**
-e) **9 giờ 6 phút**
+a) **13 giờ 41 phút**
+b) **11 giờ 28 phút**
+c) **13 giờ 51 phút**
+d) **18 giờ 39 phút**
+e) **11 giờ 20 phút**
 
 
 ### Phần D
 
 **Bài 1.**
-a) **10 000**
-b) **630**
-c) **55**
-d) **1 525**
+a) **228 000 đồng**
+b) **96 000 đồng**
+c) **324 000 đồng**
+d) **(19 + 8) × 12 000 = 27 × 12 000 = 324 000 đồng**
+e) **6 × 12 000 = 72 000 đồng**
 
 **Bài 2.**
-a) **x = 37**
-b) **x = 112**
-c) **x = 56**
-d) **x = 114**
-e) **x = 35**
+a) **156 kg**
+b) **14 kg**
+c) **16 kg**
+d) **352 kg**
 
 **Bài 3.**
-a) **cửa hàng: 204 kg, kho A: 408 kg**
-b) **thư viện: 76 kg, cửa hàng: 532 kg**
-c) **kho A: 476 kg, trang trại: 714 kg**
-d) **kho A: 202 kg, cửa hàng: 505 kg**
-e) **kho B: 228 kg, hợp tác xã: 304 kg**
+a) **36 kg**
+b) **xưởng: 46 kg, hợp tác xã: 69 kg**
+c) **hợp tác xã: 84 kg, cửa hàng: 168 kg**
+d) **78 kg**
+e) **trang trại: 8 kg, xưởng: 16 kg**
 
 **Bài 4.**
-a) **8 tạ 75 kg**
-b) **6 tạ 75 kg**
-c) **3 tạ 75 kg**
-d) **15 tạ**
+a) **9 tạ 60 kg**
+b) **10 tạ**
+c) **6 tạ**
+d) **12 tạ**
+e) **12 tạ**
 
 
 ### Phần E
 
 **Bài 1.**
-a) **1 giờ 36 phút**
-b) **3 giờ 45 phút**
-c) **6 giờ 40 phút**
-d) **24 phần 7 giờ**
+a) **975 000 đồng**
+b) **850 000 đồng**
+c) **780 000 đồng**
+d) **240 000 đồng**
 
 Cách giải mẫu:
-1. Coi cả bể là 1 đơn vị công việc.
-2. Bước 1 — mỗi giờ vòi thứ nhất chảy được 1 phần 2 bể, vòi thứ hai chảy được 1 phần 8 bể.
-3. Bước 2 — mỗi giờ cả hai vòi chảy được 1 phần 2 + 1 phần 8 = 5 phần 8 bể.
-4. Bước 3 — thời gian đầy bể: 1 : 5 phần 8 = 8 phần 5 giờ = 1 giờ 36 phút.
-5. Kiểm tra nhanh: kết quả phải bé hơn 2 giờ ✓
-6. Đáp số: **1 giờ 36 phút**.
+1. Đọc kỹ câu hỏi: đề hỏi **tiền vé**, không hỏi gì về quãng đường. Con số 55 km là **dữ kiện thừa** — đề thật luôn có, và biết bỏ qua nó mới là đọc đề đúng.
+2. Giá vé trẻ em: 130 000 : 2 = 65 000 (đồng).
+3. Tiền vé người lớn: 5 × 130 000 = 650 000 (đồng).
+4. Tiền vé trẻ em: 5 × 65 000 = 325 000 (đồng).
+5. Cả gia đình: 650 000 + 325 000 = **975 000 đồng**.
 
 **Bài 2.**
-a) **không còn đúng (21 bạn có thể chia đều 3 bạn mỗi tháng)**
-b) **không còn đúng (12 bạn có thể chia đều 1 bạn mỗi tháng)**
-c) **không còn đúng (15 bạn có thể chia đều 3 bạn mỗi tháng)**
-d) **không còn đúng (24 bạn có thể chia đều 3 bạn mỗi tháng)**
+a) **15**
+b) **72**
+c) **16**
+d) **16**
 
 Cách giải mẫu:
-1. Xét ý a: Có 22 học sinh sinh trong 7 tháng khác nhau. Chứng tỏ rằng có ít nhất 4 bạn sinh cùng một tháng. Hỏi nếu bớt đi một bạn thì kết luận đó còn đúng không?
-2. Đọc vị: đây là dạng **Đi-rích-lê dạng chứng minh**; dấu hiệu là “Chứng tỏ rằng có ít nhất … cùng …”.
-3. Kiến thức phải dùng: Nguyên lí ngăn kéo.
-4. Cách làm: Đặt tên ngăn kéo và đồ vật, tính ngưỡng.
-5. Lối tắt: Ngưỡng = số ngăn × (số cần − 1) + 1.
-6. Kết quả: **không còn đúng (21 bạn có thể chia đều 3 bạn mỗi tháng)**.
+1. Ý a — bắt tay: mỗi bạn bắt tay 5 bạn, tổng 6 × 5 = 30 lượt.
+2. Mỗi cái bắt tay có hai người nên bị đếm hai lần: 30 : 2 = 15 (cái).
+3. Ý c — xấu nhất mỗi màu lấy 3 viên mà vẫn chưa đủ: 5 × 3 = 15 viên; lấy thêm 1 viên nữa là chắc chắn đủ.
+4. Ý d — số khoảng 45 : 3 = 15; trồng cả hai đầu nên cộng 1.
+5. Đáp số ý a: **15 cái bắt tay**.
 
 
 ---
@@ -332,8 +334,8 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 
 | Bài | Đo cái gì | Sai bài này nghĩa là | Học lại ở đâu |
 |:--:|---|---|---|
-| C1 | Cụm C01 — Số tự nhiên: hàng, lớp và cấu tạo số | Cộng hai số ra rồi mới chia — mất thời gian và dễ sai tính. | Phiếu `NC` và `OT` của cụm C01 |
-| C2 | Cụm C02 — Bốn phép tính, biểu thức chữ và tính chất phép cộng | Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. | Phiếu `NC` và `OT` của cụm C02 |
+| C1 | Cụm C01 — Số tự nhiên: hàng, lớp và cấu tạo số | Lấy thẳng chỉ số cuối làm số điện đã dùng. | Phiếu `NC` và `OT` của cụm C01 |
+| C2 | Cụm C02 — Bốn phép tính, biểu thức chữ và tính chất phép cộng | Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. | Phiếu `NC` và `OT` của cụm C02 |
 | C3 | Cụm C03 — Trung bình cộng, tổng – hiệu và bài toán đại lượng | Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch. | Phiếu `NC` và `OT` của cụm C03 |
 | C4 | Cụm C04 — Góc, đường thẳng vuông góc – song song và hình bình hành | Chia chu vi cho cạnh mảnh thay vì chia diện tích cho diện tích. | Phiếu `NC` và `OT` của cụm C04 |
 | C5 | Cụm C05 — Đơn vị đo khối lượng, thời gian và diện tích | Cộng phần phút thành hơn 60 mà quên đổi thành giờ. | Phiếu `NC` và `OT` của cụm C05 |
@@ -341,8 +343,8 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | D2 | Nối nhóm B với nhóm D | Làm được từng chuyên đề riêng nhưng chưa ghép được hai chuyên đề | Phần IV và V của phiếu `OT` các cụm liên quan |
 | D3 | Nối nhóm D với nhóm F | Làm được từng chuyên đề riêng nhưng chưa ghép được hai chuyên đề | Phần IV và V của phiếu `OT` các cụm liên quan |
 | D4 | Nối nhóm F với nhóm E | Làm được từng chuyên đề riêng nhưng chưa ghép được hai chuyên đề | Phần IV và V của phiếu `OT` các cụm liên quan |
-| E1 | Công việc chung | Cộng hai khoảng thời gian rồi chia đôi. | Nhóm chuyên đề **—** · mức — |
-| E2 | Đi-rích-lê dạng chứng minh | Nói chung chung “vì nhiều người quá nên phải trùng” mà không chỉ ra con số. | Nhóm chuyên đề **—** · mức — |
+| E1 | Bài toán giá vé và cước phí | Đem quãng đường vào phép tính tiền vé. | Nhóm chuyên đề **—** · mức — |
+| E2 | Trắc nghiệm đếm nhanh | Đếm cặp mà quên chia 2; “chắc chắn có” mà quên cộng 1. | Nhóm chuyên đề **—** · mức — |
 
 ---
 

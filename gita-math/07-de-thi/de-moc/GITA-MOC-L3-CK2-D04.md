@@ -30,59 +30,56 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Đặt tính rồi tính.
 
-a) 499 × 7
-b) 690 × 8
-c) 2 585 : 5
-d) 2 208 : 6
-e) 3 995 : 5
-f) 250 × 4
+a) 302 × 5
+b) 2 481 : 3
+c) 5 898 : 6
+d) 987 × 4
+e) 133 × 5
+f) 575 × 3
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
-Ghi rõ đơn vị đồng ở mọi kết quả.
+Đặt tính rồi tính.
 
-a) Mua 4 quyển vở, mỗi quyển 25 000 đồng. Hết bao nhiêu tiền?
-b) Mua 5 quyển vở, mỗi quyển 18 000 đồng. Đưa cô bán hàng một tờ 100 000 đồng. Cô phải trả lại bao nhiêu tiền?
-c) Đổi một tờ 20 000 đồng ra các tờ 5 000 đồng thì được mấy tờ?
-d) Mua 4 quyển vở, mỗi quyển 25 000 đồng. Đưa cô bán hàng một tờ 200 000 đồng. Cô phải trả lại bao nhiêu tiền?
-e) Mua 2 quyển vở, mỗi quyển 15 000 đồng. Hết bao nhiêu tiền?
+a) 3 908 : 8
+b) 3 175 : 5
+c) 926 × 6
+d) 207 × 2
+e) 1 820 : 2
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
-Tóm tắt bằng sơ đồ đoạn thẳng rồi giải.
+Vẽ sơ đồ trước, tính sau. Không vẽ thì không được tính.
 
-a) Hai lớp 4B và 5C có tất cả 706 quyển sách. Lớp 4B có nhiều hơn lớp 5C 62 quyển. Mỗi lớp có bao nhiêu quyển?
-b) Nhóm Sao Mai và tổ Một trồng được 404 cây. Nhóm Sao Mai trồng nhiều hơn tổ Một 20 cây. Mỗi tổ trồng bao nhiêu cây?
-c) Kho B và trang trại chứa tất cả 536 kg muối. Kho B chứa nhiều hơn trang trại 8 kg. Mỗi nơi chứa bao nhiêu kg?
-d) Tổ Hai và đội Một trồng được 196 cây. Tổ Hai trồng nhiều hơn đội Một 56 cây. Mỗi tổ trồng bao nhiêu cây?
-e) Trang trại và kho A chứa tất cả 648 kg đường. Trang trại chứa nhiều hơn kho A 52 kg. Mỗi nơi chứa bao nhiêu kg?
-f) Hai lớp 3B và 4C có tất cả 618 quyển sách. Lớp 3B có nhiều hơn lớp 4C 182 quyển. Mỗi lớp có bao nhiêu quyển?
+a) Ngọc và An có tất cả 124 viên bi. Ngọc có nhiều hơn An 4 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+b) Chi và Yến có tất cả 152 viên bi. Chi có nhiều hơn Yến 32 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+c) Lan và Minh có tất cả 78 viên bi. Lan có nhiều hơn Minh 8 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+d) Minh và Hùng có tất cả 134 viên bi. Minh có nhiều hơn Hùng 8 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
-Ghi kết quả theo giờ và phút.
+Cho lưới gồm 2 hàng và 4 cột ô vuông nhỏ bằng nhau.
 
-a) 11 giờ 30 phút = … phút
-b) Bây giờ là 4 giờ 10 phút. Sau 90 phút nữa là mấy giờ?
-c) Bây giờ là 11 giờ 30 phút. Cách đây 20 phút là mấy giờ?
-d) Bây giờ là 2 giờ 40 phút. Sau 30 phút nữa là mấy giờ?
-e) Bây giờ là 4 giờ 5 phút. Cách đây 90 phút là mấy giờ?
-f) 5 giờ 20 phút = … phút
+a) Lưới có bao nhiêu ô vuông nhỏ?
+b) Lưới có bao nhiêu đường kẻ ngang, bao nhiêu đường kẻ dọc?
+c) Có tất cả bao nhiêu hình chữ nhật (kể cả hình vuông)?
+d) Có bao nhiêu hình vuông?
+e) Có bao nhiêu hình chữ nhật không phải hình vuông?
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
 Vẽ một hàng ô ra nháp rồi đánh dấu vị trí.
 
-a) Đức cao hơn An, An cao hơn Trang. Ai cao nhất?
+a) Ngọc cao hơn Vy, Vy cao hơn Dũng. Ai cao nhất?
 b) Ai thấp nhất?
 c) Xếp ba bạn theo thứ tự từ thấp đến cao.
-d) Có 8 bạn xếp thành một hàng dọc. Đức đứng thứ 3 từ đầu hàng. Hỏi Đức đứng thứ mấy từ cuối hàng?
-e) Trước Đức có mấy bạn?
-f) Sau Đức có mấy bạn?
+d) Có 8 bạn xếp thành một hàng dọc. Ngọc đứng thứ 3 từ đầu hàng. Hỏi Ngọc đứng thứ mấy từ cuối hàng?
+e) Trước Ngọc có mấy bạn?
+f) Sau Ngọc có mấy bạn?
 
 
 ---
@@ -92,88 +89,85 @@ f) Sau Đức có mấy bạn?
 
 ### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **3 493**
-b) **5 520**
-c) **517**
-d) **368**
-e) **799**
-f) **1 000**
+a) **1 510**
+b) **827**
+c) **983**
+d) **3 948**
+e) **665**
+f) **1 725**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 499 × 7
+1. Xét ý a: 302 × 5
 2. Đọc vị: đây là dạng **Nhân, chia số tự nhiên**; dấu hiệu là Yêu cầu “đặt tính rồi tính” với phép nhân, chia.
 3. Kiến thức phải dùng: Kĩ thuật đặt tính nhân, chia.
 4. Cách làm: Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ chữ số.
 5. Lối tắt: Kiểm tra kết quả bằng phép tính ngược: thương × số chia = số bị chia.
-6. Kết quả: **3 493**.
+6. Kết quả: **1 510**.
 
 *Lỗi hay mắc:* Quên viết chữ số 0 ở thương nên thương thiếu chữ số.
 
 ### Bài 2, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **100 000 đồng**
-b) **10 000 đồng**
-c) **4 tờ**
-d) **100 000 đồng**
-e) **30 000 đồng**
+a) **488 dư 4**
+b) **635**
+c) **5 556**
+d) **414**
+e) **910**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Mua 4 quyển vở, mỗi quyển 25 000 đồng. Hết bao nhiêu tiền?
-2. Đọc vị: đây là dạng **Bài toán tiền tệ hai bước**; dấu hiệu là “Đưa … đồng”, “trả lại”, “đổi ra tờ …”.
-3. Kiến thức phải dùng: Nhân, trừ với số tròn nghìn; mệnh giá tiền Việt Nam.
-4. Cách làm: Tính tiền hàng rồi trừ; đổi tiền thì chia.
-5. Lối tắt: Thử lại bằng cách cộng tiền hàng với tiền trả lại, phải đúng bằng tiền đưa.
-6. Kết quả: **100 000 đồng**.
+1. Xét ý a: 3 908 : 8
+2. Đọc vị: đây là dạng **Nhân, chia với số có một chữ số**; dấu hiệu là Số bị chia có hai hoặc ba chữ số, số chia một chữ số.
+3. Kiến thức phải dùng: Kĩ thuật đặt tính nhân, chia.
+4. Cách làm: Đặt tính, tính theo cột.
+5. Lối tắt: Ước lượng bằng cách làm tròn để phát hiện sai về độ lớn.
+6. Kết quả: **488 dư 4**.
 
-*Lỗi hay mắc:* Lấy tiền đưa trừ ngay giá một quyển vở.
+*Lỗi hay mắc:* Quên chữ số 0 ở giữa thương nên thương thiếu chữ số.
 
-### Bài 3, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 3, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **4B: 384 quyển, 5C: 322 quyển**
-b) **nhóm Sao Mai: 212 cây, tổ Một: 192 cây**
-c) **kho B: 272 kg, trang trại: 264 kg**
-d) **tổ Hai: 126 cây, đội Một: 70 cây**
-e) **trang trại: 350 kg, kho A: 298 kg**
-f) **3B: 400 quyển, 4C: 218 quyển**
+a) **Ngọc: 64 viên, An: 60 viên**
+b) **Chi: 92 viên, Yến: 60 viên**
+c) **Lan: 43 viên, Minh: 35 viên**
+d) **Minh: 71 viên, Hùng: 63 viên**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Hai lớp 4B và 5C có tất cả 706 quyển sách. Lớp 4B có nhiều hơn lớp 5C 62 quyển. Mỗi lớp có bao nhiêu quyển?
-2. Đọc vị: đây là dạng **Tổng – hiệu có lời văn**; dấu hiệu là “Có tất cả …” và “… nhiều hơn … là …”.
-3. Kiến thức phải dùng: Công thức tổng – hiệu, sơ đồ đoạn thẳng.
-4. Cách làm: Đọc vị tổng và hiệu → sơ đồ → công thức.
-5. Lối tắt: Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần.
-6. Kết quả: **4B: 384 quyển, 5C: 322 quyển**.
+1. Vẽ hai đoạn thẳng: đoạn của Ngọc dài hơn đoạn của An đúng 4 viên.
+2. Bước 1 — nếu bớt 4 viên của Ngọc thì hai đoạn bằng nhau, tổng mới là 124 − 4 = 120 (viên).
+3. Bước 2 — chia đôi tổng mới được số bi của An: 120 : 2 = 60 (viên).
+4. Bước 3 — số bi của Ngọc: 60 + 4 = 64 (viên).
+5. Thử lại: 64 + 60 = 124 ✓ và 64 − 60 = 4 ✓
+6. Đáp số: **Ngọc 64 viên, An 60 viên**.
 
-*Lỗi hay mắc:* Nhầm hiệu thành tổng khi đề diễn đạt vòng vo.
+*Lỗi hay mắc:* Chia đôi tổng ngay rồi cộng hiệu vào cả hai số.
 
-### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 4, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **690**
-b) **5 giờ 40 phút**
-c) **11 giờ 10 phút**
-d) **3 giờ 10 phút**
-e) **2 giờ 35 phút**
-f) **320**
+a) **8**
+b) **3 đường ngang, 5 đường dọc**
+c) **30**
+d) **11**
+e) **19**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 11 giờ 30 phút = … phút
-2. Đọc vị: đây là dạng **Tính thời gian trong ngày**; dấu hiệu là Có chữ “giờ”, “phút”, “sau … phút nữa”.
-3. Kiến thức phải dùng: Quan hệ giờ – phút.
-4. Cách làm: Quy về phút, tính, đổi lại.
-5. Lối tắt: Cộng tròn giờ trước, cộng phút lẻ sau.
-6. Kết quả: **690**.
+1. Xét ý a: Lưới có bao nhiêu ô vuông nhỏ?
+2. Đọc vị: đây là dạng **Đếm hình trong lưới**; dấu hiệu là Lưới ô vuông đều.
+3. Kiến thức phải dùng: Quy tắc đếm.
+4. Cách làm: Đếm theo đường kẻ hoặc theo cỡ.
+5. Lối tắt: Số cách chọn 2 trong k là k × (k − 1) : 2.
+6. Kết quả: **8**.
 
-*Lỗi hay mắc:* Cộng phần phút thành hơn 60 mà quên đổi thành giờ.
+*Lỗi hay mắc:* Chỉ đếm ô nhỏ, quên hình ghép từ nhiều ô.
 
 ### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **Đức**
-b) **Trang**
-c) **Trang, An, Đức**
+a) **Ngọc**
+b) **Dũng**
+c) **Dũng, Vy, Ngọc**
 d) **6**
 e) **2 bạn**
 f) **5 bạn**
@@ -181,9 +175,9 @@ f) **5 bạn**
 **Cách giải mẫu:**
 
 1. Vẽ 8 ô liền nhau tượng trưng cho 8 bạn.
-2. Đức đứng thứ 3 từ đầu, nên trước Đức có 2 bạn.
-3. Sau Đức còn 8 − 3 = 5 bạn.
-4. Tính từ cuối hàng, Đức đứng thứ 5 + 1 = 6.
+2. Ngọc đứng thứ 3 từ đầu, nên trước Ngọc có 2 bạn.
+3. Sau Ngọc còn 8 − 3 = 5 bạn.
+4. Tính từ cuối hàng, Ngọc đứng thứ 5 + 1 = 6.
 5. Kiểm tra: 2 + 1 + 5 = 8 ✓
 6. Đáp số ý d: **thứ 6 từ cuối**.
 
@@ -198,9 +192,9 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài | Đo cái gì | Sai bài này nghĩa là | Học lại ở đâu |
 |:--:|---|---|---|
 | Bài 1 | Nhân, chia số tự nhiên | Quên viết chữ số 0 ở thương nên thương thiếu chữ số. | Nhóm chuyên đề **—** · mức — |
-| Bài 2 | Bài toán tiền tệ hai bước | Lấy tiền đưa trừ ngay giá một quyển vở. | Nhóm chuyên đề **—** · mức — |
-| Bài 3 | Tổng – hiệu có lời văn | Nhầm hiệu thành tổng khi đề diễn đạt vòng vo. | Nhóm chuyên đề **—** · mức — |
-| Bài 4 | Tính thời gian trong ngày | Cộng phần phút thành hơn 60 mà quên đổi thành giờ. | Nhóm chuyên đề **—** · mức — |
+| Bài 2 | Nhân, chia với số có một chữ số | Quên chữ số 0 ở giữa thương nên thương thiếu chữ số. | Nhóm chuyên đề **—** · mức — |
+| Bài 3 | Bài toán tổng – hiệu | Chia đôi tổng ngay rồi cộng hiệu vào cả hai số. | Nhóm chuyên đề **—** · mức — |
+| Bài 4 | Đếm hình trong lưới | Chỉ đếm ô nhỏ, quên hình ghép từ nhiều ô. | Nhóm chuyên đề **—** · mức — |
 | Bài 5 | Suy luận thứ tự, vị trí trong hàng | Lấy tổng số bạn trừ thứ tự từ đầu rồi ghi luôn, quên cộng 1. | Nhóm chuyên đề **—** · mức — |
 
 ---

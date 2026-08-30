@@ -51,58 +51,56 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — CỦNG CỐ NỀN — 30 CÂU TỐC ĐỘ · Mức M1 — Nhận biết · 20 phút · 25 điểm
 
-### Bài 1. (5 điểm) Tìm hai số khi biết tổng và hiệu
-
-Tìm hai số trong mỗi trường hợp.
-
-a) Tổng hai số là 200, hiệu hai số là 56. Tìm hai số đó.
-b) Tổng hai số là 72, hiệu hai số là 24. Tìm hai số đó.
-c) Tổng hai số là 106, hiệu hai số là 12. Tìm hai số đó.
-d) Tổng hai số là 148, hiệu hai số là 8. Tìm hai số đó.
-e) Tổng hai số là 158, hiệu hai số là 32. Tìm hai số đó.
-f) Tổng hai số là 272, hiệu hai số là 44. Tìm hai số đó.
-g) Tổng hai số là 146, hiệu hai số là 4. Tìm hai số đó.
-
-### Bài 2. (5 điểm) Bài toán rút về đơn vị
+### Bài 1. (5 điểm) Bài toán rút về đơn vị
 
 Giải bằng phương pháp rút về đơn vị.
 
-a) 12 bao thóc nặng 420 kg. Hỏi 16 bao như thế nặng bao nhiêu kg?
-b) 10 bao thóc nặng 590 kg. Hỏi 17 bao như thế nặng bao nhiêu kg?
-c) 6 bao thóc nặng 342 kg. Hỏi 7 bao như thế nặng bao nhiêu kg?
-d) 9 bao thóc nặng 360 kg. Hỏi 15 bao như thế nặng bao nhiêu kg?
-e) 7 bao gạo nặng 371 kg. Hỏi 5 bao như thế nặng bao nhiêu kg?
+a) 6 bao phân bón nặng 210 kg. Hỏi 2 bao như thế nặng bao nhiêu kg?
+b) 8 bao muối nặng 232 kg. Hỏi 18 bao như thế nặng bao nhiêu kg?
+c) 12 bao xi măng nặng 180 kg. Hỏi 12 bao như thế nặng bao nhiêu kg?
+d) 9 bao xi măng nặng 288 kg. Hỏi 7 bao như thế nặng bao nhiêu kg?
+e) 6 bao thóc nặng 84 kg. Hỏi 18 bao như thế nặng bao nhiêu kg?
 
-### Bài 3. (5 điểm) Nhiều hơn – ít hơn, gấp – kém
-
-Đọc kĩ rồi trả lời từng câu.
-
-a) Vy có 21 quyển vở, Tuấn có số vở gấp 4 lần Vy. Tuấn có bao nhiêu quyển vở?
-b) Vy có 52 quyển vở, số vở của Tuấn kém 2 lần số vở của Vy. Tuấn có bao nhiêu quyển vở?
-c) Vy có 51 quyển vở, Tuấn có ít hơn Vy 12 quyển. Tuấn có bao nhiêu quyển vở?
-d) Vy có 32 quyển vở, Tuấn có nhiều hơn Vy 29 quyển. Tuấn có bao nhiêu quyển vở?
-e) Vy có 34 quyển vở, Tuấn có nhiều hơn Vy 21 quyển. Tuấn có bao nhiêu quyển vở?
-f) Vy có 132 quyển vở, số vở của Tuấn kém 6 lần số vở của Vy. Tuấn có bao nhiêu quyển vở?
-
-### Bài 4. (5 điểm) Bài toán giải bằng hai phép tính
+### Bài 2. (5 điểm) Bài toán giải bằng hai phép tính
 
 Mỗi bài trình bày đủ hai bước, mỗi bước một câu lời giải.
 
-a) Tổ Hai có 34 lá cờ. Nhóm Hoa Phượng có gấp 2 lần tổ Hai. Hỏi cả hai tổ có bao nhiêu lá cờ?
-b) Tổ Một có 16 lá cờ. Tổ Hai có nhiều hơn tổ Một 12 lá cờ. Hỏi cả hai tổ có bao nhiêu lá cờ?
-c) Tổ Ba có 40 lá cờ. Tổ Hai có ít hơn tổ Ba 8 lá cờ. Hỏi cả hai tổ có bao nhiêu lá cờ?
-d) Tổ Ba có 34 lá cờ. Tổ Một có gấp 3 lần tổ Ba. Hỏi cả hai tổ có bao nhiêu lá cờ?
-e) Tổ Ba có 52 lá cờ. Nhóm Sao Mai có nhiều hơn tổ Ba 13 lá cờ. Hỏi cả hai tổ có bao nhiêu lá cờ?
+a) Nhóm Sao Mai có 11 lá cờ. Tổ Một có nhiều hơn nhóm Sao Mai 25 lá cờ. Hỏi cả hai tổ có bao nhiêu lá cờ?
+b) Đội Một có 27 lá cờ. Tổ Một có gấp 2 lần đội Một. Hỏi cả hai tổ có bao nhiêu lá cờ?
+c) Nhóm Hoa Phượng có 25 lá cờ. Tổ Hai có ít hơn nhóm Hoa Phượng 6 lá cờ. Hỏi cả hai tổ có bao nhiêu lá cờ?
+d) Tổ Hai có 50 lá cờ. Nhóm Hoa Phượng có ít hơn tổ Hai 11 lá cờ. Hỏi cả hai tổ có bao nhiêu lá cờ?
+e) Nhóm Sao Mai có 51 lá cờ. Tổ Hai có nhiều hơn nhóm Sao Mai 18 lá cờ. Hỏi cả hai tổ có bao nhiêu lá cờ?
 
-### Bài 5. (5 điểm) Tìm trung bình cộng của nhiều số
+### Bài 3. (5 điểm) Tìm trung bình cộng của nhiều số
 
 Tính trung bình cộng.
 
-a) Tìm trung bình cộng của 2 số: 33, 27.
-b) Tìm trung bình cộng của 3 số: 16, 23, 24.
-c) Tìm trung bình cộng của 4 số: 44, 48, 60, 64.
-d) Tìm trung bình cộng của 5 số: 29, 44, 33, 37, 27.
-e) Tìm trung bình cộng của 5 số: 40, 56, 55, 49, 50.
+a) Tìm trung bình cộng của 3 số: 18, 35, 28.
+b) Tìm trung bình cộng của 2 số: 19, 29.
+c) Tìm trung bình cộng của 5 số: 27, 14, 14, 28, 7.
+d) Tìm trung bình cộng của 4 số: 23, 41, 31, 45.
+e) Tìm trung bình cộng của 3 số: 42, 39, 36.
+f) Tìm trung bình cộng của 2 số: 45, 51.
+
+### Bài 4. (5 điểm) Tìm hai số khi biết tổng và hiệu
+
+Tìm hai số trong mỗi trường hợp.
+
+a) Tổng hai số là 172, hiệu hai số là 54. Tìm hai số đó.
+b) Tổng hai số là 352, hiệu hai số là 16. Tìm hai số đó.
+c) Tổng hai số là 168, hiệu hai số là 36. Tìm hai số đó.
+d) Tổng hai số là 236, hiệu hai số là 74. Tìm hai số đó.
+e) Tổng hai số là 378, hiệu hai số là 26. Tìm hai số đó.
+f) Tổng hai số là 308, hiệu hai số là 100. Tìm hai số đó.
+
+### Bài 5. (5 điểm) Nhiều hơn – ít hơn, gấp – kém
+
+Đọc kĩ rồi trả lời từng câu.
+
+a) Phúc có 37 quyển vở, Ngọc có ít hơn Phúc 10 quyển. Ngọc có bao nhiêu quyển vở?
+b) Phúc có 11 quyển vở, Ngọc có số vở gấp 5 lần Phúc. Ngọc có bao nhiêu quyển vở?
+c) Phúc có 144 quyển vở, số vở của Ngọc kém 6 lần số vở của Phúc. Ngọc có bao nhiêu quyển vở?
+d) Phúc có 22 quyển vở, Ngọc có nhiều hơn Phúc 4 quyển. Ngọc có bao nhiêu quyển vở?
 
 ---
 
@@ -334,34 +332,34 @@ f) Mẹo nhanh em sẽ tặng lớp?
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài A.1
-**Đáp số:** a) số lớn 128, số bé 72 · b) số lớn 48, số bé 24 · c) số lớn 59, số bé 47 · d) số lớn 78, số bé 70 · e) số lớn 95, số bé 63 · f) số lớn 158, số bé 114 · g) số lớn 75, số bé 71
-**Hướng giải:** Số lớn = (tổng + hiệu) : 2. Số bé = (tổng − hiệu) : 2. Cách hiểu: vẽ hai đoạn thẳng, đoạn dài hơn phần hiệu; bớt phần hiệu đi thì hai đoạn bằng nhau, mỗi đoạn là số bé.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng hiệu ra **số lớn**, trừ hiệu ra **số bé** — nhớ đúng chiều.
-**Lỗi thường gặp:** Lấy (tổng + hiệu) : 2 rồi gọi đó là số bé. Phòng: Vẽ sơ đồ đoạn thẳng trước, đoạn dài hơn luôn là số lớn.
-
-### Bài A.2
-**Đáp số:** a) 560 · b) 1 003 · c) 399 · d) 600 · e) 265
+**Đáp số:** a) 70 · b) 522 · c) 180 · d) 224 · e) 252
 **Hướng giải:** Bước 1 — rút về đơn vị: tìm giá trị của **một** đơn vị bằng phép chia. Bước 2: nhân giá trị một đơn vị với số đơn vị cần tìm.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Bước rút về đơn vị luôn là phép **chia**, và phải làm trước.
 **Lỗi thường gặp:** Nhân ngay hai số đã cho mà bỏ qua bước chia. Phòng: Viết rõ câu “Một bao nặng … kg” trước khi làm bước hai.
 
-### Bài A.3
-**Đáp số:** a) 84 · b) 26 · c) 39 · d) 61 · e) 55 · f) 22
-**Hướng giải:** BẪY — Gấp và kém dùng hai phép tính ngược nhau. “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
-**Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
-**Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
-
-### Bài A.4
-**Đáp số:** a) 102 lá cờ · b) 44 lá cờ · c) 72 lá cờ · d) 136 lá cờ · e) 117 lá cờ
+### Bài A.2
+**Đáp số:** a) 47 lá cờ · b) 81 lá cờ · c) 44 lá cờ · d) 89 lá cờ · e) 120 lá cờ
 **Hướng giải:** BẪY — Đọc kĩ câu hỏi cuối. Bước 1 tìm đại lượng còn thiếu bằng quan hệ nhiều hơn – ít hơn – gấp. Bước 2 mới trả lời câu hỏi của đề. Không được gộp hai bước làm một.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Câu hỏi cuối hỏi **cả hai tổ**, nên bước hai bắt buộc phải cộng.
 **Lỗi thường gặp:** Dừng ở bước một, trả lời số lá cờ của một tổ. Phòng: Đọc lại câu hỏi sau khi tính xong bước một, gạch chân chữ “cả hai”.
 
-### Bài A.5
-**Đáp số:** a) 30 · b) 21 · c) 54 · d) 34 · e) 50
+### Bài A.3
+**Đáp số:** a) 27 · b) 24 · c) 18 · d) 35 · e) 39 · f) 48
 **Hướng giải:** Trung bình cộng của nhiều số bằng tổng các số đó chia cho số lượng các số. Cộng cho hết rồi mới chia, không chia từng số một.
 **Nhãn tư duy:** TD1. Điểm chốt: Chia cho **số lượng số hạng**, không phải chia cho một số bất kì.
 **Lỗi thường gặp:** Đếm sai số lượng số hạng nên chia nhầm. Phòng: Đánh số thứ tự từng số trước khi cộng.
+
+### Bài A.4
+**Đáp số:** a) số lớn 113, số bé 59 · b) số lớn 184, số bé 168 · c) số lớn 102, số bé 66 · d) số lớn 155, số bé 81 · e) số lớn 202, số bé 176 · f) số lớn 204, số bé 104
+**Hướng giải:** Số lớn = (tổng + hiệu) : 2. Số bé = (tổng − hiệu) : 2. Cách hiểu: vẽ hai đoạn thẳng, đoạn dài hơn phần hiệu; bớt phần hiệu đi thì hai đoạn bằng nhau, mỗi đoạn là số bé.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng hiệu ra **số lớn**, trừ hiệu ra **số bé** — nhớ đúng chiều.
+**Lỗi thường gặp:** Lấy (tổng + hiệu) : 2 rồi gọi đó là số bé. Phòng: Vẽ sơ đồ đoạn thẳng trước, đoạn dài hơn luôn là số lớn.
+
+### Bài A.5
+**Đáp số:** a) 27 · b) 55 · c) 24 · d) 26
+**Hướng giải:** BẪY — Gấp và kém dùng hai phép tính ngược nhau. “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
+**Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
+**Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
 
 ### Bài B.1
 **Đáp số:** a) câu lời giải nêu rõ đang tìm đại lượng nào · b) phép tính, viết đủ dấu và đủ đơn vị · c) kết quả kèm đơn vị · d) câu đáp số · e) một phần tư số điểm của bài

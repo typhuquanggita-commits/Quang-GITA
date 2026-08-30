@@ -56,15 +56,15 @@ Học thuộc theo cặp **dạng bài – công thức**, không học rời.
 | 3 | Định vị số hạng, kiểm tra một số có thuộc dãy | Dãy cách đều, phép chia có dư |
 | 4 | Tổng dãy số cách đều | Công thức tổng dãy cách đều |
 | 5 | Dãy số quy luật bậc hai hoặc xen kẽ | Dãy hiệu, dãy con xen kẽ |
-| 6 | Đếm số lần xuất hiện của một chữ số | Dãy cách đều, cấu tạo số |
+| 6 | Dãy số truy hồi có quy tắc rẽ nhánh | Dãy số cho bởi quy tắc, tính lần lượt |
 | 7 | Dãy có hiệu tăng đều (hiệu bậc hai) | Dãy hiệu, tổng dãy cách đều |
 | 8 | Dãy số theo quy luật nhân | Dãy nhân, phép nhân liên tiếp |
-| 9 | Tổng và trung bình cộng của dãy cách đều | Dãy cách đều, trung bình cộng |
-| 10 | Dãy số truy hồi có quy tắc rẽ nhánh | Dãy số cho bởi quy tắc, tính lần lượt |
-| 11 | Dãy tuần hoàn | Phép chia có dư, tính tuần hoàn |
-| 12 | Tổng dãy đặc biệt | Ba công thức tổng cơ bản |
-| 13 | Quy luật hình đưa về dãy số | Dãy cách đều, số hạng thứ n, tổng dãy |
-| 14 | Tìm số hạng thứ n của dãy cách đều | Công thức số hạng tổng quát của dãy cách đều |
+| 9 | Tổng dãy đặc biệt | Ba công thức tổng cơ bản |
+| 10 | Dãy tuần hoàn | Phép chia có dư, tính tuần hoàn |
+| 11 | Bài toán chu kỳ | Dãy cách đều; đổi đơn vị giờ – phút |
+| 12 | Đếm số hạng dãy cách đều | Công thức đếm số hạng |
+| 13 | Bài toán trồng cây | Quan hệ số cây – số khoảng |
+| 14 | Quy luật hình đưa về dãy số | Dãy cách đều, số hạng thứ n, tổng dãy |
 
 ---
 
@@ -93,15 +93,15 @@ Trước khi tra bảng, đi qua cây quyết định đọc vị của nhóm ch
 | Định vị số hạng, kiểm tra một số có thuộc dãy | Câu hỏi “là số hạng thứ mấy”, “có thuộc dãy không” | (số − đầu) : khoảng cách, xét dư rồi cộng 1 | Mọi số hạng của dãy đều có cùng số dư khi chia cho khoảng cách. |
 | Tổng dãy số cách đều | Dãy cộng dài, các số cách đều | Đếm số hạng → (đầu + cuối) × số hạng : 2 | Tổng = trung bình cộng của số đầu và số cuối, nhân với số số hạng. |
 | Dãy số quy luật bậc hai hoặc xen kẽ | Hiệu giữa các số hạng không bằng nhau | Lập dãy hiệu; tách dãy con theo vị trí | Dãy 1, 4, 9, 16, 25 là các số chính phương — nhớ để nhận ra ngay. |
-| Đếm số lần xuất hiện của một chữ số | Câu hỏi “chữ số … xuất hiện bao nhiêu lần” | Đếm theo từng hàng rồi cộng | Từ 1 đến 100, mỗi chữ số từ 1 đến 9 xuất hiện đúng 20 lần (riêng chữ số 1 là 21 lần vì có số 100). |
+| Dãy số truy hồi có quy tắc rẽ nhánh | Đề mô tả cách lập số hạng từ số hạng liền trước | Lập bảng, tính lần lượt, bám sát vị trí | Chỉ cần tính tới số hạng được hỏi, không cần tính cả dãy. |
 | Dãy có hiệu tăng đều (hiệu bậc hai) | Hiệu giữa các số hạng tăng đều đặn | Lập dãy hiệu, tính tổng hiệu, cộng vào số hạng đầu | Với hiệu 1, 2, 3, … thì số hạng thứ n = số đầu + (n − 1) × n : 2. |
 | Dãy số theo quy luật nhân | Các số tăng rất nhanh, hiệu không đều | Thử hiệu, rồi thử thương | Số sau gấp đôi số trước là dấu hiệu quen nhất của dãy nhân. |
-| Tổng và trung bình cộng của dãy cách đều | Đề cho số số hạng, khoảng cách và một đầu của dãy | Tìm hai đầu dãy → tổng → trung bình cộng | Mọi cặp số hạng cách đều hai đầu đều có tổng bằng nhau. |
-| Dãy số truy hồi có quy tắc rẽ nhánh | Đề mô tả cách lập số hạng từ số hạng liền trước | Lập bảng, tính lần lượt, bám sát vị trí | Chỉ cần tính tới số hạng được hỏi, không cần tính cả dãy. |
-| Dãy tuần hoàn | Dãy lặp lại một nhóm số cố định | Chia vị trí cho chu kì, dùng số dư định vị | Tổng n số hạng = tổng một chu kì × số chu kì đầy đủ + tổng phần dư. |
 | Tổng dãy đặc biệt | Dãy toàn số lẻ, toàn số chẵn, hoặc số tự nhiên liên tiếp | Đếm số số hạng rồi áp công thức | Tổng n số lẻ đầu tiên luôn là một số chính phương — dùng để kiểm tra nhanh. |
+| Dãy tuần hoàn | Dãy lặp lại một nhóm số cố định | Chia vị trí cho chu kì, dùng số dư định vị | Tổng n số hạng = tổng một chu kì × số chu kì đầy đủ + tổng phần dư. |
+| Bài toán chu kỳ | Một sự việc lặp lại đều đặn theo thời gian | Quy về phút, dùng công thức dãy cách đều, đổi ngược lại giờ | Số chuyến trong một giờ = 60 chia khoảng cách, nhẩm ngay được. |
+| Đếm số hạng dãy cách đều | Dãy có số đầu, số cuối và khoảng cách đều | (cuối − đầu) : khoảng cách + 1 | Dãy số tự nhiên liên tiếp từ a đến b có b − a + 1 số hạng. |
+| Bài toán trồng cây | Từ khoá “trồng cây”, “cột điện”, “quanh ao”, “hai đầu” | Tính số khoảng rồi chọn đúng công thức theo trường hợp | Khép kín thì số cây bằng đúng số khoảng — không cộng, không trừ. |
 | Quy luật hình đưa về dãy số | Đề mô tả hình xếp thêm đều đặn theo thứ tự | Lập bảng vài hình đầu, tìm khoảng cách, áp công thức | Chỉ cần ba hình đầu là đủ để khẳng định quy luật cách đều. |
-| Tìm số hạng thứ n của dãy cách đều | Đề hỏi “số hạng thứ …” | Đếm số khoảng rồi nhân với khoảng cách | Thử công thức với n = 1 và n = 2 để chắc chắn không lệch một khoảng. |
 
 ---
 
@@ -130,16 +130,16 @@ Trả lời được ngay trong 10 giây thì đánh ✔. Phải nghĩ lâu thì
 - [ ] **8.** Em nhớ công thức: Công thức tổng dãy cách đều?
 - [ ] **9.** Em nêu được dấu hiệu nhận biết của dạng “Dãy số quy luật bậc hai hoặc xen kẽ” chứ?
 - [ ] **10.** Em nhớ công thức: Dãy hiệu, dãy con xen kẽ?
-- [ ] **11.** Em nêu được dấu hiệu nhận biết của dạng “Đếm số lần xuất hiện của một chữ số” chứ?
-- [ ] **12.** Em nhớ công thức: Dãy cách đều, cấu tạo số?
+- [ ] **11.** Em nêu được dấu hiệu nhận biết của dạng “Dãy số truy hồi có quy tắc rẽ nhánh” chứ?
+- [ ] **12.** Em nhớ công thức: Dãy số cho bởi quy tắc, tính lần lượt?
 - [ ] **13.** Em nêu được dấu hiệu nhận biết của dạng “Dãy có hiệu tăng đều (hiệu bậc hai)” chứ?
 - [ ] **14.** Em nhớ công thức: Dãy hiệu, tổng dãy cách đều?
 - [ ] **15.** Em nêu được dấu hiệu nhận biết của dạng “Dãy số theo quy luật nhân” chứ?
 - [ ] **16.** Em nhớ công thức: Dãy nhân, phép nhân liên tiếp?
-- [ ] **17.** Em nêu được dấu hiệu nhận biết của dạng “Tổng và trung bình cộng của dãy cách đều” chứ?
-- [ ] **18.** Em nhớ công thức: Dãy cách đều, trung bình cộng?
-- [ ] **19.** Em nêu được dấu hiệu nhận biết của dạng “Dãy số truy hồi có quy tắc rẽ nhánh” chứ?
-- [ ] **20.** Em nhớ công thức: Dãy số cho bởi quy tắc, tính lần lượt?
+- [ ] **17.** Em nêu được dấu hiệu nhận biết của dạng “Tổng dãy đặc biệt” chứ?
+- [ ] **18.** Em nhớ công thức: Ba công thức tổng cơ bản?
+- [ ] **19.** Em nêu được dấu hiệu nhận biết của dạng “Dãy tuần hoàn” chứ?
+- [ ] **20.** Em nhớ công thức: Phép chia có dư, tính tuần hoàn?
 
 **Chuẩn đạt:** ✔ từ 18/20 câu trở lên.
 
@@ -156,15 +156,15 @@ Trả lời được ngay trong 10 giây thì đánh ✔. Phải nghĩ lâu thì
 | 3 | Chia được số nguyên rồi quên cộng 1, hoặc bỏ qua phần dư. | Luôn ghi rõ thương và số dư khi chia. |
 | 4 | Quên chia 2, kết quả gấp đôi đáp số đúng. | Kiểm tra bằng dãy ngắn: 1 + 2 + 3 = 6, công thức phải cho đúng 6. |
 | 5 | Chỉ thử một hướng rồi bỏ cuộc. | Luôn viết dãy hiệu xuống dưới dãy gốc trước khi kết luận. |
-| 6 | Đếm số lượng **số** chứa chữ số đó thay vì số **lần** xuất hiện. | Kẻ bảng: hàng đơn vị – hàng chục – hàng trăm, đếm riêng rồi cộng. |
+| 6 | Áp dụng nhầm nhánh quy tắc vì không để ý vị trí. | Kẻ bảng hai dòng: dòng trên ghi vị trí, dòng dưới ghi số hạng. |
 | 7 | Cộng n hiệu thay vì (n − 1) hiệu. | Kiểm chứng với n = 2: chỉ cộng đúng một hiệu. |
 | 8 | Cố ép dãy nhân thành dãy cộng nên tìm ra quy luật sai. | Thử cả hai: hiệu trước, thương sau. |
-| 9 | Tính tổng rồi chia — dài hơn và dễ sai khi số hạng nhiều. | Nhớ tính chất trung bình cộng để kiểm tra chéo kết quả tổng. |
-| 10 | Áp dụng nhầm nhánh quy tắc vì không để ý vị trí. | Kẻ bảng hai dòng: dòng trên ghi vị trí, dòng dưới ghi số hạng. |
-| 11 | Lấy số dư 0 rồi lấy phần tử đầu tiên của chu kì. | Kiểm chứng bằng một vị trí nhỏ đã biết trước khi làm vị trí lớn. |
-| 12 | Nhầm số hạng cuối với số lượng số hạng khi áp công thức. | Đếm số số hạng trước rồi mới thay vào công thức. |
-| 13 | Vẽ tay từng hình để đếm, không kịp thời gian với hình thứ hai, ba chục. | Lập bảng ba hình đầu để tìm khoảng cách rồi mới dùng công thức. |
-| 14 | Nhân khoảng cách với n nên kết quả thừa đúng một khoảng. | Kiểm chứng công thức với n = 1: phải ra đúng số hạng đầu. |
+| 9 | Nhầm số hạng cuối với số lượng số hạng khi áp công thức. | Đếm số số hạng trước rồi mới thay vào công thức. |
+| 10 | Lấy số dư 0 rồi lấy phần tử đầu tiên của chu kì. | Kiểm chứng bằng một vị trí nhỏ đã biết trước khi làm vị trí lớn. |
+| 11 | Quên cộng 1 khi đếm số chuyến, hoặc cộng phút vào giờ mà không đổi. | Viết mọi mốc thời gian ra phút kể từ chuyến đầu. |
+| 12 | Quên cộng 1 nên thiếu một số hạng. | Thử với dãy ngắn (3 số hạng) để kiểm chứng công thức. |
+| 13 | Máy móc cộng 1 cho mọi trường hợp. | Vẽ một đoạn ngắn với 3 khoảng để đếm thử trước khi áp dụng. |
+| 14 | Vẽ tay từng hình để đếm, không kịp thời gian với hình thứ hai, ba chục. | Lập bảng ba hình đầu để tìm khoảng cách rồi mới dùng công thức. |
 
 ---
 

@@ -28,47 +28,44 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ### Bài 1. (2 điểm — 10 phút) Tính và điền kết quả
 
-Cho số **63 404**.
+Cho số **99 971**.
 
-a) Số 63 404 có bao nhiêu chữ số?
+a) Số 99 971 có bao nhiêu chữ số?
 b) Chữ số hàng đơn vị là chữ số nào?
 c) Chữ số hàng trăm là chữ số nào?
 d) Chữ số hàng nghìn là chữ số nào?
-e) Viết số 63 404 thành tổng các giá trị hàng.
-f) Tổng các chữ số của số 63 404 bằng bao nhiêu?
+e) Viết số 99 971 thành tổng các giá trị hàng.
+f) Tổng các chữ số của số 99 971 bằng bao nhiêu?
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
-Đặt tính rồi tính.
+Ghi rõ đơn vị đồng ở mọi kết quả.
 
-a) 4 362 : 6
-b) 640 × 6
-c) 3 679 : 5
-d) 772 × 5
-e) 3 270 : 4
-f) 1 923 : 3
+a) Đổi một tờ 10 000 đồng ra các tờ 1 000 đồng thì được mấy tờ?
+b) Mua 4 quyển vở, mỗi quyển 5 000 đồng. Đưa cô bán hàng một tờ 50 000 đồng. Cô phải trả lại bao nhiêu tiền?
+c) Mua 2 quyển vở, mỗi quyển 15 000 đồng. Hết bao nhiêu tiền?
+d) Mua 6 quyển vở, mỗi quyển 15 000 đồng. Đưa cô bán hàng một tờ 100 000 đồng. Cô phải trả lại bao nhiêu tiền?
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
-Giải từng bài toán nhỏ.
+Tóm tắt bằng sơ đồ đoạn thẳng rồi giải.
 
-a) Trung bình mỗi ngày bán được 223 kg gạo. Hỏi 4 ngày bán được tất cả bao nhiêu ki-lô-gam?
-b) 3 ngày đầu tuần một cửa hàng bán được lần lượt 98, 98, 101 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
-c) 4 ngày đầu tuần một cửa hàng bán được lần lượt 61, 50, 56, 69 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
-d) 4 ngày đầu tuần một cửa hàng bán được lần lượt 186, 201, 179, 190 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
-e) 6 ngày đầu tuần một cửa hàng bán được lần lượt 203, 209, 217, 198, 200, 209 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
-f) Trung bình mỗi ngày cửa hàng bán được 210 kg gạo. 2 ngày đầu bán được 201, 222 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
+a) Hai lớp 3A và 4B có tất cả 682 quyển sách. Lớp 3A có nhiều hơn lớp 4B 166 quyển. Mỗi lớp có bao nhiêu quyển?
+b) Tổ Một và tổ Hai trồng được 830 cây. Tổ Một trồng nhiều hơn tổ Hai 92 cây. Mỗi tổ trồng bao nhiêu cây?
+c) Cửa hàng và thư viện chứa tất cả 512 kg đường. Cửa hàng chứa nhiều hơn thư viện 20 kg. Mỗi nơi chứa bao nhiêu kg?
+d) Hai lớp 5C và 4B có tất cả 748 quyển sách. Lớp 5C có nhiều hơn lớp 4B 210 quyển. Mỗi lớp có bao nhiêu quyển?
+e) Hợp tác xã và thư viện chứa tất cả 328 kg muối. Hợp tác xã chứa nhiều hơn thư viện 78 kg. Mỗi nơi chứa bao nhiêu kg?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
 Kẻ một bảng lịch nhỏ ra nháp rồi trả lời.
 
-a) Tháng 7 năm 2028 có bao nhiêu ngày?
-b) Năm 2028 có phải năm nhuận không?
-c) Ngày 1 tháng 7 là Chủ nhật. Hỏi ngày 17 tháng ấy là thứ mấy?
+a) Tháng 4 năm 2025 có bao nhiêu ngày?
+b) Năm 2025 có phải năm nhuận không?
+c) Ngày 1 tháng 4 là Thứ Bảy. Hỏi ngày 26 tháng ấy là thứ mấy?
 d) Tháng ấy có bao nhiêu ngày Chủ nhật?
 e) Ngày cuối cùng của tháng là thứ mấy?
 f) Một năm thường có bao nhiêu ngày, năm nhuận có bao nhiêu ngày?
@@ -76,14 +73,13 @@ f) Một năm thường có bao nhiêu ngày, năm nhuận có bao nhiêu ngày?
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
-Tìm cho ra thứ **không đổi** qua mỗi bước.
+Giả sử tất cả đều là gà rồi lập luận.
 
-a) Trên bảng viết các số từ 1 đến 18. Tổng của chúng bằng bao nhiêu?
-b) Mỗi bước, xoá hai số bất kì và viết thay vào **tổng** của chúng. Tổng các số trên bảng có thay đổi không?
-c) Sau nhiều bước chỉ còn một số. Số đó bằng bao nhiêu?
-d) Nếu mỗi bước thay hai số bằng **hiệu** của chúng thì tổng giảm đi bao nhiêu?
-e) Vì thế tính chẵn lẻ của tổng có thay đổi không?
-f) Số cuối cùng trong trường hợp thay bằng hiệu là số chẵn hay số lẻ?
+a) Vừa gà vừa chó có 35 con, đếm được 112 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
+b) Vừa gà vừa chó có 38 con, đếm được 106 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
+c) Vừa gà vừa chó có 38 con, đếm được 120 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
+d) Vừa gà vừa chó có 38 con, đếm được 118 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
+e) Vừa gà vừa chó có 35 con, đếm được 110 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
 
 
 ---
@@ -94,101 +90,97 @@ f) Số cuối cùng trong trường hợp thay bằng hiệu là số chẵn ha
 ### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
 a) **5**
-b) **4**
-c) **4**
-d) **3**
-e) **60 000 + 3 000 + 400 + 4**
-f) **17**
+b) **1**
+c) **9**
+d) **9**
+e) **90 000 + 9 000 + 900 + 70 + 1**
+f) **35**
 
 **Cách giải mẫu:**
 
 1. Đếm từ phải sang trái: đơn vị, chục, trăm, nghìn, chục nghìn.
-2. Số 63 404 có 5 chữ số.
-3. Chữ số hàng đơn vị là chữ số cuối cùng bên phải: 4.
-4. Viết thành tổng: 60 000 + 3 000 + 400 + 4.
-5. Cộng các chữ số: 6 + 3 + 4 + 0 + 4 = 17.
+2. Số 99 971 có 5 chữ số.
+3. Chữ số hàng đơn vị là chữ số cuối cùng bên phải: 1.
+4. Viết thành tổng: 90 000 + 9 000 + 900 + 70 + 1.
+5. Cộng các chữ số: 9 + 9 + 9 + 7 + 1 = 35.
 6. Đáp số ý a: **5 chữ số**.
 
 *Lỗi hay mắc:* Đếm hàng từ trái sang phải nên lệch hàng.
 
-### Bài 2, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 2, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **727**
-b) **3 840**
-c) **735 dư 4**
-d) **3 860**
-e) **817 dư 2**
-f) **641**
+a) **10 tờ**
+b) **30 000 đồng**
+c) **30 000 đồng**
+d) **10 000 đồng**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 4 362 : 6
-2. Đọc vị: đây là dạng **Nhân, chia với số có một chữ số**; dấu hiệu là Số bị chia có hai hoặc ba chữ số, số chia một chữ số.
-3. Kiến thức phải dùng: Kĩ thuật đặt tính nhân, chia.
-4. Cách làm: Đặt tính, tính theo cột.
-5. Lối tắt: Ước lượng bằng cách làm tròn để phát hiện sai về độ lớn.
-6. Kết quả: **727**.
+1. Xét ý a: Đổi một tờ 10 000 đồng ra các tờ 1 000 đồng thì được mấy tờ?
+2. Đọc vị: đây là dạng **Bài toán tiền tệ hai bước**; dấu hiệu là “Đưa … đồng”, “trả lại”, “đổi ra tờ …”.
+3. Kiến thức phải dùng: Nhân, trừ với số tròn nghìn; mệnh giá tiền Việt Nam.
+4. Cách làm: Tính tiền hàng rồi trừ; đổi tiền thì chia.
+5. Lối tắt: Thử lại bằng cách cộng tiền hàng với tiền trả lại, phải đúng bằng tiền đưa.
+6. Kết quả: **10 tờ**.
 
-*Lỗi hay mắc:* Quên chữ số 0 ở giữa thương nên thương thiếu chữ số.
+*Lỗi hay mắc:* Lấy tiền đưa trừ ngay giá một quyển vở.
 
-### Bài 3, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 3, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **892 kg**
-b) **99 kg**
-c) **59 kg**
-d) **189 kg**
-e) **206 kg**
-f) **207 kg**
+a) **3A: 424 quyển, 4B: 258 quyển**
+b) **tổ Một: 461 cây, tổ Hai: 369 cây**
+c) **cửa hàng: 266 kg, thư viện: 246 kg**
+d) **5C: 479 quyển, 4B: 269 quyển**
+e) **hợp tác xã: 203 kg, thư viện: 125 kg**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Trung bình mỗi ngày bán được 223 kg gạo. Hỏi 4 ngày bán được tất cả bao nhiêu ki-lô-gam?
-2. Đọc vị: đây là dạng **Ba dạng bài trung bình cộng**; dấu hiệu là Cụm “trung bình mỗi …”.
-3. Kiến thức phải dùng: Quan hệ tổng – số lượng – trung bình cộng.
-4. Cách làm: Đi qua tổng làm trung gian.
-5. Lối tắt: Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng.
-6. Kết quả: **892 kg**.
+1. Xét ý a: Hai lớp 3A và 4B có tất cả 682 quyển sách. Lớp 3A có nhiều hơn lớp 4B 166 quyển. Mỗi lớp có bao nhiêu quyển?
+2. Đọc vị: đây là dạng **Tổng – hiệu có lời văn**; dấu hiệu là “Có tất cả …” và “… nhiều hơn … là …”.
+3. Kiến thức phải dùng: Công thức tổng – hiệu, sơ đồ đoạn thẳng.
+4. Cách làm: Đọc vị tổng và hiệu → sơ đồ → công thức.
+5. Lối tắt: Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần.
+6. Kết quả: **3A: 424 quyển, 4B: 258 quyển**.
 
-*Lỗi hay mắc:* Đi tìm ngay số còn thiếu mà chưa tính tổng.
+*Lỗi hay mắc:* Nhầm hiệu thành tổng khi đề diễn đạt vòng vo.
 
 ### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **31**
-b) **có**
-c) **Thứ Ba**
+a) **30**
+b) **không**
+c) **Thứ Tư**
 d) **5**
-e) **Thứ Ba**
+e) **Chủ nhật**
 f) **365 ngày và 366 ngày**
 
 **Cách giải mẫu:**
 
-1. Tháng 7 thuộc nhóm tháng 31 ngày, nên có 31 ngày.
-2. Ngày 1 là Chủ nhật. Cứ sau 7 ngày thì lặp lại đúng thứ ấy.
-3. Từ ngày 1 đến ngày 17 cách nhau 16 ngày.
-4. 16 : 7 dư 2, nên lùi 2 bước từ Chủ nhật.
-5. Vậy ngày 17 là **Thứ Ba**.
+1. Tháng 4 thuộc nhóm tháng 30 ngày, nên có 30 ngày.
+2. Ngày 1 là Thứ Bảy. Cứ sau 7 ngày thì lặp lại đúng thứ ấy.
+3. Từ ngày 1 đến ngày 26 cách nhau 25 ngày.
+4. 25 : 7 dư 4, nên lùi 4 bước từ Thứ Bảy.
+5. Vậy ngày 26 là **Thứ Tư**.
 
 *Lỗi hay mắc:* Đếm tay từng ngày nên vừa lâu vừa sai.
 
-### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 5, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **171**
-b) **không thay đổi**
-c) **171**
-d) **giảm đi 2 lần số bé — luôn là một số chẵn**
-e) **không thay đổi**
-f) **lẻ**
+a) **14 con gà, 21 con chó**
+b) **23 con gà, 15 con chó**
+c) **16 con gà, 22 con chó**
+d) **17 con gà, 21 con chó**
+e) **15 con gà, 20 con chó**
 
 **Cách giải mẫu:**
 
-1. Tổng ban đầu: 1 + 2 + … + 18 = (18 × 19) : 2 = 171.
-2. Thay hai số a và b bằng a + b: tổng **không đổi**, nên số cuối cùng chính là 171.
-3. Thay hai số a và b (a ≥ b) bằng a − b: tổng giảm đi 2 × b — luôn chẵn.
-4. Giảm đi một số chẵn thì tính chẵn lẻ của tổng giữ nguyên.
-5. Tổng ban đầu 171 là số lẻ, nên số cuối cùng cũng là số lẻ.
-6. Đáp số ý f: **số lẻ**.
+1. Xét ý a: Vừa gà vừa chó có 35 con, đếm được 112 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
+2. Đọc vị: đây là dạng **Giả thiết tạm**; dấu hiệu là Hai loại con vật, biết tổng số con và tổng số chân.
+3. Kiến thức phải dùng: Phương pháp giả thiết tạm.
+4. Cách làm: Giả sử đồng nhất → tính chênh → chia cho hiệu số chân.
+5. Lối tắt: Số chó = (số chân − 2 × số con) : 2.
+6. Kết quả: **14 con gà, 21 con chó**.
 
-*Lỗi hay mắc:* Thử vài trường hợp rồi kết luận, không chứng minh được cho mọi cách làm.
+*Lỗi hay mắc:* Chia số chân thiếu cho 4.
 
 ---
 
@@ -199,10 +191,10 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài | Đo cái gì | Sai bài này nghĩa là | Học lại ở đâu |
 |:--:|---|---|---|
 | Bài 1 | Đọc, viết, cấu tạo số | Đếm hàng từ trái sang phải nên lệch hàng. | Nhóm chuyên đề **—** · mức — |
-| Bài 2 | Nhân, chia với số có một chữ số | Quên chữ số 0 ở giữa thương nên thương thiếu chữ số. | Nhóm chuyên đề **—** · mức — |
-| Bài 3 | Ba dạng bài trung bình cộng | Đi tìm ngay số còn thiếu mà chưa tính tổng. | Nhóm chuyên đề **—** · mức — |
+| Bài 2 | Bài toán tiền tệ hai bước | Lấy tiền đưa trừ ngay giá một quyển vở. | Nhóm chuyên đề **—** · mức — |
+| Bài 3 | Tổng – hiệu có lời văn | Nhầm hiệu thành tổng khi đề diễn đạt vòng vo. | Nhóm chuyên đề **—** · mức — |
 | Bài 4 | Lịch, tháng, năm nhuận | Đếm tay từng ngày nên vừa lâu vừa sai. | Nhóm chuyên đề **—** · mức — |
-| Bài 5 | Bài toán bất biến | Thử vài trường hợp rồi kết luận, không chứng minh được cho mọi cách làm. | Nhóm chuyên đề **—** · mức — |
+| Bài 5 | Giả thiết tạm | Chia số chân thiếu cho 4. | Nhóm chuyên đề **—** · mức — |
 
 ---
 

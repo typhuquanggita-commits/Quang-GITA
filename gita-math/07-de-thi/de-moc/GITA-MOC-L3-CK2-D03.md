@@ -28,61 +28,60 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ### Bài 1. (2 điểm — 10 phút) Tính và điền kết quả
 
-Cho số **74 378**.
+Cho số **56 998**.
 
-a) Số 74 378 có bao nhiêu chữ số?
+a) Số 56 998 có bao nhiêu chữ số?
 b) Chữ số hàng đơn vị là chữ số nào?
 c) Chữ số hàng trăm là chữ số nào?
 d) Chữ số hàng nghìn là chữ số nào?
-e) Viết số 74 378 thành tổng các giá trị hàng.
-f) Tổng các chữ số của số 74 378 bằng bao nhiêu?
+e) Viết số 56 998 thành tổng các giá trị hàng.
+f) Tổng các chữ số của số 56 998 bằng bao nhiêu?
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
 Đặt tính rồi tính.
 
-a) 3 042 : 9
-b) 260 × 8
-c) 773 : 5
-d) 1 072 : 3
-e) 3 871 : 7
+a) 793 × 6
+b) 3 886 : 8
+c) 3 140 : 4
+d) 1 001 : 5
+e) 590 × 4
+f) 1 722 : 7
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
-Giải từng bài toán nhỏ.
+Tóm tắt bằng sơ đồ đoạn thẳng rồi giải.
 
-a) Trung bình mỗi ngày bán được 114 kg gạo. Hỏi 6 ngày bán được tất cả bao nhiêu ki-lô-gam?
-b) Trung bình mỗi ngày cửa hàng bán được 100 kg gạo. 4 ngày đầu bán được 99, 100, 99, 111 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
-c) Trung bình mỗi ngày cửa hàng bán được 148 kg gạo. 3 ngày đầu bán được 149, 150, 150 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
-d) Trung bình mỗi ngày cửa hàng bán được 189 kg gạo. 2 ngày đầu bán được 185, 191 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
-e) Trung bình mỗi ngày bán được 159 kg gạo. Hỏi 5 ngày bán được tất cả bao nhiêu ki-lô-gam?
-f) 3 ngày đầu tuần một cửa hàng bán được lần lượt 146, 137, 131 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
+a) Hai lớp 5C và 5B có tất cả 436 quyển sách. Lớp 5C có nhiều hơn lớp 5B 146 quyển. Mỗi lớp có bao nhiêu quyển?
+b) Nhóm Sao Mai và tổ Hai trồng được 516 cây. Nhóm Sao Mai trồng nhiều hơn tổ Hai 42 cây. Mỗi tổ trồng bao nhiêu cây?
+c) Hợp tác xã và thư viện chứa tất cả 74 kg phân bón. Hợp tác xã chứa nhiều hơn thư viện 10 kg. Mỗi nơi chứa bao nhiêu kg?
+d) Hai lớp 3A và 5A có tất cả 714 quyển sách. Lớp 3A có nhiều hơn lớp 5A 94 quyển. Mỗi lớp có bao nhiêu quyển?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
-Ghi kết quả theo giờ và phút.
+Kẻ một bảng lịch nhỏ ra nháp rồi trả lời.
 
-a) Bây giờ là 5 giờ 5 phút. Sau 20 phút nữa là mấy giờ?
-b) Bây giờ là 11 giờ 15 phút. Cách đây 20 phút là mấy giờ?
-c) 9 giờ 5 phút = … phút
-d) Bây giờ là 8 giờ 45 phút. Cách đây 20 phút là mấy giờ?
-e) 4 giờ 55 phút = … phút
-f) Bây giờ là 9 giờ 35 phút. Sau 60 phút nữa là mấy giờ?
+a) Tháng 12 năm 2020 có bao nhiêu ngày?
+b) Năm 2020 có phải năm nhuận không?
+c) Ngày 1 tháng 12 là Chủ nhật. Hỏi ngày 16 tháng ấy là thứ mấy?
+d) Tháng ấy có bao nhiêu ngày Chủ nhật?
+e) Ngày cuối cùng của tháng là thứ mấy?
+f) Một năm thường có bao nhiêu ngày, năm nhuận có bao nhiêu ngày?
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
-Chú ý: chuyển đi thì bên này giảm, bên kia tăng.
+Vẽ một hàng ô ra nháp rồi đánh dấu vị trí.
 
-a) Ngọc và Yến có tất cả 210 quyển vở. Nếu Ngọc cho Yến 17 quyển thì hai bạn có số vở bằng nhau. Hỏi lúc đầu Ngọc có bao nhiêu quyển?
-b) Sau khi cho, mỗi bạn có bao nhiêu quyển vở?
-c) Lúc đầu Yến có bao nhiêu quyển vở?
-d) Lúc đầu Ngọc hơn Yến bao nhiêu quyển?
-e) Một tổ có 2 bạn, mỗi bạn gấp được 6 bông hoa trong một giờ. Hỏi cả tổ gấp được bao nhiêu bông hoa trong một giờ?
-f) Cả tổ phải gấp 36 bông hoa thì làm trong mấy giờ?
+a) Hùng cao hơn Chi, Chi cao hơn Bình. Ai cao nhất?
+b) Ai thấp nhất?
+c) Xếp ba bạn theo thứ tự từ thấp đến cao.
+d) Có 4 bạn xếp thành một hàng dọc. Hùng đứng thứ 3 từ đầu hàng. Hỏi Hùng đứng thứ mấy từ cuối hàng?
+e) Trước Hùng có mấy bạn?
+f) Sau Hùng có mấy bạn?
 
 
 ---
@@ -94,99 +93,97 @@ f) Cả tổ phải gấp 36 bông hoa thì làm trong mấy giờ?
 
 a) **5**
 b) **8**
-c) **3**
-d) **4**
-e) **70 000 + 4 000 + 300 + 70 + 8**
-f) **29**
+c) **9**
+d) **6**
+e) **50 000 + 6 000 + 900 + 90 + 8**
+f) **37**
 
 **Cách giải mẫu:**
 
 1. Đếm từ phải sang trái: đơn vị, chục, trăm, nghìn, chục nghìn.
-2. Số 74 378 có 5 chữ số.
+2. Số 56 998 có 5 chữ số.
 3. Chữ số hàng đơn vị là chữ số cuối cùng bên phải: 8.
-4. Viết thành tổng: 70 000 + 4 000 + 300 + 70 + 8.
-5. Cộng các chữ số: 7 + 4 + 3 + 7 + 8 = 29.
+4. Viết thành tổng: 50 000 + 6 000 + 900 + 90 + 8.
+5. Cộng các chữ số: 5 + 6 + 9 + 9 + 8 = 37.
 6. Đáp số ý a: **5 chữ số**.
 
 *Lỗi hay mắc:* Đếm hàng từ trái sang phải nên lệch hàng.
 
-### Bài 2, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 2, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **338**
-b) **2 080**
-c) **154 dư 3**
-d) **357 dư 1**
-e) **553**
+a) **4 758**
+b) **485 dư 6**
+c) **785**
+d) **200 dư 1**
+e) **2 360**
+f) **246**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 3 042 : 9
-2. Đọc vị: đây là dạng **Nhân, chia với số có một chữ số**; dấu hiệu là Số bị chia có hai hoặc ba chữ số, số chia một chữ số.
-3. Kiến thức phải dùng: Kĩ thuật đặt tính nhân, chia.
-4. Cách làm: Đặt tính, tính theo cột.
-5. Lối tắt: Ước lượng bằng cách làm tròn để phát hiện sai về độ lớn.
-6. Kết quả: **338**.
+1. Đặt tính: viết 6 thẳng dưới hàng đơn vị của 793.
+2. Nhân 6 lần lượt với từng chữ số của 793, từ phải sang trái.
+3. Kết quả: 793 × 6 = 4 758.
+4. Ước lượng kiểm tra: khoảng 800 × 6 = 4 800 — cùng độ lớn ✓
+5. Đáp số: **4 758**.
 
 *Lỗi hay mắc:* Quên chữ số 0 ở giữa thương nên thương thiếu chữ số.
 
-### Bài 3, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 3, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **684 kg**
-b) **91 kg**
-c) **143 kg**
-d) **191 kg**
-e) **795 kg**
-f) **138 kg**
+a) **5C: 291 quyển, 5B: 145 quyển**
+b) **nhóm Sao Mai: 279 cây, tổ Hai: 237 cây**
+c) **hợp tác xã: 42 kg, thư viện: 32 kg**
+d) **3A: 404 quyển, 5A: 310 quyển**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Trung bình mỗi ngày bán được 114 kg gạo. Hỏi 6 ngày bán được tất cả bao nhiêu ki-lô-gam?
-2. Đọc vị: đây là dạng **Ba dạng bài trung bình cộng**; dấu hiệu là Cụm “trung bình mỗi …”.
-3. Kiến thức phải dùng: Quan hệ tổng – số lượng – trung bình cộng.
-4. Cách làm: Đi qua tổng làm trung gian.
-5. Lối tắt: Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng.
-6. Kết quả: **684 kg**.
+1. Xét ý a: Hai lớp 5C và 5B có tất cả 436 quyển sách. Lớp 5C có nhiều hơn lớp 5B 146 quyển. Mỗi lớp có bao nhiêu quyển?
+2. Đọc vị: đây là dạng **Tổng – hiệu có lời văn**; dấu hiệu là “Có tất cả …” và “… nhiều hơn … là …”.
+3. Kiến thức phải dùng: Công thức tổng – hiệu, sơ đồ đoạn thẳng.
+4. Cách làm: Đọc vị tổng và hiệu → sơ đồ → công thức.
+5. Lối tắt: Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần.
+6. Kết quả: **5C: 291 quyển, 5B: 145 quyển**.
 
-*Lỗi hay mắc:* Đi tìm ngay số còn thiếu mà chưa tính tổng.
+*Lỗi hay mắc:* Nhầm hiệu thành tổng khi đề diễn đạt vòng vo.
 
 ### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **5 giờ 25 phút**
-b) **10 giờ 55 phút**
-c) **545**
-d) **8 giờ 25 phút**
-e) **295**
-f) **10 giờ 35 phút**
+a) **31**
+b) **có**
+c) **Thứ Hai**
+d) **5**
+e) **Thứ Ba**
+f) **365 ngày và 366 ngày**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Bây giờ là 5 giờ 5 phút. Sau 20 phút nữa là mấy giờ?
-2. Đọc vị: đây là dạng **Tính thời gian trong ngày**; dấu hiệu là Có chữ “giờ”, “phút”, “sau … phút nữa”.
-3. Kiến thức phải dùng: Quan hệ giờ – phút.
-4. Cách làm: Quy về phút, tính, đổi lại.
-5. Lối tắt: Cộng tròn giờ trước, cộng phút lẻ sau.
-6. Kết quả: **5 giờ 25 phút**.
+1. Tháng 12 thuộc nhóm tháng 31 ngày, nên có 31 ngày.
+2. Ngày 1 là Chủ nhật. Cứ sau 7 ngày thì lặp lại đúng thứ ấy.
+3. Từ ngày 1 đến ngày 16 cách nhau 15 ngày.
+4. 15 : 7 dư 1, nên lùi 1 bước từ Chủ nhật.
+5. Vậy ngày 16 là **Thứ Hai**.
 
-*Lỗi hay mắc:* Cộng phần phút thành hơn 60 mà quên đổi thành giờ.
+*Lỗi hay mắc:* Đếm tay từng ngày nên vừa lâu vừa sai.
 
 ### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **122 quyển**
-b) **105 quyển**
-c) **88 quyển**
-d) **34 quyển**
-e) **12 bông**
-f) **3 giờ**
+a) **Hùng**
+b) **Bình**
+c) **Bình, Chi, Hùng**
+d) **2**
+e) **2 bạn**
+f) **1 bạn**
 
 **Cách giải mẫu:**
 
-1. Sau khi cho, hai bạn bằng nhau, nên mỗi bạn có 210 : 2 = 105 (quyển).
-2. Ngọc đã cho đi 17 quyển, nên lúc đầu Ngọc có 105 + 17 = 122 (quyển).
-3. Lúc đầu Yến có 210 − 122 = 88 (quyển).
-4. Hiệu lúc đầu: 122 − 88 = 34 (quyển) — đúng bằng hai lần số vở đã chuyển.
-5. Đáp số: **lúc đầu Ngọc có 122 quyển**.
+1. Vẽ 4 ô liền nhau tượng trưng cho 4 bạn.
+2. Hùng đứng thứ 3 từ đầu, nên trước Hùng có 2 bạn.
+3. Sau Hùng còn 4 − 3 = 1 bạn.
+4. Tính từ cuối hàng, Hùng đứng thứ 1 + 1 = 2.
+5. Kiểm tra: 2 + 1 + 1 = 4 ✓
+6. Đáp số ý d: **thứ 2 từ cuối**.
 
-*Lỗi hay mắc:* Cho rằng hiệu lúc đầu bằng đúng số vở đã chuyển.
+*Lỗi hay mắc:* Lấy tổng số bạn trừ thứ tự từ đầu rồi ghi luôn, quên cộng 1.
 
 ---
 
@@ -198,9 +195,9 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 |:--:|---|---|---|
 | Bài 1 | Đọc, viết, cấu tạo số | Đếm hàng từ trái sang phải nên lệch hàng. | Nhóm chuyên đề **—** · mức — |
 | Bài 2 | Nhân, chia với số có một chữ số | Quên chữ số 0 ở giữa thương nên thương thiếu chữ số. | Nhóm chuyên đề **—** · mức — |
-| Bài 3 | Ba dạng bài trung bình cộng | Đi tìm ngay số còn thiếu mà chưa tính tổng. | Nhóm chuyên đề **—** · mức — |
-| Bài 4 | Tính thời gian trong ngày | Cộng phần phút thành hơn 60 mà quên đổi thành giờ. | Nhóm chuyên đề **—** · mức — |
-| Bài 5 | Tổng – hiệu có hiệu ẩn sau một lần chuyển | Cho rằng hiệu lúc đầu bằng đúng số vở đã chuyển. | Nhóm chuyên đề **—** · mức — |
+| Bài 3 | Tổng – hiệu có lời văn | Nhầm hiệu thành tổng khi đề diễn đạt vòng vo. | Nhóm chuyên đề **—** · mức — |
+| Bài 4 | Lịch, tháng, năm nhuận | Đếm tay từng ngày nên vừa lâu vừa sai. | Nhóm chuyên đề **—** · mức — |
+| Bài 5 | Suy luận thứ tự, vị trí trong hàng | Lấy tổng số bạn trừ thứ tự từ đầu rồi ghi luôn, quên cộng 1. | Nhóm chuyên đề **—** · mức — |
 
 ---
 

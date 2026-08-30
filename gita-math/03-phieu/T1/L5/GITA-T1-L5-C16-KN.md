@@ -55,51 +55,54 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Tìm hai số trong mỗi trường hợp.
 
-a) Tổng hai số là 1 308, hiệu hai số là 346. Tìm hai số đó.
-b) Tổng hai số là 600, hiệu hai số là 180. Tìm hai số đó.
-c) Tổng hai số là 1 174, hiệu hai số là 38. Tìm hai số đó.
-d) Tổng hai số là 1 746, hiệu hai số là 20. Tìm hai số đó.
-e) Tổng hai số là 1 124, hiệu hai số là 320. Tìm hai số đó.
+a) Tổng hai số là 52, hiệu hai số là 4. Tìm hai số đó.
+b) Tổng hai số là 524, hiệu hai số là 160. Tìm hai số đó.
+c) Tổng hai số là 752, hiệu hai số là 180. Tìm hai số đó.
+d) Tổng hai số là 1 112, hiệu hai số là 180. Tìm hai số đó.
+e) Tổng hai số là 400, hiệu hai số là 64. Tìm hai số đó.
+f) Tổng hai số là 1 358, hiệu hai số là 164. Tìm hai số đó.
+g) Tổng hai số là 926, hiệu hai số là 194. Tìm hai số đó.
 
-### Bài 2. (5 điểm) Quãng đường – vận tốc – thời gian
-
-Ghi rõ đơn vị của từng đại lượng.
-
-a) Một người đi quãng đường 144 km với vận tốc 36 km/giờ. Tính thời gian đi.
-b) Một người đi 180 km hết 4 giờ. Tính vận tốc.
-c) Một người đi xe đạp với vận tốc 5 km/giờ trong 5 giờ. Tính quãng đường đi được.
-d) Một người đi quãng đường 20 km với vận tốc 5 km/giờ. Tính thời gian đi.
-e) Một người đi 20 km hết 5 giờ. Tính vận tốc.
-f) Một người đi xe đạp với vận tốc 15 km/giờ trong 3 giờ. Tính quãng đường đi được.
-g) Một người đi 12 km hết 3 giờ. Tính vận tốc.
-
-### Bài 3. (5 điểm) Bài toán rút về đơn vị
+### Bài 2. (5 điểm) Bài toán rút về đơn vị
 
 Giải bằng phương pháp rút về đơn vị.
 
-a) 11 bao phân bón nặng 407 kg. Hỏi 9 bao như thế nặng bao nhiêu kg?
-b) 4 bao đường nặng 32 kg. Hỏi 7 bao như thế nặng bao nhiêu kg?
-c) 2 bao phân bón nặng 70 kg. Hỏi 7 bao như thế nặng bao nhiêu kg?
-d) 5 bao gạo nặng 240 kg. Hỏi 17 bao như thế nặng bao nhiêu kg?
+a) 9 bao phân bón nặng 180 kg. Hỏi 9 bao như thế nặng bao nhiêu kg?
+b) 2 bao đường nặng 94 kg. Hỏi 3 bao như thế nặng bao nhiêu kg?
+c) 3 bao gạo nặng 141 kg. Hỏi 11 bao như thế nặng bao nhiêu kg?
+d) 6 bao đường nặng 48 kg. Hỏi 10 bao như thế nặng bao nhiêu kg?
+e) 4 bao gạo nặng 72 kg. Hỏi 10 bao như thế nặng bao nhiêu kg?
+f) 11 bao muối nặng 649 kg. Hỏi 7 bao như thế nặng bao nhiêu kg?
+
+### Bài 3. (5 điểm) Quãng đường – vận tốc – thời gian
+
+Ghi rõ đơn vị của từng đại lượng.
+
+a) Một người đi quãng đường 300 km với vận tốc 50 km/giờ. Tính thời gian đi.
+b) Một người đi 25 km hết 5 giờ. Tính vận tốc.
+c) Một người đi xe đạp với vận tốc 5 km/giờ trong 6 giờ. Tính quãng đường đi được.
+d) Một người đi quãng đường 216 km với vận tốc 36 km/giờ. Tính thời gian đi.
+e) Một người đi xe đạp với vận tốc 15 km/giờ trong 3 giờ. Tính quãng đường đi được.
 
 ### Bài 4. (5 điểm) Tìm trung bình cộng của nhiều số
 
 Tính trung bình cộng.
 
-a) Tìm trung bình cộng của 4 số: 190, 207, 199, 204.
-b) Tìm trung bình cộng của 3 số: 138, 122, 142.
-c) Tìm trung bình cộng của 5 số: 65, 57, 68, 71, 64.
-d) Tìm trung bình cộng của 2 số: 55, 69.
-e) Tìm trung bình cộng của 5 số: 73, 88, 83, 86, 90.
+a) Tìm trung bình cộng của 4 số: 104, 103, 112, 101.
+b) Tìm trung bình cộng của 2 số: 29, 17.
+c) Tìm trung bình cộng của 5 số: 163, 166, 155, 158, 173.
+d) Tìm trung bình cộng của 3 số: 44, 39, 58.
 
 ### Bài 5. (5 điểm) Nhiều hơn – ít hơn, gấp – kém
 
 Đọc kĩ rồi trả lời từng câu.
 
-a) Yến có 306 quyển vở, số vở của Khánh kém 6 lần số vở của Yến. Khánh có bao nhiêu quyển vở?
-b) Yến có 29 quyển vở, Khánh có nhiều hơn Yến 11 quyển. Khánh có bao nhiêu quyển vở?
-c) Yến có 22 quyển vở, Khánh có số vở gấp 5 lần Yến. Khánh có bao nhiêu quyển vở?
-d) Yến có 75 quyển vở, Khánh có ít hơn Yến 15 quyển. Khánh có bao nhiêu quyển vở?
+a) Bình có 78 quyển vở, Đức có ít hơn Bình 19 quyển. Đức có bao nhiêu quyển vở?
+b) Bình có 34 quyển vở, Đức có nhiều hơn Bình 18 quyển. Đức có bao nhiêu quyển vở?
+c) Bình có 150 quyển vở, số vở của Đức kém 3 lần số vở của Bình. Đức có bao nhiêu quyển vở?
+d) Bình có 54 quyển vở, Đức có số vở gấp 6 lần Bình. Đức có bao nhiêu quyển vở?
+e) Bình có 17 quyển vở, Đức có số vở gấp 5 lần Bình. Đức có bao nhiêu quyển vở?
+f) Bình có 168 quyển vở, số vở của Đức kém 4 lần số vở của Bình. Đức có bao nhiêu quyển vở?
 
 ---
 
@@ -331,31 +334,31 @@ f) Mẹo nhanh em sẽ tặng lớp?
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài A.1
-**Đáp số:** a) số lớn 827, số bé 481 · b) số lớn 390, số bé 210 · c) số lớn 606, số bé 568 · d) số lớn 883, số bé 863 · e) số lớn 722, số bé 402
+**Đáp số:** a) số lớn 28, số bé 24 · b) số lớn 342, số bé 182 · c) số lớn 466, số bé 286 · d) số lớn 646, số bé 466 · e) số lớn 232, số bé 168 · f) số lớn 761, số bé 597 · g) số lớn 560, số bé 366
 **Hướng giải:** Số lớn = (tổng + hiệu) : 2. Số bé = (tổng − hiệu) : 2. Cách hiểu: vẽ hai đoạn thẳng, đoạn dài hơn phần hiệu; bớt phần hiệu đi thì hai đoạn bằng nhau, mỗi đoạn là số bé.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng hiệu ra **số lớn**, trừ hiệu ra **số bé** — nhớ đúng chiều.
 **Lỗi thường gặp:** Lấy (tổng + hiệu) : 2 rồi gọi đó là số bé. Phòng: Vẽ sơ đồ đoạn thẳng trước, đoạn dài hơn luôn là số lớn.
 
 ### Bài A.2
-**Đáp số:** a) 4 giờ · b) 45 km/giờ · c) 25 km · d) 4 giờ · e) 4 km/giờ · f) 45 km · g) 4 km/giờ
-**Hướng giải:** BẪY — Đơn vị thời gian. Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng kia.
-**Lỗi thường gặp:** Vận tốc km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
-
-### Bài A.3
-**Đáp số:** a) 333 · b) 56 · c) 245 · d) 816
+**Đáp số:** a) 180 · b) 141 · c) 517 · d) 80 · e) 180 · f) 413
 **Hướng giải:** Bước 1 — rút về đơn vị: tìm giá trị của **một** đơn vị bằng phép chia. Bước 2: nhân giá trị một đơn vị với số đơn vị cần tìm.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Bước rút về đơn vị luôn là phép **chia**, và phải làm trước.
 **Lỗi thường gặp:** Nhân ngay hai số đã cho mà bỏ qua bước chia. Phòng: Viết rõ câu “Một bao nặng … kg” trước khi làm bước hai.
 
+### Bài A.3
+**Đáp số:** a) 6 giờ · b) 5 km/giờ · c) 30 km · d) 6 giờ · e) 45 km
+**Hướng giải:** BẪY — Đơn vị thời gian. Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng kia.
+**Lỗi thường gặp:** Vận tốc km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
+
 ### Bài A.4
-**Đáp số:** a) 200 · b) 134 · c) 65 · d) 62 · e) 84
+**Đáp số:** a) 105 · b) 23 · c) 163 · d) 47
 **Hướng giải:** Trung bình cộng của nhiều số bằng tổng các số đó chia cho số lượng các số. Cộng cho hết rồi mới chia, không chia từng số một.
 **Nhãn tư duy:** TD1. Điểm chốt: Chia cho **số lượng số hạng**, không phải chia cho một số bất kì.
 **Lỗi thường gặp:** Đếm sai số lượng số hạng nên chia nhầm. Phòng: Đánh số thứ tự từng số trước khi cộng.
 
 ### Bài A.5
-**Đáp số:** a) 51 · b) 40 · c) 110 · d) 60
+**Đáp số:** a) 59 · b) 52 · c) 50 · d) 324 · e) 85 · f) 42
 **Hướng giải:** BẪY — Gấp và kém dùng hai phép tính ngược nhau. “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.

@@ -101,7 +101,7 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 
 Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: đây là dạng bài gì, và dấu hiệu nào cho biết điều đó.
 
-**Đề 1.** Mỗi ý làm trong 60 giây. Ghi thẳng đáp số, không cần trình bày. Có 5 bạn, mỗi bạn bắt tay với tất cả các bạn còn lại đúng một lần. Có bao nhiêu cái bắt tay?
+**Đề 1.** Với mỗi câu, viết ra danh sách đã thử rồi mới ghi đáp số. Đáp số có thể gồm nhiều số. Tìm mọi số có hai chữ số vừa chia hết cho 5, vừa có tổng hai chữ số bằng 7.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
@@ -109,35 +109,40 @@ Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: 
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 3.** Đếm số cách chọn. Có 7 chiếc áo và 4 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
+**Đề 3.** Ghi rõ thương và số dư trong mọi câu trả lời. Có 133 cái kẹo chia đều cho 12 bạn. Mỗi bạn được mấy cái và còn thừa mấy cái?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 4.** Với mỗi câu, viết ra danh sách đã thử rồi mới ghi đáp số. Đáp số có thể gồm nhiều số. Tìm mọi số có hai chữ số vừa chia hết cho 4, vừa có tổng hai chữ số bằng 11.
+**Đề 4.** Ba bạn Dũng, Yến, Vy mỗi bạn thích đúng một môn khác nhau trong ba môn Toán, Mĩ thuật, Âm nhạc. Biết **Dũng thích Toán** và **Yến không thích Âm nhạc**. Kẻ bảng ba hàng (tên bạn) và ba cột (môn học). Dữ kiện “Dũng thích Toán” cho phép đánh dấu ✔ vào ô nào?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 5.** Ba tình huống, cùng một cách đếm. Một giải đấu có 6 đội, hai đội bất kì đấu với nhau đúng một trận. Hỏi có tất cả bao nhiêu trận?
+**Đề 5.** Đọc kĩ chữ “và” hay chữ “hoặc”. Có 11 quyển sách Toán và 9 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một quyển Toán và một quyển Tiếng Việt**?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 6.** Xét trường hợp xấu nhất, không xét trường hợp may mắn. Có 27 gói kẹo giống hệt nhau, trong đó đúng một gói nhẹ hơn. Dùng cân đĩa không có quả cân, cần cân ít nhất mấy lần để tìm ra gói nhẹ?
+**Đề 6.** Ba bạn Hà, Dũng, Sơn, trong đó đúng một bạn làm vỡ lọ hoa.
+- Hà nói: “Tôi không làm.”
+- Dũng nói: “Sơn làm.”
+- Sơn nói: “Dũng nói dối.”
+
+Biết rằng trong ba bạn chỉ có đúng **một** bạn nói thật. Câu nói của Dũng và câu nói của Sơn có thể cùng đúng được không? Vì sao?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 7.** Nêu rõ ngăn kéo là gì, đồ vật là gì. Có 17 học sinh sinh trong 4 tháng khác nhau. Chứng tỏ rằng có ít nhất 5 bạn sinh cùng một tháng. Hỏi nếu bớt đi một bạn thì kết luận đó còn đúng không?
+**Đề 7.** Ba tình huống, cùng một cách đếm. Cho 6 điểm, không có ba điểm nào thẳng hàng. Qua hai điểm bất kì kẻ một đường thẳng. Hỏi kẻ được bao nhiêu đường thẳng?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 8.** Bắt buộc kẻ bảng ra giấy. Không được suy luận nhẩm ở bài này. Ba bạn Bình, Minh và Tuấn mỗi bạn học một môn năng khiếu khác nhau trong ba môn: hát, múa và đàn. Biết rằng: Bình không học múa và cũng không học đàn; Minh không học đàn. Hỏi mỗi bạn học môn nào?
+**Đề 8.** Xét trường hợp xấu nhất. Trong một hộp có bi thuộc 6 màu (đỏ, xanh, vàng, trắng, tím, nâu), mỗi màu có rất nhiều viên. Hỏi phải lấy ra ít nhất bao nhiêu viên (không nhìn) để chắc chắn có 5 viên cùng màu?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 9.** Ba bạn Lan, Dũng, Hà mỗi bạn thích đúng một môn khác nhau trong ba môn Âm nhạc, Mĩ thuật, Toán. Biết **Lan thích Âm nhạc** và **Dũng không thích Toán**. Kẻ bảng ba hàng (tên bạn) và ba cột (môn học). Dữ kiện “Lan thích Âm nhạc” cho phép đánh dấu ✔ vào ô nào?
+**Đề 9.** Dùng phương pháp giả thiết tạm. Trong sân có 24 chiếc xe ô tô và xe đạp, đếm được tất cả 72 bánh xe. Hỏi mỗi loại có bao nhiêu chiếc?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 10.** Dùng phương pháp giả thiết tạm. Trong sân có 29 chiếc xe đạp và xe ba bánh, đếm được tất cả 84 bánh xe. Hỏi mỗi loại có bao nhiêu chiếc?
+**Đề 10.** Nêu rõ ngăn kéo là gì, đồ vật là gì. Có 5 học sinh sinh trong 4 tháng khác nhau. Chứng tỏ rằng có ít nhất 2 bạn sinh cùng một tháng. Hỏi nếu bớt đi một bạn thì kết luận đó còn đúng không?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
@@ -147,16 +152,16 @@ Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: 
 
 | # | Dạng bài | Dấu hiệu |
 |:--:|---|---|
-| 1 | Trắc nghiệm đếm nhanh | Nhiều câu ngắn, mỗi câu một kỹ thuật khác nhau |
+| 1 | Thử chọn | Đề đòi một số thoả **nhiều điều kiện cùng lúc**, số khả năng hữu hạn |
 | 2 | Cân đĩa, chia ba | Cân đĩa không có quả cân, tìm vật khác biệt |
-| 3 | Quy tắc nhân | Chọn một phần tử từ mỗi nhóm để ghép thành một bộ |
-| 4 | Thử chọn | Đề đòi một số thoả **nhiều điều kiện cùng lúc**, số khả năng hữu hạn |
-| 5 | Đếm số cặp | “Hai … bất kì”, “mỗi người với tất cả những người còn lại” |
-| 6 | Cân đĩa, tìm vật khác biệt | Cân đĩa không có quả cân, tìm vật nhẹ hơn |
-| 7 | Đi-rích-lê dạng chứng minh | “Chứng tỏ rằng có ít nhất … cùng …” |
-| 8 | Lập bảng | Đề ghép **người với việc** và cho một loạt câu khẳng định hoặc phủ định |
-| 9 | Suy luận loại trừ có bảng | Mỗi người ứng với đúng một đối tượng, đề cho các dữ kiện phủ định |
-| 10 | Giả thiết tạm hai loại | Hai loại đối tượng, biết tổng số và tổng của một đại lượng phụ |
+| 3 | Chia hết và chia có dư trong tình huống chia phần | “Chia đều cho … bạn”, “còn thừa” |
+| 4 | Suy luận loại trừ có bảng | Mỗi người ứng với đúng một đối tượng, đề cho các dữ kiện phủ định |
+| 5 | Đếm bằng quy tắc cộng, nhân, bù trừ | Từ khoá “và”, “hoặc”, “cả hai”, “ít nhất một” |
+| 6 | Suy luận nói thật – nói dối | “Chỉ một người nói thật”, các câu nói mâu thuẫn nhau |
+| 7 | Đếm số cặp | “Hai … bất kì”, “mỗi người với tất cả những người còn lại” |
+| 8 | Nguyên lí Đi-rích-lê | Cụm “ít nhất … để chắc chắn …” |
+| 9 | Giả thiết tạm hai loại | Hai loại đối tượng, biết tổng số và tổng của một đại lượng phụ |
+| 10 | Đi-rích-lê dạng chứng minh | “Chứng tỏ rằng có ít nhất … cùng …” |
 
 ---
 

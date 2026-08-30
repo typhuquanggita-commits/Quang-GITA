@@ -30,59 +30,55 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Đặt tính rồi tính.
 
-a) 84 881 × 932
-b) 55 706 × 334
-c) 14 222 046 : 947
-d) 49 641 × 49
-e) 7 781 742 : 426
-f) 12 753 591 : 141
+a) 23 016 291 : 653
+b) 4 086 885 : 155
+c) 12 947 936 : 752
+d) 44 555 × 828
+e) 63 480 × 744
+f) 34 091 × 741
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
 Tính bằng cách thuận tiện nhất.
 
-a) 4 000 : 5 : 10
-b) 6 800 : 8 : 10
-c) 83 × 25 × 4
-d) 83 × 125 × 8
-e) 50 × 73 × 2
+a) 48 × 125 × 8
+b) 75 × 125 × 8
+c) 65 × 125 × 8
+d) 50 × 71 × 2
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
 Ghi rõ đại lượng nào ứng với 100%.
 
-a) Một món hàng giá 120 000 đồng, tăng giá 20%. Giá mới là bao nhiêu?
-b) Một chiếc cặp giá 300 000 đồng được giảm 10%. Hỏi giá sau khi giảm là bao nhiêu?
-c) Mua một món hàng 150 000 đồng rồi bán 195 000 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
-d) Mua một món hàng 240 000 đồng rồi bán 264 000 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
-e) Một món hàng giá 200 000 đồng, tăng giá 5%. Giá mới là bao nhiêu?
-f) Một chiếc cặp giá 120 000 đồng được giảm 40%. Hỏi giá sau khi giảm là bao nhiêu?
+a) Một chiếc cặp giá 240 000 đồng được giảm 25%. Hỏi giá sau khi giảm là bao nhiêu?
+b) Mua một món hàng 400 000 đồng rồi bán 480 000 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
+c) Một món hàng giá 80 000 đồng, tăng giá 5%. Giá mới là bao nhiêu?
+d) Một món hàng giá 240 000 đồng, tăng giá 30%. Giá mới là bao nhiêu?
+e) Mua một món hàng 80 000 đồng rồi bán 84 000 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
-Chú ý đơn vị mà đề hỏi.
+Điền số thích hợp.
 
-a) Một xe chở 13 bao muối, mỗi bao 50 kg. Hỏi xe chở bao nhiêu tạ muối?
-b) Một xe chở 21 bao xi măng, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ xi măng?
-c) Một xe chở 7 bao xi măng, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ xi măng?
-d) Một xe chở 27 bao thóc, mỗi bao 40 kg. Hỏi xe chở bao nhiêu tạ thóc?
-e) Một xe chở 21 bao xi măng, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ xi măng?
-f) Một xe chở 23 bao phân bón, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ phân bón?
+a) 43 m³ = … dm³
+b) 40 dm³ = … lít
+c) 64 000 cm³ = … dm³
+d) 30 lít = … ml
+e) 4 lít = … ml
+f) 18 dm³ = … lít
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
 
-Dùng kĩ thuật tô màu để lập luận.
+Tính thời gian gặp nhau trước.
 
-a) Một bàn cờ vuông 5 × 5 ô. Hỏi có tất cả bao nhiêu ô?
-b) Tô màu xen kẽ đen trắng như bàn cờ vua thì có bao nhiêu ô đen?
-c) Một quân đô-mi-nô phủ đúng 2 ô liền nhau. Có thể phủ kín cả bàn cờ 5 × 5 bằng các quân đô-mi-nô không?
-d) Mỗi quân đô-mi-nô luôn phủ mấy ô đen và mấy ô trắng?
-e) Nếu bỏ đi hai ô ở hai góc đối diện của bàn cờ 5 × 5 (hai ô này cùng màu) thì còn phủ kín được không?
-f) Đại lượng bất biến dùng ở đây là gì?
+a) Hai xe đi ngược chiều từ hai địa điểm cách nhau 360 km, vận tốc 60 km/giờ và 12 km/giờ. Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
+b) Hai xe đi ngược chiều từ hai địa điểm cách nhau 216 km, vận tốc 60 km/giờ và 12 km/giờ. Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
+c) Hai xe đi ngược chiều từ hai địa điểm cách nhau 198 km, vận tốc 48 km/giờ và 18 km/giờ. Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
+d) Hai xe đi ngược chiều từ hai địa điểm cách nhau 160 km, vận tốc 60 km/giờ và 20 km/giờ. Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
 
 
 ---
@@ -92,102 +88,97 @@ f) Đại lượng bất biến dùng ở đây là gì?
 
 ### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **79 109 092**
-b) **18 605 804**
-c) **15 018**
-d) **2 432 409**
-e) **18 267**
-f) **90 451**
+a) **35 247**
+b) **26 367**
+c) **17 218**
+d) **36 891 540**
+e) **47 229 120**
+f) **25 261 431**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 84 881 × 932
+1. Xét ý a: 23 016 291 : 653
 2. Đọc vị: đây là dạng **Nhân, chia số tự nhiên**; dấu hiệu là Yêu cầu “đặt tính rồi tính” với phép nhân, chia.
 3. Kiến thức phải dùng: Kĩ thuật đặt tính nhân, chia.
 4. Cách làm: Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ chữ số.
 5. Lối tắt: Kiểm tra kết quả bằng phép tính ngược: thương × số chia = số bị chia.
-6. Kết quả: **79 109 092**.
+6. Kết quả: **35 247**.
 
 *Lỗi hay mắc:* Quên viết chữ số 0 ở thương nên thương thiếu chữ số.
 
-### Bài 2, (2 điểm — mỗi ý 0,4 điểm)
+### Bài 2, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **80**
-b) **85**
-c) **8 300**
-d) **83 000**
-e) **7 300**
+a) **48 000**
+b) **75 000**
+c) **65 000**
+d) **7 100**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 4 000 : 5 : 10
+1. Xét ý a: 48 × 125 × 8
 2. Đọc vị: đây là dạng **Tính nhanh tích, thương nhiều bước**; dấu hiệu là Tích có thừa số 25, 125, 50, 20; hoặc chia liên tiếp.
 3. Kiến thức phải dùng: Tính chất giao hoán, kết hợp của phép nhân.
 4. Cách làm: Ghép cặp cho tích tròn rồi nhân.
 5. Lối tắt: Chia liên tiếp cho 4 rồi 25 bằng chia cho 100.
-6. Kết quả: **80**.
+6. Kết quả: **48 000**.
 
 *Lỗi hay mắc:* Nhân lần lượt từ trái sang phải nên số trung gian rất lớn.
 
-### Bài 3, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 3, (2 điểm — mỗi ý 0,4 điểm)
 
-a) **144 000 đồng**
-b) **270 000 đồng**
-c) **30%**
-d) **10%**
-e) **210 000 đồng**
-f) **72 000 đồng**
+a) **180 000 đồng**
+b) **20%**
+c) **84 000 đồng**
+d) **312 000 đồng**
+e) **5%**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Một món hàng giá 120 000 đồng, tăng giá 20%. Giá mới là bao nhiêu?
-2. Đọc vị: đây là dạng **Tỉ số phần trăm trong mua bán**; dấu hiệu là Từ khoá “giảm giá”, “tăng giá”, “lãi”, “lỗ”.
-3. Kiến thức phải dùng: Tỉ số phần trăm, mốc quy chiếu 100%.
-4. Cách làm: Chốt mốc 100% rồi cộng trừ phần trăm.
-5. Lối tắt: Giảm 20% nghĩa là còn 80% — nhân thẳng một lần thay vì trừ hai bước.
-6. Kết quả: **144 000 đồng**.
+1. Giá gốc ứng với 100%.
+2. Bước 1 — số tiền giảm: 240 000 : 100 × 25 = 60 000 (đồng).
+3. Bước 2 — giá sau khi giảm: 240 000 − 60 000 = 180 000 (đồng).
+4. Cách nhanh: giảm 25% nghĩa là còn 75%, tức 240 000 : 100 × 75 = 180 000 (đồng).
+5. Đáp số: **180 000 đồng**.
 
 *Lỗi hay mắc:* Chia tiền lãi cho giá bán nên ra tỉ lệ nhỏ hơn thực tế.
 
 ### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **6 tạ 50 kg**
-b) **5 tạ 25 kg**
-c) **2 tạ 10 kg**
-d) **10 tạ 80 kg**
-e) **6 tạ 30 kg**
-f) **5 tạ 75 kg**
+a) **43 000**
+b) **40**
+c) **64**
+d) **30 000**
+e) **4 000**
+f) **18**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Một xe chở 13 bao muối, mỗi bao 50 kg. Hỏi xe chở bao nhiêu tạ muối?
-2. Đọc vị: đây là dạng **Bài toán đại lượng có lời văn**; dấu hiệu là Đơn vị trong câu hỏi khác đơn vị trong dữ kiện.
-3. Kiến thức phải dùng: Nhân, chia số tự nhiên; đổi đơn vị khối lượng.
-4. Cách làm: Tính theo đơn vị dữ kiện rồi đổi ở bước cuối.
-5. Lối tắt: 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ.
-6. Kết quả: **6 tạ 50 kg**.
+1. Xét ý a: 43 m³ = … dm³
+2. Đọc vị: đây là dạng **Đổi đơn vị thể tích, dung tích**; dấu hiệu là Đơn vị có mũ ba, hoặc lít, mi-li-lít.
+3. Kiến thức phải dùng: Bảng đơn vị thể tích; quan hệ dm³ – lít.
+4. Cách làm: Đếm bậc rồi nhân, chia 1 000.
+5. Lối tắt: Mỗi bậc thêm ba chữ số 0.
+6. Kết quả: **43 000**.
 
-*Lỗi hay mắc:* Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ.
+*Lỗi hay mắc:* Đổi như đơn vị diện tích, chỉ nhân 100.
 
-### Bài 5, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 5, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **25**
-b) **13**
-c) **không, vì số ô là số lẻ**
-d) **1 ô đen và 1 ô trắng**
-e) **không, vì số ô còn lại là số lẻ**
-f) **hiệu giữa số ô đen và số ô trắng chưa bị phủ**
+a) **300 km**
+b) **180 km**
+c) **144 km**
+d) **120 km**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Một bàn cờ vuông 5 × 5 ô. Hỏi có tất cả bao nhiêu ô?
-2. Đọc vị: đây là dạng **Tô màu, bất biến trên bàn cờ**; dấu hiệu là Bàn cờ, quân đô-mi-nô, câu hỏi “có thể phủ kín không”.
-3. Kiến thức phải dùng: Kĩ thuật tô màu, bất biến, tính chẵn lẻ.
-4. Cách làm: Tô màu xen kẽ, đếm hai màu, so sánh.
-5. Lối tắt: Hai ô ở hai góc đối diện của bàn cờ luôn cùng màu.
-6. Kết quả: **25**.
+1. Xét ý a: Hai xe đi ngược chiều từ hai địa điểm cách nhau 360 km, vận tốc 60 km/giờ và 12 km/giờ. Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
+2. Đọc vị: đây là dạng **Chuyển động ngược chiều, tính quãng đường từng xe**; dấu hiệu là Hỏi quãng đường **của một xe** tính đến lúc gặp nhau.
+3. Kiến thức phải dùng: Quãng đường – vận tốc – thời gian, tỉ lệ thuận.
+4. Cách làm: Thời gian gặp → quãng đường từng xe.
+5. Lối tắt: Quãng đường hai xe đi tỉ lệ thuận với vận tốc — chia quãng cách theo tỉ số vận tốc là ra ngay.
+6. Kết quả: **300 km**.
 
-*Lỗi hay mắc:* Thử xếp bằng tay rồi kết luận “không xếp được” mà không chứng minh.
+*Lỗi hay mắc:* Chia quãng đường theo tỉ lệ sai, hoặc lấy quãng đường chia đôi.
 
 ---
 
@@ -200,8 +191,8 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài 1 | Nhân, chia số tự nhiên | Quên viết chữ số 0 ở thương nên thương thiếu chữ số. | Nhóm chuyên đề **—** · mức — |
 | Bài 2 | Tính nhanh tích, thương nhiều bước | Nhân lần lượt từ trái sang phải nên số trung gian rất lớn. | Nhóm chuyên đề **—** · mức — |
 | Bài 3 | Tỉ số phần trăm trong mua bán | Chia tiền lãi cho giá bán nên ra tỉ lệ nhỏ hơn thực tế. | Nhóm chuyên đề **—** · mức — |
-| Bài 4 | Bài toán đại lượng có lời văn | Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. | Nhóm chuyên đề **—** · mức — |
-| Bài 5 | Tô màu, bất biến trên bàn cờ | Thử xếp bằng tay rồi kết luận “không xếp được” mà không chứng minh. | Nhóm chuyên đề **—** · mức — |
+| Bài 4 | Đổi đơn vị thể tích, dung tích | Đổi như đơn vị diện tích, chỉ nhân 100. | Nhóm chuyên đề **—** · mức — |
+| Bài 5 | Chuyển động ngược chiều, tính quãng đường từng xe | Chia quãng đường theo tỉ lệ sai, hoặc lấy quãng đường chia đôi. | Nhóm chuyên đề **—** · mức — |
 
 ---
 

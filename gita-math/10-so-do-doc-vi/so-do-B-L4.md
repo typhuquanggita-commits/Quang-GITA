@@ -62,10 +62,12 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 | M2 | x nằm trong một cụm có hai phép tính | Tìm x qua hai bước | Gỡ dần từ phép ngoài cùng vào trong | Thay x tìm được vào đề để thử — nhanh hơn dò lại từng bước. | — |
 | M2 | Thừa số là 9, 11, 19, 21, 99, 101… | Nhân nhẩm nhờ tách thừa số | Tách về số tròn rồi bù trừ | × 11 với số có hai chữ số: viết hai chữ số ra hai đầu, tổng của chúng đặt vào giữa (nhớ sang trái nếu tổng vượt 9). | — |
 | M2 | Tích có thừa số 25, 125, 50, 20; hoặc chia liên tiếp | Tính nhanh tích, thương nhiều bước | Ghép cặp cho tích tròn rồi nhân | Chia liên tiếp cho 4 rồi 25 bằng chia cho 100. | — |
+| M2 | Vài món hàng có giá lẻ, cần biết nhanh tổng khoảng bao nhiêu | Tính nhanh tổng | Làm tròn để nhẩm, cộng số gốc để lấy kết quả đúng | Cộng phần nghìn trước rồi cộng phần lẻ sau, không đặt tính. | — |
 | M3 | Dãy cộng có dấu … và các số cách đều nhau | Tổng dãy số cách đều | Đếm số số hạng rồi áp công thức tổng | Ghép cặp đầu – cuối: mọi cặp đều có cùng tổng, chỉ cần nhân với số cặp. | Quên cộng 1 khi đếm số số hạng |
 | M3 | Hai vế có chung một số hạng hoặc một thừa số | So sánh biểu thức không tính giá trị | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | — |
 | M3 | x nằm trong ngoặc, ngoài ngoặc còn phép tính khác | Tìm x nhiều bước có ngoặc | Bóc lớp từ ngoài vào trong | Thay x tìm được vào đề, tính một lượt để thử lại. | — |
 | M3 | Đề kể một **chuỗi thao tác** rồi cho kết quả cuối, hỏi số ban đầu | Tính ngược từ cuối | Vẽ sơ đồ mũi tên, đi ngược và đảo từng phép tính | Gỡ từ phải sang trái, mỗi bước một phép tính ngược — không cần đặt ẩn. | Đi ngược nhưng không đảo thứ tự |
+| M3 | Nhiều dòng hoá đơn dùng chung một đơn giá | Nhân một số với một tổng | Gom số lượng rồi nhân một lần | Chênh lệch tiền = chênh lệch số lượng × đơn giá, không cần tính tổng hai bên. | — |
 | M4 | Trong biểu thức có ngoặc chứa hai số giống nhau trừ nhau | Tính nhanh nhờ thừa số 0 | Quét tìm cụm bằng 0 trước khi tính | Nhìn dấu ngoặc trước tiên — bẫy thường nằm ở đó. | Biểu thức lớn nhưng kết quả bằng 0 |
 | M4 | Dãy cộng gồm nhiều tích cùng một thừa số | Tổng các tích có thừa số chung | Đặt thừa số chung → tính tổng trong ngoặc bằng công thức | 1 + 2 + … + 100 = 5 050; nhớ vài mốc để nhân ngay. | — |
 | M4 | Chữ x xuất hiện ở cả hai vế của dấu bằng | Tìm x xuất hiện hai vế | Trừ bớt số lần x chung rồi đưa về phép chia | Vẽ sơ đồ đoạn thẳng cho mỗi vế — nhìn ra ngay phần chênh. | — |
@@ -95,43 +97,43 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 
 Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: đây là dạng bài gì, và dấu hiệu nào cho biết điều đó.
 
-**Đề 1.** Tìm x. Gợi ý: so sánh số lần x ở hai vế. x × 4 + 236 = x × 8
+**Đề 1.** Điền dấu <, >, = và giải thích ngắn. 793 × 14 … 800 × 14
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 2.** Đặt tính rồi tính. Ước lượng trước để tự kiểm tra. 315 040 − 282 824
+**Đề 2.** Đặt tính rồi tính. 79 930 − 37 146
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 3.** Tính bằng cách thuận tiện nhất. 91 × 42 + 91 × 11
+**Đề 3.** Tính bằng cách thuận tiện nhất. 21 + 331 + 79
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 4.** Vẽ sơ đồ mũi tên trước khi tính. Tính xong phải thử lại theo chiều xuôi. Em nghĩ ra một số. Lấy số ấy nhân với 6, được bao nhiêu thì cộng thêm 14, rồi chia cho 2 thì được 115. Hỏi số em nghĩ ra là số nào?
+**Đề 4.** Tìm x, trình bày đủ các bước. (12 + x) × 9 + 8 = 953
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 5.** Tính bằng cách nhanh nhất. (51 × 25 − 25 × 51) × 73
+**Đề 5.** Ba món trong giỏ: **trứng gà** 38 000 đồng · **cà chua** 63 000 đồng · **đậu phụ** 64 500 đồng. Làm tròn giá từng món đến hàng chục nghìn để nhẩm cho nhanh.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 6.** Tính giá trị mỗi biểu thức. 1 − 2 + 3 − 4 + 5 − 6 + … − 100
+**Đề 6.** Tìm x. x − 35 = 844
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 7.** Tìm x, trình bày đủ các bước. (x + 23) × 9 − 2 = 385
+**Đề 7.** Tính nhẩm, nêu cách nhẩm. 76 × 21
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 8.** Đặt tính rồi tính. 7 841 × 50
+**Đề 8.** Tìm x, trình bày từng bước. 742 − x × 9 = 157
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 9.** Tính hoặc so sánh bằng cách khéo nhất, không tính hết. 652 × 654 … 653 × 653
+**Đề 9.** Tính bằng cách nhanh nhất. 32 × 80 × (31 − 31)
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 10.** Tính nhẩm, ghi ngay kết quả. 8 772 × 100
+**Đề 10.** Tính giá trị mỗi biểu thức. 1 − 2 + 3 − 4 + 5 − 6 + … − 20
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
@@ -141,16 +143,16 @@ Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: 
 
 | # | Dạng bài | Dấu hiệu |
 |:--:|---|---|
-| 1 | Tìm x xuất hiện hai vế | Chữ x xuất hiện ở cả hai vế của dấu bằng |
-| 2 | Bốn phép tính với số tự nhiên | Yêu cầu “đặt tính rồi tính” |
-| 3 | Tính nhanh nhờ thừa số chung | Hai tích cộng hoặc trừ nhau, có chung một thừa số |
-| 4 | Tính ngược từ cuối | Đề kể một **chuỗi thao tác** rồi cho kết quả cuối, hỏi số ban đầu |
-| 5 | Tính nhanh nhờ thừa số 0 | Trong biểu thức có ngoặc chứa hai số giống nhau trừ nhau |
-| 6 | Tổng dãy cộng trừ xen kẽ | Dấu cộng và trừ xen kẽ đều đặn |
-| 7 | Tìm x nhiều bước có ngoặc | x nằm trong ngoặc, ngoài ngoặc còn phép tính khác |
-| 8 | Nhân, chia số tự nhiên | Yêu cầu “đặt tính rồi tính” với phép nhân, chia |
-| 9 | Tính, so sánh tích bằng kĩ thuật tách – bù | Các thừa số hơn kém nhau rất ít |
-| 10 | Nhân, chia nhẩm với số tròn chục, trăm, nghìn | Thừa số hoặc số chia là 10, 100, 1 000 |
+| 1 | So sánh biểu thức không tính giá trị | Hai vế có chung một số hạng hoặc một thừa số |
+| 2 | Cộng, trừ số tự nhiên | Yêu cầu “đặt tính rồi tính” |
+| 3 | Tính nhanh tổng nhiều số hạng | Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm |
+| 4 | Tìm x nhiều bước có ngoặc | x nằm trong ngoặc, ngoài ngoặc còn phép tính khác |
+| 5 | Tính nhanh tổng | Vài món hàng có giá lẻ, cần biết nhanh tổng khoảng bao nhiêu |
+| 6 | Tìm x trong phép tính một bước | Có chữ x đứng trong một phép tính |
+| 7 | Nhân nhẩm nhờ tách thừa số | Thừa số là 9, 11, 19, 21, 99, 101… |
+| 8 | Tìm x qua hai bước | x nằm trong một cụm có hai phép tính |
+| 9 | Tính nhanh nhờ thừa số 0 | Trong biểu thức có ngoặc chứa hai số giống nhau trừ nhau |
+| 10 | Tổng dãy cộng trừ xen kẽ | Dấu cộng và trừ xen kẽ đều đặn |
 
 ---
 

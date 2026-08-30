@@ -28,50 +28,48 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ### Bài 1. (2 điểm — 10 phút) Tính và điền kết quả
 
-Cho số **90 517**.
+Cho số **34 704**.
 
-a) Số 90 517 có bao nhiêu chữ số?
+a) Số 34 704 có bao nhiêu chữ số?
 b) Chữ số hàng đơn vị là chữ số nào?
 c) Chữ số hàng trăm là chữ số nào?
 d) Chữ số hàng nghìn là chữ số nào?
-e) Viết số 90 517 thành tổng các giá trị hàng.
-f) Tổng các chữ số của số 90 517 bằng bao nhiêu?
+e) Viết số 34 704 thành tổng các giá trị hàng.
+f) Tổng các chữ số của số 34 704 bằng bao nhiêu?
 
 
 ### Bài 2. (2 điểm — 10 phút) Tìm thành phần chưa biết, đổi đơn vị
 
-Tính bằng cách thuận tiện nhất.
+Ghi rõ đơn vị đồng ở mọi kết quả.
 
-a) 87 + 72 + 13 + 28
-b) 78 + 248 + 22
-c) 61 + 83 − 83
-d) 325 + 35 − 35
-e) 34 + 342 + 66
-f) 56 + 148 + 44
+a) Mua 5 quyển vở, mỗi quyển 18 000 đồng. Hết bao nhiêu tiền?
+b) Mua 3 quyển vở, mỗi quyển 8 000 đồng. Đưa cô bán hàng một tờ 50 000 đồng. Cô phải trả lại bao nhiêu tiền?
+c) Đổi một tờ 20 000 đồng ra các tờ 5 000 đồng thì được mấy tờ?
+d) Đổi một tờ 20 000 đồng ra các tờ 1 000 đồng thì được mấy tờ?
+e) Mua 3 quyển vở, mỗi quyển 18 000 đồng. Hết bao nhiêu tiền?
+f) Mua 4 quyển vở, mỗi quyển 5 000 đồng. Đưa cô bán hàng một tờ 50 000 đồng. Cô phải trả lại bao nhiêu tiền?
 
 
 ### Bài 3. (2 điểm — 15 phút) Toán điển hình có lời văn
 
 Giải từng bài toán nhỏ.
 
-a) 4 ngày đầu tuần một cửa hàng bán được lần lượt 51, 72, 55, 62 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
-b) Trung bình mỗi ngày bán được 142 kg gạo. Hỏi 3 ngày bán được tất cả bao nhiêu ki-lô-gam?
-c) 3 ngày đầu tuần một cửa hàng bán được lần lượt 105, 117, 114 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
-d) 3 ngày đầu tuần một cửa hàng bán được lần lượt 122, 112, 111 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
-e) Trung bình mỗi ngày cửa hàng bán được 285 kg gạo. 4 ngày đầu bán được 288, 278, 288, 287 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
-f) 5 ngày đầu tuần một cửa hàng bán được lần lượt 96, 96, 102, 104, 112 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
+a) Trung bình mỗi ngày cửa hàng bán được 57 kg gạo. 5 ngày đầu bán được 45, 68, 47, 59, 67 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
+b) Trung bình mỗi ngày bán được 174 kg gạo. Hỏi 6 ngày bán được tất cả bao nhiêu ki-lô-gam?
+c) 6 ngày đầu tuần một cửa hàng bán được lần lượt 159, 161, 159, 175, 162, 168 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
+d) Trung bình mỗi ngày bán được 256 kg gạo. Hỏi 5 ngày bán được tất cả bao nhiêu ki-lô-gam?
 
 
 ### Bài 4. (2 điểm — 15 phút) Hình học hoặc đại lượng
 
 Ghi kết quả theo giờ và phút.
 
-a) Bây giờ là 11 giờ 30 phút. Cách đây 40 phút là mấy giờ?
-b) Bây giờ là 9 giờ 5 phút. Sau 15 phút nữa là mấy giờ?
-c) 3 giờ 40 phút = … phút
-d) 7 giờ 15 phút = … phút
-e) Bây giờ là 11 giờ 25 phút. Cách đây 30 phút là mấy giờ?
-f) Bây giờ là 3 giờ 20 phút. Sau 15 phút nữa là mấy giờ?
+a) Bây giờ là 8 giờ 40 phút. Sau 25 phút nữa là mấy giờ?
+b) Bây giờ là 7 giờ 45 phút. Cách đây 20 phút là mấy giờ?
+c) 2 giờ 35 phút = … phút
+d) Bây giờ là 5 giờ 5 phút. Cách đây 20 phút là mấy giờ?
+e) Bây giờ là 9 giờ 35 phút. Sau 30 phút nữa là mấy giờ?
+f) 2 giờ 30 phút = … phút
 
 
 ### Bài 5. (2 điểm — 10 phút) Bài phân hoá
@@ -94,80 +92,78 @@ f) Tổng năm số hạng đầu bằng bao nhiêu?
 ### Bài 1, (2 điểm — mỗi ý 0,33 điểm)
 
 a) **5**
-b) **7**
-c) **5**
-d) **0**
-e) **90 000 + 500 + 10 + 7**
-f) **22**
+b) **4**
+c) **7**
+d) **4**
+e) **30 000 + 4 000 + 700 + 4**
+f) **18**
 
 **Cách giải mẫu:**
 
 1. Đếm từ phải sang trái: đơn vị, chục, trăm, nghìn, chục nghìn.
-2. Số 90 517 có 5 chữ số.
-3. Chữ số hàng đơn vị là chữ số cuối cùng bên phải: 7.
-4. Viết thành tổng: 90 000 + 500 + 10 + 7.
-5. Cộng các chữ số: 9 + 0 + 5 + 1 + 7 = 22.
+2. Số 34 704 có 5 chữ số.
+3. Chữ số hàng đơn vị là chữ số cuối cùng bên phải: 4.
+4. Viết thành tổng: 30 000 + 4 000 + 700 + 4.
+5. Cộng các chữ số: 3 + 4 + 7 + 0 + 4 = 18.
 6. Đáp số ý a: **5 chữ số**.
 
 *Lỗi hay mắc:* Đếm hàng từ trái sang phải nên lệch hàng.
 
 ### Bài 2, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **200**
-b) **348**
-c) **61**
-d) **325**
-e) **442**
-f) **248**
+a) **90 000 đồng**
+b) **26 000 đồng**
+c) **4 tờ**
+d) **20 tờ**
+e) **54 000 đồng**
+f) **30 000 đồng**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 87 + 72 + 13 + 28
-2. Đọc vị: đây là dạng **Tính nhanh tổng nhiều số hạng**; dấu hiệu là Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm.
-3. Kiến thức phải dùng: Tính chất giao hoán, kết hợp của phép cộng.
-4. Cách làm: Ghép cặp tròn rồi cộng.
-5. Lối tắt: Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10.
-6. Kết quả: **200**.
+1. Xét ý a: Mua 5 quyển vở, mỗi quyển 18 000 đồng. Hết bao nhiêu tiền?
+2. Đọc vị: đây là dạng **Bài toán tiền tệ hai bước**; dấu hiệu là “Đưa … đồng”, “trả lại”, “đổi ra tờ …”.
+3. Kiến thức phải dùng: Nhân, trừ với số tròn nghìn; mệnh giá tiền Việt Nam.
+4. Cách làm: Tính tiền hàng rồi trừ; đổi tiền thì chia.
+5. Lối tắt: Thử lại bằng cách cộng tiền hàng với tiền trả lại, phải đúng bằng tiền đưa.
+6. Kết quả: **90 000 đồng**.
 
-*Lỗi hay mắc:* Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn.
+*Lỗi hay mắc:* Lấy tiền đưa trừ ngay giá một quyển vở.
 
-### Bài 3, (2 điểm — mỗi ý 0,33 điểm)
+### Bài 3, (2 điểm — mỗi ý 0,5 điểm)
 
-a) **60 kg**
-b) **426 kg**
-c) **112 kg**
-d) **115 kg**
-e) **284 kg**
-f) **102 kg**
+a) **56 kg**
+b) **1 044 kg**
+c) **164 kg**
+d) **1 280 kg**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: 4 ngày đầu tuần một cửa hàng bán được lần lượt 51, 72, 55, 62 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
+1. Xét ý a: Trung bình mỗi ngày cửa hàng bán được 57 kg gạo. 5 ngày đầu bán được 45, 68, 47, 59, 67 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
 2. Đọc vị: đây là dạng **Ba dạng bài trung bình cộng**; dấu hiệu là Cụm “trung bình mỗi …”.
 3. Kiến thức phải dùng: Quan hệ tổng – số lượng – trung bình cộng.
 4. Cách làm: Đi qua tổng làm trung gian.
 5. Lối tắt: Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng.
-6. Kết quả: **60 kg**.
+6. Kết quả: **56 kg**.
 
 *Lỗi hay mắc:* Đi tìm ngay số còn thiếu mà chưa tính tổng.
 
 ### Bài 4, (2 điểm — mỗi ý 0,33 điểm)
 
-a) **10 giờ 50 phút**
-b) **9 giờ 20 phút**
-c) **220**
-d) **435**
-e) **10 giờ 55 phút**
-f) **3 giờ 35 phút**
+a) **9 giờ 5 phút**
+b) **7 giờ 25 phút**
+c) **155**
+d) **4 giờ 45 phút**
+e) **10 giờ 5 phút**
+f) **150**
 
 **Cách giải mẫu:**
 
-1. Xét ý a: Bây giờ là 11 giờ 30 phút. Cách đây 40 phút là mấy giờ?
+1. Xét ý a: Bây giờ là 8 giờ 40 phút. Sau 25 phút nữa là mấy giờ?
 2. Đọc vị: đây là dạng **Tính thời gian trong ngày**; dấu hiệu là Có chữ “giờ”, “phút”, “sau … phút nữa”.
 3. Kiến thức phải dùng: Quan hệ giờ – phút.
 4. Cách làm: Quy về phút, tính, đổi lại.
 5. Lối tắt: Cộng tròn giờ trước, cộng phút lẻ sau.
-6. Kết quả: **10 giờ 50 phút**.
+6. Kết quả: **9 giờ 5 phút**.
 
 *Lỗi hay mắc:* Cộng phần phút thành hơn 60 mà quên đổi thành giờ.
 
@@ -200,7 +196,7 @@ Chấm xong đối chiếu bảng này để biết phải làm gì tiếp, khô
 | Bài | Đo cái gì | Sai bài này nghĩa là | Học lại ở đâu |
 |:--:|---|---|---|
 | Bài 1 | Đọc, viết, cấu tạo số | Đếm hàng từ trái sang phải nên lệch hàng. | Nhóm chuyên đề **—** · mức — |
-| Bài 2 | Tính nhanh tổng nhiều số hạng | Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. | Nhóm chuyên đề **—** · mức — |
+| Bài 2 | Bài toán tiền tệ hai bước | Lấy tiền đưa trừ ngay giá một quyển vở. | Nhóm chuyên đề **—** · mức — |
 | Bài 3 | Ba dạng bài trung bình cộng | Đi tìm ngay số còn thiếu mà chưa tính tổng. | Nhóm chuyên đề **—** · mức — |
 | Bài 4 | Tính thời gian trong ngày | Cộng phần phút thành hơn 60 mà quên đổi thành giờ. | Nhóm chuyên đề **—** · mức — |
 | Bài 5 | Dãy có hiệu tăng đều | Không tìm ra hiệu đều thì bỏ cuộc, không thử dãy hiệu. | Nhóm chuyên đề **—** · mức — |

@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from fractions import Fraction
 
-from .khung import Bai, dang_ky, luan_phien, sv
+from .khung import Bai, dang_ky, hoa, luan_phien, sv
 
 PI = Fraction(314, 100)
 
@@ -179,8 +179,20 @@ def f2_m1_41(rng, lop):
             y.append((f"Góc {sv(d)}° so với góc vuông thì lớn hơn, bé hơn hay bằng?",
                       "bé hơn" if d < 90 else ("bằng" if d == 90 else "lớn hơn")))
         else:
-            y.append(("Hình chữ nhật có mấy cặp cạnh song song và mấy cặp cạnh vuông góc?",
-                      "2 cặp song song, 4 cặp vuông góc"))
+            # Trước đây nhánh này luôn hỏi đúng một câu về hình chữ nhật, nên
+            # bài nào rơi vào nó hai lần là có hai ý giống hệt nhau. Thay bằng
+            # một bảng hình, mỗi hình một đáp án đếm được từ chính hình ấy.
+            HINH_GOC = [
+                ("hình chữ nhật", 2, 4), ("hình vuông", 2, 4),
+                ("hình bình hành (không có góc vuông)", 2, 0),
+                ("hình thang thường", 1, 0), ("hình thang vuông", 1, 2),
+                ("hình tam giác vuông", 0, 1),
+                ("hình tam giác thường", 0, 0),
+            ]
+            ten_h, ss, vg = rng.choice(HINH_GOC)
+            y.append((f"{hoa(ten_h)} có mấy cặp cạnh song song và mấy cặp cạnh "
+                      f"vuông góc?",
+                      f"{sv(ss)} cặp song song, {sv(vg)} cặp vuông góc"))
     return Bai(
         tieu_de="Góc nhọn, góc tù, góc bẹt; vuông góc và song song",
         dan="Dùng ê ke và thước đo góc để kiểm chứng.",
