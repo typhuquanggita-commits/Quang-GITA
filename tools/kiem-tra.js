@@ -4153,6 +4153,31 @@ const { chromium } = require(PW);
       bao(['A', 'B', 'C', 'D', 'E'].every(x => chuTS.indexOf('Bài ' + x) >= 0),
         'người lạ nhìn thấy đủ NĂM bài đánh giá — đây chính là phần anh Quang mở ứng dụng và không thấy',
         'A B C D E');
+      /* ── Cửa trước phải nói CHIỀU SÂU, không nói chung chung ──
+         Một người lạ đọc "bài đánh giá đo năng lực học tập" thì không
+         phân biệt được chỗ này với bất kỳ bảng khảo sát nào trên mạng.
+         Cái phân biệt được nằm trong chính dữ liệu: từng bài cho ra
+         cái gì, bốn mức được TẢ ra sao, cảnh báo bật ở ngưỡng nào.
+         Mấy phép đo dưới đây bắt màn hình phải bày ra bằng ấy thứ. */
+      bao(/LÀM XONG THÌ CẦM ĐƯỢC GÌ/.test(chuTS) && /baseline/i.test(chuTS),
+        'mỗi bài nói rõ LÀM XONG THÌ CẦM ĐƯỢC GÌ — không để người lạ đoán bài đánh giá này dẫn tới đâu',
+        /baseline/i.test(chuTS) ? 'có phần cho ra' : 'thiếu');
+      const mucSo = (chuTS.match(/Mức [1-4]/g) || []).length;
+      bao(mucSo >= 20,
+        'mỗi bài mở một câu THẬT với đủ bốn mức được tả bằng tình huống — đây là chỗ phân biệt bộ đo nghề với một bảng khảo sát',
+        mucSo + ' mức hiển thị (5 bài × 4 mức)');
+      bao(/Bật khi miền/.test(chuTS) && /dưới \d+ điểm/.test(chuTS),
+        'cửa trước bày ra NGƯỠNG cảnh báo thật, không chỉ nói "hệ thống có cảnh báo"',
+        (chuTS.match(/Bật khi miền/g) || []).length + ' cảnh báo có ngưỡng');
+      bao(/KHÔNG dùng để kết luận nguyên nhân/.test(chuTS),
+        'ranh giới của bộ đo hiện ngay ở cửa trước — một bộ đo không tự khai chỗ nó dừng lại là bộ đo sẽ bị dùng quá tay',
+        'có ranh giới');
+      /* Ngân hàng câu hỏi vẫn phải kín: mỗi bài đúng MỘT câu mẫu. */
+      const soHoi = (chuTS.match(/MỘT CÂU THẬT TRONG BÀI/g) || []).length;
+      bao(soHoi === 5,
+        'mỗi bài mở đúng MỘT câu mẫu — bày cách hỏi, không bày ngân hàng câu hỏi',
+        soHoi + '/5 bài, 5 câu trên 150 câu của tầng một');
+
       const nutLam = await p41.locator('[data-test],[data-tlam],[data-txong]').count();
       bao(nutLam === 0,
         'người CHƯA đăng ký xem được hình dạng bài nhưng không làm được — bài xong phải có mã gia đình để ghi vào, cho làm rồi vứt kết quả là lấy không của gia đình 75 phút',
@@ -4176,6 +4201,44 @@ const { chromium } = require(PW);
     bao(!loi41.length, 'không lỗi trang nào trong suốt đường đi của người lạ',
       loi41.length ? loi41[0].slice(0, 90) : '0 lỗi');
     await p41.close();
+
+    /* ── Và cửa ấy phải mở được ở BẢN MỘT TỆP ──
+       Bản một tệp là bản thật sự gửi cho một người lạ xem: không có thư
+       mục kho/ cạnh trang, gói mẫu nhúng thẳng vào G.MAU_NHUNG. Cửa
+       trước lấy dữ liệu bằng fetch('kho/mau.json') thì ở đây trả 404 —
+       hỏng đúng ở bản mà người lạ hay mở nhất. Đo trên chính tệp ấy,
+       không đo bằng cách đọc mã. */
+    const ban41 = /version:\s*'([^']+)'/.exec(
+      fs41.readFileSync(px41.join(goc41, 'src', 'data.core.js'), 'utf8'));
+    const tep41 = ban41 && px41.join(goc41, 'GITA365-v' + ban41[1] + '-gioi-thieu.html');
+    if (tep41 && fs41.existsSync(tep41)) {
+      const q = await b.newPage();
+      const loiQ = [];
+      q.on('pageerror', e => loiQ.push(String(e)));
+      await q.goto('file://' + tep41, { waitUntil: 'load' });
+      await q.waitForTimeout(1600);
+      const nutQ = await q.locator('[data-act="xem-truoc"]').count();
+      let baiQ = false, tabQ = 0;
+      if (nutQ) {
+        await q.locator('[data-act="xem-truoc"]').first().click();
+        await q.waitForTimeout(1400);
+        tabQ = await q.locator('[data-ct]').count();
+        if (tabQ) {
+          await q.locator('[data-ct="test"]').click();
+          await q.waitForTimeout(700);
+          const tQ = await q.locator('#app').innerText();
+          baiQ = ['A', 'B', 'C', 'D', 'E'].every(x => tQ.indexOf('Bài ' + x) >= 0);
+        }
+      }
+      bao(nutQ > 0 && tabQ === 3 && baiQ,
+        'cửa trước mở được cả ở BẢN MỘT TỆP — đây mới là bản thật sự gửi cho người lạ xem',
+        nutQ ? tabQ + '/3 phần · năm bài ' + (baiQ ? 'thấy đủ' : 'KHÔNG thấy') : 'không có lối vào');
+      bao(!loiQ.length, 'bản một tệp không lỗi trang khi mở cửa trước',
+        loiQ.length ? loiQ[0].slice(0, 90) : '0 lỗi');
+      await q.close();
+    } else {
+      bao(false, 'có bản một tệp để đo cửa trước', 'chưa dựng — chạy python3 tools/dong-goi.py');
+    }
   }
 
   console.log('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành'));
