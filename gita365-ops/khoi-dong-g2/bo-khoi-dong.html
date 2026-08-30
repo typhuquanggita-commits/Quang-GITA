@@ -1,0 +1,430 @@
+<title>Bộ Khởi Động Gia Đình Thịnh Vượng</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap">
+<style>
+
+:root{
+  --paper:#F2F4F0; --surface:#FFFFFF; --sunk:#E8ECE5; --raised:#FBFCFA;
+  --ink:#111815; --ink-2:#39463F; --muted:#65746B; --faint:#8B978F;
+  --line:#D5DCD2; --hair:#E5EAE2;
+  --jade:#1B5E4F; --jade-ink:#14493D; --jade-wash:#DEEAE5;
+  --lacquer:#A63E27; --lacquer-wash:#F6E2DB;
+  --amber:#8A6110; --amber-wash:#F4EAD3;
+  --s1:#0B8A6C; --s2:#C0670A; --s3:#3060A8;
+  --good:#1B6E4A; --good-wash:#DCEDE2;
+  --warn:#8A6110; --warn-wash:#F4EAD3;
+  --bad:#A63E27; --bad-wash:#F6E2DB;
+  --sh-1:0 1px 2px rgba(17,24,21,.05);
+  --sh-2:0 1px 2px rgba(17,24,21,.05), 0 10px 28px -20px rgba(17,24,21,.5);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#0C1210; --surface:#141B18; --sunk:#0F1614; --raised:#1A221E;
+    --ink:#E9EEE9; --ink-2:#C2CDC6; --muted:#8C9A92; --faint:#6E7C74;
+    --line:#252F2A; --hair:#1D2621;
+    --jade:#6FC3A9; --jade-ink:#8FD3BD; --jade-wash:#14302A;
+    --lacquer:#E08466; --lacquer-wash:#331F19;
+    --amber:#D4A54A; --amber-wash:#2D2615;
+    --s1:#12A47D; --s2:#C8851E; --s3:#5A8FD6;
+    --good:#5CBE8C; --good-wash:#14291D;
+    --warn:#D4A54A; --warn-wash:#2D2615;
+    --bad:#E08466; --bad-wash:#331F19;
+    --sh-1:0 1px 2px rgba(0,0,0,.5);
+    --sh-2:0 1px 2px rgba(0,0,0,.5), 0 12px 32px -22px #000;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0C1210; --surface:#141B18; --sunk:#0F1614; --raised:#1A221E;
+  --ink:#E9EEE9; --ink-2:#C2CDC6; --muted:#8C9A92; --faint:#6E7C74;
+  --line:#252F2A; --hair:#1D2621;
+  --jade:#6FC3A9; --jade-ink:#8FD3BD; --jade-wash:#14302A;
+  --lacquer:#E08466; --lacquer-wash:#331F19;
+  --amber:#D4A54A; --amber-wash:#2D2615;
+  --s1:#12A47D; --s2:#C8851E; --s3:#5A8FD6;
+  --good:#5CBE8C; --good-wash:#14291D;
+  --warn:#D4A54A; --warn-wash:#2D2615;
+  --bad:#E08466; --bad-wash:#331F19;
+  --sh-1:0 1px 2px rgba(0,0,0,.5);
+  --sh-2:0 1px 2px rgba(0,0,0,.5), 0 12px 32px -22px #000;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:15.5px;line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:Lora,Georgia,serif;margin:0;line-height:1.2;text-wrap:balance}
+p{margin:0}
+button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
+:focus-visible{outline:2px solid var(--jade);outline-offset:2px;border-radius:4px}
+.num{font-variant-numeric:tabular-nums}
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Be Vietnam Pro",system-ui,-apple-system,sans-serif;font-size:15.5px;line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:Lora,Georgia,serif;margin:0;line-height:1.22;text-wrap:balance}
+p{margin:0}
+button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
+:focus-visible{outline:2px solid var(--jade);outline-offset:2px;border-radius:4px}
+.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--paper) 88%,transparent);
+  backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.top-in{max-width:1060px;margin:0 auto;padding:0 20px}
+.top-row{display:flex;align-items:center;gap:14px;padding:13px 0 11px;flex-wrap:wrap}
+.logo{font-family:Lora,serif;font-weight:700;font-size:17px;white-space:nowrap}
+.logo span{color:var(--jade)}
+.chip{font-size:11px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--lacquer);
+  background:var(--lacquer-wash);padding:4px 10px;border-radius:100px;border:1px solid color-mix(in srgb,var(--lacquer) 22%,transparent)}
+.top-right{margin-left:auto;font-size:12.5px;color:var(--muted)}
+.tabs{display:flex;gap:2px;overflow-x:auto;padding-bottom:2px;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{padding:9px 14px 11px;font-size:14px;font-weight:500;color:var(--muted);white-space:nowrap;border-bottom:2px solid transparent;border-radius:6px 6px 0 0}
+.tab:hover{color:var(--ink)}
+.tab[aria-selected="true"]{color:var(--jade);border-bottom-color:var(--jade);font-weight:600}
+.tab .idx{font-size:11px;color:var(--faint);margin-right:7px;font-variant-numeric:tabular-nums}
+.tab[aria-selected="true"] .idx{color:var(--jade)}
+.wrap{max-width:1060px;margin:0 auto;padding:0 20px 90px}
+.panel{padding:36px 0 0}
+.panel[hidden]{display:none!important}
+.eyebrow{font-size:11px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--jade);
+  display:flex;align-items:center;gap:9px;margin-bottom:11px}
+.eyebrow::before{content:"";width:20px;height:1px;background:currentColor;opacity:.5}
+h2{font-size:clamp(24px,3.2vw,31px);font-weight:600;letter-spacing:-.018em}
+h3{font-size:18px;font-weight:600;margin-top:36px}
+.lede{margin-top:12px;color:var(--ink-2);font-size:16.5px;max-width:70ch}
+.body{margin-top:11px;color:var(--ink-2);max-width:70ch}
+.small{font-size:13px;color:var(--muted)}
+.note{margin-top:22px;border:1px solid var(--line);border-left:3px solid var(--jade);background:var(--surface);padding:16px 20px;border-radius:0 11px 11px 0}
+.note .k{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--jade)}
+.note p{margin-top:7px;color:var(--ink-2);max-width:68ch}
+.note.red{border-left-color:var(--lacquer);background:var(--lacquer-wash);border-color:color-mix(in srgb,var(--lacquer) 20%,transparent)}
+.note.red .k{color:var(--lacquer)} .note.red p{color:var(--ink)}
+/* copy block */
+.blk{margin-top:18px;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:var(--sh-1)}
+.blk-h{display:flex;align-items:center;gap:12px;padding:12px 15px;border-bottom:1px solid var(--hair);background:var(--sunk);flex-wrap:wrap}
+.blk-h .t{font-size:13.5px;font-weight:600}
+.blk-h .m{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.cp{margin-left:auto;border:1px solid var(--line);background:var(--surface);padding:5px 13px;border-radius:7px;
+  font-size:12.5px;font-weight:600;color:var(--jade);white-space:nowrap}
+.cp:hover{border-color:var(--jade)}
+.cp.done{background:var(--good-wash);border-color:var(--good);color:var(--good)}
+pre{margin:0;padding:15px;font-family:"Be Vietnam Pro",system-ui,sans-serif;font-size:14px;line-height:1.62;
+  white-space:pre-wrap;word-break:break-word;color:var(--ink-2);max-height:none}
+pre.short{font-size:13.5px}
+/* checklist */
+.chk{margin-top:20px;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.chk-i{display:grid;grid-template-columns:24px 1fr;gap:12px;padding:12px 16px;border-bottom:1px solid var(--hair);cursor:pointer;align-items:start}
+.chk-i:last-child{border-bottom:none}
+.chk-i:hover{background:var(--sunk)}
+.chk-i input{width:18px;height:18px;accent-color:var(--jade);margin:2px 0 0}
+.chk-i.on span{color:var(--faint);text-decoration:line-through}
+.chk-i span{font-size:14.5px;color:var(--ink-2)}
+.prog{display:flex;align-items:center;gap:12px;margin-top:18px;font-size:13px;color:var(--muted)}
+.prog .bar{flex:1;height:7px;background:var(--sunk);border-radius:4px;overflow:hidden;max-width:320px}
+.prog .fl{height:100%;background:var(--jade);border-radius:4px;transition:width .2s}
+/* post list */
+.post{margin-top:14px;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:var(--sh-1)}
+.post-h{display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center;padding:14px 16px;cursor:pointer;width:100%;text-align:left}
+.post-h:hover{background:var(--sunk)}
+.post-h .when{font-family:Lora,serif;font-weight:700;font-size:13px;color:var(--jade);white-space:nowrap;font-variant-numeric:tabular-nums;min-width:96px}
+.post-h .ttl{display:block;font-size:15px;font-weight:600;line-height:1.35}
+.post-h .sub{display:block;font-size:12px;color:var(--muted);margin-top:3px}
+.post-h .car{font-size:10.5px;font-weight:700;letter-spacing:.06em;padding:3px 8px;border-radius:5px;background:var(--jade-wash);color:var(--jade);white-space:nowrap}
+.post-h .car.c3{background:var(--lacquer-wash);color:var(--lacquer)}
+.post-b{padding:0 16px 16px;border-top:1px solid var(--hair)}
+.post-b[hidden]{display:none}
+.lbl{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:16px 0 7px;display:flex;align-items:center;gap:10px}
+.lbl .cp{margin-left:auto}
+.scroller{overflow-x:auto;margin-top:20px;border:1px solid var(--line);border-radius:11px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:14px}
+th,td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--hair);vertical-align:top}
+thead th{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);background:var(--sunk);white-space:nowrap;border-bottom:1px solid var(--line)}
+tbody tr:last-child td{border-bottom:none}
+td.n,th.n{font-variant-numeric:tabular-nums;white-space:nowrap;text-align:right}
+caption{caption-side:bottom;text-align:left;padding:10px 14px;font-size:12.5px;color:var(--muted);border-top:1px solid var(--hair)}
+ul.plain{margin:12px 0 0;padding-left:19px;color:var(--ink-2);max-width:70ch}
+ul.plain li{margin-bottom:6px}
+code{font-family:ui-monospace,Menlo,monospace;font-size:12.5px;background:var(--sunk);padding:1px 5px;border-radius:4px}
+footer{margin-top:52px;padding-top:22px;border-top:1px solid var(--line);color:var(--muted);font-size:13.5px;max-width:70ch}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+<header class="top">
+  <div class="top-in">
+    <div class="top-row">
+      <div class="logo">GITA<span>365</span> · Bộ khởi động</div>
+      <span class="chip">Gia Đình Thịnh Vượng · Tuần test</span>
+      <div class="top-right">Bấm “Chép” rồi dán thẳng vào Facebook</div>
+    </div>
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" aria-selected="true" data-tab="ngay0"><span class="idx">01</span>Ngày 0 · Cấu hình</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="ghim"><span class="idx">02</span>Bài ghim</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="bai"><span class="idx">03</span>Mười bài của tuần</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="tinnhan"><span class="idx">04</span>Tin nhắn</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="do"><span class="idx">05</span>Đo &amp; chấm</button>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+<section class="panel" data-panel="ngay0">
+  <div class="eyebrow">Ngày 0 · khoảng 60 phút</div>
+  <h2>Cấu hình nhóm — làm một lần, đảo ngược được</h2>
+  <p class="lede">Tuần này là tuần chạy thử. Ba việc khó quay lại — đổi tên nhóm, chuyển sang công khai, đổi nghi thức sang dạng mỗi gia đình một bài riêng — <b>cố tình chưa làm</b>, để có số liệu nền trước đã.</p>
+
+  <div class="note red">
+    <div class="k">Việc đầu tiên, làm trước khi đụng vào bất cứ thứ gì</div>
+    <p>Mở Thông tin chi tiết của nhóm và ghi lại <b>số nền</b>: tổng thành viên · số bài 28 ngày qua · số người tương tác 28 ngày qua · số yêu cầu tham gia đang chờ. Không có số nền thì cuối tuần không biết mình đã đi được bao xa.</p>
+  </div>
+
+  <div class="chk" id="chk"></div>
+  <div class="prog"><span id="progtxt">0/13</span><span class="bar"><span class="fl" id="progfl" style="width:0%"></span></span><span class="small">tiến độ được ghi nhớ trên máy của anh</span></div>
+
+  <h3>Mô tả nhóm</h3>
+  <p class="body small">Cài đặt nhóm → Mô tả. Hai câu đầu chứa từ khóa chính — giữ nguyên thứ tự, đừng đảo lên xuống.</p>
+  <div id="mota"></div>
+
+  <h3>Bốn câu hỏi cổng vào</h3>
+  <p class="body small">Cài đặt → Câu hỏi tham gia. Bật <b>bắt buộc trả lời</b> cho cả bốn. Câu 4 là cách đo giới thiệu hợp lệ duy nhất — không được đo bằng lượt chia sẻ hay gắn thẻ.</p>
+  <div id="cauhoi"></div>
+
+  <h3>Chủ đề nhóm và vị trí</h3>
+  <div id="chude"></div>
+
+  <h3>Mười quy tắc Trợ lý quản trị</h3>
+  <p class="body small">Đây là phần chạy tự động 24/7 — lọc cổng vào và kiểm duyệt mà không cần người trực.</p>
+  <div class="scroller"><table><thead><tr><th class="n">#</th><th>Hành động</th><th>Điều kiện</th></tr></thead><tbody id="aa"></tbody></table></div>
+
+  <h3>Danh sách từ khóa lọc</h3>
+  <p class="body small">Kiểm duyệt → Bộ lọc từ khóa. Đặt chế độ <b>ẩn chờ duyệt</b>, không xóa thẳng — tránh báo động giả với những câu như “em vay tiền mua sách cho con”.</p>
+  <div id="tukhoa"></div>
+
+  <h3>Ảnh bìa</h3>
+  <div id="anhbia"></div>
+</section>
+
+<section class="panel" data-panel="ghim" hidden>
+  <div class="eyebrow">Bài ghim</div>
+  <h2>Ba bài ghim — đăng và ghim ngay trong Ngày 0</h2>
+  <p class="lede">Ba bài này là bộ mặt của nhóm với người mới, và là chỗ dựa của người kiểm duyệt khi phải xử lý vi phạm. Bài thứ tư để dành, chỉ đăng khi anh quyết định chuyển nhóm sang công khai.</p>
+  <div id="ghim"></div>
+</section>
+
+<section class="panel" data-panel="bai" hidden>
+  <div class="eyebrow">Ngày 1–7</div>
+  <h2>Mười bài của tuần test</h2>
+  <p class="lede">Bấm vào một bài để mở nội dung đầy đủ, bình luận ghim, ba câu hỏi mồi và lưu ý vận hành. Thay <code>[LIÊN_KẾT_WEB_APP]</code> bằng đường dẫn thật trước khi đăng.</p>
+  <div class="note">
+    <div class="k">Luật sắt mỗi ngày</div>
+    <p>Người trực có mặt <b>60 phút</b> sau giờ đăng, trả lời <b>100% bình luận trong 30 phút</b>, mỗi trả lời kết bằng một câu hỏi. Đây là thứ tạo ra hiển thị — bỏ nó thì cả tuần test không nói lên điều gì. Mỗi tối 21:30 ghi bốn dòng vào bảng đo.</p>
+  </div>
+  <div id="posts"></div>
+</section>
+
+<section class="panel" data-panel="tinnhan" hidden>
+  <div class="eyebrow">Chăm sóc</div>
+  <h2>Năm kịch bản tin nhắn</h2>
+  <p class="lede">Cá nhân hóa từng tin — dán nguyên văn hàng loạt sẽ bị nhận ra ngay, và mất nhiều hơn được. Mỗi người chăm sóc nhắn tối đa <b>10 tin mỗi ngày</b>, và <b>không bán gì trong ba tin đầu</b>.</p>
+  <div id="tn"></div>
+</section>
+
+<section class="panel" data-panel="do" hidden>
+  <div class="eyebrow">Cuối tuần</div>
+  <h2>Chấm kết quả tuần test</h2>
+  <p class="lede">Điền số thật vào bài Chủ nhật trước khi đăng, rồi đối chiếu bảy chỉ tiêu dưới đây.</p>
+  <div class="scroller">
+    <table>
+      <caption>Đạt từ 5/7 → chạy tiếp tuần 2 và bắt đầu ba việc lớn. Dưới 5/7 → giữ nguyên cấu hình, chỉ sửa nội dung, chạy lại một tuần. Không mở rộng khi phễu chưa chảy.</caption>
+      <thead><tr><th>Chỉ số tuần 1</th><th class="n">Ngưỡng đạt</th><th>Nói lên điều gì</th></tr></thead>
+      <tbody>
+        <tr><td>Bình luận gốc trung bình mỗi bài chính</td><td class="n">≥ 15</td><td>Nội dung có chạm không</td></tr>
+        <tr><td>Bình luận trong <b>giờ đầu</b> của bài chính</td><td class="n">≥ 10</td><td>Ngưỡng đổi lấy khoảng 3,7 lần hiển thị</td></tr>
+        <tr><td>Người bình luận <b>lần đầu</b> trong nhóm</td><td class="n">≥ 10</td><td>Có kéo được người im lặng lên tiếng không</td></tr>
+        <tr><td>Thời gian phản hồi trung bình</td><td class="n">≤ 30 phút</td><td>Đội có giữ được kỷ luật không</td></tr>
+        <tr><td>Tài khoản web app tạo mới</td><td class="n">≥ 8</td><td>Phễu có chảy không</td></tr>
+        <tr><td>Gia đình đăng ký Mã gia đình</td><td class="n">≥ 15</td><td>Có chuyển sang đơn vị “gia đình” được không</td></tr>
+        <tr><td>Tỉ lệ bình luận từ 10 từ trở lên</td><td class="n">≥ 60%</td><td>Chất lượng tương tác thật</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Bốn dòng sổ ca — ghi mỗi tối 21:30</h3>
+  <ul class="plain">
+    <li>Số bình luận sau 60 phút</li>
+    <li>Ba người tương tác chất lượng nhất (để nhắn riêng ngày hôm sau)</li>
+    <li>Một câu hỏi hoặc nỗi đau đáng chú ý (để làm nội dung tuần sau)</li>
+    <li>Việc cần chuyển cho ca sau</li>
+  </ul>
+
+  <h3>Ba việc chưa làm trong tuần test</h3>
+  <div class="scroller">
+    <table>
+      <thead><tr><th>Việc</th><th>Vì sao hoãn</th><th class="n">Làm khi nào</th></tr></thead>
+      <tbody>
+        <tr><td>Đổi tên nhóm</td><td>Chỉ nên đổi một lần cho tử tế, cần số liệu nền trước</td><td class="n">Tuần 3</td></tr>
+        <tr><td>Chuyển nhóm sang công khai</td><td>Phải thông báo cho thành viên trước 7 ngày — bài mẫu đã có sẵn ở khu vực Bài ghim</td><td class="n">Tuần 4</td></tr>
+        <tr><td>Đổi nghi thức sang dạng mỗi gia đình một bài riêng</td><td>Cần đủ người tham gia trước, nếu không nhóm sẽ trống</td><td class="n">Tuần 3–4</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <footer>
+    <p>Bộ này nằm trong kho mã nguồn tại <code>gita365-ops/khoi-dong-g2/</code>, kèm bảng đo <code>bang-do-tuan-1.csv</code> để nhập số mỗi tối.</p>
+    <p style="margin-top:10px">Tôi không có kết nối tới Facebook trong phiên làm việc này, nên phần đăng bài và cấu hình vẫn cần một người bấm — đúng mô hình “máy soạn, người bấm”. Anh chạy xong tuần test, gửi tôi số liệu, tôi chấm và soạn tuần 2.</p>
+  </footer>
+</section>
+
+</div>
+
+<script>
+const G2={"config":{"mo_ta":"Cộng đồng gia đình hạnh phúc — nơi các gia đình Việt cùng nhau xây nếp nhà, đồng hành cùng con và giữ bữa cơm tối. Mỗi tuần cả nhà nhận một nhiệm vụ nhỏ làm được ngay tối nay, không lý thuyết dài dòng.\n\nNhóm này dành cho ai?\n• Cha mẹ đang muốn nói chuyện với con dễ hơn, bớt quát hơn\n• Vợ chồng muốn thống nhất cách dạy con\n• Gia đình nhiều thế hệ muốn ông bà và bố mẹ hiểu nhau\n• Bất kỳ nhà nào muốn có 30 phút thật sự ngồi cùng nhau mỗi tối\n\nMỗi tuần ở đây có gì?\n• Thứ Hai — Nhiệm vụ gia đình tuần: cả nhà chọn một việc nhỏ và cam kết\n• Thứ Ba — Bàn ăn yêu thương: một câu hỏi để hỏi con trong bữa tối\n• Thứ Tư — Việc tử tế của gia đình: mỗi nhà làm một việc tử tế và kể lại\n• Thứ Năm — Cha mẹ tỉnh thức: một kỹ năng nói chuyện, có câu nói cụ thể để dùng\n• Thứ Sáu — Khoe nhà mình: một khoảnh khắc thật của gia đình bạn\n• Thứ Bảy — Gia đình chơi cùng nhau: trò chơi 15 phút không cần dụng cụ\n• Chủ nhật — Bảng vinh danh: gọi tên những gia đình bền bỉ nhất tuần\n\nGiá trị cốt lõi của chúng tôi là CHO LÀ NHẬN. Ở đây không ai bán hàng, không ai mời khóa học, không ai dạy đời. Mỗi người kể chuyện thật của nhà mình, và giúp được nhà khác điều gì thì giúp.\n\nTham gia bằng cả gia đình: mỗi hộ đăng ký một Mã gia đình để cùng thi đua trong Mùa Gia Đình Thịnh Vượng — bốn bảng đấu chia theo độ tuổi các con, để nhà nhỏ không bị lép vế trước nhà đông người.\n\nCộng đồng do GITA365 vận hành.","cau_hoi":["Gia đình bạn gồm những ai, và điều bạn trân quý nhất ở gia đình mình là gì? (viết 1–2 câu, càng thật càng tốt)","Hoạt động nào gia đình bạn muốn làm cùng nhau nhiều hơn? (chọn: Bữa cơm / Vận động / Học cùng con / Du lịch – trải nghiệm / Việc thiện nguyện)","Bạn có sẵn lòng mỗi tuần chia sẻ một khoảnh khắc thật của gia đình mình không? (Có / Để tôi quan sát trước)","Ai giới thiệu bạn vào nhóm, hoặc bạn biết nhóm qua đâu? (bắt buộc trả lời)"],"chu_de":["Nuôi dạy con","Gia đình","Kỹ năng làm cha mẹ","Hoạt động cùng con","Đời sống gia đình"],"tu_khoa":"ib giá, inbox giá, giá sỉ, sỉ lẻ, chốt đơn, freeship, cod, tuyển ctv, tuyển cộng tác viên, việc nhẹ lương cao, làm việc tại nhà, thu nhập thụ động, hoa hồng, nhị phân, tuyến dưới, kèo, sàn, đầu tư sinh lời, x2 tài khoản, chốt kèo, vay nhanh, vay không thế chấp, đáo hạn, đổi tiền, crypto, forex, lãi suất cao, ủy thác đầu tư, kết bạn zalo nhé, sđt em là, add mình, nhắn riêng em bán, tư vấn miễn phí ib, bao check, bao ship, ship cod toàn quốc","admin_assist":[["Từ chối yêu cầu tham gia","nếu tài khoản dưới 30 ngày tuổi"],["Từ chối yêu cầu tham gia","nếu không trả lời hết 4 câu hỏi"],["Từ chối yêu cầu tham gia","nếu câu trả lời chứa từ khóa trong danh sách lọc"],["Từ chối yêu cầu tham gia","nếu người đó từng bị mời khỏi nhóm"],["Tạm dừng đăng bài","với thành viên mới trong 7 ngày đầu"],["Ẩn bình luận","chứa từ khóa lọc, hoặc chứa số điện thoại, hoặc chứa liên kết ngoài"],["Ẩn bài viết","có chứa liên kết ngoài danh sách cho phép"],["Cảnh báo quản trị viên","khi một bài có tốc độ bình luận bất thường"],["Hạn chế thành viên","tự động sau 3 lần bị ẩn nội dung"],["Duyệt bài","bật cho toàn bộ bài đăng của thành viên mới"]],"anh_bia":"Kích thước 1640 × 856 điểm ảnh (hiển thị an toàn trên điện thoại: giữ chữ trong vùng giữa 1200 × 600).\nDòng chữ lớn: GIA ĐÌNH THỊNH VƯỢNG\nDòng chữ nhỏ bên dưới: Mỗi tuần một việc nhỏ — cả nhà làm cùng nhau\nGóc dưới bên phải: gita365 (nhạt, nhỏ)\nNền: ảnh thật của một gia đình đang làm việc gì đó cùng nhau, chụp từ xa hoặc từ phía sau (không nhận diện rõ mặt trẻ em), phủ một lớp tối nhẹ để chữ đọc được."},"ghim":[["Luật nhà mình","📌 LUẬT NHÀ MÌNH — GIA ĐÌNH THỊNH VƯỢNG\n\nNhóm này là nhóm của các GIA ĐÌNH. Bảy điều dưới đây giữ cho không khí ở đây luôn dễ thở:\n\n1. CHO LÀ NHẬN. Trước khi hỏi xin điều gì, hãy chia sẻ một điều nhà mình đã làm được — dù nhỏ.\n\n2. Ưu tiên chuyện vợ chồng, cha mẹ, con cái, nếp nhà. Chuyện khác xin để dành cho nơi khác.\n\n3. KHOE ĐƯỢC, KHOE THẬT. Ảnh thật, chuyện thật của gia đình bạn. Không sưu tầm, không lấy của người khác.\n\n4. KHÔNG SO SÁNH — KHÔNG DÈ BỈU. Mỗi gia đình một hoàn cảnh. Ở đây không ai chấm điểm ai.\n\n5. KHÔNG KINH DOANH, KHÔNG BÁN HÀNG, KHÔNG MỜI KHÓA HỌC — kể cả khóa của GITA. Ai muốn tìm hiểu sâu, ban quản trị sẽ hướng dẫn riêng.\n\n6. BẢO VỆ TRẺ EM. Không đăng ảnh trẻ trong tình huống nhạy cảm. Không nêu tên trường, lớp, địa chỉ nhà, giờ đón con, biển số xe. Ảnh có mặt con chỉ đăng khi chính bố hoặc mẹ là người đăng.\n\n7. THAM GIA BẰNG GIA ĐÌNH. Mỗi nhà đăng ký một Mã gia đình để cùng thi đua và được vinh danh.\n\nAi vi phạm mục 5 hoặc nhắn tin riêng chào bán cho thành viên: mời ra khỏi nhóm ngay, không cảnh cáo.\n\nBị người lạ nhắn tin làm phiền? Báo cho ban quản trị — chúng tôi xử lý trong 4 giờ và giữ kín danh tính người báo."],["Cam kết bảo vệ thành viên","📌 CAM KẾT BẢO VỆ THÀNH VIÊN\n\n1. Chúng tôi KHÔNG bán, không cho, không trao đổi thông tin của anh chị cho bất kỳ ai.\n\n2. Ban quản trị KHÔNG BAO GIỜ nhắn tin đòi chuyển tiền, xin mã OTP, hay mời đầu tư. Mọi tin nhắn như vậy là mạo danh — xin báo ngay cho chúng tôi.\n\n3. Câu chuyện anh chị chia sẻ trong nhóm CHỈ Ở LẠI TRONG NHÓM. Nếu chúng tôi muốn dùng làm bài viết, chúng tôi sẽ HỎI TRƯỚC và để anh chị duyệt.\n\n4. Ảnh của gia đình và trẻ em KHÔNG dùng cho quảng cáo nếu không có sự đồng ý riêng bằng văn bản.\n\n5. Anh chị có quyền yêu cầu chúng tôi XÓA TOÀN BỘ thông tin của mình bất cứ lúc nào — chúng tôi thực hiện trong 7 ngày.\n\n6. Bị làm phiền bởi người bán hàng trong nhóm? Báo cho chúng tôi — xử lý trong 4 GIỜ, danh tính người báo được giữ kín.\n\n7. Chúng tôi KHÔNG dùng tài khoản ảo, KHÔNG mua tương tác, KHÔNG thuê người bình luận. Mọi con người anh chị gặp ở đây đều là người thật."],["Bắt đầu ở đây","📌 BẮT ĐẦU Ở ĐÂY — nhà mới vào đọc bài này là đủ\n\nChào cả nhà. Đây là cộng đồng gia đình hạnh phúc: mỗi tuần cả nhà nhận một việc nhỏ làm được ngay tối nay.\n\nMỘT TUẦN Ở ĐÂY DIỄN RA THẾ NÀO\n• Thứ Hai 19:45 — Nhiệm vụ gia đình tuần\n• Thứ Ba 17:30 — Bàn ăn yêu thương: một câu hỏi để hỏi con trong bữa tối\n• Thứ Tư 19:45 — Việc tử tế của gia đình\n• Thứ Năm 20:00 — Cha mẹ tỉnh thức: một kỹ năng nói chuyện với con\n• Thứ Sáu 19:45 — Khoe nhà mình\n• Thứ Bảy 08:00 — Gia đình chơi cùng nhau\n• Chủ nhật 21:00 — Bảng vinh danh\n\nBA VIỆC NHÀ MÌNH LÀM NGAY HÔM NAY\n1. Bình luận dưới bài này: tên nhà mình + tỉnh + mấy bé.\n2. Đăng ký Mã gia đình để tham gia thi đua (bình luận là ban quản trị cấp mã cho nhà mình).\n3. Đọc LUẬT NHÀ MÌNH và CAM KẾT BẢO VỆ THÀNH VIÊN ở hai bài ghim bên cạnh.\n\nĐIỀU KHÔNG CÓ Ở ĐÂY\nKhông bán hàng. Không mời khóa học. Không ai dạy đời ai. Ban quản trị không bao giờ nhắn tin đòi tiền.\n\nBộ công cụ miễn phí cho gia đình (30 câu hỏi bàn ăn, 12 trò chơi gắn kết cha mẹ – con cái) để ở bình luận đầu tiên."],["Thông báo chuyển công khai — để dành","📌 THÔNG BÁO: NHÓM SẼ CHUYỂN SANG CÔNG KHAI TỪ NGÀY [NGÀY]\n\nCả nhà đọc kỹ giúp em, vì việc này liên quan tới quyền riêng tư của mọi người.\n\nVÌ SAO\nNhiều gia đình đang tìm đúng những gì nhóm mình chia sẻ nhưng không tìm ra nhóm, vì nhóm đang để riêng tư. Chuyển sang công khai để những gia đình đó tìm được, và để giá trị nhà mình tạo ra không nằm trong ngăn kéo.\n\nBA ĐIỀU CHẮC CHẮN KHÔNG ĐỔI\n1. TOÀN BỘ BÀI CŨ VẪN KÍN. Mọi bài, bình luận, ảnh đã đăng trước ngày chuyển chỉ những người đang là thành viên hôm nay mới xem được. Người mới vào sau KHÔNG đọc được.\n2. DANH SÁCH THÀNH VIÊN ĐƯỢC KHÓA CHẶT HƠN. Sau khi chuyển, chỉ quản trị viên và người kiểm duyệt xem được ai đang ở trong nhóm. Người ngoài không xem được — đây chính là cách chặn những người vào nhóm để lấy danh sách rồi nhắn tin bán hàng.\n3. Luật nhà mình và cam kết bảo vệ thành viên giữ nguyên.\n\nMỘT ĐIỀU THAY ĐỔI\nBài đăng TỪ NGÀY [NGÀY] TRỞ ĐI sẽ ai cũng đọc được, kể cả người không dùng Facebook. Vì vậy từ hôm đó:\n• Ảnh có mặt con: xin cả nhà chụp từ phía sau, chụp bàn tay, chụp hoạt động từ xa — hoặc che mặt.\n• Không đăng tên trường lớp, địa chỉ, giờ đón con, biển số xe.\n• Chuyện riêng tư sâu, cần kín: em mở nhóm Zalo \"Tổ ấm\" cho từng nhóm nhỏ 6 gia đình — đăng ký ở bình luận.\n\nNHÀ MÌNH CÓ 7 NGÀY ĐỂ CÂN NHẮC\nAi thấy không phù hợp, cứ rời nhóm trước ngày [NGÀY], em hoàn toàn hiểu và không phiền lòng gì cả. Ai còn băn khoăn, nhắn riêng cho em.\n\nCảm ơn cả nhà đã tin nhóm này tới hôm nay."]],"bai":[{"ma":"G2-W01-T2-N","thu":"Thứ Hai","gio":"11:45","nghi_thuc":"Bài nhẹ","tru_cot":"Kỹ năng cha mẹ – vợ chồng","care":"CARE-1","truc":"Care 2","tieu_de":"Hai đứa tranh nhau một món đồ chơi, nhà mình xử lý thế nào?","noi_dung":"Hai đứa tranh nhau một món đồ chơi, nhà mình xử lý thế nào?\n\nEm hỏi thật, vì nhà em thử ba cách rồi mà cách nào cũng có lúc hỏng:\n— Cách 1: bảo đứa lớn nhường. Kết quả: đứa lớn ấm ức.\n— Cách 2: cất luôn món đồ. Kết quả: hai đứa khóc cùng nhau.\n— Cách 3: bấm giờ, mỗi đứa 5 phút. Kết quả: được, nhưng phải đứng canh.\n\nNhà anh chị làm thế nào ạ? Em đang thu thập để tuần sau viết một bài tử tế hơn từ chính kinh nghiệm của cả nhà mình.","binh_luan_ghim":"","moi":["Nhà mình mấy bé rồi ạ?","Cách nào nhà mình thấy hiệu quả nhất?","Có lần nào anh chị xử lý xong mà thấy áy náy không ạ?"],"luu_y":"Bài nhẹ, chỉ cần người trực trả lời hết bình luận trong 30 phút. Không cần liên kết."},{"ma":"G2-W01-T2-NHIEMVU","thu":"Thứ Hai","gio":"19:45","nghi_thuc":"Nhiệm Vụ Gia Đình Tuần","tru_cot":"Hoạt động gia đình","care":"CARE-3","truc":"Care 3 + Ops","tieu_de":"Làm sao để cả nhà rời điện thoại vào buổi tối?","noi_dung":"Làm sao để cả nhà rời điện thoại vào buổi tối?\n\nCâu trả lời ngắn: đừng bắt cả nhà bỏ điện thoại. Chỉ cần chọn đúng 30 phút — và người lớn bỏ trước.\n\nTuần trước em hỏi một chị trong nhóm: \"Tối nhà mình nói chuyện với nhau lúc nào ạ?\" Chị im một lúc rồi bảo: \"Chắc là… lúc nhắc con đi tắm.\"\n\nNhà em cũng y như vậy suốt hai năm. Rồi tụi em thử một việc rất nhỏ:\n\n1. Chọn MỘT khung 30 phút cố định. Nhà em là 20h00–20h30, ngay sau bữa cơm.\n2. Đặt một cái giỏ ở bàn. Điện thoại của BỐ MẸ vào giỏ trước. Con nhìn thấy điều đó.\n3. Không tuyên bố \"từ nay cấm điện thoại\". Chỉ nói: \"30 phút này nhà mình ngồi với nhau.\"\n4. Trong 30 phút đó không cần làm gì to tát — gọt hoa quả, dọn mâm, hỏi nhau một câu là đủ.\n5. Hôm nào lỡ thì mai làm lại. Không phạt, không trách, không tính công.\n\nTuần đầu nhà em trụ được 4 tối. Tới tuần thứ ba thì con hỏi trước: \"Mẹ ơi tới giờ bỏ điện thoại chưa?\"\n\n🎯 NHIỆM VỤ TUẦN NÀY CỦA CẢ NHÀ MÌNH\nChọn 30 phút tắt điện thoại mỗi tối. Làm được ngày nào ghi ngày đó.\n\nCách báo — bình luận đúng 3 dòng:\n— Tên nhà mình (chưa có Mã gia đình thì em cấp sau)\n— Khung giờ nhà mình chọn\n— Ai là người bỏ điện thoại vào giỏ đầu tiên\n\nNhà mình chọn khung giờ nào ạ?","binh_luan_ghim":"Bộ 30 câu hỏi bàn ăn để dùng trong đúng 30 phút đó — cả nhà tải miễn phí ở đây: [LIÊN_KẾT_WEB_APP]?utm_source=fb_group&utm_medium=g2&utm_campaign=G2-W01-T2-NHIEMVU\n\nKhông mất gì cả, chỉ cần tạo tài khoản để lưu tiến độ của nhà mình.","moi":["Nhà mình đang ở tỉnh nào ạ?","Tối qua nhà anh chị ngồi với nhau được mấy phút?","Điều gì làm khung 30 phút này khó nhất với nhà mình — công việc, thói quen, hay các con?"],"luu_y":"Bài chính của tuần. Đủ 9 mốc chăm sóc. Ghim bình luận trong 60 giây đầu. Ba hạt giống vào lúc T+15 phút, mỗi người một góc: nhà mới bắt đầu / nhà đã làm được có số / nhà nêu một băn khoăn thật."},{"ma":"G2-W01-T3-N","thu":"Thứ Ba","gio":"11:45","nghi_thuc":"Bài nhẹ","tru_cot":"Thi đua & vinh danh","care":"CARE-1","truc":"Care 1","tieu_de":"Tối qua nhà mình có mấy người ngồi ăn cơm cùng nhau?","noi_dung":"Tối qua nhà mình có mấy người ngồi ăn cơm cùng nhau?\n\nBình luận đúng một con số thôi ạ. Không cần giải thích gì cả.\n\nEm hỏi để biết nhà mình đang ở đâu, trước khi cả nhóm cùng đi tiếp.","binh_luan_ghim":"","moi":["Nhà mình mấy người tất cả ạ?","Hôm nào trong tuần là hôm đông đủ nhất?","Ai thường về muộn nhất nhà mình?"],"luu_y":"Câu hỏi trả lời được trong một giây — bài này để kéo những người chưa bao giờ bình luận lên tiếng lần đầu. Người trực trả lời TỪNG con số bằng một câu hỏi tiếp."},{"ma":"G2-W01-T3-BANAN","thu":"Thứ Ba","gio":"17:30","nghi_thuc":"Bàn Ăn Yêu Thương","tru_cot":"Hoạt động gia đình","care":"CARE-2","truc":"Care 2","tieu_de":"Làm sao để con chịu kể chuyện ở trường?","noi_dung":"Làm sao để con chịu kể chuyện ở trường?\n\nCâu trả lời ngắn: đừng hỏi \"hôm nay đi học thế nào\". Câu đó quá rộng, con không biết bắt đầu từ đâu nên trả lời \"bình thường\".\n\nBa câu hỏi thay thế, dùng ngay bữa tối nay:\n\n1. \"Hôm nay có chuyện gì làm con cười không?\"\n2. \"Ai là người tử tế với con hôm nay?\"\n3. \"Có lúc nào hôm nay con thấy khó không?\"\n\nBa câu này khác câu cũ ở chỗ: nó hỏi MỘT khoảnh khắc cụ thể, chứ không hỏi cả ngày.\n\nMột mẹo nữa: người lớn trả lời TRƯỚC. \"Hôm nay mẹ bị sếp nhắc, mẹ thấy hơi tủi. Còn con?\" Con thấy bố mẹ kể chuyện dở của mình thì con mới dám kể chuyện dở của con.\n\n🍚 NHIỆM VỤ TỐI NAY\nDùng một trong ba câu trên ở bữa cơm. Rồi kể lại đây con nhà mình trả lời gì — dù là \"con không nhớ\".\n\nCon nhà mình nói gì ạ?","binh_luan_ghim":"Bộ đầy đủ 30 câu hỏi bàn ăn, chia theo độ tuổi của con, cả nhà tải ở đây: [LIÊN_KẾT_WEB_APP]?utm_source=fb_group&utm_medium=g2&utm_campaign=G2-W01-T3-BANAN","moi":["Bé nhà mình mấy tuổi ạ?","Câu nào trong ba câu hợp với con nhà mình nhất?","Có bé nào không chịu trả lời không ạ — em có cách khác cho trường hợp đó."],"luu_y":"Đăng 17:30 để cha mẹ đọc kịp trước bữa tối. Đây là điểm khác biệt: nội dung dùng được TRONG NGÀY."},{"ma":"G2-W01-T4-N","thu":"Thứ Tư","gio":"11:45","nghi_thuc":"Bài nhẹ · mời nhận công cụ","tru_cot":"Mời nhận công cụ tầng 1","care":"CARE-1","truc":"Care 3","tieu_de":"Tặng cả nhà bộ 30 câu hỏi bàn ăn","noi_dung":"Tặng cả nhà bộ 30 câu hỏi bàn ăn\n\nHôm qua nhiều anh chị hỏi xin trọn bộ câu hỏi để dùng dần, nên em để hết lên đây:\n\n• 30 câu hỏi chia theo ba nhóm tuổi: dưới 6 tuổi, 6–12 tuổi, trên 12 tuổi\n• Kèm hướng dẫn hỏi thế nào để con không thấy bị tra hỏi\n• Có bản in ra dán tủ lạnh\n\nMiễn phí, không đổi gì cả. Chỉ cần tạo tài khoản để lưu lại tiến độ của nhà mình.\n\nLiên kết em để ở bình luận đầu tiên ạ.","binh_luan_ghim":"Bộ 30 câu hỏi bàn ăn: [LIÊN_KẾT_WEB_APP]?utm_source=fb_group&utm_medium=g2&utm_campaign=G2-W01-T4-TANGBO\n\nTải xong nhà mình quay lại báo em một câu để em biết bộ nào hợp với độ tuổi nào nhé.","moi":["Nhà mình cần bộ cho độ tuổi nào ạ?","Nhà mình định dùng vào bữa nào — trưa hay tối?","Ai trong nhà sẽ là người hỏi câu đầu tiên?"],"luu_y":"Đây là BÀI MỜI DUY NHẤT của tuần (tỉ lệ 10%). Không đăng thêm bài mời nào khác. Không giá, không đếm ngược, không khan hiếm giả."},{"ma":"G2-W01-T4-TUTE","thu":"Thứ Tư","gio":"19:45","nghi_thuc":"Việc Tử Tế Của Gia Đình","tru_cot":"Câu chuyện gia đình","care":"CARE-2","truc":"Care 1","tieu_de":"Việc tử tế nhỏ nhất mà nhà mình làm được hôm nay là gì?","noi_dung":"Việc tử tế nhỏ nhất mà nhà mình làm được hôm nay là gì?\n\nNhỏ thật đấy ạ. Không cần đi từ thiện, không cần bỏ tiền.\n\nNhà em hôm qua: con gái 5 tuổi tự rót nước cho bà nội. Rót đổ ra bàn một nửa. Bà uống hết chỗ còn lại rồi bảo \"nước cháu rót ngọt hơn nước bà tự rót\".\n\nCả nhà em cười. Nhưng tối đó em nghĩ mãi: hóa ra dạy con cho đi không cần bài giảng nào cả — chỉ cần có người nhận và nói cảm ơn cho tử tế.\n\nCHO LÀ NHẬN không phải khẩu hiệu. Nó là việc rất nhỏ, làm mỗi ngày, trong chính nhà mình.\n\n💛 NHIỆM VỤ HÔM NAY\nCả nhà làm MỘT việc tử tế — trong nhà hoặc ngoài nhà. Rồi kể lại đây đúng 3 dòng:\n— Ai làm\n— Làm gì\n— Người nhận phản ứng thế nào\n\nNhà mình làm được việc gì hôm nay ạ?","binh_luan_ghim":"","moi":["Ai trong nhà là người nghĩ ra việc đó ạ?","Con nhà mình có tự nghĩ ra hay bố mẹ gợi ý?","Có nhà nào định làm mà chưa làm được không — vướng ở đâu ạ?"],"luu_y":"Bài này sinh ra câu chuyện để tái chế. Bình luận hay nhất, sau khi xin phép, thành bài đăng thứ Sáu tuần sau."},{"ma":"G2-W01-T5-CHAME","thu":"Thứ Năm","gio":"20:00","nghi_thuc":"Cha Mẹ Tỉnh Thức","tru_cot":"Kỹ năng cha mẹ – vợ chồng","care":"CARE-3","truc":"Care 3 + Admin","tieu_de":"Con không nghe lời — nói gì thay vì quát?","noi_dung":"Con không nghe lời — nói gì thay vì quát?\n\nCâu trả lời ngắn: đổi từ RA LỆNH sang MÔ TẢ. Trẻ chống lại mệnh lệnh, nhưng không chống lại sự thật.\n\nBa câu nói cụ thể, dùng nguyên văn được luôn:\n\n1. Thay vì \"Tắt tivi đi, nói bao nhiêu lần rồi!\"\n   → \"Tivi vẫn đang bật. Đến giờ tắm rồi con.\"\n   (Chỉ mô tả điều đang thấy. Không kèm lời trách.)\n\n2. Thay vì \"Sao con chậm thế!\"\n   → \"Mẹ thấy còn 10 phút nữa là muộn học. Con cần mẹ giúp gì không?\"\n   (Nêu sự thật + trao quyền chọn.)\n\n3. Thay vì \"Con hư quá!\"\n   → \"Mẹ đang rất mệt. Mẹ cần 5 phút, xong mẹ nói chuyện với con.\"\n   (Nói về mình, không dán nhãn lên con.)\n\nVì sao ba câu này hiệu quả hơn? Vì khi bị quát, phần não lo phòng vệ của trẻ bật lên trước phần não nghe hiểu. Con không cãi bố mẹ — con đang tự vệ. Bỏ được đòn tấn công thì con mới nghe được nội dung.\n\nĐiều khó nhất không phải là nhớ ba câu này. Điều khó nhất là nhớ chúng LÚC ĐANG BỰC. Nên hôm nay chỉ chọn MỘT câu thôi, dán lên tủ lạnh.\n\n🗣️ NHIỆM VỤ TỐI NAY\nChọn một câu, dùng thử một lần. Rồi kể lại đây: con phản ứng thế nào?\n\nCâu nào nhà mình định thử ạ?","binh_luan_ghim":"Bản in ba câu nói này để dán tủ lạnh, cùng 9 tình huống khác, ở đây: [LIÊN_KẾT_WEB_APP]?utm_source=fb_group&utm_medium=g2&utm_campaign=G2-W01-T5-CHAME","moi":["Câu nào nhà mình thấy khó nói ra nhất ạ?","Lần gần nhất anh chị quát con là vì chuyện gì?","Có ai thử rồi mà con vẫn không nghe không ạ — em muốn nghe trường hợp đó."],"luu_y":"Bài có khả năng lan xa nhất tuần vì đúng câu người ta gõ khi tìm kiếm. Chăm sóc đủ 9 mốc. Admin nên trực tiếp trả lời vài bình luận."},{"ma":"G2-W01-T6-KHOENHA","thu":"Thứ Sáu","gio":"19:45","nghi_thuc":"Khoe Nhà Mình","tru_cot":"Câu chuyện gia đình","care":"CARE-3","truc":"Care 2 + Ops","tieu_de":"Khoảnh khắc thật của nhà bạn tuần này","noi_dung":"Khoảnh khắc thật của nhà bạn tuần này\n\nKhông cần đẹp. Không cần dọn nhà trước khi chụp. Càng thật càng quý.\n\nCó thể là: mâm cơm tối qua · bàn tay con đang giúp việc nhà · bố ngủ gật trên ghế · góc học bài bừa bộn · bà và cháu ngồi cạnh nhau.\n\nĐăng kèm ĐÚNG MỘT CÂU chuyện: khoảnh khắc đó xảy ra khi nào, và vì sao nhà mình muốn giữ nó.\n\n⚠️ XIN CẢ NHÀ NHỚ GIÚP — quy tắc bảo vệ trẻ em của nhóm:\n• Không đăng ảnh con đang tắm, đang ốm, đang khóc vì bị phạt\n• Không để lộ tên trường, lớp, địa chỉ nhà, giờ đón con, biển số xe\n• Ảnh có mặt con: chỉ bố hoặc mẹ được đăng\n\nCuối tuần em chọn ba khoảnh khắc để vinh danh — không chọn ảnh đẹp nhất, chọn câu chuyện thật nhất.\n\nNhà mình có khoảnh khắc nào tuần này ạ?","binh_luan_ghim":"","moi":["Khoảnh khắc này xảy ra hôm nào ạ?","Ai là người chụp tấm này?","Nếu mười năm nữa xem lại, nhà mình muốn nhớ điều gì ở tấm ảnh này?"],"luu_y":"Từ tuần 3 trở đi, chuyển nghi thức này sang dạng MỖI GIA ĐÌNH MỘT BÀI RIÊNG (xem chương 17.8) để tăng độ hoạt động. Tuần test vẫn để dạng bình luận cho dễ quản."},{"ma":"G2-W01-T7-CHOI","thu":"Thứ Bảy","gio":"08:00","nghi_thuc":"Gia Đình Chơi Cùng Nhau","tru_cot":"Hoạt động gia đình","care":"CARE-2","truc":"Care 1","tieu_de":"Chơi gì với con 15 phút mà không cần đồ chơi?","noi_dung":"Chơi gì với con 15 phút mà không cần đồ chơi?\n\nBa trò chơi sáng nay, không tốn đồng nào, không cần chuẩn bị:\n\n1. ĐOÁN ĐỒ TRONG NHÀ (5 phút)\nMột người nghĩ ra một đồ vật trong nhà. Người kia hỏi tối đa 10 câu chỉ trả lời có/không để đoán. Trẻ 4 tuổi chơi được. Trò này dạy con đặt câu hỏi.\n\n2. KỂ CHUYỆN NỐI CÂU (5 phút)\nMỗi người nói MỘT câu để nối thành một chuyện. \"Ngày xưa có một con mèo…\" — người tiếp: \"…con mèo đó rất sợ nước.\" Cứ thế. Chuyện càng vô lý càng vui.\n\n3. AI NHỚ GIỎI HƠN (5 phút)\nBày 7 món đồ lên bàn, nhìn 30 giây, úp khăn lại, mỗi người kể tên những món nhớ được. Bố mẹ cứ thua thật đi — đừng nhường giả.\n\nĐiều quan trọng nhất không nằm ở trò chơi. Nó nằm ở chỗ trong 15 phút đó, con thấy bố mẹ CHỈ chơi với con, không vừa chơi vừa nhìn điện thoại.\n\n🎲 NHIỆM VỤ SÁNG NAY\nChọn một trò, chơi 15 phút, rồi báo lại đây: trò nào, ai thắng, con cười lúc nào.\n\nNhà mình chọn trò nào ạ?","binh_luan_ghim":"Bộ 12 trò chơi gắn kết cha mẹ – con cái, chia theo độ tuổi: [LIÊN_KẾT_WEB_APP]?utm_source=fb_group&utm_medium=g2&utm_campaign=G2-W01-T7-CHOI","moi":["Bé nhà mình mấy tuổi để em gợi ý trò hợp hơn ạ?","Ai thắng ạ — con hay bố mẹ?","Có trò nào nhà mình hay chơi mà em chưa kể không?"],"luu_y":"Đăng sáng thứ Bảy để cả nhà kịp chơi trong ngày. Người trực bám đến trưa vì đây là khung giờ gia đình rảnh."},{"ma":"G2-W01-CN-VINHDANH","thu":"Chủ nhật","gio":"21:00","nghi_thuc":"Bảng Vinh Danh Gia Đình","tru_cot":"Thi đua & vinh danh","care":"CARE-3","truc":"Ops + Admin","tieu_de":"Tuần đầu tiên của nhà mình — và những cái tên em muốn gọi","noi_dung":"Tuần đầu tiên của nhà mình — và những cái tên em muốn gọi\n\nTuần này nhóm mình thử một cách sinh hoạt mới: mỗi ngày một việc nhỏ, làm được ngay trong ngày. Đây là những gì cả nhà đã làm:\n\n📊 CON SỐ CỦA TUẦN\n• [SỐ] gia đình nhận nhiệm vụ tắt điện thoại 30 phút\n• [SỐ] nhà báo lại con đã trả lời gì ở bàn ăn\n• [SỐ] việc tử tế được kể\n• [SỐ] khoảnh khắc được chia sẻ\n• [SỐ] gia đình lần đầu tiên lên tiếng trong nhóm\n\n💛 BA GIA ĐÌNH EM MUỐN GỌI TÊN\n1. Nhà [TÊN] — [lý do rất cụ thể, trích đúng điều họ làm]\n2. Nhà [TÊN] — [lý do]\n3. Nhà [TÊN] — [lý do]\n\nEm không chọn nhà làm nhiều nhất. Em chọn nhà làm THẬT nhất.\n\n🌱 TUẦN SAU\nNhiệm vụ mới phát vào 19:45 tối thứ Hai. Nhà nào chưa có Mã gia đình thì bình luận để em cấp — có mã mới tính điểm thi đua được.\n\nVà một câu hỏi cuối tuần: sau một tuần, nhà mình giữ lại được điều gì?","binh_luan_ghim":"Nhà nào muốn đăng ký Mã gia đình để tham gia Mùa Gia Đình Thịnh Vượng, điền giúp em ở đây: [LIÊN_KẾT_BIỂU_MẪU]\n\nMỗi hộ một mã. Có mã mới được xếp bảng đấu và vinh danh.","moi":["Sau một tuần, nhà mình giữ lại được điều gì ạ?","Nhiệm vụ nào tuần này khó nhất với nhà mình?","Tuần sau nhà mình muốn thử điều gì?"],"luu_y":"Điền số thật vào chỗ [SỐ] trước khi đăng. Lý do vinh danh phải TRÍCH ĐÚNG điều họ viết — vinh danh chung chung không có tác dụng. Đây cũng là bài chốt số liệu tuần test."}],"tin_nhan":[["TN1 · Chào người mới, gửi ngay khi duyệt","Chào anh/chị [TÊN], em là [TÊN EM], phụ trách nhóm Gia Đình Thịnh Vượng.\n\nEm đọc câu trả lời của anh/chị, thấy nhà mình đang muốn [NHẮC LẠI ĐÚNG ĐIỀU HỌ CHỌN Ở CÂU 2].\n\nEm gửi anh/chị bộ 30 câu hỏi bàn ăn để dùng ngay tối nay: [LIÊN_KẾT]\nKhông cần làm gì cho em cả ạ.\n\nKhi nào rảnh, anh/chị vào chào cả nhà một câu ở bài \"Bắt đầu ở đây\" nhé — mọi người ở đây thân thiện lắm."],["TN2 · Sau khi họ bình luận lần đầu","Em thấy bình luận của anh/chị hôm nay rồi ạ. Đúng cái nhiều nhà đang mắc.\n\nCảm ơn anh/chị đã mở lời trước — người mới hay ngại, có người lên tiếng là cả nhóm dễ thở hơn.\n\nEm ghim câu đó lên để mọi người cùng đọc nhé?"],["TN3 · Mời nhận công cụ tầng 1, ngày thứ 5","Anh/chị có nhắc tới chuyện [VẤN ĐỀ CỤ THỂ HỌ ĐÃ KỂ].\n\nBên em có [TÊN KHÓA NỀN TẢNG] trên web app GITA365 — học tự do theo tiến độ của mình, phần [TÊN BÀI] xử lý đúng chỗ đó.\n\nAnh/chị tạo tài khoản ở đây là học được ngay ạ: [LIÊN_KẾT]\n\nEm đi cùng nếu anh/chị cần."],["TN4 · Cấp Mã gia đình","Em cấp cho nhà mình Mã gia đình: [GD-XX-0000] — tên gọi nhà mình là \"[TÊN NHÀ]\" nhé.\n\nTừ giờ nhà mình bình luận nhiệm vụ thì ghi mã này ở dòng đầu, em tính điểm cho cả mùa.\n\nNhà mình thuộc Bảng [MẦM/CHỒI/CÂY/CỘI] — bảng này dành cho gia đình có con [ĐỘ TUỔI], để nhà mình không phải so với nhà có con lớn hơn."],["TN5 · Xin phép dùng câu chuyện","Điều anh/chị kể hôm trước làm em nhớ mãi.\n\nAnh/chị cho phép em viết lại thành một bài để những gia đình đang ở chỗ nhà mình từng đứng đọc được không ạ?\n\nEm sẽ gửi anh/chị duyệt trước khi đăng, và giấu tên nếu anh/chị muốn."]]};
+</script>
+<script>
+(function(){
+"use strict";
+var $=function(s){return document.querySelector(s)};
+var $$=function(s){return Array.prototype.slice.call(document.querySelectorAll(s))};
+var esc=function(t){return String(t).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')};
+
+$$('.tab').forEach(function(t){
+  t.addEventListener('click',function(){
+    $$('.tab').forEach(function(x){x.setAttribute('aria-selected','false')});
+    t.setAttribute('aria-selected','true');
+    $$('.panel').forEach(function(p){p.hidden=p.dataset.panel!==t.dataset.tab});
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+});
+
+/* ---- khoi chep ---- */
+var uid=0;
+function blk(host, title, text, meta, cls){
+  var id='b'+(++uid);
+  var d=document.createElement('div');
+  d.className='blk';
+  d.innerHTML='<div class="blk-h"><span class="t">'+esc(title)+'</span>'+
+    (meta?'<span class="m">'+esc(meta)+'</span>':'')+
+    '<button class="cp" data-for="'+id+'">Chép</button></div>'+
+    '<pre id="'+id+'"'+(cls?' class="'+cls+'"':'')+'>'+esc(text)+'</pre>';
+  host.appendChild(d);
+  return d;
+}
+document.addEventListener('click',function(e){
+  var b=e.target.closest('.cp'); if(!b) return;
+  var pre=document.getElementById(b.dataset.for); if(!pre) return;
+  var txt=pre.textContent, ok=false;
+  try{
+    var ta=document.createElement('textarea');
+    ta.value=txt; ta.style.position='fixed'; ta.style.opacity='0';
+    document.body.appendChild(ta); ta.select();
+    ok=document.execCommand('copy');
+    document.body.removeChild(ta);
+  }catch(err){ ok=false; }
+  if(!ok && navigator.clipboard){
+    try{ navigator.clipboard.writeText(txt); ok=true; }catch(err2){ ok=false; }
+  }
+  if(ok){
+    b.textContent='Đã chép'; b.classList.add('done');
+    setTimeout(function(){b.textContent='Chép'; b.classList.remove('done')},1600);
+  }else{
+    var r=document.createRange(); r.selectNodeContents(pre);
+    var sel=window.getSelection(); sel.removeAllRanges(); sel.addRange(r);
+    b.textContent='Bấm Ctrl+C';
+    setTimeout(function(){b.textContent='Chép'},2600);
+  }
+});
+
+/* ---- ngay 0 ---- */
+var CHK=[
+ 'Ghi số nền: tổng thành viên, số bài 28 ngày, số người tương tác 28 ngày, yêu cầu đang chờ',
+ 'Dán mô tả nhóm mới',
+ 'Chọn đúng 5 chủ đề nhóm và đặt vị trí Việt Nam',
+ 'Dán 4 câu hỏi cổng vào, bật bắt buộc trả lời',
+ 'Tạo đủ 10 quy tắc Trợ lý quản trị',
+ 'Dán danh sách từ khóa lọc, đặt chế độ ẩn chờ duyệt',
+ 'Bật duyệt bài với thành viên mới',
+ 'Bật tạm dừng đăng bài 7 ngày đầu với người mới',
+ 'TẮT tính năng thành viên tự thêm người khác vào nhóm',
+ 'Đăng và ghim 3 bài: Luật nhà mình · Cam kết bảo vệ · Bắt đầu ở đây',
+ 'Làm ảnh bìa theo quy cách',
+ 'Tạo biểu mẫu đăng ký Mã gia đình',
+ 'Tạo 3 tài khoản mồi và chốt người trực 30 phút vàng cho từng khung giờ'
+];
+var KEY='gita365_g2_chk';
+function load(){ try{ return JSON.parse(localStorage.getItem(KEY)||'[]') }catch(e){ return [] } }
+function save(v){ try{ localStorage.setItem(KEY, JSON.stringify(v)) }catch(e){} }
+var done=load();
+var chkHost=$('#chk');
+CHK.forEach(function(t,i){
+  var lab=document.createElement('label');
+  lab.className='chk-i'+(done.indexOf(i)>=0?' on':'');
+  lab.innerHTML='<input type="checkbox" data-i="'+i+'"'+(done.indexOf(i)>=0?' checked':'')+'><span>'+esc(t)+'</span>';
+  chkHost.appendChild(lab);
+});
+function prog(){
+  var n=$$('#chk input:checked').length;
+  $('#progtxt').textContent=n+'/'+CHK.length;
+  $('#progfl').style.width=(n/CHK.length*100)+'%';
+}
+$$('#chk input').forEach(function(c){
+  c.addEventListener('change',function(){
+    c.closest('.chk-i').classList.toggle('on',c.checked);
+    var v=$$('#chk input:checked').map(function(x){return +x.dataset.i});
+    save(v); prog();
+  });
+});
+prog();
+
+blk($('#mota'),'Mô tả nhóm', G2.config.mo_ta, G2.config.mo_ta.length+' ký tự');
+blk($('#cauhoi'),'Bốn câu hỏi cổng vào', G2.config.cau_hoi.map(function(q,i){return (i+1)+'. '+q}).join('\n\n'), '4 câu');
+blk($('#chude'),'Chủ đề nhóm', G2.config.chu_de.join('\n')+'\n\nVị trí: Việt Nam', '5 chủ đề');
+G2.config.admin_assist.forEach(function(a,i){
+  var tr=document.createElement('tr');
+  tr.innerHTML='<td class="n">'+(i+1)+'</td><td><b>'+esc(a[0])+'</b></td><td>'+esc(a[1])+'</td>';
+  $('#aa').appendChild(tr);
+});
+blk($('#tukhoa'),'Từ khóa lọc', G2.config.tu_khoa, G2.config.tu_khoa.split(',').length+' từ khóa','short');
+blk($('#anhbia'),'Quy cách ảnh bìa', G2.config.anh_bia);
+
+/* ---- bai ghim ---- */
+G2.ghim.forEach(function(g,i){
+  var d=blk($('#ghim'), (i<3?'Bài ghim '+(i+1)+' · ':'')+g[0], g[1], (i===3?'chưa đăng — để dành':''));
+  if(i===3) d.style.borderColor='var(--lacquer)';
+});
+var bl=document.createElement('div');
+bl.className='note';
+bl.innerHTML='<div class="k">Bình luận đầu tiên của bài “Bắt đầu ở đây” — ghim luôn</div><p style="font-family:inherit"><code>[LIÊN_KẾT_WEB_APP]?utm_source=fb_group&amp;utm_medium=g2&amp;utm_campaign=batdau</code></p>';
+$('#ghim').appendChild(bl);
+
+/* ---- 10 bai ---- */
+G2.bai.forEach(function(b,i){
+  var wrap=document.createElement('div');
+  wrap.className='post';
+  var c3 = b.care==='CARE-3' ? ' c3' : '';
+  wrap.innerHTML='<button class="post-h" aria-expanded="false"><span class="when">'+esc(b.thu)+' '+esc(b.gio)+'</span>'+
+    '<span><span class="ttl">'+esc(b.tieu_de)+'</span><span class="sub">'+esc(b.nghi_thuc)+' · trực: '+esc(b.truc)+'</span></span>'+
+    '<span class="car'+c3+'">'+esc(b.care)+'</span></button><div class="post-b" hidden></div>';
+  var body=wrap.querySelector('.post-b');
+  blk(body,'Nội dung để dán', b.noi_dung, b.ma);
+  if(b.binh_luan_ghim){
+    blk(body,'Bình luận ghim — đăng trong 60 giây đầu rồi ghim', b.binh_luan_ghim, '', 'short');
+  }else{
+    var p=document.createElement('p'); p.className='small'; p.style.marginTop='14px';
+    p.textContent='Bài này không có liên kết — không cần bình luận ghim.'; body.appendChild(p);
+  }
+  blk(body,'Ba câu hỏi mồi cho người trực', b.moi.map(function(m,j){return (j+1)+'. '+m}).join('\n'), 'dễ · tăng số lượng · tăng độ sâu','short');
+  var n=document.createElement('div'); n.className='note';
+  n.innerHTML='<div class="k">Lưu ý vận hành</div><p>'+esc(b.luu_y)+'</p>';
+  body.appendChild(n);
+  wrap.querySelector('.post-h').addEventListener('click',function(){
+    var open=!body.hidden;
+    body.hidden=open;
+    this.setAttribute('aria-expanded', String(!open));
+  });
+  $('#posts').appendChild(wrap);
+});
+
+/* ---- tin nhan ---- */
+G2.tin_nhan.forEach(function(t){ blk($('#tn'), t[0], t[1]); });
+})();
+</script>

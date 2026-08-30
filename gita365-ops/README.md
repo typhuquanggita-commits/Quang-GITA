@@ -46,6 +46,11 @@ Luật xương sống: **G2 nuôi G1, G1 nuôi khóa học.** Người ở G2 kh
 | [`17-chien-luoc-len-top-tim-kiem.md`](17-chien-luoc-len-top-tim-kiem.md) | **Lên top tìm kiếm**: bốn mặt trận, quyết định công khai/riêng tư, 70 từ khóa hạt giống, 9 điểm chạm hồ sơ nhóm, kiến trúc trụ–cụm, lộ trình 90 ngày và cách đo thứ hạng | Admin, Growth, Content |
 | [`ban-trinh-duyet.html`](ban-trinh-duyet.html) | **Bản demo tương tác** 7 khu vực: mô hình khả thi kéo tay, lịch 288 bài, GITA CARE, cổng lọc, thi đua, chỉ số | Tất cả |
 
+### Bộ khởi động — dùng ngay
+| Thư mục | Nội dung |
+|---|---|
+| [`khoi-dong-g2/`](khoi-dong-g2/) | **Bộ khởi động tuần test cho nhóm Gia Đình Thịnh Vượng**: cấu hình Ngày 0, 3 bài ghim, 10 bài đăng đầy đủ của tuần 1, 5 kịch bản tin nhắn, bảng đo và 7 chỉ tiêu chấm cuối tuần. Kèm trang `bo-khoi-dong.html` bấm chép–dán |
+
 ### Dữ liệu vận hành
 | Tệp | Mô tả |
 |---|---|

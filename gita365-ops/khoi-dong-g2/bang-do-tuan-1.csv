@@ -1,0 +1,14 @@
+muc,ma_bai,ngay,gio,tiep_can,binh_luan_gio_dau,binh_luan_goc,binh_luan_tu_10_tu,nguoi_binh_luan_lan_dau,thoi_gian_phan_hoi_tb_phut,tai_khoan_webapp,ma_gia_dinh_moi,ghi_chu
+SO_NEN,,,,,,,,,,,,ghi truoc khi cau hinh: tong thanh vien / bai 28 ngay / nguoi tuong tac 28 ngay
+BAI,G2-W01-T2-N,,11:45,,,,,,,,,
+BAI,G2-W01-T2-NHIEMVU,,19:45,,,,,,,,,
+BAI,G2-W01-T3-N,,11:45,,,,,,,,,
+BAI,G2-W01-T3-BANAN,,17:30,,,,,,,,,
+BAI,G2-W01-T4-N,,11:45,,,,,,,,,
+BAI,G2-W01-T4-TUTE,,19:45,,,,,,,,,
+BAI,G2-W01-T5-CHAME,,20:00,,,,,,,,,
+BAI,G2-W01-T6-KHOENHA,,19:45,,,,,,,,,
+BAI,G2-W01-T7-CHOI,,08:00,,,,,,,,,
+BAI,G2-W01-CN-VINHDANH,,21:00,,,,,,,,,
+TONG_TUAN,,,,,,,,,,,,
+NGUONG,,,,,>=10,>=15,>=60%,>=10,<=30,>=8,>=15,doi chieu cuoi tuan
