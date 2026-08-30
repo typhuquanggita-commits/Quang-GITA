@@ -4,6 +4,8 @@ import { TIPS, TIP_CATEGORY, HABITS, METHODS, type TipCategory } from '@/data/pl
 import { TRAITS } from '@/data/gita';
 import { BRAND_TRACK_STYLE } from '@/data/brand';
 import { todayKey } from '@/lib/storage';
+import { Faq } from '@/components/Faq';
+import { faqFor } from '@/data/faq';
 import { Card, SectionTitle, Badge, Progress, MathText } from '@/components/ui';
 import type { TrackId } from '@/types';
 
@@ -236,6 +238,7 @@ export default function Playbook() {
           </div>
         </>
       )}
+      <Faq items={faqFor('bi-kip')} />
     </div>
   );
 }

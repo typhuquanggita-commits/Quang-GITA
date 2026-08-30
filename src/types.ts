@@ -272,6 +272,22 @@ export interface Account {
   auditLog: { at: string; action: string; detail: string }[];
 }
 
+/** Một lượt phản hồi của người dùng thật về một trang nội dung. */
+export interface FeedbackEntry {
+  id: string;
+  at: string;
+  /** Đường dẫn trang được đánh giá. */
+  path: string;
+  /** Nhãn dễ đọc của trang, để đọc lại không cần tra. */
+  label: string;
+  /** Số sao từ 1 đến 5. */
+  rating: 1 | 2 | 3 | 4 | 5;
+  /** Điều người dùng viết thêm; có thể để trống. */
+  comment: string;
+  /** Vai trò tự khai: học sinh, phụ huynh hay giáo viên. */
+  who: 'hoc-sinh' | 'phu-huynh' | 'giao-vien' | 'khac';
+}
+
 export interface AppState {
   version: number;
   account: Account;
@@ -289,6 +305,8 @@ export interface AppState {
   bookmarks: string[];
   doneTasks: Record<string, boolean>;
   studyLog: Record<string, number>;
+  /** Phản hồi do chính người dùng gửi. Không bao giờ được sinh tự động. */
+  feedback: FeedbackEntry[];
 }
 
 /* ---------- Đề mẫu trọn vẹn theo cấu trúc từng kỳ thi ---------- */

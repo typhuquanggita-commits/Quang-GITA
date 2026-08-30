@@ -7,6 +7,10 @@ import { MISSIONS, sheetsOfTopic, missionByWorksheet } from '@/data/catalog';
 import { sheetSpec, SHEET_TYPES } from '@/data/sheets';
 import { TIERS } from '@/data/gita';
 import { BRAND_TRACK_STYLE } from '@/data/brand';
+import { Feedback } from '@/components/Feedback';
+import { Faq } from '@/components/Faq';
+import { faqFor } from '@/data/faq';
+import { href, topicSlug } from '@/lib/routes';
 import { Card, SectionTitle, Badge, LevelDots, Progress, MathText, Empty, Callout } from '@/components/ui';
 import type { TrackId } from '@/types';
 
@@ -119,6 +123,7 @@ function TopicGrid({ list }: { list: typeof TOPICS }) {
           </Card>
         );
       })}
+      <Faq items={faqFor('chuyen-de')} />
     </div>
   );
 }
@@ -404,6 +409,8 @@ export function TopicDetail({ id }: { id: string }) {
           được sinh tự động kèm lời giải từng bước.
         </p>
       )}
+
+      <Feedback path={href('chuyen-de-detail', { slug: topicSlug(topic.id) })} label={topic.name} />
     </div>
   );
 }

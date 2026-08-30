@@ -1,13 +1,13 @@
 import { useApp, go } from '@/state';
 import { BRAND, BRAND_TRACK_STYLE } from '@/data/brand';
-import { catalogStats, stagesByTrack } from '@/data/catalog';
+import { stagesByTrack } from '@/data/stages';
+import { SCALE } from '@/data/scale';
 import { SHEET_TYPES, COMPANION_SHEETS } from '@/data/sheets';
 import { PILLARS, TIERS } from '@/data/gita';
 import { SCHOOLS } from '@/data/schools';
-import { TOPICS } from '@/data/topics';
 import { TIPS, HABITS } from '@/data/playbook';
 import { LIBRARY_TREE, countFolders, countArtifacts } from '@/data/library-tree';
-import { EXAM_PAPERS, paperStats } from '@/data/papers';
+import { PAPER_CARDS, TOPIC_INDEX } from '@/data/catalog-index';
 import { Card, SectionTitle, Badge, Progress } from '@/components/ui';
 import type { TrackId } from '@/types';
 
@@ -15,7 +15,7 @@ const TRACKS: TrackId[] = ['chuyen', 'thpt', 'thpt-qg'];
 
 export default function Home() {
   const { state, update } = useApp();
-  const stats = catalogStats();
+  const stats = SCALE;
   const folders = countFolders(LIBRARY_TREE);
   const artifacts = countArtifacts(LIBRARY_TREE);
 
@@ -75,7 +75,7 @@ export default function Home() {
           {TRACKS.map((t) => {
             const style = BRAND_TRACK_STYLE[t];
             const stages = stagesByTrack(t);
-            const nTopics = TOPICS.filter((x) => x.tracks.includes(t)).length;
+            const nTopics = TOPIC_INDEX.filter((x) => x.tracks.includes(t)).length;
             const nSheets =
               t === 'thpt' ? stats.thpt : t === 'chuyen' ? stats.chuyen : stats.quocGia;
             const schools = SCHOOLS.filter((s) => s.track === t);
@@ -284,8 +284,7 @@ export default function Home() {
           }
         />
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {EXAM_PAPERS.map((p) => {
-            const ps = paperStats(p);
+          {PAPER_CARDS.map((p) => {
             const style = BRAND_TRACK_STYLE[p.track];
             return (
               <Card key={p.id} className="overflow-hidden">
@@ -298,8 +297,8 @@ export default function Home() {
                     {p.title.replace(/^Đề mẫu \d+ · /, '')}
                   </div>
                   <div className="mt-1.5 text-[12px] leading-relaxed text-slate-500">
-                    {p.minutes} phút · thang {p.totalPoints} · {ps.items} câu
-                    {ps.claims ? ` (+${ps.claims} ý)` : ''}
+                    {p.minutes} phút · thang {p.totalPoints} · {p.items} câu
+                    {p.claims ? ` (+${p.claims} ý)` : ''}
                   </div>
                   <div className="mt-2 text-[12px] font-semibold" style={{ color: style.color }}>
                     Đề · Lời giải · Barem · Phân tích ➜

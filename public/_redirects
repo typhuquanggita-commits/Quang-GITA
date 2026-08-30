@@ -1,0 +1,11 @@
+# Quy tắc cho Netlify và Cloudflare Pages.
+#
+# Thứ tự xử lý của cả hai nền tảng là: tệp tĩnh trước, quy tắc chuyển hướng sau.
+# Nhờ vậy 114 tệp HTML đã dựng sẵn luôn được phục vụ trước, và dòng dự phòng ở
+# cuối chỉ áp dụng cho những đường dẫn không có tệp tương ứng.
+
+# Liên kết hash cũ: máy chủ không nhìn thấy phần sau dấu #, nên việc chuyển
+# hướng do trình duyệt xử lý trong mã nguồn. Ở đây chỉ cần đảm bảo trang gốc mở được.
+
+# Dự phòng cho mọi đường dẫn chưa có tệp tĩnh — phải đặt cuối cùng.
+/*    /index.html   200

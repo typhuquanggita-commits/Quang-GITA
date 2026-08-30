@@ -12,6 +12,10 @@ import { STRANDS, strandById } from '@/data/schools';
 import { BRAND_TRACK_STYLE } from '@/data/brand';
 import { topicById } from '@/data/topics';
 import { Card, SectionTitle, Badge, Callout, MathText } from '@/components/ui';
+import { Faq } from '@/components/Faq';
+import { Feedback } from '@/components/Feedback';
+import { faqFor } from '@/data/faq';
+import { href } from '@/lib/routes';
 import type { TrackId } from '@/types';
 
 const GRADE_LABEL: Record<string, string> = {
@@ -180,6 +184,9 @@ export default function Formulas() {
       ) : (
         groups.map((g) => <GroupCard key={g.id} group={g} />)
       )}
+
+      <Faq items={faqFor('cong-thuc')} />
+      <Feedback path={href('cong-thuc')} label="Sổ tay công thức Toán" />
     </div>
   );
 }

@@ -1,0 +1,47 @@
+# Cấu hình Nginx mẫu cho MATH365.
+#
+# Điểm quan trọng nhất nằm ở chỉ thị try_files: thứ tự phải là tệp thật, rồi tới
+# tệp index.html trong thư mục tương ứng, và chỉ khi cả hai đều không có mới rơi
+# về trang chủ. Đảo thứ tự này thì 114 trang đã dựng sẵn sẽ bị trang chủ che mất
+# và toàn bộ công sức tối ưu tìm kiếm trở nên vô nghĩa.
+
+server {
+    listen 80;
+    server_name gita365.vn www.gita365.vn;
+    return 301 https://gita365.vn$request_uri;
+}
+
+server {
+    listen 443 ssl http2;
+    server_name www.gita365.vn;
+    # Gộp về một tên miền duy nhất để không tự chia nhỏ tín hiệu của chính mình.
+    return 301 https://gita365.vn$request_uri;
+}
+
+server {
+    listen 443 ssl http2;
+    server_name gita365.vn;
+    root /var/www/math365/dist;
+    index index.html;
+
+    gzip on;
+    gzip_types text/css application/javascript application/json image/svg+xml text/plain;
+    gzip_min_length 1024;
+    # Bật thêm Brotli nếu máy chủ có mô-đun tương ứng.
+
+    # Tệp có mã băm trong tên thì không bao giờ đổi nội dung — lưu đệm dài hạn.
+    location /assets/ {
+        expires 1y;
+        add_header Cache-Control "public, immutable";
+    }
+
+    location = /sitemap.xml { expires 1h; }
+    location = /robots.txt  { expires 1h; }
+
+    # Tệp thật → tệp index.html trong thư mục → cuối cùng mới về trang chủ.
+    location / {
+        try_files $uri $uri/index.html /index.html;
+        add_header X-Content-Type-Options nosniff;
+        add_header Referrer-Policy strict-origin-when-cross-origin;
+    }
+}

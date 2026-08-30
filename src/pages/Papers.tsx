@@ -6,6 +6,10 @@ import { SCHOOLS, strandById } from '@/data/schools';
 import { BRAND_TRACK_STYLE, DOC_SHEET_IDENTITY } from '@/data/brand';
 import { topicById } from '@/data/topics';
 import { Card, SectionTitle, Badge, Callout, MathText, LevelDots } from '@/components/ui';
+import { Faq } from '@/components/Faq';
+import { Feedback } from '@/components/Feedback';
+import { faqFor } from '@/data/faq';
+import { href, paperSlug } from '@/lib/routes';
 import { GitaLogo } from '@/components/Logo';
 import type { ExamPaper, PaperItem, TrackId } from '@/types';
 
@@ -60,6 +64,8 @@ export function PaperList() {
           );
         })}
       </div>
+
+      <Faq items={faqFor('de-thi')} />
 
       <div className="grid gap-4 lg:grid-cols-2">
         {list.map((p) => {
@@ -369,6 +375,8 @@ export function PaperView({ id }: { id: string }) {
           </Card>
         </>
       )}
+
+      <Feedback path={href('de-thi-detail', { slug: paperSlug(paper.id) })} label={paper.title} />
     </div>
   );
 }

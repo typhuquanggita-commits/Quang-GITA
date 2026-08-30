@@ -16,6 +16,7 @@ export const emptyState = (): AppState => ({
   bookmarks: [],
   doneTasks: {},
   studyLog: {},
+  feedback: [],
 });
 
 export function loadState(): AppState {

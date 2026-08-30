@@ -1,4 +1,5 @@
 import React from 'react';
+import { go } from '@/state';
 
 /* ---------------- Toán học: render ^{...} và _{...} ---------------- */
 
@@ -21,6 +22,47 @@ export function MathText({ children, className = '' }: { children: string; class
 }
 
 /* ---------------- Khối cơ bản ---------------- */
+
+/**
+ * Liên kết nội bộ.
+ *
+ * Dùng thẻ neo thật với thuộc tính href thay vì nút bấm, vì công cụ tìm kiếm
+ * chỉ đi theo được thẻ neo. Cú bấm chuột trái thường được xử lý nội bộ để không
+ * tải lại trang; bấm giữ Ctrl, Cmd hoặc bấm chuột giữa vẫn mở tab mới như một
+ * liên kết bình thường.
+ */
+export function Lnk({
+  to,
+  children,
+  className = '',
+  style,
+  title,
+  ariaCurrent,
+}: {
+  to: string;
+  children: React.ReactNode;
+  className?: string;
+  style?: React.CSSProperties;
+  title?: string;
+  ariaCurrent?: boolean;
+}) {
+  return (
+    <a
+      href={to}
+      className={className}
+      style={style}
+      title={title}
+      aria-current={ariaCurrent ? 'page' : undefined}
+      onClick={(e) => {
+        if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
+        e.preventDefault();
+        go(to);
+      }}
+    >
+      {children}
+    </a>
+  );
+}
 
 export function Card({
   children,

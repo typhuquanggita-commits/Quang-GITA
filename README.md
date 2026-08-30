@@ -171,6 +171,44 @@ Tám vai trò trong ba nhóm, gắn với năm cấp độ chuyên môn P1 → P
 
 ---
 
+## Tối ưu hoá tìm kiếm
+
+Vấn đề lớn nhất trước đây không phải là thiếu nội dung mà là **nội dung không thể được lập chỉ mục**: ứng dụng chạy trên router dạng hash, mà mọi thứ sau dấu `#` đều bị công cụ tìm kiếm cắt bỏ. Cả kho 2.000 phiếu, 195 công thức và 7 đề mẫu chỉ được nhìn thấy như đúng một trang.
+
+### Nền tảng kỹ thuật
+
+| Hạng mục | Cách làm |
+| --- | --- |
+| Đường dẫn | History API với slug tiếng Việt không dấu (`/chuyen-de-toan/can-thuc-bac-hai-rut-gon-bieu-thuc`). Mọi liên kết hash cũ tự chuyển hướng về địa chỉ chuẩn. |
+| Dựng sẵn HTML | **114 tệp HTML tĩnh** sinh khi build, mỗi tệp có đủ tiêu đề, mô tả, tiêu đề cấp một và nội dung đọc được **ngay cả khi tắt JavaScript**. |
+| Dữ liệu có cấu trúc | `EducationalOrganization`, `WebSite` kèm `SearchAction`, `BreadcrumbList`, `WebPage`, `LearningResource`, `Quiz` với `Question`, `ItemList`, `FAQPage`. |
+| Sơ đồ trang & robots | Sinh tự động từ bản đồ đường dẫn — thêm một chuyên đề là sơ đồ tự có thêm hai địa chỉ. |
+| Địa chỉ chuẩn | Mỗi nội dung có đúng một `canonical`, không tự chia nhỏ tín hiệu. |
+| Liên kết nội bộ | Thanh điều hướng và chân trang dùng thẻ neo thật; HTML tĩnh có sẵn 10–17 liên kết nội bộ mỗi trang. |
+| Trải nghiệm trang | Chia nhỏ mã theo trang, nạp phông không chặn hiển thị, tách thư viện nền ra khối riêng để bộ nhớ đệm không mất hiệu lực. |
+
+### Nội dung theo ý định tìm kiếm
+
+`src/data/keywords.ts` gán **36 từ khoá** cho đúng một trang phụ trách, phân theo bốn ý định (tìm thông tin, tìm tài liệu, tìm cách làm, tìm theo tên). Nguyên tắc bất di bất dịch: một từ khoá chỉ thuộc một trang — hai trang cùng nhắm một từ khoá sẽ tự cạnh tranh và cả hai cùng tụt hạng. `src/data/faq.ts` chứa **25 câu hỏi thường gặp** khớp một–một với dữ liệu `FAQPage`.
+
+### Uy tín và minh bạch
+
+Trang **Nguồn và Phương pháp** (`/nguon-va-phuong-phap`) trả lời bốn câu hỏi quyết định niềm tin trong lĩnh vực giáo dục: nội dung lấy từ đâu, kiểm tra bằng cách nào, ai chịu trách nhiệm, và sai thì sửa ra sao. Kèm chính sách đính chính và danh sách những điều **không** cam kết.
+
+> **Về đánh giá sao:** hệ thống thu thập phản hồi thật từ người dùng nhưng **cố ý không** phát sinh dữ liệu `AggregateRating` hay `Review`. Muốn hiển thị sao trên trang kết quả tìm kiếm thì đánh giá phải là đánh giá thật, thu thập công khai và hiển thị đầy đủ trên trang. Kiểm thử tự động chặn bản dựng nếu phát hiện dữ liệu đánh giá sao xuất hiện.
+
+### Bảng điều khiển SEO
+
+`/seo` (không lập chỉ mục) tự kiểm tra mọi trang: độ dài tiêu đề và mô tả, từ khoá chính có trong tiêu đề, đủ dữ liệu có cấu trúc nền; kèm bản đồ từ khoá, sơ đồ trang và checklist triển khai chia ba nhóm — đã xong trong mã nguồn, phải làm khi lên tên miền thật, và việc duy trì hằng tháng.
+
+### Trước khi triển khai
+
+1. Sửa `SITE.origin` trong `src/lib/seo.ts` thành tên miền thật rồi build lại.
+2. Cấu hình máy chủ theo `deploy/nginx.conf.example` — **thứ tự `try_files $uri $uri/index.html /index.html` là bắt buộc**; đảo thứ tự sẽ khiến trang chủ che mất 114 trang đã dựng sẵn. Netlify và Cloudflare Pages dùng `public/_redirects`, Vercel dùng `vercel.json`.
+3. Xác minh trong Google Search Console và gửi `sitemap.xml`.
+
+---
+
 ## Chạy dự án
 
 ```bash
@@ -178,7 +216,8 @@ npm install
 npm run dev        # http://localhost:3000
 npm run build      # typecheck + build production
 npm run typecheck
-npm run smoke      # sinh và kiểm tra 2.000 phiếu / 16.664 câu + đối chiếu 7 đề mẫu với ma trận
+npm run smoke      # kiểm tra nội dung, đề mẫu, sổ tay, tìm kiếm, nhịp học và toàn bộ tầng SEO
+npm run gen:index  # sinh lại danh mục rút gọn sau khi thêm chuyên đề hoặc đề mẫu
 ```
 
 Không cần API key hay dịch vụ ngoài. Toàn bộ tiến độ học tập được lưu trong `localStorage` của trình duyệt.
@@ -207,6 +246,8 @@ src/
     roles.ts         Ma trận phân quyền
     brand.ts         Bộ nhận diện GITA365 / MATH365 và quy chuẩn tài liệu
     formulas.ts      Sổ tay 195 công thức: viết thế nào · dùng khi nào · sai ở đâu
+    keywords.ts      Bản đồ 36 từ khoá theo ý định tìm kiếm
+    faq.ts           25 câu hỏi thường gặp, khớp với dữ liệu có cấu trúc
     academy.ts       Giáo án, nước đi sư phạm, kịch bản nhận xét, nghi thức, bảng dự giờ
     papers/          Đề mẫu trọn vẹn theo từng ma trận đề (đề · lời giải · barem · phân tích)
   lib/
@@ -217,8 +258,10 @@ src/
     review.ts        Lịch ôn lại 1–3–7–21, chuỗi ngày học, đếm ngược kỳ thi, kế hoạch Hôm nay
     report.ts        Báo cáo tuần gửi gia đình
     search.ts        Chỉ số tìm kiếm toàn hệ thống
+    routes.ts        Bản đồ đường dẫn, slug và chuyển hướng liên kết cũ
+    seo.ts           Tiêu đề, mô tả, địa chỉ chuẩn và dữ liệu có cấu trúc từng trang
     storage.ts       Lưu trạng thái vào localStorage
-  pages/           24 trang giao diện (gồm Bộ giải đề, Hồ sơ học viên, Phiếu hướng dẫn)
+  pages/           26 trang giao diện (gồm Bộ giải đề, Hồ sơ học viên, Phiếu hướng dẫn)
   components/      Thư viện UI + biểu đồ SVG tự vẽ
 ```
 

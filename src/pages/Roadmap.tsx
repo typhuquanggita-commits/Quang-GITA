@@ -4,6 +4,8 @@ import { buildRoadmap, weeksUntil } from '@/lib/roadmap';
 import { GROUPS, groupById } from '@/data/groups';
 import { BRAND_TRACK_STYLE } from '@/data/brand';
 import { schoolById } from '@/data/schools';
+import { Faq } from '@/components/Faq';
+import { faqFor } from '@/data/faq';
 import { Card, SectionTitle, Badge, Progress, Empty, Callout } from '@/components/ui';
 import type { GroupId } from '@/types';
 
@@ -262,6 +264,7 @@ export default function Roadmap() {
           );
         })}
       </div>
+      <Faq items={faqFor('lo-trinh')} />
     </div>
   );
 }

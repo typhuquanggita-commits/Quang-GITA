@@ -1,117 +1,169 @@
-import { useHashRoute } from '@/state';
+import { lazy, Suspense } from 'react';
+import { useRoute } from '@/state';
+import { href, topicIdFromSlug, paperIdFromSlug, type PageId } from '@/lib/routes';
+import { SeoHead } from '@/components/SeoHead';
 import { Shell } from '@/components/Shell';
 import Home from '@/pages/Home';
-import Onboarding from '@/pages/Onboarding';
-import Dashboard from '@/pages/Dashboard';
-import Today from '@/pages/Today';
-import RoadmapPage from '@/pages/Roadmap';
-import Missions from '@/pages/Missions';
-import MissionRun from '@/pages/MissionRun';
-import Solution from '@/pages/Solution';
-import Portfolio from '@/pages/Portfolio';
-import Report from '@/pages/Report';
-import Guide from '@/pages/Guide';
-import { TopicList, TopicDetail } from '@/pages/Topics';
-import Exams from '@/pages/Exams';
-import { PaperList, PaperView } from '@/pages/Papers';
-import Playbook from '@/pages/Playbook';
-import Formulas from '@/pages/Formulas';
-import Gita from '@/pages/Gita';
-import Library from '@/pages/Library';
-import Roles from '@/pages/Roles';
-import Classes from '@/pages/Classes';
-import Academy from '@/pages/Academy';
-import Search from '@/pages/Search';
-import Brand from '@/pages/Brand';
+
+/*
+ * Chia nhỏ mã theo trang.
+ *
+ * Trước đây toàn bộ ứng dụng nằm trong một tệp JavaScript duy nhất, nên người
+ * vào đọc một trang chuyên đề vẫn phải tải cả phần chấm bài, biểu đồ và tài
+ * liệu học viện. Với trang nội dung, thời gian hiển thị nội dung chính là chỉ
+ * số xếp hạng thật — nên mỗi trang chỉ nạp đúng phần mã của nó.
+ */
+const Onboarding = lazy(() => import('@/pages/Onboarding'));
+const Dashboard = lazy(() => import('@/pages/Dashboard'));
+const Today = lazy(() => import('@/pages/Today'));
+const RoadmapPage = lazy(() => import('@/pages/Roadmap'));
+const Missions = lazy(() => import('@/pages/Missions'));
+const MissionRun = lazy(() => import('@/pages/MissionRun'));
+const Solution = lazy(() => import('@/pages/Solution'));
+const Portfolio = lazy(() => import('@/pages/Portfolio'));
+const Report = lazy(() => import('@/pages/Report'));
+const Guide = lazy(() => import('@/pages/Guide'));
+const TopicList = lazy(() => import('@/pages/Topics').then((m) => ({ default: m.TopicList })));
+const TopicDetail = lazy(() => import('@/pages/Topics').then((m) => ({ default: m.TopicDetail })));
+const Exams = lazy(() => import('@/pages/Exams'));
+const PaperList = lazy(() => import('@/pages/Papers').then((m) => ({ default: m.PaperList })));
+const PaperView = lazy(() => import('@/pages/Papers').then((m) => ({ default: m.PaperView })));
+const Playbook = lazy(() => import('@/pages/Playbook'));
+const Formulas = lazy(() => import('@/pages/Formulas'));
+const Gita = lazy(() => import('@/pages/Gita'));
+const Library = lazy(() => import('@/pages/Library'));
+const Roles = lazy(() => import('@/pages/Roles'));
+const Classes = lazy(() => import('@/pages/Classes'));
+const Academy = lazy(() => import('@/pages/Academy'));
+const Search = lazy(() => import('@/pages/Search'));
+const Brand = lazy(() => import('@/pages/Brand'));
+const Sources = lazy(() => import('@/pages/Sources'));
+const SeoDashboard = lazy(() => import('@/pages/SeoDashboard'));
+
+/** Trang nào thì tô sáng mục nào trên thanh điều hướng. */
+const NAV_OF: Partial<Record<PageId, PageId>> = {
+  'lam-phieu': 'nhiem-vu',
+  'loi-giai': 'nhiem-vu',
+  'chuyen-de-detail': 'chuyen-de',
+  'huong-dan-on': 'chuyen-de',
+  'de-thi-detail': 'de-thi',
+};
 
 export default function App() {
-  const [segments] = useHashRoute();
-  const [root, param, param2] = segments;
-  const active = root ? `/${root}` : '/';
+  const { id, params } = useRoute();
+  const activeId = NAV_OF[id] ?? id;
 
   let page: React.ReactNode;
-  switch (root) {
-    case undefined:
+  switch (id) {
+    case 'home':
       page = <Home />;
       break;
-    case 'onboarding':
+    case 'bat-dau':
       page = <Onboarding />;
       break;
-    case 'today':
+    case 'hom-nay':
       page = <Today />;
       break;
-    case 'dashboard':
+    case 'tien-do':
       page = <Dashboard />;
       break;
-    case 'roadmap':
+    case 'lo-trinh':
       page = <RoadmapPage />;
       break;
-    case 'missions':
+    case 'nhiem-vu':
       page = <Missions />;
       break;
-    case 'mission':
-      page = <MissionRun missionId={param ?? ''} />;
+    case 'lam-phieu':
+      page = <MissionRun missionId={params.id ?? ''} />;
       break;
-    case 'solution':
-      page = <Solution worksheetId={param ?? ''} variant={param2} />;
+    case 'loi-giai':
+      page = <Solution worksheetId={params.id ?? ''} variant={params.variant} />;
       break;
-    case 'portfolio':
+    case 'ho-so':
       page = <Portfolio />;
       break;
-    case 'report':
+    case 'bao-cao':
       page = <Report />;
       break;
-    case 'guide':
-      page = <Guide topicId={param ?? ''} />;
+    case 'huong-dan-on':
+      page = <Guide topicId={topicIdFromSlug(params.slug ?? '')} />;
       break;
-    case 'topics':
-      page = param ? <TopicDetail id={param} /> : <TopicList />;
+    case 'chuyen-de':
+      page = <TopicList />;
       break;
-    case 'exams':
+    case 'chuyen-de-detail':
+      page = <TopicDetail id={topicIdFromSlug(params.slug ?? '')} />;
+      break;
+    case 'cau-truc-de-thi':
       page = <Exams />;
       break;
-    case 'papers':
+    case 'de-thi':
       page = <PaperList />;
       break;
-    case 'paper':
-      page = <PaperView id={param ?? ''} />;
+    case 'de-thi-detail':
+      page = <PaperView id={paperIdFromSlug(params.slug ?? '')} />;
       break;
-    case 'playbook':
+    case 'bi-kip':
       page = <Playbook />;
       break;
-    case 'formulas':
+    case 'cong-thuc':
       page = <Formulas />;
       break;
-    case 'gita':
+    case 'mo-thuc-gita':
       page = <Gita />;
       break;
-    case 'library':
+    case 'kho-tai-lieu':
       page = <Library />;
       break;
-    case 'roles':
+    case 'phan-quyen':
       page = <Roles />;
       break;
-    case 'classes':
+    case 'lop-hoc':
       page = <Classes />;
       break;
-    case 'academy':
+    case 'hoc-vien':
       page = <Academy />;
       break;
-    case 'search':
-      page = <Search initial={param} />;
+    case 'tim-kiem':
+      page = <Search initial={params.q} />;
       break;
-    case 'brand':
+    case 'nhan-dien':
       page = <Brand />;
+      break;
+    case 'nguon-phuong-phap':
+      page = <Sources />;
+      break;
+    case 'seo':
+      page = <SeoDashboard />;
       break;
     default:
       page = <Home />;
   }
 
   return (
-    <Shell active={root === 'mission' ? '/missions' : active}>
-      <div key={segments.join('/')} className="animate-fade">
-        {page}
+    <>
+      <SeoHead page={id} params={params} />
+      <Shell active={href(activeId, params)}>
+        <div key={`${id}:${Object.values(params).join('/')}`} className="animate-fade">
+          <Suspense fallback={<PageSkeleton />}>{page}</Suspense>
+        </div>
+      </Shell>
+    </>
+  );
+}
+
+/** Khung chờ khi phần mã của trang đang được nạp. */
+function PageSkeleton() {
+  return (
+    <div className="space-y-4" aria-busy="true" aria-live="polite">
+      <div className="h-7 w-2/5 animate-pulse rounded-lg bg-slate-200" />
+      <div className="h-4 w-3/4 animate-pulse rounded bg-slate-100" />
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        {[0, 1, 2, 3].map((i) => (
+          <div key={i} className="h-24 animate-pulse rounded-2xl bg-slate-100" />
+        ))}
       </div>
-    </Shell>
+      <div className="h-64 animate-pulse rounded-2xl bg-slate-100" />
+    </div>
   );
 }

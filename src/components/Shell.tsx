@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { useApp, go } from '@/state';
+import type { AppState, TrackId } from '@/types';
 import { BRAND, BRAND_TRACK_STYLE } from '@/data/brand';
 import { currentRole, isTeacher, suggestRoleUpgrade, applyRole } from '@/lib/auth';
 import { ROLES } from '@/data/roles';
-import { progressOverview } from '@/lib/engine';
+import { href } from '@/lib/routes';
+import { Lnk } from '@/components/ui';
 import { GitaLogo } from '@/components/Logo';
 
 export interface NavItem {
@@ -15,24 +17,25 @@ export interface NavItem {
 }
 
 export const NAV: NavItem[] = [
-  { path: '/', label: 'Tổng quan', icon: '◎', group: 'Học tập' },
-  { path: '/today', label: 'Hôm nay', icon: '☀', group: 'Học tập' },
-  { path: '/dashboard', label: 'Bảng tiến độ', icon: '▤', group: 'Học tập' },
-  { path: '/roadmap', label: 'Lộ trình của tôi', icon: '⟶', group: 'Học tập' },
-  { path: '/missions', label: 'Nhiệm vụ & Phiếu luyện', icon: '✎', group: 'Học tập' },
-  { path: '/portfolio', label: 'Hồ sơ học viên', icon: '❖', group: 'Học tập' },
-  { path: '/report', label: 'Báo cáo gia đình', icon: '⎙', group: 'Học tập' },
-  { path: '/topics', label: 'Cây chuyên đề', icon: '❑', group: 'Nội dung' },
-  { path: '/exams', label: 'Kỳ thi & Cấu trúc đề', icon: '◇', group: 'Nội dung' },
-  { path: '/papers', label: 'Đề mẫu & Bộ giải đề', icon: '⬢', group: 'Nội dung' },
-  { path: '/formulas', label: 'Sổ tay công thức', icon: '∑', group: 'Nội dung' },
-  { path: '/playbook', label: 'Bí kíp & Thói quen', icon: '★', group: 'Nội dung' },
-  { path: '/library', label: 'Kiến trúc tài liệu', icon: '❐', group: 'Nội dung' },
-  { path: '/gita', label: 'Mô thức GITA', icon: '◈', group: 'Hệ thống' },
-  { path: '/brand', label: 'Nhận diện MATH365', icon: '◈', group: 'Hệ thống' },
-  { path: '/roles', label: 'Phân quyền', icon: '⚿', group: 'Hệ thống' },
-  { path: '/academy', label: 'Học viện giáo viên', icon: '⌘', group: 'Hệ thống' },
-  { path: '/classes', label: 'Quản lý lớp', icon: '⛁', group: 'Hệ thống', teacherOnly: true },
+  { path: href('home'), label: 'Tổng quan', icon: '◎', group: 'Học tập' },
+  { path: href('hom-nay'), label: 'Hôm nay', icon: '☀', group: 'Học tập' },
+  { path: href('tien-do'), label: 'Bảng tiến độ', icon: '▤', group: 'Học tập' },
+  { path: href('lo-trinh'), label: 'Lộ trình của tôi', icon: '⟶', group: 'Học tập' },
+  { path: href('nhiem-vu'), label: 'Nhiệm vụ & Phiếu luyện', icon: '✎', group: 'Học tập' },
+  { path: href('ho-so'), label: 'Hồ sơ học viên', icon: '❖', group: 'Học tập' },
+  { path: href('bao-cao'), label: 'Báo cáo gia đình', icon: '⎙', group: 'Học tập' },
+  { path: href('chuyen-de'), label: 'Chuyên đề Toán', icon: '❑', group: 'Nội dung' },
+  { path: href('cau-truc-de-thi'), label: 'Cấu trúc đề thi', icon: '◇', group: 'Nội dung' },
+  { path: href('de-thi'), label: 'Đề thi thử có lời giải', icon: '⬢', group: 'Nội dung' },
+  { path: href('cong-thuc'), label: 'Sổ tay công thức', icon: '∑', group: 'Nội dung' },
+  { path: href('bi-kip'), label: 'Bí kíp & Thói quen', icon: '★', group: 'Nội dung' },
+  { path: href('kho-tai-lieu'), label: 'Kho tài liệu', icon: '❐', group: 'Nội dung' },
+  { path: href('mo-thuc-gita'), label: 'Mô thức GITA', icon: '◈', group: 'Hệ thống' },
+  { path: href('nguon-phuong-phap'), label: 'Nguồn & Phương pháp', icon: '⚖', group: 'Hệ thống' },
+  { path: href('nhan-dien'), label: 'Nhận diện MATH365', icon: '◈', group: 'Hệ thống' },
+  { path: href('hoc-vien'), label: 'Học viện giáo viên', icon: '⌘', group: 'Hệ thống' },
+  { path: href('phan-quyen'), label: 'Phân quyền', icon: '⚿', group: 'Hệ thống' },
+  { path: href('lop-hoc'), label: 'Quản lý lớp', icon: '⛁', group: 'Hệ thống', teacherOnly: true },
 ];
 
 export function Shell({ children, active }: { children: React.ReactNode; active: string }) {
@@ -42,7 +45,7 @@ export function Shell({ children, active }: { children: React.ReactNode; active:
   const teacher = isTeacher(state);
   const upgrade = suggestRoleUpgrade(state);
   const track = state.profile?.track ?? 'thpt';
-  const ov = progressOverview(state, track);
+  const ov = miniOverview(state, track);
 
   const items = NAV.filter((n) => !n.teacherOnly || teacher);
   const groups = [...new Set(items.map((i) => i.group))];
@@ -55,12 +58,10 @@ export function Shell({ children, active }: { children: React.ReactNode; active:
           open ? 'translate-x-0' : '-translate-x-full'
         }`}
       >
-        <button
+        <Lnk
+          to="/"
           className="mb-6 flex w-full items-center gap-3 text-left"
-          onClick={() => {
-            go('/');
-            setOpen(false);
-          }}
+          title={`${BRAND.product} — trang chủ`}
         >
           <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-white ring-1 ring-slate-200">
             <GitaLogo size={30} variant="mark" />
@@ -73,7 +74,7 @@ export function Shell({ children, active }: { children: React.ReactNode; active:
               by {BRAND.org}
             </span>
           </span>
-        </button>
+        </Lnk>
 
         {groups.map((g) => (
           <div key={g} className="mb-5">
@@ -87,12 +88,10 @@ export function Shell({ children, active }: { children: React.ReactNode; active:
                   const isActive =
                     active === item.path || (item.path !== '/' && active.startsWith(item.path));
                   return (
-                    <button
+                    <Lnk
                       key={item.path}
-                      onClick={() => {
-                        go(item.path);
-                        setOpen(false);
-                      }}
+                      to={item.path}
+                      ariaCurrent={isActive}
                       className={`flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-left text-[13.5px] font-semibold transition ${
                         isActive
                           ? 'bg-brand-50 text-brand-800'
@@ -103,7 +102,7 @@ export function Shell({ children, active }: { children: React.ReactNode; active:
                         {item.icon}
                       </span>
                       {item.label}
-                    </button>
+                    </Lnk>
                   );
                 })}
             </nav>
@@ -177,12 +176,7 @@ export function Shell({ children, active }: { children: React.ReactNode; active:
           </div>
         </header>
         <main className="mx-auto max-w-[1180px] px-4 py-6 sm:px-6 sm:py-8">{children}</main>
-        <footer className="border-t border-slate-200 px-6 py-6 text-center text-[11.5px] leading-relaxed text-slate-400">
-          {BRAND.fullName} · Dữ liệu học tập được lưu trên trình duyệt của bạn.
-          <br />
-          Thông tin kỳ thi mang tính tham khảo — luôn đối chiếu với công bố chính thức của Bộ GD&amp;ĐT,
-          Sở GD&amp;ĐT Hà Nội và từng trường trước mỗi mùa thi.
-        </footer>
+        <SiteFooter />
       </div>
     </div>
   );
@@ -222,4 +216,115 @@ function TopSearch() {
       </label>
     </form>
   );
+}
+
+
+/**
+ * Chân trang có liên kết đi được.
+ *
+ * Đây không phải phần trang trí. Chân trang xuất hiện trên mọi trang, nên nó là
+ * con đường ngắn nhất để công cụ tìm kiếm đi từ bất kỳ đâu tới mọi khu vực nội
+ * dung chính — và cũng là chỗ đặt những tuyên bố minh bạch mà người đọc cần
+ * thấy trước khi quyết định có tin hay không.
+ */
+function SiteFooter() {
+  const cols: { title: string; links: { to: string; label: string }[] }[] = [
+    {
+      title: 'Nội dung học tập',
+      links: [
+        { to: href('chuyen-de'), label: 'Chuyên đề Toán' },
+        { to: href('de-thi'), label: 'Đề thi thử có lời giải' },
+        { to: href('cau-truc-de-thi'), label: 'Cấu trúc và ma trận đề thi' },
+        { to: href('cong-thuc'), label: 'Sổ tay công thức Toán' },
+      ],
+    },
+    {
+      title: 'Phương pháp',
+      links: [
+        { to: href('lo-trinh'), label: 'Lộ trình ôn thi' },
+        { to: href('bi-kip'), label: 'Bí kíp và thói quen học' },
+        { to: href('mo-thuc-gita'), label: 'Mô thức huấn luyện GITA' },
+        { to: href('kho-tai-lieu'), label: 'Kho tài liệu' },
+      ],
+    },
+    {
+      title: 'Về MATH365',
+      links: [
+        { to: href('nguon-phuong-phap'), label: 'Nguồn và phương pháp biên soạn' },
+        { to: href('hoc-vien'), label: 'Học viện giáo viên' },
+        { to: href('nhan-dien'), label: 'Bộ nhận diện thương hiệu' },
+        { to: href('phan-quyen'), label: 'Hệ thống phân quyền' },
+      ],
+    },
+  ];
+
+  return (
+    <footer className="border-t border-slate-200 bg-white px-6 py-8">
+      <div className="mx-auto max-w-[1180px]">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div>
+            <div className="flex items-center gap-2.5">
+              <GitaLogo size={28} variant="mark" />
+              <span className="text-[14px] font-extrabold text-brand-800">{BRAND.product}</span>
+            </div>
+            <p className="mt-2 text-[12px] leading-relaxed text-slate-500">{BRAND.promise}</p>
+          </div>
+          {cols.map((c) => (
+            <nav key={c.title} aria-label={c.title}>
+              <div className="text-[11px] font-bold uppercase tracking-[0.12em] text-slate-400">
+                {c.title}
+              </div>
+              <ul className="mt-2 space-y-1.5">
+                {c.links.map((l) => (
+                  <li key={l.to}>
+                    <Lnk to={l.to} className="text-[12.5px] text-slate-600 hover:text-brand-700 hover:underline">
+                      {l.label}
+                    </Lnk>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          ))}
+        </div>
+
+        <div className="mt-7 border-t border-slate-100 pt-5 text-[11.5px] leading-relaxed text-slate-400">
+          <p>
+            {BRAND.fullName}. Dữ liệu học tập được lưu trên trình duyệt của bạn và không gửi đi đâu.
+          </p>
+          <p className="mt-1">
+            Thông tin kỳ thi mang tính tham khảo — luôn đối chiếu với công bố chính thức của Bộ
+            GD&amp;ĐT, Sở GD&amp;ĐT Hà Nội và từng trường trước mỗi mùa thi. Đề mẫu do MATH365 biên
+            soạn theo cấu trúc thống kê, không phải đề thi thật và không nhằm dự đoán đề thật.
+            Chúng tôi không cam kết kết quả thi.{' '}
+            <Lnk to={href('nguon-phuong-phap')} className="font-semibold text-brand-600 hover:underline">
+              Xem nguồn và phương pháp biên soạn
+            </Lnk>
+            .
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+}
+
+
+/**
+ * Chỉ số tóm tắt trên thanh trên cùng.
+ *
+ * Cố ý không dùng hàm thống kê đầy đủ trong lớp chấm điểm, vì hàm đó cần tới cả
+ * kho hai nghìn phiếu và sẽ kéo kho ấy vào gói mã khởi động của mọi trang. Mã
+ * giai đoạn đã mang sẵn ký tự đầu cho biết thuộc luồng nào (T, C, Q), nên tính
+ * được đầy đủ mà không cần tra kho.
+ */
+const STAGE_PREFIX: Record<TrackId, string> = { thpt: 'T', chuyen: 'C', 'thpt-qg': 'Q' };
+
+function miniOverview(state: AppState, track: TrackId) {
+  const prefix = STAGE_PREFIX[track];
+  const rel = state.attempts.filter((a) => a.stageId?.startsWith(prefix));
+  const last10 = rel.slice(-10);
+  return {
+    level: state.levelUnlocked[track] ?? 1,
+    stage: state.stageUnlocked[track] ?? 1,
+    avgKpi: last10.length ? Math.round(last10.reduce((s, a) => s + a.kpi, 0) / last10.length) : 0,
+  };
 }

@@ -6,6 +6,10 @@ import { RESOURCES, RESOURCE_TYPE_LABEL } from '@/data/resources';
 import { papersByBlueprint } from '@/data/papers';
 import { BRAND_TRACK_STYLE } from '@/data/brand';
 import { Card, SectionTitle, Badge, Progress, Callout } from '@/components/ui';
+import { Faq } from '@/components/Faq';
+import { Feedback } from '@/components/Feedback';
+import { faqFor } from '@/data/faq';
+import { href } from '@/lib/routes';
 import type { TrackId } from '@/types';
 
 const GATE_LABEL: Record<string, { label: string; tone: 'green' | 'amber' | 'rose' }> = {
@@ -328,6 +332,8 @@ export default function Exams() {
       <p className="text-[12px] text-slate-400">
         Hệ thống đang lưu {BLUEPRINTS.length} ma trận đề của {SCHOOLS.length} kỳ thi / trường.
       </p>
+      <Faq items={faqFor('cau-truc-de-thi')} />
+      <Feedback path={href('cau-truc-de-thi')} label="Cấu trúc và ma trận đề thi" />
     </div>
   );
 }
