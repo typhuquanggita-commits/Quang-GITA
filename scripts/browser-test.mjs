@@ -666,6 +666,7 @@ try {
     ['the lesson library', '#/lessons'],
     ['the vocabulary deck', '#/vocab'],
     ['the guardian report', '#/guardian-report'],
+    ['the syllabus', '#/curriculum'],
     ['the topic packets', '#/topics'],
     ['the tactics treasury', '#/tactics'],
     ['the papers shelf', '#/papers'],
@@ -709,6 +710,21 @@ try {
    * and would reach a family, so it is checked here rather than only in the
    * unit tests.
    */
+  await page.evaluate(() => { window.location.hash = '#/curriculum'; });
+  await page.waitForTimeout(800);
+  const sessions = await page.locator('.syllabus-session').count();
+  check('the syllabus derives a full timetable', sessions >= 8, `${sessions} sessions`);
+  check(
+    'every unit states why it sits where it does',
+    (await page.locator('.syllabus-rationale').count()) >= 3,
+  );
+  await page.getByRole('button', { name: /Nền tảng|Foundation/ }).click();
+  await page.waitForTimeout(500);
+  check(
+    'switching course rebuilds the timetable',
+    (await page.locator('.syllabus-session').count()) !== sessions,
+  );
+
   await page.evaluate(() => { window.location.hash = '#/guardian-report'; });
   await page.waitForTimeout(800);
   check('the guardian report renders', (await page.locator('.doc-masthead').count()) === 1);

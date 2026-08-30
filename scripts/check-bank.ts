@@ -12,6 +12,7 @@ import { sprToNumber } from '../src/engine/scoring.ts';
 import { LESSONS, TOPICS } from '../src/data/lesson-index.ts';
 import { TACTICS } from '../src/data/tactics.ts';
 import { VOCABULARY, vocabStats } from '../src/data/vocabulary.ts';
+import { allCoursePlans, coverage, curriculumProblems } from '../src/engine/curriculum.ts';
 
 const problems: string[] = [];
 const seen = new Set<string>();
@@ -248,6 +249,19 @@ function exampleUsesWord(word: string, example: string): boolean {
   }
 }
 
+/*
+ * Curriculum.
+ *
+ * The syllabus is the one document that references almost everything else, so
+ * it is the one most exposed to a rename somewhere far away. A dead reference
+ * here does not throw: it produces a session with no material in it, and the
+ * first person to discover that is a teacher in front of a class. So it is
+ * checked, including the coverage rule — a skill the platform can diagnose
+ * and no course can teach means the learner is told what is wrong and sent
+ * nowhere.
+ */
+for (const problem of curriculumProblems([...skillIds])) problems.push(problem);
+
 const tacticIds = new Set(TACTICS.map((t) => t.id));
 if (tacticIds.size !== TACTICS.length) problems.push('tactics: duplicate id');
 
@@ -261,6 +275,15 @@ console.log(`Lessons: ${LESSONS.length} for ${skillIds.size} skills`);
   );
 }
 console.log(`Topics:  ${TOPICS.length} with ${TOPICS.reduce((n, t) => n + t.types.length, 0)} question types`);
+{
+  const plans = allCoursePlans();
+  const cov = coverage([...skillIds]);
+  console.log(
+    `Courses: ${plans.length} — ${plans.reduce((n, p) => n + p.totalSessions, 0)} sessions, ` +
+      `${plans.reduce((n, p) => n + p.classHours, 0).toFixed(0)} class hours, ` +
+      `covering ${cov.taught.length}/${skillIds.size} measurable skills`,
+  );
+}
 console.log(`Bank: ${stats.total} items (${stats.bySection.rw} R&W, ${stats.bySection.math} Math)`);
 console.log(`Formats: ${stats.total - stats.sprCount} multiple choice, ${stats.sprCount} grid-in`);
 console.log(`Bands: ${Object.entries(stats.byBand).map(([k, v]) => `${k} ${v}`).join(', ')}`);

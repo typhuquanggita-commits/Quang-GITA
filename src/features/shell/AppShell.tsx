@@ -115,6 +115,9 @@ const Shortcuts = lazy(() =>
 const GuardianReport = lazy(() =>
   import('../report/GuardianReport.tsx').then((m) => ({ default: m.GuardianReport })),
 );
+const Curriculum = lazy(() =>
+  import('../curriculum/Curriculum.tsx').then((m) => ({ default: m.Curriculum })),
+);
 const OrgMetrics = lazy(() =>
   import('../metrics/OrgMetrics.tsx').then((m) => ({ default: m.OrgMetrics })),
 );
@@ -253,6 +256,11 @@ function Shell(): React.ReactElement {
         { route: { name: 'practice' }, label: t('nav.practice'), icon: <IconTarget size={18} /> },
         { route: { name: 'vocab' }, label: t('nav.vocab'), icon: <IconCards size={18} /> },
         { route: { name: 'lessons' }, label: t('nav.lessons'), icon: <IconBook size={18} /> },
+        {
+          route: { name: 'curriculum' },
+          label: locale === 'vi' ? 'Đề cương' : 'Syllabus',
+          icon: <IconBook size={18} />,
+        },
         {
           route: { name: 'topics' },
           label: locale === 'vi' ? 'Bộ phiếu' : 'Packets',
@@ -538,6 +546,8 @@ function RouteView({
       return <Shortcuts />;
     case 'guardian-report':
       return <GuardianReport />;
+    case 'curriculum':
+      return <Curriculum navigate={navigate} />;
     case 'settings':
       return <Settings />;
     default:

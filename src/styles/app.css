@@ -1200,3 +1200,121 @@ mark.hl[data-note='true'] { border-bottom: 2px dotted currentColor; cursor: poin
   max-width: 76ch;
 }
 .report-limits svg { flex: none; margin-top: 3px; color: var(--text-muted); }
+
+/* ================================================================== */
+/* Course syllabus                                                     */
+/* ================================================================== */
+
+.syllabus-figures {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  gap: var(--space-3);
+  margin: var(--space-5) 0;
+}
+.syllabus-figure {
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-md);
+  background: var(--surface-2);
+  display: grid;
+  gap: var(--space-1);
+  align-content: start;
+}
+.syllabus-figure strong { font-size: var(--text-2xl); line-height: 1.1; }
+.syllabus-figure span { color: var(--text-muted); font-size: var(--text-xs); line-height: var(--leading-normal); }
+
+.syllabus-gates {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: var(--space-5);
+}
+.syllabus-gates p { margin-top: var(--space-2); line-height: var(--leading-normal); max-width: 60ch; }
+
+/*
+ * The rationale is set apart because it is the part a teacher argues with,
+ * and an argument needs to be findable. Tone is carried by the rule and the
+ * label, not by colour alone.
+ */
+.syllabus-rationale {
+  display: flex;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  border-left: 3px solid var(--primary);
+  border-radius: var(--radius-sm);
+  background: var(--primary-soft);
+  color: var(--primary-soft-text);
+  line-height: var(--leading-normal);
+}
+.syllabus-rationale svg { flex: none; margin-top: 3px; }
+.syllabus-rationale p { margin-top: 2px; max-width: 70ch; }
+
+.syllabus-sessions { list-style: none; display: grid; gap: var(--space-4); }
+
+.syllabus-session {
+  padding: var(--space-4);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  display: grid;
+  gap: var(--space-3);
+  break-inside: avoid;
+}
+
+.syllabus-session-head { display: flex; gap: var(--space-3); align-items: flex-start; }
+.syllabus-index {
+  flex: none;
+  width: 1.9rem;
+  height: 1.9rem;
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius-full);
+  background: var(--primary);
+  color: var(--on-primary);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+}
+
+.syllabus-objectives { padding-left: var(--space-6); display: grid; gap: var(--space-1); }
+.syllabus-objectives li { line-height: var(--leading-normal); max-width: 74ch; font-size: var(--text-sm); }
+
+.syllabus-materials { display: grid; gap: var(--space-2); }
+.syllabus-material {
+  display: grid;
+  gap: var(--space-1);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+  background: var(--surface-2);
+}
+.syllabus-material > span:last-child { align-items: center; }
+
+.sheet-chip {
+  padding: 1px var(--space-2);
+  border-radius: var(--radius-xs);
+  border: 1px solid var(--border-strong);
+  font-size: var(--text-2xs);
+  white-space: nowrap;
+}
+
+.syllabus-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 1px var(--space-2);
+  border: 0;
+  border-radius: var(--radius-xs);
+  background: var(--primary-soft);
+  color: var(--primary-soft-text);
+  font-size: var(--text-2xs);
+  font-weight: var(--weight-semibold);
+}
+.syllabus-link:hover { background: var(--primary); color: var(--on-primary); }
+
+.syllabus-checkpoint {
+  display: flex;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-sm);
+  background: var(--warning-soft);
+  color: var(--warning);
+  line-height: var(--leading-normal);
+}
+.syllabus-checkpoint svg { flex: none; margin-top: 3px; }
+.syllabus-checkpoint p { margin-top: 2px; max-width: 70ch; }
