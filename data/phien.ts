@@ -74,6 +74,12 @@ export const TAB_QUYEN: Record<string, string> = {
   academy: 'q-xem-lo-trinh',
   levels: 'q-xem-lo-trinh',
   brand: 'q-xem-lo-trinh',
+  /* Hệ tài liệu và hai tuyến thi quốc tế — nền chung, mọi vai đều thấy. */
+  decuong: 'q-xem-lo-trinh',
+  baitest: 'q-xem-lo-trinh',
+  camnang: 'q-xem-lo-trinh',
+  sat: 'q-xem-lo-trinh',
+  ielts9: 'q-xem-lo-trinh',
   /* Bảng phân quyền: ai cũng phải đọc được luật ràng buộc chính mình. */
   quyen: 'q-xem-lo-trinh',
 

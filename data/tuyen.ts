@@ -122,6 +122,33 @@ export const TAB_TUYEN: Record<string, TuyenId[]> = {
   mindset: ['ielts', 'chuyen'],
   clubs: ['ielts', 'chuyen'],
   resources: ['ielts', 'chuyen'],
+  decuong: ['ielts', 'chuyen'],
+  baitest: ['ielts', 'chuyen'],
+  camnang: ['chuyen'],
+  /*
+   * IELTS 9.0 thuộc đúng tuyến IELTS: nó là đoạn nối TIẾP sau khi đã xong
+   * 8.0, không phải một tuyến khác.
+   */
+  ielts9: ['ielts'],
+  /*
+   * SAT ĐÁNH DẤU CẢ HAI, VÀ ĐÂY KHÔNG PHẢI LÀ NÓI SAT THUỘC HAI TUYẾN.
+   *
+   * Trường này trả lời câu hỏi "chọn bộ lọc nào thì thấy thẻ này", chứ
+   * không trả lời "nội dung này thuộc tuyến nào". Hai câu hỏi trùng nhau ở
+   * mọi thẻ khác nên trước nay không cần phân biệt.
+   *
+   * SAT là tuyến THỨ BA — bảng BA_TUYEN trong data/sat.ts nói rõ nó đo thứ
+   * khác và có cả toán. Nhưng bộ lọc chỉ có hai giá trị, nên không có ô
+   * nào để nói "tuyến thứ ba". Để mảng rỗng thì thẻ biến mất ngay khi
+   * người dùng chọn một tuyến, mà biến mất là sai hơn: người đang theo
+   * tuyến nào cũng có thể đang cân nhắc du học Mỹ.
+   *
+   * Cách đúng hơn là thêm giá trị thứ ba vào bộ lọc. Chưa làm vì TuyenId
+   * còn ràng buộc mười cấu trúc dữ liệu khác (mốc lộ trình, phần tinh tuý,
+   * lỗi chung...) và thêm 'sat' vào đó sẽ buộc phải bịa ra nội dung SAT
+   * cho từng cấu trúc. Ghi ra đây thay vì để người sau tưởng là bỏ sót.
+   */
+  sat: ['ielts', 'chuyen'],
   // Bốn mục dưới đây App xếp vào nhóm vận hành học viện, không phải nhóm
   // học viên, nên chúng không mang tuyến — bộ lọc tuyến cũng không đụng tới.
   chuan: [],

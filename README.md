@@ -1166,6 +1166,107 @@ npm run preview  # xem thử bản đã dựng
 không tham chiếu tới bất kỳ tên miền bên ngoài nào; điều này được kiểm chứng
 tự động bằng `npm run test:web`.
 
+## 🇺🇸 Tuyến SAT — bài thi số hoá, thích ứng theo mô-đun
+
+SAT **không phải** một biến thể của IELTS. Ba khác biệt gốc quyết định toàn
+bộ cách luyện:
+
+| | IELTS | SAT |
+|---|---|---|
+| Cơ chế | cố định | **thích ứng theo mô-đun** — mô-đun 1 quyết định trần điểm |
+| Người chấm | có (Nói, Viết) | không — máy chấm hoàn toàn |
+| Toán | không có | **chiếm đúng một nửa điểm** (800/1600) |
+
+Ai mang thói quen luyện IELTS sang làm SAT thì hỏng ở chỗ dễ đoán: đọc kỹ
+từng chữ trong khi đề tính giờ theo giây, và học từ vựng học thuật trong khi
+đề hỏi từ theo **ngữ cảnh**.
+
+### Cấu trúc và nhịp thật
+
+98 câu · 134 phút · 4 mô-đun · thang 400–1600. Nhịp làm bài là con số quyết
+định chiến thuật mà hầu như không ai tính trước khi thi:
+
+| Mô-đun | Câu | Phút | **Giây mỗi câu** |
+|---|---|---|---|
+| Đọc–Viết 1 & 2 | 27 mỗi mô-đun | 32 | **71s** |
+| Toán 1 & 2 | 22 mỗi mô-đun | 35 | **95s** |
+
+Tám miền kiến thức và **36 dạng bài**, mỗi dạng có đọc vị, phương pháp, bước
+giải, bẫy, bí kíp và một **ngưỡng giây** — quá ngưỡng thì bỏ câu, vì giữ lại
+là ăn vào câu sau. Bài kiểm đối chiếu ngưỡng trung bình của mỗi phần với nhịp
+thật: đặt ngưỡng đẹp mà làm theo vẫn vỡ giờ thì là lời khuyên hỏng.
+
+### Chỗ dữ liệu tự kiểm được
+
+Tỉ lệ bốn miền của mỗi phần cộng lại đúng **100%**, và số câu suy ra từ tỉ lệ
+cộng đúng **54** và **44** — hai con số công bố độc lập nhau mà khớp tuyệt
+đối. Tám ngày thi đều rơi đúng **thứ Bảy** (SAT luôn thi thứ Bảy, ngày rơi vào
+thứ khác gần như chắc chắn là lỗi chép).
+
+### Nói thẳng về nguồn
+
+Lịch thi, lệ phí và cả cấu trúc đề đều do College Board công bố và **đổi theo
+năm**. Không bài kiểm nào chạy trên máy xác minh được điều đó — muốn thế phải
+mở trang chính thức, và đó là việc của người, hằng năm. Cái mã **kiểm được**
+là các con số có mâu thuẫn nhau không, và đó chính là loại lỗi hay gặp nhất
+khi chép số từ ngoài vào.
+
+Tầng này **không** chứa đề thi thật hay đoạn văn của College Board, và không
+chép đề của trung tâm nào — đề thật có bản quyền.
+
+## 🎯 Tầng IELTS 9.0 — khoảng cách đo được
+
+Đoạn 8.0 → 9.0 không phải "làm tiếp những gì đã làm, nhưng nhiều hơn". Nó là
+bài toán khác, vì ba lý do **đo được**:
+
+**1. Biên lỗi gần bằng không.** Band 9 ở Nghe cần 39/40, Đọc Academic cần
+39–40/40. Biên sai của cả bài là **một câu**. Chiến thuật "làm chắc phần dễ,
+buông phần khó" hết tác dụng hoàn toàn.
+
+**2. Tiêu chí đổi chất, không đổi lượng.** Band 8 là *very good user*, band 9
+là *expert user* có *full operational command*. Khoảng cách nằm ở **độ chính
+xác và sự vắng mặt của gắng sức**, không nằm ở từ khó hay câu dài — nhồi từ
+hiếm làm **tụt** điểm chứ không tăng.
+
+**3. Có đường vòng bằng số học.** Điểm tổng là trung bình bốn kỹ năng rồi làm
+tròn, nên **không cần 9.0 cả bốn kỹ năng**. Hệ thống chạy chính luật làm tròn
+đó và liệt kê **toàn bộ 4 tổ hợp** đạt 9.0 tổng:
+
+```
+8.0 · 9.0 · 9.0 · 9.0      8.5 · 8.5 · 9.0 · 9.0
+8.5 · 9.0 · 9.0 · 9.0      9.0 · 9.0 · 9.0 · 9.0
+```
+
+Cần tổng bốn kỹ năng ≥ **35.0**. Đáng chú ý: không tổ hợp nào có kỹ năng dưới
+8.0 — ba kỹ năng 9.0 kèm một kỹ năng 7.5 chỉ ra **8.5** tổng. Nên 8.0 là sàn
+thật, và hệ quả thực tế là: chọn **đúng một** kỹ năng để buông xuống 8.0, và
+buông kỹ năng đắt nhất.
+
+Bài kiểm không "xem có hợp lý không" — nó chạy luật làm tròn trên **toàn bộ
+không gian tổ hợp** và đối chiếu với từng câu chữ đã viết ra, kể cả khẳng định
+"sàn thật là 8.0".
+
+> Nói thẳng: với phần lớn mục đích thực tế — du học, định cư, xét tuyển — thì
+> 7.5–8.0 đã đủ và 9.0 không đổi được kết quả. Tầng này dành cho người có lý
+> do thật, không dành cho người coi 9.0 là huy chương.
+
+## 📚 Ba hệ tài liệu — nay đã có giao diện
+
+Đề cương, test chuyên sâu và cẩm nang điểm 10 trước đây chỉ tồn tại ở tầng dữ
+liệu, **không thẻ giao diện nào đọc chúng** — nên mở ứng dụng lên không thấy
+gì. Nay cả ba đều có thẻ riêng, cùng với SAT và IELTS 9.0:
+
+| Thẻ | Nội dung |
+|---|---|
+| **Đề cương** | 10 đề cương (2 tuyến × 5 tầng), 146 tuần, 50 đầu ra đo được, 36 ranh giới **KHÔNG dạy** |
+| **Test chuyên sâu** | 4 bài theo thang Bloom 5 bậc; chọn bậc đạt được → chỉ ra bậc gãy và đơn kê |
+| **Cẩm nang điểm 10** | 5 phần thi, 18 mục tách 9 điểm khỏi 10 điểm, 54 cách chặn mất điểm |
+| **SAT** | cấu trúc, 8 miền, 36 dạng, lịch thi, ba tuyến so sánh |
+| **IELTS 9.0** | số học của 9.0 (bấm thử được), biên lỗi Nghe/Đọc, 6 tiêu chí, 5 đường sai |
+
+Hệ thống nay có **44 thẻ** và **39 trang công khai xếp hạng được**. Gói tải
+lần đầu chỉ tăng 3 kB nhờ tải theo nhu cầu.
+
 ## 🔎 Tầng SEO — 34 trang xếp hạng được thay vì 1
 
 ### Vấn đề gốc, nói thẳng

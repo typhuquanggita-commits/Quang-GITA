@@ -31,7 +31,11 @@ console.log('\n  KIỂM THI HÀNH PHÂN QUYỀN\n');
  * không phải để người dùng phát hiện.
  */
 const app = readFileSync('App.tsx', 'utf8');
-const tabTrongApp = [...app.matchAll(/^\s{4}id: '([a-z]+)',$/gm)].map((m) => m[1]);
+// Mã thẻ có thể chứa chữ số và dấu nối — 'ielts9' là một mã thật. Regex cũ
+// chỉ nhận [a-z] nên bỏ sót đúng những thẻ đó, rồi báo "neo quyền cho thẻ
+// không có trong App" cho một thẻ có thật. Đây là lỗi của bộ kiểm, và loại
+// đỏ giả này nguy hiểm vì nó dạy người ta bỏ qua kết quả.
+const tabTrongApp = [...app.matchAll(/^\s{4}id: '([a-z0-9-]+)',$/gm)].map((m) => m[1]);
 const tabKhaiBao = Object.keys(TAB_QUYEN);
 
 tabTrongApp.length >= 30

@@ -173,9 +173,32 @@ async function chay() {
   const vaiSauNap = await run("localStorage.getItem('engwin365.vai.v1')");
   ok('vai lấy lại được từ KÉT sau khi localStorage bị xoá sạch',
      vaiSauNap === 'qt-3', String(vaiSauNap));
+  /*
+   * Không so với một con số gắn cứng.
+   *
+   * Trước đây chỗ này ghi "phải đúng 26 thẻ". Thêm thẻ mới vào hệ thống
+   * là bài kiểm đỏ, mà đỏ vì con số lỗi thời chứ không phải vì phân quyền
+   * hỏng — loại đỏ đó dạy người ta bỏ qua kết quả kiểm.
+   *
+   * Thứ THẬT SỰ phải đúng là quan hệ: SUPER ADMIN mở ít thẻ hơn hẳn tổng
+   * số thẻ, vì vai quản trị không có quyền học thuật. Quan hệ đó đúng bất
+   * kể hệ thống có bao nhiêu thẻ.
+   */
   const soTheSuper = await run("document.querySelectorAll('aside nav [data-tab]').length");
-  ok('vai từ két được thi hành thật — SUPER ADMIN chỉ mở 26 thẻ',
-     soTheSuper === 26, String(soTheSuper));
+  const soTheGv5 = await (async () => {
+    await run("window.engwin.vault.write({vai: 'gv-5'})");
+    wc.reload();
+    await new Promise((r) => wc.once('did-finish-load', r));
+    await new Promise((r) => setTimeout(r, 2500));
+    const n = await run("document.querySelectorAll('aside nav [data-tab]').length");
+    await run("window.engwin.vault.write({vai: 'qt-3'})");
+    wc.reload();
+    await new Promise((r) => wc.once('did-finish-load', r));
+    await new Promise((r) => setTimeout(r, 2500));
+    return n;
+  })();
+  ok('vai từ két được thi hành thật — SUPER ADMIN mở ít thẻ hơn CHỦ NHIỆM CHUYÊN MÔN',
+     soTheSuper > 0 && soTheSuper < soTheGv5, `super ${soTheSuper} / gv5 ${soTheGv5}`);
   ok('SUPER ADMIN KHÔNG thấy thẻ chấm bài trên bản máy tính',
      (await run("document.querySelectorAll('aside nav [data-tab=\"grading\"]').length")) === 0);
 

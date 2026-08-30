@@ -56,11 +56,21 @@ await p.goto(B, {waitUntil: 'networkidle'});
 console.log('\n  KIỂM TIẾP CẬN — WCAG 2.1 mức A và AA\n');
 
 const tabs = await p.$$eval('aside nav [data-tab]', (es) => es.map((e) => e.dataset.tab));
-const CAN_QUET = 39;
+
+/*
+ * Số thẻ cần quét lấy từ CHÍNH bảng phân quyền, không gõ tay.
+ *
+ * Trước đây chỗ này ghi cứng 39. Thêm thẻ mới là bài kiểm đỏ, mà đỏ vì
+ * con số cũ lỗi thời chứ không phải vì có lỗi tiếp cận — loại đỏ đó dạy
+ * người ta bỏ qua bài kiểm. Vai gv-5 mở được mọi thẻ, nên số thẻ trên
+ * thanh điều hướng phải đúng bằng số thẻ đã khai quyền.
+ */
+const {TAB_QUYEN} = await import('../data/phien.ts');
+const CAN_QUET = Object.keys(TAB_QUYEN).length;
 if (tabs.length !== CAN_QUET) {
   console.log(
-    `  ✗ thấy ${tabs.length} mục, cần đủ ${CAN_QUET} — hoặc bộ chọn lỗi thời, ` +
-      `hoặc vai gv-5 không đặt được nên còn thẻ chưa quét\n`,
+    `  ✗ thấy ${tabs.length} mục nhưng bảng phân quyền khai ${CAN_QUET} thẻ — ` +
+      `hoặc bộ chọn lỗi thời, hoặc vai gv-5 không đặt được nên còn thẻ chưa quét\n`,
   );
   await b.close();
   dongXemTruoc(), process.exit(1);

@@ -12,6 +12,11 @@ const Overview = lazy(() => import('./components/engwin/Overview').then((m) => (
 const Roadmap = lazy(() => import('./components/engwin/Roadmap').then((m) => ({default: m.Roadmap})));
 const Methods = lazy(() => import('./components/engwin/Methods').then((m) => ({default: m.Methods})));
 const Drills = lazy(() => import('./components/engwin/Drills').then((m) => ({default: m.Drills})));
+const Sat = lazy(() => import('./components/engwin/Sat').then((m) => ({default: m.Sat})));
+const Ielts9 = lazy(() => import('./components/engwin/Ielts9').then((m) => ({default: m.Ielts9})));
+const DeCuong = lazy(() => import('./components/engwin/DeCuong').then((m) => ({default: m.DeCuong})));
+const BaiTest = lazy(() => import('./components/engwin/BaiTest').then((m) => ({default: m.BaiTest})));
+const CamNang = lazy(() => import('./components/engwin/CamNang').then((m) => ({default: m.CamNang})));
 const Lectures = lazy(() => import('./components/engwin/Lectures').then((m) => ({default: m.Lectures})));
 const Playbooks = lazy(() => import('./components/engwin/Playbooks').then((m) => ({default: m.Playbooks})));
 const Habits = lazy(() => import('./components/engwin/Habits').then((m) => ({default: m.Habits})));
@@ -241,6 +246,46 @@ const NAV: Nav[] = [
     hint: '4 đề trọn vẹn · 58 lời giải',
     group: 'learner',
     render: () => <DeThi />,
+  },
+  {
+    id: 'decuong',
+    icon: '🗂️',
+    label: 'Đề cương',
+    hint: '10 đề cương · 146 tuần',
+    group: 'learner',
+    render: () => <DeCuong />,
+  },
+  {
+    id: 'baitest',
+    icon: '🩺',
+    label: 'Test chuyên sâu',
+    hint: '4 bài · tìm chỗ gãy',
+    group: 'learner',
+    render: () => <BaiTest />,
+  },
+  {
+    id: 'camnang',
+    icon: '📕',
+    label: 'Cẩm nang điểm 10',
+    hint: '5 phần · 54 cách chặn',
+    group: 'learner',
+    render: () => <CamNang />,
+  },
+  {
+    id: 'sat',
+    icon: '🇺🇸',
+    label: 'SAT',
+    hint: '36 dạng · 8 miền · lịch thi',
+    group: 'learner',
+    render: () => <Sat />,
+  },
+  {
+    id: 'ielts9',
+    icon: '🎯',
+    label: 'IELTS 9.0',
+    hint: 'đoạn 8.0 → 9.0',
+    group: 'learner',
+    render: () => <Ielts9 />,
   },
   {
     id: 'lambai',
