@@ -8,6 +8,8 @@
  *   - nhiem-vu.csv                   2000 nhiem vu tuong ung
  *   - phieu-huong-dan-on-chac.csv    30 phieu huong dan on chac chuyen de
  *   - kho-bi-kip.csv                 90 dang bai: doc vi, phuong phap, buoc giai, meo
+ *   - de-mau.csv                     750 dong: 5 de mau x 150 cau, kem dap an va barem
+ *   - de-mau-ma-tran.csv             ma tran cua tung de mau
  *   - chuong-trinh.json              khung chuong trinh day du (may doc)
  *
  * Vi bo phieu duoc SINH RA tu dac ta chu khong go tay, tep xuat ra luon dong bo
@@ -31,6 +33,7 @@ import { buildTopicGuide } from '../src/lib/topicGuide';
 import { knowledgeFor } from '../src/data/knowledge';
 import { TOPICS } from '../src/data/topics';
 import { PLAYBOOKS } from '../src/data/playbook';
+import { MOCK_EXAMS, buildPaper } from '../src/data/mockExams';
 import { createInitialState } from '../src/lib/storage';
 import { SECTION_BY_ID, SUBJECT_NAME } from '../src/config';
 
@@ -189,6 +192,58 @@ writeFileSync(
         secret.title,
         secret.body,
         secret.when,
+      ]);
+    }),
+  ),
+  'utf8',
+);
+
+/* De mau tron ven — moi dong la mot cau trong mot de, kem dap an va barem. */
+writeFileSync(
+  join(OUT, 'de-mau.csv'),
+  toCsv(
+    [
+      'Mã đề', 'Tên đề', 'Câu số', 'Phần thi', 'Câu trong phần', 'Chuyên đề',
+      'Mức độ', 'Dạng câu', 'Đề bài', 'Phương án', 'Đáp án', 'Điểm',
+      'Thời gian mục tiêu (giây)', 'Lời giải',
+    ],
+    MOCK_EXAMS.flatMap((exam) => {
+      const paper = buildPaper(exam.code);
+      return (paper?.items ?? []).map((item) => [
+        exam.code,
+        exam.name,
+        item.number,
+        SECTION_BY_ID[item.section].shortName,
+        item.numberInSection,
+        item.topicName,
+        item.question.difficulty,
+        item.question.format === 'mcq' ? 'Trắc nghiệm' : 'Điền đáp án',
+        item.question.stem,
+        (item.question.choices ?? []).map((c) => `${c.id}. ${c.text}`).join(' | '),
+        item.question.answer,
+        item.points,
+        item.question.estimatedSeconds,
+        item.question.explanation,
+      ]);
+    }),
+  ),
+  'utf8',
+);
+
+/* Ma tran cua tung de mau: so cau moi chuyen de theo tung muc do kho. */
+writeFileSync(
+  join(OUT, 'de-mau-ma-tran.csv'),
+  toCsv(
+    ['Mã đề', 'Phần thi', 'Chuyên đề', 'Mức 1', 'Mức 2', 'Mức 3', 'Mức 4', 'Mức 5', 'Tổng'],
+    MOCK_EXAMS.flatMap((exam) => {
+      const paper = buildPaper(exam.code);
+      return (paper?.matrix ?? []).map((row) => [
+        exam.code,
+        SECTION_BY_ID[row.section].shortName,
+        row.topicName,
+        row.byDifficulty[1], row.byDifficulty[2], row.byDifficulty[3],
+        row.byDifficulty[4], row.byDifficulty[5],
+        row.total,
       ]);
     }),
   ),

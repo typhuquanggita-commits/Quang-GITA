@@ -1,0 +1,91 @@
+﻿Mã đề,Phần thi,Chuyên đề,Mức 1,Mức 2,Mức 3,Mức 4,Mức 5,Tổng
+DM-HSA-01-VL,Toán,"Hàm số, phương trình & bất phương trình",0,2,6,0,0,8
+DM-HSA-01-VL,Toán,"Đạo hàm, tích phân & khảo sát hàm số",0,3,4,0,0,7
+DM-HSA-01-VL,Toán,Hình học phẳng & không gian,0,1,6,0,0,7
+DM-HSA-01-VL,Toán,Thống kê & xử lý số liệu,0,4,2,1,0,7
+DM-HSA-01-VL,Toán,Số học & tỉ lệ phần trăm,0,1,4,0,0,5
+DM-HSA-01-VL,Toán,Tổ hợp & xác suất,0,3,2,0,0,5
+DM-HSA-01-VL,Toán,Hình học tọa độ,0,2,2,0,0,4
+DM-HSA-01-VL,Toán,Mũ & logarit,0,2,2,0,0,4
+DM-HSA-01-VL,Toán,"Dãy số, cấp số cộng & cấp số nhân",0,3,0,0,0,3
+DM-HSA-01-VL,Văn,Đọc hiểu văn bản,0,3,10,1,0,14
+DM-HSA-01-VL,Văn,"Tác giả, tác phẩm & giai đoạn văn học",0,4,5,0,0,9
+DM-HSA-01-VL,Văn,Ngữ pháp & lỗi sai trong câu,0,4,4,0,0,8
+DM-HSA-01-VL,Văn,Từ vựng & nghĩa của từ,0,3,4,0,0,7
+DM-HSA-01-VL,Văn,Suy luận ngôn ngữ & liên kết ý,0,1,5,0,0,6
+DM-HSA-01-VL,Văn,Biện pháp tu từ & phong cách,0,2,4,0,0,6
+DM-HSA-01-VL,Khoa học,Cơ học,3,6,3,1,0,13
+DM-HSA-01-VL,Khoa học,Lượng tử & hạt nhân,1,5,5,2,0,13
+DM-HSA-01-VL,Khoa học,Dao động & sóng,2,4,5,1,0,12
+DM-HSA-01-VL,Khoa học,Điện & từ,2,3,6,1,0,12
+DM-HSA-02-HH,Toán,"Hàm số, phương trình & bất phương trình",0,1,7,0,0,8
+DM-HSA-02-HH,Toán,"Đạo hàm, tích phân & khảo sát hàm số",0,2,5,0,0,7
+DM-HSA-02-HH,Toán,Hình học phẳng & không gian,0,3,4,0,0,7
+DM-HSA-02-HH,Toán,Thống kê & xử lý số liệu,0,5,2,0,0,7
+DM-HSA-02-HH,Toán,Số học & tỉ lệ phần trăm,0,1,4,0,0,5
+DM-HSA-02-HH,Toán,Tổ hợp & xác suất,0,2,3,0,0,5
+DM-HSA-02-HH,Toán,Hình học tọa độ,0,2,2,0,0,4
+DM-HSA-02-HH,Toán,Mũ & logarit,0,3,1,0,0,4
+DM-HSA-02-HH,Toán,"Dãy số, cấp số cộng & cấp số nhân",0,1,2,0,0,3
+DM-HSA-02-HH,Văn,Đọc hiểu văn bản,0,3,10,1,0,14
+DM-HSA-02-HH,Văn,"Tác giả, tác phẩm & giai đoạn văn học",0,3,6,0,0,9
+DM-HSA-02-HH,Văn,Ngữ pháp & lỗi sai trong câu,0,3,5,0,0,8
+DM-HSA-02-HH,Văn,Từ vựng & nghĩa của từ,0,4,3,0,0,7
+DM-HSA-02-HH,Văn,Biện pháp tu từ & phong cách,0,3,3,0,0,6
+DM-HSA-02-HH,Văn,Suy luận ngôn ngữ & liên kết ý,0,0,6,0,0,6
+DM-HSA-02-HH,Khoa học,Hóa vô cơ,1,8,8,1,0,18
+DM-HSA-02-HH,Khoa học,Hóa hữu cơ,2,5,8,2,0,17
+DM-HSA-02-HH,Khoa học,Hóa đại cương,3,4,7,1,0,15
+DM-HSA-03-LS,Toán,"Hàm số, phương trình & bất phương trình",0,2,6,0,0,8
+DM-HSA-03-LS,Toán,"Đạo hàm, tích phân & khảo sát hàm số",0,2,5,0,0,7
+DM-HSA-03-LS,Toán,Hình học phẳng & không gian,0,4,3,0,0,7
+DM-HSA-03-LS,Toán,Thống kê & xử lý số liệu,0,4,2,1,0,7
+DM-HSA-03-LS,Toán,Số học & tỉ lệ phần trăm,0,3,2,0,0,5
+DM-HSA-03-LS,Toán,Tổ hợp & xác suất,0,4,1,0,0,5
+DM-HSA-03-LS,Toán,Hình học tọa độ,0,3,1,0,0,4
+DM-HSA-03-LS,Toán,Mũ & logarit,0,2,2,0,0,4
+DM-HSA-03-LS,Toán,"Dãy số, cấp số cộng & cấp số nhân",0,2,1,0,0,3
+DM-HSA-03-LS,Văn,Đọc hiểu văn bản,0,3,10,1,0,14
+DM-HSA-03-LS,Văn,"Tác giả, tác phẩm & giai đoạn văn học",0,4,5,0,0,9
+DM-HSA-03-LS,Văn,Ngữ pháp & lỗi sai trong câu,0,3,5,0,0,8
+DM-HSA-03-LS,Văn,Từ vựng & nghĩa của từ,0,2,5,0,0,7
+DM-HSA-03-LS,Văn,Biện pháp tu từ & phong cách,0,3,3,0,0,6
+DM-HSA-03-LS,Văn,Suy luận ngôn ngữ & liên kết ý,0,0,6,0,0,6
+DM-HSA-03-LS,Khoa học,Lịch sử Việt Nam,3,9,13,0,0,25
+DM-HSA-03-LS,Khoa học,Lịch sử thế giới,1,9,15,0,0,25
+DM-HSA-04-DL,Toán,"Hàm số, phương trình & bất phương trình",0,3,5,0,0,8
+DM-HSA-04-DL,Toán,"Đạo hàm, tích phân & khảo sát hàm số",0,3,4,0,0,7
+DM-HSA-04-DL,Toán,Hình học phẳng & không gian,0,4,3,0,0,7
+DM-HSA-04-DL,Toán,Thống kê & xử lý số liệu,0,4,2,1,0,7
+DM-HSA-04-DL,Toán,Số học & tỉ lệ phần trăm,0,2,3,0,0,5
+DM-HSA-04-DL,Toán,Tổ hợp & xác suất,0,4,1,0,0,5
+DM-HSA-04-DL,Toán,Hình học tọa độ,0,2,2,0,0,4
+DM-HSA-04-DL,Toán,Mũ & logarit,0,2,2,0,0,4
+DM-HSA-04-DL,Toán,"Dãy số, cấp số cộng & cấp số nhân",0,2,1,0,0,3
+DM-HSA-04-DL,Văn,Đọc hiểu văn bản,0,3,10,1,0,14
+DM-HSA-04-DL,Văn,"Tác giả, tác phẩm & giai đoạn văn học",0,4,5,0,0,9
+DM-HSA-04-DL,Văn,Ngữ pháp & lỗi sai trong câu,0,4,4,0,0,8
+DM-HSA-04-DL,Văn,Từ vựng & nghĩa của từ,0,2,5,0,0,7
+DM-HSA-04-DL,Văn,Biện pháp tu từ & phong cách,0,3,3,0,0,6
+DM-HSA-04-DL,Văn,Suy luận ngôn ngữ & liên kết ý,0,0,6,0,0,6
+DM-HSA-04-DL,Khoa học,Địa lý tự nhiên,2,8,9,0,0,19
+DM-HSA-04-DL,Khoa học,Địa lý kinh tế — xã hội,1,8,9,0,0,18
+DM-HSA-04-DL,Khoa học,"Bảng số liệu, biểu đồ & Atlat",0,8,5,0,0,13
+DM-HSA-05-TA,Toán,"Hàm số, phương trình & bất phương trình",0,3,5,0,0,8
+DM-HSA-05-TA,Toán,"Đạo hàm, tích phân & khảo sát hàm số",0,2,5,0,0,7
+DM-HSA-05-TA,Toán,Hình học phẳng & không gian,0,5,2,0,0,7
+DM-HSA-05-TA,Toán,Thống kê & xử lý số liệu,0,4,2,1,0,7
+DM-HSA-05-TA,Toán,Số học & tỉ lệ phần trăm,0,3,2,0,0,5
+DM-HSA-05-TA,Toán,Tổ hợp & xác suất,0,3,2,0,0,5
+DM-HSA-05-TA,Toán,Hình học tọa độ,0,3,1,0,0,4
+DM-HSA-05-TA,Toán,Mũ & logarit,0,1,3,0,0,4
+DM-HSA-05-TA,Toán,"Dãy số, cấp số cộng & cấp số nhân",0,2,1,0,0,3
+DM-HSA-05-TA,Văn,Đọc hiểu văn bản,0,3,10,1,0,14
+DM-HSA-05-TA,Văn,"Tác giả, tác phẩm & giai đoạn văn học",0,4,5,0,0,9
+DM-HSA-05-TA,Văn,Ngữ pháp & lỗi sai trong câu,0,3,5,0,0,8
+DM-HSA-05-TA,Văn,Từ vựng & nghĩa của từ,0,2,5,0,0,7
+DM-HSA-05-TA,Văn,Suy luận ngôn ngữ & liên kết ý,0,1,5,0,0,6
+DM-HSA-05-TA,Văn,Biện pháp tu từ & phong cách,0,3,3,0,0,6
+DM-HSA-05-TA,Khoa học,Grammar & Structure,0,6,10,1,0,17
+DM-HSA-05-TA,Khoa học,Vocabulary & Collocation,0,7,9,1,0,17
+DM-HSA-05-TA,Khoa học,Reading Comprehension,0,3,11,2,0,16

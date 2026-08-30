@@ -17,6 +17,9 @@ const PlacementPage = lazy(() =>
 const BrandPage = lazy(() =>
   import('./features/brand/BrandPage').then((m) => ({ default: m.BrandPage })),
 );
+const PaperPage = lazy(() =>
+  import('./features/paper/PaperPage').then((m) => ({ default: m.PaperPage })),
+);
 const ExamPage = lazy(() => import('./features/exam/ExamPage').then((m) => ({ default: m.ExamPage })));
 const PracticePage = lazy(() =>
   import('./features/practice/PracticePage').then((m) => ({ default: m.PracticePage })),
@@ -65,6 +68,8 @@ function Routes({ path }: { path: string }) {
       return <DashboardPage />;
     case '/placement':
       return <PlacementPage />;
+    case '/paper':
+      return <PaperPage />;
     case '/exam':
       return <ExamPage />;
     case '/practice':

@@ -12,7 +12,15 @@ import {
 } from './sciences';
 import { chemistryQuestions2, physicsQuestions2 } from './sciences-2';
 import { geographyQuestions2, historyQuestions2 } from './sciences-3';
+import { chemistryQuestions3, geographyQuestions3, historyQuestions3 } from './sciences-4';
+import {
+  chemistryQuestions4,
+  geographyQuestions4,
+  historyQuestions4,
+  physicsQuestions3,
+} from './sciences-5';
 import { englishQuestions2 } from './english-2';
+import { englishQuestions3 } from './english-3';
 
 export const ALL_QUESTIONS: readonly Question[] = [
   ...quantitativeQuestions,
@@ -21,14 +29,22 @@ export const ALL_QUESTIONS: readonly Question[] = [
   ...qualitativeQuestions2,
   ...physicsQuestions,
   ...physicsQuestions2,
+  ...physicsQuestions3,
   ...chemistryQuestions,
   ...chemistryQuestions2,
+  ...chemistryQuestions3,
+  ...chemistryQuestions4,
   ...historyQuestions,
   ...historyQuestions2,
+  ...historyQuestions3,
+  ...historyQuestions4,
   ...geographyQuestions,
   ...geographyQuestions2,
+  ...geographyQuestions3,
+  ...geographyQuestions4,
   ...englishQuestions,
   ...englishQuestions2,
+  ...englishQuestions3,
 ];
 
 const BY_ID = new Map(ALL_QUESTIONS.map((q) => [q.id, q]));

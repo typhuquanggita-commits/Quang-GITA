@@ -45,7 +45,7 @@ Các lệnh khác:
 
 ```bash
 npm run verify       # typecheck + toàn bộ test + build
-npm run test         # 222 bài test
+npm run test         # 236 bài test
 npm run build        # dựng bản phát hành vào dist/
 npm run preview      # xem thử bản đã dựng
 npm run catalogue    # xuất 2000 phiếu + 2000 nhiệm vụ + 30 phiếu hướng dẫn ra catalogue/*.csv
@@ -153,6 +153,33 @@ phát từ cùng một điểm mặc định — nghĩa là người mới, ngư
 Hai giới hạn được tuyên bố thẳng trên màn hình thay vì giấu đi: bài này định vị ở mức
 **phần thi, không phải từng chuyên đề** (12 câu không đủ định vị 10 chuyên đề riêng biệt),
 và nó chỉ xếp tới **tối đa cấp 4** — cấp cao hơn phải chứng minh bằng phiếu thật.
+
+### Đề mẫu trọn vẹn kèm barem
+
+Hệ thống vẫn sinh được đề thi thử từ ma trận — nhưng **ma trận không phải đề**. Một ma trận
+nói "35 câu trắc nghiệm, 15 câu điền, độ khó phân bố thế này"; một đề mẫu là một **văn bản
+cụ thể**: có mã số, thứ tự câu cố định, có đáp án và có barem — thứ giáo viên in ra phát
+cho cả lớp, và hai người đọc thì thấy đúng một nội dung.
+
+**Năm đề mẫu chính thức**, mỗi môn tự chọn của phần 3 một đề, mỗi đề **150 câu / 195 phút /
+thang 150 điểm**. Bốn chế độ xem, và thứ tự của chúng có chủ ý — *Đề thi* đứng trước *Đáp
+án*, vì một tài liệu mở ra là thấy đáp án thì không còn là đề thi nữa:
+
+| Chế độ | Nội dung |
+|---|---|
+| **Đề thi** | Không có đáp án. In ra là làm được. |
+| **Ma trận** | Số câu mỗi chuyên đề theo từng mức độ khó |
+| **Đáp án & barem** | Bảng tra nhanh + luật chấm + thang xếp loại |
+| **Lời giải** | Đầy đủ, kèm bẫy từng phương án và đọc vị dạng bài |
+
+Barem không chỉ liệt kê luật mà **nêu hệ quả của từng luật** — vì luật chấm quyết định
+chiến thuật làm bài: *không trừ điểm câu sai* nghĩa là bỏ trống không bao giờ lợi hơn đoán;
+*mọi câu đều 1 điểm* nghĩa là quỳ ở một câu khó để mất ba câu dễ là lỗ nặng.
+
+Đề vẫn **sinh từ đặc tả** chứ không gõ tay 750 câu, cùng lý do với 2.000 phiếu: gõ tay thì
+không kiểm được tính nhất quán với ma trận. Nhưng mỗi mã đề dùng một **hạt giống cố định**,
+nên cùng một mã luôn cho ra đúng một đề trên mọi máy, và thêm câu vào ngân hàng không làm
+xáo trộn đề đã phát.
 
 ### Kho bí kíp — tầng sâu của bộ giải đề
 
@@ -270,7 +297,7 @@ src/
   store/                 Reducer + context, mọi thay đổi trạng thái đi qua đây
   components/            Hệ thống thiết kế, biểu đồ SVG tự vẽ, khung ứng dụng
   features/              Từng màn hình
-tests/                   222 bài test cho toàn bộ tầng lib, data và giao diện
+tests/                   236 bài test cho toàn bộ tầng lib, data và giao diện
 ```
 
 Nguyên tắc: **mọi quy tắc nghiệp vụ nằm trong `lib/` dưới dạng hàm thuần** — chấm
@@ -295,7 +322,7 @@ Chi tiết: [`docs/KIEN-TRUC.md`](docs/KIEN-TRUC.md).
 
 - **TypeScript nghiêm ngặt** — bật `strict`, `noUncheckedIndexedAccess`,
   `exactOptionalPropertyTypes`, `noUnusedLocals`. Không có `any` trong mã sản phẩm.
-- **222 bài test** phủ chấm điểm, chuẩn hóa đáp án, mô hình Rasch, ôn tập ngắt quãng,
+- **236 bài test** phủ chấm điểm, chuẩn hóa đáp án, mô hình Rasch, ôn tập ngắt quãng,
   di trú dữ liệu, phân quyền, tiến độ, tính toàn vẹn ngân hàng câu hỏi và khung
   chương trình, mô thức GITA và quy tắc 20/80, cộng với test giao diện đầu-cuối.
 - **Không có màn hình trắng** — `ErrorBoundary` ở gốc bắt mọi lỗi hiển thị và đưa ra
