@@ -1,5 +1,5 @@
 # KHỐI 9 – CHƯƠNG TRÌNH CHI TIẾT 24 CHUYÊN ĐỀ
-### Giai đoạn **VƯƠN CÀNH** 🌳 · Đai mục tiêu: **Đai Đỏ** (cuối năm)
+### Giai đoạn **VƯƠN CÀNH** 🌳 · Cấp Độ mục tiêu: **Pin Đỏ** (cuối năm)
 ### Tuyên ngôn khối: *"Con biết mình là ai, giỏi gì, và chọn con đường tiếp theo có căn cứ"*
 
 ---

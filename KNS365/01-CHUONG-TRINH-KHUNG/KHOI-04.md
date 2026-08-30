@@ -368,6 +368,7 @@
 > 🔴 **Cụm này KHÔNG thay khoá bơi an toàn.** Nội dung ở đây là **quy tắc và ứng xử**, không phải kỹ năng bơi. Trường có điều kiện nên tổ chức khoá bơi riêng do huấn luyện viên bơi phụ trách.
 > 🔴 **Dạy nguyên văn: trẻ em KHÔNG cứu người đuối nước bằng cách nhảy xuống.** Ba việc trẻ làm: **gọi to người lớn · ném vật nổi · không xuống nước**. Đây là nội dung cứu mạng, không được rút gọn.
 > ⚠️ **Không dùng tin tức, ảnh, video thật về vụ bắt cóc hay đuối nước.**
+> 🔴 **Neo an toàn của cụm:** nhắc **hotline 111** và **115** ở phần chốt. Nếu học sinh kể đã từng bị dụ dỗ, chuyển theo [phác đồ](../16-KHO-TINH-HUONG-VA-CONG-CU/06-PHAC-DO-XU-LY-CHUAN.md) ngay trong ngày.
 
 ---
 

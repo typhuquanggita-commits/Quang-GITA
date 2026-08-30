@@ -1,5 +1,5 @@
 # KHỐI 7 – CHƯƠNG TRÌNH CHI TIẾT 24 CHUYÊN ĐỀ
-### Giai đoạn **VƯƠN CÀNH** 🌳 · Đai mục tiêu: **Đai Xanh Dương** (cuối năm)
+### Giai đoạn **VƯƠN CÀNH** 🌳 · Cấp Độ mục tiêu: **Pin Xanh Dương** (cuối năm)
 ### Tuyên ngôn khối: *"Con có bản sắc riêng và dẫn được một nhóm"*
 
 ---

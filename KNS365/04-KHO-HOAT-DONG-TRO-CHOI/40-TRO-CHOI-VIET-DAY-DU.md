@@ -2013,7 +2013,7 @@
 
 **Mục tiêu — vi kỹ năng rèn:**
 - **Nhìn thấy công nhận công khai cho những thứ đúng** — tiến bộ, giúp đỡ, giữ chuỗi — thay vì chỉ cho thành tích cao nhất.
-- **Học sinh yếu vẫn có đường vào bảng vàng**, qua cột Tiến Bộ.
+- **Học sinh xuất phát thấp vẫn có đường vào bảng vàng**, qua cột Tiến Bộ.
 - Neo thông điệp: **cố gắng có địa chỉ, không tan vào không khí.**
 
 **Cách chơi**

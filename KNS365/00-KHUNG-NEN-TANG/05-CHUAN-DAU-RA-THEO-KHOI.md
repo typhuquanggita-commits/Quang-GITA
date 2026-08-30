@@ -42,7 +42,7 @@
 | 9 | Duy trì **2 thói quen 21 ngày**, trong đó có 1 thói quen đọc sách |
 | 10 | Nói được **mục tiêu của mình cho buổi học** và cuối buổi tự chấm đã đạt hay chưa |
 
-**⭐ Chuẩn xuất sắc:** Đạt **Đai Trắng**; chủ động giúp bạn hoàn thành phần việc nhóm; thời gian tập trung liên tục ≥15 phút.
+**⭐ Chuẩn xuất sắc:** Đạt **Cấp 1 ⚪ Pin Trắng**; chủ động giúp bạn hoàn thành phần việc nhóm; thời gian tập trung liên tục ≥15 phút.
 **📁 Bằng chứng:** Thời gian biểu tự lập · Nhật ký đọc sách · Video kể chuyện 90 giây · Phiếu đánh giá nhóm.
 
 ---

@@ -302,6 +302,7 @@
 **Phiếu:** `PTH-K01-N3-03` · **Sứ mệnh:** `PSM-K01-N3-03` · **Rubric:** `R-ATT-01`
 **Bắc cầu:** `K01-N3-02` · `K02-N3-07`.
 > ⚠️ **Không dùng ảnh, video, tin tức có thật về vụ bắt cóc.** Chỉ dùng rối và hình vẽ. Mục tiêu là **phản xạ**, không phải **nỗi sợ**.
+> 🔴 **Neo an toàn của cụm:** cuối buổi 2, HLV nhắc lại **hotline 111** và chỉ rõ **ai trong trường** trẻ tìm được khi bị lạc. Nếu trẻ kể đã từng bị người lạ tiếp cận, chuyển theo [phác đồ](../16-KHO-TINH-HUONG-VA-CONG-CU/06-PHAC-DO-XU-LY-CHUAN.md) ngay trong ngày.
 
 ---
 

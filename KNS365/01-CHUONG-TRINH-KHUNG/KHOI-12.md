@@ -1,5 +1,5 @@
 # KHỐI 12 – CHƯƠNG TRÌNH CHI TIẾT 24 CHUYÊN ĐỀ
-### Giai đoạn **CẤT CÁNH** 🚀 · Đai mục tiêu: **ĐAI KIM** (tốt nghiệp KNSGITA)
+### Giai đoạn **CẤT CÁNH** 🚀 · Cấp Độ mục tiêu: **ĐAI KIM** (tốt nghiệp KNSGITA)
 ### Tuyên ngôn khối: *"Con sẵn sàng cất cánh: có đích đời, có năng lực chứng minh được, có trách nhiệm với cộng đồng"*
 
 ---

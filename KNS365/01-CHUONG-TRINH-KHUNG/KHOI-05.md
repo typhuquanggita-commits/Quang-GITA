@@ -322,6 +322,7 @@
 **Bắc cầu:** nối `K02-N3-07` · `K04-N3-03`.
 > 🔴 **Nguyên tắc phải dạy nguyên văn: giữ mạng trước, giữ đồ sau.** *"Điện thoại mua lại được. Em thì không."* Cấm mọi nội dung dạy trẻ chống trả, giằng co, hoặc đuổi theo.
 > 🔴 **Không mô phỏng đám đông bằng cách xô đẩy học sinh thật.** Dùng mô hình, sơ đồ, và di chuyển chậm có kiểm soát. **Không dùng đạo cụ giống vũ khí** trong kịch.
+> 🔴 **Neo an toàn của cụm:** nhắc **hotline 111** và **113** ở phần chốt. Nếu học sinh kể đã từng bị trấn lột, đây là **tình huống bảo vệ trẻ em** — chuyển theo [phác đồ](../16-KHO-TINH-HUONG-VA-CONG-CU/06-PHAC-DO-XU-LY-CHUAN.md) ngay trong ngày, **không xử lý nội bộ giữa học sinh với nhau**.
 
 ---
 

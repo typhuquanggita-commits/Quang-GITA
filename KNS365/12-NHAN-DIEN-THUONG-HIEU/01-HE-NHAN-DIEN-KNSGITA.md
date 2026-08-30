@@ -390,7 +390,7 @@
 |---|---|
 | *"Em phải cố gắng hơn"* | *"Lần này con chỉ chỉnh một điều: ……"* |
 | *"Bài này rất quan trọng"* | *"Kỹ năng này dùng ngay ở …, đo bằng …"* |
-| *"Học sinh yếu"* | *"Học sinh đang ở mức Khởi Mở"* |
+| *"Học sinh yếu"* | *"Học sinh đang ở bậc ◔ B1 – Biết"* |
 | *"Chương trình đẳng cấp quốc tế"* | *"Đối sánh với CASEL, OECD 2030, UNESCO LSCE — bảng đối chiếu ở phân hệ 00"* |
 | *"Giúp con thành công"* | *"Sau 12 tuần, con làm được …, bằng chứng là …"* |
 | *"Con giỏi lắm!"* | *"Con nói KHÔNG rất to — cô đứng cách 5 mét vẫn nghe rõ."* |

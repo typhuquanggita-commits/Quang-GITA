@@ -437,6 +437,7 @@
 **Phiếu:** `PTH-K02-N3-07` · **Sứ mệnh:** `PSM-K02-N3-07` · **Rubric:** `R-ATT-01`
 **Bắc cầu:** nối `K01-N3-03` · `K02-N3-02`.
 > ⚠️ **Không dùng ảnh, video, tin tức có thật về vụ bắt cóc.** Chỉ dùng rối và sơ đồ. Mục tiêu là **phản xạ**, không phải **nỗi sợ**. Kết buổi phải để trẻ về trong trạng thái **tự tin**, không phải cảnh giác quá mức.
+> 🔴 **Neo an toàn của cụm:** nhắc **hotline 111** ở phần chốt. Nếu trẻ kể đã từng bị người lạ tiếp cận hoặc từng đi lạc mà không ai biết, chuyển theo [phác đồ](../16-KHO-TINH-HUONG-VA-CONG-CU/06-PHAC-DO-XU-LY-CHUAN.md).
 
 ---
 

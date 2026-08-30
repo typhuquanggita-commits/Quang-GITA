@@ -88,6 +88,7 @@
 **Phiếu:** `PTH-K06-N1-02` · **Sứ mệnh:** `PSM-K06-N1-02` · **Rubric:** `R-SKH-01`
 **Bắc cầu:** nối `K04-N3-02` · `K05-N1-02` · nền cho khối 8.
 > 🔴 **Năm quy tắc bắt buộc:** ① dạy chung phần khái quát, **tách nhóm chỉ khi nói vệ sinh riêng từng giới — thời lượng hai nhóm phải bằng nhau** ② **hộp câu hỏi ẩn danh là bắt buộc** ③ **dùng đúng tên bộ phận cơ thể**, không dùng từ lóng ④ **cấm mọi lời trêu chọc về cơ thể** trong và sau buổi ⑤ **gửi trước nội dung cho phụ huynh**, có phương án cho gia đình muốn tự dạy ở nhà.
+> 🔴 **Neo an toàn của cụm:** nếu câu hỏi trong hộp ẩn danh hé lộ dấu hiệu bị xâm hại, bị ép, hoặc lo âu nặng, HLV **không trả lời trước lớp** — tách riêng và chuyển theo [phác đồ](../16-KHO-TINH-HUONG-VA-CONG-CU/06-PHAC-DO-XU-LY-CHUAN.md). Nhắc **hotline 111** ở phần chốt.
 
 ---
 
@@ -434,6 +435,7 @@
 **Bắc cầu:** nối `K05-N3-06` · `K06-N4-04` · nền cho `CT-29` và `CT-30` ở khối 8.
 > ⚠️ **Không so sánh số phút dùng giữa các học sinh.** Chỉ so **em với chính em tuần trước**.
 > ⚠️ **Không cấm, không phán xét nền tảng học sinh dùng.** Dạy **nhận diện cơ chế** — học sinh tự quyết định. Cấm đoán mù quáng khiến các em giấu, và giấu thì không ai giúp được.
+> 🔴 **Neo an toàn của cụm:** nếu học sinh kể bị quấy rối, bị doạ, hoặc bị người lạ tiếp cận trên mạng, chuyển theo [phác đồ](../16-KHO-TINH-HUONG-VA-CONG-CU/06-PHAC-DO-XU-LY-CHUAN.md) ngay trong ngày. Công bố **hotline 111** và nút báo cáo của nền tảng ở phần chốt.
 
 ---
 
@@ -497,6 +499,7 @@
 **Bắc cầu:** nối `K05-N3-06` · `K06-N4-01` · nền cho `CT-30` ở khối 8.
 > 🔴 **Không yêu cầu học sinh mở tài khoản thật trước lớp**, không nhìn màn hình riêng của học sinh. Rà bằng **mô phỏng giao diện** hoặc **học sinh tự rà ở nhà** theo phiếu.
 > 🔴 **Không yêu cầu học sinh nhập mật khẩu vào bất kỳ đâu** trong hoạt động lớp.
+> 🔴 **Neo an toàn của cụm:** nếu khi rà tài khoản học sinh phát hiện mình đã bị lộ thông tin, bị mạo danh, hoặc bị người lạ theo dõi, chuyển theo [phác đồ](../16-KHO-TINH-HUONG-VA-CONG-CU/06-PHAC-DO-XU-LY-CHUAN.md). Nhắc **hotline 111**.
 
 ---
 

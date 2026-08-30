@@ -25,7 +25,7 @@
 | **Chỉ số 3T mục tiêu** | Tập trung `[..]` phút · Tốc độ `[...]` · Trội `[...]` |
 | **Cấp độ hành động** | `[A1/A2/A3/A4]` |
 | **3 thói quen chủ lực** | ① `[...]` ② `[...]` ③ `[...]` |
-| **Đai mục tiêu** | `[...]` |
+| **Cấp Độ mục tiêu** | `[...]` |
 
 ### KPI năm học của khối
 
