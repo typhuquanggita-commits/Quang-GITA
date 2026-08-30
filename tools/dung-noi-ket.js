@@ -152,9 +152,50 @@ for (const p of (G.PHACDO || [])) {
   pd[p.ma] = { kb, ch, tg, nhom: p.nhom };
 }
 
+/* ═══════════ ÁNH XẠ 50 NHÓM TÌNH HUỐNG → 10 CHỦ ĐỀ ═══════════
+   G.TH_SAU viết chiều sâu theo 10 chủ đề, còn 250 tình huống chia 50
+   nhóm (5 tầng × 10). Bảng ánh xạ nằm trong chú thích đầu tệp
+   data.chieu-sau.tinhhuong.js — chú thích thì người đọc được, máy thì
+   không. Chép sang đây thành dữ liệu để giao diện gắn được chiều sâu
+   vào từng tình huống, và để bài kiểm soi được có nhóm nào rơi ra
+   ngoài không.
+
+   Khoá: TẦNG-KÝ HIỆU NHÓM. Ký hiệu lấy từ đầu tên nhóm: T1 dùng chữ
+   cái (A..J), T2..T5 dùng số (1..10). */
+const CHUDE = {
+  TQ_TUQUAN:     ['T1-A','T1-E','T2-1','T3-1','T4-1','T5-3','T5-4','T5-7'],
+  TG_THOIGIAN:   ['T1-B','T2-2','T3-2','T4-2'],
+  TT_TAPTRUNG:   ['T1-C','T2-3','T3-3'],
+  PP_PHUONGPHAP: ['T1-D','T2-4','T3-4','T4-3','T5-5'],
+  DL_DONGLUC:    ['T1-F','T2-5','T3-5','T4-5','T5-1'],
+  TC_TUTIN:      ['T1-G','T2-6','T3-6','T4-6','T5-6'],
+  PH_PHUHUYNH:   ['T1-H','T2-7','T3-7','T4-7','T5-2'],
+  HT_HOCTHUAT:   ['T1-I','T2-8','T3-8','T4-4'],
+  DM_DIEMMANH:   ['T1-J','T2-9','T3-9','T4-8','T4-9','T5-8','T5-9'],
+  TH_TONGHOP:    ['T2-10','T3-10','T4-10','T5-10']
+};
+const TRA = {};
+for (const k of Object.keys(CHUDE)) for (const x of CHUDE[k]) TRA[x] = k;
+
+/* Rút ký hiệu nhóm từ tên nhóm. T1 ghi "A. NHÓM …" hoặc "NHÓM TRƯỜNG …"
+   (nhóm I mất chữ cái ở đầu); T2..T5 ghi "NHÓM 3." hoặc "NHÓM 3 –". */
+function kyHieu(tang, ten) {
+  const t = String(ten || '').trim();
+  if (tang === 'T1') {
+    const m = t.match(/^([A-J])[.\s]/);
+    if (m) return 'T1-' + m[1];
+    /* Nhóm trường học – bạn bè – môi trường: bản gốc thiếu chữ I ở đầu */
+    if (/TRƯỜNG HỌC/i.test(t)) return 'T1-I';
+    return null;
+  }
+  const m = t.match(/NHÓM\s*(\d+)/i);
+  return m ? tang + '-' + m[1] : null;
+}
+
 /* ═══════════ NỐI TÌNH HUỐNG ═══════════ */
 const th = {};
 let tCoKB = 0, tCoCH = 0;
+const roiNgoai = [];
 for (const t of (G.TINHHUONG || [])) {
   const id = t.tang + '-' + t.stt;
   const tu = tach([t.th, t.mo, t.pt, t.chot, t.gp].join(' '));
@@ -163,7 +204,10 @@ for (const t of (G.TINHHUONG || [])) {
   if (!kb.length) kb = topN(tu, KB, setKB, idfKB, 3, NGUONG_KB);
   const ch = topN(tu, CH, setCH, idfCH, 3, NGUONG_CH);
   if (kb.length) tCoKB++; if (ch.length) tCoCH++;
-  th[id] = { kb, ch, tang: t.tang, nhom: t.nhom };
+  const kh = kyHieu(t.tang, t.nhom);
+  const cd = kh ? TRA[kh] : null;
+  if (!cd) roiNgoai.push(t.tang + ' · ' + t.nhom);
+  th[id] = { kb, ch, tang: t.tang, nhom: t.nhom, chuDe: cd || null };
 }
 
 /* ═══════════ GHI RA ═══════════ */
@@ -188,6 +232,7 @@ const ra =
   'G.NOI_KET = {\n  luc:' + JSON.stringify(new Date().toISOString().slice(0, 10)) + ',\n' +
   '  nguong:{kb:' + NGUONG_KB + ', ch:' + NGUONG_CH + ', tg:' + NGUONG_TG + '},\n' +
   '  pd:' + JSON.stringify(pd) + ',\n' +
+  '  chuDe:' + JSON.stringify(CHUDE) + ',\n' +
   '  th:' + JSON.stringify(th) + '\n};\n';
 
 fs.writeFileSync(path.join(NGUON, 'data.noi-ket.js'), ra);
@@ -200,5 +245,13 @@ console.log('  có người thật    ' + n(coTG, G.PHACDO.length));
 console.log('TÌNH HUỐNG ' + (G.TINHHUONG || []).length + ' cái');
 console.log('  có kịch bản      ' + n(tCoKB, G.TINHHUONG.length));
 console.log('  có chuyện cấp    ' + n(tCoCH, G.TINHHUONG.length));
+const soCD = new Set(Object.values(th).map(x => x.chuDe).filter(Boolean)).size;
+console.log('  gắn chủ đề       ' + n(Object.values(th).filter(x => x.chuDe).length, G.TINHHUONG.length) +
+  ' · ' + soCD + '/10 chủ đề có tình huống');
+if (roiNgoai.length) {
+  const u = [...new Set(roiNgoai)];
+  console.log('  ⚠ NHÓM RƠI NGOÀI BẢNG ÁNH XẠ: ' + u.length);
+  u.slice(0, 6).forEach(x => console.log('      ' + x));
+}
 console.log('Tệp: kho-goc/data.noi-ket.js · ' +
   Math.round(fs.statSync(path.join(NGUON, 'data.noi-ket.js')).size / 1024) + ' KB');

@@ -19346,6 +19346,18 @@ G.nkKhoiTinhHuong = function(id){
         'data-kb="' + h(k.ma) + '"');
     }).join('');
   }
+  /* Chiều sâu theo CHỦ ĐỀ — 250 tình huống chia 50 nhóm, mà chiều sâu
+     viết theo 10 chủ đề. Bảng ánh xạ nằm ở G.NOI_KET.chuDe, do
+     tools/dung-noi-ket.js dựng ra và có bài kiểm soi không nhóm nào
+     rơi ra ngoài. */
+  var cd = d.chuDe && (G.TH_SAU || {})[d.chuDe];
+  if(cd){
+    o += muc('CHIỀU SÂU NĂM CẤP NGHỀ', cd.ten || d.chuDe);
+    o += '<div class="card pad-sm mb"><p class="sm" style="line-height:1.7">' + h(cd.y) + '</p>' +
+      '<button class="btn ghost sm mt2" data-thsau="' + h(d.chuDe) + '">' +
+      ic('chart','w-3 h-3') + ' Xem năm cấp làm được gì với chủ đề này</button></div>';
+  }
+
   if(d.ch && d.ch.length){
     o += muc('CHUYỆN KỂ ĐƯỢC', 'người thật, việc thật');
     o += d.ch.map(function(x){
@@ -19403,6 +19415,8 @@ document.addEventListener('click', function(e){
   }
   var s = t.closest('[data-pdsau]');
   if(s){ U.modal(G.nkBangSau(s.getAttribute('data-pdsau'))); return; }
+  var s2 = t.closest('[data-thsau]');
+  if(s2){ U.modal(G.nkBangSau(s2.getAttribute('data-thsau'), true)); return; }
   var q = t.closest('[data-qtnhom]');
   if(q){ U.modal(G.nkBangQT(q.getAttribute('data-qtnhom'))); return; }
   var l = t.closest('[data-tlgd]');
@@ -19412,11 +19426,14 @@ document.addEventListener('click', function(e){
 /* ═══════════ BA CỬA SỔ NỘI DUNG ═══════════ */
 var CAP = ['C1','C2','C3','C4','C5'];
 
-G.nkBangSau = function(nhom){
-  var s = (G.PD_SAU || {})[nhom];
-  if(!s) return '<p class="sm">Chưa có chiều sâu cho nhóm này.</p>';
+/* Một hàm cho cả hai kho chiều sâu: cấu trúc giống hệt nhau nên viết
+   hai bản là mở đường cho hai bản trôi khỏi nhau. */
+G.nkBangSau = function(nhom, laTinhHuong){
+  var s = (laTinhHuong ? (G.TH_SAU || {}) : (G.PD_SAU || {}))[nhom];
+  if(!s) return '<p class="sm">Chưa có chiều sâu cho ' + (laTinhHuong ? 'chủ đề' : 'nhóm') + ' này.</p>';
   var cd = {}; (G.CAPDO_VANDUNG || []).forEach(function(x){ cd[x.ma] = x; });
-  var o = '<div class="tiny up" style="color:var(--gita)">CHIỀU SÂU NĂM CẤP · NHÓM ' + h(nhom) + '</div>' +
+  var o = '<div class="tiny up" style="color:var(--gita)">CHIỀU SÂU NĂM CẤP · ' +
+    h(s.ten || ((laTinhHuong ? 'CHỦ ĐỀ ' : 'NHÓM ') + nhom)) + '</div>' +
     '<p class="sm mt" style="line-height:1.75">' + h(s.y) + '</p>';
   o += '<div class="card pad-sm mt2">' +
     [['Ở nhà', s.nha], ['Ở trường', s.truong], ['Ngoài xã hội', s.xaHoi],
