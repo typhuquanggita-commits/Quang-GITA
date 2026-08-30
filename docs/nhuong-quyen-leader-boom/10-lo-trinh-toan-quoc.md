@@ -145,13 +145,13 @@ Không mở theo thứ tự đối tác tìm đến. Mở theo bốn tiêu chí,
 |---|---|---|
 | **Mở nhanh khi truyền thông đang tốt** | Chất lượng tụt sau 2 mùa, thương hiệu mất giá | Trần mở rộng theo năng lực (§1) · bảng năng lực chặn (§3) |
 | **Nhận đối tác vì họ có tiền** | Không có người đứng đầu chuyên môn → vận hành hình thức | NQ-03 · 6 dấu hiệu loại ngay (TL 02) · thang A→B→C |
-| **Nới chuẩn để giữ đối tác** | Chuẩn mất giá trị, đơn vị tốt mất động lực | Quy tắc nhóm A = 0 (TL 06) · 28 chuẩn không thương lượng (TL 05) |
+| **Nới chuẩn để giữ đối tác** | Chuẩn mất giá trị, đơn vị tốt mất động lực | Quy tắc nhóm A = 0 (TL 06) · 29 chuẩn không thương lượng (TL 05) |
 | **Bán trại 7 ngày, bỏ 90/365 ngày** | Trở thành trại hè thông thường, mất khác biệt | Tách gói bắt buộc (TL 07) · nhóm E trong thang 1000 điểm |
 | **Không dám đình chỉ đơn vị lớn** | Đơn vị khác học theo, chuẩn sụp từ trong ra | Kiểm định độc lập (NQ-08) · đình chỉ trước điều tra sau (NQ-07) |
 
 > **Sai lầm thứ năm là sai lầm giết hệ thống.** Đơn vị lớn nhất thường là đơn vị đầu tiên, thân
 > thiết nhất, đóng góp doanh thu nhiều nhất — và vì thế là đơn vị khó xử lý nhất khi vi phạm.
-> Nếu hệ thống không đình chỉ được đơn vị đó, thì **28 chuẩn chỉ là gợi ý**, và mọi đơn vị đều biết.
+> Nếu hệ thống không đình chỉ được đơn vị đó, thì **29 chuẩn chỉ là gợi ý**, và mọi đơn vị đều biết.
 > Lần đầu tiên áp chế tài với một đơn vị lớn là **thời điểm quyết định hệ nhượng quyền này có thật
 > hay không**.
 

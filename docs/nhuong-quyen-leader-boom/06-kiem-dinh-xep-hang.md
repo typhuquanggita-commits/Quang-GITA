@@ -4,7 +4,7 @@
 
 | Lớp | Ai làm | Khi nào | Nội dung |
 |---|---|---|---|
-| **Lớp 1 · Tự kiểm** | Đơn vị nhận quyền | Trong và sau mỗi khoá | Bảng kiểm 28 chuẩn · bảng kiểm an toàn hằng ngày · nộp trong 7 ngày |
+| **Lớp 1 · Tự kiểm** | Đơn vị nhận quyền | Trong và sau mỗi khoá | Bảng kiểm 29 chuẩn · bảng kiểm an toàn hằng ngày · nộp trong 7 ngày |
 | **Lớp 2 · Kiểm định hiện trường** | **Kiểm định viên của Học viện, không thuộc đơn vị đó** | **Ít nhất 1 lần mỗi khoá**, dự ngày 3 hoặc 4, không báo trước ngày cụ thể | Quan sát thật · phỏng vấn học viên và nhân sự · rà hồ sơ |
 | **Lớp 3 · Kiểm định hệ thống** | Hội đồng Học viện | Hằng năm | Toàn bộ hồ sơ · dữ liệu 90 ngày · khảo sát phụ huynh · tài chính · pháp lý |
 
@@ -21,7 +21,7 @@
 | **A · An toàn** | **300** | 10 chuẩn × 30 điểm. **Bất kỳ chuẩn nào 0 điểm → toàn nhóm A = 0** |
 | **B · Chuyên môn** | 250 | 8 chuẩn + điểm 12 tiêu chuẩn buổi huấn luyện |
 | **C · Cam kết gia đình** | 200 | 5 chuẩn + tỉ lệ bàn giao hồ sơ đúng hạn + NPS phụ huynh |
-| **D · Thương hiệu và dữ liệu** | 100 | 5 chuẩn |
+| **D · Thương hiệu và dữ liệu** | 100 | 6 chuẩn |
 | **E · Kết quả dài hạn** | 150 | Tỉ lệ chuyển tiếp Tầng 2 · hoàn thành 90 ngày · giảm reminder rate tại D118 |
 
 ### 2.1 Xếp hạng sao

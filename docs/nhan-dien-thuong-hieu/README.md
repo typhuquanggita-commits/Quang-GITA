@@ -28,6 +28,8 @@ Cẩm nang này là **tài liệu bắt buộc kèm theo hợp đồng nhượng
 **Chuẩn trình bày văn bản và mẫu bìa in được:** [`../ho-so-bao-ho/06-chuan-trinh-bay-tai-lieu.md`](../ho-so-bao-ho/06-chuan-trinh-bay-tai-lieu.md) ·
 [`../../brand/mau-tai-lieu/`](../../brand/mau-tai-lieu/)
 
+**Hiện diện tìm kiếm và uy tín trực tuyến:** [`../seo-va-hien-dien-so/`](../seo-va-hien-dien-so/README.md)
+
 **Áp dụng nhận diện trong cộng đồng số:** [`../cong-dong-leader-boom/`](../cong-dong-leader-boom/README.md) —
 hệ huy hiệu 7 sao, giọng nói trong group, quy tắc hình ảnh trẻ em.
 

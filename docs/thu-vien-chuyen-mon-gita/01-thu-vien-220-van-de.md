@@ -1,5 +1,9 @@
 # 01 · THƯ VIỆN 220 VẤN ĐỀ & PHÁC ĐỒ
 
+> **Bộ này còn là nguồn nội dung SEO chính của Học viện.** Mỗi phác đồ chuyển được thành một
+> bài viết trả lời đúng một truy vấn thật của phụ huynh — xem
+> [`../seo-va-hien-dien-so/01-nguoi-tim-kiem-va-tu-khoa.md`](../seo-va-hien-dien-so/01-nguoi-tim-kiem-va-tu-khoa.md) §2.
+
 **11 nhóm × 20 vấn đề = 220 phác đồ.** Mỗi phác đồ có 16 cột: 5 cột lộ trình theo tầng,
 4 cột phân vai tác nhân, và các cột đánh giá – nguyên nhân – giải pháp – mục tiêu – hồ sơ đầu ra.
 

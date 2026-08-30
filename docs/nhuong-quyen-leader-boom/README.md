@@ -32,7 +32,7 @@ Phần "không thương lượng được" dài hơn phần "được tuỳ bi�
 | 02 | [`02-tieu-chuan-doi-tac.md`](02-tieu-chuan-doi-tac.md) | Điều kiện · quy trình tuyển chọn 7 bước · bảng chấm 100 điểm · **6 dấu hiệu loại ngay** | Phát triển đối tác |
 | 03 | [`03-goi-chuyen-giao.md`](03-goi-chuyen-giao.md) | Đối tác nhận được gì · **lộ trình chuyển giao 120 ngày** | BLĐ, Đối tác |
 | 04 | [`04-dao-tao-chung-nhan.md`](04-dao-tao-chung-nhan.md) | Học viện đào tạo nhượng quyền · 5 cấp chứng nhận · tái chứng nhận | Đào tạo |
-| 05 | [`05-chuan-van-hanh.md`](05-chuan-van-hanh.md) | **28 chuẩn không thương lượng** · 12 hạng mục được tuỳ biến địa phương | Đối tác, Kiểm định |
+| 05 | [`05-chuan-van-hanh.md`](05-chuan-van-hanh.md) | **29 chuẩn không thương lượng** · 12 hạng mục được tuỳ biến địa phương | Đối tác, Kiểm định |
 | 06 | [`06-kiem-dinh-xep-hang.md`](06-kiem-dinh-xep-hang.md) | Kiểm định 3 lớp · xếp hạng sao · **cơ chế đình chỉ và thu hồi** | Kiểm định, BLĐ |
 | 07 | [`07-tai-chinh.md`](07-tai-chinh.md) | Cơ cấu phí · kinh tế đơn vị · điểm hoà vốn · khung đề xuất giá | BLĐ, Tài chính, Đối tác |
 | 08 | [`08-phap-ly-so-huu-tri-tue.md`](08-phap-ly-so-huu-tri-tue.md) | Khung pháp lý nhượng quyền · nhãn hiệu · cấu trúc hợp đồng · chấm dứt | Pháp chế, BLĐ |
@@ -46,7 +46,8 @@ Phần "không thương lượng được" dài hơn phần "được tuỳ bi�
 [`../thu-vien-chuyen-mon-gita/`](../thu-vien-chuyen-mon-gita/README.md) ·
 [`../an-toan-va-phan-quyen/`](../an-toan-va-phan-quyen/README.md) ·
 [`../cong-dong-leader-boom/`](../cong-dong-leader-boom/README.md) ·
-[`../ho-so-bao-ho/`](../ho-so-bao-ho/README.md)
+[`../ho-so-bao-ho/`](../ho-so-bao-ho/README.md) ·
+[`../seo-va-hien-dien-so/`](../seo-va-hien-dien-so/README.md)
 
 ---
 
@@ -75,7 +76,7 @@ dù có đối tác sẵn sàng trả tiền.
 | # | Điều kiện | Vì sao bắt buộc | Trạng thái hiện tại |
 |---|---|---|---|
 | 1 | **Đăng ký nhãn hiệu** cho chữ và hình Leader Boom tại Cục Sở hữu trí tuệ | Không có nhãn hiệu thì không có thứ để nhượng quyền hợp pháp | ⬜ Cần rà soát — **hồ sơ đã soạn:** [`../ho-so-bao-ho/`](../ho-so-bao-ho/README.md) |
-| 2 | **Hệ thống tài liệu chuẩn hoá** đủ để người ngoài vận hành được | Không có tài liệu thì "chuyển giao" chỉ là truyền miệng | ✅ **Đã có** — 8 bộ, 86 tài liệu; **77 tài liệu** cấu thành chương trình được bảo hộ, **66 tài liệu** thuộc gói chuyển giao (TL 03 §1) |
+| 2 | **Hệ thống tài liệu chuẩn hoá** đủ để người ngoài vận hành được | Không có tài liệu thì "chuyển giao" chỉ là truyền miệng | ✅ **Đã có** — 9 bộ, 97 tài liệu; **77 tài liệu** thuộc gói chuyển giao (TL 03 §1) |
 | 3 | **Đã tự chạy thành công tối thiểu 3 khoá** với đủ 7 cổng kiểm soát và có số liệu 90 ngày | Không chứng minh được mô hình chạy được thì không có gì để bán | ⬜ Cần xác nhận |
 | 4 | **Có đội ngũ đào tạo Trainer** — người đào tạo được người khác, không chỉ dạy được học viên | Nút thắt lớn nhất của mọi hệ nhượng quyền giáo dục | ⬜ Cần xây |
 | 5 | **Nền tảng số quản lý tập trung** hồ sơ học viên và dữ liệu chất lượng | Không có nền tảng thì không kiểm soát được chất lượng từ xa | ⬜ Cần xây — xem `thu-vien-chuyen-mon-gita/08` |

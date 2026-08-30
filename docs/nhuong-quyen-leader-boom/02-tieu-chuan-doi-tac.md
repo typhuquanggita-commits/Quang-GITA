@@ -68,7 +68,7 @@ Gặp bất kỳ dấu hiệu nào dưới đây, **dừng đàm phán**, không
 | **Năng lực chuyên môn (35)** | Người đứng đầu chuyên môn: nền tảng, kinh nghiệm, toàn thời gian | 15 |
 | | Khả năng tuyển đủ 4 vị trí chuyên trách | 10 |
 | | Hiểu và đồng thuận với triết lý — đặc biệt là "trại không kết thúc ở ngày thứ bảy" | 10 |
-| **Cam kết chuẩn mực (25)** | Phản ứng với 28 chuẩn không thương lượng — chấp nhận hay xin nới | **15** |
+| **Cam kết chuẩn mực (25)** | Phản ứng với 29 chuẩn không thương lượng — chấp nhận hay xin nới | **15** |
 | | Có sẵn quy trình an toàn nào chưa; thái độ với việc bị kiểm định | 10 |
 | **Năng lực vận hành (20)** | Kinh nghiệm tổ chức sự kiện hoặc chương trình cho trẻ em | 8 |
 | | Mạng lưới địa phương: trường học, hội nhóm phụ huynh | 7 |
@@ -86,7 +86,7 @@ Gặp bất kỳ dấu hiệu nào dưới đây, **dừng đàm phán**, không
 | **Bất kỳ dấu hiệu ở §3** | **Từ chối ngay bất kể tổng điểm** |
 
 > **Lưu ý cách chấm:** nhóm "Cam kết chuẩn mực" có trọng số cao thứ hai và mục "phản ứng với
-> 28 chuẩn không thương lượng" là mục nặng nhất trong nhóm. Đối tác xin nới chuẩn an toàn
+> 29 chuẩn không thương lượng" là mục nặng nhất trong nhóm. Đối tác xin nới chuẩn an toàn
 > ngay từ vòng đàm phán sẽ nới nhiều hơn khi vận hành thật.
 
 ---
@@ -100,4 +100,4 @@ Gặp bất kỳ dấu hiệu nào dưới đây, **dừng đàm phán**, không
 - [ ] Khảo sát ít nhất 2 địa điểm trại tiềm năng, kèm ảnh và đánh giá sơ bộ
 - [ ] Kế hoạch tuyển sinh khoá đầu
 - [ ] Lý lịch tư pháp của nhân sự dự kiến tiếp xúc trực tiếp với học viên
-- [ ] Văn bản cam kết tuân thủ 28 chuẩn không thương lượng và 10 bất biến an ninh
+- [ ] Văn bản cam kết tuân thủ 29 chuẩn không thương lượng và 10 bất biến an ninh

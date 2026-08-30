@@ -70,7 +70,8 @@ Nếu chỉ đọc một dòng trong bộ này, đọc dòng trên. Mọi thứ 
 [`../thu-vien-chuyen-mon-gita/07-dong-hanh-phu-huynh.md`](../thu-vien-chuyen-mon-gita/07-dong-hanh-phu-huynh.md) ·
 [`../thu-vien-chuyen-mon-gita/09-san-pham-5-goi.md`](../thu-vien-chuyen-mon-gita/09-san-pham-5-goi.md) ·
 [`../an-toan-va-phan-quyen/03-phan-loai-du-lieu.md`](../an-toan-va-phan-quyen/03-phan-loai-du-lieu.md) ·
-[`../nhan-dien-thuong-hieu/06-giong-noi-thuong-hieu.md`](../nhan-dien-thuong-hieu/06-giong-noi-thuong-hieu.md)
+[`../nhan-dien-thuong-hieu/06-giong-noi-thuong-hieu.md`](../nhan-dien-thuong-hieu/06-giong-noi-thuong-hieu.md) ·
+[`../seo-va-hien-dien-so/`](../seo-va-hien-dien-so/README.md)
 
 ---
 

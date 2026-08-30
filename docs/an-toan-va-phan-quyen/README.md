@@ -36,7 +36,9 @@ ma trận chính sách, hàm quyết định `can()`, hợp đồng nhật ký k
 [`../nhuong-quyen-leader-boom/`](../nhuong-quyen-leader-boom/README.md) **nhượng quyền** — mọi đơn vị
 nhận quyền phải áp dụng nguyên bộ phân quyền này, không được tự dựng hệ riêng (NQ-06) ·
 [`../cong-dong-leader-boom/`](../cong-dong-leader-boom/README.md) **cộng đồng** — ranh giới dữ liệu
-giữa nền tảng riêng và mạng xã hội, xem TL 01 §1 và TL 02 của bộ đó.
+giữa nền tảng riêng và mạng xã hội, xem TL 01 §1 và TL 02 của bộ đó ·
+[`../seo-va-hien-dien-so/`](../seo-va-hien-dien-so/README.md) **SEO** — quy tắc dùng hình ảnh và
+câu chuyện học viên trên website.
 
 ---
 

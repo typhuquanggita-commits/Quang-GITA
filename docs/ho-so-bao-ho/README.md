@@ -60,7 +60,9 @@
 **Bộ liên quan:**
 [`../nhuong-quyen-leader-boom/08-phap-ly-so-huu-tri-tue.md`](../nhuong-quyen-leader-boom/08-phap-ly-so-huu-tri-tue.md) ·
 [`../nhan-dien-thuong-hieu/`](../nhan-dien-thuong-hieu/README.md) ·
-[`../an-toan-va-phan-quyen/`](../an-toan-va-phan-quyen/README.md)
+[`../an-toan-va-phan-quyen/`](../an-toan-va-phan-quyen/README.md) ·
+[`../seo-va-hien-dien-so/`](../seo-va-hien-dien-so/README.md) — **tên miền và truy vấn thương hiệu
+là tài sản gắn với nhãn hiệu đang đăng ký**
 
 ---
 

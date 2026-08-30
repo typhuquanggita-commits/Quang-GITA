@@ -33,7 +33,7 @@ Toàn hệ thống mất một mùa tuyển sinh
 
 | Tầng | Bảo vệ khỏi cái gì | Công cụ | Tài liệu |
 |---|---|---|---|
-| **1 · Phòng ngừa** | Sự cố xảy ra ngay từ đầu | 28 chuẩn · 7 cổng kiểm soát · chứng nhận nhân sự · kiểm định không báo trước | TL 04, 05, 06 |
+| **1 · Phòng ngừa** | Sự cố xảy ra ngay từ đầu | 29 chuẩn · 7 cổng kiểm soát · chứng nhận nhân sự · kiểm định không báo trước | TL 04, 05, 06 |
 | **2 · Phát hiện sớm** | Sự cố nhỏ trở thành khủng hoảng | Nghĩa vụ báo cáo 1 giờ · giám sát mạng xã hội · đường dây phụ huynh trực tiếp về Học viện | §3, §4 |
 | **3 · Ứng phó** | Xử lý sai làm hỏng thêm | Quy trình 5 mức · người phát ngôn duy nhất · kịch bản có sẵn | §5, §6 |
 | **4 · Pháp lý và nhận diện** | Người khác dùng trái phép thương hiệu | Nhãn hiệu đã đăng ký · giám sát vi phạm · quy trình xử lý mạo danh | §8 |

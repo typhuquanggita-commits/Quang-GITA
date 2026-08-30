@@ -54,7 +54,7 @@ Vi phạm bất kỳ chuẩn nào là căn cứ xử lý theo TL 06. Ký cam k�
 | **C4** | **Vận hành đủ 7 cổng kiểm soát**, có chữ ký người chịu trách nhiệm |
 | **C5** | **Chỉ dùng hình ảnh học viên trong phạm vi đã đồng ý**; gỡ trong 7 ngày khi gia đình rút đồng ý |
 
-### Nhóm D · Thương hiệu và dữ liệu — 5 chuẩn
+### Nhóm D · Thương hiệu và dữ liệu — 6 chuẩn
 
 | # | Chuẩn |
 |---|---|
@@ -63,6 +63,7 @@ Vi phạm bất kỳ chuẩn nào là căn cứ xử lý theo TL 06. Ký cam k�
 | **D3** | **Toàn bộ dữ liệu học viên nhập vào nền tảng tập trung**, không lưu riêng ngoài hệ thống |
 | **D4** | Tuân thủ **10 bất biến an ninh** và ma trận phân quyền |
 | **D5** | **Không dùng thương hiệu Leader Boom cho hoạt động ngoài phạm vi hợp đồng** |
+| **D6** | **Không mua, không tặng lợi ích đổi lấy, không lọc người viết đánh giá.** Tên đơn vị và NAP dùng đúng bản Học viện cấp |
 
 ---
 
@@ -112,6 +113,6 @@ Cả ba đều "không" → gửi đề xuất, Học viện phản hồi trong 
 | A · An toàn | 10 | ☐ | Bảng phân công · chứng chỉ · hợp đồng bảo hiểm · bảng kiểm hằng ngày · biên bản diễn tập |
 | B · Chuyên môn | 8 | ☐ | Kịch bản đã chạy · phiếu chấm 12 tiêu chuẩn · phiếu quan sát · chứng nhận Trainer |
 | C · Cam kết gia đình | 5 | ☐ | Bản đồ Nhận diện đã bàn giao · biên bản Review · nội dung đã duyệt · phiếu đồng ý |
-| D · Thương hiệu và dữ liệu | 5 | ☐ | Ấn phẩm đã duyệt · dữ liệu trên nền tảng · nhật ký kiểm toán |
+| D · Thương hiệu và dữ liệu | 6 | ☐ | Ấn phẩm đã duyệt · dữ liệu trên nền tảng · nhật ký kiểm toán |
 
 **Không nộp đúng hạn** = coi như không đạt kỳ kiểm định đó.

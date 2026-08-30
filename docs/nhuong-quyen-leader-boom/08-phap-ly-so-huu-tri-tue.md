@@ -97,7 +97,7 @@ không đảm bảo còn hiệu lực nguyên trạng.
 | 4 | **Hợp đồng nhượng quyền thương mại** | Sau khi đối tác đạt chứng nhận C3 trở lên (TL 04) | Văn bản chính. Cấu trúc ở §5 |
 | 5 | **Hợp đồng li-xăng nhãn hiệu** (hoặc điều khoản li-xăng trong HĐ chính) | Cùng lúc | **Nên ghi nhận tại Cục SHTT** để có hiệu lực với bên thứ ba |
 | 6 | **Phụ lục lãnh thổ** | Cùng lúc | Ranh giới địa lý · điều kiện duy trì độc quyền (TL 01 §3) |
-| 7 | **Phụ lục chuẩn vận hành** | Cùng lúc | Dẫn chiếu 28 chuẩn không thương lượng (TL 05). **Sửa đổi được theo cơ chế §5.4** |
+| 7 | **Phụ lục chuẩn vận hành** | Cùng lúc | Dẫn chiếu 29 chuẩn không thương lượng (TL 05). **Sửa đổi được theo cơ chế §5.4** |
 | 8 | **Phụ lục tài chính** | Cùng lúc | Phí ban đầu · bản quyền · quỹ marketing (TL 07) |
 | 9 | **Thoả thuận xử lý dữ liệu cá nhân** | Cùng lúc | Học viện = bên kiểm soát; đơn vị = bên xử lý. Xem §6 |
 | 10 | **Cam kết bảo vệ trẻ em của người đứng đầu chuyên môn** | Cùng lúc | Cá nhân ký, không chỉ pháp nhân |
@@ -130,7 +130,7 @@ không đảm bảo còn hiệu lực nguyên trạng.
 |---|---|
 | **A · Đối tượng và phạm vi** | Quyền được cấp · **quyền KHÔNG được cấp** (sửa nội dung, nhượng lại, mở nhãn phụ) · lãnh thổ · thời hạn · hình thức A/B/C (TL 01) |
 | **B · Sở hữu trí tuệ** | Nhãn hiệu · tài liệu · **mọi cải tiến do đơn vị tạo ra trong quá trình vận hành thuộc về Học viện, được cấp lại cho toàn hệ thống** |
-| **C · Chuẩn vận hành** | Dẫn chiếu 28 chuẩn không thương lượng · 7 cổng kiểm soát · quyền kiểm định không báo trước |
+| **C · Chuẩn vận hành** | Dẫn chiếu 29 chuẩn không thương lượng · 7 cổng kiểm soát · quyền kiểm định không báo trước |
 | **D · An toàn và bảo vệ trẻ em** | Nghĩa vụ tuyệt đối · bảo hiểm bắt buộc · **nghĩa vụ báo cáo sự cố trong 1 giờ** (TL 09) |
 | **E · Tài chính** | Phí ban đầu · bản quyền · quỹ marketing · kỳ hạn · lãi chậm trả · quyền kiểm toán sổ sách |
 | **F · Dữ liệu cá nhân** | Vai trò kiểm soát/xử lý · mục đích · thời hạn lưu · **nghĩa vụ xoá và bàn giao khi chấm dứt** |
@@ -258,7 +258,7 @@ Bên xử lý         : Đơn vị nhận quyền — chỉ được xử lý th
 - **Hồ sơ đăng ký chi tiết** — danh mục tài sản, mẫu nhãn, nhóm phân loại, danh mục dịch vụ soạn sẵn: [`../ho-so-bao-ho/README.md`](../ho-so-bao-ho/README.md)
 
 - Hình thức và lãnh thổ: [`01-mo-hinh-nhuong-quyen.md`](01-mo-hinh-nhuong-quyen.md)
-- 28 chuẩn không thương lượng: [`05-chuan-van-hanh.md`](05-chuan-van-hanh.md)
+- 29 chuẩn không thương lượng: [`05-chuan-van-hanh.md`](05-chuan-van-hanh.md)
 - Chế tài và chấm dứt theo kiểm định: [`06-kiem-dinh-xep-hang.md`](06-kiem-dinh-xep-hang.md)
 - Quản trị khủng hoảng: [`09-bao-ve-thuong-hieu.md`](09-bao-ve-thuong-hieu.md)
 - Quy tắc dùng nhãn hiệu và gỡ nhận diện: [`../nhan-dien-thuong-hieu/07-dong-thuong-hieu.md`](../nhan-dien-thuong-hieu/07-dong-thuong-hieu.md)
