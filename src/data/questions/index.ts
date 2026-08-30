@@ -26,6 +26,16 @@ import { HARD_QUANTITATIVE } from './hard-quantitative';
 import { HARD_QUALITATIVE } from './hard-qualitative';
 import { HARD_SCIENCES } from './hard-sciences';
 import { HARD_ENGLISH } from './hard-english';
+import { QUALITATIVE_QUESTIONS_3 } from './qualitative-3';
+import { SCIENCES_QUESTIONS_6 } from './sciences-6';
+import { SCIENCES_QUESTIONS_7 } from './sciences-7';
+import { BIOLOGY_QUESTIONS_2 } from './biology-2';
+import { ENGLISH_QUESTIONS_4 } from './english-4';
+import { QUANTITATIVE_QUESTIONS_3 } from './quantitative-3';
+import { QUALITATIVE_QUESTIONS_4 } from './qualitative-4';
+import { ENGLISH_QUESTIONS_5 } from './english-5';
+import { ENGLISH_QUESTIONS_6 } from './english-6';
+import { ENGLISH_QUESTIONS_7 } from './english-7';
 
 export const ALL_QUESTIONS: readonly Question[] = [
   ...quantitativeQuestions,
@@ -52,6 +62,16 @@ export const ALL_QUESTIONS: readonly Question[] = [
   ...HARD_QUALITATIVE,
   ...HARD_SCIENCES,
   ...HARD_ENGLISH,
+  ...QUALITATIVE_QUESTIONS_3,
+  ...SCIENCES_QUESTIONS_6,
+  ...SCIENCES_QUESTIONS_7,
+  ...BIOLOGY_QUESTIONS_2,
+  ...ENGLISH_QUESTIONS_4,
+  ...QUANTITATIVE_QUESTIONS_3,
+  ...QUALITATIVE_QUESTIONS_4,
+  ...ENGLISH_QUESTIONS_5,
+  ...ENGLISH_QUESTIONS_6,
+  ...ENGLISH_QUESTIONS_7,
   ...englishQuestions,
   ...englishQuestions2,
   ...englishQuestions3,

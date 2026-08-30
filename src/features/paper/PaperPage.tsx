@@ -4,8 +4,10 @@ import { PLAYBOOK_BY_TOPIC } from '../../data/playbook';
 import {
   BAREM_RULES,
   MOCK_EXAMS,
+  PAPERS_PER_SERIES,
   SCORE_BANDS,
   buildPaper,
+  paperCode,
   type PaperItem,
 } from '../../data/mockExams';
 import { PASSAGE_BY_ID } from '../../data/passages';
@@ -53,7 +55,7 @@ const MODES: ReadonlyArray<{ value: Mode; label: string }> = [
 
 export function PaperPage() {
   const route = useRoute();
-  const requested = route.params.get('code') ?? MOCK_EXAMS[0]?.code ?? '';
+  const requested = route.params.get('code') ?? paperCode(MOCK_EXAMS[0]?.code ?? '', 1);
   const [mode, setMode] = useState<Mode>('de');
 
   const paper = useMemo(() => buildPaper(requested), [requested]);
@@ -66,7 +68,7 @@ export function PaperPage() {
         title="Không tìm thấy đề mẫu"
         description="Mã đề không tồn tại. Chọn một trong các đề mẫu chính thức của hệ thống."
         action={
-          <Button variant="primary" onClick={() => navigate(`/paper?code=${MOCK_EXAMS[0]?.code}`)}>
+          <Button variant="primary" onClick={() => navigate(`/paper?code=${paperCode(MOCK_EXAMS[0]?.code ?? '', 1)}`)}>
             Mở đề mẫu số 01
           </Button>
         }
@@ -79,16 +81,23 @@ export function PaperPage() {
       <Card className="no-print">
         <CardHeader
           title="Bộ đề mẫu chính thức"
-          subtitle="Mỗi môn tự chọn của phần 3 có một đề riêng. Cùng một mã đề luôn cho ra đúng một nội dung, trên mọi máy và mọi lần mở."
+          subtitle={`Mỗi tổ hợp phần 3 có trọn ${PAPERS_PER_SERIES} đề, và hai đề bất kỳ trong cùng một bộ không dùng chung quá 40% số câu. Cùng một mã đề luôn cho ra đúng một nội dung, trên mọi máy và mọi lần mở.`}
         />
         <div className="flex flex-wrap items-end gap-4">
           <label className="flex min-w-56 flex-col gap-1.5 text-sm">
             <span className="font-medium text-fg">Mã đề</span>
             <Select value={requested} onChange={(e) => navigate(`/paper?code=${e.target.value}`)}>
               {MOCK_EXAMS.map((exam) => (
-                <option key={exam.code} value={exam.code}>
-                  {exam.code} — {exam.section3Name}
-                </option>
+                <optgroup key={exam.code} label={exam.section3Name}>
+                  {Array.from({ length: PAPERS_PER_SERIES }, (_, i) => {
+                    const code = paperCode(exam.code, i + 1);
+                    return (
+                      <option key={code} value={code}>
+                        {code} — đề số {i + 1}
+                      </option>
+                    );
+                  })}
+                </optgroup>
               ))}
             </Select>
           </label>

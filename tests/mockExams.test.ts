@@ -4,11 +4,14 @@ import {
   BAREM_RULES,
   FILL_REQUIRED_SUBJECTS,
   MOCK_EXAMS,
+  PAPERS_PER_SERIES,
+  allPaperCodes,
   SCORE_BANDS,
   apportionByWeight,
   bandOf,
   buildPaper,
   fillQuotaOf,
+  paperCode,
 } from '../src/data/mockExams';
 import { TOPICS } from '../src/data/topics';
 import { subjectsOf } from '../src/lib/section3';
@@ -179,5 +182,68 @@ describe('đề mẫu trọn vẹn', () => {
 
   it('mã đề lạ trả về null thay vì làm hỏng ứng dụng', () => {
     expect(buildPaper('KHONG-TON-TAI')).toBeNull();
+  });
+});
+
+describe('bộ đề — 10 đề mỗi tổ hợp', () => {
+  it('mỗi tổ hợp có đủ 10 đề, mã đề không trùng nhau trong toàn hệ thống', () => {
+    // Giao thuc diem tuyet doi dat KPI tren "10 de gan nhat". He thong phai
+    // cung cap duoc dung con so ma chinh no doi hoi.
+    expect(PAPERS_PER_SERIES).toBe(10);
+    const codes = allPaperCodes();
+    expect(codes).toHaveLength(MOCK_EXAMS.length * PAPERS_PER_SERIES);
+    expect(new Set(codes).size).toBe(codes.length);
+  });
+
+  it('mọi đề trong mọi bộ đều dựng được và đủ 150 câu', () => {
+    for (const code of allPaperCodes()) {
+      const paper = buildPaper(code);
+      expect(paper, code).not.toBeNull();
+      expect(paper?.items, code).toHaveLength(150);
+      expect(new Set(paper?.items.map((i) => i.question.id)).size, `${code}: câu trùng`).toBe(150);
+    }
+  });
+
+  it('mã đề không có số thứ tự vẫn mở được đề số 1', () => {
+    // Cac duong dan cu phai tiep tuc chay, khong duoc bao khong tim thay.
+    for (const series of MOCK_EXAMS) {
+      const bare = buildPaper(series.code);
+      const first = buildPaper(paperCode(series.code, 1));
+      expect(bare?.items.map((i) => i.question.id)).toEqual(first?.items.map((i) => i.question.id));
+    }
+  });
+
+  it('hai đề bất kỳ trong cùng một bộ khác nhau đáng kể', () => {
+    /*
+     * Day la rang buoc quan trong nhat cua bo de. Neu cac de lap lai gan het
+     * cau thi de thu nam tro di chi con do tri nho, va con so "10 de gan
+     * nhat" trong KPI mat het y nghia.
+     *
+     * Nguong: hai de bat ky khong dung chung qua 40% so cau, va trung binh
+     * toan bo khong qua 30%.
+     */
+    for (const series of MOCK_EXAMS) {
+      const sets = Array.from({ length: PAPERS_PER_SERIES }, (_, i) => {
+        const paper = buildPaper(paperCode(series.code, i + 1));
+        return new Set(paper?.items.map((it) => it.question.id) ?? []);
+      });
+
+      let worst = 0;
+      let total = 0;
+      let pairs = 0;
+      for (let i = 0; i < sets.length; i += 1) {
+        for (let j = i + 1; j < sets.length; j += 1) {
+          const a = sets[i];
+          const b = sets[j];
+          if (!a || !b) continue;
+          const shared = [...a].filter((id) => b.has(id)).length / 150;
+          worst = Math.max(worst, shared);
+          total += shared;
+          pairs += 1;
+        }
+      }
+      expect(worst, `${series.code}: cặp đề trùng nhiều nhất`).toBeLessThanOrEqual(0.4);
+      expect(total / pairs, `${series.code}: trùng lặp trung bình`).toBeLessThanOrEqual(0.3);
+    }
   });
 });

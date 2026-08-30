@@ -92,6 +92,45 @@ export const MOCK_EXAMS: readonly MockExamSpec[] = [
 
 export const MOCK_EXAM_BY_CODE = new Map(MOCK_EXAMS.map((e) => [e.code, e]));
 
+/**
+ * SO DE TRONG MOI BO
+ *
+ * Con so nay khong tuy y. Giao thuc diem tuyet doi dat KPI do chinh xac thuc
+ * thi tren "10 de gan nhat" — neu he thong chi cap mot de cho moi to hop thi
+ * no dang doi mot thu chinh no khong cung cap duoc.
+ */
+export const PAPERS_PER_SERIES = 10;
+
+/** Ma de day du: ma bo cong so thu tu, vi du DM-HSA-01-LHS-03. */
+export function paperCode(seriesCode: string, index: number): string {
+  return `${seriesCode}-${String(index).padStart(2, '0')}`;
+}
+
+/**
+ * Tach ma de day du thanh bo va so thu tu.
+ *
+ * Chap nhan ca ma khong co so thu tu de cac duong dan cu van mo duoc de so 1
+ * thay vi bao khong tim thay.
+ */
+export function parsePaperCode(code: string): { series: MockExamSpec; index: number } | null {
+  const direct = MOCK_EXAM_BY_CODE.get(code);
+  if (direct) return { series: direct, index: 1 };
+
+  const match = /^(.*)-(\d{2})$/.exec(code);
+  if (!match) return null;
+  const series = MOCK_EXAM_BY_CODE.get(match[1] ?? '');
+  const index = Number(match[2]);
+  if (!series || index < 1 || index > PAPERS_PER_SERIES) return null;
+  return { series, index };
+}
+
+/** Toan bo ma de cua he thong: 5 to hop x 10 de. */
+export function allPaperCodes(): string[] {
+  return MOCK_EXAMS.flatMap((series) =>
+    Array.from({ length: PAPERS_PER_SERIES }, (_, i) => paperCode(series.code, i + 1)),
+  );
+}
+
 /** Mot cau trong de mau, da danh so va da biet barem cua no. */
 export interface PaperItem {
   /** So thu tu trong CA de, tu 1 den 150. */
@@ -152,6 +191,8 @@ function pickForSection(
   section: SectionId,
   section3: Section3Choice,
   seed: number,
+  /** So thu tu de trong bo, tinh tu 0. Quyet dinh cua so cau duoc lay. */
+  offset: number,
 ): Question[] {
   const spec = SECTIONS.find((s) => s.id === section);
   if (!spec) return [];
@@ -207,9 +248,19 @@ function pickForSection(
 
   for (const [i, topic] of topics.entries()) {
     const quota = quotas[i] ?? 0;
-    const candidates = pool
+    const ranked = pool
       .filter((q) => q.topicId === topic.id && !used.has(q.id))
       .sort((a, b) => orderKey(a, random) - orderKey(b, random));
+
+    /*
+     * CHIA BAI, KHONG BOC LAI TU DAU
+     *
+     * Neu moi de deu boc doc lap tu dau danh sach thi mot bo 10 de se lap lai
+     * gan het cau — nguoi hoc lam de thu 5 da thuoc dap an, va con so "10 de
+     * gan nhat" mat het y nghia. Thay vao do cac de CHIA NHAU ngan hang: moi
+     * de bat dau tu mot vi tri khac nhau tren danh sach da xep hang.
+     */
+    const candidates = dealOrder(ranked, offset, quota, `${section}:${topic.id}`);
 
     for (const question of candidates) {
       if (chosen.filter((q) => q.topicId === topic.id).length >= quota) break;
@@ -294,6 +345,60 @@ export function fillQuotaOf(section: SectionId, section3: Section3Choice): numbe
   return FILL_REQUIRED_SUBJECTS.filter((s) => subjectsOf(section3).includes(s)).length;
 }
 
+/**
+ * Thu tu uu tien cua ngan hang mot chuyen de cho de thu `offset` trong bo.
+ *
+ * Hai cach hien nhien deu that bai khi ngan hang nho hon nhieu so voi tong
+ * nhu cau cua ca bo, va ca hai deu da duoc do bang so:
+ *
+ *  - CAT KHOI (de thu n lay doan bat dau tu n x han ngach): cac khoi phai
+ *    cuon vong nhieu lan nen co cap de chong nhau toi 94%.
+ *  - DAN XEN THEO CAP SO CONG: hai de co hieu chi so bang mot buoc nhay se
+ *    lech nhau dung mot vi tri, cung cho ket qua chong nhau tren 90%.
+ *
+ * Cach dung o day la CHIA THEO MUC DA DUNG. Ca muoi de duoc chia cung mot
+ * luc: den luot de nao, no lay cac cau DANG DUOC DUNG IT NHAT. Nho vay so
+ * lan tai su dung duoc san deu tren toan ngan hang, va phan chung giua hai
+ * de bat ky tien ve muc thap nhat ma kich thuoc ngan hang cho phep.
+ *
+ * Khi hai cau co cung so lan da dung, thu tu duoc pha the bang mot khoa bam
+ * theo tung de. Neu pha the bang chinh thu hang cua cau thi cac de lai gom
+ * thanh tung khoi lien tiep va bai toan quay ve diem xuat phat.
+ */
+export function dealOrder<T extends { id: string }>(
+  ranked: readonly T[],
+  offset: number,
+  quota: number,
+  seriesKey: string,
+): T[] {
+  if (ranked.length === 0 || quota <= 0) return [...ranked];
+
+  const usage = new Array<number>(ranked.length).fill(0);
+  let result: T[] = [...ranked];
+
+  for (let paper = 0; paper < PAPERS_PER_SERIES; paper += 1) {
+    const order = ranked
+      .map((item, index) => ({ item, index }))
+      .sort((a, b) => {
+        const byUsage = (usage[a.index] ?? 0) - (usage[b.index] ?? 0);
+        if (byUsage !== 0) return byUsage;
+        // Pha the on dinh nhung khac nhau giua cac de, de chung khong gom
+        // thanh tung khoi lien tiep tren ngan hang.
+        return (
+          hashSeed(`${seriesKey}:${paper}:${a.item.id}`) - hashSeed(`${seriesKey}:${paper}:${b.item.id}`)
+        );
+      });
+
+    for (let i = 0; i < Math.min(quota, order.length); i += 1) {
+      const entry = order[i];
+      if (entry) usage[entry.index] = (usage[entry.index] ?? 0) + 1;
+    }
+    if (paper === offset) result = order.map((entry) => entry.item);
+  }
+
+  return result;
+}
+
 /** Khoa sap xep on dinh: uu tien do kho gan phan bo chuan, pha the bang hat giong. */
 function orderKey(question: Question, random: () => number): number {
   const target = DIFFICULTY_MIX[question.difficulty] ?? 0;
@@ -328,16 +433,20 @@ export function buildPaper(code: string): Paper | null {
   const cached = CACHE.get(code);
   if (cached) return cached;
 
-  const spec = MOCK_EXAM_BY_CODE.get(code);
-  if (!spec) return null;
+  const parsed = parsePaperCode(code);
+  if (!parsed) return null;
+  const { series: spec, index } = parsed;
 
   const sections: PaperSection[] = [];
   const items: PaperItem[] = [];
   let number = 0;
 
   for (const sectionSpec of SECTIONS) {
-    const seed = hashSeed(`${code}:${sectionSpec.id}`);
-    const questions = pickForSection(sectionSpec.id, spec.section3, seed);
+    // Hat giong bam theo BO chu khong theo tung de: nho vay thu tu xep hang
+    // cua ngan hang giu nguyen giua cac de, va viec chia bai moi tach duoc
+    // chung ra. Doi hat giong theo tung de se lam cac cua so trung lap lai.
+    const seed = hashSeed(`${spec.code}:${sectionSpec.id}`);
+    const questions = pickForSection(sectionSpec.id, spec.section3, seed, index - 1);
 
     const sectionItems: PaperItem[] = questions.map((question, i) => {
       number += 1;

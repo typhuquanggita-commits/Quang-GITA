@@ -29,6 +29,36 @@ Rừng ngập mặn còn là vườn ươm của biển. Tôm, cua, cá con tìm
 Điều đáng nói là mỗi héc-ta rừng ngập mặn có thể tích lũy lượng các-bon trong lớp bùn đáy lớn gấp nhiều lần một héc-ta rừng trên cạn. Chặt rừng ngập mặn để làm đầm nuôi tôm vì thế không chỉ đánh đổi sinh kế dài hạn lấy lợi nhuận ngắn hạn, mà còn giải phóng lượng các-bon đã bị khóa lại suốt hàng nghìn năm.`,
   },
   {
+    id: 'p.reading.5',
+    title: 'Nghề cũ trong thành phố mới',
+    source: 'Ngữ liệu biên soạn cho HSA365',
+    body: `Ở góc phố ấy có một ông thợ sửa giày ngồi từ ba mươi năm nay. Cái ghế gỗ mòn nhẵn, hộp đinh gỉ, và một tấm biển viết tay đã phai gần hết chữ. Người qua đường mỗi năm một thưa. Giày bây giờ rẻ, hỏng thì mua đôi khác, chẳng mấy ai nghĩ tới việc chữa.
+
+Nhưng ông vẫn ngồi đó. Không phải vì ông không biết chuyện gì đang xảy ra với nghề của mình — ông biết rõ hơn ai hết. Ông ngồi vì mỗi tuần vẫn còn dăm người tìm tới, mang theo những đôi giày mà giá trị của chúng không nằm ở tiền: đôi giày cưới, đôi giày người cha để lại, đôi giày đi cùng một chuyến đi không lặp lại được.
+
+Có những nghề không mất đi vì hết người làm, mà thu nhỏ lại cho vừa với phần nhu cầu còn sót lại. Phần ấy ít, nhưng nó khác về chất: nó không mua sự tiện lợi, nó mua việc giữ lại một thứ gì đó. Và chừng nào con người còn muốn giữ lại, chừng ấy vẫn còn chỗ cho ông thợ già ngồi ở góc phố.`,
+  },
+  {
+    id: 'p.reading.6',
+    title: 'Cái giá của sự chắc chắn',
+    source: 'Ngữ liệu biên soạn cho HSA365',
+    body: `Con người sợ sự không chắc chắn tới mức sẵn sàng trả giá rất đắt để thoát khỏi nó. Một nhà quản lý thà chọn phương án cho kết quả tầm thường nhưng đoán trước được, còn hơn phương án có thể rất tốt nhưng khó lường. Một học sinh thà làm mãi dạng bài đã quen, còn hơn thử một dạng mới có nguy cơ sai.
+
+Xu hướng ấy có gốc rễ hợp lý. Trong phần lớn lịch sử tiến hóa, thứ không đoán trước được thường đồng nghĩa với nguy hiểm, và kẻ thận trọng sống sót lâu hơn kẻ liều lĩnh. Bộ não chúng ta được định hình bởi hàng vạn năm như vậy.
+
+Nhưng môi trường đã đổi còn bản năng thì chưa. Trong một thế giới mà tri thức tăng theo cấp số nhân, cái giá của việc ở lại vùng an toàn không còn là sự yên ổn mà là sự tụt lại. Người chịu được cảm giác chưa chắc chắn — chịu được việc mình đang sai và chưa biết vì sao — mới là người học được nhanh nhất. Sự thoải mái và sự tiến bộ, đáng tiếc, hiếm khi đi cùng nhau.`,
+  },
+  {
+    id: 'p.reading.7',
+    title: 'Bản đồ và vùng đất',
+    source: 'Ngữ liệu biên soạn cho HSA365',
+    body: `Một tấm bản đồ hữu ích chính vì nó không giống vùng đất. Nếu bản đồ ghi lại đủ mọi viên sỏi, mọi ngọn cỏ, nó sẽ to bằng chính vùng đất ấy và trở nên vô dụng. Giá trị của bản đồ nằm ở những gì nó bỏ đi.
+
+Mọi lý thuyết, mọi công thức, mọi lời khuyên đều là bản đồ. Chúng đơn giản hóa thực tế để ta cầm nắm được. Nhưng vì thế, chúng luôn sai ở một mức nào đó — và người dùng bản đồ giỏi là người biết bản đồ của mình bỏ đi những gì.
+
+Sai lầm nguy hiểm nhất không phải là dùng một tấm bản đồ chưa hoàn hảo. Đó là quên rằng mình đang cầm bản đồ, và tưởng mình đang nhìn thẳng vào vùng đất.`,
+  },
+  {
     id: 'p.english.1',
     title: 'The Quiet Rise of Night Trains',
     source: 'Ngữ liệu biên soạn cho HSA365',
