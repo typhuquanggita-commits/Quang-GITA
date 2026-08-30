@@ -799,6 +799,35 @@
       'nên nó không bao giờ lệch với hệ.</p><dl class="cm">' + ra + '</dl>';
   };
 
+  /* ── NĂM TUYẾN GEN VIỆT ─────────────────────────────── */
+  K.tuyen = function (o) {
+    return '<div class="tuy">' + ds(lay(o), function (x) {
+      return '<article style="--c:' + mau(x.mau) + '">' +
+        '<div class="tuy-dau"><span class="m">' + e(x.ma) + '</span><h3>' + e(x.t) + '</h3></div>' +
+        '<div class="hoi">' + e(x.hoi) + '</div>' +
+        '<p>' + dm(x.n) + '</p>' +
+        '<ul>' + ds(x.lam, function (y) { return '<li>' + dm(y) + '</li>'; }) + '</ul>' +
+        '<div class="o do-t"><b>Đo bằng</b>' + e(x.do) + '</div>' +
+        '<div class="o ai-t"><b>Ai giữ</b>' + e(x.ai) + '</div></article>';
+    }) + '</div>';
+  };
+
+  /* mười lăm giai đoạn — xương sống của cả năm tuyến */
+  K.giaidoan = function (o) {
+    return '<div class="gdo">' + ds(lay(o), function (x) {
+      return '<div class="gd-h" style="--c:' + mau(x.mau) + '">' +
+        '<div class="gd-s"><span class="n">' + e(x.so) + '</span>' +
+        '<span class="k">' + e(x.k) + '</span></div>' +
+        '<div class="gd-n"><h3>' + e(x.t) + '</h3>' +
+        '<div class="hoi">' + e(x.hoi) + '</div>' +
+        '<div class="o"><b>Đích đến</b>' + dm(x.dich) + '</div>' +
+        '<div class="o m9"><b>Mục tiêu 90 ngày</b>' + dm(x.m90) + '</div>' +
+        '<div class="o moc"><b>Ba mốc</b>' + dm(x.moc) + '</div>' +
+        '<div class="o do-g"><b>Đo bằng</b>' + dm(x.do) + '</div>' +
+        '</div></div>';
+    }) + '</div>';
+  };
+
   /* chân dung trong Thư viện Gen Việt */
   K.nhanvat = function (o) {
     return ds(lay(o), function (x) {

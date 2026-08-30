@@ -1,6 +1,6 @@
 /* ═══════════════════════════════════════════════════════════════
    GEN VIỆT 365 · ĐỊNH NGHĨA MÀN HÌNH
-   Hai mươi nhóm · 132 màn. Mỗi màn là một danh sách KHỐI; lớp giao diện biết
+   Hai mươi sáu nhóm · 150 màn. Mỗi màn là một danh sách KHỐI; lớp giao diện biết
    dựng từng loại khối. Thêm màn mới thì thêm ở đây, không đụng vào
    giao-dien.js — trừ khi cần một loại khối chưa từng có.
    Trong khối "van", dấu *…* thành chữ đậm.
@@ -201,6 +201,42 @@ GV.NHOM = [
       { v: 'chi-muc', t: 'Chỉ mục', h: 'Sinh ra lúc chạy, không bao giờ lệch' },
       { v: 'so-chuan', t: 'Sổ Chuẩn', h: 'Mọi lần đổi chuẩn, không xoá dòng nào' },
       { v: 'ban-do-he', t: 'Bản đồ toàn hệ', h: 'Tám phần · mười đường đọc theo vai' }
+    ]},
+  { id: 'g21', no: '21', t: 'XƯƠNG SỐNG GEN VIỆT', s: 'Mười lăm giai đoạn và năm tuyến, rút từ tài liệu gốc', mau: '#BE0E16',
+    ds: [
+      { v: 'gv-dinh-vi', t: 'Định vị Gen Việt', h: 'Nguyên văn từ đề án gốc' },
+      { v: 'gv-nam-tuyen', t: 'Năm tuyến vận hành', h: 'CLB · khối lớp · gia đình · xã hội · khởi nghiệp' },
+      { v: 'gv-15-giai-doan', t: 'Mười lăm giai đoạn', h: 'Xương sống của cả năm tuyến' },
+      { v: 'gv-pipeline', t: 'Pipeline năm cấp', h: 'Từ thành viên nền tới đại sứ' },
+      { v: 'gv-nguon', t: 'Nguồn tài liệu gốc', h: 'Mười bốn nguồn trong kho GEN VIỆT' }
+    ]},
+  { id: 'g22', no: '22', t: 'TUYẾN CLB GEN VIỆT', s: 'Nơi em được trao vai thật và có người trông vào', mau: '#185AB4',
+    ds: [
+      { v: 'clb-muoi-cap', t: 'Mười cấp độ thành viên', h: 'Làm quen → Đại sứ hệ thống' },
+      { v: 'clb-nang-luc', t: 'Chín nhóm năng lực', h: 'A · B · C · D · E · F1 → F4' },
+      { v: 'clb-muoi-hai-ban', t: 'Mười hai Ban', h: 'Học sinh giữ ghế, có nhiệm kỳ' },
+      { v: 'clb-nhip', t: 'Nhịp tuần và buổi sinh hoạt', h: 'Leadership Lab · Squad Sprint · bốn phần' }
+    ]},
+  { id: 'g23', no: '23', t: 'TUYẾN MƯỜI HAI KHỐI LỚP', s: 'Nơi việc rèn đi vào đúng lứa tuổi', mau: '#5140B4',
+    ds: [
+      { v: 'khoi-nam-nhom', t: 'Năm nhóm cố định', h: 'Giữ nguyên suốt mười hai khối' },
+      { v: 'khoi-muoi-hai', t: 'Mười hai khối lớp', h: '600 chuyên đề · mã GV<khối>.<nhóm>.<số>' }
+    ]},
+  { id: 'g24', no: '24', t: 'TUYẾN GIA ĐÌNH', s: 'Nơi thói quen được giữ khi không ai nhìn', mau: '#0B7350',
+    ds: [
+      { v: 'gd-chin-muoi-ngay', t: 'Chín mươi ngày bứt phá', h: 'Bốn giai đoạn · mười hai tuần' },
+      { v: 'gd-nam-s', t: 'Văn hoá 5S và nhật ký', h: 'Sạch · Sắp xếp · Sẵn sàng · Sâu sắc · Sáng tạo' }
+    ]},
+  { id: 'g25', no: '25', t: 'TUYẾN HOẠT ĐỘNG XÃ HỘI', s: 'Nơi giá trị của em được người ngoài xác nhận', mau: '#BE0E16',
+    ds: [
+      { v: 'xh-du-an', t: 'Dự án phụng sự', h: 'Không có người thụ hưởng thì không tính' },
+      { v: 'xh-su-kien', t: 'Sáu sự kiện trụ cột', h: 'Gen Việt Day · Awards · Camp' }
+    ]},
+  { id: 'g26', no: '26', t: 'TUYẾN KHỞI NGHIỆP VÀ CHUYÊN GIA', s: 'Nơi tài năng của em bắt đầu có nghề', mau: '#A8801F',
+    ds: [
+      { v: 'kn-sau-buoc', t: 'Sáu bước vào nghề', h: 'Chạm tài năng → hồ sơ hướng nghiệp' },
+      { v: 'kn-de-tai', t: 'Mười đề tài nghiên cứu', h: 'GV-R1 → GV-R10 · đăng ký được cấp Sở' },
+      { v: 'kn-thiet-ke', t: 'Thiết kế nghiên cứu', h: 'Có nhóm đối chứng, tối thiểu 6–12 tháng' }
     ]}
 ];
 
@@ -1377,6 +1413,166 @@ GV.MAN = {
     { k: 'bang', cot: ['Bạn là ai', 'Đọc theo thứ tự', 'Vì sao thứ tự này'], tu: 'TC_DUONG_DOC' },
     { k: 'trich', t: 'Nếu chỉ có mười phút thì đọc nhóm 19. Đó là phần dùng được sáng mai.', n: 'Phần TAY' }
   ]}
+,
+
+/* ══════════ NHÓM 21 · XƯƠNG SỐNG GEN VIỆT ══════════ */
+'gv-dinh-vi': { q: 'chung', k: 'Xương sống', t: 'Định vị Gen Việt',
+  p: 'Tám dòng dưới đây lấy nguyên văn từ đề án gốc trong kho tài liệu của Học viện. Không diễn giải lại, không làm hay hơn.',
+  khoi: [
+    { k: 'van', t: 'Toàn bộ nhóm 21 tới 26 được rút từ *sáu mươi lăm tệp* trong thư mục GEN VIỆT của Học viện GITA, đọc ngày 30 tháng 8 năm 2026. Nguồn của từng phần ghi ở màn cuối nhóm này.' },
+    { k: 'luoi', c: 2, tu: 'TY_DINH_VI' },
+    { k: 'trich', t: 'Rèn Luyện — Hun Đúc — Trưởng Thành — Tài Năng Việt. Bốn nhịp, đúng thứ tự: rèn trước, tài năng sau.', n: 'Giá trị cốt lõi' }
+  ]},
+
+'gv-nam-tuyen': { q: 'chung', k: 'Xương sống', t: 'Năm tuyến vận hành',
+  p: 'Năm tuyến không phải năm chương trình song song. Chúng là năm môi trường mà cùng một học sinh đi qua cùng mười lăm giai đoạn.',
+  khoi: [
+    { k: 'tuyen', tu: 'TY_TUYEN' },
+    { k: 'muc', t: 'Bảy luật của năm tuyến' },
+    { k: 'luat', tu: 'TY_LUAT_TUYEN' },
+    { k: 'trich', t: 'Tuyến CLB là trục chính — nơi ghi nhận và xét cấp. Bốn tuyến còn lại cung cấp bằng chứng.', n: 'Luật thứ ba' }
+  ]},
+
+'gv-15-giai-doan': { q: 'chung', k: 'Xương sống', t: 'Mười lăm giai đoạn Gen Việt',
+  p: 'Sáu giai đoạn đầu là nền Thân — Tâm — Trí — Văn — Thể — Mĩ. Ba giai đoạn giữa là cách học. Hai giai đoạn sau là kết quả và giá trị. Bốn giai đoạn cuối là bộ công cụ làm nên người dẫn.',
+  khoi: [
+    { k: 'van', t: 'Đây là *xương sống thật* của hệ, rút từ “Mô hình 15 giai đoạn Gen Việt trong phát triển toàn diện học sinh THCS”. Mỗi giai đoạn là một chu kỳ 90 ngày có mục tiêu đo được, ba mốc, và công cụ đo.' },
+    { k: 'giaidoan', tu: 'TY_GIAI_DOAN' },
+    { k: 'trich', t: 'Mỗi ngày chỉ cần tiến lên một phần trăm so với hôm qua. Chín mươi ngày sau, con sẽ là một phiên bản khác.', n: 'Thông điệp chủ đạo của mọi giai đoạn' }
+  ]},
+
+'gv-pipeline': { q: 'chung', k: 'Xương sống', t: 'Pipeline năm cấp',
+  p: 'Gen Việt không phải câu lạc bộ phong trào. Nó là hệ thống chọn — rèn — nâng — trao vai, chạy trên mười lăm giai đoạn.',
+  khoi: [
+    { k: 'thap', tu: 'TY_PIPELINE_T' },
+    { k: 'van', t: 'Cách kể pipeline này cho nhà trường và cho Sở: *có lộ trình rõ từ học sinh bình thường tới học sinh nòng cốt tới cán bộ gương mẫu.* Đó là điều một hồ sơ đề án cần chứng minh, và là điều một CLB phong trào không chứng minh được.' },
+    { k: 'trich', t: 'Tuyến Khởi nghiệp mở từ cấp 3 của pipeline — Động lực nhân tài. Mở sớm hơn là bắt trẻ chạy trước khi đứng vững.', n: 'Ranh giới của pipeline' }
+  ]},
+
+'gv-nguon': { q: 'chung', k: 'Xương sống', t: 'Nguồn tài liệu gốc',
+  p: 'Mười bốn nguồn trong thư mục GEN VIỆT, và phần nào của hệ được rút từ nguồn nào.',
+  khoi: [
+    { k: 'bang', cot: ['Tài liệu gốc', 'Rút ra gì', 'Vào tuyến nào'], tu: 'TY_NGUON' },
+    { k: 'van', t: 'Kho gốc còn có giáo án chi tiết từng buổi cho khối 2 tới khối 5, bốn bản Master Gen Việt, bộ slide CLB, bộ quy chuẩn, và tệp nén Gita hơn 600 MB chưa mở. Những phần ấy *chưa* được đưa vào hệ này — đây là chỗ còn mở rộng được.' },
+    { k: 'trich', t: 'Phần nào của hệ không dẫn được về một nguồn trong bảng trên thì phần ấy là suy diễn, không phải tài liệu.', n: 'Luật của nhóm 21' }
+  ]},
+
+/* ══════════ NHÓM 22 · TUYẾN CLB ══════════ */
+'clb-muoi-cap': { q: 'chung', k: 'Tuyến CLB', t: 'Mười cấp độ thành viên',
+  p: 'Mỗi cấp có mười chương trình huấn luyện riêng — một trăm chương trình cho cả lộ trình. Lên cấp bằng tiêu chí, không bằng thời gian.',
+  khoi: [
+    { k: 'bang', cot: ['Cấp', 'Tên cấp độ', 'Vào từ đâu', 'Tiêu chí xét lên cấp', 'Chiến lược đào tạo'], tu: 'TY_CLB_CAP' },
+    { k: 'van', t: 'Mỗi cấp còn có một *bảng chuẩn đầu ra bốn góc nhìn*: gia đình thấy gì, thầy cô thấy gì, ban điều hành thấy gì, nhà trường thấy gì. Bốn góc nhìn ấy là cách kiểm chéo — một cấp độ chỉ thật khi cả bốn phía đều thấy được thay đổi.' },
+    { k: 'trich', t: 'Cấp 10 chọn lọc rất ít, huấn luyện trực tiếp bởi Hội đồng, và có cơ chế thu hồi danh hiệu. Danh hiệu giữ được là danh hiệu có thể mất.', n: 'Cấp cao nhất' }
+  ]},
+
+'clb-nang-luc': { q: 'chung', k: 'Tuyến CLB', t: 'Chín nhóm năng lực',
+  p: 'Năm nhóm nền A tới E cho cấp 1 tới 6. Bốn nhóm F cho tầng lãnh đạo, cấp 7 tới 10.',
+  khoi: [
+    { k: 'bang', cot: ['Mã', 'Nhóm năng lực', 'Rèn ở cấp nào', 'Biểu hiện'], tu: 'TY_CLB_NL' },
+    { k: 'trich', t: 'Cấp 10 đòi điểm F1–F4 trung bình từ 4.7 trở lên, và không tiêu chí lõi nào dưới 4.5. Trung bình cao mà có một chỗ thủng thì vẫn không đạt.', n: 'Vì sao bốn nhóm F đo riêng' }
+  ]},
+
+'clb-muoi-hai-ban': { q: 'chung', k: 'Tuyến CLB', t: 'Mười hai Ban của chi hội',
+  p: 'Học sinh giữ ghế, có nhiệm kỳ, có bàn giao. Giáo viên và cố vấn đứng sau, không đứng thay.',
+  khoi: [
+    { k: 'luoi', c: 2, tu: 'TY_CLB_BAN' },
+    { k: 'van', t: 'Trên mười hai Ban là *Hội đồng Tinh Hoa Gen Việt* — chuyên gia GITA, đại diện Ban Giám hiệu, CLB Đoàn Thị Điểm, và doanh nghiệp đồng hành. Hội đồng bảo trợ tầm nhìn và có quyền tạm dừng một chiến dịch nếu thấy rủi ro uy tín.' },
+    { k: 'trich', t: 'Ban Bàn Chân Việt là ban ít được nhắc tên nhất và thiếu thì hỏng nhanh nhất.', n: 'Ghi chú về hậu cần' }
+  ]},
+
+'clb-nhip': { q: 'chung', k: 'Tuyến CLB', t: 'Nhịp tuần và buổi sinh hoạt',
+  p: 'Sinh hoạt hai buổi mỗi tháng theo cấu trúc bốn phần cố định, cộng nhịp tuần năm cấu phần.',
+  khoi: [
+    { k: 'muc', t: 'Bốn phần của một buổi' },
+    { k: 'bang', cot: ['Phần', 'Nội dung', 'Thời lượng', 'Làm gì', 'Ai giữ'], tu: 'TY_CLB_BUOI' },
+    { k: 'muc', t: 'Năm cấu phần của một tuần' },
+    { k: 'luoi', c: 2, tu: 'TY_CLB_TUAN' },
+    { k: 'van', t: 'Nhịp tuần này là chỗ *tuyến CLB nối vào tuyến Gia đình*: phần “rèn luyện tại nhà bảy ngày” do gia đình giữ, và nhật ký tối thiểu năm trên bảy ngày là điều kiện để tính tuần ấy có tham gia.' },
+    { k: 'trich', t: 'Đôi bạn cùng tiến là cơ chế rẻ nhất và hiệu quả nhất trong mọi cách giữ nhịp.', n: 'Cấu phần thứ tư' }
+  ]},
+
+/* ══════════ NHÓM 23 · TUYẾN MƯỜI HAI KHỐI LỚP ══════════ */
+'khoi-nam-nhom': { q: 'chung', k: 'Tuyến khối lớp', t: 'Năm nhóm cố định',
+  p: 'Năm nhóm này giữ nguyên suốt mười hai khối. Chỉ đổi độ khó và bối cảnh, không đổi tên nhóm.',
+  khoi: [
+    { k: 'ly', tu: 'TY_KHOI_NHOM_L' },
+    { k: 'van', t: 'Mỗi khối có *năm nhóm × mười chuyên đề = năm mươi chuyên đề*. Toàn tuyến mười hai khối là **sáu trăm chuyên đề**, mã hoá `GV<khối>.<nhóm>.<số>` — ví dụ `GV1.2.07` là khối 1, nhóm 2, chuyên đề 7: “Ngủ đúng giờ — não thông minh cần ngủ”.' },
+    { k: 'trich', t: 'Nhóm 4 lấy chất liệu từ Thư viện Gen Việt: mỗi chân dung phải dẫn tới một việc học viên làm được trong tuần.', n: 'Chỗ hai hệ nối vào nhau' }
+  ]},
+
+'khoi-muoi-hai': { q: 'chung', k: 'Tuyến khối lớp', t: 'Mười hai khối lớp',
+  p: 'Từ nề nếp và kỷ luật vui ở khối 1, tới hội tụ và bàn giao thế hệ ở khối 12.',
+  khoi: [
+    { k: 'bang', cot: ['Khối', 'Trọng tâm', 'Cấp học', 'Sản phẩm đặc trưng', 'Ghi chú'], tu: 'TY_KHOI_12' },
+    { k: 'muc', t: 'Sáu luật của tuyến khối lớp' },
+    { k: 'luat', tu: 'TY_KHOI_LUAT' },
+    { k: 'trich', t: 'Mỗi chuyên đề là một việc làm được, không phải một bài giảng. Không có chuyên đề nào chỉ để nghe.', n: 'Luật thứ ba' }
+  ]},
+
+/* ══════════ NHÓM 24 · TUYẾN GIA ĐÌNH ══════════ */
+'gd-chin-muoi-ngay': { q: 'kh_gia_dinh', k: 'Tuyến gia đình', t: 'Chín mươi ngày bứt phá',
+  p: 'Bốn giai đoạn, mười hai tuần. Rèn luyện hằng ngày, phản tư mỗi tuần, thử thách theo tháng.',
+  khoi: [
+    { k: 'nam', tu: 'TY_GD_90_N' },
+    { k: 'muc', t: 'Ba danh hiệu cuối chặng' },
+    { k: 'bang', cot: ['Danh hiệu', 'Cho ai', 'Bằng chứng'], tu: 'TY_GD_DANH_HIEU' },
+    { k: 'trich', t: 'Chỉ số quan trọng nhất không phải số ngày làm được, mà là thời gian quay lại sau khi đứt nhịp.', n: 'Điều gia đình hay đo sai' }
+  ]},
+
+'gd-nam-s': { q: 'kh_gia_dinh', k: 'Tuyến gia đình', t: 'Văn hoá 5S và nhật ký',
+  p: 'Năm chữ S đo được hằng ngày, và một cuốn nhật ký ba phút.',
+  khoi: [
+    { k: 'bang', cot: ['Chữ S', 'Hành động cụ thể', 'Cách đo'], tu: 'TY_GD_5S' },
+    { k: 'muc', t: 'Bốn nhịp ghi chép' },
+    { k: 'luoi', c: 2, tu: 'TY_GD_NHAT_KY' },
+    { k: 'muc', t: 'Năm luật của tuyến gia đình' },
+    { k: 'luat', tu: 'TY_GD_LUAT' },
+    { k: 'trich', t: 'Người lớn không ghi hộ nhật ký, không làm hộ danh mục 5S. Làm hộ là xoá luôn mục đích.', n: 'Luật thứ hai' }
+  ]},
+
+/* ══════════ NHÓM 25 · TUYẾN HOẠT ĐỘNG XÃ HỘI ══════════ */
+'xh-du-an': { q: 'chung', k: 'Tuyến xã hội', t: 'Dự án phụng sự',
+  p: 'Tuyến duy nhất mà bằng chứng do người ngoài hệ ký. Vì thế nó nặng nhất khi xét cấp.',
+  khoi: [
+    { k: 'luoi', c: 2, tu: 'TY_XH_DU_AN' },
+    { k: 'muc', t: 'Sáu luật của tuyến xã hội' },
+    { k: 'luat', tu: 'TY_XH_LUAT' },
+    { k: 'trich', t: 'Không dự án nào được tính nếu không nêu được người thụ hưởng cụ thể và tác động cụ thể.', n: 'Luật thứ hai' }
+  ]},
+
+'xh-su-kien': { q: 'chung', k: 'Tuyến xã hội', t: 'Sáu sự kiện trụ cột',
+  p: 'Ba sự kiện lớn mỗi năm, cộng ba dịp mở rộng ra ngoài phạm vi một trường.',
+  khoi: [
+    { k: 'bang', cot: ['Sự kiện', 'Là gì', 'Khi nào', 'Quy mô', 'Vì sao có'], tu: 'TY_XH_SU_KIEN' },
+    { k: 'trich', t: 'Toạ đàm “Người Thắp Sáng Gen Việt” là buổi duy nhất trong năm mà học sinh, phụ huynh và cựu thành viên cùng ngồi một chỗ.', n: 'Sự kiện dễ bỏ nhất và đáng giữ nhất' }
+  ]},
+
+/* ══════════ NHÓM 26 · TUYẾN KHỞI NGHIỆP VÀ CHUYÊN GIA ══════════ */
+'kn-sau-buoc': { q: 'nghe_chung', k: 'Tuyến khởi nghiệp', t: 'Sáu bước vào nghề',
+  p: 'Từ chạm tài năng tới một hồ sơ hướng nghiệp dùng được cho học bổng và tuyển sinh.',
+  khoi: [
+    { k: 'buocso', tu: 'TY_KN_NGHE' },
+    { k: 'muc', t: 'Sáu luật của tuyến khởi nghiệp' },
+    { k: 'luat', tu: 'TY_KN_LUAT' },
+    { k: 'trich', t: 'Bước Task là bắt buộc: gặp mentor và tham quan mà không nhận việc thật thì mới đi được hai phần ba.', n: 'Về Talk — Tour — Task' }
+  ]},
+
+'kn-de-tai': { q: 'nghiem_thu', k: 'Tuyến khởi nghiệp', t: 'Mười đề tài nghiên cứu ứng dụng',
+  p: 'Mỗi đề tài có sản phẩm dùng được ngay cho CLB, và đăng ký được cấp trường, cấp Sở hoặc cấp Bộ.',
+  khoi: [
+    { k: 'bang', cot: ['Mã', 'Tên đề tài', 'Mục tiêu chính', 'Sản phẩm ứng dụng'], tu: 'TY_KN_DE_TAI' },
+    { k: 'van', t: 'Ba đề tài chủ lực cầm lên viết đề án được ngay: **GV-R1** kiểm chứng mô hình 15 giai đoạn · **GV-R2** đo bốn yếu tố bứt phá · **GV-R6** năng lực số và AI. Bảng ánh xạ sang Chương trình giáo dục phổ thông 2018 ở nhóm 18 là phần bắt buộc kèm theo mọi hồ sơ.' },
+    { k: 'trich', t: 'Mọi đề tài phải có sản phẩm ứng dụng trực tiếp cho CLB — không làm nghiên cứu để lấy giấy.', n: 'Luật thứ hai của tuyến' }
+  ]},
+
+'kn-thiet-ke': { q: 'nghiem_thu', k: 'Tuyến khởi nghiệp', t: 'Thiết kế nghiên cứu',
+  p: 'Khung dùng chung cho cả mười đề tài. Thay biến là ra một hồ sơ mới.',
+  khoi: [
+    { k: 'luoi', c: 2, tu: 'TY_KN_THIET_KE' },
+    { k: 'van', t: 'Khung này nối thẳng vào nhóm 16 — ba tầng bằng chứng và tám chỉ số đo được ngoài hệ — và vào nhóm 18, phần ánh xạ sang chuẩn quốc gia. Một hồ sơ đề tài đủ mạnh là hồ sơ có cả ba: thiết kế đúng, bằng chứng tầng ba, và ngôn ngữ chuẩn quốc gia.' },
+    { k: 'trich', t: 'Không có nhóm đối chứng thì mọi con số chỉ là mô tả, không phải bằng chứng.', n: 'Dòng đầu tiên của khung' }
+  ]}
 
 };
 
@@ -1533,6 +1729,17 @@ GV.TU = {
   /* nhóm 20 · tra cứu */
   TC_BAN_DO_L: GV.TC_BAN_DO.map(function (r) {
     return { t: r.t + '  ·  ' + r.nhom, n: r.n, vi: r.vi };
+  }),
+  /* nhóm 21–26 · năm tuyến Gen Việt */
+  TY_PIPELINE_T: GV.TY_PIPELINE.map(function (r) {
+    return { ma: r.ma, t: r.t, toc: r.gd, giu: r.n, ai: 'Ban Điều hành CLB xét', chi: r.vi };
+  }),
+  TY_KHOI_NHOM_L: GV.TY_KHOI_NHOM.map(function (r) {
+    return { so: r.so, t: r.t, n: r.n, v: r.v };
+  }),
+  TY_GD_90_N: GV.TY_GD_90.map(function (r) {
+    return { q: r.ma, chu: r.t + '  ·  ' + r.tuan, mau: r.mau, viec: r.lam,
+             so: [r.dich, 'Đầu ra: ' + r.ra] };
   }),
 
 };

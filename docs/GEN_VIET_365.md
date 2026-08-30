@@ -23,7 +23,7 @@ Học viện GITA · Sứ mệnh: *Nâng tầm trí tuệ vàng Việt Nam*
 - Tập 8 — [`GEN_VIET_365_CAM_TAY.md`](GEN_VIET_365_CAM_TAY.md): phần cầm lên dùng được
   ngay, và bộ tra cứu. **Nếu chỉ đọc được một tập thì đọc tập này.**
 
-Bản trực quan đầy đủ (20 nhóm · 132 màn): mở `genviet365/index.html`.
+Bản trực quan đầy đủ (26 nhóm · 150 màn): mở `genviet365/index.html`.
 Gộp thành một tệp để gửi đi: `node genviet365/dong-goi-artifact.cjs`.
 
 ---

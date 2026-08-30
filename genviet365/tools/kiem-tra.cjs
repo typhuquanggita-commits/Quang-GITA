@@ -24,7 +24,7 @@ var TEP = ['du-lieu.js', 'du-lieu-daotao.js', 'du-lieu-vanhanh.js', 'du-lieu-kyt
            'du-lieu-chuyenmon.js', 'du-lieu-congdong.js', 'du-lieu-thuvien.js',
            'du-lieu-trainghiem.js', 'du-lieu-giatri.js', 'du-lieu-tincay.js',
            'du-lieu-thuonghieu.js', 'du-lieu-banquyen.js',
-           'du-lieu-camtay.js', 'du-lieu-tracuu.js', 'du-lieu-quyen.js',
+           'du-lieu-camtay.js', 'du-lieu-tracuu.js', 'du-lieu-tuyen.js', 'du-lieu-quyen.js',
            'quyen.js', 'man-hinh.js', 'nen/dan-xuat.js', 'nen/so-lieu.js', 'nen/dau-ban.js'];
 var MAY = [];
 

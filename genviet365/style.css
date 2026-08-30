@@ -910,3 +910,47 @@ ul.vai li span{color:var(--muc2); font-size:12.5px}
   text-transform:uppercase; color:var(--muc3)}
 @media print{ .lq{display:none} }
 .ban .dau-ban{font-size:10px; opacity:.62; letter-spacing:.02em}
+
+/* ══════════ NĂM TUYẾN GEN VIỆT ══════════ */
+.tuy{display:grid; gap:14px}
+.tuy article{border:1px solid var(--vien); border-left:4px solid var(--c);
+  border-radius:var(--r); background:var(--the); box-shadow:var(--bong);
+  padding:16px 20px 18px; display:grid; gap:9px; min-width:0}
+.tuy-dau{display:flex; align-items:baseline; gap:11px; flex-wrap:wrap}
+.tuy-dau .m{font-family:var(--ma); font-size:11px; color:#fff; background:var(--c);
+  padding:3px 9px; border-radius:4px}
+.tuy-dau h3{margin:0; font-family:var(--tit); font-size:22px; font-weight:600; letter-spacing:-.01em}
+.tuy .hoi{font-size:14px; color:var(--c); font-style:italic}
+.tuy article>p{margin:0; font-size:13.5px; color:var(--muc); line-height:1.6}
+.tuy ul{margin:0; padding-left:18px; display:grid; gap:5px}
+.tuy li{font-size:13.5px; color:var(--muc2); line-height:1.55}
+.tuy .o{font-size:13px; color:var(--muc2); line-height:1.55; padding-left:12px;
+  border-left:2px solid var(--vien2); min-width:0}
+.tuy .o b{font-family:var(--ma); font-size:9.5px; letter-spacing:.13em; text-transform:uppercase;
+  color:var(--muc3); display:block; margin-bottom:2px}
+.tuy .o.do-t{border-left-color:var(--xanh)}
+.tuy .o.ai-t{border-left-color:var(--son)}
+
+/* mười lăm giai đoạn */
+.gdo{display:grid; gap:0; border:1px solid var(--vien); border-radius:var(--r);
+  overflow:hidden; background:var(--the)}
+.gd-h{display:grid; grid-template-columns:60px minmax(0,1fr); gap:0 16px;
+  padding:15px 20px 17px; border-bottom:1px solid var(--vien)}
+.gd-h:last-child{border-bottom:0}
+.gd-s{display:grid; justify-items:center; gap:5px; height:fit-content}
+.gd-s .n{display:grid; place-items:center; width:38px; height:38px; border-radius:10px;
+  font-family:var(--ma); font-size:15px; color:#fff; background:var(--c);
+  font-variant-numeric:tabular-nums}
+.gd-s .k{font-family:var(--ma); font-size:8.5px; letter-spacing:.08em; text-transform:uppercase;
+  color:var(--muc3); text-align:center; line-height:1.25}
+.gd-n{display:grid; gap:7px; min-width:0}
+.gd-n h3{margin:0; font-size:17.5px; letter-spacing:-.01em; color:var(--c)}
+.gd-n .hoi{font-size:14px; color:var(--muc); font-style:italic}
+.gd-n .o{font-size:13px; color:var(--muc2); line-height:1.55; padding-left:12px;
+  border-left:2px solid var(--vien2); min-width:0}
+.gd-n .o b{font-family:var(--ma); font-size:9.5px; letter-spacing:.13em; text-transform:uppercase;
+  color:var(--muc3); display:block; margin-bottom:2px}
+.gd-n .o.m9{border-left-color:var(--son); color:var(--muc)}
+.gd-n .o.moc{border-left-color:var(--vang)}
+.gd-n .o.do-g{border-left-color:var(--xanh)}
+@media print{ .tuy article,.gd-h{box-shadow:none; break-inside:avoid} }

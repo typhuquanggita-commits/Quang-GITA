@@ -3,7 +3,7 @@
 Ứng dụng trình bày **toàn bộ** hệ thống GEN VIỆT 365 của Học viện GITA: kiến trúc, giáo
 trình, mô hình chi hội, bộ đo, biểu mẫu, dữ liệu và lộ trình 30 năm (2026 – 2056).
 
-**20 nhóm · 132 màn · 17 vai.** Có ô tìm — gõ `/` để nhảy vào. Không cần cài gì, không có bước dựng.
+**26 nhóm · 150 màn · 17 vai.** Có ô tìm — gõ `/` để nhảy vào. Không cần cài gì, không có bước dựng.
 
 Bản viết đầy đủ:
 - [`../docs/GEN_VIET_365.md`](../docs/GEN_VIET_365.md) — tập 1 · kiến trúc
@@ -102,6 +102,7 @@ ra** — không sửa tay; sửa xong nguồn thì gộp lại.
 | `nen/dan-xuat.js` | **Tầng dẫn xuất** — kho tự đăng ký khoá tra · tỉ lệ hiển thị từng vai và từng bậc · bảng vai theo tổ chức · bộ số của hệ · màn liên quan |
 | `nen/so-lieu.js` | **Tầng số liệu** — đọc số viết bằng chữ trong tiêu đề (“Mười hai khoảnh khắc”) rồi đối chiếu với độ dài mảng thật. Trả lời câu hỏi *hệ này nói về chính nó có đúng không* |
 | `nen/dau-ban.js` | Mã băm nội dung và ngày dựng — **bản sinh ra**, không sửa tay |
+| `du-lieu-tuyen.js` | **Năm tuyến Gen Việt, rút từ kho tài liệu gốc của Học viện** — định vị nguyên văn · 5 tuyến · **mô hình 15 giai đoạn** · pipeline 5 cấp · 10 cấp độ CLB · 9 nhóm năng lực A–F · 12 Ban · 5 nhóm × 12 khối lớp · 90 ngày và 5S · dự án phụng sự và 6 sự kiện · 10 đề tài GV-R · 14 nguồn |
 | `du-lieu-camtay.js` | **Phần giao ra, không mô tả:** bảy câu hỏi bàn ăn · bản đọc ca một trang · giáo án buổi 1 từng phút · 4 kịch bản gọi điện · 5 thư mẫu có bản viết sẵn · bản đồ 11 ô, Goal Map, sổ phục hồi · 12 câu phỏng vấn Coach · bảng chấm cổng chi tiết |
 | `du-lieu-tracuu.js` | Từ điển thuật ngữ có cột tiếng Anh · Sổ Chuẩn và tám cột của nó · bản đồ toàn hệ tám phần · mười đường đọc theo vai |
 | `du-lieu-quyen.js` | 17 vai · 13 tầng hiển thị · bảng ghi đè · bậc năng lực học viên → bậc quyền · tỉ lệ hiển thị mong muốn · 6 luật phân quyền |
@@ -114,8 +115,8 @@ ra** — không sửa tay; sửa xong nguồn thì gộp lại.
 | `tools/sinh-camtay.cjs` | Sinh `docs/GEN_VIET_365_CAM_TAY.md` từ hai kho cầm tay và tra cứu |
 | `tools/kiem-tra.cjs` | **Bộ kiểm phát hành** — bốn lớp: tĩnh · bản cắt · chạy thật · cổng phân quyền |
 | `du-lieu-kythuat.js` | Cấu trúc hộ chiếu JSON · 5 luật ghi dữ liệu · 12 bảng lưu · 9 đường máy chủ · 10 quyền · 7 nguyên tắc dựng phần mềm |
-| `man-hinh.js` | `GV.NHOM` (20 nhóm điều hướng) · `GV.MAN` (132 màn, mỗi màn là danh sách KHỐI) · `GV.TU` (bảng tra nối khối tới dữ liệu) |
-| `giao-dien.js` | Lớp dựng: 63 loại khối · vẽ Ấn Gen Việt bằng SVG · bộ máy tìm bỏ dấu, lọc theo quyền · vỏ ứng dụng · định tuyến theo hash · nhớ màn đang đọc |
+| `man-hinh.js` | `GV.NHOM` (26 nhóm điều hướng) · `GV.MAN` (150 màn, mỗi màn là danh sách KHỐI) · `GV.TU` (bảng tra nối khối tới dữ liệu) |
+| `giao-dien.js` | Lớp dựng: 65 loại khối · vẽ Ấn Gen Việt bằng SVG · bộ máy tìm bỏ dấu, lọc theo quyền · vỏ ứng dụng · định tuyến theo hash · nhớ màn đang đọc |
 | `style.css` | Bảng màu lấy từ nhận diện GITA · kiểu chữ · bố cục · sáng và tối |
 | `index.html` | Vỏ — nạp phông rồi nạp mười tám tệp JS theo đúng thứ tự |
 | `dong-goi-artifact.cjs` | Gộp tất cả thành một trang tự chứa |
@@ -137,5 +138,5 @@ Cùng quy ước với hệ thống GITA 365 v8: không thư viện ngoài, mọ
 node --check genviet365/*.js
 ```
 
-Rồi mở thử toàn bộ 132 màn ở cả hai chế độ sáng và tối, và ở khổ điện thoại — bộ kiểm cần
+Rồi mở thử toàn bộ 150 màn ở cả hai chế độ sáng và tối, và ở khổ điện thoại — bộ kiểm cần
 bắt được ba thứ: màn dựng ra quá ngắn, khối thiếu loại, và trang tràn ngang.
