@@ -3,16 +3,18 @@ import { useAuth, lockReason } from '@/lib/auth';
 import { Card, LockedBox, M, Note } from '@/components/ui';
 import { FORMULAS, GITA_FULL_NAME, GITA_SLOGAN, GRADES, TERM_LABEL, getRoadmap, getTermMindMap, lessonsOfTopic, topicsOfGrade } from '@/content';
 import { generateDrill } from '@/lib/exams';
+import { GEO_PROBLEMS } from '@/bank/g9-hinh';
 import { Logo } from '@/components/Logo';
 import type { Grade, Level, Question } from '@/types';
 
-type Doc = 'phieu' | 'so-do' | 'cong-thuc' | 'de-cuong';
+type Doc = 'phieu' | 'so-do' | 'cong-thuc' | 'de-cuong' | 'bai-hinh';
 
 const DOCS: { k: Doc; icon: string; name: string; desc: string }[] = [
   { k: 'phieu', icon: '📄', name: 'Phiếu bài tập theo chuyên đề', desc: 'Sinh phiếu bài tập in được, kèm đáp án và lời giải ở trang cuối.' },
   { k: 'so-do', icon: '🗺', name: 'Sơ đồ tư duy tổng hợp', desc: 'Sơ đồ tư duy toàn chuyên đề / học kỳ, in khổ A4 dán góc học tập.' },
   { k: 'cong-thuc', icon: '📐', name: 'Bảng công thức điểm 10', desc: 'Bảng công thức trọng tâm theo khối, kèm điều kiện và bẫy thường gặp.' },
   { k: 'de-cuong', icon: '📚', name: 'Đề cương ôn tập', desc: 'Đề cương giữa kỳ, cuối kỳ, cả năm và ôn hè theo cấu trúc chuẩn.' },
+  { k: 'bai-hinh', icon: '📐', name: 'Tuyển tập bài hình thi vào 10', desc: 'Các câu hình nhiều ý theo cấu trúc đề tuyển sinh, kèm thang điểm và lời giải.' },
 ];
 
 export const Library: React.FC = () => {
@@ -221,6 +223,48 @@ export const Library: React.FC = () => {
 
             <div className="gita-slogan">‘‘{GITA_SLOGAN}’’</div>
           </>
+        )}
+
+        {doc === 'bai-hinh' && (
+          perms.canVDC ? (
+            <>
+              <div className="tc mb6">
+                <h2 style={{ marginBottom: 4 }}>TUYỂN TẬP BÀI HÌNH THI VÀO LỚP 10</h2>
+                <div className="faint">Thách thức tài năng Toán 9 · {GEO_PROBLEMS.length} bài · mỗi bài 3–4 ý theo cấu trúc đề tuyển sinh</div>
+              </div>
+              <Note title="🧭 Chiến thuật làm câu hình thi vào 10" tone="gold">
+                <p className="mb0 small">
+                  Ý a và ý b hầu như luôn làm được — phải lấy trọn điểm trước khi nghĩ tới ý cuối.
+                  Vẽ hình to, ghi đủ ký hiệu vuông góc và đoạn bằng nhau; hình đúng là nửa lời giải.
+                </p>
+              </Note>
+              {GEO_PROBLEMS.map((g, i) => (
+                <div key={i} className="mb8" style={{ breakInside: 'avoid' }}>
+                  <div className="gita-section">BÀI {i + 1}</div>
+                  {g.stem.split('\n').map((line, j) => (line.trim() ? <p key={j} className={/^[a-d]\)/.test(line.trim()) ? 'small' : 'bold'}><M t={line} /></p> : null))}
+                  <div className="note">
+                    <div className="note-title">🧠 Phân tích tư duy</div>
+                    <ul className="mb0 small">{g.thinking.map((t, j) => <li key={j}><M t={t} /></li>)}</ul>
+                  </div>
+                  <div className="sol">
+                    <h5>Lời giải</h5>
+                    <ol className="small">{g.solution.map((l, j) => <li key={j}><M t={l} /></li>)}</ol>
+                  </div>
+                  <div className="table-scroll mt3">
+                    <table className="table">
+                      <thead><tr><th>Thang điểm</th><th className="tc">Điểm</th></tr></thead>
+                      <tbody>
+                        {g.rubric.map((r, j) => (
+                          <tr key={j}><td className="small"><M t={r.criterion} /></td><td className="tc bold">{r.points}</td></tr>
+                        ))}
+                        <tr><td className="bold tr">Tổng</td><td className="tc bold" style={{ color: 'var(--gita-navy-800)' }}>{g.rubric.reduce((s2, r) => s2 + r.points, 0)}</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              ))}
+            </>
+          ) : <LockedBox reason={lockReason(perms)} />
         )}
 
         {doc === 'so-do' && (

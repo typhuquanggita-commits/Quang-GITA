@@ -61,7 +61,8 @@ Mỗi chuyên đề được biên soạn theo một chuẩn thống nhất:
 | Thẻ Cẩm nang công thức điểm 10 | **86** |
 | Chuyên đề HSG · Kỹ thuật lõi | **8** · 28 |
 | Mốc lộ trình học tập | 24 |
-| Khuôn câu hỏi tham số hoá | **181** |
+| Khuôn câu hỏi tham số hoá | **182** |
+| Bài hình thi vào 10 nhiều ý (có thang điểm) | **6** |
 | Đề · Câu hỏi sinh ra | **432** · **7.884** |
 
 ## 4. Ngân hàng đề
@@ -73,7 +74,7 @@ Mỗi chuyên đề được biên soạn theo một chuẩn thống nhất:
 - **Bộ luyện theo chuyên đề** cho từng chuyên đề.
 
 Tổng cộng **432 đề** / **7.884 câu hỏi**, mỗi mã đề sinh ra một bộ câu hỏi riêng, sinh từ
-**181 khuôn câu hỏi tham số hoá** phủ kín 4 mức độ nhận thức và 4 loại câu hỏi.
+**182 khuôn câu hỏi tham số hoá** phủ kín 4 mức độ nhận thức và 4 loại câu hỏi.
 
 **Cách hoạt động:** câu hỏi được sinh từ *khuôn tham số hoá* (`src/bank/`). Mỗi khuôn tự sinh
 số liệu, đáp án, **lời giải từng bước**, phân tích tư duy và cảnh báo bẫy. Mỗi mã đề gắn với
@@ -156,6 +157,9 @@ Trang **Thư viện** sinh tài liệu in được (A4, có tiêu đề GITA, đ
 - **Sơ đồ tư duy tổng hợp** toàn khối.
 - **Bảng công thức điểm 10**.
 - **Đề cương ôn tập** theo cấu trúc chuẩn.
+- **Tuyển tập bài hình thi vào 10** — biên soạn theo bộ “Thách thức tài năng Toán 9” của GITA:
+  mỗi bài 3–4 ý theo đúng cấu trúc câu hình đề tuyển sinh, kèm phân tích tư duy, lời giải đầy đủ
+  và thang điểm chi tiết 5,0 điểm.
 
 ## 12. Chạy dự án
 
