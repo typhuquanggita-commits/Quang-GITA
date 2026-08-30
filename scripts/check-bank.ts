@@ -14,6 +14,7 @@ import { TACTICS } from '../src/data/tactics.ts';
 import { VOCABULARY, vocabStats } from '../src/data/vocabulary.ts';
 import { allCoursePlans, coverage, curriculumProblems } from '../src/engine/curriculum.ts';
 import { SOLUTIONS, solutionStats } from '../src/data/solution-index.ts';
+import { MUST_KNOW, mustKnowStats } from '../src/data/mustKnow.ts';
 
 const problems: string[] = [];
 const seen = new Set<string>();
@@ -316,6 +317,53 @@ for (const problem of curriculumProblems([...skillIds])) problems.push(problem);
   }
 }
 
+/*
+ * The must-know reference.
+ *
+ * The `given` flag is what makes this document useful rather than another
+ * formula list — it is the difference between "here is everything" and "here
+ * is what the exam withholds". Marking a fact as given when it is not would
+ * send a candidate into the hall expecting a formula that never arrives, so
+ * the count is pinned rather than trusted.
+ *
+ * `cost` is the other load-bearing field: it is why a fact is on the list at
+ * all, and a cost of zero would mean an entry with no reason to be memorised.
+ */
+{
+  const seenFact = new Set<string>();
+  for (const fact of MUST_KNOW) {
+    const where = `must-know ${fact.id}`;
+    if (seenFact.has(fact.id)) problems.push(`${where}: duplicate id`);
+    seenFact.add(fact.id);
+
+    if (fact.cost < 5) problems.push(`${where}: no cost, so no reason to memorise it`);
+    if (fact.cost > 60) problems.push(`${where}: a minute of derivation is a lesson, not a fact`);
+    // A bare identity is a complete statement and can be legitimately short —
+    // "x⁰ = 1" needs no elaboration — so the floor is low enough not to force
+    // padding, and the bilingual check below is what actually catches a
+    // half-written entry.
+    if (fact.fact.trim().length < 12) problems.push(`${where}: the fact is not stated`);
+    if (!fact.factVi.trim() || !fact.whyVi.trim()) problems.push(`${where}: not bilingual`);
+    if (fact.why.trim().length < 50) problems.push(`${where}: no reason recall beats derivation`);
+    if (fact.why.toLowerCase().includes('because it is on the test')) {
+      problems.push(`${where}: "it is on the test" is not a reason`);
+    }
+    if (!fact.drill.prompt.trim() || !fact.drill.answer.trim()) {
+      problems.push(`${where}: no drill, so it cannot be self-tested`);
+    }
+    if (!fact.drill.promptVi.trim()) problems.push(`${where}: the drill is not bilingual`);
+  }
+
+  /*
+   * The official reference sheet carries six formulas and three facts. If this
+   * count drifts far from that, either the sheet has changed or an entry has
+   * been mislabelled — and a candidate expecting a formula that never arrives
+   * is the worse of the two failures.
+   */
+  const given = MUST_KNOW.filter((f) => f.given).length;
+  if (given > 9) problems.push(`must-know: ${given} entries claim to be on the reference sheet, which carries nine`);
+}
+
 const tacticIds = new Set(TACTICS.map((t) => t.id));
 if (tacticIds.size !== TACTICS.length) problems.push('tactics: duplicate id');
 
@@ -329,6 +377,13 @@ console.log(`Lessons: ${LESSONS.length} for ${skillIds.size} skills`);
   );
 }
 console.log(`Topics:  ${TOPICS.length} with ${TOPICS.reduce((n, t) => n + t.types.length, 0)} question types`);
+{
+  const mk = mustKnowStats();
+  console.log(
+    `Must know: ${mk.total} facts — ${mk.given} on the reference sheet, ${mk.mustCarry} the candidate carries; ` +
+      `${mk.costIfDerived}s per module lost by deriving instead of recalling`,
+  );
+}
 {
   const sol = solutionStats();
   console.log(

@@ -134,6 +134,9 @@ const Roadmap = lazy(() =>
 const ExpertSolutions = lazy(() =>
   import('../solutions/ExpertSolutions.tsx').then((m) => ({ default: m.ExpertSolutions })),
 );
+const MustKnow = lazy(() =>
+  import('../reference/MustKnow.tsx').then((m) => ({ default: m.MustKnow })),
+);
 const OrgMetrics = lazy(() =>
   import('../metrics/OrgMetrics.tsx').then((m) => ({ default: m.OrgMetrics })),
 );
@@ -296,6 +299,11 @@ function Shell(): React.ReactElement {
           route: { name: 'expert-solutions' },
           label: locale === 'vi' ? 'Lời giải chuyên gia' : 'Expert solutions',
           icon: <IconSparkle size={18} />,
+        },
+        {
+          route: { name: 'must-know' },
+          label: locale === 'vi' ? 'Phải thuộc lòng' : 'Must know',
+          icon: <IconSigma size={18} />,
         },
         {
           route: { name: 'roadmap' },
@@ -599,6 +607,8 @@ function RouteView({
       return <Roadmap navigate={navigate} />;
     case 'expert-solutions':
       return <ExpertSolutions navigate={navigate} />;
+    case 'must-know':
+      return <MustKnow />;
     case 'settings':
       return <Settings />;
     default:

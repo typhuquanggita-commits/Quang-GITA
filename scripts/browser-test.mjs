@@ -674,6 +674,7 @@ try {
     ['the topic packets', '#/topics'],
     ['the tactics treasury', '#/tactics'],
     ['the expert solutions', '#/expert-solutions'],
+    ['the must-know reference', '#/must-know'],
     ['the papers shelf', '#/papers'],
     ['the shortcuts sheet', '#/shortcuts'],
     ['settings', '#/settings'],
@@ -735,6 +736,24 @@ try {
    * The wrong turn is the field this library exists for, and it is behind a
    * reveal so the reasoning is read forwards. Both halves are checked.
    */
+  /*
+   * The whole value of this page is the asymmetry between what the exam gives
+   * and what the candidate carries, so both counts are checked, and so is the
+   * drill hiding its answers until asked.
+   */
+  await page.evaluate(() => { window.location.hash = '#/must-know'; });
+  await page.waitForTimeout(700);
+  const facts = await page.locator('.mk-fact').count();
+  check('the must-know list is complete', facts >= 40, `${facts} facts`);
+  const given = await page.locator('.mk-fact[data-given]').count();
+  check('the exam-supplied formulas are marked apart', given > 0 && given <= 9, `${given} marked as given`);
+
+  await page.getByRole('button', { name: /Tự kiểm tra|Self-test/ }).click();
+  await page.waitForTimeout(400);
+  const drills = await page.locator('.mk-drill').count();
+  check('every fact can be self-tested', drills === facts, `${drills} drills for ${facts} facts`);
+  check('drill answers stay hidden until asked', (await page.locator('.mk-answer').count()) === 0);
+
   await page.evaluate(() => { window.location.hash = '#/expert-solutions'; });
   await page.waitForTimeout(800);
   const cards = await page.locator('.solution-card').count();

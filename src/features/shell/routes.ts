@@ -22,6 +22,7 @@ export type Route =
   | { name: 'programmes' }
   | { name: 'tactics' }
   | { name: 'expert-solutions' }
+  | { name: 'must-know' }
   | { name: 'papers' }
   | { name: 'paper'; paperId: string }
   | { name: 'packet'; skill: string }
@@ -62,6 +63,7 @@ export const ROUTE_PERMISSION: Partial<Record<RouteName, Permission>> = {
   programmes: 'practice.run',
   tactics: 'practice.run',
   'expert-solutions': 'practice.run',
+  'must-know': 'practice.run',
   papers: 'test.take',
   paper: 'test.take',
   packet: 'practice.run',
@@ -144,6 +146,8 @@ export function hashToRoute(hash: string): Route {
       return { name: 'tactics' };
     case 'expert-solutions':
       return { name: 'expert-solutions' };
+    case 'must-know':
+      return { name: 'must-know' };
     case 'papers':
       return { name: 'papers' };
     case 'paper':

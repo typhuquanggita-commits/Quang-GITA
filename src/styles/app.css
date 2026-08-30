@@ -1514,3 +1514,41 @@ mark.hl[data-note='true'] { border-bottom: 2px dotted currentColor; cursor: poin
 }
 .solution-transfer svg { flex: none; margin-top: 3px; color: var(--primary); }
 .solution-transfer p { margin-top: 2px; max-width: 72ch; line-height: var(--leading-normal); }
+
+/* ================================================================== */
+/* Must-know reference                                                 */
+/* ================================================================== */
+
+.mk-list { list-style: none; display: grid; gap: var(--space-3); }
+.mk-fact {
+  padding: var(--space-4);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--warning);
+  border-radius: var(--radius-md);
+  display: grid;
+  gap: var(--space-2);
+  break-inside: avoid;
+}
+/* Marked by rule colour and by a text badge, never by colour alone. */
+.mk-fact[data-given] { border-left-color: var(--info, var(--primary)); }
+.mk-fact-head { display: flex; gap: var(--space-3); justify-content: space-between; flex-wrap: wrap; align-items: start; }
+.mk-statement { font-weight: var(--weight-semibold); max-width: 60ch; line-height: var(--leading-normal); }
+.mk-why { color: var(--text-muted); max-width: 72ch; line-height: var(--leading-normal); font-size: var(--text-sm); }
+
+.mk-drills { display: grid; grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr)); gap: var(--space-3); }
+.mk-drill {
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  background: var(--surface-2);
+  display: grid;
+  gap: var(--space-3);
+  align-content: start;
+}
+.mk-drill p { line-height: var(--leading-normal); }
+.mk-answer {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-weight: var(--weight-semibold);
+  color: var(--success);
+}
