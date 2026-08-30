@@ -61,7 +61,7 @@ Mỗi chuyên đề được biên soạn theo một chuẩn thống nhất:
 | Thẻ Cẩm nang công thức điểm 10 | **86** |
 | Chuyên đề HSG · Kỹ thuật lõi | **8** · 28 |
 | Mốc lộ trình học tập | 24 |
-| Khuôn câu hỏi tham số hoá | **236** |
+| Khuôn câu hỏi tham số hoá | **268** |
 | Bài hình tự luận nhiều ý (có thang điểm) — khối 7 · 8 · 9 | **6** · **5** · **6** |
 | Đề · Câu hỏi sinh ra | **432** · **7.884** |
 
@@ -74,7 +74,7 @@ Mỗi chuyên đề được biên soạn theo một chuẩn thống nhất:
 - **Bộ luyện theo chuyên đề** cho từng chuyên đề.
 
 Tổng cộng **432 đề** / **7.884 câu hỏi**, mỗi mã đề sinh ra một bộ câu hỏi riêng, sinh từ
-**236 khuôn câu hỏi tham số hoá** phủ kín 4 mức độ nhận thức và 4 loại câu hỏi.
+**268 khuôn câu hỏi tham số hoá** phủ kín 4 mức độ nhận thức và 4 loại câu hỏi.
 
 **Cách hoạt động:** câu hỏi được sinh từ *khuôn tham số hoá* (`src/bank/`). Mỗi khuôn tự sinh
 số liệu, đáp án, **lời giải từng bước**, phân tích tư duy và cảnh báo bẫy. Mỗi mã đề gắn với

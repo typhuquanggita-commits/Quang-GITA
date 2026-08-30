@@ -135,9 +135,10 @@ export const BANK_G6: Template[] = [
         options: opts, answer: key,
         thinking: [`Xét từng số với số chia ${m}, rồi áp dụng tính chất chia hết của tổng và hiệu.`],
         solution: [
-          `$${a}=${m}\\cdot${a / m}$ nên $${a}\;\\vdots\;${m}$.`,
-          `$${b}=${m}\\cdot${b / m}$ nên $${b}\;\\vdots\;${m}$; do đó tổng và hiệu của chúng đều chia hết cho $${m}$.`,
-          `$${c}$ chia $${m}$ dư $${c % m}$ nên $${a}+${c}$ **không** chia hết cho $${m}$.`,
+          `a) **Đúng** — $${a}=${m}\\cdot${a / m}$ nên $${a}\;\\vdots\;${m}$.`,
+          `b) **Đúng** — $${b}=${m}\\cdot${b / m}$ cũng chia hết cho $${m}$; tổng hai số cùng chia hết cho $${m}$ thì chia hết cho $${m}$.`,
+          `c) **Sai** — $${c}$ chia $${m}$ dư $${c % m}$; một số chia hết cộng một số không chia hết thì tổng **không** chia hết.`,
+          `d) **Đúng** — hiệu của hai số cùng chia hết cho $${m}$ thì chia hết cho $${m}$.`,
         ],
         pitfall: 'Một số chia hết cộng một số không chia hết thì tổng KHÔNG chia hết.',
       };

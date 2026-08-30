@@ -196,7 +196,10 @@ export const BANK_G7_PLUS: Template[] = [
     id: 'g7.th-tf-song-song', topicId: 'g7-t4', grade: 7, level: 'TH', kind: 'TF',
     strand: 'HINH_HOC', tag: 'Đúng/Sai — hai đường thẳng song song',
     build: (r) => {
-      const a = r.int(35, 145);
+      // Loại a = 90: khi đó góc trong cùng phía cũng bằng 90 độ, hai ý c và d trùng nhau
+      // và khẳng định c trở thành đúng — đề sẽ tự mâu thuẫn.
+      let a = r.int(35, 145);
+      if (a === 90) a = 85;
       return {
         stem: `Cho $a\\para b$ bị cắt bởi cát tuyến $c$, tạo thành một góc có số đo $${a}\\deg$. Xét tính đúng – sai:`,
         options: [
