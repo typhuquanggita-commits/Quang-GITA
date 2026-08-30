@@ -59,7 +59,7 @@ Mỗi chuyên đề được biên soạn theo một chuẩn thống nhất:
 | Dạng bài · Ví dụ mẫu có phân tích tư duy | **117** · **119** |
 | Bước phương pháp · Bộ kỹ năng luyện bài | 359 · 44 |
 | Thẻ Cẩm nang công thức điểm 10 | **86** |
-| Chuyên đề HSG · Kỹ thuật lõi | **8** · 28 |
+| Chuyên đề HSG · Kỹ thuật lõi · Bài mẫu | **19** · **68** · **31** |
 | Mốc lộ trình học tập | 24 |
 | Khuôn câu hỏi tham số hoá | **268** |
 | Bài hình tự luận nhiều ý (có thang điểm) — khối 7 · 8 · 9 | **6** · **5** · **6** |
