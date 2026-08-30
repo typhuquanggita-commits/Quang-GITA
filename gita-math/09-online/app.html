@@ -288,6 +288,7 @@ input[type=search]{min-width:230px}
       <div class="nav-h">Kiến thức</div>
       <button data-v="ban-do">Bản đồ kiến thức<span class="k">4</span></button>
       <button data-v="doc-vi">Sơ đồ đọc vị<span class="k">D</span></button>
+      <button data-v="lo-trinh-chuan">Lộ trình chuẩn<span class="k">L</span></button>
       <button data-v="chuyen-de">8 nhóm chuyên đề<span class="k">5</span></button>
       <button data-v="cum">96 cụm chuyên đề<span class="k">8</span></button>
       <div class="nav-h">Đánh giá</div>
@@ -340,6 +341,7 @@ const DATA = (() => {
   };
   for (const k in (d.kem || {})) ghep(d.kem[k]);
   for (const x of (d.so_do || [])) ghep(x);
+  for (const x of (d.lo_trinh || [])) ghep(x);
   for (const x of (d.ban_do || [])) ghep(x);
   return d;
 })();
@@ -1249,6 +1251,40 @@ function veKem(ma) {
     <div class="card pad md">${mdToHtml(d.md)}</div>`;
 }
 
+/* ========================= TRANG: LỘ TRÌNH CHUẨN CỦA TUYẾN ========================= */
+function veLoTrinhChuan(ma) {
+  const ds = DATA.lo_trinh || [];
+  if (ma) {
+    const d = ds.find(x => x.ma === ma);
+    if (!d) return veLoTrinhChuan();
+    MAIN().innerHTML = `<div class="row" style="margin-bottom:14px">
+      <button class="btn" data-go="lo-trinh-chuan">← Tất cả lộ trình</button>
+      <button class="btn" data-go="lo-trinh">Lộ trình của tôi</button></div>
+      <div class="card pad md">${mdToHtml(d.md)}</div>`;
+    return;
+  }
+  MAIN().innerHTML = `
+  <div class="page-h"><div><div class="eyebrow">Kế hoạch cả năm</div>
+    <h1>Lộ trình chuẩn của tuyến</h1>
+    <p class="sub">Sáu lộ trình 34 tuần, mỗi lộ trình trả lời bốn câu: tuần này học gì ·
+    học xong phải có sản phẩm gì · khi nào được đi tiếp · quên rồi thì ôn lại lúc nào.
+    Đây là kế hoạch chung của tuyến; “Lộ trình của tôi” là bản điều chỉnh theo kết quả của em.</p>
+  </div></div>
+  ${[3, 4, 5].map(l => `<h3 style="font-size:15px;margin:18px 0 10px">Lớp ${l}</h3>
+    <div class="grid g2">${["T1", "T2"].map(t => {
+      const d = ds.find(x => x.t === t && x.l === l); if (!d) return "";
+      const n = DATA.chi_muc.filter(x => x.t === t && x.l === l && x.hoc).length;
+      return `<a class="card pad" href="#/lo-trinh-chuan/${d.ma}"
+        style="text-decoration:none;color:inherit;display:block;border-left:4px solid ${
+          t === "T1" ? "var(--xanh)" : "var(--do)"}">
+        <div class="eyebrow">${t === "T1" ? "Tuyến 1 — nền tảng đến nâng cao"
+          : "Tuyến 2 — thi CLC và thi Chuyên"}</div>
+        <h4 style="font-size:15px;margin:6px 0 8px">Lớp ${l} · ${t}</h4>
+        <div class="row"><span class="chip">${n} buổi học</span>
+        <span class="chip">34 tuần</span><span class="chip">4 cổng</span></div></a>`;
+    }).join("")}</div>`).join("")}`;
+}
+
 /* ============================ TRANG: SƠ ĐỒ ĐỌC VỊ ============================ */
 let LOC_DV = { lop: 4 };
 function veDocVi(ma) {
@@ -1708,7 +1744,8 @@ function veHoSo() {
 /* ============================== ĐIỀU HƯỚNG ============================== */
 const TRANG = {
   "tong-quan": veTongQuan, "lo-trinh": veLoTrinh, "thu-vien": veThuVien,
-  "ban-do": veBanDo, "doc-vi": veDocVi, "chuyen-de": veChuyenDe, "cum": veDanhSachCum,
+  "ban-do": veBanDo, "doc-vi": veDocVi, "lo-trinh-chuan": veLoTrinhChuan,
+  "chuyen-de": veChuyenDe, "cum": veDanhSachCum,
   "de-thi": veDeThi, "phan-quyen": vePhanQuyen, "test": veTest, "ho-so": veHoSo
 };
 function dinhTuyen() {
@@ -1722,6 +1759,7 @@ function dinhTuyen() {
   else if (v === "de" && a) { veDe(decodeURIComponent(a)); }
   else if (v === "ban-do") { veBanDo(a); }
   else if (v === "doc-vi") { veDocVi(a); }
+  else if (v === "lo-trinh-chuan") { veLoTrinhChuan(a); }
   else (TRANG[v] || veTongQuan)();
   MAIN().focus({ preventScroll: true });
   window.scrollTo({ top: 0 });
@@ -1759,7 +1797,8 @@ function capNhatGhiChuVai() {
 }
 /* Ẩn mục điều hướng mà vai trò hiện tại không có quyền xem */
 const NAV_QUYEN = { "de-thi": "de_moc", "ho-so": "ho_so_minh", "thu-vien": "chi_muc",
-  "ban-do": "ban_do", "doc-vi": "ban_do", "chuyen-de": "chi_muc",
+  "ban-do": "ban_do", "doc-vi": "ban_do", "lo-trinh-chuan": "ban_do",
+  "chuyen-de": "chi_muc",
   "cum": "chi_muc", "test": "test_dv" };
 function loc_nav_theo_quyen() {
   $$("#nav button[data-v]").forEach(b => {

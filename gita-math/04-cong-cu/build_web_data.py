@@ -260,6 +260,13 @@ def main() -> None:
         d = doc_test(p)
         test[d["meta"]["ma_de"]] = d
 
+    lo_trinh = []
+    for f in sorted((ROOT / "05-lo-trinh").glob("lo-trinh-*.md")):
+        md = f.read_text(encoding="utf-8")
+        t, lop = f.stem.split("-")[2], int(f.stem.split("-")[3][1:])
+        lo_trinh.append({"ma": f.stem, "t": t, "l": lop,
+                         "ten": md.splitlines()[0].lstrip("# "), "md": tach_dong_md(md)})
+
     so_do = []
     for f in sorted((ROOT / "10-so-do-doc-vi").glob("so-do-*.md")):
         md = f.read_text(encoding="utf-8")
@@ -302,6 +309,7 @@ def main() -> None:
         "cum": cum_ds,
         "ban_do": ban_do,
         "so_do": so_do,
+        "lo_trinh": lo_trinh,
         "cay_doc_vi": {"mo": CAU_MO, "cay": CAY, "chot": CHOT, "nham": DOC_NHAM},
         "mach": mach,
         "phieu": phieu,
