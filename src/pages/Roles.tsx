@@ -10,6 +10,7 @@ import {
 } from '@/data/roles';
 import { PRO_LEVELS } from '@/data/gita';
 import { currentRole, applyRole } from '@/lib/auth';
+import { account, ACCESS_NOTICE, PLAN_LABEL, type PlanId } from '@/lib/account';
 import { Card, SectionTitle, Badge, Callout } from '@/components/ui';
 
 const GROUPS: RoleGroup[] = ['hoc-sinh', 'giao-vien', 'quan-tri'];
@@ -26,11 +27,66 @@ export default function Roles() {
         desc="Tám vai trò chia làm ba nhóm: học sinh (4 cấp), giáo viên (3 cấp) và quản trị. Mỗi vai trò có phạm vi, giới hạn và tiêu chí thăng cấp rõ ràng."
       />
 
-      <Callout tone="amber" title="Lưu ý kỹ thuật quan trọng">
-        Phân quyền trong bản này được thực thi ở phía trình duyệt, phục vụ việc định hình trải nghiệm và
-        quy trình nghiệp vụ. Khi triển khai thật, <b>mọi kiểm tra quyền bắt buộc phải được thực hiện lại
-        ở phía máy chủ</b> — không bao giờ tin vào trạng thái do trình duyệt gửi lên.
-      </Callout>
+      {ACCESS_NOTICE && (
+        <Callout tone="rose" title="Bản này chưa có đăng nhập và chưa kiểm soát được truy cập">
+          {ACCESS_NOTICE}
+        </Callout>
+      )}
+
+      <section>
+        <h2 className="mb-1 text-[17px] font-extrabold text-slate-900">
+          Ba gói học và ranh giới nội dung
+        </h2>
+        <div className="mb-3 text-[12.5px] leading-relaxed text-slate-600">
+          Gói học quyết định nội dung được mở, và <b>độc lập với vai trò</b>: một học sinh có vai trò
+          cao nhưng hết hạn học phí thì vẫn bị chặn. Ranh giới này chỉ có hiệu lực thật khi nội dung
+          trả phí được đặt sau máy chủ — hiện tại toàn bộ nội dung nằm trong gói mã tải về trình duyệt,
+          nên chưa có ranh giới nào cả.
+        </div>
+        <div className="grid gap-3 md:grid-cols-3">
+          {(Object.keys(PLAN_LABEL) as PlanId[]).map((p) => {
+            const meta = PLAN_LABEL[p];
+            const active = account.current(state).plan === p;
+            return (
+              <Card key={p} className={`p-5 ${active ? 'ring-1 ring-brand' : ''}`}>
+                <div className="flex flex-wrap items-center gap-2">
+                  <span
+                    className="rounded-full px-2 py-0.5 text-[11px] font-bold text-white"
+                    style={{ background: meta.color }}
+                  >
+                    {meta.short}
+                  </span>
+                  {active && <Badge tone="brand">Đang áp dụng</Badge>}
+                </div>
+                <div className="mt-1.5 text-[14.5px] font-extrabold text-slate-900">{meta.label}</div>
+                <div className="mt-1 text-[12.5px] leading-relaxed text-slate-600">{meta.desc}</div>
+              </Card>
+            );
+          })}
+        </div>
+        <Card className="mt-3 p-5">
+          <div className="text-[13px] font-extrabold text-slate-900">
+            Cần gì để ranh giới này có hiệu lực thật
+          </div>
+          <ol className="mt-2 space-y-1.5">
+            {[
+              'Dựng máy chủ xác thực: đăng ký, đăng nhập, phiên đăng nhập có thời hạn.',
+              'Thêm bảng gói học gắn với từng tài khoản, có ngày bắt đầu và ngày hết hạn.',
+              'Chuyển lời giải chi tiết và phần đề trả phí ra khỏi gói mã trình duyệt, lấy qua API.',
+              'Máy chủ kiểm tra gói học trước khi trả nội dung; hết hạn thì từ chối.',
+              'Viết một provider mới cài đặt giao diện AccountProvider trong src/lib/account.ts và đổi đúng một dòng.',
+            ].map((x, i) => (
+              <li key={x} className="text-[12.5px] leading-relaxed text-slate-700">
+                {i + 1}. {x}
+              </li>
+            ))}
+          </ol>
+          <div className="mt-2 text-[12px] leading-relaxed text-slate-500">
+            Đặc tả đầy đủ gồm mô hình dữ liệu, danh sách API và bảng phân quyền theo vai trò nằm ở
+            tệp <span className="font-mono">docs/DANG-NHAP-VA-PHAN-QUYEN.md</span> trong kho mã.
+          </div>
+        </Card>
+      </section>
 
       <Card className="p-5">
         <div className="flex flex-wrap items-center gap-3">

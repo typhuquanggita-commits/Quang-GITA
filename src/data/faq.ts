@@ -226,6 +226,16 @@ export const FAQS: FaqItem[] = [
     q: 'Hai người mở cùng một mã đề có thấy cùng một đề không?',
     a: 'Có. Mỗi đề có một mã cố định và một hạt giống riêng, nên nội dung không đổi qua các lần mở và không đổi giữa các máy. Nhờ vậy giáo viên có thể giao "làm đề BD-9-042" và chắc chắn cả lớp làm đúng cùng một đề. Đây cũng là lý do bạn có thể quay lại làm lại một đề đã làm để so tiến bộ.',
   },
+  {
+    page: 'phan-quyen',
+    q: 'MATH365 có đăng nhập tài khoản và chặn nội dung theo học phí chưa?',
+    a: 'Chưa. Phiên bản hiện tại chạy hoàn toàn trên trình duyệt và lưu dữ liệu trong bộ nhớ của chính máy bạn, nên chưa có đăng nhập bằng tài khoản, chưa đồng bộ giữa nhiều thiết bị và chưa chặn được nội dung theo gói học. Bảng tám vai trò và mười sáu quyền trong hệ thống dùng để định hình trải nghiệm và quy trình nghiệp vụ, không phải để kiểm soát truy cập: bất kỳ ai mở công cụ nhà phát triển đều tự đổi được vai trò của mình. Muốn có ranh giới thật thì bắt buộc phải có máy chủ — đặc tả kỹ thuật đầy đủ đã được viết sẵn trong kho mã tại tệp docs/DANG-NHAP-VA-PHAN-QUYEN.md.',
+  },
+  {
+    page: 'phan-quyen',
+    q: 'Học sinh ngoài và học sinh đóng phí tại GITA khác nhau những gì?',
+    a: 'Hệ thống thiết kế ba gói. Gói Học sinh ngoài mở toàn bộ trang nội dung công khai (chuyên đề, công thức, đề cương, cấu trúc đề thi), phiếu luyện Level 1–2, 20 đề đầu mỗi khối và lời giải rút gọn. Gói Học viên đóng phí mở toàn bộ phiếu mọi Level, trọn 700 đề luyện, lời giải chi tiết từng bước, lộ trình cá nhân hoá, báo cáo tuần và nhận bài giao từ giáo viên. Gói Chuyên sâu bổ sung kho chuyên, đội tuyển và các module nâng cao. Lưu ý quan trọng: ranh giới này hiện mới ở mức thiết kế — nó chỉ có hiệu lực khi nội dung trả phí được đặt sau máy chủ.',
+  },
 ];
 
 export const faqFor = (page: PageId) => FAQS.filter((f) => f.page === page);

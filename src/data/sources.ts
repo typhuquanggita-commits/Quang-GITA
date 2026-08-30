@@ -185,6 +185,16 @@ export interface ContentGap {
 
 export const CONTENT_GAPS: ContentGap[] = [
   {
+    title: 'Chưa có đăng nhập tài khoản và chưa kiểm soát được truy cập theo học phí',
+    foundVia:
+      'Rà soát chính hệ thống: ứng dụng chạy hoàn toàn trên trình duyệt, dữ liệu nằm trong localStorage của từng máy.',
+    why: 'Bảng tám vai trò và mười sáu quyền hiện có chỉ định hình giao diện, không ngăn được ai: bất kỳ ai mở công cụ nhà phát triển đều tự đổi được vai trò. Ranh giới giữa học sinh ngoài và học viên đóng phí vì thế mới ở mức thiết kế. Đồng bộ tiến độ giữa nhiều thiết bị và luồng giáo viên giao bài — học sinh nộp — giáo viên nhận kết quả cũng cần cùng một hạ tầng.',
+    action:
+      'Đã viết đặc tả đầy đủ tại docs/DANG-NHAP-VA-PHAN-QUYEN.md (mô hình dữ liệu, danh sách API, bảng phân quyền, ba gói học) và dựng sẵn điểm cắm AccountProvider trong src/lib/account.ts để cắm backend vào là chạy. CHƯA có mã máy chủ — phần này nằm ngoài phạm vi một ứng dụng tĩnh và cần đội kỹ thuật dựng riêng.',
+    status: 'dang-lam',
+    priority: 1,
+  },
+  {
     title: 'Chưa có luồng Toán thi vào lớp 6 trường chất lượng cao',
     foundVia:
       'Tên hai nhóm cộng đồng được cung cấp (ôn thi vào lớp 6, ôn thi cấp 2 chất lượng cao) và độ phủ của MathX ở mảng này.',
