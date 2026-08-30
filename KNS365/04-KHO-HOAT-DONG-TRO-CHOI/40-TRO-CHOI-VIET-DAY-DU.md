@@ -1363,3 +1363,995 @@
 | Học sinh không muốn tham gia | Viết ẩn danh, hoặc chọn **"hiện vật của một nhân vật nổi tiếng"** *(vận động viên, nhà khoa học)* thay cho hiện vật của mình |
 
 ---
+## PHẦN F. PHA **T** — LUYỆN CHUẨN & CHỊU SỨC ÉP *(8 trò)*
+
+> **Vai trò của pha T trong cụm 180′:** pha I cho học sinh **va vào trải nghiệm**; pha T bắt học sinh **làm lại nhiều lượt cho đến khi đúng chuẩn, rồi làm dưới sức ép**. Đây là pha duy nhất trong cụm có **T-DRILL 4 vòng** — thiếu pha T thì cả cụm chỉ là một buổi vui.
+>
+> ⚠️ **Ba quy tắc riêng của pha T:**
+> 1. **Công bố tiêu chí trước khi luyện.** Học sinh phải biết "đúng" trông như thế nào trước lượt 1 — không được để đến lúc chấm mới biết.
+> 2. **Mỗi lượt phải có một con số.** Đếm được thì mới thấy được tiến bộ; "em thấy tốt hơn" không phải bằng chứng.
+> 3. **Phản hồi theo 1-1-1** *(1 điều làm được · 1 điều sửa · 1 việc làm ngay lượt sau)* — không phản hồi kiểu tổng kết chung chung.
+
+---
+
+### `TC-T-003` · CHỈ LUYỆN GIAO MẮT
+
+| Mã | Pha | Khối | Sĩ số | Thời lượng | Dụng cụ |
+|---|:--:|---|:--:|:--:|---|
+| TC-T-003 | **T** | 🟢 K1–5 · 🔵 K6–9 · 🟣 K10–12 | Cặp *(lớp 10–40)* | 12′ | Đồng hồ bấm giờ, phiếu đếm nhỏ, bút |
+
+**Mục tiêu — vi kỹ năng rèn:**
+- **Giữ ánh mắt 3–5 giây rồi rời tự nhiên** — không nhìn chằm chằm, không né xuống sàn.
+- **Tách cảm giác ngượng khỏi hành vi:** vẫn ngượng nhưng vẫn làm được.
+- **Đếm được mức tiến bộ của chính mình** qua từng lượt.
+
+**Cách chơi**
+
+1. HLV làm mẫu **hai kiểu sai trước, kiểu đúng sau**: nhìn xuống sàn khi nói · nhìn chằm chằm không chớp · và kiểu đúng — nhìn vào mắt khoảng 3 giây, rời sang chân mày hoặc gật đầu, rồi nhìn lại.
+   > 🎤 **HLV:** *"Giao mắt không phải là thi xem ai nhìn lâu hơn. Đúng chuẩn là: nhìn — rời — nhìn lại. Ba giây, rồi rời. Thầy/cô làm mẫu một lần nữa, cả lớp đếm to giúp: một, hai, ba."*
+2. **Lượt 1 — không nói gì.** Hai bạn ngồi đối diện, chỉ giao mắt theo nhịp 3 giây, làm 5 nhịp. Người quan sát của cặp bên cạnh đếm số nhịp làm đúng.
+3. **Lượt 2 — vừa nói vừa giao mắt.** Chủ đề dễ: *"Kể cho bạn nghe bữa sáng hôm nay của em."* 60 giây. Bạn kia đếm **số lần người nói rời mắt xuống sàn**.
+4. **Lượt 3 — đổi vai.** Cùng cách đếm.
+5. Mỗi em ghi vào phiếu: **số nhịp đúng lượt 1** · **số lần rơi mắt lượt 2** · **1 việc sẽ làm khác đi**.
+   > 🎤 **HLV:** *"Ai có số lần rơi mắt giảm giữa hai lượt, giơ tay. Đó không phải may mắn — đó là em vừa luyện được."*
+
+**Biến thể nâng độ khó**
+
+| Bậc | Ràng buộc thêm | Dấu hiệu đạt |
+|:--:|---|---|
+| **L1** | Ngồi, bạn quen, chủ đề dễ, được cười trừ | ≥3/5 nhịp đúng, không nhìn xuống sàn quá 3 lần/phút |
+| **L2** | Lặp với **3 bạn khác nhau**, giữ nguyên chất lượng | Lượt thứ 3 vẫn ≥3/5 nhịp đúng |
+| **L3** | **Đứng** thay vì ngồi, có tiếng ồn nền *(nhạc nhỏ / lớp bên cạnh)*, chủ đề khó hơn: *"Kể một việc em từng làm sai"* | Rơi mắt ≤2 lần/phút dù có nhiễu |
+| **L4** | Nói trước **người lạ** — HLV lớp khác, khách mời, hoặc quay video tự chấm lại | Người nghe lạ xác nhận *"bạn có nhìn tôi"*; tự chấm khớp với người chấm ngoài |
+
+**Câu hỏi rút bài học**
+1. *Lúc nào em thấy khó nhìn vào mắt bạn nhất — khi nghe hay khi nói? Vì sao?*
+2. *Số lần rơi mắt của em giữa lượt 2 và lượt 3 tăng hay giảm? Điều gì làm nó thay đổi?*
+3. *Ngoài lớp này, hôm nay em sẽ giao mắt với ai — và trong tình huống nào?*
+
+**⚠️ Lưu ý an toàn**
+- **Thể chất:** không yêu cầu ngồi quá gần; khoảng cách một cánh tay.
+- **Tâm lý:**
+  - Giao mắt là hành vi **mang tính văn hoá và cá nhân**. Với học sinh có đặc điểm tự kỷ, lo âu xã hội, hoặc nền văn hoá gia đình coi nhìn thẳng người lớn là bất kính — **không ép**. Cho phép mục tiêu thay thế: nhìn vào **sống mũi hoặc chân mày** người đối diện; hiệu quả giao tiếp tương đương.
+  - Tuyệt đối **không xếp hạng lớp** theo số nhịp đúng. Chỉ so **em với chính em ở lượt trước**.
+  - Không dùng trò này để "chữa" học sinh nhút nhát trước mặt cả lớp. Nếu một em không làm được, HLV ghi nhận riêng, không gọi tên.
+
+**🔁 Phương án dự phòng**
+
+| Tình huống | Cách xử lý |
+|---|---|
+| Lớp quá đông *(>40)* | Chia 2 lượt: nửa lớp luyện, nửa lớp làm người đếm, rồi đổi |
+| Lớp lẻ 1 người | Ghép nhóm 3: một người nói, một người nghe, một người đếm — xoay vòng 3 lượt |
+| Không gian hẹp | Luyện tại chỗ, bạn cùng bàn quay mặt vào nhau; không cần di chuyển |
+| Học sinh không muốn tham gia | Nhận vai **Người Đếm** cho cặp khác — vẫn học được tiêu chí mà không phải lên sân |
+
+---
+
+### `TC-T-006` · NGHE – NHẮC LẠI
+
+| Mã | Pha | Khối | Sĩ số | Thời lượng | Dụng cụ |
+|---|:--:|---|:--:|:--:|---|
+| TC-T-006 | **T** | 🟢 K1–5 · 🔵 K6–9 | Cặp *(lớp 10–40)* | 14′ | Thẻ chủ đề, phiếu đếm, đồng hồ |
+
+**Mục tiêu — vi kỹ năng rèn:**
+- **Nhắc lại đúng ý người kia trước khi nói ý mình** — nền của mọi kỹ năng hoà giải sau này.
+- **Phát hiện khoảng cách** giữa "điều bạn nói" và "điều tôi nghe được".
+- **Kìm phản xạ cắt lời.**
+
+**Cách chơi**
+
+1. HLV nêu **công thức bắt buộc**: *"Tớ nghe bạn nói là ___. Tớ hiểu đúng chưa?"* — phải nói **nguyên văn công thức này** trước khi được nói ý mình.
+2. **Lượt 1 (3′):** Bạn A kể 60 giây về một chủ đề trên thẻ *(việc em thích làm nhất cuối tuần / một lần em giúp được người khác)*. Bạn B nhắc lại bằng công thức. Bạn A chấm: **đúng ý · thiếu ý · thêm ý em không nói**.
+3. **Lượt 2 (3′):** đổi vai.
+4. **Lượt 3 (5′) — chủ đề có bất đồng:** *"Có nên cho học sinh dùng điện thoại trong giờ ra chơi không?"* Luật cứng: **chưa nhắc lại đúng ý bạn thì chưa được nói ý mình.** Bạn kia có quyền nói *"chưa đúng"* và người nhắc phải làm lại.
+5. Ghi số liệu: **số lần phải nhắc lại lần hai** trước khi được đi tiếp.
+   > 🎤 **HLV:** *"Không ai bị trừ điểm vì nhắc sai. Số lần nhắc lại lần hai chính là số lần em suýt cãi nhau vì hiểu sai — đếm được nó là đã lời rồi."*
+
+**Biến thể nâng độ khó**
+
+| Bậc | Ràng buộc thêm | Dấu hiệu đạt |
+|:--:|---|---|
+| **L1** | Chủ đề dễ, được nhắc lại gần nguyên văn | Nhắc đủ ý chính, bạn xác nhận "đúng" |
+| **L2** | **Cấm lặp nguyên văn** — phải diễn đạt bằng lời của mình | Bạn xác nhận đúng ý dù khác chữ |
+| **L3** | Chủ đề **có bất đồng**, thêm yêu cầu: nhắc lại **cả cảm xúc** *("bạn thấy bực vì...")* | Nhắc đúng cả ý và cảm xúc; ≤1 lần phải làm lại |
+| **L4** | Áp dụng vào **một mâu thuẫn thật đang có trong lớp**, có ACT ngồi quan sát chấm | Hai bên đều xác nhận "bạn hiểu đúng tôi"; ra được 1 điểm chung |
+
+**Câu hỏi rút bài học**
+1. *Khi bạn nhắc lại lời em, có điều gì em nói mà bạn không nghe thấy không? Vì sao lại rơi mất?*
+2. *Lượt nào khó hơn — lượt kể chuyện vui hay lượt tranh luận? Điều gì làm nó khó?*
+3. *Ở nhà, ai là người hay nhắc lại đúng ý em nhất? Em cảm thấy thế nào khi được nhắc đúng?*
+
+**⚠️ Lưu ý an toàn**
+- **Thể chất:** không có rủi ro; chỉ cần bố trí đủ khoảng cách để hai cặp không nói đè lên nhau.
+- **Tâm lý:**
+  - Ở L4, **không mang mâu thuẫn có yếu tố bắt nạt, kỳ thị, hoặc bạo lực ra làm bài tập.** Những việc đó đi theo **phác đồ xử lý bắt nạt**, không đi theo trò chơi.
+  - HLV **không được đứng nghe lén** rồi bình luận nội dung riêng tư của cặp. Chỉ chấm **quy trình** *(có nhắc lại không, có cắt lời không)*, không chấm nội dung.
+  - Chủ đề tranh luận phải là chủ đề **không chia rẽ lớp theo hoàn cảnh gia đình** — tránh tiền bạc, nghề nghiệp bố mẹ, tôn giáo.
+
+**🔁 Phương án dự phòng**
+
+| Tình huống | Cách xử lý |
+|---|---|
+| Lớp quá đông *(>40)* | Cặp làm việc song song toàn lớp, ACT đi tuần 6 cặp/lượt; chỉ 3 cặp trình diễn ở bước chốt |
+| Lớp quá ít *(<10)* | Làm vòng tròn: mỗi người nhắc lại ý người bên phải trước khi nói ý mình |
+| Không gian hẹp | Giữ nguyên tại bàn; giảm âm lượng, dùng luật "nói vừa đủ hai người nghe" |
+| Học sinh không muốn tham gia | Vai **Trọng Tài Công Thức** — chỉ theo dõi xem cặp có nói đúng công thức không, không cần tham gia nội dung |
+
+---
+
+### `TC-T-007` · TÓM 3 Ý TRONG 60 GIÂY
+
+| Mã | Pha | Khối | Sĩ số | Thời lượng | Dụng cụ |
+|---|:--:|---|:--:|:--:|---|
+| TC-T-007 | **T** | 🔵 K6–9 · 🟣 K10–12 | 10–40 | 14′ | Đoạn văn/đoạn ghi âm 2–3 phút, giấy nhớ, đồng hồ |
+
+**Mục tiêu — vi kỹ năng rèn:**
+- **Chọn 3 ý chính và bỏ phần còn lại** — luyện 20/80 trên chất liệu ngôn ngữ.
+- **Nói gọn dưới áp lực thời gian** mà không mất ý.
+- **Phân biệt ý chính với chi tiết hấp dẫn** *(ví dụ, con số, câu chuyện minh hoạ)*.
+
+**Cách chơi**
+
+1. HLV đọc *(hoặc bật ghi âm)* một đoạn 2–3 phút: một bài báo ngắn, một đoạn hồi ký, một quy định của trường.
+2. Học sinh nghe, **không ghi chép ở lượt 1**. Sau khi nghe, có 60 giây viết ra **đúng 3 ý** lên 3 giấy nhớ — mỗi ý một câu.
+3. Ghép Squad, so 3 ý. Squad chọn **bộ 3 ý chung**, dán lên bảng.
+4. HLV công bố **bộ 3 ý chuẩn** đã chuẩn bị trước, đối chiếu từng Squad: trúng mấy ý, ý nào bị thay bằng chi tiết vụn.
+   > 🎤 **HLV:** *"Ý bị nhiều Squad chọn nhầm nhất là ý số ___. Nó không sai — nó chỉ là ví dụ minh hoạ. Ví dụ dễ nhớ hơn ý chính, đó là cái bẫy."*
+5. **Lượt 2 với đoạn mới**, cùng quy trình. Ghi số: **số ý trúng lượt 1 → lượt 2**.
+
+**Biến thể nâng độ khó**
+
+| Bậc | Ràng buộc thêm | Dấu hiệu đạt |
+|:--:|---|---|
+| **L1** | Được nghe **2 lần**, được ghi chép | Trúng ≥2/3 ý |
+| **L2** | Nghe **1 lần**, không ghi chép | Trúng ≥2/3 ý và mỗi ý viết trong 1 câu |
+| **L3** | Nghe 1 lần **có tiếng ồn nền**; tóm bằng **lời nói trong 45 giây** thay vì viết | Trúng 3/3 ý, nói không quá 45 giây |
+| **L4** | Tóm cho **người chưa nghe đoạn gốc**, người đó phải trả lời đúng 3 câu hỏi kiểm tra | Người nghe trả lời đúng ≥2/3 câu |
+
+**Câu hỏi rút bài học**
+1. *Ý nào cả Squad em cùng bỏ sót? Vì sao nó bị bỏ — vì nó nhạt hay vì nó nằm ở cuối?*
+2. *Chi tiết nào hấp dẫn đến mức em nhớ nó thay vì nhớ ý chính?*
+3. *Trong lớp học bình thường, em thường ghi chép theo kiểu nào — chép hết hay chọn ý? Sau trò này em muốn đổi gì?*
+
+**⚠️ Lưu ý an toàn**
+- **Thể chất:** không có rủi ro.
+- **Tâm lý và nội dung:**
+  - **Không dùng văn bản chạm tổn thương** *(tai nạn, mất mát, bạo lực)* làm chất liệu luyện tóm ý — nội dung nặng làm học sinh không thể tập trung vào kỹ năng.
+  - **Không xếp hạng cá nhân.** Chấm theo Squad; điểm số là để nhìn tiến bộ giữa hai lượt, không phải để so người.
+  - Với học sinh có khó khăn về nghe hoặc xử lý ngôn ngữ, **luôn có bản in sẵn của đoạn văn** — đó là điều chỉnh hợp lý, không phải ưu ái.
+
+**🔁 Phương án dự phòng**
+
+| Tình huống | Cách xử lý |
+|---|---|
+| Lớp quá đông *(>40)* | Mỗi Squad chỉ dán 1 giấy nhớ *(ý mà Squad tự tin nhất)*; HLV đối chiếu theo cột |
+| Lớp quá ít *(<10)* | Mỗi cá nhân tóm và trình bày; cả nhóm bình chọn bản tóm gọn nhất |
+| Không gian hẹp | Không cần di chuyển; dán giấy nhớ lên mặt bàn ghép |
+| Không có loa/ghi âm | HLV đọc trực tiếp — giữ nguyên tốc độ ở cả 2 lượt để so sánh công bằng |
+
+---
+
+### `TC-T-010` · TỪ CHỐI 3 TẦNG
+
+| Mã | Pha | Khối | Sĩ số | Thời lượng | Dụng cụ |
+|---|:--:|---|:--:|:--:|---|
+| TC-T-010 | **T** | 🟢 K1–5 · 🔵 K6–9 · 🟣 K10–12 | Cặp *(lớp 10–40)* | 16′ | Bộ thẻ tình huống theo khối, phiếu chấm 3 tầng |
+
+**Mục tiêu — vi kỹ năng rèn:**
+- **Nói "không" ba tầng tăng dần** mà giọng không run, thân không lùi.
+- **Giữ quan hệ trong khi vẫn giữ ranh giới** — từ chối việc, không từ chối người.
+- **Biết điểm rời đi:** tầng 3 là rời khỏi tình huống, không phải cãi thắng.
+
+**Cách chơi**
+
+1. HLV dạy **ba tầng** và viết lên bảng, để nguyên suốt buổi:
+
+   | Tầng | Câu mẫu | Khi nào dùng |
+   |:--:|---|---|
+   | **1 · Từ chối nhẹ** | *"Thôi, tớ không tham gia đâu."* | Lần đầu bị rủ |
+   | **2 · Từ chối kèm lý do và đề xuất khác** | *"Tớ không làm việc đó. Nếu cậu muốn thì mình đi đá bóng."* | Bị rủ lần hai |
+   | **3 · Từ chối dứt và rời đi** | *"Tớ đã nói không. Tớ đi đây."* — nói xong **quay người đi thật** | Bị ép, bị dồn |
+
+2. HLV **làm mẫu cả ba tầng** với một ACT đóng vai người rủ.
+3. Cặp luyện: một em đóng **người rủ** *(theo thẻ tình huống)*, một em luyện từ chối đủ 3 tầng. Người rủ **phải ép đúng 3 lần**, không ép hơn.
+4. Đổi vai. Mỗi em luyện **3 tình huống khác nhau**.
+5. Người quan sát chấm 3 mục: **giọng có run không · thân có lùi không · tầng 3 có rời đi thật không**.
+   > 🎤 **HLV:** *"Tầng 3 không phải là nói to hơn. Tầng 3 là chân em bước đi. Ai vừa nói tầng 3 mà vẫn đứng nguyên — làm lại lượt nữa."*
+
+**Biến thể nâng độ khó**
+
+| Bậc | Ràng buộc thêm | Dấu hiệu đạt |
+|:--:|---|---|
+| **L1** | Đọc theo câu mẫu trên bảng, bạn rủ nhẹ nhàng | Nói được đủ 3 tầng theo mẫu |
+| **L2** | **Không nhìn bảng**, tự nói bằng lời của mình, 3 tình huống liên tiếp | Giữ đủ 3 tầng ở cả 3 tình huống |
+| **L3** | Người rủ **thêm sức ép**: dùng câu khích *("nhát thế"), rủ theo nhóm 2–3 người*, có tiếng ồn | Giọng không run, thân không lùi, vẫn rời đi ở tầng 3 |
+| **L4** | Đóng với **người lạ hơn** *(HLV lớp khác, học sinh khối trên)*, tình huống sát đời thật của khối đó | Người ngoài chấm đạt cả 3 mục; nói lại được vì sao dừng ở tầng 3 |
+
+**Câu hỏi rút bài học**
+1. *Tầng nào khó nhất với em — tầng 1, 2 hay 3? Vì sao?*
+2. *Khi đóng vai người rủ, em thấy câu nào của bạn làm em thật sự phải dừng lại?*
+3. *Em có một tình huống thật nào ở ngoài đời cần dùng ba tầng này không? Em sẽ dùng tầng nào trước?*
+
+**⚠️ Lưu ý an toàn**
+- **Thể chất:** người đóng vai rủ **cấm chạm vào bạn, cấm chặn đường, cấm giữ tay**. HLV nói rõ trước và dừng ngay nếu vi phạm.
+- **Tâm lý — hoạt động chạm chủ đề áp lực bạn bè, rủi ro trung bình cao:**
+  - **Thẻ tình huống phải phù hợp khối.** 🟢 K1–5: bị rủ lấy đồ của bạn, bị rủ trốn xếp hàng, bị rủ nói dối cô. 🔵 K6–9: bị rủ hùa vào trêu một bạn, bị rủ trốn tiết, bị rủ chia sẻ ảnh của người khác. 🟣 K10–12: bị rủ dùng chất kích thích, bị rủ vay tiền qua app, bị ép gửi ảnh riêng tư. **Không dùng thẻ của khối trên cho khối dưới.**
+  - **Cấm nhập vai quá đà.** HLV công bố **mật khẩu dừng** — bất kỳ ai nói *"dừng"* thì cặp dừng ngay lập tức, không hỏi lý do.
+  - **Đóng vai xong phải "ra vai".** HLV cho cả lớp đứng lên, phủi vai, nói to: *"Tớ là ___, tớ không phải nhân vật vừa rồi."* Bước này **không được bỏ**.
+  - Nếu một học sinh phản ứng mạnh *(khóc, đông cứng, giận dữ)*, có khả năng tình huống chạm vào trải nghiệm thật. Dừng riêng, đưa ra **Góc Bình Yên** cùng ACT, và **chuyển bộ phận tâm lý theo quy trình bảo vệ trẻ em** — không hỏi han sâu tại chỗ, không hỏi trước mặt lớp.
+  - Với khối 🟣, nếu tình huống chạm nội dung xâm hại, HLV nhắc lại **hotline 111** ở phần chốt.
+
+**🔁 Phương án dự phòng**
+
+| Tình huống | Cách xử lý |
+|---|---|
+| Lớp quá đông *(>40)* | Luyện theo Squad 5: 1 người từ chối, 2 người rủ, 2 người chấm — xoay 5 lượt |
+| Lớp quá ít *(<10)* | HLV/ACT trực tiếp đóng vai người rủ cho từng em, chất lượng sức ép đồng đều hơn |
+| Không gian hẹp | Tầng 3 thay "rời đi" bằng **quay người 180° và bước 2 bước** — vẫn giữ được hành vi dứt khoát |
+| Học sinh không muốn tham gia | Vai **Người Chấm 3 Mục** hoặc **Người Giữ Mật Khẩu Dừng**; vẫn học đủ tiêu chí |
+
+---
+
+### `TC-T-013` · PHẢN HỒI 1-1-1
+
+| Mã | Pha | Khối | Sĩ số | Thời lượng | Dụng cụ |
+|---|:--:|---|:--:|:--:|---|
+| TC-T-013 | **T** | 🔵 K6–9 · 🟣 K10–12 | Squad 5–6 | 14′ | Thẻ 1-1-1 in sẵn, sản phẩm thật của học sinh để phản hồi |
+
+**Mục tiêu — vi kỹ năng rèn:**
+- **Nói một câu góp ý mà người nghe làm được ngay** — không khen suông, không chê chung chung.
+- **Nhận góp ý mà không thanh minh:** chỉ nói *"cảm ơn, tớ ghi lại"*.
+- Biến phản hồi thành **thói quen của lớp**, không phải sự kiện đặc biệt.
+
+**Cách chơi**
+
+1. HLV dán **khuôn 1-1-1** lên bảng và giữ nguyên suốt cả cụm:
+
+   | Ô | Câu mở | Yêu cầu |
+   |:--:|---|---|
+   | **1 — Làm được** | *"Điều tớ thấy bạn làm được là ___"* | Phải chỉ ra **hành vi cụ thể quan sát được**, không nói "bạn giỏi lắm" |
+   | **1 — Sửa** | *"Một điều tớ nghĩ nên sửa là ___"* | Chỉ **một** điều, và phải là điều **sửa được trong lượt sau** |
+   | **1 — Làm ngay** | *"Ngay lượt sau bạn thử ___"* | Một việc **nhỏ, cụ thể, làm được trong 1 phút** |
+
+2. Mỗi Squad chọn **1 sản phẩm thật vừa làm ở pha I** *(bản thuyết trình 60 giây, tháp giấy, thẻ hiện vật)*.
+3. Vòng phản hồi: từng thành viên nói đủ **3 ô**, tối đa 40 giây. Người nhận **chỉ được nói một câu**: *"Cảm ơn, tớ ghi lại."*
+4. Người nhận **làm lại lượt 2 ngay tại chỗ**, có áp dụng ít nhất 1 gợi ý.
+5. Squad đếm: **bao nhiêu góp ý được thực hiện thật ở lượt 2**.
+   > 🎤 **HLV:** *"Góp ý hay là góp ý mà bạn làm được ngay ở lượt sau. Nếu bạn không làm được, không phải bạn kém — có thể góp ý của em chưa đủ cụ thể."*
+
+**Biến thể nâng độ khó**
+
+| Bậc | Ràng buộc thêm | Dấu hiệu đạt |
+|:--:|---|---|
+| **L1** | Đọc theo khuôn trên bảng, có thời gian nghĩ 30 giây | Nói đủ 3 ô, ô "làm ngay" cụ thể |
+| **L2** | Không nhìn khuôn, phản hồi **liền mạch trong 40 giây** | Đủ 3 ô, ô "làm được" nêu hành vi quan sát được |
+| **L3** | Phản hồi cho **sản phẩm mình không thích**, hoặc cho bạn mình đang có mâu thuẫn nhẹ | Giữ đủ khuôn, giọng không mỉa mai; người nhận xác nhận "dùng được" |
+| **L4** | Phản hồi cho **người lớn hơn** *(anh chị khối trên, ACT, HLV)*; và **nhận** phản hồi từ 3 người liên tiếp mà không thanh minh câu nào | Người nhận xác nhận góp ý dùng được; bản thân không thanh minh lần nào |
+
+**Câu hỏi rút bài học**
+1. *Ô nào khó viết nhất — "làm được", "sửa", hay "làm ngay"? Vì sao?*
+2. *Khi nhận góp ý, câu nào làm em muốn thanh minh nhất? Em đã kìm được không?*
+3. *Có góp ý nào bạn nói mà em không làm được không? Nếu diễn đạt lại cho cụ thể hơn thì nó sẽ là câu gì?*
+
+**⚠️ Lưu ý an toàn**
+- **Thể chất:** không có rủi ro.
+- **Tâm lý:**
+  - **Phản hồi vào sản phẩm, không vào con người.** HLV dừng ngay câu nào bắt đầu bằng *"bạn là người..."* và yêu cầu diễn đạt lại thành hành vi.
+  - **Cấm mỉa mai, cấm nói kèm cười nhóm.** Vi phạm thì Squad làm lại vòng, không phạt cá nhân.
+  - Với Squad đang có mâu thuẫn thật, **HLV hoặc ACT phải ngồi cùng** vòng đó — không để tự chạy.
+  - **Không dùng nội dung phản hồi để chấm điểm học sinh.** Nếu học sinh biết lời góp ý sẽ vào điểm, các em sẽ chỉ khen.
+
+**🔁 Phương án dự phòng**
+
+| Tình huống | Cách xử lý |
+|---|---|
+| Lớp quá đông *(>40)* | Mỗi Squad chỉ phản hồi cho **2 sản phẩm** thay vì tất cả; chọn ngẫu nhiên bằng bốc thăm |
+| Lớp quá ít *(<10)* | Chạy một vòng tròn duy nhất cho cả lớp; tăng lên 2 lượt làm lại |
+| Không gian hẹp | Ngồi tại bàn theo cụm 5; không cần di chuyển |
+| Học sinh không muốn tham gia | Viết phản hồi 1-1-1 **ra giấy** đưa cho bạn thay vì nói; vẫn tính là hoàn thành |
+
+---
+
+### `TC-T-020` · TRUY HỒI CHỦ ĐỘNG
+
+| Mã | Pha | Khối | Sĩ số | Thời lượng | Dụng cụ |
+|---|:--:|---|:--:|:--:|---|
+| TC-T-020 | **T** | 🟢 K1–5 · 🔵 K6–9 · 🟣 K10–12 | 10–40 | 16′ | Giấy trắng, bút, đồng hồ; **không** dùng vở ghi |
+
+**Mục tiêu — vi kỹ năng rèn:**
+- **Lấy kiến thức ra khỏi đầu bằng trí nhớ**, thay vì đọc lại — cơ chế học hiệu quả nhất đã được kiểm chứng.
+- **Chịu được cảm giác khó chịu khi chưa nhớ ra** mà không vội mở tài liệu.
+- **Tự phát hiện lỗ hổng** trước khi bị kiểm tra phát hiện.
+
+**Cách chơi**
+
+1. HLV chốt: **úp hết vở, cất hết tài liệu.**
+   > 🎤 **HLV:** *"Đọc lại bài cho cảm giác là mình đã nhớ. Nhớ thật là khi em viết ra được lúc không có gì trước mặt. Cái khó chịu lúc chưa nhớ ra chính là lúc não đang khoẻ lên."*
+2. **Vòng 1 (4′) — Đổ Trống:** viết ra tất cả những gì nhớ được về nội dung vừa học, không cần thứ tự.
+3. **Vòng 2 (3′) — Tự Chấm:** mở tài liệu, đánh dấu **✓ nhớ đúng · ✗ nhớ sai · ○ bỏ sót**. Đếm 3 con số.
+4. **Vòng 3 (4′) — Ba Câu Hỏi:** mỗi em viết **3 câu hỏi** về phần mình bỏ sót, đưa cho bạn cùng bàn trả lời.
+5. **Vòng 4 (5′) — Đổ Trống Lần Hai:** úp tài liệu, viết lại. So số ✓ giữa vòng 1 và vòng 4.
+   > 🎤 **HLV:** *"Ai có số ✓ tăng, giơ tay. Con số đó là bằng chứng — không phải cảm giác."*
+
+**Biến thể nâng độ khó**
+
+| Bậc | Ràng buộc thêm | Dấu hiệu đạt |
+|:--:|---|---|
+| **L1** | Truy hồi nội dung **vừa học 10 phút trước**, được gợi ý đề mục | Số ✓ tăng giữa vòng 1 và vòng 4 |
+| **L2** | Truy hồi nội dung **của buổi trước**, không gợi ý | ≥60% ý chính được nhớ ở vòng 4 |
+| **L3** | Truy hồi **có giới hạn thời gian gấp đôi độ khó** *(2 phút cho vòng 1)* và phải **vẽ sơ đồ nối các ý** thay vì liệt kê | Sơ đồ thể hiện đúng quan hệ giữa ≥4 ý |
+| **L4** | **Dạy lại** nội dung cho một bạn chưa học, không nhìn tài liệu; bạn đó làm được 3 câu hỏi kiểm tra | Bạn học đúng ≥2/3; người dạy tự chỉ ra chỗ mình còn yếu |
+
+**Câu hỏi rút bài học**
+1. *Phần nào em tưởng mình nhớ nhưng viết ra lại sai? Vì sao nó đánh lừa em?*
+2. *Số ✓ của em tăng bao nhiêu giữa hai lần đổ trống? Điều gì tạo ra mức tăng đó?*
+3. *Từ tối nay, em sẽ ôn bài bằng cách đọc lại hay bằng cách đổ trống? Em sẽ thử với môn nào trước?*
+
+**⚠️ Lưu ý an toàn**
+- **Thể chất:** không có rủi ro.
+- **Tâm lý:**
+  - **Không thu bài, không chấm điểm, không đọc bài của học sinh trước lớp.** Đây là công cụ tự chẩn đoán; biến nó thành bài kiểm tra là phá hỏng cơ chế.
+  - **Không so số ✓ giữa các học sinh.** Chỉ so vòng 1 với vòng 4 của cùng một em.
+  - Với học sinh có khó khăn về ghi nhớ hoặc viết *(khó đọc, khó viết)*, cho phép **nói ra thay vì viết**, ACT ghi hộ — con số vẫn đếm được bình thường.
+  - Nếu một em ra kết quả rất thấp và tỏ ra xấu hổ, HLV nói riêng: *"Con số này là bản đồ chỗ cần ôn, không phải bảng điểm."*
+
+**🔁 Phương án dự phòng**
+
+| Tình huống | Cách xử lý |
+|---|---|
+| Lớp quá đông *(>40)* | Bỏ vòng 3 trao đổi câu hỏi; giữ nguyên 3 vòng còn lại |
+| Lớp quá ít *(<10)* | Thêm vòng "dạy lại" cho cả nhóm — nâng ngay lên L4 |
+| Không gian hẹp | Trò này không cần không gian; giữ nguyên |
+| Học sinh không muốn tham gia | Cho vẽ sơ đồ hoặc kể miệng cho ACT thay vì viết; **quyền pass** vẫn áp dụng cho phần chia sẻ, không áp dụng cho phần tự chấm riêng tư |
+
+---
+
+### `TC-T-031` · ĐẤU TRƯỜNG KỸ NĂNG SQUAD
+
+| Mã | Pha | Khối | Sĩ số | Thời lượng | Dụng cụ |
+|---|:--:|---|:--:|:--:|---|
+| TC-T-031 | **T** | 🟢 K1–5 · 🔵 K6–9 · 🟣 K10–12 | 4–6 Squad | 32′ | 4–6 trạm luyện, bảng chấm treo tường, chuông/còi, phiếu ghi số liệu |
+
+> ⭐ **Đây là trò lõi của pha T trong cụm 180′.** Nó gói toàn bộ **T-DRILL 4 vòng** vào một cấu trúc chạy được ở lớp đông. Các trò T khác có thể là **nội dung của một trạm** trong đấu trường này.
+
+**Mục tiêu — vi kỹ năng rèn:**
+- **Giữ chất lượng qua 4 vòng liên tiếp** khi độ khó tăng và thể lực giảm.
+- **Squad tự điều phối lượt và tự chấm** — không chờ HLV.
+- **Ra quyết định phân vai dưới sức ép thời gian.**
+
+**Cách chơi**
+
+1. Bố trí **4–6 trạm** quanh phòng, mỗi trạm luyện **một vi kỹ năng** của cụm hôm đó. Ví dụ cụm giao tiếp: Trạm 1 giao mắt · Trạm 2 nhắc lại đúng ý · Trạm 3 tóm 3 ý · Trạm 4 từ chối 3 tầng.
+2. **Công bố tiêu chí của cả 4 trạm trước khi bắt đầu** — dán bảng chấm lên tường từng trạm.
+3. **Vòng 1 · L1 (6′):** mỗi Squad ở một trạm, làm được là xong. Ghi số vào phiếu.
+4. **Vòng 2 · L2 (7′):** xoay trạm. Yêu cầu **lặp 3 lượt giữ chất lượng**.
+5. **Vòng 3 · L3 (8′):** xoay trạm, HLV **thêm sức ép**: bấm giờ ngắn hơn 20% · bật nhạc nền · rút bớt một thành viên khỏi Squad *(em đó thành người chấm)*.
+6. **Vòng 4 · L4 (7′):** xoay trạm, **đổi người chấm** — Squad được chấm bởi **Squad khác**, không tự chấm.
+7. **Chốt (4′):** mỗi Squad đọc **đường cong 4 con số** của mình.
+   > 🎤 **HLV:** *"Squad nào tụt điểm ở vòng 3 rồi lên lại ở vòng 4 — đứng lên. Đó chính xác là thứ chúng ta luyện: gãy rồi dựng lại được."*
+
+**Biến thể nâng độ khó**
+
+| Bậc | Ràng buộc thêm | Dấu hiệu đạt |
+|:--:|---|---|
+| **L1** | 4 trạm, tiêu chí đơn giản, HLV chấm | Mọi thành viên qua được ít nhất 1 trạm |
+| **L2** | Squad **tự phân vai** ai vào trạm nào và giải trình lý do | Phân vai có căn cứ; điểm không tụt quá 15% so với vòng 1 |
+| **L3** | Thêm 2 trạm, có **trạm bí mật** chỉ công bố khi tới nơi | Squad thích ứng trong 60 giây; điểm tụt <25% |
+| **L4** | Squad **tự thiết kế 1 trạm** cho Squad khác, kèm bảng tiêu chí; và thi đấu ở trạm do Squad khác thiết kế | Trạm tự thiết kế được Squad khác chấm là "đo đúng kỹ năng"; đội mình vẫn giữ điểm ở trạm lạ |
+
+**Câu hỏi rút bài học**
+1. *Điểm Squad em tụt ở vòng nào? Nguyên nhân là mệt, là luật khó hơn, hay là phân vai chưa hợp?*
+2. *Ai trong Squad giữ được chất lượng ổn định nhất qua 4 vòng? Bạn ấy làm gì khác mọi người?*
+3. *Nếu chạy lại đấu trường ngày mai, Squad em đổi một điều duy nhất — đó là điều gì?*
+
+**⚠️ Lưu ý an toàn**
+- **Thể chất:**
+  - **Lối di chuyển giữa các trạm phải rộng ≥1m**, không cắt chéo nhau. HLV quy định **chiều xoay một chiều** và dán mũi tên trên sàn.
+  - Trò kéo dài 32 phút với cường độ cao — **bắt buộc có 1 phút uống nước giữa vòng 2 và vòng 3**. Ngày nóng thì tăng lên 2 phút.
+  - Sàn không trơn; cặp sách gom về một góc, không để cạnh trạm.
+- **Tâm lý:**
+  - **Bảng điểm là đường cong của từng Squad, không phải bảng xếp hạng lớp.** Không treo bảng "Squad hạng nhất". Điều được vinh danh là **mức phục hồi ở vòng 4**, không phải điểm tuyệt đối.
+  - Ở vòng 3, khi rút một thành viên ra, **HLV chọn ngẫu nhiên bằng bốc thăm**, không chọn theo năng lực — tránh thông điệp "em bị loại vì em yếu".
+  - **Quyền pass** vẫn có: em xin dừng thì nhận vai **Người Ghi Số Liệu** của Squad, vẫn được tính đóng góp.
+  - Nếu một trạm có nội dung nhạy cảm *(ví dụ trạm từ chối 3 tầng)*, áp dụng đầy đủ lưu ý an toàn của trò đó, gồm cả **mật khẩu dừng** và **bước ra vai**.
+
+**🔁 Phương án dự phòng**
+
+| Tình huống | Cách xử lý |
+|---|---|
+| Lớp quá đông *(>40)* | Tăng lên 8 trạm, mỗi trạm 2 Squad chạy song song; cần thêm 2 ACT |
+| Lớp quá ít *(<10)* | 2 Squad, 4 trạm, mỗi Squad chạy hết 4 trạm theo 4 vòng — bỏ khâu xoay chéo |
+| Không gian hẹp | **Trạm đứng yên, người xoay bằng cách đổi bàn**; hoặc chạy 4 trạm theo 4 góc lớp học thường |
+| Thiếu ACT | Dùng **học sinh Cấp Độ Bạc trở lên** làm trọng tài trạm — đây chính là bằng chứng vai trò để xét lên Cấp |
+| Thiếu thời gian | Cắt vòng 2, giữ **L1 → L3 → L4**; **không được cắt vòng 4**, vì vòng 4 mới là vòng đo chuyển giao |
+
+---
+
+### `TC-T-034` · ĐIỆN THOẠI HỎNG *(bản luyện, không phải bản đùa)*
+
+| Mã | Pha | Khối | Sĩ số | Thời lượng | Dụng cụ |
+|---|:--:|---|:--:|:--:|---|
+| TC-T-034 | **T** | 🟢 K1–5 · 🔵 K6–9 | 12–40 | 14′ | Thẻ thông điệp in sẵn, bảng ghi kết quả |
+
+**Mục tiêu — vi kỹ năng rèn:**
+- **Truyền lại thông tin không thêm không bớt** — và thấy được nó khó đến mức nào.
+- **Hiểu cơ chế tin đồn:** thông tin biến dạng không cần ai cố ý nói dối.
+- **Dùng kỹ thuật xác nhận** *(nhắc lại, hỏi lại)* để chặn biến dạng.
+
+**Cách chơi**
+
+1. **Lượt 1 — bản cổ điển:** một dây 8–10 người, truyền thì thầm một thông điệp 2 câu. Người cuối nói to. So với bản gốc, đếm **số chi tiết sai**.
+2. HLV **không dừng ở tiếng cười**, mà chỉ ra ngay: *chi tiết nào rơi trước · con số biến thành gì · ai là mắt xích thông tin đổi nhiều nhất*.
+   > 🎤 **HLV:** *"Cả dây không có ai nói dối. Vậy mà tin vẫn sai. Tin đồn ngoài đời cũng đúng như vậy — nó sai mà không cần ai xấu."*
+3. **Lượt 2 — có công cụ:** cùng độ dài thông điệp, nhưng mỗi mắt xích được dùng **hai quyền**: **quyền nhắc lại** *("tớ nghe là ___, đúng không?")* và **quyền hỏi lại một câu**.
+4. Đếm lại số chi tiết sai. So hai con số lên bảng.
+5. Chốt bằng chuyển giao đời thật.
+   > 🎤 **HLV:** *"Lần tới nghe một chuyện về bạn nào đó, em sẽ dùng quyền nào trước — nhắc lại hay hỏi lại?"*
+
+**Biến thể nâng độ khó**
+
+| Bậc | Ràng buộc thêm | Dấu hiệu đạt |
+|:--:|---|---|
+| **L1** | Thông điệp 1 câu, không có số | Người cuối giữ được ý chính |
+| **L2** | Thông điệp 2 câu **có 2 con số và 1 tên riêng** | Sai ≤2 chi tiết khi có quyền nhắc lại |
+| **L3** | Truyền **có tiếng ồn nền**, dây dài 12 người, thông điệp có **một chi tiết dễ hiểu nhầm** cài sẵn | Có mắt xích **chủ động dùng quyền hỏi lại** đúng chỗ cài bẫy |
+| **L4** | Truyền **qua tin nhắn viết** *(mỗi người chỉ được viết 1 dòng cho người sau)*; và phải **truy ngược** xem chi tiết sai xuất hiện từ mắt xích nào | Truy ngược đúng mắt xích; nêu được vì sao khâu đó biến dạng |
+
+**Câu hỏi rút bài học**
+1. *Chi tiết nào rơi mất đầu tiên — con số, tên riêng, hay lý do? Vì sao loại đó dễ rơi nhất?*
+2. *Số lỗi giữa lượt 1 và lượt 2 chênh bao nhiêu? Quyền nào giúp nhiều hơn — nhắc lại hay hỏi lại?*
+3. *Em đã từng nghe một chuyện về bạn mình rồi kể lại chưa? Bây giờ nghĩ lại, em có chắc mình kể đúng nguyên bản không?*
+
+**⚠️ Lưu ý an toàn**
+- **Thể chất:** thì thầm sát tai — **hỏi đồng thuận trước** như mọi trò có tiếp xúc; ai không muốn thì đứng ở vị trí nghe khoảng cách gần thay vì ghé tai.
+- **Tâm lý:**
+  - **Thông điệp phải là nội dung trung tính** *(một công thức nấu ăn, một lịch trình dã ngoại, một mẩu tin thời tiết)*. **Tuyệt đối không dùng nội dung về một học sinh trong lớp**, kể cả nội dung khen — trò này minh hoạ cơ chế tin đồn, không được tạo ra tin đồn thật.
+  - **Không chỉ mặt "người làm sai".** HLV nói rõ ngay từ đầu: dây nào cũng sai, đó là bản chất của kênh truyền, không phải lỗi cá nhân.
+  - Nếu lớp cười khi người cuối nói, HLV **chuyển ngay tiếng cười thành dữ liệu**: *"Ta cười vì nó lệch nhiều. Vậy đếm xem lệch mấy chi tiết."*
+
+**🔁 Phương án dự phòng**
+
+| Tình huống | Cách xử lý |
+|---|---|
+| Lớp quá đông *(>40)* | Chạy **4 dây song song**, so kết quả 4 dây — dữ liệu còn phong phú hơn |
+| Lớp quá ít *(<10)* | Một dây, nhưng chạy 3 lượt với 3 mức độ dài thông điệp tăng dần |
+| Không gian hẹp | Truyền theo hàng ghế sẵn có, không cần xếp dây riêng |
+| Học sinh không muốn tham gia | Vai **Người Giữ Bản Gốc** *(cầm thẻ gốc, đối chiếu và đếm lỗi)* — vai này thấy được nhiều nhất |
+
+---
+
+## PHẦN G. PHA **A** — CHUYỂN GIAO & GIỮ THÓI QUEN *(8 trò)*
+
+> **Vai trò của pha A trong cụm 180′:** pha T tạo ra **năng lực trong lớp**; pha A quyết định năng lực đó có **đi ra khỏi lớp** hay không. Trong hệ 4 tầng bằng chứng, **tầng chuyển giao chiếm 40% trọng số** — nghĩa là một cụm làm rất hay ở pha T nhưng bỏ pha A thì mất gần một nửa giá trị.
+>
+> ⚠️ **Ba quy tắc riêng của pha A:**
+> 1. **Việc mang về phải nhỏ đến mức không thể viện cớ.** Chuẩn: làm xong trong **2 phút**, không cần xin phép ai, không cần mua gì.
+> 2. **Phải có người chứng.** Một việc không ai biết là một việc dễ bỏ. Người chứng có thể là bạn Squad, phụ huynh, hoặc ACT.
+> 3. **Phải có ô để đánh dấu.** Không có chỗ ghi thì không có chuỗi; không có chuỗi thì không có thói quen.
+
+---
+
+### `TC-A-002` · BẢNG CHUỖI NGÀY
+
+| Mã | Pha | Khối | Sĩ số | Thời lượng | Dụng cụ |
+|---|:--:|---|:--:|:--:|---|
+| TC-A-002 | **A** | 🟢 K1–5 · 🔵 K6–9 · 🟣 K10–12 | Mọi sĩ số | 8′ *(lập bảng)* + 30″/ngày | Bảng chuỗi in sẵn 21 hoặc 30 ô, bút màu, nam châm/băng dính |
+
+**Mục tiêu — vi kỹ năng rèn:**
+- **Biến việc mang về thành một chuỗi nhìn thấy được** — chuỗi càng dài, động lực giữ càng mạnh.
+- **Chịu được ngày đứt chuỗi** mà không bỏ luôn *(quy tắc "không bỏ hai ngày")*.
+- **Tự theo dõi bản thân bằng dữ liệu**, không bằng cảm giác.
+
+**Cách chơi**
+
+1. Mỗi em nhận **một bảng 21 ô** *(khối 🟢)* hoặc **30 ô** *(khối 🔵🟣)*, viết ở đầu bảng **đúng một việc** — bản 2 phút của thói quen đã thiết kế ở `TC-A-004`.
+2. HLV dạy **quy tắc không bỏ hai ngày** và cho cả lớp nói to.
+   > 🎤 **HLV:** *"Ai cũng sẽ có ngày quên. Quên một ngày là chuyện bình thường của con người. Quên hai ngày liên tiếp là lúc thói quen bắt đầu chết. Luật của chúng ta chỉ có một câu: **không bao giờ bỏ hai ngày liền.**"*
+3. Học sinh tô ô đầu tiên **ngay tại lớp** — vì việc là bản 2 phút, làm được luôn.
+4. Dán bảng ở **nơi bắt buộc đi qua**: mặt trong cửa tủ, cạnh bàn học, cửa phòng.
+5. Đầu mỗi buổi sau, **30 giây Vòng Chuỗi**: giơ bảng lên, Squad đếm hộ nhau.
+
+**Biến thể nâng độ khó**
+
+| Bậc | Ràng buộc thêm | Dấu hiệu đạt |
+|:--:|---|---|
+| **L1** | 7 ô, việc do HLV gợi ý, phụ huynh tô hộ cũng được | Có ≥4/7 ô được tô |
+| **L2** | 21 ô, **tự tô**, có chữ ký người chứng mỗi tuần | ≥15/21 ô; không có 2 ngày trống liền |
+| **L3** | 30 ô, thêm cột **"mức khó của ngày hôm đó (1–3)"**; giữ chuỗi qua **kỳ nghỉ hoặc tuần thi** | Giữ chuỗi qua giai đoạn khó; giải thích được cách vượt ngày mức 3 |
+| **L4** | **Giữ chuỗi cho hai người**: bảng của mình + kèm một bạn đang đứt chuỗi; báo cáo trước Squad cách kéo bạn lên | Cả hai bảng đều không có 2 ngày trống liền trong 3 tuần |
+
+**Câu hỏi rút bài học**
+1. *Ngày nào em suýt đứt chuỗi? Điều gì đã kéo em làm việc đó?*
+2. *Chuỗi dài nhất của em là bao nhiêu ngày? Khi nhìn dãy ô đã tô, em cảm thấy gì?*
+3. *Nếu tuần sau có một ngày em chắc chắn rất bận, em định làm gì để không bỏ hai ngày?*
+
+**⚠️ Lưu ý an toàn**
+- **Thể chất:** không có rủi ro.
+- **Tâm lý:**
+  - **Không treo bảng chuỗi của cả lớp cạnh nhau để so sánh.** Bảng chuỗi là tài liệu cá nhân. Nếu treo chung, chỉ treo **số Squad** *(tổng ô của Squad)*, không treo tên cá nhân.
+  - **Không trừ điểm, không phê bình học sinh đứt chuỗi.** HLV hỏi: *"Ngày hôm đó có gì xảy ra?"* — thông tin đó quan trọng hơn con số.
+  - Với học sinh có hoàn cảnh gia đình khó khăn *(phải trông em, phải phụ việc, nhà không có góc học tập)*, **việc mang về phải được thiết kế lại cho khả thi** — nếu không, bảng chuỗi trở thành bảng nhắc em rằng em thua kém.
+  - **Không yêu cầu phụ huynh ký hằng ngày.** Ký tuần một lần là đủ; có em không có người lớn ở nhà.
+
+**🔁 Phương án dự phòng**
+
+| Tình huống | Cách xử lý |
+|---|---|
+| Lớp quá đông *(>40)* | Vòng Chuỗi làm theo Squad, Người Ghi Bằng Chứng báo một con số tổng |
+| Lớp quá ít *(<10)* | Mỗi em báo cáo trực tiếp 20 giây, kèm 1 câu về ngày khó nhất |
+| Không gian hẹp | Bảng bỏ túi cỡ danh thiếp, kẹp vào vở |
+| Không in được | Vẽ 21 ô vào trang cuối vở; hoặc dùng 21 hạt đậu chuyển từ hũ này sang hũ kia |
+| Học sinh mất bảng | Phát bảng mới và **tính tiếp từ số ngày cũ** — không bắt làm lại từ đầu |
+
+---
+
+### `TC-A-003` · VÒNG GHI NHẬN
+
+| Mã | Pha | Khối | Sĩ số | Thời lượng | Dụng cụ |
+|---|:--:|---|:--:|:--:|---|
+| TC-A-003 | **A** | 🟢 K1–5 · 🔵 K6–9 · 🟣 K10–12 | Squad 4–6 | 6′ | Không cần dụng cụ *(tuỳ chọn: giấy nhớ)* |
+
+> 🔔 **Đây là nghi thức đóng buổi bắt buộc của mọi cụm 180′.** Không phải hoạt động tuỳ chọn.
+
+**Mục tiêu — vi kỹ năng rèn:**
+- **Ghi nhận đích danh một hành vi cụ thể của một người cụ thể** — không khen chung chung.
+- **Nhận lời ghi nhận mà không chối** *("có gì đâu")*.
+- Tạo **kết thúc buổi bằng cảm xúc tích cực có căn cứ**, không phải bằng vỗ tay hình thức.
+
+**Cách chơi**
+
+1. Squad đứng vòng tròn. HLV chốt công thức, **bắt buộc đủ 3 phần**:
+   > 🎤 **HLV:** *"Tớ ghi nhận **[tên bạn]** — lúc **[thời điểm cụ thể trong buổi]** bạn đã **[hành vi nhìn thấy được]**. Điều đó giúp nhóm **[kết quả]**."*
+2. Mỗi em nói **về đúng một bạn khác**, không lặp người đã được nhắc — HLV/Người Giữ Nhịp đếm để **không ai bị bỏ sót**.
+3. Người được ghi nhận **chỉ nói một câu**: *"Tớ nhận."* — không được nói *"có gì đâu"*, không được đùa chống chế.
+4. Khép vòng: cả Squad chạm nắm tay *(hoặc gật đầu, nếu có bạn không muốn chạm)* và nói tên Squad.
+
+**Biến thể nâng độ khó**
+
+| Bậc | Ràng buộc thêm | Dấu hiệu đạt |
+|:--:|---|---|
+| **L1** | Được chọn bạn mình thân, dùng câu mẫu | Nói đủ tên + hành vi |
+| **L2** | **Bốc thăm** người mình ghi nhận, đủ 3 phần công thức | Hành vi nêu ra là hành vi quan sát được, không phải tính cách |
+| **L3** | Ghi nhận **bạn mình ít làm việc cùng nhất**, và phải nêu **kết quả** mà hành vi đó tạo ra | Người nhận xác nhận *"đúng là tớ đã làm vậy"* |
+| **L4** | Ghi nhận **trước lớp** *(không chỉ trong Squad)*, hoặc ghi nhận **một người lớn** *(ACT, HLV, phụ huynh)* đúng công thức | Người nhận xác nhận cụ thể và đúng; giọng tự nhiên, không đọc thuộc |
+
+**Câu hỏi rút bài học**
+1. *Khi được ghi nhận, phản xạ đầu tiên của em là gì — nhận hay chối? Vì sao?*
+2. *Em có nhìn thấy hành vi tốt nào mà đến cuối buổi mới nhớ ra không? Nếu nói ngay lúc đó thì khác gì?*
+3. *Ở nhà, hôm nay em sẽ ghi nhận ai — và bằng câu gì?*
+
+**⚠️ Lưu ý an toàn**
+- **Thể chất:** chạm nắm tay — **hỏi đồng thuận**; ai không muốn thì gật đầu.
+- **Tâm lý:**
+  - **Không được để ai ra về mà chưa từng được ghi nhận lần nào.** Người Ghi Bằng Chứng của Squad giữ danh sách; HLV kiểm cuối buổi. Đây là **tiêu chí chất lượng bắt buộc**, không phải lời khuyên.
+  - **Cấm ghi nhận kiểu mỉa mai** *("tớ ghi nhận bạn vì hôm nay bạn không nói chuyện riêng")*. HLV dừng ngay và yêu cầu nói lại.
+  - **Không xếp hạng "ai được ghi nhận nhiều nhất".**
+  - Với học sinh nhút nhát, cho phép **viết ra giấy nhớ và dán vào lưng ghế bạn** thay vì nói to.
+
+**🔁 Phương án dự phòng**
+
+| Tình huống | Cách xử lý |
+|---|---|
+| Lớp quá đông *(>40)* | Chạy song song ở mọi Squad; HLV chỉ đi nghe 2 Squad mỗi buổi, luân phiên |
+| Lớp quá ít *(<10)* | Một vòng chung; mỗi người được ghi nhận **hai lần** |
+| Không gian hẹp | Vòng tròn ngồi tại chỗ, quay mặt vào nhau |
+| Hết giờ | **Không được cắt trò này.** Cắt bớt phần khác; nếu chỉ còn 2 phút thì mỗi Squad nói 2 lời ghi nhận đại diện |
+| Học sinh không muốn nói | Viết giấy nhớ; HLV đọc hộ **không kèm tên người viết** |
+
+---
+
+### `TC-A-004` · THIẾT KẾ HABIT-5
+
+| Mã | Pha | Khối | Sĩ số | Thời lượng | Dụng cụ |
+|---|:--:|---|:--:|:--:|---|
+| TC-A-004 | **A** | 🟢 K1–5 · 🔵 K6–9 · 🟣 K10–12 | 10–40 | 14′ | Phiếu Sứ Mệnh 7 ngày, bút; bảng HABIT-5 treo tường |
+
+**Mục tiêu — vi kỹ năng rèn:**
+- **Thiết kế một thói quen đủ 5 khoá** thay vì chỉ "quyết tâm".
+- **Thu nhỏ việc xuống bản 2 phút** — kỹ năng quan trọng nhất và bị bỏ qua nhiều nhất.
+- **Chọn người chứng và nói ra cam kết** trước khi rời lớp.
+
+**Cách chơi**
+
+1. HLV treo **bảng HABIT-5** và giữ nguyên suốt cụm:
+
+   | Khoá | Tên | Câu hỏi phải trả lời | Ví dụ đạt |
+   |:--:|---|---|---|
+   | **1** | **Neo** | *Việc này gắn ngay sau việc gì em vốn đã làm hằng ngày?* | *"Ngay sau khi cất cặp"* |
+   | **2** | **Nhỏ** | *Bản 2 phút của nó là gì?* | *"Đọc 1 trang"*, không phải *"đọc 30 phút"* |
+   | **3** | **Nhìn thấy** | *Dấu hiệu nào cho biết hôm nay em đã làm?* | *"Ô số ___ trên bảng chuỗi được tô"* |
+   | **4** | **Người chứng** | *Ai sẽ biết em có làm hay không?* | *"Bạn Nam cùng Squad, hỏi nhau mỗi sáng thứ Hai"* |
+   | **5** | **Thưởng** | *Ngay sau khi làm xong, em tự cho mình điều gì nhỏ?* | *"Tô ô và nói to: xong rồi!"* |
+
+2. Mỗi em điền **Phiếu Sứ Mệnh 7 ngày** — 5 dòng, đúng 5 khoá.
+3. **Vòng Kiểm Tra Squad:** bạn bên phải đọc phiếu và hỏi **hai câu chốt**:
+   - *"Bản 2 phút của bạn thật sự chỉ mất 2 phút chứ?"*
+   - *"Nếu tối mai bạn về nhà lúc 9 giờ và mệt, bạn vẫn làm được không?"*
+   Nếu câu trả lời là **không**, phải **thu nhỏ việc lại ngay tại chỗ**.
+4. Ký cam kết, người chứng ký bên cạnh.
+   > 🎤 **HLV:** *"Việc mà em chỉ làm được vào ngày em khoẻ không phải là thói quen. Thói quen là việc em vẫn làm được vào ngày em tệ nhất. Hãy thu nhỏ đến mức đó."*
+
+**Biến thể nâng độ khó**
+
+| Bậc | Ràng buộc thêm | Dấu hiệu đạt |
+|:--:|---|---|
+| **L1** | Chọn từ **danh mục 8 thói quen gợi ý**, HLV giúp thu nhỏ | Điền đủ 5 khoá, có người chứng |
+| **L2** | **Tự chọn việc**, tự thu nhỏ, qua được hai câu chốt của bạn | Bản 2 phút thật sự ≤2 phút; neo là một việc có thật hằng ngày |
+| **L3** | Thiết kế thói quen cho **mục tiêu 90 ngày**, kèm **phương án ngày tệ** *(bản 30 giây)* và **phương án đứt chuỗi** | Có đủ 3 tầng: bản đủ · bản 2 phút · bản 30 giây |
+| **L4** | **Thiết kế hộ một bạn khác** và bảo vệ thiết kế đó trước Squad; theo dõi kết quả của bạn sau 2 tuần | Bạn được thiết kế giữ chuỗi ≥10/14 ngày |
+
+**Câu hỏi rút bài học**
+1. *Khoá nào em thấy khó điền nhất — Neo, Nhỏ, Nhìn thấy, Người chứng hay Thưởng? Vì sao?*
+2. *Bản đầu tiên em viết to cỡ nào? Sau khi thu nhỏ nó còn lại gì?*
+3. *Vì sao em chọn người chứng là bạn đó? Bạn ấy sẽ hỏi em vào lúc nào?*
+
+**⚠️ Lưu ý an toàn**
+- **Thể chất:** không có rủi ro.
+- **Tâm lý:**
+  - **Thói quen phải nằm trong tầm kiểm soát của học sinh.** Không nhận các cam kết phụ thuộc người lớn *("bố sẽ chở con đi bơi mỗi sáng")* hay phụ thuộc tiền *("mua sách mới mỗi tuần")* — thất bại sẽ không phải lỗi của em nhưng em vẫn chịu cảm giác thua.
+  - **Không nhận thói quen liên quan cân nặng, ăn kiêng, hình thể.** Với lứa tuổi này, nguy cơ rối loạn ăn uống là có thật. Chuyển hướng sang vận động, ngủ, uống nước.
+  - **Người chứng phải được người đó đồng ý.** Không chỉ định người chứng vắng mặt.
+  - **Phiếu Sứ Mệnh là tài liệu của học sinh.** HLV xem để hỗ trợ, **không dùng làm căn cứ chấm điểm hạnh kiểm** và không đọc trước lớp nếu chưa xin phép.
+
+**🔁 Phương án dự phòng**
+
+| Tình huống | Cách xử lý |
+|---|---|
+| Lớp quá đông *(>40)* | Vòng Kiểm Tra làm theo cặp trong Squad, không làm toàn lớp |
+| Lớp quá ít *(<10)* | HLV kiểm từng phiếu, hỏi trực tiếp hai câu chốt — chất lượng cao hơn hẳn |
+| Không gian hẹp | Không cần di chuyển |
+| Không có phiếu in | Viết 5 dòng vào trang cuối vở, đánh số 1–5 theo 5 khoá |
+| Học sinh không nghĩ ra việc gì | Dùng **danh mục 8 thói quen gợi ý** theo khối; chọn cũng là một quyết định hợp lệ |
+
+---
+
+### `TC-A-007` · BẢNG VÀNG 3 HẠNG MỤC
+
+| Mã | Pha | Khối | Sĩ số | Thời lượng | Dụng cụ |
+|---|:--:|---|:--:|:--:|---|
+| TC-A-007 | **A** | 🟢 K1–5 · 🔵 K6–9 · 🟣 K10–12 | Mọi sĩ số | 10′ | Bảng A0 chia 3 cột, thẻ tên, ảnh in *(tuỳ chọn)* |
+
+**Mục tiêu — vi kỹ năng rèn:**
+- **Nhìn thấy công nhận công khai cho những thứ đúng** — tiến bộ, giúp đỡ, giữ chuỗi — thay vì chỉ cho thành tích cao nhất.
+- **Học sinh yếu vẫn có đường vào bảng vàng**, qua cột Tiến Bộ.
+- Neo thông điệp: **cố gắng có địa chỉ, không tan vào không khí.**
+
+**Cách chơi**
+
+1. Bảng chia **đúng 3 cột — không thêm cột "học sinh giỏi nhất"**:
+
+   | Cột | Tên cột | Căn cứ ghi tên |
+   |:--:|---|---|
+   | 1 | **TIẾN BỘ NHẤT** | Có số liệu tăng giữa hai lượt/hai buổi — bất kể xuất phát điểm |
+   | 2 | **GIÚP BẠN NHIỀU NHẤT** | Do bạn bè đề cử, kèm mô tả hành vi cụ thể |
+   | 3 | **GIỮ CHUỖI DÀI NHẤT** | Số ô liên tiếp trên bảng chuỗi |
+
+2. Cuối mỗi buổi, mỗi Squad **đề cử 1 tên cho 1 cột**, kèm **một câu bằng chứng**. Không có bằng chứng thì không được đề cử.
+3. HLV viết tên lên bảng cùng câu bằng chứng.
+4. **Sau 4 buổi thì xoá và làm lại** — bảng luôn có chỗ trống cho người mới.
+   > 🎤 **HLV:** *"Bảng này không ghi ai giỏi nhất. Nó ghi ai đi xa nhất so với chính mình, ai đỡ bạn nhiều nhất, và ai bền nhất. Ba thứ đó ai cũng làm được — kể cả bạn đang thấy mình yếu nhất lớp."*
+
+**Biến thể nâng độ khó**
+
+| Bậc | Ràng buộc thêm | Dấu hiệu đạt |
+|:--:|---|---|
+| **L1** | HLV chọn và ghi | Mỗi cột có ≥1 tên kèm bằng chứng |
+| **L2** | **Squad đề cử**, phải nêu số liệu hoặc hành vi cụ thể | Không có đề cử nào bị bác vì thiếu bằng chứng |
+| **L3** | Cả lớp **bỏ phiếu kín** cho cột 2, và phải **kiểm chứng chéo** bằng chứng của cột 1 và 3 | Bằng chứng khớp khi kiểm chéo |
+| **L4** | Học sinh **tự vận hành toàn bộ bảng** *(nhận đề cử, kiểm chứng, viết, xoá theo chu kỳ)* trong 1 tháng, HLV chỉ quan sát | Bảng chạy đủ chu kỳ, không có khiếu nại về công bằng |
+
+**Câu hỏi rút bài học**
+1. *Cột nào em nghĩ mình có cơ hội nhất? Cần thêm gì để có tên ở đó?*
+2. *Có bạn nào xứng đáng mà chưa ai đề cử không? Bằng chứng của bạn ấy là gì?*
+3. *Nếu bảng chỉ có một cột "điểm cao nhất", lớp mình sẽ khác thế nào?*
+
+**⚠️ Lưu ý an toàn**
+- **Thể chất:** treo bảng chắc chắn, không treo trên lối đi.
+- **Tâm lý:**
+  - **Tuyệt đối không lập cột "cần cố gắng", "chưa đạt", hay bất kỳ bảng đen nào.** Công khai điều tốt thì được; công khai điều kém là làm nhục.
+  - **Bắt buộc xoá theo chu kỳ 4 buổi.** Bảng để lâu biến thành hệ thống đẳng cấp cố định trong lớp.
+  - HLV theo dõi: nếu sau 3 chu kỳ có học sinh **chưa từng xuất hiện ở bất kỳ cột nào**, đó là tín hiệu cần can thiệp riêng — tìm bằng chứng thật của em đó, không "tặng" tên cho có.
+  - **Không gửi bảng vàng lên nhóm phụ huynh chung** — việc so con nhà mình với con nhà người khác gây hại nhiều hơn lợi. Ghi nhận cá nhân gửi riêng.
+
+**🔁 Phương án dự phòng**
+
+| Tình huống | Cách xử lý |
+|---|---|
+| Lớp quá đông *(>40)* | Mỗi buổi chỉ nhận đề cử cho **một cột**, xoay vòng 3 buổi |
+| Lớp quá ít *(<10)* | Ghi cả 3 cột mỗi buổi; mỗi em chắc chắn có tên trong một chu kỳ |
+| Không gian hẹp | Bảng khổ A3 kẹp vào bìa, giơ lên cuối buổi rồi cất |
+| Không có chỗ treo cố định | Dùng bảng số hoá trong nhóm lớp — **chỉ nhóm lớp, không nhóm phụ huynh** |
+
+---
+
+### `TC-A-011` · ĐÔI BẠN CÙNG TIẾN
+
+| Mã | Pha | Khối | Sĩ số | Thời lượng | Dụng cụ |
+|---|:--:|---|:--:|:--:|---|
+| TC-A-011 | **A** | 🟢 K1–5 · 🔵 K6–9 | Cặp *(lớp 10–40)* | 16′ *(lập cặp)* + 3′/tuần | Phiếu Đôi Bạn, bảng chuỗi của cả hai |
+
+**Mục tiêu — vi kỹ năng rèn:**
+- **Giữ cam kết cho người khác** — động lực xã hội mạnh hơn động lực cá nhân ở lứa tuổi này.
+- **Hỏi bạn một câu đúng** thay vì nhắc nhở hay phán xét.
+- **Chịu trách nhiệm hai chiều:** mình cũng bị hỏi lại.
+
+**Cách chơi**
+
+1. Ghép cặp **trong Squad**, ưu tiên hai em có **giờ giấc sinh hoạt giống nhau** *(cùng buổi học, cùng đường về)* — yếu tố này quyết định cặp có duy trì được không.
+2. Hai em trao đổi **Phiếu Sứ Mệnh** và điền Phiếu Đôi Bạn: **việc của bạn là gì · hỏi vào lúc nào · hỏi bằng câu gì**.
+3. HLV dạy **ba câu được phép hỏi** — và cấm mọi câu khác:
+
+   | # | Câu được phép | Vì sao |
+   |:--:|---|---|
+   | 1 | *"Hôm qua bạn có làm không?"* | Hỏi sự việc, không hỏi lý do |
+   | 2 | *"Có gì cản bạn không?"* | Mở đường cho bạn nói khó khăn |
+   | 3 | *"Tớ giúp được gì cho ngày mai?"* | Chuyển sang hành động |
+
+   > ⛔ **Cấm:** *"Sao bạn lười thế"* · *"Tớ nói rồi mà"* · *"Bạn hứa rồi đấy"*.
+4. Luyện ngay tại lớp **3 lượt hỏi–đáp**, đổi vai.
+5. Chốt lịch: **hỏi nhau vào một thời điểm cố định trong tuần** và ghi vào phiếu.
+
+**Biến thể nâng độ khó**
+
+| Bậc | Ràng buộc thêm | Dấu hiệu đạt |
+|:--:|---|---|
+| **L1** | HLV ghép cặp, dùng đúng 3 câu mẫu, hỏi 1 lần/tuần | Có hỏi thật ≥2 tuần liên tiếp |
+| **L2** | **Tự chọn bạn**, hỏi 2 lần/tuần, ghi lại câu trả lời | Cả hai bảng chuỗi đều tăng số ô so với tuần trước |
+| **L3** | Cặp phải **xử lý một lần bạn mình đứt chuỗi** mà không trách móc — dùng câu 2 và 3 | Bạn quay lại chuỗi trong vòng 2 ngày |
+| **L4** | Một em **kèm hai bạn**, hoặc kèm **một bạn khối dưới**; báo cáo trước Squad phương pháp mình dùng | Cả hai người được kèm giữ chuỗi ≥10/14 ngày |
+
+**Câu hỏi rút bài học**
+1. *Khi bạn hỏi "hôm qua bạn có làm không", cảm giác của em là gì — bị soi hay được nhớ đến?*
+2. *Có lần nào em muốn nói dối bạn mình về việc đã làm không? Điều gì đã ngăn em?*
+3. *Em thấy mình giữ lời vì mình hay vì bạn nhiều hơn? Điều đó nói gì về em?*
+
+**⚠️ Lưu ý an toàn**
+- **Thể chất:** không có rủi ro.
+- **Tâm lý và bảo vệ trẻ em:**
+  - **Cặp chỉ được liên lạc trong khung nhà trường/lớp cho phép.** Nếu có liên lạc ngoài giờ, phải qua **kênh nhóm có người lớn quan sát** — không lập kênh nhắn tin riêng hai người ngoài tầm nhìn nhà trường. Đây là ràng buộc bắt buộc trong hệ, không phải khuyến nghị.
+  - **Không ghép cặp giữa học sinh và người lớn.** Bạn đồng hành phải là bạn cùng lứa.
+  - **Không ghép cặp một em đang bị bắt nạt với người liên quan tới việc đó.** HLV rà lại danh sách cặp trước khi chốt.
+  - Nếu một cặp trở nên **kiểm soát hoặc mỉa mai nhau**, tách cặp ngay và không giải thích công khai lý do.
+  - Nếu bạn đồng hành nghe được điều nghiêm trọng *(bị bạo hành, ý nghĩ tự hại)*, em **phải báo người lớn**, không được giữ bí mật. HLV dạy rõ câu này khi lập cặp: *"Có một loại bí mật không được giữ — bí mật làm bạn mình không an toàn."* Nhắc kèm **hotline 111**.
+
+**🔁 Phương án dự phòng**
+
+| Tình huống | Cách xử lý |
+|---|---|
+| Lớp quá đông *(>40)* | Ghép cặp trong Squad; Người Ghi Bằng Chứng tổng hợp một con số cho cả Squad |
+| Lớp lẻ 1 người | Nhóm 3 người theo vòng: A hỏi B, B hỏi C, C hỏi A |
+| Không gian hẹp | Cặp ngồi cùng bàn; không cần di chuyển |
+| Bạn đồng hành nghỉ học dài | HLV **ghép lại trong 1 buổi**, không để em nào mất bạn quá một tuần |
+| Học sinh không muốn tham gia | Ghép với **ACT hoặc HLV** trong khung nhà trường; hoặc tự theo dõi bằng bảng chuỗi có ký tuần |
+
+---
+
+### `TC-A-012` · NĂM VAI SQUAD
+
+| Mã | Pha | Khối | Sĩ số | Thời lượng | Dụng cụ |
+|---|:--:|---|:--:|:--:|---|
+| TC-A-012 | **A** | 🟢 K1–5 · 🔵 K6–9 · 🟣 K10–12 | Squad 5 | 15′ | 5 thẻ vai *(có biểu tượng)*, phiếu tự đánh giá vai |
+
+**Mục tiêu — vi kỹ năng rèn:**
+- **Làm đúng một vai được giao** và báo cáo được kết quả của vai đó.
+- **Trải qua đủ 5 vai** trong một học kỳ — mỗi vai rèn một năng lực khác nhau.
+- **Chuyển giao vai** cho người kế tiếp mà không mất thông tin.
+
+**Cách chơi**
+
+1. Phát **5 thẻ vai**, đọc to trách nhiệm và **dấu hiệu làm tốt** của từng vai:
+
+   | Vai | Tên | Trách nhiệm | Dấu hiệu làm tốt — đếm được |
+   |:--:|---|---|---|
+   | 🎯 | **Đội trưởng Đích** | Nhắc nhóm bám mục tiêu và tiêu chí xuất sắc | Nhắc lại đích ≥3 lần trong buổi, đúng lúc nhóm lệch |
+   | 🔥 | **Người Giữ Lửa** | Theo dõi năng lượng, khích lệ, chống bỏ cuộc | Không ai trong Squad ngồi ngoài quá 2 phút |
+   | 🧠 | **Người Chất Vấn** | Hỏi phản biện, chống đồng thuận dễ dãi | Đặt ≥2 câu hỏi làm nhóm đổi phương án |
+   | ⏱️ | **Người Giữ Nhịp** | Quản thời gian, chốt hạn nội bộ | Squad không trễ quá 1 phút ở mọi mốc |
+   | 📋 | **Người Ghi Bằng Chứng** | Ghi số liệu, chụp sản phẩm, cập nhật bảng | Nộp đủ số liệu 4 vòng T-DRILL |
+
+2. Squad **tự phân vai** và giải trình một câu vì sao — không bốc thăm ở lần đầu.
+3. Chạy một hoạt động ngắn *(10′)* để mọi vai có việc thật.
+4. **Vòng Bàn Giao (5′):** mỗi người tự chấm vai mình theo dấu hiệu đếm được, rồi **nói một câu bàn giao** cho người sẽ nhận vai đó ở chuyên đề sau: *"Vai này khó nhất ở chỗ ___. Bạn nên chuẩn bị ___."*
+   > 🎤 **HLV:** *"Đổi vai không phải để công bằng. Đổi vai vì mỗi vai rèn một cơ khác nhau. Ai chỉ làm mãi một vai là chỉ tập mãi một cơ."*
+
+**Biến thể nâng độ khó**
+
+| Bậc | Ràng buộc thêm | Dấu hiệu đạt |
+|:--:|---|---|
+| **L1** | HLV phân vai, thẻ vai để trước mặt suốt buổi | Mỗi người nói được vai mình làm gì |
+| **L2** | Squad **tự phân vai có giải trình**; tự chấm theo dấu hiệu đếm được | ≥4/5 vai đạt dấu hiệu |
+| **L3** | Nhận **vai mình yếu nhất** *(vai mình ngại nhất, theo tự đánh giá)* và làm trong một cụm đầy đủ | Vẫn đạt dấu hiệu đếm được của vai đó |
+| **L4** | **Kèm một Squad mới** vận hành 5 vai, hoặc dẫn Squad thiếu người *(4 người phải gánh 5 vai)* và phân bổ lại hợp lý | Squad mới chạy đủ vai không cần HLV nhắc |
+
+**Câu hỏi rút bài học**
+1. *Vai nào em thấy dễ nhất, vai nào khó nhất? Điều đó nói gì về thế mạnh của em?*
+2. *Có vai nào em từng nghĩ là "vai phụ" nhưng làm rồi mới thấy khó không?*
+3. *Câu bàn giao em viết cho người sau — nếu chính em nhận vai đó tuần trước, câu đó có giúp em không?*
+
+**⚠️ Lưu ý an toàn**
+- **Thể chất:** không có rủi ro.
+- **Tâm lý:**
+  - **Bắt buộc luân phiên vai mỗi chuyên đề.** Nếu để một em giữ mãi vai Đội trưởng, Squad hình thành thứ bậc cố định — đúng thứ mà hệ này muốn tránh.
+  - **Vai Người Chất Vấn phải được HLV bảo vệ.** Em nhận vai này rất dễ bị nhóm coi là "khó chịu". HLV nói rõ trước lớp: *"Bạn ấy đang làm đúng việc được giao."*
+  - **Không dùng vai như hình phạt hay phần thưởng.** Không có chuyện "em ngoan thì được làm đội trưởng".
+  - Học sinh có nhu cầu đặc biệt vẫn nhận vai thật, có thể **điều chỉnh dấu hiệu đếm được** cho phù hợp — điều chỉnh tiêu chí, không loại khỏi vai.
+
+**🔁 Phương án dự phòng**
+
+| Tình huống | Cách xử lý |
+|---|---|
+| Squad 4 người | Gộp **Giữ Nhịp + Ghi Bằng Chứng** thành một vai; ghi rõ trên thẻ |
+| Squad 6 người | Tách **Ghi Bằng Chứng** thành *ghi số liệu* và *ghi sản phẩm* |
+| Lớp quá đông | Chạy song song; HLV chỉ dự Vòng Bàn Giao của 2 Squad mỗi buổi |
+| Không có thẻ in | Viết tên vai lên giấy nhớ dán lên áo, hoặc dùng 5 màu bút khác nhau |
+| Học sinh không muốn nhận vai | Nhận **vai đôi cùng một bạn** trong một chuyên đề, sau đó tự làm |
+
+---
+
+### `TC-A-015` · CHỢ Ý TƯỞNG
+
+| Mã | Pha | Khối | Sĩ số | Thời lượng | Dụng cụ |
+|---|:--:|---|:--:|:--:|---|
+| TC-A-015 | **A** | 🔵 K6–9 · 🟣 K10–12 | 15–40 | 25′ | Giấy A3 mỗi Squad, bút màu, "tiền" mô hình *(3 sticker/người)*, bàn kê thành quầy |
+
+**Mục tiêu — vi kỹ năng rèn:**
+- **Biến ý tưởng thành đề xuất có địa chỉ, có người làm, có mốc thời gian.**
+- **Chào bán ý tưởng trong 90 giây** cho người không có nghĩa vụ phải nghe.
+- **Chấp nhận ý tưởng của mình không được chọn** mà vẫn đóng góp tiếp.
+
+**Cách chơi**
+
+1. HLV nêu **đề bài có phạm vi thật**: *"Một việc Squad mình sẽ làm trong 2 tuần tới để lớp/trường mình tốt hơn — không cần tiền, không cần xin phép quá 1 người."*
+2. Squad làm **áp phích A3** đủ 4 ô: **① Việc gì · ② Ai làm · ③ Xong khi nào · ④ Nhìn vào đâu biết là đã xong**.
+3. **Mở chợ (10′):** mỗi Squad để **một người bán** đứng quầy, những người còn lại đi chợ. Người bán chào 90 giây; khách hỏi **đúng một câu**: *"Cái này ai làm và xong khi nào?"*
+4. **Đổi phiên** để người bán cũng được đi chợ.
+5. **Bỏ tiền:** mỗi người có 3 sticker, dán cho ý tưởng mình **sẵn sàng tham gia thật** — không dán cho Squad mình.
+6. **Chốt:** 2–3 ý tưởng nhiều sticker nhất trở thành **việc thật của lớp**, có người phụ trách và ngày kiểm.
+   > 🎤 **HLV:** *"Sticker này không phải là bình chọn ý tưởng hay. Nó là chữ ký của em: em sẽ tham gia làm. Dán rồi thì tuần sau có tên trong danh sách."*
+
+**Biến thể nâng độ khó**
+
+| Bậc | Ràng buộc thêm | Dấu hiệu đạt |
+|:--:|---|---|
+| **L1** | Ý tưởng trong phạm vi lớp, HLV gợi ý 3 hướng | Áp phích đủ 4 ô |
+| **L2** | Tự chọn phạm vi; chào bán trong **90 giây không đọc giấy** | Khách trả lời được "ai làm, xong khi nào" sau khi nghe |
+| **L3** | Thêm ràng buộc **nguồn lực bằng 0 và thời gian 1 tuần**; phải nêu **rủi ro và cách xử lý** | Nêu được ≥2 rủi ro thật kèm cách xử lý |
+| **L4** | Chào bán cho **người ngoài lớp** — ban giám hiệu, phụ huynh, hội đồng trường — và **triển khai thật**, báo cáo kết quả sau 2 tuần | Ý tưởng được duyệt và làm xong ≥1 mốc; có bằng chứng ảnh/số liệu |
+
+**Câu hỏi rút bài học**
+1. *Ý tưởng nào nhiều sticker nhất? Nó hơn ý tưởng của Squad em ở điểm nào — nội dung hay cách chào bán?*
+2. *Ô nào khó điền nhất trong 4 ô? Vì sao ô "nhìn vào đâu biết là đã xong" hay bị bỏ trống?*
+3. *Nếu ý tưởng của em không được chọn, em vẫn làm hay bỏ? Vì sao?*
+
+**⚠️ Lưu ý an toàn**
+- **Thể chất:** kê quầy sát tường, chừa lối đi ≥1m; quy định **chiều đi chợ một chiều** để không va nhau.
+- **Tâm lý và ranh giới:**
+  - **HLV phải lọc đề xuất trước khi chốt thành việc thật.** Loại ngay các ý tưởng: **quyên góp tiền** · **liên quan mạng xã hội công khai có mặt học sinh** · **can thiệp vào một cá nhân cụ thể** *("làm cho bạn X bớt nói chuyện riêng")* · **ra ngoài trường không có người lớn**.
+  - **Không để ý tưởng thắng biến thành gánh nặng của một em.** Việc thật phải có ≥3 người và có mốc kiểm.
+  - Squad có ý tưởng không được chọn: HLV **ghi nhận công khai một điểm mạnh cụ thể** của áp phích đó — tránh thông điệp "ý các em vô giá trị".
+  - **Chốt việc thật thì phải có ngày kiểm thật.** Hứa rồi bỏ quên còn hại hơn không hứa: học sinh sẽ học được rằng lời cam kết ở lớp này không có nghĩa gì.
+
+**🔁 Phương án dự phòng**
+
+| Tình huống | Cách xử lý |
+|---|---|
+| Lớp quá đông *(>40)* | Chợ chia 2 khu, mỗi khu 4 quầy; giảm còn 2 sticker/người |
+| Lớp quá ít *(<10)* | 2 Squad, mỗi Squad chào bán trước cả nhóm thay vì mở chợ |
+| Không gian hẹp | **Chợ Trên Tường:** dán áp phích quanh phòng, người bán đứng cạnh áp phích của mình |
+| Không có sticker | Dùng 3 dấu tích bút màu, hoặc 3 mẩu giấy nhỏ ghi tên |
+| Không có ý tưởng nào khả thi | HLV giữ sẵn **danh mục 6 việc mẫu** theo khối để Squad chọn và cải tiến |
+
+---
+
+### `TC-A-019` · VÒNG PHẢN HỒI 360
+
+| Mã | Pha | Khối | Sĩ số | Thời lượng | Dụng cụ |
+|---|:--:|---|:--:|:--:|---|
+| TC-A-019 | **A** | 🔵 K6–9 · 🟣 K10–12 | Squad 5–6 | 25′ | Phiếu 360 in sẵn *(1 tờ/người)*, bút, phong bì |
+
+> ⚠️ **Trò có rủi ro tâm lý cao nhất trong pha A.** Chỉ chạy khi Squad đã ổn định ≥6 buổi và đã thành thạo `TC-T-013` *(Phản hồi 1-1-1)*. **Không chạy cho Squad mới lập.**
+
+**Mục tiêu — vi kỹ năng rèn:**
+- **Nhận phản hồi từ nhiều nguồn cùng lúc** và tìm ra điểm chung giữa các nguồn.
+- **Phân biệt phản hồi lặp lại ở nhiều người** *(tín hiệu thật)* **với ý kiến riêng của một người**.
+- **Chuyển phản hồi thành một việc duy nhất sẽ làm** — không sa vào tự trách.
+
+**Cách chơi**
+
+1. Mỗi em có một **phiếu mang tên mình**, để trong phong bì mở.
+2. Phiếu xoay vòng trong Squad. Mỗi người viết cho bạn **đúng 2 dòng**, dùng khuôn của `TC-T-013`:
+   - *"Điều tớ thấy bạn làm được là ___"* *(hành vi quan sát được, có lúc/có việc)*
+   - *"Ngay chuyên đề sau bạn thử ___"* *(việc nhỏ, làm được)*
+3. **Ký tên.** Phản hồi 360 trong hệ này **không ẩn danh** — ẩn danh mở cửa cho ác ý.
+4. **Đọc riêng (4′):** mỗi em nhận lại phiếu của mình, đọc **một mình, không bình luận**. HLV giữ im lặng tuyệt đối trong 4 phút này.
+5. **Tìm điểm chung (4′):** mỗi em khoanh những điều **có từ 2 người trở lên nhắc**.
+   > 🎤 **HLV:** *"Một người nói thì là ý kiến. Hai người trở lên cùng nói thì là dữ liệu. Hôm nay em chỉ cần xử lý phần dữ liệu."*
+6. **Chốt (5′):** mỗi em nói to **một câu duy nhất** trước Squad: *"Từ phản hồi này, việc tớ sẽ làm là ___."* Không giải thích, không thanh minh, không phản hồi lại người viết.
+
+**Biến thể nâng độ khó**
+
+| Bậc | Ràng buộc thêm | Dấu hiệu đạt |
+|:--:|---|---|
+| **L1** | Chỉ viết ô **"làm được"**, không viết ô "thử" | Mọi phiếu đều có ≥3 dòng, nêu hành vi cụ thể |
+| **L2** | Đủ 2 ô, ký tên | Ô "thử" là việc làm được trong 1 chuyên đề |
+| **L3** | Thêm nguồn: **1 phản hồi từ ACT/HLV** và **1 tự đánh giá của chính mình**; so ba nguồn xem lệch ở đâu | Chỉ ra được **một điểm mù** — điều người khác thấy mà mình không thấy |
+| **L4** | Chạy 360 cho **vai lãnh đạo Squad** sau một dự án thật, có mặt cả người ngoài Squad; và **theo dõi 2 tuần** xem việc đã cam kết có làm không | Việc cam kết được làm và có bằng chứng; nhận phản hồi lần hai không thanh minh |
+
+**Câu hỏi rút bài học**
+1. *Điều gì được từ 2 người trở lên nhắc tới? Em có bất ngờ không?*
+2. *Có điều gì người khác thấy mà em hoàn toàn không biết mình có không? Đó gọi là điểm mù.*
+3. *Việc duy nhất em chọn làm là gì? Ai trong Squad sẽ là người hỏi lại em sau một tuần?*
+
+**⚠️ Lưu ý an toàn**
+- **Thể chất:** không có rủi ro.
+- **Tâm lý — mức rủi ro cao, đọc kỹ trước buổi:**
+  - **Điều kiện tiên quyết:** Squad ổn định ≥6 buổi · đã thạo `TC-T-013` · **không có mâu thuẫn đang mở trong Squad**. Thiếu bất kỳ điều kiện nào thì **hoãn**, không "thử xem sao".
+  - **Bắt buộc ký tên.** Không chạy bản ẩn danh với học sinh phổ thông.
+  - **HLV phải đọc lướt toàn bộ phiếu trước khi trả** cho học sinh, và **rút ra bất kỳ phiếu nào có câu công kích cá nhân, mỉa mai, hay nhắc tới ngoại hình, gia đình, hoàn cảnh.** Người viết câu đó được xử lý riêng, không nêu tên trước lớp. Bước rà này **không được bỏ để tiết kiệm thời gian**.
+  - **Cấm tuyệt đối:** nhận xét về ngoại hình · về gia đình, kinh tế, nghề nghiệp bố mẹ · về học lực môn khác · về những chuyện ngoài lớp KNS.
+  - **Không thanh minh, không đối chất tại chỗ.** Nếu một em muốn nói lại với người viết, hẹn riêng có HLV/ACT ngồi cùng, buổi khác.
+  - **Phiếu là tài sản của người nhận.** Không thu lại, không sao chụp, không đưa phụ huynh, không lưu hồ sơ.
+  - Nếu một em phản ứng mạnh khi đọc phiếu: dừng riêng, đưa ra **Góc Bình Yên** cùng ACT. Nếu xuất hiện dấu hiệu nguy cơ, **chuyển bộ phận tâm lý theo quy trình bảo vệ trẻ em**, không tự xử lý.
+  - **HLV cũng nhận 360 từ học sinh ít nhất một lần mỗi học kỳ** — nếu người lớn không dám nhận, học sinh sẽ không tin quy trình này công bằng.
+
+**🔁 Phương án dự phòng**
+
+| Tình huống | Cách xử lý |
+|---|---|
+| Lớp quá đông *(>40)* | Chạy trong Squad, HLV rà phiếu theo Squad; cần thêm 10 phút cho khâu rà |
+| Lớp quá ít *(<10)* | Một vòng chung cả lớp; mỗi em nhận nhiều phản hồi hơn, tăng thời gian đọc riêng lên 6 phút |
+| Không gian hẹp | Xoay phiếu tại bàn theo một chiều; khâu đọc riêng cho phép quay mặt ra ngoài |
+| Thiếu thời gian | **Không rút gọn khâu rà phiếu và khâu đọc riêng.** Cắt khâu chốt trước Squad, cho học sinh viết câu cam kết ra giấy thay vì nói to |
+| Squad chưa đủ điều kiện | Thay bằng `TC-T-013` một chiều; hẹn 360 vào cụm sau |
+
+---
+
+## PHẦN H. CÁCH CHỌN TRÒ CHO MỘT CỤM 180 PHÚT
+
+### H1. Công thức mặc định — 5 trò cho một cụm
+
+| Thứ tự | Pha | Số trò | Thời lượng gợi ý | Vai trò trong cụm |
+|:--:|:--:|:--:|:--:|---|
+| 1 | **E** | 1 | 7–10′ | Chuyển trạng thái, gom sự chú ý, xếp Squad |
+| 2 | **G** | 1 | 8–15′ | Đặt đích buổi `G1` và tiêu chí xuất sắc |
+| 3 | **I** | 1 | 22–28′ | Tạo trải nghiệm thật — **nguồn của bằng chứng** |
+| 4 | **T** | 1–2 | 32–46′ | T-DRILL 4 vòng; ưu tiên `TC-T-031` khi lớp đông |
+| 5 | **A** | 2 | 14–20′ | `TC-A-004` **hoặc** `TC-A-015` + **luôn kèm** `TC-A-003` |
+
+> 🔒 **Hai trò không bao giờ được bỏ khỏi một cụm:** `TC-A-003` *(Vòng Ghi Nhận)* và ít nhất **một trò pha T có đủ 4 vòng**. Bỏ trò A thì buổi không có kết; bỏ 4 vòng T thì buổi không có luyện.
+
+### H2. Chọn theo điều kiện lớp
+
+| Điều kiện | Trò nên dùng | Trò nên tránh |
+|---|---|---|
+| **Lớp mới, chưa quen nhau** | `TC-E-002` · `TC-E-013` · `TC-G-002` · `TC-A-003` | `TC-A-019` · `TC-I-035` |
+| **Lớp đông >40** | `TC-T-031` · `TC-I-024` · `TC-A-007` | Các trò theo cặp không có người đếm |
+| **Phòng chật, bàn cố định** | `TC-T-006` · `TC-T-020` · `TC-G-018` · `TC-A-004` | `TC-I-006` · `TC-E-010` |
+| **Không có ACT hỗ trợ** | Trò không bịt mắt, không tiếp xúc | Mọi trò có dấu ✋ |
+| **Buổi cuối chu kỳ** | `TC-A-015` · `TC-A-019` *(nếu đủ điều kiện)* · `TC-A-007` | Trò khởi động dài |
+
+### H3. Bốn lỗi thường gặp khi dùng kho này
+
+| # | Lỗi | Hậu quả | Cách sửa |
+|:--:|---|---|---|
+| 1 | **Chơi nhiều trò, không bóc tách** | Học sinh nhớ trò, không nhớ kỹ năng | Giữ tỷ lệ tối thiểu **10′ chơi : 4′ bóc tách**; thiếu giờ thì cắt lượt chơi |
+| 2 | **Không công bố bậc L đang chơi** | Trò trở thành hoạt động vui, không thành bài luyện | Viết bậc L lên bảng trước mỗi vòng |
+| 3 | **Dùng trò nặng cho lớp chưa sẵn sàng** | Rủi ro tâm lý thật; mất niềm tin của lớp | Kiểm điều kiện tiên quyết ghi ở đầu mỗi trò |
+| 4 | **Không ghi số liệu** | Không có bằng chứng để xét Cấp Độ | Người Ghi Bằng Chứng của Squad nộp số mỗi vòng |
+
+### H4. Tra chéo với các kho khác
+
+| Cần gì | Tìm ở đâu |
+|---|---|
+| 160 trò gốc, bảng tra đầy đủ | [`KHO-TRO-CHOI-TEAMWORK-160.md`](KHO-TRO-CHOI-TEAMWORK-160.md) |
+| Phiếu thực hành đi kèm từng trò | `06-KHO-PHIEU-THUC-HANH/BO-PHIEU-MAU-DAY-DU.md` |
+| Rubric chấm sản phẩm | `07-KHO-PHIEU-DANH-GIA/BO-RUBRIC-CHI-TIET-19-HO.md` |
+| Kịch bản 180′ có trò gắn theo phút | `03-KICH-BAN-DAO-TAO/` |
+| Xử lý sự cố tâm lý, bắt nạt, tiết lộ | `16-KHO-TINH-HUONG-VA-CONG-CU/06-PHAC-DO-XU-LY-CHUAN.md` |
+| 100 tình huống sư phạm | `16-KHO-TINH-HUONG-VA-CONG-CU/01-KHO-100-TINH-HUONG-SU-PHAM.md` |
+
+---
+
+> **Tổng kết tệp:** 40 trò · 8 trò mỗi pha `E · G · I · T · A` · mỗi trò có đủ **mục tiêu vi kỹ năng · cách chơi có lời hô mẫu · 4 bậc L1–L4 có dấu hiệu đạt · 3 câu hỏi bóc tách · lưu ý an toàn thể chất và tâm lý · 4–5 phương án dự phòng**.
+>
+> **Nguyên tắc cuối cùng:** một trò chơi tốt không phải trò làm lớp cười to nhất, mà là trò **để lại một con số, một hành vi mới, và một việc mang về nhà**.
