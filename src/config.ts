@@ -65,10 +65,14 @@ export const SECTIONS: readonly SectionSpec[] = [
     officialName: 'Phần 3 — Tự chọn',
     questionCount: 50,
     minutes: 60,
-    mcqCount: 50,
-    fillCount: 0,
+    // Dang thuc chinh thuc: phan 3 co CA trac nghiem lan dien dap an. Rieng
+    // cac chu de Vat ly, Hoa hoc, Sinh hoc moi chu de co it nhat mot cau dien
+    // — nen mo hinh hoa toi thieu ba cau dien cho ca phan.
+    mcqCount: 47,
+    fillCount: 3,
     accent: 'viz-3',
-    description: 'Chọn môn trong Lý, Hóa, Sử, Địa hoặc Tiếng Anh.',
+    description:
+      'Chọn Khoa học (đúng 3 trong 5 chủ đề: Lý, Hóa, Sinh, Sử, Địa — mỗi chủ đề 16–17 câu) hoặc Tiếng Anh.',
   },
 ] as const;
 
@@ -79,16 +83,23 @@ export const SECTION_BY_ID: Record<SectionId, SectionSpec> = Object.fromEntries(
 export const TOTAL_QUESTIONS = SECTIONS.reduce((n, s) => n + s.questionCount, 0);
 export const TOTAL_MINUTES = SECTIONS.reduce((n, s) => n + s.minutes, 0);
 
-export const SCIENCE_SUBJECTS: ReadonlyArray<{ id: ScienceSubject; name: string; note: string }> = [
+/**
+ * Cac lua chon cua phan 3.
+ *
+ * Nam chu de khoa hoc — thi sinh chon DUNG BA — cong voi Tieng Anh la mot lua
+ * chon thay the cho ca phan. Thu tu o day la thu tu hien tren man hinh cai dat.
+ */
+export const SECTION3_OPTIONS: ReadonlyArray<{ id: ScienceSubject; name: string; note: string }> = [
   { id: 'physics', name: 'Vật lý', note: 'Cơ — Điện — Sóng — Hạt nhân' },
   { id: 'chemistry', name: 'Hóa học', note: 'Đại cương — Vô cơ — Hữu cơ' },
+  { id: 'biology', name: 'Sinh học', note: 'Tế bào — Di truyền — Cơ thể & tiến hóa' },
   { id: 'history', name: 'Lịch sử', note: 'Việt Nam và thế giới hiện đại' },
   { id: 'geography', name: 'Địa lý', note: 'Tự nhiên — Kinh tế — Bảng số liệu' },
   { id: 'english', name: 'Tiếng Anh', note: 'Ngữ pháp — Từ vựng — Đọc hiểu' },
 ];
 
 export const SUBJECT_NAME: Record<ScienceSubject, string> = Object.fromEntries(
-  SCIENCE_SUBJECTS.map((s) => [s.id, s.name]),
+  SECTION3_OPTIONS.map((s) => [s.id, s.name]),
 ) as Record<ScienceSubject, string>;
 
 /** Nhan cho tung muc do kho. */
@@ -113,4 +124,4 @@ export const DIFFICULTY_MIX: Record<number, number> = {
 };
 
 export const STORAGE_KEY = 'hsa365:state';
-export const STORAGE_VERSION = 6;
+export const STORAGE_VERSION = 7;

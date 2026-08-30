@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react';
 import { SECTIONS, SECTION_BY_ID, SUBJECT_NAME } from '../../config';
+import { describeSection3, topicsInScope } from '../../lib/section3';
 import { KINDS, KIND_BY_ID, LEVELS, LEVEL_BY_ID, MAX_LEVEL, STAGES } from '../../data/curriculum';
 import { missionForWorksheet } from '../../data/missions';
 import { TOPICS, topicName } from '../../data/topics';
@@ -33,7 +34,7 @@ export function PracticePage() {
 function PracticeContent() {
   const state = useAppState();
   const route = useRoute();
-  const subject = state.settings.scienceSubject;
+  const section3 = state.settings.section3;
 
   const [section, setSection] = useState<SectionId | 'all'>(
     (route.params.get('section') as SectionId | null) ?? 'all',
@@ -43,7 +44,7 @@ function PracticeContent() {
   const [kind, setKind] = useState<WorksheetKind | 'all'>('all');
   const [onlyUnlocked, setOnlyUnlocked] = useState(true);
 
-  const sheets = useMemo(() => activeWorksheets(subject), [subject]);
+  const sheets = useMemo(() => activeWorksheets(section3), [section3]);
 
   const filtered = useMemo(
     () =>
@@ -58,11 +59,11 @@ function PracticeContent() {
     [sheets, section, topicId, level, kind, onlyUnlocked, state],
   );
 
-  const recommended = useMemo(() => recommendedWorksheets(state, subject), [state, subject]);
+  const recommended = useMemo(() => recommendedWorksheets(state), [state]);
   const passed = sheets.filter((s) => state.worksheets[s.id]?.passed).length;
   const mastered = sheets.filter((s) => state.worksheets[s.id]?.mastered).length;
 
-  const topics = TOPICS.filter((t) => t.section !== 'science' || t.subject === subject);
+  const topics = topicsInScope(section3, TOPICS);
 
   return (
     <div className="space-y-8">
@@ -74,7 +75,8 @@ function PracticeContent() {
           <strong className="text-fg">lý thuyết → dạng bài &amp; đọc vị → kỹ năng &amp; phương pháp → luyện nâng
           cao → ôn thi → phiếu thi</strong> — mỗi phiếu kèm một phiếu lời giải và bảng phân tích chuyên sâu riêng,
           cộng một phiếu hướng dẫn ôn chắc cho cả chuyên đề. Chương trình của bạn gồm{' '}
-          {formatNumber(sheets.length)} phiếu (đã lọc theo môn tự chọn {SUBJECT_NAME[subject]}).
+          {formatNumber(sheets.length)} phiếu (đã lọc theo phần 3 bạn chọn:{' '}
+          {describeSection3(section3, (s) => SUBJECT_NAME[s])}).
         </p>
       </header>
 

@@ -3,6 +3,7 @@ import { PLAYBOOK_BY_TOPIC } from '../../data/playbook';
 import { PatternDetail } from '../solutions/PlaybookPanel';
 import { KINDS } from '../../data/curriculum';
 import { TOPICS } from '../../data/topics';
+import { topicsInScope } from '../../lib/section3';
 import { cn } from '../../lib/cn';
 import { formatPercent } from '../../lib/format';
 import { ERROR_LABEL } from '../../lib/solutions';
@@ -37,9 +38,7 @@ export function TopicGuidePage() {
   const guide = useMemo(() => buildTopicGuide(state, topicId), [state, topicId]);
   const playbook = topicId ? PLAYBOOK_BY_TOPIC.get(topicId) : undefined;
 
-  const topics = TOPICS.filter(
-    (t) => t.section !== 'science' || t.subject === state.settings.scienceSubject,
-  );
+  const topics = topicsInScope(state.settings.section3, TOPICS);
 
   if (!guide) {
     return (

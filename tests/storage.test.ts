@@ -8,6 +8,8 @@ import {
   sanitizeProfile,
   sanitizeSettings,
 } from '../src/lib/storage';
+import { subjectsOf } from '../src/lib/section3';
+import { SCIENCE_PICK } from '../src/types';
 
 describe('lưu trữ có phiên bản', () => {
   it('nâng cấp dữ liệu phiên bản 1 mà không mất tiến độ đã có', () => {
@@ -97,12 +99,16 @@ describe('lưu trữ có phiên bản', () => {
       fontScale: 12,
       dailyGoal: -5,
       theme: 'neon' as never,
-      scienceSubject: 'astrology' as never,
+      section3: { mode: 'science', subjects: ['astrology', 'physics'] } as never,
     });
     expect(settings.targetScore).toBe(150);
     expect(settings.fontScale).toBeLessThanOrEqual(1.375);
     expect(settings.dailyGoal).toBeGreaterThanOrEqual(5);
     expect(settings.theme).toBe('system');
-    expect(settings.scienceSubject).toBe('english');
+    // Chu de la bi loai, va lua chon van duoc bu cho du dung ba chu de.
+    expect(settings.section3.mode).toBe('science');
+    expect(subjectsOf(settings.section3)).toHaveLength(SCIENCE_PICK);
+    expect(subjectsOf(settings.section3)).not.toContain('astrology');
+    expect(subjectsOf(settings.section3)[0]).toBe('physics');
   });
 });

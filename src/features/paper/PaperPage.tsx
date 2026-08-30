@@ -87,7 +87,7 @@ export function PaperPage() {
             <Select value={requested} onChange={(e) => navigate(`/paper?code=${e.target.value}`)}>
               {MOCK_EXAMS.map((exam) => (
                 <option key={exam.code} value={exam.code}>
-                  {exam.code} — {exam.subjectName}
+                  {exam.code} — {exam.section3Name}
                 </option>
               ))}
             </Select>

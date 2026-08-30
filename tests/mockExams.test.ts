@@ -9,15 +9,25 @@ import {
   buildPaper,
 } from '../src/data/mockExams';
 import { TOPICS } from '../src/data/topics';
+import { subjectsOf } from '../src/lib/section3';
+import { SCIENCE_PICK } from '../src/types';
 
 const papers = MOCK_EXAMS.map((spec) => ({ spec, paper: buildPaper(spec.code) }));
 
 describe('đề mẫu trọn vẹn', () => {
-  it('mỗi môn tự chọn có đúng một đề mẫu, mã đề không trùng', () => {
-    const subjects = MOCK_EXAMS.map((e) => e.subject);
-    expect(new Set(subjects).size).toBe(subjects.length);
+  it('mỗi đề là một tổ hợp phần 3 riêng, mã đề không trùng', () => {
+    const combos = MOCK_EXAMS.map((e) => subjectsOf(e.section3).slice().sort().join('+'));
+    expect(new Set(combos).size).toBe(combos.length);
     expect(new Set(MOCK_EXAMS.map((e) => e.code)).size).toBe(MOCK_EXAMS.length);
     expect(MOCK_EXAMS.length).toBe(5);
+  });
+
+  it('mỗi đề tổ hợp khoa học chọn đúng ba chủ đề', () => {
+    for (const spec of MOCK_EXAMS) {
+      if (spec.section3.mode !== 'science') continue;
+      expect(spec.section3.subjects, spec.code).toHaveLength(SCIENCE_PICK);
+      expect(new Set(spec.section3.subjects).size, spec.code).toBe(SCIENCE_PICK);
+    }
   });
 
   it('mọi đề đều đủ 150 câu, 150 điểm, 195 phút', () => {
@@ -52,12 +62,17 @@ describe('đề mẫu trọn vẹn', () => {
     }
   });
 
-  it('phần 3 chỉ lấy câu đúng môn tự chọn của đề', () => {
+  it('phần 3 chỉ lấy câu thuộc tổ hợp của đề, và phủ hết tổ hợp đó', () => {
     for (const { spec, paper } of papers) {
+      const wanted = subjectsOf(spec.section3);
       const science = paper?.sections.find((s) => s.section === 'science');
+      const seen = new Set<string>();
       for (const item of science?.items ?? []) {
-        expect(item.question.subject, `${spec.code} · ${item.question.id}`).toBe(spec.subject);
+        expect(wanted, `${spec.code} · ${item.question.id}`).toContain(item.question.subject);
+        if (item.question.subject) seen.add(item.question.subject);
       }
+      // Bo sot mot chu de trong to hop nghia la thi sinh on ba nhung thi hai.
+      expect(seen.size, spec.code).toBe(wanted.length);
     }
   });
 

@@ -25,6 +25,7 @@ import type {
 import { clamp01, currentStreak, summarize } from './analytics';
 import { addDays, dayKey } from './format';
 import { stageKpi } from './progression';
+import { topicsInScope } from './section3';
 import { dueCards } from './srs';
 
 /**
@@ -60,8 +61,7 @@ export interface PillarScore {
  * tru cot lam cho su mat can bang do hien ra thanh mot con so.
  */
 export function pillarScores(state: PersistedState, now: Date = new Date()): PillarScore[] {
-  const subject = state.settings.scienceSubject;
-  const relevantTopics = TOPICS.filter((t) => t.section !== 'science' || t.subject === subject);
+  const relevantTopics = topicsInScope(state.settings.section3, TOPICS);
   const practiced = relevantTopics.filter((t) => (state.mastery[t.id]?.attempts ?? 0) > 0).length;
 
   /* G — Goal: hệ thống mục tiêu có nối được ba tầng với nhau không. */
@@ -260,8 +260,7 @@ export interface ParetoFocus {
  * danh sach do khong, hay dang bi rai deu.
  */
 export function paretoFocus(state: PersistedState, now: Date = new Date()): ParetoFocus {
-  const subject = state.settings.scienceSubject;
-  const relevant = TOPICS.filter((t) => t.section !== 'science' || t.subject === subject);
+  const relevant = topicsInScope(state.settings.section3, TOPICS);
 
   const ranked = relevant
     .map((topic) => {
@@ -398,10 +397,9 @@ interface LearnerMeasures {
 
 function measureLearner(state: PersistedState, now: Date): LearnerMeasures {
   const summary = summarize(state);
-  const subject = state.settings.scienceSubject;
-  const sheets = activeWorksheets(subject);
+  const sheets = activeWorksheets(state.settings.section3);
 
-  const tracksAtLevel4 = TOPICS.filter((t) => t.section !== 'science' || t.subject === subject).filter(
+  const tracksAtLevel4 = topicsInScope(state.settings.section3, TOPICS).filter(
     (t) => (state.tracks[t.id]?.level ?? 1) >= 4,
   ).length;
 

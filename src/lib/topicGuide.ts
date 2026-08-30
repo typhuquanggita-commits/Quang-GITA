@@ -90,7 +90,7 @@ export function buildTopicGuide(state: PersistedState, topicId: string, now: Dat
   const topic = TOPIC_BY_ID.get(topicId);
   if (!topic) return null;
 
-  const sheets = activeWorksheets(state.settings.scienceSubject).filter((s) => s.topicId === topicId);
+  const sheets = activeWorksheets(state.settings.section3).filter((s) => s.topicId === topicId);
   const status = trackStatus(state, topicId);
   const mastery = state.mastery[topicId]?.mastery ?? 0.5;
 

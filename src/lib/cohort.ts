@@ -325,11 +325,7 @@ export function buildAssignment(
   size = 5,
   now: Date = new Date(),
 ): Assignment {
-  const sheets = recommendedWorksheets(
-    row.snapshot.state,
-    row.snapshot.state.settings.scienceSubject,
-    size,
-  );
+  const sheets = recommendedWorksheets(row.snapshot.state, size);
   const due = new Date(now.getTime() + 7 * 86_400_000);
 
   return {

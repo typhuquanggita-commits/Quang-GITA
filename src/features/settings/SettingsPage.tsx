@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react';
-import { DEFAULT_TARGET_SCORE, MAX_TOTAL_SCORE, SCIENCE_SUBJECTS } from '../../config';
+import { DEFAULT_TARGET_SCORE, MAX_TOTAL_SCORE } from '../../config';
+import { Section3Picker } from '../../components/Section3Picker';
 import { aiStatus } from '../../lib/ai';
 import { formatNumber } from '../../lib/format';
 import { createInitialState, exportState, importState } from '../../lib/storage';
@@ -15,11 +16,9 @@ import {
   Input,
   Modal,
   Segmented,
-  Select,
   Toggle,
   useToast,
 } from '../../components/ui/primitives';
-import type { ScienceSubject } from '../../types';
 
 /**
  * CAI DAT
@@ -135,26 +134,16 @@ export function SettingsPage() {
           </Field>
         </div>
 
-        <div className="mt-5">
-          <Field
-            label="Môn tự chọn của phần 3"
-            hint="Đổi môn sẽ đổi toàn bộ chuyên đề, phiếu luyện và đề thi thử của phần 3."
-          >
-            {(props) => (
-              <Select
-                {...props}
-                value={state.settings.scienceSubject}
-                onChange={(e) => updateSettings({ scienceSubject: e.target.value as ScienceSubject })}
-                className="max-w-sm"
-              >
-                {SCIENCE_SUBJECTS.map((subject) => (
-                  <option key={subject.id} value={subject.id}>
-                    {subject.name} — {subject.note}
-                  </option>
-                ))}
-              </Select>
-            )}
-          </Field>
+        <div className="mt-5 border-t border-line pt-5">
+          <h3 className="text-sm font-semibold text-fg">Phần 3 — bạn thi đường nào</h3>
+          <p className="mt-1 mb-4 text-sm text-fg-muted">
+            Đổi lựa chọn sẽ đổi toàn bộ chuyên đề, phiếu luyện và đề thi thử của phần 3. Tiến độ ở các chủ đề cũ
+            vẫn được giữ nguyên, chỉ tạm ẩn khỏi chương trình đang chạy.
+          </p>
+          <Section3Picker
+            value={state.settings.section3}
+            onChange={(section3) => updateSettings({ section3 })}
+          />
         </div>
       </Card>
 

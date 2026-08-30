@@ -43,7 +43,7 @@ export function DashboardPage() {
   const history = scoreHistory(state);
   const band = scoreBand(summary.projected);
   const weak = rankWeakTopics(state.mastery, 5);
-  const recommended = recommendedWorksheets(state, state.settings.scienceSubject, 3);
+  const recommended = recommendedWorksheets(state, 3);
 
   const insights = useMemo<Insight[]>(
     () =>

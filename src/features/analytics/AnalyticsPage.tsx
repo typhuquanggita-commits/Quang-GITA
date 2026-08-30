@@ -2,6 +2,7 @@ import { useMemo } from 'react';
 import { DIFFICULTY_LABEL, MAX_TOTAL_SCORE, SECTIONS, SECTION_BY_ID } from '../../config';
 import { findQuestion } from '../../data/questions';
 import { TOPICS } from '../../data/topics';
+import { topicsInScope } from '../../lib/section3';
 import { expectedAccuracy } from '../../lib/ability';
 import { masteryToAbility } from '../../lib/analytics';
 import { formatNumber, formatPercent, formatScore } from '../../lib/format';
@@ -30,12 +31,9 @@ export function AnalyticsPage() {
 function AnalyticsContent() {
   const state = useAppState();
   const readiness = readinessOf(state);
-  const subject = state.settings.scienceSubject;
+  const section3 = state.settings.section3;
 
-  const topics = useMemo(
-    () => TOPICS.filter((t) => t.section !== 'science' || t.subject === subject),
-    [subject],
-  );
+  const topics = useMemo(() => topicsInScope(section3, TOPICS), [section3]);
 
   /** Thống kê theo độ khó và theo mức tự tin, gộp từ mọi bài đã nộp. */
   const stats = useMemo(() => {

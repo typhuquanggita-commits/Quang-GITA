@@ -54,9 +54,20 @@ export function findQuestion(id: string): Question | undefined {
   return BY_ID.get(id);
 }
 
-export function questionsOf(section: SectionId, subject?: ScienceSubject): Question[] {
+/**
+ * Cau hoi cua mot phan.
+ *
+ * Phan 3 nhan mot HOAC NHIEU chu de: tu 2026 thi sinh chon ba chu de khoa hoc,
+ * nen ngan hang cau cho phan 3 la hop cua ba chu de do.
+ */
+export function questionsOf(
+  section: SectionId,
+  subject?: ScienceSubject | readonly ScienceSubject[],
+): Question[] {
+  if (section !== 'science') return ALL_QUESTIONS.filter((q) => q.section === section);
+  const wanted = subject === undefined ? [] : typeof subject === 'string' ? [subject] : subject;
   return ALL_QUESTIONS.filter(
-    (q) => q.section === section && (section !== 'science' || q.subject === subject),
+    (q) => q.section === section && q.subject !== undefined && wanted.includes(q.subject),
   );
 }
 

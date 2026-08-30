@@ -14,8 +14,9 @@ import {
 import { navigate } from '../../lib/router';
 import { isCorrect } from '../../lib/scoring';
 import { useAppState, useDispatch } from '../../store/AppStore';
-import type { Confidence, PlacementRecord, Response, ScienceSubject } from '../../types';
-import { Badge, Button, Card, CardHeader, Progress, Select, Stat } from '../../components/ui/primitives';
+import type { Confidence, PlacementRecord, Response, Section3Choice } from '../../types';
+import { Badge, Button, Card, CardHeader, Progress, Stat } from '../../components/ui/primitives';
+import { Section3Picker, isSection3Complete } from '../../components/Section3Picker';
 import { QuestionView } from '../exam/QuestionView';
 
 /**
@@ -31,14 +32,6 @@ import { QuestionView } from '../exam/QuestionView';
  * ket qua nay dung de lam gi.
  */
 
-const SUBJECT_OPTIONS: ReadonlyArray<{ value: ScienceSubject; label: string }> = [
-  { value: 'english', label: 'Tiếng Anh' },
-  { value: 'physics', label: 'Vật lý' },
-  { value: 'chemistry', label: 'Hóa học' },
-  { value: 'history', label: 'Lịch sử' },
-  { value: 'geography', label: 'Địa lý' },
-];
-
 type Phase = 'intro' | 'running' | 'done';
 
 export function PlacementPage() {
@@ -46,15 +39,15 @@ export function PlacementPage() {
   const dispatch = useDispatch();
 
   const [phase, setPhase] = useState<Phase>(state.placement ? 'done' : 'intro');
-  const [subject, setSubject] = useState<ScienceSubject>(state.settings.scienceSubject);
+  const [section3, setSection3] = useState<Section3Choice>(state.settings.section3);
   const [answers, setAnswers] = useState<PlacementAnswer[]>([]);
   const [value, setValue] = useState<string | null>(null);
   const startedAt = useRef(Date.now());
   const questionStartedAt = useRef(Date.now());
 
   const question = useMemo(
-    () => (phase === 'running' ? nextQuestion(answers, subject) : null),
-    [phase, answers, subject],
+    () => (phase === 'running' ? nextQuestion(answers, section3) : null),
+    [phase, answers, section3],
   );
 
   function begin() {
@@ -83,14 +76,14 @@ export function PlacementPage() {
       dispatch({
         type: 'placement/complete',
         answers: next,
-        scienceSubject: subject,
+        section3,
         durationMs: Date.now() - startedAt.current,
       });
       setPhase('done');
     }
   }
 
-  if (phase === 'intro') return <Intro subject={subject} onSubject={setSubject} onStart={begin} />;
+  if (phase === 'intro') return <Intro section3={section3} onSection3={setSection3} onStart={begin} />;
 
   if (phase === 'running' && question) {
     const index = answers.length;
@@ -164,14 +157,17 @@ export function PlacementPage() {
 }
 
 function Intro({
-  subject,
-  onSubject,
+  section3,
+  onSection3,
   onStart,
 }: {
-  subject: ScienceSubject;
-  onSubject: (value: ScienceSubject) => void;
+  section3: Section3Choice;
+  onSection3: (value: Section3Choice) => void;
   onStart: () => void;
 }) {
+  // Bai dinh vi lay cau tu dung cac chu de nguoi hoc se thi, nen chua chon du
+  // ba chu de thi chua the bat dau — khoa nut la cach noi that ro nhat.
+  const ready = isSection3Complete(section3);
   return (
     <div className="mx-auto max-w-3xl space-y-6">
       <header>
@@ -216,24 +212,14 @@ function Intro({
 
       <Card>
         <CardHeader
-          title="Môn tự chọn của phần 3"
-          subtitle="Chọn đúng môn bạn sẽ thi. Đổi môn về sau nghĩa là phần 3 phải định vị lại."
+          title="Phần 3 — bạn thi đường nào"
+          subtitle="Chọn đúng những gì bạn sẽ thi. Đổi lựa chọn về sau nghĩa là phần 3 phải định vị lại."
         />
-        <Select
-          value={subject}
-          onChange={(e) => onSubject(e.target.value as ScienceSubject)}
-          aria-label="Môn tự chọn phần 3"
-        >
-          {SUBJECT_OPTIONS.map((option) => (
-            <option key={option.value} value={option.value}>
-              {option.label}
-            </option>
-          ))}
-        </Select>
+        <Section3Picker value={section3} onChange={onSection3} />
       </Card>
 
       <div className="flex flex-wrap gap-3">
-        <Button variant="primary" size="lg" onClick={onStart}>
+        <Button variant="primary" size="lg" onClick={onStart} disabled={!ready}>
           Bắt đầu định vị
         </Button>
         <Button size="lg" onClick={() => navigate('/')}>

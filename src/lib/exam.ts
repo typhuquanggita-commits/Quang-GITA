@@ -5,17 +5,18 @@ import type {
   Attempt,
   AttemptMode,
   Question,
-  ScienceSubject,
+  Section3Choice,
   SectionId,
   SectionRun,
 } from '../types';
 import { difficultyToLogit, probabilityCorrect } from './ability';
 import { hashSeed, mulberry32, shuffle } from './rng';
+import { subjectsOf } from './section3';
 
 export interface BuildAttemptOptions {
   mode: AttemptMode;
   label: string;
-  scienceSubject: ScienceSubject;
+  section3: Section3Choice;
   /** Cac phan can lam. Mac dinh: ca ba. */
   sections?: readonly SectionId[];
   /** Gioi han so cau moi phan (che do luyen tap). */
@@ -66,7 +67,7 @@ export function buildAttempt(options: BuildAttemptOptions): Attempt {
     id: `att_${Date.now().toString(36)}_${Math.floor(rand() * 1e6).toString(36)}`,
     mode: options.mode,
     label: options.label,
-    scienceSubject: options.scienceSubject,
+    section3: options.section3,
     status: 'in_progress',
     createdAt: Date.now(),
     cursorSection: 0,
@@ -83,7 +84,7 @@ function poolFor(sectionId: SectionId, options: BuildAttemptOptions): Question[]
       .map(findQuestion)
       .filter((q): q is Question => Boolean(q) && q!.section === sectionId);
   }
-  let pool = questionsOf(sectionId, options.scienceSubject);
+  let pool = questionsOf(sectionId, subjectsOf(options.section3));
   if (options.topicIds && options.topicIds.length > 0) {
     const allowed = new Set(options.topicIds);
     pool = pool.filter((q) => allowed.has(q.topicId));

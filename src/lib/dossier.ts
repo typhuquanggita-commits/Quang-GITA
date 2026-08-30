@@ -299,7 +299,7 @@ function buildRoadmap(
     });
   }
 
-  const next = recommendedWorksheets(state, state.settings.scienceSubject, 1)[0];
+  const next = recommendedWorksheets(state, 1)[0];
   if (next) {
     push({
       id: 'next',

@@ -90,7 +90,7 @@ describe('chấm cả bài thi', () => {
     const attempt = buildAttempt({
       mode: 'section',
       label: 'Thử',
-      scienceSubject: 'english',
+      section3: { mode: 'english' },
       sections: ['quantitative'],
       questionsPerSection: 10,
       seed: 'test-seed',
@@ -118,8 +118,8 @@ describe('chấm cả bài thi', () => {
 
 describe('dựng đề', () => {
   it('cùng hạt giống cho ra cùng một đề', () => {
-    const a = buildAttempt({ mode: 'full', label: 'A', scienceSubject: 'english', seed: 'seed-1' });
-    const b = buildAttempt({ mode: 'full', label: 'B', scienceSubject: 'english', seed: 'seed-1' });
+    const a = buildAttempt({ mode: 'full', label: 'A', section3: { mode: 'english' }, seed: 'seed-1' });
+    const b = buildAttempt({ mode: 'full', label: 'B', section3: { mode: 'english' }, seed: 'seed-1' });
     expect(a.sections.map((s) => s.questionIds)).toEqual(b.sections.map((s) => s.questionIds));
   });
 
@@ -127,7 +127,7 @@ describe('dựng đề', () => {
     const attempt = buildAttempt({
       mode: 'section',
       label: 'A',
-      scienceSubject: 'english',
+      section3: { mode: 'english' },
       sections: ['qualitative'],
       questionsPerSection: 25,
       seed: 's',
@@ -137,11 +137,23 @@ describe('dựng đề', () => {
     expect(run?.allowedSeconds).toBe(Math.round((60 * 60 * (run?.questionIds.length ?? 0)) / 50));
   });
 
-  it('không lấy câu của môn tự chọn khác', () => {
-    const attempt = buildAttempt({ mode: 'full', label: 'A', scienceSubject: 'physics', seed: 's' });
+  it('chỉ lấy câu của đúng ba chủ đề phần 3 đã chọn', () => {
+    const chosen = ['physics', 'chemistry', 'biology'] as const;
+    const attempt = buildAttempt({
+      mode: 'full',
+      label: 'A',
+      section3: { mode: 'science', subjects: chosen },
+      seed: 's',
+    });
     const science = attempt.sections.find((s) => s.section === 'science');
+    const seen = new Set<string>();
     for (const id of science?.questionIds ?? []) {
-      expect(findQuestion(id)?.subject).toBe('physics');
+      const subject = findQuestion(id)?.subject;
+      expect(subject).toBeDefined();
+      expect(chosen).toContain(subject);
+      if (subject) seen.add(subject);
     }
+    // Ca ba chu de deu phai xuat hien: mot de bo qua han mot chu de la de sai.
+    expect(seen.size).toBe(chosen.length);
   });
 });

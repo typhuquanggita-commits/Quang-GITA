@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { MAX_TOTAL_SCORE, SECTIONS, SECTION_BY_ID, SUBJECT_NAME, TOTAL_MINUTES } from '../../config';
+import { describeSection3 } from '../../lib/section3';
 import { findQuestion } from '../../data/questions';
 import { cn } from '../../lib/cn';
 import { buildAttempt } from '../../lib/exam';
@@ -47,7 +48,7 @@ function ExamLobby() {
     const attempt = buildAttempt({
       mode: sections === null ? 'full' : 'section',
       label,
-      scienceSubject: state.settings.scienceSubject,
+      section3: state.settings.section3,
       ...(sections ? { sections } : {}),
       seen: state.seen,
       strictMode: true,
@@ -73,8 +74,8 @@ function ExamLobby() {
         <h1 className="text-2xl font-semibold tracking-tight">Thi thử</h1>
         <p className="mt-1.5 max-w-3xl text-sm text-fg-muted">
           Đề mô phỏng bám đúng cấu trúc HSA: {SECTIONS.map((s) => `${s.questionCount} câu / ${s.minutes} phút`).join(' · ')} —
-          tổng {TOTAL_MINUTES} phút, thang {MAX_TOTAL_SCORE} điểm. Môn tự chọn hiện tại:{' '}
-          <strong className="text-fg">{SUBJECT_NAME[state.settings.scienceSubject]}</strong>.
+          tổng {TOTAL_MINUTES} phút, thang {MAX_TOTAL_SCORE} điểm. Phần 3 bạn đang chọn:{' '}
+          <strong className="text-fg">{describeSection3(state.settings.section3, (s) => SUBJECT_NAME[s])}</strong>.
         </p>
       </header>
 

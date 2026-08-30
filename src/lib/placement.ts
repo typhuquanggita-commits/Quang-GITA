@@ -6,7 +6,7 @@ import type {
   PlacementRecord,
   PlacementSectionResult,
   Question,
-  ScienceSubject,
+  Section3Choice,
   SectionId,
   SrsCard,
   TopicMastery,
@@ -21,6 +21,7 @@ import {
   type AbilityObservation,
 } from './ability';
 import { hashSeed } from './rng';
+import { subjectsOf, topicsInScope } from './section3';
 import { createCard } from './srs';
 
 /**
@@ -109,10 +110,10 @@ function observationsOf(
  */
 export function pickNext(
   section: SectionId,
-  subject: ScienceSubject,
+  section3: Section3Choice,
   answered: readonly PlacementAnswer[],
 ): Question | null {
-  const pool = questionsOf(section, subject);
+  const pool = questionsOf(section, subjectsOf(section3));
   if (pool.length === 0) return null;
 
   const byId = new Map(pool.map((q) => [q.id, q]));
@@ -149,10 +150,10 @@ export function pickNext(
 /** Cau tiep theo cua ca bai, hoac null khi da du 36 cau. */
 export function nextQuestion(
   answers: readonly PlacementAnswer[],
-  subject: ScienceSubject,
+  section3: Section3Choice,
 ): Question | null {
   if (answers.length >= PLACEMENT_TOTAL) return null;
-  return pickNext(sectionAt(answers.length), subject, answers);
+  return pickNext(sectionAt(answers.length), section3, answers);
 }
 
 export interface PlacementOutcome {
@@ -194,13 +195,13 @@ export function blendMastery(sectionAccuracy: number, correct: number, answered:
 
 export function buildPlacement(
   answers: readonly PlacementAnswer[],
-  subject: ScienceSubject,
+  section3: Section3Choice,
   durationMs: number,
   now: number = Date.now(),
 ): PlacementOutcome {
   const byId = new Map<string, Question>();
   for (const spec of SECTIONS) {
-    for (const question of questionsOf(spec.id, subject)) byId.set(question.id, question);
+    for (const question of questionsOf(spec.id, subjectsOf(section3))) byId.set(question.id, question);
   }
 
   const sections: PlacementSectionResult[] = [];
@@ -223,9 +224,7 @@ export function buildPlacement(
       projected: accuracy * spec.questionCount,
     });
 
-    const topics = TOPICS.filter(
-      (t) => t.section === spec.id && (spec.id !== 'science' || t.subject === subject),
-    );
+    const topics = topicsInScope(section3, TOPICS).filter((t) => t.section === spec.id);
     for (const topic of topics) {
       const own = mine.filter((a) => byId.get(a.questionId)?.topicId === topic.id);
       const correct = own.filter((a) => a.correct).length;
@@ -266,7 +265,7 @@ export function buildPlacement(
   return {
     record: {
       completedAt: now,
-      scienceSubject: subject,
+      section3,
       sections,
       projected: Math.min(MAX_TOTAL_SCORE, projected),
       startingLevels,

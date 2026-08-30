@@ -1,8 +1,9 @@
 import { DIFFICULTY_MIX, SECTIONS } from '../config';
 import { questionsOf } from './questions';
 import { TOPICS } from './topics';
-import type { Difficulty, Question, ScienceSubject, SectionId } from '../types';
+import type { Difficulty, Question, Section3Choice, SectionId } from '../types';
 import { hashSeed, mulberry32 } from '../lib/rng';
+import { subjectsOf, topicsInScope } from '../lib/section3';
 
 /**
  * DE MAU TRON VEN
@@ -31,47 +32,61 @@ import { hashSeed, mulberry32 } from '../lib/rng';
 export interface MockExamSpec {
   code: string;
   name: string;
-  subject: ScienceSubject;
-  subjectName: string;
+  /** Lua chon phan 3 cua de: ba chu de khoa hoc, hoac Tieng Anh. */
+  section3: Section3Choice;
+  section3Name: string;
   /** Mo ta ngan in tren trang bia. */
   intro: string;
 }
 
+/**
+ * Nam de mau, phu cac to hop phan 3 pho bien nhat.
+ *
+ * Tu 2026 phan 3 khong con la "mot mon tu chon" ma la MOT TO HOP ba chu de,
+ * nen de mau cung phai di theo to hop chu khong theo mon. Bon to hop khoa hoc
+ * duoi day bam sat cac khoi nganh hoc sinh thuong nham toi, cong mot de Tieng
+ * Anh cho duong thi con lai.
+ */
 export const MOCK_EXAMS: readonly MockExamSpec[] = [
   {
-    code: 'DM-HSA-01-VL',
-    name: 'Đề mẫu HSA365 số 01 — Vật lý',
-    subject: 'physics',
-    subjectName: 'Vật lý',
-    intro: 'Đề mô phỏng đầy đủ cấu trúc HSA của ĐHQGHN, phần 3 chọn môn Vật lý.',
+    code: 'DM-HSA-01-LHS',
+    name: 'Đề mẫu HSA365 số 01 — Lý · Hóa · Sinh',
+    section3: { mode: 'science', subjects: ['physics', 'chemistry', 'biology'] },
+    section3Name: 'Vật lý · Hóa học · Sinh học',
+    intro:
+      'Đề mô phỏng đầy đủ cấu trúc HSA của ĐHQGHN. Phần 3 chọn tổ hợp Lý — Hóa — Sinh, hướng khối ngành y dược và khoa học sự sống.',
   },
   {
-    code: 'DM-HSA-02-HH',
-    name: 'Đề mẫu HSA365 số 02 — Hóa học',
-    subject: 'chemistry',
-    subjectName: 'Hóa học',
-    intro: 'Đề mô phỏng đầy đủ cấu trúc HSA của ĐHQGHN, phần 3 chọn môn Hóa học.',
+    code: 'DM-HSA-02-LHD',
+    name: 'Đề mẫu HSA365 số 02 — Lý · Hóa · Địa',
+    section3: { mode: 'science', subjects: ['physics', 'chemistry', 'geography'] },
+    section3Name: 'Vật lý · Hóa học · Địa lý',
+    intro:
+      'Đề mô phỏng đầy đủ cấu trúc HSA của ĐHQGHN. Phần 3 chọn tổ hợp Lý — Hóa — Địa, hướng khối ngành kỹ thuật và tài nguyên môi trường.',
   },
   {
-    code: 'DM-HSA-03-LS',
-    name: 'Đề mẫu HSA365 số 03 — Lịch sử',
-    subject: 'history',
-    subjectName: 'Lịch sử',
-    intro: 'Đề mô phỏng đầy đủ cấu trúc HSA của ĐHQGHN, phần 3 chọn môn Lịch sử.',
+    code: 'DM-HSA-03-SSD',
+    name: 'Đề mẫu HSA365 số 03 — Sinh · Sử · Địa',
+    section3: { mode: 'science', subjects: ['biology', 'history', 'geography'] },
+    section3Name: 'Sinh học · Lịch sử · Địa lý',
+    intro:
+      'Đề mô phỏng đầy đủ cấu trúc HSA của ĐHQGHN. Phần 3 chọn tổ hợp Sinh — Sử — Địa, tổ hợp ít tính toán nhất trong bốn tổ hợp khoa học.',
   },
   {
-    code: 'DM-HSA-04-DL',
-    name: 'Đề mẫu HSA365 số 04 — Địa lý',
-    subject: 'geography',
-    subjectName: 'Địa lý',
-    intro: 'Đề mô phỏng đầy đủ cấu trúc HSA của ĐHQGHN, phần 3 chọn môn Địa lý.',
+    code: 'DM-HSA-04-LSD',
+    name: 'Đề mẫu HSA365 số 04 — Lý · Sử · Địa',
+    section3: { mode: 'science', subjects: ['physics', 'history', 'geography'] },
+    section3Name: 'Vật lý · Lịch sử · Địa lý',
+    intro:
+      'Đề mô phỏng đầy đủ cấu trúc HSA của ĐHQGHN. Phần 3 chọn tổ hợp Lý — Sử — Địa, hướng khối ngành kinh tế và khoa học xã hội có định lượng.',
   },
   {
     code: 'DM-HSA-05-TA',
     name: 'Đề mẫu HSA365 số 05 — Tiếng Anh',
-    subject: 'english',
-    subjectName: 'Tiếng Anh',
-    intro: 'Đề mô phỏng đầy đủ cấu trúc HSA của ĐHQGHN, phần 3 chọn môn Tiếng Anh.',
+    section3: { mode: 'english' },
+    section3Name: 'Tiếng Anh',
+    intro:
+      'Đề mô phỏng đầy đủ cấu trúc HSA của ĐHQGHN. Phần 3 chọn đường Tiếng Anh thay cho ba chủ đề khoa học.',
   },
 ];
 
@@ -135,16 +150,14 @@ export interface Paper {
  */
 function pickForSection(
   section: SectionId,
-  subject: ScienceSubject,
+  section3: Section3Choice,
   seed: number,
 ): Question[] {
   const spec = SECTIONS.find((s) => s.id === section);
   if (!spec) return [];
 
-  const pool = questionsOf(section, subject);
-  const topics = TOPICS.filter(
-    (t) => t.section === section && (section !== 'science' || t.subject === subject),
-  );
+  const pool = questionsOf(section, subjectsOf(section3));
+  const topics = topicsInScope(section3, TOPICS).filter((t) => t.section === section);
   const random = mulberry32(seed);
 
   // Chi tieu so cau moi chuyen de theo ti trong, dung phuong phap so du lon nhat.
@@ -156,7 +169,10 @@ function pickForSection(
   const chosen: Question[] = [];
   const used = new Set<string>();
 
-  const needFill = spec.fillCount;
+  // Chi giu cho cau dien den muc ngan hang thuc su co. Neu giu cho nhieu hon
+  // so cau dien ton tai (vi du duong Tieng Anh khong co cau dien), cac cho do
+  // se khong bao gio duoc lap day va de bi thieu cau ma khong bao loi.
+  const needFill = Math.min(spec.fillCount, pool.filter((q) => q.format === 'fill').length);
   let takenFill = 0;
 
   for (const [i, topic] of topics.entries()) {
@@ -245,7 +261,7 @@ export function buildPaper(code: string): Paper | null {
 
   for (const sectionSpec of SECTIONS) {
     const seed = hashSeed(`${code}:${sectionSpec.id}`);
-    const questions = pickForSection(sectionSpec.id, spec.subject, seed);
+    const questions = pickForSection(sectionSpec.id, spec.section3, seed);
 
     const sectionItems: PaperItem[] = questions.map((question, i) => {
       number += 1;

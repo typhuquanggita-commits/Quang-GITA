@@ -14,14 +14,18 @@ import {
   stageForLevels,
   type PlacementAnswer,
 } from '../src/lib/placement';
+import { topicsInScope } from '../src/lib/section3';
 import { createInitialState } from '../src/lib/storage';
+import type { Section3Choice } from '../src/types';
 import { reducer } from '../src/store/reducer';
 
 /** Lam ca bai voi mot ti le dung co dinh, tra ve danh sach cau tra loi. */
-function run(accuracy: number, subject: 'english' = 'english'): PlacementAnswer[] {
+const ENGLISH = { mode: 'english' } as const;
+
+function run(accuracy: number, section3: Section3Choice = ENGLISH): PlacementAnswer[] {
   const answers: PlacementAnswer[] = [];
   for (let i = 0; i < PLACEMENT_TOTAL; i += 1) {
-    const question = nextQuestion(answers, subject);
+    const question = nextQuestion(answers, section3);
     if (!question) break;
     // Deterministic: dung `accuracy` cau dau moi nhom 10 cau.
     const correct = i % 10 < Math.round(accuracy * 10);
@@ -55,9 +59,7 @@ describe('bài kiểm tra định vị', () => {
     // Mot bai dinh vi bo qua han mot chuyen de se de lai lo hong khong ai biet.
     const answers = run(0.5);
     for (const spec of SECTIONS) {
-      const topics = TOPICS.filter(
-        (t) => t.section === spec.id && (spec.id !== 'science' || t.subject === 'english'),
-      );
+      const topics = topicsInScope(ENGLISH, TOPICS).filter((t) => t.section === spec.id);
       const touched = new Set(
         answers
           .map((a) => findQuestion(a.questionId))
@@ -84,7 +86,7 @@ describe('bài kiểm tra định vị', () => {
   });
 
   it('không bao giờ xếp quá cấp 4 — 12 câu không chứng minh được cấp 5–6', () => {
-    const outcome = buildPlacement(run(1), 'english', 600_000);
+    const outcome = buildPlacement(run(1), ENGLISH, 600_000);
     for (const level of Object.values(outcome.record.startingLevels)) {
       expect(level).toBeLessThanOrEqual(MAX_PLACEMENT_LEVEL);
       expect(level).toBeGreaterThanOrEqual(1);
@@ -92,8 +94,8 @@ describe('bài kiểm tra định vị', () => {
   });
 
   it('làm tốt thì điểm dự báo và cấp khởi điểm cao hơn hẳn làm kém', () => {
-    const strong = buildPlacement(run(1), 'english', 600_000);
-    const weak = buildPlacement(run(0), 'english', 600_000);
+    const strong = buildPlacement(run(1), ENGLISH, 600_000);
+    const weak = buildPlacement(run(0), ENGLISH, 600_000);
     expect(strong.record.projected).toBeGreaterThan(weak.record.projected);
     const avg = (o: typeof strong) => {
       const xs = Object.values(o.record.startingLevels);
@@ -104,7 +106,7 @@ describe('bài kiểm tra định vị', () => {
 
   it('mọi câu sai đều được đưa thẳng vào sổ tay lỗi sai', () => {
     const answers = run(0.5);
-    const outcome = buildPlacement(answers, 'english', 600_000);
+    const outcome = buildPlacement(answers, ENGLISH, 600_000);
     for (const answer of answers.filter((a) => !a.correct)) {
       expect(outcome.srs[answer.questionId]?.reason, answer.questionId).toBe('wrong');
     }
@@ -112,7 +114,7 @@ describe('bài kiểm tra định vị', () => {
 
   it('đúng nhưng tự nhận là đoán thì vẫn vào sổ tay, đánh dấu "may"', () => {
     const answers = run(1).map((a) => ({ ...a, confidence: 'guess' as const }));
-    const outcome = buildPlacement(answers, 'english', 600_000);
+    const outcome = buildPlacement(answers, ENGLISH, 600_000);
     expect(Object.values(outcome.srs).every((c) => c.reason === 'lucky')).toBe(true);
   });
 
@@ -170,7 +172,7 @@ describe('bài kiểm tra định vị', () => {
     const after = reducer(before, {
       type: 'placement/complete',
       answers: run(0.6),
-      scienceSubject: 'english',
+      section3: ENGLISH,
       durationMs: 600_000,
       now: 1_000,
     });

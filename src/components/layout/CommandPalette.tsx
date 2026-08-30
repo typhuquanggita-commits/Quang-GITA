@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { SECTIONS } from '../../config';
 import { TOPICS } from '../../data/topics';
+import { topicsInScope } from '../../lib/section3';
 import { cn } from '../../lib/cn';
 import { navigate } from '../../lib/router';
 import { useAppState } from '../../store/AppStore';
@@ -56,9 +57,7 @@ export function CommandPalette({ open, onClose }: { open: boolean; onClose: () =
       { id: 'mock.full', title: 'Thi thử full 3 phần (195 phút)', group: 'Bắt đầu nhanh', href: '#/exam?start=full' },
     ];
 
-    const relevant = TOPICS.filter(
-      (t) => t.section !== 'science' || t.subject === state.settings.scienceSubject,
-    );
+    const relevant = topicsInScope(state.settings.section3, TOPICS);
 
     const topics = relevant.map((t) => ({
       id: `topic.${t.id}`,
@@ -76,7 +75,7 @@ export function CommandPalette({ open, onClose }: { open: boolean; onClose: () =
     }));
 
     return [...base, ...topics, ...guides];
-  }, [state.settings.scienceSubject]);
+  }, [state.settings.section3]);
 
   const results = useMemo(() => {
     const q = normalize(query);

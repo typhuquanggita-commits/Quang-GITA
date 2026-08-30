@@ -1,7 +1,8 @@
 import { DEFAULT_TARGET_SCORE, STORAGE_KEY, STORAGE_VERSION } from '../config';
 import { STAGES } from '../data/curriculum';
 import { ROLE_BY_ID } from '../data/roles';
-import type { PersistedState, PlacementRecord, Profile, Role, ScienceSubject, Settings } from '../types';
+import { sanitizeSection3 } from './section3';
+import type { PersistedState, PlacementRecord, Profile, Role, Settings } from '../types';
 
 /**
  * Luu tru cuc bo, co danh phien ban.
@@ -15,7 +16,7 @@ import type { PersistedState, PlacementRecord, Profile, Role, ScienceSubject, Se
 export const DEFAULT_SETTINGS: Settings = {
   targetScore: DEFAULT_TARGET_SCORE,
   examDate: null,
-  scienceSubject: 'english',
+  section3: { mode: 'science', subjects: ['physics', 'chemistry', 'biology'] },
   theme: 'system',
   fontScale: 1,
   reducedMotion: false,
@@ -79,6 +80,24 @@ const MIGRATIONS: Record<number, Migration> = {
   4: (state) => ({ ...state, version: 5, worksheetRuns: [] }),
   /** v5 → v6: bo sung bai kiem tra dinh vi dau vao. */
   5: (state) => ({ ...state, version: 6, placement: null }),
+  /**
+   * v6 → v7: phan 3 doi tu MOT mon sang BA chu de khoa hoc (hoac Tieng Anh).
+   *
+   * Dang thuc chinh thuc tu 2026 cho thi sinh chon ba trong nam chu de khoa
+   * hoc. Ban cu chi luu mot mon, nen o day phai doan lai: ai da chon Tieng Anh
+   * thi giu Tieng Anh; ai da chon mot mon khoa hoc thi giu mon do lam chu de
+   * dau tien, hai chu de con lai duoc bu theo thu tu chuan.
+   */
+  6: (state) => {
+    const settings = (state['settings'] as Record<string, unknown> | undefined) ?? {};
+    const old = settings['scienceSubject'];
+    const section3 =
+      old === 'english'
+        ? { mode: 'english' as const }
+        : sanitizeSection3({ mode: 'science', subjects: typeof old === 'string' ? [old] : [] });
+    const { scienceSubject: _dropped, ...rest } = settings;
+    return { ...state, version: 7, settings: { ...rest, section3 } };
+  },
 };
 
 export function migrate(raw: Record<string, unknown>): PersistedState {
@@ -129,7 +148,6 @@ function isRecord<T>(value: unknown): value is Record<string, T> {
 }
 
 const THEMES: readonly Settings['theme'][] = ['system', 'light', 'dark'];
-const SCIENCE_SUBJECTS: readonly ScienceSubject[] = ['physics', 'chemistry', 'history', 'geography', 'english'];
 
 /**
  * Chuan hoa cai dat.
@@ -142,7 +160,7 @@ export function sanitizeSettings(settings: Settings): Settings {
   return {
     targetScore: clamp(Number(settings.targetScore) || DEFAULT_TARGET_SCORE, 50, 150),
     examDate: typeof settings.examDate === 'string' && settings.examDate.length <= 32 ? settings.examDate : null,
-    scienceSubject: SCIENCE_SUBJECTS.includes(settings.scienceSubject) ? settings.scienceSubject : 'english',
+    section3: sanitizeSection3(settings.section3),
     theme: THEMES.includes(settings.theme) ? settings.theme : 'system',
     fontScale: clamp(Number(settings.fontScale) || 1, 0.875, 1.375),
     reducedMotion: settings.reducedMotion === true,

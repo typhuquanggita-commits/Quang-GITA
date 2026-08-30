@@ -14,7 +14,7 @@ import type {
   PersistedState,
   Profile,
   Response,
-  ScienceSubject,
+  Section3Choice,
   Settings,
   WorksheetProgress,
   WorksheetRecord,
@@ -57,7 +57,7 @@ export type Action =
   | {
       type: 'placement/complete';
       answers: readonly PlacementAnswer[];
-      scienceSubject: ScienceSubject;
+      section3: Section3Choice;
       durationMs: number;
       now?: number;
     }
@@ -211,7 +211,7 @@ export function reducer(state: PersistedState, action: Action): PersistedState {
     case 'placement/complete': {
       const outcome = buildPlacement(
         action.answers,
-        action.scienceSubject,
+        action.section3,
         action.durationMs,
         action.now ?? Date.now(),
       );
@@ -225,7 +225,7 @@ export function reducer(state: PersistedState, action: Action): PersistedState {
         tracks: { ...state.tracks, ...outcome.tracks },
         srs: { ...outcome.srs, ...state.srs },
         stage: Math.max(state.stage, outcome.stage),
-        settings: { ...state.settings, scienceSubject: action.scienceSubject },
+        settings: { ...state.settings, section3: action.section3 },
       };
     }
 
@@ -426,7 +426,7 @@ function submitWorksheet(
 
   const track = state.tracks[sheet.topicId];
   const level = track?.level ?? 1;
-  const masteredAtLevel = activeWorksheets(state.settings.scienceSubject).filter(
+  const masteredAtLevel = activeWorksheets(state.settings.section3).filter(
     (s) => s.topicId === sheet.topicId && s.level === level && worksheets[s.id]?.mastered,
   ).length;
 

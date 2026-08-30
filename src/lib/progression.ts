@@ -11,7 +11,6 @@ import type {
   PersistedState,
   Question,
   Response,
-  ScienceSubject,
   Worksheet,
   WorksheetProgress,
 } from '../types';
@@ -334,7 +333,7 @@ export function nextStep(
 ): NextStep {
   const track = state.tracks[sheet.topicId];
   const level = track?.level ?? 1;
-  const chain = activeWorksheets(state.settings.scienceSubject).filter(
+  const chain = activeWorksheets(state.settings.section3).filter(
     (s) => s.topicId === sheet.topicId && s.level === sheet.level,
   );
   const position = chain.findIndex((s) => s.id === sheet.id);
@@ -403,7 +402,7 @@ export interface TrackStatus {
 
 export function trackStatus(state: PersistedState, topicId: string): TrackStatus {
   const level = state.tracks[topicId]?.level ?? 1;
-  const chain = activeWorksheets(state.settings.scienceSubject).filter(
+  const chain = activeWorksheets(state.settings.section3).filter(
     (s) => s.topicId === topicId && s.level === level,
   );
   const mastered = chain.filter((s) => state.worksheets[s.id]?.mastered).length;
@@ -442,7 +441,7 @@ export interface StageKpi {
  * du it nhat 60% so phieu cua giai doan: khong the lam 3 phieu de roi doi len.
  */
 export function stageKpi(state: PersistedState, stage: number): StageKpi {
-  const sheets = activeWorksheets(state.settings.scienceSubject).filter((s) => s.stage === stage);
+  const sheets = activeWorksheets(state.settings.section3).filter((s) => s.stage === stage);
   const done = sheets
     .map((s) => state.worksheets[s.id])
     .filter((p): p is WorksheetProgress => Boolean(p && p.attempts > 0));
@@ -463,12 +462,8 @@ export function stageKpi(state: PersistedState, stage: number): StageKpi {
 }
 
 /** Phieu tiep theo nen lam trong toan chuong trinh, uu tien tuyen yeu nhat. */
-export function recommendedWorksheets(
-  state: PersistedState,
-  subject: ScienceSubject,
-  limit = 6,
-): Worksheet[] {
-  const sheets = activeWorksheets(subject);
+export function recommendedWorksheets(state: PersistedState, limit = 6): Worksheet[] {
+  const sheets = activeWorksheets(state.settings.section3);
   const scored = sheets
     .map((sheet) => {
       const progress = state.worksheets[sheet.id];
@@ -502,13 +497,9 @@ export function recommendedWorksheets(
 }
 
 /** Phieu ke tiep trong chuoi cua mot tuyen, dung cho nut "Tiep tuc". */
-export function nextWorksheetInTrack(
-  state: PersistedState,
-  topicId: string,
-  subject: ScienceSubject,
-): Worksheet | undefined {
+export function nextWorksheetInTrack(state: PersistedState, topicId: string): Worksheet | undefined {
   const level = state.tracks[topicId]?.level ?? 1;
-  return activeWorksheets(subject)
+  return activeWorksheets(state.settings.section3)
     .filter((s) => s.topicId === topicId && s.level === level)
     .find((s) => !state.worksheets[s.id]?.passed);
 }

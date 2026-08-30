@@ -8,8 +8,47 @@
 /** Ba hop phan cua bai thi HSA. */
 export type SectionId = 'quantitative' | 'qualitative' | 'science';
 
-/** Mon tu chon cua phan 3 (thi sinh chon 1 trong 5). */
-export type ScienceSubject = 'physics' | 'chemistry' | 'history' | 'geography' | 'english';
+/**
+ * Cac chu de cua phan 3.
+ *
+ * Theo dang thuc chinh thuc ap dung tu 2026: phan 3 cho chon KHOA HOC hoac
+ * TIENG ANH. Neu chon Khoa hoc, thi sinh chon DUNG BA trong nam chu de duoi
+ * day, moi chu de 16–17 cau. Tieng Anh la mot lua chon rieng, khong phai chu
+ * de thu sau cua Khoa hoc.
+ */
+export type ScienceSubject =
+  | 'physics'
+  | 'chemistry'
+  | 'biology'
+  | 'history'
+  | 'geography'
+  | 'english';
+
+/** Nam chu de Khoa hoc — tap hop de chon ba. */
+export const SCIENCE_SUBJECTS = [
+  'physics',
+  'chemistry',
+  'biology',
+  'history',
+  'geography',
+] as const;
+
+export type ScienceTopicSubject = (typeof SCIENCE_SUBJECTS)[number];
+
+/** So chu de Khoa hoc phai chon khi khong chon Tieng Anh. */
+export const SCIENCE_PICK = 3;
+
+/**
+ * Lua chon phan 3.
+ *
+ * Mo hinh hoa dung thuc te: hai che do loai tru nhau, va che do Khoa hoc keo
+ * theo mot tap ba chu de. Truoc day he thong luu mot `scienceSubject` duy nhat
+ * — do la mo hinh SAI so voi de that, va moi thu dung tren no (sinh phieu, dung
+ * de, dinh vi) deu lech theo.
+ */
+export type Section3Choice =
+  | { mode: 'science'; subjects: readonly ScienceTopicSubject[] }
+  | { mode: 'english' };
 
 /** Dang cau hoi. `fill` = dien dap an (phan Toan co 15 cau). */
 export type QuestionFormat = 'mcq' | 'fill';
@@ -103,7 +142,8 @@ export interface Attempt {
   id: string;
   mode: AttemptMode;
   label: string;
-  scienceSubject: ScienceSubject;
+  /** Lua chon phan 3: Khoa hoc (ba chu de) hoac Tieng Anh. */
+  section3: Section3Choice;
   status: AttemptStatus;
   createdAt: number;
   submittedAt?: number;
@@ -184,7 +224,8 @@ export interface Settings {
   targetScore: number;
   /** ISO date (YYYY-MM-DD) ngay thi. */
   examDate: string | null;
-  scienceSubject: ScienceSubject;
+  /** Lua chon phan 3: Khoa hoc (ba chu de) hoac Tieng Anh. */
+  section3: Section3Choice;
   theme: 'system' | 'light' | 'dark';
   /** He so co chu, 0.875..1.375. */
   fontScale: number;
@@ -411,7 +452,8 @@ export interface PlacementSectionResult {
 
 export interface PlacementRecord {
   completedAt: number;
-  scienceSubject: ScienceSubject;
+  /** Lua chon phan 3: Khoa hoc (ba chu de) hoac Tieng Anh. */
+  section3: Section3Choice;
   sections: PlacementSectionResult[];
   /** Diem du bao toan bai tren thang 150. */
   projected: number;

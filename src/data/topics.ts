@@ -40,6 +40,11 @@ export const TOPICS: readonly Topic[] = [
   { id: 'science.chemistry.inorganic', section: 'science', subject: 'chemistry', name: 'Hóa vô cơ', weight: 0.32 },
   { id: 'science.chemistry.organic', section: 'science', subject: 'chemistry', name: 'Hóa hữu cơ', weight: 0.38 },
 
+  // ── Phần 3: Sinh học ─────────────────────────────────────────────────
+  { id: 'science.biology.cell', section: 'science', subject: 'biology', name: 'Sinh học tế bào', weight: 0.3 },
+  { id: 'science.biology.genetics', section: 'science', subject: 'biology', name: 'Di truyền học', weight: 0.4 },
+  { id: 'science.biology.organism', section: 'science', subject: 'biology', name: 'Sinh học cơ thể & tiến hóa', weight: 0.3 },
+
   // ── Phần 3: Lịch sử ──────────────────────────────────────────────────
   { id: 'science.history.vietnam', section: 'science', subject: 'history', name: 'Lịch sử Việt Nam', weight: 0.62 },
   { id: 'science.history.world', section: 'science', subject: 'history', name: 'Lịch sử thế giới', weight: 0.38 },

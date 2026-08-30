@@ -9,6 +9,7 @@ import {
   type ReadinessBreakdown,
 } from '../lib/analytics';
 import { daysUntil } from '../lib/format';
+import { topicsInScope } from '../lib/section3';
 import { dueCards } from '../lib/srs';
 import type { Attempt, PersistedState, SrsCard } from '../types';
 
@@ -70,9 +71,7 @@ export function readinessOf(state: PersistedState, now: Date = new Date()): Read
 
 /** Chi dem cac chu de thuoc mon tu chon ma nguoi hoc thuc su thi. */
 export function relevantTopicCount(state: PersistedState): number {
-  return TOPICS.filter(
-    (t) => t.section !== 'science' || t.subject === state.settings.scienceSubject,
-  ).length;
+  return topicsInScope(state.settings.section3, TOPICS).length;
 }
 
 export function blanksInLatest(state: PersistedState): number {
@@ -107,9 +106,7 @@ export function mistakeNotebook(state: PersistedState) {
 
 export function sectionProgress(state: PersistedState) {
   return SECTIONS.map((spec) => {
-    const topics = TOPICS.filter(
-      (t) => t.section === spec.id && (spec.id !== 'science' || t.subject === state.settings.scienceSubject),
-    );
+    const topics = topicsInScope(state.settings.section3, TOPICS).filter((t) => t.section === spec.id);
     const values = topics.map((t) => state.mastery[t.id]?.mastery ?? 0.5);
     const practiced = topics.filter((t) => (state.mastery[t.id]?.attempts ?? 0) > 0).length;
     const average = values.length > 0 ? values.reduce((a, b) => a + b, 0) / values.length : 0.5;

@@ -2,6 +2,7 @@ import type {
   Difficulty,
   Question,
   ScienceSubject,
+  Section3Choice,
   SectionId,
   Worksheet,
   WorksheetKind,
@@ -16,6 +17,7 @@ import {
   PART_TEMPLATE,
   PASS_RATIO,
 } from './curriculum';
+import { subjectsOf } from '../lib/section3';
 import { questionsOf, questionsOfTopic } from './questions';
 import { TOPICS } from './topics';
 
@@ -43,7 +45,8 @@ const SECTION_SHARE: Record<SectionId, number> = {
   science: 1 / 3,
 };
 
-const SCIENCE_SUBJECT_COUNT = 5;
+// Nam chu de khoa hoc cong voi Tieng Anh — sau nhom tu chon trong phan 3.
+const SCIENCE_GROUP_COUNT = 6;
 
 const SECTION_CODE: Record<SectionId, string> = {
   quantitative: 'TOA',
@@ -54,6 +57,7 @@ const SECTION_CODE: Record<SectionId, string> = {
 const SUBJECT_CODE: Record<ScienceSubject, string> = {
   physics: 'LY',
   chemistry: 'HOA',
+  biology: 'SIN',
   history: 'SU',
   geography: 'DIA',
   english: 'ANH',
@@ -74,7 +78,7 @@ function buildSlots(): Slot[] {
   for (const topic of TOPICS) {
     const groupShare =
       topic.section === 'science'
-        ? SECTION_SHARE.science / SCIENCE_SUBJECT_COUNT
+        ? SECTION_SHARE.science / SCIENCE_GROUP_COUNT
         : SECTION_SHARE[topic.section];
     const prefix = topic.subject ? SUBJECT_CODE[topic.subject] : SECTION_CODE[topic.section];
     const slug = (topic.id.split('.').pop() ?? 'gen').slice(0, 3).toUpperCase();
@@ -433,11 +437,17 @@ export function filterWorksheets(filter: WorksheetFilter): Worksheet[] {
 }
 
 /**
- * Cac phieu cua mon tu chon khac mon dang thi thi khong lien quan den nguoi hoc.
- * Ham nay tra ve bo phieu thuc su nam trong chuong trinh cua ho.
+ * Cac phieu cua chu de khong nam trong lua chon phan 3 thi khong lien quan den
+ * nguoi hoc. Ham nay tra ve bo phieu thuc su nam trong chuong trinh cua ho.
+ *
+ * Nhan ca mot lua chon phan 3 (ba chu de khoa hoc hoac Tieng Anh) lan mot chu
+ * de don le, vi vai noi — nhu trang chuyen de — chi quan tam mot chu de.
  */
-export function activeWorksheets(subject: ScienceSubject): Worksheet[] {
-  return getWorksheets().filter((sheet) => sheet.section !== 'science' || sheet.subject === subject);
+export function activeWorksheets(choice: Section3Choice | ScienceSubject): Worksheet[] {
+  const subjects = typeof choice === 'string' ? [choice] : subjectsOf(choice);
+  return getWorksheets().filter(
+    (sheet) => sheet.section !== 'science' || (sheet.subject !== undefined && subjects.includes(sheet.subject)),
+  );
 }
 
 export interface BankCoverage {
