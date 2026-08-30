@@ -1397,3 +1397,9 @@ mark.hl[data-note='true'] { border-bottom: 2px dotted currentColor; cursor: poin
   color: var(--text-muted);
   line-height: var(--leading-normal);
 }
+
+/* Fee table: money columns read down, so they are tabular and right-aligned
+   from the second column on. */
+.fees-table td { font-variant-numeric: tabular-nums; }
+.fees-table th[scope='row'] { font-weight: var(--weight-semibold); }
+.fees-table .block { display: block; font-weight: 400; }

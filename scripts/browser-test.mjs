@@ -667,6 +667,7 @@ try {
     ['the vocabulary deck', '#/vocab'],
     ['the guardian report', '#/guardian-report'],
     ['the syllabus', '#/curriculum'],
+    ['programmes and fees', '#/programmes'],
     ['the certificate page', '#/certificate'],
     ['the topic packets', '#/topics'],
     ['the tactics treasury', '#/tactics'],
@@ -716,6 +717,20 @@ try {
    * publish the awarding rule whether or not the viewer qualifies. A build
    * that showed only a result would let the rule quietly drift.
    */
+  /*
+   * While the amounts are market reference rates rather than the centre's own
+   * prices, every surface must say so. A table of plausible numbers with no
+   * label on it is how a wrong price reaches a parent.
+   */
+  await page.evaluate(() => { window.location.hash = '#/programmes'; });
+  await page.waitForTimeout(700);
+  const feeText = await page.locator('.page').innerText();
+  check(
+    'unconfirmed fees are labelled, not presented as a price list',
+    feeText.includes('KHÔNG phải báo giá') || feeText.includes('not a quote'),
+  );
+  check('the fee table is derived per course', (await page.locator('.fees-table tbody tr').count()) === 4);
+
   await page.evaluate(() => { window.location.hash = '#/certificate'; });
   await page.waitForTimeout(700);
   check('the certificate page publishes every band', (await page.locator('.cert-band').count()) === 4);

@@ -162,6 +162,7 @@ ${schemas.map(jsonLdScript).join('\n')}
 <a href="/khoa-hoc/">Khoá học</a>
 <a href="/bai-giang/">Bài giảng</a>
 <a href="/tu-vung-sat/">Từ vựng</a>
+<a href="/hoc-phi/">Học phí</a>
 <a href="/cau-hoi-thuong-gap/">Hỏi đáp</a>
 </nav>
 </div></header>

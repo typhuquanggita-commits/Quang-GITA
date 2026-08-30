@@ -121,6 +121,9 @@ const Curriculum = lazy(() =>
 const Certificate = lazy(() =>
   import('../certificate/Certificate.tsx').then((m) => ({ default: m.Certificate })),
 );
+const Programmes = lazy(() =>
+  import('../pricing/Programmes.tsx').then((m) => ({ default: m.Programmes })),
+);
 const OrgMetrics = lazy(() =>
   import('../metrics/OrgMetrics.tsx').then((m) => ({ default: m.OrgMetrics })),
 );
@@ -263,6 +266,11 @@ function Shell(): React.ReactElement {
           route: { name: 'curriculum' },
           label: locale === 'vi' ? 'Đề cương' : 'Syllabus',
           icon: <IconBook size={18} />,
+        },
+        {
+          route: { name: 'programmes' },
+          label: locale === 'vi' ? 'Chương trình & học phí' : 'Programmes',
+          icon: <IconCalendar size={18} />,
         },
         {
           route: { name: 'topics' },
@@ -558,6 +566,8 @@ function RouteView({
       return <Curriculum navigate={navigate} />;
     case 'certificate':
       return <Certificate />;
+    case 'programmes':
+      return <Programmes />;
     case 'settings':
       return <Settings />;
     default:

@@ -20,6 +20,7 @@ import { PAPERS } from '../data/papers.ts';
 import { TACTICS } from '../data/tactics.ts';
 import { vocabStats, vocabWithSecondSense } from '../data/vocabulary.ts';
 import { SAT365_SCHEME } from '../engine/certification.ts';
+import { PRICING, feeLabel, formatVnd, quote } from '../data/pricing.ts';
 import { buildCoursePlan } from '../engine/curriculum.ts';
 import { bankStats } from '../data/bank.ts';
 import { skillLabel } from '../data/blueprint.ts';
@@ -777,6 +778,87 @@ function papersPage(): SitePage {
   };
 }
 
+
+function feesPage(): SitePage {
+  const label = feeLabel();
+  const rows = COURSES.flatMap((course) => {
+    const plan = buildCoursePlan(course.id)!;
+    return PRICING.deliveries
+      .filter((d) => d.id !== 'self')
+      .map((d) => ({ course, plan, d, q: quote(course.id, d.id, plan.totalSessions, course.sessionMinutes) }))
+      .filter((row) => row.q.available);
+  });
+
+  return {
+    path: '/hoc-phi/',
+    title: fitTitle('Học phí luyện SAT — mức tham khảo theo từng khoá'),
+    description: fitDescription(
+      'Học phí luyện thi SAT theo lớp nhóm, nhóm nhỏ và kèm 1–1, tính theo số buổi trong đề cương công khai.',
+      'Kèm đơn giá quy ra giờ và điều khoản học lại khi chưa đạt mốc kiểm tra.',
+    ),
+    trail: [HOME],
+    h1: 'Học phí luyện SAT, tính theo đề cương chứ không theo cảm tính',
+    priority: 0.85,
+    changefreq: 'monthly',
+    blocks: [
+      { kind: 'note', title: 'Đọc trước khi xem số', text: label.vi },
+      {
+        kind: 'lead',
+        text: 'Mỗi gói gắn với một đề cương đã công bố: bạn biết trước bao nhiêu buổi, học gì theo thứ tự nào, và mốc kiểm tra nằm ở đâu. Tổng học phí bằng đơn giá buổi nhân số buổi trong đề cương — không có khoản nào không giải thích được.',
+      },
+      { kind: 'h2', text: 'Ba hình thức học, và ai hợp với hình thức nào', id: 'hinh-thuc' },
+      {
+        kind: 'table',
+        head: ['Hình thức', 'Sĩ số', 'Đơn giá buổi (tham khảo)', 'Hợp với ai'],
+        rows: PRICING.deliveries
+          .filter((d) => d.id !== 'self')
+          .map((d) => [d.nameVi, d.sizeVi ?? '—', formatVnd(d.amountPerSession), d.suitsVi]),
+      },
+      {
+        kind: 'note',
+        title: 'Kèm 1–1 không mặc nhiên tốt hơn',
+        text: 'Với phần lớn học viên thì không. Nhóm nhỏ có thứ mà kèm riêng không có: bạn nghe được cách người khác sai, và đó là một trong những cách học nhanh nhất. Kèm 1–1 hợp khi gấp về thời gian hoặc hồ sơ đặc biệt tới mức không nhóm nào khớp.',
+      },
+      { kind: 'h2', text: 'Học phí theo khoá', id: 'theo-khoa' },
+      {
+        kind: 'table',
+        caption: 'Tổng = đơn giá buổi × số buổi trong đề cương. Cột quy ra giờ để một mức giá không thể ẩn sau một buổi dài hơn.',
+        head: ['Khoá', 'Hình thức', 'Số buổi', 'Quy ra giờ', 'Tổng khoá'],
+        rows: rows.map((row) => [
+          row.course.nameVi,
+          row.d.nameVi,
+          String(row.q.sessions),
+          formatVnd(row.q.perHour),
+          formatVnd(row.q.listTotal),
+        ]),
+      },
+      { kind: 'h2', text: 'Điều khoản', id: 'dieu-khoan' },
+      { kind: 'ul', items: PRICING.terms.map((t) => t.vi) },
+      {
+        kind: 'note',
+        title: 'Không cam kết điểm số',
+        text: 'Trung tâm này không cam kết điểm, và không trung tâm nào trung thực cam kết được. Thứ cam kết được là đề cương, số buổi, và một bản báo cáo sẽ không gọi mức chênh nhỏ hơn sai số đo là tiến bộ.',
+      },
+      {
+        kind: 'cta',
+        href: '/khoa-hoc/',
+        label: 'Xem đề cương từng khoá trước khi quyết định',
+        note: 'Toàn bộ đề cương công khai: từng đơn vị, từng mốc kiểm tra, và vì sao thứ tự lại như vậy.',
+      },
+    ],
+    jsonLd: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        name: 'Chương trình luyện thi SAT365',
+        itemListElement: PRICING.deliveries
+          .filter((d) => d.id !== 'self')
+          .map((d, i) => ({ '@type': 'ListItem', position: i + 1, name: d.nameVi })),
+      },
+    ],
+  };
+}
+
 /* ------------------------------------------------------------------ */
 
 export function buildPages(): SitePage[] {
@@ -790,6 +872,7 @@ export function buildPages(): SitePage[] {
     methodPage(),
     certificationPage(),
     papersPage(),
+    feesPage(),
     faqPage(),
   ];
 }
