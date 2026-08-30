@@ -1,4 +1,5 @@
-import { MAX_TOTAL_SCORE, SECTIONS } from '../config';
+import { MAX_SECTION_SCORE, SECTIONS } from '../config';
+import { TOPICS } from '../data/topics';
 import type {
   AttemptResult,
   DayLog,
@@ -8,8 +9,9 @@ import type {
   SectionId,
   TopicMastery,
 } from '../types';
-import { difficultyToLogit, probabilityCorrect } from './ability';
+import { difficultyToLogit, expectedAccuracy, probabilityCorrect } from './ability';
 import { dayKey, daysUntil } from './format';
+import { topicsInScope } from './section3';
 
 /**
  * Cap nhat do thanh thao cua mot chu de bang trung binh truot co trong so.
@@ -298,27 +300,32 @@ export function summarize(state: PersistedState): DashboardSummary {
 }
 
 /**
- * Khi chua co bai thi thu nao, du bao diem tu do thanh thao cac chu de,
- * co trong so theo ti le xuat hien trong de.
+ * Khi chua co bai thi thu nao, du bao diem tu do thanh thao cac chu de.
+ *
+ * Chuoi quy doi phai GIONG HET chuoi ma bai dinh vi va lo trinh dung: do
+ * thanh thao → nang luc theta → ti le dung ky vong tren phan bo do kho chuan
+ * → diem tren thang 50 moi phan. Truoc day ham nay nhan thang do thanh thao
+ * voi 50, nen cung mot nguoi hoc nhin thay hai con so khac nhau o hai man
+ * hinh — va khong cach nao biet con so nao dung.
+ *
+ * Chi tinh cac chuyen de NAM TRONG chuong trinh cua nguoi hoc: chuyen de cua
+ * to hop khong chon khong xuat hien trong de cua ho nen khong duoc keo diem
+ * du bao xuong.
  */
 export function estimateProjectedFromMastery(state: PersistedState): number {
-  const bySection = new Map<SectionId, { sum: number; weight: number }>();
-  for (const spec of SECTIONS) bySection.set(spec.id, { sum: 0, weight: 0 });
-
-  for (const mastery of Object.values(state.mastery)) {
-    const section = sectionOfTopic(mastery.topicId);
-    if (!section) continue;
-    const bucket = bySection.get(section);
-    if (!bucket) continue;
-    bucket.sum += mastery.mastery;
-    bucket.weight += 1;
-  }
+  const relevant = topicsInScope(state.settings.section3, TOPICS);
 
   let total = 0;
   for (const spec of SECTIONS) {
-    const bucket = bySection.get(spec.id);
-    const average = bucket && bucket.weight > 0 ? bucket.sum / bucket.weight : 0.5;
-    total += average * (MAX_TOTAL_SCORE / SECTIONS.length);
+    const topics = relevant.filter((t) => t.section === spec.id);
+    const weight = topics.reduce((n, t) => n + t.weight, 0);
+    if (weight <= 0) {
+      total += expectedAccuracy(masteryToAbility(0.5)) * MAX_SECTION_SCORE;
+      continue;
+    }
+    const weighted =
+      topics.reduce((n, t) => n + (state.mastery[t.id]?.mastery ?? 0.5) * t.weight, 0) / weight;
+    total += expectedAccuracy(masteryToAbility(weighted)) * MAX_SECTION_SCORE;
   }
   return total;
 }

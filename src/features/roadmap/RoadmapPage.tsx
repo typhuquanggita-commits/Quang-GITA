@@ -11,6 +11,7 @@ import { dueNow, streakOf } from '../../store/selectors';
 import { Badge, Button, Card, CardHeader, Field, Input, Progress, Stat } from '../../components/ui/primitives';
 import { TrendLine } from '../../components/charts';
 import { CoachPanel } from '../ai/TutorPanel';
+import { PlanBudget } from './PlanBudget';
 
 /**
  * LO TRINH
@@ -65,6 +66,8 @@ export function RoadmapPage() {
         />
         <Stat label="Chuỗi ngày học" value={`${streakOf(state)} ngày`} />
       </div>
+
+      <PlanBudget />
 
       <Card>
         <CardHeader
