@@ -79,6 +79,62 @@ const GROUP_LABEL: Record<string, string> = {
   academy: 'Vận hành học viện',
 };
 
+/* ==========================================================================
+   KHỐI TRONG THANH ĐIỀU HƯỚNG
+
+   VÌ SAO PHẢI TÁCH
+     Ba mươi tư mục học viên từng nằm dưới ĐÚNG MỘT tiêu đề. Một cột dọc ba
+     mươi tư dòng na ná nhau thì không phải là điều hướng — muốn tìm chỗ làm
+     bài phải cuộn qua hai mươi mục lý thuyết, và người dùng kết luận rằng
+     hệ thống KHÔNG CÓ chỗ làm bài. Có mà không tìm ra thì bằng không có.
+
+   VÌ SAO KHỐI LÀM BÀI ĐỨNG ĐẦU
+     Thứ tự trong danh sách là một lời tuyên bố về thứ tự ưu tiên. Người vào
+     học cần làm bài trước, đọc lộ trình sau; đặt lộ trình lên đầu là đảo
+     ngược đúng thứ tự đó.
+   ========================================================================== */
+type KhoiId = 'lam' | 'lotrinh' | 'hoc' | 'net';
+
+const KHOI: {id: KhoiId; label: string}[] = [
+  {id: 'lam', label: 'Làm bài & thi thử'},
+  {id: 'lotrinh', label: 'Lộ trình của tôi'},
+  {id: 'hoc', label: 'Học & tài liệu'},
+  {id: 'net', label: 'Rèn nết học'},
+];
+
+/*
+ * Mỗi thẻ học viên phải có tên trong bảng này. Thiếu một thẻ thì
+ * tools/kiem-dieu-huong.ts báo hỏng, chứ thẻ không lặng lẽ rơi xuống đáy
+ * danh sách — rơi lặng lẽ đúng là cách thẻ Thi thử bấm giờ đã biến mất.
+ */
+const KHOI_CUA_TAB: Record<string, KhoiId> = {
+  /* Làm bài & thi thử — đặt đầu vì đây là việc học viên tới để làm. */
+  thithu: 'lam', lambai: 'lam', phieu: 'lam', chuyende: 'lam', bode: 'lam',
+  dethi: 'lam', drills: 'lam', baitest: 'lam', assess: 'lam', exams: 'lam',
+
+  /* Lộ trình của tôi — mình đang ở đâu và đi tiếp thế nào. */
+  tuyen: 'lotrinh', roadmap: 'lotrinh', chuyen: 'lotrinh', decuong: 'lotrinh',
+  myplan: 'lotrinh', charter: 'lotrinh', sprint: 'lotrinh', dossier: 'lotrinh',
+  hoso: 'lotrinh', overview: 'lotrinh',
+
+  /* Học & tài liệu — chỗ nạp kiến thức vào. */
+  lectures: 'hoc', giangsau: 'hoc', methods: 'hoc', camnang: 'hoc',
+  sat: 'hoc', ielts9: 'hoc', resources: 'hoc', gita: 'hoc', chugita: 'hoc',
+
+  /* Rèn nết học — thứ quyết định có đi hết ba năm hay không. */
+  playbooks: 'net', habits: 'net', mindset: 'net', clubs: 'net', assistant: 'net',
+};
+
+/*
+ * Ba lối vào bày sẵn trên đầu thanh điều hướng, không phải cuộn mới thấy.
+ * Đây là ba việc học viên làm nhiều nhất; mọi thứ khác vẫn ở danh sách dưới.
+ */
+const MO_NHANH: {id: string; icon: string; label: string; sub: string}[] = [
+  {id: 'thithu', icon: '⏱️', label: 'Thi thử bấm giờ', sub: 'làm trọn một đề, chấm ngay'},
+  {id: 'lambai', icon: '✍️', label: 'Làm bài', sub: 'câu lẻ, xem đáp án ngay'},
+  {id: 'phieu', icon: '🧾', label: 'Phiếu luyện', sub: 'giao bài theo tuần'},
+];
+
 /** 'ca-hai' nghĩa là không lọc: hiện đủ cả hai tuyến. */
 type LocTuyen = TuyenId | 'ca-hai';
 
@@ -807,42 +863,90 @@ export const App: React.FC = () => {
     );
   };
 
-  const NavList = (
-    <nav className="space-y-1">
-      {(['learner', 'academy'] as const).map((g) => (
-        <div key={g} className={g === 'academy' ? 'pt-3' : ''}>
-          <p className="px-3 pb-1 text-[11px] font-semibold uppercase tracking-[0.15em] text-slate-400">
-            {GROUP_LABEL[g]}
-          </p>
-          {NAV.filter((n) => n.group === g && hienTab(n)).map((n) => (
+  /* Một dòng trong danh sách — dùng chung cho cả bốn khối và nhóm vận hành. */
+  const dongNav = (n: Nav, xanhLuc: boolean) => (
+    <NavMuc
+      key={n.id}
+      n={n}
+      className={`flex w-full items-center gap-2.5 rounded-lg px-2.5 py-1 text-left transition ${
+        tabHopLe === n.id
+          ? xanhLuc
+            ? 'bg-emerald-500/10 text-emerald-300 ring-1 ring-inset ring-emerald-500/30'
+            : 'bg-sky-500/10 text-sky-300 ring-1 ring-inset ring-sky-500/30'
+          : 'text-slate-400 hover:bg-slate-800/60 hover:text-slate-200'
+      }`}>
+      <span className="w-4 shrink-0 text-center text-sm">{n.icon}</span>
+      <span className="min-w-0">
+        <span className="block truncate text-[13px] font-medium leading-tight">{n.label}</span>
+        <span className="block truncate text-[11px] leading-tight text-slate-400">{n.hint}</span>
+      </span>
+    </NavMuc>
+  );
+
+  const tieuDeKhoi = (chu: string) => (
+    <p className="px-3 pb-1 text-[11px] font-semibold uppercase tracking-[0.15em] text-slate-400">
+      {chu}
+    </p>
+  );
+
+  /* Ba lối vào bày sẵn — không phải cuộn qua hai mươi mục mới thấy chỗ làm bài. */
+  const MoNhanh = (
+    <div className="mb-4">
+      {tieuDeKhoi('Vào học ngay')}
+      <div className="space-y-1.5">
+        {MO_NHANH.map((m) => {
+          const n = NAV.find((x) => x.id === m.id);
+          if (!n || !hienTab(n)) return null;
+          return (
             <NavMuc
-              key={n.id}
+              key={m.id}
               n={n}
-              className={`flex w-full items-center gap-2.5 rounded-lg px-2.5 py-1 text-left transition ${
-                tabHopLe === n.id
-                  ? g === 'academy'
-                    ? 'bg-emerald-500/10 text-emerald-300 ring-1 ring-inset ring-emerald-500/30'
-                    : 'bg-sky-500/10 text-sky-300 ring-1 ring-inset ring-sky-500/30'
-                  : 'text-slate-400 hover:bg-slate-800/60 hover:text-slate-200'
+              className={`flex w-full items-center gap-2.5 rounded-lg border px-2.5 py-2 text-left transition ${
+                tabHopLe === m.id
+                  ? 'border-sky-400 bg-sky-500/15 text-sky-100'
+                  : 'border-sky-500/30 bg-sky-500/5 text-slate-200 hover:border-sky-400 hover:bg-sky-500/10'
               }`}>
-              <span className="w-4 shrink-0 text-center text-sm">{n.icon}</span>
+              <span className="w-4 shrink-0 text-center text-sm" aria-hidden="true">
+                {m.icon}
+              </span>
               <span className="min-w-0">
-                <span className="block truncate text-[13px] font-medium leading-tight">
-                  {n.label}
+                <span className="block truncate text-[13px] font-semibold leading-tight">
+                  {m.label}
                 </span>
                 <span className="block truncate text-[11px] leading-tight text-slate-400">
-                  {n.hint}
+                  {m.sub}
                 </span>
               </span>
             </NavMuc>
-          ))}
-          {g === 'learner' && soAn > 0 && (
-            <p className="px-3 pt-1.5 text-[11px] leading-snug text-slate-400">
-              Đang ẩn {soAn} mục không thuộc tuyến đã chọn.
-            </p>
-          )}
-        </div>
-      ))}
+          );
+        })}
+      </div>
+    </div>
+  );
+
+  const NavList = (
+    <nav className="space-y-1">
+      {KHOI.map((k, i) => {
+        const muc = NAV.filter(
+          (n) => n.group === 'learner' && KHOI_CUA_TAB[n.id] === k.id && hienTab(n),
+        );
+        if (muc.length === 0) return null;
+        return (
+          <div key={k.id} data-khoi={k.id} className={i > 0 ? 'pt-3' : ''}>
+            {tieuDeKhoi(k.label)}
+            {muc.map((n) => dongNav(n, false))}
+          </div>
+        );
+      })}
+      {soAn > 0 && (
+        <p className="px-3 pt-1.5 text-[11px] leading-snug text-slate-400">
+          Đang ẩn {soAn} mục không thuộc tuyến đã chọn.
+        </p>
+      )}
+      <div data-khoi="academy" className="pt-3">
+        {tieuDeKhoi(GROUP_LABEL.academy)}
+        {NAV.filter((n) => n.group === 'academy' && hienTab(n)).map((n) => dongNav(n, true))}
+      </div>
     </nav>
   );
 
@@ -920,6 +1024,7 @@ export const App: React.FC = () => {
             {NutTim}
             {VaiBar}
             {LocTuyenBar}
+            {MoNhanh}
             {NavList}
           </div>
           {window.engwin && (
@@ -963,6 +1068,7 @@ export const App: React.FC = () => {
               {NutTim}
               {VaiBar}
               {LocTuyenBar}
+              {MoNhanh}
               {NavList}
             </div>
           )}

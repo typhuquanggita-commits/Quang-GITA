@@ -95,7 +95,9 @@ ok('tab kế hoạch dựng được điều khiển', btns>5, `${btns} nút`);
 // 7. Bộ lọc tuyến phải THẬT SỰ ẩn mục, không chỉ đổi màu nút
 //    Lưu ý: innerText trả về chữ đã hoa theo CSS uppercase, nên các biểu thức
 //    so khớp tiêu đề bên dưới đều dùng cờ i.
-const hv=()=>p.locator('aside nav > div').first().locator('[data-tab]').count();
+// Mục học viên nay chia thành nhiều khối có tiêu đề, nên đếm CẢ các khối
+// không phải khối vận hành — đếm mỗi khối đầu thì chỉ ra một phần tư.
+const hv=()=>p.locator('aside nav > div:not([data-khoi="academy"]) [data-tab]').count();
 const co=async id=>(await p.locator(`aside nav [data-tab="${id}"]`).count())>0;
 const locTuyen=async n=>{await p.locator('aside').getByRole('button',{name:n,exact:true}).click();await p.waitForTimeout(400);};
 

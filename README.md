@@ -736,6 +736,36 @@ chiếu với con số tự khai), và một lần đáp án dồn lệch (A 37 
 Chặn trần 30% không bắt được ca đó, vì không ô nào vượt trần — nên luật nay có **cả sàn
 18%**.
 
+## 🧭 Điều hướng — có mà không tìm ra thì bằng không có
+
+Thẻ **Thi thử bấm giờ** được nối vào ứng dụng đúng cách: có quyền, có tuyến, có trang công
+khai riêng, có bài kiểm trình duyệt chạy qua nó. **Mọi bài kiểm đều xanh.** Người dùng vẫn
+báo là không thấy nó ở đâu.
+
+Nguyên nhân: **34 mục học viên nằm dưới đúng một tiêu đề.** Thi thử là mục thứ hai mươi
+mốt trong một cột dọc na ná nhau — muốn tới chỗ làm bài phải cuộn qua hai mươi mục lý
+thuyết trước. Không bài kiểm nào bắt được ca đó, vì mọi bài kiểm đều hỏi *"thẻ có tồn tại
+không"*, **không bài nào hỏi *"thẻ có tìm ra được không"***.
+
+**Đã sửa hai chỗ.**
+
+1. **Ba lối vào bày sẵn trên đầu thanh điều hướng** — Thi thử bấm giờ · Làm bài · Phiếu
+   luyện. Nhìn thấy ngay, không phải cuộn.
+2. **Cắt 34 mục thành bốn khối có tiêu đề**, và **khối làm bài đứng đầu**: Làm bài & thi
+   thử (10) · Lộ trình của tôi (10) · Học & tài liệu (9) · Rèn nết học (5). Thứ tự trong
+   danh sách là một lời tuyên bố về thứ tự ưu tiên; đặt lý thuyết lên đầu là đảo ngược
+   đúng thứ tự người học cần.
+
+`npm run test:dieuhuong` giữ cả hai. Luật mạnh nhất: **mọi thẻ học viên phải có tên trong
+bảng khối** — thẻ mới quên xếp khối thì bài kiểm hỏng, chứ không rơi lặng lẽ xuống đáy
+danh sách nữa. Kèm luật chặn tái phát: **không khối nào được ôm quá nửa số thẻ** (cắt 34
+thành hai khối 17 vẫn là danh sách không cuộn nổi), khối đầu tiên phải là khối làm bài, và
+**vai mặc định phải xem được cả ba lối vào bày sẵn** — nút bày sẵn mà bị phân quyền giấu
+đi thì biến mất đúng với người cần nó nhất.
+
+Đã thử phá ba lần — thêm thẻ quên xếp khối, dồn cả 34 mục về một khối, bỏ thi thử khỏi lối
+vào nhanh — bài kiểm hỏng đúng cả ba, mã thoát 1.
+
 ## ⏱ Thi thử bấm giờ — làm thật, chấm ngay
 
 Thẻ **Đề thi mẫu** là để **đọc**: xem cấu trúc, đọc lời giải, hiểu barem. Ở đó đáp án bày
