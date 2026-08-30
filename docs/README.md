@@ -28,6 +28,7 @@ that is a defect in this index — please fix it rather than working around it.
 | [ROADMAP.md](ROADMAP.md) | Over six to twelve months, does the target get reached — and what about 1600? | Learners, teachers, centre owners |
 | [CURRICULUM.md](CURRICULUM.md) | In what order should any of this be taught, and why that order? | Teachers, centre owners |
 | [GUARDIAN-REPORT.md](GUARDIAN-REPORT.md) | What does a family get told, and what does the report refuse to claim? | Teachers, centre owners |
+| [EXPERT-SOLUTIONS.md](EXPERT-SOLUTIONS.md) | How does an expert decide, and what wrong turn does an able student take? | Learners at 1400+, teachers |
 | [VOCABULARY.md](VOCABULARY.md) | What does the deck teach, and why is it built around second meanings? | Teachers, content authors |
 | [ACCESSIBILITY.md](ACCESSIBILITY.md) | What accessibility standard does this meet, and how is it verified? | Engineers, compliance |
 | [SECURITY.md](SECURITY.md) | What does test integrity actually guarantee, and what must move server-side? | Engineers, programme leads |

@@ -131,6 +131,9 @@ const TestDates = lazy(() =>
 const Roadmap = lazy(() =>
   import('../roadmap/Roadmap.tsx').then((m) => ({ default: m.Roadmap })),
 );
+const ExpertSolutions = lazy(() =>
+  import('../solutions/ExpertSolutions.tsx').then((m) => ({ default: m.ExpertSolutions })),
+);
 const OrgMetrics = lazy(() =>
   import('../metrics/OrgMetrics.tsx').then((m) => ({ default: m.OrgMetrics })),
 );
@@ -288,6 +291,11 @@ function Shell(): React.ReactElement {
           route: { name: 'tactics' },
           label: locale === 'vi' ? 'Kho bí kíp' : 'Tactics',
           icon: <IconLightning size={18} />,
+        },
+        {
+          route: { name: 'expert-solutions' },
+          label: locale === 'vi' ? 'Lời giải chuyên gia' : 'Expert solutions',
+          icon: <IconSparkle size={18} />,
         },
         {
           route: { name: 'roadmap' },
@@ -589,6 +597,8 @@ function RouteView({
       return <TestDates navigate={navigate} />;
     case 'roadmap':
       return <Roadmap navigate={navigate} />;
+    case 'expert-solutions':
+      return <ExpertSolutions navigate={navigate} />;
     case 'settings':
       return <Settings />;
     default:

@@ -13,6 +13,7 @@ import { LESSONS, TOPICS } from '../src/data/lesson-index.ts';
 import { TACTICS } from '../src/data/tactics.ts';
 import { VOCABULARY, vocabStats } from '../src/data/vocabulary.ts';
 import { allCoursePlans, coverage, curriculumProblems } from '../src/engine/curriculum.ts';
+import { SOLUTIONS, solutionStats } from '../src/data/solution-index.ts';
 
 const problems: string[] = [];
 const seen = new Set<string>();
@@ -262,6 +263,59 @@ function exampleUsesWord(word: string, example: string): boolean {
  */
 for (const problem of curriculumProblems([...skillIds])) problems.push(problem);
 
+/*
+ * Expert solutions.
+ *
+ * The field that makes this library worth having is `wrongTurn`, and it is
+ * also the field an author under time pressure writes thinly — "a careless
+ * error" is not a wrong turn, it is a shrug. So it is checked for substance,
+ * and so is the requirement that every measurable skill has at least one:
+ * a skill with no expert solution is a skill where the platform can say what
+ * to do and not how an expert decides.
+ */
+{
+  const seenSolution = new Set<string>();
+  const withSolution = new Set(SOLUTIONS.map((s) => s.skill));
+
+  for (const solution of SOLUTIONS) {
+    const where = `solution ${solution.id}`;
+    if (seenSolution.has(solution.id)) problems.push(`${where}: duplicate id`);
+    seenSolution.add(solution.id);
+
+    if (!skillIds.has(solution.skill)) problems.push(`${where}: unknown skill "${solution.skill}"`);
+    if (solution.seconds < 20 || solution.seconds > 180) problems.push(`${where}: implausible timing`);
+    if (solution.steps.length < 2) problems.push(`${where}: a single step is not a solution`);
+
+    if (solution.read.trim().length < 80) problems.push(`${where}: the read is too thin to be a read`);
+    if (solution.readVi.trim().length < 50) problems.push(`${where}: the read is not bilingual`);
+    if (solution.transfer.trim().length < 60) problems.push(`${where}: nothing generalises`);
+    if (solution.transferVi.trim().length < 40) problems.push(`${where}: transfer is not bilingual`);
+
+    for (const step of solution.steps) {
+      if (step.act.trim().length < 25) problems.push(`${where}: a step with no action`);
+      if (step.why.trim().length < 40) problems.push(`${where}: a step asserted rather than justified`);
+      if (!step.actVi.trim() || !step.whyVi.trim()) problems.push(`${where}: a step is not bilingual`);
+    }
+
+    // The wrong turn carries the value. "Careless error" is a shrug, not a path.
+    if (solution.wrongTurn.path.trim().length < 80) problems.push(`${where}: the wrong turn is not a path`);
+    if (solution.wrongTurn.breaks.trim().length < 100) problems.push(`${where}: the wrong turn does not say where it breaks`);
+    if (!solution.wrongTurn.pathVi.trim() || !solution.wrongTurn.breaksVi.trim()) {
+      problems.push(`${where}: the wrong turn is not bilingual`);
+    }
+
+    if (solution.choices) {
+      const ids = solution.choices.map((c) => c.id);
+      if (!ids.includes(solution.answer)) problems.push(`${where}: the key is not among the choices`);
+      if (new Set(ids).size !== ids.length) problems.push(`${where}: duplicate choice id`);
+    }
+  }
+
+  for (const skill of skillIds) {
+    if (!withSolution.has(skill)) problems.push(`solutions: no expert solution for "${skill}"`);
+  }
+}
+
 const tacticIds = new Set(TACTICS.map((t) => t.id));
 if (tacticIds.size !== TACTICS.length) problems.push('tactics: duplicate id');
 
@@ -275,6 +329,13 @@ console.log(`Lessons: ${LESSONS.length} for ${skillIds.size} skills`);
   );
 }
 console.log(`Topics:  ${TOPICS.length} with ${TOPICS.reduce((n, t) => n + t.types.length, 0)} question types`);
+{
+  const sol = solutionStats();
+  console.log(
+    `Solutions: ${sol.total} expert walkthroughs over ${sol.skills} skills — ` +
+      `${sol.hard} at hard band, ${sol.wrongTurns} documented wrong turns, ${sol.meanSeconds}s mean expert time`,
+  );
+}
 {
   const plans = allCoursePlans();
   const cov = coverage([...skillIds]);

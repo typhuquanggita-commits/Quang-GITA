@@ -673,6 +673,7 @@ try {
     ['the certificate page', '#/certificate'],
     ['the topic packets', '#/topics'],
     ['the tactics treasury', '#/tactics'],
+    ['the expert solutions', '#/expert-solutions'],
     ['the papers shelf', '#/papers'],
     ['the shortcuts sheet', '#/shortcuts'],
     ['settings', '#/settings'],
@@ -730,6 +731,21 @@ try {
    * path — the one a commercial platform is most tempted to replace with a
    * plausible-looking plan.
    */
+  /*
+   * The wrong turn is the field this library exists for, and it is behind a
+   * reveal so the reasoning is read forwards. Both halves are checked.
+   */
+  await page.evaluate(() => { window.location.hash = '#/expert-solutions'; });
+  await page.waitForTimeout(800);
+  const cards = await page.locator('.solution-card').count();
+  check('the solution library renders every walkthrough', cards >= 25, `${cards} solutions`);
+  check('the answer is hidden until the reasoning is opened', (await page.locator('.solution-wrong').count()) === 0);
+
+  await page.getByRole('button', { name: /cách một chuyên gia|how an expert/ }).first().click();
+  await page.waitForTimeout(300);
+  check('opening one shows the wrong turn and where it breaks', (await page.locator('.solution-wrong').count()) === 1);
+  check('and what transfers beyond the item', (await page.locator('.solution-transfer').count()) === 1);
+
   await page.evaluate(() => { window.location.hash = '#/roadmap'; });
   await page.waitForTimeout(800);
   const roadmapText = await page.locator('.page').innerText();

@@ -1448,3 +1448,69 @@ mark.hl[data-note='true'] { border-bottom: 2px dotted currentColor; cursor: poin
   break-inside: avoid;
 }
 .roadmap-sittings p { max-width: 72ch; line-height: var(--leading-normal); }
+
+/* ================================================================== */
+/* Expert solutions                                                    */
+/* ================================================================== */
+
+.solution-card { break-inside: avoid; }
+.solution-stimulus {
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  background: var(--surface-2);
+  white-space: pre-line;
+  line-height: var(--leading-relaxed, 1.7);
+  max-width: 72ch;
+}
+.solution-choices { list-style: none; display: grid; gap: var(--space-2); }
+.solution-choices li {
+  display: grid;
+  grid-template-columns: 1.6rem 1fr;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  line-height: var(--leading-normal);
+}
+/* The key is marked by a rule and a label, never by colour alone. */
+.solution-choices li[data-key] { border-color: var(--success); background: var(--success-soft); }
+.solution-choices li[data-key] .solution-choice-id { color: var(--success); }
+.solution-choice-id { font-weight: var(--weight-semibold); }
+
+.solution-read {
+  padding: var(--space-4);
+  border-left: 3px solid var(--primary);
+  border-radius: var(--radius-sm);
+  background: var(--primary-soft);
+  color: var(--primary-soft-text);
+}
+.solution-read p { margin-top: var(--space-2); max-width: 72ch; line-height: var(--leading-normal); }
+
+.solution-steps { padding-left: var(--space-5); display: grid; gap: var(--space-3); }
+.solution-steps li { line-height: var(--leading-normal); }
+.solution-steps p { margin-top: 2px; color: var(--text-muted); max-width: 70ch; }
+
+/* The wrong turn carries the value, so it is given the most weight on the
+   page after the item itself. */
+.solution-wrong {
+  display: flex;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  border-left: 3px solid var(--danger);
+  border-radius: var(--radius-md);
+  background: var(--danger-soft);
+  color: var(--danger);
+}
+.solution-wrong svg { flex: none; margin-top: 3px; }
+.solution-wrong p { margin-top: var(--space-2); max-width: 72ch; line-height: var(--leading-normal); }
+.solution-breaks { border-top: 1px solid currentColor; padding-top: var(--space-2); }
+
+.solution-transfer {
+  display: flex;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  background: var(--surface-2);
+}
+.solution-transfer svg { flex: none; margin-top: 3px; color: var(--primary); }
+.solution-transfer p { margin-top: 2px; max-width: 72ch; line-height: var(--leading-normal); }
