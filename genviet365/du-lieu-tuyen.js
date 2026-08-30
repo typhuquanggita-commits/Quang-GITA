@@ -434,6 +434,45 @@
     'Hồ sơ hướng nghiệp thuộc về học sinh, không thuộc về trường hay CLB — mang theo khi chuyển trường.'
   ];
 
+
+  /* ── 10 · HOÀ GIẢI HAI THANG ──────────────────────────────
+     Hệ này từng mang hai thang tiến bộ song song mà không nói rõ
+     quan hệ giữa chúng: SÁU BẬC B1–B6 (bản dựng đầu tiên nghĩ ra)
+     và MƯỜI LĂM GIAI ĐOẠN (rút từ tài liệu gốc). Hai thang song
+     song trong một hệ là lỗi, không phải sự phong phú — người
+     dùng không biết mình đang ở đâu.
+
+     Cách xử: KHÔNG bỏ thang nào, mà tách vai trò.
+     · Mười lăm giai đoạn là THANG NỘI DUNG — em đang rèn cái gì.
+       Đây là thang chuẩn, lấy từ tài liệu gốc của Học viện.
+     · Sáu bậc là THANG QUYỀN — em được mở tới đâu trong hệ.
+       Nó tồn tại vì phân quyền cần một thang thô, sáu nấc; mười
+       lăm nấc thì quá mịn để gắn quyền.
+     Bảng dưới đây là ánh xạ chính thức giữa hai thang.          */
+  G.TY_ANH_XA_BAC = [
+    ['B1', 'HẠT', 'Giai đoạn 1–3 · THÂN · TÂM · TRÍ', 'Nề nếp, cảm xúc, cách học — ba thứ nền',
+     'Mở phần chung và hành trình của chính em'],
+    ['B2', 'MẦM', 'Giai đoạn 4–6 · VĂN · THỂ · MĨ', 'Ứng xử, sức bền, thẩm mỹ — trọn sáu giai đoạn Nền',
+     'Thêm sổ tay vai và biểu mẫu gia đình'],
+    ['B3', 'RỄ', 'Giai đoạn 7–9 · Cách học', 'Tư duy phát triển, phương pháp riêng, kỹ năng toàn diện',
+     'Thêm nhịp chi hội và lịch năm'],
+    ['B4', 'THÂN', 'Giai đoạn 10–11 · Kết quả', 'Kết quả thấy được và bắt đầu tạo giá trị cho người khác',
+     'Thêm điều hành chi hội: ghế, nhiệm kỳ, bàn giao'],
+    ['B5', 'TÁN', 'Giai đoạn 12–14 · Bộ công cụ', 'Bốn yếu tố bứt phá, ba giai đoạn thói quen, bảy bước Gen Việt',
+     'Mở kho nghề: ma trận, phác đồ, chiến lược'],
+    ['B6', 'QUẢ', 'Giai đoạn 15 · Hội tụ', 'Đại diện được cho lớp, cho trường, cho Gen Việt',
+     'Mở phần nghiệm thu và cố vấn cho bậc dưới']
+  ];
+
+  G.TY_ANH_XA_LUAT = [
+    'Thang chuẩn là MƯỜI LĂM GIAI ĐOẠN. Mọi tài liệu chuyên môn, giáo án và kỳ nghiệm thu đều nói bằng thang này.',
+    'Sáu bậc chỉ dùng cho một việc: quyết định một tài khoản mở được tới đâu. Không dùng sáu bậc để mô tả năng lực của một em.',
+    'Không em nào được lên bậc mà chưa đi hết các giai đoạn thuộc bậc ấy. Ánh xạ này là điều kiện, không phải mô tả.',
+    'Một em có thể ở giai đoạn 11 mà vẫn giữ bậc B3 nếu chưa có bằng chứng tầng ba. Bậc đi sau giai đoạn, không đi trước.',
+    'Khi hai thang mâu thuẫn trong một hồ sơ, giai đoạn là thứ đúng và bậc là thứ phải sửa.',
+    'Không thêm thang thứ ba. Mọi cách xếp hạng mới phải quy về một trong hai thang này, hoặc thay thế hẳn một thang.'
+  ];
+
   /* ── 9 · Nguồn ────────────────────────────────────────────── */
   G.TY_NGUON = [
     ['Hệ 10 Cấp Độ Đào Tạo Gen Việt', 'Mười cấp độ, 100 chương trình huấn luyện, nhóm năng lực A–F, chuẩn đầu ra bốn góc nhìn', 'Tuyến 1'],

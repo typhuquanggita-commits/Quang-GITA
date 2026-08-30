@@ -200,7 +200,9 @@ GV.NHOM = [
       { v: 'tu-dien', t: 'Từ điển thuật ngữ', h: 'Có cột tiếng Anh cho hồ sơ quốc tế' },
       { v: 'chi-muc', t: 'Chỉ mục', h: 'Sinh ra lúc chạy, không bao giờ lệch' },
       { v: 'so-chuan', t: 'Sổ Chuẩn', h: 'Mọi lần đổi chuẩn, không xoá dòng nào' },
-      { v: 'ban-do-he', t: 'Bản đồ toàn hệ', h: 'Tám phần · mười đường đọc theo vai' }
+      { v: 'ban-do-he', t: 'Bản đồ toàn hệ', h: 'Tám phần · mười đường đọc theo vai' },
+      { v: 'so-cai-yc', t: 'Sổ cái yêu cầu', h: 'Mỗi yêu cầu một dòng · máy soi từng viện dẫn' },
+      { v: 'so-cai-no', t: 'Món nợ số', h: 'Hứa bao nhiêu thì phải viết ra bấy nhiêu' }
     ]},
   { id: 'g21', no: '21', t: 'XƯƠNG SỐNG GEN VIỆT', s: 'Mười lăm giai đoạn và năm tuyến, rút từ tài liệu gốc', mau: '#BE0E16',
     ds: [
@@ -208,6 +210,7 @@ GV.NHOM = [
       { v: 'gv-nam-tuyen', t: 'Năm tuyến vận hành', h: 'CLB · khối lớp · gia đình · xã hội · khởi nghiệp' },
       { v: 'gv-15-giai-doan', t: 'Mười lăm giai đoạn', h: 'Xương sống của cả năm tuyến' },
       { v: 'gv-pipeline', t: 'Pipeline năm cấp', h: 'Từ thành viên nền tới đại sứ' },
+      { v: 'gv-anh-xa-bac', t: 'Hai thang và cách hoà giải', h: '15 giai đoạn là nội dung · 6 bậc là quyền' },
       { v: 'gv-nguon', t: 'Nguồn tài liệu gốc', h: 'Mười bốn nguồn trong kho GEN VIỆT' }
     ]},
   { id: 'g22', no: '22', t: 'TUYẾN CLB GEN VIỆT', s: 'Nơi em được trao vai thật và có người trông vào', mau: '#185AB4',
@@ -215,7 +218,9 @@ GV.NHOM = [
       { v: 'clb-muoi-cap', t: 'Mười cấp độ thành viên', h: 'Làm quen → Đại sứ hệ thống' },
       { v: 'clb-nang-luc', t: 'Chín nhóm năng lực', h: 'A · B · C · D · E · F1 → F4' },
       { v: 'clb-muoi-hai-ban', t: 'Mười hai Ban', h: 'Học sinh giữ ghế, có nhiệm kỳ' },
-      { v: 'clb-nhip', t: 'Nhịp tuần và buổi sinh hoạt', h: 'Leadership Lab · Squad Sprint · bốn phần' }
+      { v: 'clb-nhip', t: 'Nhịp tuần và buổi sinh hoạt', h: 'Leadership Lab · Squad Sprint · bốn phần' },
+      { v: 'clb-chu-ky', t: 'Bốn chu kỳ của một năm', h: 'Lead Self → Team → Project → Impact' },
+      { v: 'clb-52-tuan', t: 'Năm mươi hai tuần chuyên đề', h: 'Đủ 52 tuần · chủ đề · mục tiêu · đầu ra' }
     ]},
   { id: 'g23', no: '23', t: 'TUYẾN MƯỜI HAI KHỐI LỚP', s: 'Nơi việc rèn đi vào đúng lứa tuổi', mau: '#5140B4',
     ds: [
@@ -1751,6 +1756,68 @@ GV.MAN = {
     { k: 'quy', tu: 'SE_90' },
     { k: 'van', t: 'Đợt ba là đợt chậm thấy kết quả nhất và cũng là đợt quyết định. Hai đợt đầu đưa trang vào chỉ mục và đưa nội dung tới đúng người; đợt ba là thứ khiến người ấy tin. Sau chín mươi ngày, việc lặp lại là đọc báo cáo truy vấn và chọn ba câu hỏi mới cho chu kỳ sau — không có đợt thứ tư, chỉ có vòng lặp.' },
     { k: 'trich', t: 'Người tìm kiếm không bao giờ vào từ trang chủ. Chỗ nào cũng phải là cửa vào tử tế.', n: 'Nguyên tắc thứ bảy' }
+  ]},
+
+/* ══════════ BỔ SUNG NHÓM 22 · 52 TUẦN ══════════ */
+'clb-chu-ky': { q: 'clb_dieu_hanh', k: 'Tuyến CLB', t: 'Bốn chu kỳ của một năm sinh hoạt',
+  p: 'Năm mươi hai tuần không phải năm mươi hai chủ đề rời. Chúng là bốn chu kỳ nối nhau, và thứ tự bốn chu kỳ ấy là thứ không đảo được.',
+  khoi: [
+    { k: 'luoi', c: 2, tu: 'T52_CHU_KY_L' },
+    { k: 'van', t: 'Thứ tự này do chính tài liệu gốc đặt ra ở tuần 1, và nó có lý do: *một em chưa giữ nổi lời hứa với chính mình thì không nên được trao một đội*. Mọi CLB rút gọn bằng cách nhảy thẳng vào dự án đều hỏng ở cùng một chỗ — dự án chạy được vài tuần rồi tan, vì nền kỷ luật cá nhân chưa có.' },
+    { k: 'bang', cot: ['Chu kỳ', 'Tuần', 'Câu hỏi chu kỳ trả lời'], tu: 'T52_CHU_KY_B' },
+    { k: 'trich', t: 'Người Gen Việt không khoe miệng. Người Gen Việt để kết quả, tác động và phong thái trả lời.', n: 'Thông điệp tuần 11 · tài liệu gốc' }
+  ]},
+
+'clb-52-tuan': { q: 'clb_dieu_hanh', k: 'Tuyến CLB', t: 'Năm mươi hai tuần chuyên đề',
+  p: 'Đủ cả năm mươi hai tuần, lấy đúng chữ trong tài liệu gốc của Học viện: chủ đề tuần, mục tiêu chung, và đầu ra bắt buộc.',
+  khoi: [
+    { k: 'van', t: 'Trước bản này, cả hệ thống *nói* “52 tuần chuyên đề” ở tám chỗ khác nhau mà chưa chỗ nào *viết ra* chúng. Đó là món nợ lớn nhất còn lại của kho, và đây là chỗ trả nó.' },
+    { k: 'muc', t: 'Chu kỳ một · Lead Self · tuần 1–12' },
+    { k: 'bang', cot: ['Tuần', 'Chủ đề tuần', 'Mục tiêu chung', 'Đầu ra bắt buộc'], tu: 'T52_C1' },
+    { k: 'muc', t: 'Chu kỳ hai · Lead Team · tuần 13–24' },
+    { k: 'bang', cot: ['Tuần', 'Chủ đề tuần', 'Mục tiêu chung', 'Đầu ra bắt buộc'], tu: 'T52_C2' },
+    { k: 'muc', t: 'Chu kỳ ba · Lead Project · tuần 25–36' },
+    { k: 'bang', cot: ['Tuần', 'Chủ đề tuần', 'Mục tiêu chung', 'Đầu ra bắt buộc'], tu: 'T52_C3' },
+    { k: 'muc', t: 'Chu kỳ bốn · Lead Impact · tuần 37–52' },
+    { k: 'bang', cot: ['Tuần', 'Chủ đề tuần', 'Mục tiêu chung', 'Đầu ra bắt buộc'], tu: 'T52_C4' },
+    { k: 'van', t: 'Cột *đầu ra bắt buộc* là cột quan trọng nhất. Một tuần không nộp đủ đầu ra thì tuần ấy chưa xong, dù buổi sinh hoạt đã diễn ra đông vui. Đây cũng là cột mà kỳ kiểm định nhượng quyền soi đầu tiên.' }
+  ]},
+
+/* ══════════ BỔ SUNG NHÓM 20 · SỔ CÁI ══════════ */
+'so-cai-yc': { q: 'chung', k: 'Tra cứu', t: 'Sổ cái yêu cầu',
+  p: 'Câu hỏi "đã làm đủ mọi thứ được yêu cầu chưa" trước đây chỉ trả lời được bằng lời. Đây là chỗ nó được trả lời bằng máy.',
+  khoi: [
+    { k: 'van', t: 'Mỗi yêu cầu của Học viện là một *dòng sổ*, và mỗi dòng phải viện dẫn màn và kho cụ thể. Bộ kiểm phát hành đọc sổ này ở mỗi lần dựng và soi từng viện dẫn một: màn được viện dẫn có thật không, kho được viện dẫn có dữ liệu không. Dòng nào trỏ vào chỗ không tồn tại thì bản dựng bị chặn.' },
+    { k: 'bang', cot: ['Mã', 'Yêu cầu', 'Đáp ứng ở màn', 'Dựa trên kho'], tu: 'SC_YC_BANG' },
+    { k: 'van', t: 'Lần đầu chạy lớp kiểm này, nó bắt được *mười một* viện dẫn sai do chính tôi viết — tên kho nhớ nhầm, màn chưa dựng. Đó là bằng chứng tốt nhất cho việc vì sao sổ này không thể là một trang tự khai.' },
+    { k: 'muc', t: 'Sáu luật giữ sổ' },
+    { k: 'luat', tu: 'SC_LUAT' },
+    { k: 'trich', t: 'Không dòng sổ nào được đóng bằng cách sửa lại yêu cầu cho vừa với thứ đã làm.', n: 'Luật giữ sổ thứ sáu' }
+  ]},
+
+'so-cai-no': { q: 'chung', k: 'Tra cứu', t: 'Món nợ số',
+  p: 'Một hệ nói "600 chuyên đề" ở hàng chục chỗ mà chưa nơi nào viết ra chúng thì con số ấy là một món nợ, không phải một thành tựu.',
+  khoi: [
+    { k: 'van', t: 'Lỗi này đã thật sự xảy ra và sống nhiều tháng trong chính hệ này. Kho khai *52 tuần chuyên đề*, *100 chương trình huấn luyện*, *600 chuyên đề mười hai khối* — nhưng đếm ra thì không có. Không ai phát hiện, vì không ai đếm.' },
+    { k: 'bang', cot: ['Con số đã hứa', 'Hứa bao nhiêu', 'Viết ra ở kho nào', 'Đếm được'], tu: 'SC_NO_BANG' },
+    { k: 'van', t: 'Từ nay mỗi con số hứa trong văn xuôi phải có một dòng ở bảng trên, trỏ tới một kho chứa đúng ngần ấy phần tử. Lệch một đơn vị là bản dựng bị chặn. Hứa mà không trỏ được thì *bỏ con số ấy đi* — đó là lựa chọn trung thực duy nhất còn lại.' },
+    { k: 'trich', t: 'Hứa mà không trỏ được thì bỏ con số ấy đi.', n: 'Luật giữ sổ thứ tư' }
+  ]},
+
+/* ══════════ BỔ SUNG NHÓM 21 · HOÀ GIẢI HAI THANG ══════════ */
+'gv-anh-xa-bac': { q: 'chung', k: 'Xương sống', t: 'Hai thang tiến bộ, và cách hoà giải chúng',
+  p: 'Hệ này từng mang hai thang song song mà không nói rõ quan hệ giữa chúng. Hai thang song song trong một hệ là lỗi, không phải sự phong phú — người dùng không biết mình đang ở đâu.',
+  khoi: [
+    { k: 'van', t: 'Bản dựng đầu tiên tự nghĩ ra *sáu bậc B1–B6*. Về sau, khi đọc được kho tài liệu gốc của Học viện, mới thấy hệ thật có *mười lăm giai đoạn*. Hai thang cùng tồn tại nhiều tháng mà không ai nói chúng liên quan thế nào. Đây là chỗ sửa.' },
+    { k: 'muc', t: 'Cách xử: không bỏ thang nào, mà tách vai trò' },
+    { k: 'luoi', c: 2, tu: 'HAI_THANG' },
+    { k: 'van', t: 'Sáu bậc không bị bỏ vì phân quyền *cần* một thang thô. Mười lăm nấc thì quá mịn để gắn quyền — sẽ thành mười lăm cấu hình phải bảo trì, và bộ kiểm phải thử mười lăm lần thay vì sáu.' },
+    { k: 'muc', t: 'Ánh xạ chính thức giữa hai thang' },
+    { k: 'bang', cot: ['Bậc quyền', 'Tên bậc', 'Giai đoạn tương ứng', 'Em đang rèn gì', 'Bậc này mở thêm gì'],
+      tu: 'TY_ANH_XA_BAC' },
+    { k: 'muc', t: 'Sáu luật giữ cho hai thang không lệch nhau' },
+    { k: 'luat', tu: 'TY_ANH_XA_LUAT' },
+    { k: 'trich', t: 'Khi hai thang mâu thuẫn trong một hồ sơ, giai đoạn là thứ đúng và bậc là thứ phải sửa.', n: 'Luật ánh xạ thứ năm' }
   ]}
 
 };
@@ -1766,6 +1833,41 @@ GV.TU = {
   /* Hai khoá này thuộc BỘ MÁY nhưng cũng là nội dung của hai màn,
      nên tầng dẫn xuất cố ý không đụng tới — phải khai ở đây. */
   LUAT_QUYEN: GV.LUAT_QUYEN,
+
+  /* nhóm 22 · 52 tuần — cùng một kho, chiếu ra bốn bảng theo chu kỳ
+     và hai bảng chu kỳ. Chia nhỏ vì một bảng 52 dòng thì không ai đọc. */
+  /* nhóm 21 · hai thang — viết ra để không ai phải đoán */
+  HAI_THANG: [
+    { t: 'MƯỜI LĂM GIAI ĐOẠN — thang nội dung',
+      n: 'Trả lời câu: em đang rèn cái gì. Bốn cụm: Nền (1–6) · Cách học (7–9) · Kết quả (10–11) · Bộ công cụ (12–15).',
+      vi: 'Đây là thang CHUẨN, rút từ tài liệu gốc của Học viện. Mọi giáo án, kỳ nghiệm thu và hồ sơ chuyên môn đều nói bằng thang này.' },
+    { t: 'SÁU BẬC B1–B6 — thang quyền',
+      n: 'Trả lời câu khác hẳn: tài khoản của em mở được tới đâu trong hệ.',
+      vi: 'Thang thô, sáu nấc, chỉ phục vụ phân quyền. Không dùng nó để mô tả năng lực của một em — đó là việc của thang giai đoạn.' }
+  ],
+
+  /* nhóm 20 · sổ cái — cột cuối do MÁY đếm, không do người điền */
+  SC_YC_BANG: GV.SC_YEU_CAU.map(function (d) {
+    return [d.ma, d.y, (d.man || []).join(' · '), (d.kho || []).map(function (k) { return 'GV.' + k; }).join(' · ')];
+  }),
+  SC_NO_BANG: GV.SC_MON_NO.map(function (d) {
+    var v = GV[d.kho];
+    var n = Array.isArray(v) ? v.length : (v ? Object.keys(v).length : 0);
+    return [d.t, String(d.so), 'GV.' + d.kho, String(n)];
+  }),
+
+  T52_CHU_KY_L: GV.T52_CHU_KY.map(function (c) {
+    return { t: c.ma + ' · ' + c.t + '  (' + c.tuan + ')', n: c.hoi, vi: c.n };
+  }),
+  T52_CHU_KY_B: GV.T52_CHU_KY.map(function (c) { return [c.ma + ' · ' + c.t, c.tuan, c.hoi]; }),
+  T52_C1: GV.T52_TUAN.filter(function (w) { return w.ky === 'C1'; })
+    .map(function (w) { return ['Tuần ' + w.s, w.t, w.m, w.r]; }),
+  T52_C2: GV.T52_TUAN.filter(function (w) { return w.ky === 'C2'; })
+    .map(function (w) { return ['Tuần ' + w.s, w.t, w.m, w.r]; }),
+  T52_C3: GV.T52_TUAN.filter(function (w) { return w.ky === 'C3'; })
+    .map(function (w) { return ['Tuần ' + w.s, w.t, w.m, w.r]; }),
+  T52_C4: GV.T52_TUAN.filter(function (w) { return w.ky === 'C4'; })
+    .map(function (w) { return ['Tuần ' + w.s, w.t, w.m, w.r]; }),
 
   /* nhóm 1 */
   DINH_VI_BANG: GV.DINH_VI.bang.map(function (r) { return [r.truc, r.gita, r.gv]; }),

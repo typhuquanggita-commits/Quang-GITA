@@ -24,7 +24,7 @@ var TEP = ['du-lieu.js', 'du-lieu-daotao.js', 'du-lieu-vanhanh.js', 'du-lieu-kyt
            'du-lieu-chuyenmon.js', 'du-lieu-congdong.js', 'du-lieu-thuvien.js',
            'du-lieu-trainghiem.js', 'du-lieu-giatri.js', 'du-lieu-tincay.js',
            'du-lieu-thuonghieu.js', 'du-lieu-banquyen.js',
-           'du-lieu-camtay.js', 'du-lieu-tracuu.js', 'du-lieu-tuyen.js', 'du-lieu-nhuongquyen.js', 'du-lieu-seo.js', 'du-lieu-quyen.js',
+           'du-lieu-camtay.js', 'du-lieu-tracuu.js', 'du-lieu-tuyen.js', 'du-lieu-tuan52.js', 'du-lieu-socai.js', 'du-lieu-nhuongquyen.js', 'du-lieu-seo.js', 'du-lieu-quyen.js',
            'quyen.js', 'man-hinh.js', 'nen/dau-hieu.js', 'nen/dan-xuat.js', 'nen/so-lieu.js', 'nen/dau-ban.js'];
 var MAY = [];
 
@@ -464,6 +464,46 @@ Object.keys(datTen).forEach(function (k) {
     L('VA CHẠM TÊN: ' + ds3.join(' và ') + ' cùng đặt GV.' + k +
       ' — kho nạp sau đè kho trước, âm thầm');
 });
+
+/* ── 6b. SỔ CÁI YÊU CẦU ────────────────────────────────
+      Đây là lớp trả lời câu "đã làm đủ mọi thứ được yêu cầu
+      chưa" bằng máy thay vì bằng lời. Mỗi dòng sổ viện dẫn màn
+      và kho; lớp này soi từng viện dẫn một. */
+if (!G.SC_YEU_CAU || !G.SC_MON_NO) {
+  L('Thiếu sổ cái yêu cầu (du-lieu-socai.js)');
+} else {
+  G.SC_YEU_CAU.forEach(function (d) {
+    if (!d.ma || !d.y) { L('Dòng sổ thiếu mã hoặc nội dung yêu cầu'); return; }
+    (d.man || []).forEach(function (v) {
+      if (!G.MAN[v]) L('Sổ ' + d.ma + ' viện dẫn màn không tồn tại: ' + v);
+    });
+    (d.kho || []).forEach(function (k) {
+      var v = G[k];
+      if (v == null) L('Sổ ' + d.ma + ' viện dẫn kho không tồn tại: GV.' + k);
+      else if (Array.isArray(v) && !v.length) L('Sổ ' + d.ma + ' viện dẫn kho RỖNG: GV.' + k);
+      else if (typeof v === 'object' && !Array.isArray(v) && !Object.keys(v).length)
+        L('Sổ ' + d.ma + ' viện dẫn kho RỖNG: GV.' + k);
+    });
+    if (!(d.man || []).length && !(d.kho || []).length)
+      L('Sổ ' + d.ma + ' không viện dẫn vào đâu cả');
+  });
+
+  /* MÓN NỢ SỐ — con số đã hứa phải khớp số phần tử thật.
+     Luật này sinh ra sau khi phát hiện kho NÓI "600 chuyên đề",
+     "52 tuần", "100 chương trình" ở hàng chục chỗ mà chưa nơi
+     nào VIẾT RA chúng. Đó là món nợ sống được nhiều tháng vì
+     không ai đếm. */
+  G.SC_MON_NO.forEach(function (d) {
+    var v = G[d.kho];
+    if (v == null) { L('Món nợ số "' + d.t + '" trỏ tới kho không có: GV.' + d.kho); return; }
+    var n = Array.isArray(v) ? v.length : Object.keys(v).length;
+    if (n !== d.so)
+      L('MÓN NỢ SỐ: hứa ' + d.so + ' cho "' + d.t + '" nhưng GV.' + d.kho +
+        ' chỉ có ' + n + ' phần tử');
+  });
+  console.log('SỔ CÁI   · ' + G.SC_YEU_CAU.length + ' dòng yêu cầu · ' +
+    G.SC_MON_NO.length + ' món nợ số · mọi viện dẫn đều có thật');
+}
 
 /* ── 7. vỏ và bộ gộp phải nạp đủ tệp ─────────────────── */
 var html = fs.readFileSync(path.join(GOC, 'index.html'), 'utf8');
