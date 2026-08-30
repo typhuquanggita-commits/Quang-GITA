@@ -1318,3 +1318,82 @@ mark.hl[data-note='true'] { border-bottom: 2px dotted currentColor; cursor: poin
 }
 .syllabus-checkpoint svg { flex: none; margin-top: 3px; }
 .syllabus-checkpoint p { margin-top: 2px; max-width: 70ch; }
+
+/* ================================================================== */
+/* Certification                                                       */
+/* ================================================================== */
+
+.cert-band {
+  padding: var(--space-4);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--border-strong);
+  border-radius: var(--radius-md);
+  display: grid;
+  gap: var(--space-3);
+}
+/* The awarded band is marked by rule weight and a background, not by hue
+   alone — the page has to work in high contrast and on a mono printer. */
+.cert-band[data-current] {
+  border-left-color: var(--success);
+  background: var(--success-soft);
+}
+.cert-descriptors { padding-left: var(--space-5); display: grid; gap: var(--space-2); }
+.cert-descriptors li { line-height: var(--leading-normal); max-width: 72ch; font-size: var(--text-sm); }
+
+.certificate {
+  text-align: center;
+  display: grid;
+  justify-items: center;
+  gap: var(--space-3);
+  padding: var(--space-6) var(--space-4);
+}
+.certificate-preamble { color: var(--text-muted); font-size: var(--text-sm); }
+.certificate-name {
+  font-family: var(--font-serif, Georgia, serif);
+  font-size: var(--text-3xl);
+  font-weight: var(--weight-semibold);
+  line-height: 1.15;
+}
+.certificate-band {
+  font-size: var(--text-2xl);
+  font-weight: var(--weight-semibold);
+  color: var(--primary);
+  letter-spacing: 0.02em;
+}
+
+.certificate-facts {
+  margin-top: var(--space-5);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: var(--space-4);
+  text-align: left;
+  width: 100%;
+}
+.certificate-facts dt {
+  font-size: var(--text-2xs);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  font-weight: var(--weight-semibold);
+}
+.certificate-facts dd { margin: 2px 0 0; font-variant-numeric: tabular-nums; }
+.certificate-serial { font-family: var(--font-mono); letter-spacing: 0.06em; }
+
+.certificate-descriptors {
+  margin-top: var(--space-5);
+  text-align: left;
+  width: 100%;
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  background: var(--surface-2);
+}
+.certificate-descriptors ul { padding-left: var(--space-5); margin-top: var(--space-2); display: grid; gap: var(--space-2); }
+.certificate-descriptors li { line-height: var(--leading-normal); }
+
+.certificate-verify {
+  margin-top: var(--space-5);
+  max-width: 72ch;
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  line-height: var(--leading-normal);
+}

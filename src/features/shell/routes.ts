@@ -31,6 +31,7 @@ export type Route =
   | { name: 'attempt-review'; attemptId: string }
   | { name: 'attempt-analysis'; attemptId: string }
   | { name: 'dossier' }
+  | { name: 'certificate' }
   | { name: 'guardian-report' }
   | { name: 'review' }
   | { name: 'analytics' }
@@ -66,6 +67,7 @@ export const ROUTE_PERMISSION: Partial<Record<RouteName, Permission>> = {
   'attempt-review': 'review.own',
   'attempt-analysis': 'analytics.own',
   dossier: 'analytics.own',
+  certificate: 'analytics.own',
   'guardian-report': 'analytics.own',
   analytics: 'analytics.own',
   console: 'roster.view',
@@ -122,6 +124,8 @@ export function hashToRoute(hash: string): Route {
       return { name: 'topics' };
     case 'curriculum':
       return { name: 'curriculum' };
+    case 'certificate':
+      return { name: 'certificate' };
     case 'tactics':
       return { name: 'tactics' };
     case 'papers':

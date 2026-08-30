@@ -118,6 +118,9 @@ const GuardianReport = lazy(() =>
 const Curriculum = lazy(() =>
   import('../curriculum/Curriculum.tsx').then((m) => ({ default: m.Curriculum })),
 );
+const Certificate = lazy(() =>
+  import('../certificate/Certificate.tsx').then((m) => ({ default: m.Certificate })),
+);
 const OrgMetrics = lazy(() =>
   import('../metrics/OrgMetrics.tsx').then((m) => ({ default: m.OrgMetrics })),
 );
@@ -272,6 +275,11 @@ function Shell(): React.ReactElement {
           icon: <IconLightning size={18} />,
         },
         { route: { name: 'plan' }, label: t('nav.plan'), icon: <IconCalendar size={18} /> },
+        {
+          route: { name: 'certificate' },
+          label: locale === 'vi' ? 'Chứng nhận' : 'Certificate',
+          icon: <IconSparkle size={18} />,
+        },
         {
           route: { name: 'guardian-report' },
           label: locale === 'vi' ? 'Phiếu báo phụ huynh' : 'Guardian report',
@@ -548,6 +556,8 @@ function RouteView({
       return <GuardianReport />;
     case 'curriculum':
       return <Curriculum navigate={navigate} />;
+    case 'certificate':
+      return <Certificate />;
     case 'settings':
       return <Settings />;
     default:

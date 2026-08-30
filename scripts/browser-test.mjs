@@ -667,6 +667,7 @@ try {
     ['the vocabulary deck', '#/vocab'],
     ['the guardian report', '#/guardian-report'],
     ['the syllabus', '#/curriculum'],
+    ['the certificate page', '#/certificate'],
     ['the topic packets', '#/topics'],
     ['the tactics treasury', '#/tactics'],
     ['the papers shelf', '#/papers'],
@@ -710,6 +711,20 @@ try {
    * and would reach a family, so it is checked here rather than only in the
    * unit tests.
    */
+  /*
+   * A certificate is only worth having if it is hard to get, so the page must
+   * publish the awarding rule whether or not the viewer qualifies. A build
+   * that showed only a result would let the rule quietly drift.
+   */
+  await page.evaluate(() => { window.location.hash = '#/certificate'; });
+  await page.waitForTimeout(700);
+  check('the certificate page publishes every band', (await page.locator('.cert-band').count()) === 4);
+  const certText = await page.locator('.page').innerText();
+  check(
+    'the awarding rule is stated on the page, not only in the code',
+    certText.includes('KHOẢNG SAI SỐ') || certText.includes('measurement interval'),
+  );
+
   await page.evaluate(() => { window.location.hash = '#/curriculum'; });
   await page.waitForTimeout(800);
   const sessions = await page.locator('.syllabus-session').count();
