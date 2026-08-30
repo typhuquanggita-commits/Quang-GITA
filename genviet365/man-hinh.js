@@ -402,6 +402,42 @@ GV.NHOM = [
       { v: 'lt-mac-ket', t: 'Mười hai kiểu mắc kẹt', h: 'Dấu hiệu · em cần gì · làm gì · bẫy' },
       { v: 'lt-gia-dinh', t: 'Vai gia đình theo từng bậc', h: 'Việc tuần · việc tháng · việc không được làm' },
       { v: 'lt-nghe', t: 'Mười bốn hướng nghề', h: 'Từ bậc 5–6 sang nghề · thử trong 90 ngày' }
+    ]},
+  { id: 'g44', no: '44', t: 'CHI HỘI CHI TIẾT', s: 'Mở từ số không, vòng bảy ngày, ghế luân phiên và tiền minh bạch', mau: '#185AB4',
+    ds: [
+      { v: 'ch-mo-moi', t: 'Mở một chi hội từ số không', h: 'Sáu chặng · tuần −8 tới tuần 26' },
+      { v: 'ch-vong-tuan', t: 'Vòng bảy ngày của chi hội', h: 'Mười tám nhịp · từ Chủ nhật tới sau buổi' },
+      { v: 'ch-to-mui-nhon', t: 'Mười hai tổ mũi nhọn', h: 'Kèm dấu hiệu tổ đang thành nhóm đặc quyền' },
+      { v: 'ch-ghe', t: 'Luân phiên ghế và bàn giao', h: 'Tám bước · mở đề cử tới rà ba mươi ngày' },
+      { v: 'ch-tai-chinh', t: 'Tiền của một chi hội', h: 'Học sinh ghi sổ · người lớn giữ tiền' },
+      { v: 'ch-hong', t: 'Mười bốn dấu hiệu chi hội đang hỏng', h: 'Và phanh cho từng cái' }
+    ]},
+  { id: 'g45', no: '45', t: 'NGHỀ COACH', s: 'Tuyển, dự giờ, phản hồi, và giữ người giỏi ở lại', mau: '#0B7350',
+    ds: [
+      { v: 'ng-tuyen', t: 'Tuyển một Coach', h: 'Mười bước · có xác minh lý lịch và thử dạy' },
+      { v: 'ng-cau-hoi', t: 'Ba mươi sáu câu phỏng vấn', h: 'Sáu nhóm · kèm dấu hiệu loại' },
+      { v: 'ng-du-gio', t: 'Phiếu dự giờ một trăm điểm', h: 'Bảy phần · ngưỡng đạt 80' },
+      { v: 'ng-phan-hoi', t: 'Sáu kịch bản phản hồi sau dự giờ', h: 'Buổi tốt tới người phản ứng gay gắt' },
+      { v: 'ng-lo-trinh', t: 'Lộ trình nghề năm chặng', h: 'Trợ giảng tới Coach trưởng' },
+      { v: 'ng-ranh-gioi', t: 'Ranh giới nghề và dấu hiệu xuống', h: 'Mười tám điều · mười hai dấu hiệu' }
+    ]},
+  { id: 'g46', no: '46', t: 'ĐO LƯỜNG VÀ BÁO CÁO', s: 'Ba mươi lăm báo cáo, bốn mươi tám chỉ số, và cách một con số bị làm hỏng', mau: '#A8801F',
+    ds: [
+      { v: 'dl-bao-cao', t: 'Ba mươi lăm báo cáo', h: 'Ai làm · gửi ai · quyết định gì dựa trên nó' },
+      { v: 'dl-chi-so', t: 'Bốn mươi tám chỉ số', h: 'Có công thức và hai ngưỡng' },
+      { v: 'dl-bieu-mau', t: 'Hai mươi hai biểu mẫu đo', h: 'ĐO-01 → ĐO-22 · trường không được để trống' },
+      { v: 'dl-so-xau', t: 'Mười bốn cách một con số bị làm hỏng', h: 'Dấu hiệu và phanh cho từng cái' },
+      { v: 'dl-du-lieu-tre', t: 'Hai mươi quy tắc dữ liệu trẻ em', h: 'Thu tối thiểu · xoá theo yêu cầu' },
+      { v: 'dl-nhip', t: 'Nhịp đo cả năm', h: 'Hai mươi bốn mốc' }
+    ]},
+  { id: 'g47', no: '47', t: 'SÁU SỰ KIỆN TRỤ CỘT', s: 'Thiết kế đủ, để mỗi năm không phải nghĩ lại từ đầu', mau: '#BE0E16',
+    ds: [
+      { v: 'sk-sau-tru', t: 'Sáu sự kiện trụ cột', h: 'Mục đích duy nhất · dấu hiệu thành hội chợ' },
+      { v: 'sk-khung', t: 'Khung tổ chức từ D-60 tới D+14', h: 'Sáu chặng · chặng một là quyết định có làm không' },
+      { v: 'sk-ban', t: 'Mười hai ban tổ chức', h: 'Trước · trong · sau · bàn giao cho ai' },
+      { v: 'sk-kich-ban', t: 'Kịch bản một sự kiện', h: 'Hai mươi sáu mốc từ 06:30' },
+      { v: 'sk-ngan-sach', t: 'Mười tám hạng mục ngân sách', h: 'Cắt được không · cắt thì mất gì' },
+      { v: 'sk-do', t: 'Đo và rủi ro sự kiện', h: 'Có đáng tổ chức lại không' }
     ]}
 ];
 
@@ -421,7 +457,7 @@ GV.PHAN = [
 
   { id: 'p2', no: '2', t: 'CLUB GEN VIỆT', mau: '#0B7350',
     s: 'Hạt nhân vận hành — nơi em được trao vai thật',
-    nhom: ['g4', 'g22', 'g29', 'g32', 'g34', 'g36', 'g11'] },
+    nhom: ['g4', 'g44', 'g22', 'g29', 'g32', 'g34', 'g36', 'g11'] },
 
   { id: 'p3', no: '3', t: 'LỘ TRÌNH CÁ NHÂN GEN VIỆT', mau: '#5140B4',
     s: 'Một em đi qua hệ này thế nào, từ ngày đầu tới lúc có nghề',
@@ -429,11 +465,11 @@ GV.PHAN = [
 
   { id: 'p4', no: '4', t: 'HỆ THỐNG ĐÀO TẠO MƯỜI HAI KHỐI', mau: '#A8801F',
     s: 'Dạy cái gì, dạy thế nào, ai dạy và dạy an toàn ra sao',
-    nhom: ['g23', 'g31', 'g3', 'g9', 'g19', 'g33', 'g37'] },
+    nhom: ['g23', 'g31', 'g3', 'g9', 'g45', 'g19', 'g33', 'g37'] },
 
   { id: 'p5', no: '5', t: 'THÀNH TỰU GEN VIỆT', mau: '#9E470D',
     s: 'Chứng minh được gì, bằng bằng chứng nào',
-    nhom: ['g7', 'g16', 'g41', 'g38'] },
+    nhom: ['g7', 'g46', 'g16', 'g41', 'g38'] },
 
   { id: 'p6', no: '6', t: 'GEN VIỆT TRONG KỶ NGUYÊN VƯƠN MÌNH', mau: '#BE0E16',
     s: 'Tầm vóc quốc gia, bản quyền, nhân rộng và ra thế giới',
@@ -441,7 +477,7 @@ GV.PHAN = [
 
   { id: 'p7', no: '7', t: 'HOẠT ĐỘNG GEN VIỆT VÀ CỘNG ĐỒNG', mau: '#0B6675',
     s: 'Nơi giá trị của em được người ngoài xác nhận',
-    nhom: ['g25', 'g42', 'g6', 'g8'] },
+    nhom: ['g25', 'g42', 'g47', 'g6', 'g8'] },
 
   { id: 'p8', no: '8', t: 'MẬT MÃ GEN VIỆT', mau: '#8A6006',
     s: 'Vĩ nhân, danh tướng, nhà khoa học — chiến tích, sản phẩm và tư duy để đời',
@@ -2931,6 +2967,228 @@ GV.MAN = {
     { k: 'quy', tu: 'LT_MOT_NAM' },
     { k: 'muc', t: 'Mười bảy luật đi lộ trình' },
     { k: 'luat', tu: 'LT_LUAT' }
+  ]},
+
+/* ══════════ NHÓM 44 · CHI HỘI CHI TIẾT ══════════ */
+'ch-mo-moi': { q: 'clb_dieu_hanh', k: 'Chi hội chi tiết', t: 'Mở một chi hội từ số không',
+  p: 'Sáu chặng, từ tuần âm tám tới tuần hai mươi sáu. Câu hỏi của chặng đầu không phải làm gì trước, mà là: có mười hai người thật muốn mở, hay chỉ có một người nhiệt tình?',
+  khoi: [
+    { k: 'chang', tu: 'CH_MO_MOI' },
+    { k: 'van', t: 'Tám tuần trước ngày ra mắt là phần bị bỏ qua nhiều nhất, và cũng là phần quyết định. Một chi hội mở ra khi mới có một người muốn thì sẽ tan đúng lúc người ấy bận.' }
+  ]},
+
+'ch-vong-tuan': { q: 'clb_dieu_hanh', k: 'Chi hội chi tiết', t: 'Vòng bảy ngày của một chi hội',
+  p: 'Mười tám nhịp. Buổi sinh hoạt chỉ là một nhịp trong đó — mười bảy nhịp còn lại mới là thứ giữ cho buổi ấy có nội dung.',
+  khoi: [
+    { k: 'nhip', tu: 'CH_VONG_TUAN' },
+    { k: 'van', t: 'Nhịp thứ Sáu là nhịp mượn từ mô hình chi hội ở nhóm 36: **rút ngẫu nhiên hai lời trao của hai tuần trước rồi hỏi lại người nhận**. Đây là chi tiết duy nhất giữ bảng số khỏi trôi dần thành số ảo, nên nó được đặt thành một nhịp cứng chứ không phải một việc nên làm.' }
+  ]},
+
+'ch-to-mui-nhon': { q: 'clb_dieu_hanh', k: 'Chi hội chi tiết', t: 'Mười hai tổ mũi nhọn',
+  p: 'Sáu tổ thường trực và sáu tổ thời vụ. Cột quan trọng nhất là cột cuối: dấu hiệu tổ đang thành nhóm đặc quyền.',
+  khoi: [
+    { k: 'bang', cot: ['Loại tổ', 'Khi nào lập', 'Ai vào', 'Nhiệm vụ', 'Giải thể khi nào', 'Dấu hiệu tổ đang thành nhóm đặc quyền'],
+      tu: 'CH_TO_MUI_NHON' },
+    { k: 'van', t: 'Một tổ mũi nhọn sinh ra để làm việc khó rồi giải thể. Tổ nào không có ngày giải thể thì sớm muộn thành một tầng lớp trong chi hội — và tầng lớp ấy phá đúng thứ chi hội định xây.' }
+  ]},
+
+'ch-ghe': { q: 'clb_dieu_hanh', k: 'Chi hội chi tiết', t: 'Luân phiên ghế và bàn giao',
+  p: 'Tám bước, bắt đầu từ tuần hai mươi của nhiệm kỳ — tức là bắt đầu từ khi người đương nhiệm còn đang làm tốt.',
+  khoi: [
+    { k: 'buoc', tu: 'CH_GHE' },
+    { k: 'van', t: 'Bước cuối là **rà ba mươi ngày sau bàn giao**. Bàn giao xong rồi bỏ đó là cách một chi hội mất trí nhớ tổ chức: người mới không biết hỏi ai, người cũ tưởng mình đã xong việc.' },
+    { k: 'muc', t: 'Mười nhóm năng lực nhìn ở cấp chi hội' },
+    { k: 'bang', cot: ['Nhóm', 'Năng lực', 'Rèn ở hoạt động nào', 'Ai kèm', 'Đo bằng gì'], tu: 'CH_NANG_LUC' }
+  ]},
+
+'ch-tai-chinh': { q: 'tai_chinh', k: 'Chi hội chi tiết', t: 'Tiền của một chi hội',
+  p: 'Mười chín khoản, chín thu mười chi. Và một ranh giới đứng trên tất cả: học sinh ghi sổ, người lớn giữ tiền.',
+  khoi: [
+    { k: 'van', t: 'Soi kho gốc thì thấy một lỗ hổng nhất quán: bảng tài chính chỉ mô tả bốn dòng tiền ở cấp toàn hệ, trong khi bảng ghế lại giao *Thư ký — Thủ quỹ, giữ quỹ chi hội* cho một học sinh mà **không kèm bất kỳ ràng buộc nào**. Kho này tách hẳn hai việc ấy ra.' },
+    { k: 'bang', cot: ['Khoản', 'Nguồn từ đâu', 'Ai duyệt', 'Ai giữ sổ', 'Công khai thế nào', 'Ranh giới không được vượt'],
+      tu: 'CH_TAI_CHINH' },
+    { k: 'muc', t: 'Hai mươi điều minh bạch tiền' },
+    { k: 'luat', tu: 'CH_MINH_BACH' },
+    { k: 'canh', ds: [
+      'BIÊN SOẠN MỚI — phần tài chính cần kế toán và nhà trường rà lại trước khi áp dụng.',
+      'Kho cố ý không ghi bất kỳ con số tiền nào, không nêu tên ngân hàng hay ví điện tử.',
+      'Không quyên góp từ chính phụ huynh trong lớp, và không dùng tiền để đổi lấy vai trò.'
+    ]},
+    { k: 'trich', t: 'Thủ quỹ của chi hội là người GHI SỔ, không phải người GIỮ TIỀN.', n: 'Điều minh bạch thứ nhất' }
+  ]},
+
+'ch-hong': { q: 'clb_dieu_hanh', k: 'Chi hội chi tiết', t: 'Mười bốn dấu hiệu chi hội đang hỏng',
+  p: 'Mỗi dấu hiệu quan sát được, và mỗi cái có phanh. Không có dấu hiệu nào là cảm tính.',
+  khoi: [
+    { k: 'rui', tu: 'CH_HONG' },
+    { k: 'van', t: 'Dấu hiệu đầu tiên là dấu hiệu tinh vi nhất: **bảng số đẹp dần lên mà đời sống không đổi**. Nhận ra nó bằng một phép đối chiếu cụ thể — tỷ lệ băng xanh tăng đều bốn tuần liền trong khi những thứ đo được ngoài bảng thì đứng yên.' },
+    { k: 'muc', t: 'Hai mươi luật chi hội' },
+    { k: 'luat', tu: 'CH_LUAT' }
+  ]},
+
+/* ══════════ NHÓM 45 · NGHỀ COACH ══════════ */
+'ng-tuyen': { q: 'nghe_quan_ly', k: 'Nghề Coach', t: 'Tuyển một Coach',
+  p: 'Mười bước. Bước bốn là xác minh lý lịch tư pháp và ba người tham chiếu; bước sáu là thử dạy có hai người chấm độc lập.',
+  khoi: [
+    { k: 'buoc', tu: 'NG_TUYEN' },
+    { k: 'van', t: 'Bước một đáng chú ý vì nó chặn một thói quen phổ biến: *không tuyển dự phòng*. Mở vị trí chỉ khi có ca thật đang chờ hoặc lớp thật sắp mở. Tuyển sẵn để đó là cách nhanh nhất có một người đứng lớp mà không ai chịu trách nhiệm về chất lượng của họ.' },
+    { k: 'canh', ds: [
+      'Người chưa có kết luận xác minh lý lịch tư pháp bằng văn bản thì không ở cùng phòng với trẻ, ở bất kỳ vai nào.',
+      'Danh mục giấy tờ phải rà theo quy định hiện hành trước mỗi đợt tuyển — kho này cố ý không dẫn số hiệu văn bản.',
+      'Vòng an toàn ở bước bảy là vòng bắt buộc đúng: sai một tình huống an toàn là dừng, không bù bằng điểm chuyên môn.'
+    ]}
+  ]},
+
+'ng-cau-hoi': { q: 'nghe_quan_ly', k: 'Nghề Coach', t: 'Ba mươi sáu câu phỏng vấn',
+  p: 'Sáu nhóm, mỗi nhóm sáu câu. Cột thứ ba — nghe gì trong câu trả lời — quan trọng hơn chính câu hỏi.',
+  khoi: [
+    { k: 'bang', cot: ['Nhóm', 'Câu hỏi', 'Nghe gì trong câu trả lời', 'Dấu hiệu tốt', 'Dấu hiệu loại'], tu: 'NG_CAU_HOI' },
+    { k: 'van', t: 'Nhóm *ranh giới với trẻ* và nhóm *khả năng nhận sai* là hai nhóm loại nhiều người nhất, và cũng là hai nhóm mà một ứng viên giỏi chuyên môn dễ trượt nhất. Đó là lựa chọn có chủ ý: chuyên môn dạy được, hai thứ kia thì không.' }
+  ]},
+
+'ng-du-gio': { q: 'nghe_quan_ly', k: 'Nghề Coach', t: 'Phiếu dự giờ một trăm điểm',
+  p: 'Bảy phần, ngưỡng đạt tám mươi. Đây là phiếu cho buổi đứng lớp — khác hẳn chuẩn hai mươi điểm cho buổi kèm một–một ở nhóm 09.',
+  khoi: [
+    { k: 'cham', nguong: 80, tu: 'NG_DU_GIO' },
+    { k: 'van', t: 'Mỗi phần có ba mức mô tả bằng *hành vi quan sát được*, không bằng tính từ. Một phiếu dự giờ ghi “giáo viên nhiệt tình” thì không chấm được và không phản hồi được; ghi “học sinh đã ngồi mà người dạy còn đang dán thẻ” thì chấm được ngay.' }
+  ]},
+
+'ng-phan-hoi': { q: 'nghe_quan_ly', k: 'Nghề Coach', t: 'Sáu kịch bản phản hồi sau dự giờ',
+  p: 'Buổi tốt · buổi trung bình · buổi hỏng · người mới · người lâu năm đang trượt · người phản ứng gay gắt. Mỗi kịch bản có mục không được nói.',
+  khoi: [
+    { k: 'kichban', tu: 'NG_PHAN_HOI' },
+    { k: 'van', t: 'Kịch bản khó nhất là *người lâu năm đang trượt*: họ từng giỏi, họ biết mình đang xuống, và mọi lời khen an ủi đều làm mọi thứ tệ hơn. Kịch bản ấy bắt đầu bằng số liệu chứ không bắt đầu bằng cảm nhận.' }
+  ]},
+
+'ng-lo-trinh': { q: 'nghe_quan_ly', k: 'Nghề Coach', t: 'Lộ trình nghề năm chặng',
+  p: 'Từ trợ giảng tới Coach trưởng. Và một điều chỉnh quan trọng so với bản cũ: trục đo đã bị đảo lại.',
+  khoi: [
+    { k: 'chang', tu: 'NG_LO_TRINH' },
+    { k: 'van', t: 'Kho gốc đặt **K7 — làm cho mình ngày càng ít cần thiết** là năng lực cao nhất, nhưng bậc nghề lại mô tả theo *số ca và loại ca đảm nhận*. Tức thang tiến đang thưởng cho việc ôm ca, ngược với chính nguyên lý ấy. Nay cổng của chặng ba là *hai ca đã giảm nhịp gặp mà kết quả giữ nguyên*, và cổng của chặng năm là *nhóm chạy trọn một tháng vắng Coach trưởng, điểm dự giờ trung bình không tụt quá năm điểm*.' },
+    { k: 'muc', t: 'Mười hai cách giữ người giỏi ở lại' },
+    { k: 'luoi', c: 2, tu: 'NG_GIU_NGUOI' }
+  ]},
+
+'ng-ranh-gioi': { q: 'chung', k: 'Nghề Coach', t: 'Ranh giới nghề và dấu hiệu một Coach đang xuống',
+  p: 'Mười tám điều ranh giới, và mười hai dấu hiệu nhận ra sớm.',
+  khoi: [
+    { k: 'luat', tu: 'NG_RANH_GIOI' },
+    { k: 'muc', t: 'Mười hai dấu hiệu đang xuống' },
+    { k: 'rui', tu: 'NG_HONG' },
+    { k: 'van', t: 'Hai dấu hiệu bắt đúng mặt trái của một người giỏi: **gia đình chỉ tin một người**, và **một mình biết một thứ trong hệ**. Cả hai được ghi là *rủi ro*, không phải thành tích — vì cả hai đều là chỗ hệ sẽ gãy khi người ấy nghỉ.' },
+    { k: 'muc', t: 'Mười tám luật giữ chuẩn nghề' },
+    { k: 'luat', tu: 'NG_LUAT' }
+  ]},
+
+/* ══════════ NHÓM 46 · ĐO LƯỜNG VÀ BÁO CÁO ══════════ */
+'dl-bao-cao': { q: 'kpi_toan_he', k: 'Đo lường', t: 'Ba mươi lăm báo cáo',
+  p: 'Cột cuối là cột giữ cho bộ báo cáo không phình thành nghi thức giấy tờ: mỗi báo cáo phải nêu được nó phục vụ quyết định nào.',
+  khoi: [
+    { k: 'bang', cot: ['Mã', 'Báo cáo', 'Ai làm', 'Gửi cho ai', 'Nhịp', 'Dữ liệu lấy từ đâu', 'Quyết định dựa trên nó'],
+      tu: 'DL_BAO_CAO_B' },
+    { k: 'van', t: 'Một báo cáo không trả lời được câu *nó phục vụ quyết định nào* thì nên bỏ. Bộ báo cáo phình lên là cách một tổ chức bận rộn dần mà không sáng suốt hơn.' },
+    { k: 'muc', t: 'Cấu trúc một trang báo cáo' },
+    { k: 'moc', tu: 'DL_MAU_BAO_CAO' }
+  ]},
+
+'dl-chi-so': { q: 'kpi_toan_he', k: 'Đo lường', t: 'Bốn mươi tám chỉ số',
+  p: 'Tám nhóm. Mỗi chỉ số có công thức tính, ngưỡng tốt, ngưỡng báo động — và một cột hiếm thấy: đọc sai thế nào.',
+  khoi: [
+    { k: 'bang', cot: ['Nhóm', 'Chỉ số', 'Công thức tính', 'Ngưỡng tốt', 'Ngưỡng báo động', 'Đọc sai thế nào'],
+      tu: 'DL_CHI_SO_B' },
+    { k: 'van', t: 'Cột *đọc sai thế nào* là cột đáng giá nhất. Phần lớn tai nạn về số liệu không đến từ số sai, mà từ số đúng bị đọc sai — mẫu số khác, mốc so sánh khác, hoặc nhầm tương quan với nhân quả.' }
+  ]},
+
+'dl-bieu-mau': { q: 'nghiem_thu', k: 'Đo lường', t: 'Hai mươi hai biểu mẫu đo',
+  p: 'ĐO-01 tới ĐO-22. Dãy mã riêng để không đụng dãy BM- của bộ biểu mẫu vận hành.',
+  khoi: [
+    { k: 'bang', cot: ['Mã', 'Biểu mẫu', 'Ai điền', 'Khi nào', 'Trường không được để trống'], tu: 'DL_BIEU_MAU_B' },
+    { k: 'van', t: 'Biểu mẫu **ĐO-22 — phiếu ghi tầng bằng chứng** là biểu mẫu quan trọng nhất trong bộ, và nó sinh ra từ một khoảng trống thật: hệ đã có ba tầng bằng chứng và đã có câu *nhập nhèm tầng là một hình thức nói dối*, nhưng chưa có chỗ nào **bắt một con số phải mang theo tầng của nó**. Không có chốt ấy thì nguyên tắc ba tầng chỉ là một tuyên bố.' }
+  ]},
+
+'dl-so-xau': { q: 'chung', k: 'Đo lường', t: 'Mười bốn cách một con số bị làm hỏng',
+  p: 'Phần lớn không phải gian lận. Phần lớn là những việc trông rất hợp lý lúc làm.',
+  khoi: [
+    { k: 'rui', tu: 'DL_SO_XAU' },
+    { k: 'van', t: 'Cách đầu tiên — *đổi định nghĩa giữa kỳ* — nhận ra bằng một dấu hiệu rất cụ thể: con số nhảy một bậc lớn mà không có việc gì lớn xảy ra. Hỏi kỹ thì hoá ra ai đó đã sửa cách đếm, thường với ý tốt.' },
+    { k: 'trich', t: 'Đo cái dễ thay cho cái đúng là cách một hệ tự lừa mình mà không ai nói dối câu nào.', n: 'Đọc từ mười bốn cách trên' }
+  ]},
+
+'dl-du-lieu-tre': { q: 'chung', k: 'Đo lường', t: 'Hai mươi quy tắc dữ liệu trẻ em',
+  p: 'Quy tắc thứ nhất là quy tắc lọc mọi thứ còn lại: mỗi trường dữ liệu phải trả lời được nó phục vụ quyết định nào.',
+  khoi: [
+    { k: 'luat', tu: 'DL_DU_LIEU_TRE' },
+    { k: 'van', t: 'Thu ít thì mất ít. Phần lớn rủi ro về dữ liệu trẻ em không đến từ việc bảo vệ kém, mà từ việc **thu thập nhiều hơn mức cần** rồi giữ lâu hơn mức cần.' },
+    { k: 'canh', ds: [
+      'Dữ liệu thật của người học KHÔNG được đưa vào bản dựng tĩnh, ở bất kỳ vai nào.',
+      'Trang này chứa chuẩn và phương pháp, không chứa hồ sơ trẻ em.',
+      'Kho cố ý không dẫn số hiệu văn bản pháp luật — phần lưu trữ và xoá dữ liệu cần rà theo quy định hiện hành.'
+    ]}
+  ]},
+
+'dl-nhip': { q: 'kpi_toan_he', k: 'Đo lường', t: 'Nhịp đo cả năm',
+  p: 'Hai mươi bốn mốc, bắt đầu từ tuần thử của mỗi người mới — vì không có số nền thì mọi con số về sau không so được với gì.',
+  khoi: [
+    { k: 'lich', tu: 'DL_NHIP' },
+    { k: 'muc', t: 'Hai mươi luật đo lường' },
+    { k: 'luat', tu: 'DL_LUAT' },
+    { k: 'trich', t: 'Nâng theo bằng chứng, không theo thời gian. Không có mốc nào kiểu đủ một năm thì lên bậc.', n: 'Luật đo lường thứ nhất' }
+  ]},
+
+/* ══════════ NHÓM 47 · SÁU SỰ KIỆN TRỤ CỘT ══════════ */
+'sk-sau-tru': { q: 'clb_dieu_hanh', k: 'Sự kiện', t: 'Sáu sự kiện trụ cột',
+  p: 'Hệ đã khai tên sáu sự kiện từ lâu. Đây là thiết kế của chúng — để mỗi năm không phải nghĩ lại từ đầu.',
+  khoi: [
+    { k: 'bang', cot: ['Mã', 'Sự kiện', 'Mùa trong năm', 'Ai dự', 'Mục đích duy nhất', 'Đầu ra bắt buộc', 'Quy mô tối thiểu chạy được', 'Dấu hiệu đang thành hội chợ'],
+      tu: 'SK_SAU_TRU' },
+    { k: 'van', t: 'Hai cột cuối là hai cột ít gặp nhất trong tài liệu sự kiện, và là hai cột cứu nhiều nhất. **Quy mô tối thiểu chạy được** cho phép làm sự kiện khi ít người và ít tiền, thay vì hoãn. **Dấu hiệu đang thành hội chợ** cho biết lúc nào một sự kiện đã mất mục đích huấn luyện mà vẫn đông vui.' },
+    { k: 'trich', t: 'Mỗi sự kiện phục vụ một mục đích huấn luyện viết thành một câu. Không viết được một câu thì chưa được tổ chức.', n: 'Luật sự kiện thứ nhất' }
+  ]},
+
+'sk-khung': { q: 'clb_dieu_hanh', k: 'Sự kiện', t: 'Khung tổ chức từ D-60 tới D+14',
+  p: 'Sáu chặng. Chặng đầu không phải lên kế hoạch — mà là quyết định có làm không.',
+  khoi: [
+    { k: 'chang', tu: 'SK_KHUNG' },
+    { k: 'van', t: 'Đặt câu hỏi *có làm không* thành một chặng riêng là cách chặn thói quen phổ biến nhất: năm ngoái có thì năm nay phải có. Một sự kiện chạy vì quán tính tốn đúng bằng một sự kiện chạy vì mục đích, mà không đổi lại gì.' }
+  ]},
+
+'sk-ban': { q: 'clb_dieu_hanh', k: 'Sự kiện', t: 'Mười hai ban tổ chức',
+  p: 'Mỗi ban có việc trước, trong, sau — và cột cuối là cột giữ trí nhớ tổ chức: bàn giao cho ai.',
+  khoi: [
+    { k: 'bang', cot: ['Ban', 'Người phụ trách là vai nào', 'Việc trước sự kiện', 'Việc trong sự kiện', 'Việc sau sự kiện', 'Bàn giao cho ai'],
+      tu: 'SK_BAN' },
+    { k: 'van', t: 'Trưởng ban tổ chức là **học sinh**, có Chủ nhiệm CLB kèm — không phải ngược lại. Đây là chỗ dễ trượt nhất khi sự kiện lớn dần: người lớn nhận lấy vì sợ hỏng, và các em thành người làm nền.' }
+  ]},
+
+'sk-kich-ban': { q: 'clb_dieu_hanh', k: 'Sự kiện', t: 'Kịch bản một sự kiện',
+  p: 'Hai mươi sáu mốc, bắt đầu 06:30 với ban an toàn chứ không phải với ban truyền thông.',
+  khoi: [
+    { k: 'lich', tu: 'SK_KICH_BAN' },
+    { k: 'van', t: 'Mốc đầu tiên nói lên thứ tự ưu tiên của cả bản thiết kế: kiểm điện, lối thoát hiểm, nhà vệ sinh, điểm y tế — trước khi có bất kỳ ai đến.' }
+  ]},
+
+'sk-ngan-sach': { q: 'tai_chinh', k: 'Sự kiện', t: 'Mười tám hạng mục ngân sách',
+  p: 'Không có con số nào trong bảng này. Thay vào đó là bốn cột trả lời câu hỏi thật của người tổ chức: cắt được không, cắt thì mất gì, và làm phiên bản không tốn tiền thế nào.',
+  khoi: [
+    { k: 'bang', cot: ['Hạng mục', 'Bắt buộc hay tuỳ chọn', 'Cắt được không', 'Cắt thì mất gì', 'Cách làm phiên bản không tốn tiền'],
+      tu: 'SK_NGAN_SACH' },
+    { k: 'van', t: 'Hạng mục đầu bảng là **bảo hiểm tai nạn**, và cột thứ ba ghi *không, trong mọi trường hợp*. Cắt nó thì mất tư cách tổ chức — đúng chuẩn an toàn mà hệ đã tự đặt ra ở nhóm 37.' },
+    { k: 'canh', ds: [
+      'Không huy động tiền từ phụ huynh trong lớp để tổ chức sự kiện.',
+      'Kho cố ý không ghi bất kỳ con số tiền nào, không nêu tên nhà tài trợ hay địa điểm.',
+      'Mọi hạng mục tuỳ chọn đều có cột cách làm phiên bản không tốn tiền — thiếu tiền không phải lý do hoãn.'
+    ]}
+  ]},
+
+'sk-do': { q: 'nghiem_thu', k: 'Sự kiện', t: 'Đo một sự kiện, và mười bốn rủi ro',
+  p: 'Câu hỏi cuối cùng của mọi sự kiện: có đáng tổ chức lại không. Bảng dưới trả lời bằng ngưỡng, không bằng cảm nhận.',
+  khoi: [
+    { k: 'bang', cot: ['Chỉ số', 'Đo bằng gì', 'Ngưỡng đáng làm lại', 'Ngưỡng nên bỏ'], tu: 'SK_DO_B' },
+    { k: 'van', t: 'Chỉ số đầu bảng là **tỉ lệ ghế tổ chức do học sinh giữ** — đếm trên bảng phân ban. Một sự kiện Gen Việt mà người lớn giữ hầu hết ghế thì dù thành công đến mấy cũng đã trượt khỏi mục đích của nó.' },
+    { k: 'muc', t: 'Mười bốn rủi ro sự kiện' },
+    { k: 'rui', tu: 'SK_RUI_RO' },
+    { k: 'muc', t: 'Hai mươi luật tổ chức sự kiện' },
+    { k: 'luat', tu: 'SK_LUAT' }
   ]}
 
 };
@@ -3051,6 +3309,14 @@ GV.TU = {
     { t: 'THAM CHIẾU', n: 'Tài liệu của tổ chức khác — hiện có mô hình chi hội BNI.',
       vi: 'KHÔNG kê khai là tác phẩm của Học viện. Chỉ phần đối chiếu và bình luận về nó là sáng tạo riêng.' }
   ],
+
+  /* nhóm 47 · cắt dòng tiêu đề nằm trong dữ liệu */
+  SK_DO_B: GV.SK_DO.slice(1),
+
+  /* nhóm 46 · cắt dòng tiêu đề nằm trong dữ liệu */
+  DL_BAO_CAO_B: GV.DL_BAO_CAO.slice(1),
+  DL_CHI_SO_B: GV.DL_CHI_SO.slice(1),
+  DL_BIEU_MAU_B: GV.DL_BIEU_MAU_DO.slice(1),
 
   /* nhóm 34 · đề án — cắt dòng tiêu đề nằm trong dữ liệu */
   DA_CAN_CU_B: GV.DA_CAN_CU.slice(1),

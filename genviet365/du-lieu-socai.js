@@ -194,6 +194,22 @@
     { t: 'Mười hai kiểu mắc kẹt', so: 12, kho: 'LT_MAC_KET' },
     { t: 'Sáu lễ chuyển bậc', so: 6, kho: 'LT_CHUYEN_BAC' },
     { t: 'Mười bảy luật đi lộ trình', so: 17, kho: 'LT_LUAT' },
+    { t: 'Mười hai tổ mũi nhọn', so: 12, kho: 'CH_TO_MUI_NHON' },
+    { t: 'Mười tám nhịp của vòng bảy ngày', so: 18, kho: 'CH_VONG_TUAN' },
+    { t: 'Hai mươi điều minh bạch tiền', so: 20, kho: 'CH_MINH_BACH' },
+    { t: 'Mười bốn dấu hiệu chi hội đang hỏng', so: 14, kho: 'CH_HONG' },
+    { t: 'Ba mươi sáu câu phỏng vấn', so: 36, kho: 'NG_CAU_HOI' },
+    { t: 'Sáu kịch bản phản hồi sau dự giờ', so: 6, kho: 'NG_PHAN_HOI' },
+    { t: 'Mười tám điều ranh giới nghề', so: 18, kho: 'NG_RANH_GIOI' },
+    { t: 'Mười hai dấu hiệu một Coach đang xuống', so: 12, kho: 'NG_HONG' },
+    { t: 'Mười bốn cách một con số bị làm hỏng', so: 14, kho: 'DL_SO_XAU' },
+    { t: 'Hai mươi quy tắc dữ liệu trẻ em', so: 20, kho: 'DL_DU_LIEU_TRE' },
+    { t: 'Hai mươi bốn mốc nhịp đo cả năm', so: 24, kho: 'DL_NHIP' },
+    { t: 'Hai mươi luật đo lường', so: 20, kho: 'DL_LUAT' },
+    { t: 'Sáu sự kiện trụ cột', so: 6, kho: 'SK_SAU_TRU' },
+    { t: 'Mười hai ban tổ chức sự kiện', so: 12, kho: 'SK_BAN' },
+    { t: 'Mười bốn rủi ro sự kiện', so: 14, kho: 'SK_RUI_RO' },
+    { t: 'Hai mươi luật tổ chức sự kiện', so: 20, kho: 'SK_LUAT' },
     { t: 'Mười bốn cơ chế tạo chiều sâu học từ mô hình chi hội', so: 14, kho: 'BN_TANG_SAU' },
     { t: 'Hai mươi trục đối chiếu', so: 20, kho: 'BN_DOI_CHIEU' },
     { t: 'Mười hai thứ không được bê sang môi trường học đường', so: 12, kho: 'BN_KHONG_BE' },
@@ -270,6 +286,14 @@
     ['du-lieu-hoatdong.js', 'BIÊN SOẠN', 'Bốn mươi dự án phụng sự, quy trình mười bước, đối tác cộng đồng, đo tác động, an toàn ra ngoài trong ngày', 'chờ Hội đồng Chuyên môn duyệt'],
 
     ['du-lieu-lotrinh.js', 'BIÊN SOẠN', 'Mười lăm giai đoạn chi tiết, hộ chiếu từng trang, sáu lễ chuyển bậc, mười hai kiểu mắc kẹt, vai gia đình theo bậc, mười bốn hướng nghề', 'chờ Hội đồng Chuyên môn duyệt'],
+
+    ['du-lieu-chihoi.js', 'BIÊN SOẠN', 'Mở chi hội từ số không, vòng bảy ngày, mười hai tổ mũi nhọn, luân phiên ghế, mười chín khoản tài chính và hai mươi điều minh bạch tiền', 'chờ Hội đồng Chuyên môn duyệt; phần tài chính cần kế toán và nhà trường rà lại'],
+
+    ['du-lieu-nghe.js', 'BIÊN SOẠN', 'Tuyển Coach mười bước, ba mươi sáu câu phỏng vấn, phiếu dự giờ trăm điểm, sáu kịch bản phản hồi, lộ trình nghề, ranh giới nghề', 'chờ Hội đồng Chuyên môn duyệt; phần xác minh lý lịch cần rà theo quy định hiện hành'],
+
+    ['du-lieu-dolo.js', 'BIÊN SOẠN', 'Ba mươi lăm báo cáo, bốn mươi tám chỉ số có công thức và hai ngưỡng, hai mươi hai biểu mẫu đo, mười bốn cách một con số bị làm hỏng, hai mươi quy tắc dữ liệu trẻ em', 'chờ Hội đồng Chuyên môn duyệt'],
+
+    ['du-lieu-sukien.js', 'BIÊN SOẠN', 'Thiết kế sáu sự kiện trụ cột, khung D-60 tới D+14, mười hai ban tổ chức, kịch bản, mười tám hạng mục ngân sách không ghi tiền', 'chờ Hội đồng Chuyên môn duyệt'],
 
     ['du-lieu-bni.js', 'THAM CHIẾU', 'Mô hình chi hội — tài liệu của BNI Global, LLC. Học cơ chế, không dùng lại thương hiệu hay văn bản', 'không kê khai là tác phẩm của Học viện']
   ];
