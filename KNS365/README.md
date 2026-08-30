@@ -26,7 +26,7 @@
 
 ---
 
-## 2. Bản đồ hệ sinh thái (16 phân hệ)
+## 2. Bản đồ hệ sinh thái (17 phân hệ)
 
 ```
                          ┌──────────────────────────────┐
@@ -90,6 +90,22 @@
      │ chân · trải nghiệm đội ngũ        │ lệch · báo cáo tác động 3 cấp    │
      └───────────────────────────────────┴──────────────────────────────────┘
               ▲  biến chương trình thành DỊCH VỤ       ▲  biến lời hứa thành BẰNG CHỨNG
+                                     │
+                                     ▼
+     ┌───────────────────────────────────┬──────────────────────────────────┐
+     │ SEO & HIỆN DIỆN SỐ (15)           │ KHO TÌNH HUỐNG & CÔNG CỤ (16)    │
+     │ E-E-A-T · 5 cụm ý định tìm kiếm · │ 100 tình huống sư phạm · bộ công │
+     │ 6 mẫu JSON-LD · kiến trúc URL ·   │ cụ lõi Gen Việt · 10 Cấp Độ chi  │
+     │ trang mẫu đăng được ngay          │ tiết · chỉ báo G1–G5 · trụ Di    │
+     │                                   │ sản · 12 phác đồ xử lý chuẩn     │
+     └───────────────────┬───────────────┴──────────────────────────────────┘
+                         ▼
+     ┌──────────────────────────────────────────────────────────────────────┐
+     │ MÔ HÌNH DỊCH VỤ & PHÁT TRIỂN (17)                                    │
+     │ 3 kênh phân phối · 9 gói sản phẩm · điểm hoà vốn theo sĩ số · hồ sơ  │
+     │ chào trường · dự thảo thoả thuận · nhân rộng & chuyển giao 6 bước    │
+     │ ▲  biến hệ tài liệu thành MÔ HÌNH VẬN HÀNH ĐƯỢC                      │
+     └──────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
@@ -115,6 +131,7 @@
 | [BAN-DO-CHUONG-TRINH-288.md](01-CHUONG-TRINH-KHUNG/BAN-DO-CHUONG-TRINH-288.md) | Ma trận tổng 288 chuyên đề, mã hoá, trục xoắn ốc |
 | **[DOI-CHIEU-KHOI-01-VOI-GIAO-AN-THAT.md](01-CHUONG-TRINH-KHUNG/DOI-CHIEU-KHOI-01-VOI-GIAO-AN-THAT.md)** | 🔴 Đối chiếu khối 1 với **giáo án thật của Học viện**: 4 điểm lệch cấu trúc *(thời lượng 35′ vs 180′ · 50 chủ đề vs 24 · 5 nhóm kỹ năng vs 8 mạch · khuôn 3 pha Khám phá–Luyện tập–Vận dụng)* · **29 chủ đề bị bỏ sót** · **3 phương án hợp nhất chờ quyết** |
 | **[PHUONG-AN-HOP-NHAT-24-CUM-180-PHUT.md](01-CHUONG-TRINH-KHUNG/PHUONG-AN-HOP-NHAT-24-CUM-180-PHUT.md)** | ⭐ **PHƯƠNG ÁN ĐÃ CHỐT** — hợp nhất về **24 cụm × 180′ × 2 buổi**. Chìa khoá: **50 ÷ 24 = 2,08** → 24 chính là **cấp CỤM** của 50 bài gốc, **không bỏ bài nào**. Kèm **bản đồ 24 cụm khối 1** đầy đủ, quy tắc gộp, sơ đồ 3 pha gốc nở thành 7 hoạt động GITA, hệ mã mới `Kxx-Nn-zz`, và cách xử lý rủi ro xếp lịch 180′ |
+| **[DOI-CHIEU-KHOI-02.md](01-CHUONG-TRINH-KHUNG/DOI-CHIEU-KHOI-02.md) → [DOI-CHIEU-KHOI-12.md](01-CHUONG-TRINH-KHUNG/DOI-CHIEU-KHOI-12.md)** | ⭐ **11 tệp đối chiếu còn lại** — mỗi khối một tệp: phạm vi đọc được thật *(ghi rõ tệp nào không đọc được và vì sao)* · bảng chương trình gốc nguyên tên bài · **bản đồ 24 cụm** · kiểm đếm · nhận xét chuyên môn. **Phát hiện quan trọng: nguồn có BA định dạng bài khác nhau** — tiểu học 50 bài × 30–35′ *(GỘP 2–3 bài = 1 cụm)* · THCS 16–18 bài × 90′ *(NỞ 90′ → 180′ × 2)* · THPT 9–16 bài × 90–135′ *(TÁCH mạch: 1 bài → 2–3 cụm)* |
 | [KHOI-01.md](01-CHUONG-TRINH-KHUNG/KHOI-01.md) → [KHOI-12.md](01-CHUONG-TRINH-KHUNG/KHOI-12.md) | Đặc tả đầy đủ 24 chuyên đề/khối: mục tiêu GITA, chiến lược, hoạt động đào tạo – thực hành – trải nghiệm, sản phẩm, đánh giá |
 
 ### 📙 02 – GIÁO ÁN & KẾ HOẠCH BÀI GIẢNG
@@ -129,20 +146,27 @@
 | **[GIAO-AN-K09-M6-01.md](02-GIAO-AN-KE-HOACH/GIAO-AN-K09-M6-01.md)** | ⭐ Giáo án hoàn chỉnh · K9 · *Chiến lược thi chuyển cấp* — **G-trội**, Vươn Cành |
 | **[GIAO-AN-K11-M8-01.md](02-GIAO-AN-KE-HOACH/GIAO-AN-K11-M8-01.md)** | ⭐ Giáo án hoàn chỉnh · K11 · *Dự án tác động 3 tháng & đo lường* — **A-trội**, Cất Cánh |
 | **[MAU-GIAO-AN-CUM-K01-N1-01.md](02-GIAO-AN-KE-HOACH/MAU-GIAO-AN-CUM-K01-N1-01.md)** | ⭐⭐ **MẪU CHUẨN CỦA KHUÔN HỢP NHẤT** · `K01-N1-01` *Con là ai — và con đặc biệt thế nào* — hấp thụ nguyên vẹn **2 bài gốc Học viện** (#1 Em giới thiệu bản thân · #5 Tưởng tượng và sáng tạo). Mỗi dòng ghi rõ `[GỐC #n]` hay `[GITA]`, có **ĐIỂM CẮT 90′** dự phòng |
+| **[MAU-GIAO-AN-CUM-K01-N3-02.md](02-GIAO-AN-KE-HOACH/MAU-GIAO-AN-CUM-K01-N3-02.md)** | ⚠️ **MẪU CHỦ ĐỀ NHẠY CẢM** · `K01-N3-02` *Cơ thể con là của con* — hấp thụ #26 *Thay đồ nơi công cộng* · #37 *Những thói quen dẫn tới hành vi xâm hại*. Có **10 quy tắc an toàn bắt buộc**, chuỗi cảm xúc cố định *(vui → nghiêm túc → tập trung → tự hào → an toàn)*, và câu HLV **phải nói hai lần**: *"KHÔNG. Lỗi luôn thuộc về người lớn làm sai. Trẻ con không bao giờ có lỗi trong chuyện này."* |
+| **[MAU-GIAO-AN-CUM-K01-N4-05.md](02-GIAO-AN-KE-HOACH/MAU-GIAO-AN-CUM-K01-N4-05.md)** | ⭐ **MẪU BẢN SẮC VIỆT** · `K01-N4-05` *Tết Việt của con* — hấp thụ #43 *Tục lì xì ngày Tết*. **5 quy tắc bắt buộc** *(cấm hỏi số tiền lì xì · tiền mô hình bằng nhau cho mọi trẻ · phương án cho trẻ không đón Tết cùng bố mẹ …)* · ngân hàng câu chúc · ba hộp Giữ–Dùng–Cho · 8 thẻ tình huống Tết *(thẻ 8 nối thẳng chuyên đề an toàn)* |
 
 ### 📕 03 – KỊCH BẢN ĐÀO TẠO CHI TIẾT
 | Tệp | Nội dung |
 |---|---|
 | [MAU-KICH-BAN-180-PHUT.md](03-KICH-BAN-DAO-TAO/MAU-KICH-BAN-180-PHUT.md) | Khung kịch bản từng phút, lời thoại mẫu, tín hiệu điều phối |
 | **[KICH-BAN-K01-M2-01.md](03-KICH-BAN-DAO-TAO/KICH-BAN-K01-M2-01.md)** | ⭐ Kịch bản từng phút hoàn chỉnh · K1 · *Vùng riêng tư & Quy tắc 5 ngón tay* — lời dẫn gần nguyên văn, bảng kiểm trước giờ, quy trình 5 bước khi trẻ hé lộ |
-| `KICH-BAN-K**-M*-**.md` | Kịch bản chi tiết bổ sung theo giai đoạn (Tiểu học – THCS – THPT) |
+| **[KICH-BAN-CUM-K01-N1-01.md](03-KICH-BAN-DAO-TAO/KICH-BAN-CUM-K01-N1-01.md)** | ⭐ Kịch bản cụm 180′ × 2 · K1 · *Con là ai — và con đặc biệt thế nào* — Khởi Mầm 🌱 |
+| **[KICH-BAN-CUM-K04-N1-04.md](03-KICH-BAN-DAO-TAO/KICH-BAN-CUM-K04-N1-04.md)** | ⭐ Kịch bản cụm 180′ × 2 · K4 · *Phương pháp học hiệu quả* — Bén Rễ 🌿 |
+| **[KICH-BAN-CUM-K07-N2-03.md](03-KICH-BAN-DAO-TAO/KICH-BAN-CUM-K07-N2-03.md)** | ⭐ Kịch bản cụm 180′ × 2 · K7 · *Nói trước đám đông & sức mạnh lời nói* — Vươn Cành 🌳 |
 
 ### 📒 04 → 07 – CÁC KHO HỌC LIỆU
 | Tệp | Nội dung |
 |---|---|
 | [KHO-TRO-CHOI-TEAMWORK-160.md](04-KHO-HOAT-DONG-TRO-CHOI/KHO-TRO-CHOI-TEAMWORK-160.md) | 160 trò chơi & hoạt động nhóm phân theo pha GITA, độ tuổi, mục tiêu |
+| **[40-TRO-CHOI-VIET-DAY-DU.md](04-KHO-HOAT-DONG-TRO-CHOI/40-TRO-CHOI-VIET-DAY-DU.md)** | ⭐⭐ **40 trò viết đầy đủ, dùng được ngay tại lớp** — 8 trò mỗi pha `E·G·I·T·A`. Mỗi trò có **mục tiêu vi kỹ năng · cách chơi có lời hô mẫu HLV · 4 bậc L1–L4 có dấu hiệu đạt · 3 câu hỏi bóc tách · lưu ý an toàn thể chất + tâm lý · 4–5 phương án dự phòng**. Kèm công thức chọn 5 trò cho một cụm 180′ |
 | [KHO-CONG-CU-DUNG-CU.md](05-KHO-CONG-CU-DUNG-CU/KHO-CONG-CU-DUNG-CU.md) | Danh mục vật tư, bộ kit lớp học, công cụ tư duy, công nghệ, dự toán |
+| **[40-CONG-CU-TU-DUY-CHI-TIET.md](05-KHO-CONG-CU-DUNG-CU/40-CONG-CU-TU-DUY-CHI-TIET.md)** | ⭐⭐ **40 công cụ tư duy viết đầy đủ** — mỗi công cụ có **dùng khi / không dùng khi · các bước · một VÍ DỤ ĐÃ ĐIỀN đúng khối · dấu hiệu HLV chấm là dùng đúng · ba lỗi hay gặp và cách sửa · chỗ nối vào hệ**. Kèm **lộ trình cài công cụ theo khối 1→12** *(khối 9 và 10 cố ý không cài mới — hai năm đưa công cụ đã có lên bậc L3–L4)* |
 | [KHO-PHIEU-THUC-HANH.md](06-KHO-PHIEU-THUC-HANH/KHO-PHIEU-THUC-HANH.md) | 60 mẫu phiếu thực hành theo cấp học |
+| **[BO-PHIEU-MAU-DAY-DU.md](06-KHO-PHIEU-THUC-HANH/BO-PHIEU-MAU-DAY-DU.md)** | ⭐ **20 phiếu mẫu vẽ đầy đủ** — bản vẽ ASCII in ra dùng được ngay · 5 nhóm kỹ năng × 4 phiếu · đúng chuẩn phiếu 5 lớp chiều sâu |
 | **[BO-RUBRIC-CHI-TIET-19-HO.md](07-KHO-PHIEU-DANH-GIA/BO-RUBRIC-CHI-TIET-19-HO.md)** | ⭐ **19 rubric gốc viết đầy đủ 4 mức** — mỗi họ năng lực một cái · chuẩn viết rubric GITA · quy đổi TT27/2020 & TT22/2021 · quy trình dùng khuôn để viết 269 rubric còn lại |
 | [KHO-PHIEU-DANH-GIA.md](07-KHO-PHIEU-DANH-GIA/KHO-PHIEU-DANH-GIA.md) | Rubric, phiếu quan sát, tự đánh giá, đánh giá đồng đẳng, phiếu phụ huynh, báo cáo tiến bộ |
 
@@ -159,6 +183,7 @@
 | [02-CHUAN-PHIEU-KNS-5-PHAN.md](10-GIAO-TRINH-ONLINE/02-CHUAN-PHIEU-KNS-5-PHAN.md) | Chuẩn **phiếu kỹ năng sống 5 lớp chiều sâu**: Nhận biết → Thấu hiểu → Thực hành → Soi chiếu → Chuyển hoá |
 | [03-MAU-CHUYEN-DE-ONLINE-7-PHAN.md](10-GIAO-TRINH-ONLINE/03-MAU-CHUYEN-DE-ONLINE-7-PHAN.md) | Mẫu biên soạn để số hoá bất kỳ chuyên đề nào trong 288 chuyên đề |
 | [04-VI-DU-CHUYEN-DE-ONLINE-HOAN-CHINH.md](10-GIAO-TRINH-ONLINE/04-VI-DU-CHUYEN-DE-ONLINE-HOAN-CHINH.md) | Ví dụ mẫu hoàn chỉnh: `K06-M1-02 · Bảng Đòn Bẩy 20/80` – đủ 7 phần, kịch bản audio 16 phút |
+| **[05-BO-ONLINE-KHOI-01-SAU-CUM.md](10-GIAO-TRINH-ONLINE/05-BO-ONLINE-KHOI-01-SAU-CUM.md)** | ⭐⭐ **BỘ THÍ ĐIỂM HOÀN CHỈNH ĐẦU TIÊN** — 6 cụm khối 1 × 7 phần, **chuyển thẳng sang khâu sản xuất được**: 6 video mở có lời thoại thật · 24 video kiến thức · 6 infographic · 6 phiếu KNS 5 lớp **bản in ASCII 3 trang A4** · 60 câu trắc nghiệm tình huống · 6 rubric · **6 audio ≈81 phút kèm bản chép lời nguyên văn**. Có **4 câu/thẻ an toàn với cơ chế chặn** *(chọn sai thì không cho qua và báo tài khoản phụ huynh)* |
 
 ### 🔐 11 – PHÂN QUYỀN & BẢO MẬT *(đồng bộ chuẩn GITA365)*
 | Tệp | Nội dung |
@@ -174,6 +199,7 @@
 | [01-HE-NHAN-DIEN-KNSGITA.md](12-NHAN-DIEN-THUONG-HIEU/01-HE-NHAN-DIEN-KNSGITA.md) | Kiến trúc thương hiệu · đọc logo theo mô thức GITA · 8 biến thể logo · vùng an toàn · **12 lỗi cấm** · bảng màu lõi + **màu 4 chữ GITA** + màu chức năng (8 mạch · 4 giai đoạn · 10 Cấp Độ · thang 6 bậc · D1–D4) · hệ chữ tiếng Việt · hệ biểu tượng · giọng điệu · hệ mã tài liệu |
 | [02-CHUAN-TRINH-BAY-TAI-LIEU.md](12-NHAN-DIEN-THUONG-HIEU/02-CHUAN-TRINH-BAY-TAI-LIEU.md) | Khổ & lề · lưới 6 cột · **gáy GITA 4 màu** · đầu–chân trang · cấp tiêu đề · bảng · vùng học sinh viết · hình ảnh · in ấn · tệp số · **checklist 20 mục trước khi phát hành** |
 | [03-BO-MAU-TAI-LIEU.md](12-NHAN-DIEN-THUONG-HIEU/03-BO-MAU-TAI-LIEU.md) | **12 mẫu dựng sẵn**: bìa bộ · bìa giáo án · trang tiến trình · kịch bản · phiếu KNS 5 lớp · rubric · `PSM` · Hộ chiếu GITA · chứng nhận Cấp Độ · báo cáo phụ huynh · thẻ bỏ túi HLV · slide |
+| [04-NHAN-DIEN-SO-VA-DONG-BO-GITA365.md](12-NHAN-DIEN-THUONG-HIEU/04-NHAN-DIEN-SO-VA-DONG-BO-GITA365.md) | 8 quy tắc đồng bộ KNSGITA ↔ GITA365 · thanh tiến trình 7 phần · giao diện theo cấp học · video · audio · huy hiệu số · thông báo · mạng xã hội · **bộ tệp nguồn cần sản xuất** · bảo vệ thương hiệu |
 | **[SO-TAY-NHAN-DIEN-KNSGITA.html](12-NHAN-DIEN-THUONG-HIEU/SO-TAY-NHAN-DIEN-KNSGITA.html)** | 🎨 **Sổ tay nhận diện bản trực quan** — mở bằng trình duyệt: xem được màu thật, chữ thật, thẻ pha, hộp chú ý và 3 mẫu tài liệu dựng thu nhỏ |
 
 ### 💛 13 – TRẢI NGHIỆM KHÁCH HÀNG & CHUẨN DỊCH VỤ
@@ -188,7 +214,6 @@
 |---|---|
 | [01-KHUNG-DO-LUONG-VA-BO-CHI-SO.md](14-DO-LUONG-TAC-DONG/01-KHUNG-DO-LUONG-VA-BO-CHI-SO.md) | **4 tầng bằng chứng** *(phản ứng → học được → **chuyển giao** → tác động)* · thiết kế đo nền–giữa–cuối · **3 bài đo hành vi 12 phút** · **hiệu chuẩn người chấm ≥80%** · quy tắc trung thực về nhân quả · **5 thiên lệch và cách chống** · **18 chỉ số lõi** · lịch đo cả năm · 5 quy tắc đạo đức đo lường |
 | [02-BO-BAO-CAO-TAC-DONG-3-CAP.md](14-DO-LUONG-TAC-DONG/02-BO-BAO-CAO-TAC-DONG-3-CAP.md) | 8 quy tắc trình bày số liệu trung thực · **báo cáo phụ huynh 1 trang** *(mở bằng câu bố mẹ nói tháng 9)* · **báo cáo nhà trường 4 trang** *(có trang đối sánh CT GDPT 2018 dùng lại được)* · **báo cáo hội đồng 8 trang** *(có trang tự nêu hạn chế)* · ngân hàng câu nói về số liệu |
-| [04-NHAN-DIEN-SO-VA-DONG-BO-GITA365.md](12-NHAN-DIEN-THUONG-HIEU/04-NHAN-DIEN-SO-VA-DONG-BO-GITA365.md) | 8 quy tắc đồng bộ KNSGITA ↔ GITA365 · thanh tiến trình 7 phần · giao diện theo cấp học · video · audio · huy hiệu số · thông báo · mạng xã hội · **bộ tệp nguồn cần sản xuất** · bảo vệ thương hiệu |
 
 
 ### 🔍 15 – SEO & HIỆN DIỆN SỐ
@@ -200,16 +225,37 @@
 | **[04-KE-HOACH-TRIEN-KHAI-VA-DAC-TA-TRANG.md](15-SEO-VA-HIEN-DIEN-SO/04-KE-HOACH-TRIEN-KHAI-VA-DAC-TA-TRANG.md)** | ⭐ **BỘ TRIỂN KHAI** — kiến trúc URL đầy đủ · đặc tả chuẩn từng trang *(title 50–60 ký tự, meta 140–158, dàn H2, độ dài, schema)* · đặc tả 6 trang trụ · **thẩm quyền thực thể & Báo cáo tác động thường niên — đòn bẩy mạnh nhất** · quy tắc liên kết nội bộ · **lịch 12 tháng** · **15 tiêu chí nghiệm thu trước khi đăng** · bảng nơi thực sự đạt được số 1 |
 | **[05-TRANG-MAU-CHUAN-SEO.md](15-SEO-VA-HIEN-DIEN-SO/05-TRANG-MAU-CHUAN-SEO.md)** | ⭐⭐ **TRANG MẪU VIẾT SẴN, ĐĂNG ĐƯỢC NGAY** — `/tai-lieu/rubric-danh-gia-ky-nang-song/`: bảng đặc tả · thẻ tiêu đề & meta đếm đúng ký tự · **toàn văn ~1.700 từ** · JSON-LD `@graph` 3 khối đã kiểm tra hợp lệ · bảng nghiệm thu 15 ô. Dùng làm khuôn cho 29 trang còn lại |
 
+### 🧭 16 – KHO TÌNH HUỐNG & BỘ CÔNG CỤ LÕI GEN VIỆT
+| Tệp | Nội dung |
+|---|---|
+| **[01-KHO-100-TINH-HUONG-SU-PHAM.md](16-KHO-TINH-HUONG-VA-CONG-CU/01-KHO-100-TINH-HUONG-SU-PHAM.md)** | ⭐ **100 tình huống** chia 4 nhóm × 25, 3 mức 🟢🟡🔴. **Điểm khác biệt: cột thứ ba "Điều thực sự đang xảy ra"** — thứ HLV mới vào nghề không nhìn ra. 4 tình huống viết trọn vẹn làm mẫu + rubric `R-THS-01` có tiêu chí phủ quyết |
+| **[02-BO-CONG-CU-LOI-GEN-VIET.md](16-KHO-TINH-HUONG-VA-CONG-CU/02-BO-CONG-CU-LOI-GEN-VIET.md)** | Bộ câu hỏi **4Q** · khung sinh hoạt chủ nhiệm **3T+1Q** · **Nhật ký Gen Việt 90 ngày** · Hiến chương lớp/CLB · Thoả ước dùng thiết bị |
+| **[03-HE-10-CAP-DO-CHI-TIET.md](16-KHO-TINH-HUONG-VA-CONG-CU/03-HE-10-CAP-DO-CHI-TIET.md)** | ⭐ **Đặc tả đầy đủ Cấp 1 → Cấp 10**: tên cấp · Pin · tiêu chí xét · nhóm năng lực trọng tâm · **10 chương trình huấn luyện cho mỗi cấp** · biểu mẫu xét cấp |
+| **[04-CHI-BAO-G1-G5-VA-RUBRIC-GIAO-VIEN.md](16-KHO-TINH-HUONG-VA-CONG-CU/04-CHI-BAO-G1-G5-VA-RUBRIC-GIAO-VIEN.md)** | Hệ chỉ báo vận hành **G1–G5** · rubric năng lực **M0–M3** cho GVCN · GV bộ môn · HLV · điều phối viên · đối chiếu GITA-QC và 4 bậc HLV |
+| **[05-TRU-DI-SAN-GEN-VIET.md](16-KHO-TINH-HUONG-VA-CONG-CU/05-TRU-DI-SAN-GEN-VIET.md)** | **Trụ 3 — Di sản Ngàn năm văn hiến**: Thư viện Di sản · chương trình **1000 Gương Nhân Tài** · mạng lưới Mentor · Hồ sơ Di sản cá nhân · **quy tắc đạo đức lưu trữ câu chuyện học sinh** |
+| **[06-PHAC-DO-XU-LY-CHUAN.md](16-KHO-TINH-HUONG-VA-CONG-CU/06-PHAC-DO-XU-LY-CHUAN.md)** | 🔴 **12 phác đồ xử lý bắt buộc** — sơ đồ khối · mốc thời gian · điểm quyết định · **người chịu trách nhiệm từng bước** · biểu mẫu · điểm dừng an toàn. Đây là tài liệu HLV phải thuộc trước khi đứng lớp |
+
+### 💼 17 – MÔ HÌNH DỊCH VỤ & PHÁT TRIỂN
+| Tệp | Nội dung |
+|---|---|
+| **[01-KIEN-TRUC-GOI-DICH-VU.md](17-MO-HINH-DICH-VU-VA-PHAT-TRIEN/01-KIEN-TRUC-GOI-DICH-VU.md)** | **3 kênh phân phối · 9 gói sản phẩm** · cấu trúc chi phí · **điểm hoà vốn theo sĩ số** · chính sách hỗ trợ học phí |
+| **[02-HO-SO-CHAO-TRUONG.md](17-MO-HINH-DICH-VU-VA-PHAT-TRIEN/02-HO-SO-CHAO-TRUONG.md)** | Thư ngỏ · hồ sơ năng lực · đề xuất triển khai · **dự thảo thoả thuận** · kịch bản làm việc 30 phút với ban giám hiệu · ma trận **RACI** · điều khoản bắt buộc |
+| **[03-NHAN-RONG-VA-CHUYEN-GIAO.md](17-MO-HINH-DICH-VU-VA-PHAT-TRIEN/03-NHAN-RONG-VA-CHUYEN-GIAO.md)** | **3 giai đoạn nhân rộng** · tiêu chuẩn cơ sở · **quy trình chuyển giao 6 bước** · kiểm định cơ sở · **điều kiện bất khả thương lượng** |
+
 ---
 
 ## 4. Nguyên tắc đọc bộ tài liệu
 
 1. **Đọc theo trục dọc** (một khối): `KHOI-XX.md` → chọn chuyên đề → mở `MAU-GIAO-AN` → `MAU-KICH-BAN` → lấy trò chơi ở kho 04, dụng cụ ở kho 05, phiếu thực hành ở kho 06, phiếu đánh giá ở kho 07.
 2. **Đọc theo trục ngang** (một mạch năng lực xuyên 12 năm): `BAN-DO-CHUONG-TRINH-288.md` → lọc theo mã mạch `M1…M8`.
-3. **Mọi tài liệu đều gắn mã.** Mã chuyên đề dạng `K07-M4-02` = Khối 7 · Mạch 4 (Giao tiếp & Hợp tác) · Chuyên đề thứ 2 của mạch.
+3. **Mọi tài liệu đều gắn mã.** Hệ mã đang dùng **song song hai lớp** trong giai đoạn chuyển đổi:
+   - **`Kxx-Nn-zz`** — hệ mã **chính thức** sau khi hợp nhất với nguồn Học viện. Ví dụ `K01-N2-04` = Khối 1 · **Nhóm kỹ năng 2** *(Giao tiếp xã hội)* · cụm thứ 4. Dùng ở `PHUONG-AN-HOP-NHAT-24-CUM-180-PHUT`, 12 tệp `DOI-CHIEU-KHOI-*`, giáo án cụm, kịch bản cụm và bộ online.
+   - **`Kxx-Myy-zz`** — hệ mã **cũ theo 8 mạch năng lực**. Ví dụ `K07-M4-02` = Khối 7 · Mạch 4 · chuyên đề thứ 2. Còn nằm ở `KHOI-01.md`→`KHOI-12.md` và 6 giáo án đời đầu. **Sẽ được thay dần**; khi hai hệ mâu thuẫn, **`Kxx-Nn-zz` thắng**.
 4. **Chương trình chỉ thành dịch vụ khi có phân hệ 13, và chỉ thành bằng chứng khi có phân hệ 14.** Nội dung hay mà giá trị không đến được nhà thì phụ huynh vẫn rời đi — trong im lặng.
 5. **Mọi ấn phẩm phát hành ra ngoài đều theo phân hệ 12.** Trước khi in hoặc đăng tải, chạy hết **checklist 20 mục** ở `12-NHAN-DIEN-THUONG-HIEU/02`.
-6. **Trước khi triển khai bất kỳ phần nào, đọc phân hệ 11.** Quy định phân quyền và bảo vệ dữ liệu trẻ em ở `11-PHAN-QUYEN-BAO-MAT` **cao hơn** mọi hướng dẫn nghiệp vụ ở các phân hệ khác; khi có mâu thuẫn, áp dụng phân hệ 11.
+6. **Huấn luyện viên phải thuộc phân hệ 16 trước khi đứng lớp.** `16/06` *(12 phác đồ xử lý chuẩn)* và `16/01` *(100 tình huống sư phạm)* là hai tài liệu quyết định việc một buổi học có an toàn hay không — quan trọng hơn mọi nội dung chuyên môn.
+7. **Phân hệ 17 là chỗ hệ tài liệu gặp thực tế kinh doanh.** Đọc `17/01` trước khi báo giá, `17/02` trước khi gặp ban giám hiệu, `17/03` trước khi mở cơ sở thứ hai.
+8. **Trước khi triển khai bất kỳ phần nào, đọc phân hệ 11.** Quy định phân quyền và bảo vệ dữ liệu trẻ em ở `11-PHAN-QUYEN-BAO-MAT` **cao hơn** mọi hướng dẫn nghiệp vụ ở các phân hệ khác; khi có mâu thuẫn, áp dụng phân hệ 11.
 
 ---
 
