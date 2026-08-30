@@ -416,6 +416,15 @@ function groupOf(v){
    leftNav() dựng lại mỗi lần vẽ, nên không cần làm gì thêm. */
 function visible(it){
   if(it.perm && !G.can(it.perm)) return false;
+  /* Điều kiện thứ ba, tuỳ chọn: một số mục chỉ có nghĩa khi DỮ LIỆU của
+     vai ấy tồn tại. Ví dụ "Danh mục đầu việc" — danh mục chỉ có đầu việc
+     cho mười ba vị trí trong hệ, không có cho phụ huynh và học viên. Khoá
+     bằng perm thì không diễn tả được (perm là ngưỡng bậc, mà tập cần khoá
+     là "mọi vai TRỪ hai vai cuối"), còn để nguyên thì phụ huynh bấm vào
+     và nhận một thẻ rỗng.
+     Dựng theo dữ liệu thì tự đúng: ngày nào danh mục có đầu việc cho gia
+     đình, mục tự hiện, không phải sửa bảng quyền. */
+  if(it.hienKhi && typeof G[it.hienKhi] === 'function' && !G[it.hienKhi]()) return false;
   var goi = G.goiCanCho ? G.goiCanCho(it.v) : null;
   if(!goi) return true;
   if(G.KHO && G.KHO.dangNap && G.KHO.dangNap.indexOf(goi) >= 0) return true;
@@ -654,9 +663,16 @@ G.navItem = function(v){
   G.NAV.forEach(function(g){ g.items.forEach(function(x){ if(x.v===v) it = x; }); });
   return it;
 };
+/* Cửa của ĐƯỜNG ĐI, phải khớp với cửa của CỘT TRÁI.
+   Cột trái ẩn mục bằng visible(); nếu allowed() không hỏi cùng những
+   điều kiện ấy thì một màn đã ẩn khỏi cột vẫn mở được bằng cách gõ
+   thẳng địa chỉ — ẩn mà vẫn vào được thì không phải ẩn. */
 G.allowed = function(v){
   var it = G.navItem(v);
-  return !it || !it.perm || G.can(it.perm);
+  if(!it) return true;
+  if(it.perm && !G.can(it.perm)) return false;
+  if(it.hienKhi && typeof G[it.hienKhi] === 'function' && !G[it.hienKhi]()) return false;
+  return true;
 };
 
 function dangMoKho(goi){

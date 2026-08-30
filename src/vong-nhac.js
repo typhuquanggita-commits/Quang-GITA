@@ -112,7 +112,36 @@ function ghiXuong(){
 nap();
 
 function laNha(){ return !!(G.LA_KHACH && G.LA_KHACH()); }
+
+/* Ba vòng, không phải hai.
+
+   G.LA_KHACH() gộp cả cộng tác viên vào nhóm khách (bậc từ 13 trở lên).
+   Đúng cho giọng văn — họ ở ngoài Học viện, nói với họ không nói bằng
+   ngôn ngữ nội bộ. Nhưng SAI cho việc: cộng tác viên có ba đầu việc
+   được giao trong danh mục, còn vòng 'nha' thì nhắc họ "viết bảng tầm
+   nhìn của nhà mình" và "nhìn lại cuối chặng cùng cả nhà" — cộng tác
+   viên không có nhà nào trong hệ thống để làm việc đó. Đẩy sang vòng
+   'nghe' cũng sai nốt: vòng ấy là mở ca, thăm hỏi theo nhịp tầng, nhìn
+   lại chặng cùng gia đình — việc của Coach, không phải của họ.
+
+   Nên vòng thứ ba dựng từ chính danh mục đầu việc của họ, không viết
+   thêm nội dung mới: mã, tên, nhịp và bằng chứng đóng đều lấy nguyên từ
+   G.CV_MUC. Sửa danh mục một chỗ là vòng nhắc đi theo. */
+function vongTuDanhMuc(){
+  if(!G.cvMucCuaToi) return [];
+  return G.cvMucCuaToi().map(function(m){
+    var n = (G.TG_NHIEMVU || []).filter(function(x){ return x.ma === m.nhip; })[0] || {};
+    return { ma: m.ma, cho: 'viec', ten: m.ten, v: 'bang-viec',
+      nhip: n.ten || m.nhip, hanNgay: Math.max(1, Math.round((n.han || 24) / 24)),
+      bangChung: m.xong,
+      sau: m.chuyen ? 'Xong rồi thì việc đi tiếp sang vị trí khác — xem đường đi trên bảng công việc.'
+                    : 'Đóng kèm bằng chứng trên bảng công việc là vào KPI của ngày ấy.' };
+  });
+}
+
 function vieCuaToi(){
+  /* Có đầu việc được giao thì vòng nhắc là chính bảng việc ấy. */
+  if(G.cvVaiCoDauViec && G.cvVaiCoDauViec() && laNha()) return vongTuDanhMuc();
   var cho = laNha() ? 'nha' : 'nghe';
   return G.VIEC_NHAC.filter(function(x){ return x.cho === cho; });
 }

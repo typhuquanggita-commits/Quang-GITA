@@ -55,6 +55,15 @@ var G = window.G || {}; window.G = G;
     return null;
   }
 
+  /* Vai đang đăng nhập có đầu việc trong danh mục không.
+     Cột trái hỏi hàm này trước khi hiện "Bảng công việc" và "Danh mục
+     đầu việc" — hai màn ấy chỉ có nghĩa với người CÓ việc được giao.
+     Gia đình không có việc ai giao; họ có nhịp phải giữ, và nhịp nằm ở
+     màn "Nhịp của nhà mình" cùng màn việc hôm nay. */
+  G.cvVaiCoDauViec = function () {
+    return G.cvMucCuaToi().length > 0;
+  };
+
   /* Đầu việc của vai đang đăng nhập */
   G.cvMucCuaToi = function (vai) {
     var v = vai || (G.S.roleObj && G.S.roleObj.id);
@@ -218,9 +227,34 @@ var G = window.G || {}; window.G = G;
     return { ngay: d, tinh: true, pt: pt, mauSo: mauSo, tuSo: tuSo, tru: tru, chiTiet: chiTiet };
   };
 
+  /* ═══════════ HỒ SƠ KPI CỦA CẤP ═══════════
+     Cùng công thức cho mọi cấp; chỉ đơn vị đo và sàn dữ liệu đổi theo
+     nhịp việc của cấp ấy. Xem lý do đầy đủ ở kho-goc/data.cong-viec.js. */
+  G.CV_SAN_NGAY_THANG = 10;      /* dự phòng khi chưa nạp được hồ sơ cấp */
+  G.cvCapCuaToi = function (vai) {
+    var v = vai || (G.S.roleObj && G.S.roleObj.id);
+    var ds = G.CV_KPI_CAP || [];
+    for (var i = 0; i < ds.length; i++) if (ds[i].vai.indexOf(v) >= 0) return ds[i];
+    return null;
+  };
+
+  /* Số lần đo mà danh mục của một cấp sinh ra trong một tháng. Dùng để
+     bộ kiểm đối chiếu với sàn: sàn cao hơn con số này là một cái sàn
+     không ai bước qua được, và cấp ấy vĩnh viễn không có KPI. */
+  G.cvLanDoMotThang = function (vai) {
+    var han = {};
+    (G.TG_NHIEMVU || []).forEach(function (x) { han[x.ma] = x.han; });
+    var ms = G.cvMucCuaToi(vai);
+    var cap = G.cvCapCuaToi(vai);
+    if (cap && cap.donVi === 'việc')
+      return ms.reduce(function (a, m) { return a + Math.min(30, 720 / (han[m.nhip] || 24)); }, 0);
+    /* Đơn vị NGÀY: nhiều việc cùng rơi vào một ngày chỉ tính một ngày */
+    var lan = ms.reduce(function (a, m) { return a + Math.min(30, 720 / (han[m.nhip] || 24)); }, 0);
+    return Math.min(30, lan);
+  };
+
   /* ═══════════ KPI THÁNG ═══════════
-     Trung bình các ngày CÓ TÍNH. Dưới sàn thì không ra số. */
-  G.CV_SAN_NGAY_THANG = 10;
+     Trung bình các ngày CÓ TÍNH. Dưới sàn của CẤP thì không ra số. */
   G.cvKpiThang = function (thang, vai) {
     var th = thang || thangCua(Date.now());
     var ds = G.cvViecCuaToi(vai), ngays = {};
@@ -233,11 +267,20 @@ var G = window.G || {}; window.G = G;
     });
     var ds2 = Object.keys(ngays).sort().map(function (d) { return G.cvKpiNgay(d, vai); })
       .filter(function (x) { return x.tinh; });
-    if (ds2.length < G.CV_SAN_NGAY_THANG)
-      return { thang: th, du: false, soNgay: ds2.length, san: G.CV_SAN_NGAY_THANG,
-        pt: null, hang: null, ngay: ds2 };
+    var cap = G.cvCapCuaToi(vai);
+    var san = cap ? cap.san : G.CV_SAN_NGAY_THANG;
+    /* Cấp quyết định đếm theo SỐ VIỆC đến hạn, không theo số ngày: việc
+       của họ tính bằng tuần và tháng, mỗi tháng chỉ sinh ra năm sáu lần
+       đo. Đếm theo ngày thì họ không bao giờ chạm sàn nào cả. */
+    var soDo = (cap && cap.donVi === 'việc')
+      ? ds.filter(function (v) { return thangCua(v.hanLuc) === th; }).length
+      : ds2.length;
+    if (soDo < san)
+      return { thang: th, du: false, soNgay: ds2.length, soDo: soDo, san: san,
+        cap: cap, pt: null, hang: null, ngay: ds2 };
     var pt = Math.round(ds2.reduce(function (a, x) { return a + x.pt; }, 0) / ds2.length);
-    return { thang: th, du: true, soNgay: ds2.length, pt: pt, hang: G.cvHang(pt), ngay: ds2 };
+    return { thang: th, du: true, soNgay: ds2.length, soDo: soDo, san: san, cap: cap,
+      pt: pt, hang: G.cvHang(pt), ngay: ds2 };
   };
 
   G.cvHang = function (pt) {

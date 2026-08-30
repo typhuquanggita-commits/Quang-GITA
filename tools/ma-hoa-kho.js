@@ -64,6 +64,7 @@ const NEN = ['VANHANH', 'CHUYENDICH', 'CHANDUNG', 'LOTRINH', 'FAMILIES', 'TEAM',
      gia đình (phần CV_KH_*). Danh mục đầu việc tự lọc theo vai ngay trên
      màn hình, nên để ở nền không mở thêm gì cho ai. */
   'CV_TRANG', 'CV_MUC', 'CV_LUAT', 'CV_HANG', 'CV_KH_NGAY', 'CV_KH_TANG',
+  'CV_KPI_CAP', 'CV_KPI_CAP_LUAT',
   'NK_NHIP', 'NK_O', 'THI_VIET', 'THI_LUAT',
   /* Chuẩn thời gian, chuẩn hoàn thành, thang thưởng và phạt: mọi vai đều
      phải đọc được, vì luật mà không ai đọc được thì không phải luật. */
@@ -321,7 +322,24 @@ const MO_RA = [
      Đây không phải tài sản nghề: nó là danh sách việc mà chính gia đình
      phải làm, viết bằng ngôn ngữ gia đình. Giấu nó đi là giấu đúng phần
      mình đang bảo người ta làm. */
-  'TODAY'
+  'TODAY',
+  /* Bốn trạng thái việc, luật chấm KPI, bốn hạng tháng, và toàn bộ phần
+     KPI của gia đình. Đây là LUẬT CHƠI, không phải bí quyết: một người
+     đang cân nhắc vào làm, và một gia đình đang cân nhắc tham gia, đều
+     phải đọc được cách mình sẽ bị đo TRƯỚC KHI quyết. Giấu cách đo rồi
+     mới đo là cách chắc chắn để không ai tin con số.
+
+     Danh mục đầu việc CV_MUC thì khác — nó xuống dưới ở dạng rút. */
+  'CV_TRANG', 'CV_LUAT', 'CV_HANG', 'CV_KH_NGAY', 'CV_KH_TANG', 'CV_KPI_CAP', 'CV_KPI_CAP_LUAT',
+  /* Chuẩn thời hạn và thang thưởng phạt. Máy chấm công việc đọc hạn giờ
+     từ TG_NHIEMVU; thiếu nó thì nhipCua() trả undefined và MỌI việc rơi
+     về hạn mặc định 24 giờ — một việc tháng và một việc ngày cùng đến
+     hạn vào mai. Bảng công việc trên bản xem thử khi ấy chạy được nhưng
+     chạy sai, và sai lặng lẽ.
+
+     Cùng lý do với CV_LUAT: đây là cách người ta bị đo, phải đọc được
+     trước khi bị đo. */
+  'TG_NHIEMVU', 'TG_THUONG', 'TG_PHAT'
   /* SOAT_* KHÔNG nằm ở đây. Chuẩn soát liệt kê tên mọi kho nội bộ, trường
      bắt buộc của từng kho và số bản ghi phải có — đưa vào gói mẫu công khai
      là vẽ sẵn bản đồ kho cho người chưa được cấp phép. Nó ở gói NỀN. */
@@ -371,6 +389,25 @@ const mau = {
      năm mươi là 4% — kho câu hỏi vẫn nằm trong gói tầng đã mã hoá.
      soCauThat đi kèm để màn hình nói đúng đây là bản rút, không để
      người xem tưởng bài thật chỉ có sáu câu. */
+  /* Danh mục đầu việc: mở KHUNG, khoá RUỘT.
+     Mở mã · vị trí · nhịp · điểm · tên việc · bước luân chuyển, để ba màn
+     công việc dựng ra được thật — bảng bốn cột chạy, danh mục tích chọn
+     được, KPI chấm được. Khoá phần `mo` (vì sao việc này trước), `xong`
+     (đóng bằng bằng chứng gì) và `lienDoi`: đó mới là chỗ Học viện dạy
+     người mới CÁCH LÀM VIỆC, và là thứ một đối thủ cần.
+
+     Cùng cách đã dùng cho KICHBAN: khung thì mở, lời thì cắt. Vì sao
+     phải mở khung: thiếu CV_MUC thì cả ba màn chỉ dựng ra một thẻ "chưa
+     mở được" 1.4 nghìn ký tự, và người mở bản xem thử kết luận đúng như
+     anh Quang đã kết luận — không nhìn thấy bảng đầu việc nào cả. */
+  CV_MUC: (G.CV_MUC || []).map(m => {
+    const r = { ma: m.ma, vai: m.vai, nhip: m.nhip, diem: m.diem, ten: m.ten,
+      mo: (m.mo || '').slice(0, 80) + '… [cần cấp phép]',
+      xong: '[Cách đóng việc mở khi được cấp phép]' };
+    if (m.chuyen) r.chuyen = m.chuyen;
+    if (m.lienDoi) r.lienDoi = '[Điều khoản liên đới mở khi được cấp phép]';
+    return r;
+  }),
   TEST750: (G.TEST750 || []).filter(b => b.tang === 'T1')
     .map(b => ({ ...b, mau: true, soCauThat: b.cau.length, cau: cauMau(b) }))
 };

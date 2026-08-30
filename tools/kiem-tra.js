@@ -4306,14 +4306,26 @@ const { chromium } = require(PW);
 
         const r42 = await q.evaluate(() => {
           const G = window.G, ra = { mau: !!(G.KHO && G.KHO.cheDoMau), vao: G.S.view,
-            tuong: [], man: 0, khoTong: false, coCoChe: false, oTrong: 0, tuTich: 0, doDuoc: 0 };
+            tuong: [], rong: [], man: 0, khoTong: false, coCoChe: false, oTrong: 0, tuTich: 0, doDuoc: 0 };
+          /* Duyệt đúng tập màn NGƯỜI DÙNG VÀO ĐƯỢC — G.hienTrongCot, cùng
+             hàm cột trái dùng — chứ không phải tập theo quyền vai. Hai
+             tập ấy khác nhau từ v9.4: một mục có thể đủ quyền vai nhưng
+             vẫn ẩn vì dữ liệu của vai ấy không tồn tại. Đo trên tập rộng
+             hơn là bắt lỗi ở màn không ai tới được. */
           G.NAV.forEach(g => g.items.forEach(it => {
-            if (!G.vaiThayMan(G.S.roleObj, it)) return;
+            if (!G.hienTrongCot(it)) return;
             ra.man++;
             if (it.v === 'kho-tong') ra.khoTong = true;
             G.S.view = it.v; G.render();
             const t = document.getElementById('main').innerText;
             if (t.indexOf('PHẦN NÀY CHƯA MỞ') >= 0 || t.indexOf('NGOÀI PHẠM VI') >= 0) ra.tuong.push(it.v);
+            /* Thẻ rỗng của U.empty: màn dựng được, không ném lỗi, không
+               phải tường cấp phép — chỉ là không có dữ liệu để vẽ. Hai
+               lần đã bị đúng lỗi này: G.TODAY thiếu ở gói công khai làm
+               màn nhiệm vụ thành tường, rồi CV_MUC thiếu làm ba màn công
+               việc thành thẻ rỗng 1.4 nghìn ký tự. Cả hai lần bộ kiểm
+               đều xanh, và cả hai lần anh Quang là người phát hiện. */
+            else if (/Chưa mở được|Chưa tải được|chưa có đầu việc/i.test(t)) ra.rong.push(it.v);
             if (it.v === 'ket-noi')
               ra.coCoChe = /kiemBanMoi|hosoAppSaoLuu|sendBeacon|mã băm/.test(t);
             if (it.v === 'kpi-100')
@@ -4349,6 +4361,9 @@ const { chromium } = require(PW);
           r42.doDuoc + ' bước đo được · ' + r42.tuTich + ' bước tự khai');
         bao(!loiQ.length, ten42 + ': không lỗi trang nào trên suốt cổng',
           loiQ.length ? loiQ[0].slice(0, 90) : '0 lỗi');
+        bao(!r42.rong.length,
+          ten42 + ': không màn nào dựng ra THẺ RỖNG "chưa mở được" — tường cấp phép §42 đã bắt, nhưng thẻ rỗng thì không phải tường và vẫn lọt qua',
+          r42.rong.length ? 'rỗng: ' + r42.rong.join(' ') : r42.man + ' màn đều có ruột');
         await q.close();
       }
 
@@ -4704,6 +4719,69 @@ const { chromium } = require(PW);
       r45.tangDu ? r45.nhipPt + '% nhịp → ' + r45.tangPt + '% tầng' : 'chưa dựng được');
     bao(r45.coNguong,
       'KPI tầng rơi vào đúng một trong ba ngưỡng xét phân hạng');
+
+    /* ── Mỗi cấp có KPI của cấp đó ──
+       Sàn dữ liệu ban đầu là 10 ngày cho MỌI cấp. Ước số lần đo mỗi
+       tháng từ chính danh mục thì Giám đốc ra 6 và Phân tích dữ liệu ra
+       5 — hai cấp ấy vĩnh viễn dưới sàn, vĩnh viễn "chưa đủ dữ liệu",
+       vĩnh viễn không có hạng để xét lương thưởng. Không phải vì họ làm
+       ít, mà vì việc của họ tính bằng tuần và tháng còn thước lại tính
+       bằng ngày. */
+    const r46 = await p.evaluate(() => {
+      const G = window.G, ra = { thieuHoSo: [], sanQuaCao: [], khongRaHang: [], hanKhongDoi: false };
+      const giu = G.S.roleObj, giuV = G.S.viec;
+      const D = 86400000, nay = Date.now();
+      (G.ROLES || []).forEach(r => {
+        if (!(r.lv <= 12 || r.id === 'R15')) return;
+        G.S.roleObj = r;
+        if (!G.cvMucCuaToi().length) return;
+        const cap = G.cvCapCuaToi();
+        if (!cap) { ra.thieuHoSo.push(r.id); return; }
+        const lanDo = Math.round(G.cvLanDoMotThang());
+        if (lanDo < cap.san) ra.sanQuaCao.push(r.id + ' sàn ' + cap.san + ' > đo được ' + lanDo);
+        /* dựng đủ một tháng rồi xem cấp ấy có RA HẠNG không */
+        G.S.viec = {};
+        let n = 0;
+        const ms = G.cvMucCuaToi();
+        for (let d = 28; d >= 1 && n < 260; d--) ms.forEach(m => {
+          const han = nay - d * D, id = m.ma + '|' + han;
+          G.S.viec[id] = { id, ma: m.ma, nguoi: r.id, nhanLuc: han - D, hanLuc: han,
+            batDauLuc: han - D / 2, xongLuc: han - 3600000,
+            bangChung: 'Bằng chứng thử đủ dài để qua ngưỡng kiểm.', giaoTu: '', lichSu: [] };
+          n++;
+        });
+        const kt = G.cvKpiThang();
+        if (!kt.du || !kt.hang) ra.khongRaHang.push(r.id);
+      });
+      /* Hạn phải KHÁC nhau theo lớp nhịp — thiếu TG_NHIEMVU thì mọi việc
+         cùng rơi về 24 giờ và bảng chạy được nhưng chạy sai, sai lặng lẽ. */
+      G.S.roleObj = G.roleById('R11'); G.S.viec = {};
+      const mNgay = (G.CV_MUC || []).filter(m => m.nhip === 'NV-NGAY' && m.vai.indexOf('R11') >= 0)[0];
+      const mThang = (G.CV_MUC || []).filter(m => m.nhip === 'NV-THANG' && m.vai.indexOf('R11') >= 0)[0];
+      if (mNgay && mThang) {
+        const a = G.cvNhan(mNgay.ma), b2 = G.cvNhan(mThang.ma);
+        if (a.ok && b2.ok) {
+          const gioA = Math.round((a.viec.hanLuc - a.viec.nhanLuc) / 3600000);
+          const gioB = Math.round((b2.viec.hanLuc - b2.viec.nhanLuc) / 3600000);
+          ra.hanNgay = gioA; ra.hanThang = gioB;
+          ra.hanKhongDoi = gioA === gioB;
+        }
+      }
+      G.S.roleObj = giu; G.S.viec = giuV;
+      return ra;
+    });
+    bao(!r46.thieuHoSo.length,
+      'mọi vị trí CÓ ĐẦU VIỆC đều có hồ sơ KPI của cấp mình — không vị trí nào bị chấm bằng một cái thước không thuộc về nó',
+      r46.thieuHoSo.join(' ') || '13 vị trí đều có cấp');
+    bao(!r46.sanQuaCao.length,
+      'sàn của một cấp không cao hơn số lần đo mà danh mục của cấp ấy sinh ra trong tháng — sàn cao hơn thực tế là cái sàn không ai bước qua được',
+      r46.sanQuaCao.join(' · ') || 'mọi cấp đều bước qua được sàn của mình');
+    bao(!r46.khongRaHang.length,
+      'làm đủ một tháng thì MỌI cấp đều ra được KPI và ra được hạng — trước v9.5, Giám đốc và Phân tích dữ liệu vĩnh viễn dừng ở "chưa đủ dữ liệu"',
+      r46.khongRaHang.join(' ') || 'cả 13 vị trí đều ra hạng');
+    bao(!r46.hanKhongDoi,
+      'hạn của việc ngày và việc tháng KHÁC nhau — thiếu chuẩn thời hạn ở gói công khai thì mọi việc rơi về 24 giờ, và bảng chạy được nhưng chạy sai',
+      r46.hanNgay ? r46.hanNgay + ' giờ so với ' + r46.hanThang + ' giờ' : 'không đo được');
 
     /* ── Không bịa số tiền ── */
     const tienAo = require('fs').readFileSync(

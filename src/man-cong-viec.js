@@ -196,8 +196,12 @@ G.VIEWS = G.VIEWS || {};
   /* ═══════════ KPI CỦA TÔI ═══════════ */
   G.VIEWS['kpi-toi'] = function () {
     if (!G.CV_LUAT) return U.empty('Chưa mở được bảng KPI', 'Luật chấm KPI nằm trong gói nền.');
-    var laKhach = G.LA_KHACH && G.LA_KHACH();
-    return laKhach ? kpiKhach() : kpiDoiNgu();
+    /* Rẽ theo CÓ VIỆC ĐƯỢC GIAO HAY KHÔNG, không rẽ theo "là khách hàng".
+       Cộng tác viên nằm trong nhóm khách theo G.LA_KHACH() nhưng có ba
+       đầu việc trong danh mục và có bảng công việc riêng — rẽ theo
+       LA_KHACH thì họ nhận màn "Nhịp của nhà mình" với dòng "nhà mình
+       không có việc ai giao", trong khi họ đang có việc được giao thật. */
+    return G.cvVaiCoDauViec && G.cvVaiCoDauViec() ? kpiDoiNgu() : kpiKhach();
   };
 
   function kpiDoiNgu() {
@@ -215,17 +219,32 @@ G.VIEWS = G.VIEWS || {};
       U.stat({ k: 'KPI hôm nay', v: homNay.tinh ? homNay.pt + '%' : '—',
         d: homNay.tinh ? homNay.tuSo + '/' + homNay.mauSo + ' điểm' : 'không có việc đến hạn', c: '#185AB4' }) +
       U.stat({ k: 'KPI tháng ' + th.slice(5), v: thang.du ? thang.pt + '%' : '—',
-        d: thang.du ? thang.soNgay + ' ngày được tính' : 'mới ' + thang.soNgay + '/' + thang.san + ' ngày', c: '#0B7350' }) +
+        d: (thang.du ? 'đủ ' : 'mới ') + thang.soDo + '/' + thang.san + ' ' +
+           ((thang.cap && thang.cap.donVi) || 'ngày') + ' được tính', c: '#0B7350' }) +
       U.stat({ k: 'Hạng', v: thang.du && thang.hang ? thang.hang.ma : '—',
         d: thang.du && thang.hang ? thang.hang.ten : 'chưa đủ dữ liệu', c: thang.du && thang.hang ? thang.hang.c : 'var(--ink-4)' }) +
       U.stat({ k: 'Liên đới', v: (congLD > 0 ? '+' : '') + congLD, d: lienDoi.length + ' việc qua tay mình', c: '#5140B4' }) +
       '</div>';
 
+    /* Hồ sơ KPI của CẤP — nói rõ cấp này được đo bằng đơn vị gì và vì sao */
+    var cap = thang.cap;
+    if (cap)
+      o += '<div class="card mb" style="border-color:' + cap.c + '3a">' +
+        '<div class="row wrap mb" style="gap:8px;align-items:center">' + U.dot(cap.c) +
+        '<b style="color:' + cap.c + ';font-size:15px">' + h(cap.ten) + '</b>' +
+        U.chip('đo theo ' + h(cap.donVi), cap.c) + U.chip('sàn ' + cap.san + ' ' + h(cap.donVi)) + '</div>' +
+        '<p class="sm dim mb" style="line-height:1.75"><b>Cấp này nặng nhất ở đâu.</b> ' + h(cap.trong) + '</p>' +
+        '<p class="tiny mb" style="line-height:1.7;color:var(--ink-2)"><b>Vì sao đo bằng ' + h(cap.donVi) +
+        '.</b> ' + h(cap.vi) + '</p>' +
+        '<div class="card pad-sm" style="border-color:' + cap.c + '26">' +
+        '<p class="tiny" style="line-height:1.7">' + h(cap.banGhi) + '</p></div></div>';
+
     if (!thang.du)
       o += '<div class="card mb" style="border-color:var(--alert);background:rgba(251,146,60,.06)">' +
-        '<p class="tiny" style="line-height:1.75;color:var(--ink-2)"><b>Tháng này mới có ' + thang.soNgay +
-        ' ngày được tính, sàn là ' + thang.san + '.</b> Chưa đủ thì KPI tháng ghi "chưa đủ dữ liệu" chứ không ghi ' +
-        'một con số — trung bình của bốn ngày không nói được gì về một tháng, mà một con số thì trông như đã nói.</p></div>';
+        '<p class="tiny" style="line-height:1.75;color:var(--ink-2)"><b>Tháng này mới có ' + thang.soDo + ' ' +
+        h((cap && cap.donVi) || 'ngày') + ' được tính, sàn của cấp này là ' + thang.san + '.</b> ' +
+        'Chưa đủ thì KPI tháng ghi "chưa đủ dữ liệu" chứ không ghi một con số — trung bình của vài lần đo ' +
+        'không nói được gì về một tháng, mà một con số thì trông như đã nói.</p></div>';
 
     /* Bảng ngày trong tháng */
     if (thang.ngay && thang.ngay.length) {
@@ -266,6 +285,21 @@ G.VIEWS = G.VIEWS || {};
       return '<div class="rule"><span class="n">' + x.b + '</span><div class="tx"><b>' + h(x.t) + '</b>' +
         '<p>' + h(x.d) + '</p></div></div>';
     }).join('') + '</div>';
+
+    /* Ba cấp, và luật giữ cho không ai hạ sàn của cấp mình */
+    o += U.sec('BA CẤP — MỖI CẤP MỘT ĐƠN VỊ ĐO',
+      'Công thức giống nhau cho mọi cấp: điểm đóng chia điểm đến hạn. Chỉ đơn vị đo và sàn dữ liệu đổi theo nhịp việc của cấp — không phải vì kỳ vọng khác nhau.');
+    o += '<div class="grid g3 mb">' + (G.CV_KPI_CAP || []).map(function (x) {
+      var dang = cap && cap.ma === x.ma;
+      return '<div class="card pad-sm" style="border-color:' + x.c + (dang ? '66' : '26') + ';' +
+        (dang ? 'background:' + x.c + '0d' : '') + '">' +
+        '<div class="row wrap mb" style="gap:7px">' + U.dot(x.c) +
+        '<b class="sm" style="color:' + x.c + '">' + h(x.ten) + '</b>' +
+        (dang ? U.chip('cấp của tôi', x.c) : '') + '</div>' +
+        '<div class="tiny muted mb">đo theo ' + h(x.donVi) + ' · sàn ' + x.san + '</div>' +
+        '<p class="tiny" style="line-height:1.65">' + h(x.vi) + '</p></div>';
+    }).join('') + '</div>';
+    o += '<div class="card mb">' + U.list(G.CV_KPI_CAP_LUAT || [], 'var(--gita)') + '</div>';
 
     o += U.sec('LUẬT GỘP THÁNG', '');
     o += '<div class="card">' + G.CV_LUAT.thang.map(function (x) {
