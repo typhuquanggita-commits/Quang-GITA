@@ -35,7 +35,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.1',
+  version: '9.2',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -338,6 +338,12 @@ G.TAM_NHIN = [
 ];
 
 /* Sáu chân dung người dùng — lời mời bước vào, hiển thị ở Cổng vào */
+/* Cộng tác viên đổ vào "Bắt đầu ở đây" như phụ huynh và học viên, thay
+   vì vào màn Đại sứ. Lý do: G.VIEWS['bat-dau'] trước v9.2 chỉ có nhánh
+   cho ph · hs · coach · tuvan · admin — không có nhánh ctv, nên cộng
+   tác viên rơi vào nhánh dự phòng và nhận NĂM BƯỚC CỦA PHỤ HUYNH: viết
+   bảng tầm nhìn của nhà mình, chốt bảng chín vai trong nhà. Nay có
+   nhánh riêng, nên cổng này trỏ vào đó. */
 G.PORTALS = {
   admin:{n:'Trung Tâm Điều Hành', ic:'shield', c:'#185AB4', home:'dieu-hanh',
     say:'Anh nhìn thấy toàn bộ trường năng lượng: từng gia đình đang ở đâu, đội ngũ đang giữ lửa thế nào, kho báu vật đang được dùng ra sao.'},
@@ -349,7 +355,7 @@ G.PORTALS = {
     say:'Đây là bản đồ của chính gia đình anh chị. Không ai viết hộ. Hệ thống chỉ giữ chuẩn và soi đường.'},
   hs:{n:'Hành Trình Của Con', ic:'star', c:'#185AB4', home:'bat-dau',
     say:'Đây là hành trình của em. Mỗi ngày em đi thêm một bước, bản đồ này sáng thêm một chỗ.'},
-  ctv:{n:'Vệ Tinh Lan Toả', ic:'share', c:'#BE0E16', home:'dai-su',
+  ctv:{n:'Vệ Tinh Lan Toả', ic:'share', c:'#BE0E16', home:'bat-dau',
     say:'Câu chuyện thật của anh chị là thứ mở được cánh cửa mà không quảng cáo nào mở nổi.'}
 };
 
@@ -474,7 +480,22 @@ G.NAV = [
     {v:'luat-lam-viec',t:'Luật làm việc với gia đình',    h:'Đi qua hệ thống · vi phạm hạ 50% KPI 3 tháng', ic:'shield', perm:'nghe_chung', capMo:'nghe', star:1},
     {v:'ref-gita',    t:'Hệ thống một nhà giới thiệu một nhà', h:'Chân dung Ref · 30s-60s-8p · 16 bước', ic:'share', perm:'nghe_chung', capMo:'nghe', star:1},
     {v:'khach-lon',   t:'Chăm sóc khách hàng lớn',        h:'4 tầng · nhịp chạm · hồ sơ 68 điểm', ic:'crown', perm:'nghe_chung', capMo:'nghe', star:1},
-    {v:'kho-tong',    t:'Kho tổng — toàn cảnh',        h:'9 nhóm · hơn 50 kho · số đếm thật', ic:'vault', capMo:'chung', star:1},
+    /* Kho tổng liệt kê CHÍN NHÓM KHO và 57 kho tư liệu của Học viện, kèm
+       tên từng kho: "220 phác đồ × 5 tầng", "1.000 kịch bản chuyên môn —
+       lời để nói ra miệng, đã thử qua nhiều buổi", "250 tình huống thực
+       chiến", "Ma trận 220 vấn đề × 5 tầng", và cả nhóm K2 tự giới thiệu
+       là "Kho giải pháp cho Tư vấn, Coach — thứ đội ngũ mở ra khi ngồi
+       trước một gia đình đang mắc".
+
+       Nó không mở NỘI DUNG của mấy kho ấy — nhưng nó mở KIẾN TRÚC, và
+       kiến trúc mới là thứ một đối thủ cần. Trước v9.2 màn này không có
+       perm, nên mọi phụ huynh, học viên và cộng tác viên đều cầm được
+       bản đồ tài sản nghề của Học viện.
+
+       Khách hàng không mất gì: màn "Phạm vi của tôi" đã trả lời đúng câu
+       hỏi của họ — mình mở tới đâu, còn gì chưa mở — bằng ngôn ngữ gia
+       đình, không kèm mục lục kho nghề. */
+    {v:'kho-tong',    t:'Kho tổng — toàn cảnh',        h:'9 nhóm · hơn 50 kho · số đếm thật', ic:'vault', perm:'nghe_chung', capMo:'chung', star:1},
     {v:'thu-vien',    t:'Thư viện tài liệu',           h:'Gửi tài liệu lên · kho lớn lên từ đây', ic:'book', capMo:'chung', star:1},
     {v:'minh-chung',  t:'Minh chứng nhiệm vụ',         h:'Nộp ảnh, báo cáo xác nhận đã làm',   ic:'check', capMo:'chung', star:1},
     {v:'kho',         t:'Kho báu vật',                 h:'Toàn cảnh những gì anh chị đang có', ic:'vault', star:1, perm:'nghe_chung', capMo:'nghe'},
@@ -5153,8 +5174,26 @@ G.VIEWS['vinh-danh'] = function(){
     }).join('') + '</div>'+
     '<p class="tiny muted mt2">Ghi nhận không có bằng chứng chỉ là lời khen cho vui — nó gãy ở lần vấp đầu tiên.</p></div>';
 
+  /* Kỳ tích năm đọc G.FAMILIES — kho hồ sơ gia đình, chỉ nạp được khi có
+     khoá. Không có kho thì màn này từng ném lỗi, và ném đúng trên bản
+     xem thử: phụ huynh, học viên và cộng tác viên đều mất một màn DẪN
+     HÀNH ĐỘNG. Nhưng công thức ghi nhận ba bước ở trên KHÔNG cần hồ sơ
+     nhà nào cả — nó dùng được ngay cả khi kho trống. Nên chỗ thiếu dữ
+     liệu chỉ nói là chưa có nhà nào tới mốc, rồi chỉ tiếp việc phải làm,
+     chứ không kéo cả màn xuống theo. */
+  var nhaKT = (G.FAMILIES || []).filter(function(f){ return f.tier >= 3; });
   o += U.sec('KỲ TÍCH NĂM ĐANG CHẠY','Ít nhất một sản phẩm, thành tựu hoặc tác động có bằng chứng');
-  o += '<div class="grid g2">' + G.FAMILIES.filter(function(f){return f.tier>=3;}).map(function(f){
+  if(!nhaKT.length)
+    o += '<div class="card mb" style="border-color:var(--gita-vien-1)">'+
+      '<b class="sm" style="display:block;margin-bottom:6px">Chưa có kỳ tích nào được ghi trên máy này</b>'+
+      '<p class="sm dim" style="line-height:1.75">Kỳ tích năm chỉ hiện khi nhà mình đã qua tầng ba — '+
+      'đó là mốc mà một sản phẩm, một thành tựu hay một tác động đã có bằng chứng để kể lại. '+
+      'Chưa tới mốc thì việc của hôm nay không phải là chờ: mở công thức ba bước ở trên, ghi lại '+
+      'MỘT việc con đã tự làm trong tuần này, kèm ngày giờ. Bản ghi đó là hạt đầu tiên của kỳ tích năm.</p>'+
+      '<div class="row wrap mt" style="gap:8px">'+
+      '<button class="btn ghost sm" data-v="nhiem-vu">'+ic('check')+'Việc của hôm nay</button>'+
+      '<button class="btn ghost sm" data-v="nhat-ky-vi-tri">'+ic('book')+'Ghi vào sổ nhật ký</button></div></div>';
+  o += '<div class="grid g2">' + nhaKT.map(function(f){
     var t = G.tierOf(f.tier);
     return '<div class="card lift" style="border-color:'+t.c+'26">'+
       '<div class="row wrap" style="gap:7px;margin-bottom:8px">'+U.chip(t.code,t.c)+U.chip('Ngày '+f.ngay)+'</div>'+
@@ -5166,7 +5205,7 @@ G.VIEWS['vinh-danh'] = function(){
 
   o += U.sec('GHI NHẬN KHÔNG XẾP HẠNG','Ghi nhận việc đã làm, sắp theo thứ tự chữ cái — không theo thứ hạng');
   o += '<div class="card"><p class="sm dim" style="line-height:1.7">'+
-    h((G.DAISU.vinhDanh && G.DAISU.vinhDanh.cachThuc && G.DAISU.vinhDanh.cachThuc[0]) ||
+    h((G.DAISU && G.DAISU.vinhDanh && G.DAISU.vinhDanh.cachThuc && G.DAISU.vinhDanh.cachThuc[0]) ||
       'Mỗi quý một lần, tổng hợp việc đã làm và đăng một bài ghi nhận, sắp theo thứ tự chữ cái chứ không theo thứ hạng.')+'</p></div>';
   return o;
 };
@@ -5828,22 +5867,65 @@ G.VIEWS = G.VIEWS || {};
 var U = G.U, h = U.h, ic = U.ic;
 
 /* ═══════════════ BẮT ĐẦU Ở ĐÂY ═══════════════ */
+/* ── Bằng chứng cho năm bước đầu ──
+   Trước v9.2 màn này đánh dấu xong bằng G.S.checks['b'+i] — một ô tự
+   tích, không nối với bất cứ dữ liệu nào. Nghĩa là bước "Viết bảng tầm
+   nhìn" tích được khi chưa viết chữ nào, và bước "Đủ bảy tối rồi đọc
+   lại" tích được khi sổ nhật ký trống trơn. Chuỗi dẫn hành động mà đi
+   tiếp bằng lời khai thì nó dẫn đi đâu cũng được.
+
+   Nay bước nào CÓ dấu vết trong máy thì đọc dấu vết ấy, và ô tích của
+   bước đó thành ô chỉ-đọc: hệ thống tự bật khi đủ. Bước nào không có
+   dấu vết nào để đọc — "nhìn tấm bản đồ một lần", "chốt bảng chín vai
+   trong một buổi tối" — thì vẫn là ô tự xác nhận, và màn nói thẳng
+   đấy là lời tự khai chứ không phải phép đo.
+
+   Hàm trả về null nghĩa là "không đo được, dùng ô tự tích". */
+function bcNhatKy(n){
+  return function(){
+    var j = G.S.journal || {}, d = 0;
+    Object.keys(j).forEach(function(k){
+      var v = j[k];
+      if(typeof v === 'string' ? v.trim().length > 2 : !!v) d++;
+    });
+    return { xong: d, can: n, dat: d >= n, do: d + '/' + n + ' tối đã ghi' };
+  };
+}
+function bcTamNhin(){
+  var v = G.S.vision || {}, d = 0;
+  Object.keys(v).forEach(function(k){ if(String(v[k]||'').trim().length > 20) d++; });
+  return { xong: d, can: 1, dat: d >= 1, do: d ? d + ' ô đã viết' : 'chưa có ô nào' };
+}
+function bcBaiTest(n){
+  return function(){
+    var t = G.S.test || {}, d = 0;
+    Object.keys(t).forEach(function(k){ if(t[k] && t[k].xong) d++; });
+    return { xong: d, can: n, dat: d >= n, do: d + '/' + n + ' bài đã chấm' };
+  };
+}
+function bcViecHomNay(){
+  var ds = (G.TODAY || {})[G.myPortal ? G.myPortal() : 'ph'] || [];
+  var d = ds.filter(function(_, i){ return G.S.checks['t' + i]; }).length;
+  return { xong: d, can: ds.length, dat: ds.length > 0 && d >= ds.length,
+           do: d + '/' + ds.length + ' việc hôm nay' };
+}
+
 G.VIEWS['bat-dau'] = function(){
   var p = G.myPortal();
   var buoc = {
     ph:[
       {t:'Nhìn tấm bản đồ một lần',    d:'Năm khoang, chín vai. Chưa cần làm gì cả — chỉ xem nhà mình đang đứng ở khoang nào.', v:'ban-do', p:'5 phút'},
-      {t:'Viết bảng tầm nhìn',          d:'Cả nhà ngồi đủ mặt. Mỗi người viết bằng lời của mình. Không ai viết hộ ai.', v:'tam-nhin', p:'40 phút'},
-      {t:'Ghi ba dòng nhật ký tối nay', d:'Giờ ngồi vào bàn · giờ rời bàn · số lần phải nhắc. Ăn cơm xong là mở sổ.', v:'nhiem-vu', p:'2 phút mỗi tối'},
-      {t:'Đủ bảy tối rồi đọc lại',      d:'Bảy dòng, không cần đẹp. Tìm một tối khác hẳn sáu tối còn lại — đó là đòn bẩy.', v:'dinh-vi', p:'20 phút'},
+      {t:'Viết bảng tầm nhìn',          d:'Cả nhà ngồi đủ mặt. Mỗi người viết bằng lời của mình. Không ai viết hộ ai.', v:'tam-nhin', p:'40 phút', bc:bcTamNhin},
+      {t:'Ghi ba dòng nhật ký tối nay', d:'Giờ ngồi vào bàn · giờ rời bàn · số lần phải nhắc. Ăn cơm xong là mở sổ.', v:'nhat-ky-vi-tri', p:'2 phút mỗi tối', bc:bcNhatKy(1)},
+      {t:'Đủ bảy tối rồi đọc lại',      d:'Bảy dòng, không cần đẹp. Tìm một tối khác hẳn sáu tối còn lại — đó là đòn bẩy.', v:'dinh-vi', p:'20 phút', bc:bcNhatKy(7)},
       {t:'Chốt bảng chín vai',          d:'Một buổi tối, cả nhà tự nhận vai mình giữ. Có biên bản, dán lên tường.', v:'chin-vai', p:'60 phút'}
     ],
     hs:[
       {t:'Xem hành trình của mình',     d:'Năm chặng. Em đang ở chặng nào và chặng sau là gì.', v:'hanh-trinh-con', p:'5 phút'},
-      {t:'Ghi nhật ký ba dòng',         d:'Hôm nay chỗ nào mình tuột, chỗ nào mình giữ được.', v:'nhiem-vu', p:'2 phút'},
-      {t:'Chọn một việc khó làm trước', d:'25 phút không điện thoại, làm việc khó nhất trước.', v:'nhiem-vu', p:'25 phút'},
+      {t:'Ghi nhật ký ba dòng',         d:'Hôm nay chỗ nào mình tuột, chỗ nào mình giữ được.', v:'nhat-ky-vi-tri', p:'2 phút', bc:bcNhatKy(1)},
+      {t:'Chọn một việc khó làm trước', d:'25 phút không điện thoại, làm việc khó nhất trước.', v:'nhiem-vu', p:'25 phút', bc:bcViecHomNay},
       {t:'Chuẩn bị một câu cho buổi ngồi lại', d:'Điều mình muốn bố mẹ hiểu mà chưa nói được.', v:'thoi-quen', p:'10 phút'},
-      {t:'Nhận huy hiệu đầu tiên',      d:'Bảy tối liên tục có dữ liệu — kể cả tối ghi "quên".', v:'phan-thuong', p:'7 ngày'}
+      {t:'Nhận huy hiệu đầu tiên',      d:'Bảy tối liên tục có dữ liệu — kể cả tối ghi "quên".', v:'phan-thuong', p:'7 ngày', bc:bcNhatKy(7)}
     ],
     coach:[
       {t:'Đọc sáu ranh giới trước',     d:'Bắt buộc, trước khi dùng mô hình với bất kỳ gia đình nào.', v:'ranh-gioi', p:'10 phút'},
@@ -5859,6 +5941,18 @@ G.VIEWS['bat-dau'] = function(){
       {t:'Gửi bản đồ một trang',        d:'Không kèm bảng giá ở lần đầu. Cho họ thấy nhà mình trong bản đồ trước.', v:'ban-do', p:'10 phút'},
       {t:'Rà lại ranh giới ngôn từ',    d:'Sáu điều không được làm — đọc lại trước mỗi phiên.', v:'ranh-gioi', p:'5 phút'}
     ],
+    /* Nhánh cộng tác viên. Trước v9.2 không có nhánh này, nên ctv rơi
+       vào `buoc.ph` và được giao năm bước của một gia đình: viết bảng
+       tầm nhìn của nhà mình, chốt bảng chín vai trong nhà. Cộng tác
+       viên không có "nhà mình" trong hệ thống — họ có mã liên kết, có
+       nhà mình giới thiệu, và có trần hoa hồng 10%. */
+    ctv:[
+      {t:'Đọc sáu điều GITA 365 KHÔNG làm', d:'Phần phải thuộc trước phần "làm". Nói sai một câu ở buổi đầu thì ba tháng sau Học viện mất một gia đình — và người giới thiệu mất uy tín trước chính người quen của mình.', v:'gioi-thieu', p:'10 phút'},
+      {t:'Mở mã liên kết của mình',    d:'Mã dạng CTV-xxxxxx là chỗ DUY NHẤT hệ thống ghi nhận công. Giới thiệu miệng mà người ta tự đăng ký thì không có gì để đối soát.', v:'ve-tinh', p:'5 phút'},
+      {t:'Làm việc của hôm nay',       d:'Việc của cộng tác viên là việc theo ngày, không phải theo đợt. Một tuần im lặng là một tuần không nhà nào được giới thiệu.', v:'nhiem-vu', p:'dưới 20 phút', bc:bcViecHomNay},
+      {t:'Ghi sổ nhật ký vị trí',      d:'Hoa hồng tính trên việc có ghi chép. Làm mà không ghi thì tới kỳ đối soát không có gì đối chiếu.', v:'nhat-ky-vi-tri', p:'5 phút mỗi ngày', bc:bcNhatKy(1)},
+      {t:'Đọc trần hoa hồng và ranh giới chia sẻ', d:'Trần 10%, không ngoại lệ, và sáu điều không được làm khi kể chuyện nhà người khác. Đọc trước khi kể, không đọc sau khi bị nhắc.', v:'ranh-gioi', p:'15 phút'}
+    ],
     admin:[
       {t:'Mở trung tâm điều hành',      d:'Toàn cảnh sức khoẻ hệ sinh thái, nhà nào cần chạm trước.', v:'dieu-hanh', p:'5 phút'},
       {t:'Đọc biên bản rà soát',        d:'Bốn lỗi đã vá, bảy điểm cần máy chủ. Xem chỗ nào chặn phát hành.', v:'ra-soat', p:'15 phút'},
@@ -5868,7 +5962,11 @@ G.VIEWS['bat-dau'] = function(){
     ]
   };
   var list = buoc[p] || buoc.ph;
-  var done = list.filter(function(x,i){ return G.S.checks['b'+i]; }).length;
+  /* Bước nào đo được thì đọc dấu vết; bước nào không thì đọc ô tự tích. */
+  var soDo = list.map(function(x){ return x.bc ? x.bc() : null; });
+  var xongCua = list.map(function(x,i){ return soDo[i] ? soDo[i].dat : !!G.S.checks['b'+i]; });
+  var done = xongCua.filter(Boolean).length;
+  var soDoDuoc = soDo.filter(Boolean).length;
 
   var o = U.ph({eyebrow:'BẮT ĐẦU Ở ĐÂY', ic:'seed', grad:1, t:'Năm bước đầu tiên',
     lead:'Không phải năm mươi màn hình. Chỉ năm bước, đúng thứ tự, cho đúng vai của anh chị. Làm xong bước một rồi hãy nhìn bước hai.'});
@@ -5879,19 +5977,33 @@ G.VIEWS['bat-dau'] = function(){
     '<h2 style="font-size:22px;font-weight:800;margin:4px 0 6px">'+h(G.S.roleObj.n)+'</h2>'+
     '<p class="sm dim">'+h((G.PORTALS[p]||{}).say||'')+'</p></div></div></div>';
 
+  if(soDoDuoc)
+    o += '<div class="card mb" style="border-color:var(--gita-vien-1)">'+
+      '<p class="tiny" style="line-height:1.75;color:var(--ink-2)"><b>'+soDoDuoc+' trong '+list.length+
+      ' bước dưới đây tự đánh dấu bằng DẤU VẾT THẬT</b> — bài đã chấm, dòng đã ghi, ô đã tích trong máy này. '+
+      'Không tích tay được, và cũng không cần tích: đủ là tự bật. '+(list.length-soDoDuoc)+
+      ' bước còn lại không có gì để đo — chúng xảy ra ngoài màn hình — nên vẫn là ô anh chị tự xác nhận, '+
+      'và ô ấy là lời tự khai chứ không phải phép đo.</p></div>';
+
   o += list.map(function(x,i){
-    var d = !!G.S.checks['b'+i], next = !d && i===done;
+    var dm = soDo[i], d = xongCua[i], next = !d && i===done;
+    var oTick = !dm;   /* chỉ bước KHÔNG đo được mới bấm tích tay */
     return '<div class="card mb '+(next?'glow':'')+'" style="'+(d?'opacity:.72':'')+'">'+
       '<div class="row wrap" style="gap:14px;align-items:flex-start">'+
-      '<button class="bx" data-check="b'+i+'" style="width:34px;height:34px;border-radius:11px;'+
+      '<'+(oTick?'button':'span')+' class="bx"'+(oTick?' data-check="b'+i+'"':'')+
+      ' style="width:34px;height:34px;border-radius:11px;'+
       'border:1.5px solid '+(d?'transparent':'var(--line-2)')+';display:grid;place-items:center;flex:none;'+
       (d?'background:linear-gradient(135deg,var(--ok),#0B7350);color:#04241A':'color:var(--ink-4)')+'">'+
-      (d?ic('check','w-4 h-4'):'<b style="font-size:13px">'+(i+1)+'</b>')+'</button>'+
+      (d?ic('check','w-4 h-4'):'<b style="font-size:13px">'+(i+1)+'</b>')+'</'+(oTick?'button':'span')+'>'+
       '<div class="grow" style="min-width:220px">'+
         '<div class="row wrap" style="gap:8px;margin-bottom:5px">'+
         '<b style="font-size:15.5px">'+h(x.t)+'</b>'+U.chip(x.p)+
-        (next?U.chip('BƯỚC TIẾP THEO','var(--gita)',1):'')+'</div>'+
-        '<p class="sm dim" style="line-height:1.6">'+h(x.d)+'</p></div>'+
+        (next?U.chip('BƯỚC TIẾP THEO','var(--gita)',1):'')+
+        (dm?U.chip(dm.do, d?'#0B7350':'var(--ink-4)'):U.chip('tự xác nhận'))+'</div>'+
+        '<p class="sm dim" style="line-height:1.6">'+h(x.d)+'</p>'+
+        (dm && !dm.dat && dm.can>1
+          ? '<div class="mt">'+U.bar(Math.round(dm.xong/dm.can*100), 'var(--gita)')+'</div>' : '')+
+      '</div>'+
       '<button class="btn '+(next?'pri':'ghost')+' sm" data-go="'+h(x.v)+'">Mở '+ic('arrow')+'</button>'+
       '</div></div>';
   }).join('');
@@ -7210,14 +7322,29 @@ G.VIEWS['ket-noi'] = function(){
   var K = G.KETNOI, L = G.LIENKET;
   var o = U.ph({eyebrow:'NHÓM 05 · HỆ SINH THÁI', ic:'orbit', grad:1, t:'Kết nối hệ sinh thái', lead:K.cot});
 
+  /* Bảy bước đồng bộ nói bằng ngôn ngữ hệ thống: tên hàm kiemBanMoi, so
+     mã băm từng gói, sổ sao lưu hosoAppSaoLuu, giải xung đột theo từng
+     trường, sendBeacon lúc rời trang. Đó là tài liệu kiến trúc — hữu ích
+     cho người vận hành, vô nghĩa với một phụ huynh, và là bản mô tả cách
+     hệ thống giữ dữ liệu cho người muốn tìm chỗ hở.
+
+     Nút "Kiểm tra bản mới" thì mọi vai đều cần, nên nút ở lại; chỉ phần
+     mô tả cơ chế đi lên đội ngũ. Khách hàng thấy đúng thứ họ dùng được:
+     một dòng nhịp cập nhật và một cái nút. */
+  var xemCoChe = G.can && G.can('nghe_chung');
   o += '<div class="card glow mb"><div class="row wrap" style="gap:14px;align-items:center">'+
     '<span style="width:44px;height:44px;border-radius:14px;display:grid;place-items:center;background:var(--gita-mo-2);color:var(--gold-ink);flex:none">'+ic('pulse','w-5 h-5')+'</span>'+
     '<div class="grow" style="min-width:230px"><b style="font-size:16px;display:block">'+h(K.dongBo.ten)+'</b>'+
     '<p class="sm muted mt">Nhịp: '+h(K.dongBo.nhip)+'</p></div>'+
     '<button class="btn pri" data-act="kiem-ban-moi">'+ic('arrow')+'Kiểm tra bản mới</button></div>'+
-    '<div class="mt2">' + K.dongBo.cach.map(function(c){
-      return '<div class="rule"><span class="n">'+c.b+'</span><div class="tx"><b>'+h(c.t)+'</b><p>'+h(c.d)+'</p></div></div>';
-    }).join('') + '</div></div>';
+    (xemCoChe
+      ? '<div class="mt2">' + K.dongBo.cach.map(function(c){
+          return '<div class="rule"><span class="n">'+c.b+'</span><div class="tx"><b>'+h(c.t)+'</b><p>'+h(c.d)+'</p></div></div>';
+        }).join('') + '</div>'
+      : '<p class="tiny muted mt2" style="line-height:1.7">Ứng dụng tự kiểm bản mới mỗi lần mở và mỗi sáu giờ, '+
+        'chỉ tải phần đã đổi, và giữ được việc anh chị làm khi mất mạng — có mạng lại thì tự gửi đi. '+
+        'Anh chị không phải làm gì cả; nút trên chỉ để kiểm ngay khi cần.</p>')+
+    '</div>';
 
   o += '<div class="grid g2">';
   o += '<div class="card lift" style="border-color:'+K.facebook.c+'2e">'+
@@ -7749,22 +7876,43 @@ G.VIEWS['kpi-100'] = function(){
   var K = G.KPI100;
   if(!K) return U.empty('Chưa mở được bộ KPI', 'Bộ KPI nằm trong gói nền. Đăng nhập lại để nạp.');
   var S = G.S.checks;
-  var dat = 0, qua = 0;
+  /* Ở bản chưa nối máy chủ cấp phép, gói mẫu chỉ mở tiêu chí của điểm mốc
+     đầu; chín mốc còn lại về dưới dạng "[Tiêu chí mở khi được cấp phép]".
+     Trước v9.2 màn này vẫn vẽ chín mươi dòng ấy thành nút bấm được — nên
+     một phụ huynh mở ra thấy 5.118 ký tự mà 90% là chỗ trống giả làm việc
+     phải làm, và tích vào thì tích được một ô rỗng.
+
+     Nay đếm và vẽ chỉ trên tiêu chí THẬT. Mốc chưa mở hiện đúng một dòng
+     nói vì sao chưa mở, không giả vờ có mười việc chờ tích. Mẫu số cũng
+     đổi theo: "8/10" chỉ đúng khi có mười tiêu chí thật để đạt. */
+  function laTrong(t){ return /^\s*\[.*\]\s*$/.test(String(t||'')); }
+  var dat = 0, qua = 0, mocMo = 0;
   var soDat = K.diem.map(function(d){
-    var n = d.tc.filter(function(_,i){ return S['kpi-'+d.no+'-'+i]; }).length;
-    dat += n; if(n>=8) qua++;
+    var that = d.tc.filter(function(t){ return !laTrong(t); });
+    var n = d.tc.filter(function(t,i){ return !laTrong(t) && S['kpi-'+d.no+'-'+i]; }).length;
+    dat += n;
+    if(that.length){ mocMo++; if(n >= Math.ceil(that.length*0.8)) qua++; }
     return n;
   });
+  var tongThat = K.diem.reduce(function(a,d){
+    return a + d.tc.filter(function(t){ return !laTrong(t); }).length; }, 0);
+  var conKhoa = 10 - mocMo;
 
   var o = U.ph({eyebrow:'NHÓM 02 · VỀ ĐÍCH', ic:'crown', grad:1, t:'Mười điểm về đích · một trăm tiêu chí',
     lead:K.cot});
 
   o += '<div class="grid g4 mb">'+
-    U.stat({k:'Điểm mốc đã qua', v:qua+'/10',  d:'qua khi đạt 8/10 tiêu chí', c:'#185AB4'})+
-    U.stat({k:'Tiêu chí đã đạt', v:dat+'/100', d:'về đích tối thiểu 80', c:'#0B7350'})+
-    U.stat({k:'Còn lại',         v:String(100-dat), d:'tiêu chí chưa tích', c:'#5140B4'})+
+    U.stat({k:'Điểm mốc đã mở', v:qua+'/'+mocMo, d:conKhoa?conKhoa+' mốc mở dần theo tầng':'qua khi đạt 8/10 tiêu chí', c:'#185AB4'})+
+    U.stat({k:'Tiêu chí đã đạt', v:dat+'/'+tongThat, d:tongThat<100?'trên tổng 100 của cả năm tầng':'về đích tối thiểu 80', c:'#0B7350'})+
+    U.stat({k:'Còn lại',         v:String(tongThat-dat), d:'tiêu chí đang mở mà chưa tích', c:'#5140B4'})+
     U.stat({k:'Tình trạng',      v:qua>=10?'VỀ ĐÍCH':'ĐANG ĐI', d:qua>=10?'đủ mười điểm mốc':'còn '+(10-qua)+' điểm mốc', c:qua>=10?'#0B7350':'#0B6675'})+
     '</div>';
+  if(conKhoa)
+    o += '<div class="card mb" style="border-color:var(--gita-vien-1)">'+
+      '<p class="tiny" style="line-height:1.75;color:var(--ink-2)"><b>'+conKhoa+' điểm mốc chưa mở trên bản này.</b> '+
+      'Mười điểm mốc trải suốt năm tầng — mốc của tầng sau mở khi nhà mình qua tầng trước, '+
+      'nên bảng dưới chỉ bày việc anh chị làm được HÔM NAY. Đây không phải chỗ hỏng: '+
+      'bày sẵn chín mươi việc của ba năm tới là cách chắc chắn để một nhà bỏ cuộc trong tuần đầu.</p></div>';
 
   o += '<div class="card mb"><div class="row" style="justify-content:space-between;margin-bottom:7px">'+
     '<b class="sm">Đường về đích</b><span class="tiny muted">'+dat+'/100 tiêu chí</span></div>'+
@@ -7773,18 +7921,27 @@ G.VIEWS['kpi-100'] = function(){
 
   o += U.sec('MƯỜI ĐIỂM MỐC', 'Bấm vào từng tiêu chí để tích. Trạng thái lưu trong máy này.');
   o += K.diem.map(function(d, di){
-    var n = soDat[di], ok = n>=8;
+    var that = d.tc.filter(function(t){ return !laTrong(t); });
+    var n = soDat[di], ok = that.length && n >= Math.ceil(that.length*0.8);
+    if(!that.length)
+      return '<div class="card mb" style="border-color:var(--line)">'+
+        '<div class="row wrap" style="gap:8px;align-items:center">'+
+        '<span style="color:var(--ink-4);flex:none">'+ic('lock','w-4 h-4')+'</span>'+
+        U.chip('ĐIỂM '+d.no)+U.chip(d.tang)+
+        '<b class="sm" style="color:var(--ink-3)">'+h(d.ten)+'</b></div>'+
+        '<p class="tiny muted mt" style="line-height:1.7">'+h(d.mo)+' — mười tiêu chí của mốc này mở khi nhà mình vào tầng '+h(d.tang)+'.</p></div>';
     return '<div class="card mb" style="border-color:'+d.c+(ok?'66':'22')+';'+(ok?'background:'+d.c+'0a':'')+'">'+
       '<div class="row wrap" style="gap:10px;justify-content:space-between;margin-bottom:9px">'+
       '<div class="row wrap" style="gap:8px">'+
       U.chip('ĐIỂM '+d.no, d.c)+U.chip(d.tang)+
       '<b style="color:'+d.c+';font-size:15px">'+h(d.ten)+'</b></div>'+
       '<span class="chip" style="color:'+(ok?'#0B7350':'var(--ink-4)')+';border-color:'+(ok?'#0B735055':'var(--line)')+'">'+
-      (ok?'ĐÃ QUA':'')+' '+n+'/10</span></div>'+
+      (ok?'ĐÃ QUA':'')+' '+n+'/'+that.length+'</span></div>'+
       '<p class="sm dim" style="line-height:1.7;margin-bottom:10px">'+h(d.mo)+'</p>'+
-      U.bar(n*10, ok?'#0B7350':d.c)+
+      U.bar(Math.round(n/that.length*100), ok?'#0B7350':d.c)+
       '<div style="display:flex;flex-direction:column;gap:6px;margin-top:11px">'+
       d.tc.map(function(t,i){
+        if(laTrong(t)) return '';
         var k = 'kpi-'+d.no+'-'+i, on = !!S[k];
         return '<button class="card pad-sm lift" data-check="'+h(k)+'" style="text-align:left;'+
           'border-color:'+(on?d.c+'55':'var(--line)')+';background:'+(on?d.c+'12':'transparent')+'">'+

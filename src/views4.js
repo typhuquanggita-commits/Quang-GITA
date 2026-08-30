@@ -10,22 +10,65 @@ G.VIEWS = G.VIEWS || {};
 var U = G.U, h = U.h, ic = U.ic;
 
 /* ═══════════════ BẮT ĐẦU Ở ĐÂY ═══════════════ */
+/* ── Bằng chứng cho năm bước đầu ──
+   Trước v9.2 màn này đánh dấu xong bằng G.S.checks['b'+i] — một ô tự
+   tích, không nối với bất cứ dữ liệu nào. Nghĩa là bước "Viết bảng tầm
+   nhìn" tích được khi chưa viết chữ nào, và bước "Đủ bảy tối rồi đọc
+   lại" tích được khi sổ nhật ký trống trơn. Chuỗi dẫn hành động mà đi
+   tiếp bằng lời khai thì nó dẫn đi đâu cũng được.
+
+   Nay bước nào CÓ dấu vết trong máy thì đọc dấu vết ấy, và ô tích của
+   bước đó thành ô chỉ-đọc: hệ thống tự bật khi đủ. Bước nào không có
+   dấu vết nào để đọc — "nhìn tấm bản đồ một lần", "chốt bảng chín vai
+   trong một buổi tối" — thì vẫn là ô tự xác nhận, và màn nói thẳng
+   đấy là lời tự khai chứ không phải phép đo.
+
+   Hàm trả về null nghĩa là "không đo được, dùng ô tự tích". */
+function bcNhatKy(n){
+  return function(){
+    var j = G.S.journal || {}, d = 0;
+    Object.keys(j).forEach(function(k){
+      var v = j[k];
+      if(typeof v === 'string' ? v.trim().length > 2 : !!v) d++;
+    });
+    return { xong: d, can: n, dat: d >= n, do: d + '/' + n + ' tối đã ghi' };
+  };
+}
+function bcTamNhin(){
+  var v = G.S.vision || {}, d = 0;
+  Object.keys(v).forEach(function(k){ if(String(v[k]||'').trim().length > 20) d++; });
+  return { xong: d, can: 1, dat: d >= 1, do: d ? d + ' ô đã viết' : 'chưa có ô nào' };
+}
+function bcBaiTest(n){
+  return function(){
+    var t = G.S.test || {}, d = 0;
+    Object.keys(t).forEach(function(k){ if(t[k] && t[k].xong) d++; });
+    return { xong: d, can: n, dat: d >= n, do: d + '/' + n + ' bài đã chấm' };
+  };
+}
+function bcViecHomNay(){
+  var ds = (G.TODAY || {})[G.myPortal ? G.myPortal() : 'ph'] || [];
+  var d = ds.filter(function(_, i){ return G.S.checks['t' + i]; }).length;
+  return { xong: d, can: ds.length, dat: ds.length > 0 && d >= ds.length,
+           do: d + '/' + ds.length + ' việc hôm nay' };
+}
+
 G.VIEWS['bat-dau'] = function(){
   var p = G.myPortal();
   var buoc = {
     ph:[
       {t:'Nhìn tấm bản đồ một lần',    d:'Năm khoang, chín vai. Chưa cần làm gì cả — chỉ xem nhà mình đang đứng ở khoang nào.', v:'ban-do', p:'5 phút'},
-      {t:'Viết bảng tầm nhìn',          d:'Cả nhà ngồi đủ mặt. Mỗi người viết bằng lời của mình. Không ai viết hộ ai.', v:'tam-nhin', p:'40 phút'},
-      {t:'Ghi ba dòng nhật ký tối nay', d:'Giờ ngồi vào bàn · giờ rời bàn · số lần phải nhắc. Ăn cơm xong là mở sổ.', v:'nhiem-vu', p:'2 phút mỗi tối'},
-      {t:'Đủ bảy tối rồi đọc lại',      d:'Bảy dòng, không cần đẹp. Tìm một tối khác hẳn sáu tối còn lại — đó là đòn bẩy.', v:'dinh-vi', p:'20 phút'},
+      {t:'Viết bảng tầm nhìn',          d:'Cả nhà ngồi đủ mặt. Mỗi người viết bằng lời của mình. Không ai viết hộ ai.', v:'tam-nhin', p:'40 phút', bc:bcTamNhin},
+      {t:'Ghi ba dòng nhật ký tối nay', d:'Giờ ngồi vào bàn · giờ rời bàn · số lần phải nhắc. Ăn cơm xong là mở sổ.', v:'nhat-ky-vi-tri', p:'2 phút mỗi tối', bc:bcNhatKy(1)},
+      {t:'Đủ bảy tối rồi đọc lại',      d:'Bảy dòng, không cần đẹp. Tìm một tối khác hẳn sáu tối còn lại — đó là đòn bẩy.', v:'dinh-vi', p:'20 phút', bc:bcNhatKy(7)},
       {t:'Chốt bảng chín vai',          d:'Một buổi tối, cả nhà tự nhận vai mình giữ. Có biên bản, dán lên tường.', v:'chin-vai', p:'60 phút'}
     ],
     hs:[
       {t:'Xem hành trình của mình',     d:'Năm chặng. Em đang ở chặng nào và chặng sau là gì.', v:'hanh-trinh-con', p:'5 phút'},
-      {t:'Ghi nhật ký ba dòng',         d:'Hôm nay chỗ nào mình tuột, chỗ nào mình giữ được.', v:'nhiem-vu', p:'2 phút'},
-      {t:'Chọn một việc khó làm trước', d:'25 phút không điện thoại, làm việc khó nhất trước.', v:'nhiem-vu', p:'25 phút'},
+      {t:'Ghi nhật ký ba dòng',         d:'Hôm nay chỗ nào mình tuột, chỗ nào mình giữ được.', v:'nhat-ky-vi-tri', p:'2 phút', bc:bcNhatKy(1)},
+      {t:'Chọn một việc khó làm trước', d:'25 phút không điện thoại, làm việc khó nhất trước.', v:'nhiem-vu', p:'25 phút', bc:bcViecHomNay},
       {t:'Chuẩn bị một câu cho buổi ngồi lại', d:'Điều mình muốn bố mẹ hiểu mà chưa nói được.', v:'thoi-quen', p:'10 phút'},
-      {t:'Nhận huy hiệu đầu tiên',      d:'Bảy tối liên tục có dữ liệu — kể cả tối ghi "quên".', v:'phan-thuong', p:'7 ngày'}
+      {t:'Nhận huy hiệu đầu tiên',      d:'Bảy tối liên tục có dữ liệu — kể cả tối ghi "quên".', v:'phan-thuong', p:'7 ngày', bc:bcNhatKy(7)}
     ],
     coach:[
       {t:'Đọc sáu ranh giới trước',     d:'Bắt buộc, trước khi dùng mô hình với bất kỳ gia đình nào.', v:'ranh-gioi', p:'10 phút'},
@@ -41,6 +84,18 @@ G.VIEWS['bat-dau'] = function(){
       {t:'Gửi bản đồ một trang',        d:'Không kèm bảng giá ở lần đầu. Cho họ thấy nhà mình trong bản đồ trước.', v:'ban-do', p:'10 phút'},
       {t:'Rà lại ranh giới ngôn từ',    d:'Sáu điều không được làm — đọc lại trước mỗi phiên.', v:'ranh-gioi', p:'5 phút'}
     ],
+    /* Nhánh cộng tác viên. Trước v9.2 không có nhánh này, nên ctv rơi
+       vào `buoc.ph` và được giao năm bước của một gia đình: viết bảng
+       tầm nhìn của nhà mình, chốt bảng chín vai trong nhà. Cộng tác
+       viên không có "nhà mình" trong hệ thống — họ có mã liên kết, có
+       nhà mình giới thiệu, và có trần hoa hồng 10%. */
+    ctv:[
+      {t:'Đọc sáu điều GITA 365 KHÔNG làm', d:'Phần phải thuộc trước phần "làm". Nói sai một câu ở buổi đầu thì ba tháng sau Học viện mất một gia đình — và người giới thiệu mất uy tín trước chính người quen của mình.', v:'gioi-thieu', p:'10 phút'},
+      {t:'Mở mã liên kết của mình',    d:'Mã dạng CTV-xxxxxx là chỗ DUY NHẤT hệ thống ghi nhận công. Giới thiệu miệng mà người ta tự đăng ký thì không có gì để đối soát.', v:'ve-tinh', p:'5 phút'},
+      {t:'Làm việc của hôm nay',       d:'Việc của cộng tác viên là việc theo ngày, không phải theo đợt. Một tuần im lặng là một tuần không nhà nào được giới thiệu.', v:'nhiem-vu', p:'dưới 20 phút', bc:bcViecHomNay},
+      {t:'Ghi sổ nhật ký vị trí',      d:'Hoa hồng tính trên việc có ghi chép. Làm mà không ghi thì tới kỳ đối soát không có gì đối chiếu.', v:'nhat-ky-vi-tri', p:'5 phút mỗi ngày', bc:bcNhatKy(1)},
+      {t:'Đọc trần hoa hồng và ranh giới chia sẻ', d:'Trần 10%, không ngoại lệ, và sáu điều không được làm khi kể chuyện nhà người khác. Đọc trước khi kể, không đọc sau khi bị nhắc.', v:'ranh-gioi', p:'15 phút'}
+    ],
     admin:[
       {t:'Mở trung tâm điều hành',      d:'Toàn cảnh sức khoẻ hệ sinh thái, nhà nào cần chạm trước.', v:'dieu-hanh', p:'5 phút'},
       {t:'Đọc biên bản rà soát',        d:'Bốn lỗi đã vá, bảy điểm cần máy chủ. Xem chỗ nào chặn phát hành.', v:'ra-soat', p:'15 phút'},
@@ -50,7 +105,11 @@ G.VIEWS['bat-dau'] = function(){
     ]
   };
   var list = buoc[p] || buoc.ph;
-  var done = list.filter(function(x,i){ return G.S.checks['b'+i]; }).length;
+  /* Bước nào đo được thì đọc dấu vết; bước nào không thì đọc ô tự tích. */
+  var soDo = list.map(function(x){ return x.bc ? x.bc() : null; });
+  var xongCua = list.map(function(x,i){ return soDo[i] ? soDo[i].dat : !!G.S.checks['b'+i]; });
+  var done = xongCua.filter(Boolean).length;
+  var soDoDuoc = soDo.filter(Boolean).length;
 
   var o = U.ph({eyebrow:'BẮT ĐẦU Ở ĐÂY', ic:'seed', grad:1, t:'Năm bước đầu tiên',
     lead:'Không phải năm mươi màn hình. Chỉ năm bước, đúng thứ tự, cho đúng vai của anh chị. Làm xong bước một rồi hãy nhìn bước hai.'});
@@ -61,19 +120,33 @@ G.VIEWS['bat-dau'] = function(){
     '<h2 style="font-size:22px;font-weight:800;margin:4px 0 6px">'+h(G.S.roleObj.n)+'</h2>'+
     '<p class="sm dim">'+h((G.PORTALS[p]||{}).say||'')+'</p></div></div></div>';
 
+  if(soDoDuoc)
+    o += '<div class="card mb" style="border-color:var(--gita-vien-1)">'+
+      '<p class="tiny" style="line-height:1.75;color:var(--ink-2)"><b>'+soDoDuoc+' trong '+list.length+
+      ' bước dưới đây tự đánh dấu bằng DẤU VẾT THẬT</b> — bài đã chấm, dòng đã ghi, ô đã tích trong máy này. '+
+      'Không tích tay được, và cũng không cần tích: đủ là tự bật. '+(list.length-soDoDuoc)+
+      ' bước còn lại không có gì để đo — chúng xảy ra ngoài màn hình — nên vẫn là ô anh chị tự xác nhận, '+
+      'và ô ấy là lời tự khai chứ không phải phép đo.</p></div>';
+
   o += list.map(function(x,i){
-    var d = !!G.S.checks['b'+i], next = !d && i===done;
+    var dm = soDo[i], d = xongCua[i], next = !d && i===done;
+    var oTick = !dm;   /* chỉ bước KHÔNG đo được mới bấm tích tay */
     return '<div class="card mb '+(next?'glow':'')+'" style="'+(d?'opacity:.72':'')+'">'+
       '<div class="row wrap" style="gap:14px;align-items:flex-start">'+
-      '<button class="bx" data-check="b'+i+'" style="width:34px;height:34px;border-radius:11px;'+
+      '<'+(oTick?'button':'span')+' class="bx"'+(oTick?' data-check="b'+i+'"':'')+
+      ' style="width:34px;height:34px;border-radius:11px;'+
       'border:1.5px solid '+(d?'transparent':'var(--line-2)')+';display:grid;place-items:center;flex:none;'+
       (d?'background:linear-gradient(135deg,var(--ok),#0B7350);color:#04241A':'color:var(--ink-4)')+'">'+
-      (d?ic('check','w-4 h-4'):'<b style="font-size:13px">'+(i+1)+'</b>')+'</button>'+
+      (d?ic('check','w-4 h-4'):'<b style="font-size:13px">'+(i+1)+'</b>')+'</'+(oTick?'button':'span')+'>'+
       '<div class="grow" style="min-width:220px">'+
         '<div class="row wrap" style="gap:8px;margin-bottom:5px">'+
         '<b style="font-size:15.5px">'+h(x.t)+'</b>'+U.chip(x.p)+
-        (next?U.chip('BƯỚC TIẾP THEO','var(--gita)',1):'')+'</div>'+
-        '<p class="sm dim" style="line-height:1.6">'+h(x.d)+'</p></div>'+
+        (next?U.chip('BƯỚC TIẾP THEO','var(--gita)',1):'')+
+        (dm?U.chip(dm.do, d?'#0B7350':'var(--ink-4)'):U.chip('tự xác nhận'))+'</div>'+
+        '<p class="sm dim" style="line-height:1.6">'+h(x.d)+'</p>'+
+        (dm && !dm.dat && dm.can>1
+          ? '<div class="mt">'+U.bar(Math.round(dm.xong/dm.can*100), 'var(--gita)')+'</div>' : '')+
+      '</div>'+
       '<button class="btn '+(next?'pri':'ghost')+' sm" data-go="'+h(x.v)+'">Mở '+ic('arrow')+'</button>'+
       '</div></div>';
   }).join('');

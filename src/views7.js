@@ -301,14 +301,29 @@ G.VIEWS['ket-noi'] = function(){
   var K = G.KETNOI, L = G.LIENKET;
   var o = U.ph({eyebrow:'NHÓM 05 · HỆ SINH THÁI', ic:'orbit', grad:1, t:'Kết nối hệ sinh thái', lead:K.cot});
 
+  /* Bảy bước đồng bộ nói bằng ngôn ngữ hệ thống: tên hàm kiemBanMoi, so
+     mã băm từng gói, sổ sao lưu hosoAppSaoLuu, giải xung đột theo từng
+     trường, sendBeacon lúc rời trang. Đó là tài liệu kiến trúc — hữu ích
+     cho người vận hành, vô nghĩa với một phụ huynh, và là bản mô tả cách
+     hệ thống giữ dữ liệu cho người muốn tìm chỗ hở.
+
+     Nút "Kiểm tra bản mới" thì mọi vai đều cần, nên nút ở lại; chỉ phần
+     mô tả cơ chế đi lên đội ngũ. Khách hàng thấy đúng thứ họ dùng được:
+     một dòng nhịp cập nhật và một cái nút. */
+  var xemCoChe = G.can && G.can('nghe_chung');
   o += '<div class="card glow mb"><div class="row wrap" style="gap:14px;align-items:center">'+
     '<span style="width:44px;height:44px;border-radius:14px;display:grid;place-items:center;background:var(--gita-mo-2);color:var(--gold-ink);flex:none">'+ic('pulse','w-5 h-5')+'</span>'+
     '<div class="grow" style="min-width:230px"><b style="font-size:16px;display:block">'+h(K.dongBo.ten)+'</b>'+
     '<p class="sm muted mt">Nhịp: '+h(K.dongBo.nhip)+'</p></div>'+
     '<button class="btn pri" data-act="kiem-ban-moi">'+ic('arrow')+'Kiểm tra bản mới</button></div>'+
-    '<div class="mt2">' + K.dongBo.cach.map(function(c){
-      return '<div class="rule"><span class="n">'+c.b+'</span><div class="tx"><b>'+h(c.t)+'</b><p>'+h(c.d)+'</p></div></div>';
-    }).join('') + '</div></div>';
+    (xemCoChe
+      ? '<div class="mt2">' + K.dongBo.cach.map(function(c){
+          return '<div class="rule"><span class="n">'+c.b+'</span><div class="tx"><b>'+h(c.t)+'</b><p>'+h(c.d)+'</p></div></div>';
+        }).join('') + '</div>'
+      : '<p class="tiny muted mt2" style="line-height:1.7">Ứng dụng tự kiểm bản mới mỗi lần mở và mỗi sáu giờ, '+
+        'chỉ tải phần đã đổi, và giữ được việc anh chị làm khi mất mạng — có mạng lại thì tự gửi đi. '+
+        'Anh chị không phải làm gì cả; nút trên chỉ để kiểm ngay khi cần.</p>')+
+    '</div>';
 
   o += '<div class="grid g2">';
   o += '<div class="card lift" style="border-color:'+K.facebook.c+'2e">'+

@@ -344,22 +344,43 @@ G.VIEWS['kpi-100'] = function(){
   var K = G.KPI100;
   if(!K) return U.empty('Chưa mở được bộ KPI', 'Bộ KPI nằm trong gói nền. Đăng nhập lại để nạp.');
   var S = G.S.checks;
-  var dat = 0, qua = 0;
+  /* Ở bản chưa nối máy chủ cấp phép, gói mẫu chỉ mở tiêu chí của điểm mốc
+     đầu; chín mốc còn lại về dưới dạng "[Tiêu chí mở khi được cấp phép]".
+     Trước v9.2 màn này vẫn vẽ chín mươi dòng ấy thành nút bấm được — nên
+     một phụ huynh mở ra thấy 5.118 ký tự mà 90% là chỗ trống giả làm việc
+     phải làm, và tích vào thì tích được một ô rỗng.
+
+     Nay đếm và vẽ chỉ trên tiêu chí THẬT. Mốc chưa mở hiện đúng một dòng
+     nói vì sao chưa mở, không giả vờ có mười việc chờ tích. Mẫu số cũng
+     đổi theo: "8/10" chỉ đúng khi có mười tiêu chí thật để đạt. */
+  function laTrong(t){ return /^\s*\[.*\]\s*$/.test(String(t||'')); }
+  var dat = 0, qua = 0, mocMo = 0;
   var soDat = K.diem.map(function(d){
-    var n = d.tc.filter(function(_,i){ return S['kpi-'+d.no+'-'+i]; }).length;
-    dat += n; if(n>=8) qua++;
+    var that = d.tc.filter(function(t){ return !laTrong(t); });
+    var n = d.tc.filter(function(t,i){ return !laTrong(t) && S['kpi-'+d.no+'-'+i]; }).length;
+    dat += n;
+    if(that.length){ mocMo++; if(n >= Math.ceil(that.length*0.8)) qua++; }
     return n;
   });
+  var tongThat = K.diem.reduce(function(a,d){
+    return a + d.tc.filter(function(t){ return !laTrong(t); }).length; }, 0);
+  var conKhoa = 10 - mocMo;
 
   var o = U.ph({eyebrow:'NHÓM 02 · VỀ ĐÍCH', ic:'crown', grad:1, t:'Mười điểm về đích · một trăm tiêu chí',
     lead:K.cot});
 
   o += '<div class="grid g4 mb">'+
-    U.stat({k:'Điểm mốc đã qua', v:qua+'/10',  d:'qua khi đạt 8/10 tiêu chí', c:'#185AB4'})+
-    U.stat({k:'Tiêu chí đã đạt', v:dat+'/100', d:'về đích tối thiểu 80', c:'#0B7350'})+
-    U.stat({k:'Còn lại',         v:String(100-dat), d:'tiêu chí chưa tích', c:'#5140B4'})+
+    U.stat({k:'Điểm mốc đã mở', v:qua+'/'+mocMo, d:conKhoa?conKhoa+' mốc mở dần theo tầng':'qua khi đạt 8/10 tiêu chí', c:'#185AB4'})+
+    U.stat({k:'Tiêu chí đã đạt', v:dat+'/'+tongThat, d:tongThat<100?'trên tổng 100 của cả năm tầng':'về đích tối thiểu 80', c:'#0B7350'})+
+    U.stat({k:'Còn lại',         v:String(tongThat-dat), d:'tiêu chí đang mở mà chưa tích', c:'#5140B4'})+
     U.stat({k:'Tình trạng',      v:qua>=10?'VỀ ĐÍCH':'ĐANG ĐI', d:qua>=10?'đủ mười điểm mốc':'còn '+(10-qua)+' điểm mốc', c:qua>=10?'#0B7350':'#0B6675'})+
     '</div>';
+  if(conKhoa)
+    o += '<div class="card mb" style="border-color:var(--gita-vien-1)">'+
+      '<p class="tiny" style="line-height:1.75;color:var(--ink-2)"><b>'+conKhoa+' điểm mốc chưa mở trên bản này.</b> '+
+      'Mười điểm mốc trải suốt năm tầng — mốc của tầng sau mở khi nhà mình qua tầng trước, '+
+      'nên bảng dưới chỉ bày việc anh chị làm được HÔM NAY. Đây không phải chỗ hỏng: '+
+      'bày sẵn chín mươi việc của ba năm tới là cách chắc chắn để một nhà bỏ cuộc trong tuần đầu.</p></div>';
 
   o += '<div class="card mb"><div class="row" style="justify-content:space-between;margin-bottom:7px">'+
     '<b class="sm">Đường về đích</b><span class="tiny muted">'+dat+'/100 tiêu chí</span></div>'+
@@ -368,18 +389,27 @@ G.VIEWS['kpi-100'] = function(){
 
   o += U.sec('MƯỜI ĐIỂM MỐC', 'Bấm vào từng tiêu chí để tích. Trạng thái lưu trong máy này.');
   o += K.diem.map(function(d, di){
-    var n = soDat[di], ok = n>=8;
+    var that = d.tc.filter(function(t){ return !laTrong(t); });
+    var n = soDat[di], ok = that.length && n >= Math.ceil(that.length*0.8);
+    if(!that.length)
+      return '<div class="card mb" style="border-color:var(--line)">'+
+        '<div class="row wrap" style="gap:8px;align-items:center">'+
+        '<span style="color:var(--ink-4);flex:none">'+ic('lock','w-4 h-4')+'</span>'+
+        U.chip('ĐIỂM '+d.no)+U.chip(d.tang)+
+        '<b class="sm" style="color:var(--ink-3)">'+h(d.ten)+'</b></div>'+
+        '<p class="tiny muted mt" style="line-height:1.7">'+h(d.mo)+' — mười tiêu chí của mốc này mở khi nhà mình vào tầng '+h(d.tang)+'.</p></div>';
     return '<div class="card mb" style="border-color:'+d.c+(ok?'66':'22')+';'+(ok?'background:'+d.c+'0a':'')+'">'+
       '<div class="row wrap" style="gap:10px;justify-content:space-between;margin-bottom:9px">'+
       '<div class="row wrap" style="gap:8px">'+
       U.chip('ĐIỂM '+d.no, d.c)+U.chip(d.tang)+
       '<b style="color:'+d.c+';font-size:15px">'+h(d.ten)+'</b></div>'+
       '<span class="chip" style="color:'+(ok?'#0B7350':'var(--ink-4)')+';border-color:'+(ok?'#0B735055':'var(--line)')+'">'+
-      (ok?'ĐÃ QUA':'')+' '+n+'/10</span></div>'+
+      (ok?'ĐÃ QUA':'')+' '+n+'/'+that.length+'</span></div>'+
       '<p class="sm dim" style="line-height:1.7;margin-bottom:10px">'+h(d.mo)+'</p>'+
-      U.bar(n*10, ok?'#0B7350':d.c)+
+      U.bar(Math.round(n/that.length*100), ok?'#0B7350':d.c)+
       '<div style="display:flex;flex-direction:column;gap:6px;margin-top:11px">'+
       d.tc.map(function(t,i){
+        if(laTrong(t)) return '';
         var k = 'kpi-'+d.no+'-'+i, on = !!S[k];
         return '<button class="card pad-sm lift" data-check="'+h(k)+'" style="text-align:left;'+
           'border-color:'+(on?d.c+'55':'var(--line)')+';background:'+(on?d.c+'12':'transparent')+'">'+

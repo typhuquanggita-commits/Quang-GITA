@@ -553,8 +553,26 @@ G.VIEWS['vinh-danh'] = function(){
     }).join('') + '</div>'+
     '<p class="tiny muted mt2">Ghi nhận không có bằng chứng chỉ là lời khen cho vui — nó gãy ở lần vấp đầu tiên.</p></div>';
 
+  /* Kỳ tích năm đọc G.FAMILIES — kho hồ sơ gia đình, chỉ nạp được khi có
+     khoá. Không có kho thì màn này từng ném lỗi, và ném đúng trên bản
+     xem thử: phụ huynh, học viên và cộng tác viên đều mất một màn DẪN
+     HÀNH ĐỘNG. Nhưng công thức ghi nhận ba bước ở trên KHÔNG cần hồ sơ
+     nhà nào cả — nó dùng được ngay cả khi kho trống. Nên chỗ thiếu dữ
+     liệu chỉ nói là chưa có nhà nào tới mốc, rồi chỉ tiếp việc phải làm,
+     chứ không kéo cả màn xuống theo. */
+  var nhaKT = (G.FAMILIES || []).filter(function(f){ return f.tier >= 3; });
   o += U.sec('KỲ TÍCH NĂM ĐANG CHẠY','Ít nhất một sản phẩm, thành tựu hoặc tác động có bằng chứng');
-  o += '<div class="grid g2">' + G.FAMILIES.filter(function(f){return f.tier>=3;}).map(function(f){
+  if(!nhaKT.length)
+    o += '<div class="card mb" style="border-color:var(--gita-vien-1)">'+
+      '<b class="sm" style="display:block;margin-bottom:6px">Chưa có kỳ tích nào được ghi trên máy này</b>'+
+      '<p class="sm dim" style="line-height:1.75">Kỳ tích năm chỉ hiện khi nhà mình đã qua tầng ba — '+
+      'đó là mốc mà một sản phẩm, một thành tựu hay một tác động đã có bằng chứng để kể lại. '+
+      'Chưa tới mốc thì việc của hôm nay không phải là chờ: mở công thức ba bước ở trên, ghi lại '+
+      'MỘT việc con đã tự làm trong tuần này, kèm ngày giờ. Bản ghi đó là hạt đầu tiên của kỳ tích năm.</p>'+
+      '<div class="row wrap mt" style="gap:8px">'+
+      '<button class="btn ghost sm" data-v="nhiem-vu">'+ic('check')+'Việc của hôm nay</button>'+
+      '<button class="btn ghost sm" data-v="nhat-ky-vi-tri">'+ic('book')+'Ghi vào sổ nhật ký</button></div></div>';
+  o += '<div class="grid g2">' + nhaKT.map(function(f){
     var t = G.tierOf(f.tier);
     return '<div class="card lift" style="border-color:'+t.c+'26">'+
       '<div class="row wrap" style="gap:7px;margin-bottom:8px">'+U.chip(t.code,t.c)+U.chip('Ngày '+f.ngay)+'</div>'+
@@ -566,7 +584,7 @@ G.VIEWS['vinh-danh'] = function(){
 
   o += U.sec('GHI NHẬN KHÔNG XẾP HẠNG','Ghi nhận việc đã làm, sắp theo thứ tự chữ cái — không theo thứ hạng');
   o += '<div class="card"><p class="sm dim" style="line-height:1.7">'+
-    h((G.DAISU.vinhDanh && G.DAISU.vinhDanh.cachThuc && G.DAISU.vinhDanh.cachThuc[0]) ||
+    h((G.DAISU && G.DAISU.vinhDanh && G.DAISU.vinhDanh.cachThuc && G.DAISU.vinhDanh.cachThuc[0]) ||
       'Mỗi quý một lần, tổng hợp việc đã làm và đăng một bài ghi nhận, sắp theo thứ tự chữ cái chứ không theo thứ hạng.')+'</p></div>';
   return o;
 };

@@ -4241,6 +4241,124 @@ const { chromium } = require(PW);
     }
   }
 
+  /* ═══════════ 42 · CỔNG KHÁCH HÀNG TRÊN BẢN KHÔNG CÓ KHOÁ ═══════════
+     Chỗ mù của hai bộ kiểm cũ: cả kiem-tra.js lẫn ra-soat-day-du.js đều
+     chạy KHI ĐÃ CÓ BỘ KHOÁ. Có khoá thì mọi kho nạp được, mọi màn có
+     dữ liệu, mọi thứ xanh. Nhưng bản một tệp gửi cho khách, bản xem thử,
+     và mọi bản chưa nối máy chủ cấp phép đều chạy Ở CHẾ ĐỘ MẪU — và đó
+     mới là bản người ngoài mở.
+
+     Đo ở đúng chế độ ấy thì ra: phụ huynh mở "Nhiệm vụ & Nhật ký 365"
+     nhận được TƯỜNG CẤP PHÉP thay vì việc của hôm nay, vì G.TODAY không
+     nằm trong gói công khai. Màn dẫn hành động nặng nhất của khách hàng
+     hoá thành một lời từ chối. Mục này đo ở chế độ mẫu, trên chính bản
+     một tệp, đi qua render() thật chứ không gọi thẳng G.VIEWS. */
+  console.log('\n42 · CỔNG KHÁCH HÀNG TRÊN BẢN KHÔNG CÓ KHOÁ');
+  {
+    const fs42 = require('fs'), px42 = require('path');
+    const goc42 = px42.join(__dirname, '..');
+    const mau42 = JSON.parse(fs42.readFileSync(px42.join(goc42, 'kho', 'mau.json'), 'utf8'));
+
+    const cong = ['ph', 'hs', 'coach', 'tuvan', 'admin', 'ctv'];
+    const thieuCong = cong.filter(c => !(mau42.TODAY && (mau42.TODAY[c] || []).length));
+    bao(!thieuCong.length,
+      'gói công khai mang việc-của-hôm-nay cho ĐỦ sáu cổng — thiếu nó thì màn nhiệm vụ của khách hàng thành tường cấp phép',
+      thieuCong.length ? 'thiếu: ' + thieuCong.join(' ') :
+        cong.map(c => c + '=' + mau42.TODAY[c].length).join(' · '));
+
+    const ban42 = /version:\s*'([^']+)'/.exec(
+      fs42.readFileSync(px42.join(goc42, 'src', 'data.core.js'), 'utf8'));
+    const tep42 = ban42 && px42.join(goc42, 'GITA365-v' + ban42[1] + '-gioi-thieu.html');
+    if (!(tep42 && fs42.existsSync(tep42))) {
+      bao(false, 'có bản một tệp để đo cổng khách hàng', 'chưa dựng — chạy python3 tools/dong-goi.py');
+    } else {
+      const KH = [['phụ huynh', 'phuhuynh@gita365.vn', 'ph'],
+                  ['học viên', 'hocvien@gita365.vn', 'hs'],
+                  ['cộng tác viên', 'daisu@gita365.vn', 'ctv']];
+      for (const [ten42, u42, cong42] of KH) {
+        const q = await b.newPage();
+        const loiQ = [];
+        q.on('pageerror', e => loiQ.push(String(e)));
+        await q.goto('file://' + tep42, { waitUntil: 'load' });
+        await q.waitForTimeout(1500);
+        await q.evaluate(x => window.G.doLogin(x), u42);
+        await q.waitForTimeout(2000);
+
+        const r42 = await q.evaluate(() => {
+          const G = window.G, ra = { mau: !!(G.KHO && G.KHO.cheDoMau), vao: G.S.view,
+            tuong: [], man: 0, khoTong: false, coCoChe: false, oTrong: 0, tuTich: 0, doDuoc: 0 };
+          G.NAV.forEach(g => g.items.forEach(it => {
+            if (!G.vaiThayMan(G.S.roleObj, it)) return;
+            ra.man++;
+            if (it.v === 'kho-tong') ra.khoTong = true;
+            G.S.view = it.v; G.render();
+            const t = document.getElementById('main').innerText;
+            if (t.indexOf('PHẦN NÀY CHƯA MỞ') >= 0 || t.indexOf('NGOÀI PHẠM VI') >= 0) ra.tuong.push(it.v);
+            if (it.v === 'ket-noi')
+              ra.coCoChe = /kiemBanMoi|hosoAppSaoLuu|sendBeacon|mã băm/.test(t);
+            if (it.v === 'kpi-100')
+              ra.oTrong = (t.match(/\[Tiêu chí mở khi được cấp phép\]/g) || []).length;
+          }));
+          /* Bắt đầu ở đây: đếm bước tự khai và bước đo được */
+          G.S.view = 'bat-dau'; G.render();
+          const bd = document.getElementById('main').innerText;
+          ra.tuTich = (bd.match(/tự xác nhận/g) || []).length;
+          ra.doDuoc = (bd.match(/tối đã ghi|ô đã viết|bài đã chấm|việc hôm nay/g) || []).length;
+          ra.bdChu = bd.length;
+          return ra;
+        });
+
+        bao(r42.mau === true, ten42 + ': bản một tệp chạy đúng chế độ mẫu — không kèm kho, không kèm khoá');
+        bao(!r42.tuong.length,
+          ten42 + ': KHÔNG màn nào của khách hàng biến thành tường cấp phép — khách hàng phải làm được việc kể cả khi chưa có gói nghề',
+          r42.tuong.length ? 'gặp tường: ' + r42.tuong.join(' ') : r42.man + ' màn đều có nội dung thật');
+        bao(r42.vao === 'bat-dau',
+          ten42 + ': đăng nhập vào đổ thẳng vào chuỗi năm bước, không đổ vào một màn lý thuyết',
+          'vào màn ' + r42.vao);
+        bao(!r42.khoTong,
+          ten42 + ': KHÔNG thấy "Kho tổng" — mục lục 57 kho nghề của Học viện là kiến trúc tài sản, và kiến trúc mới là thứ đối thủ cần',
+          r42.khoTong ? 'vẫn thấy' : 'đã đóng');
+        bao(!r42.coCoChe,
+          ten42 + ': màn kết nối KHÔNG bày cơ chế đồng bộ — tên hàm, mã băm, sổ sao lưu là tài liệu kiến trúc, không phải việc của gia đình',
+          r42.coCoChe ? 'còn lộ cơ chế' : 'chỉ còn phần dùng được');
+        bao(r42.oTrong === 0,
+          ten42 + ': màn mười điểm về đích KHÔNG vẽ tiêu chí chưa cấp phép thành ô tích được — tích vào một ô rỗng là việc giả',
+          r42.oTrong ? r42.oTrong + ' ô rỗng' : 'không ô rỗng nào');
+        bao(r42.doDuoc >= 2,
+          ten42 + ': chuỗi năm bước có ít nhất hai bước tự đánh dấu bằng DẤU VẾT THẬT — trước v9.2 cả năm bước đều tích tay, nên chuỗi đi tiếp bằng lời khai',
+          r42.doDuoc + ' bước đo được · ' + r42.tuTich + ' bước tự khai');
+        bao(!loiQ.length, ten42 + ': không lỗi trang nào trên suốt cổng',
+          loiQ.length ? loiQ[0].slice(0, 90) : '0 lỗi');
+        await q.close();
+      }
+
+      /* Ba cổng khách phải có ba chuỗi KHÁC nhau. Trước v9.2 cộng tác viên
+         không có nhánh riêng nên rơi vào nhánh phụ huynh và được giao việc
+         "viết bảng tầm nhìn của nhà mình", "chốt bảng chín vai trong nhà" —
+         cộng tác viên không có nhà nào trong hệ thống để làm việc đó. */
+      const q2 = await b.newPage();
+      await q2.goto('file://' + tep42, { waitUntil: 'load' });
+      await q2.waitForTimeout(1500);
+      const khac = await q2.evaluate(async () => {
+        const G = window.G, ra = {};
+        for (const [c, u] of [['ph', 'phuhuynh@gita365.vn'], ['hs', 'hocvien@gita365.vn'], ['ctv', 'daisu@gita365.vn']]) {
+          const a = (G.ACCOUNTS || []).filter(x => x.u === u)[0];
+          G.S.acc = a; G.S.role = a.role; G.S.roleObj = G.roleById(a.role);
+          ra[c] = (G.VIEWS['bat-dau']().match(/font-size:15\.5px">([^<]+)</g) || []).join('|');
+        }
+        return ra;
+      });
+      await q2.close();
+      const bo = new Set(Object.values(khac));
+      bao(bo.size === 3,
+        'ba cổng khách hàng có BA chuỗi năm bước khác nhau — cộng tác viên không nhận việc của một gia đình',
+        bo.size + '/3 chuỗi phân biệt được');
+      bao(!/tầm nhìn|chín vai/i.test(khac.ctv || ''),
+        'chuỗi của cộng tác viên không chứa việc của một gia đình — họ có mã liên kết và trần hoa hồng, không có "nhà mình" trong hệ thống',
+        /tầm nhìn|chín vai/i.test(khac.ctv || '') ? 'vẫn còn việc của gia đình' : 'đã tách');
+    }
+  }
+
   console.log('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành'));
   await b.close();
   process.exit(loi ? 1 : 0);

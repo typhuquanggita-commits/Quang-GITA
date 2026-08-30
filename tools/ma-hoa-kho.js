@@ -307,7 +307,16 @@ const MO_RA = [
      trước khi quyết bước vào. Giấu chính tấm bản đồ mình đang mời người
      ta đi thì lời mời không có nghĩa gì. */
   'HANHTRINH12', 'TRU_GITA',
-  'KENH_DS', 'KENH_CHANG', 'KENH_LUAT'
+  'KENH_DS', 'KENH_CHANG', 'KENH_LUAT',
+  /* Việc của hôm nay, theo từng cổng: 4 việc cho phụ huynh, 3 cho học
+     viên, 3 cho cộng tác viên, và của cả đội ngũ. Thiếu nó ở gói công
+     khai thì màn "Nhiệm vụ hôm nay" — màn dẫn hành động nặng nhất của
+     khách hàng — ném lỗi ngay trên bản một tệp gửi cho khách.
+
+     Đây không phải tài sản nghề: nó là danh sách việc mà chính gia đình
+     phải làm, viết bằng ngôn ngữ gia đình. Giấu nó đi là giấu đúng phần
+     mình đang bảo người ta làm. */
+  'TODAY'
   /* SOAT_* KHÔNG nằm ở đây. Chuẩn soát liệt kê tên mọi kho nội bộ, trường
      bắt buộc của từng kho và số bản ghi phải có — đưa vào gói mẫu công khai
      là vẽ sẵn bản đồ kho cho người chưa được cấp phép. Nó ở gói NỀN. */

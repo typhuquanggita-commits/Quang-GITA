@@ -18,7 +18,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.1',
+  version: '9.2',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -321,6 +321,12 @@ G.TAM_NHIN = [
 ];
 
 /* Sáu chân dung người dùng — lời mời bước vào, hiển thị ở Cổng vào */
+/* Cộng tác viên đổ vào "Bắt đầu ở đây" như phụ huynh và học viên, thay
+   vì vào màn Đại sứ. Lý do: G.VIEWS['bat-dau'] trước v9.2 chỉ có nhánh
+   cho ph · hs · coach · tuvan · admin — không có nhánh ctv, nên cộng
+   tác viên rơi vào nhánh dự phòng và nhận NĂM BƯỚC CỦA PHỤ HUYNH: viết
+   bảng tầm nhìn của nhà mình, chốt bảng chín vai trong nhà. Nay có
+   nhánh riêng, nên cổng này trỏ vào đó. */
 G.PORTALS = {
   admin:{n:'Trung Tâm Điều Hành', ic:'shield', c:'#185AB4', home:'dieu-hanh',
     say:'Anh nhìn thấy toàn bộ trường năng lượng: từng gia đình đang ở đâu, đội ngũ đang giữ lửa thế nào, kho báu vật đang được dùng ra sao.'},
@@ -332,7 +338,7 @@ G.PORTALS = {
     say:'Đây là bản đồ của chính gia đình anh chị. Không ai viết hộ. Hệ thống chỉ giữ chuẩn và soi đường.'},
   hs:{n:'Hành Trình Của Con', ic:'star', c:'#185AB4', home:'bat-dau',
     say:'Đây là hành trình của em. Mỗi ngày em đi thêm một bước, bản đồ này sáng thêm một chỗ.'},
-  ctv:{n:'Vệ Tinh Lan Toả', ic:'share', c:'#BE0E16', home:'dai-su',
+  ctv:{n:'Vệ Tinh Lan Toả', ic:'share', c:'#BE0E16', home:'bat-dau',
     say:'Câu chuyện thật của anh chị là thứ mở được cánh cửa mà không quảng cáo nào mở nổi.'}
 };
 
@@ -457,7 +463,22 @@ G.NAV = [
     {v:'luat-lam-viec',t:'Luật làm việc với gia đình',    h:'Đi qua hệ thống · vi phạm hạ 50% KPI 3 tháng', ic:'shield', perm:'nghe_chung', capMo:'nghe', star:1},
     {v:'ref-gita',    t:'Hệ thống một nhà giới thiệu một nhà', h:'Chân dung Ref · 30s-60s-8p · 16 bước', ic:'share', perm:'nghe_chung', capMo:'nghe', star:1},
     {v:'khach-lon',   t:'Chăm sóc khách hàng lớn',        h:'4 tầng · nhịp chạm · hồ sơ 68 điểm', ic:'crown', perm:'nghe_chung', capMo:'nghe', star:1},
-    {v:'kho-tong',    t:'Kho tổng — toàn cảnh',        h:'9 nhóm · hơn 50 kho · số đếm thật', ic:'vault', capMo:'chung', star:1},
+    /* Kho tổng liệt kê CHÍN NHÓM KHO và 57 kho tư liệu của Học viện, kèm
+       tên từng kho: "220 phác đồ × 5 tầng", "1.000 kịch bản chuyên môn —
+       lời để nói ra miệng, đã thử qua nhiều buổi", "250 tình huống thực
+       chiến", "Ma trận 220 vấn đề × 5 tầng", và cả nhóm K2 tự giới thiệu
+       là "Kho giải pháp cho Tư vấn, Coach — thứ đội ngũ mở ra khi ngồi
+       trước một gia đình đang mắc".
+
+       Nó không mở NỘI DUNG của mấy kho ấy — nhưng nó mở KIẾN TRÚC, và
+       kiến trúc mới là thứ một đối thủ cần. Trước v9.2 màn này không có
+       perm, nên mọi phụ huynh, học viên và cộng tác viên đều cầm được
+       bản đồ tài sản nghề của Học viện.
+
+       Khách hàng không mất gì: màn "Phạm vi của tôi" đã trả lời đúng câu
+       hỏi của họ — mình mở tới đâu, còn gì chưa mở — bằng ngôn ngữ gia
+       đình, không kèm mục lục kho nghề. */
+    {v:'kho-tong',    t:'Kho tổng — toàn cảnh',        h:'9 nhóm · hơn 50 kho · số đếm thật', ic:'vault', perm:'nghe_chung', capMo:'chung', star:1},
     {v:'thu-vien',    t:'Thư viện tài liệu',           h:'Gửi tài liệu lên · kho lớn lên từ đây', ic:'book', capMo:'chung', star:1},
     {v:'minh-chung',  t:'Minh chứng nhiệm vụ',         h:'Nộp ảnh, báo cáo xác nhận đã làm',   ic:'check', capMo:'chung', star:1},
     {v:'kho',         t:'Kho báu vật',                 h:'Toàn cảnh những gì anh chị đang có', ic:'vault', star:1, perm:'nghe_chung', capMo:'nghe'},
