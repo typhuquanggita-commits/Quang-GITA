@@ -84,6 +84,32 @@ phải làm lại cùng người hướng dẫn.
 
 ---
 
+### 0.5 Bảng tra nhanh — công cụ nào dùng cho việc gì
+
+| Việc cần làm | Công cụ chính | Công cụ đối chiếu bắt buộc |
+|---|---|---|
+| Lập baseline trước khi vào chương trình | `CC-01` + `CC-02` + `CC-03` | Ba công cụ này là một cụm, không dùng lẻ |
+| Quan sát trong 7 ngày trại | `CC-05` | `CC-04` (nhật ký cùng kỳ) |
+| Chấm năng lực | `CC-06` | `CC-05` + sản phẩm thật |
+| Tổng hợp cuối Tầng 1 | `CC-08` | Cả bốn nguồn |
+| Tìm nguyên nhân (từ Tầng 2) | `CC-09` | `CC-04` 21 ngày + `CC-10` 3 tuần |
+| Chọn đòn bẩy 90 ngày | `CC-07` | `CC-09` |
+| Theo dõi trong 90 ngày | `CC-10` | `CC-04` |
+| Nghiệm thu cấp | `CC-11` | `CC-06` + `CC-10` + `CC-13` |
+| Cải tiến chất lượng buổi dạy | `CC-12` | — (đo buổi dạy, không đo học viên) |
+| Bằng chứng dài hạn | `CC-13` | `CC-06` |
+| Chất lượng dịch vụ | `CC-14` | — (**không ghép vào hồ sơ năng lực**) |
+
+**Ba tình huống thường gặp và công cụ tương ứng:**
+
+| Tình huống | Bắt đầu từ đâu |
+|---|---|
+| Gia đình mô tả một vấn đề, chưa có dữ liệu gì | `CC-01` + `CC-02` + `CC-03`. **Không mở phác đồ khi chưa đủ 4 nguồn** |
+| Học viên đang chạy 90 ngày, chỉ số xấu 2 tuần liên tiếp | Đọc `CC-10` theo mẫu ở `§10.4`, rồi quay lại `CC-09` kiểm lớp tiếp theo |
+| Bốn nguồn mâu thuẫn nhau | `§15`, sáu bước, không đi tắt |
+
+---
+
 ## 1. CC-01 · Phiếu tự đánh giá học viên (30 câu, 11 nhóm)
 
 | Dùng khi nào | Ai làm | Thời lượng | Nộp cho ai |
@@ -889,3 +915,523 @@ Bản đồ không cho điểm. Nghiệm thu bằng bảng kiểm sáu dòng:
 > hoặc dấu hiệu tự làm đau đều **vượt phạm vi công cụ** và phải chuyển chuyên viên tâm lý trong ngày.
 
 ---
+
+## 9. CC-09 · Bản đồ Cơ chế (6 lớp)
+
+| Dùng khi nào | Ai làm | Thời lượng | Nộp cho ai |
+|---|---|---|---|
+| `D28`, sau khi hoàn tất 3 vòng × 7 ngày của Tầng 2 | Tư vấn + Coach phụ trách | 60 phút/học viên | Hồ sơ học viên · căn cứ mở phác đồ 90 ngày |
+
+**Đây là công cụ giải mã, dùng cả bốn nguồn cộng với kết quả ba vòng thử của Tầng 2.**
+Đây là công cụ **đầu tiên trong bộ được phép viết về nguyên nhân** — và chỉ được viết
+dưới dạng giả thuyết đã qua kiểm chứng thực nghiệm, kèm bằng chứng phản bác.
+
+### 9.1 Sáu lớp — thứ tự kiểm là bắt buộc
+
+Kiểm từ lớp 1 xuống lớp 6. **Không được nhảy xuống lớp 6 trước.** Đây là hiện thân
+của nguyên tắc: giả thuyết đầu tiên khi học viên không làm được không phải "thiếu ý chí",
+mà là "hệ thống thiết kế chưa phù hợp".
+
+| Lớp | Tên lớp | Câu hỏi kiểm | Cách kiểm trong 7 ngày | Nếu đây là lớp có vấn đề thì thấy gì |
+|---|---|---|---|---|
+| **L1** | **Kích cỡ nhiệm vụ** | Nhiệm vụ có nằm trong tầm hiện tại không? Bước đầu tiên mất bao lâu? | Cắt nhiệm vụ còn 1/3, giữ nguyên mọi thứ khác, chạy 7 ngày | `completion rate` tăng rõ ngay tuần đầu chỉ vì nhiệm vụ nhỏ lại |
+| **L2** | **Neo và trình tự** | Việc này bám vào việc nào có sẵn? Neo có ổn định không? | Giữ nguyên nhiệm vụ, đổi neo (đổi giờ, gắn sau một việc cố định), chạy 7 ngày | `start rate` tăng mà `completion rate` không đổi — vấn đề ở khởi động, không ở năng lực |
+| **L3** | **Môi trường vật lý và số** | Cái gì trong tầm với? Cái gì cắt ngang? Ai có mặt? | Đổi một biến môi trường duy nhất (vị trí thiết bị, chỗ ngồi, khung giờ), chạy 7 ngày | Số lần đứt trong phiên giảm rõ khi chỉ đổi vị trí thiết bị |
+| **L4** | **Kỹ năng nền** | Có kỹ năng nhỏ hơn nào đang thiếu khiến việc lớn không chạy? | Dạy riêng kỹ năng nền 10 phút/ngày, chưa động vào nhiệm vụ chính | Học viên làm được ngay sau khi được bổ kỹ năng nền — chứng tỏ không phải vấn đề duy trì |
+| **L5** | **Hệ quả và củng cố** | Sau khi làm thì việc gì xảy ra? Sau khi không làm thì việc gì xảy ra? Cái nào dễ chịu hơn? | Ghi bảng hệ quả 7 ngày: hành vi → việc xảy ra ngay sau → trong vòng 5 phút | Không làm thì được yên; làm thì bị giao thêm việc — cơ chế đang củng cố ngược |
+| **L6** | **Ý nghĩa và niềm tin năng lực** | Học viên tin mình làm được đến đâu? Việc này phục vụ điều gì của em? | Hội thoại `CC-03` rút gọn + theo dõi `Q17`, `Q18` qua 3 tuần | Điều kiện ở L1–L5 đều đã đúng mà hành vi vẫn không đổi |
+
+**Quy tắc dừng:** nếu một lớp cho kết quả rõ ràng, **dừng lại ở lớp đó và làm tiếp ở đó**.
+Không kiểm nốt cho đủ sáu lớp. Phần lớn ca dừng ở L1–L3.
+
+### 9.2 Bảng ghi ba vòng thử Tầng 2
+
+Mỗi vòng 7 ngày, mỗi vòng **thay đúng một biến**. Thay hai biến thì không đọc được kết quả.
+
+| Vòng | Lớp đang kiểm | Biến duy nhất được thay | Chỉ số theo dõi | Kết quả (số trước → số sau) | Kết luận vòng |
+|---|---|---|---|---|---|
+| Vòng 1 (D8–D14) | | | | | |
+| Vòng 2 (D15–D21) | | | | | |
+| Vòng 3 (D22–D28) | | | | | |
+
+**Cách đọc kết quả vòng:**
+
+| Thay đổi chỉ số | Đọc là |
+|---|---|
+| Tăng ≥ 30% và giữ được ở tuần sau | Biến vừa thay **là một biến thật**. Giữ lại, chuyển sang lớp tiếp theo |
+| Tăng ở 2–3 ngày đầu rồi trở lại như cũ | Hiệu ứng mới lạ, không phải cơ chế. Không kết luận |
+| Không đổi | Biến này không phải biến chính. Chuyển lớp, **không tăng cường độ của cùng một biến** |
+| Giảm | Biến vừa thay đang gây thêm tải. Trả lại nguyên trạng ngay, ghi lại |
+
+### 9.3 Ô kết luận — bốn phần bắt buộc
+
+| Phần | Nội dung | Yêu cầu |
+|---|---|---|
+| **Giả thuyết cơ chế được giữ lại** | Một câu, dạng "khi … thì … vì …" | Phải nêu lớp nào. Tối đa hai giả thuyết |
+| **Bằng chứng ủng hộ** | Số liệu từ vòng thử, ghi rõ trước và sau | Bắt buộc có số |
+| **Bằng chứng phản bác** | Ngày nào, tình huống nào không khớp với giả thuyết | **Bắt buộc có.** Không tìm được thì ghi "chưa tìm được — cần kiểm tiếp", không bỏ trống |
+| **Điểm đòn bẩy chọn cho 90 ngày** | Đúng **một** điểm | Kèm chỉ số sẽ theo dõi và mốc kiểm ở ngày 30 |
+
+> **Giới hạn của công cụ này:**
+> `CC-09` chạy trên **thiết kế thử một biến trong đời sống thật**, mà đời sống thật không giữ
+> các biến khác đứng yên: một tuần có kiểm tra ở trường, một tuần ông bà tới chơi, một tuần thời tiết đổi —
+> tất cả đều chen vào kết quả. Vì vậy kết luận của `CC-09` là **giả thuyết mạnh nhất hiện có**,
+> không phải nguyên nhân đã chứng minh. Ba vòng bảy ngày cũng **không đủ để kiểm tới lớp 6**
+> ở phần lớn ca; khi điều kiện L1–L5 chưa được kiểm sạch thì mọi kết luận về động lực đều
+> không đủ căn cứ. Công cụ này **không phân biệt được** vấn đề thuộc thiết kế hệ thống với
+> vấn đề có gốc y tế hoặc tâm lý: khó vào giấc kéo dài, sụt cân, mất hứng thú với mọi hoạt động
+> kể cả hoạt động từng yêu thích, hoặc biểu hiện lo âu rõ rệt đều **vượt phạm vi** — chuyển
+> chuyên viên tâm lý và, khi cần, cơ sở y tế. `CC-09` cũng không dùng được cho học viên
+> có dưới 21 ngày dữ liệu `CC-04`.
+
+---
+
+## 10. CC-10 · Bảng KPI hằng tuần
+
+| Dùng khi nào | Ai làm | Thời lượng | Nộp cho ai |
+|---|---|---|---|
+| Mỗi tuần trong 90 ngày (13 tuần) | Coach | 10 phút/tuần/học viên | Gia đình (bản tóm tắt 1 trang) · Trainer trưởng (bản đủ) |
+
+**Đây là Nguồn 3, phần định lượng.** Số liệu lấy từ `CC-04` (học viên tự ghi) và
+xác nhận chéo với `CC-02` ở các mốc có phiếu. Coach **không tự điền số thay học viên**.
+
+### 10.1 Bảy chỉ số — công thức và ngưỡng
+
+| Mã | Chỉ số | Công thức | Ngưỡng tốt | Đọc gì từ nó |
+|---|---|---|---|---|
+| K1 | **start rate** | số ngày bắt đầu trong ±15 phút quanh giờ hẹn ÷ 7 | ≥ 80% | Chất lượng của **neo**. Thấp thì xét lại lớp L2 của `CC-09` |
+| K2 | **completion rate** | số nhiệm vụ hoàn tất ÷ số nhiệm vụ đã đặt | ≥ 75% | Chất lượng của **kích cỡ nhiệm vụ**. Dưới 50% thường là nhiệm vụ quá lớn, không phải thiếu nỗ lực |
+| K3 | **reminder rate** | tổng số lần bị nhắc ÷ 7 | giảm ≥ 50% so baseline | Mức phụ thuộc hỗ trợ bên ngoài |
+| K4 | **consistency** | số ngày liên tục dài nhất trong tuần | chuỗi ≥ 14 ngày ở mốc tháng | Khả năng nối ngày thành chuỗi |
+| K5 | **recovery time** | số ngày từ lúc đứt tới lúc quay lại | **≤ 3 ngày** | **Chỉ số quan trọng nhất của cả hệ.** Xem `§10.3` |
+| K6 | **autonomy index** | số nhiệm vụ tự khởi xướng ÷ tổng nhiệm vụ | tăng đều theo tháng | Mức tự chủ thật |
+| K7 | **sleep consistency** | số đêm ngủ trong ±30 phút quanh giờ đã định ÷ 7 | ≥ 80% | Nền của tất cả các chỉ số còn lại |
+
+### 10.2 Bảng ghi tuần — bản in
+
+| Chỉ số | Baseline `D7` | Tuần trước | Tuần này | Chênh | Ghi chú bối cảnh tuần |
+|---|---|---|---|---|---|
+| K1 start rate | | | | | |
+| K2 completion rate | | | | | |
+| K3 reminder rate | | | | | |
+| K4 consistency | | | | | |
+| K5 recovery time | | | | | |
+| K6 autonomy index | | | | | |
+| K7 sleep consistency | | | | | |
+
+**Cột ghi chú bối cảnh là cột bắt buộc**, không phải cột tuỳ chọn: tuần thi, tuần ốm,
+tuần gia đình có việc, tuần nghỉ lễ. Một tuần không có ghi chú bối cảnh sẽ bị đọc sai
+ở tháng thứ ba khi không còn ai nhớ tuần đó có chuyện gì.
+
+### 10.3 Vì sao K5 là chỉ số quan trọng nhất
+
+Mọi học viên đều sẽ đứt chuỗi trong 90 ngày — không có ngoại lệ, và một lộ trình giả định
+không có ngày đứt là một lộ trình thiết kế sai. Điều phân biệt kết quả không phải là
+**có đứt hay không**, mà là **đứt rồi quay lại sau bao lâu**. Một học viên có `K4` = 20 ngày
+rồi đứt và mất 15 ngày để quay lại kém hơn một học viên có `K4` = 6 ngày nhưng luôn quay lại
+trong 1 ngày — vì học viên thứ hai đã có cơ chế phục hồi, còn học viên thứ nhất chỉ mới có chuỗi.
+Vì vậy: **khi K5 xấu đi, xử lý K5 trước, không xử lý K4.**
+
+### 10.4 Cách chấm và đọc kết quả
+
+| Mẫu số liệu quan sát được | Đọc là | Việc cần làm |
+|---|---|---|
+| K1 cao, K2 thấp | Bắt đầu tốt, không hoàn tất | Nhiệm vụ quá lớn — cắt còn 1/3, giữ nguyên neo |
+| K1 thấp, K2 cao | Vào việc khó, làm thì xong | Vấn đề ở neo và ở môi trường khởi động, không ở năng lực |
+| K3 giảm nhưng K6 không tăng | Bớt bị nhắc mà chưa tự khởi xướng | Đang ở khoảng chuyển; giữ nguyên thiết kế thêm 2 tuần, không thêm nhiệm vụ |
+| K5 tăng dần qua các tuần | **Cảnh báo sớm nhất trong cả hệ** | Rà lại tải và sự kiện đời sống ngay trong tuần, trước khi các chỉ số khác kịp xấu |
+| K7 giảm trước, các chỉ số khác giảm sau 5–10 ngày | Giấc ngủ là biến gốc của tuần đó | Xử lý K7 trước, tạm dừng tăng nhiệm vụ |
+| Mọi chỉ số đều tốt nhưng bằng chứng kết quả (`CC-13`) không đổi | Đang làm đúng quy trình, sai phương pháp — vấn đề thuộc **T**, không thuộc **A** | Chuyển trọng tâm sang `N04`, `NL-04`, `NL-05` |
+
+**Quy tắc đọc số:** không kết luận từ một tuần. Một chỉ số phải xấu **hai tuần liên tiếp**
+mới được coi là xu hướng. Một tuần xấu đơn lẻ được ghi lại kèm bối cảnh và bỏ qua.
+
+> **Giới hạn của công cụ này:**
+> `CC-10` đo **nhịp làm việc**, không đo kết quả học tập và không đo năng lực. Toàn bộ bảy chỉ số
+> có thể cùng ở mức tốt trong khi học viên vẫn không tiến bộ về học thuật — trường hợp đó
+> có thật và khá phổ biến, và nó có nghĩa là phương pháp học sai chứ không phải thói quen sai.
+> Số liệu đầu vào phần lớn đến từ `CC-04` tự ghi, nên nó thừa hưởng mọi sai lệch của tự ghi.
+> Có một rủi ro riêng của công cụ này: khi các chỉ số trở thành mục tiêu, chúng bị tối ưu
+> thay vì phản ánh — học viên đặt nhiệm vụ nhỏ dần để giữ `completion rate` đẹp. Vì vậy `K2`
+> luôn phải đọc kèm **kích cỡ nhiệm vụ thật**, và `CC-10` không bao giờ được dùng để so sánh
+> giữa các học viên hay để xếp hạng team.
+
+---
+
+## 11. CC-11 · Phiếu nghiệm thu cấp / chu kỳ
+
+| Dùng khi nào | Ai làm | Thời lượng | Nộp cho ai |
+|---|---|---|---|
+| Cuối mỗi cấp (ngày 30, 60, 90) và cuối mỗi chu kỳ 90 của T4 | Coach + Trainer trưởng | 30 phút/học viên | Hồ sơ học viên · điều kiện mở cấp tiếp theo |
+
+**Đây là Nguồn 4.** Nghiệm thu chỉ đạt khi có bằng chứng từ **cả bốn nguồn**, không chấp nhận
+nghiệm thu bằng ấn tượng của Coach.
+
+### 11.1 Bốn thuộc tính năng lực — bốn cửa phải qua
+
+Một năng lực được nghiệm thu khi qua **cả bốn cửa**. Qua ba cửa là chưa đạt, ghi rõ cửa nào chưa qua.
+
+| Thuộc tính | Câu hỏi nghiệm thu | Bằng chứng bắt buộc | Ngưỡng |
+|---|---|---|---|
+| **Ổn định** | Lặp lại được không? | Số lần thực hiện đạt trong 30 ngày gần nhất | ≥ 20/30 ngày, hoặc ≥ 8/10 lần với việc không diễn ra hằng ngày |
+| **Khái quát** | Dùng được ở bối cảnh khác không? | Bằng chứng ở **≥ 2 bối cảnh** khác nhau (nhà / trường / nhóm / dự án) | Ít nhất 1 bối cảnh không phải bối cảnh đã luyện |
+| **Thích nghi** | Giữ được khi hoàn cảnh đổi không? | Bằng chứng ở ít nhất 1 tuần có biến động (thi, ốm, đổi lịch) | Chỉ số giảm không quá 30% và phục hồi trong ≤ 3 ngày |
+| **Tự chủ** | Không cần nhắc không? | `reminder rate` cho hạng mục này | ≤ 1 lần nhắc/tuần |
+
+### 11.2 Phiếu nghiệm thu — bản in
+
+| Mục | Nội dung ghi |
+|---|---|
+| Học viên · cấp đang nghiệm thu · khoảng thời gian | |
+| Đòn bẩy đã chọn ở `CC-09` | |
+| Nhiệm vụ đã chạy (tối đa 3, theo ô T của `CC-07`) | |
+| **Bảng 4 cửa** — mỗi nhiệm vụ một dòng, 4 cột thuộc tính, mỗi ô ghi `đạt / chưa đạt` + bằng chứng | |
+| Bảy chỉ số `CC-10`: baseline → hiện tại | |
+| Bằng chứng kết quả kèm theo (sản phẩm, bài làm, ảnh, video) | |
+| Mức hỗ trợ hiện tại: `tự làm` / `có nhắc` / `có kèm` | |
+| Điều **chưa đạt** và lý do — ghi bằng điều kiện, không bằng nhận xét về học viên | |
+| Quyết định: `mở cấp tiếp theo` / `kéo dài cấp hiện tại 2 tuần` / `quay lại cấp trước` | |
+| Ba chữ ký: học viên · gia đình · Coach | |
+
+### 11.3 Cách chấm và đọc kết quả
+
+| Kết quả bốn cửa | Quyết định | Việc làm tiếp |
+|---|---|---|
+| Qua cả 4 cửa | Mở cấp tiếp theo | Nâng độ khó **một bậc duy nhất**, không nâng cả ba nhiệm vụ cùng lúc |
+| Qua 3 cửa, thiếu **khái quát** | Kéo dài 2 tuần | Giữ nguyên nhiệm vụ, đổi bối cảnh thực hiện |
+| Qua 3 cửa, thiếu **thích nghi** | Kéo dài 2 tuần | Chủ động tạo một biến động nhỏ có kiểm soát (đổi giờ 1 buổi/tuần) |
+| Qua 3 cửa, thiếu **tự chủ** | Kéo dài 2 tuần | Giảm dần tín hiệu nhắc: người nhắc → chuông → bảng ghi → không gì |
+| Qua ≤ 2 cửa | Quay lại rà `CC-09` | **Không tăng cường độ nhiệm vụ cũ.** Nhiều khả năng đòn bẩy chọn sai, không phải học viên chưa nỗ lực |
+
+**Quy tắc bắt buộc:** phiếu nghiệm thu **không đạt** vẫn phải ghi ít nhất **hai việc đã tiến bộ**,
+kèm bằng chứng. Nghiệm thu là công cụ điều hướng, không phải công cụ phán quyết.
+
+> **Giới hạn của công cụ này:**
+> `CC-11` đo được **năng lực trong phạm vi những nhiệm vụ đã được thiết kế và theo dõi** —
+> tức là một lát rất hẹp của học viên. Một học viên qua cả bốn cửa cho ba nhiệm vụ của cấp
+> vẫn có thể chưa chuyển được năng lực đó sang những phần đời sống chưa ai quan sát.
+> Cửa **thích nghi** là cửa yếu nhất về mặt kỹ thuật: nó cần một tuần biến động thật,
+> mà biến động thật thì không đặt lịch được — nếu 30 ngày qua trôi qua êm ả, cửa này
+> **không kiểm được** và phải ghi "chưa có dữ liệu" thay vì ghi "đạt". Công cụ này cũng
+> chịu áp lực xã hội: gia đình đã trả phí và mong thấy tiến bộ, Coach mong học viên qua cấp.
+> Vì vậy quy định hai người ký (Coach **và** Trainer trưởng) không phải thủ tục hành chính
+> mà là biện pháp kỹ thuật chống nới lỏng tiêu chuẩn.
+
+---
+
+## 12. CC-12 · Bảng chấm 12 tiêu chuẩn buổi huấn luyện
+
+| Dùng khi nào | Ai làm | Thời lượng | Nộp cho ai |
+|---|---|---|---|
+| 2 buổi/ngày trong thời gian trại | Trainer trưởng | 15 phút/buổi | Ban chuyên môn · dữ liệu cải tiến buổi hôm sau |
+
+**Đây là Nguồn 3 đo chất lượng dạy, không đo học viên.** Công cụ duy nhất trong bộ này
+mà đối tượng được chấm là **buổi huấn luyện và người dạy**, không phải học viên.
+
+### 12.1 Mười hai tiêu chuẩn — thang 0/1/2
+
+`0` = không có · `1` = có nhưng chưa đủ · `2` = có và đủ theo mô tả.
+
+| # | Tiêu chuẩn | Mức `2` nghĩa là gì (mô tả quan sát được) |
+|---|---|---|
+| **S01** | Mở buổi có mục tiêu học được nêu rõ | Trong 3 phút đầu, học viên nghe được một câu mục tiêu; hỏi bất kỳ học viên nào giữa buổi cũng nhắc lại được |
+| **S02** | Kết nối với buổi trước | Có ít nhất một tham chiếu cụ thể tới nội dung hoặc sản phẩm buổi trước |
+| **S03** | Tỷ lệ học viên nói ≥ 40% thời lượng | Đếm mẫu 3 lát cắt 5 phút; tổng thời gian học viên nói đạt ngưỡng |
+| **S04** | Mọi học viên có ít nhất một lượt tham gia có tên | Không có học viên nào đi qua cả buổi mà không được gọi tên hoặc không có lượt nói |
+| **S05** | Hướng dẫn nhiệm vụ ngắn, kiểm lại được | Sau hướng dẫn, một học viên nhắc lại đúng nhiệm vụ trước khi cả lớp bắt đầu |
+| **S06** | Có ít nhất một lần học viên tự làm không có mẫu | Có khoảng thời gian học viên tự xoay xở, người dạy không can thiệp ngay |
+| **S07** | Phản hồi nhắm vào hành vi và quá trình | Câu phản hồi mô tả việc làm được, không dán nhãn con người, không so sánh giữa học viên |
+| **S08** | Xử lý tình huống không dùng hình phạt | Không có hình phạt thân thể, không kỷ luật liên đới, không phạt bằng bài tập, không phạt tiền. Dùng cơ chế phục hồi |
+| **S09** | Điều chỉnh khi thấy lớp không theo kịp | Có ít nhất một lần người dạy đổi nhịp, đổi ví dụ, hoặc rút bớt nội dung theo phản ứng thật của lớp |
+| **S10** | An toàn thể chất và tâm lý được duy trì | Không gian đủ, dụng cụ an toàn, không có học viên bị cười trong bất kỳ tình huống nào |
+| **S11** | Có sản phẩm hoặc bằng chứng học ra khỏi buổi | Cuối buổi có thứ nhìn thấy được: bản viết, mô hình, bản trình bày, ảnh |
+| **S12** | Chốt buổi có phản tư và có mốc cho buổi sau | 5 phút cuối: học viên nói được một điều đã học và một việc sẽ làm, có mốc thời gian |
+
+### 12.2 Ba ô ghi định tính
+
+| Ô | Nội dung |
+|---|---|
+| **Việc hiệu quả nhất trong buổi** | Mô tả cụ thể để tái sử dụng ở buổi khác |
+| **Phút bị hụt** | Khoảng phút nào lớp mất nhịp, đang diễn ra việc gì lúc đó |
+| **Một điều chỉnh cho buổi tiếp theo** | Đúng một điều, cụ thể, làm được ngay |
+
+### 12.3 Cách chấm và đọc kết quả
+
+**Tổng điểm:** 12 tiêu chuẩn × 2 = **24 điểm tối đa**.
+
+| Tổng | Đọc là | Việc cần làm |
+|---|---|---|
+| **20–24** | Buổi đạt chuẩn | Ghi lại việc hiệu quả nhất vào ngân hàng hoạt động |
+| **15–19** | Đạt, có điểm cần chỉnh | Chọn **một** tiêu chuẩn để cải thiện ở buổi kế, không chọn ba |
+| **10–14** | Chưa đạt | Trainer trưởng dự buổi kế tiếp và cùng thiết kế lại phần bị hụt |
+| **< 10** | Dừng nhân rộng | Thiết kế lại buổi trước khi chạy cho nhóm khác |
+
+**Ba tiêu chuẩn phủ quyết:** `S08` và `S10` ở mức `0` khiến buổi **không đạt bất kể tổng điểm**,
+và phải báo cáo trong ngày. `S04` ở mức `0` lặp lại hai buổi liên tiếp cũng là dấu hiệu phủ quyết —
+nó nghĩa là có học viên đang vô hình trong lớp.
+
+**Đọc theo chuỗi buổi:** một tiêu chuẩn ở mức `0`–`1` trong ≥ 3 buổi liên tiếp là vấn đề của
+**thiết kế chương trình**, không phải của người dạy — chuyển ban chuyên môn, không xử lý bằng nhắc nhở cá nhân.
+
+> **Giới hạn của công cụ này:**
+> `CC-12` chấm **buổi dạy**, không chấm **kết quả học**. Một buổi 24/24 điểm vẫn có thể
+> không tạo ra thay đổi nào ở học viên sau ba tháng; mối liên hệ giữa chất lượng buổi và
+> kết quả dài hạn là gián tiếp và chậm. Công cụ dựa trên quan sát của một người trong một buổi,
+> nên nó chịu ảnh hưởng của việc **có người dự giờ**: người dạy điều chỉnh khi biết mình đang được chấm,
+> và đó là sai lệch không loại bỏ được, chỉ giảm được bằng cách chấm thường xuyên đến mức việc dự giờ
+> trở thành bình thường. Các tiêu chuẩn định lượng như `S03` được đếm bằng mẫu 3 lát cắt,
+> nên sai số đáng kể — không nên đọc chênh lệch 1 điểm giữa hai buổi là chênh lệch thật.
+> Công cụ này **không đánh giá con người làm nghề** và không dùng cho quyết định nhân sự
+> nếu chưa có tối thiểu 10 buổi được chấm.
+
+---
+
+## 13. CC-13 · Portfolio
+
+| Dùng khi nào | Ai làm | Thời lượng | Nộp cho ai |
+|---|---|---|---|
+| Từ T4, cập nhật mỗi quý | Học viên chủ trì, Coach hướng dẫn | Buổi rà quý 45 phút | Hồ sơ học viên · dùng khi chuyển cấp, xét học bổng, ứng tuyển |
+
+**Đây là Nguồn 4, dạng bằng chứng do chính học viên tập hợp.** Đối chiếu với `CC-06` và `CC-11`:
+mỗi năng lực ghi ở `L3` trở lên nên có ít nhất một hiện vật tương ứng trong portfolio.
+
+### 13.1 Sáu phần bắt buộc
+
+| Phần | Nội dung | Số lượng tối thiểu mỗi năm |
+|---|---|---|
+| **1. Hồ sơ căn bản** | Giới thiệu 150 từ do học viên tự viết: em đang luyện gì, đang làm gì, muốn đi đâu | 1, viết lại mỗi năm |
+| **2. Hiện vật sản phẩm** | Sản phẩm thật: bài viết, mô hình, video, bản thiết kế, bản nhạc, kết quả thi đấu | 6 hiện vật/năm |
+| **3. Hồ sơ quá trình** | Với **ít nhất 2 hiện vật**: bản nháp đầu, bản giữa, bản cuối, kèm cái đã đổi giữa các bản | 2 bộ/năm |
+| **4. Bằng chứng tác động lên người khác** | Việc em làm mà người khác được lợi: hướng dẫn lại, tổ chức, giúp nhóm hoàn thành | 2/năm |
+| **5. Nhận xét bên thứ ba** | Nhận xét cụ thể của người ngoài gia đình, mô tả việc làm được, không phải lời khen chung | 3/năm |
+| **6. Phản tư quý** | Mỗi quý một trang: việc làm được · việc chưa được · điều đã đổi cách làm · mục tiêu quý sau | 4/năm |
+
+### 13.2 Bốn câu hỏi cho mỗi hiện vật — học viên tự trả lời khi nộp
+
+| # | Câu hỏi | Yêu cầu trả lời |
+|---|---|---|
+| H1 | Việc này em làm trong bao lâu, từ ngày nào đến ngày nào? | Có mốc thời gian thật |
+| H2 | **Phần nào em tự làm, phần nào có người giúp, người đó giúp gì?** | Bắt buộc trung thực. Ghi có người giúp **không làm giảm giá trị hiện vật**; giấu mới làm hỏng portfolio |
+| H3 | Chỗ khó nhất nằm ở đâu và em xử lý bằng cách nào? | Mô tả quá trình, không mô tả cảm xúc |
+| H4 | Nếu làm lại, em đổi gì? | Một điều cụ thể |
+
+### 13.3 Tiêu chí xét một hiện vật đủ tiêu chuẩn
+
+| Tiêu chí | Đạt khi |
+|---|---|
+| **Có thật, kiểm được** | Có ngày tháng, có bối cảnh, có người xác nhận được nếu cần |
+| **Ghi rõ mức hỗ trợ** | H2 đã trả lời đầy đủ |
+| **Cho thấy quá trình** | Ít nhất với 2 hiện vật, có bản nháp trước và sau |
+| **Do học viên chọn** | Học viên nói được vì sao chọn hiện vật này thay vì hiện vật khác |
+| **Gắn được với năng lực** | Chỉ ra được nó là bằng chứng cho năng lực nào trong 18 năng lực |
+
+### 13.4 Cách chấm và đọc kết quả
+
+Portfolio **không cho điểm tổng**. Buổi rà quý dùng bảng bốn cột:
+
+| Cột | Nội dung |
+|---|---|
+| Hiện vật | Tên, ngày |
+| Năng lực nó chứng minh | Mã `NL-xx` |
+| Mức hỗ trợ | `tự làm` / `có nhắc` / `có kèm` |
+| Điều còn thiếu để lên cấp | Một câu cụ thể |
+
+**Cách đọc theo thời gian:** giá trị của portfolio nằm ở **so sánh giữa các quý của cùng một học viên**.
+
+| Quan sát | Đọc là |
+|---|---|
+| Hiện vật quý sau phức tạp hơn quý trước ở cùng lĩnh vực | Năng lực đang sâu thêm |
+| Hiện vật quý sau ở lĩnh vực khác quý trước | Đang mở rộng, chưa rõ đang sâu thêm — cần thêm dữ liệu |
+| Mức hỗ trợ chuyển từ `có kèm` sang `tự làm` ở cùng loại việc | **Tiến bộ rõ nhất**, kể cả khi sản phẩm không đẹp hơn |
+| Phần 3 (hồ sơ quá trình) trống nhiều quý | Đang tập hợp kết quả, chưa tập hợp việc học — nhắc lại yêu cầu giữ bản nháp |
+| Phần 4 trống cả năm | Chưa có bằng chứng cho `NL-12`, `NL-15` — không suy ra là không có, chỉ là chưa thu |
+
+> **Giới hạn của công cụ này:**
+> Portfolio là **bộ sưu tập do người được đánh giá tự chọn**, nên nó cho thấy phần học viên
+> muốn cho thấy. Nó gần như không ghi lại được những lần thất bại không để lại hiện vật —
+> mà đó thường là phần chứa nhiều thông tin nhất. Portfolio cũng **phản ánh nguồn lực gia đình**:
+> học viên có máy ảnh, có phần mềm, có cha mẹ biết dựng video sẽ có portfolio trông tốt hơn
+> với cùng một mức năng lực. Vì lý do đó, ô H2 về mức hỗ trợ là ô quan trọng nhất của cả công cụ,
+> và portfolio **không bao giờ được dùng để so sánh giữa các học viên**. Cuối cùng, portfolio
+> đo được sản phẩm chứ không đo được **quá trình bên trong**: hai hiện vật giống hệt nhau
+> có thể đến từ hai mức nỗ lực rất khác nhau, và chỉ `CC-04` + `CC-10` mới phân biệt được.
+
+---
+
+## 14. CC-14 · Khảo sát hài lòng + NPS
+
+| Dùng khi nào | Ai làm | Thời lượng | Nộp cho ai |
+|---|---|---|---|
+| `D7` (kết trại) · `D+7` (một tuần sau về nhà) · `D118` · `D365` | Giáo vụ phát và thu | 5 phút | Ban chất lượng · báo cáo tháng |
+
+**Đây là dữ liệu trải nghiệm dịch vụ, không phải dữ liệu năng lực.** Nó **không đi vào hồ sơ
+đánh giá học viên** và không được ghép với bất kỳ chỉ số nào của `CC-06`, `CC-10`, `CC-11`.
+
+### 14.1 Bộ câu hỏi — bản học viên (6 câu)
+
+| # | Câu hỏi | Thang |
+|---|---|---|
+| HV1 | Trong tuần vừa rồi, có bao nhiêu buổi em thấy mình học được điều dùng được ở nhà? | Số buổi / tổng số buổi |
+| HV2 | Có bao nhiêu ngày em thấy có ít nhất một người lớn ở đây biết rõ em đang cần gì? | 0–7 ngày |
+| HV3 | Có bao nhiêu ngày em thấy an toàn khi nói ra ý kiến khác với số đông? | 0–7 ngày |
+| HV4 | Việc gì ở đây em muốn giữ lại? | Trả lời mở |
+| HV5 | Việc gì ở đây em muốn bỏ đi hoặc làm khác? | Trả lời mở |
+| HV6 | Nếu bạn em hỏi có nên tham gia không, em nói gì? | Trả lời mở |
+
+### 14.2 Bộ câu hỏi — bản phụ huynh (6 câu + NPS)
+
+| # | Câu hỏi | Thang |
+|---|---|---|
+| PH1 | Trong 7 ngày qua, có mấy ngày anh chị nhận được thông tin cụ thể về con (không phải thông tin chung của cả nhóm)? | 0–7 ngày |
+| PH2 | Thông tin nhận được có đủ cụ thể để anh chị biết **làm gì ở nhà** không? | 0–7 ngày có, trên tổng số ngày nhận tin |
+| PH3 | Có mấy lần anh chị liên hệ và nhận được phản hồi trong vòng 24 giờ? | Số lần / tổng số lần liên hệ |
+| PH4 | Điều gì trong chương trình đang có giá trị rõ nhất với gia đình? | Trả lời mở |
+| PH5 | Điều gì anh chị mong được làm khác đi? | Trả lời mở |
+| PH6 | Có điều gì anh chị đã định nói mà chưa có dịp nói không? | Trả lời mở |
+| **NPS** | Trên thang **0–10**, khả năng anh chị giới thiệu chương trình cho một gia đình khác là bao nhiêu? | 0–10 |
+| **NPS-b** | Câu hỏi bắt buộc đi kèm: **lý do chính cho con số vừa chọn là gì?** | Trả lời mở |
+
+### 14.3 Cách chấm và đọc kết quả
+
+**Tính NPS:**
+
+| Nhóm | Điểm | Cách xử lý |
+|---|---|---|
+| Người quảng bá | 9–10 | Đọc NPS-b để biết **điều gì đang tạo giá trị**, đưa vào chuẩn vận hành |
+| Người trung lập | 7–8 | Đọc NPS-b để tìm khoảng cách còn lại |
+| Người phản đối | 0–6 | **Liên hệ trong 48 giờ**, không phải để thuyết phục, mà để nghe hết lý do |
+
+`NPS = %người quảng bá − %người phản đối`. Người trung lập không tính vào tử số nhưng tính vào mẫu số.
+
+**Bốn quy tắc đọc:**
+
+| Quy tắc | Lý do |
+|---|---|
+| Đọc `D+7` quan trọng hơn đọc `D7` | Điểm ngay lúc kết trại chịu ảnh hưởng của cảm xúc chia tay; điểm sau một tuần về nhà mới phản ánh giá trị dùng được |
+| Luôn đọc phần trả lời mở trước, đọc số sau | Số cho biết mức, chữ cho biết vì sao. Xử lý được là nhờ chữ |
+| Không dùng NPS để đánh giá cá nhân Coach hay Trainer | NPS chịu ảnh hưởng của cả chuỗi trải nghiệm gồm tuyển sinh, hậu cần, ăn ở, truyền thông |
+| Nhóm điểm thấp được phân tích riêng, không hoà vào trung bình | Một trung bình 8,5 có thể che mất 3 gia đình đang ở mức 3 |
+
+> **Giới hạn của công cụ này:**
+> `CC-14` đo **mức hài lòng**, và mức hài lòng **không tương quan chặt với kết quả phát triển**.
+> Một chương trình dễ chịu, vui, ít đòi hỏi sẽ có NPS cao mà có thể không tạo ra thay đổi nào;
+> ngược lại, giai đoạn khó nhất của một lộ trình đúng thường trùng với giai đoạn điểm hài lòng
+> thấp nhất. Vì vậy **không bao giờ dùng `CC-14` để điều chỉnh nội dung chuyên môn** —
+> chỉ dùng để điều chỉnh cách tổ chức, cách truyền đạt và chất lượng phục vụ.
+> Công cụ này cũng chịu sai lệch người trả lời: gia đình không hài lòng thường im lặng và
+> không nộp phiếu, nên **tỷ lệ phản hồi dưới 70% khiến số liệu không đại diện** và phải ghi rõ
+> tỷ lệ này bên cạnh mọi con số NPS được báo cáo. Phiếu học viên điền tại chỗ, trước mặt người dạy,
+> luôn cao hơn thực tế — thu ẩn danh và thu ở phòng khác là điều kiện tối thiểu.
+
+---
+
+## 15. Quy trình đối chiếu 4 nguồn
+
+> **Nơi các nguồn không khớp nhau chính là nơi có thông tin giá trị nhất.**
+> Mâu thuẫn giữa các nguồn **là dữ liệu**, không phải lỗi thu thập. Quy trình dưới đây
+> tồn tại để bảo đảm không ai đi tắt bằng cách chọn nguồn mình tin và bỏ nguồn còn lại.
+
+### 15.1 Nguyên tắc gốc: hỏi "ở bối cảnh nào" trước khi hỏi "ai đúng"
+
+Bốn nguồn quan sát bốn lát cắt khác nhau của cùng một đời sống. Khi chúng không khớp,
+giả thuyết đầu tiên **không phải** là một nguồn sai, mà là **cả hai đều đúng ở bối cảnh của mình**.
+
+| Ví dụ mâu thuẫn | Cách đọc sai | Cách đọc đúng |
+|---|---|---|
+| Học viên nói tự ngồi vào bàn 5 ngày; phụ huynh ghi 1 ngày | "Học viên khai không đúng" | Học viên đang đếm cả những lần **ngồi xuống**; phụ huynh đang đếm những lần **bắt đầu học và duy trì**. Hai chuẩn đếm, không phải hai sự thật |
+| ACT ghi giữ mạch 25 phút 5/7 ngày; nhật ký ở nhà ghi 1/7 | "Ở nhà không chịu làm" | Năng lực có ở bối cảnh có cấu trúc, **chưa khái quát** sang bối cảnh không có cấu trúc. Đây là kết quả `CC-11` cửa 2, không phải vấn đề thái độ |
+| KPI đẹp; bài kiểm tra không đổi | "Học viên gian lận số liệu" | Đang làm đúng quy trình, sai phương pháp. Vấn đề thuộc trụ **T**, không thuộc trụ **A** |
+
+### 15.2 Quy trình sáu bước khi phát hiện chênh lệch ≥ 2 bậc
+
+| Bước | Việc làm | Ai làm | Không được làm |
+|---|---|---|---|
+| **1. Ghi lại nguyên trạng** | Ghi cả hai con số và cả hai bối cảnh vào ô "Chỗ bốn nguồn lệch nhau" của `CC-08` | Tư vấn | Không lấy trung bình. Không xoá một bên |
+| **2. Kiểm định nghĩa** | Hai bên có đang đếm cùng một thứ không? Đọc lại đúng câu hỏi cả hai phiếu | Coach | Không hỏi "ai nhớ đúng" |
+| **3. Kiểm bối cảnh** | Bối cảnh quan sát của mỗi nguồn là gì: ở đâu, giờ nào, có ai, có cấu trúc không | Coach | Không giả định hai bối cảnh giống nhau |
+| **4. Gọi nguồn thứ ba** | Lấy dữ liệu định lượng (`CC-04`, `CC-10`, `CC-05`) làm trọng tài về **số lần**, không về **ý nghĩa** | Coach | Không dùng nguồn thứ ba để phân xử đúng sai giữa hai người |
+| **5. Nói chuyện riêng với từng bên** | Đưa dữ liệu ra cùng xem, hỏi "chỗ này em/anh chị thấy thế nào" | Tư vấn | **Không đối chất hai bên trong cùng một phòng** |
+| **6. Kết luận dạng bối cảnh** | Viết kết luận theo mẫu: "Ở bối cảnh A, biểu hiện là X; ở bối cảnh B, biểu hiện là Y" | Tư vấn | Không viết kết luận dạng "thực chất là…" |
+
+### 15.3 Bảng xử lý theo từng dạng mâu thuẫn
+
+| Dạng | Giả thuyết đầu tiên | Nguồn cần gọi thêm | Việc làm | Mức ưu tiên |
+|---|---|---|---|---|
+| **N1 cao hơn N2 ≥ 2 bậc** | Chuẩn đếm khác nhau; hoặc khả năng tự nhận diện (`NL-01`) đang ở mức thấp | N3 (`CC-04`, `CC-05`) | Ngồi cùng học viên xem dữ liệu, không phản bác. Đưa `NL-01` vào diện luyện | Trung bình |
+| **N1 thấp hơn N2 ≥ 2 bậc** | Học viên đang áp chuẩn khắt khe hơn chuẩn gia đình; hoặc vấn đề niềm tin năng lực | N3 + `CC-03` phần A | **Chuyên viên tâm lý đọc hồ sơ trước** khi Coach làm việc với học viên | **Cao nhất** |
+| **N2 thấp hơn N3 ≥ 2 bậc** | Kỳ vọng gia đình đang cách xa baseline; hoặc gia đình chỉ nhìn thấy phần chưa được | N3 + `P-B3` | **Làm việc với gia đình trước**, học viên sau. Đưa baseline ra bằng số | Cao |
+| **N3 tốt, N4 kém** | Đúng quy trình, sai phương pháp — vấn đề thuộc **T** | `CC-06` các mã `NL-04`, `NL-05`, `NL-17` | Chuyển trọng tâm sang `N04`. **Không tăng thời lượng học** | Cao |
+| **N4 tốt, N3 kém** | Có thể đang được hỗ trợ nhiều hơn ghi nhận; hoặc kết quả không do học viên tạo ra | Ô H2 của `CC-13`, cột mức hỗ trợ `CC-06` | **Kiểm mức hỗ trợ trước khi ghi nhận kết quả** | Cao |
+| **Cả 4 nguồn cùng thấp** | Không phải mâu thuẫn. Đây là tín hiệu nhất quán | — | Rà thứ tự: nhiệm vụ quá lớn → neo sai → môi trường cản → sự kiện đời sống → cuối cùng mới xét động lực | Cao |
+| **Cả 4 nguồn cùng cao ở mọi hạng mục** | Nghi ngờ chất lượng thu dữ liệu, không phải chúc mừng | Kiểm `§1.3` bước 4 và độ biến thiên các phiếu | Soát lại quy trình phát phiếu và chấm | Trung bình |
+
+### 15.4 Bốn điều không được làm khi các nguồn mâu thuẫn
+
+| Không làm | Vì sao |
+|---|---|
+| **Lấy trung bình cộng của hai nguồn** | Trung bình xoá mất chính thông tin mà mâu thuẫn đang mang. Hai bối cảnh khác nhau không có trung bình |
+| **Đối chất học viên và phụ huynh trong cùng một phòng** | Buổi đó sẽ thành buổi tìm người sai. Sau buổi đó cả hai nguồn đều mất độ tin cậy cho các kỳ sau |
+| **Bỏ nguồn "phiền phức"** | Nguồn lệch nhiều nhất thường là nguồn chứa thông tin mới nhất |
+| **Kết luận về động cơ của người trả lời** | "Học viên khai không thật", "gia đình khó tính" đều là dán nhãn, và đều không kiểm chứng được |
+
+### 15.5 Bảng kiểm trước khi ghi bất kỳ kết luận nào vào hồ sơ
+
+| Bảng kiểm | Đạt |
+|---|---|
+| Kết luận này tựa trên ≥ 2 nguồn khác loại | ⬜ |
+| Nếu là kết luận về nguyên nhân: có ≥ 3 nguồn và đang ở Tầng 2 trở đi | ⬜ |
+| Mọi chênh lệch ≥ 2 bậc đã được ghi lại, không bị làm phẳng | ⬜ |
+| Kết luận viết bằng hành vi và bối cảnh, không bằng đặc điểm con người | ⬜ |
+| Có ghi kèm mức hỗ trợ | ⬜ |
+| Có ghi kèm khoảng thời gian và bối cảnh quan sát | ⬜ |
+| Có nêu điều hệ thống **chưa biết** về ca này | ⬜ |
+
+---
+
+## 16. Điều bộ công cụ này KHÔNG dùng
+
+Phần này liệt kê những công cụ **không có mặt** trong bộ `CC-01` → `CC-14`, lý do,
+và phương pháp GITA dùng thay. Đây là một phần của yêu cầu trung thực chuyên môn:
+một hệ thống nói rõ mình không dùng gì thì đáng tin hơn một hệ thống chỉ nói mình dùng gì.
+
+### 16.1 Bốn công cụ không dùng và phương pháp thay thế
+
+| Không dùng | Nếu dùng thì sẽ dùng để làm gì | Vì sao không dùng | **GITA dùng gì thay** |
+|---|---|---|---|
+| **Thần số học** | Suy ra thiên hướng, tính cách, định hướng nghề từ ngày sinh hoặc tên | Không có cơ sở khoa học. Không có nghiên cứu nào cho thấy ngày sinh hay tên dự đoán được năng lực hay tính cách. Kết luận rút từ đây **không kiểm chứng được và không thay đổi được** — trái ngược với toàn bộ mục đích của một chương trình phát triển | **Tín hiệu điểm mạnh ba dấu hiệu** (`CC-08` phần 5): vùng học nhanh · việc làm không cần thúc · chất lượng vượt trội. Mỗi dấu hiệu cần ≥ 2 bằng chứng từ ≥ 2 nguồn, thu qua 7 ngày quan sát tại trại và 21 ngày tại nhà |
+| **Sinh trắc học vân tay** | Suy ra thiên hướng cảm xúc, kiểu tư duy, tỷ lệ tiềm năng từ chủng vân tay | Không có cơ sở khoa học cho việc dự đoán năng lực hay tính cách từ vân tay. Đây là nội dung đã bị nhiều cơ quan giáo dục cảnh báo. Rủi ro nặng nhất: một con số "tiềm năng" gắn với trẻ từ nhỏ và định hình cách người lớn đối xử với trẻ trong nhiều năm | **Hồ sơ 18 năng lực có cấp độ và bằng chứng** (`CC-06`) + **bản đồ cơ chế 6 lớp** (`CC-09`). Cả hai đều mô tả trạng thái hiện tại kèm cách kiểm chứng, và cả hai đều **thay đổi được** |
+| **Phân loại kiểu người: MBTI, DISC, và các biến thể** | Xếp học viên vào một kiểu, rồi giao vai trò, chia nhóm, hoặc kết luận trong hồ sơ theo kiểu đó | MBTI và DISC là công cụ **mô tả phong cách hành vi**, không phải công cụ đo năng lực. Chuẩn hoá chủ yếu cho người lớn trong môi trường công việc; giá trị dự báo với trẻ em rất hạn chế, và độ ổn định của kết quả khi làm lại sau vài tháng cũng hạn chế. Ở lứa tuổi 9–18, "kiểu người" đang trong giai đoạn thay đổi mạnh nhất của cả đời | **Quan sát vai trò tự nhiên trong nhóm** ở ≥ 3 hoạt động khác nhau (ô O7 của `CC-05`): dẫn dắt / thực thi / kết nối / phản biện / đứng ngoài. Ghi **vai trò quan sát được ở hoạt động này**, không ghi "em ấy là kiểu…". DISC được phép dùng như **công cụ mở hội thoại** ("con thấy mô tả này có giống mình không?"), **không** dùng để phân nhóm, giao vai trò hay kết luận trong hồ sơ |
+| **Trắc nghiệm IQ dùng làm căn cứ phân loại** | Xếp lớp, chia nhóm nhanh–chậm, quyết định lộ trình, giải thích kết quả học tập | Bài trắc nghiệm IQ do người không có chứng chỉ chuyên môn thực hiện và diễn giải là việc dùng sai công cụ. Ngay cả khi được thực hiện đúng chuẩn, chỉ số IQ **không cho biết học viên cần điều kiện gì để tiến bộ** — nó không chỉ ra được đòn bẩy, mà đòn bẩy mới là thứ GITA cần. Dùng nó để phân loại tạo ra kỳ vọng khác nhau lên các nhóm trẻ, và kỳ vọng khác nhau tự nó tạo ra kết quả khác nhau | **Đo trực tiếp cái cần đo:** nền tảng kiến thức đo bằng bài kiểm tra theo mạch kiến thức; tư duy và phương pháp đo bằng quan sát có rubric qua nhiều lần (`CC-06`); hành vi đo bằng 4 nguồn qua ≥ 7 ngày. Việc phân nhóm — nếu cần — dựa trên **mức hiện tại ở đúng nội dung sắp học**, và được xét lại mỗi chu kỳ |
+
+### 16.2 Ba lý do, xếp theo mức nghiêm trọng
+
+| # | Rủi ro | Cơ chế gây hại |
+|---|---|---|
+| **1** | **Dán nhãn** | Một học viên 11 tuổi được nói "con thiên về cảm xúc, nhạy cảm khi làm việc nhóm" có thể mang nhãn đó nhiều năm — và quan trọng hơn, người lớn quanh em sẽ **thiết kế môi trường theo nhãn đó**, làm nhãn tự trở thành sự thật |
+| **2** | **Chọn sai đòn bẩy** | Nếu giả thuyết cơ chế rút từ vân tay hay từ một kiểu tính cách thay vì từ dữ liệu hành vi, toàn bộ lộ trình 90 ngày sau đó đi sai hướng — và chỉ phát hiện ra sau khi đã mất một chu kỳ |
+| **3** | **Uy tín hệ thống** | Một hệ thống đối chiếu CT GDPT 2018, CASEL, OECD, ISO 21001 mà trong hồ sơ đánh giá có thần số học sẽ bị đặt câu hỏi ngay ở phần chuyên môn, làm suy yếu cả những phần thật sự vững |
+
+### 16.3 Khi gia đình đã có sẵn kết quả từ các công cụ này
+
+Nhiều gia đình đến với GITA đã có sẵn bản đọc thần số học, báo cáo sinh trắc vân tay,
+hoặc kết quả trắc nghiệm tính cách. Cách xử lý:
+
+| Tình huống | Cách làm | Không làm |
+|---|---|---|
+| Gia đình đưa kết quả và muốn nói về nó | Tiếp nhận như **thông tin gia đình cung cấp**, ghi vào phần thông tin nền, không ghi vào phần căn cứ chuyên môn | Không tranh luận, không bác bỏ trước mặt học viên |
+| Gia đình hỏi GITA có làm không | Trả lời thẳng: chương trình không dùng những công cụ đó làm căn cứ đánh giá, và nói rõ dùng gì thay | Không nói tránh, không nhận làm rồi bỏ qua |
+| Trong kết quả có mô tả trùng với quan sát thật | Ghi nhận **quan sát thật** kèm bằng chứng, không ghi nhận nguồn gốc kết quả kia | Không dùng sự trùng khớp ngẫu nhiên làm bằng chứng cho công cụ |
+| Học viên đã biết và đã tin vào nhãn của mình | Không phủ định nhãn. Đưa dữ liệu hành vi thật ra, để học viên tự thấy chỗ không khớp | Không nói "cái đó là sai" — nói thế thì học viên bảo vệ nhãn mạnh hơn |
+
+### 16.4 Điều này không phủ nhận trực giác của người làm nghề
+
+Một Trainer giàu kinh nghiệm nhìn ra điều gì đó ở học viên trong buổi đầu tiên là
+**quan sát có giá trị** và cần được ghi lại. Điều bắt buộc là ghi nó vào đúng chỗ:
+ô "Giả thuyết của ACT" ở `CC-05`, hoặc ô 4 của biểu ghi `CC-03` — nghĩa là ghi dưới dạng
+**giả thuyết kèm cách kiểm chứng trong 7 ngày**, không phải kết luận. Trực giác tốt
+làm ra giả thuyết tốt; nó không làm ra bằng chứng.
+
+> **Nguyên tắc chốt của cả bộ công cụ:** GITA mô tả học viên bằng **cái em làm được và
+> cái em đang luyện**, không bằng **kiểu người em thuộc về**. Cấp độ thay đổi được;
+> "kiểu người" thì không — và một hệ thống phát triển con người không nên nói bằng
+> ngôn ngữ của những thứ không đổi được.

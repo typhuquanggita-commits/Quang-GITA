@@ -898,6 +898,44 @@ Người duyệt: ______________ (xác nhận thứ tự kiểm 5 bước đã t
 | Reminder / ngày | Tổng số lần bị nhắc trong tuần ÷ 7 | Giảm **≥ 50 %** so với baseline |
 | Chuỗi dài nhất | Số ngày liên tiếp dài nhất giữ được thói quen | **≥ 14 ngày** |
 | **Recovery time** | Số ngày quay lại được sau khi đứt chuỗi | **≤ 3 ngày** — KPI quan trọng nhất |
+
+**Ví dụ đã điền — tuần 5 của một học viên, dùng để đối chiếu cách tính**
+
+Dữ liệu thô lấy từ 7 dòng nhật ký `BM-05` của tuần đó:
+
+| Ngày | Bắt đầu đúng giờ hẹn | Nhiệm vụ đặt / xong | Số lần bị nhắc | Thói quen 1/2/3 |
+|---|---|---|---|---|
+| T2 | ✓ | 3 / 3 | 1 | ✓ ✓ ✗ |
+| T3 | ✓ | 3 / 2 | 0 | ✓ ✓ ✓ |
+| T4 | ✗ | 3 / 1 | 3 | ✗ ✗ ✗ |
+| T5 | ✗ | 2 / 0 | 4 | ✗ ✗ ✗ |
+| T6 | ✓ | 2 / 2 | 1 | ✓ ✓ ✗ |
+| T7 | ✓ | 3 / 3 | 0 | ✓ ✓ ✓ |
+| CN | ✓ | 2 / 2 | 1 | ✓ ✓ ✓ |
+
+| KPI | Phép tính | Kết quả | So ngưỡng |
+|---|---|---|---|
+| Start rate | 5 ngày đúng giờ ÷ 7 × 100 | **71 %** | Dưới ngưỡng 80 % |
+| Completion rate | 13 nhiệm vụ xong ÷ 18 đặt ra × 100 | **72 %** | Dưới ngưỡng 75 % |
+| Reminder / ngày | 10 lần ÷ 7 | **1,4** | Baseline 4,0 → giảm 65 %, **đạt** |
+| Chuỗi dài nhất | T6 → CN, và T2 → T3 | **3 ngày** | Dưới ngưỡng 14 |
+| **Recovery time** | Đứt ở T4, quay lại được ở T6 | **2 ngày** | **≤ 3 — đạt** |
+| Autonomy index | 8 nhiệm vụ tự khởi xướng ÷ 13 xong × 100 | **62 %** | So với tuần 4: 48 % → **tăng** |
+| Sleep consistency | 5 đêm đúng khung giờ ÷ 7 × 100 | **71 %** | Dưới ngưỡng 80 % |
+
+> **Cách đọc tuần này — quan trọng hơn các con số:** bốn trên bảy chỉ số dưới ngưỡng, nhưng đây là
+> **một tuần tốt**. Học viên đứt chuỗi hai ngày liên tiếp ở T4–T5, rồi **tự quay lại ở T6 sau 2 ngày**,
+> và autonomy index tăng. Recovery time là KPI quan trọng nhất, và nó đạt.
+>
+> Coach ghi nhận **việc quay lại**, không nhận xét về hai ngày đứt. Việc cần làm ở Review tuần là hỏi
+> **hoàn cảnh của T4** — chuyện gì xảy ra hôm đó — chứ không phải nhắc học viên cố gắng hơn.
+> Nếu Coach chỉ nhìn start rate 71 % và kết luận "tuần này kém", đó là đọc sai dữ liệu.
+
+**Hai lỗi tính hay gặp:**
+- **Reminder rate:** chia cho 7 (số ngày), **không** chia cho số nhiệm vụ.
+- **Recovery time:** đếm từ **ngày đứt đầu tiên tới ngày làm lại được**, không đếm cả chuỗi ngày nghỉ
+  nếu học viên dùng vé nghỉ có kế hoạch — ngày dùng vé nghỉ **không tính là đứt**.
+
 | Autonomy index | Số nhiệm vụ tự khởi xướng ÷ tổng số nhiệm vụ × 100 | Tăng đều qua các tuần |
 | Ngủ đúng giờ | Số ngày giờ ngủ lệch ≤ 30 phút so với giờ đã hẹn ÷ 7 × 100 | **≥ 80 %** |
 
@@ -1102,6 +1140,10 @@ Chuỗi biên bản Review đọc theo hàng dọc: mục 5 của các kỳ liê
 | **Ai điền** | Quản trại kiểm và ký. Y tế trại ký mục 5–7. Không uỷ quyền cho ACT ký thay. |
 | **Mất bao lâu** | 25–30 phút đi kiểm thực địa. Ký mà không đi kiểm là vi phạm quy trình an toàn. |
 
+> **Nguồn chuẩn:** 12 mục bắt buộc lấy nguyên từ
+> [`../he-thong-huan-luyen-gita/07-to-chuc-dieu-hanh.md`](../he-thong-huan-luyen-gita/07-to-chuc-dieu-hanh.md) §9.
+> **Không được rút gọn hay đổi thứ tự.** Sáu mục 13–18 là mục bổ sung theo ngày có hoạt động đặc thù.
+
 ### Nội dung biểu mẫu
 
 **BẢNG KIỂM AN TOÀN HẰNG NGÀY — Ngày trại: D____  ·  Ngày: ____/____/______  ·  Giờ kiểm: ____ giờ**
@@ -1110,18 +1152,29 @@ Tổng số học viên có mặt: ______  ·  Tổng số nhân sự có mặt:
 
 | # | Mục kiểm | Đạt | Chưa đạt | Ghi chú · hành động đã làm |
 |---|---|---|---|---|
-| 1 | Điểm danh đủ số học viên tại 3 mốc trong ngày (sáng, chiều, trước khi ngủ) | ⬜ | ⬜ | ______________ |
-| 2 | Danh sách học viên vắng mặt tạm thời và lý do đã được xác minh | ⬜ | ⬜ | ______________ |
-| 3 | Lối thoát hiểm, cầu thang, hành lang thông thoáng, đèn chiếu sáng hoạt động | ⬜ | ⬜ | ______________ |
-| 4 | Bình chữa cháy còn hạn, đúng vị trí, không bị che chắn | ⬜ | ⬜ | ______________ |
-| 5 | Túi cứu thương đủ cơ số, thuốc còn hạn, có tại mỗi team | ⬜ | ⬜ | ______________ |
-| 6 | Thuốc cá nhân của học viên đã được phát đúng giờ và ghi sổ | ⬜ | ⬜ | ______________ |
-| 7 | Học viên có vấn đề sức khoẻ trong ngày đã được theo dõi và báo gia đình khi cần | ⬜ | ⬜ | ______________ |
-| 8 | Khu vực nước (hồ bơi, sông, suối) đã khoá hoặc có người trực khi mở | ⬜ | ⬜ | ______________ |
-| 9 | Thiết bị hoạt động mạo hiểm (dây, đai, mũ, nút thắt) đã kiểm trước và sau sử dụng | ⬜ | ⬜ | ______________ |
-| 10 | Bếp ăn: lưu mẫu thức ăn 24 giờ, nước uống đủ, suất ăn riêng cho học viên dị ứng | ⬜ | ⬜ | ______________ |
-| 11 | Phòng ngủ: đủ chỗ, quạt/điều hoà an toàn, ổ điện không hở, có nhân sự trực đêm theo phân công | ⬜ | ⬜ | ______________ |
-| 12 | Không có mục nào từ `BM-15` hoặc `BM-16` chưa được xử lý trong ngày | ⬜ | ⬜ | ______________ |
+| 1 | **Điểm danh đủ 5 mốc trong ngày, khớp số lượng** *(chuẩn A8)* | ⬜ | ⬜ | ______________ |
+| 2 | Không có học viên rời khu vực mà không có người lớn đi cùng | ⬜ | ⬜ | ______________ |
+| 3 | **Không ghi nhận trường hợp trừng phạt thân thể hoặc kỷ luật liên đới** *(chuẩn A4)* | ⬜ | ⬜ | ______________ |
+| 4 | **Không có người lớn ở một mình với học viên nơi khuất tầm nhìn** | ⬜ | ⬜ | ______________ |
+| 5 | Bình nước cá nhân được nạp đủ 3 lần trong ngày | ⬜ | ⬜ | ______________ |
+| 6 | Không có hoạt động ngoài trời cường độ cao trong khung **11:00–15:00** | ⬜ | ⬜ | ______________ |
+| 7 | Cứu hộ có chứng chỉ trực đủ thời gian có hoạt động dưới nước | ⬜ | ⬜ | ______________ |
+| 8 | Sổ y tế đã cập nhật; các ca đã thông báo gia đình | ⬜ | ⬜ | ______________ |
+| 9 | **Danh sách quan tâm đặc biệt** đã rà tại giao ban; mỗi ca có người phụ trách và việc cụ thể | ⬜ | ⬜ | ______________ |
+| 10 | Tất cả học viên tắt đèn đúng giờ quy định; **giấc ngủ ≥ 8,5 giờ** được bảo đảm *(chuẩn A5)* | ⬜ | ⬜ | ______________ |
+| 11 | Thiết bị cá nhân được bảo quản đúng quy định, có ký nhận | ⬜ | ⬜ | ______________ |
+| 12 | **Cận-sự-cố trong ngày đã được ghi sổ** — kể cả việc chưa gây hậu quả | ⬜ | ⬜ | ______________ |
+
+**Mục kiểm bổ sung theo ngày có hoạt động đặc thù** *(chỉ tick khi có)*
+
+| # | Mục kiểm | Có hoạt động | Đạt | Chưa đạt |
+|---|---|---|---|---|
+| 13 | Lối thoát hiểm, cầu thang, hành lang thông thoáng; đèn chiếu sáng hoạt động | ⬜ | ⬜ | ⬜ |
+| 14 | Bình chữa cháy còn hạn, đúng vị trí, không bị che chắn | ⬜ | ⬜ | ⬜ |
+| 15 | Túi cứu thương đủ cơ số, thuốc còn hạn, có tại mỗi team | ⬜ | ⬜ | ⬜ |
+| 16 | Thiết bị hoạt động độ cao (dây, đai, mũ, nút thắt) đã kiểm **trước và sau** sử dụng | ⬜ | ⬜ | ⬜ |
+| 17 | Bếp: lưu mẫu thức ăn 24 giờ; suất ăn riêng cho học viên dị ứng đã đối chiếu danh sách | ⬜ | ⬜ | ⬜ |
+| 18 | Phòng ngủ: ổ điện không hở, quạt/điều hoà an toàn, có nhân sự trực đêm theo phân công | ⬜ | ⬜ | ⬜ |
 
 **Mục chưa đạt — bắt buộc ghi đủ ba cột**
 
@@ -1247,3 +1300,493 @@ Quản trại chuyển biên bản mức 2 và mức 3 cho Giám đốc chương
 > **Lưu ý:** biên bản này ghi để **học từ hệ thống, không để tìm người chịu lỗi**. Nếu nhân sự sợ bị quy trách nhiệm, họ sẽ không ghi cận-sự-cố, và tổ chức mất đi tín hiệu cảnh báo sớm quan trọng nhất. Tuyệt đối không dùng biên bản làm căn cứ kỷ luật học viên, và không kỷ luật liên đới cả team vì sự việc của một cá nhân.
 
 ---
+
+## BM-16 · BIÊN BẢN BÁO CÁO LO NGẠI BẢO VỆ TRẺ EM
+
+| Mục | Nội dung |
+|---|---|
+| **Dùng khi nào** | Ngay khi có lo ngại về an toàn của một học viên. Báo miệng cho Cán bộ bảo vệ trẻ em (BVTE) **trong 1 giờ**, hoàn thành biên bản **trong 24 giờ**. |
+| **Ai điền** | Người phát hiện hoặc người nhận được thông tin ghi trực tiếp. Không nhờ người khác ghi hộ. |
+| **Mất bao lâu** | 20–25 phút. Ghi ngay khi trí nhớ còn nguyên, tại nơi kín đáo, không ghi trước mặt học viên. |
+
+### Nội dung biểu mẫu
+
+**BIÊN BẢN BÁO CÁO LO NGẠI BẢO VỆ TRẺ EM — TÀI LIỆU HẠN CHẾ TRUY CẬP**
+
+> Chỉ **Cán bộ BVTE** và **Giám đốc chương trình** được truy cập. Lưu tủ khoá riêng, **tối thiểu 5 năm**. Không sao chụp, không gửi qua nhóm chat chung, không thảo luận trong họp nhân sự thường kỳ.
+
+Số biên bản: ______ / ______  ·  Ngày lập: ____/____/______  ·  Giờ lập: ____ giờ
+
+| Trường | Nội dung |
+|---|---|
+| Người báo cáo — họ tên | ______________________________ |
+| Vai trò trong chương trình | ______________________________ |
+| Thời gian phát hiện / tiếp nhận thông tin | ____ giờ, ngày ____/____/______ |
+| Địa điểm | ______________________________ |
+| Học viên liên quan — mã học viên | `LB____-____-______` · tuổi ____ · team ______ |
+| Nguồn thông tin | ⬜ Tôi trực tiếp quan sát ⬜ Học viên tự nói ⬜ Học viên khác kể ⬜ Người lớn khác kể ⬜ Khác: ______ |
+
+**Sự việc quan sát được** — ghi nguyên văn điều nhìn thấy và nghe thấy
+
+______________________________________________________________________
+______________________________________________________________________
+______________________________________________________________________
+
+**Nếu học viên tự nói, ghi nguyên văn lời của học viên trong ngoặc kép**
+
+"______________________________________________________________________"
+
+Câu hỏi mà người báo cáo đã hỏi (nếu có), ghi nguyên văn: ______________________________
+
+**Dấu hiệu quan sát được — đánh dấu những gì thực sự nhìn thấy**
+
+| Nhóm dấu hiệu | Có quan sát |
+|---|---|
+| Dấu vết trên cơ thể (vị trí: ______) | ⬜ |
+| Thay đổi rõ về ăn, ngủ, vệ sinh cá nhân | ⬜ |
+| Rút lui khỏi giao tiếp, im lặng kéo dài | ⬜ |
+| Sợ hãi khi tiếp xúc với một người hoặc một tình huống cụ thể | ⬜ |
+| Lời nói về việc tự làm hại bản thân | ⬜ |
+| Hành vi hoặc hiểu biết không phù hợp lứa tuổi | ⬜ |
+| Khác: ______________________ | ⬜ |
+
+**Hành động bảo đảm an toàn tức thì đã thực hiện**
+
+| Mốc giờ | Hành động | Người thực hiện |
+|---|---|---|
+| ____:____ | ______________________________ | ______________ |
+| ____:____ | ______________________________ | ______________ |
+| ____:____ | ______________________________ | ______________ |
+
+**Báo cáo**
+
+| Nội dung | Trả lời |
+|---|---|
+| Thời điểm báo Cán bộ BVTE | ____ giờ, ngày ____/____ · Tên cán bộ: ______________ |
+| Cán bộ BVTE đã báo Giám đốc chương trình | ⬜ Có, lúc ____ giờ ⬜ Chưa |
+| Có cần báo cơ quan chức năng / đường dây bảo vệ trẻ em 111 | ⬜ Chưa xác định ⬜ Không ⬜ Có, đã báo lúc ____ giờ |
+| Học viên hiện đang ở đâu, ai đang cùng | ______________________________ |
+| Kế hoạch theo dõi 24 giờ tới | ______________________________ |
+
+> **Không điều tra · Không hỏi cung học viên · Không thông báo cho người bị nghi ngờ.**
+> Nếu học viên đang kể, chỉ lắng nghe và ghi lại, không hỏi thêm chi tiết, không hỏi câu dẫn dắt, không hứa giữ bí mật. Câu được phép nói: "Cảm ơn con đã nói với cô. Cô cần nói việc này với một người có trách nhiệm giữ an toàn cho con."
+
+| Người ký | Ký xác nhận điều gì | Chữ ký · Họ tên | Giờ ký |
+|---|---|---|---|
+| Người báo cáo | Xác nhận nội dung là điều mình trực tiếp quan sát hoặc nghe, không thêm suy đoán | ______________ | ____ giờ |
+| Cán bộ BVTE | Xác nhận đã tiếp nhận, đã đánh giá mức độ và đã quyết định bước tiếp theo | ______________ | ____ giờ |
+
+### Hướng dẫn điền
+
+- Báo trước, ghi sau. Việc bảo đảm an toàn cho học viên đi trước việc hoàn thiện giấy tờ, nhưng biên bản không được để quá 24 giờ.
+- Ghi **nguyên văn** lời học viên trong ngoặc kép, kể cả khi câu nói chưa rõ nghĩa hoặc chưa hợp lý. Diễn giải lại lời trẻ là lỗi nghiêm trọng nhất ở biểu mẫu này.
+- Ghi cả câu hỏi mà mình đã hỏi. Điều này cho phép Cán bộ BVTE đánh giá thông tin có bị dẫn dắt hay không.
+- Không đánh giá mức độ tin cậy của lời kể, không viết "có vẻ như em đang nói quá". Việc đánh giá thuộc về người có chuyên môn.
+- Không chờ đủ bằng chứng mới báo. Ngưỡng báo cáo là **lo ngại**, không phải chắc chắn.
+- Không thảo luận nội dung với đồng nghiệp khác, kể cả ACT cùng team, kể cả với ý định tốt.
+
+### Cách đọc kết quả
+
+Cán bộ BVTE tiếp nhận, đánh giá trong 24 giờ và quyết định một trong ba hướng: theo dõi nội bộ có kế hoạch cụ thể; chuyển chuyên gia bên ngoài; hoặc báo cơ quan chức năng. Mọi quyết định và mốc thời gian được ghi tiếp vào biên bản, không tạo tài liệu song song. Gia đình được thông báo theo hướng dẫn của Cán bộ BVTE — **trừ trường hợp lo ngại liên quan tới chính người trong gia đình**, khi đó việc thông báo do cơ quan chức năng quyết định. Hồ sơ lưu tối thiểu 5 năm kể cả khi lo ngại được xác định là không có cơ sở.
+
+> **Lưu ý:** người báo cáo không có nhiệm vụ xác minh và không được tự xác minh. Nhiệm vụ duy nhất là **ghi lại và chuyển đúng người trong đúng thời hạn**. Việc tự hỏi thêm học viên để "cho chắc" có thể làm hỏng lời khai, gây tổn thương lần hai cho trẻ, và trong một số trường hợp làm mất giá trị pháp lý của thông tin. Báo cáo nhầm không bị xử lý; không báo cáo mới là vi phạm.
+
+---
+
+## BM-17 · MA TRẬN RỦI RO KHOÁ
+
+| Mục | Nội dung |
+|---|---|
+| **Dùng khi nào** | Lập trước khoá tại D-20, rà lại tại D-3, cập nhật ngay khi có `BM-15`, tổng kết sau khoá. |
+| **Ai điền** | Quản trại chủ trì. Y tế và Giám đốc chương trình cùng rà và ký. Không giao cho một người tự lập. |
+| **Mất bao lâu** | 90 phút cho lần lập đầu; 30 phút cho mỗi lần rà lại. |
+
+### Nội dung biểu mẫu
+
+**MA TRẬN RỦI RO KHOÁ — Khoá: ______  ·  Địa điểm: ______  ·  Số học viên: ______  ·  Ngày lập: ____/____/______**
+
+**Thang đánh giá**
+
+| Khả năng | Nghĩa | | Hậu quả | Nghĩa |
+|---|---|---|---|---|
+| **1 – Hiếm** | Chưa từng xảy ra ở 3 khoá gần nhất | | **1 – Nhẹ** | Xử lý tại chỗ, không gián đoạn |
+| **2 – Có thể** | Đã xảy ra 1 lần ở 3 khoá gần nhất | | **2 – Trung bình** | Cần y tế trại, gián đoạn một hoạt động |
+| **3 – Thường** | Xảy ra ở phần lớn các khoá | | **3 – Nghiêm trọng** | Chuyển viện, dừng chương trình, ảnh hưởng nhiều học viên |
+
+**Mức rủi ro = Khả năng × Hậu quả** · 1–2 Thấp · 3–4 Trung bình · **6–9 Cao — bắt buộc có biện pháp bổ sung trước khi khoá bắt đầu**
+
+| # | Rủi ro chuẩn | Khả năng (1–3) | Hậu quả (1–3) | Mức | Biện pháp kiểm soát | Người chịu trách nhiệm |
+|---|---|---|---|---|---|---|
+| 1 | Tai nạn khi di chuyển (xe đưa đón, đi bộ đường dài) | ____ | ____ | ____ | ______________ | ______________ |
+| 2 | Đuối nước hoặc sự cố tại khu vực nước | ____ | ____ | ____ | ______________ | ______________ |
+| 3 | Chấn thương trong hoạt động vận động mạnh, mạo hiểm | ____ | ____ | ____ | ______________ | ______________ |
+| 4 | Ngộ độc thực phẩm, dị ứng thức ăn | ____ | ____ | ____ | ______________ | ______________ |
+| 5 | Bệnh truyền nhiễm lây lan trong trại | ____ | ____ | ____ | ______________ | ______________ |
+| 6 | Say nắng, mất nước, thời tiết cực đoan | ____ | ____ | ____ | ______________ | ______________ |
+| 7 | Học viên đi lạc hoặc tự ý rời khu vực | ____ | ____ | ____ | ______________ | ______________ |
+| 8 | Khủng hoảng tâm lý của học viên (nhớ nhà, hoảng loạn, ý nghĩ tự làm hại) | ____ | ____ | ____ | ______________ | ______________ |
+| 9 | Bắt nạt, xung đột giữa học viên | ____ | ____ | ____ | ______________ | ______________ |
+| 10 | Lo ngại bảo vệ trẻ em liên quan người lớn trong hoặc ngoài chương trình | ____ | ____ | ____ | ______________ | ______________ |
+| 11 | Sự cố hạ tầng: cháy nổ, mất điện, mất nước, hỏng khoá phòng | ____ | ____ | ____ | ______________ | ______________ |
+
+**Rủi ro bổ sung riêng của khoá này**
+
+| # | Rủi ro | Khả năng | Hậu quả | Mức | Biện pháp kiểm soát | Người chịu trách nhiệm |
+|---|---|---|---|---|---|---|
+| 12 | ______________ | ____ | ____ | ____ | ______________ | ______________ |
+| 13 | ______________ | ____ | ____ | ____ | ______________ | ______________ |
+
+**Rà soát lại tại D-3**
+
+| Rủi ro số | Biện pháp đã sẵn sàng | Chưa sẵn sàng — việc còn thiếu | Hạn hoàn thành |
+|---|---|---|---|
+| ____ | ⬜ | ______________ | ____/____ |
+| ____ | ⬜ | ______________ | ____/____ |
+
+**Cập nhật trong khoá** — mỗi `BM-15` phát sinh phải cập nhật một dòng
+
+| Ngày | Biên bản `BM-15` số | Rủi ro số liên quan | Mức mới | Biện pháp bổ sung |
+|---|---|---|---|---|
+| ____/____ | ______ | ____ | ____ | ______________ |
+
+| Người ký | Ký xác nhận điều gì | Chữ ký · Họ tên | Ngày |
+|---|---|---|---|
+| Quản trại | Xác nhận các biện pháp kiểm soát đã được bố trí trên thực địa | ______________ | ____/____/______ |
+| Cán bộ y tế | Xác nhận các rủi ro 4, 5, 6, 8 có phương án y tế tương ứng | ______________ | ____/____/______ |
+| Giám đốc chương trình | Xác nhận không còn rủi ro mức Cao nào chưa có biện pháp bổ sung | ______________ | ____/____/______ |
+
+### Hướng dẫn điền
+
+- Chấm khả năng dựa trên **dữ liệu 3 khoá gần nhất**, không chấm theo cảm giác lạc quan. Chấm khả năng bằng 1 cho mọi dòng là dấu hiệu ma trận chưa được làm thật.
+- Cột biện pháp kiểm soát phải nêu **việc làm được và kiểm tra được**, ví dụ "hai người trực bờ, tỉ lệ 1 người lớn / 6 học viên, còi và phao trong tầm tay". Không viết "nhắc nhở học viên cẩn thận".
+- Mỗi dòng chỉ ghi **một người chịu trách nhiệm** kèm tên cụ thể, không ghi tên bộ phận.
+- Rủi ro mức 6–9 phải có biện pháp bổ sung hoàn tất **trước D-1**; nếu chưa xong, hoạt động liên quan bị hoãn.
+- Ma trận phải được rà lại tại D-3 khi đã biết địa điểm thực tế và danh sách học viên; ma trận lập một lần rồi để nguyên là ma trận trên giấy.
+- Không hạ điểm rủi ro sau khi khoá kết thúc suôn sẻ; khoá không có sự cố không chứng minh rủi ro thấp.
+
+### Cách đọc kết quả
+
+Ma trận là căn cứ phân bổ nhân sự và thiết bị: mọi rủi ro mức Cao phải xuất hiện trong phân công trực và trong bảng kiểm hằng ngày `BM-14`. Sau khoá, đối chiếu ma trận với toàn bộ `BM-15` đã phát sinh: rủi ro đã xảy ra mà chấm mức Thấp cho thấy thang chấm đang lệch và phải hiệu chỉnh cho khoá sau; rủi ro chấm Cao mà không xảy ra được giữ nguyên mức nếu biện pháp kiểm soát chính là lý do nó không xảy ra.
+
+> **Lưu ý:** ma trận này quản lý rủi ro **của hệ thống tổ chức**, không phải danh sách học viên "cần đề phòng". Không ghi mã học viên vào cột rủi ro, không lập danh sách trẻ bị coi là nguồn rủi ro. Thông tin cá nhân liên quan an toàn được xử lý qua `BM-01`, `BM-15` và `BM-16`, theo nguyên tắc cần biết để giữ an toàn.
+
+---
+
+## BM-18 · KHẢO SÁT
+
+| Mục | Nội dung |
+|---|---|
+| **Dùng khi nào** | Học viên tại **D7** (ngày cuối trại) · Phụ huynh tại **D+7, D118, D365** · Nhân sự tại **D+3**. |
+| **Ai điền** | Ba bản riêng cho ba nhóm. Học viên điền ẩn danh; phụ huynh và nhân sự điền có định danh tuỳ chọn. |
+| **Mất bao lâu** | Học viên 10 phút · Phụ huynh 12 phút · Nhân sự 15 phút. |
+
+### Nội dung biểu mẫu
+
+**A. KHẢO SÁT HỌC VIÊN — D7 · 10 câu · KHÔNG CẦN GHI TÊN**
+
+Thang: **1** = hoàn toàn không đúng · **2** = ít đúng · **3** = đúng một nửa · **4** = phần lớn đúng · **5** = hoàn toàn đúng
+
+| # | Câu | 1 | 2 | 3 | 4 | 5 |
+|---|---|---|---|---|---|---|
+| 1 | Em hiểu mình cần làm gì mỗi ngày ở trại | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
+| 2 | Có người lớn ở trại mà em thấy dễ nói chuyện | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
+| 3 | Em ngủ đủ và ăn đủ trong những ngày ở trại | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
+| 4 | Em được nói ý kiến của mình trong nhóm | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
+| 5 | Em học được ít nhất một cách làm mới em sẽ dùng ở nhà | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
+| 6 | Hoạt động vừa sức em, không quá dễ và không quá khó | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
+| 7 | Em biết mình làm tốt việc gì hơn so với trước khi đến trại | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
+| 8 | Em thấy được đối xử công bằng như các bạn khác | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
+| 9 | Khi em gặp khó, có người giúp em kịp lúc | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
+| 10 | Em muốn quay lại chương trình lần sau | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
+
+**Câu bắt buộc — viết bao nhiêu tuỳ em, không cần ghi tên**
+
+> **"Có lúc nào ở trại con thấy không an toàn, không thoải mái, hoặc bị đối xử không công bằng không? Con có thể viết mà không cần ghi tên."**
+
+______________________________________________________________________
+______________________________________________________________________
+
+⬜ Con muốn nói chuyện riêng với một người lớn về điều này (con có thể ghi mã team: ______)
+
+**B. KHẢO SÁT PHỤ HUYNH — D+7 · D118 · D365 · 12 câu**
+
+Mốc khảo sát: ⬜ D+7 ⬜ D118 ⬜ D365  ·  Mã học viên: `LB____-____-______`
+
+Thang 1–5: **1** = không quan sát thấy · **2** = 1–2 ngày/tuần · **3** = 3–4 ngày/tuần · **4** = 5–6 ngày/tuần · **5** = cả tuần · **KQS** = không có điều kiện quan sát
+
+| # | Câu | 1 | 2 | 3 | 4 | 5 | KQS |
+|---|---|---|---|---|---|---|---|
+| 1 | Con bắt đầu việc học đúng khung giờ đã hẹn | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
+| 2 | Số lần tôi phải nhắc đã giảm so với trước chương trình | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
+| 3 | Con giữ được giờ ngủ ổn định | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
+| 4 | Sau khi lỡ một ngày, con quay lại trong vòng 3 ngày | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
+| 5 | Con tự đề xuất cách làm thay vì chờ hướng dẫn | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
+| 6 | Con nói với tôi khi gặp khó | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
+| 7 | Không khí trong nhà quanh việc học đã dễ chịu hơn | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
+| 8 | Tôi giữ được 10 phút đồng hành mỗi ngày như đã cam kết | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
+| 9 | Tôi mô tả hành vi của con thay vì nhận xét tính cách | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
+| 10 | Coach phản hồi kịp thời khi gia đình cần | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
+| 11 | Các buổi Review diễn ra đúng lịch đã hẹn | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
+| 12 | Thông tin gia đình nhận được là cụ thể và dùng được | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
+
+**NPS — Anh/chị sẵn sàng giới thiệu chương trình cho gia đình khác ở mức nào?**
+
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
+
+Lý do cho điểm số trên: ______________________________________________
+Một thay đổi cụ thể anh/chị đã quan sát được ở con (mô tả hành vi, không dán nhãn): ______________________________
+Một điều chương trình cần làm tốt hơn: ______________________________
+
+**C. KHẢO SÁT NHÂN SỰ — D+3 · 10 câu**
+
+Vai trò: ⬜ ACT ⬜ Coach ⬜ Trainer ⬜ Y tế ⬜ Hậu cần ⬜ Quản trại  ·  Số khoá đã tham gia: ____
+
+Thang: **1** = hoàn toàn không · **3** = tạm đủ · **5** = hoàn toàn đủ / tốt
+
+| # | Câu | 1 | 2 | 3 | 4 | 5 |
+|---|---|---|---|---|---|---|
+| 1 | Tôi được giao nhiệm vụ rõ ràng trước khi khoá bắt đầu | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
+| 2 | Tỉ lệ người lớn / học viên đủ để giữ an toàn | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
+| 3 | Tôi có đủ thời gian ghi `BM-07` tại chỗ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
+| 4 | Quy trình báo cáo sự cố rõ và tôi biết phải báo ai | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
+| 5 | Tôi được nghỉ đủ để làm việc an toàn | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
+| 6 | Thiết bị và vật tư đủ cho hoạt động tôi phụ trách | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
+| 7 | Tôi được hỗ trợ khi gặp tình huống vượt khả năng xử lý | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
+| 8 | Lịch trình ngày khả thi, không phải cắt xén hoạt động | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
+| 9 | Tôi hiểu rõ nguyên tắc ghi biểu hiện, không dán nhãn | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
+| 10 | Tôi sẽ tham gia khoá tiếp theo | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
+
+| Câu mở | Trả lời |
+|---|---|
+| Điều gì đã chạy tốt | ______________________________ |
+| Điều gì cần sửa | ______________________________ |
+| Hoạt động nào cần thiết kế lại và vì sao | ______________________________ |
+| Nguồn lực nào còn thiếu (người, thời gian, thiết bị) | ______________________________ |
+
+### Hướng dẫn điền
+
+- Khảo sát học viên phát vào **buổi chiều D7, không phát trước giờ chia tay** khi cảm xúc đang cao; phát bút riêng và có hộp thu kín.
+- Không có người lớn đi lại quan sát trong lúc học viên điền, và không ai đọc phiếu tại chỗ. Đây là điều kiện để câu bắt buộc có giá trị.
+- Phụ huynh trả lời theo **quan sát 7 ngày gần nhất tại mỗi mốc**, không so sánh cảm tính với "trước kia".
+- Nhân sự điền sau khoá 3 ngày, khi đã nghỉ đủ; điền ngay trong đêm cuối cho ra dữ liệu bị chi phối bởi mệt mỏi.
+- Không gộp ba bản khảo sát vào một biểu mẫu chung và không để phụ huynh điền hộ phần của học viên.
+- Câu mở không được để trống hoàn toàn; nếu không có ý kiến, ghi "không có" để phân biệt với bỏ sót.
+
+### Cách đọc kết quả
+
+Câu bắt buộc của học viên đi **thẳng tới Cán bộ BVTE**, không qua ACT, không qua Quản trại, và được đọc trong ngày D7. Mọi phiếu có nội dung ở câu này được xử lý theo quy trình `BM-16` nếu liên quan an toàn. Khảo sát phụ huynh đọc theo xu hướng ba mốc D+7 → D118 → D365, không đọc theo một mốc đơn lẻ; NPS dùng để theo dõi xu hướng chứ không dùng làm chỉ tiêu áp cho Coach. Khảo sát nhân sự có bất kỳ câu 2, 4, 5, 7 nào trung bình dưới 3,0 là tín hiệu về an toàn vận hành và phải được xử lý trước khoá kế tiếp.
+
+> **Lưu ý:** khảo sát học viên là công cụ **bảo vệ trẻ em**, không phải công cụ đo sự hài lòng. Không tổng hợp câu bắt buộc thành tỷ lệ phần trăm để báo cáo, không hỏi lại học viên trước mặt nhóm, và không cố truy tìm ai đã viết. Một phiếu duy nhất nêu lo ngại đủ để kích hoạt quy trình, kể cả khi 100 phiếu còn lại đều tích cực.
+
+---
+
+## BM-19 · PHIẾU BÀN GIAO COACH
+
+| Mục | Nội dung |
+|---|---|
+| **Dùng khi nào** | Khi chuyển học viên từ đội trại sang Coach đồng hành (trong 7 ngày sau trại), khi đổi Coach, hoặc khi chuyển tầng. |
+| **Ai điền** | Người bàn giao lập, người nhận đối chiếu và ký. Trainer trưởng chứng kiến khi đổi Coach giữa chu kỳ. |
+| **Mất bao lâu** | 30 phút, gồm 20 phút trao đổi trực tiếp giữa hai Coach. Không bàn giao chỉ bằng hồ sơ giấy. |
+
+### Nội dung biểu mẫu
+
+**PHIẾU BÀN GIAO COACH — Mã học viên: `LB____-____-______`  ·  Ngày bàn giao: ____/____/______**
+
+Lý do bàn giao: ⬜ Kết thúc trại, chuyển sang đồng hành ⬜ Đổi Coach ⬜ Chuyển tầng ⬜ Khác: ______
+
+**A. Hồ sơ đính kèm**
+
+| Tài liệu | Đã đính kèm | Ngày lập |
+|---|---|---|
+| `BM-09` Bản đồ Nhận diện GITA | ⬜ | ____/____ |
+| `BM-10` Bản đồ Cơ chế (nếu đã qua T2) | ⬜ | ____/____ |
+| `BM-11` Bảng KPI tuần (bản mới nhất) | ⬜ | ____/____ |
+| `BM-12` Phiếu nghiệm thu gần nhất | ⬜ | ____/____ |
+| `BM-13` Ba biên bản Review gần nhất | ⬜ | ____/____ |
+
+**B. Tình trạng hiện tại**
+
+| Nội dung | Ghi |
+|---|---|
+| Tầng đang ở | ⬜ T1 ⬜ T2 ⬜ T3 cấp ____ ⬜ T4 chu kỳ ____ ⬜ T5 |
+| Hướng chuyển tầng đã chọn | ______________________________ |
+| KPI gần nhất | Start ____ % · Completion ____ % · Reminder ____ /ngày · Recovery ____ ngày · Autonomy ____ % · Mức hỗ trợ H____ |
+| Biến số đang thử ở kỳ hiện tại | ______________________________ |
+| Điểm đòn bẩy đã xác định | ______________________________ |
+| Giả thuyết đã bị loại (đừng thử lại) | ______________________________ |
+
+**C. Ba ưu tiên phát triển**
+
+| # | Ưu tiên | Năng lực liên quan | Cách đo tiến triển |
+|---|---|---|---|
+| 1 | ______________ | `NL-____` | ______________ |
+| 2 | ______________ | `NL-____` | ______________ |
+| 3 | ______________ | `NL-____` | ______________ |
+
+**D. Lịch Review đã hẹn**
+
+| Loại | Ngày giờ đã hẹn | Người tham dự |
+|---|---|---|
+| Review tuần kế tiếp | ____/____ lúc ____ giờ | ______________ |
+| Review tháng | ____/____ lúc ____ giờ | ______________ |
+| Review chu kỳ | ____/____ lúc ____ giờ | ______________ |
+
+**E. Lưu ý đặc biệt**
+
+| Nội dung | Ghi |
+|---|---|
+| Cách tiếp cận hiệu quả với học viên này (mô tả cách làm cụ thể) | ______________________________ |
+| Cách tiếp cận đã thử và không hiệu quả | ______________________________ |
+| Bối cảnh gia đình cần biết để hẹn lịch (giờ làm việc, người đồng hành chính) | ______________________________ |
+| Nội dung y tế cần biết để giữ an toàn | ______________________________ |
+| Đang có hồ sơ `BM-16` mở | ⬜ Không ⬜ Có — chỉ Cán bộ BVTE bàn giao riêng, không ghi chi tiết vào phiếu này |
+
+> Mô tả hành vi và cách làm, không dán nhãn. Nên viết: "Học viên bắt đầu ngay khi được giao vai trò cụ thể và có mốc giờ; nhắc chung chung thì không có hiệu lực." Không viết: "Học viên bướng, phải nghiêm."
+
+**F. Chữ ký**
+
+| Người ký | Ký xác nhận điều gì | Chữ ký · Họ tên | Ngày |
+|---|---|---|---|
+| Người bàn giao | Xác nhận hồ sơ đính kèm đủ và nội dung mục B–E là dữ liệu thật, không phải ấn tượng cá nhân | ______________ | ____/____ |
+| Người nhận | Xác nhận đã đọc hồ sơ, đã trao đổi trực tiếp và tiếp nhận trách nhiệm đồng hành từ ngày ____/____ | ______________ | ____/____ |
+| Trainer trưởng (khi đổi Coach giữa chu kỳ) | Xác nhận việc bàn giao không làm gián đoạn lịch Review đã hẹn với gia đình | ______________ | ____/____ |
+
+### Hướng dẫn điền
+
+- Bàn giao phải có **trao đổi trực tiếp 20 phút**; phiếu ký mà hai Coach chưa nói chuyện là bàn giao hình thức.
+- Mục B ghi số, không ghi nhận xét. "Học viên tiến bộ nhiều" không dùng được; "Reminder giảm từ 4,2 xuống 1,8 lần/ngày trong 6 tuần" mới dùng được.
+- Mục "giả thuyết đã bị loại" là mục tiết kiệm thời gian nhất cho Coach mới và cũng là mục hay bị bỏ trống nhất.
+- Mục E viết theo cách làm, không viết theo tính cách. Câu mô tả con người thay vì mô tả cách làm phải viết lại.
+- Không ghi chi tiết nội dung bảo vệ trẻ em vào phiếu này; chỉ đánh dấu có hồ sơ mở để Coach mới biết liên hệ Cán bộ BVTE.
+- Gia đình phải được thông báo tên Coach mới **trước ngày Review kế tiếp**, không để gia đình phát hiện qua buổi họp.
+
+### Cách đọc kết quả
+
+Coach nhận bàn giao đọc theo thứ tự C → B → E: ba ưu tiên trước để biết đích, rồi tới số liệu để biết điểm xuất phát, rồi tới cách tiếp cận để biết cách vào việc. Trong hai tuần đầu sau bàn giao, Coach mới **không thay biến số nào** mà chỉ quan sát để xác nhận số liệu bàn giao đúng với thực tế; thay đổi thiết kế ngay khi vừa nhận là nguyên nhân phổ biến làm đứt chuỗi của học viên.
+
+> **Lưu ý:** đổi Coach là một **sự kiện đời sống** đối với học viên, không phải một thao tác hành chính. Ghi ngày đổi Coach vào bảng sự kiện của `BM-11` để tuần đó được đọc đúng bối cảnh, và không kết luận về động lực của học viên dựa trên số liệu của hai tuần ngay sau khi đổi người đồng hành.
+
+---
+
+## BM-20 · PORTFOLIO LEADER BOOM
+
+| Mục | Nội dung |
+|---|---|
+| **Dùng khi nào** | Bắt đầu lập từ Tầng 4, **cập nhật mỗi quý**. Là hồ sơ đi theo học viên, không phải hồ sơ báo cáo. |
+| **Ai điền** | Học viên là người viết chính. Coach hỗ trợ đặt câu hỏi và soát bằng chứng, không viết hộ. |
+| **Mất bao lâu** | 90 phút mỗi quý: 60 phút học viên tự làm, 30 phút cùng Coach soát bằng chứng. |
+
+### Nội dung biểu mẫu
+
+**PORTFOLIO LEADER BOOM — Mã học viên: `LB____-____-______`  ·  Quý cập nhật: Q____ / 20____  ·  Ngày: ____/____/______**
+
+**Mục 1 · Hồ sơ năng lực**
+
+| Năng lực | Cấp hiện tại | Cấp quý trước | Bằng chứng gần nhất |
+|---|---|---|---|
+| `NL-____` ______________ | L____ | L____ | ______________________ |
+| `NL-____` ______________ | L____ | L____ | ______________________ |
+| `NL-____` ______________ | L____ | L____ | ______________________ |
+| `NL-____` ______________ | L____ | L____ | ______________________ |
+| `NL-____` ______________ | L____ | L____ | ______________________ |
+
+**Mục 2 · Mục tiêu và kết quả của quý**
+
+| Mục tiêu đã đặt đầu quý | Kết quả đo được | Đạt | Chưa đạt | Điều đã học được |
+|---|---|---|---|---|
+| ______________ | ______________ | ⬜ | ⬜ | ______________ |
+| ______________ | ______________ | ⬜ | ⬜ | ______________ |
+| ______________ | ______________ | ⬜ | ⬜ | ______________ |
+
+**Mục 3 · Sản phẩm và dự án**
+
+| Tên sản phẩm / dự án | Vai trò của em | Thời gian | Kết quả cụ thể | Minh chứng đính kèm |
+|---|---|---|---|---|
+| ______________ | ______________ | ____ tuần | ______________ | ⬜ Ảnh ⬜ Video ⬜ Bài viết ⬜ Khác |
+| ______________ | ______________ | ____ tuần | ______________ | ⬜ Ảnh ⬜ Video ⬜ Bài viết ⬜ Khác |
+
+**Mục 4 · Dữ liệu thói quen và KPI của quý**
+
+| KPI | Đầu quý | Cuối quý | Thay đổi |
+|---|---|---|---|
+| Start rate | ____ % | ____ % | ______ |
+| Completion rate | ____ % | ____ % | ______ |
+| Reminder / ngày | ____ | ____ | ______ |
+| Chuỗi dài nhất | ____ ngày | ____ ngày | ______ |
+| **Recovery time** | ____ ngày | ____ ngày | ______ |
+| Autonomy index | ____ % | ____ % | ______ |
+| Mức hỗ trợ | H____ | H____ | ______ |
+
+**Mục 5 · Phản tư của học viên** — viết bằng lời của em
+
+| Câu hỏi | Trả lời |
+|---|---|
+| Việc khó nhất em đã làm được quý này là gì | ______________________________ |
+| Lần em đứt chuỗi gần nhất, điều gì giúp em quay lại | ______________________________ |
+| Cơ chế nào đang giúp em nhất (không phải "em cố gắng hơn") | ______________________________ |
+| Điều em vẫn chưa làm được và em nghĩ vì sao | ______________________________ |
+
+**Mục 6 · Đóng góp cho người khác**
+
+| Việc đã làm | Cho ai | Kết quả người đó nhận được |
+|---|---|---|
+| ______________ | ______________ | ______________________ |
+| ______________ | ______________ | ______________________ |
+
+**Mục 7 · Định hướng quý tới**
+
+| Nội dung | Ghi |
+|---|---|
+| Ba mục tiêu quý tới | 1. ______________ 2. ______________ 3. ______________ |
+| Năng lực muốn nâng cấp | `NL-____` từ L____ lên L____ |
+| Một biến số sẽ thử thay đổi | ______________________________ |
+| Điều em cần người lớn hỗ trợ | ______________________________ |
+
+| Người ký | Ký xác nhận điều gì | Chữ ký · Họ tên | Ngày |
+|---|---|---|---|
+| Học viên | Xác nhận nội dung do em tự viết và các bằng chứng là việc em thật sự đã làm | ______________ | ____/____ |
+| Coach | Xác nhận đã soát bằng chứng ở mục 1, 3, 4 và không viết hộ phần phản tư của học viên | ______________ | ____/____ |
+
+### Hướng dẫn điền
+
+- Học viên viết mục 2, 5, 6, 7 **bằng lời của mình**. Coach viết hộ cho "đẹp hồ sơ" làm mất toàn bộ giá trị của portfolio.
+- Mục 1 chỉ ghi cấp độ có bằng chứng ở `BM-08` hoặc `BM-12`; không nâng cấp độ vì học viên đã học lâu hơn.
+- Mục 3 phải có **kết quả cụ thể**, không chỉ ghi tên hoạt động. "Tổ chức buổi đọc sách cho 12 bạn lớp 6, duy trì 5 tuần" mới là kết quả.
+- Mục 5 câu thứ ba không được trả lời bằng "em cố gắng hơn"; câu hỏi này yêu cầu nêu cơ chế cụ thể như neo thời gian, môi trường, người cùng làm.
+- Mục 4 chép số từ `BM-11`, không ước lượng lại; portfolio có số đẹp hơn bảng KPI là dấu hiệu phải soát lại.
+- Không xoá nội dung của các quý trước khi cập nhật. Portfolio giữ lịch sử, gồm cả quý không đạt mục tiêu.
+
+### Cách đọc kết quả
+
+Portfolio là hồ sơ **thuộc về học viên**, dùng khi ứng tuyển học bổng, xin tham gia dự án, hoặc trình bày trong buổi nghiệm thu chu kỳ. Coach đọc theo chiều dọc nhiều quý để kiểm bốn thuộc tính năng lực: mục 1 cho biết tính ổn định, mục 3 cho biết tính khái quát, mục 5 cho biết tính thích nghi, mục 4 cột mức hỗ trợ cho biết tính tự chủ. Học viện chỉ dùng portfolio làm ví dụ chuyên môn khi đã có đồng ý ở mục 6 của `BM-04` và đã ẩn danh hoàn toàn.
+
+> **Lưu ý:** portfolio không phải bản thành tích và không được dùng để so sánh giữa các học viên. Một quý không đạt mục tiêu, được ghi lại trung thực kèm phần phản tư ở mục 5, có giá trị chuyên môn cao hơn một quý toàn kết quả tốt mà không nêu được cơ chế. Không xoá các quý khó khăn khỏi hồ sơ, vì chính chuỗi phục hồi mới là bằng chứng của năng lực.
+
+---
+
+## 21. Bảng tra nhanh
+
+| Mã | Tên biểu mẫu | Ai điền | Tần suất | Nộp cho ai |
+|---|---|---|---|---|
+| `BM-01` | Phiếu thông tin & khai báo y tế | Phụ huynh | 1 lần, trước D-25 | Cán bộ y tế trại |
+| `BM-02` | Phiếu tự đánh giá học viên | Học viên | D-20, lặp tại D+90 và D+365 | Coach |
+| `BM-03` | Phiếu phụ huynh | Phụ huynh | D-20, lặp tại D+90 và D+365 | Coach |
+| `BM-04` | Phiếu đồng ý sử dụng hình ảnh – dữ liệu | Phụ huynh (học viên ≥13 tuổi ký thêm) | 1 lần, trước D-25 | Bộ phận dữ liệu |
+| `BM-05` | Nhật ký 7 ngày trước trại | Học viên (6 dòng/ngày) + phụ huynh (2 dòng/ngày) | 7 ngày liên tục từ D-14 | Coach |
+| `BM-06` | Cam kết 3 bên | Học viên, phụ huynh, đại diện Học viện | 1 lần tại D-15 | Mỗi bên giữ 1 bản; bản Học viện lưu hồ sơ |
+| `BM-07` | Phiếu quan sát ngày (ACT) | ACT | Mỗi ngày trại | Coach, trước 20:45 |
+| `BM-08` | Bảng chấm rubric 18 năng lực | ACT chấm, Coach soát | Mỗi tối trại; lặp tại D+30, D+60, D+90 | Coach chốt, lưu hồ sơ học viên |
+| `BM-09` | Bản đồ Nhận diện GITA | Coach lập, Trainer trưởng duyệt | 1 lần, trong 7 ngày sau trại | Gia đình (bàn giao trực tiếp) |
+| `BM-10` | Bản đồ Cơ chế (6 lớp) | Coach cùng học viên | 1 lần tại D28, mỗi biểu hiện một bản | Trainer trưởng duyệt |
+| `BM-11` | Bảng KPI tuần | Học viên tổng hợp, Coach soát | Hằng tuần, 13 tuần | Coach, trong buổi Review tuần |
+| `BM-12` | Phiếu nghiệm thu cấp / chu kỳ | Coach chuẩn bị, Trainer trưởng chốt | Ngày 30, 60, 90 và cuối mỗi chu kỳ T4 | Hồ sơ học viên; bản sao cho gia đình |
+| `BM-13` | Biên bản Review | Coach ghi trong buổi | Ngày 7 · tuần · tháng · chu kỳ | Hồ sơ học viên; bản sao cho gia đình |
+| `BM-14` | Bảng kiểm an toàn hằng ngày | Quản trại (y tế ký mục 5–7) | Mỗi tối trại, trước 22:30 | Giám đốc chương trình |
+| `BM-15` | Biên bản sự cố / cận-sự-cố | Người chứng kiến ghi, Quản trại soát | Ngay khi xảy ra, hoàn thành trong 60 phút | Quản trại; mức 2–3 chuyển Giám đốc chương trình trong ngày |
+| `BM-16` | Biên bản báo cáo lo ngại bảo vệ trẻ em | Người phát hiện | Ngay khi có lo ngại; biên bản trong 24 giờ | Cán bộ BVTE (báo miệng trong 1 giờ) |
+| `BM-17` | Ma trận rủi ro khoá | Quản trại chủ trì | Lập D-20, rà D-3, cập nhật theo `BM-15` | Giám đốc chương trình ký duyệt |
+| `BM-18` | Khảo sát | Học viên · phụ huynh · nhân sự | Học viên D7 · phụ huynh D+7, D118, D365 · nhân sự D+3 | Câu bắt buộc của học viên → Cán bộ BVTE; phần còn lại → Giám đốc chương trình |
+| `BM-19` | Phiếu bàn giao Coach | Người bàn giao lập, người nhận ký | Khi chuyển sang đồng hành, đổi Coach, chuyển tầng | Coach nhận; bản sao lưu hồ sơ học viên |
+| `BM-20` | Portfolio Leader Boom | Học viên viết, Coach soát | Mỗi quý, từ Tầng 4 | Học viên giữ bản chính; bản sao lưu hồ sơ |

@@ -565,7 +565,7 @@ Sau tuần cao điểm, học viên dừng toàn bộ nền nếp ≥ 4 ngày li
 |---|---|---|
 | A | Không có kế hoạch phục hồi được viết ra trước | Viết trước 3 hoạt động phục hồi, đo lại |
 | T | Không phân biệt nghỉ phục hồi với nghỉ tiêu hao (lướt màn hình) | Ghi cảm giác sau 2 loại nghỉ |
-| I | Coi nghỉ là lười nên nghỉ mà không yên tâm | Nghe cách học viên nói về việc nghỉ |
+| I | Coi việc nghỉ là dấu hiệu thiếu cố gắng nên nghỉ mà không yên tâm | Nghe cách học viên nói về việc nghỉ |
 | A | Tuần cao điểm không có ngày đệm sau đó | Chèn 1 ngày tải nhẹ, đo KPI tuần kế |
 
 **Đòn bẩy chính** — Đặt **ngày đệm 24 giờ** ngay sau mỗi tuần cao điểm, với tải học bằng 40% bình thường và 3 hoạt động phục hồi đã chọn trước (vận động, ngủ bù ≤ 90 phút, gặp bạn). Phục hồi được lên lịch trước thì mới xảy ra.
@@ -573,7 +573,7 @@ Sau tuần cao điểm, học viên dừng toàn bộ nền nếp ≥ 4 ngày li
 **T1 · 7 ngày — chỉ quan sát, không sửa lớn**
 D1 ghi mức tải mỗi ngày · D2 ghi hoạt động sau khi kết thúc việc lớn · D3 chấm mức hồi phục 1–5 mỗi tối · D4 ghi số ngày nền nếp bị dừng · D5 đối chiếu 4 nguồn, lập giả thuyết · D6 thử **đúng một** thay đổi: ngày đệm 24 giờ · D7 so sánh KPI tuần kế.
 
-**T2 · 21 ngày** — Vòng 1 kiểm A: ngày đệm và tải sau cao điểm. Vòng 2 kiểm T: phân biệt hai loại nghỉ. Vòng 3 kiểm I: niềm tin "nghỉ là lười". Mỗi vòng đổi một biến.
+**T2 · 21 ngày** — Vòng 1 kiểm A: ngày đệm và tải sau cao điểm. Vòng 2 kiểm T: phân biệt hai loại nghỉ. Vòng 3 kiểm I: niềm tin "nghỉ là thiếu cố gắng". Mỗi vòng đổi một biến.
 
 **T3 · 90 ngày** — Cấp 1: thực hiện ngày đệm khi Coach xếp lịch. Cấp 2: tự xếp ngày đệm, KPI tuần kế giảm ≤ 15%. Cấp 3: tự nhận biết dấu hiệu quá tải sớm và chủ động giảm tải trước khi sụp.
 

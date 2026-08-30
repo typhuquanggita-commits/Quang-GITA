@@ -745,3 +745,187 @@
 
 > **Sai lầm thường gặp khi dẫn:** thúc "nhanh lên" khi thấy đội chậm. Áp lực tốc độ khiến học viên kéo tay nhau — nguyên nhân chính của trẹo vai ở hoạt động này, và cũng phá luôn bài học về báo hiệu.
 
+---
+
+## 4. NGÀY 4 · STRATEGIC THINKING
+
+## A4-01 · Mật mã thông tin (la bàn nhiệm vụ chéo)
+
+| Trụ GITA | Nhóm tuổi | Thời lượng | Quy mô | Không gian |
+|---|---|---|---|---|
+| T — Tài năng | 9–18 | 70 phút | 6–8 học viên/đội | Sân trại, 5 trạm cách nhau ≤ 150 m |
+
+| Năng lực rèn | Rủi ro | Vật tư |
+|---|---|---|
+| `NL-03` Tư duy · `NL-06` Quản lý thời gian · `NL-12` Hợp tác | Thấp | La bàn ×1/đội, bộ mật mã 5 trạm ×1/đội, bảng kế hoạch thời gian A3 ×1/đội, bút ×2/đội, đồng hồ ×1/đội |
+
+**Mục tiêu học tập** — Đội **giải** được 5 lớp mật mã theo thứ tự bắt buộc trong ngân sách 30 phút và **lập** được bảng phân bổ thời gian có sai lệch thực tế ≤ 20% so với dự kiến.
+
+**Chuẩn bị** — 5 trạm mật mã (mã số – mã chữ – mã hình – mã la bàn – mã ghép). Mỗi đội một la bàn đã hiệu chỉnh, bảng kế hoạch A3 in sẵn cột *trạm · dự kiến · thực tế · chênh*. Đồng hồ đếm ngược chiếu ở sân trung tâm. Trạm nước ở trạm 3. Ranh giới khu vực đánh dấu bằng cờ.
+
+**Cách dẫn — 5 nhịp**
+
+1. **Khởi động và kết nối (5 phút)** — Trainer đọc một mã đơn giản, cả nhóm giải chung để hiểu nguyên tắc.
+2. **Trải nghiệm (30 phút)** — Bước 1: đội **lập bảng dự kiến thời gian cho 5 trạm trước khi xuất phát**, không được sửa sau đó. Bước 2: xuất phát, mỗi trạm ACT ghi giờ vào và giờ ra. Bước 3: tại trạm 3 đội bắt buộc dừng uống nước và **soát lại bảng thời gian**. Bước 4: hoàn tất 5 trạm, ghép mã cuối. Bước 5: đội điền cột *thực tế* và *chênh*. Lời dẫn trước khi xuất phát: *"Ba mươi phút là ngân sách. Các em chia trước đi. Đội nào không chia mà cứ chạy sẽ hết giờ ở trạm bốn — tôi nói trước để lát nữa các em tự kiểm."*
+3. **Quan sát và chia sẻ (5 phút)** — Mỗi đội đọc trạm có độ chênh lớn nhất và giải thích chênh vì sao.
+4. **Đúc kết — 15 phút, bắt buộc** — (1) Trạm nào đội dự kiến 5 phút mà thực tế mất bao nhiêu? (2) Lúc thấy đồng hồ còn 8 phút mà còn 2 trạm, cả đội thế nào? (3) Vì sao con người thường ước lượng thời gian thấp hơn thực tế? (4) Nguyên lý: một kế hoạch thời gian tốt cần thêm phần gì ngoài các mốc? (5) Đội đã cắt việc gì để kịp, và cắt đúng chỗ chưa? (6) Bài tập về nhà nào của em hay bị vỡ kế hoạch giống trạm 4?
+5. **Áp dụng (5 phút)** — Mỗi học viên lập bảng thời gian cho buổi tự học tối nay, có **cột dự phòng 20%**.
+
+**An toàn** — Rủi ro: chạy vấp, say nắng, đi ra khỏi ranh giới. Biện pháp: ranh giới cờ rõ; cấm chạy trên đường có xe và trên bậc; trạm nước bắt buộc ở trạm 3; **không tổ chức 11:00–15:00**; 1 ACT trực mỗi trạm và 1 ACT cơ động.
+
+**Quyền được dừng** — *"Em mệt thì nói 'con xin dừng' với ACT tại trạm, em ngồi lại trạm đó có nước, ACT ở cùng em. Đội không mất điểm và không ai hỏi lý do."*
+
+**Điều chỉnh theo lứa tuổi** — **9–11:** 3 trạm, mã hình và mã số, ngân sách 25 phút, bảng thời gian điền sẵn một nửa. **16–18:** 5 trạm, thêm ràng buộc chỉ 2 thành viên được cầm lời giải và phải truyền lại bằng lời cho phần còn lại của đội.
+
+> **Sai lầm thường gặp khi dẫn:** cho đội xuất phát ngay khi phát mã, bỏ bước lập bảng dự kiến. Không có bảng dự kiến thì không có độ chênh, và nhịp đúc kết mất toàn bộ dữ liệu về năng lực ước lượng thời gian.
+
+## A4-02 · Đấu pháp cờ (cờ X-O người)
+
+| Trụ GITA | Nhóm tuổi | Thời lượng | Quy mô | Không gian |
+|---|---|---|---|---|
+| T — Tài năng | 9–18 | 50 phút | 9–12 học viên/đội | Sân bằng, ô cờ 9 ô 6×6 m |
+
+| Năng lực rèn | Rủi ro | Vật tư |
+|---|---|---|
+| `NL-03` Tư duy · `NL-12` Hợp tác · `NL-15` Lãnh đạo bản thân | Thấp | Vòng nhựa đánh ô ×9, yếm màu 2 màu ×12, còi ×1, bảng ghi ván ×1 |
+
+**Mục tiêu học tập** — Đội **nêu trước** được nước đi tiếp theo của đối phương ở ≥ 2 ván và **giải thích** cơ sở dự đoán bằng vị trí trên bàn cờ.
+
+**Chuẩn bị** — Ô cờ 3×3 bằng vòng nhựa, mỗi ô 2×2 m, cách vạch xuất phát 8 m. Yếm 2 màu. Nền cỏ hoặc sân mềm, dọn vật cản. Bảng ghi kết quả từng ván (ghi theo **đội**).
+
+**Cách dẫn — 5 nhịp**
+
+1. **Khởi động và kết nối (5 phút)** — Khởi động chạy nhẹ 3 phút; phổ biến luật chạy một chiều để tránh va chạm.
+2. **Trải nghiệm (20 phút)** — Bước 1: ván 1 chơi tự do, không họp trước. Bước 2: **bắt buộc 2 phút họp chiến thuật**, đội phải vẽ sơ đồ 3 nước đi đầu. Bước 3: ván 2 và 3 theo chiến thuật đã vẽ. Bước 4: sau mỗi ván, đội ghi **một nước đi mình đã đoán đúng của đối phương**. Bước 5: ván cuối, mỗi đội chỉ được nói 3 câu trong suốt ván. Lời dẫn: *"Trước khi chạy, hãy nhìn xem đội bạn đang thiếu ô nào. Người thắng cờ không phải người chạy nhanh nhất mà người biết ô nào quan trọng."*
+3. **Quan sát và chia sẻ (5 phút)** — Mỗi đội chỉ ra ô mà cả hai đội đều tranh, và giải thích vì sao ô đó quan trọng.
+4. **Đúc kết — 15 phút, bắt buộc** — (1) Ván nào đội đoán đúng nước đi đối phương, và đoán dựa vào đâu? (2) Lúc đối phương chiếm mất ô giữa, em thấy thế nào? (3) Vì sao ô ở giữa lại có giá trị hơn ô ở góc? (4) Nguyên lý: khác nhau giữa phản ứng theo tình huống và đi theo một kế hoạch? (5) Ở ván chỉ được nói 3 câu, đội đã dùng câu nói vào việc gì? (6) Trong việc học, đâu là "ô giữa" của em — việc mà làm được thì kéo theo nhiều việc khác?
+5. **Áp dụng (5 phút)** — Mỗi học viên xác định **một "ô giữa"** trong tuần học tới và ghi vào sổ trại.
+
+**An toàn** — Rủi ro: va chạm khi hai đội chạy cắt nhau. Biện pháp: quy định **hai làn chạy riêng**, mỗi đội một bên; cấm chạy cắt ngang làn đội bạn; vòng nhựa nằm phẳng, không có gờ; nền cỏ. Tỉ lệ giám sát 1 ACT / 2 đội, đứng ở giao lộ hai làn.
+
+**Quyền được dừng** — *"Em không muốn chạy thì nói 'con xin dừng' — em làm người vẽ chiến thuật cho đội, đây là vai quan trọng nhất của ván sau. Không trừ điểm, không hỏi lý do."*
+
+**Điều chỉnh theo lứa tuổi** — **9–11:** ô cờ gần hơn (5 m), đi bộ nhanh thay vì chạy, không yêu cầu vẽ sơ đồ mà chỉ nói miệng. **16–18:** bàn cờ 4×4, thêm luật được di chuyển quân đã đặt, tăng độ sâu chiến thuật.
+
+> **Sai lầm thường gặp khi dẫn:** cho chơi liên tục 5–6 ván vì học viên thích. Không có 2 phút họp chiến thuật giữa các ván thì đây chỉ là trò chạy tiếp sức, không rèn được tư duy nhìn trước nước đi.
+
+## A4-03 · Nghệ thuật của nước (4 pha)
+
+| Trụ GITA | Nhóm tuổi | Thời lượng | Quy mô | Không gian |
+|---|---|---|---|---|
+| T — Tài năng | 9–18 | 65 phút | 6–8 học viên/đội | Sân có bàn, gần nguồn nước |
+
+| Năng lực rèn | Rủi ro | Vật tư |
+|---|---|---|
+| `NL-03` Tư duy · `NL-10` Giải quyết vấn đề · `NL-11` Giao tiếp | Thấp | Chai nhựa ×4/đội, ống nhựa mềm 1 m ×2/đội, cốc đong ×4/đội, khay hứng ×2/đội, giấy thấm, khăn lau ×4/đội |
+
+**Mục tiêu học tập** — Học viên **giải thích** được nguyên lý khoa học đứng sau mỗi pha (áp suất, mao dẫn, bình thông nhau, sức căng bề mặt) bằng lời của mình và **dự đoán** đúng ≥ 2/4 kết quả trước khi làm.
+
+**Chuẩn bị** — 4 bàn, mỗi bàn một pha, có khay hứng nước và khăn lau. Sàn quanh bàn lót chống trơn. Nước sạch trong can 5 lít, không dùng nước nóng. Bảng ghi *dự đoán – kết quả* ×1/đội.
+
+**Cách dẫn — 5 nhịp**
+
+1. **Khởi động và kết nối (5 phút)** — Trainer đổ nước từ cốc này sang cốc kia và hỏi: *"Nước luôn tìm cái gì?"*
+2. **Trải nghiệm (30 phút)** — Bước 1: tại mỗi pha, đội **viết dự đoán trước khi chạm dụng cụ**. Bước 2: làm thí nghiệm 5 phút. Bước 3: ghi kết quả thật. Bước 4: đội phải **giải thích** bằng lời trước khi chuyển pha, ACT chỉ hỏi lại, không giảng. Bước 5: xoay vòng đủ 4 pha. Lời dẫn: *"Viết dự đoán trước đã. Đoán sai không sao — cái làm các em nhớ chính là khoảnh khắc thấy mình đoán sai."*
+3. **Quan sát và chia sẻ (5 phút)** — Mỗi đội kể pha mà mình đoán sai nhiều nhất.
+4. **Đúc kết — 15 phút, bắt buộc** — (1) Bốn pha, đội đoán đúng mấy pha? (2) Lúc nước chảy ngược với điều em nghĩ, cảm giác đầu tiên là gì? (3) Vì sao nước luôn tìm mức thấp nhất mà vẫn dâng lên được trong ống nhỏ? (4) Nguyên lý chung của bốn pha: nước không chống lại vật cản, nó đi vòng — điều đó nói gì về cách xử lý một trở ngại? (5) Có việc nào em đang "đâm thẳng" mà nên đi vòng không? (6) Đi vòng khác bỏ cuộc ở điểm nào?
+5. **Áp dụng (5 phút)** — Mỗi học viên chọn một việc đang bế tắc, viết **hai đường vòng** có thể thử trong tuần.
+
+**An toàn** — Rủi ro: trơn trượt do nước đổ, đổ vỡ chai, uống nhầm nước thí nghiệm. Biện pháp: **dùng đồ nhựa, không dùng thuỷ tinh**; khay hứng dưới mọi thao tác; lau ngay khi nước rớt xuống sàn; nước sạch, không pha hoá chất, không dùng nước nóng; ống nhựa mềm đầu tròn. Tỉ lệ giám sát 1 ACT / pha.
+
+**Quyền được dừng** — *"Ai không muốn thao tác với nước, nói 'con xin dừng' — em nhận việc ghi bảng dự đoán và kết quả cho đội. Không trừ điểm, không hỏi lý do."*
+
+**Điều chỉnh theo lứa tuổi** — **9–11:** 3 pha, dụng cụ lắp sẵn, chỉ cần mô tả điều nhìn thấy chứ chưa cần giải thích cơ chế. **16–18:** 4 pha, yêu cầu viết công thức hoặc sơ đồ lực và tự thiết kế một pha thứ năm cho đội bạn.
+
+> **Sai lầm thường gặp khi dẫn:** ACT giảng nguyên lý ngay khi đội làm xong, cho nhanh. Câu trả lời do người lớn nói ra không tạo ra thay đổi trong đầu học viên; ACT chỉ được hỏi tiếp, để đội tự phát biểu nguyên lý.
+
+## A4-04 · Người vận chuyển (4 pha, có pha giải toán)
+
+| Trụ GITA | Nhóm tuổi | Thời lượng | Quy mô | Không gian |
+|---|---|---|---|---|
+| A — Hành động | 9–18 | 70 phút | 8–10 học viên/đội | Sân cỏ, tuyến 4 pha dài 40 m |
+
+| Năng lực rèn | Rủi ro | Vật tư |
+|---|---|---|
+| `NL-07` Tập trung · `NL-17` Học thuật · `NL-06` Quản lý thời gian | Trung bình | Lưới bò trườn 4×3 m ×1, thảm xốp toàn tuyến lưới, bộ đề toán 5 bài ×1/đội, kiện hàng nhẹ 2 kg ×4/đội, nón mốc ×10 |
+
+**Mục tiêu học tập** — Đội **giao** đủ 4 kiện hàng và **giải đúng** ≥ 4/5 bài toán dưới ràng buộc thời gian, với tỉ lệ lỗi tính toán không tăng ở pha cuối.
+
+**Chuẩn bị** — Pha 1 vận chuyển kiện; pha 2 **bò trườn dưới lưới** trên thảm xốp; pha 3 giải toán tại bàn; pha 4 giao hàng đúng địa chỉ. Trước mỗi lượt: **kiểm vật sắc nhọn trên toàn tuyến lưới**, kiểm lưới **tháo nhanh được bằng một chốt**. Bàn toán có bút, giấy nháp. Trạm nước cuối tuyến.
+
+**Cách dẫn — 5 nhịp**
+
+1. **Khởi động và kết nối (5 phút)** — Khởi động khớp 3 phút; nhắc lại quy tắc bò trườn: đầu luôn hướng về lối ra, không bò lùi.
+2. **Trải nghiệm (30 phút)** — Bước 1: đội phân công ai qua pha nào, có 3 phút. Bước 2: lượt 1 chạy tuyến, ACT ghi thời gian từng pha và số bài toán sai. Bước 3: 4 phút họp, đội quyết định **có đổi người ở pha toán không**. Bước 4: lượt 2. Bước 5: so sánh: thời gian tổng và tỉ lệ toán sai giữa hai lượt. Lời dẫn: *"Pha toán nằm sau pha bò trườn là cố ý. Tôi muốn xem đầu các em tính toán thế nào khi tim đang đập nhanh."*
+3. **Quan sát và chia sẻ (5 phút)** — Người ở pha toán nói: khác biệt giữa làm toán lúc bình thường và lúc vừa vận động mạnh.
+4. **Đúc kết — 15 phút, bắt buộc** — (1) Số bài toán sai ở lượt 1 và lượt 2 là bao nhiêu? (2) Ngồi xuống làm toán khi đang thở gấp, em thấy thế nào? (3) Vì sao độ chính xác giảm khi nhịp tim cao, dù bài toán không khó hơn? (4) Nguyên lý: cần làm gì trong 30 giây trước một việc đòi hỏi chính xác? (5) Đội đã đổi người ở pha toán chưa, và quyết định đó dựa trên gì? (6) Trước giờ kiểm tra ở trường, em sẽ làm gì khác từ tuần sau?
+5. **Áp dụng (5 phút)** — Mỗi học viên viết một "nghi thức 30 giây" trước khi vào việc cần chính xác (thở, sắp giấy, đọc lại đề).
+
+**An toàn** — Rủi ro: mắc kẹt trong lưới, xước da khi trườn, va đầu, mất tập trung do mệt. Biện pháp bắt buộc: **kiểm vật sắc nhọn trên toàn tuyến trước mỗi lượt**; **lưới phải tháo nhanh được bằng một chốt, có 1 ACT đứng cạnh chốt suốt thời gian hoạt động**; thảm xốp dưới toàn bộ vùng trườn; cấm bò lùi và cấm hai người vào lưới cùng lúc; kiện hàng ≤ 2 kg. Tỉ lệ giám sát **1 ACT / pha**, riêng pha lưới **1 ACT chuyên trách**. **Điều kiện dừng:** dừng khi mưa, khi thảm xốp trượt, hoặc ngay khi có học viên báo mắc kẹt.
+
+**Quyền được dừng** — *"Em không muốn chui lưới thì nói 'con xin dừng' — em đi đường vòng bên cạnh, đội **không** bị cộng thời gian phạt. Đang ở trong lưới mà thấy sợ, em nói to 'con xin dừng', ACT sẽ mở chốt ngay."*
+
+**Điều chỉnh theo lứa tuổi** — **9–11:** lưới nâng cao 60 cm để bò bằng bốn chi thay vì trườn sát; toán mức 3 phép tính. **16–18:** đủ 4 pha, đề toán có bài đánh lừa và ràng buộc chỉ được dùng nháp một mặt giấy.
+
+> **Sai lầm thường gặp khi dẫn:** giục học viên đang ở trong lưới bằng tiếng đếm ngược. Học viên hoảng trong không gian hẹp là rủi ro thực tế nhất của hoạt động này; ACT ở chốt phải giữ giọng bình thường và luôn nói được câu *"tôi đang ở đây, chốt mở trong hai giây"*.
+
+## A4-05 · Thử thách liên hoàn (20 cốc – dây chun)
+
+| Trụ GITA | Nhóm tuổi | Thời lượng | Quy mô | Không gian |
+|---|---|---|---|---|
+| A — Hành động | 9–18 | 50 phút | 6–8 học viên/đội | Hội trường có bàn dài |
+
+| Năng lực rèn | Rủi ro | Vật tư |
+|---|---|---|
+| `NL-12` Hợp tác · `NL-07` Tập trung · `NL-11` Giao tiếp | Thấp | Cốc nhựa ×20/đội, dây chun to ×1/đội, dây dù mảnh 60 cm ×8/đội, bảng mẫu tháp ×1/đội, đồng hồ ×1/đội |
+
+**Mục tiêu học tập** — Đội **xếp** được tháp 20 cốc theo mẫu **chỉ bằng dụng cụ dây chun – dây kéo, không ai chạm tay vào cốc**, trong ≤ 3 lượt thử.
+
+**Chuẩn bị** — Bàn dài 1,8 m/đội. Cốc nhựa ×20 (dư 4 cốc). Dụng cụ: một dây chun to buộc 6–8 sợi dây dù, mỗi thành viên cầm một sợi. Bảng mẫu tháp in màu. Kiểm dây dù không sờn. Chỗ đứng quanh bàn đủ rộng cho mọi người.
+
+**Cách dẫn — 5 nhịp**
+
+1. **Khởi động và kết nối (5 phút)** — Thử kéo dây chun không có cốc, cảm nhận lực của người đối diện.
+2. **Trải nghiệm (18 phút)** — Bước 1: đội xem mẫu tháp 1 phút, không được chụp ảnh. Bước 2: lượt 1, không được nói, chỉ ra hiệu — đếm số cốc xếp được trong 4 phút. Bước 3: 2 phút họp, chọn **một người điều phối duy nhất**. Bước 4: lượt 2 được nói, 4 phút. Bước 5: lượt 3 với ràng buộc thêm 2 người bịt mắt. Lời dẫn: *"Cả đội cùng kéo thì dây chun không mở ra được. Bài này chỉ chạy khi có người chịu nhả tay đúng lúc."*
+3. **Quan sát và chia sẻ (5 phút)** — Người điều phối nói: câu lệnh nào có tác dụng, câu nào gây rối.
+4. **Đúc kết — 15 phút, bắt buộc** — (1) Ba lượt xếp được bao nhiêu cốc? (2) Ở lượt cấm nói, em thấy thế nào khi muốn nhắc mà không nhắc được? (3) Vì sao cả đội cùng kéo mạnh lại làm dây chun không mở? (4) Nguyên lý: trong phối hợp, khi nào cần thêm lực và khi nào cần bớt lực? (5) Câu lệnh của người điều phối cần có gì để dùng được — ngắn, chỉ đích danh, hay to? (6) Ở nhóm em, ai đang "kéo quá tay" và ai cần kéo thêm?
+5. **Áp dụng (5 phút)** — Đội viết 3 mẫu câu điều phối chuẩn để dùng cho các hoạt động ngày mai.
+
+**An toàn** — Rủi ro: dây chun bật vào mặt, cốc rơi, va đầu khi cúi cùng lúc. Biện pháp: dùng dây chun bản to, **kiểm trước mỗi lượt, thay khi thấy rạn**; cấm kéo căng quá vạch đánh dấu trên bàn; đứng cách nhau ≥ 40 cm; **cấm đưa mặt vào phía trên dây chun đang căng**. Tỉ lệ giám sát 1 ACT / đội.
+
+**Quyền được dừng** — *"Em muốn dừng thì nói 'con xin dừng' và buông sợi dây của mình xuống bàn — không giật ra. Em ngồi ghế cạnh làm người đếm cốc. Không trừ điểm, không hỏi lý do."*
+
+**Điều chỉnh theo lứa tuổi** — **9–11:** 10 cốc, tháp 3 tầng, không có lượt bịt mắt. **16–18:** 20 cốc, thêm ràng buộc người điều phối bị đổi giữa chừng ở lượt 3 mà không được bàn giao bằng lời.
+
+> **Sai lầm thường gặp khi dẫn:** cho đội chạm tay chỉnh cốc "cho nhanh" khi sắp hết giờ. Chỉ cần một lần phá luật, ràng buộc trung tâm của hoạt động biến mất và đội không còn học được gì về nhả lực.
+
+## A4-06 · Đấu pháp tiếp sức (chạy 2 km chia đều)
+
+| Trụ GITA | Nhóm tuổi | Thời lượng | Quy mô | Không gian |
+|---|---|---|---|---|
+| A — Hành động | 12–18 | 70 phút | 8–10 học viên/đội | Đường chạy vòng có bóng mát, mỗi vòng 400 m |
+
+| Năng lực rèn | Rủi ro | Vật tư |
+|---|---|---|
+| `NL-06` Quản lý thời gian · `NL-12` Hợp tác · `NL-09` Tự quản | **Cao** | Gậy tiếp sức ×1/đội, đồng hồ bấm giờ ×2, **trạm nước mỗi 500 m**, bảng phân chặng ×1/đội, bộ sơ cứu, nhiệt kế môi trường |
+
+**Mục tiêu học tập** — Đội **phân bổ** 2 km theo thể lực thật của từng thành viên và **hoàn thành** với chênh lệch giữa chặng nhanh nhất và chậm nhất ≤ 40 giây, không ai phải chạy quá khả năng.
+
+**Chuẩn bị** — Đo nhiệt độ môi trường trước khi tổ chức. **Không tổ chức 11:00–15:00.** Trạm nước mỗi 500 m, đủ nước cho 3 lượt/người. Đường chạy có bóng mát, mặt phẳng, không xe cộ. Danh sách học viên có ghi chú y tế (hen, tim mạch) do Y tế cung cấp trước. Nhân viên y tế tại đích. Bảng phân chặng A3 in sẵn.
+
+**Cách dẫn — 5 nhịp**
+
+1. **Khởi động và kết nối (8 phút)** — Khởi động toàn thân 6 phút, chạy nhẹ 200 m. Y tế điểm danh nhóm có ghi chú sức khoẻ.
+2. **Trải nghiệm (25 phút)** — Bước 1: mỗi thành viên tự đánh giá quãng chạy thoải mái của mình (100 m – 200 m – 400 m). Bước 2: đội lập bảng phân chặng sao cho tổng đúng 2 km, **không ai vượt mức tự đánh giá**. Bước 3: chạy tiếp sức, ACT ghi thời gian từng chặng. Bước 4: **nghỉ bắt buộc 5 phút**, uống nước, kiểm dấu hiệu quá sức. Bước 5: đội xem bảng thời gian, chỉ ra chặng lệch nhiều nhất so với dự kiến. Lời dẫn: *"Không ai phải chạy quá quãng mình đã ghi. Ai đăng ký 100 m thì chạy đúng 100 m — đó không phải yếu, đó là dữ liệu để đội chia cho đúng."*
+3. **Quan sát và chia sẻ (5 phút)** — Mỗi đội nói: bảng phân chặng có khớp với thực tế không, lệch ở đâu.
+4. **Đúc kết — 15 phút, bắt buộc** — (1) Chênh lệch giữa chặng nhanh nhất và chậm nhất là bao nhiêu giây? (2) Lúc trao gậy mà đội đang chậm, người nhận gậy nghĩ gì? (3) Vì sao chia đều quãng đường lại **không** phải là chia công bằng? (4) Nguyên lý: phân bổ nguồn lực theo năng lực khác gì phân bổ theo số lượng? (5) Có ai nhận chặng dài hơn sức mình vì ngại không, và điều gì khiến bạn ấy ngại? (6) Ở nhóm học, việc đang chia đều nhưng thực ra không công bằng là việc nào?
+5. **Áp dụng (5 phút)** — Đội viết lại bảng phân chặng "nếu được làm lại", và một quy tắc chia việc theo năng lực.
+
+**An toàn — mức cao** — Rủi ro: sốc nhiệt, kiệt sức, chấn thương cơ, cơn hen. Biện pháp **bắt buộc**: **không tổ chức 11:00–15:00**; huỷ khi nhiệt độ trên 33 độ C hoặc độ ẩm cao gây oi; **trạm nước mỗi 500 m**; chia chặng theo thể lực tự đánh giá; **nhân viên y tế tại đích và danh sách ghi chú y tế trong tay Trainer**; theo dõi dấu hiệu quá sức (da tái hoặc đỏ bừng, ngừng ra mồ hôi, chóng mặt, nói ngắt quãng). Tỉ lệ giám sát **1 ACT / đội chạy kèm ở phần đường khuất**. **Điều kiện dừng:** dừng cá nhân ngay khi có bất kỳ dấu hiệu nào ở trên; dừng toàn bộ khi có 2 học viên phải rời đường chạy.
+
+**Quyền được dừng** — *"Đây là hoạt động dễ vượt sức nhất của cả trại. Em nói 'con xin dừng' là em dừng ngay giữa đường, ACT tới đón. Đội **không** bị trừ điểm và **không** bị tính thời gian phạt. Dừng đúng lúc là kỹ năng, không phải bỏ cuộc."*
+
+**Điều chỉnh theo lứa tuổi** — **9–11:** **không thực hiện cự ly 2 km**; thay bằng tiếp sức tổng 800 m, chặng tối đa 100 m/người, có đi bộ nhanh. **16–18:** đủ 2 km, thêm yêu cầu đội tự tính tốc độ trung bình mục tiêu và so với kết quả thực đo.
+
+> **Sai lầm thường gặp khi dẫn:** để đội cho người khoẻ nhất chạy 800 m cho nhanh. Vừa vượt ngưỡng an toàn cá nhân, vừa xoá mất bài học trung tâm là phân bổ theo năng lực; Trainer phải duyệt bảng phân chặng trước khi cho xuất phát.
+

@@ -8,6 +8,14 @@ có thấy phù hợp. Dùng cùng `BM-08` (bảng chấm rubric) và `BM-12` (n
 
 ---
 
+
+> ⚠️ **Về các ngưỡng số trong rubric.** Mọi mốc định lượng ở đây — *"nhớ ≥ 70% sau 7 ngày"*,
+> *"phiên 45 phút, ≤ 1 lần chuyển chú ý"*, *"đúng ≥ 60% dự đoán"* — là **ngưỡng khởi điểm đề xuất**,
+> chưa hiệu chuẩn bằng dữ liệu thực của học viên Việt Nam 9–18 tuổi, và **chắc chắn lệch giữa nhóm
+> 9–12 và nhóm 15–18**. Dùng làm mốc quan sát, **không dùng làm chuẩn phân loại**. Luôn so học viên
+> với chính em ở lần chấm trước. Hiệu chuẩn lại sau mỗi chu kỳ có đủ dữ liệu `BM-08`.
+> Xem thêm [`phac-do/README.md`](phac-do/README.md) §2.
+
 ## 1. Cách dùng rubric
 
 **Quy tắc 1 — Chỉ nâng cấp khi có bằng chứng.** Cấp độ không đi theo thời gian tham gia. Một học viên
@@ -219,3 +227,144 @@ trước. Báo cáo gửi gia đình **không xếp hạng, không nêu vị tr�
 > **Sai lầm khi chấm:** chấm theo độ tự tin và độ lưu loát của người nói. Bằng chứng đặc trưng nằm ở phía **người nghe**: họ nêu lại đúng bao nhiêu ý, họ làm đúng việc được truyền đạt hay không.
 
 ---
+
+## 13. NL-12 · Hợp tác
+
+*Khả năng làm việc cùng người khác sao cho tổng kết quả lớn hơn phần mình tự làm — nhận vai, giao việc, giữ cam kết với nhóm.*
+
+| Cấp | Hành vi quan sát được | Bằng chứng chấp nhận được |
+|---|---|---|
+| **L1** | Làm phần được giao khi có người phân; chưa nhận việc chung, chưa hỏi tiến độ ai. Trong dự án nhóm gánh < 10% hoặc > 60% khối lượng. | Bảng phân bổ khối lượng · biên bản họp |
+| **L2** | Nhận vai có tên và đầu ra khi được đề nghị; giao lại được một việc nhỏ nhưng chưa theo dõi. Giữ hạn ≥ 50% số việc. | Bảng phân vai · bảng theo dõi việc giao |
+| **L3** | Giữ hạn ≥ 80% việc nhóm trong ≥ 3 tuần; giao việc kèm tiêu chí "đạt" và điểm kiểm giữa. Khối lượng cá nhân nằm trong 25–40%. | Bảng theo dõi việc giao có điểm kiểm · `BM-11` |
+| **L4** | Điều phối nhóm ≥ 4 người qua một mốc dự án: phân vai theo đầu ra, xử lý được ≥ 1 bất đồng trong ≤ 3 ngày mà không cần người lớn. | Biên bản mốc · nhật ký xử lý bất đồng · phiếu phản hồi thành viên |
+| **L5** | Dựng cách làm việc chung (quy ước họp, quy ước bàn giao) được nhóm khác dùng lại; giúp ≥ 2 người tăng phần đóng góp đo được. | Bản quy ước có dấu vết dùng lại · ma trận kỹ năng nhóm trước–sau |
+
+> **Sai lầm khi chấm:** chấm cao cho người làm nhiều nhất trong nhóm. Ôm việc là biểu hiện của L1–L2, không phải L4 — luôn kiểm **tỷ lệ khối lượng cá nhân** trước khi chấm.
+
+---
+
+## 14. NL-13 · Quản lý cảm xúc
+
+*Khả năng nhận ra trạng thái cảm xúc của mình sớm, gọi tên và chọn cách phản ứng thay vì bị phản ứng cuốn đi.*
+
+| Cấp | Hành vi quan sát được | Bằng chứng chấp nhận được |
+|---|---|---|
+| **L1** | Gọi tên được ≥ 3 cảm xúc khi nhìn bảng từ. Nhận ra cảm xúc **sau khi** sự việc đã qua, thường là do người khác nhắc. | Bảng từ cảm xúc đã dùng · nhật ký 6 dòng dòng cảm xúc |
+| **L2** | Ghi được cảm xúc trong ngày ≥ 5/7 ngày kèm sự việc đi trước. Dùng được ≥ 1 cách hạ nhiệt (thở, rời chỗ, uống nước) khi có người nhắc. | Nhật ký cảm xúc 7 ngày · quan sát `BM-07` |
+| **L3** | Nhận ra dấu hiệu sớm trên cơ thể trước khi bùng, tự dùng cách hạ nhiệt không cần nhắc ≥ 3 lần trong 3 tuần. Sau sự việc, quay lại việc đang làm trong ≤ 15 phút. | Nhật ký cảm xúc ≥ 3 tuần · bảng đo thời gian quay lại |
+| **L4** | Giữ được cách phản ứng đã chọn trong tình huống áp lực cao (bị phê bình, thi, xung đột nhóm) ở ≥ 2 bối cảnh. Nói được nhu cầu phía sau cảm xúc bằng một câu đề nghị. | Nhật ký ≥ 2 bối cảnh áp lực · biên bản buổi ba lượt |
+| **L5** | Giữ được sự bình tĩnh của nhóm trong một tình huống căng và hướng dẫn ≥ 2 bạn cách gọi tên và hạ nhiệt. | Biên bản sự việc · phiếu phản hồi của người được hỗ trợ |
+
+> **Sai lầm khi chấm:** coi im lặng, không bộc lộ là L3. Không biểu lộ có thể là nén — bằng chứng L3 phải gồm **nhận ra dấu hiệu sớm và một hành động hạ nhiệt được ghi lại**, không chỉ là vắng mặt của bùng nổ.
+
+---
+
+## 15. NL-14 · Thích ứng
+
+*Khả năng giữ được kết quả khi hoàn cảnh thay đổi ngoài dự tính — đổi lịch, đổi nhóm, đổi môi trường, gặp thất bại.*
+
+| Cấp | Hành vi quan sát được | Bằng chứng chấp nhận được |
+|---|---|---|
+| **L1** | Khi kế hoạch bị đổi thì dừng hoặc chờ người lớn sắp lại. Sau một lần đứt nhịp, chưa quay lại trong 7 ngày. | `BM-11` mục `recovery time` · nhật ký |
+| **L2** | Quay lại nhịp trong 4–7 ngày khi có người cùng lập lại kế hoạch. Chấp nhận đổi thứ tự việc khi được giải thích trước. | Kế hoạch điều chỉnh có chữ ký người hỗ trợ · `BM-11` |
+| **L3** | `recovery time` ≤ 3 ngày trong ≥ 2 lần đứt liên tiếp, tự lập lại kế hoạch. Giữ được ≥ 70% kết quả khi chuyển sang bối cảnh mới. | `BM-11` ≥ 3 tuần · dữ liệu ở ≥ 2 bối cảnh |
+| **L4** | Chủ động dựng phương án dự phòng trước khi hoàn cảnh đổi (mùa thi, đi xa) và kích hoạt đúng lúc. Chuyển được cách làm cũ sang việc mới, giải thích được điểm giống và khác. | Bản phương án dự phòng có ngày lập trước · nhật ký kích hoạt |
+| **L5** | Dẫn nhóm qua một thay đổi lớn (mất thành viên, đổi đề tài, hoãn sự kiện) và giữ được mốc chính; để lại bài học viết ra. | Biên bản xử lý thay đổi · bản bài học · `BM-12` |
+
+> **Sai lầm khi chấm:** nhầm dễ tính, ai bảo gì cũng theo với thích ứng. Thích ứng đo bằng **kết quả được giữ lại** sau thay đổi, không đo bằng mức độ ít phản đối.
+
+---
+
+## 16. NL-15 · Lãnh đạo bản thân
+
+*Khả năng tự đặt chuẩn cho mình và giữ chuẩn đó khi không ai giám sát, kể cả khi việc không thú vị.*
+
+| Cấp | Hành vi quan sát được | Bằng chứng chấp nhận được |
+|---|---|---|
+| **L1** | Làm việc khi có người giám sát, dừng khi người giám sát rời đi. Chưa nêu được chuẩn riêng cho phần việc của mình. | Quan sát `BM-07` có và không có người lớn · `BM-03` |
+| **L2** | Nêu được chuẩn "làm thế nào là đạt" cho ≥ 1 việc và giữ chuẩn khi có bảng kiểm trước mặt. `autonomy index` 20–49%. | Bảng kiểm chất lượng tự điền · `BM-11` mục `autonomy index` |
+| **L3** | `autonomy index` ≥ 50% trong ≥ 3 tuần; tự bắt đầu ≥ 3 việc/tuần không ai yêu cầu. Hoàn thành việc đã cam kết ngay cả khi hoàn cảnh cho phép bỏ qua. | `BM-11` ≥ 3 tuần · nhật ký việc tự khởi xướng |
+| **L4** | Tự nhận trách nhiệm khi kết quả không đạt, nêu phần mình làm sai trước khi nêu yếu tố bên ngoài. Từ chối được việc vượt khả năng bằng lý do cụ thể. | Biên bản Review có mục tự nhận · nhật ký từ chối kèm lý do |
+| **L5** | Làm mẫu chuẩn cho nhóm trong ≥ 6 tuần và có ≥ 2 người nêu tên em là lý do họ thay đổi cách làm. | Phiếu phản hồi có tên người · biên bản nhóm · `BM-20` |
+
+> **Sai lầm khi chấm:** dùng thành tích để suy ra năng lực này. Bằng chứng nằm ở **khoảng thời gian không có ai giám sát** — cần dữ liệu quan sát ở cả hai điều kiện có và không có người lớn.
+
+---
+
+## 17. NL-16 · Phản tư
+
+*Khả năng nhìn lại việc đã làm, rút ra kết luận có căn cứ và chuyển kết luận đó thành một thay đổi cụ thể ở lần sau.*
+
+| Cấp | Hành vi quan sát được | Bằng chứng chấp nhận được |
+|---|---|---|
+| **L1** | Kể lại được việc đã làm theo trình tự nhưng dừng ở mô tả; khi hỏi "lần sau khác gì" thì trả lời chung ("cố gắng hơn"). | Nhật ký 6 dòng · ghi chép buổi Review |
+| **L2** | Viết được nhật ký phản tư ≥ 3 lần/tuần theo mẫu ba câu (làm gì – kết quả – sửa gì). Nêu được ≥ 1 thay đổi cụ thể khi có người hỏi dẫn. | Nhật ký theo mẫu ≥ 3 tuần · `BM-13` |
+| **L3** | Tự chạy phiên nhìn lại cuối tuần không cần nhắc, mỗi phiên ra đúng 1 thay đổi và thay đổi đó xuất hiện ở tuần kế tiếp ≥ 60% số lần. | Nhật ký + bảng đối chiếu "thay đổi đã cam kết – đã làm" |
+| **L4** | Nhìn lại được cả những việc thành công để tìm nguyên nhân, không chỉ nhìn lại khi hỏng. Phân biệt được yếu tố mình kiểm soát được và không. | Biên bản phiên ba cột (giữ – bỏ – thử mới) ≥ 6 phiên |
+| **L5** | Điều hành phiên nhìn lại cho nhóm và giữ nhóm ở mức sự kiện; để lại mẫu biên bản được nhóm khác dùng. | Biên bản do em điều hành · mẫu có dấu vết dùng lại |
+
+> **Sai lầm khi chấm:** chấm theo độ dài và độ cảm động của bài viết phản tư. Chỉ số quyết định là **tỷ lệ thay đổi đã cam kết thực sự xuất hiện ở tuần sau**; không có đối chiếu này thì cao nhất là L2.
+
+---
+
+## 18. NL-17 · Học thuật
+
+*Khả năng làm việc với kiến thức theo chuẩn học thuật: đặt câu hỏi nghiên cứu được, tìm và trích nguồn, lập luận có dữ liệu, trình bày đúng quy cách.*
+
+| Cấp | Hành vi quan sát được | Bằng chứng chấp nhận được |
+|---|---|---|
+| **L1** | Tìm được thông tin nhưng lấy nguyên từ kết quả tìm kiếm đầu tiên, không ghi nguồn. Chưa phân biệt bài báo, blog và quảng cáo. | Bài làm có kiểm tra nguồn · bài tập phân loại nguồn |
+| **L2** | Ghi nguồn theo mẫu cho ≥ 80% trích dẫn khi có hướng dẫn. Đối chiếu được 2 nguồn cho một thông tin khi được yêu cầu. | Bài viết có danh mục nguồn · bảng đối chiếu 2 nguồn |
+| **L3** | Tự đặt được câu hỏi nghiên cứu đủ hẹp để trả lời trong 4 tuần; hoàn thành một bài viết ≥ 1000 chữ có ≥ 5 nguồn trích đúng quy cách. | Bài viết hoàn chỉnh · danh mục nguồn · nhật ký nghiên cứu |
+| **L4** | Thu và xử lý dữ liệu sơ cấp của chính mình (khảo sát, phỏng vấn, đo đạc), nêu được giới hạn của dữ liệu. Phản biện được một kết luận có sẵn bằng bằng chứng. | Bộ dữ liệu thô + bản xử lý · phần "giới hạn nghiên cứu" |
+| **L5** | Công bố hoặc trình bày công trình trước hội đồng/diễn đàn ngoài trường và hướng dẫn ≥ 1 bạn làm nghiên cứu nhỏ. | Bản công bố/kỷ yếu · biên bản hội đồng · sản phẩm của người được hướng dẫn |
+
+> **Sai lầm khi chấm:** chấm theo giải thưởng cuộc thi. Nhiều sản phẩm dự thi có phần lớn công do người lớn làm; luôn kiểm bằng **nhật ký nghiên cứu và dữ liệu thô**, và hỏi sâu 5 câu về phương pháp.
+
+---
+
+## 19. NL-18 · Công nghệ và AI
+
+*Khả năng chọn và dùng công cụ số, trong đó có trợ lý AI, để tăng chất lượng công việc mà vẫn giữ được phần suy nghĩ của chính mình và giữ an toàn dữ liệu.*
+
+| Cấp | Hành vi quan sát được | Bằng chứng chấp nhận được |
+|---|---|---|
+| **L1** | Dùng được vài ứng dụng quen thuộc theo thói quen. Khi dùng AI thì dán nguyên đề bài và nộp nguyên kết quả, không kiểm lại. | Lịch sử hội thoại AI · so sánh bài nộp với kết quả công cụ |
+| **L2** | Ghi lại được câu lệnh đã dùng và sửa lại kết quả ≥ 1 lần trước khi dùng, khi có bảng hướng dẫn. Biết ≥ 2 loại thông tin không được đưa lên công cụ. | Sổ câu lệnh · bài kiểm về dữ liệu nhạy cảm |
+| **L3** | Chọn được công cụ phù hợp với từng loại việc và giải thích vì sao chọn. Kiểm chứng ≥ 2 nguồn cho mọi thông tin do AI đưa ra; ghi rõ phần nào có AI hỗ trợ trong sản phẩm. | Sản phẩm có mục "công cụ đã dùng" · bảng kiểm chứng thông tin |
+| **L4** | Dựng được quy trình làm việc nhiều bước có công cụ số cho một việc lặp lại, đo được thời gian tiết kiệm. Phát hiện và sửa được lỗi sai do công cụ tạo ra. | Sơ đồ quy trình · bảng so thời gian trước–sau · nhật ký lỗi đã sửa |
+| **L5** | Xây bộ hướng dẫn dùng công cụ cho nhóm, gồm cả quy tắc liêm chính và bảo vệ dữ liệu; ≥ 3 người dùng theo và có phản hồi. | Bộ hướng dẫn · phiếu phản hồi người dùng · biên bản tập huấn |
+
+> **Sai lầm khi chấm:** chấm theo số lượng công cụ học viên biết tên. Bằng chứng đặc trưng là **dấu vết kiểm chứng và phần khai báo AI đã hỗ trợ chỗ nào** — không có hai thứ đó thì dù dùng nhiều công cụ vẫn là L1.
+
+---
+
+## 20. Bảng tổng hợp
+
+Ma trận rút gọn để dùng khi chấm nhanh trên `BM-08`. Mỗi ô là **từ khoá gợi nhớ**, không thay thế mô tả
+đầy đủ ở các mục trên — khi hai người chấm lệch nhau, quay lại bảng chi tiết, không tranh luận trên bảng này.
+
+| Năng lực | L1 Nhận biết | L2 Tập luyện có hỗ trợ | L3 Thực hiện độc lập | L4 Chủ động dẫn dắt | L5 Lan toả & kiến tạo |
+|---|---|---|---|---|---|
+| **NL-01** Nhận thức bản thân | Nêu điểm mạnh theo danh sách | Có ví dụ thật trong 7 ngày | Tự cập nhật bản đồ, 3 bằng chứng | Dự đoán đúng chỗ mình sẽ khó | Dẫn bạn dựng bản đồ bản thân |
+| **NL-02** Thiết lập mục tiêu | Nói mục tiêu, chưa có số | Viết đủ chỉ số theo mẫu | 3 lĩnh vực, theo dõi 8 tuần | Điều chỉnh giữa kỳ có lý do | Thiết kế khung, huấn luyện người khác |
+| **NL-03** Tư duy | Tách sự kiện khỏi ý kiến | Chia vấn đề khi có sơ đồ | Lập luận ba tầng, tự thấy lỗ hổng | Ba phương án, đổi ý theo dữ liệu | Dẫn buổi phân tích, để lại công cụ |
+| **NL-04** Học tập | Chép nguyên văn, quên nhanh | Diễn đạt lại khi có câu hỏi dẫn | Nhớ 70% sau 7 ngày | Dạy lại, điều chỉnh cách giải thích | Bộ tài liệu bàn giao cho nhóm sau |
+| **NL-05** Tự học | Nêu chủ đề muốn học | 2 buổi/tuần theo lịch cắm sẵn | 3 buổi/tuần, `autonomy index` ≥ 50% | Lộ trình 30 ngày, đối chiếu nguồn | Mở và giữ nhịp nhóm tự học |
+| **NL-06** Quản lý thời gian | Sai số ước lượng > 100% | Kế hoạch theo mẫu, `start rate` 50–79% | `start rate` ≥ 80%, sai số ≤ 30% | Dời việc mà giữ mốc cuối | Vận hành lịch chung cho nhóm |
+| **NL-07** Tập trung | Phiên < 10 phút | Phiên 20–25 phút có hẹn giờ | Phiên 45 phút, quay lại ≤ 3 phút | Giữ chất lượng ở nơi nhiều nhiễu | Quy ước phiên tập trung cho nhóm |
+| **NL-08** Xây dựng thói quen | Chuỗi ≤ 3 ngày, chưa có neo | Chuỗi 7–13 ngày, cần nhắc | Chuỗi ≥ 14 ngày, phục hồi ≤ 3 ngày | 2 thói quen qua giai đoạn xáo trộn | Thiết kế hệ thói quen cho nhóm |
+| **NL-09** Tự quản | ≥ 5 lần nhắc mỗi ngày | Nhắc 2–4 lần, có bảng kiểm | Nhắc giảm ≥ 50%, ngủ đều ≥ 80% | Tự quản khi cha mẹ vắng | Chịu trách nhiệm vận hành chung |
+| **NL-10** Giải quyết vấn đề | Gặp trở ngại thì dừng | Thử 1 phương án trước khi hỏi | 3 phương án, đo kết quả 5 ca | Chia thử nghiệm nhỏ cho vấn đề mở | Dẫn nhóm, để lại quy trình |
+| **NL-11** Giao tiếp | ≤ 1 lượt nói mỗi buổi | Nói 2 phút theo dàn ý | Nói 3–5 phút, người nghe nêu đúng ý | Đổi cách nói theo đối tượng | Dẫn buổi ≥ 10 người, huấn luyện bạn |
+| **NL-12** Hợp tác | Gánh < 10% hoặc > 60% | Nhận vai có tên, giữ hạn 50% | Giữ hạn ≥ 80%, khối lượng 25–40% | Điều phối nhóm, gỡ bất đồng ≤ 3 ngày | Quy ước làm việc được nhóm khác dùng |
+| **NL-13** Quản lý cảm xúc | Nhận ra sau khi việc đã qua | Ghi cảm xúc 5/7 ngày | Nhận dấu hiệu sớm, tự hạ nhiệt | Giữ được ở tình huống áp lực cao | Giữ bình tĩnh cho nhóm, kèm bạn |
+| **NL-14** Thích ứng | Đứt nhịp > 7 ngày | Quay lại trong 4–7 ngày có hỗ trợ | `recovery time` ≤ 3 ngày, 2 bối cảnh | Có phương án dự phòng lập trước | Dẫn nhóm qua thay đổi lớn |
+| **NL-15** Lãnh đạo bản thân | Chỉ làm khi có người giám sát | Giữ chuẩn khi có bảng kiểm | `autonomy index` ≥ 50%, 3 tuần | Tự nhận phần sai trước khi nêu ngoại cảnh | Làm mẫu chuẩn, 2 người nêu tên |
+| **NL-16** Phản tư | Kể lại, chưa rút thay đổi | Nhật ký ba câu 3 lần/tuần | Mỗi tuần 1 thay đổi, thực hiện ≥ 60% | Nhìn lại cả việc thành công | Điều hành phiên nhìn lại cho nhóm |
+| **NL-17** Học thuật | Lấy nguồn đầu tiên, không ghi | Ghi nguồn theo mẫu, đối chiếu 2 nguồn | Bài ≥ 1000 chữ, ≥ 5 nguồn đúng quy cách | Dữ liệu sơ cấp, nêu giới hạn | Công bố ngoài trường, hướng dẫn bạn |
+| **NL-18** Công nghệ và AI | Dán đề bài, nộp nguyên kết quả | Ghi câu lệnh, sửa ≥ 1 lần | Kiểm chứng 2 nguồn, khai báo AI | Quy trình nhiều bước, sửa lỗi công cụ | Bộ hướng dẫn và quy tắc cho nhóm |
+
+> **Nhắc lại trước khi ký bảng chấm:** mỗi ô đã chấm phải kèm **mã bằng chứng** và **nhãn mức hỗ trợ**.
+> Bảng chấm không có hai thứ này không đủ điều kiện đưa vào `BM-12` nghiệm thu cấp.

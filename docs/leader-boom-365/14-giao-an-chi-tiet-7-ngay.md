@@ -1057,3 +1057,527 @@ nhóm" · xác nhận tỉ lệ giám sát ≥ 1 người lớn/6 học viên ch
 > không phải sửa. Câu duy nhất được dùng khi bí là: **"Em kể thêm cho anh/chị một lần cụ thể được không?"**
 
 ---
+
+# NGÀY 3 · NỘI LỰC — VƯỢT VÙNG AN TOÀN CÓ KIỂM SOÁT
+
+Ngày 3 phải cho mỗi học viên **một lần tự chọn mức khó cao hơn mức mình quen, tự làm, và tự dừng khi cần** —
+để em có bằng chứng do chính mình tạo ra rằng em chịu được nhiều hơn em tưởng. Ngày này đặt sau ngày nhận
+diện giới hạn vì học viên phải biết giới hạn của mình ở đâu **trước khi** được mời bước qua nó, và phải đã
+thấy quyền được dừng vận hành thật ở D1.
+
+> **NGÀY RỦI RO CAO NHẤT CỦA TOÀN TRẠI.** Cả về thể chất (thiết bị, độ cao, nước, tốc độ) lẫn về tâm lý
+> (sợ hãi công khai, xấu hổ trước bạn). Toàn bộ mục 2 và mục 6 của ngày này là bắt buộc đọc trước cho
+> 100% ACT, có ký xác nhận.
+
+## 1. Lịch ngày 3
+
+| Giờ | Hoạt động | Ai phụ trách | Ghi chú |
+|---|---|---|---|
+| 06:00 – 06:20 | Thức dậy, vệ sinh, gấp chăn màn | ACT phòng | |
+| 06:20 – 06:35 | Tập hợp · **ĐD-1** · nghi thức chào | MC + ACT | |
+| 06:35 – 06:50 | Thể dục + **khởi động khớp kỹ hơn thường ngày** | MC + Y tế | Bắt buộc: cổ chân, gối, vai, cổ tay, lưng |
+| 06:50 – 07:40 | Ăn sáng + 5S | ACT team | **Y tế đi từng bàn**: ai mệt, ai đau, ai ngủ kém |
+| 07:40 – 08:00 | **Sàng lọc y tế trước ngày thử thách** | Y tế + ACT | Đối chiếu danh sách chống chỉ định, dán nhãn màu vào thẻ tên |
+| **08:00 – 09:30** | **BUỔI SÁNG 1 — "Nội lực là gì": chọn mức khó của chính mình** | Trainer | Buổi khung bắt buộc, không được rút gọn |
+| 09:30 – 09:45 | Giải lao — uống nước bắt buộc | ACT | |
+| **09:45 – 11:15** | **BUỔI SÁNG 2 — Thang thử thách (4 trạm tự chọn mức)** | MC + ACT trạm + Y tế | Tỉ lệ giám sát **≥ 1 người lớn/6 học viên** |
+| 11:15 – 11:35 | **Đúc kết buổi sáng** | Trainer | |
+| 11:35 – 11:45 | 5S khu vực | ACT team | |
+| 11:45 – 12:30 | Ăn trưa · **ĐD-2** | Quản trại | Y tế quan sát ăn uống sau vận động |
+| 12:30 – 13:45 | **Nghỉ trưa bắt buộc ≥ 45 phút** | ACT trực | **Không rút ngắn dù chương trình trễ** |
+| 13:45 – 14:00 | Tập hợp · **ĐD-3** · rà lại thẻ ba mức | MC | |
+| **14:00 – 15:30** | **BUỔI CHIỀU 1 — "Bức tường thép ý chí": làm việc với nỗi sợ** | Trainer + CVTL | Không có yếu tố thể chất, chỉ tư duy và chia sẻ |
+| 15:30 – 15:45 | Giải lao — uống nước | ACT | |
+| **15:45 – 17:15** | **BUỔI CHIỀU 2 — "Vượt thác": thử thách đồng đội ngoài trời** | MC + ACT + Y tế | Chỉ khởi động khi nhiệt độ < 33 °C, không sấm sét |
+| 17:15 – 17:35 | **Đúc kết buổi chiều** + công bố điểm theo team | Trainer | Nêu Điểm Tiến bộ trước |
+| 17:35 – 18:30 | Tắm giặt, nghỉ · **Y tế khám lại nhóm có va chạm** | Y tế + ACT | Ghi `BM-06` mọi vết xây xát |
+| 18:30 – 19:30 | Ăn tối · **ĐD-4** | Quản trại | |
+| **19:30 – 20:30** | **BUỔI TỐI — "Mắt xích đoàn kết": ghi nhận và phục hồi** | Trainer + ACT | Cường độ thấp, ngồi vòng tròn |
+| 20:30 – 21:00 | **Gọi về nhà đợt chính** — mỗi học viên 3 phút, có ACT ở gần | ACT | Bảo đảm **100% học viên được gọi** ở D3 hoặc D4 |
+| 21:00 – 21:20 | Nhật ký `BM-02` + ACT chấm rubric | Học viên + ACT | |
+| 21:20 – 21:30 | Vệ sinh, về phòng · **ĐD-5** | ACT phòng | |
+| **21:30** | **Tắt đèn** (9–11: 21:15) | ACT trực đêm | |
+| 21:35 – 21:55 | **Họp đội cuối ngày 20 phút** | Quản trại | |
+| 21:55 – 22:15 | Giao ban ban huấn luyện | Trainer trưởng | |
+| 23:00 / 02:00 | Kiểm phòng đêm 2 lượt | Trực đêm | **Đêm D3 tăng 1 lượt lúc 00:30** — sau ngày cường độ cao |
+
+## 2. Buổi sáng
+
+### Buổi sáng 1 (08:00 – 09:30) — "Nội lực là gì": chọn mức khó của chính mình
+
+**Mục tiêu buổi.** Học viên **tự chọn** một trong ba mức khó cho từng trạm buổi sáng và **viết ra lý do
+chọn**; nói lại được **ba quy tắc bất khả xâm phạm** của ngày thử thách; phân biệt được
+**"khó vừa sức"** với **"quá sức"** bằng ba dấu hiệu cơ thể.
+
+**Vòng 5 nhịp**
+
+| Nhịp | Thời lượng | Nội dung |
+|---|---|---|
+| 1. Khung | 10 phút | Trainer nêu định nghĩa vùng an toàn – vùng học – vùng quá tải |
+| 2. Trải nghiệm | 35 phút | **Ba vùng trên sàn** (12') → **Ba dấu hiệu cơ thể** (10') → **Điền thẻ ba mức** (13') |
+| 3. Ghi dữ liệu | song song | ACT ghi mức tự chọn của từng học viên vào `BM-01` |
+| 4. **Đúc kết** | **28 phút** | 6 câu hỏi, vòng team 14' + vòng chung 14' |
+| 5. Neo & chuyển | 7 phút | Đeo thẻ ba mức lên áo; đọc to ba quy tắc bất khả xâm phạm |
+
+**Chi tiết nhịp 2**
+
+**Ba vùng trên sàn (12').** Vẽ 3 vòng tròn đồng tâm bằng dây trên sân:
+
+| Vùng | Nghĩa | Dấu hiệu | Việc của trại |
+|---|---|---|---|
+| **Vùng an toàn** | Việc em làm được mà không cần cố | Nhàm, làm được ngay | Không học được gì mới ở đây |
+| **Vùng học** | Khó hơn mức quen một bậc; hồi hộp nhưng vẫn nghĩ được | Tim đập nhanh, vẫn nghe được người khác nói, vẫn nói được thành câu | **Đây là nơi trại làm việc** |
+| **Vùng quá tải** | Quá sức; cơ thể chuyển sang phản ứng sinh tồn | Không nghe rõ người khác nói, tay run không kiểm soát, nghẹn không nói được câu, muốn biến mất | **Trại đưa em ra khỏi đây ngay lập tức** |
+
+Học viên đứng vào vùng tương ứng với 5 tình huống MC đọc (nói trước 100 người, leo cao 3 m, bơi qua hồ,
+nói chuyện với người lạ, làm bài kiểm tra khó). Cả trại nhìn thấy: **cùng một việc, mỗi người ở một vùng khác nhau.**
+Đây là điểm huấn luyện then chốt — không có "mức chuẩn" chung cho mọi người.
+
+**Ba dấu hiệu cơ thể để tự nhận biết quá tải (10').** Học viên học thuộc và tập nhận diện:
+1. **Không nghe được nữa** — người khác nói mà không vào đầu.
+2. **Không nói được thành câu** — nghẹn, ú ớ, hoặc chỉ hét được.
+3. **Không nghĩ được bước tiếp theo** — đầu trắng.
+Có **≥ 1 trong 3 dấu hiệu** → dùng quyền dừng ngay, không cần hỏi ai.
+
+**Thẻ ba mức (13').** Mỗi học viên nhận thẻ cho **từng trạm**, tự tick một mức:
+
+| Mức | Ký hiệu thẻ | Nghĩa | Ai quyết |
+|---|---|---|---|
+| **Mức 1 — Quan sát và hỗ trợ** | Xanh | Không thực hiện, nhận vai bấm giờ / giữ dây / cổ vũ / ghi chép | **Học viên** |
+| **Mức 2 — Thực hiện có hỗ trợ** | Vàng | Làm cùng ACT hoặc cùng 1 bạn, có thể rút ngắn cự ly/độ cao | **Học viên** |
+| **Mức 3 — Thực hiện độc lập** | Cam | Làm đủ nội dung ở mức thiết kế | **Học viên** |
+
+> **Cả ba mức đều được điểm như nhau ở hạng mục "Tham gia".** Điều này phải nói to trước cả trại,
+> trước khi học viên chọn. Nếu mức 3 được điểm cao hơn, việc "tự chọn" trở thành giả tạo và áp lực nhóm
+> sẽ tự động xuất hiện.
+>
+> **Học viên được đổi mức bất cứ lúc nào, cả lên và xuống, không phải giải thích.**
+
+**Ba quy tắc bất khả xâm phạm của ngày 3** — in khổ lớn, treo tại mọi trạm, đọc to đầu mỗi buổi:
+
+| # | Quy tắc | Cụ thể |
+|---|---|---|
+| **1** | **Thử thách phải vừa sức từng người** | Mức khó do **học viên chọn**, không do Trainer, ACT, Leader hay bạn bè chọn hộ. Trạm nào không có 3 mức thì trạm đó **không được đưa vào trại** |
+| **2** | **Quyền được dừng là tuyệt đối** | Giơ thẻ → dừng dưới 10 giây, không hỏi lý do, không mất điểm, không nhắc lại chuyện đó trước tập thể |
+| **3** | **Tuyệt đối không dùng áp lực nhóm để ép tham gia** | Xem bảng cấm bên dưới |
+
+**Bảng cấm — áp lực nhóm** *(áp dụng cho Trainer, MC, ACT và học viên; vi phạm là lỗi của người lớn, không phải lỗi học viên)*
+
+| ❌ Cấm tuyệt đối | Vì sao | ✅ Làm thay bằng |
+|---|---|---|
+| "Cả đội đang chờ mỗi mình em thôi đấy" | Biến việc dừng thành lỗi với tập thể — đây là kỷ luật liên đới trá hình | "Đội em đã xong phần của mình. Em chọn mức nào cũng được, không ai phải chờ" |
+| Đếm ngược tập thể "5–4–3–2–1, nhảy đi!" | Tước quyền quyết định trong thời điểm căng nhất | Học viên tự đếm cho chính mình, hoặc tự nói "em bắt đầu" |
+| Hô đồng thanh tên học viên đang do dự | Tạo áp lực đám đông cực mạnh, học viên không thể từ chối | Giữ im lặng; ACT lại gần, nói riêng, hỏi "em cần gì bây giờ" |
+| "Bạn A làm được, sao em không?" | So sánh cá nhân công khai | "Mức của em là mức của em. Bạn A ở vùng khác" |
+| Đội bị trừ điểm / không được điểm khi có thành viên chọn mức 1 | Kỷ luật liên đới, dẫn thẳng tới bắt nạt | Cả 3 mức cùng điểm; điểm Giá trị cho đội hỗ trợ bạn chọn mức thấp |
+| Quay phim/chụp ảnh học viên đang sợ, đang khóc | Xâm phạm quyền riêng tư; tạo nỗi sợ bị lưu lại | Ngừng máy; chỉ quay khi học viên đã đồng ý và đang ổn |
+| "Cố lên, sắp được rồi, đừng bỏ cuộc" khi học viên đã giơ thẻ | Vô hiệu hoá quyền được dừng | "Anh/chị nghe rồi. Mình dừng ở đây." Đưa ra khỏi khu vực, cho nước, ngồi cùng |
+| Trainer tự tay đẩy/kéo học viên qua chướng ngại | Đụng chạm không được đồng ý; nguy cơ chấn thương | Chỉ hỗ trợ khi học viên **yêu cầu bằng lời**, và mô tả trước sẽ chạm vào đâu |
+
+**Lời dẫn mẫu cho Trainer**
+
+> "Hôm nay là ngày khó nhất của trại. Nhưng thầy nói trước một câu, và thầy nói nghiêm túc:
+> **ở đây không có ai bị bắt làm gì cả.** Mỗi trạm có ba mức. Em chọn mức nào là quyền của em, và
+> **cả ba mức đều được điểm như nhau**. Thầy nhắc lại: **như nhau**."
+
+> "Nhìn ba vòng tròn này. Vòng trong là việc em làm được mà không cần cố — ở đó em không lớn lên.
+> Vòng ngoài cùng là quá sức — ở đó em không học được gì, cơ thể em chỉ lo sống sót. **Trại làm việc ở
+> vòng giữa**: hồi hộp nhưng vẫn nghe được, vẫn nói được thành câu, vẫn nghĩ được bước tiếp theo.
+> Việc của thầy hôm nay là giữ các em ở vòng giữa, không đẩy ai sang vòng ngoài."
+
+> "Và đây là điều thầy cấm, cấm với cả các anh chị ACT: **không ai được hô tên bạn mình để ép bạn làm.
+> Không ai được nói 'cả đội đang chờ mỗi mình cậu'.** Câu đó không tạo ra bản lĩnh — nó tạo ra một đứa trẻ
+> làm vì sợ bị ghét. Bản lĩnh là làm vì mình đã chọn."
+
+> "Ba dấu hiệu để em biết mình đã sang vùng quá tải: **không nghe được, không nói thành câu, không nghĩ
+> được bước tiếp theo.** Có một trong ba, em giơ thẻ. Không phải xin phép. Không phải giải thích.
+> Giơ thẻ là xong."
+
+**Câu hỏi đúc kết**
+
+1. **Mô tả:** Với tình huống "nói trước 100 người", em đứng ở vòng nào? Có bạn nào đứng ở vòng khác em không?
+2. **Mô tả:** Em đã tick mức mấy cho từng trạm? Đọc lại lý do em viết.
+3. **Cảm nhận:** Khi biết cả ba mức được điểm như nhau, em thấy thế nào?
+4. **Cảm nhận:** Trong ba dấu hiệu quá tải, em đã từng gặp dấu hiệu nào rồi? Ở đâu, lúc nào?
+5. **Nguyên lý:** Vì sao cùng một việc mà mỗi người lại ở một vùng khác nhau? Điều đó nói gì về việc so sánh?
+6. **Áp dụng:** Ở lớp, có việc gì đang ở vùng quá tải của em mà em có thể chia nhỏ để đưa về vùng học không?
+
+**Dữ liệu cần thu**
+
+| Dữ liệu | Biểu mẫu | Ai ghi |
+|---|---|---|
+| Mức tự chọn từng trạm + lý do nguyên văn | Thẻ ba mức, lưu hồ sơ | ACT team |
+| Học viên chọn mức 1 cho **toàn bộ** trạm | `BM-01` cờ vàng — theo dõi, **không nhắc nhở** | ACT team |
+| Học viên chọn mức 3 cho toàn bộ trạm nhưng có dấu hiệu lo lắng | `BM-01` cờ vàng | ACT team |
+| Học viên nêu đúng 3 dấu hiệu quá tải | `BM-01` (kiểm mục tiêu buổi) | ACT team |
+
+**Điều chỉnh theo nhóm tuổi**
+
+| Nhóm | Điều chỉnh |
+|---|---|
+| **9–11** | Ba vùng gọi tên đơn giản: **"dễ ợt – hơi run – quá sức"**. Ba dấu hiệu cơ thể minh hoạ bằng hình. ACT ngồi cùng khi tick thẻ, **hỏi lại 1 lần** để chắc học viên hiểu mức mình chọn. Khối kiến thức rút còn 60 phút |
+| **12–15** | Chuẩn |
+| **16–18** | Thêm khái niệm **"sợ thật" và "ngại mất mặt"** — hai thứ khác nhau, cần phân biệt vì cách xử lý khác nhau. Thêm câu hỏi: "Có bao giờ em chọn mức cao chỉ vì sợ bạn nghĩ mình hèn không?" Đây là dữ liệu quan trọng về động lực ngoại lai |
+
+### Buổi sáng 2 (09:45 – 11:15) — Thang thử thách (4 trạm tự chọn mức)
+
+**Mục tiêu buổi.** Mỗi học viên **hoàn thành ít nhất 2 trạm ở mức mình đã chọn**, và **tự đánh giá được**
+mình đã ở vùng học hay vùng quá tải trong từng trạm.
+
+**Vòng 5 nhịp**
+
+| Nhịp | Thời lượng | Nội dung |
+|---|---|---|
+| 1. Khung | 8 phút | MC + Y tế: quy tắc an toàn từng trạm, vị trí đứng, hiệu lệnh dừng chung |
+| 2. Trải nghiệm | 52 phút | 4 trạm × 13 phút, luân phiên theo team |
+| 3. Ghi dữ liệu | song song | ACT trạm ghi mức thực hiện, thời điểm dùng thẻ, biểu hiện trước/trong/sau |
+| 4. **Đúc kết** | **22 phút** | 6 câu hỏi bên dưới |
+| 5. Neo & chuyển | 8 phút | Mỗi người viết vào `BM-02`: "Điều tôi làm được hôm nay mà hôm qua tôi nghĩ mình không làm được là…" |
+
+**Bốn trạm và ba mức của mỗi trạm**
+
+| Trạm | Mức 1 (Xanh) | Mức 2 (Vàng) | Mức 3 (Cam) | An toàn bắt buộc |
+|---|---|---|---|---|
+| **Thăng bằng cao** | Giữ dây, đếm giờ, cổ vũ | Đi trên cầu thăng bằng cách đất **30 cm**, có ACT nắm tay | Đi trên cầu cách đất 60 cm, có đai và dây bảo hiểm | Thảm dưới toàn tuyến; 1 ACT/2 học viên đang thực hiện; đai kiểm tra 2 lượt bởi 2 người khác nhau |
+| **Nước** | Đứng bờ, tiếp đồ | Lội tới ngang hông, có áo phao | Bơi 15 m có áo phao, cứu hộ đi kèm | Cứu hộ chuyên trách; **cấm học viên chưa biết bơi vào mức 3**; đếm đầu người vào/ra |
+| **Tốc độ và phối hợp** | Ghi điểm, tiếp nước | Chạy nửa cự ly, có bạn cùng | Chạy đủ cự ly 200 m ×2 | Đo nhiệt độ sân; dừng nếu ≥ 33 °C; nước sẵn tại trạm |
+| **Tối và không nhìn thấy** | Ngồi ngoài, làm người dẫn đường bằng lời | Bịt mắt đi 10 m, có bạn dắt tay | Bịt mắt đi 20 m theo chỉ dẫn bằng lời | Tuyến phẳng, không vật cản cứng; 1 ACT đi kèm mỗi học viên; **dừng ngay nếu học viên gọi tên ai** |
+
+**Quy trình bắt buộc tại mỗi trạm — 6 bước, ACT trạm đọc thành tiếng:**
+1. Nhắc lại **quyền được dừng** và hiệu lệnh dừng chung ("DỪNG" — mọi người dừng tại chỗ).
+2. Hỏi từng học viên: **"Em chọn mức mấy?"** — ghi lại, **không bình luận về lựa chọn**.
+3. Kiểm thiết bị bảo hộ, 2 người kiểm chéo, ký `BM-06`.
+4. Thực hiện. ACT **không chạm vào học viên trừ khi học viên yêu cầu bằng lời** hoặc để ngăn ngã.
+5. Ngay sau khi xong: hỏi **"Lúc nãy em ở vùng nào?"** — ghi câu trả lời nguyên văn.
+6. Nước + 60 giây nghỉ trước khi sang trạm sau.
+
+**Lời dẫn mẫu cho MC/ACT trạm**
+
+> "Trước khi bắt đầu, mọi người nghe hiệu lệnh chung: khi bất kỳ ai — kể cả học viên — hô **'DỪNG'**,
+> tất cả dừng tại chỗ. Không ai được hỏi 'sao lại dừng'. Chúng ta kiểm tra an toàn rồi mới tiếp."
+
+> "Em chọn mức mấy? … Được. Anh/chị ghi mức hai. Không có gì phải giải thích thêm."
+> *(ACT trạm tuyệt đối không nói thêm câu nào sau lựa chọn của học viên — không "em thử mức ba xem",
+> không "mức hai à, tiếc nhỉ".)*
+
+> "Em vừa xong. Cho anh/chị hỏi một câu thôi: **lúc nãy em ở vùng nào — vùng học hay vùng quá tải?**
+> … Cảm ơn em. Uống nước đã rồi mình sang trạm sau."
+
+**Câu hỏi đúc kết**
+
+1. **Mô tả:** Trạm nào em thực hiện ở mức cao nhất? Em đã làm chính xác những bước gì?
+2. **Mô tả:** Có bạn nào trong đội đổi mức giữa chừng không? Điều gì xảy ra sau đó?
+3. **Cảm nhận:** Ngay trước khi bắt đầu trạm khó nhất, trong người em thế nào? Sau khi xong thì sao?
+4. **Cảm nhận:** Có lúc nào em ở vùng quá tải mà **không** giơ thẻ không? Vì sao em không giơ?
+5. **Nguyên lý:** Điều gì thực sự giúp em bước qua — kỹ thuật, có bạn bên cạnh, hay một câu em tự nói với mình?
+6. **Áp dụng:** Câu em tự nói với mình lúc khó nhất là gì? Em sẽ dùng lại nó ở việc nào khi về nhà?
+
+**Dữ liệu cần thu**
+
+| Dữ liệu | Biểu mẫu | Ai ghi |
+|---|---|---|
+| Mức chọn / mức thực hiện thực tế từng trạm | `BM-01` bảng trạm | ACT trạm |
+| Thời điểm và bối cảnh dùng thẻ dừng | `BM-01` + `BM-11` | ACT trạm |
+| Thời gian chịu bế tắc/khó trước khi dừng (giây) — chỉ báo trụ **I** | `BM-01` | ACT trạm |
+| Câu tự nói với mình (self-talk) — nguyên văn | `BM-01` | ACT team ở đúc kết |
+| Câu trả lời "em ở vùng nào" sau mỗi trạm | `BM-01` | ACT trạm |
+| Mọi va chạm, xây xát, dù nhỏ | `BM-06` | ACT trạm + Y tế |
+
+**Điều chỉnh theo nhóm tuổi**
+
+| Nhóm | Điều chỉnh |
+|---|---|
+| **9–11** | Bỏ trạm "Tối và không nhìn thấy" (dễ gây hoảng ở lứa tuổi này), thay bằng trạm **"Đường hầm vải"** ngắn 5 m, luôn nhìn thấy lối ra. Độ cao mức 3 hạ xuống **40 cm**. Cự ly chạy giảm 40%. Ba trạm thay vì bốn |
+| **12–15** | Chuẩn |
+| **16–18** | Cho phép **tự thiết kế mức 4** cho một trạm, với điều kiện: viết bản mô tả rủi ro, được Y tế và Quản trại duyệt, có 2 người lớn giám sát. Không duyệt mức 4 cho trạm Nước và trạm Thăng bằng cao |
+
+## 3. Buổi chiều
+
+### Buổi chiều 1 (14:00 – 15:30) — "Bức tường thép ý chí": làm việc với nỗi sợ
+
+**Mục tiêu buổi.** Mỗi học viên nêu được **một nỗi sợ cụ thể** và **≥ 5 giải pháp** cho nó; team rút được
+**≥ 5 bài học** từ trải nghiệm buổi sáng; học viên phân biệt được **nỗi sợ bảo vệ mình** và **nỗi sợ cản mình**.
+
+**Vòng 5 nhịp**
+
+| Nhịp | Thời lượng | Nội dung |
+|---|---|---|
+| 1. Khung | 6 phút | Trainer: nỗi sợ không phải kẻ thù, nó là hệ thống cảnh báo — vấn đề là hiệu chỉnh |
+| 2. Trải nghiệm | 40 phút | **Hai loại sợ** (10') → **Bức tường 5 giải pháp** (20') → **5 bài học của team** (10') |
+| 3. Ghi dữ liệu | song song | ACT ghi nội dung nỗi sợ (nếu học viên đồng ý), chất lượng giải pháp |
+| 4. **Đúc kết** | **26 phút** | 6 câu hỏi, vòng team 13' + vòng chung 13' |
+| 5. Neo & chuyển | 8 phút | Mỗi người chọn 1 giải pháp sẽ thử ở D4–D6; viết `BM-02` |
+
+**Chi tiết nhịp 2**
+
+- **Hai loại sợ (10').** Trainer phân biệt: **sợ bảo vệ** (sợ điện, sợ độ cao không có bảo hiểm, sợ người lạ
+  rủ đi — phải nghe theo) và **sợ cản đường** (sợ nói sai, sợ bị cười, sợ thử món mới — cần hiệu chỉnh).
+  Học viên phân loại 8 tình huống. **Không được dạy học viên "vượt qua mọi nỗi sợ"** — đó là chỉ dẫn nguy hiểm.
+- **Bức tường 5 giải pháp (20').** Mỗi học viên viết 1 nỗi sợ **thuộc loại cản đường** lên viên gạch giấy,
+  dán lên tường. Cả team đi quanh, mỗi viên gạch phải có **≥ 5 giải pháp** do các bạn viết vào giấy nhớ.
+  Quy tắc: giải pháp phải là **việc làm được trong tuần này**, không phải lời khuyên tinh thần.
+  Cấm viết "cứ mạnh dạn lên", "đừng sợ nữa".
+- **5 bài học của team (10').** Team viết 5 bài học rút từ buổi sáng lên A0, mỗi bài học kèm **một bằng chứng
+  từ buổi sáng**.
+
+**Lời dẫn mẫu cho Trainer**
+
+> "Thầy không dạy các em vượt qua mọi nỗi sợ. Đó là lời khuyên nguy hiểm. Có những nỗi sợ giữ em sống —
+> sợ điện, sợ leo lên lan can tầng năm, sợ đi theo người lạ. Những nỗi sợ đó em phải **nghe theo**.
+> Hôm nay ta chỉ làm việc với loại thứ hai: **nỗi sợ đang cản em làm điều em muốn làm.**"
+
+> "Trên tường có gạch của các bạn. Mỗi viên phải có năm giải pháp. Nhưng thầy không nhận câu 'cứ mạnh dạn lên'.
+> Đó không phải giải pháp, đó là lời chúc. Giải pháp là thứ **làm được trong tuần này**: ví dụ, sợ phát biểu
+> thì tuần này giơ tay một lần với câu đã chuẩn bị sẵn ba dòng."
+
+> "Sáng nay có bạn chọn mức một, có bạn chọn mức ba. Thầy nói rõ một lần nữa: **thầy không thấy ai dũng cảm
+> hơn ai.** Bạn chọn mức một sau khi nhìn thẳng vào nỗi sợ và tự quyết định thì bạn ấy cũng đã làm đúng
+> việc khó nhất của ngày hôm nay — đó là **tự quyết định thay vì để đám đông quyết hộ**."
+
+**Câu hỏi đúc kết**
+
+1. **Mô tả:** Nỗi sợ em viết lên gạch là gì? Lần gần nhất nó xuất hiện là khi nào?
+2. **Mô tả:** Trong 5 giải pháp các bạn viết cho em, giải pháp nào cụ thể nhất?
+3. **Cảm nhận:** Đọc giải pháp của các bạn viết cho mình, em thấy thế nào?
+4. **Cảm nhận:** Có nỗi sợ nào em **không** viết lên tường không? *(không cần nói nội dung, chỉ cần có/không)*
+5. **Nguyên lý:** Vì sao chia một nỗi sợ thành các bước nhỏ lại làm nó nhẹ đi, dù nội dung nỗi sợ không đổi?
+6. **Áp dụng:** Giải pháp nào em sẽ thử **ngay trong trại**, ở buổi nào?
+
+**Dữ liệu cần thu**
+
+| Dữ liệu | Biểu mẫu | Ai ghi |
+|---|---|---|
+| Nội dung nỗi sợ (nếu học viên cho phép ghi) | `BM-01` | ACT team |
+| Chất lượng giải pháp: cụ thể / chung chung | `BM-01` | ACT team |
+| Học viên nêu nỗi sợ liên quan tới bạo lực, an toàn, gia đình | **Chuyển CVTL trong ngày** | ACT team |
+| 5 bài học của team + bằng chứng | Lưu hồ sơ team | ACT team |
+
+**Điều chỉnh theo nhóm tuổi**
+
+| Nhóm | Điều chỉnh |
+|---|---|
+| **9–11** | 3 giải pháp thay vì 5. Vẽ nỗi sợ thay vì viết. ACT đọc to giải pháp giúp học viên chưa đọc thạo. Không yêu cầu phân loại hai loại sợ bằng lý thuyết — dùng ví dụ trực tiếp |
+| **12–15** | Chuẩn |
+| **16–18** | Thêm lớp: **"nỗi sợ nào của em thật ra là nỗi sợ của bố mẹ em?"** — làm cá nhân, nộp riêng, không chia sẻ nhóm. Dữ liệu này dùng ở Review gia đình D7, **chỉ khi học viên đồng ý cho chia sẻ** |
+
+### Buổi chiều 2 (15:45 – 17:15) — "Vượt thác": thử thách đồng đội ngoài trời
+
+**Mục tiêu buổi.** Team đưa **toàn bộ thành viên** qua tuyến chướng ngại theo cách **tất cả cùng đồng ý**;
+mỗi thành viên nói được **một lần mình được đội hỗ trợ** và **một lần mình hỗ trợ đội**.
+
+**Vòng 5 nhịp**
+
+| Nhịp | Thời lượng | Nội dung |
+|---|---|---|
+| 1. Khung | 8 phút | MC: luật, an toàn, **luật vàng "không ai bị bỏ lại, không ai bị ép đi"** |
+| 2. Trải nghiệm | 45 phút | Họp phương án (8') → Vượt tuyến (30') → Vòng phục hồi nếu có xung đột (7') |
+| 3. Ghi dữ liệu | song song | ACT ghi hành vi hợp tác, xung đột, cách xử lý |
+| 4. **Đúc kết** | **25 phút** | 6 câu hỏi bên dưới; nếu có xung đột thì dùng quy trình phục hồi 3 câu |
+| 5. Neo & chuyển | 7 phút | Mỗi người viết tên **một bạn đã giúp mình hôm nay** vào bảng ghi nhận của team |
+
+**Luật vàng của buổi:** đội hoàn thành khi **mọi thành viên đã qua tuyến ở mức mà chính họ chọn** —
+kể cả mức 1 (đi tuyến vòng phụ, hoặc làm người dẫn đường). **Đội không bị trừ điểm vì có thành viên chọn
+mức thấp.** Điểm Giá trị dành cho hành vi hỗ trợ, không dành cho thành tích ép được người khác đi.
+
+**Xung đột trong buổi này là chất liệu huấn luyện, không phải sự cố.** ACT xử theo 4 bước:
+1. **Không dập tắt ngay** — để học viên tự xử 60 giây nếu chưa mất an toàn.
+2. **Bảo đảm an toàn** — cắt ngay khi có xúc phạm, đụng chạm, hoặc một bên im lặng rút lui.
+3. **Tách và làm nguội** — mỗi bên uống nước, 2 phút riêng.
+4. **Quy trình phục hồi 3 câu**, làm ở đúc kết: *Chuyện gì đã xảy ra? · Ai bị ảnh hưởng và ảnh hưởng thế nào? ·
+   Cần làm gì để sửa?* Không hỏi "ai có lỗi".
+
+**Lời dẫn mẫu cho MC/Trainer**
+
+> "Luật vàng của buổi này: **không ai bị bỏ lại, và không ai bị ép đi.** Hai vế đó phải cùng đúng.
+> Một đội kéo lê bạn mình qua tuyến để về đích nhanh thì đội đó **không hoàn thành** theo luật của trại."
+
+> "Nếu có tranh cãi, thầy không dừng ngay. Tranh cãi trong lúc làm việc là bình thường, và đó là lúc các em
+> học được nhiều nhất. Thầy chỉ dừng khi có người bị xúc phạm hoặc bị đụng vào người."
+
+> "Ở đúc kết, chúng ta không hỏi 'lỗi tại ai'. Ta hỏi ba câu khác: **chuyện gì đã xảy ra · ai bị ảnh hưởng ·
+> cần làm gì để sửa.** Ba câu này sửa được việc; câu 'lỗi tại ai' chỉ tìm được người để trách."
+
+**Câu hỏi đúc kết**
+
+1. **Mô tả:** Đội em chọn phương án nào? Chỗ nào trên tuyến làm đội chậm nhất?
+2. **Mô tả:** Ai đã giúp em? Bạn ấy làm chính xác điều gì?
+3. **Cảm nhận:** Lúc phải chờ bạn đi chậm, em thấy thế nào? Em có nói gì với bạn không?
+4. **Cảm nhận:** Khi được đội chờ, em thấy thế nào?
+5. **Nguyên lý:** Vì sao "đi cùng nhau, tất cả cùng qua" lại khó hơn "về đích nhanh"? Cái nào giống việc ngoài đời hơn?
+6. **Áp dụng:** Ở lớp hoặc ở nhà, có ai đang bị bỏ lại phía sau mà em có thể làm một việc nhỏ để giúp không? Việc gì?
+
+**Dữ liệu cần thu**
+
+| Dữ liệu | Biểu mẫu | Ai ghi |
+|---|---|---|
+| Hành vi hỗ trợ cụ thể (ai giúp ai, làm gì) → Điểm Giá trị | `BM-01` | ACT team |
+| Xung đột: bối cảnh, cách xử lý, kết quả phục hồi | `BM-01` + `BM-06` nếu có va chạm | ACT team |
+| Khả năng nhận lỗi, khả năng khen bạn | `BM-01` | ACT team |
+| Đội có xuất hiện áp lực nhóm lên thành viên chọn mức thấp không | `BM-01` cờ đỏ → báo ngay | ACT team |
+
+**Điều chỉnh theo nhóm tuổi**
+
+| Nhóm | Điều chỉnh |
+|---|---|
+| **9–11** | Tuyến ngắn 50% và không có yếu tố nước sâu quá đầu gối. Thời lượng 60 phút. Đội có ACT đi cùng suốt tuyến |
+| **12–15** | Chuẩn |
+| **16–18** | Bỏ hướng dẫn phương án; team tự thiết kế và tự phân bổ. Thêm ràng buộc: **Leader bị "mất tiếng"** (không được nói) trong 10 phút giữa tuyến — kiểm khả năng phân quyền và năng lực `NL-15` |
+
+## 4. Buổi tối (19:30 – 20:30) — "Mắt xích đoàn kết": ghi nhận và phục hồi
+
+**Mục tiêu buổi.** Mỗi học viên **nhận được ≥ 2 lượt ghi nhận có bằng chứng** từ bạn; mọi xung đột trong
+ngày **được đóng lại bằng quy trình phục hồi**, không để qua đêm.
+
+**Vòng 5 nhịp**
+
+| Nhịp | Thời lượng | Nội dung |
+|---|---|---|
+| 1. Khung | 5 phút | Trainer: ngày khó đã xong, tối nay chỉ làm hai việc — ghi nhận và làm lành |
+| 2. Trải nghiệm | 22 phút | **Vòng ghi nhận** (12') → **Vòng phục hồi** (10', chỉ với cặp có xung đột) |
+| 3. Ghi dữ liệu | song song | ACT ghi ai được ghi nhận, ai chưa được ai nhắc tên |
+| 4. **Đúc kết** | **25 phút** | 6 câu hỏi bên dưới — đúc kết cả ngày, không chỉ buổi tối |
+| 5. Neo & chuyển | 8 phút | Mỗi người viết vào `BM-02` câu: "Hôm nay tôi biết thêm về mình rằng…" |
+
+**Chi tiết nhịp 2**
+
+- **Vòng ghi nhận (12').** Team ngồi vòng tròn, một sợi dây được chuyền tay. Người cầm dây gọi tên một bạn
+  và nói: **"Tớ ghi nhận cậu vì… (bằng chứng cụ thể hôm nay)"**, rồi chuyền dây cho bạn đó. ACT theo dõi để
+  **không ai bị bỏ sót** — nếu còn người chưa được gọi tên, ACT chuyển dây cho họ và tự mình ghi nhận trước.
+- **Vòng phục hồi (10').** Chỉ dành cho các cặp có xung đột trong ngày, làm **riêng, không trước tập thể**.
+  Ba câu: *chuyện gì đã xảy ra · ai bị ảnh hưởng · cần làm gì để sửa*. Kết thúc bằng một hành động sửa cụ thể
+  (không phải lời xin lỗi suông). **Điểm cá nhân bị trừ trong ngày được hoàn lại khi hành động sửa hoàn tất.**
+
+**Lời dẫn mẫu cho Trainer**
+
+> "Hôm nay là ngày khó nhất. Trước khi đi ngủ, thầy muốn một việc: **không ai đi ngủ với một chuyện chưa
+> nói xong.** Nếu hôm nay có bạn làm em khó chịu, tối nay là lúc nói."
+
+> "Khi ghi nhận bạn, không nói 'cậu giỏi lắm'. Nói **cụ thể việc hôm nay**: 'Lúc tớ đứng ở trạm thăng bằng
+> và tay tớ run, cậu là người nói với tớ rằng cậu đợi bao lâu cũng được. Tớ nhớ câu đó.'"
+
+> "Với các bạn hôm nay chọn mức một: thầy muốn nói riêng một câu với các em, và thầy nói trước cả trại.
+> **Việc khó nhất hôm nay không phải là leo cao. Việc khó nhất là ngồi giữa đám đông và nói 'hôm nay tôi
+> chọn mức một'.** Em đã làm được việc đó."
+
+**Câu hỏi đúc kết** *(đúc kết cả ngày)*
+
+1. **Mô tả:** Kể lại khoảnh khắc khó nhất của em hôm nay, theo thứ tự việc xảy ra.
+2. **Mô tả:** Hôm nay em đã làm được việc gì mà sáng nay em chưa chắc mình làm được?
+3. **Cảm nhận:** Khi được bạn ghi nhận vừa rồi, em thấy thế nào?
+4. **Cảm nhận:** Có lúc nào hôm nay em thấy mình bị so sánh với bạn không? Nếu có, lúc nào?
+5. **Nguyên lý:** Nội lực là gì — theo trải nghiệm hôm nay của em, chứ không phải theo định nghĩa của thầy?
+6. **Áp dụng:** Ngày mai, có một việc nào em định chọn mức cao hơn hôm nay không? Việc gì?
+
+**Dữ liệu cần thu**
+
+| Dữ liệu | Biểu mẫu | Ai ghi |
+|---|---|---|
+| Học viên chưa được ai ghi nhận (cờ đỏ về vị thế xã hội trong team) | `BM-01` | ACT team |
+| Nội dung ghi nhận — nguồn tín hiệu điểm mạnh do bạn bè phát hiện | `BM-07` | ACT team |
+| Xung đột đã đóng / chưa đóng | `BM-01` + `BM-06` | ACT team |
+| Định nghĩa "nội lực" bằng lời của học viên — nguyên văn | `BM-01` (dùng lại D6, D7) | ACT team |
+
+**Điều chỉnh theo nhóm tuổi**
+
+| Nhóm | Điều chỉnh |
+|---|---|
+| **9–11** | Kết thúc **20:10**. Vòng ghi nhận dùng gấu bông thay dây. Câu mẫu đơn giản: "Tớ cảm ơn cậu vì hôm nay cậu…". Bỏ câu hỏi 5 (khái niệm nội lực quá trừu tượng), thay bằng: "Hôm nay em thấy mình khoẻ hơn ở chỗ nào?" |
+| **12–15** | Chuẩn |
+| **16–18** | Thêm vòng **"điều tôi muốn nói với chính mình lúc 9 tuổi"** — viết riêng, không đọc. Cho phép học viên đề nghị gặp riêng Trainer hoặc CVTL sau buổi |
+
+## 5. Việc của ACT trong ngày 3
+
+| Thời điểm | Việc | Tiêu chí làm đúng |
+|---|---|---|
+| 06:00 | Đọc lại §2 và §6 ngày 3, **ký xác nhận** đã nắm 3 quy tắc bất khả xâm phạm và bảng cấm áp lực nhóm | 100% ACT ký trước 06:20 |
+| 06:35 | Hỗ trợ khởi động khớp, quan sát ai đau, ai đi khập khiễng | Báo Y tế ngay, **không để học viên "cố cho xong"** |
+| 07:40 – 08:00 | Cùng Y tế sàng lọc, dán nhãn màu vào thẻ tên (nhãn = hạn chế y tế, **không phải xếp loại**) | 100% học viên có nhãn; ACT thuộc danh sách hạn chế của team mình |
+| 08:00 – 09:30 | Ghi mức tự chọn từng trạm; **không bình luận về lựa chọn của bất kỳ ai** | Không câu nào của ACT gợi ý học viên chọn mức cao hơn |
+| 09:45 – 11:15 | Trực trạm; kiểm thiết bị chéo 2 người; hỏi "em ở vùng nào" sau mỗi lượt | Mọi đai/dây có 2 chữ ký kiểm; 100% học viên được hỏi sau lượt |
+| Bất kỳ lúc nào | Đáp ứng thẻ dừng | **Dưới 10 giây**, không hỏi lý do, không nhắc lại trước tập thể |
+| Bất kỳ lúc nào | Nghe thấy một câu trong bảng cấm áp lực nhóm — kể cả từ đồng nghiệp | **Cắt ngang ngay tại chỗ**, báo Quản trại trong 5 phút |
+| 11:45 / 14:00 / 18:30 / 21:20 | **ĐD-2, 3, 4, 5** | |
+| 12:30 – 13:45 | Trực nghỉ trưa; **không cho học viên bỏ nghỉ trưa để chơi tiếp** | 100% nằm nghỉ ≥ 45 phút |
+| 14:00 – 15:30 | Ghi nội dung nỗi sợ; chuyển CVTL ngay các trường hợp liên quan an toàn/gia đình | Chuyển trong ngày, không để tới họp đội |
+| 15:45 – 17:15 | Giám sát tuyến; can thiệp xung đột theo 4 bước; theo dõi dấu hiệu quá tải | Không xung đột nào để qua 17:15 mà chưa vào quy trình phục hồi |
+| 17:35 – 18:30 | Cùng Y tế khám lại nhóm có va chạm; ghi `BM-06` **mọi** vết xây xát dù nhỏ | Không bỏ sót; gia đình được báo nếu có chấn thương cần theo dõi |
+| 19:30 – 20:30 | Bảo đảm **không ai bị bỏ sót** trong vòng ghi nhận; đóng các xung đột còn mở | 100% học viên được gọi tên ≥ 1 lần |
+| 20:30 – 21:00 | Tổ chức gọi về nhà 3 phút/học viên | 100% học viên trong team đã gọi ở D3 hoặc có lịch D4 |
+| 21:00 – 21:20 | Hoàn tất `BM-01`, `BM-06`, bảng trạm | Đủ mức chọn/mức thực hiện của 100% học viên |
+| 21:35 | Dự họp đội | Mang theo: danh sách dùng thẻ dừng, danh sách va chạm, **mọi trường hợp nghi có áp lực nhóm** |
+
+## 6. An toàn ngày 3
+
+> Ngày 3 có **hai lớp an toàn**: an toàn thân thể và an toàn tâm lý. Lớp thứ hai dễ bị bỏ quên hơn và
+> để lại hậu quả lâu hơn.
+
+**Rủi ro đặc thù và biện pháp**
+
+| Rủi ro | Biện pháp bắt buộc |
+|---|---|
+| **Chấn thương do thiết bị** (đai, dây, cầu thăng bằng) | Bảng kiểm thiết bị ký từ D2 tối; kiểm chéo 2 người tại trạm; thảm phủ toàn tuyến; hạ độ cao mức 3 xuống 60 cm |
+| **Đuối nước** | Cứu hộ chuyên trách tại trạm Nước; áo phao bắt buộc mọi mức; **cấm học viên chưa biết bơi vào mức 3**; đếm đầu người vào/ra ghi `BM-04` |
+| **Say nắng, kiệt sức** | Đo nhiệt độ sân trước mỗi khối; **dừng nếu ≥ 33 °C**; nước tại mọi trạm; nghỉ 60 giây giữa trạm; Y tế đi kèm khối ngoài trời |
+| **Chấn thương do mệt tích luỹ** | Khởi động khớp kỹ; **giảm 30% khối lượng cho học viên ngủ < 7 giờ đêm trước**; sàng lọc y tế 07:40 |
+| **Hoảng loạn ở trạm tối/bịt mắt** | 1 ACT đi kèm mỗi học viên; dừng ngay khi học viên gọi tên ai hoặc dừng bước; **tháo bịt mắt là quyền của học viên, không cần xin phép** |
+| **Áp lực nhóm ép tham gia** | Bảng cấm §2; 3 mức cùng điểm; công bố công khai; ACT cắt ngang ngay; báo Quản trại trong 5 phút |
+| **Xấu hổ công khai khi chọn mức thấp / khi dừng giữa chừng** | Không công bố mức của cá nhân; không xếp hạng cá nhân; buổi tối có vòng ghi nhận để tái lập vị thế; Trainer nói công khai rằng chọn mức 1 sau khi cân nhắc là một quyết định đúng |
+| **Sang chấn khi buộc phải đối mặt nỗi sợ có thật** | Phân biệt "sợ bảo vệ" và "sợ cản đường"; **không hoạt động nào buộc học viên đối mặt nỗi sợ đã khai báo**; CVTL trực khu vực suốt buổi chiều 1 |
+| **Xung đột leo thang thành bạo lực** | ACT can thiệp ngay khi có xúc phạm/đụng chạm; tách và làm nguội; quy trình phục hồi 3 câu; **mọi vụ đụng chạm ghi `BM-06` và báo gia đình cả hai bên trong ngày** |
+
+**Điểm danh ngày 3:** đủ 5 mốc, **thêm 3 lần đếm đầu người**: (a) trước khi vào khu trạm 09:45,
+(b) sau khi rời khu trạm 11:15, (c) vào/ra tuyến "Vượt thác". Trạm Nước đếm riêng vào/ra.
+Đêm D3 kiểm phòng **3 lượt** (23:00, 00:30, 02:00) do cường độ ngày cao.
+
+**Điều kiện dừng hoạt động ngay lập tức — ngày 3 (bổ sung cho danh sách chung)**
+
+| # | Điều kiện | Ai có quyền quyết |
+|---|---|---|
+| 1 | Nhiệt độ ≥ 33 °C, hoặc có sấm sét, hoặc mưa làm trơn tuyến | Quản trại (nghe Y tế) |
+| 2 | Một thiết bị bảo hộ không qua kiểm chéo | ACT trạm — dừng **trạm đó**, không cần xin ý kiến |
+| 3 | Bất kỳ ai hô "DỪNG" | Mọi người dừng tại chỗ ngay |
+| 4 | Học viên có ≥ 1 trong 3 dấu hiệu quá tải | ACT gần nhất — đưa ra khỏi khu vực ngay |
+| 5 | Có chấn thương cần Y tế can thiệp > 5 phút | Quản trại — dừng cả khối |
+| 6 | Tỉ lệ giám sát rơi dưới **1 người lớn/6 học viên** ở khối thử thách | Quản trại |
+| 7 | Xuất hiện hành vi áp lực nhóm ép học viên tham gia | ACT bất kỳ — dừng hoạt động, thiết lập lại quy tắc, rồi mới tiếp |
+| 8 | Học viên khóc/hoảng và không dịu sau 5 phút | ACT + CVTL — đưa ra khu yên tĩnh, không đưa trở lại trong ngày |
+
+> **Dấu hiệu vượt phạm vi chương trình — chuyển chuyên môn, không tự xử lý:** phản ứng hoảng loạn kéo dài
+> > 30 phút · học viên nói tới việc tự làm đau mình · học viên tiết lộ bị bạo hành · ngất, khó thở, đau ngực ·
+> phản ứng sợ hãi lặp lại ở nhiều tình huống không liên quan. Quản trại + CVTL liên hệ gia đình **trong ngày**
+> và chuyển tới chuyên gia phù hợp. Trại **không tiếp tục đưa học viên đó vào hoạt động thử thách**.
+
+## 7. Cuối ngày 3 — họp đội 20 phút (21:35 – 21:55)
+
+| Phút | Nội dung | Ai |
+|---|---|---|
+| 0–5 | **An toàn – y tế**: từng vết xây xát, từng lượt Y tế can thiệp, thiết bị có vấn đề, học viên cần nghỉ D4 | Y tế + Quản trại |
+| 5–12 | Mỗi ACT báo cáo theo team, 90 giây | ACT team |
+| 12–16 | **Rà áp lực nhóm**: có tình huống nào nghi ngờ không, ai đã nói câu gì, xử lý thế nào | Trainer trưởng |
+| 16–20 | **Chuẩn bị D4** + điều chỉnh khối lượng theo mức mệt quan sát được | Quản trại + Trainer |
+
+**Mỗi ACT báo đúng 4 mục:**
+1. **Số:** số học viên chọn mức 1 / 2 / 3 ở mỗi trạm · số lượt dùng thẻ dừng · số học viên hoàn thành ≥ 2 trạm ở mức đã chọn.
+2. **Thẻ dừng:** ai dùng, ở đâu, **được đáp ứng trong bao lâu** — nếu có lượt nào chậm quá 10 giây, nêu rõ.
+3. **Ba tên cần lưu ý** kèm biểu hiện quan sát được: học viên chọn mức 1 toàn bộ · học viên vượt mức mình chọn vì bạn thúc · học viên chưa được ai ghi nhận trong vòng tối.
+4. **Xung đột:** đã đóng hay chưa; hành động sửa là gì; điểm đã hoàn lại chưa.
+
+**Dấu hiệu phải báo ngay trong đêm, không chờ họp:** mọi mục trong "dấu hiệu vượt phạm vi" ở §6 ·
+chấn thương phát hiện muộn · học viên không ngủ được sau ngày thử thách · học viên nói về việc bị bạn ép ·
+bất kỳ người lớn nào đã dùng câu trong bảng cấm áp lực nhóm (đây là việc phải xử lý ngay với người lớn đó,
+không phải với học viên).
+
+**Chuẩn bị cho ngày 4:** in `BM-05` phần mục tiêu · chuẩn bị **bộ thẻ Mong muốn – Mục tiêu** (40 thẻ/team) ·
+mẫu **Bảng mục tiêu 5 cột** khổ A3 cho từng học viên · lấy lại chân dung tương lai D2 từ hồ sơ để học viên
+đối chiếu · rà danh sách học viên cần giảm tải vận động D4 do va chạm D3 · chốt lịch gọi về nhà cho những
+học viên chưa gọi được ở D3.
+
+> **Sai lầm thường gặp ở ngày này:** người lớn **khen thưởng ngầm mức 3**. Không ai nói ra thành lời,
+> nhưng MC vỗ tay to hơn cho học viên leo cao nhất, ACT nói "tuyệt vời quá" với mức 3 và chỉ gật đầu với
+> mức 1, ảnh đăng cho phụ huynh toàn hình học viên ở mức 3. Chỉ cần vài tín hiệu như vậy, "quyền tự chọn
+> mức" trở thành hình thức và áp lực nhóm quay lại bằng cửa sau — học viên sẽ chọn mức 3 vì sợ, chứ không
+> vì sẵn sàng, và đó chính là điều ngày 3 được thiết kế để tránh. **Kiểm soát cụ thể:** MC dùng cùng một
+> cường độ ghi nhận cho cả ba mức; ảnh gửi phụ huynh phải có tỉ lệ cân đối giữa các mức; ACT dùng một câu
+> chuẩn duy nhất sau mọi lượt: *"Em ở vùng nào?"*
+
+---

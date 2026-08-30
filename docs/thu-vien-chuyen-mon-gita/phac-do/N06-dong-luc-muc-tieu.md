@@ -254,7 +254,7 @@ D1 ghi nguyên văn các câu hỏi về ý nghĩa · D2 ghi môn nào bị hỏ
 
 **Hồ sơ đầu ra** — Sản phẩm dự án nối · bản đồ hứng thú · `BM-20` · `BM-13`.
 
-**Dấu hiệu vượt phạm vi** — Mất hứng thú lan sang mọi lĩnh vực kể cả bạn bè và hoạt động từng yêu thích, kéo dài ≥ 2 tuần, kèm rối loạn giấc ngủ hoặc ăn uống. → Đây là dấu hiệu trầm cảm; **chuyển chuyên viên tâm lý ngay**.
+**Dấu hiệu vượt phạm vi** — Mất hứng thú lan sang mọi lĩnh vực kể cả bạn bè và hoạt động từng yêu thích, kéo dài ≥ 2 tuần, kèm thay đổi rõ rệt về giấc ngủ hoặc ăn uống. → Đây là dấu hiệu trầm cảm; **chuyển chuyên viên tâm lý ngay**.
 
 ---
 
@@ -425,3 +425,421 @@ D1 bấm giờ đoạn bền bỉ · D2 ghi nguyên văn câu nói lúc dừng �
 **Dấu hiệu vượt phạm vi** — Bỏ cuộc kèm bùng nổ cảm xúc mạnh (đập đồ, tự đánh mình) hoặc rút lui hoàn toàn khỏi mọi hoạt động ≥ 2 tuần. → Chuyển chuyên viên tâm lý; ưu tiên an toàn trước nội dung học tập.
 
 ---
+
+### N06-11 · Phụ thuộc khen thưởng
+
+**Biểu hiện quan sát được**
+Học viên hỏi "được gì" trước khi nhận nhiệm vụ ở ≥ 4/7 lần; ngừng thực hiện trong ≤ 3 ngày khi phần thưởng dừng; mức nỗ lực tăng giảm theo giá trị vật chất của phần thưởng chứ không theo độ quan trọng của việc.
+
+**Đo bằng gì** — Đếm câu hỏi về phần thưởng · thử nghiệm 5 ngày không có thưởng, đo completion rate · `BM-03` ghi nhận của gia đình · `BM-11`.
+
+**Giả thuyết nguyên nhân — cần kiểm chứng, không kết luận sớm**
+
+| Trụ | Giả thuyết | Kiểm bằng cách nào |
+|---|---|---|
+| I | Phần thưởng vật chất đã thay thế lý do bên trong | Ngừng thưởng 5 ngày, đo mức duy trì |
+| G | Không nhìn thấy kết quả tự thân của việc làm | Cho thấy dữ liệu tiến bộ của chính học viên |
+| I | Nhu cầu tự chủ thấp: việc luôn do người khác giao | Trao quyền chọn cách làm, đo lại |
+| A | Không có cơ chế ghi nhận nào khác ngoài vật chất | Thử ghi nhận bằng mô tả cụ thể, đo lại |
+
+**Đòn bẩy chính** — Chuyển từ thưởng vật chất sang **ba nguồn củng cố bên trong**: dữ liệu tiến bộ nhìn thấy được, quyền chọn cách làm, và ghi nhận mô tả cụ thể việc đã làm. Gỡ thưởng theo lộ trình 3 bước, không cắt đột ngột.
+
+**T1 · 7 ngày — chỉ quan sát, không sửa lớn**
+D1 ghi các phần thưởng đang tồn tại · D2 đếm câu hỏi về phần thưởng · D3 ghi nhiệm vụ nào vẫn làm dù không có thưởng · D4 ghi phản ứng khi được ghi nhận bằng lời mô tả · D5 đối chiếu 4 nguồn, lập giả thuyết · D6 thử **đúng một** thay đổi: thay 1 phần thưởng bằng biểu đồ tiến bộ · D7 so sánh mức duy trì.
+
+**T2 · 21 ngày** — Vòng 1 kiểm I: giảm dần thưởng vật chất theo 3 bước. Vòng 2 kiểm G: làm tiến bộ trở nên nhìn thấy được. Vòng 3 kiểm I: mở rộng quyền chọn cách làm. Mỗi vòng đổi một biến.
+
+**T3 · 90 ngày** — Cấp 1: giữ nhiệm vụ với thưởng đã giảm một nửa. Cấp 2: duy trì ≥ 14 ngày không có thưởng vật chất, completion rate ≥ 75%. Cấp 3: tự khởi xướng nhiệm vụ không gắn phần thưởng nào, autonomy index ≥ 70%.
+
+**T4/T5** — T4: duy trì qua 4 chu kỳ mà không tái lập thưởng vật chất. T5: học viên tự thiết kế cơ chế theo dõi tiến bộ cho nhóm.
+
+**Việc của học viên** — Ghi biểu đồ tiến bộ hằng tuần · chọn cách thực hiện cho ít nhất 1 nhiệm vụ/ngày · viết 1 câu về lý do mình làm việc đó.
+**Việc của gia đình** — Trong tuần này, thay 1 phần thưởng bằng **một câu mô tả cụ thể việc con đã làm và cách con làm** · **không dùng tiền hoặc thiết bị làm điều kiện đổi lấy việc học**.
+**Việc của tư vấn** — Kiểm tốc độ gỡ thưởng; nếu completion rate giảm > 30% trong 1 tuần thì chậm lại một bước.
+**Việc của Coach** — Thiết kế lộ trình gỡ thưởng · huấn luyện gia đình cách ghi nhận nỗ lực và cách làm · nghiệm thu cổng cấp.
+
+**Năng lực liên quan** — `NL-02` Thiết lập mục tiêu · `NL-15` Lãnh đạo bản thân · `NL-08` Xây dựng thói quen
+
+**Tiêu chí đạt** — T1: có danh mục phần thưởng hiện hành. T2: xác định giả thuyết chính. T3 cấp 3: 30 ngày không thưởng vật chất, KPI giữ nguyên hoặc tăng.
+
+**Hồ sơ đầu ra** — Lộ trình gỡ thưởng · biểu đồ tiến bộ · `BM-03` · `BM-12`.
+
+**Dấu hiệu vượt phạm vi** — Khi thưởng bị dừng, xuất hiện phản ứng dữ dội kéo dài, lấy tiền không xin phép, hoặc dùng tiền vào cá cược và giao dịch trong trò chơi. → Chuyển chuyên viên tâm lý và làm việc với gia đình về an toàn tài chính.
+
+---
+
+### N06-12 · Không nhìn thấy tiến bộ
+
+**Biểu hiện quan sát được**
+Học viên nói "con chẳng khá hơn gì" dù dữ liệu 8 tuần cho thấy cải thiện ≥ 20%; không có bản ghi nào để so sánh trước – sau; chỉ nhắc tới điểm số cuối cùng, không nhắc tới quá trình.
+
+**Đo bằng gì** — So sản phẩm tuần 1 và tuần 8 · đường KPI trong `BM-11` · phỏng vấn cảm nhận tiến bộ · `BM-08` hai lần chấm.
+
+**Giả thuyết nguyên nhân — cần kiểm chứng, không kết luận sớm**
+
+| Trụ | Giả thuyết | Kiểm bằng cách nào |
+|---|---|---|
+| A | Không lưu bằng chứng đầu kỳ nên không có mốc so | Lấy mẫu sản phẩm đầu, so lại sau 4 tuần |
+| T | Chỉ đo bằng điểm số, bỏ qua chỉ số quá trình | Bổ sung 2 chỉ số quá trình, quan sát |
+| I | Chú ý chọn lọc vào phần chưa đạt | Đếm tỉ lệ câu nói về phần đạt / chưa đạt |
+| G | Mục tiêu quá lớn nên tiến bộ trông như không đáng kể | Chia mục tiêu, đo lại cảm nhận |
+
+**Đòn bẩy chính** — **Hộp bằng chứng trước – sau**: lưu một sản phẩm mẫu ở tuần 1 của mỗi chu kỳ và mở lại ở tuần 6 và tuần 12 để so trực tiếp. So sánh với chính mình trong quá khứ là nguồn động lực ổn định nhất.
+
+**T1 · 7 ngày — chỉ quan sát, không sửa lớn**
+D1 thu 1 sản phẩm mẫu làm mốc · D2 ghi 2 chỉ số quá trình phù hợp · D3 ghi nguyên văn nhận xét của học viên về bản thân · D4 đếm tỉ lệ nói về phần đạt và chưa đạt · D5 đối chiếu 4 nguồn, lập giả thuyết · D6 thử **đúng một** thay đổi: cho xem so sánh trước – sau · D7 ghi phản ứng.
+
+**T2 · 21 ngày** — Vòng 1 kiểm A: cơ chế lưu bằng chứng. Vòng 2 kiểm T: chọn chỉ số quá trình đo được. Vòng 3 kiểm I: thiên lệch chú ý vào phần chưa đạt. Mỗi vòng đổi một biến.
+
+**T3 · 90 ngày** — Cấp 1: xem lại hộp bằng chứng khi Coach tổ chức. Cấp 2: tự lưu và tự so sánh mỗi 6 tuần, nêu được ≥ 3 điểm đã tiến bộ. Cấp 3: tự chọn chỉ số đo cho một năng lực mới và theo dõi độc lập.
+
+**T4/T5** — T4: 4 chu kỳ đều có bộ so sánh trước – sau. T5: học viên trình bày hành trình tiến bộ của mình trong `BM-20`.
+
+**Việc của học viên** — Lưu sản phẩm mốc đầu chu kỳ · cập nhật 2 chỉ số quá trình hằng tuần · viết 3 điểm tiến bộ mỗi 6 tuần.
+**Việc của gia đình** — Nhận xét bằng cách so con với chính con tháng trước · **không so sánh con với anh chị em hoặc bạn cùng lớp**.
+**Việc của tư vấn** — Phân biệt không thấy tiến bộ do thiếu dữ liệu với đánh giá bản thân tiêu cực kéo dài.
+**Việc của Coach** — Tổ chức buổi so sánh trước – sau mỗi 6 tuần · chọn chỉ số quá trình cùng học viên · nghiệm thu cổng cấp.
+
+**Năng lực liên quan** — `NL-16` Phản tư · `NL-01` Nhận thức bản thân · `NL-02` Thiết lập mục tiêu
+
+**Tiêu chí đạt** — T1: có sản phẩm mốc và 2 chỉ số quá trình. T2: xác định giả thuyết chính. T3 cấp 3: 2 lần so sánh trước – sau tự thực hiện, nêu được ≥ 3 điểm tiến bộ có bằng chứng.
+
+**Hồ sơ đầu ra** — Hộp bằng chứng trước – sau · bảng chỉ số quá trình · `BM-08` · `BM-20`.
+
+**Dấu hiệu vượt phạm vi** — Học viên phủ nhận mọi bằng chứng tiến bộ kèm khí sắc giảm kéo dài ≥ 2 tuần, mất ngủ, và tự chê bản thân nặng nề. → **Chuyển chuyên viên tâm lý ngay**, đây có thể là dấu hiệu trầm cảm.
+
+---
+
+### N06-13 · So sánh với bạn bè quá mức
+
+**Biểu hiện quan sát được**
+Nhắc tới thành tích của bạn ≥ 5 lần/tuần kèm nhận xét hạ thấp bản thân; kiểm tra điểm của bạn khác trước khi xem điểm của mình; giảm nỗ lực sau khi biết bạn đạt cao hơn; dành ≥ 30 phút/ngày xem thành tích người khác trên mạng xã hội.
+
+**Đo bằng gì** — Đếm câu so sánh trong nhật ký · thời gian dùng mạng xã hội theo báo cáo thiết bị · mức nỗ lực trước và sau khi biết điểm bạn · `BM-02`.
+
+**Giả thuyết nguyên nhân — cần kiểm chứng, không kết luận sớm**
+
+| Trụ | Giả thuyết | Kiểm bằng cách nào |
+|---|---|---|
+| G | Không có tiêu chuẩn tiến bộ của riêng mình để tham chiếu | Lập chuẩn cá nhân, đo số câu so sánh |
+| A | Tiếp xúc liên tục với bảng xếp hạng và mạng xã hội | Giảm tiếp xúc 7 ngày, đo lại |
+| I | Giá trị bản thân được gắn với thứ hạng | Nghe cách học viên mô tả mình sau khi tụt hạng |
+| I | Môi trường xung quanh thường xuyên so sánh | Đếm số lần người lớn so sánh trong tuần |
+
+**Đòn bẩy chính** — Chuyển tham chiếu từ **so với bạn** sang **so với chính mình tuần trước**, bằng một bảng chỉ số cá nhân duy nhất; đồng thời giảm tiếp xúc với bảng xếp hạng xuống ≤ 1 lần/tuần. So sánh xã hội chỉ hữu ích khi dùng để học cách làm, không để định giá bản thân.
+
+**T1 · 7 ngày — chỉ quan sát, không sửa lớn**
+D1 đếm câu so sánh và ghi nguyên văn · D2 ghi bối cảnh xuất hiện · D3 đo thời gian xem thành tích người khác · D4 ghi mức nỗ lực sau mỗi lần so sánh · D5 đối chiếu 4 nguồn, lập giả thuyết · D6 thử **đúng một** thay đổi: bảng chỉ số cá nhân · D7 so sánh số câu.
+
+**T2 · 21 ngày** — Vòng 1 kiểm G: chuẩn tiến bộ cá nhân. Vòng 2 kiểm A: mức tiếp xúc với xếp hạng và mạng xã hội. Vòng 3 kiểm I: gắn giá trị bản thân với thứ hạng. Mỗi vòng đổi một biến.
+
+**T3 · 90 ngày** — Cấp 1: dùng bảng chỉ số cá nhân khi có nhắc. Cấp 2: câu so sánh giảm ≥ 50%, nỗ lực không giảm sau khi biết điểm bạn. Cấp 3: dùng thành tích của bạn để hỏi về cách làm thay vì để tự đánh giá.
+
+**T4/T5** — T4: giữ qua 4 chu kỳ, gồm mùa công bố kết quả thi. T5: học viên tổ chức hoạt động học hỏi lẫn nhau trong nhóm thay cho ganh đua.
+
+**Việc của học viên** — Ghi chỉ số cá nhân hằng tuần · giới hạn thời gian xem thành tích người khác · đổi 1 câu so sánh thành 1 câu hỏi về cách làm.
+**Việc của gia đình** — Trong tuần này, **không nhắc tên bạn nào của con khi nói về kết quả học tập** · nhận xét dựa trên tiến bộ của chính con.
+**Việc của tư vấn** — Phân biệt so sánh gây khó chịu tạm thời với tự ti kéo dài kèm rút lui xã hội.
+**Việc của Coach** — Thiết lập bảng chỉ số cá nhân · dẫn hoạt động nhóm không xếp hạng · nghiệm thu cổng cấp.
+
+**Năng lực liên quan** — `NL-01` Nhận thức bản thân · `NL-13` Quản lý cảm xúc · `NL-12` Hợp tác
+
+**Tiêu chí đạt** — T1: có số câu so sánh baseline. T2: xác định giả thuyết chính. T3 cấp 3: ≤ 1 câu so sánh hạ thấp bản thân/tuần trong 4 tuần liên tiếp.
+
+**Hồ sơ đầu ra** — Bảng chỉ số cá nhân · nhật ký câu so sánh · `BM-02` · `BM-13`.
+
+**Dấu hiệu vượt phạm vi** — So sánh dẫn tới ăn kiêng cực đoan, tập luyện quá mức để thay đổi ngoại hình, hoặc nói về việc không đáng sống. → **Chuyển chuyên viên tâm lý ngay**, lập `BM-16` nếu có ý nghĩ tự hại.
+
+---
+
+### N06-14 · Niềm tin cố định về năng lực
+
+**Biểu hiện quan sát được**
+Dùng câu "con vốn không làm được môn này" hoặc "con không có khiếu" ≥ 3 lần/tuần; từ chối luyện tập môn tự cho là không có khiếu; giải thích kết quả tốt bằng may mắn và kết quả kém bằng năng lực bẩm sinh.
+
+**Đo bằng gì** — Ghi nguyên văn câu giải thích thành công và thất bại · tỉ lệ quy cho năng lực cố định / nỗ lực · `BM-02` · quan sát khi gặp bài khó.
+
+**Giả thuyết nguyên nhân — cần kiểm chứng, không kết luận sớm**
+
+| Trụ | Giả thuyết | Kiểm bằng cách nào |
+|---|---|---|
+| I | Từng được khen bằng phẩm chất cố định ("thông minh") | Hỏi gia đình về cách khen thường dùng |
+| T | Chưa có bằng chứng cá nhân rằng luyện tập làm thay đổi kết quả | Chọn 1 kỹ năng nhỏ, luyện 14 ngày, đo trước–sau |
+| I | Giải thích thất bại theo hướng cố định và toàn diện | Tập lại 3 câu giải thích theo hướng cách làm |
+| A | Không thấy quá trình học của người khác, chỉ thấy kết quả | Cho xem bản nháp và số lần sửa của người giỏi |
+
+**Đòn bẩy chính** — **Thí nghiệm luyện tập 14 ngày** trên một kỹ năng nhỏ đo được (ví dụ tốc độ giải 10 phép tính, số từ vựng nhớ được), có số đo trước và sau. Bằng chứng do chính học viên tạo ra mạnh hơn mọi bài giảng về tư duy phát triển.
+
+**T1 · 7 ngày — chỉ quan sát, không sửa lớn**
+D1 ghi nguyên văn câu về năng lực · D2 phân loại quy nguyên nhân · D3 ghi môn bị gán "không có khiếu" · D4 ghi cách người lớn khen trong tuần · D5 đối chiếu 4 nguồn, lập giả thuyết · D6 thử **đúng một** thay đổi: đo baseline kỹ năng nhỏ · D7 chốt thiết kế thí nghiệm 14 ngày.
+
+**T2 · 21 ngày** — Vòng 1 kiểm T: chạy thí nghiệm luyện tập và đối chiếu số liệu. Vòng 2 kiểm I: tập ngôn ngữ quy nguyên nhân về cách làm. Vòng 3 kiểm A: thay đổi cách khen của môi trường. Mỗi vòng đổi một biến.
+
+**T3 · 90 ngày** — Cấp 1: hoàn thành 1 thí nghiệm luyện tập với Coach. Cấp 2: tự chạy 2 thí nghiệm, câu "không có khiếu" giảm ≥ 60%. Cấp 3: chủ động chọn một môn từng né và đặt mục tiêu tiến bộ đo được.
+
+**T4/T5** — T4: qua 4 chu kỳ, học viên có ≥ 4 bộ dữ liệu trước – sau do mình tạo. T5: học viên trình bày bằng chứng luyện tập của mình cho nhóm hoặc phụ huynh.
+
+**Việc của học viên** — Ghi số đo trước và sau mỗi thí nghiệm · viết lại câu giải thích theo hướng cách làm · luyện đúng lịch 14 ngày.
+**Việc của gia đình** — **Ghi nhận nỗ lực và chiến lược cụ thể; không khen "con thông minh", "con giỏi sẵn"** · kể lại một việc mình từng phải luyện lâu mới làm được.
+**Việc của tư vấn** — Phân biệt niềm tin cố định với khó khăn học tập thật cần đánh giá chuyên môn.
+**Việc của Coach** — Thiết kế thí nghiệm luyện tập có số đo · rà lại ngôn ngữ phản hồi của cả hệ · nghiệm thu cổng cấp.
+
+**Năng lực liên quan** — `NL-01` Nhận thức bản thân · `NL-05` Tự học · `NL-16` Phản tư
+
+**Tiêu chí đạt** — T1: có bảng phân loại quy nguyên nhân. T2: xác định giả thuyết chính. T3 cấp 3: 2 thí nghiệm hoàn tất có cải thiện đo được, ngôn ngữ cố định ≤ 1 lần/tuần.
+
+**Hồ sơ đầu ra** — Bộ dữ liệu thí nghiệm luyện tập · bảng câu quy nguyên nhân · `BM-02` · `BM-12`.
+
+**Dấu hiệu vượt phạm vi** — Dù có bằng chứng tiến bộ rõ ràng, học viên vẫn khẳng định mình vô dụng và mở rộng sang mọi lĩnh vực của cuộc sống. → Chuyển chuyên viên tâm lý, **không tiếp tục tranh luận bằng dữ liệu**.
+
+---
+
+### N06-15 · Thiếu khát vọng
+
+**Biểu hiện quan sát được**
+Trả lời "sao cũng được" cho ≥ 70% câu hỏi lựa chọn; không có hoạt động nào tự tìm hiểu ngoài yêu cầu trong 4 tuần; mức năng lượng tự chấm ≤ 2/5 ở ≥ 5/7 ngày; không nêu được điều gì làm mình thấy hào hứng.
+
+**Đo bằng gì** — Đếm câu "sao cũng được" · thời lượng hoạt động tự chọn · thang năng lượng và hứng thú 1–5 · `BM-09` · quan sát trong trại hoặc hoạt động nhóm.
+
+**Giả thuyết nguyên nhân — cần kiểm chứng, không kết luận sớm**
+
+| Trụ | Giả thuyết | Kiểm bằng cách nào |
+|---|---|---|
+| I | Ba nhu cầu nền (tự chủ – năng lực – kết nối) đều đang thấp | Chấm ba nhu cầu bằng 6 câu hỏi, đối chiếu |
+| G | Chưa từng tiếp xúc lĩnh vực đủ hấp dẫn với mình | Cho thử 3 trải nghiệm mới trong 3 tuần |
+| A | Lịch kín, mọi thứ đều do người khác quyết | Trao 2 khoảng tự chọn mỗi tuần |
+| I | Khí sắc giảm — cần phân biệt với thiếu khát vọng | Rà giấc ngủ, ăn uống, hứng thú trong 14 ngày |
+
+**Đòn bẩy chính** — Khôi phục **ba nhu cầu nền** trước khi bàn tới mục tiêu: trao quyền chọn thật, thiết kế nhiệm vụ vừa sức để có cảm giác làm được, và tạo một quan hệ nhóm ổn định. Khát vọng là kết quả của ba nhu cầu được đáp ứng, không phải điều kiện đầu vào.
+
+**T1 · 7 ngày — chỉ quan sát, không sửa lớn**
+D1 chấm ba nhu cầu nền · D2 đếm câu "sao cũng được" · D3 ghi hoạt động duy nhất học viên chủ động nhất · D4 rà giấc ngủ, ăn uống, hứng thú · D5 đối chiếu 4 nguồn, lập giả thuyết · D6 thử **đúng một** thay đổi: trao 1 quyền chọn thật · D7 ghi thay đổi mức tham gia.
+
+**T2 · 21 ngày** — Vòng 1 kiểm I: nhu cầu tự chủ. Vòng 2 kiểm I: nhu cầu năng lực qua nhiệm vụ vừa sức. Vòng 3 kiểm I: nhu cầu kết nối trong nhóm. Mỗi vòng đổi một biến.
+
+**T3 · 90 ngày** — Cấp 1: tham gia đủ 3 trải nghiệm mới do Coach tổ chức. Cấp 2: tự chọn 1 lĩnh vực theo đuổi ≥ 4 tuần, thang hứng thú ≥ 3/5. Cấp 3: tự đặt và theo đuổi một mục tiêu do mình chọn hoàn toàn.
+
+**T4/T5** — T4: duy trì ít nhất một mối quan tâm xuyên suốt 2 chu kỳ. T5: học viên khởi xướng một hoạt động cho nhóm dựa trên mối quan tâm đó.
+
+**Việc của học viên** — Chấm ba nhu cầu nền hằng tuần · thử 1 trải nghiệm mới mỗi 3 tuần · ghi 1 điều thấy thú vị mỗi ngày.
+**Việc của gia đình** — Trong tuần này, **trao cho con một quyền quyết định thật và giữ nguyên quyết định đó** · không lấp kín lịch của con.
+**Việc của tư vấn** — **Phân biệt thiếu khát vọng với giảm khí sắc**: nếu có mất hứng thú lan toả, thay đổi giấc ngủ hoặc ăn uống ≥ 2 tuần thì chuyển chuyên viên tâm lý.
+**Việc của Coach** — Tổ chức trải nghiệm mở rộng · theo dõi ba nhu cầu nền mỗi Review · nghiệm thu cổng cấp.
+
+**Năng lực liên quan** — `NL-01` Nhận thức bản thân · `NL-02` Thiết lập mục tiêu · `NL-12` Hợp tác
+
+**Tiêu chí đạt** — T1: có bảng chấm ba nhu cầu nền. T2: xác định giả thuyết chính. T3 cấp 3: theo đuổi một mối quan tâm tự chọn ≥ 8 tuần liên tục.
+
+**Hồ sơ đầu ra** — Bảng ba nhu cầu nền · nhật ký trải nghiệm mới · `BM-09` · `BM-12`.
+
+**Dấu hiệu vượt phạm vi** — "Sao cũng được" đi kèm buồn kéo dài ≥ 2 tuần, mất hứng thú với mọi thứ, thay đổi cân nặng, hoặc nói rằng mọi việc đều vô nghĩa. → Đây là dấu hiệu trầm cảm; **chuyển chuyên viên tâm lý ngay, không tự xử lý trong chương trình**.
+
+---
+
+### N06-16 · Mục tiêu phân tán
+
+**Biểu hiện quan sát được**
+Đổi mục tiêu chính ≥ 2 lần trong một chu kỳ 90 ngày; theo đuổi ≥ 5 hướng cùng lúc, không hướng nào duy trì quá 3 tuần; hào hứng mạnh ở tuần đầu rồi bỏ ở tuần thứ ba ở ≥ 3 lần liên tiếp.
+
+**Đo bằng gì** — Bảng lịch sử mục tiêu theo tuần · số ngày duy trì mỗi hướng · `BM-11` · `BM-09`.
+
+**Giả thuyết nguyên nhân — cần kiểm chứng, không kết luận sớm**
+
+| Trụ | Giả thuyết | Kiểm bằng cách nào |
+|---|---|---|
+| G | Không có tiêu chí chọn nên mục tiêu mới luôn hấp dẫn hơn | Lập 3 tiêu chí chọn, quan sát quyết định |
+| I | Đổi hướng khi gặp đoạn khó của hướng cũ | Ghi thời điểm đổi và trở ngại ngay trước đó |
+| A | Không có cam kết được ghi ra và thời hạn tối thiểu | Ký cam kết 6 tuần, đo tỉ lệ duy trì |
+| T | Không biết mục tiêu cần bao lâu mới thấy kết quả | Cho xem đường cong tiến bộ điển hình |
+
+**Đòn bẩy chính** — **Quy tắc sàn 6 tuần**: mọi mục tiêu chính được cam kết tối thiểu 6 tuần trước khi được phép đổi; ý tưởng mới ghi vào danh sách chờ và chỉ xét ở đầu chu kỳ. Sàn thời gian đủ dài để đường cong tiến bộ kịp hiện ra.
+
+**T1 · 7 ngày — chỉ quan sát, không sửa lớn**
+D1 lập bảng lịch sử mục tiêu 3 tháng qua · D2 ghi số ngày duy trì mỗi hướng · D3 ghi trở ngại xuất hiện ngay trước mỗi lần đổi · D4 ghi ý tưởng mới nảy ra trong tuần · D5 đối chiếu 4 nguồn, lập giả thuyết · D6 thử **đúng một** thay đổi: danh sách chờ ý tưởng · D7 đánh giá phản ứng.
+
+**T2 · 21 ngày** — Vòng 1 kiểm G: tiêu chí chọn mục tiêu. Vòng 2 kiểm A: cam kết sàn 6 tuần. Vòng 3 kiểm I: đổi hướng như cách né đoạn khó. Mỗi vòng đổi một biến.
+
+**T3 · 90 ngày** — Cấp 1: giữ mục tiêu 6 tuần với Coach nhắc cam kết. Cấp 2: tự giữ trọn 1 chu kỳ với một mục tiêu chính. Cấp 3: tự đánh giá cuối chu kỳ và quyết định giữ hay đổi bằng dữ liệu, không bằng cảm hứng.
+
+**T4/T5** — T4: 4 chu kỳ với tối đa 2 lần đổi hướng có căn cứ. T5: học viên hoàn thành một dự án dài ≥ 6 tháng đưa vào `BM-20`.
+
+**Việc của học viên** — Ký cam kết 6 tuần cho mục tiêu chính · ghi ý tưởng mới vào danh sách chờ · đánh giá cuối chu kỳ bằng dữ liệu.
+**Việc của gia đình** — Ủng hộ cam kết đã ký, kể cả khi con than chán ở tuần thứ ba · **không đề xuất hướng mới giữa chu kỳ**.
+**Việc của tư vấn** — Phân biệt phân tán mục tiêu với giai đoạn khám phá bình thường ở tuổi 12–15.
+**Việc của Coach** — Giữ danh sách chờ · dẫn buổi quyết định đầu chu kỳ · nghiệm thu cổng cấp.
+
+**Năng lực liên quan** — `NL-02` Thiết lập mục tiêu · `NL-15` Lãnh đạo bản thân · `NL-08` Xây dựng thói quen
+
+**Tiêu chí đạt** — T1: có bảng lịch sử mục tiêu. T2: xác định giả thuyết chính. T3 cấp 3: một mục tiêu chính duy trì trọn 12 tuần với tiến độ đo được.
+
+**Hồ sơ đầu ra** — Bảng lịch sử mục tiêu · cam kết `BM-06` · danh sách chờ · `BM-12`.
+
+**Dấu hiệu vượt phạm vi** — Đổi hướng liên tục kèm ngủ rất ít mà không thấy mệt, nói rất nhanh, tiêu tiền bất thường. → Đề nghị đánh giá y tế và tâm lý, **không xử lý bằng cam kết thời gian**.
+
+---
+
+### N06-17 · Không biết vì sao phải thay đổi
+
+**Biểu hiện quan sát được**
+Tham gia chương trình vì gia đình yêu cầu; khi được hỏi lý do tham gia, trả lời "mẹ bảo đi" ở ≥ 3 lần hỏi; không nêu được điều gì trong hiện tại làm mình khó chịu; mức hợp tác trong hoạt động ≤ 2/5.
+
+**Đo bằng gì** — Phỏng vấn động cơ tham gia · thang sẵn sàng thay đổi 0–10 · `BM-02` so `BM-03` · quan sát mức tham gia.
+
+**Giả thuyết nguyên nhân — cần kiểm chứng, không kết luận sớm**
+
+| Trụ | Giả thuyết | Kiểm bằng cách nào |
+|---|---|---|
+| I | Chưa nhận ra khoảng cách giữa hiện tại và điều mình muốn | Cùng vẽ bảng "hiện tại – mong muốn" |
+| G | Vấn đề được nêu là vấn đề của cha mẹ, không phải của học viên | Hỏi riêng: điều gì làm con khó chịu nhất |
+| I | Đang ở giai đoạn tiền dự định, chưa sẵn sàng hành động | Chấm thang sẵn sàng, không ép hành động |
+| A | Chưa từng trải nghiệm một thay đổi nhỏ thành công | Thử 1 thay đổi 3 ngày do học viên chọn |
+
+**Đòn bẩy chính** — **Bảng chi phí – lợi ích hai cột do học viên tự viết**, kết hợp một thay đổi thử nghiệm 3 ngày do chính học viên chọn. Lý do thay đổi phải do học viên phát biểu; lý do của người lớn không tạo được động lực bền.
+
+**T1 · 7 ngày — chỉ quan sát, không sửa lớn**
+D1 hỏi động cơ tham gia, ghi nguyên văn · D2 chấm thang sẵn sàng 0–10 · D3 ghi điều học viên nói là khó chịu nhất · D4 ghi mức hợp tác trong từng hoạt động · D5 đối chiếu 4 nguồn, lập giả thuyết · D6 thử **đúng một** thay đổi: thử nghiệm 3 ngày tự chọn · D7 ghi cảm nhận sau thử nghiệm.
+
+**T2 · 21 ngày** — Vòng 1 kiểm I: khoảng cách hiện tại – mong muốn. Vòng 2 kiểm G: xác định vấn đề của chính học viên. Vòng 3 kiểm A: chuỗi thay đổi nhỏ thành công. Mỗi vòng đổi một biến.
+
+**T3 · 90 ngày** — Cấp 1: nêu được 1 lý do của riêng mình để thay đổi. Cấp 2: thang sẵn sàng ≥ 6/10, tự chọn 1 mục tiêu và duy trì 4 tuần. Cấp 3: tự khởi xướng thay đổi thứ hai không do người lớn gợi ý.
+
+**T4/T5** — T4: giữ động cơ nội tại qua 4 chu kỳ, kiểm lại thang sẵn sàng mỗi chu kỳ. T5: học viên kể lại hành trình thay đổi cho học viên mới.
+
+**Việc của học viên** — Viết bảng chi phí – lợi ích · chọn và chạy thử nghiệm 3 ngày · chấm thang sẵn sàng mỗi 2 tuần.
+**Việc của gia đình** — Trong tuần này, **hỏi con điều gì con muốn khác đi và ghi lại, không bổ sung ý của mình** · không nhắc lại lý do đưa con đi học.
+**Việc của tư vấn** — Không thúc ép hành động khi thang sẵn sàng < 4/10; ở mức đó chỉ làm việc trên nhận thức.
+**Việc của Coach** — Dùng đối thoại tạo động lực thay vì thuyết phục · giữ quyền chọn ở phía học viên · nghiệm thu cổng cấp.
+
+**Năng lực liên quan** — `NL-01` Nhận thức bản thân · `NL-02` Thiết lập mục tiêu · `NL-15` Lãnh đạo bản thân
+
+**Tiêu chí đạt** — T1: có thang sẵn sàng baseline. T2: xác định giả thuyết chính. T3 cấp 3: thang sẵn sàng ≥ 7/10 và có 2 thay đổi do học viên tự khởi xướng.
+
+**Hồ sơ đầu ra** — Bảng chi phí – lợi ích · nhật ký thử nghiệm 3 ngày · `BM-02` · `BM-13`.
+
+**Dấu hiệu vượt phạm vi** — Học viên phản đối gay gắt việc tham gia, bỏ đi khỏi nhà, hoặc nói rằng không muốn tồn tại. → Dừng chương trình, **chuyển chuyên viên tâm lý ngay** và lập `BM-16`.
+
+---
+
+### N06-18 · Động lực giảm sau thất bại
+
+**Biểu hiện quan sát được**
+Sau một kết quả kém, nền nếp học tập dừng ≥ 5 ngày; `recovery time` > 7 ngày ở ≥ 2 lần liên tiếp; xuất hiện câu nói khái quát hoá ("làm gì cũng hỏng"); tránh nhắc tới môn hoặc hoạt động vừa thất bại.
+
+**Đo bằng gì** — `recovery time` trong `BM-11` · đường KPI trước và sau sự kiện · ghi nguyên văn câu nói · quan sát của gia đình về giấc ngủ và tâm trạng.
+
+**Giả thuyết nguyên nhân — cần kiểm chứng, không kết luận sớm**
+
+| Trụ | Giả thuyết | Kiểm bằng cách nào |
+|---|---|---|
+| I | Diễn giải thất bại là vĩnh viễn và bao trùm mọi mặt | Ghi câu nói trong 48 giờ sau sự kiện |
+| A | Không có quy trình phục hồi được chuẩn bị trước | Cấp quy trình 3 bước, đo recovery time |
+| I | Hệ quả từ môi trường sau thất bại quá nặng | Ghi phản ứng của người xung quanh |
+| T | Không phân tích được nguyên nhân nên không biết sửa gì | Cùng làm bảng nguyên nhân – hành động |
+
+**Đòn bẩy chính** — **Nghi thức phục hồi 48 giờ**: trong 24 giờ đầu chỉ nghỉ và không ra quyết định lớn; trong 24 giờ sau viết bảng ba cột "điều đã xảy ra – phần mình kiểm soát được – việc làm tiếp theo", rồi quay lại một nhiệm vụ nhỏ chắc chắn làm được. Thu hẹp thất bại về một sự kiện cụ thể quan trọng hơn việc an ủi.
+
+**T1 · 7 ngày — chỉ quan sát, không sửa lớn**
+D1 ghi sự kiện thất bại gần nhất và ngày xảy ra · D2 đếm số ngày nền nếp bị dừng · D3 ghi nguyên văn câu khái quát hoá · D4 ghi phản ứng của người xung quanh · D5 đối chiếu 4 nguồn, lập giả thuyết · D6 thử **đúng một** thay đổi: nghi thức phục hồi 48 giờ · D7 đo recovery time.
+
+**T2 · 21 ngày** — Vòng 1 kiểm I: cách diễn giải thất bại. Vòng 2 kiểm A: quy trình phục hồi và phản ứng môi trường. Vòng 3 kiểm T: phân tích nguyên nhân và hành động sửa. Mỗi vòng đổi một biến.
+
+**T3 · 90 ngày** — Cấp 1: chạy nghi thức phục hồi cùng Coach, recovery time ≤ 5 ngày. Cấp 2: tự chạy, recovery time ≤ 3 ngày. Cấp 3: recovery time ≤ 1 ngày và giữ được sau một thất bại lớn có tính công khai.
+
+**T4/T5** — T4: qua 4 chu kỳ, mọi lần đứt chuỗi đều phục hồi ≤ 3 ngày. T5: học viên chia sẻ quy trình phục hồi của mình cho nhóm.
+
+**Việc của học viên** — Chạy nghi thức 48 giờ · viết bảng ba cột · quay lại bằng một nhiệm vụ nhỏ chắc thắng.
+**Việc của gia đình** — Trong 24 giờ đầu chỉ lắng nghe · **không phân tích, không nhắc kỳ vọng, không nhắc lại thất bại cũ** · ghi nhận việc con quay lại.
+**Việc của tư vấn** — **Phân biệt buồn thông thường sau thất bại** (giảm dần trong 3–7 ngày) **với trầm cảm** (kéo dài ≥ 2 tuần, mất hứng thú lan toả, thay đổi giấc ngủ và ăn uống).
+**Việc của Coach** — Chuẩn bị sẵn nghi thức phục hồi trước mùa thi · theo dõi recovery time là KPI chính · nghiệm thu cổng cấp.
+
+**Năng lực liên quan** — `NL-13` Quản lý cảm xúc · `NL-14` Thích ứng · `NL-16` Phản tư
+
+**Tiêu chí đạt** — T1: có mốc thời gian sự kiện và số ngày dừng. T2: xác định giả thuyết chính. T3 cấp 3: recovery time ≤ 1 ngày ở 3 sự kiện liên tiếp.
+
+**Hồ sơ đầu ra** — Bảng recovery time · bảng ba cột phục hồi · `BM-11` · `BM-12`.
+
+**Dấu hiệu vượt phạm vi** — Sau thất bại xuất hiện ý nghĩ hoặc lời nói về việc tự làm đau bản thân, muốn biến mất, cho đi đồ vật quý, hoặc rút lui hoàn toàn ≥ 2 tuần. → **Chuyển chuyên viên tâm lý ngay trong ngày**, thông báo gia đình, lập `BM-16`; tuyệt đối **không tự xử lý trong chương trình**.
+
+---
+
+### N06-19 · Không duy trì cam kết
+
+**Biểu hiện quan sát được**
+Cam kết miệng rồi không thực hiện ở ≥ 4/7 lần; chuỗi dài nhất của một cam kết ≤ 4 ngày; không có bản cam kết nào được viết ra; khi được hỏi lại, không nhớ chính xác nội dung đã cam kết.
+
+**Đo bằng gì** — `consistency` (chuỗi dài nhất) trong `BM-11` · số cam kết viết ra so với cam kết miệng · `BM-06` · đối chiếu ghi nhận của gia đình.
+
+**Giả thuyết nguyên nhân — cần kiểm chứng, không kết luận sớm**
+
+| Trụ | Giả thuyết | Kiểm bằng cách nào |
+|---|---|---|
+| A | Cam kết không được viết ra và không có mốc kiểm | Viết ra + kiểm 2 lần/tuần, đo chuỗi |
+| G | Cam kết quá lớn so với thực tế sinh hoạt | So nội dung cam kết với quỹ giờ thật |
+| I | Cam kết để làm hài lòng người lớn tại thời điểm đó | Hỏi riêng mức độ thật sự muốn làm |
+| A | Không có tín hiệu môi trường gợi nhớ cam kết | Gắn cam kết vào một việc đã có sẵn |
+
+**Đòn bẩy chính** — **Cam kết viết – nhỏ – có neo**: mỗi lần chỉ một cam kết, viết thành câu "sau khi X, tôi sẽ làm Y trong Z phút", dán ở nơi xảy ra hành vi, kiểm hai lần mỗi tuần. Neo vào hành vi có sẵn hiệu quả hơn dựa vào trí nhớ.
+
+**T1 · 7 ngày — chỉ quan sát, không sửa lớn**
+D1 ghi mọi cam kết miệng trong ngày · D2 đối chiếu cam kết với việc thực làm · D3 đo chuỗi dài nhất · D4 ghi bối cảnh lúc đưa ra cam kết · D5 đối chiếu 4 nguồn, lập giả thuyết · D6 thử **đúng một** thay đổi: viết 1 cam kết có neo · D7 so sánh tỉ lệ thực hiện.
+
+**T2 · 21 ngày** — Vòng 1 kiểm A: hình thức viết và neo hành vi. Vòng 2 kiểm G: kích thước cam kết so với thực tế. Vòng 3 kiểm I: động cơ thật khi cam kết. Mỗi vòng đổi một biến.
+
+**T3 · 90 ngày** — Cấp 1: thực hiện cam kết viết khi có kiểm 2 lần/tuần. Cấp 2: chuỗi dài nhất ≥ 14 ngày, tỉ lệ thực hiện ≥ 75%. Cấp 3: tự đặt và tự giữ cam kết mới, chuỗi ≥ 21 ngày, có tự điều chỉnh khi lệch.
+
+**T4/T5** — T4: qua 4 chu kỳ giữ ≥ 3 cam kết dài hạn. T5: học viên giữ vai trò cam kết với nhóm trong một dự án chung.
+
+**Việc của học viên** — Viết cam kết theo mẫu "sau khi X, tôi sẽ Y" · dán ở nơi xảy ra hành vi · đánh dấu ngày thực hiện.
+**Việc của gia đình** — Ghi nhận ngày thực hiện bằng dấu tích trên bảng chung · **không nhắc lại các lần con thất hứa trước đây**.
+**Việc của tư vấn** — Phân biệt không giữ cam kết với cam kết bị áp đặt trong lúc bị ép.
+**Việc của Coach** — Giới hạn 1 cam kết/lần · kiểm 2 mốc mỗi tuần · nghiệm thu cổng cấp.
+
+**Năng lực liên quan** — `NL-08` Xây dựng thói quen · `NL-09` Tự quản · `NL-15` Lãnh đạo bản thân
+
+**Tiêu chí đạt** — T1: có danh sách cam kết và tỉ lệ thực hiện. T2: xác định giả thuyết chính. T3 cấp 3: chuỗi ≥ 21 ngày ở 1 cam kết tự đặt.
+
+**Hồ sơ đầu ra** — Bảng cam kết viết · biểu đồ chuỗi ngày · `BM-06` · `BM-12`.
+
+**Dấu hiệu vượt phạm vi** — Không giữ được bất kỳ cam kết nào kèm thay đổi lớn về sinh hoạt, nói dối nhiều về việc đã làm, hoặc có dấu hiệu bị ảnh hưởng bởi chất gây nghiện. → Chuyển chuyên viên tâm lý và y tế, **không xử lý bằng công cụ cam kết**.
+
+---
+
+### N06-20 · Thiếu ngôn ngữ tích cực chính xác
+
+**Biểu hiện quan sát được**
+Khi mô tả bản thân, học viên dùng câu phủ định toàn diện ("con chẳng làm được gì") hoặc câu khen rỗng ("con giỏi lắm") mà không nêu được hành vi cụ thể; không mô tả được cách mình đã làm khi thành công; tỉ lệ câu tự nói tiêu cực / tích cực ≥ 3:1.
+
+**Đo bằng gì** — Bản ghi câu tự nói trong 7 ngày, phân loại ba nhóm (tiêu cực toàn diện – khen rỗng – mô tả cụ thể) · `BM-02` · quan sát trong Review.
+
+**Giả thuyết nguyên nhân — cần kiểm chứng, không kết luận sớm**
+
+| Trụ | Giả thuyết | Kiểm bằng cách nào |
+|---|---|---|
+| T | Chưa có vốn từ để mô tả hành vi và chiến lược của mình | Cấp 10 mẫu câu mô tả, đếm số lần dùng |
+| A | Môi trường quanh chủ yếu dùng nhãn và khẩu hiệu | Đếm loại câu người lớn dùng trong 3 ngày |
+| I | Tự nói tiêu cực đã thành thói quen ngôn ngữ | Đếm tần suất theo bối cảnh |
+| T | Không phân biệt được mô tả hành vi với đánh giá con người | Cho phân loại 10 câu mẫu |
+
+**Đòn bẩy chính** — Bộ **mười mẫu câu mô tả hành vi và chiến lược**: "mình đã làm X nên kết quả là Y", "lần này mình đổi cách Z", dùng thay cho cả câu chê toàn diện lẫn câu khen rỗng. Ngôn ngữ chính xác giúp học viên nhìn ra biến số mình điều khiển được.
+
+**T1 · 7 ngày — chỉ quan sát, không sửa lớn**
+D1 ghi nguyên văn câu tự nói · D2 phân loại ba nhóm · D3 ghi bối cảnh xuất hiện câu tiêu cực · D4 đếm loại câu người lớn dùng · D5 đối chiếu 4 nguồn, lập giả thuyết · D6 thử **đúng một** thay đổi: dùng 3 mẫu câu mô tả · D7 so sánh tỉ lệ ba nhóm.
+
+**T2 · 21 ngày** — Vòng 1 kiểm T: vốn từ mô tả hành vi. Vòng 2 kiểm A: ngôn ngữ của môi trường xung quanh. Vòng 3 kiểm I: thói quen tự nói tiêu cực theo bối cảnh. Mỗi vòng đổi một biến.
+
+**T3 · 90 ngày** — Cấp 1: dùng mẫu câu khi Coach gợi. Cấp 2: tự dùng, tỉ lệ câu mô tả cụ thể ≥ 50%, câu phủ định toàn diện giảm ≥ 50%. Cấp 3: dùng ngôn ngữ mô tả cả khi phản hồi cho người khác trong nhóm.
+
+**T4/T5** — T4: duy trì qua 4 chu kỳ, gồm cả giai đoạn kết quả kém. T5: học viên hướng dẫn quy ước phản hồi mô tả cho nhóm dự án.
+
+**Việc của học viên** — Ghi 1 câu mô tả cụ thể mỗi ngày · đổi 1 câu phủ định thành câu mô tả · dùng mẫu câu trong Review.
+**Việc của gia đình** — **Ghi nhận bằng mô tả nỗ lực và cách làm; không dùng nhãn, kể cả nhãn tích cực như "con thông minh"** · phản hồi bằng cấu trúc "mẹ thấy con đã làm X".
+**Việc của tư vấn** — Phân biệt thói quen ngôn ngữ với tự đánh giá tiêu cực bền vững cần can thiệp tâm lý.
+**Việc của Coach** — Duy trì bộ mẫu câu · làm mẫu ngôn ngữ mô tả trong mọi buổi · nghiệm thu cổng cấp.
+
+**Năng lực liên quan** — `NL-11` Giao tiếp · `NL-01` Nhận thức bản thân · `NL-16` Phản tư
+
+**Tiêu chí đạt** — T1: có bản phân loại câu tự nói 7 ngày. T2: xác định giả thuyết chính. T3 cấp 3: tỉ lệ câu mô tả cụ thể ≥ 60%, duy trì 4 tuần.
+
+**Hồ sơ đầu ra** — Bản ghi câu tự nói · bộ 10 mẫu câu cá nhân hoá · `BM-02` · `BM-13`.
+
+**Dấu hiệu vượt phạm vi** — Câu tự nói tiêu cực chuyển sang nội dung tự trừng phạt hoặc tự làm đau ("mình đáng bị như vậy"), hoặc nói về việc muốn chết. → **Chuyển chuyên viên tâm lý ngay trong ngày**, lập `BM-16`, thông báo gia đình theo quy trình an toàn.

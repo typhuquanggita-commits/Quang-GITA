@@ -445,3 +445,441 @@ D1 bấm giờ khoảng lặng · D2 ghi bước nào gây dừng · D3 đếm p
 **Dấu hiệu vượt phạm vi** — Khi không được giúp trong 3 phút, học viên khóc kéo dài > 15 phút, đập phá đồ, hoặc lặp lại ở mọi môn suốt 3 tuần. → Chuyển chuyên viên tâm lý, tạm ngừng kéo dài thời gian chờ.
 
 ---
+
+### N07-11 · Không nghe quan điểm của con
+
+**Biểu hiện quan sát được**
+Trong hội thoại 10 phút giữa người lớn và học viên, người lớn nói > 80% thời lượng; số câu hỏi mở ≤ 1; số lần cắt lời ≥ 3. Ở học viên: câu trả lời ≤ 5 chữ; ngừng kể chuyện ở trường; thông tin về khó khăn đến gia đình chậm ≥ 7 ngày.
+
+**Đo bằng gì** — Bấm giờ tỉ lệ thời lượng nói · đếm câu hỏi mở và số lần cắt lời · độ dài trung bình câu trả lời · độ trễ giữa sự việc ở trường và lúc gia đình biết.
+
+**Giả thuyết nguyên nhân — cần kiểm chứng, không kết luận sớm**
+
+| Trụ | Giả thuyết | Kiểm bằng cách nào |
+|---|---|---|
+| A | Không có khung thời gian riêng để nghe, chỉ nói xen giữa việc nhà | Kiểm có khung 10 phút cố định hay không |
+| T | Người lớn nghe để tìm chỗ sửa nên phản hồi trước khi con nói hết | Đếm số lần phản hồi xuất hiện trước câu kết |
+| I | Học viên đã dự đoán trước phản ứng nên rút ngắn câu trả lời | Hỏi "con nghĩ ba/mẹ sẽ nói gì nếu con kể" |
+| G | Cuộc trò chuyện đang phục vụ mục tiêu nhắc việc, không phải hiểu | Ghi chủ đề của 10 lượt trao đổi gần nhất |
+
+**Đòn bẩy chính** — **10 phút chỉ nghe và ghi**: người lớn không phản biện, không đưa giải pháp, ghi lại 3 ý của học viên rồi đọc lại cho học viên xác nhận.
+
+**T1 · 7 ngày — chỉ quan sát, không sửa lớn**
+D1 bấm giờ tỉ lệ nói · D2 đếm câu hỏi mở · D3 đếm số lần cắt lời · D4 đo độ dài câu trả lời · D5 đối chiếu G-I-T-A · D6 thử một thay đổi: một buổi chỉ nghe và ghi · D7 so sánh độ dài câu trả lời.
+
+**T2 · 21 ngày** — Vòng 1 kiểm A: cố định khung 10 phút, cùng giờ. Vòng 2 kiểm T: luyện phản hồi bằng cách nhắc lại ý của học viên trước khi nêu ý mình. Vòng 3 kiểm I: kiểm xem học viên có bắt đầu kể chuyện chưa được hỏi không.
+
+**T3 · 90 ngày** — Cấp 1: tỉ lệ người lớn nói giảm còn 60%, có nhắc. Cấp 2: còn 40%, học viên chủ động kể ≥ 3 lần/tuần. Cấp 3: học viên báo khó khăn trong vòng 48 giờ kể từ khi xảy ra.
+
+**T4/T5** — T4: giữ khung nghe qua các chu kỳ căng thẳng. T5: học viên dùng kỹ thuật nhắc lại ý trong nhóm dự án.
+
+**Việc của học viên — tham gia thoả thuận lại** — Chọn giờ mình dễ nói nhất · nói trước rằng lần này chỉ muốn được nghe, chưa cần lời khuyên · xác nhận 3 ý người lớn ghi lại có đúng không.
+
+**Việc của gia đình** — **Việc thay thế làm ngay tuần này: mỗi ngày dành đúng 10 phút đồng hành, đặt điện thoại úp xuống, và trong 10 phút đó chỉ làm ba việc — hỏi một câu mở, ghi ba ý con nói vào sổ, đọc lại ba ý đó cho con nghe.** Không thêm lời khuyên trong 10 phút này, kể cả khi thấy rõ cách giải quyết; nếu cần góp ý, hẹn sang hôm sau và hỏi con có muốn nghe không. Đếm số lần mình định cắt lời nhưng đã dừng lại. Nếu con im lặng, ngồi cùng cho hết 10 phút rồi nói "mai mình ngồi tiếp".
+
+**Việc của tư vấn** — Đối chiếu tỉ lệ thời lượng nói với độ dài câu trả lời · phát hiện chủ đề bị né tránh.
+**Việc của Coach** — Dạy kỹ thuật nhắc lại ý · dẫn buổi mẫu · nghiệm thu cổng cấp.
+
+**Năng lực liên quan** — `NL-11` Giao tiếp · `NL-13` Quản lý cảm xúc · `NL-01` Nhận thức bản thân
+
+**Tiêu chí đạt** — T1: có số liệu tỉ lệ nói 7 ngày. T2: tỉ lệ người lớn nói giảm ≥ 20 điểm phần trăm. T3 cấp 3: học viên báo khó khăn trong 48 giờ, ≥ 3 lần chủ động kể/tuần.
+
+**Hồ sơ đầu ra** — Bảng bấm giờ hội thoại · sổ ghi 3 ý mỗi ngày · bảng độ trễ thông tin.
+
+**Dấu hiệu vượt phạm vi** — Học viên không nói với bất kỳ ai trong nhà quá 7 ngày, hoặc chỉ chia sẻ với người lạ trên mạng và có dấu hiệu bị dụ dỗ. → Chuyển chuyên viên tâm lý; nếu có yếu tố người lạ tiếp cận, báo **Cán bộ Bảo vệ trẻ em ngay**.
+
+---
+
+### N07-12 · Hỏi dồn sau mỗi buổi học
+
+**Biểu hiện quan sát được**
+Trong 5 phút đầu sau khi học viên về hoặc rời bàn học, có ≥ 6 câu hỏi liên tiếp về bài vở, mỗi câu cách nhau < 20 giây. Ở học viên: trả lời "bình thường", "không có gì" ở ≥ 80% số lần; đi thẳng về phòng; nhịp thở và giọng nói gấp trong 2 phút đầu.
+
+**Đo bằng gì** — Đếm số câu hỏi trong 5 phút đầu · tỉ lệ câu trả lời dưới 5 chữ · thời gian từ lúc về tới lúc đóng cửa phòng · nhật ký 6 dòng dòng 5.
+
+**Giả thuyết nguyên nhân — cần kiểm chứng, không kết luận sớm**
+
+| Trụ | Giả thuyết | Kiểm bằng cách nào |
+|---|---|---|
+| A | Thời điểm hỏi trùng đúng lúc tải nhận thức còn cao | Dời câu hỏi sang sau 30 phút, đo lại độ dài trả lời |
+| T | Câu hỏi quá rộng nên không có cách trả lời ngắn gọn | Đổi sang 2 câu cụ thể, đo lại |
+| I | Loạt câu hỏi được hiểu là kiểm tra, không phải quan tâm | Hỏi học viên cảm nhận về 5 phút đầu |
+| G | Mục tiêu của cuộc hỏi chưa rõ: lấy thông tin hay giữ kết nối | Viết ra mục tiêu trước khi hỏi |
+
+**Đòn bẩy chính** — Dời cửa sổ hỏi ra **sau 30 phút** kể từ khi học viên về, và rút xuống **đúng hai câu cố định** dùng lặp mỗi ngày.
+
+**T1 · 7 ngày — chỉ quan sát, không sửa lớn**
+D1 đếm câu hỏi 5 phút đầu · D2 ghi nội dung từng câu · D3 đo độ dài câu trả lời · D4 ghi thời gian học viên rút về phòng · D5 đối chiếu G-I-T-A · D6 thử một thay đổi: dời hỏi sang sau 30 phút · D7 so sánh lượng thông tin thu được.
+
+**T2 · 21 ngày** — Vòng 1 kiểm A: cố định cửa sổ hỏi sau 30 phút. Vòng 2 kiểm T: rút còn hai câu cụ thể. Vòng 3 kiểm I: đổi câu mở đầu từ hỏi bài sang hỏi người.
+
+**T3 · 90 ngày** — Cấp 1: còn 2 câu, đúng cửa sổ, có nhắc. Cấp 2: học viên trả lời trung bình ≥ 20 chữ. Cấp 3: học viên chủ động kể trước khi được hỏi ở ≥ 4/7 ngày.
+
+**T4/T5** — T4: giữ cửa sổ hỏi qua mùa thi. T5: học viên tự tổng kết ngày học bằng 2 câu cho gia đình.
+
+**Việc của học viên — tham gia thoả thuận lại** — Đề xuất khoảng nghỉ mình cần trước khi nói chuyện · chọn hai câu hỏi mình sẵn sàng trả lời mỗi ngày · báo trước khi cần thêm thời gian.
+
+**Việc của gia đình** — **Việc thay thế làm ngay tuần này: trong 30 phút đầu sau khi con về, không hỏi câu nào về bài vở — chỉ đưa đồ ăn, để con nghỉ — rồi hỏi đúng hai câu đã thống nhất: "hôm nay việc gì làm con thấy dễ hơn hôm qua" và "có gì con muốn ba/mẹ biết không".** Hỏi xong thì chờ đủ 10 giây, không hỏi tiếp khi chưa nghe hết. Nếu con trả lời ngắn, ghi lại và không hỏi thêm trong ngày. Dùng phần còn lại của **10 phút đồng hành mỗi ngày** cho việc không liên quan bài vở, để cuộc gặp sau buổi học không chỉ mang nghĩa kiểm tra.
+
+**Việc của tư vấn** — Đối chiếu thời điểm hỏi với độ dài câu trả lời · kiểm hai câu hỏi có thu được thông tin dùng được không.
+**Việc của Coach** — Thiết kế hai câu hỏi cố định · theo dõi lượng thông tin thu được qua tuần.
+
+**Năng lực liên quan** — `NL-11` Giao tiếp · `NL-16` Phản tư · `NL-13` Quản lý cảm xúc
+
+**Tiêu chí đạt** — T1: có số liệu 7 ngày về số câu hỏi và độ dài trả lời. T2: độ dài trả lời tăng ≥ 100%. T3 cấp 3: học viên chủ động kể ở ≥ 4/7 ngày.
+
+**Hồ sơ đầu ra** — Bảng đếm câu hỏi 5 phút đầu · bộ hai câu hỏi cố định · nhật ký học viên.
+
+**Dấu hiệu vượt phạm vi** — Học viên phản ứng dữ dội với mọi câu hỏi, khoá cửa nhiều giờ, hoặc có dấu hiệu bị bắt nạt ở trường mà không kể được. → Chuyển chuyên viên tâm lý học đường; nếu có bắt nạt, phối hợp nhà trường theo quy trình bảo vệ trẻ em.
+
+---
+
+### N07-13 · Quản lý điện thoại bằng tịch thu
+
+**Biểu hiện quan sát được**
+Thiết bị bị thu đột ngột ≥ 2 lần/tuần, không theo quy tắc báo trước. Ở học viên: dùng thiết bị khác hoặc dùng ban đêm sau khi bị thu; thời gian ngủ giảm còn < 8 giờ ở ≥ 3 đêm/tuần; mâu thuẫn quanh thiết bị chiếm > 50% số cuộc tranh cãi trong nhà.
+
+**Đo bằng gì** — Bảng ghi lần thu thiết bị và lý do · số liệu thời lượng dùng của chính thiết bị · giờ đi ngủ 7 ngày · số cuộc tranh cãi có nguyên nhân thiết bị.
+
+**Giả thuyết nguyên nhân — cần kiểm chứng, không kết luận sớm**
+
+| Trụ | Giả thuyết | Kiểm bằng cách nào |
+|---|---|---|
+| A | Chưa có quy tắc dùng thiết bị viết ra nên chỉ còn cách thu | Kiểm có hợp đồng thiết bị hay không |
+| T | Học viên chưa có kỹ năng tự dừng nên cần cấu trúc bên ngoài | Thử hẹn giờ tự tắt, đo số lần vượt giờ |
+| I | Thiết bị đang là kênh duy trì quan hệ bạn bè | Hỏi học viên dùng để làm gì trong 3 phiên gần nhất |
+| G | Mục tiêu chưa rõ: giảm thời lượng hay bảo vệ giấc ngủ | Viết ra mục tiêu ưu tiên số một |
+
+**Đòn bẩy chính** — **Hợp đồng thiết bị**: khung giờ dùng viết ra, nơi cất qua đêm nằm ngoài phòng ngủ, học viên tự cất; mọi điều chỉnh dựa trên số liệu 7 ngày, không thu đột ngột.
+
+**T1 · 7 ngày — chỉ quan sát, không sửa lớn**
+D1 ghi thời lượng dùng theo ngày · D2 ghi khung giờ dùng nhiều nhất · D3 ghi giờ đi ngủ · D4 ghi các lần thu và phản ứng sau đó · D5 đối chiếu G-I-T-A · D6 thử một thay đổi: cất thiết bị ngoài phòng ngủ · D7 so sánh giờ ngủ.
+
+**T2 · 21 ngày** — Vòng 1 kiểm A: viết hợp đồng thiết bị, ưu tiên bảo vệ giấc ngủ. Vòng 2 kiểm T: hẹn giờ tự tắt và nghi thức kết thúc phiên dùng. Vòng 3 kiểm I: mở kênh gặp bạn ngoài đời để giảm phụ thuộc kênh trực tuyến.
+
+**T3 · 90 ngày** — Cấp 1: hợp đồng được giữ ≥ 5/7 ngày, có nhắc. Cấp 2: học viên tự cất thiết bị đúng giờ ≥ 6/7 ngày, ngủ ≥ 8 giờ. Cấp 3: 0 lần thu đột ngột trong 30 ngày, `sleep consistency` ≥ 80%.
+
+**T4/T5** — T4: hợp đồng được cập nhật theo tuổi và nhu cầu học tập. T5: học viên tự đề xuất quy tắc thiết bị cho em nhỏ trong nhà.
+
+**Việc của học viên — tham gia thoả thuận lại** — Đề xuất khung giờ dùng mình giữ được · chọn nơi cất qua đêm · xin điều khoản "được báo trước 24 giờ khi đổi quy tắc".
+
+**Việc của gia đình** — **Việc thay thế làm ngay tuần này: cùng con viết một hợp đồng thiết bị nửa trang gồm bốn dòng — giờ được dùng, giờ dừng, nơi cất qua đêm, cách xử lý khi vượt giờ — rồi để chính con cất thiết bị vào chỗ đã thoả thuận mỗi tối.** Tuần này không thu đột ngột lần nào; nếu con vượt giờ, ghi vào bảng và đưa ra Review cuối tuần thay vì xử lý ngay tại chỗ. Người lớn áp dụng cùng quy tắc nơi cất cho thiết bị của mình — điều này quyết định mức độ hợp đồng được tôn trọng. Dùng **10 phút đồng hành mỗi ngày** sau khi cất máy để nói chuyện không màn hình.
+
+**Việc của tư vấn** — Đối chiếu thời lượng dùng với giờ ngủ · phân biệt nhu cầu giải trí với nhu cầu duy trì quan hệ bạn bè.
+**Việc của Coach** — Soạn hợp đồng thiết bị · theo dõi `sleep consistency` · nghiệm thu cổng cấp.
+
+**Năng lực liên quan** — `NL-09` Tự quản · `NL-18` Công nghệ và AI · `NL-08` Xây dựng thói quen
+
+**Tiêu chí đạt** — T1: có số liệu thời lượng dùng và giờ ngủ 7 ngày. T2: giờ ngủ ổn định ≥ 8 giờ ở ≥ 5/7 đêm. T3 cấp 3: 0 lần thu đột ngột trong 30 ngày, `sleep consistency` ≥ 80%.
+
+**Hồ sơ đầu ra** — Hợp đồng thiết bị bốn dòng · bảng thời lượng dùng 21 ngày · bảng giờ ngủ.
+
+**Dấu hiệu vượt phạm vi** — Học viên dùng thiết bị > 8 giờ/ngày kèm bỏ ăn, bỏ học; hoặc có dấu hiệu bị đe doạ, tống tiền, dụ dỗ qua mạng. → Chuyển chuyên viên tâm lý; trường hợp bị đe doạ qua mạng, báo **Cán bộ Bảo vệ trẻ em và cơ quan chức năng ngay**.
+
+---
+
+### N07-14 · Không trao quyền lựa chọn
+
+**Biểu hiện quan sát được**
+Trong 20 quyết định liên quan trực tiếp tới học viên trong một tuần (giờ học, môn ôn trước, cách sắp bàn, đồ dùng), số quyết định học viên được chọn ≤ 2. Ở học viên: nói "sao cũng được" ở ≥ 5 lần/tuần; làm đúng yêu cầu nhưng chậm hơn 30–50%; `autonomy index` < 25%.
+
+**Đo bằng gì** — Bảng liệt kê quyết định và người quyết (`BM-12`) · đếm câu "sao cũng được" · `autonomy index` 7 ngày · thời gian hoàn thành so với baseline.
+
+**Giả thuyết nguyên nhân — cần kiểm chứng, không kết luận sớm**
+
+| Trụ | Giả thuyết | Kiểm bằng cách nào |
+|---|---|---|
+| A | Lựa chọn bị bỏ qua vì tốn thời gian trong nhịp sinh hoạt gấp | Đo thời gian thực tế của một lần cho chọn |
+| I | Người lớn lo học viên chọn sai nên giữ toàn quyền | Ghi mức lo 0–10 trước khi trao một lựa chọn nhỏ |
+| T | Học viên chưa quen so sánh hai phương án nên chọn bừa | Dạy khung so sánh 2 tiêu chí, đo lại |
+| G | Ranh giới giữa việc con được chọn và không được chọn chưa rõ | Viết danh sách hai cột: chọn được và không chọn được |
+
+**Đòn bẩy chính** — Quy tắc **"hai lựa chọn đều chấp nhận được"**: mọi yêu cầu đưa ra dưới dạng hai phương án mà gia đình đều đồng ý, học viên chọn một.
+
+**T1 · 7 ngày — chỉ quan sát, không sửa lớn**
+D1 liệt kê quyết định trong ngày · D2 đánh dấu ai quyết · D3 đếm câu "sao cũng được" · D4 đo thời gian hoàn thành · D5 đối chiếu G-I-T-A · D6 thử một thay đổi: đưa hai lựa chọn cho một việc · D7 so sánh tốc độ bắt đầu.
+
+**T2 · 21 ngày** — Vòng 1 kiểm G: viết danh sách hai cột. Vòng 2 kiểm A: mỗi ngày trao ít nhất 3 lựa chọn nhỏ. Vòng 3 kiểm T: dạy khung so sánh hai tiêu chí trước khi chọn.
+
+**T3 · 90 ngày** — Cấp 1: 3 lựa chọn/ngày, do người lớn đưa ra. Cấp 2: học viên tự đề xuất phương án thứ ba ≥ 2 lần/tuần. Cấp 3: `autonomy index` ≥ 50%, học viên chịu trách nhiệm với lựa chọn đã chọn.
+
+**T4/T5** — T4: mở rộng phạm vi được chọn theo từng chu kỳ. T5: học viên tham gia quyết định của gia đình ở mức phù hợp tuổi.
+
+**Việc của học viên — tham gia thoả thuận lại** — Nêu ba việc mình muốn được chọn · nói rõ tiêu chí mình dựa vào để chọn · nhận phần trách nhiệm đi kèm lựa chọn.
+
+**Việc của gia đình** — **Việc thay thế làm ngay tuần này: chọn ba việc nhỏ trong ngày (môn học trước, giờ nghỉ giữa phiên, chỗ ngồi học) và với mỗi việc đưa hai phương án mà mình đều chấp nhận được, để con chọn một.** Khi con đã chọn, giữ nguyên lựa chọn đó tới hết ngày, kể cả khi thấy phương án kia tốt hơn — điều làm nên hiệu lực là lựa chọn được tôn trọng, không phải lựa chọn tối ưu. Ghi lại thời gian thật sự tốn thêm cho việc cho chọn, thường dưới 2 phút. Dùng **10 phút đồng hành mỗi ngày** để hỏi con thấy lựa chọn hôm nay chạy thế nào.
+
+**Việc của tư vấn** — Đối chiếu số lựa chọn được trao với `autonomy index` · kiểm hai phương án có thực sự ngang giá không.
+**Việc của Coach** — Dạy khung so sánh hai tiêu chí · dựng danh sách hai cột.
+
+**Năng lực liên quan** — `NL-15` Lãnh đạo bản thân · `NL-09` Tự quản · `NL-10` Giải quyết vấn đề
+
+**Tiêu chí đạt** — T1: có bảng quyết định 7 ngày. T2: số lựa chọn được trao đạt ≥ 3/ngày. T3 cấp 3: `autonomy index` ≥ 50%.
+
+**Hồ sơ đầu ra** — `BM-12` bảng quyết định · danh sách hai cột · bảng `autonomy index`.
+
+**Dấu hiệu vượt phạm vi** — Học viên từ chối chọn trong mọi tình huống suốt 3 tuần kèm mất hứng thú kéo dài, hoặc chọn các phương án gây hại cho bản thân. → Chuyển chuyên viên tâm lý, không tiếp tục mở rộng phạm vi lựa chọn.
+
+---
+
+### N07-15 · Kỳ vọng vượt baseline
+
+**Biểu hiện quan sát được**
+Mục tiêu đặt cho học viên cao hơn baseline đo được ≥ 50% ngay từ tuần đầu (ví dụ baseline 30 phút học tự giác mỗi ngày, yêu cầu 90 phút). Ở học viên: bỏ cuộc vào ngày 3–5; `recovery time` > 7 ngày; chuỗi dài nhất < 5 ngày; tránh nói về kế hoạch.
+
+**Đo bằng gì** — Bảng baseline 7 ngày · bảng mục tiêu đã đặt · `consistency` và `recovery time` · nhật ký 6 dòng dòng 6.
+
+**Giả thuyết nguyên nhân — cần kiểm chứng, không kết luận sớm**
+
+| Trụ | Giả thuyết | Kiểm bằng cách nào |
+|---|---|---|
+| G | Mục tiêu được đặt theo mong muốn, chưa đặt theo số đo hiện có | So mục tiêu với baseline 7 ngày |
+| A | Chưa có bước trung gian nên bước nhảy quá lớn | Chia mục tiêu thành 4 mốc 21 ngày |
+| T | Học viên chưa có kỹ năng nền cho mức mục tiêu đó | Kiểm tra kỹ năng nền bằng một bài chuẩn |
+| I | Nhận thất bại liên tiếp làm giảm ý định thử lại | Đếm số lần thử lại sau mỗi lần đứt |
+
+**Đòn bẩy chính** — **Quy tắc baseline +10–15% mỗi 21 ngày**: mục tiêu chỉ được nâng sau khi mức hiện tại giữ ổn định 14 ngày liên tiếp.
+
+**T1 · 7 ngày — chỉ quan sát, không sửa lớn**
+D1 đo baseline thật, không can thiệp · D2–D4 tiếp tục đo, ghi biến động · D5 đối chiếu mục tiêu đang đặt với baseline · D6 thử một thay đổi: hạ mục tiêu về baseline +10% · D7 so sánh số ngày hoàn thành.
+
+**T2 · 21 ngày** — Vòng 1 kiểm G: đặt lại mục tiêu theo công thức baseline +10–15%. Vòng 2 kiểm A: chia lộ trình thành 4 mốc. Vòng 3 kiểm T: bổ sung kỹ năng nền còn thiếu.
+
+**T3 · 90 ngày** — Cấp 1: giữ mức baseline +10% trong 14 ngày. Cấp 2: nâng một nấc, `consistency` ≥ 14 ngày. Cấp 3: nâng nấc thứ ba, `recovery time` ≤ 3 ngày sau mỗi lần đứt.
+
+**T4/T5** — T4: 4 chu kỳ nâng, mỗi chu kỳ một nấc. T5: học viên tự tính nấc nâng cho mục tiêu mới của mình.
+
+**Việc của học viên — tham gia thoả thuận lại** — Cung cấp số liệu baseline trung thực · đề xuất nấc nâng mình tin giữ được 14 ngày · xin dừng nâng khi chuỗi đứt hai lần liên tiếp.
+
+**Việc của gia đình** — **Việc thay thế làm ngay tuần này: lấy con số baseline 7 ngày vừa đo, nhân 1,1, và viết lại mục tiêu tuần theo đúng con số đó — không nhân 2, không đặt theo mục tiêu của bạn cùng lớp.** Dán con số baseline cạnh mục tiêu mới để cả nhà nhìn thấy khoảng cách thật. Trong 21 ngày này, không nâng thêm dù con đạt sớm; phần vượt được ghi vào cột "dự trữ" để dùng khi có ngày mệt. Dùng **10 phút đồng hành mỗi ngày** để đọc số của ngày hôm đó, và nói rõ mục tiêu tuần sau sẽ được tính từ số này chứ không từ kỳ vọng.
+
+**Việc của tư vấn** — Kiểm khoảng cách mục tiêu so với baseline · cảnh báo khi mức nâng vượt 15%.
+**Việc của Coach** — Tính nấc nâng · theo dõi `recovery time` · nghiệm thu cổng cấp.
+
+**Năng lực liên quan** — `NL-02` Thiết lập mục tiêu · `NL-14` Thích ứng · `NL-08` Xây dựng thói quen
+
+**Tiêu chí đạt** — T1: có baseline 7 ngày không bị can thiệp. T2: mục tiêu mới nằm trong khoảng baseline +10–15%. T3 cấp 3: `consistency` ≥ 14 ngày và `recovery time` ≤ 3 ngày.
+
+**Hồ sơ đầu ra** — Bảng baseline 7 ngày · bảng nấc nâng 4 mốc · bảng `consistency` và `recovery time`.
+
+**Dấu hiệu vượt phạm vi** — Học viên có biểu hiện kiệt sức kéo dài (ngủ < 6 giờ, đau đầu, sụt cân), hoặc nói về việc không đáp ứng nổi kỳ vọng kèm ý nghĩ tiêu cực về bản thân. → Dừng mọi mục tiêu nâng, chuyển y tế và tâm lý.
+
+---
+
+### N07-16 · Thiếu thời gian chất lượng
+
+**Biểu hiện quan sát được**
+Tổng thời gian trò chuyện không liên quan tới việc học < 15 phút/tuần; ≥ 90% nội dung tương tác giữa người lớn và học viên là nhắc việc hoặc hỏi bài. Ở học viên: từ chối lời rủ đi cùng ≥ 3 lần/tuần; chia sẻ chuyện riêng với người ngoài gia đình trước.
+
+**Đo bằng gì** — Bảng phân loại nội dung tương tác theo ngày · tổng phút trò chuyện không phải việc học · số lời mời bị từ chối · nhật ký 6 dòng dòng 5.
+
+**Giả thuyết nguyên nhân — cần kiểm chứng, không kết luận sớm**
+
+| Trụ | Giả thuyết | Kiểm bằng cách nào |
+|---|---|---|
+| A | Lịch sinh hoạt không còn khoảng trống chung nào | Vẽ lịch tuần của cả nhà, tìm khoảng giao nhau |
+| G | Thời gian chung bị coi là phần thừa sau khi xong việc | Kiểm thời gian chung có nằm trong lịch không |
+| I | Cả hai phía đều dự đoán cuộc trò chuyện sẽ thành nhắc việc | Ghi nội dung 10 lượt trao đổi gần nhất |
+| T | Không có hoạt động chung nào đủ hấp dẫn để duy trì | Cho học viên chọn 3 hoạt động ưa thích |
+
+**Đòn bẩy chính** — **10 phút mỗi ngày không có nội dung học tập**, hoạt động do học viên chọn, đặt cố định trong lịch như một cuộc hẹn.
+
+**T1 · 7 ngày — chỉ quan sát, không sửa lớn**
+D1 phân loại mọi lượt tương tác · D2 cộng phút trò chuyện ngoài việc học · D3 ghi lời mời và phản hồi · D4 vẽ lịch tuần của cả nhà · D5 đối chiếu G-I-T-A · D6 thử một thay đổi: 10 phút do học viên chọn · D7 so sánh mức tham gia.
+
+**T2 · 21 ngày** — Vòng 1 kiểm A: đặt 10 phút vào lịch cố định. Vòng 2 kiểm T: học viên chọn hoạt động, đổi mỗi tuần. Vòng 3 kiểm I: giữ nguyên cam kết không nhắc việc trong 10 phút đó.
+
+**T3 · 90 ngày** — Cấp 1: 10 phút đạt ≥ 4/7 ngày. Cấp 2: đạt ≥ 6/7 ngày, học viên chủ động nhắc giờ hẹn. Cấp 3: học viên chủ động kể chuyện riêng với gia đình ≥ 2 lần/tuần.
+
+**T4/T5** — T4: giữ 10 phút qua mùa thi và giai đoạn công việc bận. T5: gia đình mở rộng thành sinh hoạt chung hàng tuần do học viên tổ chức.
+
+**Việc của học viên — tham gia thoả thuận lại** — Chọn hoạt động cho 10 phút · chọn giờ phù hợp với mình · nói khi 10 phút bị biến thành giờ nhắc việc.
+
+**Việc của gia đình** — **Việc thay thế làm ngay tuần này: ghi "10 phút với con" vào lịch như một cuộc hẹn công việc, cùng giờ mỗi ngày, và trong 10 phút đó không nói câu nào về bài vở, điểm số hay lịch học.** Để học viên chọn nội dung, kể cả khi nội dung đó là chuyện game hay chuyện bạn bè mà mình chưa quan tâm. Nếu một ngày lỡ hẹn, không bù bằng 30 phút hôm sau, chỉ giữ đúng 10 phút — nhịp đều quan trọng hơn thời lượng. Đánh dấu vào lịch mỗi ngày làm được: chuỗi này là dữ liệu quan trọng nhất của cả nhóm `N07`.
+
+**Việc của tư vấn** — Đối chiếu tỉ lệ nội dung nhắc việc với mức tham gia của học viên · theo dõi chuỗi 10 phút.
+**Việc của Coach** — Gợi ý danh mục hoạt động 10 phút · dẫn Review · nghiệm thu cổng cấp.
+
+**Năng lực liên quan** — `NL-11` Giao tiếp · `NL-13` Quản lý cảm xúc · `NL-12` Hợp tác
+
+**Tiêu chí đạt** — T1: có bảng phân loại tương tác 7 ngày. T2: chuỗi 10 phút đạt ≥ 14 ngày. T3 cấp 3: tỉ lệ nội dung nhắc việc giảm xuống ≤ 60%.
+
+**Hồ sơ đầu ra** — Bảng phân loại tương tác · lịch 10 phút có đánh dấu chuỗi · danh mục hoạt động do học viên chọn.
+
+**Dấu hiệu vượt phạm vi** — Học viên tránh mặt gia đình gần như hoàn toàn > 2 tuần, hoặc gắn bó bất thường với một người lớn ngoài gia đình mà cha mẹ không biết rõ. → Chuyển chuyên viên tâm lý và rà soát an toàn theo quy trình bảo vệ trẻ em.
+
+---
+
+### N07-17 · Giao tiếp chủ yếu bằng mệnh lệnh
+
+**Biểu hiện quan sát được**
+Tỉ lệ câu mệnh lệnh trên tổng số câu nói với học viên ≥ 70% trong một buổi tối. Ở học viên: chỉ hành động sau khi câu lệnh được lặp lần thứ hai hoặc ba; hỏi lại tiêu chí sau khi đã làm xong ("thế này được chưa"); làm đúng chữ nhưng sai ý ≥ 3 lần/tuần.
+
+**Đo bằng gì** — Ghi và phân loại 30 câu nói liên tiếp · đếm số lần phải lặp lệnh · số bài làm sai ý dù đúng chữ · nhật ký 6 dòng dòng 3.
+
+**Giả thuyết nguyên nhân — cần kiểm chứng, không kết luận sớm**
+
+| Trụ | Giả thuyết | Kiểm bằng cách nào |
+|---|---|---|
+| A | Quỹ thời gian gấp nên câu ngắn nhất được chọn | Đo thời gian nói một câu tiêu chí so với câu lệnh |
+| T | Câu lệnh không chứa tiêu chí nên học viên không biết thế nào là xong | Thử một câu tiêu chí, đếm số lần hỏi lại |
+| G | Kỳ vọng về kết quả chưa được diễn đạt thành tiêu chí | Yêu cầu viết tiêu chí cho 3 việc quen thuộc |
+| I | Câu lệnh được dùng để giành lại quyền kiểm soát khi căng | Ghi mức căng thẳng lúc phát lệnh |
+
+**Đòn bẩy chính** — Đổi **1 trong 3 câu mệnh lệnh** sang **câu tiêu chí** ("bài này xong nghĩa là có đủ ba phần…") hoặc **câu lựa chọn** ("con làm Toán trước hay Văn trước").
+
+**T1 · 7 ngày — chỉ quan sát, không sửa lớn**
+D1 ghi 30 câu liên tiếp · D2 phân loại lệnh – hỏi – tiêu chí · D3 đếm số lần lặp lệnh · D4 ghi các việc làm sai ý · D5 đối chiếu G-I-T-A · D6 thử một thay đổi: đổi một câu lệnh thành câu tiêu chí · D7 so sánh số lần hỏi lại.
+
+**T2 · 21 ngày** — Vòng 1 kiểm T: viết tiêu chí cho 3 việc quen thuộc. Vòng 2 kiểm A: đổi tỉ lệ câu, mục tiêu 1 trong 3. Vòng 3 kiểm I: thay câu lệnh lúc căng bằng câu hoãn 10 phút.
+
+**T3 · 90 ngày** — Cấp 1: tỉ lệ câu lệnh còn 55%, có nhắc. Cấp 2: còn ≤ 40%, số lần lặp lệnh giảm ≥ 50%. Cấp 3: học viên tự hỏi tiêu chí trước khi bắt đầu, không cần được nhắc.
+
+**T4/T5** — T4: giữ tỉ lệ qua các giai đoạn căng thẳng. T5: học viên dùng ngôn ngữ tiêu chí khi phân việc trong nhóm.
+
+**Việc của học viên — tham gia thoả thuận lại** — Đề nghị được nghe tiêu chí trước khi làm · hỏi lại một câu tiêu chí khi chưa rõ · nói ra câu lệnh nào khiến mình khó bắt đầu nhất.
+
+**Việc của gia đình** — **Việc thay thế làm ngay tuần này: viết sẵn tiêu chí cho ba việc hay phải nhắc nhất (dọn bàn, làm bài Toán, chuẩn bị cặp), mỗi tiêu chí ba gạch đầu dòng, dán ở nơi làm việc đó — và khi định ra lệnh thì chỉ vào tiêu chí thay vì nhắc lại.** Mỗi buổi tối chọn đúng một câu lệnh để chuyển thành câu lựa chọn, tăng dần theo tuần. Đếm số lần phải lặp lệnh trước và sau khi có tiêu chí; con số này thường giảm rõ trong 10 ngày. Dùng **10 phút đồng hành mỗi ngày** để hỏi con tiêu chí nào khó hiểu, và sửa lại chữ trong tiêu chí theo lời con.
+
+**Việc của tư vấn** — Đối chiếu tỉ lệ câu lệnh với số lần lặp lệnh · kiểm tiêu chí có đo được không.
+**Việc của Coach** — Dạy cách viết tiêu chí ba gạch đầu dòng · theo dõi tỉ lệ câu nói.
+
+**Năng lực liên quan** — `NL-11` Giao tiếp · `NL-09` Tự quản · `NL-06` Quản lý thời gian
+
+**Tiêu chí đạt** — T1: có bảng phân loại 30 câu. T2: tỉ lệ câu lệnh giảm ≥ 15 điểm phần trăm. T3 cấp 3: học viên tự hỏi tiêu chí trước khi bắt đầu ở ≥ 80% số việc.
+
+**Hồ sơ đầu ra** — Bảng phân loại câu nói · ba bảng tiêu chí dán tại chỗ · bảng đếm số lần lặp lệnh.
+
+**Dấu hiệu vượt phạm vi** — Câu lệnh kèm lời hạ nhục, doạ đuổi khỏi nhà, hoặc học viên phản ứng bằng hành vi gây hại cho mình hoặc người khác. → Dừng phác đồ, chuyển **Cán bộ Bảo vệ trẻ em** và chuyên viên tâm lý ngay.
+
+---
+
+### N07-18 · Không phân biệt hỗ trợ và cứu hộ
+
+**Biểu hiện quan sát được**
+Trong 10 lần giúp gần nhất, không lần nào ghi được mức hỗ trợ đã dùng; ≥ 6 lần kết thúc bằng việc người lớn đưa ra đáp án. Ở học viên: mức độc lập không đổi sau 21 ngày; cùng một dạng bài vẫn cần giúp ở lần thứ 5; không kể lại được cách mình đã giải.
+
+**Đo bằng gì** — Bảng mức hỗ trợ 4 mức (`BM-11`) · số lần cần giúp trên cùng một dạng bài · khả năng thuật lại cách giải · đối chiếu bài lớp và bài nhà.
+
+**Giả thuyết nguyên nhân — cần kiểm chứng, không kết luận sớm**
+
+| Trụ | Giả thuyết | Kiểm bằng cách nào |
+|---|---|---|
+| T | Không có thang mức hỗ trợ nên mọi lần giúp đều ở mức cao nhất | Áp thang 4 mức, ghi mức từng lần |
+| A | Giúp diễn ra lúc muộn, khi cả hai đều muốn xong nhanh | Ghi giờ của các lần giúp |
+| G | Mục tiêu của lần giúp chưa được nêu: xong bài hay biết làm | Nói rõ mục tiêu trước mỗi lần giúp |
+| I | Người lớn thấy có lỗi khi để con loay hoay | Ghi mức áy náy 0–10 khi giữ ở mức hỗ trợ thấp |
+
+**Đòn bẩy chính** — **Thang 4 mức hỗ trợ**: M0 tự làm · M1 gợi ý bằng câu hỏi · M2 làm mẫu một bước rồi dừng · M3 làm cùng. Ghi mức mỗi lần, mục tiêu hạ một mức sau mỗi 21 ngày.
+
+**T1 · 7 ngày — chỉ quan sát, không sửa lớn**
+D1 ghi mức hỗ trợ từng lần giúp · D2 ghi giờ và môn · D3 ghi kết quả sau khi giúp · D4 kiểm học viên có thuật lại được cách giải không · D5 đối chiếu G-I-T-A · D6 thử một thay đổi: hạ một mức trong một buổi · D7 so sánh kết quả.
+
+**T2 · 21 ngày** — Vòng 1 kiểm T: dùng thang 4 mức cho mọi lần giúp. Vòng 2 kiểm A: dời giờ giúp lên sớm hơn 60 phút. Vòng 3 kiểm G: nêu mục tiêu trước mỗi lần giúp.
+
+**T3 · 90 ngày** — Cấp 1: mọi lần giúp đều được ghi mức, phần lớn ở M2. Cấp 2: phần lớn ở M1, học viên thuật lại được cách giải ≥ 70% số bài. Cấp 3: ≥ 60% số lần ở M0, số lần cần giúp cùng dạng bài giảm còn ≤ 2.
+
+**T4/T5** — T4: giữ thang mức qua các môn mới. T5: học viên dùng thang mức khi giúp bạn, không đưa đáp án.
+
+**Việc của học viên — tham gia thoả thuận lại** — Nói rõ mình cần mức nào trước khi được giúp · thuật lại cách giải sau mỗi lần được giúp · xin thử M0 trước ở những dạng đã quen.
+
+**Việc của gia đình** — **Việc thay thế làm ngay tuần này: dán thang 4 mức lên góc bàn học và trước mỗi lần giúp, hỏi con "con cần mức mấy", rồi ghi mức đã dùng vào bảng — tuần này không dùng M3 lần nào.** Kết thúc mỗi lần giúp bằng một câu duy nhất: "con nói lại cho ba/mẹ nghe con vừa làm thế nào"; nếu con không thuật lại được, lần giúp đó tính là chưa đạt và ghi lại để Coach xem. Nếu thấy áy náy khi giữ ở mức thấp, ghi con số áy náy vào bảng thay vì hạ mức. Dùng **10 phút đồng hành mỗi ngày** để cùng đọc bảng mức và chọn mức cho ngày mai.
+
+**Việc của tư vấn** — Đối chiếu mức hỗ trợ với khả năng thuật lại · phát hiện các dạng bài cần giàn giáo riêng.
+**Việc của Coach** — Dạy thang 4 mức · kiểm mức hỗ trợ trong hồ sơ · nghiệm thu cổng cấp.
+
+**Năng lực liên quan** — `NL-05` Tự học · `NL-10` Giải quyết vấn đề · `NL-16` Phản tư
+
+**Tiêu chí đạt** — T1: có bảng mức hỗ trợ 10 lần giúp. T2: hạ được trung bình một mức. T3 cấp 3: ≥ 60% số lần ở M0 và thuật lại được cách giải.
+
+**Hồ sơ đầu ra** — `BM-11` bảng mức hỗ trợ · bản thang 4 mức dán tại bàn · ghi chép thuật lại cách giải.
+
+**Dấu hiệu vượt phạm vi** — Học viên không thuật lại được cách giải ở mọi môn suốt 6 tuần dù đã hạ độ khó, hoặc có dấu hiệu khó khăn học tập đặc thù (đọc sai chữ, đảo số kéo dài). → Chuyển đánh giá chuyên sâu về học tập.
+
+---
+
+### N07-19 · Không ghi nhận tiến bộ nhỏ
+
+**Biểu hiện quan sát được**
+Trong 7 ngày, số lần ghi nhận cụ thể một việc học viên làm được là 0–1; lời khen chỉ xuất hiện khi có kết quả lớn (điểm cao, giải thưởng). Ở học viên: hành vi mới tắt sau 4–6 ngày; hỏi "có ai để ý không"; không nhắc lại được việc mình đã làm tốt trong tuần.
+
+**Đo bằng gì** — Bảng đếm lời ghi nhận theo ngày · độ dài chuỗi hành vi mới · phỏng vấn "kể 3 việc con làm tốt tuần này" · nhật ký 6 dòng dòng 6.
+
+**Giả thuyết nguyên nhân — cần kiểm chứng, không kết luận sớm**
+
+| Trụ | Giả thuyết | Kiểm bằng cách nào |
+|---|---|---|
+| A | Không có chỗ ghi nên tiến bộ nhỏ trôi qua không ai thấy | Lập bảng ghi 1 dòng mỗi ngày |
+| G | Chỉ kết quả lớn được coi là đáng ghi nhận | Liệt kê tiêu chí đang dùng để khen |
+| T | Người lớn khen chung chung nên học viên không nối được với hành vi | So phản ứng với lời khen chung và lời khen có số |
+| I | Lo rằng khen nhiều sẽ làm học viên chủ quan | Ghi mức lo và đối chiếu với dữ liệu thật |
+
+**Đòn bẩy chính** — **Một câu ghi nhận cụ thể mỗi ngày**, có mô tả hành vi và con số, nói trong khung 10 phút và không kèm chữ "nhưng".
+
+**T1 · 7 ngày — chỉ quan sát, không sửa lớn**
+D1 đếm lời ghi nhận · D2 phân loại chung chung hay có số · D3 ghi phản ứng của học viên · D4 đo độ dài chuỗi hành vi mới · D5 đối chiếu G-I-T-A · D6 thử một thay đổi: một câu ghi nhận có số · D7 so sánh mức duy trì hành vi.
+
+**T2 · 21 ngày** — Vòng 1 kiểm A: lập bảng ghi một dòng mỗi ngày. Vòng 2 kiểm T: chuyển toàn bộ lời khen sang dạng hành vi và số. Vòng 3 kiểm G: mở rộng tiêu chí đáng ghi nhận sang quá trình, không chỉ kết quả.
+
+**T3 · 90 ngày** — Cấp 1: 1 câu ghi nhận/ngày ở ≥ 5/7 ngày. Cấp 2: đủ 7/7 ngày, học viên kể được 3 việc mình làm tốt. Cấp 3: học viên tự ghi nhận tiến bộ của mình vào nhật ký mà không cần ai nhắc.
+
+**T4/T5** — T4: giữ nhịp ghi nhận qua các chu kỳ, kể cả giai đoạn kết quả chưa tốt. T5: học viên ghi nhận tiến bộ của bạn trong nhóm.
+
+**Việc của học viên — tham gia thoả thuận lại** — Nói ra loại tiến bộ mình muốn được nhìn thấy · tự ghi 1 dòng mỗi tối · đọc lại bảng cuối tuần cùng gia đình.
+
+**Việc của gia đình** — **Việc thay thế làm ngay tuần này: treo một tờ giấy cạnh bàn học và mỗi tối viết đúng một dòng theo mẫu "hôm nay con đã… (hành vi) … (số)", rồi đọc to dòng đó trong 10 phút đồng hành.** Không thêm chữ "nhưng" và không nối sang việc cần cải thiện — góp ý để dành cho buổi Review cuối tuần. Nếu một ngày không tìm ra tiến bộ nào, hạ ngưỡng quan sát xuống mức nhỏ nhất: ngồi vào bàn đúng giờ, mở đúng cuốn vở, tự cất điện thoại. Cuối tuần, đọc lại cả bảy dòng cùng con — bảng này cũng là dữ liệu cho hồ sơ 90 ngày.
+
+**Việc của tư vấn** — Đối chiếu số lời ghi nhận với độ dài chuỗi hành vi · kiểm lời ghi nhận có gắn hành vi cụ thể không.
+**Việc của Coach** — Dạy mẫu câu ghi nhận · dùng bảng 7 dòng trong Review tuần.
+
+**Năng lực liên quan** — `NL-08` Xây dựng thói quen · `NL-01` Nhận thức bản thân · `NL-16` Phản tư
+
+**Tiêu chí đạt** — T1: có bảng đếm lời ghi nhận 7 ngày. T2: đạt 1 câu/ngày ở ≥ 5/7 ngày. T3 cấp 3: học viên tự ghi nhận và kể lại được 3 tiến bộ của mình.
+
+**Hồ sơ đầu ra** — Bảng ghi nhận 7 dòng mỗi tuần · bảng độ dài chuỗi hành vi · nhật ký học viên.
+
+**Dấu hiệu vượt phạm vi** — Học viên phủ nhận mọi ghi nhận, nói mình không xứng đáng, kèm khí sắc trầm kéo dài > 2 tuần. → Chuyển chuyên viên tâm lý, không tăng cường độ khen như một cách bù.
+
+---
+
+### N07-20 · Gia đình thiếu văn hoá phản tư
+
+**Biểu hiện quan sát được**
+Không có buổi xem lại tuần nào trong ≥ 8 tuần gần nhất; quyết định về lịch học thay đổi ≥ 3 lần/tháng mà không có căn cứ ghi lại. Ở học viên: cùng một lỗi lặp ≥ 3 tuần liên tiếp; không trả lời được "tuần này mình đã đổi gì".
+
+**Đo bằng gì** — Số buổi Review đã diễn ra · biên bản có hay không · số lần đổi quyết định và căn cứ · số lỗi lặp qua các tuần.
+
+**Giả thuyết nguyên nhân — cần kiểm chứng, không kết luận sớm**
+
+| Trụ | Giả thuyết | Kiểm bằng cách nào |
+|---|---|---|
+| A | Không có khung giờ cố định nên Review luôn bị dời | Đặt thử một khung 15 phút cố định trong tuần |
+| T | Không có bộ câu hỏi nên buổi họp trở thành nói chuyện chung | Dùng bộ 3 câu hỏi, đo lượng quyết định thu được |
+| I | Buổi xem lại từng biến thành buổi kiểm điểm nên bị né | Hỏi học viên hình dung gì khi nghe hai chữ "họp nhà" |
+| G | Chưa rõ Review để quyết định điều gì | Viết trước một quyết định cần chốt |
+
+**Đòn bẩy chính** — **Review gia đình 15 phút mỗi tuần**, cố định thứ và giờ, dùng đúng ba câu hỏi: điều gì đã chạy được, điều gì chưa, tuần tới đổi **đúng một** biến.
+
+**T1 · 7 ngày — chỉ quan sát, không sửa lớn**
+D1 ghi các quyết định trong tuần và căn cứ · D2 ghi các lỗi lặp lại · D3 hỏi học viên về thay đổi gần nhất · D4 tìm khung 15 phút cả nhà rảnh · D5 đối chiếu G-I-T-A · D6 thử một thay đổi: chạy thử một buổi Review 15 phút · D7 xem có ra được một quyết định không.
+
+**T2 · 21 ngày** — Vòng 1 kiểm A: cố định thứ và giờ Review. Vòng 2 kiểm T: dùng bộ ba câu hỏi và biên bản 5 dòng. Vòng 3 kiểm I: chuyển vai chủ trì sang học viên một tuần.
+
+**T3 · 90 ngày** — Cấp 1: Review diễn ra 3/4 tuần, do người lớn chủ trì. Cấp 2: đủ 4/4 tuần, mỗi buổi ra đúng một quyết định có ghi. Cấp 3: học viên chủ trì ≥ 2 buổi/tháng, số lỗi lặp giảm ≥ 50%.
+
+**T4/T5** — T4: Review thành nếp qua 4 chu kỳ, có lưu trữ biên bản. T5: học viên mang mô hình Review sang nhóm học tập hoặc lớp.
+
+**Việc của học viên — tham gia thoả thuận lại** — Đề xuất thứ và giờ Review · chuẩn bị số liệu tuần của mình · nhận vai chủ trì một buổi mỗi tháng.
+
+**Việc của gia đình** — **Việc thay thế làm ngay tuần này: chọn một khung 15 phút cố định (ví dụ tối Chủ nhật 20h00), ngồi cùng con và trả lời đúng ba câu hỏi, rồi viết một biên bản 5 dòng chốt duy nhất một thay đổi cho tuần sau.** Trong buổi này không nhắc lại lỗi cũ ngoài phạm vi tuần, không nêu chuyện điểm số nếu chuyện đó đã xử lý ở buổi phân tích lỗi. Mỗi người, kể cả người lớn, nêu một điều mình sẽ đổi — đây là chi tiết quyết định việc học viên có coi Review là chỗ an toàn hay không. Dùng **10 phút đồng hành mỗi ngày** trong tuần để thu số liệu, để buổi Review có dữ liệu thật thay vì cảm nhận.
+
+**Việc của tư vấn** — Kiểm biên bản có ra quyết định không · đối chiếu số lỗi lặp qua các tuần.
+**Việc của Coach** — Dẫn 2 buổi Review mẫu · bàn giao vai chủ trì · nghiệm thu cổng cấp.
+
+**Năng lực liên quan** — `NL-16` Phản tư · `NL-12` Hợp tác · `NL-15` Lãnh đạo bản thân
+
+**Tiêu chí đạt** — T1: xác định được khung giờ và chạy thử một buổi. T2: 3/3 tuần có Review và biên bản. T3 cấp 3: học viên chủ trì ≥ 2 buổi/tháng, lỗi lặp giảm ≥ 50%.
+
+**Hồ sơ đầu ra** — Biên bản Review 5 dòng theo tuần · bảng quyết định và căn cứ · bảng lỗi lặp theo tuần.
+
+**Dấu hiệu vượt phạm vi** — Buổi Review liên tục biến thành tranh cãi lớn, có lời xúc phạm hoặc học viên bỏ ra ngoài ở ≥ 3 buổi liên tiếp. → Tạm dừng Review tại nhà, chuyển tư vấn gia đình; nếu có lời đe doạ, chuyển **Cán bộ Bảo vệ trẻ em**.
