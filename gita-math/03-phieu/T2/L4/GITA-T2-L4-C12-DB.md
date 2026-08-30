@@ -245,57 +245,56 @@ g) 85 × 25 × 4
 
 ## PHẦN D — DẠNG 5 – DẠNG 6 VÀ DẠNG PHỐI HỢP · Mức M3 — Vận dụng · 20 phút · 20 điểm
 
-### Bài 1. (4 điểm) Định vị số hạng trong dãy cách đều
+### Bài 1. (4 điểm) Hai nhóm có phần chung — đếm bằng hai vòng tròn
 
-Cho dãy: 2, 10, 18, …, 730.
+Vẽ hai vòng tròn và điền số vào ba phần trước khi tính.
 
-a) Dãy có bao nhiêu số hạng?
-b) Số hạng thứ 46 là số nào?
-c) Số 66 là số hạng thứ mấy?
-d) Số 354 là số hạng thứ mấy?
-e) Số 507 có thuộc dãy không? Vì sao?
-f) Tổng của cả dãy bằng bao nhiêu?
+a) Lớp 4B có 33 học sinh. Có 15 em học hát, 23 em học vẽ, trong đó 9 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
+b) Lớp 4A có 55 học sinh. Có 30 em học bơi, 29 em học bóng rổ, trong đó 10 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
+c) Lớp 5A có 41 học sinh. Có 21 em học bóng rổ, 22 em học tiếng Anh, trong đó 6 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
+d) Lớp 5B có 22 học sinh. Có 15 em học bóng rổ, 8 em học tiếng Anh, trong đó 3 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
+e) Lớp 4A có 42 học sinh. Có 28 em học tiếng Anh, 23 em học hát, trong đó 10 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
+f) Lớp 5A có 28 học sinh. Có 15 em học cờ vua, 17 em học vẽ, trong đó 10 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
 
-### Bài 2. (4 điểm) Tính nhanh tổng dãy số cách đều
+### Bài 2. (4 điểm) Tổng của các số tự nhiên liên tiếp
 
-Tính tổng mỗi dãy.
+Với mỗi ý, tìm số theo yêu cầu.
 
-a) 2 + 7 + 12 + … + 247
-b) 1 + 2 + 3 + … + 100
-c) 1 + 3 + 5 + … + 49
-d) 3 + 6 + 9 + … + 60
-e) 5 + 10 + 15 + … + 50
-f) 2 + 4 + 6 + … + 40
+a) Tổng của 9 số tự nhiên liên tiếp bằng 2 529. Tìm số bé nhất trong 9 số đó.
+b) Tổng của 9 số tự nhiên liên tiếp bằng 1 170. Tìm số bé nhất trong 9 số đó.
+c) Tổng của 3 số tự nhiên liên tiếp bằng 966. Tìm số bé nhất trong 3 số đó.
+d) Tổng của 5 số tự nhiên liên tiếp bằng 2 115. Tìm số bé nhất trong 5 số đó.
+e) Tổng của 3 số tự nhiên liên tiếp bằng 435. Tìm số bé nhất trong 3 số đó.
 
 ### Bài 3. (4 điểm) Phủ hình và chia hình thành phần bằng nhau
 
 Vẽ hình và kẻ lưới ra nháp.
 
-a) Một hình chữ nhật 12 cm × 2 cm được phủ kín bằng các hình vuông cạnh 1 cm. Cần bao nhiêu hình vuông?
+a) Một hình chữ nhật 16 cm × 2 cm được phủ kín bằng các hình vuông cạnh 1 cm. Cần bao nhiêu hình vuông?
 b) Diện tích hình chữ nhật ấy bằng bao nhiêu?
 c) Diện tích mỗi hình vuông nhỏ bằng bao nhiêu?
 d) Chia hình chữ nhật ấy thành 2 phần bằng nhau thì mỗi phần có diện tích bao nhiêu?
 e) Chia thành 4 phần bằng nhau thì mỗi phần bao nhiêu?
 f) Nếu ghép hai hình chữ nhật ấy theo chiều dài thì hình mới có chu vi bao nhiêu?
 
-### Bài 4. (4 điểm) Đếm tam giác và đoạn thẳng
-
-Đếm có hệ thống, nêu cách đếm.
-
-a) Từ một đỉnh của tam giác lớn kẻ 2 đoạn thẳng tới cạnh đối diện. Có tất cả bao nhiêu tam giác trong hình?
-b) Trong đó có bao nhiêu tam giác nhỏ nhất (không bị chia tiếp)?
-c) Trên một đường thẳng lấy 5 điểm phân biệt. Có bao nhiêu đoạn thẳng được tạo thành?
-d) Nếu lấy thêm một điểm nữa trên đường thẳng đó thì có thêm bao nhiêu đoạn thẳng?
-e) Với 6 điểm thì có tất cả bao nhiêu đoạn thẳng?
-
-### Bài 5. (4 điểm) Tìm x qua ba bước, có dấu ngoặc
+### Bài 4. (4 điểm) Tìm x qua ba bước, có dấu ngoặc
 
 Tìm x, trình bày đủ các bước.
 
-a) (x × 9 − 33) × 8 = 7 872
-b) (x × 8 − 43) × 2 = 362
-c) (x + 58) × 2 − 3 = 337
-d) (22 + x) × 7 + 9 = 779
+a) (x × 2 − 19) × 9 = 1 593
+b) (50 + x) × 3 + 6 = 261
+c) (x × 9 − 26) × 3 = 3 000
+d) (28 + x) × 2 + 3 = 229
+
+### Bài 5. (4 điểm) Đếm tam giác và đoạn thẳng
+
+Đếm có hệ thống, nêu cách đếm.
+
+a) Từ một đỉnh của tam giác lớn kẻ 4 đoạn thẳng tới cạnh đối diện. Có tất cả bao nhiêu tam giác trong hình?
+b) Trong đó có bao nhiêu tam giác nhỏ nhất (không bị chia tiếp)?
+c) Trên một đường thẳng lấy 6 điểm phân biệt. Có bao nhiêu đoạn thẳng được tạo thành?
+d) Nếu lấy thêm một điểm nữa trên đường thẳng đó thì có thêm bao nhiêu đoạn thẳng?
+e) Với 7 điểm thì có tất cả bao nhiêu đoạn thẳng?
 
 ---
 
@@ -453,39 +452,39 @@ f) Lỗi nào dễ mắc ở đề này?
 **Lỗi thường gặp:** Nhân lần lượt từ trái sang phải nên số trung gian rất lớn. Phòng: Quét cả tích tìm cặp tròn trước khi đặt bút tính.
 
 ### Bài D.1
-**Đáp số:** a) 92 · b) 362 · c) 9 · d) 45 · e) không · f) 33 672
-**Hướng giải:** BẪY — Số không thuộc dãy. Muốn biết một số là số hạng thứ mấy: lấy số đó trừ số hạng đầu, chia cho khoảng cách rồi cộng 1. Nếu phép chia còn dư thì số đó **không thuộc** dãy.
-**Nhãn tư duy:** TD4, TD2. Điểm chốt: Phép chia **có dư** là bằng chứng số đó không thuộc dãy.
-**Lỗi thường gặp:** Chia được số nguyên rồi quên cộng 1, hoặc bỏ qua phần dư. Phòng: Luôn ghi rõ thương và số dư khi chia.
-**Gợi ý 3 tầng:** (1) Lấy số đó trừ số hạng đầu. — (2) Chia hiệu cho khoảng cách — có chia hết không? — (3) Chia hết thì cộng 1 để ra thứ tự; không chia hết thì số đó không thuộc dãy.
+**Đáp số:** a) 4 em · b) 6 em · c) 4 em · d) 2 em · e) 1 em · f) 6 em
+**Hướng giải:** BẪY — Cộng thẳng, quên trừ phần chung. Điền phần chung vào trước, rồi trừ ra hai phần riêng. Cộng ba phần ấy được số người tham gia ít nhất một hoạt động; lấy tổng trừ đi là ra số người ngoài cả hai vòng.
+**Nhãn tư duy:** TD2, TD4. Điểm chốt: Con số đề cho cho mỗi môn **đã bao gồm** những em học cả hai. Cộng thẳng hai con số ấy là đếm phần chung hai lần.
+**Lỗi thường gặp:** Lấy tổng trừ đi tổng hai con số đề cho mà không cộng lại phần chung. Phòng: Vẽ hình trước, điền phần giữa trước, rồi mới điền hai bên.
+**Gợi ý 3 tầng:** (1) Bao nhiêu em học cả hai môn? Điền số ấy vào phần chồng nhau. — (2) Vậy chỉ học riêng mỗi môn là bao nhiêu em? — (3) Cộng ba phần rồi lấy sĩ số lớp trừ đi.
 
 ### Bài D.2
-**Đáp số:** a) 6 225 · b) 5 050 · c) 625 · d) 630 · e) 275 · f) 420
-**Hướng giải:** BẪY — Quên cộng 1 khi đếm số số hạng. Đếm số số hạng: (số cuối − số đầu) : khoảng cách + 1. Tổng bằng (số đầu + số cuối) × số số hạng : 2. Cách hiểu: ghép số đầu với số cuối, số thứ hai với số áp chót… mỗi cặp có tổng bằng nhau.
-**Nhãn tư duy:** TD4, TD5. Điểm chốt: Phải đếm **số số hạng** trước; đây là chỗ sai nhiều nhất.
-**Lỗi thường gặp:** Lấy số cuối chia khoảng cách làm số số hạng, quên cộng 1. Phòng: Viết ra ba số đầu và ba số cuối để kiểm tra khoảng cách rồi mới đếm.
-**Gợi ý 3 tầng:** (1) Khoảng cách giữa hai số liên tiếp là bao nhiêu? — (2) Dãy có bao nhiêu số hạng? — (3) Tổng = (đầu + cuối) × số số hạng : 2.
+**Đáp số:** a) 277 · b) 126 · c) 321 · d) 421 · e) 144
+**Hướng giải:** Với một số **lẻ** các số tự nhiên liên tiếp, số ở giữa chính là trung bình cộng: số giữa = tổng : số lượng. Số bé nhất bằng số giữa trừ đi một nửa số lượng còn lại.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Với số lượng lẻ thì **số giữa = tổng : số lượng** — đó là chìa khoá.
+**Lỗi thường gặp:** Lấy tổng chia cho số lượng rồi nhận luôn kết quả là số bé nhất. Phòng: Vẽ dãy số ra, đánh dấu vị trí số giữa trước khi lùi về số đầu.
+**Gợi ý 3 tầng:** (1) Số lượng số hạng là số chẵn hay lẻ? — (2) Với số lượng lẻ, số ở giữa bằng tổng chia số lượng. — (3) Từ số giữa lùi về đầu dãy mấy đơn vị?
 
 ### Bài D.3
-**Đáp số:** a) 24 · b) 24 cm² · c) 1 cm² · d) 12 cm² · e) 6 cm² · f) 32 cm
+**Đáp số:** a) 32 · b) 32 cm² · c) 1 cm² · d) 16 cm² · e) 8 cm² · f) 40 cm
 **Hướng giải:** BẪY — Chia diện tích, không chia chu vi. Số mảnh phủ kín bằng diện tích hình lớn chia diện tích một mảnh — nhưng chỉ đúng khi các mảnh **xếp khít không thừa**. Kiểm tra lại bằng cách đếm số hàng và số cột.
 **Nhãn tư duy:** TD3, TD4. Điểm chốt: Phép chia diện tích chỉ đúng khi mảnh **xếp khít**.
 **Lỗi thường gặp:** Chia chu vi cho cạnh mảnh thay vì chia diện tích cho diện tích. Phòng: Kẻ lưới lên hình và đếm thử một hàng.
 **Gợi ý 3 tầng:** (1) Diện tích hình lớn bằng bao nhiêu? — (2) Diện tích một mảnh bằng bao nhiêu? — (3) Chia hai diện tích cho nhau rồi đếm lại theo hàng.
 
 ### Bài D.4
-**Đáp số:** a) 6 · b) 3 · c) 10 · d) 5 · e) 15
-**Hướng giải:** BẪY — Bỏ sót hình ghép. Kẻ n đoạn thẳng từ một đỉnh chia cạnh đối diện thành n + 1 phần, tạo ra n + 1 tam giác nhỏ. Mỗi tam giác trong hình ứng với việc chọn hai trong n + 2 điểm trên cạnh đối diện, nên số tam giác = (n + 2) × (n + 1) : 2. Tương tự, k điểm trên một đường thẳng cho k × (k − 1) : 2 đoạn thẳng.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Mọi bài đếm ở đây quy về **chọn hai điểm** trong một dãy điểm.
-**Lỗi thường gặp:** Chỉ đếm tam giác nhỏ, quên các tam giác ghép. Phòng: Đánh dấu tên các điểm rồi liệt kê từng cặp một cách có thứ tự.
-**Gợi ý 3 tầng:** (1) Cạnh đối diện bị chia thành mấy phần? — (2) Mỗi tam giác ứng với việc chọn hai điểm nào? — (3) Số cách chọn 2 trong k điểm là k × (k − 1) : 2.
-
-### Bài D.5
-**Đáp số:** a) x = 113 · b) x = 28 · c) x = 112 · d) x = 88
+**Đáp số:** a) x = 98 · b) x = 35 · c) x = 114 · d) x = 85
 **Hướng giải:** Gỡ dần từ ngoài vào trong: xác định phép tính ngoài cùng, coi phần còn lại là một số, tìm giá trị của nó, rồi lặp lại cho tới khi x đứng riêng.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Mỗi bước chỉ gỡ **một** phép tính, đừng gỡ hai phép cùng lúc.
 **Lỗi thường gặp:** Nhân phá ngoặc sai dấu, hoặc gỡ phép trong ngoặc trước. Phòng: Ghi rõ từng bước trên một dòng riêng, mỗi dòng chỉ khác dòng trên một phép.
 **Gợi ý 3 tầng:** (1) Phép tính ngoài cùng là phép nào? — (2) Coi cả cụm còn lại là một số và tìm giá trị của nó. — (3) Lặp lại cho tới khi chỉ còn x.
+
+### Bài D.5
+**Đáp số:** a) 15 · b) 5 · c) 15 · d) 6 · e) 21
+**Hướng giải:** BẪY — Bỏ sót hình ghép. Kẻ n đoạn thẳng từ một đỉnh chia cạnh đối diện thành n + 1 phần, tạo ra n + 1 tam giác nhỏ. Mỗi tam giác trong hình ứng với việc chọn hai trong n + 2 điểm trên cạnh đối diện, nên số tam giác = (n + 2) × (n + 1) : 2. Tương tự, k điểm trên một đường thẳng cho k × (k − 1) : 2 đoạn thẳng.
+**Nhãn tư duy:** TD4, TD3. Điểm chốt: Mọi bài đếm ở đây quy về **chọn hai điểm** trong một dãy điểm.
+**Lỗi thường gặp:** Chỉ đếm tam giác nhỏ, quên các tam giác ghép. Phòng: Đánh dấu tên các điểm rồi liệt kê từng cặp một cách có thứ tự.
+**Gợi ý 3 tầng:** (1) Cạnh đối diện bị chia thành mấy phần? — (2) Mỗi tam giác ứng với việc chọn hai điểm nào? — (3) Số cách chọn 2 trong k điểm là k × (k − 1) : 2.
 
 ### Bài E.1
 **Đáp số:** a) Tìm kích thước từ chu vi, diện tích · b) Cho chu vi hoặc diện tích và một kích thước · c) Công thức chu vi, diện tích; phép tính ngược · d) Đi ngược công thức, qua bước nửa chu vi · e) Nửa chu vi = chu vi : 2 — luôn tính bước này đầu tiên. · f) Trừ thẳng chiều dài khỏi chu vi mà chưa chia đôi.

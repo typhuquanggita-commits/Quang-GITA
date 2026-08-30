@@ -234,56 +234,54 @@ e) Mua 9 quyển vở hết 180 nghìn đồng. Với 320 nghìn đồng thì mu
 
 ## PHẦN D — DẠNG 5 – DẠNG 6 VÀ DẠNG PHỐI HỢP · Mức M3 — Vận dụng · 20 phút · 20 điểm
 
-### Bài 1. (4 điểm) Chia theo tỉ lệ ba phần và bài toán trộn
+### Bài 1. (4 điểm) Tính thời điểm đến, thời gian đi
 
-Vẽ sơ đồ ba đoạn thẳng cho bài chia tỉ lệ.
+Ghi kết quả theo giờ và phút.
 
-a) Trộn 10 kg gạo giá 20 000 đồng một ki-lô-gam với 10 kg gạo giá 25 000 đồng một ki-lô-gam. Hỏi tổng số tiền là bao nhiêu?
-b) Ba tổ trồng được 231 cây. Số cây tổ Một, tổ Hai, tổ Ba tỉ lệ với 3, 1, 3. Mỗi tổ trồng bao nhiêu cây?
-c) Trộn 9 kg gạo giá 12 000 đồng một ki-lô-gam với 6 kg gạo giá 25 000 đồng một ki-lô-gam. Hỏi tổng số tiền là bao nhiêu?
-d) Ba tổ trồng được 507 cây. Số cây tổ Một, tổ Hai, tổ Ba tỉ lệ với 3, 5, 5. Mỗi tổ trồng bao nhiêu cây?
+a) Một chuyến tàu khởi hành lúc 15 giờ 45 phút và đi hết 4 giờ 52 phút. Tàu đến nơi lúc mấy giờ?
+b) Một chuyến tàu khởi hành lúc 14 giờ 10 phút và đi hết 5 giờ 15 phút. Tàu đến nơi lúc mấy giờ?
+c) Một chuyến tàu khởi hành lúc 13 giờ 45 phút và đi hết 1 giờ 22 phút. Tàu đến nơi lúc mấy giờ?
+d) Một chuyến tàu khởi hành lúc 9 giờ 10 phút và đi hết 2 giờ 52 phút. Tàu đến nơi lúc mấy giờ?
+e) Một chuyến tàu khởi hành lúc 12 giờ 30 phút và đi hết 5 giờ 47 phút. Tàu đến nơi lúc mấy giờ?
 
 ### Bài 2. (4 điểm) Đơn vị đo thể tích và dung tích
 
 Điền số thích hợp.
 
-a) 73 m³ = … dm³
-b) 13 000 cm³ = … dm³
-c) 75 lít = … ml
-d) 63 dm³ = … lít
-e) 81 dm³ = … lít
-f) 62 m³ = … dm³
+a) 68 000 cm³ = … dm³
+b) 67 dm³ = … lít
+c) 72 m³ = … dm³
+d) 38 lít = … ml
+e) 7 m³ = … dm³
 
-### Bài 3. (4 điểm) Bài toán thực tế về khối lượng
+### Bài 3. (4 điểm) Tìm số bằng cách thử và loại
+
+Với mỗi câu, viết ra danh sách đã thử rồi mới ghi đáp số. Đáp số có thể gồm nhiều số.
+
+a) Tìm mọi số có hai chữ số vừa chia hết cho 4, vừa có tổng hai chữ số bằng 9.
+b) Tìm mọi số có hai chữ số vừa chia hết cho 4, vừa có tổng hai chữ số bằng 7.
+c) Tìm mọi số có hai chữ số vừa chia hết cho 6, vừa có tổng hai chữ số bằng 15.
+d) Tìm mọi số có hai chữ số vừa chia hết cho 6, vừa có tổng hai chữ số bằng 6.
+
+### Bài 4. (4 điểm) Bài toán thực tế về khối lượng
 
 Chú ý đơn vị mà đề hỏi.
 
-a) Một xe chở 30 bao xi măng, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ xi măng?
-b) Một xe chở 6 bao phân bón, mỗi bao 40 kg. Hỏi xe chở bao nhiêu tạ phân bón?
-c) Một xe chở 21 bao xi măng, mỗi bao 40 kg. Hỏi xe chở bao nhiêu tạ xi măng?
-d) Một xe chở 26 bao xi măng, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ xi măng?
-e) Một xe chở 25 bao phân bón, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ phân bón?
-f) Một xe chở 16 bao thóc, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ thóc?
+a) Một xe chở 21 bao xi măng, mỗi bao 40 kg. Hỏi xe chở bao nhiêu tạ xi măng?
+b) Một xe chở 26 bao xi măng, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ xi măng?
+c) Một xe chở 25 bao phân bón, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ phân bón?
+d) Một xe chở 16 bao thóc, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ thóc?
+e) Một xe chở 19 bao muối, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ muối?
 
-### Bài 4. (4 điểm) Tính thời điểm đến, thời gian đi
+### Bài 5. (4 điểm) Hai nhóm có phần chung — đếm bằng hai vòng tròn
 
-Ghi kết quả theo giờ và phút.
+Vẽ hai vòng tròn và điền số vào ba phần trước khi tính.
 
-a) Một chuyến tàu khởi hành lúc 6 giờ 45 phút và đi hết 3 giờ 11 phút. Tàu đến nơi lúc mấy giờ?
-b) Một chuyến tàu khởi hành lúc 13 giờ 0 phút và đi hết 2 giờ 27 phút. Tàu đến nơi lúc mấy giờ?
-c) Một chuyến tàu khởi hành lúc 14 giờ 45 phút và đi hết 1 giờ 52 phút. Tàu đến nơi lúc mấy giờ?
-d) Một chuyến tàu khởi hành lúc 5 giờ 15 phút và đi hết 5 giờ 29 phút. Tàu đến nơi lúc mấy giờ?
-
-### Bài 5. (4 điểm) Đếm số lần xuất hiện của một chữ số
-
-Đếm số lần xuất hiện, tính cả khi chữ số đó xuất hiện nhiều lần trong một số.
-
-a) Từ 1 đến 300, chữ số 7 xuất hiện bao nhiêu lần?
-b) Từ 1 đến 500, chữ số 5 xuất hiện bao nhiêu lần?
-c) Từ 1 đến 500, chữ số 5 xuất hiện bao nhiêu lần?
-d) Từ 1 đến 300, chữ số 0 xuất hiện bao nhiêu lần?
-e) Từ 1 đến 200, chữ số 9 xuất hiện bao nhiêu lần?
-f) Từ 1 đến 300, chữ số 7 xuất hiện bao nhiêu lần?
+a) Lớp 4A có 28 học sinh. Có 12 em học hát, 19 em học bóng rổ, trong đó 7 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
+b) Lớp 5A có 33 học sinh. Có 25 em học vẽ, 10 em học hát, trong đó 5 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
+c) Lớp 4A có 42 học sinh. Có 19 em học tiếng Anh, 24 em học bóng rổ, trong đó 5 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
+d) Lớp 5A có 38 học sinh. Có 17 em học hát, 29 em học tiếng Anh, trong đó 9 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
+e) Lớp 4A có 33 học sinh. Có 18 em học vẽ, 24 em học tiếng Anh, trong đó 9 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
 
 ---
 
@@ -441,39 +439,39 @@ f) Lỗi nào dễ mắc ở đề này?
 **Lỗi thường gặp:** Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch. Phòng: Tự hỏi: mua nhiều hơn thì trả nhiều hơn hay ít hơn?
 
 ### Bài D.1
-**Đáp số:** a) 450 000 đồng · b) 99 · 33 · 99 cây · c) 258 000 đồng · d) 117 · 195 · 195 cây
-**Hướng giải:** BẪY — Chia cho tổng số phần, không phải cho số đại lượng. Chia một tổng theo tỉ lệ ba số: cộng ba số phần lại, chia tổng cho tổng số phần được giá trị một phần, rồi nhân ra từng đại lượng. Bài trộn thì tính riêng từng loại rồi cộng.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Chia cho **tổng số phần**, không chia cho số đại lượng.
-**Lỗi thường gặp:** Chia tổng cho 3 vì thấy có ba tổ. Phòng: Đếm số phần trên sơ đồ trước khi chia.
-**Gợi ý 3 tầng:** (1) Vẽ ba đoạn thẳng theo đúng số phần. — (2) Tổng cộng có bao nhiêu phần bằng nhau? — (3) Một phần bằng bao nhiêu?
+**Đáp số:** a) 20 giờ 37 phút · b) 19 giờ 25 phút · c) 15 giờ 7 phút · d) 12 giờ 2 phút · e) 18 giờ 17 phút
+**Hướng giải:** BẪY — Phần phút vượt quá 60. Đổi cả giờ khởi hành lẫn thời gian đi về **phút**, cộng lại, rồi đổi kết quả ngược lại thành giờ và phút. Cách này tránh được lỗi nhớ khi phần phút vượt 60.
+**Nhãn tư duy:** TD3, TD2. Điểm chốt: Đổi hết về phút rồi mới cộng — an toàn hơn cộng trực tiếp.
+**Lỗi thường gặp:** Cộng phần phút thành hơn 60 mà quên đổi thành giờ. Phòng: Kiểm tra phần phút của đáp số phải bé hơn 60.
+**Gợi ý 3 tầng:** (1) Đổi giờ khởi hành ra phút tính từ 0 giờ. — (2) Cộng thêm thời gian đi (tính bằng phút). — (3) Đổi tổng số phút trở lại thành giờ và phút.
 
 ### Bài D.2
-**Đáp số:** a) 73 000 · b) 13 · c) 75 000 · d) 63 · e) 81 · f) 62 000
+**Đáp số:** a) 68 · b) 67 · c) 72 000 · d) 38 000 · e) 7 000
 **Hướng giải:** BẪY — 1 000 lần mỗi bậc. Hai đơn vị thể tích liền kề hơn kém nhau **1 000 lần**. 1 dm³ = 1 lít; 1 lít = 1 000 ml; 1 m³ = 1 000 dm³ = 1 000 lít.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Thể tích nhảy **1 000 lần** mỗi bậc (độ dài 10, diện tích 100, thể tích 1 000).
 **Lỗi thường gặp:** Đổi như đơn vị diện tích, chỉ nhân 100. Phòng: Nhớ dãy 10 – 100 – 1 000 ứng với độ dài – diện tích – thể tích.
 **Gợi ý 3 tầng:** (1) Đơn vị thể tích liền kề hơn kém nhau mấy lần? — (2) Đếm số bậc giữa hai đơn vị. — (3) 1 dm³ bằng đúng 1 lít.
 
 ### Bài D.3
-**Đáp số:** a) 18 tạ · b) 2 tạ 40 kg · c) 8 tạ 40 kg · d) 15 tạ 60 kg · e) 15 tạ · f) 4 tạ
+**Đáp số:** a) 36, 72 · b) 16, 52 · c) 78, 96 · d) 24, 42, 60
+**Hướng giải:** BẪY — Dừng ở đáp số đầu tiên. Chọn điều kiện cho ít khả năng nhất để liệt kê trước, rồi mới đem điều kiện còn lại ra thử. Làm ngược thứ tự ấy thì phải thử gấp nhiều lần.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Phải xét **hết** danh sách. Bài thử chọn thường có hơn một đáp số.
+**Lỗi thường gặp:** Tìm được một số thoả rồi dừng, bỏ sót các đáp số còn lại. Phòng: Viết danh sách ra giấy và gạch bỏ từng số, đừng thử nhẩm trong đầu.
+**Gợi ý 3 tầng:** (1) Trong hai điều kiện, điều kiện nào cho ít số hơn? — (2) Liệt kê hết các số thoả điều kiện ấy. — (3) Thử từng số với điều kiện còn lại, đừng dừng sớm.
+
+### Bài D.4
+**Đáp số:** a) 8 tạ 40 kg · b) 15 tạ 60 kg · c) 15 tạ · d) 4 tạ · e) 4 tạ 75 kg
 **Hướng giải:** BẪY — Đơn vị của câu trả lời. Tính tổng khối lượng theo ki-lô-gam trước, sau đó mới đổi sang đơn vị mà đề hỏi. Đừng đổi đơn vị ngay từ đầu vì dễ nhầm.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Câu hỏi đòi đơn vị nào thì bước **cuối cùng** mới đổi sang đơn vị đó.
 **Lỗi thường gặp:** Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. Phòng: Khoanh tròn đơn vị trong câu hỏi trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Tính tổng khối lượng theo ki-lô-gam. — (2) Đề hỏi kết quả theo đơn vị nào? — (3) Đổi kết quả sang đơn vị đó.
 
-### Bài D.4
-**Đáp số:** a) 9 giờ 56 phút · b) 15 giờ 27 phút · c) 16 giờ 37 phút · d) 10 giờ 44 phút
-**Hướng giải:** BẪY — Phần phút vượt quá 60. Đổi cả giờ khởi hành lẫn thời gian đi về **phút**, cộng lại, rồi đổi kết quả ngược lại thành giờ và phút. Cách này tránh được lỗi nhớ khi phần phút vượt 60.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Đổi hết về phút rồi mới cộng — an toàn hơn cộng trực tiếp.
-**Lỗi thường gặp:** Cộng phần phút thành hơn 60 mà quên đổi thành giờ. Phòng: Kiểm tra phần phút của đáp số phải bé hơn 60.
-**Gợi ý 3 tầng:** (1) Đổi giờ khởi hành ra phút tính từ 0 giờ. — (2) Cộng thêm thời gian đi (tính bằng phút). — (3) Đổi tổng số phút trở lại thành giờ và phút.
-
 ### Bài D.5
-**Đáp số:** a) 60 · b) 101 · c) 101 · d) 51 · e) 40 · f) 60
-**Hướng giải:** Đếm theo từng hàng: đếm số lần chữ số đó đứng ở hàng đơn vị, rồi hàng chục, rồi hàng trăm. Ở mỗi hàng, các số thoả mãn lập thành dãy cách đều, dùng công thức đếm số hạng.
-**Nhãn tư duy:** TD4, TD6. Điểm chốt: Một số có thể chứa chữ số đó **nhiều lần**; đếm theo hàng thì không sót.
-**Lỗi thường gặp:** Đếm số lượng **số** chứa chữ số đó thay vì số **lần** xuất hiện. Phòng: Kẻ bảng: hàng đơn vị – hàng chục – hàng trăm, đếm riêng rồi cộng.
-**Gợi ý 3 tầng:** (1) Đếm riêng theo từng hàng. — (2) Ở hàng đơn vị, các số đó cách nhau bao nhiêu đơn vị? — (3) Cộng kết quả của cả ba hàng.
+**Đáp số:** a) 4 em · b) 3 em · c) 4 em · d) 1 em · e) 0 em
+**Hướng giải:** Điền phần chung vào trước, rồi trừ ra hai phần riêng. Cộng ba phần ấy được số người tham gia ít nhất một hoạt động; lấy tổng trừ đi là ra số người ngoài cả hai vòng.
+**Nhãn tư duy:** TD2, TD4. Điểm chốt: Con số đề cho cho mỗi môn **đã bao gồm** những em học cả hai. Cộng thẳng hai con số ấy là đếm phần chung hai lần.
+**Lỗi thường gặp:** Lấy tổng trừ đi tổng hai con số đề cho mà không cộng lại phần chung. Phòng: Vẽ hình trước, điền phần giữa trước, rồi mới điền hai bên.
+**Gợi ý 3 tầng:** (1) Bao nhiêu em học cả hai môn? Điền số ấy vào phần chồng nhau. — (2) Vậy chỉ học riêng mỗi môn là bao nhiêu em? — (3) Cộng ba phần rồi lấy sĩ số lớp trừ đi.
 
 ### Bài E.1
 **Đáp số:** a) Bài toán đại lượng có lời văn · b) Đơn vị trong câu hỏi khác đơn vị trong dữ kiện · c) Nhân, chia số tự nhiên; đổi đơn vị khối lượng · d) Tính theo đơn vị dữ kiện rồi đổi ở bước cuối · e) 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ. · f) Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ.

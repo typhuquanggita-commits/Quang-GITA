@@ -58,7 +58,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài D.2** — a) Đề nói “xoá chữ số”, “viết thêm chữ số”, “đổi chỗ” · b) Viết cả hai số theo cấu tạo rồi lấy hiệu · c) Nhầm “viết thêm bên trái” thành “viết thêm bên phải”. · d) Cấu tạo thập phân, hiệu hai số · e) Đổi chỗ hàng trăm với hàng đơn vị: hiệu = 99 × (hiệu hai chữ số).
 - **Bài D.3** — a) Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” · b) Đánh số hàng từ phải sang trái rồi tra bảng hàng · c) Đếm hàng từ trái sang phải nên lệch hàng. · d) Cấu tạo thập phân của số tự nhiên · e) Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị.
 - **Bài D.4** — a) Đề cho một bộ chữ số và yêu cầu lập số · b) Cố định hàng cao nhất rồi hoán vị các hàng còn lại · c) Viết lộn xộn nên vừa sót vừa trùng; hoặc nhận cả số bắt đầu bằng 0. · d) Quy tắc nhân trong phép đếm, điều kiện chữ số đứng đầu · e) Ba chữ số khác 0 lập được 3 × 2 × 1 = 6 số; nếu có chữ số 0 thì chỉ còn 2 × 2 × 1 = 4 số.
-- **Bài D.5** — a) Đề hỏi chia hết hay số dư của một tổng dài · b) Rút gọn từng số hạng về số dư rồi cộng · c) Cộng hết cả dãy rồi mới chia, mất thời gian và dễ sai. · d) Tính chất số dư của tổng · e) Với d = 9, số dư của một số bằng số dư của tổng các chữ số của nó.
+- **Bài D.5** — a) Bài toán đánh số trang, đánh số nhà, đánh số vé · b) Chia nhóm 1 chữ số – 2 chữ số – 3 chữ số rồi nhân và cộng · c) Lấy số trang nhân với số chữ số của trang cuối. · d) Đếm số hạng dãy cách đều, cấu tạo số · e) Sách 100 trang luôn dùng 192 chữ số; nhớ mốc này để kiểm tra nhanh.
 
 **Phần E**
 
@@ -458,25 +458,25 @@ Kết quả: **Đề cho một bộ chữ số và yêu cầu lập số**.
 
 *Điểm chốt:* Chữ số **0 không được đứng ở hàng trăm**, nên nếu bộ có chữ số 0 thì số lượng số lập được ít hơn.
 
-### Bài D.5 — Nhánh 4 — Xét số dư của tổng
+### Bài D.5 — Nhánh 4 — Đếm chữ số theo nhóm độ dài
 
 **Các bước giải**
 
 Xét ý a: Nhánh con 1 — dấu hiệu nhận biết?
 
-Đọc vị: đây là dạng **Xét số dư của tổng**; dấu hiệu là Đề hỏi chia hết hay số dư của một tổng dài.
+Đọc vị: đây là dạng **Đếm chữ số theo nhóm độ dài**; dấu hiệu là Bài toán đánh số trang, đánh số nhà, đánh số vé.
 
-Kiến thức phải dùng: Tính chất số dư của tổng.
+Kiến thức phải dùng: Đếm số hạng dãy cách đều, cấu tạo số.
 
-Cách làm: Rút gọn từng số hạng về số dư rồi cộng.
+Cách làm: Chia nhóm 1 chữ số – 2 chữ số – 3 chữ số rồi nhân và cộng.
 
-Lối tắt: Với d = 9, số dư của một số bằng số dư của tổng các chữ số của nó.
+Lối tắt: Sách 100 trang luôn dùng 192 chữ số; nhớ mốc này để kiểm tra nhanh.
 
-Kết quả: **Đề hỏi chia hết hay số dư của một tổng dài**.
+Kết quả: **Bài toán đánh số trang, đánh số nhà, đánh số vé**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
 
-*Điểm chốt:* Làm việc với **số dư** thay vì với số — đây là kỹ thuật rút gọn mạnh nhất.
+*Điểm chốt:* Nhóm cuối cùng thường **không đầy đủ** — phải đếm đúng số trang còn lại.
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
@@ -609,7 +609,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | D.2 | Biến đổi số bằng cách thêm, bớt, đổi chỗ chữ số | Cấu tạo thập phân, hiệu hai số | Đề nói “xoá chữ số”, “viết thêm chữ số”, “đổi chỗ” | Viết cả hai số theo cấu tạo rồi lấy hiệu | Đổi chỗ hàng trăm với hàng đơn vị: hiệu = 99 × (hiệu hai chữ số). | Đề nói “xoá chữ số”, “viết thêm chữ số”, “đổi chỗ” · Viết cả hai số theo cấu tạo rồi lấy hiệu · Nhầm “viết thêm bên trái” thành “viết thêm bên phải”. · Cấu tạo thập phân, hiệu hai số… |
 | D.3 | Xác định chữ số và giá trị chữ số theo hàng | Cấu tạo thập phân của số tự nhiên | Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” | Đánh số hàng từ phải sang trái rồi tra bảng hàng | Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị. | Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” · Đánh số hàng từ phải sang trái rồi tra bảng hàng · Đếm hàng từ trái sang phải nên lệch hàng. · Cấu tạo thập phân của số tự nhiên… |
 | D.4 | Lập số và đếm số lập được từ một bộ chữ số | Quy tắc nhân trong phép đếm, điều kiện chữ số đứng đầu | Đề cho một bộ chữ số và yêu cầu lập số | Cố định hàng cao nhất rồi hoán vị các hàng còn lại | Ba chữ số khác 0 lập được 3 × 2 × 1 = 6 số; nếu có chữ số 0 thì chỉ còn 2 × 2 × 1 = 4 số. | Đề cho một bộ chữ số và yêu cầu lập số · Cố định hàng cao nhất rồi hoán vị các hàng còn lại · Viết lộn xộn nên vừa sót vừa trùng; hoặc nhận cả số bắt đầu bằng 0. · Quy tắc nhân trong phép đếm, điều kiện chữ số đứng đầu… |
-| D.5 | Xét số dư của tổng | Tính chất số dư của tổng | Đề hỏi chia hết hay số dư của một tổng dài | Rút gọn từng số hạng về số dư rồi cộng | Với d = 9, số dư của một số bằng số dư của tổng các chữ số của nó. | Đề hỏi chia hết hay số dư của một tổng dài · Rút gọn từng số hạng về số dư rồi cộng · Cộng hết cả dãy rồi mới chia, mất thời gian và dễ sai. · Tính chất số dư của tổng… |
+| D.5 | Đếm chữ số theo nhóm độ dài | Đếm số hạng dãy cách đều, cấu tạo số | Bài toán đánh số trang, đánh số nhà, đánh số vé | Chia nhóm 1 chữ số – 2 chữ số – 3 chữ số rồi nhân và cộng | Sách 100 trang luôn dùng 192 chữ số; nhớ mốc này để kiểm tra nhanh. | Bài toán đánh số trang, đánh số nhà, đánh số vé · Chia nhóm 1 chữ số – 2 chữ số – 3 chữ số rồi nhân và cộng · Lấy số trang nhân với số chữ số của trang cuối. · Đếm số hạng dãy cách đều, cấu tạo số… |
 | E.1 | Kỹ năng thuyết trình theo nhóm | Hệ thống hoá và diễn đạt | Yêu cầu giảng lại chương theo nhóm | Chia kịch bản theo phút, phân công rõ người | Người giảng nhớ lâu hơn người nghe khoảng ba lần. | giới thiệu chương “Số tự nhiên, chia hết và ôn tập số học” và mục tiêu · trình bày sơ đồ tư duy chương · giảng một dạng bài kèm ví dụ mẫu · nêu lỗi hay mắc và cách phòng… |
 | E.2 | Dãy số tự nhiên liên tiếp có tổng cho trước | Trung bình cộng, dãy cách đều | Cụm “… số tự nhiên liên tiếp có tổng bằng …” | Tìm số giữa bằng phép chia rồi suy ra hai đầu dãy | Tổng của n số liên tiếp (n lẻ) luôn chia hết cho n. | “Hôm nay nhóm mình nói về Dãy số tự nhiên liên tiếp có tổng cho trước.” · Cụm “… số tự nhiên liên tiếp có tổng bằng …” · Trung bình cộng, dãy cách đều · Tổng của 5 số tự nhiên liên tiếp bằng 100. Số bé nhất là số nào? → 18… |
 | E.3 | Tìm chữ số tận cùng của một phép tính | Tính chất chữ số tận cùng | Câu hỏi chỉ hỏi “chữ số tận cùng”, không hỏi kết quả | Rút gọn về chữ số tận cùng rồi tính | Với phép trừ, nếu chữ số cuối của số bị trừ nhỏ hơn thì mượn 10 rồi trừ. | “Hôm nay nhóm mình nói về Tìm chữ số tận cùng của một phép tính.” · Câu hỏi chỉ hỏi “chữ số tận cùng”, không hỏi kết quả · Tính chất chữ số tận cùng · Tích 137 × 46 có chữ số tận cùng là chữ số nào? → 2… |
@@ -641,7 +641,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | D.2 | TD3, TD2 | Thêm chữ số vào **bên trái** là cộng thêm; thêm vào **bên phải** là nhân 10 rồi cộng. |
 | D.3 | TD1 | Phân biệt **chữ số** (một kí hiệu) với **giá trị** của chữ số (chữ số nhân giá trị hàng). |
 | D.4 | TD4, TD6 | Chữ số **0 không được đứng ở hàng trăm**, nên nếu bộ có chữ số 0 thì số lượng số lập được ít hơn. |
-| D.5 | TD2, TD6 | Làm việc với **số dư** thay vì với số — đây là kỹ thuật rút gọn mạnh nhất. |
+| D.5 | TD4, TD6 | Nhóm cuối cùng thường **không đầy đủ** — phải đếm đúng số trang còn lại. |
 | E.1 | TD3, TD6 | Giảng được cho bạn hiểu mới là **đã hiểu**. |
 | E.2 | TD3, TD4 | Với số lượng lẻ thì **số giữa = tổng : số lượng** — đó là chìa khoá. |
 | E.3 | TD5, TD2 | Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu của số. |
@@ -675,7 +675,7 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 | D.2 | Nhầm “viết thêm bên trái” thành “viết thêm bên phải”. | Viết cả số cũ và số mới ra rồi mới so sánh. |
 | D.3 | Đếm hàng từ trái sang phải nên lệch hàng. | Luôn viết số ra nháp rồi đánh dấu hàng đơn vị trước, đi ngược về trái. |
 | D.4 | Viết lộn xộn nên vừa sót vừa trùng; hoặc nhận cả số bắt đầu bằng 0. | Liệt kê theo nhóm: cố định hàng trăm rồi mới hoán vị hai chữ số còn lại. |
-| D.5 | Cộng hết cả dãy rồi mới chia, mất thời gian và dễ sai. | Ghi số dư của từng số ngay dưới số đó rồi cộng dòng số dư. |
+| D.5 | Lấy số trang nhân với số chữ số của trang cuối. | Kẻ bảng ba cột: khoảng trang – số trang – số chữ số, rồi cộng cột cuối. |
 | E.1 | Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình. | Cấm cầm phiếu khi thuyết trình; chỉ được cầm sơ đồ tư duy tự vẽ. |
 | E.2 | Lấy tổng chia cho số lượng rồi nhận luôn kết quả là số bé nhất. | Vẽ dãy số ra, đánh dấu vị trí số giữa trước khi lùi về số đầu. |
 | E.3 | Tính trọn cả phép tính, vừa lâu vừa dễ sai. | Che phần đầu của hai số, chỉ để lộ chữ số cuối cùng. |
@@ -741,7 +741,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | D.2 | Viết thêm chữ số 2 vào bên trái số 345 thì số mới hơn số cũ bao nhiêu? | 2 000 |
 | D.3 | Chữ số hàng chục của số 3 973 585 có giá trị bao nhiêu? | 80 |
 | D.4 | Từ ba chữ số 1, 2, 3 lập được bao nhiêu số có ba chữ số khác nhau? | 6 |
-| D.5 | Tổng 123 + 234 + 345 chia cho 9 dư mấy? | dư 0 |
+| D.5 | Quyển sách 150 trang dùng hết bao nhiêu chữ số? | 342 |
 | E.1 | Vì sao phải giảng lại cho bạn? | vì giảng được mới là hiểu thật |
 | E.2 | Tổng của 5 số tự nhiên liên tiếp bằng 100. Số bé nhất là số nào? | 18 |
 | E.3 | Tích 137 × 46 có chữ số tận cùng là chữ số nào? | 2 |

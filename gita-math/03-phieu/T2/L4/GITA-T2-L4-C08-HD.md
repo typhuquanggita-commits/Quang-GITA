@@ -58,11 +58,12 @@ Học thuộc theo cặp **dạng bài – công thức**, không học rời.
 | 3 | Đọc và lập biểu đồ tranh | Biểu đồ tranh, phép nhân và chia |
 | 4 | Tìm phân số của một số | Nhân số tự nhiên với phân số |
 | 5 | So sánh phân số bằng kĩ thuật đặc biệt | Phần bù tới 1, phân số trung gian |
-| 6 | Biểu thức phân số nhiều phép tính | Thứ tự thực hiện phép tính, tính chất phân phối |
+| 6 | Biểu đồ Ven | Phép cộng, phép trừ; đếm không trùng lặp |
 | 7 | Rút gọn phân số | Tính chất cơ bản của phân số |
 | 8 | Bốn phép tính với phân số | Quy đồng, nhân chia phân số |
 | 9 | Rút gọn, so sánh, sắp thứ tự phân số | Tính chất cơ bản của phân số; so sánh phân số |
-| 10 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu |
+| 10 | Biểu thức phân số nhiều phép tính | Thứ tự thực hiện phép tính, tính chất phân phối |
+| 11 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu |
 
 ---
 
@@ -91,10 +92,11 @@ Trước khi tra bảng, đi qua cây quyết định đọc vị của nhóm ch
 | Đọc và lập biểu đồ tranh | Có hình vẽ lặp lại kèm một dòng chú thích | Đọc chú thích → nhân số hình với đơn vị | Nếu mọi bạn đều dùng cùng một loại hình thì so số hình là đủ để biết ai nhiều nhất. |
 | Tìm phân số của một số | Cụm “bằng … của …” | Chia theo mẫu số rồi nhân theo tử số | Chia trước, nhân sau — số nhỏ hơn nên tính nhẩm được. |
 | So sánh phân số bằng kĩ thuật đặc biệt | Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 | So phần bù; hoặc chèn phân số trung gian | Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. |
-| Biểu thức phân số nhiều phép tính | Biểu thức gồm nhiều phân số và nhiều phép tính | Quan sát rút gọn trước, sau đó theo thứ tự thực hiện | Rút gọn chéo tử với mẫu trước khi nhân. |
+| Biểu đồ Ven | Đề cho số người của từng nhóm **và** số người thuộc cả hai nhóm | Vẽ hai vòng tròn, điền phần chung trước rồi mới trừ ra phần riêng | Số người ít nhất một nhóm = nhóm A + nhóm B − phần chung. |
 | Rút gọn phân số | Tử số và mẫu số có ước chung lớn hơn 1 | Chia cả tử và mẫu cho ước chung | Tìm ngay ước chung lớn nhất để rút gọn một lần là xong. |
 | Bốn phép tính với phân số | Biểu thức chỉ gồm phân số | Chọn quy tắc theo phép tính, rút gọn cuối cùng | Rút gọn chéo trước khi nhân để số nhỏ, tính nhanh và ít sai. |
 | Rút gọn, so sánh, sắp thứ tự phân số | Một nhóm phân số cần sắp thứ tự | Rút gọn → so cùng mẫu hoặc quy đồng | So với 1 và với một nửa trước — nhiều phân số phân loại được ngay. |
+| Biểu thức phân số nhiều phép tính | Biểu thức gồm nhiều phân số và nhiều phép tính | Quan sát rút gọn trước, sau đó theo thứ tự thực hiện | Rút gọn chéo tử với mẫu trước khi nhân. |
 | So sánh phân số | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. |
 
 ---
@@ -124,16 +126,16 @@ Trả lời được ngay trong 10 giây thì đánh ✔. Phải nghĩ lâu thì
 - [ ] **8.** Em nhớ công thức: Nhân số tự nhiên với phân số?
 - [ ] **9.** Em nêu được dấu hiệu nhận biết của dạng “So sánh phân số bằng kĩ thuật đặc biệt” chứ?
 - [ ] **10.** Em nhớ công thức: Phần bù tới 1, phân số trung gian?
-- [ ] **11.** Em nêu được dấu hiệu nhận biết của dạng “Biểu thức phân số nhiều phép tính” chứ?
-- [ ] **12.** Em nhớ công thức: Thứ tự thực hiện phép tính, tính chất phân phối?
+- [ ] **11.** Em nêu được dấu hiệu nhận biết của dạng “Biểu đồ Ven” chứ?
+- [ ] **12.** Em nhớ công thức: Phép cộng, phép trừ; đếm không trùng lặp?
 - [ ] **13.** Em nêu được dấu hiệu nhận biết của dạng “Rút gọn phân số” chứ?
 - [ ] **14.** Em nhớ công thức: Tính chất cơ bản của phân số?
 - [ ] **15.** Em nêu được dấu hiệu nhận biết của dạng “Bốn phép tính với phân số” chứ?
 - [ ] **16.** Em nhớ công thức: Quy đồng, nhân chia phân số?
 - [ ] **17.** Em nêu được dấu hiệu nhận biết của dạng “Rút gọn, so sánh, sắp thứ tự phân số” chứ?
 - [ ] **18.** Em nhớ công thức: Tính chất cơ bản của phân số; so sánh phân số?
-- [ ] **19.** Em nêu được dấu hiệu nhận biết của dạng “So sánh phân số” chứ?
-- [ ] **20.** Em nhớ công thức: Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu?
+- [ ] **19.** Em nêu được dấu hiệu nhận biết của dạng “Biểu thức phân số nhiều phép tính” chứ?
+- [ ] **20.** Em nhớ công thức: Thứ tự thực hiện phép tính, tính chất phân phối?
 
 **Chuẩn đạt:** ✔ từ 18/20 câu trở lên.
 
@@ -149,11 +151,12 @@ Trả lời được ngay trong 10 giây thì đánh ✔. Phải nghĩ lâu thì
 | 2 | So phần bù rồi kết luận cùng chiều với phần bù. | Nghĩ tới chiếc bánh: thiếu ít hơn thì phần đang có nhiều hơn. |
 | 3 | Đếm số hình rồi trả lời luôn, quên nhân với số đơn vị mỗi hình. | Khoanh tròn dòng chú thích trước khi trả lời bất kỳ câu nào. |
 | 4 | Nhân phân số với đại lượng khác, không phải đại lượng đề chỉ định. | Gạch chân cụm “bằng … số cây của …” để xác định số bị nhân. |
-| 5 | Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. | Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút. |
+| 5 | Lấy tổng trừ đi tổng hai con số đề cho mà không cộng lại phần chung. | Vẽ hình trước, điền phần giữa trước, rồi mới điền hai bên. |
 | 6 | Chỉ chia tử số hoặc chỉ chia mẫu số. | Viết phép chia cho cả hai dòng, kiểm tra lại bằng cách nhân ngược. |
 | 7 | Quy đồng cả khi nhân, hoặc cộng thẳng tử với tử và mẫu với mẫu. | Trước khi tính, khoanh dấu phép tính và tự nhắc “có phải quy đồng không”. |
 | 8 | Rút gọn xong quên rằng thứ tự vẫn giữ nguyên, đi quy đồng lại từ đầu. | Ghi cả phân số gốc và phân số tối giản cạnh nhau để đối chiếu. |
-| 9 | Thấy mẫu số lớn thì kết luận phân số lớn. | Nghĩ tới chiếc bánh: chia càng nhiều phần thì mỗi phần càng bé. |
+| 9 | Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. | Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút. |
+| 10 | Thấy mẫu số lớn thì kết luận phân số lớn. | Nghĩ tới chiếc bánh: chia càng nhiều phần thì mỗi phần càng bé. |
 
 ---
 

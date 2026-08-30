@@ -30,7 +30,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần I**
 
-- **Bài I.1** — a) 120 km · b) 30 km/giờ · c) 5 giờ · d) 5 giờ · e) 16 km · f) 20 km/giờ · g) 6 giờ
+- **Bài I.1** — a) 6 giờ · b) 60 km/giờ · c) 90 km · d) 2 giờ
 - **Bài I.2** — a) 114 · b) 20 · c) 45 · d) 37 · e) 68 · f) 39
 - **Bài I.3** — a) 91 · b) 110 · c) 81 · d) 12 · e) 33 · f) 67
 - **Bài I.4** — a) số lớn 632, số bé 418 · b) số lớn 443, số bé 259 · c) số lớn 287, số bé 159 · d) số lớn 736, số bé 662 · e) số lớn 93, số bé 63
@@ -42,31 +42,31 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài II.2** — a) 15 ngày · b) 6 ngày · c) 6 ngày · d) 30 ngày · e) 6 ngày
 - **Bài II.3** — a) tổ Một: 120 cây, nhóm Sao Mai: 72 cây · b) 5B: 290 quyển, 3A: 220 quyển · c) kho A: 114 kg, xưởng: 106 kg · d) 3B: 476 quyển, 4C: 248 quyển · e) thư viện: 233 kg, hợp tác xã: 169 kg
 - **Bài II.4** — a) 400 m · b) 22 cm · c) 10 m · d) 22 cm · e) 11 cm
-- **Bài II.5** — a) 591 kg · b) 908 kg · c) 156 kg · d) 70 kg · e) 834 kg · f) 131 kg
+- **Bài II.5** — a) 879 kg · b) 771 kg · c) 234 kg · d) 81 kg
 
 **Phần III**
 
-- **Bài III.1** — a) 2 tạ 40 kg · b) 1 tạ 80 kg · c) 4 tạ 50 kg · d) 7 tạ 80 kg
-- **Bài III.2** — a) 162 kg · b) 32 kg · c) 90 kg · d) 144 kg
-- **Bài III.3** — a) kho B: 162 kg, hợp tác xã: 324 kg · b) kho B: 110 kg, thư viện: 440 kg · c) kho A: 78 kg, thư viện: 468 kg · d) hợp tác xã: 50 kg, kho B: 60 kg · e) trang trại: 65 kg, kho A: 455 kg · f) trang trại: 424 kg, xưởng: 742 kg
-- **Bài III.4** — a) 7 tuổi · b) 6 tuổi · c) 56 tuổi · d) 38 tuổi · e) 20 tuổi
-- **Bài III.5** — a) thư viện: 64 kg, xưởng: 96 kg · b) cửa hàng: 78 kg, trang trại: 104 kg · c) 87 kg · d) hợp tác xã: 96 kg, kho A: 128 kg
+- **Bài III.1** — a) kho B: 25 kg, thư viện: 75 kg · b) 145 kg · c) hợp tác xã: 27 kg, xưởng: 162 kg · d) trang trại: 13 kg, cửa hàng: 39 kg · e) 224 kg · f) thư viện: 14 kg, kho A: 56 kg
+- **Bài III.2** — a) 96 kg · b) 20 kg · c) 32 kg · d) 148 kg · e) 21 kg · f) 13 kg
+- **Bài III.3** — a) hợp tác xã: 256 kg, xưởng: 320 kg · b) xưởng: 64 kg, kho B: 256 kg · c) hợp tác xã: 212 kg, kho B: 742 kg · d) hợp tác xã: 119 kg, kho B: 357 kg · e) cửa hàng: 172 kg, thư viện: 215 kg · f) kho A: 291 kg, kho B: 485 kg
+- **Bài III.4** — a) 120 cây · b) 10 cây · c) 10 cây · d) 23 cây · e) 24 cây · f) 36 cây
+- **Bài III.5** — a) bố 40 tuổi, con 10 tuổi · b) 56 tuổi · c) 24 tuổi · d) 50 tuổi · e) 25 tuổi · f) 26 tuổi
 
 **Phần IV**
 
-- **Bài IV.1** — a) 9 quyển · b) 18 quyển · c) 110 quyển · d) 9 quyển · e) 10 quyển
-- **Bài IV.2** — a) 978 · b) 891 · c) 0 · d) 1 000 · e) 1 000
-- **Bài IV.3** — a) 7 phần 18 · 7 phần 9 · 2 phần 9 · 8 phần 9 · 5 phần 18 · b) 2 phần 9 < 5 phần 18 < 7 phần 18 < 7 phần 9 < 8 phần 9 · c) 8 phần 9 · d) 2 phần 9 · e) 2 phần 3 · f) không, tất cả đều bé hơn 1
-- **Bài IV.4** — a) 10 phần 7 giờ · b) 12 phần 7 giờ · c) 1 giờ 36 phút · d) 2 giờ 24 phút · e) 40 phần 9 giờ
-- **Bài IV.5** — a) 75 lít · b) 100 lít · c) 135 lít · d) 240 lít · e) 36 lít
+- **Bài IV.1** — a) Lan học mĩ thuật; Hà học tiếng Anh; Tuấn học tin học · b) Dũng học bóng đá; Yến học bóng rổ; Tuấn học cầu lông · c) Hùng học bơi; Yến học cờ vua; Phúc học vẽ · d) Trang học bơi; Bình học cờ vua; Hùng học vẽ
+- **Bài IV.2** — a) 60 phần 13 giờ · b) 1 giờ 20 phút · c) 4 giờ · d) 3 giờ 45 phút · e) 12 phần 7 giờ
+- **Bài IV.3** — a) 18 quyển · b) 19 quyển · c) 21 quyển · d) 20 quyển · e) 140 quyển
+- **Bài IV.4** — a) 27 · b) 84 · c) 73 · d) 27
+- **Bài IV.5** — a) 260 lít · b) 40 lít · c) 60 lít · d) 120 lít
 
 **Phần V**
 
-- **Bài V.1** — a) 70 · b) 66 · c) 74 · d) vì ba số cách đều nên số ở giữa là trung bình cộng · e) 30 · f) 120 · g) 90
-- **Bài V.2** — a) 164 đơn vị · b) 75 đơn vị · c) 125 đơn vị · d) 108 đơn vị
-- **Bài V.3** — a) 28 con gà, 21 con chó · b) 7 con gà, 21 con chó · c) 20 con gà, 37 con chó · d) 24 con gà, 25 con chó
-- **Bài V.4** — a) 1,6 ngày · b) 1,75 ngày · c) 1,5 ngày · d) 5,33 ngày
-- **Bài V.5** — a) 4 · b) 0 · c) 7 · d) 6
+- **Bài V.1** — a) 116 · b) 112 · c) 120 · d) vì ba số cách đều nên số ở giữa là trung bình cộng · e) 10 · f) 30 · g) 20
+- **Bài V.2** — a) 165 đơn vị · b) 354 đơn vị · c) 72 đơn vị · d) 80 đơn vị · e) 9 đơn vị
+- **Bài V.3** — a) 4 956 kg · b) 49 tạ 56 kg · c) 2 478 kg, không thừa · d) 5 xe · e) 24 tạ 78 kg · f) vì phần thóc còn lại vẫn cần thêm một xe nữa để chở
+- **Bài V.4** — a) 1 phần 2 · 2 phần 3 · 3 phần 4 · 4 phần 5 · b) 7 phần 8 · c) đều bé hơn 1 · d) tăng dần · e) vì phần bù tới 1 là 1 phần (n + 1) càng lúc càng bé · f) 1 phần 8
+- **Bài V.5** — a) 30 con gà, 24 con chó · b) 27 con gà, 23 con chó · c) 34 con gà, 28 con chó · d) 31 con gà, 20 con chó
 
 ---
 
@@ -78,11 +78,17 @@ Mỗi bài có hai phần: **các bước giải** với số liệu thật củ
 
 **Các bước giải**
 
-Mỗi giờ đi được 60 km, đi trong 2 giờ.
+Xét ý a: Một người đi quãng đường 24 km với vận tốc 4 km/giờ. Tính thời gian đi.
 
-Quãng đường = vận tốc × thời gian = 60 × 2 = 120 (km).
+Đọc vị: đây là dạng **Ba dạng cơ bản của chuyển động đều**; dấu hiệu là Có hai trong ba đại lượng quãng đường, vận tốc, thời gian.
 
-Đáp số: **120 km**.
+Kiến thức phải dùng: s = v × t.
+
+Cách làm: Chọn công thức theo đại lượng cần tìm, đồng bộ đơn vị.
+
+Lối tắt: Vẽ tam giác: s ở trên, v và t ở dưới; che đại lượng cần tìm là ra công thức.
+
+Kết quả: **6 giờ**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
 
@@ -256,7 +262,7 @@ Bước 2 — đổi ra mét: 40 000 : 100 = 400 (m).
 
 **Các bước giải**
 
-Xét ý a: Trung bình mỗi ngày bán được 197 kg gạo. Hỏi 3 ngày bán được tất cả bao nhiêu ki-lô-gam?
+Xét ý a: Trung bình mỗi ngày bán được 293 kg gạo. Hỏi 3 ngày bán được tất cả bao nhiêu ki-lô-gam?
 
 Đọc vị: đây là dạng **Ba dạng bài trung bình cộng**; dấu hiệu là Cụm “trung bình mỗi …”.
 
@@ -266,107 +272,27 @@ Cách làm: Đi qua tổng làm trung gian.
 
 Lối tắt: Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng.
 
-Kết quả: **591 kg**.
+Kết quả: **879 kg**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Ba dạng ngược nhau: biết các số tìm trung bình cộng (cộng rồi chia); biết trung bình cộng tìm tổng (nhân); biết trung bình cộng và một số số hạng, tìm số hạng còn thiếu (lấy tổng trừ đi các số đã biết).
 
 *Điểm chốt:* Từ trung bình cộng luôn tìm được **tổng** trước, rồi mới tính tiếp.
 
-### Bài III.1 — Bài toán thực tế về khối lượng
+### Bài III.1 — Tổng – tỉ, hiệu – tỉ khi một dữ kiện bị giấu
 
 **Các bước giải**
 
-Xét ý a: Một xe chở 8 bao phân bón, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ phân bón?
+Tỉ số bị giấu trong câu “chia thành 1 phần … bằng 3 phần như thế”: đó chính là tỉ số 1 trên 3.
 
-Đọc vị: đây là dạng **Bài toán đại lượng có lời văn**; dấu hiệu là Đơn vị trong câu hỏi khác đơn vị trong dữ kiện.
+Bước 1 — tổng số phần: 1 + 3 = 4 (phần).
 
-Kiến thức phải dùng: Nhân, chia số tự nhiên; đổi đơn vị khối lượng.
+Bước 2 — một phần: 100 : 4 = 25 (kg).
 
-Cách làm: Tính theo đơn vị dữ kiện rồi đổi ở bước cuối.
+Bước 3 — kho B: 25 × 1 = 25 (kg); thư viện: 25 × 3 = 75 (kg).
 
-Lối tắt: 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ.
+Thử lại: 25 + 75 = 100 ✓
 
-Kết quả: **2 tạ 40 kg**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Tính tổng khối lượng theo ki-lô-gam trước, sau đó mới đổi sang đơn vị mà đề hỏi. Đừng đổi đơn vị ngay từ đầu vì dễ nhầm.
-
-*Điểm chốt:* Câu hỏi đòi đơn vị nào thì bước **cuối cùng** mới đổi sang đơn vị đó.
-
-### Bài III.2 — Tìm phân số của một số qua hai bước
-
-**Các bước giải**
-
-Xét ý a: Một cửa hàng có 324 kg gạo. Ngày đầu bán 1 phần 3 số gạo, ngày thứ hai bán 1 phần 4 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
-
-Đọc vị: đây là dạng **Tìm phân số của một số, nhiều bước**; dấu hiệu là Cụm “… số còn lại”, “… số đó”.
-
-Kiến thức phải dùng: Tìm phân số của một số.
-
-Cách làm: Tính tuần tự, sau mỗi bước ghi lại số còn lại.
-
-Lối tắt: Còn lại sau ngày đầu là (1 − phân số) của tổng; nhân trực tiếp cho nhanh.
-
-Kết quả: **162 kg**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Bước 1: tính số gạo bán ngày đầu bằng cách lấy tổng nhân với phân số. Bước 2: tính số gạo **còn lại** sau ngày đầu. Bước 3: phân số của ngày thứ hai tính trên **số còn lại**, không phải trên tổng ban đầu.
-
-*Điểm chốt:* Cụm “số gạo **còn lại**” đổi hẳn số bị nhân ở bước hai.
-
-### Bài III.3 — Tìm hai số khi biết hiệu và tỉ số
-
-**Các bước giải**
-
-Xét ý a: Hợp tác xã chứa nhiều hơn kho B 162 kg muối. Số muối ở kho B bằng 1 phần 2 số muối ở hợp tác xã. Mỗi nơi chứa bao nhiêu kg?
-
-Đọc vị: đây là dạng **Bài toán hiệu – tỉ**; dấu hiệu là Đề cho **hiệu** và **tỉ số**.
-
-Kiến thức phải dùng: Tỉ số, sơ đồ đoạn thẳng.
-
-Cách làm: Sơ đồ → hiệu số phần → giá trị một phần.
-
-Lối tắt: Hiệu luôn chia hết cho hiệu số phần — dùng để kiểm tra đã đọc đúng tỉ số chưa.
-
-Kết quả: **kho B: 162 kg, hợp tác xã: 324 kg**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Hiệu số phần = số phần lớn − số phần bé. Giá trị một phần = hiệu : hiệu số phần. Sau đó nhân với số phần của từng đại lượng.
-
-*Điểm chốt:* Chia cho **hiệu số phần**, không phải tổng số phần.
-
-### Bài III.4 — Bài toán về tuổi
-
-**Các bước giải**
-
-Xét ý a: Hiện nay bố 14 tuổi, con 7 tuổi. Cách đây 6 năm, bố hơn con bao nhiêu tuổi?
-
-Đọc vị: đây là dạng **Bài toán tuổi**; dấu hiệu là Xuất hiện mốc thời gian: hiện nay, sau … năm, cách đây … năm.
-
-Kiến thức phải dùng: Bất biến hiệu số tuổi, tổng – hiệu, tổng – tỉ.
-
-Cách làm: Kẻ bảng thời gian, bám vào hiệu tuổi không đổi.
-
-Lối tắt: Tổng tuổi của n người sau k năm tăng thêm đúng n × k.
-
-Kết quả: **7 tuổi**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** **Hiệu số tuổi của hai người không bao giờ thay đổi.** Còn tổng số tuổi thì mỗi năm tăng thêm đúng bằng số người. Tỉ số tuổi thì thay đổi theo từng năm.
-
-*Điểm chốt:* Hiệu tuổi là đại lượng **bất biến** — chìa khoá của mọi bài toán tuổi.
-
-### Bài III.5 — Tổng – tỉ, hiệu – tỉ khi một dữ kiện bị giấu
-
-**Các bước giải**
-
-Xét ý a: Số phân bón ở xưởng bằng 3 phần 2 số phân bón ở thư viện. Nếu chuyển 16 kg từ xưởng sang thư viện thì xưởng vẫn còn nhiều hơn. Biết xưởng hơn thư viện 32 kg, tìm số phân bón mỗi nơi.
-
-Đọc vị: đây là dạng **Tổng – tỉ, hiệu – tỉ dạng ẩn**; dấu hiệu là Đề mô tả vòng thay vì cho số: “nếu … thì …”, “chia thành … phần”.
-
-Kiến thức phải dùng: Tỉ số, sơ đồ đoạn thẳng, dịch lời văn thành số.
-
-Cách làm: Dịch dữ kiện ẩn thành số rồi áp dạng chuẩn.
-
-Lối tắt: Kẻ sẵn ba dòng Tổng – Hiệu – Tỉ số, điền được hai dòng là giải được.
-
-Kết quả: **thư viện: 64 kg, xưởng: 96 kg**.
+Đáp số: **kho B 25 kg, thư viện 75 kg**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Đề không cho thẳng tổng, hiệu hay tỉ số mà mô tả vòng. Bước bắt buộc đầu tiên: **dịch câu mô tả thành một con số** rồi mới vẽ sơ đồ và giải như bài chuẩn.
 
@@ -376,73 +302,111 @@ Kết quả: **thư viện: 64 kg, xưởng: 96 kg**.
 
 *Phải chắc trước khi làm bài này:* Thành thạo bài tổng – tỉ và hiệu – tỉ ở dạng cho thẳng.
 
-### Bài IV.1 — Chuyển bớt để hai phần bằng nhau
-
-> **BẪY — Hiệu thay đổi gấp đôi số chuyển.**
+### Bài III.2 — Tìm phân số của một số qua hai bước
 
 **Các bước giải**
 
-Xét ý a: Tổ Hai có 108 quyển sách, nhóm Sao Mai có 90 quyển. Hỏi phải chuyển bao nhiêu quyển từ tổ Hai sang nhóm Sao Mai để số sách hai tổ bằng nhau?
+Xét ý a: Một cửa hàng có 240 kg gạo. Ngày đầu bán 1 phần 2 số gạo, ngày thứ hai bán 1 phần 5 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
 
-Đọc vị: đây là dạng **Chuyển đổi giữa hai đại lượng, tổng không đổi**; dấu hiệu là “Chuyển … từ bên này sang bên kia”.
+Đọc vị: đây là dạng **Tìm phân số của một số, nhiều bước**; dấu hiệu là Cụm “… số còn lại”, “… số đó”.
 
-Kiến thức phải dùng: Bất biến tổng, biến thiên hiệu.
+Kiến thức phải dùng: Tìm phân số của một số.
 
-Cách làm: Xét đại lượng không đổi (tổng) và đại lượng đổi gấp đôi (hiệu).
+Cách làm: Tính tuần tự, sau mỗi bước ghi lại số còn lại.
 
-Lối tắt: Sau khi chuyển, mỗi bên bằng nửa tổng — tính nửa tổng rồi trừ là ra ngay.
+Lối tắt: Còn lại sau ngày đầu là (1 − phân số) của tổng; nhân trực tiếp cho nhanh.
 
-Kết quả: **9 quyển**.
+Kết quả: **96 kg**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Khi chuyển k đơn vị từ bên nhiều sang bên ít, bên nhiều giảm k còn bên ít tăng k, nên hiệu giảm đi **2k**. Muốn hai bên bằng nhau thì hiệu phải về 0, vậy k = hiệu : 2.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Bước 1: tính số gạo bán ngày đầu bằng cách lấy tổng nhân với phân số. Bước 2: tính số gạo **còn lại** sau ngày đầu. Bước 3: phân số của ngày thứ hai tính trên **số còn lại**, không phải trên tổng ban đầu.
 
-*Điểm chốt:* Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển.
+*Điểm chốt:* Cụm “số gạo **còn lại**” đổi hẳn số bị nhân ở bước hai.
 
-### Bài IV.2 — Thêm, bớt, đổi chỗ chữ số
-
-> **BẪY — Bên trái hay bên phải.**
+### Bài III.3 — Tìm hai số khi biết hiệu và tỉ số
 
 **Các bước giải**
 
-Xét ý a: Một số có ba chữ số, nếu xoá chữ số hàng trăm thì được số mới kém số ban đầu 900 đơn vị. Tìm số ban đầu, biết chữ số hàng chục là 7 và chữ số hàng đơn vị là 8.
+Xét ý a: Xưởng chứa nhiều hơn hợp tác xã 64 kg thóc. Số thóc ở hợp tác xã bằng 4 phần 5 số thóc ở xưởng. Mỗi nơi chứa bao nhiêu kg?
 
-Đọc vị: đây là dạng **Biến đổi số bằng cách thêm, bớt, đổi chỗ chữ số**; dấu hiệu là Đề nói “xoá chữ số”, “viết thêm chữ số”, “đổi chỗ”.
+Đọc vị: đây là dạng **Bài toán hiệu – tỉ**; dấu hiệu là Đề cho **hiệu** và **tỉ số**.
 
-Kiến thức phải dùng: Cấu tạo thập phân, hiệu hai số.
+Kiến thức phải dùng: Tỉ số, sơ đồ đoạn thẳng.
 
-Cách làm: Viết cả hai số theo cấu tạo rồi lấy hiệu.
+Cách làm: Sơ đồ → hiệu số phần → giá trị một phần.
 
-Lối tắt: Đổi chỗ hàng trăm với hàng đơn vị: hiệu = 99 × (hiệu hai chữ số).
+Lối tắt: Hiệu luôn chia hết cho hiệu số phần — dùng để kiểm tra đã đọc đúng tỉ số chưa.
 
-Kết quả: **978**.
+Kết quả: **hợp tác xã: 256 kg, xưởng: 320 kg**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Viết số có ba chữ số dạng **a × 100 + b × 10 + c**. Xoá chữ số hàng trăm là bớt đi a × 100. Viết thêm chữ số 1 vào bên trái một số có ba chữ số là cộng thêm 1 000. Đổi chỗ hàng trăm với hàng đơn vị làm số thay đổi 99 lần hiệu hai chữ số đó.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Hiệu số phần = số phần lớn − số phần bé. Giá trị một phần = hiệu : hiệu số phần. Sau đó nhân với số phần của từng đại lượng.
 
-*Điểm chốt:* Thêm chữ số vào **bên trái** là cộng thêm; thêm vào **bên phải** là nhân 10 rồi cộng.
+*Điểm chốt:* Chia cho **hiệu số phần**, không phải tổng số phần.
 
-### Bài IV.3 — Rút gọn, so sánh và sắp thứ tự phân số
+### Bài III.4 — Tìm phân số của một số
 
 **Các bước giải**
 
-Các phân số đều có cùng mẫu số 18 nên so sánh **tử số** là đủ.
+Xét ý a: Đội Một trồng được 192 cây. Số cây của nhóm Hoa Phượng bằng 5 phần 8 số cây của đội Một. Hỏi nhóm Hoa Phượng trồng được bao nhiêu cây?
 
-Sắp tử số từ bé đến lớn rồi ghi lại phân số tương ứng.
+Đọc vị: đây là dạng **Tìm phân số của một số**; dấu hiệu là Cụm “bằng … của …”.
 
-Kết quả: 2 phần 9 < 5 phần 18 < 7 phần 18 < 7 phần 9 < 8 phần 9.
+Kiến thức phải dùng: Nhân số tự nhiên với phân số.
 
-Hiệu của phân số lớn nhất và bé nhất: 8 phần 9 − 2 phần 9 = 2 phần 3.
+Cách làm: Chia theo mẫu số rồi nhân theo tử số.
 
-Đáp số ý b: **2 phần 9 < 5 phần 18 < 7 phần 18 < 7 phần 9 < 8 phần 9**.
+Lối tắt: Chia trước, nhân sau — số nhỏ hơn nên tính nhẩm được.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Cùng mẫu số thì so tử số. Khác mẫu thì quy đồng hoặc so với 1 và với một nửa. Rút gọn về tối giản trước khi trình bày kết quả.
+Kết quả: **120 cây**.
 
-*Điểm chốt:* Cùng mẫu số thì **chỉ cần so tử số**.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Muốn tìm phân số của một số, ta lấy số đó nhân với phân số. Cách hiểu: chia số đó thành số phần bằng mẫu số, rồi lấy số phần bằng tử số.
 
-*Muốn khó hơn:* Trộn thêm số thập phân vào dãy để sắp thứ tự chung.
+*Điểm chốt:* Phân số tính trên **số nào** — đọc kĩ cụm “… của …”.
 
-*Phải chắc trước khi làm bài này:* Rút gọn phân số và quy đồng mẫu số.
+### Bài III.5 — Bài toán về tuổi
 
-### Bài IV.4 — Hai vòi nước, hai người cùng làm
+**Các bước giải**
+
+Xét ý a: Tuổi bố gấp 4 lần tuổi con. Tổng số tuổi của hai bố con là 50 tuổi. Tính tuổi mỗi người.
+
+Đọc vị: đây là dạng **Bài toán tuổi**; dấu hiệu là Xuất hiện mốc thời gian: hiện nay, sau … năm, cách đây … năm.
+
+Kiến thức phải dùng: Bất biến hiệu số tuổi, tổng – hiệu, tổng – tỉ.
+
+Cách làm: Kẻ bảng thời gian, bám vào hiệu tuổi không đổi.
+
+Lối tắt: Tổng tuổi của n người sau k năm tăng thêm đúng n × k.
+
+Kết quả: **bố 40 tuổi, con 10 tuổi**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** **Hiệu số tuổi của hai người không bao giờ thay đổi.** Còn tổng số tuổi thì mỗi năm tăng thêm đúng bằng số người. Tỉ số tuổi thì thay đổi theo từng năm.
+
+*Điểm chốt:* Hiệu tuổi là đại lượng **bất biến** — chìa khoá của mọi bài toán tuổi.
+
+### Bài IV.1 — Ghép người với môn bằng bảng đúng – sai
+
+> **BẪY — Đánh dấu đúng mà quên gạch phần còn lại.**
+
+**Các bước giải**
+
+Kẻ bảng ba dòng (Lan, Hà, Tuấn) và ba cột (tiếng Anh, tin học, mĩ thuật). Mỗi ô ghi ✓ nếu chắc chắn đúng, × nếu chắc chắn sai.
+
+Manh mối thứ nhất cho hai dấu ×: dòng Lan bị gạch ở cột tiếng Anh và cột tin học.
+
+Dòng Lan chỉ còn một ô trống, nên ô ấy là ✓: **Lan học mĩ thuật**. Đây là bước hay bị quên tiếp theo — đã có ✓ thì phải gạch × cho cả **cột** mĩ thuật ở hai dòng còn lại.
+
+Manh mối thứ hai: dòng Hà bị gạch ở cột tin học. Cột mĩ thuật cũng đã gạch, nên dòng Hà chỉ còn một ô: **Hà học tiếng Anh**.
+
+Còn lại **Tuấn học tin học**. Thử lại cả hai manh mối đều đúng.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Mỗi dòng một người, mỗi cột một khả năng. Đánh × cho điều chắc chắn sai. Dòng nào chỉ còn một ô trống thì ô ấy là ✓ — và ngay sau đó phải gạch × cho cả cột chứa ô ấy.
+
+*Điểm chốt:* Đặt được một ✓ thì **cả dòng và cả cột** còn lại đều thành ×. Bỏ bước gạch cột là chỗ bài bị tắc giữa chừng.
+
+*Muốn khó hơn:* Thêm bạn thứ tư và môn thứ tư, cùng một manh mối dạng “bạn X học môn mà bạn Y không học”.
+
+*Phải chắc trước khi làm bài này:* Đọc hiểu câu phủ định và cách kẻ bảng hai chiều.
+
+### Bài IV.2 — Hai vòi nước, hai người cùng làm
 
 > **BẪY — Cộng thời gian thay vì cộng năng suất.**
 
@@ -450,15 +414,15 @@ Hiệu của phân số lớn nhất và bé nhất: 8 phần 9 − 2 phần 9 =
 
 Coi cả bể là 1 đơn vị công việc.
 
-Bước 1 — mỗi giờ vòi thứ nhất chảy được 1 phần 5 bể, vòi thứ hai chảy được 1 phần 2 bể.
+Bước 1 — mỗi giờ vòi thứ nhất chảy được 1 phần 6 bể, vòi thứ hai chảy được 1 phần 20 bể.
 
-Bước 2 — mỗi giờ cả hai vòi chảy được 1 phần 5 + 1 phần 2 = 7 phần 10 bể.
+Bước 2 — mỗi giờ cả hai vòi chảy được 1 phần 6 + 1 phần 20 = 13 phần 60 bể.
 
-Bước 3 — thời gian đầy bể: 1 : 7 phần 10 = 10 phần 7 giờ = 10 phần 7 giờ.
+Bước 3 — thời gian đầy bể: 1 : 13 phần 60 = 60 phần 13 giờ = 60 phần 13 giờ.
 
-Kiểm tra nhanh: kết quả phải bé hơn 2 giờ ✓
+Kiểm tra nhanh: kết quả phải bé hơn 6 giờ ✓
 
-Đáp số: **10 phần 7 giờ**.
+Đáp số: **60 phần 13 giờ**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Không cộng thời gian, mà cộng **năng suất một giờ**. Người xong trong a giờ thì mỗi giờ làm được 1 phần a công việc. Thời gian làm chung bằng 1 chia cho tổng năng suất.
 
@@ -468,11 +432,59 @@ Kiểm tra nhanh: kết quả phải bé hơn 2 giờ ✓
 
 *Phải chắc trước khi làm bài này:* Cộng phân số khác mẫu và chia một số cho một phân số.
 
+### Bài IV.3 — Chuyển bớt để hai phần bằng nhau
+
+> **BẪY — Hiệu thay đổi gấp đôi số chuyển.**
+
+**Các bước giải**
+
+Xét ý a: Tổ Ba có 42 quyển sách, nhóm Sao Mai có 6 quyển. Hỏi phải chuyển bao nhiêu quyển từ tổ Ba sang nhóm Sao Mai để số sách hai tổ bằng nhau?
+
+Đọc vị: đây là dạng **Chuyển đổi giữa hai đại lượng, tổng không đổi**; dấu hiệu là “Chuyển … từ bên này sang bên kia”.
+
+Kiến thức phải dùng: Bất biến tổng, biến thiên hiệu.
+
+Cách làm: Xét đại lượng không đổi (tổng) và đại lượng đổi gấp đôi (hiệu).
+
+Lối tắt: Sau khi chuyển, mỗi bên bằng nửa tổng — tính nửa tổng rồi trừ là ra ngay.
+
+Kết quả: **18 quyển**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Khi chuyển k đơn vị từ bên nhiều sang bên ít, bên nhiều giảm k còn bên ít tăng k, nên hiệu giảm đi **2k**. Muốn hai bên bằng nhau thì hiệu phải về 0, vậy k = hiệu : 2.
+
+*Điểm chốt:* Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển.
+
+### Bài IV.4 — Đặt chữ thay chữ số rồi lập luận
+
+> **BẪY — Quên chữ số hàng cao nhất khác 0.**
+
+**Các bước giải**
+
+Xét ý a: Tìm mọi số có hai chữ số mà số đó bằng 3 lần tổng hai chữ số của nó.
+
+Đọc vị: đây là dạng **Dùng chữ thay số**; dấu hiệu là Đề viết số bằng chữ hoặc bằng dấu sao và cho quan hệ giữa các chữ số.
+
+Kiến thức phải dùng: Cấu tạo thập phân của số; tổng – hiệu.
+
+Cách làm: Viết cấu tạo số theo chữ, thay vào điều kiện rồi rút gọn.
+
+Lối tắt: Đổi chỗ hai chữ số của số có hai chữ số thì hiệu luôn là bội của 9.
+
+Kết quả: **27**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Viết số theo cấu tạo: số có hai chữ số ab bằng a × 10 + b. Thay vào điều kiện đề cho rồi rút gọn — thường ra một quan hệ rất gọn giữa a và b.
+
+*Điểm chốt:* Chữ số hàng cao nhất **khác 0**, và mọi chữ số chỉ nhận giá trị từ 0 đến 9. Hai ràng buộc này thường là chỗ loại bớt đáp số.
+
+*Muốn khó hơn:* Chuyển sang số có ba chữ số abc để học sinh phải viết a × 100 + b × 10 + c.
+
+*Phải chắc trước khi làm bài này:* Cấu tạo thập phân và bài toán tìm hai số biết tổng và hiệu.
+
 ### Bài IV.5 — Bài toán đại lượng nhiều bước
 
 **Các bước giải**
 
-Xét ý a: Một cửa hàng có 5 thùng dầu, mỗi thùng 25 lít. Cửa hàng đã bán 2 thùng. Hỏi cửa hàng còn lại bao nhiêu lít dầu?
+Xét ý a: Một cửa hàng có 16 thùng dầu, mỗi thùng 20 lít. Cửa hàng đã bán 3 thùng. Hỏi cửa hàng còn lại bao nhiêu lít dầu?
 
 Đọc vị: đây là dạng **Bài toán đại lượng nhiều bước**; dấu hiệu là Cho số nhóm, giá trị mỗi nhóm và số nhóm đã dùng.
 
@@ -482,7 +494,7 @@ Cách làm: Rút gọn số bước bằng cách trừ trước, nhân sau.
 
 Lối tắt: So sánh hai đường giải, chọn đường ít phép tính hơn.
 
-Kết quả: **75 lít**.
+Kết quả: **260 lít**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
 
@@ -490,21 +502,19 @@ Kết quả: **75 lít**.
 
 ### Bài V.1 — Tổng nhiều số có ràng buộc — dạng đề thi
 
-> **BẪY — Số lượng chẵn thì không có số giữa.**
-
 **Các bước giải**
 
 Ba số cách đều nhau 4 đơn vị nên số ở giữa là trung bình cộng.
 
-Bước 1 — số thứ hai: 210 : 3 = 70.
+Bước 1 — số thứ hai: 348 : 3 = 116.
 
-Bước 2 — số thứ nhất: 70 − 4 = 66.
+Bước 2 — số thứ nhất: 116 − 4 = 112.
 
-Bước 3 — số thứ ba: 70 + 4 = 74.
+Bước 3 — số thứ ba: 116 + 4 = 120.
 
-Thử lại: 66 + 70 + 74 = 210 ✓
+Thử lại: 112 + 116 + 120 = 348 ✓
 
-Đáp số: **66, 70, 74**.
+Đáp số: **112, 116, 120**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Với một số lẻ các số cách đều, số ở giữa chính là trung bình cộng — tìm nó trước rồi suy ra hai số kia. Phần sau là bài tổng – tỉ chuẩn: tổng số phần rồi giá trị một phần.
 
@@ -518,7 +528,7 @@ Thử lại: 66 + 70 + 74 = 210 ✓
 
 **Các bước giải**
 
-Xét ý a: Số lớn gấp 5 lần số bé và tổng hai số là 246. Phải thêm vào số lớn bao nhiêu đơn vị để số lớn gấp 9 lần số bé?
+Xét ý a: Số lớn gấp 5 lần số bé và tổng hai số là 330. Phải thêm vào số lớn bao nhiêu đơn vị để số lớn gấp 8 lần số bé?
 
 Đọc vị: đây là dạng **Tổng – tỉ có tỉ số thay đổi**; dấu hiệu là “Phải thêm (bớt) bao nhiêu để tỉ số trở thành …”.
 
@@ -528,17 +538,63 @@ Cách làm: Xác định đại lượng bất biến → tính lại đại lư
 
 Lối tắt: Số cần thêm = số bé × (tỉ số mới − tỉ số cũ).
 
-Kết quả: **164 đơn vị**.
+Kết quả: **165 đơn vị**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Số bé không thay đổi, nên hãy tìm số bé trước bằng bài toán tổng – tỉ. Sau đó tính số lớn mới theo tỉ số mới, rồi lấy số lớn mới trừ số lớn cũ.
 
 *Điểm chốt:* Tìm cho ra **đại lượng không đổi** rồi lấy nó làm gốc quy chiếu.
 
-### Bài V.3 — Bài toán giả thiết tạm — gà và chó
+### Bài V.3 — Đại lượng khối lượng — đổi đơn vị và chia phần
 
 **Các bước giải**
 
-Xét ý a: Vừa gà vừa chó có 49 con, đếm được tất cả 140 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
+Bước 1 — đổi về ki-lô-gam: 4 tấn = 4 000 kg; 9 tạ = 900 kg.
+
+Tổng: 4 000 + 900 + 56 = 4 956 (kg).
+
+Bước 2 — chia cho 2 xe: 4 956 : 2 = 2 478 .
+
+Bước 3 — mỗi xe chở 1 tấn = 1 000 kg, cần 4 956 : 1 000 = 4 xe đầy, còn 956 kg nữa nên phải thêm một xe.
+
+Đáp số ý a: **4 956 kg**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Quy hết về một đơn vị rồi mới tính. Với câu hỏi “cần ít nhất bao nhiêu xe”, phần dư vẫn phải có một xe chở, nên **làm tròn lên**.
+
+*Điểm chốt:* Câu hỏi “ít nhất bao nhiêu xe” luôn **làm tròn lên**.
+
+*Muốn khó hơn:* Mỗi xe chở tối đa 1,5 tấn — phải đổi sang đơn vị chung trước.
+
+*Phải chắc trước khi làm bài này:* Bảng đơn vị khối lượng và phép chia có dư.
+
+### Bài V.4 — Dãy phân số dạng n phần (n + 1)
+
+**Các bước giải**
+
+Bốn phân số đầu: 1 phần 2 · 2 phần 3 · 3 phần 4 · 4 phần 5.
+
+Phân số thứ n có tử là n và mẫu là n + 1.
+
+Phân số thứ 7 là 7 phần 8.
+
+Mỗi phân số còn thiếu đúng 1 phần (n + 1) nữa thì bằng 1.
+
+Phần thiếu ấy càng lúc càng bé, nên dãy **tăng dần**.
+
+Đáp số ý b: **7 phần 8**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Phân số dạng n phần (n + 1) luôn bé hơn 1 và còn thiếu đúng 1 phần (n + 1) nữa thì bằng 1. Phần thiếu càng bé thì phân số càng lớn — đó là kỹ thuật **so sánh bằng phần bù**.
+
+*Điểm chốt:* Phần bù **bé hơn** nghĩa là phân số **lớn hơn**.
+
+*Muốn khó hơn:* Dãy 1 phần 2, 2 phần 3, 3 phần 4 … nhân tất cả lại bằng bao nhiêu?
+
+*Phải chắc trước khi làm bài này:* So sánh phân số và phép trừ phân số.
+
+### Bài V.5 — Bài toán giả thiết tạm — gà và chó
+
+**Các bước giải**
+
+Xét ý a: Vừa gà vừa chó có 54 con, đếm được tất cả 156 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
 
 Đọc vị: đây là dạng **Giả thiết tạm**; dấu hiệu là Hai loại đối tượng, biết tổng số và tổng của một đại lượng khác.
 
@@ -548,55 +604,11 @@ Cách làm: Giả sử đồng nhất một loại → tính phần chênh → c
 
 Lối tắt: Số chó = (số chân − 2 × số con) : 2 — thuộc công thức rút gọn để nhẩm.
 
-Kết quả: **28 con gà, 21 con chó**.
+Kết quả: **30 con gà, 24 con chó**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Giả sử tất cả đều là gà thì số chân là số con nhân 2. Số chân thiếu so với thực tế chính là do mỗi con chó bị tính thiếu 2 chân. Lấy số chân thiếu chia cho 2 được số chó, rồi suy ra số gà.
 
 *Điểm chốt:* Chênh lệch chân của **một** con là 4 − 2 = 2 — đó là số chia.
-
-### Bài V.4 — Tỉ lệ nghịch — so sánh hai phương án
-
-**Các bước giải**
-
-Xét ý a: 6 người làm xong một công việc trong 4 ngày. Nếu có thêm 4 người nữa (làm khoẻ như nhau) thì công việc đó hoàn thành sớm hơn bao nhiêu ngày?
-
-Đọc vị: đây là dạng **Tỉ lệ nghịch, so sánh hai phương án**; dấu hiệu là Thay đổi số người, hỏi thay đổi thời gian.
-
-Kiến thức phải dùng: Đại lượng tỉ lệ nghịch, tổng số ngày công.
-
-Cách làm: Bám vào tổng số ngày công không đổi.
-
-Lối tắt: Số người tăng gấp k lần thì số ngày giảm còn 1 phần k.
-
-Kết quả: **1,6 ngày**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Tổng số ngày công không đổi: số người × số ngày. Tính tổng số ngày công, chia cho số người mới ra số ngày mới, rồi lấy số ngày cũ trừ số ngày mới để biết sớm hơn bao nhiêu.
-
-*Điểm chốt:* Đại lượng bất biến ở đây là **tổng số ngày công**.
-
-### Bài V.5 — Chữ số tận cùng của tổng và tích
-
-**Các bước giải**
-
-Xét ý a: Tổng 867 + 627 có chữ số tận cùng là chữ số nào?
-
-Đọc vị: đây là dạng **Chữ số tận cùng**; dấu hiệu là Câu hỏi chỉ hỏi chữ số tận cùng.
-
-Kiến thức phải dùng: Tính chất chữ số tận cùng của tổng, tích.
-
-Cách làm: Rút gọn về chữ số tận cùng rồi tính.
-
-Lối tắt: Tích có thừa số tận cùng 0 hoặc 5 thì tận cùng là 0 hoặc 5.
-
-Kết quả: **4**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Chữ số tận cùng của tổng và của tích chỉ phụ thuộc chữ số tận cùng của các số tham gia. Che phần đầu, chỉ tính với chữ số cuối.
-
-*Điểm chốt:* Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu.
-
-*Muốn khó hơn:* Hỏi chữ số tận cùng của tích nhiều thừa số giống nhau — tìm chu kì lặp.
-
-*Phải chắc trước khi làm bài này:* Bảng nhân và thói quen quan sát trước khi tính.
 
 ---
 
@@ -606,7 +618,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
-| I.1 | Ba dạng cơ bản của chuyển động đều | s = v × t | Có hai trong ba đại lượng quãng đường, vận tốc, thời gian | Chọn công thức theo đại lượng cần tìm, đồng bộ đơn vị | Vẽ tam giác: s ở trên, v và t ở dưới; che đại lượng cần tìm là ra công thức. | 120 km · 30 km/giờ · 5 giờ · 5 giờ… |
+| I.1 | Ba dạng cơ bản của chuyển động đều | s = v × t | Có hai trong ba đại lượng quãng đường, vận tốc, thời gian | Chọn công thức theo đại lượng cần tìm, đồng bộ đơn vị | Vẽ tam giác: s ở trên, v và t ở dưới; che đại lượng cần tìm là ra công thức. | 6 giờ · 60 km/giờ · 90 km · 2 giờ |
 | I.2 | Quan hệ nhiều hơn – ít hơn, gấp – kém | Bốn phép tính, từ khoá chỉ quan hệ | Các cụm “nhiều hơn”, “ít hơn”, “gấp … lần”, “kém … lần” | Đọc vị từ khoá → chọn phép tính | Kết quả lớn hơn hay bé hơn số đã cho? Trả lời được là biết ngay phép tính. | 114 · 20 · 45 · 37… |
 | I.3 | Tìm trung bình cộng | Định nghĩa trung bình cộng | Từ khoá “trung bình cộng”, “trung bình mỗi …” | Tổng chia số lượng | Ước lượng: trung bình cộng luôn nằm giữa số bé nhất và số lớn nhất. | 91 · 110 · 81 · 12… |
 | I.4 | Bài toán tổng – hiệu | Công thức tổng – hiệu, sơ đồ đoạn thẳng | Đề cho **tổng** và **hiệu** của hai số | Vẽ sơ đồ, đưa về hai phần bằng nhau | Số lớn và số bé luôn có trung bình cộng bằng nửa tổng. | số lớn 632, số bé 418 · số lớn 443, số bé 259 · số lớn 287, số bé 159 · số lớn 736, số bé 662… |
@@ -615,22 +627,22 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | II.2 | Tỉ lệ nghịch | Đại lượng tỉ lệ nghịch, tổng số ngày công | Số người tăng thì thời gian giảm | Quy về tổng số ngày công rồi chia | Số người gấp đôi thì số ngày giảm một nửa — nhẩm được ngay khi tỉ số đẹp. | 15 ngày · 6 ngày · 6 ngày · 30 ngày… |
 | II.3 | Tổng – hiệu có lời văn | Công thức tổng – hiệu, sơ đồ đoạn thẳng | “Có tất cả …” và “… nhiều hơn … là …” | Đọc vị tổng và hiệu → sơ đồ → công thức | Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần. | tổ Một: 120 cây, nhóm Sao Mai: 72 cây · 5B: 290 quyển, 3A: 220 quyển · kho A: 114 kg, xưởng: 106 kg · 3B: 476 quyển, 4C: 248 quyển… |
 | II.4 | Tỉ lệ bản đồ, tỉ lệ xích | Tỉ lệ, đổi đơn vị đo độ dài | Có kí hiệu tỉ lệ dạng 1 : n | Nhân hoặc chia theo tỉ lệ rồi đổi đơn vị | Tỉ lệ 1 : 1 000 thì 1 cm bản đồ đúng bằng 10 m thật. | 400 m · 22 cm · 10 m · 22 cm… |
-| II.5 | Ba dạng bài trung bình cộng | Quan hệ tổng – số lượng – trung bình cộng | Cụm “trung bình mỗi …” | Đi qua tổng làm trung gian | Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng. | 591 kg · 908 kg · 156 kg · 70 kg… |
-| III.1 | Bài toán đại lượng có lời văn | Nhân, chia số tự nhiên; đổi đơn vị khối lượng | Đơn vị trong câu hỏi khác đơn vị trong dữ kiện | Tính theo đơn vị dữ kiện rồi đổi ở bước cuối | 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ. | 2 tạ 40 kg · 1 tạ 80 kg · 4 tạ 50 kg · 7 tạ 80 kg |
-| III.2 | Tìm phân số của một số, nhiều bước | Tìm phân số của một số | Cụm “… số còn lại”, “… số đó” | Tính tuần tự, sau mỗi bước ghi lại số còn lại | Còn lại sau ngày đầu là (1 − phân số) của tổng; nhân trực tiếp cho nhanh. | 162 kg · 32 kg · 90 kg · 144 kg |
-| III.3 | Bài toán hiệu – tỉ | Tỉ số, sơ đồ đoạn thẳng | Đề cho **hiệu** và **tỉ số** | Sơ đồ → hiệu số phần → giá trị một phần | Hiệu luôn chia hết cho hiệu số phần — dùng để kiểm tra đã đọc đúng tỉ số chưa. | kho B: 162 kg, hợp tác xã: 324 kg · kho B: 110 kg, thư viện: 440 kg · kho A: 78 kg, thư viện: 468 kg · hợp tác xã: 50 kg, kho B: 60 kg… |
-| III.4 | Bài toán tuổi | Bất biến hiệu số tuổi, tổng – hiệu, tổng – tỉ | Xuất hiện mốc thời gian: hiện nay, sau … năm, cách đây … năm | Kẻ bảng thời gian, bám vào hiệu tuổi không đổi | Tổng tuổi của n người sau k năm tăng thêm đúng n × k. | 7 tuổi · 6 tuổi · 56 tuổi · 38 tuổi… |
-| III.5 | Tổng – tỉ, hiệu – tỉ dạng ẩn | Tỉ số, sơ đồ đoạn thẳng, dịch lời văn thành số | Đề mô tả vòng thay vì cho số: “nếu … thì …”, “chia thành … phần” | Dịch dữ kiện ẩn thành số rồi áp dạng chuẩn | Kẻ sẵn ba dòng Tổng – Hiệu – Tỉ số, điền được hai dòng là giải được. | thư viện: 64 kg, xưởng: 96 kg · cửa hàng: 78 kg, trang trại: 104 kg · 87 kg · hợp tác xã: 96 kg, kho A: 128 kg |
-| IV.1 | Chuyển đổi giữa hai đại lượng, tổng không đổi | Bất biến tổng, biến thiên hiệu | “Chuyển … từ bên này sang bên kia” | Xét đại lượng không đổi (tổng) và đại lượng đổi gấp đôi (hiệu) | Sau khi chuyển, mỗi bên bằng nửa tổng — tính nửa tổng rồi trừ là ra ngay. | 9 quyển · 18 quyển · 110 quyển · 9 quyển… |
-| IV.2 | Biến đổi số bằng cách thêm, bớt, đổi chỗ chữ số | Cấu tạo thập phân, hiệu hai số | Đề nói “xoá chữ số”, “viết thêm chữ số”, “đổi chỗ” | Viết cả hai số theo cấu tạo rồi lấy hiệu | Đổi chỗ hàng trăm với hàng đơn vị: hiệu = 99 × (hiệu hai chữ số). | 978 · 891 · 0 · 1 000… |
-| IV.3 | Rút gọn, so sánh, sắp thứ tự phân số | Tính chất cơ bản của phân số; so sánh phân số | Một nhóm phân số cần sắp thứ tự | Rút gọn → so cùng mẫu hoặc quy đồng | So với 1 và với một nửa trước — nhiều phân số phân loại được ngay. | 7 phần 18 · 7 phần 9 · 2 phần 9 · 8 phần 9 · 5 phần 18 · 2 phần 9 < 5 phần 18 < 7 phần 18 < 7 phần 9 < 8 phần 9 · 8 phần 9 · 2 phần 9… |
-| IV.4 | Công việc chung | Năng suất, cộng và chia phân số | “Làm một mình trong … giờ” đi cùng “cùng làm” | Quy công việc về 1, cộng năng suất, lấy nghịch đảo | Thời gian làm chung luôn **bé hơn** thời gian của người nhanh nhất — dùng để loại đáp số sai ngay lập tức. | 10 phần 7 giờ · 12 phần 7 giờ · 1 giờ 36 phút · 2 giờ 24 phút… |
-| IV.5 | Bài toán đại lượng nhiều bước | Nhân, trừ; đại lượng cùng loại | Cho số nhóm, giá trị mỗi nhóm và số nhóm đã dùng | Rút gọn số bước bằng cách trừ trước, nhân sau | So sánh hai đường giải, chọn đường ít phép tính hơn. | 75 lít · 100 lít · 135 lít · 240 lít… |
-| V.1 | Tổng nhiều số có ràng buộc; tổng – tỉ | Trung bình cộng của dãy cách đều; tổng – tỉ | Ba số hơn kém nhau cùng một lượng; hoặc tổng đi cùng tỉ số | Tìm số giữa trước; sau đó chia theo tỉ lệ | Tổng ba số cách đều luôn chia hết cho 3. | 70 · 66 · 74 · vì ba số cách đều nên số ở giữa là trung bình cộng… |
-| V.2 | Tổng – tỉ có tỉ số thay đổi | Tổng – tỉ, đại lượng không đổi | “Phải thêm (bớt) bao nhiêu để tỉ số trở thành …” | Xác định đại lượng bất biến → tính lại đại lượng kia | Số cần thêm = số bé × (tỉ số mới − tỉ số cũ). | 164 đơn vị · 75 đơn vị · 125 đơn vị · 108 đơn vị |
-| V.3 | Giả thiết tạm | Phương pháp giả thiết tạm | Hai loại đối tượng, biết tổng số và tổng của một đại lượng khác | Giả sử đồng nhất một loại → tính phần chênh → chia cho hiệu đơn vị | Số chó = (số chân − 2 × số con) : 2 — thuộc công thức rút gọn để nhẩm. | 28 con gà, 21 con chó · 7 con gà, 21 con chó · 20 con gà, 37 con chó · 24 con gà, 25 con chó |
-| V.4 | Tỉ lệ nghịch, so sánh hai phương án | Đại lượng tỉ lệ nghịch, tổng số ngày công | Thay đổi số người, hỏi thay đổi thời gian | Bám vào tổng số ngày công không đổi | Số người tăng gấp k lần thì số ngày giảm còn 1 phần k. | 1,6 ngày · 1,75 ngày · 1,5 ngày · 5,33 ngày |
-| V.5 | Chữ số tận cùng | Tính chất chữ số tận cùng của tổng, tích | Câu hỏi chỉ hỏi chữ số tận cùng | Rút gọn về chữ số tận cùng rồi tính | Tích có thừa số tận cùng 0 hoặc 5 thì tận cùng là 0 hoặc 5. | 4 · 0 · 7 · 6 |
+| II.5 | Ba dạng bài trung bình cộng | Quan hệ tổng – số lượng – trung bình cộng | Cụm “trung bình mỗi …” | Đi qua tổng làm trung gian | Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng. | 879 kg · 771 kg · 234 kg · 81 kg |
+| III.1 | Tổng – tỉ, hiệu – tỉ dạng ẩn | Tỉ số, sơ đồ đoạn thẳng, dịch lời văn thành số | Đề mô tả vòng thay vì cho số: “nếu … thì …”, “chia thành … phần” | Dịch dữ kiện ẩn thành số rồi áp dạng chuẩn | Kẻ sẵn ba dòng Tổng – Hiệu – Tỉ số, điền được hai dòng là giải được. | kho B: 25 kg, thư viện: 75 kg · 145 kg · hợp tác xã: 27 kg, xưởng: 162 kg · trang trại: 13 kg, cửa hàng: 39 kg… |
+| III.2 | Tìm phân số của một số, nhiều bước | Tìm phân số của một số | Cụm “… số còn lại”, “… số đó” | Tính tuần tự, sau mỗi bước ghi lại số còn lại | Còn lại sau ngày đầu là (1 − phân số) của tổng; nhân trực tiếp cho nhanh. | 96 kg · 20 kg · 32 kg · 148 kg… |
+| III.3 | Bài toán hiệu – tỉ | Tỉ số, sơ đồ đoạn thẳng | Đề cho **hiệu** và **tỉ số** | Sơ đồ → hiệu số phần → giá trị một phần | Hiệu luôn chia hết cho hiệu số phần — dùng để kiểm tra đã đọc đúng tỉ số chưa. | hợp tác xã: 256 kg, xưởng: 320 kg · xưởng: 64 kg, kho B: 256 kg · hợp tác xã: 212 kg, kho B: 742 kg · hợp tác xã: 119 kg, kho B: 357 kg… |
+| III.4 | Tìm phân số của một số | Nhân số tự nhiên với phân số | Cụm “bằng … của …” | Chia theo mẫu số rồi nhân theo tử số | Chia trước, nhân sau — số nhỏ hơn nên tính nhẩm được. | 120 cây · 10 cây · 10 cây · 23 cây… |
+| III.5 | Bài toán tuổi | Bất biến hiệu số tuổi, tổng – hiệu, tổng – tỉ | Xuất hiện mốc thời gian: hiện nay, sau … năm, cách đây … năm | Kẻ bảng thời gian, bám vào hiệu tuổi không đổi | Tổng tuổi của n người sau k năm tăng thêm đúng n × k. | bố 40 tuổi, con 10 tuổi · 56 tuổi · 24 tuổi · 50 tuổi… |
+| IV.1 | Lập bảng | Suy luận loại trừ; đọc hiểu câu phủ định | Đề ghép **người với việc** và cho một loạt câu khẳng định hoặc phủ định | Kẻ bảng hai chiều, đánh × và ✓, mỗi ✓ kéo theo cả dòng cả cột | Bắt đầu từ người bị loại nhiều khả năng nhất — dòng ấy chốt được sớm nhất. | Lan học mĩ thuật; Hà học tiếng Anh; Tuấn học tin học · Dũng học bóng đá; Yến học bóng rổ; Tuấn học cầu lông · Hùng học bơi; Yến học cờ vua; Phúc học vẽ · Trang học bơi; Bình học cờ vua; Hùng học vẽ |
+| IV.2 | Công việc chung | Năng suất, cộng và chia phân số | “Làm một mình trong … giờ” đi cùng “cùng làm” | Quy công việc về 1, cộng năng suất, lấy nghịch đảo | Thời gian làm chung luôn **bé hơn** thời gian của người nhanh nhất — dùng để loại đáp số sai ngay lập tức. | 60 phần 13 giờ · 1 giờ 20 phút · 4 giờ · 3 giờ 45 phút… |
+| IV.3 | Chuyển đổi giữa hai đại lượng, tổng không đổi | Bất biến tổng, biến thiên hiệu | “Chuyển … từ bên này sang bên kia” | Xét đại lượng không đổi (tổng) và đại lượng đổi gấp đôi (hiệu) | Sau khi chuyển, mỗi bên bằng nửa tổng — tính nửa tổng rồi trừ là ra ngay. | 18 quyển · 19 quyển · 21 quyển · 20 quyển… |
+| IV.4 | Dùng chữ thay số | Cấu tạo thập phân của số; tổng – hiệu | Đề viết số bằng chữ hoặc bằng dấu sao và cho quan hệ giữa các chữ số | Viết cấu tạo số theo chữ, thay vào điều kiện rồi rút gọn | Đổi chỗ hai chữ số của số có hai chữ số thì hiệu luôn là bội của 9. | 27 · 84 · 73 · 27 |
+| IV.5 | Bài toán đại lượng nhiều bước | Nhân, trừ; đại lượng cùng loại | Cho số nhóm, giá trị mỗi nhóm và số nhóm đã dùng | Rút gọn số bước bằng cách trừ trước, nhân sau | So sánh hai đường giải, chọn đường ít phép tính hơn. | 260 lít · 40 lít · 60 lít · 120 lít |
+| V.1 | Tổng nhiều số có ràng buộc; tổng – tỉ | Trung bình cộng của dãy cách đều; tổng – tỉ | Ba số hơn kém nhau cùng một lượng; hoặc tổng đi cùng tỉ số | Tìm số giữa trước; sau đó chia theo tỉ lệ | Tổng ba số cách đều luôn chia hết cho 3. | 116 · 112 · 120 · vì ba số cách đều nên số ở giữa là trung bình cộng… |
+| V.2 | Tổng – tỉ có tỉ số thay đổi | Tổng – tỉ, đại lượng không đổi | “Phải thêm (bớt) bao nhiêu để tỉ số trở thành …” | Xác định đại lượng bất biến → tính lại đại lượng kia | Số cần thêm = số bé × (tỉ số mới − tỉ số cũ). | 165 đơn vị · 354 đơn vị · 72 đơn vị · 80 đơn vị… |
+| V.3 | Đại lượng khối lượng, chia phần và làm tròn lên | Bảng đơn vị khối lượng; phép chia có dư | Số đo nhiều đơn vị; câu hỏi “ít nhất bao nhiêu” | Quy về một đơn vị, chia, xét phần dư | 1 tấn = 1 000 kg nên chia cho 1 000 là bớt ba chữ số 0. | 4 956 kg · 49 tạ 56 kg · 2 478 kg, không thừa · 5 xe… |
+| V.4 | Dãy phân số, so sánh bằng phần bù | Phần bù tới 1; quy luật dãy phân số | Tử và mẫu hơn kém nhau đúng 1 đơn vị | Xét phần bù tới 1 rồi so sánh | n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. | 1 phần 2 · 2 phần 3 · 3 phần 4 · 4 phần 5 · 7 phần 8 · đều bé hơn 1 · tăng dần… |
+| V.5 | Giả thiết tạm | Phương pháp giả thiết tạm | Hai loại đối tượng, biết tổng số và tổng của một đại lượng khác | Giả sử đồng nhất một loại → tính phần chênh → chia cho hiệu đơn vị | Số chó = (số chân − 2 × số con) : 2 — thuộc công thức rút gọn để nhẩm. | 30 con gà, 24 con chó · 27 con gà, 23 con chó · 34 con gà, 28 con chó · 31 con gà, 20 con chó |
 
 ---
 
@@ -648,21 +660,21 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | II.3 | TD2, TD3 | Cụm “có tất cả” cho **tổng**; cụm “nhiều hơn” cho **hiệu**. |
 | II.4 | TD2, TD3 | Nhân hay chia với n trước, **đổi đơn vị sau** — làm ngược là rối. |
 | II.5 | TD2, TD3 | Từ trung bình cộng luôn tìm được **tổng** trước, rồi mới tính tiếp. |
-| III.1 | TD2, TD3 | Câu hỏi đòi đơn vị nào thì bước **cuối cùng** mới đổi sang đơn vị đó. |
+| III.1 | TD2, TD6 | Dịch xong dữ kiện ẩn thì bài trở lại **đúng dạng chuẩn**. |
 | III.2 | TD2, TD3 | Cụm “số gạo **còn lại**” đổi hẳn số bị nhân ở bước hai. |
 | III.3 | TD3, TD2 | Chia cho **hiệu số phần**, không phải tổng số phần. |
-| III.4 | TD2, TD6 | Hiệu tuổi là đại lượng **bất biến** — chìa khoá của mọi bài toán tuổi. |
-| III.5 | TD2, TD6 | Dịch xong dữ kiện ẩn thì bài trở lại **đúng dạng chuẩn**. |
-| IV.1 | TD3, TD6 | Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển. |
-| IV.2 | TD3, TD2 | Thêm chữ số vào **bên trái** là cộng thêm; thêm vào **bên phải** là nhân 10 rồi cộng. |
-| IV.3 | TD1, TD5 | Cùng mẫu số thì **chỉ cần so tử số**. |
-| IV.4 | TD3, TD6 | Cộng **năng suất**, tuyệt đối không cộng thời gian. |
+| III.4 | TD2, TD3 | Phân số tính trên **số nào** — đọc kĩ cụm “… của …”. |
+| III.5 | TD2, TD6 | Hiệu tuổi là đại lượng **bất biến** — chìa khoá của mọi bài toán tuổi. |
+| IV.1 | TD3, TD4 | Đặt được một ✓ thì **cả dòng và cả cột** còn lại đều thành ×. Bỏ bước gạch cột là chỗ bài bị tắc giữa chừng. |
+| IV.2 | TD3, TD6 | Cộng **năng suất**, tuyệt đối không cộng thời gian. |
+| IV.3 | TD3, TD6 | Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển. |
+| IV.4 | TD1, TD4 | Chữ số hàng cao nhất **khác 0**, và mọi chữ số chỉ nhận giá trị từ 0 đến 9. Hai ràng buộc này thường là chỗ loại bớt đáp số. |
 | IV.5 | TD3, TD5 | Trừ **số thùng** trước khi nhân thì ít phép tính hơn. |
 | V.1 | TD4, TD3 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
 | V.2 | TD6, TD3 | Tìm cho ra **đại lượng không đổi** rồi lấy nó làm gốc quy chiếu. |
-| V.3 | TD6, TD3 | Chênh lệch chân của **một** con là 4 − 2 = 2 — đó là số chia. |
-| V.4 | TD6, TD3 | Đại lượng bất biến ở đây là **tổng số ngày công**. |
-| V.5 | TD5, TD2 | Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu. |
+| V.3 | TD3, TD6 | Câu hỏi “ít nhất bao nhiêu xe” luôn **làm tròn lên**. |
+| V.4 | TD6, TD5 | Phần bù **bé hơn** nghĩa là phân số **lớn hơn**. |
+| V.5 | TD6, TD3 | Chênh lệch chân của **một** con là 4 − 2 = 2 — đó là số chia. |
 
 ---
 
@@ -682,21 +694,21 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 | II.3 | Nhầm hiệu thành tổng khi đề diễn đạt vòng vo. | Ghi riêng ra hai dòng: Tổng = … ; Hiệu = … trước khi tính. |
 | II.4 | Đổi mét sang xăng-ti-mét ngay từ đầu rồi lại nhân tỉ lệ một lần nữa. | Viết rõ một dòng: “1 cm bản đồ = … cm thật” trước khi tính. |
 | II.5 | Đi tìm ngay số còn thiếu mà chưa tính tổng. | Bước đầu tiên luôn viết: “Tổng = trung bình cộng × số ngày”. |
-| III.1 | Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. | Khoanh tròn đơn vị trong câu hỏi trước khi đặt bút. |
+| III.1 | Lao vào tính khi chưa xác định được tổng, hiệu hay tỉ số. | Viết ba dòng trước khi tính: Tổng = … ; Hiệu = … ; Tỉ số = … ; dòng nào chưa biết thì để trống và đi tìm. |
 | III.2 | Lấy cả hai phân số nhân với tổng ban đầu. | Sau mỗi bước, viết rõ “còn lại … kg” rồi mới sang bước sau. |
 | III.3 | Dùng nhầm công thức của tổng – tỉ cho bài hiệu – tỉ. | Đọc kĩ: đề cho “tổng” hay cho “nhiều hơn”? Ghi rõ ra trước khi vẽ. |
-| III.4 | Cộng thêm số năm vào cả hiệu số tuổi. | Kẻ bảng ba dòng: trước kia – hiện nay – sau này, ghi rõ tuổi từng người. |
-| III.5 | Lao vào tính khi chưa xác định được tổng, hiệu hay tỉ số. | Viết ba dòng trước khi tính: Tổng = … ; Hiệu = … ; Tỉ số = … ; dòng nào chưa biết thì để trống và đi tìm. |
-| IV.1 | Chuyển đúng bằng hiệu hai bên nên bên ít lại thành bên nhiều. | Thử lại: sau khi chuyển, cộng trừ ra hai số rồi so xem có bằng nhau không. |
-| IV.2 | Nhầm “viết thêm bên trái” thành “viết thêm bên phải”. | Viết cả số cũ và số mới ra rồi mới so sánh. |
-| IV.3 | Rút gọn xong quên rằng thứ tự vẫn giữ nguyên, đi quy đồng lại từ đầu. | Ghi cả phân số gốc và phân số tối giản cạnh nhau để đối chiếu. |
-| IV.4 | Cộng hai khoảng thời gian rồi chia đôi. | Luôn viết dòng “Mỗi giờ vòi thứ nhất chảy được … bể” trước. |
+| III.4 | Nhân phân số với đại lượng khác, không phải đại lượng đề chỉ định. | Gạch chân cụm “bằng … số cây của …” để xác định số bị nhân. |
+| III.5 | Cộng thêm số năm vào cả hiệu số tuổi. | Kẻ bảng ba dòng: trước kia – hiện nay – sau này, ghi rõ tuổi từng người. |
+| IV.1 | Đánh ✓ rồi đi tiếp luôn, không gạch × cho phần còn lại của cột. | Sau mỗi lần đặt ✓, dừng lại gạch đủ dòng và cột rồi mới đọc manh mối kế. |
+| IV.2 | Cộng hai khoảng thời gian rồi chia đôi. | Luôn viết dòng “Mỗi giờ vòi thứ nhất chảy được … bể” trước. |
+| IV.3 | Chuyển đúng bằng hiệu hai bên nên bên ít lại thành bên nhiều. | Thử lại: sau khi chuyển, cộng trừ ra hai số rồi so xem có bằng nhau không. |
+| IV.4 | Tính ra a bằng 0 rồi vẫn nhận, hoặc để một chữ số vượt quá 9. | Viết sẵn hai dòng ràng buộc lên đầu bài giải rồi mới tính. |
 | IV.5 | Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. | Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng. |
 | V.1 | Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. | Nhìn ra “cách đều” trước khi đặt bút. |
 | V.2 | Lấy hiệu hai tỉ số nhân với tổng ban đầu. | Viết rõ ba dòng: số bé, số lớn cũ, số lớn mới. |
-| V.3 | Chia số chân thiếu cho 4 thay vì cho hiệu số chân của hai loài. | Thử lại: nhân ngược ra tổng số chân xem có khớp không. |
-| V.4 | Trừ thẳng số người rồi lấy hiệu làm số ngày rút ngắn. | Viết rõ: tổng ngày công = … ; số ngày mới = … ; sớm hơn = … . |
-| V.5 | Tính trọn cả phép tính, vừa lâu vừa dễ sai. | Lấy tay che phần đầu của hai số, chỉ để lộ chữ số cuối. |
+| V.3 | Chia rồi lấy phần nguyên, bỏ quên phần dư vẫn cần một xe. | Hỏi lại: phần thóc dư có tự bay đi được không? |
+| V.4 | So phần bù rồi kết luận cùng chiều với phần bù. | Nghĩ tới chiếc bánh: thiếu ít hơn thì phần đang có nhiều hơn. |
+| V.5 | Chia số chân thiếu cho 4 thay vì cho hiệu số chân của hai loài. | Thử lại: nhân ngược ra tổng số chân xem có khớp không. |
 
 ---
 
@@ -714,21 +726,21 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 **Bài II.3** — (1) Câu nào cho biết tổng của hai đại lượng? — (2) Câu nào cho biết chúng hơn kém nhau bao nhiêu? — (3) Vẽ sơ đồ rồi áp công thức.
 **Bài II.4** — (1) Tỉ lệ 1 : n nghĩa là gì? — (2) Đi từ bản đồ ra thật thì nhân hay chia? — (3) Đổi đơn vị ở bước cuối cùng.
 **Bài II.5** — (1) Đề cho gì và hỏi gì? — (2) Tính tổng trước bằng cách nhân trung bình cộng với số lượng. — (3) Lấy tổng trừ các số đã biết để ra số còn thiếu.
-**Bài III.1** — (1) Tính tổng khối lượng theo ki-lô-gam. — (2) Đề hỏi kết quả theo đơn vị nào? — (3) Đổi kết quả sang đơn vị đó.
+**Bài III.1** — (1) Đề đã cho tổng chưa? Cho hiệu chưa? Cho tỉ số chưa? — (2) Câu nào trong đề đang mô tả cái còn thiếu? — (3) Dịch câu đó thành một con số rồi giải như bài chuẩn.
 **Bài III.2** — (1) Ngày đầu bán bao nhiêu ki-lô-gam? — (2) Sau ngày đầu còn lại bao nhiêu? — (3) Phân số của ngày thứ hai tính trên số nào?
 **Bài III.3** — (1) Đề cho tổng hay cho hiệu? — (2) Vẽ sơ đồ, phần dôi ra ứng với hiệu. — (3) Hiệu chia cho hiệu số phần ra giá trị một phần.
-**Bài III.4** — (1) Sau mỗi năm, mỗi người tăng thêm mấy tuổi? — (2) Hiệu số tuổi có thay đổi không? — (3) Tổng số tuổi hai người tăng thêm bao nhiêu sau mỗi năm?
-**Bài III.5** — (1) Đề đã cho tổng chưa? Cho hiệu chưa? Cho tỉ số chưa? — (2) Câu nào trong đề đang mô tả cái còn thiếu? — (3) Dịch câu đó thành một con số rồi giải như bài chuẩn.
-**Bài IV.1** — (1) Hiện tại hai bên hơn kém nhau bao nhiêu? — (2) Chuyển 1 quyển thì hiệu giảm mấy quyển? — (3) Muốn hiệu về 0 thì phải chuyển bao nhiêu?
-**Bài IV.2** — (1) Viết số theo cấu tạo a × 100 + b × 10 + c. — (2) Viết số mới cũng theo cấu tạo như vậy. — (3) Trừ hai biểu thức, các phần giống nhau triệt tiêu.
-**Bài IV.3** — (1) Các phân số có cùng mẫu số không? — (2) Nếu cùng mẫu thì so gì? — (3) Rút gọn không làm thay đổi giá trị nên không đổi thứ tự.
-**Bài IV.4** — (1) Mỗi giờ vòi thứ nhất chảy được mấy phần bể? — (2) Mỗi giờ cả hai vòi chảy được mấy phần bể? — (3) Lấy 1 chia cho phần chảy được trong một giờ.
+**Bài III.4** — (1) Phân số đó tính trên số nào? — (2) Chia số đó thành mấy phần bằng nhau? — (3) Lấy mấy phần trong số đó?
+**Bài III.5** — (1) Sau mỗi năm, mỗi người tăng thêm mấy tuổi? — (2) Hiệu số tuổi có thay đổi không? — (3) Tổng số tuổi hai người tăng thêm bao nhiêu sau mỗi năm?
+**Bài IV.1** — (1) Kẻ bảng ba dòng ba cột trước đã. — (2) Manh mối nào cho biết chắc chắn một ô là sai? — (3) Dòng nào chỉ còn một ô trống thì ô ấy chính là đáp án của dòng ấy.
+**Bài IV.2** — (1) Mỗi giờ vòi thứ nhất chảy được mấy phần bể? — (2) Mỗi giờ cả hai vòi chảy được mấy phần bể? — (3) Lấy 1 chia cho phần chảy được trong một giờ.
+**Bài IV.3** — (1) Hiện tại hai bên hơn kém nhau bao nhiêu? — (2) Chuyển 1 quyển thì hiệu giảm mấy quyển? — (3) Muốn hiệu về 0 thì phải chuyển bao nhiêu?
+**Bài IV.4** — (1) Số có hai chữ số ab viết theo cấu tạo là gì? — (2) Thay cấu tạo ấy vào điều kiện đề cho, rồi rút gọn. — (3) Kiểm lại: chữ số hàng chục có khác 0 không?
 **Bài IV.5** — (1) Còn lại bao nhiêu thùng? — (2) Mỗi thùng bao nhiêu lít? — (3) Nhân hai kết quả đó.
 **Bài V.1** — (1) Ba số này có cách đều nhau không? — (2) Với ba số cách đều, số nào bằng trung bình cộng? — (3) Tìm số giữa trước rồi lùi và tiến ra hai số kia.
 **Bài V.2** — (1) Đại lượng nào không thay đổi trong bài? — (2) Tìm số bé trước bằng tổng – tỉ. — (3) Số lớn mới bằng số bé nhân tỉ số mới.
-**Bài V.3** — (1) Giả sử tất cả đều là gà thì có bao nhiêu chân? — (2) Số chân đó thiếu so với thực tế bao nhiêu? — (3) Mỗi con chó nhiều hơn một con gà mấy chân?
-**Bài V.4** — (1) Tổng số ngày công là bao nhiêu? — (2) Với số người mới thì cần bao nhiêu ngày? — (3) Lấy số ngày cũ trừ số ngày mới.
-**Bài V.5** — (1) Chữ số tận cùng của mỗi số là gì? — (2) Tính riêng với hai chữ số ấy. — (3) Lấy chữ số tận cùng của kết quả vừa tính.
+**Bài V.3** — (1) Đổi tất cả về ki-lô-gam. — (2) Chia cho sức chở mỗi xe. — (3) Còn dư thì có cần thêm xe không?
+**Bài V.4** — (1) Mỗi phân số còn thiếu bao nhiêu nữa thì bằng 1? — (2) Phần thiếu ấy thay đổi thế nào khi n tăng? — (3) Thiếu ít hơn thì phân số lớn hơn.
+**Bài V.5** — (1) Giả sử tất cả đều là gà thì có bao nhiêu chân? — (2) Số chân đó thiếu so với thực tế bao nhiêu? — (3) Mỗi con chó nhiều hơn một con gà mấy chân?
 
 ---
 
@@ -748,21 +760,21 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | II.3 | Hai lớp có 90 quyển sách, lớp A nhiều hơn lớp B 10 quyển. Mỗi lớp có mấy quyển? | 50 và 40 |
 | II.4 | Bản đồ tỉ lệ 1 : 1 000, đoạn đo được 5 cm dài bao nhiêu mét thật? | 50 m |
 | II.5 | Trung bình mỗi ngày bán 40 kg, hỏi 5 ngày bán bao nhiêu? | 200 kg |
-| III.1 | Xe chở 20 bao gạo, mỗi bao 50 kg. Xe chở mấy tạ? | 10 tạ |
+| III.1 | Hai kho có 120 tấn, kho A bằng 1 phần 3 kho B. Mỗi kho bao nhiêu tấn? | 30 và 90 |
 | III.2 | Có 60 kg gạo, bán 1 phần 3 rồi bán tiếp 1 phần 2 số còn lại. Còn bao nhiêu? | 20 kg |
 | III.3 | Số lớn hơn số bé 24, số bé bằng 1 phần 3 số lớn. Tìm hai số. | 12 và 36 |
-| III.4 | Bố hơn con 30 tuổi. Sau 5 năm nữa bố hơn con bao nhiêu tuổi? | 30 tuổi |
-| III.5 | Hai kho có 120 tấn, kho A bằng 1 phần 3 kho B. Mỗi kho bao nhiêu tấn? | 30 và 90 |
-| IV.1 | Tổ Một có 30 quyển, tổ Hai có 20 quyển. Chuyển mấy quyển để bằng nhau? | 5 quyển |
-| IV.2 | Viết thêm chữ số 2 vào bên trái số 345 thì số mới hơn số cũ bao nhiêu? | 2 000 |
-| IV.3 | Sắp xếp từ bé đến lớn: 3 phần 8, 5 phần 8, 1 phần 8 | 1 phần 8 < 3 phần 8 < 5 phần 8 |
-| IV.4 | Vòi một đầy bể trong 4 giờ, vòi hai trong 6 giờ. Cả hai vòi mấy giờ đầy? | 2 giờ 24 phút |
+| III.4 | Tổ Một trồng 60 cây, tổ Hai bằng 2 phần 3 tổ Một. Tổ Hai trồng mấy cây? | 40 cây |
+| III.5 | Bố hơn con 30 tuổi. Sau 5 năm nữa bố hơn con bao nhiêu tuổi? | 30 tuổi |
+| IV.1 | An, Bình, Chi học ba môn bơi, vẽ, hát. An không học bơi và không học vẽ. Bình không học hát. Hỏi mỗi bạn học môn nào? | An học hát; Bình học vẽ; Chi học bơi |
+| IV.2 | Vòi một đầy bể trong 4 giờ, vòi hai trong 6 giờ. Cả hai vòi mấy giờ đầy? | 2 giờ 24 phút |
+| IV.3 | Tổ Một có 30 quyển, tổ Hai có 20 quyển. Chuyển mấy quyển để bằng nhau? | 5 quyển |
+| IV.4 | Số có hai chữ số, đổi chỗ hai chữ số được số nhỏ hơn 27 đơn vị, tổng hai chữ số bằng 11. Tìm số ấy. | 74 |
 | IV.5 | Có 10 thùng dầu, mỗi thùng 20 lít, đã bán 3 thùng. Còn bao nhiêu lít? | 140 lít |
 | V.1 | Ba số cách đều có tổng 60, hơn kém nhau 4. Tìm ba số. | 16, 20, 24 |
 | V.2 | Số lớn gấp 2 lần số bé, tổng là 30. Thêm bao nhiêu vào số lớn để nó gấp 4 lần số bé? | 20 |
-| V.3 | Có 10 con gà và chó, 28 chân. Có mấy con chó? | 4 con chó |
-| V.4 | 6 người làm xong trong 10 ngày. Thêm 4 người thì sớm hơn mấy ngày? | 4 ngày |
-| V.5 | Tích 137 × 46 có chữ số tận cùng là chữ số nào? | 2 |
+| V.3 | 3 tấn 4 tạ 50 kg = … kg | 3 450 kg |
+| V.4 | So sánh 5 phần 6 và 7 phần 8. | 5 phần 6 < 7 phần 8 |
+| V.5 | Có 10 con gà và chó, 28 chân. Có mấy con chó? | 4 con chó |
 
 ---
 

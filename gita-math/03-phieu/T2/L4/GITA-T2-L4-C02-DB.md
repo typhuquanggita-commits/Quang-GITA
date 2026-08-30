@@ -232,59 +232,60 @@ d) 74 m … 3 943 mm
 
 ## PHẦN D — DẠNG 5 – DẠNG 6 VÀ DẠNG PHỐI HỢP · Mức M3 — Vận dụng · 20 phút · 20 điểm
 
-### Bài 1. (4 điểm) Tìm hai số khi biết tổng và tỉ số
+### Bài 1. (4 điểm) Hai nhóm có phần chung — đếm bằng hai vòng tròn
 
-Vẽ sơ đồ đoạn thẳng rồi giải.
+Vẽ hai vòng tròn và điền số vào ba phần trước khi tính.
 
-a) Tổ Hai và nhóm Sao Mai trồng được tất cả 270 cây. Số cây của tổ Hai bằng 2 phần 3 số cây của nhóm Sao Mai. Mỗi tổ trồng được bao nhiêu cây?
-b) Tổ Một và đội Hai trồng được tất cả 891 cây. Số cây của tổ Một bằng 1 phần 2 số cây của đội Hai. Mỗi tổ trồng được bao nhiêu cây?
-c) Nhóm Hoa Phượng và đội Hai trồng được tất cả 1 035 cây. Số cây của nhóm Hoa Phượng bằng 4 phần 5 số cây của đội Hai. Mỗi tổ trồng được bao nhiêu cây?
-d) Tổ Ba và nhóm Sao Mai trồng được tất cả 707 cây. Số cây của tổ Ba bằng 2 phần 5 số cây của nhóm Sao Mai. Mỗi tổ trồng được bao nhiêu cây?
-e) Nhóm Sao Mai và tổ Một trồng được tất cả 408 cây. Số cây của nhóm Sao Mai bằng 1 phần 5 số cây của tổ Một. Mỗi tổ trồng được bao nhiêu cây?
+a) Lớp 5B có 38 học sinh. Có 17 em học cờ vua, 21 em học tiếng Anh, trong đó 5 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
+b) Lớp 5B có 39 học sinh. Có 21 em học cờ vua, 25 em học tiếng Anh, trong đó 12 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
+c) Lớp 4A có 26 học sinh. Có 8 em học bơi, 18 em học tiếng Anh, trong đó 3 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
+d) Lớp 5A có 31 học sinh. Có 17 em học bóng rổ, 15 em học tiếng Anh, trong đó 7 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
+e) Lớp 5B có 26 học sinh. Có 13 em học hát, 14 em học tiếng Anh, trong đó 4 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
+f) Lớp 4B có 31 học sinh. Có 14 em học vẽ, 24 em học bóng rổ, trong đó 8 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
 
-### Bài 2. (4 điểm) Tổng của các số tự nhiên liên tiếp
-
-Với mỗi ý, tìm số theo yêu cầu.
-
-a) Tổng của 7 số tự nhiên liên tiếp bằng 1 918. Tìm số bé nhất trong 7 số đó.
-b) Tổng của 3 số tự nhiên liên tiếp bằng 1 242. Tìm số bé nhất trong 3 số đó.
-c) Tổng của 7 số tự nhiên liên tiếp bằng 1 995. Tìm số bé nhất trong 7 số đó.
-d) Tổng của 5 số tự nhiên liên tiếp bằng 400. Tìm số bé nhất trong 5 số đó.
-
-### Bài 3. (4 điểm) Định vị số hạng trong dãy cách đều
-
-Cho dãy: 14, 18, 22, …, 702.
-
-a) Dãy có bao nhiêu số hạng?
-b) Số hạng thứ 86 là số nào?
-c) Số 110 là số hạng thứ mấy?
-d) Số 162 là số hạng thứ mấy?
-e) Số 211 có thuộc dãy không? Vì sao?
-f) Tổng của cả dãy bằng bao nhiêu?
-
-### Bài 4. (4 điểm) Đếm số lần xuất hiện của một chữ số
-
-Đếm số lần xuất hiện, tính cả khi chữ số đó xuất hiện nhiều lần trong một số.
-
-a) Từ 1 đến 500, chữ số 3 xuất hiện bao nhiêu lần?
-b) Từ 1 đến 300, chữ số 7 xuất hiện bao nhiêu lần?
-c) Từ 1 đến 100, chữ số 2 xuất hiện bao nhiêu lần?
-d) Từ 1 đến 200, chữ số 5 xuất hiện bao nhiêu lần?
-e) Từ 1 đến 200, chữ số 1 xuất hiện bao nhiêu lần?
-
-### Bài 5. (4 điểm) Dãy số cho bởi quy tắc truy hồi
+### Bài 2. (4 điểm) Dãy số cho bởi quy tắc truy hồi
 
 Dãy số được lập theo ba quy tắc sau.
 
-- Số hạng đầu bằng 2.
-- Số hạng ở **vị trí chẵn** bằng số hạng liền trước nhân 2 rồi cộng 3.
-- Số hạng ở **vị trí lẻ** bằng số hạng liền trước cộng 3 nhân với số thứ tự của số hạng liền trước.
+- Số hạng đầu bằng 1.
+- Số hạng ở **vị trí chẵn** bằng số hạng liền trước nhân 2 rồi cộng 4.
+- Số hạng ở **vị trí lẻ** bằng số hạng liền trước cộng 4 nhân với số thứ tự của số hạng liền trước.
 
 a) Viết ba số hạng đầu tiên của dãy.
 b) Số hạng thứ 5 của dãy là số nào?
 c) Số hạng thứ 7 của dãy là số nào?
 d) Số hạng thứ 9 của dãy là số nào?
 e) Từ số hạng thứ 4 đến số hạng thứ 6, dãy tăng thêm bao nhiêu đơn vị?
+
+### Bài 3. (4 điểm) Định vị số hạng trong dãy cách đều
+
+Cho dãy: 9, 15, 21, …, 1 251.
+
+a) Dãy có bao nhiêu số hạng?
+b) Số hạng thứ 104 là số nào?
+c) Số 861 là số hạng thứ mấy?
+d) Số 1 137 là số hạng thứ mấy?
+e) Số 1 204 có thuộc dãy không? Vì sao?
+f) Tổng của cả dãy bằng bao nhiêu?
+
+### Bài 4. (4 điểm) Đếm số lần xuất hiện của một chữ số
+
+Đếm số lần xuất hiện, tính cả khi chữ số đó xuất hiện nhiều lần trong một số.
+
+a) Từ 1 đến 200, chữ số 0 xuất hiện bao nhiêu lần?
+b) Từ 1 đến 500, chữ số 5 xuất hiện bao nhiêu lần?
+c) Từ 1 đến 150, chữ số 3 xuất hiện bao nhiêu lần?
+d) Từ 1 đến 100, chữ số 7 xuất hiện bao nhiêu lần?
+
+### Bài 5. (4 điểm) Tìm số ban đầu bằng cách tính ngược
+
+Vẽ sơ đồ mũi tên trước khi tính. Tính xong phải thử lại theo chiều xuôi.
+
+a) Em nghĩ ra một số. Lấy số ấy nhân với 8, được bao nhiêu thì cộng thêm 44, rồi chia cho 6 thì được 42. Hỏi số em nghĩ ra là số nào?
+b) Em nghĩ ra một số. Lấy số ấy nhân với 5, được bao nhiêu thì cộng thêm 18, rồi chia cho 4 thì được 37. Hỏi số em nghĩ ra là số nào?
+c) Em nghĩ ra một số. Lấy số ấy nhân với 6, được bao nhiêu thì cộng thêm 18, rồi chia cho 4 thì được 18. Hỏi số em nghĩ ra là số nào?
+d) Em nghĩ ra một số. Lấy số ấy nhân với 8, được bao nhiêu thì cộng thêm 14, rồi chia cho 2 thì được 171. Hỏi số em nghĩ ra là số nào?
+e) Em nghĩ ra một số. Lấy số ấy nhân với 5, được bao nhiêu thì cộng thêm 20, rồi chia cho 5 thì được 15. Hỏi số em nghĩ ra là số nào?
 
 ---
 
@@ -442,39 +443,39 @@ f) Lỗi nào dễ mắc ở đề này?
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.
 
 ### Bài D.1
-**Đáp số:** a) tổ Hai: 108 cây, nhóm Sao Mai: 162 cây · b) tổ Một: 297 cây, đội Hai: 594 cây · c) nhóm Hoa Phượng: 460 cây, đội Hai: 575 cây · d) tổ Ba: 202 cây, nhóm Sao Mai: 505 cây · e) nhóm Sao Mai: 68 cây, tổ Một: 340 cây
-**Hướng giải:** Tỉ số cho biết số phần bằng nhau của mỗi đại lượng. Tổng số phần = số phần thứ nhất + số phần thứ hai. Giá trị một phần = tổng : tổng số phần. Nhân giá trị một phần với số phần của từng đại lượng.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Phải tính **tổng số phần** trước khi chia.
-**Lỗi thường gặp:** Chia tổng cho một trong hai số của tỉ số thay vì cho tổng số phần. Phòng: Vẽ sơ đồ, đếm tổng số đoạn nhỏ trên cả hai đoạn thẳng.
-**Gợi ý 3 tầng:** (1) Vẽ đại lượng thứ nhất mấy phần, thứ hai mấy phần? — (2) Tổng cộng có bao nhiêu phần bằng nhau? — (3) Một phần bằng bao nhiêu?
+**Đáp số:** a) 5 em · b) 5 em · c) 3 em · d) 6 em · e) 3 em · f) 1 em
+**Hướng giải:** BẪY — Cộng thẳng, quên trừ phần chung. Điền phần chung vào trước, rồi trừ ra hai phần riêng. Cộng ba phần ấy được số người tham gia ít nhất một hoạt động; lấy tổng trừ đi là ra số người ngoài cả hai vòng.
+**Nhãn tư duy:** TD2, TD4. Điểm chốt: Con số đề cho cho mỗi môn **đã bao gồm** những em học cả hai. Cộng thẳng hai con số ấy là đếm phần chung hai lần.
+**Lỗi thường gặp:** Lấy tổng trừ đi tổng hai con số đề cho mà không cộng lại phần chung. Phòng: Vẽ hình trước, điền phần giữa trước, rồi mới điền hai bên.
+**Gợi ý 3 tầng:** (1) Bao nhiêu em học cả hai môn? Điền số ấy vào phần chồng nhau. — (2) Vậy chỉ học riêng mỗi môn là bao nhiêu em? — (3) Cộng ba phần rồi lấy sĩ số lớp trừ đi.
 
 ### Bài D.2
-**Đáp số:** a) 271 · b) 413 · c) 282 · d) 78
-**Hướng giải:** Với một số **lẻ** các số tự nhiên liên tiếp, số ở giữa chính là trung bình cộng: số giữa = tổng : số lượng. Số bé nhất bằng số giữa trừ đi một nửa số lượng còn lại.
-**Nhãn tư duy:** TD3, TD4. Điểm chốt: Với số lượng lẻ thì **số giữa = tổng : số lượng** — đó là chìa khoá.
-**Lỗi thường gặp:** Lấy tổng chia cho số lượng rồi nhận luôn kết quả là số bé nhất. Phòng: Vẽ dãy số ra, đánh dấu vị trí số giữa trước khi lùi về số đầu.
-**Gợi ý 3 tầng:** (1) Số lượng số hạng là số chẵn hay lẻ? — (2) Với số lượng lẻ, số ở giữa bằng tổng chia số lượng. — (3) Từ số giữa lùi về đầu dãy mấy đơn vị?
+**Đáp số:** a) 1, 6, 14 · b) 48 · c) 124 · d) 284 · e) 68
+**Hướng giải:** BẪY — Quy tắc khác nhau ở vị trí chẵn và lẻ. Lập bảng và tính lần lượt từng số hạng theo đúng quy tắc, không nhảy cóc. Ghi rõ số thứ tự của mỗi số hạng để chọn đúng nhánh quy tắc.
+**Nhãn tư duy:** TD3, TD6. Điểm chốt: Quy tắc phụ thuộc **vị trí chẵn hay lẻ** — phải đánh số thứ tự trước.
+**Lỗi thường gặp:** Áp dụng nhầm nhánh quy tắc vì không để ý vị trí. Phòng: Kẻ bảng hai dòng: dòng trên ghi vị trí, dòng dưới ghi số hạng.
+**Gợi ý 3 tầng:** (1) Kẻ bảng vị trí và số hạng. — (2) Xác định vị trí đang xét là chẵn hay lẻ. — (3) Áp dụng đúng nhánh quy tắc cho vị trí đó.
 
 ### Bài D.3
-**Đáp số:** a) 173 · b) 354 · c) 25 · d) 38 · e) không · f) 61 934
+**Đáp số:** a) 208 · b) 627 · c) 143 · d) 189 · e) không · f) 131 040
 **Hướng giải:** BẪY — Số không thuộc dãy. Muốn biết một số là số hạng thứ mấy: lấy số đó trừ số hạng đầu, chia cho khoảng cách rồi cộng 1. Nếu phép chia còn dư thì số đó **không thuộc** dãy.
 **Nhãn tư duy:** TD4, TD2. Điểm chốt: Phép chia **có dư** là bằng chứng số đó không thuộc dãy.
 **Lỗi thường gặp:** Chia được số nguyên rồi quên cộng 1, hoặc bỏ qua phần dư. Phòng: Luôn ghi rõ thương và số dư khi chia.
 **Gợi ý 3 tầng:** (1) Lấy số đó trừ số hạng đầu. — (2) Chia hiệu cho khoảng cách — có chia hết không? — (3) Chia hết thì cộng 1 để ra thứ tự; không chia hết thì số đó không thuộc dãy.
 
 ### Bài D.4
-**Đáp số:** a) 200 · b) 60 · c) 20 · d) 40 · e) 140
+**Đáp số:** a) 31 · b) 101 · c) 35 · d) 20
 **Hướng giải:** BẪY — Số 33, 44… chứa hai lần cùng một chữ số. Đếm theo từng hàng: đếm số lần chữ số đó đứng ở hàng đơn vị, rồi hàng chục, rồi hàng trăm. Ở mỗi hàng, các số thoả mãn lập thành dãy cách đều, dùng công thức đếm số hạng.
 **Nhãn tư duy:** TD4, TD6. Điểm chốt: Một số có thể chứa chữ số đó **nhiều lần**; đếm theo hàng thì không sót.
 **Lỗi thường gặp:** Đếm số lượng **số** chứa chữ số đó thay vì số **lần** xuất hiện. Phòng: Kẻ bảng: hàng đơn vị – hàng chục – hàng trăm, đếm riêng rồi cộng.
 **Gợi ý 3 tầng:** (1) Đếm riêng theo từng hàng. — (2) Ở hàng đơn vị, các số đó cách nhau bao nhiêu đơn vị? — (3) Cộng kết quả của cả ba hàng.
 
 ### Bài D.5
-**Đáp số:** a) 2, 7, 13 · b) 41 · c) 103 · d) 233 · e) 56
-**Hướng giải:** BẪY — Quy tắc khác nhau ở vị trí chẵn và lẻ. Lập bảng và tính lần lượt từng số hạng theo đúng quy tắc, không nhảy cóc. Ghi rõ số thứ tự của mỗi số hạng để chọn đúng nhánh quy tắc.
-**Nhãn tư duy:** TD3, TD6. Điểm chốt: Quy tắc phụ thuộc **vị trí chẵn hay lẻ** — phải đánh số thứ tự trước.
-**Lỗi thường gặp:** Áp dụng nhầm nhánh quy tắc vì không để ý vị trí. Phòng: Kẻ bảng hai dòng: dòng trên ghi vị trí, dòng dưới ghi số hạng.
-**Gợi ý 3 tầng:** (1) Kẻ bảng vị trí và số hạng. — (2) Xác định vị trí đang xét là chẵn hay lẻ. — (3) Áp dụng đúng nhánh quy tắc cho vị trí đó.
+**Đáp số:** a) 26 · b) 26 · c) 9 · d) 41 · e) 11
+**Hướng giải:** Viết chuỗi thao tác thành sơ đồ mũi tên rồi đi ngược lại từ kết quả cuối. Mỗi bước đảo phép tính: nhân thành chia, cộng thành trừ. Thứ tự cũng phải đảo — phép làm sau cùng được gỡ trước tiên.
+**Nhãn tư duy:** TD3, TD5. Điểm chốt: Đảo **cả phép tính lẫn thứ tự**. Đảo phép tính mà giữ nguyên thứ tự thì vẫn sai.
+**Lỗi thường gặp:** Bắt đầu gỡ từ phép tính đầu tiên của đề thay vì từ phép tính cuối cùng. Phòng: Thử lại theo chiều xuôi. Bài này luôn thử lại được, nên không có lý do gì để nộp một đáp số chưa thử.
+**Gợi ý 3 tầng:** (1) Đề đã làm những phép tính nào, theo thứ tự nào? — (2) Phép nào làm sau cùng? Gỡ phép ấy trước tiên. — (3) Nhân thì gỡ bằng chia, cộng thì gỡ bằng trừ.
 
 ### Bài E.1
 **Đáp số:** a) Tìm số hạng thứ n của dãy cách đều · b) Đề hỏi “số hạng thứ …” · c) Công thức số hạng tổng quát của dãy cách đều · d) Đếm số khoảng rồi nhân với khoảng cách · e) Thử công thức với n = 1 và n = 2 để chắc chắn không lệch một khoảng. · f) Nhân khoảng cách với n nên kết quả thừa đúng một khoảng.

@@ -56,145 +56,117 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Tính nhẩm, nêu cách nhẩm.
 
-a) 22 × 101
-b) 78 × 9
-c) 51 × 9
-d) 91 × 9
+a) 69 × 99
+b) 14 × 101
+c) 95 × 101
+d) 81 × 101
+e) 58 × 99
+f) 41 × 11
+g) 74 × 9
 
-### Bài 2. (4 điểm) Tính nhanh bằng cách ghép số tròn
+### Bài 2. (4 điểm) Nhân một số với một tổng, một hiệu
 
 Tính bằng cách thuận tiện nhất.
 
-a) 244 + 87 − 87
-b) 77 + 67 + 23 + 33
-c) 24 + 81 − 81
-d) 79 + 89 + 21 + 11
+a) 20 × 13 + 20 × 41
+b) 78 × 38 − 78 × 20
+c) 46 × 60 − 46 × 38
+d) 16 × 42 + 16 × 29
 
 ### Bài 3. (4 điểm) Tính nhanh nhờ ghép cặp thừa số tròn
 
 Tính bằng cách thuận tiện nhất.
 
-a) 72 × 125 × 8
-b) 89 × 25 × 4
-c) 19 × 25 × 4
-d) 71 × 25 × 4
-e) 50 × 77 × 2
+a) 2 600 : 4 : 10
+b) 37 × 125 × 8
+c) 51 × 25 × 4
+d) 2 750 : 5 : 10
+e) 2 000 : 8 : 10
 
-### Bài 4. (4 điểm) Nhân một số với một tổng, một hiệu
+### Bài 4. (4 điểm) Tính nhanh bằng cách ghép số tròn
 
 Tính bằng cách thuận tiện nhất.
 
-a) 67 × 44 − 67 × 28
-b) 67 × 60 + 67 × 13
-c) 48 × 16 − 48 × 12
-d) 33 × 56 − 33 × 38
-e) 32 × 24 − 32 × 23
+a) 46 + 27 − 27
+b) 142 + 57 − 57
+c) 192 + 18 − 18
+d) 12 + 81 + 88 + 19
+e) 45 + 74 − 74
 
 ### Bài 5. (4 điểm) Tìm x qua hai bước
 
 Tìm x, trình bày từng bước.
 
-a) (x + 257) × 7 = 1 981
-b) 1 194 − x × 9 = 69
-c) x × 4 + 74 = 874
-d) 1 406 − x × 7 = 132
-e) 178 − x × 7 = 17
-f) x × 10 + 264 = 1 614
+a) x × 9 + 138 = 1 236
+b) (x + 92) × 4 = 596
+c) (x + 298) × 5 = 2 325
+d) x × 11 − 127 = 1 083
+e) x × 9 + 193 = 1 291
 
 ---
 
 ## PHẦN II — THI ĐẤU CẶP ĐÔI · Mức M3 — Vận dụng · 20 phút · 20 điểm
 
-### Bài 1. (4 điểm) Tìm x qua ba bước, có dấu ngoặc
+### Bài 1. (4 điểm) Đếm số lần xuất hiện của một chữ số
 
-Tìm x, trình bày đủ các bước.
+Đếm số lần xuất hiện, tính cả khi chữ số đó xuất hiện nhiều lần trong một số.
 
-a) (x × 7 − 16) × 4 = 1 084
-b) (44 + x) × 8 + 4 = 1 292
-c) (31 + x) × 6 + 9 = 639
-d) (x + 42) × 5 − 8 = 477
+a) Từ 1 đến 300, chữ số 2 xuất hiện bao nhiêu lần?
+b) Từ 1 đến 100, chữ số 9 xuất hiện bao nhiêu lần?
+c) Từ 1 đến 150, chữ số 1 xuất hiện bao nhiêu lần?
+d) Từ 1 đến 200, chữ số 9 xuất hiện bao nhiêu lần?
+e) Từ 1 đến 300, chữ số 2 xuất hiện bao nhiêu lần?
+f) Từ 1 đến 500, chữ số 7 xuất hiện bao nhiêu lần?
 
-### Bài 2. (4 điểm) Cấu tạo số có hai chữ số
-
-Trình bày lời giải ngắn gọn cho từng ý.
-
-a) Số có hai chữ số 34; đổi chỗ hai chữ số ta được số nào? Hiệu của hai số đó bằng bao nhiêu?
-b) Tìm số có hai chữ số, biết tổng hai chữ số bằng 15 và chữ số hàng đơn vị hơn chữ số hàng chục 1 đơn vị.
-c) Tìm số có hai chữ số, biết tổng hai chữ số bằng 12 và chữ số hàng chục hơn chữ số hàng đơn vị 2 đơn vị.
-d) Tìm số có hai chữ số, biết tổng hai chữ số bằng 7 và chữ số hàng đơn vị hơn chữ số hàng chục 1 đơn vị.
-
-### Bài 3. (4 điểm) So sánh hai biểu thức mà không cần tính
+### Bài 2. (4 điểm) So sánh hai biểu thức mà không cần tính
 
 Điền dấu <, >, = và giải thích ngắn.
 
-a) 715 + 17 … 480 + 17
-b) 331 × 27 … 331 × 27
-c) 450 × 18 … 450 × 19
-d) 596 × 17 … 596 × 18
-e) 664 × 11 … 125 × 11
+a) 535 × 19 … 577 × 19
+b) 664 × 11 … 125 × 11
+c) 724 × 18 … 492 × 18
+d) 780 × 25 … 492 × 25
+e) 373 + 11 … 299 + 11
+f) 583 × 12 … 583 × 13
+g) 135 × 16 … 788 × 16
+
+### Bài 3. (4 điểm) Tìm x qua ba bước, có dấu ngoặc
+
+Tìm x, trình bày đủ các bước.
+
+a) (x + 51) × 9 − 2 = 592
+b) (x + 27) × 7 − 4 = 850
+c) (x + 47) × 4 − 5 = 259
+d) (x × 9 − 40) × 6 = 4 350
 
 ### Bài 4. (4 điểm) Tính nhanh tổng dãy số cách đều
 
 Tính tổng mỗi dãy.
 
-a) 1 + 4 + 7 + … + 58
-b) 5 + 10 + 15 + … + 500
-c) 2 + 4 + 6 + … + 100
-d) 2 + 3 + 4 + … + 11
-e) 1 + 4 + 7 + … + 73
-f) 1 + 6 + 11 + … + 246
+a) 2 + 4 + 6 + … + 50
+b) 1 + 4 + 7 + … + 298
+c) 5 + 10 + 15 + … + 100
+d) 1 + 2 + 3 + … + 10
+e) 1 + 2 + 3 + … + 50
+f) 1 + 4 + 7 + … + 58
 
-### Bài 5. (4 điểm) Số chia hết cho nhiều số cùng lúc
+### Bài 5. (4 điểm) Tìm số ban đầu bằng cách tính ngược
 
-Trả lời gọn, có thể dùng dãy cách đều.
+Vẽ sơ đồ mũi tên trước khi tính. Tính xong phải thử lại theo chiều xuôi.
 
-a) Có bao nhiêu số từ 94 đến 906 vừa chia hết cho 2 vừa chia hết cho 5? Số bé nhất trong đó là số nào?
-b) Có bao nhiêu số từ 201 đến 1 099 vừa chia hết cho 3 vừa chia hết cho 5? Số bé nhất trong đó là số nào?
-c) Có bao nhiêu số từ 47 đến 257 vừa chia hết cho 2 vừa chia hết cho 3? Số bé nhất trong đó là số nào?
-d) Có bao nhiêu số từ 108 đến 891 vừa chia hết cho 2 vừa chia hết cho 9? Số bé nhất trong đó là số nào?
-e) Có bao nhiêu số từ 102 đến 834 vừa chia hết cho 2 vừa chia hết cho 3? Số bé nhất trong đó là số nào?
+a) Em nghĩ ra một số. Lấy số ấy nhân với 5, được bao nhiêu thì cộng thêm 40, rồi chia cho 5 thì được 44. Hỏi số em nghĩ ra là số nào?
+b) Em nghĩ ra một số. Lấy số ấy nhân với 2, được bao nhiêu thì cộng thêm 40, rồi chia cho 6 thì được 11. Hỏi số em nghĩ ra là số nào?
+c) Em nghĩ ra một số. Lấy số ấy nhân với 8, được bao nhiêu thì cộng thêm 18, rồi chia cho 2 thì được 145. Hỏi số em nghĩ ra là số nào?
+d) Em nghĩ ra một số. Lấy số ấy nhân với 3, được bao nhiêu thì cộng thêm 15, rồi chia cho 3 thì được 20. Hỏi số em nghĩ ra là số nào?
+e) Em nghĩ ra một số. Lấy số ấy nhân với 2, được bao nhiêu thì cộng thêm 22, rồi chia cho 6 thì được 11. Hỏi số em nghĩ ra là số nào?
 
 ---
 
 ## PHẦN III — ÔN THEO MA TRẬN ĐỀ · Mức M3 — Vận dụng · 20 phút · 25 điểm
 
-### Bài 1. (5 điểm) Dãy số cho bởi quy tắc truy hồi
+### Bài 1. (5 điểm) Đọc và phân tích bảng số liệu
 
-Dãy số được lập theo ba quy tắc sau.
-
-- Số hạng đầu bằng 4.
-- Số hạng ở **vị trí chẵn** bằng số hạng liền trước nhân 2 rồi cộng 3.
-- Số hạng ở **vị trí lẻ** bằng số hạng liền trước cộng 3 nhân với số thứ tự của số hạng liền trước.
-
-a) Viết ba số hạng đầu tiên của dãy.
-b) Số hạng thứ 5 của dãy là số nào?
-c) Số hạng thứ 7 của dãy là số nào?
-d) Số hạng thứ 9 của dãy là số nào?
-e) Từ số hạng thứ 4 đến số hạng thứ 6, dãy tăng thêm bao nhiêu đơn vị?
-
-### Bài 2. (5 điểm) Tìm phân số của một số qua hai bước
-
-Đọc kĩ “của số nào” trước khi tính.
-
-a) Một cửa hàng có 66 kg gạo. Ngày đầu bán 1 phần 3 số gạo, ngày thứ hai bán 1 phần 2 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
-b) Một cửa hàng có 480 kg gạo. Ngày đầu bán 1 phần 3 số gạo, ngày thứ hai bán 1 phần 4 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
-c) Một cửa hàng có 320 kg gạo. Ngày đầu bán 1 phần 2 số gạo, ngày thứ hai bán 1 phần 4 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
-d) Một cửa hàng có 405 kg gạo. Ngày đầu bán 1 phần 3 số gạo, ngày thứ hai bán 1 phần 5 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
-
-### Bài 3. (5 điểm) Nguyên lý bù trừ với hai tập hợp
-
-Vẽ hai vòng tròn giao nhau và điền số vào từng miền.
-
-a) Lớp có 34 học sinh. Có 18 bạn thích môn Toán, 13 bạn thích môn Tiếng Việt, 3 bạn thích cả hai môn. Hỏi bao nhiêu bạn thích ít nhất một trong hai môn?
-b) Bao nhiêu bạn chỉ thích môn Toán?
-c) Bao nhiêu bạn chỉ thích môn Tiếng Việt?
-d) Bao nhiêu bạn không thích môn nào trong hai môn đó?
-e) Nếu cộng thẳng số bạn thích Toán với số bạn thích Tiếng Việt thì được bao nhiêu?
-f) Con số vừa cộng lớn hơn số bạn thích ít nhất một môn bao nhiêu? Vì sao?
-
-### Bài 4. (5 điểm) Đọc và phân tích bảng số liệu
-
-Bảng thống kê số học sinh đăng kí câu lạc bộ theo môn: **Toán: 15 · Tiếng Việt: 23 · Tiếng Anh: 24 · Khoa học: 29**.
+Bảng thống kê số học sinh đăng kí câu lạc bộ theo môn: **Toán: 8 · Tiếng Việt: 18 · Tiếng Anh: 12 · Khoa học: 24**.
 
 a) Tổng số học sinh đăng kí là bao nhiêu?
 b) Môn nào có nhiều học sinh đăng kí nhất?
@@ -203,72 +175,99 @@ d) Môn nhiều nhất hơn môn ít nhất bao nhiêu bạn?
 e) Trung bình mỗi môn có bao nhiêu học sinh đăng kí?
 f) Số học sinh đăng kí môn Toán chiếm bao nhiêu phần trăm tổng số (làm tròn đến hàng đơn vị)?
 
-### Bài 5. (5 điểm) Bài toán cân đĩa tìm vật khác biệt
+### Bài 2. (5 điểm) Nguyên lý bù trừ với hai tập hợp
 
-Chú ý mỗi lần cân cho bao nhiêu kết quả.
+Vẽ hai vòng tròn giao nhau và điền số vào từng miền.
 
-a) Có 8 đồng tiền giống hệt nhau, trong đó có đúng một đồng nhẹ hơn. Dùng cân đĩa (không quả cân), cần cân ít nhất mấy lần để tìm ra đồng nhẹ?
-b) Mỗi lần cân, ta chia số đồng tiền thành mấy phần?
-c) Vì sao lại chia thành ba phần chứ không phải hai?
-d) Sau lần cân thứ nhất, số đồng tiền còn phải xét nhiều nhất là bao nhiêu?
-e) Nếu có 3 đồng tiền thì cần cân mấy lần?
-f) Nếu có 9 đồng tiền thì cần cân mấy lần?
+a) Lớp có 58 học sinh. Có 36 bạn thích môn Toán, 35 bạn thích môn Tiếng Việt, 13 bạn thích cả hai môn. Hỏi bao nhiêu bạn thích ít nhất một trong hai môn?
+b) Bao nhiêu bạn chỉ thích môn Toán?
+c) Bao nhiêu bạn chỉ thích môn Tiếng Việt?
+d) Bao nhiêu bạn không thích môn nào trong hai môn đó?
+e) Nếu cộng thẳng số bạn thích Toán với số bạn thích Tiếng Việt thì được bao nhiêu?
+f) Con số vừa cộng lớn hơn số bạn thích ít nhất một môn bao nhiêu? Vì sao?
+
+### Bài 3. (5 điểm) Định vị số hạng trong dãy cách đều
+
+Cho dãy: 12, 16, 20, …, 200.
+
+a) Dãy có bao nhiêu số hạng?
+b) Số hạng thứ 24 là số nào?
+c) Số 28 là số hạng thứ mấy?
+d) Số 56 là số hạng thứ mấy?
+e) Số 137 có thuộc dãy không? Vì sao?
+f) Tổng của cả dãy bằng bao nhiêu?
+
+### Bài 4. (5 điểm) Tìm phân số của một số qua hai bước
+
+Đọc kĩ “của số nào” trước khi tính.
+
+a) Một cửa hàng có 56 kg gạo. Ngày đầu bán 1 phần 4 số gạo, ngày thứ hai bán 1 phần 2 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
+b) Một cửa hàng có 465 kg gạo. Ngày đầu bán 1 phần 3 số gạo, ngày thứ hai bán 1 phần 5 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
+c) Một cửa hàng có 126 kg gạo. Ngày đầu bán 1 phần 3 số gạo, ngày thứ hai bán 1 phần 2 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
+d) Một cửa hàng có 144 kg gạo. Ngày đầu bán 1 phần 3 số gạo, ngày thứ hai bán 1 phần 3 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
+e) Một cửa hàng có 148 kg gạo. Ngày đầu bán 1 phần 2 số gạo, ngày thứ hai bán 1 phần 2 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
+
+### Bài 5. (5 điểm) Tìm hai số khi biết hiệu và tỉ số
+
+Vẽ sơ đồ đoạn thẳng rồi giải.
+
+a) Kho B chứa nhiều hơn xưởng 18 kg gạo. Số gạo ở xưởng bằng 1 phần 3 số gạo ở kho B. Mỗi nơi chứa bao nhiêu kg?
+b) Xưởng chứa nhiều hơn kho B 440 kg muối. Số muối ở kho B bằng 1 phần 3 số muối ở xưởng. Mỗi nơi chứa bao nhiêu kg?
+c) Hợp tác xã chứa nhiều hơn cửa hàng 75 kg đường. Số đường ở cửa hàng bằng 3 phần 4 số đường ở hợp tác xã. Mỗi nơi chứa bao nhiêu kg?
+d) Kho B chứa nhiều hơn thư viện 41 kg muối. Số muối ở thư viện bằng 4 phần 5 số muối ở kho B. Mỗi nơi chứa bao nhiêu kg?
+e) Trang trại chứa nhiều hơn xưởng 138 kg thóc. Số thóc ở xưởng bằng 1 phần 7 số thóc ở trang trại. Mỗi nơi chứa bao nhiêu kg?
 
 ---
 
 ## PHẦN IV — BÀI PHÂN HOÁ · Mức M4 — Vận dụng cao · 20 phút · 25 điểm
 
-### Bài 1. (5 điểm) Tìm x khi x xuất hiện ở cả hai vế
+### Bài 1. (5 điểm) Biểu thức nhiều phép tính với phân số
 
-Tìm x. Gợi ý: so sánh số lần x ở hai vế.
+Tính giá trị biểu thức, rút gọn kết quả.
 
-a) x × 2 + 126 = x × 4
-b) x × 2 + 156 = x × 6
-c) x × 4 + 56 = x × 8
-d) x × 2 + 186 = x × 5
+a) 2 phần 3 × 1 + 2 phần 3 × 5 phần 9
+b) 9 phần 11 : 5 phần 6 + 1 phần 4
+c) (5 phần 7 + 5 phần 3) × 1
+d) 3 phần 5 × 11 phần 9 + 3 phần 5 × 4 phần 5
 
-### Bài 2. (5 điểm) Bài toán đại lượng nhiều bước
-
-Trình bày lời giải có câu trả lời.
-
-a) Một cửa hàng có 11 thùng nước mắm, mỗi thùng 25 lít. Cửa hàng đã bán 4 thùng. Hỏi cửa hàng còn lại bao nhiêu lít nước mắm?
-b) Một cửa hàng có 4 thùng nước, mỗi thùng 24 lít. Cửa hàng đã bán 2 thùng. Hỏi cửa hàng còn lại bao nhiêu lít nước?
-c) Một cửa hàng có 6 thùng dầu, mỗi thùng 12 lít. Cửa hàng đã bán 4 thùng. Hỏi cửa hàng còn lại bao nhiêu lít dầu?
-d) Một cửa hàng có 11 thùng nước mắm, mỗi thùng 12 lít. Cửa hàng đã bán 5 thùng. Hỏi cửa hàng còn lại bao nhiêu lít nước mắm?
-e) Một cửa hàng có 8 thùng sữa, mỗi thùng 25 lít. Cửa hàng đã bán 4 thùng. Hỏi cửa hàng còn lại bao nhiêu lít sữa?
-
-### Bài 3. (5 điểm) Tính nhanh tổng nhiều tích có thừa số chung
+### Bài 2. (5 điểm) Tính nhanh tổng nhiều tích có thừa số chung
 
 Tính tổng mỗi biểu thức.
 
-a) 7 × 1 + 7 × 2 + 7 × 3 + … + 7 × 25
-b) 6 × 1 + 6 × 2 + 6 × 3 + … + 6 × 50
-c) 4 × 1 + 4 × 2 + 4 × 3 + … + 4 × 50
-d) 4 × 1 + 4 × 2 + 4 × 3 + … + 4 × 10
-e) 5 × 1 + 5 × 2 + 5 × 3 + … + 5 × 20
-f) 4 × 1 + 4 × 2 + 4 × 3 + … + 4 × 10
+a) 5 × 1 + 5 × 2 + 5 × 3 + … + 5 × 25
+b) 2 × 1 + 2 × 2 + 2 × 3 + … + 2 × 20
+c) 2 × 1 + 2 × 2 + 2 × 3 + … + 2 × 50
+d) 9 × 1 + 9 × 2 + 9 × 3 + … + 9 × 10
 
-### Bài 4. (5 điểm) Nhận ra thừa số 0 để tính tức thì
+### Bài 3. (5 điểm) Bài toán đại lượng nhiều bước
+
+Trình bày lời giải có câu trả lời.
+
+a) Một cửa hàng có 10 thùng sữa, mỗi thùng 20 lít. Cửa hàng đã bán 8 thùng. Hỏi cửa hàng còn lại bao nhiêu lít sữa?
+b) Một cửa hàng có 10 thùng sữa, mỗi thùng 12 lít. Cửa hàng đã bán 9 thùng. Hỏi cửa hàng còn lại bao nhiêu lít sữa?
+c) Một cửa hàng có 6 thùng sữa, mỗi thùng 15 lít. Cửa hàng đã bán 2 thùng. Hỏi cửa hàng còn lại bao nhiêu lít sữa?
+d) Một cửa hàng có 14 thùng nước, mỗi thùng 24 lít. Cửa hàng đã bán 6 thùng. Hỏi cửa hàng còn lại bao nhiêu lít nước?
+e) Một cửa hàng có 12 thùng nước mắm, mỗi thùng 25 lít. Cửa hàng đã bán 10 thùng. Hỏi cửa hàng còn lại bao nhiêu lít nước mắm?
+
+### Bài 4. (5 điểm) Tìm x khi x xuất hiện ở cả hai vế
+
+Tìm x. Gợi ý: so sánh số lần x ở hai vế.
+
+a) x × 8 + 46 = x × 9
+b) x × 4 + 26 = x × 6
+c) x × 3 + 220 = x × 8
+d) x × 7 + 24 = x × 8
+e) x × 4 + 415 = x × 9
+f) x × 2 + 236 = x × 6
+
+### Bài 5. (5 điểm) Nhận ra thừa số 0 để tính tức thì
 
 Tính bằng cách nhanh nhất.
 
-a) (25 × 49 − 49 × 25) × 82
-b) (20 × 13 − 13 × 20) × 20
-c) 38 × 65 + 38 × 56 − 38 × (65 + 56)
-d) 52 × 85 + 52 × 24 − 52 × (85 + 24)
-e) 28 × 63 × (44 − 44)
-f) 69 × 94 × (68 − 68)
-
-### Bài 5. (5 điểm) Rút gọn, so sánh và sắp thứ tự phân số
-
-Rút gọn trước rồi mới so sánh.
-
-a) Rút gọn các phân số sau về dạng tối giản: 5 phần 12 · 19 phần 24 · 1 phần 24 · 5 phần 24 · 7 phần 24
-b) Sắp xếp các phân số ấy từ bé đến lớn.
-c) Phân số nào lớn nhất?
-d) Phân số nào bé nhất?
-e) Phân số lớn nhất hơn phân số bé nhất bao nhiêu?
-f) Có phân số nào lớn hơn 1 không?
+a) (78 × 55 − 55 × 78) × 48
+b) (23 × 96 − 96 × 23) × 37
+c) (18 × 31 − 31 × 18) × 95
+d) (82 × 17 − 17 × 82) × 79
 
 ---
 
@@ -302,7 +301,7 @@ f) Cột 6 — Kết quả?
 
 ### Bài 3. (2 điểm) Phản biện đề số 3
 
-**Đề:** Tìm x, trình bày từng bước. 359 − x × 2 = 71
+**Đề:** Tìm x, trình bày từng bước. 645 − x × 9 = 285
 
 Hai bạn thi đấu: một bạn trình bày lời giải, bạn kia phản biện bằng bảng phân tích sáu cột.
 
@@ -315,7 +314,7 @@ f) Cột 6 — Kết quả?
 
 ### Bài 4. (2 điểm) Phản biện đề số 4
 
-**Đề:** Tính bằng cách thuận tiện nhất. 66 + 16 + 34 + 84
+**Đề:** Tính bằng cách thuận tiện nhất. 47 + 36 + 53 + 64
 
 Hai bạn thi đấu: một bạn trình bày lời giải, bạn kia phản biện bằng bảng phân tích sáu cột.
 
@@ -328,7 +327,7 @@ f) Cột 6 — Kết quả?
 
 ### Bài 5. (2 điểm) Phản biện đề số 5
 
-**Đề:** Tính giá trị của mỗi biểu thức. 170 × 23 + 170 × 3
+**Đề:** Tính giá trị của mỗi biểu thức. (174 + 8) × 9
 
 Hai bạn thi đấu: một bạn trình bày lời giải, bạn kia phản biện bằng bảng phân tích sáu cột.
 
@@ -346,129 +345,129 @@ f) Cột 6 — Kết quả?
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài I.1
-**Đáp số:** a) 2 222 · b) 702 · c) 459 · d) 819
+**Đáp số:** a) 6 831 · b) 1 414 · c) 9 595 · d) 8 181 · e) 5 742 · f) 451 · g) 666
 **Hướng giải:** Đưa thừa số về dạng tròn chục, tròn trăm cộng hoặc trừ một ít: × 9 = × 10 − 1 lần; × 11 = × 10 + 1 lần; × 99 = × 100 − 1 lần; × 101 = × 100 + 1 lần.
 **Nhãn tư duy:** TD5, TD3. Điểm chốt: Tách thừa số thành **tròn chục ± 1 đơn vị** rồi dùng nhân với một tổng, một hiệu.
 **Lỗi thường gặp:** Nhân với 10 rồi quên cộng hoặc trừ phần bù. Phòng: Viết luôn dấu ± và số bù ra bên cạnh trước khi nhân.
 
 ### Bài I.2
-**Đáp số:** a) 244 · b) 200 · c) 24 · d) 200
-**Hướng giải:** Dùng tính chất giao hoán và kết hợp của phép cộng để đổi chỗ, nhóm những số cộng lại thành số tròn chục, tròn trăm rồi mới cộng phần còn lại.
-**Nhãn tư duy:** TD5, TD3. Điểm chốt: Tìm **cặp cộng tròn 100** trước khi cộng theo thứ tự.
-**Lỗi thường gặp:** Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. Phòng: Đọc lướt cả dãy, khoanh tròn cặp số cộng lại tròn chục, tròn trăm.
+**Đáp số:** a) 1 080 · b) 1 404 · c) 1 012 · d) 1 136
+**Hướng giải:** Nhận ra thừa số chung rồi đặt nó ra ngoài: a × b + a × c = a × (b + c) và a × b − a × c = a × (b − c). Sau khi đặt thừa số chung, phép tính trong ngoặc thường ra số tròn.
+**Nhãn tư duy:** TD3, TD5. Điểm chốt: Thừa số chung phải xuất hiện ở **cả hai** tích thì mới đặt ra ngoài được.
+**Lỗi thường gặp:** Đặt ra ngoài một số chỉ có ở một tích. Phòng: Khoanh thừa số giống nhau ở hai tích trước khi viết dấu ngoặc.
 
 ### Bài I.3
-**Đáp số:** a) 72 000 · b) 8 900 · c) 1 900 · d) 7 100 · e) 7 700
+**Đáp số:** a) 65 · b) 37 000 · c) 5 100 · d) 55 · e) 25
 **Hướng giải:** Trong một tích, được phép đổi chỗ và nhóm các thừa số. Ghép các cặp cho tích tròn: 25 × 4 = 100, 125 × 8 = 1 000, 50 × 2 = 100, 20 × 5 = 100. Chia liên tiếp cho hai số bằng chia cho tích hai số đó.
 **Nhãn tư duy:** TD5, TD3. Điểm chốt: Thuộc lòng bốn cặp tròn: **25 × 4**, **125 × 8**, **50 × 2**, **20 × 5**.
 **Lỗi thường gặp:** Nhân lần lượt từ trái sang phải nên số trung gian rất lớn. Phòng: Quét cả tích tìm cặp tròn trước khi đặt bút tính.
 
 ### Bài I.4
-**Đáp số:** a) 1 072 · b) 4 891 · c) 192 · d) 594 · e) 32
-**Hướng giải:** Nhận ra thừa số chung rồi đặt nó ra ngoài: a × b + a × c = a × (b + c) và a × b − a × c = a × (b − c). Sau khi đặt thừa số chung, phép tính trong ngoặc thường ra số tròn.
-**Nhãn tư duy:** TD3, TD5. Điểm chốt: Thừa số chung phải xuất hiện ở **cả hai** tích thì mới đặt ra ngoài được.
-**Lỗi thường gặp:** Đặt ra ngoài một số chỉ có ở một tích. Phòng: Khoanh thừa số giống nhau ở hai tích trước khi viết dấu ngoặc.
+**Đáp số:** a) 46 · b) 142 · c) 192 · d) 200 · e) 45
+**Hướng giải:** Dùng tính chất giao hoán và kết hợp của phép cộng để đổi chỗ, nhóm những số cộng lại thành số tròn chục, tròn trăm rồi mới cộng phần còn lại.
+**Nhãn tư duy:** TD5, TD3. Điểm chốt: Tìm **cặp cộng tròn 100** trước khi cộng theo thứ tự.
+**Lỗi thường gặp:** Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. Phòng: Đọc lướt cả dãy, khoanh tròn cặp số cộng lại tròn chục, tròn trăm.
 
 ### Bài I.5
-**Đáp số:** a) x = 26 · b) x = 125 · c) x = 200 · d) x = 182 · e) x = 23 · f) x = 135
+**Đáp số:** a) x = 122 · b) x = 57 · c) x = 167 · d) x = 110 · e) x = 122
 **Hướng giải:** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, sau đó mới tìm x bên trong cụm. Làm ngược lại thứ tự thực hiện phép tính.
 **Nhãn tư duy:** TD3. Điểm chốt: Đi **ngược** thứ tự thực hiện: phép ngoài cùng gỡ trước.
 **Lỗi thường gặp:** Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. Phòng: Khoanh tròn cụm chứa x rồi coi cả cụm là một số.
 
 ### Bài II.1
-**Đáp số:** a) x = 41 · b) x = 117 · c) x = 74 · d) x = 55
-**Hướng giải:** Gỡ dần từ ngoài vào trong: xác định phép tính ngoài cùng, coi phần còn lại là một số, tìm giá trị của nó, rồi lặp lại cho tới khi x đứng riêng.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Mỗi bước chỉ gỡ **một** phép tính, đừng gỡ hai phép cùng lúc.
-**Lỗi thường gặp:** Nhân phá ngoặc sai dấu, hoặc gỡ phép trong ngoặc trước. Phòng: Ghi rõ từng bước trên một dòng riêng, mỗi dòng chỉ khác dòng trên một phép.
+**Đáp số:** a) 160 · b) 20 · c) 86 · d) 40 · e) 160 · f) 100
+**Hướng giải:** BẪY — Số 33, 44… chứa hai lần cùng một chữ số. Đếm theo từng hàng: đếm số lần chữ số đó đứng ở hàng đơn vị, rồi hàng chục, rồi hàng trăm. Ở mỗi hàng, các số thoả mãn lập thành dãy cách đều, dùng công thức đếm số hạng.
+**Nhãn tư duy:** TD4, TD6. Điểm chốt: Một số có thể chứa chữ số đó **nhiều lần**; đếm theo hàng thì không sót.
+**Lỗi thường gặp:** Đếm số lượng **số** chứa chữ số đó thay vì số **lần** xuất hiện. Phòng: Kẻ bảng: hàng đơn vị – hàng chục – hàng trăm, đếm riêng rồi cộng.
 
 ### Bài II.2
-**Đáp số:** a) 43, hiệu 9 · b) 78 · c) 75 · d) 34
-**Hướng giải:** Viết số có hai chữ số dưới dạng **ab = a × 10 + b** với a là chữ số hàng chục (khác 0), b là chữ số hàng đơn vị. Từ điều kiện của đề, lập quan hệ giữa a và b rồi dùng bài toán tổng – hiệu.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Chữ số hàng chục **khác 0** và mỗi chữ số chỉ nhận giá trị từ 0 đến 9.
-**Lỗi thường gặp:** Tìm ra a hoặc b lớn hơn 9 mà vẫn nhận đáp số. Phòng: Sau khi tính xong, kiểm tra lại từng chữ số có nằm trong khoảng 0–9 không.
-
-### Bài II.3
-**Đáp số:** a) > · b) = · c) < · d) < · e) >
+**Đáp số:** a) < · b) > · c) > · d) > · e) > · f) < · g) <
 **Hướng giải:** Khi hai biểu thức có phần giống nhau, chỉ cần so sánh phần khác nhau: cùng cộng thêm một số thì số nào lớn hơn vẫn lớn hơn; cùng nhân với một số khác 0 cũng vậy.
 **Nhãn tư duy:** TD5, TD2. Điểm chốt: Che phần **giống nhau** đi, chỉ so phần khác nhau.
 **Lỗi thường gặp:** Tính hết cả hai vế, vừa lâu vừa dễ sai. Phòng: Dùng bút gạch bỏ phần giống nhau ở hai vế trước khi so sánh.
 
+### Bài II.3
+**Đáp số:** a) x = 15 · b) x = 95 · c) x = 19 · d) x = 85
+**Hướng giải:** Gỡ dần từ ngoài vào trong: xác định phép tính ngoài cùng, coi phần còn lại là một số, tìm giá trị của nó, rồi lặp lại cho tới khi x đứng riêng.
+**Nhãn tư duy:** TD3, TD2. Điểm chốt: Mỗi bước chỉ gỡ **một** phép tính, đừng gỡ hai phép cùng lúc.
+**Lỗi thường gặp:** Nhân phá ngoặc sai dấu, hoặc gỡ phép trong ngoặc trước. Phòng: Ghi rõ từng bước trên một dòng riêng, mỗi dòng chỉ khác dòng trên một phép.
+
 ### Bài II.4
-**Đáp số:** a) 590 · b) 25 250 · c) 2 550 · d) 65 · e) 925 · f) 6 175
-**Hướng giải:** BẪY — Quên cộng 1 khi đếm số số hạng. Đếm số số hạng: (số cuối − số đầu) : khoảng cách + 1. Tổng bằng (số đầu + số cuối) × số số hạng : 2. Cách hiểu: ghép số đầu với số cuối, số thứ hai với số áp chót… mỗi cặp có tổng bằng nhau.
+**Đáp số:** a) 650 · b) 14 950 · c) 1 050 · d) 55 · e) 1 275 · f) 590
+**Hướng giải:** Đếm số số hạng: (số cuối − số đầu) : khoảng cách + 1. Tổng bằng (số đầu + số cuối) × số số hạng : 2. Cách hiểu: ghép số đầu với số cuối, số thứ hai với số áp chót… mỗi cặp có tổng bằng nhau.
 **Nhãn tư duy:** TD4, TD5. Điểm chốt: Phải đếm **số số hạng** trước; đây là chỗ sai nhiều nhất.
 **Lỗi thường gặp:** Lấy số cuối chia khoảng cách làm số số hạng, quên cộng 1. Phòng: Viết ra ba số đầu và ba số cuối để kiểm tra khoảng cách rồi mới đếm.
 
 ### Bài II.5
-**Đáp số:** a) 81 số, bé nhất là 100 · b) 60 số, bé nhất là 210 · c) 35 số, bé nhất là 48 · d) 44 số, bé nhất là 108 · e) 123 số, bé nhất là 102
-**Hướng giải:** Số vừa chia hết cho hai số thì chia hết cho bội chung nhỏ nhất của chúng. Các số đó lập thành dãy cách đều với khoảng cách bằng bội chung nhỏ nhất; dùng công thức đếm số hạng của dãy cách đều.
-**Nhãn tư duy:** TD2, TD4. Điểm chốt: Khoảng cách của dãy là **bội chung nhỏ nhất**, không phải tích hai số khi hai số không nguyên tố cùng nhau.
-**Lỗi thường gặp:** Lấy tích hai số làm khoảng cách (ví dụ dùng 27 cho “chia hết cho 3 và 9”). Phòng: Kiểm tra bằng cách viết ba số đầu tiên của dãy rồi xem khoảng cách thật.
+**Đáp số:** a) 36 · b) 13 · c) 34 · d) 15 · e) 22
+**Hướng giải:** Viết chuỗi thao tác thành sơ đồ mũi tên rồi đi ngược lại từ kết quả cuối. Mỗi bước đảo phép tính: nhân thành chia, cộng thành trừ. Thứ tự cũng phải đảo — phép làm sau cùng được gỡ trước tiên.
+**Nhãn tư duy:** TD3, TD5. Điểm chốt: Đảo **cả phép tính lẫn thứ tự**. Đảo phép tính mà giữ nguyên thứ tự thì vẫn sai.
+**Lỗi thường gặp:** Bắt đầu gỡ từ phép tính đầu tiên của đề thay vì từ phép tính cuối cùng. Phòng: Thử lại theo chiều xuôi. Bài này luôn thử lại được, nên không có lý do gì để nộp một đáp số chưa thử.
 
 ### Bài III.1
-**Đáp số:** a) 4, 11, 17 · b) 49 · c) 119 · d) 265 · e) 64
-**Hướng giải:** Lập bảng và tính lần lượt từng số hạng theo đúng quy tắc, không nhảy cóc. Ghi rõ số thứ tự của mỗi số hạng để chọn đúng nhánh quy tắc.
-**Nhãn tư duy:** TD3, TD6. Điểm chốt: Quy tắc phụ thuộc **vị trí chẵn hay lẻ** — phải đánh số thứ tự trước.
-**Lỗi thường gặp:** Áp dụng nhầm nhánh quy tắc vì không để ý vị trí. Phòng: Kẻ bảng hai dòng: dòng trên ghi vị trí, dòng dưới ghi số hạng.
-
-### Bài III.2
-**Đáp số:** a) 22 kg · b) 240 kg · c) 120 kg · d) 216 kg
-**Hướng giải:** Bước 1: tính số gạo bán ngày đầu bằng cách lấy tổng nhân với phân số. Bước 2: tính số gạo **còn lại** sau ngày đầu. Bước 3: phân số của ngày thứ hai tính trên **số còn lại**, không phải trên tổng ban đầu.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Cụm “số gạo **còn lại**” đổi hẳn số bị nhân ở bước hai.
-**Lỗi thường gặp:** Lấy cả hai phân số nhân với tổng ban đầu. Phòng: Sau mỗi bước, viết rõ “còn lại … kg” rồi mới sang bước sau.
-
-### Bài III.3
-**Đáp số:** a) 28 · b) 15 · c) 10 · d) 6 · e) 31 · f) 3, vì nhóm thích cả hai môn bị đếm hai lần
-**Hướng giải:** Vẽ sơ đồ Ven hai vòng tròn. **Điền miền giữa trước**, rồi trừ ra hai miền riêng. Cộng thẳng hai nhóm sẽ đếm nhóm chung **hai lần**, nên phải trừ đi một lần.
-**Nhãn tư duy:** TD2, TD6. Điểm chốt: Điền **miền giữa trước** — mọi miền khác suy ra từ đó.
-**Lỗi thường gặp:** Cộng thẳng hai nhóm rồi coi đó là số bạn thích ít nhất một môn. Phòng: Vẽ sơ đồ Ven, ghi số vào từng miền rồi cộng lại kiểm tra với sĩ số.
-
-### Bài III.4
-**Đáp số:** a) 91 · b) Khoa học (29 bạn) · c) Toán (15 bạn) · d) 14 · e) 22,75 · f) 16%
+**Đáp số:** a) 62 · b) Khoa học (24 bạn) · c) Toán (8 bạn) · d) 16 · e) 15,5 · f) 13%
 **Hướng giải:** Đọc bảng theo cột, ghi lại từng số liệu. Tổng là cộng tất cả; nhiều nhất, ít nhất là so sánh; trung bình là tổng chia số môn; tỉ số phần trăm là phần chia tổng rồi nhân 100.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Mọi câu hỏi đều quy về **tổng, so sánh, trung bình cộng, tỉ số phần trăm**.
 **Lỗi thường gặp:** Đọc nhầm cột, hoặc quên một môn khi cộng tổng. Phòng: Đánh dấu từng số đã cộng để không sót và không cộng lặp.
 
+### Bài III.2
+**Đáp số:** a) 58 · b) 23 · c) 22 · d) 0 · e) 71 · f) 13, vì nhóm thích cả hai môn bị đếm hai lần
+**Hướng giải:** Vẽ sơ đồ Ven hai vòng tròn. **Điền miền giữa trước**, rồi trừ ra hai miền riêng. Cộng thẳng hai nhóm sẽ đếm nhóm chung **hai lần**, nên phải trừ đi một lần.
+**Nhãn tư duy:** TD2, TD6. Điểm chốt: Điền **miền giữa trước** — mọi miền khác suy ra từ đó.
+**Lỗi thường gặp:** Cộng thẳng hai nhóm rồi coi đó là số bạn thích ít nhất một môn. Phòng: Vẽ sơ đồ Ven, ghi số vào từng miền rồi cộng lại kiểm tra với sĩ số.
+
+### Bài III.3
+**Đáp số:** a) 48 · b) 104 · c) 5 · d) 12 · e) không · f) 5 088
+**Hướng giải:** Muốn biết một số là số hạng thứ mấy: lấy số đó trừ số hạng đầu, chia cho khoảng cách rồi cộng 1. Nếu phép chia còn dư thì số đó **không thuộc** dãy.
+**Nhãn tư duy:** TD4, TD2. Điểm chốt: Phép chia **có dư** là bằng chứng số đó không thuộc dãy.
+**Lỗi thường gặp:** Chia được số nguyên rồi quên cộng 1, hoặc bỏ qua phần dư. Phòng: Luôn ghi rõ thương và số dư khi chia.
+
+### Bài III.4
+**Đáp số:** a) 21 kg · b) 248 kg · c) 42 kg · d) 64 kg · e) 37 kg
+**Hướng giải:** Bước 1: tính số gạo bán ngày đầu bằng cách lấy tổng nhân với phân số. Bước 2: tính số gạo **còn lại** sau ngày đầu. Bước 3: phân số của ngày thứ hai tính trên **số còn lại**, không phải trên tổng ban đầu.
+**Nhãn tư duy:** TD2, TD3. Điểm chốt: Cụm “số gạo **còn lại**” đổi hẳn số bị nhân ở bước hai.
+**Lỗi thường gặp:** Lấy cả hai phân số nhân với tổng ban đầu. Phòng: Sau mỗi bước, viết rõ “còn lại … kg” rồi mới sang bước sau.
+
 ### Bài III.5
-**Đáp số:** a) 2 lần · b) 3 phần · c) vì mỗi lần cân có ba kết quả: trái nặng hơn, phải nặng hơn, hoặc cân bằng · d) 3 · e) 1 lần · f) 2 lần
-**Hướng giải:** Mỗi lần cân bằng cân đĩa cho **ba** kết quả có thể, nên mỗi lần cân chia được số vật thành ba phần và loại đi hai phần. Sau k lần cân, phân biệt được tối đa 3 nhân với chính nó k lần vật.
-**Nhãn tư duy:** TD6, TD2. Điểm chốt: Cân đĩa cho **ba** kết quả, nên chia ba chứ không chia đôi.
-**Lỗi thường gặp:** Chia đôi như tìm kiếm thông thường nên cần nhiều lần cân hơn mức cần thiết. Phòng: Nhớ ba kết quả: nghiêng trái, nghiêng phải, thăng bằng.
+**Đáp số:** a) xưởng: 9 kg, kho B: 27 kg · b) kho B: 220 kg, xưởng: 660 kg · c) cửa hàng: 225 kg, hợp tác xã: 300 kg · d) thư viện: 164 kg, kho B: 205 kg · e) xưởng: 23 kg, trang trại: 161 kg
+**Hướng giải:** Hiệu số phần = số phần lớn − số phần bé. Giá trị một phần = hiệu : hiệu số phần. Sau đó nhân với số phần của từng đại lượng.
+**Nhãn tư duy:** TD3, TD2. Điểm chốt: Chia cho **hiệu số phần**, không phải tổng số phần.
+**Lỗi thường gặp:** Dùng nhầm công thức của tổng – tỉ cho bài hiệu – tỉ. Phòng: Đọc kĩ: đề cho “tổng” hay cho “nhiều hơn”? Ghi rõ ra trước khi vẽ.
 
 ### Bài IV.1
-**Đáp số:** a) x = 63 · b) x = 39 · c) x = 14 · d) x = 62
-**Hướng giải:** Vế phải có nhiều x hơn vế trái. Bớt đi ở cả hai vế số lần x của vế ít hơn, phần chênh lệch số lần x ở vế phải chính bằng số hạng còn lại ở vế trái. Từ đó tìm x bằng một phép chia.
-**Nhãn tư duy:** TD3, TD6. Điểm chốt: Lấy **hiệu số lần x** giữa hai vế, rồi chia số đã biết cho hiệu đó.
-**Lỗi thường gặp:** Chuyển vế nhưng quên đổi dấu, hoặc trừ nhầm số lần x. Phòng: Vẽ sơ đồ đoạn thẳng: vế trái mấy đoạn x, vế phải mấy đoạn x.
-**Gợi ý 3 tầng:** (1) Vế trái có mấy lần x? Vế phải có mấy lần x? — (2) Vế phải hơn vế trái mấy lần x? — (3) Phần hơn đó ứng với số nào đã biết?
+**Đáp số:** a) 28 phần 27 · b) 271 phần 220 · c) 50 phần 21 · d) 91 phần 75
+**Hướng giải:** Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
+**Nhãn tư duy:** TD3, TD5. Điểm chốt: Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều.
+**Lỗi thường gặp:** Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. Phòng: Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút.
+**Gợi ý 3 tầng:** (1) Biểu thức có dấu ngoặc không? — (2) Có thừa số chung ở hai tích không? — (3) Làm nhân chia trước, cộng trừ sau.
 
 ### Bài IV.2
-**Đáp số:** a) 175 lít · b) 48 lít · c) 24 lít · d) 72 lít · e) 100 lít
-**Hướng giải:** Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
-**Nhãn tư duy:** TD3, TD5. Điểm chốt: Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
-**Lỗi thường gặp:** Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. Phòng: Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng.
-**Gợi ý 3 tầng:** (1) Còn lại bao nhiêu thùng? — (2) Mỗi thùng bao nhiêu lít? — (3) Nhân hai kết quả đó.
-
-### Bài IV.3
-**Đáp số:** a) 2 275 · b) 7 650 · c) 5 100 · d) 220 · e) 1 050 · f) 220
+**Đáp số:** a) 1 625 · b) 420 · c) 2 550 · d) 495
 **Hướng giải:** Tất cả các tích đều có chung một thừa số. Đặt thừa số chung ra ngoài, trong ngoặc còn tổng của dãy số tự nhiên liên tiếp — dùng công thức tổng dãy cách đều để tính.
 **Nhãn tư duy:** TD3, TD4. Điểm chốt: Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
 **Lỗi thường gặp:** Nhân từng tích rồi cộng dồn, rất dài và dễ sai. Phòng: Viết lại biểu thức dưới dạng a × (1 + 2 + … + n) trước khi tính.
 **Gợi ý 3 tầng:** (1) Các tích có thừa số nào giống nhau? — (2) Đặt thừa số đó ra ngoài dấu ngoặc. — (3) Tổng trong ngoặc là dãy số cách đều — tính bằng công thức.
 
+### Bài IV.3
+**Đáp số:** a) 40 lít · b) 12 lít · c) 60 lít · d) 192 lít · e) 50 lít
+**Hướng giải:** Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
+**Nhãn tư duy:** TD3, TD5. Điểm chốt: Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
+**Lỗi thường gặp:** Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. Phòng: Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng.
+**Gợi ý 3 tầng:** (1) Còn lại bao nhiêu thùng? — (2) Mỗi thùng bao nhiêu lít? — (3) Nhân hai kết quả đó.
+
 ### Bài IV.4
-**Đáp số:** a) 0 · b) 0 · c) 0 · d) 0 · e) 0 · f) 0
+**Đáp số:** a) x = 46 · b) x = 13 · c) x = 44 · d) x = 24 · e) x = 83 · f) x = 59
+**Hướng giải:** Vế phải có nhiều x hơn vế trái. Bớt đi ở cả hai vế số lần x của vế ít hơn, phần chênh lệch số lần x ở vế phải chính bằng số hạng còn lại ở vế trái. Từ đó tìm x bằng một phép chia.
+**Nhãn tư duy:** TD3, TD6. Điểm chốt: Lấy **hiệu số lần x** giữa hai vế, rồi chia số đã biết cho hiệu đó.
+**Lỗi thường gặp:** Chuyển vế nhưng quên đổi dấu, hoặc trừ nhầm số lần x. Phòng: Vẽ sơ đồ đoạn thẳng: vế trái mấy đoạn x, vế phải mấy đoạn x.
+**Gợi ý 3 tầng:** (1) Vế trái có mấy lần x? Vế phải có mấy lần x? — (2) Vế phải hơn vế trái mấy lần x? — (3) Phần hơn đó ứng với số nào đã biết?
+
+### Bài IV.5
+**Đáp số:** a) 0 · b) 0 · c) 0 · d) 0
 **Hướng giải:** BẪY — Biểu thức lớn nhưng kết quả bằng 0. Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu. Vì vậy phải quan sát toàn bộ biểu thức trước khi tính, tìm cụm nào có giá trị bằng 0.
 **Nhãn tư duy:** TD5, TD6. Điểm chốt: Quét tìm **cụm bằng 0** trước; thấy rồi thì viết đáp số ngay.
 **Lỗi thường gặp:** Lao vào nhân từng cặp số lớn rồi mới phát hiện kết quả bằng 0. Phòng: Đọc hết biểu thức một lượt, khoanh các cụm giống nhau bị trừ cho nhau.
 **Gợi ý 3 tầng:** (1) Có cụm nào trong ngoặc bằng 0 không? — (2) Có hai cụm giống hệt nhau bị trừ cho nhau không? — (3) Tích có một thừa số bằng 0 thì bằng bao nhiêu?
-
-### Bài IV.5
-**Đáp số:** a) 5 phần 12 · 19 phần 24 · 1 phần 24 · 5 phần 24 · 7 phần 24 · b) 1 phần 24 < 5 phần 24 < 7 phần 24 < 5 phần 12 < 19 phần 24 · c) 19 phần 24 · d) 1 phần 24 · e) 3 phần 4 · f) không, tất cả đều bé hơn 1
-**Hướng giải:** Cùng mẫu số thì so tử số. Khác mẫu thì quy đồng hoặc so với 1 và với một nửa. Rút gọn về tối giản trước khi trình bày kết quả.
-**Nhãn tư duy:** TD1, TD5. Điểm chốt: Cùng mẫu số thì **chỉ cần so tử số**.
-**Lỗi thường gặp:** Rút gọn xong quên rằng thứ tự vẫn giữ nguyên, đi quy đồng lại từ đầu. Phòng: Ghi cả phân số gốc và phân số tối giản cạnh nhau để đối chiếu.
-**Gợi ý 3 tầng:** (1) Các phân số có cùng mẫu số không? — (2) Nếu cùng mẫu thì so gì? — (3) Rút gọn không làm thay đổi giá trị nên không đổi thứ tự.
 
 ### Bài V.1
 **Đáp số:** a) Tổng dãy số cách đều · b) Công thức tổng dãy cách đều · c) Dãy cộng có dấu … và các số cách đều nhau · d) Đếm số số hạng rồi áp công thức tổng · e) Ghép cặp đầu – cuối: mọi cặp đều có cùng tổng, chỉ cần nhân với số cặp. · f) 420 · 14 950 · 6 375 · 325…
@@ -485,21 +484,21 @@ f) Cột 6 — Kết quả?
 **Gợi ý 3 tầng:** (1) Điền cột 1 và cột 3 trước — đó là hai cột dễ nhất. — (2) Cột 4 và cột 5 khác nhau: một cột nói cách làm, một cột nói lối tắt. — (3) Cột 6 chỉ ghi kết quả, không ghi lời giải.
 
 ### Bài V.3
-**Đáp số:** a) Tìm x qua hai bước · b) Quan hệ các thành phần phép tính, thứ tự thực hiện · c) x nằm trong một cụm có hai phép tính · d) Gỡ dần từ phép ngoài cùng vào trong · e) Thay x tìm được vào đề để thử — nhanh hơn dò lại từng bước. · f) x = 144 · x = 40 · x = 50 · x = 200…
+**Đáp số:** a) Tìm x qua hai bước · b) Quan hệ các thành phần phép tính, thứ tự thực hiện · c) x nằm trong một cụm có hai phép tính · d) Gỡ dần từ phép ngoài cùng vào trong · e) Thay x tìm được vào đề để thử — nhanh hơn dò lại từng bước. · f) x = 40 · x = 50 · x = 200 · x = 47…
 **Hướng giải:** Thi đấu phản biện: bạn trình bày nói lời giải, bạn phản biện phải chỉ ra được ít nhất một cột trong bảng mà lời giải chưa nói tới. Ai chỉ ra được nhiều hơn thì thắng.
 **Nhãn tư duy:** TD3. Điểm chốt: Đi **ngược** thứ tự thực hiện: phép ngoài cùng gỡ trước.
 **Lỗi thường gặp:** Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. Phòng: Khoanh tròn cụm chứa x rồi coi cả cụm là một số.
 **Gợi ý 3 tầng:** (1) Điền cột 1 và cột 3 trước — đó là hai cột dễ nhất. — (2) Cột 4 và cột 5 khác nhau: một cột nói cách làm, một cột nói lối tắt. — (3) Cột 6 chỉ ghi kết quả, không ghi lời giải.
 
 ### Bài V.4
-**Đáp số:** a) Tính nhanh tổng nhiều số hạng · b) Tính chất giao hoán, kết hợp của phép cộng · c) Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm · d) Ghép cặp tròn rồi cộng · e) Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10. · f) 200 · 392 · 166 · 482
+**Đáp số:** a) Tính nhanh tổng nhiều số hạng · b) Tính chất giao hoán, kết hợp của phép cộng · c) Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm · d) Ghép cặp tròn rồi cộng · e) Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10. · f) 200 · 200 · 221 · 234
 **Hướng giải:** Thi đấu phản biện: bạn trình bày nói lời giải, bạn phản biện phải chỉ ra được ít nhất một cột trong bảng mà lời giải chưa nói tới. Ai chỉ ra được nhiều hơn thì thắng.
 **Nhãn tư duy:** TD5, TD3. Điểm chốt: Tìm **cặp cộng tròn 100** trước khi cộng theo thứ tự.
 **Lỗi thường gặp:** Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. Phòng: Đọc lướt cả dãy, khoanh tròn cặp số cộng lại tròn chục, tròn trăm.
 **Gợi ý 3 tầng:** (1) Điền cột 1 và cột 3 trước — đó là hai cột dễ nhất. — (2) Cột 4 và cột 5 khác nhau: một cột nói cách làm, một cột nói lối tắt. — (3) Cột 6 chỉ ghi kết quả, không ghi lời giải.
 
 ### Bài V.5
-**Đáp số:** a) Tính giá trị biểu thức số · b) Thứ tự thực hiện các phép tính · c) Biểu thức có nhiều phép tính, có thể có ngoặc · d) Xét ngoặc → nhân chia → cộng trừ, trái sang phải · e) Nếu thấy dạng a × b + a × c thì đưa ngay về a × (b + c). · f) 4 420 · 2 376 · 348 · 2 420…
+**Đáp số:** a) Tính giá trị biểu thức số · b) Thứ tự thực hiện các phép tính · c) Biểu thức có nhiều phép tính, có thể có ngoặc · d) Xét ngoặc → nhân chia → cộng trừ, trái sang phải · e) Nếu thấy dạng a × b + a × c thì đưa ngay về a × (b + c). · f) 1 638 · 576 · 347 · 315…
 **Hướng giải:** Thi đấu phản biện: bạn trình bày nói lời giải, bạn phản biện phải chỉ ra được ít nhất một cột trong bảng mà lời giải chưa nói tới. Ai chỉ ra được nhiều hơn thì thắng.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Dấu ngoặc **đảo ngược** thứ tự ưu tiên — nhìn ngoặc trước khi tính.
 **Lỗi thường gặp:** Cộng trước nhân khi biểu thức không có ngoặc. Phòng: Gạch chân phép nhân, phép chia trước khi bắt đầu tính.

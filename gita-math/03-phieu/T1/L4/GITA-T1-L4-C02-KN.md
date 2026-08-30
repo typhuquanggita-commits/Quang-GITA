@@ -42,71 +42,74 @@ Phiếu lời giải và phân tích chuyên sâu đi kèm: `GITA-T1-L4-C02-KN-G
 Họ và tên: ......................................... Lớp: ......... Điểm: ......../100
 
 > **KIẾN THỨC NỀN CỦA CHƯƠNG**
-> 1. Công thức tổng dãy cách đều
-> 2. Kĩ thuật đặt tính, nhớ và mượn
-> 3. Ghép cặp, tính chất kết hợp
-> 4. Thứ tự thực hiện các phép tính
+> 1. Quan hệ giữa các thành phần của phép tính
+> 2. Công thức tổng dãy cách đều
+> 3. Kĩ thuật đặt tính, nhớ và mượn
+> 4. Tính chất bất đẳng thức trong phép cộng, phép nhân
 
 ---
 
 ## PHẦN A — CỦNG CỐ NỀN — 30 CÂU TỐC ĐỘ · Mức M1 — Nhận biết · 20 phút · 25 điểm
 
-### Bài 1. (5 điểm) Tính giá trị biểu thức
+### Bài 1. (5 điểm) Nhân, chia nhẩm với 10, 100, 1 000
 
-Tính giá trị của mỗi biểu thức.
+Tính nhẩm, ghi ngay kết quả.
 
-a) 62 × (11 + 7)
-b) (130 + 8) × 7
-c) 45 × 7 + 45 × 7
-d) 82 × 24 + 82 × 4
-e) (23 + 13) × 8
-f) 166 − 12 × 8
-g) (58 + 8) × 9
+a) 93 640 : 10
+b) 6 001 000 : 1 000
+c) 49 240 : 10
+d) 5 703 × 1 000
+e) 2 256 000 : 1 000
+f) 8 012 000 : 1 000
+g) 5 807 × 100
 
 ### Bài 2. (5 điểm) Đặt tính rồi tính (cộng, trừ)
 
 Đặt tính rồi tính.
 
-a) 89 096 + 44 891
-b) 71 754 − 58 274
-c) 82 651 + 6 906
-d) 98 493 − 75 960
-e) 82 686 + 63 651
+a) 51 651 + 82 716
+b) 23 880 + 17 011
+c) 97 826 − 71 389
+d) 98 068 − 20 630
+e) 49 891 + 48 658
+f) 94 434 − 76 754
+g) 11 906 + 56 952
 
-### Bài 3. (5 điểm) Đặt tính rồi tính (nhân, chia)
+### Bài 3. (5 điểm) Tính giá trị biểu thức
 
-Đặt tính rồi tính.
+Tính giá trị của mỗi biểu thức.
 
-a) 434 168 : 56
-b) 220 608 : 72
-c) 411 377 : 97
-d) 408 500 : 86
-e) 2 203 × 52
-f) 106 053 : 23
+a) 161 × 2 + 161 × 4
+b) 193 × 24 + 193 × 4
+c) 265 × (8 + 5)
+d) 69 + 4 × 7
+e) 42 × (9 + 3)
+f) (281 + 10) × 7
+g) (87 + 11) × 5
+h) 202 × (11 + 2)
 
-### Bài 4. (5 điểm) Nhân, chia nhẩm với 10, 100, 1 000
-
-Tính nhẩm, ghi ngay kết quả.
-
-a) 520 700 : 100
-b) 241 200 : 100
-c) 4 072 × 100
-d) 239 000 : 1 000
-e) 227 × 1 000
-f) 9 184 × 100
-g) 83 340 : 10
-
-### Bài 5. (5 điểm) Ôn tập bốn phép tính với số tự nhiên
+### Bài 4. (5 điểm) Ôn tập bốn phép tính với số tự nhiên
 
 Đặt tính rồi tính. Ước lượng trước để tự kiểm tra.
 
-a) 721 108 × 22
-b) 299 339 + 959 823
-c) 44 812 844 : 926
-d) 64 978 − 48 885
-e) 611 652 × 758
-f) 520 645 − 274 621
-g) 682 810 + 877 064
+a) 686 549 + 114 348
+b) 943 164 × 948
+c) 521 954 988 : 642
+d) 703 127 − 309 144
+e) 273 588 × 157
+f) 834 929 + 310 265
+g) 298 148 − 5 835
+h) 107 762 040 : 360
+
+### Bài 5. (5 điểm) Đặt tính rồi tính (nhân, chia)
+
+Đặt tính rồi tính.
+
+a) 141 929 : 71
+b) 711 282 : 78
+c) 9 548 × 31
+d) 238 748 : 34
+e) 5 209 × 80
 
 ---
 
@@ -128,8 +131,8 @@ Với mỗi dạng bài, viết một câu lời giải mẫu.
 
 a) Câu lời giải mở đầu cho dạng “Tìm x xuất hiện hai vế”?
 b) Câu lời giải mở đầu cho dạng “Tổng các tích có thừa số chung”?
-c) Câu lời giải mở đầu cho dạng “So sánh biểu thức không tính giá trị”?
-d) Câu lời giải mở đầu cho dạng “Tính, so sánh tích bằng kĩ thuật tách – bù”?
+c) Câu lời giải mở đầu cho dạng “Tìm x nhiều bước có ngoặc”?
+d) Câu lời giải mở đầu cho dạng “Bốn phép tính với số tự nhiên”?
 e) Câu lời giải mở đầu cho dạng “Nhân nhẩm nhờ tách thừa số”?
 
 ### Bài 3. (3 điểm) Ghi đơn vị đúng chỗ
@@ -149,10 +152,10 @@ Mỗi ý nêu một lỗi. Hãy nói cách sửa.
 
 a) Lỗi: Chuyển vế nhưng quên đổi dấu, hoặc trừ nhầm số lần x. — cách phòng?
 b) Lỗi: Nhân từng tích rồi cộng dồn, rất dài và dễ sai. — cách phòng?
-c) Lỗi: Tính hết cả hai vế, vừa lâu vừa dễ sai. — cách phòng?
-d) Lỗi: Nhân hết ra rồi mới so sánh — số lớn, dễ sai và mất thời gian. — cách phòng?
+c) Lỗi: Nhân phá ngoặc sai dấu, hoặc gỡ phép trong ngoặc trước. — cách phòng?
+d) Lỗi: Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số. — cách phòng?
 e) Lỗi: Nhân với 10 rồi quên cộng hoặc trừ phần bù. — cách phòng?
-f) Lỗi: Nhân phá ngoặc sai dấu, hoặc gỡ phép trong ngoặc trước. — cách phòng?
+f) Lỗi: Nhân lần lượt từ trái sang phải nên số trung gian rất lớn. — cách phòng?
 
 ### Bài 5. (3 điểm) Tự chấm bài theo thang điểm
 
@@ -190,7 +193,7 @@ e) Điểm chốt của dạng này là gì?
 
 ### Bài 3. (3 điểm) Dò soát tình huống 2
 
-**Tình huống:** một bạn làm bài dạng “Tính, so sánh tích bằng kĩ thuật tách – bù” và mắc lỗi: Nhân hết ra rồi mới so sánh — số lớn, dễ sai và mất thời gian.
+**Tình huống:** một bạn làm bài dạng “Bốn phép tính với số tự nhiên” và mắc lỗi: Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số.
 
 a) Lỗi này bị bắt ở tầng dò soát nào?
 b) Cách phòng lỗi này là gì?
@@ -210,7 +213,7 @@ e) Điểm chốt của dạng này là gì?
 
 ### Bài 5. (3 điểm) Dò soát tình huống 4
 
-**Tình huống:** một bạn làm bài dạng “Tính giá trị biểu thức số” và mắc lỗi: Cộng trước nhân khi biểu thức không có ngoặc.
+**Tình huống:** một bạn làm bài dạng “Nhân, chia nhẩm với số tròn chục, trăm, nghìn” và mắc lỗi: Thêm hoặc bớt thiếu một chữ số 0.
 
 a) Lỗi này bị bắt ở tầng dò soát nào?
 b) Cách phòng lỗi này là gì?
@@ -242,7 +245,7 @@ c) Nhánh con 3 — lỗi hay mắc?
 d) Ghi thêm: kiến thức phải thuộc?
 e) Ghi thêm: cách xử lý nhanh nhất?
 
-### Bài 3. (5 điểm) Nhánh 2 — Tính, so sánh tích bằng kĩ thuật tách – bù
+### Bài 3. (5 điểm) Nhánh 2 — Bốn phép tính với số tự nhiên
 
 Điền ba nhánh con bắt buộc của nhánh này.
 
@@ -252,7 +255,7 @@ c) Nhánh con 3 — lỗi hay mắc?
 d) Ghi thêm: kiến thức phải thuộc?
 e) Ghi thêm: cách xử lý nhanh nhất?
 
-### Bài 4. (5 điểm) Nhánh 3 — Tìm x nhiều bước có ngoặc
+### Bài 4. (5 điểm) Nhánh 3 — Tính nhanh tích, thương nhiều bước
 
 Điền ba nhánh con bắt buộc của nhánh này.
 
@@ -262,7 +265,7 @@ c) Nhánh con 3 — lỗi hay mắc?
 d) Ghi thêm: kiến thức phải thuộc?
 e) Ghi thêm: cách xử lý nhanh nhất?
 
-### Bài 5. (5 điểm) Nhánh 4 — Tính nhanh tích, thương nhiều bước
+### Bài 5. (5 điểm) Nhánh 4 — Tính, so sánh tích bằng kĩ thuật tách – bù
 
 Điền ba nhánh con bắt buộc của nhánh này.
 
@@ -298,7 +301,7 @@ d) Ví dụ mẫu em sẽ giảng?
 e) Lỗi em sẽ cảnh báo cho lớp?
 f) Mẹo nhanh em sẽ tặng lớp?
 
-### Bài 3. (4 điểm) Nội dung giảng — So sánh biểu thức không tính giá trị
+### Bài 3. (4 điểm) Nội dung giảng — Tìm x nhiều bước có ngoặc
 
 Chuẩn bị nội dung để giảng dạng bài này cho lớp.
 
@@ -338,34 +341,34 @@ f) Mẹo nhanh em sẽ tặng lớp?
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài A.1
-**Đáp số:** a) 1 116 · b) 966 · c) 630 · d) 2 296 · e) 288 · f) 70 · g) 594
-**Hướng giải:** BẪY — Thiếu ngoặc mà vẫn cộng trước. Trong biểu thức không có dấu ngoặc: nhân và chia làm trước, cộng và trừ làm sau; cùng mức thì làm từ trái sang phải. Có dấu ngoặc thì làm trong ngoặc trước.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Dấu ngoặc **đảo ngược** thứ tự ưu tiên — nhìn ngoặc trước khi tính.
-**Lỗi thường gặp:** Cộng trước nhân khi biểu thức không có ngoặc. Phòng: Gạch chân phép nhân, phép chia trước khi bắt đầu tính.
+**Đáp số:** a) 9 364 · b) 6 001 · c) 4 924 · d) 5 703 000 · e) 2 256 · f) 8 012 · g) 580 700
+**Hướng giải:** Nhân một số với 10, 100, 1 000 thì viết thêm 1, 2, 3 chữ số 0 vào bên phải số đó. Chia cho 10, 100, 1 000 thì bớt đi 1, 2, 3 chữ số 0 ở bên phải.
+**Nhãn tư duy:** TD5. Điểm chốt: Đếm đúng **số chữ số 0** của số nhân hay số chia.
+**Lỗi thường gặp:** Thêm hoặc bớt thiếu một chữ số 0. Phòng: Đếm số chữ số 0 rồi viết chấm tương ứng trước khi ghi kết quả.
 
 ### Bài A.2
-**Đáp số:** a) 133 987 · b) 13 480 · c) 89 557 · d) 22 533 · e) 146 337
+**Đáp số:** a) 134 367 · b) 40 891 · c) 26 437 · d) 77 438 · e) 98 549 · f) 17 680 · g) 68 858
 **Hướng giải:** Viết các số thẳng hàng theo đúng hàng đơn vị, cộng hoặc trừ từ phải sang trái, nhớ sang hàng liền trước khi tổng vượt quá 9 hoặc khi phải mượn.
 **Nhãn tư duy:** TD1. Điểm chốt: Thẳng hàng **đơn vị**, không thẳng theo chữ số đầu.
 **Lỗi thường gặp:** Viết lệch hàng khi hai số có số chữ số khác nhau. Phòng: Kẻ cột dọc cho từng hàng trước khi viết số.
 
 ### Bài A.3
-**Đáp số:** a) 7 753 · b) 3 064 · c) 4 241 · d) 4 750 · e) 114 556 · f) 4 611
-**Hướng giải:** BẪY — Chữ số 0 ở giữa thương. Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
-**Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
-**Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+**Đáp số:** a) 966 · b) 5 404 · c) 3 445 · d) 97 · e) 504 · f) 2 037 · g) 490 · h) 2 626
+**Hướng giải:** BẪY — Thiếu ngoặc mà vẫn cộng trước. Trong biểu thức không có dấu ngoặc: nhân và chia làm trước, cộng và trừ làm sau; cùng mức thì làm từ trái sang phải. Có dấu ngoặc thì làm trong ngoặc trước.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Dấu ngoặc **đảo ngược** thứ tự ưu tiên — nhìn ngoặc trước khi tính.
+**Lỗi thường gặp:** Cộng trước nhân khi biểu thức không có ngoặc. Phòng: Gạch chân phép nhân, phép chia trước khi bắt đầu tính.
 
 ### Bài A.4
-**Đáp số:** a) 5 207 · b) 2 412 · c) 407 200 · d) 239 · e) 227 000 · f) 918 400 · g) 8 334
-**Hướng giải:** Nhân một số với 10, 100, 1 000 thì viết thêm 1, 2, 3 chữ số 0 vào bên phải số đó. Chia cho 10, 100, 1 000 thì bớt đi 1, 2, 3 chữ số 0 ở bên phải.
-**Nhãn tư duy:** TD5. Điểm chốt: Đếm đúng **số chữ số 0** của số nhân hay số chia.
-**Lỗi thường gặp:** Thêm hoặc bớt thiếu một chữ số 0. Phòng: Đếm số chữ số 0 rồi viết chấm tương ứng trước khi ghi kết quả.
-
-### Bài A.5
-**Đáp số:** a) 15 864 376 · b) 1 259 162 · c) 48 394 · d) 16 093 · e) 463 632 216 · f) 246 024 · g) 1 559 874
-**Hướng giải:** Cộng, trừ thì viết thẳng hàng đơn vị. Nhân thì viết các tích riêng lùi đúng cột rồi cộng. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0.
+**Đáp số:** a) 800 897 · b) 894 119 472 · c) 813 014 · d) 393 983 · e) 42 953 316 · f) 1 145 194 · g) 292 313 · h) 299 339
+**Hướng giải:** BẪY — Chữ số 0 ở giữa thương. Cộng, trừ thì viết thẳng hàng đơn vị. Nhân thì viết các tích riêng lùi đúng cột rồi cộng. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+
+### Bài A.5
+**Đáp số:** a) 1 999 · b) 9 119 · c) 295 988 · d) 7 022 · e) 416 720
+**Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
+**Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
+**Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
 
 ### Bài B.1
 **Đáp số:** a) câu lời giải nêu rõ đang tìm đại lượng nào · b) phép tính, viết đủ dấu và đủ đơn vị · c) kết quả kèm đơn vị · d) câu đáp số · e) một phần tư số điểm của bài
@@ -374,7 +377,7 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Lỗi thường gặp:** Viết thẳng phép tính, bỏ câu lời giải. Phòng: Đọc lại bài đã làm, đếm xem có đủ bốn dòng chưa.
 
 ### Bài B.2
-**Đáp số:** a) “Tìm x xuất hiện hai vế là:” · b) “Tổng các tích có thừa số chung là:” · c) “So sánh biểu thức không tính giá trị là:” · d) “Tính, so sánh tích bằng kĩ thuật tách – bù là:” · e) “Nhân nhẩm nhờ tách thừa số là:”
+**Đáp số:** a) “Tìm x xuất hiện hai vế là:” · b) “Tổng các tích có thừa số chung là:” · c) “Tìm x nhiều bước có ngoặc là:” · d) “Bốn phép tính với số tự nhiên là:” · e) “Nhân nhẩm nhờ tách thừa số là:”
 **Hướng giải:** Câu lời giải chỉ cần nhắc lại đại lượng đang tìm, không cần dài dòng.
 **Nhãn tư duy:** TD1. Điểm chốt: Câu lời giải phải **nêu đúng đại lượng** đang tìm.
 **Lỗi thường gặp:** Viết câu lời giải chung chung cho mọi bài. Phòng: Lấy đúng cụm từ trong câu hỏi của đề làm câu lời giải.
@@ -386,7 +389,7 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Lỗi thường gặp:** Ghi diện tích bằng cm thay vì cm². Phòng: Trước khi viết đáp số, hỏi: đại lượng này đo bằng gì?
 
 ### Bài B.4
-**Đáp số:** a) Vẽ sơ đồ đoạn thẳng: vế trái mấy đoạn x, vế phải mấy đoạn x. · b) Viết lại biểu thức dưới dạng a × (1 + 2 + … + n) trước khi tính. · c) Dùng bút gạch bỏ phần giống nhau ở hai vế trước khi so sánh. · d) Viết mỗi thừa số dưới dạng “số gốc cộng hoặc trừ mấy đơn vị”. · e) Viết luôn dấu ± và số bù ra bên cạnh trước khi nhân. · f) Ghi rõ từng bước trên một dòng riêng, mỗi dòng chỉ khác dòng trên một phép.
+**Đáp số:** a) Vẽ sơ đồ đoạn thẳng: vế trái mấy đoạn x, vế phải mấy đoạn x. · b) Viết lại biểu thức dưới dạng a × (1 + 2 + … + n) trước khi tính. · c) Ghi rõ từng bước trên một dòng riêng, mỗi dòng chỉ khác dòng trên một phép. · d) Đếm trước xem thương có mấy chữ số rồi mới chia. · e) Viết luôn dấu ± và số bù ra bên cạnh trước khi nhân. · f) Quét cả tích tìm cặp tròn trước khi đặt bút tính.
 **Hướng giải:** Mỗi lỗi đều có một cách phòng cụ thể, làm được ngay trong lúc làm bài. Chép cả cặp lỗi – cách phòng vào sổ lỗi.
 **Nhãn tư duy:** TD2. Điểm chốt: Sổ lỗi chỉ có ích khi ghi **cả cách phòng**, không chỉ ghi lỗi.
 **Lỗi thường gặp:** Ghi lỗi vào sổ nhưng không ghi cách phòng nên lần sau vẫn sai. Phòng: Mỗi dòng sổ lỗi bắt buộc có hai cột: lỗi và cách phòng.
@@ -410,10 +413,10 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Lỗi thường gặp:** Chuyển vế nhưng quên đổi dấu, hoặc trừ nhầm số lần x. Phòng: Vẽ sơ đồ đoạn thẳng: vế trái mấy đoạn x, vế phải mấy đoạn x.
 
 ### Bài C.3
-**Đáp số:** a) tầng 2 · b) Viết mỗi thừa số dưới dạng “số gốc cộng hoặc trừ mấy đơn vị”. · c) toàn bộ số điểm của ý sai · d) Viết mỗi thừa số dưới dạng “số gốc cộng hoặc trừ mấy đơn vị”. · e) Đưa mọi số về **cùng một số gốc** rồi mới so hoặc trừ.
-**Hướng giải:** Khi hai tích có các thừa số gần nhau, viết chúng theo cùng một số gốc rồi so phần chênh lệch. Khi hai tích cùng một thừa số, hiệu của chúng bằng thừa số chung nhân với hiệu hai thừa số kia.
-**Nhãn tư duy:** TD5, TD6. Điểm chốt: Đưa mọi số về **cùng một số gốc** rồi mới so hoặc trừ.
-**Lỗi thường gặp:** Nhân hết ra rồi mới so sánh — số lớn, dễ sai và mất thời gian. Phòng: Viết mỗi thừa số dưới dạng “số gốc cộng hoặc trừ mấy đơn vị”.
+**Đáp số:** a) tầng 2 · b) Đếm trước xem thương có mấy chữ số rồi mới chia. · c) toàn bộ số điểm của ý sai · d) Đếm trước xem thương có mấy chữ số rồi mới chia. · e) Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương.
+**Hướng giải:** Cộng, trừ thì viết thẳng hàng đơn vị. Nhân thì viết các tích riêng lùi đúng cột rồi cộng. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0.
+**Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương.
+**Lỗi thường gặp:** Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
 
 ### Bài C.4
 **Đáp số:** a) tầng 2 · b) Gọi tên x trước (x là số hạng? số bị trừ? thừa số?) rồi mới viết quy tắc. · c) toàn bộ số điểm của ý sai · d) Gọi tên x trước (x là số hạng? số bị trừ? thừa số?) rồi mới viết quy tắc. · e) x đứng ở **vị trí nào** trong phép tính quyết định quy tắc dùng.
@@ -422,10 +425,10 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Lỗi thường gặp:** Áp dụng nhầm quy tắc của số trừ cho số bị trừ. Phòng: Gọi tên x trước (x là số hạng? số bị trừ? thừa số?) rồi mới viết quy tắc.
 
 ### Bài C.5
-**Đáp số:** a) tầng 2 · b) Gạch chân phép nhân, phép chia trước khi bắt đầu tính. · c) toàn bộ số điểm của ý sai · d) Gạch chân phép nhân, phép chia trước khi bắt đầu tính. · e) Dấu ngoặc **đảo ngược** thứ tự ưu tiên — nhìn ngoặc trước khi tính.
-**Hướng giải:** Trong biểu thức không có dấu ngoặc: nhân và chia làm trước, cộng và trừ làm sau; cùng mức thì làm từ trái sang phải. Có dấu ngoặc thì làm trong ngoặc trước.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Dấu ngoặc **đảo ngược** thứ tự ưu tiên — nhìn ngoặc trước khi tính.
-**Lỗi thường gặp:** Cộng trước nhân khi biểu thức không có ngoặc. Phòng: Gạch chân phép nhân, phép chia trước khi bắt đầu tính.
+**Đáp số:** a) tầng 2 · b) Đếm số chữ số 0 rồi viết chấm tương ứng trước khi ghi kết quả. · c) toàn bộ số điểm của ý sai · d) Đếm số chữ số 0 rồi viết chấm tương ứng trước khi ghi kết quả. · e) Đếm đúng **số chữ số 0** của số nhân hay số chia.
+**Hướng giải:** Nhân một số với 10, 100, 1 000 thì viết thêm 1, 2, 3 chữ số 0 vào bên phải số đó. Chia cho 10, 100, 1 000 thì bớt đi 1, 2, 3 chữ số 0 ở bên phải.
+**Nhãn tư duy:** TD5. Điểm chốt: Đếm đúng **số chữ số 0** của số nhân hay số chia.
+**Lỗi thường gặp:** Thêm hoặc bớt thiếu một chữ số 0. Phòng: Đếm số chữ số 0 rồi viết chấm tương ứng trước khi ghi kết quả.
 
 ### Bài D.1
 **Đáp số:** a) Bốn phép tính, biểu thức chữ và tính chất phép cộng · b) 5 · c) tên một dạng bài của chương · d) 3 nhánh con: dấu hiệu · phương pháp · lỗi hay mắc · e) so với bảng dạng bài ở phiếu Dạng bài & Đọc vị
@@ -442,24 +445,24 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài D.3
-**Đáp số:** a) Các thừa số hơn kém nhau rất ít · b) Quy về số gốc chung, so phần chênh · c) Nhân hết ra rồi mới so sánh — số lớn, dễ sai và mất thời gian. · d) Nhân một số với một tổng, một hiệu · e) Với hai tích có tổng hai thừa số bằng nhau, tích nào có hai thừa số gần nhau hơn thì lớn hơn.
+**Đáp số:** a) Yêu cầu “đặt tính rồi tính” · b) Đặt tính thẳng cột, tính từ hàng đơn vị · c) Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số. · d) Kĩ thuật đặt tính cộng, trừ, nhân, chia · e) Ước lượng bằng cách làm tròn để phát hiện sai sót về độ lớn.
 **Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
-**Nhãn tư duy:** TD5, TD6. Điểm chốt: Đưa mọi số về **cùng một số gốc** rồi mới so hoặc trừ.
-**Lỗi thường gặp:** Nhân hết ra rồi mới so sánh — số lớn, dễ sai và mất thời gian. Phòng: Viết mỗi thừa số dưới dạng “số gốc cộng hoặc trừ mấy đơn vị”.
+**Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương.
+**Lỗi thường gặp:** Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài D.4
-**Đáp số:** a) x nằm trong ngoặc, ngoài ngoặc còn phép tính khác · b) Bóc lớp từ ngoài vào trong · c) Nhân phá ngoặc sai dấu, hoặc gỡ phép trong ngoặc trước. · d) Thứ tự thực hiện phép tính, quan hệ thành phần · e) Thay x tìm được vào đề, tính một lượt để thử lại.
-**Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Mỗi bước chỉ gỡ **một** phép tính, đừng gỡ hai phép cùng lúc.
-**Lỗi thường gặp:** Nhân phá ngoặc sai dấu, hoặc gỡ phép trong ngoặc trước. Phòng: Ghi rõ từng bước trên một dòng riêng, mỗi dòng chỉ khác dòng trên một phép.
-**Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
-
-### Bài D.5
 **Đáp số:** a) Tích có thừa số 25, 125, 50, 20; hoặc chia liên tiếp · b) Ghép cặp cho tích tròn rồi nhân · c) Nhân lần lượt từ trái sang phải nên số trung gian rất lớn. · d) Tính chất giao hoán, kết hợp của phép nhân · e) Chia liên tiếp cho 4 rồi 25 bằng chia cho 100.
 **Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
 **Nhãn tư duy:** TD5, TD3. Điểm chốt: Thuộc lòng bốn cặp tròn: **25 × 4**, **125 × 8**, **50 × 2**, **20 × 5**.
 **Lỗi thường gặp:** Nhân lần lượt từ trái sang phải nên số trung gian rất lớn. Phòng: Quét cả tích tìm cặp tròn trước khi đặt bút tính.
+**Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
+
+### Bài D.5
+**Đáp số:** a) Các thừa số hơn kém nhau rất ít · b) Quy về số gốc chung, so phần chênh · c) Nhân hết ra rồi mới so sánh — số lớn, dễ sai và mất thời gian. · d) Nhân một số với một tổng, một hiệu · e) Với hai tích có tổng hai thừa số bằng nhau, tích nào có hai thừa số gần nhau hơn thì lớn hơn.
+**Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
+**Nhãn tư duy:** TD5, TD6. Điểm chốt: Đưa mọi số về **cùng một số gốc** rồi mới so hoặc trừ.
+**Lỗi thường gặp:** Nhân hết ra rồi mới so sánh — số lớn, dễ sai và mất thời gian. Phòng: Viết mỗi thừa số dưới dạng “số gốc cộng hoặc trừ mấy đơn vị”.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.1
@@ -477,10 +480,10 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.3
-**Đáp số:** a) “Hôm nay nhóm mình nói về So sánh biểu thức không tính giá trị.” · b) Hai vế có chung một số hạng hoặc một thừa số · c) Tính chất bất đẳng thức trong phép cộng, phép nhân · d) So sánh: 234 × 7 … 234 × 8 → < · e) Tính hết cả hai vế, vừa lâu vừa dễ sai. · f) Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn.
-**Hướng giải:** Khi hai biểu thức có phần giống nhau, chỉ cần so sánh phần khác nhau: cùng cộng thêm một số thì số nào lớn hơn vẫn lớn hơn; cùng nhân với một số khác 0 cũng vậy.
-**Nhãn tư duy:** TD5, TD2. Điểm chốt: Che phần **giống nhau** đi, chỉ so phần khác nhau.
-**Lỗi thường gặp:** Tính hết cả hai vế, vừa lâu vừa dễ sai. Phòng: Dùng bút gạch bỏ phần giống nhau ở hai vế trước khi so sánh.
+**Đáp số:** a) “Hôm nay nhóm mình nói về Tìm x nhiều bước có ngoặc.” · b) x nằm trong ngoặc, ngoài ngoặc còn phép tính khác · c) Thứ tự thực hiện phép tính, quan hệ thành phần · d) Tìm x: (x + 12) × 5 − 8 = 132 → x = 16 · e) Nhân phá ngoặc sai dấu, hoặc gỡ phép trong ngoặc trước. · f) Thay x tìm được vào đề, tính một lượt để thử lại.
+**Hướng giải:** Gỡ dần từ ngoài vào trong: xác định phép tính ngoài cùng, coi phần còn lại là một số, tìm giá trị của nó, rồi lặp lại cho tới khi x đứng riêng.
+**Nhãn tư duy:** TD3, TD2. Điểm chốt: Mỗi bước chỉ gỡ **một** phép tính, đừng gỡ hai phép cùng lúc.
+**Lỗi thường gặp:** Nhân phá ngoặc sai dấu, hoặc gỡ phép trong ngoặc trước. Phòng: Ghi rõ từng bước trên một dòng riêng, mỗi dòng chỉ khác dòng trên một phép.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.4

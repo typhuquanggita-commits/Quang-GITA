@@ -60,6 +60,7 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 | M3 | Cụm “bằng … của …” | Tìm phân số của một số | Chia theo mẫu số rồi nhân theo tử số | Chia trước, nhân sau — số nhỏ hơn nên tính nhẩm được. | — |
 | M3 | Cụm “chiếm bao nhiêu phần trăm”, “so với cả lớp” | Tỉ số phần trăm có lời văn | Chốt đại lượng 100% rồi chọn dạng | Nếu tỉ số là 1 phần 4 thì bằng 25%; nhớ vài mốc quen để nhẩm. | — |
 | M3 | Đề cho bảng hoặc biểu đồ kèm nhiều câu hỏi | Đọc bảng số liệu thống kê | Ghi lại số liệu, trả lời từng câu bằng công cụ tương ứng | Tính tổng một lần rồi dùng lại cho mọi câu hỏi phần trăm. | — |
+| M3 | Đề cho số người của từng nhóm **và** số người thuộc cả hai nhóm | Biểu đồ Ven | Vẽ hai vòng tròn, điền phần chung trước rồi mới trừ ra phần riêng | Số người ít nhất một nhóm = nhóm A + nhóm B − phần chung. | Cộng thẳng, quên trừ phần chung |
 | M4 | Từ khoá “tăng giá”, “giảm giá”, “lãi”, “lỗ” | Tỉ số phần trăm trong mua bán | Chốt mốc 100% rồi cộng trừ phần trăm | Giảm 20% nghĩa là còn 80% — nhân thẳng một lần thay vì trừ hai bước. | Lãi tính theo giá mua |
 | M4 | Biểu thức gồm nhiều phân số và nhiều phép tính | Biểu thức phân số nhiều phép tính | Quan sát rút gọn trước, sau đó theo thứ tự thực hiện | Rút gọn chéo tử với mẫu trước khi nhân. | — |
 | M4 | Hai tỉ lệ phần trăm nối tiếp nhau trong cùng một bài | Tỉ số phần trăm nhiều bước | Xác định lại mốc 100% trước mỗi bước | Nhân hai tỉ lệ rồi chia 100 là ra tỉ lệ so với mốc gốc. | Mốc 100% khác nhau ở mỗi bước |
@@ -92,43 +93,43 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 
 Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: đây là dạng bài gì, và dấu hiệu nào cho biết điều đó.
 
-**Đề 1.** Tính rồi rút gọn kết quả. 1 phần 14 × 9 phần 14
+**Đề 1.** Vẽ hai vòng tròn và điền số vào ba phần trước khi tính. Lớp 4B có 39 học sinh. Có 21 em học vẽ, 20 em học bóng rổ, trong đó 3 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 2.** Bảng thống kê số học sinh đăng kí câu lạc bộ theo môn: **Toán: 15 · Tiếng Việt: 28 · Tiếng Anh: 23 · Khoa học: 25 · Lịch sử: 20**. Tổng số học sinh đăng kí là bao nhiêu?
+**Đề 2.** Đặt tính rồi tính. 40,6 − 16
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 3.** Chú ý mỗi lần tính phần trăm trên giá nào. Một món hàng giá 400 000 đồng. Lần đầu tăng giá 50%, sau đó lần hai giảm giá 20% (so với giá vừa tăng). Hỏi giá cuối cùng là bao nhiêu và so với giá ban đầu thì tăng hay giảm?
+**Đề 3.** Xác định rõ đề cho gì, hỏi gì. Tìm 80% của 300.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 4.** Ghi rõ đại lượng nào ứng với 100%. Lớp 3A có 40 học sinh, số học sinh giỏi chiếm 50%. Hỏi lớp đó có bao nhiêu học sinh giỏi?
+**Đề 4.** Bảng thống kê số học sinh đăng kí câu lạc bộ theo môn: **Toán: 26 · Tiếng Việt: 8 · Tiếng Anh: 24 · Khoa học: 15**. Tổng số học sinh đăng kí là bao nhiêu?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 5.** Đặt tính rồi tính. 564,36 : 6
+**Đề 5.** Quan sát phần bù tới 1 để so sánh. Viết bốn phân số đầu của dãy.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 6.** Điền dấu <, >, = thích hợp. 1 phần 14 … 1
+**Đề 6.** Ghi rõ đại lượng nào ứng với 100%. Một món hàng giá 100 000 đồng, được giảm giá 5%. Giá sau khi giảm là bao nhiêu?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 7.** Trình bày lời giải có câu trả lời. Đội Một trồng được 116 cây. Số cây của tổ Hai bằng 1 phần 2 số cây của đội Một. Hỏi tổ Hai trồng được bao nhiêu cây?
+**Đề 7.** Rút gọn đến phân số tối giản. Rút gọn phân số 3 phần 15.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 8.** Tính giá trị biểu thức, rút gọn kết quả. 2 phần 5 × 1 phần 2 + 2 phần 5 × 11 phần 12
+**Đề 8.** Chú ý dấu phẩy và các hàng sau dấu phẩy. Trong số 26,758, chữ số ở hàng phần mười là chữ số nào?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 9.** Ghi rõ đại lượng nào ứng với 100%. Một món hàng giá 400 000 đồng, sau đó tăng giá 30%. Giá mới là bao nhiêu?
+**Đề 9.** Trước mỗi ý, viết rõ: đại lượng nào đang ứng với 100%. Lớp có 120 học sinh, trong đó nam chiếm 20%. Lớp có bao nhiêu học sinh nam?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 10.** Quan sát phần bù tới 1 để so sánh. Viết bốn phân số đầu của dãy.
+**Đề 10.** Ghi rõ đại lượng nào ứng với 100%. Lớp 5C có 20 học sinh, trong đó có 12 học sinh giỏi. Hỏi số học sinh giỏi chiếm bao nhiêu phần trăm số học sinh cả lớp?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
@@ -138,16 +139,16 @@ Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: 
 
 | # | Dạng bài | Dấu hiệu |
 |:--:|---|---|
-| 1 | Bốn phép tính với phân số | Biểu thức chỉ gồm phân số |
-| 2 | Đọc bảng số liệu thống kê | Đề cho bảng hoặc biểu đồ kèm nhiều câu hỏi |
-| 3 | Phần trăm thay đổi nhiều lần | Hai lần tăng giảm liên tiếp |
-| 4 | Tỉ số phần trăm có lời văn | Cụm “chiếm bao nhiêu phần trăm”, “so với cả lớp” |
-| 5 | Bốn phép tính với số thập phân | Các số có dấu phẩy |
-| 6 | So sánh phân số | Hai phân số nối bởi dấu … |
-| 7 | Tìm phân số của một số | Cụm “bằng … của …” |
-| 8 | Biểu thức phân số nhiều phép tính | Biểu thức gồm nhiều phân số và nhiều phép tính |
-| 9 | Tỉ số phần trăm trong mua bán | Từ khoá “tăng giá”, “giảm giá”, “lãi”, “lỗ” |
-| 10 | Dãy phân số, so sánh bằng phần bù | Tử và mẫu hơn kém nhau đúng 1 đơn vị |
+| 1 | Biểu đồ Ven | Đề cho số người của từng nhóm **và** số người thuộc cả hai nhóm |
+| 2 | Bốn phép tính với số thập phân | Các số có dấu phẩy |
+| 3 | Ba dạng toán tỉ số phần trăm | Kí hiệu %, cụm “… % của …” |
+| 4 | Đọc bảng số liệu thống kê | Đề cho bảng hoặc biểu đồ kèm nhiều câu hỏi |
+| 5 | Dãy phân số, so sánh bằng phần bù | Tử và mẫu hơn kém nhau đúng 1 đơn vị |
+| 6 | Tỉ số phần trăm trong mua bán | Từ khoá “tăng giá”, “giảm giá”, “lãi”, “lỗ” |
+| 7 | Rút gọn phân số | Tử số và mẫu số có ước chung lớn hơn 1 |
+| 8 | Số thập phân — hàng, so sánh, chuyển đổi | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 |
+| 9 | Tỉ số phần trăm nhiều bước | Hai tỉ lệ phần trăm nối tiếp nhau trong cùng một bài |
+| 10 | Tỉ số phần trăm có lời văn | Cụm “chiếm bao nhiêu phần trăm”, “so với cả lớp” |
 
 ---
 

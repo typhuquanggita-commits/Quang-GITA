@@ -54,11 +54,11 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần D**
 
-- **Bài D.1** — a) tổ Hai: 108 cây, nhóm Sao Mai: 162 cây · b) tổ Một: 297 cây, đội Hai: 594 cây · c) nhóm Hoa Phượng: 460 cây, đội Hai: 575 cây · d) tổ Ba: 202 cây, nhóm Sao Mai: 505 cây · e) nhóm Sao Mai: 68 cây, tổ Một: 340 cây
-- **Bài D.2** — a) 271 · b) 413 · c) 282 · d) 78
-- **Bài D.3** — a) 173 · b) 354 · c) 25 · d) 38 · e) không · f) 61 934
-- **Bài D.4** — a) 200 · b) 60 · c) 20 · d) 40 · e) 140
-- **Bài D.5** — a) 2, 7, 13 · b) 41 · c) 103 · d) 233 · e) 56
+- **Bài D.1** — a) 5 em · b) 5 em · c) 3 em · d) 6 em · e) 3 em · f) 1 em
+- **Bài D.2** — a) 1, 6, 14 · b) 48 · c) 124 · d) 284 · e) 68
+- **Bài D.3** — a) 208 · b) 627 · c) 143 · d) 189 · e) không · f) 131 040
+- **Bài D.4** — a) 31 · b) 101 · c) 35 · d) 20
+- **Bài D.5** — a) 26 · b) 26 · c) 9 · d) 41 · e) 11
 
 **Phần E**
 
@@ -374,45 +374,51 @@ Kết quả: **>**.
 
 *Điểm chốt:* Đổi về cùng đơn vị **trước**, so sánh **sau**.
 
-### Bài D.1 — Tìm hai số khi biết tổng và tỉ số
+### Bài D.1 — Hai nhóm có phần chung — đếm bằng hai vòng tròn
+
+> **BẪY — Cộng thẳng, quên trừ phần chung.**
 
 **Các bước giải**
 
-Xét ý a: Tổ Hai và nhóm Sao Mai trồng được tất cả 270 cây. Số cây của tổ Hai bằng 2 phần 3 số cây của nhóm Sao Mai. Mỗi tổ trồng được bao nhiêu cây?
+Vẽ hai vòng tròn chồng nhau. Điền **phần chung trước**: 5 em học cả hai môn.
 
-Đọc vị: đây là dạng **Bài toán tổng – tỉ**; dấu hiệu là Đề cho **tổng** và **tỉ số** (phân số hoặc “gấp … lần”).
+Chỉ học cờ vua: 17 − 5 = 12 (em).
 
-Kiến thức phải dùng: Tỉ số, sơ đồ đoạn thẳng, chia theo tỉ lệ.
+Chỉ học tiếng Anh: 21 − 5 = 16 (em).
 
-Cách làm: Sơ đồ phần bằng nhau → giá trị một phần → nhân.
+Số em học ít nhất một trong hai môn: 12 + 5 + 16 = 33 (em).
 
-Lối tắt: Tổng luôn chia hết cho tổng số phần — nếu không chia hết là đọc sai tỉ số.
+Số em không học môn nào: 38 − 33 = **5 em**.
 
-Kết quả: **tổ Hai: 108 cây, nhóm Sao Mai: 162 cây**.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Điền phần chung vào trước, rồi trừ ra hai phần riêng. Cộng ba phần ấy được số người tham gia ít nhất một hoạt động; lấy tổng trừ đi là ra số người ngoài cả hai vòng.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Tỉ số cho biết số phần bằng nhau của mỗi đại lượng. Tổng số phần = số phần thứ nhất + số phần thứ hai. Giá trị một phần = tổng : tổng số phần. Nhân giá trị một phần với số phần của từng đại lượng.
+*Điểm chốt:* Con số đề cho cho mỗi môn **đã bao gồm** những em học cả hai. Cộng thẳng hai con số ấy là đếm phần chung hai lần.
 
-*Điểm chốt:* Phải tính **tổng số phần** trước khi chia.
+*Muốn khó hơn:* Thêm nhóm thứ ba để phải vẽ ba vòng tròn và trừ ba phần chung đôi một.
 
-### Bài D.2 — Tổng của các số tự nhiên liên tiếp
+*Phải chắc trước khi làm bài này:* Phép cộng trừ trong phạm vi 100 và cách đọc đề có nhiều số liệu.
+
+### Bài D.2 — Dãy số cho bởi quy tắc truy hồi
+
+> **BẪY — Quy tắc khác nhau ở vị trí chẵn và lẻ.**
 
 **Các bước giải**
 
-Xét ý a: Tổng của 7 số tự nhiên liên tiếp bằng 1 918. Tìm số bé nhất trong 7 số đó.
+Xét ý a: Viết ba số hạng đầu tiên của dãy.
 
-Đọc vị: đây là dạng **Dãy số tự nhiên liên tiếp có tổng cho trước**; dấu hiệu là Cụm “… số tự nhiên liên tiếp có tổng bằng …”.
+Đọc vị: đây là dạng **Dãy số truy hồi có quy tắc rẽ nhánh**; dấu hiệu là Đề mô tả cách lập số hạng từ số hạng liền trước.
 
-Kiến thức phải dùng: Trung bình cộng, dãy cách đều.
+Kiến thức phải dùng: Dãy số cho bởi quy tắc, tính lần lượt.
 
-Cách làm: Tìm số giữa bằng phép chia rồi suy ra hai đầu dãy.
+Cách làm: Lập bảng, tính lần lượt, bám sát vị trí.
 
-Lối tắt: Tổng của n số liên tiếp (n lẻ) luôn chia hết cho n.
+Lối tắt: Chỉ cần tính tới số hạng được hỏi, không cần tính cả dãy.
 
-Kết quả: **271**.
+Kết quả: **1, 6, 14**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Với một số **lẻ** các số tự nhiên liên tiếp, số ở giữa chính là trung bình cộng: số giữa = tổng : số lượng. Số bé nhất bằng số giữa trừ đi một nửa số lượng còn lại.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Lập bảng và tính lần lượt từng số hạng theo đúng quy tắc, không nhảy cóc. Ghi rõ số thứ tự của mỗi số hạng để chọn đúng nhánh quy tắc.
 
-*Điểm chốt:* Với số lượng lẻ thì **số giữa = tổng : số lượng** — đó là chìa khoá.
+*Điểm chốt:* Quy tắc phụ thuộc **vị trí chẵn hay lẻ** — phải đánh số thứ tự trước.
 
 ### Bài D.3 — Định vị số hạng trong dãy cách đều
 
@@ -430,7 +436,7 @@ Cách làm: (số − đầu) : khoảng cách, xét dư rồi cộng 1.
 
 Lối tắt: Mọi số hạng của dãy đều có cùng số dư khi chia cho khoảng cách.
 
-Kết quả: **173**.
+Kết quả: **208**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Muốn biết một số là số hạng thứ mấy: lấy số đó trừ số hạng đầu, chia cho khoảng cách rồi cộng 1. Nếu phép chia còn dư thì số đó **không thuộc** dãy.
 
@@ -442,7 +448,7 @@ Kết quả: **173**.
 
 **Các bước giải**
 
-Xét ý a: Từ 1 đến 500, chữ số 3 xuất hiện bao nhiêu lần?
+Xét ý a: Từ 1 đến 200, chữ số 0 xuất hiện bao nhiêu lần?
 
 Đọc vị: đây là dạng **Đếm số lần xuất hiện của một chữ số**; dấu hiệu là Câu hỏi “chữ số … xuất hiện bao nhiêu lần”.
 
@@ -452,33 +458,33 @@ Cách làm: Đếm theo từng hàng rồi cộng.
 
 Lối tắt: Từ 1 đến 100, mỗi chữ số từ 1 đến 9 xuất hiện đúng 20 lần (riêng chữ số 1 là 21 lần vì có số 100).
 
-Kết quả: **200**.
+Kết quả: **31**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Đếm theo từng hàng: đếm số lần chữ số đó đứng ở hàng đơn vị, rồi hàng chục, rồi hàng trăm. Ở mỗi hàng, các số thoả mãn lập thành dãy cách đều, dùng công thức đếm số hạng.
 
 *Điểm chốt:* Một số có thể chứa chữ số đó **nhiều lần**; đếm theo hàng thì không sót.
 
-### Bài D.5 — Dãy số cho bởi quy tắc truy hồi
-
-> **BẪY — Quy tắc khác nhau ở vị trí chẵn và lẻ.**
+### Bài D.5 — Tìm số ban đầu bằng cách tính ngược
 
 **Các bước giải**
 
-Xét ý a: Viết ba số hạng đầu tiên của dãy.
+Viết chuỗi thao tác thành sơ đồ mũi tên: số cần tìm → × 8 → + 44 → : 6 → 42.
 
-Đọc vị: đây là dạng **Dãy số truy hồi có quy tắc rẽ nhánh**; dấu hiệu là Đề mô tả cách lập số hạng từ số hạng liền trước.
+Đi **ngược mũi tên**, và mỗi bước làm phép tính ngược lại. Phép cuối cùng là chia cho 6, nên bước đầu khi đi ngược là nhân với 6: 42 × 6 = 252.
 
-Kiến thức phải dùng: Dãy số cho bởi quy tắc, tính lần lượt.
+Phép trước đó là cộng 44, đi ngược thì trừ: 252 − 44 = 208.
 
-Cách làm: Lập bảng, tính lần lượt, bám sát vị trí.
+Phép đầu tiên là nhân 8, đi ngược thì chia: 208 : 8 = 26.
 
-Lối tắt: Chỉ cần tính tới số hạng được hỏi, không cần tính cả dãy.
+Số cần tìm là **26**. Thử lại xuôi: 26 × 8 = 208, cộng 44 được 252, chia 6 được 42 — đúng bằng đề cho.
 
-Kết quả: **2, 7, 13**.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Viết chuỗi thao tác thành sơ đồ mũi tên rồi đi ngược lại từ kết quả cuối. Mỗi bước đảo phép tính: nhân thành chia, cộng thành trừ. Thứ tự cũng phải đảo — phép làm sau cùng được gỡ trước tiên.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Lập bảng và tính lần lượt từng số hạng theo đúng quy tắc, không nhảy cóc. Ghi rõ số thứ tự của mỗi số hạng để chọn đúng nhánh quy tắc.
+*Điểm chốt:* Đảo **cả phép tính lẫn thứ tự**. Đảo phép tính mà giữ nguyên thứ tự thì vẫn sai.
 
-*Điểm chốt:* Quy tắc phụ thuộc **vị trí chẵn hay lẻ** — phải đánh số thứ tự trước.
+*Muốn khó hơn:* Thêm bước “trừ đi một nửa số đang có” để học sinh phải gỡ một phép tính có liên quan tới chính số ấy.
+
+*Phải chắc trước khi làm bài này:* Bốn phép tính với số có hai chữ số và thứ tự thực hiện phép tính.
 
 ### Bài E.1 — Đọc vị đề số 1
 
@@ -603,11 +609,11 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | C.3 | Kiểm tra chia hết bằng dấu hiệu | Dấu hiệu chia hết cho 2, 3, 5, 9 | Câu hỏi “có chia hết cho … không” | Chọn đúng dấu hiệu theo số chia rồi kiểm tra | Cộng chữ số theo cặp tròn 9, phần dư chính là số dư khi chia 9. | không (chữ số tận cùng 8) · có (chữ số tận cùng 2) · không (tổng chữ số 13) · không (chữ số tận cùng 1)… |
 | C.4 | Phép chia có dư | Quan hệ giữa số bị chia, số chia, thương và số dư | Đề yêu cầu ghi cả thương và số dư | Đặt tính chia, kiểm tra điều kiện số dư | Ước lượng thương bằng cách làm tròn số chia trước khi chia. | 2 941 dư 13 · 7 639 dư 7 · 8 729 dư 14 · 7 596 dư 14… |
 | C.5 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | > · < · < · > |
-| D.1 | Bài toán tổng – tỉ | Tỉ số, sơ đồ đoạn thẳng, chia theo tỉ lệ | Đề cho **tổng** và **tỉ số** (phân số hoặc “gấp … lần”) | Sơ đồ phần bằng nhau → giá trị một phần → nhân | Tổng luôn chia hết cho tổng số phần — nếu không chia hết là đọc sai tỉ số. | tổ Hai: 108 cây, nhóm Sao Mai: 162 cây · tổ Một: 297 cây, đội Hai: 594 cây · nhóm Hoa Phượng: 460 cây, đội Hai: 575 cây · tổ Ba: 202 cây, nhóm Sao Mai: 505 cây… |
-| D.2 | Dãy số tự nhiên liên tiếp có tổng cho trước | Trung bình cộng, dãy cách đều | Cụm “… số tự nhiên liên tiếp có tổng bằng …” | Tìm số giữa bằng phép chia rồi suy ra hai đầu dãy | Tổng của n số liên tiếp (n lẻ) luôn chia hết cho n. | 271 · 413 · 282 · 78 |
-| D.3 | Định vị số hạng, kiểm tra một số có thuộc dãy | Dãy cách đều, phép chia có dư | Câu hỏi “là số hạng thứ mấy”, “có thuộc dãy không” | (số − đầu) : khoảng cách, xét dư rồi cộng 1 | Mọi số hạng của dãy đều có cùng số dư khi chia cho khoảng cách. | 173 · 354 · 25 · 38… |
-| D.4 | Đếm số lần xuất hiện của một chữ số | Dãy cách đều, cấu tạo số | Câu hỏi “chữ số … xuất hiện bao nhiêu lần” | Đếm theo từng hàng rồi cộng | Từ 1 đến 100, mỗi chữ số từ 1 đến 9 xuất hiện đúng 20 lần (riêng chữ số 1 là 21 lần vì có số 100). | 200 · 60 · 20 · 40… |
-| D.5 | Dãy số truy hồi có quy tắc rẽ nhánh | Dãy số cho bởi quy tắc, tính lần lượt | Đề mô tả cách lập số hạng từ số hạng liền trước | Lập bảng, tính lần lượt, bám sát vị trí | Chỉ cần tính tới số hạng được hỏi, không cần tính cả dãy. | 2, 7, 13 · 41 · 103 · 233… |
+| D.1 | Biểu đồ Ven | Phép cộng, phép trừ; đếm không trùng lặp | Đề cho số người của từng nhóm **và** số người thuộc cả hai nhóm | Vẽ hai vòng tròn, điền phần chung trước rồi mới trừ ra phần riêng | Số người ít nhất một nhóm = nhóm A + nhóm B − phần chung. | 5 em · 5 em · 3 em · 6 em… |
+| D.2 | Dãy số truy hồi có quy tắc rẽ nhánh | Dãy số cho bởi quy tắc, tính lần lượt | Đề mô tả cách lập số hạng từ số hạng liền trước | Lập bảng, tính lần lượt, bám sát vị trí | Chỉ cần tính tới số hạng được hỏi, không cần tính cả dãy. | 1, 6, 14 · 48 · 124 · 284… |
+| D.3 | Định vị số hạng, kiểm tra một số có thuộc dãy | Dãy cách đều, phép chia có dư | Câu hỏi “là số hạng thứ mấy”, “có thuộc dãy không” | (số − đầu) : khoảng cách, xét dư rồi cộng 1 | Mọi số hạng của dãy đều có cùng số dư khi chia cho khoảng cách. | 208 · 627 · 143 · 189… |
+| D.4 | Đếm số lần xuất hiện của một chữ số | Dãy cách đều, cấu tạo số | Câu hỏi “chữ số … xuất hiện bao nhiêu lần” | Đếm theo từng hàng rồi cộng | Từ 1 đến 100, mỗi chữ số từ 1 đến 9 xuất hiện đúng 20 lần (riêng chữ số 1 là 21 lần vì có số 100). | 31 · 101 · 35 · 20 |
+| D.5 | Tính ngược từ cuối | Bốn phép tính; quan hệ giữa phép tính và phép tính ngược | Đề kể một **chuỗi thao tác** rồi cho kết quả cuối, hỏi số ban đầu | Vẽ sơ đồ mũi tên, đi ngược và đảo từng phép tính | Gỡ từ phải sang trái, mỗi bước một phép tính ngược — không cần đặt ẩn. | 26 · 26 · 9 · 41… |
 | E.1 | Tìm số hạng thứ n của dãy cách đều | Công thức số hạng tổng quát của dãy cách đều | Đề hỏi “số hạng thứ …” | Đếm số khoảng rồi nhân với khoảng cách | Thử công thức với n = 1 và n = 2 để chắc chắn không lệch một khoảng. | Tìm số hạng thứ n của dãy cách đều · Đề hỏi “số hạng thứ …” · Công thức số hạng tổng quát của dãy cách đều · Đếm số khoảng rồi nhân với khoảng cách… |
 | E.2 | Đếm và tính tổng dãy con thoả điều kiện chia hết | Dãy cách đều, bội chung nhỏ nhất | Đề hỏi riêng các số chẵn, số chia hết cho … trong một dãy | Xác định dãy con cách đều rồi đếm, tính tổng | Nếu khoảng cách của dãy gốc đã chia hết cho số chia thì hoặc tất cả, hoặc không số hạng nào thoả điều kiện. | Đếm và tính tổng dãy con thoả điều kiện chia hết · Đề hỏi riêng các số chẵn, số chia hết cho … trong một dãy · Dãy cách đều, bội chung nhỏ nhất · Xác định dãy con cách đều rồi đếm, tính tổng… |
 | E.3 | Dãy số quy luật bậc hai hoặc xen kẽ | Dãy hiệu, dãy con xen kẽ | Hiệu giữa các số hạng không bằng nhau | Lập dãy hiệu; tách dãy con theo vị trí | Dãy 1, 4, 9, 16, 25 là các số chính phương — nhớ để nhận ra ngay. | Dãy số quy luật bậc hai hoặc xen kẽ · Hiệu giữa các số hạng không bằng nhau · Dãy hiệu, dãy con xen kẽ · Lập dãy hiệu; tách dãy con theo vị trí… |
@@ -635,11 +641,11 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | C.3 | TD1, TD5 | Dấu hiệu cho 2 và 5 nhìn **đuôi**; dấu hiệu cho 3 và 9 nhìn **tổng**. |
 | C.4 | TD1 | Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong. |
 | C.5 | TD2, TD1 | Đổi về cùng đơn vị **trước**, so sánh **sau**. |
-| D.1 | TD3, TD2 | Phải tính **tổng số phần** trước khi chia. |
-| D.2 | TD3, TD4 | Với số lượng lẻ thì **số giữa = tổng : số lượng** — đó là chìa khoá. |
+| D.1 | TD2, TD4 | Con số đề cho cho mỗi môn **đã bao gồm** những em học cả hai. Cộng thẳng hai con số ấy là đếm phần chung hai lần. |
+| D.2 | TD3, TD6 | Quy tắc phụ thuộc **vị trí chẵn hay lẻ** — phải đánh số thứ tự trước. |
 | D.3 | TD4, TD2 | Phép chia **có dư** là bằng chứng số đó không thuộc dãy. |
 | D.4 | TD4, TD6 | Một số có thể chứa chữ số đó **nhiều lần**; đếm theo hàng thì không sót. |
-| D.5 | TD3, TD6 | Quy tắc phụ thuộc **vị trí chẵn hay lẻ** — phải đánh số thứ tự trước. |
+| D.5 | TD3, TD5 | Đảo **cả phép tính lẫn thứ tự**. Đảo phép tính mà giữ nguyên thứ tự thì vẫn sai. |
 | E.1 | TD2, TD6 | Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**. |
 | E.2 | TD2, TD6 | Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**. |
 | E.3 | TD2, TD6 | Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**. |
@@ -669,11 +675,11 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 | C.3 | Dùng dấu hiệu của 3 để kết luận cho 2, hoặc cộng thiếu một chữ số. | Viết rõ tổng các chữ số ra bên cạnh trước khi kết luận. |
 | C.4 | Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. | Thử lại bằng công thức số bị chia = số chia × thương + số dư. |
 | C.5 | So thẳng hai con số, bỏ qua đơn vị. | Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị. |
-| D.1 | Chia tổng cho một trong hai số của tỉ số thay vì cho tổng số phần. | Vẽ sơ đồ, đếm tổng số đoạn nhỏ trên cả hai đoạn thẳng. |
-| D.2 | Lấy tổng chia cho số lượng rồi nhận luôn kết quả là số bé nhất. | Vẽ dãy số ra, đánh dấu vị trí số giữa trước khi lùi về số đầu. |
+| D.1 | Lấy tổng trừ đi tổng hai con số đề cho mà không cộng lại phần chung. | Vẽ hình trước, điền phần giữa trước, rồi mới điền hai bên. |
+| D.2 | Áp dụng nhầm nhánh quy tắc vì không để ý vị trí. | Kẻ bảng hai dòng: dòng trên ghi vị trí, dòng dưới ghi số hạng. |
 | D.3 | Chia được số nguyên rồi quên cộng 1, hoặc bỏ qua phần dư. | Luôn ghi rõ thương và số dư khi chia. |
 | D.4 | Đếm số lượng **số** chứa chữ số đó thay vì số **lần** xuất hiện. | Kẻ bảng: hàng đơn vị – hàng chục – hàng trăm, đếm riêng rồi cộng. |
-| D.5 | Áp dụng nhầm nhánh quy tắc vì không để ý vị trí. | Kẻ bảng hai dòng: dòng trên ghi vị trí, dòng dưới ghi số hạng. |
+| D.5 | Bắt đầu gỡ từ phép tính đầu tiên của đề thay vì từ phép tính cuối cùng. | Thử lại theo chiều xuôi. Bài này luôn thử lại được, nên không có lý do gì để nộp một đáp số chưa thử. |
 | E.1 | Nhân khoảng cách với n nên kết quả thừa đúng một khoảng. | Kiểm chứng công thức với n = 1: phải ra đúng số hạng đầu. |
 | E.2 | Duyệt từng số hạng để đếm — không kịp khi dãy dài hàng trăm số. | Tìm số hạng đầu tiên thoả điều kiện rồi xác định khoảng cách mới. |
 | E.3 | Chỉ thử một hướng rồi bỏ cuộc. | Luôn viết dãy hiệu xuống dưới dãy gốc trước khi kết luận. |
@@ -701,11 +707,11 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 **Bài C.3** — (1) Số chia là 2 hay 5 thì nhìn chữ số tận cùng. — (2) Số chia là 3 hay 9 thì cộng các chữ số. — (3) Tổng chữ số vẫn lớn thì cộng tiếp lần nữa.
 **Bài C.4** — (1) Đặt tính chia theo cột. — (2) Mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. — (3) Thử lại: nhân thương với số chia rồi cộng số dư.
 **Bài C.5** — (1) Hai vế đang dùng đơn vị nào? — (2) Chọn một đơn vị chung, nên chọn đơn vị bé hơn. — (3) Đổi cả hai vế rồi so sánh.
-**Bài D.1** — (1) Vẽ đại lượng thứ nhất mấy phần, thứ hai mấy phần? — (2) Tổng cộng có bao nhiêu phần bằng nhau? — (3) Một phần bằng bao nhiêu?
-**Bài D.2** — (1) Số lượng số hạng là số chẵn hay lẻ? — (2) Với số lượng lẻ, số ở giữa bằng tổng chia số lượng. — (3) Từ số giữa lùi về đầu dãy mấy đơn vị?
+**Bài D.1** — (1) Bao nhiêu em học cả hai môn? Điền số ấy vào phần chồng nhau. — (2) Vậy chỉ học riêng mỗi môn là bao nhiêu em? — (3) Cộng ba phần rồi lấy sĩ số lớp trừ đi.
+**Bài D.2** — (1) Kẻ bảng vị trí và số hạng. — (2) Xác định vị trí đang xét là chẵn hay lẻ. — (3) Áp dụng đúng nhánh quy tắc cho vị trí đó.
 **Bài D.3** — (1) Lấy số đó trừ số hạng đầu. — (2) Chia hiệu cho khoảng cách — có chia hết không? — (3) Chia hết thì cộng 1 để ra thứ tự; không chia hết thì số đó không thuộc dãy.
 **Bài D.4** — (1) Đếm riêng theo từng hàng. — (2) Ở hàng đơn vị, các số đó cách nhau bao nhiêu đơn vị? — (3) Cộng kết quả của cả ba hàng.
-**Bài D.5** — (1) Kẻ bảng vị trí và số hạng. — (2) Xác định vị trí đang xét là chẵn hay lẻ. — (3) Áp dụng đúng nhánh quy tắc cho vị trí đó.
+**Bài D.5** — (1) Đề đã làm những phép tính nào, theo thứ tự nào? — (2) Phép nào làm sau cùng? Gỡ phép ấy trước tiên. — (3) Nhân thì gỡ bằng chia, cộng thì gỡ bằng trừ.
 **Bài E.1** — (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
 **Bài E.2** — (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
 **Bài E.3** — (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
@@ -735,11 +741,11 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | C.3 | Số 1 368 có chia hết cho 9 không? | có |
 | C.4 | Tìm thương và số dư của 1 234 : 7 | 176 dư 2 |
 | C.5 | So sánh: 3 kg … 2 500 g | > |
-| D.1 | Hai tổ trồng 120 cây, số cây tổ Một bằng 1 phần 2 tổ Hai. Mỗi tổ trồng mấy cây? | 40 và 80 |
-| D.2 | Tổng của 5 số tự nhiên liên tiếp bằng 100. Số bé nhất là số nào? | 18 |
+| D.1 | Lớp có 40 em, 25 em học vẽ, 20 em học hát, 10 em học cả hai. Bao nhiêu em không học môn nào? | 5 em |
+| D.2 | Dãy: số đầu là 2, mỗi số sau bằng số trước nhân 2. Số thứ 5 là số nào? | 32 |
 | D.3 | Dãy 2, 7, 12, … Số 47 là số hạng thứ mấy? | 10 |
 | D.4 | Từ 1 đến 50, chữ số 3 xuất hiện bao nhiêu lần? | 15 |
-| D.5 | Dãy: số đầu là 2, mỗi số sau bằng số trước nhân 2. Số thứ 5 là số nào? | 32 |
+| D.5 | Một số nhân 3, cộng 7, chia 2 thì được 20. Tìm số ấy. | 11 |
 | E.1 | Dãy 5, 9, 13, … số hạng thứ 20 là số nào? | 81 |
 | E.2 | Dãy 1, 4, 7, …, 100 có bao nhiêu số chẵn? | 17 |
 | E.3 | Viết tiếp: 1, 2, 4, 7, 11, … | 16 |

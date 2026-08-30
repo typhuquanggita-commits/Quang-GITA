@@ -31,13 +31,14 @@ Kiểm định: `validate_phieu.py --all` → **0 lỗi**. Kiểm toán: `kiem_t
 Kho không được gõ tay mà được **sinh bằng mã**, theo một nguyên tắc bất di bất dịch:
 **mọi đáp số do máy tính ra, không do người gõ.** Người biên soạn viết lời dẫn, hướng
 giải, lỗi thường gặp, gợi ý ba tầng và sáu cột bảng phân tích — tất cả đóng gói trong
-**229 mẫu bài** phủ kín 8 nhóm chuyên đề × 5 mức × 3 lớp. Cả 120 ô (lớp × nhóm × mức)
+**241 mẫu bài** phủ kín 8 nhóm chuyên đề × 5 mức × 3 lớp. Cả 120 ô (lớp × nhóm × mức)
 đều có từ hai mẫu trở lên, và cả **538 dạng bài** của ngân hàng đều có mẫu khớp.
 
 | Lớp phần mềm | Nơi để | Việc |
 |---|---|---|
 | Khung mẫu bài | `04-cong-cu/sinh/khung.py` | định dạng số Việt Nam, bối cảnh, đối tượng `Bai`, `Mau` |
-| Thư viện mẫu | `04-cong-cu/sinh/mau_*.py` | 229 mẫu, mỗi mẫu tự chọn số liệu và tự tính đáp số |
+| Thư viện mẫu | `04-cong-cu/sinh/mau_*.py` | 241 mẫu, mỗi mẫu tự chọn số liệu và tự tính đáp số |
+| Bảng phương pháp giải | `04-cong-cu/data/phuong_phap.py` | 16 phương pháp — trục thứ hai của chương trình |
 | Bộ chọn mẫu | `04-cong-cu/lap/chon.py` | chọn năm mẫu cho một phần, ưu tiên khớp dạng bài của cụm |
 | Phần có cấu trúc | `04-cong-cu/lap/meta.py` | sơ đồ tư duy, bảng dạng bài, đọc vị, kỹ năng, thuyết trình |
 | Bộ lắp phiếu | `04-cong-cu/lap/phieu.py` | kết xuất đề và hướng dẫn giải |
@@ -88,7 +89,7 @@ Khi phân vân một phiếu sinh tự động đã đủ chất lượng chưa,
 
 ## 5. MỞ RỘNG THƯ VIỆN MẪU
 
-Thư viện 229 mẫu là **tài sản gốc** của hệ thống: thêm một mẫu tốt là nâng chất lượng
+Thư viện 241 mẫu là **tài sản gốc** của hệ thống: thêm một mẫu tốt là nâng chất lượng
 hàng chục phiếu cùng lúc. Không còn ô trống và không còn dạng bài nào chưa phủ, nên
 việc mở rộng từ đây là **làm dày chỗ mỏng**, không phải vá chỗ thủng.
 

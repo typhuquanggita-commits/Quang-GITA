@@ -262,7 +262,7 @@ c) Nhánh con 3 — lỗi hay mắc?
 d) Ghi thêm: kiến thức phải thuộc?
 e) Ghi thêm: cách xử lý nhanh nhất?
 
-### Bài 5. (5 điểm) Nhánh 4 — Xét số dư của tổng
+### Bài 5. (5 điểm) Nhánh 4 — Đếm chữ số theo nhóm độ dài
 
 Điền ba nhánh con bắt buộc của nhánh này.
 
@@ -456,10 +456,10 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài D.5
-**Đáp số:** a) Đề hỏi chia hết hay số dư của một tổng dài · b) Rút gọn từng số hạng về số dư rồi cộng · c) Cộng hết cả dãy rồi mới chia, mất thời gian và dễ sai. · d) Tính chất số dư của tổng · e) Với d = 9, số dư của một số bằng số dư của tổng các chữ số của nó.
+**Đáp số:** a) Bài toán đánh số trang, đánh số nhà, đánh số vé · b) Chia nhóm 1 chữ số – 2 chữ số – 3 chữ số rồi nhân và cộng · c) Lấy số trang nhân với số chữ số của trang cuối. · d) Đếm số hạng dãy cách đều, cấu tạo số · e) Sách 100 trang luôn dùng 192 chữ số; nhớ mốc này để kiểm tra nhanh.
 **Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
-**Nhãn tư duy:** TD2, TD6. Điểm chốt: Làm việc với **số dư** thay vì với số — đây là kỹ thuật rút gọn mạnh nhất.
-**Lỗi thường gặp:** Cộng hết cả dãy rồi mới chia, mất thời gian và dễ sai. Phòng: Ghi số dư của từng số ngay dưới số đó rồi cộng dòng số dư.
+**Nhãn tư duy:** TD4, TD6. Điểm chốt: Nhóm cuối cùng thường **không đầy đủ** — phải đếm đúng số trang còn lại.
+**Lỗi thường gặp:** Lấy số trang nhân với số chữ số của trang cuối. Phòng: Kẻ bảng ba cột: khoảng trang – số trang – số chữ số, rồi cộng cột cuối.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.1

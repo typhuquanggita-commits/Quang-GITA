@@ -30,11 +30,11 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần A**
 
-- **Bài A.1** — a) 5 800 · b) 8 700 · c) 6 500 · d) 590 000 · e) 7 800 · f) 550 000 · g) 4 700
-- **Bài A.2** — a) 182 cm · b) 124 cm · c) 156 cm² · d) 400 cm² · e) 98 cm · f) 957 cm²
-- **Bài A.3** — a) 7 cm · b) cạnh 6 cm, diện tích 36 cm² · c) 14 cm · d) 23 cm · e) cạnh 15 cm, diện tích 225 cm²
-- **Bài A.4** — a) 15 · b) 90 · c) 26 · d) 16 cm · e) 15 cm²
-- **Bài A.5** — a) lớn hơn · b) 2 cặp song song, 4 cặp vuông góc · c) góc nhọn · d) 2 cặp song song, 4 cặp vuông góc · e) góc tù · f) lớn hơn
+- **Bài A.1** — a) chữ số 8, giá trị 8 000 000 · b) chữ số 4, giá trị 400 000 · c) chữ số 1, giá trị 10 000 · d) chữ số 0, giá trị 0
+- **Bài A.2** — a) 44 cm · b) 798 cm² · c) 2 601 cm² · d) 178 cm · e) 100 cm²
+- **Bài A.3** — a) 12 · b) 60 · c) 20 · d) 14 cm · e) 12 cm²
+- **Bài A.4** — a) góc tù · b) lớn hơn · c) 2 cặp song song, 4 cặp vuông góc · d) góc nhọn · e) lớn hơn · f) 2 cặp song song, 4 cặp vuông góc · g) 2 cặp song song, 4 cặp vuông góc
+- **Bài A.5** — a) cạnh 6 cm, diện tích 36 cm² · b) 10 cm · c) 9 cm · d) 6 cm · e) 7 cm · f) cạnh 24 cm, diện tích 576 cm²
 
 **Phần B**
 
@@ -62,11 +62,11 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần E**
 
-- **Bài E.1** — a) 126 cm² · b) 540 cm² · c) 66 cm² · d) 90 cm² · e) 208 cm² · f) 114 cm²
-- **Bài E.2** — a) 80 cm · b) B · c) 25 cm · d) 12 cm · e) 7 cm · f) B · g) 31 cm
-- **Bài E.3** — a) 418 cm² · b) 145 cm² · c) 176 cm² · d) 147 cm²
-- **Bài E.4** — a) 142 cây · b) không chia hết (182 m không chia hết cho 5 m) · c) 2 viên · d) 36 viên (làm tròn lên) · e) không chia hết (132 m không chia hết cho 5 m) · f) 75 viên (làm tròn lên)
-- **Bài E.5** — a) 30 phần 91 · b) 2 phần 3 · c) 5 phần 3 · d) 11 phần 36 · e) 20 phần 143 · f) 5 phần 4 · g) 9 phần 7
+- **Bài E.1** — a) 174 cm² · b) 320 cm² · c) 826 cm² · d) 644 cm² · e) 528 cm²
+- **Bài E.2** — a) 7 cm · b) 66 cm · c) B · d) B · e) 3 cm
+- **Bài E.3** — a) 78 · b) 4 100 · c) 14 000 · d) 23 · e) 3 700 · f) 55 000
+- **Bài E.4** — a) 209 cm² · b) 32 cm² · c) 784 cm² · d) 72 cm² · e) 132 cm²
+- **Bài E.5** — a) 110 m · b) 56 m · c) 92 m · d) 142 cây · e) không chia hết (182 m không chia hết cho 5 m) · f) 2 viên
 
 ---
 
@@ -74,31 +74,31 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 Mỗi bài có hai phần: **các bước giải** với số liệu thật của chính bài ấy, và **cách nghĩ** áp dụng cho mọi bài cùng dạng. Đọc kĩ phần chữ đậm — đó là câu cần nhớ, không phải con số.
 
-### Bài A.1 — Đổi đơn vị đo diện tích
+### Bài A.1 — Đọc giá trị của chữ số theo hàng
 
 **Các bước giải**
 
-Xét ý a: 58 dm² = … cm²
+Xét ý a: Chữ số ở hàng **triệu** của số 8 410 570 là chữ số nào, và nó có giá trị bằng bao nhiêu?
 
-Đọc vị: đây là dạng **Đổi đơn vị diện tích**; dấu hiệu là Đơn vị có mũ hai: m², cm², km², ha.
+Đọc vị: đây là dạng **Xác định chữ số và giá trị chữ số theo hàng**; dấu hiệu là Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …”.
 
-Kiến thức phải dùng: Bảng đơn vị đo diện tích.
+Kiến thức phải dùng: Cấu tạo thập phân của số tự nhiên.
 
-Cách làm: Đếm bậc rồi nhân, chia 100.
+Cách làm: Đánh số hàng từ phải sang trái rồi tra bảng hàng.
 
-Lối tắt: Mỗi bậc thêm hai chữ số 0 — nhớ “diện tích thì gấp đôi số 0”.
+Lối tắt: Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị.
 
-Kết quả: **5 800**.
+Kết quả: **chữ số 8, giá trị 8 000 000**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần** (chứ không phải 10 lần như đơn vị độ dài), vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Đếm hàng từ phải sang trái: đơn vị – chục – trăm – nghìn – chục nghìn – trăm nghìn – triệu. Giá trị của một chữ số bằng chính chữ số đó nhân với giá trị của hàng nó đứng.
 
-*Điểm chốt:* Đơn vị diện tích nhảy **100 lần** mỗi bậc.
+*Điểm chốt:* Phân biệt **chữ số** (một kí hiệu) với **giá trị** của chữ số (chữ số nhân giá trị hàng).
 
 ### Bài A.2 — Chu vi và diện tích hình chữ nhật, hình vuông
 
 **Các bước giải**
 
-Xét ý a: Hình chữ nhật có chiều dài 56 cm, chiều rộng 35 cm. Tính chu vi.
+Xét ý a: Hình vuông có cạnh 11 cm. Tính chu vi.
 
 Đọc vị: đây là dạng **Chu vi, diện tích hình cơ bản**; dấu hiệu là Cho chiều dài, chiều rộng hoặc cạnh.
 
@@ -108,37 +108,17 @@ Cách làm: Chọn đúng công thức, ghi đúng đơn vị.
 
 Lối tắt: Hình vuông là hình chữ nhật có dài bằng rộng — chỉ cần nhớ một bộ công thức.
 
-Kết quả: **182 cm**.
+Kết quả: **44 cm**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích hình chữ nhật = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
 
 *Điểm chốt:* Chu vi ghi đơn vị **cm**, diện tích ghi đơn vị **cm²** — sai đơn vị là mất điểm.
 
-### Bài A.3 — Tìm kích thước khi biết chu vi hoặc diện tích
+### Bài A.3 — Đếm hình trong lưới ô vuông
 
 **Các bước giải**
 
-Xét ý a: Hình chữ nhật có chu vi 32 cm, chiều dài 9 cm. Tính chiều rộng.
-
-Đọc vị: đây là dạng **Tìm kích thước từ chu vi, diện tích**; dấu hiệu là Cho chu vi hoặc diện tích và một kích thước.
-
-Kiến thức phải dùng: Công thức chu vi, diện tích; phép tính ngược.
-
-Cách làm: Đi ngược công thức, qua bước nửa chu vi.
-
-Lối tắt: Nửa chu vi = chu vi : 2 — luôn tính bước này đầu tiên.
-
-Kết quả: **7 cm**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Từ chu vi hình chữ nhật, chia đôi được nửa chu vi (chính là dài + rộng), rồi trừ đi chiều đã biết. Từ diện tích, chia cho một chiều được chiều kia. Từ chu vi hình vuông, chia 4 được cạnh.
-
-*Điểm chốt:* Chia chu vi cho **2** ra nửa chu vi — bước trung gian không được bỏ.
-
-### Bài A.4 — Đếm hình trong lưới ô vuông
-
-**Các bước giải**
-
-Xét ý a: Lưới ô vuông gồm 3 hàng và 5 cột ô vuông nhỏ. Có tất cả bao nhiêu ô vuông nhỏ?
+Xét ý a: Lưới ô vuông gồm 3 hàng và 4 cột ô vuông nhỏ. Có tất cả bao nhiêu ô vuông nhỏ?
 
 Đọc vị: đây là dạng **Đếm hình trong lưới**; dấu hiệu là Hình vẽ là lưới ô vuông đều.
 
@@ -148,13 +128,13 @@ Cách làm: Đếm theo đường kẻ hoặc theo cỡ hình.
 
 Lối tắt: Số cách chọn 2 trong k đường kẻ là k × (k − 1) : 2.
 
-Kết quả: **15**.
+Kết quả: **12**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Một hình chữ nhật trong lưới được xác định bởi hai đường kẻ ngang và hai đường kẻ dọc. Lưới m hàng có m + 1 đường ngang, n cột có n + 1 đường dọc, nên số hình chữ nhật bằng số cách chọn hai đường ngang nhân số cách chọn hai đường dọc. Đếm hình vuông thì đếm theo từng cỡ cạnh.
 
 *Điểm chốt:* Đếm **theo cỡ** hoặc **theo đường kẻ**, tuyệt đối không đếm ngẫu nhiên.
 
-### Bài A.5 — Góc nhọn, góc tù, góc bẹt; vuông góc và song song
+### Bài A.4 — Góc nhọn, góc tù, góc bẹt; vuông góc và song song
 
 **Các bước giải**
 
@@ -173,6 +153,26 @@ So số đo của góc với 90° và 180° là phân loại được ngay.
 *Muốn khó hơn:* Cho hai góc kề bù, biết một góc tìm góc kia.
 
 *Phải chắc trước khi làm bài này:* Cách dùng ê ke và thước đo góc.
+
+### Bài A.5 — Tìm kích thước khi biết chu vi hoặc diện tích
+
+**Các bước giải**
+
+Xét ý a: Hình vuông có chu vi 24 cm. Tính cạnh và diện tích.
+
+Đọc vị: đây là dạng **Tìm kích thước từ chu vi, diện tích**; dấu hiệu là Cho chu vi hoặc diện tích và một kích thước.
+
+Kiến thức phải dùng: Công thức chu vi, diện tích; phép tính ngược.
+
+Cách làm: Đi ngược công thức, qua bước nửa chu vi.
+
+Lối tắt: Nửa chu vi = chu vi : 2 — luôn tính bước này đầu tiên.
+
+Kết quả: **cạnh 6 cm, diện tích 36 cm²**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Từ chu vi hình chữ nhật, chia đôi được nửa chu vi (chính là dài + rộng), rồi trừ đi chiều đã biết. Từ diện tích, chia cho một chiều được chiều kia. Từ chu vi hình vuông, chia 4 được cạnh.
+
+*Điểm chốt:* Chia chu vi cho **2** ra nửa chu vi — bước trung gian không được bỏ.
 
 ### Bài B.1 — Vì sao phải học chương này
 
@@ -474,53 +474,11 @@ Kết quả: **Quan hệ đường kính – bán kính**.
 
 *Điểm chốt:* So sánh phải **cùng loại đại lượng** — bán kính với bán kính.
 
-### Bài E.1 — Diện tích hình bình hành, hình thoi, hình tam giác
-
-> **BẪY — Chia 2 hay không chia 2.**
+### Bài E.1 — Diện tích hình thang
 
 **Các bước giải**
 
-Xét ý a: Hình bình hành có đáy 9 cm, chiều cao 14 cm. Tính diện tích.
-
-Đọc vị: đây là dạng **Diện tích các hình phẳng cơ bản**; dấu hiệu là Đề cho đáy và chiều cao, hoặc hai đường chéo.
-
-Kiến thức phải dùng: Công thức diện tích hình bình hành, hình thoi, hình tam giác.
-
-Cách làm: Nhận dạng hình rồi chọn công thức.
-
-Lối tắt: Tam giác bằng nửa hình bình hành cùng đáy cùng chiều cao.
-
-Kết quả: **126 cm²**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Hình bình hành: S = đáy × chiều cao. Hình thoi: S = tích hai đường chéo chia 2. Hình tam giác: S = đáy × chiều cao chia 2.
-
-*Điểm chốt:* Hình bình hành **không** chia 2; hình tam giác và hình thoi **có** chia 2.
-
-### Bài E.2 — Hình tròn: tâm, bán kính, đường kính
-
-> **BẪY — Bán kính hay đường kính.**
-
-**Các bước giải**
-
-Đường kính đi qua tâm và bằng hai lần bán kính.
-
-Đường kính = 40 × 2 = 80 (cm).
-
-Đáp số: **80 cm**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Mọi bán kính của một hình tròn đều bằng nhau. Đường kính đi qua tâm và bằng **hai lần** bán kính. Muốn so sánh hai hình tròn thì đưa về cùng một đại lượng: cùng bán kính hoặc cùng đường kính.
-
-*Điểm chốt:* So sánh phải **cùng loại đại lượng** — bán kính với bán kính.
-
-*Muốn khó hơn:* Ba hình tròn cùng tâm — tính khoảng cách giữa hai đường tròn liên tiếp.
-
-*Phải chắc trước khi làm bài này:* Nhân, chia với 2 và cách dùng com-pa.
-
-### Bài E.3 — Diện tích hình thang
-
-**Các bước giải**
-
-Xét ý a: Hình thang có đáy lớn 26 cm, đáy bé 18 cm, chiều cao 19 cm. Tính diện tích.
+Xét ý a: Hình thang có đáy lớn 8 cm, đáy bé 4 cm, chiều cao 29 cm. Tính diện tích.
 
 Đọc vị: đây là dạng **Diện tích hình thang**; dấu hiệu là Đề cho hai đáy và chiều cao.
 
@@ -530,19 +488,87 @@ Cách làm: Tổng hai đáy × chiều cao : 2.
 
 Lối tắt: Nếu tổng hai đáy là số chẵn thì chia 2 ngay từ đầu cho gọn.
 
-Kết quả: **418 cm²**.
+Kết quả: **174 cm²**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Diện tích hình thang = (đáy lớn + đáy bé) × chiều cao : 2. Cách nhớ: ghép hai hình thang bằng nhau thành một hình bình hành có đáy bằng tổng hai đáy, nên phải chia đôi.
 
 *Điểm chốt:* Cộng **hai đáy** trước rồi mới nhân chiều cao và chia 2.
 
-### Bài E.4 — Bài toán thực tế về chu vi và diện tích
+### Bài E.2 — Hình tròn: tâm, bán kính, đường kính
+
+> **BẪY — Bán kính hay đường kính.**
+
+**Các bước giải**
+
+Xét ý a: Hình tròn có đường kính 14 cm. Bán kính dài bao nhiêu?
+
+Đọc vị: đây là dạng **Nhận biết hình tròn và các yếu tố**; dấu hiệu là Đề nhắc tâm, bán kính, đường kính.
+
+Kiến thức phải dùng: Quan hệ đường kính – bán kính.
+
+Cách làm: Quy về bán kính rồi so sánh hoặc tính.
+
+Lối tắt: Nhìn đơn vị và tên đại lượng trước khi so sánh.
+
+Kết quả: **7 cm**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Mọi bán kính của một hình tròn đều bằng nhau. Đường kính đi qua tâm và bằng **hai lần** bán kính. Muốn so sánh hai hình tròn thì đưa về cùng một đại lượng: cùng bán kính hoặc cùng đường kính.
+
+*Điểm chốt:* So sánh phải **cùng loại đại lượng** — bán kính với bán kính.
+
+*Muốn khó hơn:* Ba hình tròn cùng tâm — tính khoảng cách giữa hai đường tròn liên tiếp.
+
+*Phải chắc trước khi làm bài này:* Nhân, chia với 2 và cách dùng com-pa.
+
+### Bài E.3 — Tính nhanh nhờ ghép cặp thừa số tròn
+
+**Các bước giải**
+
+Xét ý a: 3 120 : 4 : 10
+
+Đọc vị: đây là dạng **Tính nhanh tích, thương nhiều bước**; dấu hiệu là Tích có thừa số 25, 125, 50, 20; hoặc chia liên tiếp.
+
+Kiến thức phải dùng: Tính chất giao hoán, kết hợp của phép nhân.
+
+Cách làm: Ghép cặp cho tích tròn rồi nhân.
+
+Lối tắt: Chia liên tiếp cho 4 rồi 25 bằng chia cho 100.
+
+Kết quả: **78**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Trong một tích, được phép đổi chỗ và nhóm các thừa số. Ghép các cặp cho tích tròn: 25 × 4 = 100, 125 × 8 = 1 000, 50 × 2 = 100, 20 × 5 = 100. Chia liên tiếp cho hai số bằng chia cho tích hai số đó.
+
+*Điểm chốt:* Thuộc lòng bốn cặp tròn: **25 × 4**, **125 × 8**, **50 × 2**, **20 × 5**.
+
+### Bài E.4 — Diện tích hình bình hành, hình thoi, hình tam giác
+
+> **BẪY — Chia 2 hay không chia 2.**
+
+**Các bước giải**
+
+Xét ý a: Hình tam giác có đáy 19 cm, chiều cao 22 cm. Tính diện tích.
+
+Đọc vị: đây là dạng **Diện tích các hình phẳng cơ bản**; dấu hiệu là Đề cho đáy và chiều cao, hoặc hai đường chéo.
+
+Kiến thức phải dùng: Công thức diện tích hình bình hành, hình thoi, hình tam giác.
+
+Cách làm: Nhận dạng hình rồi chọn công thức.
+
+Lối tắt: Tam giác bằng nửa hình bình hành cùng đáy cùng chiều cao.
+
+Kết quả: **209 cm²**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Hình bình hành: S = đáy × chiều cao. Hình thoi: S = tích hai đường chéo chia 2. Hình tam giác: S = đáy × chiều cao chia 2.
+
+*Điểm chốt:* Hình bình hành **không** chia 2; hình tam giác và hình thoi **có** chia 2.
+
+### Bài E.5 — Bài toán thực tế về chu vi và diện tích
 
 > **BẪY — Chu vi hay diện tích.**
 
 **Các bước giải**
 
-Xét ý a: Một mảnh đất hình chữ nhật dài 79 m, rộng 63 m. Người ta trồng cây quanh mảnh đất, hai cây liền nhau cách nhau 2 m. Hỏi cần bao nhiêu cây?
+Xét ý a: Một mảnh vườn hình chữ nhật dài 47 m, rộng 8 m. Người ta rào xung quanh mảnh vườn. Hỏi cần bao nhiêu mét rào?
 
 Đọc vị: đây là dạng **Chu vi, diện tích trong tình huống thực tế**; dấu hiệu là Từ khoá “rào xung quanh”, “lát gạch”, “trồng cây quanh”.
 
@@ -552,33 +578,11 @@ Cách làm: Đọc vị chu vi hay diện tích rồi tính.
 
 Lối tắt: Nhìn đơn vị của đáp số: mét thì là chu vi, mét vuông thì là diện tích.
 
-Kết quả: **142 cây**.
+Kết quả: **110 m**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Rào xung quanh, trồng cây quanh mảnh đất là bài toán **chu vi**. Lát gạch, trải thảm, gieo hạt khắp mặt đất là bài toán **diện tích**. Số viên gạch = diện tích nền : diện tích một viên.
 
 *Điểm chốt:* “Xung quanh” → chu vi; “khắp mặt” → diện tích.
-
-### Bài E.5 — Bốn phép tính với phân số
-
-> **BẪY — Nhân chia không cần quy đồng.**
-
-**Các bước giải**
-
-Xét ý a: 5 phần 7 − 5 phần 13
-
-Đọc vị: đây là dạng **Bốn phép tính với phân số**; dấu hiệu là Biểu thức chỉ gồm phân số.
-
-Kiến thức phải dùng: Quy đồng, nhân chia phân số.
-
-Cách làm: Chọn quy tắc theo phép tính, rút gọn cuối cùng.
-
-Lối tắt: Rút gọn chéo trước khi nhân để số nhỏ, tính nhanh và ít sai.
-
-Kết quả: **30 phần 91**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Cộng, trừ phân số phải **quy đồng mẫu số** trước. Nhân phân số thì nhân tử với tử, mẫu với mẫu. Chia phân số thì nhân với phân số đảo ngược của số chia. Cuối cùng luôn rút gọn.
-
-*Điểm chốt:* Cộng trừ **cần** quy đồng, nhân chia **không cần** quy đồng.
 
 ---
 
@@ -588,11 +592,11 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
-| A.1 | Đổi đơn vị diện tích | Bảng đơn vị đo diện tích | Đơn vị có mũ hai: m², cm², km², ha | Đếm bậc rồi nhân, chia 100 | Mỗi bậc thêm hai chữ số 0 — nhớ “diện tích thì gấp đôi số 0”. | 5 800 · 8 700 · 6 500 · 590 000… |
-| A.2 | Chu vi, diện tích hình cơ bản | Công thức chu vi, diện tích hình chữ nhật và hình vuông | Cho chiều dài, chiều rộng hoặc cạnh | Chọn đúng công thức, ghi đúng đơn vị | Hình vuông là hình chữ nhật có dài bằng rộng — chỉ cần nhớ một bộ công thức. | 182 cm · 124 cm · 156 cm² · 400 cm²… |
-| A.3 | Tìm kích thước từ chu vi, diện tích | Công thức chu vi, diện tích; phép tính ngược | Cho chu vi hoặc diện tích và một kích thước | Đi ngược công thức, qua bước nửa chu vi | Nửa chu vi = chu vi : 2 — luôn tính bước này đầu tiên. | 7 cm · cạnh 6 cm, diện tích 36 cm² · 14 cm · 23 cm… |
-| A.4 | Đếm hình trong lưới | Quy tắc đếm, tổ hợp đơn giản | Hình vẽ là lưới ô vuông đều | Đếm theo đường kẻ hoặc theo cỡ hình | Số cách chọn 2 trong k đường kẻ là k × (k − 1) : 2. | 15 · 90 · 26 · 16 cm… |
-| A.5 | Nhận biết và phân loại góc | Số đo góc; hai đường thẳng vuông góc, song song | Đề cho số đo góc hoặc hỏi về cạnh của hình | So số đo với hai mốc 90° và 180° | Ê ke chính là một góc vuông cầm tay — áp vào là biết ngay. | lớn hơn · 2 cặp song song, 4 cặp vuông góc · góc nhọn · 2 cặp song song, 4 cặp vuông góc… |
+| A.1 | Xác định chữ số và giá trị chữ số theo hàng | Cấu tạo thập phân của số tự nhiên | Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” | Đánh số hàng từ phải sang trái rồi tra bảng hàng | Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị. | chữ số 8, giá trị 8 000 000 · chữ số 4, giá trị 400 000 · chữ số 1, giá trị 10 000 · chữ số 0, giá trị 0 |
+| A.2 | Chu vi, diện tích hình cơ bản | Công thức chu vi, diện tích hình chữ nhật và hình vuông | Cho chiều dài, chiều rộng hoặc cạnh | Chọn đúng công thức, ghi đúng đơn vị | Hình vuông là hình chữ nhật có dài bằng rộng — chỉ cần nhớ một bộ công thức. | 44 cm · 798 cm² · 2 601 cm² · 178 cm… |
+| A.3 | Đếm hình trong lưới | Quy tắc đếm, tổ hợp đơn giản | Hình vẽ là lưới ô vuông đều | Đếm theo đường kẻ hoặc theo cỡ hình | Số cách chọn 2 trong k đường kẻ là k × (k − 1) : 2. | 12 · 60 · 20 · 14 cm… |
+| A.4 | Nhận biết và phân loại góc | Số đo góc; hai đường thẳng vuông góc, song song | Đề cho số đo góc hoặc hỏi về cạnh của hình | So số đo với hai mốc 90° và 180° | Ê ke chính là một góc vuông cầm tay — áp vào là biết ngay. | góc tù · lớn hơn · 2 cặp song song, 4 cặp vuông góc · góc nhọn… |
+| A.5 | Tìm kích thước từ chu vi, diện tích | Công thức chu vi, diện tích; phép tính ngược | Cho chu vi hoặc diện tích và một kích thước | Đi ngược công thức, qua bước nửa chu vi | Nửa chu vi = chu vi : 2 — luôn tính bước này đầu tiên. | cạnh 6 cm, diện tích 36 cm² · 10 cm · 9 cm · 6 cm… |
 | B.1 | Định vị chương trong hệ thống | Tên chương, nhóm chuyên đề, số dạng bài | Phần đầu phiếu ghi rõ tên cụm và nhóm chuyên đề | Đọc phần đầu phiếu rồi trả lời theo đúng tên gọi | Ghi tên chương ra góc vở, mỗi lần mở vở là đọc lại một lần. | Tỉ số diện tích tam giác, hình thang và hình tròn · F — Hình học · 6 · ở mọi bài thuộc hình học, vì các chương sau đều dùng lại nền này… |
 | B.2 | Liệt kê dạng bài của chương | Danh mục dạng bài | Bảng dạng bài ở phiếu Dạng bài & Đọc vị của cùng cụm | Chép theo bảng, giữ nguyên thứ tự | Học thuộc số lượng dạng bài trước, tên từng dạng sau. | Diện tích tam giác — quan hệ giữa đáy và chiều cao · Tỉ số diện tích hai tam giác có chung chiều cao · Tỉ số diện tích hai tam giác có chung đáy · Bài toán chia tam giác theo tỉ lệ diện tích… |
 | B.3 | Định vị chương theo thời gian | Kế hoạch năm học, mốc kiểm tra | Phần đầu phiếu ghi tuần, học kỳ, mốc | Đọc phần đầu phiếu | Mỗi cụm luôn có đúng 6 buổi và 1 phiếu hướng dẫn ôn chắc. | HK1 · tuần 9 · Cuối kỳ I · cụm 5… |
@@ -608,11 +612,11 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | D.3 | Hình chữ nhật tổng hợp | Chu vi, diện tích hình chữ nhật; s = v × t | Một hình nhưng nhiều câu hỏi nối tiếp | Tính chu vi và diện tích trước, dùng lại cho các ý sau | Chu vi tăng đúng 2 lần phần tăng, dù tăng chiều nào. | Chu vi, diện tích hình chữ nhật; s = v × t · Hình chữ nhật tổng hợp · Một hình nhưng nhiều câu hỏi nối tiếp · Tính chu vi và diện tích trước, dùng lại cho các ý sau… |
 | D.4 | Biến thiên diện tích theo kích thước | Diện tích hình chữ nhật, phân tích hình | “Tăng chiều dài thêm …”, “gấp đôi chiều …” | Vẽ hình chồng, tách phần dôi ra thành các mảnh chữ nhật | Gấp đôi một chiều thì diện tích gấp đôi; gấp đôi cả hai chiều thì gấp bốn. | Diện tích hình chữ nhật, phân tích hình · Biến thiên diện tích theo kích thước · “Tăng chiều dài thêm …”, “gấp đôi chiều …” · Vẽ hình chồng, tách phần dôi ra thành các mảnh chữ nhật… |
 | D.5 | Nhận biết hình tròn và các yếu tố | Quan hệ đường kính – bán kính | Đề nhắc tâm, bán kính, đường kính | Quy về bán kính rồi so sánh hoặc tính | Nhìn đơn vị và tên đại lượng trước khi so sánh. | Quan hệ đường kính – bán kính · Nhận biết hình tròn và các yếu tố · Đề nhắc tâm, bán kính, đường kính · Quy về bán kính rồi so sánh hoặc tính… |
-| E.1 | Diện tích các hình phẳng cơ bản | Công thức diện tích hình bình hành, hình thoi, hình tam giác | Đề cho đáy và chiều cao, hoặc hai đường chéo | Nhận dạng hình rồi chọn công thức | Tam giác bằng nửa hình bình hành cùng đáy cùng chiều cao. | 126 cm² · 540 cm² · 66 cm² · 90 cm²… |
-| E.2 | Nhận biết hình tròn và các yếu tố | Quan hệ đường kính – bán kính | Đề nhắc tâm, bán kính, đường kính | Quy về bán kính rồi so sánh hoặc tính | Nhìn đơn vị và tên đại lượng trước khi so sánh. | 80 cm · B · 25 cm · 12 cm… |
-| E.3 | Diện tích hình thang | Công thức diện tích hình thang | Đề cho hai đáy và chiều cao | Tổng hai đáy × chiều cao : 2 | Nếu tổng hai đáy là số chẵn thì chia 2 ngay từ đầu cho gọn. | 418 cm² · 145 cm² · 176 cm² · 147 cm² |
-| E.4 | Chu vi, diện tích trong tình huống thực tế | Công thức chu vi, diện tích; phép chia | Từ khoá “rào xung quanh”, “lát gạch”, “trồng cây quanh” | Đọc vị chu vi hay diện tích rồi tính | Nhìn đơn vị của đáp số: mét thì là chu vi, mét vuông thì là diện tích. | 142 cây · không chia hết (182 m không chia hết cho 5 m) · 2 viên · 36 viên (làm tròn lên)… |
-| E.5 | Bốn phép tính với phân số | Quy đồng, nhân chia phân số | Biểu thức chỉ gồm phân số | Chọn quy tắc theo phép tính, rút gọn cuối cùng | Rút gọn chéo trước khi nhân để số nhỏ, tính nhanh và ít sai. | 30 phần 91 · 2 phần 3 · 5 phần 3 · 11 phần 36… |
+| E.1 | Diện tích hình thang | Công thức diện tích hình thang | Đề cho hai đáy và chiều cao | Tổng hai đáy × chiều cao : 2 | Nếu tổng hai đáy là số chẵn thì chia 2 ngay từ đầu cho gọn. | 174 cm² · 320 cm² · 826 cm² · 644 cm²… |
+| E.2 | Nhận biết hình tròn và các yếu tố | Quan hệ đường kính – bán kính | Đề nhắc tâm, bán kính, đường kính | Quy về bán kính rồi so sánh hoặc tính | Nhìn đơn vị và tên đại lượng trước khi so sánh. | 7 cm · 66 cm · B · B… |
+| E.3 | Tính nhanh tích, thương nhiều bước | Tính chất giao hoán, kết hợp của phép nhân | Tích có thừa số 25, 125, 50, 20; hoặc chia liên tiếp | Ghép cặp cho tích tròn rồi nhân | Chia liên tiếp cho 4 rồi 25 bằng chia cho 100. | 78 · 4 100 · 14 000 · 23… |
+| E.4 | Diện tích các hình phẳng cơ bản | Công thức diện tích hình bình hành, hình thoi, hình tam giác | Đề cho đáy và chiều cao, hoặc hai đường chéo | Nhận dạng hình rồi chọn công thức | Tam giác bằng nửa hình bình hành cùng đáy cùng chiều cao. | 209 cm² · 32 cm² · 784 cm² · 72 cm²… |
+| E.5 | Chu vi, diện tích trong tình huống thực tế | Công thức chu vi, diện tích; phép chia | Từ khoá “rào xung quanh”, “lát gạch”, “trồng cây quanh” | Đọc vị chu vi hay diện tích rồi tính | Nhìn đơn vị của đáp số: mét thì là chu vi, mét vuông thì là diện tích. | 110 m · 56 m · 92 m · 142 cây… |
 
 ---
 
@@ -620,11 +624,11 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 
 | Bài | Nhãn tư duy | Điểm chốt |
 |---|---|---|
-| A.1 | TD1, TD2 | Đơn vị diện tích nhảy **100 lần** mỗi bậc. |
+| A.1 | TD1 | Phân biệt **chữ số** (một kí hiệu) với **giá trị** của chữ số (chữ số nhân giá trị hàng). |
 | A.2 | TD1, TD3 | Chu vi ghi đơn vị **cm**, diện tích ghi đơn vị **cm²** — sai đơn vị là mất điểm. |
-| A.3 | TD3, TD2 | Chia chu vi cho **2** ra nửa chu vi — bước trung gian không được bỏ. |
-| A.4 | TD3, TD4 | Đếm **theo cỡ** hoặc **theo đường kẻ**, tuyệt đối không đếm ngẫu nhiên. |
-| A.5 | TD1, TD2 | Hai mốc **90°** và **180°** chia hết các loại góc. |
+| A.3 | TD3, TD4 | Đếm **theo cỡ** hoặc **theo đường kẻ**, tuyệt đối không đếm ngẫu nhiên. |
+| A.4 | TD1, TD2 | Hai mốc **90°** và **180°** chia hết các loại góc. |
+| A.5 | TD3, TD2 | Chia chu vi cho **2** ra nửa chu vi — bước trung gian không được bỏ. |
 | B.1 | TD1 | Gọi đúng **tên chương** và **tên nhóm chuyên đề** là bước đầu tiên để xếp kiến thức vào đúng ngăn trong đầu. |
 | B.2 | TD1, TD3 | Biết chương có **bao nhiêu dạng** thì mới biết mình còn thiếu dạng nào. |
 | B.3 | TD1 | Biết chương nằm ở đâu trong năm thì mới **ôn đúng lúc**. |
@@ -640,11 +644,11 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | D.3 | TD3, TD6 | Tăng cả hai chiều thì phần dôi ra **không phải** tích của hai phần tăng. |
 | D.4 | TD3, TD6 | Tăng cả hai chiều thì phần tăng gồm **ba mảnh**, không phải một. |
 | D.5 | TD1, TD2 | So sánh phải **cùng loại đại lượng** — bán kính với bán kính. |
-| E.1 | TD1, TD3 | Hình bình hành **không** chia 2; hình tam giác và hình thoi **có** chia 2. |
+| E.1 | TD1, TD3 | Cộng **hai đáy** trước rồi mới nhân chiều cao và chia 2. |
 | E.2 | TD1, TD2 | So sánh phải **cùng loại đại lượng** — bán kính với bán kính. |
-| E.3 | TD1, TD3 | Cộng **hai đáy** trước rồi mới nhân chiều cao và chia 2. |
-| E.4 | TD2, TD3 | “Xung quanh” → chu vi; “khắp mặt” → diện tích. |
-| E.5 | TD1, TD3 | Cộng trừ **cần** quy đồng, nhân chia **không cần** quy đồng. |
+| E.3 | TD5, TD3 | Thuộc lòng bốn cặp tròn: **25 × 4**, **125 × 8**, **50 × 2**, **20 × 5**. |
+| E.4 | TD1, TD3 | Hình bình hành **không** chia 2; hình tam giác và hình thoi **có** chia 2. |
+| E.5 | TD2, TD3 | “Xung quanh” → chu vi; “khắp mặt” → diện tích. |
 
 ---
 
@@ -654,11 +658,11 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 
 | Bài | Lỗi thường gặp | Cách phòng |
 |---|---|---|
-| A.1 | Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. | Viết bảng đơn vị diện tích riêng, ghi rõ “×100” giữa hai bậc. |
+| A.1 | Đếm hàng từ trái sang phải nên lệch hàng. | Luôn viết số ra nháp rồi đánh dấu hàng đơn vị trước, đi ngược về trái. |
 | A.2 | Nhầm công thức chu vi với diện tích; quên nhân 2 ở chu vi. | Vẽ hình và ghi số đo lên hình trước khi tính. |
-| A.3 | Trừ thẳng chiều dài khỏi chu vi mà chưa chia đôi. | Viết dòng “Nửa chu vi = …” trước khi trừ. |
-| A.4 | Chỉ đếm các ô vuông nhỏ, quên các hình ghép từ nhiều ô. | Kẻ bảng theo cỡ hình: cỡ 1×1, 1×2, 2×2… rồi cộng. |
-| A.5 | Gọi góc 90° là góc nhọn vì thấy “nhỏ”. | Áp ê ke vào góc trước khi gọi tên. |
+| A.3 | Chỉ đếm các ô vuông nhỏ, quên các hình ghép từ nhiều ô. | Kẻ bảng theo cỡ hình: cỡ 1×1, 1×2, 2×2… rồi cộng. |
+| A.4 | Gọi góc 90° là góc nhọn vì thấy “nhỏ”. | Áp ê ke vào góc trước khi gọi tên. |
+| A.5 | Trừ thẳng chiều dài khỏi chu vi mà chưa chia đôi. | Viết dòng “Nửa chu vi = …” trước khi trừ. |
 | B.1 | Trả lời chung chung “để học giỏi toán”. | Bắt buộc nhắc tên chương và tên nhóm chuyên đề trong câu trả lời. |
 | B.2 | Kể thiếu dạng bài, hoặc gộp hai dạng làm một. | Đếm số dạng trước khi kể, kể xong đếm lại. |
 | B.3 | Không nhớ mốc kiểm tra nên ôn muộn. | Ghi mốc kiểm tra vào lịch học ngay buổi đầu của cụm. |
@@ -674,11 +678,11 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 | D.3 | Nhân hai lượng tăng với nhau rồi coi đó là diện tích tăng thêm. | Vẽ hình cũ nằm trong hình mới rồi tô phần dôi ra. |
 | D.4 | Nhân hai lượng tăng với nhau rồi coi đó là phần diện tích tăng thêm. | Vẽ hình chữ nhật cũ nằm trong hình mới, tô phần dôi ra. |
 | D.5 | So bán kính của hình này với đường kính của hình kia. | Đổi hết về bán kính trước khi so sánh. |
-| E.1 | Chia 2 cho hình bình hành, hoặc quên chia 2 cho hình tam giác. | Nhớ theo cặp: bình hành ↔ chữ nhật (không chia); tam giác ↔ nửa bình hành (chia 2). |
+| E.1 | Nhân riêng từng đáy với chiều cao rồi cộng, quên chia 2. | Viết công thức đầy đủ ra trước khi thay số. |
 | E.2 | So bán kính của hình này với đường kính của hình kia. | Đổi hết về bán kính trước khi so sánh. |
-| E.3 | Nhân riêng từng đáy với chiều cao rồi cộng, quên chia 2. | Viết công thức đầy đủ ra trước khi thay số. |
-| E.4 | Lấy chu vi để tính số gạch lát nền. | Gạch chân từ khoá chỉ vị trí: xung quanh, bao quanh, khắp, phủ kín. |
-| E.5 | Quy đồng cả khi nhân, hoặc cộng thẳng tử với tử và mẫu với mẫu. | Trước khi tính, khoanh dấu phép tính và tự nhắc “có phải quy đồng không”. |
+| E.3 | Nhân lần lượt từ trái sang phải nên số trung gian rất lớn. | Quét cả tích tìm cặp tròn trước khi đặt bút tính. |
+| E.4 | Chia 2 cho hình bình hành, hoặc quên chia 2 cho hình tam giác. | Nhớ theo cặp: bình hành ↔ chữ nhật (không chia); tam giác ↔ nửa bình hành (chia 2). |
+| E.5 | Lấy chu vi để tính số gạch lát nền. | Gạch chân từ khoá chỉ vị trí: xung quanh, bao quanh, khắp, phủ kín. |
 
 ---
 
@@ -686,11 +690,11 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 
 Đọc tầng 1 trước; chỉ đọc tầng sau khi đã thử lại ít nhất 3 phút.
 
-**Bài A.1** — (1) Đơn vị diện tích liền kề hơn kém nhau mấy lần? — (2) Đếm số bậc giữa hai đơn vị. — (3) Mỗi bậc nhân hoặc chia 100.
+**Bài A.1** — (1) Hàng đơn vị là chữ số cuối cùng bên phải. — (2) Đếm ngược: đơn vị, chục, trăm, nghìn… — (3) Giá trị = chữ số × 1, 10, 100, 1 000… tuỳ hàng.
 **Bài A.2** — (1) Đề hỏi chu vi hay diện tích? — (2) Viết công thức tương ứng ra trước. — (3) Ghi đơn vị đúng loại: cm cho chu vi, cm² cho diện tích.
-**Bài A.3** — (1) Nửa chu vi bằng bao nhiêu? — (2) Nửa chu vi chính là tổng chiều dài và chiều rộng. — (3) Trừ đi chiều đã biết để ra chiều còn lại.
-**Bài A.4** — (1) Lưới có bao nhiêu đường kẻ ngang, bao nhiêu đường kẻ dọc? — (2) Chọn hai đường ngang và hai đường dọc thì được một hình chữ nhật. — (3) Đếm hình vuông theo từng cỡ cạnh 1, 2, 3…
-**Bài A.5** — (1) Góc vuông có số đo bao nhiêu độ? — (2) Số đo của góc này lớn hơn hay bé hơn 90°? — (3) Nếu lớn hơn 90° thì có bé hơn 180° không?
+**Bài A.3** — (1) Lưới có bao nhiêu đường kẻ ngang, bao nhiêu đường kẻ dọc? — (2) Chọn hai đường ngang và hai đường dọc thì được một hình chữ nhật. — (3) Đếm hình vuông theo từng cỡ cạnh 1, 2, 3…
+**Bài A.4** — (1) Góc vuông có số đo bao nhiêu độ? — (2) Số đo của góc này lớn hơn hay bé hơn 90°? — (3) Nếu lớn hơn 90° thì có bé hơn 180° không?
+**Bài A.5** — (1) Nửa chu vi bằng bao nhiêu? — (2) Nửa chu vi chính là tổng chiều dài và chiều rộng. — (3) Trừ đi chiều đã biết để ra chiều còn lại.
 **Bài B.1** — (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 **Bài B.2** — (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 **Bài B.3** — (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
@@ -706,11 +710,11 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 **Bài D.3** — (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 **Bài D.4** — (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 **Bài D.5** — (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
-**Bài E.1** — (1) Đây là hình gì? — (2) Viết công thức diện tích của hình đó. — (3) Kiểm tra xem công thức có chia 2 không.
+**Bài E.1** — (1) Tổng hai đáy bằng bao nhiêu? — (2) Nhân tổng đó với chiều cao. — (3) Chia kết quả cho 2.
 **Bài E.2** — (1) Đường kính gấp mấy lần bán kính? — (2) Đưa cả hai hình về cùng bán kính. — (3) So hai bán kính vừa tính.
-**Bài E.3** — (1) Tổng hai đáy bằng bao nhiêu? — (2) Nhân tổng đó với chiều cao. — (3) Chia kết quả cho 2.
-**Bài E.4** — (1) Việc cần làm diễn ra ở viền hay ở mặt trong? — (2) Ở viền thì tính chu vi, ở mặt trong thì tính diện tích. — (3) Chia cho kích thước của một đơn vị (một viên gạch, một khoảng cây).
-**Bài E.5** — (1) Phép tính là cộng, trừ hay nhân, chia? — (2) Cộng trừ thì quy đồng mẫu số trước. — (3) Chia thì đổi thành nhân với phân số đảo ngược.
+**Bài E.3** — (1) Trong tích có 25, 125, 50 hay 20 không? — (2) Tìm thừa số ghép với nó cho tích tròn. — (3) Nhân cặp tròn trước, phần còn lại sau.
+**Bài E.4** — (1) Đây là hình gì? — (2) Viết công thức diện tích của hình đó. — (3) Kiểm tra xem công thức có chia 2 không.
+**Bài E.5** — (1) Việc cần làm diễn ra ở viền hay ở mặt trong? — (2) Ở viền thì tính chu vi, ở mặt trong thì tính diện tích. — (3) Chia cho kích thước của một đơn vị (một viên gạch, một khoảng cây).
 
 ---
 
@@ -720,11 +724,11 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 
 | Bài | Đề tương tự | Đáp số |
 |---|---|---|
-| A.1 | 3 m² = … cm² | 30 000 |
+| A.1 | Chữ số hàng chục của số 8 410 570 có giá trị bao nhiêu? | 70 |
 | A.2 | Hình chữ nhật dài 8 cm, rộng 5 cm. Tính diện tích. | 40 cm² |
-| A.3 | Hình chữ nhật chu vi 30 cm, dài 10 cm. Chiều rộng bằng bao nhiêu? | 5 cm |
-| A.4 | Lưới 2 hàng 2 cột có bao nhiêu hình vuông? | 5 |
-| A.5 | Góc 120° là góc gì? | góc tù |
+| A.3 | Lưới 2 hàng 2 cột có bao nhiêu hình vuông? | 5 |
+| A.4 | Góc 120° là góc gì? | góc tù |
+| A.5 | Hình chữ nhật chu vi 30 cm, dài 10 cm. Chiều rộng bằng bao nhiêu? | 5 cm |
 | B.1 | Chương “Tỉ số diện tích tam giác, hình thang và hình tròn” thuộc nhóm chuyên đề nào? | F — Hình học |
 | B.2 | Chương này có mấy dạng bài chính? | 6 |
 | B.3 | Một cụm chuyên đề GITA gồm mấy buổi học? | 6 buổi |
@@ -740,11 +744,11 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | D.3 | Hình chữ nhật 10 m × 5 m, tăng chiều dài 3 m. Diện tích tăng bao nhiêu? | 15 m² |
 | D.4 | Hình chữ nhật 10 cm × 5 cm, tăng chiều dài thêm 3 cm. Diện tích tăng bao nhiêu? | 15 cm² |
 | D.5 | Hình tròn đường kính 10 cm có bán kính bao nhiêu? | 5 cm |
-| E.1 | Tam giác đáy 10 cm, cao 6 cm. Diện tích bằng bao nhiêu? | 30 cm² |
+| E.1 | Hình thang đáy 12 cm và 8 cm, cao 5 cm. Diện tích bằng bao nhiêu? | 50 cm² |
 | E.2 | Hình tròn đường kính 10 cm có bán kính bao nhiêu? | 5 cm |
-| E.3 | Hình thang đáy 12 cm và 8 cm, cao 5 cm. Diện tích bằng bao nhiêu? | 50 cm² |
-| E.4 | Vườn dài 20 m rộng 10 m, rào xung quanh cần bao nhiêu mét rào? | 60 m |
-| E.5 | Tính: 2 phần 3 + 1 phần 6 | 5 phần 6 |
+| E.3 | Tính nhanh: 37 × 25 × 4 | 3 700 |
+| E.4 | Tam giác đáy 10 cm, cao 6 cm. Diện tích bằng bao nhiêu? | 30 cm² |
+| E.5 | Vườn dài 20 m rộng 10 m, rào xung quanh cần bao nhiêu mét rào? | 60 m |
 
 ---
 

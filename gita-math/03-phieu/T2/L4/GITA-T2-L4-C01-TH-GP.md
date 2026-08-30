@@ -31,7 +31,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần I**
 
 - **Bài I.1** — a) 826 000 · b) 555 800 · c) 970 500 · d) 312 100 · e) 542 200 · f) 45 650
-- **Bài I.2** — a) 641 841 · b) 317 987 · c) 731 164 · d) 801 674
+- **Bài I.2** — a) 42 328 · b) 698 013 · c) 548 180 · d) 665 699 · e) 972 972 · f) 122 562
 - **Bài I.3** — a) chữ số 3, giá trị 300 000 · b) chữ số 4, giá trị 40 000 · c) chữ số 0, giá trị 0 · d) chữ số 3, giá trị 3
 - **Bài I.4** — a) 8 639 008 và 8 639 010 · b) > · c) 40 · d) 9 817 100 · e) 40 000
 - **Bài I.5** — a) 6 chữ số, tổng 31 · b) 6 chữ số, tổng 26 · c) 6 chữ số, tổng 30 · d) 6 chữ số, tổng 36 · e) 6 chữ số, tổng 27
@@ -46,27 +46,27 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần III**
 
-- **Bài III.1** — a) 264 · b) 1 055 · c) 17 · d) 94 · e) không · f) 279 576
-- **Bài III.2** — a) 46 số, bé nhất là 255 · b) 33 số, bé nhất là 282 · c) 48 số, bé nhất là 165 · d) 25 số, bé nhất là 70 · e) 44 số, bé nhất là 90 · f) 56 số, bé nhất là 204
-- **Bài III.3** — a) 430 · b) 323 · c) 478 · d) 201
-- **Bài III.4** — a) 6 · b) 8 · c) 8 · d) 3 · e) 0
-- **Bài III.5** — a) 86, hiệu 18 · b) hơn 8 đơn vị · c) gấp 1 lần · d) 95, hiệu 36 · e) 61
+- **Bài III.1** — a) 32 · b) 396 · c) 312 · d) 279
+- **Bài III.2** — a) 48 số, bé nhất là 165 · b) 25 số, bé nhất là 70 · c) 44 số, bé nhất là 90 · d) 56 số, bé nhất là 204
+- **Bài III.3** — a) 0 · b) 3 · c) 2 · d) 2
+- **Bài III.4** — a) 58 · b) 31 · c) 11 · d) 29 · e) 52 · f) 43
+- **Bài III.5** — a) 52, hiệu 27 · b) hơn -2 đơn vị · c) 14, hiệu 27 · d) 25, hiệu 27
 
 **Phần IV**
 
-- **Bài IV.1** — a) 16 · b) 7 · c) 23 · d) 5 · e) không có số nào
-- **Bài IV.2** — a) lẻ · b) 595 · c) giảm đi 2 lần số bé · d) không thay đổi · e) tính chẵn lẻ của tổng các số trên bảng · f) không
-- **Bài IV.3** — a) 329 · b) 198 · c) 198 · d) 433 · e) 1 000 · f) 1 000
-- **Bài IV.4** — a) hợp số (ví dụ ước 5) · b) số nguyên tố · c) hợp số (ví dụ ước 2) · d) hợp số (ví dụ ước 3) · e) số nguyên tố · f) số nguyên tố · g) hợp số (ví dụ ước 3) · h) số nguyên tố
-- **Bài IV.5** — a) 0 · b) 0 · c) 0 · d) 0
+- **Bài IV.1** — a) 54 · b) 75 · c) 62 · d) 72
+- **Bài IV.2** — a) 5 · b) không có số nào · c) 28 · d) 23 · e) 1 · f) 9
+- **Bài IV.3** — a) 202 · b) 604 · c) 40 · d) 101 · e) 30 704 · f) 61 105
+- **Bài IV.4** — a) 198 · b) 620 · c) 874 · d) 99 · e) 1 000 · f) 1 000
+- **Bài IV.5** — a) số nguyên tố · b) hợp số (ví dụ ước 2) · c) hợp số (ví dụ ước 2) · d) hợp số (ví dụ ước 2) · e) hợp số (ví dụ ước 2)
 
 **Phần V**
 
-- **Bài V.1** — a) 96 cm · b) 48 cm · c) 70 cm · d) 180 cm
-- **Bài V.2** — a) 2 145 · b) 3 829 · c) 2 921 · d) 7 809 · e) 179 · f) 5 273
-- **Bài V.3** — a) 2 dư 7 · b) 8 dư 4 · c) 3 dư 7 · d) 36 · e) 7 dư 3 · f) 63
-- **Bài V.4** — a) 6 · b) 0 · c) 0 · d) 0
-- **Bài V.5** — a) 2 · b) 2 943 · c) có · d) tổng các số dư là 6, chia 3 dư 0 · e) 0 · f) 0
+- **Bài V.1** — a) 460 cm² · b) 115 cm² · c) 230 cm² · d) 1 phần 4 · e) 115 cm² · f) diện tích 920 cm², chu vi 126 cm
+- **Bài V.2** — a) 45 · b) 5 dư 1 · c) 3 dư 3 · d) 6 dư 6
+- **Bài V.3** — a) 2 · b) 1 287 · c) không, dư 1 · d) tổng các số dư là 1, chia 2 dư 1 · e) 1 · f) 1
+- **Bài V.4** — a) 81 · b) 2 409 · c) 89 · d) 73 · e) 6 157 · f) 3 109
+- **Bài V.5** — a) 2 · b) 0 · c) 4 · d) 0 · e) 2 · f) 7
 
 ---
 
@@ -98,7 +98,7 @@ Kết quả: **826 000**.
 
 **Các bước giải**
 
-Xét ý a: Viết số gồm tổng: 600 000 + 40 000 + 1 000 + 800 + 40 + 1
+Xét ý a: Viết số gồm tổng: 40 000 + 2 000 + 300 + 20 + 8
 
 Đọc vị: đây là dạng **Viết số từ dạng tổng theo hàng**; dấu hiệu là Tổng gồm các số tròn chục, tròn trăm, tròn nghìn….
 
@@ -108,7 +108,7 @@ Cách làm: Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết.
 
 Lối tắt: Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số.
 
-Kết quả: **641 841**.
+Kết quả: **42 328**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Mỗi số hạng cho biết một hàng. Xếp các chữ số vào đúng hàng của nó, hàng nào khuyết thì viết chữ số 0.
 
@@ -278,51 +278,11 @@ Kết quả: **158**.
 
 *Điểm chốt:* Công thức có **+ 1** ở cuối; quên cộng 1 là sai một đơn vị.
 
-### Bài III.1 — Định vị số hạng trong dãy cách đều
+### Bài III.1 — Tổng của các số tự nhiên liên tiếp
 
 **Các bước giải**
 
-Xét ý a: Dãy có bao nhiêu số hạng?
-
-Đọc vị: đây là dạng **Định vị số hạng, kiểm tra một số có thuộc dãy**; dấu hiệu là Câu hỏi “là số hạng thứ mấy”, “có thuộc dãy không”.
-
-Kiến thức phải dùng: Dãy cách đều, phép chia có dư.
-
-Cách làm: (số − đầu) : khoảng cách, xét dư rồi cộng 1.
-
-Lối tắt: Mọi số hạng của dãy đều có cùng số dư khi chia cho khoảng cách.
-
-Kết quả: **264**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Muốn biết một số là số hạng thứ mấy: lấy số đó trừ số hạng đầu, chia cho khoảng cách rồi cộng 1. Nếu phép chia còn dư thì số đó **không thuộc** dãy.
-
-*Điểm chốt:* Phép chia **có dư** là bằng chứng số đó không thuộc dãy.
-
-### Bài III.2 — Số chia hết cho nhiều số cùng lúc
-
-**Các bước giải**
-
-Xét ý a: Có bao nhiêu số từ 243 đến 936 vừa chia hết cho 3 vừa chia hết cho 5? Số bé nhất trong đó là số nào?
-
-Đọc vị: đây là dạng **Đếm số chia hết đồng thời cho nhiều số**; dấu hiệu là Cụm “vừa chia hết cho … vừa chia hết cho …”.
-
-Kiến thức phải dùng: Bội chung nhỏ nhất, dãy số cách đều.
-
-Cách làm: Quy về một số chia duy nhất là BCNN rồi đếm.
-
-Lối tắt: Chia hết cho 2 và 5 thì tận cùng là 0; chia hết cho 2 và 3 thì chia hết cho 6.
-
-Kết quả: **46 số, bé nhất là 255**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Số vừa chia hết cho hai số thì chia hết cho bội chung nhỏ nhất của chúng. Các số đó lập thành dãy cách đều với khoảng cách bằng bội chung nhỏ nhất; dùng công thức đếm số hạng của dãy cách đều.
-
-*Điểm chốt:* Khoảng cách của dãy là **bội chung nhỏ nhất**, không phải tích hai số khi hai số không nguyên tố cùng nhau.
-
-### Bài III.3 — Tổng của các số tự nhiên liên tiếp
-
-**Các bước giải**
-
-Xét ý a: Tổng của 9 số tự nhiên liên tiếp bằng 3 906. Tìm số bé nhất trong 9 số đó.
+Xét ý a: Tổng của 5 số tự nhiên liên tiếp bằng 170. Tìm số bé nhất trong 5 số đó.
 
 Đọc vị: đây là dạng **Dãy số tự nhiên liên tiếp có tổng cho trước**; dấu hiệu là Cụm “… số tự nhiên liên tiếp có tổng bằng …”.
 
@@ -332,17 +292,37 @@ Cách làm: Tìm số giữa bằng phép chia rồi suy ra hai đầu dãy.
 
 Lối tắt: Tổng của n số liên tiếp (n lẻ) luôn chia hết cho n.
 
-Kết quả: **430**.
+Kết quả: **32**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Với một số **lẻ** các số tự nhiên liên tiếp, số ở giữa chính là trung bình cộng: số giữa = tổng : số lượng. Số bé nhất bằng số giữa trừ đi một nửa số lượng còn lại.
 
 *Điểm chốt:* Với số lượng lẻ thì **số giữa = tổng : số lượng** — đó là chìa khoá.
 
-### Bài III.4 — Chữ số tận cùng của tổng, hiệu, tích
+### Bài III.2 — Số chia hết cho nhiều số cùng lúc
 
 **Các bước giải**
 
-Xét ý a: Tích 7 222 × 5 508 có chữ số tận cùng là chữ số nào?
+Xét ý a: Có bao nhiêu số từ 160 đến 884 vừa chia hết cho 3 vừa chia hết cho 5? Số bé nhất trong đó là số nào?
+
+Đọc vị: đây là dạng **Đếm số chia hết đồng thời cho nhiều số**; dấu hiệu là Cụm “vừa chia hết cho … vừa chia hết cho …”.
+
+Kiến thức phải dùng: Bội chung nhỏ nhất, dãy số cách đều.
+
+Cách làm: Quy về một số chia duy nhất là BCNN rồi đếm.
+
+Lối tắt: Chia hết cho 2 và 5 thì tận cùng là 0; chia hết cho 2 và 3 thì chia hết cho 6.
+
+Kết quả: **48 số, bé nhất là 165**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Số vừa chia hết cho hai số thì chia hết cho bội chung nhỏ nhất của chúng. Các số đó lập thành dãy cách đều với khoảng cách bằng bội chung nhỏ nhất; dùng công thức đếm số hạng của dãy cách đều.
+
+*Điểm chốt:* Khoảng cách của dãy là **bội chung nhỏ nhất**, không phải tích hai số khi hai số không nguyên tố cùng nhau.
+
+### Bài III.3 — Chữ số tận cùng của tổng, hiệu, tích
+
+**Các bước giải**
+
+Xét ý a: Hiệu 9 551 − 2 701 có chữ số tận cùng là chữ số nào?
 
 Đọc vị: đây là dạng **Tìm chữ số tận cùng của một phép tính**; dấu hiệu là Câu hỏi chỉ hỏi “chữ số tận cùng”, không hỏi kết quả.
 
@@ -352,17 +332,39 @@ Cách làm: Rút gọn về chữ số tận cùng rồi tính.
 
 Lối tắt: Với phép trừ, nếu chữ số cuối của số bị trừ nhỏ hơn thì mượn 10 rồi trừ.
 
-Kết quả: **6**.
+Kết quả: **0**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Chữ số tận cùng của tổng, hiệu, tích chỉ phụ thuộc vào chữ số tận cùng của các số tham gia. Chỉ cần lấy các chữ số tận cùng ra tính với nhau rồi lấy chữ số tận cùng của kết quả.
 
 *Điểm chốt:* Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu của số.
 
+### Bài III.4 — Tìm số ban đầu bằng cách tính ngược
+
+**Các bước giải**
+
+Viết chuỗi thao tác thành sơ đồ mũi tên: số cần tìm → × 2 → + 36 → : 4 → 38.
+
+Đi **ngược mũi tên**, và mỗi bước làm phép tính ngược lại. Phép cuối cùng là chia cho 4, nên bước đầu khi đi ngược là nhân với 4: 38 × 4 = 152.
+
+Phép trước đó là cộng 36, đi ngược thì trừ: 152 − 36 = 116.
+
+Phép đầu tiên là nhân 2, đi ngược thì chia: 116 : 2 = 58.
+
+Số cần tìm là **58**. Thử lại xuôi: 58 × 2 = 116, cộng 36 được 152, chia 4 được 38 — đúng bằng đề cho.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Viết chuỗi thao tác thành sơ đồ mũi tên rồi đi ngược lại từ kết quả cuối. Mỗi bước đảo phép tính: nhân thành chia, cộng thành trừ. Thứ tự cũng phải đảo — phép làm sau cùng được gỡ trước tiên.
+
+*Điểm chốt:* Đảo **cả phép tính lẫn thứ tự**. Đảo phép tính mà giữ nguyên thứ tự thì vẫn sai.
+
+*Muốn khó hơn:* Thêm bước “trừ đi một nửa số đang có” để học sinh phải gỡ một phép tính có liên quan tới chính số ấy.
+
+*Phải chắc trước khi làm bài này:* Bốn phép tính với số có hai chữ số và thứ tự thực hiện phép tính.
+
 ### Bài III.5 — Cấu tạo số có hai chữ số
 
 **Các bước giải**
 
-Xét ý a: Số có hai chữ số 68; đổi chỗ hai chữ số ta được số nào? Hiệu của hai số đó bằng bao nhiêu?
+Xét ý a: Số có hai chữ số 25; đổi chỗ hai chữ số ta được số nào? Hiệu của hai số đó bằng bao nhiêu?
 
 Đọc vị: đây là dạng **Tìm số theo điều kiện của các chữ số**; dấu hiệu là Đề cho quan hệ giữa các chữ số chứ không cho số.
 
@@ -372,17 +374,43 @@ Cách làm: Đặt ẩn cho từng chữ số, viết số theo cấu tạo, gi�
 
 Lối tắt: Đổi chỗ hai chữ số của số có hai chữ số thì hiệu luôn bằng 9 lần hiệu hai chữ số.
 
-Kết quả: **86, hiệu 18**.
+Kết quả: **52, hiệu 27**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Viết số có hai chữ số dưới dạng **ab = a × 10 + b** với a là chữ số hàng chục (khác 0), b là chữ số hàng đơn vị. Từ điều kiện của đề, lập quan hệ giữa a và b rồi dùng bài toán tổng – hiệu.
 
 *Điểm chốt:* Chữ số hàng chục **khác 0** và mỗi chữ số chỉ nhận giá trị từ 0 đến 9.
 
-### Bài IV.1 — Tìm số theo hai điều kiện chia có dư
+### Bài IV.1 — Đặt chữ thay chữ số rồi lập luận
+
+> **BẪY — Quên chữ số hàng cao nhất khác 0.**
 
 **Các bước giải**
 
-Xét ý a: Tìm số bé nhất không quá 300 chia cho 5 dư 1 và chia cho 6 dư 4.
+Xét ý a: Tìm mọi số có hai chữ số mà số đó bằng 6 lần tổng hai chữ số của nó.
+
+Đọc vị: đây là dạng **Dùng chữ thay số**; dấu hiệu là Đề viết số bằng chữ hoặc bằng dấu sao và cho quan hệ giữa các chữ số.
+
+Kiến thức phải dùng: Cấu tạo thập phân của số; tổng – hiệu.
+
+Cách làm: Viết cấu tạo số theo chữ, thay vào điều kiện rồi rút gọn.
+
+Lối tắt: Đổi chỗ hai chữ số của số có hai chữ số thì hiệu luôn là bội của 9.
+
+Kết quả: **54**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Viết số theo cấu tạo: số có hai chữ số ab bằng a × 10 + b. Thay vào điều kiện đề cho rồi rút gọn — thường ra một quan hệ rất gọn giữa a và b.
+
+*Điểm chốt:* Chữ số hàng cao nhất **khác 0**, và mọi chữ số chỉ nhận giá trị từ 0 đến 9. Hai ràng buộc này thường là chỗ loại bớt đáp số.
+
+*Muốn khó hơn:* Chuyển sang số có ba chữ số abc để học sinh phải viết a × 100 + b × 10 + c.
+
+*Phải chắc trước khi làm bài này:* Cấu tạo thập phân và bài toán tìm hai số biết tổng và hiệu.
+
+### Bài IV.2 — Tìm số theo hai điều kiện chia có dư
+
+**Các bước giải**
+
+Xét ý a: Tìm số bé nhất không quá 500 chia cho 6 dư 5 và chia cho 3 dư 2.
 
 Đọc vị: đây là dạng **Tìm số thoả nhiều điều kiện chia có dư**; dấu hiệu là Hai điều kiện “chia cho … dư …” đi cùng nhau.
 
@@ -392,41 +420,39 @@ Cách làm: Lập dãy theo điều kiện chặt hơn rồi lọc theo điều 
 
 Lối tắt: Chọn điều kiện có số chia **lớn hơn** để lập dãy — dãy thưa hơn nên thử nhanh hơn.
 
-Kết quả: **16**.
+Kết quả: **5**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Liệt kê các số thoả điều kiện thứ nhất — chúng lập thành dãy cách đều khoảng cách bằng số chia thứ nhất. Đi dọc dãy đó, thử điều kiện thứ hai, gặp số đầu tiên thoả mãn thì dừng.
 
 *Điểm chốt:* Chỉ **đi dọc một dãy** rồi thử điều kiện còn lại, không thử tất cả số.
 
-### Bài IV.2 — Bài toán bất biến — tính chẵn lẻ của tổng
-
-> **BẪY — Phải chứng minh, không được thử vài trường hợp.**
+### Bài IV.3 — Lọc số hạng theo điều kiện chia hết
 
 **Các bước giải**
 
-Xét ý a: Trên bảng viết các số từ 1 đến 34. Mỗi bước, xoá hai số bất kì và viết thay vào **hiệu** của chúng (số lớn trừ số bé). Sau nhiều bước chỉ còn một số. Số cuối cùng là số chẵn hay số lẻ?
+Xét ý a: Dãy có bao nhiêu số hạng?
 
-Đọc vị: đây là dạng **Bài toán bất biến**; dấu hiệu là Một quá trình lặp lại nhiều bước, hỏi trạng thái cuối.
+Đọc vị: đây là dạng **Đếm và tính tổng dãy con thoả điều kiện chia hết**; dấu hiệu là Đề hỏi riêng các số chẵn, số chia hết cho … trong một dãy.
 
-Kiến thức phải dùng: Tính chẵn lẻ, đại lượng bất biến.
+Kiến thức phải dùng: Dãy cách đều, bội chung nhỏ nhất.
 
-Cách làm: Tìm đại lượng không đổi rồi so trạng thái đầu với trạng thái cuối.
+Cách làm: Xác định dãy con cách đều rồi đếm, tính tổng.
 
-Lối tắt: Thử với n nhỏ (n = 3, 4) để đoán, rồi chứng minh bằng bất biến.
+Lối tắt: Nếu khoảng cách của dãy gốc đã chia hết cho số chia thì hoặc tất cả, hoặc không số hạng nào thoả điều kiện.
 
-Kết quả: **lẻ**.
+Kết quả: **202**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Khi thay a và b (giả sử a ≥ b) bằng a − b, tổng giảm đi 2b — luôn là một số chẵn. Vì vậy **tính chẵn lẻ của tổng không bao giờ thay đổi**. Số còn lại cuối cùng chính là tổng lúc đó, nên nó cùng tính chẵn lẻ với tổng ban đầu.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Các số hạng thoả thêm một điều kiện chia hết cũng lập thành một dãy cách đều mới, có khoảng cách là bội chung nhỏ nhất của khoảng cách cũ và số chia. Tìm số hạng đầu tiên thoả điều kiện rồi đếm trên dãy mới.
 
-*Điểm chốt:* Tìm đại lượng **không đổi** qua mỗi bước là chìa khoá của cả lớp bài này.
+*Điểm chốt:* Dãy con cũng **cách đều**, chỉ khác khoảng cách.
 
-### Bài IV.3 — Thêm, bớt, đổi chỗ chữ số
+### Bài IV.4 — Thêm, bớt, đổi chỗ chữ số
 
 > **BẪY — Bên trái hay bên phải.**
 
 **Các bước giải**
 
-Xét ý a: Một số có ba chữ số, nếu xoá chữ số hàng trăm thì được số mới kém số ban đầu 300 đơn vị. Tìm số ban đầu, biết chữ số hàng chục là 2 và chữ số hàng đơn vị là 9.
+Xét ý a: Đổi chỗ chữ số hàng trăm và chữ số hàng đơn vị của số 244 ta được số mới. Hiệu hai số bằng bao nhiêu?
 
 Đọc vị: đây là dạng **Biến đổi số bằng cách thêm, bớt, đổi chỗ chữ số**; dấu hiệu là Đề nói “xoá chữ số”, “viết thêm chữ số”, “đổi chỗ”.
 
@@ -436,19 +462,19 @@ Cách làm: Viết cả hai số theo cấu tạo rồi lấy hiệu.
 
 Lối tắt: Đổi chỗ hàng trăm với hàng đơn vị: hiệu = 99 × (hiệu hai chữ số).
 
-Kết quả: **329**.
+Kết quả: **198**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Viết số có ba chữ số dạng **a × 100 + b × 10 + c**. Xoá chữ số hàng trăm là bớt đi a × 100. Viết thêm chữ số 1 vào bên trái một số có ba chữ số là cộng thêm 1 000. Đổi chỗ hàng trăm với hàng đơn vị làm số thay đổi 99 lần hiệu hai chữ số đó.
 
 *Điểm chốt:* Thêm chữ số vào **bên trái** là cộng thêm; thêm vào **bên phải** là nhân 10 rồi cộng.
 
-### Bài IV.4 — Số nguyên tố và hợp số
+### Bài IV.5 — Số nguyên tố và hợp số
 
 > **BẪY — 91, 121, 143 trông như số nguyên tố nhưng không phải.**
 
 **Các bước giải**
 
-Xét ý a: Số 35 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
+Xét ý a: Số 53 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
 
 Đọc vị: đây là dạng **Nhận biết số nguyên tố, hợp số**; dấu hiệu là Câu hỏi “là số nguyên tố hay hợp số”.
 
@@ -458,79 +484,43 @@ Cách làm: Thử chia theo dãy số nguyên tố tăng dần, dừng đúng ng
 
 Lối tắt: Loại ngay các số chẵn lớn hơn 2 và các số tận cùng bằng 5 lớn hơn 5.
 
-Kết quả: **hợp số (ví dụ ước 5)**.
+Kết quả: **số nguyên tố**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Số nguyên tố chỉ có đúng hai ước là 1 và chính nó. Để kiểm tra, thử chia lần lượt cho 2, 3, 5, 7, 11… và chỉ cần thử đến khi thương bé hơn hoặc bằng số chia là dừng được.
 
 *Điểm chốt:* Chỉ cần thử các **số nguyên tố nhỏ**, không phải thử mọi số.
 
-### Bài IV.5 — Nhận ra thừa số 0 để tính tức thì
+### Bài V.1 — Cắt, ghép hình và tỉ số diện tích
 
-> **BẪY — Biểu thức lớn nhưng kết quả bằng 0.**
-
-**Các bước giải**
-
-Xét ý a: 40 × 67 + 40 × 99 − 40 × (67 + 99)
-
-Đọc vị: đây là dạng **Tính nhanh nhờ thừa số 0**; dấu hiệu là Trong biểu thức có ngoặc chứa hai số giống nhau trừ nhau.
-
-Kiến thức phải dùng: Tính chất nhân với 0, phép trừ hai số bằng nhau.
-
-Cách làm: Quét tìm cụm bằng 0 trước khi tính.
-
-Lối tắt: Nhìn dấu ngoặc trước tiên — bẫy thường nằm ở đó.
-
-Kết quả: **0**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu. Vì vậy phải quan sát toàn bộ biểu thức trước khi tính, tìm cụm nào có giá trị bằng 0.
-
-*Điểm chốt:* Quét tìm **cụm bằng 0** trước; thấy rồi thì viết đáp số ngay.
-
-### Bài V.1 — Cắt và ghép hình — chu vi thay đổi thế nào
+> **BẪY — Chu vi không cộng như diện tích.**
 
 **Các bước giải**
 
-Xét ý a: Cắt một hình vuông cạnh 16 cm thành hai hình chữ nhật bằng nhau. Tổng chu vi hai hình chữ nhật đó bằng bao nhiêu?
+Diện tích hình chữ nhật: 23 × 20 = 460 (cm²).
 
-Đọc vị: đây là dạng **Cắt ghép hình, biến thiên chu vi**; dấu hiệu là Từ khoá “ghép”, “cắt thành”, “xếp thành”.
+Nối một đỉnh với trung điểm cạnh đối diện được một tam giác có đáy bằng nửa cạnh và chiều cao bằng cạnh kia.
 
-Kiến thức phải dùng: Chu vi, đường bao của hình.
+Diện tích tam giác = đáy × chiều cao : 2, tức bằng (nửa cạnh × cạnh kia) : 2 = **một phần tư** diện tích hình chữ nhật.
 
-Cách làm: Xác định đường bao mới rồi cộng độ dài.
+Cụ thể: 460 : 4 = 115 (cm²).
 
-Lối tắt: Mỗi nhát cắt làm tổng chu vi tăng thêm hai lần chiều dài nhát cắt.
+Ghép hai hình theo chiều rộng: diện tích cộng lại, nhưng chu vi thì không cộng vì hai cạnh dán vào trong.
 
-Kết quả: **96 cm**.
+Đáp số ý d: **một phần tư**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Khi ghép hai hình lại, các cạnh dán vào nhau **không còn nằm trên đường bao** nên không tính vào chu vi. Ngược lại, khi cắt một hình thành hai phần thì xuất hiện thêm hai cạnh mới trên đường bao, nên tổng chu vi tăng lên đúng hai lần đường cắt.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Diện tích cộng được khi ghép hình, **chu vi thì không**. Tam giác có đáy bằng nửa một cạnh và chiều cao bằng cạnh kia thì diện tích bằng một phần tư hình chữ nhật.
 
-*Điểm chốt:* Diện tích giữ nguyên khi cắt ghép, nhưng **chu vi thay đổi**.
+*Điểm chốt:* Ghép hình: **diện tích cộng, chu vi không cộng**.
 
-### Bài V.2 — Đếm chữ số dùng để đánh số trang
+*Muốn khó hơn:* Nối hai trung điểm của hai cạnh kề — tỉ số diện tích bằng bao nhiêu?
 
-**Các bước giải**
+*Phải chắc trước khi làm bài này:* Diện tích hình chữ nhật và tam giác; khái niệm trung điểm.
 
-Xét ý a: Một quyển sách có 751 trang, đánh số trang từ 1. Phải dùng tất cả bao nhiêu chữ số?
-
-Đọc vị: đây là dạng **Đếm chữ số theo nhóm độ dài**; dấu hiệu là Bài toán đánh số trang, đánh số nhà, đánh số vé.
-
-Kiến thức phải dùng: Đếm số hạng dãy cách đều, cấu tạo số.
-
-Cách làm: Chia nhóm 1 chữ số – 2 chữ số – 3 chữ số rồi nhân và cộng.
-
-Lối tắt: Sách 100 trang luôn dùng 192 chữ số; nhớ mốc này để kiểm tra nhanh.
-
-Kết quả: **2 145**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Chia các trang thành nhóm theo số chữ số: từ 1 đến 9 có 9 số, mỗi số 1 chữ số; từ 10 đến 99 có 90 số, mỗi số 2 chữ số; từ 100 đến 999 có 900 số, mỗi số 3 chữ số; từ 1 000 trở đi mỗi số 4 chữ số. Nhân rồi cộng.
-
-*Điểm chốt:* Nhóm cuối cùng thường **không đầy đủ** — phải đếm đúng số trang còn lại.
-
-### Bài V.3 — Quan hệ giữa một số và tổng các chữ số của nó
+### Bài V.2 — Quan hệ giữa một số và tổng các chữ số của nó
 
 **Các bước giải**
 
-Xét ý a: Số có hai chữ số 29 gấp tổng hai chữ số của nó bao nhiêu lần? (viết dưới dạng thương và số dư)
+Xét ý a: Tìm số có hai chữ số biết số đó bằng 5 lần tổng hai chữ số của nó và chữ số hàng chục là 4.
 
 Đọc vị: đây là dạng **Số và tổng chữ số của nó**; dấu hiệu là Đề liên hệ số với tổng các chữ số của chính nó.
 
@@ -540,41 +530,17 @@ Cách làm: Đặt ẩn cho chữ số, viết hai biểu thức, lập bảng t
 
 Lối tắt: a × 10 + b − (a + b) = 9 × a — hiệu luôn là bội của 9.
 
-Kết quả: **2 dư 7**.
+Kết quả: **45**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Viết số có hai chữ số là a × 10 + b, tổng hai chữ số là a + b. So sánh hai biểu thức để tìm quan hệ; chú ý a chạy từ 1 đến 9 và b chạy từ 0 đến 9 nên số trường hợp là hữu hạn, có thể lập bảng.
 
 *Điểm chốt:* Khi ẩn chỉ nhận hữu hạn giá trị, **lập bảng** là phương pháp chắc chắn nhất.
 
-### Bài V.4 — Chữ số tận cùng của tổng và tích
+### Bài V.3 — Số dư của tổng — lập luận không cần tính hết
 
 **Các bước giải**
 
-Xét ý a: Tổng 692 + 874 có chữ số tận cùng là chữ số nào?
-
-Đọc vị: đây là dạng **Chữ số tận cùng**; dấu hiệu là Câu hỏi chỉ hỏi chữ số tận cùng.
-
-Kiến thức phải dùng: Tính chất chữ số tận cùng của tổng, tích.
-
-Cách làm: Rút gọn về chữ số tận cùng rồi tính.
-
-Lối tắt: Tích có thừa số tận cùng 0 hoặc 5 thì tận cùng là 0 hoặc 5.
-
-Kết quả: **6**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Chữ số tận cùng của tổng và của tích chỉ phụ thuộc chữ số tận cùng của các số tham gia. Che phần đầu, chỉ tính với chữ số cuối.
-
-*Điểm chốt:* Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu.
-
-*Muốn khó hơn:* Hỏi chữ số tận cùng của tích nhiều thừa số giống nhau — tìm chu kì lặp.
-
-*Phải chắc trước khi làm bài này:* Bảng nhân và thói quen quan sát trước khi tính.
-
-### Bài V.5 — Số dư của tổng — lập luận không cần tính hết
-
-**Các bước giải**
-
-Xét ý a: Dãy số: 267, 313, 407, 581, 675, 700. Có bao nhiêu số trong dãy chia hết cho 3?
+Xét ý a: Dãy số: 260, 397, 630. Có bao nhiêu số trong dãy chia hết cho 2?
 
 Đọc vị: đây là dạng **Xét số dư của tổng**; dấu hiệu là Đề hỏi chia hết hay số dư của một tổng dài.
 
@@ -590,6 +556,50 @@ Kết quả: **2**.
 
 *Điểm chốt:* Làm việc với **số dư** thay vì với số — đây là kỹ thuật rút gọn mạnh nhất.
 
+### Bài V.4 — Đếm chữ số dùng để đánh số trang
+
+**Các bước giải**
+
+Xét ý a: Một quyển sách có 45 trang, đánh số trang từ 1. Phải dùng tất cả bao nhiêu chữ số?
+
+Đọc vị: đây là dạng **Đếm chữ số theo nhóm độ dài**; dấu hiệu là Bài toán đánh số trang, đánh số nhà, đánh số vé.
+
+Kiến thức phải dùng: Đếm số hạng dãy cách đều, cấu tạo số.
+
+Cách làm: Chia nhóm 1 chữ số – 2 chữ số – 3 chữ số rồi nhân và cộng.
+
+Lối tắt: Sách 100 trang luôn dùng 192 chữ số; nhớ mốc này để kiểm tra nhanh.
+
+Kết quả: **81**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Chia các trang thành nhóm theo số chữ số: từ 1 đến 9 có 9 số, mỗi số 1 chữ số; từ 10 đến 99 có 90 số, mỗi số 2 chữ số; từ 100 đến 999 có 900 số, mỗi số 3 chữ số; từ 1 000 trở đi mỗi số 4 chữ số. Nhân rồi cộng.
+
+*Điểm chốt:* Nhóm cuối cùng thường **không đầy đủ** — phải đếm đúng số trang còn lại.
+
+### Bài V.5 — Chữ số tận cùng của tổng và tích
+
+**Các bước giải**
+
+Xét ý a: Tổng 422 + 820 có chữ số tận cùng là chữ số nào?
+
+Đọc vị: đây là dạng **Chữ số tận cùng**; dấu hiệu là Câu hỏi chỉ hỏi chữ số tận cùng.
+
+Kiến thức phải dùng: Tính chất chữ số tận cùng của tổng, tích.
+
+Cách làm: Rút gọn về chữ số tận cùng rồi tính.
+
+Lối tắt: Tích có thừa số tận cùng 0 hoặc 5 thì tận cùng là 0 hoặc 5.
+
+Kết quả: **2**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Chữ số tận cùng của tổng và của tích chỉ phụ thuộc chữ số tận cùng của các số tham gia. Che phần đầu, chỉ tính với chữ số cuối.
+
+*Điểm chốt:* Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu.
+
+*Muốn khó hơn:* Hỏi chữ số tận cùng của tích nhiều thừa số giống nhau — tìm chu kì lặp.
+
+*Phải chắc trước khi làm bài này:* Bảng nhân và thói quen quan sát trước khi tính.
+
 ---
 
 ## 3. BẢNG PHÂN TÍCH CHUYÊN SÂU
@@ -599,7 +609,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
 | I.1 | Làm tròn số tự nhiên | Quy tắc làm tròn, giá trị hàng | Cụm từ “làm tròn đến hàng …” | Gạch ngăn hàng → xét chữ số liền sau → giữ nguyên hoặc thêm 1 | Che toàn bộ phần đuôi sau nét gạch, chỉ để lộ đúng một chữ số. | 826 000 · 555 800 · 970 500 · 312 100… |
-| I.2 | Viết số từ dạng tổng theo hàng | Cấu tạo thập phân của số tự nhiên | Tổng gồm các số tròn chục, tròn trăm, tròn nghìn… | Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết | Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số. | 641 841 · 317 987 · 731 164 · 801 674 |
+| I.2 | Viết số từ dạng tổng theo hàng | Cấu tạo thập phân của số tự nhiên | Tổng gồm các số tròn chục, tròn trăm, tròn nghìn… | Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết | Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số. | 42 328 · 698 013 · 548 180 · 665 699… |
 | I.3 | Xác định chữ số và giá trị chữ số theo hàng | Cấu tạo thập phân của số tự nhiên | Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” | Đánh số hàng từ phải sang trái rồi tra bảng hàng | Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị. | chữ số 3, giá trị 300 000 · chữ số 4, giá trị 40 000 · chữ số 0, giá trị 0 · chữ số 3, giá trị 3 |
 | I.4 | Ôn tập số tự nhiên | Thứ tự số tự nhiên, giá trị hàng, quy tắc làm tròn | Câu hỏi ngắn về so sánh, hàng, số liền kề, làm tròn | Đếm chữ số, xét hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | 8 639 008 và 8 639 010 · > · 40 · 9 817 100… |
 | I.5 | Đếm chữ số, tính tổng chữ số | Cấu tạo số, tổng chữ số | Yêu cầu “có mấy chữ số”, “tổng các chữ số” | Tách lớp để đếm; cộng rời từng chữ số | Ghép cặp các chữ số cộng lại tròn 10 rồi cộng nhanh. | 6 chữ số, tổng 31 · 6 chữ số, tổng 26 · 6 chữ số, tổng 30 · 6 chữ số, tổng 36… |
@@ -608,21 +618,21 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | II.3 | Kiểm tra chia hết bằng dấu hiệu | Dấu hiệu chia hết cho 2, 3, 5, 9 | Câu hỏi “có chia hết cho … không” | Chọn đúng dấu hiệu theo số chia rồi kiểm tra | Cộng chữ số theo cặp tròn 9, phần dư chính là số dư khi chia 9. | không (chữ số tận cùng 5) · không (tổng chữ số 19) · có (chữ số tận cùng 8) · có (chữ số tận cùng 6)… |
 | II.4 | Phép chia có dư | Quan hệ giữa số bị chia, số chia, thương và số dư | Đề yêu cầu ghi cả thương và số dư | Đặt tính chia, kiểm tra điều kiện số dư | Ước lượng thương bằng cách làm tròn số chia trước khi chia. | 8 893 dư 18 · 738 dư 19 · 4 281 dư 7 · 1 350 dư 7… |
 | II.5 | Đếm số hạng của dãy cách đều theo điều kiện chia hết | Dãy số cách đều, dấu hiệu chia hết | Cụm “có bao nhiêu số … từ … đến …” | Tìm số đầu, số cuối hợp lệ rồi dùng công thức đếm | Số các số chia hết cho d từ 1 đến n bằng phần nguyên của n : d, nên đếm từ a đến b là b : d trừ đi (a − 1) : d. | 158 · 23 · 183 · 51… |
-| III.1 | Định vị số hạng, kiểm tra một số có thuộc dãy | Dãy cách đều, phép chia có dư | Câu hỏi “là số hạng thứ mấy”, “có thuộc dãy không” | (số − đầu) : khoảng cách, xét dư rồi cộng 1 | Mọi số hạng của dãy đều có cùng số dư khi chia cho khoảng cách. | 264 · 1 055 · 17 · 94… |
-| III.2 | Đếm số chia hết đồng thời cho nhiều số | Bội chung nhỏ nhất, dãy số cách đều | Cụm “vừa chia hết cho … vừa chia hết cho …” | Quy về một số chia duy nhất là BCNN rồi đếm | Chia hết cho 2 và 5 thì tận cùng là 0; chia hết cho 2 và 3 thì chia hết cho 6. | 46 số, bé nhất là 255 · 33 số, bé nhất là 282 · 48 số, bé nhất là 165 · 25 số, bé nhất là 70… |
-| III.3 | Dãy số tự nhiên liên tiếp có tổng cho trước | Trung bình cộng, dãy cách đều | Cụm “… số tự nhiên liên tiếp có tổng bằng …” | Tìm số giữa bằng phép chia rồi suy ra hai đầu dãy | Tổng của n số liên tiếp (n lẻ) luôn chia hết cho n. | 430 · 323 · 478 · 201 |
-| III.4 | Tìm chữ số tận cùng của một phép tính | Tính chất chữ số tận cùng | Câu hỏi chỉ hỏi “chữ số tận cùng”, không hỏi kết quả | Rút gọn về chữ số tận cùng rồi tính | Với phép trừ, nếu chữ số cuối của số bị trừ nhỏ hơn thì mượn 10 rồi trừ. | 6 · 8 · 8 · 3… |
-| III.5 | Tìm số theo điều kiện của các chữ số | Cấu tạo thập phân, bài toán tổng – hiệu | Đề cho quan hệ giữa các chữ số chứ không cho số | Đặt ẩn cho từng chữ số, viết số theo cấu tạo, giải hệ điều kiện | Đổi chỗ hai chữ số của số có hai chữ số thì hiệu luôn bằng 9 lần hiệu hai chữ số. | 86, hiệu 18 · hơn 8 đơn vị · gấp 1 lần · 95, hiệu 36… |
-| IV.1 | Tìm số thoả nhiều điều kiện chia có dư | Phép chia có dư, dãy cách đều | Hai điều kiện “chia cho … dư …” đi cùng nhau | Lập dãy theo điều kiện chặt hơn rồi lọc theo điều kiện còn lại | Chọn điều kiện có số chia **lớn hơn** để lập dãy — dãy thưa hơn nên thử nhanh hơn. | 16 · 7 · 23 · 5… |
-| IV.2 | Bài toán bất biến | Tính chẵn lẻ, đại lượng bất biến | Một quá trình lặp lại nhiều bước, hỏi trạng thái cuối | Tìm đại lượng không đổi rồi so trạng thái đầu với trạng thái cuối | Thử với n nhỏ (n = 3, 4) để đoán, rồi chứng minh bằng bất biến. | lẻ · 595 · giảm đi 2 lần số bé · không thay đổi… |
-| IV.3 | Biến đổi số bằng cách thêm, bớt, đổi chỗ chữ số | Cấu tạo thập phân, hiệu hai số | Đề nói “xoá chữ số”, “viết thêm chữ số”, “đổi chỗ” | Viết cả hai số theo cấu tạo rồi lấy hiệu | Đổi chỗ hàng trăm với hàng đơn vị: hiệu = 99 × (hiệu hai chữ số). | 329 · 198 · 198 · 433… |
-| IV.4 | Nhận biết số nguyên tố, hợp số | Định nghĩa số nguyên tố, dấu hiệu chia hết | Câu hỏi “là số nguyên tố hay hợp số” | Thử chia theo dãy số nguyên tố tăng dần, dừng đúng ngưỡng | Loại ngay các số chẵn lớn hơn 2 và các số tận cùng bằng 5 lớn hơn 5. | hợp số (ví dụ ước 5) · số nguyên tố · hợp số (ví dụ ước 2) · hợp số (ví dụ ước 3)… |
-| IV.5 | Tính nhanh nhờ thừa số 0 | Tính chất nhân với 0, phép trừ hai số bằng nhau | Trong biểu thức có ngoặc chứa hai số giống nhau trừ nhau | Quét tìm cụm bằng 0 trước khi tính | Nhìn dấu ngoặc trước tiên — bẫy thường nằm ở đó. | 0 · 0 · 0 · 0 |
-| V.1 | Cắt ghép hình, biến thiên chu vi | Chu vi, đường bao của hình | Từ khoá “ghép”, “cắt thành”, “xếp thành” | Xác định đường bao mới rồi cộng độ dài | Mỗi nhát cắt làm tổng chu vi tăng thêm hai lần chiều dài nhát cắt. | 96 cm · 48 cm · 70 cm · 180 cm |
-| V.2 | Đếm chữ số theo nhóm độ dài | Đếm số hạng dãy cách đều, cấu tạo số | Bài toán đánh số trang, đánh số nhà, đánh số vé | Chia nhóm 1 chữ số – 2 chữ số – 3 chữ số rồi nhân và cộng | Sách 100 trang luôn dùng 192 chữ số; nhớ mốc này để kiểm tra nhanh. | 2 145 · 3 829 · 2 921 · 7 809… |
-| V.3 | Số và tổng chữ số của nó | Cấu tạo thập phân, phép chia có dư | Đề liên hệ số với tổng các chữ số của chính nó | Đặt ẩn cho chữ số, viết hai biểu thức, lập bảng thử | a × 10 + b − (a + b) = 9 × a — hiệu luôn là bội của 9. | 2 dư 7 · 8 dư 4 · 3 dư 7 · 36… |
-| V.4 | Chữ số tận cùng | Tính chất chữ số tận cùng của tổng, tích | Câu hỏi chỉ hỏi chữ số tận cùng | Rút gọn về chữ số tận cùng rồi tính | Tích có thừa số tận cùng 0 hoặc 5 thì tận cùng là 0 hoặc 5. | 6 · 0 · 0 · 0 |
-| V.5 | Xét số dư của tổng | Tính chất số dư của tổng | Đề hỏi chia hết hay số dư của một tổng dài | Rút gọn từng số hạng về số dư rồi cộng | Với d = 9, số dư của một số bằng số dư của tổng các chữ số của nó. | 2 · 2 943 · có · tổng các số dư là 6, chia 3 dư 0… |
+| III.1 | Dãy số tự nhiên liên tiếp có tổng cho trước | Trung bình cộng, dãy cách đều | Cụm “… số tự nhiên liên tiếp có tổng bằng …” | Tìm số giữa bằng phép chia rồi suy ra hai đầu dãy | Tổng của n số liên tiếp (n lẻ) luôn chia hết cho n. | 32 · 396 · 312 · 279 |
+| III.2 | Đếm số chia hết đồng thời cho nhiều số | Bội chung nhỏ nhất, dãy số cách đều | Cụm “vừa chia hết cho … vừa chia hết cho …” | Quy về một số chia duy nhất là BCNN rồi đếm | Chia hết cho 2 và 5 thì tận cùng là 0; chia hết cho 2 và 3 thì chia hết cho 6. | 48 số, bé nhất là 165 · 25 số, bé nhất là 70 · 44 số, bé nhất là 90 · 56 số, bé nhất là 204 |
+| III.3 | Tìm chữ số tận cùng của một phép tính | Tính chất chữ số tận cùng | Câu hỏi chỉ hỏi “chữ số tận cùng”, không hỏi kết quả | Rút gọn về chữ số tận cùng rồi tính | Với phép trừ, nếu chữ số cuối của số bị trừ nhỏ hơn thì mượn 10 rồi trừ. | 0 · 3 · 2 · 2 |
+| III.4 | Tính ngược từ cuối | Bốn phép tính; quan hệ giữa phép tính và phép tính ngược | Đề kể một **chuỗi thao tác** rồi cho kết quả cuối, hỏi số ban đầu | Vẽ sơ đồ mũi tên, đi ngược và đảo từng phép tính | Gỡ từ phải sang trái, mỗi bước một phép tính ngược — không cần đặt ẩn. | 58 · 31 · 11 · 29… |
+| III.5 | Tìm số theo điều kiện của các chữ số | Cấu tạo thập phân, bài toán tổng – hiệu | Đề cho quan hệ giữa các chữ số chứ không cho số | Đặt ẩn cho từng chữ số, viết số theo cấu tạo, giải hệ điều kiện | Đổi chỗ hai chữ số của số có hai chữ số thì hiệu luôn bằng 9 lần hiệu hai chữ số. | 52, hiệu 27 · hơn -2 đơn vị · 14, hiệu 27 · 25, hiệu 27 |
+| IV.1 | Dùng chữ thay số | Cấu tạo thập phân của số; tổng – hiệu | Đề viết số bằng chữ hoặc bằng dấu sao và cho quan hệ giữa các chữ số | Viết cấu tạo số theo chữ, thay vào điều kiện rồi rút gọn | Đổi chỗ hai chữ số của số có hai chữ số thì hiệu luôn là bội của 9. | 54 · 75 · 62 · 72 |
+| IV.2 | Tìm số thoả nhiều điều kiện chia có dư | Phép chia có dư, dãy cách đều | Hai điều kiện “chia cho … dư …” đi cùng nhau | Lập dãy theo điều kiện chặt hơn rồi lọc theo điều kiện còn lại | Chọn điều kiện có số chia **lớn hơn** để lập dãy — dãy thưa hơn nên thử nhanh hơn. | 5 · không có số nào · 28 · 23… |
+| IV.3 | Đếm và tính tổng dãy con thoả điều kiện chia hết | Dãy cách đều, bội chung nhỏ nhất | Đề hỏi riêng các số chẵn, số chia hết cho … trong một dãy | Xác định dãy con cách đều rồi đếm, tính tổng | Nếu khoảng cách của dãy gốc đã chia hết cho số chia thì hoặc tất cả, hoặc không số hạng nào thoả điều kiện. | 202 · 604 · 40 · 101… |
+| IV.4 | Biến đổi số bằng cách thêm, bớt, đổi chỗ chữ số | Cấu tạo thập phân, hiệu hai số | Đề nói “xoá chữ số”, “viết thêm chữ số”, “đổi chỗ” | Viết cả hai số theo cấu tạo rồi lấy hiệu | Đổi chỗ hàng trăm với hàng đơn vị: hiệu = 99 × (hiệu hai chữ số). | 198 · 620 · 874 · 99… |
+| IV.5 | Nhận biết số nguyên tố, hợp số | Định nghĩa số nguyên tố, dấu hiệu chia hết | Câu hỏi “là số nguyên tố hay hợp số” | Thử chia theo dãy số nguyên tố tăng dần, dừng đúng ngưỡng | Loại ngay các số chẵn lớn hơn 2 và các số tận cùng bằng 5 lớn hơn 5. | số nguyên tố · hợp số (ví dụ ước 2) · hợp số (ví dụ ước 2) · hợp số (ví dụ ước 2)… |
+| V.1 | Cắt ghép hình, tỉ số diện tích | Diện tích hình chữ nhật, tam giác; đường bao | “Cắt thành … phần”, “nối trung điểm”, “ghép hai hình” | Vẽ hình, xác định đáy và chiều cao, so tỉ số | Tam giác nối một đỉnh với trung điểm cạnh đối diện luôn bằng một phần tư. | 460 cm² · 115 cm² · 230 cm² · 1 phần 4… |
+| V.2 | Số và tổng chữ số của nó | Cấu tạo thập phân, phép chia có dư | Đề liên hệ số với tổng các chữ số của chính nó | Đặt ẩn cho chữ số, viết hai biểu thức, lập bảng thử | a × 10 + b − (a + b) = 9 × a — hiệu luôn là bội của 9. | 45 · 5 dư 1 · 3 dư 3 · 6 dư 6 |
+| V.3 | Xét số dư của tổng | Tính chất số dư của tổng | Đề hỏi chia hết hay số dư của một tổng dài | Rút gọn từng số hạng về số dư rồi cộng | Với d = 9, số dư của một số bằng số dư của tổng các chữ số của nó. | 2 · 1 287 · không, dư 1 · tổng các số dư là 1, chia 2 dư 1… |
+| V.4 | Đếm chữ số theo nhóm độ dài | Đếm số hạng dãy cách đều, cấu tạo số | Bài toán đánh số trang, đánh số nhà, đánh số vé | Chia nhóm 1 chữ số – 2 chữ số – 3 chữ số rồi nhân và cộng | Sách 100 trang luôn dùng 192 chữ số; nhớ mốc này để kiểm tra nhanh. | 81 · 2 409 · 89 · 73… |
+| V.5 | Chữ số tận cùng | Tính chất chữ số tận cùng của tổng, tích | Câu hỏi chỉ hỏi chữ số tận cùng | Rút gọn về chữ số tận cùng rồi tính | Tích có thừa số tận cùng 0 hoặc 5 thì tận cùng là 0 hoặc 5. | 2 · 0 · 4 · 0… |
 
 ---
 
@@ -640,21 +650,21 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | II.3 | TD1, TD5 | Dấu hiệu cho 2 và 5 nhìn **đuôi**; dấu hiệu cho 3 và 9 nhìn **tổng**. |
 | II.4 | TD1 | Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong. |
 | II.5 | TD4, TD1 | Công thức có **+ 1** ở cuối; quên cộng 1 là sai một đơn vị. |
-| III.1 | TD4, TD2 | Phép chia **có dư** là bằng chứng số đó không thuộc dãy. |
+| III.1 | TD3, TD4 | Với số lượng lẻ thì **số giữa = tổng : số lượng** — đó là chìa khoá. |
 | III.2 | TD2, TD4 | Khoảng cách của dãy là **bội chung nhỏ nhất**, không phải tích hai số khi hai số không nguyên tố cùng nhau. |
-| III.3 | TD3, TD4 | Với số lượng lẻ thì **số giữa = tổng : số lượng** — đó là chìa khoá. |
-| III.4 | TD5, TD2 | Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu của số. |
+| III.3 | TD5, TD2 | Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu của số. |
+| III.4 | TD3, TD5 | Đảo **cả phép tính lẫn thứ tự**. Đảo phép tính mà giữ nguyên thứ tự thì vẫn sai. |
 | III.5 | TD3, TD2 | Chữ số hàng chục **khác 0** và mỗi chữ số chỉ nhận giá trị từ 0 đến 9. |
-| IV.1 | TD2, TD6 | Chỉ **đi dọc một dãy** rồi thử điều kiện còn lại, không thử tất cả số. |
-| IV.2 | TD6, TD2 | Tìm đại lượng **không đổi** qua mỗi bước là chìa khoá của cả lớp bài này. |
-| IV.3 | TD3, TD2 | Thêm chữ số vào **bên trái** là cộng thêm; thêm vào **bên phải** là nhân 10 rồi cộng. |
-| IV.4 | TD2 | Chỉ cần thử các **số nguyên tố nhỏ**, không phải thử mọi số. |
-| IV.5 | TD5, TD6 | Quét tìm **cụm bằng 0** trước; thấy rồi thì viết đáp số ngay. |
-| V.1 | TD6, TD3 | Diện tích giữ nguyên khi cắt ghép, nhưng **chu vi thay đổi**. |
-| V.2 | TD4, TD6 | Nhóm cuối cùng thường **không đầy đủ** — phải đếm đúng số trang còn lại. |
-| V.3 | TD3, TD6 | Khi ẩn chỉ nhận hữu hạn giá trị, **lập bảng** là phương pháp chắc chắn nhất. |
-| V.4 | TD5, TD2 | Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu. |
-| V.5 | TD2, TD6 | Làm việc với **số dư** thay vì với số — đây là kỹ thuật rút gọn mạnh nhất. |
+| IV.1 | TD1, TD4 | Chữ số hàng cao nhất **khác 0**, và mọi chữ số chỉ nhận giá trị từ 0 đến 9. Hai ràng buộc này thường là chỗ loại bớt đáp số. |
+| IV.2 | TD2, TD6 | Chỉ **đi dọc một dãy** rồi thử điều kiện còn lại, không thử tất cả số. |
+| IV.3 | TD4, TD2 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
+| IV.4 | TD3, TD2 | Thêm chữ số vào **bên trái** là cộng thêm; thêm vào **bên phải** là nhân 10 rồi cộng. |
+| IV.5 | TD2 | Chỉ cần thử các **số nguyên tố nhỏ**, không phải thử mọi số. |
+| V.1 | TD6, TD3 | Ghép hình: **diện tích cộng, chu vi không cộng**. |
+| V.2 | TD3, TD6 | Khi ẩn chỉ nhận hữu hạn giá trị, **lập bảng** là phương pháp chắc chắn nhất. |
+| V.3 | TD2, TD6 | Làm việc với **số dư** thay vì với số — đây là kỹ thuật rút gọn mạnh nhất. |
+| V.4 | TD4, TD6 | Nhóm cuối cùng thường **không đầy đủ** — phải đếm đúng số trang còn lại. |
+| V.5 | TD5, TD2 | Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu. |
 
 ---
 
@@ -674,21 +684,21 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 | II.3 | Dùng dấu hiệu của 3 để kết luận cho 2, hoặc cộng thiếu một chữ số. | Viết rõ tổng các chữ số ra bên cạnh trước khi kết luận. |
 | II.4 | Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. | Thử lại bằng công thức số bị chia = số chia × thương + số dư. |
 | II.5 | Lấy luôn hai đầu khoảng làm số đầu và số cuối của dãy dù chúng không thoả điều kiện. | Viết ra ba số đầu và ba số cuối của dãy trước khi áp công thức. |
-| III.1 | Chia được số nguyên rồi quên cộng 1, hoặc bỏ qua phần dư. | Luôn ghi rõ thương và số dư khi chia. |
+| III.1 | Lấy tổng chia cho số lượng rồi nhận luôn kết quả là số bé nhất. | Vẽ dãy số ra, đánh dấu vị trí số giữa trước khi lùi về số đầu. |
 | III.2 | Lấy tích hai số làm khoảng cách (ví dụ dùng 27 cho “chia hết cho 3 và 9”). | Kiểm tra bằng cách viết ba số đầu tiên của dãy rồi xem khoảng cách thật. |
-| III.3 | Lấy tổng chia cho số lượng rồi nhận luôn kết quả là số bé nhất. | Vẽ dãy số ra, đánh dấu vị trí số giữa trước khi lùi về số đầu. |
-| III.4 | Tính trọn cả phép tính, vừa lâu vừa dễ sai. | Che phần đầu của hai số, chỉ để lộ chữ số cuối cùng. |
+| III.3 | Tính trọn cả phép tính, vừa lâu vừa dễ sai. | Che phần đầu của hai số, chỉ để lộ chữ số cuối cùng. |
+| III.4 | Bắt đầu gỡ từ phép tính đầu tiên của đề thay vì từ phép tính cuối cùng. | Thử lại theo chiều xuôi. Bài này luôn thử lại được, nên không có lý do gì để nộp một đáp số chưa thử. |
 | III.5 | Tìm ra a hoặc b lớn hơn 9 mà vẫn nhận đáp số. | Sau khi tính xong, kiểm tra lại từng chữ số có nằm trong khoảng 0–9 không. |
-| IV.1 | Thử từng số từ 1 trở đi nên quá lâu và dễ bỏ sót. | Viết dãy số thoả điều kiện thứ nhất trước, rồi mới lọc. |
-| IV.2 | Thử mò vài trường hợp rồi kết luận, không chứng minh được cho mọi cách làm. | Sau khi đoán, hãy kiểm tra: đại lượng đó thay đổi thế nào sau **một** bước? |
-| IV.3 | Nhầm “viết thêm bên trái” thành “viết thêm bên phải”. | Viết cả số cũ và số mới ra rồi mới so sánh. |
-| IV.4 | Thử chia cho mọi số từ 2 đến số đó nên mất thời gian, hoặc kết luận vội. | Thử theo thứ tự 2, 3, 5, 7, 11, 13 và dừng đúng lúc. |
-| IV.5 | Lao vào nhân từng cặp số lớn rồi mới phát hiện kết quả bằng 0. | Đọc hết biểu thức một lượt, khoanh các cụm giống nhau bị trừ cho nhau. |
-| V.1 | Cộng chu vi các hình nhỏ lại rồi coi đó là chu vi hình ghép. | Tô đậm đường bao của hình mới rồi mới tính. |
-| V.2 | Lấy số trang nhân với số chữ số của trang cuối. | Kẻ bảng ba cột: khoảng trang – số trang – số chữ số, rồi cộng cột cuối. |
-| V.3 | Chia bừa mà không kiểm tra điều kiện chia hết nên nhận đáp số không nguyên. | Kiểm tra lại đáp số bằng cách thay ngược vào đề. |
-| V.4 | Tính trọn cả phép tính, vừa lâu vừa dễ sai. | Lấy tay che phần đầu của hai số, chỉ để lộ chữ số cuối. |
-| V.5 | Cộng hết cả dãy rồi mới chia, mất thời gian và dễ sai. | Ghi số dư của từng số ngay dưới số đó rồi cộng dòng số dư. |
+| IV.1 | Tính ra a bằng 0 rồi vẫn nhận, hoặc để một chữ số vượt quá 9. | Viết sẵn hai dòng ràng buộc lên đầu bài giải rồi mới tính. |
+| IV.2 | Thử từng số từ 1 trở đi nên quá lâu và dễ bỏ sót. | Viết dãy số thoả điều kiện thứ nhất trước, rồi mới lọc. |
+| IV.3 | Duyệt từng số hạng để đếm — không kịp khi dãy dài hàng trăm số. | Tìm số hạng đầu tiên thoả điều kiện rồi xác định khoảng cách mới. |
+| IV.4 | Nhầm “viết thêm bên trái” thành “viết thêm bên phải”. | Viết cả số cũ và số mới ra rồi mới so sánh. |
+| IV.5 | Thử chia cho mọi số từ 2 đến số đó nên mất thời gian, hoặc kết luận vội. | Thử theo thứ tự 2, 3, 5, 7, 11, 13 và dừng đúng lúc. |
+| V.1 | Cộng chu vi hai hình nhỏ lại thành chu vi hình ghép. | Tô đậm đường bao của hình mới rồi mới tính chu vi. |
+| V.2 | Chia bừa mà không kiểm tra điều kiện chia hết nên nhận đáp số không nguyên. | Kiểm tra lại đáp số bằng cách thay ngược vào đề. |
+| V.3 | Cộng hết cả dãy rồi mới chia, mất thời gian và dễ sai. | Ghi số dư của từng số ngay dưới số đó rồi cộng dòng số dư. |
+| V.4 | Lấy số trang nhân với số chữ số của trang cuối. | Kẻ bảng ba cột: khoảng trang – số trang – số chữ số, rồi cộng cột cuối. |
+| V.5 | Tính trọn cả phép tính, vừa lâu vừa dễ sai. | Lấy tay che phần đầu của hai số, chỉ để lộ chữ số cuối. |
 
 ---
 
@@ -706,21 +716,21 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 **Bài II.3** — (1) Số chia là 2 hay 5 thì nhìn chữ số tận cùng. — (2) Số chia là 3 hay 9 thì cộng các chữ số. — (3) Tổng chữ số vẫn lớn thì cộng tiếp lần nữa.
 **Bài II.4** — (1) Đặt tính chia theo cột. — (2) Mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. — (3) Thử lại: nhân thương với số chia rồi cộng số dư.
 **Bài II.5** — (1) Số đầu tiên trong khoảng thoả điều kiện là số nào? — (2) Số cuối cùng trong khoảng thoả điều kiện là số nào? — (3) Số lượng = (cuối − đầu) : khoảng cách + 1.
-**Bài III.1** — (1) Lấy số đó trừ số hạng đầu. — (2) Chia hiệu cho khoảng cách — có chia hết không? — (3) Chia hết thì cộng 1 để ra thứ tự; không chia hết thì số đó không thuộc dãy.
+**Bài III.1** — (1) Số lượng số hạng là số chẵn hay lẻ? — (2) Với số lượng lẻ, số ở giữa bằng tổng chia số lượng. — (3) Từ số giữa lùi về đầu dãy mấy đơn vị?
 **Bài III.2** — (1) Số chia hết cho cả hai số thì chia hết cho số nào? — (2) Tìm bội chung nhỏ nhất của hai số đó. — (3) Các số cần tìm cách đều nhau đúng bằng bội chung nhỏ nhất.
-**Bài III.3** — (1) Số lượng số hạng là số chẵn hay lẻ? — (2) Với số lượng lẻ, số ở giữa bằng tổng chia số lượng. — (3) Từ số giữa lùi về đầu dãy mấy đơn vị?
-**Bài III.4** — (1) Chữ số tận cùng của mỗi số là chữ số nào? — (2) Thực hiện phép tính với riêng hai chữ số tận cùng đó. — (3) Lấy chữ số tận cùng của kết quả vừa tính.
+**Bài III.3** — (1) Chữ số tận cùng của mỗi số là chữ số nào? — (2) Thực hiện phép tính với riêng hai chữ số tận cùng đó. — (3) Lấy chữ số tận cùng của kết quả vừa tính.
+**Bài III.4** — (1) Đề đã làm những phép tính nào, theo thứ tự nào? — (2) Phép nào làm sau cùng? Gỡ phép ấy trước tiên. — (3) Nhân thì gỡ bằng chia, cộng thì gỡ bằng trừ.
 **Bài III.5** — (1) Gọi chữ số hàng chục là a, hàng đơn vị là b. — (2) Viết số đó thành a × 10 + b. — (3) Đưa về bài toán tổng – hiệu của a và b.
-**Bài IV.1** — (1) Viết vài số chia cho số thứ nhất dư đúng như đề. — (2) Chúng cách đều nhau bao nhiêu đơn vị? — (3) Đi dọc dãy đó và kiểm tra điều kiện thứ hai.
-**Bài IV.2** — (1) Sau mỗi bước, tổng các số trên bảng thay đổi bao nhiêu? — (2) Lượng thay đổi đó là số chẵn hay số lẻ? — (3) Vậy tính chẵn lẻ của tổng có đổi không?
-**Bài IV.3** — (1) Viết số theo cấu tạo a × 100 + b × 10 + c. — (2) Viết số mới cũng theo cấu tạo như vậy. — (3) Trừ hai biểu thức, các phần giống nhau triệt tiêu.
-**Bài IV.4** — (1) Số đó có chia hết cho 2 hay 5 không? — (2) Cộng các chữ số xem có chia hết cho 3 không. — (3) Thử tiếp 7, 11, 13; dừng khi thương bé hơn số chia.
-**Bài IV.5** — (1) Có cụm nào trong ngoặc bằng 0 không? — (2) Có hai cụm giống hệt nhau bị trừ cho nhau không? — (3) Tích có một thừa số bằng 0 thì bằng bao nhiêu?
-**Bài V.1** — (1) Vẽ hình sau khi ghép hoặc cắt. — (2) Đường bao của hình mới gồm những cạnh nào? — (3) Cạnh nào bị dán vào trong thì không tính.
-**Bài V.2** — (1) Từ trang 1 đến trang 9 dùng mấy chữ số? — (2) Từ trang 10 đến trang 99 có bao nhiêu trang? — (3) Nhóm cuối cùng có bao nhiêu trang, mỗi trang mấy chữ số?
-**Bài V.3** — (1) Đặt số đó là a × 10 + b. — (2) Tổng hai chữ số là a + b — viết cả hai biểu thức ra cạnh nhau. — (3) Lập bảng a từ 1 đến 9 rồi thử.
-**Bài V.4** — (1) Chữ số tận cùng của mỗi số là gì? — (2) Tính riêng với hai chữ số ấy. — (3) Lấy chữ số tận cùng của kết quả vừa tính.
-**Bài V.5** — (1) Tính số dư của từng số khi chia cho d. — (2) Cộng các số dư lại. — (3) Lấy tổng các số dư chia tiếp cho d.
+**Bài IV.1** — (1) Số có hai chữ số ab viết theo cấu tạo là gì? — (2) Thay cấu tạo ấy vào điều kiện đề cho, rồi rút gọn. — (3) Kiểm lại: chữ số hàng chục có khác 0 không?
+**Bài IV.2** — (1) Viết vài số chia cho số thứ nhất dư đúng như đề. — (2) Chúng cách đều nhau bao nhiêu đơn vị? — (3) Đi dọc dãy đó và kiểm tra điều kiện thứ hai.
+**Bài IV.3** — (1) Số hạng nào đầu tiên thoả điều kiện? — (2) Số hạng tiếp theo thoả điều kiện cách nó bao nhiêu? — (3) Dãy con cũng cách đều — dùng công thức đếm.
+**Bài IV.4** — (1) Viết số theo cấu tạo a × 100 + b × 10 + c. — (2) Viết số mới cũng theo cấu tạo như vậy. — (3) Trừ hai biểu thức, các phần giống nhau triệt tiêu.
+**Bài IV.5** — (1) Số đó có chia hết cho 2 hay 5 không? — (2) Cộng các chữ số xem có chia hết cho 3 không. — (3) Thử tiếp 7, 11, 13; dừng khi thương bé hơn số chia.
+**Bài V.1** — (1) Tam giác ấy có đáy và chiều cao bằng bao nhiêu? — (2) Diện tích tam giác bằng đáy nhân chiều cao chia 2. — (3) So với diện tích hình chữ nhật thì bằng mấy phần?
+**Bài V.2** — (1) Đặt số đó là a × 10 + b. — (2) Tổng hai chữ số là a + b — viết cả hai biểu thức ra cạnh nhau. — (3) Lập bảng a từ 1 đến 9 rồi thử.
+**Bài V.3** — (1) Tính số dư của từng số khi chia cho d. — (2) Cộng các số dư lại. — (3) Lấy tổng các số dư chia tiếp cho d.
+**Bài V.4** — (1) Từ trang 1 đến trang 9 dùng mấy chữ số? — (2) Từ trang 10 đến trang 99 có bao nhiêu trang? — (3) Nhóm cuối cùng có bao nhiêu trang, mỗi trang mấy chữ số?
+**Bài V.5** — (1) Chữ số tận cùng của mỗi số là gì? — (2) Tính riêng với hai chữ số ấy. — (3) Lấy chữ số tận cùng của kết quả vừa tính.
 
 ---
 
@@ -740,21 +750,21 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | II.3 | Số 1 315 có chia hết cho 9 không? | không |
 | II.4 | Tìm thương và số dư của 1 234 : 7 | 176 dư 2 |
 | II.5 | Có bao nhiêu số chẵn từ 10 đến 40? | 16 |
-| III.1 | Dãy 2, 7, 12, … Số 47 là số hạng thứ mấy? | 10 |
+| III.1 | Tổng của 5 số tự nhiên liên tiếp bằng 100. Số bé nhất là số nào? | 18 |
 | III.2 | Có bao nhiêu số từ 1 đến 100 vừa chia hết cho 2 vừa chia hết cho 5? | 10 |
-| III.3 | Tổng của 5 số tự nhiên liên tiếp bằng 100. Số bé nhất là số nào? | 18 |
-| III.4 | Tích 137 × 46 có chữ số tận cùng là chữ số nào? | 2 |
+| III.3 | Tích 137 × 46 có chữ số tận cùng là chữ số nào? | 2 |
+| III.4 | Một số nhân 3, cộng 7, chia 2 thì được 20. Tìm số ấy. | 11 |
 | III.5 | Tìm số có hai chữ số, tổng hai chữ số bằng 11, hiệu bằng 3. | 74 |
-| IV.1 | Tìm số bé nhất chia cho 5 dư 2 và chia cho 3 dư 1. | 7 |
-| IV.2 | Viết các số 1 đến 4, mỗi bước thay hai số bằng hiệu. Số cuối chẵn hay lẻ? | chẵn |
-| IV.3 | Viết thêm chữ số 2 vào bên trái số 345 thì số mới hơn số cũ bao nhiêu? | 2 000 |
-| IV.4 | Số 91 là số nguyên tố hay hợp số? | hợp số (91 = 7 × 13) |
-| IV.5 | Tính nhanh: 1 234 × 567 × (89 − 89) | 0 |
-| V.1 | Ghép 3 hình vuông cạnh 4 cm thành hàng. Chu vi hình chữ nhật là bao nhiêu? | 32 cm |
-| V.2 | Quyển sách 150 trang dùng hết bao nhiêu chữ số? | 342 |
-| V.3 | Số 27 gấp mấy lần tổng hai chữ số của nó? | 3 lần |
-| V.4 | Tích 137 × 46 có chữ số tận cùng là chữ số nào? | 2 |
-| V.5 | Tổng 123 + 234 + 345 chia cho 9 dư mấy? | dư 0 |
+| IV.1 | Số có hai chữ số, đổi chỗ hai chữ số được số nhỏ hơn 27 đơn vị, tổng hai chữ số bằng 11. Tìm số ấy. | 74 |
+| IV.2 | Tìm số bé nhất chia cho 5 dư 2 và chia cho 3 dư 1. | 7 |
+| IV.3 | Dãy 1, 4, 7, …, 100 có bao nhiêu số chẵn? | 17 |
+| IV.4 | Viết thêm chữ số 2 vào bên trái số 345 thì số mới hơn số cũ bao nhiêu? | 2 000 |
+| IV.5 | Số 91 là số nguyên tố hay hợp số? | hợp số (91 = 7 × 13) |
+| V.1 | Hình chữ nhật 8 cm × 6 cm, nối một đỉnh với trung điểm cạnh đối diện. Diện tích tam giác bằng bao nhiêu? | 12 cm² |
+| V.2 | Số 27 gấp mấy lần tổng hai chữ số của nó? | 3 lần |
+| V.3 | Tổng 123 + 234 + 345 chia cho 9 dư mấy? | dư 0 |
+| V.4 | Quyển sách 150 trang dùng hết bao nhiêu chữ số? | 342 |
+| V.5 | Tích 137 × 46 có chữ số tận cùng là chữ số nào? | 2 |
 
 ---
 

@@ -44,87 +44,103 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 > **KIẾN THỨC NỀN CỦA CHƯƠNG**
 > 1. Quy tắc nhân, quy tắc cộng trong phép đếm
-> 2. Quy tắc cộng, quy tắc nhân, nguyên lí bù trừ
-> 3. Đếm cặp, quy tắc nhân, ngăn kéo, trồng cây, chu kì 7
+> 2. Nguyên lí ngăn kéo, lập luận trường hợp xấu nhất
+> 3. Đếm có phần chung; sơ đồ Ven
 > 4. Logic mệnh đề sơ cấp, phương pháp loại trừ
 
 ---
 
 ## PHẦN I — THỬ THÁCH CÁ NHÂN — TĂNG TỐC · Mức M2 — Thông hiểu · 20 phút · 20 điểm
 
-### Bài 1. (4 điểm) Chia kẹo — chia hết và chia có dư
+### Bài 1. (4 điểm) Tính tổng dãy số cách đều
 
-Ghi rõ thương và số dư trong mọi câu trả lời.
+Tính tổng mỗi dãy.
 
-a) Có 26 cái kẹo chia đều cho 4 bạn. Mỗi bạn được mấy cái và còn thừa mấy cái?
-b) Muốn chia hết, phải bớt đi ít nhất bao nhiêu cái kẹo?
-c) Hoặc phải thêm vào ít nhất bao nhiêu cái kẹo?
-d) Nếu thêm 2 cái thì mỗi bạn được mấy cái?
-e) Nếu chỉ chia cho 3 bạn thì mỗi bạn được mấy cái, thừa mấy cái?
-f) Số kẹo phải là số như thế nào để chia hết cho 4 bạn?
+a) Tính tổng: 2 + 5 + 8 + … + 149
+b) Tính tổng: 4 + 5 + 6 + … + 53
+c) Tính tổng: 4 + 7 + 10 + … + 31
+d) Tính tổng: 9 + 11 + 13 + … + 27
 
-### Bài 2. (4 điểm) Hình tròn: tâm, bán kính, đường kính
+### Bài 2. (4 điểm) Bài toán nói thật – nói dối
 
-Vẽ hình tròn và ghi kí hiệu lên hình.
-
-a) Hình tròn có đường kính 22 cm. Bán kính dài bao nhiêu?
-b) Hình tròn A có bán kính 3 cm, hình tròn B có đường kính 14 cm. Hình nào lớn hơn?
-c) Hình tròn có bán kính 14 cm. Đường kính dài bao nhiêu?
-d) Hình tròn A có bán kính 16 cm, hình tròn B có đường kính 68 cm. Hình nào lớn hơn?
-e) Hình tròn có bán kính 34 cm. Đường kính dài bao nhiêu?
-f) Hình tròn có đường kính 60 cm. Bán kính dài bao nhiêu?
-
-### Bài 3. (4 điểm) Bài toán nói thật – nói dối
-
-Ba bạn Hùng, Sơn, Minh, trong đó đúng một bạn làm vỡ lọ hoa.
-- Hùng nói: “Tôi không làm.”
-- Sơn nói: “Minh làm.”
-- Minh nói: “Sơn nói dối.”
+Ba bạn Khánh, Trang, Bình, trong đó đúng một bạn làm vỡ lọ hoa.
+- Khánh nói: “Tôi không làm.”
+- Trang nói: “Bình làm.”
+- Bình nói: “Trang nói dối.”
 
 Biết rằng trong ba bạn chỉ có đúng **một** bạn nói thật.
 
-a) Câu nói của Sơn và câu nói của Minh có thể cùng đúng được không? Vì sao?
+a) Câu nói của Trang và câu nói của Bình có thể cùng đúng được không? Vì sao?
 b) Hai câu đó có thể cùng sai được không?
-c) Vậy trong hai bạn Sơn và Minh có đúng mấy bạn nói thật?
-d) Đề cho biết cả ba bạn chỉ có một bạn nói thật. Suy ra Hùng nói thật hay nói dối?
-e) Câu của Hùng là “Tôi không làm.” Câu đó sai thì điều gì đúng?
+c) Vậy trong hai bạn Trang và Bình có đúng mấy bạn nói thật?
+d) Đề cho biết cả ba bạn chỉ có một bạn nói thật. Suy ra Khánh nói thật hay nói dối?
+e) Câu của Khánh là “Tôi không làm.” Câu đó sai thì điều gì đúng?
 f) Ai là người làm vỡ lọ hoa?
 
-### Bài 4. (4 điểm) Trồng cây và chia đoạn — năm trường hợp
-
-Vẽ một hình nhỏ ba khoảng để kiểm tra trước khi áp công thức.
-
-a) Đoạn đường dài 50 m, trồng cây cách nhau 2 m, trồng cả ở hai đầu. Cần bao nhiêu cây?
-b) Đoạn đường dài 76 m, cây cách nhau 2 m, không trồng ở cả hai đầu. Cần bao nhiêu cây?
-c) Quanh một hồ nước có chu vi 24 m, trồng cây cách nhau 2 m. Cần bao nhiêu cây?
-d) Cưa một khúc gỗ dài 156 m thành các đoạn dài 6 m. Phải cưa bao nhiêu nhát?
-e) Đoạn đường dài 18 m, cây cách nhau 2 m, chỉ trồng ở một đầu. Cần bao nhiêu cây?
-f) Đoạn đường dài 66 m, cây cách nhau 3 m, không trồng ở cả hai đầu. Cần bao nhiêu cây?
-
-### Bài 5. (4 điểm) Giả thiết tạm với hai loại đối tượng
+### Bài 3. (4 điểm) Giả thiết tạm với hai loại đối tượng
 
 Dùng phương pháp giả thiết tạm.
 
-a) Trong sân có 32 chiếc xe ba bánh và xe ô tô, đếm được tất cả 124 bánh xe. Hỏi mỗi loại có bao nhiêu chiếc?
-b) Trong sân có 20 chiếc xe đạp và xe ba bánh, đếm được tất cả 52 bánh xe. Hỏi mỗi loại có bao nhiêu chiếc?
-c) Trong sân có 19 chiếc xe ba bánh và xe đạp, đếm được tất cả 46 bánh xe. Hỏi mỗi loại có bao nhiêu chiếc?
-d) Trong sân có 34 chiếc xe ô tô và xe ba bánh, đếm được tất cả 121 bánh xe. Hỏi mỗi loại có bao nhiêu chiếc?
+a) Trong sân có 42 chiếc xe đạp và xe ba bánh, đếm được tất cả 114 bánh xe. Hỏi mỗi loại có bao nhiêu chiếc?
+b) Trong sân có 19 chiếc xe ba bánh và xe đạp, đếm được tất cả 46 bánh xe. Hỏi mỗi loại có bao nhiêu chiếc?
+c) Trong sân có 34 chiếc xe ô tô và xe ba bánh, đếm được tất cả 121 bánh xe. Hỏi mỗi loại có bao nhiêu chiếc?
+d) Trong sân có 22 chiếc xe đạp và xe ô tô, đếm được tất cả 72 bánh xe. Hỏi mỗi loại có bao nhiêu chiếc?
+
+### Bài 4. (4 điểm) Chia kẹo — chia hết và chia có dư
+
+Ghi rõ thương và số dư trong mọi câu trả lời.
+
+a) Có 116 cái kẹo chia đều cho 10 bạn. Mỗi bạn được mấy cái và còn thừa mấy cái?
+b) Muốn chia hết, phải bớt đi ít nhất bao nhiêu cái kẹo?
+c) Hoặc phải thêm vào ít nhất bao nhiêu cái kẹo?
+d) Nếu thêm 4 cái thì mỗi bạn được mấy cái?
+e) Nếu chỉ chia cho 9 bạn thì mỗi bạn được mấy cái, thừa mấy cái?
+f) Số kẹo phải là số như thế nào để chia hết cho 10 bạn?
+
+### Bài 5. (4 điểm) Trồng cây và chia đoạn — năm trường hợp
+
+Vẽ một hình nhỏ ba khoảng để kiểm tra trước khi áp công thức.
+
+a) Đoạn đường dài 60 m, cây cách nhau 3 m, chỉ trồng ở một đầu. Cần bao nhiêu cây?
+b) Đoạn đường dài 80 m, trồng cây cách nhau 4 m, trồng cả ở hai đầu. Cần bao nhiêu cây?
+c) Cưa một khúc gỗ dài 186 m thành các đoạn dài 6 m. Phải cưa bao nhiêu nhát?
+d) Quanh một hồ nước có chu vi 90 m, trồng cây cách nhau 6 m. Cần bao nhiêu cây?
+e) Đoạn đường dài 85 m, cây cách nhau 5 m, không trồng ở cả hai đầu. Cần bao nhiêu cây?
 
 ---
 
 ## PHẦN II — THI ĐẤU CẶP ĐÔI · Mức M3 — Vận dụng · 20 phút · 20 điểm
 
-### Bài 1. (4 điểm) Đếm số cặp — bắt tay, trận đấu, đường thẳng
+### Bài 1. (4 điểm) Nguyên lý bù trừ với hai tập hợp
 
-Ba tình huống, cùng một cách đếm.
+Vẽ hai vòng tròn giao nhau và điền số vào từng miền.
 
-a) Có 18 người, mỗi người bắt tay với tất cả những người còn lại đúng một lần. Hỏi có tất cả bao nhiêu cái bắt tay?
-b) Một giải đấu có 7 đội, hai đội bất kì đấu với nhau đúng một trận. Hỏi có tất cả bao nhiêu trận?
-c) Cho 4 điểm, không có ba điểm nào thẳng hàng. Qua hai điểm bất kì kẻ một đường thẳng. Hỏi kẻ được bao nhiêu đường thẳng?
-d) Một giải đấu có 14 đội, hai đội bất kì đấu với nhau đúng một trận. Hỏi có tất cả bao nhiêu trận?
-e) Cho 17 điểm, không có ba điểm nào thẳng hàng. Qua hai điểm bất kì kẻ một đường thẳng. Hỏi kẻ được bao nhiêu đường thẳng?
+a) Lớp có 56 học sinh. Có 31 bạn thích môn Toán, 31 bạn thích môn Tiếng Việt, 12 bạn thích cả hai môn. Hỏi bao nhiêu bạn thích ít nhất một trong hai môn?
+b) Bao nhiêu bạn chỉ thích môn Toán?
+c) Bao nhiêu bạn chỉ thích môn Tiếng Việt?
+d) Bao nhiêu bạn không thích môn nào trong hai môn đó?
+e) Nếu cộng thẳng số bạn thích Toán với số bạn thích Tiếng Việt thì được bao nhiêu?
+f) Con số vừa cộng lớn hơn số bạn thích ít nhất một môn bao nhiêu? Vì sao?
 
-### Bài 2. (4 điểm) Bài toán cân đĩa tìm vật khác biệt
+### Bài 2. (4 điểm) Nguyên lí Đi-rích-lê (nguyên lí ngăn kéo)
+
+Xét trường hợp xấu nhất.
+
+a) Trong một hộp có bi thuộc 2 màu (đỏ, xanh), mỗi màu có rất nhiều viên. Hỏi phải lấy ra ít nhất bao nhiêu viên (không nhìn) để chắc chắn có 4 viên cùng màu?
+b) Trong một hộp có bi thuộc 2 màu (đỏ, xanh), mỗi màu có rất nhiều viên. Hỏi phải lấy ra ít nhất bao nhiêu viên (không nhìn) để chắc chắn có 4 viên cùng màu?
+c) Trong một hộp có bi thuộc 6 màu (đỏ, xanh, vàng, trắng, tím, nâu), mỗi màu có rất nhiều viên. Hỏi phải lấy ra ít nhất bao nhiêu viên (không nhìn) để chắc chắn có 4 viên cùng màu?
+d) Trong một hộp có bi thuộc 6 màu (đỏ, xanh, vàng, trắng, tím, nâu), mỗi màu có rất nhiều viên. Hỏi phải lấy ra ít nhất bao nhiêu viên (không nhìn) để chắc chắn có 2 viên cùng màu?
+
+### Bài 3. (4 điểm) Tìm số bằng cách thử và loại
+
+Với mỗi câu, viết ra danh sách đã thử rồi mới ghi đáp số. Đáp số có thể gồm nhiều số.
+
+a) Tìm mọi số có hai chữ số vừa chia hết cho 6, vừa có tổng hai chữ số bằng 12.
+b) Tìm mọi số có hai chữ số vừa chia hết cho 4, vừa có tổng hai chữ số bằng 14.
+c) Tìm mọi số có hai chữ số vừa chia hết cho 4, vừa có tổng hai chữ số bằng 10.
+d) Tìm mọi số có hai chữ số vừa chia hết cho 5, vừa có tổng hai chữ số bằng 11.
+
+### Bài 4. (4 điểm) Bài toán cân đĩa tìm vật khác biệt
 
 Chú ý mỗi lần cân cho bao nhiêu kết quả.
 
@@ -135,126 +151,80 @@ d) Sau lần cân thứ nhất, số đồng tiền còn phải xét nhiều nh�
 e) Nếu có 3 đồng tiền thì cần cân mấy lần?
 f) Nếu có 9 đồng tiền thì cần cân mấy lần?
 
-### Bài 3. (4 điểm) Nguyên lí Đi-rích-lê (nguyên lí ngăn kéo)
+### Bài 5. (4 điểm) Đếm số cặp — bắt tay, trận đấu, đường thẳng
 
-Xét trường hợp xấu nhất.
+Ba tình huống, cùng một cách đếm.
 
-a) Trong một hộp có bi thuộc 2 màu (đỏ, xanh), mỗi màu có rất nhiều viên. Hỏi phải lấy ra ít nhất bao nhiêu viên (không nhìn) để chắc chắn có 3 viên cùng màu?
-b) Trong một hộp có bi thuộc 4 màu (đỏ, xanh, vàng, trắng), mỗi màu có rất nhiều viên. Hỏi phải lấy ra ít nhất bao nhiêu viên (không nhìn) để chắc chắn có 3 viên cùng màu?
-c) Trong một hộp có bi thuộc 4 màu (đỏ, xanh, vàng, trắng), mỗi màu có rất nhiều viên. Hỏi phải lấy ra ít nhất bao nhiêu viên (không nhìn) để chắc chắn có 3 viên cùng màu?
-d) Trong một hộp có bi thuộc 5 màu (đỏ, xanh, vàng, trắng, tím), mỗi màu có rất nhiều viên. Hỏi phải lấy ra ít nhất bao nhiêu viên (không nhìn) để chắc chắn có 2 viên cùng màu?
-e) Trong một hộp có bi thuộc 6 màu (đỏ, xanh, vàng, trắng, tím, nâu), mỗi màu có rất nhiều viên. Hỏi phải lấy ra ít nhất bao nhiêu viên (không nhìn) để chắc chắn có 5 viên cùng màu?
-
-### Bài 4. (4 điểm) Lập số có ba chữ số khác nhau
-
-Cho ba chữ số **0, 1, 5**. Lập các số có ba chữ số khác nhau từ ba chữ số này.
-
-a) Viết tất cả các số lập được (theo thứ tự từ bé đến lớn).
-b) Lập được tất cả bao nhiêu số?
-c) Số lớn nhất lập được là số nào?
-d) Số bé nhất lập được là số nào?
-e) Trong các số đó có bao nhiêu số chẵn?
-f) Có bao nhiêu số chia hết cho 5?
-g) Tổng của số lớn nhất và số bé nhất bằng bao nhiêu?
-
-### Bài 5. (4 điểm) Nguyên lý bù trừ với hai tập hợp
-
-Vẽ hai vòng tròn giao nhau và điền số vào từng miền.
-
-a) Lớp có 59 học sinh. Có 37 bạn thích môn Toán, 26 bạn thích môn Tiếng Việt, 12 bạn thích cả hai môn. Hỏi bao nhiêu bạn thích ít nhất một trong hai môn?
-b) Bao nhiêu bạn chỉ thích môn Toán?
-c) Bao nhiêu bạn chỉ thích môn Tiếng Việt?
-d) Bao nhiêu bạn không thích môn nào trong hai môn đó?
-e) Nếu cộng thẳng số bạn thích Toán với số bạn thích Tiếng Việt thì được bao nhiêu?
-f) Con số vừa cộng lớn hơn số bạn thích ít nhất một môn bao nhiêu? Vì sao?
+a) Có 15 người, mỗi người bắt tay với tất cả những người còn lại đúng một lần. Hỏi có tất cả bao nhiêu cái bắt tay?
+b) Cho 6 điểm, không có ba điểm nào thẳng hàng. Qua hai điểm bất kì kẻ một đường thẳng. Hỏi kẻ được bao nhiêu đường thẳng?
+c) Một giải đấu có 11 đội, hai đội bất kì đấu với nhau đúng một trận. Hỏi có tất cả bao nhiêu trận?
+d) Cho 10 điểm, không có ba điểm nào thẳng hàng. Qua hai điểm bất kì kẻ một đường thẳng. Hỏi kẻ được bao nhiêu đường thẳng?
+e) Có 12 người, mỗi người bắt tay với tất cả những người còn lại đúng một lần. Hỏi có tất cả bao nhiêu cái bắt tay?
+f) Một giải đấu có 6 đội, hai đội bất kì đấu với nhau đúng một trận. Hỏi có tất cả bao nhiêu trận?
 
 ---
 
 ## PHẦN III — ÔN THEO MA TRẬN ĐỀ · Mức M3 — Vận dụng · 20 phút · 25 điểm
 
-### Bài 1. (5 điểm) Số chia hết cho nhiều số cùng lúc
+### Bài 1. (5 điểm) Chữ số tận cùng của tổng, hiệu, tích
 
-Trả lời gọn, có thể dùng dãy cách đều.
+Không tính hết phép tính, chỉ tìm chữ số tận cùng.
 
-a) Có bao nhiêu số từ 300 đến 1 200 vừa chia hết cho 5 vừa chia hết cho 9? Số bé nhất trong đó là số nào?
-b) Có bao nhiêu số từ 46 đến 242 vừa chia hết cho 2 vừa chia hết cho 9? Số bé nhất trong đó là số nào?
-c) Có bao nhiêu số từ 248 đến 511 vừa chia hết cho 2 vừa chia hết cho 3? Số bé nhất trong đó là số nào?
-d) Có bao nhiêu số từ 227 đến 971 vừa chia hết cho 5 vừa chia hết cho 9? Số bé nhất trong đó là số nào?
-e) Có bao nhiêu số từ 210 đến 946 vừa chia hết cho 3 vừa chia hết cho 5? Số bé nhất trong đó là số nào?
-f) Có bao nhiêu số từ 213 đến 667 vừa chia hết cho 2 vừa chia hết cho 5? Số bé nhất trong đó là số nào?
+a) Hiệu 2 151 − 627 có chữ số tận cùng là chữ số nào?
+b) Tổng 8 201 + 3 435 có chữ số tận cùng là chữ số nào?
+c) Tích 8 036 × 8 450 có chữ số tận cùng là chữ số nào?
+d) Hiệu 1 169 − 1 084 có chữ số tận cùng là chữ số nào?
+e) Tổng 205 + 695 có chữ số tận cùng là chữ số nào?
+f) Tích 8 883 × 9 910 có chữ số tận cùng là chữ số nào?
 
-### Bài 2. (5 điểm) Cấu tạo số có hai chữ số
+### Bài 2. (5 điểm) Bài toán về tuổi
 
-Trình bày lời giải ngắn gọn cho từng ý.
+Chú ý điều gì thay đổi và điều gì không đổi theo thời gian.
 
-a) Chữ số hàng chục của số 89 gấp mấy lần chữ số hàng đơn vị (nếu chia hết), hoặc hơn bao nhiêu đơn vị?
-b) Số có hai chữ số 38; đổi chỗ hai chữ số ta được số nào? Hiệu của hai số đó bằng bao nhiêu?
-c) Tìm số có hai chữ số, biết tổng hai chữ số bằng 12 và chữ số hàng đơn vị hơn chữ số hàng chục 2 đơn vị.
-d) Số có hai chữ số 40; đổi chỗ hai chữ số ta được số nào? Hiệu của hai số đó bằng bao nhiêu?
+a) Tuổi bố gấp 4 lần tuổi con. Tổng số tuổi của hai bố con là 65 tuổi. Tính tuổi mỗi người.
+b) Hiện nay bố 28 tuổi, con 7 tuổi. Sau 6 năm nữa, tổng số tuổi hai bố con là bao nhiêu?
+c) Tuổi bố gấp 3 lần tuổi con. Tổng số tuổi của hai bố con là 28 tuổi. Tính tuổi mỗi người.
+d) Hiện nay bố 32 tuổi, con 8 tuổi. Sau 7 năm nữa, tổng số tuổi hai bố con là bao nhiêu?
+e) Hiện nay bố 60 tuổi, con 12 tuổi. Sau 7 năm nữa, tổng số tuổi hai bố con là bao nhiêu?
+f) Hiện nay bố 40 tuổi, con 10 tuổi. Sau 3 năm nữa, tổng số tuổi hai bố con là bao nhiêu?
 
-### Bài 3. (5 điểm) Tìm x qua ba bước, có dấu ngoặc
+### Bài 3. (5 điểm) Đếm số lần xuất hiện của một chữ số
 
-Tìm x, trình bày đủ các bước.
+Đếm số lần xuất hiện, tính cả khi chữ số đó xuất hiện nhiều lần trong một số.
 
-a) (x + 43) × 9 − 7 = 866
-b) (x × 4 − 36) × 5 = 1 540
-c) (x + 9) × 3 − 2 = 238
-d) (x × 6 − 33) × 3 = 1 251
+a) Từ 1 đến 200, chữ số 9 xuất hiện bao nhiêu lần?
+b) Từ 1 đến 500, chữ số 0 xuất hiện bao nhiêu lần?
+c) Từ 1 đến 200, chữ số 1 xuất hiện bao nhiêu lần?
+d) Từ 1 đến 300, chữ số 0 xuất hiện bao nhiêu lần?
+e) Từ 1 đến 300, chữ số 3 xuất hiện bao nhiêu lần?
 
-### Bài 4. (5 điểm) Phủ hình và chia hình thành phần bằng nhau
+### Bài 4. (5 điểm) Tìm phân số của một số
 
-Vẽ hình và kẻ lưới ra nháp.
+Trình bày lời giải có câu trả lời.
 
-a) Một hình chữ nhật 6 cm × 4 cm được phủ kín bằng các hình vuông cạnh 1 cm. Cần bao nhiêu hình vuông?
-b) Diện tích hình chữ nhật ấy bằng bao nhiêu?
-c) Diện tích mỗi hình vuông nhỏ bằng bao nhiêu?
-d) Chia hình chữ nhật ấy thành 2 phần bằng nhau thì mỗi phần có diện tích bao nhiêu?
-e) Chia thành 4 phần bằng nhau thì mỗi phần bao nhiêu?
-f) Nếu ghép hai hình chữ nhật ấy theo chiều dài thì hình mới có chu vi bao nhiêu?
+a) Đội Một trồng được 87 cây. Số cây của nhóm Sao Mai bằng 1 phần 3 số cây của đội Một. Hỏi nhóm Sao Mai trồng được bao nhiêu cây?
+b) Đội Hai trồng được 38 cây. Số cây của tổ Một bằng 1 phần 2 số cây của đội Hai. Hỏi tổ Một trồng được bao nhiêu cây?
+c) Nhóm Hoa Phượng trồng được 42 cây. Số cây của tổ Ba bằng 1 phần 2 số cây của nhóm Hoa Phượng. Hỏi tổ Ba trồng được bao nhiêu cây?
+d) Đội Hai trồng được 60 cây. Số cây của tổ Một bằng 1 phần 3 số cây của đội Hai. Hỏi tổ Một trồng được bao nhiêu cây?
 
-### Bài 5. (5 điểm) Dãy số cho bởi quy tắc truy hồi
+### Bài 5. (5 điểm) Tính nhanh tổng dãy số cách đều
 
-Dãy số được lập theo ba quy tắc sau.
+Tính tổng mỗi dãy.
 
-- Số hạng đầu bằng 1.
-- Số hạng ở **vị trí chẵn** bằng số hạng liền trước nhân 2 rồi cộng 4.
-- Số hạng ở **vị trí lẻ** bằng số hạng liền trước cộng 4 nhân với số thứ tự của số hạng liền trước.
-
-a) Viết ba số hạng đầu tiên của dãy.
-b) Số hạng thứ 5 của dãy là số nào?
-c) Số hạng thứ 7 của dãy là số nào?
-d) Số hạng thứ 9 của dãy là số nào?
-e) Từ số hạng thứ 4 đến số hạng thứ 6, dãy tăng thêm bao nhiêu đơn vị?
+a) 3 + 6 + 9 + … + 60
+b) 2 + 3 + 4 + … + 11
+c) 2 + 4 + 6 + … + 50
+d) 5 + 10 + 15 + … + 500
+e) 1 + 4 + 7 + … + 148
+f) 1 + 2 + 3 + … + 50
 
 ---
 
 ## PHẦN IV — BÀI PHÂN HOÁ · Mức M4 — Vận dụng cao · 20 phút · 25 điểm
 
-### Bài 1. (5 điểm) Cân đĩa và số lần cân ít nhất
+### Bài 1. (5 điểm) Đếm số lập được thoả nhiều điều kiện
 
-Xét trường hợp xấu nhất, không xét trường hợp may mắn.
-
-a) Có 27 gói kẹo giống hệt nhau, trong đó đúng một gói nhẹ hơn. Dùng cân đĩa không có quả cân, cần cân ít nhất mấy lần để tìm ra gói nhẹ?
-b) Một lần cân bằng cân đĩa cho mấy kết quả khác nhau?
-c) Vì thế mỗi lần cân nên chia số gói thành mấy phần?
-d) Sau lần cân thứ nhất, số gói còn phải xét nhiều nhất là bao nhiêu?
-e) Biết Minh nặng hơn Đức, Đức nặng hơn Dũng. Ai nhẹ nhất?
-f) Với ba bạn ấy, cần cân ít nhất mấy lần để xếp thứ tự từ nhẹ đến nặng?
-
-### Bài 2. (5 điểm) Bài toán bất biến — tính chẵn lẻ của tổng
-
-Tìm đại lượng không đổi qua mỗi bước.
-
-a) Trên bảng viết các số từ 1 đến 28. Mỗi bước, xoá hai số bất kì và viết thay vào **hiệu** của chúng (số lớn trừ số bé). Sau nhiều bước chỉ còn một số. Số cuối cùng là số chẵn hay số lẻ?
-b) Tổng các số từ 1 đến 28 bằng bao nhiêu?
-c) Khi thay hai số a và b bằng hiệu của chúng, tổng trên bảng thay đổi bao nhiêu?
-d) Vì tổng giảm đi một số chẵn nên tính chẵn lẻ của tổng có thay đổi không?
-e) Vậy đại lượng bất biến ở đây là gì?
-f) Số cuối cùng có thể bằng 0 không?
-
-### Bài 3. (5 điểm) Đếm số lập được thoả nhiều điều kiện
-
-Cho bốn chữ số **0, 2, 4, 5**. Xét các số có ba chữ số **khác nhau** lập từ bốn chữ số đó.
+Cho bốn chữ số **0, 2, 3, 9**. Xét các số có ba chữ số **khác nhau** lập từ bốn chữ số đó.
 
 a) Lập được tất cả bao nhiêu số?
 b) Trong đó có bao nhiêu số chẵn?
@@ -263,25 +233,47 @@ d) Có bao nhiêu số chia hết cho 3?
 e) Số lớn nhất và số bé nhất lập được là những số nào?
 f) Tổng của số lớn nhất và số bé nhất bằng bao nhiêu?
 
-### Bài 4. (5 điểm) Bài toán trồng cây — bốn trường hợp
+### Bài 2. (5 điểm) Đặt chữ thay chữ số rồi lập luận
 
-Tính số cây cần trồng trong mỗi trường hợp.
+Câu nào cũng phải viết cấu tạo số ra trước khi tính.
 
-a) Trồng cây trên đoạn đường dài 236 m, hai cây liền nhau cách nhau 4 m, không trồng ở cả hai đầu. Cần bao nhiêu cây?
-b) Trồng cây quanh một cái ao hình tròn có chu vi 54 m, hai cây liền nhau cách nhau 2 m. Cần bao nhiêu cây?
-c) Trồng cây suốt một đoạn đường dài 360 m, hai cây liền nhau cách nhau 6 m, trồng cả ở hai đầu đường. Cần bao nhiêu cây?
-d) Trồng cây trên đoạn đường dài 84 m, hai cây liền nhau cách nhau 4 m, chỉ trồng ở một đầu đường. Cần bao nhiêu cây?
+a) Tìm mọi số có hai chữ số mà số đó bằng 2 lần tổng hai chữ số của nó.
+b) Số có hai chữ số ab. Khi đổi chỗ hai chữ số thì được số mới nhỏ hơn số cũ 9 đơn vị, và tổng hai chữ số bằng 9. Tìm số ab.
+c) Số có hai chữ số ab. Khi đổi chỗ hai chữ số thì được số mới nhỏ hơn số cũ 9 đơn vị, và tổng hai chữ số bằng 11. Tìm số ab.
+d) Tìm mọi số có hai chữ số mà số đó bằng 8 lần tổng hai chữ số của nó.
+e) Số có hai chữ số ab. Khi đổi chỗ hai chữ số thì được số mới nhỏ hơn số cũ 18 đơn vị, và tổng hai chữ số bằng 12. Tìm số ab.
 
-### Bài 5. (5 điểm) Rút gọn, so sánh và sắp thứ tự phân số
+### Bài 3. (5 điểm) Bài toán bất biến — tính chẵn lẻ của tổng
 
-Rút gọn trước rồi mới so sánh.
+Tìm đại lượng không đổi qua mỗi bước.
 
-a) Rút gọn các phân số sau về dạng tối giản: 3 phần 4 · 1 phần 6 · 2 phần 3 · 11 phần 12 · 1 phần 4
-b) Sắp xếp các phân số ấy từ bé đến lớn.
-c) Phân số nào lớn nhất?
-d) Phân số nào bé nhất?
-e) Phân số lớn nhất hơn phân số bé nhất bao nhiêu?
-f) Có phân số nào lớn hơn 1 không?
+a) Trên bảng viết các số từ 1 đến 36. Mỗi bước, xoá hai số bất kì và viết thay vào **hiệu** của chúng (số lớn trừ số bé). Sau nhiều bước chỉ còn một số. Số cuối cùng là số chẵn hay số lẻ?
+b) Tổng các số từ 1 đến 36 bằng bao nhiêu?
+c) Khi thay hai số a và b bằng hiệu của chúng, tổng trên bảng thay đổi bao nhiêu?
+d) Vì tổng giảm đi một số chẵn nên tính chẵn lẻ của tổng có thay đổi không?
+e) Vậy đại lượng bất biến ở đây là gì?
+f) Số cuối cùng có thể bằng 0 không?
+
+### Bài 4. (5 điểm) Ghép người với môn bằng bảng đúng – sai
+
+Bắt buộc kẻ bảng ra giấy. Không được suy luận nhẩm ở bài này.
+
+a) Ba bạn Yến, Ngọc và Nam mỗi bạn học một môn năng khiếu khác nhau trong ba môn: tiếng Anh, tin học và mĩ thuật. Biết rằng: Yến không học tiếng Anh và cũng không học mĩ thuật; Ngọc không học mĩ thuật. Hỏi mỗi bạn học môn nào?
+b) Ba bạn Quân, Yến và Trang mỗi bạn học một môn năng khiếu khác nhau trong ba môn: hát, múa và đàn. Biết rằng: Quân không học múa và cũng không học hát; Yến không học hát. Hỏi mỗi bạn học môn nào?
+c) Ba bạn Phúc, Trang và Khánh mỗi bạn học một môn năng khiếu khác nhau trong ba môn: hát, múa và đàn. Biết rằng: Phúc không học hát và cũng không học đàn; Trang không học đàn. Hỏi mỗi bạn học môn nào?
+d) Ba bạn Nam, Dũng và Minh mỗi bạn học một môn năng khiếu khác nhau trong ba môn: hát, múa và đàn. Biết rằng: Nam không học đàn và cũng không học hát; Dũng không học hát. Hỏi mỗi bạn học môn nào?
+e) Ba bạn Sơn, Hà và Minh mỗi bạn học một môn năng khiếu khác nhau trong ba môn: hát, múa và đàn. Biết rằng: Sơn không học múa và cũng không học đàn; Hà không học đàn. Hỏi mỗi bạn học môn nào?
+
+### Bài 5. (5 điểm) Cân đĩa và số lần cân ít nhất
+
+Xét trường hợp xấu nhất, không xét trường hợp may mắn.
+
+a) Có 8 gói kẹo giống hệt nhau, trong đó đúng một gói nhẹ hơn. Dùng cân đĩa không có quả cân, cần cân ít nhất mấy lần để tìm ra gói nhẹ?
+b) Một lần cân bằng cân đĩa cho mấy kết quả khác nhau?
+c) Vì thế mỗi lần cân nên chia số gói thành mấy phần?
+d) Sau lần cân thứ nhất, số gói còn phải xét nhiều nhất là bao nhiêu?
+e) Biết Bình nặng hơn Sơn, Sơn nặng hơn Hà. Ai nhẹ nhất?
+f) Với ba bạn ấy, cần cân ít nhất mấy lần để xếp thứ tự từ nhẹ đến nặng?
 
 ---
 
@@ -289,7 +281,7 @@ f) Có phân số nào lớn hơn 1 không?
 
 ### Bài 1. (2 điểm) Phản biện đề số 1
 
-**Đề:** Tìm cho ra thứ **không đổi** qua mỗi bước. Trên bảng viết các số từ 1 đến 10. Tổng của chúng bằng bao nhiêu?
+**Đề:** Chú ý mỗi lần cân cho bao nhiêu kết quả. Có 8 đồng tiền giống hệt nhau, trong đó có đúng một đồng nhẹ hơn. Dùng cân đĩa (không quả cân), cần cân ít nhất mấy lần để tìm ra đồng nhẹ?
 
 Hai bạn thi đấu: một bạn trình bày lời giải, bạn kia phản biện bằng bảng phân tích sáu cột.
 
@@ -302,7 +294,7 @@ f) Cột 6 — Kết quả?
 
 ### Bài 2. (2 điểm) Phản biện đề số 2
 
-**Đề:** Dùng phương pháp giả thiết tạm. Trong sân có 23 chiếc xe ba bánh và xe ô tô, đếm được tất cả 74 bánh xe. Hỏi mỗi loại có bao nhiêu chiếc?
+**Đề:** Ba tình huống, cùng một cách đếm. Cho 4 điểm, không có ba điểm nào thẳng hàng. Qua hai điểm bất kì kẻ một đường thẳng. Hỏi kẻ được bao nhiêu đường thẳng?
 
 Hai bạn thi đấu: một bạn trình bày lời giải, bạn kia phản biện bằng bảng phân tích sáu cột.
 
@@ -315,12 +307,7 @@ f) Cột 6 — Kết quả?
 
 ### Bài 3. (2 điểm) Phản biện đề số 3
 
-**Đề:** Ba bạn Sơn, Quân, Hùng, trong đó đúng một bạn làm vỡ lọ hoa.
-- Sơn nói: “Tôi không làm.”
-- Quân nói: “Hùng làm.”
-- Hùng nói: “Quân nói dối.”
-
-Biết rằng trong ba bạn chỉ có đúng **một** bạn nói thật. Câu nói của Quân và câu nói của Hùng có thể cùng đúng được không? Vì sao?
+**Đề:** Dùng phương pháp giả thiết tạm. Trong sân có 12 chiếc xe ô tô và xe đạp, đếm được tất cả 42 bánh xe. Hỏi mỗi loại có bao nhiêu chiếc?
 
 Hai bạn thi đấu: một bạn trình bày lời giải, bạn kia phản biện bằng bảng phân tích sáu cột.
 
@@ -333,7 +320,7 @@ f) Cột 6 — Kết quả?
 
 ### Bài 4. (2 điểm) Phản biện đề số 4
 
-**Đề:** Cho bốn chữ số **0, 1, 5, 6**. Xét các số có ba chữ số **khác nhau** lập từ bốn chữ số đó. Lập được tất cả bao nhiêu số?
+**Đề:** Xét trường hợp xấu nhất. Trong một hộp có bi thuộc 2 màu (đỏ, xanh), mỗi màu có rất nhiều viên. Hỏi phải lấy ra ít nhất bao nhiêu viên (không nhìn) để chắc chắn có 3 viên cùng màu?
 
 Hai bạn thi đấu: một bạn trình bày lời giải, bạn kia phản biện bằng bảng phân tích sáu cột.
 
@@ -346,7 +333,7 @@ f) Cột 6 — Kết quả?
 
 ### Bài 5. (2 điểm) Phản biện đề số 5
 
-**Đề:** Tìm đại lượng không đổi qua mỗi bước. Trên bảng viết các số từ 1 đến 38. Mỗi bước, xoá hai số bất kì và viết thay vào **hiệu** của chúng (số lớn trừ số bé). Sau nhiều bước chỉ còn một số. Số cuối cùng là số chẵn hay số lẻ?
+**Đề:** Mỗi ý làm trong 60 giây. Ghi thẳng đáp số, không cần trình bày. Có 11 bạn, mỗi bạn bắt tay với tất cả các bạn còn lại đúng một lần. Có bao nhiêu cái bắt tay?
 
 Hai bạn thi đấu: một bạn trình bày lời giải, bạn kia phản biện bằng bảng phân tích sáu cột.
 
@@ -364,163 +351,163 @@ f) Cột 6 — Kết quả?
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài I.1
-**Đáp số:** a) mỗi bạn 6 cái, thừa 2 cái · b) 2 cái · c) 2 cái · d) 7 cái · e) mỗi bạn 8 cái, thừa 2 cái · f) phải là số chia hết cho 4
-**Hướng giải:** Trong phép chia có dư, **số dư luôn bé hơn số chia**. Muốn chia hết thì hoặc bớt đi đúng phần dư, hoặc thêm vào phần còn thiếu để đủ một suất — phần còn thiếu bằng số chia trừ số dư.
-**Nhãn tư duy:** TD1, TD2. Điểm chốt: Thêm vào thì thêm **số chia trừ số dư**, không phải thêm số dư.
-**Lỗi thường gặp:** Nhầm “thêm bao nhiêu” với “bớt bao nhiêu”, cả hai đều lấy số dư. Phòng: Vẽ một hàng ô: phần dư còn thiếu bao nhiêu ô nữa thì đầy một suất?
+**Đáp số:** a) 3 775 · b) 1 425 · c) 175 · d) 180
+**Hướng giải:** Đếm số số hạng trước. Sau đó ghép số đầu với số cuối, số thứ hai với số áp chót…, mỗi cặp có tổng bằng nhau. Tổng = (đầu + cuối) × số số hạng : 2.
+**Nhãn tư duy:** TD4, TD5. Điểm chốt: Chia cho 2 ở cuối vì mỗi số hạng đã được **đếm hai lần** khi ghép cặp.
+**Lỗi thường gặp:** Quên chia 2, kết quả gấp đôi đáp số đúng. Phòng: Kiểm tra bằng dãy ngắn: 1 + 2 + 3 = 6, công thức phải cho đúng 6.
 
 ### Bài I.2
-**Đáp số:** a) 11 cm · b) B · c) 28 cm · d) B · e) 68 cm · f) 30 cm
-**Hướng giải:** Mọi bán kính của một hình tròn đều bằng nhau. Đường kính đi qua tâm và bằng **hai lần** bán kính. Muốn so sánh hai hình tròn thì đưa về cùng một đại lượng: cùng bán kính hoặc cùng đường kính.
-**Nhãn tư duy:** TD1, TD2. Điểm chốt: So sánh phải **cùng loại đại lượng** — bán kính với bán kính.
-**Lỗi thường gặp:** So bán kính của hình này với đường kính của hình kia. Phòng: Đổi hết về bán kính trước khi so sánh.
-
-### Bài I.3
-**Đáp số:** a) không, vì hai câu phủ định nhau · b) không, vì chúng phủ định nhau · c) đúng một bạn · d) nói dối · e) Hùng chính là người làm vỡ lọ hoa · f) Hùng
+**Đáp số:** a) không, vì hai câu phủ định nhau · b) không, vì chúng phủ định nhau · c) đúng một bạn · d) nói dối · e) Khánh chính là người làm vỡ lọ hoa · f) Khánh
 **Hướng giải:** Tìm hai câu nói **phủ định nhau**: trong hai câu đó chắc chắn có đúng một câu đúng. Vì cả ba chỉ có một câu đúng, câu đúng ấy nằm trong cặp phủ định, nên câu còn lại (của người thứ ba) là sai. Đọc nội dung câu sai đó để kết luận.
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Cặp câu **phủ định nhau** luôn có đúng một câu đúng — đó là điểm tựa.
 **Lỗi thường gặp:** Thử từng người một cách rời rạc mà không dùng ràng buộc tổng số câu nói thật. Phòng: Đánh số các câu nói, ghi rõ câu nào phủ định câu nào.
 
-### Bài I.4
-**Đáp số:** a) 26 · b) 37 · c) 12 · d) 25 · e) 9 · f) 21
-**Hướng giải:** Tính **số khoảng** trước: độ dài chia khoảng cách. Rồi chọn công thức theo trường hợp — trồng cả hai đầu thì cộng 1, một đầu thì bằng, không đầu nào thì trừ 1, khép kín thì bằng, cưa thành đoạn thì trừ 1.
-**Nhãn tư duy:** TD3, TD6. Điểm chốt: Năm trường hợp cho **năm đáp số khác nhau** với cùng một số khoảng.
-**Lỗi thường gặp:** Máy móc cộng 1 cho mọi trường hợp. Phòng: Vẽ hình ba khoảng, đếm tay rồi mới áp dụng cho số lớn.
-
-### Bài I.5
-**Đáp số:** a) xe ba bánh: 4 chiếc, xe ô tô: 28 chiếc · b) xe đạp: 8 chiếc, xe ba bánh: 12 chiếc · c) xe ba bánh: 8 chiếc, xe đạp: 11 chiếc · d) xe ô tô: 19 chiếc, xe ba bánh: 15 chiếc
+### Bài I.3
+**Đáp số:** a) xe đạp: 12 chiếc, xe ba bánh: 30 chiếc · b) xe ba bánh: 8 chiếc, xe đạp: 11 chiếc · c) xe ô tô: 19 chiếc, xe ba bánh: 15 chiếc · d) xe đạp: 8 chiếc, xe ô tô: 14 chiếc
 **Hướng giải:** Giả sử tất cả đều là loại có ít bánh hơn, tính tổng số bánh giả định. Số bánh còn thiếu so với thực tế chia cho hiệu số bánh của hai loại cho biết số xe loại nhiều bánh hơn.
 **Nhãn tư duy:** TD6, TD3. Điểm chốt: Chia cho **hiệu** số bánh của hai loại, không chia cho số bánh của một loại.
 **Lỗi thường gặp:** Chia số bánh thiếu cho số bánh của loại nhiều hơn. Phòng: Thử lại: nhân ngược ra tổng số bánh, phải khớp với đề.
 
+### Bài I.4
+**Đáp số:** a) mỗi bạn 11 cái, thừa 6 cái · b) 6 cái · c) 4 cái · d) 12 cái · e) mỗi bạn 12 cái, thừa 8 cái · f) phải là số chia hết cho 10
+**Hướng giải:** Trong phép chia có dư, **số dư luôn bé hơn số chia**. Muốn chia hết thì hoặc bớt đi đúng phần dư, hoặc thêm vào phần còn thiếu để đủ một suất — phần còn thiếu bằng số chia trừ số dư.
+**Nhãn tư duy:** TD1, TD2. Điểm chốt: Thêm vào thì thêm **số chia trừ số dư**, không phải thêm số dư.
+**Lỗi thường gặp:** Nhầm “thêm bao nhiêu” với “bớt bao nhiêu”, cả hai đều lấy số dư. Phòng: Vẽ một hàng ô: phần dư còn thiếu bao nhiêu ô nữa thì đầy một suất?
+
+### Bài I.5
+**Đáp số:** a) 20 · b) 21 · c) 30 · d) 15 · e) 16
+**Hướng giải:** Tính **số khoảng** trước: độ dài chia khoảng cách. Rồi chọn công thức theo trường hợp — trồng cả hai đầu thì cộng 1, một đầu thì bằng, không đầu nào thì trừ 1, khép kín thì bằng, cưa thành đoạn thì trừ 1.
+**Nhãn tư duy:** TD3, TD6. Điểm chốt: Năm trường hợp cho **năm đáp số khác nhau** với cùng một số khoảng.
+**Lỗi thường gặp:** Máy móc cộng 1 cho mọi trường hợp. Phòng: Vẽ hình ba khoảng, đếm tay rồi mới áp dụng cho số lớn.
+
 ### Bài II.1
-**Đáp số:** a) 153 cái · b) 21 trận · c) 6 đường thẳng · d) 91 trận · e) 136 đường thẳng
-**Hướng giải:** Mỗi người bắt tay với n − 1 người còn lại, nên tổng số lượt bắt tay là n × (n − 1). Nhưng mỗi cái bắt tay được đếm **hai lần** (một lần từ mỗi phía), nên số bắt tay thật sự là n × (n − 1) : 2.
-**Nhãn tư duy:** TD4, TD6. Điểm chốt: Chia cho 2 vì mỗi cặp được đếm **hai lần**.
-**Lỗi thường gặp:** Quên chia 2, đáp số gấp đôi. Phòng: Thử với 3 người: phải ra 3 cái bắt tay, không phải 6.
+**Đáp số:** a) 50 · b) 19 · c) 19 · d) 6 · e) 62 · f) 12, vì nhóm thích cả hai môn bị đếm hai lần
+**Hướng giải:** Vẽ sơ đồ Ven hai vòng tròn. **Điền miền giữa trước**, rồi trừ ra hai miền riêng. Cộng thẳng hai nhóm sẽ đếm nhóm chung **hai lần**, nên phải trừ đi một lần.
+**Nhãn tư duy:** TD2, TD6. Điểm chốt: Điền **miền giữa trước** — mọi miền khác suy ra từ đó.
+**Lỗi thường gặp:** Cộng thẳng hai nhóm rồi coi đó là số bạn thích ít nhất một môn. Phòng: Vẽ sơ đồ Ven, ghi số vào từng miền rồi cộng lại kiểm tra với sĩ số.
 
 ### Bài II.2
+**Đáp số:** a) 7 viên · b) 7 viên · c) 19 viên · d) 7 viên
+**Hướng giải:** Xét trường hợp **xấu nhất**: lấy được nhiều nhất bao nhiêu viên mà vẫn chưa đủ điều kiện? Đó là mỗi màu lấy (k − 1) viên. Lấy thêm đúng một viên nữa thì chắc chắn có k viên cùng màu.
+**Nhãn tư duy:** TD6, TD2. Điểm chốt: Luôn xuất phát từ **trường hợp xấu nhất** rồi cộng thêm 1.
+**Lỗi thường gặp:** Nhân số màu với số viên cần rồi lấy luôn kết quả đó. Phòng: Viết rõ câu “Xấu nhất là mỗi màu lấy được … viên mà vẫn chưa đủ”.
+
+### Bài II.3
+**Đáp số:** a) 48, 66, 84 · b) 68 · c) 28, 64 · d) 65
+**Hướng giải:** Chọn điều kiện cho ít khả năng nhất để liệt kê trước, rồi mới đem điều kiện còn lại ra thử. Làm ngược thứ tự ấy thì phải thử gấp nhiều lần.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Phải xét **hết** danh sách. Bài thử chọn thường có hơn một đáp số.
+**Lỗi thường gặp:** Tìm được một số thoả rồi dừng, bỏ sót các đáp số còn lại. Phòng: Viết danh sách ra giấy và gạch bỏ từng số, đừng thử nhẩm trong đầu.
+
+### Bài II.4
 **Đáp số:** a) 3 lần · b) 3 phần · c) vì mỗi lần cân có ba kết quả: trái nặng hơn, phải nặng hơn, hoặc cân bằng · d) 4 · e) 1 lần · f) 2 lần
 **Hướng giải:** Mỗi lần cân bằng cân đĩa cho **ba** kết quả có thể, nên mỗi lần cân chia được số vật thành ba phần và loại đi hai phần. Sau k lần cân, phân biệt được tối đa 3 nhân với chính nó k lần vật.
 **Nhãn tư duy:** TD6, TD2. Điểm chốt: Cân đĩa cho **ba** kết quả, nên chia ba chứ không chia đôi.
 **Lỗi thường gặp:** Chia đôi như tìm kiếm thông thường nên cần nhiều lần cân hơn mức cần thiết. Phòng: Nhớ ba kết quả: nghiêng trái, nghiêng phải, thăng bằng.
 
-### Bài II.3
-**Đáp số:** a) 5 viên · b) 9 viên · c) 9 viên · d) 6 viên · e) 25 viên
-**Hướng giải:** Xét trường hợp **xấu nhất**: lấy được nhiều nhất bao nhiêu viên mà vẫn chưa đủ điều kiện? Đó là mỗi màu lấy (k − 1) viên. Lấy thêm đúng một viên nữa thì chắc chắn có k viên cùng màu.
-**Nhãn tư duy:** TD6, TD2. Điểm chốt: Luôn xuất phát từ **trường hợp xấu nhất** rồi cộng thêm 1.
-**Lỗi thường gặp:** Nhân số màu với số viên cần rồi lấy luôn kết quả đó. Phòng: Viết rõ câu “Xấu nhất là mỗi màu lấy được … viên mà vẫn chưa đủ”.
-
-### Bài II.4
-**Đáp số:** a) 105 · 150 · 501 · 510 · b) 4 · c) 510 · d) 105 · e) 2 · f) 3 · g) 615
-**Hướng giải:** Lập số theo thứ tự: chọn chữ số hàng trăm trước (khác 0), rồi hàng chục, rồi hàng đơn vị, mỗi chữ số dùng đúng một lần. Viết có hệ thống theo nhóm cùng chữ số hàng trăm để không bỏ sót và không trùng lặp.
-**Nhãn tư duy:** TD4, TD6. Điểm chốt: Chữ số **0 không được đứng ở hàng trăm**, nên nếu bộ có chữ số 0 thì số lượng số lập được ít hơn.
-**Lỗi thường gặp:** Viết lộn xộn nên vừa sót vừa trùng; hoặc nhận cả số bắt đầu bằng 0. Phòng: Liệt kê theo nhóm: cố định hàng trăm rồi mới hoán vị hai chữ số còn lại.
-
 ### Bài II.5
-**Đáp số:** a) 51 · b) 25 · c) 14 · d) 8 · e) 63 · f) 12, vì nhóm thích cả hai môn bị đếm hai lần
-**Hướng giải:** Vẽ sơ đồ Ven hai vòng tròn. **Điền miền giữa trước**, rồi trừ ra hai miền riêng. Cộng thẳng hai nhóm sẽ đếm nhóm chung **hai lần**, nên phải trừ đi một lần.
-**Nhãn tư duy:** TD2, TD6. Điểm chốt: Điền **miền giữa trước** — mọi miền khác suy ra từ đó.
-**Lỗi thường gặp:** Cộng thẳng hai nhóm rồi coi đó là số bạn thích ít nhất một môn. Phòng: Vẽ sơ đồ Ven, ghi số vào từng miền rồi cộng lại kiểm tra với sĩ số.
+**Đáp số:** a) 105 cái · b) 15 đường thẳng · c) 55 trận · d) 45 đường thẳng · e) 66 cái · f) 15 trận
+**Hướng giải:** Mỗi người bắt tay với n − 1 người còn lại, nên tổng số lượt bắt tay là n × (n − 1). Nhưng mỗi cái bắt tay được đếm **hai lần** (một lần từ mỗi phía), nên số bắt tay thật sự là n × (n − 1) : 2.
+**Nhãn tư duy:** TD4, TD6. Điểm chốt: Chia cho 2 vì mỗi cặp được đếm **hai lần**.
+**Lỗi thường gặp:** Quên chia 2, đáp số gấp đôi. Phòng: Thử với 3 người: phải ra 3 cái bắt tay, không phải 6.
 
 ### Bài III.1
-**Đáp số:** a) 20 số, bé nhất là 315 · b) 11 số, bé nhất là 54 · c) 44 số, bé nhất là 252 · d) 16 số, bé nhất là 270 · e) 50 số, bé nhất là 210 · f) 45 số, bé nhất là 220
-**Hướng giải:** Số vừa chia hết cho hai số thì chia hết cho bội chung nhỏ nhất của chúng. Các số đó lập thành dãy cách đều với khoảng cách bằng bội chung nhỏ nhất; dùng công thức đếm số hạng của dãy cách đều.
-**Nhãn tư duy:** TD2, TD4. Điểm chốt: Khoảng cách của dãy là **bội chung nhỏ nhất**, không phải tích hai số khi hai số không nguyên tố cùng nhau.
-**Lỗi thường gặp:** Lấy tích hai số làm khoảng cách (ví dụ dùng 27 cho “chia hết cho 3 và 9”). Phòng: Kiểm tra bằng cách viết ba số đầu tiên của dãy rồi xem khoảng cách thật.
+**Đáp số:** a) 4 · b) 6 · c) 0 · d) 5 · e) 0 · f) 0
+**Hướng giải:** Chữ số tận cùng của tổng, hiệu, tích chỉ phụ thuộc vào chữ số tận cùng của các số tham gia. Chỉ cần lấy các chữ số tận cùng ra tính với nhau rồi lấy chữ số tận cùng của kết quả.
+**Nhãn tư duy:** TD5, TD2. Điểm chốt: Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu của số.
+**Lỗi thường gặp:** Tính trọn cả phép tính, vừa lâu vừa dễ sai. Phòng: Che phần đầu của hai số, chỉ để lộ chữ số cuối cùng.
 
 ### Bài III.2
-**Đáp số:** a) hơn -1 đơn vị · b) 83, hiệu 45 · c) 57 · d) 4, hiệu 36
-**Hướng giải:** Viết số có hai chữ số dưới dạng **ab = a × 10 + b** với a là chữ số hàng chục (khác 0), b là chữ số hàng đơn vị. Từ điều kiện của đề, lập quan hệ giữa a và b rồi dùng bài toán tổng – hiệu.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Chữ số hàng chục **khác 0** và mỗi chữ số chỉ nhận giá trị từ 0 đến 9.
-**Lỗi thường gặp:** Tìm ra a hoặc b lớn hơn 9 mà vẫn nhận đáp số. Phòng: Sau khi tính xong, kiểm tra lại từng chữ số có nằm trong khoảng 0–9 không.
+**Đáp số:** a) bố 52 tuổi, con 13 tuổi · b) 47 tuổi · c) bố 21 tuổi, con 7 tuổi · d) 54 tuổi · e) 86 tuổi · f) 56 tuổi
+**Hướng giải:** **Hiệu số tuổi của hai người không bao giờ thay đổi.** Còn tổng số tuổi thì mỗi năm tăng thêm đúng bằng số người. Tỉ số tuổi thì thay đổi theo từng năm.
+**Nhãn tư duy:** TD2, TD6. Điểm chốt: Hiệu tuổi là đại lượng **bất biến** — chìa khoá của mọi bài toán tuổi.
+**Lỗi thường gặp:** Cộng thêm số năm vào cả hiệu số tuổi. Phòng: Kẻ bảng ba dòng: trước kia – hiện nay – sau này, ghi rõ tuổi từng người.
 
 ### Bài III.3
-**Đáp số:** a) x = 54 · b) x = 86 · c) x = 71 · d) x = 75
-**Hướng giải:** Gỡ dần từ ngoài vào trong: xác định phép tính ngoài cùng, coi phần còn lại là một số, tìm giá trị của nó, rồi lặp lại cho tới khi x đứng riêng.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Mỗi bước chỉ gỡ **một** phép tính, đừng gỡ hai phép cùng lúc.
-**Lỗi thường gặp:** Nhân phá ngoặc sai dấu, hoặc gỡ phép trong ngoặc trước. Phòng: Ghi rõ từng bước trên một dòng riêng, mỗi dòng chỉ khác dòng trên một phép.
+**Đáp số:** a) 40 · b) 91 · c) 140 · d) 51 · e) 61
+**Hướng giải:** Đếm theo từng hàng: đếm số lần chữ số đó đứng ở hàng đơn vị, rồi hàng chục, rồi hàng trăm. Ở mỗi hàng, các số thoả mãn lập thành dãy cách đều, dùng công thức đếm số hạng.
+**Nhãn tư duy:** TD4, TD6. Điểm chốt: Một số có thể chứa chữ số đó **nhiều lần**; đếm theo hàng thì không sót.
+**Lỗi thường gặp:** Đếm số lượng **số** chứa chữ số đó thay vì số **lần** xuất hiện. Phòng: Kẻ bảng: hàng đơn vị – hàng chục – hàng trăm, đếm riêng rồi cộng.
 
 ### Bài III.4
-**Đáp số:** a) 24 · b) 24 cm² · c) 1 cm² · d) 12 cm² · e) 6 cm² · f) 28 cm
-**Hướng giải:** Số mảnh phủ kín bằng diện tích hình lớn chia diện tích một mảnh — nhưng chỉ đúng khi các mảnh **xếp khít không thừa**. Kiểm tra lại bằng cách đếm số hàng và số cột.
-**Nhãn tư duy:** TD3, TD4. Điểm chốt: Phép chia diện tích chỉ đúng khi mảnh **xếp khít**.
-**Lỗi thường gặp:** Chia chu vi cho cạnh mảnh thay vì chia diện tích cho diện tích. Phòng: Kẻ lưới lên hình và đếm thử một hàng.
+**Đáp số:** a) 29 cây · b) 19 cây · c) 21 cây · d) 20 cây
+**Hướng giải:** Muốn tìm phân số của một số, ta lấy số đó nhân với phân số. Cách hiểu: chia số đó thành số phần bằng mẫu số, rồi lấy số phần bằng tử số.
+**Nhãn tư duy:** TD2, TD3. Điểm chốt: Phân số tính trên **số nào** — đọc kĩ cụm “… của …”.
+**Lỗi thường gặp:** Nhân phân số với đại lượng khác, không phải đại lượng đề chỉ định. Phòng: Gạch chân cụm “bằng … số cây của …” để xác định số bị nhân.
 
 ### Bài III.5
-**Đáp số:** a) 1, 6, 14 · b) 48 · c) 124 · d) 284 · e) 68
-**Hướng giải:** Lập bảng và tính lần lượt từng số hạng theo đúng quy tắc, không nhảy cóc. Ghi rõ số thứ tự của mỗi số hạng để chọn đúng nhánh quy tắc.
-**Nhãn tư duy:** TD3, TD6. Điểm chốt: Quy tắc phụ thuộc **vị trí chẵn hay lẻ** — phải đánh số thứ tự trước.
-**Lỗi thường gặp:** Áp dụng nhầm nhánh quy tắc vì không để ý vị trí. Phòng: Kẻ bảng hai dòng: dòng trên ghi vị trí, dòng dưới ghi số hạng.
+**Đáp số:** a) 630 · b) 65 · c) 650 · d) 25 250 · e) 3 725 · f) 1 275
+**Hướng giải:** Đếm số số hạng: (số cuối − số đầu) : khoảng cách + 1. Tổng bằng (số đầu + số cuối) × số số hạng : 2. Cách hiểu: ghép số đầu với số cuối, số thứ hai với số áp chót… mỗi cặp có tổng bằng nhau.
+**Nhãn tư duy:** TD4, TD5. Điểm chốt: Phải đếm **số số hạng** trước; đây là chỗ sai nhiều nhất.
+**Lỗi thường gặp:** Lấy số cuối chia khoảng cách làm số số hạng, quên cộng 1. Phòng: Viết ra ba số đầu và ba số cuối để kiểm tra khoảng cách rồi mới đếm.
 
 ### Bài IV.1
-**Đáp số:** a) 3 lần · b) 3 kết quả: nghiêng trái, nghiêng phải, thăng bằng · c) 3 phần · d) 9 · e) Dũng · f) 2 lần
-**Hướng giải:** BẪY — Chia ba chứ không chia đôi. Mỗi lần cân bằng cân đĩa cho ba kết quả, nên chia ba chứ không chia đôi. Sau k lần cân phân biệt được nhiều nhất 3 nhân với chính nó k lần vật. Luôn lập luận theo **trường hợp xấu nhất**.
-**Nhãn tư duy:** TD6, TD2. Điểm chốt: Cân đĩa cho **ba** kết quả nên chia ba, không chia đôi.
-**Lỗi thường gặp:** Chia đôi như tìm kiếm thông thường nên cần nhiều lần cân hơn mức cần thiết. Phòng: Nhớ ba kết quả: nghiêng trái, nghiêng phải, thăng bằng.
-**Gợi ý 3 tầng:** (1) Một lần cân cho mấy kết quả? — (2) Vậy nên chia số gói thành mấy phần? — (3) Sau mỗi lần cân còn lại nhiều nhất bao nhiêu gói?
-
-### Bài IV.2
-**Đáp số:** a) chẵn · b) 406 · c) giảm đi 2 lần số bé · d) không thay đổi · e) tính chẵn lẻ của tổng các số trên bảng · f) có
-**Hướng giải:** BẪY — Phải chứng minh, không được thử vài trường hợp. Khi thay a và b (giả sử a ≥ b) bằng a − b, tổng giảm đi 2b — luôn là một số chẵn. Vì vậy **tính chẵn lẻ của tổng không bao giờ thay đổi**. Số còn lại cuối cùng chính là tổng lúc đó, nên nó cùng tính chẵn lẻ với tổng ban đầu.
-**Nhãn tư duy:** TD6, TD2. Điểm chốt: Tìm đại lượng **không đổi** qua mỗi bước là chìa khoá của cả lớp bài này.
-**Lỗi thường gặp:** Thử mò vài trường hợp rồi kết luận, không chứng minh được cho mọi cách làm. Phòng: Sau khi đoán, hãy kiểm tra: đại lượng đó thay đổi thế nào sau **một** bước?
-**Gợi ý 3 tầng:** (1) Sau mỗi bước, tổng các số trên bảng thay đổi bao nhiêu? — (2) Lượng thay đổi đó là số chẵn hay số lẻ? — (3) Vậy tính chẵn lẻ của tổng có đổi không?
-
-### Bài IV.3
-**Đáp số:** a) 18 · b) 14 · c) 10 · d) 8 · e) 542 và 204 · f) 746
+**Đáp số:** a) 18 · b) 10 · c) 6 · d) 4 · e) 932 và 203 · f) 1 135
 **Hướng giải:** BẪY — Chữ số 0 ở hàng trăm. Đếm theo từng bước có ràng buộc: với điều kiện về chữ số tận cùng (chẵn, chia hết cho 5) thì chọn **chữ số tận cùng trước**, rồi mới chọn các hàng còn lại. Nhớ loại các số có chữ số 0 ở hàng trăm.
 **Nhãn tư duy:** TD4, TD6. Điểm chốt: Có ràng buộc ở hàng nào thì **chọn hàng đó trước**.
 **Lỗi thường gặp:** Chọn hàng trăm trước rồi mới xét điều kiện tận cùng, dẫn đến đếm trùng hoặc sót. Phòng: Viết rõ thứ tự chọn hàng trước khi nhân các số cách.
 **Gợi ý 3 tầng:** (1) Điều kiện của đề ràng buộc hàng nào? — (2) Chọn hàng bị ràng buộc trước tiên. — (3) Nhớ loại trường hợp chữ số 0 đứng ở hàng trăm.
 
+### Bài IV.2
+**Đáp số:** a) 18 · b) 54 · c) 65 · d) 72 · e) 75
+**Hướng giải:** BẪY — Quên chữ số hàng cao nhất khác 0. Viết số theo cấu tạo: số có hai chữ số ab bằng a × 10 + b. Thay vào điều kiện đề cho rồi rút gọn — thường ra một quan hệ rất gọn giữa a và b.
+**Nhãn tư duy:** TD1, TD4. Điểm chốt: Chữ số hàng cao nhất **khác 0**, và mọi chữ số chỉ nhận giá trị từ 0 đến 9. Hai ràng buộc này thường là chỗ loại bớt đáp số.
+**Lỗi thường gặp:** Tính ra a bằng 0 rồi vẫn nhận, hoặc để một chữ số vượt quá 9. Phòng: Viết sẵn hai dòng ràng buộc lên đầu bài giải rồi mới tính.
+**Gợi ý 3 tầng:** (1) Số có hai chữ số ab viết theo cấu tạo là gì? — (2) Thay cấu tạo ấy vào điều kiện đề cho, rồi rút gọn. — (3) Kiểm lại: chữ số hàng chục có khác 0 không?
+
+### Bài IV.3
+**Đáp số:** a) chẵn · b) 666 · c) giảm đi 2 lần số bé · d) không thay đổi · e) tính chẵn lẻ của tổng các số trên bảng · f) có
+**Hướng giải:** BẪY — Phải chứng minh, không được thử vài trường hợp. Khi thay a và b (giả sử a ≥ b) bằng a − b, tổng giảm đi 2b — luôn là một số chẵn. Vì vậy **tính chẵn lẻ của tổng không bao giờ thay đổi**. Số còn lại cuối cùng chính là tổng lúc đó, nên nó cùng tính chẵn lẻ với tổng ban đầu.
+**Nhãn tư duy:** TD6, TD2. Điểm chốt: Tìm đại lượng **không đổi** qua mỗi bước là chìa khoá của cả lớp bài này.
+**Lỗi thường gặp:** Thử mò vài trường hợp rồi kết luận, không chứng minh được cho mọi cách làm. Phòng: Sau khi đoán, hãy kiểm tra: đại lượng đó thay đổi thế nào sau **một** bước?
+**Gợi ý 3 tầng:** (1) Sau mỗi bước, tổng các số trên bảng thay đổi bao nhiêu? — (2) Lượng thay đổi đó là số chẵn hay số lẻ? — (3) Vậy tính chẵn lẻ của tổng có đổi không?
+
 ### Bài IV.4
-**Đáp số:** a) 58 · b) 27 · c) 61 · d) 21
-**Hướng giải:** BẪY — Bốn trường hợp trồng cây khác nhau. Số khoảng = độ dài : khoảng cách. Từ số khoảng suy ra số cây: trồng cả hai đầu thì số cây hơn số khoảng 1; trồng một đầu thì bằng số khoảng; không trồng đầu nào thì kém số khoảng 1; trồng khép kín (quanh ao, quanh sân) thì bằng đúng số khoảng.
-**Nhãn tư duy:** TD3, TD6. Điểm chốt: Đọc kĩ **có trồng ở hai đầu hay không** — bốn trường hợp cho bốn đáp số khác nhau.
-**Lỗi thường gặp:** Máy móc cộng 1 cho mọi trường hợp. Phòng: Vẽ một đoạn ngắn với 3 khoảng để đếm thử trước khi áp dụng.
-**Gợi ý 3 tầng:** (1) Tính số khoảng trước. — (2) Đề có nói trồng ở hai đầu, một đầu, hay khép kín? — (3) Vẽ thử một hình nhỏ để kiểm tra.
+**Đáp số:** a) Yến học tin học; Ngọc học tiếng Anh; Nam học mĩ thuật · b) Quân học đàn; Yến học múa; Trang học hát · c) Phúc học múa; Trang học hát; Khánh học đàn · d) Nam học múa; Dũng học đàn; Minh học hát · e) Sơn học hát; Hà học múa; Minh học đàn
+**Hướng giải:** BẪY — Đánh dấu đúng mà quên gạch phần còn lại. Mỗi dòng một người, mỗi cột một khả năng. Đánh × cho điều chắc chắn sai. Dòng nào chỉ còn một ô trống thì ô ấy là ✓ — và ngay sau đó phải gạch × cho cả cột chứa ô ấy.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Đặt được một ✓ thì **cả dòng và cả cột** còn lại đều thành ×. Bỏ bước gạch cột là chỗ bài bị tắc giữa chừng.
+**Lỗi thường gặp:** Đánh ✓ rồi đi tiếp luôn, không gạch × cho phần còn lại của cột. Phòng: Sau mỗi lần đặt ✓, dừng lại gạch đủ dòng và cột rồi mới đọc manh mối kế.
+**Gợi ý 3 tầng:** (1) Kẻ bảng ba dòng ba cột trước đã. — (2) Manh mối nào cho biết chắc chắn một ô là sai? — (3) Dòng nào chỉ còn một ô trống thì ô ấy chính là đáp án của dòng ấy.
 
 ### Bài IV.5
-**Đáp số:** a) 3 phần 4 · 1 phần 6 · 2 phần 3 · 11 phần 12 · 1 phần 4 · b) 1 phần 6 < 1 phần 4 < 2 phần 3 < 3 phần 4 < 11 phần 12 · c) 11 phần 12 · d) 1 phần 6 · e) 3 phần 4 · f) không, tất cả đều bé hơn 1
-**Hướng giải:** Cùng mẫu số thì so tử số. Khác mẫu thì quy đồng hoặc so với 1 và với một nửa. Rút gọn về tối giản trước khi trình bày kết quả.
-**Nhãn tư duy:** TD1, TD5. Điểm chốt: Cùng mẫu số thì **chỉ cần so tử số**.
-**Lỗi thường gặp:** Rút gọn xong quên rằng thứ tự vẫn giữ nguyên, đi quy đồng lại từ đầu. Phòng: Ghi cả phân số gốc và phân số tối giản cạnh nhau để đối chiếu.
-**Gợi ý 3 tầng:** (1) Các phân số có cùng mẫu số không? — (2) Nếu cùng mẫu thì so gì? — (3) Rút gọn không làm thay đổi giá trị nên không đổi thứ tự.
+**Đáp số:** a) 2 lần · b) 3 kết quả: nghiêng trái, nghiêng phải, thăng bằng · c) 3 phần · d) 3 · e) Hà · f) 2 lần
+**Hướng giải:** Mỗi lần cân bằng cân đĩa cho ba kết quả, nên chia ba chứ không chia đôi. Sau k lần cân phân biệt được nhiều nhất 3 nhân với chính nó k lần vật. Luôn lập luận theo **trường hợp xấu nhất**.
+**Nhãn tư duy:** TD6, TD2. Điểm chốt: Cân đĩa cho **ba** kết quả nên chia ba, không chia đôi.
+**Lỗi thường gặp:** Chia đôi như tìm kiếm thông thường nên cần nhiều lần cân hơn mức cần thiết. Phòng: Nhớ ba kết quả: nghiêng trái, nghiêng phải, thăng bằng.
+**Gợi ý 3 tầng:** (1) Một lần cân cho mấy kết quả? — (2) Vậy nên chia số gói thành mấy phần? — (3) Sau mỗi lần cân còn lại nhiều nhất bao nhiêu gói?
 
 ### Bài V.1
-**Đáp số:** a) Bài toán bất biến · b) Tính chẵn lẻ; tổng dãy số tự nhiên liên tiếp · c) Một quá trình lặp nhiều bước, hỏi trạng thái cuối · d) Tìm đại lượng không đổi rồi so hai đầu quá trình · e) Thử với n nhỏ (n = 3, 4) để đoán, rồi chứng minh bằng bất biến. · f) 55 · không thay đổi · 55 · giảm đi 2 lần số bé — luôn là một số chẵn…
+**Đáp số:** a) Cân đĩa, chia ba · b) Lập luận trường hợp xấu nhất, chia nhóm · c) Cân đĩa không có quả cân, tìm vật khác biệt · d) Chia ba phần bằng nhau mỗi lần cân · e) 3 đồng → 1 lần; 9 đồng → 2 lần; 27 đồng → 3 lần. · f) 2 lần · 3 phần · vì mỗi lần cân có ba kết quả: trái nặng hơn, phải nặng hơn, hoặc cân bằng · 3…
 **Hướng giải:** Thi đấu phản biện: bạn trình bày nói lời giải, bạn phản biện phải chỉ ra được ít nhất một cột trong bảng mà lời giải chưa nói tới. Ai chỉ ra được nhiều hơn thì thắng.
-**Nhãn tư duy:** TD6, TD2. Điểm chốt: Tìm đại lượng **bất biến** rồi so trạng thái đầu với trạng thái cuối.
-**Lỗi thường gặp:** Thử vài trường hợp rồi kết luận, không chứng minh được cho mọi cách làm. Phòng: Sau khi đoán, kiểm tra: đại lượng đó đổi thế nào sau **một** bước?
+**Nhãn tư duy:** TD6, TD2. Điểm chốt: Cân đĩa cho **ba** kết quả, nên chia ba chứ không chia đôi.
+**Lỗi thường gặp:** Chia đôi như tìm kiếm thông thường nên cần nhiều lần cân hơn mức cần thiết. Phòng: Nhớ ba kết quả: nghiêng trái, nghiêng phải, thăng bằng.
 **Gợi ý 3 tầng:** (1) Điền cột 1 và cột 3 trước — đó là hai cột dễ nhất. — (2) Cột 4 và cột 5 khác nhau: một cột nói cách làm, một cột nói lối tắt. — (3) Cột 6 chỉ ghi kết quả, không ghi lời giải.
 
 ### Bài V.2
-**Đáp số:** a) Giả thiết tạm hai loại · b) Phương pháp giả thiết tạm · c) Hai loại đối tượng, biết tổng số và tổng của một đại lượng phụ · d) Giả sử đồng nhất → tính chênh → chia cho hiệu đơn vị · e) Kiểm tra ngay: số bánh phải nằm giữa tổng × (số bánh ít nhất) và tổng × (số bánh nhiều nhất). · f) xe ba bánh: 18 chiếc, xe ô tô: 5 chiếc · xe ba bánh: 24 chiếc, xe đạp: 26 chiếc · xe đạp: 17 chiếc, xe ba bánh: 5 chiếc · xe đạp: 24 chiếc, xe ba bánh: 17 chiếc…
+**Đáp số:** a) Đếm số cặp · b) Tổ hợp chập hai, nguyên tắc đếm lặp · c) “Hai … bất kì”, “mỗi người với tất cả những người còn lại” · d) n × (n − 1) : 2 · e) Nhớ vài giá trị: 5 người có 10 cặp, 10 người có 45 cặp. · f) 6 đường thẳng · 120 cái · 91 trận · 120 cái…
+**Hướng giải:** Thi đấu phản biện: bạn trình bày nói lời giải, bạn phản biện phải chỉ ra được ít nhất một cột trong bảng mà lời giải chưa nói tới. Ai chỉ ra được nhiều hơn thì thắng.
+**Nhãn tư duy:** TD4, TD6. Điểm chốt: Chia cho 2 vì mỗi cặp được đếm **hai lần**.
+**Lỗi thường gặp:** Quên chia 2, đáp số gấp đôi. Phòng: Thử với 3 người: phải ra 3 cái bắt tay, không phải 6.
+**Gợi ý 3 tầng:** (1) Điền cột 1 và cột 3 trước — đó là hai cột dễ nhất. — (2) Cột 4 và cột 5 khác nhau: một cột nói cách làm, một cột nói lối tắt. — (3) Cột 6 chỉ ghi kết quả, không ghi lời giải.
+
+### Bài V.3
+**Đáp số:** a) Giả thiết tạm hai loại · b) Phương pháp giả thiết tạm · c) Hai loại đối tượng, biết tổng số và tổng của một đại lượng phụ · d) Giả sử đồng nhất → tính chênh → chia cho hiệu đơn vị · e) Kiểm tra ngay: số bánh phải nằm giữa tổng × (số bánh ít nhất) và tổng × (số bánh nhiều nhất). · f) xe ô tô: 9 chiếc, xe đạp: 3 chiếc · xe ba bánh: 18 chiếc, xe ô tô: 19 chiếc · xe đạp: 20 chiếc, xe ô tô: 27 chiếc · xe đạp: 23 chiếc, xe ba bánh: 18 chiếc
 **Hướng giải:** Thi đấu phản biện: bạn trình bày nói lời giải, bạn phản biện phải chỉ ra được ít nhất một cột trong bảng mà lời giải chưa nói tới. Ai chỉ ra được nhiều hơn thì thắng.
 **Nhãn tư duy:** TD6, TD3. Điểm chốt: Chia cho **hiệu** số bánh của hai loại, không chia cho số bánh của một loại.
 **Lỗi thường gặp:** Chia số bánh thiếu cho số bánh của loại nhiều hơn. Phòng: Thử lại: nhân ngược ra tổng số bánh, phải khớp với đề.
 **Gợi ý 3 tầng:** (1) Điền cột 1 và cột 3 trước — đó là hai cột dễ nhất. — (2) Cột 4 và cột 5 khác nhau: một cột nói cách làm, một cột nói lối tắt. — (3) Cột 6 chỉ ghi kết quả, không ghi lời giải.
 
-### Bài V.3
-**Đáp số:** a) Suy luận nói thật – nói dối · b) Logic mệnh đề sơ cấp, phương pháp loại trừ · c) “Chỉ một người nói thật”, các câu nói mâu thuẫn nhau · d) Tìm cặp mâu thuẫn, khoá số câu đúng, suy ra phần còn lại · e) Cặp mâu thuẫn đã dùng hết “suất” nói thật, nên mọi câu ngoài cặp đều sai. · f) không, vì hai câu phủ định nhau · không, vì chúng phủ định nhau · đúng một bạn · nói dối…
-**Hướng giải:** Thi đấu phản biện: bạn trình bày nói lời giải, bạn phản biện phải chỉ ra được ít nhất một cột trong bảng mà lời giải chưa nói tới. Ai chỉ ra được nhiều hơn thì thắng.
-**Nhãn tư duy:** TD2, TD6. Điểm chốt: Cặp câu **phủ định nhau** luôn có đúng một câu đúng — đó là điểm tựa.
-**Lỗi thường gặp:** Thử từng người một cách rời rạc mà không dùng ràng buộc tổng số câu nói thật. Phòng: Đánh số các câu nói, ghi rõ câu nào phủ định câu nào.
-**Gợi ý 3 tầng:** (1) Điền cột 1 và cột 3 trước — đó là hai cột dễ nhất. — (2) Cột 4 và cột 5 khác nhau: một cột nói cách làm, một cột nói lối tắt. — (3) Cột 6 chỉ ghi kết quả, không ghi lời giải.
-
 ### Bài V.4
-**Đáp số:** a) Đếm số lập được có điều kiện · b) Quy tắc nhân, dấu hiệu chia hết · c) Bộ chữ số cho trước kèm điều kiện chia hết · d) Chọn hàng bị ràng buộc trước rồi nhân số cách các hàng còn lại · e) Số chia hết cho 3 nhận diện qua tổng ba chữ số được chọn — xét theo bộ ba. · f) 18 · 10 · 10 · 10…
+**Đáp số:** a) Nguyên lí Đi-rích-lê · b) Nguyên lí ngăn kéo, lập luận trường hợp xấu nhất · c) Cụm “ít nhất … để chắc chắn …” · d) Dựng tình huống xấu nhất rồi cộng 1 · e) Công thức: số loại × (số cần − 1) + 1. · f) 5 viên · 13 viên · 11 viên · 10 viên…
 **Hướng giải:** Thi đấu phản biện: bạn trình bày nói lời giải, bạn phản biện phải chỉ ra được ít nhất một cột trong bảng mà lời giải chưa nói tới. Ai chỉ ra được nhiều hơn thì thắng.
-**Nhãn tư duy:** TD4, TD6. Điểm chốt: Có ràng buộc ở hàng nào thì **chọn hàng đó trước**.
-**Lỗi thường gặp:** Chọn hàng trăm trước rồi mới xét điều kiện tận cùng, dẫn đến đếm trùng hoặc sót. Phòng: Viết rõ thứ tự chọn hàng trước khi nhân các số cách.
+**Nhãn tư duy:** TD6, TD2. Điểm chốt: Luôn xuất phát từ **trường hợp xấu nhất** rồi cộng thêm 1.
+**Lỗi thường gặp:** Nhân số màu với số viên cần rồi lấy luôn kết quả đó. Phòng: Viết rõ câu “Xấu nhất là mỗi màu lấy được … viên mà vẫn chưa đủ”.
 **Gợi ý 3 tầng:** (1) Điền cột 1 và cột 3 trước — đó là hai cột dễ nhất. — (2) Cột 4 và cột 5 khác nhau: một cột nói cách làm, một cột nói lối tắt. — (3) Cột 6 chỉ ghi kết quả, không ghi lời giải.
 
 ### Bài V.5
-**Đáp số:** a) Bài toán bất biến · b) Tính chẵn lẻ, đại lượng bất biến · c) Một quá trình lặp lại nhiều bước, hỏi trạng thái cuối · d) Tìm đại lượng không đổi rồi so trạng thái đầu với trạng thái cuối · e) Thử với n nhỏ (n = 3, 4) để đoán, rồi chứng minh bằng bất biến. · f) lẻ · 741 · giảm đi 2 lần số bé · không thay đổi…
+**Đáp số:** a) Trắc nghiệm đếm nhanh · b) Đếm cặp, quy tắc nhân, ngăn kéo, trồng cây, chu kì 7 · c) Nhiều câu ngắn, mỗi câu một kỹ thuật khác nhau · d) Nhận dạng kỹ thuật trước, tính sau · e) Học thuộc bốn công thức: n(n−1):2, a×b, loại×(cần−1)+1, khoảng+1. · f) 55 · 56 · 4 · 20…
 **Hướng giải:** Thi đấu phản biện: bạn trình bày nói lời giải, bạn phản biện phải chỉ ra được ít nhất một cột trong bảng mà lời giải chưa nói tới. Ai chỉ ra được nhiều hơn thì thắng.
-**Nhãn tư duy:** TD6, TD2. Điểm chốt: Tìm đại lượng **không đổi** qua mỗi bước là chìa khoá của cả lớp bài này.
-**Lỗi thường gặp:** Thử mò vài trường hợp rồi kết luận, không chứng minh được cho mọi cách làm. Phòng: Sau khi đoán, hãy kiểm tra: đại lượng đó thay đổi thế nào sau **một** bước?
+**Nhãn tư duy:** TD4, TD5. Điểm chốt: Nhận **đúng kỹ thuật** trong 5 giây rồi mới tính — đó là kỹ năng thi.
+**Lỗi thường gặp:** Đếm cặp mà quên chia 2; “chắc chắn có” mà quên cộng 1. Phòng: Trước mỗi ý, viết một chữ tắt cho kỹ thuật: cặp, nhân, xấu nhất, khoảng.
 **Gợi ý 3 tầng:** (1) Điền cột 1 và cột 3 trước — đó là hai cột dễ nhất. — (2) Cột 4 và cột 5 khác nhau: một cột nói cách làm, một cột nói lối tắt. — (3) Cột 6 chỉ ghi kết quả, không ghi lời giải.
 
 ---

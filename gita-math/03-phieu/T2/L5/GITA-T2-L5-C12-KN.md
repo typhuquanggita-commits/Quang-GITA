@@ -42,67 +42,68 @@ Phiếu lời giải và phân tích chuyên sâu đi kèm: `GITA-T2-L5-C12-KN-G
 Họ và tên: ......................................... Lớp: ......... Điểm: ......../100
 
 > **KIẾN THỨC NỀN CỦA CHƯƠNG**
-> 1. Nguyên lí ngăn kéo
-> 2. Kĩ thuật tô màu, bất biến, tính chẵn lẻ
-> 3. Tính chẵn lẻ; tổng dãy số tự nhiên liên tiếp
-> 4. Quy tắc cộng, quy tắc nhân, nguyên lí bù trừ
+> 1. Tính chẵn lẻ; tổng dãy số tự nhiên liên tiếp
+> 2. Quy tắc nhân, dấu hiệu chia hết
+> 3. Nguyên lí ngăn kéo
+> 4. Lập luận trường hợp xấu nhất; chia nhóm ba
 
 ---
 
 ## PHẦN A — CỦNG CỐ NỀN — 30 CÂU TỐC ĐỘ · Mức M1 — Nhận biết · 20 phút · 25 điểm
 
-### Bài 1. (5 điểm) Quy tắc cộng, quy tắc nhân và phép đếm có phần chung
+### Bài 1. (5 điểm) Suy luận bằng phương pháp lập bảng và loại trừ
 
-Đọc kĩ chữ “và” hay chữ “hoặc”.
+Ba bạn Minh, Chi, Lan mỗi bạn thích đúng một môn khác nhau trong ba môn Âm nhạc, Mĩ thuật, Tiếng Anh. Biết **Minh thích Âm nhạc** và **Chi không thích Tiếng Anh**.
 
-a) Có 3 quyển sách Toán và 12 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một quyển Toán và một quyển Tiếng Việt**?
-b) Trên bàn có 5 quyển sách Toán và 12 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một** quyển sách bất kì?
-c) Lớp có 10 bạn giỏi Toán, 4 bạn giỏi Tiếng Việt, trong đó 1 bạn giỏi cả hai môn. Hỏi có bao nhiêu bạn giỏi ít nhất một môn?
-d) Có 3 quyển sách Toán và 5 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một quyển Toán và một quyển Tiếng Việt**?
-e) Lớp có 6 bạn giỏi Toán, 10 bạn giỏi Tiếng Việt, trong đó 1 bạn giỏi cả hai môn. Hỏi có bao nhiêu bạn giỏi ít nhất một môn?
-f) Trên bàn có 6 quyển sách Toán và 6 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một** quyển sách bất kì?
-
-### Bài 2. (5 điểm) Suy luận bằng phương pháp lập bảng và loại trừ
-
-Ba bạn Đức, Yến, Thảo mỗi bạn thích đúng một môn khác nhau trong ba môn Tiếng Anh, Âm nhạc, Toán. Biết **Đức thích Tiếng Anh** và **Yến không thích Toán**.
-
-a) Kẻ bảng ba hàng (tên bạn) và ba cột (môn học). Dữ kiện “Đức thích Tiếng Anh” cho phép đánh dấu ✔ vào ô nào?
+a) Kẻ bảng ba hàng (tên bạn) và ba cột (môn học). Dữ kiện “Minh thích Âm nhạc” cho phép đánh dấu ✔ vào ô nào?
 b) Sau dấu ✔ đó, những ô nào chắc chắn phải đánh ✘?
-c) Dữ kiện “Yến không thích Toán” cho phép đánh ✘ vào ô nào?
-d) Đến đây, hàng Yến còn lại đúng một ô trống. Vậy Yến thích môn nào?
-e) Suy ra Thảo thích môn nào?
+c) Dữ kiện “Chi không thích Tiếng Anh” cho phép đánh ✘ vào ô nào?
+d) Đến đây, hàng Chi còn lại đúng một ô trống. Vậy Chi thích môn nào?
+e) Suy ra Lan thích môn nào?
 f) Phương pháp vừa dùng tên là gì?
+
+### Bài 2. (5 điểm) Đặt tính rồi tính (nhân, chia)
+
+Đặt tính rồi tính.
+
+a) 2 049 572 : 196
+b) 12 156 059 : 127
+c) 36 960 385 : 385
+d) 15 669 270 : 453
+e) 3 668 808 : 39
 
 ### Bài 3. (5 điểm) Quy tắc nhân trong phép đếm
 
 Đếm số cách chọn.
 
-a) Có 8 chiếc áo và 8 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
-b) Có 2 chiếc áo và 8 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
-c) Có 4 chiếc áo và 8 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
-d) Có 5 chiếc áo và 3 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
-e) Có 3 chiếc áo và 7 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
+a) Có 5 chiếc áo và 3 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
+b) Có 4 chiếc áo và 5 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
+c) Có 3 chiếc áo và 2 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
+d) Có 2 chiếc áo và 4 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
+e) Có 4 chiếc áo và 3 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
+f) Có 8 chiếc áo và 3 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
+g) Có 2 chiếc áo và 8 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
 
-### Bài 4. (5 điểm) Viết số khi biết tổng các giá trị hàng
+### Bài 4. (5 điểm) Góc nhọn, góc tù, góc bẹt; vuông góc và song song
 
-Viết số tự nhiên ứng với mỗi tổng dưới đây.
+Dùng ê ke và thước đo góc để kiểm chứng.
 
-a) Viết số gồm tổng: 6 000 000 + 100 000 + 2 000 + 900 + 70 + 2
-b) Viết số gồm tổng: 1 000 000 + 50 000 + 7 000 + 100 + 60 + 1
-c) Viết số gồm tổng: 5 000 000 + 700 000 + 20 000 + 800 + 20 + 4
-d) Viết số gồm tổng: 9 000 000 + 400 000 + 60 000 + 6 000 + 700 + 40
-e) Viết số gồm tổng: 5 000 000 + 800 000 + 20 000 + 1 000 + 800 + 10
+a) Góc 30° so với góc vuông thì lớn hơn, bé hơn hay bằng?
+b) Hình chữ nhật có mấy cặp cạnh song song và mấy cặp cạnh vuông góc?
+c) Góc có số đo 60° là góc gì?
+d) Góc 135° so với góc vuông thì lớn hơn, bé hơn hay bằng?
+e) Hình chữ nhật có mấy cặp cạnh song song và mấy cặp cạnh vuông góc?
+f) Góc có số đo 60° là góc gì?
+g) Hình chữ nhật có mấy cặp cạnh song song và mấy cặp cạnh vuông góc?
 
-### Bài 5. (5 điểm) Đặt tính rồi tính (nhân, chia)
+### Bài 5. (5 điểm) Quy tắc cộng, quy tắc nhân và phép đếm có phần chung
 
-Đặt tính rồi tính.
+Đọc kĩ chữ “và” hay chữ “hoặc”.
 
-a) 18 740 × 583
-b) 12 668 × 580
-c) 29 221 × 824
-d) 21 726 × 227
-e) 85 904 × 16
-f) 59 517 000 : 600
+a) Có 5 quyển sách Toán và 3 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một quyển Toán và một quyển Tiếng Việt**?
+b) Trên bàn có 11 quyển sách Toán và 5 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một** quyển sách bất kì?
+c) Lớp có 6 bạn giỏi Toán, 3 bạn giỏi Tiếng Việt, trong đó 3 bạn giỏi cả hai môn. Hỏi có bao nhiêu bạn giỏi ít nhất một môn?
+d) Trên bàn có 10 quyển sách Toán và 8 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một** quyển sách bất kì?
 
 ---
 
@@ -122,11 +123,11 @@ e) Thiếu câu lời giải thì bị trừ bao nhiêu phần điểm của bà
 
 Với mỗi dạng bài, viết một câu lời giải mẫu.
 
-a) Câu lời giải mở đầu cho dạng “Trắc nghiệm đếm nhanh”?
-b) Câu lời giải mở đầu cho dạng “Đếm bằng quy tắc cộng, nhân, bù trừ”?
+a) Câu lời giải mở đầu cho dạng “Thử chọn”?
+b) Câu lời giải mở đầu cho dạng “Trắc nghiệm đếm nhanh”?
 c) Câu lời giải mở đầu cho dạng “Đi-rích-lê dạng chứng minh”?
 d) Câu lời giải mở đầu cho dạng “Suy luận nói thật – nói dối”?
-e) Câu lời giải mở đầu cho dạng “Đếm số lập được có điều kiện”?
+e) Câu lời giải mở đầu cho dạng “Bài toán bất biến”?
 
 ### Bài 3. (3 điểm) Ghi đơn vị đúng chỗ
 
@@ -143,11 +144,11 @@ f) Vận tốc ghi đơn vị gì?
 
 Mỗi ý nêu một lỗi. Hãy nói cách sửa.
 
-a) Lỗi: Đếm cặp mà quên chia 2; “chắc chắn có” mà quên cộng 1. — cách phòng?
-b) Lỗi: Cộng thẳng hai nhóm khi chúng có phần tử chung. — cách phòng?
+a) Lỗi: Tìm được một số thoả rồi dừng, bỏ sót các đáp số còn lại. — cách phòng?
+b) Lỗi: Đếm cặp mà quên chia 2; “chắc chắn có” mà quên cộng 1. — cách phòng?
 c) Lỗi: Nói chung chung “vì nhiều người quá nên phải trùng” mà không chỉ ra con số. — cách phòng?
 d) Lỗi: Thử từng người một cách rời rạc mà không dùng ràng buộc tổng số câu nói thật. — cách phòng?
-e) Lỗi: Chọn hàng trăm trước rồi mới xét điều kiện tận cùng, dẫn đến đếm trùng hoặc sót. — cách phòng?
+e) Lỗi: Thử mò vài trường hợp rồi kết luận, không chứng minh được cho mọi cách làm. — cách phòng?
 f) Lỗi: Cộng số áo với số quần. — cách phòng?
 
 ### Bài 5. (3 điểm) Tự chấm bài theo thang điểm
@@ -176,7 +177,7 @@ e) Dò ba tầng mất bao lâu cho một bài?
 
 ### Bài 2. (3 điểm) Dò soát tình huống 1
 
-**Tình huống:** một bạn làm bài dạng “Trắc nghiệm đếm nhanh” và mắc lỗi: Đếm cặp mà quên chia 2; “chắc chắn có” mà quên cộng 1.
+**Tình huống:** một bạn làm bài dạng “Thử chọn” và mắc lỗi: Tìm được một số thoả rồi dừng, bỏ sót các đáp số còn lại.
 
 a) Lỗi này bị bắt ở tầng dò soát nào?
 b) Cách phòng lỗi này là gì?
@@ -196,7 +197,7 @@ e) Điểm chốt của dạng này là gì?
 
 ### Bài 4. (3 điểm) Dò soát tình huống 3
 
-**Tình huống:** một bạn làm bài dạng “Giả thiết tạm hai loại” và mắc lỗi: Chia số bánh thiếu cho số bánh của loại nhiều hơn.
+**Tình huống:** một bạn làm bài dạng “Bài toán trồng cây, chia đoạn” và mắc lỗi: Máy móc cộng 1 cho mọi trường hợp.
 
 a) Lỗi này bị bắt ở tầng dò soát nào?
 b) Cách phòng lỗi này là gì?
@@ -206,7 +207,7 @@ e) Điểm chốt của dạng này là gì?
 
 ### Bài 5. (3 điểm) Dò soát tình huống 4
 
-**Tình huống:** một bạn làm bài dạng “Tô màu, bất biến trên bàn cờ” và mắc lỗi: Thử xếp bằng tay rồi kết luận “không xếp được” mà không chứng minh.
+**Tình huống:** một bạn làm bài dạng “Đếm bằng quy tắc cộng, nhân, bù trừ” và mắc lỗi: Cộng thẳng hai nhóm khi chúng có phần tử chung.
 
 a) Lỗi này bị bắt ở tầng dò soát nào?
 b) Cách phòng lỗi này là gì?
@@ -228,7 +229,7 @@ c) Mỗi nhánh chính đặt tên theo gì?
 d) Mỗi nhánh chính có mấy nhánh con bắt buộc?
 e) Vẽ xong, tự chấm bằng cách nào?
 
-### Bài 2. (5 điểm) Nhánh 1 — Đếm bằng quy tắc cộng, nhân, bù trừ
+### Bài 2. (5 điểm) Nhánh 1 — Trắc nghiệm đếm nhanh
 
 Điền ba nhánh con bắt buộc của nhánh này.
 
@@ -258,7 +259,7 @@ c) Nhánh con 3 — lỗi hay mắc?
 d) Ghi thêm: kiến thức phải thuộc?
 e) Ghi thêm: cách xử lý nhanh nhất?
 
-### Bài 5. (5 điểm) Nhánh 4 — Chia hết và chia có dư trong tình huống chia phần
+### Bài 5. (5 điểm) Nhánh 4 — Tô màu, bất biến trên bàn cờ
 
 Điền ba nhánh con bắt buộc của nhánh này.
 
@@ -283,7 +284,7 @@ d) Phút 4 nói gì?
 e) Phút 5 nói gì?
 f) Ai trong nhóm nói phần nào?
 
-### Bài 2. (4 điểm) Nội dung giảng — Trắc nghiệm đếm nhanh
+### Bài 2. (4 điểm) Nội dung giảng — Thử chọn
 
 Chuẩn bị nội dung để giảng dạng bài này cho lớp.
 
@@ -305,7 +306,7 @@ d) Ví dụ mẫu em sẽ giảng?
 e) Lỗi em sẽ cảnh báo cho lớp?
 f) Mẹo nhanh em sẽ tặng lớp?
 
-### Bài 4. (4 điểm) Nội dung giảng — Đếm số lập được có điều kiện
+### Bài 4. (4 điểm) Nội dung giảng — Bài toán bất biến
 
 Chuẩn bị nội dung để giảng dạng bài này cho lớp.
 
@@ -316,7 +317,7 @@ d) Ví dụ mẫu em sẽ giảng?
 e) Lỗi em sẽ cảnh báo cho lớp?
 f) Mẹo nhanh em sẽ tặng lớp?
 
-### Bài 5. (4 điểm) Nội dung giảng — Giả thiết tạm hai loại
+### Bài 5. (4 điểm) Nội dung giảng — Bài toán trồng cây, chia đoạn
 
 Chuẩn bị nội dung để giảng dạng bài này cho lớp.
 
@@ -334,34 +335,34 @@ f) Mẹo nhanh em sẽ tặng lớp?
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài A.1
-**Đáp số:** a) 36 cách · b) 17 cách · c) 13 bạn · d) 15 cách · e) 15 bạn · f) 12 cách
-**Hướng giải:** BẪY — Phần chung bị đếm hai lần. Chọn **một trong hai nhóm rời nhau** thì cộng. Chọn **mỗi nhóm một phần tử** thì nhân. Khi hai nhóm có phần tử chung, số phần tử thuộc ít nhất một nhóm bằng tổng hai nhóm trừ đi phần chung (vì phần chung đã bị đếm hai lần).
-**Nhãn tư duy:** TD2, TD6. Điểm chốt: Có phần chung thì phải **trừ đi một lần** phần chung.
-**Lỗi thường gặp:** Cộng thẳng hai nhóm khi chúng có phần tử chung. Phòng: Vẽ hai vòng tròn giao nhau, ghi số vào từng miền.
-
-### Bài A.2
-**Đáp số:** a) ô (Đức; Tiếng Anh) · b) toàn bộ hàng Đức và toàn bộ cột Tiếng Anh · c) ô (Yến; Toán) · d) Âm nhạc · e) Toán · f) phương pháp lập bảng và loại trừ
+**Đáp số:** a) ô (Minh; Âm nhạc) · b) toàn bộ hàng Minh và toàn bộ cột Âm nhạc · c) ô (Chi; Tiếng Anh) · d) Mĩ thuật · e) Tiếng Anh · f) phương pháp lập bảng và loại trừ
 **Hướng giải:** Kẻ bảng: hàng là tên người, cột là môn học. Mỗi dữ kiện cho phép đánh dấu ✘ vào một ô (không thể) hoặc ✔ vào một ô (chắc chắn). Khi một hàng chỉ còn đúng một ô trống thì ô đó là ✔; khi một cột đã có ✔ thì các ô còn lại của cột đó đều là ✘.
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Mỗi lần đánh một dấu, phải **lan toả** ngay sang cả hàng và cả cột.
 **Lỗi thường gặp:** Suy luận trong đầu, không kẻ bảng, nên bỏ sót khả năng. Phòng: Luôn kẻ bảng, kể cả khi bài có vẻ dễ.
 
+### Bài A.2
+**Đáp số:** a) 10 457 · b) 95 717 · c) 96 001 · d) 34 590 · e) 94 072
+**Hướng giải:** BẪY — Chữ số 0 ở giữa thương. Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
+**Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
+**Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+
 ### Bài A.3
-**Đáp số:** a) 64 cách · b) 16 cách · c) 32 cách · d) 15 cách · e) 21 cách
+**Đáp số:** a) 15 cách · b) 20 cách · c) 6 cách · d) 8 cách · e) 12 cách · f) 24 cách · g) 16 cách
 **Hướng giải:** BẪY — Cộng hay nhân. Nếu công việc gồm hai bước liên tiếp, bước một có a cách, bước hai có b cách, thì cả công việc có a × b cách. Đây là **quy tắc nhân**.
 **Nhãn tư duy:** TD2, TD4. Điểm chốt: Hai việc phải làm **cùng lúc, nối tiếp** thì nhân; chọn một trong hai khả năng rời nhau thì cộng.
 **Lỗi thường gặp:** Cộng số áo với số quần. Phòng: Tự hỏi: chọn xong áo đã đủ một bộ chưa? Chưa đủ thì phải nhân.
 
 ### Bài A.4
-**Đáp số:** a) 6 102 972 · b) 1 057 161 · c) 5 720 824 · d) 9 466 740 · e) 5 821 810
-**Hướng giải:** Mỗi số hạng cho biết một hàng. Xếp các chữ số vào đúng hàng của nó, hàng nào khuyết thì viết chữ số 0.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Hàng khuyết trong tổng vẫn phải có chữ số **0** trong số viết ra.
-**Lỗi thường gặp:** Bỏ qua hàng khuyết nên số viết ra bị ngắn đi một chữ số. Phòng: Kẻ sẵn các ô hàng rồi mới điền chữ số vào ô tương ứng.
+**Đáp số:** a) bé hơn · b) 2 cặp song song, 4 cặp vuông góc · c) góc nhọn · d) lớn hơn · e) 2 cặp song song, 4 cặp vuông góc · f) góc nhọn · g) 2 cặp song song, 4 cặp vuông góc
+**Hướng giải:** Chỉ cần hai mốc: 90° và 180°. Bé hơn 90° là nhọn, đúng 90° là vuông, giữa 90° và 180° là tù, đúng 180° là bẹt.
+**Nhãn tư duy:** TD1, TD2. Điểm chốt: Hai mốc **90°** và **180°** chia hết các loại góc.
+**Lỗi thường gặp:** Gọi góc 90° là góc nhọn vì thấy “nhỏ”. Phòng: Áp ê ke vào góc trước khi gọi tên.
 
 ### Bài A.5
-**Đáp số:** a) 10 925 420 · b) 7 347 440 · c) 24 078 104 · d) 4 931 802 · e) 1 374 464 · f) 99 195
-**Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
-**Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
-**Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+**Đáp số:** a) 15 cách · b) 16 cách · c) 6 bạn · d) 18 cách
+**Hướng giải:** Chọn **một trong hai nhóm rời nhau** thì cộng. Chọn **mỗi nhóm một phần tử** thì nhân. Khi hai nhóm có phần tử chung, số phần tử thuộc ít nhất một nhóm bằng tổng hai nhóm trừ đi phần chung (vì phần chung đã bị đếm hai lần).
+**Nhãn tư duy:** TD2, TD6. Điểm chốt: Có phần chung thì phải **trừ đi một lần** phần chung.
+**Lỗi thường gặp:** Cộng thẳng hai nhóm khi chúng có phần tử chung. Phòng: Vẽ hai vòng tròn giao nhau, ghi số vào từng miền.
 
 ### Bài B.1
 **Đáp số:** a) câu lời giải nêu rõ đang tìm đại lượng nào · b) phép tính, viết đủ dấu và đủ đơn vị · c) kết quả kèm đơn vị · d) câu đáp số · e) một phần tư số điểm của bài
@@ -370,7 +371,7 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Lỗi thường gặp:** Viết thẳng phép tính, bỏ câu lời giải. Phòng: Đọc lại bài đã làm, đếm xem có đủ bốn dòng chưa.
 
 ### Bài B.2
-**Đáp số:** a) “Trắc nghiệm đếm nhanh là:” · b) “Đếm bằng quy tắc cộng, nhân, bù trừ là:” · c) “Đi-rích-lê dạng chứng minh là:” · d) “Suy luận nói thật – nói dối là:” · e) “Đếm số lập được có điều kiện là:”
+**Đáp số:** a) “Thử chọn là:” · b) “Trắc nghiệm đếm nhanh là:” · c) “Đi-rích-lê dạng chứng minh là:” · d) “Suy luận nói thật – nói dối là:” · e) “Bài toán bất biến là:”
 **Hướng giải:** Câu lời giải chỉ cần nhắc lại đại lượng đang tìm, không cần dài dòng.
 **Nhãn tư duy:** TD1. Điểm chốt: Câu lời giải phải **nêu đúng đại lượng** đang tìm.
 **Lỗi thường gặp:** Viết câu lời giải chung chung cho mọi bài. Phòng: Lấy đúng cụm từ trong câu hỏi của đề làm câu lời giải.
@@ -382,7 +383,7 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Lỗi thường gặp:** Ghi diện tích bằng cm thay vì cm². Phòng: Trước khi viết đáp số, hỏi: đại lượng này đo bằng gì?
 
 ### Bài B.4
-**Đáp số:** a) Trước mỗi ý, viết một chữ tắt cho kỹ thuật: cặp, nhân, xấu nhất, khoảng. · b) Vẽ hai vòng tròn giao nhau, ghi số vào từng miền. · c) Viết hẳn hai dòng: “Ngăn kéo là …”, “Đồ vật là …”. · d) Đánh số các câu nói, ghi rõ câu nào phủ định câu nào. · e) Viết rõ thứ tự chọn hàng trước khi nhân các số cách. · f) Tự hỏi: chọn xong áo đã đủ một bộ chưa? Chưa đủ thì phải nhân.
+**Đáp số:** a) Viết danh sách ra giấy và gạch bỏ từng số, đừng thử nhẩm trong đầu. · b) Trước mỗi ý, viết một chữ tắt cho kỹ thuật: cặp, nhân, xấu nhất, khoảng. · c) Viết hẳn hai dòng: “Ngăn kéo là …”, “Đồ vật là …”. · d) Đánh số các câu nói, ghi rõ câu nào phủ định câu nào. · e) Sau khi đoán, hãy kiểm tra: đại lượng đó thay đổi thế nào sau **một** bước? · f) Tự hỏi: chọn xong áo đã đủ một bộ chưa? Chưa đủ thì phải nhân.
 **Hướng giải:** Mỗi lỗi đều có một cách phòng cụ thể, làm được ngay trong lúc làm bài. Chép cả cặp lỗi – cách phòng vào sổ lỗi.
 **Nhãn tư duy:** TD2. Điểm chốt: Sổ lỗi chỉ có ích khi ghi **cả cách phòng**, không chỉ ghi lỗi.
 **Lỗi thường gặp:** Ghi lỗi vào sổ nhưng không ghi cách phòng nên lần sau vẫn sai. Phòng: Mỗi dòng sổ lỗi bắt buộc có hai cột: lỗi và cách phòng.
@@ -400,10 +401,10 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Lỗi thường gặp:** Dò lại phép tính nhưng không đọc lại câu hỏi. Phòng: Sau mỗi bài, đọc to lại câu hỏi rồi đối chiếu với đáp số.
 
 ### Bài C.2
-**Đáp số:** a) tầng 2 · b) Trước mỗi ý, viết một chữ tắt cho kỹ thuật: cặp, nhân, xấu nhất, khoảng. · c) toàn bộ số điểm của ý sai · d) Trước mỗi ý, viết một chữ tắt cho kỹ thuật: cặp, nhân, xấu nhất, khoảng. · e) Nhận **đúng kỹ thuật** trong 5 giây rồi mới tính — đó là kỹ năng thi.
-**Hướng giải:** Sáu kỹ thuật quen: đếm cặp thì chia 2; chọn mỗi nhóm một phần tử thì nhân; “chắc chắn có” thì xét trường hợp xấu nhất rồi cộng 1; trồng cây thì tính số khoảng trước; lập số thì cố định hàng cao nhất; thứ trong tuần thì chia 7 lấy dư.
-**Nhãn tư duy:** TD4, TD5. Điểm chốt: Nhận **đúng kỹ thuật** trong 5 giây rồi mới tính — đó là kỹ năng thi.
-**Lỗi thường gặp:** Đếm cặp mà quên chia 2; “chắc chắn có” mà quên cộng 1. Phòng: Trước mỗi ý, viết một chữ tắt cho kỹ thuật: cặp, nhân, xấu nhất, khoảng.
+**Đáp số:** a) tầng 2 · b) Viết danh sách ra giấy và gạch bỏ từng số, đừng thử nhẩm trong đầu. · c) toàn bộ số điểm của ý sai · d) Viết danh sách ra giấy và gạch bỏ từng số, đừng thử nhẩm trong đầu. · e) Phải xét **hết** danh sách. Bài thử chọn thường có hơn một đáp số.
+**Hướng giải:** Chọn điều kiện cho ít khả năng nhất để liệt kê trước, rồi mới đem điều kiện còn lại ra thử. Làm ngược thứ tự ấy thì phải thử gấp nhiều lần.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Phải xét **hết** danh sách. Bài thử chọn thường có hơn một đáp số.
+**Lỗi thường gặp:** Tìm được một số thoả rồi dừng, bỏ sót các đáp số còn lại. Phòng: Viết danh sách ra giấy và gạch bỏ từng số, đừng thử nhẩm trong đầu.
 
 ### Bài C.3
 **Đáp số:** a) tầng 2 · b) Đánh số các câu nói, ghi rõ câu nào phủ định câu nào. · c) toàn bộ số điểm của ý sai · d) Đánh số các câu nói, ghi rõ câu nào phủ định câu nào. · e) Cặp câu **phủ định nhau** luôn có đúng một câu đúng — đó là điểm tựa.
@@ -412,16 +413,16 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Lỗi thường gặp:** Thử từng người một cách rời rạc mà không dùng ràng buộc tổng số câu nói thật. Phòng: Đánh số các câu nói, ghi rõ câu nào phủ định câu nào.
 
 ### Bài C.4
-**Đáp số:** a) tầng 2 · b) Thử lại: nhân ngược ra tổng số bánh, phải khớp với đề. · c) toàn bộ số điểm của ý sai · d) Thử lại: nhân ngược ra tổng số bánh, phải khớp với đề. · e) Chia cho **hiệu** số bánh của hai loại, không chia cho số bánh của một loại.
-**Hướng giải:** Giả sử tất cả đều là loại có ít bánh hơn, tính tổng số bánh giả định. Số bánh còn thiếu so với thực tế chia cho hiệu số bánh của hai loại cho biết số xe loại nhiều bánh hơn.
-**Nhãn tư duy:** TD6, TD3. Điểm chốt: Chia cho **hiệu** số bánh của hai loại, không chia cho số bánh của một loại.
-**Lỗi thường gặp:** Chia số bánh thiếu cho số bánh của loại nhiều hơn. Phòng: Thử lại: nhân ngược ra tổng số bánh, phải khớp với đề.
+**Đáp số:** a) tầng 2 · b) Vẽ hình ba khoảng, đếm tay rồi mới áp dụng cho số lớn. · c) toàn bộ số điểm của ý sai · d) Vẽ hình ba khoảng, đếm tay rồi mới áp dụng cho số lớn. · e) Năm trường hợp cho **năm đáp số khác nhau** với cùng một số khoảng.
+**Hướng giải:** Tính **số khoảng** trước: độ dài chia khoảng cách. Rồi chọn công thức theo trường hợp — trồng cả hai đầu thì cộng 1, một đầu thì bằng, không đầu nào thì trừ 1, khép kín thì bằng, cưa thành đoạn thì trừ 1.
+**Nhãn tư duy:** TD3, TD6. Điểm chốt: Năm trường hợp cho **năm đáp số khác nhau** với cùng một số khoảng.
+**Lỗi thường gặp:** Máy móc cộng 1 cho mọi trường hợp. Phòng: Vẽ hình ba khoảng, đếm tay rồi mới áp dụng cho số lớn.
 
 ### Bài C.5
-**Đáp số:** a) tầng 2 · b) Luôn tô màu và đếm hai màu trước khi kết luận. · c) toàn bộ số điểm của ý sai · d) Luôn tô màu và đếm hai màu trước khi kết luận. · e) Tô màu biến bài toán hình thành bài toán **đếm** — đó là toàn bộ ý tưởng.
-**Hướng giải:** Tô bàn cờ xen kẽ hai màu. Mỗi quân đô-mi-nô, dù đặt ngang hay dọc, luôn phủ đúng **một ô mỗi màu**. Vì vậy nếu phủ kín được thì số ô đen phải bằng số ô trắng. Hai ô ở hai góc đối diện của bàn cờ luôn **cùng màu**, bỏ chúng đi làm hai màu lệch nhau 2 ô, nên không thể phủ kín.
-**Nhãn tư duy:** TD6, TD2. Điểm chốt: Tô màu biến bài toán hình thành bài toán **đếm** — đó là toàn bộ ý tưởng.
-**Lỗi thường gặp:** Thử xếp bằng tay rồi kết luận “không xếp được” mà không chứng minh. Phòng: Luôn tô màu và đếm hai màu trước khi kết luận.
+**Đáp số:** a) tầng 2 · b) Vẽ hai vòng tròn giao nhau, ghi số vào từng miền. · c) toàn bộ số điểm của ý sai · d) Vẽ hai vòng tròn giao nhau, ghi số vào từng miền. · e) Có phần chung thì phải **trừ đi một lần** phần chung.
+**Hướng giải:** Chọn **một trong hai nhóm rời nhau** thì cộng. Chọn **mỗi nhóm một phần tử** thì nhân. Khi hai nhóm có phần tử chung, số phần tử thuộc ít nhất một nhóm bằng tổng hai nhóm trừ đi phần chung (vì phần chung đã bị đếm hai lần).
+**Nhãn tư duy:** TD2, TD6. Điểm chốt: Có phần chung thì phải **trừ đi một lần** phần chung.
+**Lỗi thường gặp:** Cộng thẳng hai nhóm khi chúng có phần tử chung. Phòng: Vẽ hai vòng tròn giao nhau, ghi số vào từng miền.
 
 ### Bài D.1
 **Đáp số:** a) Tô màu, bàn cờ, chia phần và suy luận dạng đề chuyên · b) 7 · c) tên một dạng bài của chương · d) 3 nhánh con: dấu hiệu · phương pháp · lỗi hay mắc · e) so với bảng dạng bài ở phiếu Dạng bài & Đọc vị
@@ -431,10 +432,10 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài D.2
-**Đáp số:** a) Từ khoá “và”, “hoặc”, “cả hai”, “ít nhất một” · b) Vẽ hai vòng tròn giao nhau, đếm theo miền · c) Cộng thẳng hai nhóm khi chúng có phần tử chung. · d) Quy tắc cộng, quy tắc nhân, nguyên lí bù trừ · e) Vẽ sơ đồ Ven ba miền, điền số vào miền giữa trước.
+**Đáp số:** a) Nhiều câu ngắn, mỗi câu một kỹ thuật khác nhau · b) Nhận dạng kỹ thuật trước, tính sau · c) Đếm cặp mà quên chia 2; “chắc chắn có” mà quên cộng 1. · d) Đếm cặp, quy tắc nhân, ngăn kéo, trồng cây, chu kì 7 · e) Học thuộc bốn công thức: n(n−1):2, a×b, loại×(cần−1)+1, khoảng+1.
 **Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
-**Nhãn tư duy:** TD2, TD6. Điểm chốt: Có phần chung thì phải **trừ đi một lần** phần chung.
-**Lỗi thường gặp:** Cộng thẳng hai nhóm khi chúng có phần tử chung. Phòng: Vẽ hai vòng tròn giao nhau, ghi số vào từng miền.
+**Nhãn tư duy:** TD4, TD5. Điểm chốt: Nhận **đúng kỹ thuật** trong 5 giây rồi mới tính — đó là kỹ năng thi.
+**Lỗi thường gặp:** Đếm cặp mà quên chia 2; “chắc chắn có” mà quên cộng 1. Phòng: Trước mỗi ý, viết một chữ tắt cho kỹ thuật: cặp, nhân, xấu nhất, khoảng.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài D.3
@@ -452,10 +453,10 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài D.5
-**Đáp số:** a) “Chia đều cho … bạn”, “còn thừa” · b) Chia lấy thương và dư, rồi lập luận thêm hoặc bớt · c) Nhầm “thêm bao nhiêu” với “bớt bao nhiêu”, cả hai đều lấy số dư. · d) Phép chia có dư; số dư bé hơn số chia · e) Thử lại bằng công thức số bị chia = số chia × thương + số dư.
+**Đáp số:** a) Bàn cờ, quân đô-mi-nô, câu hỏi “có thể phủ kín không” · b) Tô màu xen kẽ, đếm hai màu, so sánh · c) Thử xếp bằng tay rồi kết luận “không xếp được” mà không chứng minh. · d) Kĩ thuật tô màu, bất biến, tính chẵn lẻ · e) Hai ô ở hai góc đối diện của bàn cờ luôn cùng màu.
 **Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
-**Nhãn tư duy:** TD1, TD2. Điểm chốt: Thêm vào thì thêm **số chia trừ số dư**, không phải thêm số dư.
-**Lỗi thường gặp:** Nhầm “thêm bao nhiêu” với “bớt bao nhiêu”, cả hai đều lấy số dư. Phòng: Vẽ một hàng ô: phần dư còn thiếu bao nhiêu ô nữa thì đầy một suất?
+**Nhãn tư duy:** TD6, TD2. Điểm chốt: Tô màu biến bài toán hình thành bài toán **đếm** — đó là toàn bộ ý tưởng.
+**Lỗi thường gặp:** Thử xếp bằng tay rồi kết luận “không xếp được” mà không chứng minh. Phòng: Luôn tô màu và đếm hai màu trước khi kết luận.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.1
@@ -466,10 +467,10 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.2
-**Đáp số:** a) “Hôm nay nhóm mình nói về Trắc nghiệm đếm nhanh.” · b) Nhiều câu ngắn, mỗi câu một kỹ thuật khác nhau · c) Đếm cặp, quy tắc nhân, ngăn kéo, trồng cây, chu kì 7 · d) 6 bạn bắt tay nhau. Có bao nhiêu cái bắt tay? → 15 cái · e) Đếm cặp mà quên chia 2; “chắc chắn có” mà quên cộng 1. · f) Học thuộc bốn công thức: n(n−1):2, a×b, loại×(cần−1)+1, khoảng+1.
-**Hướng giải:** Sáu kỹ thuật quen: đếm cặp thì chia 2; chọn mỗi nhóm một phần tử thì nhân; “chắc chắn có” thì xét trường hợp xấu nhất rồi cộng 1; trồng cây thì tính số khoảng trước; lập số thì cố định hàng cao nhất; thứ trong tuần thì chia 7 lấy dư.
-**Nhãn tư duy:** TD4, TD5. Điểm chốt: Nhận **đúng kỹ thuật** trong 5 giây rồi mới tính — đó là kỹ năng thi.
-**Lỗi thường gặp:** Đếm cặp mà quên chia 2; “chắc chắn có” mà quên cộng 1. Phòng: Trước mỗi ý, viết một chữ tắt cho kỹ thuật: cặp, nhân, xấu nhất, khoảng.
+**Đáp số:** a) “Hôm nay nhóm mình nói về Thử chọn.” · b) Đề đòi một số thoả **nhiều điều kiện cùng lúc**, số khả năng hữu hạn · c) Dấu hiệu chia hết; cấu tạo số có hai chữ số · d) Tìm mọi số có hai chữ số chia hết cho 5 và có tổng hai chữ số bằng 9. → 45 và 90 · e) Tìm được một số thoả rồi dừng, bỏ sót các đáp số còn lại. · f) Tổng hai chữ số cố định thì chỉ có tối đa mười số — liệt kê rất nhanh.
+**Hướng giải:** Chọn điều kiện cho ít khả năng nhất để liệt kê trước, rồi mới đem điều kiện còn lại ra thử. Làm ngược thứ tự ấy thì phải thử gấp nhiều lần.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Phải xét **hết** danh sách. Bài thử chọn thường có hơn một đáp số.
+**Lỗi thường gặp:** Tìm được một số thoả rồi dừng, bỏ sót các đáp số còn lại. Phòng: Viết danh sách ra giấy và gạch bỏ từng số, đừng thử nhẩm trong đầu.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.3
@@ -480,17 +481,17 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.4
-**Đáp số:** a) “Hôm nay nhóm mình nói về Đếm số lập được có điều kiện.” · b) Bộ chữ số cho trước kèm điều kiện chia hết · c) Quy tắc nhân, dấu hiệu chia hết · d) Từ 1, 2, 3, 4 lập được bao nhiêu số có ba chữ số khác nhau? → 24 · e) Chọn hàng trăm trước rồi mới xét điều kiện tận cùng, dẫn đến đếm trùng hoặc sót. · f) Số chia hết cho 3 nhận diện qua tổng ba chữ số được chọn — xét theo bộ ba.
-**Hướng giải:** Đếm theo từng bước có ràng buộc: với điều kiện về chữ số tận cùng (chẵn, chia hết cho 5) thì chọn **chữ số tận cùng trước**, rồi mới chọn các hàng còn lại. Nhớ loại các số có chữ số 0 ở hàng trăm.
-**Nhãn tư duy:** TD4, TD6. Điểm chốt: Có ràng buộc ở hàng nào thì **chọn hàng đó trước**.
-**Lỗi thường gặp:** Chọn hàng trăm trước rồi mới xét điều kiện tận cùng, dẫn đến đếm trùng hoặc sót. Phòng: Viết rõ thứ tự chọn hàng trước khi nhân các số cách.
+**Đáp số:** a) “Hôm nay nhóm mình nói về Bài toán bất biến.” · b) Một quá trình lặp lại nhiều bước, hỏi trạng thái cuối · c) Tính chẵn lẻ, đại lượng bất biến · d) Viết các số 1 đến 4, mỗi bước thay hai số bằng hiệu. Số cuối chẵn hay lẻ? → chẵn · e) Thử mò vài trường hợp rồi kết luận, không chứng minh được cho mọi cách làm. · f) Thử với n nhỏ (n = 3, 4) để đoán, rồi chứng minh bằng bất biến.
+**Hướng giải:** Khi thay a và b (giả sử a ≥ b) bằng a − b, tổng giảm đi 2b — luôn là một số chẵn. Vì vậy **tính chẵn lẻ của tổng không bao giờ thay đổi**. Số còn lại cuối cùng chính là tổng lúc đó, nên nó cùng tính chẵn lẻ với tổng ban đầu.
+**Nhãn tư duy:** TD6, TD2. Điểm chốt: Tìm đại lượng **không đổi** qua mỗi bước là chìa khoá của cả lớp bài này.
+**Lỗi thường gặp:** Thử mò vài trường hợp rồi kết luận, không chứng minh được cho mọi cách làm. Phòng: Sau khi đoán, hãy kiểm tra: đại lượng đó thay đổi thế nào sau **một** bước?
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.5
-**Đáp số:** a) “Hôm nay nhóm mình nói về Giả thiết tạm hai loại.” · b) Hai loại đối tượng, biết tổng số và tổng của một đại lượng phụ · c) Phương pháp giả thiết tạm · d) 10 xe đạp và ô tô, 28 bánh. Có mấy ô tô? → 4 ô tô · e) Chia số bánh thiếu cho số bánh của loại nhiều hơn. · f) Kiểm tra ngay: số bánh phải nằm giữa tổng × (số bánh ít nhất) và tổng × (số bánh nhiều nhất).
-**Hướng giải:** Giả sử tất cả đều là loại có ít bánh hơn, tính tổng số bánh giả định. Số bánh còn thiếu so với thực tế chia cho hiệu số bánh của hai loại cho biết số xe loại nhiều bánh hơn.
-**Nhãn tư duy:** TD6, TD3. Điểm chốt: Chia cho **hiệu** số bánh của hai loại, không chia cho số bánh của một loại.
-**Lỗi thường gặp:** Chia số bánh thiếu cho số bánh của loại nhiều hơn. Phòng: Thử lại: nhân ngược ra tổng số bánh, phải khớp với đề.
+**Đáp số:** a) “Hôm nay nhóm mình nói về Bài toán trồng cây, chia đoạn.” · b) “Trồng cây”, “cột điện”, “quanh hồ”, “cưa thành đoạn” · c) Quan hệ số điểm – số khoảng · d) Đường dài 20 m, cây cách nhau 4 m, trồng cả hai đầu. Mấy cây? → 6 cây · e) Máy móc cộng 1 cho mọi trường hợp. · f) Khép kín thì số cây bằng đúng số khoảng — không cộng, không trừ.
+**Hướng giải:** Tính **số khoảng** trước: độ dài chia khoảng cách. Rồi chọn công thức theo trường hợp — trồng cả hai đầu thì cộng 1, một đầu thì bằng, không đầu nào thì trừ 1, khép kín thì bằng, cưa thành đoạn thì trừ 1.
+**Nhãn tư duy:** TD3, TD6. Điểm chốt: Năm trường hợp cho **năm đáp số khác nhau** với cùng một số khoảng.
+**Lỗi thường gặp:** Máy móc cộng 1 cho mọi trường hợp. Phòng: Vẽ hình ba khoảng, đếm tay rồi mới áp dụng cho số lớn.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ---

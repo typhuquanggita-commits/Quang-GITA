@@ -92,47 +92,47 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 
 Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: đây là dạng bài gì, và dấu hiệu nào cho biết điều đó.
 
-**Đề 1.** Dãy số được lập theo ba quy tắc sau.
-
-- Số hạng đầu bằng 5.
-- Số hạng ở **vị trí chẵn** bằng số hạng liền trước nhân 2 rồi cộng 3.
-- Số hạng ở **vị trí lẻ** bằng số hạng liền trước cộng 3 nhân với số thứ tự của số hạng liền trước. Viết ba số hạng đầu tiên của dãy.
+**Đề 1.** Đếm số lần xuất hiện, tính cả khi chữ số đó xuất hiện nhiều lần trong một số. Từ 1 đến 500, chữ số 5 xuất hiện bao nhiêu lần?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 2.** Tính nhanh mỗi tổng, nêu công thức đã dùng. 1 + 2 + 3 + … + 25
+**Đề 2.** Dãy số được lập theo ba quy tắc sau.
+
+- Số hạng đầu bằng 1.
+- Số hạng ở **vị trí chẵn** bằng số hạng liền trước nhân 2 rồi cộng 6.
+- Số hạng ở **vị trí lẻ** bằng số hạng liền trước cộng 6 nhân với số thứ tự của số hạng liền trước. Viết ba số hạng đầu tiên của dãy.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 3.** Cho dãy lặp lại vô hạn theo nhóm: 5, 4, 2, 8, 2, 8, 5, 4, 2, 8, 2, 8, 5, … Số hạng thứ 354 của dãy là số nào?
+**Đề 3.** Điền số thích hợp vào chỗ chấm. 4, 11, 18, …, 32, 39
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 4.** Cho dãy số: 4, 8, 12, 16, … (mỗi số hơn số liền trước 4 đơn vị). Số hạng thứ 8 của dãy là số nào?
+**Đề 4.** Cho dãy số: 5, 8, 11, 14, … (mỗi số hơn số liền trước 3 đơn vị). Số hạng thứ 10 của dãy là số nào?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 5.** Dãy số bắt đầu bằng 1; hiệu giữa hai số hạng liên tiếp lần lượt là 2, 4, 6, 8, … (mỗi hiệu hơn hiệu trước 2 đơn vị). Viết bốn số hạng đầu của dãy.
+**Đề 5.** Tính nhanh mỗi tổng, nêu công thức đã dùng. 1 + 3 + 5 + … + 49 (tổng 25 số lẻ đầu tiên)
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 6.** Điền số thích hợp vào chỗ chấm. 7, 16, 25, …, 43, 52
+**Đề 6.** Tìm quy luật rồi viết tiếp ba số hạng của mỗi dãy. 27, 29, 31, 33, …
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 7.** Tìm quy luật rồi viết tiếp ba số hạng của mỗi dãy. 11, 15, 19, 23, …
+**Đề 7.** Cho dãy: 8, 16, 24, …, 496. Dãy có bao nhiêu số hạng?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 8.** Quan sát quy luật số que diêm rồi trả lời. Hình thứ 1 có 3 que diêm, mỗi hình sau hơn hình liền trước 5 que. Hình thứ 3 có bao nhiêu que diêm?
+**Đề 8.** Quan sát quy luật số que diêm rồi trả lời. Hình thứ 1 có 4 que diêm, mỗi hình sau hơn hình liền trước 5 que. Hình thứ 5 có bao nhiêu que diêm?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 9.** Cho dãy: 6, 9, 12, …, 150. Dãy có bao nhiêu số hạng?
+**Đề 9.** Cho dãy lặp lại vô hạn theo nhóm: 1, 5, 5, 4, 6, 8, 1, 1, 5, 5, 4, 6, 8, 1, 1, … Số hạng thứ 338 của dãy là số nào?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 10.** Tính số số hạng của mỗi dãy. Dãy 11, 15, 19, …, 199 có bao nhiêu số hạng?
+**Đề 10.** Cho dãy 1, 8, 15, …, 1 576. Dãy có bao nhiêu số hạng?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
@@ -142,16 +142,16 @@ Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: 
 
 | # | Dạng bài | Dấu hiệu |
 |:--:|---|---|
-| 1 | Dãy số truy hồi có quy tắc rẽ nhánh | Đề mô tả cách lập số hạng từ số hạng liền trước |
-| 2 | Tổng dãy đặc biệt | Dãy toàn số lẻ, toàn số chẵn, hoặc số tự nhiên liên tiếp |
-| 3 | Dãy tuần hoàn | Dãy lặp lại một nhóm số cố định |
+| 1 | Đếm số lần xuất hiện của một chữ số | Câu hỏi “chữ số … xuất hiện bao nhiêu lần” |
+| 2 | Dãy số truy hồi có quy tắc rẽ nhánh | Đề mô tả cách lập số hạng từ số hạng liền trước |
+| 3 | Điền số hạng còn thiếu của dãy cách đều | Dãy có ô trống ở giữa |
 | 4 | Tìm số hạng thứ n của dãy cách đều | Đề hỏi “số hạng thứ …” |
-| 5 | Dãy có hiệu tăng đều (hiệu bậc hai) | Hiệu giữa các số hạng tăng đều đặn |
-| 6 | Điền số hạng còn thiếu của dãy cách đều | Dãy có ô trống ở giữa |
-| 7 | Tìm quy luật dãy cách đều | Dãy số kèm dấu … ở cuối |
+| 5 | Tổng dãy đặc biệt | Dãy toàn số lẻ, toàn số chẵn, hoặc số tự nhiên liên tiếp |
+| 6 | Tìm quy luật dãy cách đều | Dãy số kèm dấu … ở cuối |
+| 7 | Định vị số hạng, kiểm tra một số có thuộc dãy | Câu hỏi “là số hạng thứ mấy”, “có thuộc dãy không” |
 | 8 | Quy luật hình đưa về dãy số | Đề mô tả hình xếp thêm đều đặn theo thứ tự |
-| 9 | Định vị số hạng, kiểm tra một số có thuộc dãy | Câu hỏi “là số hạng thứ mấy”, “có thuộc dãy không” |
-| 10 | Đếm số hạng dãy cách đều | Dãy có số đầu, số cuối và khoảng cách đều |
+| 9 | Dãy tuần hoàn | Dãy lặp lại một nhóm số cố định |
+| 10 | Đếm và tính tổng dãy con thoả điều kiện chia hết | Đề hỏi riêng các số chẵn, số chia hết cho … trong một dãy |
 
 ---
 

@@ -234,52 +234,41 @@ f) 88 hg … 900 tạ
 
 ## PHẦN D — DẠNG 5 – DẠNG 6 VÀ DẠNG PHỐI HỢP · Mức M3 — Vận dụng · 20 phút · 20 điểm
 
-### Bài 1. (4 điểm) Đếm số lần xuất hiện của một chữ số
+### Bài 1. (4 điểm) Hai nhóm có phần chung — đếm bằng hai vòng tròn
 
-Đếm số lần xuất hiện, tính cả khi chữ số đó xuất hiện nhiều lần trong một số.
+Vẽ hai vòng tròn và điền số vào ba phần trước khi tính.
 
-a) Từ 1 đến 300, chữ số 0 xuất hiện bao nhiêu lần?
-b) Từ 1 đến 200, chữ số 7 xuất hiện bao nhiêu lần?
-c) Từ 1 đến 200, chữ số 2 xuất hiện bao nhiêu lần?
-d) Từ 1 đến 300, chữ số 1 xuất hiện bao nhiêu lần?
+a) Lớp 5A có 37 học sinh. Có 19 em học hát, 26 em học bơi, trong đó 8 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
+b) Lớp 5A có 29 học sinh. Có 14 em học cờ vua, 19 em học bơi, trong đó 7 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
+c) Lớp 4A có 45 học sinh. Có 22 em học tiếng Anh, 31 em học hát, trong đó 12 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
+d) Lớp 4A có 30 học sinh. Có 18 em học bơi, 19 em học bóng rổ, trong đó 7 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
+e) Lớp 5B có 38 học sinh. Có 17 em học cờ vua, 27 em học hát, trong đó 7 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
 
-### Bài 2. (4 điểm) Tổng của các số tự nhiên liên tiếp
+### Bài 2. (4 điểm) Định vị số hạng trong dãy cách đều
 
-Với mỗi ý, tìm số theo yêu cầu.
-
-a) Tổng của 9 số tự nhiên liên tiếp bằng 2 070. Tìm số bé nhất trong 9 số đó.
-b) Tổng của 7 số tự nhiên liên tiếp bằng 1 057. Tìm số bé nhất trong 7 số đó.
-c) Tổng của 3 số tự nhiên liên tiếp bằng 402. Tìm số bé nhất trong 3 số đó.
-d) Tổng của 9 số tự nhiên liên tiếp bằng 342. Tìm số bé nhất trong 9 số đó.
-
-### Bài 3. (4 điểm) Định vị số hạng trong dãy cách đều
-
-Cho dãy: 12, 20, 28, …, 732.
+Cho dãy: 3, 11, 19, …, 2 067.
 
 a) Dãy có bao nhiêu số hạng?
-b) Số hạng thứ 45 là số nào?
-c) Số 212 là số hạng thứ mấy?
-d) Số 324 là số hạng thứ mấy?
-e) Số 629 có thuộc dãy không? Vì sao?
+b) Số hạng thứ 129 là số nào?
+c) Số 203 là số hạng thứ mấy?
+d) Số 1 011 là số hạng thứ mấy?
+e) Số 1 876 có thuộc dãy không? Vì sao?
 f) Tổng của cả dãy bằng bao nhiêu?
 
-### Bài 4. (4 điểm) Đếm số cặp — bắt tay, trận đấu, đường thẳng
+### Bài 3. (4 điểm) Tính nhanh tổng dãy số cách đều
 
-Ba tình huống, cùng một cách đếm.
+Tính tổng mỗi dãy.
 
-a) Cho 5 điểm, không có ba điểm nào thẳng hàng. Qua hai điểm bất kì kẻ một đường thẳng. Hỏi kẻ được bao nhiêu đường thẳng?
-b) Một giải đấu có 9 đội, hai đội bất kì đấu với nhau đúng một trận. Hỏi có tất cả bao nhiêu trận?
-c) Có 6 người, mỗi người bắt tay với tất cả những người còn lại đúng một lần. Hỏi có tất cả bao nhiêu cái bắt tay?
-d) Có 13 người, mỗi người bắt tay với tất cả những người còn lại đúng một lần. Hỏi có tất cả bao nhiêu cái bắt tay?
-e) Một giải đấu có 9 đội, hai đội bất kì đấu với nhau đúng một trận. Hỏi có tất cả bao nhiêu trận?
-f) Cho 20 điểm, không có ba điểm nào thẳng hàng. Qua hai điểm bất kì kẻ một đường thẳng. Hỏi kẻ được bao nhiêu đường thẳng?
-g) Có 19 người, mỗi người bắt tay với tất cả những người còn lại đúng một lần. Hỏi có tất cả bao nhiêu cái bắt tay?
+a) 1 + 2 + 3 + … + 10
+b) 2 + 5 + 8 + … + 149
+c) 1 + 6 + 11 + … + 496
+d) 1 + 3 + 5 + … + 39
 
-### Bài 5. (4 điểm) Dãy số cho bởi quy tắc truy hồi
+### Bài 4. (4 điểm) Dãy số cho bởi quy tắc truy hồi
 
 Dãy số được lập theo ba quy tắc sau.
 
-- Số hạng đầu bằng 2.
+- Số hạng đầu bằng 5.
 - Số hạng ở **vị trí chẵn** bằng số hạng liền trước nhân 2 rồi cộng 2.
 - Số hạng ở **vị trí lẻ** bằng số hạng liền trước cộng 2 nhân với số thứ tự của số hạng liền trước.
 
@@ -288,6 +277,15 @@ b) Số hạng thứ 5 của dãy là số nào?
 c) Số hạng thứ 7 của dãy là số nào?
 d) Số hạng thứ 9 của dãy là số nào?
 e) Từ số hạng thứ 4 đến số hạng thứ 6, dãy tăng thêm bao nhiêu đơn vị?
+
+### Bài 5. (4 điểm) Đếm số lần xuất hiện của một chữ số
+
+Đếm số lần xuất hiện, tính cả khi chữ số đó xuất hiện nhiều lần trong một số.
+
+a) Từ 1 đến 500, chữ số 1 xuất hiện bao nhiêu lần?
+b) Từ 1 đến 500, chữ số 9 xuất hiện bao nhiêu lần?
+c) Từ 1 đến 200, chữ số 2 xuất hiện bao nhiêu lần?
+d) Từ 1 đến 100, chữ số 9 xuất hiện bao nhiêu lần?
 
 ---
 
@@ -449,39 +447,39 @@ f) Lỗi nào dễ mắc ở đề này?
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.
 
 ### Bài D.1
-**Đáp số:** a) 51 · b) 40 · c) 41 · d) 160
-**Hướng giải:** BẪY — Số 33, 44… chứa hai lần cùng một chữ số. Đếm theo từng hàng: đếm số lần chữ số đó đứng ở hàng đơn vị, rồi hàng chục, rồi hàng trăm. Ở mỗi hàng, các số thoả mãn lập thành dãy cách đều, dùng công thức đếm số hạng.
-**Nhãn tư duy:** TD4, TD6. Điểm chốt: Một số có thể chứa chữ số đó **nhiều lần**; đếm theo hàng thì không sót.
-**Lỗi thường gặp:** Đếm số lượng **số** chứa chữ số đó thay vì số **lần** xuất hiện. Phòng: Kẻ bảng: hàng đơn vị – hàng chục – hàng trăm, đếm riêng rồi cộng.
-**Gợi ý 3 tầng:** (1) Đếm riêng theo từng hàng. — (2) Ở hàng đơn vị, các số đó cách nhau bao nhiêu đơn vị? — (3) Cộng kết quả của cả ba hàng.
+**Đáp số:** a) 0 em · b) 3 em · c) 4 em · d) 0 em · e) 1 em
+**Hướng giải:** BẪY — Cộng thẳng, quên trừ phần chung. Điền phần chung vào trước, rồi trừ ra hai phần riêng. Cộng ba phần ấy được số người tham gia ít nhất một hoạt động; lấy tổng trừ đi là ra số người ngoài cả hai vòng.
+**Nhãn tư duy:** TD2, TD4. Điểm chốt: Con số đề cho cho mỗi môn **đã bao gồm** những em học cả hai. Cộng thẳng hai con số ấy là đếm phần chung hai lần.
+**Lỗi thường gặp:** Lấy tổng trừ đi tổng hai con số đề cho mà không cộng lại phần chung. Phòng: Vẽ hình trước, điền phần giữa trước, rồi mới điền hai bên.
+**Gợi ý 3 tầng:** (1) Bao nhiêu em học cả hai môn? Điền số ấy vào phần chồng nhau. — (2) Vậy chỉ học riêng mỗi môn là bao nhiêu em? — (3) Cộng ba phần rồi lấy sĩ số lớp trừ đi.
 
 ### Bài D.2
-**Đáp số:** a) 226 · b) 148 · c) 133 · d) 34
-**Hướng giải:** Với một số **lẻ** các số tự nhiên liên tiếp, số ở giữa chính là trung bình cộng: số giữa = tổng : số lượng. Số bé nhất bằng số giữa trừ đi một nửa số lượng còn lại.
-**Nhãn tư duy:** TD3, TD4. Điểm chốt: Với số lượng lẻ thì **số giữa = tổng : số lượng** — đó là chìa khoá.
-**Lỗi thường gặp:** Lấy tổng chia cho số lượng rồi nhận luôn kết quả là số bé nhất. Phòng: Vẽ dãy số ra, đánh dấu vị trí số giữa trước khi lùi về số đầu.
-**Gợi ý 3 tầng:** (1) Số lượng số hạng là số chẵn hay lẻ? — (2) Với số lượng lẻ, số ở giữa bằng tổng chia số lượng. — (3) Từ số giữa lùi về đầu dãy mấy đơn vị?
-
-### Bài D.3
-**Đáp số:** a) 91 · b) 364 · c) 26 · d) 40 · e) không · f) 33 852
+**Đáp số:** a) 259 · b) 1 027 · c) 26 · d) 127 · e) không · f) 268 065
 **Hướng giải:** BẪY — Số không thuộc dãy. Muốn biết một số là số hạng thứ mấy: lấy số đó trừ số hạng đầu, chia cho khoảng cách rồi cộng 1. Nếu phép chia còn dư thì số đó **không thuộc** dãy.
 **Nhãn tư duy:** TD4, TD2. Điểm chốt: Phép chia **có dư** là bằng chứng số đó không thuộc dãy.
 **Lỗi thường gặp:** Chia được số nguyên rồi quên cộng 1, hoặc bỏ qua phần dư. Phòng: Luôn ghi rõ thương và số dư khi chia.
 **Gợi ý 3 tầng:** (1) Lấy số đó trừ số hạng đầu. — (2) Chia hiệu cho khoảng cách — có chia hết không? — (3) Chia hết thì cộng 1 để ra thứ tự; không chia hết thì số đó không thuộc dãy.
 
-### Bài D.4
-**Đáp số:** a) 10 đường thẳng · b) 36 trận · c) 15 cái · d) 78 cái · e) 36 trận · f) 190 đường thẳng · g) 171 cái
-**Hướng giải:** BẪY — Mỗi cặp bị đếm hai lần. Mỗi người bắt tay với n − 1 người còn lại, nên tổng số lượt bắt tay là n × (n − 1). Nhưng mỗi cái bắt tay được đếm **hai lần** (một lần từ mỗi phía), nên số bắt tay thật sự là n × (n − 1) : 2.
-**Nhãn tư duy:** TD4, TD6. Điểm chốt: Chia cho 2 vì mỗi cặp được đếm **hai lần**.
-**Lỗi thường gặp:** Quên chia 2, đáp số gấp đôi. Phòng: Thử với 3 người: phải ra 3 cái bắt tay, không phải 6.
-**Gợi ý 3 tầng:** (1) Mỗi người bắt tay với bao nhiêu người? — (2) Nhân với số người thì mỗi cái bắt tay bị đếm mấy lần? — (3) Chia kết quả cho 2.
+### Bài D.3
+**Đáp số:** a) 55 · b) 3 775 · c) 24 850 · d) 400
+**Hướng giải:** BẪY — Quên cộng 1 khi đếm số số hạng. Đếm số số hạng: (số cuối − số đầu) : khoảng cách + 1. Tổng bằng (số đầu + số cuối) × số số hạng : 2. Cách hiểu: ghép số đầu với số cuối, số thứ hai với số áp chót… mỗi cặp có tổng bằng nhau.
+**Nhãn tư duy:** TD4, TD5. Điểm chốt: Phải đếm **số số hạng** trước; đây là chỗ sai nhiều nhất.
+**Lỗi thường gặp:** Lấy số cuối chia khoảng cách làm số số hạng, quên cộng 1. Phòng: Viết ra ba số đầu và ba số cuối để kiểm tra khoảng cách rồi mới đếm.
+**Gợi ý 3 tầng:** (1) Khoảng cách giữa hai số liên tiếp là bao nhiêu? — (2) Dãy có bao nhiêu số hạng? — (3) Tổng = (đầu + cuối) × số số hạng : 2.
 
-### Bài D.5
-**Đáp số:** a) 2, 6, 10 · b) 30 · c) 74 · d) 166 · e) 40
+### Bài D.4
+**Đáp số:** a) 5, 12, 16 · b) 42 · c) 98 · d) 214 · e) 52
 **Hướng giải:** BẪY — Quy tắc khác nhau ở vị trí chẵn và lẻ. Lập bảng và tính lần lượt từng số hạng theo đúng quy tắc, không nhảy cóc. Ghi rõ số thứ tự của mỗi số hạng để chọn đúng nhánh quy tắc.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Quy tắc phụ thuộc **vị trí chẵn hay lẻ** — phải đánh số thứ tự trước.
 **Lỗi thường gặp:** Áp dụng nhầm nhánh quy tắc vì không để ý vị trí. Phòng: Kẻ bảng hai dòng: dòng trên ghi vị trí, dòng dưới ghi số hạng.
 **Gợi ý 3 tầng:** (1) Kẻ bảng vị trí và số hạng. — (2) Xác định vị trí đang xét là chẵn hay lẻ. — (3) Áp dụng đúng nhánh quy tắc cho vị trí đó.
+
+### Bài D.5
+**Đáp số:** a) 200 · b) 100 · c) 41 · d) 20
+**Hướng giải:** Đếm theo từng hàng: đếm số lần chữ số đó đứng ở hàng đơn vị, rồi hàng chục, rồi hàng trăm. Ở mỗi hàng, các số thoả mãn lập thành dãy cách đều, dùng công thức đếm số hạng.
+**Nhãn tư duy:** TD4, TD6. Điểm chốt: Một số có thể chứa chữ số đó **nhiều lần**; đếm theo hàng thì không sót.
+**Lỗi thường gặp:** Đếm số lượng **số** chứa chữ số đó thay vì số **lần** xuất hiện. Phòng: Kẻ bảng: hàng đơn vị – hàng chục – hàng trăm, đếm riêng rồi cộng.
+**Gợi ý 3 tầng:** (1) Đếm riêng theo từng hàng. — (2) Ở hàng đơn vị, các số đó cách nhau bao nhiêu đơn vị? — (3) Cộng kết quả của cả ba hàng.
 
 ### Bài E.1
 **Đáp số:** a) Dãy số quy luật bậc hai hoặc xen kẽ · b) Hiệu giữa các số hạng không bằng nhau · c) Dãy hiệu, dãy con xen kẽ · d) Lập dãy hiệu; tách dãy con theo vị trí · e) Dãy 1, 4, 9, 16, 25 là các số chính phương — nhớ để nhận ra ngay. · f) Chỉ thử một hướng rồi bỏ cuộc.

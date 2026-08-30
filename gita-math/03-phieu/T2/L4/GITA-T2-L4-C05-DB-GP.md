@@ -54,11 +54,11 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần D**
 
-- **Bài D.1** — a) 96 · b) 96 cm² · c) 1 cm² · d) 48 cm² · e) 24 cm² · f) 56 cm
-- **Bài D.2** — a) 28 · b) 7 · c) 15 · d) 6 · e) 21
-- **Bài D.3** — a) 107 · b) Khoa học (30 bạn) · c) Tiếng Anh (11 bạn) · d) 19 · e) 21,4 · f) 17%
-- **Bài D.4** — a) 121 · b) 424 · c) 6 · d) 7 · e) không · f) 52 151
-- **Bài D.5** — a) 6 · b) 9 · c) 8 · d) 0 · e) 5 · f) 8
+- **Bài D.1** — a) 78, 96 · b) 96 · c) 15, 24, 33, 42, 51, 60 · d) 28, 64 · e) 65
+- **Bài D.2** — a) 15 · b) 5 · c) 6 · d) 4 · e) 10
+- **Bài D.3** — a) 15 · b) 60 cm² · c) 4 cm² · d) 30 cm² · e) 15 cm² · f) 44 cm
+- **Bài D.4** — a) 46 · b) 12 · c) 21 · d) 34 · e) 16 · f) 58
+- **Bài D.5** — a) 3 em · b) 6 em · c) 6 em · d) 1 em · e) 1 em
 
 **Phần E**
 
@@ -372,29 +372,27 @@ Kết quả: **5**.
 
 *Điểm chốt:* Phải tìm **tất cả** chữ số thoả mãn, không dừng ở chữ số đầu tiên tìm được.
 
-### Bài D.1 — Phủ hình và chia hình thành phần bằng nhau
+### Bài D.1 — Tìm số bằng cách thử và loại
 
-> **BẪY — Chia diện tích, không chia chu vi.**
+> **BẪY — Dừng ở đáp số đầu tiên.**
 
 **Các bước giải**
 
-Bước 1 — diện tích hình chữ nhật: 16 × 6 = 96 (cm²).
+Điều kiện chặt hơn là **tổng hai chữ số bằng 15** — điều kiện này chỉ cho 4 số, ít hơn hẳn điều kiện chia hết. Dùng nó để thu hẹp trước.
 
-Bước 2 — diện tích một hình vuông nhỏ: 1 × 1 = 1 (cm²).
+Liệt kê các số có hai chữ số mà tổng hai chữ số bằng 15: 69, 78, 87, 96.
 
-Bước 3 — số hình vuông cần dùng: 96 : 1 = 96 (hình).
+Thử từng số xem có chia hết cho 6 không, gạch bỏ số nào không thoả.
 
-Kiểm tra: xếp được 16 hàng, mỗi hàng 6 hình — đúng 96 hình ✓
+Còn lại: **78, 96**. Phải xét hết danh sách chứ không dừng ở số đầu tiên.
 
-Đáp số: **96 hình vuông**.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Chọn điều kiện cho ít khả năng nhất để liệt kê trước, rồi mới đem điều kiện còn lại ra thử. Làm ngược thứ tự ấy thì phải thử gấp nhiều lần.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Số mảnh phủ kín bằng diện tích hình lớn chia diện tích một mảnh — nhưng chỉ đúng khi các mảnh **xếp khít không thừa**. Kiểm tra lại bằng cách đếm số hàng và số cột.
+*Điểm chốt:* Phải xét **hết** danh sách. Bài thử chọn thường có hơn một đáp số.
 
-*Điểm chốt:* Phép chia diện tích chỉ đúng khi mảnh **xếp khít**.
+*Muốn khó hơn:* Thêm điều kiện thứ ba, chẳng hạn chữ số hàng chục lớn hơn hàng đơn vị, để học sinh phải lọc ba lần.
 
-*Muốn khó hơn:* Đổi mảnh phủ thành hình chữ nhật 1 × 2 — hỏi có mấy cách xếp khác nhau.
-
-*Phải chắc trước khi làm bài này:* Diện tích hình chữ nhật và phép chia hết.
+*Phải chắc trước khi làm bài này:* Dấu hiệu chia hết cho 2, 3, 5, 9 và cách đọc cấu tạo số.
 
 ### Bài D.2 — Đếm tam giác và đoạn thẳng
 
@@ -402,7 +400,7 @@ Kiểm tra: xếp được 16 hàng, mỗi hàng 6 hình — đúng 96 hình ✓
 
 **Các bước giải**
 
-Xét ý a: Từ một đỉnh của tam giác lớn kẻ 6 đoạn thẳng tới cạnh đối diện. Có tất cả bao nhiêu tam giác trong hình?
+Xét ý a: Từ một đỉnh của tam giác lớn kẻ 4 đoạn thẳng tới cạnh đối diện. Có tất cả bao nhiêu tam giác trong hình?
 
 Đọc vị: đây là dạng **Đếm hình bằng quy tắc chọn hai điểm**; dấu hiệu là Hình có nhiều đoạn kẻ từ cùng một đỉnh, hoặc nhiều điểm trên một đường.
 
@@ -412,73 +410,81 @@ Cách làm: Quy về số cách chọn hai điểm.
 
 Lối tắt: Số cách chọn 2 trong k là k × (k − 1) : 2 — thuộc công thức này là xong.
 
-Kết quả: **28**.
+Kết quả: **15**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Kẻ n đoạn thẳng từ một đỉnh chia cạnh đối diện thành n + 1 phần, tạo ra n + 1 tam giác nhỏ. Mỗi tam giác trong hình ứng với việc chọn hai trong n + 2 điểm trên cạnh đối diện, nên số tam giác = (n + 2) × (n + 1) : 2. Tương tự, k điểm trên một đường thẳng cho k × (k − 1) : 2 đoạn thẳng.
 
 *Điểm chốt:* Mọi bài đếm ở đây quy về **chọn hai điểm** trong một dãy điểm.
 
-### Bài D.3 — Đọc và phân tích bảng số liệu
+### Bài D.3 — Phủ hình và chia hình thành phần bằng nhau
+
+> **BẪY — Chia diện tích, không chia chu vi.**
 
 **Các bước giải**
 
-Xét ý a: Tổng số học sinh đăng kí là bao nhiêu?
+Bước 1 — diện tích hình chữ nhật: 10 × 6 = 60 (cm²).
 
-Đọc vị: đây là dạng **Đọc bảng số liệu thống kê**; dấu hiệu là Đề cho bảng hoặc biểu đồ kèm nhiều câu hỏi.
+Bước 2 — diện tích một hình vuông nhỏ: 2 × 2 = 4 (cm²).
 
-Kiến thức phải dùng: Thống kê mô tả sơ cấp, trung bình cộng, tỉ số phần trăm.
+Bước 3 — số hình vuông cần dùng: 60 : 4 = 15 (hình).
 
-Cách làm: Ghi lại số liệu, trả lời từng câu bằng công cụ tương ứng.
+Kiểm tra: xếp được 5 hàng, mỗi hàng 3 hình — đúng 15 hình ✓
 
-Lối tắt: Tính tổng một lần rồi dùng lại cho mọi câu hỏi phần trăm.
+Đáp số: **15 hình vuông**.
 
-Kết quả: **107**.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Số mảnh phủ kín bằng diện tích hình lớn chia diện tích một mảnh — nhưng chỉ đúng khi các mảnh **xếp khít không thừa**. Kiểm tra lại bằng cách đếm số hàng và số cột.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Đọc bảng theo cột, ghi lại từng số liệu. Tổng là cộng tất cả; nhiều nhất, ít nhất là so sánh; trung bình là tổng chia số môn; tỉ số phần trăm là phần chia tổng rồi nhân 100.
+*Điểm chốt:* Phép chia diện tích chỉ đúng khi mảnh **xếp khít**.
 
-*Điểm chốt:* Mọi câu hỏi đều quy về **tổng, so sánh, trung bình cộng, tỉ số phần trăm**.
+*Muốn khó hơn:* Đổi mảnh phủ thành hình chữ nhật 1 × 2 — hỏi có mấy cách xếp khác nhau.
 
-### Bài D.4 — Định vị số hạng trong dãy cách đều
+*Phải chắc trước khi làm bài này:* Diện tích hình chữ nhật và phép chia hết.
 
-> **BẪY — Số không thuộc dãy.**
+### Bài D.4 — Tìm số ban đầu bằng cách tính ngược
 
-**Các bước giải**
-
-Xét ý a: Dãy có bao nhiêu số hạng?
-
-Đọc vị: đây là dạng **Định vị số hạng, kiểm tra một số có thuộc dãy**; dấu hiệu là Câu hỏi “là số hạng thứ mấy”, “có thuộc dãy không”.
-
-Kiến thức phải dùng: Dãy cách đều, phép chia có dư.
-
-Cách làm: (số − đầu) : khoảng cách, xét dư rồi cộng 1.
-
-Lối tắt: Mọi số hạng của dãy đều có cùng số dư khi chia cho khoảng cách.
-
-Kết quả: **121**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Muốn biết một số là số hạng thứ mấy: lấy số đó trừ số hạng đầu, chia cho khoảng cách rồi cộng 1. Nếu phép chia còn dư thì số đó **không thuộc** dãy.
-
-*Điểm chốt:* Phép chia **có dư** là bằng chứng số đó không thuộc dãy.
-
-### Bài D.5 — Chữ số tận cùng của tổng, hiệu, tích
+> **BẪY — Đi ngược nhưng không đảo thứ tự.**
 
 **Các bước giải**
 
-Xét ý a: Tổng 3 095 + 3 621 có chữ số tận cùng là chữ số nào?
+Viết chuỗi thao tác thành sơ đồ mũi tên: số cần tìm → × 9 → + 26 → : 5 → 88.
 
-Đọc vị: đây là dạng **Tìm chữ số tận cùng của một phép tính**; dấu hiệu là Câu hỏi chỉ hỏi “chữ số tận cùng”, không hỏi kết quả.
+Đi **ngược mũi tên**, và mỗi bước làm phép tính ngược lại. Phép cuối cùng là chia cho 5, nên bước đầu khi đi ngược là nhân với 5: 88 × 5 = 440.
 
-Kiến thức phải dùng: Tính chất chữ số tận cùng.
+Phép trước đó là cộng 26, đi ngược thì trừ: 440 − 26 = 414.
 
-Cách làm: Rút gọn về chữ số tận cùng rồi tính.
+Phép đầu tiên là nhân 9, đi ngược thì chia: 414 : 9 = 46.
 
-Lối tắt: Với phép trừ, nếu chữ số cuối của số bị trừ nhỏ hơn thì mượn 10 rồi trừ.
+Số cần tìm là **46**. Thử lại xuôi: 46 × 9 = 414, cộng 26 được 440, chia 5 được 88 — đúng bằng đề cho.
 
-Kết quả: **6**.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Viết chuỗi thao tác thành sơ đồ mũi tên rồi đi ngược lại từ kết quả cuối. Mỗi bước đảo phép tính: nhân thành chia, cộng thành trừ. Thứ tự cũng phải đảo — phép làm sau cùng được gỡ trước tiên.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Chữ số tận cùng của tổng, hiệu, tích chỉ phụ thuộc vào chữ số tận cùng của các số tham gia. Chỉ cần lấy các chữ số tận cùng ra tính với nhau rồi lấy chữ số tận cùng của kết quả.
+*Điểm chốt:* Đảo **cả phép tính lẫn thứ tự**. Đảo phép tính mà giữ nguyên thứ tự thì vẫn sai.
 
-*Điểm chốt:* Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu của số.
+*Muốn khó hơn:* Thêm bước “trừ đi một nửa số đang có” để học sinh phải gỡ một phép tính có liên quan tới chính số ấy.
+
+*Phải chắc trước khi làm bài này:* Bốn phép tính với số có hai chữ số và thứ tự thực hiện phép tính.
+
+### Bài D.5 — Hai nhóm có phần chung — đếm bằng hai vòng tròn
+
+**Các bước giải**
+
+Vẽ hai vòng tròn chồng nhau. Điền **phần chung trước**: 4 em học cả hai môn.
+
+Chỉ học tiếng Anh: 22 − 4 = 18 (em).
+
+Chỉ học cờ vua: 19 − 4 = 15 (em).
+
+Số em học ít nhất một trong hai môn: 18 + 4 + 15 = 37 (em).
+
+Số em không học môn nào: 40 − 37 = **3 em**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Điền phần chung vào trước, rồi trừ ra hai phần riêng. Cộng ba phần ấy được số người tham gia ít nhất một hoạt động; lấy tổng trừ đi là ra số người ngoài cả hai vòng.
+
+*Điểm chốt:* Con số đề cho cho mỗi môn **đã bao gồm** những em học cả hai. Cộng thẳng hai con số ấy là đếm phần chung hai lần.
+
+*Muốn khó hơn:* Thêm nhóm thứ ba để phải vẽ ba vòng tròn và trừ ba phần chung đôi một.
+
+*Phải chắc trước khi làm bài này:* Phép cộng trừ trong phạm vi 100 và cách đọc đề có nhiều số liệu.
 
 ### Bài E.1 — Đọc vị đề số 1
 
@@ -603,11 +609,11 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | C.3 | Đếm số hạng dãy cách đều | Công thức đếm số hạng | Dãy có số đầu, số cuối và khoảng cách đều | (cuối − đầu) : khoảng cách + 1 | Dãy số tự nhiên liên tiếp từ a đến b có b − a + 1 số hạng. | 188 · 95 · 91 · 173… |
 | C.4 | Kiểm tra chia hết bằng dấu hiệu | Dấu hiệu chia hết cho 2, 3, 5, 9 | Câu hỏi “có chia hết cho … không” | Chọn đúng dấu hiệu theo số chia rồi kiểm tra | Cộng chữ số theo cặp tròn 9, phần dư chính là số dư khi chia 9. | không (chữ số tận cùng 7) · không (chữ số tận cùng 9) · không (chữ số tận cùng 2) · không (chữ số tận cùng 2)… |
 | C.5 | Điền chữ số theo điều kiện chia hết | Dấu hiệu chia hết, chữ số hàng cao nhất khác 0 | Số có ô trống hoặc dấu *, kèm điều kiện chia hết | Dùng dấu hiệu để lập điều kiện cho dấu * rồi thử 0–9 | Với 3 và 9: tính tổng các chữ số đã biết một lần duy nhất, rồi tìm phần bù cần thêm. | 5 · 2, 5, 8 · 0, 5 · 2… |
-| D.1 | Phủ hình, chia hình | Diện tích hình chữ nhật, hình vuông; phép chia | “Phủ kín bằng các hình vuông cạnh …”, “chia thành … phần bằng nhau” | Chia diện tích cho diện tích, kiểm tra bằng số hàng, số cột | Đếm số hàng nhân số cột nhanh hơn và tự kiểm tra được. | 96 · 96 cm² · 1 cm² · 48 cm²… |
-| D.2 | Đếm hình bằng quy tắc chọn hai điểm | Quy tắc đếm, tổ hợp chập hai | Hình có nhiều đoạn kẻ từ cùng một đỉnh, hoặc nhiều điểm trên một đường | Quy về số cách chọn hai điểm | Số cách chọn 2 trong k là k × (k − 1) : 2 — thuộc công thức này là xong. | 28 · 7 · 15 · 6… |
-| D.3 | Đọc bảng số liệu thống kê | Thống kê mô tả sơ cấp, trung bình cộng, tỉ số phần trăm | Đề cho bảng hoặc biểu đồ kèm nhiều câu hỏi | Ghi lại số liệu, trả lời từng câu bằng công cụ tương ứng | Tính tổng một lần rồi dùng lại cho mọi câu hỏi phần trăm. | 107 · Khoa học (30 bạn) · Tiếng Anh (11 bạn) · 19… |
-| D.4 | Định vị số hạng, kiểm tra một số có thuộc dãy | Dãy cách đều, phép chia có dư | Câu hỏi “là số hạng thứ mấy”, “có thuộc dãy không” | (số − đầu) : khoảng cách, xét dư rồi cộng 1 | Mọi số hạng của dãy đều có cùng số dư khi chia cho khoảng cách. | 121 · 424 · 6 · 7… |
-| D.5 | Tìm chữ số tận cùng của một phép tính | Tính chất chữ số tận cùng | Câu hỏi chỉ hỏi “chữ số tận cùng”, không hỏi kết quả | Rút gọn về chữ số tận cùng rồi tính | Với phép trừ, nếu chữ số cuối của số bị trừ nhỏ hơn thì mượn 10 rồi trừ. | 6 · 9 · 8 · 0… |
+| D.1 | Thử chọn | Dấu hiệu chia hết; cấu tạo số có hai chữ số | Đề đòi một số thoả **nhiều điều kiện cùng lúc**, số khả năng hữu hạn | Thu hẹp bằng điều kiện chặt nhất rồi thử từng khả năng còn lại | Tổng hai chữ số cố định thì chỉ có tối đa mười số — liệt kê rất nhanh. | 78, 96 · 96 · 15, 24, 33, 42, 51, 60 · 28, 64… |
+| D.2 | Đếm hình bằng quy tắc chọn hai điểm | Quy tắc đếm, tổ hợp chập hai | Hình có nhiều đoạn kẻ từ cùng một đỉnh, hoặc nhiều điểm trên một đường | Quy về số cách chọn hai điểm | Số cách chọn 2 trong k là k × (k − 1) : 2 — thuộc công thức này là xong. | 15 · 5 · 6 · 4… |
+| D.3 | Phủ hình, chia hình | Diện tích hình chữ nhật, hình vuông; phép chia | “Phủ kín bằng các hình vuông cạnh …”, “chia thành … phần bằng nhau” | Chia diện tích cho diện tích, kiểm tra bằng số hàng, số cột | Đếm số hàng nhân số cột nhanh hơn và tự kiểm tra được. | 15 · 60 cm² · 4 cm² · 30 cm²… |
+| D.4 | Tính ngược từ cuối | Bốn phép tính; quan hệ giữa phép tính và phép tính ngược | Đề kể một **chuỗi thao tác** rồi cho kết quả cuối, hỏi số ban đầu | Vẽ sơ đồ mũi tên, đi ngược và đảo từng phép tính | Gỡ từ phải sang trái, mỗi bước một phép tính ngược — không cần đặt ẩn. | 46 · 12 · 21 · 34… |
+| D.5 | Biểu đồ Ven | Phép cộng, phép trừ; đếm không trùng lặp | Đề cho số người của từng nhóm **và** số người thuộc cả hai nhóm | Vẽ hai vòng tròn, điền phần chung trước rồi mới trừ ra phần riêng | Số người ít nhất một nhóm = nhóm A + nhóm B − phần chung. | 3 em · 6 em · 6 em · 1 em… |
 | E.1 | Cắt ghép hình, tỉ số diện tích | Diện tích hình chữ nhật, tam giác; đường bao | “Cắt thành … phần”, “nối trung điểm”, “ghép hai hình” | Vẽ hình, xác định đáy và chiều cao, so tỉ số | Tam giác nối một đỉnh với trung điểm cạnh đối diện luôn bằng một phần tư. | Cắt ghép hình, tỉ số diện tích · “Cắt thành … phần”, “nối trung điểm”, “ghép hai hình” · Diện tích hình chữ nhật, tam giác; đường bao · Vẽ hình, xác định đáy và chiều cao, so tỉ số… |
 | E.2 | Tìm kích thước từ chu vi, diện tích | Công thức chu vi, diện tích; phép tính ngược | Cho chu vi hoặc diện tích và một kích thước | Đi ngược công thức, qua bước nửa chu vi | Nửa chu vi = chu vi : 2 — luôn tính bước này đầu tiên. | Tìm kích thước từ chu vi, diện tích · Cho chu vi hoặc diện tích và một kích thước · Công thức chu vi, diện tích; phép tính ngược · Đi ngược công thức, qua bước nửa chu vi… |
 | E.3 | Nhận biết hình tròn và các yếu tố | Quan hệ đường kính – bán kính | Đề nhắc tâm, bán kính, đường kính | Quy về bán kính rồi so sánh hoặc tính | Nhìn đơn vị và tên đại lượng trước khi so sánh. | Nhận biết hình tròn và các yếu tố · Đề nhắc tâm, bán kính, đường kính · Quan hệ đường kính – bán kính · Quy về bán kính rồi so sánh hoặc tính… |
@@ -635,11 +641,11 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | C.3 | TD4, TD3 | Số khoảng luôn **ít hơn số số hạng đúng 1**. |
 | C.4 | TD1, TD5 | Dấu hiệu cho 2 và 5 nhìn **đuôi**; dấu hiệu cho 3 và 9 nhìn **tổng**. |
 | C.5 | TD2, TD5 | Phải tìm **tất cả** chữ số thoả mãn, không dừng ở chữ số đầu tiên tìm được. |
-| D.1 | TD3, TD4 | Phép chia diện tích chỉ đúng khi mảnh **xếp khít**. |
+| D.1 | TD3, TD4 | Phải xét **hết** danh sách. Bài thử chọn thường có hơn một đáp số. |
 | D.2 | TD4, TD3 | Mọi bài đếm ở đây quy về **chọn hai điểm** trong một dãy điểm. |
-| D.3 | TD1, TD2 | Mọi câu hỏi đều quy về **tổng, so sánh, trung bình cộng, tỉ số phần trăm**. |
-| D.4 | TD4, TD2 | Phép chia **có dư** là bằng chứng số đó không thuộc dãy. |
-| D.5 | TD5, TD2 | Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu của số. |
+| D.3 | TD3, TD4 | Phép chia diện tích chỉ đúng khi mảnh **xếp khít**. |
+| D.4 | TD3, TD5 | Đảo **cả phép tính lẫn thứ tự**. Đảo phép tính mà giữ nguyên thứ tự thì vẫn sai. |
+| D.5 | TD2, TD4 | Con số đề cho cho mỗi môn **đã bao gồm** những em học cả hai. Cộng thẳng hai con số ấy là đếm phần chung hai lần. |
 | E.1 | TD2, TD6 | Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**. |
 | E.2 | TD2, TD6 | Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**. |
 | E.3 | TD2, TD6 | Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**. |
@@ -669,11 +675,11 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 | C.3 | Quên cộng 1 nên thiếu một số hạng. | Thử với dãy ngắn (3 số hạng) để kiểm chứng công thức. |
 | C.4 | Dùng dấu hiệu của 3 để kết luận cho 2, hoặc cộng thiếu một chữ số. | Viết rõ tổng các chữ số ra bên cạnh trước khi kết luận. |
 | C.5 | Chỉ nêu một đáp số, hoặc nhận cả chữ số 0 ở hàng cao nhất. | Liệt kê đủ 10 chữ số ra nháp rồi gạch dần chữ số không đạt. |
-| D.1 | Chia chu vi cho cạnh mảnh thay vì chia diện tích cho diện tích. | Kẻ lưới lên hình và đếm thử một hàng. |
+| D.1 | Tìm được một số thoả rồi dừng, bỏ sót các đáp số còn lại. | Viết danh sách ra giấy và gạch bỏ từng số, đừng thử nhẩm trong đầu. |
 | D.2 | Chỉ đếm tam giác nhỏ, quên các tam giác ghép. | Đánh dấu tên các điểm rồi liệt kê từng cặp một cách có thứ tự. |
-| D.3 | Đọc nhầm cột, hoặc quên một môn khi cộng tổng. | Đánh dấu từng số đã cộng để không sót và không cộng lặp. |
-| D.4 | Chia được số nguyên rồi quên cộng 1, hoặc bỏ qua phần dư. | Luôn ghi rõ thương và số dư khi chia. |
-| D.5 | Tính trọn cả phép tính, vừa lâu vừa dễ sai. | Che phần đầu của hai số, chỉ để lộ chữ số cuối cùng. |
+| D.3 | Chia chu vi cho cạnh mảnh thay vì chia diện tích cho diện tích. | Kẻ lưới lên hình và đếm thử một hàng. |
+| D.4 | Bắt đầu gỡ từ phép tính đầu tiên của đề thay vì từ phép tính cuối cùng. | Thử lại theo chiều xuôi. Bài này luôn thử lại được, nên không có lý do gì để nộp một đáp số chưa thử. |
+| D.5 | Lấy tổng trừ đi tổng hai con số đề cho mà không cộng lại phần chung. | Vẽ hình trước, điền phần giữa trước, rồi mới điền hai bên. |
 | E.1 | Cộng chu vi hai hình nhỏ lại thành chu vi hình ghép. | Tô đậm đường bao của hình mới rồi mới tính chu vi. |
 | E.2 | Trừ thẳng chiều dài khỏi chu vi mà chưa chia đôi. | Viết dòng “Nửa chu vi = …” trước khi trừ. |
 | E.3 | So bán kính của hình này với đường kính của hình kia. | Đổi hết về bán kính trước khi so sánh. |
@@ -701,11 +707,11 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 **Bài C.3** — (1) Từ số đầu tới số cuối có bao nhiêu khoảng? — (2) Mỗi khoảng bằng bao nhiêu đơn vị? — (3) Số số hạng nhiều hơn số khoảng 1 đơn vị.
 **Bài C.4** — (1) Số chia là 2 hay 5 thì nhìn chữ số tận cùng. — (2) Số chia là 3 hay 9 thì cộng các chữ số. — (3) Tổng chữ số vẫn lớn thì cộng tiếp lần nữa.
 **Bài C.5** — (1) Số chia là 2 hay 5 thì chỉ cần xét chữ số tận cùng. — (2) Số chia là 3 hay 9 thì tính tổng các chữ số đã biết trước. — (3) Cộng thêm dấu * và tìm chữ số làm tổng chia hết cho số đó.
-**Bài D.1** — (1) Diện tích hình lớn bằng bao nhiêu? — (2) Diện tích một mảnh bằng bao nhiêu? — (3) Chia hai diện tích cho nhau rồi đếm lại theo hàng.
+**Bài D.1** — (1) Trong hai điều kiện, điều kiện nào cho ít số hơn? — (2) Liệt kê hết các số thoả điều kiện ấy. — (3) Thử từng số với điều kiện còn lại, đừng dừng sớm.
 **Bài D.2** — (1) Cạnh đối diện bị chia thành mấy phần? — (2) Mỗi tam giác ứng với việc chọn hai điểm nào? — (3) Số cách chọn 2 trong k điểm là k × (k − 1) : 2.
-**Bài D.3** — (1) Ghi lại các số liệu ra một hàng. — (2) Cộng tất cả để có tổng. — (3) So sánh để tìm lớn nhất và bé nhất.
-**Bài D.4** — (1) Lấy số đó trừ số hạng đầu. — (2) Chia hiệu cho khoảng cách — có chia hết không? — (3) Chia hết thì cộng 1 để ra thứ tự; không chia hết thì số đó không thuộc dãy.
-**Bài D.5** — (1) Chữ số tận cùng của mỗi số là chữ số nào? — (2) Thực hiện phép tính với riêng hai chữ số tận cùng đó. — (3) Lấy chữ số tận cùng của kết quả vừa tính.
+**Bài D.3** — (1) Diện tích hình lớn bằng bao nhiêu? — (2) Diện tích một mảnh bằng bao nhiêu? — (3) Chia hai diện tích cho nhau rồi đếm lại theo hàng.
+**Bài D.4** — (1) Đề đã làm những phép tính nào, theo thứ tự nào? — (2) Phép nào làm sau cùng? Gỡ phép ấy trước tiên. — (3) Nhân thì gỡ bằng chia, cộng thì gỡ bằng trừ.
+**Bài D.5** — (1) Bao nhiêu em học cả hai môn? Điền số ấy vào phần chồng nhau. — (2) Vậy chỉ học riêng mỗi môn là bao nhiêu em? — (3) Cộng ba phần rồi lấy sĩ số lớp trừ đi.
 **Bài E.1** — (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
 **Bài E.2** — (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
 **Bài E.3** — (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
@@ -735,11 +741,11 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | C.3 | Dãy 3, 6, 9, …, 99 có bao nhiêu số hạng? | 33 |
 | C.4 | Số 467 có chia hết cho 9 không? | không |
 | C.5 | Tìm chữ số thay cho * để 12* chia hết cho 5. | 0, 5 |
-| D.1 | Hình chữ nhật 6 cm × 4 cm phủ bằng hình vuông cạnh 2 cm. Cần mấy hình? | 6 hình |
+| D.1 | Tìm mọi số có hai chữ số chia hết cho 5 và có tổng hai chữ số bằng 9. | 45 và 90 |
 | D.2 | Trên một đường thẳng có 5 điểm. Có bao nhiêu đoạn thẳng? | 10 |
-| D.3 | Bảng: Toán 10, Văn 6, Anh 4. Trung bình mỗi môn bao nhiêu bạn? | 6,67 bạn |
-| D.4 | Dãy 2, 7, 12, … Số 47 là số hạng thứ mấy? | 10 |
-| D.5 | Tích 137 × 46 có chữ số tận cùng là chữ số nào? | 2 |
+| D.3 | Hình chữ nhật 6 cm × 4 cm phủ bằng hình vuông cạnh 2 cm. Cần mấy hình? | 6 hình |
+| D.4 | Một số nhân 3, cộng 7, chia 2 thì được 20. Tìm số ấy. | 11 |
+| D.5 | Lớp có 40 em, 25 em học vẽ, 20 em học hát, 10 em học cả hai. Bao nhiêu em không học môn nào? | 5 em |
 | E.1 | Hình chữ nhật 8 cm × 6 cm, nối một đỉnh với trung điểm cạnh đối diện. Diện tích tam giác bằng bao nhiêu? | 12 cm² |
 | E.2 | Hình chữ nhật chu vi 30 cm, dài 10 cm. Chiều rộng bằng bao nhiêu? | 5 cm |
 | E.3 | Hình tròn đường kính 10 cm có bán kính bao nhiêu? | 5 cm |

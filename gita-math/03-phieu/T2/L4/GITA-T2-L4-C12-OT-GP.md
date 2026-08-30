@@ -38,27 +38,27 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần II**
 
-- **Bài II.1** — a) 32 · b) 32 cm² · c) 1 cm² · d) 16 cm² · e) 8 cm² · f) 40 cm
-- **Bài II.2** — a) 21 · b) 6 · c) 6 · d) 4 · e) 10
-- **Bài II.3** — a) 8 giờ 42 phút · b) 15 giờ 1 phút · c) 13 giờ 19 phút · d) 18 giờ 54 phút
-- **Bài II.4** — a) 325 · b) 145 · c) 10 100 · d) 970
-- **Bài II.5** — a) 425 · b) 111 · c) 253 · d) 427
+- **Bài II.1** — a) 2 · b) 8 cm² · c) 4 cm² · d) 4 cm² · e) 2 cm² · f) 16 cm
+- **Bài II.2** — a) 84 · b) 486 · c) 462 · d) 197 · e) 74 · f) 343
+- **Bài II.3** — a) 210 · b) 15 050 · c) 2 550 · d) 1 525 · e) 110
+- **Bài II.4** — a) 6 tạ 60 kg · b) 4 tạ · c) 7 tạ 80 kg · d) 5 tạ 25 kg · e) 16 tạ 50 kg · f) 21 tạ 60 kg
+- **Bài II.5** — a) 6 · b) 3 · c) 3 · d) 3 · e) 6
 
 **Phần III**
 
-- **Bài III.1** — a) 1 lần · b) 3 phần · c) vì mỗi lần cân có ba kết quả: trái nặng hơn, phải nặng hơn, hoặc cân bằng · d) 1 · e) 1 lần · f) 2 lần
-- **Bài III.2** — a) > · b) < · c) > · d) > · e) >
-- **Bài III.3** — a) 5 viên · b) 5 viên · c) 13 viên · d) 6 viên · e) 7 viên
-- **Bài III.4** — a) 68 cây · b) 39 cây · c) 152 cây · d) 69 cây
-- **Bài III.5** — a) 76 · b) Toán (29 bạn) · c) Tiếng Anh (7 bạn) · d) 22 · e) 15,2 · f) 38%
+- **Bài III.1** — a) 3 viên · b) 13 viên · c) 9 viên · d) 3 viên · e) 21 viên · f) 7 viên
+- **Bài III.2** — a) x = 39 · b) x = 109 · c) x = 93 · d) x = 35 · e) x = 105
+- **Bài III.3** — a) 56 · b) Khoa học (25 bạn) · c) Tiếng Anh (8 bạn) · d) 17 · e) 14 · f) 16%
+- **Bài III.4** — a) hơn 3 đơn vị · b) 78, hiệu 9 · c) 22, hiệu 0 · d) 40
+- **Bài III.5** — a) 28 cái · b) 10 trận · c) 105 đường thẳng · d) 28 cái
 
 **Phần IV**
 
-- **Bài IV.1** — a) 36 lít · b) 180 lít · c) 18 lít · d) 350 lít
-- **Bài IV.2** — a) 240 cm² · b) 2 lần · c) 2 lần · d) 2 lần
-- **Bài IV.3** — a) 69 · b) 147 · c) 4 320 · d) 108 · e) 216 · f) 216
-- **Bài IV.4** — a) 68 m · b) 280 m² · c) 17 giây · d) 112 m² · e) 16 m · f) 616 m² · g) 336 m²
-- **Bài IV.5** — a) 57 quyển · b) 15 quyển · c) 44 quyển · d) 11 quyển · e) 104 quyển · f) 49 quyển
+- **Bài IV.1** — a) 224 m · b) 3 135 m² · c) 112 giây · d) 330 m² · e) 12 m · f) 3 843 m² · g) 708 m²
+- **Bài IV.2** — a) 2 lần · b) 2 lần · c) 660 cm² · d) 36 cm² · e) 434 cm² · f) 2 lần
+- **Bài IV.3** — a) 21 quyển · b) 75 quyển · c) 23 quyển · d) 19 quyển · e) 90 quyển
+- **Bài IV.4** — a) 21, 42, 63, 84 · b) 83 · c) 96 · d) 81 · e) 21, 42, 63, 84
+- **Bài IV.5** — a) 24 · b) 0 · c) 6 · d) 12 · e) 953 và 135 · f) 1 088
 
 **Phần V**
 
@@ -182,15 +182,15 @@ Kết quả: **B**.
 
 **Các bước giải**
 
-Bước 1 — diện tích hình chữ nhật: 16 × 2 = 32 (cm²).
+Bước 1 — diện tích hình chữ nhật: 4 × 2 = 8 (cm²).
 
-Bước 2 — diện tích một hình vuông nhỏ: 1 × 1 = 1 (cm²).
+Bước 2 — diện tích một hình vuông nhỏ: 2 × 2 = 4 (cm²).
 
-Bước 3 — số hình vuông cần dùng: 32 : 1 = 32 (hình).
+Bước 3 — số hình vuông cần dùng: 8 : 4 = 2 (hình).
 
-Kiểm tra: xếp được 16 hàng, mỗi hàng 2 hình — đúng 32 hình ✓
+Kiểm tra: xếp được 2 hàng, mỗi hàng 1 hình — đúng 2 hình ✓
 
-Đáp số: **32 hình vuông**.
+Đáp số: **2 hình vuông**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Số mảnh phủ kín bằng diện tích hình lớn chia diện tích một mảnh — nhưng chỉ đúng khi các mảnh **xếp khít không thừa**. Kiểm tra lại bằng cách đếm số hàng và số cột.
 
@@ -200,71 +200,11 @@ Kiểm tra: xếp được 16 hàng, mỗi hàng 2 hình — đúng 32 hình ✓
 
 *Phải chắc trước khi làm bài này:* Diện tích hình chữ nhật và phép chia hết.
 
-### Bài II.2 — Đếm tam giác và đoạn thẳng
+### Bài II.2 — Tổng của các số tự nhiên liên tiếp
 
 **Các bước giải**
 
-Xét ý a: Từ một đỉnh của tam giác lớn kẻ 5 đoạn thẳng tới cạnh đối diện. Có tất cả bao nhiêu tam giác trong hình?
-
-Đọc vị: đây là dạng **Đếm hình bằng quy tắc chọn hai điểm**; dấu hiệu là Hình có nhiều đoạn kẻ từ cùng một đỉnh, hoặc nhiều điểm trên một đường.
-
-Kiến thức phải dùng: Quy tắc đếm, tổ hợp chập hai.
-
-Cách làm: Quy về số cách chọn hai điểm.
-
-Lối tắt: Số cách chọn 2 trong k là k × (k − 1) : 2 — thuộc công thức này là xong.
-
-Kết quả: **21**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Kẻ n đoạn thẳng từ một đỉnh chia cạnh đối diện thành n + 1 phần, tạo ra n + 1 tam giác nhỏ. Mỗi tam giác trong hình ứng với việc chọn hai trong n + 2 điểm trên cạnh đối diện, nên số tam giác = (n + 2) × (n + 1) : 2. Tương tự, k điểm trên một đường thẳng cho k × (k − 1) : 2 đoạn thẳng.
-
-*Điểm chốt:* Mọi bài đếm ở đây quy về **chọn hai điểm** trong một dãy điểm.
-
-### Bài II.3 — Tính thời điểm đến, thời gian đi
-
-**Các bước giải**
-
-Xét ý a: Một chuyến tàu khởi hành lúc 5 giờ 30 phút và đi hết 3 giờ 12 phút. Tàu đến nơi lúc mấy giờ?
-
-Đọc vị: đây là dạng **Tính thời điểm trong ngày**; dấu hiệu là Cho thời điểm bắt đầu và khoảng thời gian.
-
-Kiến thức phải dùng: Quan hệ giờ – phút, phép chia có dư.
-
-Cách làm: Quy về phút, cộng trừ, đổi lại.
-
-Lối tắt: Cộng tròn giờ trước rồi cộng phần phút lẻ sau.
-
-Kết quả: **8 giờ 42 phút**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Đổi cả giờ khởi hành lẫn thời gian đi về **phút**, cộng lại, rồi đổi kết quả ngược lại thành giờ và phút. Cách này tránh được lỗi nhớ khi phần phút vượt 60.
-
-*Điểm chốt:* Đổi hết về phút rồi mới cộng — an toàn hơn cộng trực tiếp.
-
-### Bài II.4 — Tính nhanh tổng dãy số cách đều
-
-**Các bước giải**
-
-Xét ý a: 1 + 2 + 3 + … + 25
-
-Đọc vị: đây là dạng **Tổng dãy số cách đều**; dấu hiệu là Dãy cộng có dấu … và các số cách đều nhau.
-
-Kiến thức phải dùng: Công thức tổng dãy cách đều.
-
-Cách làm: Đếm số số hạng rồi áp công thức tổng.
-
-Lối tắt: Ghép cặp đầu – cuối: mọi cặp đều có cùng tổng, chỉ cần nhân với số cặp.
-
-Kết quả: **325**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Đếm số số hạng: (số cuối − số đầu) : khoảng cách + 1. Tổng bằng (số đầu + số cuối) × số số hạng : 2. Cách hiểu: ghép số đầu với số cuối, số thứ hai với số áp chót… mỗi cặp có tổng bằng nhau.
-
-*Điểm chốt:* Phải đếm **số số hạng** trước; đây là chỗ sai nhiều nhất.
-
-### Bài II.5 — Tổng của các số tự nhiên liên tiếp
-
-**Các bước giải**
-
-Xét ý a: Tổng của 7 số tự nhiên liên tiếp bằng 2 996. Tìm số bé nhất trong 7 số đó.
+Xét ý a: Tổng của 5 số tự nhiên liên tiếp bằng 430. Tìm số bé nhất trong 5 số đó.
 
 Đọc vị: đây là dạng **Dãy số tự nhiên liên tiếp có tổng cho trước**; dấu hiệu là Cụm “… số tự nhiên liên tiếp có tổng bằng …”.
 
@@ -274,57 +214,77 @@ Cách làm: Tìm số giữa bằng phép chia rồi suy ra hai đầu dãy.
 
 Lối tắt: Tổng của n số liên tiếp (n lẻ) luôn chia hết cho n.
 
-Kết quả: **425**.
+Kết quả: **84**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Với một số **lẻ** các số tự nhiên liên tiếp, số ở giữa chính là trung bình cộng: số giữa = tổng : số lượng. Số bé nhất bằng số giữa trừ đi một nửa số lượng còn lại.
 
 *Điểm chốt:* Với số lượng lẻ thì **số giữa = tổng : số lượng** — đó là chìa khoá.
 
-### Bài III.1 — Bài toán cân đĩa tìm vật khác biệt
+### Bài II.3 — Tính nhanh tổng dãy số cách đều
 
 **Các bước giải**
 
-Xét ý a: Có 3 đồng tiền giống hệt nhau, trong đó có đúng một đồng nhẹ hơn. Dùng cân đĩa (không quả cân), cần cân ít nhất mấy lần để tìm ra đồng nhẹ?
+Xét ý a: 1 + 2 + 3 + … + 20
 
-Đọc vị: đây là dạng **Cân đĩa, chia ba**; dấu hiệu là Cân đĩa không có quả cân, tìm vật khác biệt.
+Đọc vị: đây là dạng **Tổng dãy số cách đều**; dấu hiệu là Dãy cộng có dấu … và các số cách đều nhau.
 
-Kiến thức phải dùng: Lập luận trường hợp xấu nhất, chia nhóm.
+Kiến thức phải dùng: Công thức tổng dãy cách đều.
 
-Cách làm: Chia ba phần bằng nhau mỗi lần cân.
+Cách làm: Đếm số số hạng rồi áp công thức tổng.
 
-Lối tắt: 3 đồng → 1 lần; 9 đồng → 2 lần; 27 đồng → 3 lần.
+Lối tắt: Ghép cặp đầu – cuối: mọi cặp đều có cùng tổng, chỉ cần nhân với số cặp.
 
-Kết quả: **1 lần**.
+Kết quả: **210**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Mỗi lần cân bằng cân đĩa cho **ba** kết quả có thể, nên mỗi lần cân chia được số vật thành ba phần và loại đi hai phần. Sau k lần cân, phân biệt được tối đa 3 nhân với chính nó k lần vật.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Đếm số số hạng: (số cuối − số đầu) : khoảng cách + 1. Tổng bằng (số đầu + số cuối) × số số hạng : 2. Cách hiểu: ghép số đầu với số cuối, số thứ hai với số áp chót… mỗi cặp có tổng bằng nhau.
 
-*Điểm chốt:* Cân đĩa cho **ba** kết quả, nên chia ba chứ không chia đôi.
+*Điểm chốt:* Phải đếm **số số hạng** trước; đây là chỗ sai nhiều nhất.
 
-### Bài III.2 — So sánh hai biểu thức mà không cần tính
-
-**Các bước giải**
-
-Xét ý a: 543 × 25 … 357 × 25
-
-Đọc vị: đây là dạng **So sánh biểu thức không tính giá trị**; dấu hiệu là Hai vế có chung một số hạng hoặc một thừa số.
-
-Kiến thức phải dùng: Tính chất bất đẳng thức trong phép cộng, phép nhân.
-
-Cách làm: Triệt tiêu phần chung rồi so phần riêng.
-
-Lối tắt: Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn.
-
-Kết quả: **>**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Khi hai biểu thức có phần giống nhau, chỉ cần so sánh phần khác nhau: cùng cộng thêm một số thì số nào lớn hơn vẫn lớn hơn; cùng nhân với một số khác 0 cũng vậy.
-
-*Điểm chốt:* Che phần **giống nhau** đi, chỉ so phần khác nhau.
-
-### Bài III.3 — Nguyên lí Đi-rích-lê (nguyên lí ngăn kéo)
+### Bài II.4 — Bài toán thực tế về khối lượng
 
 **Các bước giải**
 
-Xét ý a: Trong một hộp có bi thuộc 4 màu (đỏ, xanh, vàng, trắng), mỗi màu có rất nhiều viên. Hỏi phải lấy ra ít nhất bao nhiêu viên (không nhìn) để chắc chắn có 2 viên cùng màu?
+Xét ý a: Một xe chở 22 bao muối, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ muối?
+
+Đọc vị: đây là dạng **Bài toán đại lượng có lời văn**; dấu hiệu là Đơn vị trong câu hỏi khác đơn vị trong dữ kiện.
+
+Kiến thức phải dùng: Nhân, chia số tự nhiên; đổi đơn vị khối lượng.
+
+Cách làm: Tính theo đơn vị dữ kiện rồi đổi ở bước cuối.
+
+Lối tắt: 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ.
+
+Kết quả: **6 tạ 60 kg**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Tính tổng khối lượng theo ki-lô-gam trước, sau đó mới đổi sang đơn vị mà đề hỏi. Đừng đổi đơn vị ngay từ đầu vì dễ nhầm.
+
+*Điểm chốt:* Câu hỏi đòi đơn vị nào thì bước **cuối cùng** mới đổi sang đơn vị đó.
+
+### Bài II.5 — Đếm tam giác và đoạn thẳng
+
+**Các bước giải**
+
+Xét ý a: Từ một đỉnh của tam giác lớn kẻ 2 đoạn thẳng tới cạnh đối diện. Có tất cả bao nhiêu tam giác trong hình?
+
+Đọc vị: đây là dạng **Đếm hình bằng quy tắc chọn hai điểm**; dấu hiệu là Hình có nhiều đoạn kẻ từ cùng một đỉnh, hoặc nhiều điểm trên một đường.
+
+Kiến thức phải dùng: Quy tắc đếm, tổ hợp chập hai.
+
+Cách làm: Quy về số cách chọn hai điểm.
+
+Lối tắt: Số cách chọn 2 trong k là k × (k − 1) : 2 — thuộc công thức này là xong.
+
+Kết quả: **6**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Kẻ n đoạn thẳng từ một đỉnh chia cạnh đối diện thành n + 1 phần, tạo ra n + 1 tam giác nhỏ. Mỗi tam giác trong hình ứng với việc chọn hai trong n + 2 điểm trên cạnh đối diện, nên số tam giác = (n + 2) × (n + 1) : 2. Tương tự, k điểm trên một đường thẳng cho k × (k − 1) : 2 đoạn thẳng.
+
+*Điểm chốt:* Mọi bài đếm ở đây quy về **chọn hai điểm** trong một dãy điểm.
+
+### Bài III.1 — Nguyên lí Đi-rích-lê (nguyên lí ngăn kéo)
+
+**Các bước giải**
+
+Xét ý a: Trong một hộp có bi thuộc 2 màu (đỏ, xanh), mỗi màu có rất nhiều viên. Hỏi phải lấy ra ít nhất bao nhiêu viên (không nhìn) để chắc chắn có 2 viên cùng màu?
 
 Đọc vị: đây là dạng **Nguyên lí Đi-rích-lê**; dấu hiệu là Cụm “ít nhất … để chắc chắn …”.
 
@@ -334,33 +294,33 @@ Cách làm: Dựng tình huống xấu nhất rồi cộng 1.
 
 Lối tắt: Công thức: số loại × (số cần − 1) + 1.
 
-Kết quả: **5 viên**.
+Kết quả: **3 viên**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Xét trường hợp **xấu nhất**: lấy được nhiều nhất bao nhiêu viên mà vẫn chưa đủ điều kiện? Đó là mỗi màu lấy (k − 1) viên. Lấy thêm đúng một viên nữa thì chắc chắn có k viên cùng màu.
 
 *Điểm chốt:* Luôn xuất phát từ **trường hợp xấu nhất** rồi cộng thêm 1.
 
-### Bài III.4 — Tìm phân số của một số
+### Bài III.2 — Tìm x qua ba bước, có dấu ngoặc
 
 **Các bước giải**
 
-Xét ý a: Tổ Ba trồng được 272 cây. Số cây của đội Hai bằng 1 phần 4 số cây của tổ Ba. Hỏi đội Hai trồng được bao nhiêu cây?
+Xét ý a: (x × 6 − 45) × 2 = 378
 
-Đọc vị: đây là dạng **Tìm phân số của một số**; dấu hiệu là Cụm “bằng … của …”.
+Đọc vị: đây là dạng **Tìm x nhiều bước có ngoặc**; dấu hiệu là x nằm trong ngoặc, ngoài ngoặc còn phép tính khác.
 
-Kiến thức phải dùng: Nhân số tự nhiên với phân số.
+Kiến thức phải dùng: Thứ tự thực hiện phép tính, quan hệ thành phần.
 
-Cách làm: Chia theo mẫu số rồi nhân theo tử số.
+Cách làm: Bóc lớp từ ngoài vào trong.
 
-Lối tắt: Chia trước, nhân sau — số nhỏ hơn nên tính nhẩm được.
+Lối tắt: Thay x tìm được vào đề, tính một lượt để thử lại.
 
-Kết quả: **68 cây**.
+Kết quả: **x = 39**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Muốn tìm phân số của một số, ta lấy số đó nhân với phân số. Cách hiểu: chia số đó thành số phần bằng mẫu số, rồi lấy số phần bằng tử số.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Gỡ dần từ ngoài vào trong: xác định phép tính ngoài cùng, coi phần còn lại là một số, tìm giá trị của nó, rồi lặp lại cho tới khi x đứng riêng.
 
-*Điểm chốt:* Phân số tính trên **số nào** — đọc kĩ cụm “… của …”.
+*Điểm chốt:* Mỗi bước chỉ gỡ **một** phép tính, đừng gỡ hai phép cùng lúc.
 
-### Bài III.5 — Đọc và phân tích bảng số liệu
+### Bài III.3 — Đọc và phân tích bảng số liệu
 
 **Các bước giải**
 
@@ -374,89 +334,67 @@ Cách làm: Ghi lại số liệu, trả lời từng câu bằng công cụ tư
 
 Lối tắt: Tính tổng một lần rồi dùng lại cho mọi câu hỏi phần trăm.
 
-Kết quả: **76**.
+Kết quả: **56**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Đọc bảng theo cột, ghi lại từng số liệu. Tổng là cộng tất cả; nhiều nhất, ít nhất là so sánh; trung bình là tổng chia số môn; tỉ số phần trăm là phần chia tổng rồi nhân 100.
 
 *Điểm chốt:* Mọi câu hỏi đều quy về **tổng, so sánh, trung bình cộng, tỉ số phần trăm**.
 
-### Bài IV.1 — Bài toán đại lượng nhiều bước
+### Bài III.4 — Cấu tạo số có hai chữ số
 
 **Các bước giải**
 
-Xét ý a: Một cửa hàng có 5 thùng dầu, mỗi thùng 12 lít. Cửa hàng đã bán 2 thùng. Hỏi cửa hàng còn lại bao nhiêu lít dầu?
+Xét ý a: Chữ số hàng chục của số 30 gấp mấy lần chữ số hàng đơn vị (nếu chia hết), hoặc hơn bao nhiêu đơn vị?
 
-Đọc vị: đây là dạng **Bài toán đại lượng nhiều bước**; dấu hiệu là Cho số nhóm, giá trị mỗi nhóm và số nhóm đã dùng.
+Đọc vị: đây là dạng **Tìm số theo điều kiện của các chữ số**; dấu hiệu là Đề cho quan hệ giữa các chữ số chứ không cho số.
 
-Kiến thức phải dùng: Nhân, trừ; đại lượng cùng loại.
+Kiến thức phải dùng: Cấu tạo thập phân, bài toán tổng – hiệu.
 
-Cách làm: Rút gọn số bước bằng cách trừ trước, nhân sau.
+Cách làm: Đặt ẩn cho từng chữ số, viết số theo cấu tạo, giải hệ điều kiện.
 
-Lối tắt: So sánh hai đường giải, chọn đường ít phép tính hơn.
+Lối tắt: Đổi chỗ hai chữ số của số có hai chữ số thì hiệu luôn bằng 9 lần hiệu hai chữ số.
 
-Kết quả: **36 lít**.
+Kết quả: **hơn 3 đơn vị**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Viết số có hai chữ số dưới dạng **ab = a × 10 + b** với a là chữ số hàng chục (khác 0), b là chữ số hàng đơn vị. Từ điều kiện của đề, lập quan hệ giữa a và b rồi dùng bài toán tổng – hiệu.
 
-*Điểm chốt:* Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
+*Điểm chốt:* Chữ số hàng chục **khác 0** và mỗi chữ số chỉ nhận giá trị từ 0 đến 9.
 
-### Bài IV.2 — Diện tích thay đổi khi kích thước thay đổi
+### Bài III.5 — Đếm số cặp — bắt tay, trận đấu, đường thẳng
+
+**Các bước giải**
+
+Xét ý a: Có 8 người, mỗi người bắt tay với tất cả những người còn lại đúng một lần. Hỏi có tất cả bao nhiêu cái bắt tay?
+
+Đọc vị: đây là dạng **Đếm số cặp**; dấu hiệu là “Hai … bất kì”, “mỗi người với tất cả những người còn lại”.
+
+Kiến thức phải dùng: Tổ hợp chập hai, nguyên tắc đếm lặp.
+
+Cách làm: n × (n − 1) : 2.
+
+Lối tắt: Nhớ vài giá trị: 5 người có 10 cặp, 10 người có 45 cặp.
+
+Kết quả: **28 cái**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Mỗi người bắt tay với n − 1 người còn lại, nên tổng số lượt bắt tay là n × (n − 1). Nhưng mỗi cái bắt tay được đếm **hai lần** (một lần từ mỗi phía), nên số bắt tay thật sự là n × (n − 1) : 2.
+
+*Điểm chốt:* Chia cho 2 vì mỗi cặp được đếm **hai lần**.
+
+### Bài IV.1 — Hình chữ nhật — tổng hợp chu vi, diện tích và chuyển động
 
 > **BẪY — Phần tăng gồm ba mảnh.**
 
 **Các bước giải**
 
-Xét ý a: Hình chữ nhật dài 29 cm, rộng 27 cm. Nếu tăng cả chiều dài và chiều rộng thêm 4 cm thì diện tích tăng thêm bao nhiêu?
+Bước 1 — chu vi: (57 + 55) × 2 = 224 (m).
 
-Đọc vị: đây là dạng **Biến thiên diện tích theo kích thước**; dấu hiệu là “Tăng chiều dài thêm …”, “gấp đôi chiều …”.
+Bước 2 — diện tích: 57 × 55 = 3 135 (m²).
 
-Kiến thức phải dùng: Diện tích hình chữ nhật, phân tích hình.
+Bước 3 — đi một vòng chính là đi hết chu vi: 224 : 2 = 112 (giây).
 
-Cách làm: Vẽ hình chồng, tách phần dôi ra thành các mảnh chữ nhật.
+Bước 4 — tăng chiều dài thêm 6 m thì phần dôi ra là một hình chữ nhật 6 m × 55 m, diện tích 330 (m²).
 
-Lối tắt: Gấp đôi một chiều thì diện tích gấp đôi; gấp đôi cả hai chiều thì gấp bốn.
-
-Kết quả: **240 cm²**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Tăng một chiều thêm k đơn vị thì diện tích tăng thêm đúng một hình chữ nhật có kích thước k × chiều còn lại. Tăng cả hai chiều thì phần tăng gồm ba mảnh: hai dải và một hình vuông ở góc — nên **không** bằng tích của hai phần tăng.
-
-*Điểm chốt:* Tăng cả hai chiều thì phần tăng gồm **ba mảnh**, không phải một.
-
-### Bài IV.3 — Tổng, trung bình cộng của dãy cách đều
-
-**Các bước giải**
-
-Xét ý a: Số hạng đầu của dãy là số nào?
-
-Đọc vị: đây là dạng **Tổng và trung bình cộng của dãy cách đều**; dấu hiệu là Đề cho số số hạng, khoảng cách và một đầu của dãy.
-
-Kiến thức phải dùng: Dãy cách đều, trung bình cộng.
-
-Cách làm: Tìm hai đầu dãy → tổng → trung bình cộng.
-
-Lối tắt: Mọi cặp số hạng cách đều hai đầu đều có tổng bằng nhau.
-
-Kết quả: **69**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
-
-*Điểm chốt:* Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
-
-### Bài IV.4 — Hình chữ nhật — tổng hợp chu vi, diện tích và chuyển động
-
-> **BẪY — Phần tăng gồm ba mảnh.**
-
-**Các bước giải**
-
-Bước 1 — chu vi: (20 + 14) × 2 = 68 (m).
-
-Bước 2 — diện tích: 20 × 14 = 280 (m²).
-
-Bước 3 — đi một vòng chính là đi hết chu vi: 68 : 4 = 17 (giây).
-
-Bước 4 — tăng chiều dài thêm 8 m thì phần dôi ra là một hình chữ nhật 8 m × 14 m, diện tích 112 (m²).
-
-Đáp số ý a: **68 m**.
+Đáp số ý a: **224 m**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Đi một vòng quanh hình là đi hết **chu vi**. Tăng một chiều thì phần diện tích dôi ra là một hình chữ nhật có kích thước bằng phần tăng nhân chiều còn lại. Tăng cả hai chiều thì phần dôi gồm **ba mảnh**.
 
@@ -466,13 +404,35 @@ Bước 4 — tăng chiều dài thêm 8 m thì phần dôi ra là một hình c
 
 *Phải chắc trước khi làm bài này:* Công thức chu vi, diện tích hình chữ nhật và quan hệ s = v × t.
 
-### Bài IV.5 — Chuyển bớt để hai phần bằng nhau
+### Bài IV.2 — Diện tích thay đổi khi kích thước thay đổi
+
+> **BẪY — Phần tăng gồm ba mảnh.**
+
+**Các bước giải**
+
+Xét ý a: Hình chữ nhật dài 43 cm, rộng 8 cm. Nếu gấp đôi chiều dài và giữ nguyên chiều rộng thì diện tích mới gấp mấy lần diện tích cũ?
+
+Đọc vị: đây là dạng **Biến thiên diện tích theo kích thước**; dấu hiệu là “Tăng chiều dài thêm …”, “gấp đôi chiều …”.
+
+Kiến thức phải dùng: Diện tích hình chữ nhật, phân tích hình.
+
+Cách làm: Vẽ hình chồng, tách phần dôi ra thành các mảnh chữ nhật.
+
+Lối tắt: Gấp đôi một chiều thì diện tích gấp đôi; gấp đôi cả hai chiều thì gấp bốn.
+
+Kết quả: **2 lần**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Tăng một chiều thêm k đơn vị thì diện tích tăng thêm đúng một hình chữ nhật có kích thước k × chiều còn lại. Tăng cả hai chiều thì phần tăng gồm ba mảnh: hai dải và một hình vuông ở góc — nên **không** bằng tích của hai phần tăng.
+
+*Điểm chốt:* Tăng cả hai chiều thì phần tăng gồm **ba mảnh**, không phải một.
+
+### Bài IV.3 — Chuyển bớt để hai phần bằng nhau
 
 > **BẪY — Hiệu thay đổi gấp đôi số chuyển.**
 
 **Các bước giải**
 
-Xét ý a: Nhóm Sao Mai có 285 quyển sách, tổ Một có 171 quyển. Hỏi phải chuyển bao nhiêu quyển từ nhóm Sao Mai sang tổ Một để số sách hai tổ bằng nhau?
+Xét ý a: Tổ Hai có 147 quyển sách, đội Một có 105 quyển. Hỏi phải chuyển bao nhiêu quyển từ tổ Hai sang đội Một để số sách hai tổ bằng nhau?
 
 Đọc vị: đây là dạng **Chuyển đổi giữa hai đại lượng, tổng không đổi**; dấu hiệu là “Chuyển … từ bên này sang bên kia”.
 
@@ -482,11 +442,57 @@ Cách làm: Xét đại lượng không đổi (tổng) và đại lượng đ�
 
 Lối tắt: Sau khi chuyển, mỗi bên bằng nửa tổng — tính nửa tổng rồi trừ là ra ngay.
 
-Kết quả: **57 quyển**.
+Kết quả: **21 quyển**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Khi chuyển k đơn vị từ bên nhiều sang bên ít, bên nhiều giảm k còn bên ít tăng k, nên hiệu giảm đi **2k**. Muốn hai bên bằng nhau thì hiệu phải về 0, vậy k = hiệu : 2.
 
 *Điểm chốt:* Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển.
+
+### Bài IV.4 — Đặt chữ thay chữ số rồi lập luận
+
+> **BẪY — Quên chữ số hàng cao nhất khác 0.**
+
+**Các bước giải**
+
+Xét ý a: Tìm mọi số có hai chữ số mà số đó bằng 7 lần tổng hai chữ số của nó.
+
+Đọc vị: đây là dạng **Dùng chữ thay số**; dấu hiệu là Đề viết số bằng chữ hoặc bằng dấu sao và cho quan hệ giữa các chữ số.
+
+Kiến thức phải dùng: Cấu tạo thập phân của số; tổng – hiệu.
+
+Cách làm: Viết cấu tạo số theo chữ, thay vào điều kiện rồi rút gọn.
+
+Lối tắt: Đổi chỗ hai chữ số của số có hai chữ số thì hiệu luôn là bội của 9.
+
+Kết quả: **21, 42, 63, 84**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Viết số theo cấu tạo: số có hai chữ số ab bằng a × 10 + b. Thay vào điều kiện đề cho rồi rút gọn — thường ra một quan hệ rất gọn giữa a và b.
+
+*Điểm chốt:* Chữ số hàng cao nhất **khác 0**, và mọi chữ số chỉ nhận giá trị từ 0 đến 9. Hai ràng buộc này thường là chỗ loại bớt đáp số.
+
+*Muốn khó hơn:* Chuyển sang số có ba chữ số abc để học sinh phải viết a × 100 + b × 10 + c.
+
+*Phải chắc trước khi làm bài này:* Cấu tạo thập phân và bài toán tìm hai số biết tổng và hiệu.
+
+### Bài IV.5 — Đếm số lập được thoả nhiều điều kiện
+
+**Các bước giải**
+
+Xét ý a: Lập được tất cả bao nhiêu số?
+
+Đọc vị: đây là dạng **Đếm số lập được có điều kiện**; dấu hiệu là Bộ chữ số cho trước kèm điều kiện chia hết.
+
+Kiến thức phải dùng: Quy tắc nhân, dấu hiệu chia hết.
+
+Cách làm: Chọn hàng bị ràng buộc trước rồi nhân số cách các hàng còn lại.
+
+Lối tắt: Số chia hết cho 3 nhận diện qua tổng ba chữ số được chọn — xét theo bộ ba.
+
+Kết quả: **24**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Đếm theo từng bước có ràng buộc: với điều kiện về chữ số tận cùng (chẵn, chia hết cho 5) thì chọn **chữ số tận cùng trước**, rồi mới chọn các hàng còn lại. Nhớ loại các số có chữ số 0 ở hàng trăm.
+
+*Điểm chốt:* Có ràng buộc ở hàng nào thì **chọn hàng đó trước**.
 
 ### Bài V.1 — Phản biện đề số 1
 
@@ -601,21 +607,21 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | I.3 | Tổng dãy số cách đều | Công thức tổng dãy cách đều | Dãy cộng dài, các số cách đều | Đếm số hạng → (đầu + cuối) × số hạng : 2 | Tổng = trung bình cộng của số đầu và số cuối, nhân với số số hạng. | 1 755 · 725 · 155 · 1 380… |
 | I.4 | Phép chia có dư | Quan hệ giữa số bị chia, số chia, thương và số dư | Đề yêu cầu ghi cả thương và số dư | Đặt tính chia, kiểm tra điều kiện số dư | Ước lượng thương bằng cách làm tròn số chia trước khi chia. | 3 242 dư 3 · 6 251 dư 11 · 4 772 dư 17 · 3 605 dư 4 |
 | I.5 | Nhận biết hình tròn và các yếu tố | Quan hệ đường kính – bán kính | Đề nhắc tâm, bán kính, đường kính | Quy về bán kính rồi so sánh hoặc tính | Nhìn đơn vị và tên đại lượng trước khi so sánh. | B · 16 cm · 20 cm · 14 cm… |
-| II.1 | Phủ hình, chia hình | Diện tích hình chữ nhật, hình vuông; phép chia | “Phủ kín bằng các hình vuông cạnh …”, “chia thành … phần bằng nhau” | Chia diện tích cho diện tích, kiểm tra bằng số hàng, số cột | Đếm số hàng nhân số cột nhanh hơn và tự kiểm tra được. | 32 · 32 cm² · 1 cm² · 16 cm²… |
-| II.2 | Đếm hình bằng quy tắc chọn hai điểm | Quy tắc đếm, tổ hợp chập hai | Hình có nhiều đoạn kẻ từ cùng một đỉnh, hoặc nhiều điểm trên một đường | Quy về số cách chọn hai điểm | Số cách chọn 2 trong k là k × (k − 1) : 2 — thuộc công thức này là xong. | 21 · 6 · 6 · 4… |
-| II.3 | Tính thời điểm trong ngày | Quan hệ giờ – phút, phép chia có dư | Cho thời điểm bắt đầu và khoảng thời gian | Quy về phút, cộng trừ, đổi lại | Cộng tròn giờ trước rồi cộng phần phút lẻ sau. | 8 giờ 42 phút · 15 giờ 1 phút · 13 giờ 19 phút · 18 giờ 54 phút |
-| II.4 | Tổng dãy số cách đều | Công thức tổng dãy cách đều | Dãy cộng có dấu … và các số cách đều nhau | Đếm số số hạng rồi áp công thức tổng | Ghép cặp đầu – cuối: mọi cặp đều có cùng tổng, chỉ cần nhân với số cặp. | 325 · 145 · 10 100 · 970 |
-| II.5 | Dãy số tự nhiên liên tiếp có tổng cho trước | Trung bình cộng, dãy cách đều | Cụm “… số tự nhiên liên tiếp có tổng bằng …” | Tìm số giữa bằng phép chia rồi suy ra hai đầu dãy | Tổng của n số liên tiếp (n lẻ) luôn chia hết cho n. | 425 · 111 · 253 · 427 |
-| III.1 | Cân đĩa, chia ba | Lập luận trường hợp xấu nhất, chia nhóm | Cân đĩa không có quả cân, tìm vật khác biệt | Chia ba phần bằng nhau mỗi lần cân | 3 đồng → 1 lần; 9 đồng → 2 lần; 27 đồng → 3 lần. | 1 lần · 3 phần · vì mỗi lần cân có ba kết quả: trái nặng hơn, phải nặng hơn, hoặc cân bằng · 1… |
-| III.2 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | > · < · > · >… |
-| III.3 | Nguyên lí Đi-rích-lê | Nguyên lí ngăn kéo, lập luận trường hợp xấu nhất | Cụm “ít nhất … để chắc chắn …” | Dựng tình huống xấu nhất rồi cộng 1 | Công thức: số loại × (số cần − 1) + 1. | 5 viên · 5 viên · 13 viên · 6 viên… |
-| III.4 | Tìm phân số của một số | Nhân số tự nhiên với phân số | Cụm “bằng … của …” | Chia theo mẫu số rồi nhân theo tử số | Chia trước, nhân sau — số nhỏ hơn nên tính nhẩm được. | 68 cây · 39 cây · 152 cây · 69 cây |
-| III.5 | Đọc bảng số liệu thống kê | Thống kê mô tả sơ cấp, trung bình cộng, tỉ số phần trăm | Đề cho bảng hoặc biểu đồ kèm nhiều câu hỏi | Ghi lại số liệu, trả lời từng câu bằng công cụ tương ứng | Tính tổng một lần rồi dùng lại cho mọi câu hỏi phần trăm. | 76 · Toán (29 bạn) · Tiếng Anh (7 bạn) · 22… |
-| IV.1 | Bài toán đại lượng nhiều bước | Nhân, trừ; đại lượng cùng loại | Cho số nhóm, giá trị mỗi nhóm và số nhóm đã dùng | Rút gọn số bước bằng cách trừ trước, nhân sau | So sánh hai đường giải, chọn đường ít phép tính hơn. | 36 lít · 180 lít · 18 lít · 350 lít |
-| IV.2 | Biến thiên diện tích theo kích thước | Diện tích hình chữ nhật, phân tích hình | “Tăng chiều dài thêm …”, “gấp đôi chiều …” | Vẽ hình chồng, tách phần dôi ra thành các mảnh chữ nhật | Gấp đôi một chiều thì diện tích gấp đôi; gấp đôi cả hai chiều thì gấp bốn. | 240 cm² · 2 lần · 2 lần · 2 lần |
-| IV.3 | Tổng và trung bình cộng của dãy cách đều | Dãy cách đều, trung bình cộng | Đề cho số số hạng, khoảng cách và một đầu của dãy | Tìm hai đầu dãy → tổng → trung bình cộng | Mọi cặp số hạng cách đều hai đầu đều có tổng bằng nhau. | 69 · 147 · 4 320 · 108… |
-| IV.4 | Hình chữ nhật tổng hợp | Chu vi, diện tích hình chữ nhật; s = v × t | Một hình nhưng nhiều câu hỏi nối tiếp | Tính chu vi và diện tích trước, dùng lại cho các ý sau | Chu vi tăng đúng 2 lần phần tăng, dù tăng chiều nào. | 68 m · 280 m² · 17 giây · 112 m²… |
-| IV.5 | Chuyển đổi giữa hai đại lượng, tổng không đổi | Bất biến tổng, biến thiên hiệu | “Chuyển … từ bên này sang bên kia” | Xét đại lượng không đổi (tổng) và đại lượng đổi gấp đôi (hiệu) | Sau khi chuyển, mỗi bên bằng nửa tổng — tính nửa tổng rồi trừ là ra ngay. | 57 quyển · 15 quyển · 44 quyển · 11 quyển… |
+| II.1 | Phủ hình, chia hình | Diện tích hình chữ nhật, hình vuông; phép chia | “Phủ kín bằng các hình vuông cạnh …”, “chia thành … phần bằng nhau” | Chia diện tích cho diện tích, kiểm tra bằng số hàng, số cột | Đếm số hàng nhân số cột nhanh hơn và tự kiểm tra được. | 2 · 8 cm² · 4 cm² · 4 cm²… |
+| II.2 | Dãy số tự nhiên liên tiếp có tổng cho trước | Trung bình cộng, dãy cách đều | Cụm “… số tự nhiên liên tiếp có tổng bằng …” | Tìm số giữa bằng phép chia rồi suy ra hai đầu dãy | Tổng của n số liên tiếp (n lẻ) luôn chia hết cho n. | 84 · 486 · 462 · 197… |
+| II.3 | Tổng dãy số cách đều | Công thức tổng dãy cách đều | Dãy cộng có dấu … và các số cách đều nhau | Đếm số số hạng rồi áp công thức tổng | Ghép cặp đầu – cuối: mọi cặp đều có cùng tổng, chỉ cần nhân với số cặp. | 210 · 15 050 · 2 550 · 1 525… |
+| II.4 | Bài toán đại lượng có lời văn | Nhân, chia số tự nhiên; đổi đơn vị khối lượng | Đơn vị trong câu hỏi khác đơn vị trong dữ kiện | Tính theo đơn vị dữ kiện rồi đổi ở bước cuối | 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ. | 6 tạ 60 kg · 4 tạ · 7 tạ 80 kg · 5 tạ 25 kg… |
+| II.5 | Đếm hình bằng quy tắc chọn hai điểm | Quy tắc đếm, tổ hợp chập hai | Hình có nhiều đoạn kẻ từ cùng một đỉnh, hoặc nhiều điểm trên một đường | Quy về số cách chọn hai điểm | Số cách chọn 2 trong k là k × (k − 1) : 2 — thuộc công thức này là xong. | 6 · 3 · 3 · 3… |
+| III.1 | Nguyên lí Đi-rích-lê | Nguyên lí ngăn kéo, lập luận trường hợp xấu nhất | Cụm “ít nhất … để chắc chắn …” | Dựng tình huống xấu nhất rồi cộng 1 | Công thức: số loại × (số cần − 1) + 1. | 3 viên · 13 viên · 9 viên · 3 viên… |
+| III.2 | Tìm x nhiều bước có ngoặc | Thứ tự thực hiện phép tính, quan hệ thành phần | x nằm trong ngoặc, ngoài ngoặc còn phép tính khác | Bóc lớp từ ngoài vào trong | Thay x tìm được vào đề, tính một lượt để thử lại. | x = 39 · x = 109 · x = 93 · x = 35… |
+| III.3 | Đọc bảng số liệu thống kê | Thống kê mô tả sơ cấp, trung bình cộng, tỉ số phần trăm | Đề cho bảng hoặc biểu đồ kèm nhiều câu hỏi | Ghi lại số liệu, trả lời từng câu bằng công cụ tương ứng | Tính tổng một lần rồi dùng lại cho mọi câu hỏi phần trăm. | 56 · Khoa học (25 bạn) · Tiếng Anh (8 bạn) · 17… |
+| III.4 | Tìm số theo điều kiện của các chữ số | Cấu tạo thập phân, bài toán tổng – hiệu | Đề cho quan hệ giữa các chữ số chứ không cho số | Đặt ẩn cho từng chữ số, viết số theo cấu tạo, giải hệ điều kiện | Đổi chỗ hai chữ số của số có hai chữ số thì hiệu luôn bằng 9 lần hiệu hai chữ số. | hơn 3 đơn vị · 78, hiệu 9 · 22, hiệu 0 · 40 |
+| III.5 | Đếm số cặp | Tổ hợp chập hai, nguyên tắc đếm lặp | “Hai … bất kì”, “mỗi người với tất cả những người còn lại” | n × (n − 1) : 2 | Nhớ vài giá trị: 5 người có 10 cặp, 10 người có 45 cặp. | 28 cái · 10 trận · 105 đường thẳng · 28 cái |
+| IV.1 | Hình chữ nhật tổng hợp | Chu vi, diện tích hình chữ nhật; s = v × t | Một hình nhưng nhiều câu hỏi nối tiếp | Tính chu vi và diện tích trước, dùng lại cho các ý sau | Chu vi tăng đúng 2 lần phần tăng, dù tăng chiều nào. | 224 m · 3 135 m² · 112 giây · 330 m²… |
+| IV.2 | Biến thiên diện tích theo kích thước | Diện tích hình chữ nhật, phân tích hình | “Tăng chiều dài thêm …”, “gấp đôi chiều …” | Vẽ hình chồng, tách phần dôi ra thành các mảnh chữ nhật | Gấp đôi một chiều thì diện tích gấp đôi; gấp đôi cả hai chiều thì gấp bốn. | 2 lần · 2 lần · 660 cm² · 36 cm²… |
+| IV.3 | Chuyển đổi giữa hai đại lượng, tổng không đổi | Bất biến tổng, biến thiên hiệu | “Chuyển … từ bên này sang bên kia” | Xét đại lượng không đổi (tổng) và đại lượng đổi gấp đôi (hiệu) | Sau khi chuyển, mỗi bên bằng nửa tổng — tính nửa tổng rồi trừ là ra ngay. | 21 quyển · 75 quyển · 23 quyển · 19 quyển… |
+| IV.4 | Dùng chữ thay số | Cấu tạo thập phân của số; tổng – hiệu | Đề viết số bằng chữ hoặc bằng dấu sao và cho quan hệ giữa các chữ số | Viết cấu tạo số theo chữ, thay vào điều kiện rồi rút gọn | Đổi chỗ hai chữ số của số có hai chữ số thì hiệu luôn là bội của 9. | 21, 42, 63, 84 · 83 · 96 · 81… |
+| IV.5 | Đếm số lập được có điều kiện | Quy tắc nhân, dấu hiệu chia hết | Bộ chữ số cho trước kèm điều kiện chia hết | Chọn hàng bị ràng buộc trước rồi nhân số cách các hàng còn lại | Số chia hết cho 3 nhận diện qua tổng ba chữ số được chọn — xét theo bộ ba. | 24 · 0 · 6 · 12… |
 | V.1 | Chu vi, diện tích hình cơ bản | Công thức chu vi, diện tích hình chữ nhật và hình vuông | Cho chiều dài, chiều rộng hoặc cạnh | Chọn đúng công thức, ghi đúng đơn vị | Hình vuông là hình chữ nhật có dài bằng rộng — chỉ cần nhớ một bộ công thức. | Chu vi, diện tích hình cơ bản · Công thức chu vi, diện tích hình chữ nhật và hình vuông · Cho chiều dài, chiều rộng hoặc cạnh · Chọn đúng công thức, ghi đúng đơn vị… |
 | V.2 | Đếm hình trong lưới | Quy tắc đếm, tổ hợp đơn giản | Hình vẽ là lưới ô vuông đều | Đếm theo đường kẻ hoặc theo cỡ hình | Số cách chọn 2 trong k đường kẻ là k × (k − 1) : 2. | Đếm hình trong lưới · Quy tắc đếm, tổ hợp đơn giản · Hình vẽ là lưới ô vuông đều · Đếm theo đường kẻ hoặc theo cỡ hình… |
 | V.3 | Nhận biết hình tròn và các yếu tố | Quan hệ đường kính – bán kính | Đề nhắc tâm, bán kính, đường kính | Quy về bán kính rồi so sánh hoặc tính | Nhìn đơn vị và tên đại lượng trước khi so sánh. | Nhận biết hình tròn và các yếu tố · Quan hệ đường kính – bán kính · Đề nhắc tâm, bán kính, đường kính · Quy về bán kính rồi so sánh hoặc tính… |
@@ -634,20 +640,20 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | I.4 | TD1 | Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong. |
 | I.5 | TD1, TD2 | So sánh phải **cùng loại đại lượng** — bán kính với bán kính. |
 | II.1 | TD3, TD4 | Phép chia diện tích chỉ đúng khi mảnh **xếp khít**. |
-| II.2 | TD4, TD3 | Mọi bài đếm ở đây quy về **chọn hai điểm** trong một dãy điểm. |
-| II.3 | TD3, TD2 | Đổi hết về phút rồi mới cộng — an toàn hơn cộng trực tiếp. |
-| II.4 | TD4, TD5 | Phải đếm **số số hạng** trước; đây là chỗ sai nhiều nhất. |
-| II.5 | TD3, TD4 | Với số lượng lẻ thì **số giữa = tổng : số lượng** — đó là chìa khoá. |
-| III.1 | TD6, TD2 | Cân đĩa cho **ba** kết quả, nên chia ba chứ không chia đôi. |
-| III.2 | TD5, TD2 | Che phần **giống nhau** đi, chỉ so phần khác nhau. |
-| III.3 | TD6, TD2 | Luôn xuất phát từ **trường hợp xấu nhất** rồi cộng thêm 1. |
-| III.4 | TD2, TD3 | Phân số tính trên **số nào** — đọc kĩ cụm “… của …”. |
-| III.5 | TD1, TD2 | Mọi câu hỏi đều quy về **tổng, so sánh, trung bình cộng, tỉ số phần trăm**. |
-| IV.1 | TD3, TD5 | Trừ **số thùng** trước khi nhân thì ít phép tính hơn. |
+| II.2 | TD3, TD4 | Với số lượng lẻ thì **số giữa = tổng : số lượng** — đó là chìa khoá. |
+| II.3 | TD4, TD5 | Phải đếm **số số hạng** trước; đây là chỗ sai nhiều nhất. |
+| II.4 | TD2, TD3 | Câu hỏi đòi đơn vị nào thì bước **cuối cùng** mới đổi sang đơn vị đó. |
+| II.5 | TD4, TD3 | Mọi bài đếm ở đây quy về **chọn hai điểm** trong một dãy điểm. |
+| III.1 | TD6, TD2 | Luôn xuất phát từ **trường hợp xấu nhất** rồi cộng thêm 1. |
+| III.2 | TD3, TD2 | Mỗi bước chỉ gỡ **một** phép tính, đừng gỡ hai phép cùng lúc. |
+| III.3 | TD1, TD2 | Mọi câu hỏi đều quy về **tổng, so sánh, trung bình cộng, tỉ số phần trăm**. |
+| III.4 | TD3, TD2 | Chữ số hàng chục **khác 0** và mỗi chữ số chỉ nhận giá trị từ 0 đến 9. |
+| III.5 | TD4, TD6 | Chia cho 2 vì mỗi cặp được đếm **hai lần**. |
+| IV.1 | TD3, TD6 | Tăng cả hai chiều thì phần dôi ra **không phải** tích của hai phần tăng. |
 | IV.2 | TD3, TD6 | Tăng cả hai chiều thì phần tăng gồm **ba mảnh**, không phải một. |
-| IV.3 | TD4, TD3 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
-| IV.4 | TD3, TD6 | Tăng cả hai chiều thì phần dôi ra **không phải** tích của hai phần tăng. |
-| IV.5 | TD3, TD6 | Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển. |
+| IV.3 | TD3, TD6 | Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển. |
+| IV.4 | TD1, TD4 | Chữ số hàng cao nhất **khác 0**, và mọi chữ số chỉ nhận giá trị từ 0 đến 9. Hai ràng buộc này thường là chỗ loại bớt đáp số. |
+| IV.5 | TD4, TD6 | Có ràng buộc ở hàng nào thì **chọn hàng đó trước**. |
 | V.1 | TD1, TD3 | Chu vi ghi đơn vị **cm**, diện tích ghi đơn vị **cm²** — sai đơn vị là mất điểm. |
 | V.2 | TD3, TD4 | Đếm **theo cỡ** hoặc **theo đường kẻ**, tuyệt đối không đếm ngẫu nhiên. |
 | V.3 | TD1, TD2 | So sánh phải **cùng loại đại lượng** — bán kính với bán kính. |
@@ -668,20 +674,20 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 | I.4 | Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. | Thử lại bằng công thức số bị chia = số chia × thương + số dư. |
 | I.5 | So bán kính của hình này với đường kính của hình kia. | Đổi hết về bán kính trước khi so sánh. |
 | II.1 | Chia chu vi cho cạnh mảnh thay vì chia diện tích cho diện tích. | Kẻ lưới lên hình và đếm thử một hàng. |
-| II.2 | Chỉ đếm tam giác nhỏ, quên các tam giác ghép. | Đánh dấu tên các điểm rồi liệt kê từng cặp một cách có thứ tự. |
-| II.3 | Cộng phần phút thành hơn 60 mà quên đổi thành giờ. | Kiểm tra phần phút của đáp số phải bé hơn 60. |
-| II.4 | Lấy số cuối chia khoảng cách làm số số hạng, quên cộng 1. | Viết ra ba số đầu và ba số cuối để kiểm tra khoảng cách rồi mới đếm. |
-| II.5 | Lấy tổng chia cho số lượng rồi nhận luôn kết quả là số bé nhất. | Vẽ dãy số ra, đánh dấu vị trí số giữa trước khi lùi về số đầu. |
-| III.1 | Chia đôi như tìm kiếm thông thường nên cần nhiều lần cân hơn mức cần thiết. | Nhớ ba kết quả: nghiêng trái, nghiêng phải, thăng bằng. |
-| III.2 | Tính hết cả hai vế, vừa lâu vừa dễ sai. | Dùng bút gạch bỏ phần giống nhau ở hai vế trước khi so sánh. |
-| III.3 | Nhân số màu với số viên cần rồi lấy luôn kết quả đó. | Viết rõ câu “Xấu nhất là mỗi màu lấy được … viên mà vẫn chưa đủ”. |
-| III.4 | Nhân phân số với đại lượng khác, không phải đại lượng đề chỉ định. | Gạch chân cụm “bằng … số cây của …” để xác định số bị nhân. |
-| III.5 | Đọc nhầm cột, hoặc quên một môn khi cộng tổng. | Đánh dấu từng số đã cộng để không sót và không cộng lặp. |
-| IV.1 | Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. | Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng. |
+| II.2 | Lấy tổng chia cho số lượng rồi nhận luôn kết quả là số bé nhất. | Vẽ dãy số ra, đánh dấu vị trí số giữa trước khi lùi về số đầu. |
+| II.3 | Lấy số cuối chia khoảng cách làm số số hạng, quên cộng 1. | Viết ra ba số đầu và ba số cuối để kiểm tra khoảng cách rồi mới đếm. |
+| II.4 | Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. | Khoanh tròn đơn vị trong câu hỏi trước khi đặt bút. |
+| II.5 | Chỉ đếm tam giác nhỏ, quên các tam giác ghép. | Đánh dấu tên các điểm rồi liệt kê từng cặp một cách có thứ tự. |
+| III.1 | Nhân số màu với số viên cần rồi lấy luôn kết quả đó. | Viết rõ câu “Xấu nhất là mỗi màu lấy được … viên mà vẫn chưa đủ”. |
+| III.2 | Nhân phá ngoặc sai dấu, hoặc gỡ phép trong ngoặc trước. | Ghi rõ từng bước trên một dòng riêng, mỗi dòng chỉ khác dòng trên một phép. |
+| III.3 | Đọc nhầm cột, hoặc quên một môn khi cộng tổng. | Đánh dấu từng số đã cộng để không sót và không cộng lặp. |
+| III.4 | Tìm ra a hoặc b lớn hơn 9 mà vẫn nhận đáp số. | Sau khi tính xong, kiểm tra lại từng chữ số có nằm trong khoảng 0–9 không. |
+| III.5 | Quên chia 2, đáp số gấp đôi. | Thử với 3 người: phải ra 3 cái bắt tay, không phải 6. |
+| IV.1 | Nhân hai lượng tăng với nhau rồi coi đó là diện tích tăng thêm. | Vẽ hình cũ nằm trong hình mới rồi tô phần dôi ra. |
 | IV.2 | Nhân hai lượng tăng với nhau rồi coi đó là phần diện tích tăng thêm. | Vẽ hình chữ nhật cũ nằm trong hình mới, tô phần dôi ra. |
-| IV.3 | Tính tổng rồi chia — dài hơn và dễ sai khi số hạng nhiều. | Nhớ tính chất trung bình cộng để kiểm tra chéo kết quả tổng. |
-| IV.4 | Nhân hai lượng tăng với nhau rồi coi đó là diện tích tăng thêm. | Vẽ hình cũ nằm trong hình mới rồi tô phần dôi ra. |
-| IV.5 | Chuyển đúng bằng hiệu hai bên nên bên ít lại thành bên nhiều. | Thử lại: sau khi chuyển, cộng trừ ra hai số rồi so xem có bằng nhau không. |
+| IV.3 | Chuyển đúng bằng hiệu hai bên nên bên ít lại thành bên nhiều. | Thử lại: sau khi chuyển, cộng trừ ra hai số rồi so xem có bằng nhau không. |
+| IV.4 | Tính ra a bằng 0 rồi vẫn nhận, hoặc để một chữ số vượt quá 9. | Viết sẵn hai dòng ràng buộc lên đầu bài giải rồi mới tính. |
+| IV.5 | Chọn hàng trăm trước rồi mới xét điều kiện tận cùng, dẫn đến đếm trùng hoặc sót. | Viết rõ thứ tự chọn hàng trước khi nhân các số cách. |
 | V.1 | Nhầm công thức chu vi với diện tích; quên nhân 2 ở chu vi. | Vẽ hình và ghi số đo lên hình trước khi tính. |
 | V.2 | Chỉ đếm các ô vuông nhỏ, quên các hình ghép từ nhiều ô. | Kẻ bảng theo cỡ hình: cỡ 1×1, 1×2, 2×2… rồi cộng. |
 | V.3 | So bán kính của hình này với đường kính của hình kia. | Đổi hết về bán kính trước khi so sánh. |
@@ -700,20 +706,20 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 **Bài I.4** — (1) Đặt tính chia theo cột. — (2) Mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. — (3) Thử lại: nhân thương với số chia rồi cộng số dư.
 **Bài I.5** — (1) Đường kính gấp mấy lần bán kính? — (2) Đưa cả hai hình về cùng bán kính. — (3) So hai bán kính vừa tính.
 **Bài II.1** — (1) Diện tích hình lớn bằng bao nhiêu? — (2) Diện tích một mảnh bằng bao nhiêu? — (3) Chia hai diện tích cho nhau rồi đếm lại theo hàng.
-**Bài II.2** — (1) Cạnh đối diện bị chia thành mấy phần? — (2) Mỗi tam giác ứng với việc chọn hai điểm nào? — (3) Số cách chọn 2 trong k điểm là k × (k − 1) : 2.
-**Bài II.3** — (1) Đổi giờ khởi hành ra phút tính từ 0 giờ. — (2) Cộng thêm thời gian đi (tính bằng phút). — (3) Đổi tổng số phút trở lại thành giờ và phút.
-**Bài II.4** — (1) Khoảng cách giữa hai số liên tiếp là bao nhiêu? — (2) Dãy có bao nhiêu số hạng? — (3) Tổng = (đầu + cuối) × số số hạng : 2.
-**Bài II.5** — (1) Số lượng số hạng là số chẵn hay lẻ? — (2) Với số lượng lẻ, số ở giữa bằng tổng chia số lượng. — (3) Từ số giữa lùi về đầu dãy mấy đơn vị?
-**Bài III.1** — (1) Một lần cân cho mấy kết quả khác nhau? — (2) Vậy nên chia số đồng tiền thành mấy phần? — (3) Sau mỗi lần cân còn lại nhiều nhất bao nhiêu đồng?
-**Bài III.2** — (1) Hai vế có phần nào giống hệt nhau? — (2) Gạch bỏ phần giống nhau đi. — (3) So sánh phần còn lại.
-**Bài III.3** — (1) Xấu nhất thì mỗi màu lấy được bao nhiêu viên mà vẫn chưa đủ? — (2) Tổng số viên ở tình huống xấu nhất là bao nhiêu? — (3) Lấy thêm một viên nữa thì sao?
-**Bài III.4** — (1) Phân số đó tính trên số nào? — (2) Chia số đó thành mấy phần bằng nhau? — (3) Lấy mấy phần trong số đó?
-**Bài III.5** — (1) Ghi lại các số liệu ra một hàng. — (2) Cộng tất cả để có tổng. — (3) So sánh để tìm lớn nhất và bé nhất.
-**Bài IV.1** — (1) Còn lại bao nhiêu thùng? — (2) Mỗi thùng bao nhiêu lít? — (3) Nhân hai kết quả đó.
+**Bài II.2** — (1) Số lượng số hạng là số chẵn hay lẻ? — (2) Với số lượng lẻ, số ở giữa bằng tổng chia số lượng. — (3) Từ số giữa lùi về đầu dãy mấy đơn vị?
+**Bài II.3** — (1) Khoảng cách giữa hai số liên tiếp là bao nhiêu? — (2) Dãy có bao nhiêu số hạng? — (3) Tổng = (đầu + cuối) × số số hạng : 2.
+**Bài II.4** — (1) Tính tổng khối lượng theo ki-lô-gam. — (2) Đề hỏi kết quả theo đơn vị nào? — (3) Đổi kết quả sang đơn vị đó.
+**Bài II.5** — (1) Cạnh đối diện bị chia thành mấy phần? — (2) Mỗi tam giác ứng với việc chọn hai điểm nào? — (3) Số cách chọn 2 trong k điểm là k × (k − 1) : 2.
+**Bài III.1** — (1) Xấu nhất thì mỗi màu lấy được bao nhiêu viên mà vẫn chưa đủ? — (2) Tổng số viên ở tình huống xấu nhất là bao nhiêu? — (3) Lấy thêm một viên nữa thì sao?
+**Bài III.2** — (1) Phép tính ngoài cùng là phép nào? — (2) Coi cả cụm còn lại là một số và tìm giá trị của nó. — (3) Lặp lại cho tới khi chỉ còn x.
+**Bài III.3** — (1) Ghi lại các số liệu ra một hàng. — (2) Cộng tất cả để có tổng. — (3) So sánh để tìm lớn nhất và bé nhất.
+**Bài III.4** — (1) Gọi chữ số hàng chục là a, hàng đơn vị là b. — (2) Viết số đó thành a × 10 + b. — (3) Đưa về bài toán tổng – hiệu của a và b.
+**Bài III.5** — (1) Mỗi người bắt tay với bao nhiêu người? — (2) Nhân với số người thì mỗi cái bắt tay bị đếm mấy lần? — (3) Chia kết quả cho 2.
+**Bài IV.1** — (1) Đi một vòng là đi hết đại lượng nào? — (2) Phần diện tích dôi ra có hình dạng gì? — (3) Tăng cả hai chiều thì phần dôi gồm mấy mảnh?
 **Bài IV.2** — (1) Vẽ hình cũ và hình mới chồng lên nhau. — (2) Phần dôi ra gồm mấy mảnh? — (3) Tính diện tích từng mảnh rồi cộng.
-**Bài IV.3** — (1) Từ số hạng cuối lùi về số hạng đầu qua mấy khoảng? — (2) Trung bình cộng bằng nửa tổng của hai số hạng ở hai đầu. — (3) Tổng bằng trung bình cộng nhân số số hạng.
-**Bài IV.4** — (1) Đi một vòng là đi hết đại lượng nào? — (2) Phần diện tích dôi ra có hình dạng gì? — (3) Tăng cả hai chiều thì phần dôi gồm mấy mảnh?
-**Bài IV.5** — (1) Hiện tại hai bên hơn kém nhau bao nhiêu? — (2) Chuyển 1 quyển thì hiệu giảm mấy quyển? — (3) Muốn hiệu về 0 thì phải chuyển bao nhiêu?
+**Bài IV.3** — (1) Hiện tại hai bên hơn kém nhau bao nhiêu? — (2) Chuyển 1 quyển thì hiệu giảm mấy quyển? — (3) Muốn hiệu về 0 thì phải chuyển bao nhiêu?
+**Bài IV.4** — (1) Số có hai chữ số ab viết theo cấu tạo là gì? — (2) Thay cấu tạo ấy vào điều kiện đề cho, rồi rút gọn. — (3) Kiểm lại: chữ số hàng chục có khác 0 không?
+**Bài IV.5** — (1) Điều kiện của đề ràng buộc hàng nào? — (2) Chọn hàng bị ràng buộc trước tiên. — (3) Nhớ loại trường hợp chữ số 0 đứng ở hàng trăm.
 **Bài V.1** — (1) Điền cột 1 và cột 3 trước — đó là hai cột dễ nhất. — (2) Cột 4 và cột 5 khác nhau: một cột nói cách làm, một cột nói lối tắt. — (3) Cột 6 chỉ ghi kết quả, không ghi lời giải.
 **Bài V.2** — (1) Điền cột 1 và cột 3 trước — đó là hai cột dễ nhất. — (2) Cột 4 và cột 5 khác nhau: một cột nói cách làm, một cột nói lối tắt. — (3) Cột 6 chỉ ghi kết quả, không ghi lời giải.
 **Bài V.3** — (1) Điền cột 1 và cột 3 trước — đó là hai cột dễ nhất. — (2) Cột 4 và cột 5 khác nhau: một cột nói cách làm, một cột nói lối tắt. — (3) Cột 6 chỉ ghi kết quả, không ghi lời giải.
@@ -734,20 +740,20 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | I.4 | Tìm thương và số dư của 1 234 : 7 | 176 dư 2 |
 | I.5 | Hình tròn đường kính 10 cm có bán kính bao nhiêu? | 5 cm |
 | II.1 | Hình chữ nhật 6 cm × 4 cm phủ bằng hình vuông cạnh 2 cm. Cần mấy hình? | 6 hình |
-| II.2 | Trên một đường thẳng có 5 điểm. Có bao nhiêu đoạn thẳng? | 10 |
-| II.3 | Tàu chạy lúc 7 giờ 40 phút, đi hết 2 giờ 35 phút. Đến lúc mấy giờ? | 10 giờ 15 phút |
-| II.4 | Tính nhanh: 1 + 2 + 3 + … + 100 | 5 050 |
-| II.5 | Tổng của 5 số tự nhiên liên tiếp bằng 100. Số bé nhất là số nào? | 18 |
-| III.1 | Có 9 đồng tiền, một đồng nhẹ hơn. Cần cân mấy lần? | 2 lần |
-| III.2 | So sánh: 234 × 7 … 234 × 8 | < |
-| III.3 | Hộp có bi 3 màu, lấy ít nhất mấy viên để chắc chắn có 2 viên cùng màu? | 4 viên |
-| III.4 | Tổ Một trồng 60 cây, tổ Hai bằng 2 phần 3 tổ Một. Tổ Hai trồng mấy cây? | 40 cây |
-| III.5 | Bảng: Toán 10, Văn 6, Anh 4. Trung bình mỗi môn bao nhiêu bạn? | 6,67 bạn |
-| IV.1 | Có 10 thùng dầu, mỗi thùng 20 lít, đã bán 3 thùng. Còn bao nhiêu lít? | 140 lít |
+| II.2 | Tổng của 5 số tự nhiên liên tiếp bằng 100. Số bé nhất là số nào? | 18 |
+| II.3 | Tính nhanh: 1 + 2 + 3 + … + 100 | 5 050 |
+| II.4 | Xe chở 20 bao gạo, mỗi bao 50 kg. Xe chở mấy tạ? | 10 tạ |
+| II.5 | Trên một đường thẳng có 5 điểm. Có bao nhiêu đoạn thẳng? | 10 |
+| III.1 | Hộp có bi 3 màu, lấy ít nhất mấy viên để chắc chắn có 2 viên cùng màu? | 4 viên |
+| III.2 | Tìm x: (x + 12) × 5 − 8 = 132 | x = 16 |
+| III.3 | Bảng: Toán 10, Văn 6, Anh 4. Trung bình mỗi môn bao nhiêu bạn? | 6,67 bạn |
+| III.4 | Tìm số có hai chữ số, tổng hai chữ số bằng 11, hiệu bằng 3. | 74 |
+| III.5 | 6 đội bóng đấu vòng tròn một lượt. Có bao nhiêu trận? | 15 trận |
+| IV.1 | Hình chữ nhật 10 m × 5 m, tăng chiều dài 3 m. Diện tích tăng bao nhiêu? | 15 m² |
 | IV.2 | Hình chữ nhật 10 cm × 5 cm, tăng chiều dài thêm 3 cm. Diện tích tăng bao nhiêu? | 15 cm² |
-| IV.3 | Dãy cách đều 10 số hạng, đầu 5, cuối 50. Tổng bằng bao nhiêu? | 275 |
-| IV.4 | Hình chữ nhật 10 m × 5 m, tăng chiều dài 3 m. Diện tích tăng bao nhiêu? | 15 m² |
-| IV.5 | Tổ Một có 30 quyển, tổ Hai có 20 quyển. Chuyển mấy quyển để bằng nhau? | 5 quyển |
+| IV.3 | Tổ Một có 30 quyển, tổ Hai có 20 quyển. Chuyển mấy quyển để bằng nhau? | 5 quyển |
+| IV.4 | Số có hai chữ số, đổi chỗ hai chữ số được số nhỏ hơn 27 đơn vị, tổng hai chữ số bằng 11. Tìm số ấy. | 74 |
+| IV.5 | Từ 1, 2, 3, 4 lập được bao nhiêu số có ba chữ số khác nhau? | 24 |
 | V.1 | Hình chữ nhật dài 8 cm, rộng 5 cm. Tính diện tích. | 40 cm² |
 | V.2 | Lưới 2 hàng 2 cột có bao nhiêu hình vuông? | 5 |
 | V.3 | Hình tròn đường kính 10 cm có bán kính bao nhiêu? | 5 cm |

@@ -163,95 +163,92 @@ e) Trang trại và xưởng chứa tất cả 156 kg muối. Trang trại chứ
 
 ## PHẦN III — VẬN DỤNG · Mức M3 — Vận dụng · 20 phút · 25 điểm
 
-### Bài 1. (5 điểm) Tìm hai số khi biết tổng và tỉ số
+### Bài 1. (5 điểm) Tổng của các số tự nhiên liên tiếp
 
-Vẽ sơ đồ đoạn thẳng rồi giải.
+Với mỗi ý, tìm số theo yêu cầu.
 
-a) Tổ Một và đội Hai trồng được tất cả 1 035 cây. Số cây của tổ Một bằng 1 phần 2 số cây của đội Hai. Mỗi tổ trồng được bao nhiêu cây?
-b) Đội Một và nhóm Sao Mai trồng được tất cả 1 053 cây. Số cây của đội Một bằng 1 phần 2 số cây của nhóm Sao Mai. Mỗi tổ trồng được bao nhiêu cây?
-c) Nhóm Sao Mai và tổ Ba trồng được tất cả 1 012 cây. Số cây của nhóm Sao Mai bằng 5 phần 6 số cây của tổ Ba. Mỗi tổ trồng được bao nhiêu cây?
-d) Đội Hai và nhóm Sao Mai trồng được tất cả 840 cây. Số cây của đội Hai bằng 1 phần 7 số cây của nhóm Sao Mai. Mỗi tổ trồng được bao nhiêu cây?
-e) Nhóm Hoa Phượng và tổ Một trồng được tất cả 1 199 cây. Số cây của nhóm Hoa Phượng bằng 4 phần 7 số cây của tổ Một. Mỗi tổ trồng được bao nhiêu cây?
+a) Tổng của 9 số tự nhiên liên tiếp bằng 3 132. Tìm số bé nhất trong 9 số đó.
+b) Tổng của 7 số tự nhiên liên tiếp bằng 357. Tìm số bé nhất trong 7 số đó.
+c) Tổng của 9 số tự nhiên liên tiếp bằng 2 160. Tìm số bé nhất trong 9 số đó.
+d) Tổng của 3 số tự nhiên liên tiếp bằng 585. Tìm số bé nhất trong 3 số đó.
+e) Tổng của 7 số tự nhiên liên tiếp bằng 280. Tìm số bé nhất trong 7 số đó.
+f) Tổng của 3 số tự nhiên liên tiếp bằng 633. Tìm số bé nhất trong 3 số đó.
 
-### Bài 2. (5 điểm) Tổng – tỉ, hiệu – tỉ khi một dữ kiện bị giấu
-
-Việc đầu tiên là gọi tên dữ kiện bị giấu.
-
-a) Hợp tác xã chứa 19 kg xi măng. Nếu hợp tác xã nhận thêm 38 kg thì bằng số xi măng ở cửa hàng. Hỏi cả hai nơi chứa bao nhiêu kg?
-b) Số muối ở xưởng bằng 5 số muối ở hợp tác xã. Nếu chuyển 30 kg từ xưởng sang hợp tác xã thì xưởng vẫn còn nhiều hơn. Biết xưởng hơn hợp tác xã 60 kg, tìm số muối mỗi nơi.
-c) Kho B và kho A chứa tất cả 126 kg gạo. Nếu chia số gạo ở kho B thành 4 phần bằng nhau thì số gạo ở kho A bằng 5 phần như thế. Mỗi nơi chứa bao nhiêu kg?
-d) Hợp tác xã và xưởng chứa tất cả 51 kg gạo. Nếu chia số gạo ở hợp tác xã thành 1 phần bằng nhau thì số gạo ở xưởng bằng 2 phần như thế. Mỗi nơi chứa bao nhiêu kg?
-e) Trang trại chứa 63 kg gạo. Nếu trang trại nhận thêm 42 kg thì bằng số gạo ở thư viện. Hỏi cả hai nơi chứa bao nhiêu kg?
-
-### Bài 3. (5 điểm) Bài toán về tuổi
+### Bài 2. (5 điểm) Bài toán về tuổi
 
 Chú ý điều gì thay đổi và điều gì không đổi theo thời gian.
 
-a) Hiện nay bố 42 tuổi, con 14 tuổi. Cách đây 8 năm, bố hơn con bao nhiêu tuổi?
-b) Hiện nay bố 55 tuổi, con 11 tuổi. Cách đây 6 năm, bố hơn con bao nhiêu tuổi?
-c) Hiện nay bố 24 tuổi, con 6 tuổi. Cách đây 4 năm, bố hơn con bao nhiêu tuổi?
-d) Hiện nay bố 24 tuổi, con 6 tuổi. Sau 3 năm nữa, tổng số tuổi hai bố con là bao nhiêu?
-e) Tuổi bố gấp 4 lần tuổi con. Tổng số tuổi của hai bố con là 65 tuổi. Tính tuổi mỗi người.
-f) Tuổi bố gấp 5 lần tuổi con. Tổng số tuổi của hai bố con là 78 tuổi. Tính tuổi mỗi người.
+a) Hiện nay bố 30 tuổi, con 10 tuổi. Cách đây 5 năm, bố hơn con bao nhiêu tuổi?
+b) Hiện nay bố 16 tuổi, con 8 tuổi. Cách đây 7 năm, bố hơn con bao nhiêu tuổi?
+c) Tuổi bố gấp 5 lần tuổi con. Tổng số tuổi của hai bố con là 48 tuổi. Tính tuổi mỗi người.
+d) Tuổi bố gấp 2 lần tuổi con. Tổng số tuổi của hai bố con là 24 tuổi. Tính tuổi mỗi người.
 
-### Bài 4. (5 điểm) Nguyên lý bù trừ với hai tập hợp
+### Bài 3. (5 điểm) Tổng – tỉ, hiệu – tỉ khi một dữ kiện bị giấu
 
-Vẽ hai vòng tròn giao nhau và điền số vào từng miền.
+Việc đầu tiên là gọi tên dữ kiện bị giấu.
 
-a) Lớp có 25 học sinh. Có 19 bạn thích môn Toán, 16 bạn thích môn Tiếng Việt, 12 bạn thích cả hai môn. Hỏi bao nhiêu bạn thích ít nhất một trong hai môn?
-b) Bao nhiêu bạn chỉ thích môn Toán?
-c) Bao nhiêu bạn chỉ thích môn Tiếng Việt?
-d) Bao nhiêu bạn không thích môn nào trong hai môn đó?
-e) Nếu cộng thẳng số bạn thích Toán với số bạn thích Tiếng Việt thì được bao nhiêu?
-f) Con số vừa cộng lớn hơn số bạn thích ít nhất một môn bao nhiêu? Vì sao?
+a) Kho A chứa 96 kg muối. Nếu kho A nhận thêm 64 kg thì bằng số muối ở hợp tác xã. Hỏi cả hai nơi chứa bao nhiêu kg?
+b) Hợp tác xã và cửa hàng chứa tất cả 252 kg phân bón. Nếu chia số phân bón ở hợp tác xã thành 2 phần bằng nhau thì số phân bón ở cửa hàng bằng 5 phần như thế. Mỗi nơi chứa bao nhiêu kg?
+c) Số đường ở hợp tác xã bằng 5 phần 3 số đường ở cửa hàng. Nếu chuyển 8 kg từ hợp tác xã sang cửa hàng thì hợp tác xã vẫn còn nhiều hơn. Biết hợp tác xã hơn cửa hàng 16 kg, tìm số đường mỗi nơi.
+d) Cửa hàng chứa 22 kg xi măng. Nếu cửa hàng nhận thêm 22 kg thì bằng số xi măng ở thư viện. Hỏi cả hai nơi chứa bao nhiêu kg?
+e) Số phân bón ở kho B bằng 4 số phân bón ở cửa hàng. Nếu chuyển 105 kg từ kho B sang cửa hàng thì kho B vẫn còn nhiều hơn. Biết kho B hơn cửa hàng 105 kg, tìm số phân bón mỗi nơi.
+f) Thư viện và cửa hàng chứa tất cả 60 kg đường. Nếu chia số đường ở thư viện thành 1 phần bằng nhau thì số đường ở cửa hàng bằng 2 phần như thế. Mỗi nơi chứa bao nhiêu kg?
+
+### Bài 4. (5 điểm) Tìm hai số khi biết tổng và tỉ số
+
+Vẽ sơ đồ đoạn thẳng rồi giải.
+
+a) Đội Một và tổ Một trồng được tất cả 574 cây. Số cây của đội Một bằng 1 phần 6 số cây của tổ Một. Mỗi tổ trồng được bao nhiêu cây?
+b) Tổ Hai và đội Hai trồng được tất cả 891 cây. Số cây của tổ Hai bằng 5 phần 6 số cây của đội Hai. Mỗi tổ trồng được bao nhiêu cây?
+c) Đội Một và tổ Một trồng được tất cả 48 cây. Số cây của đội Một bằng 3 phần 5 số cây của tổ Một. Mỗi tổ trồng được bao nhiêu cây?
+d) Nhóm Hoa Phượng và nhóm Sao Mai trồng được tất cả 186 cây. Số cây của nhóm Hoa Phượng bằng 1 phần 5 số cây của nhóm Sao Mai. Mỗi tổ trồng được bao nhiêu cây?
 
 ### Bài 5. (5 điểm) Tìm hai số khi biết hiệu và tỉ số
 
 Vẽ sơ đồ đoạn thẳng rồi giải.
 
-a) Kho A chứa nhiều hơn kho B 49 kg muối. Số muối ở kho B bằng 3 phần 4 số muối ở kho A. Mỗi nơi chứa bao nhiêu kg?
-b) Kho A chứa nhiều hơn xưởng 120 kg muối. Số muối ở xưởng bằng 4 phần 5 số muối ở kho A. Mỗi nơi chứa bao nhiêu kg?
-c) Cửa hàng chứa nhiều hơn trang trại 231 kg gạo. Số gạo ở trang trại bằng 2 phần 5 số gạo ở cửa hàng. Mỗi nơi chứa bao nhiêu kg?
-d) Kho B chứa nhiều hơn kho A 240 kg muối. Số muối ở kho A bằng 1 phần 4 số muối ở kho B. Mỗi nơi chứa bao nhiêu kg?
+a) Xưởng chứa nhiều hơn thư viện 228 kg xi măng. Số xi măng ở thư viện bằng 2 phần 5 số xi măng ở xưởng. Mỗi nơi chứa bao nhiêu kg?
+b) Trang trại chứa nhiều hơn thư viện 520 kg gạo. Số gạo ở thư viện bằng 1 phần 6 số gạo ở trang trại. Mỗi nơi chứa bao nhiêu kg?
+c) Kho B chứa nhiều hơn hợp tác xã 218 kg thóc. Số thóc ở hợp tác xã bằng 1 phần 3 số thóc ở kho B. Mỗi nơi chứa bao nhiêu kg?
+d) Xưởng chứa nhiều hơn hợp tác xã 101 kg gạo. Số gạo ở hợp tác xã bằng 2 phần 3 số gạo ở xưởng. Mỗi nơi chứa bao nhiêu kg?
+e) Kho B chứa nhiều hơn cửa hàng 342 kg thóc. Số thóc ở cửa hàng bằng 1 phần 4 số thóc ở kho B. Mỗi nơi chứa bao nhiêu kg?
+f) Kho A chứa nhiều hơn thư viện 565 kg gạo. Số gạo ở thư viện bằng 2 phần 7 số gạo ở kho A. Mỗi nơi chứa bao nhiêu kg?
 
 ---
 
 ## PHẦN IV — VẬN DỤNG CAO · Mức M4 — Vận dụng cao · 25 phút · 25 điểm
 
-### Bài 1. (5 điểm) Diện tích thay đổi khi kích thước thay đổi
+### Bài 1. (5 điểm) Ghép người với môn bằng bảng đúng – sai
 
-Vẽ hình minh hoạ phần tăng thêm.
+Bắt buộc kẻ bảng ra giấy. Không được suy luận nhẩm ở bài này.
 
-a) Hình chữ nhật dài 27 cm, rộng 7 cm. Nếu gấp đôi chiều dài và giữ nguyên chiều rộng thì diện tích mới gấp mấy lần diện tích cũ?
-b) Hình chữ nhật dài 13 cm, rộng 10 cm. Nếu gấp đôi chiều dài và giữ nguyên chiều rộng thì diện tích mới gấp mấy lần diện tích cũ?
-c) Hình chữ nhật dài 50 cm, rộng 20 cm. Nếu tăng cả chiều dài và chiều rộng thêm 14 cm thì diện tích tăng thêm bao nhiêu?
-d) Hình chữ nhật dài 31 cm, rộng 5 cm. Nếu gấp đôi chiều dài và giữ nguyên chiều rộng thì diện tích mới gấp mấy lần diện tích cũ?
-e) Hình chữ nhật dài 31 cm, rộng 6 cm. Nếu gấp đôi chiều dài và giữ nguyên chiều rộng thì diện tích mới gấp mấy lần diện tích cũ?
+a) Ba bạn Minh, Hùng và Chi mỗi bạn học một môn năng khiếu khác nhau trong ba môn: hát, múa và đàn. Biết rằng: Minh không học đàn và cũng không học hát; Hùng không học hát. Hỏi mỗi bạn học môn nào?
+b) Ba bạn Thảo, Phúc và Trang mỗi bạn học một môn năng khiếu khác nhau trong ba môn: bóng đá, cầu lông và bóng rổ. Biết rằng: Thảo không học bóng rổ và cũng không học bóng đá; Phúc không học bóng đá. Hỏi mỗi bạn học môn nào?
+c) Ba bạn Phúc, Yến và Hùng mỗi bạn học một môn năng khiếu khác nhau trong ba môn: tiếng Anh, tin học và mĩ thuật. Biết rằng: Phúc không học tiếng Anh và cũng không học mĩ thuật; Yến không học mĩ thuật. Hỏi mỗi bạn học môn nào?
+d) Ba bạn Khánh, Hà và Phúc mỗi bạn học một môn năng khiếu khác nhau trong ba môn: tiếng Anh, tin học và mĩ thuật. Biết rằng: Khánh không học tin học và cũng không học mĩ thuật; Hà không học mĩ thuật. Hỏi mỗi bạn học môn nào?
 
-### Bài 2. (5 điểm) Số nguyên tố và hợp số
-
-Trả lời và nêu căn cứ.
-
-a) Số 25 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
-b) Số 53 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
-c) Số 131 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
-d) Số 155 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
-e) Số 175 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
-f) Số 177 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
-g) Số 181 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
-
-### Bài 3. (5 điểm) Hai vòi nước, hai người cùng làm
+### Bài 2. (5 điểm) Hai vòi nước, hai người cùng làm
 
 Coi cả công việc là 1 đơn vị.
 
-a) Vòi thứ nhất chảy một mình đầy bể trong 12 giờ, vòi thứ hai chảy một mình đầy bể trong 3 giờ. Mở cả hai vòi thì sau bao lâu đầy bể?
-b) Vòi thứ nhất chảy một mình đầy bể trong 12 giờ, vòi thứ hai chảy một mình đầy bể trong 4 giờ. Mở cả hai vòi thì sau bao lâu đầy bể?
-c) Vòi thứ nhất chảy một mình đầy bể trong 4 giờ, vòi thứ hai chảy một mình đầy bể trong 2 giờ. Mở cả hai vòi thì sau bao lâu đầy bể?
-d) Vòi thứ nhất chảy một mình đầy bể trong 5 giờ, vòi thứ hai chảy một mình đầy bể trong 4 giờ. Mở cả hai vòi thì sau bao lâu đầy bể?
+a) Vòi thứ nhất chảy một mình đầy bể trong 3 giờ, vòi thứ hai chảy một mình đầy bể trong 20 giờ. Mở cả hai vòi thì sau bao lâu đầy bể?
+b) Vòi thứ nhất chảy một mình đầy bể trong 3 giờ, vòi thứ hai chảy một mình đầy bể trong 6 giờ. Mở cả hai vòi thì sau bao lâu đầy bể?
+c) Vòi thứ nhất chảy một mình đầy bể trong 12 giờ, vòi thứ hai chảy một mình đầy bể trong 3 giờ. Mở cả hai vòi thì sau bao lâu đầy bể?
+d) Vòi thứ nhất chảy một mình đầy bể trong 2 giờ, vòi thứ hai chảy một mình đầy bể trong 6 giờ. Mở cả hai vòi thì sau bao lâu đầy bể?
+
+### Bài 3. (5 điểm) Chuyển bớt để hai phần bằng nhau
+
+Chú ý: chuyển đi thì bên này giảm, bên kia tăng.
+
+a) Đội Hai có 210 quyển sách, nhóm Sao Mai có 140 quyển. Hỏi phải chuyển bao nhiêu quyển từ đội Hai sang nhóm Sao Mai để số sách hai tổ bằng nhau?
+b) Đội Một có 208 quyển sách, nhóm Hoa Phượng có 52 quyển. Hỏi phải chuyển bao nhiêu quyển từ đội Một sang nhóm Hoa Phượng để số sách hai tổ bằng nhau?
+c) Nhóm Hoa Phượng có 270 quyển sách, đội Một có 108 quyển. Hỏi phải chuyển bao nhiêu quyển từ nhóm Hoa Phượng sang đội Một để số sách hai tổ bằng nhau?
+d) Tổ Hai có 231 quyển sách, đội Một có 99 quyển. Hỏi phải chuyển bao nhiêu quyển từ tổ Hai sang đội Một để số sách hai tổ bằng nhau?
+e) Tổ Ba có 300 quyển sách, nhóm Hoa Phượng có 150 quyển. Hỏi phải chuyển bao nhiêu quyển từ tổ Ba sang nhóm Hoa Phượng để số sách hai tổ bằng nhau?
 
 ### Bài 4. (5 điểm) Tổng, trung bình cộng của dãy cách đều
 
-Một dãy cách đều có 20 số hạng, khoảng cách 2 đơn vị, số hạng cuối là 139.
+Một dãy cách đều có 10 số hạng, khoảng cách 3 đơn vị, số hạng cuối là 214.
 
 a) Số hạng đầu của dãy là số nào?
 b) Số hạng cuối của dãy là số nào?
@@ -260,69 +257,72 @@ d) Trung bình cộng của dãy bằng bao nhiêu?
 e) Tổng của số hạng đầu và số hạng cuối bằng bao nhiêu?
 f) Tổng của số hạng thứ hai và số hạng áp chót bằng bao nhiêu?
 
-### Bài 5. (5 điểm) Chuyển bớt để hai phần bằng nhau
+### Bài 5. (5 điểm) Biểu thức nhiều phép tính với phân số
 
-Chú ý: chuyển đi thì bên này giảm, bên kia tăng.
+Tính giá trị biểu thức, rút gọn kết quả.
 
-a) Đội Một có 104 quyển sách, tổ Ba có 52 quyển. Hỏi phải chuyển bao nhiêu quyển từ đội Một sang tổ Ba để số sách hai tổ bằng nhau?
-b) Tổ Ba có 72 quyển sách, nhóm Sao Mai có 36 quyển. Hỏi phải chuyển bao nhiêu quyển từ tổ Ba sang nhóm Sao Mai để số sách hai tổ bằng nhau?
-c) Đội Một có 150 quyển sách, tổ Hai có 60 quyển. Hỏi phải chuyển bao nhiêu quyển từ đội Một sang tổ Hai để số sách hai tổ bằng nhau?
-d) Tổ Ba có 70 quyển sách, đội Một có 28 quyển. Hỏi phải chuyển bao nhiêu quyển từ tổ Ba sang đội Một để số sách hai tổ bằng nhau?
-e) Đội Hai có 132 quyển sách, tổ Ba có 44 quyển. Hỏi phải chuyển bao nhiêu quyển từ đội Hai sang tổ Ba để số sách hai tổ bằng nhau?
+a) (1 phần 2 + 1 phần 2) × 1
+b) 1 phần 3 × 7 phần 8 + 1 phần 3 × 1 phần 7
+c) 2 phần 11 : 11 phần 13 + 2
+d) (7 phần 15 + 5 phần 13) × 7 phần 5
+e) (2 phần 3 + 9 phần 8) × 7 phần 13
+f) (3 phần 7 + 1) × 1 phần 2
 
 ---
 
 ## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
 
-### Bài 1. (3 điểm) Quan hệ giữa một số và tổng các chữ số của nó
-
-Trình bày lập luận đầy đủ.
-
-a) Số có hai chữ số 11 gấp tổng hai chữ số của nó bao nhiêu lần? (viết dưới dạng thương và số dư)
-b) Số có hai chữ số 77 gấp tổng hai chữ số của nó bao nhiêu lần? (viết dưới dạng thương và số dư)
-c) Tìm số có hai chữ số biết số đó bằng 7 lần tổng hai chữ số của nó và chữ số hàng chục là 2.
-d) Số có hai chữ số 16 gấp tổng hai chữ số của nó bao nhiêu lần? (viết dưới dạng thương và số dư)
-
-### Bài 2. (3 điểm) Tỉ lệ nghịch — so sánh hai phương án
+### Bài 1. (3 điểm) Tỉ lệ nghịch — so sánh hai phương án
 
 Tính rồi so sánh hai phương án.
 
-a) 8 người làm xong một công việc trong 5 ngày. Nếu có thêm 6 người nữa (làm khoẻ như nhau) thì công việc đó hoàn thành sớm hơn bao nhiêu ngày?
-b) 12 người làm xong một công việc trong 6 ngày. Nếu có thêm 2 người nữa (làm khoẻ như nhau) thì công việc đó hoàn thành sớm hơn bao nhiêu ngày?
-c) 9 người làm xong một công việc trong 13 ngày. Nếu có thêm 4 người nữa (làm khoẻ như nhau) thì công việc đó hoàn thành sớm hơn bao nhiêu ngày?
-d) 9 người làm xong một công việc trong 4 ngày. Nếu có thêm 7 người nữa (làm khoẻ như nhau) thì công việc đó hoàn thành sớm hơn bao nhiêu ngày?
-e) 11 người làm xong một công việc trong 17 ngày. Nếu có thêm 1 người nữa (làm khoẻ như nhau) thì công việc đó hoàn thành sớm hơn bao nhiêu ngày?
+a) 5 người làm xong một công việc trong 9 ngày. Nếu có thêm 8 người nữa (làm khoẻ như nhau) thì công việc đó hoàn thành sớm hơn bao nhiêu ngày?
+b) 12 người làm xong một công việc trong 8 ngày. Nếu có thêm 1 người nữa (làm khoẻ như nhau) thì công việc đó hoàn thành sớm hơn bao nhiêu ngày?
+c) 5 người làm xong một công việc trong 11 ngày. Nếu có thêm 7 người nữa (làm khoẻ như nhau) thì công việc đó hoàn thành sớm hơn bao nhiêu ngày?
+d) 3 người làm xong một công việc trong 8 ngày. Nếu có thêm 6 người nữa (làm khoẻ như nhau) thì công việc đó hoàn thành sớm hơn bao nhiêu ngày?
+e) 6 người làm xong một công việc trong 8 ngày. Nếu có thêm 1 người nữa (làm khoẻ như nhau) thì công việc đó hoàn thành sớm hơn bao nhiêu ngày?
 
-### Bài 3. (3 điểm) Tỉ số thay đổi khi một đại lượng thay đổi
+### Bài 2. (3 điểm) Tỉ số thay đổi khi một đại lượng thay đổi
 
 Xác định đại lượng nào giữ nguyên.
 
-a) Số lớn gấp 3 lần số bé và tổng hai số là 220. Phải thêm vào số lớn bao nhiêu đơn vị để số lớn gấp 4 lần số bé?
-b) Số lớn gấp 3 lần số bé và tổng hai số là 156. Phải thêm vào số lớn bao nhiêu đơn vị để số lớn gấp 6 lần số bé?
-c) Số lớn gấp 3 lần số bé và tổng hai số là 184. Phải thêm vào số lớn bao nhiêu đơn vị để số lớn gấp 4 lần số bé?
-d) Số lớn gấp 3 lần số bé và tổng hai số là 44. Phải thêm vào số lớn bao nhiêu đơn vị để số lớn gấp 6 lần số bé?
-e) Số lớn gấp 5 lần số bé và tổng hai số là 228. Phải thêm vào số lớn bao nhiêu đơn vị để số lớn gấp 8 lần số bé?
+a) Số lớn gấp 4 lần số bé và tổng hai số là 45. Phải thêm vào số lớn bao nhiêu đơn vị để số lớn gấp 8 lần số bé?
+b) Số lớn gấp 5 lần số bé và tổng hai số là 234. Phải thêm vào số lớn bao nhiêu đơn vị để số lớn gấp 9 lần số bé?
+c) Số lớn gấp 4 lần số bé và tổng hai số là 155. Phải thêm vào số lớn bao nhiêu đơn vị để số lớn gấp 7 lần số bé?
+d) Số lớn gấp 3 lần số bé và tổng hai số là 100. Phải thêm vào số lớn bao nhiêu đơn vị để số lớn gấp 6 lần số bé?
 
-### Bài 4. (3 điểm) Tổng nhiều số có ràng buộc — dạng đề thi
+### Bài 3. (3 điểm) Tổng nhiều số có ràng buộc — dạng đề thi
 
 Bài mô phỏng phần tự luận của đề thi chất lượng cao.
 
-a) Ba số có tổng 354. Số thứ hai hơn số thứ nhất 7, số thứ ba hơn số thứ hai 7. Tìm số thứ hai.
+a) Ba số có tổng 351. Số thứ hai hơn số thứ nhất 8, số thứ ba hơn số thứ hai 8. Tìm số thứ hai.
 b) Tìm số thứ nhất.
 c) Tìm số thứ ba.
 d) Vì sao số thứ hai bằng tổng ba số chia cho 3?
-e) Hai số khác có tổng 145 và số bé bằng 2 phần 3 số lớn. Tìm số bé.
+e) Hai số khác có tổng 75 và số bé bằng 1 phần 2 số lớn. Tìm số bé.
 f) Tìm số lớn.
 g) Hiệu hai số đó bằng bao nhiêu?
+
+### Bài 4. (3 điểm) Chữ số tận cùng của tổng và tích
+
+Không tính hết phép tính, chỉ tìm chữ số tận cùng.
+
+a) Tích 279 × 816 × 2 có chữ số tận cùng là chữ số nào?
+b) Tổng 159 + 243 có chữ số tận cùng là chữ số nào?
+c) Tích 714 × 289 có chữ số tận cùng là chữ số nào?
+d) Tích 713 × 959 × 7 có chữ số tận cùng là chữ số nào?
+e) Tích 102 × 912 có chữ số tận cùng là chữ số nào?
+f) Tổng 920 + 427 có chữ số tận cùng là chữ số nào?
+g) Tích 559 × 589 × 7 có chữ số tận cùng là chữ số nào?
 
 ### Bài 5. (3 điểm) Bài toán giả thiết tạm — gà và chó
 
 Dùng phương pháp giả thiết tạm.
 
-a) Vừa gà vừa chó có 51 con, đếm được tất cả 140 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
-b) Vừa gà vừa chó có 55 con, đếm được tất cả 156 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
-c) Vừa gà vừa chó có 38 con, đếm được tất cả 126 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
-d) Vừa gà vừa chó có 75 con, đếm được tất cả 230 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
+a) Vừa gà vừa chó có 43 con, đếm được tất cả 138 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
+b) Vừa gà vừa chó có 57 con, đếm được tất cả 180 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
+c) Vừa gà vừa chó có 29 con, đếm được tất cả 90 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
+d) Vừa gà vừa chó có 59 con, đếm được tất cả 180 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
 
 ---
 
@@ -391,100 +391,100 @@ d) Vừa gà vừa chó có 75 con, đếm được tất cả 230 chân. Hỏi 
 **Lỗi thường gặp:** Nhầm hiệu thành tổng khi đề diễn đạt vòng vo. Phòng: Ghi riêng ra hai dòng: Tổng = … ; Hiệu = … trước khi tính.
 
 ### Bài III.1
-**Đáp số:** a) tổ Một: 345 cây, đội Hai: 690 cây · b) đội Một: 351 cây, nhóm Sao Mai: 702 cây · c) nhóm Sao Mai: 460 cây, tổ Ba: 552 cây · d) đội Hai: 105 cây, nhóm Sao Mai: 735 cây · e) nhóm Hoa Phượng: 436 cây, tổ Một: 763 cây
-**Hướng giải:** Tỉ số cho biết số phần bằng nhau của mỗi đại lượng. Tổng số phần = số phần thứ nhất + số phần thứ hai. Giá trị một phần = tổng : tổng số phần. Nhân giá trị một phần với số phần của từng đại lượng.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Phải tính **tổng số phần** trước khi chia.
-**Lỗi thường gặp:** Chia tổng cho một trong hai số của tỉ số thay vì cho tổng số phần. Phòng: Vẽ sơ đồ, đếm tổng số đoạn nhỏ trên cả hai đoạn thẳng.
+**Đáp số:** a) 344 · b) 48 · c) 236 · d) 194 · e) 37 · f) 210
+**Hướng giải:** Với một số **lẻ** các số tự nhiên liên tiếp, số ở giữa chính là trung bình cộng: số giữa = tổng : số lượng. Số bé nhất bằng số giữa trừ đi một nửa số lượng còn lại.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Với số lượng lẻ thì **số giữa = tổng : số lượng** — đó là chìa khoá.
+**Lỗi thường gặp:** Lấy tổng chia cho số lượng rồi nhận luôn kết quả là số bé nhất. Phòng: Vẽ dãy số ra, đánh dấu vị trí số giữa trước khi lùi về số đầu.
 
 ### Bài III.2
-**Đáp số:** a) 76 kg · b) hợp tác xã: 15 kg, xưởng: 75 kg · c) kho B: 56 kg, kho A: 70 kg · d) hợp tác xã: 17 kg, xưởng: 34 kg · e) 168 kg
-**Hướng giải:** Đề không cho thẳng tổng, hiệu hay tỉ số mà mô tả vòng. Bước bắt buộc đầu tiên: **dịch câu mô tả thành một con số** rồi mới vẽ sơ đồ và giải như bài chuẩn.
-**Nhãn tư duy:** TD2, TD6. Điểm chốt: Dịch xong dữ kiện ẩn thì bài trở lại **đúng dạng chuẩn**.
-**Lỗi thường gặp:** Lao vào tính khi chưa xác định được tổng, hiệu hay tỉ số. Phòng: Viết ba dòng trước khi tính: Tổng = … ; Hiệu = … ; Tỉ số = … ; dòng nào chưa biết thì để trống và đi tìm.
-
-### Bài III.3
-**Đáp số:** a) 28 tuổi · b) 44 tuổi · c) 18 tuổi · d) 36 tuổi · e) bố 52 tuổi, con 13 tuổi · f) bố 65 tuổi, con 13 tuổi
+**Đáp số:** a) 20 tuổi · b) 8 tuổi · c) bố 40 tuổi, con 8 tuổi · d) bố 16 tuổi, con 8 tuổi
 **Hướng giải:** **Hiệu số tuổi của hai người không bao giờ thay đổi.** Còn tổng số tuổi thì mỗi năm tăng thêm đúng bằng số người. Tỉ số tuổi thì thay đổi theo từng năm.
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Hiệu tuổi là đại lượng **bất biến** — chìa khoá của mọi bài toán tuổi.
 **Lỗi thường gặp:** Cộng thêm số năm vào cả hiệu số tuổi. Phòng: Kẻ bảng ba dòng: trước kia – hiện nay – sau này, ghi rõ tuổi từng người.
 
+### Bài III.3
+**Đáp số:** a) 256 kg · b) hợp tác xã: 72 kg, cửa hàng: 180 kg · c) cửa hàng: 24 kg, hợp tác xã: 40 kg · d) 66 kg · e) cửa hàng: 35 kg, kho B: 140 kg · f) thư viện: 20 kg, cửa hàng: 40 kg
+**Hướng giải:** Đề không cho thẳng tổng, hiệu hay tỉ số mà mô tả vòng. Bước bắt buộc đầu tiên: **dịch câu mô tả thành một con số** rồi mới vẽ sơ đồ và giải như bài chuẩn.
+**Nhãn tư duy:** TD2, TD6. Điểm chốt: Dịch xong dữ kiện ẩn thì bài trở lại **đúng dạng chuẩn**.
+**Lỗi thường gặp:** Lao vào tính khi chưa xác định được tổng, hiệu hay tỉ số. Phòng: Viết ba dòng trước khi tính: Tổng = … ; Hiệu = … ; Tỉ số = … ; dòng nào chưa biết thì để trống và đi tìm.
+
 ### Bài III.4
-**Đáp số:** a) 23 · b) 7 · c) 4 · d) 2 · e) 35 · f) 12, vì nhóm thích cả hai môn bị đếm hai lần
-**Hướng giải:** Vẽ sơ đồ Ven hai vòng tròn. **Điền miền giữa trước**, rồi trừ ra hai miền riêng. Cộng thẳng hai nhóm sẽ đếm nhóm chung **hai lần**, nên phải trừ đi một lần.
-**Nhãn tư duy:** TD2, TD6. Điểm chốt: Điền **miền giữa trước** — mọi miền khác suy ra từ đó.
-**Lỗi thường gặp:** Cộng thẳng hai nhóm rồi coi đó là số bạn thích ít nhất một môn. Phòng: Vẽ sơ đồ Ven, ghi số vào từng miền rồi cộng lại kiểm tra với sĩ số.
+**Đáp số:** a) đội Một: 82 cây, tổ Một: 492 cây · b) tổ Hai: 405 cây, đội Hai: 486 cây · c) đội Một: 18 cây, tổ Một: 30 cây · d) nhóm Hoa Phượng: 31 cây, nhóm Sao Mai: 155 cây
+**Hướng giải:** Tỉ số cho biết số phần bằng nhau của mỗi đại lượng. Tổng số phần = số phần thứ nhất + số phần thứ hai. Giá trị một phần = tổng : tổng số phần. Nhân giá trị một phần với số phần của từng đại lượng.
+**Nhãn tư duy:** TD3, TD2. Điểm chốt: Phải tính **tổng số phần** trước khi chia.
+**Lỗi thường gặp:** Chia tổng cho một trong hai số của tỉ số thay vì cho tổng số phần. Phòng: Vẽ sơ đồ, đếm tổng số đoạn nhỏ trên cả hai đoạn thẳng.
 
 ### Bài III.5
-**Đáp số:** a) kho B: 147 kg, kho A: 196 kg · b) xưởng: 480 kg, kho A: 600 kg · c) trang trại: 154 kg, cửa hàng: 385 kg · d) kho A: 80 kg, kho B: 320 kg
+**Đáp số:** a) thư viện: 152 kg, xưởng: 380 kg · b) thư viện: 104 kg, trang trại: 624 kg · c) hợp tác xã: 109 kg, kho B: 327 kg · d) hợp tác xã: 202 kg, xưởng: 303 kg · e) cửa hàng: 114 kg, kho B: 456 kg · f) thư viện: 226 kg, kho A: 791 kg
 **Hướng giải:** Hiệu số phần = số phần lớn − số phần bé. Giá trị một phần = hiệu : hiệu số phần. Sau đó nhân với số phần của từng đại lượng.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Chia cho **hiệu số phần**, không phải tổng số phần.
 **Lỗi thường gặp:** Dùng nhầm công thức của tổng – tỉ cho bài hiệu – tỉ. Phòng: Đọc kĩ: đề cho “tổng” hay cho “nhiều hơn”? Ghi rõ ra trước khi vẽ.
 
 ### Bài IV.1
-**Đáp số:** a) 2 lần · b) 2 lần · c) 1 176 cm² · d) 2 lần · e) 2 lần
-**Hướng giải:** BẪY — Phần tăng gồm ba mảnh. Tăng một chiều thêm k đơn vị thì diện tích tăng thêm đúng một hình chữ nhật có kích thước k × chiều còn lại. Tăng cả hai chiều thì phần tăng gồm ba mảnh: hai dải và một hình vuông ở góc — nên **không** bằng tích của hai phần tăng.
-**Nhãn tư duy:** TD3, TD6. Điểm chốt: Tăng cả hai chiều thì phần tăng gồm **ba mảnh**, không phải một.
-**Lỗi thường gặp:** Nhân hai lượng tăng với nhau rồi coi đó là phần diện tích tăng thêm. Phòng: Vẽ hình chữ nhật cũ nằm trong hình mới, tô phần dôi ra.
-**Gợi ý 3 tầng:** (1) Vẽ hình cũ và hình mới chồng lên nhau. — (2) Phần dôi ra gồm mấy mảnh? — (3) Tính diện tích từng mảnh rồi cộng.
+**Đáp số:** a) Minh học múa; Hùng học đàn; Chi học hát · b) Thảo học cầu lông; Phúc học bóng rổ; Trang học bóng đá · c) Phúc học tin học; Yến học tiếng Anh; Hùng học mĩ thuật · d) Khánh học tiếng Anh; Hà học tin học; Phúc học mĩ thuật
+**Hướng giải:** BẪY — Đánh dấu đúng mà quên gạch phần còn lại. Mỗi dòng một người, mỗi cột một khả năng. Đánh × cho điều chắc chắn sai. Dòng nào chỉ còn một ô trống thì ô ấy là ✓ — và ngay sau đó phải gạch × cho cả cột chứa ô ấy.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Đặt được một ✓ thì **cả dòng và cả cột** còn lại đều thành ×. Bỏ bước gạch cột là chỗ bài bị tắc giữa chừng.
+**Lỗi thường gặp:** Đánh ✓ rồi đi tiếp luôn, không gạch × cho phần còn lại của cột. Phòng: Sau mỗi lần đặt ✓, dừng lại gạch đủ dòng và cột rồi mới đọc manh mối kế.
+**Gợi ý 3 tầng:** (1) Kẻ bảng ba dòng ba cột trước đã. — (2) Manh mối nào cho biết chắc chắn một ô là sai? — (3) Dòng nào chỉ còn một ô trống thì ô ấy chính là đáp án của dòng ấy.
 
 ### Bài IV.2
-**Đáp số:** a) hợp số (ví dụ ước 5) · b) số nguyên tố · c) số nguyên tố · d) hợp số (ví dụ ước 5) · e) hợp số (ví dụ ước 5) · f) hợp số (ví dụ ước 3) · g) số nguyên tố
-**Hướng giải:** BẪY — 91, 121, 143 trông như số nguyên tố nhưng không phải. Số nguyên tố chỉ có đúng hai ước là 1 và chính nó. Để kiểm tra, thử chia lần lượt cho 2, 3, 5, 7, 11… và chỉ cần thử đến khi thương bé hơn hoặc bằng số chia là dừng được.
-**Nhãn tư duy:** TD2. Điểm chốt: Chỉ cần thử các **số nguyên tố nhỏ**, không phải thử mọi số.
-**Lỗi thường gặp:** Thử chia cho mọi số từ 2 đến số đó nên mất thời gian, hoặc kết luận vội. Phòng: Thử theo thứ tự 2, 3, 5, 7, 11, 13 và dừng đúng lúc.
-**Gợi ý 3 tầng:** (1) Số đó có chia hết cho 2 hay 5 không? — (2) Cộng các chữ số xem có chia hết cho 3 không. — (3) Thử tiếp 7, 11, 13; dừng khi thương bé hơn số chia.
-
-### Bài IV.3
-**Đáp số:** a) 2 giờ 24 phút · b) 3 giờ · c) 1 giờ 20 phút · d) 20 phần 9 giờ
+**Đáp số:** a) 60 phần 23 giờ · b) 2 giờ · c) 2 giờ 24 phút · d) 1 giờ 30 phút
 **Hướng giải:** BẪY — Cộng thời gian thay vì cộng năng suất. Không cộng thời gian, mà cộng **năng suất một giờ**. Người xong trong a giờ thì mỗi giờ làm được 1 phần a công việc. Thời gian làm chung bằng 1 chia cho tổng năng suất.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Cộng **năng suất**, tuyệt đối không cộng thời gian.
 **Lỗi thường gặp:** Cộng hai khoảng thời gian rồi chia đôi. Phòng: Luôn viết dòng “Mỗi giờ vòi thứ nhất chảy được … bể” trước.
 **Gợi ý 3 tầng:** (1) Mỗi giờ vòi thứ nhất chảy được mấy phần bể? — (2) Mỗi giờ cả hai vòi chảy được mấy phần bể? — (3) Lấy 1 chia cho phần chảy được trong một giờ.
 
+### Bài IV.3
+**Đáp số:** a) 35 quyển · b) 78 quyển · c) 81 quyển · d) 66 quyển · e) 75 quyển
+**Hướng giải:** BẪY — Hiệu thay đổi gấp đôi số chuyển. Khi chuyển k đơn vị từ bên nhiều sang bên ít, bên nhiều giảm k còn bên ít tăng k, nên hiệu giảm đi **2k**. Muốn hai bên bằng nhau thì hiệu phải về 0, vậy k = hiệu : 2.
+**Nhãn tư duy:** TD3, TD6. Điểm chốt: Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển.
+**Lỗi thường gặp:** Chuyển đúng bằng hiệu hai bên nên bên ít lại thành bên nhiều. Phòng: Thử lại: sau khi chuyển, cộng trừ ra hai số rồi so xem có bằng nhau không.
+**Gợi ý 3 tầng:** (1) Hiện tại hai bên hơn kém nhau bao nhiêu? — (2) Chuyển 1 quyển thì hiệu giảm mấy quyển? — (3) Muốn hiệu về 0 thì phải chuyển bao nhiêu?
+
 ### Bài IV.4
-**Đáp số:** a) 101 · b) 139 · c) 2 400 · d) 120 · e) 240 · f) 240
+**Đáp số:** a) 187 · b) 214 · c) 2 005 · d) 200,5 · e) 401 · f) 401
 **Hướng giải:** Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
 **Nhãn tư duy:** TD4, TD3. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
 **Lỗi thường gặp:** Tính tổng rồi chia — dài hơn và dễ sai khi số hạng nhiều. Phòng: Nhớ tính chất trung bình cộng để kiểm tra chéo kết quả tổng.
 **Gợi ý 3 tầng:** (1) Từ số hạng cuối lùi về số hạng đầu qua mấy khoảng? — (2) Trung bình cộng bằng nửa tổng của hai số hạng ở hai đầu. — (3) Tổng bằng trung bình cộng nhân số số hạng.
 
 ### Bài IV.5
-**Đáp số:** a) 26 quyển · b) 18 quyển · c) 45 quyển · d) 21 quyển · e) 44 quyển
-**Hướng giải:** BẪY — Hiệu thay đổi gấp đôi số chuyển. Khi chuyển k đơn vị từ bên nhiều sang bên ít, bên nhiều giảm k còn bên ít tăng k, nên hiệu giảm đi **2k**. Muốn hai bên bằng nhau thì hiệu phải về 0, vậy k = hiệu : 2.
-**Nhãn tư duy:** TD3, TD6. Điểm chốt: Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển.
-**Lỗi thường gặp:** Chuyển đúng bằng hiệu hai bên nên bên ít lại thành bên nhiều. Phòng: Thử lại: sau khi chuyển, cộng trừ ra hai số rồi so xem có bằng nhau không.
-**Gợi ý 3 tầng:** (1) Hiện tại hai bên hơn kém nhau bao nhiêu? — (2) Chuyển 1 quyển thì hiệu giảm mấy quyển? — (3) Muốn hiệu về 0 thì phải chuyển bao nhiêu?
+**Đáp số:** a) 1 · b) 19 phần 56 · c) 268 phần 121 · d) 1 162 phần 975 · e) 301 phần 312 · f) 5 phần 7
+**Hướng giải:** Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
+**Nhãn tư duy:** TD3, TD5. Điểm chốt: Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều.
+**Lỗi thường gặp:** Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. Phòng: Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút.
+**Gợi ý 3 tầng:** (1) Biểu thức có dấu ngoặc không? — (2) Có thừa số chung ở hai tích không? — (3) Làm nhân chia trước, cộng trừ sau.
 
 ### Bài V.1
-**Đáp số:** a) 5 dư 1 · b) 5 dư 7 · c) 21 · d) 2 dư 2
-**Hướng giải:** Viết số có hai chữ số là a × 10 + b, tổng hai chữ số là a + b. So sánh hai biểu thức để tìm quan hệ; chú ý a chạy từ 1 đến 9 và b chạy từ 0 đến 9 nên số trường hợp là hữu hạn, có thể lập bảng.
-**Nhãn tư duy:** TD3, TD6. Điểm chốt: Khi ẩn chỉ nhận hữu hạn giá trị, **lập bảng** là phương pháp chắc chắn nhất.
-**Lỗi thường gặp:** Chia bừa mà không kiểm tra điều kiện chia hết nên nhận đáp số không nguyên. Phòng: Kiểm tra lại đáp số bằng cách thay ngược vào đề.
-**Gợi ý 3 tầng:** (1) Đặt số đó là a × 10 + b. — (2) Tổng hai chữ số là a + b — viết cả hai biểu thức ra cạnh nhau. — (3) Lập bảng a từ 1 đến 9 rồi thử.
-
-### Bài V.2
-**Đáp số:** a) 2,14 ngày · b) 0,86 ngày · c) 4 ngày · d) 1,75 ngày · e) 1,42 ngày
+**Đáp số:** a) 5,54 ngày · b) 0,62 ngày · c) 6,42 ngày · d) 5,33 ngày · e) 1,14 ngày
 **Hướng giải:** Tổng số ngày công không đổi: số người × số ngày. Tính tổng số ngày công, chia cho số người mới ra số ngày mới, rồi lấy số ngày cũ trừ số ngày mới để biết sớm hơn bao nhiêu.
 **Nhãn tư duy:** TD6, TD3. Điểm chốt: Đại lượng bất biến ở đây là **tổng số ngày công**.
 **Lỗi thường gặp:** Trừ thẳng số người rồi lấy hiệu làm số ngày rút ngắn. Phòng: Viết rõ: tổng ngày công = … ; số ngày mới = … ; sớm hơn = … .
 **Gợi ý 3 tầng:** (1) Tổng số ngày công là bao nhiêu? — (2) Với số người mới thì cần bao nhiêu ngày? — (3) Lấy số ngày cũ trừ số ngày mới.
 
-### Bài V.3
-**Đáp số:** a) 55 đơn vị · b) 117 đơn vị · c) 46 đơn vị · d) 33 đơn vị · e) 114 đơn vị
-**Hướng giải:** Số bé không thay đổi, nên hãy tìm số bé trước bằng bài toán tổng – tỉ. Sau đó tính số lớn mới theo tỉ số mới, rồi lấy số lớn mới trừ số lớn cũ.
+### Bài V.2
+**Đáp số:** a) 36 đơn vị · b) 156 đơn vị · c) 93 đơn vị · d) 75 đơn vị
+**Hướng giải:** BẪY — Đại lượng nào giữ nguyên. Số bé không thay đổi, nên hãy tìm số bé trước bằng bài toán tổng – tỉ. Sau đó tính số lớn mới theo tỉ số mới, rồi lấy số lớn mới trừ số lớn cũ.
 **Nhãn tư duy:** TD6, TD3. Điểm chốt: Tìm cho ra **đại lượng không đổi** rồi lấy nó làm gốc quy chiếu.
 **Lỗi thường gặp:** Lấy hiệu hai tỉ số nhân với tổng ban đầu. Phòng: Viết rõ ba dòng: số bé, số lớn cũ, số lớn mới.
 **Gợi ý 3 tầng:** (1) Đại lượng nào không thay đổi trong bài? — (2) Tìm số bé trước bằng tổng – tỉ. — (3) Số lớn mới bằng số bé nhân tỉ số mới.
 
-### Bài V.4
-**Đáp số:** a) 118 · b) 111 · c) 125 · d) vì ba số cách đều nên số ở giữa là trung bình cộng · e) 58 · f) 87 · g) 29
+### Bài V.3
+**Đáp số:** a) 117 · b) 109 · c) 125 · d) vì ba số cách đều nên số ở giữa là trung bình cộng · e) 25 · f) 50 · g) 25
 **Hướng giải:** Với một số lẻ các số cách đều, số ở giữa chính là trung bình cộng — tìm nó trước rồi suy ra hai số kia. Phần sau là bài tổng – tỉ chuẩn: tổng số phần rồi giá trị một phần.
 **Nhãn tư duy:** TD4, TD3. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
 **Lỗi thường gặp:** Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. Phòng: Nhìn ra “cách đều” trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Ba số này có cách đều nhau không? — (2) Với ba số cách đều, số nào bằng trung bình cộng? — (3) Tìm số giữa trước rồi lùi và tiến ra hai số kia.
 
+### Bài V.4
+**Đáp số:** a) 8 · b) 2 · c) 6 · d) 9 · e) 4 · f) 7 · g) 7
+**Hướng giải:** Chữ số tận cùng của tổng và của tích chỉ phụ thuộc chữ số tận cùng của các số tham gia. Che phần đầu, chỉ tính với chữ số cuối.
+**Nhãn tư duy:** TD5, TD2. Điểm chốt: Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu.
+**Lỗi thường gặp:** Tính trọn cả phép tính, vừa lâu vừa dễ sai. Phòng: Lấy tay che phần đầu của hai số, chỉ để lộ chữ số cuối.
+**Gợi ý 3 tầng:** (1) Chữ số tận cùng của mỗi số là gì? — (2) Tính riêng với hai chữ số ấy. — (3) Lấy chữ số tận cùng của kết quả vừa tính.
+
 ### Bài V.5
-**Đáp số:** a) 32 con gà, 19 con chó · b) 32 con gà, 23 con chó · c) 13 con gà, 25 con chó · d) 35 con gà, 40 con chó
+**Đáp số:** a) 17 con gà, 26 con chó · b) 24 con gà, 33 con chó · c) 13 con gà, 16 con chó · d) 28 con gà, 31 con chó
 **Hướng giải:** Giả sử tất cả đều là gà thì số chân là số con nhân 2. Số chân thiếu so với thực tế chính là do mỗi con chó bị tính thiếu 2 chân. Lấy số chân thiếu chia cho 2 được số chó, rồi suy ra số gà.
 **Nhãn tư duy:** TD6, TD3. Điểm chốt: Chênh lệch chân của **một** con là 4 − 2 = 2 — đó là số chia.
 **Lỗi thường gặp:** Chia số chân thiếu cho 4 thay vì cho hiệu số chân của hai loài. Phòng: Thử lại: nhân ngược ra tổng số chân xem có khớp không.

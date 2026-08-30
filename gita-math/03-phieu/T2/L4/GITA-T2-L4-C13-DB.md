@@ -240,56 +240,55 @@ f) Số 5 816 có chia hết cho 2 không? Vì sao?
 
 ## PHẦN D — DẠNG 5 – DẠNG 6 VÀ DẠNG PHỐI HỢP · Mức M3 — Vận dụng · 20 phút · 20 điểm
 
-### Bài 1. (4 điểm) Nguyên lí Đi-rích-lê (nguyên lí ngăn kéo)
+### Bài 1. (4 điểm) Tìm số ban đầu bằng cách tính ngược
 
-Xét trường hợp xấu nhất.
+Vẽ sơ đồ mũi tên trước khi tính. Tính xong phải thử lại theo chiều xuôi.
 
-a) Trong một hộp có bi thuộc 2 màu (đỏ, xanh), mỗi màu có rất nhiều viên. Hỏi phải lấy ra ít nhất bao nhiêu viên (không nhìn) để chắc chắn có 3 viên cùng màu?
-b) Trong một hộp có bi thuộc 3 màu (đỏ, xanh, vàng), mỗi màu có rất nhiều viên. Hỏi phải lấy ra ít nhất bao nhiêu viên (không nhìn) để chắc chắn có 2 viên cùng màu?
-c) Trong một hộp có bi thuộc 5 màu (đỏ, xanh, vàng, trắng, tím), mỗi màu có rất nhiều viên. Hỏi phải lấy ra ít nhất bao nhiêu viên (không nhìn) để chắc chắn có 5 viên cùng màu?
-d) Trong một hộp có bi thuộc 5 màu (đỏ, xanh, vàng, trắng, tím), mỗi màu có rất nhiều viên. Hỏi phải lấy ra ít nhất bao nhiêu viên (không nhìn) để chắc chắn có 3 viên cùng màu?
+a) Em nghĩ ra một số. Lấy số ấy nhân với 9, được bao nhiêu thì cộng thêm 36, rồi chia cho 6 thì được 54. Hỏi số em nghĩ ra là số nào?
+b) Em nghĩ ra một số. Lấy số ấy nhân với 5, được bao nhiêu thì cộng thêm 36, rồi chia cho 3 thì được 97. Hỏi số em nghĩ ra là số nào?
+c) Em nghĩ ra một số. Lấy số ấy nhân với 7, được bao nhiêu thì cộng thêm 16, rồi chia cho 4 thì được 74. Hỏi số em nghĩ ra là số nào?
+d) Em nghĩ ra một số. Lấy số ấy nhân với 5, được bao nhiêu thì cộng thêm 40, rồi chia cho 5 thì được 37. Hỏi số em nghĩ ra là số nào?
 
-### Bài 2. (4 điểm) Tính thời điểm đến, thời gian đi
+### Bài 2. (4 điểm) Tổng của các số tự nhiên liên tiếp
 
-Ghi kết quả theo giờ và phút.
+Với mỗi ý, tìm số theo yêu cầu.
 
-a) Một chuyến tàu khởi hành lúc 7 giờ 50 phút và đi hết 3 giờ 34 phút. Tàu đến nơi lúc mấy giờ?
-b) Một chuyến tàu khởi hành lúc 7 giờ 30 phút và đi hết 3 giờ 41 phút. Tàu đến nơi lúc mấy giờ?
-c) Một chuyến tàu khởi hành lúc 8 giờ 50 phút và đi hết 3 giờ 52 phút. Tàu đến nơi lúc mấy giờ?
-d) Một chuyến tàu khởi hành lúc 5 giờ 0 phút và đi hết 1 giờ 42 phút. Tàu đến nơi lúc mấy giờ?
-e) Một chuyến tàu khởi hành lúc 11 giờ 0 phút và đi hết 2 giờ 18 phút. Tàu đến nơi lúc mấy giờ?
+a) Tổng của 3 số tự nhiên liên tiếp bằng 261. Tìm số bé nhất trong 3 số đó.
+b) Tổng của 9 số tự nhiên liên tiếp bằng 297. Tìm số bé nhất trong 9 số đó.
+c) Tổng của 5 số tự nhiên liên tiếp bằng 2 490. Tìm số bé nhất trong 5 số đó.
+d) Tổng của 7 số tự nhiên liên tiếp bằng 1 344. Tìm số bé nhất trong 7 số đó.
 
-### Bài 3. (4 điểm) Cấu tạo số có hai chữ số
+### Bài 3. (4 điểm) Chữ số tận cùng của tổng, hiệu, tích
 
-Trình bày lời giải ngắn gọn cho từng ý.
+Không tính hết phép tính, chỉ tìm chữ số tận cùng.
 
-a) Chữ số hàng chục của số 65 gấp mấy lần chữ số hàng đơn vị (nếu chia hết), hoặc hơn bao nhiêu đơn vị?
-b) Số có hai chữ số 64; đổi chỗ hai chữ số ta được số nào? Hiệu của hai số đó bằng bao nhiêu?
-c) Số có hai chữ số 33; đổi chỗ hai chữ số ta được số nào? Hiệu của hai số đó bằng bao nhiêu?
-d) Số có hai chữ số 28; đổi chỗ hai chữ số ta được số nào? Hiệu của hai số đó bằng bao nhiêu?
-e) Tìm số có hai chữ số, biết tổng hai chữ số bằng 8 và chữ số hàng chục hơn chữ số hàng đơn vị 6 đơn vị.
-f) Chữ số hàng chục của số 78 gấp mấy lần chữ số hàng đơn vị (nếu chia hết), hoặc hơn bao nhiêu đơn vị?
+a) Tổng 3 579 + 7 649 có chữ số tận cùng là chữ số nào?
+b) Hiệu 9 026 − 1 401 có chữ số tận cùng là chữ số nào?
+c) Tích 4 552 × 6 229 có chữ số tận cùng là chữ số nào?
+d) Tổng 1 359 + 2 074 có chữ số tận cùng là chữ số nào?
+e) Tích 6 926 × 8 312 có chữ số tận cùng là chữ số nào?
+f) Hiệu 5 634 − 442 có chữ số tận cùng là chữ số nào?
 
-### Bài 4. (4 điểm) Phủ hình và chia hình thành phần bằng nhau
-
-Vẽ hình và kẻ lưới ra nháp.
-
-a) Một hình chữ nhật 4 cm × 2 cm được phủ kín bằng các hình vuông cạnh 1 cm. Cần bao nhiêu hình vuông?
-b) Diện tích hình chữ nhật ấy bằng bao nhiêu?
-c) Diện tích mỗi hình vuông nhỏ bằng bao nhiêu?
-d) Chia hình chữ nhật ấy thành 2 phần bằng nhau thì mỗi phần có diện tích bao nhiêu?
-e) Chia thành 4 phần bằng nhau thì mỗi phần bao nhiêu?
-f) Nếu ghép hai hình chữ nhật ấy theo chiều dài thì hình mới có chu vi bao nhiêu?
-
-### Bài 5. (4 điểm) Bài toán thực tế về khối lượng
+### Bài 4. (4 điểm) Bài toán thực tế về khối lượng
 
 Chú ý đơn vị mà đề hỏi.
 
-a) Một xe chở 10 bao muối, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ muối?
-b) Một xe chở 9 bao phân bón, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ phân bón?
-c) Một xe chở 13 bao xi măng, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ xi măng?
-d) Một xe chở 7 bao phân bón, mỗi bao 40 kg. Hỏi xe chở bao nhiêu tạ phân bón?
-e) Một xe chở 19 bao thóc, mỗi bao 40 kg. Hỏi xe chở bao nhiêu tạ thóc?
+a) Một xe chở 6 bao muối, mỗi bao 40 kg. Hỏi xe chở bao nhiêu tạ muối?
+b) Một xe chở 10 bao muối, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ muối?
+c) Một xe chở 9 bao phân bón, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ phân bón?
+d) Một xe chở 13 bao xi măng, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ xi măng?
+e) Một xe chở 7 bao phân bón, mỗi bao 40 kg. Hỏi xe chở bao nhiêu tạ phân bón?
+f) Một xe chở 19 bao thóc, mỗi bao 40 kg. Hỏi xe chở bao nhiêu tạ thóc?
+
+### Bài 5. (4 điểm) Tính thời điểm đến, thời gian đi
+
+Ghi kết quả theo giờ và phút.
+
+a) Một chuyến tàu khởi hành lúc 14 giờ 0 phút và đi hết 3 giờ 1 phút. Tàu đến nơi lúc mấy giờ?
+b) Một chuyến tàu khởi hành lúc 15 giờ 25 phút và đi hết 2 giờ 41 phút. Tàu đến nơi lúc mấy giờ?
+c) Một chuyến tàu khởi hành lúc 8 giờ 45 phút và đi hết 3 giờ 29 phút. Tàu đến nơi lúc mấy giờ?
+d) Một chuyến tàu khởi hành lúc 12 giờ 20 phút và đi hết 2 giờ 49 phút. Tàu đến nơi lúc mấy giờ?
+e) Một chuyến tàu khởi hành lúc 12 giờ 50 phút và đi hết 5 giờ 21 phút. Tàu đến nơi lúc mấy giờ?
 
 ---
 
@@ -447,39 +446,39 @@ f) Lỗi nào dễ mắc ở đề này?
 **Lỗi thường gặp:** Dùng dấu hiệu của 3 để kết luận cho 2, hoặc cộng thiếu một chữ số. Phòng: Viết rõ tổng các chữ số ra bên cạnh trước khi kết luận.
 
 ### Bài D.1
-**Đáp số:** a) 5 viên · b) 4 viên · c) 21 viên · d) 11 viên
-**Hướng giải:** BẪY — Trường hợp xấu nhất, không phải trường hợp may mắn. Xét trường hợp **xấu nhất**: lấy được nhiều nhất bao nhiêu viên mà vẫn chưa đủ điều kiện? Đó là mỗi màu lấy (k − 1) viên. Lấy thêm đúng một viên nữa thì chắc chắn có k viên cùng màu.
-**Nhãn tư duy:** TD6, TD2. Điểm chốt: Luôn xuất phát từ **trường hợp xấu nhất** rồi cộng thêm 1.
-**Lỗi thường gặp:** Nhân số màu với số viên cần rồi lấy luôn kết quả đó. Phòng: Viết rõ câu “Xấu nhất là mỗi màu lấy được … viên mà vẫn chưa đủ”.
-**Gợi ý 3 tầng:** (1) Xấu nhất thì mỗi màu lấy được bao nhiêu viên mà vẫn chưa đủ? — (2) Tổng số viên ở tình huống xấu nhất là bao nhiêu? — (3) Lấy thêm một viên nữa thì sao?
+**Đáp số:** a) 32 · b) 51 · c) 40 · d) 29
+**Hướng giải:** BẪY — Đi ngược nhưng không đảo thứ tự. Viết chuỗi thao tác thành sơ đồ mũi tên rồi đi ngược lại từ kết quả cuối. Mỗi bước đảo phép tính: nhân thành chia, cộng thành trừ. Thứ tự cũng phải đảo — phép làm sau cùng được gỡ trước tiên.
+**Nhãn tư duy:** TD3, TD5. Điểm chốt: Đảo **cả phép tính lẫn thứ tự**. Đảo phép tính mà giữ nguyên thứ tự thì vẫn sai.
+**Lỗi thường gặp:** Bắt đầu gỡ từ phép tính đầu tiên của đề thay vì từ phép tính cuối cùng. Phòng: Thử lại theo chiều xuôi. Bài này luôn thử lại được, nên không có lý do gì để nộp một đáp số chưa thử.
+**Gợi ý 3 tầng:** (1) Đề đã làm những phép tính nào, theo thứ tự nào? — (2) Phép nào làm sau cùng? Gỡ phép ấy trước tiên. — (3) Nhân thì gỡ bằng chia, cộng thì gỡ bằng trừ.
 
 ### Bài D.2
-**Đáp số:** a) 11 giờ 24 phút · b) 11 giờ 11 phút · c) 12 giờ 42 phút · d) 6 giờ 42 phút · e) 13 giờ 18 phút
-**Hướng giải:** BẪY — Phần phút vượt quá 60. Đổi cả giờ khởi hành lẫn thời gian đi về **phút**, cộng lại, rồi đổi kết quả ngược lại thành giờ và phút. Cách này tránh được lỗi nhớ khi phần phút vượt 60.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Đổi hết về phút rồi mới cộng — an toàn hơn cộng trực tiếp.
-**Lỗi thường gặp:** Cộng phần phút thành hơn 60 mà quên đổi thành giờ. Phòng: Kiểm tra phần phút của đáp số phải bé hơn 60.
-**Gợi ý 3 tầng:** (1) Đổi giờ khởi hành ra phút tính từ 0 giờ. — (2) Cộng thêm thời gian đi (tính bằng phút). — (3) Đổi tổng số phút trở lại thành giờ và phút.
+**Đáp số:** a) 86 · b) 29 · c) 496 · d) 189
+**Hướng giải:** Với một số **lẻ** các số tự nhiên liên tiếp, số ở giữa chính là trung bình cộng: số giữa = tổng : số lượng. Số bé nhất bằng số giữa trừ đi một nửa số lượng còn lại.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Với số lượng lẻ thì **số giữa = tổng : số lượng** — đó là chìa khoá.
+**Lỗi thường gặp:** Lấy tổng chia cho số lượng rồi nhận luôn kết quả là số bé nhất. Phòng: Vẽ dãy số ra, đánh dấu vị trí số giữa trước khi lùi về số đầu.
+**Gợi ý 3 tầng:** (1) Số lượng số hạng là số chẵn hay lẻ? — (2) Với số lượng lẻ, số ở giữa bằng tổng chia số lượng. — (3) Từ số giữa lùi về đầu dãy mấy đơn vị?
 
 ### Bài D.3
-**Đáp số:** a) hơn 1 đơn vị · b) 46, hiệu 18 · c) 33, hiệu 0 · d) 82, hiệu 54 · e) 71 · f) hơn -1 đơn vị
-**Hướng giải:** Viết số có hai chữ số dưới dạng **ab = a × 10 + b** với a là chữ số hàng chục (khác 0), b là chữ số hàng đơn vị. Từ điều kiện của đề, lập quan hệ giữa a và b rồi dùng bài toán tổng – hiệu.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Chữ số hàng chục **khác 0** và mỗi chữ số chỉ nhận giá trị từ 0 đến 9.
-**Lỗi thường gặp:** Tìm ra a hoặc b lớn hơn 9 mà vẫn nhận đáp số. Phòng: Sau khi tính xong, kiểm tra lại từng chữ số có nằm trong khoảng 0–9 không.
-**Gợi ý 3 tầng:** (1) Gọi chữ số hàng chục là a, hàng đơn vị là b. — (2) Viết số đó thành a × 10 + b. — (3) Đưa về bài toán tổng – hiệu của a và b.
+**Đáp số:** a) 8 · b) 5 · c) 8 · d) 3 · e) 2 · f) 2
+**Hướng giải:** Chữ số tận cùng của tổng, hiệu, tích chỉ phụ thuộc vào chữ số tận cùng của các số tham gia. Chỉ cần lấy các chữ số tận cùng ra tính với nhau rồi lấy chữ số tận cùng của kết quả.
+**Nhãn tư duy:** TD5, TD2. Điểm chốt: Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu của số.
+**Lỗi thường gặp:** Tính trọn cả phép tính, vừa lâu vừa dễ sai. Phòng: Che phần đầu của hai số, chỉ để lộ chữ số cuối cùng.
+**Gợi ý 3 tầng:** (1) Chữ số tận cùng của mỗi số là chữ số nào? — (2) Thực hiện phép tính với riêng hai chữ số tận cùng đó. — (3) Lấy chữ số tận cùng của kết quả vừa tính.
 
 ### Bài D.4
-**Đáp số:** a) 8 · b) 8 cm² · c) 1 cm² · d) 4 cm² · e) 2 cm² · f) 16 cm
-**Hướng giải:** BẪY — Chia diện tích, không chia chu vi. Số mảnh phủ kín bằng diện tích hình lớn chia diện tích một mảnh — nhưng chỉ đúng khi các mảnh **xếp khít không thừa**. Kiểm tra lại bằng cách đếm số hàng và số cột.
-**Nhãn tư duy:** TD3, TD4. Điểm chốt: Phép chia diện tích chỉ đúng khi mảnh **xếp khít**.
-**Lỗi thường gặp:** Chia chu vi cho cạnh mảnh thay vì chia diện tích cho diện tích. Phòng: Kẻ lưới lên hình và đếm thử một hàng.
-**Gợi ý 3 tầng:** (1) Diện tích hình lớn bằng bao nhiêu? — (2) Diện tích một mảnh bằng bao nhiêu? — (3) Chia hai diện tích cho nhau rồi đếm lại theo hàng.
-
-### Bài D.5
-**Đáp số:** a) 6 tạ · b) 2 tạ 70 kg · c) 3 tạ 90 kg · d) 2 tạ 80 kg · e) 7 tạ 60 kg
+**Đáp số:** a) 2 tạ 40 kg · b) 6 tạ · c) 2 tạ 70 kg · d) 3 tạ 90 kg · e) 2 tạ 80 kg · f) 7 tạ 60 kg
 **Hướng giải:** BẪY — Đơn vị của câu trả lời. Tính tổng khối lượng theo ki-lô-gam trước, sau đó mới đổi sang đơn vị mà đề hỏi. Đừng đổi đơn vị ngay từ đầu vì dễ nhầm.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Câu hỏi đòi đơn vị nào thì bước **cuối cùng** mới đổi sang đơn vị đó.
 **Lỗi thường gặp:** Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. Phòng: Khoanh tròn đơn vị trong câu hỏi trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Tính tổng khối lượng theo ki-lô-gam. — (2) Đề hỏi kết quả theo đơn vị nào? — (3) Đổi kết quả sang đơn vị đó.
+
+### Bài D.5
+**Đáp số:** a) 17 giờ 1 phút · b) 18 giờ 6 phút · c) 12 giờ 14 phút · d) 15 giờ 9 phút · e) 18 giờ 11 phút
+**Hướng giải:** BẪY — Phần phút vượt quá 60. Đổi cả giờ khởi hành lẫn thời gian đi về **phút**, cộng lại, rồi đổi kết quả ngược lại thành giờ và phút. Cách này tránh được lỗi nhớ khi phần phút vượt 60.
+**Nhãn tư duy:** TD3, TD2. Điểm chốt: Đổi hết về phút rồi mới cộng — an toàn hơn cộng trực tiếp.
+**Lỗi thường gặp:** Cộng phần phút thành hơn 60 mà quên đổi thành giờ. Phòng: Kiểm tra phần phút của đáp số phải bé hơn 60.
+**Gợi ý 3 tầng:** (1) Đổi giờ khởi hành ra phút tính từ 0 giờ. — (2) Cộng thêm thời gian đi (tính bằng phút). — (3) Đổi tổng số phút trở lại thành giờ và phút.
 
 ### Bài E.1
 **Đáp số:** a) Đổi đơn vị diện tích · b) Đơn vị có mũ hai, hoặc ha, km² · c) Bảng đơn vị đo diện tích · d) Đếm bậc rồi nhân, chia 100 · e) Mỗi bậc thêm hai chữ số 0 — nhớ “diện tích thì gấp đôi số 0”. · f) Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc.

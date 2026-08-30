@@ -39,9 +39,9 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần B**
 
 - **Bài B.1** — a) câu lời giải nêu rõ đang tìm đại lượng nào · b) phép tính, viết đủ dấu và đủ đơn vị · c) kết quả kèm đơn vị · d) câu đáp số · e) một phần tư số điểm của bài
-- **Bài B.2** — a) “Làm tròn số tự nhiên là:” · b) “Tìm số thoả nhiều điều kiện chia có dư là:” · c) “So sánh hai số tự nhiên là:” · d) “Kiểm tra chia hết bằng dấu hiệu là:” · e) “Xét chia hết của tổng, hiệu là:”
+- **Bài B.2** — a) “Làm tròn số tự nhiên là:” · b) “Dùng chữ thay số là:” · c) “So sánh hai số tự nhiên là:” · d) “Kiểm tra chia hết bằng dấu hiệu là:” · e) “Xét chia hết của tổng, hiệu là:”
 - **Bài B.3** — a) không ghi trong dấu ngoặc phép tính · b) có, bắt buộc · c) có, bắt buộc · d) đơn vị vuông, ví dụ cm² · e) đơn vị khối, ví dụ cm³ · f) km/giờ hoặc m/phút
-- **Bài B.4** — a) Gạch một nét ngăn ngay sau hàng cần làm tròn rồi mới quyết định. · b) Viết dãy số thoả điều kiện thứ nhất trước, rồi mới lọc. · c) Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái. · d) Viết rõ tổng các chữ số ra bên cạnh trước khi kết luận. · e) Ghi số dư của từng số hạng ngay bên dưới nó. · f) Viết rời từng chữ số ra rồi mới cộng.
+- **Bài B.4** — a) Gạch một nét ngăn ngay sau hàng cần làm tròn rồi mới quyết định. · b) Viết sẵn hai dòng ràng buộc lên đầu bài giải rồi mới tính. · c) Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái. · d) Viết rõ tổng các chữ số ra bên cạnh trước khi kết luận. · e) Ghi số dư của từng số hạng ngay bên dưới nó. · f) Viết rời từng chữ số ra rồi mới cộng.
 - **Bài B.5** — a) 1 phần trong 4 · b) 2 phần trong 4 · c) 1 phần trong 4 · d) 3 phần trong 4 · e) 1 đến 2 phần trong 4
 
 **Phần C**
@@ -55,7 +55,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần D**
 
 - **Bài D.1** — a) Số tự nhiên: hàng, lớp và cấu tạo số · b) 5 · c) tên một dạng bài của chương · d) 3 nhánh con: dấu hiệu · phương pháp · lỗi hay mắc · e) so với bảng dạng bài ở phiếu Dạng bài & Đọc vị
-- **Bài D.2** — a) Hai điều kiện “chia cho … dư …” đi cùng nhau · b) Lập dãy theo điều kiện chặt hơn rồi lọc theo điều kiện còn lại · c) Thử từng số từ 1 trở đi nên quá lâu và dễ bỏ sót. · d) Phép chia có dư, dãy cách đều · e) Chọn điều kiện có số chia **lớn hơn** để lập dãy — dãy thưa hơn nên thử nhanh hơn.
+- **Bài D.2** — a) Đề viết số bằng chữ hoặc bằng dấu sao và cho quan hệ giữa các chữ số · b) Viết cấu tạo số theo chữ, thay vào điều kiện rồi rút gọn · c) Tính ra a bằng 0 rồi vẫn nhận, hoặc để một chữ số vượt quá 9. · d) Cấu tạo thập phân của số; tổng – hiệu · e) Đổi chỗ hai chữ số của số có hai chữ số thì hiệu luôn là bội của 9.
 - **Bài D.3** — a) Câu hỏi “có chia hết cho … không” · b) Chọn đúng dấu hiệu theo số chia rồi kiểm tra · c) Dùng dấu hiệu của 3 để kết luận cho 2, hoặc cộng thiếu một chữ số. · d) Dấu hiệu chia hết cho 2, 3, 5, 9 · e) Cộng chữ số theo cặp tròn 9, phần dư chính là số dư khi chia 9.
 - **Bài D.4** — a) Yêu cầu “có mấy chữ số”, “tổng các chữ số” · b) Tách lớp để đếm; cộng rời từng chữ số · c) Cộng cả giá trị hàng (ví dụ cộng 300 thay vì cộng 3). · d) Cấu tạo số, tổng chữ số · e) Ghép cặp các chữ số cộng lại tròn 10 rồi cộng nhanh.
 - **Bài D.5** — a) Tổng gồm các số tròn chục, tròn trăm, tròn nghìn… · b) Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết · c) Bỏ qua hàng khuyết nên số viết ra bị ngắn đi một chữ số. · d) Cấu tạo thập phân của số tự nhiên · e) Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số.
@@ -64,7 +64,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài E.1** — a) giới thiệu chương “Số tự nhiên: hàng, lớp và cấu tạo số” và mục tiêu · b) trình bày sơ đồ tư duy chương · c) giảng một dạng bài kèm ví dụ mẫu · d) nêu lỗi hay mắc và cách phòng · e) ra một bài cho lớp làm và chữa nhanh · f) tự phân công, mỗi bạn ít nhất một phút
 - **Bài E.2** — a) “Hôm nay nhóm mình nói về Làm tròn số tự nhiên.” · b) Cụm từ “làm tròn đến hàng …” · c) Quy tắc làm tròn, giá trị hàng · d) Làm tròn 4 762 đến hàng trăm. → 4 800 · e) Nhìn nhầm sang chữ số ở hàng cần làm tròn thay vì hàng liền sau nó. · f) Che toàn bộ phần đuôi sau nét gạch, chỉ để lộ đúng một chữ số.
-- **Bài E.3** — a) “Hôm nay nhóm mình nói về So sánh hai số tự nhiên.” · b) Dấu … giữa hai số, yêu cầu điền <, >, = · c) Thứ tự trong tập số tự nhiên · d) Điền dấu: 582 439 … 582 440 → < · e) So từ hàng đơn vị (phải sang trái) nên kết luận sai. · f) Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số.
+- **Bài E.3** — a) “Hôm nay nhóm mình nói về So sánh hai số tự nhiên.” · b) Dấu … giữa hai số, yêu cầu điền <, >, = · c) Thứ tự trong tập số tự nhiên · d) Điền dấu: 99 185 … 99 186 → < · e) So từ hàng đơn vị (phải sang trái) nên kết luận sai. · f) Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số.
 - **Bài E.4** — a) “Hôm nay nhóm mình nói về Xét chia hết của tổng, hiệu.” · b) Câu hỏi về tổng hoặc hiệu, không yêu cầu kết quả cụ thể · c) Tính chất chia hết của tổng và hiệu · d) Tổng 45 + 27 có chia hết cho 9 không? → có · e) Cộng hai số ra rồi mới chia — mất thời gian và dễ sai tính. · f) Chỉ cộng các **số dư**, không cộng các số.
 - **Bài E.5** — a) “Hôm nay nhóm mình nói về Đếm số chia hết đồng thời cho nhiều số.” · b) Cụm “vừa chia hết cho … vừa chia hết cho …” · c) Bội chung nhỏ nhất, dãy số cách đều · d) Có bao nhiêu số từ 1 đến 100 vừa chia hết cho 2 vừa chia hết cho 5? → 10 · e) Lấy tích hai số làm khoảng cách (ví dụ dùng 27 cho “chia hết cho 3 và 9”). · f) Chia hết cho 2 và 5 thì tận cùng là 0; chia hết cho 2 và 3 thì chia hết cho 6.
 
@@ -398,25 +398,25 @@ Kết quả: **Số tự nhiên: hàng, lớp và cấu tạo số**.
 
 *Điểm chốt:* Vẽ **từ trí nhớ** mới có tác dụng; chép lại thì không.
 
-### Bài D.2 — Nhánh 1 — Tìm số thoả nhiều điều kiện chia có dư
+### Bài D.2 — Nhánh 1 — Dùng chữ thay số
 
 **Các bước giải**
 
 Xét ý a: Nhánh con 1 — dấu hiệu nhận biết?
 
-Đọc vị: đây là dạng **Tìm số thoả nhiều điều kiện chia có dư**; dấu hiệu là Hai điều kiện “chia cho … dư …” đi cùng nhau.
+Đọc vị: đây là dạng **Dùng chữ thay số**; dấu hiệu là Đề viết số bằng chữ hoặc bằng dấu sao và cho quan hệ giữa các chữ số.
 
-Kiến thức phải dùng: Phép chia có dư, dãy cách đều.
+Kiến thức phải dùng: Cấu tạo thập phân của số; tổng – hiệu.
 
-Cách làm: Lập dãy theo điều kiện chặt hơn rồi lọc theo điều kiện còn lại.
+Cách làm: Viết cấu tạo số theo chữ, thay vào điều kiện rồi rút gọn.
 
-Lối tắt: Chọn điều kiện có số chia **lớn hơn** để lập dãy — dãy thưa hơn nên thử nhanh hơn.
+Lối tắt: Đổi chỗ hai chữ số của số có hai chữ số thì hiệu luôn là bội của 9.
 
-Kết quả: **Hai điều kiện “chia cho … dư …” đi cùng nhau**.
+Kết quả: **Đề viết số bằng chữ hoặc bằng dấu sao và cho quan hệ giữa các chữ số**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
 
-*Điểm chốt:* Chỉ **đi dọc một dãy** rồi thử điều kiện còn lại, không thử tất cả số.
+*Điểm chốt:* Chữ số hàng cao nhất **khác 0**, và mọi chữ số chỉ nhận giá trị từ 0 đến 9. Hai ràng buộc này thường là chỗ loại bớt đáp số.
 
 ### Bài D.3 — Nhánh 2 — Kiểm tra chia hết bằng dấu hiệu
 
@@ -596,9 +596,9 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | A.4 | Xác định chữ số và giá trị chữ số theo hàng | Cấu tạo thập phân của số tự nhiên | Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” | Đánh số hàng từ phải sang trái rồi tra bảng hàng | Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị. | chữ số 6, giá trị 60 000 · chữ số 6, giá trị 6 000 · chữ số 8, giá trị 80 · chữ số 3, giá trị 3 |
 | A.5 | Viết số từ dạng tổng theo hàng | Cấu tạo thập phân của số tự nhiên | Tổng gồm các số tròn chục, tròn trăm, tròn nghìn… | Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết | Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số. | 208 251 · 540 167 · 508 374 · 910 970… |
 | B.1 | Kỹ năng trình bày | Chuẩn trình bày bài giải | Yêu cầu “trình bày lời giải” | Viết đủ bốn dòng | Viết câu lời giải trước, phép tính sau — không bao giờ ngược lại. | câu lời giải nêu rõ đang tìm đại lượng nào · phép tính, viết đủ dấu và đủ đơn vị · kết quả kèm đơn vị · câu đáp số… |
-| B.2 | Kỹ năng viết câu lời giải | Chuẩn trình bày | Đề hỏi gì thì câu lời giải nhắc lại điều đó | Lấy cụm từ trong câu hỏi làm câu lời giải | Sao chép cụm từ trong câu hỏi là cách viết câu lời giải nhanh và chắc nhất. | “Làm tròn số tự nhiên là:” · “Tìm số thoả nhiều điều kiện chia có dư là:” · “So sánh hai số tự nhiên là:” · “Kiểm tra chia hết bằng dấu hiệu là:”… |
+| B.2 | Kỹ năng viết câu lời giải | Chuẩn trình bày | Đề hỏi gì thì câu lời giải nhắc lại điều đó | Lấy cụm từ trong câu hỏi làm câu lời giải | Sao chép cụm từ trong câu hỏi là cách viết câu lời giải nhanh và chắc nhất. | “Làm tròn số tự nhiên là:” · “Dùng chữ thay số là:” · “So sánh hai số tự nhiên là:” · “Kiểm tra chia hết bằng dấu hiệu là:”… |
 | B.3 | Kỹ năng ghi đơn vị | Đơn vị đo các đại lượng | Đáp số của bài có đại lượng đo | Kiểm tra đơn vị ở bước cuối | Nhìn đơn vị của đáp số là biết ngay mình có nhầm chu vi với diện tích không. | không ghi trong dấu ngoặc phép tính · có, bắt buộc · có, bắt buộc · đơn vị vuông, ví dụ cm²… |
-| B.4 | Sổ lỗi và cách phòng | Lỗi thường gặp của chương | Cột “Lỗi thường gặp” trong bảng phân tích | Ghép cặp lỗi với cách phòng | Đọc lại sổ lỗi 3 phút trước mỗi bài kiểm tra. | Gạch một nét ngăn ngay sau hàng cần làm tròn rồi mới quyết định. · Viết dãy số thoả điều kiện thứ nhất trước, rồi mới lọc. · Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái. · Viết rõ tổng các chữ số ra bên cạnh trước khi kết luận.… |
+| B.4 | Sổ lỗi và cách phòng | Lỗi thường gặp của chương | Cột “Lỗi thường gặp” trong bảng phân tích | Ghép cặp lỗi với cách phòng | Đọc lại sổ lỗi 3 phút trước mỗi bài kiểm tra. | Gạch một nét ngăn ngay sau hàng cần làm tròn rồi mới quyết định. · Viết sẵn hai dòng ràng buộc lên đầu bài giải rồi mới tính. · Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái. · Viết rõ tổng các chữ số ra bên cạnh trước khi kết luận.… |
 | B.5 | Kỹ năng tự chấm | Thang điểm và chuẩn chấm | Bài đã làm xong, cần tự đánh giá | Chia bài thành bốn phần rồi chấm từng phần | Tự chấm bài của bạn giúp nhớ chuẩn chấm nhanh hơn tự chấm bài của mình. | 1 phần trong 4 · 2 phần trong 4 · 1 phần trong 4 · 3 phần trong 4… |
 | C.1 | Kỹ năng dò soát | Quy trình ba tầng | Bài đã làm xong, còn thời gian | Dò theo thứ tự đơn vị → phép tính → câu hỏi | Đọc lại **câu hỏi** trước, đọc lại bài làm sau. | đơn vị đo — mọi số có cùng đơn vị chưa · phép tính — cộng trừ nhân chia có đúng thứ tự chưa · đề hỏi gì — mình đã trả lời đúng câu hỏi chưa · tầng 3 — trả lời lệch câu hỏi… |
 | C.2 | Làm tròn số tự nhiên | Quy tắc làm tròn, giá trị hàng | Cụm từ “làm tròn đến hàng …” | Gạch ngăn hàng → xét chữ số liền sau → giữ nguyên hoặc thêm 1 | Che toàn bộ phần đuôi sau nét gạch, chỉ để lộ đúng một chữ số. | tầng 2 · Gạch một nét ngăn ngay sau hàng cần làm tròn rồi mới quyết định. · toàn bộ số điểm của ý sai · Gạch một nét ngăn ngay sau hàng cần làm tròn rồi mới quyết định.… |
@@ -606,13 +606,13 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | C.4 | Đếm số chia hết đồng thời cho nhiều số | Bội chung nhỏ nhất, dãy số cách đều | Cụm “vừa chia hết cho … vừa chia hết cho …” | Quy về một số chia duy nhất là BCNN rồi đếm | Chia hết cho 2 và 5 thì tận cùng là 0; chia hết cho 2 và 3 thì chia hết cho 6. | tầng 2 · Kiểm tra bằng cách viết ba số đầu tiên của dãy rồi xem khoảng cách thật. · toàn bộ số điểm của ý sai · Kiểm tra bằng cách viết ba số đầu tiên của dãy rồi xem khoảng cách thật.… |
 | C.5 | Chữ số tận cùng | Tính chất chữ số tận cùng của tổng, tích | Câu hỏi chỉ hỏi chữ số tận cùng | Rút gọn về chữ số tận cùng rồi tính | Tích có thừa số tận cùng 0 hoặc 5 thì tận cùng là 0 hoặc 5. | tầng 2 · Lấy tay che phần đầu của hai số, chỉ để lộ chữ số cuối. · toàn bộ số điểm của ý sai · Lấy tay che phần đầu của hai số, chỉ để lộ chữ số cuối.… |
 | D.1 | Sơ đồ tư duy tổng hợp | Hệ thống hoá toàn chương | Yêu cầu vẽ lại sơ đồ không nhìn tài liệu | Vẽ từ trí nhớ rồi đối chiếu | Chỗ nào quên khi vẽ chính là chỗ phải ôn lại đầu tiên. | Số tự nhiên: hàng, lớp và cấu tạo số · 5 · tên một dạng bài của chương · 3 nhánh con: dấu hiệu · phương pháp · lỗi hay mắc… |
-| D.2 | Tìm số thoả nhiều điều kiện chia có dư | Phép chia có dư, dãy cách đều | Hai điều kiện “chia cho … dư …” đi cùng nhau | Lập dãy theo điều kiện chặt hơn rồi lọc theo điều kiện còn lại | Chọn điều kiện có số chia **lớn hơn** để lập dãy — dãy thưa hơn nên thử nhanh hơn. | Hai điều kiện “chia cho … dư …” đi cùng nhau · Lập dãy theo điều kiện chặt hơn rồi lọc theo điều kiện còn lại · Thử từng số từ 1 trở đi nên quá lâu và dễ bỏ sót. · Phép chia có dư, dãy cách đều… |
+| D.2 | Dùng chữ thay số | Cấu tạo thập phân của số; tổng – hiệu | Đề viết số bằng chữ hoặc bằng dấu sao và cho quan hệ giữa các chữ số | Viết cấu tạo số theo chữ, thay vào điều kiện rồi rút gọn | Đổi chỗ hai chữ số của số có hai chữ số thì hiệu luôn là bội của 9. | Đề viết số bằng chữ hoặc bằng dấu sao và cho quan hệ giữa các chữ số · Viết cấu tạo số theo chữ, thay vào điều kiện rồi rút gọn · Tính ra a bằng 0 rồi vẫn nhận, hoặc để một chữ số vượt quá 9. · Cấu tạo thập phân của số; tổng – hiệu… |
 | D.3 | Kiểm tra chia hết bằng dấu hiệu | Dấu hiệu chia hết cho 2, 3, 5, 9 | Câu hỏi “có chia hết cho … không” | Chọn đúng dấu hiệu theo số chia rồi kiểm tra | Cộng chữ số theo cặp tròn 9, phần dư chính là số dư khi chia 9. | Câu hỏi “có chia hết cho … không” · Chọn đúng dấu hiệu theo số chia rồi kiểm tra · Dùng dấu hiệu của 3 để kết luận cho 2, hoặc cộng thiếu một chữ số. · Dấu hiệu chia hết cho 2, 3, 5, 9… |
 | D.4 | Đếm chữ số, tính tổng chữ số | Cấu tạo số, tổng chữ số | Yêu cầu “có mấy chữ số”, “tổng các chữ số” | Tách lớp để đếm; cộng rời từng chữ số | Ghép cặp các chữ số cộng lại tròn 10 rồi cộng nhanh. | Yêu cầu “có mấy chữ số”, “tổng các chữ số” · Tách lớp để đếm; cộng rời từng chữ số · Cộng cả giá trị hàng (ví dụ cộng 300 thay vì cộng 3). · Cấu tạo số, tổng chữ số… |
 | D.5 | Viết số từ dạng tổng theo hàng | Cấu tạo thập phân của số tự nhiên | Tổng gồm các số tròn chục, tròn trăm, tròn nghìn… | Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết | Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số. | Tổng gồm các số tròn chục, tròn trăm, tròn nghìn… · Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết · Bỏ qua hàng khuyết nên số viết ra bị ngắn đi một chữ số. · Cấu tạo thập phân của số tự nhiên… |
 | E.1 | Kỹ năng thuyết trình theo nhóm | Hệ thống hoá và diễn đạt | Yêu cầu giảng lại chương theo nhóm | Chia kịch bản theo phút, phân công rõ người | Người giảng nhớ lâu hơn người nghe khoảng ba lần. | giới thiệu chương “Số tự nhiên: hàng, lớp và cấu tạo số” và mục tiêu · trình bày sơ đồ tư duy chương · giảng một dạng bài kèm ví dụ mẫu · nêu lỗi hay mắc và cách phòng… |
 | E.2 | Làm tròn số tự nhiên | Quy tắc làm tròn, giá trị hàng | Cụm từ “làm tròn đến hàng …” | Gạch ngăn hàng → xét chữ số liền sau → giữ nguyên hoặc thêm 1 | Che toàn bộ phần đuôi sau nét gạch, chỉ để lộ đúng một chữ số. | “Hôm nay nhóm mình nói về Làm tròn số tự nhiên.” · Cụm từ “làm tròn đến hàng …” · Quy tắc làm tròn, giá trị hàng · Làm tròn 4 762 đến hàng trăm. → 4 800… |
-| E.3 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | “Hôm nay nhóm mình nói về So sánh hai số tự nhiên.” · Dấu … giữa hai số, yêu cầu điền <, >, = · Thứ tự trong tập số tự nhiên · Điền dấu: 582 439 … 582 440 → <… |
+| E.3 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | “Hôm nay nhóm mình nói về So sánh hai số tự nhiên.” · Dấu … giữa hai số, yêu cầu điền <, >, = · Thứ tự trong tập số tự nhiên · Điền dấu: 99 185 … 99 186 → <… |
 | E.4 | Xét chia hết của tổng, hiệu | Tính chất chia hết của tổng và hiệu | Câu hỏi về tổng hoặc hiệu, không yêu cầu kết quả cụ thể | Xét số dư từng số hạng rồi cộng, trừ các số dư | Chỉ cộng các **số dư**, không cộng các số. | “Hôm nay nhóm mình nói về Xét chia hết của tổng, hiệu.” · Câu hỏi về tổng hoặc hiệu, không yêu cầu kết quả cụ thể · Tính chất chia hết của tổng và hiệu · Tổng 45 + 27 có chia hết cho 9 không? → có… |
 | E.5 | Đếm số chia hết đồng thời cho nhiều số | Bội chung nhỏ nhất, dãy số cách đều | Cụm “vừa chia hết cho … vừa chia hết cho …” | Quy về một số chia duy nhất là BCNN rồi đếm | Chia hết cho 2 và 5 thì tận cùng là 0; chia hết cho 2 và 3 thì chia hết cho 6. | “Hôm nay nhóm mình nói về Đếm số chia hết đồng thời cho nhiều số.” · Cụm “vừa chia hết cho … vừa chia hết cho …” · Bội chung nhỏ nhất, dãy số cách đều · Có bao nhiêu số từ 1 đến 100 vừa chia hết cho 2 vừa chia hết cho 5? → 10… |
 
@@ -638,7 +638,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | C.4 | TD2, TD4 | Khoảng cách của dãy là **bội chung nhỏ nhất**, không phải tích hai số khi hai số không nguyên tố cùng nhau. |
 | C.5 | TD5, TD2 | Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu. |
 | D.1 | TD3 | Vẽ **từ trí nhớ** mới có tác dụng; chép lại thì không. |
-| D.2 | TD2, TD6 | Chỉ **đi dọc một dãy** rồi thử điều kiện còn lại, không thử tất cả số. |
+| D.2 | TD1, TD4 | Chữ số hàng cao nhất **khác 0**, và mọi chữ số chỉ nhận giá trị từ 0 đến 9. Hai ràng buộc này thường là chỗ loại bớt đáp số. |
 | D.3 | TD1, TD5 | Dấu hiệu cho 2 và 5 nhìn **đuôi**; dấu hiệu cho 3 và 9 nhìn **tổng**. |
 | D.4 | TD1 | Tổng các chữ số **không** phụ thuộc thứ tự các chữ số. |
 | D.5 | TD1, TD3 | Hàng khuyết trong tổng vẫn phải có chữ số **0** trong số viết ra. |
@@ -672,7 +672,7 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 | C.4 | Lấy tích hai số làm khoảng cách (ví dụ dùng 27 cho “chia hết cho 3 và 9”). | Kiểm tra bằng cách viết ba số đầu tiên của dãy rồi xem khoảng cách thật. |
 | C.5 | Tính trọn cả phép tính, vừa lâu vừa dễ sai. | Lấy tay che phần đầu của hai số, chỉ để lộ chữ số cuối. |
 | D.1 | Vừa vẽ vừa nhìn phiếu Lý thuyết. | Úp phiếu Lý thuyết xuống bàn trước khi bắt đầu vẽ. |
-| D.2 | Thử từng số từ 1 trở đi nên quá lâu và dễ bỏ sót. | Viết dãy số thoả điều kiện thứ nhất trước, rồi mới lọc. |
+| D.2 | Tính ra a bằng 0 rồi vẫn nhận, hoặc để một chữ số vượt quá 9. | Viết sẵn hai dòng ràng buộc lên đầu bài giải rồi mới tính. |
 | D.3 | Dùng dấu hiệu của 3 để kết luận cho 2, hoặc cộng thiếu một chữ số. | Viết rõ tổng các chữ số ra bên cạnh trước khi kết luận. |
 | D.4 | Cộng cả giá trị hàng (ví dụ cộng 300 thay vì cộng 3). | Viết rời từng chữ số ra rồi mới cộng. |
 | D.5 | Bỏ qua hàng khuyết nên số viết ra bị ngắn đi một chữ số. | Kẻ sẵn các ô hàng rồi mới điền chữ số vào ô tương ứng. |
@@ -734,17 +734,17 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | B.5 | Thiếu đơn vị ở đáp số bị trừ bao nhiêu? | một phần trong bốn phần điểm |
 | C.1 | Tầng nào bắt được lỗi trả lời lệch câu hỏi? | tầng 3 |
 | C.2 | Làm tròn 4 762 đến hàng trăm. | 4 800 |
-| C.3 | Số 3 609 có chia hết cho 9 không? | có |
+| C.3 | Số 6 770 có chia hết cho 9 không? | không |
 | C.4 | Có bao nhiêu số từ 1 đến 100 vừa chia hết cho 2 vừa chia hết cho 5? | 10 |
 | C.5 | Tích 137 × 46 có chữ số tận cùng là chữ số nào? | 2 |
 | D.1 | Vẽ sơ đồ mà nhìn tài liệu thì mất tác dụng gì? | mất tác dụng kiểm tra trí nhớ |
-| D.2 | Tìm số bé nhất chia cho 5 dư 2 và chia cho 3 dư 1. | 7 |
-| D.3 | Số 3 609 có chia hết cho 9 không? | có |
+| D.2 | Số có hai chữ số, đổi chỗ hai chữ số được số nhỏ hơn 27 đơn vị, tổng hai chữ số bằng 11. Tìm số ấy. | 74 |
+| D.3 | Số 6 770 có chia hết cho 9 không? | không |
 | D.4 | Số 40 506 có mấy chữ số và tổng các chữ số bằng bao nhiêu? | 5 chữ số, tổng 15 |
 | D.5 | Viết số gồm tổng: 30 000 + 400 + 7 | 30 407 |
 | E.1 | Vì sao phải giảng lại cho bạn? | vì giảng được mới là hiểu thật |
 | E.2 | Làm tròn 4 762 đến hàng trăm. | 4 800 |
-| E.3 | Điền dấu: 582 439 … 582 440 | < |
+| E.3 | Điền dấu: 99 185 … 99 186 | < |
 | E.4 | Tổng 45 + 27 có chia hết cho 9 không? | có |
 | E.5 | Có bao nhiêu số từ 1 đến 100 vừa chia hết cho 2 vừa chia hết cho 5? | 10 |
 

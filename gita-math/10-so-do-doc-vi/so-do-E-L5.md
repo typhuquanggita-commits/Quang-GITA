@@ -91,43 +91,43 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 
 Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: đây là dạng bài gì, và dấu hiệu nào cho biết điều đó.
 
-**Đề 1.** Chú ý đơn vị mà đề hỏi. Một xe chở 22 bao thóc, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ thóc?
+**Đề 1.** Đổi về cùng đơn vị rồi tính. 38 m 11 cm × 4 = … cm
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 2.** Tính rồi so sánh hai phương án. 11 người làm xong một công việc trong 18 ngày. Nếu có thêm 5 người nữa (làm khoẻ như nhau) thì công việc đó hoàn thành sớm hơn bao nhiêu ngày?
+**Đề 2.** Chú ý đơn vị mà đề hỏi. Một xe chở 26 bao đường, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ đường?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 3.** Điền số thích hợp vào chỗ chấm. 39 hm² = … dam²
+**Đề 3.** Trả lời ngắn gọn. Năm 1915 thuộc thế kỉ thứ mấy?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 4.** Điền số thích hợp. 25 m² = … dm²
+**Đề 4.** Đổi hết về ki-lô-gam trước khi tính. Một kho chứa 9 tấn 9 tạ 66 kg thóc. Đổi ra ki-lô-gam.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 5.** Điền số thích hợp vào chỗ chấm. 63 tấn = … dag
+**Đề 5.** Trình bày lời giải có câu trả lời. Một cửa hàng có 5 thùng nước, mỗi thùng 18 lít. Cửa hàng đã bán 3 thùng. Hỏi cửa hàng còn lại bao nhiêu lít nước?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 6.** Trình bày lời giải có câu trả lời. Một cửa hàng có 11 thùng nước mắm, mỗi thùng 24 lít. Cửa hàng đã bán 6 thùng. Hỏi cửa hàng còn lại bao nhiêu lít nước mắm?
+**Đề 6.** Điền dấu <, >, = thích hợp. 66 yến … 4 509 tạ
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 7.** Bài mô phỏng câu hỏi thực tế của đề đánh giá năng lực. Một món hàng niêm yết 200 000 đồng, được chiết khấu 10%. Giá sau chiết khấu là bao nhiêu?
+**Đề 7.** Ghi kết quả theo giờ và phút. Một chuyến tàu khởi hành lúc 11 giờ 20 phút và đi hết 5 giờ 43 phút. Tàu đến nơi lúc mấy giờ?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 8.** Điền dấu <, >, = thích hợp. 3 tạ … 301 tấn
+**Đề 8.** Chú ý: vận tốc trung bình không phải trung bình cộng hai vận tốc. Một người đi 1 giờ đầu với vận tốc 20 km/giờ, 1 giờ sau với vận tốc 24 km/giờ. Tính vận tốc trung bình trên cả quãng đường.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 9.** Đổi về cùng đơn vị rồi tính. 2 499 cm : 7 = … cm
+**Đề 9.** Điền số thích hợp. 52 lít = … ml
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 10.** Áp dụng đúng công thức cho từng câu. Một người đi 200 km hết 4 giờ. Tính vận tốc.
+**Đề 10.** Tính rồi so sánh hai phương án. 6 người làm xong một công việc trong 19 ngày. Nếu có thêm 3 người nữa (làm khoẻ như nhau) thì công việc đó hoàn thành sớm hơn bao nhiêu ngày?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
@@ -137,16 +137,16 @@ Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: 
 
 | # | Dạng bài | Dấu hiệu |
 |:--:|---|---|
-| 1 | Bài toán đại lượng có lời văn | Đơn vị trong câu hỏi khác đơn vị trong dữ kiện |
-| 2 | Tỉ lệ nghịch, so sánh hai phương án | Thay đổi số người, hỏi thay đổi thời gian |
-| 3 | Đổi đơn vị diện tích | Đơn vị có mũ hai, hoặc ha, km² |
-| 4 | Đổi đơn vị diện tích | Đơn vị có mũ hai: m², cm², km², ha |
-| 5 | Đổi đơn vị đo | Dấu … giữa hai đơn vị khác nhau |
-| 6 | Bài toán đại lượng nhiều bước | Cho số nhóm, giá trị mỗi nhóm và số nhóm đã dùng |
-| 7 | Phần trăm nhiều bước trong mua bán | Có cả “chiết khấu” và “thuế” trong một bài |
-| 8 | So sánh số đo đại lượng | Hai vế có đơn vị khác nhau |
-| 9 | Bốn phép tính với số đo | Các số hạng có đơn vị khác nhau trong cùng một phép tính |
-| 10 | Ba dạng cơ bản của chuyển động đều | Có hai trong ba đại lượng quãng đường, vận tốc, thời gian |
+| 1 | Bốn phép tính với số đo | Các số hạng có đơn vị khác nhau trong cùng một phép tính |
+| 2 | Bài toán đại lượng có lời văn | Đơn vị trong câu hỏi khác đơn vị trong dữ kiện |
+| 3 | Lịch và đơn vị thời gian lớn | Đề hỏi về tháng, năm, thế kỉ |
+| 4 | Đại lượng khối lượng, chia phần và làm tròn lên | Số đo nhiều đơn vị; câu hỏi “ít nhất bao nhiêu” |
+| 5 | Bài toán đại lượng nhiều bước | Cho số nhóm, giá trị mỗi nhóm và số nhóm đã dùng |
+| 6 | So sánh số đo đại lượng | Hai vế có đơn vị khác nhau |
+| 7 | Tính thời điểm trong ngày | Cho thời điểm bắt đầu và khoảng thời gian |
+| 8 | Vận tốc trung bình | Hai chặng có vận tốc khác nhau |
+| 9 | Đổi đơn vị thể tích, dung tích | Đơn vị có mũ ba, hoặc lít, mi-li-lít |
+| 10 | Tỉ lệ nghịch, so sánh hai phương án | Thay đổi số người, hỏi thay đổi thời gian |
 
 ---
 

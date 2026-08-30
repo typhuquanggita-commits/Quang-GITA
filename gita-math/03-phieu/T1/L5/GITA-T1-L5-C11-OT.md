@@ -109,115 +109,153 @@ h) 2 700 ha = … km²
 
 ## PHẦN II — THI ĐẤU CẶP ĐÔI · Mức M3 — Vận dụng · 20 phút · 20 điểm
 
-### Bài 1. (4 điểm) Tính thời điểm đến, thời gian đi
-
-Ghi kết quả theo giờ và phút.
-
-a) Một chuyến tàu khởi hành lúc 12 giờ 40 phút và đi hết 2 giờ 28 phút. Tàu đến nơi lúc mấy giờ?
-b) Một chuyến tàu khởi hành lúc 8 giờ 0 phút và đi hết 2 giờ 47 phút. Tàu đến nơi lúc mấy giờ?
-c) Một chuyến tàu khởi hành lúc 15 giờ 30 phút và đi hết 6 giờ 27 phút. Tàu đến nơi lúc mấy giờ?
-d) Một chuyến tàu khởi hành lúc 15 giờ 30 phút và đi hết 4 giờ 4 phút. Tàu đến nơi lúc mấy giờ?
-e) Một chuyến tàu khởi hành lúc 13 giờ 10 phút và đi hết 3 giờ 13 phút. Tàu đến nơi lúc mấy giờ?
-f) Một chuyến tàu khởi hành lúc 15 giờ 25 phút và đi hết 1 giờ 23 phút. Tàu đến nơi lúc mấy giờ?
-
-### Bài 2. (4 điểm) Bài toán thực tế về khối lượng
+### Bài 1. (4 điểm) Bài toán thực tế về khối lượng
 
 Chú ý đơn vị mà đề hỏi.
 
-a) Một xe chở 10 bao phân bón, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ phân bón?
-b) Một xe chở 37 bao xi măng, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ xi măng?
-c) Một xe chở 25 bao phân bón, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ phân bón?
-d) Một xe chở 8 bao xi măng, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ xi măng?
-e) Một xe chở 13 bao gạo, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ gạo?
+a) Một xe chở 7 bao muối, mỗi bao 40 kg. Hỏi xe chở bao nhiêu tạ muối?
+b) Một xe chở 26 bao xi măng, mỗi bao 40 kg. Hỏi xe chở bao nhiêu tạ xi măng?
+c) Một xe chở 12 bao muối, mỗi bao 40 kg. Hỏi xe chở bao nhiêu tạ muối?
+d) Một xe chở 22 bao đường, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ đường?
+e) Một xe chở 10 bao phân bón, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ phân bón?
+f) Một xe chở 37 bao xi măng, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ xi măng?
 
-### Bài 3. (4 điểm) Tổng của các số tự nhiên liên tiếp
-
-Với mỗi ý, tìm số theo yêu cầu.
-
-a) Tổng của 3 số tự nhiên liên tiếp bằng 912. Tìm số bé nhất trong 3 số đó.
-b) Tổng của 9 số tự nhiên liên tiếp bằng 3 672. Tìm số bé nhất trong 9 số đó.
-c) Tổng của 7 số tự nhiên liên tiếp bằng 1 568. Tìm số bé nhất trong 7 số đó.
-d) Tổng của 3 số tự nhiên liên tiếp bằng 1 101. Tìm số bé nhất trong 3 số đó.
-
-### Bài 4. (4 điểm) Tính nhanh tổng dãy số cách đều
-
-Tính tổng mỗi dãy.
-
-a) 3 + 6 + 9 + … + 60
-b) 1 + 2 + 3 + … + 50
-c) 1 + 6 + 11 + … + 46
-d) 2 + 4 + 6 + … + 200
-e) 3 + 6 + 9 + … + 75
-f) 2 + 4 + 6 + … + 50
-
-### Bài 5. (4 điểm) Đơn vị đo thể tích và dung tích
+### Bài 2. (4 điểm) Đơn vị đo thể tích và dung tích
 
 Điền số thích hợp.
 
-a) 68 dm³ = … lít
-b) 3 lít = … ml
-c) 33 000 cm³ = … dm³
-d) 32 m³ = … dm³
-e) 31 dm³ = … lít
-f) 3 000 cm³ = … dm³
-g) 35 lít = … ml
+a) 4 m³ = … dm³
+b) 9 lít = … ml
+c) 14 000 cm³ = … dm³
+d) 9 dm³ = … lít
+e) 73 m³ = … dm³
+f) 59 dm³ = … lít
+
+### Bài 3. (4 điểm) Tính thời điểm đến, thời gian đi
+
+Ghi kết quả theo giờ và phút.
+
+a) Một chuyến tàu khởi hành lúc 11 giờ 10 phút và đi hết 6 giờ 22 phút. Tàu đến nơi lúc mấy giờ?
+b) Một chuyến tàu khởi hành lúc 14 giờ 25 phút và đi hết 2 giờ 25 phút. Tàu đến nơi lúc mấy giờ?
+c) Một chuyến tàu khởi hành lúc 5 giờ 30 phút và đi hết 3 giờ 18 phút. Tàu đến nơi lúc mấy giờ?
+d) Một chuyến tàu khởi hành lúc 10 giờ 20 phút và đi hết 4 giờ 59 phút. Tàu đến nơi lúc mấy giờ?
+e) Một chuyến tàu khởi hành lúc 11 giờ 15 phút và đi hết 5 giờ 40 phút. Tàu đến nơi lúc mấy giờ?
+
+### Bài 4. (4 điểm) Tính nhanh với phân số
+
+Tính bằng cách thuận tiện nhất.
+
+a) 3 phần 8 + 9 phần 16 + 1 phần 16
+b) 2 phần 3 + 1 phần 4 + 1 phần 12
+c) 7 phần 19 + 11 phần 19 + 1 phần 19
+d) 1 phần 7 + 11 phần 14 + 1 phần 14
+e) 8 phần 13 + 4 phần 13 + 1 phần 13
+
+### Bài 5. (4 điểm) Tính nhanh tổng dãy số cách đều
+
+Tính tổng mỗi dãy.
+
+a) 2 + 5 + 8 + … + 59
+b) 1 + 2 + 3 + … + 100
+c) 1 + 3 + 5 + … + 19
+d) 1 + 6 + 11 + … + 121
+e) 2 + 5 + 8 + … + 149
+f) 5 + 10 + 15 + … + 125
 
 ---
 
 ## PHẦN III — ÔN THEO MA TRẬN ĐỀ · Mức M3 — Vận dụng · 20 phút · 25 điểm
 
-### Bài 1. (5 điểm) Bài toán về tuổi
+### Bài 1. (5 điểm) Lập số có ba chữ số khác nhau
 
-Chú ý điều gì thay đổi và điều gì không đổi theo thời gian.
+Cho ba chữ số **0, 3, 8**. Lập các số có ba chữ số khác nhau từ ba chữ số này.
 
-a) Hiện nay bố 40 tuổi, con 8 tuổi. Cách đây 7 năm, bố hơn con bao nhiêu tuổi?
-b) Tuổi bố gấp 3 lần tuổi con. Tổng số tuổi của hai bố con là 52 tuổi. Tính tuổi mỗi người.
-c) Hiện nay bố 40 tuổi, con 8 tuổi. Sau 6 năm nữa, tổng số tuổi hai bố con là bao nhiêu?
-d) Hiện nay bố 39 tuổi, con 13 tuổi. Cách đây 8 năm, bố hơn con bao nhiêu tuổi?
+a) Viết tất cả các số lập được (theo thứ tự từ bé đến lớn).
+b) Lập được tất cả bao nhiêu số?
+c) Số lớn nhất lập được là số nào?
+d) Số bé nhất lập được là số nào?
+e) Trong các số đó có bao nhiêu số chẵn?
+f) Có bao nhiêu số chia hết cho 5?
+g) Tổng của số lớn nhất và số bé nhất bằng bao nhiêu?
 
-### Bài 2. (5 điểm) Chia theo tỉ lệ ba phần và bài toán trộn
+### Bài 2. (5 điểm) Hình hộp chữ nhật và hình lập phương
 
-Vẽ sơ đồ ba đoạn thẳng cho bài chia tỉ lệ.
+Ghi rõ đơn vị: cm² cho diện tích, cm³ cho thể tích.
 
-a) Trộn 4 kg gạo giá 20 000 đồng một ki-lô-gam với 5 kg gạo giá 40 000 đồng một ki-lô-gam. Hỏi tổng số tiền là bao nhiêu?
-b) Ba tổ trồng được 56 cây. Số cây tổ Một, tổ Hai, tổ Ba tỉ lệ với 1, 1, 5. Mỗi tổ trồng bao nhiêu cây?
-c) Ba tổ trồng được 168 cây. Số cây tổ Một, tổ Hai, tổ Ba tỉ lệ với 3, 2, 3. Mỗi tổ trồng bao nhiêu cây?
-d) Trộn 3 kg gạo giá 20 000 đồng một ki-lô-gam với 2 kg gạo giá 40 000 đồng một ki-lô-gam. Hỏi tổng số tiền là bao nhiêu?
+a) Hình lập phương có cạnh 14 cm. Tính thể tích và diện tích toàn phần.
+b) Hình hộp chữ nhật có đáy 11 cm × 16 cm, chiều cao 14 cm. Tính diện tích xung quanh.
+c) Hình hộp chữ nhật có ba kích thước 14 cm, 16 cm, 2 cm. Tính thể tích.
+d) Hình hộp chữ nhật có đáy 5 cm × 2 cm, chiều cao 15 cm. Tính diện tích toàn phần.
+e) Hình hộp chữ nhật có ba kích thước 16 cm, 20 cm, 6 cm. Tính thể tích.
 
-### Bài 3. (5 điểm) Chữ số tận cùng của tổng, hiệu, tích
+### Bài 3. (5 điểm) Đếm số cặp — bắt tay, trận đấu, đường thẳng
+
+Ba tình huống, cùng một cách đếm.
+
+a) Một giải đấu có 7 đội, hai đội bất kì đấu với nhau đúng một trận. Hỏi có tất cả bao nhiêu trận?
+b) Có 5 người, mỗi người bắt tay với tất cả những người còn lại đúng một lần. Hỏi có tất cả bao nhiêu cái bắt tay?
+c) Cho 16 điểm, không có ba điểm nào thẳng hàng. Qua hai điểm bất kì kẻ một đường thẳng. Hỏi kẻ được bao nhiêu đường thẳng?
+d) Một giải đấu có 14 đội, hai đội bất kì đấu với nhau đúng một trận. Hỏi có tất cả bao nhiêu trận?
+e) Có 12 người, mỗi người bắt tay với tất cả những người còn lại đúng một lần. Hỏi có tất cả bao nhiêu cái bắt tay?
+
+### Bài 4. (5 điểm) Tổng của các số tự nhiên liên tiếp
+
+Với mỗi ý, tìm số theo yêu cầu.
+
+a) Tổng của 9 số tự nhiên liên tiếp bằng 333. Tìm số bé nhất trong 9 số đó.
+b) Tổng của 5 số tự nhiên liên tiếp bằng 2 290. Tìm số bé nhất trong 5 số đó.
+c) Tổng của 3 số tự nhiên liên tiếp bằng 735. Tìm số bé nhất trong 3 số đó.
+d) Tổng của 3 số tự nhiên liên tiếp bằng 1 116. Tìm số bé nhất trong 3 số đó.
+e) Tổng của 5 số tự nhiên liên tiếp bằng 1 830. Tìm số bé nhất trong 5 số đó.
+
+### Bài 5. (5 điểm) Chữ số tận cùng của tổng, hiệu, tích
 
 Không tính hết phép tính, chỉ tìm chữ số tận cùng.
 
-a) Tổng 1 721 + 1 020 có chữ số tận cùng là chữ số nào?
-b) Tích 6 641 × 5 297 có chữ số tận cùng là chữ số nào?
-c) Hiệu 5 448 − 4 526 có chữ số tận cùng là chữ số nào?
-d) Tổng 7 909 + 585 có chữ số tận cùng là chữ số nào?
-
-### Bài 4. (5 điểm) Tìm phân số của một số qua hai bước
-
-Đọc kĩ “của số nào” trước khi tính.
-
-a) Một cửa hàng có 30 kg gạo. Ngày đầu bán 1 phần 2 số gạo, ngày thứ hai bán 1 phần 5 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
-b) Một cửa hàng có 540 kg gạo. Ngày đầu bán 1 phần 3 số gạo, ngày thứ hai bán 1 phần 5 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
-c) Một cửa hàng có 210 kg gạo. Ngày đầu bán 1 phần 3 số gạo, ngày thứ hai bán 1 phần 5 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
-d) Một cửa hàng có 225 kg gạo. Ngày đầu bán 1 phần 5 số gạo, ngày thứ hai bán 1 phần 5 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
-
-### Bài 5. (5 điểm) Tỉ số phần trăm trong tình huống thực tế
-
-Ghi rõ đại lượng nào ứng với 100%.
-
-a) Lớp 3B có 50 học sinh, trong đó có 37 học sinh giỏi. Hỏi số học sinh giỏi chiếm bao nhiêu phần trăm số học sinh cả lớp?
-b) Lớp 3A có 20 học sinh, trong đó có 15 học sinh giỏi. Hỏi số học sinh giỏi chiếm bao nhiêu phần trăm số học sinh cả lớp?
-c) Lớp 5B có 40 học sinh, trong đó có 30 học sinh giỏi. Hỏi số học sinh giỏi chiếm bao nhiêu phần trăm số học sinh cả lớp?
-d) Lớp 5C có 50 học sinh, số học sinh giỏi chiếm 80%. Hỏi lớp đó có bao nhiêu học sinh giỏi?
+a) Hiệu 8 037 − 7 636 có chữ số tận cùng là chữ số nào?
+b) Tích 1 741 × 955 có chữ số tận cùng là chữ số nào?
+c) Tổng 7 574 + 7 414 có chữ số tận cùng là chữ số nào?
+d) Tổng 4 024 + 615 có chữ số tận cùng là chữ số nào?
+e) Tích 6 479 × 2 199 có chữ số tận cùng là chữ số nào?
 
 ---
 
 ## PHẦN IV — BÀI PHÂN HOÁ · Mức M4 — Vận dụng cao · 20 phút · 25 điểm
 
-### Bài 1. (5 điểm) Tổng, trung bình cộng của dãy cách đều
+### Bài 1. (5 điểm) Cân đĩa và số lần cân ít nhất
 
-Một dãy cách đều có 10 số hạng, khoảng cách 5 đơn vị, số hạng cuối là 89.
+Xét trường hợp xấu nhất, không xét trường hợp may mắn.
+
+a) Có 3 gói kẹo giống hệt nhau, trong đó đúng một gói nhẹ hơn. Dùng cân đĩa không có quả cân, cần cân ít nhất mấy lần để tìm ra gói nhẹ?
+b) Một lần cân bằng cân đĩa cho mấy kết quả khác nhau?
+c) Vì thế mỗi lần cân nên chia số gói thành mấy phần?
+d) Sau lần cân thứ nhất, số gói còn phải xét nhiều nhất là bao nhiêu?
+e) Biết Sơn nặng hơn Khánh, Khánh nặng hơn Tuấn. Ai nhẹ nhất?
+f) Với ba bạn ấy, cần cân ít nhất mấy lần để xếp thứ tự từ nhẹ đến nặng?
+
+### Bài 2. (5 điểm) Bài toán đại lượng nhiều bước
+
+Trình bày lời giải có câu trả lời.
+
+a) Một cửa hàng có 5 thùng dầu, mỗi thùng 25 lít. Cửa hàng đã bán 3 thùng. Hỏi cửa hàng còn lại bao nhiêu lít dầu?
+b) Một cửa hàng có 9 thùng dầu, mỗi thùng 24 lít. Cửa hàng đã bán 4 thùng. Hỏi cửa hàng còn lại bao nhiêu lít dầu?
+c) Một cửa hàng có 17 thùng dầu, mỗi thùng 24 lít. Cửa hàng đã bán 14 thùng. Hỏi cửa hàng còn lại bao nhiêu lít dầu?
+d) Một cửa hàng có 4 thùng nước, mỗi thùng 20 lít. Cửa hàng đã bán 2 thùng. Hỏi cửa hàng còn lại bao nhiêu lít nước?
+e) Một cửa hàng có 20 thùng sữa, mỗi thùng 25 lít. Cửa hàng đã bán 13 thùng. Hỏi cửa hàng còn lại bao nhiêu lít sữa?
+f) Một cửa hàng có 14 thùng nước, mỗi thùng 12 lít. Cửa hàng đã bán 10 thùng. Hỏi cửa hàng còn lại bao nhiêu lít nước?
+
+### Bài 3. (5 điểm) Quãng đường – vận tốc – thời gian
+
+Áp dụng đúng công thức cho từng câu.
+
+a) Một người đi 180 km hết 6 giờ. Tính vận tốc.
+b) Một người đi với vận tốc 50 km/giờ trong 6 giờ. Tính quãng đường đi được.
+c) Một người đi quãng đường 120 km với vận tốc 60 km/giờ. Tính thời gian đi.
+d) Một người đi với vận tốc 20 km/giờ trong 3 giờ. Tính quãng đường đi được.
+
+### Bài 4. (5 điểm) Tổng, trung bình cộng của dãy cách đều
+
+Một dãy cách đều có 30 số hạng, khoảng cách 3 đơn vị, số hạng cuối là 106.
 
 a) Số hạng đầu của dãy là số nào?
 b) Số hạng cuối của dãy là số nào?
@@ -226,47 +264,16 @@ d) Trung bình cộng của dãy bằng bao nhiêu?
 e) Tổng của số hạng đầu và số hạng cuối bằng bao nhiêu?
 f) Tổng của số hạng thứ hai và số hạng áp chót bằng bao nhiêu?
 
-### Bài 2. (5 điểm) Quãng đường – vận tốc – thời gian
-
-Áp dụng đúng công thức cho từng câu.
-
-a) Một người đi quãng đường 20 km với vận tốc 4 km/giờ. Tính thời gian đi.
-b) Một người đi 16 km hết 4 giờ. Tính vận tốc.
-c) Một người đi với vận tốc 45 km/giờ trong 4 giờ. Tính quãng đường đi được.
-d) Một người đi với vận tốc 40 km/giờ trong 4 giờ. Tính quãng đường đi được.
-e) Một người đi 24 km hết 6 giờ. Tính vận tốc.
-f) Một người đi quãng đường 240 km với vận tốc 60 km/giờ. Tính thời gian đi.
-
-### Bài 3. (5 điểm) Bài toán đại lượng nhiều bước
-
-Trình bày lời giải có câu trả lời.
-
-a) Một cửa hàng có 4 thùng dầu, mỗi thùng 20 lít. Cửa hàng đã bán 3 thùng. Hỏi cửa hàng còn lại bao nhiêu lít dầu?
-b) Một cửa hàng có 15 thùng dầu, mỗi thùng 24 lít. Cửa hàng đã bán 11 thùng. Hỏi cửa hàng còn lại bao nhiêu lít dầu?
-c) Một cửa hàng có 12 thùng nước mắm, mỗi thùng 25 lít. Cửa hàng đã bán 5 thùng. Hỏi cửa hàng còn lại bao nhiêu lít nước mắm?
-d) Một cửa hàng có 12 thùng nước mắm, mỗi thùng 15 lít. Cửa hàng đã bán 9 thùng. Hỏi cửa hàng còn lại bao nhiêu lít nước mắm?
-
-### Bài 4. (5 điểm) Cân đĩa và số lần cân ít nhất
-
-Xét trường hợp xấu nhất, không xét trường hợp may mắn.
-
-a) Có 8 gói kẹo giống hệt nhau, trong đó đúng một gói nhẹ hơn. Dùng cân đĩa không có quả cân, cần cân ít nhất mấy lần để tìm ra gói nhẹ?
-b) Một lần cân bằng cân đĩa cho mấy kết quả khác nhau?
-c) Vì thế mỗi lần cân nên chia số gói thành mấy phần?
-d) Sau lần cân thứ nhất, số gói còn phải xét nhiều nhất là bao nhiêu?
-e) Biết Sơn nặng hơn Nam, Nam nặng hơn Vy. Ai nhẹ nhất?
-f) Với ba bạn ấy, cần cân ít nhất mấy lần để xếp thứ tự từ nhẹ đến nặng?
-
 ### Bài 5. (5 điểm) Thể tích bể nước trong thực tế
 
 Ghi rõ đơn vị: mét khối hay lít.
 
-a) Bể hình hộp chữ nhật đáy 5 m × 6 m đang chứa nước cao 4 m. Hỏi trong bể có bao nhiêu mét khối nước?
-b) Bể đáy 3 m × 7 m, cao 4 m, đang có nước cao 1 m. Phải đổ thêm bao nhiêu mét khối nước nữa thì đầy bể?
-c) Một bể nước dạng hình hộp chữ nhật có chiều dài 7 m, chiều rộng 4 m, chiều cao 2 m. Hỏi bể chứa đầy được bao nhiêu lít nước?
-d) Bể hình hộp chữ nhật đáy 6 m × 6 m đang chứa nước cao 3 m. Hỏi trong bể có bao nhiêu mét khối nước?
-e) Một bể nước dạng hình hộp chữ nhật có chiều dài 4 m, chiều rộng 8 m, chiều cao 2 m. Hỏi bể chứa đầy được bao nhiêu lít nước?
-f) Bể đáy 10 m × 3 m, cao 2 m, đang có nước cao 1 m. Phải đổ thêm bao nhiêu mét khối nước nữa thì đầy bể?
+a) Bể đáy 6 m × 8 m, cao 6 m, đang có nước cao 5 m. Phải đổ thêm bao nhiêu mét khối nước nữa thì đầy bể?
+b) Bể hình hộp chữ nhật đáy 8 m × 5 m đang chứa nước cao 1 m. Hỏi trong bể có bao nhiêu mét khối nước?
+c) Một bể nước dạng hình hộp chữ nhật có chiều dài 5 m, chiều rộng 6 m, chiều cao 4 m. Hỏi bể chứa đầy được bao nhiêu lít nước?
+d) Một bể nước dạng hình hộp chữ nhật có chiều dài 9 m, chiều rộng 8 m, chiều cao 2 m. Hỏi bể chứa đầy được bao nhiêu lít nước?
+e) Bể hình hộp chữ nhật đáy 7 m × 2 m đang chứa nước cao 3 m. Hỏi trong bể có bao nhiêu mét khối nước?
+f) Bể đáy 3 m × 4 m, cao 6 m, đang có nước cao 3 m. Phải đổ thêm bao nhiêu mét khối nước nữa thì đầy bể?
 
 ---
 
@@ -374,95 +381,95 @@ f) Cột 6 — Kết quả?
 **Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết riêng bảng đơn vị diện tích, ghi rõ “× 100” giữa hai bậc liền nhau.
 
 ### Bài II.1
-**Đáp số:** a) 15 giờ 8 phút · b) 10 giờ 47 phút · c) 21 giờ 57 phút · d) 19 giờ 34 phút · e) 16 giờ 23 phút · f) 16 giờ 48 phút
-**Hướng giải:** Đổi cả giờ khởi hành lẫn thời gian đi về **phút**, cộng lại, rồi đổi kết quả ngược lại thành giờ và phút. Cách này tránh được lỗi nhớ khi phần phút vượt 60.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Đổi hết về phút rồi mới cộng — an toàn hơn cộng trực tiếp.
-**Lỗi thường gặp:** Cộng phần phút thành hơn 60 mà quên đổi thành giờ. Phòng: Kiểm tra phần phút của đáp số phải bé hơn 60.
-
-### Bài II.2
-**Đáp số:** a) 3 tạ · b) 9 tạ 25 kg · c) 6 tạ 25 kg · d) 2 tạ · e) 3 tạ 25 kg
+**Đáp số:** a) 2 tạ 80 kg · b) 10 tạ 40 kg · c) 4 tạ 80 kg · d) 5 tạ 50 kg · e) 3 tạ · f) 9 tạ 25 kg
 **Hướng giải:** Tính tổng khối lượng theo ki-lô-gam trước, sau đó mới đổi sang đơn vị mà đề hỏi. Đừng đổi đơn vị ngay từ đầu vì dễ nhầm.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Câu hỏi đòi đơn vị nào thì bước **cuối cùng** mới đổi sang đơn vị đó.
 **Lỗi thường gặp:** Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. Phòng: Khoanh tròn đơn vị trong câu hỏi trước khi đặt bút.
 
-### Bài II.3
-**Đáp số:** a) 303 · b) 404 · c) 221 · d) 366
-**Hướng giải:** Với một số **lẻ** các số tự nhiên liên tiếp, số ở giữa chính là trung bình cộng: số giữa = tổng : số lượng. Số bé nhất bằng số giữa trừ đi một nửa số lượng còn lại.
-**Nhãn tư duy:** TD3, TD4. Điểm chốt: Với số lượng lẻ thì **số giữa = tổng : số lượng** — đó là chìa khoá.
-**Lỗi thường gặp:** Lấy tổng chia cho số lượng rồi nhận luôn kết quả là số bé nhất. Phòng: Vẽ dãy số ra, đánh dấu vị trí số giữa trước khi lùi về số đầu.
-
-### Bài II.4
-**Đáp số:** a) 630 · b) 1 275 · c) 235 · d) 10 100 · e) 975 · f) 650
-**Hướng giải:** Đếm số số hạng: (số cuối − số đầu) : khoảng cách + 1. Tổng bằng (số đầu + số cuối) × số số hạng : 2. Cách hiểu: ghép số đầu với số cuối, số thứ hai với số áp chót… mỗi cặp có tổng bằng nhau.
-**Nhãn tư duy:** TD4, TD5. Điểm chốt: Phải đếm **số số hạng** trước; đây là chỗ sai nhiều nhất.
-**Lỗi thường gặp:** Lấy số cuối chia khoảng cách làm số số hạng, quên cộng 1. Phòng: Viết ra ba số đầu và ba số cuối để kiểm tra khoảng cách rồi mới đếm.
-
-### Bài II.5
-**Đáp số:** a) 68 · b) 3 000 · c) 33 · d) 32 000 · e) 31 · f) 3 · g) 35 000
+### Bài II.2
+**Đáp số:** a) 4 000 · b) 9 000 · c) 14 · d) 9 · e) 73 000 · f) 59
 **Hướng giải:** Hai đơn vị thể tích liền kề hơn kém nhau **1 000 lần**. 1 dm³ = 1 lít; 1 lít = 1 000 ml; 1 m³ = 1 000 dm³ = 1 000 lít.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Thể tích nhảy **1 000 lần** mỗi bậc (độ dài 10, diện tích 100, thể tích 1 000).
 **Lỗi thường gặp:** Đổi như đơn vị diện tích, chỉ nhân 100. Phòng: Nhớ dãy 10 – 100 – 1 000 ứng với độ dài – diện tích – thể tích.
 
+### Bài II.3
+**Đáp số:** a) 17 giờ 32 phút · b) 16 giờ 50 phút · c) 8 giờ 48 phút · d) 15 giờ 19 phút · e) 16 giờ 55 phút
+**Hướng giải:** Đổi cả giờ khởi hành lẫn thời gian đi về **phút**, cộng lại, rồi đổi kết quả ngược lại thành giờ và phút. Cách này tránh được lỗi nhớ khi phần phút vượt 60.
+**Nhãn tư duy:** TD3, TD2. Điểm chốt: Đổi hết về phút rồi mới cộng — an toàn hơn cộng trực tiếp.
+**Lỗi thường gặp:** Cộng phần phút thành hơn 60 mà quên đổi thành giờ. Phòng: Kiểm tra phần phút của đáp số phải bé hơn 60.
+
+### Bài II.4
+**Đáp số:** a) 1 · b) 1 · c) 1 · d) 1 · e) 1
+**Hướng giải:** Quan sát trước khi tính: các phân số cùng mẫu số cộng lại có thể bằng đúng 1; một phân số nhân với phân số đảo ngược của nó bằng 1. Nhận ra được thì không phải quy đồng.
+**Nhãn tư duy:** TD5, TD3. Điểm chốt: Nhìn xem **tổng các tử số** có bằng mẫu số chung không.
+**Lỗi thường gặp:** Quy đồng ngay lập tức mà không quan sát, làm dài dòng. Phòng: Cộng nhẩm các tử số trước rồi so với mẫu số.
+
+### Bài II.5
+**Đáp số:** a) 610 · b) 5 050 · c) 100 · d) 1 525 · e) 3 775 · f) 1 625
+**Hướng giải:** Đếm số số hạng: (số cuối − số đầu) : khoảng cách + 1. Tổng bằng (số đầu + số cuối) × số số hạng : 2. Cách hiểu: ghép số đầu với số cuối, số thứ hai với số áp chót… mỗi cặp có tổng bằng nhau.
+**Nhãn tư duy:** TD4, TD5. Điểm chốt: Phải đếm **số số hạng** trước; đây là chỗ sai nhiều nhất.
+**Lỗi thường gặp:** Lấy số cuối chia khoảng cách làm số số hạng, quên cộng 1. Phòng: Viết ra ba số đầu và ba số cuối để kiểm tra khoảng cách rồi mới đếm.
+
 ### Bài III.1
-**Đáp số:** a) 32 tuổi · b) bố 39 tuổi, con 13 tuổi · c) 60 tuổi · d) 26 tuổi
-**Hướng giải:** **Hiệu số tuổi của hai người không bao giờ thay đổi.** Còn tổng số tuổi thì mỗi năm tăng thêm đúng bằng số người. Tỉ số tuổi thì thay đổi theo từng năm.
-**Nhãn tư duy:** TD2, TD6. Điểm chốt: Hiệu tuổi là đại lượng **bất biến** — chìa khoá của mọi bài toán tuổi.
-**Lỗi thường gặp:** Cộng thêm số năm vào cả hiệu số tuổi. Phòng: Kẻ bảng ba dòng: trước kia – hiện nay – sau này, ghi rõ tuổi từng người.
+**Đáp số:** a) 308 · 380 · 803 · 830 · b) 4 · c) 830 · d) 308 · e) 3 · f) 2 · g) 1 138
+**Hướng giải:** Lập số theo thứ tự: chọn chữ số hàng trăm trước (khác 0), rồi hàng chục, rồi hàng đơn vị, mỗi chữ số dùng đúng một lần. Viết có hệ thống theo nhóm cùng chữ số hàng trăm để không bỏ sót và không trùng lặp.
+**Nhãn tư duy:** TD4, TD6. Điểm chốt: Chữ số **0 không được đứng ở hàng trăm**, nên nếu bộ có chữ số 0 thì số lượng số lập được ít hơn.
+**Lỗi thường gặp:** Viết lộn xộn nên vừa sót vừa trùng; hoặc nhận cả số bắt đầu bằng 0. Phòng: Liệt kê theo nhóm: cố định hàng trăm rồi mới hoán vị hai chữ số còn lại.
 
 ### Bài III.2
-**Đáp số:** a) 280 000 đồng · b) 8 · 8 · 40 cây · c) 63 · 42 · 63 cây · d) 140 000 đồng
-**Hướng giải:** Chia một tổng theo tỉ lệ ba số: cộng ba số phần lại, chia tổng cho tổng số phần được giá trị một phần, rồi nhân ra từng đại lượng. Bài trộn thì tính riêng từng loại rồi cộng.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Chia cho **tổng số phần**, không chia cho số đại lượng.
-**Lỗi thường gặp:** Chia tổng cho 3 vì thấy có ba tổ. Phòng: Đếm số phần trên sơ đồ trước khi chia.
+**Đáp số:** a) thể tích 2 744 cm³, diện tích toàn phần 1 176 cm² · b) 756 cm² · c) 448 cm³ · d) 230 cm² · e) 1 920 cm³
+**Hướng giải:** Thể tích hình hộp chữ nhật = dài × rộng × cao. Diện tích xung quanh = chu vi đáy × chiều cao. Diện tích toàn phần = diện tích xung quanh + 2 lần diện tích đáy. Hình lập phương là hình hộp có ba kích thước bằng nhau.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Diện tích **xung quanh** không tính hai mặt đáy; **toàn phần** thì có.
+**Lỗi thường gặp:** Cộng thiếu một mặt đáy khi tính diện tích toàn phần. Phòng: Đếm đủ 6 mặt của hình hộp trước khi cộng.
 
 ### Bài III.3
-**Đáp số:** a) 1 · b) 7 · c) 2 · d) 4
+**Đáp số:** a) 21 trận · b) 10 cái · c) 120 đường thẳng · d) 91 trận · e) 66 cái
+**Hướng giải:** Mỗi người bắt tay với n − 1 người còn lại, nên tổng số lượt bắt tay là n × (n − 1). Nhưng mỗi cái bắt tay được đếm **hai lần** (một lần từ mỗi phía), nên số bắt tay thật sự là n × (n − 1) : 2.
+**Nhãn tư duy:** TD4, TD6. Điểm chốt: Chia cho 2 vì mỗi cặp được đếm **hai lần**.
+**Lỗi thường gặp:** Quên chia 2, đáp số gấp đôi. Phòng: Thử với 3 người: phải ra 3 cái bắt tay, không phải 6.
+
+### Bài III.4
+**Đáp số:** a) 33 · b) 456 · c) 244 · d) 371 · e) 364
+**Hướng giải:** Với một số **lẻ** các số tự nhiên liên tiếp, số ở giữa chính là trung bình cộng: số giữa = tổng : số lượng. Số bé nhất bằng số giữa trừ đi một nửa số lượng còn lại.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Với số lượng lẻ thì **số giữa = tổng : số lượng** — đó là chìa khoá.
+**Lỗi thường gặp:** Lấy tổng chia cho số lượng rồi nhận luôn kết quả là số bé nhất. Phòng: Vẽ dãy số ra, đánh dấu vị trí số giữa trước khi lùi về số đầu.
+
+### Bài III.5
+**Đáp số:** a) 1 · b) 5 · c) 8 · d) 9 · e) 1
 **Hướng giải:** Chữ số tận cùng của tổng, hiệu, tích chỉ phụ thuộc vào chữ số tận cùng của các số tham gia. Chỉ cần lấy các chữ số tận cùng ra tính với nhau rồi lấy chữ số tận cùng của kết quả.
 **Nhãn tư duy:** TD5, TD2. Điểm chốt: Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu của số.
 **Lỗi thường gặp:** Tính trọn cả phép tính, vừa lâu vừa dễ sai. Phòng: Che phần đầu của hai số, chỉ để lộ chữ số cuối cùng.
 
-### Bài III.4
-**Đáp số:** a) 12 kg · b) 288 kg · c) 112 kg · d) 144 kg
-**Hướng giải:** Bước 1: tính số gạo bán ngày đầu bằng cách lấy tổng nhân với phân số. Bước 2: tính số gạo **còn lại** sau ngày đầu. Bước 3: phân số của ngày thứ hai tính trên **số còn lại**, không phải trên tổng ban đầu.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Cụm “số gạo **còn lại**” đổi hẳn số bị nhân ở bước hai.
-**Lỗi thường gặp:** Lấy cả hai phân số nhân với tổng ban đầu. Phòng: Sau mỗi bước, viết rõ “còn lại … kg” rồi mới sang bước sau.
-
-### Bài III.5
-**Đáp số:** a) 75% · b) 75% · c) 75% · d) 40 học sinh
-**Hướng giải:** Đại lượng đứng sau chữ “của” hoặc “so với” là đại lượng ứng với 100%. Tìm tỉ số phần trăm thì lấy phần chia cho toàn bộ rồi nhân 100. Tìm giá trị của phần thì lấy toàn bộ chia 100 rồi nhân số phần trăm.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Xác định **đại lượng ứng với 100%** trước mọi phép tính.
-**Lỗi thường gặp:** Lấy số học sinh giỏi làm mẫu số khi tính tỉ số phần trăm. Phòng: Viết rõ một dòng: “Cả lớp = 100%” trước khi tính.
-
 ### Bài IV.1
-**Đáp số:** a) 44 · b) 89 · c) 665 · d) 66,5 · e) 133 · f) 133
-**Hướng giải:** Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
-**Lỗi thường gặp:** Tính tổng rồi chia — dài hơn và dễ sai khi số hạng nhiều. Phòng: Nhớ tính chất trung bình cộng để kiểm tra chéo kết quả tổng.
-**Gợi ý 3 tầng:** (1) Từ số hạng cuối lùi về số hạng đầu qua mấy khoảng? — (2) Trung bình cộng bằng nửa tổng của hai số hạng ở hai đầu. — (3) Tổng bằng trung bình cộng nhân số số hạng.
-
-### Bài IV.2
-**Đáp số:** a) 5 giờ · b) 4 km/giờ · c) 180 km · d) 160 km · e) 4 km/giờ · f) 4 giờ
-**Hướng giải:** BẪY — Đơn vị thời gian. s = v × t; v = s : t; t = s : v. Đơn vị phải khớp: vận tốc km/giờ đi với quãng đường km và thời gian giờ.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng còn lại.
-**Lỗi thường gặp:** Vận tốc tính bằng km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
-**Gợi ý 3 tầng:** (1) Đề cho hai đại lượng nào và hỏi đại lượng nào? — (2) Viết công thức tương ứng. — (3) Kiểm tra đơn vị có khớp nhau không.
-
-### Bài IV.3
-**Đáp số:** a) 20 lít · b) 96 lít · c) 175 lít · d) 45 lít
-**Hướng giải:** Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
-**Nhãn tư duy:** TD3, TD5. Điểm chốt: Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
-**Lỗi thường gặp:** Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. Phòng: Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng.
-**Gợi ý 3 tầng:** (1) Còn lại bao nhiêu thùng? — (2) Mỗi thùng bao nhiêu lít? — (3) Nhân hai kết quả đó.
-
-### Bài IV.4
-**Đáp số:** a) 2 lần · b) 3 kết quả: nghiêng trái, nghiêng phải, thăng bằng · c) 3 phần · d) 3 · e) Vy · f) 2 lần
+**Đáp số:** a) 1 lần · b) 3 kết quả: nghiêng trái, nghiêng phải, thăng bằng · c) 3 phần · d) 1 · e) Tuấn · f) 2 lần
 **Hướng giải:** BẪY — Chia ba chứ không chia đôi. Mỗi lần cân bằng cân đĩa cho ba kết quả, nên chia ba chứ không chia đôi. Sau k lần cân phân biệt được nhiều nhất 3 nhân với chính nó k lần vật. Luôn lập luận theo **trường hợp xấu nhất**.
 **Nhãn tư duy:** TD6, TD2. Điểm chốt: Cân đĩa cho **ba** kết quả nên chia ba, không chia đôi.
 **Lỗi thường gặp:** Chia đôi như tìm kiếm thông thường nên cần nhiều lần cân hơn mức cần thiết. Phòng: Nhớ ba kết quả: nghiêng trái, nghiêng phải, thăng bằng.
 **Gợi ý 3 tầng:** (1) Một lần cân cho mấy kết quả? — (2) Vậy nên chia số gói thành mấy phần? — (3) Sau mỗi lần cân còn lại nhiều nhất bao nhiêu gói?
 
+### Bài IV.2
+**Đáp số:** a) 50 lít · b) 120 lít · c) 72 lít · d) 40 lít · e) 175 lít · f) 48 lít
+**Hướng giải:** Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
+**Nhãn tư duy:** TD3, TD5. Điểm chốt: Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
+**Lỗi thường gặp:** Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. Phòng: Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng.
+**Gợi ý 3 tầng:** (1) Còn lại bao nhiêu thùng? — (2) Mỗi thùng bao nhiêu lít? — (3) Nhân hai kết quả đó.
+
+### Bài IV.3
+**Đáp số:** a) 30 km/giờ · b) 300 km · c) 2 giờ · d) 60 km
+**Hướng giải:** BẪY — Đơn vị thời gian. s = v × t; v = s : t; t = s : v. Đơn vị phải khớp: vận tốc km/giờ đi với quãng đường km và thời gian giờ.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng còn lại.
+**Lỗi thường gặp:** Vận tốc tính bằng km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
+**Gợi ý 3 tầng:** (1) Đề cho hai đại lượng nào và hỏi đại lượng nào? — (2) Viết công thức tương ứng. — (3) Kiểm tra đơn vị có khớp nhau không.
+
+### Bài IV.4
+**Đáp số:** a) 19 · b) 106 · c) 1 875 · d) 62,5 · e) 125 · f) 125
+**Hướng giải:** Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
+**Nhãn tư duy:** TD4, TD3. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
+**Lỗi thường gặp:** Tính tổng rồi chia — dài hơn và dễ sai khi số hạng nhiều. Phòng: Nhớ tính chất trung bình cộng để kiểm tra chéo kết quả tổng.
+**Gợi ý 3 tầng:** (1) Từ số hạng cuối lùi về số hạng đầu qua mấy khoảng? — (2) Trung bình cộng bằng nửa tổng của hai số hạng ở hai đầu. — (3) Tổng bằng trung bình cộng nhân số số hạng.
+
 ### Bài IV.5
-**Đáp số:** a) 120 m³ · b) 63 m³ · c) 56 000 lít · d) 108 m³ · e) 64 000 lít · f) 30 m³
+**Đáp số:** a) 48 m³ · b) 40 m³ · c) 120 000 lít · d) 144 000 lít · e) 42 m³ · f) 36 m³
 **Hướng giải:** BẪY — Mực nước, không phải chiều cao bể. Thể tích hình hộp chữ nhật bằng dài × rộng × cao. Khi bể chưa đầy, chiều cao dùng để tính là **mực nước**, không phải chiều cao bể. 1 m³ = 1 000 lít.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Chiều cao trong công thức là **mực nước thực tế**.
 **Lỗi thường gặp:** Lấy chiều cao bể để tính lượng nước đang có. Phòng: Vẽ mặt cắt của bể và tô phần nước trước khi tính.

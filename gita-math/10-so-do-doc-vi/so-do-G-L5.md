@@ -70,9 +70,11 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 | M3 | “Hai … bất kì”, “mỗi người với tất cả những người còn lại” | Đếm số cặp | n × (n − 1) : 2 | Nhớ vài giá trị: 5 người có 10 cặp, 10 người có 45 cặp. | Mỗi cặp bị đếm hai lần |
 | M3 | Cân đĩa không có quả cân, tìm vật khác biệt | Cân đĩa, chia ba | Chia ba phần bằng nhau mỗi lần cân | 3 đồng → 1 lần; 9 đồng → 2 lần; 27 đồng → 3 lần. | Chia ba chứ không chia đôi |
 | M3 | Có cụm “cả hai”, “ít nhất một”, “không … nào” | Nguyên lý bù trừ, sơ đồ Ven | Vẽ Ven, điền miền giữa trước, trừ dần ra | Số thích ít nhất một môn = A + B − cả hai. | Phần chung bị đếm hai lần |
+| M3 | Đề đòi một số thoả **nhiều điều kiện cùng lúc**, số khả năng hữu hạn | Thử chọn | Thu hẹp bằng điều kiện chặt nhất rồi thử từng khả năng còn lại | Tổng hai chữ số cố định thì chỉ có tối đa mười số — liệt kê rất nhanh. | Dừng ở đáp số đầu tiên |
 | M4 | Một quá trình lặp lại nhiều bước, hỏi trạng thái cuối | Bài toán bất biến | Tìm đại lượng không đổi rồi so trạng thái đầu với trạng thái cuối | Thử với n nhỏ (n = 3, 4) để đoán, rồi chứng minh bằng bất biến. | Phải chứng minh, không được thử vài trường hợp |
 | M4 | Bộ chữ số cho trước kèm điều kiện chia hết | Đếm số lập được có điều kiện | Chọn hàng bị ràng buộc trước rồi nhân số cách các hàng còn lại | Số chia hết cho 3 nhận diện qua tổng ba chữ số được chọn — xét theo bộ ba. | Chữ số 0 ở hàng trăm |
 | M4 | Cân đĩa không có quả cân, tìm vật nhẹ hơn | Cân đĩa, tìm vật khác biệt | Chia ba phần mỗi lần cân | 3 gói → 1 lần; 9 gói → 2 lần; 27 gói → 3 lần. | Chia ba chứ không chia đôi |
+| M4 | Đề ghép **người với việc** và cho một loạt câu khẳng định hoặc phủ định | Lập bảng | Kẻ bảng hai chiều, đánh × và ✓, mỗi ✓ kéo theo cả dòng cả cột | Bắt đầu từ người bị loại nhiều khả năng nhất — dòng ấy chốt được sớm nhất. | Đánh dấu đúng mà quên gạch phần còn lại |
 | M5 | Bàn cờ, quân đô-mi-nô, câu hỏi “có thể phủ kín không” | Tô màu, bất biến trên bàn cờ | Tô màu xen kẽ, đếm hai màu, so sánh | Hai ô ở hai góc đối diện của bàn cờ luôn cùng màu. | Phải chứng minh bằng tô màu |
 | M5 | “Chứng tỏ rằng có ít nhất … cùng …” | Đi-rích-lê dạng chứng minh | Đặt tên ngăn kéo và đồ vật, tính ngưỡng | Ngưỡng = số ngăn × (số cần − 1) + 1. | — |
 | M5 | Nhiều câu ngắn, mỗi câu một kỹ thuật khác nhau | Trắc nghiệm đếm nhanh | Nhận dạng kỹ thuật trước, tính sau | Học thuộc bốn công thức: n(n−1):2, a×b, loại×(cần−1)+1, khoảng+1. | Chia 2 và cộng 1 — hai chỗ hay quên nhất |
@@ -100,48 +102,48 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 
 Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: đây là dạng bài gì, và dấu hiệu nào cho biết điều đó.
 
-**Đề 1.** Ba tình huống, cùng một cách đếm. Một giải đấu có 18 đội, hai đội bất kì đấu với nhau đúng một trận. Hỏi có tất cả bao nhiêu trận?
+**Đề 1.** Dùng kĩ thuật tô màu để lập luận. Một bàn cờ vuông 8 × 8 ô. Hỏi có tất cả bao nhiêu ô?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 2.** Đếm số cách chọn. Có 2 chiếc áo và 2 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
+**Đề 2.** Tìm đại lượng không đổi qua mỗi bước. Trên bảng viết các số từ 1 đến 14. Mỗi bước, xoá hai số bất kì và viết thay vào **hiệu** của chúng (số lớn trừ số bé). Sau nhiều bước chỉ còn một số. Số cuối cùng là số chẵn hay số lẻ?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 3.** Ba bạn Yến, Minh, Vy mỗi bạn thích đúng một môn khác nhau trong ba môn Âm nhạc, Mĩ thuật, Tiếng Anh. Biết **Yến thích Âm nhạc** và **Minh không thích Tiếng Anh**. Kẻ bảng ba hàng (tên bạn) và ba cột (môn học). Dữ kiện “Yến thích Âm nhạc” cho phép đánh dấu ✔ vào ô nào?
+**Đề 3.** Dùng phương pháp giả thiết tạm. Trong sân có 33 chiếc xe đạp và xe ba bánh, đếm được tất cả 81 bánh xe. Hỏi mỗi loại có bao nhiêu chiếc?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 4.** Đọc kĩ chữ “và” hay chữ “hoặc”. Trên bàn có 8 quyển sách Toán và 12 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một** quyển sách bất kì?
+**Đề 4.** Chú ý mỗi lần cân cho bao nhiêu kết quả. Có 12 đồng tiền giống hệt nhau, trong đó có đúng một đồng nhẹ hơn. Dùng cân đĩa (không quả cân), cần cân ít nhất mấy lần để tìm ra đồng nhẹ?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 5.** Ba bạn Minh, An, Yến, trong đó đúng một bạn làm vỡ lọ hoa.
-- Minh nói: “Tôi không làm.”
-- An nói: “Yến làm.”
-- Yến nói: “An nói dối.”
-
-Biết rằng trong ba bạn chỉ có đúng **một** bạn nói thật. Câu nói của An và câu nói của Yến có thể cùng đúng được không? Vì sao?
+**Đề 5.** Bắt buộc kẻ bảng ra giấy. Không được suy luận nhẩm ở bài này. Ba bạn Sơn, Lan và Thảo mỗi bạn học một môn năng khiếu khác nhau trong ba môn: bóng đá, cầu lông và bóng rổ. Biết rằng: Sơn không học bóng rổ và cũng không học bóng đá; Lan không học bóng đá. Hỏi mỗi bạn học môn nào?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 6.** Tìm cho ra thứ **không đổi** qua mỗi bước. Trên bảng viết các số từ 1 đến 14. Tổng của chúng bằng bao nhiêu?
+**Đề 6.** Lập bảng thử, mỗi dòng một khả năng. Chỉ ghi đáp số sau khi đã thử hết. Có nhiều tờ tiền loại 2 nghìn đồng và loại 5 nghìn đồng. Hỏi có bao nhiêu cách trả đúng 35 nghìn đồng, nếu được dùng cả hai loại hoặc chỉ một loại?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 7.** Nêu rõ ngăn kéo là gì, đồ vật là gì. Có 31 học sinh sinh trong 10 tháng khác nhau. Chứng tỏ rằng có ít nhất 4 bạn sinh cùng một tháng. Hỏi nếu bớt đi một bạn thì kết luận đó còn đúng không?
+**Đề 7.** Tìm cho ra thứ **không đổi** qua mỗi bước. Trên bảng viết các số từ 1 đến 6. Tổng của chúng bằng bao nhiêu?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 8.** Tìm đại lượng không đổi qua mỗi bước. Trên bảng viết các số từ 1 đến 24. Mỗi bước, xoá hai số bất kì và viết thay vào **hiệu** của chúng (số lớn trừ số bé). Sau nhiều bước chỉ còn một số. Số cuối cùng là số chẵn hay số lẻ?
+**Đề 8.** Xét trường hợp xấu nhất. Trong một hộp có bi thuộc 5 màu (đỏ, xanh, vàng, trắng, tím), mỗi màu có rất nhiều viên. Hỏi phải lấy ra ít nhất bao nhiêu viên (không nhìn) để chắc chắn có 3 viên cùng màu?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 9.** Xét trường hợp xấu nhất, không xét trường hợp may mắn. Có 12 gói kẹo giống hệt nhau, trong đó đúng một gói nhẹ hơn. Dùng cân đĩa không có quả cân, cần cân ít nhất mấy lần để tìm ra gói nhẹ?
+**Đề 9.** Ba bạn Chi, Tuấn, Quân, trong đó đúng một bạn làm vỡ lọ hoa.
+- Chi nói: “Tôi không làm.”
+- Tuấn nói: “Quân làm.”
+- Quân nói: “Tuấn nói dối.”
+
+Biết rằng trong ba bạn chỉ có đúng **một** bạn nói thật. Câu nói của Tuấn và câu nói của Quân có thể cùng đúng được không? Vì sao?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 10.** Cho bốn chữ số **3, 4, 8, 9**. Xét các số có ba chữ số **khác nhau** lập từ bốn chữ số đó. Lập được tất cả bao nhiêu số?
+**Đề 10.** Ba tình huống, cùng một cách đếm. Cho 8 điểm, không có ba điểm nào thẳng hàng. Qua hai điểm bất kì kẻ một đường thẳng. Hỏi kẻ được bao nhiêu đường thẳng?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
@@ -151,16 +153,16 @@ Biết rằng trong ba bạn chỉ có đúng **một** bạn nói thật. Câu 
 
 | # | Dạng bài | Dấu hiệu |
 |:--:|---|---|
-| 1 | Đếm số cặp | “Hai … bất kì”, “mỗi người với tất cả những người còn lại” |
-| 2 | Quy tắc nhân | Chọn một phần tử từ mỗi nhóm để ghép thành một bộ |
-| 3 | Suy luận loại trừ có bảng | Mỗi người ứng với đúng một đối tượng, đề cho các dữ kiện phủ định |
-| 4 | Đếm bằng quy tắc cộng, nhân, bù trừ | Từ khoá “và”, “hoặc”, “cả hai”, “ít nhất một” |
-| 5 | Suy luận nói thật – nói dối | “Chỉ một người nói thật”, các câu nói mâu thuẫn nhau |
-| 6 | Bài toán bất biến | Một quá trình lặp nhiều bước, hỏi trạng thái cuối |
-| 7 | Đi-rích-lê dạng chứng minh | “Chứng tỏ rằng có ít nhất … cùng …” |
-| 8 | Bài toán bất biến | Một quá trình lặp lại nhiều bước, hỏi trạng thái cuối |
-| 9 | Cân đĩa, tìm vật khác biệt | Cân đĩa không có quả cân, tìm vật nhẹ hơn |
-| 10 | Đếm số lập được có điều kiện | Bộ chữ số cho trước kèm điều kiện chia hết |
+| 1 | Tô màu, bất biến trên bàn cờ | Bàn cờ, quân đô-mi-nô, câu hỏi “có thể phủ kín không” |
+| 2 | Bài toán bất biến | Một quá trình lặp lại nhiều bước, hỏi trạng thái cuối |
+| 3 | Giả thiết tạm hai loại | Hai loại đối tượng, biết tổng số và tổng của một đại lượng phụ |
+| 4 | Cân đĩa, chia ba | Cân đĩa không có quả cân, tìm vật khác biệt |
+| 5 | Lập bảng | Đề ghép **người với việc** và cho một loạt câu khẳng định hoặc phủ định |
+| 6 | Thử chọn | Đề hỏi **có bao nhiêu cách**, và số khả năng đếm được |
+| 7 | Bài toán bất biến | Một quá trình lặp nhiều bước, hỏi trạng thái cuối |
+| 8 | Nguyên lí Đi-rích-lê | Cụm “ít nhất … để chắc chắn …” |
+| 9 | Suy luận nói thật – nói dối | “Chỉ một người nói thật”, các câu nói mâu thuẫn nhau |
+| 10 | Đếm số cặp | “Hai … bất kì”, “mỗi người với tất cả những người còn lại” |
 
 ---
 

@@ -54,11 +54,11 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần D**
 
-- **Bài D.1** — a) 450 000 đồng · b) 99 · 33 · 99 cây · c) 258 000 đồng · d) 117 · 195 · 195 cây
-- **Bài D.2** — a) 73 000 · b) 13 · c) 75 000 · d) 63 · e) 81 · f) 62 000
-- **Bài D.3** — a) 18 tạ · b) 2 tạ 40 kg · c) 8 tạ 40 kg · d) 15 tạ 60 kg · e) 15 tạ · f) 4 tạ
-- **Bài D.4** — a) 9 giờ 56 phút · b) 15 giờ 27 phút · c) 16 giờ 37 phút · d) 10 giờ 44 phút
-- **Bài D.5** — a) 60 · b) 101 · c) 101 · d) 51 · e) 40 · f) 60
+- **Bài D.1** — a) 20 giờ 37 phút · b) 19 giờ 25 phút · c) 15 giờ 7 phút · d) 12 giờ 2 phút · e) 18 giờ 17 phút
+- **Bài D.2** — a) 68 · b) 67 · c) 72 000 · d) 38 000 · e) 7 000
+- **Bài D.3** — a) 36, 72 · b) 16, 52 · c) 78, 96 · d) 24, 42, 60
+- **Bài D.4** — a) 8 tạ 40 kg · b) 15 tạ 60 kg · c) 15 tạ · d) 4 tạ · e) 4 tạ 75 kg
+- **Bài D.5** — a) 4 em · b) 3 em · c) 4 em · d) 1 em · e) 0 em
 
 **Phần E**
 
@@ -378,83 +378,13 @@ Kết quả: **300 nghìn đồng**.
 
 *Điểm chốt:* Hai đại lượng **cùng tăng, cùng giảm** thì tỉ lệ thuận.
 
-### Bài D.1 — Chia theo tỉ lệ ba phần và bài toán trộn
-
-> **BẪY — Chia cho tổng số phần, không phải cho số đại lượng.**
-
-**Các bước giải**
-
-Xét ý a: Trộn 10 kg gạo giá 20 000 đồng một ki-lô-gam với 10 kg gạo giá 25 000 đồng một ki-lô-gam. Hỏi tổng số tiền là bao nhiêu?
-
-Đọc vị: đây là dạng **Chia tỉ lệ nhiều phần; bài toán trộn**; dấu hiệu là “Tỉ lệ với … , … , …” hoặc “trộn … với …”.
-
-Kiến thức phải dùng: Tỉ số, chia theo tỉ lệ, nhân với đơn giá.
-
-Cách làm: Tổng số phần → giá trị một phần → nhân.
-
-Lối tắt: Tổng luôn chia hết cho tổng số phần; không chia hết là đọc sai tỉ lệ.
-
-Kết quả: **450 000 đồng**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Chia một tổng theo tỉ lệ ba số: cộng ba số phần lại, chia tổng cho tổng số phần được giá trị một phần, rồi nhân ra từng đại lượng. Bài trộn thì tính riêng từng loại rồi cộng.
-
-*Điểm chốt:* Chia cho **tổng số phần**, không chia cho số đại lượng.
-
-*Muốn khó hơn:* Hỏi giá trung bình một ki-lô-gam gạo sau khi trộn.
-
-*Phải chắc trước khi làm bài này:* Bài toán tổng – tỉ hai đại lượng và phép nhân với số lớn.
-
-### Bài D.2 — Đơn vị đo thể tích và dung tích
-
-> **BẪY — 1 000 lần mỗi bậc.**
-
-**Các bước giải**
-
-Xét ý a: 73 m³ = … dm³
-
-Đọc vị: đây là dạng **Đổi đơn vị thể tích, dung tích**; dấu hiệu là Đơn vị có mũ ba, hoặc lít, mi-li-lít.
-
-Kiến thức phải dùng: Bảng đơn vị thể tích; quan hệ dm³ – lít.
-
-Cách làm: Đếm bậc rồi nhân, chia 1 000.
-
-Lối tắt: Mỗi bậc thêm ba chữ số 0.
-
-Kết quả: **73 000**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Hai đơn vị thể tích liền kề hơn kém nhau **1 000 lần**. 1 dm³ = 1 lít; 1 lít = 1 000 ml; 1 m³ = 1 000 dm³ = 1 000 lít.
-
-*Điểm chốt:* Thể tích nhảy **1 000 lần** mỗi bậc (độ dài 10, diện tích 100, thể tích 1 000).
-
-### Bài D.3 — Bài toán thực tế về khối lượng
-
-> **BẪY — Đơn vị của câu trả lời.**
-
-**Các bước giải**
-
-Xét ý a: Một xe chở 30 bao xi măng, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ xi măng?
-
-Đọc vị: đây là dạng **Bài toán đại lượng có lời văn**; dấu hiệu là Đơn vị trong câu hỏi khác đơn vị trong dữ kiện.
-
-Kiến thức phải dùng: Nhân, chia số tự nhiên; đổi đơn vị khối lượng.
-
-Cách làm: Tính theo đơn vị dữ kiện rồi đổi ở bước cuối.
-
-Lối tắt: 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ.
-
-Kết quả: **18 tạ**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Tính tổng khối lượng theo ki-lô-gam trước, sau đó mới đổi sang đơn vị mà đề hỏi. Đừng đổi đơn vị ngay từ đầu vì dễ nhầm.
-
-*Điểm chốt:* Câu hỏi đòi đơn vị nào thì bước **cuối cùng** mới đổi sang đơn vị đó.
-
-### Bài D.4 — Tính thời điểm đến, thời gian đi
+### Bài D.1 — Tính thời điểm đến, thời gian đi
 
 > **BẪY — Phần phút vượt quá 60.**
 
 **Các bước giải**
 
-Xét ý a: Một chuyến tàu khởi hành lúc 6 giờ 45 phút và đi hết 3 giờ 11 phút. Tàu đến nơi lúc mấy giờ?
+Xét ý a: Một chuyến tàu khởi hành lúc 15 giờ 45 phút và đi hết 4 giờ 52 phút. Tàu đến nơi lúc mấy giờ?
 
 Đọc vị: đây là dạng **Tính thời điểm trong ngày**; dấu hiệu là Cho thời điểm bắt đầu và khoảng thời gian.
 
@@ -464,31 +394,99 @@ Cách làm: Quy về phút, cộng trừ, đổi lại.
 
 Lối tắt: Cộng tròn giờ trước rồi cộng phần phút lẻ sau.
 
-Kết quả: **9 giờ 56 phút**.
+Kết quả: **20 giờ 37 phút**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Đổi cả giờ khởi hành lẫn thời gian đi về **phút**, cộng lại, rồi đổi kết quả ngược lại thành giờ và phút. Cách này tránh được lỗi nhớ khi phần phút vượt 60.
 
 *Điểm chốt:* Đổi hết về phút rồi mới cộng — an toàn hơn cộng trực tiếp.
 
-### Bài D.5 — Đếm số lần xuất hiện của một chữ số
+### Bài D.2 — Đơn vị đo thể tích và dung tích
+
+> **BẪY — 1 000 lần mỗi bậc.**
 
 **Các bước giải**
 
-Xét ý a: Từ 1 đến 300, chữ số 7 xuất hiện bao nhiêu lần?
+Xét ý a: 68 000 cm³ = … dm³
 
-Đọc vị: đây là dạng **Đếm số lần xuất hiện của một chữ số**; dấu hiệu là Câu hỏi “chữ số … xuất hiện bao nhiêu lần”.
+Đọc vị: đây là dạng **Đổi đơn vị thể tích, dung tích**; dấu hiệu là Đơn vị có mũ ba, hoặc lít, mi-li-lít.
 
-Kiến thức phải dùng: Dãy cách đều, cấu tạo số.
+Kiến thức phải dùng: Bảng đơn vị thể tích; quan hệ dm³ – lít.
 
-Cách làm: Đếm theo từng hàng rồi cộng.
+Cách làm: Đếm bậc rồi nhân, chia 1 000.
 
-Lối tắt: Từ 1 đến 100, mỗi chữ số từ 1 đến 9 xuất hiện đúng 20 lần (riêng chữ số 1 là 21 lần vì có số 100).
+Lối tắt: Mỗi bậc thêm ba chữ số 0.
 
-Kết quả: **60**.
+Kết quả: **68**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Đếm theo từng hàng: đếm số lần chữ số đó đứng ở hàng đơn vị, rồi hàng chục, rồi hàng trăm. Ở mỗi hàng, các số thoả mãn lập thành dãy cách đều, dùng công thức đếm số hạng.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Hai đơn vị thể tích liền kề hơn kém nhau **1 000 lần**. 1 dm³ = 1 lít; 1 lít = 1 000 ml; 1 m³ = 1 000 dm³ = 1 000 lít.
 
-*Điểm chốt:* Một số có thể chứa chữ số đó **nhiều lần**; đếm theo hàng thì không sót.
+*Điểm chốt:* Thể tích nhảy **1 000 lần** mỗi bậc (độ dài 10, diện tích 100, thể tích 1 000).
+
+### Bài D.3 — Tìm số bằng cách thử và loại
+
+> **BẪY — Dừng ở đáp số đầu tiên.**
+
+**Các bước giải**
+
+Điều kiện chặt hơn là **tổng hai chữ số bằng 9** — điều kiện này chỉ cho 9 số, ít hơn hẳn điều kiện chia hết. Dùng nó để thu hẹp trước.
+
+Liệt kê các số có hai chữ số mà tổng hai chữ số bằng 9: 18, 27, 36, 45, 54, 63, 72, 81, 90.
+
+Thử từng số xem có chia hết cho 4 không, gạch bỏ số nào không thoả.
+
+Còn lại: **36, 72**. Phải xét hết danh sách chứ không dừng ở số đầu tiên.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Chọn điều kiện cho ít khả năng nhất để liệt kê trước, rồi mới đem điều kiện còn lại ra thử. Làm ngược thứ tự ấy thì phải thử gấp nhiều lần.
+
+*Điểm chốt:* Phải xét **hết** danh sách. Bài thử chọn thường có hơn một đáp số.
+
+*Muốn khó hơn:* Thêm điều kiện thứ ba, chẳng hạn chữ số hàng chục lớn hơn hàng đơn vị, để học sinh phải lọc ba lần.
+
+*Phải chắc trước khi làm bài này:* Dấu hiệu chia hết cho 2, 3, 5, 9 và cách đọc cấu tạo số.
+
+### Bài D.4 — Bài toán thực tế về khối lượng
+
+> **BẪY — Đơn vị của câu trả lời.**
+
+**Các bước giải**
+
+Xét ý a: Một xe chở 21 bao xi măng, mỗi bao 40 kg. Hỏi xe chở bao nhiêu tạ xi măng?
+
+Đọc vị: đây là dạng **Bài toán đại lượng có lời văn**; dấu hiệu là Đơn vị trong câu hỏi khác đơn vị trong dữ kiện.
+
+Kiến thức phải dùng: Nhân, chia số tự nhiên; đổi đơn vị khối lượng.
+
+Cách làm: Tính theo đơn vị dữ kiện rồi đổi ở bước cuối.
+
+Lối tắt: 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ.
+
+Kết quả: **8 tạ 40 kg**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Tính tổng khối lượng theo ki-lô-gam trước, sau đó mới đổi sang đơn vị mà đề hỏi. Đừng đổi đơn vị ngay từ đầu vì dễ nhầm.
+
+*Điểm chốt:* Câu hỏi đòi đơn vị nào thì bước **cuối cùng** mới đổi sang đơn vị đó.
+
+### Bài D.5 — Hai nhóm có phần chung — đếm bằng hai vòng tròn
+
+**Các bước giải**
+
+Vẽ hai vòng tròn chồng nhau. Điền **phần chung trước**: 7 em học cả hai môn.
+
+Chỉ học hát: 12 − 7 = 5 (em).
+
+Chỉ học bóng rổ: 19 − 7 = 12 (em).
+
+Số em học ít nhất một trong hai môn: 5 + 7 + 12 = 24 (em).
+
+Số em không học môn nào: 28 − 24 = **4 em**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Điền phần chung vào trước, rồi trừ ra hai phần riêng. Cộng ba phần ấy được số người tham gia ít nhất một hoạt động; lấy tổng trừ đi là ra số người ngoài cả hai vòng.
+
+*Điểm chốt:* Con số đề cho cho mỗi môn **đã bao gồm** những em học cả hai. Cộng thẳng hai con số ấy là đếm phần chung hai lần.
+
+*Muốn khó hơn:* Thêm nhóm thứ ba để phải vẽ ba vòng tròn và trừ ba phần chung đôi một.
+
+*Phải chắc trước khi làm bài này:* Phép cộng trừ trong phạm vi 100 và cách đọc đề có nhiều số liệu.
 
 ### Bài E.1 — Đọc vị đề số 1
 
@@ -613,11 +611,11 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | C.3 | Đếm số hạng dãy cách đều | Công thức đếm số hạng | Dãy có số đầu, số cuối và khoảng cách đều | (cuối − đầu) : khoảng cách + 1 | Dãy số tự nhiên liên tiếp từ a đến b có b − a + 1 số hạng. | 84 · 162 · 89 · 152… |
 | C.4 | Tính nhanh nhờ thừa số chung | Nhân một số với một tổng, một hiệu | Hai tích cộng hoặc trừ nhau, có chung một thừa số | Đặt thừa số chung ra ngoài rồi tính trong ngoặc | Sau khi đặt thừa số chung, tổng trong ngoặc thường tròn 10 hoặc 100. | 3 835 · 3 321 · 930 · 2 037 |
 | C.5 | Tỉ lệ thuận, rút về đơn vị | Đại lượng tỉ lệ thuận | Hai đại lượng cùng tăng cùng giảm | Rút về đơn vị hoặc dùng tỉ số | Nếu số lượng mới gấp số lượng cũ một số nguyên lần thì nhân thẳng, không cần rút về đơn vị. | 300 nghìn đồng · 8 quyển · 19 quyển · 1 305 nghìn đồng… |
-| D.1 | Chia tỉ lệ nhiều phần; bài toán trộn | Tỉ số, chia theo tỉ lệ, nhân với đơn giá | “Tỉ lệ với … , … , …” hoặc “trộn … với …” | Tổng số phần → giá trị một phần → nhân | Tổng luôn chia hết cho tổng số phần; không chia hết là đọc sai tỉ lệ. | 450 000 đồng · 99 · 33 · 99 cây · 258 000 đồng · 117 · 195 · 195 cây |
-| D.2 | Đổi đơn vị thể tích, dung tích | Bảng đơn vị thể tích; quan hệ dm³ – lít | Đơn vị có mũ ba, hoặc lít, mi-li-lít | Đếm bậc rồi nhân, chia 1 000 | Mỗi bậc thêm ba chữ số 0. | 73 000 · 13 · 75 000 · 63… |
-| D.3 | Bài toán đại lượng có lời văn | Nhân, chia số tự nhiên; đổi đơn vị khối lượng | Đơn vị trong câu hỏi khác đơn vị trong dữ kiện | Tính theo đơn vị dữ kiện rồi đổi ở bước cuối | 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ. | 18 tạ · 2 tạ 40 kg · 8 tạ 40 kg · 15 tạ 60 kg… |
-| D.4 | Tính thời điểm trong ngày | Quan hệ giờ – phút, phép chia có dư | Cho thời điểm bắt đầu và khoảng thời gian | Quy về phút, cộng trừ, đổi lại | Cộng tròn giờ trước rồi cộng phần phút lẻ sau. | 9 giờ 56 phút · 15 giờ 27 phút · 16 giờ 37 phút · 10 giờ 44 phút |
-| D.5 | Đếm số lần xuất hiện của một chữ số | Dãy cách đều, cấu tạo số | Câu hỏi “chữ số … xuất hiện bao nhiêu lần” | Đếm theo từng hàng rồi cộng | Từ 1 đến 100, mỗi chữ số từ 1 đến 9 xuất hiện đúng 20 lần (riêng chữ số 1 là 21 lần vì có số 100). | 60 · 101 · 101 · 51… |
+| D.1 | Tính thời điểm trong ngày | Quan hệ giờ – phút, phép chia có dư | Cho thời điểm bắt đầu và khoảng thời gian | Quy về phút, cộng trừ, đổi lại | Cộng tròn giờ trước rồi cộng phần phút lẻ sau. | 20 giờ 37 phút · 19 giờ 25 phút · 15 giờ 7 phút · 12 giờ 2 phút… |
+| D.2 | Đổi đơn vị thể tích, dung tích | Bảng đơn vị thể tích; quan hệ dm³ – lít | Đơn vị có mũ ba, hoặc lít, mi-li-lít | Đếm bậc rồi nhân, chia 1 000 | Mỗi bậc thêm ba chữ số 0. | 68 · 67 · 72 000 · 38 000… |
+| D.3 | Thử chọn | Dấu hiệu chia hết; cấu tạo số có hai chữ số | Đề đòi một số thoả **nhiều điều kiện cùng lúc**, số khả năng hữu hạn | Thu hẹp bằng điều kiện chặt nhất rồi thử từng khả năng còn lại | Tổng hai chữ số cố định thì chỉ có tối đa mười số — liệt kê rất nhanh. | 36, 72 · 16, 52 · 78, 96 · 24, 42, 60 |
+| D.4 | Bài toán đại lượng có lời văn | Nhân, chia số tự nhiên; đổi đơn vị khối lượng | Đơn vị trong câu hỏi khác đơn vị trong dữ kiện | Tính theo đơn vị dữ kiện rồi đổi ở bước cuối | 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ. | 8 tạ 40 kg · 15 tạ 60 kg · 15 tạ · 4 tạ… |
+| D.5 | Biểu đồ Ven | Phép cộng, phép trừ; đếm không trùng lặp | Đề cho số người của từng nhóm **và** số người thuộc cả hai nhóm | Vẽ hai vòng tròn, điền phần chung trước rồi mới trừ ra phần riêng | Số người ít nhất một nhóm = nhóm A + nhóm B − phần chung. | 4 em · 3 em · 4 em · 1 em… |
 | E.1 | Bài toán đại lượng có lời văn | Nhân, chia số tự nhiên; đổi đơn vị khối lượng | Đơn vị trong câu hỏi khác đơn vị trong dữ kiện | Tính theo đơn vị dữ kiện rồi đổi ở bước cuối | 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ. | Bài toán đại lượng có lời văn · Đơn vị trong câu hỏi khác đơn vị trong dữ kiện · Nhân, chia số tự nhiên; đổi đơn vị khối lượng · Tính theo đơn vị dữ kiện rồi đổi ở bước cuối… |
 | E.2 | Đổi đơn vị thể tích, dung tích | Bảng đơn vị thể tích; quan hệ dm³ – lít | Đơn vị có mũ ba, hoặc lít, mi-li-lít | Đếm bậc rồi nhân, chia 1 000 | Mỗi bậc thêm ba chữ số 0. | Đổi đơn vị thể tích, dung tích · Đơn vị có mũ ba, hoặc lít, mi-li-lít · Bảng đơn vị thể tích; quan hệ dm³ – lít · Đếm bậc rồi nhân, chia 1 000… |
 | E.3 | Bốn phép tính với số đo | Đổi đơn vị, bốn phép tính | Các số hạng có đơn vị khác nhau trong cùng một phép tính | Đổi về đơn vị của kết quả rồi tính | Đọc chỗ chấm trước, biết ngay đơn vị đích. | Bốn phép tính với số đo · Các số hạng có đơn vị khác nhau trong cùng một phép tính · Đổi đơn vị, bốn phép tính · Đổi về đơn vị của kết quả rồi tính… |
@@ -645,11 +643,11 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | C.3 | TD4, TD3 | Số khoảng luôn **ít hơn số số hạng đúng 1**. |
 | C.4 | TD3, TD5 | Thừa số chung phải xuất hiện ở **cả hai** tích thì mới đặt ra ngoài được. |
 | C.5 | TD2, TD3 | Hai đại lượng **cùng tăng, cùng giảm** thì tỉ lệ thuận. |
-| D.1 | TD3, TD2 | Chia cho **tổng số phần**, không chia cho số đại lượng. |
+| D.1 | TD3, TD2 | Đổi hết về phút rồi mới cộng — an toàn hơn cộng trực tiếp. |
 | D.2 | TD1, TD2 | Thể tích nhảy **1 000 lần** mỗi bậc (độ dài 10, diện tích 100, thể tích 1 000). |
-| D.3 | TD2, TD3 | Câu hỏi đòi đơn vị nào thì bước **cuối cùng** mới đổi sang đơn vị đó. |
-| D.4 | TD3, TD2 | Đổi hết về phút rồi mới cộng — an toàn hơn cộng trực tiếp. |
-| D.5 | TD4, TD6 | Một số có thể chứa chữ số đó **nhiều lần**; đếm theo hàng thì không sót. |
+| D.3 | TD3, TD4 | Phải xét **hết** danh sách. Bài thử chọn thường có hơn một đáp số. |
+| D.4 | TD2, TD3 | Câu hỏi đòi đơn vị nào thì bước **cuối cùng** mới đổi sang đơn vị đó. |
+| D.5 | TD2, TD4 | Con số đề cho cho mỗi môn **đã bao gồm** những em học cả hai. Cộng thẳng hai con số ấy là đếm phần chung hai lần. |
 | E.1 | TD2, TD6 | Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**. |
 | E.2 | TD2, TD6 | Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**. |
 | E.3 | TD2, TD6 | Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**. |
@@ -679,11 +677,11 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 | C.3 | Quên cộng 1 nên thiếu một số hạng. | Thử với dãy ngắn (3 số hạng) để kiểm chứng công thức. |
 | C.4 | Đặt ra ngoài một số chỉ có ở một tích. | Khoanh thừa số giống nhau ở hai tích trước khi viết dấu ngoặc. |
 | C.5 | Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch. | Tự hỏi: mua nhiều hơn thì trả nhiều hơn hay ít hơn? |
-| D.1 | Chia tổng cho 3 vì thấy có ba tổ. | Đếm số phần trên sơ đồ trước khi chia. |
+| D.1 | Cộng phần phút thành hơn 60 mà quên đổi thành giờ. | Kiểm tra phần phút của đáp số phải bé hơn 60. |
 | D.2 | Đổi như đơn vị diện tích, chỉ nhân 100. | Nhớ dãy 10 – 100 – 1 000 ứng với độ dài – diện tích – thể tích. |
-| D.3 | Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. | Khoanh tròn đơn vị trong câu hỏi trước khi đặt bút. |
-| D.4 | Cộng phần phút thành hơn 60 mà quên đổi thành giờ. | Kiểm tra phần phút của đáp số phải bé hơn 60. |
-| D.5 | Đếm số lượng **số** chứa chữ số đó thay vì số **lần** xuất hiện. | Kẻ bảng: hàng đơn vị – hàng chục – hàng trăm, đếm riêng rồi cộng. |
+| D.3 | Tìm được một số thoả rồi dừng, bỏ sót các đáp số còn lại. | Viết danh sách ra giấy và gạch bỏ từng số, đừng thử nhẩm trong đầu. |
+| D.4 | Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. | Khoanh tròn đơn vị trong câu hỏi trước khi đặt bút. |
+| D.5 | Lấy tổng trừ đi tổng hai con số đề cho mà không cộng lại phần chung. | Vẽ hình trước, điền phần giữa trước, rồi mới điền hai bên. |
 | E.1 | Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. | Khoanh tròn đơn vị trong câu hỏi trước khi đặt bút. |
 | E.2 | Đổi như đơn vị diện tích, chỉ nhân 100. | Nhớ dãy 10 – 100 – 1 000 ứng với độ dài – diện tích – thể tích. |
 | E.3 | Cộng số mét với số xăng-ti-mét mà chưa đổi. | Gạch chân đơn vị ở chỗ chấm rồi đổi mọi số hạng về đơn vị đó. |
@@ -711,11 +709,11 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 **Bài C.3** — (1) Từ số đầu tới số cuối có bao nhiêu khoảng? — (2) Mỗi khoảng bằng bao nhiêu đơn vị? — (3) Số số hạng nhiều hơn số khoảng 1 đơn vị.
 **Bài C.4** — (1) Hai tích có thừa số nào giống nhau? — (2) Đặt thừa số đó ra ngoài dấu ngoặc. — (3) Tính trong ngoặc trước rồi nhân.
 **Bài C.5** — (1) Mua nhiều vở hơn thì tiền nhiều hơn hay ít hơn? — (2) Tìm giá của một quyển vở. — (3) Nhân giá một quyển với số quyển cần mua.
-**Bài D.1** — (1) Vẽ ba đoạn thẳng theo đúng số phần. — (2) Tổng cộng có bao nhiêu phần bằng nhau? — (3) Một phần bằng bao nhiêu?
+**Bài D.1** — (1) Đổi giờ khởi hành ra phút tính từ 0 giờ. — (2) Cộng thêm thời gian đi (tính bằng phút). — (3) Đổi tổng số phút trở lại thành giờ và phút.
 **Bài D.2** — (1) Đơn vị thể tích liền kề hơn kém nhau mấy lần? — (2) Đếm số bậc giữa hai đơn vị. — (3) 1 dm³ bằng đúng 1 lít.
-**Bài D.3** — (1) Tính tổng khối lượng theo ki-lô-gam. — (2) Đề hỏi kết quả theo đơn vị nào? — (3) Đổi kết quả sang đơn vị đó.
-**Bài D.4** — (1) Đổi giờ khởi hành ra phút tính từ 0 giờ. — (2) Cộng thêm thời gian đi (tính bằng phút). — (3) Đổi tổng số phút trở lại thành giờ và phút.
-**Bài D.5** — (1) Đếm riêng theo từng hàng. — (2) Ở hàng đơn vị, các số đó cách nhau bao nhiêu đơn vị? — (3) Cộng kết quả của cả ba hàng.
+**Bài D.3** — (1) Trong hai điều kiện, điều kiện nào cho ít số hơn? — (2) Liệt kê hết các số thoả điều kiện ấy. — (3) Thử từng số với điều kiện còn lại, đừng dừng sớm.
+**Bài D.4** — (1) Tính tổng khối lượng theo ki-lô-gam. — (2) Đề hỏi kết quả theo đơn vị nào? — (3) Đổi kết quả sang đơn vị đó.
+**Bài D.5** — (1) Bao nhiêu em học cả hai môn? Điền số ấy vào phần chồng nhau. — (2) Vậy chỉ học riêng mỗi môn là bao nhiêu em? — (3) Cộng ba phần rồi lấy sĩ số lớp trừ đi.
 **Bài E.1** — (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
 **Bài E.2** — (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
 **Bài E.3** — (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
@@ -745,11 +743,11 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | C.3 | Dãy 3, 6, 9, …, 99 có bao nhiêu số hạng? | 33 |
 | C.4 | Tính nhanh: 47 × 25 + 47 × 75 | 4 700 |
 | C.5 | Mua 4 quyển vở hết 24 nghìn. Mua 10 quyển hết bao nhiêu? | 60 nghìn |
-| D.1 | Chia 120 cây theo tỉ lệ 1 : 2 : 3. Mỗi phần bao nhiêu cây? | 20, 40, 60 |
+| D.1 | Tàu chạy lúc 7 giờ 40 phút, đi hết 2 giờ 35 phút. Đến lúc mấy giờ? | 10 giờ 15 phút |
 | D.2 | 2 m³ = … lít | 2 000 |
-| D.3 | Xe chở 20 bao gạo, mỗi bao 50 kg. Xe chở mấy tạ? | 10 tạ |
-| D.4 | Tàu chạy lúc 7 giờ 40 phút, đi hết 2 giờ 35 phút. Đến lúc mấy giờ? | 10 giờ 15 phút |
-| D.5 | Từ 1 đến 50, chữ số 3 xuất hiện bao nhiêu lần? | 15 |
+| D.3 | Tìm mọi số có hai chữ số chia hết cho 5 và có tổng hai chữ số bằng 9. | 45 và 90 |
+| D.4 | Xe chở 20 bao gạo, mỗi bao 50 kg. Xe chở mấy tạ? | 10 tạ |
+| D.5 | Lớp có 40 em, 25 em học vẽ, 20 em học hát, 10 em học cả hai. Bao nhiêu em không học môn nào? | 5 em |
 | E.1 | Xe chở 20 bao gạo, mỗi bao 50 kg. Xe chở mấy tạ? | 10 tạ |
 | E.2 | 2 m³ = … lít | 2 000 |
 | E.3 | 2 m 30 cm + 150 cm = … cm | 380 |

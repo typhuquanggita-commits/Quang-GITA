@@ -55,7 +55,7 @@ Học thuộc theo cặp **dạng bài – công thức**, không học rời.
 | 1 | Nhận biết số nguyên tố, hợp số | Định nghĩa số nguyên tố, dấu hiệu chia hết |
 | 2 | Nhận biết chẵn – lẻ và số liền kề | Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2 |
 | 3 | Đếm chữ số, tính tổng chữ số | Cấu tạo số, tổng chữ số |
-| 4 | Số và tổng chữ số của nó | Cấu tạo thập phân, phép chia có dư |
+| 4 | Dùng chữ thay số | Cấu tạo thập phân của số; tổng – hiệu |
 | 5 | Điền chữ số theo điều kiện chia hết | Dấu hiệu chia hết, chữ số hàng cao nhất khác 0 |
 | 6 | Đếm số chia hết đồng thời cho nhiều số | Bội chung nhỏ nhất, dãy số cách đều |
 | 7 | Phép chia có dư | Quan hệ giữa số bị chia, số chia, thương và số dư |
@@ -92,7 +92,7 @@ Trước khi tra bảng, đi qua cây quyết định đọc vị của nhóm ch
 | Nhận biết số nguyên tố, hợp số | Câu hỏi “là số nguyên tố hay hợp số” | Thử chia theo dãy số nguyên tố tăng dần, dừng đúng ngưỡng | Loại ngay các số chẵn lớn hơn 2 và các số tận cùng bằng 5 lớn hơn 5. |
 | Nhận biết chẵn – lẻ và số liền kề | Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” | Xét chữ số tận cùng; cộng hoặc trừ 1 đơn vị | Che hết các chữ số, chỉ để lộ chữ số cuối. |
 | Đếm chữ số, tính tổng chữ số | Yêu cầu “có mấy chữ số”, “tổng các chữ số” | Tách lớp để đếm; cộng rời từng chữ số | Ghép cặp các chữ số cộng lại tròn 10 rồi cộng nhanh. |
-| Số và tổng chữ số của nó | Đề liên hệ số với tổng các chữ số của chính nó | Đặt ẩn cho chữ số, viết hai biểu thức, lập bảng thử | a × 10 + b − (a + b) = 9 × a — hiệu luôn là bội của 9. |
+| Dùng chữ thay số | Đề viết số bằng chữ hoặc bằng dấu sao và cho quan hệ giữa các chữ số | Viết cấu tạo số theo chữ, thay vào điều kiện rồi rút gọn | Đổi chỗ hai chữ số của số có hai chữ số thì hiệu luôn là bội của 9. |
 | Điền chữ số theo điều kiện chia hết | Số có ô trống hoặc dấu *, kèm điều kiện chia hết | Dùng dấu hiệu để lập điều kiện cho dấu * rồi thử 0–9 | Với 3 và 9: tính tổng các chữ số đã biết một lần duy nhất, rồi tìm phần bù cần thêm. |
 | Đếm số chia hết đồng thời cho nhiều số | Cụm “vừa chia hết cho … vừa chia hết cho …” | Quy về một số chia duy nhất là BCNN rồi đếm | Chia hết cho 2 và 5 thì tận cùng là 0; chia hết cho 2 và 3 thì chia hết cho 6. |
 | Phép chia có dư | Đề yêu cầu ghi cả thương và số dư | Đặt tính chia, kiểm tra điều kiện số dư | Ước lượng thương bằng cách làm tròn số chia trước khi chia. |
@@ -127,8 +127,8 @@ Trả lời được ngay trong 10 giây thì đánh ✔. Phải nghĩ lâu thì
 - [ ] **4.** Em nhớ công thức: Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2?
 - [ ] **5.** Em nêu được dấu hiệu nhận biết của dạng “Đếm chữ số, tính tổng chữ số” chứ?
 - [ ] **6.** Em nhớ công thức: Cấu tạo số, tổng chữ số?
-- [ ] **7.** Em nêu được dấu hiệu nhận biết của dạng “Số và tổng chữ số của nó” chứ?
-- [ ] **8.** Em nhớ công thức: Cấu tạo thập phân, phép chia có dư?
+- [ ] **7.** Em nêu được dấu hiệu nhận biết của dạng “Dùng chữ thay số” chứ?
+- [ ] **8.** Em nhớ công thức: Cấu tạo thập phân của số; tổng – hiệu?
 - [ ] **9.** Em nêu được dấu hiệu nhận biết của dạng “Điền chữ số theo điều kiện chia hết” chứ?
 - [ ] **10.** Em nhớ công thức: Dấu hiệu chia hết, chữ số hàng cao nhất khác 0?
 - [ ] **11.** Em nêu được dấu hiệu nhận biết của dạng “Đếm số chia hết đồng thời cho nhiều số” chứ?
@@ -155,7 +155,7 @@ Trả lời được ngay trong 10 giây thì đánh ✔. Phải nghĩ lâu thì
 | 1 | Thử chia cho mọi số từ 2 đến số đó nên mất thời gian, hoặc kết luận vội. | Thử theo thứ tự 2, 3, 5, 7, 11, 13 và dừng đúng lúc. |
 | 2 | Nhầm “liền trước” với “bé hơn”, trả lời một số bất kì bé hơn. | Liền trước – liền sau chỉ hơn kém đúng **1** đơn vị. |
 | 3 | Cộng cả giá trị hàng (ví dụ cộng 300 thay vì cộng 3). | Viết rời từng chữ số ra rồi mới cộng. |
-| 4 | Chia bừa mà không kiểm tra điều kiện chia hết nên nhận đáp số không nguyên. | Kiểm tra lại đáp số bằng cách thay ngược vào đề. |
+| 4 | Tính ra a bằng 0 rồi vẫn nhận, hoặc để một chữ số vượt quá 9. | Viết sẵn hai dòng ràng buộc lên đầu bài giải rồi mới tính. |
 | 5 | Chỉ nêu một đáp số, hoặc nhận cả chữ số 0 ở hàng cao nhất. | Liệt kê đủ 10 chữ số ra nháp rồi gạch dần chữ số không đạt. |
 | 6 | Lấy tích hai số làm khoảng cách (ví dụ dùng 27 cho “chia hết cho 3 và 9”). | Kiểm tra bằng cách viết ba số đầu tiên của dãy rồi xem khoảng cách thật. |
 | 7 | Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. | Thử lại bằng công thức số bị chia = số chia × thương + số dư. |

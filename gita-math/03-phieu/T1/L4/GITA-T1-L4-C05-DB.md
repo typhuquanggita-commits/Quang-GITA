@@ -238,57 +238,54 @@ e) Dãy 3, 13, 23, …, 643 có bao nhiêu số hạng?
 
 ## PHẦN D — DẠNG 5 – DẠNG 6 VÀ DẠNG PHỐI HỢP · Mức M3 — Vận dụng · 20 phút · 20 điểm
 
-### Bài 1. (4 điểm) Chữ số tận cùng của tổng, hiệu, tích
+### Bài 1. (4 điểm) Tìm số bằng cách thử và loại
 
-Không tính hết phép tính, chỉ tìm chữ số tận cùng.
+Với mỗi câu, viết ra danh sách đã thử rồi mới ghi đáp số. Đáp số có thể gồm nhiều số.
 
-a) Hiệu 4 439 − 1 807 có chữ số tận cùng là chữ số nào?
-b) Tích 8 670 × 1 335 có chữ số tận cùng là chữ số nào?
-c) Tổng 8 772 + 4 976 có chữ số tận cùng là chữ số nào?
-d) Hiệu 8 045 − 7 044 có chữ số tận cùng là chữ số nào?
-e) Tổng 4 363 + 846 có chữ số tận cùng là chữ số nào?
-f) Tích 9 834 × 4 271 có chữ số tận cùng là chữ số nào?
+a) Tìm mọi số có hai chữ số vừa chia hết cho 5, vừa có tổng hai chữ số bằng 14.
+b) Tìm mọi số có hai chữ số vừa chia hết cho 5, vừa có tổng hai chữ số bằng 13.
+c) Tìm mọi số có hai chữ số vừa chia hết cho 3, vừa có tổng hai chữ số bằng 15.
+d) Tìm mọi số có hai chữ số vừa chia hết cho 5, vừa có tổng hai chữ số bằng 9.
 
-### Bài 2. (4 điểm) Đếm số lần xuất hiện của một chữ số
-
-Đếm số lần xuất hiện, tính cả khi chữ số đó xuất hiện nhiều lần trong một số.
-
-a) Từ 1 đến 300, chữ số 3 xuất hiện bao nhiêu lần?
-b) Từ 1 đến 150, chữ số 1 xuất hiện bao nhiêu lần?
-c) Từ 1 đến 100, chữ số 5 xuất hiện bao nhiêu lần?
-d) Từ 1 đến 100, chữ số 1 xuất hiện bao nhiêu lần?
-
-### Bài 3. (4 điểm) Tính thời điểm đến, thời gian đi
+### Bài 2. (4 điểm) Tính thời điểm đến, thời gian đi
 
 Ghi kết quả theo giờ và phút.
 
-a) Một chuyến tàu khởi hành lúc 14 giờ 25 phút và đi hết 2 giờ 21 phút. Tàu đến nơi lúc mấy giờ?
-b) Một chuyến tàu khởi hành lúc 6 giờ 0 phút và đi hết 2 giờ 55 phút. Tàu đến nơi lúc mấy giờ?
-c) Một chuyến tàu khởi hành lúc 10 giờ 15 phút và đi hết 4 giờ 24 phút. Tàu đến nơi lúc mấy giờ?
-d) Một chuyến tàu khởi hành lúc 9 giờ 45 phút và đi hết 5 giờ 37 phút. Tàu đến nơi lúc mấy giờ?
-e) Một chuyến tàu khởi hành lúc 13 giờ 0 phút và đi hết 43 phút. Tàu đến nơi lúc mấy giờ?
-f) Một chuyến tàu khởi hành lúc 12 giờ 25 phút và đi hết 5 giờ 15 phút. Tàu đến nơi lúc mấy giờ?
+a) Một chuyến tàu khởi hành lúc 11 giờ 15 phút và đi hết 6 giờ 6 phút. Tàu đến nơi lúc mấy giờ?
+b) Một chuyến tàu khởi hành lúc 8 giờ 50 phút và đi hết 55 phút. Tàu đến nơi lúc mấy giờ?
+c) Một chuyến tàu khởi hành lúc 7 giờ 0 phút và đi hết 5 giờ 12 phút. Tàu đến nơi lúc mấy giờ?
+d) Một chuyến tàu khởi hành lúc 14 giờ 25 phút và đi hết 2 giờ 21 phút. Tàu đến nơi lúc mấy giờ?
+e) Một chuyến tàu khởi hành lúc 6 giờ 0 phút và đi hết 2 giờ 55 phút. Tàu đến nơi lúc mấy giờ?
 
-### Bài 4. (4 điểm) Bài toán thực tế về khối lượng
+### Bài 3. (4 điểm) Chữ số tận cùng của tổng, hiệu, tích
+
+Không tính hết phép tính, chỉ tìm chữ số tận cùng.
+
+a) Tích 9 695 × 8 941 có chữ số tận cùng là chữ số nào?
+b) Tổng 782 + 297 có chữ số tận cùng là chữ số nào?
+c) Hiệu 7 473 − 4 678 có chữ số tận cùng là chữ số nào?
+d) Tổng 9 008 + 8 134 có chữ số tận cùng là chữ số nào?
+e) Hiệu 3 893 − 2 312 có chữ số tận cùng là chữ số nào?
+
+### Bài 4. (4 điểm) Tìm phân số của một số
+
+Trình bày lời giải có câu trả lời.
+
+a) Tổ Một trồng được 185 cây. Số cây của tổ Ba bằng 2 phần 5 số cây của tổ Một. Hỏi tổ Ba trồng được bao nhiêu cây?
+b) Nhóm Hoa Phượng trồng được 26 cây. Số cây của đội Hai bằng 1 phần 2 số cây của nhóm Hoa Phượng. Hỏi đội Hai trồng được bao nhiêu cây?
+c) Đội Một trồng được 76 cây. Số cây của tổ Hai bằng 3 phần 4 số cây của đội Một. Hỏi tổ Hai trồng được bao nhiêu cây?
+d) Tổ Ba trồng được 132 cây. Số cây của tổ Một bằng 5 phần 6 số cây của tổ Ba. Hỏi tổ Một trồng được bao nhiêu cây?
+e) Tổ Một trồng được 50 cây. Số cây của đội Hai bằng 1 phần 2 số cây của tổ Một. Hỏi đội Hai trồng được bao nhiêu cây?
+
+### Bài 5. (4 điểm) Bài toán thực tế về khối lượng
 
 Chú ý đơn vị mà đề hỏi.
 
-a) Một xe chở 14 bao xi măng, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ xi măng?
-b) Một xe chở 35 bao phân bón, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ phân bón?
-c) Một xe chở 6 bao gạo, mỗi bao 40 kg. Hỏi xe chở bao nhiêu tạ gạo?
-d) Một xe chở 31 bao phân bón, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ phân bón?
-e) Một xe chở 27 bao thóc, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ thóc?
-
-### Bài 5. (4 điểm) Định vị số hạng trong dãy cách đều
-
-Cho dãy: 8, 12, 16, …, 760.
-
-a) Dãy có bao nhiêu số hạng?
-b) Số hạng thứ 94 là số nào?
-c) Số 124 là số hạng thứ mấy?
-d) Số 128 là số hạng thứ mấy?
-e) Số 309 có thuộc dãy không? Vì sao?
-f) Tổng của cả dãy bằng bao nhiêu?
+a) Một xe chở 18 bao đường, mỗi bao 40 kg. Hỏi xe chở bao nhiêu tạ đường?
+b) Một xe chở 32 bao thóc, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ thóc?
+c) Một xe chở 22 bao phân bón, mỗi bao 40 kg. Hỏi xe chở bao nhiêu tạ phân bón?
+d) Một xe chở 30 bao đường, mỗi bao 50 kg. Hỏi xe chở bao nhiêu tạ đường?
+e) Một xe chở 40 bao xi măng, mỗi bao 50 kg. Hỏi xe chở bao nhiêu tạ xi măng?
 
 ---
 
@@ -446,39 +443,39 @@ f) Lỗi nào dễ mắc ở đề này?
 **Lỗi thường gặp:** Quên cộng 1 nên thiếu một số hạng. Phòng: Thử với dãy ngắn (3 số hạng) để kiểm chứng công thức.
 
 ### Bài D.1
-**Đáp số:** a) 2 · b) 0 · c) 8 · d) 1 · e) 9 · f) 4
-**Hướng giải:** Chữ số tận cùng của tổng, hiệu, tích chỉ phụ thuộc vào chữ số tận cùng của các số tham gia. Chỉ cần lấy các chữ số tận cùng ra tính với nhau rồi lấy chữ số tận cùng của kết quả.
-**Nhãn tư duy:** TD5, TD2. Điểm chốt: Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu của số.
-**Lỗi thường gặp:** Tính trọn cả phép tính, vừa lâu vừa dễ sai. Phòng: Che phần đầu của hai số, chỉ để lộ chữ số cuối cùng.
-**Gợi ý 3 tầng:** (1) Chữ số tận cùng của mỗi số là chữ số nào? — (2) Thực hiện phép tính với riêng hai chữ số tận cùng đó. — (3) Lấy chữ số tận cùng của kết quả vừa tính.
+**Đáp số:** a) 95 · b) 85 · c) 69, 78, 87, 96 · d) 45, 90
+**Hướng giải:** BẪY — Dừng ở đáp số đầu tiên. Chọn điều kiện cho ít khả năng nhất để liệt kê trước, rồi mới đem điều kiện còn lại ra thử. Làm ngược thứ tự ấy thì phải thử gấp nhiều lần.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Phải xét **hết** danh sách. Bài thử chọn thường có hơn một đáp số.
+**Lỗi thường gặp:** Tìm được một số thoả rồi dừng, bỏ sót các đáp số còn lại. Phòng: Viết danh sách ra giấy và gạch bỏ từng số, đừng thử nhẩm trong đầu.
+**Gợi ý 3 tầng:** (1) Trong hai điều kiện, điều kiện nào cho ít số hơn? — (2) Liệt kê hết các số thoả điều kiện ấy. — (3) Thử từng số với điều kiện còn lại, đừng dừng sớm.
 
 ### Bài D.2
-**Đáp số:** a) 61 · b) 86 · c) 20 · d) 21
-**Hướng giải:** BẪY — Số 33, 44… chứa hai lần cùng một chữ số. Đếm theo từng hàng: đếm số lần chữ số đó đứng ở hàng đơn vị, rồi hàng chục, rồi hàng trăm. Ở mỗi hàng, các số thoả mãn lập thành dãy cách đều, dùng công thức đếm số hạng.
-**Nhãn tư duy:** TD4, TD6. Điểm chốt: Một số có thể chứa chữ số đó **nhiều lần**; đếm theo hàng thì không sót.
-**Lỗi thường gặp:** Đếm số lượng **số** chứa chữ số đó thay vì số **lần** xuất hiện. Phòng: Kẻ bảng: hàng đơn vị – hàng chục – hàng trăm, đếm riêng rồi cộng.
-**Gợi ý 3 tầng:** (1) Đếm riêng theo từng hàng. — (2) Ở hàng đơn vị, các số đó cách nhau bao nhiêu đơn vị? — (3) Cộng kết quả của cả ba hàng.
-
-### Bài D.3
-**Đáp số:** a) 16 giờ 46 phút · b) 8 giờ 55 phút · c) 14 giờ 39 phút · d) 15 giờ 22 phút · e) 13 giờ 43 phút · f) 17 giờ 40 phút
+**Đáp số:** a) 17 giờ 21 phút · b) 9 giờ 45 phút · c) 12 giờ 12 phút · d) 16 giờ 46 phút · e) 8 giờ 55 phút
 **Hướng giải:** BẪY — Phần phút vượt quá 60. Đổi cả giờ khởi hành lẫn thời gian đi về **phút**, cộng lại, rồi đổi kết quả ngược lại thành giờ và phút. Cách này tránh được lỗi nhớ khi phần phút vượt 60.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Đổi hết về phút rồi mới cộng — an toàn hơn cộng trực tiếp.
 **Lỗi thường gặp:** Cộng phần phút thành hơn 60 mà quên đổi thành giờ. Phòng: Kiểm tra phần phút của đáp số phải bé hơn 60.
 **Gợi ý 3 tầng:** (1) Đổi giờ khởi hành ra phút tính từ 0 giờ. — (2) Cộng thêm thời gian đi (tính bằng phút). — (3) Đổi tổng số phút trở lại thành giờ và phút.
 
+### Bài D.3
+**Đáp số:** a) 5 · b) 9 · c) 5 · d) 2 · e) 1
+**Hướng giải:** Chữ số tận cùng của tổng, hiệu, tích chỉ phụ thuộc vào chữ số tận cùng của các số tham gia. Chỉ cần lấy các chữ số tận cùng ra tính với nhau rồi lấy chữ số tận cùng của kết quả.
+**Nhãn tư duy:** TD5, TD2. Điểm chốt: Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu của số.
+**Lỗi thường gặp:** Tính trọn cả phép tính, vừa lâu vừa dễ sai. Phòng: Che phần đầu của hai số, chỉ để lộ chữ số cuối cùng.
+**Gợi ý 3 tầng:** (1) Chữ số tận cùng của mỗi số là chữ số nào? — (2) Thực hiện phép tính với riêng hai chữ số tận cùng đó. — (3) Lấy chữ số tận cùng của kết quả vừa tính.
+
 ### Bài D.4
-**Đáp số:** a) 4 tạ 20 kg · b) 10 tạ 50 kg · c) 2 tạ 40 kg · d) 9 tạ 30 kg · e) 16 tạ 20 kg
+**Đáp số:** a) 74 cây · b) 13 cây · c) 57 cây · d) 110 cây · e) 25 cây
+**Hướng giải:** Muốn tìm phân số của một số, ta lấy số đó nhân với phân số. Cách hiểu: chia số đó thành số phần bằng mẫu số, rồi lấy số phần bằng tử số.
+**Nhãn tư duy:** TD2, TD3. Điểm chốt: Phân số tính trên **số nào** — đọc kĩ cụm “… của …”.
+**Lỗi thường gặp:** Nhân phân số với đại lượng khác, không phải đại lượng đề chỉ định. Phòng: Gạch chân cụm “bằng … số cây của …” để xác định số bị nhân.
+**Gợi ý 3 tầng:** (1) Phân số đó tính trên số nào? — (2) Chia số đó thành mấy phần bằng nhau? — (3) Lấy mấy phần trong số đó?
+
+### Bài D.5
+**Đáp số:** a) 7 tạ 20 kg · b) 19 tạ 20 kg · c) 8 tạ 80 kg · d) 15 tạ · e) 20 tạ
 **Hướng giải:** BẪY — Đơn vị của câu trả lời. Tính tổng khối lượng theo ki-lô-gam trước, sau đó mới đổi sang đơn vị mà đề hỏi. Đừng đổi đơn vị ngay từ đầu vì dễ nhầm.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Câu hỏi đòi đơn vị nào thì bước **cuối cùng** mới đổi sang đơn vị đó.
 **Lỗi thường gặp:** Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. Phòng: Khoanh tròn đơn vị trong câu hỏi trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Tính tổng khối lượng theo ki-lô-gam. — (2) Đề hỏi kết quả theo đơn vị nào? — (3) Đổi kết quả sang đơn vị đó.
-
-### Bài D.5
-**Đáp số:** a) 189 · b) 380 · c) 30 · d) 31 · e) không · f) 72 576
-**Hướng giải:** BẪY — Số không thuộc dãy. Muốn biết một số là số hạng thứ mấy: lấy số đó trừ số hạng đầu, chia cho khoảng cách rồi cộng 1. Nếu phép chia còn dư thì số đó **không thuộc** dãy.
-**Nhãn tư duy:** TD4, TD2. Điểm chốt: Phép chia **có dư** là bằng chứng số đó không thuộc dãy.
-**Lỗi thường gặp:** Chia được số nguyên rồi quên cộng 1, hoặc bỏ qua phần dư. Phòng: Luôn ghi rõ thương và số dư khi chia.
-**Gợi ý 3 tầng:** (1) Lấy số đó trừ số hạng đầu. — (2) Chia hiệu cho khoảng cách — có chia hết không? — (3) Chia hết thì cộng 1 để ra thứ tự; không chia hết thì số đó không thuộc dãy.
 
 ### Bài E.1
 **Đáp số:** a) Bốn phép tính với số đo · b) Các số hạng có đơn vị khác nhau trong cùng một phép tính · c) Đổi đơn vị, bốn phép tính · d) Đổi về đơn vị của kết quả rồi tính · e) Đọc chỗ chấm trước, biết ngay đơn vị đích. · f) Cộng số mét với số xăng-ti-mét mà chưa đổi.

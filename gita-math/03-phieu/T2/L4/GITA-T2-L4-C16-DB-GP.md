@@ -54,11 +54,11 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần D**
 
-- **Bài D.1** — a) 16 giờ 21 phút · b) 12 giờ 43 phút · c) 13 giờ 47 phút · d) 14 giờ 15 phút · e) 16 giờ 5 phút
-- **Bài D.2** — a) 259 kg · b) hợp tác xã: 26 kg, kho B: 52 kg · c) thư viện: 51 kg, hợp tác xã: 68 kg · d) kho B: 81 kg, cửa hàng: 108 kg
-- **Bài D.3** — a) kho A: 42 kg, kho B: 84 kg · b) kho A: 180 kg, xưởng: 300 kg · c) thư viện: 42 kg, kho A: 252 kg · d) trang trại: 297 kg, xưởng: 594 kg · e) cửa hàng: 196 kg, trang trại: 392 kg
-- **Bài D.4** — a) 96 kg · b) 80 kg · c) 76 kg · d) 336 kg · e) 40 kg · f) 27 kg
-- **Bài D.5** — a) bố 70 tuổi, con 14 tuổi · b) 70 tuổi · c) bố 50 tuổi, con 10 tuổi · d) bố 56 tuổi, con 14 tuổi · e) 36 tuổi
+- **Bài D.1** — a) 72 tuổi · b) 44 tuổi · c) 44 tuổi · d) 36 tuổi
+- **Bài D.2** — a) xưởng: 106 kg, cửa hàng: 212 kg · b) trang trại: 90 kg, kho B: 450 kg · c) hợp tác xã: 115 kg, kho B: 161 kg · d) kho B: 186 kg, thư viện: 434 kg
+- **Bài D.3** — a) 300 kg · b) 72 kg · c) 84 kg · d) 10 kg · e) 36 kg · f) 12 kg
+- **Bài D.4** — a) 10 cây · b) 84 cây · c) 114 cây · d) 27 cây · e) 6 cây · f) 116 cây
+- **Bài D.5** — a) thư viện: 21 kg, trang trại: 63 kg · b) thư viện: 99 kg, xưởng: 132 kg · c) 152 kg · d) 228 kg
 
 **Phần E**
 
@@ -378,103 +378,13 @@ Kết quả: **có (tổng chữ số 24)**.
 
 *Điểm chốt:* Dấu hiệu cho 2 và 5 nhìn **đuôi**; dấu hiệu cho 3 và 9 nhìn **tổng**.
 
-### Bài D.1 — Tính thời điểm đến, thời gian đi
+### Bài D.1 — Bài toán về tuổi
 
-> **BẪY — Phần phút vượt quá 60.**
-
-**Các bước giải**
-
-Xét ý a: Một chuyến tàu khởi hành lúc 13 giờ 45 phút và đi hết 2 giờ 36 phút. Tàu đến nơi lúc mấy giờ?
-
-Đọc vị: đây là dạng **Tính thời điểm trong ngày**; dấu hiệu là Cho thời điểm bắt đầu và khoảng thời gian.
-
-Kiến thức phải dùng: Quan hệ giờ – phút, phép chia có dư.
-
-Cách làm: Quy về phút, cộng trừ, đổi lại.
-
-Lối tắt: Cộng tròn giờ trước rồi cộng phần phút lẻ sau.
-
-Kết quả: **16 giờ 21 phút**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Đổi cả giờ khởi hành lẫn thời gian đi về **phút**, cộng lại, rồi đổi kết quả ngược lại thành giờ và phút. Cách này tránh được lỗi nhớ khi phần phút vượt 60.
-
-*Điểm chốt:* Đổi hết về phút rồi mới cộng — an toàn hơn cộng trực tiếp.
-
-### Bài D.2 — Tổng – tỉ, hiệu – tỉ khi một dữ kiện bị giấu
-
-> **BẪY — Dữ kiện bị giấu sau một câu mô tả.**
+> **BẪY — Hiệu số tuổi không đổi.**
 
 **Các bước giải**
 
-Xét ý a: Kho A chứa 111 kg phân bón. Nếu kho A nhận thêm 37 kg thì bằng số phân bón ở hợp tác xã. Hỏi cả hai nơi chứa bao nhiêu kg?
-
-Đọc vị: đây là dạng **Tổng – tỉ, hiệu – tỉ dạng ẩn**; dấu hiệu là Đề mô tả vòng thay vì cho số: “nếu … thì …”, “chia thành … phần”.
-
-Kiến thức phải dùng: Tỉ số, sơ đồ đoạn thẳng, dịch lời văn thành số.
-
-Cách làm: Dịch dữ kiện ẩn thành số rồi áp dạng chuẩn.
-
-Lối tắt: Kẻ sẵn ba dòng Tổng – Hiệu – Tỉ số, điền được hai dòng là giải được.
-
-Kết quả: **259 kg**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Đề không cho thẳng tổng, hiệu hay tỉ số mà mô tả vòng. Bước bắt buộc đầu tiên: **dịch câu mô tả thành một con số** rồi mới vẽ sơ đồ và giải như bài chuẩn.
-
-*Điểm chốt:* Dịch xong dữ kiện ẩn thì bài trở lại **đúng dạng chuẩn**.
-
-*Muốn khó hơn:* Giấu hai dữ kiện cùng lúc, buộc học sinh lập luận bắc cầu.
-
-*Phải chắc trước khi làm bài này:* Thành thạo bài tổng – tỉ và hiệu – tỉ ở dạng cho thẳng.
-
-### Bài D.3 — Tìm hai số khi biết hiệu và tỉ số
-
-> **BẪY — Hiệu số phần chứ không phải tổng số phần.**
-
-**Các bước giải**
-
-Xét ý a: Kho B chứa nhiều hơn kho A 42 kg gạo. Số gạo ở kho A bằng 1 phần 2 số gạo ở kho B. Mỗi nơi chứa bao nhiêu kg?
-
-Đọc vị: đây là dạng **Bài toán hiệu – tỉ**; dấu hiệu là Đề cho **hiệu** và **tỉ số**.
-
-Kiến thức phải dùng: Tỉ số, sơ đồ đoạn thẳng.
-
-Cách làm: Sơ đồ → hiệu số phần → giá trị một phần.
-
-Lối tắt: Hiệu luôn chia hết cho hiệu số phần — dùng để kiểm tra đã đọc đúng tỉ số chưa.
-
-Kết quả: **kho A: 42 kg, kho B: 84 kg**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Hiệu số phần = số phần lớn − số phần bé. Giá trị một phần = hiệu : hiệu số phần. Sau đó nhân với số phần của từng đại lượng.
-
-*Điểm chốt:* Chia cho **hiệu số phần**, không phải tổng số phần.
-
-### Bài D.4 — Tìm phân số của một số qua hai bước
-
-> **BẪY — Phân số của số còn lại, không phải của tổng.**
-
-**Các bước giải**
-
-Xét ý a: Một cửa hàng có 160 kg gạo. Ngày đầu bán 1 phần 5 số gạo, ngày thứ hai bán 1 phần 4 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
-
-Đọc vị: đây là dạng **Tìm phân số của một số, nhiều bước**; dấu hiệu là Cụm “… số còn lại”, “… số đó”.
-
-Kiến thức phải dùng: Tìm phân số của một số.
-
-Cách làm: Tính tuần tự, sau mỗi bước ghi lại số còn lại.
-
-Lối tắt: Còn lại sau ngày đầu là (1 − phân số) của tổng; nhân trực tiếp cho nhanh.
-
-Kết quả: **96 kg**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Bước 1: tính số gạo bán ngày đầu bằng cách lấy tổng nhân với phân số. Bước 2: tính số gạo **còn lại** sau ngày đầu. Bước 3: phân số của ngày thứ hai tính trên **số còn lại**, không phải trên tổng ban đầu.
-
-*Điểm chốt:* Cụm “số gạo **còn lại**” đổi hẳn số bị nhân ở bước hai.
-
-### Bài D.5 — Bài toán về tuổi
-
-**Các bước giải**
-
-Xét ý a: Tuổi bố gấp 5 lần tuổi con. Tổng số tuổi của hai bố con là 84 tuổi. Tính tuổi mỗi người.
+Xét ý a: Hiện nay bố 42 tuổi, con 14 tuổi. Sau 8 năm nữa, tổng số tuổi hai bố con là bao nhiêu?
 
 Đọc vị: đây là dạng **Bài toán tuổi**; dấu hiệu là Xuất hiện mốc thời gian: hiện nay, sau … năm, cách đây … năm.
 
@@ -484,11 +394,101 @@ Cách làm: Kẻ bảng thời gian, bám vào hiệu tuổi không đổi.
 
 Lối tắt: Tổng tuổi của n người sau k năm tăng thêm đúng n × k.
 
-Kết quả: **bố 70 tuổi, con 14 tuổi**.
+Kết quả: **72 tuổi**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** **Hiệu số tuổi của hai người không bao giờ thay đổi.** Còn tổng số tuổi thì mỗi năm tăng thêm đúng bằng số người. Tỉ số tuổi thì thay đổi theo từng năm.
 
 *Điểm chốt:* Hiệu tuổi là đại lượng **bất biến** — chìa khoá của mọi bài toán tuổi.
+
+### Bài D.2 — Tìm hai số khi biết hiệu và tỉ số
+
+> **BẪY — Hiệu số phần chứ không phải tổng số phần.**
+
+**Các bước giải**
+
+Xét ý a: Cửa hàng chứa nhiều hơn xưởng 106 kg xi măng. Số xi măng ở xưởng bằng 1 phần 2 số xi măng ở cửa hàng. Mỗi nơi chứa bao nhiêu kg?
+
+Đọc vị: đây là dạng **Bài toán hiệu – tỉ**; dấu hiệu là Đề cho **hiệu** và **tỉ số**.
+
+Kiến thức phải dùng: Tỉ số, sơ đồ đoạn thẳng.
+
+Cách làm: Sơ đồ → hiệu số phần → giá trị một phần.
+
+Lối tắt: Hiệu luôn chia hết cho hiệu số phần — dùng để kiểm tra đã đọc đúng tỉ số chưa.
+
+Kết quả: **xưởng: 106 kg, cửa hàng: 212 kg**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Hiệu số phần = số phần lớn − số phần bé. Giá trị một phần = hiệu : hiệu số phần. Sau đó nhân với số phần của từng đại lượng.
+
+*Điểm chốt:* Chia cho **hiệu số phần**, không phải tổng số phần.
+
+### Bài D.3 — Tìm phân số của một số qua hai bước
+
+> **BẪY — Phân số của số còn lại, không phải của tổng.**
+
+**Các bước giải**
+
+Xét ý a: Một cửa hàng có 500 kg gạo. Ngày đầu bán 1 phần 4 số gạo, ngày thứ hai bán 1 phần 5 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
+
+Đọc vị: đây là dạng **Tìm phân số của một số, nhiều bước**; dấu hiệu là Cụm “… số còn lại”, “… số đó”.
+
+Kiến thức phải dùng: Tìm phân số của một số.
+
+Cách làm: Tính tuần tự, sau mỗi bước ghi lại số còn lại.
+
+Lối tắt: Còn lại sau ngày đầu là (1 − phân số) của tổng; nhân trực tiếp cho nhanh.
+
+Kết quả: **300 kg**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Bước 1: tính số gạo bán ngày đầu bằng cách lấy tổng nhân với phân số. Bước 2: tính số gạo **còn lại** sau ngày đầu. Bước 3: phân số của ngày thứ hai tính trên **số còn lại**, không phải trên tổng ban đầu.
+
+*Điểm chốt:* Cụm “số gạo **còn lại**” đổi hẳn số bị nhân ở bước hai.
+
+### Bài D.4 — Tìm phân số của một số
+
+**Các bước giải**
+
+Xét ý a: Tổ Hai trồng được 20 cây. Số cây của nhóm Sao Mai bằng 1 phần 2 số cây của tổ Hai. Hỏi nhóm Sao Mai trồng được bao nhiêu cây?
+
+Đọc vị: đây là dạng **Tìm phân số của một số**; dấu hiệu là Cụm “bằng … của …”.
+
+Kiến thức phải dùng: Nhân số tự nhiên với phân số.
+
+Cách làm: Chia theo mẫu số rồi nhân theo tử số.
+
+Lối tắt: Chia trước, nhân sau — số nhỏ hơn nên tính nhẩm được.
+
+Kết quả: **10 cây**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Muốn tìm phân số của một số, ta lấy số đó nhân với phân số. Cách hiểu: chia số đó thành số phần bằng mẫu số, rồi lấy số phần bằng tử số.
+
+*Điểm chốt:* Phân số tính trên **số nào** — đọc kĩ cụm “… của …”.
+
+### Bài D.5 — Tổng – tỉ, hiệu – tỉ khi một dữ kiện bị giấu
+
+> **BẪY — Dữ kiện bị giấu sau một câu mô tả.**
+
+**Các bước giải**
+
+Xét ý a: Số thóc ở trang trại bằng 3 số thóc ở thư viện. Nếu chuyển 21 kg từ trang trại sang thư viện thì trang trại vẫn còn nhiều hơn. Biết trang trại hơn thư viện 42 kg, tìm số thóc mỗi nơi.
+
+Đọc vị: đây là dạng **Tổng – tỉ, hiệu – tỉ dạng ẩn**; dấu hiệu là Đề mô tả vòng thay vì cho số: “nếu … thì …”, “chia thành … phần”.
+
+Kiến thức phải dùng: Tỉ số, sơ đồ đoạn thẳng, dịch lời văn thành số.
+
+Cách làm: Dịch dữ kiện ẩn thành số rồi áp dạng chuẩn.
+
+Lối tắt: Kẻ sẵn ba dòng Tổng – Hiệu – Tỉ số, điền được hai dòng là giải được.
+
+Kết quả: **thư viện: 21 kg, trang trại: 63 kg**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Đề không cho thẳng tổng, hiệu hay tỉ số mà mô tả vòng. Bước bắt buộc đầu tiên: **dịch câu mô tả thành một con số** rồi mới vẽ sơ đồ và giải như bài chuẩn.
+
+*Điểm chốt:* Dịch xong dữ kiện ẩn thì bài trở lại **đúng dạng chuẩn**.
+
+*Muốn khó hơn:* Giấu hai dữ kiện cùng lúc, buộc học sinh lập luận bắc cầu.
+
+*Phải chắc trước khi làm bài này:* Thành thạo bài tổng – tỉ và hiệu – tỉ ở dạng cho thẳng.
 
 ### Bài E.1 — Đọc vị đề số 1
 
@@ -613,11 +613,11 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | C.3 | Chu vi, diện tích trong tình huống thực tế | Công thức chu vi, diện tích; phép chia | Từ khoá “rào xung quanh”, “lát gạch”, “trồng cây quanh” | Đọc vị chu vi hay diện tích rồi tính | Nhìn đơn vị của đáp số: mét thì là chu vi, mét vuông thì là diện tích. | không chia hết (174 m không chia hết cho 4 m) · 160 m · 17 viên (làm tròn lên) · 98 cây |
 | C.4 | Đếm số hạng của dãy cách đều theo điều kiện chia hết | Dãy số cách đều, dấu hiệu chia hết | Cụm “có bao nhiêu số … từ … đến …” | Tìm số đầu, số cuối hợp lệ rồi dùng công thức đếm | Số các số chia hết cho d từ 1 đến n bằng phần nguyên của n : d, nên đếm từ a đến b là b : d trừ đi (a − 1) : d. | 153 · 195 · 169 · 112… |
 | C.5 | Kiểm tra chia hết bằng dấu hiệu | Dấu hiệu chia hết cho 2, 3, 5, 9 | Câu hỏi “có chia hết cho … không” | Chọn đúng dấu hiệu theo số chia rồi kiểm tra | Cộng chữ số theo cặp tròn 9, phần dư chính là số dư khi chia 9. | có (tổng chữ số 24) · không (chữ số tận cùng 4) · có (chữ số tận cùng 4) · có (tổng chữ số 24)… |
-| D.1 | Tính thời điểm trong ngày | Quan hệ giờ – phút, phép chia có dư | Cho thời điểm bắt đầu và khoảng thời gian | Quy về phút, cộng trừ, đổi lại | Cộng tròn giờ trước rồi cộng phần phút lẻ sau. | 16 giờ 21 phút · 12 giờ 43 phút · 13 giờ 47 phút · 14 giờ 15 phút… |
-| D.2 | Tổng – tỉ, hiệu – tỉ dạng ẩn | Tỉ số, sơ đồ đoạn thẳng, dịch lời văn thành số | Đề mô tả vòng thay vì cho số: “nếu … thì …”, “chia thành … phần” | Dịch dữ kiện ẩn thành số rồi áp dạng chuẩn | Kẻ sẵn ba dòng Tổng – Hiệu – Tỉ số, điền được hai dòng là giải được. | 259 kg · hợp tác xã: 26 kg, kho B: 52 kg · thư viện: 51 kg, hợp tác xã: 68 kg · kho B: 81 kg, cửa hàng: 108 kg |
-| D.3 | Bài toán hiệu – tỉ | Tỉ số, sơ đồ đoạn thẳng | Đề cho **hiệu** và **tỉ số** | Sơ đồ → hiệu số phần → giá trị một phần | Hiệu luôn chia hết cho hiệu số phần — dùng để kiểm tra đã đọc đúng tỉ số chưa. | kho A: 42 kg, kho B: 84 kg · kho A: 180 kg, xưởng: 300 kg · thư viện: 42 kg, kho A: 252 kg · trang trại: 297 kg, xưởng: 594 kg… |
-| D.4 | Tìm phân số của một số, nhiều bước | Tìm phân số của một số | Cụm “… số còn lại”, “… số đó” | Tính tuần tự, sau mỗi bước ghi lại số còn lại | Còn lại sau ngày đầu là (1 − phân số) của tổng; nhân trực tiếp cho nhanh. | 96 kg · 80 kg · 76 kg · 336 kg… |
-| D.5 | Bài toán tuổi | Bất biến hiệu số tuổi, tổng – hiệu, tổng – tỉ | Xuất hiện mốc thời gian: hiện nay, sau … năm, cách đây … năm | Kẻ bảng thời gian, bám vào hiệu tuổi không đổi | Tổng tuổi của n người sau k năm tăng thêm đúng n × k. | bố 70 tuổi, con 14 tuổi · 70 tuổi · bố 50 tuổi, con 10 tuổi · bố 56 tuổi, con 14 tuổi… |
+| D.1 | Bài toán tuổi | Bất biến hiệu số tuổi, tổng – hiệu, tổng – tỉ | Xuất hiện mốc thời gian: hiện nay, sau … năm, cách đây … năm | Kẻ bảng thời gian, bám vào hiệu tuổi không đổi | Tổng tuổi của n người sau k năm tăng thêm đúng n × k. | 72 tuổi · 44 tuổi · 44 tuổi · 36 tuổi |
+| D.2 | Bài toán hiệu – tỉ | Tỉ số, sơ đồ đoạn thẳng | Đề cho **hiệu** và **tỉ số** | Sơ đồ → hiệu số phần → giá trị một phần | Hiệu luôn chia hết cho hiệu số phần — dùng để kiểm tra đã đọc đúng tỉ số chưa. | xưởng: 106 kg, cửa hàng: 212 kg · trang trại: 90 kg, kho B: 450 kg · hợp tác xã: 115 kg, kho B: 161 kg · kho B: 186 kg, thư viện: 434 kg |
+| D.3 | Tìm phân số của một số, nhiều bước | Tìm phân số của một số | Cụm “… số còn lại”, “… số đó” | Tính tuần tự, sau mỗi bước ghi lại số còn lại | Còn lại sau ngày đầu là (1 − phân số) của tổng; nhân trực tiếp cho nhanh. | 300 kg · 72 kg · 84 kg · 10 kg… |
+| D.4 | Tìm phân số của một số | Nhân số tự nhiên với phân số | Cụm “bằng … của …” | Chia theo mẫu số rồi nhân theo tử số | Chia trước, nhân sau — số nhỏ hơn nên tính nhẩm được. | 10 cây · 84 cây · 114 cây · 27 cây… |
+| D.5 | Tổng – tỉ, hiệu – tỉ dạng ẩn | Tỉ số, sơ đồ đoạn thẳng, dịch lời văn thành số | Đề mô tả vòng thay vì cho số: “nếu … thì …”, “chia thành … phần” | Dịch dữ kiện ẩn thành số rồi áp dạng chuẩn | Kẻ sẵn ba dòng Tổng – Hiệu – Tỉ số, điền được hai dòng là giải được. | thư viện: 21 kg, trang trại: 63 kg · thư viện: 99 kg, xưởng: 132 kg · 152 kg · 228 kg |
 | E.1 | Tổng – tỉ có tỉ số thay đổi | Tổng – tỉ, đại lượng không đổi | “Phải thêm (bớt) bao nhiêu để tỉ số trở thành …” | Xác định đại lượng bất biến → tính lại đại lượng kia | Số cần thêm = số bé × (tỉ số mới − tỉ số cũ). | Tổng – tỉ có tỉ số thay đổi · “Phải thêm (bớt) bao nhiêu để tỉ số trở thành …” · Tổng – tỉ, đại lượng không đổi · Xác định đại lượng bất biến → tính lại đại lượng kia… |
 | E.2 | Tìm phân số của một số, nhiều bước | Tìm phân số của một số | Cụm “… số còn lại”, “… số đó” | Tính tuần tự, sau mỗi bước ghi lại số còn lại | Còn lại sau ngày đầu là (1 − phân số) của tổng; nhân trực tiếp cho nhanh. | Tìm phân số của một số, nhiều bước · Cụm “… số còn lại”, “… số đó” · Tìm phân số của một số · Tính tuần tự, sau mỗi bước ghi lại số còn lại… |
 | E.3 | Rút về đơn vị | Đại lượng tỉ lệ thuận, phép chia và phép nhân | Cho giá trị của một nhóm, hỏi giá trị của nhóm khác cùng loại | Chia để rút về một đơn vị rồi nhân | Nếu số bao mới gấp đôi số bao cũ thì khối lượng cũng gấp đôi — dùng tỉ số để bỏ qua bước chia. | Rút về đơn vị · Cho giá trị của một nhóm, hỏi giá trị của nhóm khác cùng loại · Đại lượng tỉ lệ thuận, phép chia và phép nhân · Chia để rút về một đơn vị rồi nhân… |
@@ -645,11 +645,11 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | C.3 | TD2, TD3 | “Xung quanh” → chu vi; “khắp mặt” → diện tích. |
 | C.4 | TD4, TD1 | Công thức có **+ 1** ở cuối; quên cộng 1 là sai một đơn vị. |
 | C.5 | TD1, TD5 | Dấu hiệu cho 2 và 5 nhìn **đuôi**; dấu hiệu cho 3 và 9 nhìn **tổng**. |
-| D.1 | TD3, TD2 | Đổi hết về phút rồi mới cộng — an toàn hơn cộng trực tiếp. |
-| D.2 | TD2, TD6 | Dịch xong dữ kiện ẩn thì bài trở lại **đúng dạng chuẩn**. |
-| D.3 | TD3, TD2 | Chia cho **hiệu số phần**, không phải tổng số phần. |
-| D.4 | TD2, TD3 | Cụm “số gạo **còn lại**” đổi hẳn số bị nhân ở bước hai. |
-| D.5 | TD2, TD6 | Hiệu tuổi là đại lượng **bất biến** — chìa khoá của mọi bài toán tuổi. |
+| D.1 | TD2, TD6 | Hiệu tuổi là đại lượng **bất biến** — chìa khoá của mọi bài toán tuổi. |
+| D.2 | TD3, TD2 | Chia cho **hiệu số phần**, không phải tổng số phần. |
+| D.3 | TD2, TD3 | Cụm “số gạo **còn lại**” đổi hẳn số bị nhân ở bước hai. |
+| D.4 | TD2, TD3 | Phân số tính trên **số nào** — đọc kĩ cụm “… của …”. |
+| D.5 | TD2, TD6 | Dịch xong dữ kiện ẩn thì bài trở lại **đúng dạng chuẩn**. |
 | E.1 | TD2, TD6 | Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**. |
 | E.2 | TD2, TD6 | Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**. |
 | E.3 | TD2, TD6 | Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**. |
@@ -679,11 +679,11 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 | C.3 | Lấy chu vi để tính số gạch lát nền. | Gạch chân từ khoá chỉ vị trí: xung quanh, bao quanh, khắp, phủ kín. |
 | C.4 | Lấy luôn hai đầu khoảng làm số đầu và số cuối của dãy dù chúng không thoả điều kiện. | Viết ra ba số đầu và ba số cuối của dãy trước khi áp công thức. |
 | C.5 | Dùng dấu hiệu của 3 để kết luận cho 2, hoặc cộng thiếu một chữ số. | Viết rõ tổng các chữ số ra bên cạnh trước khi kết luận. |
-| D.1 | Cộng phần phút thành hơn 60 mà quên đổi thành giờ. | Kiểm tra phần phút của đáp số phải bé hơn 60. |
-| D.2 | Lao vào tính khi chưa xác định được tổng, hiệu hay tỉ số. | Viết ba dòng trước khi tính: Tổng = … ; Hiệu = … ; Tỉ số = … ; dòng nào chưa biết thì để trống và đi tìm. |
-| D.3 | Dùng nhầm công thức của tổng – tỉ cho bài hiệu – tỉ. | Đọc kĩ: đề cho “tổng” hay cho “nhiều hơn”? Ghi rõ ra trước khi vẽ. |
-| D.4 | Lấy cả hai phân số nhân với tổng ban đầu. | Sau mỗi bước, viết rõ “còn lại … kg” rồi mới sang bước sau. |
-| D.5 | Cộng thêm số năm vào cả hiệu số tuổi. | Kẻ bảng ba dòng: trước kia – hiện nay – sau này, ghi rõ tuổi từng người. |
+| D.1 | Cộng thêm số năm vào cả hiệu số tuổi. | Kẻ bảng ba dòng: trước kia – hiện nay – sau này, ghi rõ tuổi từng người. |
+| D.2 | Dùng nhầm công thức của tổng – tỉ cho bài hiệu – tỉ. | Đọc kĩ: đề cho “tổng” hay cho “nhiều hơn”? Ghi rõ ra trước khi vẽ. |
+| D.3 | Lấy cả hai phân số nhân với tổng ban đầu. | Sau mỗi bước, viết rõ “còn lại … kg” rồi mới sang bước sau. |
+| D.4 | Nhân phân số với đại lượng khác, không phải đại lượng đề chỉ định. | Gạch chân cụm “bằng … số cây của …” để xác định số bị nhân. |
+| D.5 | Lao vào tính khi chưa xác định được tổng, hiệu hay tỉ số. | Viết ba dòng trước khi tính: Tổng = … ; Hiệu = … ; Tỉ số = … ; dòng nào chưa biết thì để trống và đi tìm. |
 | E.1 | Lấy hiệu hai tỉ số nhân với tổng ban đầu. | Viết rõ ba dòng: số bé, số lớn cũ, số lớn mới. |
 | E.2 | Lấy cả hai phân số nhân với tổng ban đầu. | Sau mỗi bước, viết rõ “còn lại … kg” rồi mới sang bước sau. |
 | E.3 | Nhân ngay hai số đã cho mà bỏ qua bước chia. | Viết rõ câu “Một bao nặng … kg” trước khi làm bước hai. |
@@ -711,11 +711,11 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 **Bài C.3** — (1) Việc cần làm diễn ra ở viền hay ở mặt trong? — (2) Ở viền thì tính chu vi, ở mặt trong thì tính diện tích. — (3) Chia cho kích thước của một đơn vị (một viên gạch, một khoảng cây).
 **Bài C.4** — (1) Số đầu tiên trong khoảng thoả điều kiện là số nào? — (2) Số cuối cùng trong khoảng thoả điều kiện là số nào? — (3) Số lượng = (cuối − đầu) : khoảng cách + 1.
 **Bài C.5** — (1) Số chia là 2 hay 5 thì nhìn chữ số tận cùng. — (2) Số chia là 3 hay 9 thì cộng các chữ số. — (3) Tổng chữ số vẫn lớn thì cộng tiếp lần nữa.
-**Bài D.1** — (1) Đổi giờ khởi hành ra phút tính từ 0 giờ. — (2) Cộng thêm thời gian đi (tính bằng phút). — (3) Đổi tổng số phút trở lại thành giờ và phút.
-**Bài D.2** — (1) Đề đã cho tổng chưa? Cho hiệu chưa? Cho tỉ số chưa? — (2) Câu nào trong đề đang mô tả cái còn thiếu? — (3) Dịch câu đó thành một con số rồi giải như bài chuẩn.
-**Bài D.3** — (1) Đề cho tổng hay cho hiệu? — (2) Vẽ sơ đồ, phần dôi ra ứng với hiệu. — (3) Hiệu chia cho hiệu số phần ra giá trị một phần.
-**Bài D.4** — (1) Ngày đầu bán bao nhiêu ki-lô-gam? — (2) Sau ngày đầu còn lại bao nhiêu? — (3) Phân số của ngày thứ hai tính trên số nào?
-**Bài D.5** — (1) Sau mỗi năm, mỗi người tăng thêm mấy tuổi? — (2) Hiệu số tuổi có thay đổi không? — (3) Tổng số tuổi hai người tăng thêm bao nhiêu sau mỗi năm?
+**Bài D.1** — (1) Sau mỗi năm, mỗi người tăng thêm mấy tuổi? — (2) Hiệu số tuổi có thay đổi không? — (3) Tổng số tuổi hai người tăng thêm bao nhiêu sau mỗi năm?
+**Bài D.2** — (1) Đề cho tổng hay cho hiệu? — (2) Vẽ sơ đồ, phần dôi ra ứng với hiệu. — (3) Hiệu chia cho hiệu số phần ra giá trị một phần.
+**Bài D.3** — (1) Ngày đầu bán bao nhiêu ki-lô-gam? — (2) Sau ngày đầu còn lại bao nhiêu? — (3) Phân số của ngày thứ hai tính trên số nào?
+**Bài D.4** — (1) Phân số đó tính trên số nào? — (2) Chia số đó thành mấy phần bằng nhau? — (3) Lấy mấy phần trong số đó?
+**Bài D.5** — (1) Đề đã cho tổng chưa? Cho hiệu chưa? Cho tỉ số chưa? — (2) Câu nào trong đề đang mô tả cái còn thiếu? — (3) Dịch câu đó thành một con số rồi giải như bài chuẩn.
 **Bài E.1** — (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
 **Bài E.2** — (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
 **Bài E.3** — (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
@@ -745,11 +745,11 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | C.3 | Vườn dài 20 m rộng 10 m, rào xung quanh cần bao nhiêu mét rào? | 60 m |
 | C.4 | Có bao nhiêu số chẵn từ 10 đến 40? | 16 |
 | C.5 | Số 5 289 có chia hết cho 9 không? | không |
-| D.1 | Tàu chạy lúc 7 giờ 40 phút, đi hết 2 giờ 35 phút. Đến lúc mấy giờ? | 10 giờ 15 phút |
-| D.2 | Hai kho có 120 tấn, kho A bằng 1 phần 3 kho B. Mỗi kho bao nhiêu tấn? | 30 và 90 |
-| D.3 | Số lớn hơn số bé 24, số bé bằng 1 phần 3 số lớn. Tìm hai số. | 12 và 36 |
-| D.4 | Có 60 kg gạo, bán 1 phần 3 rồi bán tiếp 1 phần 2 số còn lại. Còn bao nhiêu? | 20 kg |
-| D.5 | Bố hơn con 30 tuổi. Sau 5 năm nữa bố hơn con bao nhiêu tuổi? | 30 tuổi |
+| D.1 | Bố hơn con 30 tuổi. Sau 5 năm nữa bố hơn con bao nhiêu tuổi? | 30 tuổi |
+| D.2 | Số lớn hơn số bé 24, số bé bằng 1 phần 3 số lớn. Tìm hai số. | 12 và 36 |
+| D.3 | Có 60 kg gạo, bán 1 phần 3 rồi bán tiếp 1 phần 2 số còn lại. Còn bao nhiêu? | 20 kg |
+| D.4 | Tổ Một trồng 60 cây, tổ Hai bằng 2 phần 3 tổ Một. Tổ Hai trồng mấy cây? | 40 cây |
+| D.5 | Hai kho có 120 tấn, kho A bằng 1 phần 3 kho B. Mỗi kho bao nhiêu tấn? | 30 và 90 |
 | E.1 | Số lớn gấp 2 lần số bé, tổng là 30. Thêm bao nhiêu vào số lớn để nó gấp 4 lần số bé? | 20 |
 | E.2 | Có 60 kg gạo, bán 1 phần 3 rồi bán tiếp 1 phần 2 số còn lại. Còn bao nhiêu? | 20 kg |
 | E.3 | 5 bao gạo nặng 250 kg. Hỏi 8 bao nặng bao nhiêu kg? | 400 kg |

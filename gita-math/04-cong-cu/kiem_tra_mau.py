@@ -18,6 +18,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "04-cong-cu"))
 
 import sinh                                  # noqa: E402
+from data.phuong_phap import PHUONG_PHAP
 from sinh import KHO                         # noqa: E402
 from sinh.khung import khong_dau             # noqa: E402
 
@@ -76,6 +77,32 @@ def phu_dang_bai() -> list:
     return thieu
 
 
+def phu_phuong_phap() -> list[str]:
+    """Phương pháp nào chưa có mẫu bài nào dạy nó.
+
+    Đo trên trục thứ hai của chương trình. Kho được xây theo trục nội dung — bài
+    này nói về cái gì — nhưng tài liệu bồi dưỡng học sinh giỏi lại tổ chức theo
+    trục phương pháp: bài này giải bằng thủ pháp nào. Rà soát ngày 30/08/2026
+    tìm ra sáu phương pháp vắng hẳn khỏi cả kho; phép kiểm này canh không cho
+    chúng vắng trở lại.
+
+    Lưu ý một cái bẫy đã từng làm phép đo này báo sai: `khong_dau()` **không**
+    đổi "đ" thành "d", nên mọi từ khoá có chữ đ phải so bằng bản chuẩn hoá riêng
+    ở đây, không dùng lại `khong_dau`.
+    """
+    import unicodedata
+
+    def chuan(x: str) -> str:
+        x = x.replace("Đ", "D").replace("đ", "d")
+        return "".join(c for c in unicodedata.normalize("NFD", x)
+                       if unicodedata.category(c) != "Mn").lower()
+
+    kho = " | ".join(chuan(t) for g in KHO.values() for v in g.values()
+                     for m in v for t in list(m.dang_bai) + list(m.tu_khoa))
+    return [d["ten"] for d in PHUONG_PHAP.values()
+            if not any(chuan(t) in kho for t in d["tu_khoa"])]
+
+
 def main() -> int:
     hat = int(sys.argv[1]) if len(sys.argv) > 1 else 300
     print(f"KIỂM ĐỊNH THƯ VIỆN MẪU BÀI — {hat} hạt giống mỗi mẫu × lớp\n" + "─" * 72)
@@ -102,6 +129,10 @@ def main() -> int:
     print(f"  {V if not thieu_dang else X} Mọi dạng bài trong ngân hàng đều có mẫu khớp"
           + ("" if not thieu_dang else f" — thiếu {len(thieu_dang)}: {thieu_dang[:5]}"))
 
+    thieu_pp = phu_phuong_phap()
+    print(f"  {V if not thieu_pp else X} Mọi phương pháp giải đều có mẫu bài dạy nó"
+          + ("" if not thieu_pp else f" — vắng: {', '.join(thieu_pp)}"))
+
     loi, n = {}, 0
     for g in KHO:
         for m in KHO[g]:
@@ -125,13 +156,15 @@ def main() -> int:
         print(f"      {D}lớp {lp}: {c} mẫu dùng được\033[0m")
 
     print("─" * 72)
-    if loi or trong or mong or thieu_dang:
+    if loi or trong or mong or thieu_dang or thieu_pp:
         print(f"\033[31m\033[1m  KẾT LUẬN: CÒN LỖI — {len(loi)} mẫu hỏng, "
               f"{len(trong)} ô trống, {len(mong)} ô mỏng, "
-              f"{len(thieu_dang)} dạng bài chưa phủ\033[0m")
+              f"{len(thieu_dang)} dạng bài chưa phủ, "
+              f"{len(thieu_pp)} phương pháp chưa có mẫu\033[0m")
         return 1
     print(f"\033[32m\033[1m  KẾT LUẬN: SẠCH LỖI · {tong_mau} mẫu · "
-          f"{n:,} bài sinh thử · 538/538 dạng bài đã phủ\033[0m".replace(",", " "))
+          f"{n:,} bài sinh thử · 538/538 dạng bài · "
+          f"{len(PHUONG_PHAP)}/{len(PHUONG_PHAP)} phương pháp đã phủ\033[0m".replace(",", " "))
     return 0
 
 

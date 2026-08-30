@@ -42,64 +42,68 @@ Phiếu lời giải và phân tích chuyên sâu đi kèm: `GITA-T1-L5-C03-KN-G
 Họ và tên: ......................................... Lớp: ......... Điểm: ......../100
 
 > **KIẾN THỨC NỀN CỦA CHƯƠNG**
-> 1. s = v × t
-> 2. Bất biến hiệu số tuổi, tổng – hiệu, tổng – tỉ
-> 3. Tìm phân số của một số
-> 4. Công thức tổng – hiệu, sơ đồ đoạn thẳng
+> 1. Năng suất, cộng và chia phân số
+> 2. Tỉ số, sơ đồ đoạn thẳng, chia theo tỉ lệ
+> 3. Quan hệ quãng đường – vận tốc – thời gian
+> 4. Phép nhân, phép chia; so sánh hai tình huống
 
 ---
 
 ## PHẦN A — CỦNG CỐ NỀN — 30 CÂU TỐC ĐỘ · Mức M1 — Nhận biết · 20 phút · 25 điểm
 
-### Bài 1. (5 điểm) Quãng đường – vận tốc – thời gian
-
-Ghi rõ đơn vị của từng đại lượng.
-
-a) Một người đi xe đạp với vận tốc 20 km/giờ trong 6 giờ. Tính quãng đường đi được.
-b) Một người đi 240 km hết 6 giờ. Tính vận tốc.
-c) Một người đi quãng đường 25 km với vận tốc 5 km/giờ. Tính thời gian đi.
-d) Một người đi quãng đường 60 km với vận tốc 12 km/giờ. Tính thời gian đi.
-e) Một người đi 108 km hết 3 giờ. Tính vận tốc.
-
-### Bài 2. (5 điểm) Nhiều hơn – ít hơn, gấp – kém
+### Bài 1. (5 điểm) Nhiều hơn – ít hơn, gấp – kém
 
 Đọc kĩ rồi trả lời từng câu.
 
-a) Khánh có 40 quyển vở, Hà có nhiều hơn Khánh 17 quyển. Hà có bao nhiêu quyển vở?
-b) Khánh có 208 quyển vở, số vở của Hà kém 4 lần số vở của Khánh. Hà có bao nhiêu quyển vở?
-c) Khánh có 42 quyển vở, Hà có số vở gấp 2 lần Khánh. Hà có bao nhiêu quyển vở?
-d) Khánh có 77 quyển vở, Hà có ít hơn Khánh 24 quyển. Hà có bao nhiêu quyển vở?
-e) Khánh có 39 quyển vở, Hà có ít hơn Khánh 9 quyển. Hà có bao nhiêu quyển vở?
+a) Sơn có 47 quyển vở, Đức có nhiều hơn Sơn 29 quyển. Đức có bao nhiêu quyển vở?
+b) Sơn có 49 quyển vở, Đức có số vở gấp 5 lần Sơn. Đức có bao nhiêu quyển vở?
+c) Sơn có 220 quyển vở, số vở của Đức kém 5 lần số vở của Sơn. Đức có bao nhiêu quyển vở?
+d) Sơn có 55 quyển vở, Đức có ít hơn Sơn 7 quyển. Đức có bao nhiêu quyển vở?
 
-### Bài 3. (5 điểm) Tìm trung bình cộng của nhiều số
-
-Tính trung bình cộng.
-
-a) Tìm trung bình cộng của 2 số: 208, 190.
-b) Tìm trung bình cộng của 3 số: 57, 50, 46.
-c) Tìm trung bình cộng của 4 số: 117, 101, 122, 112.
-d) Tìm trung bình cộng của 5 số: 131, 112, 109, 121, 122.
-e) Tìm trung bình cộng của 5 số: 99, 96, 91, 93, 101.
-f) Tìm trung bình cộng của 4 số: 61, 52, 66, 73.
-
-### Bài 4. (5 điểm) Tìm hai số khi biết tổng và hiệu
+### Bài 2. (5 điểm) Tìm hai số khi biết tổng và hiệu
 
 Tìm hai số trong mỗi trường hợp.
 
-a) Tổng hai số là 810, hiệu hai số là 88. Tìm hai số đó.
-b) Tổng hai số là 328, hiệu hai số là 78. Tìm hai số đó.
-c) Tổng hai số là 732, hiệu hai số là 34. Tìm hai số đó.
-d) Tổng hai số là 296, hiệu hai số là 16. Tìm hai số đó.
+a) Tổng hai số là 1 224, hiệu hai số là 86. Tìm hai số đó.
+b) Tổng hai số là 1 802, hiệu hai số là 52. Tìm hai số đó.
+c) Tổng hai số là 852, hiệu hai số là 194. Tìm hai số đó.
+d) Tổng hai số là 66, hiệu hai số là 8. Tìm hai số đó.
+e) Tổng hai số là 44, hiệu hai số là 6. Tìm hai số đó.
+
+### Bài 3. (5 điểm) Quãng đường – vận tốc – thời gian
+
+Ghi rõ đơn vị của từng đại lượng.
+
+a) Một người đi xe đạp với vận tốc 12 km/giờ trong 5 giờ. Tính quãng đường đi được.
+b) Một người đi 160 km hết 4 giờ. Tính vận tốc.
+c) Một người đi quãng đường 270 km với vận tốc 45 km/giờ. Tính thời gian đi.
+d) Một người đi xe đạp với vận tốc 50 km/giờ trong 6 giờ. Tính quãng đường đi được.
+e) Một người đi 120 km hết 3 giờ. Tính vận tốc.
+f) Một người đi quãng đường 80 km với vận tốc 20 km/giờ. Tính thời gian đi.
+g) Một người đi 90 km hết 6 giờ. Tính vận tốc.
+
+### Bài 4. (5 điểm) Tìm trung bình cộng của nhiều số
+
+Tính trung bình cộng.
+
+a) Tìm trung bình cộng của 5 số: 206, 201, 189, 194, 210.
+b) Tìm trung bình cộng của 2 số: 98, 88.
+c) Tìm trung bình cộng của 4 số: 100, 116, 101, 115.
+d) Tìm trung bình cộng của 3 số: 39, 39, 36.
+e) Tìm trung bình cộng của 3 số: 124, 125, 117.
+f) Tìm trung bình cộng của 2 số: 87, 107.
+g) Tìm trung bình cộng của 4 số: 144, 124, 136, 136.
 
 ### Bài 5. (5 điểm) Bài toán rút về đơn vị
 
 Giải bằng phương pháp rút về đơn vị.
 
-a) 8 bao xi măng nặng 120 kg. Hỏi 15 bao như thế nặng bao nhiêu kg?
-b) 9 bao đường nặng 297 kg. Hỏi 19 bao như thế nặng bao nhiêu kg?
-c) 7 bao xi măng nặng 49 kg. Hỏi 11 bao như thế nặng bao nhiêu kg?
-d) 2 bao phân bón nặng 60 kg. Hỏi 15 bao như thế nặng bao nhiêu kg?
-e) 4 bao phân bón nặng 224 kg. Hỏi 5 bao như thế nặng bao nhiêu kg?
+a) 10 bao phân bón nặng 210 kg. Hỏi 2 bao như thế nặng bao nhiêu kg?
+b) 10 bao xi măng nặng 410 kg. Hỏi 8 bao như thế nặng bao nhiêu kg?
+c) 6 bao thóc nặng 60 kg. Hỏi 14 bao như thế nặng bao nhiêu kg?
+d) 9 bao đường nặng 396 kg. Hỏi 20 bao như thế nặng bao nhiêu kg?
+e) 10 bao phân bón nặng 540 kg. Hỏi 14 bao như thế nặng bao nhiêu kg?
+f) 11 bao muối nặng 55 kg. Hỏi 18 bao như thế nặng bao nhiêu kg?
 
 ---
 
@@ -119,11 +123,11 @@ e) Thiếu câu lời giải thì bị trừ bao nhiêu phần điểm của bà
 
 Với mỗi dạng bài, viết một câu lời giải mẫu.
 
-a) Câu lời giải mở đầu cho dạng “Ba dạng bài trung bình cộng”?
-b) Câu lời giải mở đầu cho dạng “Tìm phân số của một số, nhiều bước”?
-c) Câu lời giải mở đầu cho dạng “Tổng – tỉ có tỉ số thay đổi”?
-d) Câu lời giải mở đầu cho dạng “Đề tổng hợp nhiều mạch”?
-e) Câu lời giải mở đầu cho dạng “Ba dạng cơ bản của chuyển động đều”?
+a) Câu lời giải mở đầu cho dạng “Bài toán tổng – hiệu”?
+b) Câu lời giải mở đầu cho dạng “Phương pháp thay thế”?
+c) Câu lời giải mở đầu cho dạng “Tổng nhiều số có ràng buộc; tổng – tỉ”?
+d) Câu lời giải mở đầu cho dạng “Tỉ lệ bản đồ, tỉ lệ xích”?
+e) Câu lời giải mở đầu cho dạng “Tổng – tỉ có tỉ số thay đổi”?
 
 ### Bài 3. (3 điểm) Ghi đơn vị đúng chỗ
 
@@ -140,12 +144,12 @@ f) Vận tốc ghi đơn vị gì?
 
 Mỗi ý nêu một lỗi. Hãy nói cách sửa.
 
-a) Lỗi: Đi tìm ngay số còn thiếu mà chưa tính tổng. — cách phòng?
-b) Lỗi: Lấy cả hai phân số nhân với tổng ban đầu. — cách phòng?
-c) Lỗi: Lấy hiệu hai tỉ số nhân với tổng ban đầu. — cách phòng?
-d) Lỗi: Ý thứ năm tính phần trăm trên giá ban đầu thay vì trên giá vừa tăng. — cách phòng?
-e) Lỗi: Vận tốc km/giờ nhưng thời gian lại để bằng phút. — cách phòng?
-f) Lỗi: Cộng hai khoảng thời gian rồi chia đôi. — cách phòng?
+a) Lỗi: Lấy (tổng + hiệu) : 2 rồi gọi đó là số bé. — cách phòng?
+b) Lỗi: Tính ra giá loại chuẩn rồi dừng, quên nhân lên cho loại kia. — cách phòng?
+c) Lỗi: Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. — cách phòng?
+d) Lỗi: Đổi mét sang xăng-ti-mét ngay từ đầu rồi lại nhân tỉ lệ một lần nữa. — cách phòng?
+e) Lỗi: Lấy hiệu hai tỉ số nhân với tổng ban đầu. — cách phòng?
+f) Lỗi: Vận tốc km/giờ nhưng thời gian lại để bằng phút. — cách phòng?
 
 ### Bài 5. (3 điểm) Tự chấm bài theo thang điểm
 
@@ -173,7 +177,7 @@ e) Dò ba tầng mất bao lâu cho một bài?
 
 ### Bài 2. (3 điểm) Dò soát tình huống 1
 
-**Tình huống:** một bạn làm bài dạng “Ba dạng bài trung bình cộng” và mắc lỗi: Đi tìm ngay số còn thiếu mà chưa tính tổng.
+**Tình huống:** một bạn làm bài dạng “Bài toán tổng – hiệu” và mắc lỗi: Lấy (tổng + hiệu) : 2 rồi gọi đó là số bé.
 
 a) Lỗi này bị bắt ở tầng dò soát nào?
 b) Cách phòng lỗi này là gì?
@@ -183,7 +187,7 @@ e) Điểm chốt của dạng này là gì?
 
 ### Bài 3. (3 điểm) Dò soát tình huống 2
 
-**Tình huống:** một bạn làm bài dạng “Đề tổng hợp nhiều mạch” và mắc lỗi: Ý thứ năm tính phần trăm trên giá ban đầu thay vì trên giá vừa tăng.
+**Tình huống:** một bạn làm bài dạng “Tỉ lệ bản đồ, tỉ lệ xích” và mắc lỗi: Đổi mét sang xăng-ti-mét ngay từ đầu rồi lại nhân tỉ lệ một lần nữa.
 
 a) Lỗi này bị bắt ở tầng dò soát nào?
 b) Cách phòng lỗi này là gì?
@@ -193,7 +197,7 @@ e) Điểm chốt của dạng này là gì?
 
 ### Bài 4. (3 điểm) Dò soát tình huống 3
 
-**Tình huống:** một bạn làm bài dạng “Bài toán tổng – hiệu” và mắc lỗi: Lấy (tổng + hiệu) : 2 rồi gọi đó là số bé.
+**Tình huống:** một bạn làm bài dạng “Công việc chung” và mắc lỗi: Cộng hai khoảng thời gian rồi chia đôi.
 
 a) Lỗi này bị bắt ở tầng dò soát nào?
 b) Cách phòng lỗi này là gì?
@@ -203,7 +207,7 @@ e) Điểm chốt của dạng này là gì?
 
 ### Bài 5. (3 điểm) Dò soát tình huống 4
 
-**Tình huống:** một bạn làm bài dạng “Chia tỉ lệ nhiều phần; bài toán trộn” và mắc lỗi: Chia tổng cho 3 vì thấy có ba tổ.
+**Tình huống:** một bạn làm bài dạng “Chuyển động ngược chiều, tính quãng đường từng xe” và mắc lỗi: Chia quãng đường theo tỉ lệ sai, hoặc lấy quãng đường chia đôi.
 
 a) Lỗi này bị bắt ở tầng dò soát nào?
 b) Cách phòng lỗi này là gì?
@@ -225,7 +229,7 @@ c) Mỗi nhánh chính đặt tên theo gì?
 d) Mỗi nhánh chính có mấy nhánh con bắt buộc?
 e) Vẽ xong, tự chấm bằng cách nào?
 
-### Bài 2. (5 điểm) Nhánh 1 — Tìm phân số của một số, nhiều bước
+### Bài 2. (5 điểm) Nhánh 1 — Phương pháp thay thế
 
 Điền ba nhánh con bắt buộc của nhánh này.
 
@@ -235,7 +239,7 @@ c) Nhánh con 3 — lỗi hay mắc?
 d) Ghi thêm: kiến thức phải thuộc?
 e) Ghi thêm: cách xử lý nhanh nhất?
 
-### Bài 3. (5 điểm) Nhánh 2 — Đề tổng hợp nhiều mạch
+### Bài 3. (5 điểm) Nhánh 2 — Tỉ lệ bản đồ, tỉ lệ xích
 
 Điền ba nhánh con bắt buộc của nhánh này.
 
@@ -245,7 +249,7 @@ c) Nhánh con 3 — lỗi hay mắc?
 d) Ghi thêm: kiến thức phải thuộc?
 e) Ghi thêm: cách xử lý nhanh nhất?
 
-### Bài 4. (5 điểm) Nhánh 3 — Công việc chung
+### Bài 4. (5 điểm) Nhánh 3 — Ba dạng cơ bản của chuyển động đều
 
 Điền ba nhánh con bắt buộc của nhánh này.
 
@@ -255,7 +259,7 @@ c) Nhánh con 3 — lỗi hay mắc?
 d) Ghi thêm: kiến thức phải thuộc?
 e) Ghi thêm: cách xử lý nhanh nhất?
 
-### Bài 5. (5 điểm) Nhánh 4 — Tỉ số phần trăm trong mua bán
+### Bài 5. (5 điểm) Nhánh 4 — Chuyển động trên dòng nước
 
 Điền ba nhánh con bắt buộc của nhánh này.
 
@@ -280,7 +284,7 @@ d) Phút 4 nói gì?
 e) Phút 5 nói gì?
 f) Ai trong nhóm nói phần nào?
 
-### Bài 2. (4 điểm) Nội dung giảng — Ba dạng bài trung bình cộng
+### Bài 2. (4 điểm) Nội dung giảng — Bài toán tổng – hiệu
 
 Chuẩn bị nội dung để giảng dạng bài này cho lớp.
 
@@ -291,7 +295,7 @@ d) Ví dụ mẫu em sẽ giảng?
 e) Lỗi em sẽ cảnh báo cho lớp?
 f) Mẹo nhanh em sẽ tặng lớp?
 
-### Bài 3. (4 điểm) Nội dung giảng — Tổng – tỉ có tỉ số thay đổi
+### Bài 3. (4 điểm) Nội dung giảng — Tổng nhiều số có ràng buộc; tổng – tỉ
 
 Chuẩn bị nội dung để giảng dạng bài này cho lớp.
 
@@ -302,7 +306,7 @@ d) Ví dụ mẫu em sẽ giảng?
 e) Lỗi em sẽ cảnh báo cho lớp?
 f) Mẹo nhanh em sẽ tặng lớp?
 
-### Bài 4. (4 điểm) Nội dung giảng — Ba dạng cơ bản của chuyển động đều
+### Bài 4. (4 điểm) Nội dung giảng — Tổng – tỉ có tỉ số thay đổi
 
 Chuẩn bị nội dung để giảng dạng bài này cho lớp.
 
@@ -313,7 +317,7 @@ d) Ví dụ mẫu em sẽ giảng?
 e) Lỗi em sẽ cảnh báo cho lớp?
 f) Mẹo nhanh em sẽ tặng lớp?
 
-### Bài 5. (4 điểm) Nội dung giảng — Bài toán tổng – hiệu
+### Bài 5. (4 điểm) Nội dung giảng — Công việc chung
 
 Chuẩn bị nội dung để giảng dạng bài này cho lớp.
 
@@ -331,31 +335,31 @@ f) Mẹo nhanh em sẽ tặng lớp?
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài A.1
-**Đáp số:** a) 120 km · b) 40 km/giờ · c) 5 giờ · d) 5 giờ · e) 36 km/giờ
-**Hướng giải:** BẪY — Đơn vị thời gian. Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng kia.
-**Lỗi thường gặp:** Vận tốc km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
-
-### Bài A.2
-**Đáp số:** a) 57 · b) 52 · c) 84 · d) 53 · e) 30
+**Đáp số:** a) 76 · b) 245 · c) 44 · d) 48
 **Hướng giải:** BẪY — Gấp và kém dùng hai phép tính ngược nhau. “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
 
-### Bài A.3
-**Đáp số:** a) 199 · b) 51 · c) 113 · d) 119 · e) 96 · f) 63
-**Hướng giải:** Trung bình cộng của nhiều số bằng tổng các số đó chia cho số lượng các số. Cộng cho hết rồi mới chia, không chia từng số một.
-**Nhãn tư duy:** TD1. Điểm chốt: Chia cho **số lượng số hạng**, không phải chia cho một số bất kì.
-**Lỗi thường gặp:** Đếm sai số lượng số hạng nên chia nhầm. Phòng: Đánh số thứ tự từng số trước khi cộng.
-
-### Bài A.4
-**Đáp số:** a) số lớn 449, số bé 361 · b) số lớn 203, số bé 125 · c) số lớn 383, số bé 349 · d) số lớn 156, số bé 140
+### Bài A.2
+**Đáp số:** a) số lớn 655, số bé 569 · b) số lớn 927, số bé 875 · c) số lớn 523, số bé 329 · d) số lớn 37, số bé 29 · e) số lớn 25, số bé 19
 **Hướng giải:** Số lớn = (tổng + hiệu) : 2. Số bé = (tổng − hiệu) : 2. Cách hiểu: vẽ hai đoạn thẳng, đoạn dài hơn phần hiệu; bớt phần hiệu đi thì hai đoạn bằng nhau, mỗi đoạn là số bé.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng hiệu ra **số lớn**, trừ hiệu ra **số bé** — nhớ đúng chiều.
 **Lỗi thường gặp:** Lấy (tổng + hiệu) : 2 rồi gọi đó là số bé. Phòng: Vẽ sơ đồ đoạn thẳng trước, đoạn dài hơn luôn là số lớn.
 
+### Bài A.3
+**Đáp số:** a) 60 km · b) 40 km/giờ · c) 6 giờ · d) 300 km · e) 40 km/giờ · f) 4 giờ · g) 15 km/giờ
+**Hướng giải:** BẪY — Đơn vị thời gian. Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng kia.
+**Lỗi thường gặp:** Vận tốc km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
+
+### Bài A.4
+**Đáp số:** a) 200 · b) 93 · c) 108 · d) 38 · e) 122 · f) 97 · g) 135
+**Hướng giải:** Trung bình cộng của nhiều số bằng tổng các số đó chia cho số lượng các số. Cộng cho hết rồi mới chia, không chia từng số một.
+**Nhãn tư duy:** TD1. Điểm chốt: Chia cho **số lượng số hạng**, không phải chia cho một số bất kì.
+**Lỗi thường gặp:** Đếm sai số lượng số hạng nên chia nhầm. Phòng: Đánh số thứ tự từng số trước khi cộng.
+
 ### Bài A.5
-**Đáp số:** a) 225 · b) 627 · c) 77 · d) 450 · e) 280
+**Đáp số:** a) 42 · b) 328 · c) 140 · d) 880 · e) 756 · f) 90
 **Hướng giải:** Bước 1 — rút về đơn vị: tìm giá trị của **một** đơn vị bằng phép chia. Bước 2: nhân giá trị một đơn vị với số đơn vị cần tìm.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Bước rút về đơn vị luôn là phép **chia**, và phải làm trước.
 **Lỗi thường gặp:** Nhân ngay hai số đã cho mà bỏ qua bước chia. Phòng: Viết rõ câu “Một bao nặng … kg” trước khi làm bước hai.
@@ -367,7 +371,7 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Lỗi thường gặp:** Viết thẳng phép tính, bỏ câu lời giải. Phòng: Đọc lại bài đã làm, đếm xem có đủ bốn dòng chưa.
 
 ### Bài B.2
-**Đáp số:** a) “Ba dạng bài trung bình cộng là:” · b) “Tìm phân số của một số, nhiều bước là:” · c) “Tổng – tỉ có tỉ số thay đổi là:” · d) “Đề tổng hợp nhiều mạch là:” · e) “Ba dạng cơ bản của chuyển động đều là:”
+**Đáp số:** a) “Bài toán tổng – hiệu là:” · b) “Phương pháp thay thế là:” · c) “Tổng nhiều số có ràng buộc; tổng – tỉ là:” · d) “Tỉ lệ bản đồ, tỉ lệ xích là:” · e) “Tổng – tỉ có tỉ số thay đổi là:”
 **Hướng giải:** Câu lời giải chỉ cần nhắc lại đại lượng đang tìm, không cần dài dòng.
 **Nhãn tư duy:** TD1. Điểm chốt: Câu lời giải phải **nêu đúng đại lượng** đang tìm.
 **Lỗi thường gặp:** Viết câu lời giải chung chung cho mọi bài. Phòng: Lấy đúng cụm từ trong câu hỏi của đề làm câu lời giải.
@@ -379,7 +383,7 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Lỗi thường gặp:** Ghi diện tích bằng cm thay vì cm². Phòng: Trước khi viết đáp số, hỏi: đại lượng này đo bằng gì?
 
 ### Bài B.4
-**Đáp số:** a) Bước đầu tiên luôn viết: “Tổng = trung bình cộng × số ngày”. · b) Sau mỗi bước, viết rõ “còn lại … kg” rồi mới sang bước sau. · c) Viết rõ ba dòng: số bé, số lớn cũ, số lớn mới. · d) Sau mỗi ý, khoanh tròn kết quả để ý sau lấy đúng số ấy. · e) Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức. · f) Luôn viết dòng “Mỗi giờ vòi thứ nhất chảy được … bể” trước.
+**Đáp số:** a) Vẽ sơ đồ đoạn thẳng trước, đoạn dài hơn luôn là số lớn. · b) Gạch chân câu hỏi cuối trước khi tính, để biết đề hỏi mấy đại lượng. · c) Nhìn ra “cách đều” trước khi đặt bút. · d) Viết rõ một dòng: “1 cm bản đồ = … cm thật” trước khi tính. · e) Viết rõ ba dòng: số bé, số lớn cũ, số lớn mới. · f) Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
 **Hướng giải:** Mỗi lỗi đều có một cách phòng cụ thể, làm được ngay trong lúc làm bài. Chép cả cặp lỗi – cách phòng vào sổ lỗi.
 **Nhãn tư duy:** TD2. Điểm chốt: Sổ lỗi chỉ có ích khi ghi **cả cách phòng**, không chỉ ghi lỗi.
 **Lỗi thường gặp:** Ghi lỗi vào sổ nhưng không ghi cách phòng nên lần sau vẫn sai. Phòng: Mỗi dòng sổ lỗi bắt buộc có hai cột: lỗi và cách phòng.
@@ -397,28 +401,28 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Lỗi thường gặp:** Dò lại phép tính nhưng không đọc lại câu hỏi. Phòng: Sau mỗi bài, đọc to lại câu hỏi rồi đối chiếu với đáp số.
 
 ### Bài C.2
-**Đáp số:** a) tầng 2 · b) Bước đầu tiên luôn viết: “Tổng = trung bình cộng × số ngày”. · c) toàn bộ số điểm của ý sai · d) Bước đầu tiên luôn viết: “Tổng = trung bình cộng × số ngày”. · e) Từ trung bình cộng luôn tìm được **tổng** trước, rồi mới tính tiếp.
-**Hướng giải:** Ba dạng ngược nhau: biết các số tìm trung bình cộng (cộng rồi chia); biết trung bình cộng tìm tổng (nhân); biết trung bình cộng và một số số hạng, tìm số hạng còn thiếu (lấy tổng trừ đi các số đã biết).
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Từ trung bình cộng luôn tìm được **tổng** trước, rồi mới tính tiếp.
-**Lỗi thường gặp:** Đi tìm ngay số còn thiếu mà chưa tính tổng. Phòng: Bước đầu tiên luôn viết: “Tổng = trung bình cộng × số ngày”.
-
-### Bài C.3
-**Đáp số:** a) tầng 2 · b) Sau mỗi ý, khoanh tròn kết quả để ý sau lấy đúng số ấy. · c) toàn bộ số điểm của ý sai · d) Sau mỗi ý, khoanh tròn kết quả để ý sau lấy đúng số ấy. · e) Ý sau dùng lại kết quả ý trước — **sai một ý là sai dây chuyền**.
-**Hướng giải:** Đề thi thật hay ghép ba mạch trong một bài: chuyển động, phần trăm, tổng – tỉ. Làm tuần tự từng ý, mỗi ý một kết quả, và dùng kết quả ý trước cho ý sau.
-**Nhãn tư duy:** TD3, TD6. Điểm chốt: Ý sau dùng lại kết quả ý trước — **sai một ý là sai dây chuyền**.
-**Lỗi thường gặp:** Ý thứ năm tính phần trăm trên giá ban đầu thay vì trên giá vừa tăng. Phòng: Sau mỗi ý, khoanh tròn kết quả để ý sau lấy đúng số ấy.
-
-### Bài C.4
 **Đáp số:** a) tầng 2 · b) Vẽ sơ đồ đoạn thẳng trước, đoạn dài hơn luôn là số lớn. · c) toàn bộ số điểm của ý sai · d) Vẽ sơ đồ đoạn thẳng trước, đoạn dài hơn luôn là số lớn. · e) Cộng hiệu ra **số lớn**, trừ hiệu ra **số bé** — nhớ đúng chiều.
 **Hướng giải:** Số lớn = (tổng + hiệu) : 2. Số bé = (tổng − hiệu) : 2. Cách hiểu: vẽ hai đoạn thẳng, đoạn dài hơn phần hiệu; bớt phần hiệu đi thì hai đoạn bằng nhau, mỗi đoạn là số bé.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng hiệu ra **số lớn**, trừ hiệu ra **số bé** — nhớ đúng chiều.
 **Lỗi thường gặp:** Lấy (tổng + hiệu) : 2 rồi gọi đó là số bé. Phòng: Vẽ sơ đồ đoạn thẳng trước, đoạn dài hơn luôn là số lớn.
 
+### Bài C.3
+**Đáp số:** a) tầng 2 · b) Viết rõ một dòng: “1 cm bản đồ = … cm thật” trước khi tính. · c) toàn bộ số điểm của ý sai · d) Viết rõ một dòng: “1 cm bản đồ = … cm thật” trước khi tính. · e) Nhân hay chia với n trước, **đổi đơn vị sau** — làm ngược là rối.
+**Hướng giải:** Tỉ lệ 1 : n nghĩa là 1 đơn vị trên bản đồ ứng với n đơn vị thật, **cùng một loại đơn vị**. Từ bản đồ ra thật thì nhân với n; từ thật về bản đồ thì chia cho n. Đổi đơn vị chỉ làm ở bước cuối.
+**Nhãn tư duy:** TD2, TD3. Điểm chốt: Nhân hay chia với n trước, **đổi đơn vị sau** — làm ngược là rối.
+**Lỗi thường gặp:** Đổi mét sang xăng-ti-mét ngay từ đầu rồi lại nhân tỉ lệ một lần nữa. Phòng: Viết rõ một dòng: “1 cm bản đồ = … cm thật” trước khi tính.
+
+### Bài C.4
+**Đáp số:** a) tầng 2 · b) Luôn viết dòng “Mỗi giờ người thứ nhất làm được … công việc” trước. · c) toàn bộ số điểm của ý sai · d) Luôn viết dòng “Mỗi giờ người thứ nhất làm được … công việc” trước. · e) Cộng **năng suất mỗi giờ**, tuyệt đối không cộng thời gian.
+**Hướng giải:** Coi cả công việc là 1. Người làm xong trong a giờ thì mỗi giờ làm được 1 phần a công việc. Cùng làm thì mỗi giờ cả hai làm được tổng hai phân số đó. Thời gian làm chung = 1 chia cho năng suất chung.
+**Nhãn tư duy:** TD3, TD6. Điểm chốt: Cộng **năng suất mỗi giờ**, tuyệt đối không cộng thời gian.
+**Lỗi thường gặp:** Cộng hai khoảng thời gian rồi chia đôi. Phòng: Luôn viết dòng “Mỗi giờ người thứ nhất làm được … công việc” trước.
+
 ### Bài C.5
-**Đáp số:** a) tầng 2 · b) Đếm số phần trên sơ đồ trước khi chia. · c) toàn bộ số điểm của ý sai · d) Đếm số phần trên sơ đồ trước khi chia. · e) Chia cho **tổng số phần**, không chia cho số đại lượng.
-**Hướng giải:** Chia một tổng theo tỉ lệ ba số: cộng ba số phần lại, chia tổng cho tổng số phần được giá trị một phần, rồi nhân ra từng đại lượng. Bài trộn thì tính riêng từng loại rồi cộng.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Chia cho **tổng số phần**, không chia cho số đại lượng.
-**Lỗi thường gặp:** Chia tổng cho 3 vì thấy có ba tổ. Phòng: Đếm số phần trên sơ đồ trước khi chia.
+**Đáp số:** a) tầng 2 · b) Cộng hai quãng đường vừa tính lại, phải đúng bằng quãng cách ban đầu. · c) toàn bộ số điểm của ý sai · d) Cộng hai quãng đường vừa tính lại, phải đúng bằng quãng cách ban đầu. · e) Hai xe đi trong **cùng một khoảng thời gian** — đó là mấu chốt.
+**Hướng giải:** Tính thời gian gặp nhau bằng quãng cách chia tổng vận tốc. Sau đó quãng đường mỗi xe đi được bằng vận tốc của xe đó nhân thời gian ấy. Hai quãng đường cộng lại đúng bằng quãng cách ban đầu.
+**Nhãn tư duy:** TD3, TD6. Điểm chốt: Hai xe đi trong **cùng một khoảng thời gian** — đó là mấu chốt.
+**Lỗi thường gặp:** Chia quãng đường theo tỉ lệ sai, hoặc lấy quãng đường chia đôi. Phòng: Cộng hai quãng đường vừa tính lại, phải đúng bằng quãng cách ban đầu.
 
 ### Bài D.1
 **Đáp số:** a) Tỉ lệ thuận – nghịch, trung bình cộng và bài toán số thập phân · b) 6 · c) tên một dạng bài của chương · d) 3 nhánh con: dấu hiệu · phương pháp · lỗi hay mắc · e) so với bảng dạng bài ở phiếu Dạng bài & Đọc vị
@@ -428,31 +432,31 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài D.2
-**Đáp số:** a) Cụm “… số còn lại”, “… số đó” · b) Tính tuần tự, sau mỗi bước ghi lại số còn lại · c) Lấy cả hai phân số nhân với tổng ban đầu. · d) Tìm phân số của một số · e) Còn lại sau ngày đầu là (1 − phân số) của tổng; nhân trực tiếp cho nhanh.
+**Đáp số:** a) Đề cho **quan hệ đổi ngang** giữa hai loại cùng một tổng chung · b) Quy hết về loại chuẩn, giải, rồi đổi ngược · c) Tính ra giá loại chuẩn rồi dừng, quên nhân lên cho loại kia. · d) Quan hệ gấp – kém; phép nhân, phép chia · e) Tổng số cái sau khi đổi bằng số loại rẻ cộng số loại đắt nhân hệ số.
 **Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Cụm “số gạo **còn lại**” đổi hẳn số bị nhân ở bước hai.
-**Lỗi thường gặp:** Lấy cả hai phân số nhân với tổng ban đầu. Phòng: Sau mỗi bước, viết rõ “còn lại … kg” rồi mới sang bước sau.
+**Nhãn tư duy:** TD2, TD5. Điểm chốt: Đổi xong phải đổi ngược lại — đề hỏi cả hai giá, không chỉ một.
+**Lỗi thường gặp:** Tính ra giá loại chuẩn rồi dừng, quên nhân lên cho loại kia. Phòng: Gạch chân câu hỏi cuối trước khi tính, để biết đề hỏi mấy đại lượng.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài D.3
-**Đáp số:** a) Một đề dài gồm nhiều ý nối tiếp nhau · b) Giải tuần tự, giữ lại kết quả trung gian · c) Ý thứ năm tính phần trăm trên giá ban đầu thay vì trên giá vừa tăng. · d) Chuyển động ngược chiều; tỉ số phần trăm; tổng – tỉ · e) Tăng p% rồi giảm p% luôn cho kết quả **thấp hơn** giá ban đầu.
+**Đáp số:** a) Có kí hiệu tỉ lệ dạng 1 : n · b) Nhân hoặc chia theo tỉ lệ rồi đổi đơn vị · c) Đổi mét sang xăng-ti-mét ngay từ đầu rồi lại nhân tỉ lệ một lần nữa. · d) Tỉ lệ, đổi đơn vị đo độ dài · e) Tỉ lệ 1 : 1 000 thì 1 cm bản đồ đúng bằng 10 m thật.
 **Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
-**Nhãn tư duy:** TD3, TD6. Điểm chốt: Ý sau dùng lại kết quả ý trước — **sai một ý là sai dây chuyền**.
-**Lỗi thường gặp:** Ý thứ năm tính phần trăm trên giá ban đầu thay vì trên giá vừa tăng. Phòng: Sau mỗi ý, khoanh tròn kết quả để ý sau lấy đúng số ấy.
+**Nhãn tư duy:** TD2, TD3. Điểm chốt: Nhân hay chia với n trước, **đổi đơn vị sau** — làm ngược là rối.
+**Lỗi thường gặp:** Đổi mét sang xăng-ti-mét ngay từ đầu rồi lại nhân tỉ lệ một lần nữa. Phòng: Viết rõ một dòng: “1 cm bản đồ = … cm thật” trước khi tính.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài D.4
-**Đáp số:** a) “Làm một mình trong … giờ” đi cùng “cùng làm” · b) Quy công việc về 1, cộng năng suất, lấy nghịch đảo · c) Cộng hai khoảng thời gian rồi chia đôi. · d) Năng suất, cộng và chia phân số · e) Thời gian làm chung luôn **bé hơn** thời gian của người nhanh nhất — dùng để loại đáp số sai ngay lập tức.
+**Đáp số:** a) Có hai trong ba đại lượng quãng đường, vận tốc, thời gian · b) Chọn công thức theo đại lượng cần tìm, đồng bộ đơn vị · c) Vận tốc km/giờ nhưng thời gian lại để bằng phút. · d) s = v × t · e) Vẽ tam giác: s ở trên, v và t ở dưới; che đại lượng cần tìm là ra công thức.
 **Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
-**Nhãn tư duy:** TD3, TD6. Điểm chốt: Cộng **năng suất**, tuyệt đối không cộng thời gian.
-**Lỗi thường gặp:** Cộng hai khoảng thời gian rồi chia đôi. Phòng: Luôn viết dòng “Mỗi giờ vòi thứ nhất chảy được … bể” trước.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng kia.
+**Lỗi thường gặp:** Vận tốc km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài D.5
-**Đáp số:** a) Từ khoá “giảm giá”, “tăng giá”, “lãi”, “lỗ” · b) Chốt mốc 100% rồi cộng trừ phần trăm · c) Chia tiền lãi cho giá bán nên ra tỉ lệ nhỏ hơn thực tế. · d) Tỉ số phần trăm, mốc quy chiếu 100% · e) Giảm 20% nghĩa là còn 80% — nhân thẳng một lần thay vì trừ hai bước.
+**Đáp số:** a) Đề nhắc **dòng nước**, **xuôi dòng**, **ngược dòng**, ca nô hay thuyền · b) Áp hai công thức xuôi – ngược; biết cả hai thì quy về tổng – hiệu · c) Lấy vận tốc xuôi dòng làm vận tốc thực rồi cộng thêm vận tốc dòng lần nữa. · d) Vận tốc – quãng đường – thời gian; tổng – hiệu · e) Vận tốc dòng nước = (vận tốc xuôi − vận tốc ngược) : 2.
 **Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
-**Nhãn tư duy:** TD2, TD6. Điểm chốt: Phần trăm lãi tính theo **giá mua**, không theo giá bán.
-**Lỗi thường gặp:** Chia tiền lãi cho giá bán nên ra tỉ lệ nhỏ hơn thực tế. Phòng: Viết dòng đầu tiên: “Giá mua = 100%”.
+**Nhãn tư duy:** TD2, TD5. Điểm chốt: Vận tốc thực là vận tốc khi nước lặng — không bằng vận tốc xuôi dòng, cũng không bằng vận tốc ngược dòng.
+**Lỗi thường gặp:** Lấy vận tốc xuôi dòng làm vận tốc thực rồi cộng thêm vận tốc dòng lần nữa. Phòng: Viết ba đại lượng thành ba dòng riêng, đặt tên rõ trước khi tính.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.1
@@ -463,31 +467,31 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.2
-**Đáp số:** a) “Hôm nay nhóm mình nói về Ba dạng bài trung bình cộng.” · b) Cụm “trung bình mỗi …” · c) Quan hệ tổng – số lượng – trung bình cộng · d) Trung bình mỗi ngày bán 40 kg, hỏi 5 ngày bán bao nhiêu? → 200 kg · e) Đi tìm ngay số còn thiếu mà chưa tính tổng. · f) Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng.
-**Hướng giải:** Ba dạng ngược nhau: biết các số tìm trung bình cộng (cộng rồi chia); biết trung bình cộng tìm tổng (nhân); biết trung bình cộng và một số số hạng, tìm số hạng còn thiếu (lấy tổng trừ đi các số đã biết).
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Từ trung bình cộng luôn tìm được **tổng** trước, rồi mới tính tiếp.
-**Lỗi thường gặp:** Đi tìm ngay số còn thiếu mà chưa tính tổng. Phòng: Bước đầu tiên luôn viết: “Tổng = trung bình cộng × số ngày”.
+**Đáp số:** a) “Hôm nay nhóm mình nói về Bài toán tổng – hiệu.” · b) Đề cho **tổng** và **hiệu** của hai số · c) Công thức tổng – hiệu, sơ đồ đoạn thẳng · d) Tổng hai số là 100, hiệu là 20. Tìm hai số. → 60 và 40 · e) Lấy (tổng + hiệu) : 2 rồi gọi đó là số bé. · f) Số lớn và số bé luôn có trung bình cộng bằng nửa tổng.
+**Hướng giải:** Số lớn = (tổng + hiệu) : 2. Số bé = (tổng − hiệu) : 2. Cách hiểu: vẽ hai đoạn thẳng, đoạn dài hơn phần hiệu; bớt phần hiệu đi thì hai đoạn bằng nhau, mỗi đoạn là số bé.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng hiệu ra **số lớn**, trừ hiệu ra **số bé** — nhớ đúng chiều.
+**Lỗi thường gặp:** Lấy (tổng + hiệu) : 2 rồi gọi đó là số bé. Phòng: Vẽ sơ đồ đoạn thẳng trước, đoạn dài hơn luôn là số lớn.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.3
+**Đáp số:** a) “Hôm nay nhóm mình nói về Tổng nhiều số có ràng buộc; tổng – tỉ.” · b) Ba số hơn kém nhau cùng một lượng; hoặc tổng đi cùng tỉ số · c) Trung bình cộng của dãy cách đều; tổng – tỉ · d) Ba số cách đều có tổng 60, hơn kém nhau 4. Tìm ba số. → 16, 20, 24 · e) Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. · f) Tổng ba số cách đều luôn chia hết cho 3.
+**Hướng giải:** Với một số lẻ các số cách đều, số ở giữa chính là trung bình cộng — tìm nó trước rồi suy ra hai số kia. Phần sau là bài tổng – tỉ chuẩn: tổng số phần rồi giá trị một phần.
+**Nhãn tư duy:** TD4, TD3. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
+**Lỗi thường gặp:** Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. Phòng: Nhìn ra “cách đều” trước khi đặt bút.
+**Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
+
+### Bài E.4
 **Đáp số:** a) “Hôm nay nhóm mình nói về Tổng – tỉ có tỉ số thay đổi.” · b) “Phải thêm (bớt) bao nhiêu để tỉ số trở thành …” · c) Tổng – tỉ, đại lượng không đổi · d) Số lớn gấp 2 lần số bé, tổng là 30. Thêm bao nhiêu vào số lớn để nó gấp 4 lần số bé? → 20 · e) Lấy hiệu hai tỉ số nhân với tổng ban đầu. · f) Số cần thêm = số bé × (tỉ số mới − tỉ số cũ).
 **Hướng giải:** Số bé không thay đổi, nên hãy tìm số bé trước bằng bài toán tổng – tỉ. Sau đó tính số lớn mới theo tỉ số mới, rồi lấy số lớn mới trừ số lớn cũ.
 **Nhãn tư duy:** TD6, TD3. Điểm chốt: Tìm cho ra **đại lượng không đổi** rồi lấy nó làm gốc quy chiếu.
 **Lỗi thường gặp:** Lấy hiệu hai tỉ số nhân với tổng ban đầu. Phòng: Viết rõ ba dòng: số bé, số lớn cũ, số lớn mới.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
-### Bài E.4
-**Đáp số:** a) “Hôm nay nhóm mình nói về Ba dạng cơ bản của chuyển động đều.” · b) Có hai trong ba đại lượng quãng đường, vận tốc, thời gian · c) s = v × t · d) Đi 4 giờ với vận tốc 12 km/giờ. Quãng đường bằng bao nhiêu? → 48 km · e) Vận tốc km/giờ nhưng thời gian lại để bằng phút. · f) Vẽ tam giác: s ở trên, v và t ở dưới; che đại lượng cần tìm là ra công thức.
-**Hướng giải:** Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng kia.
-**Lỗi thường gặp:** Vận tốc km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
-**Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
-
 ### Bài E.5
-**Đáp số:** a) “Hôm nay nhóm mình nói về Bài toán tổng – hiệu.” · b) Đề cho **tổng** và **hiệu** của hai số · c) Công thức tổng – hiệu, sơ đồ đoạn thẳng · d) Tổng hai số là 100, hiệu là 20. Tìm hai số. → 60 và 40 · e) Lấy (tổng + hiệu) : 2 rồi gọi đó là số bé. · f) Số lớn và số bé luôn có trung bình cộng bằng nửa tổng.
-**Hướng giải:** Số lớn = (tổng + hiệu) : 2. Số bé = (tổng − hiệu) : 2. Cách hiểu: vẽ hai đoạn thẳng, đoạn dài hơn phần hiệu; bớt phần hiệu đi thì hai đoạn bằng nhau, mỗi đoạn là số bé.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng hiệu ra **số lớn**, trừ hiệu ra **số bé** — nhớ đúng chiều.
-**Lỗi thường gặp:** Lấy (tổng + hiệu) : 2 rồi gọi đó là số bé. Phòng: Vẽ sơ đồ đoạn thẳng trước, đoạn dài hơn luôn là số lớn.
+**Đáp số:** a) “Hôm nay nhóm mình nói về Công việc chung.” · b) “Làm một mình trong … giờ”, “cùng làm” · c) Năng suất, phân số, phép chia phân số · d) Người thứ nhất xong trong 4 giờ, người thứ hai trong 6 giờ. Cùng làm thì mấy giờ xong? → 2 giờ 24 phút · e) Cộng hai khoảng thời gian rồi chia đôi. · f) Thời gian làm chung luôn **bé hơn** thời gian của người làm nhanh nhất — dùng để loại đáp số sai ngay.
+**Hướng giải:** Coi cả công việc là 1. Người làm xong trong a giờ thì mỗi giờ làm được 1 phần a công việc. Cùng làm thì mỗi giờ cả hai làm được tổng hai phân số đó. Thời gian làm chung = 1 chia cho năng suất chung.
+**Nhãn tư duy:** TD3, TD6. Điểm chốt: Cộng **năng suất mỗi giờ**, tuyệt đối không cộng thời gian.
+**Lỗi thường gặp:** Cộng hai khoảng thời gian rồi chia đôi. Phòng: Luôn viết dòng “Mỗi giờ người thứ nhất làm được … công việc” trước.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ---

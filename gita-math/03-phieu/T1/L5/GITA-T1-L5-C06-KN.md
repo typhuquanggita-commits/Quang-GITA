@@ -43,9 +43,9 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 > **KIẾN THỨC NỀN CỦA CHƯƠNG**
 > 1. Công thức diện tích hình thang
-> 2. Chu vi, diện tích hình chữ nhật; s = v × t
+> 2. Công thức diện tích hình bình hành, hình thoi, hình tam giác
 > 3. Số đo góc; hai đường thẳng vuông góc, song song
-> 4. Diện tích hình tròn, hình vuông; phép trừ diện tích
+> 4. Chu vi, đường bao của hình
 
 ---
 

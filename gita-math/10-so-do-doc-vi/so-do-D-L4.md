@@ -111,43 +111,43 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 
 Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: đây là dạng bài gì, và dấu hiệu nào cho biết điều đó.
 
-**Đề 1.** Việc đầu tiên là gọi tên dữ kiện bị giấu. Kho B chứa 11 kg thóc. Nếu kho B nhận thêm 33 kg thì bằng số thóc ở thư viện. Hỏi cả hai nơi chứa bao nhiêu kg?
+**Đề 1.** Tính trung bình cộng. Tìm trung bình cộng của 4 số: 192, 205, 193, 186.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 2.** Ghi rõ đơn vị của từng đại lượng. Một người đi 120 km hết 6 giờ. Tính vận tốc.
+**Đề 2.** Vẽ sơ đồ đoạn thẳng rồi giải. Tổ Ba và tổ Hai trồng được tất cả 760 cây. Số cây của tổ Ba bằng 1 phần 7 số cây của tổ Hai. Mỗi tổ trồng được bao nhiêu cây?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 3.** Giải từng bài toán nhỏ. Trung bình mỗi ngày cửa hàng bán được 274 kg gạo. 4 ngày đầu bán được 279, 281, 264, 266 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
+**Đề 3.** Ghi rõ đơn vị của từng đại lượng. Một người đi xe đạp với vận tốc 45 km/giờ trong 2 giờ. Tính quãng đường đi được.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 4.** Vẽ sơ đồ đoạn thẳng rồi giải. Thư viện chứa nhiều hơn kho B 96 kg xi măng. Số xi măng ở kho B bằng 2 phần 3 số xi măng ở thư viện. Mỗi nơi chứa bao nhiêu kg?
+**Đề 4.** Đọc kĩ “của số nào” trước khi tính. Một cửa hàng có 120 kg gạo. Ngày đầu bán 1 phần 2 số gạo, ngày thứ hai bán 1 phần 5 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 5.** Chú ý điều gì thay đổi và điều gì không đổi theo thời gian. Hiện nay bố 27 tuổi, con 9 tuổi. Sau 4 năm nữa, tổng số tuổi hai bố con là bao nhiêu?
+**Đề 5.** Giải bằng phương pháp rút về đơn vị. 4 bao đường nặng 148 kg. Hỏi 15 bao như thế nặng bao nhiêu kg?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 6.** Tìm hai số trong mỗi trường hợp. Tổng hai số là 222, hiệu hai số là 62. Tìm hai số đó.
+**Đề 6.** Coi cả công việc là 1 đơn vị. Vòi thứ nhất chảy một mình đầy bể trong 8 giờ, vòi thứ hai chảy một mình đầy bể trong 3 giờ. Mở cả hai vòi thì sau bao lâu đầy bể?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 7.** Xác định đại lượng nào giữ nguyên. Số lớn gấp 2 lần số bé và tổng hai số là 156. Phải thêm vào số lớn bao nhiêu đơn vị để số lớn gấp 7 lần số bé?
+**Đề 7.** Dùng phương pháp giả thiết tạm. Vừa gà vừa chó có 42 con, đếm được tất cả 102 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 8.** Bài mô phỏng phần tự luận của đề thi chất lượng cao. Ba số có tổng 324. Số thứ hai hơn số thứ nhất 12, số thứ ba hơn số thứ hai 12. Tìm số thứ hai.
+**Đề 8.** Giải bằng cách quy về tổng số ngày công. 2 người làm xong một công việc trong 12 ngày. Hỏi 6 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 9.** Đọc kĩ “của số nào” trước khi tính. Một cửa hàng có 100 kg gạo. Ngày đầu bán 1 phần 5 số gạo, ngày thứ hai bán 1 phần 2 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
+**Đề 9.** Xác định đại lượng nào giữ nguyên. Số lớn gấp 4 lần số bé và tổng hai số là 275. Phải thêm vào số lớn bao nhiêu đơn vị để số lớn gấp 8 lần số bé?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 10.** Tính trung bình cộng. Tìm trung bình cộng của 4 số: 27, 48, 38, 31.
+**Đề 10.** Bài mô phỏng phần tự luận của đề thi chất lượng cao. Ba số có tổng 75. Số thứ hai hơn số thứ nhất 12, số thứ ba hơn số thứ hai 12. Tìm số thứ hai.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
@@ -157,16 +157,16 @@ Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: 
 
 | # | Dạng bài | Dấu hiệu |
 |:--:|---|---|
-| 1 | Tổng – tỉ, hiệu – tỉ dạng ẩn | Đề mô tả vòng thay vì cho số: “nếu … thì …”, “chia thành … phần” |
-| 2 | Ba dạng cơ bản của chuyển động đều | Có hai trong ba đại lượng quãng đường, vận tốc, thời gian |
-| 3 | Ba dạng bài trung bình cộng | Cụm “trung bình mỗi …” |
-| 4 | Bài toán hiệu – tỉ | Đề cho **hiệu** và **tỉ số** |
-| 5 | Bài toán tuổi | Xuất hiện mốc thời gian: hiện nay, sau … năm, cách đây … năm |
-| 6 | Bài toán tổng – hiệu | Đề cho **tổng** và **hiệu** của hai số |
-| 7 | Tổng – tỉ có tỉ số thay đổi | “Phải thêm (bớt) bao nhiêu để tỉ số trở thành …” |
-| 8 | Tổng nhiều số có ràng buộc; tổng – tỉ | Ba số hơn kém nhau cùng một lượng; hoặc tổng đi cùng tỉ số |
-| 9 | Tìm phân số của một số, nhiều bước | Cụm “… số còn lại”, “… số đó” |
-| 10 | Tìm trung bình cộng | Từ khoá “trung bình cộng”, “trung bình mỗi …” |
+| 1 | Tìm trung bình cộng | Từ khoá “trung bình cộng”, “trung bình mỗi …” |
+| 2 | Bài toán tổng – tỉ | Đề cho **tổng** và **tỉ số** (phân số hoặc “gấp … lần”) |
+| 3 | Ba dạng cơ bản của chuyển động đều | Có hai trong ba đại lượng quãng đường, vận tốc, thời gian |
+| 4 | Tìm phân số của một số, nhiều bước | Cụm “… số còn lại”, “… số đó” |
+| 5 | Rút về đơn vị | Cho giá trị của một nhóm, hỏi giá trị của nhóm khác cùng loại |
+| 6 | Công việc chung | “Làm một mình trong … giờ” đi cùng “cùng làm” |
+| 7 | Giả thiết tạm | Hai loại đối tượng, biết tổng số và tổng của một đại lượng khác |
+| 8 | Tỉ lệ nghịch | Số người tăng thì thời gian giảm |
+| 9 | Tổng – tỉ có tỉ số thay đổi | “Phải thêm (bớt) bao nhiêu để tỉ số trở thành …” |
+| 10 | Tổng nhiều số có ràng buộc; tổng – tỉ | Ba số hơn kém nhau cùng một lượng; hoặc tổng đi cùng tỉ số |
 
 ---
 

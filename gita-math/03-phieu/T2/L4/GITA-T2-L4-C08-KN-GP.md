@@ -30,42 +30,42 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần A**
 
-- **Bài A.1** — a) 1 phần 2 · b) 5 phần 7 · c) 3 phần 5 · d) 4 phần 5 · e) 7 phần 4
-- **Bài A.2** — a) 201 244 · b) 901 348 · c) 482 435 · d) 812 466
-- **Bài A.3** — a) 1 477 171 và 1 477 173 · b) > · c) 5 534 000 · d) 500 · e) 9 292 000 · f) > · g) 4 739 092 và 4 739 094
-- **Bài A.4** — a) > · b) > · c) > · d) > · e) > · f) < · g) >
-- **Bài A.5** — a) 324 925 · b) 8 811 · c) 524 142 · d) 137 784 · e) 849 149 · f) 7 951 · g) 113 751 · h) 389 232
+- **Bài A.1** — a) < · b) < · c) > · d) > · e) >
+- **Bài A.2** — a) 1 phần 3 · b) 8 phần 9 · c) 2 phần 3 · d) 4 phần 7 · e) 1 phần 6 · f) 9 phần 5
+- **Bài A.3** — a) 454 903 · b) 464 667 · c) 954 023 · d) 367 782
+- **Bài A.4** — a) 2 329 · b) 2 590 · c) 837 549 · d) 6 021 · e) 166 267
+- **Bài A.5** — a) 200 000 · b) < · c) 2 192 300 · d) 6 073 527 và 6 073 529 · e) 9 065 766 và 9 065 768 · f) 8 343 000 · g) > · h) 400 000
 
 **Phần B**
 
 - **Bài B.1** — a) câu lời giải nêu rõ đang tìm đại lượng nào · b) phép tính, viết đủ dấu và đủ đơn vị · c) kết quả kèm đơn vị · d) câu đáp số · e) một phần tư số điểm của bài
-- **Bài B.2** — a) “Đọc và lập biểu đồ tranh là:” · b) “Đọc bảng số liệu thống kê là:” · c) “Rút gọn phân số là:” · d) “Rút gọn, so sánh, sắp thứ tự phân số là:” · e) “Biểu thức phân số nhiều phép tính là:”
+- **Bài B.2** — a) “Biểu thức phân số nhiều phép tính là:” · b) “Đọc và lập biểu đồ tranh là:” · c) “Bốn phép tính với phân số là:” · d) “Biểu đồ Ven là:” · e) “Rút gọn phân số là:”
 - **Bài B.3** — a) không ghi trong dấu ngoặc phép tính · b) có, bắt buộc · c) có, bắt buộc · d) đơn vị vuông, ví dụ cm² · e) đơn vị khối, ví dụ cm³ · f) km/giờ hoặc m/phút
-- **Bài B.4** — a) Khoanh tròn dòng chú thích trước khi trả lời bất kỳ câu nào. · b) Đánh dấu từng số đã cộng để không sót và không cộng lặp. · c) Viết phép chia cho cả hai dòng, kiểm tra lại bằng cách nhân ngược. · d) Ghi cả phân số gốc và phân số tối giản cạnh nhau để đối chiếu. · e) Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút. · f) Trước khi tính, khoanh dấu phép tính và tự nhắc “có phải quy đồng không”.
+- **Bài B.4** — a) Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút. · b) Khoanh tròn dòng chú thích trước khi trả lời bất kỳ câu nào. · c) Trước khi tính, khoanh dấu phép tính và tự nhắc “có phải quy đồng không”. · d) Vẽ hình trước, điền phần giữa trước, rồi mới điền hai bên. · e) Viết phép chia cho cả hai dòng, kiểm tra lại bằng cách nhân ngược. · f) Ghi cả phân số gốc và phân số tối giản cạnh nhau để đối chiếu.
 - **Bài B.5** — a) 1 phần trong 4 · b) 2 phần trong 4 · c) 1 phần trong 4 · d) 3 phần trong 4 · e) 1 đến 2 phần trong 4
 
 **Phần C**
 
 - **Bài C.1** — a) đơn vị đo — mọi số có cùng đơn vị chưa · b) phép tính — cộng trừ nhân chia có đúng thứ tự chưa · c) đề hỏi gì — mình đã trả lời đúng câu hỏi chưa · d) tầng 3 — trả lời lệch câu hỏi · e) khoảng 30 giây
-- **Bài C.2** — a) tầng 1 · b) Khoanh tròn dòng chú thích trước khi trả lời bất kỳ câu nào. · c) toàn bộ số điểm của ý sai · d) Khoanh tròn dòng chú thích trước khi trả lời bất kỳ câu nào. · e) Mỗi hình **không phải một đơn vị** — phải đọc chú thích trước.
-- **Bài C.3** — a) tầng 2 · b) Ghi cả phân số gốc và phân số tối giản cạnh nhau để đối chiếu. · c) toàn bộ số điểm của ý sai · d) Ghi cả phân số gốc và phân số tối giản cạnh nhau để đối chiếu. · e) Cùng mẫu số thì **chỉ cần so tử số**.
+- **Bài C.2** — a) tầng 2 · b) Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút. · c) toàn bộ số điểm của ý sai · d) Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút. · e) Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều.
+- **Bài C.3** — a) tầng 2 · b) Vẽ hình trước, điền phần giữa trước, rồi mới điền hai bên. · c) toàn bộ số điểm của ý sai · d) Vẽ hình trước, điền phần giữa trước, rồi mới điền hai bên. · e) Con số đề cho cho mỗi môn **đã bao gồm** những em học cả hai. Cộng thẳng hai con số ấy là đếm phần chung hai lần.
 - **Bài C.4** — a) tầng 2 · b) Nghĩ tới chiếc bánh: thiếu ít hơn thì phần đang có nhiều hơn. · c) toàn bộ số điểm của ý sai · d) Nghĩ tới chiếc bánh: thiếu ít hơn thì phần đang có nhiều hơn. · e) Phần bù **bé hơn** nghĩa là phân số **lớn hơn** — dễ nhớ nhầm chiều.
-- **Bài C.5** — a) tầng 2 · b) Nghĩ tới chiếc bánh: chia càng nhiều phần thì mỗi phần càng bé. · c) toàn bộ số điểm của ý sai · d) Nghĩ tới chiếc bánh: chia càng nhiều phần thì mỗi phần càng bé. · e) Cùng tử số thì **mẫu bé hơn là phân số lớn hơn** — ngược với trực giác.
+- **Bài C.5** — a) tầng 2 · b) Gạch chân cụm “bằng … số cây của …” để xác định số bị nhân. · c) toàn bộ số điểm của ý sai · d) Gạch chân cụm “bằng … số cây của …” để xác định số bị nhân. · e) Phân số tính trên **số nào** — đọc kĩ cụm “… của …”.
 
 **Phần D**
 
 - **Bài D.1** — a) Phân số nâng cao: so sánh, tính nhanh và bài toán ẩn · b) 7 · c) tên một dạng bài của chương · d) 3 nhánh con: dấu hiệu · phương pháp · lỗi hay mắc · e) so với bảng dạng bài ở phiếu Dạng bài & Đọc vị
-- **Bài D.2** — a) Đề cho bảng hoặc biểu đồ kèm nhiều câu hỏi · b) Ghi lại số liệu, trả lời từng câu bằng công cụ tương ứng · c) Đọc nhầm cột, hoặc quên một môn khi cộng tổng. · d) Thống kê mô tả sơ cấp, trung bình cộng, tỉ số phần trăm · e) Tính tổng một lần rồi dùng lại cho mọi câu hỏi phần trăm.
-- **Bài D.3** — a) Một nhóm phân số cần sắp thứ tự · b) Rút gọn → so cùng mẫu hoặc quy đồng · c) Rút gọn xong quên rằng thứ tự vẫn giữ nguyên, đi quy đồng lại từ đầu. · d) Tính chất cơ bản của phân số; so sánh phân số · e) So với 1 và với một nửa trước — nhiều phân số phân loại được ngay.
-- **Bài D.4** — a) Biểu thức chỉ gồm phân số · b) Chọn quy tắc theo phép tính, rút gọn cuối cùng · c) Quy đồng cả khi nhân, hoặc cộng thẳng tử với tử và mẫu với mẫu. · d) Quy đồng, nhân chia phân số · e) Rút gọn chéo trước khi nhân để số nhỏ, tính nhanh và ít sai.
-- **Bài D.5** — a) Tử và mẫu hơn kém nhau đúng 1 đơn vị · b) Xét phần bù tới 1 rồi so sánh · c) So phần bù rồi kết luận cùng chiều với phần bù. · d) Phần bù tới 1; quy luật dãy phân số · e) n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn.
+- **Bài D.2** — a) Có hình vẽ lặp lại kèm một dòng chú thích · b) Đọc chú thích → nhân số hình với đơn vị · c) Đếm số hình rồi trả lời luôn, quên nhân với số đơn vị mỗi hình. · d) Biểu đồ tranh, phép nhân và chia · e) Nếu mọi bạn đều dùng cùng một loại hình thì so số hình là đủ để biết ai nhiều nhất.
+- **Bài D.3** — a) Đề cho số người của từng nhóm **và** số người thuộc cả hai nhóm · b) Vẽ hai vòng tròn, điền phần chung trước rồi mới trừ ra phần riêng · c) Lấy tổng trừ đi tổng hai con số đề cho mà không cộng lại phần chung. · d) Phép cộng, phép trừ; đếm không trùng lặp · e) Số người ít nhất một nhóm = nhóm A + nhóm B − phần chung.
+- **Bài D.4** — a) Một nhóm phân số cần sắp thứ tự · b) Rút gọn → so cùng mẫu hoặc quy đồng · c) Rút gọn xong quên rằng thứ tự vẫn giữ nguyên, đi quy đồng lại từ đầu. · d) Tính chất cơ bản của phân số; so sánh phân số · e) So với 1 và với một nửa trước — nhiều phân số phân loại được ngay.
+- **Bài D.5** — a) Đề cho bảng hoặc biểu đồ kèm nhiều câu hỏi · b) Ghi lại số liệu, trả lời từng câu bằng công cụ tương ứng · c) Đọc nhầm cột, hoặc quên một môn khi cộng tổng. · d) Thống kê mô tả sơ cấp, trung bình cộng, tỉ số phần trăm · e) Tính tổng một lần rồi dùng lại cho mọi câu hỏi phần trăm.
 
 **Phần E**
 
 - **Bài E.1** — a) giới thiệu chương “Phân số nâng cao: so sánh, tính nhanh và bài toán ẩn” và mục tiêu · b) trình bày sơ đồ tư duy chương · c) giảng một dạng bài kèm ví dụ mẫu · d) nêu lỗi hay mắc và cách phòng · e) ra một bài cho lớp làm và chữa nhanh · f) tự phân công, mỗi bạn ít nhất một phút
-- **Bài E.2** — a) “Hôm nay nhóm mình nói về Đọc và lập biểu đồ tranh.” · b) Có hình vẽ lặp lại kèm một dòng chú thích · c) Biểu đồ tranh, phép nhân và chia · d) Mỗi hình ứng với 5 quyển sách, bạn A có 4 hình. A có mấy quyển? → 20 quyển · e) Đếm số hình rồi trả lời luôn, quên nhân với số đơn vị mỗi hình. · f) Nếu mọi bạn đều dùng cùng một loại hình thì so số hình là đủ để biết ai nhiều nhất.
-- **Bài E.3** — a) “Hôm nay nhóm mình nói về Rút gọn phân số.” · b) Tử số và mẫu số có ước chung lớn hơn 1 · c) Tính chất cơ bản của phân số · d) Rút gọn 18 phần 24. → 3 phần 4 · e) Chỉ chia tử số hoặc chỉ chia mẫu số. · f) Tìm ngay ước chung lớn nhất để rút gọn một lần là xong.
-- **Bài E.4** — a) “Hôm nay nhóm mình nói về Biểu thức phân số nhiều phép tính.” · b) Biểu thức gồm nhiều phân số và nhiều phép tính · c) Thứ tự thực hiện phép tính, tính chất phân phối · d) Tính: (1 phần 2 + 1 phần 3) × 6 phần 5 → 1 · e) Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. · f) Rút gọn chéo tử với mẫu trước khi nhân.
+- **Bài E.2** — a) “Hôm nay nhóm mình nói về Biểu thức phân số nhiều phép tính.” · b) Biểu thức gồm nhiều phân số và nhiều phép tính · c) Thứ tự thực hiện phép tính, tính chất phân phối · d) Tính: (1 phần 2 + 1 phần 3) × 6 phần 5 → 1 · e) Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. · f) Rút gọn chéo tử với mẫu trước khi nhân.
+- **Bài E.3** — a) “Hôm nay nhóm mình nói về Bốn phép tính với phân số.” · b) Biểu thức chỉ gồm phân số · c) Quy đồng, nhân chia phân số · d) Tính: 2 phần 3 + 1 phần 6 → 5 phần 6 · e) Quy đồng cả khi nhân, hoặc cộng thẳng tử với tử và mẫu với mẫu. · f) Rút gọn chéo trước khi nhân để số nhỏ, tính nhanh và ít sai.
+- **Bài E.4** — a) “Hôm nay nhóm mình nói về Rút gọn phân số.” · b) Tử số và mẫu số có ước chung lớn hơn 1 · c) Tính chất cơ bản của phân số · d) Rút gọn 18 phần 24. → 3 phần 4 · e) Chỉ chia tử số hoặc chỉ chia mẫu số. · f) Tìm ngay ước chung lớn nhất để rút gọn một lần là xong.
 - **Bài E.5** — a) “Hôm nay nhóm mình nói về So sánh phân số bằng kĩ thuật đặc biệt.” · b) Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 · c) Phần bù tới 1, phân số trung gian · d) So sánh: 5 phần 6 … 7 phần 8 → < · e) So phần bù rồi kết luận cùng chiều với phần bù. · f) Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn.
 
 ---
@@ -74,77 +74,13 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 Mỗi bài có hai phần: **các bước giải** với số liệu thật của chính bài ấy, và **cách nghĩ** áp dụng cho mọi bài cùng dạng. Đọc kĩ phần chữ đậm — đó là câu cần nhớ, không phải con số.
 
-### Bài A.1 — Rút gọn phân số
-
-**Các bước giải**
-
-Xét ý a: Rút gọn phân số 6 phần 12.
-
-Đọc vị: đây là dạng **Rút gọn phân số**; dấu hiệu là Tử số và mẫu số có ước chung lớn hơn 1.
-
-Kiến thức phải dùng: Tính chất cơ bản của phân số.
-
-Cách làm: Chia cả tử và mẫu cho ước chung.
-
-Lối tắt: Tìm ngay ước chung lớn nhất để rút gọn một lần là xong.
-
-Kết quả: **1 phần 2**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Chia cả tử số và mẫu số cho cùng một số tự nhiên lớn hơn 1. Rút gọn đến khi tử số và mẫu số không cùng chia hết cho số nào lớn hơn 1 nữa thì được phân số tối giản.
-
-*Điểm chốt:* Phải chia **cả tử và mẫu** cho cùng một số.
-
-### Bài A.2 — Viết số khi biết tổng các giá trị hàng
-
-**Các bước giải**
-
-Xét ý a: Viết số gồm tổng: 200 000 + 1 000 + 200 + 40 + 4
-
-Đọc vị: đây là dạng **Viết số từ dạng tổng theo hàng**; dấu hiệu là Tổng gồm các số tròn chục, tròn trăm, tròn nghìn….
-
-Kiến thức phải dùng: Cấu tạo thập phân của số tự nhiên.
-
-Cách làm: Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết.
-
-Lối tắt: Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số.
-
-Kết quả: **201 244**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Mỗi số hạng cho biết một hàng. Xếp các chữ số vào đúng hàng của nó, hàng nào khuyết thì viết chữ số 0.
-
-*Điểm chốt:* Hàng khuyết trong tổng vẫn phải có chữ số **0** trong số viết ra.
-
-### Bài A.3 — Ôn tập số tự nhiên: đọc, viết, so sánh, làm tròn
-
-**Các bước giải**
-
-Xét ý a: Số liền trước và số liền sau của 1 477 172 là những số nào?
-
-Đọc vị: đây là dạng **Ôn tập số tự nhiên**; dấu hiệu là Câu hỏi ngắn về so sánh, hàng, số liền kề, làm tròn.
-
-Kiến thức phải dùng: Thứ tự số tự nhiên, giá trị hàng, quy tắc làm tròn.
-
-Cách làm: Đếm chữ số, xét hàng từ trái sang phải.
-
-Lối tắt: Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số.
-
-Kết quả: **1 477 171 và 1 477 173**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** So sánh: số nhiều chữ số hơn thì lớn hơn; bằng số chữ số thì so từng hàng từ trái sang phải. Làm tròn: nhìn chữ số ở hàng **liền sau** hàng cần làm tròn.
-
-*Điểm chốt:* So sánh đi từ **trái sang phải**, làm tròn nhìn **một chữ số liền sau**.
-
-*Muốn khó hơn:* Trộn thêm phân số và số thập phân vào cùng một dãy để sắp thứ tự.
-
-*Phải chắc trước khi làm bài này:* Bảng hàng và lớp của số tự nhiên.
-
-### Bài A.4 — So sánh hai phân số
+### Bài A.1 — So sánh hai phân số
 
 > **BẪY — Cùng tử số thì mẫu bé hơn lại lớn hơn.**
 
 **Các bước giải**
 
-Xét ý a: 7 phần 9 … 6 phần 11
+Xét ý a: 7 phần 10 … 1
 
 Đọc vị: đây là dạng **So sánh phân số**; dấu hiệu là Hai phân số nối bởi dấu ….
 
@@ -154,19 +90,59 @@ Cách làm: Xét cùng mẫu → cùng tử → quy đồng.
 
 Lối tắt: So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay.
 
-Kết quả: **>**.
+Kết quả: **<**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Cùng mẫu số: phân số nào có tử số lớn hơn thì lớn hơn. Cùng tử số: phân số nào có mẫu số **bé** hơn thì lớn hơn. Khác cả tử lẫn mẫu: quy đồng mẫu số rồi so tử số.
 
 *Điểm chốt:* Cùng tử số thì **mẫu bé hơn là phân số lớn hơn** — ngược với trực giác.
 
-### Bài A.5 — Đặt tính rồi tính (nhân, chia)
+### Bài A.2 — Rút gọn phân số
+
+**Các bước giải**
+
+Xét ý a: Rút gọn phân số 9 phần 27.
+
+Đọc vị: đây là dạng **Rút gọn phân số**; dấu hiệu là Tử số và mẫu số có ước chung lớn hơn 1.
+
+Kiến thức phải dùng: Tính chất cơ bản của phân số.
+
+Cách làm: Chia cả tử và mẫu cho ước chung.
+
+Lối tắt: Tìm ngay ước chung lớn nhất để rút gọn một lần là xong.
+
+Kết quả: **1 phần 3**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Chia cả tử số và mẫu số cho cùng một số tự nhiên lớn hơn 1. Rút gọn đến khi tử số và mẫu số không cùng chia hết cho số nào lớn hơn 1 nữa thì được phân số tối giản.
+
+*Điểm chốt:* Phải chia **cả tử và mẫu** cho cùng một số.
+
+### Bài A.3 — Viết số khi biết tổng các giá trị hàng
+
+**Các bước giải**
+
+Xét ý a: Viết số gồm tổng: 400 000 + 50 000 + 4 000 + 900 + 3
+
+Đọc vị: đây là dạng **Viết số từ dạng tổng theo hàng**; dấu hiệu là Tổng gồm các số tròn chục, tròn trăm, tròn nghìn….
+
+Kiến thức phải dùng: Cấu tạo thập phân của số tự nhiên.
+
+Cách làm: Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết.
+
+Lối tắt: Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số.
+
+Kết quả: **454 903**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Mỗi số hạng cho biết một hàng. Xếp các chữ số vào đúng hàng của nó, hàng nào khuyết thì viết chữ số 0.
+
+*Điểm chốt:* Hàng khuyết trong tổng vẫn phải có chữ số **0** trong số viết ra.
+
+### Bài A.4 — Đặt tính rồi tính (nhân, chia)
 
 > **BẪY — Chữ số 0 ở giữa thương.**
 
 **Các bước giải**
 
-Xét ý a: 7 925 × 41
+Xét ý a: 153 714 : 66
 
 Đọc vị: đây là dạng **Nhân, chia số tự nhiên**; dấu hiệu là Yêu cầu “đặt tính rồi tính” với phép nhân, chia.
 
@@ -176,11 +152,35 @@ Cách làm: Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ
 
 Lối tắt: Kiểm tra kết quả bằng phép tính ngược: thương × số chia = số bị chia.
 
-Kết quả: **324 925**.
+Kết quả: **2 329**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
 
 *Điểm chốt:* Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
+
+### Bài A.5 — Ôn tập số tự nhiên: đọc, viết, so sánh, làm tròn
+
+**Các bước giải**
+
+Xét ý a: Chữ số hàng trăm nghìn của số 286 992 có giá trị bằng bao nhiêu?
+
+Đọc vị: đây là dạng **Ôn tập số tự nhiên**; dấu hiệu là Câu hỏi ngắn về so sánh, hàng, số liền kề, làm tròn.
+
+Kiến thức phải dùng: Thứ tự số tự nhiên, giá trị hàng, quy tắc làm tròn.
+
+Cách làm: Đếm chữ số, xét hàng từ trái sang phải.
+
+Lối tắt: Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số.
+
+Kết quả: **200 000**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** So sánh: số nhiều chữ số hơn thì lớn hơn; bằng số chữ số thì so từng hàng từ trái sang phải. Làm tròn: nhìn chữ số ở hàng **liền sau** hàng cần làm tròn.
+
+*Điểm chốt:* So sánh đi từ **trái sang phải**, làm tròn nhìn **một chữ số liền sau**.
+
+*Muốn khó hơn:* Trộn thêm phân số và số thập phân vào cùng một dãy để sắp thứ tự.
+
+*Phải chắc trước khi làm bài này:* Bảng hàng và lớp của số tự nhiên.
 
 ### Bài B.1 — Bốn dòng bắt buộc của một lời giải
 
@@ -206,7 +206,7 @@ Kết quả: **câu lời giải nêu rõ đang tìm đại lượng nào**.
 
 **Các bước giải**
 
-Xét ý a: Câu lời giải mở đầu cho dạng “Đọc và lập biểu đồ tranh”?
+Xét ý a: Câu lời giải mở đầu cho dạng “Biểu thức phân số nhiều phép tính”?
 
 Đọc vị: đây là dạng **Kỹ năng viết câu lời giải**; dấu hiệu là Đề hỏi gì thì câu lời giải nhắc lại điều đó.
 
@@ -216,7 +216,7 @@ Cách làm: Lấy cụm từ trong câu hỏi làm câu lời giải.
 
 Lối tắt: Sao chép cụm từ trong câu hỏi là cách viết câu lời giải nhanh và chắc nhất.
 
-Kết quả: **“Đọc và lập biểu đồ tranh là:”**.
+Kết quả: **“Biểu thức phân số nhiều phép tính là:”**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Câu lời giải chỉ cần nhắc lại đại lượng đang tìm, không cần dài dòng.
 
@@ -246,7 +246,7 @@ Kết quả: **không ghi trong dấu ngoặc phép tính**.
 
 **Các bước giải**
 
-Xét ý a: Lỗi: Đếm số hình rồi trả lời luôn, quên nhân với số đơn vị mỗi hình. — cách phòng?
+Xét ý a: Lỗi: Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. — cách phòng?
 
 Đọc vị: đây là dạng **Sổ lỗi và cách phòng**; dấu hiệu là Cột “Lỗi thường gặp” trong bảng phân tích.
 
@@ -256,7 +256,7 @@ Cách làm: Ghép cặp lỗi với cách phòng.
 
 Lối tắt: Đọc lại sổ lỗi 3 phút trước mỗi bài kiểm tra.
 
-Kết quả: **Khoanh tròn dòng chú thích trước khi trả lời bất kỳ câu nào.**.
+Kết quả: **Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút.**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Mỗi lỗi đều có một cách phòng cụ thể, làm được ngay trong lúc làm bài. Chép cả cặp lỗi – cách phòng vào sổ lỗi.
 
@@ -308,19 +308,19 @@ Kết quả: **đơn vị đo — mọi số có cùng đơn vị chưa**.
 
 Xét ý a: Lỗi này bị bắt ở tầng dò soát nào?
 
-Đọc vị: đây là dạng **Đọc và lập biểu đồ tranh**; dấu hiệu là Có hình vẽ lặp lại kèm một dòng chú thích.
+Đọc vị: đây là dạng **Biểu thức phân số nhiều phép tính**; dấu hiệu là Biểu thức gồm nhiều phân số và nhiều phép tính.
 
-Kiến thức phải dùng: Biểu đồ tranh, phép nhân và chia.
+Kiến thức phải dùng: Thứ tự thực hiện phép tính, tính chất phân phối.
 
-Cách làm: Đọc chú thích → nhân số hình với đơn vị.
+Cách làm: Quan sát rút gọn trước, sau đó theo thứ tự thực hiện.
 
-Lối tắt: Nếu mọi bạn đều dùng cùng một loại hình thì so số hình là đủ để biết ai nhiều nhất.
+Lối tắt: Rút gọn chéo tử với mẫu trước khi nhân.
 
-Kết quả: **tầng 1**.
+Kết quả: **tầng 2**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Việc đầu tiên khi đọc biểu đồ tranh là đọc **chú thích**: mỗi hình ứng với bao nhiêu đơn vị. Sau đó nhân số hình với số ấy. Muốn lập biểu đồ thì làm ngược lại: chia số thật cho số đơn vị mỗi hình.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
 
-*Điểm chốt:* Mỗi hình **không phải một đơn vị** — phải đọc chú thích trước.
+*Điểm chốt:* Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều.
 
 ### Bài C.3 — Dò soát tình huống 2
 
@@ -328,19 +328,19 @@ Kết quả: **tầng 1**.
 
 Xét ý a: Lỗi này bị bắt ở tầng dò soát nào?
 
-Đọc vị: đây là dạng **Rút gọn, so sánh, sắp thứ tự phân số**; dấu hiệu là Một nhóm phân số cần sắp thứ tự.
+Đọc vị: đây là dạng **Biểu đồ Ven**; dấu hiệu là Đề cho số người của từng nhóm **và** số người thuộc cả hai nhóm.
 
-Kiến thức phải dùng: Tính chất cơ bản của phân số; so sánh phân số.
+Kiến thức phải dùng: Phép cộng, phép trừ; đếm không trùng lặp.
 
-Cách làm: Rút gọn → so cùng mẫu hoặc quy đồng.
+Cách làm: Vẽ hai vòng tròn, điền phần chung trước rồi mới trừ ra phần riêng.
 
-Lối tắt: So với 1 và với một nửa trước — nhiều phân số phân loại được ngay.
+Lối tắt: Số người ít nhất một nhóm = nhóm A + nhóm B − phần chung.
 
 Kết quả: **tầng 2**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Cùng mẫu số thì so tử số. Khác mẫu thì quy đồng hoặc so với 1 và với một nửa. Rút gọn về tối giản trước khi trình bày kết quả.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Điền phần chung vào trước, rồi trừ ra hai phần riêng. Cộng ba phần ấy được số người tham gia ít nhất một hoạt động; lấy tổng trừ đi là ra số người ngoài cả hai vòng.
 
-*Điểm chốt:* Cùng mẫu số thì **chỉ cần so tử số**.
+*Điểm chốt:* Con số đề cho cho mỗi môn **đã bao gồm** những em học cả hai. Cộng thẳng hai con số ấy là đếm phần chung hai lần.
 
 ### Bài C.4 — Dò soát tình huống 3
 
@@ -368,19 +368,19 @@ Kết quả: **tầng 2**.
 
 Xét ý a: Lỗi này bị bắt ở tầng dò soát nào?
 
-Đọc vị: đây là dạng **So sánh phân số**; dấu hiệu là Hai phân số nối bởi dấu ….
+Đọc vị: đây là dạng **Tìm phân số của một số**; dấu hiệu là Cụm “bằng … của …”.
 
-Kiến thức phải dùng: Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu.
+Kiến thức phải dùng: Nhân số tự nhiên với phân số.
 
-Cách làm: Xét cùng mẫu → cùng tử → quy đồng.
+Cách làm: Chia theo mẫu số rồi nhân theo tử số.
 
-Lối tắt: So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay.
+Lối tắt: Chia trước, nhân sau — số nhỏ hơn nên tính nhẩm được.
 
 Kết quả: **tầng 2**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Cùng mẫu số: phân số nào có tử số lớn hơn thì lớn hơn. Cùng tử số: phân số nào có mẫu số **bé** hơn thì lớn hơn. Khác cả tử lẫn mẫu: quy đồng mẫu số rồi so tử số.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Muốn tìm phân số của một số, ta lấy số đó nhân với phân số. Cách hiểu: chia số đó thành số phần bằng mẫu số, rồi lấy số phần bằng tử số.
 
-*Điểm chốt:* Cùng tử số thì **mẫu bé hơn là phân số lớn hơn** — ngược với trực giác.
+*Điểm chốt:* Phân số tính trên **số nào** — đọc kĩ cụm “… của …”.
 
 ### Bài D.1 — Khung sơ đồ tổng hợp chương
 
@@ -402,27 +402,47 @@ Kết quả: **Phân số nâng cao: so sánh, tính nhanh và bài toán ẩn**
 
 *Điểm chốt:* Vẽ **từ trí nhớ** mới có tác dụng; chép lại thì không.
 
-### Bài D.2 — Nhánh 1 — Đọc bảng số liệu thống kê
+### Bài D.2 — Nhánh 1 — Đọc và lập biểu đồ tranh
 
 **Các bước giải**
 
 Xét ý a: Nhánh con 1 — dấu hiệu nhận biết?
 
-Đọc vị: đây là dạng **Đọc bảng số liệu thống kê**; dấu hiệu là Đề cho bảng hoặc biểu đồ kèm nhiều câu hỏi.
+Đọc vị: đây là dạng **Đọc và lập biểu đồ tranh**; dấu hiệu là Có hình vẽ lặp lại kèm một dòng chú thích.
 
-Kiến thức phải dùng: Thống kê mô tả sơ cấp, trung bình cộng, tỉ số phần trăm.
+Kiến thức phải dùng: Biểu đồ tranh, phép nhân và chia.
 
-Cách làm: Ghi lại số liệu, trả lời từng câu bằng công cụ tương ứng.
+Cách làm: Đọc chú thích → nhân số hình với đơn vị.
 
-Lối tắt: Tính tổng một lần rồi dùng lại cho mọi câu hỏi phần trăm.
+Lối tắt: Nếu mọi bạn đều dùng cùng một loại hình thì so số hình là đủ để biết ai nhiều nhất.
 
-Kết quả: **Đề cho bảng hoặc biểu đồ kèm nhiều câu hỏi**.
+Kết quả: **Có hình vẽ lặp lại kèm một dòng chú thích**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
 
-*Điểm chốt:* Mọi câu hỏi đều quy về **tổng, so sánh, trung bình cộng, tỉ số phần trăm**.
+*Điểm chốt:* Mỗi hình **không phải một đơn vị** — phải đọc chú thích trước.
 
-### Bài D.3 — Nhánh 2 — Rút gọn, so sánh, sắp thứ tự phân số
+### Bài D.3 — Nhánh 2 — Biểu đồ Ven
+
+**Các bước giải**
+
+Xét ý a: Nhánh con 1 — dấu hiệu nhận biết?
+
+Đọc vị: đây là dạng **Biểu đồ Ven**; dấu hiệu là Đề cho số người của từng nhóm **và** số người thuộc cả hai nhóm.
+
+Kiến thức phải dùng: Phép cộng, phép trừ; đếm không trùng lặp.
+
+Cách làm: Vẽ hai vòng tròn, điền phần chung trước rồi mới trừ ra phần riêng.
+
+Lối tắt: Số người ít nhất một nhóm = nhóm A + nhóm B − phần chung.
+
+Kết quả: **Đề cho số người của từng nhóm **và** số người thuộc cả hai nhóm**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
+
+*Điểm chốt:* Con số đề cho cho mỗi môn **đã bao gồm** những em học cả hai. Cộng thẳng hai con số ấy là đếm phần chung hai lần.
+
+### Bài D.4 — Nhánh 3 — Rút gọn, so sánh, sắp thứ tự phân số
 
 **Các bước giải**
 
@@ -442,45 +462,25 @@ Kết quả: **Một nhóm phân số cần sắp thứ tự**.
 
 *Điểm chốt:* Cùng mẫu số thì **chỉ cần so tử số**.
 
-### Bài D.4 — Nhánh 3 — Bốn phép tính với phân số
+### Bài D.5 — Nhánh 4 — Đọc bảng số liệu thống kê
 
 **Các bước giải**
 
 Xét ý a: Nhánh con 1 — dấu hiệu nhận biết?
 
-Đọc vị: đây là dạng **Bốn phép tính với phân số**; dấu hiệu là Biểu thức chỉ gồm phân số.
+Đọc vị: đây là dạng **Đọc bảng số liệu thống kê**; dấu hiệu là Đề cho bảng hoặc biểu đồ kèm nhiều câu hỏi.
 
-Kiến thức phải dùng: Quy đồng, nhân chia phân số.
+Kiến thức phải dùng: Thống kê mô tả sơ cấp, trung bình cộng, tỉ số phần trăm.
 
-Cách làm: Chọn quy tắc theo phép tính, rút gọn cuối cùng.
+Cách làm: Ghi lại số liệu, trả lời từng câu bằng công cụ tương ứng.
 
-Lối tắt: Rút gọn chéo trước khi nhân để số nhỏ, tính nhanh và ít sai.
+Lối tắt: Tính tổng một lần rồi dùng lại cho mọi câu hỏi phần trăm.
 
-Kết quả: **Biểu thức chỉ gồm phân số**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
-
-*Điểm chốt:* Cộng trừ **cần** quy đồng, nhân chia **không cần** quy đồng.
-
-### Bài D.5 — Nhánh 4 — Dãy phân số, so sánh bằng phần bù
-
-**Các bước giải**
-
-Xét ý a: Nhánh con 1 — dấu hiệu nhận biết?
-
-Đọc vị: đây là dạng **Dãy phân số, so sánh bằng phần bù**; dấu hiệu là Tử và mẫu hơn kém nhau đúng 1 đơn vị.
-
-Kiến thức phải dùng: Phần bù tới 1; quy luật dãy phân số.
-
-Cách làm: Xét phần bù tới 1 rồi so sánh.
-
-Lối tắt: n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn.
-
-Kết quả: **Tử và mẫu hơn kém nhau đúng 1 đơn vị**.
+Kết quả: **Đề cho bảng hoặc biểu đồ kèm nhiều câu hỏi**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
 
-*Điểm chốt:* Phần bù **bé hơn** nghĩa là phân số **lớn hơn**.
+*Điểm chốt:* Mọi câu hỏi đều quy về **tổng, so sánh, trung bình cộng, tỉ số phần trăm**.
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
@@ -502,47 +502,7 @@ Kết quả: **giới thiệu chương “Phân số nâng cao: so sánh, tính 
 
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
-### Bài E.2 — Nội dung giảng — Đọc và lập biểu đồ tranh
-
-**Các bước giải**
-
-Xét ý a: Câu mở đầu giới thiệu dạng bài?
-
-Đọc vị: đây là dạng **Đọc và lập biểu đồ tranh**; dấu hiệu là Có hình vẽ lặp lại kèm một dòng chú thích.
-
-Kiến thức phải dùng: Biểu đồ tranh, phép nhân và chia.
-
-Cách làm: Đọc chú thích → nhân số hình với đơn vị.
-
-Lối tắt: Nếu mọi bạn đều dùng cùng một loại hình thì so số hình là đủ để biết ai nhiều nhất.
-
-Kết quả: **“Hôm nay nhóm mình nói về Đọc và lập biểu đồ tranh.”**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Việc đầu tiên khi đọc biểu đồ tranh là đọc **chú thích**: mỗi hình ứng với bao nhiêu đơn vị. Sau đó nhân số hình với số ấy. Muốn lập biểu đồ thì làm ngược lại: chia số thật cho số đơn vị mỗi hình.
-
-*Điểm chốt:* Mỗi hình **không phải một đơn vị** — phải đọc chú thích trước.
-
-### Bài E.3 — Nội dung giảng — Rút gọn phân số
-
-**Các bước giải**
-
-Xét ý a: Câu mở đầu giới thiệu dạng bài?
-
-Đọc vị: đây là dạng **Rút gọn phân số**; dấu hiệu là Tử số và mẫu số có ước chung lớn hơn 1.
-
-Kiến thức phải dùng: Tính chất cơ bản của phân số.
-
-Cách làm: Chia cả tử và mẫu cho ước chung.
-
-Lối tắt: Tìm ngay ước chung lớn nhất để rút gọn một lần là xong.
-
-Kết quả: **“Hôm nay nhóm mình nói về Rút gọn phân số.”**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Chia cả tử số và mẫu số cho cùng một số tự nhiên lớn hơn 1. Rút gọn đến khi tử số và mẫu số không cùng chia hết cho số nào lớn hơn 1 nữa thì được phân số tối giản.
-
-*Điểm chốt:* Phải chia **cả tử và mẫu** cho cùng một số.
-
-### Bài E.4 — Nội dung giảng — Biểu thức phân số nhiều phép tính
+### Bài E.2 — Nội dung giảng — Biểu thức phân số nhiều phép tính
 
 **Các bước giải**
 
@@ -561,6 +521,46 @@ Kết quả: **“Hôm nay nhóm mình nói về Biểu thức phân số nhiề
 **Cách nghĩ chung cho mọi bài cùng dạng.** Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
 
 *Điểm chốt:* Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều.
+
+### Bài E.3 — Nội dung giảng — Bốn phép tính với phân số
+
+**Các bước giải**
+
+Xét ý a: Câu mở đầu giới thiệu dạng bài?
+
+Đọc vị: đây là dạng **Bốn phép tính với phân số**; dấu hiệu là Biểu thức chỉ gồm phân số.
+
+Kiến thức phải dùng: Quy đồng, nhân chia phân số.
+
+Cách làm: Chọn quy tắc theo phép tính, rút gọn cuối cùng.
+
+Lối tắt: Rút gọn chéo trước khi nhân để số nhỏ, tính nhanh và ít sai.
+
+Kết quả: **“Hôm nay nhóm mình nói về Bốn phép tính với phân số.”**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Cộng, trừ phân số phải **quy đồng mẫu số** trước. Nhân phân số thì nhân tử với tử, mẫu với mẫu. Chia phân số thì nhân với phân số đảo ngược của số chia. Cuối cùng luôn rút gọn.
+
+*Điểm chốt:* Cộng trừ **cần** quy đồng, nhân chia **không cần** quy đồng.
+
+### Bài E.4 — Nội dung giảng — Rút gọn phân số
+
+**Các bước giải**
+
+Xét ý a: Câu mở đầu giới thiệu dạng bài?
+
+Đọc vị: đây là dạng **Rút gọn phân số**; dấu hiệu là Tử số và mẫu số có ước chung lớn hơn 1.
+
+Kiến thức phải dùng: Tính chất cơ bản của phân số.
+
+Cách làm: Chia cả tử và mẫu cho ước chung.
+
+Lối tắt: Tìm ngay ước chung lớn nhất để rút gọn một lần là xong.
+
+Kết quả: **“Hôm nay nhóm mình nói về Rút gọn phân số.”**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Chia cả tử số và mẫu số cho cùng một số tự nhiên lớn hơn 1. Rút gọn đến khi tử số và mẫu số không cùng chia hết cho số nào lớn hơn 1 nữa thì được phân số tối giản.
+
+*Điểm chốt:* Phải chia **cả tử và mẫu** cho cùng một số.
 
 ### Bài E.5 — Nội dung giảng — So sánh phân số bằng kĩ thuật đặc biệt
 
@@ -590,30 +590,30 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
-| A.1 | Rút gọn phân số | Tính chất cơ bản của phân số | Tử số và mẫu số có ước chung lớn hơn 1 | Chia cả tử và mẫu cho ước chung | Tìm ngay ước chung lớn nhất để rút gọn một lần là xong. | 1 phần 2 · 5 phần 7 · 3 phần 5 · 4 phần 5… |
-| A.2 | Viết số từ dạng tổng theo hàng | Cấu tạo thập phân của số tự nhiên | Tổng gồm các số tròn chục, tròn trăm, tròn nghìn… | Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết | Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số. | 201 244 · 901 348 · 482 435 · 812 466 |
-| A.3 | Ôn tập số tự nhiên | Thứ tự số tự nhiên, giá trị hàng, quy tắc làm tròn | Câu hỏi ngắn về so sánh, hàng, số liền kề, làm tròn | Đếm chữ số, xét hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | 1 477 171 và 1 477 173 · > · 5 534 000 · 500… |
-| A.4 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | > · > · > · >… |
-| A.5 | Nhân, chia số tự nhiên | Kĩ thuật đặt tính nhân, chia | Yêu cầu “đặt tính rồi tính” với phép nhân, chia | Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ chữ số | Kiểm tra kết quả bằng phép tính ngược: thương × số chia = số bị chia. | 324 925 · 8 811 · 524 142 · 137 784… |
+| A.1 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | < · < · > · >… |
+| A.2 | Rút gọn phân số | Tính chất cơ bản của phân số | Tử số và mẫu số có ước chung lớn hơn 1 | Chia cả tử và mẫu cho ước chung | Tìm ngay ước chung lớn nhất để rút gọn một lần là xong. | 1 phần 3 · 8 phần 9 · 2 phần 3 · 4 phần 7… |
+| A.3 | Viết số từ dạng tổng theo hàng | Cấu tạo thập phân của số tự nhiên | Tổng gồm các số tròn chục, tròn trăm, tròn nghìn… | Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết | Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số. | 454 903 · 464 667 · 954 023 · 367 782 |
+| A.4 | Nhân, chia số tự nhiên | Kĩ thuật đặt tính nhân, chia | Yêu cầu “đặt tính rồi tính” với phép nhân, chia | Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ chữ số | Kiểm tra kết quả bằng phép tính ngược: thương × số chia = số bị chia. | 2 329 · 2 590 · 837 549 · 6 021… |
+| A.5 | Ôn tập số tự nhiên | Thứ tự số tự nhiên, giá trị hàng, quy tắc làm tròn | Câu hỏi ngắn về so sánh, hàng, số liền kề, làm tròn | Đếm chữ số, xét hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | 200 000 · < · 2 192 300 · 6 073 527 và 6 073 529… |
 | B.1 | Kỹ năng trình bày | Chuẩn trình bày bài giải | Yêu cầu “trình bày lời giải” | Viết đủ bốn dòng | Viết câu lời giải trước, phép tính sau — không bao giờ ngược lại. | câu lời giải nêu rõ đang tìm đại lượng nào · phép tính, viết đủ dấu và đủ đơn vị · kết quả kèm đơn vị · câu đáp số… |
-| B.2 | Kỹ năng viết câu lời giải | Chuẩn trình bày | Đề hỏi gì thì câu lời giải nhắc lại điều đó | Lấy cụm từ trong câu hỏi làm câu lời giải | Sao chép cụm từ trong câu hỏi là cách viết câu lời giải nhanh và chắc nhất. | “Đọc và lập biểu đồ tranh là:” · “Đọc bảng số liệu thống kê là:” · “Rút gọn phân số là:” · “Rút gọn, so sánh, sắp thứ tự phân số là:”… |
+| B.2 | Kỹ năng viết câu lời giải | Chuẩn trình bày | Đề hỏi gì thì câu lời giải nhắc lại điều đó | Lấy cụm từ trong câu hỏi làm câu lời giải | Sao chép cụm từ trong câu hỏi là cách viết câu lời giải nhanh và chắc nhất. | “Biểu thức phân số nhiều phép tính là:” · “Đọc và lập biểu đồ tranh là:” · “Bốn phép tính với phân số là:” · “Biểu đồ Ven là:”… |
 | B.3 | Kỹ năng ghi đơn vị | Đơn vị đo các đại lượng | Đáp số của bài có đại lượng đo | Kiểm tra đơn vị ở bước cuối | Nhìn đơn vị của đáp số là biết ngay mình có nhầm chu vi với diện tích không. | không ghi trong dấu ngoặc phép tính · có, bắt buộc · có, bắt buộc · đơn vị vuông, ví dụ cm²… |
-| B.4 | Sổ lỗi và cách phòng | Lỗi thường gặp của chương | Cột “Lỗi thường gặp” trong bảng phân tích | Ghép cặp lỗi với cách phòng | Đọc lại sổ lỗi 3 phút trước mỗi bài kiểm tra. | Khoanh tròn dòng chú thích trước khi trả lời bất kỳ câu nào. · Đánh dấu từng số đã cộng để không sót và không cộng lặp. · Viết phép chia cho cả hai dòng, kiểm tra lại bằng cách nhân ngược. · Ghi cả phân số gốc và phân số tối giản cạnh nhau để đối chiếu.… |
+| B.4 | Sổ lỗi và cách phòng | Lỗi thường gặp của chương | Cột “Lỗi thường gặp” trong bảng phân tích | Ghép cặp lỗi với cách phòng | Đọc lại sổ lỗi 3 phút trước mỗi bài kiểm tra. | Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút. · Khoanh tròn dòng chú thích trước khi trả lời bất kỳ câu nào. · Trước khi tính, khoanh dấu phép tính và tự nhắc “có phải quy đồng không”. · Vẽ hình trước, điền phần giữa trước, rồi mới điền hai bên.… |
 | B.5 | Kỹ năng tự chấm | Thang điểm và chuẩn chấm | Bài đã làm xong, cần tự đánh giá | Chia bài thành bốn phần rồi chấm từng phần | Tự chấm bài của bạn giúp nhớ chuẩn chấm nhanh hơn tự chấm bài của mình. | 1 phần trong 4 · 2 phần trong 4 · 1 phần trong 4 · 3 phần trong 4… |
 | C.1 | Kỹ năng dò soát | Quy trình ba tầng | Bài đã làm xong, còn thời gian | Dò theo thứ tự đơn vị → phép tính → câu hỏi | Đọc lại **câu hỏi** trước, đọc lại bài làm sau. | đơn vị đo — mọi số có cùng đơn vị chưa · phép tính — cộng trừ nhân chia có đúng thứ tự chưa · đề hỏi gì — mình đã trả lời đúng câu hỏi chưa · tầng 3 — trả lời lệch câu hỏi… |
-| C.2 | Đọc và lập biểu đồ tranh | Biểu đồ tranh, phép nhân và chia | Có hình vẽ lặp lại kèm một dòng chú thích | Đọc chú thích → nhân số hình với đơn vị | Nếu mọi bạn đều dùng cùng một loại hình thì so số hình là đủ để biết ai nhiều nhất. | tầng 1 · Khoanh tròn dòng chú thích trước khi trả lời bất kỳ câu nào. · toàn bộ số điểm của ý sai · Khoanh tròn dòng chú thích trước khi trả lời bất kỳ câu nào.… |
-| C.3 | Rút gọn, so sánh, sắp thứ tự phân số | Tính chất cơ bản của phân số; so sánh phân số | Một nhóm phân số cần sắp thứ tự | Rút gọn → so cùng mẫu hoặc quy đồng | So với 1 và với một nửa trước — nhiều phân số phân loại được ngay. | tầng 2 · Ghi cả phân số gốc và phân số tối giản cạnh nhau để đối chiếu. · toàn bộ số điểm của ý sai · Ghi cả phân số gốc và phân số tối giản cạnh nhau để đối chiếu.… |
+| C.2 | Biểu thức phân số nhiều phép tính | Thứ tự thực hiện phép tính, tính chất phân phối | Biểu thức gồm nhiều phân số và nhiều phép tính | Quan sát rút gọn trước, sau đó theo thứ tự thực hiện | Rút gọn chéo tử với mẫu trước khi nhân. | tầng 2 · Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút. · toàn bộ số điểm của ý sai · Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút.… |
+| C.3 | Biểu đồ Ven | Phép cộng, phép trừ; đếm không trùng lặp | Đề cho số người của từng nhóm **và** số người thuộc cả hai nhóm | Vẽ hai vòng tròn, điền phần chung trước rồi mới trừ ra phần riêng | Số người ít nhất một nhóm = nhóm A + nhóm B − phần chung. | tầng 2 · Vẽ hình trước, điền phần giữa trước, rồi mới điền hai bên. · toàn bộ số điểm của ý sai · Vẽ hình trước, điền phần giữa trước, rồi mới điền hai bên.… |
 | C.4 | So sánh phân số bằng kĩ thuật đặc biệt | Phần bù tới 1, phân số trung gian | Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 | So phần bù; hoặc chèn phân số trung gian | Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. | tầng 2 · Nghĩ tới chiếc bánh: thiếu ít hơn thì phần đang có nhiều hơn. · toàn bộ số điểm của ý sai · Nghĩ tới chiếc bánh: thiếu ít hơn thì phần đang có nhiều hơn.… |
-| C.5 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | tầng 2 · Nghĩ tới chiếc bánh: chia càng nhiều phần thì mỗi phần càng bé. · toàn bộ số điểm của ý sai · Nghĩ tới chiếc bánh: chia càng nhiều phần thì mỗi phần càng bé.… |
+| C.5 | Tìm phân số của một số | Nhân số tự nhiên với phân số | Cụm “bằng … của …” | Chia theo mẫu số rồi nhân theo tử số | Chia trước, nhân sau — số nhỏ hơn nên tính nhẩm được. | tầng 2 · Gạch chân cụm “bằng … số cây của …” để xác định số bị nhân. · toàn bộ số điểm của ý sai · Gạch chân cụm “bằng … số cây của …” để xác định số bị nhân.… |
 | D.1 | Sơ đồ tư duy tổng hợp | Hệ thống hoá toàn chương | Yêu cầu vẽ lại sơ đồ không nhìn tài liệu | Vẽ từ trí nhớ rồi đối chiếu | Chỗ nào quên khi vẽ chính là chỗ phải ôn lại đầu tiên. | Phân số nâng cao: so sánh, tính nhanh và bài toán ẩn · 7 · tên một dạng bài của chương · 3 nhánh con: dấu hiệu · phương pháp · lỗi hay mắc… |
-| D.2 | Đọc bảng số liệu thống kê | Thống kê mô tả sơ cấp, trung bình cộng, tỉ số phần trăm | Đề cho bảng hoặc biểu đồ kèm nhiều câu hỏi | Ghi lại số liệu, trả lời từng câu bằng công cụ tương ứng | Tính tổng một lần rồi dùng lại cho mọi câu hỏi phần trăm. | Đề cho bảng hoặc biểu đồ kèm nhiều câu hỏi · Ghi lại số liệu, trả lời từng câu bằng công cụ tương ứng · Đọc nhầm cột, hoặc quên một môn khi cộng tổng. · Thống kê mô tả sơ cấp, trung bình cộng, tỉ số phần trăm… |
-| D.3 | Rút gọn, so sánh, sắp thứ tự phân số | Tính chất cơ bản của phân số; so sánh phân số | Một nhóm phân số cần sắp thứ tự | Rút gọn → so cùng mẫu hoặc quy đồng | So với 1 và với một nửa trước — nhiều phân số phân loại được ngay. | Một nhóm phân số cần sắp thứ tự · Rút gọn → so cùng mẫu hoặc quy đồng · Rút gọn xong quên rằng thứ tự vẫn giữ nguyên, đi quy đồng lại từ đầu. · Tính chất cơ bản của phân số; so sánh phân số… |
-| D.4 | Bốn phép tính với phân số | Quy đồng, nhân chia phân số | Biểu thức chỉ gồm phân số | Chọn quy tắc theo phép tính, rút gọn cuối cùng | Rút gọn chéo trước khi nhân để số nhỏ, tính nhanh và ít sai. | Biểu thức chỉ gồm phân số · Chọn quy tắc theo phép tính, rút gọn cuối cùng · Quy đồng cả khi nhân, hoặc cộng thẳng tử với tử và mẫu với mẫu. · Quy đồng, nhân chia phân số… |
-| D.5 | Dãy phân số, so sánh bằng phần bù | Phần bù tới 1; quy luật dãy phân số | Tử và mẫu hơn kém nhau đúng 1 đơn vị | Xét phần bù tới 1 rồi so sánh | n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. | Tử và mẫu hơn kém nhau đúng 1 đơn vị · Xét phần bù tới 1 rồi so sánh · So phần bù rồi kết luận cùng chiều với phần bù. · Phần bù tới 1; quy luật dãy phân số… |
+| D.2 | Đọc và lập biểu đồ tranh | Biểu đồ tranh, phép nhân và chia | Có hình vẽ lặp lại kèm một dòng chú thích | Đọc chú thích → nhân số hình với đơn vị | Nếu mọi bạn đều dùng cùng một loại hình thì so số hình là đủ để biết ai nhiều nhất. | Có hình vẽ lặp lại kèm một dòng chú thích · Đọc chú thích → nhân số hình với đơn vị · Đếm số hình rồi trả lời luôn, quên nhân với số đơn vị mỗi hình. · Biểu đồ tranh, phép nhân và chia… |
+| D.3 | Biểu đồ Ven | Phép cộng, phép trừ; đếm không trùng lặp | Đề cho số người của từng nhóm **và** số người thuộc cả hai nhóm | Vẽ hai vòng tròn, điền phần chung trước rồi mới trừ ra phần riêng | Số người ít nhất một nhóm = nhóm A + nhóm B − phần chung. | Đề cho số người của từng nhóm **và** số người thuộc cả hai nhóm · Vẽ hai vòng tròn, điền phần chung trước rồi mới trừ ra phần riêng · Lấy tổng trừ đi tổng hai con số đề cho mà không cộng lại phần chung. · Phép cộng, phép trừ; đếm không trùng lặp… |
+| D.4 | Rút gọn, so sánh, sắp thứ tự phân số | Tính chất cơ bản của phân số; so sánh phân số | Một nhóm phân số cần sắp thứ tự | Rút gọn → so cùng mẫu hoặc quy đồng | So với 1 và với một nửa trước — nhiều phân số phân loại được ngay. | Một nhóm phân số cần sắp thứ tự · Rút gọn → so cùng mẫu hoặc quy đồng · Rút gọn xong quên rằng thứ tự vẫn giữ nguyên, đi quy đồng lại từ đầu. · Tính chất cơ bản của phân số; so sánh phân số… |
+| D.5 | Đọc bảng số liệu thống kê | Thống kê mô tả sơ cấp, trung bình cộng, tỉ số phần trăm | Đề cho bảng hoặc biểu đồ kèm nhiều câu hỏi | Ghi lại số liệu, trả lời từng câu bằng công cụ tương ứng | Tính tổng một lần rồi dùng lại cho mọi câu hỏi phần trăm. | Đề cho bảng hoặc biểu đồ kèm nhiều câu hỏi · Ghi lại số liệu, trả lời từng câu bằng công cụ tương ứng · Đọc nhầm cột, hoặc quên một môn khi cộng tổng. · Thống kê mô tả sơ cấp, trung bình cộng, tỉ số phần trăm… |
 | E.1 | Kỹ năng thuyết trình theo nhóm | Hệ thống hoá và diễn đạt | Yêu cầu giảng lại chương theo nhóm | Chia kịch bản theo phút, phân công rõ người | Người giảng nhớ lâu hơn người nghe khoảng ba lần. | giới thiệu chương “Phân số nâng cao: so sánh, tính nhanh và bài toán ẩn” và mục tiêu · trình bày sơ đồ tư duy chương · giảng một dạng bài kèm ví dụ mẫu · nêu lỗi hay mắc và cách phòng… |
-| E.2 | Đọc và lập biểu đồ tranh | Biểu đồ tranh, phép nhân và chia | Có hình vẽ lặp lại kèm một dòng chú thích | Đọc chú thích → nhân số hình với đơn vị | Nếu mọi bạn đều dùng cùng một loại hình thì so số hình là đủ để biết ai nhiều nhất. | “Hôm nay nhóm mình nói về Đọc và lập biểu đồ tranh.” · Có hình vẽ lặp lại kèm một dòng chú thích · Biểu đồ tranh, phép nhân và chia · Mỗi hình ứng với 5 quyển sách, bạn A có 4 hình. A có mấy quyển? → 20 quyển… |
-| E.3 | Rút gọn phân số | Tính chất cơ bản của phân số | Tử số và mẫu số có ước chung lớn hơn 1 | Chia cả tử và mẫu cho ước chung | Tìm ngay ước chung lớn nhất để rút gọn một lần là xong. | “Hôm nay nhóm mình nói về Rút gọn phân số.” · Tử số và mẫu số có ước chung lớn hơn 1 · Tính chất cơ bản của phân số · Rút gọn 18 phần 24. → 3 phần 4… |
-| E.4 | Biểu thức phân số nhiều phép tính | Thứ tự thực hiện phép tính, tính chất phân phối | Biểu thức gồm nhiều phân số và nhiều phép tính | Quan sát rút gọn trước, sau đó theo thứ tự thực hiện | Rút gọn chéo tử với mẫu trước khi nhân. | “Hôm nay nhóm mình nói về Biểu thức phân số nhiều phép tính.” · Biểu thức gồm nhiều phân số và nhiều phép tính · Thứ tự thực hiện phép tính, tính chất phân phối · Tính: (1 phần 2 + 1 phần 3) × 6 phần 5 → 1… |
+| E.2 | Biểu thức phân số nhiều phép tính | Thứ tự thực hiện phép tính, tính chất phân phối | Biểu thức gồm nhiều phân số và nhiều phép tính | Quan sát rút gọn trước, sau đó theo thứ tự thực hiện | Rút gọn chéo tử với mẫu trước khi nhân. | “Hôm nay nhóm mình nói về Biểu thức phân số nhiều phép tính.” · Biểu thức gồm nhiều phân số và nhiều phép tính · Thứ tự thực hiện phép tính, tính chất phân phối · Tính: (1 phần 2 + 1 phần 3) × 6 phần 5 → 1… |
+| E.3 | Bốn phép tính với phân số | Quy đồng, nhân chia phân số | Biểu thức chỉ gồm phân số | Chọn quy tắc theo phép tính, rút gọn cuối cùng | Rút gọn chéo trước khi nhân để số nhỏ, tính nhanh và ít sai. | “Hôm nay nhóm mình nói về Bốn phép tính với phân số.” · Biểu thức chỉ gồm phân số · Quy đồng, nhân chia phân số · Tính: 2 phần 3 + 1 phần 6 → 5 phần 6… |
+| E.4 | Rút gọn phân số | Tính chất cơ bản của phân số | Tử số và mẫu số có ước chung lớn hơn 1 | Chia cả tử và mẫu cho ước chung | Tìm ngay ước chung lớn nhất để rút gọn một lần là xong. | “Hôm nay nhóm mình nói về Rút gọn phân số.” · Tử số và mẫu số có ước chung lớn hơn 1 · Tính chất cơ bản của phân số · Rút gọn 18 phần 24. → 3 phần 4… |
 | E.5 | So sánh phân số bằng kĩ thuật đặc biệt | Phần bù tới 1, phân số trung gian | Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 | So phần bù; hoặc chèn phân số trung gian | Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. | “Hôm nay nhóm mình nói về So sánh phân số bằng kĩ thuật đặc biệt.” · Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 · Phần bù tới 1, phân số trung gian · So sánh: 5 phần 6 … 7 phần 8 → <… |
 
 ---
@@ -622,30 +622,30 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 
 | Bài | Nhãn tư duy | Điểm chốt |
 |---|---|---|
-| A.1 | TD1 | Phải chia **cả tử và mẫu** cho cùng một số. |
-| A.2 | TD1, TD3 | Hàng khuyết trong tổng vẫn phải có chữ số **0** trong số viết ra. |
-| A.3 | TD1, TD5 | So sánh đi từ **trái sang phải**, làm tròn nhìn **một chữ số liền sau**. |
-| A.4 | TD1, TD5 | Cùng tử số thì **mẫu bé hơn là phân số lớn hơn** — ngược với trực giác. |
-| A.5 | TD1 | Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0. |
+| A.1 | TD1, TD5 | Cùng tử số thì **mẫu bé hơn là phân số lớn hơn** — ngược với trực giác. |
+| A.2 | TD1 | Phải chia **cả tử và mẫu** cho cùng một số. |
+| A.3 | TD1, TD3 | Hàng khuyết trong tổng vẫn phải có chữ số **0** trong số viết ra. |
+| A.4 | TD1 | Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0. |
+| A.5 | TD1, TD5 | So sánh đi từ **trái sang phải**, làm tròn nhìn **một chữ số liền sau**. |
 | B.1 | TD1 | Có lời giải đúng mà trình bày thiếu vẫn **mất điểm thật**. |
 | B.2 | TD1 | Câu lời giải phải **nêu đúng đại lượng** đang tìm. |
 | B.3 | TD1 | Diện tích **luôn** có đơn vị vuông, thể tích luôn có đơn vị khối. |
 | B.4 | TD2 | Sổ lỗi chỉ có ích khi ghi **cả cách phòng**, không chỉ ghi lỗi. |
 | B.5 | TD1, TD2 | Biết thang chấm để **không bỏ những dòng dễ ăn điểm nhất**. |
 | C.1 | TD1, TD6 | Tầng 3 — **đề hỏi gì** — là tầng bắt được nhiều lỗi nhất. |
-| C.2 | TD1, TD2 | Mỗi hình **không phải một đơn vị** — phải đọc chú thích trước. |
-| C.3 | TD1, TD5 | Cùng mẫu số thì **chỉ cần so tử số**. |
+| C.2 | TD3, TD5 | Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều. |
+| C.3 | TD2, TD4 | Con số đề cho cho mỗi môn **đã bao gồm** những em học cả hai. Cộng thẳng hai con số ấy là đếm phần chung hai lần. |
 | C.4 | TD6, TD5 | Phần bù **bé hơn** nghĩa là phân số **lớn hơn** — dễ nhớ nhầm chiều. |
-| C.5 | TD1, TD5 | Cùng tử số thì **mẫu bé hơn là phân số lớn hơn** — ngược với trực giác. |
+| C.5 | TD2, TD3 | Phân số tính trên **số nào** — đọc kĩ cụm “… của …”. |
 | D.1 | TD3 | Vẽ **từ trí nhớ** mới có tác dụng; chép lại thì không. |
-| D.2 | TD1, TD2 | Mọi câu hỏi đều quy về **tổng, so sánh, trung bình cộng, tỉ số phần trăm**. |
-| D.3 | TD1, TD5 | Cùng mẫu số thì **chỉ cần so tử số**. |
-| D.4 | TD1, TD3 | Cộng trừ **cần** quy đồng, nhân chia **không cần** quy đồng. |
-| D.5 | TD6, TD5 | Phần bù **bé hơn** nghĩa là phân số **lớn hơn**. |
+| D.2 | TD1, TD2 | Mỗi hình **không phải một đơn vị** — phải đọc chú thích trước. |
+| D.3 | TD2, TD4 | Con số đề cho cho mỗi môn **đã bao gồm** những em học cả hai. Cộng thẳng hai con số ấy là đếm phần chung hai lần. |
+| D.4 | TD1, TD5 | Cùng mẫu số thì **chỉ cần so tử số**. |
+| D.5 | TD1, TD2 | Mọi câu hỏi đều quy về **tổng, so sánh, trung bình cộng, tỉ số phần trăm**. |
 | E.1 | TD3, TD6 | Giảng được cho bạn hiểu mới là **đã hiểu**. |
-| E.2 | TD1, TD2 | Mỗi hình **không phải một đơn vị** — phải đọc chú thích trước. |
-| E.3 | TD1 | Phải chia **cả tử và mẫu** cho cùng một số. |
-| E.4 | TD3, TD5 | Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều. |
+| E.2 | TD3, TD5 | Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều. |
+| E.3 | TD1, TD3 | Cộng trừ **cần** quy đồng, nhân chia **không cần** quy đồng. |
+| E.4 | TD1 | Phải chia **cả tử và mẫu** cho cùng một số. |
 | E.5 | TD6, TD5 | Phần bù **bé hơn** nghĩa là phân số **lớn hơn** — dễ nhớ nhầm chiều. |
 
 ---
@@ -656,30 +656,30 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 
 | Bài | Lỗi thường gặp | Cách phòng |
 |---|---|---|
-| A.1 | Chỉ chia tử số hoặc chỉ chia mẫu số. | Viết phép chia cho cả hai dòng, kiểm tra lại bằng cách nhân ngược. |
-| A.2 | Bỏ qua hàng khuyết nên số viết ra bị ngắn đi một chữ số. | Kẻ sẵn các ô hàng rồi mới điền chữ số vào ô tương ứng. |
-| A.3 | So sánh từ hàng đơn vị; hoặc làm tròn nhìn nhầm sang chính hàng cần làm tròn. | Gạch một nét ngăn ngay sau hàng cần làm tròn. |
-| A.4 | Thấy mẫu số lớn thì kết luận phân số lớn. | Nghĩ tới chiếc bánh: chia càng nhiều phần thì mỗi phần càng bé. |
-| A.5 | Quên viết chữ số 0 ở thương nên thương thiếu chữ số. | Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số. |
+| A.1 | Thấy mẫu số lớn thì kết luận phân số lớn. | Nghĩ tới chiếc bánh: chia càng nhiều phần thì mỗi phần càng bé. |
+| A.2 | Chỉ chia tử số hoặc chỉ chia mẫu số. | Viết phép chia cho cả hai dòng, kiểm tra lại bằng cách nhân ngược. |
+| A.3 | Bỏ qua hàng khuyết nên số viết ra bị ngắn đi một chữ số. | Kẻ sẵn các ô hàng rồi mới điền chữ số vào ô tương ứng. |
+| A.4 | Quên viết chữ số 0 ở thương nên thương thiếu chữ số. | Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số. |
+| A.5 | So sánh từ hàng đơn vị; hoặc làm tròn nhìn nhầm sang chính hàng cần làm tròn. | Gạch một nét ngăn ngay sau hàng cần làm tròn. |
 | B.1 | Viết thẳng phép tính, bỏ câu lời giải. | Đọc lại bài đã làm, đếm xem có đủ bốn dòng chưa. |
 | B.2 | Viết câu lời giải chung chung cho mọi bài. | Lấy đúng cụm từ trong câu hỏi của đề làm câu lời giải. |
 | B.3 | Ghi diện tích bằng cm thay vì cm². | Trước khi viết đáp số, hỏi: đại lượng này đo bằng gì? |
 | B.4 | Ghi lỗi vào sổ nhưng không ghi cách phòng nên lần sau vẫn sai. | Mỗi dòng sổ lỗi bắt buộc có hai cột: lỗi và cách phòng. |
 | B.5 | Bỏ câu lời giải vì nghĩ “không quan trọng”. | Tự chấm bài của bạn cùng bàn theo đúng thang này một lần mỗi tuần. |
 | C.1 | Dò lại phép tính nhưng không đọc lại câu hỏi. | Sau mỗi bài, đọc to lại câu hỏi rồi đối chiếu với đáp số. |
-| C.2 | Đếm số hình rồi trả lời luôn, quên nhân với số đơn vị mỗi hình. | Khoanh tròn dòng chú thích trước khi trả lời bất kỳ câu nào. |
-| C.3 | Rút gọn xong quên rằng thứ tự vẫn giữ nguyên, đi quy đồng lại từ đầu. | Ghi cả phân số gốc và phân số tối giản cạnh nhau để đối chiếu. |
+| C.2 | Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. | Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút. |
+| C.3 | Lấy tổng trừ đi tổng hai con số đề cho mà không cộng lại phần chung. | Vẽ hình trước, điền phần giữa trước, rồi mới điền hai bên. |
 | C.4 | So phần bù rồi kết luận cùng chiều với phần bù. | Nghĩ tới chiếc bánh: thiếu ít hơn thì phần đang có nhiều hơn. |
-| C.5 | Thấy mẫu số lớn thì kết luận phân số lớn. | Nghĩ tới chiếc bánh: chia càng nhiều phần thì mỗi phần càng bé. |
+| C.5 | Nhân phân số với đại lượng khác, không phải đại lượng đề chỉ định. | Gạch chân cụm “bằng … số cây của …” để xác định số bị nhân. |
 | D.1 | Vừa vẽ vừa nhìn phiếu Lý thuyết. | Úp phiếu Lý thuyết xuống bàn trước khi bắt đầu vẽ. |
-| D.2 | Đọc nhầm cột, hoặc quên một môn khi cộng tổng. | Đánh dấu từng số đã cộng để không sót và không cộng lặp. |
-| D.3 | Rút gọn xong quên rằng thứ tự vẫn giữ nguyên, đi quy đồng lại từ đầu. | Ghi cả phân số gốc và phân số tối giản cạnh nhau để đối chiếu. |
-| D.4 | Quy đồng cả khi nhân, hoặc cộng thẳng tử với tử và mẫu với mẫu. | Trước khi tính, khoanh dấu phép tính và tự nhắc “có phải quy đồng không”. |
-| D.5 | So phần bù rồi kết luận cùng chiều với phần bù. | Nghĩ tới chiếc bánh: thiếu ít hơn thì phần đang có nhiều hơn. |
+| D.2 | Đếm số hình rồi trả lời luôn, quên nhân với số đơn vị mỗi hình. | Khoanh tròn dòng chú thích trước khi trả lời bất kỳ câu nào. |
+| D.3 | Lấy tổng trừ đi tổng hai con số đề cho mà không cộng lại phần chung. | Vẽ hình trước, điền phần giữa trước, rồi mới điền hai bên. |
+| D.4 | Rút gọn xong quên rằng thứ tự vẫn giữ nguyên, đi quy đồng lại từ đầu. | Ghi cả phân số gốc và phân số tối giản cạnh nhau để đối chiếu. |
+| D.5 | Đọc nhầm cột, hoặc quên một môn khi cộng tổng. | Đánh dấu từng số đã cộng để không sót và không cộng lặp. |
 | E.1 | Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình. | Cấm cầm phiếu khi thuyết trình; chỉ được cầm sơ đồ tư duy tự vẽ. |
-| E.2 | Đếm số hình rồi trả lời luôn, quên nhân với số đơn vị mỗi hình. | Khoanh tròn dòng chú thích trước khi trả lời bất kỳ câu nào. |
-| E.3 | Chỉ chia tử số hoặc chỉ chia mẫu số. | Viết phép chia cho cả hai dòng, kiểm tra lại bằng cách nhân ngược. |
-| E.4 | Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. | Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút. |
+| E.2 | Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. | Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút. |
+| E.3 | Quy đồng cả khi nhân, hoặc cộng thẳng tử với tử và mẫu với mẫu. | Trước khi tính, khoanh dấu phép tính và tự nhắc “có phải quy đồng không”. |
+| E.4 | Chỉ chia tử số hoặc chỉ chia mẫu số. | Viết phép chia cho cả hai dòng, kiểm tra lại bằng cách nhân ngược. |
 | E.5 | So phần bù rồi kết luận cùng chiều với phần bù. | Nghĩ tới chiếc bánh: thiếu ít hơn thì phần đang có nhiều hơn. |
 
 ---
@@ -688,11 +688,11 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 
 Đọc tầng 1 trước; chỉ đọc tầng sau khi đã thử lại ít nhất 3 phút.
 
-**Bài A.1** — (1) Tử số và mẫu số cùng chia hết cho số nào? — (2) Chia cả hai cho số đó. — (3) Kết quả còn rút gọn tiếp được không?
-**Bài A.2** — (1) Số hạng lớn nhất cho biết hàng cao nhất. — (2) Kẻ đủ ô từ hàng cao nhất xuống hàng đơn vị. — (3) Ô nào không có số hạng tương ứng thì điền 0.
-**Bài A.3** — (1) Hai số có cùng số chữ số không? — (2) So chữ số đầu tiên bên trái trước. — (3) Làm tròn thì chỉ xét đúng một chữ số liền sau.
-**Bài A.4** — (1) Hai phân số có cùng mẫu số không? — (2) Có cùng tử số không? — (3) Nếu khác cả hai thì quy đồng mẫu số.
-**Bài A.5** — (1) Viết các tích riêng lùi đúng cột. — (2) Khi chia, mỗi lần hạ một chữ số thì viết một chữ số ở thương. — (3) Thử lại bằng phép tính ngược.
+**Bài A.1** — (1) Hai phân số có cùng mẫu số không? — (2) Có cùng tử số không? — (3) Nếu khác cả hai thì quy đồng mẫu số.
+**Bài A.2** — (1) Tử số và mẫu số cùng chia hết cho số nào? — (2) Chia cả hai cho số đó. — (3) Kết quả còn rút gọn tiếp được không?
+**Bài A.3** — (1) Số hạng lớn nhất cho biết hàng cao nhất. — (2) Kẻ đủ ô từ hàng cao nhất xuống hàng đơn vị. — (3) Ô nào không có số hạng tương ứng thì điền 0.
+**Bài A.4** — (1) Viết các tích riêng lùi đúng cột. — (2) Khi chia, mỗi lần hạ một chữ số thì viết một chữ số ở thương. — (3) Thử lại bằng phép tính ngược.
+**Bài A.5** — (1) Hai số có cùng số chữ số không? — (2) So chữ số đầu tiên bên trái trước. — (3) Làm tròn thì chỉ xét đúng một chữ số liền sau.
 **Bài B.1** — (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 **Bài B.2** — (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 **Bài B.3** — (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
@@ -722,30 +722,30 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 
 | Bài | Đề tương tự | Đáp số |
 |---|---|---|
-| A.1 | Rút gọn 18 phần 24. | 3 phần 4 |
-| A.2 | Viết số gồm tổng: 30 000 + 400 + 7 | 30 407 |
-| A.3 | Làm tròn 4 762 đến hàng trăm. | 4 800 |
-| A.4 | So sánh: 3 phần 5 … 3 phần 7 | > |
-| A.5 | Đặt tính rồi tính: 3 045 × 24 | 73 080 |
+| A.1 | So sánh: 3 phần 5 … 3 phần 7 | > |
+| A.2 | Rút gọn 18 phần 24. | 3 phần 4 |
+| A.3 | Viết số gồm tổng: 30 000 + 400 + 7 | 30 407 |
+| A.4 | Đặt tính rồi tính: 3 045 × 24 | 73 080 |
+| A.5 | Làm tròn 4 762 đến hàng trăm. | 4 800 |
 | B.1 | Một lời giải đạt chuẩn GITA có mấy dòng bắt buộc? | 4 dòng |
 | B.2 | Đề hỏi “mỗi tổ trồng mấy cây” thì câu lời giải viết thế nào? | “Số cây mỗi tổ trồng được là:” |
 | B.3 | Diện tích hình vuông cạnh 5 cm ghi đơn vị gì? | cm² |
 | B.4 | Ghi lỗi mà không ghi cách phòng thì sao? | lần sau vẫn mắc lại lỗi đó |
 | B.5 | Thiếu đơn vị ở đáp số bị trừ bao nhiêu? | một phần trong bốn phần điểm |
 | C.1 | Tầng nào bắt được lỗi trả lời lệch câu hỏi? | tầng 3 |
-| C.2 | Mỗi hình ứng với 5 quyển sách, bạn A có 4 hình. A có mấy quyển? | 20 quyển |
-| C.3 | Sắp xếp từ bé đến lớn: 3 phần 8, 5 phần 8, 1 phần 8 | 1 phần 8 < 3 phần 8 < 5 phần 8 |
+| C.2 | Tính: (1 phần 2 + 1 phần 3) × 6 phần 5 | 1 |
+| C.3 | Lớp có 40 em, 25 em học vẽ, 20 em học hát, 10 em học cả hai. Bao nhiêu em không học môn nào? | 5 em |
 | C.4 | So sánh: 5 phần 6 … 7 phần 8 | < |
-| C.5 | So sánh: 3 phần 5 … 3 phần 7 | > |
+| C.5 | Tổ Một trồng 60 cây, tổ Hai bằng 2 phần 3 tổ Một. Tổ Hai trồng mấy cây? | 40 cây |
 | D.1 | Vẽ sơ đồ mà nhìn tài liệu thì mất tác dụng gì? | mất tác dụng kiểm tra trí nhớ |
-| D.2 | Bảng: Toán 10, Văn 6, Anh 4. Trung bình mỗi môn bao nhiêu bạn? | 6,67 bạn |
-| D.3 | Sắp xếp từ bé đến lớn: 3 phần 8, 5 phần 8, 1 phần 8 | 1 phần 8 < 3 phần 8 < 5 phần 8 |
-| D.4 | Tính: 2 phần 3 + 1 phần 6 | 5 phần 6 |
-| D.5 | So sánh 5 phần 6 và 7 phần 8. | 5 phần 6 < 7 phần 8 |
+| D.2 | Mỗi hình ứng với 5 quyển sách, bạn A có 4 hình. A có mấy quyển? | 20 quyển |
+| D.3 | Lớp có 40 em, 25 em học vẽ, 20 em học hát, 10 em học cả hai. Bao nhiêu em không học môn nào? | 5 em |
+| D.4 | Sắp xếp từ bé đến lớn: 3 phần 8, 5 phần 8, 1 phần 8 | 1 phần 8 < 3 phần 8 < 5 phần 8 |
+| D.5 | Bảng: Toán 10, Văn 6, Anh 4. Trung bình mỗi môn bao nhiêu bạn? | 6,67 bạn |
 | E.1 | Vì sao phải giảng lại cho bạn? | vì giảng được mới là hiểu thật |
-| E.2 | Mỗi hình ứng với 5 quyển sách, bạn A có 4 hình. A có mấy quyển? | 20 quyển |
-| E.3 | Rút gọn 18 phần 24. | 3 phần 4 |
-| E.4 | Tính: (1 phần 2 + 1 phần 3) × 6 phần 5 | 1 |
+| E.2 | Tính: (1 phần 2 + 1 phần 3) × 6 phần 5 | 1 |
+| E.3 | Tính: 2 phần 3 + 1 phần 6 | 5 phần 6 |
+| E.4 | Rút gọn 18 phần 24. | 3 phần 4 |
 | E.5 | So sánh: 5 phần 6 … 7 phần 8 | < |
 
 ---

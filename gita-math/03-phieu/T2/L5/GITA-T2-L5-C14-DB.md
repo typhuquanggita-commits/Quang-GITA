@@ -234,55 +234,57 @@ f) Hình bình hành có đáy 12 cm, chiều cao 11 cm. Tính diện tích.
 
 ## PHẦN D — DẠNG 5 – DẠNG 6 VÀ DẠNG PHỐI HỢP · Mức M3 — Vận dụng · 20 phút · 20 điểm
 
-### Bài 1. (4 điểm) Tổng của các số tự nhiên liên tiếp
+### Bài 1. (4 điểm) Tìm số ban đầu bằng cách tính ngược
 
-Với mỗi ý, tìm số theo yêu cầu.
+Vẽ sơ đồ mũi tên trước khi tính. Tính xong phải thử lại theo chiều xuôi.
 
-a) Tổng của 5 số tự nhiên liên tiếp bằng 1 970. Tìm số bé nhất trong 5 số đó.
-b) Tổng của 3 số tự nhiên liên tiếp bằng 393. Tìm số bé nhất trong 3 số đó.
-c) Tổng của 5 số tự nhiên liên tiếp bằng 485. Tìm số bé nhất trong 5 số đó.
-d) Tổng của 3 số tự nhiên liên tiếp bằng 60. Tìm số bé nhất trong 3 số đó.
+a) Em nghĩ ra một số. Lấy số ấy nhân với 5, được bao nhiêu thì cộng thêm 17, rồi chia cho 3 thì được 19. Hỏi số em nghĩ ra là số nào?
+b) Em nghĩ ra một số. Lấy số ấy nhân với 2, được bao nhiêu thì cộng thêm 38, rồi chia cho 6 thì được 9. Hỏi số em nghĩ ra là số nào?
+c) Em nghĩ ra một số. Lấy số ấy nhân với 9, được bao nhiêu thì cộng thêm 42, rồi chia cho 3 thì được 119. Hỏi số em nghĩ ra là số nào?
+d) Em nghĩ ra một số. Lấy số ấy nhân với 6, được bao nhiêu thì cộng thêm 12, rồi chia cho 6 thì được 17. Hỏi số em nghĩ ra là số nào?
+e) Em nghĩ ra một số. Lấy số ấy nhân với 5, được bao nhiêu thì cộng thêm 19, rồi chia cho 4 thì được 31. Hỏi số em nghĩ ra là số nào?
+f) Em nghĩ ra một số. Lấy số ấy nhân với 4, được bao nhiêu thì cộng thêm 25, rồi chia cho 5 thì được 13. Hỏi số em nghĩ ra là số nào?
 
-### Bài 2. (4 điểm) Bài toán thực tế về khối lượng
-
-Chú ý đơn vị mà đề hỏi.
-
-a) Một xe chở 35 bao phân bón, mỗi bao 50 kg. Hỏi xe chở bao nhiêu tạ phân bón?
-b) Một xe chở 18 bao đường, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ đường?
-c) Một xe chở 9 bao thóc, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ thóc?
-d) Một xe chở 20 bao đường, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ đường?
-e) Một xe chở 10 bao đường, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ đường?
-
-### Bài 3. (4 điểm) Tính thời điểm đến, thời gian đi
-
-Ghi kết quả theo giờ và phút.
-
-a) Một chuyến tàu khởi hành lúc 10 giờ 20 phút và đi hết 3 giờ 59 phút. Tàu đến nơi lúc mấy giờ?
-b) Một chuyến tàu khởi hành lúc 12 giờ 25 phút và đi hết 2 giờ 11 phút. Tàu đến nơi lúc mấy giờ?
-c) Một chuyến tàu khởi hành lúc 14 giờ 10 phút và đi hết 2 giờ 2 phút. Tàu đến nơi lúc mấy giờ?
-d) Một chuyến tàu khởi hành lúc 13 giờ 40 phút và đi hết 4 giờ 36 phút. Tàu đến nơi lúc mấy giờ?
-e) Một chuyến tàu khởi hành lúc 5 giờ 30 phút và đi hết 3 giờ 54 phút. Tàu đến nơi lúc mấy giờ?
-
-### Bài 4. (4 điểm) Chữ số tận cùng của tổng, hiệu, tích
-
-Không tính hết phép tính, chỉ tìm chữ số tận cùng.
-
-a) Tổng 3 737 + 4 825 có chữ số tận cùng là chữ số nào?
-b) Tích 2 156 × 4 920 có chữ số tận cùng là chữ số nào?
-c) Hiệu 7 751 − 3 082 có chữ số tận cùng là chữ số nào?
-d) Tổng 1 139 + 1 021 có chữ số tận cùng là chữ số nào?
-
-### Bài 5. (4 điểm) Đơn vị đo thể tích và dung tích
+### Bài 2. (4 điểm) Đơn vị đo thể tích và dung tích
 
 Điền số thích hợp.
 
-a) 35 m³ = … dm³
-b) 44 dm³ = … lít
-c) 45 lít = … ml
-d) 9 000 cm³ = … dm³
-e) 12 dm³ = … lít
-f) 23 000 cm³ = … dm³
-g) 55 m³ = … dm³
+a) 23 dm³ = … lít
+b) 67 000 cm³ = … dm³
+c) 54 lít = … ml
+d) 62 m³ = … dm³
+e) 9 lít = … ml
+f) 43 m³ = … dm³
+
+### Bài 3. (4 điểm) Bài toán thực tế về khối lượng
+
+Chú ý đơn vị mà đề hỏi.
+
+a) Một xe chở 19 bao thóc, mỗi bao 50 kg. Hỏi xe chở bao nhiêu tạ thóc?
+b) Một xe chở 25 bao thóc, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ thóc?
+c) Một xe chở 24 bao đường, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ đường?
+d) Một xe chở 17 bao gạo, mỗi bao 50 kg. Hỏi xe chở bao nhiêu tạ gạo?
+e) Một xe chở 9 bao xi măng, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ xi măng?
+
+### Bài 4. (4 điểm) Tính thời điểm đến, thời gian đi
+
+Ghi kết quả theo giờ và phút.
+
+a) Một chuyến tàu khởi hành lúc 9 giờ 45 phút và đi hết 2 giờ 7 phút. Tàu đến nơi lúc mấy giờ?
+b) Một chuyến tàu khởi hành lúc 10 giờ 0 phút và đi hết 2 giờ 48 phút. Tàu đến nơi lúc mấy giờ?
+c) Một chuyến tàu khởi hành lúc 10 giờ 30 phút và đi hết 1 giờ 6 phút. Tàu đến nơi lúc mấy giờ?
+d) Một chuyến tàu khởi hành lúc 6 giờ 15 phút và đi hết 4 giờ 9 phút. Tàu đến nơi lúc mấy giờ?
+
+### Bài 5. (4 điểm) Tìm số bằng cách thử và loại
+
+Với mỗi câu, viết ra danh sách đã thử rồi mới ghi đáp số. Đáp số có thể gồm nhiều số.
+
+a) Tìm mọi số có hai chữ số vừa chia hết cho 5, vừa có tổng hai chữ số bằng 12.
+b) Tìm mọi số có hai chữ số vừa chia hết cho 5, vừa có tổng hai chữ số bằng 12.
+c) Tìm mọi số có hai chữ số vừa chia hết cho 3, vừa có tổng hai chữ số bằng 12.
+d) Tìm mọi số có hai chữ số vừa chia hết cho 4, vừa có tổng hai chữ số bằng 9.
+e) Tìm mọi số có hai chữ số vừa chia hết cho 6, vừa có tổng hai chữ số bằng 9.
+f) Tìm mọi số có hai chữ số vừa chia hết cho 6, vừa có tổng hai chữ số bằng 6.
 
 ---
 
@@ -440,39 +442,39 @@ f) Lỗi nào dễ mắc ở đề này?
 **Lỗi thường gặp:** Chia 2 cho hình bình hành, hoặc quên chia 2 cho hình tam giác. Phòng: Nhớ theo cặp: bình hành ↔ chữ nhật (không chia); tam giác ↔ nửa bình hành (chia 2).
 
 ### Bài D.1
-**Đáp số:** a) 392 · b) 130 · c) 95 · d) 19
-**Hướng giải:** Với một số **lẻ** các số tự nhiên liên tiếp, số ở giữa chính là trung bình cộng: số giữa = tổng : số lượng. Số bé nhất bằng số giữa trừ đi một nửa số lượng còn lại.
-**Nhãn tư duy:** TD3, TD4. Điểm chốt: Với số lượng lẻ thì **số giữa = tổng : số lượng** — đó là chìa khoá.
-**Lỗi thường gặp:** Lấy tổng chia cho số lượng rồi nhận luôn kết quả là số bé nhất. Phòng: Vẽ dãy số ra, đánh dấu vị trí số giữa trước khi lùi về số đầu.
-**Gợi ý 3 tầng:** (1) Số lượng số hạng là số chẵn hay lẻ? — (2) Với số lượng lẻ, số ở giữa bằng tổng chia số lượng. — (3) Từ số giữa lùi về đầu dãy mấy đơn vị?
+**Đáp số:** a) 8 · b) 8 · c) 35 · d) 15 · e) 21 · f) 10
+**Hướng giải:** BẪY — Đi ngược nhưng không đảo thứ tự. Viết chuỗi thao tác thành sơ đồ mũi tên rồi đi ngược lại từ kết quả cuối. Mỗi bước đảo phép tính: nhân thành chia, cộng thành trừ. Thứ tự cũng phải đảo — phép làm sau cùng được gỡ trước tiên.
+**Nhãn tư duy:** TD3, TD5. Điểm chốt: Đảo **cả phép tính lẫn thứ tự**. Đảo phép tính mà giữ nguyên thứ tự thì vẫn sai.
+**Lỗi thường gặp:** Bắt đầu gỡ từ phép tính đầu tiên của đề thay vì từ phép tính cuối cùng. Phòng: Thử lại theo chiều xuôi. Bài này luôn thử lại được, nên không có lý do gì để nộp một đáp số chưa thử.
+**Gợi ý 3 tầng:** (1) Đề đã làm những phép tính nào, theo thứ tự nào? — (2) Phép nào làm sau cùng? Gỡ phép ấy trước tiên. — (3) Nhân thì gỡ bằng chia, cộng thì gỡ bằng trừ.
 
 ### Bài D.2
-**Đáp số:** a) 17 tạ 50 kg · b) 5 tạ 40 kg · c) 5 tạ 40 kg · d) 6 tạ · e) 3 tạ
+**Đáp số:** a) 23 · b) 67 · c) 54 000 · d) 62 000 · e) 9 000 · f) 43 000
+**Hướng giải:** BẪY — 1 000 lần mỗi bậc. Hai đơn vị thể tích liền kề hơn kém nhau **1 000 lần**. 1 dm³ = 1 lít; 1 lít = 1 000 ml; 1 m³ = 1 000 dm³ = 1 000 lít.
+**Nhãn tư duy:** TD1, TD2. Điểm chốt: Thể tích nhảy **1 000 lần** mỗi bậc (độ dài 10, diện tích 100, thể tích 1 000).
+**Lỗi thường gặp:** Đổi như đơn vị diện tích, chỉ nhân 100. Phòng: Nhớ dãy 10 – 100 – 1 000 ứng với độ dài – diện tích – thể tích.
+**Gợi ý 3 tầng:** (1) Đơn vị thể tích liền kề hơn kém nhau mấy lần? — (2) Đếm số bậc giữa hai đơn vị. — (3) 1 dm³ bằng đúng 1 lít.
+
+### Bài D.3
+**Đáp số:** a) 9 tạ 50 kg · b) 7 tạ 50 kg · c) 7 tạ 20 kg · d) 8 tạ 50 kg · e) 5 tạ 40 kg
 **Hướng giải:** BẪY — Đơn vị của câu trả lời. Tính tổng khối lượng theo ki-lô-gam trước, sau đó mới đổi sang đơn vị mà đề hỏi. Đừng đổi đơn vị ngay từ đầu vì dễ nhầm.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Câu hỏi đòi đơn vị nào thì bước **cuối cùng** mới đổi sang đơn vị đó.
 **Lỗi thường gặp:** Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. Phòng: Khoanh tròn đơn vị trong câu hỏi trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Tính tổng khối lượng theo ki-lô-gam. — (2) Đề hỏi kết quả theo đơn vị nào? — (3) Đổi kết quả sang đơn vị đó.
 
-### Bài D.3
-**Đáp số:** a) 14 giờ 19 phút · b) 14 giờ 36 phút · c) 16 giờ 12 phút · d) 18 giờ 16 phút · e) 9 giờ 24 phút
+### Bài D.4
+**Đáp số:** a) 11 giờ 52 phút · b) 12 giờ 48 phút · c) 11 giờ 36 phút · d) 10 giờ 24 phút
 **Hướng giải:** BẪY — Phần phút vượt quá 60. Đổi cả giờ khởi hành lẫn thời gian đi về **phút**, cộng lại, rồi đổi kết quả ngược lại thành giờ và phút. Cách này tránh được lỗi nhớ khi phần phút vượt 60.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Đổi hết về phút rồi mới cộng — an toàn hơn cộng trực tiếp.
 **Lỗi thường gặp:** Cộng phần phút thành hơn 60 mà quên đổi thành giờ. Phòng: Kiểm tra phần phút của đáp số phải bé hơn 60.
 **Gợi ý 3 tầng:** (1) Đổi giờ khởi hành ra phút tính từ 0 giờ. — (2) Cộng thêm thời gian đi (tính bằng phút). — (3) Đổi tổng số phút trở lại thành giờ và phút.
 
-### Bài D.4
-**Đáp số:** a) 2 · b) 0 · c) 9 · d) 0
-**Hướng giải:** Chữ số tận cùng của tổng, hiệu, tích chỉ phụ thuộc vào chữ số tận cùng của các số tham gia. Chỉ cần lấy các chữ số tận cùng ra tính với nhau rồi lấy chữ số tận cùng của kết quả.
-**Nhãn tư duy:** TD5, TD2. Điểm chốt: Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu của số.
-**Lỗi thường gặp:** Tính trọn cả phép tính, vừa lâu vừa dễ sai. Phòng: Che phần đầu của hai số, chỉ để lộ chữ số cuối cùng.
-**Gợi ý 3 tầng:** (1) Chữ số tận cùng của mỗi số là chữ số nào? — (2) Thực hiện phép tính với riêng hai chữ số tận cùng đó. — (3) Lấy chữ số tận cùng của kết quả vừa tính.
-
 ### Bài D.5
-**Đáp số:** a) 35 000 · b) 44 · c) 45 000 · d) 9 · e) 12 · f) 23 · g) 55 000
-**Hướng giải:** BẪY — 1 000 lần mỗi bậc. Hai đơn vị thể tích liền kề hơn kém nhau **1 000 lần**. 1 dm³ = 1 lít; 1 lít = 1 000 ml; 1 m³ = 1 000 dm³ = 1 000 lít.
-**Nhãn tư duy:** TD1, TD2. Điểm chốt: Thể tích nhảy **1 000 lần** mỗi bậc (độ dài 10, diện tích 100, thể tích 1 000).
-**Lỗi thường gặp:** Đổi như đơn vị diện tích, chỉ nhân 100. Phòng: Nhớ dãy 10 – 100 – 1 000 ứng với độ dài – diện tích – thể tích.
-**Gợi ý 3 tầng:** (1) Đơn vị thể tích liền kề hơn kém nhau mấy lần? — (2) Đếm số bậc giữa hai đơn vị. — (3) 1 dm³ bằng đúng 1 lít.
+**Đáp số:** a) 75 · b) 75 · c) 39, 48, 57, 66, 75, 84, 93 · d) 36, 72 · e) 18, 36, 54, 72, 90 · f) 24, 42, 60
+**Hướng giải:** Chọn điều kiện cho ít khả năng nhất để liệt kê trước, rồi mới đem điều kiện còn lại ra thử. Làm ngược thứ tự ấy thì phải thử gấp nhiều lần.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Phải xét **hết** danh sách. Bài thử chọn thường có hơn một đáp số.
+**Lỗi thường gặp:** Tìm được một số thoả rồi dừng, bỏ sót các đáp số còn lại. Phòng: Viết danh sách ra giấy và gạch bỏ từng số, đừng thử nhẩm trong đầu.
+**Gợi ý 3 tầng:** (1) Trong hai điều kiện, điều kiện nào cho ít số hơn? — (2) Liệt kê hết các số thoả điều kiện ấy. — (3) Thử từng số với điều kiện còn lại, đừng dừng sớm.
 
 ### Bài E.1
 **Đáp số:** a) Đổi đơn vị đo · b) Dấu … giữa hai đơn vị khác nhau · c) Bảng đơn vị đo độ dài, khối lượng · d) Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10 · e) Số bậc chính là số chữ số 0 phải thêm vào (hoặc bớt đi). · f) Đổi ngược chiều nên nhân thành chia.

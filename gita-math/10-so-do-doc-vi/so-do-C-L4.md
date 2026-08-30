@@ -91,47 +91,47 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 
 Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: đây là dạng bài gì, và dấu hiệu nào cho biết điều đó.
 
-**Đề 1.** Tính số cây cần trồng trong mỗi trường hợp. Trồng cây trên đoạn đường dài 36 m, hai cây liền nhau cách nhau 4 m, không trồng ở cả hai đầu. Cần bao nhiêu cây?
+**Đề 1.** Tính số cây cần trồng trong mỗi trường hợp. Trồng cây quanh một cái ao hình tròn có chu vi 108 m, hai cây liền nhau cách nhau 6 m. Cần bao nhiêu cây?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 2.** Điền số thích hợp vào chỗ chấm. 11, …, 21, 26, 31, 36
+**Đề 2.** Cho dãy: 14, 19, 24, …, 779. Dãy có bao nhiêu số hạng?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 3.** Tìm quy luật rồi viết số hạng tiếp theo. 6, 5, 9, 10, 12, …
+**Đề 3.** Cho dãy số: 17, 32, 47, 62, … (mỗi số hơn số liền trước 15 đơn vị). Số hạng thứ 5 của dãy là số nào?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 4.** Cho dãy: 7, 13, 19, …, 1 285. Dãy có bao nhiêu số hạng?
+**Đề 4.** Cho dãy 6, 12, 18, …, 2 100. Dãy có bao nhiêu số hạng?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 5.** Cho dãy lặp lại vô hạn theo nhóm: 5, 1, 6, 1, 2, 2, 7, 5, 1, 6, 1, 2, 2, 7, 5, … Số hạng thứ 208 của dãy là số nào?
+**Đề 5.** Tính nhanh mỗi tổng, nêu công thức đã dùng. 1 + 3 + 5 + … + 199 (tổng 100 số lẻ đầu tiên)
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 6.** Dãy số được lập theo ba quy tắc sau.
-
-- Số hạng đầu bằng 1.
-- Số hạng ở **vị trí chẵn** bằng số hạng liền trước nhân 2 rồi cộng 4.
-- Số hạng ở **vị trí lẻ** bằng số hạng liền trước cộng 4 nhân với số thứ tự của số hạng liền trước. Viết ba số hạng đầu tiên của dãy.
+**Đề 6.** Tìm quy luật rồi viết tiếp ba số hạng của mỗi dãy. 14, 29, 44, 59, …
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 7.** Tính tổng mỗi dãy. Tính tổng: 1 + 4 + 7 + … + 28
+**Đề 7.** Quan sát quy luật số que diêm rồi trả lời. Hình thứ 1 có 3 que diêm, mỗi hình sau hơn hình liền trước 5 que. Hình thứ 5 có bao nhiêu que diêm?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 8.** Tính nhanh mỗi tổng, nêu công thức đã dùng. 2 + 4 + 6 + … + 100 (tổng 50 số chẵn đầu tiên)
+**Đề 8.** Tính tổng mỗi dãy. Tính tổng: 15 + 17 + 19 + … + 63
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 9.** Tìm quy luật rồi viết số hạng tiếp theo. 3, 12, 48, 192, …
+**Đề 9.** Dãy số được lập theo ba quy tắc sau.
+
+- Số hạng đầu bằng 3.
+- Số hạng ở **vị trí chẵn** bằng số hạng liền trước nhân 2 rồi cộng 3.
+- Số hạng ở **vị trí lẻ** bằng số hạng liền trước cộng 3 nhân với số thứ tự của số hạng liền trước. Viết ba số hạng đầu tiên của dãy.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 10.** Đếm số lần xuất hiện, tính cả khi chữ số đó xuất hiện nhiều lần trong một số. Từ 1 đến 500, chữ số 2 xuất hiện bao nhiêu lần?
+**Đề 10.** Điền số thích hợp vào chỗ chấm. 4, 13, 22, …, 40, 49
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
@@ -142,15 +142,15 @@ Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: 
 | # | Dạng bài | Dấu hiệu |
 |:--:|---|---|
 | 1 | Bài toán trồng cây | Từ khoá “trồng cây”, “cột điện”, “quanh ao”, “hai đầu” |
-| 2 | Điền số hạng còn thiếu của dãy cách đều | Dãy có ô trống ở giữa |
-| 3 | Dãy số quy luật bậc hai hoặc xen kẽ | Hiệu giữa các số hạng không bằng nhau |
-| 4 | Định vị số hạng, kiểm tra một số có thuộc dãy | Câu hỏi “là số hạng thứ mấy”, “có thuộc dãy không” |
-| 5 | Dãy tuần hoàn | Dãy lặp lại một nhóm số cố định |
-| 6 | Dãy số truy hồi có quy tắc rẽ nhánh | Đề mô tả cách lập số hạng từ số hạng liền trước |
-| 7 | Tổng dãy số cách đều | Dãy cộng dài, các số cách đều |
-| 8 | Tổng dãy đặc biệt | Dãy toàn số lẻ, toàn số chẵn, hoặc số tự nhiên liên tiếp |
-| 9 | Dãy số theo quy luật nhân | Các số tăng rất nhanh, hiệu không đều |
-| 10 | Đếm số lần xuất hiện của một chữ số | Câu hỏi “chữ số … xuất hiện bao nhiêu lần” |
+| 2 | Định vị số hạng, kiểm tra một số có thuộc dãy | Câu hỏi “là số hạng thứ mấy”, “có thuộc dãy không” |
+| 3 | Tìm số hạng thứ n của dãy cách đều | Đề hỏi “số hạng thứ …” |
+| 4 | Đếm và tính tổng dãy con thoả điều kiện chia hết | Đề hỏi riêng các số chẵn, số chia hết cho … trong một dãy |
+| 5 | Tổng dãy đặc biệt | Dãy toàn số lẻ, toàn số chẵn, hoặc số tự nhiên liên tiếp |
+| 6 | Tìm quy luật dãy cách đều | Dãy số kèm dấu … ở cuối |
+| 7 | Quy luật hình đưa về dãy số | Đề mô tả hình xếp thêm đều đặn theo thứ tự |
+| 8 | Tổng dãy số cách đều | Dãy cộng dài, các số cách đều |
+| 9 | Dãy số truy hồi có quy tắc rẽ nhánh | Đề mô tả cách lập số hạng từ số hạng liền trước |
+| 10 | Điền số hạng còn thiếu của dãy cách đều | Dãy có ô trống ở giữa |
 
 ---
 

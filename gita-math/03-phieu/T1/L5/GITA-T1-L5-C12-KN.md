@@ -42,74 +42,71 @@ Phiếu lời giải và phân tích chuyên sâu đi kèm: `GITA-T1-L5-C12-KN-G
 Họ và tên: ......................................... Lớp: ......... Điểm: ......../100
 
 > **KIẾN THỨC NỀN CỦA CHƯƠNG**
-> 1. Tỉ số phần trăm
-> 2. Phần bù tới 1; quy luật dãy phân số
-> 3. Cấu tạo số thập phân, quan hệ phân số – số thập phân
-> 4. Tỉ số phần trăm, mốc quy chiếu
+> 1. Phần bù tới 1, phân số trung gian
+> 2. Phép cộng, phép trừ; đếm không trùng lặp
+> 3. Tỉ số phần trăm
+> 4. Tỉ số phần trăm; phân biệt chất tan và dung dịch
 
 ---
 
 ## PHẦN A — CỦNG CỐ NỀN — 30 CÂU TỐC ĐỘ · Mức M1 — Nhận biết · 20 phút · 25 điểm
 
-### Bài 1. (5 điểm) Ôn tập số tự nhiên: đọc, viết, so sánh, làm tròn
-
-Trả lời nhanh, mỗi ý không quá 20 giây.
-
-a) 8 769 500 … 8 772 921
-b) Số liền trước và số liền sau của 6 679 096 là những số nào?
-c) Làm tròn 4 867 171 đến hàng nghìn.
-d) Chữ số hàng trăm nghìn của số 4 251 929 có giá trị bằng bao nhiêu?
-e) Chữ số hàng nghìn của số 5 695 922 có giá trị bằng bao nhiêu?
-f) Số liền trước và số liền sau của 6 747 743 là những số nào?
-g) Làm tròn 876 034 đến hàng nghìn.
-h) 8 601 077 … 8 605 337
-
-### Bài 2. (5 điểm) Rút gọn phân số
-
-Rút gọn đến phân số tối giản.
-
-a) Rút gọn phân số 36 phần 8.
-b) Rút gọn phân số 12 phần 14.
-c) Rút gọn phân số 72 phần 32.
-d) Rút gọn phân số 45 phần 99.
-e) Rút gọn phân số 12 phần 15.
-f) Rút gọn phân số 18 phần 6.
-
-### Bài 3. (5 điểm) So sánh hai phân số
+### Bài 1. (5 điểm) So sánh hai phân số
 
 Điền dấu <, >, = thích hợp.
 
-a) 6 phần 11 … 3 phần 7
-b) 4 phần 13 … 9 phần 13
-c) 3 phần 5 … 7 phần 5
-d) 4 phần 9 … 1 phần 2
-e) 3 phần 5 … 1
-f) 2 phần 15 … 4 phần 15
+a) 7 phần 11 … 3 phần 11
+b) 2 … 2 phần 7
+c) 1 phần 15 … 1 phần 5
+d) 7 phần 13 … 1
+e) 1 phần 2 … 5 phần 6
+f) 3 phần 13 … 3 phần 11
+g) 7 phần 12 … 1 phần 3
+
+### Bài 2. (5 điểm) Số chẵn – số lẻ, số liền trước – số liền sau
+
+Trả lời ngắn gọn từng câu.
+
+a) Số chẵn bé nhất lớn hơn 1 355 894 là số nào?
+b) Số chẵn bé nhất lớn hơn 1 631 457 là số nào?
+c) Số 4 338 430 là số chẵn hay số lẻ?
+d) Số liền sau của 8 551 290 là số nào?
+
+### Bài 3. (5 điểm) Ôn tập bốn phép tính với số tự nhiên
+
+Đặt tính rồi tính. Ước lượng trước để tự kiểm tra.
+
+a) 13 604 800 : 22
+b) 426 061 + 231 551
+c) 717 523 × 714
+d) 342 044 − 565
+e) 866 460 + 560 407
+f) 629 820 − 439 371
 
 ### Bài 4. (5 điểm) Số thập phân: hàng, so sánh, đổi từ phân số
 
 Chú ý dấu phẩy và các hàng sau dấu phẩy.
 
-a) Viết phân số 9 phần 10 dưới dạng số thập phân.
-b) Trong số 587,07, chữ số ở hàng phần mười là chữ số nào?
-c) 104,222 … 104,913
-d) Trong số 690,781, chữ số ở hàng phần mười là chữ số nào?
-e) Viết phân số 7 phần 10 dưới dạng số thập phân.
-f) 55,251 … 51,059
-g) 166,622 … 163,017
+a) Viết phân số 591 phần 1 000 dưới dạng số thập phân.
+b) 380,388 … 379,987
+c) Trong số 956,148, chữ số ở hàng phần mười là chữ số nào?
+d) Viết phân số 49 phần 100 dưới dạng số thập phân.
+e) Trong số 446,005, chữ số ở hàng phần mười là chữ số nào?
+f) 83,012 … 79,688
+g) Viết phân số 50 phần 100 dưới dạng số thập phân.
+h) 971,179 … 975,886
 
-### Bài 5. (5 điểm) Ôn tập bốn phép tính với số tự nhiên
+### Bài 5. (5 điểm) Rút gọn phân số
 
-Đặt tính rồi tính. Ước lượng trước để tự kiểm tra.
+Rút gọn đến phân số tối giản.
 
-a) 625 284 − 106 179
-b) 308 722 + 758 908
-c) 118 408 010 : 245
-d) 217 955 × 708
-e) 84 561 + 985 786
-f) 445 936 230 : 549
-g) 771 793 − 617 500
-h) 12 901 × 426
+a) Rút gọn phân số 8 phần 32.
+b) Rút gọn phân số 6 phần 4.
+c) Rút gọn phân số 21 phần 14.
+d) Rút gọn phân số 10 phần 24.
+e) Rút gọn phân số 12 phần 30.
+f) Rút gọn phân số 64 phần 72.
+g) Rút gọn phân số 2 phần 8.
 
 ---
 
@@ -129,10 +126,10 @@ e) Thiếu câu lời giải thì bị trừ bao nhiêu phần điểm của bà
 
 Với mỗi dạng bài, viết một câu lời giải mẫu.
 
-a) Câu lời giải mở đầu cho dạng “Tỉ số phần trăm trong mua bán”?
-b) Câu lời giải mở đầu cho dạng “Biểu thức phân số nhiều phép tính”?
-c) Câu lời giải mở đầu cho dạng “Đọc bảng số liệu thống kê”?
-d) Câu lời giải mở đầu cho dạng “Số thập phân — hàng, so sánh, chuyển đổi”?
+a) Câu lời giải mở đầu cho dạng “Đọc bảng số liệu thống kê”?
+b) Câu lời giải mở đầu cho dạng “Tỉ số phần trăm trong mua bán”?
+c) Câu lời giải mở đầu cho dạng “Biểu đồ Ven”?
+d) Câu lời giải mở đầu cho dạng “Biểu thức phân số nhiều phép tính”?
 e) Câu lời giải mở đầu cho dạng “Tỉ số phần trăm có lời văn”?
 
 ### Bài 3. (3 điểm) Ghi đơn vị đúng chỗ
@@ -150,12 +147,12 @@ f) Vận tốc ghi đơn vị gì?
 
 Mỗi ý nêu một lỗi. Hãy nói cách sửa.
 
-a) Lỗi: Chia tiền lãi cho giá bán nên ra tỉ lệ nhỏ hơn thực tế. — cách phòng?
-b) Lỗi: Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. — cách phòng?
-c) Lỗi: Đọc nhầm cột, hoặc quên một môn khi cộng tổng. — cách phòng?
-d) Lỗi: Cho rằng số có nhiều chữ số sau dấu phẩy hơn thì lớn hơn. — cách phòng?
+a) Lỗi: Đọc nhầm cột, hoặc quên một môn khi cộng tổng. — cách phòng?
+b) Lỗi: Chia tiền lãi cho giá bán nên ra tỉ lệ nhỏ hơn thực tế. — cách phòng?
+c) Lỗi: Lấy tổng trừ đi tổng hai con số đề cho mà không cộng lại phần chung. — cách phòng?
+d) Lỗi: Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. — cách phòng?
 e) Lỗi: Lấy số học sinh giỏi làm mẫu số khi tính tỉ số phần trăm. — cách phòng?
-f) Lỗi: Cộng trừ hai số phần trăm rồi áp một lần vào giá ban đầu. — cách phòng?
+f) Lỗi: Cho rằng số có nhiều chữ số sau dấu phẩy hơn thì lớn hơn. — cách phòng?
 
 ### Bài 5. (3 điểm) Tự chấm bài theo thang điểm
 
@@ -183,7 +180,7 @@ e) Dò ba tầng mất bao lâu cho một bài?
 
 ### Bài 2. (3 điểm) Dò soát tình huống 1
 
-**Tình huống:** một bạn làm bài dạng “Tỉ số phần trăm trong mua bán” và mắc lỗi: Chia tiền lãi cho giá bán nên ra tỉ lệ nhỏ hơn thực tế.
+**Tình huống:** một bạn làm bài dạng “Đọc bảng số liệu thống kê” và mắc lỗi: Đọc nhầm cột, hoặc quên một môn khi cộng tổng.
 
 a) Lỗi này bị bắt ở tầng dò soát nào?
 b) Cách phòng lỗi này là gì?
@@ -193,7 +190,7 @@ e) Điểm chốt của dạng này là gì?
 
 ### Bài 3. (3 điểm) Dò soát tình huống 2
 
-**Tình huống:** một bạn làm bài dạng “Số thập phân — hàng, so sánh, chuyển đổi” và mắc lỗi: Cho rằng số có nhiều chữ số sau dấu phẩy hơn thì lớn hơn.
+**Tình huống:** một bạn làm bài dạng “Biểu thức phân số nhiều phép tính” và mắc lỗi: Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước.
 
 a) Lỗi này bị bắt ở tầng dò soát nào?
 b) Cách phòng lỗi này là gì?
@@ -213,7 +210,7 @@ e) Điểm chốt của dạng này là gì?
 
 ### Bài 5. (3 điểm) Dò soát tình huống 4
 
-**Tình huống:** một bạn làm bài dạng “So sánh phân số bằng kĩ thuật đặc biệt” và mắc lỗi: So phần bù rồi kết luận cùng chiều với phần bù.
+**Tình huống:** một bạn làm bài dạng “Ba dạng toán tỉ số phần trăm” và mắc lỗi: Nhầm dạng 2 với dạng 3 nên nhân thay vì chia.
 
 a) Lỗi này bị bắt ở tầng dò soát nào?
 b) Cách phòng lỗi này là gì?
@@ -235,7 +232,7 @@ c) Mỗi nhánh chính đặt tên theo gì?
 d) Mỗi nhánh chính có mấy nhánh con bắt buộc?
 e) Vẽ xong, tự chấm bằng cách nào?
 
-### Bài 2. (5 điểm) Nhánh 1 — Biểu thức phân số nhiều phép tính
+### Bài 2. (5 điểm) Nhánh 1 — Tỉ số phần trăm trong mua bán
 
 Điền ba nhánh con bắt buộc của nhánh này.
 
@@ -245,7 +242,7 @@ c) Nhánh con 3 — lỗi hay mắc?
 d) Ghi thêm: kiến thức phải thuộc?
 e) Ghi thêm: cách xử lý nhanh nhất?
 
-### Bài 3. (5 điểm) Nhánh 2 — Số thập phân — hàng, so sánh, chuyển đổi
+### Bài 3. (5 điểm) Nhánh 2 — Biểu thức phân số nhiều phép tính
 
 Điền ba nhánh con bắt buộc của nhánh này.
 
@@ -255,7 +252,7 @@ c) Nhánh con 3 — lỗi hay mắc?
 d) Ghi thêm: kiến thức phải thuộc?
 e) Ghi thêm: cách xử lý nhanh nhất?
 
-### Bài 4. (5 điểm) Nhánh 3 — Phần trăm thay đổi nhiều lần
+### Bài 4. (5 điểm) Nhánh 3 — Số thập phân — hàng, so sánh, chuyển đổi
 
 Điền ba nhánh con bắt buộc của nhánh này.
 
@@ -265,7 +262,7 @@ c) Nhánh con 3 — lỗi hay mắc?
 d) Ghi thêm: kiến thức phải thuộc?
 e) Ghi thêm: cách xử lý nhanh nhất?
 
-### Bài 5. (5 điểm) Nhánh 4 — Rút gọn, so sánh, sắp thứ tự phân số
+### Bài 5. (5 điểm) Nhánh 4 — Tìm phân số của một số
 
 Điền ba nhánh con bắt buộc của nhánh này.
 
@@ -290,7 +287,7 @@ d) Phút 4 nói gì?
 e) Phút 5 nói gì?
 f) Ai trong nhóm nói phần nào?
 
-### Bài 2. (4 điểm) Nội dung giảng — Tỉ số phần trăm trong mua bán
+### Bài 2. (4 điểm) Nội dung giảng — Đọc bảng số liệu thống kê
 
 Chuẩn bị nội dung để giảng dạng bài này cho lớp.
 
@@ -301,7 +298,7 @@ d) Ví dụ mẫu em sẽ giảng?
 e) Lỗi em sẽ cảnh báo cho lớp?
 f) Mẹo nhanh em sẽ tặng lớp?
 
-### Bài 3. (4 điểm) Nội dung giảng — Đọc bảng số liệu thống kê
+### Bài 3. (4 điểm) Nội dung giảng — Biểu đồ Ven
 
 Chuẩn bị nội dung để giảng dạng bài này cho lớp.
 
@@ -341,34 +338,34 @@ f) Mẹo nhanh em sẽ tặng lớp?
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài A.1
-**Đáp số:** a) < · b) 6 679 095 và 6 679 097 · c) 4 867 000 · d) 200 000 · e) 5 000 · f) 6 747 742 và 6 747 744 · g) 876 000 · h) <
-**Hướng giải:** So sánh: số nhiều chữ số hơn thì lớn hơn; bằng số chữ số thì so từng hàng từ trái sang phải. Làm tròn: nhìn chữ số ở hàng **liền sau** hàng cần làm tròn.
-**Nhãn tư duy:** TD1, TD5. Điểm chốt: So sánh đi từ **trái sang phải**, làm tròn nhìn **một chữ số liền sau**.
-**Lỗi thường gặp:** So sánh từ hàng đơn vị; hoặc làm tròn nhìn nhầm sang chính hàng cần làm tròn. Phòng: Gạch một nét ngăn ngay sau hàng cần làm tròn.
-
-### Bài A.2
-**Đáp số:** a) 9 phần 2 · b) 6 phần 7 · c) 9 phần 4 · d) 5 phần 11 · e) 4 phần 5 · f) 3
-**Hướng giải:** Chia cả tử số và mẫu số cho cùng một số tự nhiên lớn hơn 1. Rút gọn đến khi tử số và mẫu số không cùng chia hết cho số nào lớn hơn 1 nữa thì được phân số tối giản.
-**Nhãn tư duy:** TD1. Điểm chốt: Phải chia **cả tử và mẫu** cho cùng một số.
-**Lỗi thường gặp:** Chỉ chia tử số hoặc chỉ chia mẫu số. Phòng: Viết phép chia cho cả hai dòng, kiểm tra lại bằng cách nhân ngược.
-
-### Bài A.3
-**Đáp số:** a) > · b) < · c) < · d) < · e) < · f) <
+**Đáp số:** a) > · b) > · c) < · d) < · e) < · f) < · g) >
 **Hướng giải:** BẪY — Cùng tử số thì mẫu bé hơn lại lớn hơn. Cùng mẫu số: phân số nào có tử số lớn hơn thì lớn hơn. Cùng tử số: phân số nào có mẫu số **bé** hơn thì lớn hơn. Khác cả tử lẫn mẫu: quy đồng mẫu số rồi so tử số.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Cùng tử số thì **mẫu bé hơn là phân số lớn hơn** — ngược với trực giác.
 **Lỗi thường gặp:** Thấy mẫu số lớn thì kết luận phân số lớn. Phòng: Nghĩ tới chiếc bánh: chia càng nhiều phần thì mỗi phần càng bé.
 
+### Bài A.2
+**Đáp số:** a) 1 355 896 · b) 1 631 458 · c) số chẵn · d) 8 551 291
+**Hướng giải:** Số chẵn là số có chữ số tận cùng 0, 2, 4, 6, 8; số lẻ tận cùng 1, 3, 5, 7, 9. Số liền trước kém 1 đơn vị, số liền sau hơn 1 đơn vị. Hai số chẵn liên tiếp hơn kém nhau 2 đơn vị.
+**Nhãn tư duy:** TD1. Điểm chốt: Chỉ cần nhìn **chữ số tận cùng** là biết chẵn hay lẻ, dù số dài bao nhiêu.
+**Lỗi thường gặp:** Nhầm “liền trước” với “bé hơn”, trả lời một số bất kì bé hơn. Phòng: Liền trước – liền sau chỉ hơn kém đúng **1** đơn vị.
+
+### Bài A.3
+**Đáp số:** a) 618 400 · b) 657 612 · c) 512 311 422 · d) 341 479 · e) 1 426 867 · f) 190 449
+**Hướng giải:** BẪY — Chữ số 0 ở giữa thương. Cộng, trừ thì viết thẳng hàng đơn vị. Nhân thì viết các tích riêng lùi đúng cột rồi cộng. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0.
+**Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương.
+**Lỗi thường gặp:** Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+
 ### Bài A.4
-**Đáp số:** a) 0,9 · b) 0 · c) < · d) 7 · e) 0,7 · f) > · g) >
-**Hướng giải:** BẪY — Nhiều chữ số sau dấu phẩy không có nghĩa là lớn hơn. Sau dấu phẩy lần lượt là hàng phần mười, phần trăm, phần nghìn. So sánh số thập phân: so phần nguyên trước; phần nguyên bằng nhau thì so lần lượt hàng phần mười, phần trăm, phần nghìn. Phân số có mẫu là 10, 100, 1 000 đổi được thẳng sang số thập phân.
+**Đáp số:** a) 0,591 · b) > · c) 1 · d) 0,49 · e) 0 · f) > · g) 0,5 · h) <
+**Hướng giải:** Sau dấu phẩy lần lượt là hàng phần mười, phần trăm, phần nghìn. So sánh số thập phân: so phần nguyên trước; phần nguyên bằng nhau thì so lần lượt hàng phần mười, phần trăm, phần nghìn. Phân số có mẫu là 10, 100, 1 000 đổi được thẳng sang số thập phân.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: So sánh theo **hàng**, không so theo số chữ số sau dấu phẩy.
 **Lỗi thường gặp:** Cho rằng số có nhiều chữ số sau dấu phẩy hơn thì lớn hơn. Phòng: Viết thêm chữ số 0 vào cuối để hai số có cùng số chữ số thập phân rồi mới so.
 
 ### Bài A.5
-**Đáp số:** a) 519 105 · b) 1 067 630 · c) 483 298 · d) 154 312 140 · e) 1 070 347 · f) 812 270 · g) 154 293 · h) 5 495 826
-**Hướng giải:** Cộng, trừ thì viết thẳng hàng đơn vị. Nhân thì viết các tích riêng lùi đúng cột rồi cộng. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0.
-**Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương.
-**Lỗi thường gặp:** Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+**Đáp số:** a) 1 phần 4 · b) 3 phần 2 · c) 3 phần 2 · d) 5 phần 12 · e) 2 phần 5 · f) 8 phần 9 · g) 1 phần 4
+**Hướng giải:** Chia cả tử số và mẫu số cho cùng một số tự nhiên lớn hơn 1. Rút gọn đến khi tử số và mẫu số không cùng chia hết cho số nào lớn hơn 1 nữa thì được phân số tối giản.
+**Nhãn tư duy:** TD1. Điểm chốt: Phải chia **cả tử và mẫu** cho cùng một số.
+**Lỗi thường gặp:** Chỉ chia tử số hoặc chỉ chia mẫu số. Phòng: Viết phép chia cho cả hai dòng, kiểm tra lại bằng cách nhân ngược.
 
 ### Bài B.1
 **Đáp số:** a) câu lời giải nêu rõ đang tìm đại lượng nào · b) phép tính, viết đủ dấu và đủ đơn vị · c) kết quả kèm đơn vị · d) câu đáp số · e) một phần tư số điểm của bài
@@ -377,7 +374,7 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Lỗi thường gặp:** Viết thẳng phép tính, bỏ câu lời giải. Phòng: Đọc lại bài đã làm, đếm xem có đủ bốn dòng chưa.
 
 ### Bài B.2
-**Đáp số:** a) “Tỉ số phần trăm trong mua bán là:” · b) “Biểu thức phân số nhiều phép tính là:” · c) “Đọc bảng số liệu thống kê là:” · d) “Số thập phân — hàng, so sánh, chuyển đổi là:” · e) “Tỉ số phần trăm có lời văn là:”
+**Đáp số:** a) “Đọc bảng số liệu thống kê là:” · b) “Tỉ số phần trăm trong mua bán là:” · c) “Biểu đồ Ven là:” · d) “Biểu thức phân số nhiều phép tính là:” · e) “Tỉ số phần trăm có lời văn là:”
 **Hướng giải:** Câu lời giải chỉ cần nhắc lại đại lượng đang tìm, không cần dài dòng.
 **Nhãn tư duy:** TD1. Điểm chốt: Câu lời giải phải **nêu đúng đại lượng** đang tìm.
 **Lỗi thường gặp:** Viết câu lời giải chung chung cho mọi bài. Phòng: Lấy đúng cụm từ trong câu hỏi của đề làm câu lời giải.
@@ -389,7 +386,7 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Lỗi thường gặp:** Ghi diện tích bằng cm thay vì cm². Phòng: Trước khi viết đáp số, hỏi: đại lượng này đo bằng gì?
 
 ### Bài B.4
-**Đáp số:** a) Viết rõ “Giá mua = 100%” ở dòng đầu tiên. · b) Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút. · c) Đánh dấu từng số đã cộng để không sót và không cộng lặp. · d) Viết thêm chữ số 0 vào cuối để hai số có cùng số chữ số thập phân rồi mới so. · e) Viết rõ một dòng: “Cả lớp = 100%” trước khi tính. · f) Viết ba dòng: giá ban đầu, giá sau lần 1, giá sau lần 2.
+**Đáp số:** a) Đánh dấu từng số đã cộng để không sót và không cộng lặp. · b) Viết rõ “Giá mua = 100%” ở dòng đầu tiên. · c) Vẽ hình trước, điền phần giữa trước, rồi mới điền hai bên. · d) Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút. · e) Viết rõ một dòng: “Cả lớp = 100%” trước khi tính. · f) Viết thêm chữ số 0 vào cuối để hai số có cùng số chữ số thập phân rồi mới so.
 **Hướng giải:** Mỗi lỗi đều có một cách phòng cụ thể, làm được ngay trong lúc làm bài. Chép cả cặp lỗi – cách phòng vào sổ lỗi.
 **Nhãn tư duy:** TD2. Điểm chốt: Sổ lỗi chỉ có ích khi ghi **cả cách phòng**, không chỉ ghi lỗi.
 **Lỗi thường gặp:** Ghi lỗi vào sổ nhưng không ghi cách phòng nên lần sau vẫn sai. Phòng: Mỗi dòng sổ lỗi bắt buộc có hai cột: lỗi và cách phòng.
@@ -407,16 +404,16 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Lỗi thường gặp:** Dò lại phép tính nhưng không đọc lại câu hỏi. Phòng: Sau mỗi bài, đọc to lại câu hỏi rồi đối chiếu với đáp số.
 
 ### Bài C.2
-**Đáp số:** a) tầng 2 · b) Viết rõ “Giá mua = 100%” ở dòng đầu tiên. · c) toàn bộ số điểm của ý sai · d) Viết rõ “Giá mua = 100%” ở dòng đầu tiên. · e) Phần trăm lãi tính theo **giá mua**, không tính theo giá bán.
-**Hướng giải:** Giá gốc luôn ứng với 100%. Tăng p% thì giá mới ứng với (100 + p)%; giảm p% thì giá mới ứng với (100 − p)%. Tính lãi theo phần trăm thì lấy tiền lãi chia **giá mua** rồi nhân 100.
-**Nhãn tư duy:** TD2, TD6. Điểm chốt: Phần trăm lãi tính theo **giá mua**, không tính theo giá bán.
-**Lỗi thường gặp:** Chia tiền lãi cho giá bán nên ra tỉ lệ nhỏ hơn thực tế. Phòng: Viết rõ “Giá mua = 100%” ở dòng đầu tiên.
+**Đáp số:** a) tầng 2 · b) Đánh dấu từng số đã cộng để không sót và không cộng lặp. · c) toàn bộ số điểm của ý sai · d) Đánh dấu từng số đã cộng để không sót và không cộng lặp. · e) Mọi câu hỏi đều quy về **tổng, so sánh, trung bình cộng, tỉ số phần trăm**.
+**Hướng giải:** Đọc bảng theo cột, ghi lại từng số liệu. Tổng là cộng tất cả; nhiều nhất, ít nhất là so sánh; trung bình là tổng chia số môn; tỉ số phần trăm là phần chia tổng rồi nhân 100.
+**Nhãn tư duy:** TD1, TD2. Điểm chốt: Mọi câu hỏi đều quy về **tổng, so sánh, trung bình cộng, tỉ số phần trăm**.
+**Lỗi thường gặp:** Đọc nhầm cột, hoặc quên một môn khi cộng tổng. Phòng: Đánh dấu từng số đã cộng để không sót và không cộng lặp.
 
 ### Bài C.3
-**Đáp số:** a) tầng 2 · b) Viết thêm chữ số 0 vào cuối để hai số có cùng số chữ số thập phân rồi mới so. · c) toàn bộ số điểm của ý sai · d) Viết thêm chữ số 0 vào cuối để hai số có cùng số chữ số thập phân rồi mới so. · e) So sánh theo **hàng**, không so theo số chữ số sau dấu phẩy.
-**Hướng giải:** Sau dấu phẩy lần lượt là hàng phần mười, phần trăm, phần nghìn. So sánh số thập phân: so phần nguyên trước; phần nguyên bằng nhau thì so lần lượt hàng phần mười, phần trăm, phần nghìn. Phân số có mẫu là 10, 100, 1 000 đổi được thẳng sang số thập phân.
-**Nhãn tư duy:** TD1, TD2. Điểm chốt: So sánh theo **hàng**, không so theo số chữ số sau dấu phẩy.
-**Lỗi thường gặp:** Cho rằng số có nhiều chữ số sau dấu phẩy hơn thì lớn hơn. Phòng: Viết thêm chữ số 0 vào cuối để hai số có cùng số chữ số thập phân rồi mới so.
+**Đáp số:** a) tầng 2 · b) Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút. · c) toàn bộ số điểm của ý sai · d) Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút. · e) Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều.
+**Hướng giải:** Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
+**Nhãn tư duy:** TD3, TD5. Điểm chốt: Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều.
+**Lỗi thường gặp:** Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. Phòng: Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút.
 
 ### Bài C.4
 **Đáp số:** a) tầng 2 · b) Nghĩ tới chiếc bánh: thiếu ít hơn thì phần đang có nhiều hơn. · c) toàn bộ số điểm của ý sai · d) Nghĩ tới chiếc bánh: thiếu ít hơn thì phần đang có nhiều hơn. · e) Phần bù **bé hơn** nghĩa là phân số **lớn hơn**.
@@ -425,10 +422,10 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Lỗi thường gặp:** So phần bù rồi kết luận cùng chiều với phần bù. Phòng: Nghĩ tới chiếc bánh: thiếu ít hơn thì phần đang có nhiều hơn.
 
 ### Bài C.5
-**Đáp số:** a) tầng 2 · b) Nghĩ tới chiếc bánh: thiếu ít hơn thì phần đang có nhiều hơn. · c) toàn bộ số điểm của ý sai · d) Nghĩ tới chiếc bánh: thiếu ít hơn thì phần đang có nhiều hơn. · e) Phần bù **bé hơn** nghĩa là phân số **lớn hơn** — dễ nhớ nhầm chiều.
-**Hướng giải:** **Phần bù tới 1:** hai phân số đều thiếu một chút nữa thì bằng 1; phân số nào có phần bù **bé hơn** thì lớn hơn. **Phân số trung gian:** chọn một phân số dễ so (thường là 1 phần 2 hoặc 1 phần 3) rồi so mỗi phân số với nó.
-**Nhãn tư duy:** TD6, TD5. Điểm chốt: Phần bù **bé hơn** nghĩa là phân số **lớn hơn** — dễ nhớ nhầm chiều.
-**Lỗi thường gặp:** So phần bù rồi kết luận cùng chiều với phần bù. Phòng: Nghĩ tới chiếc bánh: thiếu ít hơn thì phần đang có nhiều hơn.
+**Đáp số:** a) tầng 2 · b) Gạch chân: cái gì là “toàn bộ” (ứng với 100%), cái gì là “một phần”. · c) toàn bộ số điểm của ý sai · d) Gạch chân: cái gì là “toàn bộ” (ứng với 100%), cái gì là “một phần”. · e) Nhận đúng **dạng nào trong ba dạng** là xong một nửa bài.
+**Hướng giải:** Dạng 1 — tìm tỉ số phần trăm của a và b: lấy a chia b rồi nhân 100 và viết kí hiệu %. Dạng 2 — tìm p% của b: lấy b chia 100 rồi nhân p. Dạng 3 — biết p% của một số là a, tìm số đó: lấy a chia p rồi nhân 100.
+**Nhãn tư duy:** TD2, TD3. Điểm chốt: Nhận đúng **dạng nào trong ba dạng** là xong một nửa bài.
+**Lỗi thường gặp:** Nhầm dạng 2 với dạng 3 nên nhân thay vì chia. Phòng: Gạch chân: cái gì là “toàn bộ” (ứng với 100%), cái gì là “một phần”.
 
 ### Bài D.1
 **Đáp số:** a) Biểu đồ hình quạt, phần trăm nhiều bước và ôn tập · b) 5 · c) tên một dạng bài của chương · d) 3 nhánh con: dấu hiệu · phương pháp · lỗi hay mắc · e) so với bảng dạng bài ở phiếu Dạng bài & Đọc vị
@@ -438,31 +435,31 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài D.2
+**Đáp số:** a) Từ khoá “tăng giá”, “giảm giá”, “lãi”, “lỗ” · b) Chốt mốc 100% rồi cộng trừ phần trăm · c) Chia tiền lãi cho giá bán nên ra tỉ lệ nhỏ hơn thực tế. · d) Tỉ số phần trăm, tăng giảm theo phần trăm · e) Giảm 20% nghĩa là còn 80% — nhân thẳng một lần thay vì trừ hai bước.
+**Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
+**Nhãn tư duy:** TD2, TD6. Điểm chốt: Phần trăm lãi tính theo **giá mua**, không tính theo giá bán.
+**Lỗi thường gặp:** Chia tiền lãi cho giá bán nên ra tỉ lệ nhỏ hơn thực tế. Phòng: Viết rõ “Giá mua = 100%” ở dòng đầu tiên.
+**Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
+
+### Bài D.3
 **Đáp số:** a) Biểu thức gồm nhiều phân số và nhiều phép tính · b) Quan sát rút gọn trước, sau đó theo thứ tự thực hiện · c) Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. · d) Thứ tự thực hiện phép tính, tính chất phân phối · e) Rút gọn chéo tử với mẫu trước khi nhân.
 **Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều.
 **Lỗi thường gặp:** Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. Phòng: Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
-### Bài D.3
+### Bài D.4
 **Đáp số:** a) Số có dấu phẩy; phân số mẫu 10, 100, 1 000 · b) Xét theo hàng từ trái sang phải · c) Cho rằng số có nhiều chữ số sau dấu phẩy hơn thì lớn hơn. · d) Cấu tạo số thập phân, quan hệ phân số – số thập phân · e) Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị.
 **Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: So sánh theo **hàng**, không so theo số chữ số sau dấu phẩy.
 **Lỗi thường gặp:** Cho rằng số có nhiều chữ số sau dấu phẩy hơn thì lớn hơn. Phòng: Viết thêm chữ số 0 vào cuối để hai số có cùng số chữ số thập phân rồi mới so.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
-### Bài D.4
-**Đáp số:** a) Hai lần tăng giảm liên tiếp · b) Tính tuần tự, xác định lại mốc 100% sau mỗi bước · c) Cộng trừ hai số phần trăm rồi áp một lần vào giá ban đầu. · d) Tỉ số phần trăm, mốc quy chiếu · e) Tăng 20% rồi giảm 20% thì còn 96% giá ban đầu — luôn thấp hơn giá cũ.
-**Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
-**Nhãn tư duy:** TD6, TD2. Điểm chốt: Mốc 100% **thay đổi** sau mỗi lần — đây là bẫy kinh điển.
-**Lỗi thường gặp:** Cộng trừ hai số phần trăm rồi áp một lần vào giá ban đầu. Phòng: Viết ba dòng: giá ban đầu, giá sau lần 1, giá sau lần 2.
-**Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
-
 ### Bài D.5
-**Đáp số:** a) Một nhóm phân số cần sắp thứ tự · b) Rút gọn → so cùng mẫu hoặc quy đồng · c) Rút gọn xong quên rằng thứ tự vẫn giữ nguyên, đi quy đồng lại từ đầu. · d) Tính chất cơ bản của phân số; so sánh phân số · e) So với 1 và với một nửa trước — nhiều phân số phân loại được ngay.
+**Đáp số:** a) Cụm “bằng … của …” · b) Chia theo mẫu số rồi nhân theo tử số · c) Nhân phân số với đại lượng khác, không phải đại lượng đề chỉ định. · d) Nhân số tự nhiên với phân số · e) Chia trước, nhân sau — số nhỏ hơn nên tính nhẩm được.
 **Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
-**Nhãn tư duy:** TD1, TD5. Điểm chốt: Cùng mẫu số thì **chỉ cần so tử số**.
-**Lỗi thường gặp:** Rút gọn xong quên rằng thứ tự vẫn giữ nguyên, đi quy đồng lại từ đầu. Phòng: Ghi cả phân số gốc và phân số tối giản cạnh nhau để đối chiếu.
+**Nhãn tư duy:** TD2, TD3. Điểm chốt: Phân số tính trên **số nào** — đọc kĩ cụm “… của …”.
+**Lỗi thường gặp:** Nhân phân số với đại lượng khác, không phải đại lượng đề chỉ định. Phòng: Gạch chân cụm “bằng … số cây của …” để xác định số bị nhân.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.1
@@ -473,17 +470,17 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.2
-**Đáp số:** a) “Hôm nay nhóm mình nói về Tỉ số phần trăm trong mua bán.” · b) Từ khoá “tăng giá”, “giảm giá”, “lãi”, “lỗ” · c) Tỉ số phần trăm, tăng giảm theo phần trăm · d) Hàng giá 500 000 đồng giảm 20%. Giá còn lại bao nhiêu? → 400 000 đồng · e) Chia tiền lãi cho giá bán nên ra tỉ lệ nhỏ hơn thực tế. · f) Giảm 20% nghĩa là còn 80% — nhân thẳng một lần thay vì trừ hai bước.
-**Hướng giải:** Giá gốc luôn ứng với 100%. Tăng p% thì giá mới ứng với (100 + p)%; giảm p% thì giá mới ứng với (100 − p)%. Tính lãi theo phần trăm thì lấy tiền lãi chia **giá mua** rồi nhân 100.
-**Nhãn tư duy:** TD2, TD6. Điểm chốt: Phần trăm lãi tính theo **giá mua**, không tính theo giá bán.
-**Lỗi thường gặp:** Chia tiền lãi cho giá bán nên ra tỉ lệ nhỏ hơn thực tế. Phòng: Viết rõ “Giá mua = 100%” ở dòng đầu tiên.
-**Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
-
-### Bài E.3
 **Đáp số:** a) “Hôm nay nhóm mình nói về Đọc bảng số liệu thống kê.” · b) Đề cho bảng hoặc biểu đồ kèm nhiều câu hỏi · c) Thống kê mô tả sơ cấp, trung bình cộng, tỉ số phần trăm · d) Bảng: Toán 10, Văn 6, Anh 4. Trung bình mỗi môn bao nhiêu bạn? → 6,67 bạn · e) Đọc nhầm cột, hoặc quên một môn khi cộng tổng. · f) Tính tổng một lần rồi dùng lại cho mọi câu hỏi phần trăm.
 **Hướng giải:** Đọc bảng theo cột, ghi lại từng số liệu. Tổng là cộng tất cả; nhiều nhất, ít nhất là so sánh; trung bình là tổng chia số môn; tỉ số phần trăm là phần chia tổng rồi nhân 100.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Mọi câu hỏi đều quy về **tổng, so sánh, trung bình cộng, tỉ số phần trăm**.
 **Lỗi thường gặp:** Đọc nhầm cột, hoặc quên một môn khi cộng tổng. Phòng: Đánh dấu từng số đã cộng để không sót và không cộng lặp.
+**Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
+
+### Bài E.3
+**Đáp số:** a) “Hôm nay nhóm mình nói về Biểu đồ Ven.” · b) Đề cho số người của từng nhóm **và** số người thuộc cả hai nhóm · c) Phép cộng, phép trừ; đếm không trùng lặp · d) Lớp có 40 em, 25 em học vẽ, 20 em học hát, 10 em học cả hai. Bao nhiêu em không học môn nào? → 5 em · e) Lấy tổng trừ đi tổng hai con số đề cho mà không cộng lại phần chung. · f) Số người ít nhất một nhóm = nhóm A + nhóm B − phần chung.
+**Hướng giải:** Điền phần chung vào trước, rồi trừ ra hai phần riêng. Cộng ba phần ấy được số người tham gia ít nhất một hoạt động; lấy tổng trừ đi là ra số người ngoài cả hai vòng.
+**Nhãn tư duy:** TD2, TD4. Điểm chốt: Con số đề cho cho mỗi môn **đã bao gồm** những em học cả hai. Cộng thẳng hai con số ấy là đếm phần chung hai lần.
+**Lỗi thường gặp:** Lấy tổng trừ đi tổng hai con số đề cho mà không cộng lại phần chung. Phòng: Vẽ hình trước, điền phần giữa trước, rồi mới điền hai bên.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.4

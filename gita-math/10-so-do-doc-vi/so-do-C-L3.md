@@ -85,43 +85,43 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 
 Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: đây là dạng bài gì, và dấu hiệu nào cho biết điều đó.
 
-**Đề 1.** Điền số thích hợp vào chỗ chấm. 21, 26, …, 36, 41, 46
+**Đề 1.** Vẽ ba hình đầu ra nháp rồi tìm quy luật. Hình thứ 1 có 6 que diêm, mỗi hình sau hơn hình trước 4 que. Hình thứ 2 có bao nhiêu que?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 2.** Tìm quy luật rồi viết tiếp ba số hạng của mỗi dãy. 11, 22, 33, 44, …
+**Đề 2.** Tìm quy luật rồi viết tiếp ba số hạng của mỗi dãy. 28, 32, 36, 40, …
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 3.** Dãy lặp lại mãi nhóm 5, 5, 9: 5, 5, 9, 5, 5, 9, … Số hạng thứ 58 của dãy là số nào?
+**Đề 3.** Đếm số số hạng của mỗi dãy. Dãy 16, 18, 20, …, 34 có bao nhiêu số hạng?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 4.** Vẽ hình minh hoạ trước khi tính. Đoạn đường dài 54 m, trồng cây cách nhau 3 m, không trồng ở hai đầu. Cần bao nhiêu cây?
+**Đề 4.** Điền số thích hợp vào chỗ chấm. 33, …, 45, 51, 57, 63
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 5.** Điền số thích hợp vào chỗ chấm. 8, 33, 58, …, 108, 133
+**Đề 5.** Dãy lặp lại mãi nhóm 5, 7, 9: 5, 7, 9, 5, 7, 9, … Số hạng thứ 50 của dãy là số nào?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 6.** Dãy bắt đầu bằng 3; hiệu giữa hai số hạng liên tiếp lần lượt là 1, 2, 3, 4, … Viết năm số hạng đầu của dãy.
+**Đề 6.** Vẽ hình minh hoạ trước khi tính. Đoạn đường dài 14 m, trồng cây cách nhau 2 m, chỉ trồng ở một đầu. Cần bao nhiêu cây?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 7.** Vẽ ba hình đầu ra nháp rồi tìm quy luật. Hình thứ 1 có 5 que diêm, mỗi hình sau hơn hình trước 3 que. Hình thứ 2 có bao nhiêu que?
+**Đề 7.** Đếm số lượng, không cần liệt kê. Có bao nhiêu số chẵn từ 176 đến 324?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 8.** Đếm số lượng, không cần liệt kê. Có bao nhiêu số chia hết cho 5 từ 158 đến 253?
+**Đề 8.** Tìm quy luật rồi viết số hạng tiếp theo. 2, 9, 16, 23, 30, …
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 9.** Tìm quy luật rồi viết số hạng tiếp theo. 5, 6, 8, 11, 15, …
+**Đề 9.** Điền số thích hợp vào chỗ chấm. 5, 9, 13, …, 21, 25
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 10.** Đếm số số hạng của mỗi dãy. Dãy 14, 19, 24, …, 194 có bao nhiêu số hạng?
+**Đề 10.** Dãy bắt đầu bằng 1; hiệu giữa hai số hạng liên tiếp lần lượt là 1, 2, 3, 4, … Viết năm số hạng đầu của dãy.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
@@ -131,16 +131,16 @@ Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: 
 
 | # | Dạng bài | Dấu hiệu |
 |:--:|---|---|
-| 1 | Điền số hạng còn thiếu | Dãy có ô trống ở giữa |
+| 1 | Quy luật hình đưa về dãy số | Hình xếp thêm đều đặn theo thứ tự |
 | 2 | Tìm quy luật dãy cách đều | Dãy số kèm dấu … ở cuối |
-| 3 | Dãy tuần hoàn | Dãy lặp lại một nhóm số cố định |
-| 4 | Bài toán trồng cây | “Trồng cây”, “cột điện”, “quanh ao” |
-| 5 | Điền số hạng còn thiếu của dãy cách đều | Dãy có ô trống ở giữa |
-| 6 | Dãy có hiệu tăng đều | Hiệu giữa các số hạng tăng đều đặn |
-| 7 | Quy luật hình đưa về dãy số | Hình xếp thêm đều đặn theo thứ tự |
-| 8 | Đếm số hạng dãy cách đều theo điều kiện | “Có bao nhiêu số … từ … đến …” |
-| 9 | Tìm quy luật dãy số | Dãy số kết thúc bằng dấu … |
-| 10 | Đếm số hạng dãy cách đều | Dãy có số đầu, số cuối, khoảng cách đều |
+| 3 | Đếm số hạng dãy cách đều | Dãy có số đầu, số cuối, khoảng cách đều |
+| 4 | Điền số hạng còn thiếu của dãy cách đều | Dãy có ô trống ở giữa |
+| 5 | Dãy tuần hoàn | Dãy lặp lại một nhóm số cố định |
+| 6 | Bài toán trồng cây | “Trồng cây”, “cột điện”, “quanh ao” |
+| 7 | Đếm số hạng dãy cách đều theo điều kiện | “Có bao nhiêu số … từ … đến …” |
+| 8 | Tìm quy luật dãy số | Dãy số kết thúc bằng dấu … |
+| 9 | Điền số hạng còn thiếu | Dãy có ô trống ở giữa |
+| 10 | Dãy có hiệu tăng đều | Hiệu giữa các số hạng tăng đều đặn |
 
 ---
 

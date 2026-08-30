@@ -242,54 +242,56 @@ f) 47 × 101
 
 ## PHẦN D — DẠNG 5 – DẠNG 6 VÀ DẠNG PHỐI HỢP · Mức M3 — Vận dụng · 20 phút · 20 điểm
 
-### Bài 1. (4 điểm) Đếm số cặp — bắt tay, trận đấu, đường thẳng
+### Bài 1. (4 điểm) Hai nhóm có phần chung — đếm bằng hai vòng tròn
 
-Ba tình huống, cùng một cách đếm.
+Vẽ hai vòng tròn và điền số vào ba phần trước khi tính.
 
-a) Một giải đấu có 18 đội, hai đội bất kì đấu với nhau đúng một trận. Hỏi có tất cả bao nhiêu trận?
-b) Có 11 người, mỗi người bắt tay với tất cả những người còn lại đúng một lần. Hỏi có tất cả bao nhiêu cái bắt tay?
-c) Cho 4 điểm, không có ba điểm nào thẳng hàng. Qua hai điểm bất kì kẻ một đường thẳng. Hỏi kẻ được bao nhiêu đường thẳng?
-d) Có 6 người, mỗi người bắt tay với tất cả những người còn lại đúng một lần. Hỏi có tất cả bao nhiêu cái bắt tay?
+a) Lớp 4A có 41 học sinh. Có 29 em học tiếng Anh, 22 em học cờ vua, trong đó 10 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
+b) Lớp 4A có 35 học sinh. Có 16 em học vẽ, 24 em học tiếng Anh, trong đó 8 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
+c) Lớp 5B có 39 học sinh. Có 28 em học cờ vua, 21 em học tiếng Anh, trong đó 11 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
+d) Lớp 4B có 41 học sinh. Có 27 em học cờ vua, 20 em học bơi, trong đó 9 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
 
-### Bài 2. (4 điểm) Tìm phân số của một số qua hai bước
+### Bài 2. (4 điểm) Tìm số bằng cách thử và loại
 
-Đọc kĩ “của số nào” trước khi tính.
+Với mỗi câu, viết ra danh sách đã thử rồi mới ghi đáp số. Đáp số có thể gồm nhiều số.
 
-a) Một cửa hàng có 200 kg gạo. Ngày đầu bán 1 phần 4 số gạo, ngày thứ hai bán 1 phần 2 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
-b) Một cửa hàng có 780 kg gạo. Ngày đầu bán 1 phần 5 số gạo, ngày thứ hai bán 1 phần 4 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
-c) Một cửa hàng có 130 kg gạo. Ngày đầu bán 1 phần 2 số gạo, ngày thứ hai bán 1 phần 5 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
-d) Một cửa hàng có 180 kg gạo. Ngày đầu bán 1 phần 3 số gạo, ngày thứ hai bán 1 phần 2 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
+a) Tìm mọi số có hai chữ số vừa chia hết cho 5, vừa có tổng hai chữ số bằng 14.
+b) Tìm mọi số có hai chữ số vừa chia hết cho 5, vừa có tổng hai chữ số bằng 7.
+c) Tìm mọi số có hai chữ số vừa chia hết cho 4, vừa có tổng hai chữ số bằng 13.
+d) Tìm mọi số có hai chữ số vừa chia hết cho 9, vừa có tổng hai chữ số bằng 9.
+e) Tìm mọi số có hai chữ số vừa chia hết cho 4, vừa có tổng hai chữ số bằng 11.
 
-### Bài 3. (4 điểm) Tìm hai số khi biết tổng và tỉ số
-
-Vẽ sơ đồ đoạn thẳng rồi giải.
-
-a) Tổ Hai và đội Một trồng được tất cả 963 cây. Số cây của tổ Hai bằng 4 phần 5 số cây của đội Một. Mỗi tổ trồng được bao nhiêu cây?
-b) Nhóm Hoa Phượng và tổ Hai trồng được tất cả 712 cây. Số cây của nhóm Hoa Phượng bằng 1 phần 7 số cây của tổ Hai. Mỗi tổ trồng được bao nhiêu cây?
-c) Tổ Ba và đội Hai trồng được tất cả 990 cây. Số cây của tổ Ba bằng 4 phần 7 số cây của đội Hai. Mỗi tổ trồng được bao nhiêu cây?
-d) Đội Một và nhóm Sao Mai trồng được tất cả 148 cây. Số cây của đội Một bằng 1 phần 3 số cây của nhóm Sao Mai. Mỗi tổ trồng được bao nhiêu cây?
-e) Tổ Ba và đội Một trồng được tất cả 210 cây. Số cây của tổ Ba bằng 2 phần 5 số cây của đội Một. Mỗi tổ trồng được bao nhiêu cây?
-
-### Bài 4. (4 điểm) Đếm tam giác và đoạn thẳng
+### Bài 3. (4 điểm) Đếm tam giác và đoạn thẳng
 
 Đếm có hệ thống, nêu cách đếm.
 
 a) Từ một đỉnh của tam giác lớn kẻ 5 đoạn thẳng tới cạnh đối diện. Có tất cả bao nhiêu tam giác trong hình?
 b) Trong đó có bao nhiêu tam giác nhỏ nhất (không bị chia tiếp)?
-c) Trên một đường thẳng lấy 5 điểm phân biệt. Có bao nhiêu đoạn thẳng được tạo thành?
+c) Trên một đường thẳng lấy 6 điểm phân biệt. Có bao nhiêu đoạn thẳng được tạo thành?
 d) Nếu lấy thêm một điểm nữa trên đường thẳng đó thì có thêm bao nhiêu đoạn thẳng?
-e) Với 6 điểm thì có tất cả bao nhiêu đoạn thẳng?
+e) Với 7 điểm thì có tất cả bao nhiêu đoạn thẳng?
 
-### Bài 5. (4 điểm) Phủ hình và chia hình thành phần bằng nhau
+### Bài 4. (4 điểm) Phủ hình và chia hình thành phần bằng nhau
 
 Vẽ hình và kẻ lưới ra nháp.
 
-a) Một hình chữ nhật 10 cm × 4 cm được phủ kín bằng các hình vuông cạnh 1 cm. Cần bao nhiêu hình vuông?
+a) Một hình chữ nhật 14 cm × 4 cm được phủ kín bằng các hình vuông cạnh 1 cm. Cần bao nhiêu hình vuông?
 b) Diện tích hình chữ nhật ấy bằng bao nhiêu?
 c) Diện tích mỗi hình vuông nhỏ bằng bao nhiêu?
 d) Chia hình chữ nhật ấy thành 2 phần bằng nhau thì mỗi phần có diện tích bao nhiêu?
 e) Chia thành 4 phần bằng nhau thì mỗi phần bao nhiêu?
 f) Nếu ghép hai hình chữ nhật ấy theo chiều dài thì hình mới có chu vi bao nhiêu?
+
+### Bài 5. (4 điểm) Chữ số tận cùng của tổng, hiệu, tích
+
+Không tính hết phép tính, chỉ tìm chữ số tận cùng.
+
+a) Tích 8 807 × 9 037 có chữ số tận cùng là chữ số nào?
+b) Tổng 1 554 + 5 811 có chữ số tận cùng là chữ số nào?
+c) Hiệu 9 555 − 919 có chữ số tận cùng là chữ số nào?
+d) Tích 9 547 × 7 523 có chữ số tận cùng là chữ số nào?
+e) Hiệu 7 191 − 1 384 có chữ số tận cùng là chữ số nào?
+f) Tổng 7 010 + 9 965 có chữ số tận cùng là chữ số nào?
 
 ---
 
@@ -447,39 +449,39 @@ f) Lỗi nào dễ mắc ở đề này?
 **Lỗi thường gặp:** Nhân với 10 rồi quên cộng hoặc trừ phần bù. Phòng: Viết luôn dấu ± và số bù ra bên cạnh trước khi nhân.
 
 ### Bài D.1
-**Đáp số:** a) 153 trận · b) 55 cái · c) 6 đường thẳng · d) 15 cái
-**Hướng giải:** BẪY — Mỗi cặp bị đếm hai lần. Mỗi người bắt tay với n − 1 người còn lại, nên tổng số lượt bắt tay là n × (n − 1). Nhưng mỗi cái bắt tay được đếm **hai lần** (một lần từ mỗi phía), nên số bắt tay thật sự là n × (n − 1) : 2.
-**Nhãn tư duy:** TD4, TD6. Điểm chốt: Chia cho 2 vì mỗi cặp được đếm **hai lần**.
-**Lỗi thường gặp:** Quên chia 2, đáp số gấp đôi. Phòng: Thử với 3 người: phải ra 3 cái bắt tay, không phải 6.
-**Gợi ý 3 tầng:** (1) Mỗi người bắt tay với bao nhiêu người? — (2) Nhân với số người thì mỗi cái bắt tay bị đếm mấy lần? — (3) Chia kết quả cho 2.
+**Đáp số:** a) 0 em · b) 3 em · c) 1 em · d) 3 em
+**Hướng giải:** BẪY — Cộng thẳng, quên trừ phần chung. Điền phần chung vào trước, rồi trừ ra hai phần riêng. Cộng ba phần ấy được số người tham gia ít nhất một hoạt động; lấy tổng trừ đi là ra số người ngoài cả hai vòng.
+**Nhãn tư duy:** TD2, TD4. Điểm chốt: Con số đề cho cho mỗi môn **đã bao gồm** những em học cả hai. Cộng thẳng hai con số ấy là đếm phần chung hai lần.
+**Lỗi thường gặp:** Lấy tổng trừ đi tổng hai con số đề cho mà không cộng lại phần chung. Phòng: Vẽ hình trước, điền phần giữa trước, rồi mới điền hai bên.
+**Gợi ý 3 tầng:** (1) Bao nhiêu em học cả hai môn? Điền số ấy vào phần chồng nhau. — (2) Vậy chỉ học riêng mỗi môn là bao nhiêu em? — (3) Cộng ba phần rồi lấy sĩ số lớp trừ đi.
 
 ### Bài D.2
-**Đáp số:** a) 75 kg · b) 468 kg · c) 52 kg · d) 60 kg
-**Hướng giải:** BẪY — Phân số của số còn lại, không phải của tổng. Bước 1: tính số gạo bán ngày đầu bằng cách lấy tổng nhân với phân số. Bước 2: tính số gạo **còn lại** sau ngày đầu. Bước 3: phân số của ngày thứ hai tính trên **số còn lại**, không phải trên tổng ban đầu.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Cụm “số gạo **còn lại**” đổi hẳn số bị nhân ở bước hai.
-**Lỗi thường gặp:** Lấy cả hai phân số nhân với tổng ban đầu. Phòng: Sau mỗi bước, viết rõ “còn lại … kg” rồi mới sang bước sau.
-**Gợi ý 3 tầng:** (1) Ngày đầu bán bao nhiêu ki-lô-gam? — (2) Sau ngày đầu còn lại bao nhiêu? — (3) Phân số của ngày thứ hai tính trên số nào?
+**Đáp số:** a) 95 · b) 25, 70 · c) 76 · d) 18, 27, 36, 45, 54, 63, 72, 81, 90 · e) 56, 92
+**Hướng giải:** BẪY — Dừng ở đáp số đầu tiên. Chọn điều kiện cho ít khả năng nhất để liệt kê trước, rồi mới đem điều kiện còn lại ra thử. Làm ngược thứ tự ấy thì phải thử gấp nhiều lần.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Phải xét **hết** danh sách. Bài thử chọn thường có hơn một đáp số.
+**Lỗi thường gặp:** Tìm được một số thoả rồi dừng, bỏ sót các đáp số còn lại. Phòng: Viết danh sách ra giấy và gạch bỏ từng số, đừng thử nhẩm trong đầu.
+**Gợi ý 3 tầng:** (1) Trong hai điều kiện, điều kiện nào cho ít số hơn? — (2) Liệt kê hết các số thoả điều kiện ấy. — (3) Thử từng số với điều kiện còn lại, đừng dừng sớm.
 
 ### Bài D.3
-**Đáp số:** a) tổ Hai: 428 cây, đội Một: 535 cây · b) nhóm Hoa Phượng: 89 cây, tổ Hai: 623 cây · c) tổ Ba: 360 cây, đội Hai: 630 cây · d) đội Một: 37 cây, nhóm Sao Mai: 111 cây · e) tổ Ba: 60 cây, đội Một: 150 cây
-**Hướng giải:** Tỉ số cho biết số phần bằng nhau của mỗi đại lượng. Tổng số phần = số phần thứ nhất + số phần thứ hai. Giá trị một phần = tổng : tổng số phần. Nhân giá trị một phần với số phần của từng đại lượng.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Phải tính **tổng số phần** trước khi chia.
-**Lỗi thường gặp:** Chia tổng cho một trong hai số của tỉ số thay vì cho tổng số phần. Phòng: Vẽ sơ đồ, đếm tổng số đoạn nhỏ trên cả hai đoạn thẳng.
-**Gợi ý 3 tầng:** (1) Vẽ đại lượng thứ nhất mấy phần, thứ hai mấy phần? — (2) Tổng cộng có bao nhiêu phần bằng nhau? — (3) Một phần bằng bao nhiêu?
-
-### Bài D.4
-**Đáp số:** a) 21 · b) 6 · c) 10 · d) 5 · e) 15
+**Đáp số:** a) 21 · b) 6 · c) 15 · d) 6 · e) 21
 **Hướng giải:** BẪY — Bỏ sót hình ghép. Kẻ n đoạn thẳng từ một đỉnh chia cạnh đối diện thành n + 1 phần, tạo ra n + 1 tam giác nhỏ. Mỗi tam giác trong hình ứng với việc chọn hai trong n + 2 điểm trên cạnh đối diện, nên số tam giác = (n + 2) × (n + 1) : 2. Tương tự, k điểm trên một đường thẳng cho k × (k − 1) : 2 đoạn thẳng.
 **Nhãn tư duy:** TD4, TD3. Điểm chốt: Mọi bài đếm ở đây quy về **chọn hai điểm** trong một dãy điểm.
 **Lỗi thường gặp:** Chỉ đếm tam giác nhỏ, quên các tam giác ghép. Phòng: Đánh dấu tên các điểm rồi liệt kê từng cặp một cách có thứ tự.
 **Gợi ý 3 tầng:** (1) Cạnh đối diện bị chia thành mấy phần? — (2) Mỗi tam giác ứng với việc chọn hai điểm nào? — (3) Số cách chọn 2 trong k điểm là k × (k − 1) : 2.
 
-### Bài D.5
-**Đáp số:** a) 40 · b) 40 cm² · c) 1 cm² · d) 20 cm² · e) 10 cm² · f) 36 cm
+### Bài D.4
+**Đáp số:** a) 56 · b) 56 cm² · c) 1 cm² · d) 28 cm² · e) 14 cm² · f) 44 cm
 **Hướng giải:** BẪY — Chia diện tích, không chia chu vi. Số mảnh phủ kín bằng diện tích hình lớn chia diện tích một mảnh — nhưng chỉ đúng khi các mảnh **xếp khít không thừa**. Kiểm tra lại bằng cách đếm số hàng và số cột.
 **Nhãn tư duy:** TD3, TD4. Điểm chốt: Phép chia diện tích chỉ đúng khi mảnh **xếp khít**.
 **Lỗi thường gặp:** Chia chu vi cho cạnh mảnh thay vì chia diện tích cho diện tích. Phòng: Kẻ lưới lên hình và đếm thử một hàng.
 **Gợi ý 3 tầng:** (1) Diện tích hình lớn bằng bao nhiêu? — (2) Diện tích một mảnh bằng bao nhiêu? — (3) Chia hai diện tích cho nhau rồi đếm lại theo hàng.
+
+### Bài D.5
+**Đáp số:** a) 9 · b) 5 · c) 6 · d) 1 · e) 7 · f) 5
+**Hướng giải:** Chữ số tận cùng của tổng, hiệu, tích chỉ phụ thuộc vào chữ số tận cùng của các số tham gia. Chỉ cần lấy các chữ số tận cùng ra tính với nhau rồi lấy chữ số tận cùng của kết quả.
+**Nhãn tư duy:** TD5, TD2. Điểm chốt: Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu của số.
+**Lỗi thường gặp:** Tính trọn cả phép tính, vừa lâu vừa dễ sai. Phòng: Che phần đầu của hai số, chỉ để lộ chữ số cuối cùng.
+**Gợi ý 3 tầng:** (1) Chữ số tận cùng của mỗi số là chữ số nào? — (2) Thực hiện phép tính với riêng hai chữ số tận cùng đó. — (3) Lấy chữ số tận cùng của kết quả vừa tính.
 
 ### Bài E.1
 **Đáp số:** a) Hình chữ nhật tổng hợp · b) Một hình nhưng nhiều câu hỏi nối tiếp · c) Chu vi, diện tích hình chữ nhật; s = v × t · d) Tính chu vi và diện tích trước, dùng lại cho các ý sau · e) Chu vi tăng đúng 2 lần phần tăng, dù tăng chiều nào. · f) Nhân hai lượng tăng với nhau rồi coi đó là diện tích tăng thêm.

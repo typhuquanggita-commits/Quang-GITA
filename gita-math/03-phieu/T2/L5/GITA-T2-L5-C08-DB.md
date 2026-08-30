@@ -239,22 +239,13 @@ f) Hình thang có đáy lớn 32 cm, đáy bé 14 cm, chiều cao 5 cm. Tính d
 
 ## PHẦN D — DẠNG 5 – DẠNG 6 VÀ DẠNG PHỐI HỢP · Mức M3 — Vận dụng · 20 phút · 20 điểm
 
-### Bài 1. (4 điểm) Đếm số lần xuất hiện của một chữ số
-
-Đếm số lần xuất hiện, tính cả khi chữ số đó xuất hiện nhiều lần trong một số.
-
-a) Từ 1 đến 150, chữ số 2 xuất hiện bao nhiêu lần?
-b) Từ 1 đến 500, chữ số 1 xuất hiện bao nhiêu lần?
-c) Từ 1 đến 150, chữ số 5 xuất hiện bao nhiêu lần?
-d) Từ 1 đến 500, chữ số 3 xuất hiện bao nhiêu lần?
-
-### Bài 2. (4 điểm) Dãy số cho bởi quy tắc truy hồi
+### Bài 1. (4 điểm) Dãy số cho bởi quy tắc truy hồi
 
 Dãy số được lập theo ba quy tắc sau.
 
 - Số hạng đầu bằng 2.
-- Số hạng ở **vị trí chẵn** bằng số hạng liền trước nhân 2 rồi cộng 3.
-- Số hạng ở **vị trí lẻ** bằng số hạng liền trước cộng 3 nhân với số thứ tự của số hạng liền trước.
+- Số hạng ở **vị trí chẵn** bằng số hạng liền trước nhân 2 rồi cộng 6.
+- Số hạng ở **vị trí lẻ** bằng số hạng liền trước cộng 6 nhân với số thứ tự của số hạng liền trước.
 
 a) Viết ba số hạng đầu tiên của dãy.
 b) Số hạng thứ 5 của dãy là số nào?
@@ -262,37 +253,45 @@ c) Số hạng thứ 7 của dãy là số nào?
 d) Số hạng thứ 9 của dãy là số nào?
 e) Từ số hạng thứ 4 đến số hạng thứ 6, dãy tăng thêm bao nhiêu đơn vị?
 
-### Bài 3. (4 điểm) Lập số có ba chữ số khác nhau
+### Bài 2. (4 điểm) Chia theo tỉ lệ ba phần và bài toán trộn
 
-Cho ba chữ số **0, 3, 8**. Lập các số có ba chữ số khác nhau từ ba chữ số này.
+Vẽ sơ đồ ba đoạn thẳng cho bài chia tỉ lệ.
 
-a) Viết tất cả các số lập được (theo thứ tự từ bé đến lớn).
-b) Lập được tất cả bao nhiêu số?
-c) Số lớn nhất lập được là số nào?
-d) Số bé nhất lập được là số nào?
-e) Trong các số đó có bao nhiêu số chẵn?
-f) Có bao nhiêu số chia hết cho 5?
-g) Tổng của số lớn nhất và số bé nhất bằng bao nhiêu?
+a) Ba tổ trồng được 88 cây. Số cây tổ Một, tổ Hai, tổ Ba tỉ lệ với 2, 2, 4. Mỗi tổ trồng bao nhiêu cây?
+b) Trộn 4 kg gạo giá 10 000 đồng một ki-lô-gam với 4 kg gạo giá 25 000 đồng một ki-lô-gam. Hỏi tổng số tiền là bao nhiêu?
+c) Trộn 10 kg gạo giá 15 000 đồng một ki-lô-gam với 3 kg gạo giá 40 000 đồng một ki-lô-gam. Hỏi tổng số tiền là bao nhiêu?
+d) Ba tổ trồng được 360 cây. Số cây tổ Một, tổ Hai, tổ Ba tỉ lệ với 3, 2, 5. Mỗi tổ trồng bao nhiêu cây?
+e) Ba tổ trồng được 152 cây. Số cây tổ Một, tổ Hai, tổ Ba tỉ lệ với 1, 2, 5. Mỗi tổ trồng bao nhiêu cây?
+f) Trộn 8 kg gạo giá 20 000 đồng một ki-lô-gam với 12 kg gạo giá 25 000 đồng một ki-lô-gam. Hỏi tổng số tiền là bao nhiêu?
 
-### Bài 4. (4 điểm) Cấu tạo số có hai chữ số
+### Bài 3. (4 điểm) Cấu tạo số có hai chữ số
 
 Trình bày lời giải ngắn gọn cho từng ý.
 
-a) Tìm số có hai chữ số, biết tổng hai chữ số bằng 5 và chữ số hàng chục hơn chữ số hàng đơn vị 1 đơn vị.
-b) Tìm số có hai chữ số, biết tổng hai chữ số bằng 6 và chữ số hàng đơn vị hơn chữ số hàng chục 2 đơn vị.
-c) Chữ số hàng chục của số 26 gấp mấy lần chữ số hàng đơn vị (nếu chia hết), hoặc hơn bao nhiêu đơn vị?
-d) Số có hai chữ số 24; đổi chỗ hai chữ số ta được số nào? Hiệu của hai số đó bằng bao nhiêu?
+a) Tìm số có hai chữ số, biết tổng hai chữ số bằng 11 và chữ số hàng chục hơn chữ số hàng đơn vị 7 đơn vị.
+b) Chữ số hàng chục của số 67 gấp mấy lần chữ số hàng đơn vị (nếu chia hết), hoặc hơn bao nhiêu đơn vị?
+c) Số có hai chữ số 61; đổi chỗ hai chữ số ta được số nào? Hiệu của hai số đó bằng bao nhiêu?
+d) Số có hai chữ số 66; đổi chỗ hai chữ số ta được số nào? Hiệu của hai số đó bằng bao nhiêu?
 
-### Bài 5. (4 điểm) Định vị số hạng trong dãy cách đều
+### Bài 4. (4 điểm) Định vị số hạng trong dãy cách đều
 
-Cho dãy: 7, 11, 15, …, 323.
+Cho dãy: 15, 23, 31, …, 1 111.
 
 a) Dãy có bao nhiêu số hạng?
-b) Số hạng thứ 40 là số nào?
-c) Số 91 là số hạng thứ mấy?
-d) Số 139 là số hạng thứ mấy?
-e) Số 316 có thuộc dãy không? Vì sao?
+b) Số hạng thứ 69 là số nào?
+c) Số 567 là số hạng thứ mấy?
+d) Số 727 là số hạng thứ mấy?
+e) Số 832 có thuộc dãy không? Vì sao?
 f) Tổng của cả dãy bằng bao nhiêu?
+
+### Bài 5. (4 điểm) Đếm số lần xuất hiện của một chữ số
+
+Đếm số lần xuất hiện, tính cả khi chữ số đó xuất hiện nhiều lần trong một số.
+
+a) Từ 1 đến 150, chữ số 9 xuất hiện bao nhiêu lần?
+b) Từ 1 đến 500, chữ số 3 xuất hiện bao nhiêu lần?
+c) Từ 1 đến 200, chữ số 7 xuất hiện bao nhiêu lần?
+d) Từ 1 đến 200, chữ số 7 xuất hiện bao nhiêu lần?
 
 ---
 
@@ -450,39 +449,39 @@ f) Lỗi nào dễ mắc ở đề này?
 **Lỗi thường gặp:** Nhân riêng từng đáy với chiều cao rồi cộng, quên chia 2. Phòng: Viết công thức đầy đủ ra trước khi thay số.
 
 ### Bài D.1
-**Đáp số:** a) 35 · b) 200 · c) 26 · d) 200
-**Hướng giải:** BẪY — Số 33, 44… chứa hai lần cùng một chữ số. Đếm theo từng hàng: đếm số lần chữ số đó đứng ở hàng đơn vị, rồi hàng chục, rồi hàng trăm. Ở mỗi hàng, các số thoả mãn lập thành dãy cách đều, dùng công thức đếm số hạng.
-**Nhãn tư duy:** TD4, TD6. Điểm chốt: Một số có thể chứa chữ số đó **nhiều lần**; đếm theo hàng thì không sót.
-**Lỗi thường gặp:** Đếm số lượng **số** chứa chữ số đó thay vì số **lần** xuất hiện. Phòng: Kẻ bảng: hàng đơn vị – hàng chục – hàng trăm, đếm riêng rồi cộng.
-**Gợi ý 3 tầng:** (1) Đếm riêng theo từng hàng. — (2) Ở hàng đơn vị, các số đó cách nhau bao nhiêu đơn vị? — (3) Cộng kết quả của cả ba hàng.
-
-### Bài D.2
-**Đáp số:** a) 2, 7, 13 · b) 41 · c) 103 · d) 233 · e) 56
+**Đáp số:** a) 2, 10, 22 · b) 74 · c) 190 · d) 434 · e) 104
 **Hướng giải:** BẪY — Quy tắc khác nhau ở vị trí chẵn và lẻ. Lập bảng và tính lần lượt từng số hạng theo đúng quy tắc, không nhảy cóc. Ghi rõ số thứ tự của mỗi số hạng để chọn đúng nhánh quy tắc.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Quy tắc phụ thuộc **vị trí chẵn hay lẻ** — phải đánh số thứ tự trước.
 **Lỗi thường gặp:** Áp dụng nhầm nhánh quy tắc vì không để ý vị trí. Phòng: Kẻ bảng hai dòng: dòng trên ghi vị trí, dòng dưới ghi số hạng.
 **Gợi ý 3 tầng:** (1) Kẻ bảng vị trí và số hạng. — (2) Xác định vị trí đang xét là chẵn hay lẻ. — (3) Áp dụng đúng nhánh quy tắc cho vị trí đó.
 
-### Bài D.3
-**Đáp số:** a) 308 · 380 · 803 · 830 · b) 4 · c) 830 · d) 308 · e) 3 · f) 2 · g) 1 138
-**Hướng giải:** BẪY — Chữ số 0 không đứng đầu. Lập số theo thứ tự: chọn chữ số hàng trăm trước (khác 0), rồi hàng chục, rồi hàng đơn vị, mỗi chữ số dùng đúng một lần. Viết có hệ thống theo nhóm cùng chữ số hàng trăm để không bỏ sót và không trùng lặp.
-**Nhãn tư duy:** TD4, TD6. Điểm chốt: Chữ số **0 không được đứng ở hàng trăm**, nên nếu bộ có chữ số 0 thì số lượng số lập được ít hơn.
-**Lỗi thường gặp:** Viết lộn xộn nên vừa sót vừa trùng; hoặc nhận cả số bắt đầu bằng 0. Phòng: Liệt kê theo nhóm: cố định hàng trăm rồi mới hoán vị hai chữ số còn lại.
-**Gợi ý 3 tầng:** (1) Chọn chữ số hàng trăm trước — chữ số nào không được chọn? — (2) Với mỗi chữ số hàng trăm, hai chữ số còn lại xếp được mấy cách? — (3) Liệt kê theo nhóm để kiểm soát, đừng viết ngẫu nhiên.
+### Bài D.2
+**Đáp số:** a) 22 · 22 · 44 cây · b) 140 000 đồng · c) 270 000 đồng · d) 108 · 72 · 180 cây · e) 19 · 38 · 95 cây · f) 460 000 đồng
+**Hướng giải:** BẪY — Chia cho tổng số phần, không phải cho số đại lượng. Chia một tổng theo tỉ lệ ba số: cộng ba số phần lại, chia tổng cho tổng số phần được giá trị một phần, rồi nhân ra từng đại lượng. Bài trộn thì tính riêng từng loại rồi cộng.
+**Nhãn tư duy:** TD3, TD2. Điểm chốt: Chia cho **tổng số phần**, không chia cho số đại lượng.
+**Lỗi thường gặp:** Chia tổng cho 3 vì thấy có ba tổ. Phòng: Đếm số phần trên sơ đồ trước khi chia.
+**Gợi ý 3 tầng:** (1) Vẽ ba đoạn thẳng theo đúng số phần. — (2) Tổng cộng có bao nhiêu phần bằng nhau? — (3) Một phần bằng bao nhiêu?
 
-### Bài D.4
-**Đáp số:** a) 32 · b) 24 · c) hơn -4 đơn vị · d) 42, hiệu 18
+### Bài D.3
+**Đáp số:** a) 92 · b) hơn -1 đơn vị · c) 16, hiệu 45 · d) 66, hiệu 0
 **Hướng giải:** Viết số có hai chữ số dưới dạng **ab = a × 10 + b** với a là chữ số hàng chục (khác 0), b là chữ số hàng đơn vị. Từ điều kiện của đề, lập quan hệ giữa a và b rồi dùng bài toán tổng – hiệu.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Chữ số hàng chục **khác 0** và mỗi chữ số chỉ nhận giá trị từ 0 đến 9.
 **Lỗi thường gặp:** Tìm ra a hoặc b lớn hơn 9 mà vẫn nhận đáp số. Phòng: Sau khi tính xong, kiểm tra lại từng chữ số có nằm trong khoảng 0–9 không.
 **Gợi ý 3 tầng:** (1) Gọi chữ số hàng chục là a, hàng đơn vị là b. — (2) Viết số đó thành a × 10 + b. — (3) Đưa về bài toán tổng – hiệu của a và b.
 
-### Bài D.5
-**Đáp số:** a) 80 · b) 163 · c) 22 · d) 34 · e) không · f) 13 200
+### Bài D.4
+**Đáp số:** a) 138 · b) 559 · c) 70 · d) 90 · e) không · f) 77 694
 **Hướng giải:** BẪY — Số không thuộc dãy. Muốn biết một số là số hạng thứ mấy: lấy số đó trừ số hạng đầu, chia cho khoảng cách rồi cộng 1. Nếu phép chia còn dư thì số đó **không thuộc** dãy.
 **Nhãn tư duy:** TD4, TD2. Điểm chốt: Phép chia **có dư** là bằng chứng số đó không thuộc dãy.
 **Lỗi thường gặp:** Chia được số nguyên rồi quên cộng 1, hoặc bỏ qua phần dư. Phòng: Luôn ghi rõ thương và số dư khi chia.
 **Gợi ý 3 tầng:** (1) Lấy số đó trừ số hạng đầu. — (2) Chia hiệu cho khoảng cách — có chia hết không? — (3) Chia hết thì cộng 1 để ra thứ tự; không chia hết thì số đó không thuộc dãy.
+
+### Bài D.5
+**Đáp số:** a) 25 · b) 200 · c) 40 · d) 40
+**Hướng giải:** BẪY — Số 33, 44… chứa hai lần cùng một chữ số. Đếm theo từng hàng: đếm số lần chữ số đó đứng ở hàng đơn vị, rồi hàng chục, rồi hàng trăm. Ở mỗi hàng, các số thoả mãn lập thành dãy cách đều, dùng công thức đếm số hạng.
+**Nhãn tư duy:** TD4, TD6. Điểm chốt: Một số có thể chứa chữ số đó **nhiều lần**; đếm theo hàng thì không sót.
+**Lỗi thường gặp:** Đếm số lượng **số** chứa chữ số đó thay vì số **lần** xuất hiện. Phòng: Kẻ bảng: hàng đơn vị – hàng chục – hàng trăm, đếm riêng rồi cộng.
+**Gợi ý 3 tầng:** (1) Đếm riêng theo từng hàng. — (2) Ở hàng đơn vị, các số đó cách nhau bao nhiêu đơn vị? — (3) Cộng kết quả của cả ba hàng.
 
 ### Bài E.1
 **Đáp số:** a) Điền số hạng còn thiếu của dãy cách đều · b) Dãy có ô trống ở giữa · c) Dãy số cách đều · d) Xác định khoảng cách từ cặp liền nhau đã biết · e) Nếu chỗ trống nằm giữa hai số đã biết thì nó bằng trung bình cộng của hai số ấy. · f) Lấy hiệu của hai số cách nhau một chỗ trống làm khoảng cách.

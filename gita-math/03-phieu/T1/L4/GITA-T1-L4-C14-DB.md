@@ -237,49 +237,51 @@ d) Trong sân có 39 chiếc xe ô tô và xe đạp, đếm được tất cả
 
 Chú ý đơn vị mà đề hỏi.
 
-a) Một xe chở 8 bao phân bón, mỗi bao 50 kg. Hỏi xe chở bao nhiêu tạ phân bón?
-b) Một xe chở 6 bao thóc, mỗi bao 50 kg. Hỏi xe chở bao nhiêu tạ thóc?
-c) Một xe chở 21 bao xi măng, mỗi bao 40 kg. Hỏi xe chở bao nhiêu tạ xi măng?
+a) Một xe chở 39 bao xi măng, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ xi măng?
+b) Một xe chở 17 bao muối, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ muối?
+c) Một xe chở 22 bao phân bón, mỗi bao 50 kg. Hỏi xe chở bao nhiêu tạ phân bón?
 d) Một xe chở 30 bao gạo, mỗi bao 40 kg. Hỏi xe chở bao nhiêu tạ gạo?
+e) Một xe chở 25 bao muối, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ muối?
 
-### Bài 2. (4 điểm) Tổng của các số tự nhiên liên tiếp
+### Bài 2. (4 điểm) Tìm số ban đầu bằng cách tính ngược
 
-Với mỗi ý, tìm số theo yêu cầu.
+Vẽ sơ đồ mũi tên trước khi tính. Tính xong phải thử lại theo chiều xuôi.
 
-a) Tổng của 3 số tự nhiên liên tiếp bằng 1 167. Tìm số bé nhất trong 3 số đó.
-b) Tổng của 3 số tự nhiên liên tiếp bằng 648. Tìm số bé nhất trong 3 số đó.
-c) Tổng của 3 số tự nhiên liên tiếp bằng 1 470. Tìm số bé nhất trong 3 số đó.
-d) Tổng của 7 số tự nhiên liên tiếp bằng 3 017. Tìm số bé nhất trong 7 số đó.
-e) Tổng của 5 số tự nhiên liên tiếp bằng 1 555. Tìm số bé nhất trong 5 số đó.
+a) Em nghĩ ra một số. Lấy số ấy nhân với 3, được bao nhiêu thì cộng thêm 30, rồi chia cho 6 thì được 20. Hỏi số em nghĩ ra là số nào?
+b) Em nghĩ ra một số. Lấy số ấy nhân với 2, được bao nhiêu thì cộng thêm 20, rồi chia cho 2 thì được 31. Hỏi số em nghĩ ra là số nào?
+c) Em nghĩ ra một số. Lấy số ấy nhân với 3, được bao nhiêu thì cộng thêm 34, rồi chia cho 2 thì được 62. Hỏi số em nghĩ ra là số nào?
+d) Em nghĩ ra một số. Lấy số ấy nhân với 8, được bao nhiêu thì cộng thêm 36, rồi chia cho 4 thì được 83. Hỏi số em nghĩ ra là số nào?
 
-### Bài 3. (4 điểm) Tính thời điểm đến, thời gian đi
+### Bài 3. (4 điểm) Hai nhóm có phần chung — đếm bằng hai vòng tròn
+
+Vẽ hai vòng tròn và điền số vào ba phần trước khi tính.
+
+a) Lớp 5A có 47 học sinh. Có 24 em học bơi, 32 em học hát, trong đó 12 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
+b) Lớp 4B có 31 học sinh. Có 15 em học tiếng Anh, 16 em học bóng rổ, trong đó 3 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
+c) Lớp 5A có 41 học sinh. Có 28 em học bơi, 19 em học tiếng Anh, trong đó 10 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
+d) Lớp 5B có 43 học sinh. Có 25 em học tiếng Anh, 26 em học bơi, trong đó 12 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
+e) Lớp 4B có 38 học sinh. Có 22 em học bóng rổ, 19 em học cờ vua, trong đó 6 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
+
+### Bài 4. (4 điểm) Tìm số bằng cách thử và loại
+
+Với mỗi câu, viết ra danh sách đã thử rồi mới ghi đáp số. Đáp số có thể gồm nhiều số.
+
+a) Tìm mọi số có hai chữ số vừa chia hết cho 4, vừa có tổng hai chữ số bằng 13.
+b) Tìm mọi số có hai chữ số vừa chia hết cho 5, vừa có tổng hai chữ số bằng 7.
+c) Tìm mọi số có hai chữ số vừa chia hết cho 4, vừa có tổng hai chữ số bằng 12.
+d) Tìm mọi số có hai chữ số vừa chia hết cho 5, vừa có tổng hai chữ số bằng 7.
+e) Tìm mọi số có hai chữ số vừa chia hết cho 6, vừa có tổng hai chữ số bằng 15.
+
+### Bài 5. (4 điểm) Tính thời điểm đến, thời gian đi
 
 Ghi kết quả theo giờ và phút.
 
-a) Một chuyến tàu khởi hành lúc 8 giờ 10 phút và đi hết 3 giờ 50 phút. Tàu đến nơi lúc mấy giờ?
-b) Một chuyến tàu khởi hành lúc 13 giờ 10 phút và đi hết 4 giờ 31 phút. Tàu đến nơi lúc mấy giờ?
-c) Một chuyến tàu khởi hành lúc 6 giờ 45 phút và đi hết 3 giờ 48 phút. Tàu đến nơi lúc mấy giờ?
-d) Một chuyến tàu khởi hành lúc 12 giờ 30 phút và đi hết 3 giờ. Tàu đến nơi lúc mấy giờ?
-
-### Bài 4. (4 điểm) Đếm số cặp — bắt tay, trận đấu, đường thẳng
-
-Ba tình huống, cùng một cách đếm.
-
-a) Cho 12 điểm, không có ba điểm nào thẳng hàng. Qua hai điểm bất kì kẻ một đường thẳng. Hỏi kẻ được bao nhiêu đường thẳng?
-b) Một giải đấu có 5 đội, hai đội bất kì đấu với nhau đúng một trận. Hỏi có tất cả bao nhiêu trận?
-c) Có 11 người, mỗi người bắt tay với tất cả những người còn lại đúng một lần. Hỏi có tất cả bao nhiêu cái bắt tay?
-d) Một giải đấu có 20 đội, hai đội bất kì đấu với nhau đúng một trận. Hỏi có tất cả bao nhiêu trận?
-e) Cho 12 điểm, không có ba điểm nào thẳng hàng. Qua hai điểm bất kì kẻ một đường thẳng. Hỏi kẻ được bao nhiêu đường thẳng?
-
-### Bài 5. (4 điểm) Tìm hai số khi biết hiệu và tỉ số
-
-Vẽ sơ đồ đoạn thẳng rồi giải.
-
-a) Xưởng chứa nhiều hơn kho B 190 kg xi măng. Số xi măng ở kho B bằng 5 phần 7 số xi măng ở xưởng. Mỗi nơi chứa bao nhiêu kg?
-b) Hợp tác xã chứa nhiều hơn trang trại 24 kg phân bón. Số phân bón ở trang trại bằng 4 phần 5 số phân bón ở hợp tác xã. Mỗi nơi chứa bao nhiêu kg?
-c) Hợp tác xã chứa nhiều hơn xưởng 107 kg muối. Số muối ở xưởng bằng 6 phần 7 số muối ở hợp tác xã. Mỗi nơi chứa bao nhiêu kg?
-d) Hợp tác xã chứa nhiều hơn cửa hàng 72 kg phân bón. Số phân bón ở cửa hàng bằng 6 phần 7 số phân bón ở hợp tác xã. Mỗi nơi chứa bao nhiêu kg?
-e) Xưởng chứa nhiều hơn trang trại 88 kg phân bón. Số phân bón ở trang trại bằng 3 phần 5 số phân bón ở xưởng. Mỗi nơi chứa bao nhiêu kg?
+a) Một chuyến tàu khởi hành lúc 14 giờ 40 phút và đi hết 6 giờ 17 phút. Tàu đến nơi lúc mấy giờ?
+b) Một chuyến tàu khởi hành lúc 6 giờ 10 phút và đi hết 4 giờ 10 phút. Tàu đến nơi lúc mấy giờ?
+c) Một chuyến tàu khởi hành lúc 8 giờ 40 phút và đi hết 5 giờ 10 phút. Tàu đến nơi lúc mấy giờ?
+d) Một chuyến tàu khởi hành lúc 13 giờ 10 phút và đi hết 3 giờ 35 phút. Tàu đến nơi lúc mấy giờ?
+e) Một chuyến tàu khởi hành lúc 9 giờ 45 phút và đi hết 3 giờ 15 phút. Tàu đến nơi lúc mấy giờ?
+f) Một chuyến tàu khởi hành lúc 13 giờ 40 phút và đi hết 2 giờ 5 phút. Tàu đến nơi lúc mấy giờ?
 
 ---
 
@@ -437,39 +439,39 @@ f) Lỗi nào dễ mắc ở đề này?
 **Lỗi thường gặp:** Chia số bánh thiếu cho số bánh của loại nhiều hơn. Phòng: Thử lại: nhân ngược ra tổng số bánh, phải khớp với đề.
 
 ### Bài D.1
-**Đáp số:** a) 4 tạ · b) 3 tạ · c) 8 tạ 40 kg · d) 12 tạ
+**Đáp số:** a) 9 tạ 75 kg · b) 5 tạ 10 kg · c) 11 tạ · d) 12 tạ · e) 6 tạ 25 kg
 **Hướng giải:** BẪY — Đơn vị của câu trả lời. Tính tổng khối lượng theo ki-lô-gam trước, sau đó mới đổi sang đơn vị mà đề hỏi. Đừng đổi đơn vị ngay từ đầu vì dễ nhầm.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Câu hỏi đòi đơn vị nào thì bước **cuối cùng** mới đổi sang đơn vị đó.
 **Lỗi thường gặp:** Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. Phòng: Khoanh tròn đơn vị trong câu hỏi trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Tính tổng khối lượng theo ki-lô-gam. — (2) Đề hỏi kết quả theo đơn vị nào? — (3) Đổi kết quả sang đơn vị đó.
 
 ### Bài D.2
-**Đáp số:** a) 388 · b) 215 · c) 489 · d) 428 · e) 309
-**Hướng giải:** Với một số **lẻ** các số tự nhiên liên tiếp, số ở giữa chính là trung bình cộng: số giữa = tổng : số lượng. Số bé nhất bằng số giữa trừ đi một nửa số lượng còn lại.
-**Nhãn tư duy:** TD3, TD4. Điểm chốt: Với số lượng lẻ thì **số giữa = tổng : số lượng** — đó là chìa khoá.
-**Lỗi thường gặp:** Lấy tổng chia cho số lượng rồi nhận luôn kết quả là số bé nhất. Phòng: Vẽ dãy số ra, đánh dấu vị trí số giữa trước khi lùi về số đầu.
-**Gợi ý 3 tầng:** (1) Số lượng số hạng là số chẵn hay lẻ? — (2) Với số lượng lẻ, số ở giữa bằng tổng chia số lượng. — (3) Từ số giữa lùi về đầu dãy mấy đơn vị?
+**Đáp số:** a) 30 · b) 21 · c) 30 · d) 37
+**Hướng giải:** BẪY — Đi ngược nhưng không đảo thứ tự. Viết chuỗi thao tác thành sơ đồ mũi tên rồi đi ngược lại từ kết quả cuối. Mỗi bước đảo phép tính: nhân thành chia, cộng thành trừ. Thứ tự cũng phải đảo — phép làm sau cùng được gỡ trước tiên.
+**Nhãn tư duy:** TD3, TD5. Điểm chốt: Đảo **cả phép tính lẫn thứ tự**. Đảo phép tính mà giữ nguyên thứ tự thì vẫn sai.
+**Lỗi thường gặp:** Bắt đầu gỡ từ phép tính đầu tiên của đề thay vì từ phép tính cuối cùng. Phòng: Thử lại theo chiều xuôi. Bài này luôn thử lại được, nên không có lý do gì để nộp một đáp số chưa thử.
+**Gợi ý 3 tầng:** (1) Đề đã làm những phép tính nào, theo thứ tự nào? — (2) Phép nào làm sau cùng? Gỡ phép ấy trước tiên. — (3) Nhân thì gỡ bằng chia, cộng thì gỡ bằng trừ.
 
 ### Bài D.3
-**Đáp số:** a) 12 giờ 0 phút · b) 17 giờ 41 phút · c) 10 giờ 33 phút · d) 15 giờ 30 phút
-**Hướng giải:** BẪY — Phần phút vượt quá 60. Đổi cả giờ khởi hành lẫn thời gian đi về **phút**, cộng lại, rồi đổi kết quả ngược lại thành giờ và phút. Cách này tránh được lỗi nhớ khi phần phút vượt 60.
+**Đáp số:** a) 3 em · b) 3 em · c) 4 em · d) 4 em · e) 3 em
+**Hướng giải:** BẪY — Cộng thẳng, quên trừ phần chung. Điền phần chung vào trước, rồi trừ ra hai phần riêng. Cộng ba phần ấy được số người tham gia ít nhất một hoạt động; lấy tổng trừ đi là ra số người ngoài cả hai vòng.
+**Nhãn tư duy:** TD2, TD4. Điểm chốt: Con số đề cho cho mỗi môn **đã bao gồm** những em học cả hai. Cộng thẳng hai con số ấy là đếm phần chung hai lần.
+**Lỗi thường gặp:** Lấy tổng trừ đi tổng hai con số đề cho mà không cộng lại phần chung. Phòng: Vẽ hình trước, điền phần giữa trước, rồi mới điền hai bên.
+**Gợi ý 3 tầng:** (1) Bao nhiêu em học cả hai môn? Điền số ấy vào phần chồng nhau. — (2) Vậy chỉ học riêng mỗi môn là bao nhiêu em? — (3) Cộng ba phần rồi lấy sĩ số lớp trừ đi.
+
+### Bài D.4
+**Đáp số:** a) 76 · b) 25, 70 · c) 48, 84 · d) 25, 70 · e) 78, 96
+**Hướng giải:** BẪY — Dừng ở đáp số đầu tiên. Chọn điều kiện cho ít khả năng nhất để liệt kê trước, rồi mới đem điều kiện còn lại ra thử. Làm ngược thứ tự ấy thì phải thử gấp nhiều lần.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Phải xét **hết** danh sách. Bài thử chọn thường có hơn một đáp số.
+**Lỗi thường gặp:** Tìm được một số thoả rồi dừng, bỏ sót các đáp số còn lại. Phòng: Viết danh sách ra giấy và gạch bỏ từng số, đừng thử nhẩm trong đầu.
+**Gợi ý 3 tầng:** (1) Trong hai điều kiện, điều kiện nào cho ít số hơn? — (2) Liệt kê hết các số thoả điều kiện ấy. — (3) Thử từng số với điều kiện còn lại, đừng dừng sớm.
+
+### Bài D.5
+**Đáp số:** a) 20 giờ 57 phút · b) 10 giờ 20 phút · c) 13 giờ 50 phút · d) 16 giờ 45 phút · e) 13 giờ 0 phút · f) 15 giờ 45 phút
+**Hướng giải:** Đổi cả giờ khởi hành lẫn thời gian đi về **phút**, cộng lại, rồi đổi kết quả ngược lại thành giờ và phút. Cách này tránh được lỗi nhớ khi phần phút vượt 60.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Đổi hết về phút rồi mới cộng — an toàn hơn cộng trực tiếp.
 **Lỗi thường gặp:** Cộng phần phút thành hơn 60 mà quên đổi thành giờ. Phòng: Kiểm tra phần phút của đáp số phải bé hơn 60.
 **Gợi ý 3 tầng:** (1) Đổi giờ khởi hành ra phút tính từ 0 giờ. — (2) Cộng thêm thời gian đi (tính bằng phút). — (3) Đổi tổng số phút trở lại thành giờ và phút.
-
-### Bài D.4
-**Đáp số:** a) 66 đường thẳng · b) 10 trận · c) 55 cái · d) 190 trận · e) 66 đường thẳng
-**Hướng giải:** BẪY — Mỗi cặp bị đếm hai lần. Mỗi người bắt tay với n − 1 người còn lại, nên tổng số lượt bắt tay là n × (n − 1). Nhưng mỗi cái bắt tay được đếm **hai lần** (một lần từ mỗi phía), nên số bắt tay thật sự là n × (n − 1) : 2.
-**Nhãn tư duy:** TD4, TD6. Điểm chốt: Chia cho 2 vì mỗi cặp được đếm **hai lần**.
-**Lỗi thường gặp:** Quên chia 2, đáp số gấp đôi. Phòng: Thử với 3 người: phải ra 3 cái bắt tay, không phải 6.
-**Gợi ý 3 tầng:** (1) Mỗi người bắt tay với bao nhiêu người? — (2) Nhân với số người thì mỗi cái bắt tay bị đếm mấy lần? — (3) Chia kết quả cho 2.
-
-### Bài D.5
-**Đáp số:** a) kho B: 475 kg, xưởng: 665 kg · b) trang trại: 96 kg, hợp tác xã: 120 kg · c) xưởng: 642 kg, hợp tác xã: 749 kg · d) cửa hàng: 432 kg, hợp tác xã: 504 kg · e) trang trại: 132 kg, xưởng: 220 kg
-**Hướng giải:** BẪY — Hiệu số phần chứ không phải tổng số phần. Hiệu số phần = số phần lớn − số phần bé. Giá trị một phần = hiệu : hiệu số phần. Sau đó nhân với số phần của từng đại lượng.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Chia cho **hiệu số phần**, không phải tổng số phần.
-**Lỗi thường gặp:** Dùng nhầm công thức của tổng – tỉ cho bài hiệu – tỉ. Phòng: Đọc kĩ: đề cho “tổng” hay cho “nhiều hơn”? Ghi rõ ra trước khi vẽ.
-**Gợi ý 3 tầng:** (1) Đề cho tổng hay cho hiệu? — (2) Vẽ sơ đồ, phần dôi ra ứng với hiệu. — (3) Hiệu chia cho hiệu số phần ra giá trị một phần.
 
 ### Bài E.1
 **Đáp số:** a) Lịch và đơn vị thời gian lớn · b) Đề hỏi về tháng, năm, thế kỉ · c) Số ngày các tháng, năm nhuận, thế kỉ · d) Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400 · e) Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ. · f) Coi mọi năm chia hết cho 4 đều là năm nhuận.

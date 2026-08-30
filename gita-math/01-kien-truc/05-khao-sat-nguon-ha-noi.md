@@ -76,6 +76,85 @@ tại Hà Nội (MathX, CMath, Toán Ánh Sáng, HOCMAI, Tuyensinh247…).
    → Đây chính là chỗ GITA khác biệt: **chuẩn phiếu bất biến + thang mức M1–M5 +
    phiếu định vị mỗi 10 phiếu + hồ sơ tài năng radar 8 nhóm.**
 
+## 2B. VÒNG KHẢO SÁT THÁNG 8/2026 — TRỤC PHƯƠNG PHÁP
+
+### 2B.1. Tiếp cận được gì, không tiếp cận được gì
+
+Vòng này nhắm ba trang được chỉ đích danh — `hocmai.vn`, `mathx.vn`, `toanmath.com` —
+và năm nhóm Facebook về ôn thi vào lớp 6.
+
+| Nguồn | Tình trạng | Ghi chú |
+|---|---|---|
+| `hocmai.vn`, `mathx.vn`, `toanmath.com` | **Không tải được** | Cổng mạng của môi trường trả 403 khi mở kết nối. Chỉ khảo sát gián tiếp qua tìm kiếm có giới hạn tên miền |
+| Năm nhóm Facebook | **Không tải được** | Vừa bị cổng mạng chặn, vừa là **nhóm kín đòi đăng nhập** — kể cả không bị chặn cũng không đọc được từ bên ngoài |
+
+Việc cần người làm: nội dung trong năm nhóm Facebook ấy chỉ thành viên mới đọc được.
+Cách khai thác đúng là **một người trong nhóm tổng hợp lại** — đề được chia sẻ nhiều
+nhất, câu hỏi phụ huynh hỏi đi hỏi lại, dạng bài mọi người kêu khó — rồi đưa về đây.
+Đó cũng là nguồn từ khoá thật tốt nhất cho `04-cong-cu/data/tu_khoa.py`.
+
+### 2B.2. Phát hiện chính: kho GITA thiếu hẳn một trục
+
+Khảo sát gián tiếp cho thấy một điều về **cách tổ chức tài liệu**, quan trọng hơn
+bất kỳ bài toán cụ thể nào:
+
+> Tài liệu bồi dưỡng học sinh giỏi tiểu học ở Việt Nam tổ chức theo **trục phương
+> pháp giải** — *bài này giải bằng thủ pháp gì*. Kho GITA cho tới lúc ấy tổ chức
+> hoàn toàn theo **trục nội dung** — *bài này nói về cái gì*.
+
+Hai trục vuông góc nhau, và chương trình luyện học sinh giỏi cần cả hai. Một em thuộc
+hết 538 dạng bài vẫn tắc trước đề lạ nếu chưa từng được gọi tên cái thủ pháp đề ấy đòi.
+
+Danh mục chuẩn gồm mười sáu phương pháp, nay ghi ở `04-cong-cu/data/phuong_phap.py`.
+Đo lại kho ngày 30/08/2026 cho kết quả:
+
+| Trạng thái | Phương pháp |
+|---|---|
+| **Vắng hẳn khỏi cả 1 296 tài liệu** | Thử chọn · Khử · Thay thế · Diện tích · Dùng chữ thay số · Biểu đồ Ven · Tính ngược từ cuối · Lập bảng |
+| Có mặt nhưng chưa gọi đúng tên | Chia tỉ lệ · Ứng dụng sơ đồ |
+| Đã phủ tốt | Sơ đồ đoạn thẳng · Rút về đơn vị · Giả thiết tạm · Đi-rích-lê · Suy luận · Xét trường hợp |
+
+Ở nhóm chuyển động, bốn kỹ thuật cũng vắng dù chuyên đề đã có tên: **xuôi dòng –
+ngược dòng**, **vật có chiều dài đáng kể (tàu qua cầu)**, **lên dốc – xuống dốc**.
+
+> **Một cảnh báo về cách đo.** Lần đo đầu tiên báo sai: nó kết luận *sơ đồ đoạn thẳng*
+> vắng hẳn, trong khi thực tế phương pháp ấy xuất hiện hơn bốn nghìn lần. Nguyên nhân
+> là hàm `khong_dau()` **không đổi "đ" thành "d"**, nên mọi từ khoá có chữ đ đều không
+> khớp. Ai đo lại độ phủ phải dùng bản chuẩn hoá riêng, như `phu_phuong_phap()` trong
+> `kiem_tra_mau.py` đang làm. Một phép đo sai còn nguy hơn không đo, vì nó dẫn tới
+> việc vá chỗ không thủng và bỏ qua chỗ thủng thật.
+
+### 2B.3. Đã vá xong
+
+`04-cong-cu/sinh/mau_pp.py` — mười một mẫu bài mới, xây theo trục phương pháp, mỗi mẫu
+khai đúng tên phương pháp trong `dang_bai` để bộ chọn mẫu và phép đo độ phủ nhận ra:
+
+| Mã mẫu | Phương pháp | Lớp |
+|---|---|:--:|
+| `PP-G-M3-01` `PP-G-M4-01` | Thử chọn — tìm số thoả nhiều điều kiện; đếm cách trả tiền | 4–5 |
+| `PP-D-M4-01` | Khử — hai lần mua hàng | 5 |
+| `PP-D-M4-02` | Thay thế — đổi hết về một loại chuẩn | 5 |
+| `PP-F-M5-01` | Diện tích — tam giác chung chiều cao | 5 |
+| `PP-A-M4-01` | Dùng chữ thay số — cấu tạo số theo chữ | 4–5 |
+| `PP-H-M3-01` | Biểu đồ Ven — hai nhóm có phần chung | 4–5 |
+| `PP-B-M3-01` | Tính ngược từ cuối — sơ đồ mũi tên | 4–5 |
+| `PP-G-M4-02` | Lập bảng đúng – sai — ghép người với việc | 4–5 |
+| `PP-D-M4-03` | Chuyển động trên dòng nước — xuôi dòng, ngược dòng | 5 |
+| `PP-D-M5-01` | Vật có chiều dài đáng kể — tàu qua cầu, qua cột điện | 5 |
+| `PP-D-M5-02` | Lên dốc – xuống dốc — vận tốc trung bình | 5 |
+
+Thư viện mẫu: **229 → 241 mẫu**. `kiem_tra_mau.py` nay có thêm một phép kiểm cưỡng chế
+**16/16 phương pháp đều có mẫu bài dạy nó**, để sáu chỗ vừa vá không vắng trở lại.
+
+### 2B.4. Việc còn lại của vòng này
+
+- Nhờ một thành viên tổng hợp nội dung năm nhóm Facebook, theo 2B.1.
+- Bổ sung mức M5 cho các phương pháp mới — hiện mỗi phương pháp mới chỉ có một tới
+  hai mẫu, đủ để phủ nhưng chưa đủ dày cho phần phân hoá của phiếu nâng cao.
+- Rà tiếp trục thứ ba mà vòng này chưa đụng tới: **dạng bài thực tế theo bối cảnh
+  Việt Nam** — giá điện, lãi suất, khuyến mãi, tỉ lệ bản đồ — mảng đề ĐGNL đang
+  chuyển sang rất nhanh.
+
 ## 3. Quy tắc sử dụng nguồn (bản quyền & học thuật)
 
 - **Không sao chép nguyên văn** đề của trường hoặc của tác giả khác vào phiếu GITA.

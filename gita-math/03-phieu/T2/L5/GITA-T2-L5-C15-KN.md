@@ -42,69 +42,66 @@ Phiếu lời giải và phân tích chuyên sâu đi kèm: `GITA-T2-L5-C15-KN-G
 Họ và tên: ......................................... Lớp: ......... Điểm: ......../100
 
 > **KIẾN THỨC NỀN CỦA CHƯƠNG**
-> 1. Chu vi, diện tích hình chữ nhật; s = v × t
-> 2. Quy tắc đếm, tổ hợp chập hai
-> 3. Đặc điểm hình hộp, lập phương, trụ, cầu
-> 4. Chu vi, đường bao của hình
+> 1. Diện tích hình tròn, hình vuông; phép trừ diện tích
+> 2. Diện tích, chu vi hình chữ nhật; tỉ lệ
+> 3. Công thức thể tích, diện tích xung quanh, toàn phần
+> 4. Diện tích tam giác, tỉ lệ thuận
 
 ---
 
 ## PHẦN A — CỦNG CỐ NỀN — 30 CÂU TỐC ĐỘ · Mức M1 — Nhận biết · 20 phút · 25 điểm
 
-### Bài 1. (5 điểm) Góc nhọn, góc tù, góc bẹt; vuông góc và song song
-
-Dùng ê ke và thước đo góc để kiểm chứng.
-
-a) Góc có số đo 15° là góc gì?
-b) Hình chữ nhật có mấy cặp cạnh song song và mấy cặp cạnh vuông góc?
-c) Góc 135° so với góc vuông thì lớn hơn, bé hơn hay bằng?
-d) Góc có số đo 75° là góc gì?
-e) Hình chữ nhật có mấy cặp cạnh song song và mấy cặp cạnh vuông góc?
-f) Góc 60° so với góc vuông thì lớn hơn, bé hơn hay bằng?
-g) Hình chữ nhật có mấy cặp cạnh song song và mấy cặp cạnh vuông góc?
-h) Góc 15° so với góc vuông thì lớn hơn, bé hơn hay bằng?
-
-### Bài 2. (5 điểm) Đếm hình trong lưới ô vuông
+### Bài 1. (5 điểm) Đếm hình trong lưới ô vuông
 
 Đếm có hệ thống, không đếm mò.
 
-a) Lưới ô vuông gồm 2 hàng và 2 cột ô vuông nhỏ. Có tất cả bao nhiêu ô vuông nhỏ?
+a) Lưới ô vuông gồm 2 hàng và 5 cột ô vuông nhỏ. Có tất cả bao nhiêu ô vuông nhỏ?
 b) Có bao nhiêu hình chữ nhật (kể cả hình vuông) trong lưới đó?
 c) Có bao nhiêu hình vuông trong lưới đó?
 d) Nếu mỗi ô vuông nhỏ có cạnh 1 cm thì chu vi cả lưới bằng bao nhiêu?
 e) Diện tích cả lưới bằng bao nhiêu?
 
-### Bài 3. (5 điểm) Tìm kích thước khi biết chu vi hoặc diện tích
+### Bài 2. (5 điểm) Tìm kích thước khi biết chu vi hoặc diện tích
 
 Làm ngược từ công thức.
 
-a) Hình chữ nhật có diện tích 840 cm², chiều rộng 21 cm. Tính chiều dài.
-b) Hình vuông có chu vi 24 cm. Tính cạnh và diện tích.
-c) Hình chữ nhật có chu vi 26 cm, chiều dài 7 cm. Tính chiều rộng.
-d) Hình chữ nhật có diện tích 276 cm², chiều rộng 6 cm. Tính chiều dài.
-e) Hình vuông có chu vi 168 cm. Tính cạnh và diện tích.
-f) Hình chữ nhật có chu vi 76 cm, chiều dài 34 cm. Tính chiều rộng.
-g) Hình chữ nhật có chu vi 138 cm, chiều dài 58 cm. Tính chiều rộng.
+a) Hình chữ nhật có chu vi 104 cm, chiều dài 46 cm. Tính chiều rộng.
+b) Hình vuông có chu vi 168 cm. Tính cạnh và diện tích.
+c) Hình chữ nhật có diện tích 136 cm², chiều rộng 4 cm. Tính chiều dài.
+d) Hình chữ nhật có chu vi 138 cm, chiều dài 58 cm. Tính chiều rộng.
+e) Hình chữ nhật có diện tích 465 cm², chiều rộng 15 cm. Tính chiều dài.
+f) Hình vuông có chu vi 120 cm. Tính cạnh và diện tích.
+
+### Bài 3. (5 điểm) Góc nhọn, góc tù, góc bẹt; vuông góc và song song
+
+Dùng ê ke và thước đo góc để kiểm chứng.
+
+a) Góc 135° so với góc vuông thì lớn hơn, bé hơn hay bằng?
+b) Góc có số đo 100° là góc gì?
+c) Hình chữ nhật có mấy cặp cạnh song song và mấy cặp cạnh vuông góc?
+d) Góc có số đo 90° là góc gì?
+e) Hình chữ nhật có mấy cặp cạnh song song và mấy cặp cạnh vuông góc?
+f) Góc 120° so với góc vuông thì lớn hơn, bé hơn hay bằng?
+g) Góc 100° so với góc vuông thì lớn hơn, bé hơn hay bằng?
+h) Hình chữ nhật có mấy cặp cạnh song song và mấy cặp cạnh vuông góc?
 
 ### Bài 4. (5 điểm) Viết số khi biết tổng các giá trị hàng
 
 Viết số tự nhiên ứng với mỗi tổng dưới đây.
 
-a) Viết số gồm tổng: 6 000 000 + 400 000 + 3 000 + 700 + 50 + 7
-b) Viết số gồm tổng: 6 000 000 + 500 000 + 70 000 + 3 000 + 800 + 90 + 8
-c) Viết số gồm tổng: 7 000 000 + 700 000 + 60 000 + 2 000 + 200 + 10 + 8
-d) Viết số gồm tổng: 5 000 000 + 70 000 + 5 000 + 200 + 80 + 3
-e) Viết số gồm tổng: 1 000 000 + 7 000 + 900 + 30 + 3
+a) Viết số gồm tổng: 8 000 000 + 400 000 + 40 000 + 90 + 3
+b) Viết số gồm tổng: 200 000 + 30 000 + 3 000 + 400 + 40 + 4
+c) Viết số gồm tổng: 9 000 000 + 40 000 + 9 000 + 800 + 90 + 3
+d) Viết số gồm tổng: 5 000 000 + 200 000 + 30 000 + 1 000 + 100 + 50 + 6
 
 ### Bài 5. (5 điểm) Chu vi và diện tích hình chữ nhật, hình vuông
 
 Tính theo yêu cầu, ghi rõ đơn vị.
 
-a) Hình chữ nhật có chiều dài 55 cm, chiều rộng 7 cm. Tính chu vi.
-b) Hình chữ nhật có chiều dài 34 cm, chiều rộng 33 cm. Tính diện tích.
-c) Hình vuông có cạnh 30 cm. Tính chu vi.
-d) Hình vuông có cạnh 15 cm. Tính diện tích.
-e) Hình vuông có cạnh 4 cm. Tính diện tích.
+a) Hình chữ nhật có chiều dài 51 cm, chiều rộng 16 cm. Tính diện tích.
+b) Hình vuông có cạnh 18 cm. Tính chu vi.
+c) Hình chữ nhật có chiều dài 50 cm, chiều rộng 42 cm. Tính chu vi.
+d) Hình vuông có cạnh 56 cm. Tính diện tích.
 
 ---
 
@@ -124,11 +121,11 @@ e) Thiếu câu lời giải thì bị trừ bao nhiêu phần điểm của bà
 
 Với mỗi dạng bài, viết một câu lời giải mẫu.
 
-a) Câu lời giải mở đầu cho dạng “Nhận biết và phân loại góc”?
-b) Câu lời giải mở đầu cho dạng “Đếm hình bằng quy tắc chọn hai điểm”?
-c) Câu lời giải mở đầu cho dạng “Tỉ số diện tích tam giác”?
-d) Câu lời giải mở đầu cho dạng “Tìm kích thước từ chu vi, diện tích”?
-e) Câu lời giải mở đầu cho dạng “Đếm hình trong lưới”?
+a) Câu lời giải mở đầu cho dạng “Cắt ghép hình, tỉ số diện tích”?
+b) Câu lời giải mở đầu cho dạng “Phương pháp diện tích”?
+c) Câu lời giải mở đầu cho dạng “Hình chữ nhật tổng hợp”?
+d) Câu lời giải mở đầu cho dạng “Nhận biết và phân loại góc”?
+e) Câu lời giải mở đầu cho dạng “Tìm kích thước từ chu vi, diện tích”?
 
 ### Bài 3. (3 điểm) Ghi đơn vị đúng chỗ
 
@@ -145,12 +142,12 @@ f) Vận tốc ghi đơn vị gì?
 
 Mỗi ý nêu một lỗi. Hãy nói cách sửa.
 
-a) Lỗi: Gọi góc 90° là góc nhọn vì thấy “nhỏ”. — cách phòng?
-b) Lỗi: Chỉ đếm tam giác nhỏ, quên các tam giác ghép. — cách phòng?
-c) Lỗi: Đi tìm chiều cao cụ thể trong khi đề không cho. — cách phòng?
-d) Lỗi: Trừ thẳng chiều dài khỏi chu vi mà chưa chia đôi. — cách phòng?
-e) Lỗi: Chỉ đếm các ô vuông nhỏ, quên các hình ghép từ nhiều ô. — cách phòng?
-f) Lỗi: Cộng chu vi hai hình nhỏ lại thành chu vi hình ghép. — cách phòng?
+a) Lỗi: Cộng chu vi hai hình nhỏ lại thành chu vi hình ghép. — cách phòng?
+b) Lỗi: Đem so hai tam giác không chung đỉnh, hoặc hai đáy không cùng nằm trên một đường thẳng. — cách phòng?
+c) Lỗi: Nhân hai lượng tăng với nhau rồi coi đó là diện tích tăng thêm. — cách phòng?
+d) Lỗi: Gọi góc 90° là góc nhọn vì thấy “nhỏ”. — cách phòng?
+e) Lỗi: Trừ thẳng chiều dài khỏi chu vi mà chưa chia đôi. — cách phòng?
+f) Lỗi: Đếm cả khối ở đỉnh vào nhóm khối ở cạnh, thành ra đếm trùng. — cách phòng?
 
 ### Bài 5. (3 điểm) Tự chấm bài theo thang điểm
 
@@ -178,7 +175,7 @@ e) Dò ba tầng mất bao lâu cho một bài?
 
 ### Bài 2. (3 điểm) Dò soát tình huống 1
 
-**Tình huống:** một bạn làm bài dạng “Nhận biết và phân loại góc” và mắc lỗi: Gọi góc 90° là góc nhọn vì thấy “nhỏ”.
+**Tình huống:** một bạn làm bài dạng “Cắt ghép hình, tỉ số diện tích” và mắc lỗi: Cộng chu vi hai hình nhỏ lại thành chu vi hình ghép.
 
 a) Lỗi này bị bắt ở tầng dò soát nào?
 b) Cách phòng lỗi này là gì?
@@ -188,7 +185,7 @@ e) Điểm chốt của dạng này là gì?
 
 ### Bài 3. (3 điểm) Dò soát tình huống 2
 
-**Tình huống:** một bạn làm bài dạng “Tìm kích thước từ chu vi, diện tích” và mắc lỗi: Trừ thẳng chiều dài khỏi chu vi mà chưa chia đôi.
+**Tình huống:** một bạn làm bài dạng “Nhận biết và phân loại góc” và mắc lỗi: Gọi góc 90° là góc nhọn vì thấy “nhỏ”.
 
 a) Lỗi này bị bắt ở tầng dò soát nào?
 b) Cách phòng lỗi này là gì?
@@ -198,7 +195,7 @@ e) Điểm chốt của dạng này là gì?
 
 ### Bài 4. (3 điểm) Dò soát tình huống 3
 
-**Tình huống:** một bạn làm bài dạng “Biến thiên diện tích và chu vi theo tỉ lệ” và mắc lỗi: Cho rằng gấp đôi hai chiều thì diện tích cũng chỉ gấp đôi.
+**Tình huống:** một bạn làm bài dạng “Biến thiên diện tích theo kích thước” và mắc lỗi: Nhân hai lượng tăng với nhau rồi coi đó là phần diện tích tăng thêm.
 
 a) Lỗi này bị bắt ở tầng dò soát nào?
 b) Cách phòng lỗi này là gì?
@@ -208,7 +205,7 @@ e) Điểm chốt của dạng này là gì?
 
 ### Bài 5. (3 điểm) Dò soát tình huống 4
 
-**Tình huống:** một bạn làm bài dạng “Hình hộp chữ nhật, hình lập phương” và mắc lỗi: Cộng thiếu một mặt đáy khi tính diện tích toàn phần.
+**Tình huống:** một bạn làm bài dạng “Diện tích phần tô màu” và mắc lỗi: Lấy bán kính hình tròn làm cạnh hình vuông.
 
 a) Lỗi này bị bắt ở tầng dò soát nào?
 b) Cách phòng lỗi này là gì?
@@ -230,7 +227,7 @@ c) Mỗi nhánh chính đặt tên theo gì?
 d) Mỗi nhánh chính có mấy nhánh con bắt buộc?
 e) Vẽ xong, tự chấm bằng cách nào?
 
-### Bài 2. (5 điểm) Nhánh 1 — Đếm hình bằng quy tắc chọn hai điểm
+### Bài 2. (5 điểm) Nhánh 1 — Phương pháp diện tích
 
 Điền ba nhánh con bắt buộc của nhánh này.
 
@@ -240,7 +237,7 @@ c) Nhánh con 3 — lỗi hay mắc?
 d) Ghi thêm: kiến thức phải thuộc?
 e) Ghi thêm: cách xử lý nhanh nhất?
 
-### Bài 3. (5 điểm) Nhánh 2 — Tìm kích thước từ chu vi, diện tích
+### Bài 3. (5 điểm) Nhánh 2 — Nhận biết và phân loại góc
 
 Điền ba nhánh con bắt buộc của nhánh này.
 
@@ -250,7 +247,7 @@ c) Nhánh con 3 — lỗi hay mắc?
 d) Ghi thêm: kiến thức phải thuộc?
 e) Ghi thêm: cách xử lý nhanh nhất?
 
-### Bài 4. (5 điểm) Nhánh 3 — Cắt ghép hình, tỉ số diện tích
+### Bài 4. (5 điểm) Nhánh 3 — Khối lập phương sơn màu
 
 Điền ba nhánh con bắt buộc của nhánh này.
 
@@ -260,7 +257,7 @@ c) Nhánh con 3 — lỗi hay mắc?
 d) Ghi thêm: kiến thức phải thuộc?
 e) Ghi thêm: cách xử lý nhanh nhất?
 
-### Bài 5. (5 điểm) Nhánh 4 — Biến thiên diện tích theo kích thước
+### Bài 5. (5 điểm) Nhánh 4 — Hình hộp chữ nhật, hình lập phương
 
 Điền ba nhánh con bắt buộc của nhánh này.
 
@@ -285,7 +282,7 @@ d) Phút 4 nói gì?
 e) Phút 5 nói gì?
 f) Ai trong nhóm nói phần nào?
 
-### Bài 2. (4 điểm) Nội dung giảng — Nhận biết và phân loại góc
+### Bài 2. (4 điểm) Nội dung giảng — Cắt ghép hình, tỉ số diện tích
 
 Chuẩn bị nội dung để giảng dạng bài này cho lớp.
 
@@ -296,7 +293,7 @@ d) Ví dụ mẫu em sẽ giảng?
 e) Lỗi em sẽ cảnh báo cho lớp?
 f) Mẹo nhanh em sẽ tặng lớp?
 
-### Bài 3. (4 điểm) Nội dung giảng — Tỉ số diện tích tam giác
+### Bài 3. (4 điểm) Nội dung giảng — Hình chữ nhật tổng hợp
 
 Chuẩn bị nội dung để giảng dạng bài này cho lớp.
 
@@ -307,7 +304,7 @@ d) Ví dụ mẫu em sẽ giảng?
 e) Lỗi em sẽ cảnh báo cho lớp?
 f) Mẹo nhanh em sẽ tặng lớp?
 
-### Bài 4. (4 điểm) Nội dung giảng — Đếm hình trong lưới
+### Bài 4. (4 điểm) Nội dung giảng — Tìm kích thước từ chu vi, diện tích
 
 Chuẩn bị nội dung để giảng dạng bài này cho lớp.
 
@@ -318,7 +315,7 @@ d) Ví dụ mẫu em sẽ giảng?
 e) Lỗi em sẽ cảnh báo cho lớp?
 f) Mẹo nhanh em sẽ tặng lớp?
 
-### Bài 5. (4 điểm) Nội dung giảng — Biến thiên diện tích và chu vi theo tỉ lệ
+### Bài 5. (4 điểm) Nội dung giảng — Biến thiên diện tích theo kích thước
 
 Chuẩn bị nội dung để giảng dạng bài này cho lớp.
 
@@ -336,31 +333,31 @@ f) Mẹo nhanh em sẽ tặng lớp?
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài A.1
-**Đáp số:** a) góc nhọn · b) 2 cặp song song, 4 cặp vuông góc · c) lớn hơn · d) góc nhọn · e) 2 cặp song song, 4 cặp vuông góc · f) bé hơn · g) 2 cặp song song, 4 cặp vuông góc · h) bé hơn
-**Hướng giải:** Chỉ cần hai mốc: 90° và 180°. Bé hơn 90° là nhọn, đúng 90° là vuông, giữa 90° và 180° là tù, đúng 180° là bẹt.
-**Nhãn tư duy:** TD1, TD2. Điểm chốt: Hai mốc **90°** và **180°** chia hết các loại góc.
-**Lỗi thường gặp:** Gọi góc 90° là góc nhọn vì thấy “nhỏ”. Phòng: Áp ê ke vào góc trước khi gọi tên.
-
-### Bài A.2
-**Đáp số:** a) 4 · b) 9 · c) 5 · d) 8 cm · e) 4 cm²
+**Đáp số:** a) 10 · b) 45 · c) 14 · d) 14 cm · e) 10 cm²
 **Hướng giải:** BẪY — Bỏ sót các hình ghép nhiều ô. Một hình chữ nhật trong lưới được xác định bởi hai đường kẻ ngang và hai đường kẻ dọc. Lưới m hàng có m + 1 đường ngang, n cột có n + 1 đường dọc, nên số hình chữ nhật bằng số cách chọn hai đường ngang nhân số cách chọn hai đường dọc. Đếm hình vuông thì đếm theo từng cỡ cạnh.
 **Nhãn tư duy:** TD3, TD4. Điểm chốt: Đếm **theo cỡ** hoặc **theo đường kẻ**, tuyệt đối không đếm ngẫu nhiên.
 **Lỗi thường gặp:** Chỉ đếm các ô vuông nhỏ, quên các hình ghép từ nhiều ô. Phòng: Kẻ bảng theo cỡ hình: cỡ 1×1, 1×2, 2×2… rồi cộng.
 
-### Bài A.3
-**Đáp số:** a) 40 cm · b) cạnh 6 cm, diện tích 36 cm² · c) 6 cm · d) 46 cm · e) cạnh 42 cm, diện tích 1 764 cm² · f) 4 cm · g) 11 cm
+### Bài A.2
+**Đáp số:** a) 6 cm · b) cạnh 42 cm, diện tích 1 764 cm² · c) 34 cm · d) 11 cm · e) 31 cm · f) cạnh 30 cm, diện tích 900 cm²
 **Hướng giải:** BẪY — Quên chia đôi chu vi. Từ chu vi hình chữ nhật, chia đôi được nửa chu vi (chính là dài + rộng), rồi trừ đi chiều đã biết. Từ diện tích, chia cho một chiều được chiều kia. Từ chu vi hình vuông, chia 4 được cạnh.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Chia chu vi cho **2** ra nửa chu vi — bước trung gian không được bỏ.
 **Lỗi thường gặp:** Trừ thẳng chiều dài khỏi chu vi mà chưa chia đôi. Phòng: Viết dòng “Nửa chu vi = …” trước khi trừ.
 
+### Bài A.3
+**Đáp số:** a) lớn hơn · b) góc tù · c) 2 cặp song song, 4 cặp vuông góc · d) góc vuông · e) 2 cặp song song, 4 cặp vuông góc · f) lớn hơn · g) lớn hơn · h) 2 cặp song song, 4 cặp vuông góc
+**Hướng giải:** Chỉ cần hai mốc: 90° và 180°. Bé hơn 90° là nhọn, đúng 90° là vuông, giữa 90° và 180° là tù, đúng 180° là bẹt.
+**Nhãn tư duy:** TD1, TD2. Điểm chốt: Hai mốc **90°** và **180°** chia hết các loại góc.
+**Lỗi thường gặp:** Gọi góc 90° là góc nhọn vì thấy “nhỏ”. Phòng: Áp ê ke vào góc trước khi gọi tên.
+
 ### Bài A.4
-**Đáp số:** a) 6 403 757 · b) 6 573 898 · c) 7 762 218 · d) 5 075 283 · e) 1 007 933
+**Đáp số:** a) 8 440 093 · b) 233 444 · c) 9 049 893 · d) 5 231 156
 **Hướng giải:** Mỗi số hạng cho biết một hàng. Xếp các chữ số vào đúng hàng của nó, hàng nào khuyết thì viết chữ số 0.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Hàng khuyết trong tổng vẫn phải có chữ số **0** trong số viết ra.
 **Lỗi thường gặp:** Bỏ qua hàng khuyết nên số viết ra bị ngắn đi một chữ số. Phòng: Kẻ sẵn các ô hàng rồi mới điền chữ số vào ô tương ứng.
 
 ### Bài A.5
-**Đáp số:** a) 124 cm · b) 1 122 cm² · c) 120 cm · d) 225 cm² · e) 16 cm²
+**Đáp số:** a) 816 cm² · b) 72 cm · c) 184 cm · d) 3 136 cm²
 **Hướng giải:** Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích hình chữ nhật = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi ghi đơn vị **cm**, diện tích ghi đơn vị **cm²** — sai đơn vị là mất điểm.
 **Lỗi thường gặp:** Nhầm công thức chu vi với diện tích; quên nhân 2 ở chu vi. Phòng: Vẽ hình và ghi số đo lên hình trước khi tính.
@@ -372,7 +369,7 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Lỗi thường gặp:** Viết thẳng phép tính, bỏ câu lời giải. Phòng: Đọc lại bài đã làm, đếm xem có đủ bốn dòng chưa.
 
 ### Bài B.2
-**Đáp số:** a) “Nhận biết và phân loại góc là:” · b) “Đếm hình bằng quy tắc chọn hai điểm là:” · c) “Tỉ số diện tích tam giác là:” · d) “Tìm kích thước từ chu vi, diện tích là:” · e) “Đếm hình trong lưới là:”
+**Đáp số:** a) “Cắt ghép hình, tỉ số diện tích là:” · b) “Phương pháp diện tích là:” · c) “Hình chữ nhật tổng hợp là:” · d) “Nhận biết và phân loại góc là:” · e) “Tìm kích thước từ chu vi, diện tích là:”
 **Hướng giải:** Câu lời giải chỉ cần nhắc lại đại lượng đang tìm, không cần dài dòng.
 **Nhãn tư duy:** TD1. Điểm chốt: Câu lời giải phải **nêu đúng đại lượng** đang tìm.
 **Lỗi thường gặp:** Viết câu lời giải chung chung cho mọi bài. Phòng: Lấy đúng cụm từ trong câu hỏi của đề làm câu lời giải.
@@ -384,7 +381,7 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Lỗi thường gặp:** Ghi diện tích bằng cm thay vì cm². Phòng: Trước khi viết đáp số, hỏi: đại lượng này đo bằng gì?
 
 ### Bài B.4
-**Đáp số:** a) Áp ê ke vào góc trước khi gọi tên. · b) Đánh dấu tên các điểm rồi liệt kê từng cặp một cách có thứ tự. · c) Đọc lại: hai tam giác có chung đỉnh nào, chung chiều cao xuống cạnh nào? · d) Viết dòng “Nửa chu vi = …” trước khi trừ. · e) Kẻ bảng theo cỡ hình: cỡ 1×1, 1×2, 2×2… rồi cộng. · f) Tô đậm đường bao của hình mới rồi mới tính chu vi.
+**Đáp số:** a) Tô đậm đường bao của hình mới rồi mới tính chu vi. · b) Chỉ vào đỉnh chung và vào đường thẳng chứa hai đáy trước khi lập tỉ số. · c) Vẽ hình cũ nằm trong hình mới rồi tô phần dôi ra. · d) Áp ê ke vào góc trước khi gọi tên. · e) Viết dòng “Nửa chu vi = …” trước khi trừ. · f) Trừ hai đầu mỗi cạnh khi đếm khối sơn 2 mặt.
 **Hướng giải:** Mỗi lỗi đều có một cách phòng cụ thể, làm được ngay trong lúc làm bài. Chép cả cặp lỗi – cách phòng vào sổ lỗi.
 **Nhãn tư duy:** TD2. Điểm chốt: Sổ lỗi chỉ có ích khi ghi **cả cách phòng**, không chỉ ghi lỗi.
 **Lỗi thường gặp:** Ghi lỗi vào sổ nhưng không ghi cách phòng nên lần sau vẫn sai. Phòng: Mỗi dòng sổ lỗi bắt buộc có hai cột: lỗi và cách phòng.
@@ -402,28 +399,28 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Lỗi thường gặp:** Dò lại phép tính nhưng không đọc lại câu hỏi. Phòng: Sau mỗi bài, đọc to lại câu hỏi rồi đối chiếu với đáp số.
 
 ### Bài C.2
+**Đáp số:** a) tầng 2 · b) Tô đậm đường bao của hình mới rồi mới tính chu vi. · c) toàn bộ số điểm của ý sai · d) Tô đậm đường bao của hình mới rồi mới tính chu vi. · e) Ghép hình: **diện tích cộng, chu vi không cộng**.
+**Hướng giải:** Diện tích cộng được khi ghép hình, **chu vi thì không**. Tam giác có đáy bằng nửa một cạnh và chiều cao bằng cạnh kia thì diện tích bằng một phần tư hình chữ nhật.
+**Nhãn tư duy:** TD6, TD3. Điểm chốt: Ghép hình: **diện tích cộng, chu vi không cộng**.
+**Lỗi thường gặp:** Cộng chu vi hai hình nhỏ lại thành chu vi hình ghép. Phòng: Tô đậm đường bao của hình mới rồi mới tính chu vi.
+
+### Bài C.3
 **Đáp số:** a) tầng 2 · b) Áp ê ke vào góc trước khi gọi tên. · c) toàn bộ số điểm của ý sai · d) Áp ê ke vào góc trước khi gọi tên. · e) Hai mốc **90°** và **180°** chia hết các loại góc.
 **Hướng giải:** Chỉ cần hai mốc: 90° và 180°. Bé hơn 90° là nhọn, đúng 90° là vuông, giữa 90° và 180° là tù, đúng 180° là bẹt.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Hai mốc **90°** và **180°** chia hết các loại góc.
 **Lỗi thường gặp:** Gọi góc 90° là góc nhọn vì thấy “nhỏ”. Phòng: Áp ê ke vào góc trước khi gọi tên.
 
-### Bài C.3
-**Đáp số:** a) tầng 3 · b) Viết dòng “Nửa chu vi = …” trước khi trừ. · c) toàn bộ số điểm của ý sai · d) Viết dòng “Nửa chu vi = …” trước khi trừ. · e) Chia chu vi cho **2** ra nửa chu vi — bước trung gian không được bỏ.
-**Hướng giải:** Từ chu vi hình chữ nhật, chia đôi được nửa chu vi (chính là dài + rộng), rồi trừ đi chiều đã biết. Từ diện tích, chia cho một chiều được chiều kia. Từ chu vi hình vuông, chia 4 được cạnh.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Chia chu vi cho **2** ra nửa chu vi — bước trung gian không được bỏ.
-**Lỗi thường gặp:** Trừ thẳng chiều dài khỏi chu vi mà chưa chia đôi. Phòng: Viết dòng “Nửa chu vi = …” trước khi trừ.
-
 ### Bài C.4
-**Đáp số:** a) tầng 2 · b) Thử với hình 1 × 1 và 2 × 2 để thấy diện tích gấp 4 lần. · c) toàn bộ số điểm của ý sai · d) Thử với hình 1 × 1 và 2 × 2 để thấy diện tích gấp 4 lần. · e) Diện tích gấp **k × k** lần, chu vi chỉ gấp **k** lần.
-**Hướng giải:** Diện tích là **tích** hai chiều nên gấp cả hai chiều lên k lần thì diện tích gấp k × k lần. Chu vi là **tổng** nên chỉ gấp k lần. Khi một chiều tăng và chiều kia giảm cùng một lượng, phải tính ra mới biết diện tích tăng hay giảm.
-**Nhãn tư duy:** TD6, TD3. Điểm chốt: Diện tích gấp **k × k** lần, chu vi chỉ gấp **k** lần.
-**Lỗi thường gặp:** Cho rằng gấp đôi hai chiều thì diện tích cũng chỉ gấp đôi. Phòng: Thử với hình 1 × 1 và 2 × 2 để thấy diện tích gấp 4 lần.
+**Đáp số:** a) tầng 2 · b) Vẽ hình chữ nhật cũ nằm trong hình mới, tô phần dôi ra. · c) toàn bộ số điểm của ý sai · d) Vẽ hình chữ nhật cũ nằm trong hình mới, tô phần dôi ra. · e) Tăng cả hai chiều thì phần tăng gồm **ba mảnh**, không phải một.
+**Hướng giải:** Tăng một chiều thêm k đơn vị thì diện tích tăng thêm đúng một hình chữ nhật có kích thước k × chiều còn lại. Tăng cả hai chiều thì phần tăng gồm ba mảnh: hai dải và một hình vuông ở góc — nên **không** bằng tích của hai phần tăng.
+**Nhãn tư duy:** TD3, TD6. Điểm chốt: Tăng cả hai chiều thì phần tăng gồm **ba mảnh**, không phải một.
+**Lỗi thường gặp:** Nhân hai lượng tăng với nhau rồi coi đó là phần diện tích tăng thêm. Phòng: Vẽ hình chữ nhật cũ nằm trong hình mới, tô phần dôi ra.
 
 ### Bài C.5
-**Đáp số:** a) tầng 2 · b) Đếm đủ 6 mặt của hình hộp trước khi cộng. · c) toàn bộ số điểm của ý sai · d) Đếm đủ 6 mặt của hình hộp trước khi cộng. · e) Diện tích **xung quanh** không tính hai mặt đáy; **toàn phần** thì có.
-**Hướng giải:** Thể tích hình hộp chữ nhật = dài × rộng × cao. Diện tích xung quanh = chu vi đáy × chiều cao. Diện tích toàn phần = diện tích xung quanh + 2 lần diện tích đáy. Hình lập phương là hình hộp có ba kích thước bằng nhau.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Diện tích **xung quanh** không tính hai mặt đáy; **toàn phần** thì có.
-**Lỗi thường gặp:** Cộng thiếu một mặt đáy khi tính diện tích toàn phần. Phòng: Đếm đủ 6 mặt của hình hộp trước khi cộng.
+**Đáp số:** a) tầng 2 · b) Vẽ lại hình, ghi số đo lên hình trước khi tính. · c) toàn bộ số điểm của ý sai · d) Vẽ lại hình, ghi số đo lên hình trước khi tính. · e) Đọc quan hệ hình học để suy ra kích thước: hình tròn nội tiếp hình vuông thì **đường kính bằng cạnh hình vuông**.
+**Hướng giải:** Diện tích phần tô màu = diện tích hình lớn − diện tích hình bị khoét. Bước quan trọng nhất là nhận ra hình lớn và hình bị khoét là những hình nào, và tìm đúng kích thước của chúng từ dữ kiện đề cho.
+**Nhãn tư duy:** TD3, TD6. Điểm chốt: Đọc quan hệ hình học để suy ra kích thước: hình tròn nội tiếp hình vuông thì **đường kính bằng cạnh hình vuông**.
+**Lỗi thường gặp:** Lấy bán kính hình tròn làm cạnh hình vuông. Phòng: Vẽ lại hình, ghi số đo lên hình trước khi tính.
 
 ### Bài D.1
 **Đáp số:** a) Hình học dạng đề Chuyên và mô phỏng đề thi · b) 5 · c) tên một dạng bài của chương · d) 3 nhánh con: dấu hiệu · phương pháp · lỗi hay mắc · e) so với bảng dạng bài ở phiếu Dạng bài & Đọc vị
@@ -433,31 +430,31 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài D.2
-**Đáp số:** a) Hình có nhiều đoạn kẻ từ cùng một đỉnh, hoặc nhiều điểm trên một đường · b) Quy về số cách chọn hai điểm · c) Chỉ đếm tam giác nhỏ, quên các tam giác ghép. · d) Quy tắc đếm, tổ hợp chập hai · e) Số cách chọn 2 trong k là k × (k − 1) : 2 — thuộc công thức này là xong.
+**Đáp số:** a) Hình bị chia thành nhiều phần, đề cho diện tích một phần và tỉ số hai đoạn trên cùng một cạnh · b) Lập tỉ số diện tích bằng tỉ số hai đáy của hai tam giác chung chiều cao · c) Đem so hai tam giác không chung đỉnh, hoặc hai đáy không cùng nằm trên một đường thẳng. · d) Diện tích tam giác; tỉ số; tam giác chung chiều cao · e) Không cần biết chiều cao là bao nhiêu — nó tự triệt tiêu trong tỉ số.
 **Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Mọi bài đếm ở đây quy về **chọn hai điểm** trong một dãy điểm.
-**Lỗi thường gặp:** Chỉ đếm tam giác nhỏ, quên các tam giác ghép. Phòng: Đánh dấu tên các điểm rồi liệt kê từng cặp một cách có thứ tự.
+**Nhãn tư duy:** TD4, TD6. Điểm chốt: Điều kiện bắt buộc là **chung chiều cao**. Thiếu điều kiện ấy thì tỉ số diện tích không còn bằng tỉ số đáy.
+**Lỗi thường gặp:** Đem so hai tam giác không chung đỉnh, hoặc hai đáy không cùng nằm trên một đường thẳng. Phòng: Chỉ vào đỉnh chung và vào đường thẳng chứa hai đáy trước khi lập tỉ số.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài D.3
-**Đáp số:** a) Cho chu vi hoặc diện tích và một kích thước · b) Đi ngược công thức, qua bước nửa chu vi · c) Trừ thẳng chiều dài khỏi chu vi mà chưa chia đôi. · d) Công thức chu vi, diện tích; phép tính ngược · e) Nửa chu vi = chu vi : 2 — luôn tính bước này đầu tiên.
+**Đáp số:** a) Đề cho số đo góc hoặc hỏi về cạnh của hình · b) So số đo với hai mốc 90° và 180° · c) Gọi góc 90° là góc nhọn vì thấy “nhỏ”. · d) Số đo góc; hai đường thẳng vuông góc, song song · e) Ê ke chính là một góc vuông cầm tay — áp vào là biết ngay.
 **Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Chia chu vi cho **2** ra nửa chu vi — bước trung gian không được bỏ.
-**Lỗi thường gặp:** Trừ thẳng chiều dài khỏi chu vi mà chưa chia đôi. Phòng: Viết dòng “Nửa chu vi = …” trước khi trừ.
+**Nhãn tư duy:** TD1, TD2. Điểm chốt: Hai mốc **90°** và **180°** chia hết các loại góc.
+**Lỗi thường gặp:** Gọi góc 90° là góc nhọn vì thấy “nhỏ”. Phòng: Áp ê ke vào góc trước khi gọi tên.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài D.4
-**Đáp số:** a) “Cắt thành … phần”, “nối trung điểm”, “ghép hai hình” · b) Vẽ hình, xác định đáy và chiều cao, so tỉ số · c) Cộng chu vi hai hình nhỏ lại thành chu vi hình ghép. · d) Diện tích hình chữ nhật, tam giác; đường bao · e) Tam giác nối một đỉnh với trung điểm cạnh đối diện luôn bằng một phần tư.
+**Đáp số:** a) “Ghép từ … khối nhỏ”, “sơn mặt ngoài” · b) Phân loại theo vị trí rồi đếm từng loại · c) Đếm cả khối ở đỉnh vào nhóm khối ở cạnh, thành ra đếm trùng. · d) Cấu tạo hình lập phương: 8 đỉnh, 12 cạnh, 6 mặt · e) Số khối không sơn luôn là (n − 2) nhân ba lần chính nó.
 **Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
-**Nhãn tư duy:** TD6, TD3. Điểm chốt: Ghép hình: **diện tích cộng, chu vi không cộng**.
-**Lỗi thường gặp:** Cộng chu vi hai hình nhỏ lại thành chu vi hình ghép. Phòng: Tô đậm đường bao của hình mới rồi mới tính chu vi.
+**Nhãn tư duy:** TD6, TD4. Điểm chốt: Phân loại theo vị trí, và **cộng bốn loại lại để thử**.
+**Lỗi thường gặp:** Đếm cả khối ở đỉnh vào nhóm khối ở cạnh, thành ra đếm trùng. Phòng: Trừ hai đầu mỗi cạnh khi đếm khối sơn 2 mặt.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài D.5
-**Đáp số:** a) “Tăng chiều dài thêm …”, “gấp đôi chiều …” · b) Vẽ hình chồng, tách phần dôi ra thành các mảnh chữ nhật · c) Nhân hai lượng tăng với nhau rồi coi đó là phần diện tích tăng thêm. · d) Diện tích hình chữ nhật, phân tích hình · e) Gấp đôi một chiều thì diện tích gấp đôi; gấp đôi cả hai chiều thì gấp bốn.
+**Đáp số:** a) Đề cho ba kích thước hoặc cạnh hình lập phương · b) Xác định loại diện tích cần tính, đếm đủ số mặt · c) Cộng thiếu một mặt đáy khi tính diện tích toàn phần. · d) Công thức thể tích, diện tích xung quanh, toàn phần · e) Hình lập phương cạnh a: toàn phần 6 × a × a, thể tích a × a × a.
 **Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
-**Nhãn tư duy:** TD3, TD6. Điểm chốt: Tăng cả hai chiều thì phần tăng gồm **ba mảnh**, không phải một.
-**Lỗi thường gặp:** Nhân hai lượng tăng với nhau rồi coi đó là phần diện tích tăng thêm. Phòng: Vẽ hình chữ nhật cũ nằm trong hình mới, tô phần dôi ra.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Diện tích **xung quanh** không tính hai mặt đáy; **toàn phần** thì có.
+**Lỗi thường gặp:** Cộng thiếu một mặt đáy khi tính diện tích toàn phần. Phòng: Đếm đủ 6 mặt của hình hộp trước khi cộng.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.1
@@ -468,31 +465,31 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.2
-**Đáp số:** a) “Hôm nay nhóm mình nói về Nhận biết và phân loại góc.” · b) Đề cho số đo góc hoặc hỏi về cạnh của hình · c) Số đo góc; hai đường thẳng vuông góc, song song · d) Góc 120° là góc gì? → góc tù · e) Gọi góc 90° là góc nhọn vì thấy “nhỏ”. · f) Ê ke chính là một góc vuông cầm tay — áp vào là biết ngay.
-**Hướng giải:** Chỉ cần hai mốc: 90° và 180°. Bé hơn 90° là nhọn, đúng 90° là vuông, giữa 90° và 180° là tù, đúng 180° là bẹt.
-**Nhãn tư duy:** TD1, TD2. Điểm chốt: Hai mốc **90°** và **180°** chia hết các loại góc.
-**Lỗi thường gặp:** Gọi góc 90° là góc nhọn vì thấy “nhỏ”. Phòng: Áp ê ke vào góc trước khi gọi tên.
+**Đáp số:** a) “Hôm nay nhóm mình nói về Cắt ghép hình, tỉ số diện tích.” · b) “Cắt thành … phần”, “nối trung điểm”, “ghép hai hình” · c) Diện tích hình chữ nhật, tam giác; đường bao · d) Hình chữ nhật 8 cm × 6 cm, nối một đỉnh với trung điểm cạnh đối diện. Diện tích tam giác bằng bao nhiêu? → 12 cm² · e) Cộng chu vi hai hình nhỏ lại thành chu vi hình ghép. · f) Tam giác nối một đỉnh với trung điểm cạnh đối diện luôn bằng một phần tư.
+**Hướng giải:** Diện tích cộng được khi ghép hình, **chu vi thì không**. Tam giác có đáy bằng nửa một cạnh và chiều cao bằng cạnh kia thì diện tích bằng một phần tư hình chữ nhật.
+**Nhãn tư duy:** TD6, TD3. Điểm chốt: Ghép hình: **diện tích cộng, chu vi không cộng**.
+**Lỗi thường gặp:** Cộng chu vi hai hình nhỏ lại thành chu vi hình ghép. Phòng: Tô đậm đường bao của hình mới rồi mới tính chu vi.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.3
-**Đáp số:** a) “Hôm nay nhóm mình nói về Tỉ số diện tích tam giác.” · b) Hai tam giác chung đỉnh, đáy nằm trên cùng một đường thẳng · c) Diện tích tam giác, tỉ lệ thuận · d) Tam giác ABC diện tích 30 cm², M trên BC với BM = MC. Diện tích ABM bằng bao nhiêu? → 15 cm² · e) Đi tìm chiều cao cụ thể trong khi đề không cho. · f) Tỉ số diện tích bằng tỉ số đáy — chia tổng theo tỉ số như bài tổng – tỉ.
-**Hướng giải:** Hai tam giác ABM và ACM có **chung chiều cao** hạ từ A xuống BC. Diện tích của chúng tỉ lệ thuận với hai đáy BM và MC. Vì vậy diện tích tam giác ABM bằng diện tích tam giác ABC nhân với tỉ số BM trên BC.
-**Nhãn tư duy:** TD6, TD3. Điểm chốt: Chung chiều cao thì diện tích **tỉ lệ với đáy** — không cần biết chiều cao là bao nhiêu.
-**Lỗi thường gặp:** Đi tìm chiều cao cụ thể trong khi đề không cho. Phòng: Đọc lại: hai tam giác có chung đỉnh nào, chung chiều cao xuống cạnh nào?
+**Đáp số:** a) “Hôm nay nhóm mình nói về Hình chữ nhật tổng hợp.” · b) Một hình nhưng nhiều câu hỏi nối tiếp · c) Chu vi, diện tích hình chữ nhật; s = v × t · d) Hình chữ nhật 10 m × 5 m, tăng chiều dài 3 m. Diện tích tăng bao nhiêu? → 15 m² · e) Nhân hai lượng tăng với nhau rồi coi đó là diện tích tăng thêm. · f) Chu vi tăng đúng 2 lần phần tăng, dù tăng chiều nào.
+**Hướng giải:** Đi một vòng quanh hình là đi hết **chu vi**. Tăng một chiều thì phần diện tích dôi ra là một hình chữ nhật có kích thước bằng phần tăng nhân chiều còn lại. Tăng cả hai chiều thì phần dôi gồm **ba mảnh**.
+**Nhãn tư duy:** TD3, TD6. Điểm chốt: Tăng cả hai chiều thì phần dôi ra **không phải** tích của hai phần tăng.
+**Lỗi thường gặp:** Nhân hai lượng tăng với nhau rồi coi đó là diện tích tăng thêm. Phòng: Vẽ hình cũ nằm trong hình mới rồi tô phần dôi ra.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.4
-**Đáp số:** a) “Hôm nay nhóm mình nói về Đếm hình trong lưới.” · b) Hình vẽ là lưới ô vuông đều · c) Quy tắc đếm, tổ hợp đơn giản · d) Lưới 2 hàng 2 cột có bao nhiêu hình vuông? → 5 · e) Chỉ đếm các ô vuông nhỏ, quên các hình ghép từ nhiều ô. · f) Số cách chọn 2 trong k đường kẻ là k × (k − 1) : 2.
-**Hướng giải:** Một hình chữ nhật trong lưới được xác định bởi hai đường kẻ ngang và hai đường kẻ dọc. Lưới m hàng có m + 1 đường ngang, n cột có n + 1 đường dọc, nên số hình chữ nhật bằng số cách chọn hai đường ngang nhân số cách chọn hai đường dọc. Đếm hình vuông thì đếm theo từng cỡ cạnh.
-**Nhãn tư duy:** TD3, TD4. Điểm chốt: Đếm **theo cỡ** hoặc **theo đường kẻ**, tuyệt đối không đếm ngẫu nhiên.
-**Lỗi thường gặp:** Chỉ đếm các ô vuông nhỏ, quên các hình ghép từ nhiều ô. Phòng: Kẻ bảng theo cỡ hình: cỡ 1×1, 1×2, 2×2… rồi cộng.
+**Đáp số:** a) “Hôm nay nhóm mình nói về Tìm kích thước từ chu vi, diện tích.” · b) Cho chu vi hoặc diện tích và một kích thước · c) Công thức chu vi, diện tích; phép tính ngược · d) Hình chữ nhật chu vi 30 cm, dài 10 cm. Chiều rộng bằng bao nhiêu? → 5 cm · e) Trừ thẳng chiều dài khỏi chu vi mà chưa chia đôi. · f) Nửa chu vi = chu vi : 2 — luôn tính bước này đầu tiên.
+**Hướng giải:** Từ chu vi hình chữ nhật, chia đôi được nửa chu vi (chính là dài + rộng), rồi trừ đi chiều đã biết. Từ diện tích, chia cho một chiều được chiều kia. Từ chu vi hình vuông, chia 4 được cạnh.
+**Nhãn tư duy:** TD3, TD2. Điểm chốt: Chia chu vi cho **2** ra nửa chu vi — bước trung gian không được bỏ.
+**Lỗi thường gặp:** Trừ thẳng chiều dài khỏi chu vi mà chưa chia đôi. Phòng: Viết dòng “Nửa chu vi = …” trước khi trừ.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.5
-**Đáp số:** a) “Hôm nay nhóm mình nói về Biến thiên diện tích và chu vi theo tỉ lệ.” · b) “Gấp … lần”, “tăng … cm rồi giảm … cm” · c) Diện tích, chu vi hình chữ nhật; tỉ lệ · d) Gấp đôi cả hai chiều thì diện tích gấp mấy lần? → 4 lần · e) Cho rằng gấp đôi hai chiều thì diện tích cũng chỉ gấp đôi. · f) Tăng một chiều và giảm chiều kia cùng một lượng thì diện tích luôn **giảm**, trừ khi hai chiều ban đầu chênh nhau đúng lượng ấy.
-**Hướng giải:** Diện tích là **tích** hai chiều nên gấp cả hai chiều lên k lần thì diện tích gấp k × k lần. Chu vi là **tổng** nên chỉ gấp k lần. Khi một chiều tăng và chiều kia giảm cùng một lượng, phải tính ra mới biết diện tích tăng hay giảm.
-**Nhãn tư duy:** TD6, TD3. Điểm chốt: Diện tích gấp **k × k** lần, chu vi chỉ gấp **k** lần.
-**Lỗi thường gặp:** Cho rằng gấp đôi hai chiều thì diện tích cũng chỉ gấp đôi. Phòng: Thử với hình 1 × 1 và 2 × 2 để thấy diện tích gấp 4 lần.
+**Đáp số:** a) “Hôm nay nhóm mình nói về Biến thiên diện tích theo kích thước.” · b) “Tăng chiều dài thêm …”, “gấp đôi chiều …” · c) Diện tích hình chữ nhật, phân tích hình · d) Hình chữ nhật 10 cm × 5 cm, tăng chiều dài thêm 3 cm. Diện tích tăng bao nhiêu? → 15 cm² · e) Nhân hai lượng tăng với nhau rồi coi đó là phần diện tích tăng thêm. · f) Gấp đôi một chiều thì diện tích gấp đôi; gấp đôi cả hai chiều thì gấp bốn.
+**Hướng giải:** Tăng một chiều thêm k đơn vị thì diện tích tăng thêm đúng một hình chữ nhật có kích thước k × chiều còn lại. Tăng cả hai chiều thì phần tăng gồm ba mảnh: hai dải và một hình vuông ở góc — nên **không** bằng tích của hai phần tăng.
+**Nhãn tư duy:** TD3, TD6. Điểm chốt: Tăng cả hai chiều thì phần tăng gồm **ba mảnh**, không phải một.
+**Lỗi thường gặp:** Nhân hai lượng tăng với nhau rồi coi đó là phần diện tích tăng thêm. Phòng: Vẽ hình chữ nhật cũ nằm trong hình mới, tô phần dôi ra.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ---

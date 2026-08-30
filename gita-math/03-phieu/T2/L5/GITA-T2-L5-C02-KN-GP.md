@@ -30,18 +30,18 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần A**
 
-- **Bài A.1** — a) 2 phần 3 · b) 2 phần 5 · c) 4 phần 11 · d) 3 phần 2 · e) 9 phần 5 · f) 7 phần 9
-- **Bài A.2** — a) 2 cặp song song, 4 cặp vuông góc · b) bé hơn · c) góc nhọn · d) góc tù · e) 2 cặp song song, 4 cặp vuông góc · f) bé hơn
-- **Bài A.3** — a) > · b) > · c) > · d) < · e) < · f) < · g) >
-- **Bài A.4** — a) 18 cách · b) 20 cách · c) 28 cách · d) 8 cách · e) 56 cách · f) 32 cách · g) 40 cách
-- **Bài A.5** — a) > · b) 6 · c) 0,9 · d) 4 · e) 0,42 · f) > · g) 0,02 · h) 7
+- **Bài A.1** — a) > · b) 0,2 · c) 0 · d) 4 · e) 0,5
+- **Bài A.2** — a) < · b) > · c) < · d) < · e) <
+- **Bài A.3** — a) 427 · b) 727 · c) 802 · d) 827 · e) 927
+- **Bài A.4** — a) 7 645 737 và 7 645 739 · b) 7 592 000 · c) 2 000 000 · d) > · e) > · f) 1 758 140 và 1 758 142 · g) 1 000
+- **Bài A.5** — a) 9 phần 8 · b) 2 phần 3 · c) 2 · d) 3 phần 11 · e) 5 phần 3
 
 **Phần B**
 
 - **Bài B.1** — a) câu lời giải nêu rõ đang tìm đại lượng nào · b) phép tính, viết đủ dấu và đủ đơn vị · c) kết quả kèm đơn vị · d) câu đáp số · e) một phần tư số điểm của bài
-- **Bài B.2** — a) “Rút gọn phân số là:” · b) “Số thập phân — hàng, so sánh, chuyển đổi là:” · c) “Đọc bảng số liệu thống kê là:” · d) “Bốn phép tính với phân số là:” · e) “Nồng độ phần trăm của dung dịch là:”
+- **Bài B.2** — a) “Rút gọn phân số là:” · b) “Số thập phân — hàng, so sánh, chuyển đổi là:” · c) “Phần trăm thay đổi nhiều lần là:” · d) “Bốn phép tính với phân số là:” · e) “Bốn phép tính với số thập phân là:”
 - **Bài B.3** — a) không ghi trong dấu ngoặc phép tính · b) có, bắt buộc · c) có, bắt buộc · d) đơn vị vuông, ví dụ cm² · e) đơn vị khối, ví dụ cm³ · f) km/giờ hoặc m/phút
-- **Bài B.4** — a) Viết phép chia cho cả hai dòng, kiểm tra lại bằng cách nhân ngược. · b) Viết thêm chữ số 0 vào cuối để hai số có cùng số chữ số thập phân rồi mới so. · c) Đánh dấu từng số đã cộng để không sót và không cộng lặp. · d) Trước khi tính, khoanh dấu phép tính và tự nhắc “có phải quy đồng không”. · e) Kẻ bảng hai dòng: lượng muối và khối lượng dung dịch, cập nhật sau mỗi thao tác. · f) Gạch chân: cái gì là “toàn bộ” (ứng với 100%), cái gì là “một phần”.
+- **Bài B.4** — a) Viết phép chia cho cả hai dòng, kiểm tra lại bằng cách nhân ngược. · b) Viết thêm chữ số 0 vào cuối để hai số có cùng số chữ số thập phân rồi mới so. · c) Viết ba dòng: giá ban đầu, giá sau lần 1, giá sau lần 2. · d) Trước khi tính, khoanh dấu phép tính và tự nhắc “có phải quy đồng không”. · e) Đếm số chữ số sau dấu phẩy ngay khi viết đề bài. · f) Gạch chân: cái gì là “toàn bộ” (ứng với 100%), cái gì là “một phần”.
 - **Bài B.5** — a) 1 phần trong 4 · b) 2 phần trong 4 · c) 1 phần trong 4 · d) 3 phần trong 4 · e) 1 đến 2 phần trong 4
 
 **Phần C**
@@ -49,8 +49,8 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài C.1** — a) đơn vị đo — mọi số có cùng đơn vị chưa · b) phép tính — cộng trừ nhân chia có đúng thứ tự chưa · c) đề hỏi gì — mình đã trả lời đúng câu hỏi chưa · d) tầng 3 — trả lời lệch câu hỏi · e) khoảng 30 giây
 - **Bài C.2** — a) tầng 2 · b) Viết phép chia cho cả hai dòng, kiểm tra lại bằng cách nhân ngược. · c) toàn bộ số điểm của ý sai · d) Viết phép chia cho cả hai dòng, kiểm tra lại bằng cách nhân ngược. · e) Phải chia **cả tử và mẫu** cho cùng một số.
 - **Bài C.3** — a) tầng 2 · b) Trước khi tính, khoanh dấu phép tính và tự nhắc “có phải quy đồng không”. · c) toàn bộ số điểm của ý sai · d) Trước khi tính, khoanh dấu phép tính và tự nhắc “có phải quy đồng không”. · e) Cộng trừ **cần** quy đồng, nhân chia **không cần** quy đồng.
-- **Bài C.4** — a) tầng 2 · b) Ghi cả phân số gốc và phân số tối giản cạnh nhau để đối chiếu. · c) toàn bộ số điểm của ý sai · d) Ghi cả phân số gốc và phân số tối giản cạnh nhau để đối chiếu. · e) Cùng mẫu số thì **chỉ cần so tử số**.
-- **Bài C.5** — a) tầng 2 · b) Viết trước mỗi phép tính: “100% ở đây là …”. · c) toàn bộ số điểm của ý sai · d) Viết trước mỗi phép tính: “100% ở đây là …”. · e) Cùng một con số phần trăm nhưng **mốc khác nhau** thì kết quả khác nhau.
+- **Bài C.4** — a) tầng 2 · b) Viết trước mỗi phép tính: “100% ở đây là …”. · c) toàn bộ số điểm của ý sai · d) Viết trước mỗi phép tính: “100% ở đây là …”. · e) Cùng một con số phần trăm nhưng **mốc khác nhau** thì kết quả khác nhau.
+- **Bài C.5** — a) tầng 2 · b) Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút. · c) toàn bộ số điểm của ý sai · d) Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút. · e) Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều.
 
 **Phần D**
 
@@ -64,9 +64,9 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài E.1** — a) giới thiệu chương “So sánh phân số, số thập phân và bài toán phần trăm ẩn” và mục tiêu · b) trình bày sơ đồ tư duy chương · c) giảng một dạng bài kèm ví dụ mẫu · d) nêu lỗi hay mắc và cách phòng · e) ra một bài cho lớp làm và chữa nhanh · f) tự phân công, mỗi bạn ít nhất một phút
 - **Bài E.2** — a) “Hôm nay nhóm mình nói về Rút gọn phân số.” · b) Tử số và mẫu số có ước chung lớn hơn 1 · c) Tính chất cơ bản của phân số · d) Rút gọn 18 phần 24. → 3 phần 4 · e) Chỉ chia tử số hoặc chỉ chia mẫu số. · f) Tìm ngay ước chung lớn nhất để rút gọn một lần là xong.
-- **Bài E.3** — a) “Hôm nay nhóm mình nói về Đọc bảng số liệu thống kê.” · b) Đề cho bảng hoặc biểu đồ kèm nhiều câu hỏi · c) Thống kê mô tả sơ cấp, trung bình cộng, tỉ số phần trăm · d) Bảng: Toán 10, Văn 6, Anh 4. Trung bình mỗi môn bao nhiêu bạn? → 6,67 bạn · e) Đọc nhầm cột, hoặc quên một môn khi cộng tổng. · f) Tính tổng một lần rồi dùng lại cho mọi câu hỏi phần trăm.
-- **Bài E.4** — a) “Hôm nay nhóm mình nói về Nồng độ phần trăm của dung dịch.” · b) “Dung dịch … %”, “đổ thêm nước”, “bỏ thêm muối” · c) Tỉ số phần trăm; phân biệt chất tan và dung dịch · d) 200 g nước muối 10%, đổ thêm 200 g nước. Nồng độ mới bằng bao nhiêu? → 5% · e) Khi bỏ thêm muối thì chỉ cộng vào tử số mà quên cộng vào mẫu số. · f) Thêm nước thì nồng độ giảm, thêm muối thì nồng độ tăng — dùng để loại đáp số sai ngay.
-- **Bài E.5** — a) “Hôm nay nhóm mình nói về Rút gọn, so sánh, sắp thứ tự phân số.” · b) Một nhóm phân số cần sắp thứ tự · c) Tính chất cơ bản của phân số; so sánh phân số · d) Sắp xếp từ bé đến lớn: 3 phần 8, 5 phần 8, 1 phần 8 → 1 phần 8 < 3 phần 8 < 5 phần 8 · e) Rút gọn xong quên rằng thứ tự vẫn giữ nguyên, đi quy đồng lại từ đầu. · f) So với 1 và với một nửa trước — nhiều phân số phân loại được ngay.
+- **Bài E.3** — a) “Hôm nay nhóm mình nói về Phần trăm thay đổi nhiều lần.” · b) Hai lần tăng giảm liên tiếp · c) Tỉ số phần trăm, mốc quy chiếu · d) Giá 100 000 đồng tăng 10% rồi giảm 10%. Giá cuối là bao nhiêu? → 99 000 đồng · e) Cộng trừ hai số phần trăm rồi áp một lần vào giá ban đầu. · f) Tăng 20% rồi giảm 20% thì còn 96% giá ban đầu — luôn thấp hơn giá cũ.
+- **Bài E.4** — a) “Hôm nay nhóm mình nói về Bốn phép tính với số thập phân.” · b) Các số có dấu phẩy · c) Kĩ thuật tính với số thập phân · d) Tính: 3,25 × 4 → 13 · e) Nhân xong đặt dấu phẩy thẳng cột như phép cộng. · f) Ước lượng bằng cách làm tròn để kiểm tra vị trí dấu phẩy.
+- **Bài E.5** — a) “Hôm nay nhóm mình nói về Tỉ số phần trăm nhiều bước.” · b) Hai tỉ lệ phần trăm nối tiếp nhau trong cùng một bài · c) Ba dạng tỉ số phần trăm; mốc quy chiếu · d) Lớp 40 bạn, nam chiếm 50%, trong đó 20% giỏi. Mấy bạn nam giỏi? → 4 bạn · e) Lấy tỉ lệ nam giỏi nhân thẳng với sĩ số cả lớp. · f) Nhân hai tỉ lệ rồi chia 100 là ra tỉ lệ so với mốc gốc.
 
 ---
 
@@ -74,95 +74,13 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 Mỗi bài có hai phần: **các bước giải** với số liệu thật của chính bài ấy, và **cách nghĩ** áp dụng cho mọi bài cùng dạng. Đọc kĩ phần chữ đậm — đó là câu cần nhớ, không phải con số.
 
-### Bài A.1 — Rút gọn phân số
+### Bài A.1 — Số thập phân: hàng, so sánh, đổi từ phân số
+
+> **BẪY — Nhiều chữ số sau dấu phẩy không có nghĩa là lớn hơn.**
 
 **Các bước giải**
 
-Xét ý a: Rút gọn phân số 4 phần 6.
-
-Đọc vị: đây là dạng **Rút gọn phân số**; dấu hiệu là Tử số và mẫu số có ước chung lớn hơn 1.
-
-Kiến thức phải dùng: Tính chất cơ bản của phân số.
-
-Cách làm: Chia cả tử và mẫu cho ước chung.
-
-Lối tắt: Tìm ngay ước chung lớn nhất để rút gọn một lần là xong.
-
-Kết quả: **2 phần 3**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Chia cả tử số và mẫu số cho cùng một số tự nhiên lớn hơn 1. Rút gọn đến khi tử số và mẫu số không cùng chia hết cho số nào lớn hơn 1 nữa thì được phân số tối giản.
-
-*Điểm chốt:* Phải chia **cả tử và mẫu** cho cùng một số.
-
-### Bài A.2 — Góc nhọn, góc tù, góc bẹt; vuông góc và song song
-
-**Các bước giải**
-
-Góc vuông có số đo 90°, góc bẹt có số đo 180°.
-
-Góc bé hơn 90° là góc nhọn; góc lớn hơn 90° và bé hơn 180° là góc tù.
-
-So số đo của góc với 90° và 180° là phân loại được ngay.
-
-Đáp số ý a: xem số đo rồi đối chiếu hai mốc **90°** và **180°**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Chỉ cần hai mốc: 90° và 180°. Bé hơn 90° là nhọn, đúng 90° là vuông, giữa 90° và 180° là tù, đúng 180° là bẹt.
-
-*Điểm chốt:* Hai mốc **90°** và **180°** chia hết các loại góc.
-
-*Muốn khó hơn:* Cho hai góc kề bù, biết một góc tìm góc kia.
-
-*Phải chắc trước khi làm bài này:* Cách dùng ê ke và thước đo góc.
-
-### Bài A.3 — So sánh hai phân số
-
-> **BẪY — Cùng tử số thì mẫu bé hơn lại lớn hơn.**
-
-**Các bước giải**
-
-Xét ý a: 3 phần 4 … 1 phần 2
-
-Đọc vị: đây là dạng **So sánh phân số**; dấu hiệu là Hai phân số nối bởi dấu ….
-
-Kiến thức phải dùng: Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu.
-
-Cách làm: Xét cùng mẫu → cùng tử → quy đồng.
-
-Lối tắt: So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay.
-
-Kết quả: **>**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Cùng mẫu số: phân số nào có tử số lớn hơn thì lớn hơn. Cùng tử số: phân số nào có mẫu số **bé** hơn thì lớn hơn. Khác cả tử lẫn mẫu: quy đồng mẫu số rồi so tử số.
-
-*Điểm chốt:* Cùng tử số thì **mẫu bé hơn là phân số lớn hơn** — ngược với trực giác.
-
-### Bài A.4 — Quy tắc nhân trong phép đếm
-
-> **BẪY — Cộng hay nhân.**
-
-**Các bước giải**
-
-Xét ý a: Có 3 chiếc áo và 6 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
-
-Đọc vị: đây là dạng **Quy tắc nhân**; dấu hiệu là Chọn một phần tử từ mỗi nhóm để ghép thành một bộ.
-
-Kiến thức phải dùng: Quy tắc nhân, quy tắc cộng trong phép đếm.
-
-Cách làm: Nhân số cách của các bước liên tiếp.
-
-Lối tắt: Vẽ sơ đồ cây với hai ba nhánh đầu để thấy rõ phép nhân.
-
-Kết quả: **18 cách**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Nếu công việc gồm hai bước liên tiếp, bước một có a cách, bước hai có b cách, thì cả công việc có a × b cách. Đây là **quy tắc nhân**.
-
-*Điểm chốt:* Hai việc phải làm **cùng lúc, nối tiếp** thì nhân; chọn một trong hai khả năng rời nhau thì cộng.
-
-### Bài A.5 — Số thập phân: hàng, so sánh, đổi từ phân số
-
-**Các bước giải**
-
-Xét ý a: 328,558 … 326,903
+Xét ý a: 709,274 … 704,378
 
 Đọc vị: đây là dạng **Số thập phân — hàng, so sánh, chuyển đổi**; dấu hiệu là Số có dấu phẩy; phân số mẫu 10, 100, 1 000.
 
@@ -177,6 +95,92 @@ Kết quả: **>**.
 **Cách nghĩ chung cho mọi bài cùng dạng.** Sau dấu phẩy lần lượt là hàng phần mười, phần trăm, phần nghìn. So sánh số thập phân: so phần nguyên trước; phần nguyên bằng nhau thì so lần lượt hàng phần mười, phần trăm, phần nghìn. Phân số có mẫu là 10, 100, 1 000 đổi được thẳng sang số thập phân.
 
 *Điểm chốt:* So sánh theo **hàng**, không so theo số chữ số sau dấu phẩy.
+
+### Bài A.2 — So sánh hai phân số
+
+> **BẪY — Cùng tử số thì mẫu bé hơn lại lớn hơn.**
+
+**Các bước giải**
+
+Xét ý a: 5 phần 9 … 9 phần 11
+
+Đọc vị: đây là dạng **So sánh phân số**; dấu hiệu là Hai phân số nối bởi dấu ….
+
+Kiến thức phải dùng: Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu.
+
+Cách làm: Xét cùng mẫu → cùng tử → quy đồng.
+
+Lối tắt: So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay.
+
+Kết quả: **<**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Cùng mẫu số: phân số nào có tử số lớn hơn thì lớn hơn. Cùng tử số: phân số nào có mẫu số **bé** hơn thì lớn hơn. Khác cả tử lẫn mẫu: quy đồng mẫu số rồi so tử số.
+
+*Điểm chốt:* Cùng tử số thì **mẫu bé hơn là phân số lớn hơn** — ngược với trực giác.
+
+### Bài A.3 — Tìm số hạng thứ n của dãy cách đều
+
+**Các bước giải**
+
+Xét ý a: Số hạng thứ 18 của dãy là số nào?
+
+Đọc vị: đây là dạng **Tìm số hạng thứ n của dãy cách đều**; dấu hiệu là Đề hỏi “số hạng thứ …”.
+
+Kiến thức phải dùng: Công thức số hạng tổng quát của dãy cách đều.
+
+Cách làm: Đếm số khoảng rồi nhân với khoảng cách.
+
+Lối tắt: Thử công thức với n = 1 và n = 2 để chắc chắn không lệch một khoảng.
+
+Kết quả: **427**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Số hạng thứ n = số hạng đầu + (n − 1) × khoảng cách. Chữ **(n − 1)** vì từ số hạng đầu đến số hạng thứ n phải đi qua n − 1 khoảng.
+
+*Điểm chốt:* Nhân với **(n − 1)** chứ không phải n — đếm khoảng chứ không đếm số hạng.
+
+### Bài A.4 — Ôn tập số tự nhiên: đọc, viết, so sánh, làm tròn
+
+**Các bước giải**
+
+Xét ý a: Số liền trước và số liền sau của 7 645 738 là những số nào?
+
+Đọc vị: đây là dạng **Ôn tập số tự nhiên**; dấu hiệu là Câu hỏi ngắn về so sánh, hàng, số liền kề, làm tròn.
+
+Kiến thức phải dùng: Thứ tự số tự nhiên, giá trị hàng, quy tắc làm tròn.
+
+Cách làm: Đếm chữ số, xét hàng từ trái sang phải.
+
+Lối tắt: Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số.
+
+Kết quả: **7 645 737 và 7 645 739**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** So sánh: số nhiều chữ số hơn thì lớn hơn; bằng số chữ số thì so từng hàng từ trái sang phải. Làm tròn: nhìn chữ số ở hàng **liền sau** hàng cần làm tròn.
+
+*Điểm chốt:* So sánh đi từ **trái sang phải**, làm tròn nhìn **một chữ số liền sau**.
+
+*Muốn khó hơn:* Trộn thêm phân số và số thập phân vào cùng một dãy để sắp thứ tự.
+
+*Phải chắc trước khi làm bài này:* Bảng hàng và lớp của số tự nhiên.
+
+### Bài A.5 — Rút gọn phân số
+
+**Các bước giải**
+
+Xét ý a: Rút gọn phân số 81 phần 72.
+
+Đọc vị: đây là dạng **Rút gọn phân số**; dấu hiệu là Tử số và mẫu số có ước chung lớn hơn 1.
+
+Kiến thức phải dùng: Tính chất cơ bản của phân số.
+
+Cách làm: Chia cả tử và mẫu cho ước chung.
+
+Lối tắt: Tìm ngay ước chung lớn nhất để rút gọn một lần là xong.
+
+Kết quả: **9 phần 8**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Chia cả tử số và mẫu số cho cùng một số tự nhiên lớn hơn 1. Rút gọn đến khi tử số và mẫu số không cùng chia hết cho số nào lớn hơn 1 nữa thì được phân số tối giản.
+
+*Điểm chốt:* Phải chia **cả tử và mẫu** cho cùng một số.
 
 ### Bài B.1 — Bốn dòng bắt buộc của một lời giải
 
@@ -344,26 +348,6 @@ Kết quả: **tầng 2**.
 
 Xét ý a: Lỗi này bị bắt ở tầng dò soát nào?
 
-Đọc vị: đây là dạng **Rút gọn, so sánh, sắp thứ tự phân số**; dấu hiệu là Một nhóm phân số cần sắp thứ tự.
-
-Kiến thức phải dùng: Tính chất cơ bản của phân số; so sánh phân số.
-
-Cách làm: Rút gọn → so cùng mẫu hoặc quy đồng.
-
-Lối tắt: So với 1 và với một nửa trước — nhiều phân số phân loại được ngay.
-
-Kết quả: **tầng 2**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Cùng mẫu số thì so tử số. Khác mẫu thì quy đồng hoặc so với 1 và với một nửa. Rút gọn về tối giản trước khi trình bày kết quả.
-
-*Điểm chốt:* Cùng mẫu số thì **chỉ cần so tử số**.
-
-### Bài C.5 — Dò soát tình huống 4
-
-**Các bước giải**
-
-Xét ý a: Lỗi này bị bắt ở tầng dò soát nào?
-
 Đọc vị: đây là dạng **Tỉ số phần trăm nhiều bước**; dấu hiệu là Hai tỉ lệ phần trăm nối tiếp nhau trong cùng một bài.
 
 Kiến thức phải dùng: Ba dạng tỉ số phần trăm; mốc quy chiếu.
@@ -377,6 +361,26 @@ Kết quả: **tầng 2**.
 **Cách nghĩ chung cho mọi bài cùng dạng.** Mỗi lần gặp một tỉ lệ phần trăm mới, phải hỏi: phần trăm này tính **trên cái gì**. Trong bài này, tỉ lệ nam giỏi tính trên số nam, không phải trên sĩ số cả lớp.
 
 *Điểm chốt:* Cùng một con số phần trăm nhưng **mốc khác nhau** thì kết quả khác nhau.
+
+### Bài C.5 — Dò soát tình huống 4
+
+**Các bước giải**
+
+Xét ý a: Lỗi này bị bắt ở tầng dò soát nào?
+
+Đọc vị: đây là dạng **Biểu thức phân số nhiều phép tính**; dấu hiệu là Biểu thức gồm nhiều phân số và nhiều phép tính.
+
+Kiến thức phải dùng: Thứ tự thực hiện phép tính, tính chất phân phối.
+
+Cách làm: Quan sát rút gọn trước, sau đó theo thứ tự thực hiện.
+
+Lối tắt: Rút gọn chéo tử với mẫu trước khi nhân.
+
+Kết quả: **tầng 2**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
+
+*Điểm chốt:* Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều.
 
 ### Bài D.1 — Khung sơ đồ tổng hợp chương
 
@@ -518,65 +522,65 @@ Kết quả: **“Hôm nay nhóm mình nói về Rút gọn phân số.”**.
 
 *Điểm chốt:* Phải chia **cả tử và mẫu** cho cùng một số.
 
-### Bài E.3 — Nội dung giảng — Đọc bảng số liệu thống kê
+### Bài E.3 — Nội dung giảng — Phần trăm thay đổi nhiều lần
 
 **Các bước giải**
 
 Xét ý a: Câu mở đầu giới thiệu dạng bài?
 
-Đọc vị: đây là dạng **Đọc bảng số liệu thống kê**; dấu hiệu là Đề cho bảng hoặc biểu đồ kèm nhiều câu hỏi.
+Đọc vị: đây là dạng **Phần trăm thay đổi nhiều lần**; dấu hiệu là Hai lần tăng giảm liên tiếp.
 
-Kiến thức phải dùng: Thống kê mô tả sơ cấp, trung bình cộng, tỉ số phần trăm.
+Kiến thức phải dùng: Tỉ số phần trăm, mốc quy chiếu.
 
-Cách làm: Ghi lại số liệu, trả lời từng câu bằng công cụ tương ứng.
+Cách làm: Tính tuần tự, xác định lại mốc 100% sau mỗi bước.
 
-Lối tắt: Tính tổng một lần rồi dùng lại cho mọi câu hỏi phần trăm.
+Lối tắt: Tăng 20% rồi giảm 20% thì còn 96% giá ban đầu — luôn thấp hơn giá cũ.
 
-Kết quả: **“Hôm nay nhóm mình nói về Đọc bảng số liệu thống kê.”**.
+Kết quả: **“Hôm nay nhóm mình nói về Phần trăm thay đổi nhiều lần.”**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Đọc bảng theo cột, ghi lại từng số liệu. Tổng là cộng tất cả; nhiều nhất, ít nhất là so sánh; trung bình là tổng chia số môn; tỉ số phần trăm là phần chia tổng rồi nhân 100.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Lần thứ hai tính phần trăm trên **giá mới** chứ không phải giá ban đầu. Vì vậy tăng p% rồi giảm p% **không** đưa về giá cũ. Phải tính lần lượt từng bước, ghi rõ giá sau mỗi lần.
 
-*Điểm chốt:* Mọi câu hỏi đều quy về **tổng, so sánh, trung bình cộng, tỉ số phần trăm**.
+*Điểm chốt:* Mốc 100% **thay đổi** sau mỗi lần — đây là bẫy kinh điển.
 
-### Bài E.4 — Nội dung giảng — Nồng độ phần trăm của dung dịch
-
-**Các bước giải**
-
-Xét ý a: Câu mở đầu giới thiệu dạng bài?
-
-Đọc vị: đây là dạng **Nồng độ phần trăm của dung dịch**; dấu hiệu là “Dung dịch … %”, “đổ thêm nước”, “bỏ thêm muối”.
-
-Kiến thức phải dùng: Tỉ số phần trăm; phân biệt chất tan và dung dịch.
-
-Cách làm: Kẻ bảng theo dõi tử số và mẫu số qua từng thao tác.
-
-Lối tắt: Thêm nước thì nồng độ giảm, thêm muối thì nồng độ tăng — dùng để loại đáp số sai ngay.
-
-Kết quả: **“Hôm nay nhóm mình nói về Nồng độ phần trăm của dung dịch.”**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Nồng độ phần trăm bằng lượng chất tan chia khối lượng dung dịch rồi nhân 100. Đổ thêm nước thì tử số giữ nguyên, mẫu số tăng, nên nồng độ giảm. Bỏ thêm muối thì **cả tử và mẫu cùng tăng**.
-
-*Điểm chốt:* Đổ thêm nước: **lượng muối không đổi**. Bỏ thêm muối: cả hai cùng đổi.
-
-### Bài E.5 — Nội dung giảng — Rút gọn, so sánh, sắp thứ tự phân số
+### Bài E.4 — Nội dung giảng — Bốn phép tính với số thập phân
 
 **Các bước giải**
 
 Xét ý a: Câu mở đầu giới thiệu dạng bài?
 
-Đọc vị: đây là dạng **Rút gọn, so sánh, sắp thứ tự phân số**; dấu hiệu là Một nhóm phân số cần sắp thứ tự.
+Đọc vị: đây là dạng **Bốn phép tính với số thập phân**; dấu hiệu là Các số có dấu phẩy.
 
-Kiến thức phải dùng: Tính chất cơ bản của phân số; so sánh phân số.
+Kiến thức phải dùng: Kĩ thuật tính với số thập phân.
 
-Cách làm: Rút gọn → so cùng mẫu hoặc quy đồng.
+Cách làm: Chọn quy tắc đặt dấu phẩy theo phép tính.
 
-Lối tắt: So với 1 và với một nửa trước — nhiều phân số phân loại được ngay.
+Lối tắt: Ước lượng bằng cách làm tròn để kiểm tra vị trí dấu phẩy.
 
-Kết quả: **“Hôm nay nhóm mình nói về Rút gọn, so sánh, sắp thứ tự phân số.”**.
+Kết quả: **“Hôm nay nhóm mình nói về Bốn phép tính với số thập phân.”**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Cùng mẫu số thì so tử số. Khác mẫu thì quy đồng hoặc so với 1 và với một nửa. Rút gọn về tối giản trước khi trình bày kết quả.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Cộng, trừ số thập phân: viết các dấu phẩy **thẳng cột** rồi tính như số tự nhiên, đặt dấu phẩy ở kết quả thẳng cột với các dấu phẩy trên. Nhân số thập phân với số tự nhiên: nhân như số tự nhiên rồi đếm số chữ số thập phân của thừa số để đặt dấu phẩy.
 
-*Điểm chốt:* Cùng mẫu số thì **chỉ cần so tử số**.
+*Điểm chốt:* Cộng trừ thì **thẳng dấu phẩy**; nhân thì **đếm chữ số thập phân**.
+
+### Bài E.5 — Nội dung giảng — Tỉ số phần trăm nhiều bước
+
+**Các bước giải**
+
+Xét ý a: Câu mở đầu giới thiệu dạng bài?
+
+Đọc vị: đây là dạng **Tỉ số phần trăm nhiều bước**; dấu hiệu là Hai tỉ lệ phần trăm nối tiếp nhau trong cùng một bài.
+
+Kiến thức phải dùng: Ba dạng tỉ số phần trăm; mốc quy chiếu.
+
+Cách làm: Xác định lại mốc 100% trước mỗi bước.
+
+Lối tắt: Nhân hai tỉ lệ rồi chia 100 là ra tỉ lệ so với mốc gốc.
+
+Kết quả: **“Hôm nay nhóm mình nói về Tỉ số phần trăm nhiều bước.”**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Mỗi lần gặp một tỉ lệ phần trăm mới, phải hỏi: phần trăm này tính **trên cái gì**. Trong bài này, tỉ lệ nam giỏi tính trên số nam, không phải trên sĩ số cả lớp.
+
+*Điểm chốt:* Cùng một con số phần trăm nhưng **mốc khác nhau** thì kết quả khác nhau.
 
 ---
 
@@ -586,21 +590,21 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
-| A.1 | Rút gọn phân số | Tính chất cơ bản của phân số | Tử số và mẫu số có ước chung lớn hơn 1 | Chia cả tử và mẫu cho ước chung | Tìm ngay ước chung lớn nhất để rút gọn một lần là xong. | 2 phần 3 · 2 phần 5 · 4 phần 11 · 3 phần 2… |
-| A.2 | Nhận biết và phân loại góc | Số đo góc; hai đường thẳng vuông góc, song song | Đề cho số đo góc hoặc hỏi về cạnh của hình | So số đo với hai mốc 90° và 180° | Ê ke chính là một góc vuông cầm tay — áp vào là biết ngay. | 2 cặp song song, 4 cặp vuông góc · bé hơn · góc nhọn · góc tù… |
-| A.3 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | > · > · > · <… |
-| A.4 | Quy tắc nhân | Quy tắc nhân, quy tắc cộng trong phép đếm | Chọn một phần tử từ mỗi nhóm để ghép thành một bộ | Nhân số cách của các bước liên tiếp | Vẽ sơ đồ cây với hai ba nhánh đầu để thấy rõ phép nhân. | 18 cách · 20 cách · 28 cách · 8 cách… |
-| A.5 | Số thập phân — hàng, so sánh, chuyển đổi | Cấu tạo số thập phân, quan hệ phân số – số thập phân | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 | Xét theo hàng từ trái sang phải | Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. | > · 6 · 0,9 · 4… |
+| A.1 | Số thập phân — hàng, so sánh, chuyển đổi | Cấu tạo số thập phân, quan hệ phân số – số thập phân | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 | Xét theo hàng từ trái sang phải | Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. | > · 0,2 · 0 · 4… |
+| A.2 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | < · > · < · <… |
+| A.3 | Tìm số hạng thứ n của dãy cách đều | Công thức số hạng tổng quát của dãy cách đều | Đề hỏi “số hạng thứ …” | Đếm số khoảng rồi nhân với khoảng cách | Thử công thức với n = 1 và n = 2 để chắc chắn không lệch một khoảng. | 427 · 727 · 802 · 827… |
+| A.4 | Ôn tập số tự nhiên | Thứ tự số tự nhiên, giá trị hàng, quy tắc làm tròn | Câu hỏi ngắn về so sánh, hàng, số liền kề, làm tròn | Đếm chữ số, xét hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | 7 645 737 và 7 645 739 · 7 592 000 · 2 000 000 · >… |
+| A.5 | Rút gọn phân số | Tính chất cơ bản của phân số | Tử số và mẫu số có ước chung lớn hơn 1 | Chia cả tử và mẫu cho ước chung | Tìm ngay ước chung lớn nhất để rút gọn một lần là xong. | 9 phần 8 · 2 phần 3 · 2 · 3 phần 11… |
 | B.1 | Kỹ năng trình bày | Chuẩn trình bày bài giải | Yêu cầu “trình bày lời giải” | Viết đủ bốn dòng | Viết câu lời giải trước, phép tính sau — không bao giờ ngược lại. | câu lời giải nêu rõ đang tìm đại lượng nào · phép tính, viết đủ dấu và đủ đơn vị · kết quả kèm đơn vị · câu đáp số… |
-| B.2 | Kỹ năng viết câu lời giải | Chuẩn trình bày | Đề hỏi gì thì câu lời giải nhắc lại điều đó | Lấy cụm từ trong câu hỏi làm câu lời giải | Sao chép cụm từ trong câu hỏi là cách viết câu lời giải nhanh và chắc nhất. | “Rút gọn phân số là:” · “Số thập phân — hàng, so sánh, chuyển đổi là:” · “Đọc bảng số liệu thống kê là:” · “Bốn phép tính với phân số là:”… |
+| B.2 | Kỹ năng viết câu lời giải | Chuẩn trình bày | Đề hỏi gì thì câu lời giải nhắc lại điều đó | Lấy cụm từ trong câu hỏi làm câu lời giải | Sao chép cụm từ trong câu hỏi là cách viết câu lời giải nhanh và chắc nhất. | “Rút gọn phân số là:” · “Số thập phân — hàng, so sánh, chuyển đổi là:” · “Phần trăm thay đổi nhiều lần là:” · “Bốn phép tính với phân số là:”… |
 | B.3 | Kỹ năng ghi đơn vị | Đơn vị đo các đại lượng | Đáp số của bài có đại lượng đo | Kiểm tra đơn vị ở bước cuối | Nhìn đơn vị của đáp số là biết ngay mình có nhầm chu vi với diện tích không. | không ghi trong dấu ngoặc phép tính · có, bắt buộc · có, bắt buộc · đơn vị vuông, ví dụ cm²… |
-| B.4 | Sổ lỗi và cách phòng | Lỗi thường gặp của chương | Cột “Lỗi thường gặp” trong bảng phân tích | Ghép cặp lỗi với cách phòng | Đọc lại sổ lỗi 3 phút trước mỗi bài kiểm tra. | Viết phép chia cho cả hai dòng, kiểm tra lại bằng cách nhân ngược. · Viết thêm chữ số 0 vào cuối để hai số có cùng số chữ số thập phân rồi mới so. · Đánh dấu từng số đã cộng để không sót và không cộng lặp. · Trước khi tính, khoanh dấu phép tính và tự nhắc “có phải quy đồng không”.… |
+| B.4 | Sổ lỗi và cách phòng | Lỗi thường gặp của chương | Cột “Lỗi thường gặp” trong bảng phân tích | Ghép cặp lỗi với cách phòng | Đọc lại sổ lỗi 3 phút trước mỗi bài kiểm tra. | Viết phép chia cho cả hai dòng, kiểm tra lại bằng cách nhân ngược. · Viết thêm chữ số 0 vào cuối để hai số có cùng số chữ số thập phân rồi mới so. · Viết ba dòng: giá ban đầu, giá sau lần 1, giá sau lần 2. · Trước khi tính, khoanh dấu phép tính và tự nhắc “có phải quy đồng không”.… |
 | B.5 | Kỹ năng tự chấm | Thang điểm và chuẩn chấm | Bài đã làm xong, cần tự đánh giá | Chia bài thành bốn phần rồi chấm từng phần | Tự chấm bài của bạn giúp nhớ chuẩn chấm nhanh hơn tự chấm bài của mình. | 1 phần trong 4 · 2 phần trong 4 · 1 phần trong 4 · 3 phần trong 4… |
 | C.1 | Kỹ năng dò soát | Quy trình ba tầng | Bài đã làm xong, còn thời gian | Dò theo thứ tự đơn vị → phép tính → câu hỏi | Đọc lại **câu hỏi** trước, đọc lại bài làm sau. | đơn vị đo — mọi số có cùng đơn vị chưa · phép tính — cộng trừ nhân chia có đúng thứ tự chưa · đề hỏi gì — mình đã trả lời đúng câu hỏi chưa · tầng 3 — trả lời lệch câu hỏi… |
 | C.2 | Rút gọn phân số | Tính chất cơ bản của phân số | Tử số và mẫu số có ước chung lớn hơn 1 | Chia cả tử và mẫu cho ước chung | Tìm ngay ước chung lớn nhất để rút gọn một lần là xong. | tầng 2 · Viết phép chia cho cả hai dòng, kiểm tra lại bằng cách nhân ngược. · toàn bộ số điểm của ý sai · Viết phép chia cho cả hai dòng, kiểm tra lại bằng cách nhân ngược.… |
 | C.3 | Bốn phép tính với phân số | Quy đồng, nhân chia phân số | Biểu thức chỉ gồm phân số | Chọn quy tắc theo phép tính, rút gọn cuối cùng | Rút gọn chéo trước khi nhân để số nhỏ, tính nhanh và ít sai. | tầng 2 · Trước khi tính, khoanh dấu phép tính và tự nhắc “có phải quy đồng không”. · toàn bộ số điểm của ý sai · Trước khi tính, khoanh dấu phép tính và tự nhắc “có phải quy đồng không”.… |
-| C.4 | Rút gọn, so sánh, sắp thứ tự phân số | Tính chất cơ bản của phân số; so sánh phân số | Một nhóm phân số cần sắp thứ tự | Rút gọn → so cùng mẫu hoặc quy đồng | So với 1 và với một nửa trước — nhiều phân số phân loại được ngay. | tầng 2 · Ghi cả phân số gốc và phân số tối giản cạnh nhau để đối chiếu. · toàn bộ số điểm của ý sai · Ghi cả phân số gốc và phân số tối giản cạnh nhau để đối chiếu.… |
-| C.5 | Tỉ số phần trăm nhiều bước | Ba dạng tỉ số phần trăm; mốc quy chiếu | Hai tỉ lệ phần trăm nối tiếp nhau trong cùng một bài | Xác định lại mốc 100% trước mỗi bước | Nhân hai tỉ lệ rồi chia 100 là ra tỉ lệ so với mốc gốc. | tầng 2 · Viết trước mỗi phép tính: “100% ở đây là …”. · toàn bộ số điểm của ý sai · Viết trước mỗi phép tính: “100% ở đây là …”.… |
+| C.4 | Tỉ số phần trăm nhiều bước | Ba dạng tỉ số phần trăm; mốc quy chiếu | Hai tỉ lệ phần trăm nối tiếp nhau trong cùng một bài | Xác định lại mốc 100% trước mỗi bước | Nhân hai tỉ lệ rồi chia 100 là ra tỉ lệ so với mốc gốc. | tầng 2 · Viết trước mỗi phép tính: “100% ở đây là …”. · toàn bộ số điểm của ý sai · Viết trước mỗi phép tính: “100% ở đây là …”.… |
+| C.5 | Biểu thức phân số nhiều phép tính | Thứ tự thực hiện phép tính, tính chất phân phối | Biểu thức gồm nhiều phân số và nhiều phép tính | Quan sát rút gọn trước, sau đó theo thứ tự thực hiện | Rút gọn chéo tử với mẫu trước khi nhân. | tầng 2 · Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút. · toàn bộ số điểm của ý sai · Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút.… |
 | D.1 | Sơ đồ tư duy tổng hợp | Hệ thống hoá toàn chương | Yêu cầu vẽ lại sơ đồ không nhìn tài liệu | Vẽ từ trí nhớ rồi đối chiếu | Chỗ nào quên khi vẽ chính là chỗ phải ôn lại đầu tiên. | So sánh phân số, số thập phân và bài toán phần trăm ẩn · 5 · tên một dạng bài của chương · 3 nhánh con: dấu hiệu · phương pháp · lỗi hay mắc… |
 | D.2 | Số thập phân — hàng, so sánh, chuyển đổi | Cấu tạo số thập phân, quan hệ phân số – số thập phân | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 | Xét theo hàng từ trái sang phải | Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 · Xét theo hàng từ trái sang phải · Cho rằng số có nhiều chữ số sau dấu phẩy hơn thì lớn hơn. · Cấu tạo số thập phân, quan hệ phân số – số thập phân… |
 | D.3 | Bốn phép tính với phân số | Quy đồng, nhân chia phân số | Biểu thức chỉ gồm phân số | Chọn quy tắc theo phép tính, rút gọn cuối cùng | Rút gọn chéo trước khi nhân để số nhỏ, tính nhanh và ít sai. | Biểu thức chỉ gồm phân số · Chọn quy tắc theo phép tính, rút gọn cuối cùng · Quy đồng cả khi nhân, hoặc cộng thẳng tử với tử và mẫu với mẫu. · Quy đồng, nhân chia phân số… |
@@ -608,9 +612,9 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | D.5 | Tỉ số phần trăm có lời văn | Tỉ số phần trăm | Cụm “chiếm bao nhiêu phần trăm”, “so với cả lớp” | Chốt đại lượng 100% rồi chọn dạng | Nếu tỉ số là 1 phần 4 thì bằng 25%; nhớ vài mốc quen để nhẩm. | Cụm “chiếm bao nhiêu phần trăm”, “so với cả lớp” · Chốt đại lượng 100% rồi chọn dạng · Lấy số học sinh giỏi làm mẫu số khi tính tỉ số phần trăm. · Tỉ số phần trăm… |
 | E.1 | Kỹ năng thuyết trình theo nhóm | Hệ thống hoá và diễn đạt | Yêu cầu giảng lại chương theo nhóm | Chia kịch bản theo phút, phân công rõ người | Người giảng nhớ lâu hơn người nghe khoảng ba lần. | giới thiệu chương “So sánh phân số, số thập phân và bài toán phần trăm ẩn” và mục tiêu · trình bày sơ đồ tư duy chương · giảng một dạng bài kèm ví dụ mẫu · nêu lỗi hay mắc và cách phòng… |
 | E.2 | Rút gọn phân số | Tính chất cơ bản của phân số | Tử số và mẫu số có ước chung lớn hơn 1 | Chia cả tử và mẫu cho ước chung | Tìm ngay ước chung lớn nhất để rút gọn một lần là xong. | “Hôm nay nhóm mình nói về Rút gọn phân số.” · Tử số và mẫu số có ước chung lớn hơn 1 · Tính chất cơ bản của phân số · Rút gọn 18 phần 24. → 3 phần 4… |
-| E.3 | Đọc bảng số liệu thống kê | Thống kê mô tả sơ cấp, trung bình cộng, tỉ số phần trăm | Đề cho bảng hoặc biểu đồ kèm nhiều câu hỏi | Ghi lại số liệu, trả lời từng câu bằng công cụ tương ứng | Tính tổng một lần rồi dùng lại cho mọi câu hỏi phần trăm. | “Hôm nay nhóm mình nói về Đọc bảng số liệu thống kê.” · Đề cho bảng hoặc biểu đồ kèm nhiều câu hỏi · Thống kê mô tả sơ cấp, trung bình cộng, tỉ số phần trăm · Bảng: Toán 10, Văn 6, Anh 4. Trung bình mỗi môn bao nhiêu bạn? → 6,67 bạn… |
-| E.4 | Nồng độ phần trăm của dung dịch | Tỉ số phần trăm; phân biệt chất tan và dung dịch | “Dung dịch … %”, “đổ thêm nước”, “bỏ thêm muối” | Kẻ bảng theo dõi tử số và mẫu số qua từng thao tác | Thêm nước thì nồng độ giảm, thêm muối thì nồng độ tăng — dùng để loại đáp số sai ngay. | “Hôm nay nhóm mình nói về Nồng độ phần trăm của dung dịch.” · “Dung dịch … %”, “đổ thêm nước”, “bỏ thêm muối” · Tỉ số phần trăm; phân biệt chất tan và dung dịch · 200 g nước muối 10%, đổ thêm 200 g nước. Nồng độ mới bằng bao nhiêu? → 5%… |
-| E.5 | Rút gọn, so sánh, sắp thứ tự phân số | Tính chất cơ bản của phân số; so sánh phân số | Một nhóm phân số cần sắp thứ tự | Rút gọn → so cùng mẫu hoặc quy đồng | So với 1 và với một nửa trước — nhiều phân số phân loại được ngay. | “Hôm nay nhóm mình nói về Rút gọn, so sánh, sắp thứ tự phân số.” · Một nhóm phân số cần sắp thứ tự · Tính chất cơ bản của phân số; so sánh phân số · Sắp xếp từ bé đến lớn: 3 phần 8, 5 phần 8, 1 phần 8 → 1 phần 8 < 3 phần 8 < 5 phần 8… |
+| E.3 | Phần trăm thay đổi nhiều lần | Tỉ số phần trăm, mốc quy chiếu | Hai lần tăng giảm liên tiếp | Tính tuần tự, xác định lại mốc 100% sau mỗi bước | Tăng 20% rồi giảm 20% thì còn 96% giá ban đầu — luôn thấp hơn giá cũ. | “Hôm nay nhóm mình nói về Phần trăm thay đổi nhiều lần.” · Hai lần tăng giảm liên tiếp · Tỉ số phần trăm, mốc quy chiếu · Giá 100 000 đồng tăng 10% rồi giảm 10%. Giá cuối là bao nhiêu? → 99 000 đồng… |
+| E.4 | Bốn phép tính với số thập phân | Kĩ thuật tính với số thập phân | Các số có dấu phẩy | Chọn quy tắc đặt dấu phẩy theo phép tính | Ước lượng bằng cách làm tròn để kiểm tra vị trí dấu phẩy. | “Hôm nay nhóm mình nói về Bốn phép tính với số thập phân.” · Các số có dấu phẩy · Kĩ thuật tính với số thập phân · Tính: 3,25 × 4 → 13… |
+| E.5 | Tỉ số phần trăm nhiều bước | Ba dạng tỉ số phần trăm; mốc quy chiếu | Hai tỉ lệ phần trăm nối tiếp nhau trong cùng một bài | Xác định lại mốc 100% trước mỗi bước | Nhân hai tỉ lệ rồi chia 100 là ra tỉ lệ so với mốc gốc. | “Hôm nay nhóm mình nói về Tỉ số phần trăm nhiều bước.” · Hai tỉ lệ phần trăm nối tiếp nhau trong cùng một bài · Ba dạng tỉ số phần trăm; mốc quy chiếu · Lớp 40 bạn, nam chiếm 50%, trong đó 20% giỏi. Mấy bạn nam giỏi? → 4 bạn… |
 
 ---
 
@@ -618,11 +622,11 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 
 | Bài | Nhãn tư duy | Điểm chốt |
 |---|---|---|
-| A.1 | TD1 | Phải chia **cả tử và mẫu** cho cùng một số. |
-| A.2 | TD1, TD2 | Hai mốc **90°** và **180°** chia hết các loại góc. |
-| A.3 | TD1, TD5 | Cùng tử số thì **mẫu bé hơn là phân số lớn hơn** — ngược với trực giác. |
-| A.4 | TD2, TD4 | Hai việc phải làm **cùng lúc, nối tiếp** thì nhân; chọn một trong hai khả năng rời nhau thì cộng. |
-| A.5 | TD1, TD2 | So sánh theo **hàng**, không so theo số chữ số sau dấu phẩy. |
+| A.1 | TD1, TD2 | So sánh theo **hàng**, không so theo số chữ số sau dấu phẩy. |
+| A.2 | TD1, TD5 | Cùng tử số thì **mẫu bé hơn là phân số lớn hơn** — ngược với trực giác. |
+| A.3 | TD4, TD3 | Nhân với **(n − 1)** chứ không phải n — đếm khoảng chứ không đếm số hạng. |
+| A.4 | TD1, TD5 | So sánh đi từ **trái sang phải**, làm tròn nhìn **một chữ số liền sau**. |
+| A.5 | TD1 | Phải chia **cả tử và mẫu** cho cùng một số. |
 | B.1 | TD1 | Có lời giải đúng mà trình bày thiếu vẫn **mất điểm thật**. |
 | B.2 | TD1 | Câu lời giải phải **nêu đúng đại lượng** đang tìm. |
 | B.3 | TD1 | Diện tích **luôn** có đơn vị vuông, thể tích luôn có đơn vị khối. |
@@ -631,8 +635,8 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | C.1 | TD1, TD6 | Tầng 3 — **đề hỏi gì** — là tầng bắt được nhiều lỗi nhất. |
 | C.2 | TD1 | Phải chia **cả tử và mẫu** cho cùng một số. |
 | C.3 | TD1, TD3 | Cộng trừ **cần** quy đồng, nhân chia **không cần** quy đồng. |
-| C.4 | TD1, TD5 | Cùng mẫu số thì **chỉ cần so tử số**. |
-| C.5 | TD6, TD2 | Cùng một con số phần trăm nhưng **mốc khác nhau** thì kết quả khác nhau. |
+| C.4 | TD6, TD2 | Cùng một con số phần trăm nhưng **mốc khác nhau** thì kết quả khác nhau. |
+| C.5 | TD3, TD5 | Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều. |
 | D.1 | TD3 | Vẽ **từ trí nhớ** mới có tác dụng; chép lại thì không. |
 | D.2 | TD1, TD2 | So sánh theo **hàng**, không so theo số chữ số sau dấu phẩy. |
 | D.3 | TD1, TD3 | Cộng trừ **cần** quy đồng, nhân chia **không cần** quy đồng. |
@@ -640,9 +644,9 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | D.5 | TD2, TD3 | Xác định **đại lượng ứng với 100%** trước mọi phép tính. |
 | E.1 | TD3, TD6 | Giảng được cho bạn hiểu mới là **đã hiểu**. |
 | E.2 | TD1 | Phải chia **cả tử và mẫu** cho cùng một số. |
-| E.3 | TD1, TD2 | Mọi câu hỏi đều quy về **tổng, so sánh, trung bình cộng, tỉ số phần trăm**. |
-| E.4 | TD6, TD3 | Đổ thêm nước: **lượng muối không đổi**. Bỏ thêm muối: cả hai cùng đổi. |
-| E.5 | TD1, TD5 | Cùng mẫu số thì **chỉ cần so tử số**. |
+| E.3 | TD6, TD2 | Mốc 100% **thay đổi** sau mỗi lần — đây là bẫy kinh điển. |
+| E.4 | TD1, TD3 | Cộng trừ thì **thẳng dấu phẩy**; nhân thì **đếm chữ số thập phân**. |
+| E.5 | TD6, TD2 | Cùng một con số phần trăm nhưng **mốc khác nhau** thì kết quả khác nhau. |
 
 ---
 
@@ -652,11 +656,11 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 
 | Bài | Lỗi thường gặp | Cách phòng |
 |---|---|---|
-| A.1 | Chỉ chia tử số hoặc chỉ chia mẫu số. | Viết phép chia cho cả hai dòng, kiểm tra lại bằng cách nhân ngược. |
-| A.2 | Gọi góc 90° là góc nhọn vì thấy “nhỏ”. | Áp ê ke vào góc trước khi gọi tên. |
-| A.3 | Thấy mẫu số lớn thì kết luận phân số lớn. | Nghĩ tới chiếc bánh: chia càng nhiều phần thì mỗi phần càng bé. |
-| A.4 | Cộng số áo với số quần. | Tự hỏi: chọn xong áo đã đủ một bộ chưa? Chưa đủ thì phải nhân. |
-| A.5 | Cho rằng số có nhiều chữ số sau dấu phẩy hơn thì lớn hơn. | Viết thêm chữ số 0 vào cuối để hai số có cùng số chữ số thập phân rồi mới so. |
+| A.1 | Cho rằng số có nhiều chữ số sau dấu phẩy hơn thì lớn hơn. | Viết thêm chữ số 0 vào cuối để hai số có cùng số chữ số thập phân rồi mới so. |
+| A.2 | Thấy mẫu số lớn thì kết luận phân số lớn. | Nghĩ tới chiếc bánh: chia càng nhiều phần thì mỗi phần càng bé. |
+| A.3 | Nhân khoảng cách với n nên kết quả thừa đúng một khoảng. | Kiểm chứng công thức với n = 1: phải ra đúng số hạng đầu. |
+| A.4 | So sánh từ hàng đơn vị; hoặc làm tròn nhìn nhầm sang chính hàng cần làm tròn. | Gạch một nét ngăn ngay sau hàng cần làm tròn. |
+| A.5 | Chỉ chia tử số hoặc chỉ chia mẫu số. | Viết phép chia cho cả hai dòng, kiểm tra lại bằng cách nhân ngược. |
 | B.1 | Viết thẳng phép tính, bỏ câu lời giải. | Đọc lại bài đã làm, đếm xem có đủ bốn dòng chưa. |
 | B.2 | Viết câu lời giải chung chung cho mọi bài. | Lấy đúng cụm từ trong câu hỏi của đề làm câu lời giải. |
 | B.3 | Ghi diện tích bằng cm thay vì cm². | Trước khi viết đáp số, hỏi: đại lượng này đo bằng gì? |
@@ -665,8 +669,8 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 | C.1 | Dò lại phép tính nhưng không đọc lại câu hỏi. | Sau mỗi bài, đọc to lại câu hỏi rồi đối chiếu với đáp số. |
 | C.2 | Chỉ chia tử số hoặc chỉ chia mẫu số. | Viết phép chia cho cả hai dòng, kiểm tra lại bằng cách nhân ngược. |
 | C.3 | Quy đồng cả khi nhân, hoặc cộng thẳng tử với tử và mẫu với mẫu. | Trước khi tính, khoanh dấu phép tính và tự nhắc “có phải quy đồng không”. |
-| C.4 | Rút gọn xong quên rằng thứ tự vẫn giữ nguyên, đi quy đồng lại từ đầu. | Ghi cả phân số gốc và phân số tối giản cạnh nhau để đối chiếu. |
-| C.5 | Lấy tỉ lệ nam giỏi nhân thẳng với sĩ số cả lớp. | Viết trước mỗi phép tính: “100% ở đây là …”. |
+| C.4 | Lấy tỉ lệ nam giỏi nhân thẳng với sĩ số cả lớp. | Viết trước mỗi phép tính: “100% ở đây là …”. |
+| C.5 | Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. | Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút. |
 | D.1 | Vừa vẽ vừa nhìn phiếu Lý thuyết. | Úp phiếu Lý thuyết xuống bàn trước khi bắt đầu vẽ. |
 | D.2 | Cho rằng số có nhiều chữ số sau dấu phẩy hơn thì lớn hơn. | Viết thêm chữ số 0 vào cuối để hai số có cùng số chữ số thập phân rồi mới so. |
 | D.3 | Quy đồng cả khi nhân, hoặc cộng thẳng tử với tử và mẫu với mẫu. | Trước khi tính, khoanh dấu phép tính và tự nhắc “có phải quy đồng không”. |
@@ -674,9 +678,9 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 | D.5 | Lấy số học sinh giỏi làm mẫu số khi tính tỉ số phần trăm. | Viết rõ một dòng: “Cả lớp = 100%” trước khi tính. |
 | E.1 | Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình. | Cấm cầm phiếu khi thuyết trình; chỉ được cầm sơ đồ tư duy tự vẽ. |
 | E.2 | Chỉ chia tử số hoặc chỉ chia mẫu số. | Viết phép chia cho cả hai dòng, kiểm tra lại bằng cách nhân ngược. |
-| E.3 | Đọc nhầm cột, hoặc quên một môn khi cộng tổng. | Đánh dấu từng số đã cộng để không sót và không cộng lặp. |
-| E.4 | Khi bỏ thêm muối thì chỉ cộng vào tử số mà quên cộng vào mẫu số. | Kẻ bảng hai dòng: lượng muối và khối lượng dung dịch, cập nhật sau mỗi thao tác. |
-| E.5 | Rút gọn xong quên rằng thứ tự vẫn giữ nguyên, đi quy đồng lại từ đầu. | Ghi cả phân số gốc và phân số tối giản cạnh nhau để đối chiếu. |
+| E.3 | Cộng trừ hai số phần trăm rồi áp một lần vào giá ban đầu. | Viết ba dòng: giá ban đầu, giá sau lần 1, giá sau lần 2. |
+| E.4 | Nhân xong đặt dấu phẩy thẳng cột như phép cộng. | Đếm số chữ số sau dấu phẩy ngay khi viết đề bài. |
+| E.5 | Lấy tỉ lệ nam giỏi nhân thẳng với sĩ số cả lớp. | Viết trước mỗi phép tính: “100% ở đây là …”. |
 
 ---
 
@@ -684,11 +688,11 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 
 Đọc tầng 1 trước; chỉ đọc tầng sau khi đã thử lại ít nhất 3 phút.
 
-**Bài A.1** — (1) Tử số và mẫu số cùng chia hết cho số nào? — (2) Chia cả hai cho số đó. — (3) Kết quả còn rút gọn tiếp được không?
-**Bài A.2** — (1) Góc vuông có số đo bao nhiêu độ? — (2) Số đo của góc này lớn hơn hay bé hơn 90°? — (3) Nếu lớn hơn 90° thì có bé hơn 180° không?
-**Bài A.3** — (1) Hai phân số có cùng mẫu số không? — (2) Có cùng tử số không? — (3) Nếu khác cả hai thì quy đồng mẫu số.
-**Bài A.4** — (1) Chọn xong áo đã có một bộ chưa? — (2) Với mỗi áo có bao nhiêu cách chọn quần? — (3) Nhân hai số lại.
-**Bài A.5** — (1) Phần nguyên của hai số có bằng nhau không? — (2) So tiếp hàng phần mười. — (3) Thêm chữ số 0 vào cuối cho hai số bằng độ dài.
+**Bài A.1** — (1) Phần nguyên của hai số có bằng nhau không? — (2) So tiếp hàng phần mười. — (3) Thêm chữ số 0 vào cuối cho hai số bằng độ dài.
+**Bài A.2** — (1) Hai phân số có cùng mẫu số không? — (2) Có cùng tử số không? — (3) Nếu khác cả hai thì quy đồng mẫu số.
+**Bài A.3** — (1) Từ số hạng đầu tới số hạng thứ n đi qua mấy khoảng? — (2) Mỗi khoảng dài bao nhiêu? — (3) Số hạng thứ n = đầu + số khoảng × khoảng cách.
+**Bài A.4** — (1) Hai số có cùng số chữ số không? — (2) So chữ số đầu tiên bên trái trước. — (3) Làm tròn thì chỉ xét đúng một chữ số liền sau.
+**Bài A.5** — (1) Tử số và mẫu số cùng chia hết cho số nào? — (2) Chia cả hai cho số đó. — (3) Kết quả còn rút gọn tiếp được không?
 **Bài B.1** — (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 **Bài B.2** — (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 **Bài B.3** — (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
@@ -718,11 +722,11 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 
 | Bài | Đề tương tự | Đáp số |
 |---|---|---|
-| A.1 | Rút gọn 18 phần 24. | 3 phần 4 |
-| A.2 | Góc 120° là góc gì? | góc tù |
-| A.3 | So sánh: 3 phần 5 … 3 phần 7 | > |
-| A.4 | Có 3 áo và 4 quần, có bao nhiêu cách chọn một bộ? | 12 cách |
-| A.5 | So sánh: 0,5 … 0,45 | > |
+| A.1 | So sánh: 0,5 … 0,45 | > |
+| A.2 | So sánh: 3 phần 5 … 3 phần 7 | > |
+| A.3 | Dãy 5, 9, 13, … số hạng thứ 20 là số nào? | 81 |
+| A.4 | Làm tròn 4 762 đến hàng trăm. | 4 800 |
+| A.5 | Rút gọn 18 phần 24. | 3 phần 4 |
 | B.1 | Một lời giải đạt chuẩn GITA có mấy dòng bắt buộc? | 4 dòng |
 | B.2 | Đề hỏi “mỗi tổ trồng mấy cây” thì câu lời giải viết thế nào? | “Số cây mỗi tổ trồng được là:” |
 | B.3 | Diện tích hình vuông cạnh 5 cm ghi đơn vị gì? | cm² |
@@ -731,8 +735,8 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | C.1 | Tầng nào bắt được lỗi trả lời lệch câu hỏi? | tầng 3 |
 | C.2 | Rút gọn 18 phần 24. | 3 phần 4 |
 | C.3 | Tính: 2 phần 3 + 1 phần 6 | 5 phần 6 |
-| C.4 | Sắp xếp từ bé đến lớn: 3 phần 8, 5 phần 8, 1 phần 8 | 1 phần 8 < 3 phần 8 < 5 phần 8 |
-| C.5 | Lớp 40 bạn, nam chiếm 50%, trong đó 20% giỏi. Mấy bạn nam giỏi? | 4 bạn |
+| C.4 | Lớp 40 bạn, nam chiếm 50%, trong đó 20% giỏi. Mấy bạn nam giỏi? | 4 bạn |
+| C.5 | Tính: (1 phần 2 + 1 phần 3) × 6 phần 5 | 1 |
 | D.1 | Vẽ sơ đồ mà nhìn tài liệu thì mất tác dụng gì? | mất tác dụng kiểm tra trí nhớ |
 | D.2 | So sánh: 0,5 … 0,45 | > |
 | D.3 | Tính: 2 phần 3 + 1 phần 6 | 5 phần 6 |
@@ -740,9 +744,9 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | D.5 | Lớp có 40 học sinh, 10 em giỏi. Học sinh giỏi chiếm bao nhiêu phần trăm? | 25% |
 | E.1 | Vì sao phải giảng lại cho bạn? | vì giảng được mới là hiểu thật |
 | E.2 | Rút gọn 18 phần 24. | 3 phần 4 |
-| E.3 | Bảng: Toán 10, Văn 6, Anh 4. Trung bình mỗi môn bao nhiêu bạn? | 6,67 bạn |
-| E.4 | 200 g nước muối 10%, đổ thêm 200 g nước. Nồng độ mới bằng bao nhiêu? | 5% |
-| E.5 | Sắp xếp từ bé đến lớn: 3 phần 8, 5 phần 8, 1 phần 8 | 1 phần 8 < 3 phần 8 < 5 phần 8 |
+| E.3 | Giá 100 000 đồng tăng 10% rồi giảm 10%. Giá cuối là bao nhiêu? | 99 000 đồng |
+| E.4 | Tính: 3,25 × 4 | 13 |
+| E.5 | Lớp 40 bạn, nam chiếm 50%, trong đó 20% giỏi. Mấy bạn nam giỏi? | 4 bạn |
 
 ---
 

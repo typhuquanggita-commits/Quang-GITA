@@ -54,11 +54,11 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần D**
 
-- **Bài D.1** — a) 306 cm³ · b) thể tích 125 cm³, diện tích toàn phần 150 cm² · c) 592 cm² · d) 468 cm² · e) 896 cm³ · f) 258 cm²
-- **Bài D.2** — a) 13 giờ 9 phút · b) 12 giờ 21 phút · c) 13 giờ 40 phút · d) 14 giờ 50 phút · e) 7 giờ 39 phút
-- **Bài D.3** — a) 77 · b) 79 000 · c) 43 000 · d) 44 · e) 66 · f) 28 000 · g) 46
-- **Bài D.4** — a) 390 000 đồng · b) 160 · 80 · 240 cây · c) 308 000 đồng · d) 32 · 160 · 32 cây · e) 38 · 114 · 76 cây · f) 150 000 đồng
-- **Bài D.5** — a) 8 tạ · b) 9 tạ 30 kg · c) 9 tạ 50 kg · d) 7 tạ 80 kg · e) 7 tạ 75 kg
+- **Bài D.1** — a) 157 cm · b) 50,24 cm · c) 2 640,74 cm² · d) 30 cm
+- **Bài D.2** — a) 9 tạ · b) 3 tạ · c) 7 tạ 60 kg · d) 15 tạ 50 kg · e) 21 tạ · f) 4 tạ
+- **Bài D.3** — a) 58 000 · b) 58 · c) 77 · d) 41 000 · e) 29 000
+- **Bài D.4** — a) 16 giờ 39 phút · b) 18 giờ 11 phút · c) 14 giờ 42 phút · d) 15 giờ 53 phút
+- **Bài D.5** — a) 152 · 38 · 38 cây · b) 570 000 đồng · c) 800 000 đồng · d) 44 · 22 · 11 cây · e) 290 000 đồng · f) 24 · 36 · 24 cây
 
 **Phần E**
 
@@ -378,103 +378,35 @@ Kết quả: **675 nghìn đồng**.
 
 *Điểm chốt:* Hai đại lượng **cùng tăng, cùng giảm** thì tỉ lệ thuận.
 
-### Bài D.1 — Hình hộp chữ nhật và hình lập phương
+### Bài D.1 — Chu vi và diện tích hình tròn
 
-> **BẪY — Xung quanh hay toàn phần.**
-
-**Các bước giải**
-
-Xét ý a: Hình hộp chữ nhật có ba kích thước 9 cm, 17 cm, 2 cm. Tính thể tích.
-
-Đọc vị: đây là dạng **Hình hộp chữ nhật, hình lập phương**; dấu hiệu là Đề cho ba kích thước hoặc cạnh hình lập phương.
-
-Kiến thức phải dùng: Công thức thể tích, diện tích xung quanh, toàn phần.
-
-Cách làm: Xác định loại diện tích cần tính, đếm đủ số mặt.
-
-Lối tắt: Hình lập phương cạnh a: toàn phần 6 × a × a, thể tích a × a × a.
-
-Kết quả: **306 cm³**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Thể tích hình hộp chữ nhật = dài × rộng × cao. Diện tích xung quanh = chu vi đáy × chiều cao. Diện tích toàn phần = diện tích xung quanh + 2 lần diện tích đáy. Hình lập phương là hình hộp có ba kích thước bằng nhau.
-
-*Điểm chốt:* Diện tích **xung quanh** không tính hai mặt đáy; **toàn phần** thì có.
-
-### Bài D.2 — Tính thời điểm đến, thời gian đi
-
-> **BẪY — Phần phút vượt quá 60.**
+> **BẪY — Đường kính hay bán kính.**
 
 **Các bước giải**
 
-Xét ý a: Một chuyến tàu khởi hành lúc 8 giờ 15 phút và đi hết 4 giờ 54 phút. Tàu đến nơi lúc mấy giờ?
+Xét ý a: Hình tròn có đường kính 50 cm. Tính chu vi (lấy π = 3,14).
 
-Đọc vị: đây là dạng **Tính thời điểm trong ngày**; dấu hiệu là Cho thời điểm bắt đầu và khoảng thời gian.
+Đọc vị: đây là dạng **Chu vi, diện tích hình tròn**; dấu hiệu là Đề cho bán kính hoặc đường kính.
 
-Kiến thức phải dùng: Quan hệ giờ – phút, phép chia có dư.
+Kiến thức phải dùng: Công thức hình tròn.
 
-Cách làm: Quy về phút, cộng trừ, đổi lại.
+Cách làm: Quy về bán kính, chọn đúng công thức.
 
-Lối tắt: Cộng tròn giờ trước rồi cộng phần phút lẻ sau.
+Lối tắt: Diện tích luôn có đơn vị mũ hai — nếu đáp số ghi cm là chắc chắn nhầm.
 
-Kết quả: **13 giờ 9 phút**.
+Kết quả: **157 cm**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Đổi cả giờ khởi hành lẫn thời gian đi về **phút**, cộng lại, rồi đổi kết quả ngược lại thành giờ và phút. Cách này tránh được lỗi nhớ khi phần phút vượt 60.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Chu vi hình tròn = đường kính × 3,14 = bán kính × 2 × 3,14. Diện tích hình tròn = bán kính × bán kính × 3,14. Đường kính gấp đôi bán kính.
 
-*Điểm chốt:* Đổi hết về phút rồi mới cộng — an toàn hơn cộng trực tiếp.
+*Điểm chốt:* Chu vi dùng **đường kính**, diện tích dùng **bán kính nhân bán kính**.
 
-### Bài D.3 — Đơn vị đo thể tích và dung tích
+### Bài D.2 — Bài toán thực tế về khối lượng
 
-> **BẪY — 1 000 lần mỗi bậc.**
-
-**Các bước giải**
-
-Xét ý a: 77 000 cm³ = … dm³
-
-Đọc vị: đây là dạng **Đổi đơn vị thể tích, dung tích**; dấu hiệu là Đơn vị có mũ ba, hoặc lít, mi-li-lít.
-
-Kiến thức phải dùng: Bảng đơn vị thể tích; quan hệ dm³ – lít.
-
-Cách làm: Đếm bậc rồi nhân, chia 1 000.
-
-Lối tắt: Mỗi bậc thêm ba chữ số 0.
-
-Kết quả: **77**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Hai đơn vị thể tích liền kề hơn kém nhau **1 000 lần**. 1 dm³ = 1 lít; 1 lít = 1 000 ml; 1 m³ = 1 000 dm³ = 1 000 lít.
-
-*Điểm chốt:* Thể tích nhảy **1 000 lần** mỗi bậc (độ dài 10, diện tích 100, thể tích 1 000).
-
-### Bài D.4 — Chia theo tỉ lệ ba phần và bài toán trộn
-
-> **BẪY — Chia cho tổng số phần, không phải cho số đại lượng.**
+> **BẪY — Đơn vị của câu trả lời.**
 
 **Các bước giải**
 
-Xét ý a: Trộn 12 kg gạo giá 20 000 đồng một ki-lô-gam với 6 kg gạo giá 25 000 đồng một ki-lô-gam. Hỏi tổng số tiền là bao nhiêu?
-
-Đọc vị: đây là dạng **Chia tỉ lệ nhiều phần; bài toán trộn**; dấu hiệu là “Tỉ lệ với … , … , …” hoặc “trộn … với …”.
-
-Kiến thức phải dùng: Tỉ số, chia theo tỉ lệ, nhân với đơn giá.
-
-Cách làm: Tổng số phần → giá trị một phần → nhân.
-
-Lối tắt: Tổng luôn chia hết cho tổng số phần; không chia hết là đọc sai tỉ lệ.
-
-Kết quả: **390 000 đồng**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Chia một tổng theo tỉ lệ ba số: cộng ba số phần lại, chia tổng cho tổng số phần được giá trị một phần, rồi nhân ra từng đại lượng. Bài trộn thì tính riêng từng loại rồi cộng.
-
-*Điểm chốt:* Chia cho **tổng số phần**, không chia cho số đại lượng.
-
-*Muốn khó hơn:* Hỏi giá trung bình một ki-lô-gam gạo sau khi trộn.
-
-*Phải chắc trước khi làm bài này:* Bài toán tổng – tỉ hai đại lượng và phép nhân với số lớn.
-
-### Bài D.5 — Bài toán thực tế về khối lượng
-
-**Các bước giải**
-
-Xét ý a: Một xe chở 16 bao thóc, mỗi bao 50 kg. Hỏi xe chở bao nhiêu tạ thóc?
+Xét ý a: Một xe chở 18 bao gạo, mỗi bao 50 kg. Hỏi xe chở bao nhiêu tạ gạo?
 
 Đọc vị: đây là dạng **Bài toán đại lượng có lời văn**; dấu hiệu là Đơn vị trong câu hỏi khác đơn vị trong dữ kiện.
 
@@ -484,11 +416,79 @@ Cách làm: Tính theo đơn vị dữ kiện rồi đổi ở bước cuối.
 
 Lối tắt: 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ.
 
-Kết quả: **8 tạ**.
+Kết quả: **9 tạ**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Tính tổng khối lượng theo ki-lô-gam trước, sau đó mới đổi sang đơn vị mà đề hỏi. Đừng đổi đơn vị ngay từ đầu vì dễ nhầm.
 
 *Điểm chốt:* Câu hỏi đòi đơn vị nào thì bước **cuối cùng** mới đổi sang đơn vị đó.
+
+### Bài D.3 — Đơn vị đo thể tích và dung tích
+
+> **BẪY — 1 000 lần mỗi bậc.**
+
+**Các bước giải**
+
+Xét ý a: 58 lít = … ml
+
+Đọc vị: đây là dạng **Đổi đơn vị thể tích, dung tích**; dấu hiệu là Đơn vị có mũ ba, hoặc lít, mi-li-lít.
+
+Kiến thức phải dùng: Bảng đơn vị thể tích; quan hệ dm³ – lít.
+
+Cách làm: Đếm bậc rồi nhân, chia 1 000.
+
+Lối tắt: Mỗi bậc thêm ba chữ số 0.
+
+Kết quả: **58 000**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Hai đơn vị thể tích liền kề hơn kém nhau **1 000 lần**. 1 dm³ = 1 lít; 1 lít = 1 000 ml; 1 m³ = 1 000 dm³ = 1 000 lít.
+
+*Điểm chốt:* Thể tích nhảy **1 000 lần** mỗi bậc (độ dài 10, diện tích 100, thể tích 1 000).
+
+### Bài D.4 — Tính thời điểm đến, thời gian đi
+
+> **BẪY — Phần phút vượt quá 60.**
+
+**Các bước giải**
+
+Xét ý a: Một chuyến tàu khởi hành lúc 14 giờ 0 phút và đi hết 2 giờ 39 phút. Tàu đến nơi lúc mấy giờ?
+
+Đọc vị: đây là dạng **Tính thời điểm trong ngày**; dấu hiệu là Cho thời điểm bắt đầu và khoảng thời gian.
+
+Kiến thức phải dùng: Quan hệ giờ – phút, phép chia có dư.
+
+Cách làm: Quy về phút, cộng trừ, đổi lại.
+
+Lối tắt: Cộng tròn giờ trước rồi cộng phần phút lẻ sau.
+
+Kết quả: **16 giờ 39 phút**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Đổi cả giờ khởi hành lẫn thời gian đi về **phút**, cộng lại, rồi đổi kết quả ngược lại thành giờ và phút. Cách này tránh được lỗi nhớ khi phần phút vượt 60.
+
+*Điểm chốt:* Đổi hết về phút rồi mới cộng — an toàn hơn cộng trực tiếp.
+
+### Bài D.5 — Chia theo tỉ lệ ba phần và bài toán trộn
+
+**Các bước giải**
+
+Vẽ ba đoạn thẳng: 4 phần, 1 phần, 1 phần.
+
+Bước 1 — tổng số phần: 4 + 1 + 1 = 6 (phần).
+
+Bước 2 — một phần: 228 : 6 = 38 (cây).
+
+Bước 3 — nhân ra từng tổ: 38 × 4 = 152; 38 × 1 = 38; 38 × 1 = 38 (cây).
+
+Thử lại: 152 + 38 + 38 = 228 ✓
+
+Đáp số: **152, 38, 38 cây**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Chia một tổng theo tỉ lệ ba số: cộng ba số phần lại, chia tổng cho tổng số phần được giá trị một phần, rồi nhân ra từng đại lượng. Bài trộn thì tính riêng từng loại rồi cộng.
+
+*Điểm chốt:* Chia cho **tổng số phần**, không chia cho số đại lượng.
+
+*Muốn khó hơn:* Hỏi giá trung bình một ki-lô-gam gạo sau khi trộn.
+
+*Phải chắc trước khi làm bài này:* Bài toán tổng – tỉ hai đại lượng và phép nhân với số lớn.
 
 ### Bài E.1 — Đọc vị đề số 1
 
@@ -613,11 +613,11 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | C.3 | Diện tích các hình phẳng cơ bản | Công thức diện tích hình bình hành, hình thoi, hình tam giác | Đề cho đáy và chiều cao, hoặc hai đường chéo | Nhận dạng hình rồi chọn công thức | Tam giác bằng nửa hình bình hành cùng đáy cùng chiều cao. | 561 cm² · 60 cm² · 44 cm² · 221 cm²… |
 | C.4 | Chu vi, diện tích trong tình huống thực tế | Công thức chu vi, diện tích; phép chia | Từ khoá “rào xung quanh”, “lát gạch”, “trồng cây quanh” | Đọc vị chu vi hay diện tích rồi tính | Nhìn đơn vị của đáp số: mét thì là chu vi, mét vuông thì là diện tích. | 174 m · không chia hết (86 m không chia hết cho 4 m) · 87 cây · không chia hết (142 m không chia hết cho 5 m) |
 | C.5 | Tỉ lệ thuận, rút về đơn vị | Đại lượng tỉ lệ thuận | Hai đại lượng cùng tăng cùng giảm | Rút về đơn vị hoặc dùng tỉ số | Nếu số lượng mới gấp số lượng cũ một số nguyên lần thì nhân thẳng, không cần rút về đơn vị. | 675 nghìn đồng · 70 nghìn đồng · 26 quyển · 26 quyển… |
-| D.1 | Hình hộp chữ nhật, hình lập phương | Công thức thể tích, diện tích xung quanh, toàn phần | Đề cho ba kích thước hoặc cạnh hình lập phương | Xác định loại diện tích cần tính, đếm đủ số mặt | Hình lập phương cạnh a: toàn phần 6 × a × a, thể tích a × a × a. | 306 cm³ · thể tích 125 cm³, diện tích toàn phần 150 cm² · 592 cm² · 468 cm²… |
-| D.2 | Tính thời điểm trong ngày | Quan hệ giờ – phút, phép chia có dư | Cho thời điểm bắt đầu và khoảng thời gian | Quy về phút, cộng trừ, đổi lại | Cộng tròn giờ trước rồi cộng phần phút lẻ sau. | 13 giờ 9 phút · 12 giờ 21 phút · 13 giờ 40 phút · 14 giờ 50 phút… |
-| D.3 | Đổi đơn vị thể tích, dung tích | Bảng đơn vị thể tích; quan hệ dm³ – lít | Đơn vị có mũ ba, hoặc lít, mi-li-lít | Đếm bậc rồi nhân, chia 1 000 | Mỗi bậc thêm ba chữ số 0. | 77 · 79 000 · 43 000 · 44… |
-| D.4 | Chia tỉ lệ nhiều phần; bài toán trộn | Tỉ số, chia theo tỉ lệ, nhân với đơn giá | “Tỉ lệ với … , … , …” hoặc “trộn … với …” | Tổng số phần → giá trị một phần → nhân | Tổng luôn chia hết cho tổng số phần; không chia hết là đọc sai tỉ lệ. | 390 000 đồng · 160 · 80 · 240 cây · 308 000 đồng · 32 · 160 · 32 cây… |
-| D.5 | Bài toán đại lượng có lời văn | Nhân, chia số tự nhiên; đổi đơn vị khối lượng | Đơn vị trong câu hỏi khác đơn vị trong dữ kiện | Tính theo đơn vị dữ kiện rồi đổi ở bước cuối | 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ. | 8 tạ · 9 tạ 30 kg · 9 tạ 50 kg · 7 tạ 80 kg… |
+| D.1 | Chu vi, diện tích hình tròn | Công thức hình tròn | Đề cho bán kính hoặc đường kính | Quy về bán kính, chọn đúng công thức | Diện tích luôn có đơn vị mũ hai — nếu đáp số ghi cm là chắc chắn nhầm. | 157 cm · 50,24 cm · 2 640,74 cm² · 30 cm |
+| D.2 | Bài toán đại lượng có lời văn | Nhân, chia số tự nhiên; đổi đơn vị khối lượng | Đơn vị trong câu hỏi khác đơn vị trong dữ kiện | Tính theo đơn vị dữ kiện rồi đổi ở bước cuối | 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ. | 9 tạ · 3 tạ · 7 tạ 60 kg · 15 tạ 50 kg… |
+| D.3 | Đổi đơn vị thể tích, dung tích | Bảng đơn vị thể tích; quan hệ dm³ – lít | Đơn vị có mũ ba, hoặc lít, mi-li-lít | Đếm bậc rồi nhân, chia 1 000 | Mỗi bậc thêm ba chữ số 0. | 58 000 · 58 · 77 · 41 000… |
+| D.4 | Tính thời điểm trong ngày | Quan hệ giờ – phút, phép chia có dư | Cho thời điểm bắt đầu và khoảng thời gian | Quy về phút, cộng trừ, đổi lại | Cộng tròn giờ trước rồi cộng phần phút lẻ sau. | 16 giờ 39 phút · 18 giờ 11 phút · 14 giờ 42 phút · 15 giờ 53 phút |
+| D.5 | Chia tỉ lệ nhiều phần; bài toán trộn | Tỉ số, chia theo tỉ lệ, nhân với đơn giá | “Tỉ lệ với … , … , …” hoặc “trộn … với …” | Tổng số phần → giá trị một phần → nhân | Tổng luôn chia hết cho tổng số phần; không chia hết là đọc sai tỉ lệ. | 152 · 38 · 38 cây · 570 000 đồng · 800 000 đồng · 44 · 22 · 11 cây… |
 | E.1 | Đổi đơn vị diện tích | Bảng đơn vị đo diện tích | Đơn vị có mũ hai, hoặc ha, km² | Đếm bậc rồi nhân, chia 100 | Mỗi bậc thêm hai chữ số 0 — nhớ “diện tích thì gấp đôi số 0”. | Đổi đơn vị diện tích · Đơn vị có mũ hai, hoặc ha, km² · Bảng đơn vị đo diện tích · Đếm bậc rồi nhân, chia 100… |
 | E.2 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | So sánh số đo đại lượng · Hai vế có đơn vị khác nhau · Bảng đơn vị đo, so sánh số tự nhiên · Đổi về cùng đơn vị rồi so sánh… |
 | E.3 | Vận tốc trung bình | Công thức vận tốc; trung bình cộng có trọng số | Hai chặng có vận tốc khác nhau | Tính tổng quãng đường, tổng thời gian rồi chia | Kiểm tra: vận tốc trung bình luôn nằm giữa hai vận tốc đã cho. | Vận tốc trung bình · Hai chặng có vận tốc khác nhau · Công thức vận tốc; trung bình cộng có trọng số · Tính tổng quãng đường, tổng thời gian rồi chia… |
@@ -645,11 +645,11 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | C.3 | TD1, TD3 | Hình bình hành **không** chia 2; hình tam giác và hình thoi **có** chia 2. |
 | C.4 | TD2, TD3 | “Xung quanh” → chu vi; “khắp mặt” → diện tích. |
 | C.5 | TD2, TD3 | Hai đại lượng **cùng tăng, cùng giảm** thì tỉ lệ thuận. |
-| D.1 | TD1, TD3 | Diện tích **xung quanh** không tính hai mặt đáy; **toàn phần** thì có. |
-| D.2 | TD3, TD2 | Đổi hết về phút rồi mới cộng — an toàn hơn cộng trực tiếp. |
+| D.1 | TD1, TD3 | Chu vi dùng **đường kính**, diện tích dùng **bán kính nhân bán kính**. |
+| D.2 | TD2, TD3 | Câu hỏi đòi đơn vị nào thì bước **cuối cùng** mới đổi sang đơn vị đó. |
 | D.3 | TD1, TD2 | Thể tích nhảy **1 000 lần** mỗi bậc (độ dài 10, diện tích 100, thể tích 1 000). |
-| D.4 | TD3, TD2 | Chia cho **tổng số phần**, không chia cho số đại lượng. |
-| D.5 | TD2, TD3 | Câu hỏi đòi đơn vị nào thì bước **cuối cùng** mới đổi sang đơn vị đó. |
+| D.4 | TD3, TD2 | Đổi hết về phút rồi mới cộng — an toàn hơn cộng trực tiếp. |
+| D.5 | TD3, TD2 | Chia cho **tổng số phần**, không chia cho số đại lượng. |
 | E.1 | TD2, TD6 | Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**. |
 | E.2 | TD2, TD6 | Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**. |
 | E.3 | TD2, TD6 | Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**. |
@@ -679,11 +679,11 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 | C.3 | Chia 2 cho hình bình hành, hoặc quên chia 2 cho hình tam giác. | Nhớ theo cặp: bình hành ↔ chữ nhật (không chia); tam giác ↔ nửa bình hành (chia 2). |
 | C.4 | Lấy chu vi để tính số gạch lát nền. | Gạch chân từ khoá chỉ vị trí: xung quanh, bao quanh, khắp, phủ kín. |
 | C.5 | Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch. | Tự hỏi: mua nhiều hơn thì trả nhiều hơn hay ít hơn? |
-| D.1 | Cộng thiếu một mặt đáy khi tính diện tích toàn phần. | Đếm đủ 6 mặt của hình hộp trước khi cộng. |
-| D.2 | Cộng phần phút thành hơn 60 mà quên đổi thành giờ. | Kiểm tra phần phút của đáp số phải bé hơn 60. |
+| D.1 | Lấy đường kính nhân đường kính khi tính diện tích. | Ghi rõ r = … và d = … lên hình trước khi thay số. |
+| D.2 | Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. | Khoanh tròn đơn vị trong câu hỏi trước khi đặt bút. |
 | D.3 | Đổi như đơn vị diện tích, chỉ nhân 100. | Nhớ dãy 10 – 100 – 1 000 ứng với độ dài – diện tích – thể tích. |
-| D.4 | Chia tổng cho 3 vì thấy có ba tổ. | Đếm số phần trên sơ đồ trước khi chia. |
-| D.5 | Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. | Khoanh tròn đơn vị trong câu hỏi trước khi đặt bút. |
+| D.4 | Cộng phần phút thành hơn 60 mà quên đổi thành giờ. | Kiểm tra phần phút của đáp số phải bé hơn 60. |
+| D.5 | Chia tổng cho 3 vì thấy có ba tổ. | Đếm số phần trên sơ đồ trước khi chia. |
 | E.1 | Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. | Viết riêng bảng đơn vị diện tích, ghi rõ “× 100” giữa hai bậc liền nhau. |
 | E.2 | So thẳng hai con số, bỏ qua đơn vị. | Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị. |
 | E.3 | Cộng hai vận tốc rồi chia đôi trong mọi trường hợp. | Luôn viết hai dòng: tổng quãng đường = … ; tổng thời gian = … rồi mới chia. |
@@ -711,11 +711,11 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 **Bài C.3** — (1) Đây là hình gì? — (2) Viết công thức diện tích của hình đó. — (3) Kiểm tra xem công thức có chia 2 không.
 **Bài C.4** — (1) Việc cần làm diễn ra ở viền hay ở mặt trong? — (2) Ở viền thì tính chu vi, ở mặt trong thì tính diện tích. — (3) Chia cho kích thước của một đơn vị (một viên gạch, một khoảng cây).
 **Bài C.5** — (1) Mua nhiều vở hơn thì tiền nhiều hơn hay ít hơn? — (2) Tìm giá của một quyển vở. — (3) Nhân giá một quyển với số quyển cần mua.
-**Bài D.1** — (1) Chu vi đáy bằng bao nhiêu? — (2) Diện tích xung quanh = chu vi đáy × chiều cao. — (3) Toàn phần thì cộng thêm hai mặt đáy.
-**Bài D.2** — (1) Đổi giờ khởi hành ra phút tính từ 0 giờ. — (2) Cộng thêm thời gian đi (tính bằng phút). — (3) Đổi tổng số phút trở lại thành giờ và phút.
+**Bài D.1** — (1) Đề cho bán kính hay đường kính? — (2) Chu vi dùng đường kính; diện tích dùng bán kính. — (3) Nhân với 3,14 ở bước cuối.
+**Bài D.2** — (1) Tính tổng khối lượng theo ki-lô-gam. — (2) Đề hỏi kết quả theo đơn vị nào? — (3) Đổi kết quả sang đơn vị đó.
 **Bài D.3** — (1) Đơn vị thể tích liền kề hơn kém nhau mấy lần? — (2) Đếm số bậc giữa hai đơn vị. — (3) 1 dm³ bằng đúng 1 lít.
-**Bài D.4** — (1) Vẽ ba đoạn thẳng theo đúng số phần. — (2) Tổng cộng có bao nhiêu phần bằng nhau? — (3) Một phần bằng bao nhiêu?
-**Bài D.5** — (1) Tính tổng khối lượng theo ki-lô-gam. — (2) Đề hỏi kết quả theo đơn vị nào? — (3) Đổi kết quả sang đơn vị đó.
+**Bài D.4** — (1) Đổi giờ khởi hành ra phút tính từ 0 giờ. — (2) Cộng thêm thời gian đi (tính bằng phút). — (3) Đổi tổng số phút trở lại thành giờ và phút.
+**Bài D.5** — (1) Vẽ ba đoạn thẳng theo đúng số phần. — (2) Tổng cộng có bao nhiêu phần bằng nhau? — (3) Một phần bằng bao nhiêu?
 **Bài E.1** — (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
 **Bài E.2** — (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
 **Bài E.3** — (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
@@ -745,11 +745,11 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | C.3 | Tam giác đáy 10 cm, cao 6 cm. Diện tích bằng bao nhiêu? | 30 cm² |
 | C.4 | Vườn dài 20 m rộng 10 m, rào xung quanh cần bao nhiêu mét rào? | 60 m |
 | C.5 | Mua 4 quyển vở hết 24 nghìn. Mua 10 quyển hết bao nhiêu? | 60 nghìn |
-| D.1 | Hình lập phương cạnh 4 cm. Thể tích bằng bao nhiêu? | 64 cm³ |
-| D.2 | Tàu chạy lúc 7 giờ 40 phút, đi hết 2 giờ 35 phút. Đến lúc mấy giờ? | 10 giờ 15 phút |
+| D.1 | Hình tròn bán kính 5 cm. Tính diện tích. | 78,5 cm² |
+| D.2 | Xe chở 20 bao gạo, mỗi bao 50 kg. Xe chở mấy tạ? | 10 tạ |
 | D.3 | 2 m³ = … lít | 2 000 |
-| D.4 | Chia 120 cây theo tỉ lệ 1 : 2 : 3. Mỗi phần bao nhiêu cây? | 20, 40, 60 |
-| D.5 | Xe chở 20 bao gạo, mỗi bao 50 kg. Xe chở mấy tạ? | 10 tạ |
+| D.4 | Tàu chạy lúc 7 giờ 40 phút, đi hết 2 giờ 35 phút. Đến lúc mấy giờ? | 10 giờ 15 phút |
+| D.5 | Chia 120 cây theo tỉ lệ 1 : 2 : 3. Mỗi phần bao nhiêu cây? | 20, 40, 60 |
 | E.1 | 3 m² = … dm² | 300 |
 | E.2 | So sánh: 3 kg … 2 500 g | > |
 | E.3 | Đi 2 giờ với 30 km/giờ rồi 2 giờ với 50 km/giờ. Vận tốc trung bình? | 40 km/giờ |

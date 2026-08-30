@@ -44,8 +44,8 @@ Họ và tên: ......................................... Lớp: ......... Điể
 > **KIẾN THỨC NỀN CỦA CHƯƠNG**
 > 1. Thứ tự trong tập số tự nhiên
 > 2. Cấu tạo thập phân của số tự nhiên
-> 3. Dấu hiệu chia hết cho 2, 3, 5, 9
-> 4. Quy tắc làm tròn, giá trị hàng
+> 3. Dấu hiệu chia hết, chữ số hàng cao nhất khác 0
+> 4. Dấu hiệu chia hết cho 2, 3, 5, 9
 
 ---
 
@@ -234,45 +234,18 @@ g) 55 × 19
 
 ## PHẦN D — DẠNG 5 – DẠNG 6 VÀ DẠNG PHỐI HỢP · Mức M3 — Vận dụng · 20 phút · 20 điểm
 
-### Bài 1. (4 điểm) Tổng – tỉ, hiệu – tỉ khi một dữ kiện bị giấu
-
-Việc đầu tiên là gọi tên dữ kiện bị giấu.
-
-a) Kho A và trang trại chứa tất cả 297 kg xi măng. Nếu chia số xi măng ở kho A thành 4 phần bằng nhau thì số xi măng ở trang trại bằng 5 phần như thế. Mỗi nơi chứa bao nhiêu kg?
-b) Hợp tác xã chứa 10 kg xi măng. Nếu hợp tác xã nhận thêm 20 kg thì bằng số xi măng ở trang trại. Hỏi cả hai nơi chứa bao nhiêu kg?
-c) Số đường ở kho B bằng 5 số đường ở kho A. Nếu chuyển 70 kg từ kho B sang kho A thì kho B vẫn còn nhiều hơn. Biết kho B hơn kho A 140 kg, tìm số đường mỗi nơi.
-d) Xưởng và trang trại chứa tất cả 308 kg xi măng. Nếu chia số xi măng ở xưởng thành 5 phần bằng nhau thì số xi măng ở trang trại bằng 6 phần như thế. Mỗi nơi chứa bao nhiêu kg?
-
-### Bài 2. (4 điểm) Tổng của các số tự nhiên liên tiếp
+### Bài 1. (4 điểm) Tổng của các số tự nhiên liên tiếp
 
 Với mỗi ý, tìm số theo yêu cầu.
 
-a) Tổng của 9 số tự nhiên liên tiếp bằng 4 410. Tìm số bé nhất trong 9 số đó.
-b) Tổng của 5 số tự nhiên liên tiếp bằng 2 070. Tìm số bé nhất trong 5 số đó.
-c) Tổng của 7 số tự nhiên liên tiếp bằng 3 010. Tìm số bé nhất trong 7 số đó.
-d) Tổng của 5 số tự nhiên liên tiếp bằng 705. Tìm số bé nhất trong 5 số đó.
+a) Tổng của 3 số tự nhiên liên tiếp bằng 966. Tìm số bé nhất trong 3 số đó.
+b) Tổng của 9 số tự nhiên liên tiếp bằng 2 196. Tìm số bé nhất trong 9 số đó.
+c) Tổng của 3 số tự nhiên liên tiếp bằng 1 002. Tìm số bé nhất trong 3 số đó.
+d) Tổng của 9 số tự nhiên liên tiếp bằng 3 924. Tìm số bé nhất trong 9 số đó.
 
-### Bài 3. (4 điểm) Số chia hết cho nhiều số cùng lúc
+### Bài 2. (4 điểm) Lập số có ba chữ số khác nhau
 
-Trả lời gọn, có thể dùng dãy cách đều.
-
-a) Có bao nhiêu số từ 195 đến 554 vừa chia hết cho 2 vừa chia hết cho 9? Số bé nhất trong đó là số nào?
-b) Có bao nhiêu số từ 102 đến 921 vừa chia hết cho 2 vừa chia hết cho 5? Số bé nhất trong đó là số nào?
-c) Có bao nhiêu số từ 250 đến 476 vừa chia hết cho 2 vừa chia hết cho 9? Số bé nhất trong đó là số nào?
-d) Có bao nhiêu số từ 98 đến 760 vừa chia hết cho 5 vừa chia hết cho 9? Số bé nhất trong đó là số nào?
-
-### Bài 4. (4 điểm) Chữ số tận cùng của tổng, hiệu, tích
-
-Không tính hết phép tính, chỉ tìm chữ số tận cùng.
-
-a) Hiệu 7 357 − 6 614 có chữ số tận cùng là chữ số nào?
-b) Tích 8 915 × 4 917 có chữ số tận cùng là chữ số nào?
-c) Tổng 7 925 + 8 671 có chữ số tận cùng là chữ số nào?
-d) Tích 3 081 × 7 524 có chữ số tận cùng là chữ số nào?
-
-### Bài 5. (4 điểm) Lập số có ba chữ số khác nhau
-
-Cho ba chữ số **0, 3, 9**. Lập các số có ba chữ số khác nhau từ ba chữ số này.
+Cho ba chữ số **1, 3, 6**. Lập các số có ba chữ số khác nhau từ ba chữ số này.
 
 a) Viết tất cả các số lập được (theo thứ tự từ bé đến lớn).
 b) Lập được tất cả bao nhiêu số?
@@ -281,6 +254,36 @@ d) Số bé nhất lập được là số nào?
 e) Trong các số đó có bao nhiêu số chẵn?
 f) Có bao nhiêu số chia hết cho 5?
 g) Tổng của số lớn nhất và số bé nhất bằng bao nhiêu?
+
+### Bài 3. (4 điểm) Tìm số bằng cách thử và loại
+
+Với mỗi câu, viết ra danh sách đã thử rồi mới ghi đáp số. Đáp số có thể gồm nhiều số.
+
+a) Tìm mọi số có hai chữ số vừa chia hết cho 3, vừa có tổng hai chữ số bằng 9.
+b) Tìm mọi số có hai chữ số vừa chia hết cho 5, vừa có tổng hai chữ số bằng 14.
+c) Tìm mọi số có hai chữ số vừa chia hết cho 6, vừa có tổng hai chữ số bằng 6.
+d) Tìm mọi số có hai chữ số vừa chia hết cho 6, vừa có tổng hai chữ số bằng 9.
+
+### Bài 4. (4 điểm) Chữ số tận cùng của tổng, hiệu, tích
+
+Không tính hết phép tính, chỉ tìm chữ số tận cùng.
+
+a) Tích 4 168 × 1 579 có chữ số tận cùng là chữ số nào?
+b) Hiệu 8 673 − 2 674 có chữ số tận cùng là chữ số nào?
+c) Tổng 7 387 + 2 040 có chữ số tận cùng là chữ số nào?
+d) Tích 7 474 × 2 523 có chữ số tận cùng là chữ số nào?
+e) Tổng 9 025 + 3 351 có chữ số tận cùng là chữ số nào?
+
+### Bài 5. (4 điểm) Số chia hết cho nhiều số cùng lúc
+
+Trả lời gọn, có thể dùng dãy cách đều.
+
+a) Có bao nhiêu số từ 26 đến 427 vừa chia hết cho 2 vừa chia hết cho 5? Số bé nhất trong đó là số nào?
+b) Có bao nhiêu số từ 249 đến 1 116 vừa chia hết cho 5 vừa chia hết cho 9? Số bé nhất trong đó là số nào?
+c) Có bao nhiêu số từ 172 đến 765 vừa chia hết cho 2 vừa chia hết cho 9? Số bé nhất trong đó là số nào?
+d) Có bao nhiêu số từ 115 đến 683 vừa chia hết cho 2 vừa chia hết cho 9? Số bé nhất trong đó là số nào?
+e) Có bao nhiêu số từ 174 đến 969 vừa chia hết cho 2 vừa chia hết cho 5? Số bé nhất trong đó là số nào?
+f) Có bao nhiêu số từ 111 đến 1 010 vừa chia hết cho 2 vừa chia hết cho 5? Số bé nhất trong đó là số nào?
 
 ---
 
@@ -438,39 +441,39 @@ f) Lỗi nào dễ mắc ở đề này?
 **Lỗi thường gặp:** Nhân với 10 rồi quên cộng hoặc trừ phần bù. Phòng: Viết luôn dấu ± và số bù ra bên cạnh trước khi nhân.
 
 ### Bài D.1
-**Đáp số:** a) kho A: 132 kg, trang trại: 165 kg · b) 40 kg · c) kho A: 35 kg, kho B: 175 kg · d) xưởng: 140 kg, trang trại: 168 kg
-**Hướng giải:** BẪY — Dữ kiện bị giấu sau một câu mô tả. Đề không cho thẳng tổng, hiệu hay tỉ số mà mô tả vòng. Bước bắt buộc đầu tiên: **dịch câu mô tả thành một con số** rồi mới vẽ sơ đồ và giải như bài chuẩn.
-**Nhãn tư duy:** TD2, TD6. Điểm chốt: Dịch xong dữ kiện ẩn thì bài trở lại **đúng dạng chuẩn**.
-**Lỗi thường gặp:** Lao vào tính khi chưa xác định được tổng, hiệu hay tỉ số. Phòng: Viết ba dòng trước khi tính: Tổng = … ; Hiệu = … ; Tỉ số = … ; dòng nào chưa biết thì để trống và đi tìm.
-**Gợi ý 3 tầng:** (1) Đề đã cho tổng chưa? Cho hiệu chưa? Cho tỉ số chưa? — (2) Câu nào trong đề đang mô tả cái còn thiếu? — (3) Dịch câu đó thành một con số rồi giải như bài chuẩn.
-
-### Bài D.2
-**Đáp số:** a) 486 · b) 412 · c) 427 · d) 139
+**Đáp số:** a) 321 · b) 240 · c) 333 · d) 432
 **Hướng giải:** Với một số **lẻ** các số tự nhiên liên tiếp, số ở giữa chính là trung bình cộng: số giữa = tổng : số lượng. Số bé nhất bằng số giữa trừ đi một nửa số lượng còn lại.
 **Nhãn tư duy:** TD3, TD4. Điểm chốt: Với số lượng lẻ thì **số giữa = tổng : số lượng** — đó là chìa khoá.
 **Lỗi thường gặp:** Lấy tổng chia cho số lượng rồi nhận luôn kết quả là số bé nhất. Phòng: Vẽ dãy số ra, đánh dấu vị trí số giữa trước khi lùi về số đầu.
 **Gợi ý 3 tầng:** (1) Số lượng số hạng là số chẵn hay lẻ? — (2) Với số lượng lẻ, số ở giữa bằng tổng chia số lượng. — (3) Từ số giữa lùi về đầu dãy mấy đơn vị?
 
+### Bài D.2
+**Đáp số:** a) 136 · 163 · 316 · 361 · 613 · 631 · b) 6 · c) 631 · d) 136 · e) 2 · f) 0 · g) 767
+**Hướng giải:** BẪY — Chữ số 0 không đứng đầu. Lập số theo thứ tự: chọn chữ số hàng trăm trước (khác 0), rồi hàng chục, rồi hàng đơn vị, mỗi chữ số dùng đúng một lần. Viết có hệ thống theo nhóm cùng chữ số hàng trăm để không bỏ sót và không trùng lặp.
+**Nhãn tư duy:** TD4, TD6. Điểm chốt: Chữ số **0 không được đứng ở hàng trăm**, nên nếu bộ có chữ số 0 thì số lượng số lập được ít hơn.
+**Lỗi thường gặp:** Viết lộn xộn nên vừa sót vừa trùng; hoặc nhận cả số bắt đầu bằng 0. Phòng: Liệt kê theo nhóm: cố định hàng trăm rồi mới hoán vị hai chữ số còn lại.
+**Gợi ý 3 tầng:** (1) Chọn chữ số hàng trăm trước — chữ số nào không được chọn? — (2) Với mỗi chữ số hàng trăm, hai chữ số còn lại xếp được mấy cách? — (3) Liệt kê theo nhóm để kiểm soát, đừng viết ngẫu nhiên.
+
 ### Bài D.3
-**Đáp số:** a) 20 số, bé nhất là 198 · b) 82 số, bé nhất là 110 · c) 13 số, bé nhất là 252 · d) 14 số, bé nhất là 135
-**Hướng giải:** BẪY — BCNN chứ không phải tích hai số chia. Số vừa chia hết cho hai số thì chia hết cho bội chung nhỏ nhất của chúng. Các số đó lập thành dãy cách đều với khoảng cách bằng bội chung nhỏ nhất; dùng công thức đếm số hạng của dãy cách đều.
-**Nhãn tư duy:** TD2, TD4. Điểm chốt: Khoảng cách của dãy là **bội chung nhỏ nhất**, không phải tích hai số khi hai số không nguyên tố cùng nhau.
-**Lỗi thường gặp:** Lấy tích hai số làm khoảng cách (ví dụ dùng 27 cho “chia hết cho 3 và 9”). Phòng: Kiểm tra bằng cách viết ba số đầu tiên của dãy rồi xem khoảng cách thật.
-**Gợi ý 3 tầng:** (1) Số chia hết cho cả hai số thì chia hết cho số nào? — (2) Tìm bội chung nhỏ nhất của hai số đó. — (3) Các số cần tìm cách đều nhau đúng bằng bội chung nhỏ nhất.
+**Đáp số:** a) 18, 27, 36, 45, 54, 63, 72, 81, 90 · b) 95 · c) 24, 42, 60 · d) 18, 36, 54, 72, 90
+**Hướng giải:** BẪY — Dừng ở đáp số đầu tiên. Chọn điều kiện cho ít khả năng nhất để liệt kê trước, rồi mới đem điều kiện còn lại ra thử. Làm ngược thứ tự ấy thì phải thử gấp nhiều lần.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Phải xét **hết** danh sách. Bài thử chọn thường có hơn một đáp số.
+**Lỗi thường gặp:** Tìm được một số thoả rồi dừng, bỏ sót các đáp số còn lại. Phòng: Viết danh sách ra giấy và gạch bỏ từng số, đừng thử nhẩm trong đầu.
+**Gợi ý 3 tầng:** (1) Trong hai điều kiện, điều kiện nào cho ít số hơn? — (2) Liệt kê hết các số thoả điều kiện ấy. — (3) Thử từng số với điều kiện còn lại, đừng dừng sớm.
 
 ### Bài D.4
-**Đáp số:** a) 3 · b) 5 · c) 6 · d) 4
+**Đáp số:** a) 2 · b) 9 · c) 7 · d) 2 · e) 6
 **Hướng giải:** Chữ số tận cùng của tổng, hiệu, tích chỉ phụ thuộc vào chữ số tận cùng của các số tham gia. Chỉ cần lấy các chữ số tận cùng ra tính với nhau rồi lấy chữ số tận cùng của kết quả.
 **Nhãn tư duy:** TD5, TD2. Điểm chốt: Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu của số.
 **Lỗi thường gặp:** Tính trọn cả phép tính, vừa lâu vừa dễ sai. Phòng: Che phần đầu của hai số, chỉ để lộ chữ số cuối cùng.
 **Gợi ý 3 tầng:** (1) Chữ số tận cùng của mỗi số là chữ số nào? — (2) Thực hiện phép tính với riêng hai chữ số tận cùng đó. — (3) Lấy chữ số tận cùng của kết quả vừa tính.
 
 ### Bài D.5
-**Đáp số:** a) 309 · 390 · 903 · 930 · b) 4 · c) 930 · d) 309 · e) 2 · f) 2 · g) 1 239
-**Hướng giải:** BẪY — Chữ số 0 không đứng đầu. Lập số theo thứ tự: chọn chữ số hàng trăm trước (khác 0), rồi hàng chục, rồi hàng đơn vị, mỗi chữ số dùng đúng một lần. Viết có hệ thống theo nhóm cùng chữ số hàng trăm để không bỏ sót và không trùng lặp.
-**Nhãn tư duy:** TD4, TD6. Điểm chốt: Chữ số **0 không được đứng ở hàng trăm**, nên nếu bộ có chữ số 0 thì số lượng số lập được ít hơn.
-**Lỗi thường gặp:** Viết lộn xộn nên vừa sót vừa trùng; hoặc nhận cả số bắt đầu bằng 0. Phòng: Liệt kê theo nhóm: cố định hàng trăm rồi mới hoán vị hai chữ số còn lại.
-**Gợi ý 3 tầng:** (1) Chọn chữ số hàng trăm trước — chữ số nào không được chọn? — (2) Với mỗi chữ số hàng trăm, hai chữ số còn lại xếp được mấy cách? — (3) Liệt kê theo nhóm để kiểm soát, đừng viết ngẫu nhiên.
+**Đáp số:** a) 40 số, bé nhất là 30 · b) 19 số, bé nhất là 270 · c) 33 số, bé nhất là 180 · d) 31 số, bé nhất là 126 · e) 79 số, bé nhất là 180 · f) 90 số, bé nhất là 120
+**Hướng giải:** BẪY — BCNN chứ không phải tích hai số chia. Số vừa chia hết cho hai số thì chia hết cho bội chung nhỏ nhất của chúng. Các số đó lập thành dãy cách đều với khoảng cách bằng bội chung nhỏ nhất; dùng công thức đếm số hạng của dãy cách đều.
+**Nhãn tư duy:** TD2, TD4. Điểm chốt: Khoảng cách của dãy là **bội chung nhỏ nhất**, không phải tích hai số khi hai số không nguyên tố cùng nhau.
+**Lỗi thường gặp:** Lấy tích hai số làm khoảng cách (ví dụ dùng 27 cho “chia hết cho 3 và 9”). Phòng: Kiểm tra bằng cách viết ba số đầu tiên của dãy rồi xem khoảng cách thật.
+**Gợi ý 3 tầng:** (1) Số chia hết cho cả hai số thì chia hết cho số nào? — (2) Tìm bội chung nhỏ nhất của hai số đó. — (3) Các số cần tìm cách đều nhau đúng bằng bội chung nhỏ nhất.
 
 ### Bài E.1
 **Đáp số:** a) Xác định chữ số và giá trị chữ số theo hàng · b) Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” · c) Cấu tạo thập phân của số tự nhiên · d) Đánh số hàng từ phải sang trái rồi tra bảng hàng · e) Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị. · f) Đếm hàng từ trái sang phải nên lệch hàng.

@@ -46,27 +46,27 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần III**
 
-- **Bài III.1** — a) 419 · b) 107 · c) 487 · d) 244
-- **Bài III.2** — a) 80 · b) 34 · c) 53 000 · d) 22 000
-- **Bài III.3** — a) 21 số, bé nhất là 252 · b) 13 số, bé nhất là 90 · c) 18 số, bé nhất là 126 · d) 27 số, bé nhất là 216 · e) 102 số, bé nhất là 132
-- **Bài III.4** — a) 5 tạ 40 kg · b) 9 tạ 50 kg · c) 4 tạ 40 kg · d) 5 tạ
-- **Bài III.5** — a) 11 giờ 42 phút · b) 9 giờ 36 phút · c) 13 giờ 27 phút · d) 12 giờ 52 phút · e) 16 giờ 25 phút · f) 20 giờ 53 phút
+- **Bài III.1** — a) 13 giờ 3 phút · b) 16 giờ 16 phút · c) 15 giờ 11 phút · d) 18 giờ 19 phút · e) 11 giờ 36 phút · f) 16 giờ 45 phút
+- **Bài III.2** — a) 27 · b) 3 000 · c) 71 000 · d) 47
+- **Bài III.3** — a) 4 tạ 50 kg · b) 5 tạ 70 kg · c) 10 tạ 20 kg · d) 3 tạ 75 kg · e) 5 tạ
+- **Bài III.4** — a) 336 · b) 419 · c) 31 · d) 426 · e) 236 · f) 131
+- **Bài III.5** — a) 243 kg · b) 44 kg · c) 448 kg · d) 200 kg · e) 9 kg
 
 **Phần IV**
 
-- **Bài IV.1** — a) 3 lần · b) 3 kết quả: nghiêng trái, nghiêng phải, thăng bằng · c) 3 phần · d) 4 · e) Phúc · f) 2 lần
-- **Bài IV.2** — a) 32 · b) 127 · c) 1 590 · d) 79,5 · e) 159 · f) 159
-- **Bài IV.3** — a) 200 lít · b) 270 lít · c) 54 lít · d) 20 lít · e) 120 lít · f) 24 lít
-- **Bài IV.4** — a) 114 quyển · b) 14 quyển · c) 20 quyển · d) 5 quyển · e) 15 quyển
-- **Bài IV.5** — a) 12 km/giờ · b) 5 giờ · c) 72 km · d) 36 km
+- **Bài IV.1** — a) 90 · b) 207 · c) 5 940 · d) 148,5 · e) 297 · f) 297
+- **Bài IV.2** — a) 4 km/giờ · b) 6 giờ · c) 200 km · d) 50 km/giờ · e) 4 giờ · f) 360 km · g) 20 km/giờ
+- **Bài IV.3** — a) Sơn học vẽ; Khánh học cờ vua; Chi học bơi · b) Minh học bơi; Dũng học cờ vua; Nam học vẽ · c) Hùng học hát; Yến học đàn; Hà học múa · d) Quân học cầu lông; Lan học bóng đá; Chi học bóng rổ
+- **Bài IV.4** — a) 13 quyển · b) 39 quyển · c) 33 quyển · d) 17 quyển · e) 150 quyển · f) 54 quyển
+- **Bài IV.5** — a) 60 lít · b) 40 lít · c) 150 lít · d) 100 lít · e) 60 lít
 
 **Phần V**
 
-- **Bài V.1** — a) 3,14 ngày · b) 3,08 ngày · c) 1,8 ngày · d) 2,8 ngày
-- **Bài V.2** — a) 5 752 kg · b) 57 tạ 52 kg · c) 1 438 kg, không thừa · d) 6 xe · e) 28 tạ 76 kg · f) vì phần thóc còn lại vẫn cần thêm một xe nữa để chở
-- **Bài V.3** — a) 35 km/giờ · b) 42 km/giờ · c) 33,75 km/giờ · d) 21,33 km/giờ · e) 37,5 km/giờ
-- **Bài V.4** — a) 255 000 đồng · b) 267 750 đồng · c) ít hơn 32 250 đồng · d) 803 250 đồng · e) không đổi, vì nhân hai lần theo cùng hai tỉ lệ · f) 85%
-- **Bài V.5** — a) 2 550 · b) 325 · c) 2 500 · d) 400
+- **Bài V.1** — a) 170 000 đồng · b) 183 600 đồng · c) ít hơn 16 400 đồng · d) 1 101 600 đồng · e) không đổi, vì nhân hai lần theo cùng hai tỉ lệ · f) 85%
+- **Bài V.2** — a) 1,92 ngày · b) 7 ngày · c) 5,69 ngày · d) 6,12 ngày
+- **Bài V.3** — a) 9,42 cm² · b) 28,26 cm² · c) 193,5 cm² · d) 122,46 cm² · e) 28,26 cm²
+- **Bài V.4** — a) 3 470 kg · b) 34 tạ 70 kg · c) 694 kg, không thừa · d) 4 xe · e) 17 tạ 35 kg · f) vì phần thóc còn lại vẫn cần thêm một xe nữa để chở
+- **Bài V.5** — a) 33,75 km/giờ · b) 20 km/giờ · c) 30 km/giờ · d) 35 km/giờ · e) 22,67 km/giờ · f) 16 km/giờ
 
 ---
 
@@ -278,91 +278,11 @@ Kết quả: **80 kg**.
 
 *Điểm chốt:* Từ trung bình cộng luôn tìm được **tổng** trước, rồi mới tính tiếp.
 
-### Bài III.1 — Tổng của các số tự nhiên liên tiếp
+### Bài III.1 — Tính thời điểm đến, thời gian đi
 
 **Các bước giải**
 
-Xét ý a: Tổng của 5 số tự nhiên liên tiếp bằng 2 105. Tìm số bé nhất trong 5 số đó.
-
-Đọc vị: đây là dạng **Dãy số tự nhiên liên tiếp có tổng cho trước**; dấu hiệu là Cụm “… số tự nhiên liên tiếp có tổng bằng …”.
-
-Kiến thức phải dùng: Trung bình cộng, dãy cách đều.
-
-Cách làm: Tìm số giữa bằng phép chia rồi suy ra hai đầu dãy.
-
-Lối tắt: Tổng của n số liên tiếp (n lẻ) luôn chia hết cho n.
-
-Kết quả: **419**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Với một số **lẻ** các số tự nhiên liên tiếp, số ở giữa chính là trung bình cộng: số giữa = tổng : số lượng. Số bé nhất bằng số giữa trừ đi một nửa số lượng còn lại.
-
-*Điểm chốt:* Với số lượng lẻ thì **số giữa = tổng : số lượng** — đó là chìa khoá.
-
-### Bài III.2 — Đơn vị đo thể tích và dung tích
-
-**Các bước giải**
-
-Xét ý a: 80 dm³ = … lít
-
-Đọc vị: đây là dạng **Đổi đơn vị thể tích, dung tích**; dấu hiệu là Đơn vị có mũ ba, hoặc lít, mi-li-lít.
-
-Kiến thức phải dùng: Bảng đơn vị thể tích; quan hệ dm³ – lít.
-
-Cách làm: Đếm bậc rồi nhân, chia 1 000.
-
-Lối tắt: Mỗi bậc thêm ba chữ số 0.
-
-Kết quả: **80**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Hai đơn vị thể tích liền kề hơn kém nhau **1 000 lần**. 1 dm³ = 1 lít; 1 lít = 1 000 ml; 1 m³ = 1 000 dm³ = 1 000 lít.
-
-*Điểm chốt:* Thể tích nhảy **1 000 lần** mỗi bậc (độ dài 10, diện tích 100, thể tích 1 000).
-
-### Bài III.3 — Số chia hết cho nhiều số cùng lúc
-
-**Các bước giải**
-
-Xét ý a: Có bao nhiêu số từ 250 đến 372 vừa chia hết cho 2 vừa chia hết cho 3? Số bé nhất trong đó là số nào?
-
-Đọc vị: đây là dạng **Đếm số chia hết đồng thời cho nhiều số**; dấu hiệu là Cụm “vừa chia hết cho … vừa chia hết cho …”.
-
-Kiến thức phải dùng: Bội chung nhỏ nhất, dãy số cách đều.
-
-Cách làm: Quy về một số chia duy nhất là BCNN rồi đếm.
-
-Lối tắt: Chia hết cho 2 và 5 thì tận cùng là 0; chia hết cho 2 và 3 thì chia hết cho 6.
-
-Kết quả: **21 số, bé nhất là 252**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Số vừa chia hết cho hai số thì chia hết cho bội chung nhỏ nhất của chúng. Các số đó lập thành dãy cách đều với khoảng cách bằng bội chung nhỏ nhất; dùng công thức đếm số hạng của dãy cách đều.
-
-*Điểm chốt:* Khoảng cách của dãy là **bội chung nhỏ nhất**, không phải tích hai số khi hai số không nguyên tố cùng nhau.
-
-### Bài III.4 — Bài toán thực tế về khối lượng
-
-**Các bước giải**
-
-Xét ý a: Một xe chở 18 bao xi măng, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ xi măng?
-
-Đọc vị: đây là dạng **Bài toán đại lượng có lời văn**; dấu hiệu là Đơn vị trong câu hỏi khác đơn vị trong dữ kiện.
-
-Kiến thức phải dùng: Nhân, chia số tự nhiên; đổi đơn vị khối lượng.
-
-Cách làm: Tính theo đơn vị dữ kiện rồi đổi ở bước cuối.
-
-Lối tắt: 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ.
-
-Kết quả: **5 tạ 40 kg**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Tính tổng khối lượng theo ki-lô-gam trước, sau đó mới đổi sang đơn vị mà đề hỏi. Đừng đổi đơn vị ngay từ đầu vì dễ nhầm.
-
-*Điểm chốt:* Câu hỏi đòi đơn vị nào thì bước **cuối cùng** mới đổi sang đơn vị đó.
-
-### Bài III.5 — Tính thời điểm đến, thời gian đi
-
-**Các bước giải**
-
-Xét ý a: Một chuyến tàu khởi hành lúc 11 giờ 0 phút và đi hết 42 phút. Tàu đến nơi lúc mấy giờ?
+Xét ý a: Một chuyến tàu khởi hành lúc 9 giờ 15 phút và đi hết 3 giờ 48 phút. Tàu đến nơi lúc mấy giờ?
 
 Đọc vị: đây là dạng **Tính thời điểm trong ngày**; dấu hiệu là Cho thời điểm bắt đầu và khoảng thời gian.
 
@@ -372,37 +292,93 @@ Cách làm: Quy về phút, cộng trừ, đổi lại.
 
 Lối tắt: Cộng tròn giờ trước rồi cộng phần phút lẻ sau.
 
-Kết quả: **11 giờ 42 phút**.
+Kết quả: **13 giờ 3 phút**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Đổi cả giờ khởi hành lẫn thời gian đi về **phút**, cộng lại, rồi đổi kết quả ngược lại thành giờ và phút. Cách này tránh được lỗi nhớ khi phần phút vượt 60.
 
 *Điểm chốt:* Đổi hết về phút rồi mới cộng — an toàn hơn cộng trực tiếp.
 
-### Bài IV.1 — Cân đĩa và số lần cân ít nhất
-
-> **BẪY — Chia ba chứ không chia đôi.**
+### Bài III.2 — Đơn vị đo thể tích và dung tích
 
 **Các bước giải**
 
-Cân đĩa cho **ba** kết quả, nên mỗi lần cân chia được số gói thành ba phần và loại ngay hai phần.
+Xét ý a: 27 dm³ = … lít
 
-Chia 12 gói thành ba phần, mỗi phần nhiều nhất 4 gói.
+Đọc vị: đây là dạng **Đổi đơn vị thể tích, dung tích**; dấu hiệu là Đơn vị có mũ ba, hoặc lít, mi-li-lít.
 
-Đặt hai phần bằng nhau lên hai đĩa: bên nào nhẹ hơn thì gói nhẹ ở đó; cân bằng thì gói nhẹ ở phần còn lại.
+Kiến thức phải dùng: Bảng đơn vị thể tích; quan hệ dm³ – lít.
 
-Lặp lại cách ấy, sau 3 lần thì còn đúng một gói.
+Cách làm: Đếm bậc rồi nhân, chia 1 000.
 
-Đáp số: **3 lần**.
+Lối tắt: Mỗi bậc thêm ba chữ số 0.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Mỗi lần cân bằng cân đĩa cho ba kết quả, nên chia ba chứ không chia đôi. Sau k lần cân phân biệt được nhiều nhất 3 nhân với chính nó k lần vật. Luôn lập luận theo **trường hợp xấu nhất**.
+Kết quả: **27**.
 
-*Điểm chốt:* Cân đĩa cho **ba** kết quả nên chia ba, không chia đôi.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Hai đơn vị thể tích liền kề hơn kém nhau **1 000 lần**. 1 dm³ = 1 lít; 1 lít = 1 000 ml; 1 m³ = 1 000 dm³ = 1 000 lít.
 
-*Muốn khó hơn:* Không biết gói khác biệt nặng hơn hay nhẹ hơn — số lần cân tăng lên.
+*Điểm chốt:* Thể tích nhảy **1 000 lần** mỗi bậc (độ dài 10, diện tích 100, thể tích 1 000).
 
-*Phải chắc trước khi làm bài này:* Phép chia và thói quen lập luận theo trường hợp xấu nhất.
+### Bài III.3 — Bài toán thực tế về khối lượng
 
-### Bài IV.2 — Tổng, trung bình cộng của dãy cách đều
+**Các bước giải**
+
+Xét ý a: Một xe chở 15 bao phân bón, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ phân bón?
+
+Đọc vị: đây là dạng **Bài toán đại lượng có lời văn**; dấu hiệu là Đơn vị trong câu hỏi khác đơn vị trong dữ kiện.
+
+Kiến thức phải dùng: Nhân, chia số tự nhiên; đổi đơn vị khối lượng.
+
+Cách làm: Tính theo đơn vị dữ kiện rồi đổi ở bước cuối.
+
+Lối tắt: 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ.
+
+Kết quả: **4 tạ 50 kg**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Tính tổng khối lượng theo ki-lô-gam trước, sau đó mới đổi sang đơn vị mà đề hỏi. Đừng đổi đơn vị ngay từ đầu vì dễ nhầm.
+
+*Điểm chốt:* Câu hỏi đòi đơn vị nào thì bước **cuối cùng** mới đổi sang đơn vị đó.
+
+### Bài III.4 — Tổng của các số tự nhiên liên tiếp
+
+**Các bước giải**
+
+Xét ý a: Tổng của 9 số tự nhiên liên tiếp bằng 3 060. Tìm số bé nhất trong 9 số đó.
+
+Đọc vị: đây là dạng **Dãy số tự nhiên liên tiếp có tổng cho trước**; dấu hiệu là Cụm “… số tự nhiên liên tiếp có tổng bằng …”.
+
+Kiến thức phải dùng: Trung bình cộng, dãy cách đều.
+
+Cách làm: Tìm số giữa bằng phép chia rồi suy ra hai đầu dãy.
+
+Lối tắt: Tổng của n số liên tiếp (n lẻ) luôn chia hết cho n.
+
+Kết quả: **336**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Với một số **lẻ** các số tự nhiên liên tiếp, số ở giữa chính là trung bình cộng: số giữa = tổng : số lượng. Số bé nhất bằng số giữa trừ đi một nửa số lượng còn lại.
+
+*Điểm chốt:* Với số lượng lẻ thì **số giữa = tổng : số lượng** — đó là chìa khoá.
+
+### Bài III.5 — Tìm phân số của một số qua hai bước
+
+**Các bước giải**
+
+Xét ý a: Một cửa hàng có 432 kg gạo. Ngày đầu bán 1 phần 4 số gạo, ngày thứ hai bán 1 phần 4 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
+
+Đọc vị: đây là dạng **Tìm phân số của một số, nhiều bước**; dấu hiệu là Cụm “… số còn lại”, “… số đó”.
+
+Kiến thức phải dùng: Tìm phân số của một số.
+
+Cách làm: Tính tuần tự, sau mỗi bước ghi lại số còn lại.
+
+Lối tắt: Còn lại sau ngày đầu là (1 − phân số) của tổng; nhân trực tiếp cho nhanh.
+
+Kết quả: **243 kg**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Bước 1: tính số gạo bán ngày đầu bằng cách lấy tổng nhân với phân số. Bước 2: tính số gạo **còn lại** sau ngày đầu. Bước 3: phân số của ngày thứ hai tính trên **số còn lại**, không phải trên tổng ban đầu.
+
+*Điểm chốt:* Cụm “số gạo **còn lại**” đổi hẳn số bị nhân ở bước hai.
+
+### Bài IV.1 — Tổng, trung bình cộng của dãy cách đều
 
 **Các bước giải**
 
@@ -416,61 +392,19 @@ Cách làm: Tìm hai đầu dãy → tổng → trung bình cộng.
 
 Lối tắt: Mọi cặp số hạng cách đều hai đầu đều có tổng bằng nhau.
 
-Kết quả: **32**.
+Kết quả: **90**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
 
 *Điểm chốt:* Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
 
-### Bài IV.3 — Bài toán đại lượng nhiều bước
-
-**Các bước giải**
-
-Xét ý a: Một cửa hàng có 20 thùng dầu, mỗi thùng 20 lít. Cửa hàng đã bán 10 thùng. Hỏi cửa hàng còn lại bao nhiêu lít dầu?
-
-Đọc vị: đây là dạng **Bài toán đại lượng nhiều bước**; dấu hiệu là Cho số nhóm, giá trị mỗi nhóm và số nhóm đã dùng.
-
-Kiến thức phải dùng: Nhân, trừ; đại lượng cùng loại.
-
-Cách làm: Rút gọn số bước bằng cách trừ trước, nhân sau.
-
-Lối tắt: So sánh hai đường giải, chọn đường ít phép tính hơn.
-
-Kết quả: **200 lít**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
-
-*Điểm chốt:* Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
-
-### Bài IV.4 — Chuyển bớt để hai phần bằng nhau
-
-> **BẪY — Hiệu thay đổi gấp đôi số chuyển.**
-
-**Các bước giải**
-
-Xét ý a: Đội Một có 285 quyển sách, nhóm Hoa Phượng có 57 quyển. Hỏi phải chuyển bao nhiêu quyển từ đội Một sang nhóm Hoa Phượng để số sách hai tổ bằng nhau?
-
-Đọc vị: đây là dạng **Chuyển đổi giữa hai đại lượng, tổng không đổi**; dấu hiệu là “Chuyển … từ bên này sang bên kia”.
-
-Kiến thức phải dùng: Bất biến tổng, biến thiên hiệu.
-
-Cách làm: Xét đại lượng không đổi (tổng) và đại lượng đổi gấp đôi (hiệu).
-
-Lối tắt: Sau khi chuyển, mỗi bên bằng nửa tổng — tính nửa tổng rồi trừ là ra ngay.
-
-Kết quả: **114 quyển**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Khi chuyển k đơn vị từ bên nhiều sang bên ít, bên nhiều giảm k còn bên ít tăng k, nên hiệu giảm đi **2k**. Muốn hai bên bằng nhau thì hiệu phải về 0, vậy k = hiệu : 2.
-
-*Điểm chốt:* Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển.
-
-### Bài IV.5 — Quãng đường – vận tốc – thời gian
+### Bài IV.2 — Quãng đường – vận tốc – thời gian
 
 > **BẪY — Đơn vị thời gian.**
 
 **Các bước giải**
 
-Xét ý a: Một người đi 48 km hết 4 giờ. Tính vận tốc.
+Xét ý a: Một người đi 16 km hết 4 giờ. Tính vận tốc.
 
 Đọc vị: đây là dạng **Ba dạng cơ bản của chuyển động đều**; dấu hiệu là Có hai trong ba đại lượng quãng đường, vận tốc, thời gian.
 
@@ -480,91 +414,95 @@ Cách làm: Chọn công thức theo đại lượng cần tìm; đồng bộ đ
 
 Lối tắt: Vẽ tam giác s ở trên, v và t ở dưới: che đại lượng cần tìm là ra công thức.
 
-Kết quả: **12 km/giờ**.
+Kết quả: **4 km/giờ**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** s = v × t; v = s : t; t = s : v. Đơn vị phải khớp: vận tốc km/giờ đi với quãng đường km và thời gian giờ.
 
 *Điểm chốt:* Đơn vị của vận tốc quy định đơn vị của hai đại lượng còn lại.
 
-### Bài V.1 — Tỉ lệ nghịch — so sánh hai phương án
+### Bài IV.3 — Ghép người với môn bằng bảng đúng – sai
+
+> **BẪY — Đánh dấu đúng mà quên gạch phần còn lại.**
 
 **Các bước giải**
 
-Xét ý a: 10 người làm xong một công việc trong 11 ngày. Nếu có thêm 4 người nữa (làm khoẻ như nhau) thì công việc đó hoàn thành sớm hơn bao nhiêu ngày?
+Kẻ bảng ba dòng (Sơn, Khánh, Chi) và ba cột (bơi, cờ vua, vẽ). Mỗi ô ghi ✓ nếu chắc chắn đúng, × nếu chắc chắn sai.
 
-Đọc vị: đây là dạng **Tỉ lệ nghịch, so sánh hai phương án**; dấu hiệu là Thay đổi số người, hỏi thay đổi thời gian.
+Manh mối thứ nhất cho hai dấu ×: dòng Sơn bị gạch ở cột cờ vua và cột bơi.
 
-Kiến thức phải dùng: Đại lượng tỉ lệ nghịch, tổng số ngày công.
+Dòng Sơn chỉ còn một ô trống, nên ô ấy là ✓: **Sơn học vẽ**. Đây là bước hay bị quên tiếp theo — đã có ✓ thì phải gạch × cho cả **cột** vẽ ở hai dòng còn lại.
 
-Cách làm: Bám vào tổng số ngày công không đổi.
+Manh mối thứ hai: dòng Khánh bị gạch ở cột bơi. Cột vẽ cũng đã gạch, nên dòng Khánh chỉ còn một ô: **Khánh học cờ vua**.
 
-Lối tắt: Số người tăng gấp k lần thì số ngày giảm còn 1 phần k.
+Còn lại **Chi học bơi**. Thử lại cả hai manh mối đều đúng.
 
-Kết quả: **3,14 ngày**.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Mỗi dòng một người, mỗi cột một khả năng. Đánh × cho điều chắc chắn sai. Dòng nào chỉ còn một ô trống thì ô ấy là ✓ — và ngay sau đó phải gạch × cho cả cột chứa ô ấy.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Tổng số ngày công không đổi: số người × số ngày. Tính tổng số ngày công, chia cho số người mới ra số ngày mới, rồi lấy số ngày cũ trừ số ngày mới để biết sớm hơn bao nhiêu.
+*Điểm chốt:* Đặt được một ✓ thì **cả dòng và cả cột** còn lại đều thành ×. Bỏ bước gạch cột là chỗ bài bị tắc giữa chừng.
 
-*Điểm chốt:* Đại lượng bất biến ở đây là **tổng số ngày công**.
+*Muốn khó hơn:* Thêm bạn thứ tư và môn thứ tư, cùng một manh mối dạng “bạn X học môn mà bạn Y không học”.
 
-### Bài V.2 — Đại lượng khối lượng — đổi đơn vị và chia phần
+*Phải chắc trước khi làm bài này:* Đọc hiểu câu phủ định và cách kẻ bảng hai chiều.
 
-> **BẪY — Làm tròn lên khi hỏi số xe ít nhất.**
+### Bài IV.4 — Chuyển bớt để hai phần bằng nhau
 
-**Các bước giải**
-
-Bước 1 — đổi về ki-lô-gam: 5 tấn = 5 000 kg; 7 tạ = 700 kg.
-
-Tổng: 5 000 + 700 + 52 = 5 752 (kg).
-
-Bước 2 — chia cho 4 xe: 5 752 : 4 = 1 438 .
-
-Bước 3 — mỗi xe chở 1 tấn = 1 000 kg, cần 5 752 : 1 000 = 5 xe đầy, còn 752 kg nữa nên phải thêm một xe.
-
-Đáp số ý a: **5 752 kg**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Quy hết về một đơn vị rồi mới tính. Với câu hỏi “cần ít nhất bao nhiêu xe”, phần dư vẫn phải có một xe chở, nên **làm tròn lên**.
-
-*Điểm chốt:* Câu hỏi “ít nhất bao nhiêu xe” luôn **làm tròn lên**.
-
-*Muốn khó hơn:* Mỗi xe chở tối đa 1,5 tấn — phải đổi sang đơn vị chung trước.
-
-*Phải chắc trước khi làm bài này:* Bảng đơn vị khối lượng và phép chia có dư.
-
-### Bài V.3 — Vận tốc trung bình trên cả quãng đường
+> **BẪY — Hiệu thay đổi gấp đôi số chuyển.**
 
 **Các bước giải**
 
-Xét ý a: Một người đi 2 giờ đầu với vận tốc 30 km/giờ, 2 giờ sau với vận tốc 40 km/giờ. Tính vận tốc trung bình trên cả quãng đường.
+Xét ý a: Tổ Hai có 65 quyển sách, nhóm Hoa Phượng có 39 quyển. Hỏi phải chuyển bao nhiêu quyển từ tổ Hai sang nhóm Hoa Phượng để số sách hai tổ bằng nhau?
 
-Đọc vị: đây là dạng **Vận tốc trung bình**; dấu hiệu là Hai chặng có vận tốc khác nhau.
+Đọc vị: đây là dạng **Chuyển đổi giữa hai đại lượng, tổng không đổi**; dấu hiệu là “Chuyển … từ bên này sang bên kia”.
 
-Kiến thức phải dùng: Công thức vận tốc; trung bình cộng có trọng số.
+Kiến thức phải dùng: Bất biến tổng, biến thiên hiệu.
 
-Cách làm: Tính tổng quãng đường, tổng thời gian rồi chia.
+Cách làm: Xét đại lượng không đổi (tổng) và đại lượng đổi gấp đôi (hiệu).
 
-Lối tắt: Kiểm tra: vận tốc trung bình luôn nằm giữa hai vận tốc đã cho.
+Lối tắt: Sau khi chuyển, mỗi bên bằng nửa tổng — tính nửa tổng rồi trừ là ra ngay.
 
-Kết quả: **35 km/giờ**.
+Kết quả: **13 quyển**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Vận tốc trung bình = **tổng quãng đường : tổng thời gian**. Phải tính riêng quãng đường của từng chặng rồi cộng lại, sau đó chia cho tổng thời gian.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Khi chuyển k đơn vị từ bên nhiều sang bên ít, bên nhiều giảm k còn bên ít tăng k, nên hiệu giảm đi **2k**. Muốn hai bên bằng nhau thì hiệu phải về 0, vậy k = hiệu : 2.
 
-*Điểm chốt:* Chỉ khi hai chặng **cùng thời gian** thì vận tốc trung bình mới bằng trung bình cộng hai vận tốc.
+*Điểm chốt:* Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển.
 
-### Bài V.4 — Mua bán có chiết khấu và thuế
+### Bài IV.5 — Bài toán đại lượng nhiều bước
+
+**Các bước giải**
+
+Xét ý a: Một cửa hàng có 17 thùng nước, mỗi thùng 15 lít. Cửa hàng đã bán 13 thùng. Hỏi cửa hàng còn lại bao nhiêu lít nước?
+
+Đọc vị: đây là dạng **Bài toán đại lượng nhiều bước**; dấu hiệu là Cho số nhóm, giá trị mỗi nhóm và số nhóm đã dùng.
+
+Kiến thức phải dùng: Nhân, trừ; đại lượng cùng loại.
+
+Cách làm: Rút gọn số bước bằng cách trừ trước, nhân sau.
+
+Lối tắt: So sánh hai đường giải, chọn đường ít phép tính hơn.
+
+Kết quả: **60 lít**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
+
+*Điểm chốt:* Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
+
+### Bài V.1 — Mua bán có chiết khấu và thuế
+
+> **BẪY — Mốc 100% đổi sau mỗi bước.**
 
 **Các bước giải**
 
 Giá niêm yết ứng với 100%.
 
-Bước 1 — chiết khấu 15% nghĩa là còn 85%: 300 000 : 100 × 85 = 255 000 (đồng).
+Bước 1 — chiết khấu 15% nghĩa là còn 85%: 200 000 : 100 × 85 = 170 000 (đồng).
 
-Bước 2 — thuế tính trên giá **đã chiết khấu**: 255 000 : 100 × 5 = 12 750 (đồng).
+Bước 2 — thuế tính trên giá **đã chiết khấu**: 170 000 : 100 × 8 = 13 600 (đồng).
 
-Bước 3 — giá phải trả: 255 000 + 12 750 = 267 750 (đồng).
+Bước 3 — giá phải trả: 170 000 + 13 600 = 183 600 (đồng).
 
-So với giá niêm yết: ít hơn 32 250 đồng.
+So với giá niêm yết: ít hơn 16 400 đồng.
 
-Đáp số: **267 750 đồng**.
+Đáp số: **183 600 đồng**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Mỗi lần tính phần trăm phải xác định lại **mốc 100%**. Chiết khấu tính trên giá niêm yết; thuế tính trên giá đã chiết khấu. Vì cả hai đều là phép nhân với một tỉ lệ nên đổi thứ tự không làm đổi kết quả.
 
@@ -574,25 +512,87 @@ So với giá niêm yết: ít hơn 32 250 đồng.
 
 *Phải chắc trước khi làm bài này:* Ba dạng cơ bản của tỉ số phần trăm.
 
-### Bài V.5 — Ba công thức tổng phải thuộc
+### Bài V.2 — Tỉ lệ nghịch — so sánh hai phương án
 
 **Các bước giải**
 
-Xét ý a: 2 + 4 + 6 + … + 100 (tổng 50 số chẵn đầu tiên)
+Xét ý a: 8 người làm xong một công việc trong 5 ngày. Nếu có thêm 5 người nữa (làm khoẻ như nhau) thì công việc đó hoàn thành sớm hơn bao nhiêu ngày?
 
-Đọc vị: đây là dạng **Tổng dãy đặc biệt**; dấu hiệu là Dãy toàn số lẻ, toàn số chẵn, hoặc số tự nhiên liên tiếp.
+Đọc vị: đây là dạng **Tỉ lệ nghịch, so sánh hai phương án**; dấu hiệu là Thay đổi số người, hỏi thay đổi thời gian.
 
-Kiến thức phải dùng: Ba công thức tổng cơ bản.
+Kiến thức phải dùng: Đại lượng tỉ lệ nghịch, tổng số ngày công.
 
-Cách làm: Đếm số số hạng rồi áp công thức.
+Cách làm: Bám vào tổng số ngày công không đổi.
 
-Lối tắt: Tổng n số lẻ đầu tiên luôn là một số chính phương — dùng để kiểm tra nhanh.
+Lối tắt: Số người tăng gấp k lần thì số ngày giảm còn 1 phần k.
 
-Kết quả: **2 550**.
+Kết quả: **1,92 ngày**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Tổng n số tự nhiên đầu tiên bằng n × (n + 1) : 2. Tổng n số lẻ đầu tiên bằng n × n. Tổng n số chẵn đầu tiên bằng n × (n + 1). Cả ba đều suy ra từ công thức tổng dãy cách đều.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Tổng số ngày công không đổi: số người × số ngày. Tính tổng số ngày công, chia cho số người mới ra số ngày mới, rồi lấy số ngày cũ trừ số ngày mới để biết sớm hơn bao nhiêu.
 
-*Điểm chốt:* Phải xác định đúng **n là số lượng số hạng**, không phải số hạng cuối.
+*Điểm chốt:* Đại lượng bất biến ở đây là **tổng số ngày công**.
+
+### Bài V.3 — Diện tích phần tô màu
+
+**Các bước giải**
+
+Xét ý a: Hai hình tròn đồng tâm có bán kính 2 cm và 1 cm. Tính diện tích phần nằm giữa hai đường tròn (lấy π = 3,14).
+
+Đọc vị: đây là dạng **Diện tích phần tô màu**; dấu hiệu là Hình gồm nhiều hình lồng nhau, hỏi phần còn lại.
+
+Kiến thức phải dùng: Diện tích hình tròn, hình vuông; phép trừ diện tích.
+
+Cách làm: Tách thành hiệu các hình cơ bản.
+
+Lối tắt: Hình tròn nội tiếp hình vuông chiếm khoảng 78,5% diện tích hình vuông.
+
+Kết quả: **9,42 cm²**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Diện tích phần tô màu = diện tích hình lớn − diện tích hình bị khoét. Bước quan trọng nhất là nhận ra hình lớn và hình bị khoét là những hình nào, và tìm đúng kích thước của chúng từ dữ kiện đề cho.
+
+*Điểm chốt:* Đọc quan hệ hình học để suy ra kích thước: hình tròn nội tiếp hình vuông thì **đường kính bằng cạnh hình vuông**.
+
+### Bài V.4 — Đại lượng khối lượng — đổi đơn vị và chia phần
+
+**Các bước giải**
+
+Bước 1 — đổi về ki-lô-gam: 3 tấn = 3 000 kg; 4 tạ = 400 kg.
+
+Tổng: 3 000 + 400 + 70 = 3 470 (kg).
+
+Bước 2 — chia cho 5 xe: 3 470 : 5 = 694 .
+
+Bước 3 — mỗi xe chở 1 tấn = 1 000 kg, cần 3 470 : 1 000 = 3 xe đầy, còn 470 kg nữa nên phải thêm một xe.
+
+Đáp số ý a: **3 470 kg**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Quy hết về một đơn vị rồi mới tính. Với câu hỏi “cần ít nhất bao nhiêu xe”, phần dư vẫn phải có một xe chở, nên **làm tròn lên**.
+
+*Điểm chốt:* Câu hỏi “ít nhất bao nhiêu xe” luôn **làm tròn lên**.
+
+*Muốn khó hơn:* Mỗi xe chở tối đa 1,5 tấn — phải đổi sang đơn vị chung trước.
+
+*Phải chắc trước khi làm bài này:* Bảng đơn vị khối lượng và phép chia có dư.
+
+### Bài V.5 — Vận tốc trung bình trên cả quãng đường
+
+**Các bước giải**
+
+Xét ý a: Một người đi 1 giờ đầu với vận tốc 15 km/giờ, 3 giờ sau với vận tốc 40 km/giờ. Tính vận tốc trung bình trên cả quãng đường.
+
+Đọc vị: đây là dạng **Vận tốc trung bình**; dấu hiệu là Hai chặng có vận tốc khác nhau.
+
+Kiến thức phải dùng: Công thức vận tốc; trung bình cộng có trọng số.
+
+Cách làm: Tính tổng quãng đường, tổng thời gian rồi chia.
+
+Lối tắt: Kiểm tra: vận tốc trung bình luôn nằm giữa hai vận tốc đã cho.
+
+Kết quả: **33,75 km/giờ**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Vận tốc trung bình = **tổng quãng đường : tổng thời gian**. Phải tính riêng quãng đường của từng chặng rồi cộng lại, sau đó chia cho tổng thời gian.
+
+*Điểm chốt:* Chỉ khi hai chặng **cùng thời gian** thì vận tốc trung bình mới bằng trung bình cộng hai vận tốc.
 
 ---
 
@@ -612,21 +612,21 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | II.3 | Đổi đơn vị diện tích | Bảng đơn vị đo diện tích | Đơn vị có mũ hai, hoặc ha, km² | Đếm bậc rồi nhân, chia 100 | Mỗi bậc thêm hai chữ số 0 — nhớ “diện tích thì gấp đôi số 0”. | 58 · 6 400 · 69 · 320 000… |
 | II.4 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | < · < · < · < |
 | II.5 | Ba dạng bài trung bình cộng | Quan hệ tổng – số lượng – trung bình cộng | Cụm “trung bình mỗi …” | Đi qua tổng làm trung gian | Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng. | 80 kg · 405 kg · 55 kg · 444 kg… |
-| III.1 | Dãy số tự nhiên liên tiếp có tổng cho trước | Trung bình cộng, dãy cách đều | Cụm “… số tự nhiên liên tiếp có tổng bằng …” | Tìm số giữa bằng phép chia rồi suy ra hai đầu dãy | Tổng của n số liên tiếp (n lẻ) luôn chia hết cho n. | 419 · 107 · 487 · 244 |
-| III.2 | Đổi đơn vị thể tích, dung tích | Bảng đơn vị thể tích; quan hệ dm³ – lít | Đơn vị có mũ ba, hoặc lít, mi-li-lít | Đếm bậc rồi nhân, chia 1 000 | Mỗi bậc thêm ba chữ số 0. | 80 · 34 · 53 000 · 22 000 |
-| III.3 | Đếm số chia hết đồng thời cho nhiều số | Bội chung nhỏ nhất, dãy số cách đều | Cụm “vừa chia hết cho … vừa chia hết cho …” | Quy về một số chia duy nhất là BCNN rồi đếm | Chia hết cho 2 và 5 thì tận cùng là 0; chia hết cho 2 và 3 thì chia hết cho 6. | 21 số, bé nhất là 252 · 13 số, bé nhất là 90 · 18 số, bé nhất là 126 · 27 số, bé nhất là 216… |
-| III.4 | Bài toán đại lượng có lời văn | Nhân, chia số tự nhiên; đổi đơn vị khối lượng | Đơn vị trong câu hỏi khác đơn vị trong dữ kiện | Tính theo đơn vị dữ kiện rồi đổi ở bước cuối | 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ. | 5 tạ 40 kg · 9 tạ 50 kg · 4 tạ 40 kg · 5 tạ |
-| III.5 | Tính thời điểm trong ngày | Quan hệ giờ – phút, phép chia có dư | Cho thời điểm bắt đầu và khoảng thời gian | Quy về phút, cộng trừ, đổi lại | Cộng tròn giờ trước rồi cộng phần phút lẻ sau. | 11 giờ 42 phút · 9 giờ 36 phút · 13 giờ 27 phút · 12 giờ 52 phút… |
-| IV.1 | Cân đĩa, tìm vật khác biệt | Lập luận trường hợp xấu nhất; chia nhóm ba | Cân đĩa không có quả cân, tìm vật nhẹ hơn | Chia ba phần mỗi lần cân | 3 gói → 1 lần; 9 gói → 2 lần; 27 gói → 3 lần. | 3 lần · 3 kết quả: nghiêng trái, nghiêng phải, thăng bằng · 3 phần · 4… |
-| IV.2 | Tổng và trung bình cộng của dãy cách đều | Dãy cách đều, trung bình cộng | Đề cho số số hạng, khoảng cách và một đầu của dãy | Tìm hai đầu dãy → tổng → trung bình cộng | Mọi cặp số hạng cách đều hai đầu đều có tổng bằng nhau. | 32 · 127 · 1 590 · 79,5… |
-| IV.3 | Bài toán đại lượng nhiều bước | Nhân, trừ; đại lượng cùng loại | Cho số nhóm, giá trị mỗi nhóm và số nhóm đã dùng | Rút gọn số bước bằng cách trừ trước, nhân sau | So sánh hai đường giải, chọn đường ít phép tính hơn. | 200 lít · 270 lít · 54 lít · 20 lít… |
-| IV.4 | Chuyển đổi giữa hai đại lượng, tổng không đổi | Bất biến tổng, biến thiên hiệu | “Chuyển … từ bên này sang bên kia” | Xét đại lượng không đổi (tổng) và đại lượng đổi gấp đôi (hiệu) | Sau khi chuyển, mỗi bên bằng nửa tổng — tính nửa tổng rồi trừ là ra ngay. | 114 quyển · 14 quyển · 20 quyển · 5 quyển… |
-| IV.5 | Ba dạng cơ bản của chuyển động đều | Công thức s = v × t | Có hai trong ba đại lượng quãng đường, vận tốc, thời gian | Chọn công thức theo đại lượng cần tìm; đồng bộ đơn vị | Vẽ tam giác s ở trên, v và t ở dưới: che đại lượng cần tìm là ra công thức. | 12 km/giờ · 5 giờ · 72 km · 36 km |
-| V.1 | Tỉ lệ nghịch, so sánh hai phương án | Đại lượng tỉ lệ nghịch, tổng số ngày công | Thay đổi số người, hỏi thay đổi thời gian | Bám vào tổng số ngày công không đổi | Số người tăng gấp k lần thì số ngày giảm còn 1 phần k. | 3,14 ngày · 3,08 ngày · 1,8 ngày · 2,8 ngày |
-| V.2 | Đại lượng khối lượng, chia phần và làm tròn lên | Bảng đơn vị khối lượng; phép chia có dư | Số đo nhiều đơn vị; câu hỏi “ít nhất bao nhiêu” | Quy về một đơn vị, chia, xét phần dư | 1 tấn = 1 000 kg nên chia cho 1 000 là bớt ba chữ số 0. | 5 752 kg · 57 tạ 52 kg · 1 438 kg, không thừa · 6 xe… |
-| V.3 | Vận tốc trung bình | Công thức vận tốc; trung bình cộng có trọng số | Hai chặng có vận tốc khác nhau | Tính tổng quãng đường, tổng thời gian rồi chia | Kiểm tra: vận tốc trung bình luôn nằm giữa hai vận tốc đã cho. | 35 km/giờ · 42 km/giờ · 33,75 km/giờ · 21,33 km/giờ… |
-| V.4 | Phần trăm nhiều bước trong mua bán | Tỉ số phần trăm, mốc quy chiếu | Có cả “chiết khấu” và “thuế” trong một bài | Tính tuần tự, xác định lại mốc 100% sau mỗi bước | Giảm p% là nhân với (100 − p) rồi chia 100 — một bước thay vì hai. | 255 000 đồng · 267 750 đồng · ít hơn 32 250 đồng · 803 250 đồng… |
-| V.5 | Tổng dãy đặc biệt | Ba công thức tổng cơ bản | Dãy toàn số lẻ, toàn số chẵn, hoặc số tự nhiên liên tiếp | Đếm số số hạng rồi áp công thức | Tổng n số lẻ đầu tiên luôn là một số chính phương — dùng để kiểm tra nhanh. | 2 550 · 325 · 2 500 · 400 |
+| III.1 | Tính thời điểm trong ngày | Quan hệ giờ – phút, phép chia có dư | Cho thời điểm bắt đầu và khoảng thời gian | Quy về phút, cộng trừ, đổi lại | Cộng tròn giờ trước rồi cộng phần phút lẻ sau. | 13 giờ 3 phút · 16 giờ 16 phút · 15 giờ 11 phút · 18 giờ 19 phút… |
+| III.2 | Đổi đơn vị thể tích, dung tích | Bảng đơn vị thể tích; quan hệ dm³ – lít | Đơn vị có mũ ba, hoặc lít, mi-li-lít | Đếm bậc rồi nhân, chia 1 000 | Mỗi bậc thêm ba chữ số 0. | 27 · 3 000 · 71 000 · 47 |
+| III.3 | Bài toán đại lượng có lời văn | Nhân, chia số tự nhiên; đổi đơn vị khối lượng | Đơn vị trong câu hỏi khác đơn vị trong dữ kiện | Tính theo đơn vị dữ kiện rồi đổi ở bước cuối | 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ. | 4 tạ 50 kg · 5 tạ 70 kg · 10 tạ 20 kg · 3 tạ 75 kg… |
+| III.4 | Dãy số tự nhiên liên tiếp có tổng cho trước | Trung bình cộng, dãy cách đều | Cụm “… số tự nhiên liên tiếp có tổng bằng …” | Tìm số giữa bằng phép chia rồi suy ra hai đầu dãy | Tổng của n số liên tiếp (n lẻ) luôn chia hết cho n. | 336 · 419 · 31 · 426… |
+| III.5 | Tìm phân số của một số, nhiều bước | Tìm phân số của một số | Cụm “… số còn lại”, “… số đó” | Tính tuần tự, sau mỗi bước ghi lại số còn lại | Còn lại sau ngày đầu là (1 − phân số) của tổng; nhân trực tiếp cho nhanh. | 243 kg · 44 kg · 448 kg · 200 kg… |
+| IV.1 | Tổng và trung bình cộng của dãy cách đều | Dãy cách đều, trung bình cộng | Đề cho số số hạng, khoảng cách và một đầu của dãy | Tìm hai đầu dãy → tổng → trung bình cộng | Mọi cặp số hạng cách đều hai đầu đều có tổng bằng nhau. | 90 · 207 · 5 940 · 148,5… |
+| IV.2 | Ba dạng cơ bản của chuyển động đều | Công thức s = v × t | Có hai trong ba đại lượng quãng đường, vận tốc, thời gian | Chọn công thức theo đại lượng cần tìm; đồng bộ đơn vị | Vẽ tam giác s ở trên, v và t ở dưới: che đại lượng cần tìm là ra công thức. | 4 km/giờ · 6 giờ · 200 km · 50 km/giờ… |
+| IV.3 | Lập bảng | Suy luận loại trừ; đọc hiểu câu phủ định | Đề ghép **người với việc** và cho một loạt câu khẳng định hoặc phủ định | Kẻ bảng hai chiều, đánh × và ✓, mỗi ✓ kéo theo cả dòng cả cột | Bắt đầu từ người bị loại nhiều khả năng nhất — dòng ấy chốt được sớm nhất. | Sơn học vẽ; Khánh học cờ vua; Chi học bơi · Minh học bơi; Dũng học cờ vua; Nam học vẽ · Hùng học hát; Yến học đàn; Hà học múa · Quân học cầu lông; Lan học bóng đá; Chi học bóng rổ |
+| IV.4 | Chuyển đổi giữa hai đại lượng, tổng không đổi | Bất biến tổng, biến thiên hiệu | “Chuyển … từ bên này sang bên kia” | Xét đại lượng không đổi (tổng) và đại lượng đổi gấp đôi (hiệu) | Sau khi chuyển, mỗi bên bằng nửa tổng — tính nửa tổng rồi trừ là ra ngay. | 13 quyển · 39 quyển · 33 quyển · 17 quyển… |
+| IV.5 | Bài toán đại lượng nhiều bước | Nhân, trừ; đại lượng cùng loại | Cho số nhóm, giá trị mỗi nhóm và số nhóm đã dùng | Rút gọn số bước bằng cách trừ trước, nhân sau | So sánh hai đường giải, chọn đường ít phép tính hơn. | 60 lít · 40 lít · 150 lít · 100 lít… |
+| V.1 | Phần trăm nhiều bước trong mua bán | Tỉ số phần trăm, mốc quy chiếu | Có cả “chiết khấu” và “thuế” trong một bài | Tính tuần tự, xác định lại mốc 100% sau mỗi bước | Giảm p% là nhân với (100 − p) rồi chia 100 — một bước thay vì hai. | 170 000 đồng · 183 600 đồng · ít hơn 16 400 đồng · 1 101 600 đồng… |
+| V.2 | Tỉ lệ nghịch, so sánh hai phương án | Đại lượng tỉ lệ nghịch, tổng số ngày công | Thay đổi số người, hỏi thay đổi thời gian | Bám vào tổng số ngày công không đổi | Số người tăng gấp k lần thì số ngày giảm còn 1 phần k. | 1,92 ngày · 7 ngày · 5,69 ngày · 6,12 ngày |
+| V.3 | Diện tích phần tô màu | Diện tích hình tròn, hình vuông; phép trừ diện tích | Hình gồm nhiều hình lồng nhau, hỏi phần còn lại | Tách thành hiệu các hình cơ bản | Hình tròn nội tiếp hình vuông chiếm khoảng 78,5% diện tích hình vuông. | 9,42 cm² · 28,26 cm² · 193,5 cm² · 122,46 cm²… |
+| V.4 | Đại lượng khối lượng, chia phần và làm tròn lên | Bảng đơn vị khối lượng; phép chia có dư | Số đo nhiều đơn vị; câu hỏi “ít nhất bao nhiêu” | Quy về một đơn vị, chia, xét phần dư | 1 tấn = 1 000 kg nên chia cho 1 000 là bớt ba chữ số 0. | 3 470 kg · 34 tạ 70 kg · 694 kg, không thừa · 4 xe… |
+| V.5 | Vận tốc trung bình | Công thức vận tốc; trung bình cộng có trọng số | Hai chặng có vận tốc khác nhau | Tính tổng quãng đường, tổng thời gian rồi chia | Kiểm tra: vận tốc trung bình luôn nằm giữa hai vận tốc đã cho. | 33,75 km/giờ · 20 km/giờ · 30 km/giờ · 35 km/giờ… |
 
 ---
 
@@ -644,21 +644,21 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | II.3 | TD1, TD2 | Đơn vị diện tích nhảy **100 lần** mỗi bậc, không phải 10 lần. |
 | II.4 | TD2, TD1 | Đổi về cùng đơn vị **trước**, so sánh **sau**. |
 | II.5 | TD2, TD3 | Từ trung bình cộng luôn tìm được **tổng** trước, rồi mới tính tiếp. |
-| III.1 | TD3, TD4 | Với số lượng lẻ thì **số giữa = tổng : số lượng** — đó là chìa khoá. |
+| III.1 | TD3, TD2 | Đổi hết về phút rồi mới cộng — an toàn hơn cộng trực tiếp. |
 | III.2 | TD1, TD2 | Thể tích nhảy **1 000 lần** mỗi bậc (độ dài 10, diện tích 100, thể tích 1 000). |
-| III.3 | TD2, TD4 | Khoảng cách của dãy là **bội chung nhỏ nhất**, không phải tích hai số khi hai số không nguyên tố cùng nhau. |
-| III.4 | TD2, TD3 | Câu hỏi đòi đơn vị nào thì bước **cuối cùng** mới đổi sang đơn vị đó. |
-| III.5 | TD3, TD2 | Đổi hết về phút rồi mới cộng — an toàn hơn cộng trực tiếp. |
-| IV.1 | TD6, TD2 | Cân đĩa cho **ba** kết quả nên chia ba, không chia đôi. |
-| IV.2 | TD4, TD3 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
-| IV.3 | TD3, TD5 | Trừ **số thùng** trước khi nhân thì ít phép tính hơn. |
+| III.3 | TD2, TD3 | Câu hỏi đòi đơn vị nào thì bước **cuối cùng** mới đổi sang đơn vị đó. |
+| III.4 | TD3, TD4 | Với số lượng lẻ thì **số giữa = tổng : số lượng** — đó là chìa khoá. |
+| III.5 | TD2, TD3 | Cụm “số gạo **còn lại**” đổi hẳn số bị nhân ở bước hai. |
+| IV.1 | TD4, TD3 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
+| IV.2 | TD1, TD3 | Đơn vị của vận tốc quy định đơn vị của hai đại lượng còn lại. |
+| IV.3 | TD3, TD4 | Đặt được một ✓ thì **cả dòng và cả cột** còn lại đều thành ×. Bỏ bước gạch cột là chỗ bài bị tắc giữa chừng. |
 | IV.4 | TD3, TD6 | Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển. |
-| IV.5 | TD1, TD3 | Đơn vị của vận tốc quy định đơn vị của hai đại lượng còn lại. |
-| V.1 | TD6, TD3 | Đại lượng bất biến ở đây là **tổng số ngày công**. |
-| V.2 | TD3, TD6 | Câu hỏi “ít nhất bao nhiêu xe” luôn **làm tròn lên**. |
-| V.3 | TD6, TD2 | Chỉ khi hai chặng **cùng thời gian** thì vận tốc trung bình mới bằng trung bình cộng hai vận tốc. |
-| V.4 | TD6, TD2 | Mốc 100% **đổi sau mỗi bước** — đây là bẫy hay gặp nhất. |
-| V.5 | TD4, TD5 | Phải xác định đúng **n là số lượng số hạng**, không phải số hạng cuối. |
+| IV.5 | TD3, TD5 | Trừ **số thùng** trước khi nhân thì ít phép tính hơn. |
+| V.1 | TD6, TD2 | Mốc 100% **đổi sau mỗi bước** — đây là bẫy hay gặp nhất. |
+| V.2 | TD6, TD3 | Đại lượng bất biến ở đây là **tổng số ngày công**. |
+| V.3 | TD3, TD6 | Đọc quan hệ hình học để suy ra kích thước: hình tròn nội tiếp hình vuông thì **đường kính bằng cạnh hình vuông**. |
+| V.4 | TD3, TD6 | Câu hỏi “ít nhất bao nhiêu xe” luôn **làm tròn lên**. |
+| V.5 | TD6, TD2 | Chỉ khi hai chặng **cùng thời gian** thì vận tốc trung bình mới bằng trung bình cộng hai vận tốc. |
 
 ---
 
@@ -678,21 +678,21 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 | II.3 | Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. | Viết riêng bảng đơn vị diện tích, ghi rõ “× 100” giữa hai bậc liền nhau. |
 | II.4 | So thẳng hai con số, bỏ qua đơn vị. | Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị. |
 | II.5 | Đi tìm ngay số còn thiếu mà chưa tính tổng. | Bước đầu tiên luôn viết: “Tổng = trung bình cộng × số ngày”. |
-| III.1 | Lấy tổng chia cho số lượng rồi nhận luôn kết quả là số bé nhất. | Vẽ dãy số ra, đánh dấu vị trí số giữa trước khi lùi về số đầu. |
+| III.1 | Cộng phần phút thành hơn 60 mà quên đổi thành giờ. | Kiểm tra phần phút của đáp số phải bé hơn 60. |
 | III.2 | Đổi như đơn vị diện tích, chỉ nhân 100. | Nhớ dãy 10 – 100 – 1 000 ứng với độ dài – diện tích – thể tích. |
-| III.3 | Lấy tích hai số làm khoảng cách (ví dụ dùng 27 cho “chia hết cho 3 và 9”). | Kiểm tra bằng cách viết ba số đầu tiên của dãy rồi xem khoảng cách thật. |
-| III.4 | Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. | Khoanh tròn đơn vị trong câu hỏi trước khi đặt bút. |
-| III.5 | Cộng phần phút thành hơn 60 mà quên đổi thành giờ. | Kiểm tra phần phút của đáp số phải bé hơn 60. |
-| IV.1 | Chia đôi như tìm kiếm thông thường nên cần nhiều lần cân hơn mức cần thiết. | Nhớ ba kết quả: nghiêng trái, nghiêng phải, thăng bằng. |
-| IV.2 | Tính tổng rồi chia — dài hơn và dễ sai khi số hạng nhiều. | Nhớ tính chất trung bình cộng để kiểm tra chéo kết quả tổng. |
-| IV.3 | Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. | Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng. |
+| III.3 | Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. | Khoanh tròn đơn vị trong câu hỏi trước khi đặt bút. |
+| III.4 | Lấy tổng chia cho số lượng rồi nhận luôn kết quả là số bé nhất. | Vẽ dãy số ra, đánh dấu vị trí số giữa trước khi lùi về số đầu. |
+| III.5 | Lấy cả hai phân số nhân với tổng ban đầu. | Sau mỗi bước, viết rõ “còn lại … kg” rồi mới sang bước sau. |
+| IV.1 | Tính tổng rồi chia — dài hơn và dễ sai khi số hạng nhiều. | Nhớ tính chất trung bình cộng để kiểm tra chéo kết quả tổng. |
+| IV.2 | Vận tốc tính bằng km/giờ nhưng thời gian lại để bằng phút. | Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức. |
+| IV.3 | Đánh ✓ rồi đi tiếp luôn, không gạch × cho phần còn lại của cột. | Sau mỗi lần đặt ✓, dừng lại gạch đủ dòng và cột rồi mới đọc manh mối kế. |
 | IV.4 | Chuyển đúng bằng hiệu hai bên nên bên ít lại thành bên nhiều. | Thử lại: sau khi chuyển, cộng trừ ra hai số rồi so xem có bằng nhau không. |
-| IV.5 | Vận tốc tính bằng km/giờ nhưng thời gian lại để bằng phút. | Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức. |
-| V.1 | Trừ thẳng số người rồi lấy hiệu làm số ngày rút ngắn. | Viết rõ: tổng ngày công = … ; số ngày mới = … ; sớm hơn = … . |
-| V.2 | Chia rồi lấy phần nguyên, bỏ quên phần dư vẫn cần một xe. | Hỏi lại: phần thóc dư có tự bay đi được không? |
-| V.3 | Cộng hai vận tốc rồi chia đôi trong mọi trường hợp. | Luôn viết hai dòng: tổng quãng đường = … ; tổng thời gian = … rồi mới chia. |
-| V.4 | Tính thuế trên giá niêm yết thay vì trên giá đã chiết khấu. | Viết ba dòng: giá niêm yết, giá sau chiết khấu, giá phải trả. |
-| V.5 | Nhầm số hạng cuối với số lượng số hạng khi áp công thức. | Đếm số số hạng trước rồi mới thay vào công thức. |
+| IV.5 | Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. | Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng. |
+| V.1 | Tính thuế trên giá niêm yết thay vì trên giá đã chiết khấu. | Viết ba dòng: giá niêm yết, giá sau chiết khấu, giá phải trả. |
+| V.2 | Trừ thẳng số người rồi lấy hiệu làm số ngày rút ngắn. | Viết rõ: tổng ngày công = … ; số ngày mới = … ; sớm hơn = … . |
+| V.3 | Lấy bán kính hình tròn làm cạnh hình vuông. | Vẽ lại hình, ghi số đo lên hình trước khi tính. |
+| V.4 | Chia rồi lấy phần nguyên, bỏ quên phần dư vẫn cần một xe. | Hỏi lại: phần thóc dư có tự bay đi được không? |
+| V.5 | Cộng hai vận tốc rồi chia đôi trong mọi trường hợp. | Luôn viết hai dòng: tổng quãng đường = … ; tổng thời gian = … rồi mới chia. |
 
 ---
 
@@ -710,21 +710,21 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 **Bài II.3** — (1) Hai đơn vị này cách nhau mấy bậc? — (2) Mỗi bậc hơn kém nhau bao nhiêu lần? — (3) Từ lớn sang bé thì nhân.
 **Bài II.4** — (1) Hai vế đang dùng đơn vị nào? — (2) Chọn một đơn vị chung, nên chọn đơn vị bé hơn. — (3) Đổi cả hai vế rồi so sánh.
 **Bài II.5** — (1) Đề cho gì và hỏi gì? — (2) Tính tổng trước bằng cách nhân trung bình cộng với số lượng. — (3) Lấy tổng trừ các số đã biết để ra số còn thiếu.
-**Bài III.1** — (1) Số lượng số hạng là số chẵn hay lẻ? — (2) Với số lượng lẻ, số ở giữa bằng tổng chia số lượng. — (3) Từ số giữa lùi về đầu dãy mấy đơn vị?
+**Bài III.1** — (1) Đổi giờ khởi hành ra phút tính từ 0 giờ. — (2) Cộng thêm thời gian đi (tính bằng phút). — (3) Đổi tổng số phút trở lại thành giờ và phút.
 **Bài III.2** — (1) Đơn vị thể tích liền kề hơn kém nhau mấy lần? — (2) Đếm số bậc giữa hai đơn vị. — (3) 1 dm³ bằng đúng 1 lít.
-**Bài III.3** — (1) Số chia hết cho cả hai số thì chia hết cho số nào? — (2) Tìm bội chung nhỏ nhất của hai số đó. — (3) Các số cần tìm cách đều nhau đúng bằng bội chung nhỏ nhất.
-**Bài III.4** — (1) Tính tổng khối lượng theo ki-lô-gam. — (2) Đề hỏi kết quả theo đơn vị nào? — (3) Đổi kết quả sang đơn vị đó.
-**Bài III.5** — (1) Đổi giờ khởi hành ra phút tính từ 0 giờ. — (2) Cộng thêm thời gian đi (tính bằng phút). — (3) Đổi tổng số phút trở lại thành giờ và phút.
-**Bài IV.1** — (1) Một lần cân cho mấy kết quả? — (2) Vậy nên chia số gói thành mấy phần? — (3) Sau mỗi lần cân còn lại nhiều nhất bao nhiêu gói?
-**Bài IV.2** — (1) Từ số hạng cuối lùi về số hạng đầu qua mấy khoảng? — (2) Trung bình cộng bằng nửa tổng của hai số hạng ở hai đầu. — (3) Tổng bằng trung bình cộng nhân số số hạng.
-**Bài IV.3** — (1) Còn lại bao nhiêu thùng? — (2) Mỗi thùng bao nhiêu lít? — (3) Nhân hai kết quả đó.
+**Bài III.3** — (1) Tính tổng khối lượng theo ki-lô-gam. — (2) Đề hỏi kết quả theo đơn vị nào? — (3) Đổi kết quả sang đơn vị đó.
+**Bài III.4** — (1) Số lượng số hạng là số chẵn hay lẻ? — (2) Với số lượng lẻ, số ở giữa bằng tổng chia số lượng. — (3) Từ số giữa lùi về đầu dãy mấy đơn vị?
+**Bài III.5** — (1) Ngày đầu bán bao nhiêu ki-lô-gam? — (2) Sau ngày đầu còn lại bao nhiêu? — (3) Phân số của ngày thứ hai tính trên số nào?
+**Bài IV.1** — (1) Từ số hạng cuối lùi về số hạng đầu qua mấy khoảng? — (2) Trung bình cộng bằng nửa tổng của hai số hạng ở hai đầu. — (3) Tổng bằng trung bình cộng nhân số số hạng.
+**Bài IV.2** — (1) Đề cho hai đại lượng nào và hỏi đại lượng nào? — (2) Viết công thức tương ứng. — (3) Kiểm tra đơn vị có khớp nhau không.
+**Bài IV.3** — (1) Kẻ bảng ba dòng ba cột trước đã. — (2) Manh mối nào cho biết chắc chắn một ô là sai? — (3) Dòng nào chỉ còn một ô trống thì ô ấy chính là đáp án của dòng ấy.
 **Bài IV.4** — (1) Hiện tại hai bên hơn kém nhau bao nhiêu? — (2) Chuyển 1 quyển thì hiệu giảm mấy quyển? — (3) Muốn hiệu về 0 thì phải chuyển bao nhiêu?
-**Bài IV.5** — (1) Đề cho hai đại lượng nào và hỏi đại lượng nào? — (2) Viết công thức tương ứng. — (3) Kiểm tra đơn vị có khớp nhau không.
-**Bài V.1** — (1) Tổng số ngày công là bao nhiêu? — (2) Với số người mới thì cần bao nhiêu ngày? — (3) Lấy số ngày cũ trừ số ngày mới.
-**Bài V.2** — (1) Đổi tất cả về ki-lô-gam. — (2) Chia cho sức chở mỗi xe. — (3) Còn dư thì có cần thêm xe không?
-**Bài V.3** — (1) Chặng thứ nhất đi được bao nhiêu ki-lô-mét? — (2) Chặng thứ hai đi được bao nhiêu? — (3) Lấy tổng quãng đường chia tổng thời gian.
-**Bài V.4** — (1) Chiết khấu tính trên giá nào? — (2) Sau chiết khấu còn bao nhiêu phần trăm? — (3) Thuế tính trên giá nào?
-**Bài V.5** — (1) Dãy này có bao nhiêu số hạng? — (2) Đây là dãy số lẻ, số chẵn, hay số tự nhiên liên tiếp? — (3) Chọn đúng công thức tương ứng.
+**Bài IV.5** — (1) Còn lại bao nhiêu thùng? — (2) Mỗi thùng bao nhiêu lít? — (3) Nhân hai kết quả đó.
+**Bài V.1** — (1) Chiết khấu tính trên giá nào? — (2) Sau chiết khấu còn bao nhiêu phần trăm? — (3) Thuế tính trên giá nào?
+**Bài V.2** — (1) Tổng số ngày công là bao nhiêu? — (2) Với số người mới thì cần bao nhiêu ngày? — (3) Lấy số ngày cũ trừ số ngày mới.
+**Bài V.3** — (1) Phần tô màu là hiệu của những hình nào? — (2) Kích thước của hình lớn suy từ đâu? — (3) Tính từng diện tích rồi trừ.
+**Bài V.4** — (1) Đổi tất cả về ki-lô-gam. — (2) Chia cho sức chở mỗi xe. — (3) Còn dư thì có cần thêm xe không?
+**Bài V.5** — (1) Chặng thứ nhất đi được bao nhiêu ki-lô-mét? — (2) Chặng thứ hai đi được bao nhiêu? — (3) Lấy tổng quãng đường chia tổng thời gian.
 
 ---
 
@@ -744,21 +744,21 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | II.3 | 3 m² = … dm² | 300 |
 | II.4 | So sánh: 3 kg … 2 500 g | > |
 | II.5 | Trung bình mỗi ngày bán 40 kg, hỏi 5 ngày bán bao nhiêu? | 200 kg |
-| III.1 | Tổng của 5 số tự nhiên liên tiếp bằng 100. Số bé nhất là số nào? | 18 |
+| III.1 | Tàu chạy lúc 7 giờ 40 phút, đi hết 2 giờ 35 phút. Đến lúc mấy giờ? | 10 giờ 15 phút |
 | III.2 | 2 m³ = … lít | 2 000 |
-| III.3 | Có bao nhiêu số từ 1 đến 100 vừa chia hết cho 2 vừa chia hết cho 5? | 10 |
-| III.4 | Xe chở 20 bao gạo, mỗi bao 50 kg. Xe chở mấy tạ? | 10 tạ |
-| III.5 | Tàu chạy lúc 7 giờ 40 phút, đi hết 2 giờ 35 phút. Đến lúc mấy giờ? | 10 giờ 15 phút |
-| IV.1 | Có 9 gói kẹo, một gói nhẹ hơn. Cần cân mấy lần? | 2 lần |
-| IV.2 | Dãy cách đều 10 số hạng, đầu 5, cuối 50. Tổng bằng bao nhiêu? | 275 |
-| IV.3 | Có 10 thùng dầu, mỗi thùng 20 lít, đã bán 3 thùng. Còn bao nhiêu lít? | 140 lít |
+| III.3 | Xe chở 20 bao gạo, mỗi bao 50 kg. Xe chở mấy tạ? | 10 tạ |
+| III.4 | Tổng của 5 số tự nhiên liên tiếp bằng 100. Số bé nhất là số nào? | 18 |
+| III.5 | Có 60 kg gạo, bán 1 phần 3 rồi bán tiếp 1 phần 2 số còn lại. Còn bao nhiêu? | 20 kg |
+| IV.1 | Dãy cách đều 10 số hạng, đầu 5, cuối 50. Tổng bằng bao nhiêu? | 275 |
+| IV.2 | Đi 120 km hết 3 giờ. Vận tốc là bao nhiêu? | 40 km/giờ |
+| IV.3 | An, Bình, Chi học ba môn bơi, vẽ, hát. An không học bơi và không học vẽ. Bình không học hát. Hỏi mỗi bạn học môn nào? | An học hát; Bình học vẽ; Chi học bơi |
 | IV.4 | Tổ Một có 30 quyển, tổ Hai có 20 quyển. Chuyển mấy quyển để bằng nhau? | 5 quyển |
-| IV.5 | Đi 120 km hết 3 giờ. Vận tốc là bao nhiêu? | 40 km/giờ |
-| V.1 | 6 người làm xong trong 10 ngày. Thêm 4 người thì sớm hơn mấy ngày? | 4 ngày |
-| V.2 | 3 tấn 4 tạ 50 kg = … kg | 3 450 kg |
-| V.3 | Đi 2 giờ với 30 km/giờ rồi 2 giờ với 50 km/giờ. Vận tốc trung bình? | 40 km/giờ |
-| V.4 | Giá 500 000 đồng, chiết khấu 10%, thuế 10% trên giá đã giảm. Phải trả bao nhiêu? | 495 000 đồng |
-| V.5 | Tính: 1 + 3 + 5 + … + 19 | 100 |
+| IV.5 | Có 10 thùng dầu, mỗi thùng 20 lít, đã bán 3 thùng. Còn bao nhiêu lít? | 140 lít |
+| V.1 | Giá 500 000 đồng, chiết khấu 10%, thuế 10% trên giá đã giảm. Phải trả bao nhiêu? | 495 000 đồng |
+| V.2 | 6 người làm xong trong 10 ngày. Thêm 4 người thì sớm hơn mấy ngày? | 4 ngày |
+| V.3 | Hình tròn bán kính 5 cm nội tiếp hình vuông. Diện tích phần ngoài hình tròn bằng bao nhiêu? | 21,5 cm² |
+| V.4 | 3 tấn 4 tạ 50 kg = … kg | 3 450 kg |
+| V.5 | Đi 2 giờ với 30 km/giờ rồi 2 giờ với 50 km/giờ. Vận tốc trung bình? | 40 km/giờ |
 
 ---
 

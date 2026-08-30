@@ -75,6 +75,7 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 | M5 | Từ khoá “ghép”, “cắt thành”, “xếp thành” | Cắt ghép hình, biến thiên chu vi | Xác định đường bao mới rồi cộng độ dài | Mỗi nhát cắt làm tổng chu vi tăng thêm hai lần chiều dài nhát cắt. | Chu vi không cộng như diện tích |
 | M5 | “Gấp … lần”, “tăng … cm rồi giảm … cm” | Biến thiên diện tích và chu vi theo tỉ lệ | Lập luận trên tỉ lệ trước, chỉ tính số khi cần | Tăng một chiều và giảm chiều kia cùng một lượng thì diện tích luôn **giảm**, trừ khi hai chiều ban đầu chênh nhau đúng lượng ấy. | Diện tích gấp bình phương, chu vi chỉ gấp một lần |
 | M5 | “Cắt thành … phần”, “nối trung điểm”, “ghép hai hình” | Cắt ghép hình, tỉ số diện tích | Vẽ hình, xác định đáy và chiều cao, so tỉ số | Tam giác nối một đỉnh với trung điểm cạnh đối diện luôn bằng một phần tư. | Chu vi không cộng như diện tích |
+| M5 | Hình bị chia thành nhiều phần, đề cho diện tích một phần và tỉ số hai đoạn trên cùng một cạnh | Phương pháp diện tích | Lập tỉ số diện tích bằng tỉ số hai đáy của hai tam giác chung chiều cao | Không cần biết chiều cao là bao nhiêu — nó tự triệt tiêu trong tỉ số. | So hai tam giác không chung chiều cao |
 
 ---
 
@@ -99,43 +100,43 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 
 Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: đây là dạng bài gì, và dấu hiệu nào cho biết điều đó.
 
-**Đề 1.** Ghi rõ đơn vị: cm² cho diện tích, cm³ cho thể tích. Hình hộp chữ nhật có đáy 9 cm × 8 cm, chiều cao 14 cm. Tính diện tích xung quanh.
+**Đề 1.** Vẽ hình trước khi tính. Ghi rõ hai tam giác nào chung chiều cao. Tam giác ABC có điểm M nằm trên cạnh BC sao cho BM bằng 1 phần 3 MC. Biết diện tích tam giác ABM là 30 cm², tính diện tích tam giác AMC và diện tích tam giác ABC.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 2.** Trả lời bằng lập luận tỉ lệ, hạn chế tính số lớn. Hình chữ nhật có chiều dài 12 cm, chiều rộng 10 cm. Tính diện tích.
+**Đề 2.** Chú ý các cạnh bị ghép vào bên trong. Ghép 4 hình vuông cạnh 18 cm thành một hình vuông lớn. Tính chu vi hình vuông lớn.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 3.** Dùng nhận xét về chiều cao chung. Tam giác ABC có diện tích 198 cm². Điểm M nằm trên cạnh BC sao cho BM gấp 6 phần và MC gấp 5 phần bằng nhau. Tính diện tích tam giác ABM.
+**Đề 3.** Ghi rõ đơn vị: cm² cho diện tích, cm³ cho thể tích. Hình hộp chữ nhật có đáy 7 cm × 12 cm, chiều cao 4 cm. Tính diện tích toàn phần.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 4.** Đếm có hệ thống, nêu cách đếm. Từ một đỉnh của tam giác lớn kẻ 3 đoạn thẳng tới cạnh đối diện. Có tất cả bao nhiêu tam giác trong hình?
+**Đề 4.** Vẽ hình và tô phần cần tính trước khi làm. Hình chữ nhật có chiều dài 8 cm, chiều rộng 4 cm. Tính diện tích.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 5.** Bài nhiều ý nối tiếp, ý sau dùng kết quả ý trước. Hình chữ nhật có chiều dài 49 m, chiều rộng 43 m. Tính chu vi.
+**Đề 5.** Áp dụng đúng công thức từng hình. Hình tam giác có đáy 8 cm, chiều cao 25 cm. Tính diện tích.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 6.** Phân tích hình thành hiệu của các hình quen thuộc. Hai hình tròn đồng tâm có bán kính 11 cm và 3 cm. Tính diện tích phần nằm giữa hai đường tròn (lấy π = 3,14).
+**Đề 6.** Trả lời bằng lập luận tỉ lệ, hạn chế tính số lớn. Hình chữ nhật có chiều dài 13 cm, chiều rộng 10 cm. Tính diện tích.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 7.** Tính theo yêu cầu, ghi rõ đơn vị. Hình vuông có cạnh 31 cm. Tính chu vi.
+**Đề 7.** Tưởng tượng khối lớn và xét theo vị trí: góc, cạnh, mặt, trong lõi. Một khối lập phương lớn ghép từ 5 × 5 × 5 khối lập phương nhỏ. Hỏi có tất cả bao nhiêu khối nhỏ?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 8.** Vẽ hình minh hoạ phần tăng thêm. Hình chữ nhật dài 33 cm, rộng 27 cm. Nếu gấp đôi chiều dài và giữ nguyên chiều rộng thì diện tích mới gấp mấy lần diện tích cũ?
+**Đề 8.** Lấy π = 3,14. Ghi rõ đơn vị. Hình tròn có bán kính 30 cm. Tính chu vi (lấy π = 3,14).
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 9.** Cầm mô hình hoặc vẽ hình khai triển ra nháp. Hình hộp chữ nhật có mấy mặt, mấy đỉnh, mấy cạnh?
+**Đề 9.** Phân tích hình thành hiệu của các hình quen thuộc. Hai hình tròn đồng tâm có bán kính 16 cm và 5 cm. Tính diện tích phần nằm giữa hai đường tròn (lấy π = 3,14).
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 10.** Chú ý các cạnh bị ghép vào bên trong. Cắt một hình vuông cạnh 12 cm thành hai hình chữ nhật bằng nhau. Tổng chu vi hai hình chữ nhật đó bằng bao nhiêu?
+**Đề 10.** Đọc kĩ xem bài hỏi chu vi hay diện tích. Một mảnh đất hình chữ nhật dài 44 m, rộng 26 m. Người ta trồng cây quanh mảnh đất, hai cây liền nhau cách nhau 4 m. Hỏi cần bao nhiêu cây?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
@@ -145,16 +146,16 @@ Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: 
 
 | # | Dạng bài | Dấu hiệu |
 |:--:|---|---|
-| 1 | Hình hộp chữ nhật, hình lập phương | Đề cho ba kích thước hoặc cạnh hình lập phương |
-| 2 | Biến thiên diện tích và chu vi theo tỉ lệ | “Gấp … lần”, “tăng … cm rồi giảm … cm” |
-| 3 | Tỉ số diện tích tam giác | Hai tam giác chung đỉnh, đáy nằm trên cùng một đường thẳng |
-| 4 | Đếm hình bằng quy tắc chọn hai điểm | Hình có nhiều đoạn kẻ từ cùng một đỉnh, hoặc nhiều điểm trên một đường |
-| 5 | Hình chữ nhật tổng hợp | Một hình nhưng nhiều câu hỏi nối tiếp |
-| 6 | Diện tích phần tô màu | Hình gồm nhiều hình lồng nhau, hỏi phần còn lại |
-| 7 | Chu vi, diện tích hình cơ bản | Cho chiều dài, chiều rộng hoặc cạnh |
-| 8 | Biến thiên diện tích theo kích thước | “Tăng chiều dài thêm …”, “gấp đôi chiều …” |
-| 9 | Nhận dạng hình khối; thể tích, diện tích toàn phần | Đề hỏi số mặt, số cạnh, hoặc cho ba kích thước |
-| 10 | Cắt ghép hình, biến thiên chu vi | Từ khoá “ghép”, “cắt thành”, “xếp thành” |
+| 1 | Phương pháp diện tích | Hình bị chia thành nhiều phần, đề cho diện tích một phần và tỉ số hai đoạn trên cùng một cạnh |
+| 2 | Cắt ghép hình, biến thiên chu vi | Từ khoá “ghép”, “cắt thành”, “xếp thành” |
+| 3 | Hình hộp chữ nhật, hình lập phương | Đề cho ba kích thước hoặc cạnh hình lập phương |
+| 4 | Cắt ghép hình, tỉ số diện tích | “Cắt thành … phần”, “nối trung điểm”, “ghép hai hình” |
+| 5 | Diện tích các hình phẳng cơ bản | Đề cho đáy và chiều cao, hoặc hai đường chéo |
+| 6 | Biến thiên diện tích và chu vi theo tỉ lệ | “Gấp … lần”, “tăng … cm rồi giảm … cm” |
+| 7 | Khối lập phương sơn màu | “Ghép từ … khối nhỏ”, “sơn mặt ngoài” |
+| 8 | Chu vi, diện tích hình tròn | Đề cho bán kính hoặc đường kính |
+| 9 | Diện tích phần tô màu | Hình gồm nhiều hình lồng nhau, hỏi phần còn lại |
+| 10 | Chu vi, diện tích trong tình huống thực tế | Từ khoá “rào xung quanh”, “lát gạch”, “trồng cây quanh” |
 
 ---
 

@@ -107,46 +107,26 @@ e) Tính tổng: 15 + 20 + 25 + … + 160
 
 ## PHẦN II — THI ĐẤU CẶP ĐÔI · Mức M3 — Vận dụng · 20 phút · 20 điểm
 
-### Bài 1. (4 điểm) Định vị số hạng trong dãy cách đều
-
-Cho dãy: 14, 22, 30, …, 894.
-
-a) Dãy có bao nhiêu số hạng?
-b) Số hạng thứ 55 là số nào?
-c) Số 566 là số hạng thứ mấy?
-d) Số 582 là số hạng thứ mấy?
-e) Số 799 có thuộc dãy không? Vì sao?
-f) Tổng của cả dãy bằng bao nhiêu?
-
-### Bài 2. (4 điểm) Tổng của các số tự nhiên liên tiếp
+### Bài 1. (4 điểm) Tổng của các số tự nhiên liên tiếp
 
 Với mỗi ý, tìm số theo yêu cầu.
 
-a) Tổng của 5 số tự nhiên liên tiếp bằng 1 620. Tìm số bé nhất trong 5 số đó.
-b) Tổng của 3 số tự nhiên liên tiếp bằng 780. Tìm số bé nhất trong 3 số đó.
-c) Tổng của 5 số tự nhiên liên tiếp bằng 1 100. Tìm số bé nhất trong 5 số đó.
-d) Tổng của 5 số tự nhiên liên tiếp bằng 265. Tìm số bé nhất trong 5 số đó.
+a) Tổng của 5 số tự nhiên liên tiếp bằng 1 100. Tìm số bé nhất trong 5 số đó.
+b) Tổng của 5 số tự nhiên liên tiếp bằng 265. Tìm số bé nhất trong 5 số đó.
+c) Tổng của 5 số tự nhiên liên tiếp bằng 660. Tìm số bé nhất trong 5 số đó.
+d) Tổng của 3 số tự nhiên liên tiếp bằng 663. Tìm số bé nhất trong 3 số đó.
+e) Tổng của 3 số tự nhiên liên tiếp bằng 273. Tìm số bé nhất trong 3 số đó.
 
-### Bài 3. (4 điểm) Đếm tam giác và đoạn thẳng
-
-Đếm có hệ thống, nêu cách đếm.
-
-a) Từ một đỉnh của tam giác lớn kẻ 3 đoạn thẳng tới cạnh đối diện. Có tất cả bao nhiêu tam giác trong hình?
-b) Trong đó có bao nhiêu tam giác nhỏ nhất (không bị chia tiếp)?
-c) Trên một đường thẳng lấy 4 điểm phân biệt. Có bao nhiêu đoạn thẳng được tạo thành?
-d) Nếu lấy thêm một điểm nữa trên đường thẳng đó thì có thêm bao nhiêu đoạn thẳng?
-e) Với 5 điểm thì có tất cả bao nhiêu đoạn thẳng?
-
-### Bài 4. (4 điểm) Đếm số lần xuất hiện của một chữ số
+### Bài 2. (4 điểm) Đếm số lần xuất hiện của một chữ số
 
 Đếm số lần xuất hiện, tính cả khi chữ số đó xuất hiện nhiều lần trong một số.
 
-a) Từ 1 đến 100, chữ số 3 xuất hiện bao nhiêu lần?
-b) Từ 1 đến 150, chữ số 1 xuất hiện bao nhiêu lần?
-c) Từ 1 đến 500, chữ số 7 xuất hiện bao nhiêu lần?
-d) Từ 1 đến 300, chữ số 1 xuất hiện bao nhiêu lần?
+a) Từ 1 đến 500, chữ số 7 xuất hiện bao nhiêu lần?
+b) Từ 1 đến 300, chữ số 1 xuất hiện bao nhiêu lần?
+c) Từ 1 đến 150, chữ số 1 xuất hiện bao nhiêu lần?
+d) Từ 1 đến 500, chữ số 3 xuất hiện bao nhiêu lần?
 
-### Bài 5. (4 điểm) Dãy số cho bởi quy tắc truy hồi
+### Bài 3. (4 điểm) Dãy số cho bởi quy tắc truy hồi
 
 Dãy số được lập theo ba quy tắc sau.
 
@@ -160,43 +140,44 @@ c) Số hạng thứ 7 của dãy là số nào?
 d) Số hạng thứ 9 của dãy là số nào?
 e) Từ số hạng thứ 4 đến số hạng thứ 6, dãy tăng thêm bao nhiêu đơn vị?
 
+### Bài 4. (4 điểm) Nguyên lý bù trừ với hai tập hợp
+
+Vẽ hai vòng tròn giao nhau và điền số vào từng miền.
+
+a) Lớp có 28 học sinh. Có 16 bạn thích môn Toán, 17 bạn thích môn Tiếng Việt, 6 bạn thích cả hai môn. Hỏi bao nhiêu bạn thích ít nhất một trong hai môn?
+b) Bao nhiêu bạn chỉ thích môn Toán?
+c) Bao nhiêu bạn chỉ thích môn Tiếng Việt?
+d) Bao nhiêu bạn không thích môn nào trong hai môn đó?
+e) Nếu cộng thẳng số bạn thích Toán với số bạn thích Tiếng Việt thì được bao nhiêu?
+f) Con số vừa cộng lớn hơn số bạn thích ít nhất một môn bao nhiêu? Vì sao?
+
+### Bài 5. (4 điểm) Định vị số hạng trong dãy cách đều
+
+Cho dãy: 14, 18, 22, …, 810.
+
+a) Dãy có bao nhiêu số hạng?
+b) Số hạng thứ 100 là số nào?
+c) Số 58 là số hạng thứ mấy?
+d) Số 66 là số hạng thứ mấy?
+e) Số 75 có thuộc dãy không? Vì sao?
+f) Tổng của cả dãy bằng bao nhiêu?
+
 ---
 
 ## PHẦN III — ÔN THEO MA TRẬN ĐỀ · Mức M3 — Vận dụng · 20 phút · 25 điểm
 
-### Bài 1. (5 điểm) Bài toán về tuổi
+### Bài 1. (5 điểm) Tính thời điểm đến, thời gian đi
 
-Chú ý điều gì thay đổi và điều gì không đổi theo thời gian.
+Ghi kết quả theo giờ và phút.
 
-a) Tuổi bố gấp 5 lần tuổi con. Tổng số tuổi của hai bố con là 84 tuổi. Tính tuổi mỗi người.
-b) Hiện nay bố 18 tuổi, con 9 tuổi. Sau 7 năm nữa, tổng số tuổi hai bố con là bao nhiêu?
-c) Hiện nay bố 28 tuổi, con 7 tuổi. Cách đây 4 năm, bố hơn con bao nhiêu tuổi?
-d) Hiện nay bố 52 tuổi, con 13 tuổi. Cách đây 8 năm, bố hơn con bao nhiêu tuổi?
+a) Một chuyến tàu khởi hành lúc 9 giờ 10 phút và đi hết 4 giờ 7 phút. Tàu đến nơi lúc mấy giờ?
+b) Một chuyến tàu khởi hành lúc 14 giờ 45 phút và đi hết 3 giờ 27 phút. Tàu đến nơi lúc mấy giờ?
+c) Một chuyến tàu khởi hành lúc 7 giờ 45 phút và đi hết 5 giờ 17 phút. Tàu đến nơi lúc mấy giờ?
+d) Một chuyến tàu khởi hành lúc 14 giờ 30 phút và đi hết 3 giờ 46 phút. Tàu đến nơi lúc mấy giờ?
 
-### Bài 2. (5 điểm) Nguyên lí Đi-rích-lê (nguyên lí ngăn kéo)
+### Bài 2. (5 điểm) Đọc và phân tích bảng số liệu
 
-Xét trường hợp xấu nhất.
-
-a) Trong một hộp có bi thuộc 3 màu (đỏ, xanh, vàng), mỗi màu có rất nhiều viên. Hỏi phải lấy ra ít nhất bao nhiêu viên (không nhìn) để chắc chắn có 4 viên cùng màu?
-b) Trong một hộp có bi thuộc 6 màu (đỏ, xanh, vàng, trắng, tím, nâu), mỗi màu có rất nhiều viên. Hỏi phải lấy ra ít nhất bao nhiêu viên (không nhìn) để chắc chắn có 2 viên cùng màu?
-c) Trong một hộp có bi thuộc 5 màu (đỏ, xanh, vàng, trắng, tím), mỗi màu có rất nhiều viên. Hỏi phải lấy ra ít nhất bao nhiêu viên (không nhìn) để chắc chắn có 5 viên cùng màu?
-d) Trong một hộp có bi thuộc 4 màu (đỏ, xanh, vàng, trắng), mỗi màu có rất nhiều viên. Hỏi phải lấy ra ít nhất bao nhiêu viên (không nhìn) để chắc chắn có 3 viên cùng màu?
-e) Trong một hộp có bi thuộc 5 màu (đỏ, xanh, vàng, trắng, tím), mỗi màu có rất nhiều viên. Hỏi phải lấy ra ít nhất bao nhiêu viên (không nhìn) để chắc chắn có 4 viên cùng màu?
-
-### Bài 3. (5 điểm) So sánh hai biểu thức mà không cần tính
-
-Điền dấu <, >, = và giải thích ngắn.
-
-a) 675 + 27 … 760 + 27
-b) 393 × 11 … 401 × 11
-c) 610 × 4 … 610 × 5
-d) 710 + 17 … 746 + 17
-e) 676 × 11 … 676 × 12
-f) 571 × 10 … 511 × 10
-
-### Bài 4. (5 điểm) Đọc và phân tích bảng số liệu
-
-Bảng thống kê số học sinh đăng kí câu lạc bộ theo môn: **Toán: 9 · Tiếng Việt: 16 · Tiếng Anh: 16 · Khoa học: 21 · Lịch sử: 6**.
+Bảng thống kê số học sinh đăng kí câu lạc bộ theo môn: **Toán: 12 · Tiếng Việt: 12 · Tiếng Anh: 13 · Khoa học: 16**.
 
 a) Tổng số học sinh đăng kí là bao nhiêu?
 b) Môn nào có nhiều học sinh đăng kí nhất?
@@ -205,16 +186,36 @@ d) Môn nhiều nhất hơn môn ít nhất bao nhiêu bạn?
 e) Trung bình mỗi môn có bao nhiêu học sinh đăng kí?
 f) Số học sinh đăng kí môn Toán chiếm bao nhiêu phần trăm tổng số (làm tròn đến hàng đơn vị)?
 
-### Bài 5. (5 điểm) Tính nhanh tổng dãy số cách đều
+### Bài 3. (5 điểm) Lập số có ba chữ số khác nhau
+
+Cho ba chữ số **1, 6, 8**. Lập các số có ba chữ số khác nhau từ ba chữ số này.
+
+a) Viết tất cả các số lập được (theo thứ tự từ bé đến lớn).
+b) Lập được tất cả bao nhiêu số?
+c) Số lớn nhất lập được là số nào?
+d) Số bé nhất lập được là số nào?
+e) Trong các số đó có bao nhiêu số chẵn?
+f) Có bao nhiêu số chia hết cho 5?
+g) Tổng của số lớn nhất và số bé nhất bằng bao nhiêu?
+
+### Bài 4. (5 điểm) Tính nhanh tổng dãy số cách đều
 
 Tính tổng mỗi dãy.
 
-a) 3 + 6 + 9 + … + 150
-b) 2 + 4 + 6 + … + 50
-c) 5 + 10 + 15 + … + 50
-d) 1 + 2 + 3 + … + 20
-e) 1 + 4 + 7 + … + 298
-f) 1 + 2 + 3 + … + 50
+a) 2 + 7 + 12 + … + 497
+b) 2 + 3 + 4 + … + 26
+c) 2 + 5 + 8 + … + 59
+d) 1 + 3 + 5 + … + 99
+
+### Bài 5. (5 điểm) Bài toán về tuổi
+
+Chú ý điều gì thay đổi và điều gì không đổi theo thời gian.
+
+a) Hiện nay bố 70 tuổi, con 14 tuổi. Cách đây 2 năm, bố hơn con bao nhiêu tuổi?
+b) Hiện nay bố 40 tuổi, con 10 tuổi. Sau 4 năm nữa, tổng số tuổi hai bố con là bao nhiêu?
+c) Hiện nay bố 39 tuổi, con 13 tuổi. Sau 5 năm nữa, tổng số tuổi hai bố con là bao nhiêu?
+d) Tuổi bố gấp 3 lần tuổi con. Tổng số tuổi của hai bố con là 48 tuổi. Tính tuổi mỗi người.
+e) Hiện nay bố 70 tuổi, con 14 tuổi. Cách đây 4 năm, bố hơn con bao nhiêu tuổi?
 
 ---
 
@@ -231,48 +232,46 @@ d) Trung bình cộng của dãy bằng bao nhiêu?
 e) Tổng của số hạng đầu và số hạng cuối bằng bao nhiêu?
 f) Tổng của số hạng thứ hai và số hạng áp chót bằng bao nhiêu?
 
-### Bài 2. (5 điểm) Lọc số hạng theo điều kiện chia hết
+### Bài 2. (5 điểm) Bài toán trồng cây — bốn trường hợp
 
-Cho dãy 7, 13, 19, …, 1 909.
+Tính số cây cần trồng trong mỗi trường hợp.
+
+a) Trồng cây trên đoạn đường dài 192 m, hai cây liền nhau cách nhau 4 m, không trồng ở cả hai đầu. Cần bao nhiêu cây?
+b) Trồng cây quanh một cái ao hình tròn có chu vi 252 m, hai cây liền nhau cách nhau 6 m. Cần bao nhiêu cây?
+c) Trồng cây suốt một đoạn đường dài 62 m, hai cây liền nhau cách nhau 2 m, trồng cả ở hai đầu đường. Cần bao nhiêu cây?
+d) Trồng cây trên đoạn đường dài 120 m, hai cây liền nhau cách nhau 4 m, chỉ trồng ở một đầu đường. Cần bao nhiêu cây?
+e) Trồng cây suốt một đoạn đường dài 280 m, hai cây liền nhau cách nhau 5 m, trồng cả ở hai đầu đường. Cần bao nhiêu cây?
+
+### Bài 3. (5 điểm) Lọc số hạng theo điều kiện chia hết
+
+Cho dãy 10, 16, 22, …, 2 182.
 
 a) Dãy có bao nhiêu số hạng?
 b) Số hạng cuối là số nào?
-c) Trong dãy có bao nhiêu số chia hết cho 2?
+c) Trong dãy có bao nhiêu số chia hết cho 10?
 d) Trong dãy có bao nhiêu số chẵn?
 e) Tổng các số chẵn trong dãy bằng bao nhiêu?
 f) Tổng cả dãy bằng bao nhiêu?
 
-### Bài 3. (5 điểm) Bài toán trồng cây — bốn trường hợp
-
-Tính số cây cần trồng trong mỗi trường hợp.
-
-a) Trồng cây suốt một đoạn đường dài 116 m, hai cây liền nhau cách nhau 4 m, trồng cả ở hai đầu đường. Cần bao nhiêu cây?
-b) Trồng cây trên đoạn đường dài 236 m, hai cây liền nhau cách nhau 4 m, không trồng ở cả hai đầu. Cần bao nhiêu cây?
-c) Trồng cây quanh một cái ao hình tròn có chu vi 280 m, hai cây liền nhau cách nhau 5 m. Cần bao nhiêu cây?
-d) Trồng cây trên đoạn đường dài 162 m, hai cây liền nhau cách nhau 6 m, chỉ trồng ở một đầu đường. Cần bao nhiêu cây?
-e) Trồng cây trên đoạn đường dài 240 m, hai cây liền nhau cách nhau 6 m, không trồng ở cả hai đầu. Cần bao nhiêu cây?
-f) Trồng cây quanh một cái ao hình tròn có chu vi 69 m, hai cây liền nhau cách nhau 3 m. Cần bao nhiêu cây?
-
-### Bài 4. (5 điểm) Cân đĩa và số lần cân ít nhất
-
-Xét trường hợp xấu nhất, không xét trường hợp may mắn.
-
-a) Có 12 gói kẹo giống hệt nhau, trong đó đúng một gói nhẹ hơn. Dùng cân đĩa không có quả cân, cần cân ít nhất mấy lần để tìm ra gói nhẹ?
-b) Một lần cân bằng cân đĩa cho mấy kết quả khác nhau?
-c) Vì thế mỗi lần cân nên chia số gói thành mấy phần?
-d) Sau lần cân thứ nhất, số gói còn phải xét nhiều nhất là bao nhiêu?
-e) Biết Chi nặng hơn Dũng, Dũng nặng hơn Ngọc. Ai nhẹ nhất?
-f) Với ba bạn ấy, cần cân ít nhất mấy lần để xếp thứ tự từ nhẹ đến nặng?
-
-### Bài 5. (5 điểm) Tính nhanh tổng nhiều tích có thừa số chung
+### Bài 4. (5 điểm) Tính nhanh tổng nhiều tích có thừa số chung
 
 Tính tổng mỗi biểu thức.
 
-a) 3 × 1 + 3 × 2 + 3 × 3 + … + 3 × 10
-b) 6 × 1 + 6 × 2 + 6 × 3 + … + 6 × 20
-c) 3 × 1 + 3 × 2 + 3 × 3 + … + 3 × 10
-d) 6 × 1 + 6 × 2 + 6 × 3 + … + 6 × 20
-e) 4 × 1 + 4 × 2 + 4 × 3 + … + 4 × 20
+a) 3 × 1 + 3 × 2 + 3 × 3 + … + 3 × 20
+b) 6 × 1 + 6 × 2 + 6 × 3 + … + 6 × 10
+c) 2 × 1 + 2 × 2 + 2 × 3 + … + 2 × 25
+d) 5 × 1 + 5 × 2 + 5 × 3 + … + 5 × 10
+
+### Bài 5. (5 điểm) Cân đĩa và số lần cân ít nhất
+
+Xét trường hợp xấu nhất, không xét trường hợp may mắn.
+
+a) Có 27 gói kẹo giống hệt nhau, trong đó đúng một gói nhẹ hơn. Dùng cân đĩa không có quả cân, cần cân ít nhất mấy lần để tìm ra gói nhẹ?
+b) Một lần cân bằng cân đĩa cho mấy kết quả khác nhau?
+c) Vì thế mỗi lần cân nên chia số gói thành mấy phần?
+d) Sau lần cân thứ nhất, số gói còn phải xét nhiều nhất là bao nhiêu?
+e) Biết Dũng nặng hơn Chi, Chi nặng hơn Minh. Ai nhẹ nhất?
+f) Với ba bạn ấy, cần cân ít nhất mấy lần để xếp thứ tự từ nhẹ đến nặng?
 
 ---
 
@@ -380,64 +379,64 @@ f) Cột 6 — Kết quả?
 **Lỗi thường gặp:** Quên chia 2, kết quả gấp đôi đáp số đúng. Phòng: Kiểm tra bằng dãy ngắn: 1 + 2 + 3 = 6, công thức phải cho đúng 6.
 
 ### Bài II.1
-**Đáp số:** a) 111 · b) 446 · c) 70 · d) 72 · e) không · f) 50 394
-**Hướng giải:** Muốn biết một số là số hạng thứ mấy: lấy số đó trừ số hạng đầu, chia cho khoảng cách rồi cộng 1. Nếu phép chia còn dư thì số đó **không thuộc** dãy.
-**Nhãn tư duy:** TD4, TD2. Điểm chốt: Phép chia **có dư** là bằng chứng số đó không thuộc dãy.
-**Lỗi thường gặp:** Chia được số nguyên rồi quên cộng 1, hoặc bỏ qua phần dư. Phòng: Luôn ghi rõ thương và số dư khi chia.
-
-### Bài II.2
-**Đáp số:** a) 322 · b) 259 · c) 218 · d) 51
+**Đáp số:** a) 218 · b) 51 · c) 130 · d) 220 · e) 90
 **Hướng giải:** Với một số **lẻ** các số tự nhiên liên tiếp, số ở giữa chính là trung bình cộng: số giữa = tổng : số lượng. Số bé nhất bằng số giữa trừ đi một nửa số lượng còn lại.
 **Nhãn tư duy:** TD3, TD4. Điểm chốt: Với số lượng lẻ thì **số giữa = tổng : số lượng** — đó là chìa khoá.
 **Lỗi thường gặp:** Lấy tổng chia cho số lượng rồi nhận luôn kết quả là số bé nhất. Phòng: Vẽ dãy số ra, đánh dấu vị trí số giữa trước khi lùi về số đầu.
 
-### Bài II.3
-**Đáp số:** a) 10 · b) 4 · c) 6 · d) 4 · e) 10
-**Hướng giải:** Kẻ n đoạn thẳng từ một đỉnh chia cạnh đối diện thành n + 1 phần, tạo ra n + 1 tam giác nhỏ. Mỗi tam giác trong hình ứng với việc chọn hai trong n + 2 điểm trên cạnh đối diện, nên số tam giác = (n + 2) × (n + 1) : 2. Tương tự, k điểm trên một đường thẳng cho k × (k − 1) : 2 đoạn thẳng.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Mọi bài đếm ở đây quy về **chọn hai điểm** trong một dãy điểm.
-**Lỗi thường gặp:** Chỉ đếm tam giác nhỏ, quên các tam giác ghép. Phòng: Đánh dấu tên các điểm rồi liệt kê từng cặp một cách có thứ tự.
-
-### Bài II.4
-**Đáp số:** a) 20 · b) 86 · c) 100 · d) 160
+### Bài II.2
+**Đáp số:** a) 100 · b) 160 · c) 86 · d) 200
 **Hướng giải:** Đếm theo từng hàng: đếm số lần chữ số đó đứng ở hàng đơn vị, rồi hàng chục, rồi hàng trăm. Ở mỗi hàng, các số thoả mãn lập thành dãy cách đều, dùng công thức đếm số hạng.
 **Nhãn tư duy:** TD4, TD6. Điểm chốt: Một số có thể chứa chữ số đó **nhiều lần**; đếm theo hàng thì không sót.
 **Lỗi thường gặp:** Đếm số lượng **số** chứa chữ số đó thay vì số **lần** xuất hiện. Phòng: Kẻ bảng: hàng đơn vị – hàng chục – hàng trăm, đếm riêng rồi cộng.
 
-### Bài II.5
+### Bài II.3
 **Đáp số:** a) 2, 7, 13 · b) 41 · c) 103 · d) 233 · e) 56
 **Hướng giải:** Lập bảng và tính lần lượt từng số hạng theo đúng quy tắc, không nhảy cóc. Ghi rõ số thứ tự của mỗi số hạng để chọn đúng nhánh quy tắc.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Quy tắc phụ thuộc **vị trí chẵn hay lẻ** — phải đánh số thứ tự trước.
 **Lỗi thường gặp:** Áp dụng nhầm nhánh quy tắc vì không để ý vị trí. Phòng: Kẻ bảng hai dòng: dòng trên ghi vị trí, dòng dưới ghi số hạng.
 
+### Bài II.4
+**Đáp số:** a) 27 · b) 10 · c) 11 · d) 1 · e) 33 · f) 6, vì nhóm thích cả hai môn bị đếm hai lần
+**Hướng giải:** Vẽ sơ đồ Ven hai vòng tròn. **Điền miền giữa trước**, rồi trừ ra hai miền riêng. Cộng thẳng hai nhóm sẽ đếm nhóm chung **hai lần**, nên phải trừ đi một lần.
+**Nhãn tư duy:** TD2, TD6. Điểm chốt: Điền **miền giữa trước** — mọi miền khác suy ra từ đó.
+**Lỗi thường gặp:** Cộng thẳng hai nhóm rồi coi đó là số bạn thích ít nhất một môn. Phòng: Vẽ sơ đồ Ven, ghi số vào từng miền rồi cộng lại kiểm tra với sĩ số.
+
+### Bài II.5
+**Đáp số:** a) 200 · b) 410 · c) 12 · d) 14 · e) không · f) 82 400
+**Hướng giải:** Muốn biết một số là số hạng thứ mấy: lấy số đó trừ số hạng đầu, chia cho khoảng cách rồi cộng 1. Nếu phép chia còn dư thì số đó **không thuộc** dãy.
+**Nhãn tư duy:** TD4, TD2. Điểm chốt: Phép chia **có dư** là bằng chứng số đó không thuộc dãy.
+**Lỗi thường gặp:** Chia được số nguyên rồi quên cộng 1, hoặc bỏ qua phần dư. Phòng: Luôn ghi rõ thương và số dư khi chia.
+
 ### Bài III.1
-**Đáp số:** a) bố 70 tuổi, con 14 tuổi · b) 41 tuổi · c) 21 tuổi · d) 39 tuổi
-**Hướng giải:** **Hiệu số tuổi của hai người không bao giờ thay đổi.** Còn tổng số tuổi thì mỗi năm tăng thêm đúng bằng số người. Tỉ số tuổi thì thay đổi theo từng năm.
-**Nhãn tư duy:** TD2, TD6. Điểm chốt: Hiệu tuổi là đại lượng **bất biến** — chìa khoá của mọi bài toán tuổi.
-**Lỗi thường gặp:** Cộng thêm số năm vào cả hiệu số tuổi. Phòng: Kẻ bảng ba dòng: trước kia – hiện nay – sau này, ghi rõ tuổi từng người.
+**Đáp số:** a) 13 giờ 17 phút · b) 18 giờ 12 phút · c) 13 giờ 2 phút · d) 18 giờ 16 phút
+**Hướng giải:** Đổi cả giờ khởi hành lẫn thời gian đi về **phút**, cộng lại, rồi đổi kết quả ngược lại thành giờ và phút. Cách này tránh được lỗi nhớ khi phần phút vượt 60.
+**Nhãn tư duy:** TD3, TD2. Điểm chốt: Đổi hết về phút rồi mới cộng — an toàn hơn cộng trực tiếp.
+**Lỗi thường gặp:** Cộng phần phút thành hơn 60 mà quên đổi thành giờ. Phòng: Kiểm tra phần phút của đáp số phải bé hơn 60.
 
 ### Bài III.2
-**Đáp số:** a) 10 viên · b) 7 viên · c) 21 viên · d) 9 viên · e) 16 viên
-**Hướng giải:** Xét trường hợp **xấu nhất**: lấy được nhiều nhất bao nhiêu viên mà vẫn chưa đủ điều kiện? Đó là mỗi màu lấy (k − 1) viên. Lấy thêm đúng một viên nữa thì chắc chắn có k viên cùng màu.
-**Nhãn tư duy:** TD6, TD2. Điểm chốt: Luôn xuất phát từ **trường hợp xấu nhất** rồi cộng thêm 1.
-**Lỗi thường gặp:** Nhân số màu với số viên cần rồi lấy luôn kết quả đó. Phòng: Viết rõ câu “Xấu nhất là mỗi màu lấy được … viên mà vẫn chưa đủ”.
-
-### Bài III.3
-**Đáp số:** a) < · b) < · c) < · d) < · e) < · f) >
-**Hướng giải:** Khi hai biểu thức có phần giống nhau, chỉ cần so sánh phần khác nhau: cùng cộng thêm một số thì số nào lớn hơn vẫn lớn hơn; cùng nhân với một số khác 0 cũng vậy.
-**Nhãn tư duy:** TD5, TD2. Điểm chốt: Che phần **giống nhau** đi, chỉ so phần khác nhau.
-**Lỗi thường gặp:** Tính hết cả hai vế, vừa lâu vừa dễ sai. Phòng: Dùng bút gạch bỏ phần giống nhau ở hai vế trước khi so sánh.
-
-### Bài III.4
-**Đáp số:** a) 68 · b) Khoa học (21 bạn) · c) Lịch sử (6 bạn) · d) 15 · e) 13,6 · f) 13%
+**Đáp số:** a) 53 · b) Khoa học (16 bạn) · c) Toán (12 bạn) · d) 4 · e) 13,25 · f) 23%
 **Hướng giải:** Đọc bảng theo cột, ghi lại từng số liệu. Tổng là cộng tất cả; nhiều nhất, ít nhất là so sánh; trung bình là tổng chia số môn; tỉ số phần trăm là phần chia tổng rồi nhân 100.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Mọi câu hỏi đều quy về **tổng, so sánh, trung bình cộng, tỉ số phần trăm**.
 **Lỗi thường gặp:** Đọc nhầm cột, hoặc quên một môn khi cộng tổng. Phòng: Đánh dấu từng số đã cộng để không sót và không cộng lặp.
 
-### Bài III.5
-**Đáp số:** a) 3 825 · b) 650 · c) 275 · d) 210 · e) 14 950 · f) 1 275
+### Bài III.3
+**Đáp số:** a) 168 · 186 · 618 · 681 · 816 · 861 · b) 6 · c) 861 · d) 168 · e) 4 · f) 0 · g) 1 029
+**Hướng giải:** Lập số theo thứ tự: chọn chữ số hàng trăm trước (khác 0), rồi hàng chục, rồi hàng đơn vị, mỗi chữ số dùng đúng một lần. Viết có hệ thống theo nhóm cùng chữ số hàng trăm để không bỏ sót và không trùng lặp.
+**Nhãn tư duy:** TD4, TD6. Điểm chốt: Chữ số **0 không được đứng ở hàng trăm**, nên nếu bộ có chữ số 0 thì số lượng số lập được ít hơn.
+**Lỗi thường gặp:** Viết lộn xộn nên vừa sót vừa trùng; hoặc nhận cả số bắt đầu bằng 0. Phòng: Liệt kê theo nhóm: cố định hàng trăm rồi mới hoán vị hai chữ số còn lại.
+
+### Bài III.4
+**Đáp số:** a) 24 950 · b) 350 · c) 610 · d) 2 500
 **Hướng giải:** Đếm số số hạng: (số cuối − số đầu) : khoảng cách + 1. Tổng bằng (số đầu + số cuối) × số số hạng : 2. Cách hiểu: ghép số đầu với số cuối, số thứ hai với số áp chót… mỗi cặp có tổng bằng nhau.
 **Nhãn tư duy:** TD4, TD5. Điểm chốt: Phải đếm **số số hạng** trước; đây là chỗ sai nhiều nhất.
 **Lỗi thường gặp:** Lấy số cuối chia khoảng cách làm số số hạng, quên cộng 1. Phòng: Viết ra ba số đầu và ba số cuối để kiểm tra khoảng cách rồi mới đếm.
+
+### Bài III.5
+**Đáp số:** a) 56 tuổi · b) 58 tuổi · c) 62 tuổi · d) bố 36 tuổi, con 12 tuổi · e) 56 tuổi
+**Hướng giải:** **Hiệu số tuổi của hai người không bao giờ thay đổi.** Còn tổng số tuổi thì mỗi năm tăng thêm đúng bằng số người. Tỉ số tuổi thì thay đổi theo từng năm.
+**Nhãn tư duy:** TD2, TD6. Điểm chốt: Hiệu tuổi là đại lượng **bất biến** — chìa khoá của mọi bài toán tuổi.
+**Lỗi thường gặp:** Cộng thêm số năm vào cả hiệu số tuổi. Phòng: Kẻ bảng ba dòng: trước kia – hiện nay – sau này, ghi rõ tuổi từng người.
 
 ### Bài IV.1
 **Đáp số:** a) -9 · b) 86 · c) 770 · d) 38,5 · e) 77 · f) 77
@@ -447,32 +446,32 @@ f) Cột 6 — Kết quả?
 **Gợi ý 3 tầng:** (1) Từ số hạng cuối lùi về số hạng đầu qua mấy khoảng? — (2) Trung bình cộng bằng nửa tổng của hai số hạng ở hai đầu. — (3) Tổng bằng trung bình cộng nhân số số hạng.
 
 ### Bài IV.2
-**Đáp số:** a) 318 · b) 1 909 · c) 0 · d) 0 · e) 0 · f) 304 644
-**Hướng giải:** Các số hạng thoả thêm một điều kiện chia hết cũng lập thành một dãy cách đều mới, có khoảng cách là bội chung nhỏ nhất của khoảng cách cũ và số chia. Tìm số hạng đầu tiên thoả điều kiện rồi đếm trên dãy mới.
-**Nhãn tư duy:** TD4, TD2. Điểm chốt: Dãy con cũng **cách đều**, chỉ khác khoảng cách.
-**Lỗi thường gặp:** Duyệt từng số hạng để đếm — không kịp khi dãy dài hàng trăm số. Phòng: Tìm số hạng đầu tiên thoả điều kiện rồi xác định khoảng cách mới.
-**Gợi ý 3 tầng:** (1) Số hạng nào đầu tiên thoả điều kiện? — (2) Số hạng tiếp theo thoả điều kiện cách nó bao nhiêu? — (3) Dãy con cũng cách đều — dùng công thức đếm.
-
-### Bài IV.3
-**Đáp số:** a) 30 · b) 58 · c) 56 · d) 27 · e) 39 · f) 23
+**Đáp số:** a) 47 · b) 42 · c) 32 · d) 30 · e) 57
 **Hướng giải:** BẪY — Bốn trường hợp trồng cây khác nhau. Số khoảng = độ dài : khoảng cách. Từ số khoảng suy ra số cây: trồng cả hai đầu thì số cây hơn số khoảng 1; trồng một đầu thì bằng số khoảng; không trồng đầu nào thì kém số khoảng 1; trồng khép kín (quanh ao, quanh sân) thì bằng đúng số khoảng.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Đọc kĩ **có trồng ở hai đầu hay không** — bốn trường hợp cho bốn đáp số khác nhau.
 **Lỗi thường gặp:** Máy móc cộng 1 cho mọi trường hợp. Phòng: Vẽ một đoạn ngắn với 3 khoảng để đếm thử trước khi áp dụng.
 **Gợi ý 3 tầng:** (1) Tính số khoảng trước. — (2) Đề có nói trồng ở hai đầu, một đầu, hay khép kín? — (3) Vẽ thử một hình nhỏ để kiểm tra.
 
-### Bài IV.4
-**Đáp số:** a) 3 lần · b) 3 kết quả: nghiêng trái, nghiêng phải, thăng bằng · c) 3 phần · d) 4 · e) Ngọc · f) 2 lần
-**Hướng giải:** BẪY — Chia ba chứ không chia đôi. Mỗi lần cân bằng cân đĩa cho ba kết quả, nên chia ba chứ không chia đôi. Sau k lần cân phân biệt được nhiều nhất 3 nhân với chính nó k lần vật. Luôn lập luận theo **trường hợp xấu nhất**.
-**Nhãn tư duy:** TD6, TD2. Điểm chốt: Cân đĩa cho **ba** kết quả nên chia ba, không chia đôi.
-**Lỗi thường gặp:** Chia đôi như tìm kiếm thông thường nên cần nhiều lần cân hơn mức cần thiết. Phòng: Nhớ ba kết quả: nghiêng trái, nghiêng phải, thăng bằng.
-**Gợi ý 3 tầng:** (1) Một lần cân cho mấy kết quả? — (2) Vậy nên chia số gói thành mấy phần? — (3) Sau mỗi lần cân còn lại nhiều nhất bao nhiêu gói?
+### Bài IV.3
+**Đáp số:** a) 363 · b) 2 182 · c) 73 · d) 363 · e) 397 848 · f) 397 848
+**Hướng giải:** Các số hạng thoả thêm một điều kiện chia hết cũng lập thành một dãy cách đều mới, có khoảng cách là bội chung nhỏ nhất của khoảng cách cũ và số chia. Tìm số hạng đầu tiên thoả điều kiện rồi đếm trên dãy mới.
+**Nhãn tư duy:** TD4, TD2. Điểm chốt: Dãy con cũng **cách đều**, chỉ khác khoảng cách.
+**Lỗi thường gặp:** Duyệt từng số hạng để đếm — không kịp khi dãy dài hàng trăm số. Phòng: Tìm số hạng đầu tiên thoả điều kiện rồi xác định khoảng cách mới.
+**Gợi ý 3 tầng:** (1) Số hạng nào đầu tiên thoả điều kiện? — (2) Số hạng tiếp theo thoả điều kiện cách nó bao nhiêu? — (3) Dãy con cũng cách đều — dùng công thức đếm.
 
-### Bài IV.5
-**Đáp số:** a) 165 · b) 1 260 · c) 165 · d) 1 260 · e) 840
+### Bài IV.4
+**Đáp số:** a) 630 · b) 330 · c) 650 · d) 275
 **Hướng giải:** Tất cả các tích đều có chung một thừa số. Đặt thừa số chung ra ngoài, trong ngoặc còn tổng của dãy số tự nhiên liên tiếp — dùng công thức tổng dãy cách đều để tính.
 **Nhãn tư duy:** TD3, TD4. Điểm chốt: Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
 **Lỗi thường gặp:** Nhân từng tích rồi cộng dồn, rất dài và dễ sai. Phòng: Viết lại biểu thức dưới dạng a × (1 + 2 + … + n) trước khi tính.
 **Gợi ý 3 tầng:** (1) Các tích có thừa số nào giống nhau? — (2) Đặt thừa số đó ra ngoài dấu ngoặc. — (3) Tổng trong ngoặc là dãy số cách đều — tính bằng công thức.
+
+### Bài IV.5
+**Đáp số:** a) 3 lần · b) 3 kết quả: nghiêng trái, nghiêng phải, thăng bằng · c) 3 phần · d) 9 · e) Minh · f) 2 lần
+**Hướng giải:** BẪY — Chia ba chứ không chia đôi. Mỗi lần cân bằng cân đĩa cho ba kết quả, nên chia ba chứ không chia đôi. Sau k lần cân phân biệt được nhiều nhất 3 nhân với chính nó k lần vật. Luôn lập luận theo **trường hợp xấu nhất**.
+**Nhãn tư duy:** TD6, TD2. Điểm chốt: Cân đĩa cho **ba** kết quả nên chia ba, không chia đôi.
+**Lỗi thường gặp:** Chia đôi như tìm kiếm thông thường nên cần nhiều lần cân hơn mức cần thiết. Phòng: Nhớ ba kết quả: nghiêng trái, nghiêng phải, thăng bằng.
+**Gợi ý 3 tầng:** (1) Một lần cân cho mấy kết quả? — (2) Vậy nên chia số gói thành mấy phần? — (3) Sau mỗi lần cân còn lại nhiều nhất bao nhiêu gói?
 
 ### Bài V.1
 **Đáp số:** a) Dãy tuần hoàn · b) Phép chia có dư, tính tuần hoàn · c) Dãy lặp lại một nhóm số cố định · d) Chia vị trí cho chu kì, dùng số dư định vị · e) Tổng n số hạng = tổng một chu kì × số chu kì đầy đủ + tổng phần dư. · f) 3 · 5 · 8 · 3…

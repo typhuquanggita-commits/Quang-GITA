@@ -164,72 +164,64 @@ e) Trung bình mỗi ngày bán được 278 kg gạo. Hỏi 3 ngày bán đư�
 
 ## PHẦN III — VẬN DỤNG · Mức M3 — Vận dụng · 20 phút · 25 điểm
 
-### Bài 1. (5 điểm) Tổng của các số tự nhiên liên tiếp
+### Bài 1. (5 điểm) Tính thời điểm đến, thời gian đi
 
-Với mỗi ý, tìm số theo yêu cầu.
+Ghi kết quả theo giờ và phút.
 
-a) Tổng của 5 số tự nhiên liên tiếp bằng 2 105. Tìm số bé nhất trong 5 số đó.
-b) Tổng của 7 số tự nhiên liên tiếp bằng 770. Tìm số bé nhất trong 7 số đó.
-c) Tổng của 9 số tự nhiên liên tiếp bằng 4 419. Tìm số bé nhất trong 9 số đó.
-d) Tổng của 7 số tự nhiên liên tiếp bằng 1 729. Tìm số bé nhất trong 7 số đó.
+a) Một chuyến tàu khởi hành lúc 9 giờ 15 phút và đi hết 3 giờ 48 phút. Tàu đến nơi lúc mấy giờ?
+b) Một chuyến tàu khởi hành lúc 9 giờ 45 phút và đi hết 6 giờ 31 phút. Tàu đến nơi lúc mấy giờ?
+c) Một chuyến tàu khởi hành lúc 13 giờ 0 phút và đi hết 2 giờ 11 phút. Tàu đến nơi lúc mấy giờ?
+d) Một chuyến tàu khởi hành lúc 12 giờ 30 phút và đi hết 5 giờ 49 phút. Tàu đến nơi lúc mấy giờ?
+e) Một chuyến tàu khởi hành lúc 9 giờ 40 phút và đi hết 1 giờ 56 phút. Tàu đến nơi lúc mấy giờ?
+f) Một chuyến tàu khởi hành lúc 12 giờ 20 phút và đi hết 4 giờ 25 phút. Tàu đến nơi lúc mấy giờ?
 
 ### Bài 2. (5 điểm) Đơn vị đo thể tích và dung tích
 
 Điền số thích hợp.
 
-a) 80 dm³ = … lít
-b) 34 000 cm³ = … dm³
-c) 53 lít = … ml
-d) 22 m³ = … dm³
+a) 27 dm³ = … lít
+b) 3 m³ = … dm³
+c) 71 lít = … ml
+d) 47 000 cm³ = … dm³
 
-### Bài 3. (5 điểm) Số chia hết cho nhiều số cùng lúc
-
-Trả lời gọn, có thể dùng dãy cách đều.
-
-a) Có bao nhiêu số từ 250 đến 372 vừa chia hết cho 2 vừa chia hết cho 3? Số bé nhất trong đó là số nào?
-b) Có bao nhiêu số từ 90 đến 313 vừa chia hết cho 2 vừa chia hết cho 9? Số bé nhất trong đó là số nào?
-c) Có bao nhiêu số từ 123 đến 232 vừa chia hết cho 2 vừa chia hết cho 3? Số bé nhất trong đó là số nào?
-d) Có bao nhiêu số từ 202 đến 689 vừa chia hết cho 2 vừa chia hết cho 9? Số bé nhất trong đó là số nào?
-e) Có bao nhiêu số từ 130 đến 742 vừa chia hết cho 2 vừa chia hết cho 3? Số bé nhất trong đó là số nào?
-
-### Bài 4. (5 điểm) Bài toán thực tế về khối lượng
+### Bài 3. (5 điểm) Bài toán thực tế về khối lượng
 
 Chú ý đơn vị mà đề hỏi.
 
-a) Một xe chở 18 bao xi măng, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ xi măng?
-b) Một xe chở 19 bao thóc, mỗi bao 50 kg. Hỏi xe chở bao nhiêu tạ thóc?
-c) Một xe chở 11 bao phân bón, mỗi bao 40 kg. Hỏi xe chở bao nhiêu tạ phân bón?
-d) Một xe chở 10 bao thóc, mỗi bao 50 kg. Hỏi xe chở bao nhiêu tạ thóc?
+a) Một xe chở 15 bao phân bón, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ phân bón?
+b) Một xe chở 19 bao thóc, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ thóc?
+c) Một xe chở 34 bao xi măng, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ xi măng?
+d) Một xe chở 15 bao đường, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ đường?
+e) Một xe chở 10 bao thóc, mỗi bao 50 kg. Hỏi xe chở bao nhiêu tạ thóc?
 
-### Bài 5. (5 điểm) Tính thời điểm đến, thời gian đi
+### Bài 4. (5 điểm) Tổng của các số tự nhiên liên tiếp
 
-Ghi kết quả theo giờ và phút.
+Với mỗi ý, tìm số theo yêu cầu.
 
-a) Một chuyến tàu khởi hành lúc 11 giờ 0 phút và đi hết 42 phút. Tàu đến nơi lúc mấy giờ?
-b) Một chuyến tàu khởi hành lúc 5 giờ 15 phút và đi hết 4 giờ 21 phút. Tàu đến nơi lúc mấy giờ?
-c) Một chuyến tàu khởi hành lúc 11 giờ 0 phút và đi hết 2 giờ 27 phút. Tàu đến nơi lúc mấy giờ?
-d) Một chuyến tàu khởi hành lúc 9 giờ 30 phút và đi hết 3 giờ 22 phút. Tàu đến nơi lúc mấy giờ?
-e) Một chuyến tàu khởi hành lúc 11 giờ 10 phút và đi hết 5 giờ 15 phút. Tàu đến nơi lúc mấy giờ?
-f) Một chuyến tàu khởi hành lúc 14 giờ 20 phút và đi hết 6 giờ 33 phút. Tàu đến nơi lúc mấy giờ?
+a) Tổng của 9 số tự nhiên liên tiếp bằng 3 060. Tìm số bé nhất trong 9 số đó.
+b) Tổng của 3 số tự nhiên liên tiếp bằng 1 260. Tìm số bé nhất trong 3 số đó.
+c) Tổng của 3 số tự nhiên liên tiếp bằng 96. Tìm số bé nhất trong 3 số đó.
+d) Tổng của 5 số tự nhiên liên tiếp bằng 2 140. Tìm số bé nhất trong 5 số đó.
+e) Tổng của 9 số tự nhiên liên tiếp bằng 2 160. Tìm số bé nhất trong 9 số đó.
+f) Tổng của 3 số tự nhiên liên tiếp bằng 396. Tìm số bé nhất trong 3 số đó.
+
+### Bài 5. (5 điểm) Tìm phân số của một số qua hai bước
+
+Đọc kĩ “của số nào” trước khi tính.
+
+a) Một cửa hàng có 432 kg gạo. Ngày đầu bán 1 phần 4 số gạo, ngày thứ hai bán 1 phần 4 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
+b) Một cửa hàng có 132 kg gạo. Ngày đầu bán 1 phần 2 số gạo, ngày thứ hai bán 1 phần 3 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
+c) Một cửa hàng có 700 kg gạo. Ngày đầu bán 1 phần 5 số gạo, ngày thứ hai bán 1 phần 5 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
+d) Một cửa hàng có 375 kg gạo. Ngày đầu bán 1 phần 3 số gạo, ngày thứ hai bán 1 phần 5 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
+e) Một cửa hàng có 36 kg gạo. Ngày đầu bán 1 phần 2 số gạo, ngày thứ hai bán 1 phần 2 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
 
 ---
 
 ## PHẦN IV — VẬN DỤNG CAO · Mức M4 — Vận dụng cao · 25 phút · 25 điểm
 
-### Bài 1. (5 điểm) Cân đĩa và số lần cân ít nhất
+### Bài 1. (5 điểm) Tổng, trung bình cộng của dãy cách đều
 
-Xét trường hợp xấu nhất, không xét trường hợp may mắn.
-
-a) Có 12 gói kẹo giống hệt nhau, trong đó đúng một gói nhẹ hơn. Dùng cân đĩa không có quả cân, cần cân ít nhất mấy lần để tìm ra gói nhẹ?
-b) Một lần cân bằng cân đĩa cho mấy kết quả khác nhau?
-c) Vì thế mỗi lần cân nên chia số gói thành mấy phần?
-d) Sau lần cân thứ nhất, số gói còn phải xét nhiều nhất là bao nhiêu?
-e) Biết Yến nặng hơn Sơn, Sơn nặng hơn Phúc. Ai nhẹ nhất?
-f) Với ba bạn ấy, cần cân ít nhất mấy lần để xếp thứ tự từ nhẹ đến nặng?
-
-### Bài 2. (5 điểm) Tổng, trung bình cộng của dãy cách đều
-
-Một dãy cách đều có 20 số hạng, khoảng cách 5 đơn vị, số hạng cuối là 127.
+Một dãy cách đều có 40 số hạng, khoảng cách 3 đơn vị, số hạng cuối là 207.
 
 a) Số hạng đầu của dãy là số nào?
 b) Số hạng cuối của dãy là số nào?
@@ -238,89 +230,103 @@ d) Trung bình cộng của dãy bằng bao nhiêu?
 e) Tổng của số hạng đầu và số hạng cuối bằng bao nhiêu?
 f) Tổng của số hạng thứ hai và số hạng áp chót bằng bao nhiêu?
 
-### Bài 3. (5 điểm) Bài toán đại lượng nhiều bước
+### Bài 2. (5 điểm) Quãng đường – vận tốc – thời gian
 
-Trình bày lời giải có câu trả lời.
+Áp dụng đúng công thức cho từng câu.
 
-a) Một cửa hàng có 20 thùng dầu, mỗi thùng 20 lít. Cửa hàng đã bán 10 thùng. Hỏi cửa hàng còn lại bao nhiêu lít dầu?
-b) Một cửa hàng có 19 thùng sữa, mỗi thùng 18 lít. Cửa hàng đã bán 4 thùng. Hỏi cửa hàng còn lại bao nhiêu lít sữa?
-c) Một cửa hàng có 9 thùng nước mắm, mỗi thùng 18 lít. Cửa hàng đã bán 6 thùng. Hỏi cửa hàng còn lại bao nhiêu lít nước mắm?
-d) Một cửa hàng có 17 thùng sữa, mỗi thùng 20 lít. Cửa hàng đã bán 16 thùng. Hỏi cửa hàng còn lại bao nhiêu lít sữa?
-e) Một cửa hàng có 10 thùng dầu, mỗi thùng 24 lít. Cửa hàng đã bán 5 thùng. Hỏi cửa hàng còn lại bao nhiêu lít dầu?
-f) Một cửa hàng có 10 thùng dầu, mỗi thùng 12 lít. Cửa hàng đã bán 8 thùng. Hỏi cửa hàng còn lại bao nhiêu lít dầu?
+a) Một người đi 16 km hết 4 giờ. Tính vận tốc.
+b) Một người đi quãng đường 30 km với vận tốc 5 km/giờ. Tính thời gian đi.
+c) Một người đi với vận tốc 40 km/giờ trong 5 giờ. Tính quãng đường đi được.
+d) Một người đi 200 km hết 4 giờ. Tính vận tốc.
+e) Một người đi quãng đường 240 km với vận tốc 60 km/giờ. Tính thời gian đi.
+f) Một người đi với vận tốc 60 km/giờ trong 6 giờ. Tính quãng đường đi được.
+g) Một người đi 120 km hết 6 giờ. Tính vận tốc.
+
+### Bài 3. (5 điểm) Ghép người với môn bằng bảng đúng – sai
+
+Bắt buộc kẻ bảng ra giấy. Không được suy luận nhẩm ở bài này.
+
+a) Ba bạn Sơn, Khánh và Chi mỗi bạn học một môn năng khiếu khác nhau trong ba môn: bơi, cờ vua và vẽ. Biết rằng: Sơn không học cờ vua và cũng không học bơi; Khánh không học bơi. Hỏi mỗi bạn học môn nào?
+b) Ba bạn Minh, Dũng và Nam mỗi bạn học một môn năng khiếu khác nhau trong ba môn: bơi, cờ vua và vẽ. Biết rằng: Minh không học cờ vua và cũng không học vẽ; Dũng không học vẽ. Hỏi mỗi bạn học môn nào?
+c) Ba bạn Hùng, Yến và Hà mỗi bạn học một môn năng khiếu khác nhau trong ba môn: hát, múa và đàn. Biết rằng: Hùng không học đàn và cũng không học múa; Yến không học múa. Hỏi mỗi bạn học môn nào?
+d) Ba bạn Quân, Lan và Chi mỗi bạn học một môn năng khiếu khác nhau trong ba môn: bóng đá, cầu lông và bóng rổ. Biết rằng: Quân không học bóng đá và cũng không học bóng rổ; Lan không học bóng rổ. Hỏi mỗi bạn học môn nào?
 
 ### Bài 4. (5 điểm) Chuyển bớt để hai phần bằng nhau
 
 Chú ý: chuyển đi thì bên này giảm, bên kia tăng.
 
-a) Đội Một có 285 quyển sách, nhóm Hoa Phượng có 57 quyển. Hỏi phải chuyển bao nhiêu quyển từ đội Một sang nhóm Hoa Phượng để số sách hai tổ bằng nhau?
-b) Nhóm Sao Mai có 168 quyển sách, tổ Ba có 140 quyển. Hỏi phải chuyển bao nhiêu quyển từ nhóm Sao Mai sang tổ Ba để số sách hai tổ bằng nhau?
-c) Nhóm Hoa Phượng có 280 quyển sách, tổ Ba có 240 quyển. Hỏi phải chuyển bao nhiêu quyển từ nhóm Hoa Phượng sang tổ Ba để số sách hai tổ bằng nhau?
-d) Nhóm Sao Mai có 35 quyển sách, đội Một có 25 quyển. Hỏi phải chuyển bao nhiêu quyển từ nhóm Sao Mai sang đội Một để số sách hai tổ bằng nhau?
-e) Nhóm Sao Mai có 40 quyển sách, đội Một có 10 quyển. Hỏi phải chuyển bao nhiêu quyển từ nhóm Sao Mai sang đội Một để số sách hai tổ bằng nhau?
+a) Tổ Hai có 65 quyển sách, nhóm Hoa Phượng có 39 quyển. Hỏi phải chuyển bao nhiêu quyển từ tổ Hai sang nhóm Hoa Phượng để số sách hai tổ bằng nhau?
+b) Tổ Ba có 130 quyển sách, đội Một có 52 quyển. Hỏi phải chuyển bao nhiêu quyển từ tổ Ba sang đội Một để số sách hai tổ bằng nhau?
+c) Nhóm Hoa Phượng có 132 quyển sách, tổ Một có 66 quyển. Hỏi phải chuyển bao nhiêu quyển từ nhóm Hoa Phượng sang tổ Một để số sách hai tổ bằng nhau?
+d) Đội Hai có 170 quyển sách, tổ Ba có 136 quyển. Hỏi phải chuyển bao nhiêu quyển từ đội Hai sang tổ Ba để số sách hai tổ bằng nhau?
+e) Đội Hai có 360 quyển sách, nhóm Hoa Phượng có 60 quyển. Hỏi phải chuyển bao nhiêu quyển từ đội Hai sang nhóm Hoa Phượng để số sách hai tổ bằng nhau?
+f) Tổ Một có 180 quyển sách, nhóm Hoa Phượng có 72 quyển. Hỏi phải chuyển bao nhiêu quyển từ tổ Một sang nhóm Hoa Phượng để số sách hai tổ bằng nhau?
 
-### Bài 5. (5 điểm) Quãng đường – vận tốc – thời gian
+### Bài 5. (5 điểm) Bài toán đại lượng nhiều bước
 
-Áp dụng đúng công thức cho từng câu.
+Trình bày lời giải có câu trả lời.
 
-a) Một người đi 48 km hết 4 giờ. Tính vận tốc.
-b) Một người đi quãng đường 300 km với vận tốc 60 km/giờ. Tính thời gian đi.
-c) Một người đi với vận tốc 12 km/giờ trong 6 giờ. Tính quãng đường đi được.
-d) Một người đi với vận tốc 12 km/giờ trong 3 giờ. Tính quãng đường đi được.
+a) Một cửa hàng có 17 thùng nước, mỗi thùng 15 lít. Cửa hàng đã bán 13 thùng. Hỏi cửa hàng còn lại bao nhiêu lít nước?
+b) Một cửa hàng có 4 thùng dầu, mỗi thùng 20 lít. Cửa hàng đã bán 2 thùng. Hỏi cửa hàng còn lại bao nhiêu lít dầu?
+c) Một cửa hàng có 18 thùng nước, mỗi thùng 15 lít. Cửa hàng đã bán 8 thùng. Hỏi cửa hàng còn lại bao nhiêu lít nước?
+d) Một cửa hàng có 8 thùng dầu, mỗi thùng 25 lít. Cửa hàng đã bán 4 thùng. Hỏi cửa hàng còn lại bao nhiêu lít dầu?
+e) Một cửa hàng có 9 thùng nước, mỗi thùng 12 lít. Cửa hàng đã bán 4 thùng. Hỏi cửa hàng còn lại bao nhiêu lít nước?
 
 ---
 
 ## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
 
-### Bài 1. (3 điểm) Tỉ lệ nghịch — so sánh hai phương án
-
-Tính rồi so sánh hai phương án.
-
-a) 10 người làm xong một công việc trong 11 ngày. Nếu có thêm 4 người nữa (làm khoẻ như nhau) thì công việc đó hoàn thành sớm hơn bao nhiêu ngày?
-b) 8 người làm xong một công việc trong 8 ngày. Nếu có thêm 5 người nữa (làm khoẻ như nhau) thì công việc đó hoàn thành sớm hơn bao nhiêu ngày?
-c) 4 người làm xong một công việc trong 9 ngày. Nếu có thêm 1 người nữa (làm khoẻ như nhau) thì công việc đó hoàn thành sớm hơn bao nhiêu ngày?
-d) 8 người làm xong một công việc trong 14 ngày. Nếu có thêm 2 người nữa (làm khoẻ như nhau) thì công việc đó hoàn thành sớm hơn bao nhiêu ngày?
-
-### Bài 2. (3 điểm) Đại lượng khối lượng — đổi đơn vị và chia phần
-
-Đổi hết về ki-lô-gam trước khi tính.
-
-a) Một kho chứa 5 tấn 7 tạ 52 kg thóc. Đổi ra ki-lô-gam.
-b) Số thóc ấy nặng bao nhiêu tạ và bao nhiêu ki-lô-gam?
-c) Chở đều bằng 4 xe thì mỗi xe chở bao nhiêu ki-lô-gam, còn thừa bao nhiêu?
-d) Nếu mỗi xe chỉ chở được 1 tấn thì cần ít nhất bao nhiêu xe?
-e) Bán 2 876 kg thì còn lại bao nhiêu tạ và ki-lô-gam?
-f) Vì sao ở ý d phải làm tròn lên chứ không làm tròn xuống?
-
-### Bài 3. (3 điểm) Vận tốc trung bình trên cả quãng đường
-
-Chú ý: vận tốc trung bình không phải trung bình cộng hai vận tốc.
-
-a) Một người đi 2 giờ đầu với vận tốc 30 km/giờ, 2 giờ sau với vận tốc 40 km/giờ. Tính vận tốc trung bình trên cả quãng đường.
-b) Một người đi 2 giờ đầu với vận tốc 15 km/giờ, 3 giờ sau với vận tốc 60 km/giờ. Tính vận tốc trung bình trên cả quãng đường.
-c) Một người đi 1 giờ đầu với vận tốc 15 km/giờ, 3 giờ sau với vận tốc 40 km/giờ. Tính vận tốc trung bình trên cả quãng đường.
-d) Một người đi 2 giờ đầu với vận tốc 12 km/giờ, 1 giờ sau với vận tốc 40 km/giờ. Tính vận tốc trung bình trên cả quãng đường.
-e) Một người đi 2 giờ đầu với vận tốc 15 km/giờ, 2 giờ sau với vận tốc 60 km/giờ. Tính vận tốc trung bình trên cả quãng đường.
-
-### Bài 4. (3 điểm) Mua bán có chiết khấu và thuế
+### Bài 1. (3 điểm) Mua bán có chiết khấu và thuế
 
 Bài mô phỏng câu hỏi thực tế của đề đánh giá năng lực.
 
-a) Một món hàng niêm yết 300 000 đồng, được chiết khấu 15%. Giá sau chiết khấu là bao nhiêu?
-b) Sau đó cộng thêm thuế 5% tính trên giá đã chiết khấu. Giá phải trả là bao nhiêu?
+a) Một món hàng niêm yết 200 000 đồng, được chiết khấu 15%. Giá sau chiết khấu là bao nhiêu?
+b) Sau đó cộng thêm thuế 8% tính trên giá đã chiết khấu. Giá phải trả là bao nhiêu?
 c) So với giá niêm yết, người mua trả nhiều hơn hay ít hơn, chênh bao nhiêu đồng?
-d) Mua 3 món như thế thì phải trả bao nhiêu tiền?
+d) Mua 6 món như thế thì phải trả bao nhiêu tiền?
 e) Nếu cửa hàng cộng thuế trước rồi mới chiết khấu thì giá cuối có đổi không?
 f) Chiết khấu 15% nghĩa là còn lại bao nhiêu phần trăm giá niêm yết?
 
-### Bài 5. (3 điểm) Ba công thức tổng phải thuộc
+### Bài 2. (3 điểm) Tỉ lệ nghịch — so sánh hai phương án
 
-Tính nhanh mỗi tổng, nêu công thức đã dùng.
+Tính rồi so sánh hai phương án.
 
-a) 2 + 4 + 6 + … + 100 (tổng 50 số chẵn đầu tiên)
-b) 1 + 2 + 3 + … + 25
-c) 1 + 3 + 5 + … + 99 (tổng 50 số lẻ đầu tiên)
-d) 1 + 3 + 5 + … + 39 (tổng 20 số lẻ đầu tiên)
+a) 8 người làm xong một công việc trong 5 ngày. Nếu có thêm 5 người nữa (làm khoẻ như nhau) thì công việc đó hoàn thành sớm hơn bao nhiêu ngày?
+b) 6 người làm xong một công việc trong 14 ngày. Nếu có thêm 6 người nữa (làm khoẻ như nhau) thì công việc đó hoàn thành sớm hơn bao nhiêu ngày?
+c) 9 người làm xong một công việc trong 13 ngày. Nếu có thêm 7 người nữa (làm khoẻ như nhau) thì công việc đó hoàn thành sớm hơn bao nhiêu ngày?
+d) 9 người làm xong một công việc trong 14 ngày. Nếu có thêm 7 người nữa (làm khoẻ như nhau) thì công việc đó hoàn thành sớm hơn bao nhiêu ngày?
+
+### Bài 3. (3 điểm) Diện tích phần tô màu
+
+Phân tích hình thành hiệu của các hình quen thuộc.
+
+a) Hai hình tròn đồng tâm có bán kính 2 cm và 1 cm. Tính diện tích phần nằm giữa hai đường tròn (lấy π = 3,14).
+b) Một hình vuông cạnh 6 cm. Tính diện tích hình tròn có đường kính bằng cạnh hình vuông đó (lấy π = 3,14).
+c) Một hình tròn bán kính 15 cm nội tiếp trong một hình vuông (hình tròn tiếp xúc cả bốn cạnh). Tính diện tích phần hình vuông nằm ngoài hình tròn (lấy π = 3,14).
+d) Hai hình tròn đồng tâm có bán kính 8 cm và 5 cm. Tính diện tích phần nằm giữa hai đường tròn (lấy π = 3,14).
+e) Một hình vuông cạnh 6 cm. Tính diện tích hình tròn có đường kính bằng cạnh hình vuông đó (lấy π = 3,14).
+
+### Bài 4. (3 điểm) Đại lượng khối lượng — đổi đơn vị và chia phần
+
+Đổi hết về ki-lô-gam trước khi tính.
+
+a) Một kho chứa 3 tấn 4 tạ 70 kg thóc. Đổi ra ki-lô-gam.
+b) Số thóc ấy nặng bao nhiêu tạ và bao nhiêu ki-lô-gam?
+c) Chở đều bằng 5 xe thì mỗi xe chở bao nhiêu ki-lô-gam, còn thừa bao nhiêu?
+d) Nếu mỗi xe chỉ chở được 1 tấn thì cần ít nhất bao nhiêu xe?
+e) Bán 1 735 kg thì còn lại bao nhiêu tạ và ki-lô-gam?
+f) Vì sao ở ý d phải làm tròn lên chứ không làm tròn xuống?
+
+### Bài 5. (3 điểm) Vận tốc trung bình trên cả quãng đường
+
+Chú ý: vận tốc trung bình không phải trung bình cộng hai vận tốc.
+
+a) Một người đi 1 giờ đầu với vận tốc 15 km/giờ, 3 giờ sau với vận tốc 40 km/giờ. Tính vận tốc trung bình trên cả quãng đường.
+b) Một người đi 2 giờ đầu với vận tốc 10 km/giờ, 2 giờ sau với vận tốc 30 km/giờ. Tính vận tốc trung bình trên cả quãng đường.
+c) Một người đi 1 giờ đầu với vận tốc 30 km/giờ, 2 giờ sau với vận tốc 30 km/giờ. Tính vận tốc trung bình trên cả quãng đường.
+d) Một người đi 1 giờ đầu với vận tốc 10 km/giờ, 1 giờ sau với vận tốc 60 km/giờ. Tính vận tốc trung bình trên cả quãng đường.
+e) Một người đi 1 giờ đầu với vận tốc 20 km/giờ, 2 giờ sau với vận tốc 24 km/giờ. Tính vận tốc trung bình trên cả quãng đường.
+f) Một người đi 2 giờ đầu với vận tốc 12 km/giờ, 2 giờ sau với vận tốc 20 km/giờ. Tính vận tốc trung bình trên cả quãng đường.
 
 ---
 
@@ -389,104 +395,104 @@ d) 1 + 3 + 5 + … + 39 (tổng 20 số lẻ đầu tiên)
 **Lỗi thường gặp:** Đi tìm ngay số còn thiếu mà chưa tính tổng. Phòng: Bước đầu tiên luôn viết: “Tổng = trung bình cộng × số ngày”.
 
 ### Bài III.1
-**Đáp số:** a) 419 · b) 107 · c) 487 · d) 244
-**Hướng giải:** Với một số **lẻ** các số tự nhiên liên tiếp, số ở giữa chính là trung bình cộng: số giữa = tổng : số lượng. Số bé nhất bằng số giữa trừ đi một nửa số lượng còn lại.
-**Nhãn tư duy:** TD3, TD4. Điểm chốt: Với số lượng lẻ thì **số giữa = tổng : số lượng** — đó là chìa khoá.
-**Lỗi thường gặp:** Lấy tổng chia cho số lượng rồi nhận luôn kết quả là số bé nhất. Phòng: Vẽ dãy số ra, đánh dấu vị trí số giữa trước khi lùi về số đầu.
+**Đáp số:** a) 13 giờ 3 phút · b) 16 giờ 16 phút · c) 15 giờ 11 phút · d) 18 giờ 19 phút · e) 11 giờ 36 phút · f) 16 giờ 45 phút
+**Hướng giải:** Đổi cả giờ khởi hành lẫn thời gian đi về **phút**, cộng lại, rồi đổi kết quả ngược lại thành giờ và phút. Cách này tránh được lỗi nhớ khi phần phút vượt 60.
+**Nhãn tư duy:** TD3, TD2. Điểm chốt: Đổi hết về phút rồi mới cộng — an toàn hơn cộng trực tiếp.
+**Lỗi thường gặp:** Cộng phần phút thành hơn 60 mà quên đổi thành giờ. Phòng: Kiểm tra phần phút của đáp số phải bé hơn 60.
 
 ### Bài III.2
-**Đáp số:** a) 80 · b) 34 · c) 53 000 · d) 22 000
+**Đáp số:** a) 27 · b) 3 000 · c) 71 000 · d) 47
 **Hướng giải:** Hai đơn vị thể tích liền kề hơn kém nhau **1 000 lần**. 1 dm³ = 1 lít; 1 lít = 1 000 ml; 1 m³ = 1 000 dm³ = 1 000 lít.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Thể tích nhảy **1 000 lần** mỗi bậc (độ dài 10, diện tích 100, thể tích 1 000).
 **Lỗi thường gặp:** Đổi như đơn vị diện tích, chỉ nhân 100. Phòng: Nhớ dãy 10 – 100 – 1 000 ứng với độ dài – diện tích – thể tích.
 
 ### Bài III.3
-**Đáp số:** a) 21 số, bé nhất là 252 · b) 13 số, bé nhất là 90 · c) 18 số, bé nhất là 126 · d) 27 số, bé nhất là 216 · e) 102 số, bé nhất là 132
-**Hướng giải:** Số vừa chia hết cho hai số thì chia hết cho bội chung nhỏ nhất của chúng. Các số đó lập thành dãy cách đều với khoảng cách bằng bội chung nhỏ nhất; dùng công thức đếm số hạng của dãy cách đều.
-**Nhãn tư duy:** TD2, TD4. Điểm chốt: Khoảng cách của dãy là **bội chung nhỏ nhất**, không phải tích hai số khi hai số không nguyên tố cùng nhau.
-**Lỗi thường gặp:** Lấy tích hai số làm khoảng cách (ví dụ dùng 27 cho “chia hết cho 3 và 9”). Phòng: Kiểm tra bằng cách viết ba số đầu tiên của dãy rồi xem khoảng cách thật.
-
-### Bài III.4
-**Đáp số:** a) 5 tạ 40 kg · b) 9 tạ 50 kg · c) 4 tạ 40 kg · d) 5 tạ
+**Đáp số:** a) 4 tạ 50 kg · b) 5 tạ 70 kg · c) 10 tạ 20 kg · d) 3 tạ 75 kg · e) 5 tạ
 **Hướng giải:** Tính tổng khối lượng theo ki-lô-gam trước, sau đó mới đổi sang đơn vị mà đề hỏi. Đừng đổi đơn vị ngay từ đầu vì dễ nhầm.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Câu hỏi đòi đơn vị nào thì bước **cuối cùng** mới đổi sang đơn vị đó.
 **Lỗi thường gặp:** Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. Phòng: Khoanh tròn đơn vị trong câu hỏi trước khi đặt bút.
 
+### Bài III.4
+**Đáp số:** a) 336 · b) 419 · c) 31 · d) 426 · e) 236 · f) 131
+**Hướng giải:** Với một số **lẻ** các số tự nhiên liên tiếp, số ở giữa chính là trung bình cộng: số giữa = tổng : số lượng. Số bé nhất bằng số giữa trừ đi một nửa số lượng còn lại.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Với số lượng lẻ thì **số giữa = tổng : số lượng** — đó là chìa khoá.
+**Lỗi thường gặp:** Lấy tổng chia cho số lượng rồi nhận luôn kết quả là số bé nhất. Phòng: Vẽ dãy số ra, đánh dấu vị trí số giữa trước khi lùi về số đầu.
+
 ### Bài III.5
-**Đáp số:** a) 11 giờ 42 phút · b) 9 giờ 36 phút · c) 13 giờ 27 phút · d) 12 giờ 52 phút · e) 16 giờ 25 phút · f) 20 giờ 53 phút
-**Hướng giải:** Đổi cả giờ khởi hành lẫn thời gian đi về **phút**, cộng lại, rồi đổi kết quả ngược lại thành giờ và phút. Cách này tránh được lỗi nhớ khi phần phút vượt 60.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Đổi hết về phút rồi mới cộng — an toàn hơn cộng trực tiếp.
-**Lỗi thường gặp:** Cộng phần phút thành hơn 60 mà quên đổi thành giờ. Phòng: Kiểm tra phần phút của đáp số phải bé hơn 60.
+**Đáp số:** a) 243 kg · b) 44 kg · c) 448 kg · d) 200 kg · e) 9 kg
+**Hướng giải:** Bước 1: tính số gạo bán ngày đầu bằng cách lấy tổng nhân với phân số. Bước 2: tính số gạo **còn lại** sau ngày đầu. Bước 3: phân số của ngày thứ hai tính trên **số còn lại**, không phải trên tổng ban đầu.
+**Nhãn tư duy:** TD2, TD3. Điểm chốt: Cụm “số gạo **còn lại**” đổi hẳn số bị nhân ở bước hai.
+**Lỗi thường gặp:** Lấy cả hai phân số nhân với tổng ban đầu. Phòng: Sau mỗi bước, viết rõ “còn lại … kg” rồi mới sang bước sau.
 
 ### Bài IV.1
-**Đáp số:** a) 3 lần · b) 3 kết quả: nghiêng trái, nghiêng phải, thăng bằng · c) 3 phần · d) 4 · e) Phúc · f) 2 lần
-**Hướng giải:** BẪY — Chia ba chứ không chia đôi. Mỗi lần cân bằng cân đĩa cho ba kết quả, nên chia ba chứ không chia đôi. Sau k lần cân phân biệt được nhiều nhất 3 nhân với chính nó k lần vật. Luôn lập luận theo **trường hợp xấu nhất**.
-**Nhãn tư duy:** TD6, TD2. Điểm chốt: Cân đĩa cho **ba** kết quả nên chia ba, không chia đôi.
-**Lỗi thường gặp:** Chia đôi như tìm kiếm thông thường nên cần nhiều lần cân hơn mức cần thiết. Phòng: Nhớ ba kết quả: nghiêng trái, nghiêng phải, thăng bằng.
-**Gợi ý 3 tầng:** (1) Một lần cân cho mấy kết quả? — (2) Vậy nên chia số gói thành mấy phần? — (3) Sau mỗi lần cân còn lại nhiều nhất bao nhiêu gói?
-
-### Bài IV.2
-**Đáp số:** a) 32 · b) 127 · c) 1 590 · d) 79,5 · e) 159 · f) 159
+**Đáp số:** a) 90 · b) 207 · c) 5 940 · d) 148,5 · e) 297 · f) 297
 **Hướng giải:** Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
 **Nhãn tư duy:** TD4, TD3. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
 **Lỗi thường gặp:** Tính tổng rồi chia — dài hơn và dễ sai khi số hạng nhiều. Phòng: Nhớ tính chất trung bình cộng để kiểm tra chéo kết quả tổng.
 **Gợi ý 3 tầng:** (1) Từ số hạng cuối lùi về số hạng đầu qua mấy khoảng? — (2) Trung bình cộng bằng nửa tổng của hai số hạng ở hai đầu. — (3) Tổng bằng trung bình cộng nhân số số hạng.
 
+### Bài IV.2
+**Đáp số:** a) 4 km/giờ · b) 6 giờ · c) 200 km · d) 50 km/giờ · e) 4 giờ · f) 360 km · g) 20 km/giờ
+**Hướng giải:** BẪY — Đơn vị thời gian. s = v × t; v = s : t; t = s : v. Đơn vị phải khớp: vận tốc km/giờ đi với quãng đường km và thời gian giờ.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng còn lại.
+**Lỗi thường gặp:** Vận tốc tính bằng km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
+**Gợi ý 3 tầng:** (1) Đề cho hai đại lượng nào và hỏi đại lượng nào? — (2) Viết công thức tương ứng. — (3) Kiểm tra đơn vị có khớp nhau không.
+
 ### Bài IV.3
-**Đáp số:** a) 200 lít · b) 270 lít · c) 54 lít · d) 20 lít · e) 120 lít · f) 24 lít
-**Hướng giải:** Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
-**Nhãn tư duy:** TD3, TD5. Điểm chốt: Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
-**Lỗi thường gặp:** Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. Phòng: Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng.
-**Gợi ý 3 tầng:** (1) Còn lại bao nhiêu thùng? — (2) Mỗi thùng bao nhiêu lít? — (3) Nhân hai kết quả đó.
+**Đáp số:** a) Sơn học vẽ; Khánh học cờ vua; Chi học bơi · b) Minh học bơi; Dũng học cờ vua; Nam học vẽ · c) Hùng học hát; Yến học đàn; Hà học múa · d) Quân học cầu lông; Lan học bóng đá; Chi học bóng rổ
+**Hướng giải:** BẪY — Đánh dấu đúng mà quên gạch phần còn lại. Mỗi dòng một người, mỗi cột một khả năng. Đánh × cho điều chắc chắn sai. Dòng nào chỉ còn một ô trống thì ô ấy là ✓ — và ngay sau đó phải gạch × cho cả cột chứa ô ấy.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Đặt được một ✓ thì **cả dòng và cả cột** còn lại đều thành ×. Bỏ bước gạch cột là chỗ bài bị tắc giữa chừng.
+**Lỗi thường gặp:** Đánh ✓ rồi đi tiếp luôn, không gạch × cho phần còn lại của cột. Phòng: Sau mỗi lần đặt ✓, dừng lại gạch đủ dòng và cột rồi mới đọc manh mối kế.
+**Gợi ý 3 tầng:** (1) Kẻ bảng ba dòng ba cột trước đã. — (2) Manh mối nào cho biết chắc chắn một ô là sai? — (3) Dòng nào chỉ còn một ô trống thì ô ấy chính là đáp án của dòng ấy.
 
 ### Bài IV.4
-**Đáp số:** a) 114 quyển · b) 14 quyển · c) 20 quyển · d) 5 quyển · e) 15 quyển
+**Đáp số:** a) 13 quyển · b) 39 quyển · c) 33 quyển · d) 17 quyển · e) 150 quyển · f) 54 quyển
 **Hướng giải:** BẪY — Hiệu thay đổi gấp đôi số chuyển. Khi chuyển k đơn vị từ bên nhiều sang bên ít, bên nhiều giảm k còn bên ít tăng k, nên hiệu giảm đi **2k**. Muốn hai bên bằng nhau thì hiệu phải về 0, vậy k = hiệu : 2.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển.
 **Lỗi thường gặp:** Chuyển đúng bằng hiệu hai bên nên bên ít lại thành bên nhiều. Phòng: Thử lại: sau khi chuyển, cộng trừ ra hai số rồi so xem có bằng nhau không.
 **Gợi ý 3 tầng:** (1) Hiện tại hai bên hơn kém nhau bao nhiêu? — (2) Chuyển 1 quyển thì hiệu giảm mấy quyển? — (3) Muốn hiệu về 0 thì phải chuyển bao nhiêu?
 
 ### Bài IV.5
-**Đáp số:** a) 12 km/giờ · b) 5 giờ · c) 72 km · d) 36 km
-**Hướng giải:** BẪY — Đơn vị thời gian. s = v × t; v = s : t; t = s : v. Đơn vị phải khớp: vận tốc km/giờ đi với quãng đường km và thời gian giờ.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng còn lại.
-**Lỗi thường gặp:** Vận tốc tính bằng km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
-**Gợi ý 3 tầng:** (1) Đề cho hai đại lượng nào và hỏi đại lượng nào? — (2) Viết công thức tương ứng. — (3) Kiểm tra đơn vị có khớp nhau không.
+**Đáp số:** a) 60 lít · b) 40 lít · c) 150 lít · d) 100 lít · e) 60 lít
+**Hướng giải:** Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
+**Nhãn tư duy:** TD3, TD5. Điểm chốt: Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
+**Lỗi thường gặp:** Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. Phòng: Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng.
+**Gợi ý 3 tầng:** (1) Còn lại bao nhiêu thùng? — (2) Mỗi thùng bao nhiêu lít? — (3) Nhân hai kết quả đó.
 
 ### Bài V.1
-**Đáp số:** a) 3,14 ngày · b) 3,08 ngày · c) 1,8 ngày · d) 2,8 ngày
+**Đáp số:** a) 170 000 đồng · b) 183 600 đồng · c) ít hơn 16 400 đồng · d) 1 101 600 đồng · e) không đổi, vì nhân hai lần theo cùng hai tỉ lệ · f) 85%
+**Hướng giải:** BẪY — Mốc 100% đổi sau mỗi bước. Mỗi lần tính phần trăm phải xác định lại **mốc 100%**. Chiết khấu tính trên giá niêm yết; thuế tính trên giá đã chiết khấu. Vì cả hai đều là phép nhân với một tỉ lệ nên đổi thứ tự không làm đổi kết quả.
+**Nhãn tư duy:** TD6, TD2. Điểm chốt: Mốc 100% **đổi sau mỗi bước** — đây là bẫy hay gặp nhất.
+**Lỗi thường gặp:** Tính thuế trên giá niêm yết thay vì trên giá đã chiết khấu. Phòng: Viết ba dòng: giá niêm yết, giá sau chiết khấu, giá phải trả.
+**Gợi ý 3 tầng:** (1) Chiết khấu tính trên giá nào? — (2) Sau chiết khấu còn bao nhiêu phần trăm? — (3) Thuế tính trên giá nào?
+
+### Bài V.2
+**Đáp số:** a) 1,92 ngày · b) 7 ngày · c) 5,69 ngày · d) 6,12 ngày
 **Hướng giải:** Tổng số ngày công không đổi: số người × số ngày. Tính tổng số ngày công, chia cho số người mới ra số ngày mới, rồi lấy số ngày cũ trừ số ngày mới để biết sớm hơn bao nhiêu.
 **Nhãn tư duy:** TD6, TD3. Điểm chốt: Đại lượng bất biến ở đây là **tổng số ngày công**.
 **Lỗi thường gặp:** Trừ thẳng số người rồi lấy hiệu làm số ngày rút ngắn. Phòng: Viết rõ: tổng ngày công = … ; số ngày mới = … ; sớm hơn = … .
 **Gợi ý 3 tầng:** (1) Tổng số ngày công là bao nhiêu? — (2) Với số người mới thì cần bao nhiêu ngày? — (3) Lấy số ngày cũ trừ số ngày mới.
 
-### Bài V.2
-**Đáp số:** a) 5 752 kg · b) 57 tạ 52 kg · c) 1 438 kg, không thừa · d) 6 xe · e) 28 tạ 76 kg · f) vì phần thóc còn lại vẫn cần thêm một xe nữa để chở
-**Hướng giải:** BẪY — Làm tròn lên khi hỏi số xe ít nhất. Quy hết về một đơn vị rồi mới tính. Với câu hỏi “cần ít nhất bao nhiêu xe”, phần dư vẫn phải có một xe chở, nên **làm tròn lên**.
+### Bài V.3
+**Đáp số:** a) 9,42 cm² · b) 28,26 cm² · c) 193,5 cm² · d) 122,46 cm² · e) 28,26 cm²
+**Hướng giải:** Diện tích phần tô màu = diện tích hình lớn − diện tích hình bị khoét. Bước quan trọng nhất là nhận ra hình lớn và hình bị khoét là những hình nào, và tìm đúng kích thước của chúng từ dữ kiện đề cho.
+**Nhãn tư duy:** TD3, TD6. Điểm chốt: Đọc quan hệ hình học để suy ra kích thước: hình tròn nội tiếp hình vuông thì **đường kính bằng cạnh hình vuông**.
+**Lỗi thường gặp:** Lấy bán kính hình tròn làm cạnh hình vuông. Phòng: Vẽ lại hình, ghi số đo lên hình trước khi tính.
+**Gợi ý 3 tầng:** (1) Phần tô màu là hiệu của những hình nào? — (2) Kích thước của hình lớn suy từ đâu? — (3) Tính từng diện tích rồi trừ.
+
+### Bài V.4
+**Đáp số:** a) 3 470 kg · b) 34 tạ 70 kg · c) 694 kg, không thừa · d) 4 xe · e) 17 tạ 35 kg · f) vì phần thóc còn lại vẫn cần thêm một xe nữa để chở
+**Hướng giải:** Quy hết về một đơn vị rồi mới tính. Với câu hỏi “cần ít nhất bao nhiêu xe”, phần dư vẫn phải có một xe chở, nên **làm tròn lên**.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Câu hỏi “ít nhất bao nhiêu xe” luôn **làm tròn lên**.
 **Lỗi thường gặp:** Chia rồi lấy phần nguyên, bỏ quên phần dư vẫn cần một xe. Phòng: Hỏi lại: phần thóc dư có tự bay đi được không?
 **Gợi ý 3 tầng:** (1) Đổi tất cả về ki-lô-gam. — (2) Chia cho sức chở mỗi xe. — (3) Còn dư thì có cần thêm xe không?
 
-### Bài V.3
-**Đáp số:** a) 35 km/giờ · b) 42 km/giờ · c) 33,75 km/giờ · d) 21,33 km/giờ · e) 37,5 km/giờ
+### Bài V.5
+**Đáp số:** a) 33,75 km/giờ · b) 20 km/giờ · c) 30 km/giờ · d) 35 km/giờ · e) 22,67 km/giờ · f) 16 km/giờ
 **Hướng giải:** Vận tốc trung bình = **tổng quãng đường : tổng thời gian**. Phải tính riêng quãng đường của từng chặng rồi cộng lại, sau đó chia cho tổng thời gian.
 **Nhãn tư duy:** TD6, TD2. Điểm chốt: Chỉ khi hai chặng **cùng thời gian** thì vận tốc trung bình mới bằng trung bình cộng hai vận tốc.
 **Lỗi thường gặp:** Cộng hai vận tốc rồi chia đôi trong mọi trường hợp. Phòng: Luôn viết hai dòng: tổng quãng đường = … ; tổng thời gian = … rồi mới chia.
 **Gợi ý 3 tầng:** (1) Chặng thứ nhất đi được bao nhiêu ki-lô-mét? — (2) Chặng thứ hai đi được bao nhiêu? — (3) Lấy tổng quãng đường chia tổng thời gian.
-
-### Bài V.4
-**Đáp số:** a) 255 000 đồng · b) 267 750 đồng · c) ít hơn 32 250 đồng · d) 803 250 đồng · e) không đổi, vì nhân hai lần theo cùng hai tỉ lệ · f) 85%
-**Hướng giải:** Mỗi lần tính phần trăm phải xác định lại **mốc 100%**. Chiết khấu tính trên giá niêm yết; thuế tính trên giá đã chiết khấu. Vì cả hai đều là phép nhân với một tỉ lệ nên đổi thứ tự không làm đổi kết quả.
-**Nhãn tư duy:** TD6, TD2. Điểm chốt: Mốc 100% **đổi sau mỗi bước** — đây là bẫy hay gặp nhất.
-**Lỗi thường gặp:** Tính thuế trên giá niêm yết thay vì trên giá đã chiết khấu. Phòng: Viết ba dòng: giá niêm yết, giá sau chiết khấu, giá phải trả.
-**Gợi ý 3 tầng:** (1) Chiết khấu tính trên giá nào? — (2) Sau chiết khấu còn bao nhiêu phần trăm? — (3) Thuế tính trên giá nào?
-
-### Bài V.5
-**Đáp số:** a) 2 550 · b) 325 · c) 2 500 · d) 400
-**Hướng giải:** Tổng n số tự nhiên đầu tiên bằng n × (n + 1) : 2. Tổng n số lẻ đầu tiên bằng n × n. Tổng n số chẵn đầu tiên bằng n × (n + 1). Cả ba đều suy ra từ công thức tổng dãy cách đều.
-**Nhãn tư duy:** TD4, TD5. Điểm chốt: Phải xác định đúng **n là số lượng số hạng**, không phải số hạng cuối.
-**Lỗi thường gặp:** Nhầm số hạng cuối với số lượng số hạng khi áp công thức. Phòng: Đếm số số hạng trước rồi mới thay vào công thức.
-**Gợi ý 3 tầng:** (1) Dãy này có bao nhiêu số hạng? — (2) Đây là dãy số lẻ, số chẵn, hay số tự nhiên liên tiếp? — (3) Chọn đúng công thức tương ứng.
 
 ---
 

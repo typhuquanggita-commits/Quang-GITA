@@ -43,9 +43,9 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 > **KIẾN THỨC NỀN CỦA CHƯƠNG**
 > 1. Quy tắc nhân trong phép đếm, điều kiện chữ số đứng đầu
-> 2. Tính chất chữ số tận cùng của tổng, tích
-> 3. Trung bình cộng, dãy cách đều
-> 4. Đếm số hạng dãy cách đều, cấu tạo số
+> 2. Tính chất chữ số tận cùng
+> 3. Tính chất chia hết của tổng và hiệu
+> 4. Quan hệ giữa số bị chia, số chia, thương và số dư
 
 ---
 

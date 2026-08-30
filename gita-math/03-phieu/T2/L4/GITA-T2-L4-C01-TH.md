@@ -42,10 +42,10 @@ Phiếu lời giải và phân tích chuyên sâu đi kèm: `GITA-T2-L4-C01-TH-G
 Họ và tên: ......................................... Lớp: ......... Điểm: ......../100
 
 > **KIẾN THỨC NỀN CỦA CHƯƠNG**
-> 1. Tính chất chữ số tận cùng
-> 2. Tính chất số dư của tổng
+> 1. Cấu tạo thập phân, hiệu hai số
+> 2. Cấu tạo thập phân, bài toán tổng – hiệu
 > 3. Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2
-> 4. Quy tắc nhân trong phép đếm, điều kiện chữ số đứng đầu
+> 4. Cấu tạo thập phân của số; tổng – hiệu
 
 ---
 
@@ -66,10 +66,12 @@ f) Làm tròn số 45 645 đến hàng chục.
 
 Viết số tự nhiên ứng với mỗi tổng dưới đây.
 
-a) Viết số gồm tổng: 600 000 + 40 000 + 1 000 + 800 + 40 + 1
-b) Viết số gồm tổng: 300 000 + 10 000 + 7 000 + 900 + 80 + 7
-c) Viết số gồm tổng: 700 000 + 30 000 + 1 000 + 100 + 60 + 4
-d) Viết số gồm tổng: 800 000 + 1 000 + 600 + 70 + 4
+a) Viết số gồm tổng: 40 000 + 2 000 + 300 + 20 + 8
+b) Viết số gồm tổng: 600 000 + 90 000 + 8 000 + 10 + 3
+c) Viết số gồm tổng: 500 000 + 40 000 + 8 000 + 100 + 80
+d) Viết số gồm tổng: 600 000 + 60 000 + 5 000 + 600 + 90 + 9
+e) Viết số gồm tổng: 900 000 + 70 000 + 2 000 + 900 + 70 + 2
+f) Viết số gồm tổng: 100 000 + 20 000 + 2 000 + 500 + 60 + 2
 
 ### Bài 3. (3 điểm) Đọc giá trị của chữ số theo hàng
 
@@ -158,169 +160,165 @@ f) Có bao nhiêu số chia hết cho 5 từ 345 đến 416?
 
 ## PHẦN III — VẬN DỤNG · Mức M3 — Vận dụng · 20 phút · 25 điểm
 
-### Bài 1. (5 điểm) Định vị số hạng trong dãy cách đều
+### Bài 1. (5 điểm) Tổng của các số tự nhiên liên tiếp
 
-Cho dãy: 7, 15, 23, …, 2 111.
+Với mỗi ý, tìm số theo yêu cầu.
 
-a) Dãy có bao nhiêu số hạng?
-b) Số hạng thứ 132 là số nào?
-c) Số 135 là số hạng thứ mấy?
-d) Số 751 là số hạng thứ mấy?
-e) Số 768 có thuộc dãy không? Vì sao?
-f) Tổng của cả dãy bằng bao nhiêu?
+a) Tổng của 5 số tự nhiên liên tiếp bằng 170. Tìm số bé nhất trong 5 số đó.
+b) Tổng của 7 số tự nhiên liên tiếp bằng 2 793. Tìm số bé nhất trong 7 số đó.
+c) Tổng của 9 số tự nhiên liên tiếp bằng 2 844. Tìm số bé nhất trong 9 số đó.
+d) Tổng của 5 số tự nhiên liên tiếp bằng 1 405. Tìm số bé nhất trong 5 số đó.
 
 ### Bài 2. (5 điểm) Số chia hết cho nhiều số cùng lúc
 
 Trả lời gọn, có thể dùng dãy cách đều.
 
-a) Có bao nhiêu số từ 243 đến 936 vừa chia hết cho 3 vừa chia hết cho 5? Số bé nhất trong đó là số nào?
-b) Có bao nhiêu số từ 281 đến 476 vừa chia hết cho 2 vừa chia hết cho 3? Số bé nhất trong đó là số nào?
-c) Có bao nhiêu số từ 160 đến 884 vừa chia hết cho 3 vừa chia hết cho 5? Số bé nhất trong đó là số nào?
-d) Có bao nhiêu số từ 64 đến 312 vừa chia hết cho 2 vừa chia hết cho 5? Số bé nhất trong đó là số nào?
-e) Có bao nhiêu số từ 84 đến 523 vừa chia hết cho 2 vừa chia hết cho 5? Số bé nhất trong đó là số nào?
-f) Có bao nhiêu số từ 202 đến 539 vừa chia hết cho 2 vừa chia hết cho 3? Số bé nhất trong đó là số nào?
+a) Có bao nhiêu số từ 160 đến 884 vừa chia hết cho 3 vừa chia hết cho 5? Số bé nhất trong đó là số nào?
+b) Có bao nhiêu số từ 64 đến 312 vừa chia hết cho 2 vừa chia hết cho 5? Số bé nhất trong đó là số nào?
+c) Có bao nhiêu số từ 84 đến 523 vừa chia hết cho 2 vừa chia hết cho 5? Số bé nhất trong đó là số nào?
+d) Có bao nhiêu số từ 202 đến 539 vừa chia hết cho 2 vừa chia hết cho 3? Số bé nhất trong đó là số nào?
 
-### Bài 3. (5 điểm) Tổng của các số tự nhiên liên tiếp
-
-Với mỗi ý, tìm số theo yêu cầu.
-
-a) Tổng của 9 số tự nhiên liên tiếp bằng 3 906. Tìm số bé nhất trong 9 số đó.
-b) Tổng của 9 số tự nhiên liên tiếp bằng 2 943. Tìm số bé nhất trong 9 số đó.
-c) Tổng của 5 số tự nhiên liên tiếp bằng 2 400. Tìm số bé nhất trong 5 số đó.
-d) Tổng của 5 số tự nhiên liên tiếp bằng 1 015. Tìm số bé nhất trong 5 số đó.
-
-### Bài 4. (5 điểm) Chữ số tận cùng của tổng, hiệu, tích
+### Bài 3. (5 điểm) Chữ số tận cùng của tổng, hiệu, tích
 
 Không tính hết phép tính, chỉ tìm chữ số tận cùng.
 
-a) Tích 7 222 × 5 508 có chữ số tận cùng là chữ số nào?
-b) Hiệu 6 624 − 1 776 có chữ số tận cùng là chữ số nào?
-c) Tổng 6 855 + 6 073 có chữ số tận cùng là chữ số nào?
-d) Hiệu 9 054 − 1 321 có chữ số tận cùng là chữ số nào?
-e) Tích 4 856 × 5 060 có chữ số tận cùng là chữ số nào?
+a) Hiệu 9 551 − 2 701 có chữ số tận cùng là chữ số nào?
+b) Tổng 5 891 + 7 482 có chữ số tận cùng là chữ số nào?
+c) Tích 3 304 × 2 253 có chữ số tận cùng là chữ số nào?
+d) Tổng 9 858 + 9 024 có chữ số tận cùng là chữ số nào?
+
+### Bài 4. (5 điểm) Tìm số ban đầu bằng cách tính ngược
+
+Vẽ sơ đồ mũi tên trước khi tính. Tính xong phải thử lại theo chiều xuôi.
+
+a) Em nghĩ ra một số. Lấy số ấy nhân với 2, được bao nhiêu thì cộng thêm 36, rồi chia cho 4 thì được 38. Hỏi số em nghĩ ra là số nào?
+b) Em nghĩ ra một số. Lấy số ấy nhân với 3, được bao nhiêu thì cộng thêm 31, rồi chia cho 4 thì được 31. Hỏi số em nghĩ ra là số nào?
+c) Em nghĩ ra một số. Lấy số ấy nhân với 6, được bao nhiêu thì cộng thêm 24, rồi chia cho 5 thì được 18. Hỏi số em nghĩ ra là số nào?
+d) Em nghĩ ra một số. Lấy số ấy nhân với 7, được bao nhiêu thì cộng thêm 37, rồi chia cho 2 thì được 120. Hỏi số em nghĩ ra là số nào?
+e) Em nghĩ ra một số. Lấy số ấy nhân với 5, được bao nhiêu thì cộng thêm 28, rồi chia cho 6 thì được 48. Hỏi số em nghĩ ra là số nào?
+f) Em nghĩ ra một số. Lấy số ấy nhân với 6, được bao nhiêu thì cộng thêm 22, rồi chia cho 4 thì được 70. Hỏi số em nghĩ ra là số nào?
 
 ### Bài 5. (5 điểm) Cấu tạo số có hai chữ số
 
 Trình bày lời giải ngắn gọn cho từng ý.
 
-a) Số có hai chữ số 68; đổi chỗ hai chữ số ta được số nào? Hiệu của hai số đó bằng bao nhiêu?
-b) Chữ số hàng chục của số 80 gấp mấy lần chữ số hàng đơn vị (nếu chia hết), hoặc hơn bao nhiêu đơn vị?
-c) Chữ số hàng chục của số 44 gấp mấy lần chữ số hàng đơn vị (nếu chia hết), hoặc hơn bao nhiêu đơn vị?
-d) Số có hai chữ số 59; đổi chỗ hai chữ số ta được số nào? Hiệu của hai số đó bằng bao nhiêu?
-e) Tìm số có hai chữ số, biết tổng hai chữ số bằng 7 và chữ số hàng chục hơn chữ số hàng đơn vị 5 đơn vị.
+a) Số có hai chữ số 25; đổi chỗ hai chữ số ta được số nào? Hiệu của hai số đó bằng bao nhiêu?
+b) Chữ số hàng chục của số 57 gấp mấy lần chữ số hàng đơn vị (nếu chia hết), hoặc hơn bao nhiêu đơn vị?
+c) Số có hai chữ số 41; đổi chỗ hai chữ số ta được số nào? Hiệu của hai số đó bằng bao nhiêu?
+d) Số có hai chữ số 52; đổi chỗ hai chữ số ta được số nào? Hiệu của hai số đó bằng bao nhiêu?
 
 ---
 
 ## PHẦN IV — VẬN DỤNG CAO · Mức M4 — Vận dụng cao · 25 phút · 25 điểm
 
-### Bài 1. (5 điểm) Tìm số theo hai điều kiện chia có dư
+### Bài 1. (5 điểm) Đặt chữ thay chữ số rồi lập luận
+
+Câu nào cũng phải viết cấu tạo số ra trước khi tính.
+
+a) Tìm mọi số có hai chữ số mà số đó bằng 6 lần tổng hai chữ số của nó.
+b) Số có hai chữ số ab. Khi đổi chỗ hai chữ số thì được số mới nhỏ hơn số cũ 18 đơn vị, và tổng hai chữ số bằng 12. Tìm số ab.
+c) Số có hai chữ số ab. Khi đổi chỗ hai chữ số thì được số mới nhỏ hơn số cũ 36 đơn vị, và tổng hai chữ số bằng 8. Tìm số ab.
+d) Tìm mọi số có hai chữ số mà số đó bằng 8 lần tổng hai chữ số của nó.
+
+### Bài 2. (5 điểm) Tìm số theo hai điều kiện chia có dư
 
 Tìm số bé nhất thoả mãn.
 
-a) Tìm số bé nhất không quá 300 chia cho 5 dư 1 và chia cho 6 dư 4.
-b) Tìm số bé nhất không quá 500 chia cho 9 dư 7 và chia cho 8 dư 7.
-c) Tìm số bé nhất không quá 300 chia cho 5 dư 3 và chia cho 7 dư 2.
-d) Tìm số bé nhất không quá 300 chia cho 4 dư 1 và chia cho 6 dư 5.
-e) Tìm số bé nhất không quá 200 chia cho 4 dư 3 và chia cho 8 dư 4.
+a) Tìm số bé nhất không quá 500 chia cho 6 dư 5 và chia cho 3 dư 2.
+b) Tìm số bé nhất không quá 200 chia cho 8 dư 2 và chia cho 4 dư 3.
+c) Tìm số bé nhất không quá 300 chia cho 8 dư 4 và chia cho 9 dư 1.
+d) Tìm số bé nhất không quá 500 chia cho 7 dư 2 và chia cho 5 dư 3.
+e) Tìm số bé nhất không quá 200 chia cho 4 dư 1 và chia cho 9 dư 1.
+f) Tìm số bé nhất không quá 200 chia cho 8 dư 1 và chia cho 6 dư 3.
 
-### Bài 2. (5 điểm) Bài toán bất biến — tính chẵn lẻ của tổng
+### Bài 3. (5 điểm) Lọc số hạng theo điều kiện chia hết
 
-Tìm đại lượng không đổi qua mỗi bước.
+Cho dãy 1, 4, 7, …, 604.
 
-a) Trên bảng viết các số từ 1 đến 34. Mỗi bước, xoá hai số bất kì và viết thay vào **hiệu** của chúng (số lớn trừ số bé). Sau nhiều bước chỉ còn một số. Số cuối cùng là số chẵn hay số lẻ?
-b) Tổng các số từ 1 đến 34 bằng bao nhiêu?
-c) Khi thay hai số a và b bằng hiệu của chúng, tổng trên bảng thay đổi bao nhiêu?
-d) Vì tổng giảm đi một số chẵn nên tính chẵn lẻ của tổng có thay đổi không?
-e) Vậy đại lượng bất biến ở đây là gì?
-f) Số cuối cùng có thể bằng 0 không?
+a) Dãy có bao nhiêu số hạng?
+b) Số hạng cuối là số nào?
+c) Trong dãy có bao nhiêu số chia hết cho 5?
+d) Trong dãy có bao nhiêu số chẵn?
+e) Tổng các số chẵn trong dãy bằng bao nhiêu?
+f) Tổng cả dãy bằng bao nhiêu?
 
-### Bài 3. (5 điểm) Thêm, bớt, đổi chỗ chữ số
+### Bài 4. (5 điểm) Thêm, bớt, đổi chỗ chữ số
 
 Phân tích số theo cấu tạo rồi trả lời.
 
-a) Một số có ba chữ số, nếu xoá chữ số hàng trăm thì được số mới kém số ban đầu 300 đơn vị. Tìm số ban đầu, biết chữ số hàng chục là 2 và chữ số hàng đơn vị là 9.
-b) Đổi chỗ chữ số hàng trăm và chữ số hàng đơn vị của số 806 ta được số mới. Hiệu hai số bằng bao nhiêu?
-c) Đổi chỗ chữ số hàng trăm và chữ số hàng đơn vị của số 634 ta được số mới. Hiệu hai số bằng bao nhiêu?
-d) Một số có ba chữ số, nếu xoá chữ số hàng trăm thì được số mới kém số ban đầu 400 đơn vị. Tìm số ban đầu, biết chữ số hàng chục là 3 và chữ số hàng đơn vị là 3.
-e) Viết thêm chữ số 1 vào bên trái số 260 thì được số mới. Số mới hơn số ban đầu bao nhiêu đơn vị?
-f) Viết thêm chữ số 1 vào bên trái số 200 thì được số mới. Số mới hơn số ban đầu bao nhiêu đơn vị?
+a) Đổi chỗ chữ số hàng trăm và chữ số hàng đơn vị của số 244 ta được số mới. Hiệu hai số bằng bao nhiêu?
+b) Một số có ba chữ số, nếu xoá chữ số hàng trăm thì được số mới kém số ban đầu 600 đơn vị. Tìm số ban đầu, biết chữ số hàng chục là 2 và chữ số hàng đơn vị là 0.
+c) Một số có ba chữ số, nếu xoá chữ số hàng trăm thì được số mới kém số ban đầu 800 đơn vị. Tìm số ban đầu, biết chữ số hàng chục là 7 và chữ số hàng đơn vị là 4.
+d) Đổi chỗ chữ số hàng trăm và chữ số hàng đơn vị của số 475 ta được số mới. Hiệu hai số bằng bao nhiêu?
+e) Viết thêm chữ số 1 vào bên trái số 601 thì được số mới. Số mới hơn số ban đầu bao nhiêu đơn vị?
+f) Viết thêm chữ số 1 vào bên trái số 534 thì được số mới. Số mới hơn số ban đầu bao nhiêu đơn vị?
 
-### Bài 4. (5 điểm) Số nguyên tố và hợp số
+### Bài 5. (5 điểm) Số nguyên tố và hợp số
 
 Trả lời và nêu căn cứ.
 
-a) Số 35 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
-b) Số 53 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
+a) Số 53 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
+b) Số 72 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
 c) Số 80 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
-d) Số 87 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
-e) Số 101 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
-f) Số 151 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
-g) Số 171 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
-h) Số 179 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
-
-### Bài 5. (5 điểm) Nhận ra thừa số 0 để tính tức thì
-
-Tính bằng cách nhanh nhất.
-
-a) 40 × 67 + 40 × 99 − 40 × (67 + 99)
-b) (96 × 92 − 92 × 96) × 72
-c) 15 × 42 + 15 × 67 − 15 × (42 + 67)
-d) 55 × 85 + 55 × 51 − 55 × (85 + 51)
+d) Số 136 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
+e) Số 172 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
 
 ---
 
 ## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
 
-### Bài 1. (3 điểm) Cắt và ghép hình — chu vi thay đổi thế nào
+### Bài 1. (3 điểm) Cắt, ghép hình và tỉ số diện tích
 
-Chú ý các cạnh bị ghép vào bên trong.
+Vẽ hình và tô phần cần tính trước khi làm.
 
-a) Cắt một hình vuông cạnh 16 cm thành hai hình chữ nhật bằng nhau. Tổng chu vi hai hình chữ nhật đó bằng bao nhiêu?
-b) Cắt một hình vuông cạnh 8 cm thành hai hình chữ nhật bằng nhau. Tổng chu vi hai hình chữ nhật đó bằng bao nhiêu?
-c) Ghép 4 hình vuông cạnh 7 cm thành một hàng ngang. Tính chu vi hình chữ nhật thu được.
-d) Cắt một hình vuông cạnh 30 cm thành hai hình chữ nhật bằng nhau. Tổng chu vi hai hình chữ nhật đó bằng bao nhiêu?
+a) Hình chữ nhật có chiều dài 23 cm, chiều rộng 20 cm. Tính diện tích.
+b) Cắt hình ấy thành 4 phần bằng nhau. Mỗi phần có diện tích bao nhiêu?
+c) Nối trung điểm hai cạnh dài lại, hình bị chia thành hai phần. Mỗi phần có diện tích bao nhiêu?
+d) Nối một đỉnh với trung điểm cạnh đối diện, được một tam giác. Diện tích tam giác ấy bằng bao nhiêu phần diện tích hình chữ nhật?
+e) Diện tích tam giác ấy bằng bao nhiêu xăng-ti-mét vuông?
+f) Nếu ghép hai hình chữ nhật ấy theo chiều rộng thì hình mới có diện tích và chu vi bằng bao nhiêu?
 
-### Bài 2. (3 điểm) Đếm chữ số dùng để đánh số trang
-
-Tính số chữ số cần dùng.
-
-a) Một quyển sách có 751 trang, đánh số trang từ 1. Phải dùng tất cả bao nhiêu chữ số?
-b) Một quyển sách có 1 234 trang, đánh số trang từ 1. Phải dùng tất cả bao nhiêu chữ số?
-c) Một quyển sách có 1 007 trang, đánh số trang từ 1. Phải dùng tất cả bao nhiêu chữ số?
-d) Một quyển sách có 2 229 trang, đánh số trang từ 1. Phải dùng tất cả bao nhiêu chữ số?
-e) Một quyển sách có 94 trang, đánh số trang từ 1. Phải dùng tất cả bao nhiêu chữ số?
-f) Một quyển sách có 1 595 trang, đánh số trang từ 1. Phải dùng tất cả bao nhiêu chữ số?
-
-### Bài 3. (3 điểm) Quan hệ giữa một số và tổng các chữ số của nó
+### Bài 2. (3 điểm) Quan hệ giữa một số và tổng các chữ số của nó
 
 Trình bày lập luận đầy đủ.
 
-a) Số có hai chữ số 29 gấp tổng hai chữ số của nó bao nhiêu lần? (viết dưới dạng thương và số dư)
-b) Số có hai chữ số 92 gấp tổng hai chữ số của nó bao nhiêu lần? (viết dưới dạng thương và số dư)
-c) Số có hai chữ số 37 gấp tổng hai chữ số của nó bao nhiêu lần? (viết dưới dạng thương và số dư)
-d) Tìm số có hai chữ số biết số đó bằng 4 lần tổng hai chữ số của nó và chữ số hàng chục là 3.
-e) Số có hai chữ số 31 gấp tổng hai chữ số của nó bao nhiêu lần? (viết dưới dạng thương và số dư)
-f) Tìm số có hai chữ số biết số đó bằng 7 lần tổng hai chữ số của nó và chữ số hàng chục là 6.
+a) Tìm số có hai chữ số biết số đó bằng 5 lần tổng hai chữ số của nó và chữ số hàng chục là 4.
+b) Số có hai chữ số 11 gấp tổng hai chữ số của nó bao nhiêu lần? (viết dưới dạng thương và số dư)
+c) Số có hai chữ số 39 gấp tổng hai chữ số của nó bao nhiêu lần? (viết dưới dạng thương và số dư)
+d) Số có hai chữ số 96 gấp tổng hai chữ số của nó bao nhiêu lần? (viết dưới dạng thương và số dư)
 
-### Bài 4. (3 điểm) Chữ số tận cùng của tổng và tích
-
-Không tính hết phép tính, chỉ tìm chữ số tận cùng.
-
-a) Tổng 692 + 874 có chữ số tận cùng là chữ số nào?
-b) Tích 419 × 690 có chữ số tận cùng là chữ số nào?
-c) Tích 639 × 60 × 8 có chữ số tận cùng là chữ số nào?
-d) Tích 820 × 446 có chữ số tận cùng là chữ số nào?
-
-### Bài 5. (3 điểm) Số dư của tổng — lập luận không cần tính hết
+### Bài 3. (3 điểm) Số dư của tổng — lập luận không cần tính hết
 
 Dùng tính chất số dư, hạn chế tính toán.
 
-a) Dãy số: 267, 313, 407, 581, 675, 700. Có bao nhiêu số trong dãy chia hết cho 3?
+a) Dãy số: 260, 397, 630. Có bao nhiêu số trong dãy chia hết cho 2?
 b) Tổng của dãy bằng bao nhiêu?
-c) Tổng đó có chia hết cho 3 không?
-d) Số dư khi chia tổng cho 3 bằng tổng các số dư của từng số hạng chia cho 3 rồi lại chia cho 3 — hãy kiểm chứng bằng số cụ thể.
-e) Cần bớt ở tổng ít nhất bao nhiêu đơn vị để tổng chia hết cho 3?
-f) Cần thêm vào tổng ít nhất bao nhiêu đơn vị để tổng chia hết cho 3?
+c) Tổng đó có chia hết cho 2 không?
+d) Số dư khi chia tổng cho 2 bằng tổng các số dư của từng số hạng chia cho 2 rồi lại chia cho 2 — hãy kiểm chứng bằng số cụ thể.
+e) Cần bớt ở tổng ít nhất bao nhiêu đơn vị để tổng chia hết cho 2?
+f) Cần thêm vào tổng ít nhất bao nhiêu đơn vị để tổng chia hết cho 2?
+
+### Bài 4. (3 điểm) Đếm chữ số dùng để đánh số trang
+
+Tính số chữ số cần dùng.
+
+a) Một quyển sách có 45 trang, đánh số trang từ 1. Phải dùng tất cả bao nhiêu chữ số?
+b) Một quyển sách có 839 trang, đánh số trang từ 1. Phải dùng tất cả bao nhiêu chữ số?
+c) Một quyển sách có 49 trang, đánh số trang từ 1. Phải dùng tất cả bao nhiêu chữ số?
+d) Một quyển sách có 41 trang, đánh số trang từ 1. Phải dùng tất cả bao nhiêu chữ số?
+e) Một quyển sách có 1 816 trang, đánh số trang từ 1. Phải dùng tất cả bao nhiêu chữ số?
+f) Một quyển sách có 1 054 trang, đánh số trang từ 1. Phải dùng tất cả bao nhiêu chữ số?
+
+### Bài 5. (3 điểm) Chữ số tận cùng của tổng và tích
+
+Không tính hết phép tính, chỉ tìm chữ số tận cùng.
+
+a) Tổng 422 + 820 có chữ số tận cùng là chữ số nào?
+b) Tích 855 × 436 có chữ số tận cùng là chữ số nào?
+c) Tích 712 × 478 × 9 có chữ số tận cùng là chữ số nào?
+d) Tích 598 × 330 × 4 có chữ số tận cùng là chữ số nào?
+e) Tích 236 × 407 có chữ số tận cùng là chữ số nào?
+f) Tổng 664 + 483 có chữ số tận cùng là chữ số nào?
 
 ---
 
@@ -335,7 +333,7 @@ f) Cần thêm vào tổng ít nhất bao nhiêu đơn vị để tổng chia h�
 **Lỗi thường gặp:** Nhìn nhầm sang chữ số ở hàng cần làm tròn thay vì hàng liền sau nó. Phòng: Gạch một nét ngăn ngay sau hàng cần làm tròn rồi mới quyết định.
 
 ### Bài I.2
-**Đáp số:** a) 641 841 · b) 317 987 · c) 731 164 · d) 801 674
+**Đáp số:** a) 42 328 · b) 698 013 · c) 548 180 · d) 665 699 · e) 972 972 · f) 122 562
 **Hướng giải:** Mỗi số hạng cho biết một hàng. Xếp các chữ số vào đúng hàng của nó, hàng nào khuyết thì viết chữ số 0.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Hàng khuyết trong tổng vẫn phải có chữ số **0** trong số viết ra.
 **Lỗi thường gặp:** Bỏ qua hàng khuyết nên số viết ra bị ngắn đi một chữ số. Phòng: Kẻ sẵn các ô hàng rồi mới điền chữ số vào ô tương ứng.
@@ -389,104 +387,104 @@ f) Cần thêm vào tổng ít nhất bao nhiêu đơn vị để tổng chia h�
 **Lỗi thường gặp:** Lấy luôn hai đầu khoảng làm số đầu và số cuối của dãy dù chúng không thoả điều kiện. Phòng: Viết ra ba số đầu và ba số cuối của dãy trước khi áp công thức.
 
 ### Bài III.1
-**Đáp số:** a) 264 · b) 1 055 · c) 17 · d) 94 · e) không · f) 279 576
-**Hướng giải:** Muốn biết một số là số hạng thứ mấy: lấy số đó trừ số hạng đầu, chia cho khoảng cách rồi cộng 1. Nếu phép chia còn dư thì số đó **không thuộc** dãy.
-**Nhãn tư duy:** TD4, TD2. Điểm chốt: Phép chia **có dư** là bằng chứng số đó không thuộc dãy.
-**Lỗi thường gặp:** Chia được số nguyên rồi quên cộng 1, hoặc bỏ qua phần dư. Phòng: Luôn ghi rõ thương và số dư khi chia.
+**Đáp số:** a) 32 · b) 396 · c) 312 · d) 279
+**Hướng giải:** Với một số **lẻ** các số tự nhiên liên tiếp, số ở giữa chính là trung bình cộng: số giữa = tổng : số lượng. Số bé nhất bằng số giữa trừ đi một nửa số lượng còn lại.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Với số lượng lẻ thì **số giữa = tổng : số lượng** — đó là chìa khoá.
+**Lỗi thường gặp:** Lấy tổng chia cho số lượng rồi nhận luôn kết quả là số bé nhất. Phòng: Vẽ dãy số ra, đánh dấu vị trí số giữa trước khi lùi về số đầu.
 
 ### Bài III.2
-**Đáp số:** a) 46 số, bé nhất là 255 · b) 33 số, bé nhất là 282 · c) 48 số, bé nhất là 165 · d) 25 số, bé nhất là 70 · e) 44 số, bé nhất là 90 · f) 56 số, bé nhất là 204
+**Đáp số:** a) 48 số, bé nhất là 165 · b) 25 số, bé nhất là 70 · c) 44 số, bé nhất là 90 · d) 56 số, bé nhất là 204
 **Hướng giải:** Số vừa chia hết cho hai số thì chia hết cho bội chung nhỏ nhất của chúng. Các số đó lập thành dãy cách đều với khoảng cách bằng bội chung nhỏ nhất; dùng công thức đếm số hạng của dãy cách đều.
 **Nhãn tư duy:** TD2, TD4. Điểm chốt: Khoảng cách của dãy là **bội chung nhỏ nhất**, không phải tích hai số khi hai số không nguyên tố cùng nhau.
 **Lỗi thường gặp:** Lấy tích hai số làm khoảng cách (ví dụ dùng 27 cho “chia hết cho 3 và 9”). Phòng: Kiểm tra bằng cách viết ba số đầu tiên của dãy rồi xem khoảng cách thật.
 
 ### Bài III.3
-**Đáp số:** a) 430 · b) 323 · c) 478 · d) 201
-**Hướng giải:** Với một số **lẻ** các số tự nhiên liên tiếp, số ở giữa chính là trung bình cộng: số giữa = tổng : số lượng. Số bé nhất bằng số giữa trừ đi một nửa số lượng còn lại.
-**Nhãn tư duy:** TD3, TD4. Điểm chốt: Với số lượng lẻ thì **số giữa = tổng : số lượng** — đó là chìa khoá.
-**Lỗi thường gặp:** Lấy tổng chia cho số lượng rồi nhận luôn kết quả là số bé nhất. Phòng: Vẽ dãy số ra, đánh dấu vị trí số giữa trước khi lùi về số đầu.
-
-### Bài III.4
-**Đáp số:** a) 6 · b) 8 · c) 8 · d) 3 · e) 0
+**Đáp số:** a) 0 · b) 3 · c) 2 · d) 2
 **Hướng giải:** Chữ số tận cùng của tổng, hiệu, tích chỉ phụ thuộc vào chữ số tận cùng của các số tham gia. Chỉ cần lấy các chữ số tận cùng ra tính với nhau rồi lấy chữ số tận cùng của kết quả.
 **Nhãn tư duy:** TD5, TD2. Điểm chốt: Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu của số.
 **Lỗi thường gặp:** Tính trọn cả phép tính, vừa lâu vừa dễ sai. Phòng: Che phần đầu của hai số, chỉ để lộ chữ số cuối cùng.
 
+### Bài III.4
+**Đáp số:** a) 58 · b) 31 · c) 11 · d) 29 · e) 52 · f) 43
+**Hướng giải:** Viết chuỗi thao tác thành sơ đồ mũi tên rồi đi ngược lại từ kết quả cuối. Mỗi bước đảo phép tính: nhân thành chia, cộng thành trừ. Thứ tự cũng phải đảo — phép làm sau cùng được gỡ trước tiên.
+**Nhãn tư duy:** TD3, TD5. Điểm chốt: Đảo **cả phép tính lẫn thứ tự**. Đảo phép tính mà giữ nguyên thứ tự thì vẫn sai.
+**Lỗi thường gặp:** Bắt đầu gỡ từ phép tính đầu tiên của đề thay vì từ phép tính cuối cùng. Phòng: Thử lại theo chiều xuôi. Bài này luôn thử lại được, nên không có lý do gì để nộp một đáp số chưa thử.
+
 ### Bài III.5
-**Đáp số:** a) 86, hiệu 18 · b) hơn 8 đơn vị · c) gấp 1 lần · d) 95, hiệu 36 · e) 61
+**Đáp số:** a) 52, hiệu 27 · b) hơn -2 đơn vị · c) 14, hiệu 27 · d) 25, hiệu 27
 **Hướng giải:** Viết số có hai chữ số dưới dạng **ab = a × 10 + b** với a là chữ số hàng chục (khác 0), b là chữ số hàng đơn vị. Từ điều kiện của đề, lập quan hệ giữa a và b rồi dùng bài toán tổng – hiệu.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Chữ số hàng chục **khác 0** và mỗi chữ số chỉ nhận giá trị từ 0 đến 9.
 **Lỗi thường gặp:** Tìm ra a hoặc b lớn hơn 9 mà vẫn nhận đáp số. Phòng: Sau khi tính xong, kiểm tra lại từng chữ số có nằm trong khoảng 0–9 không.
 
 ### Bài IV.1
-**Đáp số:** a) 16 · b) 7 · c) 23 · d) 5 · e) không có số nào
+**Đáp số:** a) 54 · b) 75 · c) 62 · d) 72
+**Hướng giải:** BẪY — Quên chữ số hàng cao nhất khác 0. Viết số theo cấu tạo: số có hai chữ số ab bằng a × 10 + b. Thay vào điều kiện đề cho rồi rút gọn — thường ra một quan hệ rất gọn giữa a và b.
+**Nhãn tư duy:** TD1, TD4. Điểm chốt: Chữ số hàng cao nhất **khác 0**, và mọi chữ số chỉ nhận giá trị từ 0 đến 9. Hai ràng buộc này thường là chỗ loại bớt đáp số.
+**Lỗi thường gặp:** Tính ra a bằng 0 rồi vẫn nhận, hoặc để một chữ số vượt quá 9. Phòng: Viết sẵn hai dòng ràng buộc lên đầu bài giải rồi mới tính.
+**Gợi ý 3 tầng:** (1) Số có hai chữ số ab viết theo cấu tạo là gì? — (2) Thay cấu tạo ấy vào điều kiện đề cho, rồi rút gọn. — (3) Kiểm lại: chữ số hàng chục có khác 0 không?
+
+### Bài IV.2
+**Đáp số:** a) 5 · b) không có số nào · c) 28 · d) 23 · e) 1 · f) 9
 **Hướng giải:** Liệt kê các số thoả điều kiện thứ nhất — chúng lập thành dãy cách đều khoảng cách bằng số chia thứ nhất. Đi dọc dãy đó, thử điều kiện thứ hai, gặp số đầu tiên thoả mãn thì dừng.
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Chỉ **đi dọc một dãy** rồi thử điều kiện còn lại, không thử tất cả số.
 **Lỗi thường gặp:** Thử từng số từ 1 trở đi nên quá lâu và dễ bỏ sót. Phòng: Viết dãy số thoả điều kiện thứ nhất trước, rồi mới lọc.
 **Gợi ý 3 tầng:** (1) Viết vài số chia cho số thứ nhất dư đúng như đề. — (2) Chúng cách đều nhau bao nhiêu đơn vị? — (3) Đi dọc dãy đó và kiểm tra điều kiện thứ hai.
 
-### Bài IV.2
-**Đáp số:** a) lẻ · b) 595 · c) giảm đi 2 lần số bé · d) không thay đổi · e) tính chẵn lẻ của tổng các số trên bảng · f) không
-**Hướng giải:** BẪY — Phải chứng minh, không được thử vài trường hợp. Khi thay a và b (giả sử a ≥ b) bằng a − b, tổng giảm đi 2b — luôn là một số chẵn. Vì vậy **tính chẵn lẻ của tổng không bao giờ thay đổi**. Số còn lại cuối cùng chính là tổng lúc đó, nên nó cùng tính chẵn lẻ với tổng ban đầu.
-**Nhãn tư duy:** TD6, TD2. Điểm chốt: Tìm đại lượng **không đổi** qua mỗi bước là chìa khoá của cả lớp bài này.
-**Lỗi thường gặp:** Thử mò vài trường hợp rồi kết luận, không chứng minh được cho mọi cách làm. Phòng: Sau khi đoán, hãy kiểm tra: đại lượng đó thay đổi thế nào sau **một** bước?
-**Gợi ý 3 tầng:** (1) Sau mỗi bước, tổng các số trên bảng thay đổi bao nhiêu? — (2) Lượng thay đổi đó là số chẵn hay số lẻ? — (3) Vậy tính chẵn lẻ của tổng có đổi không?
-
 ### Bài IV.3
-**Đáp số:** a) 329 · b) 198 · c) 198 · d) 433 · e) 1 000 · f) 1 000
+**Đáp số:** a) 202 · b) 604 · c) 40 · d) 101 · e) 30 704 · f) 61 105
+**Hướng giải:** Các số hạng thoả thêm một điều kiện chia hết cũng lập thành một dãy cách đều mới, có khoảng cách là bội chung nhỏ nhất của khoảng cách cũ và số chia. Tìm số hạng đầu tiên thoả điều kiện rồi đếm trên dãy mới.
+**Nhãn tư duy:** TD4, TD2. Điểm chốt: Dãy con cũng **cách đều**, chỉ khác khoảng cách.
+**Lỗi thường gặp:** Duyệt từng số hạng để đếm — không kịp khi dãy dài hàng trăm số. Phòng: Tìm số hạng đầu tiên thoả điều kiện rồi xác định khoảng cách mới.
+**Gợi ý 3 tầng:** (1) Số hạng nào đầu tiên thoả điều kiện? — (2) Số hạng tiếp theo thoả điều kiện cách nó bao nhiêu? — (3) Dãy con cũng cách đều — dùng công thức đếm.
+
+### Bài IV.4
+**Đáp số:** a) 198 · b) 620 · c) 874 · d) 99 · e) 1 000 · f) 1 000
 **Hướng giải:** BẪY — Bên trái hay bên phải. Viết số có ba chữ số dạng **a × 100 + b × 10 + c**. Xoá chữ số hàng trăm là bớt đi a × 100. Viết thêm chữ số 1 vào bên trái một số có ba chữ số là cộng thêm 1 000. Đổi chỗ hàng trăm với hàng đơn vị làm số thay đổi 99 lần hiệu hai chữ số đó.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Thêm chữ số vào **bên trái** là cộng thêm; thêm vào **bên phải** là nhân 10 rồi cộng.
 **Lỗi thường gặp:** Nhầm “viết thêm bên trái” thành “viết thêm bên phải”. Phòng: Viết cả số cũ và số mới ra rồi mới so sánh.
 **Gợi ý 3 tầng:** (1) Viết số theo cấu tạo a × 100 + b × 10 + c. — (2) Viết số mới cũng theo cấu tạo như vậy. — (3) Trừ hai biểu thức, các phần giống nhau triệt tiêu.
 
-### Bài IV.4
-**Đáp số:** a) hợp số (ví dụ ước 5) · b) số nguyên tố · c) hợp số (ví dụ ước 2) · d) hợp số (ví dụ ước 3) · e) số nguyên tố · f) số nguyên tố · g) hợp số (ví dụ ước 3) · h) số nguyên tố
+### Bài IV.5
+**Đáp số:** a) số nguyên tố · b) hợp số (ví dụ ước 2) · c) hợp số (ví dụ ước 2) · d) hợp số (ví dụ ước 2) · e) hợp số (ví dụ ước 2)
 **Hướng giải:** BẪY — 91, 121, 143 trông như số nguyên tố nhưng không phải. Số nguyên tố chỉ có đúng hai ước là 1 và chính nó. Để kiểm tra, thử chia lần lượt cho 2, 3, 5, 7, 11… và chỉ cần thử đến khi thương bé hơn hoặc bằng số chia là dừng được.
 **Nhãn tư duy:** TD2. Điểm chốt: Chỉ cần thử các **số nguyên tố nhỏ**, không phải thử mọi số.
 **Lỗi thường gặp:** Thử chia cho mọi số từ 2 đến số đó nên mất thời gian, hoặc kết luận vội. Phòng: Thử theo thứ tự 2, 3, 5, 7, 11, 13 và dừng đúng lúc.
 **Gợi ý 3 tầng:** (1) Số đó có chia hết cho 2 hay 5 không? — (2) Cộng các chữ số xem có chia hết cho 3 không. — (3) Thử tiếp 7, 11, 13; dừng khi thương bé hơn số chia.
 
-### Bài IV.5
-**Đáp số:** a) 0 · b) 0 · c) 0 · d) 0
-**Hướng giải:** BẪY — Biểu thức lớn nhưng kết quả bằng 0. Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu. Vì vậy phải quan sát toàn bộ biểu thức trước khi tính, tìm cụm nào có giá trị bằng 0.
-**Nhãn tư duy:** TD5, TD6. Điểm chốt: Quét tìm **cụm bằng 0** trước; thấy rồi thì viết đáp số ngay.
-**Lỗi thường gặp:** Lao vào nhân từng cặp số lớn rồi mới phát hiện kết quả bằng 0. Phòng: Đọc hết biểu thức một lượt, khoanh các cụm giống nhau bị trừ cho nhau.
-**Gợi ý 3 tầng:** (1) Có cụm nào trong ngoặc bằng 0 không? — (2) Có hai cụm giống hệt nhau bị trừ cho nhau không? — (3) Tích có một thừa số bằng 0 thì bằng bao nhiêu?
-
 ### Bài V.1
-**Đáp số:** a) 96 cm · b) 48 cm · c) 70 cm · d) 180 cm
-**Hướng giải:** Khi ghép hai hình lại, các cạnh dán vào nhau **không còn nằm trên đường bao** nên không tính vào chu vi. Ngược lại, khi cắt một hình thành hai phần thì xuất hiện thêm hai cạnh mới trên đường bao, nên tổng chu vi tăng lên đúng hai lần đường cắt.
-**Nhãn tư duy:** TD6, TD3. Điểm chốt: Diện tích giữ nguyên khi cắt ghép, nhưng **chu vi thay đổi**.
-**Lỗi thường gặp:** Cộng chu vi các hình nhỏ lại rồi coi đó là chu vi hình ghép. Phòng: Tô đậm đường bao của hình mới rồi mới tính.
-**Gợi ý 3 tầng:** (1) Vẽ hình sau khi ghép hoặc cắt. — (2) Đường bao của hình mới gồm những cạnh nào? — (3) Cạnh nào bị dán vào trong thì không tính.
+**Đáp số:** a) 460 cm² · b) 115 cm² · c) 230 cm² · d) 1 phần 4 · e) 115 cm² · f) diện tích 920 cm², chu vi 126 cm
+**Hướng giải:** BẪY — Chu vi không cộng như diện tích. Diện tích cộng được khi ghép hình, **chu vi thì không**. Tam giác có đáy bằng nửa một cạnh và chiều cao bằng cạnh kia thì diện tích bằng một phần tư hình chữ nhật.
+**Nhãn tư duy:** TD6, TD3. Điểm chốt: Ghép hình: **diện tích cộng, chu vi không cộng**.
+**Lỗi thường gặp:** Cộng chu vi hai hình nhỏ lại thành chu vi hình ghép. Phòng: Tô đậm đường bao của hình mới rồi mới tính chu vi.
+**Gợi ý 3 tầng:** (1) Tam giác ấy có đáy và chiều cao bằng bao nhiêu? — (2) Diện tích tam giác bằng đáy nhân chiều cao chia 2. — (3) So với diện tích hình chữ nhật thì bằng mấy phần?
 
 ### Bài V.2
-**Đáp số:** a) 2 145 · b) 3 829 · c) 2 921 · d) 7 809 · e) 179 · f) 5 273
-**Hướng giải:** Chia các trang thành nhóm theo số chữ số: từ 1 đến 9 có 9 số, mỗi số 1 chữ số; từ 10 đến 99 có 90 số, mỗi số 2 chữ số; từ 100 đến 999 có 900 số, mỗi số 3 chữ số; từ 1 000 trở đi mỗi số 4 chữ số. Nhân rồi cộng.
-**Nhãn tư duy:** TD4, TD6. Điểm chốt: Nhóm cuối cùng thường **không đầy đủ** — phải đếm đúng số trang còn lại.
-**Lỗi thường gặp:** Lấy số trang nhân với số chữ số của trang cuối. Phòng: Kẻ bảng ba cột: khoảng trang – số trang – số chữ số, rồi cộng cột cuối.
-**Gợi ý 3 tầng:** (1) Từ trang 1 đến trang 9 dùng mấy chữ số? — (2) Từ trang 10 đến trang 99 có bao nhiêu trang? — (3) Nhóm cuối cùng có bao nhiêu trang, mỗi trang mấy chữ số?
-
-### Bài V.3
-**Đáp số:** a) 2 dư 7 · b) 8 dư 4 · c) 3 dư 7 · d) 36 · e) 7 dư 3 · f) 63
+**Đáp số:** a) 45 · b) 5 dư 1 · c) 3 dư 3 · d) 6 dư 6
 **Hướng giải:** Viết số có hai chữ số là a × 10 + b, tổng hai chữ số là a + b. So sánh hai biểu thức để tìm quan hệ; chú ý a chạy từ 1 đến 9 và b chạy từ 0 đến 9 nên số trường hợp là hữu hạn, có thể lập bảng.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Khi ẩn chỉ nhận hữu hạn giá trị, **lập bảng** là phương pháp chắc chắn nhất.
 **Lỗi thường gặp:** Chia bừa mà không kiểm tra điều kiện chia hết nên nhận đáp số không nguyên. Phòng: Kiểm tra lại đáp số bằng cách thay ngược vào đề.
 **Gợi ý 3 tầng:** (1) Đặt số đó là a × 10 + b. — (2) Tổng hai chữ số là a + b — viết cả hai biểu thức ra cạnh nhau. — (3) Lập bảng a từ 1 đến 9 rồi thử.
 
-### Bài V.4
-**Đáp số:** a) 6 · b) 0 · c) 0 · d) 0
-**Hướng giải:** Chữ số tận cùng của tổng và của tích chỉ phụ thuộc chữ số tận cùng của các số tham gia. Che phần đầu, chỉ tính với chữ số cuối.
-**Nhãn tư duy:** TD5, TD2. Điểm chốt: Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu.
-**Lỗi thường gặp:** Tính trọn cả phép tính, vừa lâu vừa dễ sai. Phòng: Lấy tay che phần đầu của hai số, chỉ để lộ chữ số cuối.
-**Gợi ý 3 tầng:** (1) Chữ số tận cùng của mỗi số là gì? — (2) Tính riêng với hai chữ số ấy. — (3) Lấy chữ số tận cùng của kết quả vừa tính.
-
-### Bài V.5
-**Đáp số:** a) 2 · b) 2 943 · c) có · d) tổng các số dư là 6, chia 3 dư 0 · e) 0 · f) 0
+### Bài V.3
+**Đáp số:** a) 2 · b) 1 287 · c) không, dư 1 · d) tổng các số dư là 1, chia 2 dư 1 · e) 1 · f) 1
 **Hướng giải:** Số dư của một tổng khi chia cho d bằng số dư của tổng các số dư. Nhờ đó, muốn biết tổng có chia hết cho d không thì chỉ cần cộng các số dư, không cần cộng các số.
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Làm việc với **số dư** thay vì với số — đây là kỹ thuật rút gọn mạnh nhất.
 **Lỗi thường gặp:** Cộng hết cả dãy rồi mới chia, mất thời gian và dễ sai. Phòng: Ghi số dư của từng số ngay dưới số đó rồi cộng dòng số dư.
 **Gợi ý 3 tầng:** (1) Tính số dư của từng số khi chia cho d. — (2) Cộng các số dư lại. — (3) Lấy tổng các số dư chia tiếp cho d.
+
+### Bài V.4
+**Đáp số:** a) 81 · b) 2 409 · c) 89 · d) 73 · e) 6 157 · f) 3 109
+**Hướng giải:** Chia các trang thành nhóm theo số chữ số: từ 1 đến 9 có 9 số, mỗi số 1 chữ số; từ 10 đến 99 có 90 số, mỗi số 2 chữ số; từ 100 đến 999 có 900 số, mỗi số 3 chữ số; từ 1 000 trở đi mỗi số 4 chữ số. Nhân rồi cộng.
+**Nhãn tư duy:** TD4, TD6. Điểm chốt: Nhóm cuối cùng thường **không đầy đủ** — phải đếm đúng số trang còn lại.
+**Lỗi thường gặp:** Lấy số trang nhân với số chữ số của trang cuối. Phòng: Kẻ bảng ba cột: khoảng trang – số trang – số chữ số, rồi cộng cột cuối.
+**Gợi ý 3 tầng:** (1) Từ trang 1 đến trang 9 dùng mấy chữ số? — (2) Từ trang 10 đến trang 99 có bao nhiêu trang? — (3) Nhóm cuối cùng có bao nhiêu trang, mỗi trang mấy chữ số?
+
+### Bài V.5
+**Đáp số:** a) 2 · b) 0 · c) 4 · d) 0 · e) 2 · f) 7
+**Hướng giải:** Chữ số tận cùng của tổng và của tích chỉ phụ thuộc chữ số tận cùng của các số tham gia. Che phần đầu, chỉ tính với chữ số cuối.
+**Nhãn tư duy:** TD5, TD2. Điểm chốt: Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu.
+**Lỗi thường gặp:** Tính trọn cả phép tính, vừa lâu vừa dễ sai. Phòng: Lấy tay che phần đầu của hai số, chỉ để lộ chữ số cuối.
+**Gợi ý 3 tầng:** (1) Chữ số tận cùng của mỗi số là gì? — (2) Tính riêng với hai chữ số ấy. — (3) Lấy chữ số tận cùng của kết quả vừa tính.
 
 ---
 

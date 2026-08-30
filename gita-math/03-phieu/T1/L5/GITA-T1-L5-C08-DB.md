@@ -236,9 +236,9 @@ e) 49 × 9
 
 Dãy số được lập theo ba quy tắc sau.
 
-- Số hạng đầu bằng 5.
-- Số hạng ở **vị trí chẵn** bằng số hạng liền trước nhân 2 rồi cộng 3.
-- Số hạng ở **vị trí lẻ** bằng số hạng liền trước cộng 3 nhân với số thứ tự của số hạng liền trước.
+- Số hạng đầu bằng 4.
+- Số hạng ở **vị trí chẵn** bằng số hạng liền trước nhân 2 rồi cộng 2.
+- Số hạng ở **vị trí lẻ** bằng số hạng liền trước cộng 2 nhân với số thứ tự của số hạng liền trước.
 
 a) Viết ba số hạng đầu tiên của dãy.
 b) Số hạng thứ 5 của dãy là số nào?
@@ -246,47 +246,47 @@ c) Số hạng thứ 7 của dãy là số nào?
 d) Số hạng thứ 9 của dãy là số nào?
 e) Từ số hạng thứ 4 đến số hạng thứ 6, dãy tăng thêm bao nhiêu đơn vị?
 
-### Bài 2. (4 điểm) Tổng của các số tự nhiên liên tiếp
+### Bài 2. (4 điểm) Tìm số bằng cách thử và loại
 
-Với mỗi ý, tìm số theo yêu cầu.
+Với mỗi câu, viết ra danh sách đã thử rồi mới ghi đáp số. Đáp số có thể gồm nhiều số.
 
-a) Tổng của 9 số tự nhiên liên tiếp bằng 3 177. Tìm số bé nhất trong 9 số đó.
-b) Tổng của 9 số tự nhiên liên tiếp bằng 3 519. Tìm số bé nhất trong 9 số đó.
-c) Tổng của 3 số tự nhiên liên tiếp bằng 663. Tìm số bé nhất trong 3 số đó.
-d) Tổng của 3 số tự nhiên liên tiếp bằng 318. Tìm số bé nhất trong 3 số đó.
-e) Tổng của 7 số tự nhiên liên tiếp bằng 1 330. Tìm số bé nhất trong 7 số đó.
-f) Tổng của 5 số tự nhiên liên tiếp bằng 1 900. Tìm số bé nhất trong 5 số đó.
+a) Tìm mọi số có hai chữ số vừa chia hết cho 5, vừa có tổng hai chữ số bằng 11.
+b) Tìm mọi số có hai chữ số vừa chia hết cho 9, vừa có tổng hai chữ số bằng 9.
+c) Tìm mọi số có hai chữ số vừa chia hết cho 5, vừa có tổng hai chữ số bằng 8.
+d) Tìm mọi số có hai chữ số vừa chia hết cho 4, vừa có tổng hai chữ số bằng 7.
+e) Tìm mọi số có hai chữ số vừa chia hết cho 5, vừa có tổng hai chữ số bằng 9.
 
-### Bài 3. (4 điểm) Định vị số hạng trong dãy cách đều
-
-Cho dãy: 6, 10, 14, …, 458.
-
-a) Dãy có bao nhiêu số hạng?
-b) Số hạng thứ 57 là số nào?
-c) Số 58 là số hạng thứ mấy?
-d) Số 130 là số hạng thứ mấy?
-e) Số 155 có thuộc dãy không? Vì sao?
-f) Tổng của cả dãy bằng bao nhiêu?
-
-### Bài 4. (4 điểm) Tính nhanh tổng dãy số cách đều
-
-Tính tổng mỗi dãy.
-
-a) 1 + 2 + 3 + … + 50
-b) 5 + 10 + 15 + … + 50
-c) 1 + 3 + 5 + … + 39
-d) 3 + 6 + 9 + … + 75
-e) 1 + 4 + 7 + … + 298
-
-### Bài 5. (4 điểm) Đếm số lần xuất hiện của một chữ số
+### Bài 3. (4 điểm) Đếm số lần xuất hiện của một chữ số
 
 Đếm số lần xuất hiện, tính cả khi chữ số đó xuất hiện nhiều lần trong một số.
 
-a) Từ 1 đến 200, chữ số 7 xuất hiện bao nhiêu lần?
-b) Từ 1 đến 300, chữ số 5 xuất hiện bao nhiêu lần?
-c) Từ 1 đến 500, chữ số 9 xuất hiện bao nhiêu lần?
-d) Từ 1 đến 150, chữ số 1 xuất hiện bao nhiêu lần?
-e) Từ 1 đến 150, chữ số 9 xuất hiện bao nhiêu lần?
+a) Từ 1 đến 150, chữ số 0 xuất hiện bao nhiêu lần?
+b) Từ 1 đến 300, chữ số 9 xuất hiện bao nhiêu lần?
+c) Từ 1 đến 500, chữ số 2 xuất hiện bao nhiêu lần?
+d) Từ 1 đến 500, chữ số 7 xuất hiện bao nhiêu lần?
+e) Từ 1 đến 150, chữ số 5 xuất hiện bao nhiêu lần?
+
+### Bài 4. (4 điểm) Định vị số hạng trong dãy cách đều
+
+Cho dãy: 8, 11, 14, …, 524.
+
+a) Dãy có bao nhiêu số hạng?
+b) Số hạng thứ 86 là số nào?
+c) Số 248 là số hạng thứ mấy?
+d) Số 410 là số hạng thứ mấy?
+e) Số 513 có thuộc dãy không? Vì sao?
+f) Tổng của cả dãy bằng bao nhiêu?
+
+### Bài 5. (4 điểm) Tính nhanh tổng dãy số cách đều
+
+Tính tổng mỗi dãy.
+
+a) 1 + 3 + 5 + … + 199
+b) 3 + 6 + 9 + … + 150
+c) 2 + 3 + 4 + … + 26
+d) 5 + 10 + 15 + … + 50
+e) 1 + 4 + 7 + … + 58
+f) 1 + 6 + 11 + … + 96
 
 ---
 
@@ -448,39 +448,39 @@ f) Lỗi nào dễ mắc ở đề này?
 **Lỗi thường gặp:** Nhân với 10 rồi quên cộng hoặc trừ phần bù. Phòng: Viết luôn dấu ± và số bù ra bên cạnh trước khi nhân.
 
 ### Bài D.1
-**Đáp số:** a) 5, 13, 19 · b) 53 · c) 127 · d) 281 · e) 68
+**Đáp số:** a) 4, 10, 14 · b) 38 · c) 90 · d) 198 · e) 48
 **Hướng giải:** BẪY — Quy tắc khác nhau ở vị trí chẵn và lẻ. Lập bảng và tính lần lượt từng số hạng theo đúng quy tắc, không nhảy cóc. Ghi rõ số thứ tự của mỗi số hạng để chọn đúng nhánh quy tắc.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Quy tắc phụ thuộc **vị trí chẵn hay lẻ** — phải đánh số thứ tự trước.
 **Lỗi thường gặp:** Áp dụng nhầm nhánh quy tắc vì không để ý vị trí. Phòng: Kẻ bảng hai dòng: dòng trên ghi vị trí, dòng dưới ghi số hạng.
 **Gợi ý 3 tầng:** (1) Kẻ bảng vị trí và số hạng. — (2) Xác định vị trí đang xét là chẵn hay lẻ. — (3) Áp dụng đúng nhánh quy tắc cho vị trí đó.
 
 ### Bài D.2
-**Đáp số:** a) 349 · b) 387 · c) 220 · d) 105 · e) 187 · f) 378
-**Hướng giải:** Với một số **lẻ** các số tự nhiên liên tiếp, số ở giữa chính là trung bình cộng: số giữa = tổng : số lượng. Số bé nhất bằng số giữa trừ đi một nửa số lượng còn lại.
-**Nhãn tư duy:** TD3, TD4. Điểm chốt: Với số lượng lẻ thì **số giữa = tổng : số lượng** — đó là chìa khoá.
-**Lỗi thường gặp:** Lấy tổng chia cho số lượng rồi nhận luôn kết quả là số bé nhất. Phòng: Vẽ dãy số ra, đánh dấu vị trí số giữa trước khi lùi về số đầu.
-**Gợi ý 3 tầng:** (1) Số lượng số hạng là số chẵn hay lẻ? — (2) Với số lượng lẻ, số ở giữa bằng tổng chia số lượng. — (3) Từ số giữa lùi về đầu dãy mấy đơn vị?
+**Đáp số:** a) 65 · b) 18, 27, 36, 45, 54, 63, 72, 81, 90 · c) 35, 80 · d) 16, 52 · e) 45, 90
+**Hướng giải:** BẪY — Dừng ở đáp số đầu tiên. Chọn điều kiện cho ít khả năng nhất để liệt kê trước, rồi mới đem điều kiện còn lại ra thử. Làm ngược thứ tự ấy thì phải thử gấp nhiều lần.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Phải xét **hết** danh sách. Bài thử chọn thường có hơn một đáp số.
+**Lỗi thường gặp:** Tìm được một số thoả rồi dừng, bỏ sót các đáp số còn lại. Phòng: Viết danh sách ra giấy và gạch bỏ từng số, đừng thử nhẩm trong đầu.
+**Gợi ý 3 tầng:** (1) Trong hai điều kiện, điều kiện nào cho ít số hơn? — (2) Liệt kê hết các số thoả điều kiện ấy. — (3) Thử từng số với điều kiện còn lại, đừng dừng sớm.
 
 ### Bài D.3
-**Đáp số:** a) 114 · b) 230 · c) 14 · d) 32 · e) không · f) 26 448
+**Đáp số:** a) 25 · b) 60 · c) 200 · d) 100 · e) 26
+**Hướng giải:** BẪY — Số 33, 44… chứa hai lần cùng một chữ số. Đếm theo từng hàng: đếm số lần chữ số đó đứng ở hàng đơn vị, rồi hàng chục, rồi hàng trăm. Ở mỗi hàng, các số thoả mãn lập thành dãy cách đều, dùng công thức đếm số hạng.
+**Nhãn tư duy:** TD4, TD6. Điểm chốt: Một số có thể chứa chữ số đó **nhiều lần**; đếm theo hàng thì không sót.
+**Lỗi thường gặp:** Đếm số lượng **số** chứa chữ số đó thay vì số **lần** xuất hiện. Phòng: Kẻ bảng: hàng đơn vị – hàng chục – hàng trăm, đếm riêng rồi cộng.
+**Gợi ý 3 tầng:** (1) Đếm riêng theo từng hàng. — (2) Ở hàng đơn vị, các số đó cách nhau bao nhiêu đơn vị? — (3) Cộng kết quả của cả ba hàng.
+
+### Bài D.4
+**Đáp số:** a) 173 · b) 263 · c) 81 · d) 135 · e) không · f) 46 018
 **Hướng giải:** BẪY — Số không thuộc dãy. Muốn biết một số là số hạng thứ mấy: lấy số đó trừ số hạng đầu, chia cho khoảng cách rồi cộng 1. Nếu phép chia còn dư thì số đó **không thuộc** dãy.
 **Nhãn tư duy:** TD4, TD2. Điểm chốt: Phép chia **có dư** là bằng chứng số đó không thuộc dãy.
 **Lỗi thường gặp:** Chia được số nguyên rồi quên cộng 1, hoặc bỏ qua phần dư. Phòng: Luôn ghi rõ thương và số dư khi chia.
 **Gợi ý 3 tầng:** (1) Lấy số đó trừ số hạng đầu. — (2) Chia hiệu cho khoảng cách — có chia hết không? — (3) Chia hết thì cộng 1 để ra thứ tự; không chia hết thì số đó không thuộc dãy.
 
-### Bài D.4
-**Đáp số:** a) 1 275 · b) 275 · c) 400 · d) 975 · e) 14 950
-**Hướng giải:** BẪY — Quên cộng 1 khi đếm số số hạng. Đếm số số hạng: (số cuối − số đầu) : khoảng cách + 1. Tổng bằng (số đầu + số cuối) × số số hạng : 2. Cách hiểu: ghép số đầu với số cuối, số thứ hai với số áp chót… mỗi cặp có tổng bằng nhau.
+### Bài D.5
+**Đáp số:** a) 10 000 · b) 3 825 · c) 350 · d) 275 · e) 590 · f) 970
+**Hướng giải:** Đếm số số hạng: (số cuối − số đầu) : khoảng cách + 1. Tổng bằng (số đầu + số cuối) × số số hạng : 2. Cách hiểu: ghép số đầu với số cuối, số thứ hai với số áp chót… mỗi cặp có tổng bằng nhau.
 **Nhãn tư duy:** TD4, TD5. Điểm chốt: Phải đếm **số số hạng** trước; đây là chỗ sai nhiều nhất.
 **Lỗi thường gặp:** Lấy số cuối chia khoảng cách làm số số hạng, quên cộng 1. Phòng: Viết ra ba số đầu và ba số cuối để kiểm tra khoảng cách rồi mới đếm.
 **Gợi ý 3 tầng:** (1) Khoảng cách giữa hai số liên tiếp là bao nhiêu? — (2) Dãy có bao nhiêu số hạng? — (3) Tổng = (đầu + cuối) × số số hạng : 2.
-
-### Bài D.5
-**Đáp số:** a) 40 · b) 60 · c) 100 · d) 86 · e) 25
-**Hướng giải:** BẪY — Số 33, 44… chứa hai lần cùng một chữ số. Đếm theo từng hàng: đếm số lần chữ số đó đứng ở hàng đơn vị, rồi hàng chục, rồi hàng trăm. Ở mỗi hàng, các số thoả mãn lập thành dãy cách đều, dùng công thức đếm số hạng.
-**Nhãn tư duy:** TD4, TD6. Điểm chốt: Một số có thể chứa chữ số đó **nhiều lần**; đếm theo hàng thì không sót.
-**Lỗi thường gặp:** Đếm số lượng **số** chứa chữ số đó thay vì số **lần** xuất hiện. Phòng: Kẻ bảng: hàng đơn vị – hàng chục – hàng trăm, đếm riêng rồi cộng.
-**Gợi ý 3 tầng:** (1) Đếm riêng theo từng hàng. — (2) Ở hàng đơn vị, các số đó cách nhau bao nhiêu đơn vị? — (3) Cộng kết quả của cả ba hàng.
 
 ### Bài E.1
 **Đáp số:** a) Dãy số theo quy luật nhân · b) Các số tăng rất nhanh, hiệu không đều · c) Dãy nhân, phép nhân liên tiếp · d) Thử hiệu, rồi thử thương · e) Số sau gấp đôi số trước là dấu hiệu quen nhất của dãy nhân. · f) Cố ép dãy nhân thành dãy cộng nên tìm ra quy luật sai.

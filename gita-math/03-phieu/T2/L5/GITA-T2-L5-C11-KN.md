@@ -51,56 +51,57 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — CỦNG CỐ NỀN — 30 CÂU TỐC ĐỘ · Mức M1 — Nhận biết · 20 phút · 25 điểm
 
-### Bài 1. (5 điểm) Làm tròn số đến hàng cho trước
+### Bài 1. (5 điểm) Số chẵn – số lẻ, số liền trước – số liền sau
 
-Làm tròn mỗi số dưới đây theo yêu cầu.
+Trả lời ngắn gọn từng câu.
 
-a) Làm tròn số 435 234 đến hàng nghìn.
-b) Làm tròn số 57 974 đến hàng chục.
-c) Làm tròn số 554 340 đến hàng nghìn.
-d) Làm tròn số 584 706 đến hàng trăm.
-e) Làm tròn số 313 965 đến hàng chục.
+a) Số 2 467 938 là số chẵn hay số lẻ?
+b) Số liền trước của 2 899 104 là số nào?
+c) Số liền sau của 3 924 980 là số nào?
+d) Số liền sau của 7 047 753 là số nào?
 
-### Bài 2. (5 điểm) Đọc giá trị của chữ số theo hàng
-
-Cho số **6 868 767**.
-
-a) Chữ số ở hàng **triệu** của số 6 868 767 là chữ số nào, và nó có giá trị bằng bao nhiêu?
-b) Chữ số ở hàng **trăm nghìn** của số 6 868 767 là chữ số nào, và nó có giá trị bằng bao nhiêu?
-c) Chữ số ở hàng **chục nghìn** của số 6 868 767 là chữ số nào, và nó có giá trị bằng bao nhiêu?
-d) Chữ số ở hàng **nghìn** của số 6 868 767 là chữ số nào, và nó có giá trị bằng bao nhiêu?
-e) Chữ số ở hàng **trăm** của số 6 868 767 là chữ số nào, và nó có giá trị bằng bao nhiêu?
-f) Chữ số ở hàng **chục** của số 6 868 767 là chữ số nào, và nó có giá trị bằng bao nhiêu?
-
-### Bài 3. (5 điểm) Đếm chữ số và tính tổng các chữ số
-
-Với mỗi số dưới đây, trả lời đủ hai ý.
-
-a) Số 5 066 924 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
-b) Số 6 189 563 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
-c) Số 3 391 498 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
-d) Số 5 542 268 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
-e) Số 791 446 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
-
-### Bài 4. (5 điểm) Viết số khi biết tổng các giá trị hàng
-
-Viết số tự nhiên ứng với mỗi tổng dưới đây.
-
-a) Viết số gồm tổng: 3 000 000 + 800 000 + 80 000 + 9 000 + 800 + 60 + 5
-b) Viết số gồm tổng: 1 000 000 + 800 000 + 20 000 + 1 000 + 200 + 90 + 9
-c) Viết số gồm tổng: 4 000 000 + 800 000 + 2 000 + 500 + 60 + 7
-d) Viết số gồm tổng: 5 000 000 + 100 000 + 70 000 + 2 000 + 600 + 10 + 1
-e) Viết số gồm tổng: 5 000 000 + 800 000 + 70 000 + 7 000 + 100 + 10 + 5
-
-### Bài 5. (5 điểm) Ôn tập số tự nhiên: đọc, viết, so sánh, làm tròn
+### Bài 2. (5 điểm) Ôn tập số tự nhiên: đọc, viết, so sánh, làm tròn
 
 Trả lời nhanh, mỗi ý không quá 20 giây.
 
-a) Làm tròn 5 737 627 đến hàng nghìn.
-b) 9 792 884 … 9 789 645
-c) Chữ số hàng chục nghìn của số 7 488 222 có giá trị bằng bao nhiêu?
-d) Số liền trước và số liền sau của 6 570 507 là những số nào?
-e) Chữ số hàng trăm của số 8 571 290 có giá trị bằng bao nhiêu?
+a) Làm tròn 5 940 160 đến hàng nghìn.
+b) Chữ số hàng triệu của số 4 976 924 có giá trị bằng bao nhiêu?
+c) 6 099 563 … 6 096 905
+d) Số liền trước và số liền sau của 701 446 là những số nào?
+e) Chữ số hàng chục của số 5 730 265 có giá trị bằng bao nhiêu?
+
+### Bài 3. (5 điểm) Viết số khi biết tổng các giá trị hàng
+
+Viết số tự nhiên ứng với mỗi tổng dưới đây.
+
+a) Viết số gồm tổng: 4 000 000 + 800 000 + 2 000 + 500 + 60 + 7
+b) Viết số gồm tổng: 5 000 000 + 100 000 + 70 000 + 2 000 + 600 + 10 + 1
+c) Viết số gồm tổng: 5 000 000 + 800 000 + 70 000 + 7 000 + 100 + 10 + 5
+d) Viết số gồm tổng: 1 000 000 + 600 000 + 90 000 + 3 000 + 900 + 70 + 9
+
+### Bài 4. (5 điểm) Đọc giá trị của chữ số theo hàng
+
+Cho số **6 773 056**.
+
+a) Chữ số ở hàng **triệu** của số 6 773 056 là chữ số nào, và nó có giá trị bằng bao nhiêu?
+b) Chữ số ở hàng **chục nghìn** của số 6 773 056 là chữ số nào, và nó có giá trị bằng bao nhiêu?
+c) Chữ số ở hàng **nghìn** của số 6 773 056 là chữ số nào, và nó có giá trị bằng bao nhiêu?
+d) Chữ số ở hàng **trăm** của số 6 773 056 là chữ số nào, và nó có giá trị bằng bao nhiêu?
+e) Chữ số ở hàng **chục** của số 6 773 056 là chữ số nào, và nó có giá trị bằng bao nhiêu?
+f) Chữ số ở hàng **đơn vị** của số 6 773 056 là chữ số nào, và nó có giá trị bằng bao nhiêu?
+
+### Bài 5. (5 điểm) Điền dấu <, >, = thích hợp
+
+Điền dấu thích hợp vào chỗ chấm.
+
+a) 9 882 884 … 9 882 684
+b) 9 167 015 … 9 167 051
+c) 2 000 518 … 2 000 533
+d) 882 818 … 852 818
+e) 2 668 292 … 5 460 776
+f) 938 969 … 1 280 343
+g) 6 777 561 … 8 866 145
+h) 8 624 139 … 329 536
 
 ---
 
@@ -256,7 +257,7 @@ c) Nhánh con 3 — lỗi hay mắc?
 d) Ghi thêm: kiến thức phải thuộc?
 e) Ghi thêm: cách xử lý nhanh nhất?
 
-### Bài 5. (5 điểm) Nhánh 4 — Ôn tập số tự nhiên
+### Bài 5. (5 điểm) Nhánh 4 — Dùng chữ thay số
 
 Điền ba nhánh con bắt buộc của nhánh này.
 
@@ -332,34 +333,34 @@ f) Mẹo nhanh em sẽ tặng lớp?
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài A.1
-**Đáp số:** a) 435 000 · b) 57 970 · c) 554 000 · d) 584 700 · e) 313 970
-**Hướng giải:** Nhìn chữ số ở hàng **liền sau** hàng cần làm tròn: nếu chữ số đó bé hơn 5 thì giữ nguyên hàng làm tròn và thay các chữ số sau bằng 0; nếu từ 5 trở lên thì tăng hàng làm tròn thêm 1 rồi mới thay 0.
-**Nhãn tư duy:** TD1, TD5. Điểm chốt: Chỉ xét **một** chữ số liền sau, không cộng dồn cả phần đuôi.
-**Lỗi thường gặp:** Nhìn nhầm sang chữ số ở hàng cần làm tròn thay vì hàng liền sau nó. Phòng: Gạch một nét ngăn ngay sau hàng cần làm tròn rồi mới quyết định.
+**Đáp số:** a) số chẵn · b) 2 899 103 · c) 3 924 981 · d) 7 047 754
+**Hướng giải:** Số chẵn là số có chữ số tận cùng 0, 2, 4, 6, 8; số lẻ tận cùng 1, 3, 5, 7, 9. Số liền trước kém 1 đơn vị, số liền sau hơn 1 đơn vị. Hai số chẵn liên tiếp hơn kém nhau 2 đơn vị.
+**Nhãn tư duy:** TD1. Điểm chốt: Chỉ cần nhìn **chữ số tận cùng** là biết chẵn hay lẻ, dù số dài bao nhiêu.
+**Lỗi thường gặp:** Nhầm “liền trước” với “bé hơn”, trả lời một số bất kì bé hơn. Phòng: Liền trước – liền sau chỉ hơn kém đúng **1** đơn vị.
 
 ### Bài A.2
-**Đáp số:** a) chữ số 6, giá trị 6 000 000 · b) chữ số 8, giá trị 800 000 · c) chữ số 6, giá trị 60 000 · d) chữ số 8, giá trị 8 000 · e) chữ số 7, giá trị 700 · f) chữ số 6, giá trị 60
-**Hướng giải:** Đếm hàng từ phải sang trái: đơn vị – chục – trăm – nghìn – chục nghìn – trăm nghìn – triệu. Giá trị của một chữ số bằng chính chữ số đó nhân với giá trị của hàng nó đứng.
-**Nhãn tư duy:** TD1. Điểm chốt: Phân biệt **chữ số** (một kí hiệu) với **giá trị** của chữ số (chữ số nhân giá trị hàng).
-**Lỗi thường gặp:** Đếm hàng từ trái sang phải nên lệch hàng. Phòng: Luôn viết số ra nháp rồi đánh dấu hàng đơn vị trước, đi ngược về trái.
+**Đáp số:** a) 5 940 000 · b) 4 000 000 · c) > · d) 701 445 và 701 447 · e) 60
+**Hướng giải:** So sánh: số nhiều chữ số hơn thì lớn hơn; bằng số chữ số thì so từng hàng từ trái sang phải. Làm tròn: nhìn chữ số ở hàng **liền sau** hàng cần làm tròn.
+**Nhãn tư duy:** TD1, TD5. Điểm chốt: So sánh đi từ **trái sang phải**, làm tròn nhìn **một chữ số liền sau**.
+**Lỗi thường gặp:** So sánh từ hàng đơn vị; hoặc làm tròn nhìn nhầm sang chính hàng cần làm tròn. Phòng: Gạch một nét ngăn ngay sau hàng cần làm tròn.
 
 ### Bài A.3
-**Đáp số:** a) 7 chữ số, tổng 32 · b) 7 chữ số, tổng 38 · c) 7 chữ số, tổng 37 · d) 7 chữ số, tổng 32 · e) 6 chữ số, tổng 31
-**Hướng giải:** Đếm số chữ số bằng cách tách số theo lớp (mỗi lớp 3 chữ số). Tổng các chữ số là cộng tất cả các chữ số lại, không phân biệt hàng.
-**Nhãn tư duy:** TD1. Điểm chốt: Tổng các chữ số **không** phụ thuộc thứ tự các chữ số.
-**Lỗi thường gặp:** Cộng cả giá trị hàng (ví dụ cộng 300 thay vì cộng 3). Phòng: Viết rời từng chữ số ra rồi mới cộng.
-
-### Bài A.4
-**Đáp số:** a) 3 889 865 · b) 1 821 299 · c) 4 802 567 · d) 5 172 611 · e) 5 877 115
+**Đáp số:** a) 4 802 567 · b) 5 172 611 · c) 5 877 115 · d) 1 693 979
 **Hướng giải:** Mỗi số hạng cho biết một hàng. Xếp các chữ số vào đúng hàng của nó, hàng nào khuyết thì viết chữ số 0.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Hàng khuyết trong tổng vẫn phải có chữ số **0** trong số viết ra.
 **Lỗi thường gặp:** Bỏ qua hàng khuyết nên số viết ra bị ngắn đi một chữ số. Phòng: Kẻ sẵn các ô hàng rồi mới điền chữ số vào ô tương ứng.
 
+### Bài A.4
+**Đáp số:** a) chữ số 6, giá trị 6 000 000 · b) chữ số 7, giá trị 70 000 · c) chữ số 3, giá trị 3 000 · d) chữ số 0, giá trị 0 · e) chữ số 5, giá trị 50 · f) chữ số 6, giá trị 6
+**Hướng giải:** Đếm hàng từ phải sang trái: đơn vị – chục – trăm – nghìn – chục nghìn – trăm nghìn – triệu. Giá trị của một chữ số bằng chính chữ số đó nhân với giá trị của hàng nó đứng.
+**Nhãn tư duy:** TD1. Điểm chốt: Phân biệt **chữ số** (một kí hiệu) với **giá trị** của chữ số (chữ số nhân giá trị hàng).
+**Lỗi thường gặp:** Đếm hàng từ trái sang phải nên lệch hàng. Phòng: Luôn viết số ra nháp rồi đánh dấu hàng đơn vị trước, đi ngược về trái.
+
 ### Bài A.5
-**Đáp số:** a) 5 738 000 · b) > · c) 80 000 · d) 6 570 506 và 6 570 508 · e) 200
-**Hướng giải:** So sánh: số nhiều chữ số hơn thì lớn hơn; bằng số chữ số thì so từng hàng từ trái sang phải. Làm tròn: nhìn chữ số ở hàng **liền sau** hàng cần làm tròn.
-**Nhãn tư duy:** TD1, TD5. Điểm chốt: So sánh đi từ **trái sang phải**, làm tròn nhìn **một chữ số liền sau**.
-**Lỗi thường gặp:** So sánh từ hàng đơn vị; hoặc làm tròn nhìn nhầm sang chính hàng cần làm tròn. Phòng: Gạch một nét ngăn ngay sau hàng cần làm tròn.
+**Đáp số:** a) > · b) < · c) < · d) > · e) < · f) < · g) < · h) >
+**Hướng giải:** So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
+**Nhãn tư duy:** TD1, TD5. Điểm chốt: Đếm số chữ số **trước**, chỉ khi bằng nhau mới so từng hàng.
+**Lỗi thường gặp:** So từ hàng đơn vị (phải sang trái) nên kết luận sai. Phòng: Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái.
 
 ### Bài B.1
 **Đáp số:** a) câu lời giải nêu rõ đang tìm đại lượng nào · b) phép tính, viết đủ dấu và đủ đơn vị · c) kết quả kèm đơn vị · d) câu đáp số · e) một phần tư số điểm của bài
@@ -450,10 +451,10 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài D.5
-**Đáp số:** a) Câu hỏi ngắn về so sánh, hàng, số liền kề, làm tròn · b) Đếm chữ số, xét hàng từ trái sang phải · c) So sánh từ hàng đơn vị; hoặc làm tròn nhìn nhầm sang chính hàng cần làm tròn. · d) Thứ tự số tự nhiên, giá trị hàng, quy tắc làm tròn · e) Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số.
+**Đáp số:** a) Đề viết số bằng chữ hoặc bằng dấu sao và cho quan hệ giữa các chữ số · b) Viết cấu tạo số theo chữ, thay vào điều kiện rồi rút gọn · c) Tính ra a bằng 0 rồi vẫn nhận, hoặc để một chữ số vượt quá 9. · d) Cấu tạo thập phân của số; tổng – hiệu · e) Đổi chỗ hai chữ số của số có hai chữ số thì hiệu luôn là bội của 9.
 **Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
-**Nhãn tư duy:** TD1, TD5. Điểm chốt: So sánh đi từ **trái sang phải**, làm tròn nhìn **một chữ số liền sau**.
-**Lỗi thường gặp:** So sánh từ hàng đơn vị; hoặc làm tròn nhìn nhầm sang chính hàng cần làm tròn. Phòng: Gạch một nét ngăn ngay sau hàng cần làm tròn.
+**Nhãn tư duy:** TD1, TD4. Điểm chốt: Chữ số hàng cao nhất **khác 0**, và mọi chữ số chỉ nhận giá trị từ 0 đến 9. Hai ràng buộc này thường là chỗ loại bớt đáp số.
+**Lỗi thường gặp:** Tính ra a bằng 0 rồi vẫn nhận, hoặc để một chữ số vượt quá 9. Phòng: Viết sẵn hai dòng ràng buộc lên đầu bài giải rồi mới tính.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.1

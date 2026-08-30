@@ -237,59 +237,55 @@ e) Mua 8 quyển vở hết 96 nghìn đồng. Với 168 nghìn đồng thì mua
 
 ## PHẦN D — DẠNG 5 – DẠNG 6 VÀ DẠNG PHỐI HỢP · Mức M3 — Vận dụng · 20 phút · 20 điểm
 
-### Bài 1. (4 điểm) Hình hộp chữ nhật và hình lập phương
+### Bài 1. (4 điểm) Chu vi và diện tích hình tròn
 
-Ghi rõ đơn vị: cm² cho diện tích, cm³ cho thể tích.
+Lấy π = 3,14. Ghi rõ đơn vị.
 
-a) Hình hộp chữ nhật có ba kích thước 9 cm, 17 cm, 2 cm. Tính thể tích.
-b) Hình lập phương có cạnh 5 cm. Tính thể tích và diện tích toàn phần.
-c) Hình hộp chữ nhật có đáy 10 cm × 8 cm, chiều cao 12 cm. Tính diện tích toàn phần.
-d) Hình hộp chữ nhật có đáy 12 cm × 14 cm, chiều cao 9 cm. Tính diện tích xung quanh.
-e) Hình hộp chữ nhật có ba kích thước 4 cm, 16 cm, 14 cm. Tính thể tích.
-f) Hình hộp chữ nhật có đáy 20 cm × 3 cm, chiều cao 3 cm. Tính diện tích toàn phần.
+a) Hình tròn có đường kính 50 cm. Tính chu vi (lấy π = 3,14).
+b) Hình tròn có bán kính 8 cm. Tính chu vi (lấy π = 3,14).
+c) Hình tròn có bán kính 29 cm. Tính diện tích (lấy π = 3,14).
+d) Hình tròn có đường kính 60 cm. Bán kính bằng bao nhiêu?
 
-### Bài 2. (4 điểm) Tính thời điểm đến, thời gian đi
+### Bài 2. (4 điểm) Bài toán thực tế về khối lượng
 
-Ghi kết quả theo giờ và phút.
+Chú ý đơn vị mà đề hỏi.
 
-a) Một chuyến tàu khởi hành lúc 8 giờ 15 phút và đi hết 4 giờ 54 phút. Tàu đến nơi lúc mấy giờ?
-b) Một chuyến tàu khởi hành lúc 9 giờ 30 phút và đi hết 2 giờ 51 phút. Tàu đến nơi lúc mấy giờ?
-c) Một chuyến tàu khởi hành lúc 9 giờ 20 phút và đi hết 4 giờ 20 phút. Tàu đến nơi lúc mấy giờ?
-d) Một chuyến tàu khởi hành lúc 12 giờ 25 phút và đi hết 2 giờ 25 phút. Tàu đến nơi lúc mấy giờ?
-e) Một chuyến tàu khởi hành lúc 5 giờ 0 phút và đi hết 2 giờ 39 phút. Tàu đến nơi lúc mấy giờ?
+a) Một xe chở 18 bao gạo, mỗi bao 50 kg. Hỏi xe chở bao nhiêu tạ gạo?
+b) Một xe chở 10 bao thóc, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ thóc?
+c) Một xe chở 19 bao muối, mỗi bao 40 kg. Hỏi xe chở bao nhiêu tạ muối?
+d) Một xe chở 31 bao gạo, mỗi bao 50 kg. Hỏi xe chở bao nhiêu tạ gạo?
+e) Một xe chở 35 bao gạo, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ gạo?
+f) Một xe chở 10 bao thóc, mỗi bao 40 kg. Hỏi xe chở bao nhiêu tạ thóc?
 
 ### Bài 3. (4 điểm) Đơn vị đo thể tích và dung tích
 
 Điền số thích hợp.
 
-a) 77 000 cm³ = … dm³
-b) 79 lít = … ml
-c) 43 m³ = … dm³
-d) 44 dm³ = … lít
-e) 66 dm³ = … lít
-f) 28 lít = … ml
-g) 46 000 cm³ = … dm³
+a) 58 lít = … ml
+b) 58 dm³ = … lít
+c) 77 000 cm³ = … dm³
+d) 41 m³ = … dm³
+e) 29 lít = … ml
 
-### Bài 4. (4 điểm) Chia theo tỉ lệ ba phần và bài toán trộn
+### Bài 4. (4 điểm) Tính thời điểm đến, thời gian đi
+
+Ghi kết quả theo giờ và phút.
+
+a) Một chuyến tàu khởi hành lúc 14 giờ 0 phút và đi hết 2 giờ 39 phút. Tàu đến nơi lúc mấy giờ?
+b) Một chuyến tàu khởi hành lúc 12 giờ 45 phút và đi hết 5 giờ 26 phút. Tàu đến nơi lúc mấy giờ?
+c) Một chuyến tàu khởi hành lúc 8 giờ 20 phút và đi hết 6 giờ 22 phút. Tàu đến nơi lúc mấy giờ?
+d) Một chuyến tàu khởi hành lúc 12 giờ 30 phút và đi hết 3 giờ 23 phút. Tàu đến nơi lúc mấy giờ?
+
+### Bài 5. (4 điểm) Chia theo tỉ lệ ba phần và bài toán trộn
 
 Vẽ sơ đồ ba đoạn thẳng cho bài chia tỉ lệ.
 
-a) Trộn 12 kg gạo giá 20 000 đồng một ki-lô-gam với 6 kg gạo giá 25 000 đồng một ki-lô-gam. Hỏi tổng số tiền là bao nhiêu?
-b) Ba tổ trồng được 480 cây. Số cây tổ Một, tổ Hai, tổ Ba tỉ lệ với 4, 2, 6. Mỗi tổ trồng bao nhiêu cây?
-c) Trộn 9 kg gạo giá 12 000 đồng một ki-lô-gam với 8 kg gạo giá 25 000 đồng một ki-lô-gam. Hỏi tổng số tiền là bao nhiêu?
-d) Ba tổ trồng được 224 cây. Số cây tổ Một, tổ Hai, tổ Ba tỉ lệ với 1, 5, 1. Mỗi tổ trồng bao nhiêu cây?
-e) Ba tổ trồng được 228 cây. Số cây tổ Một, tổ Hai, tổ Ba tỉ lệ với 1, 3, 2. Mỗi tổ trồng bao nhiêu cây?
-f) Trộn 5 kg gạo giá 10 000 đồng một ki-lô-gam với 4 kg gạo giá 25 000 đồng một ki-lô-gam. Hỏi tổng số tiền là bao nhiêu?
-
-### Bài 5. (4 điểm) Bài toán thực tế về khối lượng
-
-Chú ý đơn vị mà đề hỏi.
-
-a) Một xe chở 16 bao thóc, mỗi bao 50 kg. Hỏi xe chở bao nhiêu tạ thóc?
-b) Một xe chở 31 bao phân bón, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ phân bón?
-c) Một xe chở 38 bao gạo, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ gạo?
-d) Một xe chở 26 bao thóc, mỗi bao 30 kg. Hỏi xe chở bao nhiêu tạ thóc?
-e) Một xe chở 31 bao muối, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ muối?
+a) Ba tổ trồng được 228 cây. Số cây tổ Một, tổ Hai, tổ Ba tỉ lệ với 4, 1, 1. Mỗi tổ trồng bao nhiêu cây?
+b) Trộn 12 kg gạo giá 10 000 đồng một ki-lô-gam với 9 kg gạo giá 50 000 đồng một ki-lô-gam. Hỏi tổng số tiền là bao nhiêu?
+c) Trộn 10 kg gạo giá 20 000 đồng một ki-lô-gam với 12 kg gạo giá 50 000 đồng một ki-lô-gam. Hỏi tổng số tiền là bao nhiêu?
+d) Ba tổ trồng được 77 cây. Số cây tổ Một, tổ Hai, tổ Ba tỉ lệ với 4, 2, 1. Mỗi tổ trồng bao nhiêu cây?
+e) Trộn 7 kg gạo giá 20 000 đồng một ki-lô-gam với 5 kg gạo giá 30 000 đồng một ki-lô-gam. Hỏi tổng số tiền là bao nhiêu?
+f) Ba tổ trồng được 84 cây. Số cây tổ Một, tổ Hai, tổ Ba tỉ lệ với 2, 3, 2. Mỗi tổ trồng bao nhiêu cây?
 
 ---
 
@@ -447,39 +443,39 @@ f) Lỗi nào dễ mắc ở đề này?
 **Lỗi thường gặp:** Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch. Phòng: Tự hỏi: mua nhiều hơn thì trả nhiều hơn hay ít hơn?
 
 ### Bài D.1
-**Đáp số:** a) 306 cm³ · b) thể tích 125 cm³, diện tích toàn phần 150 cm² · c) 592 cm² · d) 468 cm² · e) 896 cm³ · f) 258 cm²
-**Hướng giải:** BẪY — Xung quanh hay toàn phần. Thể tích hình hộp chữ nhật = dài × rộng × cao. Diện tích xung quanh = chu vi đáy × chiều cao. Diện tích toàn phần = diện tích xung quanh + 2 lần diện tích đáy. Hình lập phương là hình hộp có ba kích thước bằng nhau.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Diện tích **xung quanh** không tính hai mặt đáy; **toàn phần** thì có.
-**Lỗi thường gặp:** Cộng thiếu một mặt đáy khi tính diện tích toàn phần. Phòng: Đếm đủ 6 mặt của hình hộp trước khi cộng.
-**Gợi ý 3 tầng:** (1) Chu vi đáy bằng bao nhiêu? — (2) Diện tích xung quanh = chu vi đáy × chiều cao. — (3) Toàn phần thì cộng thêm hai mặt đáy.
+**Đáp số:** a) 157 cm · b) 50,24 cm · c) 2 640,74 cm² · d) 30 cm
+**Hướng giải:** BẪY — Đường kính hay bán kính. Chu vi hình tròn = đường kính × 3,14 = bán kính × 2 × 3,14. Diện tích hình tròn = bán kính × bán kính × 3,14. Đường kính gấp đôi bán kính.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi dùng **đường kính**, diện tích dùng **bán kính nhân bán kính**.
+**Lỗi thường gặp:** Lấy đường kính nhân đường kính khi tính diện tích. Phòng: Ghi rõ r = … và d = … lên hình trước khi thay số.
+**Gợi ý 3 tầng:** (1) Đề cho bán kính hay đường kính? — (2) Chu vi dùng đường kính; diện tích dùng bán kính. — (3) Nhân với 3,14 ở bước cuối.
 
 ### Bài D.2
-**Đáp số:** a) 13 giờ 9 phút · b) 12 giờ 21 phút · c) 13 giờ 40 phút · d) 14 giờ 50 phút · e) 7 giờ 39 phút
-**Hướng giải:** BẪY — Phần phút vượt quá 60. Đổi cả giờ khởi hành lẫn thời gian đi về **phút**, cộng lại, rồi đổi kết quả ngược lại thành giờ và phút. Cách này tránh được lỗi nhớ khi phần phút vượt 60.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Đổi hết về phút rồi mới cộng — an toàn hơn cộng trực tiếp.
-**Lỗi thường gặp:** Cộng phần phút thành hơn 60 mà quên đổi thành giờ. Phòng: Kiểm tra phần phút của đáp số phải bé hơn 60.
-**Gợi ý 3 tầng:** (1) Đổi giờ khởi hành ra phút tính từ 0 giờ. — (2) Cộng thêm thời gian đi (tính bằng phút). — (3) Đổi tổng số phút trở lại thành giờ và phút.
+**Đáp số:** a) 9 tạ · b) 3 tạ · c) 7 tạ 60 kg · d) 15 tạ 50 kg · e) 21 tạ · f) 4 tạ
+**Hướng giải:** BẪY — Đơn vị của câu trả lời. Tính tổng khối lượng theo ki-lô-gam trước, sau đó mới đổi sang đơn vị mà đề hỏi. Đừng đổi đơn vị ngay từ đầu vì dễ nhầm.
+**Nhãn tư duy:** TD2, TD3. Điểm chốt: Câu hỏi đòi đơn vị nào thì bước **cuối cùng** mới đổi sang đơn vị đó.
+**Lỗi thường gặp:** Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. Phòng: Khoanh tròn đơn vị trong câu hỏi trước khi đặt bút.
+**Gợi ý 3 tầng:** (1) Tính tổng khối lượng theo ki-lô-gam. — (2) Đề hỏi kết quả theo đơn vị nào? — (3) Đổi kết quả sang đơn vị đó.
 
 ### Bài D.3
-**Đáp số:** a) 77 · b) 79 000 · c) 43 000 · d) 44 · e) 66 · f) 28 000 · g) 46
+**Đáp số:** a) 58 000 · b) 58 · c) 77 · d) 41 000 · e) 29 000
 **Hướng giải:** BẪY — 1 000 lần mỗi bậc. Hai đơn vị thể tích liền kề hơn kém nhau **1 000 lần**. 1 dm³ = 1 lít; 1 lít = 1 000 ml; 1 m³ = 1 000 dm³ = 1 000 lít.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Thể tích nhảy **1 000 lần** mỗi bậc (độ dài 10, diện tích 100, thể tích 1 000).
 **Lỗi thường gặp:** Đổi như đơn vị diện tích, chỉ nhân 100. Phòng: Nhớ dãy 10 – 100 – 1 000 ứng với độ dài – diện tích – thể tích.
 **Gợi ý 3 tầng:** (1) Đơn vị thể tích liền kề hơn kém nhau mấy lần? — (2) Đếm số bậc giữa hai đơn vị. — (3) 1 dm³ bằng đúng 1 lít.
 
 ### Bài D.4
-**Đáp số:** a) 390 000 đồng · b) 160 · 80 · 240 cây · c) 308 000 đồng · d) 32 · 160 · 32 cây · e) 38 · 114 · 76 cây · f) 150 000 đồng
-**Hướng giải:** BẪY — Chia cho tổng số phần, không phải cho số đại lượng. Chia một tổng theo tỉ lệ ba số: cộng ba số phần lại, chia tổng cho tổng số phần được giá trị một phần, rồi nhân ra từng đại lượng. Bài trộn thì tính riêng từng loại rồi cộng.
+**Đáp số:** a) 16 giờ 39 phút · b) 18 giờ 11 phút · c) 14 giờ 42 phút · d) 15 giờ 53 phút
+**Hướng giải:** BẪY — Phần phút vượt quá 60. Đổi cả giờ khởi hành lẫn thời gian đi về **phút**, cộng lại, rồi đổi kết quả ngược lại thành giờ và phút. Cách này tránh được lỗi nhớ khi phần phút vượt 60.
+**Nhãn tư duy:** TD3, TD2. Điểm chốt: Đổi hết về phút rồi mới cộng — an toàn hơn cộng trực tiếp.
+**Lỗi thường gặp:** Cộng phần phút thành hơn 60 mà quên đổi thành giờ. Phòng: Kiểm tra phần phút của đáp số phải bé hơn 60.
+**Gợi ý 3 tầng:** (1) Đổi giờ khởi hành ra phút tính từ 0 giờ. — (2) Cộng thêm thời gian đi (tính bằng phút). — (3) Đổi tổng số phút trở lại thành giờ và phút.
+
+### Bài D.5
+**Đáp số:** a) 152 · 38 · 38 cây · b) 570 000 đồng · c) 800 000 đồng · d) 44 · 22 · 11 cây · e) 290 000 đồng · f) 24 · 36 · 24 cây
+**Hướng giải:** Chia một tổng theo tỉ lệ ba số: cộng ba số phần lại, chia tổng cho tổng số phần được giá trị một phần, rồi nhân ra từng đại lượng. Bài trộn thì tính riêng từng loại rồi cộng.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Chia cho **tổng số phần**, không chia cho số đại lượng.
 **Lỗi thường gặp:** Chia tổng cho 3 vì thấy có ba tổ. Phòng: Đếm số phần trên sơ đồ trước khi chia.
 **Gợi ý 3 tầng:** (1) Vẽ ba đoạn thẳng theo đúng số phần. — (2) Tổng cộng có bao nhiêu phần bằng nhau? — (3) Một phần bằng bao nhiêu?
-
-### Bài D.5
-**Đáp số:** a) 8 tạ · b) 9 tạ 30 kg · c) 9 tạ 50 kg · d) 7 tạ 80 kg · e) 7 tạ 75 kg
-**Hướng giải:** Tính tổng khối lượng theo ki-lô-gam trước, sau đó mới đổi sang đơn vị mà đề hỏi. Đừng đổi đơn vị ngay từ đầu vì dễ nhầm.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Câu hỏi đòi đơn vị nào thì bước **cuối cùng** mới đổi sang đơn vị đó.
-**Lỗi thường gặp:** Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. Phòng: Khoanh tròn đơn vị trong câu hỏi trước khi đặt bút.
-**Gợi ý 3 tầng:** (1) Tính tổng khối lượng theo ki-lô-gam. — (2) Đề hỏi kết quả theo đơn vị nào? — (3) Đổi kết quả sang đơn vị đó.
 
 ### Bài E.1
 **Đáp số:** a) Đổi đơn vị diện tích · b) Đơn vị có mũ hai, hoặc ha, km² · c) Bảng đơn vị đo diện tích · d) Đếm bậc rồi nhân, chia 100 · e) Mỗi bậc thêm hai chữ số 0 — nhớ “diện tích thì gấp đôi số 0”. · f) Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc.

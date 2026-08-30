@@ -42,126 +42,124 @@ Phiếu lời giải và phân tích chuyên sâu đi kèm: `GITA-T2-L5-MOC-GK2-
 Họ và tên: ......................................... Lớp: ......... Điểm: ......../100
 
 > **KIẾN THỨC NỀN CỦA CHƯƠNG**
-> 1. Ba công thức tổng cơ bản
-> 2. Bảng đơn vị đo, so sánh số tự nhiên
-> 3. Tổ hợp chập hai, nguyên tắc đếm lặp
-> 4. Ghép cặp, tính chất kết hợp
+> 1. Chu vi, đường bao của hình
+> 2. Quy tắc nhân, quy tắc cộng trong phép đếm
+> 3. Diện tích tam giác; tỉ số; tam giác chung chiều cao
+> 4. Công thức tổng – hiệu, sơ đồ đoạn thẳng
 
 ---
 
 ## PHẦN I — NHẬN BIẾT — TRẢI KHẮP CÁC CỤM ĐÃ HỌC · Mức M1 — Nhận biết · 12 phút · 15 điểm
 
-### Bài 1. (3 điểm) Chu vi và diện tích hình chữ nhật, hình vuông
+### Bài 1. (3 điểm) Tìm kích thước khi biết chu vi hoặc diện tích
 
-Tính theo yêu cầu, ghi rõ đơn vị.
+Làm ngược từ công thức.
 
-a) Hình vuông có cạnh 56 cm. Tính diện tích.
-b) Hình chữ nhật có chiều dài 17 cm, chiều rộng 7 cm. Tính chu vi.
-c) Hình vuông có cạnh 15 cm. Tính chu vi.
-d) Hình chữ nhật có chiều dài 14 cm, chiều rộng 8 cm. Tính diện tích.
-e) Hình chữ nhật có chiều dài 31 cm, chiều rộng 5 cm. Tính chu vi.
-f) Hình vuông có cạnh 47 cm. Tính chu vi.
-g) Hình vuông có cạnh 39 cm. Tính diện tích.
+a) Hình chữ nhật có chu vi 154 cm, chiều dài 58 cm. Tính chiều rộng.
+b) Hình chữ nhật có diện tích 208 cm², chiều rộng 4 cm. Tính chiều dài.
+c) Hình vuông có chu vi 84 cm. Tính cạnh và diện tích.
+d) Hình chữ nhật có chu vi 140 cm, chiều dài 42 cm. Tính chiều rộng.
+e) Hình vuông có chu vi 148 cm. Tính cạnh và diện tích.
+f) Hình chữ nhật có diện tích 176 cm², chiều rộng 8 cm. Tính chiều dài.
 
 ### Bài 2. (3 điểm) Tìm hai số khi biết tổng và hiệu
 
 Tìm hai số trong mỗi trường hợp.
 
-a) Tổng hai số là 508, hiệu hai số là 90. Tìm hai số đó.
-b) Tổng hai số là 1 914, hiệu hai số là 94. Tìm hai số đó.
-c) Tổng hai số là 346, hiệu hai số là 108. Tìm hai số đó.
-d) Tổng hai số là 576, hiệu hai số là 188. Tìm hai số đó.
-e) Tổng hai số là 78, hiệu hai số là 10. Tìm hai số đó.
-f) Tổng hai số là 254, hiệu hai số là 74. Tìm hai số đó.
+a) Tổng hai số là 486, hiệu hai số là 42. Tìm hai số đó.
+b) Tổng hai số là 1 952, hiệu hai số là 414. Tìm hai số đó.
+c) Tổng hai số là 1 088, hiệu hai số là 140. Tìm hai số đó.
+d) Tổng hai số là 1 526, hiệu hai số là 384. Tìm hai số đó.
+e) Tổng hai số là 232, hiệu hai số là 20. Tìm hai số đó.
 
-### Bài 3. (3 điểm) Làm tròn số đến hàng cho trước
+### Bài 3. (3 điểm) Đọc giá trị của chữ số theo hàng
 
-Làm tròn mỗi số dưới đây theo yêu cầu.
+Cho số **2 311 909**.
 
-a) Làm tròn số 513 005 đến hàng trăm.
-b) Làm tròn số 267 079 đến hàng chục.
-c) Làm tròn số 178 511 đến hàng chục.
-d) Làm tròn số 166 348 đến hàng trăm.
-e) Làm tròn số 538 364 đến hàng trăm.
-f) Làm tròn số 762 037 đến hàng nghìn.
-g) Làm tròn số 99 793 đến hàng chục.
+a) Chữ số ở hàng **trăm nghìn** của số 2 311 909 là chữ số nào, và nó có giá trị bằng bao nhiêu?
+b) Chữ số ở hàng **chục nghìn** của số 2 311 909 là chữ số nào, và nó có giá trị bằng bao nhiêu?
+c) Chữ số ở hàng **nghìn** của số 2 311 909 là chữ số nào, và nó có giá trị bằng bao nhiêu?
+d) Chữ số ở hàng **chục** của số 2 311 909 là chữ số nào, và nó có giá trị bằng bao nhiêu?
+e) Chữ số ở hàng **đơn vị** của số 2 311 909 là chữ số nào, và nó có giá trị bằng bao nhiêu?
 
-### Bài 4. (3 điểm) Quy tắc cộng, quy tắc nhân và phép đếm có phần chung
+### Bài 4. (3 điểm) Quy tắc nhân trong phép đếm
 
-Đọc kĩ chữ “và” hay chữ “hoặc”.
+Đếm số cách chọn.
 
-a) Trên bàn có 6 quyển sách Toán và 10 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một** quyển sách bất kì?
-b) Có 3 quyển sách Toán và 9 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một quyển Toán và một quyển Tiếng Việt**?
-c) Lớp có 7 bạn giỏi Toán, 5 bạn giỏi Tiếng Việt, trong đó 4 bạn giỏi cả hai môn. Hỏi có bao nhiêu bạn giỏi ít nhất một môn?
-d) Có 9 quyển sách Toán và 3 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một quyển Toán và một quyển Tiếng Việt**?
-e) Trên bàn có 3 quyển sách Toán và 8 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một** quyển sách bất kì?
+a) Có 5 chiếc áo và 2 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
+b) Có 7 chiếc áo và 5 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
+c) Có 5 chiếc áo và 8 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
+d) Có 4 chiếc áo và 3 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
+e) Có 5 chiếc áo và 5 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
+f) Có 2 chiếc áo và 3 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
+g) Có 2 chiếc áo và 4 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
 
-### Bài 5. (3 điểm) Tính giá trị biểu thức
+### Bài 5. (3 điểm) Ôn tập bốn phép tính với số tự nhiên
 
-Tính giá trị của mỗi biểu thức.
+Đặt tính rồi tính. Ước lượng trước để tự kiểm tra.
 
-a) (281 + 11) × 8
-b) (273 + 23) × 7
-c) 296 × (3 + 8)
-d) (69 + 22) × 2
-e) 191 × (17 + 4)
-f) 282 × 2 + 282 × 3
-g) 171 × (15 + 5)
-h) 77 + 24 × 9
+a) 293 954 640 : 888
+b) 584 536 × 65
+c) 416 506 − 58 608
+d) 669 813 + 343 614
+e) 262 571 980 : 370
+f) 515 034 − 70 281
 
 ---
 
 ## PHẦN II — THÔNG HIỂU · Mức M2 — Thông hiểu · 15 phút · 20 điểm
 
-### Bài 1. (4 điểm) Đại lượng tỉ lệ thuận
+### Bài 1. (4 điểm) Phần trăm trong mua bán: lãi, lỗ, giảm giá
 
-Giải bằng cách rút về đơn vị hoặc dùng tỉ số.
+Ghi rõ đại lượng nào ứng với 100%.
 
-a) Mua 4 quyển vở hết 36 nghìn đồng. Với 117 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
-b) Mua 10 quyển vở hết 300 nghìn đồng. Với 690 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
-c) Mua 5 quyển vở hết 305 nghìn đồng. Với 854 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
-d) Mua 12 quyển vở hết 144 nghìn đồng. Với 228 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
-e) Mua 5 quyển vở hết 215 nghìn đồng. Với 1 204 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
-f) Mua 7 quyển vở hết 497 nghìn đồng. Mua 23 quyển vở như thế hết bao nhiêu nghìn đồng?
+a) Mua một món hàng 240 000 đồng rồi bán 336 000 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
+b) Một món hàng giá 150 000 đồng, tăng giá 20%. Giá mới là bao nhiêu?
+c) Một chiếc cặp giá 150 000 đồng được giảm 20%. Hỏi giá sau khi giảm là bao nhiêu?
+d) Một chiếc cặp giá 500 000 đồng được giảm 20%. Hỏi giá sau khi giảm là bao nhiêu?
+e) Mua một món hàng 500 000 đồng rồi bán 600 000 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
+f) Một món hàng giá 400 000 đồng, tăng giá 25%. Giá mới là bao nhiêu?
 
-### Bài 2. (4 điểm) Tính chất chia hết của tổng và hiệu
+### Bài 2. (4 điểm) Tìm chữ số để số chia hết cho một số cho trước
 
-Trả lời và giải thích ngắn gọn, không cần tính ra kết quả tổng.
+Với mỗi câu, tìm **tất cả** các chữ số thoả mãn.
 
-a) Tổng 56 + 196 có chia hết cho 2 không?
-b) Tổng 60 + 150 có chia hết cho 2 không?
-c) Hiệu 170 − 24 có chia hết cho 2 không?
-d) Tổng 378 + 504 có chia hết cho 9 không?
+a) Tìm tất cả chữ số thay cho dấu * để số 54*0 chia hết cho 2.
+b) Tìm tất cả chữ số thay cho dấu * để số 775* chia hết cho 3.
+c) Tìm tất cả chữ số thay cho dấu * để số 29*8 chia hết cho 9.
+d) Tìm tất cả chữ số thay cho dấu * để số 11*1 chia hết cho 5.
 
-### Bài 3. (4 điểm) Trồng cây và chia đoạn — năm trường hợp
+### Bài 3. (4 điểm) So sánh hai số đo khác đơn vị
 
-Vẽ một hình nhỏ ba khoảng để kiểm tra trước khi áp công thức.
+Điền dấu <, >, = thích hợp.
 
-a) Đoạn đường dài 88 m, cây cách nhau 4 m, không trồng ở cả hai đầu. Cần bao nhiêu cây?
-b) Đoạn đường dài 62 m, trồng cây cách nhau 2 m, trồng cả ở hai đầu. Cần bao nhiêu cây?
-c) Cưa một khúc gỗ dài 125 m thành các đoạn dài 5 m. Phải cưa bao nhiêu nhát?
-d) Quanh một hồ nước có chu vi 52 m, trồng cây cách nhau 2 m. Cần bao nhiêu cây?
-e) Đoạn đường dài 35 m, cây cách nhau 5 m, chỉ trồng ở một đầu. Cần bao nhiêu cây?
-f) Đoạn đường dài 180 m, trồng cây cách nhau 6 m, trồng cả ở hai đầu. Cần bao nhiêu cây?
+a) 18 cm … 270 hm
+b) 39 tạ … 480 dag
+c) 66 km² … 6 007 ha
+d) 76 ha … 254 km²
+e) 44 hg … 6 743 yến
+f) 11 hm … 2 535 dam
 
-### Bài 4. (4 điểm) Diện tích hình bình hành, hình thoi, hình tam giác
+### Bài 4. (4 điểm) Diện tích hình thang
 
-Áp dụng đúng công thức từng hình.
+Áp dụng công thức, ghi rõ đơn vị.
 
-a) Hình bình hành có đáy 35 cm, chiều cao 27 cm. Tính diện tích.
-b) Hình tam giác có đáy 21 cm, chiều cao 22 cm. Tính diện tích.
-c) Hình thoi có hai đường chéo dài 14 cm và 38 cm. Tính diện tích.
-d) Hình thoi có hai đường chéo dài 6 cm và 14 cm. Tính diện tích.
-e) Hình tam giác có đáy 28 cm, chiều cao 7 cm. Tính diện tích.
+a) Hình thang có đáy lớn 27 cm, đáy bé 4 cm, chiều cao 26 cm. Tính diện tích.
+b) Hình thang có đáy lớn 14 cm, đáy bé 5 cm, chiều cao 16 cm. Tính diện tích.
+c) Hình thang có đáy lớn 27 cm, đáy bé 22 cm, chiều cao 12 cm. Tính diện tích.
+d) Hình thang có đáy lớn 20 cm, đáy bé 10 cm, chiều cao 15 cm. Tính diện tích.
+e) Hình thang có đáy lớn 35 cm, đáy bé 23 cm, chiều cao 3 cm. Tính diện tích.
 
-### Bài 5. (4 điểm) Bài toán tổng – hiệu có lời văn
+### Bài 5. (4 điểm) Tính toán với số đo đại lượng
 
-Tóm tắt bằng sơ đồ đoạn thẳng rồi giải.
+Đổi về cùng đơn vị rồi tính.
 
-a) Kho B và xưởng chứa tất cả 506 kg xi măng. Kho B chứa nhiều hơn xưởng 152 kg. Mỗi nơi chứa bao nhiêu kg?
-b) Tổ Một và nhóm Sao Mai trồng được 546 cây. Tổ Một trồng nhiều hơn nhóm Sao Mai 142 cây. Mỗi tổ trồng bao nhiêu cây?
-c) Hai lớp 5B và 4B có tất cả 600 quyển sách. Lớp 5B có nhiều hơn lớp 4B 178 quyển. Mỗi lớp có bao nhiêu quyển?
-d) Hai lớp 4B và 5B có tất cả 384 quyển sách. Lớp 4B có nhiều hơn lớp 5B 100 quyển. Mỗi lớp có bao nhiêu quyển?
+a) 5 618 cm : 2 = … cm
+b) 2 934 cm : 2 = … cm
+c) 37 m 24 cm × 9 = … cm
+d) 30 m 83 cm × 5 = … cm
+e) 28 m 65 cm + 765 cm = … cm
+f) 12 956 cm : 4 = … cm
 
 ---
 
@@ -171,11 +169,12 @@ d) Hai lớp 4B và 5B có tất cả 384 quyển sách. Lớp 4B có nhiều h�
 
 Với mỗi ý, tìm số theo yêu cầu.
 
-a) Tổng của 3 số tự nhiên liên tiếp bằng 666. Tìm số bé nhất trong 3 số đó.
-b) Tổng của 5 số tự nhiên liên tiếp bằng 710. Tìm số bé nhất trong 5 số đó.
-c) Tổng của 7 số tự nhiên liên tiếp bằng 2 758. Tìm số bé nhất trong 7 số đó.
-d) Tổng của 9 số tự nhiên liên tiếp bằng 1 080. Tìm số bé nhất trong 9 số đó.
-e) Tổng của 5 số tự nhiên liên tiếp bằng 855. Tìm số bé nhất trong 5 số đó.
+a) Tổng của 3 số tự nhiên liên tiếp bằng 438. Tìm số bé nhất trong 3 số đó.
+b) Tổng của 5 số tự nhiên liên tiếp bằng 755. Tìm số bé nhất trong 5 số đó.
+c) Tổng của 3 số tự nhiên liên tiếp bằng 666. Tìm số bé nhất trong 3 số đó.
+d) Tổng của 5 số tự nhiên liên tiếp bằng 710. Tìm số bé nhất trong 5 số đó.
+e) Tổng của 7 số tự nhiên liên tiếp bằng 2 758. Tìm số bé nhất trong 7 số đó.
+f) Tổng của 9 số tự nhiên liên tiếp bằng 1 080. Tìm số bé nhất trong 9 số đó.
 
 ### Bài 2. (5 điểm) Bài toán cân đĩa tìm vật khác biệt
 
@@ -188,154 +187,147 @@ d) Sau lần cân thứ nhất, số đồng tiền còn phải xét nhiều nh�
 e) Nếu có 3 đồng tiền thì cần cân mấy lần?
 f) Nếu có 9 đồng tiền thì cần cân mấy lần?
 
-### Bài 3. (5 điểm) Tìm hai số khi biết hiệu và tỉ số
+### Bài 3. (5 điểm) Tìm phân số của một số qua hai bước
 
-Vẽ sơ đồ đoạn thẳng rồi giải.
+Đọc kĩ “của số nào” trước khi tính.
 
-a) Cửa hàng chứa nhiều hơn trang trại 88 kg muối. Số muối ở trang trại bằng 1 phần 5 số muối ở cửa hàng. Mỗi nơi chứa bao nhiêu kg?
-b) Kho B chứa nhiều hơn thư viện 53 kg xi măng. Số xi măng ở thư viện bằng 3 phần 4 số xi măng ở kho B. Mỗi nơi chứa bao nhiêu kg?
-c) Xưởng chứa nhiều hơn trang trại 99 kg muối. Số muối ở trang trại bằng 3 phần 4 số muối ở xưởng. Mỗi nơi chứa bao nhiêu kg?
-d) Kho A chứa nhiều hơn xưởng 135 kg xi măng. Số xi măng ở xưởng bằng 4 phần 7 số xi măng ở kho A. Mỗi nơi chứa bao nhiêu kg?
-e) Xưởng chứa nhiều hơn thư viện 25 kg xi măng. Số xi măng ở thư viện bằng 1 phần 2 số xi măng ở xưởng. Mỗi nơi chứa bao nhiêu kg?
+a) Một cửa hàng có 75 kg gạo. Ngày đầu bán 1 phần 3 số gạo, ngày thứ hai bán 1 phần 5 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
+b) Một cửa hàng có 348 kg gạo. Ngày đầu bán 1 phần 3 số gạo, ngày thứ hai bán 1 phần 4 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
+c) Một cửa hàng có 528 kg gạo. Ngày đầu bán 1 phần 4 số gạo, ngày thứ hai bán 1 phần 4 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
+d) Một cửa hàng có 360 kg gạo. Ngày đầu bán 1 phần 3 số gạo, ngày thứ hai bán 1 phần 5 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
+e) Một cửa hàng có 800 kg gạo. Ngày đầu bán 1 phần 4 số gạo, ngày thứ hai bán 1 phần 5 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
 
 ### Bài 4. (5 điểm) Tổng – tỉ, hiệu – tỉ khi một dữ kiện bị giấu
 
 Việc đầu tiên là gọi tên dữ kiện bị giấu.
 
-a) Hợp tác xã chứa 24 kg đường. Nếu hợp tác xã nhận thêm 24 kg thì bằng số đường ở xưởng. Hỏi cả hai nơi chứa bao nhiêu kg?
-b) Thư viện và cửa hàng chứa tất cả 168 kg phân bón. Nếu chia số phân bón ở thư viện thành 2 phần bằng nhau thì số phân bón ở cửa hàng bằng 4 phần như thế. Mỗi nơi chứa bao nhiêu kg?
-c) Số gạo ở kho A bằng 5 phần 2 số gạo ở cửa hàng. Nếu chuyển 30 kg từ kho A sang cửa hàng thì kho A vẫn còn nhiều hơn. Biết kho A hơn cửa hàng 60 kg, tìm số gạo mỗi nơi.
-d) Hợp tác xã chứa 38 kg đường. Nếu hợp tác xã nhận thêm 19 kg thì bằng số đường ở xưởng. Hỏi cả hai nơi chứa bao nhiêu kg?
-e) Số muối ở kho B bằng 2 số muối ở cửa hàng. Nếu chuyển 9 kg từ kho B sang cửa hàng thì kho B vẫn còn nhiều hơn. Biết kho B hơn cửa hàng 18 kg, tìm số muối mỗi nơi.
-f) Hợp tác xã và thư viện chứa tất cả 90 kg đường. Nếu chia số đường ở hợp tác xã thành 1 phần bằng nhau thì số đường ở thư viện bằng 2 phần như thế. Mỗi nơi chứa bao nhiêu kg?
+a) Kho A chứa 19 kg xi măng. Nếu kho A nhận thêm 57 kg thì bằng số xi măng ở kho B. Hỏi cả hai nơi chứa bao nhiêu kg?
+b) Số muối ở kho B bằng 3 phần 2 số muối ở xưởng. Nếu chuyển 40 kg từ kho B sang xưởng thì kho B vẫn còn nhiều hơn. Biết kho B hơn xưởng 80 kg, tìm số muối mỗi nơi.
+c) Hợp tác xã và kho A chứa tất cả 196 kg muối. Nếu chia số muối ở hợp tác xã thành 3 phần bằng nhau thì số muối ở kho A bằng 4 phần như thế. Mỗi nơi chứa bao nhiêu kg?
+d) Số xi măng ở cửa hàng bằng 4 phần 3 số xi măng ở xưởng. Nếu chuyển 9 kg từ cửa hàng sang xưởng thì cửa hàng vẫn còn nhiều hơn. Biết cửa hàng hơn xưởng 18 kg, tìm số xi măng mỗi nơi.
+e) Xưởng chứa 42 kg thóc. Nếu xưởng nhận thêm 28 kg thì bằng số thóc ở trang trại. Hỏi cả hai nơi chứa bao nhiêu kg?
+f) Kho B và cửa hàng chứa tất cả 32 kg muối. Nếu chia số muối ở kho B thành 1 phần bằng nhau thì số muối ở cửa hàng bằng 3 phần như thế. Mỗi nơi chứa bao nhiêu kg?
 
-### Bài 5. (5 điểm) Tìm phân số của một số
+### Bài 5. (5 điểm) Tính thời điểm đến, thời gian đi
 
-Trình bày lời giải có câu trả lời.
+Ghi kết quả theo giờ và phút.
 
-a) Đội Một trồng được 66 cây. Số cây của nhóm Sao Mai bằng 1 phần 3 số cây của đội Một. Hỏi nhóm Sao Mai trồng được bao nhiêu cây?
-b) Nhóm Hoa Phượng trồng được 18 cây. Số cây của đội Hai bằng 1 phần 2 số cây của nhóm Hoa Phượng. Hỏi đội Hai trồng được bao nhiêu cây?
-c) Tổ Một trồng được 20 cây. Số cây của nhóm Hoa Phượng bằng 4 phần 5 số cây của tổ Một. Hỏi nhóm Hoa Phượng trồng được bao nhiêu cây?
-d) Đội Một trồng được 16 cây. Số cây của tổ Một bằng 3 phần 4 số cây của đội Một. Hỏi tổ Một trồng được bao nhiêu cây?
-e) Đội Một trồng được 40 cây. Số cây của tổ Hai bằng 5 phần 8 số cây của đội Một. Hỏi tổ Hai trồng được bao nhiêu cây?
-f) Tổ Ba trồng được 40 cây. Số cây của đội Hai bằng 1 phần 8 số cây của tổ Ba. Hỏi đội Hai trồng được bao nhiêu cây?
+a) Một chuyến tàu khởi hành lúc 15 giờ 25 phút và đi hết 2 giờ 14 phút. Tàu đến nơi lúc mấy giờ?
+b) Một chuyến tàu khởi hành lúc 6 giờ 20 phút và đi hết 3 giờ 4 phút. Tàu đến nơi lúc mấy giờ?
+c) Một chuyến tàu khởi hành lúc 8 giờ 0 phút và đi hết 1 giờ 2 phút. Tàu đến nơi lúc mấy giờ?
+d) Một chuyến tàu khởi hành lúc 8 giờ 40 phút và đi hết 6 giờ 10 phút. Tàu đến nơi lúc mấy giờ?
 
 ---
 
 ## PHẦN IV — VẬN DỤNG CAO · Mức M4 — Vận dụng cao · 25 phút · 25 điểm
 
-### Bài 1. (5 điểm) Đếm số lập được thoả nhiều điều kiện
+### Bài 1. (5 điểm) Ghép người với môn bằng bảng đúng – sai
 
-Cho bốn chữ số **0, 2, 5, 6**. Xét các số có ba chữ số **khác nhau** lập từ bốn chữ số đó.
+Bắt buộc kẻ bảng ra giấy. Không được suy luận nhẩm ở bài này.
 
-a) Lập được tất cả bao nhiêu số?
-b) Trong đó có bao nhiêu số chẵn?
-c) Có bao nhiêu số chia hết cho 5?
-d) Có bao nhiêu số chia hết cho 3?
-e) Số lớn nhất và số bé nhất lập được là những số nào?
-f) Tổng của số lớn nhất và số bé nhất bằng bao nhiêu?
+a) Ba bạn Phúc, Minh và Tuấn mỗi bạn học một môn năng khiếu khác nhau trong ba môn: hát, múa và đàn. Biết rằng: Phúc không học đàn và cũng không học múa; Minh không học múa. Hỏi mỗi bạn học môn nào?
+b) Ba bạn Dũng, Trang và Hùng mỗi bạn học một môn năng khiếu khác nhau trong ba môn: bơi, cờ vua và vẽ. Biết rằng: Dũng không học bơi và cũng không học cờ vua; Trang không học cờ vua. Hỏi mỗi bạn học môn nào?
+c) Ba bạn Quân, Đức và Khánh mỗi bạn học một môn năng khiếu khác nhau trong ba môn: tiếng Anh, tin học và mĩ thuật. Biết rằng: Quân không học tin học và cũng không học mĩ thuật; Đức không học mĩ thuật. Hỏi mỗi bạn học môn nào?
+d) Ba bạn Hùng, Đức và Bình mỗi bạn học một môn năng khiếu khác nhau trong ba môn: hát, múa và đàn. Biết rằng: Hùng không học múa và cũng không học hát; Đức không học hát. Hỏi mỗi bạn học môn nào?
 
-### Bài 2. (5 điểm) Hình chữ nhật — tổng hợp chu vi, diện tích và chuyển động
+### Bài 2. (5 điểm) Diện tích thay đổi khi kích thước thay đổi
 
-Bài nhiều ý nối tiếp, ý sau dùng kết quả ý trước.
+Vẽ hình minh hoạ phần tăng thêm.
 
-a) Hình chữ nhật có chiều dài 32 m, chiều rộng 5 m. Tính chu vi.
-b) Tính diện tích hình chữ nhật đó.
-c) Một người đi bộ quanh hình chữ nhật ấy với vận tốc 4 m/giây. Hỏi đi hết một vòng mất bao nhiêu giây?
-d) Nếu tăng chiều dài thêm 5 m thì diện tích tăng thêm bao nhiêu?
-e) Khi đó chu vi tăng thêm bao nhiêu mét?
-f) Nếu tăng cả chiều dài và chiều rộng thêm 5 m thì diện tích mới bằng bao nhiêu?
-g) Diện tích tăng thêm khi tăng cả hai chiều bằng bao nhiêu?
+a) Hình chữ nhật dài 47 cm, rộng 6 cm. Nếu tăng chiều dài thêm 12 cm (giữ nguyên chiều rộng) thì diện tích tăng thêm bao nhiêu?
+b) Hình chữ nhật dài 46 cm, rộng 44 cm. Nếu tăng cả chiều dài và chiều rộng thêm 12 cm thì diện tích tăng thêm bao nhiêu?
+c) Hình chữ nhật dài 31 cm, rộng 7 cm. Nếu tăng chiều dài thêm 8 cm (giữ nguyên chiều rộng) thì diện tích tăng thêm bao nhiêu?
+d) Hình chữ nhật dài 20 cm, rộng 14 cm. Nếu gấp đôi chiều dài và giữ nguyên chiều rộng thì diện tích mới gấp mấy lần diện tích cũ?
+e) Hình chữ nhật dài 39 cm, rộng 27 cm. Nếu gấp đôi chiều dài và giữ nguyên chiều rộng thì diện tích mới gấp mấy lần diện tích cũ?
+f) Hình chữ nhật dài 28 cm, rộng 11 cm. Nếu tăng chiều dài thêm 3 cm (giữ nguyên chiều rộng) thì diện tích tăng thêm bao nhiêu?
 
-### Bài 3. (5 điểm) Chuyển bớt để hai phần bằng nhau
+### Bài 3. (5 điểm) Bài toán làm chung một công việc
 
-Chú ý: chuyển đi thì bên này giảm, bên kia tăng.
+Coi cả công việc là 1 đơn vị.
 
-a) Đội Một có 60 quyển sách, đội Hai có 40 quyển. Hỏi phải chuyển bao nhiêu quyển từ đội Một sang đội Hai để số sách hai tổ bằng nhau?
-b) Tổ Hai có 24 quyển sách, nhóm Sao Mai có 12 quyển. Hỏi phải chuyển bao nhiêu quyển từ tổ Hai sang nhóm Sao Mai để số sách hai tổ bằng nhau?
-c) Tổ Hai có 204 quyển sách, nhóm Sao Mai có 34 quyển. Hỏi phải chuyển bao nhiêu quyển từ tổ Hai sang nhóm Sao Mai để số sách hai tổ bằng nhau?
-d) Tổ Một có 260 quyển sách, tổ Hai có 52 quyển. Hỏi phải chuyển bao nhiêu quyển từ tổ Một sang tổ Hai để số sách hai tổ bằng nhau?
-e) Nhóm Sao Mai có 135 quyển sách, đội Một có 81 quyển. Hỏi phải chuyển bao nhiêu quyển từ nhóm Sao Mai sang đội Một để số sách hai tổ bằng nhau?
+a) Người thứ nhất làm một mình xong công việc trong 8 giờ, người thứ hai làm một mình xong trong 20 giờ. Nếu hai người cùng làm thì sau bao lâu xong công việc?
+b) Người thứ nhất làm một mình xong công việc trong 4 giờ, người thứ hai làm một mình xong trong 8 giờ. Nếu hai người cùng làm thì sau bao lâu xong công việc?
+c) Người thứ nhất làm một mình xong công việc trong 8 giờ, người thứ hai làm một mình xong trong 2 giờ. Nếu hai người cùng làm thì sau bao lâu xong công việc?
+d) Người thứ nhất làm một mình xong công việc trong 4 giờ, người thứ hai làm một mình xong trong 3 giờ. Nếu hai người cùng làm thì sau bao lâu xong công việc?
+e) Người thứ nhất làm một mình xong công việc trong 3 giờ, người thứ hai làm một mình xong trong 4 giờ. Nếu hai người cùng làm thì sau bao lâu xong công việc?
+f) Người thứ nhất làm một mình xong công việc trong 5 giờ, người thứ hai làm một mình xong trong 12 giờ. Nếu hai người cùng làm thì sau bao lâu xong công việc?
 
-### Bài 4. (5 điểm) Tìm số theo hai điều kiện chia có dư
+### Bài 4. (5 điểm) Ước, bội, ước chung lớn nhất, bội chung nhỏ nhất
 
-Tìm số bé nhất thoả mãn.
+Trình bày cách tìm, không chỉ ghi đáp số.
 
-a) Tìm số bé nhất không quá 200 chia cho 8 dư 3 và chia cho 7 dư 2.
-b) Tìm số bé nhất không quá 500 chia cho 9 dư 1 và chia cho 7 dư 2.
-c) Tìm số bé nhất không quá 500 chia cho 6 dư 5 và chia cho 4 dư 1.
-d) Tìm số bé nhất không quá 300 chia cho 4 dư 3 và chia cho 7 dư 6.
+a) Tìm ước chung lớn nhất của 56 và 53.
+b) Tìm bội chung nhỏ nhất của 63 và 64.
+c) Số 23 có bao nhiêu ước? Kể ra.
+d) Tìm bội chung nhỏ nhất của 22 và 68.
+e) Tìm ước chung lớn nhất của 17 và 72.
+f) Tìm ước chung lớn nhất của 85 và 56.
 
-### Bài 5. (5 điểm) Tính nhanh tổng nhiều tích có thừa số chung
+### Bài 5. (5 điểm) Biểu thức nhiều phép tính với phân số
 
-Tính tổng mỗi biểu thức.
+Tính giá trị biểu thức, rút gọn kết quả.
 
-a) 8 × 1 + 8 × 2 + 8 × 3 + … + 8 × 10
-b) 5 × 1 + 5 × 2 + 5 × 3 + … + 5 × 10
-c) 9 × 1 + 9 × 2 + 9 × 3 + … + 9 × 25
-d) 7 × 1 + 7 × 2 + 7 × 3 + … + 7 × 25
-e) 5 × 1 + 5 × 2 + 5 × 3 + … + 5 × 25
+a) 1 phần 4 : 9 phần 13 + 1 phần 9
+b) 4 phần 3 × 2 phần 15 + 4 phần 3 × 2 phần 7
+c) 2 × 2 + 2 × 1
+d) 1 : 3 phần 11 + 3 phần 4
 
 ---
 
 ## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
 
-### Bài 1. (3 điểm) So sánh phân số bằng phần bù và phân số trung gian
+### Bài 1. (3 điểm) Diện tích phần tô màu
 
-So sánh mà không quy đồng.
+Phân tích hình thành hiệu của các hình quen thuộc.
 
-a) 35 phần 36 … 40 phần 41
-b) 3 phần 8 … 1 phần 4
-c) 7 phần 19 … 5 phần 17
-d) 13 phần 14 … 14 phần 15
-e) 45 phần 46 … 49 phần 50
-f) 1 phần 3 … 6 phần 19
+a) Một hình vuông cạnh 18 cm. Tính diện tích hình tròn có đường kính bằng cạnh hình vuông đó (lấy π = 3,14).
+b) Hai hình tròn đồng tâm có bán kính 6 cm và 1 cm. Tính diện tích phần nằm giữa hai đường tròn (lấy π = 3,14).
+c) Một hình tròn bán kính 5 cm nội tiếp trong một hình vuông (hình tròn tiếp xúc cả bốn cạnh). Tính diện tích phần hình vuông nằm ngoài hình tròn (lấy π = 3,14).
+d) Hai hình tròn đồng tâm có bán kính 9 cm và 6 cm. Tính diện tích phần nằm giữa hai đường tròn (lấy π = 3,14).
+e) Một hình vuông cạnh 36 cm. Tính diện tích hình tròn có đường kính bằng cạnh hình vuông đó (lấy π = 3,14).
 
-### Bài 2. (3 điểm) Mô phỏng đề thi vào lớp 6 — phần tự luận
+### Bài 2. (3 điểm) Tổng nhiều số có ràng buộc — dạng đề thi
 
-Làm trong 25 phút. Trình bày như bài thi thật: có câu lời giải, có đáp số.
+Bài mô phỏng phần tự luận của đề thi chất lượng cao.
 
-a) Hai xe khởi hành cùng lúc từ hai địa điểm cách nhau 156 km và đi ngược chiều. Vận tốc lần lượt là 48 km/giờ và 30 km/giờ. Sau bao lâu hai xe gặp nhau?
-b) Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
-c) Chỗ gặp nhau cách điểm khởi hành của xe thứ hai bao nhiêu ki-lô-mét?
-d) Một món hàng giá 200 000 đồng, tăng giá 20%. Giá mới là bao nhiêu?
-e) Sau đó giảm giá 20% so với giá mới. Giá cuối cùng là bao nhiêu?
-f) Giá cuối cùng so với giá ban đầu là tăng hay giảm, và chênh bao nhiêu đồng?
-g) Hai số có tổng 145 và số bé bằng 1 phần 4 số lớn. Tìm hiệu hai số.
+a) Ba số có tổng 240. Số thứ hai hơn số thứ nhất 9, số thứ ba hơn số thứ hai 9. Tìm số thứ hai.
+b) Tìm số thứ nhất.
+c) Tìm số thứ ba.
+d) Vì sao số thứ hai bằng tổng ba số chia cho 3?
+e) Hai số khác có tổng 224 và số bé bằng 3 phần 5 số lớn. Tìm số bé.
+f) Tìm số lớn.
+g) Hiệu hai số đó bằng bao nhiêu?
 
-### Bài 3. (3 điểm) Quan hệ giữa một số và tổng các chữ số của nó
+### Bài 3. (3 điểm) Số dư của tổng — lập luận không cần tính hết
 
-Trình bày lập luận đầy đủ.
+Dùng tính chất số dư, hạn chế tính toán.
 
-a) Số có hai chữ số 37 gấp tổng hai chữ số của nó bao nhiêu lần? (viết dưới dạng thương và số dư)
-b) Số có hai chữ số 82 gấp tổng hai chữ số của nó bao nhiêu lần? (viết dưới dạng thương và số dư)
-c) Số có hai chữ số 99 gấp tổng hai chữ số của nó bao nhiêu lần? (viết dưới dạng thương và số dư)
-d) Tìm số có hai chữ số biết số đó bằng 10 lần tổng hai chữ số của nó và chữ số hàng chục là 3.
-e) Tìm số có hai chữ số biết số đó bằng 10 lần tổng hai chữ số của nó và chữ số hàng chục là 3.
-f) Số có hai chữ số 23 gấp tổng hai chữ số của nó bao nhiêu lần? (viết dưới dạng thương và số dư)
+a) Dãy số: 337, 395, 829, 986. Có bao nhiêu số trong dãy chia hết cho 3?
+b) Tổng của dãy bằng bao nhiêu?
+c) Tổng đó có chia hết cho 3 không?
+d) Số dư khi chia tổng cho 3 bằng tổng các số dư của từng số hạng chia cho 3 rồi lại chia cho 3 — hãy kiểm chứng bằng số cụ thể.
+e) Cần bớt ở tổng ít nhất bao nhiêu đơn vị để tổng chia hết cho 3?
+f) Cần thêm vào tổng ít nhất bao nhiêu đơn vị để tổng chia hết cho 3?
 
-### Bài 4. (3 điểm) Đại lượng bất biến: tính chẵn lẻ của tổng
+### Bài 4. (3 điểm) Mua bán có chiết khấu và thuế
 
-Tìm cho ra thứ **không đổi** qua mỗi bước.
+Bài mô phỏng câu hỏi thực tế của đề đánh giá năng lực.
 
-a) Trên bảng viết các số từ 1 đến 10. Tổng của chúng bằng bao nhiêu?
-b) Mỗi bước, xoá hai số bất kì và viết thay vào **tổng** của chúng. Tổng các số trên bảng có thay đổi không?
-c) Sau nhiều bước chỉ còn một số. Số đó bằng bao nhiêu?
-d) Nếu mỗi bước thay hai số bằng **hiệu** của chúng thì tổng giảm đi bao nhiêu?
-e) Vì thế tính chẵn lẻ của tổng có thay đổi không?
-f) Số cuối cùng trong trường hợp thay bằng hiệu là số chẵn hay số lẻ?
-g) Số cuối cùng ấy có thể bằng 0 không?
+a) Một món hàng niêm yết 200 000 đồng, được chiết khấu 5%. Giá sau chiết khấu là bao nhiêu?
+b) Sau đó cộng thêm thuế 5% tính trên giá đã chiết khấu. Giá phải trả là bao nhiêu?
+c) So với giá niêm yết, người mua trả nhiều hơn hay ít hơn, chênh bao nhiêu đồng?
+d) Mua 2 món như thế thì phải trả bao nhiêu tiền?
+e) Nếu cửa hàng cộng thuế trước rồi mới chiết khấu thì giá cuối có đổi không?
+f) Chiết khấu 5% nghĩa là còn lại bao nhiêu phần trăm giá niêm yết?
 
-### Bài 5. (3 điểm) Dung dịch và nồng độ phần trăm
+### Bài 5. (3 điểm) Hai lần thay đổi phần trăm liên tiếp
 
-Luôn tách rõ hai đại lượng: lượng chất tan và khối lượng dung dịch.
+Chú ý mỗi lần tính phần trăm trên giá nào.
 
-a) Có 200 g nước muối chứa 20% muối. Trong đó có bao nhiêu gam muối?
-b) Trong đó có bao nhiêu gam nước?
-c) Đổ thêm 200 g nước vào. Khối lượng dung dịch mới là bao nhiêu?
-d) Lượng muối có thay đổi không?
-e) Nồng độ muối của dung dịch mới bằng bao nhiêu phần trăm?
-f) Nếu thay vì đổ nước, ta bỏ thêm 25 g muối vào dung dịch ban đầu thì nồng độ mới bằng bao nhiêu phần trăm?
+a) Một món hàng giá 1 000 000 đồng. Lần đầu tăng giá 10%, sau đó lần hai giảm giá 10% (so với giá vừa tăng). Hỏi giá cuối cùng là bao nhiêu và so với giá ban đầu thì tăng hay giảm?
+b) Một món hàng giá 100 000 đồng. Lần đầu tăng giá 50%, sau đó lần hai giảm giá 50% (so với giá vừa tăng). Hỏi giá cuối cùng là bao nhiêu và so với giá ban đầu thì tăng hay giảm?
+c) Một món hàng giá 1 000 000 đồng. Lần đầu tăng giá 10%, sau đó lần hai giảm giá 20% (so với giá vừa tăng). Hỏi giá cuối cùng là bao nhiêu và so với giá ban đầu thì tăng hay giảm?
+d) Một món hàng giá 500 000 đồng. Lần đầu tăng giá 20%, sau đó lần hai giảm giá 50% (so với giá vừa tăng). Hỏi giá cuối cùng là bao nhiêu và so với giá ban đầu thì tăng hay giảm?
 
 ---
 
@@ -344,67 +336,67 @@ f) Nếu thay vì đổ nước, ta bỏ thêm 25 g muối vào dung dịch ban 
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài I.1
-**Đáp số:** a) 3 136 cm² · b) 48 cm · c) 60 cm · d) 112 cm² · e) 72 cm · f) 188 cm · g) 1 521 cm²
-**Hướng giải:** Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích hình chữ nhật = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi ghi đơn vị **cm**, diện tích ghi đơn vị **cm²** — sai đơn vị là mất điểm.
-**Lỗi thường gặp:** Nhầm công thức chu vi với diện tích; quên nhân 2 ở chu vi. Phòng: Vẽ hình và ghi số đo lên hình trước khi tính.
+**Đáp số:** a) 19 cm · b) 52 cm · c) cạnh 21 cm, diện tích 441 cm² · d) 28 cm · e) cạnh 37 cm, diện tích 1 369 cm² · f) 22 cm
+**Hướng giải:** Từ chu vi hình chữ nhật, chia đôi được nửa chu vi (chính là dài + rộng), rồi trừ đi chiều đã biết. Từ diện tích, chia cho một chiều được chiều kia. Từ chu vi hình vuông, chia 4 được cạnh.
+**Nhãn tư duy:** TD3, TD2. Điểm chốt: Chia chu vi cho **2** ra nửa chu vi — bước trung gian không được bỏ.
+**Lỗi thường gặp:** Trừ thẳng chiều dài khỏi chu vi mà chưa chia đôi. Phòng: Viết dòng “Nửa chu vi = …” trước khi trừ.
 
 ### Bài I.2
-**Đáp số:** a) số lớn 299, số bé 209 · b) số lớn 1 004, số bé 910 · c) số lớn 227, số bé 119 · d) số lớn 382, số bé 194 · e) số lớn 44, số bé 34 · f) số lớn 164, số bé 90
+**Đáp số:** a) số lớn 264, số bé 222 · b) số lớn 1 183, số bé 769 · c) số lớn 614, số bé 474 · d) số lớn 955, số bé 571 · e) số lớn 126, số bé 106
 **Hướng giải:** Số lớn = (tổng + hiệu) : 2. Số bé = (tổng − hiệu) : 2. Cách hiểu: vẽ hai đoạn thẳng, đoạn dài hơn phần hiệu; bớt phần hiệu đi thì hai đoạn bằng nhau, mỗi đoạn là số bé.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng hiệu ra **số lớn**, trừ hiệu ra **số bé** — nhớ đúng chiều.
 **Lỗi thường gặp:** Lấy (tổng + hiệu) : 2 rồi gọi đó là số bé. Phòng: Vẽ sơ đồ đoạn thẳng trước, đoạn dài hơn luôn là số lớn.
 
 ### Bài I.3
-**Đáp số:** a) 513 000 · b) 267 080 · c) 178 510 · d) 166 300 · e) 538 400 · f) 762 000 · g) 99 790
-**Hướng giải:** Nhìn chữ số ở hàng **liền sau** hàng cần làm tròn: nếu chữ số đó bé hơn 5 thì giữ nguyên hàng làm tròn và thay các chữ số sau bằng 0; nếu từ 5 trở lên thì tăng hàng làm tròn thêm 1 rồi mới thay 0.
-**Nhãn tư duy:** TD1, TD5. Điểm chốt: Chỉ xét **một** chữ số liền sau, không cộng dồn cả phần đuôi.
-**Lỗi thường gặp:** Nhìn nhầm sang chữ số ở hàng cần làm tròn thay vì hàng liền sau nó. Phòng: Gạch một nét ngăn ngay sau hàng cần làm tròn rồi mới quyết định.
+**Đáp số:** a) chữ số 3, giá trị 300 000 · b) chữ số 1, giá trị 10 000 · c) chữ số 1, giá trị 1 000 · d) chữ số 0, giá trị 0 · e) chữ số 9, giá trị 9
+**Hướng giải:** Đếm hàng từ phải sang trái: đơn vị – chục – trăm – nghìn – chục nghìn – trăm nghìn – triệu. Giá trị của một chữ số bằng chính chữ số đó nhân với giá trị của hàng nó đứng.
+**Nhãn tư duy:** TD1. Điểm chốt: Phân biệt **chữ số** (một kí hiệu) với **giá trị** của chữ số (chữ số nhân giá trị hàng).
+**Lỗi thường gặp:** Đếm hàng từ trái sang phải nên lệch hàng. Phòng: Luôn viết số ra nháp rồi đánh dấu hàng đơn vị trước, đi ngược về trái.
 
 ### Bài I.4
-**Đáp số:** a) 16 cách · b) 27 cách · c) 8 bạn · d) 27 cách · e) 11 cách
-**Hướng giải:** Chọn **một trong hai nhóm rời nhau** thì cộng. Chọn **mỗi nhóm một phần tử** thì nhân. Khi hai nhóm có phần tử chung, số phần tử thuộc ít nhất một nhóm bằng tổng hai nhóm trừ đi phần chung (vì phần chung đã bị đếm hai lần).
-**Nhãn tư duy:** TD2, TD6. Điểm chốt: Có phần chung thì phải **trừ đi một lần** phần chung.
-**Lỗi thường gặp:** Cộng thẳng hai nhóm khi chúng có phần tử chung. Phòng: Vẽ hai vòng tròn giao nhau, ghi số vào từng miền.
+**Đáp số:** a) 10 cách · b) 35 cách · c) 40 cách · d) 12 cách · e) 25 cách · f) 6 cách · g) 8 cách
+**Hướng giải:** Nếu công việc gồm hai bước liên tiếp, bước một có a cách, bước hai có b cách, thì cả công việc có a × b cách. Đây là **quy tắc nhân**.
+**Nhãn tư duy:** TD2, TD4. Điểm chốt: Hai việc phải làm **cùng lúc, nối tiếp** thì nhân; chọn một trong hai khả năng rời nhau thì cộng.
+**Lỗi thường gặp:** Cộng số áo với số quần. Phòng: Tự hỏi: chọn xong áo đã đủ một bộ chưa? Chưa đủ thì phải nhân.
 
 ### Bài I.5
-**Đáp số:** a) 2 336 · b) 2 072 · c) 3 256 · d) 182 · e) 4 011 · f) 1 410 · g) 3 420 · h) 293
-**Hướng giải:** Trong biểu thức không có dấu ngoặc: nhân và chia làm trước, cộng và trừ làm sau; cùng mức thì làm từ trái sang phải. Có dấu ngoặc thì làm trong ngoặc trước.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Dấu ngoặc **đảo ngược** thứ tự ưu tiên — nhìn ngoặc trước khi tính.
-**Lỗi thường gặp:** Cộng trước nhân khi biểu thức không có ngoặc. Phòng: Gạch chân phép nhân, phép chia trước khi bắt đầu tính.
+**Đáp số:** a) 331 030 · b) 37 994 840 · c) 357 898 · d) 1 013 427 · e) 709 654 · f) 444 753
+**Hướng giải:** Cộng, trừ thì viết thẳng hàng đơn vị. Nhân thì viết các tích riêng lùi đúng cột rồi cộng. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0.
+**Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương.
+**Lỗi thường gặp:** Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
 
 ### Bài II.1
-**Đáp số:** a) 13 quyển · b) 23 quyển · c) 14 quyển · d) 19 quyển · e) 28 quyển · f) 1 633 nghìn đồng
-**Hướng giải:** Số vở tăng bao nhiêu lần thì số tiền tăng bấy nhiêu lần. Có hai cách: rút về đơn vị (tìm giá một quyển rồi nhân) hoặc dùng tỉ số (số vở mới gấp mấy lần số vở cũ thì tiền cũng gấp bấy nhiêu lần).
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Hai đại lượng **cùng tăng, cùng giảm** thì tỉ lệ thuận.
-**Lỗi thường gặp:** Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch. Phòng: Tự hỏi: mua nhiều hơn thì trả nhiều hơn hay ít hơn?
+**Đáp số:** a) 40% · b) 180 000 đồng · c) 120 000 đồng · d) 400 000 đồng · e) 20% · f) 500 000 đồng
+**Hướng giải:** Giá gốc luôn ứng với 100%. Giảm p% thì giá mới ứng với (100 − p)%; tăng p% thì ứng với (100 + p)%. Lãi tính theo **giá mua**.
+**Nhãn tư duy:** TD2, TD6. Điểm chốt: Phần trăm lãi tính theo **giá mua**, không theo giá bán.
+**Lỗi thường gặp:** Chia tiền lãi cho giá bán nên ra tỉ lệ nhỏ hơn thực tế. Phòng: Viết dòng đầu tiên: “Giá mua = 100%”.
 
 ### Bài II.2
-**Đáp số:** a) có · b) có · c) có · d) có
-**Hướng giải:** Nếu hai số cùng chia hết cho một số thì tổng và hiệu của chúng cũng chia hết cho số đó. Nếu một số chia hết còn số kia dư r thì tổng cũng dư đúng r.
-**Nhãn tư duy:** TD2, TD5. Điểm chốt: Xét **số dư** của từng số hạng là đủ, không cần cộng ra kết quả.
-**Lỗi thường gặp:** Cộng hai số ra rồi mới chia — mất thời gian và dễ sai tính. Phòng: Ghi số dư của từng số hạng ngay bên dưới nó.
+**Đáp số:** a) 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 · b) 2, 5, 8 · c) 8 · d) không có chữ số nào
+**Hướng giải:** Xét dấu hiệu chia hết ứng với số chia, rồi thử lần lượt 10 chữ số từ 0 đến 9. Nếu dấu * đứng ở hàng cao nhất thì loại chữ số 0.
+**Nhãn tư duy:** TD2, TD5. Điểm chốt: Phải tìm **tất cả** chữ số thoả mãn, không dừng ở chữ số đầu tiên tìm được.
+**Lỗi thường gặp:** Chỉ nêu một đáp số, hoặc nhận cả chữ số 0 ở hàng cao nhất. Phòng: Liệt kê đủ 10 chữ số ra nháp rồi gạch dần chữ số không đạt.
 
 ### Bài II.3
-**Đáp số:** a) 21 · b) 32 · c) 24 · d) 26 · e) 7 · f) 31
-**Hướng giải:** Tính **số khoảng** trước: độ dài chia khoảng cách. Rồi chọn công thức theo trường hợp — trồng cả hai đầu thì cộng 1, một đầu thì bằng, không đầu nào thì trừ 1, khép kín thì bằng, cưa thành đoạn thì trừ 1.
-**Nhãn tư duy:** TD3, TD6. Điểm chốt: Năm trường hợp cho **năm đáp số khác nhau** với cùng một số khoảng.
-**Lỗi thường gặp:** Máy móc cộng 1 cho mọi trường hợp. Phòng: Vẽ hình ba khoảng, đếm tay rồi mới áp dụng cho số lớn.
+**Đáp số:** a) < · b) > · c) > · d) < · e) < · f) <
+**Hướng giải:** Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
+**Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
+**Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.
 
 ### Bài II.4
-**Đáp số:** a) 945 cm² · b) 231 cm² · c) 266 cm² · d) 42 cm² · e) 98 cm²
-**Hướng giải:** Hình bình hành: S = đáy × chiều cao. Hình thoi: S = tích hai đường chéo chia 2. Hình tam giác: S = đáy × chiều cao chia 2.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Hình bình hành **không** chia 2; hình tam giác và hình thoi **có** chia 2.
-**Lỗi thường gặp:** Chia 2 cho hình bình hành, hoặc quên chia 2 cho hình tam giác. Phòng: Nhớ theo cặp: bình hành ↔ chữ nhật (không chia); tam giác ↔ nửa bình hành (chia 2).
+**Đáp số:** a) 403 cm² · b) 152 cm² · c) 294 cm² · d) 225 cm² · e) 87 cm²
+**Hướng giải:** Diện tích hình thang = (đáy lớn + đáy bé) × chiều cao : 2. Cách nhớ: ghép hai hình thang bằng nhau thành một hình bình hành có đáy bằng tổng hai đáy, nên phải chia đôi.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng **hai đáy** trước rồi mới nhân chiều cao và chia 2.
+**Lỗi thường gặp:** Nhân riêng từng đáy với chiều cao rồi cộng, quên chia 2. Phòng: Viết công thức đầy đủ ra trước khi thay số.
 
 ### Bài II.5
-**Đáp số:** a) kho B: 329 kg, xưởng: 177 kg · b) tổ Một: 344 cây, nhóm Sao Mai: 202 cây · c) 5B: 389 quyển, 4B: 211 quyển · d) 4B: 242 quyển, 5B: 142 quyển
-**Hướng giải:** Đọc đề, xác định đâu là **tổng**, đâu là **hiệu**. Vẽ sơ đồ hai đoạn thẳng. Số lớn = (tổng + hiệu) : 2; số bé = tổng − số lớn.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Cụm “có tất cả” cho **tổng**; cụm “nhiều hơn” cho **hiệu**.
-**Lỗi thường gặp:** Nhầm hiệu thành tổng khi đề diễn đạt vòng vo. Phòng: Ghi riêng ra hai dòng: Tổng = … ; Hiệu = … trước khi tính.
+**Đáp số:** a) 2 809 · b) 1 467 · c) 33 516 · d) 15 415 · e) 3 630 · f) 3 239
+**Hướng giải:** Chỉ cộng, trừ được các số đo **cùng đơn vị**. Bước đầu tiên luôn là đổi tất cả về đơn vị mà đề yêu cầu ở kết quả, sau đó tính như với số tự nhiên rồi ghi kèm đơn vị.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của **kết quả** quyết định ta đổi về đơn vị nào.
+**Lỗi thường gặp:** Cộng số mét với số xăng-ti-mét mà chưa đổi. Phòng: Gạch chân đơn vị ở chỗ chấm rồi đổi mọi số hạng về đơn vị đó.
 
 ### Bài III.1
-**Đáp số:** a) 221 · b) 140 · c) 391 · d) 116 · e) 169
+**Đáp số:** a) 145 · b) 149 · c) 221 · d) 140 · e) 391 · f) 116
 **Hướng giải:** Với một số **lẻ** các số tự nhiên liên tiếp, số ở giữa chính là trung bình cộng: số giữa = tổng : số lượng. Số bé nhất bằng số giữa trừ đi một nửa số lượng còn lại.
 **Nhãn tư duy:** TD3, TD4. Điểm chốt: Với số lượng lẻ thì **số giữa = tổng : số lượng** — đó là chìa khoá.
 **Lỗi thường gặp:** Lấy tổng chia cho số lượng rồi nhận luôn kết quả là số bé nhất. Phòng: Vẽ dãy số ra, đánh dấu vị trí số giữa trước khi lùi về số đầu.
@@ -416,92 +408,92 @@ f) Nếu thay vì đổ nước, ta bỏ thêm 25 g muối vào dung dịch ban 
 **Lỗi thường gặp:** Chia đôi như tìm kiếm thông thường nên cần nhiều lần cân hơn mức cần thiết. Phòng: Nhớ ba kết quả: nghiêng trái, nghiêng phải, thăng bằng.
 
 ### Bài III.3
-**Đáp số:** a) trang trại: 22 kg, cửa hàng: 110 kg · b) thư viện: 159 kg, kho B: 212 kg · c) trang trại: 297 kg, xưởng: 396 kg · d) xưởng: 180 kg, kho A: 315 kg · e) thư viện: 25 kg, xưởng: 50 kg
-**Hướng giải:** Hiệu số phần = số phần lớn − số phần bé. Giá trị một phần = hiệu : hiệu số phần. Sau đó nhân với số phần của từng đại lượng.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Chia cho **hiệu số phần**, không phải tổng số phần.
-**Lỗi thường gặp:** Dùng nhầm công thức của tổng – tỉ cho bài hiệu – tỉ. Phòng: Đọc kĩ: đề cho “tổng” hay cho “nhiều hơn”? Ghi rõ ra trước khi vẽ.
+**Đáp số:** a) 40 kg · b) 174 kg · c) 297 kg · d) 192 kg · e) 480 kg
+**Hướng giải:** Bước 1: tính số gạo bán ngày đầu bằng cách lấy tổng nhân với phân số. Bước 2: tính số gạo **còn lại** sau ngày đầu. Bước 3: phân số của ngày thứ hai tính trên **số còn lại**, không phải trên tổng ban đầu.
+**Nhãn tư duy:** TD2, TD3. Điểm chốt: Cụm “số gạo **còn lại**” đổi hẳn số bị nhân ở bước hai.
+**Lỗi thường gặp:** Lấy cả hai phân số nhân với tổng ban đầu. Phòng: Sau mỗi bước, viết rõ “còn lại … kg” rồi mới sang bước sau.
 
 ### Bài III.4
-**Đáp số:** a) 72 kg · b) thư viện: 56 kg, cửa hàng: 112 kg · c) cửa hàng: 40 kg, kho A: 100 kg · d) 95 kg · e) cửa hàng: 18 kg, kho B: 36 kg · f) hợp tác xã: 30 kg, thư viện: 60 kg
+**Đáp số:** a) 95 kg · b) xưởng: 160 kg, kho B: 240 kg · c) hợp tác xã: 84 kg, kho A: 112 kg · d) xưởng: 54 kg, cửa hàng: 72 kg · e) 112 kg · f) kho B: 8 kg, cửa hàng: 24 kg
 **Hướng giải:** Đề không cho thẳng tổng, hiệu hay tỉ số mà mô tả vòng. Bước bắt buộc đầu tiên: **dịch câu mô tả thành một con số** rồi mới vẽ sơ đồ và giải như bài chuẩn.
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Dịch xong dữ kiện ẩn thì bài trở lại **đúng dạng chuẩn**.
 **Lỗi thường gặp:** Lao vào tính khi chưa xác định được tổng, hiệu hay tỉ số. Phòng: Viết ba dòng trước khi tính: Tổng = … ; Hiệu = … ; Tỉ số = … ; dòng nào chưa biết thì để trống và đi tìm.
 
 ### Bài III.5
-**Đáp số:** a) 22 cây · b) 9 cây · c) 16 cây · d) 12 cây · e) 25 cây · f) 5 cây
-**Hướng giải:** Muốn tìm phân số của một số, ta lấy số đó nhân với phân số. Cách hiểu: chia số đó thành số phần bằng mẫu số, rồi lấy số phần bằng tử số.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Phân số tính trên **số nào** — đọc kĩ cụm “… của …”.
-**Lỗi thường gặp:** Nhân phân số với đại lượng khác, không phải đại lượng đề chỉ định. Phòng: Gạch chân cụm “bằng … số cây của …” để xác định số bị nhân.
+**Đáp số:** a) 17 giờ 39 phút · b) 9 giờ 24 phút · c) 9 giờ 2 phút · d) 14 giờ 50 phút
+**Hướng giải:** Đổi cả giờ khởi hành lẫn thời gian đi về **phút**, cộng lại, rồi đổi kết quả ngược lại thành giờ và phút. Cách này tránh được lỗi nhớ khi phần phút vượt 60.
+**Nhãn tư duy:** TD3, TD2. Điểm chốt: Đổi hết về phút rồi mới cộng — an toàn hơn cộng trực tiếp.
+**Lỗi thường gặp:** Cộng phần phút thành hơn 60 mà quên đổi thành giờ. Phòng: Kiểm tra phần phút của đáp số phải bé hơn 60.
 
 ### Bài IV.1
-**Đáp số:** a) 18 · b) 14 · c) 10 · d) 0 · e) 652 và 205 · f) 857
-**Hướng giải:** BẪY — Chữ số 0 ở hàng trăm. Đếm theo từng bước có ràng buộc: với điều kiện về chữ số tận cùng (chẵn, chia hết cho 5) thì chọn **chữ số tận cùng trước**, rồi mới chọn các hàng còn lại. Nhớ loại các số có chữ số 0 ở hàng trăm.
-**Nhãn tư duy:** TD4, TD6. Điểm chốt: Có ràng buộc ở hàng nào thì **chọn hàng đó trước**.
-**Lỗi thường gặp:** Chọn hàng trăm trước rồi mới xét điều kiện tận cùng, dẫn đến đếm trùng hoặc sót. Phòng: Viết rõ thứ tự chọn hàng trước khi nhân các số cách.
-**Gợi ý 3 tầng:** (1) Điều kiện của đề ràng buộc hàng nào? — (2) Chọn hàng bị ràng buộc trước tiên. — (3) Nhớ loại trường hợp chữ số 0 đứng ở hàng trăm.
+**Đáp số:** a) Phúc học hát; Minh học đàn; Tuấn học múa · b) Dũng học vẽ; Trang học bơi; Hùng học cờ vua · c) Quân học tiếng Anh; Đức học tin học; Khánh học mĩ thuật · d) Hùng học đàn; Đức học múa; Bình học hát
+**Hướng giải:** BẪY — Đánh dấu đúng mà quên gạch phần còn lại. Mỗi dòng một người, mỗi cột một khả năng. Đánh × cho điều chắc chắn sai. Dòng nào chỉ còn một ô trống thì ô ấy là ✓ — và ngay sau đó phải gạch × cho cả cột chứa ô ấy.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Đặt được một ✓ thì **cả dòng và cả cột** còn lại đều thành ×. Bỏ bước gạch cột là chỗ bài bị tắc giữa chừng.
+**Lỗi thường gặp:** Đánh ✓ rồi đi tiếp luôn, không gạch × cho phần còn lại của cột. Phòng: Sau mỗi lần đặt ✓, dừng lại gạch đủ dòng và cột rồi mới đọc manh mối kế.
+**Gợi ý 3 tầng:** (1) Kẻ bảng ba dòng ba cột trước đã. — (2) Manh mối nào cho biết chắc chắn một ô là sai? — (3) Dòng nào chỉ còn một ô trống thì ô ấy chính là đáp án của dòng ấy.
 
 ### Bài IV.2
-**Đáp số:** a) 74 m · b) 160 m² · c) 18,5 giây · d) 25 m² · e) 10 m · f) 370 m² · g) 210 m²
-**Hướng giải:** BẪY — Phần tăng gồm ba mảnh. Đi một vòng quanh hình là đi hết **chu vi**. Tăng một chiều thì phần diện tích dôi ra là một hình chữ nhật có kích thước bằng phần tăng nhân chiều còn lại. Tăng cả hai chiều thì phần dôi gồm **ba mảnh**.
-**Nhãn tư duy:** TD3, TD6. Điểm chốt: Tăng cả hai chiều thì phần dôi ra **không phải** tích của hai phần tăng.
-**Lỗi thường gặp:** Nhân hai lượng tăng với nhau rồi coi đó là diện tích tăng thêm. Phòng: Vẽ hình cũ nằm trong hình mới rồi tô phần dôi ra.
-**Gợi ý 3 tầng:** (1) Đi một vòng là đi hết đại lượng nào? — (2) Phần diện tích dôi ra có hình dạng gì? — (3) Tăng cả hai chiều thì phần dôi gồm mấy mảnh?
+**Đáp số:** a) 72 cm² · b) 1 224 cm² · c) 56 cm² · d) 2 lần · e) 2 lần · f) 33 cm²
+**Hướng giải:** BẪY — Phần tăng gồm ba mảnh. Tăng một chiều thêm k đơn vị thì diện tích tăng thêm đúng một hình chữ nhật có kích thước k × chiều còn lại. Tăng cả hai chiều thì phần tăng gồm ba mảnh: hai dải và một hình vuông ở góc — nên **không** bằng tích của hai phần tăng.
+**Nhãn tư duy:** TD3, TD6. Điểm chốt: Tăng cả hai chiều thì phần tăng gồm **ba mảnh**, không phải một.
+**Lỗi thường gặp:** Nhân hai lượng tăng với nhau rồi coi đó là phần diện tích tăng thêm. Phòng: Vẽ hình chữ nhật cũ nằm trong hình mới, tô phần dôi ra.
+**Gợi ý 3 tầng:** (1) Vẽ hình cũ và hình mới chồng lên nhau. — (2) Phần dôi ra gồm mấy mảnh? — (3) Tính diện tích từng mảnh rồi cộng.
 
 ### Bài IV.3
-**Đáp số:** a) 10 quyển · b) 6 quyển · c) 85 quyển · d) 104 quyển · e) 27 quyển
-**Hướng giải:** BẪY — Hiệu thay đổi gấp đôi số chuyển. Khi chuyển k đơn vị từ bên nhiều sang bên ít, bên nhiều giảm k còn bên ít tăng k, nên hiệu giảm đi **2k**. Muốn hai bên bằng nhau thì hiệu phải về 0, vậy k = hiệu : 2.
-**Nhãn tư duy:** TD3, TD6. Điểm chốt: Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển.
-**Lỗi thường gặp:** Chuyển đúng bằng hiệu hai bên nên bên ít lại thành bên nhiều. Phòng: Thử lại: sau khi chuyển, cộng trừ ra hai số rồi so xem có bằng nhau không.
-**Gợi ý 3 tầng:** (1) Hiện tại hai bên hơn kém nhau bao nhiêu? — (2) Chuyển 1 quyển thì hiệu giảm mấy quyển? — (3) Muốn hiệu về 0 thì phải chuyển bao nhiêu?
+**Đáp số:** a) 40 phần 7 giờ · b) 2 giờ 40 phút · c) 1 giờ 36 phút · d) 12 phần 7 giờ · e) 12 phần 7 giờ · f) 60 phần 17 giờ
+**Hướng giải:** BẪY — Cộng thời gian thay vì cộng năng suất. Coi cả công việc là 1. Người làm xong trong a giờ thì mỗi giờ làm được 1 phần a công việc. Cùng làm thì mỗi giờ cả hai làm được tổng hai phân số đó. Thời gian làm chung = 1 chia cho năng suất chung.
+**Nhãn tư duy:** TD3, TD6. Điểm chốt: Cộng **năng suất mỗi giờ**, tuyệt đối không cộng thời gian.
+**Lỗi thường gặp:** Cộng hai khoảng thời gian rồi chia đôi. Phòng: Luôn viết dòng “Mỗi giờ người thứ nhất làm được … công việc” trước.
+**Gợi ý 3 tầng:** (1) Mỗi giờ người thứ nhất làm được mấy phần công việc? — (2) Mỗi giờ cả hai làm được mấy phần? — (3) Lấy 1 chia cho phần làm được trong một giờ.
 
 ### Bài IV.4
-**Đáp số:** a) 51 · b) 37 · c) 5 · d) 27
-**Hướng giải:** Liệt kê các số thoả điều kiện thứ nhất — chúng lập thành dãy cách đều khoảng cách bằng số chia thứ nhất. Đi dọc dãy đó, thử điều kiện thứ hai, gặp số đầu tiên thoả mãn thì dừng.
-**Nhãn tư duy:** TD2, TD6. Điểm chốt: Chỉ **đi dọc một dãy** rồi thử điều kiện còn lại, không thử tất cả số.
-**Lỗi thường gặp:** Thử từng số từ 1 trở đi nên quá lâu và dễ bỏ sót. Phòng: Viết dãy số thoả điều kiện thứ nhất trước, rồi mới lọc.
-**Gợi ý 3 tầng:** (1) Viết vài số chia cho số thứ nhất dư đúng như đề. — (2) Chúng cách đều nhau bao nhiêu đơn vị? — (3) Đi dọc dãy đó và kiểm tra điều kiện thứ hai.
+**Đáp số:** a) 1 · b) 4 032 · c) 2 ước: 1, 23 · d) 748 · e) 1 · f) 1
+**Hướng giải:** Tìm ước bằng cách thử chia lần lượt từ 1 đến số đó, chỉ cần thử tới căn của số vì các ước đi theo cặp. Ước chung lớn nhất tìm bằng cách liệt kê ước chung rồi chọn số lớn nhất. Bội chung nhỏ nhất bằng tích hai số chia cho ước chung lớn nhất.
+**Nhãn tư duy:** TD2, TD1. Điểm chốt: Các ước luôn đi thành **cặp** nhân với nhau bằng chính số đó.
+**Lỗi thường gặp:** Liệt kê thiếu ước lớn vì chỉ thử vài số nhỏ. Phòng: Cứ tìm được một ước nhỏ thì viết ngay ước lớn đi kèm với nó.
+**Gợi ý 3 tầng:** (1) Thử chia lần lượt cho 1, 2, 3, … — (2) Mỗi ước tìm được đi kèm một ước nữa: số đó chia cho ước vừa tìm. — (3) Dừng lại khi hai ước trong cặp gặp nhau.
 
 ### Bài IV.5
-**Đáp số:** a) 440 · b) 275 · c) 2 925 · d) 2 275 · e) 1 625
-**Hướng giải:** Tất cả các tích đều có chung một thừa số. Đặt thừa số chung ra ngoài, trong ngoặc còn tổng của dãy số tự nhiên liên tiếp — dùng công thức tổng dãy cách đều để tính.
-**Nhãn tư duy:** TD3, TD4. Điểm chốt: Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
-**Lỗi thường gặp:** Nhân từng tích rồi cộng dồn, rất dài và dễ sai. Phòng: Viết lại biểu thức dưới dạng a × (1 + 2 + … + n) trước khi tính.
-**Gợi ý 3 tầng:** (1) Các tích có thừa số nào giống nhau? — (2) Đặt thừa số đó ra ngoài dấu ngoặc. — (3) Tổng trong ngoặc là dãy số cách đều — tính bằng công thức.
+**Đáp số:** a) 17 phần 36 · b) 176 phần 315 · c) 6 · d) 53 phần 12
+**Hướng giải:** Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
+**Nhãn tư duy:** TD3, TD5. Điểm chốt: Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều.
+**Lỗi thường gặp:** Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. Phòng: Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút.
+**Gợi ý 3 tầng:** (1) Biểu thức có dấu ngoặc không? — (2) Có thừa số chung ở hai tích không? — (3) Làm nhân chia trước, cộng trừ sau.
 
 ### Bài V.1
-**Đáp số:** a) < · b) > · c) > · d) < · e) < · f) >
-**Hướng giải:** BẪY — Chiều của phần bù. **Phần bù tới 1:** hai phân số đều thiếu một chút nữa thì bằng 1; phân số nào có phần bù **bé hơn** thì lớn hơn. **Phân số trung gian:** chọn một phân số dễ so (thường là 1 phần 2 hoặc 1 phần 3) rồi so mỗi phân số với nó.
-**Nhãn tư duy:** TD6, TD5. Điểm chốt: Phần bù **bé hơn** nghĩa là phân số **lớn hơn** — dễ nhớ nhầm chiều.
-**Lỗi thường gặp:** So phần bù rồi kết luận cùng chiều với phần bù. Phòng: Nghĩ tới chiếc bánh: thiếu ít hơn thì phần đang có nhiều hơn.
-**Gợi ý 3 tầng:** (1) Mỗi phân số còn thiếu bao nhiêu nữa thì bằng 1? — (2) Phân số nào thiếu ít hơn? — (3) Thiếu ít hơn thì lớn hơn.
+**Đáp số:** a) 254,34 cm² · b) 109,9 cm² · c) 21,5 cm² · d) 141,3 cm² · e) 1 017,36 cm²
+**Hướng giải:** BẪY — Quan hệ giữa bán kính và cạnh. Diện tích phần tô màu = diện tích hình lớn − diện tích hình bị khoét. Bước quan trọng nhất là nhận ra hình lớn và hình bị khoét là những hình nào, và tìm đúng kích thước của chúng từ dữ kiện đề cho.
+**Nhãn tư duy:** TD3, TD6. Điểm chốt: Đọc quan hệ hình học để suy ra kích thước: hình tròn nội tiếp hình vuông thì **đường kính bằng cạnh hình vuông**.
+**Lỗi thường gặp:** Lấy bán kính hình tròn làm cạnh hình vuông. Phòng: Vẽ lại hình, ghi số đo lên hình trước khi tính.
+**Gợi ý 3 tầng:** (1) Phần tô màu là hiệu của những hình nào? — (2) Kích thước của hình lớn suy từ đâu? — (3) Tính từng diện tích rồi trừ.
 
 ### Bài V.2
-**Đáp số:** a) 2 giờ · b) 96 km · c) 60 km · d) 240 000 đồng · e) 192 000 đồng · f) giảm 8 000 đồng · g) 87
-**Hướng giải:** Đề thi thật hay ghép ba mạch trong một bài: chuyển động, phần trăm, tổng – tỉ. Làm tuần tự từng ý, mỗi ý một kết quả, và dùng kết quả ý trước cho ý sau.
-**Nhãn tư duy:** TD3, TD6. Điểm chốt: Ý sau dùng lại kết quả ý trước — **sai một ý là sai dây chuyền**.
-**Lỗi thường gặp:** Ý thứ năm tính phần trăm trên giá ban đầu thay vì trên giá vừa tăng. Phòng: Sau mỗi ý, khoanh tròn kết quả để ý sau lấy đúng số ấy.
-**Gợi ý 3 tầng:** (1) Mỗi giờ hai xe lại gần nhau bao nhiêu ki-lô-mét? — (2) Lần giảm giá tính phần trăm trên giá nào? — (3) Với tổng – tỉ, hiệu bằng hiệu số phần nhân giá trị một phần.
+**Đáp số:** a) 80 · b) 71 · c) 89 · d) vì ba số cách đều nên số ở giữa là trung bình cộng · e) 84 · f) 140 · g) 56
+**Hướng giải:** Với một số lẻ các số cách đều, số ở giữa chính là trung bình cộng — tìm nó trước rồi suy ra hai số kia. Phần sau là bài tổng – tỉ chuẩn: tổng số phần rồi giá trị một phần.
+**Nhãn tư duy:** TD4, TD3. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
+**Lỗi thường gặp:** Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. Phòng: Nhìn ra “cách đều” trước khi đặt bút.
+**Gợi ý 3 tầng:** (1) Ba số này có cách đều nhau không? — (2) Với ba số cách đều, số nào bằng trung bình cộng? — (3) Tìm số giữa trước rồi lùi và tiến ra hai số kia.
 
 ### Bài V.3
-**Đáp số:** a) 3 dư 7 · b) 8 dư 2 · c) 5 dư 9 · d) 30 · e) 30 · f) 4 dư 3
-**Hướng giải:** Viết số có hai chữ số là a × 10 + b, tổng hai chữ số là a + b. So sánh hai biểu thức để tìm quan hệ; chú ý a chạy từ 1 đến 9 và b chạy từ 0 đến 9 nên số trường hợp là hữu hạn, có thể lập bảng.
-**Nhãn tư duy:** TD3, TD6. Điểm chốt: Khi ẩn chỉ nhận hữu hạn giá trị, **lập bảng** là phương pháp chắc chắn nhất.
-**Lỗi thường gặp:** Chia bừa mà không kiểm tra điều kiện chia hết nên nhận đáp số không nguyên. Phòng: Kiểm tra lại đáp số bằng cách thay ngược vào đề.
-**Gợi ý 3 tầng:** (1) Đặt số đó là a × 10 + b. — (2) Tổng hai chữ số là a + b — viết cả hai biểu thức ra cạnh nhau. — (3) Lập bảng a từ 1 đến 9 rồi thử.
+**Đáp số:** a) 0 · b) 2 547 · c) có · d) tổng các số dư là 6, chia 3 dư 0 · e) 0 · f) 0
+**Hướng giải:** Số dư của một tổng khi chia cho d bằng số dư của tổng các số dư. Nhờ đó, muốn biết tổng có chia hết cho d không thì chỉ cần cộng các số dư, không cần cộng các số.
+**Nhãn tư duy:** TD2, TD6. Điểm chốt: Làm việc với **số dư** thay vì với số — đây là kỹ thuật rút gọn mạnh nhất.
+**Lỗi thường gặp:** Cộng hết cả dãy rồi mới chia, mất thời gian và dễ sai. Phòng: Ghi số dư của từng số ngay dưới số đó rồi cộng dòng số dư.
+**Gợi ý 3 tầng:** (1) Tính số dư của từng số khi chia cho d. — (2) Cộng các số dư lại. — (3) Lấy tổng các số dư chia tiếp cho d.
 
 ### Bài V.4
-**Đáp số:** a) 55 · b) không thay đổi · c) 55 · d) giảm đi 2 lần số bé — luôn là một số chẵn · e) không thay đổi · f) lẻ · g) không
-**Hướng giải:** Chìa khoá là tìm một đại lượng **không đổi** qua mỗi bước. Ở đây là tính chẵn lẻ của tổng: mỗi bước tổng giảm đi một số chẵn nên tính chẵn lẻ giữ nguyên từ đầu đến cuối.
-**Nhãn tư duy:** TD6, TD2. Điểm chốt: Tìm đại lượng **bất biến** rồi so trạng thái đầu với trạng thái cuối.
-**Lỗi thường gặp:** Thử vài trường hợp rồi kết luận, không chứng minh được cho mọi cách làm. Phòng: Sau khi đoán, kiểm tra: đại lượng đó đổi thế nào sau **một** bước?
-**Gợi ý 3 tầng:** (1) Sau mỗi bước, tổng các số trên bảng đổi bao nhiêu? — (2) Lượng thay đổi ấy là số chẵn hay số lẻ? — (3) Vậy tính chẵn lẻ của tổng có đổi không?
+**Đáp số:** a) 190 000 đồng · b) 199 500 đồng · c) ít hơn 500 đồng · d) 399 000 đồng · e) không đổi, vì nhân hai lần theo cùng hai tỉ lệ · f) 95%
+**Hướng giải:** Mỗi lần tính phần trăm phải xác định lại **mốc 100%**. Chiết khấu tính trên giá niêm yết; thuế tính trên giá đã chiết khấu. Vì cả hai đều là phép nhân với một tỉ lệ nên đổi thứ tự không làm đổi kết quả.
+**Nhãn tư duy:** TD6, TD2. Điểm chốt: Mốc 100% **đổi sau mỗi bước** — đây là bẫy hay gặp nhất.
+**Lỗi thường gặp:** Tính thuế trên giá niêm yết thay vì trên giá đã chiết khấu. Phòng: Viết ba dòng: giá niêm yết, giá sau chiết khấu, giá phải trả.
+**Gợi ý 3 tầng:** (1) Chiết khấu tính trên giá nào? — (2) Sau chiết khấu còn bao nhiêu phần trăm? — (3) Thuế tính trên giá nào?
 
 ### Bài V.5
-**Đáp số:** a) 40 g · b) 160 g · c) 400 g · d) không đổi, vẫn là 40 g · e) 10% · f) 28,89%
-**Hướng giải:** Nồng độ phần trăm bằng lượng chất tan chia khối lượng dung dịch rồi nhân 100. Đổ thêm nước thì tử số giữ nguyên, mẫu số tăng, nên nồng độ giảm. Bỏ thêm muối thì **cả tử và mẫu cùng tăng**.
-**Nhãn tư duy:** TD6, TD3. Điểm chốt: Đổ thêm nước: **lượng muối không đổi**. Bỏ thêm muối: cả hai cùng đổi.
-**Lỗi thường gặp:** Khi bỏ thêm muối thì chỉ cộng vào tử số mà quên cộng vào mẫu số. Phòng: Kẻ bảng hai dòng: lượng muối và khối lượng dung dịch, cập nhật sau mỗi thao tác.
-**Gợi ý 3 tầng:** (1) Lượng muối ban đầu bằng bao nhiêu? — (2) Đổ thêm nước thì lượng muối có đổi không? — (3) Nồng độ = lượng muối chia khối lượng dung dịch rồi nhân 100.
+**Đáp số:** a) 990 000 đồng, giảm 10 000 đồng · b) 75 000 đồng, giảm 25 000 đồng · c) 880 000 đồng, giảm 120 000 đồng · d) 300 000 đồng, giảm 200 000 đồng
+**Hướng giải:** Lần thứ hai tính phần trăm trên **giá mới** chứ không phải giá ban đầu. Vì vậy tăng p% rồi giảm p% **không** đưa về giá cũ. Phải tính lần lượt từng bước, ghi rõ giá sau mỗi lần.
+**Nhãn tư duy:** TD6, TD2. Điểm chốt: Mốc 100% **thay đổi** sau mỗi lần — đây là bẫy kinh điển.
+**Lỗi thường gặp:** Cộng trừ hai số phần trăm rồi áp một lần vào giá ban đầu. Phòng: Viết ba dòng: giá ban đầu, giá sau lần 1, giá sau lần 2.
+**Gợi ý 3 tầng:** (1) Giá sau lần tăng thứ nhất là bao nhiêu? — (2) Lần giảm thứ hai tính phần trăm trên giá nào? — (3) So sánh giá cuối với giá ban đầu.
 
 ---
 

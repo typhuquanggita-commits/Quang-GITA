@@ -145,12 +145,10 @@ e) 4 ngày đầu tuần một cửa hàng bán được lần lượt 212, 198,
 
 Giải bằng cách quy về tổng số ngày công.
 
-a) 3 người làm xong một công việc trong 12 ngày. Hỏi 6 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
-b) 8 người làm xong một công việc trong 3 ngày. Hỏi 12 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
-c) 2 người làm xong một công việc trong 36 ngày. Hỏi 6 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
-d) 2 người làm xong một công việc trong 30 ngày. Hỏi 4 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
-e) 6 người làm xong một công việc trong 10 ngày. Hỏi 10 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
-f) 4 người làm xong một công việc trong 9 ngày. Hỏi 2 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
+a) 4 người làm xong một công việc trong 6 ngày. Hỏi 2 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
+b) 4 người làm xong một công việc trong 15 ngày. Hỏi 3 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
+c) 2 người làm xong một công việc trong 24 ngày. Hỏi 6 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
+d) 6 người làm xong một công việc trong 10 ngày. Hỏi 2 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
 
 ### Bài 3. (5 điểm) Bài toán tổng – hiệu có lời văn
 
@@ -241,55 +239,57 @@ e) Dãy 17, 27, 37, …, 107 có bao nhiêu số hạng?
 
 ## PHẦN D — DẠNG 5 – DẠNG 6 VÀ DẠNG PHỐI HỢP · Mức M3 — Vận dụng · 20 phút · 20 điểm
 
-### Bài 1. (4 điểm) Tìm hai số khi biết tổng và tỉ số
+### Bài 1. (4 điểm) Tổng của các số tự nhiên liên tiếp
+
+Với mỗi ý, tìm số theo yêu cầu.
+
+a) Tổng của 9 số tự nhiên liên tiếp bằng 2 610. Tìm số bé nhất trong 9 số đó.
+b) Tổng của 9 số tự nhiên liên tiếp bằng 3 069. Tìm số bé nhất trong 9 số đó.
+c) Tổng của 3 số tự nhiên liên tiếp bằng 1 068. Tìm số bé nhất trong 3 số đó.
+d) Tổng của 9 số tự nhiên liên tiếp bằng 639. Tìm số bé nhất trong 9 số đó.
+e) Tổng của 5 số tự nhiên liên tiếp bằng 1 165. Tìm số bé nhất trong 5 số đó.
+f) Tổng của 9 số tự nhiên liên tiếp bằng 612. Tìm số bé nhất trong 9 số đó.
+
+### Bài 2. (4 điểm) Tìm hai số khi biết hiệu và tỉ số
 
 Vẽ sơ đồ đoạn thẳng rồi giải.
 
-a) Đội Một và đội Hai trồng được tất cả 300 cây. Số cây của đội Một bằng 1 phần 4 số cây của đội Hai. Mỗi tổ trồng được bao nhiêu cây?
-b) Đội Hai và nhóm Sao Mai trồng được tất cả 819 cây. Số cây của đội Hai bằng 4 phần 5 số cây của nhóm Sao Mai. Mỗi tổ trồng được bao nhiêu cây?
-c) Nhóm Sao Mai và tổ Một trồng được tất cả 850 cây. Số cây của nhóm Sao Mai bằng 2 phần 3 số cây của tổ Một. Mỗi tổ trồng được bao nhiêu cây?
-d) Nhóm Sao Mai và tổ Hai trồng được tất cả 180 cây. Số cây của nhóm Sao Mai bằng 2 phần 3 số cây của tổ Hai. Mỗi tổ trồng được bao nhiêu cây?
+a) Xưởng chứa nhiều hơn kho A 237 kg muối. Số muối ở kho A bằng 2 phần 5 số muối ở xưởng. Mỗi nơi chứa bao nhiêu kg?
+b) Cửa hàng chứa nhiều hơn trang trại 59 kg đường. Số đường ở trang trại bằng 4 phần 5 số đường ở cửa hàng. Mỗi nơi chứa bao nhiêu kg?
+c) Kho B chứa nhiều hơn cửa hàng 90 kg thóc. Số thóc ở cửa hàng bằng 1 phần 3 số thóc ở kho B. Mỗi nơi chứa bao nhiêu kg?
+d) Trang trại chứa nhiều hơn thư viện 112 kg gạo. Số gạo ở thư viện bằng 5 phần 6 số gạo ở trang trại. Mỗi nơi chứa bao nhiêu kg?
+e) Kho A chứa nhiều hơn trang trại 168 kg muối. Số muối ở trang trại bằng 1 phần 7 số muối ở kho A. Mỗi nơi chứa bao nhiêu kg?
+f) Trang trại chứa nhiều hơn hợp tác xã 315 kg xi măng. Số xi măng ở hợp tác xã bằng 1 phần 6 số xi măng ở trang trại. Mỗi nơi chứa bao nhiêu kg?
 
-### Bài 2. (4 điểm) Bài toán về tuổi
+### Bài 3. (4 điểm) Tìm hai số khi biết tổng và tỉ số
 
-Chú ý điều gì thay đổi và điều gì không đổi theo thời gian.
+Vẽ sơ đồ đoạn thẳng rồi giải.
 
-a) Hiện nay bố 35 tuổi, con 7 tuổi. Cách đây 6 năm, bố hơn con bao nhiêu tuổi?
-b) Hiện nay bố 21 tuổi, con 7 tuổi. Cách đây 2 năm, bố hơn con bao nhiêu tuổi?
-c) Hiện nay bố 60 tuổi, con 12 tuổi. Sau 6 năm nữa, tổng số tuổi hai bố con là bao nhiêu?
-d) Hiện nay bố 28 tuổi, con 7 tuổi. Sau 2 năm nữa, tổng số tuổi hai bố con là bao nhiêu?
-e) Tuổi bố gấp 4 lần tuổi con. Tổng số tuổi của hai bố con là 55 tuổi. Tính tuổi mỗi người.
-
-### Bài 3. (4 điểm) Cấu tạo số có hai chữ số
-
-Trình bày lời giải ngắn gọn cho từng ý.
-
-a) Tìm số có hai chữ số, biết tổng hai chữ số bằng 17 và chữ số hàng đơn vị hơn chữ số hàng chục 1 đơn vị.
-b) Chữ số hàng chục của số 22 gấp mấy lần chữ số hàng đơn vị (nếu chia hết), hoặc hơn bao nhiêu đơn vị?
-c) Số có hai chữ số 20; đổi chỗ hai chữ số ta được số nào? Hiệu của hai số đó bằng bao nhiêu?
-d) Tìm số có hai chữ số, biết tổng hai chữ số bằng 13 và chữ số hàng chục hơn chữ số hàng đơn vị 3 đơn vị.
+a) Nhóm Hoa Phượng và tổ Ba trồng được tất cả 245 cây. Số cây của nhóm Hoa Phượng bằng 1 phần 6 số cây của tổ Ba. Mỗi tổ trồng được bao nhiêu cây?
+b) Nhóm Hoa Phượng và tổ Một trồng được tất cả 1 034 cây. Số cây của nhóm Hoa Phượng bằng 5 phần 6 số cây của tổ Một. Mỗi tổ trồng được bao nhiêu cây?
+c) Tổ Một và nhóm Hoa Phượng trồng được tất cả 189 cây. Số cây của tổ Một bằng 1 phần 2 số cây của nhóm Hoa Phượng. Mỗi tổ trồng được bao nhiêu cây?
+d) Tổ Hai và đội Một trồng được tất cả 840 cây. Số cây của tổ Hai bằng 3 phần 4 số cây của đội Một. Mỗi tổ trồng được bao nhiêu cây?
+e) Nhóm Sao Mai và đội Một trồng được tất cả 72 cây. Số cây của nhóm Sao Mai bằng 3 phần 5 số cây của đội Một. Mỗi tổ trồng được bao nhiêu cây?
 
 ### Bài 4. (4 điểm) Tổng – tỉ, hiệu – tỉ khi một dữ kiện bị giấu
 
 Việc đầu tiên là gọi tên dữ kiện bị giấu.
 
-a) Kho A và xưởng chứa tất cả 99 kg xi măng. Nếu chia số xi măng ở kho A thành 1 phần bằng nhau thì số xi măng ở xưởng bằng 2 phần như thế. Mỗi nơi chứa bao nhiêu kg?
-b) Số gạo ở cửa hàng bằng 3 phần 2 số gạo ở trang trại. Nếu chuyển 18 kg từ cửa hàng sang trang trại thì cửa hàng vẫn còn nhiều hơn. Biết cửa hàng hơn trang trại 36 kg, tìm số gạo mỗi nơi.
-c) Xưởng chứa 10 kg muối. Nếu xưởng nhận thêm 10 kg thì bằng số muối ở kho A. Hỏi cả hai nơi chứa bao nhiêu kg?
-d) Kho B chứa 28 kg thóc. Nếu kho B nhận thêm 42 kg thì bằng số thóc ở cửa hàng. Hỏi cả hai nơi chứa bao nhiêu kg?
-e) Trang trại và kho A chứa tất cả 176 kg muối. Nếu chia số muối ở trang trại thành 5 phần bằng nhau thì số muối ở kho A bằng 6 phần như thế. Mỗi nơi chứa bao nhiêu kg?
-f) Số phân bón ở hợp tác xã bằng 2 số phân bón ở cửa hàng. Nếu chuyển 99 kg từ hợp tác xã sang cửa hàng thì hợp tác xã vẫn còn nhiều hơn. Biết hợp tác xã hơn cửa hàng 99 kg, tìm số phân bón mỗi nơi.
+a) Cửa hàng chứa 32 kg phân bón. Nếu cửa hàng nhận thêm 48 kg thì bằng số phân bón ở kho B. Hỏi cả hai nơi chứa bao nhiêu kg?
+b) Xưởng và hợp tác xã chứa tất cả 49 kg muối. Nếu chia số muối ở xưởng thành 2 phần bằng nhau thì số muối ở hợp tác xã bằng 5 phần như thế. Mỗi nơi chứa bao nhiêu kg?
+c) Số phân bón ở hợp tác xã bằng 2 số phân bón ở cửa hàng. Nếu chuyển 99 kg từ hợp tác xã sang cửa hàng thì hợp tác xã vẫn còn nhiều hơn. Biết hợp tác xã hơn cửa hàng 99 kg, tìm số phân bón mỗi nơi.
+d) Kho A và trang trại chứa tất cả 96 kg thóc. Nếu chia số thóc ở kho A thành 3 phần bằng nhau thì số thóc ở trang trại bằng 5 phần như thế. Mỗi nơi chứa bao nhiêu kg?
 
-### Bài 5. (4 điểm) Tìm hai số khi biết hiệu và tỉ số
+### Bài 5. (4 điểm) Bài toán về tuổi
 
-Vẽ sơ đồ đoạn thẳng rồi giải.
+Chú ý điều gì thay đổi và điều gì không đổi theo thời gian.
 
-a) Kho B chứa nhiều hơn trang trại 22 kg phân bón. Số phân bón ở trang trại bằng 1 phần 3 số phân bón ở kho B. Mỗi nơi chứa bao nhiêu kg?
-b) Kho B chứa nhiều hơn trang trại 18 kg muối. Số muối ở trang trại bằng 3 phần 4 số muối ở kho B. Mỗi nơi chứa bao nhiêu kg?
-c) Hợp tác xã chứa nhiều hơn kho B 75 kg thóc. Số thóc ở kho B bằng 1 phần 2 số thóc ở hợp tác xã. Mỗi nơi chứa bao nhiêu kg?
-d) Hợp tác xã chứa nhiều hơn trang trại 236 kg phân bón. Số phân bón ở trang trại bằng 3 phần 5 số phân bón ở hợp tác xã. Mỗi nơi chứa bao nhiêu kg?
-e) Trang trại chứa nhiều hơn kho B 21 kg đường. Số đường ở kho B bằng 1 phần 2 số đường ở trang trại. Mỗi nơi chứa bao nhiêu kg?
-f) Kho A chứa nhiều hơn thư viện 52 kg đường. Số đường ở thư viện bằng 1 phần 3 số đường ở kho A. Mỗi nơi chứa bao nhiêu kg?
+a) Hiện nay bố 48 tuổi, con 12 tuổi. Cách đây 2 năm, bố hơn con bao nhiêu tuổi?
+b) Tuổi bố gấp 3 lần tuổi con. Tổng số tuổi của hai bố con là 40 tuổi. Tính tuổi mỗi người.
+c) Hiện nay bố 24 tuổi, con 8 tuổi. Cách đây 4 năm, bố hơn con bao nhiêu tuổi?
+d) Hiện nay bố 24 tuổi, con 6 tuổi. Cách đây 3 năm, bố hơn con bao nhiêu tuổi?
+e) Tuổi bố gấp 4 lần tuổi con. Tổng số tuổi của hai bố con là 50 tuổi. Tính tuổi mỗi người.
+f) Tuổi bố gấp 5 lần tuổi con. Tổng số tuổi của hai bố con là 36 tuổi. Tính tuổi mỗi người.
 
 ---
 
@@ -393,7 +393,7 @@ f) Lỗi nào dễ mắc ở đề này?
 **Lỗi thường gặp:** Đi tìm ngay số còn thiếu mà chưa tính tổng. Phòng: Bước đầu tiên luôn viết: “Tổng = trung bình cộng × số ngày”.
 
 ### Bài B.2
-**Đáp số:** a) 6 ngày · b) 2 ngày · c) 12 ngày · d) 15 ngày · e) 6 ngày · f) 18 ngày
+**Đáp số:** a) 12 ngày · b) 20 ngày · c) 8 ngày · d) 30 ngày
 **Hướng giải:** Tổng số ngày công là không đổi: số người × số ngày = hằng số. Tính tổng số ngày công trước, rồi chia cho số người mới để ra số ngày mới.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Càng nhiều người thì càng **ít** ngày — đại lượng biến đổi **ngược chiều**.
 **Lỗi thường gặp:** Nhân chia như tỉ lệ thuận nên càng nhiều người lại càng lâu. Phòng: Ước lượng trước: kết quả phải lớn hơn hay bé hơn số ngày ban đầu?
@@ -447,39 +447,39 @@ f) Lỗi nào dễ mắc ở đề này?
 **Lỗi thường gặp:** Quên cộng 1 nên thiếu một số hạng. Phòng: Thử với dãy ngắn (3 số hạng) để kiểm chứng công thức.
 
 ### Bài D.1
-**Đáp số:** a) đội Một: 60 cây, đội Hai: 240 cây · b) đội Hai: 364 cây, nhóm Sao Mai: 455 cây · c) nhóm Sao Mai: 340 cây, tổ Một: 510 cây · d) nhóm Sao Mai: 72 cây, tổ Hai: 108 cây
+**Đáp số:** a) 286 · b) 337 · c) 355 · d) 67 · e) 231 · f) 64
+**Hướng giải:** Với một số **lẻ** các số tự nhiên liên tiếp, số ở giữa chính là trung bình cộng: số giữa = tổng : số lượng. Số bé nhất bằng số giữa trừ đi một nửa số lượng còn lại.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Với số lượng lẻ thì **số giữa = tổng : số lượng** — đó là chìa khoá.
+**Lỗi thường gặp:** Lấy tổng chia cho số lượng rồi nhận luôn kết quả là số bé nhất. Phòng: Vẽ dãy số ra, đánh dấu vị trí số giữa trước khi lùi về số đầu.
+**Gợi ý 3 tầng:** (1) Số lượng số hạng là số chẵn hay lẻ? — (2) Với số lượng lẻ, số ở giữa bằng tổng chia số lượng. — (3) Từ số giữa lùi về đầu dãy mấy đơn vị?
+
+### Bài D.2
+**Đáp số:** a) kho A: 158 kg, xưởng: 395 kg · b) trang trại: 236 kg, cửa hàng: 295 kg · c) cửa hàng: 45 kg, kho B: 135 kg · d) thư viện: 560 kg, trang trại: 672 kg · e) trang trại: 28 kg, kho A: 196 kg · f) hợp tác xã: 63 kg, trang trại: 378 kg
+**Hướng giải:** BẪY — Hiệu số phần chứ không phải tổng số phần. Hiệu số phần = số phần lớn − số phần bé. Giá trị một phần = hiệu : hiệu số phần. Sau đó nhân với số phần của từng đại lượng.
+**Nhãn tư duy:** TD3, TD2. Điểm chốt: Chia cho **hiệu số phần**, không phải tổng số phần.
+**Lỗi thường gặp:** Dùng nhầm công thức của tổng – tỉ cho bài hiệu – tỉ. Phòng: Đọc kĩ: đề cho “tổng” hay cho “nhiều hơn”? Ghi rõ ra trước khi vẽ.
+**Gợi ý 3 tầng:** (1) Đề cho tổng hay cho hiệu? — (2) Vẽ sơ đồ, phần dôi ra ứng với hiệu. — (3) Hiệu chia cho hiệu số phần ra giá trị một phần.
+
+### Bài D.3
+**Đáp số:** a) nhóm Hoa Phượng: 35 cây, tổ Ba: 210 cây · b) nhóm Hoa Phượng: 470 cây, tổ Một: 564 cây · c) tổ Một: 63 cây, nhóm Hoa Phượng: 126 cây · d) tổ Hai: 360 cây, đội Một: 480 cây · e) nhóm Sao Mai: 27 cây, đội Một: 45 cây
 **Hướng giải:** Tỉ số cho biết số phần bằng nhau của mỗi đại lượng. Tổng số phần = số phần thứ nhất + số phần thứ hai. Giá trị một phần = tổng : tổng số phần. Nhân giá trị một phần với số phần của từng đại lượng.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Phải tính **tổng số phần** trước khi chia.
 **Lỗi thường gặp:** Chia tổng cho một trong hai số của tỉ số thay vì cho tổng số phần. Phòng: Vẽ sơ đồ, đếm tổng số đoạn nhỏ trên cả hai đoạn thẳng.
 **Gợi ý 3 tầng:** (1) Vẽ đại lượng thứ nhất mấy phần, thứ hai mấy phần? — (2) Tổng cộng có bao nhiêu phần bằng nhau? — (3) Một phần bằng bao nhiêu?
 
-### Bài D.2
-**Đáp số:** a) 28 tuổi · b) 14 tuổi · c) 84 tuổi · d) 39 tuổi · e) bố 44 tuổi, con 11 tuổi
-**Hướng giải:** BẪY — Hiệu số tuổi không đổi. **Hiệu số tuổi của hai người không bao giờ thay đổi.** Còn tổng số tuổi thì mỗi năm tăng thêm đúng bằng số người. Tỉ số tuổi thì thay đổi theo từng năm.
-**Nhãn tư duy:** TD2, TD6. Điểm chốt: Hiệu tuổi là đại lượng **bất biến** — chìa khoá của mọi bài toán tuổi.
-**Lỗi thường gặp:** Cộng thêm số năm vào cả hiệu số tuổi. Phòng: Kẻ bảng ba dòng: trước kia – hiện nay – sau này, ghi rõ tuổi từng người.
-**Gợi ý 3 tầng:** (1) Sau mỗi năm, mỗi người tăng thêm mấy tuổi? — (2) Hiệu số tuổi có thay đổi không? — (3) Tổng số tuổi hai người tăng thêm bao nhiêu sau mỗi năm?
-
-### Bài D.3
-**Đáp số:** a) 89 · b) gấp 1 lần · c) 2, hiệu 18 · d) 85
-**Hướng giải:** Viết số có hai chữ số dưới dạng **ab = a × 10 + b** với a là chữ số hàng chục (khác 0), b là chữ số hàng đơn vị. Từ điều kiện của đề, lập quan hệ giữa a và b rồi dùng bài toán tổng – hiệu.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Chữ số hàng chục **khác 0** và mỗi chữ số chỉ nhận giá trị từ 0 đến 9.
-**Lỗi thường gặp:** Tìm ra a hoặc b lớn hơn 9 mà vẫn nhận đáp số. Phòng: Sau khi tính xong, kiểm tra lại từng chữ số có nằm trong khoảng 0–9 không.
-**Gợi ý 3 tầng:** (1) Gọi chữ số hàng chục là a, hàng đơn vị là b. — (2) Viết số đó thành a × 10 + b. — (3) Đưa về bài toán tổng – hiệu của a và b.
-
 ### Bài D.4
-**Đáp số:** a) kho A: 33 kg, xưởng: 66 kg · b) trang trại: 72 kg, cửa hàng: 108 kg · c) 30 kg · d) 98 kg · e) trang trại: 80 kg, kho A: 96 kg · f) cửa hàng: 99 kg, hợp tác xã: 198 kg
+**Đáp số:** a) 112 kg · b) xưởng: 14 kg, hợp tác xã: 35 kg · c) cửa hàng: 99 kg, hợp tác xã: 198 kg · d) kho A: 36 kg, trang trại: 60 kg
 **Hướng giải:** BẪY — Dữ kiện bị giấu sau một câu mô tả. Đề không cho thẳng tổng, hiệu hay tỉ số mà mô tả vòng. Bước bắt buộc đầu tiên: **dịch câu mô tả thành một con số** rồi mới vẽ sơ đồ và giải như bài chuẩn.
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Dịch xong dữ kiện ẩn thì bài trở lại **đúng dạng chuẩn**.
 **Lỗi thường gặp:** Lao vào tính khi chưa xác định được tổng, hiệu hay tỉ số. Phòng: Viết ba dòng trước khi tính: Tổng = … ; Hiệu = … ; Tỉ số = … ; dòng nào chưa biết thì để trống và đi tìm.
 **Gợi ý 3 tầng:** (1) Đề đã cho tổng chưa? Cho hiệu chưa? Cho tỉ số chưa? — (2) Câu nào trong đề đang mô tả cái còn thiếu? — (3) Dịch câu đó thành một con số rồi giải như bài chuẩn.
 
 ### Bài D.5
-**Đáp số:** a) trang trại: 11 kg, kho B: 33 kg · b) trang trại: 54 kg, kho B: 72 kg · c) kho B: 75 kg, hợp tác xã: 150 kg · d) trang trại: 354 kg, hợp tác xã: 590 kg · e) kho B: 21 kg, trang trại: 42 kg · f) thư viện: 26 kg, kho A: 78 kg
-**Hướng giải:** BẪY — Hiệu số phần chứ không phải tổng số phần. Hiệu số phần = số phần lớn − số phần bé. Giá trị một phần = hiệu : hiệu số phần. Sau đó nhân với số phần của từng đại lượng.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Chia cho **hiệu số phần**, không phải tổng số phần.
-**Lỗi thường gặp:** Dùng nhầm công thức của tổng – tỉ cho bài hiệu – tỉ. Phòng: Đọc kĩ: đề cho “tổng” hay cho “nhiều hơn”? Ghi rõ ra trước khi vẽ.
-**Gợi ý 3 tầng:** (1) Đề cho tổng hay cho hiệu? — (2) Vẽ sơ đồ, phần dôi ra ứng với hiệu. — (3) Hiệu chia cho hiệu số phần ra giá trị một phần.
+**Đáp số:** a) 36 tuổi · b) bố 30 tuổi, con 10 tuổi · c) 16 tuổi · d) 18 tuổi · e) bố 40 tuổi, con 10 tuổi · f) bố 30 tuổi, con 6 tuổi
+**Hướng giải:** BẪY — Hiệu số tuổi không đổi. **Hiệu số tuổi của hai người không bao giờ thay đổi.** Còn tổng số tuổi thì mỗi năm tăng thêm đúng bằng số người. Tỉ số tuổi thì thay đổi theo từng năm.
+**Nhãn tư duy:** TD2, TD6. Điểm chốt: Hiệu tuổi là đại lượng **bất biến** — chìa khoá của mọi bài toán tuổi.
+**Lỗi thường gặp:** Cộng thêm số năm vào cả hiệu số tuổi. Phòng: Kẻ bảng ba dòng: trước kia – hiện nay – sau này, ghi rõ tuổi từng người.
+**Gợi ý 3 tầng:** (1) Sau mỗi năm, mỗi người tăng thêm mấy tuổi? — (2) Hiệu số tuổi có thay đổi không? — (3) Tổng số tuổi hai người tăng thêm bao nhiêu sau mỗi năm?
 
 ### Bài E.1
 **Đáp số:** a) Tỉ lệ nghịch · b) Số người tăng thì thời gian giảm · c) Đại lượng tỉ lệ nghịch, tổng số ngày công · d) Quy về tổng số ngày công rồi chia · e) Số người gấp đôi thì số ngày giảm một nửa — nhẩm được ngay khi tỉ số đẹp. · f) Nhân chia như tỉ lệ thuận nên càng nhiều người lại càng lâu.

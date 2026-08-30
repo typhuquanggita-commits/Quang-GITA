@@ -83,7 +83,7 @@ Với mỗi dạng bài dưới đây, điền cột **Dấu hiệu nhận biế
 
 a) Dạng “Xác định chữ số và giá trị chữ số theo hàng” — dấu hiệu nhận biết?
 b) Dạng “Tìm số thoả nhiều điều kiện chia có dư” — dấu hiệu nhận biết?
-c) Dạng “Số và tổng chữ số của nó” — dấu hiệu nhận biết?
+c) Dạng “Dùng chữ thay số” — dấu hiệu nhận biết?
 d) Dạng “Đếm số hạng của dãy cách đều theo điều kiện chia hết” — dấu hiệu nhận biết?
 e) Dạng “Lập số và đếm số lập được từ một bộ chữ số” — dấu hiệu nhận biết?
 
@@ -91,7 +91,7 @@ e) Dạng “Lập số và đếm số lập được từ một bộ chữ s�
 
 Với mỗi dạng bài dưới đây, điền cột **Phương pháp áp dụng** của bảng.
 
-a) Dạng “Số và tổng chữ số của nó” — phương pháp áp dụng?
+a) Dạng “Dùng chữ thay số” — phương pháp áp dụng?
 b) Dạng “Đếm số hạng của dãy cách đều theo điều kiện chia hết” — phương pháp áp dụng?
 c) Dạng “Lập số và đếm số lập được từ một bộ chữ số” — phương pháp áp dụng?
 d) Dạng “Tìm số theo điều kiện của các chữ số” — phương pháp áp dụng?
@@ -238,15 +238,35 @@ g) 30 × 40 − 30 × 11
 
 Trả lời gọn, có thể dùng dãy cách đều.
 
-a) Có bao nhiêu số từ 68 đến 374 vừa chia hết cho 3 vừa chia hết cho 5? Số bé nhất trong đó là số nào?
-b) Có bao nhiêu số từ 236 đến 472 vừa chia hết cho 2 vừa chia hết cho 5? Số bé nhất trong đó là số nào?
-c) Có bao nhiêu số từ 209 đến 737 vừa chia hết cho 3 vừa chia hết cho 5? Số bé nhất trong đó là số nào?
-d) Có bao nhiêu số từ 270 đến 709 vừa chia hết cho 5 vừa chia hết cho 9? Số bé nhất trong đó là số nào?
-e) Có bao nhiêu số từ 65 đến 437 vừa chia hết cho 5 vừa chia hết cho 9? Số bé nhất trong đó là số nào?
+a) Có bao nhiêu số từ 88 đến 463 vừa chia hết cho 5 vừa chia hết cho 9? Số bé nhất trong đó là số nào?
+b) Có bao nhiêu số từ 234 đến 737 vừa chia hết cho 3 vừa chia hết cho 5? Số bé nhất trong đó là số nào?
+c) Có bao nhiêu số từ 189 đến 679 vừa chia hết cho 5 vừa chia hết cho 9? Số bé nhất trong đó là số nào?
+d) Có bao nhiêu số từ 156 đến 529 vừa chia hết cho 2 vừa chia hết cho 5? Số bé nhất trong đó là số nào?
 
-### Bài 2. (4 điểm) Lập số có ba chữ số khác nhau
+### Bài 2. (4 điểm) So sánh hai biểu thức mà không cần tính
 
-Cho ba chữ số **4, 5, 8**. Lập các số có ba chữ số khác nhau từ ba chữ số này.
+Điền dấu <, >, = và giải thích ngắn.
+
+a) 542 + 29 … 734 + 29
+b) 626 × 3 … 674 × 3
+c) 303 × 4 … 303 × 5
+d) 180 + 26 … 490 + 26
+e) 551 + 4 … 333 + 4
+f) 750 × 13 … 750 × 14
+g) 450 × 4 … 860 × 4
+
+### Bài 3. (4 điểm) Tổng của các số tự nhiên liên tiếp
+
+Với mỗi ý, tìm số theo yêu cầu.
+
+a) Tổng của 3 số tự nhiên liên tiếp bằng 372. Tìm số bé nhất trong 3 số đó.
+b) Tổng của 3 số tự nhiên liên tiếp bằng 480. Tìm số bé nhất trong 3 số đó.
+c) Tổng của 9 số tự nhiên liên tiếp bằng 3 897. Tìm số bé nhất trong 9 số đó.
+d) Tổng của 9 số tự nhiên liên tiếp bằng 261. Tìm số bé nhất trong 9 số đó.
+
+### Bài 4. (4 điểm) Lập số có ba chữ số khác nhau
+
+Cho ba chữ số **0, 1, 9**. Lập các số có ba chữ số khác nhau từ ba chữ số này.
 
 a) Viết tất cả các số lập được (theo thứ tự từ bé đến lớn).
 b) Lập được tất cả bao nhiêu số?
@@ -256,32 +276,14 @@ e) Trong các số đó có bao nhiêu số chẵn?
 f) Có bao nhiêu số chia hết cho 5?
 g) Tổng của số lớn nhất và số bé nhất bằng bao nhiêu?
 
-### Bài 3. (4 điểm) Tổng của các số tự nhiên liên tiếp
-
-Với mỗi ý, tìm số theo yêu cầu.
-
-a) Tổng của 9 số tự nhiên liên tiếp bằng 2 673. Tìm số bé nhất trong 9 số đó.
-b) Tổng của 3 số tự nhiên liên tiếp bằng 660. Tìm số bé nhất trong 3 số đó.
-c) Tổng của 5 số tự nhiên liên tiếp bằng 1 185. Tìm số bé nhất trong 5 số đó.
-d) Tổng của 7 số tự nhiên liên tiếp bằng 2 898. Tìm số bé nhất trong 7 số đó.
-
-### Bài 4. (4 điểm) So sánh hai biểu thức mà không cần tính
-
-Điền dấu <, >, = và giải thích ngắn.
-
-a) 180 + 26 … 490 + 26
-b) 551 + 4 … 333 + 4
-c) 750 × 13 … 750 × 14
-d) 450 × 4 … 860 × 4
-
 ### Bài 5. (4 điểm) Cấu tạo số có hai chữ số
 
 Trình bày lời giải ngắn gọn cho từng ý.
 
-a) Chữ số hàng chục của số 13 gấp mấy lần chữ số hàng đơn vị (nếu chia hết), hoặc hơn bao nhiêu đơn vị?
-b) Số có hai chữ số 24; đổi chỗ hai chữ số ta được số nào? Hiệu của hai số đó bằng bao nhiêu?
-c) Số có hai chữ số 80; đổi chỗ hai chữ số ta được số nào? Hiệu của hai số đó bằng bao nhiêu?
-d) Chữ số hàng chục của số 92 gấp mấy lần chữ số hàng đơn vị (nếu chia hết), hoặc hơn bao nhiêu đơn vị?
+a) Tìm số có hai chữ số, biết tổng hai chữ số bằng 5 và chữ số hàng đơn vị hơn chữ số hàng chục 3 đơn vị.
+b) Tìm số có hai chữ số, biết tổng hai chữ số bằng 11 và chữ số hàng đơn vị hơn chữ số hàng chục 7 đơn vị.
+c) Tìm số có hai chữ số, biết tổng hai chữ số bằng 2 và chữ số hàng chục hơn chữ số hàng đơn vị 0 đơn vị.
+d) Số có hai chữ số 26; đổi chỗ hai chữ số ta được số nào? Hiệu của hai số đó bằng bao nhiêu?
 
 ---
 
@@ -355,13 +357,13 @@ f) Lỗi nào dễ mắc ở đề này?
 **Lỗi thường gặp:** Kể thiếu dạng bài. Phòng: Đếm số dạng rồi mới kể; kể xong đếm lại.
 
 ### Bài A.2
-**Đáp số:** a) Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” · b) Hai điều kiện “chia cho … dư …” đi cùng nhau · c) Đề liên hệ số với tổng các chữ số của chính nó · d) Cụm “có bao nhiêu số … từ … đến …” · e) Đề cho một bộ chữ số và yêu cầu lập số
+**Đáp số:** a) Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” · b) Hai điều kiện “chia cho … dư …” đi cùng nhau · c) Đề viết số bằng chữ hoặc bằng dấu sao và cho quan hệ giữa các chữ số · d) Cụm “có bao nhiêu số … từ … đến …” · e) Đề cho một bộ chữ số và yêu cầu lập số
 **Hướng giải:** Cột “Dấu hiệu nhận biết” lấy từ bảng phân tích chuyên sâu của các phiếu đã học. Điền xong, đọc ngang từng hàng để thấy mạch từ đề bài tới lời giải.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Bảng chỉ có giá trị khi **đọc ngang được từng hàng**.
 **Lỗi thường gặp:** Điền từng cột rời rạc, không đối chiếu ngang. Phòng: Điền xong thì đọc lại theo hàng, mỗi hàng phải thành một câu có nghĩa.
 
 ### Bài A.3
-**Đáp số:** a) Đặt ẩn cho chữ số, viết hai biểu thức, lập bảng thử · b) Tìm số đầu, số cuối hợp lệ rồi dùng công thức đếm · c) Cố định hàng cao nhất rồi hoán vị các hàng còn lại · d) Đặt ẩn cho từng chữ số, viết số theo cấu tạo, giải hệ điều kiện · e) Đếm chữ số → so từng hàng từ trái sang phải
+**Đáp số:** a) Viết cấu tạo số theo chữ, thay vào điều kiện rồi rút gọn · b) Tìm số đầu, số cuối hợp lệ rồi dùng công thức đếm · c) Cố định hàng cao nhất rồi hoán vị các hàng còn lại · d) Đặt ẩn cho từng chữ số, viết số theo cấu tạo, giải hệ điều kiện · e) Đếm chữ số → so từng hàng từ trái sang phải
 **Hướng giải:** Cột “Phương pháp áp dụng” lấy từ bảng phân tích chuyên sâu của các phiếu đã học. Điền xong, đọc ngang từng hàng để thấy mạch từ đề bài tới lời giải.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Bảng chỉ có giá trị khi **đọc ngang được từng hàng**.
 **Lỗi thường gặp:** Điền từng cột rời rạc, không đối chiếu ngang. Phòng: Điền xong thì đọc lại theo hàng, mỗi hàng phải thành một câu có nghĩa.
@@ -439,35 +441,35 @@ f) Lỗi nào dễ mắc ở đề này?
 **Lỗi thường gặp:** Đặt ra ngoài một số chỉ có ở một tích. Phòng: Khoanh thừa số giống nhau ở hai tích trước khi viết dấu ngoặc.
 
 ### Bài D.1
-**Đáp số:** a) 20 số, bé nhất là 75 · b) 24 số, bé nhất là 240 · c) 36 số, bé nhất là 210 · d) 10 số, bé nhất là 270 · e) 8 số, bé nhất là 90
+**Đáp số:** a) 9 số, bé nhất là 90 · b) 34 số, bé nhất là 240 · c) 11 số, bé nhất là 225 · d) 37 số, bé nhất là 160
 **Hướng giải:** BẪY — BCNN chứ không phải tích hai số chia. Số vừa chia hết cho hai số thì chia hết cho bội chung nhỏ nhất của chúng. Các số đó lập thành dãy cách đều với khoảng cách bằng bội chung nhỏ nhất; dùng công thức đếm số hạng của dãy cách đều.
 **Nhãn tư duy:** TD2, TD4. Điểm chốt: Khoảng cách của dãy là **bội chung nhỏ nhất**, không phải tích hai số khi hai số không nguyên tố cùng nhau.
 **Lỗi thường gặp:** Lấy tích hai số làm khoảng cách (ví dụ dùng 27 cho “chia hết cho 3 và 9”). Phòng: Kiểm tra bằng cách viết ba số đầu tiên của dãy rồi xem khoảng cách thật.
 **Gợi ý 3 tầng:** (1) Số chia hết cho cả hai số thì chia hết cho số nào? — (2) Tìm bội chung nhỏ nhất của hai số đó. — (3) Các số cần tìm cách đều nhau đúng bằng bội chung nhỏ nhất.
 
 ### Bài D.2
-**Đáp số:** a) 458 · 485 · 548 · 584 · 845 · 854 · b) 6 · c) 854 · d) 458 · e) 4 · f) 2 · g) 1 312
-**Hướng giải:** BẪY — Chữ số 0 không đứng đầu. Lập số theo thứ tự: chọn chữ số hàng trăm trước (khác 0), rồi hàng chục, rồi hàng đơn vị, mỗi chữ số dùng đúng một lần. Viết có hệ thống theo nhóm cùng chữ số hàng trăm để không bỏ sót và không trùng lặp.
-**Nhãn tư duy:** TD4, TD6. Điểm chốt: Chữ số **0 không được đứng ở hàng trăm**, nên nếu bộ có chữ số 0 thì số lượng số lập được ít hơn.
-**Lỗi thường gặp:** Viết lộn xộn nên vừa sót vừa trùng; hoặc nhận cả số bắt đầu bằng 0. Phòng: Liệt kê theo nhóm: cố định hàng trăm rồi mới hoán vị hai chữ số còn lại.
-**Gợi ý 3 tầng:** (1) Chọn chữ số hàng trăm trước — chữ số nào không được chọn? — (2) Với mỗi chữ số hàng trăm, hai chữ số còn lại xếp được mấy cách? — (3) Liệt kê theo nhóm để kiểm soát, đừng viết ngẫu nhiên.
+**Đáp số:** a) < · b) < · c) < · d) < · e) > · f) < · g) <
+**Hướng giải:** Khi hai biểu thức có phần giống nhau, chỉ cần so sánh phần khác nhau: cùng cộng thêm một số thì số nào lớn hơn vẫn lớn hơn; cùng nhân với một số khác 0 cũng vậy.
+**Nhãn tư duy:** TD5, TD2. Điểm chốt: Che phần **giống nhau** đi, chỉ so phần khác nhau.
+**Lỗi thường gặp:** Tính hết cả hai vế, vừa lâu vừa dễ sai. Phòng: Dùng bút gạch bỏ phần giống nhau ở hai vế trước khi so sánh.
+**Gợi ý 3 tầng:** (1) Hai vế có phần nào giống hệt nhau? — (2) Gạch bỏ phần giống nhau đi. — (3) So sánh phần còn lại.
 
 ### Bài D.3
-**Đáp số:** a) 293 · b) 219 · c) 235 · d) 411
+**Đáp số:** a) 123 · b) 159 · c) 429 · d) 25
 **Hướng giải:** Với một số **lẻ** các số tự nhiên liên tiếp, số ở giữa chính là trung bình cộng: số giữa = tổng : số lượng. Số bé nhất bằng số giữa trừ đi một nửa số lượng còn lại.
 **Nhãn tư duy:** TD3, TD4. Điểm chốt: Với số lượng lẻ thì **số giữa = tổng : số lượng** — đó là chìa khoá.
 **Lỗi thường gặp:** Lấy tổng chia cho số lượng rồi nhận luôn kết quả là số bé nhất. Phòng: Vẽ dãy số ra, đánh dấu vị trí số giữa trước khi lùi về số đầu.
 **Gợi ý 3 tầng:** (1) Số lượng số hạng là số chẵn hay lẻ? — (2) Với số lượng lẻ, số ở giữa bằng tổng chia số lượng. — (3) Từ số giữa lùi về đầu dãy mấy đơn vị?
 
 ### Bài D.4
-**Đáp số:** a) < · b) > · c) < · d) <
-**Hướng giải:** Khi hai biểu thức có phần giống nhau, chỉ cần so sánh phần khác nhau: cùng cộng thêm một số thì số nào lớn hơn vẫn lớn hơn; cùng nhân với một số khác 0 cũng vậy.
-**Nhãn tư duy:** TD5, TD2. Điểm chốt: Che phần **giống nhau** đi, chỉ so phần khác nhau.
-**Lỗi thường gặp:** Tính hết cả hai vế, vừa lâu vừa dễ sai. Phòng: Dùng bút gạch bỏ phần giống nhau ở hai vế trước khi so sánh.
-**Gợi ý 3 tầng:** (1) Hai vế có phần nào giống hệt nhau? — (2) Gạch bỏ phần giống nhau đi. — (3) So sánh phần còn lại.
+**Đáp số:** a) 109 · 190 · 901 · 910 · b) 4 · c) 910 · d) 109 · e) 2 · f) 2 · g) 1 019
+**Hướng giải:** BẪY — Chữ số 0 không đứng đầu. Lập số theo thứ tự: chọn chữ số hàng trăm trước (khác 0), rồi hàng chục, rồi hàng đơn vị, mỗi chữ số dùng đúng một lần. Viết có hệ thống theo nhóm cùng chữ số hàng trăm để không bỏ sót và không trùng lặp.
+**Nhãn tư duy:** TD4, TD6. Điểm chốt: Chữ số **0 không được đứng ở hàng trăm**, nên nếu bộ có chữ số 0 thì số lượng số lập được ít hơn.
+**Lỗi thường gặp:** Viết lộn xộn nên vừa sót vừa trùng; hoặc nhận cả số bắt đầu bằng 0. Phòng: Liệt kê theo nhóm: cố định hàng trăm rồi mới hoán vị hai chữ số còn lại.
+**Gợi ý 3 tầng:** (1) Chọn chữ số hàng trăm trước — chữ số nào không được chọn? — (2) Với mỗi chữ số hàng trăm, hai chữ số còn lại xếp được mấy cách? — (3) Liệt kê theo nhóm để kiểm soát, đừng viết ngẫu nhiên.
 
 ### Bài D.5
-**Đáp số:** a) hơn -2 đơn vị · b) 42, hiệu 18 · c) 8, hiệu 72 · d) hơn 7 đơn vị
+**Đáp số:** a) 14 · b) 29 · c) 11 · d) 62, hiệu 36
 **Hướng giải:** Viết số có hai chữ số dưới dạng **ab = a × 10 + b** với a là chữ số hàng chục (khác 0), b là chữ số hàng đơn vị. Từ điều kiện của đề, lập quan hệ giữa a và b rồi dùng bài toán tổng – hiệu.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Chữ số hàng chục **khác 0** và mỗi chữ số chỉ nhận giá trị từ 0 đến 9.
 **Lỗi thường gặp:** Tìm ra a hoặc b lớn hơn 9 mà vẫn nhận đáp số. Phòng: Sau khi tính xong, kiểm tra lại từng chữ số có nằm trong khoảng 0–9 không.

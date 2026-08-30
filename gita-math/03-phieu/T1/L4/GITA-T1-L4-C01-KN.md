@@ -120,7 +120,7 @@ e) Thiếu câu lời giải thì bị trừ bao nhiêu phần điểm của bà
 Với mỗi dạng bài, viết một câu lời giải mẫu.
 
 a) Câu lời giải mở đầu cho dạng “Làm tròn số tự nhiên”?
-b) Câu lời giải mở đầu cho dạng “Tìm số thoả nhiều điều kiện chia có dư”?
+b) Câu lời giải mở đầu cho dạng “Dùng chữ thay số”?
 c) Câu lời giải mở đầu cho dạng “So sánh hai số tự nhiên”?
 d) Câu lời giải mở đầu cho dạng “Kiểm tra chia hết bằng dấu hiệu”?
 e) Câu lời giải mở đầu cho dạng “Xét chia hết của tổng, hiệu”?
@@ -141,7 +141,7 @@ f) Vận tốc ghi đơn vị gì?
 Mỗi ý nêu một lỗi. Hãy nói cách sửa.
 
 a) Lỗi: Nhìn nhầm sang chữ số ở hàng cần làm tròn thay vì hàng liền sau nó. — cách phòng?
-b) Lỗi: Thử từng số từ 1 trở đi nên quá lâu và dễ bỏ sót. — cách phòng?
+b) Lỗi: Tính ra a bằng 0 rồi vẫn nhận, hoặc để một chữ số vượt quá 9. — cách phòng?
 c) Lỗi: So từ hàng đơn vị (phải sang trái) nên kết luận sai. — cách phòng?
 d) Lỗi: Dùng dấu hiệu của 3 để kết luận cho 2, hoặc cộng thiếu một chữ số. — cách phòng?
 e) Lỗi: Cộng hai số ra rồi mới chia — mất thời gian và dễ sai tính. — cách phòng?
@@ -225,7 +225,7 @@ c) Mỗi nhánh chính đặt tên theo gì?
 d) Mỗi nhánh chính có mấy nhánh con bắt buộc?
 e) Vẽ xong, tự chấm bằng cách nào?
 
-### Bài 2. (5 điểm) Nhánh 1 — Tìm số thoả nhiều điều kiện chia có dư
+### Bài 2. (5 điểm) Nhánh 1 — Dùng chữ thay số
 
 Điền ba nhánh con bắt buộc của nhánh này.
 
@@ -367,7 +367,7 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Lỗi thường gặp:** Viết thẳng phép tính, bỏ câu lời giải. Phòng: Đọc lại bài đã làm, đếm xem có đủ bốn dòng chưa.
 
 ### Bài B.2
-**Đáp số:** a) “Làm tròn số tự nhiên là:” · b) “Tìm số thoả nhiều điều kiện chia có dư là:” · c) “So sánh hai số tự nhiên là:” · d) “Kiểm tra chia hết bằng dấu hiệu là:” · e) “Xét chia hết của tổng, hiệu là:”
+**Đáp số:** a) “Làm tròn số tự nhiên là:” · b) “Dùng chữ thay số là:” · c) “So sánh hai số tự nhiên là:” · d) “Kiểm tra chia hết bằng dấu hiệu là:” · e) “Xét chia hết của tổng, hiệu là:”
 **Hướng giải:** Câu lời giải chỉ cần nhắc lại đại lượng đang tìm, không cần dài dòng.
 **Nhãn tư duy:** TD1. Điểm chốt: Câu lời giải phải **nêu đúng đại lượng** đang tìm.
 **Lỗi thường gặp:** Viết câu lời giải chung chung cho mọi bài. Phòng: Lấy đúng cụm từ trong câu hỏi của đề làm câu lời giải.
@@ -379,7 +379,7 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Lỗi thường gặp:** Ghi diện tích bằng cm thay vì cm². Phòng: Trước khi viết đáp số, hỏi: đại lượng này đo bằng gì?
 
 ### Bài B.4
-**Đáp số:** a) Gạch một nét ngăn ngay sau hàng cần làm tròn rồi mới quyết định. · b) Viết dãy số thoả điều kiện thứ nhất trước, rồi mới lọc. · c) Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái. · d) Viết rõ tổng các chữ số ra bên cạnh trước khi kết luận. · e) Ghi số dư của từng số hạng ngay bên dưới nó. · f) Viết rời từng chữ số ra rồi mới cộng.
+**Đáp số:** a) Gạch một nét ngăn ngay sau hàng cần làm tròn rồi mới quyết định. · b) Viết sẵn hai dòng ràng buộc lên đầu bài giải rồi mới tính. · c) Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái. · d) Viết rõ tổng các chữ số ra bên cạnh trước khi kết luận. · e) Ghi số dư của từng số hạng ngay bên dưới nó. · f) Viết rời từng chữ số ra rồi mới cộng.
 **Hướng giải:** Mỗi lỗi đều có một cách phòng cụ thể, làm được ngay trong lúc làm bài. Chép cả cặp lỗi – cách phòng vào sổ lỗi.
 **Nhãn tư duy:** TD2. Điểm chốt: Sổ lỗi chỉ có ích khi ghi **cả cách phòng**, không chỉ ghi lỗi.
 **Lỗi thường gặp:** Ghi lỗi vào sổ nhưng không ghi cách phòng nên lần sau vẫn sai. Phòng: Mỗi dòng sổ lỗi bắt buộc có hai cột: lỗi và cách phòng.
@@ -428,10 +428,10 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài D.2
-**Đáp số:** a) Hai điều kiện “chia cho … dư …” đi cùng nhau · b) Lập dãy theo điều kiện chặt hơn rồi lọc theo điều kiện còn lại · c) Thử từng số từ 1 trở đi nên quá lâu và dễ bỏ sót. · d) Phép chia có dư, dãy cách đều · e) Chọn điều kiện có số chia **lớn hơn** để lập dãy — dãy thưa hơn nên thử nhanh hơn.
+**Đáp số:** a) Đề viết số bằng chữ hoặc bằng dấu sao và cho quan hệ giữa các chữ số · b) Viết cấu tạo số theo chữ, thay vào điều kiện rồi rút gọn · c) Tính ra a bằng 0 rồi vẫn nhận, hoặc để một chữ số vượt quá 9. · d) Cấu tạo thập phân của số; tổng – hiệu · e) Đổi chỗ hai chữ số của số có hai chữ số thì hiệu luôn là bội của 9.
 **Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
-**Nhãn tư duy:** TD2, TD6. Điểm chốt: Chỉ **đi dọc một dãy** rồi thử điều kiện còn lại, không thử tất cả số.
-**Lỗi thường gặp:** Thử từng số từ 1 trở đi nên quá lâu và dễ bỏ sót. Phòng: Viết dãy số thoả điều kiện thứ nhất trước, rồi mới lọc.
+**Nhãn tư duy:** TD1, TD4. Điểm chốt: Chữ số hàng cao nhất **khác 0**, và mọi chữ số chỉ nhận giá trị từ 0 đến 9. Hai ràng buộc này thường là chỗ loại bớt đáp số.
+**Lỗi thường gặp:** Tính ra a bằng 0 rồi vẫn nhận, hoặc để một chữ số vượt quá 9. Phòng: Viết sẵn hai dòng ràng buộc lên đầu bài giải rồi mới tính.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài D.3
@@ -470,7 +470,7 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.3
-**Đáp số:** a) “Hôm nay nhóm mình nói về So sánh hai số tự nhiên.” · b) Dấu … giữa hai số, yêu cầu điền <, >, = · c) Thứ tự trong tập số tự nhiên · d) Điền dấu: 582 439 … 582 440 → < · e) So từ hàng đơn vị (phải sang trái) nên kết luận sai. · f) Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số.
+**Đáp số:** a) “Hôm nay nhóm mình nói về So sánh hai số tự nhiên.” · b) Dấu … giữa hai số, yêu cầu điền <, >, = · c) Thứ tự trong tập số tự nhiên · d) Điền dấu: 99 185 … 99 186 → < · e) So từ hàng đơn vị (phải sang trái) nên kết luận sai. · f) Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số.
 **Hướng giải:** So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Đếm số chữ số **trước**, chỉ khi bằng nhau mới so từng hàng.
 **Lỗi thường gặp:** So từ hàng đơn vị (phải sang trái) nên kết luận sai. Phòng: Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái.

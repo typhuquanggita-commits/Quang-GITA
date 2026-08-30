@@ -65,6 +65,7 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 | M3 | Dãy cộng có dấu … và các số cách đều nhau | Tổng dãy số cách đều | Đếm số số hạng rồi áp công thức tổng | Ghép cặp đầu – cuối: mọi cặp đều có cùng tổng, chỉ cần nhân với số cặp. | Quên cộng 1 khi đếm số số hạng |
 | M3 | Hai vế có chung một số hạng hoặc một thừa số | So sánh biểu thức không tính giá trị | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. | — |
 | M3 | x nằm trong ngoặc, ngoài ngoặc còn phép tính khác | Tìm x nhiều bước có ngoặc | Bóc lớp từ ngoài vào trong | Thay x tìm được vào đề, tính một lượt để thử lại. | — |
+| M3 | Đề kể một **chuỗi thao tác** rồi cho kết quả cuối, hỏi số ban đầu | Tính ngược từ cuối | Vẽ sơ đồ mũi tên, đi ngược và đảo từng phép tính | Gỡ từ phải sang trái, mỗi bước một phép tính ngược — không cần đặt ẩn. | Đi ngược nhưng không đảo thứ tự |
 | M4 | Trong biểu thức có ngoặc chứa hai số giống nhau trừ nhau | Tính nhanh nhờ thừa số 0 | Quét tìm cụm bằng 0 trước khi tính | Nhìn dấu ngoặc trước tiên — bẫy thường nằm ở đó. | Biểu thức lớn nhưng kết quả bằng 0 |
 | M4 | Dãy cộng gồm nhiều tích cùng một thừa số | Tổng các tích có thừa số chung | Đặt thừa số chung → tính tổng trong ngoặc bằng công thức | 1 + 2 + … + 100 = 5 050; nhớ vài mốc để nhân ngay. | — |
 | M4 | Chữ x xuất hiện ở cả hai vế của dấu bằng | Tìm x xuất hiện hai vế | Trừ bớt số lần x chung rồi đưa về phép chia | Vẽ sơ đồ đoạn thẳng cho mỗi vế — nhìn ra ngay phần chênh. | — |
@@ -94,43 +95,43 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 
 Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: đây là dạng bài gì, và dấu hiệu nào cho biết điều đó.
 
-**Đề 1.** Tính bằng cách thuận tiện nhất. 41 × 25 × 4
+**Đề 1.** Tìm x. x − 40 = 297
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 2.** Tính giá trị mỗi biểu thức. 1 − 2 + 3 − 4 + 5 − 6 + … − 100
+**Đề 2.** Tính bằng cách thuận tiện nhất. 79 + 328 + 21
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 3.** Tìm x. Gợi ý: so sánh số lần x ở hai vế. x × 8 + 77 = x × 9
+**Đề 3.** Tính giá trị mỗi biểu thức. 1 − 2 + 3 − 4 + 5 − 6 + … − 10
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 4.** Tính bằng cách thuận tiện nhất. 276 + 86 − 86
+**Đề 4.** Đặt tính rồi tính. 403 131 : 83
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 5.** Tính tổng mỗi dãy. 3 + 6 + 9 + … + 75
+**Đề 5.** Tìm x, trình bày từng bước. (x − 237) × 7 = -980
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 6.** Tính tổng mỗi biểu thức. 3 × 1 + 3 × 2 + 3 × 3 + … + 3 × 50
+**Đề 6.** Tìm x, trình bày đủ các bước. (x + 20) × 5 − 2 = 173
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 7.** Tìm x, trình bày đủ các bước. (23 + x) × 6 + 2 = 566
+**Đề 7.** Tính nhẩm, ghi ngay kết quả. 860 × 1 000
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 8.** Tính giá trị của mỗi biểu thức. (52 + 5) × 8
+**Đề 8.** Đặt tính rồi tính. Ước lượng trước để tự kiểm tra. 95 613 300 : 225
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 9.** Tìm x, trình bày từng bước. 147 − x × 3 = 111
+**Đề 9.** Tính bằng cách thuận tiện nhất. 2 840 : 4 : 10
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 10.** Tính nhẩm, nêu cách nhẩm. 64 × 9
+**Đề 10.** Vẽ sơ đồ mũi tên trước khi tính. Tính xong phải thử lại theo chiều xuôi. Em nghĩ ra một số. Lấy số ấy nhân với 3, được bao nhiêu thì cộng thêm 32, rồi chia cho 2 thì được 34. Hỏi số em nghĩ ra là số nào?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
@@ -140,16 +141,16 @@ Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: 
 
 | # | Dạng bài | Dấu hiệu |
 |:--:|---|---|
-| 1 | Tính nhanh tích, thương nhiều bước | Tích có thừa số 25, 125, 50, 20; hoặc chia liên tiếp |
-| 2 | Tổng dãy cộng trừ xen kẽ | Dấu cộng và trừ xen kẽ đều đặn |
-| 3 | Tìm x xuất hiện hai vế | Chữ x xuất hiện ở cả hai vế của dấu bằng |
-| 4 | Tính nhanh tổng nhiều số hạng | Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm |
-| 5 | Tổng dãy số cách đều | Dãy cộng có dấu … và các số cách đều nhau |
-| 6 | Tổng các tích có thừa số chung | Dãy cộng gồm nhiều tích cùng một thừa số |
-| 7 | Tìm x nhiều bước có ngoặc | x nằm trong ngoặc, ngoài ngoặc còn phép tính khác |
-| 8 | Tính giá trị biểu thức số | Biểu thức có nhiều phép tính, có thể có ngoặc |
-| 9 | Tìm x qua hai bước | x nằm trong một cụm có hai phép tính |
-| 10 | Nhân nhẩm nhờ tách thừa số | Thừa số là 9, 11, 19, 21, 99, 101… |
+| 1 | Tìm x trong phép tính một bước | Có chữ x đứng trong một phép tính |
+| 2 | Tính nhanh tổng nhiều số hạng | Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm |
+| 3 | Tổng dãy cộng trừ xen kẽ | Dấu cộng và trừ xen kẽ đều đặn |
+| 4 | Nhân, chia số tự nhiên | Yêu cầu “đặt tính rồi tính” với phép nhân, chia |
+| 5 | Tìm x qua hai bước | x nằm trong một cụm có hai phép tính |
+| 6 | Tìm x nhiều bước có ngoặc | x nằm trong ngoặc, ngoài ngoặc còn phép tính khác |
+| 7 | Nhân, chia nhẩm với số tròn chục, trăm, nghìn | Thừa số hoặc số chia là 10, 100, 1 000 |
+| 8 | Bốn phép tính với số tự nhiên | Yêu cầu “đặt tính rồi tính” |
+| 9 | Tính nhanh tích, thương nhiều bước | Tích có thừa số 25, 125, 50, 20; hoặc chia liên tiếp |
+| 10 | Tính ngược từ cuối | Đề kể một **chuỗi thao tác** rồi cho kết quả cuối, hỏi số ban đầu |
 
 ---
 

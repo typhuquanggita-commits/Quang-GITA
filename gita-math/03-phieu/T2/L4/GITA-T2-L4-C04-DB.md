@@ -240,56 +240,58 @@ f) 133 555 : 17 = ? (dư ?)
 
 ## PHẦN D — DẠNG 5 – DẠNG 6 VÀ DẠNG PHỐI HỢP · Mức M3 — Vận dụng · 20 phút · 20 điểm
 
-### Bài 1. (4 điểm) Tổng – tỉ, hiệu – tỉ khi một dữ kiện bị giấu
+### Bài 1. (4 điểm) Tìm phân số của một số qua hai bước
 
-Việc đầu tiên là gọi tên dữ kiện bị giấu.
+Đọc kĩ “của số nào” trước khi tính.
 
-a) Cửa hàng chứa 85 kg xi măng. Nếu cửa hàng nhận thêm 17 kg thì bằng số xi măng ở hợp tác xã. Hỏi cả hai nơi chứa bao nhiêu kg?
-b) Số xi măng ở hợp tác xã bằng 3 phần 2 số xi măng ở cửa hàng. Nếu chuyển 22 kg từ hợp tác xã sang cửa hàng thì hợp tác xã vẫn còn nhiều hơn. Biết hợp tác xã hơn cửa hàng 44 kg, tìm số xi măng mỗi nơi.
-c) Hợp tác xã và trang trại chứa tất cả 135 kg phân bón. Nếu chia số phân bón ở hợp tác xã thành 2 phần bằng nhau thì số phân bón ở trang trại bằng 3 phần như thế. Mỗi nơi chứa bao nhiêu kg?
-d) Số xi măng ở kho A bằng 5 số xi măng ở cửa hàng. Nếu chuyển 44 kg từ kho A sang cửa hàng thì kho A vẫn còn nhiều hơn. Biết kho A hơn cửa hàng 88 kg, tìm số xi măng mỗi nơi.
+a) Một cửa hàng có 324 kg gạo. Ngày đầu bán 1 phần 3 số gạo, ngày thứ hai bán 1 phần 4 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
+b) Một cửa hàng có 480 kg gạo. Ngày đầu bán 1 phần 5 số gạo, ngày thứ hai bán 1 phần 4 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
+c) Một cửa hàng có 345 kg gạo. Ngày đầu bán 1 phần 5 số gạo, ngày thứ hai bán 1 phần 3 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
+d) Một cửa hàng có 304 kg gạo. Ngày đầu bán 1 phần 4 số gạo, ngày thứ hai bán 1 phần 2 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
+e) Một cửa hàng có 160 kg gạo. Ngày đầu bán 1 phần 4 số gạo, ngày thứ hai bán 1 phần 4 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
+f) Một cửa hàng có 45 kg gạo. Ngày đầu bán 1 phần 5 số gạo, ngày thứ hai bán 1 phần 3 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
 
 ### Bài 2. (4 điểm) Bài toán về tuổi
 
 Chú ý điều gì thay đổi và điều gì không đổi theo thời gian.
 
-a) Tuổi bố gấp 2 lần tuổi con. Tổng số tuổi của hai bố con là 33 tuổi. Tính tuổi mỗi người.
-b) Hiện nay bố 27 tuổi, con 9 tuổi. Sau 3 năm nữa, tổng số tuổi hai bố con là bao nhiêu?
-c) Tuổi bố gấp 2 lần tuổi con. Tổng số tuổi của hai bố con là 30 tuổi. Tính tuổi mỗi người.
-d) Hiện nay bố 28 tuổi, con 14 tuổi. Sau 8 năm nữa, tổng số tuổi hai bố con là bao nhiêu?
+a) Tuổi bố gấp 2 lần tuổi con. Tổng số tuổi của hai bố con là 24 tuổi. Tính tuổi mỗi người.
+b) Hiện nay bố 35 tuổi, con 7 tuổi. Sau 6 năm nữa, tổng số tuổi hai bố con là bao nhiêu?
+c) Hiện nay bố 21 tuổi, con 7 tuổi. Sau 6 năm nữa, tổng số tuổi hai bố con là bao nhiêu?
+d) Hiện nay bố 35 tuổi, con 7 tuổi. Cách đây 6 năm, bố hơn con bao nhiêu tuổi?
+e) Hiện nay bố 30 tuổi, con 10 tuổi. Sau 6 năm nữa, tổng số tuổi hai bố con là bao nhiêu?
 
 ### Bài 3. (4 điểm) Tìm hai số khi biết hiệu và tỉ số
 
 Vẽ sơ đồ đoạn thẳng rồi giải.
 
-a) Cửa hàng chứa nhiều hơn kho B 582 kg phân bón. Số phân bón ở kho B bằng 1 phần 7 số phân bón ở cửa hàng. Mỗi nơi chứa bao nhiêu kg?
-b) Hợp tác xã chứa nhiều hơn cửa hàng 152 kg xi măng. Số xi măng ở cửa hàng bằng 2 phần 3 số xi măng ở hợp tác xã. Mỗi nơi chứa bao nhiêu kg?
-c) Kho B chứa nhiều hơn kho A 425 kg phân bón. Số phân bón ở kho A bằng 2 phần 7 số phân bón ở kho B. Mỗi nơi chứa bao nhiêu kg?
-d) Hợp tác xã chứa nhiều hơn kho B 107 kg phân bón. Số phân bón ở kho B bằng 3 phần 4 số phân bón ở hợp tác xã. Mỗi nơi chứa bao nhiêu kg?
-e) Thư viện chứa nhiều hơn cửa hàng 31 kg phân bón. Số phân bón ở cửa hàng bằng 6 phần 7 số phân bón ở thư viện. Mỗi nơi chứa bao nhiêu kg?
+a) Kho B chứa nhiều hơn thư viện 192 kg phân bón. Số phân bón ở thư viện bằng 3 phần 5 số phân bón ở kho B. Mỗi nơi chứa bao nhiêu kg?
+b) Thư viện chứa nhiều hơn trang trại 210 kg đường. Số đường ở trang trại bằng 1 phần 7 số đường ở thư viện. Mỗi nơi chứa bao nhiêu kg?
+c) Kho B chứa nhiều hơn hợp tác xã 324 kg đường. Số đường ở hợp tác xã bằng 1 phần 3 số đường ở kho B. Mỗi nơi chứa bao nhiêu kg?
+d) Trang trại chứa nhiều hơn kho A 213 kg thóc. Số thóc ở kho A bằng 4 phần 7 số thóc ở trang trại. Mỗi nơi chứa bao nhiêu kg?
+e) Kho A chứa nhiều hơn kho B 212 kg thóc. Số thóc ở kho B bằng 1 phần 2 số thóc ở kho A. Mỗi nơi chứa bao nhiêu kg?
+f) Xưởng chứa nhiều hơn kho B 318 kg xi măng. Số xi măng ở kho B bằng 4 phần 7 số xi măng ở xưởng. Mỗi nơi chứa bao nhiêu kg?
 
-### Bài 4. (4 điểm) Dãy số cho bởi quy tắc truy hồi
+### Bài 4. (4 điểm) Tổng – tỉ, hiệu – tỉ khi một dữ kiện bị giấu
 
-Dãy số được lập theo ba quy tắc sau.
+Việc đầu tiên là gọi tên dữ kiện bị giấu.
 
-- Số hạng đầu bằng 1.
-- Số hạng ở **vị trí chẵn** bằng số hạng liền trước nhân 2 rồi cộng 6.
-- Số hạng ở **vị trí lẻ** bằng số hạng liền trước cộng 6 nhân với số thứ tự của số hạng liền trước.
+a) Trang trại và cửa hàng chứa tất cả 81 kg muối. Nếu chia số muối ở trang trại thành 3 phần bằng nhau thì số muối ở cửa hàng bằng 6 phần như thế. Mỗi nơi chứa bao nhiêu kg?
+b) Trang trại chứa 50 kg muối. Nếu trang trại nhận thêm 25 kg thì bằng số muối ở thư viện. Hỏi cả hai nơi chứa bao nhiêu kg?
+c) Số gạo ở trang trại bằng 5 phần 4 số gạo ở cửa hàng. Nếu chuyển 21 kg từ trang trại sang cửa hàng thì trang trại vẫn còn nhiều hơn. Biết trang trại hơn cửa hàng 21 kg, tìm số gạo mỗi nơi.
+d) Trang trại và hợp tác xã chứa tất cả 55 kg xi măng. Nếu chia số xi măng ở trang trại thành 2 phần bằng nhau thì số xi măng ở hợp tác xã bằng 3 phần như thế. Mỗi nơi chứa bao nhiêu kg?
+e) Hợp tác xã chứa 12 kg thóc. Nếu hợp tác xã nhận thêm 12 kg thì bằng số thóc ở cửa hàng. Hỏi cả hai nơi chứa bao nhiêu kg?
+f) Số đường ở cửa hàng bằng 6 phần 5 số đường ở kho B. Nếu chuyển 12 kg từ cửa hàng sang kho B thì cửa hàng vẫn còn nhiều hơn. Biết cửa hàng hơn kho B 24 kg, tìm số đường mỗi nơi.
 
-a) Viết ba số hạng đầu tiên của dãy.
-b) Số hạng thứ 5 của dãy là số nào?
-c) Số hạng thứ 7 của dãy là số nào?
-d) Số hạng thứ 9 của dãy là số nào?
-e) Từ số hạng thứ 4 đến số hạng thứ 6, dãy tăng thêm bao nhiêu đơn vị?
+### Bài 5. (4 điểm) Đếm số lần xuất hiện của một chữ số
 
-### Bài 5. (4 điểm) Tìm phân số của một số qua hai bước
+Đếm số lần xuất hiện, tính cả khi chữ số đó xuất hiện nhiều lần trong một số.
 
-Đọc kĩ “của số nào” trước khi tính.
-
-a) Một cửa hàng có 165 kg gạo. Ngày đầu bán 1 phần 5 số gạo, ngày thứ hai bán 1 phần 3 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
-b) Một cửa hàng có 186 kg gạo. Ngày đầu bán 1 phần 2 số gạo, ngày thứ hai bán 1 phần 3 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
-c) Một cửa hàng có 180 kg gạo. Ngày đầu bán 1 phần 5 số gạo, ngày thứ hai bán 1 phần 3 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
-d) Một cửa hàng có 350 kg gạo. Ngày đầu bán 1 phần 5 số gạo, ngày thứ hai bán 1 phần 2 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
+a) Từ 1 đến 500, chữ số 1 xuất hiện bao nhiêu lần?
+b) Từ 1 đến 150, chữ số 2 xuất hiện bao nhiêu lần?
+c) Từ 1 đến 300, chữ số 5 xuất hiện bao nhiêu lần?
+d) Từ 1 đến 200, chữ số 7 xuất hiện bao nhiêu lần?
+e) Từ 1 đến 200, chữ số 0 xuất hiện bao nhiêu lần?
 
 ---
 
@@ -447,39 +449,39 @@ f) Lỗi nào dễ mắc ở đề này?
 **Lỗi thường gặp:** Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. Phòng: Thử lại bằng công thức số bị chia = số chia × thương + số dư.
 
 ### Bài D.1
-**Đáp số:** a) 187 kg · b) cửa hàng: 88 kg, hợp tác xã: 132 kg · c) hợp tác xã: 54 kg, trang trại: 81 kg · d) cửa hàng: 22 kg, kho A: 110 kg
-**Hướng giải:** BẪY — Dữ kiện bị giấu sau một câu mô tả. Đề không cho thẳng tổng, hiệu hay tỉ số mà mô tả vòng. Bước bắt buộc đầu tiên: **dịch câu mô tả thành một con số** rồi mới vẽ sơ đồ và giải như bài chuẩn.
-**Nhãn tư duy:** TD2, TD6. Điểm chốt: Dịch xong dữ kiện ẩn thì bài trở lại **đúng dạng chuẩn**.
-**Lỗi thường gặp:** Lao vào tính khi chưa xác định được tổng, hiệu hay tỉ số. Phòng: Viết ba dòng trước khi tính: Tổng = … ; Hiệu = … ; Tỉ số = … ; dòng nào chưa biết thì để trống và đi tìm.
-**Gợi ý 3 tầng:** (1) Đề đã cho tổng chưa? Cho hiệu chưa? Cho tỉ số chưa? — (2) Câu nào trong đề đang mô tả cái còn thiếu? — (3) Dịch câu đó thành một con số rồi giải như bài chuẩn.
+**Đáp số:** a) 162 kg · b) 288 kg · c) 184 kg · d) 114 kg · e) 90 kg · f) 24 kg
+**Hướng giải:** BẪY — Phân số của số còn lại, không phải của tổng. Bước 1: tính số gạo bán ngày đầu bằng cách lấy tổng nhân với phân số. Bước 2: tính số gạo **còn lại** sau ngày đầu. Bước 3: phân số của ngày thứ hai tính trên **số còn lại**, không phải trên tổng ban đầu.
+**Nhãn tư duy:** TD2, TD3. Điểm chốt: Cụm “số gạo **còn lại**” đổi hẳn số bị nhân ở bước hai.
+**Lỗi thường gặp:** Lấy cả hai phân số nhân với tổng ban đầu. Phòng: Sau mỗi bước, viết rõ “còn lại … kg” rồi mới sang bước sau.
+**Gợi ý 3 tầng:** (1) Ngày đầu bán bao nhiêu ki-lô-gam? — (2) Sau ngày đầu còn lại bao nhiêu? — (3) Phân số của ngày thứ hai tính trên số nào?
 
 ### Bài D.2
-**Đáp số:** a) bố 22 tuổi, con 11 tuổi · b) 42 tuổi · c) bố 20 tuổi, con 10 tuổi · d) 58 tuổi
+**Đáp số:** a) bố 16 tuổi, con 8 tuổi · b) 54 tuổi · c) 40 tuổi · d) 28 tuổi · e) 52 tuổi
 **Hướng giải:** BẪY — Hiệu số tuổi không đổi. **Hiệu số tuổi của hai người không bao giờ thay đổi.** Còn tổng số tuổi thì mỗi năm tăng thêm đúng bằng số người. Tỉ số tuổi thì thay đổi theo từng năm.
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Hiệu tuổi là đại lượng **bất biến** — chìa khoá của mọi bài toán tuổi.
 **Lỗi thường gặp:** Cộng thêm số năm vào cả hiệu số tuổi. Phòng: Kẻ bảng ba dòng: trước kia – hiện nay – sau này, ghi rõ tuổi từng người.
 **Gợi ý 3 tầng:** (1) Sau mỗi năm, mỗi người tăng thêm mấy tuổi? — (2) Hiệu số tuổi có thay đổi không? — (3) Tổng số tuổi hai người tăng thêm bao nhiêu sau mỗi năm?
 
 ### Bài D.3
-**Đáp số:** a) kho B: 97 kg, cửa hàng: 679 kg · b) cửa hàng: 304 kg, hợp tác xã: 456 kg · c) kho A: 170 kg, kho B: 595 kg · d) kho B: 321 kg, hợp tác xã: 428 kg · e) cửa hàng: 186 kg, thư viện: 217 kg
+**Đáp số:** a) thư viện: 288 kg, kho B: 480 kg · b) trang trại: 35 kg, thư viện: 245 kg · c) hợp tác xã: 162 kg, kho B: 486 kg · d) kho A: 284 kg, trang trại: 497 kg · e) kho B: 212 kg, kho A: 424 kg · f) kho B: 424 kg, xưởng: 742 kg
 **Hướng giải:** BẪY — Hiệu số phần chứ không phải tổng số phần. Hiệu số phần = số phần lớn − số phần bé. Giá trị một phần = hiệu : hiệu số phần. Sau đó nhân với số phần của từng đại lượng.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Chia cho **hiệu số phần**, không phải tổng số phần.
 **Lỗi thường gặp:** Dùng nhầm công thức của tổng – tỉ cho bài hiệu – tỉ. Phòng: Đọc kĩ: đề cho “tổng” hay cho “nhiều hơn”? Ghi rõ ra trước khi vẽ.
 **Gợi ý 3 tầng:** (1) Đề cho tổng hay cho hiệu? — (2) Vẽ sơ đồ, phần dôi ra ứng với hiệu. — (3) Hiệu chia cho hiệu số phần ra giá trị một phần.
 
 ### Bài D.4
-**Đáp số:** a) 1, 8, 20 · b) 70 · c) 182 · d) 418 · e) 100
-**Hướng giải:** BẪY — Quy tắc khác nhau ở vị trí chẵn và lẻ. Lập bảng và tính lần lượt từng số hạng theo đúng quy tắc, không nhảy cóc. Ghi rõ số thứ tự của mỗi số hạng để chọn đúng nhánh quy tắc.
-**Nhãn tư duy:** TD3, TD6. Điểm chốt: Quy tắc phụ thuộc **vị trí chẵn hay lẻ** — phải đánh số thứ tự trước.
-**Lỗi thường gặp:** Áp dụng nhầm nhánh quy tắc vì không để ý vị trí. Phòng: Kẻ bảng hai dòng: dòng trên ghi vị trí, dòng dưới ghi số hạng.
-**Gợi ý 3 tầng:** (1) Kẻ bảng vị trí và số hạng. — (2) Xác định vị trí đang xét là chẵn hay lẻ. — (3) Áp dụng đúng nhánh quy tắc cho vị trí đó.
+**Đáp số:** a) trang trại: 27 kg, cửa hàng: 54 kg · b) 125 kg · c) cửa hàng: 84 kg, trang trại: 105 kg · d) trang trại: 22 kg, hợp tác xã: 33 kg · e) 36 kg · f) kho B: 120 kg, cửa hàng: 144 kg
+**Hướng giải:** BẪY — Dữ kiện bị giấu sau một câu mô tả. Đề không cho thẳng tổng, hiệu hay tỉ số mà mô tả vòng. Bước bắt buộc đầu tiên: **dịch câu mô tả thành một con số** rồi mới vẽ sơ đồ và giải như bài chuẩn.
+**Nhãn tư duy:** TD2, TD6. Điểm chốt: Dịch xong dữ kiện ẩn thì bài trở lại **đúng dạng chuẩn**.
+**Lỗi thường gặp:** Lao vào tính khi chưa xác định được tổng, hiệu hay tỉ số. Phòng: Viết ba dòng trước khi tính: Tổng = … ; Hiệu = … ; Tỉ số = … ; dòng nào chưa biết thì để trống và đi tìm.
+**Gợi ý 3 tầng:** (1) Đề đã cho tổng chưa? Cho hiệu chưa? Cho tỉ số chưa? — (2) Câu nào trong đề đang mô tả cái còn thiếu? — (3) Dịch câu đó thành một con số rồi giải như bài chuẩn.
 
 ### Bài D.5
-**Đáp số:** a) 88 kg · b) 62 kg · c) 96 kg · d) 140 kg
-**Hướng giải:** Bước 1: tính số gạo bán ngày đầu bằng cách lấy tổng nhân với phân số. Bước 2: tính số gạo **còn lại** sau ngày đầu. Bước 3: phân số của ngày thứ hai tính trên **số còn lại**, không phải trên tổng ban đầu.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Cụm “số gạo **còn lại**” đổi hẳn số bị nhân ở bước hai.
-**Lỗi thường gặp:** Lấy cả hai phân số nhân với tổng ban đầu. Phòng: Sau mỗi bước, viết rõ “còn lại … kg” rồi mới sang bước sau.
-**Gợi ý 3 tầng:** (1) Ngày đầu bán bao nhiêu ki-lô-gam? — (2) Sau ngày đầu còn lại bao nhiêu? — (3) Phân số của ngày thứ hai tính trên số nào?
+**Đáp số:** a) 200 · b) 35 · c) 60 · d) 40 · e) 31
+**Hướng giải:** Đếm theo từng hàng: đếm số lần chữ số đó đứng ở hàng đơn vị, rồi hàng chục, rồi hàng trăm. Ở mỗi hàng, các số thoả mãn lập thành dãy cách đều, dùng công thức đếm số hạng.
+**Nhãn tư duy:** TD4, TD6. Điểm chốt: Một số có thể chứa chữ số đó **nhiều lần**; đếm theo hàng thì không sót.
+**Lỗi thường gặp:** Đếm số lượng **số** chứa chữ số đó thay vì số **lần** xuất hiện. Phòng: Kẻ bảng: hàng đơn vị – hàng chục – hàng trăm, đếm riêng rồi cộng.
+**Gợi ý 3 tầng:** (1) Đếm riêng theo từng hàng. — (2) Ở hàng đơn vị, các số đó cách nhau bao nhiêu đơn vị? — (3) Cộng kết quả của cả ba hàng.
 
 ### Bài E.1
 **Đáp số:** a) Tỉ lệ bản đồ, tỉ lệ xích · b) Có kí hiệu tỉ lệ dạng 1 : n · c) Tỉ lệ, đổi đơn vị đo độ dài · d) Nhân hoặc chia theo tỉ lệ rồi đổi đơn vị · e) Tỉ lệ 1 : 1 000 thì 1 cm bản đồ đúng bằng 10 m thật. · f) Đổi mét sang xăng-ti-mét ngay từ đầu rồi lại nhân tỉ lệ một lần nữa.

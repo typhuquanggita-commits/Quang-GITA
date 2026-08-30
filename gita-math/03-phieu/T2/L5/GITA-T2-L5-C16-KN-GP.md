@@ -39,34 +39,34 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần B**
 
 - **Bài B.1** — a) câu lời giải nêu rõ đang tìm đại lượng nào · b) phép tính, viết đủ dấu và đủ đơn vị · c) kết quả kèm đơn vị · d) câu đáp số · e) một phần tư số điểm của bài
-- **Bài B.2** — a) “Tỉ số phần trăm trong mua bán là:” · b) “Giả thiết tạm là:” · c) “Chuyển động ngược chiều, cùng chiều là:” · d) “Thể tích hình hộp chữ nhật trong thực tế là:” · e) “Bài toán tổng – hiệu là:”
+- **Bài B.2** — a) “Tỉ lệ bản đồ, tỉ lệ xích là:” · b) “Chia tỉ lệ nhiều phần; bài toán trộn là:” · c) “Thể tích hình hộp chữ nhật trong thực tế là:” · d) “Công việc chung là:” · e) “Chuyển động ngược chiều, cùng chiều là:”
 - **Bài B.3** — a) không ghi trong dấu ngoặc phép tính · b) có, bắt buộc · c) có, bắt buộc · d) đơn vị vuông, ví dụ cm² · e) đơn vị khối, ví dụ cm³ · f) km/giờ hoặc m/phút
-- **Bài B.4** — a) Viết dòng đầu tiên: “Giá mua = 100%”. · b) Thử lại: nhân ngược ra tổng số chân xem có khớp không. · c) Vẽ mũi tên chỉ hướng hai xe trước khi chọn công thức. · d) Vẽ mặt cắt của bể và tô phần nước trước khi tính. · e) Vẽ sơ đồ đoạn thẳng trước, đoạn dài hơn luôn là số lớn. · f) Tự hỏi: mua nhiều hơn thì trả nhiều hơn hay ít hơn?
+- **Bài B.4** — a) Viết rõ một dòng: “1 cm bản đồ = … cm thật” trước khi tính. · b) Đếm số phần trên sơ đồ trước khi chia. · c) Vẽ mặt cắt của bể và tô phần nước trước khi tính. · d) Luôn viết dòng “Mỗi giờ người thứ nhất làm được … công việc” trước. · e) Vẽ mũi tên chỉ hướng hai xe trước khi chọn công thức. · f) Sau khi tính xong, so đáp số với trung bình cộng — phải nhỏ hơn.
 - **Bài B.5** — a) 1 phần trong 4 · b) 2 phần trong 4 · c) 1 phần trong 4 · d) 3 phần trong 4 · e) 1 đến 2 phần trong 4
 
 **Phần C**
 
 - **Bài C.1** — a) đơn vị đo — mọi số có cùng đơn vị chưa · b) phép tính — cộng trừ nhân chia có đúng thứ tự chưa · c) đề hỏi gì — mình đã trả lời đúng câu hỏi chưa · d) tầng 3 — trả lời lệch câu hỏi · e) khoảng 30 giây
-- **Bài C.2** — a) tầng 2 · b) Viết dòng đầu tiên: “Giá mua = 100%”. · c) toàn bộ số điểm của ý sai · d) Viết dòng đầu tiên: “Giá mua = 100%”. · e) Phần trăm lãi tính theo **giá mua**, không theo giá bán.
-- **Bài C.3** — a) tầng 2 · b) Vẽ mặt cắt của bể và tô phần nước trước khi tính. · c) toàn bộ số điểm của ý sai · d) Vẽ mặt cắt của bể và tô phần nước trước khi tính. · e) Chiều cao trong công thức là **mực nước thực tế**.
-- **Bài C.4** — a) tầng 2 · b) Đếm số phần trên sơ đồ trước khi chia. · c) toàn bộ số điểm của ý sai · d) Đếm số phần trên sơ đồ trước khi chia. · e) Chia cho **tổng số phần**, không chia cho số đại lượng.
-- **Bài C.5** — a) tầng 2 · b) Ước lượng trước: kết quả phải lớn hơn hay bé hơn số ngày ban đầu? · c) toàn bộ số điểm của ý sai · d) Ước lượng trước: kết quả phải lớn hơn hay bé hơn số ngày ban đầu? · e) Càng nhiều người thì càng **ít** ngày — đại lượng biến đổi **ngược chiều**.
+- **Bài C.2** — a) tầng 2 · b) Viết rõ một dòng: “1 cm bản đồ = … cm thật” trước khi tính. · c) toàn bộ số điểm của ý sai · d) Viết rõ một dòng: “1 cm bản đồ = … cm thật” trước khi tính. · e) Nhân hay chia với n trước, **đổi đơn vị sau** — làm ngược là rối.
+- **Bài C.3** — a) tầng 2 · b) Luôn viết dòng “Mỗi giờ người thứ nhất làm được … công việc” trước. · c) toàn bộ số điểm của ý sai · d) Luôn viết dòng “Mỗi giờ người thứ nhất làm được … công việc” trước. · e) Cộng **năng suất mỗi giờ**, tuyệt đối không cộng thời gian.
+- **Bài C.4** — a) tầng 2 · b) Ước lượng trước: kết quả phải lớn hơn hay bé hơn số ngày ban đầu? · c) toàn bộ số điểm của ý sai · d) Ước lượng trước: kết quả phải lớn hơn hay bé hơn số ngày ban đầu? · e) Càng nhiều người thì càng **ít** ngày — đại lượng biến đổi **ngược chiều**.
+- **Bài C.5** — a) tầng 2 · b) Sau mỗi bước, viết rõ “còn lại … kg” rồi mới sang bước sau. · c) toàn bộ số điểm của ý sai · d) Sau mỗi bước, viết rõ “còn lại … kg” rồi mới sang bước sau. · e) Cụm “số gạo **còn lại**” đổi hẳn số bị nhân ở bước hai.
 
 **Phần D**
 
 - **Bài D.1** — a) Mô phỏng đề thi vào lớp 6 và tổng duyệt · b) 6 · c) tên một dạng bài của chương · d) 3 nhánh con: dấu hiệu · phương pháp · lỗi hay mắc · e) so với bảng dạng bài ở phiếu Dạng bài & Đọc vị
-- **Bài D.2** — a) Hai loại đối tượng, biết tổng số và tổng của một đại lượng khác · b) Giả sử đồng nhất một loại → tính phần chênh → chia cho hiệu đơn vị · c) Chia số chân thiếu cho 4 thay vì cho hiệu số chân của hai loài. · d) Phương pháp giả thiết tạm · e) Số chó = (số chân − 2 × số con) : 2 — thuộc công thức rút gọn để nhẩm.
-- **Bài D.3** — a) Bể nước, thùng, hộp có ba kích thước · b) Diện tích đáy × chiều cao tương ứng · c) Lấy chiều cao bể để tính lượng nước đang có. · d) V = dài × rộng × cao; 1 m³ = 1 000 lít · e) Tính diện tích đáy một lần rồi dùng lại cho mọi câu hỏi về bể đó.
-- **Bài D.4** — a) Hai đại lượng cùng tăng cùng giảm · b) Rút về đơn vị hoặc dùng tỉ số · c) Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch. · d) Đại lượng tỉ lệ thuận · e) Nếu số lượng mới gấp số lượng cũ một số nguyên lần thì nhân thẳng, không cần rút về đơn vị.
-- **Bài D.5** — a) Cụm “… số còn lại”, “… số đó” · b) Tính tuần tự, sau mỗi bước ghi lại số còn lại · c) Lấy cả hai phân số nhân với tổng ban đầu. · d) Tìm phân số của một số · e) Còn lại sau ngày đầu là (1 − phân số) của tổng; nhân trực tiếp cho nhanh.
+- **Bài D.2** — a) “Tỉ lệ với … , … , …” hoặc “trộn … với …” · b) Tổng số phần → giá trị một phần → nhân · c) Chia tổng cho 3 vì thấy có ba tổ. · d) Tỉ số, chia theo tỉ lệ, nhân với đơn giá · e) Tổng luôn chia hết cho tổng số phần; không chia hết là đọc sai tỉ lệ.
+- **Bài D.3** — a) “Làm một mình trong … giờ”, “cùng làm” · b) Quy công việc về 1, cộng năng suất · c) Cộng hai khoảng thời gian rồi chia đôi. · d) Năng suất, phân số, phép chia phân số · e) Thời gian làm chung luôn **bé hơn** thời gian của người làm nhanh nhất — dùng để loại đáp số sai ngay.
+- **Bài D.4** — a) Đề cho **hai vận tốc khác nhau trên hai đoạn** của cùng một hành trình · b) Tính thời gian từng đoạn, cộng lại, rồi chia tổng quãng đường · c) Lấy (vận tốc lên + vận tốc xuống) : 2. · d) Vận tốc – quãng đường – thời gian; vận tốc trung bình · e) Đi và về cùng một quãng đường thì vận tốc trung bình = 2 × v₁ × v₂ : (v₁ + v₂).
+- **Bài D.5** — a) Hai đại lượng cùng tăng cùng giảm · b) Rút về đơn vị hoặc dùng tỉ số · c) Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch. · d) Đại lượng tỉ lệ thuận · e) Nếu số lượng mới gấp số lượng cũ một số nguyên lần thì nhân thẳng, không cần rút về đơn vị.
 
 **Phần E**
 
 - **Bài E.1** — a) giới thiệu chương “Mô phỏng đề thi vào lớp 6 và tổng duyệt” và mục tiêu · b) trình bày sơ đồ tư duy chương · c) giảng một dạng bài kèm ví dụ mẫu · d) nêu lỗi hay mắc và cách phòng · e) ra một bài cho lớp làm và chữa nhanh · f) tự phân công, mỗi bạn ít nhất một phút
-- **Bài E.2** — a) “Hôm nay nhóm mình nói về Tỉ số phần trăm trong mua bán.” · b) Từ khoá “giảm giá”, “tăng giá”, “lãi”, “lỗ” · c) Tỉ số phần trăm, mốc quy chiếu 100% · d) Hàng giá 500 000 đồng giảm 20%. Giá còn lại bao nhiêu? → 400 000 đồng · e) Chia tiền lãi cho giá bán nên ra tỉ lệ nhỏ hơn thực tế. · f) Giảm 20% nghĩa là còn 80% — nhân thẳng một lần thay vì trừ hai bước.
-- **Bài E.3** — a) “Hôm nay nhóm mình nói về Chuyển động ngược chiều, cùng chiều.” · b) “Đi ngược chiều để gặp nhau”, “đuổi theo” · c) Quan hệ quãng đường – vận tốc – thời gian · d) Hai xe cách nhau 100 km đi ngược chiều, vận tốc 30 và 20 km/giờ. Sau mấy giờ gặp nhau? → 2 giờ · e) Dùng tổng vận tốc cho bài đuổi nhau. · f) Vẽ hai mũi tên: chụm vào nhau thì cộng, cùng hướng thì trừ.
-- **Bài E.4** — a) “Hôm nay nhóm mình nói về Bài toán tổng – hiệu.” · b) Đề cho **tổng** và **hiệu** của hai số · c) Công thức tổng – hiệu, sơ đồ đoạn thẳng · d) Tổng hai số là 100, hiệu là 20. Tìm hai số. → 60 và 40 · e) Lấy (tổng + hiệu) : 2 rồi gọi đó là số bé. · f) Số lớn và số bé luôn có trung bình cộng bằng nửa tổng.
-- **Bài E.5** — a) “Hôm nay nhóm mình nói về Chia tỉ lệ nhiều phần; bài toán trộn.” · b) “Tỉ lệ với … , … , …” hoặc “trộn … với …” · c) Tỉ số, chia theo tỉ lệ, nhân với đơn giá · d) Chia 120 cây theo tỉ lệ 1 : 2 : 3. Mỗi phần bao nhiêu cây? → 20, 40, 60 · e) Chia tổng cho 3 vì thấy có ba tổ. · f) Tổng luôn chia hết cho tổng số phần; không chia hết là đọc sai tỉ lệ.
+- **Bài E.2** — a) “Hôm nay nhóm mình nói về Tỉ lệ bản đồ, tỉ lệ xích.” · b) Có kí hiệu tỉ lệ dạng 1 : n · c) Tỉ lệ, đổi đơn vị đo độ dài · d) Bản đồ tỉ lệ 1 : 1 000, đoạn đo được 5 cm dài bao nhiêu mét thật? → 50 m · e) Đổi mét sang xăng-ti-mét ngay từ đầu rồi lại nhân tỉ lệ một lần nữa. · f) Tỉ lệ 1 : 1 000 thì 1 cm bản đồ đúng bằng 10 m thật.
+- **Bài E.3** — a) “Hôm nay nhóm mình nói về Thể tích hình hộp chữ nhật trong thực tế.” · b) Bể nước, thùng, hộp có ba kích thước · c) V = dài × rộng × cao; 1 m³ = 1 000 lít · d) Bể 2 m × 3 m × 1 m chứa đầy được bao nhiêu lít? → 6 000 lít · e) Lấy chiều cao bể để tính lượng nước đang có. · f) Tính diện tích đáy một lần rồi dùng lại cho mọi câu hỏi về bể đó.
+- **Bài E.4** — a) “Hôm nay nhóm mình nói về Chuyển động ngược chiều, cùng chiều.” · b) “Đi ngược chiều để gặp nhau”, “đuổi theo” · c) Quan hệ quãng đường – vận tốc – thời gian · d) Hai xe cách nhau 100 km đi ngược chiều, vận tốc 30 và 20 km/giờ. Sau mấy giờ gặp nhau? → 2 giờ · e) Dùng tổng vận tốc cho bài đuổi nhau. · f) Vẽ hai mũi tên: chụm vào nhau thì cộng, cùng hướng thì trừ.
+- **Bài E.5** — a) “Hôm nay nhóm mình nói về Tỉ lệ nghịch.” · b) Số người tăng thì thời gian giảm · c) Đại lượng tỉ lệ nghịch, tổng số ngày công · d) 6 người làm xong trong 8 ngày. 12 người làm xong trong mấy ngày? → 4 ngày · e) Nhân chia như tỉ lệ thuận nên càng nhiều người lại càng lâu. · f) Số người gấp đôi thì số ngày giảm một nửa — nhẩm được ngay khi tỉ số đẹp.
 
 ---
 
@@ -200,7 +200,7 @@ Kết quả: **câu lời giải nêu rõ đang tìm đại lượng nào**.
 
 **Các bước giải**
 
-Xét ý a: Câu lời giải mở đầu cho dạng “Tỉ số phần trăm trong mua bán”?
+Xét ý a: Câu lời giải mở đầu cho dạng “Tỉ lệ bản đồ, tỉ lệ xích”?
 
 Đọc vị: đây là dạng **Kỹ năng viết câu lời giải**; dấu hiệu là Đề hỏi gì thì câu lời giải nhắc lại điều đó.
 
@@ -210,7 +210,7 @@ Cách làm: Lấy cụm từ trong câu hỏi làm câu lời giải.
 
 Lối tắt: Sao chép cụm từ trong câu hỏi là cách viết câu lời giải nhanh và chắc nhất.
 
-Kết quả: **“Tỉ số phần trăm trong mua bán là:”**.
+Kết quả: **“Tỉ lệ bản đồ, tỉ lệ xích là:”**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Câu lời giải chỉ cần nhắc lại đại lượng đang tìm, không cần dài dòng.
 
@@ -240,7 +240,7 @@ Kết quả: **không ghi trong dấu ngoặc phép tính**.
 
 **Các bước giải**
 
-Xét ý a: Lỗi: Chia tiền lãi cho giá bán nên ra tỉ lệ nhỏ hơn thực tế. — cách phòng?
+Xét ý a: Lỗi: Đổi mét sang xăng-ti-mét ngay từ đầu rồi lại nhân tỉ lệ một lần nữa. — cách phòng?
 
 Đọc vị: đây là dạng **Sổ lỗi và cách phòng**; dấu hiệu là Cột “Lỗi thường gặp” trong bảng phân tích.
 
@@ -250,7 +250,7 @@ Cách làm: Ghép cặp lỗi với cách phòng.
 
 Lối tắt: Đọc lại sổ lỗi 3 phút trước mỗi bài kiểm tra.
 
-Kết quả: **Viết dòng đầu tiên: “Giá mua = 100%”.**.
+Kết quả: **Viết rõ một dòng: “1 cm bản đồ = … cm thật” trước khi tính.**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Mỗi lỗi đều có một cách phòng cụ thể, làm được ngay trong lúc làm bài. Chép cả cặp lỗi – cách phòng vào sổ lỗi.
 
@@ -302,19 +302,19 @@ Kết quả: **đơn vị đo — mọi số có cùng đơn vị chưa**.
 
 Xét ý a: Lỗi này bị bắt ở tầng dò soát nào?
 
-Đọc vị: đây là dạng **Tỉ số phần trăm trong mua bán**; dấu hiệu là Từ khoá “giảm giá”, “tăng giá”, “lãi”, “lỗ”.
+Đọc vị: đây là dạng **Tỉ lệ bản đồ, tỉ lệ xích**; dấu hiệu là Có kí hiệu tỉ lệ dạng 1 : n.
 
-Kiến thức phải dùng: Tỉ số phần trăm, mốc quy chiếu 100%.
+Kiến thức phải dùng: Tỉ lệ, đổi đơn vị đo độ dài.
 
-Cách làm: Chốt mốc 100% rồi cộng trừ phần trăm.
+Cách làm: Nhân hoặc chia theo tỉ lệ rồi đổi đơn vị.
 
-Lối tắt: Giảm 20% nghĩa là còn 80% — nhân thẳng một lần thay vì trừ hai bước.
+Lối tắt: Tỉ lệ 1 : 1 000 thì 1 cm bản đồ đúng bằng 10 m thật.
 
 Kết quả: **tầng 2**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Giá gốc luôn ứng với 100%. Giảm p% thì giá mới ứng với (100 − p)%; tăng p% thì ứng với (100 + p)%. Lãi tính theo **giá mua**.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Tỉ lệ 1 : n nghĩa là 1 đơn vị trên bản đồ ứng với n đơn vị thật, **cùng một loại đơn vị**. Từ bản đồ ra thật thì nhân với n; từ thật về bản đồ thì chia cho n. Đổi đơn vị chỉ làm ở bước cuối.
 
-*Điểm chốt:* Phần trăm lãi tính theo **giá mua**, không theo giá bán.
+*Điểm chốt:* Nhân hay chia với n trước, **đổi đơn vị sau** — làm ngược là rối.
 
 ### Bài C.3 — Dò soát tình huống 2
 
@@ -322,41 +322,21 @@ Kết quả: **tầng 2**.
 
 Xét ý a: Lỗi này bị bắt ở tầng dò soát nào?
 
-Đọc vị: đây là dạng **Thể tích hình hộp chữ nhật trong thực tế**; dấu hiệu là Bể nước, thùng, hộp có ba kích thước.
+Đọc vị: đây là dạng **Công việc chung**; dấu hiệu là “Làm một mình trong … giờ”, “cùng làm”.
 
-Kiến thức phải dùng: V = dài × rộng × cao; 1 m³ = 1 000 lít.
+Kiến thức phải dùng: Năng suất, phân số, phép chia phân số.
 
-Cách làm: Diện tích đáy × chiều cao tương ứng.
+Cách làm: Quy công việc về 1, cộng năng suất.
 
-Lối tắt: Tính diện tích đáy một lần rồi dùng lại cho mọi câu hỏi về bể đó.
+Lối tắt: Thời gian làm chung luôn **bé hơn** thời gian của người làm nhanh nhất — dùng để loại đáp số sai ngay.
 
 Kết quả: **tầng 2**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Thể tích hình hộp chữ nhật bằng dài × rộng × cao. Khi bể chưa đầy, chiều cao dùng để tính là **mực nước**, không phải chiều cao bể. 1 m³ = 1 000 lít.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Coi cả công việc là 1. Người làm xong trong a giờ thì mỗi giờ làm được 1 phần a công việc. Cùng làm thì mỗi giờ cả hai làm được tổng hai phân số đó. Thời gian làm chung = 1 chia cho năng suất chung.
 
-*Điểm chốt:* Chiều cao trong công thức là **mực nước thực tế**.
+*Điểm chốt:* Cộng **năng suất mỗi giờ**, tuyệt đối không cộng thời gian.
 
 ### Bài C.4 — Dò soát tình huống 3
-
-**Các bước giải**
-
-Xét ý a: Lỗi này bị bắt ở tầng dò soát nào?
-
-Đọc vị: đây là dạng **Chia tỉ lệ nhiều phần; bài toán trộn**; dấu hiệu là “Tỉ lệ với … , … , …” hoặc “trộn … với …”.
-
-Kiến thức phải dùng: Tỉ số, chia theo tỉ lệ, nhân với đơn giá.
-
-Cách làm: Tổng số phần → giá trị một phần → nhân.
-
-Lối tắt: Tổng luôn chia hết cho tổng số phần; không chia hết là đọc sai tỉ lệ.
-
-Kết quả: **tầng 2**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Chia một tổng theo tỉ lệ ba số: cộng ba số phần lại, chia tổng cho tổng số phần được giá trị một phần, rồi nhân ra từng đại lượng. Bài trộn thì tính riêng từng loại rồi cộng.
-
-*Điểm chốt:* Chia cho **tổng số phần**, không chia cho số đại lượng.
-
-### Bài C.5 — Dò soát tình huống 4
 
 **Các bước giải**
 
@@ -375,6 +355,26 @@ Kết quả: **tầng 2**.
 **Cách nghĩ chung cho mọi bài cùng dạng.** Tổng số ngày công là không đổi: số người × số ngày = hằng số. Tính tổng số ngày công trước, rồi chia cho số người mới để ra số ngày mới.
 
 *Điểm chốt:* Càng nhiều người thì càng **ít** ngày — đại lượng biến đổi **ngược chiều**.
+
+### Bài C.5 — Dò soát tình huống 4
+
+**Các bước giải**
+
+Xét ý a: Lỗi này bị bắt ở tầng dò soát nào?
+
+Đọc vị: đây là dạng **Tìm phân số của một số, nhiều bước**; dấu hiệu là Cụm “… số còn lại”, “… số đó”.
+
+Kiến thức phải dùng: Tìm phân số của một số.
+
+Cách làm: Tính tuần tự, sau mỗi bước ghi lại số còn lại.
+
+Lối tắt: Còn lại sau ngày đầu là (1 − phân số) của tổng; nhân trực tiếp cho nhanh.
+
+Kết quả: **tầng 2**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Bước 1: tính số gạo bán ngày đầu bằng cách lấy tổng nhân với phân số. Bước 2: tính số gạo **còn lại** sau ngày đầu. Bước 3: phân số của ngày thứ hai tính trên **số còn lại**, không phải trên tổng ban đầu.
+
+*Điểm chốt:* Cụm “số gạo **còn lại**” đổi hẳn số bị nhân ở bước hai.
 
 ### Bài D.1 — Khung sơ đồ tổng hợp chương
 
@@ -396,47 +396,67 @@ Kết quả: **Mô phỏng đề thi vào lớp 6 và tổng duyệt**.
 
 *Điểm chốt:* Vẽ **từ trí nhớ** mới có tác dụng; chép lại thì không.
 
-### Bài D.2 — Nhánh 1 — Giả thiết tạm
+### Bài D.2 — Nhánh 1 — Chia tỉ lệ nhiều phần; bài toán trộn
 
 **Các bước giải**
 
 Xét ý a: Nhánh con 1 — dấu hiệu nhận biết?
 
-Đọc vị: đây là dạng **Giả thiết tạm**; dấu hiệu là Hai loại đối tượng, biết tổng số và tổng của một đại lượng khác.
+Đọc vị: đây là dạng **Chia tỉ lệ nhiều phần; bài toán trộn**; dấu hiệu là “Tỉ lệ với … , … , …” hoặc “trộn … với …”.
 
-Kiến thức phải dùng: Phương pháp giả thiết tạm.
+Kiến thức phải dùng: Tỉ số, chia theo tỉ lệ, nhân với đơn giá.
 
-Cách làm: Giả sử đồng nhất một loại → tính phần chênh → chia cho hiệu đơn vị.
+Cách làm: Tổng số phần → giá trị một phần → nhân.
 
-Lối tắt: Số chó = (số chân − 2 × số con) : 2 — thuộc công thức rút gọn để nhẩm.
+Lối tắt: Tổng luôn chia hết cho tổng số phần; không chia hết là đọc sai tỉ lệ.
 
-Kết quả: **Hai loại đối tượng, biết tổng số và tổng của một đại lượng khác**.
+Kết quả: **“Tỉ lệ với … , … , …” hoặc “trộn … với …”**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
 
-*Điểm chốt:* Chênh lệch chân của **một** con là 4 − 2 = 2 — đó là số chia.
+*Điểm chốt:* Chia cho **tổng số phần**, không chia cho số đại lượng.
 
-### Bài D.3 — Nhánh 2 — Thể tích hình hộp chữ nhật trong thực tế
+### Bài D.3 — Nhánh 2 — Công việc chung
 
 **Các bước giải**
 
 Xét ý a: Nhánh con 1 — dấu hiệu nhận biết?
 
-Đọc vị: đây là dạng **Thể tích hình hộp chữ nhật trong thực tế**; dấu hiệu là Bể nước, thùng, hộp có ba kích thước.
+Đọc vị: đây là dạng **Công việc chung**; dấu hiệu là “Làm một mình trong … giờ”, “cùng làm”.
 
-Kiến thức phải dùng: V = dài × rộng × cao; 1 m³ = 1 000 lít.
+Kiến thức phải dùng: Năng suất, phân số, phép chia phân số.
 
-Cách làm: Diện tích đáy × chiều cao tương ứng.
+Cách làm: Quy công việc về 1, cộng năng suất.
 
-Lối tắt: Tính diện tích đáy một lần rồi dùng lại cho mọi câu hỏi về bể đó.
+Lối tắt: Thời gian làm chung luôn **bé hơn** thời gian của người làm nhanh nhất — dùng để loại đáp số sai ngay.
 
-Kết quả: **Bể nước, thùng, hộp có ba kích thước**.
+Kết quả: **“Làm một mình trong … giờ”, “cùng làm”**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
 
-*Điểm chốt:* Chiều cao trong công thức là **mực nước thực tế**.
+*Điểm chốt:* Cộng **năng suất mỗi giờ**, tuyệt đối không cộng thời gian.
 
-### Bài D.4 — Nhánh 3 — Tỉ lệ thuận, rút về đơn vị
+### Bài D.4 — Nhánh 3 — Chuyển động lên dốc xuống dốc
+
+**Các bước giải**
+
+Xét ý a: Nhánh con 1 — dấu hiệu nhận biết?
+
+Đọc vị: đây là dạng **Chuyển động lên dốc xuống dốc**; dấu hiệu là Đề cho **hai vận tốc khác nhau trên hai đoạn** của cùng một hành trình.
+
+Kiến thức phải dùng: Vận tốc – quãng đường – thời gian; vận tốc trung bình.
+
+Cách làm: Tính thời gian từng đoạn, cộng lại, rồi chia tổng quãng đường.
+
+Lối tắt: Đi và về cùng một quãng đường thì vận tốc trung bình = 2 × v₁ × v₂ : (v₁ + v₂).
+
+Kết quả: **Đề cho **hai vận tốc khác nhau trên hai đoạn** của cùng một hành trình**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
+
+*Điểm chốt:* Vận tốc trung bình luôn **nhỏ hơn** trung bình cộng hai vận tốc. Ra lớn hơn hoặc bằng là chắc chắn sai.
+
+### Bài D.5 — Nhánh 4 — Tỉ lệ thuận, rút về đơn vị
 
 **Các bước giải**
 
@@ -455,26 +475,6 @@ Kết quả: **Hai đại lượng cùng tăng cùng giảm**.
 **Cách nghĩ chung cho mọi bài cùng dạng.** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
 
 *Điểm chốt:* Hai đại lượng **cùng tăng, cùng giảm** thì tỉ lệ thuận.
-
-### Bài D.5 — Nhánh 4 — Tìm phân số của một số, nhiều bước
-
-**Các bước giải**
-
-Xét ý a: Nhánh con 1 — dấu hiệu nhận biết?
-
-Đọc vị: đây là dạng **Tìm phân số của một số, nhiều bước**; dấu hiệu là Cụm “… số còn lại”, “… số đó”.
-
-Kiến thức phải dùng: Tìm phân số của một số.
-
-Cách làm: Tính tuần tự, sau mỗi bước ghi lại số còn lại.
-
-Lối tắt: Còn lại sau ngày đầu là (1 − phân số) của tổng; nhân trực tiếp cho nhanh.
-
-Kết quả: **Cụm “… số còn lại”, “… số đó”**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
-
-*Điểm chốt:* Cụm “số gạo **còn lại**” đổi hẳn số bị nhân ở bước hai.
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
@@ -496,27 +496,47 @@ Kết quả: **giới thiệu chương “Mô phỏng đề thi vào lớp 6 và
 
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
-### Bài E.2 — Nội dung giảng — Tỉ số phần trăm trong mua bán
+### Bài E.2 — Nội dung giảng — Tỉ lệ bản đồ, tỉ lệ xích
 
 **Các bước giải**
 
 Xét ý a: Câu mở đầu giới thiệu dạng bài?
 
-Đọc vị: đây là dạng **Tỉ số phần trăm trong mua bán**; dấu hiệu là Từ khoá “giảm giá”, “tăng giá”, “lãi”, “lỗ”.
+Đọc vị: đây là dạng **Tỉ lệ bản đồ, tỉ lệ xích**; dấu hiệu là Có kí hiệu tỉ lệ dạng 1 : n.
 
-Kiến thức phải dùng: Tỉ số phần trăm, mốc quy chiếu 100%.
+Kiến thức phải dùng: Tỉ lệ, đổi đơn vị đo độ dài.
 
-Cách làm: Chốt mốc 100% rồi cộng trừ phần trăm.
+Cách làm: Nhân hoặc chia theo tỉ lệ rồi đổi đơn vị.
 
-Lối tắt: Giảm 20% nghĩa là còn 80% — nhân thẳng một lần thay vì trừ hai bước.
+Lối tắt: Tỉ lệ 1 : 1 000 thì 1 cm bản đồ đúng bằng 10 m thật.
 
-Kết quả: **“Hôm nay nhóm mình nói về Tỉ số phần trăm trong mua bán.”**.
+Kết quả: **“Hôm nay nhóm mình nói về Tỉ lệ bản đồ, tỉ lệ xích.”**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Giá gốc luôn ứng với 100%. Giảm p% thì giá mới ứng với (100 − p)%; tăng p% thì ứng với (100 + p)%. Lãi tính theo **giá mua**.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Tỉ lệ 1 : n nghĩa là 1 đơn vị trên bản đồ ứng với n đơn vị thật, **cùng một loại đơn vị**. Từ bản đồ ra thật thì nhân với n; từ thật về bản đồ thì chia cho n. Đổi đơn vị chỉ làm ở bước cuối.
 
-*Điểm chốt:* Phần trăm lãi tính theo **giá mua**, không theo giá bán.
+*Điểm chốt:* Nhân hay chia với n trước, **đổi đơn vị sau** — làm ngược là rối.
 
-### Bài E.3 — Nội dung giảng — Chuyển động ngược chiều, cùng chiều
+### Bài E.3 — Nội dung giảng — Thể tích hình hộp chữ nhật trong thực tế
+
+**Các bước giải**
+
+Xét ý a: Câu mở đầu giới thiệu dạng bài?
+
+Đọc vị: đây là dạng **Thể tích hình hộp chữ nhật trong thực tế**; dấu hiệu là Bể nước, thùng, hộp có ba kích thước.
+
+Kiến thức phải dùng: V = dài × rộng × cao; 1 m³ = 1 000 lít.
+
+Cách làm: Diện tích đáy × chiều cao tương ứng.
+
+Lối tắt: Tính diện tích đáy một lần rồi dùng lại cho mọi câu hỏi về bể đó.
+
+Kết quả: **“Hôm nay nhóm mình nói về Thể tích hình hộp chữ nhật trong thực tế.”**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Thể tích hình hộp chữ nhật bằng dài × rộng × cao. Khi bể chưa đầy, chiều cao dùng để tính là **mực nước**, không phải chiều cao bể. 1 m³ = 1 000 lít.
+
+*Điểm chốt:* Chiều cao trong công thức là **mực nước thực tế**.
+
+### Bài E.4 — Nội dung giảng — Chuyển động ngược chiều, cùng chiều
 
 **Các bước giải**
 
@@ -536,45 +556,25 @@ Kết quả: **“Hôm nay nhóm mình nói về Chuyển động ngược chi�
 
 *Điểm chốt:* Ngược chiều dùng **tổng** vận tốc, cùng chiều dùng **hiệu** vận tốc.
 
-### Bài E.4 — Nội dung giảng — Bài toán tổng – hiệu
+### Bài E.5 — Nội dung giảng — Tỉ lệ nghịch
 
 **Các bước giải**
 
 Xét ý a: Câu mở đầu giới thiệu dạng bài?
 
-Đọc vị: đây là dạng **Bài toán tổng – hiệu**; dấu hiệu là Đề cho **tổng** và **hiệu** của hai số.
+Đọc vị: đây là dạng **Tỉ lệ nghịch**; dấu hiệu là Số người tăng thì thời gian giảm.
 
-Kiến thức phải dùng: Công thức tổng – hiệu, sơ đồ đoạn thẳng.
+Kiến thức phải dùng: Đại lượng tỉ lệ nghịch, tổng số ngày công.
 
-Cách làm: Vẽ sơ đồ, đưa về hai phần bằng nhau.
+Cách làm: Quy về tổng số ngày công rồi chia.
 
-Lối tắt: Số lớn và số bé luôn có trung bình cộng bằng nửa tổng.
+Lối tắt: Số người gấp đôi thì số ngày giảm một nửa — nhẩm được ngay khi tỉ số đẹp.
 
-Kết quả: **“Hôm nay nhóm mình nói về Bài toán tổng – hiệu.”**.
+Kết quả: **“Hôm nay nhóm mình nói về Tỉ lệ nghịch.”**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Số lớn = (tổng + hiệu) : 2. Số bé = (tổng − hiệu) : 2. Cách hiểu: vẽ hai đoạn thẳng, đoạn dài hơn phần hiệu; bớt phần hiệu đi thì hai đoạn bằng nhau, mỗi đoạn là số bé.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Tổng số ngày công là không đổi: số người × số ngày = hằng số. Tính tổng số ngày công trước, rồi chia cho số người mới để ra số ngày mới.
 
-*Điểm chốt:* Cộng hiệu ra **số lớn**, trừ hiệu ra **số bé** — nhớ đúng chiều.
-
-### Bài E.5 — Nội dung giảng — Chia tỉ lệ nhiều phần; bài toán trộn
-
-**Các bước giải**
-
-Xét ý a: Câu mở đầu giới thiệu dạng bài?
-
-Đọc vị: đây là dạng **Chia tỉ lệ nhiều phần; bài toán trộn**; dấu hiệu là “Tỉ lệ với … , … , …” hoặc “trộn … với …”.
-
-Kiến thức phải dùng: Tỉ số, chia theo tỉ lệ, nhân với đơn giá.
-
-Cách làm: Tổng số phần → giá trị một phần → nhân.
-
-Lối tắt: Tổng luôn chia hết cho tổng số phần; không chia hết là đọc sai tỉ lệ.
-
-Kết quả: **“Hôm nay nhóm mình nói về Chia tỉ lệ nhiều phần; bài toán trộn.”**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Chia một tổng theo tỉ lệ ba số: cộng ba số phần lại, chia tổng cho tổng số phần được giá trị một phần, rồi nhân ra từng đại lượng. Bài trộn thì tính riêng từng loại rồi cộng.
-
-*Điểm chốt:* Chia cho **tổng số phần**, không chia cho số đại lượng.
+*Điểm chốt:* Càng nhiều người thì càng **ít** ngày — đại lượng biến đổi **ngược chiều**.
 
 ---
 
@@ -590,25 +590,25 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | A.4 | Rút về đơn vị | Đại lượng tỉ lệ thuận, phép chia và phép nhân | Cho giá trị của một nhóm, hỏi giá trị của nhóm khác cùng loại | Chia để rút về một đơn vị rồi nhân | Nếu số bao mới gấp đôi số bao cũ thì khối lượng cũng gấp đôi — dùng tỉ số để bỏ qua bước chia. | 108 · 72 · 477 · 24 |
 | A.5 | Tìm trung bình cộng | Định nghĩa trung bình cộng | Từ khoá “trung bình cộng”, “trung bình mỗi …” | Tổng chia số lượng | Ước lượng: trung bình cộng luôn nằm giữa số bé nhất và số lớn nhất. | 86 · 127 · 200 · 200… |
 | B.1 | Kỹ năng trình bày | Chuẩn trình bày bài giải | Yêu cầu “trình bày lời giải” | Viết đủ bốn dòng | Viết câu lời giải trước, phép tính sau — không bao giờ ngược lại. | câu lời giải nêu rõ đang tìm đại lượng nào · phép tính, viết đủ dấu và đủ đơn vị · kết quả kèm đơn vị · câu đáp số… |
-| B.2 | Kỹ năng viết câu lời giải | Chuẩn trình bày | Đề hỏi gì thì câu lời giải nhắc lại điều đó | Lấy cụm từ trong câu hỏi làm câu lời giải | Sao chép cụm từ trong câu hỏi là cách viết câu lời giải nhanh và chắc nhất. | “Tỉ số phần trăm trong mua bán là:” · “Giả thiết tạm là:” · “Chuyển động ngược chiều, cùng chiều là:” · “Thể tích hình hộp chữ nhật trong thực tế là:”… |
+| B.2 | Kỹ năng viết câu lời giải | Chuẩn trình bày | Đề hỏi gì thì câu lời giải nhắc lại điều đó | Lấy cụm từ trong câu hỏi làm câu lời giải | Sao chép cụm từ trong câu hỏi là cách viết câu lời giải nhanh và chắc nhất. | “Tỉ lệ bản đồ, tỉ lệ xích là:” · “Chia tỉ lệ nhiều phần; bài toán trộn là:” · “Thể tích hình hộp chữ nhật trong thực tế là:” · “Công việc chung là:”… |
 | B.3 | Kỹ năng ghi đơn vị | Đơn vị đo các đại lượng | Đáp số của bài có đại lượng đo | Kiểm tra đơn vị ở bước cuối | Nhìn đơn vị của đáp số là biết ngay mình có nhầm chu vi với diện tích không. | không ghi trong dấu ngoặc phép tính · có, bắt buộc · có, bắt buộc · đơn vị vuông, ví dụ cm²… |
-| B.4 | Sổ lỗi và cách phòng | Lỗi thường gặp của chương | Cột “Lỗi thường gặp” trong bảng phân tích | Ghép cặp lỗi với cách phòng | Đọc lại sổ lỗi 3 phút trước mỗi bài kiểm tra. | Viết dòng đầu tiên: “Giá mua = 100%”. · Thử lại: nhân ngược ra tổng số chân xem có khớp không. · Vẽ mũi tên chỉ hướng hai xe trước khi chọn công thức. · Vẽ mặt cắt của bể và tô phần nước trước khi tính.… |
+| B.4 | Sổ lỗi và cách phòng | Lỗi thường gặp của chương | Cột “Lỗi thường gặp” trong bảng phân tích | Ghép cặp lỗi với cách phòng | Đọc lại sổ lỗi 3 phút trước mỗi bài kiểm tra. | Viết rõ một dòng: “1 cm bản đồ = … cm thật” trước khi tính. · Đếm số phần trên sơ đồ trước khi chia. · Vẽ mặt cắt của bể và tô phần nước trước khi tính. · Luôn viết dòng “Mỗi giờ người thứ nhất làm được … công việc” trước.… |
 | B.5 | Kỹ năng tự chấm | Thang điểm và chuẩn chấm | Bài đã làm xong, cần tự đánh giá | Chia bài thành bốn phần rồi chấm từng phần | Tự chấm bài của bạn giúp nhớ chuẩn chấm nhanh hơn tự chấm bài của mình. | 1 phần trong 4 · 2 phần trong 4 · 1 phần trong 4 · 3 phần trong 4… |
 | C.1 | Kỹ năng dò soát | Quy trình ba tầng | Bài đã làm xong, còn thời gian | Dò theo thứ tự đơn vị → phép tính → câu hỏi | Đọc lại **câu hỏi** trước, đọc lại bài làm sau. | đơn vị đo — mọi số có cùng đơn vị chưa · phép tính — cộng trừ nhân chia có đúng thứ tự chưa · đề hỏi gì — mình đã trả lời đúng câu hỏi chưa · tầng 3 — trả lời lệch câu hỏi… |
-| C.2 | Tỉ số phần trăm trong mua bán | Tỉ số phần trăm, mốc quy chiếu 100% | Từ khoá “giảm giá”, “tăng giá”, “lãi”, “lỗ” | Chốt mốc 100% rồi cộng trừ phần trăm | Giảm 20% nghĩa là còn 80% — nhân thẳng một lần thay vì trừ hai bước. | tầng 2 · Viết dòng đầu tiên: “Giá mua = 100%”. · toàn bộ số điểm của ý sai · Viết dòng đầu tiên: “Giá mua = 100%”.… |
-| C.3 | Thể tích hình hộp chữ nhật trong thực tế | V = dài × rộng × cao; 1 m³ = 1 000 lít | Bể nước, thùng, hộp có ba kích thước | Diện tích đáy × chiều cao tương ứng | Tính diện tích đáy một lần rồi dùng lại cho mọi câu hỏi về bể đó. | tầng 2 · Vẽ mặt cắt của bể và tô phần nước trước khi tính. · toàn bộ số điểm của ý sai · Vẽ mặt cắt của bể và tô phần nước trước khi tính.… |
-| C.4 | Chia tỉ lệ nhiều phần; bài toán trộn | Tỉ số, chia theo tỉ lệ, nhân với đơn giá | “Tỉ lệ với … , … , …” hoặc “trộn … với …” | Tổng số phần → giá trị một phần → nhân | Tổng luôn chia hết cho tổng số phần; không chia hết là đọc sai tỉ lệ. | tầng 2 · Đếm số phần trên sơ đồ trước khi chia. · toàn bộ số điểm của ý sai · Đếm số phần trên sơ đồ trước khi chia.… |
-| C.5 | Tỉ lệ nghịch | Đại lượng tỉ lệ nghịch, tổng số ngày công | Số người tăng thì thời gian giảm | Quy về tổng số ngày công rồi chia | Số người gấp đôi thì số ngày giảm một nửa — nhẩm được ngay khi tỉ số đẹp. | tầng 2 · Ước lượng trước: kết quả phải lớn hơn hay bé hơn số ngày ban đầu? · toàn bộ số điểm của ý sai · Ước lượng trước: kết quả phải lớn hơn hay bé hơn số ngày ban đầu?… |
+| C.2 | Tỉ lệ bản đồ, tỉ lệ xích | Tỉ lệ, đổi đơn vị đo độ dài | Có kí hiệu tỉ lệ dạng 1 : n | Nhân hoặc chia theo tỉ lệ rồi đổi đơn vị | Tỉ lệ 1 : 1 000 thì 1 cm bản đồ đúng bằng 10 m thật. | tầng 2 · Viết rõ một dòng: “1 cm bản đồ = … cm thật” trước khi tính. · toàn bộ số điểm của ý sai · Viết rõ một dòng: “1 cm bản đồ = … cm thật” trước khi tính.… |
+| C.3 | Công việc chung | Năng suất, phân số, phép chia phân số | “Làm một mình trong … giờ”, “cùng làm” | Quy công việc về 1, cộng năng suất | Thời gian làm chung luôn **bé hơn** thời gian của người làm nhanh nhất — dùng để loại đáp số sai ngay. | tầng 2 · Luôn viết dòng “Mỗi giờ người thứ nhất làm được … công việc” trước. · toàn bộ số điểm của ý sai · Luôn viết dòng “Mỗi giờ người thứ nhất làm được … công việc” trước.… |
+| C.4 | Tỉ lệ nghịch | Đại lượng tỉ lệ nghịch, tổng số ngày công | Số người tăng thì thời gian giảm | Quy về tổng số ngày công rồi chia | Số người gấp đôi thì số ngày giảm một nửa — nhẩm được ngay khi tỉ số đẹp. | tầng 2 · Ước lượng trước: kết quả phải lớn hơn hay bé hơn số ngày ban đầu? · toàn bộ số điểm của ý sai · Ước lượng trước: kết quả phải lớn hơn hay bé hơn số ngày ban đầu?… |
+| C.5 | Tìm phân số của một số, nhiều bước | Tìm phân số của một số | Cụm “… số còn lại”, “… số đó” | Tính tuần tự, sau mỗi bước ghi lại số còn lại | Còn lại sau ngày đầu là (1 − phân số) của tổng; nhân trực tiếp cho nhanh. | tầng 2 · Sau mỗi bước, viết rõ “còn lại … kg” rồi mới sang bước sau. · toàn bộ số điểm của ý sai · Sau mỗi bước, viết rõ “còn lại … kg” rồi mới sang bước sau.… |
 | D.1 | Sơ đồ tư duy tổng hợp | Hệ thống hoá toàn chương | Yêu cầu vẽ lại sơ đồ không nhìn tài liệu | Vẽ từ trí nhớ rồi đối chiếu | Chỗ nào quên khi vẽ chính là chỗ phải ôn lại đầu tiên. | Mô phỏng đề thi vào lớp 6 và tổng duyệt · 6 · tên một dạng bài của chương · 3 nhánh con: dấu hiệu · phương pháp · lỗi hay mắc… |
-| D.2 | Giả thiết tạm | Phương pháp giả thiết tạm | Hai loại đối tượng, biết tổng số và tổng của một đại lượng khác | Giả sử đồng nhất một loại → tính phần chênh → chia cho hiệu đơn vị | Số chó = (số chân − 2 × số con) : 2 — thuộc công thức rút gọn để nhẩm. | Hai loại đối tượng, biết tổng số và tổng của một đại lượng khác · Giả sử đồng nhất một loại → tính phần chênh → chia cho hiệu đơn vị · Chia số chân thiếu cho 4 thay vì cho hiệu số chân của hai loài. · Phương pháp giả thiết tạm… |
-| D.3 | Thể tích hình hộp chữ nhật trong thực tế | V = dài × rộng × cao; 1 m³ = 1 000 lít | Bể nước, thùng, hộp có ba kích thước | Diện tích đáy × chiều cao tương ứng | Tính diện tích đáy một lần rồi dùng lại cho mọi câu hỏi về bể đó. | Bể nước, thùng, hộp có ba kích thước · Diện tích đáy × chiều cao tương ứng · Lấy chiều cao bể để tính lượng nước đang có. · V = dài × rộng × cao; 1 m³ = 1 000 lít… |
-| D.4 | Tỉ lệ thuận, rút về đơn vị | Đại lượng tỉ lệ thuận | Hai đại lượng cùng tăng cùng giảm | Rút về đơn vị hoặc dùng tỉ số | Nếu số lượng mới gấp số lượng cũ một số nguyên lần thì nhân thẳng, không cần rút về đơn vị. | Hai đại lượng cùng tăng cùng giảm · Rút về đơn vị hoặc dùng tỉ số · Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch. · Đại lượng tỉ lệ thuận… |
-| D.5 | Tìm phân số của một số, nhiều bước | Tìm phân số của một số | Cụm “… số còn lại”, “… số đó” | Tính tuần tự, sau mỗi bước ghi lại số còn lại | Còn lại sau ngày đầu là (1 − phân số) của tổng; nhân trực tiếp cho nhanh. | Cụm “… số còn lại”, “… số đó” · Tính tuần tự, sau mỗi bước ghi lại số còn lại · Lấy cả hai phân số nhân với tổng ban đầu. · Tìm phân số của một số… |
+| D.2 | Chia tỉ lệ nhiều phần; bài toán trộn | Tỉ số, chia theo tỉ lệ, nhân với đơn giá | “Tỉ lệ với … , … , …” hoặc “trộn … với …” | Tổng số phần → giá trị một phần → nhân | Tổng luôn chia hết cho tổng số phần; không chia hết là đọc sai tỉ lệ. | “Tỉ lệ với … , … , …” hoặc “trộn … với …” · Tổng số phần → giá trị một phần → nhân · Chia tổng cho 3 vì thấy có ba tổ. · Tỉ số, chia theo tỉ lệ, nhân với đơn giá… |
+| D.3 | Công việc chung | Năng suất, phân số, phép chia phân số | “Làm một mình trong … giờ”, “cùng làm” | Quy công việc về 1, cộng năng suất | Thời gian làm chung luôn **bé hơn** thời gian của người làm nhanh nhất — dùng để loại đáp số sai ngay. | “Làm một mình trong … giờ”, “cùng làm” · Quy công việc về 1, cộng năng suất · Cộng hai khoảng thời gian rồi chia đôi. · Năng suất, phân số, phép chia phân số… |
+| D.4 | Chuyển động lên dốc xuống dốc | Vận tốc – quãng đường – thời gian; vận tốc trung bình | Đề cho **hai vận tốc khác nhau trên hai đoạn** của cùng một hành trình | Tính thời gian từng đoạn, cộng lại, rồi chia tổng quãng đường | Đi và về cùng một quãng đường thì vận tốc trung bình = 2 × v₁ × v₂ : (v₁ + v₂). | Đề cho **hai vận tốc khác nhau trên hai đoạn** của cùng một hành trình · Tính thời gian từng đoạn, cộng lại, rồi chia tổng quãng đường · Lấy (vận tốc lên + vận tốc xuống) : 2. · Vận tốc – quãng đường – thời gian; vận tốc trung bình… |
+| D.5 | Tỉ lệ thuận, rút về đơn vị | Đại lượng tỉ lệ thuận | Hai đại lượng cùng tăng cùng giảm | Rút về đơn vị hoặc dùng tỉ số | Nếu số lượng mới gấp số lượng cũ một số nguyên lần thì nhân thẳng, không cần rút về đơn vị. | Hai đại lượng cùng tăng cùng giảm · Rút về đơn vị hoặc dùng tỉ số · Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch. · Đại lượng tỉ lệ thuận… |
 | E.1 | Kỹ năng thuyết trình theo nhóm | Hệ thống hoá và diễn đạt | Yêu cầu giảng lại chương theo nhóm | Chia kịch bản theo phút, phân công rõ người | Người giảng nhớ lâu hơn người nghe khoảng ba lần. | giới thiệu chương “Mô phỏng đề thi vào lớp 6 và tổng duyệt” và mục tiêu · trình bày sơ đồ tư duy chương · giảng một dạng bài kèm ví dụ mẫu · nêu lỗi hay mắc và cách phòng… |
-| E.2 | Tỉ số phần trăm trong mua bán | Tỉ số phần trăm, mốc quy chiếu 100% | Từ khoá “giảm giá”, “tăng giá”, “lãi”, “lỗ” | Chốt mốc 100% rồi cộng trừ phần trăm | Giảm 20% nghĩa là còn 80% — nhân thẳng một lần thay vì trừ hai bước. | “Hôm nay nhóm mình nói về Tỉ số phần trăm trong mua bán.” · Từ khoá “giảm giá”, “tăng giá”, “lãi”, “lỗ” · Tỉ số phần trăm, mốc quy chiếu 100% · Hàng giá 500 000 đồng giảm 20%. Giá còn lại bao nhiêu? → 400 000 đồng… |
-| E.3 | Chuyển động ngược chiều, cùng chiều | Quan hệ quãng đường – vận tốc – thời gian | “Đi ngược chiều để gặp nhau”, “đuổi theo” | Xác định chiều → tổng hay hiệu vận tốc → chia | Vẽ hai mũi tên: chụm vào nhau thì cộng, cùng hướng thì trừ. | “Hôm nay nhóm mình nói về Chuyển động ngược chiều, cùng chiều.” · “Đi ngược chiều để gặp nhau”, “đuổi theo” · Quan hệ quãng đường – vận tốc – thời gian · Hai xe cách nhau 100 km đi ngược chiều, vận tốc 30 và 20 km/giờ. Sau mấy giờ gặp nhau? → 2 giờ… |
-| E.4 | Bài toán tổng – hiệu | Công thức tổng – hiệu, sơ đồ đoạn thẳng | Đề cho **tổng** và **hiệu** của hai số | Vẽ sơ đồ, đưa về hai phần bằng nhau | Số lớn và số bé luôn có trung bình cộng bằng nửa tổng. | “Hôm nay nhóm mình nói về Bài toán tổng – hiệu.” · Đề cho **tổng** và **hiệu** của hai số · Công thức tổng – hiệu, sơ đồ đoạn thẳng · Tổng hai số là 100, hiệu là 20. Tìm hai số. → 60 và 40… |
-| E.5 | Chia tỉ lệ nhiều phần; bài toán trộn | Tỉ số, chia theo tỉ lệ, nhân với đơn giá | “Tỉ lệ với … , … , …” hoặc “trộn … với …” | Tổng số phần → giá trị một phần → nhân | Tổng luôn chia hết cho tổng số phần; không chia hết là đọc sai tỉ lệ. | “Hôm nay nhóm mình nói về Chia tỉ lệ nhiều phần; bài toán trộn.” · “Tỉ lệ với … , … , …” hoặc “trộn … với …” · Tỉ số, chia theo tỉ lệ, nhân với đơn giá · Chia 120 cây theo tỉ lệ 1 : 2 : 3. Mỗi phần bao nhiêu cây? → 20, 40, 60… |
+| E.2 | Tỉ lệ bản đồ, tỉ lệ xích | Tỉ lệ, đổi đơn vị đo độ dài | Có kí hiệu tỉ lệ dạng 1 : n | Nhân hoặc chia theo tỉ lệ rồi đổi đơn vị | Tỉ lệ 1 : 1 000 thì 1 cm bản đồ đúng bằng 10 m thật. | “Hôm nay nhóm mình nói về Tỉ lệ bản đồ, tỉ lệ xích.” · Có kí hiệu tỉ lệ dạng 1 : n · Tỉ lệ, đổi đơn vị đo độ dài · Bản đồ tỉ lệ 1 : 1 000, đoạn đo được 5 cm dài bao nhiêu mét thật? → 50 m… |
+| E.3 | Thể tích hình hộp chữ nhật trong thực tế | V = dài × rộng × cao; 1 m³ = 1 000 lít | Bể nước, thùng, hộp có ba kích thước | Diện tích đáy × chiều cao tương ứng | Tính diện tích đáy một lần rồi dùng lại cho mọi câu hỏi về bể đó. | “Hôm nay nhóm mình nói về Thể tích hình hộp chữ nhật trong thực tế.” · Bể nước, thùng, hộp có ba kích thước · V = dài × rộng × cao; 1 m³ = 1 000 lít · Bể 2 m × 3 m × 1 m chứa đầy được bao nhiêu lít? → 6 000 lít… |
+| E.4 | Chuyển động ngược chiều, cùng chiều | Quan hệ quãng đường – vận tốc – thời gian | “Đi ngược chiều để gặp nhau”, “đuổi theo” | Xác định chiều → tổng hay hiệu vận tốc → chia | Vẽ hai mũi tên: chụm vào nhau thì cộng, cùng hướng thì trừ. | “Hôm nay nhóm mình nói về Chuyển động ngược chiều, cùng chiều.” · “Đi ngược chiều để gặp nhau”, “đuổi theo” · Quan hệ quãng đường – vận tốc – thời gian · Hai xe cách nhau 100 km đi ngược chiều, vận tốc 30 và 20 km/giờ. Sau mấy giờ gặp nhau? → 2 giờ… |
+| E.5 | Tỉ lệ nghịch | Đại lượng tỉ lệ nghịch, tổng số ngày công | Số người tăng thì thời gian giảm | Quy về tổng số ngày công rồi chia | Số người gấp đôi thì số ngày giảm một nửa — nhẩm được ngay khi tỉ số đẹp. | “Hôm nay nhóm mình nói về Tỉ lệ nghịch.” · Số người tăng thì thời gian giảm · Đại lượng tỉ lệ nghịch, tổng số ngày công · 6 người làm xong trong 8 ngày. 12 người làm xong trong mấy ngày? → 4 ngày… |
 
 ---
 
@@ -627,20 +627,20 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | B.4 | TD2 | Sổ lỗi chỉ có ích khi ghi **cả cách phòng**, không chỉ ghi lỗi. |
 | B.5 | TD1, TD2 | Biết thang chấm để **không bỏ những dòng dễ ăn điểm nhất**. |
 | C.1 | TD1, TD6 | Tầng 3 — **đề hỏi gì** — là tầng bắt được nhiều lỗi nhất. |
-| C.2 | TD2, TD6 | Phần trăm lãi tính theo **giá mua**, không theo giá bán. |
-| C.3 | TD3, TD2 | Chiều cao trong công thức là **mực nước thực tế**. |
-| C.4 | TD3, TD2 | Chia cho **tổng số phần**, không chia cho số đại lượng. |
-| C.5 | TD2, TD3 | Càng nhiều người thì càng **ít** ngày — đại lượng biến đổi **ngược chiều**. |
+| C.2 | TD2, TD3 | Nhân hay chia với n trước, **đổi đơn vị sau** — làm ngược là rối. |
+| C.3 | TD3, TD6 | Cộng **năng suất mỗi giờ**, tuyệt đối không cộng thời gian. |
+| C.4 | TD2, TD3 | Càng nhiều người thì càng **ít** ngày — đại lượng biến đổi **ngược chiều**. |
+| C.5 | TD2, TD3 | Cụm “số gạo **còn lại**” đổi hẳn số bị nhân ở bước hai. |
 | D.1 | TD3 | Vẽ **từ trí nhớ** mới có tác dụng; chép lại thì không. |
-| D.2 | TD6, TD3 | Chênh lệch chân của **một** con là 4 − 2 = 2 — đó là số chia. |
-| D.3 | TD3, TD2 | Chiều cao trong công thức là **mực nước thực tế**. |
-| D.4 | TD2, TD3 | Hai đại lượng **cùng tăng, cùng giảm** thì tỉ lệ thuận. |
-| D.5 | TD2, TD3 | Cụm “số gạo **còn lại**” đổi hẳn số bị nhân ở bước hai. |
+| D.2 | TD3, TD2 | Chia cho **tổng số phần**, không chia cho số đại lượng. |
+| D.3 | TD3, TD6 | Cộng **năng suất mỗi giờ**, tuyệt đối không cộng thời gian. |
+| D.4 | TD2, TD6 | Vận tốc trung bình luôn **nhỏ hơn** trung bình cộng hai vận tốc. Ra lớn hơn hoặc bằng là chắc chắn sai. |
+| D.5 | TD2, TD3 | Hai đại lượng **cùng tăng, cùng giảm** thì tỉ lệ thuận. |
 | E.1 | TD3, TD6 | Giảng được cho bạn hiểu mới là **đã hiểu**. |
-| E.2 | TD2, TD6 | Phần trăm lãi tính theo **giá mua**, không theo giá bán. |
-| E.3 | TD3, TD2 | Ngược chiều dùng **tổng** vận tốc, cùng chiều dùng **hiệu** vận tốc. |
-| E.4 | TD1, TD3 | Cộng hiệu ra **số lớn**, trừ hiệu ra **số bé** — nhớ đúng chiều. |
-| E.5 | TD3, TD2 | Chia cho **tổng số phần**, không chia cho số đại lượng. |
+| E.2 | TD2, TD3 | Nhân hay chia với n trước, **đổi đơn vị sau** — làm ngược là rối. |
+| E.3 | TD3, TD2 | Chiều cao trong công thức là **mực nước thực tế**. |
+| E.4 | TD3, TD2 | Ngược chiều dùng **tổng** vận tốc, cùng chiều dùng **hiệu** vận tốc. |
+| E.5 | TD2, TD3 | Càng nhiều người thì càng **ít** ngày — đại lượng biến đổi **ngược chiều**. |
 
 ---
 
@@ -661,20 +661,20 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 | B.4 | Ghi lỗi vào sổ nhưng không ghi cách phòng nên lần sau vẫn sai. | Mỗi dòng sổ lỗi bắt buộc có hai cột: lỗi và cách phòng. |
 | B.5 | Bỏ câu lời giải vì nghĩ “không quan trọng”. | Tự chấm bài của bạn cùng bàn theo đúng thang này một lần mỗi tuần. |
 | C.1 | Dò lại phép tính nhưng không đọc lại câu hỏi. | Sau mỗi bài, đọc to lại câu hỏi rồi đối chiếu với đáp số. |
-| C.2 | Chia tiền lãi cho giá bán nên ra tỉ lệ nhỏ hơn thực tế. | Viết dòng đầu tiên: “Giá mua = 100%”. |
-| C.3 | Lấy chiều cao bể để tính lượng nước đang có. | Vẽ mặt cắt của bể và tô phần nước trước khi tính. |
-| C.4 | Chia tổng cho 3 vì thấy có ba tổ. | Đếm số phần trên sơ đồ trước khi chia. |
-| C.5 | Nhân chia như tỉ lệ thuận nên càng nhiều người lại càng lâu. | Ước lượng trước: kết quả phải lớn hơn hay bé hơn số ngày ban đầu? |
+| C.2 | Đổi mét sang xăng-ti-mét ngay từ đầu rồi lại nhân tỉ lệ một lần nữa. | Viết rõ một dòng: “1 cm bản đồ = … cm thật” trước khi tính. |
+| C.3 | Cộng hai khoảng thời gian rồi chia đôi. | Luôn viết dòng “Mỗi giờ người thứ nhất làm được … công việc” trước. |
+| C.4 | Nhân chia như tỉ lệ thuận nên càng nhiều người lại càng lâu. | Ước lượng trước: kết quả phải lớn hơn hay bé hơn số ngày ban đầu? |
+| C.5 | Lấy cả hai phân số nhân với tổng ban đầu. | Sau mỗi bước, viết rõ “còn lại … kg” rồi mới sang bước sau. |
 | D.1 | Vừa vẽ vừa nhìn phiếu Lý thuyết. | Úp phiếu Lý thuyết xuống bàn trước khi bắt đầu vẽ. |
-| D.2 | Chia số chân thiếu cho 4 thay vì cho hiệu số chân của hai loài. | Thử lại: nhân ngược ra tổng số chân xem có khớp không. |
-| D.3 | Lấy chiều cao bể để tính lượng nước đang có. | Vẽ mặt cắt của bể và tô phần nước trước khi tính. |
-| D.4 | Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch. | Tự hỏi: mua nhiều hơn thì trả nhiều hơn hay ít hơn? |
-| D.5 | Lấy cả hai phân số nhân với tổng ban đầu. | Sau mỗi bước, viết rõ “còn lại … kg” rồi mới sang bước sau. |
+| D.2 | Chia tổng cho 3 vì thấy có ba tổ. | Đếm số phần trên sơ đồ trước khi chia. |
+| D.3 | Cộng hai khoảng thời gian rồi chia đôi. | Luôn viết dòng “Mỗi giờ người thứ nhất làm được … công việc” trước. |
+| D.4 | Lấy (vận tốc lên + vận tốc xuống) : 2. | Sau khi tính xong, so đáp số với trung bình cộng — phải nhỏ hơn. |
+| D.5 | Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch. | Tự hỏi: mua nhiều hơn thì trả nhiều hơn hay ít hơn? |
 | E.1 | Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình. | Cấm cầm phiếu khi thuyết trình; chỉ được cầm sơ đồ tư duy tự vẽ. |
-| E.2 | Chia tiền lãi cho giá bán nên ra tỉ lệ nhỏ hơn thực tế. | Viết dòng đầu tiên: “Giá mua = 100%”. |
-| E.3 | Dùng tổng vận tốc cho bài đuổi nhau. | Vẽ mũi tên chỉ hướng hai xe trước khi chọn công thức. |
-| E.4 | Lấy (tổng + hiệu) : 2 rồi gọi đó là số bé. | Vẽ sơ đồ đoạn thẳng trước, đoạn dài hơn luôn là số lớn. |
-| E.5 | Chia tổng cho 3 vì thấy có ba tổ. | Đếm số phần trên sơ đồ trước khi chia. |
+| E.2 | Đổi mét sang xăng-ti-mét ngay từ đầu rồi lại nhân tỉ lệ một lần nữa. | Viết rõ một dòng: “1 cm bản đồ = … cm thật” trước khi tính. |
+| E.3 | Lấy chiều cao bể để tính lượng nước đang có. | Vẽ mặt cắt của bể và tô phần nước trước khi tính. |
+| E.4 | Dùng tổng vận tốc cho bài đuổi nhau. | Vẽ mũi tên chỉ hướng hai xe trước khi chọn công thức. |
+| E.5 | Nhân chia như tỉ lệ thuận nên càng nhiều người lại càng lâu. | Ước lượng trước: kết quả phải lớn hơn hay bé hơn số ngày ban đầu? |
 
 ---
 
@@ -727,20 +727,20 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | B.4 | Ghi lỗi mà không ghi cách phòng thì sao? | lần sau vẫn mắc lại lỗi đó |
 | B.5 | Thiếu đơn vị ở đáp số bị trừ bao nhiêu? | một phần trong bốn phần điểm |
 | C.1 | Tầng nào bắt được lỗi trả lời lệch câu hỏi? | tầng 3 |
-| C.2 | Hàng giá 500 000 đồng giảm 20%. Giá còn lại bao nhiêu? | 400 000 đồng |
-| C.3 | Bể 2 m × 3 m × 1 m chứa đầy được bao nhiêu lít? | 6 000 lít |
-| C.4 | Chia 120 cây theo tỉ lệ 1 : 2 : 3. Mỗi phần bao nhiêu cây? | 20, 40, 60 |
-| C.5 | 6 người làm xong trong 8 ngày. 12 người làm xong trong mấy ngày? | 4 ngày |
+| C.2 | Bản đồ tỉ lệ 1 : 1 000, đoạn đo được 5 cm dài bao nhiêu mét thật? | 50 m |
+| C.3 | Người thứ nhất xong trong 4 giờ, người thứ hai trong 6 giờ. Cùng làm thì mấy giờ xong? | 2 giờ 24 phút |
+| C.4 | 6 người làm xong trong 8 ngày. 12 người làm xong trong mấy ngày? | 4 ngày |
+| C.5 | Có 60 kg gạo, bán 1 phần 3 rồi bán tiếp 1 phần 2 số còn lại. Còn bao nhiêu? | 20 kg |
 | D.1 | Vẽ sơ đồ mà nhìn tài liệu thì mất tác dụng gì? | mất tác dụng kiểm tra trí nhớ |
-| D.2 | Có 10 con gà và chó, 28 chân. Có mấy con chó? | 4 con chó |
-| D.3 | Bể 2 m × 3 m × 1 m chứa đầy được bao nhiêu lít? | 6 000 lít |
-| D.4 | Mua 4 quyển vở hết 24 nghìn. Mua 10 quyển hết bao nhiêu? | 60 nghìn |
-| D.5 | Có 60 kg gạo, bán 1 phần 3 rồi bán tiếp 1 phần 2 số còn lại. Còn bao nhiêu? | 20 kg |
+| D.2 | Chia 120 cây theo tỉ lệ 1 : 2 : 3. Mỗi phần bao nhiêu cây? | 20, 40, 60 |
+| D.3 | Người thứ nhất xong trong 4 giờ, người thứ hai trong 6 giờ. Cùng làm thì mấy giờ xong? | 2 giờ 24 phút |
+| D.4 | Lên dốc 12 km với 6 km/giờ, xuống dốc ấy với 12 km/giờ. Tính vận tốc trung bình. | 8 km/giờ |
+| D.5 | Mua 4 quyển vở hết 24 nghìn. Mua 10 quyển hết bao nhiêu? | 60 nghìn |
 | E.1 | Vì sao phải giảng lại cho bạn? | vì giảng được mới là hiểu thật |
-| E.2 | Hàng giá 500 000 đồng giảm 20%. Giá còn lại bao nhiêu? | 400 000 đồng |
-| E.3 | Hai xe cách nhau 100 km đi ngược chiều, vận tốc 30 và 20 km/giờ. Sau mấy giờ gặp nhau? | 2 giờ |
-| E.4 | Tổng hai số là 100, hiệu là 20. Tìm hai số. | 60 và 40 |
-| E.5 | Chia 120 cây theo tỉ lệ 1 : 2 : 3. Mỗi phần bao nhiêu cây? | 20, 40, 60 |
+| E.2 | Bản đồ tỉ lệ 1 : 1 000, đoạn đo được 5 cm dài bao nhiêu mét thật? | 50 m |
+| E.3 | Bể 2 m × 3 m × 1 m chứa đầy được bao nhiêu lít? | 6 000 lít |
+| E.4 | Hai xe cách nhau 100 km đi ngược chiều, vận tốc 30 và 20 km/giờ. Sau mấy giờ gặp nhau? | 2 giờ |
+| E.5 | 6 người làm xong trong 8 ngày. 12 người làm xong trong mấy ngày? | 4 ngày |
 
 ---
 

@@ -36,10 +36,18 @@ Mỗi buổi kèm một phiếu `GP` lời giải; mỗi cụm có một phiếu
 
 Kho được dựng bằng **bộ sinh nội dung** (`04-cong-cu/sinh/` và `04-cong-cu/lap/`) theo
 một nguyên tắc bất di bất dịch: **mọi đáp số do mã tính ra, không do người gõ**. Thư
-viện có **229 mẫu bài** phủ kín 8 nhóm chuyên đề × 5 mức × 3 lớp — cả 120 ô đều có từ
+viện có **241 mẫu bài** phủ kín 8 nhóm chuyên đề × 5 mức × 3 lớp — cả 120 ô đều có từ
 hai mẫu trở lên, và **538/538 dạng bài** của ngân hàng đều có mẫu khớp. Mỗi mẫu tự chọn
 số liệu, tự tính đáp số, và mang sẵn hướng giải, nhãn tư duy, lỗi thường gặp, gợi ý ba
 tầng, sáu cột bảng phân tích chuyên sâu và một bài tương tự.
+
+Kho được xây theo **hai trục vuông góc nhau**. Trục nội dung — *bài này nói về cái gì*
+— là tám nhóm chuyên đề và 538 dạng bài. Trục phương pháp — *bài này giải bằng thủ
+pháp gì* — là **16 phương pháp giải toán tiểu học** ghi ở `04-cong-cu/data/phuong_phap.py`:
+sơ đồ đoạn thẳng, rút về đơn vị, chia tỉ lệ, thử chọn, khử, giả thiết tạm, thay thế,
+Đi-rích-lê, diện tích, tính ngược từ cuối, sơ đồ cây, dùng chữ thay số, lập bảng, biểu
+đồ Ven, suy luận, xét trường hợp. Một học sinh thuộc hết dạng bài vẫn tắc trước đề lạ
+nếu chưa từng được gọi tên thủ pháp mà đề ấy đòi, nên kiểm định cưỡng chế cả hai trục.
 
 Phiếu `GP` không chỉ trả đáp số: mỗi bài có mục **Các bước giải** đi từ đọc vị dấu hiệu
 → kiến thức phải dùng → cách làm → lối tắt → kết quả, rồi tới **cách nghĩ chung cho mọi
@@ -118,8 +126,9 @@ gita-math/
 ├── 03-phieu/             Phiếu học, phiếu GP, phiếu HD  →  T1|T2 / L3|L4|L5
 ├── 04-cong-cu/           Bộ công cụ sinh, kiểm định, kiểm toán, kết xuất bản in
 │   ├── data/             Nguồn dữ liệu duy nhất: nhóm chuyên đề, cụm, loại phiếu,
-│   │                     ngân hàng 540 dạng bài, bản đồ, đề thi, phân quyền
-│   ├── sinh/             Thư viện 229 mẫu bài tự tính đáp số, theo tám nhóm
+│   │                     ngân hàng 540 dạng bài, 16 phương pháp giải, bản đồ,
+│   │                     đề thi, phân quyền, bản đồ từ khoá tìm kiếm
+│   ├── sinh/             Thư viện 241 mẫu bài tự tính đáp số, theo tám nhóm
 │   ├── lap/              Bộ lắp mẫu bài thành phiếu, phiếu GP và phiếu HD
 │   └── templates/        Khuôn phiếu và quy trình biên soạn một cụm
 ├── 05-lo-trinh/          Kế hoạch sản xuất · 6 lộ trình học 34 tuần
@@ -141,7 +150,7 @@ gita-math/
 | `python3 04-cong-cu/build_ban_do.py` | Sinh 9 bản đồ kiến thức |
 | `python3 04-cong-cu/build_de_thi.py` | Sinh chỉ mục 162 đề thi |
 | `python3 04-cong-cu/build_phan_quyen.py` | Sinh tài liệu phân quyền và bảo mật |
-| `python3 04-cong-cu/kiem_tra_mau.py` | Kiểm định 229 mẫu bài × mọi lớp × 300 hạt giống, đo độ phủ 538 dạng bài |
+| `python3 04-cong-cu/kiem_tra_mau.py` | Kiểm định 241 mẫu bài × mọi lớp × 300 hạt giống, đo độ phủ 538 dạng bài và 16 phương pháp |
 | `python3 04-cong-cu/sinh_kho.py` | **Sinh trọn kho 1 296 tài liệu** (`--ghi-de` để dựng lại) |
 | `python3 04-cong-cu/validate_phieu.py --all` | Kiểm định từng phiếu theo chuẩn v2.0 |
 | `python3 04-cong-cu/build_so_do.py` | Sinh 24 sơ đồ đọc vị đề bài |

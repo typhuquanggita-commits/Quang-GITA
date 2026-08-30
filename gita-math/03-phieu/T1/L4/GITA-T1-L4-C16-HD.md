@@ -51,19 +51,19 @@ Học thuộc theo cặp **dạng bài – công thức**, không học rời.
 
 | # | Dùng cho dạng bài | Công thức hoặc quy tắc |
 |---:|---|---|
-| 1 | Tổng các tích có thừa số chung | Nhân một số với một tổng, tổng dãy cách đều |
-| 2 | Tính, so sánh tích bằng kĩ thuật tách – bù | Nhân một số với một tổng, một hiệu |
-| 3 | Nhân, chia số tự nhiên | Kĩ thuật đặt tính nhân, chia |
-| 4 | Tìm x nhiều bước có ngoặc | Thứ tự thực hiện phép tính, quan hệ thành phần |
-| 5 | Bốn phép tính với số tự nhiên | Kĩ thuật đặt tính cộng, trừ, nhân, chia |
+| 1 | Nhân, chia số tự nhiên | Kĩ thuật đặt tính nhân, chia |
+| 2 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân |
+| 3 | Bốn phép tính với số tự nhiên | Kĩ thuật đặt tính cộng, trừ, nhân, chia |
+| 4 | Tính, so sánh tích bằng kĩ thuật tách – bù | Nhân một số với một tổng, một hiệu |
+| 5 | Tính ngược từ cuối | Bốn phép tính; quan hệ giữa phép tính và phép tính ngược |
 | 6 | Tổng dãy số cách đều | Công thức tổng dãy cách đều |
-| 7 | Tổng dãy cộng trừ xen kẽ | Ghép cặp, tính chất kết hợp |
-| 8 | Tính giá trị biểu thức số | Thứ tự thực hiện các phép tính |
-| 9 | So sánh biểu thức không tính giá trị | Tính chất bất đẳng thức trong phép cộng, phép nhân |
-| 10 | Nhân, chia nhẩm với số tròn chục, trăm, nghìn | Cấu tạo thập phân |
-| 11 | Tính nhanh tích, thương nhiều bước | Tính chất giao hoán, kết hợp của phép nhân |
-| 12 | Tính nhanh tổng nhiều số hạng | Tính chất giao hoán, kết hợp của phép cộng |
-| 13 | Tính nhanh nhờ thừa số 0 | Tính chất nhân với 0, phép trừ hai số bằng nhau |
+| 7 | Tính nhanh nhờ thừa số 0 | Tính chất nhân với 0, phép trừ hai số bằng nhau |
+| 8 | Tổng dãy cộng trừ xen kẽ | Ghép cặp, tính chất kết hợp |
+| 9 | Tính giá trị biểu thức số | Thứ tự thực hiện các phép tính |
+| 10 | Tìm x nhiều bước có ngoặc | Thứ tự thực hiện phép tính, quan hệ thành phần |
+| 11 | Nhân, chia nhẩm với số tròn chục, trăm, nghìn | Cấu tạo thập phân |
+| 12 | Tính nhanh tích, thương nhiều bước | Tính chất giao hoán, kết hợp của phép nhân |
+| 13 | Tính nhanh tổng nhiều số hạng | Tính chất giao hoán, kết hợp của phép cộng |
 
 ---
 
@@ -87,20 +87,20 @@ Trước khi tra bảng, đi qua cây quyết định đọc vị của nhóm ch
 
 | Dạng bài | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất |
 |---|---|---|---|
-| Tổng các tích có thừa số chung | Dãy cộng gồm nhiều tích cùng một thừa số | Đặt thừa số chung → tính tổng trong ngoặc bằng công thức | 1 + 2 + … + 100 = 5 050; nhớ vài mốc để nhân ngay. |
-| Tính, so sánh tích bằng kĩ thuật tách – bù | Các thừa số hơn kém nhau rất ít | Quy về số gốc chung, so phần chênh | Với hai tích có tổng hai thừa số bằng nhau, tích nào có hai thừa số gần nhau hơn thì lớn hơn. |
 | Nhân, chia số tự nhiên | Yêu cầu “đặt tính rồi tính” với phép nhân, chia | Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ chữ số | Kiểm tra kết quả bằng phép tính ngược: thương × số chia = số bị chia. |
-| Nhân nhẩm nhờ tách thừa số | Thừa số là 9, 11, 19, 21, 99, 101… | Tách về số tròn rồi bù trừ | × 11 với số có hai chữ số: viết hai chữ số ra hai đầu, tổng của chúng đặt vào giữa (nhớ sang trái nếu tổng vượt 9). |
-| Tìm x nhiều bước có ngoặc | x nằm trong ngoặc, ngoài ngoặc còn phép tính khác | Bóc lớp từ ngoài vào trong | Thay x tìm được vào đề, tính một lượt để thử lại. |
+| So sánh biểu thức không tính giá trị | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. |
 | Bốn phép tính với số tự nhiên | Yêu cầu “đặt tính rồi tính” | Đặt tính thẳng cột, tính từ hàng đơn vị | Ước lượng bằng cách làm tròn để phát hiện sai sót về độ lớn. |
+| Tính, so sánh tích bằng kĩ thuật tách – bù | Các thừa số hơn kém nhau rất ít | Quy về số gốc chung, so phần chênh | Với hai tích có tổng hai thừa số bằng nhau, tích nào có hai thừa số gần nhau hơn thì lớn hơn. |
+| Nhân nhẩm nhờ tách thừa số | Thừa số là 9, 11, 19, 21, 99, 101… | Tách về số tròn rồi bù trừ | × 11 với số có hai chữ số: viết hai chữ số ra hai đầu, tổng của chúng đặt vào giữa (nhớ sang trái nếu tổng vượt 9). |
+| Tính ngược từ cuối | Đề kể một **chuỗi thao tác** rồi cho kết quả cuối, hỏi số ban đầu | Vẽ sơ đồ mũi tên, đi ngược và đảo từng phép tính | Gỡ từ phải sang trái, mỗi bước một phép tính ngược — không cần đặt ẩn. |
 | Tổng dãy số cách đều | Dãy cộng có dấu … và các số cách đều nhau | Đếm số số hạng rồi áp công thức tổng | Ghép cặp đầu – cuối: mọi cặp đều có cùng tổng, chỉ cần nhân với số cặp. |
+| Tính nhanh nhờ thừa số 0 | Trong biểu thức có ngoặc chứa hai số giống nhau trừ nhau | Quét tìm cụm bằng 0 trước khi tính | Nhìn dấu ngoặc trước tiên — bẫy thường nằm ở đó. |
 | Tổng dãy cộng trừ xen kẽ | Dấu cộng và trừ xen kẽ đều đặn | Ghép cặp, đếm số cặp, xử lí phần dư | Dãy 1 − 2 + 3 − … với n chẵn bằng −n : 2; với n lẻ bằng (n + 1) : 2. |
 | Tính giá trị biểu thức số | Biểu thức có nhiều phép tính, có thể có ngoặc | Xét ngoặc → nhân chia → cộng trừ, trái sang phải | Nếu thấy dạng a × b + a × c thì đưa ngay về a × (b + c). |
-| So sánh biểu thức không tính giá trị | Hai vế có chung một số hạng hoặc một thừa số | Triệt tiêu phần chung rồi so phần riêng | Cùng một thừa số dương thì thừa số kia lớn hơn cho tích lớn hơn. |
+| Tìm x nhiều bước có ngoặc | x nằm trong ngoặc, ngoài ngoặc còn phép tính khác | Bóc lớp từ ngoài vào trong | Thay x tìm được vào đề, tính một lượt để thử lại. |
 | Nhân, chia nhẩm với số tròn chục, trăm, nghìn | Thừa số hoặc số chia là 10, 100, 1 000 | Thêm hoặc bớt chữ số 0 | Nhân với 20 = nhân 2 rồi thêm một chữ số 0. |
 | Tính nhanh tích, thương nhiều bước | Tích có thừa số 25, 125, 50, 20; hoặc chia liên tiếp | Ghép cặp cho tích tròn rồi nhân | Chia liên tiếp cho 4 rồi 25 bằng chia cho 100. |
 | Tính nhanh tổng nhiều số hạng | Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm | Ghép cặp tròn rồi cộng | Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10. |
-| Tính nhanh nhờ thừa số 0 | Trong biểu thức có ngoặc chứa hai số giống nhau trừ nhau | Quét tìm cụm bằng 0 trước khi tính | Nhìn dấu ngoặc trước tiên — bẫy thường nằm ở đó. |
 
 ---
 
@@ -119,26 +119,26 @@ Trước khi tra bảng, đi qua cây quyết định đọc vị của nhóm ch
 
 Trả lời được ngay trong 10 giây thì đánh ✔. Phải nghĩ lâu thì đánh ✘ và làm lại phần tương ứng.
 
-- [ ] **1.** Em nêu được dấu hiệu nhận biết của dạng “Tổng các tích có thừa số chung” chứ?
-- [ ] **2.** Em nhớ công thức: Nhân một số với một tổng, tổng dãy cách đều?
-- [ ] **3.** Em nêu được dấu hiệu nhận biết của dạng “Tính, so sánh tích bằng kĩ thuật tách – bù” chứ?
-- [ ] **4.** Em nhớ công thức: Nhân một số với một tổng, một hiệu?
-- [ ] **5.** Em nêu được dấu hiệu nhận biết của dạng “Nhân, chia số tự nhiên” chứ?
-- [ ] **6.** Em nhớ công thức: Kĩ thuật đặt tính nhân, chia?
-- [ ] **7.** Em nêu được dấu hiệu nhận biết của dạng “Nhân nhẩm nhờ tách thừa số” chứ?
+- [ ] **1.** Em nêu được dấu hiệu nhận biết của dạng “Nhân, chia số tự nhiên” chứ?
+- [ ] **2.** Em nhớ công thức: Kĩ thuật đặt tính nhân, chia?
+- [ ] **3.** Em nêu được dấu hiệu nhận biết của dạng “So sánh biểu thức không tính giá trị” chứ?
+- [ ] **4.** Em nhớ công thức: Tính chất bất đẳng thức trong phép cộng, phép nhân?
+- [ ] **5.** Em nêu được dấu hiệu nhận biết của dạng “Bốn phép tính với số tự nhiên” chứ?
+- [ ] **6.** Em nhớ công thức: Kĩ thuật đặt tính cộng, trừ, nhân, chia?
+- [ ] **7.** Em nêu được dấu hiệu nhận biết của dạng “Tính, so sánh tích bằng kĩ thuật tách – bù” chứ?
 - [ ] **8.** Em nhớ công thức: Nhân một số với một tổng, một hiệu?
-- [ ] **9.** Em nêu được dấu hiệu nhận biết của dạng “Tìm x nhiều bước có ngoặc” chứ?
-- [ ] **10.** Em nhớ công thức: Thứ tự thực hiện phép tính, quan hệ thành phần?
-- [ ] **11.** Em nêu được dấu hiệu nhận biết của dạng “Bốn phép tính với số tự nhiên” chứ?
-- [ ] **12.** Em nhớ công thức: Kĩ thuật đặt tính cộng, trừ, nhân, chia?
+- [ ] **9.** Em nêu được dấu hiệu nhận biết của dạng “Nhân nhẩm nhờ tách thừa số” chứ?
+- [ ] **10.** Em nhớ công thức: Nhân một số với một tổng, một hiệu?
+- [ ] **11.** Em nêu được dấu hiệu nhận biết của dạng “Tính ngược từ cuối” chứ?
+- [ ] **12.** Em nhớ công thức: Bốn phép tính; quan hệ giữa phép tính và phép tính ngược?
 - [ ] **13.** Em nêu được dấu hiệu nhận biết của dạng “Tổng dãy số cách đều” chứ?
 - [ ] **14.** Em nhớ công thức: Công thức tổng dãy cách đều?
-- [ ] **15.** Em nêu được dấu hiệu nhận biết của dạng “Tổng dãy cộng trừ xen kẽ” chứ?
-- [ ] **16.** Em nhớ công thức: Ghép cặp, tính chất kết hợp?
-- [ ] **17.** Em nêu được dấu hiệu nhận biết của dạng “Tính giá trị biểu thức số” chứ?
-- [ ] **18.** Em nhớ công thức: Thứ tự thực hiện các phép tính?
-- [ ] **19.** Em nêu được dấu hiệu nhận biết của dạng “So sánh biểu thức không tính giá trị” chứ?
-- [ ] **20.** Em nhớ công thức: Tính chất bất đẳng thức trong phép cộng, phép nhân?
+- [ ] **15.** Em nêu được dấu hiệu nhận biết của dạng “Tính nhanh nhờ thừa số 0” chứ?
+- [ ] **16.** Em nhớ công thức: Tính chất nhân với 0, phép trừ hai số bằng nhau?
+- [ ] **17.** Em nêu được dấu hiệu nhận biết của dạng “Tổng dãy cộng trừ xen kẽ” chứ?
+- [ ] **18.** Em nhớ công thức: Ghép cặp, tính chất kết hợp?
+- [ ] **19.** Em nêu được dấu hiệu nhận biết của dạng “Tính giá trị biểu thức số” chứ?
+- [ ] **20.** Em nhớ công thức: Thứ tự thực hiện các phép tính?
 
 **Chuẩn đạt:** ✔ từ 18/20 câu trở lên.
 
@@ -150,20 +150,20 @@ Trả lời được ngay trong 10 giây thì đánh ✔. Phải nghĩ lâu thì
 
 | # | Lỗi thường gặp | Cách phòng |
 |---:|---|---|
-| 1 | Nhân từng tích rồi cộng dồn, rất dài và dễ sai. | Viết lại biểu thức dưới dạng a × (1 + 2 + … + n) trước khi tính. |
-| 2 | Nhân hết ra rồi mới so sánh — số lớn, dễ sai và mất thời gian. | Viết mỗi thừa số dưới dạng “số gốc cộng hoặc trừ mấy đơn vị”. |
-| 3 | Quên viết chữ số 0 ở thương nên thương thiếu chữ số. | Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số. |
-| 4 | Nhân với 10 rồi quên cộng hoặc trừ phần bù. | Viết luôn dấu ± và số bù ra bên cạnh trước khi nhân. |
-| 5 | Nhân phá ngoặc sai dấu, hoặc gỡ phép trong ngoặc trước. | Ghi rõ từng bước trên một dòng riêng, mỗi dòng chỉ khác dòng trên một phép. |
-| 6 | Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số. | Đếm trước xem thương có mấy chữ số rồi mới chia. |
+| 1 | Quên viết chữ số 0 ở thương nên thương thiếu chữ số. | Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số. |
+| 2 | Tính hết cả hai vế, vừa lâu vừa dễ sai. | Dùng bút gạch bỏ phần giống nhau ở hai vế trước khi so sánh. |
+| 3 | Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số. | Đếm trước xem thương có mấy chữ số rồi mới chia. |
+| 4 | Nhân hết ra rồi mới so sánh — số lớn, dễ sai và mất thời gian. | Viết mỗi thừa số dưới dạng “số gốc cộng hoặc trừ mấy đơn vị”. |
+| 5 | Nhân với 10 rồi quên cộng hoặc trừ phần bù. | Viết luôn dấu ± và số bù ra bên cạnh trước khi nhân. |
+| 6 | Bắt đầu gỡ từ phép tính đầu tiên của đề thay vì từ phép tính cuối cùng. | Thử lại theo chiều xuôi. Bài này luôn thử lại được, nên không có lý do gì để nộp một đáp số chưa thử. |
 | 7 | Lấy số cuối chia khoảng cách làm số số hạng, quên cộng 1. | Viết ra ba số đầu và ba số cuối để kiểm tra khoảng cách rồi mới đếm. |
-| 8 | Ghép cặp nhưng quên số hạng lẻ còn thừa ở cuối. | Đếm số số hạng trước, xác định chẵn hay lẻ rồi mới ghép cặp. |
-| 9 | Cộng trước nhân khi biểu thức không có ngoặc. | Gạch chân phép nhân, phép chia trước khi bắt đầu tính. |
-| 10 | Tính hết cả hai vế, vừa lâu vừa dễ sai. | Dùng bút gạch bỏ phần giống nhau ở hai vế trước khi so sánh. |
-| 11 | Thêm hoặc bớt thiếu một chữ số 0. | Đếm số chữ số 0 rồi viết chấm tương ứng trước khi ghi kết quả. |
-| 12 | Nhân lần lượt từ trái sang phải nên số trung gian rất lớn. | Quét cả tích tìm cặp tròn trước khi đặt bút tính. |
-| 13 | Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. | Đọc lướt cả dãy, khoanh tròn cặp số cộng lại tròn chục, tròn trăm. |
-| 14 | Lao vào nhân từng cặp số lớn rồi mới phát hiện kết quả bằng 0. | Đọc hết biểu thức một lượt, khoanh các cụm giống nhau bị trừ cho nhau. |
+| 8 | Lao vào nhân từng cặp số lớn rồi mới phát hiện kết quả bằng 0. | Đọc hết biểu thức một lượt, khoanh các cụm giống nhau bị trừ cho nhau. |
+| 9 | Ghép cặp nhưng quên số hạng lẻ còn thừa ở cuối. | Đếm số số hạng trước, xác định chẵn hay lẻ rồi mới ghép cặp. |
+| 10 | Cộng trước nhân khi biểu thức không có ngoặc. | Gạch chân phép nhân, phép chia trước khi bắt đầu tính. |
+| 11 | Nhân phá ngoặc sai dấu, hoặc gỡ phép trong ngoặc trước. | Ghi rõ từng bước trên một dòng riêng, mỗi dòng chỉ khác dòng trên một phép. |
+| 12 | Thêm hoặc bớt thiếu một chữ số 0. | Đếm số chữ số 0 rồi viết chấm tương ứng trước khi ghi kết quả. |
+| 13 | Nhân lần lượt từ trái sang phải nên số trung gian rất lớn. | Quét cả tích tìm cặp tròn trước khi đặt bút tính. |
+| 14 | Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. | Đọc lướt cả dãy, khoanh tròn cặp số cộng lại tròn chục, tròn trăm. |
 
 ---
 
