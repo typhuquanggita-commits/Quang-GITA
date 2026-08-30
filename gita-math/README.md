@@ -133,6 +133,7 @@ Vì vậy có thêm một bản thứ hai: **website tĩnh công khai**, cùng k
 kết xuất thành HTML thật, để đưa lên tên miền của Học viện.
 
 ```
+python3 04-cong-cu/build_web_data.py --lop 3|4|5   ← BẮT BUỘC trước build_artifact --lop
 python3 04-cong-cu/build_site.py     →  2 411 trang · 85 MB
 python3 04-cong-cu/kiem_toan_seo.py  →  SẠCH LỖI · 28 hạng mục đạt
 ```
@@ -194,6 +195,7 @@ gita-math/
 | `python3 04-cong-cu/build_mam.py` | **Biên soạn khối Mầm — 190 buổi × 2 bản** |
 | `python3 04-cong-cu/build_mam_khung.py` | **Khung năm học khối Mầm — lộ trình, bản đồ, đánh giá đầu vào** |
 | `python3 04-cong-cu/kiem_do_kho.py` | **Kiểm định thang độ khó — M4 có thật sự khó hơn M3 không** |
+| `python3 04-cong-cu/kiem_cham.py` | **Kiểm định bộ chấm khách quan — có chấm đúng, có chấm bừa không** |
 | `python3 04-cong-cu/kiem_mam.py` | **Kiểm định khối Mầm — 15 hạng mục** |
 | `python3 04-cong-cu/build_phan_quyen.py` | Sinh tài liệu phân quyền và bảo mật |
 | `python3 04-cong-cu/kiem_tra_mau.py` | Kiểm định 254 mẫu bài × mọi lớp × 300 hạt giống, đo độ phủ 538 dạng bài và 16 phương pháp |

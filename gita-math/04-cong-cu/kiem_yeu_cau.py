@@ -37,6 +37,41 @@ def co(duong: str) -> bool:
     return (GOC / duong).exists()
 
 
+def _cham_tu_nhat_quan() -> bool:
+    """Gõ y nguyên đáp án của kho thì bộ chấm phải luôn cho là đúng.
+
+    Phép thử rẻ mà bắt được gần hết lỗi của bộ chấm: nếu chính đáp án còn bị
+    chấm sai thì học sinh không có cách nào trả lời đúng.
+    """
+    try:
+        sys.path.insert(0, str(GOC / "04-cong-cu"))
+        from lap.cham import cham_duoc, khop
+        import importlib.util as u
+        spec = u.spec_from_file_location(
+            "bwd", GOC / "04-cong-cu" / "build_web_data.py")
+        mm = u.module_from_spec(spec)
+        try:
+            spec.loader.exec_module(mm)
+        except SystemExit:
+            pass
+    except Exception:
+        return False
+    for p in sorted((GOC / "03-phieu").rglob("*.md")):
+        if p.stem.endswith(("-GP", "-HD")):
+            continue
+        try:
+            d = mm.doc_phieu(p)
+        except Exception:
+            continue
+        for ph in d["phan"]:
+            for b in ph["bai"]:
+                for y in b["y"]:
+                    da = y.get("dap_so", "")
+                    if cham_duoc(da) and khop(da, da) is not True:
+                        return False
+    return True
+
+
 def _thang_do_kho_tang_deu() -> bool:
     """Chỉ số độ khó có tăng nghiêm ngặt từ M1 tới M5 ở **cả ba lớp** không."""
     import random
@@ -324,6 +359,23 @@ YEU_CAU = [
     ("Chất lượng chuyên đề",
      "Khối Mầm có trục độ khó riêng, không mượn thang M1–M5 của lớp 3–5",
      lambda: _bac_mam_du(), True, "mọi chủ đề đủ bậc theo chuẩn của khối"),
+
+    ("Thực hành và đánh giá",
+     "Máy chấm khách quan, không để học sinh tự bấm đúng cho bài của mình",
+     lambda: co("04-cong-cu/lap/cham.py") and co("04-cong-cu/kiem_cham.py"),
+     True, "có bộ chấm và bộ kiểm định riêng"),
+    ("Thực hành và đánh giá",
+     "Gõ y nguyên đáp án thì không bao giờ bị chấm sai",
+     lambda: _cham_tu_nhat_quan(), True, "đã đối chiếu ngược toàn kho"),
+    ("Thực hành và đánh giá",
+     "Có màn luyện nhanh rút riêng những ý máy chấm được",
+     lambda: "function veLuyen" in (GOC / "09-online" / "app.html").read_text("utf-8")
+     if co("09-online/app.html") else False, True, "màn Luyện nhanh trong web app"),
+    ("Thực hành và đánh giá",
+     "Bản xuất bản không bao giờ ghép được lên dữ liệu cũ hơn kho",
+     lambda: "cũ hơn kho tài liệu" in
+     (GOC / "04-cong-cu" / "build_artifact.py").read_text("utf-8"),
+     True, "build_artifact.py có cửa chặn"),
 
     # ── khối Mầm: tiền tiểu học, lớp 1, lớp 2 ─────────────────────────
     ("Khối Mầm",

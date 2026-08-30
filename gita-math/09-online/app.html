@@ -285,6 +285,7 @@ input[type=search]{min-width:230px}
       <button data-v="tong-quan">Tổng quan<span class="k">1</span></button>
       <button data-v="lo-trinh">Lộ trình của tôi<span class="k">2</span></button>
       <button data-v="thu-vien">Thư viện tài liệu<span class="k">3</span></button>
+      <button data-v="luyen">Luyện nhanh<span class="k">N</span></button>
       <div class="nav-h">Kiến thức</div>
       <button data-v="ban-do">Bản đồ kiến thức<span class="k">4</span></button>
       <button data-v="doc-vi">Sơ đồ đọc vị<span class="k">D</span></button>
@@ -352,6 +353,64 @@ const DATA = (() => {
   }
   return d;
 })();
+
+/* ------------------------- chấm bài khách quan -------------------------
+   Đối chiếu đáp số học sinh gõ với đáp án của kho. Việc **phân loại** đáp án
+   (chấm máy được hay không) đã làm ở Python — `lap/cham.py`, có bộ thử riêng —
+   và kết quả nằm sẵn ở `y.may_cham`. Phần dưới đây chỉ làm một việc: so hai
+   chuỗi theo đúng cách người Việt viết số.
+
+   Nguyên tắc: **thà không chấm còn hơn chấm sai.** Ý nào `may_cham = 0` thì
+   trả về `null`, giao diện nói thẳng là "người lớn chấm", và ý ấy không được
+   tính vào điểm khách quan của hồ sơ. */
+const chuanHoaDS = s => {
+  if (s == null) return "";
+  let t = String(s).trim().toLowerCase()
+    .replace(/[\u202f\u00a0\u2009]/g, " ")
+    .replace(/[*_`]/g, "")
+    .replace(/[\s.]+$/, "");
+  t = t.replace(/(?<=\d)[ .](?=\d\d\d(?!\d))/g, "");   // dấu cách nghìn
+  t = t.replace(/(\d)\s*phần\s*(\d)/g, "$1/$2");
+  if (/^-?\d+,\d+$/.test(t)) t = t.replace(",", ".");     // dấu phẩy thập phân
+  return t.replace(/\s+/g, " ").trim();
+};
+const boDau = s => String(s).replace(/đ/g, "d").replace(/Đ/g, "D")
+  .normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+const cacSo = s => {
+  const ra = [];
+  for (const phan of chuanHoaDS(s).split(/[,;·]| và /))
+    for (const m of phan.matchAll(/-?\d+(?:[.,]\d+)?/g)) ra.push(m[0]);
+  return ra;
+};
+const RE_SO_DV_JS = /^(-?\d+(?:[.,]\d+)?)\s*([^\d]{1,24})$/;
+const RE_SO_VI_JS = /^(-?\d+(?:[.,]\d+)?)\s*(?:,|—|-|–)?\s*(?:vì|do|bởi)\s+.+$/;
+
+/** true / false khi chấm được; **null khi không chấm được** — null không phải là sai. */
+function chamY(traLoi, y) {
+  if (!y || !y.may_cham) return null;
+  const hs = chuanHoaDS(traLoi), da = chuanHoaDS(y.dap_so);
+  if (!hs) return false;
+  if (hs === da) return true;
+  const k = y.kieu_da || "";
+  if (k === "so_kem_ly_do") {
+    const m = RE_SO_VI_JS.exec(da), a = cacSo(hs);
+    return !!(m && a.length && a[0] === chuanHoaDS(m[1]));
+  }
+  if (k === "so_don_vi") {
+    const mda = RE_SO_DV_JS.exec(da), mhs = RE_SO_DV_JS.exec(hs);
+    if (mda && /^-?\d+(?:[.,]\d+)?$/.test(hs)) return chuanHoaDS(mda[1]) === hs;
+    if (mda && mhs) return chuanHoaDS(mda[1]) === chuanHoaDS(mhs[1])
+      && boDau(mhs[2]).trim() === boDau(mda[2]).trim();
+    return false;
+  }
+  if (k === "danh_sach") {
+    const a = cacSo(hs).slice().sort(), b = cacSo(da).slice().sort();
+    return a.length === b.length && a.every((v, i) => v === b[i]);
+  }
+  if (k === "ngan") return boDau(hs) === boDau(da);
+  const a = cacSo(hs), b = cacSo(da);
+  return a.length === b.length && a.length > 0 && a.every((v, i) => v === b[i]);
+}
 
 /* ------------------------------ tiện ích ------------------------------ */
 const $ = (s, r = document) => r.querySelector(s);
@@ -600,14 +659,15 @@ function chuanHoa(s) {
     .replace(/\s+/g, " ").trim().replace(/\.$/, "");
 }
 const soTrong = s => (chuanHoa(s).match(/-?\d+(?:\.\d+)?/g) || []);
-function tuChamY(traLoi, dapSo) {
-  const a = chuanHoa(traLoi), b = chuanHoa(dapSo);
-  if (!a) return { v: 0, tu: false };
-  if (a === b) return { v: 1, tu: false };
-  const na = soTrong(a), nb = soTrong(b);
-  if (na.length && nb.length && na.join("|") === nb.join("|")) return { v: 1, tu: false };
-  if (b.length > 2 && (b.includes(a) || a.includes(b))) return { v: 1, tu: true };
-  return { v: 0, tu: true };
+/** Chấm một ý. `may` cho biết máy có chấm được hay không.
+ *
+ *  Bản cũ có một nhánh nguy hiểm: nếu đáp án **chứa** chuỗi học sinh gõ thì
+ *  tính đúng. Học sinh gõ "6" vào ý có đáp án "66" liền được chấm đúng. Bản
+ *  này bỏ hẳn kiểu đoán ấy — xem `chamY` ở đầu tệp. */
+function tuChamY(traLoi, y) {
+  const r = chamY(traLoi, y);
+  if (r === null) return { v: null, may: false };
+  return { v: r ? 1 : 0, may: true };
 }
 
 /* --------------------------- mảnh giao diện --------------------------- */
@@ -864,7 +924,10 @@ function moPhieu(ma) {
   if (!p) { MAIN().innerHTML = chuaPhatHanh(ma, "thu-vien", "Về thư viện"); return; }
   const cu = HoSo.d.lam_bai[ma];
   LB = { ma, phan: 0, dap: cu ? { ...cu.dap } : {}, cham: cu ? { ...cu.cham } : {},
-         daNop: !!cu, hint: {}, moDA: new Set(), batDau: Date.now() };
+         daNop: !!cu, hint: {}, moDA: new Set(), batDau: Date.now(),
+         // Những ý máy không chấm được, người lớn phải chấm. Tách riêng để
+         // điểm khách quan của hồ sơ không lẫn với dấu tay người chấm.
+         nguoiCham: new Set(cu && cu.nguoi_cham ? cu.nguoi_cham : []) };
   vePhieu();
 }
 function khoaY(bai, y) { return bai.ma + "|" + y.ma; }
@@ -953,16 +1016,28 @@ function veBai(b, phan) {
       <span class="pt">${b.diem} điểm · ${b.y.length} ý</span></div>
     ${b.dan ? `<div class="dan">${mdToHtml(b.dan)}</div>` : ""}
     <div class="ys">${b.y.map(y => {
-      const k = khoaY(b, y), v = LB.cham[k];
+      const k = khoaY(b, y), v = LB.cham[k], may = !!y.may_cham;
+      // Ý máy chấm được: không có nút ✓/✗, vì để học sinh tự bấm đúng cho bài
+      // của chính mình là cách chắc chắn nhất làm hỏng mọi con số của hồ sơ.
+      // Ý máy không chấm được: nói thẳng ra, và người lớn bấm.
+      const o = may
+        ? `<div class="vd"><span class="chip" style="font-size:11px"
+             title="Máy đối chiếu đáp số em gõ với đáp án">${
+               v === 1 ? "máy chấm ✓" : v === 0 ? "máy chấm ✗" : "máy chấm"}</span></div>`
+        : `<div class="vd">
+             <button data-v="1" data-k="${esc(k)}" aria-pressed="${v === 1}"
+               title="Người lớn xác nhận: làm đúng">✓</button>
+             <button data-v="0" data-k="${esc(k)}" aria-pressed="${v === 0}"
+               title="Người lớn xác nhận: làm sai">✗</button>
+           </div>`;
       return `<div class="y ${v === 1 ? "correct" : v === 0 ? "wrong" : ""}" data-k="${esc(k)}">
         <div class="lb">${y.ma})</div>
-        <div class="q">${esc(y.noi_dung)}</div>
+        <div class="q">${esc(y.noi_dung)}${may ? "" :
+          ` <span class="chip" style="font-size:11px;vertical-align:middle"
+             title="Đáp án của ý này là một câu, không có một cách viết đúng duy nhất">người lớn chấm</span>`}</div>
         <div class="ans"><input type="text" value="${esc(LB.dap[k] || "")}" data-k="${esc(k)}"
           placeholder="đáp số…" aria-label="Đáp án ý ${y.ma}"></div>
-        <div class="vd">
-          <button data-v="1" data-k="${esc(k)}" aria-pressed="${v === 1}" title="Em làm đúng">✓</button>
-          <button data-v="0" data-k="${esc(k)}" aria-pressed="${v === 0}" title="Em làm sai">✗</button>
-        </div></div>`; }).join("")}</div>
+        ${o}</div>`; }).join("")}</div>
     <div class="actions">
       ${coGoiY ? `<button class="btn" data-hint="${b.ma}">Gợi ý (${LB.hint[b.ma] || 0}/3)</button>` : ""}
       <button class="btn" data-sol="${b.ma}">${LB.moDA.has(b.ma) ? "Ẩn" : "Xem"} đáp án &amp; phân tích</button>
@@ -1029,8 +1104,25 @@ function ganSuKienPhieu() {
     if (btn.dataset.phan === "tt") { veKetQua(true); return; }
     LB.phan = +btn.dataset.phan; vePhieu(); window.scrollTo({ top: 0 });
   }));
+  const yTheoKhoa = {};
+  for (const b of phan.bai) for (const y of b.y) yTheoKhoa[khoaY(b, y)] = y;
   $$(".ans input").forEach(inp => {
     inp.addEventListener("input", e => { LB.dap[e.target.dataset.k] = e.target.value; });
+    // Chấm ngay khi rời ô: học sinh biết mình sai ở đúng lúc còn nhớ mình vừa
+    // nghĩ gì. Đợi tới lúc bấm "Chấm phần" thì đã quên mất cách làm rồi.
+    inp.addEventListener("blur", e => {
+      const k = e.target.dataset.k, y = yTheoKhoa[k];
+      if (!y || !y.may_cham || !(LB.dap[k] || "").trim()) return;
+      const truoc = LB.cham[k];
+      LB.cham[k] = chamY(LB.dap[k], y) ? 1 : 0;
+      if (truoc !== LB.cham[k]) {
+        const o = e.target.closest(".y");
+        if (o) { o.classList.toggle("correct", LB.cham[k] === 1);
+                 o.classList.toggle("wrong", LB.cham[k] === 0);
+                 const c = o.querySelector(".vd .chip");
+                 if (c) c.textContent = LB.cham[k] === 1 ? "máy chấm ✓" : "máy chấm ✗"; }
+      }
+    });
     inp.addEventListener("keydown", e => {
       if (e.key === "Enter") {
         const all = $$(".ans input"); const i = all.indexOf(e.target);
@@ -1075,16 +1167,212 @@ function tienDoBai(ma) {
   return false;
 }
 function chamPhan(phan) {
-  let tuKiem = 0;
+  let nguoiLon = 0;
   for (const b of phan.bai) for (const y of b.y) {
     const k = khoaY(b, y), tl = LB.dap[k];
-    if (!(tl || "").trim()) { LB.cham[k] = 0; continue; }
-    const r = tuChamY(tl, y.dap_so);
-    LB.cham[k] = r.v; if (r.tu) tuKiem++;
+    const r = tuChamY(tl, y);
+    if (!r.may) {                       // máy không chấm được ý này
+      nguoiLon++;
+      LB.nguoiCham.add(k);
+      continue;                         // giữ nguyên dấu người lớn đã đặt (nếu có)
+    }
+    LB.nguoiCham.delete(k);
+    LB.cham[k] = r.v;
   }
   LB.daNop = true; vePhieu();
   toast(`Đã chấm Phần ${phan.so} · ${Math.round(diemPhan(phan))}/${phan.diem} điểm` +
-    (tuKiem ? ` · ${tuKiem} ý cần em tự kiểm lại` : ""));
+    (nguoiLon ? ` · ${nguoiLon} ý cần người lớn chấm` : ""));
+}
+
+/* ========================== TRANG: LUYỆN NHANH ==========================
+   Vì sao có màn này. Học sinh mới ở tầng M1 chỉ mở được phiếu LT và DB, mà hai
+   loại ấy hỏi nhiều câu khái niệm — máy chỉ chấm được 40% và 52% số ý. Nghĩa
+   là đúng nhóm học sinh cần phản hồi khách quan nhất lại là nhóm ít được chấm
+   máy nhất.
+
+   Màn này rút riêng **những ý máy chấm được** từ mọi phiếu em đã mở được, trộn
+   lại thành một chuỗi câu ngắn: gõ đáp số → biết đúng sai ngay → câu tiếp.
+   Không có nút tự bấm đúng, không có điểm phần trăm gộp chung — chỉ có số ý
+   đúng trên số ý đã làm, và bảng tách theo nhóm chuyên đề với mức độ.
+
+   Cố ý **không** hiện đáp án trước khi trả lời, và **không** cho bỏ qua rồi
+   quay lại: một câu bỏ qua rồi làm lại sau khi đã thấy đáp án thì con số thu
+   được không còn khách quan nữa. */
+let LN = null;
+
+function khoLuyen(loc) {
+  const ra = [];
+  for (const ci of DATA.chi_muc) {
+    if (!ci.hoc || !DATA.phieu[ci.ma]) continue;
+    if (loc.lop && ci.l !== loc.lop) continue;
+    if (loc.nhom && ci.g !== loc.nhom) continue;
+    if (!Quyen.moPhieu(ci).mo) continue;
+    const p = DATA.phieu[ci.ma];
+    for (const ph of p.phan) for (const b of ph.bai) for (const y of b.y) {
+      if (!y.may_cham) continue;
+      if (loc.muc && ph.muc !== loc.muc) continue;
+      ra.push({ ma: ci.ma, ten: p.meta.trong_tam || p.meta.ten, nhom: ci.g,
+                muc: ph.muc, dan: b.dan, tieu_de: b.tieu_de, y });
+    }
+  }
+  return ra;
+}
+
+function veLuyen() {
+  if (LN && !LN.xong) return veLuyenCau();
+  if (LN && LN.xong) return veLuyenKetQua();
+  // Bản xuất bản theo từng khối lớp **chỉ chứa phiếu của khối ấy**, nên khối
+  // của bản phải thắng lớp ghi trong hồ sơ. Không có thứ tự này thì học sinh
+  // lớp 5 mở bản lớp 4 sẽ thấy "chưa có câu nào" dù bản ấy đầy phiếu.
+  const lop = DATA.meta.khoi_lop || HoSo.d.lop;
+  const kho = khoLuyen({ lop });
+  const theoNhom = {};
+  for (const x of kho) theoNhom[x.nhom] = (theoNhom[x.nhom] || 0) + 1;
+  MAIN().innerHTML = `
+  <div class="page-h"><div><div class="eyebrow">Đánh giá khách quan</div>
+    <h1>Luyện nhanh</h1>
+    <p class="sub">Mỗi câu là một ý rút từ phiếu em đã mở được, và là ý mà
+    <b>máy đối chiếu được đáp số</b> — không ai bấm đúng hộ em. Gõ đáp số rồi
+    biết ngay đúng sai. Không xem được đáp án trước khi trả lời, và không quay
+    lại câu đã bỏ qua: có thế con số cuối buổi mới nói thật.</p></div></div>
+  ${!kho.length ? `<div class="empty"><h3>Chưa có câu nào để luyện</h3>
+    <p>Bản này là bản khối lớp <b>${lop}</b>. Em cần mở được ít nhất một phiếu
+    học của lớp ${lop} — vào <a href="#/thu-vien">Thư viện tài liệu</a> để bắt
+    đầu, hoặc làm <a href="#/test">test đầu vào</a> để hệ thống mở đúng tầng
+    cho em.</p></div>` : `
+  <div class="card pad" style="margin-bottom:16px">
+    <div class="eyebrow">Chọn phạm vi</div>
+    <div class="row" style="margin-top:10px">
+      <button class="btn${!LOC_LUYEN.nhom ? " on" : ""}" data-ln-nhom="">Tất cả
+        (${kho.length} câu)</button>
+      ${Object.keys(theoNhom).sort().map(g => `<button class="btn${
+        LOC_LUYEN.nhom === g ? " on" : ""}" data-ln-nhom="${g}">${g} —
+        ${esc((DATA.nhom[g] || {}).ten || g)} (${theoNhom[g]})</button>`).join("")}
+    </div>
+    <div class="row" style="margin-top:12px">
+      <span class="muted" style="font-size:13px">Số câu:</span>
+      ${[10, 20, 30].map(n => `<button class="btn${LOC_LUYEN.so === n ? " on" : ""}"
+        data-ln-so="${n}">${n}</button>`).join("")}
+      <button class="btn btn-p" id="btnLuyen" style="margin-left:auto">Bắt đầu</button>
+    </div>
+  </div>`}`;
+  $$("[data-ln-nhom]").forEach(b => b.addEventListener("click", () => {
+    LOC_LUYEN.nhom = b.dataset.lnNhom || null; veLuyen(); }));
+  $$("[data-ln-so]").forEach(b => b.addEventListener("click", () => {
+    LOC_LUYEN.so = +b.dataset.lnSo; veLuyen(); }));
+  const nut = $("#btnLuyen");
+  if (nut) nut.addEventListener("click", () => {
+    const ds = khoLuyen({ lop, nhom: LOC_LUYEN.nhom });
+    for (let i = ds.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1)); [ds[i], ds[j]] = [ds[j], ds[i]];
+    }
+    LN = { ds: ds.slice(0, LOC_LUYEN.so), i: 0, kq: [], batDau: Date.now(), xong: false };
+    veLuyenCau();
+  });
+}
+const LOC_LUYEN = { nhom: null, so: 10 };
+
+function veLuyenCau() {
+  const c = LN.ds[LN.i];
+  if (!c) { LN.xong = true; return veLuyenKetQua(); }
+  const dung = LN.kq.filter(x => x.dung).length;
+  MAIN().innerHTML = `
+  <div class="row" style="margin-bottom:12px">
+    <button class="btn" id="lnThoat">← Dừng buổi luyện</button>
+    <span class="chip" style="margin-left:auto">Câu ${LN.i + 1}/${LN.ds.length}</span>
+    <span class="chip">${dung}/${LN.kq.length} đúng</span>
+  </div>
+  <div class="card pad">
+    <div class="eyebrow">${esc(c.nhom)} · Mức ${esc(c.muc)}${
+      MUC_TEN[c.muc] ? " — " + MUC_TEN[c.muc] : ""} · ${esc(c.tieu_de)}</div>
+    ${c.dan ? `<div class="dan" style="margin-top:10px">${mdToHtml(c.dan)}</div>` : ""}
+    <p style="font-size:17px;margin:14px 0 4px">${esc(c.y.noi_dung)}</p>
+    <div class="row" style="margin-top:12px">
+      <input id="lnO" type="text" placeholder="đáp số…" autocomplete="off"
+        style="flex:1;min-width:200px;padding:10px 12px;font-size:16px;
+        border:1.5px solid var(--line-2);border-radius:var(--r-sm);
+        background:var(--surface);color:var(--ink)">
+      <button class="btn btn-p" id="lnTraLoi">Trả lời</button>
+    </div>
+    <div id="lnPhanHoi" style="margin-top:14px"></div>
+  </div>`;
+  const o = $("#lnO"); o.focus();
+  const tra = () => {
+    if (LN.daTra) { LN.i++; LN.daTra = false; return veLuyenCau(); }
+    const v = o.value.trim();
+    if (!v) { o.focus(); return; }
+    const ok = chamY(v, c.y) === true;
+    LN.kq.push({ nhom: c.nhom, muc: c.muc, ma: c.ma, dung: ok, tra_loi: v });
+    LN.daTra = true;
+    $("#lnPhanHoi").innerHTML = ok
+      ? `<div class="card pad" style="background:var(--ok-bg);color:var(--ok)">
+           <b>Đúng.</b> Đáp số: ${esc(c.y.dap_so)}</div>`
+      : `<div class="card pad" style="background:var(--bad-bg);color:var(--bad)">
+           <b>Chưa đúng.</b> Em trả lời <b>${esc(v)}</b> · đáp số đúng là
+           <b>${esc(c.y.dap_so)}</b>.<br>
+           <span style="font-size:13px">Bài này ở phiếu
+           <a href="#/phieu/${esc(c.ma)}">${esc(c.ten)}</a> — mở phiếu ấy để xem
+           lời giải từng bước.</span></div>`;
+    o.disabled = true;
+    $("#lnTraLoi").textContent = LN.i + 1 < LN.ds.length ? "Câu tiếp →" : "Xem kết quả →";
+    $("#lnTraLoi").focus();
+  };
+  $("#lnTraLoi").addEventListener("click", tra);
+  o.addEventListener("keydown", e => { if (e.key === "Enter") tra(); });
+  $("#lnThoat").addEventListener("click", () => { LN.xong = true; veLuyenKetQua(); });
+}
+
+async function veLuyenKetQua() {
+  const n = LN.kq.length, d = LN.kq.filter(x => x.dung).length;
+  const phut = Math.max(1, Math.round((Date.now() - LN.batDau) / 60000));
+  const theoNhom = {}, theoMuc = {};
+  for (const x of LN.kq) {
+    (theoNhom[x.nhom] = theoNhom[x.nhom] || [0, 0])[1]++;
+    if (x.dung) theoNhom[x.nhom][0]++;
+    (theoMuc[x.muc] = theoMuc[x.muc] || [0, 0])[1]++;
+    if (x.dung) theoMuc[x.muc][0]++;
+  }
+  if (n) {
+    HoSo.d.luyen = HoSo.d.luyen || [];
+    HoSo.d.luyen.unshift({ ngay: Date.now(), so_cau: n, dung: d, phut,
+                           theo_nhom: theoNhom, theo_muc: theoMuc });
+    HoSo.d.luyen = HoSo.d.luyen.slice(0, 50);
+    await HoSo.luu();
+  }
+  const yeu = Object.entries(theoNhom).filter(([, v]) => v[1] >= 2 && v[0] / v[1] < 0.6)
+    .sort((a, b) => a[1][0] / a[1][1] - b[1][0] / b[1][1]);
+  MAIN().innerHTML = `
+  <div class="page-h"><div><div class="eyebrow">Buổi luyện nhanh</div>
+    <h1>${d}/${n} câu đúng</h1>
+    <p class="sub">${n ? `Tỉ lệ đúng <b>${Math.round(d / n * 100)}%</b> trong ${phut} phút.
+      Đây là con số khách quan: mọi câu đều do máy đối chiếu đáp số.`
+      : "Buổi luyện chưa có câu nào được trả lời."}</p></div></div>
+  ${n ? `<div class="grid g2">
+    <div class="card pad"><h3 style="font-size:15px;margin-bottom:10px">Theo nhóm chuyên đề</h3>
+      <div class="bars">${Object.entries(theoNhom).sort().map(([g, v]) => {
+        const pc = Math.round(v[0] / v[1] * 100);
+        return `<div class="bar"><div class="g">${esc(g)}</div>
+          <div class="t"><i style="width:${pc}%"></i></div>
+          <div class="v num">${v[0]}/${v[1]}</div></div>`; }).join("")}</div></div>
+    <div class="card pad"><h3 style="font-size:15px;margin-bottom:10px">Theo mức độ</h3>
+      <div class="bars">${["M1","M2","M3","M4","M5"].filter(m => theoMuc[m]).map(m => {
+        const v = theoMuc[m], pc = Math.round(v[0] / v[1] * 100);
+        return `<div class="bar"><div class="g">${m}</div>
+          <div class="t"><i style="width:${pc}%"></i></div>
+          <div class="v num">${v[0]}/${v[1]}</div></div>`; }).join("")}</div></div>
+  </div>
+  ${yeu.length ? `<div class="card pad" style="margin-top:16px;border-left:4px solid var(--do)">
+    <div class="eyebrow">Nên ôn lại nhóm nào trước</div>
+    <p style="margin-top:6px">${yeu.map(([g, v]) =>
+      `<b>${esc(g)} — ${esc((DATA.nhom[g] || {}).ten || g)}</b> (${v[0]}/${v[1]})`).join(" · ")}.
+    Đây là những nhóm em đúng dưới 60% trong buổi này. Mở
+    <a href="#/doc-vi">sơ đồ đọc vị</a> của nhóm ấy trước khi làm thêm bài.</p>
+  </div>` : ""}` : ""}
+  <div class="row" style="margin-top:16px">
+    <button class="btn btn-p" id="lnLai">Luyện buổi nữa</button>
+    <button class="btn" data-go="ho-so">Xem hồ sơ</button>
+  </div>`;
+  $("#lnLai").addEventListener("click", () => { LN = null; veLuyen(); });
 }
 
 /* ============================ TRANG: KẾT QUẢ ============================ */
@@ -1093,11 +1381,20 @@ async function veKetQua(chiXem) {
   const dsPhan = p.phan.map(x => ({ so: x.so, ten: x.ten, muc: x.muc, toi_da: x.diem, dat: Math.round(diemPhan(x) * 10) / 10 }));
   const tong = Math.round(dsPhan.reduce((s, x) => s + x.dat, 0));
   let tongY = 0, dungY = 0;
+  // Đếm riêng phần **máy chấm**: đó là con số duy nhất khách quan. Phần còn
+  // lại do người lớn xác nhận, hữu ích nhưng không so sánh giữa các buổi được
+  // vì mỗi người chấm một tay.
+  let kqY = 0, kqDung = 0, chuaCham = 0;
   const td = {};
   for (const ph of p.phan) for (const b of ph.bai) {
     const codes = [...new Set((b.dap_an.nhan_tu_duy || "").match(/TD[1-6]/g) || [])];
     const n = b.y.length, d = b.y.filter(y => LB.cham[khoaY(b, y)] === 1).length;
     tongY += n; dungY += d;
+    for (const y of b.y) {
+      const k = khoaY(b, y);
+      if (y.may_cham) { kqY++; if (LB.cham[k] === 1) kqDung++; }
+      else if (LB.cham[k] == null) chuaCham++;
+    }
     codes.forEach(c => { td[c] = td[c] || { d: 0, t: 0 }; td[c].d += d; td[c].t += n; });
   }
   const phanV = p.phan[4];
@@ -1112,6 +1409,7 @@ async function veKetQua(chiXem) {
     HoSo.d.lam_bai[LB.ma] = {
       ma: LB.ma, ten: m.trong_tam || m.ten, ngay: Date.now(), dap: LB.dap, cham: LB.cham,
       diem_phan: dsPhan.map(x => x.dat), tong, tong_y: tongY, dung_y: dungY,
+      kq_y: kqY, kq_dung: kqDung, nguoi_cham: [...LB.nguoiCham],
       td, v_thu: vThu, v_giao: vGiao, lop: m.lop, tuyen: m.tuyen, nhom: m.nhom_ma,
       cum: m.cum, loai: m.loai
     };
@@ -1132,13 +1430,26 @@ async function veKetQua(chiXem) {
       <div><div class="eyebrow">Kết quả phiếu</div>
         <h1 style="font-size:24px;margin-top:4px">${esc(m.trong_tam || m.ten)}</h1>
         <div class="row" style="margin-top:8px"><span class="mono chip">${esc(m.ma)}</span>
-          ${chipNhom(m.nhom_ma)}<span class="chip">${dungY}/${tongY} ý đúng</span></div></div>
+          ${chipNhom(m.nhom_ma)}<span class="chip">${dungY}/${tongY} ý đúng</span></div>
+        <div class="row" style="margin-top:8px">
+          <span class="chip" style="background:var(--ok-bg);color:var(--ok)"
+            title="Máy đối chiếu đáp số em gõ với đáp án của kho — không ai bấm hộ">
+            khách quan: <b>${kqDung}/${kqY}</b> ý máy chấm</span>
+          ${tongY - kqY ? `<span class="chip"
+            title="Đáp án của những ý này là một câu, không có một cách viết đúng duy nhất">
+            ${tongY - kqY} ý người lớn chấm${chuaCham ? ` · còn ${chuaCham} ý chưa chấm` : ""}</span>` : ""}
+        </div></div>
       <div style="text-align:right">
         <div style="font-size:44px;font-weight:800;line-height:1" class="num">${tong}<small
           style="font-size:17px;color:var(--muted)">/100</small></div>
         <div class="tag" style="background:${hh[2]}22;color:${hh[2]};font-size:12.5px;margin-top:6px">${hh[1]}</div>
       </div></div>
     <div style="max-width:340px;margin-top:16px">${cungSao(dsPhan.map(x => x.dat / x.toi_da * 100), true)}</div>
+    <p class="sub" style="margin-top:12px"><b>Đọc con số nào?</b> Tỉ lệ
+    <b>${kqY ? Math.round(kqDung / kqY * 100) : 0}%</b> ở dòng “khách quan” là con
+    số so sánh được giữa các buổi, vì máy đối chiếu đáp số chứ không ai bấm hộ.
+    Điểm ${tong}/100 có gộp cả những ý người lớn chấm, nên dùng để nhìn tổng
+    thể một buổi, đừng dùng để so hai buổi với nhau.</p>
   </div>
 
   <div class="grid g2">
@@ -1789,6 +2100,53 @@ function veHoSo() {
     </ul>
   </div>
 
+  ${(() => {
+    // Bảng này chỉ gộp **số máy chấm**: các buổi luyện nhanh, cộng phần máy
+    // chấm của mỗi phiếu đã nộp. Cố ý không trộn với điểm /100 của phiếu, vì
+    // điểm ấy có gộp cả những ý người lớn chấm — mỗi người chấm một tay nên
+    // không so được giữa các buổi.
+    const ln = h.luyen || [];
+    let kqY = 0, kqD = 0;
+    for (const x of ls) { kqY += x.kq_y || 0; kqD += x.kq_dung || 0; }
+    for (const x of ln) { kqY += x.so_cau; kqD += x.dung; }
+    if (!kqY) return "";
+    const nhom = {};
+    for (const x of ln) for (const g in (x.theo_nhom || {})) {
+      nhom[g] = nhom[g] || [0, 0];
+      nhom[g][0] += x.theo_nhom[g][0]; nhom[g][1] += x.theo_nhom[g][1];
+    }
+    const gan = ln.slice(0, 8).reverse();
+    return `<div class="card pad" style="margin-bottom:16px;border-left:4px solid var(--xanh)">
+      <div class="row" style="justify-content:space-between;align-items:baseline">
+        <div><div class="eyebrow">Đánh giá khách quan</div>
+          <h3 style="font-size:16px;margin-top:4px">Chỉ tính những ý máy chấm được</h3></div>
+        <div style="text-align:right"><div class="num" style="font-size:32px;font-weight:800">
+          ${Math.round(kqD / kqY * 100)}%</div>
+          <div class="muted" style="font-size:12px">${kqD}/${kqY} ý</div></div>
+      </div>
+      <p class="sub" style="margin-top:8px">Máy đối chiếu đáp số em gõ với đáp án của kho —
+      không có nút tự bấm đúng. Vì thế con số này so sánh được giữa các buổi, còn
+      điểm /100 của từng phiếu thì không, vì nó gộp cả những ý người lớn chấm.</p>
+      ${gan.length ? `<div style="margin-top:14px"><div class="eyebrow"
+        style="margin-bottom:6px">Tám buổi luyện nhanh gần nhất</div>
+        <div class="bars">${gan.map(x => {
+          const pc = Math.round(x.dung / x.so_cau * 100);
+          return `<div class="bar"><div class="g" style="font-size:11.5px">${
+            new Date(x.ngay).toLocaleDateString("vi-VN", {day:"2-digit",month:"2-digit"})}</div>
+            <div class="t"><i style="width:${pc}%"></i></div>
+            <div class="v num">${x.dung}/${x.so_cau}</div></div>`; }).join("")}</div></div>` : ""}
+      ${Object.keys(nhom).length ? `<div style="margin-top:14px"><div class="eyebrow"
+        style="margin-bottom:6px">Cộng dồn theo nhóm chuyên đề</div>
+        <div class="bars">${Object.entries(nhom).sort().map(([g, v]) => {
+          const pc = Math.round(v[0] / v[1] * 100);
+          return `<div class="bar"><div class="g">${esc(g)}</div>
+            <div class="t"><i style="width:${pc}%"></i></div>
+            <div class="v num">${v[0]}/${v[1]}</div></div>`; }).join("")}</div></div>` : ""}
+      <div class="row" style="margin-top:14px">
+        <button class="btn btn-p" data-go="luyen">Luyện nhanh một buổi</button></div>
+    </div>`;
+  })()}
+
   <div class="grid g2" style="margin-bottom:16px">
     <div class="card pad"><h3 style="font-size:15px;margin-bottom:12px">Thông tin học viên</h3>
       <div class="grid" style="gap:10px">
@@ -1851,7 +2209,7 @@ function veHoSo() {
 const TRANG = {
   "tong-quan": veTongQuan, "lo-trinh": veLoTrinh, "thu-vien": veThuVien,
   "ban-do": veBanDo, "doc-vi": veDocVi, "lo-trinh-chuan": veLoTrinhChuan,
-  "mam": veMam,
+  "mam": veMam, "luyen": veLuyen,
   "chuyen-de": veChuyenDe, "cum": veDanhSachCum,
   "de-thi": veDeThi, "phan-quyen": vePhanQuyen, "test": veTest, "ho-so": veHoSo
 };

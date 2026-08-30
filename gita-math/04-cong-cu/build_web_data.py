@@ -22,6 +22,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "04-cong-cu" / "data"))
 from nhom_chuyen_de import NHOM, TU_DUY  # noqa: E402
 from ban_do_kien_thuc import BAN_DO  # noqa: E402
+from lap import cham           # noqa: E402
 from loai_phieu import LOAI, CHUOI_BUOI  # noqa: E402
 from phan_quyen import VAI_TRO, TAI_NGUYEN, QUYEN, TANG, BAT_BIEN  # noqa: E402
 from so_do_doc_vi import CAU_MO, CAY, CHOT, DOC_NHAM  # noqa: E402
@@ -32,8 +33,15 @@ from khoi_mam import (KHOI as KHOI_MAM, TWM as TWM_MAM,  # noqa: E402
 OUT_DIR = ROOT / "09-online" / "data"
 MOC_DAP_AN = "## HƯỚNG DẪN GIẢI VÀ ĐÁP ÁN"
 
+# Tiêu đề phần có dạng:
+#   ## PHẦN A — VÍ DỤ DẪN VÀO CHỦ ĐỀ · Mức M1 — Nhận biết · 5 phút · 5 điểm
+# Bản cũ đòi dấu · ngay sau mã mức nên **không bao giờ khớp** phần "— Nhận
+# biết" đứng chen vào, và `phan.muc` rỗng ở toàn bộ 1 296 phiếu. Trên giao diện
+# nó hiện ra là chữ "Mức" trống trơn; lỗi chỉ lộ ra khi bộ luyện nhanh cần gom
+# kết quả theo mức và gom được toàn ô rỗng.
 RE_PHAN = re.compile(
-    r"^##\s+PHẦN\s+([A-EIVX]+)\s*—\s*(.+?)\s*·\s*(?:Mức\s+(\S+)\s*·\s*)?"
+    r"^##\s+PHẦN\s+([A-EIVX]+)\s*—\s*(.+?)\s*·\s*"
+    r"(?:Mức\s+(M\d)\s*(?:—[^·]*)?·\s*)?"
     r"(\d+)\s*phút\s*·\s*(\d+)\s*điểm\s*$", re.M)
 RE_BAI = re.compile(r"^###\s+Bài\s+(\d+)\.\s*\((\d+)\s*điểm\)\s*(.*)$", re.M)
 RE_Y = re.compile(r"^\s{0,3}([a-z])\)\s+(.*)$")
@@ -184,6 +192,19 @@ def doc_phieu(path: Path) -> dict:
             theo_y = dap_so_theo_y(da_bai.get("dap_so", ""))
             for y in ys:
                 y["dap_so"] = theo_y.get(y["ma"], "")
+                # Phân loại **một lần ở đây**, không phân loại trong trình
+                # duyệt: quy tắc nhận dạng đáp số nằm ở `lap/cham.py`, có bộ
+                # thử riêng, và không nên tồn tại hai bản ở hai ngôn ngữ.
+                # Chỉ ghi khi **cần**: bản xuất bản của lớp 5 đã sát hạn mức
+                # dung lượng, mà hai trường này nhân với hơn 80 000 ý. Ghi
+                # `may_cham` chỉ khi bằng 1, và `kieu_da` chỉ với những loại mà
+                # bộ chấm trong trình duyệt thật sự rẽ nhánh theo — các loại
+                # còn lại đều rơi vào nhánh mặc định "so khớp dãy số".
+                k = cham.kieu(y["dap_so"])
+                if cham.cham_duoc(y["dap_so"]):
+                    y["may_cham"] = 1
+                    if k in ("so_don_vi", "danh_sach", "ngan", "so_kem_ly_do"):
+                        y["kieu_da"] = k
             bai_list.append({
                 "so": int(b.group(1)), "ma": khoa, "diem": int(b.group(2)),
                 "tieu_de": b.group(3).strip(), "dan": dan, "y": ys, "dap_an": da_bai,
