@@ -20,24 +20,24 @@
 
 | Nhóm | Năng lực thành phần | Bậc 1 | Bậc 2 | Bậc 3 | Bậc 4 |
 |---|---|:--:|:--:|:--:|:--:|
-| **① Mô thức GITA** | Hiểu & vận hành 4 chữ G-I-T-A | ĐH | TT | DD | DD |
-| | Thiết kế mục tiêu 4 lớp 2 vạch | – | TT | DD | DD |
-| | Vận hành T-DRILL & thang L1–L5 | ĐH | TT | DD | DD |
-| | Cài đặt thói quen & 20/80 cho HS | ĐH | TT | DD | DD |
-| **② Kỹ thuật dẫn giảng** | Phản hồi 1-1-1 | TT | DD | DD | DD |
-| | Điều phối lớp bằng tín hiệu (không quát) | TT | DD | DD | DD |
-| | Bóc tách trải nghiệm 4 lớp | ĐH | TT | DD | DD |
-| | Giữ quy tắc 30-30-40 | ĐH | TT | DD | DD |
-| | Phân hoá & hỗ trợ HS đa dạng | ĐH | TT | DD | DD |
-| **③ An toàn & Đạo đức** | Quy trình bảo vệ trẻ em 5 bước | **TT** | **DD** | **DD** | **DD** |
-| | Nhận diện dấu hiệu nguy cơ | TT | DD | DD | DD |
-| | Giữ ranh giới nghề nghiệp | **DD** | **DD** | **DD** | **DD** |
-| | An toàn thể chất & CSVC | TT | DD | DD | DD |
-| **④ Chuyên môn & Phát triển** | Soạn giáo án & kịch bản | – | TT | DD | DD |
-| | Đánh giá bằng rubric & 4 nguồn | ĐH | TT | DD | DD |
-| | Làm việc với phụ huynh | ĐH | TT | DD | DD |
-| | Kèm cặp đồng nghiệp | – | – | DD | DD |
-| | Biên soạn chương trình | – | – | ĐH | DD |
+| **① Mô thức GITA** | Hiểu & vận hành 4 chữ G-I-T-A | B2 | B3 | B4 | B4⁺ |
+| | Thiết kế mục tiêu 4 lớp 2 vạch | – | B3 | B4 | B4⁺ |
+| | Vận hành T-DRILL & thang L1–L5 | B2 | B3 | B4 | B4⁺ |
+| | Cài đặt thói quen & 20/80 cho HS | B2 | B3 | B4 | B4⁺ |
+| **② Kỹ thuật dẫn giảng** | Phản hồi 1-1-1 | B3 | B4 | B4⁺ | B4 |
+| | Điều phối lớp bằng tín hiệu (không quát) | B3 | B4 | B4⁺ | B4 |
+| | Bóc tách trải nghiệm 4 lớp | B2 | B3 | B4 | B4⁺ |
+| | Giữ quy tắc 30-30-40 | B2 | B3 | B4 | B4⁺ |
+| | Phân hoá & hỗ trợ HS đa dạng | B2 | B3 | B4 | B4⁺ |
+| **③ An toàn & Đạo đức** | Quy trình bảo vệ trẻ em 5 bước | **B3** | **B4** | **B4** | **B4** |
+| | Nhận diện dấu hiệu nguy cơ | B3 | B4 | B4⁺ | B4 |
+| | Giữ ranh giới nghề nghiệp | **B4** | **B4** | **B4** | **B4** |
+| | An toàn thể chất & CSVC | B3 | B4 | B4⁺ | B4 |
+| **④ Chuyên môn & Phát triển** | Soạn giáo án & kịch bản | – | B3 | B4 | B4⁺ |
+| | Đánh giá bằng rubric & 4 nguồn | B2 | B3 | B4 | B4⁺ |
+| | Làm việc với phụ huynh | B2 | B3 | B4 | B4⁺ |
+| | Kèm cặp đồng nghiệp | – | – | B4 | B4⁺ |
+| | Biên soạn chương trình | – | – | B2 | B4 |
 
 > ⚠️ Các ô in đậm là **năng lực phủ quyết**: không đạt thì không cấp chứng nhận ở bất kỳ bậc nào, dù các năng lực khác đều tốt.
 
@@ -65,7 +65,7 @@
 | Thời lượng | Nội dung |
 |:--:|---|
 | 120' | **An toàn & bảo vệ trẻ em**: 4 nguyên tắc · dấu hiệu nguy cơ · **quy trình 5 bước** · ranh giới nghề nghiệp · *thực hành 6 ca giả định* |
-| 90' | Đánh giá 4 nguồn · chấm rubric · bảng theo dõi lượt phản hồi · quy đổi GITA-4 sang TT27/TT22 |
+| 90' | Đánh giá 4 nguồn · chấm rubric · bảng theo dõi lượt phản hồi · quy đổi thang 6 bậc sang TT27/TT22 |
 | 60' | Làm việc với phụ huynh: Phiếu Sứ Mệnh · Báo cáo tiến bộ · xử lý phụ huynh khó |
 | 90' | **Bài kiểm tra chuẩn** (lý thuyết + tình huống) & **dạy thử đánh giá** |
 

@@ -20,10 +20,10 @@
 
 | Tầng | Tên | Điều kiện đạt tầng *(phải đủ cả 3)* | Đối chiếu |
 |:--:|---|---|---|
-| **HS-T1** | **Người Bắt Đầu** | Đã dự ≥1 chuyên đề · có Hộ chiếu GITA · đã ký nội quy lớp | Ladder **L1–L2** · GITA-4 **KM** |
-| **HS-T2** | **Người Luyện Tập** | ≥6 chuyên đề đạt **TT** · ≥3 `PSM` hoàn thành có chữ ký · giữ chuỗi ngày ≥14 | Ladder **L2–L3** · **ĐH** · Đai **Trắng → Vàng** |
-| **HS-T3** | **Người Thành Thạo** | ≥12 chuyên đề đạt **TT** · ≥1 chuyên đề đạt **DD** · đã hoàn thành 1 sản phẩm SHOWCASE cấp lớp | Ladder **L3–L4** · **TT** · Đai **Xanh Lá** |
-| **HS-T4** | **Người Dẫn Dắt** | ≥3 chuyên đề đạt **DD** · đã **kèm lại ≥1 bạn** có xác nhận · giữ vai Squad ≥1 học kỳ · **0 vi phạm 4 luật đạo đức** | Ladder **L4–L5** · **DD** · Đai **Xanh Dương → Đỏ** |
+| **HS-T1** | **Người Bắt Đầu** | Đã dự ≥1 chuyên đề · có Hộ chiếu GITA · đã ký nội quy lớp | Ladder **L1–L2** · thang 6 bậc **B1** |
+| **HS-T2** | **Người Luyện Tập** | ≥6 chuyên đề đạt **B3** · ≥3 `PSM` hoàn thành có chữ ký · giữ chuỗi ngày ≥14 | Ladder **L2–L3** · **B2** · Đai **Trắng → Vàng** |
+| **HS-T3** | **Người Thành Thạo** | ≥12 chuyên đề đạt **B3** · ≥1 chuyên đề đạt **B4** · đã hoàn thành 1 sản phẩm SHOWCASE cấp lớp | Ladder **L3–L4** · **B3** · Đai **Xanh Lá** |
+| **HS-T4** | **Người Dẫn Dắt** | ≥3 chuyên đề đạt **B4** · đã **kèm lại ≥1 bạn** có xác nhận · giữ vai Squad ≥1 học kỳ · **0 vi phạm 4 luật đạo đức** | Ladder **L4–L5** · **B4** · Đai **Xanh Dương → Đỏ** |
 | **HS-T5** | **Người Kiến Tạo** | Đã chủ trì ≥1 dự án tác động có số liệu · được **hội đồng có người ngoài trường** thông qua · hồ sơ Talent Portfolio đủ 8 phần | Ladder **L5** · Đai **Kim** |
 
 **Quy tắc lên tầng:**

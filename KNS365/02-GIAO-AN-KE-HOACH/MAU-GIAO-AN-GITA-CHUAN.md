@@ -124,7 +124,7 @@
 | Tự đánh giá & đồng đẳng | `[PDG-TDG / PDG-DD]` | 20% | Cuối buổi 2 |
 | Chuyển giao đời thực | `[PSM-...]` có chữ ký | 20% | Đầu buổi 2 |
 
-**Quy đổi:** GITA-4 (KM / ĐH / TT / DD) → TT27 (Tiểu học) hoặc TT22 (THCS–THPT) theo bảng ở `00-KHUNG-NEN-TANG/02-CHUAN-DOI-SANH`.
+**Quy đổi:** thang sâu 6 bậc, chấm 4 ô (**B1 / B2 / B3 / B4**) → TT27 (Tiểu học) hoặc TT22 (THCS–THPT) theo bảng ở `00-KHUNG-NEN-TANG/02-CHUAN-DOI-SANH`.
 
 **Bảng theo dõi lượt phản hồi cá nhân** *(bắt buộc – bảo đảm 100% HS nhận ≥2 phản hồi)*
 

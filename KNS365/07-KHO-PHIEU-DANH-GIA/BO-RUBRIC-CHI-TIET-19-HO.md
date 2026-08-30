@@ -17,9 +17,9 @@
 |---|---|
 | **Mã** | `R-<họ>-<số>` — 3 chữ cái họ, 2 chữ số |
 | **Số tiêu chí** | **5** *(chuyên đề mốc lớn được 6–8)* |
-| **Số mức** | **4** — KM · ĐH · **TT** · **DD** |
-| **Vạch ĐẠT** | Cột **TT** — luôn tô nền nhạt trên bản in |
-| **Vạch XUẤT SẮC** | Cột **DD** — luôn viền Vàng Sao |
+| **Số mức** | **4 ô chấm** — B1 · B2 · **B3** · **B4** *(rút từ thang sâu 6 bậc)* |
+| **Vạch ĐẠT** | Cột **B3** — luôn tô nền nhạt trên bản in |
+| **Vạch XUẤT SẮC** | Cột **B4** — luôn viền Vàng Sao |
 | **Thang điểm** | Mỗi tiêu chí 1–4 điểm · tổng 5 tiêu chí = **/20** *(6 tiêu chí = /24)* |
 | **Khối phản hồi 1-1-1** | **Bắt buộc có ở cuối mọi rubric** — không có thì rubric không hợp chuẩn |
 
@@ -27,21 +27,21 @@
 
 | Tổng | Mức | | Tổng | Mức |
 |:--:|:--:|---|:--:|:--:|
-| < 8 | **KM** | | 15–17 | **TT** *(ĐẠT)* |
-| 8–11 | **ĐH** | | 18–20 | **DD** *(XUẤT SẮC)* |
+| < 8 | **B1** | | 15–17 | **B3** *(ĐẠT)* |
+| 8–11 | **B2** | | 18–20 | **B4** *(XUẤT SẮC)* |
 | 12–14 | **ĐH+** | | | |
 
 ### A2. Bảy quy tắc viết mức
 
 | # | Quy tắc | Ví dụ |
 |:--:|---|---|
-| 1 | **Mỗi mức thêm đúng một điều mới** so với mức dưới — không nhảy cóc | ĐH: *nói được* → TT: *nói được trong 3 giây* → DD: *nói được trong 3 giây khi có nhiễu* |
+| 1 | **Mỗi mức thêm đúng một điều mới** so với mức dưới — không nhảy cóc | B2: *nói được* → B3: *nói được trong 3 giây* → B4: *nói được trong 3 giây khi có nhiễu* |
 | 2 | **Có con số hoặc tần suất** ở mức TT trở lên | *"≥5/7 ngày"*, *"≤8 từ/dòng"*, *"trong 3 giây"* |
-| 3 | **KM không bao giờ mang nghĩa xấu** — nó là *"chưa bắt đầu"*, không phải *"kém"* | ✅ *"Chưa thực hiện được khi chưa có người nhắc"* — ❌ *"Không làm được"* |
-| 4 | **DD luôn chứa yếu tố tự chủ hoặc lan toả** | *"tự điều chỉnh không cần nhắc"* · *"hướng dẫn lại được cho 1 bạn"* |
+| 3 | **B1 không bao giờ mang nghĩa xấu** — nó là *"chưa bắt đầu"*, không phải *"kém"* | ✅ *"Chưa thực hiện được khi chưa có người nhắc"* — ❌ *"Không làm được"* |
+| 4 | **B4 luôn chứa yếu tố tự chủ hoặc lan toả** | *"tự điều chỉnh không cần nhắc"* · *"hướng dẫn lại được cho 1 bạn"* |
 | 5 | **Không dùng trạng từ mơ hồ** — *tốt, khá, tích cực, đầy đủ* | Thay bằng hành vi đếm được |
 | 6 | **Mỗi tiêu chí đo đúng một thứ** — không gộp hai năng lực vào một dòng | Tách *"nói to"* và *"nhìn khán giả"* thành hai tiêu chí |
-| 7 | **Đọc được bởi học sinh** ở cấp học tương ứng | Tiểu học dùng biểu tượng 😐 🙂 😀 🤩 thay chữ KM/ĐH/TT/DD |
+| 7 | **Đọc được bởi học sinh** ở cấp học tương ứng | Tiểu học dùng biểu tượng 😐 🙂 😀 🤩 thay chữ B1/B2/B3/B4 |
 
 ### A3. Khối phản hồi 1-1-1 — bắt buộc ở cuối mọi rubric
 
@@ -53,12 +53,12 @@
 
 ### A4. Quy đổi sang quy định đánh giá của Bộ
 
-| GITA-4 | TT 27/2020 *(Tiểu học)* | TT 22/2021 *(THCS – THPT)* |
+| thang 6 bậc | TT 27/2020 *(Tiểu học)* | TT 22/2021 *(THCS – THPT)* |
 |:--:|---|---|
-| **DD** — Dẫn Dắt | **Hoàn thành tốt** · phẩm chất/năng lực **Tốt** | **Tốt** |
-| **TT** — Thành Thạo | **Hoàn thành** · **Đạt** | **Khá** |
-| **ĐH** — Định Hình | **Hoàn thành** *(cần hỗ trợ)* · **Đạt** | **Đạt** |
-| **KM** — Khởi Mở | **Chưa hoàn thành** · **Cần cố gắng** | **Chưa đạt** |
+| **B4** — Tự cháy | **Hoàn thành tốt** · phẩm chất/năng lực **Tốt** | **Tốt** |
+| **B3** — Làm giỏi | **Hoàn thành** · **Đạt** | **Khá** |
+| **B2** — Làm đều | **Hoàn thành** *(cần hỗ trợ)* · **Đạt** | **Đạt** |
+| **B1** — Biết | **Chưa hoàn thành** · **Cần cố gắng** | **Chưa đạt** |
 
 > ⚠️ **Rà soát hiệu lực văn bản trước khi áp dụng.** Bảng quy đổi này là **căn cứ đối sánh nội bộ**, không thay thế quy chế đánh giá của nhà trường. Điểm KNS365 **không được dùng để xếp loại học lực chính khoá** trừ khi nhà trường có quyết định riêng.
 
@@ -66,13 +66,13 @@
 
 ## PHẦN B. 19 RUBRIC GỐC
 
-> Đọc bảng: cột **TT** là vạch ĐẠT · cột **DD** là vạch XUẤT SẮC.
+> Đọc bảng: cột **B3** là vạch ĐẠT · cột **B4** là vạch XUẤT SẮC.
 
 ---
 
 ### `R-TCH-01` · TỰ PHỤC VỤ & GIỮ CAM KẾT *(M1 · Tự chủ & trách nhiệm)*
 
-| Tiêu chí | KM | ĐH | **TT** *(ĐẠT)* | **DD** *(XUẤT SẮC)* |
+| Tiêu chí | B1 | B2 | **B3** *(ĐẠT)* | **B4** *(XUẤT SẮC)* |
 |---|---|---|---|---|
 | 1. Tự làm việc của mình | Cần người lớn làm cùng | Tự làm khi được nhắc | **Tự làm không cần nhắc, ≥5/7 ngày** | 7/7 ngày; tự nhận thêm việc mới |
 | 2. Chuẩn bị trước | Quên đồ thường xuyên | Nhớ khi có danh mục | **Tự soạn đủ theo thời khoá biểu, ≤3 phút** | Soạn xong tự kiểm lại; ≥3 tuần không quên đồ |
@@ -84,7 +84,7 @@
 
 ### `R-KEH-01` · ĐẶT ĐÍCH & LẬP KẾ HOẠCH *(M1 · Kế hoạch & mục tiêu)*
 
-| Tiêu chí | KM | ĐH | **TT** *(ĐẠT)* | **DD** *(XUẤT SẮC)* |
+| Tiêu chí | B1 | B2 | **B3** *(ĐẠT)* | **B4** *(XUẤT SẮC)* |
 |---|---|---|---|---|
 | 1. Đích cụ thể | Nêu mong muốn mơ hồ | Có đích nhưng chưa đo được | **Đích đủ SMART-E, đo được** | Có **2 vạch ĐẠT / XUẤT SẮC** do tự đặt |
 | 2. Chia nhỏ | Không chia | Chia được 2–3 bước | **Chia thành các bước có hạn thời gian** | Bước nhỏ nhất làm được trong ≤1 ngày |
@@ -96,7 +96,7 @@
 
 ### `R-THQ-01` · XÂY & GIỮ MỘT THÓI QUEN *(M1 · Thói quen)*
 
-| Tiêu chí | KM | ĐH | **TT** *(ĐẠT)* | **DD** *(XUẤT SẮC)* |
+| Tiêu chí | B1 | B2 | **B3** *(ĐẠT)* | **B4** *(XUẤT SẮC)* |
 |---|---|---|---|---|
 | 1. Chọn thói quen đúng cỡ | Chọn quá lớn, bỏ ngay | Chọn được nhưng chưa cụ thể | **Nhỏ, cụ thể, làm được trong ≤5 phút** | Gắn đúng vào một neo có sẵn trong ngày |
 | 2. Neo & nhắc | Không có neo | Có nhắc bằng chuông báo | **Có neo hành vi rõ ràng (HABIT-5)** | Không cần nhắc ngoài; neo tự vận hành |
@@ -108,7 +108,7 @@
 
 ### `R-ATT-01` · PHẢN XẠ AN TOÀN 3 BƯỚC *(M2 · An toàn – sinh tồn)*
 
-| Tiêu chí | KM 😐 | ĐH 🙂 | **TT** 😀 *(ĐẠT)* | **DD** 🤩 *(XUẤT SẮC)* |
+| Tiêu chí | B1 😐 | B2 🙂 | **B3** 😀 *(ĐẠT)* | **B4** 🤩 *(XUẤT SẮC)* |
 |---|---|---|---|---|
 | 1. Nhận ra tình huống nguy hiểm | Chưa nhận ra | Nhận ra khi rõ ràng | **Nhận ra cả tình huống có người quen** | Nhận ra tình huống có lý do nghe hợp lý |
 | 2. NÓI KHÔNG | Im lặng hoặc nói nhỏ | Nói được khi được nhắc | **Nói to, rõ, người cách 5m nghe được** | Nói được **trong ≤3 giây**, kể cả khi bị nhiễu |
@@ -122,7 +122,7 @@
 
 ### `R-SKH-01` · TỰ CHĂM SÓC SỨC KHOẺ HẰNG NGÀY *(M2 · Sức khoẻ)*
 
-| Tiêu chí | KM | ĐH | **TT** *(ĐẠT)* | **DD** *(XUẤT SẮC)* |
+| Tiêu chí | B1 | B2 | **B3** *(ĐẠT)* | **B4** *(XUẤT SẮC)* |
 |---|---|---|---|---|
 | 1. Ngủ đủ & đúng giờ | Thất thường | Đúng giờ khi được nhắc | **Đúng giờ ngủ ≥5/7 đêm** | 7/7; tự điều chỉnh khi có lịch bất thường |
 | 2. Ăn uống | Bỏ bữa, ăn tuỳ hứng | Ăn đủ bữa khi có người chuẩn bị | **Ăn đủ 3 bữa, tự chọn được bữa cân đối** | Tự chuẩn bị ≥1 bữa/tuần; giải thích được lựa chọn |
@@ -134,7 +134,7 @@
 
 ### `R-CAM-01` · NHẬN DIỆN & ĐIỀU TIẾT CẢM XÚC *(M3 · Cảm xúc)*
 
-| Tiêu chí | KM | ĐH | **TT** *(ĐẠT)* | **DD** *(XUẤT SẮC)* |
+| Tiêu chí | B1 | B2 | **B3** *(ĐẠT)* | **B4** *(XUẤT SẮC)* |
 |---|---|---|---|---|
 | 1. Gọi tên cảm xúc | Chỉ nói *"buồn/vui"* | Gọi được 4–5 cảm xúc | **Gọi được ≥8 cảm xúc, phân biệt mức độ** | Phân biệt cảm xúc gần nhau *(lo ≠ sợ ≠ hồi hộp)* |
 | 2. Nhận dấu hiệu cơ thể | Không nhận ra | Nhận ra sau khi qua cơn | **Nhận ra khi đang xảy ra** | Nhận ra **trước khi bùng lên** |
@@ -146,7 +146,7 @@
 
 ### `R-SUC-01` · PHỤC HỒI SAU THẤT BẠI *(M3 · Sức bật & bản lĩnh)*
 
-| Tiêu chí | KM | ĐH | **TT** *(ĐẠT)* | **DD** *(XUẤT SẮC)* |
+| Tiêu chí | B1 | B2 | **B3** *(ĐẠT)* | **B4** *(XUẤT SẮC)* |
 |---|---|---|---|---|
 | 1. Đối diện thay vì né | Né tránh, bỏ cuộc | Quay lại sau vài ngày | **Quay lại trong ≤24 giờ** | Quay lại ngay trong buổi |
 | 2. Tách sự việc khỏi bản thân | *"Mình dốt"* | Phân biệt khi được hướng dẫn | **Nói được *"việc này mình chưa làm được"*** | Chỉ ra đúng **phần nào** chưa được |
@@ -158,7 +158,7 @@
 
 ### `R-GIA-01` · LẮNG NGHE & PHẢN HỒI *(M4 · Giao tiếp)*
 
-| Tiêu chí | KM | ĐH | **TT** *(ĐẠT)* | **DD** *(XUẤT SẮC)* |
+| Tiêu chí | B1 | B2 | **B3** *(ĐẠT)* | **B4** *(XUẤT SẮC)* |
 |---|---|---|---|---|
 | 1. Nghe hết không ngắt lời | Ngắt lời thường xuyên | Nghe hết khi được nhắc | **Nghe hết, không ngắt lời** | Giữ im lặng chờ khi người kia đang nghĩ |
 | 2. Nhìn người nói | Nhìn chỗ khác | Nhìn ngắt quãng | **Nhìn người nói phần lớn thời gian** | Điều chỉnh theo mức thoải mái của người kia |
@@ -170,7 +170,7 @@
 
 ### `R-NOI-01` · TRÌNH BÀY TRƯỚC ĐÁM ĐÔNG *(M4 · Nói & thuyết trình)*
 
-| Tiêu chí | KM | ĐH | **TT** *(ĐẠT)* | **DD** *(XUẤT SẮC)* |
+| Tiêu chí | B1 | B2 | **B3** *(ĐẠT)* | **B4** *(XUẤT SẮC)* |
 |---|---|---|---|---|
 | 1. Mở đầu | Không mở, vào thẳng | Mở bằng câu chào | **Mở trong ≤15 giây, có móc câu** | Mở bằng câu hỏi/con số làm khán giả ngẩng lên |
 | 2. Giọng | Nhỏ, khó nghe | Nghe được ở gần | **Người ngồi cuối phòng nghe rõ** | Có thay đổi nhịp và ngắt nghỉ có chủ đích |
@@ -182,7 +182,7 @@
 
 ### `R-NHO-01` · GIỮ VAI TRONG SQUAD *(M4 · Làm việc nhóm)*
 
-| Tiêu chí | KM | ĐH | **TT** *(ĐẠT)* | **DD** *(XUẤT SẮC)* |
+| Tiêu chí | B1 | B2 | **B3** *(ĐẠT)* | **B4** *(XUẤT SẮC)* |
 |---|---|---|---|---|
 | 1. Hiểu vai của mình | Không rõ vai | Biết vai nhưng làm lẫn | **Làm đúng phần việc của vai được giao** | Làm đủ vai và hỗ trợ vai khác khi cần |
 | 2. Đóng góp | Im lặng suốt | Nói khi được gọi | **Chủ động đóng góp ≥2 lần/buổi** | Đóng góp giúp nhóm đổi hướng đúng |
@@ -194,7 +194,7 @@
 
 ### `R-TUD-01` · PHÂN TÍCH VẤN ĐỀ & RA QUYẾT ĐỊNH *(M5 · Tư duy & GQVĐ)*
 
-| Tiêu chí | KM | ĐH | **TT** *(ĐẠT)* | **DD** *(XUẤT SẮC)* |
+| Tiêu chí | B1 | B2 | **B3** *(ĐẠT)* | **B4** *(XUẤT SẮC)* |
 |---|---|---|---|---|
 | 1. Nêu đúng vấn đề | Nêu triệu chứng | Nêu vấn đề chung chung | **Nêu vấn đề cụ thể, tách khỏi triệu chứng** | Phân biệt vấn đề gốc và vấn đề bề mặt |
 | 2. Thu thập thông tin | Đoán | Hỏi 1 nguồn | **Hỏi ≥2 nguồn, có kiểm chứng** | Chủ động tìm thông tin trái chiều với giả định của mình |
@@ -206,7 +206,7 @@
 
 ### `R-STA-01` · TẠO Ý TƯỞNG & THỬ NGHIỆM *(M5 · Sáng tạo)*
 
-| Tiêu chí | KM | ĐH | **TT** *(ĐẠT)* | **DD** *(XUẤT SẮC)* |
+| Tiêu chí | B1 | B2 | **B3** *(ĐẠT)* | **B4** *(XUẤT SẮC)* |
 |---|---|---|---|---|
 | 1. Số lượng ý tưởng | 1–2 ý | 3–5 ý | **≥8 ý trong 5 phút, không tự kiểm duyệt** | ≥12 ý, có ý ngoài khuôn quen thuộc |
 | 2. Đa dạng ý tưởng | Cùng một hướng | 2 hướng | **≥3 hướng khác nhau về bản chất** | Kết hợp được hai hướng xa nhau |
@@ -218,7 +218,7 @@
 
 ### `R-HOC-01` · CHIẾN LƯỢC HỌC & SIÊU NHẬN THỨC *(M6 · Học tập)*
 
-| Tiêu chí | KM | ĐH | **TT** *(ĐẠT)* | **DD** *(XUẤT SẮC)* |
+| Tiêu chí | B1 | B2 | **B3** *(ĐẠT)* | **B4** *(XUẤT SẮC)* |
 |---|---|---|---|---|
 | 1. Biết mình đang ở đâu | Không biết | Ước lượng theo cảm giác | **Nêu được điểm mạnh/yếu theo dữ liệu thật** | Có bản đồ khoảng cách từng môn/từng dạng bài |
 | 2. Chọn phương pháp | Chỉ đọc lại | Có ghi chép | **Dùng ≥2 phương pháp chủ động** *(tự kiểm tra, lặp ngắt quãng)* | Chọn phương pháp khác nhau cho nội dung khác nhau |
@@ -230,7 +230,7 @@
 
 ### `R-SO-01` · ỨNG XỬ & AN TOÀN TRÊN MẠNG *(M7 · Công dân số)*
 
-| Tiêu chí | KM | ĐH | **TT** *(ĐẠT)* | **DD** *(XUẤT SẮC)* |
+| Tiêu chí | B1 | B2 | **B3** *(ĐẠT)* | **B4** *(XUẤT SẮC)* |
 |---|---|---|---|---|
 | 1. Bảo vệ thông tin cá nhân | Chia sẻ tuỳ tiện | Biết nguyên tắc, làm chưa đều | **Không chia sẻ thông tin định danh; kiểm tra quyền riêng tư** | Rà lại dấu vết số của mình định kỳ |
 | 2. Kiểm chứng thông tin | Tin ngay | Nghi ngờ nhưng không kiểm | **Kiểm ≥2 nguồn trước khi tin hoặc chia sẻ** | Nhận ra dấu hiệu thao túng và tin giả có chủ đích |
@@ -242,7 +242,7 @@
 
 ### `R-TAI-01` · QUẢN LÝ TIỀN CÁ NHÂN *(M8 · Tài chính)*
 
-| Tiêu chí | KM | ĐH | **TT** *(ĐẠT)* | **DD** *(XUẤT SẮC)* |
+| Tiêu chí | B1 | B2 | **B3** *(ĐẠT)* | **B4** *(XUẤT SẮC)* |
 |---|---|---|---|---|
 | 1. Phân biệt cần – muốn | Không phân biệt | Phân biệt khi được hỏi | **Tự phân loại đúng trước khi mua** | Nêu được cái giá của lựa chọn thay thế |
 | 2. Ghi chép thu chi | Không ghi | Ghi không đều | **Ghi đủ ≥4 tuần liên tục** | Ghi ≥12 tuần và tự phân tích xu hướng |
@@ -254,7 +254,7 @@
 
 ### `R-KTA-01` · TẠO GIÁ TRỊ & HUY ĐỘNG NGUỒN LỰC *(M8 · Khởi tạo)*
 
-| Tiêu chí | KM | ĐH | **TT** *(ĐẠT)* | **DD** *(XUẤT SẮC)* |
+| Tiêu chí | B1 | B2 | **B3** *(ĐẠT)* | **B4** *(XUẤT SẮC)* |
 |---|---|---|---|---|
 | 1. Nhận ra nhu cầu thật | Nghĩ ra ý tưởng từ mình | Hỏi vài người quen | **Phỏng vấn ≥10 người ngoài nhóm quen** | Tìm được nhu cầu chưa ai đáp ứng, có bằng chứng |
 | 2. Đề xuất giá trị | Mô tả sản phẩm | Nêu lợi ích chung | **Nêu rõ ai được lợi và lợi thế nào** | Nêu được vì sao chọn mình thay vì cách khác |
@@ -266,7 +266,7 @@
 
 ### `R-HNG-01` · ĐỊNH VỊ BẢN THÂN & LỘ TRÌNH NGHỀ *(M8 · Hướng nghiệp)*
 
-| Tiêu chí | KM | ĐH | **TT** *(ĐẠT)* | **DD** *(XUẤT SẮC)* |
+| Tiêu chí | B1 | B2 | **B3** *(ĐẠT)* | **B4** *(XUẤT SẮC)* |
 |---|---|---|---|---|
 | 1. Hiểu điểm mạnh của mình | Nói *"em không biết"* | Nêu điểm mạnh chung chung | **Nêu ≥3 điểm mạnh kèm bằng chứng đã xảy ra** | Phân biệt được *"thích"* và *"giỏi"* |
 | 2. Hiểu nghề thật | Biết qua phim ảnh | Biết mô tả chung | **Đã nói chuyện với ≥1 người làm nghề đó** | Đã trải nghiệm/quan sát thực tế ≥1 buổi |
@@ -278,7 +278,7 @@
 
 ### `R-LAN-01` · DẪN DẮT NHÓM *(M8 · Lãnh đạo)*
 
-| Tiêu chí | KM | ĐH | **TT** *(ĐẠT)* | **DD** *(XUẤT SẮC)* |
+| Tiêu chí | B1 | B2 | **B3** *(ĐẠT)* | **B4** *(XUẤT SẮC)* |
 |---|---|---|---|---|
 | 1. Làm rõ đích cho nhóm | Nhóm không rõ mục tiêu | Nêu mục tiêu chung | **Cả nhóm nói lại được đích bằng lời của mình** | Đích có tiêu chí hoàn thành ai cũng kiểm được |
 | 2. Phân vai | Tự làm hết | Chia việc đều nhau | **Chia theo điểm mạnh, ai cũng có phần** | Có người dự phòng cho mỗi vai then chốt |
@@ -290,7 +290,7 @@
 
 ### `R-PHS-01` · DỰ ÁN TÁC ĐỘNG CỘNG ĐỒNG *(M8 · Phụng sự)*
 
-| Tiêu chí | KM | ĐH | **TT** *(ĐẠT)* | **DD** *(XUẤT SẮC)* |
+| Tiêu chí | B1 | B2 | **B3** *(ĐẠT)* | **B4** *(XUẤT SẮC)* |
 |---|---|---|---|---|
 | 1. Hiểu người thụ hưởng | Nghĩ hộ người khác | Hỏi 2–3 người | **Phỏng vấn ≥10 người thụ hưởng, ghi nguyên văn** | Có ≥2 ý kiến trái chiều được ghi lại |
 | 2. Lý thuyết thay đổi | Chỉ có ý tưởng | Có hoạt động và đầu ra | **Đủ chuỗi hoạt động → đầu ra → kết quả đo được** | Nêu rõ **giả định** và kiểm chứng được ≥1 giả định |
@@ -298,7 +298,7 @@
 | 4. Bền bỉ qua khó khăn | Tan khi gặp khó | Vượt 1 lần nhờ người lớn | **Tự vượt ≥2 khủng hoảng, có nhật ký** | Rút ra quy tắc phòng ngừa và áp dụng lần sau |
 | 5. Đạo đức & bàn giao | Vi phạm quy tắc | Tuân thủ khi được nhắc | **Đủ phiếu đồng ý; có sổ tay bàn giao** | **Từ chối được cơ hội có lợi vì lý do đạo đức**; dự án chạy tiếp sau bàn giao |
 
-> ⚠️ Tiêu chí 5 có **quyền phủ quyết**: vi phạm quy tắc an toàn/đạo đức thì **không xếp DD**, bất kể tổng điểm.
+> ⚠️ Tiêu chí 5 có **quyền phủ quyết**: vi phạm quy tắc an toàn/đạo đức thì **không xếp **B4** **, bất kể tổng điểm.
 
 ---
 
@@ -310,7 +310,7 @@
 | **2** | Mở **rubric gốc của họ đó** trong tài liệu này, giữ nguyên **khung 5 tiêu chí** |
 | **3** | Thay nội dung tiêu chí theo **4 vi kỹ năng T-DRILL** của chuyên đề — mỗi vi kỹ năng thành 1 tiêu chí, tiêu chí 5 luôn là **chuyển giao/tự chủ** |
 | **4** | Viết mức TT bằng **con số lấy từ dòng "Thực hành"** của chuyên đề *(số vòng, số giây, bậc L)* |
-| **5** | Viết mức DD bằng cách thêm **tự chủ hoặc lan toả** *(không cần nhắc · hướng dẫn lại cho 1 bạn · giữ khi có nhiễu)* |
+| **5** | Viết mức B4 bằng cách thêm **tự chủ hoặc lan toả** *(không cần nhắc · hướng dẫn lại cho 1 bạn · giữ khi có nhiễu)* |
 | **6** | **Hiệu chuẩn**: 2 HLV chấm 10 mẫu, khớp ≥80% mới đưa vào dùng |
 | **7** | Ghi mã, thêm **khối phản hồi 1-1-1**, cập nhật vào chỉ số họ rubric |
 

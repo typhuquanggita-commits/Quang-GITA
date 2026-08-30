@@ -51,7 +51,7 @@ Số hoá KNS365 **không phải là quay lại buổi học rồi tải lên m�
 | 3 | **NHIỆM VỤ THỰC HÀNH** | `P3-TH` | 20–30' | **T** | *Mình làm được chưa? Số liệu bao nhiêu?* | **Phiếu KNS 5 lớp** · bài nộp có số liệu · quay video tự luyện · chấm chéo |
 | 4 | **BÀI HỌC TÍCH LUỸ** | `P4-TL` | 8–10' | **T** | *Rút ra nguyên lý gì để dùng lại?* | Thẻ ghi nhớ · sơ đồ tổng kết · **Ngân hàng Nguyên Tắc** cá nhân · lặp ngắt quãng tự động |
 | 5 | **VẬN DỤNG THỰC TIỄN** | `P5-VD` | 7 ngày | **A** | *Mình mang điều này ra đời thật thế nào?* | **Phiếu Sứ Mệnh số** · nhật ký ảnh/video · **chữ ký nhân chứng** (ký số hoặc chụp phiếu giấy) |
-| 6 | **ĐÁNH GIÁ BÀI HỌC** | `P6-DG` | 10–15' | – | *Mình đang ở mức nào? Còn thiếu gì?* | Trắc nghiệm hiểu bản chất · tự đánh giá GITA-4 · rubric sản phẩm · đánh giá đồng đẳng · **thang tự tin trước–sau** |
+| 6 | **ĐÁNH GIÁ BÀI HỌC** | `P6-DG` | 10–15' | – | *Mình đang ở mức nào? Còn thiếu gì?* | Trắc nghiệm hiểu bản chất · tự đánh giá thang 6 bậc · rubric sản phẩm · đánh giá đồng đẳng · **thang tự tin trước–sau** |
 | 7 | **AUDIO BÀI GIẢNG CHUYÊN SÂU** | `P7-AU` | 12–18' | **I** + T | *Người đi trước hiểu điều này sâu tới đâu?* | Audio chuyên gia · có bản chép lời · nghe offline · tốc độ điều chỉnh được |
 
 **Tổng thời lượng online/chuyên đề:** ≈ **75–100 phút** (chưa tính 7 ngày vận dụng) — bổ trợ cho **360 phút trực tiếp**, không thay thế.
@@ -128,7 +128,7 @@ Số hoá KNS365 **không phải là quay lại buổi học rồi tải lên m�
 | Nguồn | Hình thức số | Trọng số |
 |---|---|:--:|
 | Hiểu bản chất | Trắc nghiệm **tình huống** (không hỏi thuộc lòng) 8–10 câu | 20% |
-| Sản phẩm | Rubric 5 tiêu chí × 4 mức GITA-4, chấm bởi HLV | 30% |
+| Sản phẩm | Rubric 5 tiêu chí × 4 mức thang 6 bậc, chấm bởi HLV | 30% |
 | Tự đánh giá & đồng đẳng | Phiếu tự đánh giá + chấm chéo Squad | 20% |
 | Chuyển giao đời thực | Kết quả P5 + xác nhận nhân chứng | 30% |
 

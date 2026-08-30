@@ -11,8 +11,8 @@
 |:--:|---|---|---|
 | 1 | **Thông tư 32/2018/TT-BGDĐT** – Chương trình Giáo dục phổ thông 2018 | 5 phẩm chất chủ yếu, 10 năng lực (3 chung + 7 đặc thù); Hoạt động trải nghiệm (TH) và Hoạt động trải nghiệm, hướng nghiệp (THCS, THPT) | Toàn bộ 288 chuyên đề được ánh xạ tới 5 phẩm chất – 10 năng lực; 4 mạch nội dung HĐTN được phủ 100% (xem Phần B) |
 | 2 | **Thông tư 04/2014/TT-BGDĐT** – Quản lý hoạt động giáo dục kỹ năng sống và hoạt động giáo dục ngoài giờ chính khoá | Điều kiện về giáo trình/tài liệu, cơ sở vật chất, đội ngũ, cấp phép hoạt động | Hồ sơ chương trình đầy đủ: giáo trình, giáo án, kịch bản, chuẩn HLV, chuẩn CSVC (mục 06 & 09) |
-| 3 | **Thông tư 27/2020/TT-BGDĐT** – Đánh giá học sinh tiểu học | Đánh giá thường xuyên bằng nhận xét; mức Hoàn thành tốt / Hoàn thành / Chưa hoàn thành | Thang GITA-4 mức được quy đổi trực tiếp sang 3 mức TT27 (Phần D) |
-| 4 | **Thông tư 22/2021/TT-BGDĐT** – Đánh giá học sinh THCS và THPT | Đánh giá bằng nhận xét đối với HĐTN, hướng nghiệp; mức Tốt / Khá / Đạt / Chưa đạt | Thang GITA-4 mức trùng khớp 1-1 với 4 mức TT22 (Phần D) |
+| 3 | **Thông tư 27/2020/TT-BGDĐT** – Đánh giá học sinh tiểu học | Đánh giá thường xuyên bằng nhận xét; mức Hoàn thành tốt / Hoàn thành / Chưa hoàn thành | Thang thang 6 bậc mức được quy đổi trực tiếp sang 3 mức TT27 (Phần D) |
+| 4 | **Thông tư 22/2021/TT-BGDĐT** – Đánh giá học sinh THCS và THPT | Đánh giá bằng nhận xét đối với HĐTN, hướng nghiệp; mức Tốt / Khá / Đạt / Chưa đạt | Thang thang 6 bậc mức trùng khớp 1-1 với 4 mức TT22 (Phần D) |
 | 5 | **Thông tư 17/2012/TT-BGDĐT** (và các văn bản sửa đổi) – Dạy thêm học thêm / hoạt động ngoài giờ | Ranh giới giữa hoạt động chính khoá và ngoài giờ | KNS365 định vị rõ 2 phương án triển khai: tích hợp HĐTN chính khoá **hoặc** ngoài giờ chính khoá (mục 09) |
 | 6 | **Quyết định 1895/QĐ-TTg (2021)** – Tăng cường giáo dục lý tưởng cách mạng, đạo đức, lối sống và khơi dậy khát vọng cống hiến cho thanh niên, thiếu niên, nhi đồng giai đoạn 2021–2030 | Định hướng giá trị, khát vọng cống hiến | Mạch **M8 – Tài chính, Khởi tạo & Phụng sự** và toàn bộ pha **A3 – Lan toả** |
 | 7 | **Chỉ thị/Kế hoạch của Bộ GD&ĐT về xây dựng văn hoá học đường, phòng chống bạo lực học đường, an toàn trường học** | Phòng chống bạo lực, bắt nạt, xâm hại; an toàn trường học | Mạch **M2 – An toàn & Sức khoẻ** và **M3 – Cảm xúc & Sức bật**, mỗi khối có tối thiểu 1 chuyên đề trực tiếp |
@@ -95,23 +95,23 @@
 
 ## PHẦN D. QUY ĐỔI THANG ĐÁNH GIÁ
 
-### Thang gốc KNS365: **GITA-4** (thang thành thạo 4 mức)
+### Thang gốc KNS365: **thang 6 bậc** (thang thành thạo 4 mức)
 
 | Mức | Ký hiệu | Tên | Mô tả hành vi |
 |:--:|:--:|---|---|
-| 1 | **KM** | Khởi Mở (Emerging) | Nhận biết được kỹ năng; thực hiện được khi có mẫu và hỗ trợ liên tục |
+| 1 | **B1** | Khởi Mở (Emerging) | Nhận biết được kỹ năng; thực hiện được khi có mẫu và hỗ trợ liên tục |
 | 2 | **DH** | Định Hình (Developing) | Thực hiện đúng quy trình khi có gợi ý; còn thiếu ổn định |
-| 3 | **TT** | Thành Thạo (Proficient) | Thực hiện độc lập, đúng và ổn định trong bối cảnh quen thuộc |
-| 4 | **DD** | Dẫn Dắt (Leading) | Thực hiện xuất sắc trong bối cảnh mới, tự điều chỉnh và **hướng dẫn lại cho người khác** |
+| 3 | **B3** | Thành Thạo (Proficient) | Thực hiện độc lập, đúng và ổn định trong bối cảnh quen thuộc |
+| 4 | **B4** | Dẫn Dắt (Leading) | Thực hiện xuất sắc trong bối cảnh mới, tự điều chỉnh và **hướng dẫn lại cho người khác** |
 
 ### Bảng quy đổi chính thức
 
-| GITA-4 | Điểm quy chiếu (nội bộ) | **TT 27/2020 – Tiểu học** | **TT 22/2021 – THCS/THPT** | CEFR-style descriptor |
+| thang 6 bậc | Điểm quy chiếu (nội bộ) | **TT 27/2020 – Tiểu học** | **TT 22/2021 – THCS/THPT** | CEFR-style descriptor |
 |:--:|:--:|---|---|---|
-| **DD** – Dẫn Dắt | 9,0 – 10 | Hoàn thành tốt (T) | **Tốt** | Mastery / Autonomous+ |
-| **TT** – Thành Thạo | 7,0 – 8,9 | Hoàn thành tốt (T) | **Khá** | Independent |
+| **B4** – Tự cháy | 9,0 – 10 | Hoàn thành tốt (T) | **Tốt** | Mastery / Autonomous+ |
+| **B3** – Làm giỏi | 7,0 – 8,9 | Hoàn thành tốt (T) | **Khá** | Independent |
 | **DH** – Định Hình | 5,0 – 6,9 | Hoàn thành (H) | **Đạt** | Supported |
-| **KM** – Khởi Mở | < 5,0 | Chưa hoàn thành (C) | **Chưa đạt** | Emerging |
+| **B1** – Biết | < 5,0 | Chưa hoàn thành (C) | **Chưa đạt** | Emerging |
 
 > **Nguyên tắc đánh giá KNS365:** Đánh giá **vì sự tiến bộ**, không xếp hạng học sinh với nhau. Mọi phiếu đánh giá đều so sánh HS với **chính mình ở đầu chuyên đề** (thang tự tin trước – sau), và với **tiêu chí công bố trước** (criterion-referenced), tuyệt đối không chuẩn hoá theo nhóm (norm-referenced).
 

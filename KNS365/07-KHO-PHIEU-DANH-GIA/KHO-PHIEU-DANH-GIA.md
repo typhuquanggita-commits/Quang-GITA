@@ -15,8 +15,8 @@
 | 6 | **Bằng chứng, không cảm tính** | Mọi nhận định phải kèm hành vi quan sát được hoặc số liệu |
 | 7 | **Chuyên đề nhạy cảm không chấm điểm cá nhân công khai** | M2.3, M2.5, M3 sâu: chỉ ghi nhận tham gia & an toàn |
 
-**Thang GITA-4:** **KM** Khởi Mở · **ĐH** Định Hình · **TT** Thành Thạo · **DD** Dẫn Dắt
-**Quy đổi:** DD/TT → *Hoàn thành tốt* (TT27) hoặc *Tốt/Khá* (TT22) · ĐH → *Hoàn thành / Đạt* · KM → *Chưa hoàn thành / Chưa đạt*
+**Thang thang 6 bậc:** **B1** Biết · **B2** Làm đều · **B3** Làm giỏi · **B4** Tự cháy
+**Quy đổi:** **B4/B3** → *Hoàn thành tốt* (TT27) hoặc *Tốt/Khá* (TT22) · **B2** → *Hoàn thành / Đạt* · **B1** → *Chưa hoàn thành / Chưa đạt*
 
 ---
 
@@ -47,7 +47,7 @@
 **Chuyên đề:** ………… **Lớp:** ……… **Buổi:** 1 / 2 **Ngày:** …………
 **Người quan sát:** ………… (HLV / ACT) **Phụ trách Squad:** …………
 
-| # | Họ tên | Đích cá nhân<br>*(có viết Thẻ Đích?)* | Nội lực<br>*(dám thử, không bỏ cuộc)* | Lượt luyện | Số phản hồi nhận | Bậc L đạt | Đóng góp Squad | GITA-4 | Bằng chứng cụ thể |
+| # | Họ tên | Đích cá nhân<br>*(có viết Thẻ Đích?)* | Nội lực<br>*(dám thử, không bỏ cuộc)* | Lượt luyện | Số phản hồi nhận | Bậc L đạt | Đóng góp Squad | thang 6 bậc | Bằng chứng cụ thể |
 |:--:|---|:--:|:--:|:--:|:--:|:--:|:--:|:--:|---|
 | 1 | | ☐ | /5 | | | | /5 | | |
 | 2 | | ☐ | /5 | | | | /5 | | |
@@ -73,7 +73,7 @@
 
 **Chuyên đề:** ………… **Sản phẩm:** ………… **HS/Squad:** …………
 
-| Tiêu chí | **KM** – Khởi Mở | **ĐH** – Định Hình | **TT** – Thành Thạo *(vạch ĐẠT)* | **DD** – Dẫn Dắt *(vạch XUẤT SẮC)* | Điểm |
+| Tiêu chí | **B1** – Biết | **B2** – Làm đều | **B3** – Làm giỏi *(vạch ĐẠT)* | **B4** – Tự cháy *(vạch XUẤT SẮC)* | Điểm |
 |---|---|---|---|---|:--:|
 | **1. Bám đích** | Sản phẩm chưa liên quan rõ tới đích | Có liên quan nhưng lệch trọng tâm | Bám đúng đích đã công bố | Vượt đích, mở ra giá trị ngoài dự kiến | |
 | **2. Chất lượng kỹ thuật** | Còn nhiều lỗi cơ bản | Đúng quy trình nhưng chưa ổn định | Đúng, đầy đủ, ổn định | Chính xác cao, tinh gọn, có tối ưu | |
@@ -81,7 +81,7 @@
 | **4. Sự khác biệt** | Sao chép mẫu | Có thay đổi nhỏ | Có nét riêng nhận ra được | Có dấu ấn rõ, người khác nhận ra là của em |  |
 | **5. Trình bày & chuyển giao** | Chưa trình bày được | Trình bày được nhưng người nghe khó theo | Rõ ràng, người nghe hiểu | Người nghe nhớ thông điệp / muốn hành động theo | |
 
-**Tổng:** …/20 → **Xếp mức:** ☐ KM (<8) ☐ ĐH (8–11) ☐ TT (12–16) ☐ DD (17–20)
+**Tổng:** …/20 → **Xếp mức:** ☐ B1 (<8) ☐ B2 (8–11) ☐ B3 (12–16) ☐ B4 (17–20)
 
 **Nhận xét theo công thức 1-1-1**
 - Điều làm rất tốt (cụ thể): ……………………………………………………………
@@ -118,7 +118,7 @@ Bằng chứng của tôi: ……………………………………………�
 - Trong 7 ngày tới tôi sẽ: ……………………………………………………………
 - **Một điều duy nhất tôi sẽ chỉnh:** …………………………………………………
 
-**5. Tự xếp mức:** ☐ KM ☐ ĐH ☐ TT ☐ DD
+**5. Tự xếp mức:** ☐ B1 ☐ B2 ☐ B3 ☐ B4
 
 ---
 
@@ -207,7 +207,7 @@ Bằng chứng của tôi: ……………………………………………�
 
 **A. Thang tự tin 8 mạch (1–10)**
 
-| Mạch | Đầu năm | Cuối năm | Mức tăng | Mức GITA-4 cuối năm |
+| Mạch | Đầu năm | Cuối năm | Mức tăng | Mức thang 6 bậc cuối năm |
 |---|:--:|:--:|:--:|:--:|
 | M1 Tự chủ | | | | |
 | M2 An toàn & Sức khoẻ | | | | |
@@ -277,7 +277,7 @@ Bằng chứng của tôi: ……………………………………………�
 ║  2. CON ĐÃ LÀM ĐƯỢC GÌ (bằng chứng cụ thể, có số liệu)             ║
 ║     • ______________________________________________________       ║
 ║     • ______________________________________________________       ║
-║     Mức đạt: ☐ KM  ☐ ĐH  ☐ TT  ☐ DD                                ║
+║     Mức đạt: ☐ B1  ☐ B2  ☐ B3  ☐ B4                                ║
 ║     Tiến bộ so với đầu chuyên đề: thang tự tin ____ → ____          ║
 ║                                                                    ║
 ║  3. ĐIỂM MẠNH CHÚNG TÔI QUAN SÁT ĐƯỢC                              ║
@@ -325,7 +325,7 @@ Bằng chứng của tôi: ……………………………………………�
 | `R-PHS-nn` | Phụng sự | 13 | M8 |
 | **TỔNG** | | **288** | |
 
-> Mỗi rubric đều dùng **cấu trúc 5 tiêu chí × 4 mức GITA-4** như mẫu `PDG-SP` ở Phần C, với nội dung tiêu chí thay theo năng lực. Mã rubric của từng chuyên đề được ghi ở dòng **"Đánh giá"** trong các file `KHOI-xx.md`.
+> Mỗi rubric đều dùng **cấu trúc 5 tiêu chí × 4 mức thang 6 bậc** như mẫu `PDG-SP` ở Phần C, với nội dung tiêu chí thay theo năng lực. Mã rubric của từng chuyên đề được ghi ở dòng **"Đánh giá"** trong các file `KHOI-xx.md`.
 
 ---
 
@@ -349,7 +349,7 @@ Bằng chứng của tôi: ……………………………………………�
 | Mục | Nội dung |
 |---|---|
 | Số mạch đạt mức kỳ vọng | …/8 |
-| Số mạch đạt **DD – Dẫn Dắt** | …/8 |
+| Số mạch đạt **B4 – Tự cháy** | …/8 |
 | Mũi nhọn được xác định | ………………… |
 | Đủ điều kiện công nhận Cấp Độ? | ☐ Có ☐ Chưa – thiếu: ………… |
 | Khuyến nghị cho năm sau | ………………… |

@@ -24,7 +24,7 @@
    5 NL      5 NL      5 NL      5 NL       5 NL       5 NL       5 NL       5 NL
    ────────────────────── 40 NĂNG LỰC THÀNH PHẦN ──────────────────────
                                         │
-                       Mỗi NL × 4 mức: KM → ĐH → TT → DD
+                       Mỗi NL × 4 ô chấm: B1 → B2 → B3 → B4
 ```
 
 **Quy tắc phân bổ:** Mỗi khối lớp có **24 chuyên đề = 8 mạch × 3 chuyên đề/mạch**. Trong 3 chuyên đề của một mạch/khối, bắt buộc phủ được **cả 5 năng lực thành phần** của mạch đó ở mức độ phù hợp lứa tuổi.
@@ -123,23 +123,23 @@
 
 ---
 
-## PHẦN C. THANG 4 MỨC THÀNH THẠO (GITA-4)
+## PHẦN C. THANG 4 MỨC THÀNH THẠO (thang 6 bậc)
 
 | Mức | Ký hiệu | Tên | Mô tả tổng quát | Điều kiện độc lập | Điều kiện bối cảnh |
 |:--:|:--:|---|---|---|---|
-| 1 | **KM** | **Khởi Mở** | Nhận biết được, làm được khi có mẫu và hỗ trợ liên tục | Cần kèm từng bước | Bối cảnh lớp học, có mẫu |
-| 2 | **ĐH** | **Định Hình** | Làm đúng quy trình khi có gợi ý; kết quả chưa ổn định | Cần nhắc 1–2 lần | Bối cảnh quen thuộc |
-| 3 | **TT** | **Thành Thạo** | Làm độc lập, đúng và ổn định | Không cần nhắc | Bối cảnh quen thuộc & có nhiễu nhẹ |
-| 4 | **DD** | **Dẫn Dắt** | Làm xuất sắc trong bối cảnh mới, tự điều chỉnh, **hướng dẫn lại người khác** | Tự chủ hoàn toàn | Bối cảnh mới, có áp lực |
+| 1 | **B1** | **Khởi Mở** | Nhận biết được, làm được khi có mẫu và hỗ trợ liên tục | Cần kèm từng bước | Bối cảnh lớp học, có mẫu |
+| 2 | **B2** | **Định Hình** | Làm đúng quy trình khi có gợi ý; kết quả chưa ổn định | Cần nhắc 1–2 lần | Bối cảnh quen thuộc |
+| 3 | **B3** | **Thành Thạo** | Làm độc lập, đúng và ổn định | Không cần nhắc | Bối cảnh quen thuộc & có nhiễu nhẹ |
+| 4 | **B4** | **Dẫn Dắt** | Làm xuất sắc trong bối cảnh mới, tự điều chỉnh, **hướng dẫn lại người khác** | Tự chủ hoàn toàn | Bối cảnh mới, có áp lực |
 
 ### Liên kết với thang độ khó GITA Ladder
 
 | Mức thành thạo | Bậc luyện tập đạt được | Bằng chứng tối thiểu |
 |:--:|:--:|---|
-| KM | L1 | Hoàn thành 1 lượt có mẫu |
-| ĐH | L2 | Hoàn thành 3 lượt, ≥2 lượt đúng quy trình |
-| TT | L3 | Hoàn thành độc lập, đạt rubric ≥7/10 ở 2 lần khác nhau |
-| DD | L4–L5 | Đạt rubric ≥9/10 trong bối cảnh mới **và** có bằng chứng dạy lại/kèm cặp bạn |
+| B1 | L1 | Hoàn thành 1 lượt có mẫu |
+| B2 | L2 | Hoàn thành 3 lượt, ≥2 lượt đúng quy trình |
+| B3 | L3 | Hoàn thành độc lập, đạt rubric ≥7/10 ở 2 lần khác nhau |
+| B4 | L4–L5 | Đạt rubric ≥9/10 trong bối cảnh mới **và** có bằng chứng dạy lại/kèm cặp bạn |
 
 ---
 
@@ -149,16 +149,16 @@ Mức thành thạo **kỳ vọng cuối năm học** cho từng mạch (chuẩn
 
 | Mạch | L1 | L2 | L3 | L4 | L5 | L6 | L7 | L8 | L9 | L10 | L11 | L12 |
 |---|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| **M1 Tự chủ** | KM | ĐH | ĐH | TT | TT | TT | TT | TT | DD | DD | DD | DD |
-| **M2 An toàn** | ĐH | ĐH | TT | TT | TT | TT | TT | DD | DD | DD | DD | DD |
-| **M3 Cảm xúc** | KM | ĐH | ĐH | ĐH | TT | TT | TT | TT | TT | DD | DD | DD |
-| **M4 Giao tiếp** | KM | ĐH | ĐH | TT | TT | TT | TT | TT | DD | DD | DD | DD |
-| **M5 Tư duy** | KM | KM | ĐH | ĐH | TT | TT | TT | TT | TT | DD | DD | DD |
-| **M6 Học tập** | KM | ĐH | ĐH | TT | TT | TT | TT | DD | DD | DD | DD | DD |
-| **M7 Số** | KM | KM | ĐH | ĐH | ĐH | TT | TT | TT | TT | DD | DD | DD |
-| **M8 Phụng sự** | KM | KM | KM | ĐH | ĐH | ĐH | TT | TT | TT | TT | DD | DD |
+| **M1 Tự chủ** | B1 | B2 | B2 | B3 | B3 | B3 | B3 | B3 | B4 | B4 | B4 | B4 |
+| **M2 An toàn** | B2 | B2 | B3 | B3 | B3 | B3 | B3 | B4 | B4 | B4 | B4 | B4 |
+| **M3 Cảm xúc** | B1 | B2 | B2 | B2 | B3 | B3 | B3 | B3 | B3 | B4 | B4 | B4 |
+| **M4 Giao tiếp** | B1 | B2 | B2 | B3 | B3 | B3 | B3 | B3 | B4 | B4 | B4 | B4 |
+| **M5 Tư duy** | B1 | B1 | B2 | B2 | B3 | B3 | B3 | B3 | B3 | B4 | B4 | B4 |
+| **M6 Học tập** | B1 | B2 | B2 | B3 | B3 | B3 | B3 | B4 | B4 | B4 | B4 | B4 |
+| **M7 Số** | B1 | B1 | B2 | B2 | B2 | B3 | B3 | B3 | B3 | B4 | B4 | B4 |
+| **M8 Phụng sự** | B1 | B1 | B1 | B2 | B2 | B2 | B3 | B3 | B3 | B3 | B4 | B4 |
 
-**Đọc bảng:** ví dụ, học sinh **lớp 7** phải đạt tối thiểu **Thành Thạo (TT)** ở M1, M2, M3, M4, M5, M6, M7 và **Thành Thạo** ở M8. Học sinh đạt **Dẫn Dắt** ở bất kỳ mạch nào trước tuổi kỳ vọng được đưa vào **Nhóm Mũi Nhọn** của mạch đó (xem Lộ trình bệ phóng, mục 04).
+**Đọc bảng:** ví dụ, học sinh **lớp 7** phải đạt tối thiểu **B3 – Làm giỏi** ở M1, M2, M3, M4, M5, M6, M7 và **B3** ở M8. Học sinh đạt **B4 – Tự cháy** ở bất kỳ mạch nào trước tuổi kỳ vọng được đưa vào **Nhóm Mũi Nhọn** của mạch đó (xem Lộ trình bệ phóng, mục 04).
 
 ---
 

@@ -71,7 +71,7 @@ Rubric chỉ có giá trị khi **hai người chấm cùng một bài cho ra k�
 
 | Bước | Cách làm | Ngưỡng đạt |
 |:--:|---|---|
-| 1 | Chọn **10 mẫu sản phẩm thật** trải đủ 4 mức KM–ĐH–TT–DD | — |
+| 1 | Chọn **10 mẫu sản phẩm thật** trải đủ 4 mức B1–B2–B3–B4 | — |
 | 2 | **Hai HLV chấm độc lập**, không trao đổi | — |
 | 3 | Tính tỷ lệ khớp *(chênh ≤1 mức tính là khớp)* | **≥ 80%** |
 | 4 | Chỗ lệch: cùng đọc lại mô tả mức, **sửa câu chữ rubric cho hết mơ hồ** | — |
@@ -117,8 +117,8 @@ Rubric chỉ có giá trị khi **hai người chấm cùng một bài cho ra k�
 
 | # | Chỉ số | Ngưỡng tốt | Nguồn |
 |:--:|---|:--:|---|
-| 5 | % HS đạt mức **TT trở lên** ở chuyên đề | ≥ 70% | Rubric |
-| 6 | % HS đạt **DD** ở ≥1 mạch trong năm | ≥ 25% | Rubric |
+| 5 | % HS đạt mức **B3 trở lên** ở chuyên đề | ≥ 70% | Rubric |
+| 6 | % HS đạt **B4** ở ≥1 mạch trong năm | ≥ 25% | Rubric |
 | 7 | **Mức tăng số giây phản xạ** *(đo nền → đo cuối)* | Giảm ≥ 40% thời gian | Bài đo hành vi |
 | 8 | **Mức tăng số câu hỏi đặt được** | Tăng ≥ 50% | Bài đo hành vi |
 | 9 | **Thời gian tập trung liên tục** | Tăng ≥ 30% | Bài đo hành vi |

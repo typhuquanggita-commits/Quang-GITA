@@ -22,7 +22,7 @@ Học viện GITA vận hành **hai nền tảng dùng chung một hồ sơ ngư
 | 2 | **Cùng bảng màu lõi** *(Xanh GITA · Đỏ GITA · Xanh Quỹ Đạo · trung tính)*. Không nền tảng nào được thêm màu chủ đạo riêng |
 | 3 | **Màu 4 chữ GITA thống nhất tuyệt đối** — `G` xanh, `I` đỏ, `T` vàng sao, `A` xanh quỹ đạo, ở cả hai nền tảng |
 | 4 | **Cùng hệ chữ** *(Be Vietnam Pro · Noto Serif · IBM Plex Mono)* |
-| 5 | **Cùng thang mức GITA-4** *(KM ◔ · ĐH ◑ · TT ◕ · DD ●)* — người học chỉ học **một ngôn ngữ đánh giá** cho cả đời học |
+| 5 | **Cùng thang sâu 6 bậc** *(chấm 4 ô B1 ◔ · B2 ◑ · B3 ◕ · B4 ●)* — người học chỉ học **một ngôn ngữ đánh giá** cho cả đời học |
 | 6 | **Cùng mã người học (GITA ID)** — hồ sơ, Cấp Độ & Pin, Talent Portfolio hiển thị nhất quán trên cả hai nơi |
 | 7 | **Cùng quy tắc phân quyền** *(phân hệ 11)* — vai và quyền không đổi khi chuyển nền tảng |
 | 8 | Phân biệt hai nền tảng bằng **dải định danh mảnh** ở chân màn hình, **không phải bằng đổi màu giao diện** |
@@ -142,7 +142,7 @@ Học viện GITA vận hành **hai nền tảng dùng chung một hồ sơ ngư
 | **Pin Cấp Độ** | Vòng tròn viền màu Pin, giữa `LOGO-08` | Hiện ở hồ sơ cá nhân và trên Talent Portfolio |
 | **Tầng năng lực HS-T1→T5** | 1→5 ngôi sao Vàng Sao | 🔒 **Chỉ hiện với chính học sinh, phụ huynh của em, và vai được phân công.** Cấm hiện ở danh sách lớp, bảng tổng, màn hình chung |
 | **Chuỗi ngày** | Dải ô vuông nhỏ, tô dần | Hiện mức **cá nhân**, **không so với bạn** |
-| **Mức GITA-4 theo mạch** | 8 thanh ngang, màu theo mạch | Hiện ở báo cáo cá nhân |
+| **Mức thang 6 bậc theo mạch** | 8 thanh ngang, màu theo mạch | Hiện ở báo cáo cá nhân |
 | **Chuyên đề đã hoàn thành** | Dấu tròn `LOGO-08` như con dấu Hộ chiếu | Lưới 288 ô — Hộ chiếu số |
 
 > 🚫 **Bốn thứ cấm tuyệt đối trong nhận diện số** *(nối phân hệ 11)*:

@@ -213,7 +213,7 @@
 - **Một điều duy nhất tôi sẽ chỉnh:** ______________________________
 - Tôi đã làm lại ngay: ☐ Có ☐ Chưa
 
-**Tự chấm cuối cùng:** ☐ KM Khởi Mở ☐ ĐH Định Hình ☐ TT Thành Thạo ☐ DD Dẫn Dắt
+**Tự chấm cuối cùng:** ☐ B1 Biết ☐ B2 Làm đều ☐ B3 Làm giỏi ☐ B4 Tự cháy
 
 ---
 

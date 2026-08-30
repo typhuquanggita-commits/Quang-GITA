@@ -94,10 +94,10 @@
   PHÂN BỐ MỨC ĐẠT — Khối 6 (n = 128 HS cuối năm; 134 đầu năm, 6 HS chuyển trường)
 
               Đo nền T9                    Đo cuối T5
-  M1 Tự chủ   ███░░░░░░░ KM 42%           ██████░░░░ TT 61%
-  M2 An toàn  ████░░░░░░ ĐH 38%           ████████░░ TT 78%
-  M3 Cảm xúc  ██░░░░░░░░ KM 55%           █████░░░░░ ĐH 52%   ← chưa đạt kỳ vọng
-  M4 Giao tiếp ███░░░░░░░ ĐH 40%          ███████░░░ TT 69%
+  M1 Tự chủ   ███░░░░░░░ B1 42%           ██████░░░░ B3 61%
+  M2 An toàn  ████░░░░░░ B2 38%           ████████░░ B3 78%
+  M3 Cảm xúc  ██░░░░░░░░ B1 55%           █████░░░░░ B2 52%   ← chưa đạt kỳ vọng
+  M4 Giao tiếp ███░░░░░░░ B2 40%          ███████░░░ B3 69%
   …
                                         (trục bắt đầu từ 0 · n ghi rõ)
 ```
@@ -108,7 +108,7 @@ Kèm bảng: **mạch nào tiến bộ nhiều nhất, mạch nào chậm nhất
 
 | Phẩm chất / Năng lực CT GDPT 2018 | Mạch KNS365 đóng góp | Bằng chứng cụ thể trong năm |
 |---|---|---|
-| Tự chủ và tự học | M1, M6 | … chuyên đề · … % HS đạt TT · Bảng Chuỗi Ngày |
+| Tự chủ và tự học | M1, M6 | … chuyên đề · … % HS đạt **B3** · Bảng Chuỗi Ngày |
 | Giao tiếp và hợp tác | M4 | … · sản phẩm SHOWCASE |
 | Giải quyết vấn đề và sáng tạo | M5 | … · số câu hỏi đặt được tăng …% |
 | Trách nhiệm · Nhân ái | M3, M8 | … dự án phụng sự · … giờ đóng góp cộng đồng |

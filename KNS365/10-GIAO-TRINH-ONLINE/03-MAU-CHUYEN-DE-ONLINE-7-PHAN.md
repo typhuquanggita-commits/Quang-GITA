@@ -157,8 +157,8 @@ Ngày **1 → 3 → 7 → 15 → 30**, mỗi lần 3 phút, gồm 3 câu truy h�
 |:--:|---|:--:|---|
 | 1 | `[...]` | | |
 
-### 6.2. Tự đánh giá GITA-4
-☐ KM ☐ ĐH ☐ TT ☐ DD — **kèm bằng chứng**
+### 6.2. Tự đánh giá thang 6 bậc
+☐ B1 ☐ B2 ☐ B3 ☐ B4 — **kèm bằng chứng**
 
 ### 6.3. Rubric sản phẩm *(HLV chấm)* — `[R-...]`
 
@@ -169,7 +169,7 @@ Ngày **1 → 3 → 7 → 15 → 30**, mỗi lần 3 phút, gồm 3 câu truy h�
 |---|:--:|:--:|:--:|
 | Thang tự tin (1–10) | | | |
 | Số liệu vi kỹ năng chính | | | |
-| Mức GITA-4 | | | |
+| Mức thang 6 bậc | | | |
 
 > ⚠️ Hiển thị **mức tăng của chính học viên**. **Không hiển thị thứ hạng** so với bạn.
 

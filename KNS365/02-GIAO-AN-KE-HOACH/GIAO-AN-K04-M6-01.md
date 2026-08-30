@@ -266,7 +266,7 @@ HS **dạy lại** kỹ thuật Cornell cho 1 bạn ở Squad khác trong 3 phú
 
 ### Rubric `R-HOC-11` — GHI CHÉP CORNELL
 
-| Tiêu chí | **KM** Khởi Mở | **ĐH** Định Hình | **TT** Thành Thạo *(ĐẠT)* | **DD** Dẫn Dắt *(XUẤT SẮC)* |
+| Tiêu chí | **B1** Biết | **B2** Làm đều | **B3** Làm giỏi *(ĐẠT)* | **B4** Tự cháy *(XUẤT SẮC)* |
 |---|---|---|---|---|
 | **1. Cấu trúc 3 vùng** | Chưa chia vùng | Chia vùng nhưng sai tỷ lệ / bỏ trống cột trái | Đúng 3 vùng, đủ tỷ lệ | Đúng + có biến thể phù hợp môn học |
 | **2. Ghi bằng từ khoá** | Chép nguyên văn | Còn nhiều câu dài (>12 từ) | **≤8 từ/dòng**, có ký hiệu | Cực gọn, ≥6 loại ký hiệu, vẫn đủ ý |
@@ -274,7 +274,7 @@ HS **dạy lại** kỹ thuật Cornell cho 1 bạn ở Squad khác trong 3 phú
 | **4. Ô tóm tắt** | Bỏ trống | Có nhưng chép lại nguyên ý | 2–3 câu bằng lời của mình, xong trong 3' | Tóm được **ý cốt lõi** + nêu chỗ mình chưa hiểu |
 | **5. Nhớ lại sau 1 tuần** | <4/10 | 4–5/10 | **≥6/10** | **≥8/10** |
 
-**Tổng:** …/20 → **KM** <8 · **ĐH** 8–11 · **TT** 12–16 · **DD** 17–20
+**Tổng:** …/20 → **B1** <8 · **B2** 8–11 · **B3** 12–16 · **B4** 17–20
 
 ---
 

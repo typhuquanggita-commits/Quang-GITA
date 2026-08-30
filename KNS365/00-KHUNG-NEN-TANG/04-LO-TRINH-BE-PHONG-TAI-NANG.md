@@ -72,7 +72,7 @@ Hầu hết chương trình kỹ năng sống dừng ở **"biết kỹ năng"**
 | **Đích giai đoạn** | Thiếu niên **có bản sắc riêng – tư duy phản biện – dẫn dắt được nhóm – biết mình mạnh ở đâu và nghề gì hợp** |
 | **Chữ GITA trội** | **T – Talent** (mài giũa mũi nhọn, tư duy xuất sắc) |
 | **Nguyên tắc sư phạm** | Dự án thật, tranh biện, thực địa, thi đấu liên lớp; HS tự thiết kế một phần hoạt động |
-| **Mục tiêu 3T** | Tập trung 40–50 phút · Tốc độ: ra quyết định trong khung thời gian ấn định · Trội: đạt DD ở ≥1 mạch |
+| **Mục tiêu 3T** | Tập trung 40–50 phút · Tốc độ: ra quyết định trong khung thời gian ấn định · Trội: đạt **B4** ở ≥1 mạch |
 | **Cấp độ hành động** | A3 – Đòn bẩy 20/80 (bắt đầu rèn tường minh từ lớp 6) |
 | **Thói quen chủ lực** | Phiên học sâu 45' · Bảng Đòn Bẩy tuần · Đọc – ghi chép Cornell · Rèn thể chất |
 | **Sản phẩm giai đoạn** | **Hồ sơ Vươn Cành**: 1 dự án phụng sự cộng đồng, 1 sản phẩm mũi nhọn, hồ sơ hướng nghiệp v1, video hùng biện |
@@ -146,7 +146,7 @@ Bộ hồ sơ này là **thứ học sinh mang theo khi rời trường**: dùng
 | Phần | Nội dung | Nguồn dữ liệu |
 |:--:|---|---|
 | **1. Chân dung** | Tuyên ngôn Bắc Đẩu, 3 giá trị cốt lõi, 2 mũi nhọn | Hộ chiếu GITA |
-| **2. Bản đồ năng lực** | Kết quả 8 mạch × 40 năng lực theo thang GITA-4, có biểu đồ radar 12 năm | Kho phiếu đánh giá |
+| **2. Bản đồ năng lực** | Kết quả 8 mạch × 40 năng lực theo thang sâu 6 bậc (chấm 4 ô B1–B4), có biểu đồ radar 12 năm | Kho phiếu đánh giá |
 | **3. Bằng chứng xuất sắc** | 10 sản phẩm tiêu biểu (video, dự án, bài viết, thiết kế, số liệu kết quả) | Showcase các chuyên đề |
 | **4. Dự án tác động** | 1–3 dự án phụng sự cộng đồng, có số liệu tác động & xác nhận bên thứ ba | Sổ Phụng Sự |
 | **5. Hồ sơ lãnh đạo** | Vai trò dẫn dắt, số người đã kèm cặp, kết quả của họ | Nhật ký Squad |

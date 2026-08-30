@@ -325,7 +325,7 @@ HS lật **1 niềm tin gốc sâu** của mình, thêm câu hỏi bước ②b:
 
 ### Rubric `R-SUC-05` — LẬT NIỀM TIN GIỚI HẠN
 
-| Tiêu chí | **KM** | **ĐH** | **TT** *(ĐẠT)* | **DD** *(XUẤT SẮC)* |
+| Tiêu chí | **B1** | **B2** | **B3** *(ĐẠT)* | **B4** *(XUẤT SẮC)* |
 |---|---|---|---|---|
 | **1. Bắt câu** | Không nêu được niềm tin của mình | Nêu câu chung chung, "an toàn" | **Nêu câu thật, nguyên văn** | Nêu được cả niềm tin **gốc sâu** |
 | **2. Tách sự thật / phán xét** | Chưa tách được | Tách nhưng còn lẫn | **Tách rõ 2 cột** | Tách rõ + truy được **nguồn gốc câu nói** |
@@ -334,7 +334,7 @@ HS lật **1 niềm tin gốc sâu** của mình, thêm câu hỏi bước ②b:
 | **5. Bằng chứng tạo ra** | 0 dòng | 1–4 dòng | **≥5 dòng trong 3 tuần** | **≥15 dòng**; có hành vi thay đổi quan sát được |
 | **6. Giúp người khác** | – | – | Làm được người dẫn 1 lần | **Giúp 1 bạn lật thành công**, bạn xác nhận |
 
-**Tổng:** …/24 → **KM** <10 · **ĐH** 10–14 · **TT** 15–19 · **DD** 20–24
+**Tổng:** …/24 → **B1** <10 · **B2** 10–14 · **B3** 15–19 · **B4** 20–24
 
 ---
 

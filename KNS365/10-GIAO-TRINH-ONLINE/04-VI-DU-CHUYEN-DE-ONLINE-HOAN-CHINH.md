@@ -184,11 +184,11 @@ Ngày **1 · 3 · 7 · 15 · 30** — mỗi lần 3 câu truy hồi chủ độn
 - B. Chưa đủ việc
 - C. Không có vấn đề gì
 
-### Tự đánh giá GITA-4
-☐ **KM** – biết khái niệm nhưng chưa lập được bảng
-☐ **ĐH** – lập được bảng khi có mẫu, chưa cắt bỏ được việc nào
-☐ **TT** – tự lập bảng mỗi tuần, cắt được ≥1 việc, giữ khung giờ ≥4/7 ngày
-☐ **DD** – duy trì ≥8 tuần, dồn 70% sức vào việc ⭐, **hướng dẫn lại được cho bạn**
+### Tự đánh giá thang 6 bậc
+☐ **B1** – biết khái niệm nhưng chưa lập được bảng
+☐ **B2** – lập được bảng khi có mẫu, chưa cắt bỏ được việc nào
+☐ **B3** – tự lập bảng mỗi tuần, cắt được ≥1 việc, giữ khung giờ ≥4/7 ngày
+☐ **B4** – duy trì ≥8 tuần, dồn 70% sức vào việc ⭐, **hướng dẫn lại được cho bạn**
 
 ### Bảng hiển thị cho học viên
 | | Trước | Sau | Mức tăng |

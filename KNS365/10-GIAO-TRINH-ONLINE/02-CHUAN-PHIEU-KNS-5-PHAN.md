@@ -102,7 +102,7 @@ Một phiếu kỹ năng sống làm gộp thường thất bại vì nó yêu c
 | Thành phần bắt buộc | Nội dung |
 |---|---|
 | ① **Thang tự tin trước – sau** | 1–10, có mức tăng |
-| ② **Tự xếp mức GITA-4** | KM / ĐH / TT / DD + **bằng chứng** cho mức đã chọn |
+| ② **Tự xếp mức thang 6 bậc** | B1 / B2 / B3 / B4 + **bằng chứng** cho mức đã chọn |
 | ③ **Điều gì đang cản mình** | Chọn từ danh sách + ô tự viết: thiếu kỹ năng / thiếu động lực / thiếu môi trường / niềm tin giới hạn |
 | ④ **Lật niềm tin giới hạn** *(nếu có)* | Câu cũ → tách sự thật/phán xét → phản chứng → **câu mới có chữ CHƯA** |
 | ⑤ **Mẫu hình lặp lại của mình** | *"Mình thường mắc lỗi này khi…"* |
@@ -201,7 +201,7 @@ Một phiếu kỹ năng sống làm gộp thường thất bại vì nó yêu c
 │ 🔹 LỚP 4 · SOI CHIẾU — "Mình đang ở đâu?"        ⏱ 6–8'   Pha T+I   │
 ├──────────────────────────────────────────────────────────────────────┤
 │ • Thang tự tin:  trước ____/10  →  sau ____/10   (tăng ____)         │
-│ • Mình tự xếp mức:  ☐ KM  ☐ ĐH  ☐ TT  ☐ DD                          │
+│ • Mình tự xếp mức:  ☐ B1  ☐ B2  ☐ B3  ☐ B4                          │
 │   Bằng chứng cho mức này: ________________________________________   │
 │                                                                      │
 │ • Điều đang cản mình:                                                │

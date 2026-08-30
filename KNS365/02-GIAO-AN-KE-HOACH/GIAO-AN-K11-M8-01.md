@@ -346,7 +346,7 @@ Mỗi đội dựng **Bảng Đo Giữa Kỳ** bằng số liệu thật đã th
 
 ### Rubric `R-PHS-11` — DỰ ÁN TÁC ĐỘNG & ĐO LƯỜNG
 
-| Tiêu chí | **KM** | **ĐH** | **TT** *(ĐẠT)* | **DD** *(XUẤT SẮC)* |
+| Tiêu chí | **B1** | **B2** | **B3** *(ĐẠT)* | **B4** *(XUẤT SẮC)* |
 |---|---|---|---|---|
 | **1. Lý thuyết thay đổi** | Chỉ có ý tưởng | Có hoạt động & đầu ra | **Đủ 5 cột, cột kết quả đo được** | Nêu rõ **giả định** và kiểm chứng được ≥1 giả định |
 | **2. Hệ chỉ số** | Không có chỉ số | Chỉ có đầu ra | **≥1 đầu ra + ≥1 kết quả, có số liệu nền** | Có **tác động** + **bên thứ ba độc lập xác nhận** |
@@ -357,8 +357,8 @@ Mỗi đội dựng **Bảng Đo Giữa Kỳ** bằng số liệu thật đã th
 | **7. Chuẩn hoá & bàn giao (A4)** | Không có | Có ghi chép rời rạc | **Sổ tay vận hành đạt chuẩn nghiệm thu + có người kế nhiệm được kèm** | **Dự án vận hành ≥3 tháng sau bàn giao** *(kiểm chứng thực tế)* |
 | **8. Đạo đức & an toàn** | Vi phạm quy tắc | Tuân thủ khi được nhắc | **Tuân thủ đủ 10 quy tắc, có phiếu đồng ý đầy đủ** | **Từ chối được một cơ hội có lợi vì lý do đạo đức** *(ghi biên bản)* |
 
-**Tổng:** …/32 → **KM** <13 · **ĐH** 13–19 · **TT** 20–26 · **DD** 27–32
-> ⚠️ **Tiêu chí 8 có quyền phủ quyết:** vi phạm quy tắc an toàn/đạo đức → **không xếp DD**, bất kể tổng điểm.
+**Tổng:** …/32 → **B1** <13 · **B2** 13–19 · **B3** 20–26 · **B4** 27–32
+> ⚠️ **Tiêu chí 8 có quyền phủ quyết:** vi phạm quy tắc an toàn/đạo đức → **không xếp **B4** **, bất kể tổng điểm.
 
 **Bảng theo dõi 12 tuần** *(Người Ghi Bằng Chứng cập nhật, HLV ký mỗi 2 tuần)*
 

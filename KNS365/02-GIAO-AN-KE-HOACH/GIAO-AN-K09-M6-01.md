@@ -294,7 +294,7 @@ HS ghép cặp với bạn Squad khác, **hướng dẫn bạn cách phân tích
 
 ### Rubric `R-HOC-27` — CHIẾN LƯỢC THI CHUYỂN CẤP
 
-| Tiêu chí | **KM** | **ĐH** | **TT** *(ĐẠT)* | **DD** *(XUẤT SẮC)* |
+| Tiêu chí | **B1** | **B2** | **B3** *(ĐẠT)* | **B4** *(XUẤT SẮC)* |
 |---|---|---|---|---|
 | **1. Bản đồ khoảng cách** | Không có số liệu | Có điểm hiện tại, thiếu mục tiêu | **Đủ điểm hiện tại + mục tiêu + khoảng cách mọi môn** | Thêm **điểm sàn an toàn** & biên độ dao động 3 năm |
 | **2. Phân bổ 20/80** | Chia đều | Có ưu tiên nhưng không theo dữ liệu | **Phân bổ theo trọng số × mức yếu**, môn yếu nhất ≥35% | 20/80 **lồng 2 tầng**: theo môn và theo dạng bài |
@@ -303,7 +303,7 @@ HS ghép cặp với bạn Squad khác, **hướng dẫn bạn cách phân tích
 | **5. Điều chỉnh có căn cứ** | Không điều chỉnh | Điều chỉnh theo cảm tính | **Điều chỉnh có số liệu làm căn cứ** | ≥3 lần điều chỉnh; **điểm thi thử tăng liên tục qua ≥4 mốc** |
 | **6. Bám lộ trình** | <60% | 60–84% | **≥85% trong 12 tuần** | ≥95%; **hướng dẫn lại được cho 1 bạn** |
 
-**Tổng:** …/24 → **KM** <10 · **ĐH** 10–14 · **TT** 15–19 · **DD** 20–24
+**Tổng:** …/24 → **B1** <10 · **B2** 10–14 · **B3** 15–19 · **B4** 20–24
 
 **Biểu đồ bắt buộc theo dõi:**
 

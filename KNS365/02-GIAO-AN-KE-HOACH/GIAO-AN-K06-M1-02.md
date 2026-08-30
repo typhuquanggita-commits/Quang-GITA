@@ -278,7 +278,7 @@ HS **dạy lại** Bảng Đòn Bẩy cho 1 bạn Squad khác trong 3 phút, dù
 
 ### Rubric `R-TUD-14` — BẢNG ĐÒN BẨY 20/80
 
-| Tiêu chí | **KM** | **ĐH** | **TT** *(ĐẠT)* | **DD** *(XUẤT SẮC)* |
+| Tiêu chí | **B1** | **B2** | **B3** *(ĐẠT)* | **B4** *(XUẤT SẮC)* |
 |---|---|---|---|---|
 | **1. Liệt kê** | <5 việc, chung chung | 5–6 việc | **≥7 việc cụ thể** | ≥7 việc + ước tính thời lượng từng việc |
 | **2. Chọn việc ⭐** | Chưa chọn được / chọn >3 | Chọn 2–3 việc | **Đúng 1 việc + lý do gắn đích** | 1 việc + **định lượng** % kết quả nó tạo ra |
@@ -286,7 +286,7 @@ HS **dạy lại** Bảng Đòn Bẩy cho 1 bạn Squad khác trong 3 phút, dù
 | **4. Khung giờ bảo vệ** | Không có | Có nhưng mơ hồ ("buổi tối") | **Cụ thể thứ + giờ**, giữ ≥4/7 ngày | Giữ **≥6/7 ngày**, kể cả tuần bận |
 | **5. Duy trì & rà soát** | <2 tuần | 2–4 tuần | **≥8 tuần liên tiếp** | **≥30 tuần** + điều chỉnh có căn cứ ≥2 lần |
 
-**Tổng:** …/20 → **KM** <8 · **ĐH** 8–11 · **TT** 12–16 · **DD** 17–20
+**Tổng:** …/20 → **B1** <8 · **B2** 8–11 · **B3** 12–16 · **B4** 17–20
 
 **Số liệu bắt buộc theo dõi:**
 
