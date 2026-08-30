@@ -65,10 +65,13 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 | M4 | Biểu thức gồm nhiều phân số và nhiều phép tính | Biểu thức phân số nhiều phép tính | Quan sát rút gọn trước, sau đó theo thứ tự thực hiện | Rút gọn chéo tử với mẫu trước khi nhân. | — |
 | M4 | Hai tỉ lệ phần trăm nối tiếp nhau trong cùng một bài | Tỉ số phần trăm nhiều bước | Xác định lại mốc 100% trước mỗi bước | Nhân hai tỉ lệ rồi chia 100 là ra tỉ lệ so với mốc gốc. | Mốc 100% khác nhau ở mỗi bước |
 | M4 | Một nhóm phân số cần sắp thứ tự | Rút gọn, so sánh, sắp thứ tự phân số | Rút gọn → so cùng mẫu hoặc quy đồng | So với 1 và với một nửa trước — nhiều phân số phân loại được ngay. | — |
+| M4 | Đề cho **bảng giá nhiều bậc** và một lượng tiêu thụ | Bài toán tiền điện bậc thang | Chia lượng tiêu thụ vào từng bậc theo thứ tự rồi cộng thành tiền | Nếu lượng dùng vượt hết các bậc thấp thì ba bậc đầu luôn cho cùng một số tiền — tính sẵn một lần rồi dùng lại. | Nhân cả số điện cho đơn giá bậc cuối |
+| M4 | Đề nhắc **giảm giá**, **khuyến mãi**, và có thể giảm nhiều lần | Bài toán giảm giá và khuyến mãi | Mỗi lần giảm nhân với (100 − a) rồi chia 100, làm lần lượt | Giảm 20% rồi 10% tương đương còn 80% × 90% = 72% giá gốc. | Cộng hai lần giảm giá thành một |
 | M5 | Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 | So sánh phân số bằng kĩ thuật đặc biệt | So phần bù; hoặc chèn phân số trung gian | Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. | Chiều của phần bù |
 | M5 | Hai lần tăng giảm liên tiếp | Phần trăm thay đổi nhiều lần | Tính tuần tự, xác định lại mốc 100% sau mỗi bước | Tăng 20% rồi giảm 20% thì còn 96% giá ban đầu — luôn thấp hơn giá cũ. | Mốc 100% thay đổi sau mỗi lần |
 | M5 | “Dung dịch … %”, “đổ thêm nước”, “bỏ thêm muối” | Nồng độ phần trăm của dung dịch | Kẻ bảng theo dõi tử số và mẫu số qua từng thao tác | Thêm nước thì nồng độ giảm, thêm muối thì nồng độ tăng — dùng để loại đáp số sai ngay. | Thêm muối thì cả tử và mẫu cùng tăng |
 | M5 | Tử và mẫu hơn kém nhau đúng 1 đơn vị | Dãy phân số, so sánh bằng phần bù | Xét phần bù tới 1 rồi so sánh | n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. | Chiều của phần bù |
+| M5 | Đề nhắc **gửi tiếp cả gốc lẫn lãi**, hoặc hỏi sau nhiều năm | Bài toán lãi suất tiết kiệm | Tính lần lượt từng kỳ, mỗi kỳ lãi tính trên số tiền cuối kỳ trước | Sau hai năm với lãi suất a% thì số tiền bằng gốc nhân (100 + a) × (100 + a) rồi chia 10 000. | Nhân lãi một kỳ cho số kỳ |
 
 ---
 
@@ -93,43 +96,52 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 
 Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: đây là dạng bài gì, và dấu hiệu nào cho biết điều đó.
 
-**Đề 1.** Vẽ hai vòng tròn và điền số vào ba phần trước khi tính. Lớp 4B có 39 học sinh. Có 21 em học vẽ, 20 em học bóng rổ, trong đó 3 em học cả hai môn. Hỏi có bao nhiêu em không học môn nào trong hai môn ấy?
+**Đề 1.** Ghi rõ đại lượng nào ứng với 100%. Lớp 4B có 25 học sinh, trong đó có 10 học sinh giỏi. Hỏi số học sinh giỏi chiếm bao nhiêu phần trăm số học sinh cả lớp?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 2.** Đặt tính rồi tính. 40,6 − 16
+**Đề 2.** Bảng giá điện sinh hoạt (rút gọn bốn bậc):
+
+| Bậc | Lượng điện | Đơn giá (đồng/kW·h) |
+|:--:|---|---:|
+| 1 | tới 50 kW·h đầu | 1 800 |
+| 2 | từ 51 đến 100 | 1 900 |
+| 3 | từ 101 đến 200 | 2 200 |
+| 4 | từ 201 đến 300 | 2 800 |
+
+Dùng chung bảng này cho mọi ý. Tháng vừa rồi nhà bạn Đức dùng hết 210 kW·h điện. Dựa vào bảng giá bậc thang ở đầu bài, tính số tiền điện nhà bạn ấy phải trả (chưa tính thuế).
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 3.** Xác định rõ đề cho gì, hỏi gì. Tìm 80% của 300.
+**Đề 3.** Trình bày lời giải có câu trả lời. Tổ Một trồng được 18 cây. Số cây của tổ Ba bằng 1 phần 2 số cây của tổ Một. Hỏi tổ Ba trồng được bao nhiêu cây?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 4.** Bảng thống kê số học sinh đăng kí câu lạc bộ theo môn: **Toán: 26 · Tiếng Việt: 8 · Tiếng Anh: 24 · Khoa học: 15**. Tổng số học sinh đăng kí là bao nhiêu?
+**Đề 4.** Ghi rõ mỗi lần giảm được tính trên giá nào. Một chiếc balo giá niêm yết 540 000 đồng. Cửa hàng giảm 25%, sau đó giảm tiếp 10% trên giá đã giảm. Hỏi giá cuối cùng là bao nhiêu?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 5.** Quan sát phần bù tới 1 để so sánh. Viết bốn phân số đầu của dãy.
+**Đề 5.** So sánh mà không quy đồng. 52 phần 53 … 53 phần 54
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 6.** Ghi rõ đại lượng nào ứng với 100%. Một món hàng giá 100 000 đồng, được giảm giá 5%. Giá sau khi giảm là bao nhiêu?
+**Đề 6.** Xác định rõ đề cho gì, hỏi gì. Tìm tỉ số phần trăm của 300 và 400.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 7.** Rút gọn đến phân số tối giản. Rút gọn phân số 3 phần 15.
+**Đề 7.** Rút gọn trước rồi mới so sánh. Rút gọn các phân số sau về dạng tối giản: 5 phần 12 · 1 phần 12 · 1 phần 3 · 2 phần 3 · 1 phần 2
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 8.** Chú ý dấu phẩy và các hàng sau dấu phẩy. Trong số 26,758, chữ số ở hàng phần mười là chữ số nào?
+**Đề 8.** Điền dấu <, >, = thích hợp. 1 phần 13 … 3 phần 5
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 9.** Trước mỗi ý, viết rõ: đại lượng nào đang ứng với 100%. Lớp có 120 học sinh, trong đó nam chiếm 20%. Lớp có bao nhiêu học sinh nam?
+**Đề 9.** Đặt tính rồi tính. 47,55 × 4
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 10.** Ghi rõ đại lượng nào ứng với 100%. Lớp 5C có 20 học sinh, trong đó có 12 học sinh giỏi. Hỏi số học sinh giỏi chiếm bao nhiêu phần trăm số học sinh cả lớp?
+**Đề 10.** Quan sát phần bù tới 1 để so sánh. Viết bốn phân số đầu của dãy.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
@@ -139,16 +151,16 @@ Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: 
 
 | # | Dạng bài | Dấu hiệu |
 |:--:|---|---|
-| 1 | Biểu đồ Ven | Đề cho số người của từng nhóm **và** số người thuộc cả hai nhóm |
-| 2 | Bốn phép tính với số thập phân | Các số có dấu phẩy |
-| 3 | Ba dạng toán tỉ số phần trăm | Kí hiệu %, cụm “… % của …” |
-| 4 | Đọc bảng số liệu thống kê | Đề cho bảng hoặc biểu đồ kèm nhiều câu hỏi |
-| 5 | Dãy phân số, so sánh bằng phần bù | Tử và mẫu hơn kém nhau đúng 1 đơn vị |
-| 6 | Tỉ số phần trăm trong mua bán | Từ khoá “tăng giá”, “giảm giá”, “lãi”, “lỗ” |
-| 7 | Rút gọn phân số | Tử số và mẫu số có ước chung lớn hơn 1 |
-| 8 | Số thập phân — hàng, so sánh, chuyển đổi | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 |
-| 9 | Tỉ số phần trăm nhiều bước | Hai tỉ lệ phần trăm nối tiếp nhau trong cùng một bài |
-| 10 | Tỉ số phần trăm có lời văn | Cụm “chiếm bao nhiêu phần trăm”, “so với cả lớp” |
+| 1 | Tỉ số phần trăm có lời văn | Cụm “chiếm bao nhiêu phần trăm”, “so với cả lớp” |
+| 2 | Bài toán tiền điện bậc thang | Đề cho **bảng giá nhiều bậc** và một lượng tiêu thụ |
+| 3 | Tìm phân số của một số | Cụm “bằng … của …” |
+| 4 | Bài toán giảm giá và khuyến mãi | Đề nhắc **giảm giá**, **khuyến mãi**, và có thể giảm nhiều lần |
+| 5 | So sánh phân số bằng kĩ thuật đặc biệt | Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 |
+| 6 | Ba dạng toán tỉ số phần trăm | Kí hiệu %, cụm “… % của …” |
+| 7 | Rút gọn, so sánh, sắp thứ tự phân số | Một nhóm phân số cần sắp thứ tự |
+| 8 | So sánh phân số | Hai phân số nối bởi dấu … |
+| 9 | Bốn phép tính với số thập phân | Các số có dấu phẩy |
+| 10 | Dãy phân số, so sánh bằng phần bù | Tử và mẫu hơn kém nhau đúng 1 đơn vị |
 
 ---
 

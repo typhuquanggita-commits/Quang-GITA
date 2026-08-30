@@ -89,43 +89,43 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 
 Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: đây là dạng bài gì, và dấu hiệu nào cho biết điều đó.
 
-**Đề 1.** Với mỗi số dưới đây, trả lời đủ hai ý. Số 94 662 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
+**Đề 1.** Trả lời ngắn gọn từng câu. Số chẵn bé nhất lớn hơn 58 485 là số nào?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 2.** Tìm x hoặc điền số thích hợp. x + 112 = 163
+**Đề 2.** Cho số **11 556**. Chữ số ở hàng **chục nghìn** của số 11 556 là chữ số nào, và nó có giá trị bằng bao nhiêu?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 3.** Cho ba chữ số **4, 5, 9**. Viết tất cả các số có ba chữ số khác nhau lập được, từ bé đến lớn.
+**Đề 3.** Xét các số có ba chữ số **khác nhau**, tổng các chữ số bằng **9**. Có bao nhiêu số có ba chữ số **khác nhau** mà tổng các chữ số bằng 9?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 4.** Thực hiện phép chia, ghi rõ thương và số dư. 879 : 6 = ? (dư ?)
+**Đề 4.** Thực hiện phép chia, ghi rõ thương và số dư. 407 : 9 = ? (dư ?)
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 5.** Trả lời ngắn gọn từng câu. Số 48 147 là số chẵn hay số lẻ?
+**Đề 5.** Đếm theo nhóm số có một, hai, ba chữ số. Một quyển vở có 80 trang, đánh số từ 1. Phải viết tất cả bao nhiêu chữ số?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 6.** Viết số mới rồi so sánh với số cũ. Số có hai chữ số 78; viết hai chữ số theo thứ tự ngược lại được số nào? Hai số đó hơn kém nhau bao nhiêu đơn vị?
+**Đề 6.** Viết cả số cũ và số mới ra rồi so sánh. Số có hai chữ số 58: viết thêm chữ số 3 vào bên **phải** thì được số nào?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 7.** Xét các số có ba chữ số **khác nhau**, tổng các chữ số bằng **18**. Có bao nhiêu số có ba chữ số **khác nhau** mà tổng các chữ số bằng 18?
+**Đề 7.** Điền dấu thích hợp vào chỗ chấm. 51 693 … 51 663
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 8.** Không đặt tính chia, chỉ dùng dấu hiệu. Số 7 926 có chia hết cho 2 không? Vì sao?
+**Đề 8.** Viết số mới rồi so sánh với số cũ. Số có hai chữ số 25; viết hai chữ số theo thứ tự ngược lại được số nào? Hai số đó hơn kém nhau bao nhiêu đơn vị?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 9.** Đếm theo nhóm số có một, hai, ba chữ số. Một quyển vở có 50 trang, đánh số từ 1. Phải viết tất cả bao nhiêu chữ số?
+**Đề 9.** Cho ba chữ số **3, 4, 7**. Viết tất cả các số có ba chữ số khác nhau lập được, từ bé đến lớn.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 10.** Viết cả số cũ và số mới ra rồi so sánh. Số có hai chữ số 56: viết thêm chữ số 9 vào bên **phải** thì được số nào?
+**Đề 10.** Cho số **77 295**. Số 77 295 có bao nhiêu chữ số?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
@@ -135,16 +135,16 @@ Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: 
 
 | # | Dạng bài | Dấu hiệu |
 |:--:|---|---|
-| 1 | Đếm chữ số, tính tổng chữ số | Yêu cầu “có mấy chữ số”, “tổng các chữ số” |
-| 2 | Tìm thành phần chưa biết; tính chất phép nhân | Có chữ x, hoặc có dấu … trong một đẳng thức |
-| 3 | Lập số từ bộ chữ số | Cho ba chữ số, yêu cầu lập số |
+| 1 | Nhận biết chẵn – lẻ và số liền kề | Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” |
+| 2 | Xác định chữ số và giá trị chữ số theo hàng | Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” |
+| 3 | Đếm số thoả điều kiện về chữ số | “Số có ba chữ số khác nhau, tổng các chữ số bằng …” |
 | 4 | Phép chia có dư | Đề yêu cầu ghi cả thương và số dư |
-| 5 | Nhận biết chẵn – lẻ và số liền kề | Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” |
-| 6 | Đổi chỗ chữ số | “Viết theo thứ tự ngược lại”, “đổi chỗ hai chữ số” |
-| 7 | Đếm số thoả điều kiện về chữ số | “Số có ba chữ số khác nhau, tổng các chữ số bằng …” |
-| 8 | Kiểm tra chia hết bằng dấu hiệu | Câu hỏi “có chia hết cho … không” |
-| 9 | Đếm chữ số theo nhóm | Bài toán đánh số trang |
-| 10 | Thêm, bớt chữ số | “Viết thêm chữ số … vào bên trái / bên phải” |
+| 5 | Đếm chữ số theo nhóm | Bài toán đánh số trang |
+| 6 | Thêm, bớt chữ số | “Viết thêm chữ số … vào bên trái / bên phải” |
+| 7 | So sánh hai số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = |
+| 8 | Đổi chỗ chữ số | “Viết theo thứ tự ngược lại”, “đổi chỗ hai chữ số” |
+| 9 | Lập số từ bộ chữ số | Cho ba chữ số, yêu cầu lập số |
+| 10 | Đọc, viết, cấu tạo số | Câu hỏi về hàng, về tổng chữ số, về số liền kề |
 
 ---
 

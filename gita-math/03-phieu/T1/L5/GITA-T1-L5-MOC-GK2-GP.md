@@ -54,19 +54,19 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần IV**
 
-- **Bài IV.1** — a) 40 · b) 60 · c) 60% · d) 10 · e) 10% · f) vì 25% tính trên số nam, còn câu này tính trên cả lớp
-- **Bài IV.2** — a) 72 cm² · b) 518 cm² · c) 120 cm² · d) 2 lần
-- **Bài IV.3** — a) 58 quyển · b) 75 quyển · c) 10 quyển · d) 13 quyển · e) 23 quyển
-- **Bài IV.4** — a) 18 lít · b) 20 lít · c) 162 lít · d) 72 lít
-- **Bài IV.5** — a) 0 · b) 0 · c) 0 · d) 0
+- **Bài IV.1** — a) 109 phần 168 · b) 15 phần 44 · c) 139 phần 120 · d) 15 phần 98 · e) 87 phần 40
+- **Bài IV.2** — a) 126 m · b) 572 m² · c) 63 giây · d) 66 m² · e) 12 m · f) 986 m² · g) 414 m²
+- **Bài IV.3** — a) một chiếc bút: 6 000 đồng; một quyển vở: 12 000 đồng · b) một chiếc bút: 8 000 đồng; một chiếc cặp: 24 000 đồng · c) một quyển sách: 3 000 đồng; một chiếc cặp: 9 000 đồng · d) một chiếc thước: 3 000 đồng; một hộp hộp màu: 6 000 đồng · e) một chiếc bút: 5 000 đồng; một chiếc cặp: 10 000 đồng
+- **Bài IV.4** — a) 3 giờ · b) 8 km · c) 45 km/giờ · d) 2 giờ
+- **Bài IV.5** — a) 24 · b) 36 · c) 60% · d) 12 · e) 20% · f) vì 50% tính trên số nam, còn câu này tính trên cả lớp
 
 **Phần V**
 
-- **Bài V.1** — a) 123,84 cm² · b) 28,26 cm² · c) 376,8 cm² · d) 819,54 cm² · e) 153,86 cm²
-- **Bài V.2** — a) 35 · b) 24 · c) 46 · d) vì ba số cách đều nên số ở giữa là trung bình cộng · e) 100 · f) 125 · g) 25
-- **Bài V.3** — a) 5,33 ngày · b) 2,93 ngày · c) 4,57 ngày · d) 3,23 ngày · e) 2,19 ngày · f) 3,6 ngày
-- **Bài V.4** — a) < · b) > · c) > · d) < · e) <
-- **Bài V.5** — a) 35 m · b) 25 giây · c) 60 m · d) 60 giây
+- **Bài V.1** — a) 228 cm · b) 240 cm · c) 104 cm · d) 216 cm · e) 56 cm
+- **Bài V.2** — a) nhỏ 4 000 đồng; vừa 12 000 đồng; lớn 24 000 đồng · b) nhỏ 4 000 đồng; vừa 8 000 đồng; lớn 24 000 đồng · c) nhỏ 9 000 đồng; vừa 36 000 đồng; lớn 72 000 đồng · d) nhỏ 10 000 đồng; vừa 20 000 đồng; lớn 40 000 đồng
+- **Bài V.3** — a) 9 215 kg · b) 92 tạ 15 kg · c) 2 303 kg, thừa 3 kg · d) 10 xe · e) 46 tạ 8 kg · f) vì phần thóc còn lại vẫn cần thêm một xe nữa để chở
+- **Bài V.4** — a) 50 g · b) 150 g · c) 500 g · d) không đổi, vẫn là 50 g · e) 10% · f) 40%
+- **Bài V.5** — a) 24 số · b) 24 số · c) 24 số · d) 18 số · e) 12 số
 
 ---
 
@@ -382,23 +382,113 @@ Kết quả: **x = 21**.
 
 *Điểm chốt:* Mỗi bước chỉ gỡ **một** phép tính, đừng gỡ hai phép cùng lúc.
 
-### Bài IV.1 — Phần trăm nhiều bước — mốc 100% thay đổi
+### Bài IV.1 — Biểu thức nhiều phép tính với phân số
+
+**Các bước giải**
+
+Xét ý a: 1 phần 7 : 8 phần 13 + 5 phần 12
+
+Đọc vị: đây là dạng **Biểu thức phân số nhiều phép tính**; dấu hiệu là Biểu thức gồm nhiều phân số và nhiều phép tính.
+
+Kiến thức phải dùng: Thứ tự thực hiện phép tính, tính chất phân phối.
+
+Cách làm: Quan sát rút gọn trước, sau đó theo thứ tự thực hiện.
+
+Lối tắt: Rút gọn chéo tử với mẫu trước khi nhân.
+
+Kết quả: **109 phần 168**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
+
+*Điểm chốt:* Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều.
+
+### Bài IV.2 — Hình chữ nhật — tổng hợp chu vi, diện tích và chuyển động
+
+> **BẪY — Phần tăng gồm ba mảnh.**
+
+**Các bước giải**
+
+Bước 1 — chu vi: (52 + 11) × 2 = 126 (m).
+
+Bước 2 — diện tích: 52 × 11 = 572 (m²).
+
+Bước 3 — đi một vòng chính là đi hết chu vi: 126 : 2 = 63 (giây).
+
+Bước 4 — tăng chiều dài thêm 6 m thì phần dôi ra là một hình chữ nhật 6 m × 11 m, diện tích 66 (m²).
+
+Đáp số ý a: **126 m**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Đi một vòng quanh hình là đi hết **chu vi**. Tăng một chiều thì phần diện tích dôi ra là một hình chữ nhật có kích thước bằng phần tăng nhân chiều còn lại. Tăng cả hai chiều thì phần dôi gồm **ba mảnh**.
+
+*Điểm chốt:* Tăng cả hai chiều thì phần dôi ra **không phải** tích của hai phần tăng.
+
+*Muốn khó hơn:* Giảm một chiều và tăng chiều kia cùng một lượng — diện tích đổi thế nào?
+
+*Phải chắc trước khi làm bài này:* Công thức chu vi, diện tích hình chữ nhật và quan hệ s = v × t.
+
+### Bài IV.3 — Đổi hết về một loại rồi giải
+
+> **BẪY — Quên đổi ngược lại.**
+
+**Các bước giải**
+
+Chọn bút làm loại chuẩn vì nó rẻ hơn, rồi **đổi hết** vở về bút.
+
+4 quyển vở đổi được: 4 × 2 = 8 (chiếc bút).
+
+Vậy số tiền ấy mua được tất cả: 8 + 7 = 15 (chiếc bút).
+
+Giá một chiếc bút: 90 000 : 15 = 6 000 (đồng).
+
+Đổi ngược lại — đây là bước hay bị quên. Giá một quyển vở: 6 000 × 2 = **12 000 đồng**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Chọn loại **giá nhỏ hơn** làm chuẩn, đổi mọi loại còn lại về nó. Bài trở thành bài chia đơn giản. Giải xong nhớ đổi ngược về đại lượng đề hỏi.
+
+*Điểm chốt:* Đổi xong phải đổi ngược lại — đề hỏi cả hai giá, không chỉ một.
+
+*Muốn khó hơn:* Cho quan hệ đổi ngang giữa **ba** loại để phải đổi hai lần liên tiếp.
+
+*Phải chắc trước khi làm bài này:* Quan hệ gấp – kém và phép chia hết.
+
+### Bài IV.4 — Quãng đường – vận tốc – thời gian
+
+> **BẪY — Đơn vị thời gian.**
+
+**Các bước giải**
+
+Xét ý a: Một người đi quãng đường 120 km với vận tốc 40 km/giờ. Tính thời gian đi.
+
+Đọc vị: đây là dạng **Ba dạng cơ bản của chuyển động đều**; dấu hiệu là Có hai trong ba đại lượng quãng đường, vận tốc, thời gian.
+
+Kiến thức phải dùng: Công thức s = v × t.
+
+Cách làm: Chọn công thức theo đại lượng cần tìm; đồng bộ đơn vị.
+
+Lối tắt: Vẽ tam giác s ở trên, v và t ở dưới: che đại lượng cần tìm là ra công thức.
+
+Kết quả: **3 giờ**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** s = v × t; v = s : t; t = s : v. Đơn vị phải khớp: vận tốc km/giờ đi với quãng đường km và thời gian giờ.
+
+*Điểm chốt:* Đơn vị của vận tốc quy định đơn vị của hai đại lượng còn lại.
+
+### Bài IV.5 — Phần trăm nhiều bước — mốc 100% thay đổi
 
 > **BẪY — Mốc 100% khác nhau ở mỗi bước.**
 
 **Các bước giải**
 
-Cả lớp ứng với 100%, tức 100 học sinh.
+Cả lớp ứng với 100%, tức 60 học sinh.
 
-Bước 1 — số nam: 100 : 100 × 40 = 40 (bạn).
+Bước 1 — số nam: 60 : 100 × 40 = 24 (bạn).
 
-Bước 2 — số nữ: 100 − 40 = 60 (bạn).
+Bước 2 — số nữ: 60 − 24 = 36 (bạn).
 
-Bước 3 — nam giỏi tính trên **số nam**, không phải trên cả lớp: 40 : 100 × 25 = 10 (bạn).
+Bước 3 — nam giỏi tính trên **số nam**, không phải trên cả lớp: 24 : 100 × 50 = 12 (bạn).
 
-Bước 4 — tỉ lệ nam giỏi so với cả lớp: 10 : 100 × 100 = 10%.
+Bước 4 — tỉ lệ nam giỏi so với cả lớp: 12 : 60 × 100 = 20%.
 
-Đáp số ý d: **10 bạn**.
+Đáp số ý d: **12 bạn**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Mỗi lần gặp một tỉ lệ phần trăm mới, phải hỏi: phần trăm này tính **trên cái gì**. Trong bài này, tỉ lệ nam giỏi tính trên số nam, không phải trên sĩ số cả lớp.
 
@@ -408,199 +498,115 @@ Bước 4 — tỉ lệ nam giỏi so với cả lớp: 10 : 100 × 100 = 10%.
 
 *Phải chắc trước khi làm bài này:* Ba dạng cơ bản của tỉ số phần trăm.
 
-### Bài IV.2 — Diện tích thay đổi khi kích thước thay đổi
-
-> **BẪY — Phần tăng gồm ba mảnh.**
+### Bài V.1 — Cắt và ghép hình — chu vi thay đổi thế nào
 
 **Các bước giải**
 
-Xét ý a: Hình chữ nhật dài 10 cm, rộng 4 cm. Nếu tăng cả chiều dài và chiều rộng thêm 4 cm thì diện tích tăng thêm bao nhiêu?
+Xét ý a: Cắt một hình vuông cạnh 38 cm thành hai hình chữ nhật bằng nhau. Tổng chu vi hai hình chữ nhật đó bằng bao nhiêu?
 
-Đọc vị: đây là dạng **Biến thiên diện tích theo kích thước**; dấu hiệu là “Tăng chiều dài thêm …”, “gấp đôi chiều …”.
+Đọc vị: đây là dạng **Cắt ghép hình, biến thiên chu vi**; dấu hiệu là Từ khoá “ghép”, “cắt thành”, “xếp thành”.
 
-Kiến thức phải dùng: Diện tích hình chữ nhật, phân tích hình.
+Kiến thức phải dùng: Chu vi, đường bao của hình.
 
-Cách làm: Vẽ hình chồng, tách phần dôi ra thành các mảnh chữ nhật.
+Cách làm: Xác định đường bao mới rồi cộng độ dài.
 
-Lối tắt: Gấp đôi một chiều thì diện tích gấp đôi; gấp đôi cả hai chiều thì gấp bốn.
+Lối tắt: Mỗi nhát cắt làm tổng chu vi tăng thêm hai lần chiều dài nhát cắt.
 
-Kết quả: **72 cm²**.
+Kết quả: **228 cm**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Tăng một chiều thêm k đơn vị thì diện tích tăng thêm đúng một hình chữ nhật có kích thước k × chiều còn lại. Tăng cả hai chiều thì phần tăng gồm ba mảnh: hai dải và một hình vuông ở góc — nên **không** bằng tích của hai phần tăng.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Khi ghép hai hình lại, các cạnh dán vào nhau **không còn nằm trên đường bao** nên không tính vào chu vi. Ngược lại, khi cắt một hình thành hai phần thì xuất hiện thêm hai cạnh mới trên đường bao, nên tổng chu vi tăng lên đúng hai lần đường cắt.
 
-*Điểm chốt:* Tăng cả hai chiều thì phần tăng gồm **ba mảnh**, không phải một.
+*Điểm chốt:* Diện tích giữ nguyên khi cắt ghép, nhưng **chu vi thay đổi**.
 
-### Bài IV.3 — Chuyển bớt để hai phần bằng nhau
-
-> **BẪY — Hiệu thay đổi gấp đôi số chuyển.**
+### Bài V.2 — Ba loại hộp, hai quan hệ đổi ngang
 
 **Các bước giải**
 
-Xét ý a: Tổ Ba có 290 quyển sách, nhóm Hoa Phượng có 174 quyển. Hỏi phải chuyển bao nhiêu quyển từ tổ Ba sang nhóm Hoa Phượng để số sách hai tổ bằng nhau?
+Ba loại và hai quan hệ đổi ngang. Quy tắc: **đổi hết về loại nhỏ nhất**, vì mọi quan hệ đều dẫn được về nó.
 
-Đọc vị: đây là dạng **Chuyển đổi giữa hai đại lượng, tổng không đổi**; dấu hiệu là “Chuyển … từ bên này sang bên kia”.
+Một hộp lớn = 2 hộp vừa = 2 × 3 = 6 hộp nhỏ.
 
-Kiến thức phải dùng: Bất biến tổng, biến thiên hiệu.
+Đổi cả đơn hàng về hộp nhỏ: 3 × 6 + 6 × 3 + 8 = 44 (hộp nhỏ).
 
-Cách làm: Xét đại lượng không đổi (tổng) và đại lượng đổi gấp đôi (hiệu).
+Giá một hộp nhỏ: 176 000 : 44 = 4 000 (đồng).
 
-Lối tắt: Sau khi chuyển, mỗi bên bằng nửa tổng — tính nửa tổng rồi trừ là ra ngay.
+Đổi ngược **đủ cả hai loại còn lại** — đây là chỗ hay sót: hộp vừa 4 000 × 3 = 12 000 đồng; hộp lớn 12 000 × 2 = **24 000 đồng**.
 
-Kết quả: **58 quyển**.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Nối hai quan hệ đổi ngang lại để đưa loại lớn nhất về loại nhỏ nhất, rồi quy cả đơn hàng về loại nhỏ. Giải xong đổi ngược theo đúng thứ tự ngược lại.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Khi chuyển k đơn vị từ bên nhiều sang bên ít, bên nhiều giảm k còn bên ít tăng k, nên hiệu giảm đi **2k**. Muốn hai bên bằng nhau thì hiệu phải về 0, vậy k = hiệu : 2.
+*Điểm chốt:* Nối hai quan hệ là phép **nhân**, không phải phép cộng: một lớn bằng k₁ × k₂ nhỏ, không phải k₁ + k₂ nhỏ.
 
-*Điểm chốt:* Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển.
+*Muốn khó hơn:* Thêm loại thứ tư để phải bắc cầu ba lần.
 
-### Bài IV.4 — Bài toán đại lượng nhiều bước
+*Phải chắc trước khi làm bài này:* Quan hệ gấp – kém và phép chia hết.
 
-**Các bước giải**
-
-Xét ý a: Một cửa hàng có 4 thùng dầu, mỗi thùng 18 lít. Cửa hàng đã bán 3 thùng. Hỏi cửa hàng còn lại bao nhiêu lít dầu?
-
-Đọc vị: đây là dạng **Bài toán đại lượng nhiều bước**; dấu hiệu là Cho số nhóm, giá trị mỗi nhóm và số nhóm đã dùng.
-
-Kiến thức phải dùng: Nhân, trừ; đại lượng cùng loại.
-
-Cách làm: Rút gọn số bước bằng cách trừ trước, nhân sau.
-
-Lối tắt: So sánh hai đường giải, chọn đường ít phép tính hơn.
-
-Kết quả: **18 lít**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
-
-*Điểm chốt:* Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
-
-### Bài IV.5 — Nhận ra thừa số 0 để tính tức thì
-
-> **BẪY — Biểu thức lớn nhưng kết quả bằng 0.**
+### Bài V.3 — Đại lượng khối lượng — đổi đơn vị và chia phần
 
 **Các bước giải**
 
-Xét ý a: 63 × 34 + 63 × 94 − 63 × (34 + 94)
+Bước 1 — đổi về ki-lô-gam: 9 tấn = 9 000 kg; 2 tạ = 200 kg.
 
-Đọc vị: đây là dạng **Tính nhanh nhờ thừa số 0**; dấu hiệu là Trong biểu thức có ngoặc chứa hai số giống nhau trừ nhau.
+Tổng: 9 000 + 200 + 15 = 9 215 (kg).
 
-Kiến thức phải dùng: Tính chất nhân với 0, phép trừ hai số bằng nhau.
+Bước 2 — chia cho 4 xe: 9 215 : 4 = 2 303 dư 3.
 
-Cách làm: Quét tìm cụm bằng 0 trước khi tính.
+Bước 3 — mỗi xe chở 1 tấn = 1 000 kg, cần 9 215 : 1 000 = 9 xe đầy, còn 215 kg nữa nên phải thêm một xe.
 
-Lối tắt: Nhìn dấu ngoặc trước tiên — bẫy thường nằm ở đó.
+Đáp số ý a: **9 215 kg**.
 
-Kết quả: **0**.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Quy hết về một đơn vị rồi mới tính. Với câu hỏi “cần ít nhất bao nhiêu xe”, phần dư vẫn phải có một xe chở, nên **làm tròn lên**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu. Vì vậy phải quan sát toàn bộ biểu thức trước khi tính, tìm cụm nào có giá trị bằng 0.
+*Điểm chốt:* Câu hỏi “ít nhất bao nhiêu xe” luôn **làm tròn lên**.
 
-*Điểm chốt:* Quét tìm **cụm bằng 0** trước; thấy rồi thì viết đáp số ngay.
+*Muốn khó hơn:* Mỗi xe chở tối đa 1,5 tấn — phải đổi sang đơn vị chung trước.
 
-### Bài V.1 — Diện tích phần tô màu
+*Phải chắc trước khi làm bài này:* Bảng đơn vị khối lượng và phép chia có dư.
 
-**Các bước giải**
-
-Xét ý a: Một hình tròn bán kính 12 cm nội tiếp trong một hình vuông (hình tròn tiếp xúc cả bốn cạnh). Tính diện tích phần hình vuông nằm ngoài hình tròn (lấy π = 3,14).
-
-Đọc vị: đây là dạng **Diện tích phần tô màu**; dấu hiệu là Hình gồm nhiều hình lồng nhau, hỏi phần còn lại.
-
-Kiến thức phải dùng: Diện tích hình tròn, hình vuông; phép trừ diện tích.
-
-Cách làm: Tách thành hiệu các hình cơ bản.
-
-Lối tắt: Hình tròn nội tiếp hình vuông chiếm khoảng 78,5% diện tích hình vuông.
-
-Kết quả: **123,84 cm²**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Diện tích phần tô màu = diện tích hình lớn − diện tích hình bị khoét. Bước quan trọng nhất là nhận ra hình lớn và hình bị khoét là những hình nào, và tìm đúng kích thước của chúng từ dữ kiện đề cho.
-
-*Điểm chốt:* Đọc quan hệ hình học để suy ra kích thước: hình tròn nội tiếp hình vuông thì **đường kính bằng cạnh hình vuông**.
-
-### Bài V.2 — Tổng nhiều số có ràng buộc — dạng đề thi
+### Bài V.4 — Dung dịch và nồng độ phần trăm
 
 **Các bước giải**
 
-Ba số cách đều nhau 11 đơn vị nên số ở giữa là trung bình cộng.
+Bước 1 — lượng muối: 200 : 100 × 25 = 50 (g).
 
-Bước 1 — số thứ hai: 105 : 3 = 35.
+Bước 2 — lượng nước: 200 − 50 = 150 (g).
 
-Bước 2 — số thứ nhất: 35 − 11 = 24.
+Bước 3 — đổ thêm nước thì **lượng muối không đổi**, chỉ khối lượng dung dịch tăng: 200 + 300 = 500 (g).
 
-Bước 3 — số thứ ba: 35 + 11 = 46.
+Bước 4 — nồng độ mới: 50 : 500 × 100 = 10%.
 
-Thử lại: 24 + 35 + 46 = 105 ✓
+Nhận xét: đổ thêm nước thì nồng độ **giảm**, đúng như trực giác.
 
-Đáp số: **24, 35, 46**.
+Đáp số ý e: **10%**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Với một số lẻ các số cách đều, số ở giữa chính là trung bình cộng — tìm nó trước rồi suy ra hai số kia. Phần sau là bài tổng – tỉ chuẩn: tổng số phần rồi giá trị một phần.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Nồng độ phần trăm bằng lượng chất tan chia khối lượng dung dịch rồi nhân 100. Đổ thêm nước thì tử số giữ nguyên, mẫu số tăng, nên nồng độ giảm. Bỏ thêm muối thì **cả tử và mẫu cùng tăng**.
 
-*Điểm chốt:* Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
+*Điểm chốt:* Đổ thêm nước: **lượng muối không đổi**. Bỏ thêm muối: cả hai cùng đổi.
 
-*Muốn khó hơn:* Đổi thành bốn số cách đều — khi đó không còn số giữa, phải ghép cặp.
+*Muốn khó hơn:* Trộn hai dung dịch nồng độ khác nhau — cộng riêng tử số, cộng riêng mẫu số.
 
-*Phải chắc trước khi làm bài này:* Trung bình cộng, dãy cách đều và bài toán tổng – tỉ.
+*Phải chắc trước khi làm bài này:* Ba dạng cơ bản của tỉ số phần trăm.
 
-### Bài V.3 — Tỉ lệ nghịch — so sánh hai phương án
-
-**Các bước giải**
-
-Xét ý a: 4 người làm xong một công việc trong 16 ngày. Nếu có thêm 2 người nữa (làm khoẻ như nhau) thì công việc đó hoàn thành sớm hơn bao nhiêu ngày?
-
-Đọc vị: đây là dạng **Tỉ lệ nghịch, so sánh hai phương án**; dấu hiệu là Thay đổi số người, hỏi thay đổi thời gian.
-
-Kiến thức phải dùng: Đại lượng tỉ lệ nghịch, tổng số ngày công.
-
-Cách làm: Bám vào tổng số ngày công không đổi.
-
-Lối tắt: Số người tăng gấp k lần thì số ngày giảm còn 1 phần k.
-
-Kết quả: **5,33 ngày**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Tổng số ngày công không đổi: số người × số ngày. Tính tổng số ngày công, chia cho số người mới ra số ngày mới, rồi lấy số ngày cũ trừ số ngày mới để biết sớm hơn bao nhiêu.
-
-*Điểm chốt:* Đại lượng bất biến ở đây là **tổng số ngày công**.
-
-### Bài V.4 — So sánh phân số bằng phần bù và phân số trung gian
+### Bài V.5 — Đếm số có ba chữ số khác nhau, thoả một điều kiện
 
 **Các bước giải**
 
-Xét ý a: 55 phần 56 … 59 phần 60
+Vẽ sơ đồ cây ba tầng: hàng trăm, hàng chục, hàng đơn vị. Nhưng **đừng vẽ hết** — hãy xem điều kiện rơi vào tầng nào trước đã.
 
-Đọc vị: đây là dạng **So sánh phân số bằng kĩ thuật đặc biệt**; dấu hiệu là Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2.
+Điều kiện chia hết cho 3 rơi vào **tổng ba chữ số**, không rơi vào một hàng nào. Vì vậy không chọn theo hàng được, mà phải xét từng bộ ba chữ số có tổng chia hết cho 3.
 
-Kiến thức phải dùng: Phần bù tới 1, phân số trung gian.
+Liệt kê các bộ ba chữ số thoả điều kiện tổng, mỗi bộ cho 6 số vì ba chữ số khác nhau xếp được 6 cách.
 
-Cách làm: So phần bù; hoặc chèn phân số trung gian.
+Chữ số phải khác nhau nên mỗi tầng sau ít đi một lựa chọn — đây là chỗ khác với bài đếm không có điều kiện khác nhau.
 
-Lối tắt: Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn.
+Đếm hết được **24 số**.
 
-Kết quả: **<**.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Xem điều kiện ràng buộc hàng nào thì **chọn hàng ấy trước**, rồi mới chọn các hàng còn lại. Điều kiện rơi vào tổng chữ số thì không chọn theo hàng được, phải xét theo bộ.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** **Phần bù tới 1:** hai phân số đều thiếu một chút nữa thì bằng 1; phân số nào có phần bù **bé hơn** thì lớn hơn. **Phân số trung gian:** chọn một phân số dễ so (thường là 1 phần 2 hoặc 1 phần 3) rồi so mỗi phân số với nó.
+*Điểm chốt:* Thứ tự chọn quyết định bài dễ hay khó. Chọn hàng bị ràng buộc trước là mẹo lớn nhất của cả dạng đếm.
 
-*Điểm chốt:* Phần bù **bé hơn** nghĩa là phân số **lớn hơn** — dễ nhớ nhầm chiều.
+*Muốn khó hơn:* Đổi thành số có bốn chữ số, hoặc cho phép chữ số lặp lại.
 
-### Bài V.5 — Đoàn tàu qua cầu, qua cột điện
-
-**Các bước giải**
-
-Xét ý a: Một đoàn tàu chạy với vận tốc 18 km/giờ, chạy qua một cột điện bên đường hết 7 giây. Tính chiều dài đoàn tàu.
-
-Đọc vị: đây là dạng **Vật chuyển động có chiều dài đáng kể**; dấu hiệu là Đề cho **chiều dài của chính vật chuyển động** — đoàn tàu, đoàn người, khúc gỗ.
-
-Kiến thức phải dùng: Vận tốc – quãng đường – thời gian; đổi đơn vị vận tốc.
-
-Cách làm: Cộng chiều dài vật vào quãng đường rồi mới chia cho vận tốc.
-
-Lối tắt: Qua cột điện thì quãng đường bằng đúng chiều dài tàu — đây là cách nhanh nhất để đo chiều dài đoàn tàu.
-
-Kết quả: **35 m**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Vật chuyển động có chiều dài thì quãng đường phải cộng thêm chính chiều dài của nó. Qua cầu thì cộng chiều dài cầu; qua cột điện — cột không có chiều dài đáng kể — thì quãng đường đúng bằng chiều dài tàu.
-
-*Điểm chốt:* Quãng đường tính từ lúc **đầu tàu** bắt đầu tới lúc **đuôi tàu** kết thúc, nên luôn phải cộng chiều dài đoàn tàu.
-
-*Muốn khó hơn:* Cho hai đoàn tàu chạy ngược chiều vượt qua nhau, quãng đường lúc ấy là tổng chiều dài hai tàu.
-
-*Phải chắc trước khi làm bài này:* Đổi đơn vị km/giờ sang m/giây và ba công thức chuyển động.
+*Phải chắc trước khi làm bài này:* Quy tắc nhân trong đếm và dấu hiệu chia hết cho 2, 3.
 
 ---
 
@@ -625,16 +631,16 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.3 | Chu vi, diện tích hình tròn | Công thức hình tròn | Đề cho bán kính hoặc đường kính | Quy về bán kính, chọn đúng công thức | Diện tích luôn có đơn vị mũ hai — nếu đáp số ghi cm là chắc chắn nhầm. | 43,96 cm · 19 cm · 153,86 cm² · 169,56 cm… |
 | III.4 | Bài toán hiệu – tỉ | Tỉ số, sơ đồ đoạn thẳng | Đề cho **hiệu** và **tỉ số** | Sơ đồ → hiệu số phần → giá trị một phần | Hiệu luôn chia hết cho hiệu số phần — dùng để kiểm tra đã đọc đúng tỉ số chưa. | kho A: 116 kg, hợp tác xã: 406 kg · cửa hàng: 585 kg, kho A: 702 kg · trang trại: 111 kg, thư viện: 222 kg · xưởng: 416 kg, kho A: 520 kg… |
 | III.5 | Tìm x nhiều bước có ngoặc | Thứ tự thực hiện phép tính, quan hệ thành phần | x nằm trong ngoặc, ngoài ngoặc còn phép tính khác | Bóc lớp từ ngoài vào trong | Thay x tìm được vào đề, tính một lượt để thử lại. | x = 21 · x = 117 · x = 99 · x = 110… |
-| IV.1 | Tỉ số phần trăm nhiều bước | Ba dạng tỉ số phần trăm; mốc quy chiếu | Hai tỉ lệ phần trăm nối tiếp nhau trong cùng một bài | Xác định lại mốc 100% trước mỗi bước | Nhân hai tỉ lệ rồi chia 100 là ra tỉ lệ so với mốc gốc. | 40 · 60 · 60% · 10… |
-| IV.2 | Biến thiên diện tích theo kích thước | Diện tích hình chữ nhật, phân tích hình | “Tăng chiều dài thêm …”, “gấp đôi chiều …” | Vẽ hình chồng, tách phần dôi ra thành các mảnh chữ nhật | Gấp đôi một chiều thì diện tích gấp đôi; gấp đôi cả hai chiều thì gấp bốn. | 72 cm² · 518 cm² · 120 cm² · 2 lần |
-| IV.3 | Chuyển đổi giữa hai đại lượng, tổng không đổi | Bất biến tổng, biến thiên hiệu | “Chuyển … từ bên này sang bên kia” | Xét đại lượng không đổi (tổng) và đại lượng đổi gấp đôi (hiệu) | Sau khi chuyển, mỗi bên bằng nửa tổng — tính nửa tổng rồi trừ là ra ngay. | 58 quyển · 75 quyển · 10 quyển · 13 quyển… |
-| IV.4 | Bài toán đại lượng nhiều bước | Nhân, trừ; đại lượng cùng loại | Cho số nhóm, giá trị mỗi nhóm và số nhóm đã dùng | Rút gọn số bước bằng cách trừ trước, nhân sau | So sánh hai đường giải, chọn đường ít phép tính hơn. | 18 lít · 20 lít · 162 lít · 72 lít |
-| IV.5 | Tính nhanh nhờ thừa số 0 | Tính chất nhân với 0, phép trừ hai số bằng nhau | Trong biểu thức có ngoặc chứa hai số giống nhau trừ nhau | Quét tìm cụm bằng 0 trước khi tính | Nhìn dấu ngoặc trước tiên — bẫy thường nằm ở đó. | 0 · 0 · 0 · 0 |
-| V.1 | Diện tích phần tô màu | Diện tích hình tròn, hình vuông; phép trừ diện tích | Hình gồm nhiều hình lồng nhau, hỏi phần còn lại | Tách thành hiệu các hình cơ bản | Hình tròn nội tiếp hình vuông chiếm khoảng 78,5% diện tích hình vuông. | 123,84 cm² · 28,26 cm² · 376,8 cm² · 819,54 cm²… |
-| V.2 | Tổng nhiều số có ràng buộc; tổng – tỉ | Trung bình cộng của dãy cách đều; tổng – tỉ | Ba số hơn kém nhau cùng một lượng; hoặc tổng đi cùng tỉ số | Tìm số giữa trước; sau đó chia theo tỉ lệ | Tổng ba số cách đều luôn chia hết cho 3. | 35 · 24 · 46 · vì ba số cách đều nên số ở giữa là trung bình cộng… |
-| V.3 | Tỉ lệ nghịch, so sánh hai phương án | Đại lượng tỉ lệ nghịch, tổng số ngày công | Thay đổi số người, hỏi thay đổi thời gian | Bám vào tổng số ngày công không đổi | Số người tăng gấp k lần thì số ngày giảm còn 1 phần k. | 5,33 ngày · 2,93 ngày · 4,57 ngày · 3,23 ngày… |
-| V.4 | So sánh phân số bằng kĩ thuật đặc biệt | Phần bù tới 1, phân số trung gian | Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 | So phần bù; hoặc chèn phân số trung gian | Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. | < · > · > · <… |
-| V.5 | Vật chuyển động có chiều dài đáng kể | Vận tốc – quãng đường – thời gian; đổi đơn vị vận tốc | Đề cho **chiều dài của chính vật chuyển động** — đoàn tàu, đoàn người, khúc gỗ | Cộng chiều dài vật vào quãng đường rồi mới chia cho vận tốc | Qua cột điện thì quãng đường bằng đúng chiều dài tàu — đây là cách nhanh nhất để đo chiều dài đoàn tàu. | 35 m · 25 giây · 60 m · 60 giây |
+| IV.1 | Biểu thức phân số nhiều phép tính | Thứ tự thực hiện phép tính, tính chất phân phối | Biểu thức gồm nhiều phân số và nhiều phép tính | Quan sát rút gọn trước, sau đó theo thứ tự thực hiện | Rút gọn chéo tử với mẫu trước khi nhân. | 109 phần 168 · 15 phần 44 · 139 phần 120 · 15 phần 98… |
+| IV.2 | Hình chữ nhật tổng hợp | Chu vi, diện tích hình chữ nhật; s = v × t | Một hình nhưng nhiều câu hỏi nối tiếp | Tính chu vi và diện tích trước, dùng lại cho các ý sau | Chu vi tăng đúng 2 lần phần tăng, dù tăng chiều nào. | 126 m · 572 m² · 63 giây · 66 m²… |
+| IV.3 | Phương pháp thay thế | Quan hệ gấp – kém; phép nhân, phép chia | Đề cho **quan hệ đổi ngang** giữa hai loại cùng một tổng chung | Quy hết về loại chuẩn, giải, rồi đổi ngược | Tổng số cái sau khi đổi bằng số loại rẻ cộng số loại đắt nhân hệ số. | một chiếc bút: 6 000 đồng; một quyển vở: 12 000 đồng · một chiếc bút: 8 000 đồng; một chiếc cặp: 24 000 đồng · một quyển sách: 3 000 đồng; một chiếc cặp: 9 000 đồng · một chiếc thước: 3 000 đồng; một hộp hộp màu: 6 000 đồng… |
+| IV.4 | Ba dạng cơ bản của chuyển động đều | Công thức s = v × t | Có hai trong ba đại lượng quãng đường, vận tốc, thời gian | Chọn công thức theo đại lượng cần tìm; đồng bộ đơn vị | Vẽ tam giác s ở trên, v và t ở dưới: che đại lượng cần tìm là ra công thức. | 3 giờ · 8 km · 45 km/giờ · 2 giờ |
+| IV.5 | Tỉ số phần trăm nhiều bước | Ba dạng tỉ số phần trăm; mốc quy chiếu | Hai tỉ lệ phần trăm nối tiếp nhau trong cùng một bài | Xác định lại mốc 100% trước mỗi bước | Nhân hai tỉ lệ rồi chia 100 là ra tỉ lệ so với mốc gốc. | 24 · 36 · 60% · 12… |
+| V.1 | Cắt ghép hình, biến thiên chu vi | Chu vi, đường bao của hình | Từ khoá “ghép”, “cắt thành”, “xếp thành” | Xác định đường bao mới rồi cộng độ dài | Mỗi nhát cắt làm tổng chu vi tăng thêm hai lần chiều dài nhát cắt. | 228 cm · 240 cm · 104 cm · 216 cm… |
+| V.2 | Phương pháp thay thế | Quan hệ gấp – kém bắc cầu; nhân, chia | Đề cho **ba loại** và **hai quan hệ đổi ngang** nối tiếp nhau | Bắc cầu hai quan hệ, quy hết về loại nhỏ nhất, giải, rồi đổi ngược | Hệ số từ loại lớn về loại nhỏ là tích của hai hệ số trung gian. | nhỏ 4 000 đồng; vừa 12 000 đồng; lớn 24 000 đồng · nhỏ 4 000 đồng; vừa 8 000 đồng; lớn 24 000 đồng · nhỏ 9 000 đồng; vừa 36 000 đồng; lớn 72 000 đồng · nhỏ 10 000 đồng; vừa 20 000 đồng; lớn 40 000 đồng |
+| V.3 | Đại lượng khối lượng, chia phần và làm tròn lên | Bảng đơn vị khối lượng; phép chia có dư | Số đo nhiều đơn vị; câu hỏi “ít nhất bao nhiêu” | Quy về một đơn vị, chia, xét phần dư | 1 tấn = 1 000 kg nên chia cho 1 000 là bớt ba chữ số 0. | 9 215 kg · 92 tạ 15 kg · 2 303 kg, thừa 3 kg · 10 xe… |
+| V.4 | Nồng độ phần trăm của dung dịch | Tỉ số phần trăm; phân biệt chất tan và dung dịch | “Dung dịch … %”, “đổ thêm nước”, “bỏ thêm muối” | Kẻ bảng theo dõi tử số và mẫu số qua từng thao tác | Thêm nước thì nồng độ giảm, thêm muối thì nồng độ tăng — dùng để loại đáp số sai ngay. | 50 g · 150 g · 500 g · không đổi, vẫn là 50 g… |
+| V.5 | Ứng dụng sơ đồ (cây, khối, mũi tên) | Đếm có hệ thống; dấu hiệu chia hết; cấu tạo số | Đề hỏi **lập được bao nhiêu số** thoả một điều kiện | Chọn hàng bị điều kiện ràng buộc trước, rồi nhân số cách các hàng còn lại | Ba chữ số khác nhau xếp được 6 cách — dùng khi điều kiện rơi vào tổng. | 24 số · 24 số · 24 số · 18 số… |
 
 ---
 
@@ -657,16 +663,16 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.3 | TD1, TD3 | Chu vi dùng **đường kính**, diện tích dùng **bán kính nhân bán kính**. |
 | III.4 | TD3, TD2 | Chia cho **hiệu số phần**, không phải tổng số phần. |
 | III.5 | TD3, TD2 | Mỗi bước chỉ gỡ **một** phép tính, đừng gỡ hai phép cùng lúc. |
-| IV.1 | TD6, TD2 | Cùng một con số phần trăm nhưng **mốc khác nhau** thì kết quả khác nhau. |
-| IV.2 | TD3, TD6 | Tăng cả hai chiều thì phần tăng gồm **ba mảnh**, không phải một. |
-| IV.3 | TD3, TD6 | Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển. |
-| IV.4 | TD3, TD5 | Trừ **số thùng** trước khi nhân thì ít phép tính hơn. |
-| IV.5 | TD5, TD6 | Quét tìm **cụm bằng 0** trước; thấy rồi thì viết đáp số ngay. |
-| V.1 | TD3, TD6 | Đọc quan hệ hình học để suy ra kích thước: hình tròn nội tiếp hình vuông thì **đường kính bằng cạnh hình vuông**. |
-| V.2 | TD4, TD3 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
-| V.3 | TD6, TD3 | Đại lượng bất biến ở đây là **tổng số ngày công**. |
-| V.4 | TD6, TD5 | Phần bù **bé hơn** nghĩa là phân số **lớn hơn** — dễ nhớ nhầm chiều. |
-| V.5 | TD4, TD6 | Quãng đường tính từ lúc **đầu tàu** bắt đầu tới lúc **đuôi tàu** kết thúc, nên luôn phải cộng chiều dài đoàn tàu. |
+| IV.1 | TD3, TD5 | Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều. |
+| IV.2 | TD3, TD6 | Tăng cả hai chiều thì phần dôi ra **không phải** tích của hai phần tăng. |
+| IV.3 | TD2, TD5 | Đổi xong phải đổi ngược lại — đề hỏi cả hai giá, không chỉ một. |
+| IV.4 | TD1, TD3 | Đơn vị của vận tốc quy định đơn vị của hai đại lượng còn lại. |
+| IV.5 | TD6, TD2 | Cùng một con số phần trăm nhưng **mốc khác nhau** thì kết quả khác nhau. |
+| V.1 | TD6, TD3 | Diện tích giữ nguyên khi cắt ghép, nhưng **chu vi thay đổi**. |
+| V.2 | TD2, TD5, TD6 | Nối hai quan hệ là phép **nhân**, không phải phép cộng: một lớn bằng k₁ × k₂ nhỏ, không phải k₁ + k₂ nhỏ. |
+| V.3 | TD3, TD6 | Câu hỏi “ít nhất bao nhiêu xe” luôn **làm tròn lên**. |
+| V.4 | TD6, TD3 | Đổ thêm nước: **lượng muối không đổi**. Bỏ thêm muối: cả hai cùng đổi. |
+| V.5 | TD3, TD4, TD6 | Thứ tự chọn quyết định bài dễ hay khó. Chọn hàng bị ràng buộc trước là mẹo lớn nhất của cả dạng đếm. |
 
 ---
 
@@ -691,16 +697,16 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 | III.3 | Lấy đường kính nhân đường kính khi tính diện tích. | Ghi rõ r = … và d = … lên hình trước khi thay số. |
 | III.4 | Dùng nhầm công thức của tổng – tỉ cho bài hiệu – tỉ. | Đọc kĩ: đề cho “tổng” hay cho “nhiều hơn”? Ghi rõ ra trước khi vẽ. |
 | III.5 | Nhân phá ngoặc sai dấu, hoặc gỡ phép trong ngoặc trước. | Ghi rõ từng bước trên một dòng riêng, mỗi dòng chỉ khác dòng trên một phép. |
-| IV.1 | Lấy tỉ lệ nam giỏi nhân thẳng với sĩ số cả lớp. | Viết trước mỗi phép tính: “100% ở đây là …”. |
-| IV.2 | Nhân hai lượng tăng với nhau rồi coi đó là phần diện tích tăng thêm. | Vẽ hình chữ nhật cũ nằm trong hình mới, tô phần dôi ra. |
-| IV.3 | Chuyển đúng bằng hiệu hai bên nên bên ít lại thành bên nhiều. | Thử lại: sau khi chuyển, cộng trừ ra hai số rồi so xem có bằng nhau không. |
-| IV.4 | Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. | Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng. |
-| IV.5 | Lao vào nhân từng cặp số lớn rồi mới phát hiện kết quả bằng 0. | Đọc hết biểu thức một lượt, khoanh các cụm giống nhau bị trừ cho nhau. |
-| V.1 | Lấy bán kính hình tròn làm cạnh hình vuông. | Vẽ lại hình, ghi số đo lên hình trước khi tính. |
-| V.2 | Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. | Nhìn ra “cách đều” trước khi đặt bút. |
-| V.3 | Trừ thẳng số người rồi lấy hiệu làm số ngày rút ngắn. | Viết rõ: tổng ngày công = … ; số ngày mới = … ; sớm hơn = … . |
-| V.4 | So phần bù rồi kết luận cùng chiều với phần bù. | Nghĩ tới chiếc bánh: thiếu ít hơn thì phần đang có nhiều hơn. |
-| V.5 | Lấy quãng đường bằng đúng chiều dài cầu, quên chiều dài tàu. | Vẽ đoàn tàu thành một đoạn thẳng đặt cạnh cây cầu trước khi tính. |
+| IV.1 | Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. | Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút. |
+| IV.2 | Nhân hai lượng tăng với nhau rồi coi đó là diện tích tăng thêm. | Vẽ hình cũ nằm trong hình mới rồi tô phần dôi ra. |
+| IV.3 | Tính ra giá loại chuẩn rồi dừng, quên nhân lên cho loại kia. | Gạch chân câu hỏi cuối trước khi tính, để biết đề hỏi mấy đại lượng. |
+| IV.4 | Vận tốc tính bằng km/giờ nhưng thời gian lại để bằng phút. | Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức. |
+| IV.5 | Lấy tỉ lệ nam giỏi nhân thẳng với sĩ số cả lớp. | Viết trước mỗi phép tính: “100% ở đây là …”. |
+| V.1 | Cộng chu vi các hình nhỏ lại rồi coi đó là chu vi hình ghép. | Tô đậm đường bao của hình mới rồi mới tính. |
+| V.2 | Cộng hai hệ số đổi ngang, hoặc chỉ đổi ngược một loại rồi dừng. | Vẽ ba mức thành ba tầng, ghi hệ số trên mỗi mũi tên. |
+| V.3 | Chia rồi lấy phần nguyên, bỏ quên phần dư vẫn cần một xe. | Hỏi lại: phần thóc dư có tự bay đi được không? |
+| V.4 | Khi bỏ thêm muối thì chỉ cộng vào tử số mà quên cộng vào mẫu số. | Kẻ bảng hai dòng: lượng muối và khối lượng dung dịch, cập nhật sau mỗi thao tác. |
+| V.5 | Chọn hàng trăm trước rồi mới xét điều kiện ở hàng đơn vị, thành ra phải chia trường hợp rối rắm. | Vẽ hai tầng đầu của sơ đồ cây để kiểm lại cách đếm trước khi nhân. |
 
 ---
 
@@ -723,16 +729,16 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 **Bài III.3** — (1) Đề cho bán kính hay đường kính? — (2) Chu vi dùng đường kính; diện tích dùng bán kính. — (3) Nhân với 3,14 ở bước cuối.
 **Bài III.4** — (1) Đề cho tổng hay cho hiệu? — (2) Vẽ sơ đồ, phần dôi ra ứng với hiệu. — (3) Hiệu chia cho hiệu số phần ra giá trị một phần.
 **Bài III.5** — (1) Phép tính ngoài cùng là phép nào? — (2) Coi cả cụm còn lại là một số và tìm giá trị của nó. — (3) Lặp lại cho tới khi chỉ còn x.
-**Bài IV.1** — (1) Đại lượng nào ứng với 100% ở ý này? — (2) Tỉ lệ này tính trên cả lớp hay chỉ trên số nam? — (3) Muốn quy về cả lớp thì chia cho sĩ số rồi nhân 100.
-**Bài IV.2** — (1) Vẽ hình cũ và hình mới chồng lên nhau. — (2) Phần dôi ra gồm mấy mảnh? — (3) Tính diện tích từng mảnh rồi cộng.
-**Bài IV.3** — (1) Hiện tại hai bên hơn kém nhau bao nhiêu? — (2) Chuyển 1 quyển thì hiệu giảm mấy quyển? — (3) Muốn hiệu về 0 thì phải chuyển bao nhiêu?
-**Bài IV.4** — (1) Còn lại bao nhiêu thùng? — (2) Mỗi thùng bao nhiêu lít? — (3) Nhân hai kết quả đó.
-**Bài IV.5** — (1) Có cụm nào trong ngoặc bằng 0 không? — (2) Có hai cụm giống hệt nhau bị trừ cho nhau không? — (3) Tích có một thừa số bằng 0 thì bằng bao nhiêu?
-**Bài V.1** — (1) Phần tô màu là hiệu của những hình nào? — (2) Kích thước của hình lớn suy từ đâu? — (3) Tính từng diện tích rồi trừ.
-**Bài V.2** — (1) Ba số này có cách đều nhau không? — (2) Với ba số cách đều, số nào bằng trung bình cộng? — (3) Tìm số giữa trước rồi lùi và tiến ra hai số kia.
-**Bài V.3** — (1) Tổng số ngày công là bao nhiêu? — (2) Với số người mới thì cần bao nhiêu ngày? — (3) Lấy số ngày cũ trừ số ngày mới.
-**Bài V.4** — (1) Mỗi phân số còn thiếu bao nhiêu nữa thì bằng 1? — (2) Phân số nào thiếu ít hơn? — (3) Thiếu ít hơn thì lớn hơn.
-**Bài V.5** — (1) Tàu qua hết cầu tính từ lúc nào tới lúc nào? — (2) Vậy quãng đường gồm chiều dài cầu và thêm cái gì nữa? — (3) Đổi vận tốc về mét trên giây trước khi chia.
+**Bài IV.1** — (1) Biểu thức có dấu ngoặc không? — (2) Có thừa số chung ở hai tích không? — (3) Làm nhân chia trước, cộng trừ sau.
+**Bài IV.2** — (1) Đi một vòng là đi hết đại lượng nào? — (2) Phần diện tích dôi ra có hình dạng gì? — (3) Tăng cả hai chiều thì phần dôi gồm mấy mảnh?
+**Bài IV.3** — (1) Một cái loại đắt bằng mấy cái loại rẻ? — (2) Nếu đổi hết về loại rẻ thì tất cả là bao nhiêu cái? — (3) Chia tổng tiền cho số ấy, rồi nhân ngược lên cho loại đắt.
+**Bài IV.4** — (1) Đề cho hai đại lượng nào và hỏi đại lượng nào? — (2) Viết công thức tương ứng. — (3) Kiểm tra đơn vị có khớp nhau không.
+**Bài IV.5** — (1) Đại lượng nào ứng với 100% ở ý này? — (2) Tỉ lệ này tính trên cả lớp hay chỉ trên số nam? — (3) Muốn quy về cả lớp thì chia cho sĩ số rồi nhân 100.
+**Bài V.1** — (1) Vẽ hình sau khi ghép hoặc cắt. — (2) Đường bao của hình mới gồm những cạnh nào? — (3) Cạnh nào bị dán vào trong thì không tính.
+**Bài V.2** — (1) Một hộp lớn bằng bao nhiêu hộp nhỏ? — (2) Đổi cả đơn hàng về hộp nhỏ thì được bao nhiêu hộp? — (3) Đề hỏi giá mấy loại? Đổi ngược đủ chừng ấy loại.
+**Bài V.3** — (1) Đổi tất cả về ki-lô-gam. — (2) Chia cho sức chở mỗi xe. — (3) Còn dư thì có cần thêm xe không?
+**Bài V.4** — (1) Lượng muối ban đầu bằng bao nhiêu? — (2) Đổ thêm nước thì lượng muối có đổi không? — (3) Nồng độ = lượng muối chia khối lượng dung dịch rồi nhân 100.
+**Bài V.5** — (1) Điều kiện của đề ràng buộc hàng nào? — (2) Chọn hàng ấy trước thì còn bao nhiêu cách cho hai hàng kia? — (3) Nhớ trừ đi vì ba chữ số phải khác nhau.
 
 ---
 
@@ -757,16 +763,16 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | III.3 | Hình tròn bán kính 5 cm. Tính diện tích. | 78,5 cm² |
 | III.4 | Số lớn hơn số bé 24, số bé bằng 1 phần 3 số lớn. Tìm hai số. | 12 và 36 |
 | III.5 | Tìm x: (x + 12) × 5 − 8 = 132 | x = 16 |
-| IV.1 | Lớp 40 bạn, nam chiếm 50%, trong đó 20% giỏi. Mấy bạn nam giỏi? | 4 bạn |
-| IV.2 | Hình chữ nhật 10 cm × 5 cm, tăng chiều dài thêm 3 cm. Diện tích tăng bao nhiêu? | 15 cm² |
-| IV.3 | Tổ Một có 30 quyển, tổ Hai có 20 quyển. Chuyển mấy quyển để bằng nhau? | 5 quyển |
-| IV.4 | Có 10 thùng dầu, mỗi thùng 20 lít, đã bán 3 thùng. Còn bao nhiêu lít? | 140 lít |
-| IV.5 | Tính nhanh: 1 234 × 567 × (89 − 89) | 0 |
-| V.1 | Hình tròn bán kính 5 cm nội tiếp hình vuông. Diện tích phần ngoài hình tròn bằng bao nhiêu? | 21,5 cm² |
-| V.2 | Ba số cách đều có tổng 60, hơn kém nhau 4. Tìm ba số. | 16, 20, 24 |
-| V.3 | 6 người làm xong trong 10 ngày. Thêm 4 người thì sớm hơn mấy ngày? | 4 ngày |
-| V.4 | So sánh: 5 phần 6 … 7 phần 8 | < |
-| V.5 | Tàu dài 150 m chạy 54 km/giờ qua cầu dài 300 m. Tính thời gian qua hết cầu. | 30 giây |
+| IV.1 | Tính: (1 phần 2 + 1 phần 3) × 6 phần 5 | 1 |
+| IV.2 | Hình chữ nhật 10 m × 5 m, tăng chiều dài 3 m. Diện tích tăng bao nhiêu? | 15 m² |
+| IV.3 | Mua 4 quyển sách và 6 quyển vở hết 216 000 đồng. Một quyển sách bằng giá 3 quyển vở. Tính giá một quyển vở. | 12 000 đồng |
+| IV.4 | Đi 120 km hết 3 giờ. Vận tốc là bao nhiêu? | 40 km/giờ |
+| IV.5 | Lớp 40 bạn, nam chiếm 50%, trong đó 20% giỏi. Mấy bạn nam giỏi? | 4 bạn |
+| V.1 | Ghép 3 hình vuông cạnh 4 cm thành hàng. Chu vi hình chữ nhật là bao nhiêu? | 32 cm |
+| V.2 | Mua 2 hộp lớn, 3 hộp vừa, 4 hộp nhỏ hết 260 000 đồng. Một hộp vừa bằng 2 hộp nhỏ, một hộp lớn bằng 3 hộp vừa. Tính giá hộp nhỏ. | 10 000 đồng |
+| V.3 | 3 tấn 4 tạ 50 kg = … kg | 3 450 kg |
+| V.4 | 200 g nước muối 10%, đổ thêm 200 g nước. Nồng độ mới bằng bao nhiêu? | 5% |
+| V.5 | Từ các chữ số 1, 2, 3, 4 lập được bao nhiêu số chẵn có ba chữ số khác nhau? | 12 số |
 
 ---
 

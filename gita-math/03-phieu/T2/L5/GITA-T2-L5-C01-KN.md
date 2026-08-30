@@ -42,10 +42,10 @@ Phiếu lời giải và phân tích chuyên sâu đi kèm: `GITA-T2-L5-C01-KN-G
 Họ và tên: ......................................... Lớp: ......... Điểm: ......../100
 
 > **KIẾN THỨC NỀN CỦA CHƯƠNG**
-> 1. Cấu tạo thập phân, hiệu hai số
-> 2. Quy tắc làm tròn, giá trị hàng
-> 3. Dãy số cách đều, dấu hiệu chia hết
-> 4. Đếm số hạng dãy cách đều, cấu tạo số
+> 1. Cấu tạo thập phân; dấu hiệu chia hết; đếm có hệ thống
+> 2. Cấu tạo thập phân, hiệu hai số
+> 3. Quy tắc làm tròn, giá trị hàng
+> 4. Quy tắc nhân trong phép đếm, điều kiện chữ số đứng đầu
 
 ---
 

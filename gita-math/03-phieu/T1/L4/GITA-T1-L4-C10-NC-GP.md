@@ -55,10 +55,10 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần IV**
 
 - **Bài IV.1** — a) 16 quyển · b) 54 quyển · c) 6 quyển · d) 11 quyển · e) 30 quyển · f) 42 quyển
-- **Bài IV.2** — a) 43 · b) 21, 42, 63, 84 · c) 81 · d) 96 · e) 72
-- **Bài IV.3** — a) 21 · b) 14 · c) 25 · d) 52 · e) 60
-- **Bài IV.4** — a) 40 phần 9 giờ · b) 2 giờ 40 phút · c) 30 phần 11 giờ · d) 1 giờ 12 phút · e) 4 giờ
-- **Bài IV.5** — a) Tuấn học cầu lông; Hà học bóng đá; Đức học bóng rổ · b) Bình học đàn; Thảo học múa; Khánh học hát · c) Phúc học bơi; Lan học vẽ; Sơn học cờ vua · d) An học tin học; Ngọc học tiếng Anh; Nam học mĩ thuật · e) Dũng học hát; Vy học đàn; Sơn học múa
+- **Bài IV.2** — a) 20 phần 11 giờ · b) 4 giờ · c) 12 phần 7 giờ · d) 30 phần 7 giờ · e) 20 phần 7 giờ
+- **Bài IV.3** — a) 81 · b) 54 · c) 41 · d) 27 · e) 12, 24, 36, 48
+- **Bài IV.4** — a) 1 200 000 đồng · b) 960 000 đồng · c) 240 000 đồng · d) 910 000 đồng · e) 500 000 đồng
+- **Bài IV.5** — a) Bình học đàn; Thảo học múa; Khánh học hát · b) Phúc học bơi; Lan học vẽ; Sơn học cờ vua · c) An học tin học; Ngọc học tiếng Anh; Nam học mĩ thuật · d) Dũng học hát; Vy học đàn; Sơn học múa
 
 **Phần V**
 
@@ -404,53 +404,7 @@ Kết quả: **16 quyển**.
 
 *Điểm chốt:* Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển.
 
-### Bài IV.2 — Đặt chữ thay chữ số rồi lập luận
-
-> **BẪY — Quên chữ số hàng cao nhất khác 0.**
-
-**Các bước giải**
-
-Viết cấu tạo số theo chữ: số ab bằng a × 10 + b, số ba bằng b × 10 + a. Đây là bước quyết định của phương pháp.
-
-Hiệu hai số: (a × 10 + b) − (b × 10 + a) = a × 9 − b × 9 = (a − b) × 9.
-
-Mà hiệu ấy bằng 9, nên a − b = 9 : 9 = 1.
-
-Đề còn cho a + b = 7. Biết tổng và hiệu hai chữ số: a = (7 + 1) : 2 = 4, b = 3.
-
-Kiểm lại a khác 0 vì a là chữ số hàng chục. Số phải tìm là **43**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Viết số theo cấu tạo: số có hai chữ số ab bằng a × 10 + b. Thay vào điều kiện đề cho rồi rút gọn — thường ra một quan hệ rất gọn giữa a và b.
-
-*Điểm chốt:* Chữ số hàng cao nhất **khác 0**, và mọi chữ số chỉ nhận giá trị từ 0 đến 9. Hai ràng buộc này thường là chỗ loại bớt đáp số.
-
-*Muốn khó hơn:* Chuyển sang số có ba chữ số abc để học sinh phải viết a × 100 + b × 10 + c.
-
-*Phải chắc trước khi làm bài này:* Cấu tạo thập phân và bài toán tìm hai số biết tổng và hiệu.
-
-### Bài IV.3 — Bài toán trồng cây — bốn trường hợp
-
-> **BẪY — Bốn trường hợp trồng cây khác nhau.**
-
-**Các bước giải**
-
-Xét ý a: Trồng cây trên đoạn đường dài 42 m, hai cây liền nhau cách nhau 2 m, chỉ trồng ở một đầu đường. Cần bao nhiêu cây?
-
-Đọc vị: đây là dạng **Bài toán trồng cây**; dấu hiệu là Từ khoá “trồng cây”, “cột điện”, “quanh ao”, “hai đầu”.
-
-Kiến thức phải dùng: Quan hệ số cây – số khoảng.
-
-Cách làm: Tính số khoảng rồi chọn đúng công thức theo trường hợp.
-
-Lối tắt: Khép kín thì số cây bằng đúng số khoảng — không cộng, không trừ.
-
-Kết quả: **21**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Số khoảng = độ dài : khoảng cách. Từ số khoảng suy ra số cây: trồng cả hai đầu thì số cây hơn số khoảng 1; trồng một đầu thì bằng số khoảng; không trồng đầu nào thì kém số khoảng 1; trồng khép kín (quanh ao, quanh sân) thì bằng đúng số khoảng.
-
-*Điểm chốt:* Đọc kĩ **có trồng ở hai đầu hay không** — bốn trường hợp cho bốn đáp số khác nhau.
-
-### Bài IV.4 — Hai vòi nước, hai người cùng làm
+### Bài IV.2 — Hai vòi nước, hai người cùng làm
 
 > **BẪY — Cộng thời gian thay vì cộng năng suất.**
 
@@ -458,15 +412,15 @@ Kết quả: **21**.
 
 Coi cả bể là 1 đơn vị công việc.
 
-Bước 1 — mỗi giờ vòi thứ nhất chảy được 1 phần 10 bể, vòi thứ hai chảy được 1 phần 8 bể.
+Bước 1 — mỗi giờ vòi thứ nhất chảy được 1 phần 2 bể, vòi thứ hai chảy được 1 phần 20 bể.
 
-Bước 2 — mỗi giờ cả hai vòi chảy được 1 phần 10 + 1 phần 8 = 9 phần 40 bể.
+Bước 2 — mỗi giờ cả hai vòi chảy được 1 phần 2 + 1 phần 20 = 11 phần 20 bể.
 
-Bước 3 — thời gian đầy bể: 1 : 9 phần 40 = 40 phần 9 giờ = 40 phần 9 giờ.
+Bước 3 — thời gian đầy bể: 1 : 11 phần 20 = 20 phần 11 giờ = 20 phần 11 giờ.
 
-Kiểm tra nhanh: kết quả phải bé hơn 8 giờ ✓
+Kiểm tra nhanh: kết quả phải bé hơn 2 giờ ✓
 
-Đáp số: **40 phần 9 giờ**.
+Đáp số: **20 phần 11 giờ**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Không cộng thời gian, mà cộng **năng suất một giờ**. Người xong trong a giờ thì mỗi giờ làm được 1 phần a công việc. Thời gian làm chung bằng 1 chia cho tổng năng suất.
 
@@ -476,19 +430,69 @@ Kiểm tra nhanh: kết quả phải bé hơn 8 giờ ✓
 
 *Phải chắc trước khi làm bài này:* Cộng phân số khác mẫu và chia một số cho một phân số.
 
+### Bài IV.3 — Đặt chữ thay chữ số rồi lập luận
+
+> **BẪY — Quên chữ số hàng cao nhất khác 0.**
+
+**Các bước giải**
+
+Xét ý a: Tìm mọi số có hai chữ số mà số đó bằng 9 lần tổng hai chữ số của nó.
+
+Đọc vị: đây là dạng **Dùng chữ thay số**; dấu hiệu là Đề viết số bằng chữ hoặc bằng dấu sao và cho quan hệ giữa các chữ số.
+
+Kiến thức phải dùng: Cấu tạo thập phân của số; tổng – hiệu.
+
+Cách làm: Viết cấu tạo số theo chữ, thay vào điều kiện rồi rút gọn.
+
+Lối tắt: Đổi chỗ hai chữ số của số có hai chữ số thì hiệu luôn là bội của 9.
+
+Kết quả: **81**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Viết số theo cấu tạo: số có hai chữ số ab bằng a × 10 + b. Thay vào điều kiện đề cho rồi rút gọn — thường ra một quan hệ rất gọn giữa a và b.
+
+*Điểm chốt:* Chữ số hàng cao nhất **khác 0**, và mọi chữ số chỉ nhận giá trị từ 0 đến 9. Hai ràng buộc này thường là chỗ loại bớt đáp số.
+
+*Muốn khó hơn:* Chuyển sang số có ba chữ số abc để học sinh phải viết a × 100 + b × 10 + c.
+
+*Phải chắc trước khi làm bài này:* Cấu tạo thập phân và bài toán tìm hai số biết tổng và hiệu.
+
+### Bài IV.4 — Tính tiền vé cho cả gia đình
+
+> **BẪY — Dùng cả dữ kiện thừa.**
+
+**Các bước giải**
+
+Đọc kỹ câu hỏi: đề hỏi **tiền vé**, không hỏi gì về quãng đường. Con số 91 km là **dữ kiện thừa** — đề thật luôn có, và biết bỏ qua nó mới là đọc đề đúng.
+
+Giá vé trẻ em: 160 000 : 2 = 80 000 (đồng).
+
+Tiền vé người lớn: 5 × 160 000 = 800 000 (đồng).
+
+Tiền vé trẻ em: 5 × 80 000 = 400 000 (đồng).
+
+Cả gia đình: 800 000 + 400 000 = **1 200 000 đồng**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Tìm giá vé trẻ em trước, rồi tính riêng từng loại vé, cuối cùng mới cộng. Mỗi câu đều có một dữ kiện không dùng tới — nhận ra nó là một phần của bài.
+
+*Điểm chốt:* Đề thật luôn có dữ kiện thừa. Dùng nhầm nó là mất trọn bài.
+
+*Muốn khó hơn:* Thêm mức giảm giá cho đoàn từ năm người trở lên.
+
+*Phải chắc trước khi làm bài này:* Nhân chia số tròn nghìn và kỹ năng gạch chân câu hỏi.
+
 ### Bài IV.5 — Ghép người với môn bằng bảng đúng – sai
 
 **Các bước giải**
 
-Kẻ bảng ba dòng (Tuấn, Hà, Đức) và ba cột (bóng đá, cầu lông, bóng rổ). Mỗi ô ghi ✓ nếu chắc chắn đúng, × nếu chắc chắn sai.
+Kẻ bảng ba dòng (Bình, Thảo, Khánh) và ba cột (hát, múa, đàn). Mỗi ô ghi ✓ nếu chắc chắn đúng, × nếu chắc chắn sai.
 
-Manh mối thứ nhất cho hai dấu ×: dòng Tuấn bị gạch ở cột bóng đá và cột bóng rổ.
+Manh mối thứ nhất cho hai dấu ×: dòng Bình bị gạch ở cột múa và cột hát.
 
-Dòng Tuấn chỉ còn một ô trống, nên ô ấy là ✓: **Tuấn học cầu lông**. Đây là bước hay bị quên tiếp theo — đã có ✓ thì phải gạch × cho cả **cột** cầu lông ở hai dòng còn lại.
+Dòng Bình chỉ còn một ô trống, nên ô ấy là ✓: **Bình học đàn**. Đây là bước hay bị quên tiếp theo — đã có ✓ thì phải gạch × cho cả **cột** đàn ở hai dòng còn lại.
 
-Manh mối thứ hai: dòng Hà bị gạch ở cột bóng rổ. Cột cầu lông cũng đã gạch, nên dòng Hà chỉ còn một ô: **Hà học bóng đá**.
+Manh mối thứ hai: dòng Thảo bị gạch ở cột hát. Cột đàn cũng đã gạch, nên dòng Thảo chỉ còn một ô: **Thảo học múa**.
 
-Còn lại **Đức học bóng rổ**. Thử lại cả hai manh mối đều đúng.
+Còn lại **Khánh học hát**. Thử lại cả hai manh mối đều đúng.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Mỗi dòng một người, mỗi cột một khả năng. Đánh × cho điều chắc chắn sai. Dòng nào chỉ còn một ô trống thì ô ấy là ✓ — và ngay sau đó phải gạch × cho cả cột chứa ô ấy.
 
@@ -634,10 +638,10 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.4 | Bài toán hiệu – tỉ | Tỉ số, sơ đồ đoạn thẳng | Đề cho **hiệu** và **tỉ số** | Sơ đồ → hiệu số phần → giá trị một phần | Hiệu luôn chia hết cho hiệu số phần — dùng để kiểm tra đã đọc đúng tỉ số chưa. | thư viện: 356 kg, trang trại: 445 kg · hợp tác xã: 318 kg, kho A: 636 kg · cửa hàng: 228 kg, kho B: 342 kg · hợp tác xã: 124 kg, trang trại: 372 kg… |
 | III.5 | Bài toán tổng – tỉ | Tỉ số, sơ đồ đoạn thẳng, chia theo tỉ lệ | Đề cho **tổng** và **tỉ số** (phân số hoặc “gấp … lần”) | Sơ đồ phần bằng nhau → giá trị một phần → nhân | Tổng luôn chia hết cho tổng số phần — nếu không chia hết là đọc sai tỉ số. | nhóm Sao Mai: 64 cây, tổ Một: 384 cây · đội Hai: 336 cây, tổ Hai: 560 cây · đội Hai: 196 cây, tổ Hai: 294 cây · nhóm Sao Mai: 90 cây, tổ Một: 315 cây |
 | IV.1 | Chuyển đổi giữa hai đại lượng, tổng không đổi | Bất biến tổng, biến thiên hiệu | “Chuyển … từ bên này sang bên kia” | Xét đại lượng không đổi (tổng) và đại lượng đổi gấp đôi (hiệu) | Sau khi chuyển, mỗi bên bằng nửa tổng — tính nửa tổng rồi trừ là ra ngay. | 16 quyển · 54 quyển · 6 quyển · 11 quyển… |
-| IV.2 | Dùng chữ thay số | Cấu tạo thập phân của số; tổng – hiệu | Đề viết số bằng chữ hoặc bằng dấu sao và cho quan hệ giữa các chữ số | Viết cấu tạo số theo chữ, thay vào điều kiện rồi rút gọn | Đổi chỗ hai chữ số của số có hai chữ số thì hiệu luôn là bội của 9. | 43 · 21, 42, 63, 84 · 81 · 96… |
-| IV.3 | Bài toán trồng cây | Quan hệ số cây – số khoảng | Từ khoá “trồng cây”, “cột điện”, “quanh ao”, “hai đầu” | Tính số khoảng rồi chọn đúng công thức theo trường hợp | Khép kín thì số cây bằng đúng số khoảng — không cộng, không trừ. | 21 · 14 · 25 · 52… |
-| IV.4 | Công việc chung | Năng suất, cộng và chia phân số | “Làm một mình trong … giờ” đi cùng “cùng làm” | Quy công việc về 1, cộng năng suất, lấy nghịch đảo | Thời gian làm chung luôn **bé hơn** thời gian của người nhanh nhất — dùng để loại đáp số sai ngay lập tức. | 40 phần 9 giờ · 2 giờ 40 phút · 30 phần 11 giờ · 1 giờ 12 phút… |
-| IV.5 | Lập bảng | Suy luận loại trừ; đọc hiểu câu phủ định | Đề ghép **người với việc** và cho một loạt câu khẳng định hoặc phủ định | Kẻ bảng hai chiều, đánh × và ✓, mỗi ✓ kéo theo cả dòng cả cột | Bắt đầu từ người bị loại nhiều khả năng nhất — dòng ấy chốt được sớm nhất. | Tuấn học cầu lông; Hà học bóng đá; Đức học bóng rổ · Bình học đàn; Thảo học múa; Khánh học hát · Phúc học bơi; Lan học vẽ; Sơn học cờ vua · An học tin học; Ngọc học tiếng Anh; Nam học mĩ thuật… |
+| IV.2 | Công việc chung | Năng suất, cộng và chia phân số | “Làm một mình trong … giờ” đi cùng “cùng làm” | Quy công việc về 1, cộng năng suất, lấy nghịch đảo | Thời gian làm chung luôn **bé hơn** thời gian của người nhanh nhất — dùng để loại đáp số sai ngay lập tức. | 20 phần 11 giờ · 4 giờ · 12 phần 7 giờ · 30 phần 7 giờ… |
+| IV.3 | Dùng chữ thay số | Cấu tạo thập phân của số; tổng – hiệu | Đề viết số bằng chữ hoặc bằng dấu sao và cho quan hệ giữa các chữ số | Viết cấu tạo số theo chữ, thay vào điều kiện rồi rút gọn | Đổi chỗ hai chữ số của số có hai chữ số thì hiệu luôn là bội của 9. | 81 · 54 · 41 · 27… |
+| IV.4 | Bài toán giá vé và cước phí | Nhân, chia, cộng số lớn; đọc đề có dữ kiện thừa | Đề kể một tình huống đời thường và cho **nhiều số hơn mức cần** | Gạch chân câu hỏi, loại dữ kiện thừa, rồi tính từng phần | Vé trẻ em bằng nửa vé người lớn thì cả nhà tương đương (số người lớn + nửa số trẻ em) vé người lớn. | 1 200 000 đồng · 960 000 đồng · 240 000 đồng · 910 000 đồng… |
+| IV.5 | Lập bảng | Suy luận loại trừ; đọc hiểu câu phủ định | Đề ghép **người với việc** và cho một loạt câu khẳng định hoặc phủ định | Kẻ bảng hai chiều, đánh × và ✓, mỗi ✓ kéo theo cả dòng cả cột | Bắt đầu từ người bị loại nhiều khả năng nhất — dòng ấy chốt được sớm nhất. | Bình học đàn; Thảo học múa; Khánh học hát · Phúc học bơi; Lan học vẽ; Sơn học cờ vua · An học tin học; Ngọc học tiếng Anh; Nam học mĩ thuật · Dũng học hát; Vy học đàn; Sơn học múa |
 | V.1 | Giả thiết tạm | Phương pháp giả thiết tạm | Hai loại đối tượng, biết tổng số và tổng của một đại lượng khác | Giả sử đồng nhất một loại → tính phần chênh → chia cho hiệu đơn vị | Số chó = (số chân − 2 × số con) : 2 — thuộc công thức rút gọn để nhẩm. | 7 con gà, 30 con chó · 38 con gà, 34 con chó · 24 con gà, 4 con chó · 6 con gà, 39 con chó |
 | V.2 | Tổng nhiều số có ràng buộc; tổng – tỉ | Trung bình cộng của dãy cách đều; tổng – tỉ | Ba số hơn kém nhau cùng một lượng; hoặc tổng đi cùng tỉ số | Tìm số giữa trước; sau đó chia theo tỉ lệ | Tổng ba số cách đều luôn chia hết cho 3. | 55 · 48 · 62 · vì ba số cách đều nên số ở giữa là trung bình cộng… |
 | V.3 | Bài toán bất biến | Tính chẵn lẻ; tổng dãy số tự nhiên liên tiếp | Một quá trình lặp nhiều bước, hỏi trạng thái cuối | Tìm đại lượng không đổi rồi so hai đầu quá trình | Thử với n nhỏ (n = 3, 4) để đoán, rồi chứng minh bằng bất biến. | 153 · không thay đổi · 153 · giảm đi 2 lần số bé — luôn là một số chẵn… |
@@ -666,9 +670,9 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.4 | TD3, TD2 | Chia cho **hiệu số phần**, không phải tổng số phần. |
 | III.5 | TD3, TD2 | Phải tính **tổng số phần** trước khi chia. |
 | IV.1 | TD3, TD6 | Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển. |
-| IV.2 | TD1, TD4 | Chữ số hàng cao nhất **khác 0**, và mọi chữ số chỉ nhận giá trị từ 0 đến 9. Hai ràng buộc này thường là chỗ loại bớt đáp số. |
-| IV.3 | TD3, TD6 | Đọc kĩ **có trồng ở hai đầu hay không** — bốn trường hợp cho bốn đáp số khác nhau. |
-| IV.4 | TD3, TD6 | Cộng **năng suất**, tuyệt đối không cộng thời gian. |
+| IV.2 | TD3, TD6 | Cộng **năng suất**, tuyệt đối không cộng thời gian. |
+| IV.3 | TD1, TD4 | Chữ số hàng cao nhất **khác 0**, và mọi chữ số chỉ nhận giá trị từ 0 đến 9. Hai ràng buộc này thường là chỗ loại bớt đáp số. |
+| IV.4 | TD2, TD3 | Đề thật luôn có dữ kiện thừa. Dùng nhầm nó là mất trọn bài. |
 | IV.5 | TD3, TD4 | Đặt được một ✓ thì **cả dòng và cả cột** còn lại đều thành ×. Bỏ bước gạch cột là chỗ bài bị tắc giữa chừng. |
 | V.1 | TD6, TD3 | Chênh lệch chân của **một** con là 4 − 2 = 2 — đó là số chia. |
 | V.2 | TD4, TD3 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
@@ -700,9 +704,9 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 | III.4 | Dùng nhầm công thức của tổng – tỉ cho bài hiệu – tỉ. | Đọc kĩ: đề cho “tổng” hay cho “nhiều hơn”? Ghi rõ ra trước khi vẽ. |
 | III.5 | Chia tổng cho một trong hai số của tỉ số thay vì cho tổng số phần. | Vẽ sơ đồ, đếm tổng số đoạn nhỏ trên cả hai đoạn thẳng. |
 | IV.1 | Chuyển đúng bằng hiệu hai bên nên bên ít lại thành bên nhiều. | Thử lại: sau khi chuyển, cộng trừ ra hai số rồi so xem có bằng nhau không. |
-| IV.2 | Tính ra a bằng 0 rồi vẫn nhận, hoặc để một chữ số vượt quá 9. | Viết sẵn hai dòng ràng buộc lên đầu bài giải rồi mới tính. |
-| IV.3 | Máy móc cộng 1 cho mọi trường hợp. | Vẽ một đoạn ngắn với 3 khoảng để đếm thử trước khi áp dụng. |
-| IV.4 | Cộng hai khoảng thời gian rồi chia đôi. | Luôn viết dòng “Mỗi giờ vòi thứ nhất chảy được … bể” trước. |
+| IV.2 | Cộng hai khoảng thời gian rồi chia đôi. | Luôn viết dòng “Mỗi giờ vòi thứ nhất chảy được … bể” trước. |
+| IV.3 | Tính ra a bằng 0 rồi vẫn nhận, hoặc để một chữ số vượt quá 9. | Viết sẵn hai dòng ràng buộc lên đầu bài giải rồi mới tính. |
+| IV.4 | Đem quãng đường vào phép tính tiền vé. | Gạch chân câu hỏi cuối trước khi nhìn các con số. |
 | IV.5 | Đánh ✓ rồi đi tiếp luôn, không gạch × cho phần còn lại của cột. | Sau mỗi lần đặt ✓, dừng lại gạch đủ dòng và cột rồi mới đọc manh mối kế. |
 | V.1 | Chia số chân thiếu cho 4 thay vì cho hiệu số chân của hai loài. | Thử lại: nhân ngược ra tổng số chân xem có khớp không. |
 | V.2 | Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. | Nhìn ra “cách đều” trước khi đặt bút. |
@@ -732,9 +736,9 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 **Bài III.4** — (1) Đề cho tổng hay cho hiệu? — (2) Vẽ sơ đồ, phần dôi ra ứng với hiệu. — (3) Hiệu chia cho hiệu số phần ra giá trị một phần.
 **Bài III.5** — (1) Vẽ đại lượng thứ nhất mấy phần, thứ hai mấy phần? — (2) Tổng cộng có bao nhiêu phần bằng nhau? — (3) Một phần bằng bao nhiêu?
 **Bài IV.1** — (1) Hiện tại hai bên hơn kém nhau bao nhiêu? — (2) Chuyển 1 quyển thì hiệu giảm mấy quyển? — (3) Muốn hiệu về 0 thì phải chuyển bao nhiêu?
-**Bài IV.2** — (1) Số có hai chữ số ab viết theo cấu tạo là gì? — (2) Thay cấu tạo ấy vào điều kiện đề cho, rồi rút gọn. — (3) Kiểm lại: chữ số hàng chục có khác 0 không?
-**Bài IV.3** — (1) Tính số khoảng trước. — (2) Đề có nói trồng ở hai đầu, một đầu, hay khép kín? — (3) Vẽ thử một hình nhỏ để kiểm tra.
-**Bài IV.4** — (1) Mỗi giờ vòi thứ nhất chảy được mấy phần bể? — (2) Mỗi giờ cả hai vòi chảy được mấy phần bể? — (3) Lấy 1 chia cho phần chảy được trong một giờ.
+**Bài IV.2** — (1) Mỗi giờ vòi thứ nhất chảy được mấy phần bể? — (2) Mỗi giờ cả hai vòi chảy được mấy phần bể? — (3) Lấy 1 chia cho phần chảy được trong một giờ.
+**Bài IV.3** — (1) Số có hai chữ số ab viết theo cấu tạo là gì? — (2) Thay cấu tạo ấy vào điều kiện đề cho, rồi rút gọn. — (3) Kiểm lại: chữ số hàng chục có khác 0 không?
+**Bài IV.4** — (1) Đề hỏi cái gì? Gạch chân câu hỏi. — (2) Trong các con số đề cho, con số nào không liên quan tới câu hỏi? — (3) Tính giá vé trẻ em trước rồi mới cộng hai loại vé.
 **Bài IV.5** — (1) Kẻ bảng ba dòng ba cột trước đã. — (2) Manh mối nào cho biết chắc chắn một ô là sai? — (3) Dòng nào chỉ còn một ô trống thì ô ấy chính là đáp án của dòng ấy.
 **Bài V.1** — (1) Giả sử tất cả đều là gà thì có bao nhiêu chân? — (2) Số chân đó thiếu so với thực tế bao nhiêu? — (3) Mỗi con chó nhiều hơn một con gà mấy chân?
 **Bài V.2** — (1) Ba số này có cách đều nhau không? — (2) Với ba số cách đều, số nào bằng trung bình cộng? — (3) Tìm số giữa trước rồi lùi và tiến ra hai số kia.
@@ -766,9 +770,9 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | III.4 | Số lớn hơn số bé 24, số bé bằng 1 phần 3 số lớn. Tìm hai số. | 12 và 36 |
 | III.5 | Hai tổ trồng 120 cây, số cây tổ Một bằng 1 phần 2 tổ Hai. Mỗi tổ trồng mấy cây? | 40 và 80 |
 | IV.1 | Tổ Một có 30 quyển, tổ Hai có 20 quyển. Chuyển mấy quyển để bằng nhau? | 5 quyển |
-| IV.2 | Số có hai chữ số, đổi chỗ hai chữ số được số nhỏ hơn 27 đơn vị, tổng hai chữ số bằng 11. Tìm số ấy. | 74 |
-| IV.3 | Trồng cây hai bên một đoạn đường dài 20 m, cách nhau 4 m, trồng cả hai đầu, mỗi bên cần mấy cây? | 6 cây |
-| IV.4 | Vòi một đầy bể trong 4 giờ, vòi hai trong 6 giờ. Cả hai vòi mấy giờ đầy? | 2 giờ 24 phút |
+| IV.2 | Vòi một đầy bể trong 4 giờ, vòi hai trong 6 giờ. Cả hai vòi mấy giờ đầy? | 2 giờ 24 phút |
+| IV.3 | Số có hai chữ số, đổi chỗ hai chữ số được số nhỏ hơn 27 đơn vị, tổng hai chữ số bằng 11. Tìm số ấy. | 74 |
+| IV.4 | 2 người lớn và 3 trẻ em, vé người lớn 80 000 đồng, vé trẻ em bằng nửa. Tổng tiền vé là bao nhiêu? | 280 000 đồng |
 | IV.5 | An, Bình, Chi học ba môn bơi, vẽ, hát. An không học bơi và không học vẽ. Bình không học hát. Hỏi mỗi bạn học môn nào? | An học hát; Bình học vẽ; Chi học bơi |
 | V.1 | Có 10 con gà và chó, 28 chân. Có mấy con chó? | 4 con chó |
 | V.2 | Ba số cách đều có tổng 60, hơn kém nhau 4. Tìm ba số. | 16, 20, 24 |

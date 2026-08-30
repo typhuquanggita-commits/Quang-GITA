@@ -227,45 +227,44 @@ d) Đội Một có 132 quyển sách, tổ Ba có 110 quyển. Hỏi phải chu
 e) Đội Hai có 300 quyển sách, nhóm Hoa Phượng có 240 quyển. Hỏi phải chuyển bao nhiêu quyển từ đội Hai sang nhóm Hoa Phượng để số sách hai tổ bằng nhau?
 f) Đội Hai có 168 quyển sách, nhóm Sao Mai có 84 quyển. Hỏi phải chuyển bao nhiêu quyển từ đội Hai sang nhóm Sao Mai để số sách hai tổ bằng nhau?
 
-### Bài 2. (5 điểm) Đặt chữ thay chữ số rồi lập luận
-
-Câu nào cũng phải viết cấu tạo số ra trước khi tính.
-
-a) Số có hai chữ số ab. Khi đổi chỗ hai chữ số thì được số mới nhỏ hơn số cũ 9 đơn vị, và tổng hai chữ số bằng 7. Tìm số ab.
-b) Tìm mọi số có hai chữ số mà số đó bằng 7 lần tổng hai chữ số của nó.
-c) Tìm mọi số có hai chữ số mà số đó bằng 9 lần tổng hai chữ số của nó.
-d) Số có hai chữ số ab. Khi đổi chỗ hai chữ số thì được số mới nhỏ hơn số cũ 27 đơn vị, và tổng hai chữ số bằng 15. Tìm số ab.
-e) Tìm mọi số có hai chữ số mà số đó bằng 8 lần tổng hai chữ số của nó.
-
-### Bài 3. (5 điểm) Bài toán trồng cây — bốn trường hợp
-
-Tính số cây cần trồng trong mỗi trường hợp.
-
-a) Trồng cây trên đoạn đường dài 42 m, hai cây liền nhau cách nhau 2 m, chỉ trồng ở một đầu đường. Cần bao nhiêu cây?
-b) Trồng cây quanh một cái ao hình tròn có chu vi 56 m, hai cây liền nhau cách nhau 4 m. Cần bao nhiêu cây?
-c) Trồng cây trên đoạn đường dài 78 m, hai cây liền nhau cách nhau 3 m, không trồng ở cả hai đầu. Cần bao nhiêu cây?
-d) Trồng cây suốt một đoạn đường dài 306 m, hai cây liền nhau cách nhau 6 m, trồng cả ở hai đầu đường. Cần bao nhiêu cây?
-e) Trồng cây suốt một đoạn đường dài 236 m, hai cây liền nhau cách nhau 4 m, trồng cả ở hai đầu đường. Cần bao nhiêu cây?
-
-### Bài 4. (5 điểm) Hai vòi nước, hai người cùng làm
+### Bài 2. (5 điểm) Hai vòi nước, hai người cùng làm
 
 Coi cả công việc là 1 đơn vị.
 
-a) Vòi thứ nhất chảy một mình đầy bể trong 10 giờ, vòi thứ hai chảy một mình đầy bể trong 8 giờ. Mở cả hai vòi thì sau bao lâu đầy bể?
-b) Vòi thứ nhất chảy một mình đầy bể trong 8 giờ, vòi thứ hai chảy một mình đầy bể trong 4 giờ. Mở cả hai vòi thì sau bao lâu đầy bể?
-c) Vòi thứ nhất chảy một mình đầy bể trong 5 giờ, vòi thứ hai chảy một mình đầy bể trong 6 giờ. Mở cả hai vòi thì sau bao lâu đầy bể?
-d) Vòi thứ nhất chảy một mình đầy bể trong 3 giờ, vòi thứ hai chảy một mình đầy bể trong 2 giờ. Mở cả hai vòi thì sau bao lâu đầy bể?
-e) Vòi thứ nhất chảy một mình đầy bể trong 12 giờ, vòi thứ hai chảy một mình đầy bể trong 6 giờ. Mở cả hai vòi thì sau bao lâu đầy bể?
+a) Vòi thứ nhất chảy một mình đầy bể trong 2 giờ, vòi thứ hai chảy một mình đầy bể trong 20 giờ. Mở cả hai vòi thì sau bao lâu đầy bể?
+b) Vòi thứ nhất chảy một mình đầy bể trong 12 giờ, vòi thứ hai chảy một mình đầy bể trong 6 giờ. Mở cả hai vòi thì sau bao lâu đầy bể?
+c) Vòi thứ nhất chảy một mình đầy bể trong 3 giờ, vòi thứ hai chảy một mình đầy bể trong 4 giờ. Mở cả hai vòi thì sau bao lâu đầy bể?
+d) Vòi thứ nhất chảy một mình đầy bể trong 6 giờ, vòi thứ hai chảy một mình đầy bể trong 15 giờ. Mở cả hai vòi thì sau bao lâu đầy bể?
+e) Vòi thứ nhất chảy một mình đầy bể trong 10 giờ, vòi thứ hai chảy một mình đầy bể trong 4 giờ. Mở cả hai vòi thì sau bao lâu đầy bể?
+
+### Bài 3. (5 điểm) Đặt chữ thay chữ số rồi lập luận
+
+Câu nào cũng phải viết cấu tạo số ra trước khi tính.
+
+a) Tìm mọi số có hai chữ số mà số đó bằng 9 lần tổng hai chữ số của nó.
+b) Số có hai chữ số ab. Khi đổi chỗ hai chữ số thì được số mới nhỏ hơn số cũ 9 đơn vị, và tổng hai chữ số bằng 9. Tìm số ab.
+c) Số có hai chữ số ab. Khi đổi chỗ hai chữ số thì được số mới nhỏ hơn số cũ 27 đơn vị, và tổng hai chữ số bằng 5. Tìm số ab.
+d) Tìm mọi số có hai chữ số mà số đó bằng 3 lần tổng hai chữ số của nó.
+e) Tìm mọi số có hai chữ số mà số đó bằng 4 lần tổng hai chữ số của nó.
+
+### Bài 4. (5 điểm) Tính tiền vé cho cả gia đình
+
+Trước khi tính, gạch chân câu hỏi và khoanh tròn dữ kiện **không** dùng tới.
+
+a) Một gia đình gồm 5 người lớn và 5 trẻ em đi tham quan cách nhà 91 km. Vé người lớn 160 000 đồng, vé trẻ em bằng nửa vé người lớn. Hỏi cả gia đình mua vé hết bao nhiêu tiền?
+b) Một gia đình gồm 4 người lớn và 4 trẻ em đi tham quan cách nhà 73 km. Vé người lớn 160 000 đồng, vé trẻ em bằng nửa vé người lớn. Hỏi cả gia đình mua vé hết bao nhiêu tiền?
+c) Một gia đình gồm 3 người lớn và 2 trẻ em đi tham quan cách nhà 135 km. Vé người lớn 60 000 đồng, vé trẻ em bằng nửa vé người lớn. Hỏi cả gia đình mua vé hết bao nhiêu tiền?
+d) Một gia đình gồm 5 người lớn và 4 trẻ em đi tham quan cách nhà 52 km. Vé người lớn 130 000 đồng, vé trẻ em bằng nửa vé người lớn. Hỏi cả gia đình mua vé hết bao nhiêu tiền?
+e) Một gia đình gồm 3 người lớn và 4 trẻ em đi tham quan cách nhà 21 km. Vé người lớn 100 000 đồng, vé trẻ em bằng nửa vé người lớn. Hỏi cả gia đình mua vé hết bao nhiêu tiền?
 
 ### Bài 5. (5 điểm) Ghép người với môn bằng bảng đúng – sai
 
 Bắt buộc kẻ bảng ra giấy. Không được suy luận nhẩm ở bài này.
 
-a) Ba bạn Tuấn, Hà và Đức mỗi bạn học một môn năng khiếu khác nhau trong ba môn: bóng đá, cầu lông và bóng rổ. Biết rằng: Tuấn không học bóng đá và cũng không học bóng rổ; Hà không học bóng rổ. Hỏi mỗi bạn học môn nào?
-b) Ba bạn Bình, Thảo và Khánh mỗi bạn học một môn năng khiếu khác nhau trong ba môn: hát, múa và đàn. Biết rằng: Bình không học múa và cũng không học hát; Thảo không học hát. Hỏi mỗi bạn học môn nào?
-c) Ba bạn Phúc, Lan và Sơn mỗi bạn học một môn năng khiếu khác nhau trong ba môn: bơi, cờ vua và vẽ. Biết rằng: Phúc không học vẽ và cũng không học cờ vua; Lan không học cờ vua. Hỏi mỗi bạn học môn nào?
-d) Ba bạn An, Ngọc và Nam mỗi bạn học một môn năng khiếu khác nhau trong ba môn: tiếng Anh, tin học và mĩ thuật. Biết rằng: An không học tiếng Anh và cũng không học mĩ thuật; Ngọc không học mĩ thuật. Hỏi mỗi bạn học môn nào?
-e) Ba bạn Dũng, Vy và Sơn mỗi bạn học một môn năng khiếu khác nhau trong ba môn: hát, múa và đàn. Biết rằng: Dũng không học đàn và cũng không học múa; Vy không học múa. Hỏi mỗi bạn học môn nào?
+a) Ba bạn Bình, Thảo và Khánh mỗi bạn học một môn năng khiếu khác nhau trong ba môn: hát, múa và đàn. Biết rằng: Bình không học múa và cũng không học hát; Thảo không học hát. Hỏi mỗi bạn học môn nào?
+b) Ba bạn Phúc, Lan và Sơn mỗi bạn học một môn năng khiếu khác nhau trong ba môn: bơi, cờ vua và vẽ. Biết rằng: Phúc không học vẽ và cũng không học cờ vua; Lan không học cờ vua. Hỏi mỗi bạn học môn nào?
+c) Ba bạn An, Ngọc và Nam mỗi bạn học một môn năng khiếu khác nhau trong ba môn: tiếng Anh, tin học và mĩ thuật. Biết rằng: An không học tiếng Anh và cũng không học mĩ thuật; Ngọc không học mĩ thuật. Hỏi mỗi bạn học môn nào?
+d) Ba bạn Dũng, Vy và Sơn mỗi bạn học một môn năng khiếu khác nhau trong ba môn: hát, múa và đàn. Biết rằng: Dũng không học đàn và cũng không học múa; Vy không học múa. Hỏi mỗi bạn học môn nào?
 
 ---
 
@@ -430,28 +429,28 @@ f) Số lớn gấp 2 lần số bé và tổng hai số là 90. Phải thêm v�
 **Gợi ý 3 tầng:** (1) Hiện tại hai bên hơn kém nhau bao nhiêu? — (2) Chuyển 1 quyển thì hiệu giảm mấy quyển? — (3) Muốn hiệu về 0 thì phải chuyển bao nhiêu?
 
 ### Bài IV.2
-**Đáp số:** a) 43 · b) 21, 42, 63, 84 · c) 81 · d) 96 · e) 72
-**Hướng giải:** BẪY — Quên chữ số hàng cao nhất khác 0. Viết số theo cấu tạo: số có hai chữ số ab bằng a × 10 + b. Thay vào điều kiện đề cho rồi rút gọn — thường ra một quan hệ rất gọn giữa a và b.
-**Nhãn tư duy:** TD1, TD4. Điểm chốt: Chữ số hàng cao nhất **khác 0**, và mọi chữ số chỉ nhận giá trị từ 0 đến 9. Hai ràng buộc này thường là chỗ loại bớt đáp số.
-**Lỗi thường gặp:** Tính ra a bằng 0 rồi vẫn nhận, hoặc để một chữ số vượt quá 9. Phòng: Viết sẵn hai dòng ràng buộc lên đầu bài giải rồi mới tính.
-**Gợi ý 3 tầng:** (1) Số có hai chữ số ab viết theo cấu tạo là gì? — (2) Thay cấu tạo ấy vào điều kiện đề cho, rồi rút gọn. — (3) Kiểm lại: chữ số hàng chục có khác 0 không?
-
-### Bài IV.3
-**Đáp số:** a) 21 · b) 14 · c) 25 · d) 52 · e) 60
-**Hướng giải:** BẪY — Bốn trường hợp trồng cây khác nhau. Số khoảng = độ dài : khoảng cách. Từ số khoảng suy ra số cây: trồng cả hai đầu thì số cây hơn số khoảng 1; trồng một đầu thì bằng số khoảng; không trồng đầu nào thì kém số khoảng 1; trồng khép kín (quanh ao, quanh sân) thì bằng đúng số khoảng.
-**Nhãn tư duy:** TD3, TD6. Điểm chốt: Đọc kĩ **có trồng ở hai đầu hay không** — bốn trường hợp cho bốn đáp số khác nhau.
-**Lỗi thường gặp:** Máy móc cộng 1 cho mọi trường hợp. Phòng: Vẽ một đoạn ngắn với 3 khoảng để đếm thử trước khi áp dụng.
-**Gợi ý 3 tầng:** (1) Tính số khoảng trước. — (2) Đề có nói trồng ở hai đầu, một đầu, hay khép kín? — (3) Vẽ thử một hình nhỏ để kiểm tra.
-
-### Bài IV.4
-**Đáp số:** a) 40 phần 9 giờ · b) 2 giờ 40 phút · c) 30 phần 11 giờ · d) 1 giờ 12 phút · e) 4 giờ
+**Đáp số:** a) 20 phần 11 giờ · b) 4 giờ · c) 12 phần 7 giờ · d) 30 phần 7 giờ · e) 20 phần 7 giờ
 **Hướng giải:** BẪY — Cộng thời gian thay vì cộng năng suất. Không cộng thời gian, mà cộng **năng suất một giờ**. Người xong trong a giờ thì mỗi giờ làm được 1 phần a công việc. Thời gian làm chung bằng 1 chia cho tổng năng suất.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Cộng **năng suất**, tuyệt đối không cộng thời gian.
 **Lỗi thường gặp:** Cộng hai khoảng thời gian rồi chia đôi. Phòng: Luôn viết dòng “Mỗi giờ vòi thứ nhất chảy được … bể” trước.
 **Gợi ý 3 tầng:** (1) Mỗi giờ vòi thứ nhất chảy được mấy phần bể? — (2) Mỗi giờ cả hai vòi chảy được mấy phần bể? — (3) Lấy 1 chia cho phần chảy được trong một giờ.
 
+### Bài IV.3
+**Đáp số:** a) 81 · b) 54 · c) 41 · d) 27 · e) 12, 24, 36, 48
+**Hướng giải:** BẪY — Quên chữ số hàng cao nhất khác 0. Viết số theo cấu tạo: số có hai chữ số ab bằng a × 10 + b. Thay vào điều kiện đề cho rồi rút gọn — thường ra một quan hệ rất gọn giữa a và b.
+**Nhãn tư duy:** TD1, TD4. Điểm chốt: Chữ số hàng cao nhất **khác 0**, và mọi chữ số chỉ nhận giá trị từ 0 đến 9. Hai ràng buộc này thường là chỗ loại bớt đáp số.
+**Lỗi thường gặp:** Tính ra a bằng 0 rồi vẫn nhận, hoặc để một chữ số vượt quá 9. Phòng: Viết sẵn hai dòng ràng buộc lên đầu bài giải rồi mới tính.
+**Gợi ý 3 tầng:** (1) Số có hai chữ số ab viết theo cấu tạo là gì? — (2) Thay cấu tạo ấy vào điều kiện đề cho, rồi rút gọn. — (3) Kiểm lại: chữ số hàng chục có khác 0 không?
+
+### Bài IV.4
+**Đáp số:** a) 1 200 000 đồng · b) 960 000 đồng · c) 240 000 đồng · d) 910 000 đồng · e) 500 000 đồng
+**Hướng giải:** BẪY — Dùng cả dữ kiện thừa. Tìm giá vé trẻ em trước, rồi tính riêng từng loại vé, cuối cùng mới cộng. Mỗi câu đều có một dữ kiện không dùng tới — nhận ra nó là một phần của bài.
+**Nhãn tư duy:** TD2, TD3. Điểm chốt: Đề thật luôn có dữ kiện thừa. Dùng nhầm nó là mất trọn bài.
+**Lỗi thường gặp:** Đem quãng đường vào phép tính tiền vé. Phòng: Gạch chân câu hỏi cuối trước khi nhìn các con số.
+**Gợi ý 3 tầng:** (1) Đề hỏi cái gì? Gạch chân câu hỏi. — (2) Trong các con số đề cho, con số nào không liên quan tới câu hỏi? — (3) Tính giá vé trẻ em trước rồi mới cộng hai loại vé.
+
 ### Bài IV.5
-**Đáp số:** a) Tuấn học cầu lông; Hà học bóng đá; Đức học bóng rổ · b) Bình học đàn; Thảo học múa; Khánh học hát · c) Phúc học bơi; Lan học vẽ; Sơn học cờ vua · d) An học tin học; Ngọc học tiếng Anh; Nam học mĩ thuật · e) Dũng học hát; Vy học đàn; Sơn học múa
+**Đáp số:** a) Bình học đàn; Thảo học múa; Khánh học hát · b) Phúc học bơi; Lan học vẽ; Sơn học cờ vua · c) An học tin học; Ngọc học tiếng Anh; Nam học mĩ thuật · d) Dũng học hát; Vy học đàn; Sơn học múa
 **Hướng giải:** Mỗi dòng một người, mỗi cột một khả năng. Đánh × cho điều chắc chắn sai. Dòng nào chỉ còn một ô trống thì ô ấy là ✓ — và ngay sau đó phải gạch × cho cả cột chứa ô ấy.
 **Nhãn tư duy:** TD3, TD4. Điểm chốt: Đặt được một ✓ thì **cả dòng và cả cột** còn lại đều thành ×. Bỏ bước gạch cột là chỗ bài bị tắc giữa chừng.
 **Lỗi thường gặp:** Đánh ✓ rồi đi tiếp luôn, không gạch × cho phần còn lại của cột. Phòng: Sau mỗi lần đặt ✓, dừng lại gạch đủ dòng và cột rồi mới đọc manh mối kế.

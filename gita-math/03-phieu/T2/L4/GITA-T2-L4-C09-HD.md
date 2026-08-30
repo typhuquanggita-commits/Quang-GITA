@@ -62,7 +62,7 @@ Học thuộc theo cặp **dạng bài – công thức**, không học rời.
 | 7 | Tổng nhiều số có ràng buộc; tổng – tỉ | Trung bình cộng của dãy cách đều; tổng – tỉ |
 | 8 | Tổng – tỉ có tỉ số thay đổi | Tổng – tỉ, đại lượng không đổi |
 | 9 | Tổng – tỉ, hiệu – tỉ dạng ẩn | Tỉ số, sơ đồ đoạn thẳng, dịch lời văn thành số |
-| 10 | Công việc chung | Năng suất, cộng và chia phân số |
+| 10 | Bài toán giá vé và cước phí | Nhân, chia, cộng số lớn; đọc đề có dữ kiện thừa |
 | 11 | Giả thiết tạm | Phương pháp giả thiết tạm |
 | 12 | Tìm phân số của một số, nhiều bước | Tìm phân số của một số |
 | 13 | Rút về đơn vị | Đại lượng tỉ lệ thuận, phép chia và phép nhân |
@@ -107,7 +107,7 @@ Trước khi tra bảng, đi qua cây quyết định đọc vị của nhóm ch
 | Tổng nhiều số có ràng buộc; tổng – tỉ | Ba số hơn kém nhau cùng một lượng; hoặc tổng đi cùng tỉ số | Tìm số giữa trước; sau đó chia theo tỉ lệ | Tổng ba số cách đều luôn chia hết cho 3. |
 | Tổng – tỉ có tỉ số thay đổi | “Phải thêm (bớt) bao nhiêu để tỉ số trở thành …” | Xác định đại lượng bất biến → tính lại đại lượng kia | Số cần thêm = số bé × (tỉ số mới − tỉ số cũ). |
 | Tổng – tỉ, hiệu – tỉ dạng ẩn | Đề mô tả vòng thay vì cho số: “nếu … thì …”, “chia thành … phần” | Dịch dữ kiện ẩn thành số rồi áp dạng chuẩn | Kẻ sẵn ba dòng Tổng – Hiệu – Tỉ số, điền được hai dòng là giải được. |
-| Công việc chung | “Làm một mình trong … giờ” đi cùng “cùng làm” | Quy công việc về 1, cộng năng suất, lấy nghịch đảo | Thời gian làm chung luôn **bé hơn** thời gian của người nhanh nhất — dùng để loại đáp số sai ngay lập tức. |
+| Bài toán giá vé và cước phí | Đề kể một tình huống đời thường và cho **nhiều số hơn mức cần** | Gạch chân câu hỏi, loại dữ kiện thừa, rồi tính từng phần | Vé trẻ em bằng nửa vé người lớn thì cả nhà tương đương (số người lớn + nửa số trẻ em) vé người lớn. |
 | Giả thiết tạm | Hai loại đối tượng, biết tổng số và tổng của một đại lượng khác | Giả sử đồng nhất một loại → tính phần chênh → chia cho hiệu đơn vị | Số chó = (số chân − 2 × số con) : 2 — thuộc công thức rút gọn để nhẩm. |
 | Tìm phân số của một số, nhiều bước | Cụm “… số còn lại”, “… số đó” | Tính tuần tự, sau mỗi bước ghi lại số còn lại | Còn lại sau ngày đầu là (1 − phân số) của tổng; nhân trực tiếp cho nhanh. |
 | Rút về đơn vị | Cho giá trị của một nhóm, hỏi giá trị của nhóm khác cùng loại | Chia để rút về một đơn vị rồi nhân | Nếu số bao mới gấp đôi số bao cũ thì khối lượng cũng gấp đôi — dùng tỉ số để bỏ qua bước chia. |
@@ -148,8 +148,8 @@ Trả lời được ngay trong 10 giây thì đánh ✔. Phải nghĩ lâu thì
 - [ ] **16.** Em nhớ công thức: Tổng – tỉ, đại lượng không đổi?
 - [ ] **17.** Em nêu được dấu hiệu nhận biết của dạng “Tổng – tỉ, hiệu – tỉ dạng ẩn” chứ?
 - [ ] **18.** Em nhớ công thức: Tỉ số, sơ đồ đoạn thẳng, dịch lời văn thành số?
-- [ ] **19.** Em nêu được dấu hiệu nhận biết của dạng “Công việc chung” chứ?
-- [ ] **20.** Em nhớ công thức: Năng suất, cộng và chia phân số?
+- [ ] **19.** Em nêu được dấu hiệu nhận biết của dạng “Bài toán giá vé và cước phí” chứ?
+- [ ] **20.** Em nhớ công thức: Nhân, chia, cộng số lớn; đọc đề có dữ kiện thừa?
 
 **Chuẩn đạt:** ✔ từ 18/20 câu trở lên.
 
@@ -170,7 +170,7 @@ Trả lời được ngay trong 10 giây thì đánh ✔. Phải nghĩ lâu thì
 | 7 | Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. | Nhìn ra “cách đều” trước khi đặt bút. |
 | 8 | Lấy hiệu hai tỉ số nhân với tổng ban đầu. | Viết rõ ba dòng: số bé, số lớn cũ, số lớn mới. |
 | 9 | Lao vào tính khi chưa xác định được tổng, hiệu hay tỉ số. | Viết ba dòng trước khi tính: Tổng = … ; Hiệu = … ; Tỉ số = … ; dòng nào chưa biết thì để trống và đi tìm. |
-| 10 | Cộng hai khoảng thời gian rồi chia đôi. | Luôn viết dòng “Mỗi giờ vòi thứ nhất chảy được … bể” trước. |
+| 10 | Đem quãng đường vào phép tính tiền vé. | Gạch chân câu hỏi cuối trước khi nhìn các con số. |
 | 11 | Chia số chân thiếu cho 4 thay vì cho hiệu số chân của hai loài. | Thử lại: nhân ngược ra tổng số chân xem có khớp không. |
 | 12 | Lấy cả hai phân số nhân với tổng ban đầu. | Sau mỗi bước, viết rõ “còn lại … kg” rồi mới sang bước sau. |
 | 13 | Nhân ngay hai số đã cho mà bỏ qua bước chia. | Viết rõ câu “Một bao nặng … kg” trước khi làm bước hai. |

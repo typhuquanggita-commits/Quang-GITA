@@ -220,57 +220,58 @@ d) Lớp 3A có 25 học sinh, số học sinh giỏi chiếm 50%. Hỏi lớp �
 
 ## PHẦN IV — BÀI PHÂN HOÁ · Mức M4 — Vận dụng cao · 20 phút · 25 điểm
 
-### Bài 1. (5 điểm) Tỉ số diện tích hai tam giác chung chiều cao
-
-Dùng nhận xét về chiều cao chung.
-
-a) Tam giác ABC có diện tích 354 cm². Điểm M nằm trên cạnh BC sao cho BM gấp 2 phần và MC gấp 4 phần bằng nhau. Tính diện tích tam giác ABM.
-b) Tam giác ABC có diện tích 363 cm². Điểm M nằm trên cạnh BC sao cho BM gấp 5 phần và MC gấp 6 phần bằng nhau. Tính diện tích tam giác ABM.
-c) Tam giác ABC có diện tích 315 cm². Điểm M nằm trên cạnh BC sao cho BM gấp 6 phần và MC gấp 1 phần bằng nhau. Tính diện tích tam giác ABM.
-d) Tam giác ABC có diện tích 96 cm². Điểm M nằm trên cạnh BC sao cho BM gấp 2 phần và MC gấp 6 phần bằng nhau. Tính diện tích tam giác ABM.
-e) Tam giác ABC có diện tích 176 cm². Điểm M nằm trên cạnh BC sao cho BM gấp 5 phần và MC gấp 6 phần bằng nhau. Tính diện tích tam giác ABM.
-f) Tam giác ABC có diện tích 63 cm². Điểm M nằm trên cạnh BC sao cho BM gấp 6 phần và MC gấp 1 phần bằng nhau. Tính diện tích tam giác ABM.
-
-### Bài 2. (5 điểm) Chuyển động trên dòng nước
-
-Câu nào cũng ghi rõ đang dùng công thức xuôi dòng hay ngược dòng.
-
-a) Một ca nô có vận tốc thực 26 km/giờ đi trên sông có vận tốc dòng nước 4 km/giờ. Tính quãng đường ca nô đi được trong 4 giờ khi xuôi dòng và khi ngược dòng.
-b) Một ca nô xuôi dòng với vận tốc 32 km/giờ và ngược dòng với vận tốc 20 km/giờ. Tính vận tốc thực của ca nô và vận tốc dòng nước.
-c) Một ca nô có vận tốc thực 28 km/giờ đi trên sông có vận tốc dòng nước 6 km/giờ. Tính quãng đường ca nô đi được trong 4 giờ khi xuôi dòng và khi ngược dòng.
-d) Một ca nô xuôi dòng với vận tốc 19 km/giờ và ngược dòng với vận tốc 13 km/giờ. Tính vận tốc thực của ca nô và vận tốc dòng nước.
-
-### Bài 3. (5 điểm) Diện tích thay đổi khi kích thước thay đổi
-
-Vẽ hình minh hoạ phần tăng thêm.
-
-a) Hình chữ nhật dài 38 cm, rộng 12 cm. Nếu tăng chiều dài thêm 6 cm (giữ nguyên chiều rộng) thì diện tích tăng thêm bao nhiêu?
-b) Hình chữ nhật dài 45 cm, rộng 12 cm. Nếu tăng cả chiều dài và chiều rộng thêm 2 cm thì diện tích tăng thêm bao nhiêu?
-c) Hình chữ nhật dài 8 cm, rộng 5 cm. Nếu tăng cả chiều dài và chiều rộng thêm 7 cm thì diện tích tăng thêm bao nhiêu?
-d) Hình chữ nhật dài 46 cm, rộng 43 cm. Nếu gấp đôi chiều dài và giữ nguyên chiều rộng thì diện tích mới gấp mấy lần diện tích cũ?
-
-### Bài 4. (5 điểm) Hình chữ nhật — tổng hợp chu vi, diện tích và chuyển động
-
-Bài nhiều ý nối tiếp, ý sau dùng kết quả ý trước.
-
-a) Hình chữ nhật có chiều dài 17 m, chiều rộng 12 m. Tính chu vi.
-b) Tính diện tích hình chữ nhật đó.
-c) Một người đi bộ quanh hình chữ nhật ấy với vận tốc 4 m/giây. Hỏi đi hết một vòng mất bao nhiêu giây?
-d) Nếu tăng chiều dài thêm 6 m thì diện tích tăng thêm bao nhiêu?
-e) Khi đó chu vi tăng thêm bao nhiêu mét?
-f) Nếu tăng cả chiều dài và chiều rộng thêm 6 m thì diện tích mới bằng bao nhiêu?
-g) Diện tích tăng thêm khi tăng cả hai chiều bằng bao nhiêu?
-
-### Bài 5. (5 điểm) Khối lập phương sơn màu
+### Bài 1. (5 điểm) Khối lập phương sơn màu
 
 Tưởng tượng khối lớn và xét theo vị trí: góc, cạnh, mặt, trong lõi.
 
-a) Một khối lập phương lớn ghép từ 6 × 6 × 6 khối lập phương nhỏ. Hỏi có tất cả bao nhiêu khối nhỏ?
+a) Một khối lập phương lớn ghép từ 3 × 3 × 3 khối lập phương nhỏ. Hỏi có tất cả bao nhiêu khối nhỏ?
 b) Sơn toàn bộ mặt ngoài khối lớn. Có bao nhiêu khối nhỏ được sơn 3 mặt?
 c) Có bao nhiêu khối nhỏ được sơn 2 mặt?
 d) Có bao nhiêu khối nhỏ được sơn 1 mặt?
 e) Có bao nhiêu khối nhỏ không được sơn mặt nào?
 f) Cộng bốn loại trên lại có bằng tổng số khối nhỏ không?
+
+### Bài 2. (5 điểm) Giá sau khuyến mãi
+
+Ghi rõ mỗi lần giảm được tính trên giá nào.
+
+a) Một chiếc balo giá niêm yết 540 000 đồng, cửa hàng giảm 20%. Hỏi giá sau khi giảm là bao nhiêu?
+b) Một bộ sách tham khảo giá niêm yết 320 000 đồng. Cửa hàng giảm 20%, sau đó giảm tiếp 20% trên giá đã giảm. Hỏi giá cuối cùng là bao nhiêu?
+c) Một đôi giày giá niêm yết 680 000 đồng, cửa hàng giảm 25%. Hỏi giá sau khi giảm là bao nhiêu?
+d) Một chiếc áo đồng phục giá niêm yết 250 000 đồng. Cửa hàng giảm 25%, sau đó giảm tiếp 25% trên giá đã giảm. Hỏi giá cuối cùng là bao nhiêu?
+
+### Bài 3. (5 điểm) Diện tích thay đổi khi kích thước thay đổi
+
+Vẽ hình minh hoạ phần tăng thêm.
+
+a) Hình chữ nhật dài 19 cm, rộng 7 cm. Nếu tăng cả chiều dài và chiều rộng thêm 3 cm thì diện tích tăng thêm bao nhiêu?
+b) Hình chữ nhật dài 16 cm, rộng 8 cm. Nếu gấp đôi chiều dài và giữ nguyên chiều rộng thì diện tích mới gấp mấy lần diện tích cũ?
+c) Hình chữ nhật dài 50 cm, rộng 12 cm. Nếu tăng cả chiều dài và chiều rộng thêm 2 cm thì diện tích tăng thêm bao nhiêu?
+d) Hình chữ nhật dài 8 cm, rộng 5 cm. Nếu tăng cả chiều dài và chiều rộng thêm 7 cm thì diện tích tăng thêm bao nhiêu?
+e) Hình chữ nhật dài 46 cm, rộng 43 cm. Nếu gấp đôi chiều dài và giữ nguyên chiều rộng thì diện tích mới gấp mấy lần diện tích cũ?
+f) Hình chữ nhật dài 13 cm, rộng 11 cm. Nếu tăng cả chiều dài và chiều rộng thêm 6 cm thì diện tích tăng thêm bao nhiêu?
+
+### Bài 4. (5 điểm) Tỉ số diện tích hai tam giác chung chiều cao
+
+Dùng nhận xét về chiều cao chung.
+
+a) Tam giác ABC có diện tích 301 cm². Điểm M nằm trên cạnh BC sao cho BM gấp 6 phần và MC gấp 1 phần bằng nhau. Tính diện tích tam giác ABM.
+b) Tam giác ABC có diện tích 376 cm². Điểm M nằm trên cạnh BC sao cho BM gấp 5 phần và MC gấp 3 phần bằng nhau. Tính diện tích tam giác ABM.
+c) Tam giác ABC có diện tích 70 cm². Điểm M nằm trên cạnh BC sao cho BM gấp 5 phần và MC gấp 2 phần bằng nhau. Tính diện tích tam giác ABM.
+d) Tam giác ABC có diện tích 583 cm². Điểm M nằm trên cạnh BC sao cho BM gấp 6 phần và MC gấp 5 phần bằng nhau. Tính diện tích tam giác ABM.
+e) Tam giác ABC có diện tích 112 cm². Điểm M nằm trên cạnh BC sao cho BM gấp 2 phần và MC gấp 6 phần bằng nhau. Tính diện tích tam giác ABM.
+
+### Bài 5. (5 điểm) Hình chữ nhật — tổng hợp chu vi, diện tích và chuyển động
+
+Bài nhiều ý nối tiếp, ý sau dùng kết quả ý trước.
+
+a) Hình chữ nhật có chiều dài 50 m, chiều rộng 13 m. Tính chu vi.
+b) Tính diện tích hình chữ nhật đó.
+c) Một người đi bộ quanh hình chữ nhật ấy với vận tốc 4 m/giây. Hỏi đi hết một vòng mất bao nhiêu giây?
+d) Nếu tăng chiều dài thêm 8 m thì diện tích tăng thêm bao nhiêu?
+e) Khi đó chu vi tăng thêm bao nhiêu mét?
+f) Nếu tăng cả chiều dài và chiều rộng thêm 8 m thì diện tích mới bằng bao nhiêu?
+g) Diện tích tăng thêm khi tăng cả hai chiều bằng bao nhiêu?
 
 ---
 
@@ -438,39 +439,39 @@ f) Cột 6 — Kết quả?
 **Lỗi thường gặp:** Lấy số học sinh giỏi làm mẫu số khi tính tỉ số phần trăm. Phòng: Viết rõ một dòng: “Cả lớp = 100%” trước khi tính.
 
 ### Bài IV.1
-**Đáp số:** a) 118 cm² · b) 165 cm² · c) 270 cm² · d) 24 cm² · e) 80 cm² · f) 54 cm²
-**Hướng giải:** Hai tam giác ABM và ACM có **chung chiều cao** hạ từ A xuống BC. Diện tích của chúng tỉ lệ thuận với hai đáy BM và MC. Vì vậy diện tích tam giác ABM bằng diện tích tam giác ABC nhân với tỉ số BM trên BC.
-**Nhãn tư duy:** TD6, TD3. Điểm chốt: Chung chiều cao thì diện tích **tỉ lệ với đáy** — không cần biết chiều cao là bao nhiêu.
-**Lỗi thường gặp:** Đi tìm chiều cao cụ thể trong khi đề không cho. Phòng: Đọc lại: hai tam giác có chung đỉnh nào, chung chiều cao xuống cạnh nào?
-**Gợi ý 3 tầng:** (1) Hai tam giác có chung đỉnh nào? — (2) Chiều cao hạ từ đỉnh đó xuống BC có chung không? — (3) Diện tích tỉ lệ thuận với đáy.
+**Đáp số:** a) 27 · b) 8 · c) 12 · d) 6 · e) 1 · f) có, 8 + 12 + 6 + 1 = 27
+**Hướng giải:** BẪY — Đếm trùng khối ở đỉnh và ở cạnh. Phân loại khối nhỏ theo **vị trí**: ở đỉnh sơn 3 mặt, ở cạnh sơn 2 mặt, ở giữa mặt sơn 1 mặt, ở trong lõi không sơn. Bốn loại cộng lại phải đúng bằng tổng số khối — đó là cách tự kiểm tra.
+**Nhãn tư duy:** TD6, TD4. Điểm chốt: Phân loại theo vị trí, và **cộng bốn loại lại để thử**.
+**Lỗi thường gặp:** Đếm cả khối ở đỉnh vào nhóm khối ở cạnh, thành ra đếm trùng. Phòng: Trừ hai đầu mỗi cạnh khi đếm khối sơn 2 mặt.
+**Gợi ý 3 tầng:** (1) Khối ở đỉnh có mấy mặt lộ ra ngoài? — (2) Mỗi cạnh có bao nhiêu khối không nằm ở đỉnh? — (3) Cộng bốn loại lại xem có bằng tổng số khối không.
 
 ### Bài IV.2
-**Đáp số:** a) xuôi dòng 120 km; ngược dòng 88 km · b) vận tốc thực 26 km/giờ; dòng nước 6 km/giờ · c) xuôi dòng 136 km; ngược dòng 88 km · d) vận tốc thực 16 km/giờ; dòng nước 3 km/giờ
-**Hướng giải:** BẪY — Nhầm vận tốc thực với vận tốc xuôi dòng. Xuôi dòng thì dòng nước đẩy thêm nên cộng; ngược dòng thì dòng nước cản lại nên trừ. Biết cả hai vận tốc xuôi và ngược thì đây chính là bài tổng – hiệu: vận tốc thực là nửa tổng, vận tốc dòng là nửa hiệu.
-**Nhãn tư duy:** TD2, TD5. Điểm chốt: Vận tốc thực là vận tốc khi nước lặng — không bằng vận tốc xuôi dòng, cũng không bằng vận tốc ngược dòng.
-**Lỗi thường gặp:** Lấy vận tốc xuôi dòng làm vận tốc thực rồi cộng thêm vận tốc dòng lần nữa. Phòng: Viết ba đại lượng thành ba dòng riêng, đặt tên rõ trước khi tính.
-**Gợi ý 3 tầng:** (1) Xuôi dòng thì nước đẩy thêm hay cản lại? — (2) Vận tốc xuôi dòng bằng vận tốc thực cộng gì? — (3) Biết cả xuôi và ngược thì đây là bài tổng – hiệu.
+**Đáp số:** a) 432 000 đồng · b) 204 800 đồng · c) 510 000 đồng · d) 140 625 đồng
+**Hướng giải:** BẪY — Cộng hai lần giảm giá thành một. Giảm a% thì còn (100 − a)% của giá đang xét. Giảm hai lần liên tiếp thì lần sau tính trên giá đã giảm, nên phải làm hai bước chứ không cộng hai phần trăm lại.
+**Nhãn tư duy:** TD2, TD5. Điểm chốt: Giảm 20% rồi giảm tiếp 10% **không** bằng giảm 30%.
+**Lỗi thường gặp:** Cộng hai lần giảm giá thành một lần rồi tính một phép. Phòng: Viết ra giá sau lần giảm thứ nhất trước khi làm lần thứ hai.
+**Gợi ý 3 tầng:** (1) Sau lần giảm thứ nhất còn bao nhiêu phần trăm giá niêm yết? — (2) Lần giảm thứ hai tính trên giá nào? — (3) Làm hai bước, đừng cộng gộp hai phần trăm.
 
 ### Bài IV.3
-**Đáp số:** a) 72 cm² · b) 118 cm² · c) 140 cm² · d) 2 lần
+**Đáp số:** a) 87 cm² · b) 2 lần · c) 128 cm² · d) 140 cm² · e) 2 lần · f) 180 cm²
 **Hướng giải:** BẪY — Phần tăng gồm ba mảnh. Tăng một chiều thêm k đơn vị thì diện tích tăng thêm đúng một hình chữ nhật có kích thước k × chiều còn lại. Tăng cả hai chiều thì phần tăng gồm ba mảnh: hai dải và một hình vuông ở góc — nên **không** bằng tích của hai phần tăng.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Tăng cả hai chiều thì phần tăng gồm **ba mảnh**, không phải một.
 **Lỗi thường gặp:** Nhân hai lượng tăng với nhau rồi coi đó là phần diện tích tăng thêm. Phòng: Vẽ hình chữ nhật cũ nằm trong hình mới, tô phần dôi ra.
 **Gợi ý 3 tầng:** (1) Vẽ hình cũ và hình mới chồng lên nhau. — (2) Phần dôi ra gồm mấy mảnh? — (3) Tính diện tích từng mảnh rồi cộng.
 
 ### Bài IV.4
-**Đáp số:** a) 58 m · b) 204 m² · c) 14,5 giây · d) 72 m² · e) 12 m · f) 414 m² · g) 210 m²
+**Đáp số:** a) 258 cm² · b) 235 cm² · c) 50 cm² · d) 318 cm² · e) 28 cm²
+**Hướng giải:** Hai tam giác ABM và ACM có **chung chiều cao** hạ từ A xuống BC. Diện tích của chúng tỉ lệ thuận với hai đáy BM và MC. Vì vậy diện tích tam giác ABM bằng diện tích tam giác ABC nhân với tỉ số BM trên BC.
+**Nhãn tư duy:** TD6, TD3. Điểm chốt: Chung chiều cao thì diện tích **tỉ lệ với đáy** — không cần biết chiều cao là bao nhiêu.
+**Lỗi thường gặp:** Đi tìm chiều cao cụ thể trong khi đề không cho. Phòng: Đọc lại: hai tam giác có chung đỉnh nào, chung chiều cao xuống cạnh nào?
+**Gợi ý 3 tầng:** (1) Hai tam giác có chung đỉnh nào? — (2) Chiều cao hạ từ đỉnh đó xuống BC có chung không? — (3) Diện tích tỉ lệ thuận với đáy.
+
+### Bài IV.5
+**Đáp số:** a) 126 m · b) 650 m² · c) 31,5 giây · d) 104 m² · e) 16 m · f) 1 218 m² · g) 568 m²
 **Hướng giải:** BẪY — Phần tăng gồm ba mảnh. Đi một vòng quanh hình là đi hết **chu vi**. Tăng một chiều thì phần diện tích dôi ra là một hình chữ nhật có kích thước bằng phần tăng nhân chiều còn lại. Tăng cả hai chiều thì phần dôi gồm **ba mảnh**.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Tăng cả hai chiều thì phần dôi ra **không phải** tích của hai phần tăng.
 **Lỗi thường gặp:** Nhân hai lượng tăng với nhau rồi coi đó là diện tích tăng thêm. Phòng: Vẽ hình cũ nằm trong hình mới rồi tô phần dôi ra.
 **Gợi ý 3 tầng:** (1) Đi một vòng là đi hết đại lượng nào? — (2) Phần diện tích dôi ra có hình dạng gì? — (3) Tăng cả hai chiều thì phần dôi gồm mấy mảnh?
-
-### Bài IV.5
-**Đáp số:** a) 216 · b) 8 · c) 48 · d) 96 · e) 64 · f) có, 8 + 48 + 96 + 64 = 216
-**Hướng giải:** BẪY — Đếm trùng khối ở đỉnh và ở cạnh. Phân loại khối nhỏ theo **vị trí**: ở đỉnh sơn 3 mặt, ở cạnh sơn 2 mặt, ở giữa mặt sơn 1 mặt, ở trong lõi không sơn. Bốn loại cộng lại phải đúng bằng tổng số khối — đó là cách tự kiểm tra.
-**Nhãn tư duy:** TD6, TD4. Điểm chốt: Phân loại theo vị trí, và **cộng bốn loại lại để thử**.
-**Lỗi thường gặp:** Đếm cả khối ở đỉnh vào nhóm khối ở cạnh, thành ra đếm trùng. Phòng: Trừ hai đầu mỗi cạnh khi đếm khối sơn 2 mặt.
-**Gợi ý 3 tầng:** (1) Khối ở đỉnh có mấy mặt lộ ra ngoài? — (2) Mỗi cạnh có bao nhiêu khối không nằm ở đỉnh? — (3) Cộng bốn loại lại xem có bằng tổng số khối không.
 
 ### Bài V.1
 **Đáp số:** a) Diện tích phần tô màu · b) Diện tích hình tròn, hình vuông; phép trừ diện tích · c) Hình gồm nhiều hình lồng nhau, hỏi phần còn lại · d) Tách thành hiệu các hình cơ bản · e) Hình tròn nội tiếp hình vuông chiếm khoảng 78,5% diện tích hình vuông. · f) 91,06 cm² · 50,24 cm² · 104,06 cm² · 292,02 cm²

@@ -44,9 +44,9 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 > **KIẾN THỨC NỀN CỦA CHƯƠNG**
 > 1. Phép chia hết; đếm có hệ thống
-> 2. Logic mệnh đề sơ cấp, phương pháp loại trừ
-> 3. Nguyên lí ngăn kéo
-> 4. Tổ hợp chập hai, nguyên tắc đếm lặp
+> 2. Tổ hợp chập hai, nguyên tắc đếm lặp
+> 3. Đếm có hệ thống; dấu hiệu chia hết; cấu tạo số
+> 4. Đếm có phần chung; sơ đồ Ven
 
 ---
 
@@ -225,9 +225,49 @@ e) (x + 56) × 3 − 4 = 359
 
 ## PHẦN IV — BÀI PHÂN HOÁ · Mức M4 — Vận dụng cao · 20 phút · 25 điểm
 
-### Bài 1. (5 điểm) Đếm số lập được thoả nhiều điều kiện
+### Bài 1. (5 điểm) Đếm số cách trả tiền bằng hai loại mệnh giá
 
-Cho bốn chữ số **0, 2, 5, 6**. Xét các số có ba chữ số **khác nhau** lập từ bốn chữ số đó.
+Lập bảng thử, mỗi dòng một khả năng. Chỉ ghi đáp số sau khi đã thử hết.
+
+a) Có nhiều tờ tiền loại 5 nghìn đồng và loại 20 nghìn đồng. Hỏi có bao nhiêu cách trả đúng 90 nghìn đồng, nếu được dùng cả hai loại hoặc chỉ một loại?
+b) Có nhiều tờ tiền loại 2 nghìn đồng và loại 7 nghìn đồng. Hỏi có bao nhiêu cách trả đúng 48 nghìn đồng, nếu được dùng cả hai loại hoặc chỉ một loại?
+c) Có nhiều tờ tiền loại 5 nghìn đồng và loại 10 nghìn đồng. Hỏi có bao nhiêu cách trả đúng 75 nghìn đồng, nếu được dùng cả hai loại hoặc chỉ một loại?
+d) Có nhiều tờ tiền loại 5 nghìn đồng và loại 10 nghìn đồng. Hỏi có bao nhiêu cách trả đúng 60 nghìn đồng, nếu được dùng cả hai loại hoặc chỉ một loại?
+e) Có nhiều tờ tiền loại 5 nghìn đồng và loại 20 nghìn đồng. Hỏi có bao nhiêu cách trả đúng 125 nghìn đồng, nếu được dùng cả hai loại hoặc chỉ một loại?
+
+### Bài 2. (5 điểm) Bài toán trồng cây — bốn trường hợp
+
+Tính số cây cần trồng trong mỗi trường hợp.
+
+a) Trồng cây trên đoạn đường dài 324 m, hai cây liền nhau cách nhau 6 m, không trồng ở cả hai đầu. Cần bao nhiêu cây?
+b) Trồng cây suốt một đoạn đường dài 102 m, hai cây liền nhau cách nhau 2 m, trồng cả ở hai đầu đường. Cần bao nhiêu cây?
+c) Trồng cây trên đoạn đường dài 300 m, hai cây liền nhau cách nhau 6 m, chỉ trồng ở một đầu đường. Cần bao nhiêu cây?
+d) Trồng cây quanh một cái ao hình tròn có chu vi 72 m, hai cây liền nhau cách nhau 3 m. Cần bao nhiêu cây?
+e) Trồng cây suốt một đoạn đường dài 93 m, hai cây liền nhau cách nhau 3 m, trồng cả ở hai đầu đường. Cần bao nhiêu cây?
+
+### Bài 3. (5 điểm) Ghép người với môn bằng bảng đúng – sai
+
+Bắt buộc kẻ bảng ra giấy. Không được suy luận nhẩm ở bài này.
+
+a) Ba bạn Khánh, Bình và Dũng mỗi bạn học một môn năng khiếu khác nhau trong ba môn: bóng đá, cầu lông và bóng rổ. Biết rằng: Khánh không học bóng đá và cũng không học cầu lông; Bình không học cầu lông. Hỏi mỗi bạn học môn nào?
+b) Ba bạn Khánh, Vy và Thảo mỗi bạn học một môn năng khiếu khác nhau trong ba môn: hát, múa và đàn. Biết rằng: Khánh không học đàn và cũng không học hát; Vy không học hát. Hỏi mỗi bạn học môn nào?
+c) Ba bạn Dũng, Chi và Lan mỗi bạn học một môn năng khiếu khác nhau trong ba môn: tiếng Anh, tin học và mĩ thuật. Biết rằng: Dũng không học mĩ thuật và cũng không học tiếng Anh; Chi không học tiếng Anh. Hỏi mỗi bạn học môn nào?
+d) Ba bạn Khánh, Yến và Bình mỗi bạn học một môn năng khiếu khác nhau trong ba môn: hát, múa và đàn. Biết rằng: Khánh không học múa và cũng không học đàn; Yến không học đàn. Hỏi mỗi bạn học môn nào?
+
+### Bài 4. (5 điểm) Bài toán bất biến — tính chẵn lẻ của tổng
+
+Tìm đại lượng không đổi qua mỗi bước.
+
+a) Trên bảng viết các số từ 1 đến 18. Mỗi bước, xoá hai số bất kì và viết thay vào **hiệu** của chúng (số lớn trừ số bé). Sau nhiều bước chỉ còn một số. Số cuối cùng là số chẵn hay số lẻ?
+b) Tổng các số từ 1 đến 18 bằng bao nhiêu?
+c) Khi thay hai số a và b bằng hiệu của chúng, tổng trên bảng thay đổi bao nhiêu?
+d) Vì tổng giảm đi một số chẵn nên tính chẵn lẻ của tổng có thay đổi không?
+e) Vậy đại lượng bất biến ở đây là gì?
+f) Số cuối cùng có thể bằng 0 không?
+
+### Bài 5. (5 điểm) Đếm số lập được thoả nhiều điều kiện
+
+Cho bốn chữ số **0, 3, 7, 8**. Xét các số có ba chữ số **khác nhau** lập từ bốn chữ số đó.
 
 a) Lập được tất cả bao nhiêu số?
 b) Trong đó có bao nhiêu số chẵn?
@@ -235,47 +275,6 @@ c) Có bao nhiêu số chia hết cho 5?
 d) Có bao nhiêu số chia hết cho 3?
 e) Số lớn nhất và số bé nhất lập được là những số nào?
 f) Tổng của số lớn nhất và số bé nhất bằng bao nhiêu?
-
-### Bài 2. (5 điểm) Ghép người với môn bằng bảng đúng – sai
-
-Bắt buộc kẻ bảng ra giấy. Không được suy luận nhẩm ở bài này.
-
-a) Ba bạn Trang, Quân và Ngọc mỗi bạn học một môn năng khiếu khác nhau trong ba môn: bóng đá, cầu lông và bóng rổ. Biết rằng: Trang không học bóng rổ và cũng không học bóng đá; Quân không học bóng đá. Hỏi mỗi bạn học môn nào?
-b) Ba bạn Đức, Hà và Quân mỗi bạn học một môn năng khiếu khác nhau trong ba môn: bơi, cờ vua và vẽ. Biết rằng: Đức không học bơi và cũng không học cờ vua; Hà không học cờ vua. Hỏi mỗi bạn học môn nào?
-c) Ba bạn Quân, Chi và Nam mỗi bạn học một môn năng khiếu khác nhau trong ba môn: bơi, cờ vua và vẽ. Biết rằng: Quân không học cờ vua và cũng không học bơi; Chi không học bơi. Hỏi mỗi bạn học môn nào?
-d) Ba bạn Đức, Minh và Nam mỗi bạn học một môn năng khiếu khác nhau trong ba môn: hát, múa và đàn. Biết rằng: Đức không học hát và cũng không học đàn; Minh không học đàn. Hỏi mỗi bạn học môn nào?
-e) Ba bạn Dũng, Phúc và Yến mỗi bạn học một môn năng khiếu khác nhau trong ba môn: bơi, cờ vua và vẽ. Biết rằng: Dũng không học vẽ và cũng không học bơi; Phúc không học bơi. Hỏi mỗi bạn học môn nào?
-
-### Bài 3. (5 điểm) Đếm số cách trả tiền bằng hai loại mệnh giá
-
-Lập bảng thử, mỗi dòng một khả năng. Chỉ ghi đáp số sau khi đã thử hết.
-
-a) Có nhiều tờ tiền loại 5 nghìn đồng và loại 10 nghìn đồng. Hỏi có bao nhiêu cách trả đúng 35 nghìn đồng, nếu được dùng cả hai loại hoặc chỉ một loại?
-b) Có nhiều tờ tiền loại 2 nghìn đồng và loại 5 nghìn đồng. Hỏi có bao nhiêu cách trả đúng 30 nghìn đồng, nếu được dùng cả hai loại hoặc chỉ một loại?
-c) Có nhiều tờ tiền loại 5 nghìn đồng và loại 10 nghìn đồng. Hỏi có bao nhiêu cách trả đúng 85 nghìn đồng, nếu được dùng cả hai loại hoặc chỉ một loại?
-d) Có nhiều tờ tiền loại 5 nghìn đồng và loại 10 nghìn đồng. Hỏi có bao nhiêu cách trả đúng 115 nghìn đồng, nếu được dùng cả hai loại hoặc chỉ một loại?
-e) Có nhiều tờ tiền loại 5 nghìn đồng và loại 20 nghìn đồng. Hỏi có bao nhiêu cách trả đúng 50 nghìn đồng, nếu được dùng cả hai loại hoặc chỉ một loại?
-
-### Bài 4. (5 điểm) Bài toán bất biến — tính chẵn lẻ của tổng
-
-Tìm đại lượng không đổi qua mỗi bước.
-
-a) Trên bảng viết các số từ 1 đến 7. Mỗi bước, xoá hai số bất kì và viết thay vào **hiệu** của chúng (số lớn trừ số bé). Sau nhiều bước chỉ còn một số. Số cuối cùng là số chẵn hay số lẻ?
-b) Tổng các số từ 1 đến 7 bằng bao nhiêu?
-c) Khi thay hai số a và b bằng hiệu của chúng, tổng trên bảng thay đổi bao nhiêu?
-d) Vì tổng giảm đi một số chẵn nên tính chẵn lẻ của tổng có thay đổi không?
-e) Vậy đại lượng bất biến ở đây là gì?
-f) Số cuối cùng có thể bằng 0 không?
-
-### Bài 5. (5 điểm) Chuyển động trên dòng nước
-
-Câu nào cũng ghi rõ đang dùng công thức xuôi dòng hay ngược dòng.
-
-a) Một ca nô có vận tốc thực 28 km/giờ đi trên sông có vận tốc dòng nước 5 km/giờ. Tính quãng đường ca nô đi được trong 5 giờ khi xuôi dòng và khi ngược dòng.
-b) Một ca nô xuôi dòng với vận tốc 31 km/giờ và ngược dòng với vận tốc 17 km/giờ. Tính vận tốc thực của ca nô và vận tốc dòng nước.
-c) Một ca nô có vận tốc thực 22 km/giờ đi trên sông có vận tốc dòng nước 2 km/giờ. Tính quãng đường ca nô đi được trong 5 giờ khi xuôi dòng và khi ngược dòng.
-d) Một ca nô xuôi dòng với vận tốc 33 km/giờ và ngược dòng với vận tốc 23 km/giờ. Tính vận tốc thực của ca nô và vận tốc dòng nước.
-e) Một ca nô có vận tốc thực 28 km/giờ đi trên sông có vận tốc dòng nước 4 km/giờ. Tính quãng đường ca nô đi được trong 2 giờ khi xuôi dòng và khi ngược dòng.
 
 ---
 
@@ -448,39 +447,39 @@ f) Cột 6 — Kết quả?
 **Lỗi thường gặp:** Nhân phá ngoặc sai dấu, hoặc gỡ phép trong ngoặc trước. Phòng: Ghi rõ từng bước trên một dòng riêng, mỗi dòng chỉ khác dòng trên một phép.
 
 ### Bài IV.1
-**Đáp số:** a) 18 · b) 14 · c) 10 · d) 0 · e) 652 và 205 · f) 857
-**Hướng giải:** BẪY — Chữ số 0 ở hàng trăm. Đếm theo từng bước có ràng buộc: với điều kiện về chữ số tận cùng (chẵn, chia hết cho 5) thì chọn **chữ số tận cùng trước**, rồi mới chọn các hàng còn lại. Nhớ loại các số có chữ số 0 ở hàng trăm.
-**Nhãn tư duy:** TD4, TD6. Điểm chốt: Có ràng buộc ở hàng nào thì **chọn hàng đó trước**.
-**Lỗi thường gặp:** Chọn hàng trăm trước rồi mới xét điều kiện tận cùng, dẫn đến đếm trùng hoặc sót. Phòng: Viết rõ thứ tự chọn hàng trước khi nhân các số cách.
-**Gợi ý 3 tầng:** (1) Điều kiện của đề ràng buộc hàng nào? — (2) Chọn hàng bị ràng buộc trước tiên. — (3) Nhớ loại trường hợp chữ số 0 đứng ở hàng trăm.
-
-### Bài IV.2
-**Đáp số:** a) Trang học cầu lông; Quân học bóng rổ; Ngọc học bóng đá · b) Đức học vẽ; Hà học bơi; Quân học cờ vua · c) Quân học vẽ; Chi học cờ vua; Nam học bơi · d) Đức học múa; Minh học hát; Nam học đàn · e) Dũng học cờ vua; Phúc học vẽ; Yến học bơi
-**Hướng giải:** BẪY — Đánh dấu đúng mà quên gạch phần còn lại. Mỗi dòng một người, mỗi cột một khả năng. Đánh × cho điều chắc chắn sai. Dòng nào chỉ còn một ô trống thì ô ấy là ✓ — và ngay sau đó phải gạch × cho cả cột chứa ô ấy.
-**Nhãn tư duy:** TD3, TD4. Điểm chốt: Đặt được một ✓ thì **cả dòng và cả cột** còn lại đều thành ×. Bỏ bước gạch cột là chỗ bài bị tắc giữa chừng.
-**Lỗi thường gặp:** Đánh ✓ rồi đi tiếp luôn, không gạch × cho phần còn lại của cột. Phòng: Sau mỗi lần đặt ✓, dừng lại gạch đủ dòng và cột rồi mới đọc manh mối kế.
-**Gợi ý 3 tầng:** (1) Kẻ bảng ba dòng ba cột trước đã. — (2) Manh mối nào cho biết chắc chắn một ô là sai? — (3) Dòng nào chỉ còn một ô trống thì ô ấy chính là đáp án của dòng ấy.
-
-### Bài IV.3
-**Đáp số:** a) 4 cách · b) 4 cách · c) 9 cách · d) 12 cách · e) 3 cách
+**Đáp số:** a) 5 cách · b) 4 cách · c) 8 cách · d) 7 cách · e) 7 cách
 **Hướng giải:** BẪY — Xét thiếu trường hợp. Chọn loại tiền **mệnh giá lớn** làm ẩn để thử, vì nó cho ít khả năng hơn. Với mỗi khả năng, kiểm phần còn lại có chia hết cho mệnh giá kia không.
 **Nhãn tư duy:** TD3, TD4. Điểm chốt: Phải thử từ 0 tờ, không được bỏ qua trường hợp chỉ dùng một loại.
 **Lỗi thường gặp:** Bắt đầu thử từ 1 tờ, làm mất trường hợp không dùng loại ấy. Phòng: Kẻ bảng hai cột và điền từ 0 trở đi, đừng nhảy cóc.
 **Gợi ý 3 tầng:** (1) Nên chọn loại tiền nào làm ẩn để phải thử ít lần hơn? — (2) Nhiều nhất có thể dùng bao nhiêu tờ loại ấy? — (3) Thử từ 0 tờ trở đi, mỗi lần kiểm phần còn lại có chia hết không.
 
+### Bài IV.2
+**Đáp số:** a) 53 · b) 52 · c) 50 · d) 24 · e) 32
+**Hướng giải:** BẪY — Bốn trường hợp trồng cây khác nhau. Số khoảng = độ dài : khoảng cách. Từ số khoảng suy ra số cây: trồng cả hai đầu thì số cây hơn số khoảng 1; trồng một đầu thì bằng số khoảng; không trồng đầu nào thì kém số khoảng 1; trồng khép kín (quanh ao, quanh sân) thì bằng đúng số khoảng.
+**Nhãn tư duy:** TD3, TD6. Điểm chốt: Đọc kĩ **có trồng ở hai đầu hay không** — bốn trường hợp cho bốn đáp số khác nhau.
+**Lỗi thường gặp:** Máy móc cộng 1 cho mọi trường hợp. Phòng: Vẽ một đoạn ngắn với 3 khoảng để đếm thử trước khi áp dụng.
+**Gợi ý 3 tầng:** (1) Tính số khoảng trước. — (2) Đề có nói trồng ở hai đầu, một đầu, hay khép kín? — (3) Vẽ thử một hình nhỏ để kiểm tra.
+
+### Bài IV.3
+**Đáp số:** a) Khánh học bóng rổ; Bình học bóng đá; Dũng học cầu lông · b) Khánh học múa; Vy học đàn; Thảo học hát · c) Dũng học tin học; Chi học mĩ thuật; Lan học tiếng Anh · d) Khánh học hát; Yến học múa; Bình học đàn
+**Hướng giải:** BẪY — Đánh dấu đúng mà quên gạch phần còn lại. Mỗi dòng một người, mỗi cột một khả năng. Đánh × cho điều chắc chắn sai. Dòng nào chỉ còn một ô trống thì ô ấy là ✓ — và ngay sau đó phải gạch × cho cả cột chứa ô ấy.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Đặt được một ✓ thì **cả dòng và cả cột** còn lại đều thành ×. Bỏ bước gạch cột là chỗ bài bị tắc giữa chừng.
+**Lỗi thường gặp:** Đánh ✓ rồi đi tiếp luôn, không gạch × cho phần còn lại của cột. Phòng: Sau mỗi lần đặt ✓, dừng lại gạch đủ dòng và cột rồi mới đọc manh mối kế.
+**Gợi ý 3 tầng:** (1) Kẻ bảng ba dòng ba cột trước đã. — (2) Manh mối nào cho biết chắc chắn một ô là sai? — (3) Dòng nào chỉ còn một ô trống thì ô ấy chính là đáp án của dòng ấy.
+
 ### Bài IV.4
-**Đáp số:** a) chẵn · b) 28 · c) giảm đi 2 lần số bé · d) không thay đổi · e) tính chẵn lẻ của tổng các số trên bảng · f) có
+**Đáp số:** a) lẻ · b) 171 · c) giảm đi 2 lần số bé · d) không thay đổi · e) tính chẵn lẻ của tổng các số trên bảng · f) không
 **Hướng giải:** BẪY — Phải chứng minh, không được thử vài trường hợp. Khi thay a và b (giả sử a ≥ b) bằng a − b, tổng giảm đi 2b — luôn là một số chẵn. Vì vậy **tính chẵn lẻ của tổng không bao giờ thay đổi**. Số còn lại cuối cùng chính là tổng lúc đó, nên nó cùng tính chẵn lẻ với tổng ban đầu.
 **Nhãn tư duy:** TD6, TD2. Điểm chốt: Tìm đại lượng **không đổi** qua mỗi bước là chìa khoá của cả lớp bài này.
 **Lỗi thường gặp:** Thử mò vài trường hợp rồi kết luận, không chứng minh được cho mọi cách làm. Phòng: Sau khi đoán, hãy kiểm tra: đại lượng đó thay đổi thế nào sau **một** bước?
 **Gợi ý 3 tầng:** (1) Sau mỗi bước, tổng các số trên bảng thay đổi bao nhiêu? — (2) Lượng thay đổi đó là số chẵn hay số lẻ? — (3) Vậy tính chẵn lẻ của tổng có đổi không?
 
 ### Bài IV.5
-**Đáp số:** a) xuôi dòng 165 km; ngược dòng 115 km · b) vận tốc thực 24 km/giờ; dòng nước 7 km/giờ · c) xuôi dòng 120 km; ngược dòng 100 km · d) vận tốc thực 28 km/giờ; dòng nước 5 km/giờ · e) xuôi dòng 64 km; ngược dòng 48 km
-**Hướng giải:** Xuôi dòng thì dòng nước đẩy thêm nên cộng; ngược dòng thì dòng nước cản lại nên trừ. Biết cả hai vận tốc xuôi và ngược thì đây chính là bài tổng – hiệu: vận tốc thực là nửa tổng, vận tốc dòng là nửa hiệu.
-**Nhãn tư duy:** TD2, TD5. Điểm chốt: Vận tốc thực là vận tốc khi nước lặng — không bằng vận tốc xuôi dòng, cũng không bằng vận tốc ngược dòng.
-**Lỗi thường gặp:** Lấy vận tốc xuôi dòng làm vận tốc thực rồi cộng thêm vận tốc dòng lần nữa. Phòng: Viết ba đại lượng thành ba dòng riêng, đặt tên rõ trước khi tính.
-**Gợi ý 3 tầng:** (1) Xuôi dòng thì nước đẩy thêm hay cản lại? — (2) Vận tốc xuôi dòng bằng vận tốc thực cộng gì? — (3) Biết cả xuôi và ngược thì đây là bài tổng – hiệu.
+**Đáp số:** a) 18 · b) 10 · c) 6 · d) 10 · e) 873 và 307 · f) 1 180
+**Hướng giải:** Đếm theo từng bước có ràng buộc: với điều kiện về chữ số tận cùng (chẵn, chia hết cho 5) thì chọn **chữ số tận cùng trước**, rồi mới chọn các hàng còn lại. Nhớ loại các số có chữ số 0 ở hàng trăm.
+**Nhãn tư duy:** TD4, TD6. Điểm chốt: Có ràng buộc ở hàng nào thì **chọn hàng đó trước**.
+**Lỗi thường gặp:** Chọn hàng trăm trước rồi mới xét điều kiện tận cùng, dẫn đến đếm trùng hoặc sót. Phòng: Viết rõ thứ tự chọn hàng trước khi nhân các số cách.
+**Gợi ý 3 tầng:** (1) Điều kiện của đề ràng buộc hàng nào? — (2) Chọn hàng bị ràng buộc trước tiên. — (3) Nhớ loại trường hợp chữ số 0 đứng ở hàng trăm.
 
 ### Bài V.1
 **Đáp số:** a) Đếm bằng quy tắc cộng, nhân, bù trừ · b) Quy tắc cộng, quy tắc nhân, nguyên lí bù trừ · c) Từ khoá “và”, “hoặc”, “cả hai”, “ít nhất một” · d) Vẽ hai vòng tròn giao nhau, đếm theo miền · e) Vẽ sơ đồ Ven ba miền, điền số vào miền giữa trước. · f) 16 cách · 90 cách · 10 bạn · 80 cách…

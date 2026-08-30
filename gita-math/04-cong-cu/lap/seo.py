@@ -383,8 +383,9 @@ LOGO_SVG = (
 )
 
 MUC_CHINH = [("Lớp 3", "/toan-lop-3/"), ("Lớp 4", "/toan-lop-4/"),
-             ("Lớp 5", "/toan-lop-5/"), ("Đọc vị đề", "/doc-vi/"),
-             ("Lộ trình", "/lo-trinh/"), ("Thi vào 6", "/thi-vao-6/")]
+             ("Lớp 5", "/toan-lop-5/"), ("Đề thi", "/de-thi/"),
+             ("Đọc vị đề", "/doc-vi/"), ("Lộ trình", "/lo-trinh/"),
+             ("Thi vào 6", "/thi-vao-6/")]
 
 
 def trang(*, dd: str, tieu_de: str, mo_ta: str, h1: str, than: str,

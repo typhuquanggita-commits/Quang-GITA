@@ -98,43 +98,43 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 
 Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: đây là dạng bài gì, và dấu hiệu nào cho biết điều đó.
 
-**Đề 1.** Tính bằng cách thuận tiện nhất. 9 phần 10 × 10 phần 9
+**Đề 1.** Đặt tính rồi tính. 96 650 800 : 970
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 2.** Tính bằng cách thuận tiện nhất. 398 + 49 − 49
+**Đề 2.** Tìm x, trình bày đủ các bước. (x + 11) × 5 − 9 = 166
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 3.** Tính bằng cách thuận tiện nhất. 50 × 63 × 2
+**Đề 3.** Tính bằng cách thuận tiện nhất. 8 + 9 + 2
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 4.** Đặt tính rồi tính. Ước lượng trước để tự kiểm tra. 77 635 − 31 931
+**Đề 4.** Tính bằng cách thuận tiện nhất. 86 + 81 + 14
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 5.** Tính tổng mỗi dãy. 3 + 6 + 9 + … + 300
+**Đề 5.** Tính tổng mỗi dãy. 1 phần 2 + 1 phần 6 + 1 phần 12 + … + 1 phần 110
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 6.** Tính bằng cách nhanh nhất. 21 × 97 × (21 − 21)
+**Đề 6.** Tính tổng mỗi dãy. 1 + 6 + 11 + … + 496
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 7.** Đặt tính rồi tính. 99 134 × 779
+**Đề 7.** Điền dấu <, >, = và giải thích ngắn. 235 × 17 … 235 × 18
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 8.** Điền dấu <, >, = và giải thích ngắn. 277 × 8 … 277 × 9
+**Đề 8.** Tính giá trị của mỗi biểu thức. 100 − 20 × 3
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 9.** Tính bằng cách thuận tiện nhất. 54 × 60 − 54 × 17
+**Đề 9.** Tính nhẩm, nêu cách nhẩm. 49 × 21
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 10.** Tính bằng cách thuận tiện nhất. 5,2 + 9 + 4,8
+**Đề 10.** Tính bằng cách thuận tiện nhất. 1 phần 3 + 2 phần 3
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
@@ -144,16 +144,16 @@ Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: 
 
 | # | Dạng bài | Dấu hiệu |
 |:--:|---|---|
-| 1 | Tính nhanh biểu thức phân số | Các phân số cùng mẫu, tử số cộng lại tròn mẫu |
-| 2 | Tính nhanh tổng nhiều số hạng | Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm |
-| 3 | Tính nhanh tích, thương nhiều bước | Tích có thừa số 25, 125, 50, 20; hoặc chia liên tiếp |
-| 4 | Bốn phép tính với số tự nhiên | Yêu cầu “đặt tính rồi tính” |
-| 5 | Tổng dãy số cách đều | Dãy cộng có dấu … và các số cách đều nhau |
-| 6 | Tính nhanh nhờ thừa số 0 | Trong biểu thức có ngoặc chứa hai số giống nhau trừ nhau |
-| 7 | Nhân, chia số tự nhiên | Yêu cầu “đặt tính rồi tính” với phép nhân, chia |
-| 8 | So sánh biểu thức không tính giá trị | Hai vế có chung một số hạng hoặc một thừa số |
-| 9 | Tính nhanh nhờ thừa số chung | Hai tích cộng hoặc trừ nhau, có chung một thừa số |
-| 10 | Tính nhanh biểu thức số thập phân | Các số thập phân cộng lại tròn chục hoặc có thừa số chung |
+| 1 | Nhân, chia số tự nhiên | Yêu cầu “đặt tính rồi tính” với phép nhân, chia |
+| 2 | Tìm x nhiều bước có ngoặc | x nằm trong ngoặc, ngoài ngoặc còn phép tính khác |
+| 3 | Tính nhanh biểu thức số thập phân | Các số thập phân cộng lại tròn chục hoặc có thừa số chung |
+| 4 | Tính nhanh tổng nhiều số hạng | Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm |
+| 5 | Tổng dãy phân số có mẫu là tích hai số liên tiếp | Mẫu số là 2, 6, 12, 20, 30… (tích hai số liên tiếp) |
+| 6 | Tổng dãy số cách đều | Dãy cộng có dấu … và các số cách đều nhau |
+| 7 | So sánh biểu thức không tính giá trị | Hai vế có chung một số hạng hoặc một thừa số |
+| 8 | Tính giá trị biểu thức số | Biểu thức có nhiều phép tính, có thể có ngoặc |
+| 9 | Nhân nhẩm nhờ tách thừa số | Thừa số là 9, 11, 19, 21, 99, 101… |
+| 10 | Tính nhanh biểu thức phân số | Các phân số cùng mẫu, tử số cộng lại tròn mẫu |
 
 ---
 

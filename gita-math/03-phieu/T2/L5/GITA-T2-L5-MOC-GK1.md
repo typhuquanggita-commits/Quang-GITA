@@ -42,10 +42,10 @@ Phiếu lời giải và phân tích chuyên sâu đi kèm: `GITA-T2-L5-MOC-GK1-
 Họ và tên: ......................................... Lớp: ......... Điểm: ......../100
 
 > **KIẾN THỨC NỀN CỦA CHƯƠNG**
-> 1. Phương pháp giả thiết tạm
-> 2. Cấu tạo số, tổng chữ số
-> 3. Công thức tổng – hiệu, sơ đồ đoạn thẳng
-> 4. Nhân một số với một tổng, một hiệu
+> 1. Cấu tạo số, tổng chữ số
+> 2. Suy luận loại trừ; đọc hiểu câu phủ định
+> 3. V = dài × rộng × cao; 1 m³ = 1 000 lít
+> 4. Cấu tạo số thập phân, quan hệ phân số – số thập phân
 
 ---
 
@@ -229,87 +229,82 @@ f) Tổ Ba và nhóm Hoa Phượng trồng được tất cả 168 cây. Số c�
 
 ## PHẦN IV — VẬN DỤNG CAO · Mức M4 — Vận dụng cao · 25 phút · 25 điểm
 
-### Bài 1. (5 điểm) Đếm số cách trả tiền bằng hai loại mệnh giá
+### Bài 1. (5 điểm) Ghép người với môn bằng bảng đúng – sai
 
-Lập bảng thử, mỗi dòng một khả năng. Chỉ ghi đáp số sau khi đã thử hết.
+Bắt buộc kẻ bảng ra giấy. Không được suy luận nhẩm ở bài này.
 
-a) Có nhiều tờ tiền loại 2 nghìn đồng và loại 5 nghìn đồng. Hỏi có bao nhiêu cách trả đúng 25 nghìn đồng, nếu được dùng cả hai loại hoặc chỉ một loại?
-b) Có nhiều tờ tiền loại 5 nghìn đồng và loại 20 nghìn đồng. Hỏi có bao nhiêu cách trả đúng 40 nghìn đồng, nếu được dùng cả hai loại hoặc chỉ một loại?
-c) Có nhiều tờ tiền loại 5 nghìn đồng và loại 10 nghìn đồng. Hỏi có bao nhiêu cách trả đúng 45 nghìn đồng, nếu được dùng cả hai loại hoặc chỉ một loại?
-d) Có nhiều tờ tiền loại 5 nghìn đồng và loại 10 nghìn đồng. Hỏi có bao nhiêu cách trả đúng 70 nghìn đồng, nếu được dùng cả hai loại hoặc chỉ một loại?
-e) Có nhiều tờ tiền loại 5 nghìn đồng và loại 20 nghìn đồng. Hỏi có bao nhiêu cách trả đúng 70 nghìn đồng, nếu được dùng cả hai loại hoặc chỉ một loại?
+a) Ba bạn Ngọc, Đức và Hùng mỗi bạn học một môn năng khiếu khác nhau trong ba môn: bơi, cờ vua và vẽ. Biết rằng: Ngọc không học cờ vua và cũng không học bơi; Đức không học bơi. Hỏi mỗi bạn học môn nào?
+b) Ba bạn Phúc, Trang và Ngọc mỗi bạn học một môn năng khiếu khác nhau trong ba môn: bóng đá, cầu lông và bóng rổ. Biết rằng: Phúc không học bóng đá và cũng không học bóng rổ; Trang không học bóng rổ. Hỏi mỗi bạn học môn nào?
+c) Ba bạn Trang, Chi và Lan mỗi bạn học một môn năng khiếu khác nhau trong ba môn: bóng đá, cầu lông và bóng rổ. Biết rằng: Trang không học cầu lông và cũng không học bóng rổ; Chi không học bóng rổ. Hỏi mỗi bạn học môn nào?
+d) Ba bạn Hà, Sơn và An mỗi bạn học một môn năng khiếu khác nhau trong ba môn: bóng đá, cầu lông và bóng rổ. Biết rằng: Hà không học bóng đá và cũng không học bóng rổ; Sơn không học bóng rổ. Hỏi mỗi bạn học môn nào?
 
-### Bài 2. (5 điểm) Tìm số theo hai điều kiện chia có dư
+### Bài 2. (5 điểm) Số nguyên tố và hợp số
 
-Tìm số bé nhất thoả mãn.
+Trả lời và nêu căn cứ.
 
-a) Tìm số bé nhất không quá 500 chia cho 5 dư 2 và chia cho 9 dư 7.
-b) Tìm số bé nhất không quá 200 chia cho 9 dư 7 và chia cho 4 dư 3.
-c) Tìm số bé nhất không quá 500 chia cho 7 dư 4 và chia cho 4 dư 3.
-d) Tìm số bé nhất không quá 200 chia cho 5 dư 3 và chia cho 3 dư 1.
-e) Tìm số bé nhất không quá 300 chia cho 7 dư 3 và chia cho 9 dư 8.
+a) Số 73 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
+b) Số 105 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
+c) Số 159 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
+d) Số 189 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
+e) Số 190 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
 
-### Bài 3. (5 điểm) Biểu thức nhiều phép tính với phân số
+### Bài 3. (5 điểm) Giá sau khuyến mãi
 
-Tính giá trị biểu thức, rút gọn kết quả.
+Ghi rõ mỗi lần giảm được tính trên giá nào.
 
-a) 5 phần 11 : 8 phần 7 + 1 phần 5
-b) 4 phần 3 × 11 phần 14 + 4 phần 3 × 2 phần 3
-c) (4 phần 15 + 1) × 1 phần 3
-d) (1 phần 8 + 1 phần 2) × 12 phần 7
-e) (1 phần 3 + 2 phần 5) × 12 phần 11
+a) Một chiếc cặp giá niêm yết 450 000 đồng, cửa hàng giảm 25%. Hỏi giá sau khi giảm là bao nhiêu?
+b) Một bộ sách tham khảo giá niêm yết 320 000 đồng. Cửa hàng giảm 10%, sau đó giảm tiếp 25% trên giá đã giảm. Hỏi giá cuối cùng là bao nhiêu?
+c) Một đôi giày giá niêm yết 680 000 đồng, cửa hàng giảm 10%. Hỏi giá sau khi giảm là bao nhiêu?
+d) Một bộ sách tham khảo giá niêm yết 320 000 đồng. Cửa hàng giảm 30%, sau đó giảm tiếp 20% trên giá đã giảm. Hỏi giá cuối cùng là bao nhiêu?
 
 ### Bài 4. (5 điểm) Lọc số hạng theo điều kiện chia hết
 
-Cho dãy 12, 15, 18, …, 339.
+Cho dãy 6, 13, 20, …, 2 092.
 
 a) Dãy có bao nhiêu số hạng?
 b) Số hạng cuối là số nào?
-c) Trong dãy có bao nhiêu số chia hết cho 10?
+c) Trong dãy có bao nhiêu số chia hết cho 2?
 d) Trong dãy có bao nhiêu số chẵn?
 e) Tổng các số chẵn trong dãy bằng bao nhiêu?
 f) Tổng cả dãy bằng bao nhiêu?
 
-### Bài 5. (5 điểm) Hai vòi nước, hai người cùng làm
+### Bài 5. (5 điểm) Chuyển động trên dòng nước
 
-Coi cả công việc là 1 đơn vị.
+Câu nào cũng ghi rõ đang dùng công thức xuôi dòng hay ngược dòng.
 
-a) Vòi thứ nhất chảy một mình đầy bể trong 5 giờ, vòi thứ hai chảy một mình đầy bể trong 2 giờ. Mở cả hai vòi thì sau bao lâu đầy bể?
-b) Vòi thứ nhất chảy một mình đầy bể trong 6 giờ, vòi thứ hai chảy một mình đầy bể trong 3 giờ. Mở cả hai vòi thì sau bao lâu đầy bể?
-c) Vòi thứ nhất chảy một mình đầy bể trong 2 giờ, vòi thứ hai chảy một mình đầy bể trong 15 giờ. Mở cả hai vòi thì sau bao lâu đầy bể?
-d) Vòi thứ nhất chảy một mình đầy bể trong 6 giờ, vòi thứ hai chảy một mình đầy bể trong 20 giờ. Mở cả hai vòi thì sau bao lâu đầy bể?
-e) Vòi thứ nhất chảy một mình đầy bể trong 3 giờ, vòi thứ hai chảy một mình đầy bể trong 20 giờ. Mở cả hai vòi thì sau bao lâu đầy bể?
-f) Vòi thứ nhất chảy một mình đầy bể trong 5 giờ, vòi thứ hai chảy một mình đầy bể trong 15 giờ. Mở cả hai vòi thì sau bao lâu đầy bể?
+a) Một ca nô có vận tốc thực 24 km/giờ đi trên sông có vận tốc dòng nước 4 km/giờ. Tính quãng đường ca nô đi được trong 4 giờ khi xuôi dòng và khi ngược dòng.
+b) Một ca nô xuôi dòng với vận tốc 33 km/giờ và ngược dòng với vận tốc 23 km/giờ. Tính vận tốc thực của ca nô và vận tốc dòng nước.
+c) Một ca nô có vận tốc thực 28 km/giờ đi trên sông có vận tốc dòng nước 3 km/giờ. Tính quãng đường ca nô đi được trong 5 giờ khi xuôi dòng và khi ngược dòng.
+d) Một ca nô xuôi dòng với vận tốc 25 km/giờ và ngược dòng với vận tốc 15 km/giờ. Tính vận tốc thực của ca nô và vận tốc dòng nước.
 
 ---
 
 ## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
 
-### Bài 1. (3 điểm) Chữ số tận cùng của tích nhiều thừa số giống nhau
+### Bài 1. (3 điểm) Quan hệ giữa một số và tổng các chữ số của nó
 
-Tìm quy luật rồi trả lời.
+Trình bày lập luận đầy đủ.
 
-a) Tích của 57 thừa số đều bằng 7 có chữ số tận cùng là chữ số nào?
-b) Tích của 41 thừa số đều bằng 7 có chữ số tận cùng là chữ số nào?
-c) Tích của 44 thừa số đều bằng 8 có chữ số tận cùng là chữ số nào?
-d) Tích của 39 thừa số đều bằng 9 có chữ số tận cùng là chữ số nào?
-e) Tích của 27 thừa số đều bằng 2 có chữ số tận cùng là chữ số nào?
-f) Tích của 19 thừa số đều bằng 3 có chữ số tận cùng là chữ số nào?
+a) Số có hai chữ số 74 gấp tổng hai chữ số của nó bao nhiêu lần? (viết dưới dạng thương và số dư)
+b) Tìm số có hai chữ số biết số đó bằng 10 lần tổng hai chữ số của nó và chữ số hàng chục là 7.
+c) Số có hai chữ số 43 gấp tổng hai chữ số của nó bao nhiêu lần? (viết dưới dạng thương và số dư)
+d) Tìm số có hai chữ số biết số đó bằng 4 lần tổng hai chữ số của nó và chữ số hàng chục là 1.
+e) Tìm số có hai chữ số biết số đó bằng 6 lần tổng hai chữ số của nó và chữ số hàng chục là 5.
+f) Số có hai chữ số 33 gấp tổng hai chữ số của nó bao nhiêu lần? (viết dưới dạng thương và số dư)
 
-### Bài 2. (3 điểm) Dãy phân số dạng n phần (n + 1)
+### Bài 2. (3 điểm) Ba nhóm có phần chung — nguyên lý bù trừ
 
-Quan sát phần bù tới 1 để so sánh.
+Vẽ ba vòng tròn và điền từ **phần giữa** ra ngoài.
 
-a) Viết bốn phân số đầu của dãy.
-b) Phân số thứ 12 của dãy là phân số nào?
-c) Các phân số của dãy này lớn hơn hay bé hơn 1?
-d) Dãy này tăng dần hay giảm dần?
-e) Vì sao dãy tăng dần?
-f) Phân số thứ 12 còn thiếu bao nhiêu nữa thì bằng 1?
+a) Lớp có 42 học sinh. Có 20 em học hát, 16 em học bơi, 23 em học vẽ. Có 7 em học cả hát và bơi, 7 em học cả bơi và vẽ, 5 em học cả hát và vẽ, và 2 em học cả ba môn. Hỏi có bao nhiêu em không học môn nào?
+b) Lớp có 52 học sinh. Có 23 em học cờ vua, 30 em học bóng rổ, 21 em học hát. Có 8 em học cả cờ vua và bóng rổ, 11 em học cả bóng rổ và hát, 8 em học cả cờ vua và hát, và 2 em học cả ba môn. Hỏi có bao nhiêu em không học môn nào?
+c) Lớp có 50 học sinh. Có 31 em học hát, 21 em học vẽ, 19 em học bóng rổ. Có 13 em học cả hát và vẽ, 7 em học cả vẽ và bóng rổ, 8 em học cả hát và bóng rổ, và 4 em học cả ba môn. Hỏi có bao nhiêu em không học môn nào?
+d) Lớp có 66 học sinh. Có 33 em học cờ vua, 34 em học bóng rổ, 32 em học vẽ. Có 13 em học cả cờ vua và bóng rổ, 13 em học cả bóng rổ và vẽ, 13 em học cả cờ vua và vẽ, và 6 em học cả ba môn. Hỏi có bao nhiêu em không học môn nào?
+e) Lớp có 47 học sinh. Có 23 em học bóng rổ, 32 em học hát, 23 em học bơi. Có 12 em học cả bóng rổ và hát, 12 em học cả hát và bơi, 12 em học cả bóng rổ và bơi, và 5 em học cả ba môn. Hỏi có bao nhiêu em không học môn nào?
 
 ### Bài 3. (3 điểm) Dãy có hiệu tăng đều
 
-Dãy số bắt đầu bằng 3; hiệu giữa hai số hạng liên tiếp lần lượt là 2, 4, 6, 8, … (mỗi hiệu hơn hiệu trước 2 đơn vị).
+Dãy số bắt đầu bằng 4; hiệu giữa hai số hạng liên tiếp lần lượt là 2, 4, 6, 8, … (mỗi hiệu hơn hiệu trước 2 đơn vị).
 
 a) Viết bốn số hạng đầu của dãy.
 b) Số hạng thứ 6 là số nào?
@@ -322,7 +317,7 @@ f) Tổng của bốn số hạng đầu bằng bao nhiêu?
 
 Tìm cho ra thứ **không đổi** qua mỗi bước.
 
-a) Trên bảng viết các số từ 1 đến 5. Tổng của chúng bằng bao nhiêu?
+a) Trên bảng viết các số từ 1 đến 25. Tổng của chúng bằng bao nhiêu?
 b) Mỗi bước, xoá hai số bất kì và viết thay vào **tổng** của chúng. Tổng các số trên bảng có thay đổi không?
 c) Sau nhiều bước chỉ còn một số. Số đó bằng bao nhiêu?
 d) Nếu mỗi bước thay hai số bằng **hiệu** của chúng thì tổng giảm đi bao nhiêu?
@@ -330,16 +325,15 @@ e) Vì thế tính chẵn lẻ của tổng có thay đổi không?
 f) Số cuối cùng trong trường hợp thay bằng hiệu là số chẵn hay số lẻ?
 g) Số cuối cùng ấy có thể bằng 0 không?
 
-### Bài 5. (3 điểm) Cắt và ghép hình — chu vi thay đổi thế nào
+### Bài 5. (3 điểm) Ba loại hộp, hai quan hệ đổi ngang
 
-Chú ý các cạnh bị ghép vào bên trong.
+Ghi rõ đã chọn loại nào làm chuẩn, và đổi ngược đủ cả ba loại.
 
-a) Ghép 25 hình vuông cạnh 6 cm thành một hình vuông lớn. Tính chu vi hình vuông lớn.
-b) Ghép 3 hình vuông cạnh 7 cm thành một hàng ngang. Tính chu vi hình chữ nhật thu được.
-c) Ghép 4 hình vuông cạnh 18 cm thành một hình vuông lớn. Tính chu vi hình vuông lớn.
-d) Ghép 2 hình vuông cạnh 7 cm thành một hàng ngang. Tính chu vi hình chữ nhật thu được.
-e) Ghép 6 hình vuông cạnh 13 cm thành một hàng ngang. Tính chu vi hình chữ nhật thu được.
-f) Cắt một hình vuông cạnh 14 cm thành hai hình chữ nhật bằng nhau. Tổng chu vi hai hình chữ nhật đó bằng bao nhiêu?
+a) Mua 4 hộp lớn, 7 hộp vừa và 10 hộp nhỏ hết 335 000 đồng. Biết một hộp vừa bằng giá 3 hộp nhỏ, và một hộp lớn bằng giá 3 hộp vừa. Tính giá mỗi loại hộp.
+b) Mua 2 hộp lớn, 3 hộp vừa và 9 hộp nhỏ hết 60 000 đồng. Biết một hộp vừa bằng giá 3 hộp nhỏ, và một hộp lớn bằng giá 2 hộp vừa. Tính giá mỗi loại hộp.
+c) Mua 3 hộp lớn, 5 hộp vừa và 5 hộp nhỏ hết 76 000 đồng. Biết một hộp vừa bằng giá 3 hộp nhỏ, và một hộp lớn bằng giá 2 hộp vừa. Tính giá mỗi loại hộp.
+d) Mua 5 hộp lớn, 4 hộp vừa và 10 hộp nhỏ hết 469 000 đồng. Biết một hộp vừa bằng giá 3 hộp nhỏ, và một hộp lớn bằng giá 3 hộp vừa. Tính giá mỗi loại hộp.
+e) Mua 4 hộp lớn, 5 hộp vừa và 6 hộp nhỏ hết 740 000 đồng. Biết một hộp vừa bằng giá 4 hộp nhỏ, và một hộp lớn bằng giá 3 hộp vừa. Tính giá mỗi loại hộp.
 
 ---
 
@@ -438,74 +432,74 @@ f) Cắt một hình vuông cạnh 14 cm thành hai hình chữ nhật bằng nh
 **Lỗi thường gặp:** Chia tổng cho một trong hai số của tỉ số thay vì cho tổng số phần. Phòng: Vẽ sơ đồ, đếm tổng số đoạn nhỏ trên cả hai đoạn thẳng.
 
 ### Bài IV.1
-**Đáp số:** a) 3 cách · b) 3 cách · c) 5 cách · d) 8 cách · e) 4 cách
-**Hướng giải:** BẪY — Xét thiếu trường hợp. Chọn loại tiền **mệnh giá lớn** làm ẩn để thử, vì nó cho ít khả năng hơn. Với mỗi khả năng, kiểm phần còn lại có chia hết cho mệnh giá kia không.
-**Nhãn tư duy:** TD3, TD4. Điểm chốt: Phải thử từ 0 tờ, không được bỏ qua trường hợp chỉ dùng một loại.
-**Lỗi thường gặp:** Bắt đầu thử từ 1 tờ, làm mất trường hợp không dùng loại ấy. Phòng: Kẻ bảng hai cột và điền từ 0 trở đi, đừng nhảy cóc.
-**Gợi ý 3 tầng:** (1) Nên chọn loại tiền nào làm ẩn để phải thử ít lần hơn? — (2) Nhiều nhất có thể dùng bao nhiêu tờ loại ấy? — (3) Thử từ 0 tờ trở đi, mỗi lần kiểm phần còn lại có chia hết không.
+**Đáp số:** a) Ngọc học vẽ; Đức học cờ vua; Hùng học bơi · b) Phúc học cầu lông; Trang học bóng đá; Ngọc học bóng rổ · c) Trang học bóng đá; Chi học cầu lông; Lan học bóng rổ · d) Hà học cầu lông; Sơn học bóng đá; An học bóng rổ
+**Hướng giải:** BẪY — Đánh dấu đúng mà quên gạch phần còn lại. Mỗi dòng một người, mỗi cột một khả năng. Đánh × cho điều chắc chắn sai. Dòng nào chỉ còn một ô trống thì ô ấy là ✓ — và ngay sau đó phải gạch × cho cả cột chứa ô ấy.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Đặt được một ✓ thì **cả dòng và cả cột** còn lại đều thành ×. Bỏ bước gạch cột là chỗ bài bị tắc giữa chừng.
+**Lỗi thường gặp:** Đánh ✓ rồi đi tiếp luôn, không gạch × cho phần còn lại của cột. Phòng: Sau mỗi lần đặt ✓, dừng lại gạch đủ dòng và cột rồi mới đọc manh mối kế.
+**Gợi ý 3 tầng:** (1) Kẻ bảng ba dòng ba cột trước đã. — (2) Manh mối nào cho biết chắc chắn một ô là sai? — (3) Dòng nào chỉ còn một ô trống thì ô ấy chính là đáp án của dòng ấy.
 
 ### Bài IV.2
-**Đáp số:** a) 7 · b) 7 · c) 11 · d) 13 · e) 17
-**Hướng giải:** Liệt kê các số thoả điều kiện thứ nhất — chúng lập thành dãy cách đều khoảng cách bằng số chia thứ nhất. Đi dọc dãy đó, thử điều kiện thứ hai, gặp số đầu tiên thoả mãn thì dừng.
-**Nhãn tư duy:** TD2, TD6. Điểm chốt: Chỉ **đi dọc một dãy** rồi thử điều kiện còn lại, không thử tất cả số.
-**Lỗi thường gặp:** Thử từng số từ 1 trở đi nên quá lâu và dễ bỏ sót. Phòng: Viết dãy số thoả điều kiện thứ nhất trước, rồi mới lọc.
-**Gợi ý 3 tầng:** (1) Viết vài số chia cho số thứ nhất dư đúng như đề. — (2) Chúng cách đều nhau bao nhiêu đơn vị? — (3) Đi dọc dãy đó và kiểm tra điều kiện thứ hai.
+**Đáp số:** a) số nguyên tố · b) hợp số (ví dụ ước 3) · c) hợp số (ví dụ ước 3) · d) hợp số (ví dụ ước 3) · e) hợp số (ví dụ ước 2)
+**Hướng giải:** BẪY — 91, 121, 143 trông như số nguyên tố nhưng không phải. Số nguyên tố chỉ có đúng hai ước là 1 và chính nó. Để kiểm tra, thử chia lần lượt cho 2, 3, 5, 7, 11… và chỉ cần thử đến khi thương bé hơn hoặc bằng số chia là dừng được.
+**Nhãn tư duy:** TD2. Điểm chốt: Chỉ cần thử các **số nguyên tố nhỏ**, không phải thử mọi số.
+**Lỗi thường gặp:** Thử chia cho mọi số từ 2 đến số đó nên mất thời gian, hoặc kết luận vội. Phòng: Thử theo thứ tự 2, 3, 5, 7, 11, 13 và dừng đúng lúc.
+**Gợi ý 3 tầng:** (1) Số đó có chia hết cho 2 hay 5 không? — (2) Cộng các chữ số xem có chia hết cho 3 không. — (3) Thử tiếp 7, 11, 13; dừng khi thương bé hơn số chia.
 
 ### Bài IV.3
-**Đáp số:** a) 263 phần 440 · b) 122 phần 63 · c) 19 phần 45 · d) 15 phần 14 · e) 4 phần 5
-**Hướng giải:** Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
-**Nhãn tư duy:** TD3, TD5. Điểm chốt: Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều.
-**Lỗi thường gặp:** Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. Phòng: Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút.
-**Gợi ý 3 tầng:** (1) Biểu thức có dấu ngoặc không? — (2) Có thừa số chung ở hai tích không? — (3) Làm nhân chia trước, cộng trừ sau.
+**Đáp số:** a) 337 500 đồng · b) 216 000 đồng · c) 612 000 đồng · d) 179 200 đồng
+**Hướng giải:** BẪY — Cộng hai lần giảm giá thành một. Giảm a% thì còn (100 − a)% của giá đang xét. Giảm hai lần liên tiếp thì lần sau tính trên giá đã giảm, nên phải làm hai bước chứ không cộng hai phần trăm lại.
+**Nhãn tư duy:** TD2, TD5. Điểm chốt: Giảm 20% rồi giảm tiếp 10% **không** bằng giảm 30%.
+**Lỗi thường gặp:** Cộng hai lần giảm giá thành một lần rồi tính một phép. Phòng: Viết ra giá sau lần giảm thứ nhất trước khi làm lần thứ hai.
+**Gợi ý 3 tầng:** (1) Sau lần giảm thứ nhất còn bao nhiêu phần trăm giá niêm yết? — (2) Lần giảm thứ hai tính trên giá nào? — (3) Làm hai bước, đừng cộng gộp hai phần trăm.
 
 ### Bài IV.4
-**Đáp số:** a) 110 · b) 339 · c) 11 · d) 55 · e) 9 570 · f) 19 305
+**Đáp số:** a) 299 · b) 2 092 · c) 150 · d) 150 · e) 157 350 · f) 313 651
 **Hướng giải:** Các số hạng thoả thêm một điều kiện chia hết cũng lập thành một dãy cách đều mới, có khoảng cách là bội chung nhỏ nhất của khoảng cách cũ và số chia. Tìm số hạng đầu tiên thoả điều kiện rồi đếm trên dãy mới.
 **Nhãn tư duy:** TD4, TD2. Điểm chốt: Dãy con cũng **cách đều**, chỉ khác khoảng cách.
 **Lỗi thường gặp:** Duyệt từng số hạng để đếm — không kịp khi dãy dài hàng trăm số. Phòng: Tìm số hạng đầu tiên thoả điều kiện rồi xác định khoảng cách mới.
 **Gợi ý 3 tầng:** (1) Số hạng nào đầu tiên thoả điều kiện? — (2) Số hạng tiếp theo thoả điều kiện cách nó bao nhiêu? — (3) Dãy con cũng cách đều — dùng công thức đếm.
 
 ### Bài IV.5
-**Đáp số:** a) 10 phần 7 giờ · b) 2 giờ · c) 30 phần 17 giờ · d) 60 phần 13 giờ · e) 60 phần 23 giờ · f) 3 giờ 45 phút
-**Hướng giải:** BẪY — Cộng thời gian thay vì cộng năng suất. Không cộng thời gian, mà cộng **năng suất một giờ**. Người xong trong a giờ thì mỗi giờ làm được 1 phần a công việc. Thời gian làm chung bằng 1 chia cho tổng năng suất.
-**Nhãn tư duy:** TD3, TD6. Điểm chốt: Cộng **năng suất**, tuyệt đối không cộng thời gian.
-**Lỗi thường gặp:** Cộng hai khoảng thời gian rồi chia đôi. Phòng: Luôn viết dòng “Mỗi giờ vòi thứ nhất chảy được … bể” trước.
-**Gợi ý 3 tầng:** (1) Mỗi giờ vòi thứ nhất chảy được mấy phần bể? — (2) Mỗi giờ cả hai vòi chảy được mấy phần bể? — (3) Lấy 1 chia cho phần chảy được trong một giờ.
+**Đáp số:** a) xuôi dòng 112 km; ngược dòng 80 km · b) vận tốc thực 28 km/giờ; dòng nước 5 km/giờ · c) xuôi dòng 155 km; ngược dòng 125 km · d) vận tốc thực 20 km/giờ; dòng nước 5 km/giờ
+**Hướng giải:** BẪY — Nhầm vận tốc thực với vận tốc xuôi dòng. Xuôi dòng thì dòng nước đẩy thêm nên cộng; ngược dòng thì dòng nước cản lại nên trừ. Biết cả hai vận tốc xuôi và ngược thì đây chính là bài tổng – hiệu: vận tốc thực là nửa tổng, vận tốc dòng là nửa hiệu.
+**Nhãn tư duy:** TD2, TD5. Điểm chốt: Vận tốc thực là vận tốc khi nước lặng — không bằng vận tốc xuôi dòng, cũng không bằng vận tốc ngược dòng.
+**Lỗi thường gặp:** Lấy vận tốc xuôi dòng làm vận tốc thực rồi cộng thêm vận tốc dòng lần nữa. Phòng: Viết ba đại lượng thành ba dòng riêng, đặt tên rõ trước khi tính.
+**Gợi ý 3 tầng:** (1) Xuôi dòng thì nước đẩy thêm hay cản lại? — (2) Vận tốc xuôi dòng bằng vận tốc thực cộng gì? — (3) Biết cả xuôi và ngược thì đây là bài tổng – hiệu.
 
 ### Bài V.1
-**Đáp số:** a) 7 · b) 7 · c) 6 · d) 9 · e) 8 · f) 7
-**Hướng giải:** BẪY — Số dư 0 ứng với vị trí cuối chu kì. Viết chữ số tận cùng của các tích 1 thừa số, 2 thừa số, 3 thừa số… Dãy chữ số tận cùng lặp lại tuần hoàn với chu kì không quá 4. Lấy số thừa số chia cho độ dài chu kì, số dư cho biết vị trí trong chu kì.
-**Nhãn tư duy:** TD4, TD6. Điểm chốt: Chu kì lặp lại của chữ số tận cùng dài **không quá 4**.
-**Lỗi thường gặp:** Chia lấy dư rồi quên rằng số dư 0 ứng với **số cuối** của chu kì. Phòng: Đánh số vị trí trong chu kì từ 1, và quy ước dư 0 là vị trí cuối.
-**Gợi ý 3 tầng:** (1) Viết chữ số tận cùng của vài tích đầu tiên. — (2) Dãy đó lặp lại sau mấy bước? — (3) Chia số thừa số cho độ dài chu kì và xét số dư.
+**Đáp số:** a) 6 dư 8 · b) 70 · c) 6 dư 1 · d) 12 · e) 54 · f) 5 dư 3
+**Hướng giải:** Viết số có hai chữ số là a × 10 + b, tổng hai chữ số là a + b. So sánh hai biểu thức để tìm quan hệ; chú ý a chạy từ 1 đến 9 và b chạy từ 0 đến 9 nên số trường hợp là hữu hạn, có thể lập bảng.
+**Nhãn tư duy:** TD3, TD6. Điểm chốt: Khi ẩn chỉ nhận hữu hạn giá trị, **lập bảng** là phương pháp chắc chắn nhất.
+**Lỗi thường gặp:** Chia bừa mà không kiểm tra điều kiện chia hết nên nhận đáp số không nguyên. Phòng: Kiểm tra lại đáp số bằng cách thay ngược vào đề.
+**Gợi ý 3 tầng:** (1) Đặt số đó là a × 10 + b. — (2) Tổng hai chữ số là a + b — viết cả hai biểu thức ra cạnh nhau. — (3) Lập bảng a từ 1 đến 9 rồi thử.
 
 ### Bài V.2
-**Đáp số:** a) 1 phần 2 · 2 phần 3 · 3 phần 4 · 4 phần 5 · b) 12 phần 13 · c) đều bé hơn 1 · d) tăng dần · e) vì phần bù tới 1 là 1 phần (n + 1) càng lúc càng bé · f) 1 phần 13
-**Hướng giải:** BẪY — Chiều của phần bù. Phân số dạng n phần (n + 1) luôn bé hơn 1 và còn thiếu đúng 1 phần (n + 1) nữa thì bằng 1. Phần thiếu càng bé thì phân số càng lớn — đó là kỹ thuật **so sánh bằng phần bù**.
-**Nhãn tư duy:** TD6, TD5. Điểm chốt: Phần bù **bé hơn** nghĩa là phân số **lớn hơn**.
-**Lỗi thường gặp:** So phần bù rồi kết luận cùng chiều với phần bù. Phòng: Nghĩ tới chiếc bánh: thiếu ít hơn thì phần đang có nhiều hơn.
-**Gợi ý 3 tầng:** (1) Mỗi phân số còn thiếu bao nhiêu nữa thì bằng 1? — (2) Phần thiếu ấy thay đổi thế nào khi n tăng? — (3) Thiếu ít hơn thì phân số lớn hơn.
+**Đáp số:** a) 0 em · b) 3 em · c) 3 em · d) 0 em · e) 0 em
+**Hướng giải:** Cộng ba nhóm, trừ ba phần chung đôi, rồi **cộng lại** phần chung cả ba. Lý do cộng lại: phần ấy bị đếm ba lần rồi bị trừ ba lần nên biến mất hẳn.
+**Nhãn tư duy:** TD2, TD4, TD6. Điểm chốt: Dấu của phần chung cả ba là **cộng**, không phải trừ. Đây là chỗ sai nhiều nhất của cả dạng bài.
+**Lỗi thường gặp:** Trừ luôn phần chung cả ba lần nữa, ra thiếu. Phòng: Điền số vào hình từ phần giữa ra ngoài rồi cộng bảy phần — cách này không cần nhớ công thức và không sai dấu được.
+**Gợi ý 3 tầng:** (1) Vẽ ba vòng tròn, điền số em học cả ba môn vào phần giữa trước. — (2) Từ đó tính phần chỉ chung đúng hai môn. — (3) Cộng bảy phần lại rồi lấy sĩ số trừ đi.
 
 ### Bài V.3
-**Đáp số:** a) 3, 5, 9, 15 · b) 33 · c) 93 · d) 18 · e) có, khoảng cách 2 · f) 32
+**Đáp số:** a) 4, 6, 10, 16 · b) 34 · c) 94 · d) 18 · e) có, khoảng cách 2 · f) 36
 **Hướng giải:** Đây là dãy có **hiệu bậc hai đều**. Số hạng thứ n bằng số hạng đầu cộng với tổng của (n − 1) hiệu đầu tiên; các hiệu ấy lập thành dãy cách đều nên tổng của chúng tính được bằng công thức tổng dãy cách đều.
 **Nhãn tư duy:** TD4, TD6. Điểm chốt: Số hạng thứ n = số đầu + **tổng (n − 1) hiệu đầu tiên**.
 **Lỗi thường gặp:** Cộng n hiệu thay vì (n − 1) hiệu. Phòng: Kiểm chứng với n = 2: chỉ cộng đúng một hiệu.
 **Gợi ý 3 tầng:** (1) Từ số hạng đầu tới số hạng thứ n phải cộng bao nhiêu hiệu? — (2) Các hiệu đó lập thành dãy gì? — (3) Tính tổng các hiệu bằng công thức tổng dãy cách đều.
 
 ### Bài V.4
-**Đáp số:** a) 15 · b) không thay đổi · c) 15 · d) giảm đi 2 lần số bé — luôn là một số chẵn · e) không thay đổi · f) lẻ · g) không
+**Đáp số:** a) 325 · b) không thay đổi · c) 325 · d) giảm đi 2 lần số bé — luôn là một số chẵn · e) không thay đổi · f) lẻ · g) không
 **Hướng giải:** Chìa khoá là tìm một đại lượng **không đổi** qua mỗi bước. Ở đây là tính chẵn lẻ của tổng: mỗi bước tổng giảm đi một số chẵn nên tính chẵn lẻ giữ nguyên từ đầu đến cuối.
 **Nhãn tư duy:** TD6, TD2. Điểm chốt: Tìm đại lượng **bất biến** rồi so trạng thái đầu với trạng thái cuối.
 **Lỗi thường gặp:** Thử vài trường hợp rồi kết luận, không chứng minh được cho mọi cách làm. Phòng: Sau khi đoán, kiểm tra: đại lượng đó đổi thế nào sau **một** bước?
 **Gợi ý 3 tầng:** (1) Sau mỗi bước, tổng các số trên bảng đổi bao nhiêu? — (2) Lượng thay đổi ấy là số chẵn hay số lẻ? — (3) Vậy tính chẵn lẻ của tổng có đổi không?
 
 ### Bài V.5
-**Đáp số:** a) 120 cm · b) 56 cm · c) 144 cm · d) 42 cm · e) 182 cm · f) 84 cm
-**Hướng giải:** Khi ghép hai hình lại, các cạnh dán vào nhau **không còn nằm trên đường bao** nên không tính vào chu vi. Ngược lại, khi cắt một hình thành hai phần thì xuất hiện thêm hai cạnh mới trên đường bao, nên tổng chu vi tăng lên đúng hai lần đường cắt.
-**Nhãn tư duy:** TD6, TD3. Điểm chốt: Diện tích giữ nguyên khi cắt ghép, nhưng **chu vi thay đổi**.
-**Lỗi thường gặp:** Cộng chu vi các hình nhỏ lại rồi coi đó là chu vi hình ghép. Phòng: Tô đậm đường bao của hình mới rồi mới tính.
-**Gợi ý 3 tầng:** (1) Vẽ hình sau khi ghép hoặc cắt. — (2) Đường bao của hình mới gồm những cạnh nào? — (3) Cạnh nào bị dán vào trong thì không tính.
+**Đáp số:** a) nhỏ 5 000 đồng; vừa 15 000 đồng; lớn 45 000 đồng · b) nhỏ 2 000 đồng; vừa 6 000 đồng; lớn 12 000 đồng · c) nhỏ 2 000 đồng; vừa 6 000 đồng; lớn 12 000 đồng · d) nhỏ 7 000 đồng; vừa 21 000 đồng; lớn 63 000 đồng · e) nhỏ 10 000 đồng; vừa 40 000 đồng; lớn 120 000 đồng
+**Hướng giải:** Nối hai quan hệ đổi ngang lại để đưa loại lớn nhất về loại nhỏ nhất, rồi quy cả đơn hàng về loại nhỏ. Giải xong đổi ngược theo đúng thứ tự ngược lại.
+**Nhãn tư duy:** TD2, TD5, TD6. Điểm chốt: Nối hai quan hệ là phép **nhân**, không phải phép cộng: một lớn bằng k₁ × k₂ nhỏ, không phải k₁ + k₂ nhỏ.
+**Lỗi thường gặp:** Cộng hai hệ số đổi ngang, hoặc chỉ đổi ngược một loại rồi dừng. Phòng: Vẽ ba mức thành ba tầng, ghi hệ số trên mỗi mũi tên.
+**Gợi ý 3 tầng:** (1) Một hộp lớn bằng bao nhiêu hộp nhỏ? — (2) Đổi cả đơn hàng về hộp nhỏ thì được bao nhiêu hộp? — (3) Đề hỏi giá mấy loại? Đổi ngược đủ chừng ấy loại.
 
 ---
 

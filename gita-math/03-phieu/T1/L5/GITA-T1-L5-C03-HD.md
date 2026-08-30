@@ -52,20 +52,20 @@ Học thuộc theo cặp **dạng bài – công thức**, không học rời.
 
 | # | Dùng cho dạng bài | Công thức hoặc quy tắc |
 |---:|---|---|
-| 1 | Tỉ lệ bản đồ, tỉ lệ xích | Tỉ lệ, đổi đơn vị đo độ dài |
-| 2 | Bài toán tuổi | Bất biến hiệu số tuổi, tổng – hiệu, tổng – tỉ |
-| 3 | Tổng nhiều số có ràng buộc; tổng – tỉ | Trung bình cộng của dãy cách đều; tổng – tỉ |
-| 4 | Tỉ số phần trăm trong mua bán | Tỉ số phần trăm, mốc quy chiếu 100% |
+| 1 | Chuyển động ngược chiều, tính quãng đường từng xe | Quãng đường – vận tốc – thời gian, tỉ lệ thuận |
+| 2 | Phương pháp khử | Phép nhân, phép chia; so sánh hai tình huống |
+| 3 | Tỉ lệ bản đồ, tỉ lệ xích | Tỉ lệ, đổi đơn vị đo độ dài |
+| 4 | Chuyển động ngược chiều, cùng chiều | Quan hệ quãng đường – vận tốc – thời gian |
 | 5 | Phương pháp thay thế | Quan hệ gấp – kém; phép nhân, phép chia |
-| 6 | Công việc chung | Năng suất, phân số, phép chia phân số |
-| 7 | Thể tích hình hộp chữ nhật trong thực tế | V = dài × rộng × cao; 1 m³ = 1 000 lít |
-| 8 | Phương pháp khử | Phép nhân, phép chia; so sánh hai tình huống |
-| 9 | Quan hệ nhiều hơn – ít hơn, gấp – kém | Bốn phép tính, từ khoá chỉ quan hệ |
-| 10 | Chuyển động ngược chiều, cùng chiều | Quan hệ quãng đường – vận tốc – thời gian |
-| 11 | Bài toán tổng – tỉ | Tỉ số, sơ đồ đoạn thẳng, chia theo tỉ lệ |
-| 12 | Chuyển động trên dòng nước | Vận tốc – quãng đường – thời gian; tổng – hiệu |
-| 13 | Bài toán tổng – hiệu | Công thức tổng – hiệu, sơ đồ đoạn thẳng |
-| 14 | Giả thiết tạm | Phương pháp giả thiết tạm |
+| 6 | Thể tích hình hộp chữ nhật trong thực tế | V = dài × rộng × cao; 1 m³ = 1 000 lít |
+| 7 | Tổng nhiều số có ràng buộc; tổng – tỉ | Trung bình cộng của dãy cách đều; tổng – tỉ |
+| 8 | Ba dạng bài trung bình cộng | Quan hệ tổng – số lượng – trung bình cộng |
+| 9 | Tỉ số phần trăm trong mua bán | Tỉ số phần trăm, mốc quy chiếu 100% |
+| 10 | Phương pháp thay thế | Quan hệ gấp – kém bắc cầu; nhân, chia |
+| 11 | Bài toán tổng – hiệu | Công thức tổng – hiệu, sơ đồ đoạn thẳng |
+| 12 | Chia tỉ lệ nhiều phần; bài toán trộn | Tỉ số, chia theo tỉ lệ, nhân với đơn giá |
+| 13 | Chuyển động trên dòng nước | Vận tốc – quãng đường – thời gian; tổng – hiệu |
+| 14 | Tổng – tỉ có tỉ số thay đổi | Tổng – tỉ, đại lượng không đổi |
 
 ---
 
@@ -97,20 +97,19 @@ Trước khi tra bảng, đi qua cây quyết định đọc vị của nhóm ch
 
 | Dạng bài | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất |
 |---|---|---|---|
-| Tỉ lệ bản đồ, tỉ lệ xích | Có kí hiệu tỉ lệ dạng 1 : n | Nhân hoặc chia theo tỉ lệ rồi đổi đơn vị | Tỉ lệ 1 : 1 000 thì 1 cm bản đồ đúng bằng 10 m thật. |
-| Bài toán tuổi | Xuất hiện mốc thời gian: hiện nay, sau … năm, cách đây … năm | Kẻ bảng thời gian, bám vào hiệu tuổi không đổi | Tổng tuổi của n người sau k năm tăng thêm đúng n × k. |
-| Tổng nhiều số có ràng buộc; tổng – tỉ | Ba số hơn kém nhau cùng một lượng; hoặc tổng đi cùng tỉ số | Tìm số giữa trước; sau đó chia theo tỉ lệ | Tổng ba số cách đều luôn chia hết cho 3. |
-| Tỉ số phần trăm trong mua bán | Từ khoá “giảm giá”, “tăng giá”, “lãi”, “lỗ” | Chốt mốc 100% rồi cộng trừ phần trăm | Giảm 20% nghĩa là còn 80% — nhân thẳng một lần thay vì trừ hai bước. |
-| Phương pháp thay thế | Đề cho **quan hệ đổi ngang** giữa hai loại cùng một tổng chung | Quy hết về loại chuẩn, giải, rồi đổi ngược | Tổng số cái sau khi đổi bằng số loại rẻ cộng số loại đắt nhân hệ số. |
-| Công việc chung | “Làm một mình trong … giờ”, “cùng làm” | Quy công việc về 1, cộng năng suất | Thời gian làm chung luôn **bé hơn** thời gian của người làm nhanh nhất — dùng để loại đáp số sai ngay. |
-| Thể tích hình hộp chữ nhật trong thực tế | Bể nước, thùng, hộp có ba kích thước | Diện tích đáy × chiều cao tương ứng | Tính diện tích đáy một lần rồi dùng lại cho mọi câu hỏi về bể đó. |
+| Chuyển động ngược chiều, tính quãng đường từng xe | Hỏi quãng đường **của một xe** tính đến lúc gặp nhau | Thời gian gặp → quãng đường từng xe | Quãng đường hai xe đi tỉ lệ thuận với vận tốc — chia quãng cách theo tỉ số vận tốc là ra ngay. |
 | Phương pháp khử | Đề cho **hai lần mua** cùng hai loại hàng với hai tổng tiền khác nhau | Trừ hai tình huống để triệt tiêu loại có số lượng bằng nhau | Nếu một loại đã bằng nhau sẵn thì trừ được ngay, không cần nhân. |
-| Quan hệ nhiều hơn – ít hơn, gấp – kém | Các cụm “nhiều hơn”, “ít hơn”, “gấp … lần”, “kém … lần” | Đọc vị từ khoá → chọn phép tính | Kết quả lớn hơn hay bé hơn số đã cho? Trả lời được là biết ngay phép tính. |
+| Tỉ lệ bản đồ, tỉ lệ xích | Có kí hiệu tỉ lệ dạng 1 : n | Nhân hoặc chia theo tỉ lệ rồi đổi đơn vị | Tỉ lệ 1 : 1 000 thì 1 cm bản đồ đúng bằng 10 m thật. |
 | Chuyển động ngược chiều, cùng chiều | “Đi ngược chiều để gặp nhau”, “đuổi theo” | Xác định chiều → tổng hay hiệu vận tốc → chia | Vẽ hai mũi tên: chụm vào nhau thì cộng, cùng hướng thì trừ. |
-| Bài toán tổng – tỉ | Đề cho **tổng** và **tỉ số** (phân số hoặc “gấp … lần”) | Sơ đồ phần bằng nhau → giá trị một phần → nhân | Tổng luôn chia hết cho tổng số phần — nếu không chia hết là đọc sai tỉ số. |
-| Chuyển động trên dòng nước | Đề nhắc **dòng nước**, **xuôi dòng**, **ngược dòng**, ca nô hay thuyền | Áp hai công thức xuôi – ngược; biết cả hai thì quy về tổng – hiệu | Vận tốc dòng nước = (vận tốc xuôi − vận tốc ngược) : 2. |
+| Phương pháp thay thế | Đề cho **quan hệ đổi ngang** giữa hai loại cùng một tổng chung | Quy hết về loại chuẩn, giải, rồi đổi ngược | Tổng số cái sau khi đổi bằng số loại rẻ cộng số loại đắt nhân hệ số. |
+| Thể tích hình hộp chữ nhật trong thực tế | Bể nước, thùng, hộp có ba kích thước | Diện tích đáy × chiều cao tương ứng | Tính diện tích đáy một lần rồi dùng lại cho mọi câu hỏi về bể đó. |
+| Tổng nhiều số có ràng buộc; tổng – tỉ | Ba số hơn kém nhau cùng một lượng; hoặc tổng đi cùng tỉ số | Tìm số giữa trước; sau đó chia theo tỉ lệ | Tổng ba số cách đều luôn chia hết cho 3. |
+| Ba dạng bài trung bình cộng | Cụm “trung bình mỗi …” | Đi qua tổng làm trung gian | Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng. |
+| Tỉ số phần trăm trong mua bán | Từ khoá “giảm giá”, “tăng giá”, “lãi”, “lỗ” | Chốt mốc 100% rồi cộng trừ phần trăm | Giảm 20% nghĩa là còn 80% — nhân thẳng một lần thay vì trừ hai bước. |
 | Bài toán tổng – hiệu | Đề cho **tổng** và **hiệu** của hai số | Vẽ sơ đồ, đưa về hai phần bằng nhau | Số lớn và số bé luôn có trung bình cộng bằng nửa tổng. |
-| Giả thiết tạm | Hai loại đối tượng, biết tổng số và tổng của một đại lượng khác | Giả sử đồng nhất một loại → tính phần chênh → chia cho hiệu đơn vị | Số chó = (số chân − 2 × số con) : 2 — thuộc công thức rút gọn để nhẩm. |
+| Chia tỉ lệ nhiều phần; bài toán trộn | “Tỉ lệ với … , … , …” hoặc “trộn … với …” | Tổng số phần → giá trị một phần → nhân | Tổng luôn chia hết cho tổng số phần; không chia hết là đọc sai tỉ lệ. |
+| Chuyển động trên dòng nước | Đề nhắc **dòng nước**, **xuôi dòng**, **ngược dòng**, ca nô hay thuyền | Áp hai công thức xuôi – ngược; biết cả hai thì quy về tổng – hiệu | Vận tốc dòng nước = (vận tốc xuôi − vận tốc ngược) : 2. |
+| Tổng – tỉ có tỉ số thay đổi | “Phải thêm (bớt) bao nhiêu để tỉ số trở thành …” | Xác định đại lượng bất biến → tính lại đại lượng kia | Số cần thêm = số bé × (tỉ số mới − tỉ số cũ). |
 
 ---
 
@@ -129,26 +128,26 @@ Trước khi tra bảng, đi qua cây quyết định đọc vị của nhóm ch
 
 Trả lời được ngay trong 10 giây thì đánh ✔. Phải nghĩ lâu thì đánh ✘ và làm lại phần tương ứng.
 
-- [ ] **1.** Em nêu được dấu hiệu nhận biết của dạng “Tỉ lệ bản đồ, tỉ lệ xích” chứ?
-- [ ] **2.** Em nhớ công thức: Tỉ lệ, đổi đơn vị đo độ dài?
-- [ ] **3.** Em nêu được dấu hiệu nhận biết của dạng “Bài toán tuổi” chứ?
-- [ ] **4.** Em nhớ công thức: Bất biến hiệu số tuổi, tổng – hiệu, tổng – tỉ?
-- [ ] **5.** Em nêu được dấu hiệu nhận biết của dạng “Tổng nhiều số có ràng buộc; tổng – tỉ” chứ?
-- [ ] **6.** Em nhớ công thức: Trung bình cộng của dãy cách đều; tổng – tỉ?
-- [ ] **7.** Em nêu được dấu hiệu nhận biết của dạng “Tỉ số phần trăm trong mua bán” chứ?
-- [ ] **8.** Em nhớ công thức: Tỉ số phần trăm, mốc quy chiếu 100%?
+- [ ] **1.** Em nêu được dấu hiệu nhận biết của dạng “Chuyển động ngược chiều, tính quãng đường từng xe” chứ?
+- [ ] **2.** Em nhớ công thức: Quãng đường – vận tốc – thời gian, tỉ lệ thuận?
+- [ ] **3.** Em nêu được dấu hiệu nhận biết của dạng “Phương pháp khử” chứ?
+- [ ] **4.** Em nhớ công thức: Phép nhân, phép chia; so sánh hai tình huống?
+- [ ] **5.** Em nêu được dấu hiệu nhận biết của dạng “Tỉ lệ bản đồ, tỉ lệ xích” chứ?
+- [ ] **6.** Em nhớ công thức: Tỉ lệ, đổi đơn vị đo độ dài?
+- [ ] **7.** Em nêu được dấu hiệu nhận biết của dạng “Chuyển động ngược chiều, cùng chiều” chứ?
+- [ ] **8.** Em nhớ công thức: Quan hệ quãng đường – vận tốc – thời gian?
 - [ ] **9.** Em nêu được dấu hiệu nhận biết của dạng “Phương pháp thay thế” chứ?
 - [ ] **10.** Em nhớ công thức: Quan hệ gấp – kém; phép nhân, phép chia?
-- [ ] **11.** Em nêu được dấu hiệu nhận biết của dạng “Công việc chung” chứ?
-- [ ] **12.** Em nhớ công thức: Năng suất, phân số, phép chia phân số?
-- [ ] **13.** Em nêu được dấu hiệu nhận biết của dạng “Thể tích hình hộp chữ nhật trong thực tế” chứ?
-- [ ] **14.** Em nhớ công thức: V = dài × rộng × cao; 1 m³ = 1 000 lít?
-- [ ] **15.** Em nêu được dấu hiệu nhận biết của dạng “Phương pháp khử” chứ?
-- [ ] **16.** Em nhớ công thức: Phép nhân, phép chia; so sánh hai tình huống?
-- [ ] **17.** Em nêu được dấu hiệu nhận biết của dạng “Quan hệ nhiều hơn – ít hơn, gấp – kém” chứ?
-- [ ] **18.** Em nhớ công thức: Bốn phép tính, từ khoá chỉ quan hệ?
-- [ ] **19.** Em nêu được dấu hiệu nhận biết của dạng “Chuyển động ngược chiều, cùng chiều” chứ?
-- [ ] **20.** Em nhớ công thức: Quan hệ quãng đường – vận tốc – thời gian?
+- [ ] **11.** Em nêu được dấu hiệu nhận biết của dạng “Thể tích hình hộp chữ nhật trong thực tế” chứ?
+- [ ] **12.** Em nhớ công thức: V = dài × rộng × cao; 1 m³ = 1 000 lít?
+- [ ] **13.** Em nêu được dấu hiệu nhận biết của dạng “Tổng nhiều số có ràng buộc; tổng – tỉ” chứ?
+- [ ] **14.** Em nhớ công thức: Trung bình cộng của dãy cách đều; tổng – tỉ?
+- [ ] **15.** Em nêu được dấu hiệu nhận biết của dạng “Ba dạng bài trung bình cộng” chứ?
+- [ ] **16.** Em nhớ công thức: Quan hệ tổng – số lượng – trung bình cộng?
+- [ ] **17.** Em nêu được dấu hiệu nhận biết của dạng “Tỉ số phần trăm trong mua bán” chứ?
+- [ ] **18.** Em nhớ công thức: Tỉ số phần trăm, mốc quy chiếu 100%?
+- [ ] **19.** Em nêu được dấu hiệu nhận biết của dạng “Phương pháp thay thế” chứ?
+- [ ] **20.** Em nhớ công thức: Quan hệ gấp – kém bắc cầu; nhân, chia?
 
 **Chuẩn đạt:** ✔ từ 18/20 câu trở lên.
 
@@ -160,20 +159,20 @@ Trả lời được ngay trong 10 giây thì đánh ✔. Phải nghĩ lâu thì
 
 | # | Lỗi thường gặp | Cách phòng |
 |---:|---|---|
-| 1 | Đổi mét sang xăng-ti-mét ngay từ đầu rồi lại nhân tỉ lệ một lần nữa. | Viết rõ một dòng: “1 cm bản đồ = … cm thật” trước khi tính. |
-| 2 | Cộng thêm số năm vào cả hiệu số tuổi. | Kẻ bảng ba dòng: trước kia – hiện nay – sau này, ghi rõ tuổi từng người. |
-| 3 | Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. | Nhìn ra “cách đều” trước khi đặt bút. |
-| 4 | Chia tiền lãi cho giá bán nên ra tỉ lệ nhỏ hơn thực tế. | Viết dòng đầu tiên: “Giá mua = 100%”. |
+| 1 | Chia quãng đường theo tỉ lệ sai, hoặc lấy quãng đường chia đôi. | Cộng hai quãng đường vừa tính lại, phải đúng bằng quãng cách ban đầu. |
+| 2 | Trừ ngay khi hai dòng còn khác nhau ở cả hai loại — khử hụt, ra sai. | Viết hai dòng thẳng cột, khoanh tròn loại có số lượng bằng nhau. |
+| 3 | Đổi mét sang xăng-ti-mét ngay từ đầu rồi lại nhân tỉ lệ một lần nữa. | Viết rõ một dòng: “1 cm bản đồ = … cm thật” trước khi tính. |
+| 4 | Dùng tổng vận tốc cho bài đuổi nhau. | Vẽ mũi tên chỉ hướng hai xe trước khi chọn công thức. |
 | 5 | Tính ra giá loại chuẩn rồi dừng, quên nhân lên cho loại kia. | Gạch chân câu hỏi cuối trước khi tính, để biết đề hỏi mấy đại lượng. |
-| 6 | Cộng hai khoảng thời gian rồi chia đôi. | Luôn viết dòng “Mỗi giờ người thứ nhất làm được … công việc” trước. |
-| 7 | Lấy chiều cao bể để tính lượng nước đang có. | Vẽ mặt cắt của bể và tô phần nước trước khi tính. |
-| 8 | Trừ ngay khi hai dòng còn khác nhau ở cả hai loại — khử hụt, ra sai. | Viết hai dòng thẳng cột, khoanh tròn loại có số lượng bằng nhau. |
-| 9 | Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. | Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh. |
-| 10 | Dùng tổng vận tốc cho bài đuổi nhau. | Vẽ mũi tên chỉ hướng hai xe trước khi chọn công thức. |
-| 11 | Chia tổng cho một trong hai số của tỉ số thay vì cho tổng số phần. | Vẽ sơ đồ, đếm tổng số đoạn nhỏ trên cả hai đoạn thẳng. |
-| 12 | Lấy vận tốc xuôi dòng làm vận tốc thực rồi cộng thêm vận tốc dòng lần nữa. | Viết ba đại lượng thành ba dòng riêng, đặt tên rõ trước khi tính. |
-| 13 | Lấy (tổng + hiệu) : 2 rồi gọi đó là số bé. | Vẽ sơ đồ đoạn thẳng trước, đoạn dài hơn luôn là số lớn. |
-| 14 | Chia số chân thiếu cho 4 thay vì cho hiệu số chân của hai loài. | Thử lại: nhân ngược ra tổng số chân xem có khớp không. |
+| 6 | Lấy chiều cao bể để tính lượng nước đang có. | Vẽ mặt cắt của bể và tô phần nước trước khi tính. |
+| 7 | Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. | Nhìn ra “cách đều” trước khi đặt bút. |
+| 8 | Đi tìm ngay số còn thiếu mà chưa tính tổng. | Bước đầu tiên luôn viết: “Tổng = trung bình cộng × số ngày”. |
+| 9 | Chia tiền lãi cho giá bán nên ra tỉ lệ nhỏ hơn thực tế. | Viết dòng đầu tiên: “Giá mua = 100%”. |
+| 10 | Cộng hai hệ số đổi ngang, hoặc chỉ đổi ngược một loại rồi dừng. | Vẽ ba mức thành ba tầng, ghi hệ số trên mỗi mũi tên. |
+| 11 | Lấy (tổng + hiệu) : 2 rồi gọi đó là số bé. | Vẽ sơ đồ đoạn thẳng trước, đoạn dài hơn luôn là số lớn. |
+| 12 | Chia tổng cho 3 vì thấy có ba tổ. | Đếm số phần trên sơ đồ trước khi chia. |
+| 13 | Lấy vận tốc xuôi dòng làm vận tốc thực rồi cộng thêm vận tốc dòng lần nữa. | Viết ba đại lượng thành ba dòng riêng, đặt tên rõ trước khi tính. |
+| 14 | Lấy hiệu hai tỉ số nhân với tổng ban đầu. | Viết rõ ba dòng: số bé, số lớn cũ, số lớn mới. |
 
 ---
 

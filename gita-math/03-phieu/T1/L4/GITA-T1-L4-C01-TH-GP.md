@@ -54,10 +54,10 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần IV**
 
-- **Bài IV.1** — a) 95 · b) 18 · c) 86 · d) 54
-- **Bài IV.2** — a) hợp số (ví dụ ước 2) · b) hợp số (ví dụ ước 2) · c) số nguyên tố · d) hợp số (ví dụ ước 5) · e) hợp số (ví dụ ước 2)
-- **Bài IV.3** — a) 1 000 · b) 949 · c) 1 000 · d) 1 000 · e) 1 000
-- **Bài IV.4** — a) 5 phần 6 · 11 phần 24 · 19 phần 24 · 1 phần 3 · 5 phần 24 · b) 5 phần 24 < 1 phần 3 < 11 phần 24 < 19 phần 24 < 5 phần 6 · c) 5 phần 6 · d) 5 phần 24 · e) 5 phần 8 · f) không, tất cả đều bé hơn 1
+- **Bài IV.1** — a) 61 · b) 72 · c) 86 · d) 54 · e) 18 · f) 75
+- **Bài IV.2** — a) số nguyên tố · b) hợp số (ví dụ ước 3) · c) số nguyên tố · d) hợp số (ví dụ ước 5) · e) hợp số (ví dụ ước 2)
+- **Bài IV.3** — a) 1 phần 2 · 3 phần 4 · 5 phần 12 · 5 phần 6 · 1 phần 12 · b) 1 phần 12 < 5 phần 12 < 1 phần 2 < 3 phần 4 < 5 phần 6 · c) 5 phần 6 · d) 1 phần 12 · e) 3 phần 4 · f) không, tất cả đều bé hơn 1
+- **Bài IV.4** — a) 1 000 · b) 495 · c) 495 · d) 1 000
 - **Bài IV.5** — a) 28 · b) 27 · c) 1 · d) 9 · e) 35 · f) 20
 
 **Phần V**
@@ -388,11 +388,11 @@ Viết cấu tạo số theo chữ: số ab bằng a × 10 + b, số ba bằng b
 
 Hiệu hai số: (a × 10 + b) − (b × 10 + a) = a × 9 − b × 9 = (a − b) × 9.
 
-Mà hiệu ấy bằng 36, nên a − b = 36 : 9 = 4.
+Mà hiệu ấy bằng 45, nên a − b = 45 : 9 = 5.
 
-Đề còn cho a + b = 14. Biết tổng và hiệu hai chữ số: a = (14 + 4) : 2 = 9, b = 5.
+Đề còn cho a + b = 7. Biết tổng và hiệu hai chữ số: a = (7 + 5) : 2 = 6, b = 1.
 
-Kiểm lại a khác 0 vì a là chữ số hàng chục. Số phải tìm là **95**.
+Kiểm lại a khác 0 vì a là chữ số hàng chục. Số phải tìm là **61**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Viết số theo cấu tạo: số có hai chữ số ab bằng a × 10 + b. Thay vào điều kiện đề cho rồi rút gọn — thường ra một quan hệ rất gọn giữa a và b.
 
@@ -408,7 +408,7 @@ Kiểm lại a khác 0 vì a là chữ số hàng chục. Số phải tìm là *
 
 **Các bước giải**
 
-Xét ý a: Số 18 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
+Xét ý a: Số 73 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
 
 Đọc vị: đây là dạng **Nhận biết số nguyên tố, hợp số**; dấu hiệu là Câu hỏi “là số nguyên tố hay hợp số”.
 
@@ -418,19 +418,41 @@ Cách làm: Thử chia theo dãy số nguyên tố tăng dần, dừng đúng ng
 
 Lối tắt: Loại ngay các số chẵn lớn hơn 2 và các số tận cùng bằng 5 lớn hơn 5.
 
-Kết quả: **hợp số (ví dụ ước 2)**.
+Kết quả: **số nguyên tố**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Số nguyên tố chỉ có đúng hai ước là 1 và chính nó. Để kiểm tra, thử chia lần lượt cho 2, 3, 5, 7, 11… và chỉ cần thử đến khi thương bé hơn hoặc bằng số chia là dừng được.
 
 *Điểm chốt:* Chỉ cần thử các **số nguyên tố nhỏ**, không phải thử mọi số.
 
-### Bài IV.3 — Thêm, bớt, đổi chỗ chữ số
+### Bài IV.3 — Rút gọn, so sánh và sắp thứ tự phân số
+
+**Các bước giải**
+
+Các phân số đều có cùng mẫu số 12 nên so sánh **tử số** là đủ.
+
+Sắp tử số từ bé đến lớn rồi ghi lại phân số tương ứng.
+
+Kết quả: 1 phần 12 < 5 phần 12 < 1 phần 2 < 3 phần 4 < 5 phần 6.
+
+Hiệu của phân số lớn nhất và bé nhất: 5 phần 6 − 1 phần 12 = 3 phần 4.
+
+Đáp số ý b: **1 phần 12 < 5 phần 12 < 1 phần 2 < 3 phần 4 < 5 phần 6**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Cùng mẫu số thì so tử số. Khác mẫu thì quy đồng hoặc so với 1 và với một nửa. Rút gọn về tối giản trước khi trình bày kết quả.
+
+*Điểm chốt:* Cùng mẫu số thì **chỉ cần so tử số**.
+
+*Muốn khó hơn:* Trộn thêm số thập phân vào dãy để sắp thứ tự chung.
+
+*Phải chắc trước khi làm bài này:* Rút gọn phân số và quy đồng mẫu số.
+
+### Bài IV.4 — Thêm, bớt, đổi chỗ chữ số
 
 > **BẪY — Bên trái hay bên phải.**
 
 **Các bước giải**
 
-Xét ý a: Viết thêm chữ số 1 vào bên trái số 750 thì được số mới. Số mới hơn số ban đầu bao nhiêu đơn vị?
+Xét ý a: Viết thêm chữ số 1 vào bên trái số 878 thì được số mới. Số mới hơn số ban đầu bao nhiêu đơn vị?
 
 Đọc vị: đây là dạng **Biến đổi số bằng cách thêm, bớt, đổi chỗ chữ số**; dấu hiệu là Đề nói “xoá chữ số”, “viết thêm chữ số”, “đổi chỗ”.
 
@@ -445,28 +467,6 @@ Kết quả: **1 000**.
 **Cách nghĩ chung cho mọi bài cùng dạng.** Viết số có ba chữ số dạng **a × 100 + b × 10 + c**. Xoá chữ số hàng trăm là bớt đi a × 100. Viết thêm chữ số 1 vào bên trái một số có ba chữ số là cộng thêm 1 000. Đổi chỗ hàng trăm với hàng đơn vị làm số thay đổi 99 lần hiệu hai chữ số đó.
 
 *Điểm chốt:* Thêm chữ số vào **bên trái** là cộng thêm; thêm vào **bên phải** là nhân 10 rồi cộng.
-
-### Bài IV.4 — Rút gọn, so sánh và sắp thứ tự phân số
-
-**Các bước giải**
-
-Các phân số đều có cùng mẫu số 24 nên so sánh **tử số** là đủ.
-
-Sắp tử số từ bé đến lớn rồi ghi lại phân số tương ứng.
-
-Kết quả: 5 phần 24 < 1 phần 3 < 11 phần 24 < 19 phần 24 < 5 phần 6.
-
-Hiệu của phân số lớn nhất và bé nhất: 5 phần 6 − 5 phần 24 = 5 phần 8.
-
-Đáp số ý b: **5 phần 24 < 1 phần 3 < 11 phần 24 < 19 phần 24 < 5 phần 6**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Cùng mẫu số thì so tử số. Khác mẫu thì quy đồng hoặc so với 1 và với một nửa. Rút gọn về tối giản trước khi trình bày kết quả.
-
-*Điểm chốt:* Cùng mẫu số thì **chỉ cần so tử số**.
-
-*Muốn khó hơn:* Trộn thêm số thập phân vào dãy để sắp thứ tự chung.
-
-*Phải chắc trước khi làm bài này:* Rút gọn phân số và quy đồng mẫu số.
 
 ### Bài IV.5 — Tìm số theo hai điều kiện chia có dư
 
@@ -621,10 +621,10 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.3 | Lập số và đếm số lập được từ một bộ chữ số | Quy tắc nhân trong phép đếm, điều kiện chữ số đứng đầu | Đề cho một bộ chữ số và yêu cầu lập số | Cố định hàng cao nhất rồi hoán vị các hàng còn lại | Ba chữ số khác 0 lập được 3 × 2 × 1 = 6 số; nếu có chữ số 0 thì chỉ còn 2 × 2 × 1 = 4 số. | 349 · 394 · 439 · 493 · 934 · 943 · 6 · 943 · 349… |
 | III.4 | Dãy số tự nhiên liên tiếp có tổng cho trước | Trung bình cộng, dãy cách đều | Cụm “… số tự nhiên liên tiếp có tổng bằng …” | Tìm số giữa bằng phép chia rồi suy ra hai đầu dãy | Tổng của n số liên tiếp (n lẻ) luôn chia hết cho n. | 448 · 224 · 246 · 94… |
 | III.5 | Đếm số chia hết đồng thời cho nhiều số | Bội chung nhỏ nhất, dãy số cách đều | Cụm “vừa chia hết cho … vừa chia hết cho …” | Quy về một số chia duy nhất là BCNN rồi đếm | Chia hết cho 2 và 5 thì tận cùng là 0; chia hết cho 2 và 3 thì chia hết cho 6. | 9 số, bé nhất là 180 · 29 số, bé nhất là 276 · 7 số, bé nhất là 90 · 58 số, bé nhất là 90… |
-| IV.1 | Dùng chữ thay số | Cấu tạo thập phân của số; tổng – hiệu | Đề viết số bằng chữ hoặc bằng dấu sao và cho quan hệ giữa các chữ số | Viết cấu tạo số theo chữ, thay vào điều kiện rồi rút gọn | Đổi chỗ hai chữ số của số có hai chữ số thì hiệu luôn là bội của 9. | 95 · 18 · 86 · 54 |
-| IV.2 | Nhận biết số nguyên tố, hợp số | Định nghĩa số nguyên tố, dấu hiệu chia hết | Câu hỏi “là số nguyên tố hay hợp số” | Thử chia theo dãy số nguyên tố tăng dần, dừng đúng ngưỡng | Loại ngay các số chẵn lớn hơn 2 và các số tận cùng bằng 5 lớn hơn 5. | hợp số (ví dụ ước 2) · hợp số (ví dụ ước 2) · số nguyên tố · hợp số (ví dụ ước 5)… |
-| IV.3 | Biến đổi số bằng cách thêm, bớt, đổi chỗ chữ số | Cấu tạo thập phân, hiệu hai số | Đề nói “xoá chữ số”, “viết thêm chữ số”, “đổi chỗ” | Viết cả hai số theo cấu tạo rồi lấy hiệu | Đổi chỗ hàng trăm với hàng đơn vị: hiệu = 99 × (hiệu hai chữ số). | 1 000 · 949 · 1 000 · 1 000… |
-| IV.4 | Rút gọn, so sánh, sắp thứ tự phân số | Tính chất cơ bản của phân số; so sánh phân số | Một nhóm phân số cần sắp thứ tự | Rút gọn → so cùng mẫu hoặc quy đồng | So với 1 và với một nửa trước — nhiều phân số phân loại được ngay. | 5 phần 6 · 11 phần 24 · 19 phần 24 · 1 phần 3 · 5 phần 24 · 5 phần 24 < 1 phần 3 < 11 phần 24 < 19 phần 24 < 5 phần 6 · 5 phần 6 · 5 phần 24… |
+| IV.1 | Dùng chữ thay số | Cấu tạo thập phân của số; tổng – hiệu | Đề viết số bằng chữ hoặc bằng dấu sao và cho quan hệ giữa các chữ số | Viết cấu tạo số theo chữ, thay vào điều kiện rồi rút gọn | Đổi chỗ hai chữ số của số có hai chữ số thì hiệu luôn là bội của 9. | 61 · 72 · 86 · 54… |
+| IV.2 | Nhận biết số nguyên tố, hợp số | Định nghĩa số nguyên tố, dấu hiệu chia hết | Câu hỏi “là số nguyên tố hay hợp số” | Thử chia theo dãy số nguyên tố tăng dần, dừng đúng ngưỡng | Loại ngay các số chẵn lớn hơn 2 và các số tận cùng bằng 5 lớn hơn 5. | số nguyên tố · hợp số (ví dụ ước 3) · số nguyên tố · hợp số (ví dụ ước 5)… |
+| IV.3 | Rút gọn, so sánh, sắp thứ tự phân số | Tính chất cơ bản của phân số; so sánh phân số | Một nhóm phân số cần sắp thứ tự | Rút gọn → so cùng mẫu hoặc quy đồng | So với 1 và với một nửa trước — nhiều phân số phân loại được ngay. | 1 phần 2 · 3 phần 4 · 5 phần 12 · 5 phần 6 · 1 phần 12 · 1 phần 12 < 5 phần 12 < 1 phần 2 < 3 phần 4 < 5 phần 6 · 5 phần 6 · 1 phần 12… |
+| IV.4 | Biến đổi số bằng cách thêm, bớt, đổi chỗ chữ số | Cấu tạo thập phân, hiệu hai số | Đề nói “xoá chữ số”, “viết thêm chữ số”, “đổi chỗ” | Viết cả hai số theo cấu tạo rồi lấy hiệu | Đổi chỗ hàng trăm với hàng đơn vị: hiệu = 99 × (hiệu hai chữ số). | 1 000 · 495 · 495 · 1 000 |
 | IV.5 | Tìm số thoả nhiều điều kiện chia có dư | Phép chia có dư, dãy cách đều | Hai điều kiện “chia cho … dư …” đi cùng nhau | Lập dãy theo điều kiện chặt hơn rồi lọc theo điều kiện còn lại | Chọn điều kiện có số chia **lớn hơn** để lập dãy — dãy thưa hơn nên thử nhanh hơn. | 28 · 27 · 1 · 9… |
 | V.1 | Dãy tuần hoàn | Phép chia có dư, tính tuần hoàn | Dãy lặp lại một nhóm số cố định | Chia vị trí cho chu kì, dùng số dư định vị | Tổng n số hạng = tổng một chu kì × số chu kì đầy đủ + tổng phần dư. | 3 · 2 · 2 · 5… |
 | V.2 | Chữ số tận cùng | Tính chất chữ số tận cùng của tổng, tích | Câu hỏi chỉ hỏi chữ số tận cùng | Rút gọn về chữ số tận cùng rồi tính | Tích có thừa số tận cùng 0 hoặc 5 thì tận cùng là 0 hoặc 5. | 4 · 0 · 7 · 7… |
@@ -655,8 +655,8 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.5 | TD2, TD4 | Khoảng cách của dãy là **bội chung nhỏ nhất**, không phải tích hai số khi hai số không nguyên tố cùng nhau. |
 | IV.1 | TD1, TD4 | Chữ số hàng cao nhất **khác 0**, và mọi chữ số chỉ nhận giá trị từ 0 đến 9. Hai ràng buộc này thường là chỗ loại bớt đáp số. |
 | IV.2 | TD2 | Chỉ cần thử các **số nguyên tố nhỏ**, không phải thử mọi số. |
-| IV.3 | TD3, TD2 | Thêm chữ số vào **bên trái** là cộng thêm; thêm vào **bên phải** là nhân 10 rồi cộng. |
-| IV.4 | TD1, TD5 | Cùng mẫu số thì **chỉ cần so tử số**. |
+| IV.3 | TD1, TD5 | Cùng mẫu số thì **chỉ cần so tử số**. |
+| IV.4 | TD3, TD2 | Thêm chữ số vào **bên trái** là cộng thêm; thêm vào **bên phải** là nhân 10 rồi cộng. |
 | IV.5 | TD2, TD6 | Chỉ **đi dọc một dãy** rồi thử điều kiện còn lại, không thử tất cả số. |
 | V.1 | TD4, TD6 | Số dư **0** ứng với phần tử **cuối** chu kì, không phải phần tử đầu. |
 | V.2 | TD5, TD2 | Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu. |
@@ -689,8 +689,8 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 | III.5 | Lấy tích hai số làm khoảng cách (ví dụ dùng 27 cho “chia hết cho 3 và 9”). | Kiểm tra bằng cách viết ba số đầu tiên của dãy rồi xem khoảng cách thật. |
 | IV.1 | Tính ra a bằng 0 rồi vẫn nhận, hoặc để một chữ số vượt quá 9. | Viết sẵn hai dòng ràng buộc lên đầu bài giải rồi mới tính. |
 | IV.2 | Thử chia cho mọi số từ 2 đến số đó nên mất thời gian, hoặc kết luận vội. | Thử theo thứ tự 2, 3, 5, 7, 11, 13 và dừng đúng lúc. |
-| IV.3 | Nhầm “viết thêm bên trái” thành “viết thêm bên phải”. | Viết cả số cũ và số mới ra rồi mới so sánh. |
-| IV.4 | Rút gọn xong quên rằng thứ tự vẫn giữ nguyên, đi quy đồng lại từ đầu. | Ghi cả phân số gốc và phân số tối giản cạnh nhau để đối chiếu. |
+| IV.3 | Rút gọn xong quên rằng thứ tự vẫn giữ nguyên, đi quy đồng lại từ đầu. | Ghi cả phân số gốc và phân số tối giản cạnh nhau để đối chiếu. |
+| IV.4 | Nhầm “viết thêm bên trái” thành “viết thêm bên phải”. | Viết cả số cũ và số mới ra rồi mới so sánh. |
 | IV.5 | Thử từng số từ 1 trở đi nên quá lâu và dễ bỏ sót. | Viết dãy số thoả điều kiện thứ nhất trước, rồi mới lọc. |
 | V.1 | Lấy số dư 0 rồi lấy phần tử đầu tiên của chu kì. | Kiểm chứng bằng một vị trí nhỏ đã biết trước khi làm vị trí lớn. |
 | V.2 | Tính trọn cả phép tính, vừa lâu vừa dễ sai. | Lấy tay che phần đầu của hai số, chỉ để lộ chữ số cuối. |
@@ -721,8 +721,8 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 **Bài III.5** — (1) Số chia hết cho cả hai số thì chia hết cho số nào? — (2) Tìm bội chung nhỏ nhất của hai số đó. — (3) Các số cần tìm cách đều nhau đúng bằng bội chung nhỏ nhất.
 **Bài IV.1** — (1) Số có hai chữ số ab viết theo cấu tạo là gì? — (2) Thay cấu tạo ấy vào điều kiện đề cho, rồi rút gọn. — (3) Kiểm lại: chữ số hàng chục có khác 0 không?
 **Bài IV.2** — (1) Số đó có chia hết cho 2 hay 5 không? — (2) Cộng các chữ số xem có chia hết cho 3 không. — (3) Thử tiếp 7, 11, 13; dừng khi thương bé hơn số chia.
-**Bài IV.3** — (1) Viết số theo cấu tạo a × 100 + b × 10 + c. — (2) Viết số mới cũng theo cấu tạo như vậy. — (3) Trừ hai biểu thức, các phần giống nhau triệt tiêu.
-**Bài IV.4** — (1) Các phân số có cùng mẫu số không? — (2) Nếu cùng mẫu thì so gì? — (3) Rút gọn không làm thay đổi giá trị nên không đổi thứ tự.
+**Bài IV.3** — (1) Các phân số có cùng mẫu số không? — (2) Nếu cùng mẫu thì so gì? — (3) Rút gọn không làm thay đổi giá trị nên không đổi thứ tự.
+**Bài IV.4** — (1) Viết số theo cấu tạo a × 100 + b × 10 + c. — (2) Viết số mới cũng theo cấu tạo như vậy. — (3) Trừ hai biểu thức, các phần giống nhau triệt tiêu.
 **Bài IV.5** — (1) Viết vài số chia cho số thứ nhất dư đúng như đề. — (2) Chúng cách đều nhau bao nhiêu đơn vị? — (3) Đi dọc dãy đó và kiểm tra điều kiện thứ hai.
 **Bài V.1** — (1) Chu kì của dãy dài bao nhiêu số hạng? — (2) Chia vị trí cần tìm cho độ dài chu kì. — (3) Số dư cho biết vị trí trong chu kì; dư 0 là phần tử cuối.
 **Bài V.2** — (1) Chữ số tận cùng của mỗi số là gì? — (2) Tính riêng với hai chữ số ấy. — (3) Lấy chữ số tận cùng của kết quả vừa tính.
@@ -755,8 +755,8 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | III.5 | Có bao nhiêu số từ 1 đến 100 vừa chia hết cho 2 vừa chia hết cho 5? | 10 |
 | IV.1 | Số có hai chữ số, đổi chỗ hai chữ số được số nhỏ hơn 27 đơn vị, tổng hai chữ số bằng 11. Tìm số ấy. | 74 |
 | IV.2 | Số 91 là số nguyên tố hay hợp số? | hợp số (91 = 7 × 13) |
-| IV.3 | Viết thêm chữ số 2 vào bên trái số 345 thì số mới hơn số cũ bao nhiêu? | 2 000 |
-| IV.4 | Sắp xếp từ bé đến lớn: 3 phần 8, 5 phần 8, 1 phần 8 | 1 phần 8 < 3 phần 8 < 5 phần 8 |
+| IV.3 | Sắp xếp từ bé đến lớn: 3 phần 8, 5 phần 8, 1 phần 8 | 1 phần 8 < 3 phần 8 < 5 phần 8 |
+| IV.4 | Viết thêm chữ số 2 vào bên trái số 345 thì số mới hơn số cũ bao nhiêu? | 2 000 |
 | IV.5 | Tìm số bé nhất chia cho 5 dư 2 và chia cho 3 dư 1. | 7 |
 | V.1 | Dãy 1, 2, 3, 1, 2, 3, … số hạng thứ 100 là số nào? | 1 |
 | V.2 | Tích 137 × 46 có chữ số tận cùng là chữ số nào? | 2 |

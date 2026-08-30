@@ -54,11 +54,11 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần IV**
 
-- **Bài IV.1** — a) vận tốc thực 22 km/giờ; dòng nước 2 km/giờ · b) xuôi dòng 108 km; ngược dòng 84 km · c) xuôi dòng 72 km; ngược dòng 56 km · d) vận tốc thực 24 km/giờ; dòng nước 7 km/giờ · e) xuôi dòng 90 km; ngược dòng 50 km
-- **Bài IV.2** — a) 125 · b) 8 · c) 36 · d) 54 · e) 27 · f) có, 8 + 36 + 54 + 27 = 125
-- **Bài IV.3** — a) 66 cm² · b) 1 036 cm² · c) 288 cm² · d) 2 lần
-- **Bài IV.4** — a) 348 cm² · b) 198 cm² · c) 282 cm² · d) 90 cm² · e) 52 cm²
-- **Bài IV.5** — a) 120 m · b) 896 m² · c) 24 giây · d) 280 m² · e) 20 m · f) 1 596 m² · g) 700 m²
+- **Bài IV.1** — a) 116 cm² · b) 112 cm² · c) 155 cm² · d) 132 cm²
+- **Bài IV.2** — a) 330 000 đồng · b) 765 000 đồng · c) 720 000 đồng · d) 880 000 đồng · e) 1 330 000 đồng
+- **Bài IV.3** — a) 2 lần · b) 540 cm² · c) 2 lần · d) 2 lần · e) 2 lần
+- **Bài IV.4** — a) 27 · b) 8 · c) 12 · d) 6 · e) 1 · f) có, 8 + 12 + 6 + 1 = 27
+- **Bài IV.5** — a) 148 m · b) 1 269 m² · c) 74 giây · d) 81 m² · e) 6 m · f) 1 500 m² · g) 231 m²
 
 **Phần V**
 
@@ -382,85 +382,11 @@ Kết quả: **x = 77**.
 
 *Điểm chốt:* Mỗi bước chỉ gỡ **một** phép tính, đừng gỡ hai phép cùng lúc.
 
-### Bài IV.1 — Chuyển động trên dòng nước
-
-> **BẪY — Nhầm vận tốc thực với vận tốc xuôi dòng.**
+### Bài IV.1 — Tỉ số diện tích hai tam giác chung chiều cao
 
 **Các bước giải**
 
-Xét ý a: Một ca nô xuôi dòng với vận tốc 24 km/giờ và ngược dòng với vận tốc 20 km/giờ. Tính vận tốc thực của ca nô và vận tốc dòng nước.
-
-Đọc vị: đây là dạng **Chuyển động trên dòng nước**; dấu hiệu là Đề nhắc **dòng nước**, **xuôi dòng**, **ngược dòng**, ca nô hay thuyền.
-
-Kiến thức phải dùng: Vận tốc – quãng đường – thời gian; tổng – hiệu.
-
-Cách làm: Áp hai công thức xuôi – ngược; biết cả hai thì quy về tổng – hiệu.
-
-Lối tắt: Vận tốc dòng nước = (vận tốc xuôi − vận tốc ngược) : 2.
-
-Kết quả: **vận tốc thực 22 km/giờ; dòng nước 2 km/giờ**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Xuôi dòng thì dòng nước đẩy thêm nên cộng; ngược dòng thì dòng nước cản lại nên trừ. Biết cả hai vận tốc xuôi và ngược thì đây chính là bài tổng – hiệu: vận tốc thực là nửa tổng, vận tốc dòng là nửa hiệu.
-
-*Điểm chốt:* Vận tốc thực là vận tốc khi nước lặng — không bằng vận tốc xuôi dòng, cũng không bằng vận tốc ngược dòng.
-
-*Muốn khó hơn:* Cho thêm một vật trôi tự do theo dòng để học sinh nhận ra vật ấy đi đúng bằng vận tốc dòng nước.
-
-*Phải chắc trước khi làm bài này:* Ba công thức vận tốc – quãng đường – thời gian và bài tổng – hiệu.
-
-### Bài IV.2 — Khối lập phương sơn màu
-
-> **BẪY — Đếm trùng khối ở đỉnh và ở cạnh.**
-
-**Các bước giải**
-
-Khối lớn gồm 5 × 5 × 5 = 125 khối nhỏ.
-
-Khối ở **đỉnh** được sơn 3 mặt: hình lập phương có 8 đỉnh nên có 8 khối.
-
-Khối ở **cạnh** (không tính hai đầu) được sơn 2 mặt: mỗi cạnh có 3 khối, có 12 cạnh nên 36 khối.
-
-Khối ở **giữa mặt** được sơn 1 mặt: mỗi mặt có 3 × 3 = 9 khối, có 6 mặt nên 54 khối.
-
-Khối **trong lõi** không được sơn: 3 × 3 × 3 = 27 khối.
-
-Thử lại: 8 + 36 + 54 + 27 = 125 ✓
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Phân loại khối nhỏ theo **vị trí**: ở đỉnh sơn 3 mặt, ở cạnh sơn 2 mặt, ở giữa mặt sơn 1 mặt, ở trong lõi không sơn. Bốn loại cộng lại phải đúng bằng tổng số khối — đó là cách tự kiểm tra.
-
-*Điểm chốt:* Phân loại theo vị trí, và **cộng bốn loại lại để thử**.
-
-*Muốn khó hơn:* Chỉ sơn bốn mặt bên, không sơn hai mặt đáy — đếm lại từng loại.
-
-*Phải chắc trước khi làm bài này:* Thể tích hình lập phương và cách đếm có phân loại.
-
-### Bài IV.3 — Diện tích thay đổi khi kích thước thay đổi
-
-> **BẪY — Phần tăng gồm ba mảnh.**
-
-**Các bước giải**
-
-Xét ý a: Hình chữ nhật dài 10 cm, rộng 6 cm. Nếu tăng chiều dài thêm 11 cm (giữ nguyên chiều rộng) thì diện tích tăng thêm bao nhiêu?
-
-Đọc vị: đây là dạng **Biến thiên diện tích theo kích thước**; dấu hiệu là “Tăng chiều dài thêm …”, “gấp đôi chiều …”.
-
-Kiến thức phải dùng: Diện tích hình chữ nhật, phân tích hình.
-
-Cách làm: Vẽ hình chồng, tách phần dôi ra thành các mảnh chữ nhật.
-
-Lối tắt: Gấp đôi một chiều thì diện tích gấp đôi; gấp đôi cả hai chiều thì gấp bốn.
-
-Kết quả: **66 cm²**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Tăng một chiều thêm k đơn vị thì diện tích tăng thêm đúng một hình chữ nhật có kích thước k × chiều còn lại. Tăng cả hai chiều thì phần tăng gồm ba mảnh: hai dải và một hình vuông ở góc — nên **không** bằng tích của hai phần tăng.
-
-*Điểm chốt:* Tăng cả hai chiều thì phần tăng gồm **ba mảnh**, không phải một.
-
-### Bài IV.4 — Tỉ số diện tích hai tam giác chung chiều cao
-
-**Các bước giải**
-
-Xét ý a: Tam giác ABC có diện tích 638 cm². Điểm M nằm trên cạnh BC sao cho BM gấp 6 phần và MC gấp 5 phần bằng nhau. Tính diện tích tam giác ABM.
+Xét ý a: Tam giác ABC có diện tích 174 cm². Điểm M nằm trên cạnh BC sao cho BM gấp 4 phần và MC gấp 2 phần bằng nhau. Tính diện tích tam giác ABM.
 
 Đọc vị: đây là dạng **Tỉ số diện tích tam giác**; dấu hiệu là Hai tam giác chung đỉnh, đáy nằm trên cùng một đường thẳng.
 
@@ -470,11 +396,83 @@ Cách làm: Chia diện tích theo tỉ số hai đáy.
 
 Lối tắt: Tỉ số diện tích bằng tỉ số đáy — chia tổng theo tỉ số như bài tổng – tỉ.
 
-Kết quả: **348 cm²**.
+Kết quả: **116 cm²**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Hai tam giác ABM và ACM có **chung chiều cao** hạ từ A xuống BC. Diện tích của chúng tỉ lệ thuận với hai đáy BM và MC. Vì vậy diện tích tam giác ABM bằng diện tích tam giác ABC nhân với tỉ số BM trên BC.
 
 *Điểm chốt:* Chung chiều cao thì diện tích **tỉ lệ với đáy** — không cần biết chiều cao là bao nhiêu.
+
+### Bài IV.2 — Tính tiền vé cho cả gia đình
+
+> **BẪY — Dùng cả dữ kiện thừa.**
+
+**Các bước giải**
+
+Đọc kỹ câu hỏi: đề hỏi **tiền vé**, không hỏi gì về quãng đường. Con số 106 km là **dữ kiện thừa** — đề thật luôn có, và biết bỏ qua nó mới là đọc đề đúng.
+
+Giá vé trẻ em: 60 000 : 2 = 30 000 (đồng).
+
+Tiền vé người lớn: 4 × 60 000 = 240 000 (đồng).
+
+Tiền vé trẻ em: 3 × 30 000 = 90 000 (đồng).
+
+Cả gia đình: 240 000 + 90 000 = **330 000 đồng**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Tìm giá vé trẻ em trước, rồi tính riêng từng loại vé, cuối cùng mới cộng. Mỗi câu đều có một dữ kiện không dùng tới — nhận ra nó là một phần của bài.
+
+*Điểm chốt:* Đề thật luôn có dữ kiện thừa. Dùng nhầm nó là mất trọn bài.
+
+*Muốn khó hơn:* Thêm mức giảm giá cho đoàn từ năm người trở lên.
+
+*Phải chắc trước khi làm bài này:* Nhân chia số tròn nghìn và kỹ năng gạch chân câu hỏi.
+
+### Bài IV.3 — Diện tích thay đổi khi kích thước thay đổi
+
+> **BẪY — Phần tăng gồm ba mảnh.**
+
+**Các bước giải**
+
+Xét ý a: Hình chữ nhật dài 48 cm, rộng 5 cm. Nếu gấp đôi chiều dài và giữ nguyên chiều rộng thì diện tích mới gấp mấy lần diện tích cũ?
+
+Đọc vị: đây là dạng **Biến thiên diện tích theo kích thước**; dấu hiệu là “Tăng chiều dài thêm …”, “gấp đôi chiều …”.
+
+Kiến thức phải dùng: Diện tích hình chữ nhật, phân tích hình.
+
+Cách làm: Vẽ hình chồng, tách phần dôi ra thành các mảnh chữ nhật.
+
+Lối tắt: Gấp đôi một chiều thì diện tích gấp đôi; gấp đôi cả hai chiều thì gấp bốn.
+
+Kết quả: **2 lần**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Tăng một chiều thêm k đơn vị thì diện tích tăng thêm đúng một hình chữ nhật có kích thước k × chiều còn lại. Tăng cả hai chiều thì phần tăng gồm ba mảnh: hai dải và một hình vuông ở góc — nên **không** bằng tích của hai phần tăng.
+
+*Điểm chốt:* Tăng cả hai chiều thì phần tăng gồm **ba mảnh**, không phải một.
+
+### Bài IV.4 — Khối lập phương sơn màu
+
+> **BẪY — Đếm trùng khối ở đỉnh và ở cạnh.**
+
+**Các bước giải**
+
+Khối lớn gồm 3 × 3 × 3 = 27 khối nhỏ.
+
+Khối ở **đỉnh** được sơn 3 mặt: hình lập phương có 8 đỉnh nên có 8 khối.
+
+Khối ở **cạnh** (không tính hai đầu) được sơn 2 mặt: mỗi cạnh có 1 khối, có 12 cạnh nên 12 khối.
+
+Khối ở **giữa mặt** được sơn 1 mặt: mỗi mặt có 1 × 1 = 1 khối, có 6 mặt nên 6 khối.
+
+Khối **trong lõi** không được sơn: 1 × 1 × 1 = 1 khối.
+
+Thử lại: 8 + 12 + 6 + 1 = 27 ✓
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Phân loại khối nhỏ theo **vị trí**: ở đỉnh sơn 3 mặt, ở cạnh sơn 2 mặt, ở giữa mặt sơn 1 mặt, ở trong lõi không sơn. Bốn loại cộng lại phải đúng bằng tổng số khối — đó là cách tự kiểm tra.
+
+*Điểm chốt:* Phân loại theo vị trí, và **cộng bốn loại lại để thử**.
+
+*Muốn khó hơn:* Chỉ sơn bốn mặt bên, không sơn hai mặt đáy — đếm lại từng loại.
+
+*Phải chắc trước khi làm bài này:* Thể tích hình lập phương và cách đếm có phân loại.
 
 ### Bài IV.5 — Hình chữ nhật — tổng hợp chu vi, diện tích và chuyển động
 
@@ -482,15 +480,15 @@ Kết quả: **348 cm²**.
 
 **Các bước giải**
 
-Bước 1 — chu vi: (32 + 28) × 2 = 120 (m).
+Bước 1 — chu vi: (47 + 27) × 2 = 148 (m).
 
-Bước 2 — diện tích: 32 × 28 = 896 (m²).
+Bước 2 — diện tích: 47 × 27 = 1 269 (m²).
 
-Bước 3 — đi một vòng chính là đi hết chu vi: 120 : 5 = 24 (giây).
+Bước 3 — đi một vòng chính là đi hết chu vi: 148 : 2 = 74 (giây).
 
-Bước 4 — tăng chiều dài thêm 10 m thì phần dôi ra là một hình chữ nhật 10 m × 28 m, diện tích 280 (m²).
+Bước 4 — tăng chiều dài thêm 3 m thì phần dôi ra là một hình chữ nhật 3 m × 27 m, diện tích 81 (m²).
 
-Đáp số ý a: **120 m**.
+Đáp số ý a: **148 m**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Đi một vòng quanh hình là đi hết **chu vi**. Tăng một chiều thì phần diện tích dôi ra là một hình chữ nhật có kích thước bằng phần tăng nhân chiều còn lại. Tăng cả hai chiều thì phần dôi gồm **ba mảnh**.
 
@@ -623,11 +621,11 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.3 | Bài toán đại lượng có lời văn | Nhân, chia số tự nhiên; đổi đơn vị khối lượng | Đơn vị trong câu hỏi khác đơn vị trong dữ kiện | Tính theo đơn vị dữ kiện rồi đổi ở bước cuối | 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ. | 4 tạ 75 kg · 2 tạ 70 kg · 6 tạ 90 kg · 17 tạ |
 | III.4 | Bài toán tổng – tỉ | Tỉ số, sơ đồ đoạn thẳng, chia theo tỉ lệ | Đề cho **tổng** và **tỉ số** (phân số hoặc “gấp … lần”) | Sơ đồ phần bằng nhau → giá trị một phần → nhân | Tổng luôn chia hết cho tổng số phần — nếu không chia hết là đọc sai tỉ số. | tổ Một: 344 cây, nhóm Hoa Phượng: 516 cây · nhóm Sao Mai: 52 cây, nhóm Hoa Phượng: 260 cây · tổ Ba: 324 cây, tổ Hai: 432 cây · nhóm Sao Mai: 22 cây, tổ Một: 55 cây… |
 | III.5 | Tìm x nhiều bước có ngoặc | Thứ tự thực hiện phép tính, quan hệ thành phần | x nằm trong ngoặc, ngoài ngoặc còn phép tính khác | Bóc lớp từ ngoài vào trong | Thay x tìm được vào đề, tính một lượt để thử lại. | x = 77 · x = 30 · x = 104 · x = 15… |
-| IV.1 | Chuyển động trên dòng nước | Vận tốc – quãng đường – thời gian; tổng – hiệu | Đề nhắc **dòng nước**, **xuôi dòng**, **ngược dòng**, ca nô hay thuyền | Áp hai công thức xuôi – ngược; biết cả hai thì quy về tổng – hiệu | Vận tốc dòng nước = (vận tốc xuôi − vận tốc ngược) : 2. | vận tốc thực 22 km/giờ; dòng nước 2 km/giờ · xuôi dòng 108 km; ngược dòng 84 km · xuôi dòng 72 km; ngược dòng 56 km · vận tốc thực 24 km/giờ; dòng nước 7 km/giờ… |
-| IV.2 | Khối lập phương sơn màu | Cấu tạo hình lập phương: 8 đỉnh, 12 cạnh, 6 mặt | “Ghép từ … khối nhỏ”, “sơn mặt ngoài” | Phân loại theo vị trí rồi đếm từng loại | Số khối không sơn luôn là (n − 2) nhân ba lần chính nó. | 125 · 8 · 36 · 54… |
-| IV.3 | Biến thiên diện tích theo kích thước | Diện tích hình chữ nhật, phân tích hình | “Tăng chiều dài thêm …”, “gấp đôi chiều …” | Vẽ hình chồng, tách phần dôi ra thành các mảnh chữ nhật | Gấp đôi một chiều thì diện tích gấp đôi; gấp đôi cả hai chiều thì gấp bốn. | 66 cm² · 1 036 cm² · 288 cm² · 2 lần |
-| IV.4 | Tỉ số diện tích tam giác | Diện tích tam giác, tỉ lệ thuận | Hai tam giác chung đỉnh, đáy nằm trên cùng một đường thẳng | Chia diện tích theo tỉ số hai đáy | Tỉ số diện tích bằng tỉ số đáy — chia tổng theo tỉ số như bài tổng – tỉ. | 348 cm² · 198 cm² · 282 cm² · 90 cm²… |
-| IV.5 | Hình chữ nhật tổng hợp | Chu vi, diện tích hình chữ nhật; s = v × t | Một hình nhưng nhiều câu hỏi nối tiếp | Tính chu vi và diện tích trước, dùng lại cho các ý sau | Chu vi tăng đúng 2 lần phần tăng, dù tăng chiều nào. | 120 m · 896 m² · 24 giây · 280 m²… |
+| IV.1 | Tỉ số diện tích tam giác | Diện tích tam giác, tỉ lệ thuận | Hai tam giác chung đỉnh, đáy nằm trên cùng một đường thẳng | Chia diện tích theo tỉ số hai đáy | Tỉ số diện tích bằng tỉ số đáy — chia tổng theo tỉ số như bài tổng – tỉ. | 116 cm² · 112 cm² · 155 cm² · 132 cm² |
+| IV.2 | Bài toán giá vé và cước phí | Nhân, chia, cộng số lớn; đọc đề có dữ kiện thừa | Đề kể một tình huống đời thường và cho **nhiều số hơn mức cần** | Gạch chân câu hỏi, loại dữ kiện thừa, rồi tính từng phần | Vé trẻ em bằng nửa vé người lớn thì cả nhà tương đương (số người lớn + nửa số trẻ em) vé người lớn. | 330 000 đồng · 765 000 đồng · 720 000 đồng · 880 000 đồng… |
+| IV.3 | Biến thiên diện tích theo kích thước | Diện tích hình chữ nhật, phân tích hình | “Tăng chiều dài thêm …”, “gấp đôi chiều …” | Vẽ hình chồng, tách phần dôi ra thành các mảnh chữ nhật | Gấp đôi một chiều thì diện tích gấp đôi; gấp đôi cả hai chiều thì gấp bốn. | 2 lần · 540 cm² · 2 lần · 2 lần… |
+| IV.4 | Khối lập phương sơn màu | Cấu tạo hình lập phương: 8 đỉnh, 12 cạnh, 6 mặt | “Ghép từ … khối nhỏ”, “sơn mặt ngoài” | Phân loại theo vị trí rồi đếm từng loại | Số khối không sơn luôn là (n − 2) nhân ba lần chính nó. | 27 · 8 · 12 · 6… |
+| IV.5 | Hình chữ nhật tổng hợp | Chu vi, diện tích hình chữ nhật; s = v × t | Một hình nhưng nhiều câu hỏi nối tiếp | Tính chu vi và diện tích trước, dùng lại cho các ý sau | Chu vi tăng đúng 2 lần phần tăng, dù tăng chiều nào. | 148 m · 1 269 m² · 74 giây · 81 m²… |
 | V.1 | Nhận biết hình tròn và các yếu tố | Quan hệ đường kính – bán kính | Đề nhắc tâm, bán kính, đường kính | Quy về bán kính rồi so sánh hoặc tính | Nhìn đơn vị và tên đại lượng trước khi so sánh. | Nhận biết hình tròn và các yếu tố · Quan hệ đường kính – bán kính · Đề nhắc tâm, bán kính, đường kính · Quy về bán kính rồi so sánh hoặc tính… |
 | V.2 | Khối lập phương sơn màu | Cấu tạo hình lập phương: 8 đỉnh, 12 cạnh, 6 mặt | “Ghép từ … khối nhỏ”, “sơn mặt ngoài” | Phân loại theo vị trí rồi đếm từng loại | Số khối không sơn luôn là (n − 2) nhân ba lần chính nó. | Khối lập phương sơn màu · Cấu tạo hình lập phương: 8 đỉnh, 12 cạnh, 6 mặt · “Ghép từ … khối nhỏ”, “sơn mặt ngoài” · Phân loại theo vị trí rồi đếm từng loại… |
 | V.3 | Đếm hình bằng quy tắc chọn hai điểm | Quy tắc đếm, tổ hợp chập hai | Hình có nhiều đoạn kẻ từ cùng một đỉnh, hoặc nhiều điểm trên một đường | Quy về số cách chọn hai điểm | Số cách chọn 2 trong k là k × (k − 1) : 2 — thuộc công thức này là xong. | Đếm hình bằng quy tắc chọn hai điểm · Quy tắc đếm, tổ hợp chập hai · Hình có nhiều đoạn kẻ từ cùng một đỉnh, hoặc nhiều điểm trên một đường · Quy về số cách chọn hai điểm… |
@@ -655,10 +653,10 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.3 | TD2, TD3 | Câu hỏi đòi đơn vị nào thì bước **cuối cùng** mới đổi sang đơn vị đó. |
 | III.4 | TD3, TD2 | Phải tính **tổng số phần** trước khi chia. |
 | III.5 | TD3, TD2 | Mỗi bước chỉ gỡ **một** phép tính, đừng gỡ hai phép cùng lúc. |
-| IV.1 | TD2, TD5 | Vận tốc thực là vận tốc khi nước lặng — không bằng vận tốc xuôi dòng, cũng không bằng vận tốc ngược dòng. |
-| IV.2 | TD6, TD4 | Phân loại theo vị trí, và **cộng bốn loại lại để thử**. |
+| IV.1 | TD6, TD3 | Chung chiều cao thì diện tích **tỉ lệ với đáy** — không cần biết chiều cao là bao nhiêu. |
+| IV.2 | TD2, TD3 | Đề thật luôn có dữ kiện thừa. Dùng nhầm nó là mất trọn bài. |
 | IV.3 | TD3, TD6 | Tăng cả hai chiều thì phần tăng gồm **ba mảnh**, không phải một. |
-| IV.4 | TD6, TD3 | Chung chiều cao thì diện tích **tỉ lệ với đáy** — không cần biết chiều cao là bao nhiêu. |
+| IV.4 | TD6, TD4 | Phân loại theo vị trí, và **cộng bốn loại lại để thử**. |
 | IV.5 | TD3, TD6 | Tăng cả hai chiều thì phần dôi ra **không phải** tích của hai phần tăng. |
 | V.1 | TD1, TD2 | So sánh phải **cùng loại đại lượng** — bán kính với bán kính. |
 | V.2 | TD6, TD4 | Phân loại theo vị trí, và **cộng bốn loại lại để thử**. |
@@ -689,10 +687,10 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 | III.3 | Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. | Khoanh tròn đơn vị trong câu hỏi trước khi đặt bút. |
 | III.4 | Chia tổng cho một trong hai số của tỉ số thay vì cho tổng số phần. | Vẽ sơ đồ, đếm tổng số đoạn nhỏ trên cả hai đoạn thẳng. |
 | III.5 | Nhân phá ngoặc sai dấu, hoặc gỡ phép trong ngoặc trước. | Ghi rõ từng bước trên một dòng riêng, mỗi dòng chỉ khác dòng trên một phép. |
-| IV.1 | Lấy vận tốc xuôi dòng làm vận tốc thực rồi cộng thêm vận tốc dòng lần nữa. | Viết ba đại lượng thành ba dòng riêng, đặt tên rõ trước khi tính. |
-| IV.2 | Đếm cả khối ở đỉnh vào nhóm khối ở cạnh, thành ra đếm trùng. | Trừ hai đầu mỗi cạnh khi đếm khối sơn 2 mặt. |
+| IV.1 | Đi tìm chiều cao cụ thể trong khi đề không cho. | Đọc lại: hai tam giác có chung đỉnh nào, chung chiều cao xuống cạnh nào? |
+| IV.2 | Đem quãng đường vào phép tính tiền vé. | Gạch chân câu hỏi cuối trước khi nhìn các con số. |
 | IV.3 | Nhân hai lượng tăng với nhau rồi coi đó là phần diện tích tăng thêm. | Vẽ hình chữ nhật cũ nằm trong hình mới, tô phần dôi ra. |
-| IV.4 | Đi tìm chiều cao cụ thể trong khi đề không cho. | Đọc lại: hai tam giác có chung đỉnh nào, chung chiều cao xuống cạnh nào? |
+| IV.4 | Đếm cả khối ở đỉnh vào nhóm khối ở cạnh, thành ra đếm trùng. | Trừ hai đầu mỗi cạnh khi đếm khối sơn 2 mặt. |
 | IV.5 | Nhân hai lượng tăng với nhau rồi coi đó là diện tích tăng thêm. | Vẽ hình cũ nằm trong hình mới rồi tô phần dôi ra. |
 | V.1 | So bán kính của hình này với đường kính của hình kia. | Đổi hết về bán kính trước khi so sánh. |
 | V.2 | Đếm cả khối ở đỉnh vào nhóm khối ở cạnh, thành ra đếm trùng. | Trừ hai đầu mỗi cạnh khi đếm khối sơn 2 mặt. |
@@ -721,10 +719,10 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 **Bài III.3** — (1) Tính tổng khối lượng theo ki-lô-gam. — (2) Đề hỏi kết quả theo đơn vị nào? — (3) Đổi kết quả sang đơn vị đó.
 **Bài III.4** — (1) Vẽ đại lượng thứ nhất mấy phần, thứ hai mấy phần? — (2) Tổng cộng có bao nhiêu phần bằng nhau? — (3) Một phần bằng bao nhiêu?
 **Bài III.5** — (1) Phép tính ngoài cùng là phép nào? — (2) Coi cả cụm còn lại là một số và tìm giá trị của nó. — (3) Lặp lại cho tới khi chỉ còn x.
-**Bài IV.1** — (1) Xuôi dòng thì nước đẩy thêm hay cản lại? — (2) Vận tốc xuôi dòng bằng vận tốc thực cộng gì? — (3) Biết cả xuôi và ngược thì đây là bài tổng – hiệu.
-**Bài IV.2** — (1) Khối ở đỉnh có mấy mặt lộ ra ngoài? — (2) Mỗi cạnh có bao nhiêu khối không nằm ở đỉnh? — (3) Cộng bốn loại lại xem có bằng tổng số khối không.
+**Bài IV.1** — (1) Hai tam giác có chung đỉnh nào? — (2) Chiều cao hạ từ đỉnh đó xuống BC có chung không? — (3) Diện tích tỉ lệ thuận với đáy.
+**Bài IV.2** — (1) Đề hỏi cái gì? Gạch chân câu hỏi. — (2) Trong các con số đề cho, con số nào không liên quan tới câu hỏi? — (3) Tính giá vé trẻ em trước rồi mới cộng hai loại vé.
 **Bài IV.3** — (1) Vẽ hình cũ và hình mới chồng lên nhau. — (2) Phần dôi ra gồm mấy mảnh? — (3) Tính diện tích từng mảnh rồi cộng.
-**Bài IV.4** — (1) Hai tam giác có chung đỉnh nào? — (2) Chiều cao hạ từ đỉnh đó xuống BC có chung không? — (3) Diện tích tỉ lệ thuận với đáy.
+**Bài IV.4** — (1) Khối ở đỉnh có mấy mặt lộ ra ngoài? — (2) Mỗi cạnh có bao nhiêu khối không nằm ở đỉnh? — (3) Cộng bốn loại lại xem có bằng tổng số khối không.
 **Bài IV.5** — (1) Đi một vòng là đi hết đại lượng nào? — (2) Phần diện tích dôi ra có hình dạng gì? — (3) Tăng cả hai chiều thì phần dôi gồm mấy mảnh?
 **Bài V.1** — (1) Điền cột 1 và cột 3 trước — đó là hai cột dễ nhất. — (2) Cột 4 và cột 5 khác nhau: một cột nói cách làm, một cột nói lối tắt. — (3) Cột 6 chỉ ghi kết quả, không ghi lời giải.
 **Bài V.2** — (1) Điền cột 1 và cột 3 trước — đó là hai cột dễ nhất. — (2) Cột 4 và cột 5 khác nhau: một cột nói cách làm, một cột nói lối tắt. — (3) Cột 6 chỉ ghi kết quả, không ghi lời giải.
@@ -755,10 +753,10 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | III.3 | Xe chở 20 bao gạo, mỗi bao 50 kg. Xe chở mấy tạ? | 10 tạ |
 | III.4 | Hai tổ trồng 120 cây, số cây tổ Một bằng 1 phần 2 tổ Hai. Mỗi tổ trồng mấy cây? | 40 và 80 |
 | III.5 | Tìm x: (x + 12) × 5 − 8 = 132 | x = 16 |
-| IV.1 | Ca nô xuôi dòng 24 km/giờ, ngược dòng 18 km/giờ. Tính vận tốc dòng nước. | 3 km/giờ |
-| IV.2 | Khối 3 × 3 × 3 sơn ngoài, có mấy khối không được sơn? | 1 khối |
+| IV.1 | Tam giác ABC diện tích 30 cm², M trên BC với BM = MC. Diện tích ABM bằng bao nhiêu? | 15 cm² |
+| IV.2 | 2 người lớn và 3 trẻ em, vé người lớn 80 000 đồng, vé trẻ em bằng nửa. Tổng tiền vé là bao nhiêu? | 280 000 đồng |
 | IV.3 | Hình chữ nhật 10 cm × 5 cm, tăng chiều dài thêm 3 cm. Diện tích tăng bao nhiêu? | 15 cm² |
-| IV.4 | Tam giác ABC diện tích 30 cm², M trên BC với BM = MC. Diện tích ABM bằng bao nhiêu? | 15 cm² |
+| IV.4 | Khối 3 × 3 × 3 sơn ngoài, có mấy khối không được sơn? | 1 khối |
 | IV.5 | Hình chữ nhật 10 m × 5 m, tăng chiều dài 3 m. Diện tích tăng bao nhiêu? | 15 m² |
 | V.1 | Hình tròn đường kính 10 cm có bán kính bao nhiêu? | 5 cm |
 | V.2 | Khối 3 × 3 × 3 sơn ngoài, có mấy khối không được sơn? | 1 khối |

@@ -225,41 +225,42 @@ e) Có bao nhiêu số từ 97 đến 900 vừa chia hết cho 2 vừa chia hế
 
 Câu nào cũng phải viết cấu tạo số ra trước khi tính.
 
-a) Số có hai chữ số ab. Khi đổi chỗ hai chữ số thì được số mới nhỏ hơn số cũ 36 đơn vị, và tổng hai chữ số bằng 14. Tìm số ab.
-b) Tìm mọi số có hai chữ số mà số đó bằng 2 lần tổng hai chữ số của nó.
+a) Số có hai chữ số ab. Khi đổi chỗ hai chữ số thì được số mới nhỏ hơn số cũ 45 đơn vị, và tổng hai chữ số bằng 7. Tìm số ab.
+b) Tìm mọi số có hai chữ số mà số đó bằng 8 lần tổng hai chữ số của nó.
 c) Số có hai chữ số ab. Khi đổi chỗ hai chữ số thì được số mới nhỏ hơn số cũ 18 đơn vị, và tổng hai chữ số bằng 14. Tìm số ab.
 d) Tìm mọi số có hai chữ số mà số đó bằng 6 lần tổng hai chữ số của nó.
+e) Tìm mọi số có hai chữ số mà số đó bằng 2 lần tổng hai chữ số của nó.
+f) Số có hai chữ số ab. Khi đổi chỗ hai chữ số thì được số mới nhỏ hơn số cũ 18 đơn vị, và tổng hai chữ số bằng 12. Tìm số ab.
 
 ### Bài 2. (5 điểm) Số nguyên tố và hợp số
 
 Trả lời và nêu căn cứ.
 
-a) Số 18 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
-b) Số 54 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
-c) Số 73 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
+a) Số 73 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
+b) Số 99 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
+c) Số 113 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
 d) Số 115 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
-e) Số 158 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
+e) Số 120 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
 
-### Bài 3. (5 điểm) Thêm, bớt, đổi chỗ chữ số
-
-Phân tích số theo cấu tạo rồi trả lời.
-
-a) Viết thêm chữ số 1 vào bên trái số 750 thì được số mới. Số mới hơn số ban đầu bao nhiêu đơn vị?
-b) Một số có ba chữ số, nếu xoá chữ số hàng trăm thì được số mới kém số ban đầu 900 đơn vị. Tìm số ban đầu, biết chữ số hàng chục là 4 và chữ số hàng đơn vị là 9.
-c) Viết thêm chữ số 1 vào bên trái số 911 thì được số mới. Số mới hơn số ban đầu bao nhiêu đơn vị?
-d) Viết thêm chữ số 1 vào bên trái số 437 thì được số mới. Số mới hơn số ban đầu bao nhiêu đơn vị?
-e) Viết thêm chữ số 1 vào bên trái số 969 thì được số mới. Số mới hơn số ban đầu bao nhiêu đơn vị?
-
-### Bài 4. (5 điểm) Rút gọn, so sánh và sắp thứ tự phân số
+### Bài 3. (5 điểm) Rút gọn, so sánh và sắp thứ tự phân số
 
 Rút gọn trước rồi mới so sánh.
 
-a) Rút gọn các phân số sau về dạng tối giản: 5 phần 6 · 11 phần 24 · 19 phần 24 · 1 phần 3 · 5 phần 24
+a) Rút gọn các phân số sau về dạng tối giản: 1 phần 2 · 3 phần 4 · 5 phần 12 · 5 phần 6 · 1 phần 12
 b) Sắp xếp các phân số ấy từ bé đến lớn.
 c) Phân số nào lớn nhất?
 d) Phân số nào bé nhất?
 e) Phân số lớn nhất hơn phân số bé nhất bao nhiêu?
 f) Có phân số nào lớn hơn 1 không?
+
+### Bài 4. (5 điểm) Thêm, bớt, đổi chỗ chữ số
+
+Phân tích số theo cấu tạo rồi trả lời.
+
+a) Viết thêm chữ số 1 vào bên trái số 878 thì được số mới. Số mới hơn số ban đầu bao nhiêu đơn vị?
+b) Đổi chỗ chữ số hàng trăm và chữ số hàng đơn vị của số 752 ta được số mới. Hiệu hai số bằng bao nhiêu?
+c) Đổi chỗ chữ số hàng trăm và chữ số hàng đơn vị của số 459 ta được số mới. Hiệu hai số bằng bao nhiêu?
+d) Viết thêm chữ số 1 vào bên trái số 234 thì được số mới. Số mới hơn số ban đầu bao nhiêu đơn vị?
 
 ### Bài 5. (5 điểm) Tìm số theo hai điều kiện chia có dư
 
@@ -424,32 +425,32 @@ f) Trong các số từ 1 đến 144 có bao nhiêu số chính phương?
 **Lỗi thường gặp:** Lấy tích hai số làm khoảng cách (ví dụ dùng 27 cho “chia hết cho 3 và 9”). Phòng: Kiểm tra bằng cách viết ba số đầu tiên của dãy rồi xem khoảng cách thật.
 
 ### Bài IV.1
-**Đáp số:** a) 95 · b) 18 · c) 86 · d) 54
+**Đáp số:** a) 61 · b) 72 · c) 86 · d) 54 · e) 18 · f) 75
 **Hướng giải:** BẪY — Quên chữ số hàng cao nhất khác 0. Viết số theo cấu tạo: số có hai chữ số ab bằng a × 10 + b. Thay vào điều kiện đề cho rồi rút gọn — thường ra một quan hệ rất gọn giữa a và b.
 **Nhãn tư duy:** TD1, TD4. Điểm chốt: Chữ số hàng cao nhất **khác 0**, và mọi chữ số chỉ nhận giá trị từ 0 đến 9. Hai ràng buộc này thường là chỗ loại bớt đáp số.
 **Lỗi thường gặp:** Tính ra a bằng 0 rồi vẫn nhận, hoặc để một chữ số vượt quá 9. Phòng: Viết sẵn hai dòng ràng buộc lên đầu bài giải rồi mới tính.
 **Gợi ý 3 tầng:** (1) Số có hai chữ số ab viết theo cấu tạo là gì? — (2) Thay cấu tạo ấy vào điều kiện đề cho, rồi rút gọn. — (3) Kiểm lại: chữ số hàng chục có khác 0 không?
 
 ### Bài IV.2
-**Đáp số:** a) hợp số (ví dụ ước 2) · b) hợp số (ví dụ ước 2) · c) số nguyên tố · d) hợp số (ví dụ ước 5) · e) hợp số (ví dụ ước 2)
+**Đáp số:** a) số nguyên tố · b) hợp số (ví dụ ước 3) · c) số nguyên tố · d) hợp số (ví dụ ước 5) · e) hợp số (ví dụ ước 2)
 **Hướng giải:** BẪY — 91, 121, 143 trông như số nguyên tố nhưng không phải. Số nguyên tố chỉ có đúng hai ước là 1 và chính nó. Để kiểm tra, thử chia lần lượt cho 2, 3, 5, 7, 11… và chỉ cần thử đến khi thương bé hơn hoặc bằng số chia là dừng được.
 **Nhãn tư duy:** TD2. Điểm chốt: Chỉ cần thử các **số nguyên tố nhỏ**, không phải thử mọi số.
 **Lỗi thường gặp:** Thử chia cho mọi số từ 2 đến số đó nên mất thời gian, hoặc kết luận vội. Phòng: Thử theo thứ tự 2, 3, 5, 7, 11, 13 và dừng đúng lúc.
 **Gợi ý 3 tầng:** (1) Số đó có chia hết cho 2 hay 5 không? — (2) Cộng các chữ số xem có chia hết cho 3 không. — (3) Thử tiếp 7, 11, 13; dừng khi thương bé hơn số chia.
 
 ### Bài IV.3
-**Đáp số:** a) 1 000 · b) 949 · c) 1 000 · d) 1 000 · e) 1 000
-**Hướng giải:** BẪY — Bên trái hay bên phải. Viết số có ba chữ số dạng **a × 100 + b × 10 + c**. Xoá chữ số hàng trăm là bớt đi a × 100. Viết thêm chữ số 1 vào bên trái một số có ba chữ số là cộng thêm 1 000. Đổi chỗ hàng trăm với hàng đơn vị làm số thay đổi 99 lần hiệu hai chữ số đó.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Thêm chữ số vào **bên trái** là cộng thêm; thêm vào **bên phải** là nhân 10 rồi cộng.
-**Lỗi thường gặp:** Nhầm “viết thêm bên trái” thành “viết thêm bên phải”. Phòng: Viết cả số cũ và số mới ra rồi mới so sánh.
-**Gợi ý 3 tầng:** (1) Viết số theo cấu tạo a × 100 + b × 10 + c. — (2) Viết số mới cũng theo cấu tạo như vậy. — (3) Trừ hai biểu thức, các phần giống nhau triệt tiêu.
-
-### Bài IV.4
-**Đáp số:** a) 5 phần 6 · 11 phần 24 · 19 phần 24 · 1 phần 3 · 5 phần 24 · b) 5 phần 24 < 1 phần 3 < 11 phần 24 < 19 phần 24 < 5 phần 6 · c) 5 phần 6 · d) 5 phần 24 · e) 5 phần 8 · f) không, tất cả đều bé hơn 1
+**Đáp số:** a) 1 phần 2 · 3 phần 4 · 5 phần 12 · 5 phần 6 · 1 phần 12 · b) 1 phần 12 < 5 phần 12 < 1 phần 2 < 3 phần 4 < 5 phần 6 · c) 5 phần 6 · d) 1 phần 12 · e) 3 phần 4 · f) không, tất cả đều bé hơn 1
 **Hướng giải:** Cùng mẫu số thì so tử số. Khác mẫu thì quy đồng hoặc so với 1 và với một nửa. Rút gọn về tối giản trước khi trình bày kết quả.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Cùng mẫu số thì **chỉ cần so tử số**.
 **Lỗi thường gặp:** Rút gọn xong quên rằng thứ tự vẫn giữ nguyên, đi quy đồng lại từ đầu. Phòng: Ghi cả phân số gốc và phân số tối giản cạnh nhau để đối chiếu.
 **Gợi ý 3 tầng:** (1) Các phân số có cùng mẫu số không? — (2) Nếu cùng mẫu thì so gì? — (3) Rút gọn không làm thay đổi giá trị nên không đổi thứ tự.
+
+### Bài IV.4
+**Đáp số:** a) 1 000 · b) 495 · c) 495 · d) 1 000
+**Hướng giải:** BẪY — Bên trái hay bên phải. Viết số có ba chữ số dạng **a × 100 + b × 10 + c**. Xoá chữ số hàng trăm là bớt đi a × 100. Viết thêm chữ số 1 vào bên trái một số có ba chữ số là cộng thêm 1 000. Đổi chỗ hàng trăm với hàng đơn vị làm số thay đổi 99 lần hiệu hai chữ số đó.
+**Nhãn tư duy:** TD3, TD2. Điểm chốt: Thêm chữ số vào **bên trái** là cộng thêm; thêm vào **bên phải** là nhân 10 rồi cộng.
+**Lỗi thường gặp:** Nhầm “viết thêm bên trái” thành “viết thêm bên phải”. Phòng: Viết cả số cũ và số mới ra rồi mới so sánh.
+**Gợi ý 3 tầng:** (1) Viết số theo cấu tạo a × 100 + b × 10 + c. — (2) Viết số mới cũng theo cấu tạo như vậy. — (3) Trừ hai biểu thức, các phần giống nhau triệt tiêu.
 
 ### Bài IV.5
 **Đáp số:** a) 28 · b) 27 · c) 1 · d) 9 · e) 35 · f) 20

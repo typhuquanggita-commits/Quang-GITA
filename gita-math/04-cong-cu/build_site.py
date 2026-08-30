@@ -317,6 +317,10 @@ class Site:
         return f"/doc-vi/{seo.slug(NHOM[g]['ten'])}-lop-{lop}/"
 
     @staticmethod
+    def dd_de(ma: str) -> str:
+        return f"/de-thi/{ma.lower()}/"
+
+    @staticmethod
     def dd_lo_trinh(tuyen: str, lop: int) -> str:
         return f"/lo-trinh/tuyen-{tuyen[-1]}-lop-{lop}/"
 
@@ -906,6 +910,146 @@ class Site:
                                       len(cums) * 6)]),
                 1.0, tieu_de, tu_khoa=f"toán lớp {lop} nâng cao", nguong=200)
 
+    # ── 9B. đề thi ───────────────────────────────────────────────────────
+    def lam_de_thi(self) -> None:
+        """162 trang đề thi: ôn tập mốc, thi mốc, đánh giá năng lực.
+
+        Đây là nhóm trang nhắm đúng truy vấn đông người tìm nhất — "đề thi toán
+        lớp 4 học kì 1 có đáp án". Không kỳ vọng thắng ngay ở đó, vì các kho tài
+        liệu tổng hợp đã giữ chỗ nhiều năm. Cửa vào là thứ họ không có: **bảng
+        phân tích sau thi** ghi rõ sai bài nào thì hổng chỗ nào và học lại ở đâu.
+        """
+        idx = json.loads(doc(GOC / "07-de-thi" / "index-de-thi.json"))
+        THU_MUC = {"ON": "on-tap", "MOC": "de-moc", "NL": "dgnl"}
+        HO_TEN = {"ON": "Phiếu ôn tập mốc", "MOC": "Đề thi mốc",
+                  "NL": "Đề đánh giá năng lực"}
+        theo_ho = defaultdict(list)
+
+        for d in idx:
+            p = GOC / "07-de-thi" / THU_MUC[d["ho"]] / f"{d['ma']}.md"
+            if not p.exists():
+                continue
+            fm_, than = tach_fm(doc(p))
+            dd = self.dd_de(d["ma"])
+            lop, ho = d["lop"], d["ho"]
+            # Đề thi công khai trọn vẹn: đây là nhóm trang để người ta tìm thấy
+            # site, và một đề bị cắt đôi thì không ai dùng, cũng không ai dẫn về.
+            phan = cat_phan(bo_dau_trang(than))
+            tieu_de = seo.ghep_tieu_de(
+                f"{HO_TEN[ho]} {d['moc_ten']} lớp {lop}", DUOI,
+                giu=f" — {d['ma'].rsplit('-', 1)[-1]}" if ho != "ON" else "")
+            # Mô tả phải nhắc **biến thể**, nếu không mười đề của cùng một mốc
+            # sẽ có mười mô tả giống hệt nhau và tự tranh nhau một truy vấn.
+            bt = (d.get("bien_the") or "").rstrip(".")
+            mo_ta = seo.rut(
+                f"{HO_TEN[ho]} môn toán lớp {lop} — {d['moc_ten']}"
+                + (f", {bt[0].lower() + bt[1:]}" if bt and bt != "—" else "")
+                + f". {d['thoi_luong']} phút, thang {d['thang_diem']}. Có đáp án, "
+                  f"biểu điểm và bảng phân tích sau thi chỉ ra phải học lại ở đâu.", 158)
+
+            than_html = (
+                f"<p>{seo.esc(HO_TEN[ho])} môn toán lớp {lop}, "
+                f"<strong>{d['moc_ten']}</strong>. Làm trong {d['thoi_luong']} phút, "
+                f"thang điểm {d['thang_diem']}. Phạm vi: {seo.esc(d['pham_vi'])}.</p>"
+                f'<div class="tom"><p><strong>Chấm xong đừng dừng ở con số điểm.</strong> '
+                f'Cuối trang có bảng phân tích sau thi: mỗi bài ghi rõ nó đo cái gì, '
+                f'sai bài ấy nghĩa là hổng chỗ nào, và phải quay lại học phiếu nào. '
+                f'Đó mới là thứ dùng được sau một lần thi.</p></div>'
+                + "\n".join(md(k) for _, k in phan))
+
+            anh_em = [x for x in idx if x["ho"] == ho and x["lop"] == lop
+                      and x["ma"] != d["ma"]][:8]
+            if anh_em:
+                than_html += "<h2>Đề khác cùng loại</h2>" + the_lien_ket([
+                    (x["ten"], x.get("bien_the") or x["pham_vi"], self.dd_de(x["ma"]))
+                    for x in anh_em])
+            than_html += (f'<p><a href="{self.dd_lop(lop)}">Xem toàn bộ chuyên đề '
+                          f'toán lớp {lop}</a> · '
+                          f'<a href="{self.dd_lo_trinh("T1", lop)}">lộ trình 34 '
+                          f'tuần</a> · <a href="/doc-vi/">sơ đồ đọc vị đề</a></p>')
+
+            vet = [("Trang chủ", "/"), ("Đề thi", "/de-thi/"),
+                   (f"Lớp {lop}", f"/de-thi/lop-{lop}/"),
+                   (seo.rut(d["ten"], 42), dd)]
+            self.ghi(dd, seo.trang(
+                dd=dd, tieu_de=tieu_de, mo_ta=mo_ta, h1=d["ten"],
+                than=bang_cuon(than_html), vet=vet, ngay=NGAY, muc_dang="/de-thi/",
+                json_ld=[seo.duong_dan_dieu_huong(vet),
+                         seo.hoc_lieu(d["ten"], mo_ta, dd, lop, NGAY,
+                                      "Đề thi có đáp án",
+                                      thoi_luong=f"PT{d['thoi_luong']}M")]),
+                0.75, tieu_de, nguong=250)
+            theo_ho[(lop, ho)].append(d)
+
+        # trang trụ theo lớp
+        for lop in (3, 4, 5):
+            dd = f"/de-thi/lop-{lop}/"
+            than = (f"<p>Toàn bộ đề thi môn toán lớp {lop} của hệ thống: phiếu ôn "
+                    f"tập trước mỗi mốc, mười đề cho mỗi mốc trong năm, và đề đánh "
+                    f"giá năng lực bám format thi vào lớp 6.</p>"
+                    f'<div class="tom"><p>Mười đề của cùng một mốc dùng chung một '
+                    f'ma trận mức độ, chỉ khác biến thể — nên điểm của hai lần thi '
+                    f'khác đề vẫn so sánh được với nhau. Đó là lý do có mười đề chứ '
+                    f'không phải một.</p></div>')
+            for ho in ("ON", "MOC", "NL"):
+                ds = theo_ho.get((lop, ho), [])
+                if ds:
+                    than += f"<h2>{HO_TEN[ho]} — {len(ds)} đề</h2>" + the_lien_ket([
+                        (x["ten"], x.get("bien_the") or x["pham_vi"],
+                         self.dd_de(x["ma"])) for x in ds])
+            vet = [("Trang chủ", "/"), ("Đề thi", "/de-thi/"), (f"Lớp {lop}", dd)]
+            self.ghi(dd, seo.trang(
+                dd=dd, tieu_de=seo.ghep_tieu_de(
+                    f"Đề thi toán lớp {lop} có đáp án", DUOI),
+                mo_ta=seo.rut(
+                    f"Đề thi toán lớp {lop} có đáp án và biểu điểm: phiếu ôn tập "
+                    f"mốc, đề thi giữa kỳ và cuối kỳ, đề đánh giá năng lực vào lớp 6.", 158),
+                h1=f"Đề thi toán lớp {lop} — có đáp án và bảng phân tích",
+                than=than, vet=vet, ngay=NGAY, muc_dang="/de-thi/",
+                json_ld=[seo.duong_dan_dieu_huong(vet)]),
+                0.9, f"Đề thi toán lớp {lop}",
+                tu_khoa=f"đề thi toán lớp {lop} có đáp án", nguong=150)
+
+        # trang trụ chung
+        dd = "/de-thi/"
+        than = ("<p>Hệ thống có <strong>162 đề</strong> chia làm ba họ, và cả ba "
+                "đều kèm đáp án, biểu điểm và bảng phân tích sau thi.</p>"
+                "<h2>Ba họ đề</h2>"
+                "<ul>"
+                "<li><strong>Phiếu ôn tập mốc</strong> — 90 phút, thang 100. Làm "
+                "trước kỳ thi một tuần để hệ thống lại toàn bộ chuyên đề trong "
+                "phạm vi.</li>"
+                "<li><strong>Đề thi mốc</strong> — 60 phút, thang 10, đúng format "
+                "đề kiểm tra định kỳ của nhà trường. Mỗi mốc có mười đề dùng chung "
+                "một ma trận: bản chuẩn, bản đổi số liệu, bản tăng và giảm độ khó, "
+                "bản có bẫy đơn vị, bản có dữ kiện thừa, bản thiên hình học, bản "
+                "thiên suy luận.</li>"
+                "<li><strong>Đề đánh giá năng lực</strong> — 60 phút, thang 100, "
+                "bám format đề vào lớp 6 các trường chất lượng cao Hà Nội: 20 câu "
+                "trắc nghiệm nhanh, 10 câu trả lời ngắn, một bài đọc hiểu số liệu, "
+                "ba bài tự luận và một bài phân hoá.</li>"
+                "</ul>"
+                '<div class="tom"><p><strong>Điều khác biệt nằm ở bảng phân tích '
+                'sau thi.</strong> Một tuyển tập đề rời chỉ cho biết điểm. Mỗi đề ở '
+                'đây ghi rõ từng bài đo cái gì, sai bài ấy nghĩa là hổng chỗ nào, '
+                'và phải quay lại học phiếu nào — chấm xong là biết ngay việc tiếp '
+                'theo.</p></div>')
+        than += "<h2>Chọn theo lớp</h2>" + the_lien_ket([
+            (f"Đề thi toán lớp {lop}",
+             f"{sum(len(theo_ho.get((lop, h), [])) for h in ('ON', 'MOC', 'NL'))} đề "
+             f"· có đáp án và bảng phân tích", f"/de-thi/lop-{lop}/")
+            for lop in (3, 4, 5)])
+        vet = [("Trang chủ", "/"), ("Đề thi", dd)]
+        self.ghi(dd, seo.trang(
+            dd=dd, tieu_de="Đề thi toán tiểu học có đáp án và phân tích",
+            mo_ta="162 đề thi toán lớp 3, 4, 5 có đáp án, biểu điểm và bảng phân "
+                  "tích sau thi: ôn tập mốc, thi giữa kỳ và cuối kỳ, đánh giá năng lực.",
+            h1="Đề thi toán tiểu học — 162 đề có đáp án và bảng phân tích",
+            than=than, vet=vet, ngay=NGAY, muc_dang=dd,
+            json_ld=[seo.duong_dan_dieu_huong(vet)]),
+            0.95, "Đề thi toán tiểu học",
+            tu_khoa="đề thi toán tiểu học có đáp án", nguong=150)
+
     # ── 10. trang chủ ────────────────────────────────────────────────────
     def lam_chu(self) -> None:
         so_dang = len(self.dang)
@@ -1255,6 +1399,7 @@ class Site:
         self.lam_doc_vi()
         self.lam_lo_trinh()
         self.lam_thi_vao_6()
+        self.lam_de_thi()
         self.lam_uy_tin()
         self.lam_ky_thuat()
 

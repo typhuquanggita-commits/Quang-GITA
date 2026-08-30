@@ -31,9 +31,9 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần A**
 
 - **Bài A.1** — a) Ôn tập bảng đơn vị đo độ dài và khối lượng · b) Đề-ca-mét vuông, héc-tô-mét vuông, héc-ta · c) Viết số đo độ dài, khối lượng, diện tích dưới dạng số thập phân · d) Bảng đơn vị đo thể tích: cm³, dm³, m³ · e) Bảng đơn vị đo thời gian — cộng, trừ số đo thời gian
-- **Bài A.2** — a) Thay đổi số người, hỏi thay đổi thời gian · b) Đơn vị có mũ hai, hoặc ha, km² · c) Các số hạng có đơn vị khác nhau trong cùng một phép tính · d) Hai vế có đơn vị khác nhau · e) Đơn vị trong câu hỏi khác đơn vị trong dữ kiện
-- **Bài A.3** — a) Đổi về đơn vị của kết quả rồi tính · b) Đổi về cùng đơn vị rồi so sánh · c) Tính theo đơn vị dữ kiện rồi đổi ở bước cuối · d) Tính tổng quãng đường, tổng thời gian rồi chia · e) Đếm bậc rồi nhân, chia 1 000
-- **Bài A.4** — a) Nhân, chia số tự nhiên; đổi đơn vị khối lượng · b) Công thức vận tốc; trung bình cộng có trọng số · c) Bảng đơn vị thể tích; quan hệ dm³ – lít · d) Công thức s = v × t · e) Nhân, trừ; đại lượng cùng loại
+- **Bài A.2** — a) Có cả “chiết khấu” và “thuế” trong một bài · b) Đơn vị có mũ hai, hoặc ha, km² · c) Các số hạng có đơn vị khác nhau trong cùng một phép tính · d) Hai vế có đơn vị khác nhau · e) Đơn vị trong câu hỏi khác đơn vị trong dữ kiện
+- **Bài A.3** — a) Đổi về đơn vị của kết quả rồi tính · b) Đổi về cùng đơn vị rồi so sánh · c) Tính theo đơn vị dữ kiện rồi đổi ở bước cuối · d) Bám vào tổng số ngày công không đổi · e) Đếm bậc rồi nhân, chia 1 000
+- **Bài A.4** — a) Nhân, chia số tự nhiên; đổi đơn vị khối lượng · b) Đại lượng tỉ lệ nghịch, tổng số ngày công · c) Bảng đơn vị thể tích; quan hệ dm³ – lít · d) Công thức s = v × t · e) Nhân, trừ; đại lượng cùng loại
 - **Bài A.5** — a) Mỗi bậc thêm ba chữ số 0. · b) Vẽ tam giác s ở trên, v và t ở dưới: che đại lượng cần tìm là ra công thức. · c) So sánh hai đường giải, chọn đường ít phép tính hơn. · d) Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm. · e) Số bậc chính là số chữ số 0 phải thêm vào (hoặc bớt đi).
 
 **Phần B**
@@ -64,7 +64,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài E.1** — a) Đổi đơn vị diện tích · b) Đơn vị có mũ hai, hoặc ha, km² · c) Bảng đơn vị đo diện tích · d) Đếm bậc rồi nhân, chia 100 · e) Mỗi bậc thêm hai chữ số 0 — nhớ “diện tích thì gấp đôi số 0”. · f) Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc.
 - **Bài E.2** — a) So sánh số đo đại lượng · b) Hai vế có đơn vị khác nhau · c) Bảng đơn vị đo, so sánh số tự nhiên · d) Đổi về cùng đơn vị rồi so sánh · e) Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. · f) So thẳng hai con số, bỏ qua đơn vị.
-- **Bài E.3** — a) Vận tốc trung bình · b) Hai chặng có vận tốc khác nhau · c) Công thức vận tốc; trung bình cộng có trọng số · d) Tính tổng quãng đường, tổng thời gian rồi chia · e) Kiểm tra: vận tốc trung bình luôn nằm giữa hai vận tốc đã cho. · f) Cộng hai vận tốc rồi chia đôi trong mọi trường hợp.
+- **Bài E.3** — a) Tỉ lệ nghịch, so sánh hai phương án · b) Thay đổi số người, hỏi thay đổi thời gian · c) Đại lượng tỉ lệ nghịch, tổng số ngày công · d) Bám vào tổng số ngày công không đổi · e) Số người tăng gấp k lần thì số ngày giảm còn 1 phần k. · f) Trừ thẳng số người rồi lấy hiệu làm số ngày rút ngắn.
 - **Bài E.4** — a) Ba dạng cơ bản của chuyển động đều · b) Có hai trong ba đại lượng quãng đường, vận tốc, thời gian · c) Công thức s = v × t · d) Chọn công thức theo đại lượng cần tìm; đồng bộ đơn vị · e) Vẽ tam giác s ở trên, v và t ở dưới: che đại lượng cần tìm là ra công thức. · f) Vận tốc tính bằng km/giờ nhưng thời gian lại để bằng phút.
 - **Bài E.5** — a) Đổi và tính toán với đơn vị thời gian · b) Số đo có chữ “giờ”, “phút”, “giây” · c) Quan hệ giờ – phút – giây · d) Quy về phút rồi tính, cuối cùng đổi lại giờ và phút · e) Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm. · f) Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60.
 
@@ -98,7 +98,7 @@ Kết quả: **Ôn tập bảng đơn vị đo độ dài và khối lượng**.
 
 **Các bước giải**
 
-Xét ý a: Dạng “Tỉ lệ nghịch, so sánh hai phương án” — dấu hiệu nhận biết?
+Xét ý a: Dạng “Phần trăm nhiều bước trong mua bán” — dấu hiệu nhận biết?
 
 Đọc vị: đây là dạng **Lập bảng dạng bài**; dấu hiệu là Bảng có sẵn cột dạng bài, thiếu các cột còn lại.
 
@@ -108,7 +108,7 @@ Cách làm: Tra bảng phân tích của các phiếu đã học.
 
 Lối tắt: Học theo hàng ngang, không học theo cột dọc.
 
-Kết quả: **Thay đổi số người, hỏi thay đổi thời gian**.
+Kết quả: **Có cả “chiết khấu” và “thuế” trong một bài**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Cột “Dấu hiệu nhận biết” lấy từ bảng phân tích chuyên sâu của các phiếu đã học. Điền xong, đọc ngang từng hàng để thấy mạch từ đề bài tới lời giải.
 
@@ -536,15 +536,15 @@ Kết quả: **So sánh số đo đại lượng**.
 
 Xét ý a: Đề này thuộc dạng bài nào?
 
-Đọc vị: đây là dạng **Vận tốc trung bình**; dấu hiệu là Hai chặng có vận tốc khác nhau.
+Đọc vị: đây là dạng **Tỉ lệ nghịch, so sánh hai phương án**; dấu hiệu là Thay đổi số người, hỏi thay đổi thời gian.
 
-Kiến thức phải dùng: Công thức vận tốc; trung bình cộng có trọng số.
+Kiến thức phải dùng: Đại lượng tỉ lệ nghịch, tổng số ngày công.
 
-Cách làm: Tính tổng quãng đường, tổng thời gian rồi chia.
+Cách làm: Bám vào tổng số ngày công không đổi.
 
-Lối tắt: Kiểm tra: vận tốc trung bình luôn nằm giữa hai vận tốc đã cho.
+Lối tắt: Số người tăng gấp k lần thì số ngày giảm còn 1 phần k.
 
-Kết quả: **Vận tốc trung bình**.
+Kết quả: **Tỉ lệ nghịch, so sánh hai phương án**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Đọc vị là trả lời năm câu hỏi theo thứ tự: dạng gì → dấu hiệu nào → kiến thức nào → phương pháp nào → có lối tắt không. Chỉ khi trả lời xong năm câu ấy mới bắt đầu tính.
 
@@ -599,9 +599,9 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
 | A.1 | Liệt kê dạng bài | Danh mục dạng bài của chương | Bảng dạng bài đầu phiếu | Chép theo thứ tự học | Đếm số dạng bài là cách nhanh nhất để biết mình còn sót gì. | Ôn tập bảng đơn vị đo độ dài và khối lượng · Đề-ca-mét vuông, héc-tô-mét vuông, héc-ta · Viết số đo độ dài, khối lượng, diện tích dưới dạng số thập phân · Bảng đơn vị đo thể tích: cm³, dm³, m³… |
-| A.2 | Lập bảng dạng bài | Bảng phân tích chuyên sâu sáu cột | Bảng có sẵn cột dạng bài, thiếu các cột còn lại | Tra bảng phân tích của các phiếu đã học | Học theo hàng ngang, không học theo cột dọc. | Thay đổi số người, hỏi thay đổi thời gian · Đơn vị có mũ hai, hoặc ha, km² · Các số hạng có đơn vị khác nhau trong cùng một phép tính · Hai vế có đơn vị khác nhau… |
-| A.3 | Lập bảng dạng bài | Bảng phân tích chuyên sâu sáu cột | Bảng có sẵn cột dạng bài, thiếu các cột còn lại | Tra bảng phân tích của các phiếu đã học | Học theo hàng ngang, không học theo cột dọc. | Đổi về đơn vị của kết quả rồi tính · Đổi về cùng đơn vị rồi so sánh · Tính theo đơn vị dữ kiện rồi đổi ở bước cuối · Tính tổng quãng đường, tổng thời gian rồi chia… |
-| A.4 | Lập bảng dạng bài | Bảng phân tích chuyên sâu sáu cột | Bảng có sẵn cột dạng bài, thiếu các cột còn lại | Tra bảng phân tích của các phiếu đã học | Học theo hàng ngang, không học theo cột dọc. | Nhân, chia số tự nhiên; đổi đơn vị khối lượng · Công thức vận tốc; trung bình cộng có trọng số · Bảng đơn vị thể tích; quan hệ dm³ – lít · Công thức s = v × t… |
+| A.2 | Lập bảng dạng bài | Bảng phân tích chuyên sâu sáu cột | Bảng có sẵn cột dạng bài, thiếu các cột còn lại | Tra bảng phân tích của các phiếu đã học | Học theo hàng ngang, không học theo cột dọc. | Có cả “chiết khấu” và “thuế” trong một bài · Đơn vị có mũ hai, hoặc ha, km² · Các số hạng có đơn vị khác nhau trong cùng một phép tính · Hai vế có đơn vị khác nhau… |
+| A.3 | Lập bảng dạng bài | Bảng phân tích chuyên sâu sáu cột | Bảng có sẵn cột dạng bài, thiếu các cột còn lại | Tra bảng phân tích của các phiếu đã học | Học theo hàng ngang, không học theo cột dọc. | Đổi về đơn vị của kết quả rồi tính · Đổi về cùng đơn vị rồi so sánh · Tính theo đơn vị dữ kiện rồi đổi ở bước cuối · Bám vào tổng số ngày công không đổi… |
+| A.4 | Lập bảng dạng bài | Bảng phân tích chuyên sâu sáu cột | Bảng có sẵn cột dạng bài, thiếu các cột còn lại | Tra bảng phân tích của các phiếu đã học | Học theo hàng ngang, không học theo cột dọc. | Nhân, chia số tự nhiên; đổi đơn vị khối lượng · Đại lượng tỉ lệ nghịch, tổng số ngày công · Bảng đơn vị thể tích; quan hệ dm³ – lít · Công thức s = v × t… |
 | A.5 | Lập bảng dạng bài | Bảng phân tích chuyên sâu sáu cột | Bảng có sẵn cột dạng bài, thiếu các cột còn lại | Tra bảng phân tích của các phiếu đã học | Học theo hàng ngang, không học theo cột dọc. | Mỗi bậc thêm ba chữ số 0. · Vẽ tam giác s ở trên, v và t ở dưới: che đại lượng cần tìm là ra công thức. · So sánh hai đường giải, chọn đường ít phép tính hơn. · Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm.… |
 | B.1 | Lịch và đơn vị thời gian lớn | Số ngày các tháng, năm nhuận, thế kỉ | Đề hỏi về tháng, năm, thế kỉ | Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400 | Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ. | 7 tuần 4 ngày · 31 · không · XXI |
 | B.2 | Bốn phép tính với số đo | Đổi đơn vị, bốn phép tính | Các số hạng có đơn vị khác nhau trong cùng một phép tính | Đổi về đơn vị của kết quả rồi tính | Đọc chỗ chấm trước, biết ngay đơn vị đích. | 8 128 · 10 218 · 2 102 · 9 927… |
@@ -620,7 +620,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | D.5 | Chia tỉ lệ nhiều phần; bài toán trộn | Tỉ số, chia theo tỉ lệ, nhân với đơn giá | “Tỉ lệ với … , … , …” hoặc “trộn … với …” | Tổng số phần → giá trị một phần → nhân | Tổng luôn chia hết cho tổng số phần; không chia hết là đọc sai tỉ lệ. | 152 · 38 · 38 cây · 570 000 đồng · 800 000 đồng · 44 · 22 · 11 cây… |
 | E.1 | Đổi đơn vị diện tích | Bảng đơn vị đo diện tích | Đơn vị có mũ hai, hoặc ha, km² | Đếm bậc rồi nhân, chia 100 | Mỗi bậc thêm hai chữ số 0 — nhớ “diện tích thì gấp đôi số 0”. | Đổi đơn vị diện tích · Đơn vị có mũ hai, hoặc ha, km² · Bảng đơn vị đo diện tích · Đếm bậc rồi nhân, chia 100… |
 | E.2 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | So sánh số đo đại lượng · Hai vế có đơn vị khác nhau · Bảng đơn vị đo, so sánh số tự nhiên · Đổi về cùng đơn vị rồi so sánh… |
-| E.3 | Vận tốc trung bình | Công thức vận tốc; trung bình cộng có trọng số | Hai chặng có vận tốc khác nhau | Tính tổng quãng đường, tổng thời gian rồi chia | Kiểm tra: vận tốc trung bình luôn nằm giữa hai vận tốc đã cho. | Vận tốc trung bình · Hai chặng có vận tốc khác nhau · Công thức vận tốc; trung bình cộng có trọng số · Tính tổng quãng đường, tổng thời gian rồi chia… |
+| E.3 | Tỉ lệ nghịch, so sánh hai phương án | Đại lượng tỉ lệ nghịch, tổng số ngày công | Thay đổi số người, hỏi thay đổi thời gian | Bám vào tổng số ngày công không đổi | Số người tăng gấp k lần thì số ngày giảm còn 1 phần k. | Tỉ lệ nghịch, so sánh hai phương án · Thay đổi số người, hỏi thay đổi thời gian · Đại lượng tỉ lệ nghịch, tổng số ngày công · Bám vào tổng số ngày công không đổi… |
 | E.4 | Ba dạng cơ bản của chuyển động đều | Công thức s = v × t | Có hai trong ba đại lượng quãng đường, vận tốc, thời gian | Chọn công thức theo đại lượng cần tìm; đồng bộ đơn vị | Vẽ tam giác s ở trên, v và t ở dưới: che đại lượng cần tìm là ra công thức. | Ba dạng cơ bản của chuyển động đều · Có hai trong ba đại lượng quãng đường, vận tốc, thời gian · Công thức s = v × t · Chọn công thức theo đại lượng cần tìm; đồng bộ đơn vị… |
 | E.5 | Đổi và tính toán với đơn vị thời gian | Quan hệ giờ – phút – giây | Số đo có chữ “giờ”, “phút”, “giây” | Quy về phút rồi tính, cuối cùng đổi lại giờ và phút | Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm. | Đổi và tính toán với đơn vị thời gian · Số đo có chữ “giờ”, “phút”, “giây” · Quan hệ giờ – phút – giây · Quy về phút rồi tính, cuối cùng đổi lại giờ và phút… |
 
@@ -686,7 +686,7 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 | D.5 | Chia tổng cho 3 vì thấy có ba tổ. | Đếm số phần trên sơ đồ trước khi chia. |
 | E.1 | Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. | Viết riêng bảng đơn vị diện tích, ghi rõ “× 100” giữa hai bậc liền nhau. |
 | E.2 | So thẳng hai con số, bỏ qua đơn vị. | Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị. |
-| E.3 | Cộng hai vận tốc rồi chia đôi trong mọi trường hợp. | Luôn viết hai dòng: tổng quãng đường = … ; tổng thời gian = … rồi mới chia. |
+| E.3 | Trừ thẳng số người rồi lấy hiệu làm số ngày rút ngắn. | Viết rõ: tổng ngày công = … ; số ngày mới = … ; sớm hơn = … . |
 | E.4 | Vận tốc tính bằng km/giờ nhưng thời gian lại để bằng phút. | Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức. |
 | E.5 | Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. | Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không. |
 
@@ -752,7 +752,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | D.5 | Chia 120 cây theo tỉ lệ 1 : 2 : 3. Mỗi phần bao nhiêu cây? | 20, 40, 60 |
 | E.1 | 3 m² = … dm² | 300 |
 | E.2 | So sánh: 3 kg … 2 500 g | > |
-| E.3 | Đi 2 giờ với 30 km/giờ rồi 2 giờ với 50 km/giờ. Vận tốc trung bình? | 40 km/giờ |
+| E.3 | 6 người làm xong trong 10 ngày. Thêm 4 người thì sớm hơn mấy ngày? | 4 ngày |
 | E.4 | Đi 120 km hết 3 giờ. Vận tốc là bao nhiêu? | 40 km/giờ |
 | E.5 | 155 phút = … giờ … phút | 2 giờ 35 phút |
 

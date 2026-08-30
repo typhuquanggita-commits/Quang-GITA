@@ -225,55 +225,59 @@ f) Có bao nhiêu số từ 81 đến 771 vừa chia hết cho 2 vừa chia hế
 
 ## PHẦN IV — VẬN DỤNG CAO · Mức M4 — Vận dụng cao · 25 phút · 25 điểm
 
-### Bài 1. (5 điểm) Số nguyên tố và hợp số
-
-Trả lời và nêu căn cứ.
-
-a) Số 14 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
-b) Số 26 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
-c) Số 95 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
-d) Số 107 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
-e) Số 131 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
-
-### Bài 2. (5 điểm) Ghép người với môn bằng bảng đúng – sai
-
-Bắt buộc kẻ bảng ra giấy. Không được suy luận nhẩm ở bài này.
-
-a) Ba bạn Khánh, Phúc và Trang mỗi bạn học một môn năng khiếu khác nhau trong ba môn: hát, múa và đàn. Biết rằng: Khánh không học hát và cũng không học đàn; Phúc không học đàn. Hỏi mỗi bạn học môn nào?
-b) Ba bạn Hà, Lan và Tuấn mỗi bạn học một môn năng khiếu khác nhau trong ba môn: bơi, cờ vua và vẽ. Biết rằng: Hà không học bơi và cũng không học vẽ; Lan không học vẽ. Hỏi mỗi bạn học môn nào?
-c) Ba bạn Hùng, Hà và Lan mỗi bạn học một môn năng khiếu khác nhau trong ba môn: hát, múa và đàn. Biết rằng: Hùng không học múa và cũng không học hát; Hà không học hát. Hỏi mỗi bạn học môn nào?
-d) Ba bạn Minh, Thảo và Bình mỗi bạn học một môn năng khiếu khác nhau trong ba môn: hát, múa và đàn. Biết rằng: Minh không học hát và cũng không học đàn; Thảo không học đàn. Hỏi mỗi bạn học môn nào?
-
-### Bài 3. (5 điểm) Thêm, bớt, đổi chỗ chữ số
+### Bài 1. (5 điểm) Thêm, bớt, đổi chỗ chữ số
 
 Phân tích số theo cấu tạo rồi trả lời.
 
-a) Đổi chỗ chữ số hàng trăm và chữ số hàng đơn vị của số 958 ta được số mới. Hiệu hai số bằng bao nhiêu?
-b) Một số có ba chữ số, nếu xoá chữ số hàng trăm thì được số mới kém số ban đầu 300 đơn vị. Tìm số ban đầu, biết chữ số hàng chục là 0 và chữ số hàng đơn vị là 0.
-c) Đổi chỗ chữ số hàng trăm và chữ số hàng đơn vị của số 203 ta được số mới. Hiệu hai số bằng bao nhiêu?
-d) Đổi chỗ chữ số hàng trăm và chữ số hàng đơn vị của số 773 ta được số mới. Hiệu hai số bằng bao nhiêu?
-e) Một số có ba chữ số, nếu xoá chữ số hàng trăm thì được số mới kém số ban đầu 700 đơn vị. Tìm số ban đầu, biết chữ số hàng chục là 7 và chữ số hàng đơn vị là 7.
+a) Đổi chỗ chữ số hàng trăm và chữ số hàng đơn vị của số 700 ta được số mới. Hiệu hai số bằng bao nhiêu?
+b) Viết thêm chữ số 1 vào bên trái số 672 thì được số mới. Số mới hơn số ban đầu bao nhiêu đơn vị?
+c) Một số có ba chữ số, nếu xoá chữ số hàng trăm thì được số mới kém số ban đầu 100 đơn vị. Tìm số ban đầu, biết chữ số hàng chục là 5 và chữ số hàng đơn vị là 2.
+d) Đổi chỗ chữ số hàng trăm và chữ số hàng đơn vị của số 805 ta được số mới. Hiệu hai số bằng bao nhiêu?
+e) Một số có ba chữ số, nếu xoá chữ số hàng trăm thì được số mới kém số ban đầu 100 đơn vị. Tìm số ban đầu, biết chữ số hàng chục là 0 và chữ số hàng đơn vị là 2.
+
+### Bài 2. (5 điểm) Lọc số hạng theo điều kiện chia hết
+
+Cho dãy 4, 8, 12, …, 992.
+
+a) Dãy có bao nhiêu số hạng?
+b) Số hạng cuối là số nào?
+c) Trong dãy có bao nhiêu số chia hết cho 2?
+d) Trong dãy có bao nhiêu số chẵn?
+e) Tổng các số chẵn trong dãy bằng bao nhiêu?
+f) Tổng cả dãy bằng bao nhiêu?
+
+### Bài 3. (5 điểm) Tìm số theo hai điều kiện chia có dư
+
+Tìm số bé nhất thoả mãn.
+
+a) Tìm số bé nhất không quá 200 chia cho 9 dư 7 và chia cho 8 dư 1.
+b) Tìm số bé nhất không quá 500 chia cho 6 dư 2 và chia cho 3 dư 2.
+c) Tìm số bé nhất không quá 200 chia cho 7 dư 3 và chia cho 9 dư 3.
+d) Tìm số bé nhất không quá 200 chia cho 3 dư 1 và chia cho 9 dư 1.
 
 ### Bài 4. (5 điểm) Đặt chữ thay chữ số rồi lập luận
 
 Câu nào cũng phải viết cấu tạo số ra trước khi tính.
 
-a) Tìm mọi số có hai chữ số mà số đó bằng 9 lần tổng hai chữ số của nó.
-b) Số có hai chữ số ab. Khi đổi chỗ hai chữ số thì được số mới nhỏ hơn số cũ 45 đơn vị, và tổng hai chữ số bằng 9. Tìm số ab.
-c) Tìm mọi số có hai chữ số mà số đó bằng 7 lần tổng hai chữ số của nó.
-d) Số có hai chữ số ab. Khi đổi chỗ hai chữ số thì được số mới nhỏ hơn số cũ 45 đơn vị, và tổng hai chữ số bằng 7. Tìm số ab.
-e) Số có hai chữ số ab. Khi đổi chỗ hai chữ số thì được số mới nhỏ hơn số cũ 27 đơn vị, và tổng hai chữ số bằng 7. Tìm số ab.
+a) Tìm mọi số có hai chữ số mà số đó bằng 7 lần tổng hai chữ số của nó.
+b) Số có hai chữ số ab. Khi đổi chỗ hai chữ số thì được số mới nhỏ hơn số cũ 36 đơn vị, và tổng hai chữ số bằng 12. Tìm số ab.
+c) Tìm mọi số có hai chữ số mà số đó bằng 6 lần tổng hai chữ số của nó.
+d) Số có hai chữ số ab. Khi đổi chỗ hai chữ số thì được số mới nhỏ hơn số cũ 9 đơn vị, và tổng hai chữ số bằng 13. Tìm số ab.
+e) Số có hai chữ số ab. Khi đổi chỗ hai chữ số thì được số mới nhỏ hơn số cũ 27 đơn vị, và tổng hai chữ số bằng 15. Tìm số ab.
+f) Tìm mọi số có hai chữ số mà số đó bằng 8 lần tổng hai chữ số của nó.
 
-### Bài 5. (5 điểm) Tìm số theo hai điều kiện chia có dư
+### Bài 5. (5 điểm) Số nguyên tố và hợp số
 
-Tìm số bé nhất thoả mãn.
+Trả lời và nêu căn cứ.
 
-a) Tìm số bé nhất không quá 200 chia cho 8 dư 4 và chia cho 3 dư 2.
-b) Tìm số bé nhất không quá 200 chia cho 7 dư 3 và chia cho 9 dư 2.
-c) Tìm số bé nhất không quá 500 chia cho 6 dư 2 và chia cho 9 dư 4.
-d) Tìm số bé nhất không quá 200 chia cho 6 dư 3 và chia cho 4 dư 1.
-e) Tìm số bé nhất không quá 200 chia cho 6 dư 5 và chia cho 5 dư 4.
-f) Tìm số bé nhất không quá 200 chia cho 5 dư 4 và chia cho 3 dư 1.
+a) Số 28 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
+b) Số 70 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
+c) Số 72 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
+d) Số 87 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
+e) Số 139 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
+f) Số 159 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
+g) Số 164 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
+h) Số 188 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
 
 ---
 
@@ -283,54 +287,53 @@ f) Tìm số bé nhất không quá 200 chia cho 5 dư 4 và chia cho 3 dư 1.
 
 Trình bày lập luận đầy đủ.
 
-a) Tìm số có hai chữ số biết số đó bằng 9 lần tổng hai chữ số của nó và chữ số hàng chục là 8.
-b) Số có hai chữ số 16 gấp tổng hai chữ số của nó bao nhiêu lần? (viết dưới dạng thương và số dư)
-c) Tìm số có hai chữ số biết số đó bằng 4 lần tổng hai chữ số của nó và chữ số hàng chục là 4.
-d) Số có hai chữ số 28 gấp tổng hai chữ số của nó bao nhiêu lần? (viết dưới dạng thương và số dư)
-e) Số có hai chữ số 57 gấp tổng hai chữ số của nó bao nhiêu lần? (viết dưới dạng thương và số dư)
-f) Số có hai chữ số 83 gấp tổng hai chữ số của nó bao nhiêu lần? (viết dưới dạng thương và số dư)
+a) Số có hai chữ số 93 gấp tổng hai chữ số của nó bao nhiêu lần? (viết dưới dạng thương và số dư)
+b) Số có hai chữ số 65 gấp tổng hai chữ số của nó bao nhiêu lần? (viết dưới dạng thương và số dư)
+c) Số có hai chữ số 39 gấp tổng hai chữ số của nó bao nhiêu lần? (viết dưới dạng thương và số dư)
+d) Số có hai chữ số 46 gấp tổng hai chữ số của nó bao nhiêu lần? (viết dưới dạng thương và số dư)
 
-### Bài 2. (3 điểm) Đếm chữ số dùng để đánh số trang
+### Bài 2. (3 điểm) Đại lượng khối lượng — đổi đơn vị và chia phần
 
-Tính số chữ số cần dùng.
+Đổi hết về ki-lô-gam trước khi tính.
 
-a) Một quyển sách có 1 298 trang, đánh số trang từ 1. Phải dùng tất cả bao nhiêu chữ số?
-b) Một quyển sách có 60 trang, đánh số trang từ 1. Phải dùng tất cả bao nhiêu chữ số?
-c) Một quyển sách có 2 154 trang, đánh số trang từ 1. Phải dùng tất cả bao nhiêu chữ số?
-d) Một quyển sách có 82 trang, đánh số trang từ 1. Phải dùng tất cả bao nhiêu chữ số?
-e) Một quyển sách có 1 416 trang, đánh số trang từ 1. Phải dùng tất cả bao nhiêu chữ số?
+a) Một kho chứa 4 tấn 1 tạ 43 kg thóc. Đổi ra ki-lô-gam.
+b) Số thóc ấy nặng bao nhiêu tạ và bao nhiêu ki-lô-gam?
+c) Chở đều bằng 5 xe thì mỗi xe chở bao nhiêu ki-lô-gam, còn thừa bao nhiêu?
+d) Nếu mỗi xe chỉ chở được 1 tấn thì cần ít nhất bao nhiêu xe?
+e) Bán 2 071 kg thì còn lại bao nhiêu tạ và ki-lô-gam?
+f) Vì sao ở ý d phải làm tròn lên chứ không làm tròn xuống?
 
 ### Bài 3. (3 điểm) Số dư của tổng — lập luận không cần tính hết
 
 Dùng tính chất số dư, hạn chế tính toán.
 
-a) Dãy số: 171, 470, 636, 745, 783. Có bao nhiêu số trong dãy chia hết cho 9?
+a) Dãy số: 203, 245, 501, 678, 873, 994. Có bao nhiêu số trong dãy chia hết cho 5?
 b) Tổng của dãy bằng bao nhiêu?
-c) Tổng đó có chia hết cho 9 không?
-d) Số dư khi chia tổng cho 9 bằng tổng các số dư của từng số hạng chia cho 9 rồi lại chia cho 9 — hãy kiểm chứng bằng số cụ thể.
-e) Cần bớt ở tổng ít nhất bao nhiêu đơn vị để tổng chia hết cho 9?
-f) Cần thêm vào tổng ít nhất bao nhiêu đơn vị để tổng chia hết cho 9?
+c) Tổng đó có chia hết cho 5 không?
+d) Số dư khi chia tổng cho 5 bằng tổng các số dư của từng số hạng chia cho 5 rồi lại chia cho 5 — hãy kiểm chứng bằng số cụ thể.
+e) Cần bớt ở tổng ít nhất bao nhiêu đơn vị để tổng chia hết cho 5?
+f) Cần thêm vào tổng ít nhất bao nhiêu đơn vị để tổng chia hết cho 5?
 
 ### Bài 4. (3 điểm) Chữ số tận cùng của tổng và tích
 
 Không tính hết phép tính, chỉ tìm chữ số tận cùng.
 
-a) Tích 677 × 572 có chữ số tận cùng là chữ số nào?
-b) Tích 757 × 737 × 3 có chữ số tận cùng là chữ số nào?
-c) Tổng 977 + 834 có chữ số tận cùng là chữ số nào?
-d) Tích 851 × 640 có chữ số tận cùng là chữ số nào?
-e) Tích 905 × 92 × 6 có chữ số tận cùng là chữ số nào?
-f) Tổng 33 + 111 có chữ số tận cùng là chữ số nào?
+a) Tổng 628 + 697 có chữ số tận cùng là chữ số nào?
+b) Tích 948 × 98 có chữ số tận cùng là chữ số nào?
+c) Tích 427 × 231 × 3 có chữ số tận cùng là chữ số nào?
+d) Tích 972 × 535 × 6 có chữ số tận cùng là chữ số nào?
+e) Tích 758 × 500 có chữ số tận cùng là chữ số nào?
 
-### Bài 5. (3 điểm) Đi-rích-lê ở dạng chứng minh
+### Bài 5. (3 điểm) Số chính phương — làm quen theo hướng đề thi
 
-Nêu rõ ngăn kéo là gì, đồ vật là gì.
+Số chính phương là số bằng tích của một số tự nhiên với chính nó.
 
-a) Có 13 học sinh sinh trong 12 tháng khác nhau. Chứng tỏ rằng có ít nhất 2 bạn sinh cùng một tháng. Hỏi nếu bớt đi một bạn thì kết luận đó còn đúng không?
-b) Có 49 học sinh sinh trong 12 tháng khác nhau. Chứng tỏ rằng có ít nhất 5 bạn sinh cùng một tháng. Hỏi nếu bớt đi một bạn thì kết luận đó còn đúng không?
-c) Có 6 học sinh sinh trong 5 tháng khác nhau. Chứng tỏ rằng có ít nhất 2 bạn sinh cùng một tháng. Hỏi nếu bớt đi một bạn thì kết luận đó còn đúng không?
-d) Có 6 học sinh sinh trong 5 tháng khác nhau. Chứng tỏ rằng có ít nhất 2 bạn sinh cùng một tháng. Hỏi nếu bớt đi một bạn thì kết luận đó còn đúng không?
-e) Có 11 học sinh sinh trong 5 tháng khác nhau. Chứng tỏ rằng có ít nhất 3 bạn sinh cùng một tháng. Hỏi nếu bớt đi một bạn thì kết luận đó còn đúng không?
+a) Viết 7 số chính phương đầu tiên.
+b) Số chính phương thứ 7 là số nào?
+c) Tổng của n số lẻ đầu tiên là một số chính phương — kiểm chứng với n = 7.
+d) Một số chính phương có thể tận cùng bằng 2, 3, 7 hoặc 8 không?
+e) Số 36 có phải số chính phương không? Nếu có, nó là bình phương của số nào?
+f) Trong các số từ 1 đến 49 có bao nhiêu số chính phương?
 
 ---
 
@@ -429,74 +432,74 @@ e) Có 11 học sinh sinh trong 5 tháng khác nhau. Chứng tỏ rằng có ít
 **Lỗi thường gặp:** Lấy tích hai số làm khoảng cách (ví dụ dùng 27 cho “chia hết cho 3 và 9”). Phòng: Kiểm tra bằng cách viết ba số đầu tiên của dãy rồi xem khoảng cách thật.
 
 ### Bài IV.1
-**Đáp số:** a) hợp số (ví dụ ước 2) · b) hợp số (ví dụ ước 2) · c) hợp số (ví dụ ước 5) · d) số nguyên tố · e) số nguyên tố
-**Hướng giải:** BẪY — 91, 121, 143 trông như số nguyên tố nhưng không phải. Số nguyên tố chỉ có đúng hai ước là 1 và chính nó. Để kiểm tra, thử chia lần lượt cho 2, 3, 5, 7, 11… và chỉ cần thử đến khi thương bé hơn hoặc bằng số chia là dừng được.
-**Nhãn tư duy:** TD2. Điểm chốt: Chỉ cần thử các **số nguyên tố nhỏ**, không phải thử mọi số.
-**Lỗi thường gặp:** Thử chia cho mọi số từ 2 đến số đó nên mất thời gian, hoặc kết luận vội. Phòng: Thử theo thứ tự 2, 3, 5, 7, 11, 13 và dừng đúng lúc.
-**Gợi ý 3 tầng:** (1) Số đó có chia hết cho 2 hay 5 không? — (2) Cộng các chữ số xem có chia hết cho 3 không. — (3) Thử tiếp 7, 11, 13; dừng khi thương bé hơn số chia.
-
-### Bài IV.2
-**Đáp số:** a) Khánh học múa; Phúc học hát; Trang học đàn · b) Hà học cờ vua; Lan học bơi; Tuấn học vẽ · c) Hùng học đàn; Hà học múa; Lan học hát · d) Minh học múa; Thảo học hát; Bình học đàn
-**Hướng giải:** BẪY — Đánh dấu đúng mà quên gạch phần còn lại. Mỗi dòng một người, mỗi cột một khả năng. Đánh × cho điều chắc chắn sai. Dòng nào chỉ còn một ô trống thì ô ấy là ✓ — và ngay sau đó phải gạch × cho cả cột chứa ô ấy.
-**Nhãn tư duy:** TD3, TD4. Điểm chốt: Đặt được một ✓ thì **cả dòng và cả cột** còn lại đều thành ×. Bỏ bước gạch cột là chỗ bài bị tắc giữa chừng.
-**Lỗi thường gặp:** Đánh ✓ rồi đi tiếp luôn, không gạch × cho phần còn lại của cột. Phòng: Sau mỗi lần đặt ✓, dừng lại gạch đủ dòng và cột rồi mới đọc manh mối kế.
-**Gợi ý 3 tầng:** (1) Kẻ bảng ba dòng ba cột trước đã. — (2) Manh mối nào cho biết chắc chắn một ô là sai? — (3) Dòng nào chỉ còn một ô trống thì ô ấy chính là đáp án của dòng ấy.
-
-### Bài IV.3
-**Đáp số:** a) 99 · b) 300 · c) 99 · d) 396 · e) 777
+**Đáp số:** a) 693 · b) 1 000 · c) 152 · d) 297 · e) 102
 **Hướng giải:** BẪY — Bên trái hay bên phải. Viết số có ba chữ số dạng **a × 100 + b × 10 + c**. Xoá chữ số hàng trăm là bớt đi a × 100. Viết thêm chữ số 1 vào bên trái một số có ba chữ số là cộng thêm 1 000. Đổi chỗ hàng trăm với hàng đơn vị làm số thay đổi 99 lần hiệu hai chữ số đó.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Thêm chữ số vào **bên trái** là cộng thêm; thêm vào **bên phải** là nhân 10 rồi cộng.
 **Lỗi thường gặp:** Nhầm “viết thêm bên trái” thành “viết thêm bên phải”. Phòng: Viết cả số cũ và số mới ra rồi mới so sánh.
 **Gợi ý 3 tầng:** (1) Viết số theo cấu tạo a × 100 + b × 10 + c. — (2) Viết số mới cũng theo cấu tạo như vậy. — (3) Trừ hai biểu thức, các phần giống nhau triệt tiêu.
 
+### Bài IV.2
+**Đáp số:** a) 248 · b) 992 · c) 248 · d) 248 · e) 123 504 · f) 123 504
+**Hướng giải:** Các số hạng thoả thêm một điều kiện chia hết cũng lập thành một dãy cách đều mới, có khoảng cách là bội chung nhỏ nhất của khoảng cách cũ và số chia. Tìm số hạng đầu tiên thoả điều kiện rồi đếm trên dãy mới.
+**Nhãn tư duy:** TD4, TD2. Điểm chốt: Dãy con cũng **cách đều**, chỉ khác khoảng cách.
+**Lỗi thường gặp:** Duyệt từng số hạng để đếm — không kịp khi dãy dài hàng trăm số. Phòng: Tìm số hạng đầu tiên thoả điều kiện rồi xác định khoảng cách mới.
+**Gợi ý 3 tầng:** (1) Số hạng nào đầu tiên thoả điều kiện? — (2) Số hạng tiếp theo thoả điều kiện cách nó bao nhiêu? — (3) Dãy con cũng cách đều — dùng công thức đếm.
+
+### Bài IV.3
+**Đáp số:** a) 25 · b) 2 · c) 3 · d) 1
+**Hướng giải:** Liệt kê các số thoả điều kiện thứ nhất — chúng lập thành dãy cách đều khoảng cách bằng số chia thứ nhất. Đi dọc dãy đó, thử điều kiện thứ hai, gặp số đầu tiên thoả mãn thì dừng.
+**Nhãn tư duy:** TD2, TD6. Điểm chốt: Chỉ **đi dọc một dãy** rồi thử điều kiện còn lại, không thử tất cả số.
+**Lỗi thường gặp:** Thử từng số từ 1 trở đi nên quá lâu và dễ bỏ sót. Phòng: Viết dãy số thoả điều kiện thứ nhất trước, rồi mới lọc.
+**Gợi ý 3 tầng:** (1) Viết vài số chia cho số thứ nhất dư đúng như đề. — (2) Chúng cách đều nhau bao nhiêu đơn vị? — (3) Đi dọc dãy đó và kiểm tra điều kiện thứ hai.
+
 ### Bài IV.4
-**Đáp số:** a) 81 · b) 72 · c) 21, 42, 63, 84 · d) 61 · e) 52
+**Đáp số:** a) 21, 42, 63, 84 · b) 84 · c) 54 · d) 76 · e) 96 · f) 72
 **Hướng giải:** BẪY — Quên chữ số hàng cao nhất khác 0. Viết số theo cấu tạo: số có hai chữ số ab bằng a × 10 + b. Thay vào điều kiện đề cho rồi rút gọn — thường ra một quan hệ rất gọn giữa a và b.
 **Nhãn tư duy:** TD1, TD4. Điểm chốt: Chữ số hàng cao nhất **khác 0**, và mọi chữ số chỉ nhận giá trị từ 0 đến 9. Hai ràng buộc này thường là chỗ loại bớt đáp số.
 **Lỗi thường gặp:** Tính ra a bằng 0 rồi vẫn nhận, hoặc để một chữ số vượt quá 9. Phòng: Viết sẵn hai dòng ràng buộc lên đầu bài giải rồi mới tính.
 **Gợi ý 3 tầng:** (1) Số có hai chữ số ab viết theo cấu tạo là gì? — (2) Thay cấu tạo ấy vào điều kiện đề cho, rồi rút gọn. — (3) Kiểm lại: chữ số hàng chục có khác 0 không?
 
 ### Bài IV.5
-**Đáp số:** a) 20 · b) 38 · c) không có số nào · d) 9 · e) 29 · f) 4
-**Hướng giải:** Liệt kê các số thoả điều kiện thứ nhất — chúng lập thành dãy cách đều khoảng cách bằng số chia thứ nhất. Đi dọc dãy đó, thử điều kiện thứ hai, gặp số đầu tiên thoả mãn thì dừng.
-**Nhãn tư duy:** TD2, TD6. Điểm chốt: Chỉ **đi dọc một dãy** rồi thử điều kiện còn lại, không thử tất cả số.
-**Lỗi thường gặp:** Thử từng số từ 1 trở đi nên quá lâu và dễ bỏ sót. Phòng: Viết dãy số thoả điều kiện thứ nhất trước, rồi mới lọc.
-**Gợi ý 3 tầng:** (1) Viết vài số chia cho số thứ nhất dư đúng như đề. — (2) Chúng cách đều nhau bao nhiêu đơn vị? — (3) Đi dọc dãy đó và kiểm tra điều kiện thứ hai.
+**Đáp số:** a) hợp số (ví dụ ước 2) · b) hợp số (ví dụ ước 2) · c) hợp số (ví dụ ước 2) · d) hợp số (ví dụ ước 3) · e) số nguyên tố · f) hợp số (ví dụ ước 3) · g) hợp số (ví dụ ước 2) · h) hợp số (ví dụ ước 2)
+**Hướng giải:** BẪY — 91, 121, 143 trông như số nguyên tố nhưng không phải. Số nguyên tố chỉ có đúng hai ước là 1 và chính nó. Để kiểm tra, thử chia lần lượt cho 2, 3, 5, 7, 11… và chỉ cần thử đến khi thương bé hơn hoặc bằng số chia là dừng được.
+**Nhãn tư duy:** TD2. Điểm chốt: Chỉ cần thử các **số nguyên tố nhỏ**, không phải thử mọi số.
+**Lỗi thường gặp:** Thử chia cho mọi số từ 2 đến số đó nên mất thời gian, hoặc kết luận vội. Phòng: Thử theo thứ tự 2, 3, 5, 7, 11, 13 và dừng đúng lúc.
+**Gợi ý 3 tầng:** (1) Số đó có chia hết cho 2 hay 5 không? — (2) Cộng các chữ số xem có chia hết cho 3 không. — (3) Thử tiếp 7, 11, 13; dừng khi thương bé hơn số chia.
 
 ### Bài V.1
-**Đáp số:** a) 81 · b) 2 dư 2 · c) 48 · d) 2 dư 8 · e) 4 dư 9 · f) 7 dư 6
+**Đáp số:** a) 7 dư 9 · b) 5 dư 10 · c) 3 dư 3 · d) 4 dư 6
 **Hướng giải:** Viết số có hai chữ số là a × 10 + b, tổng hai chữ số là a + b. So sánh hai biểu thức để tìm quan hệ; chú ý a chạy từ 1 đến 9 và b chạy từ 0 đến 9 nên số trường hợp là hữu hạn, có thể lập bảng.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Khi ẩn chỉ nhận hữu hạn giá trị, **lập bảng** là phương pháp chắc chắn nhất.
 **Lỗi thường gặp:** Chia bừa mà không kiểm tra điều kiện chia hết nên nhận đáp số không nguyên. Phòng: Kiểm tra lại đáp số bằng cách thay ngược vào đề.
 **Gợi ý 3 tầng:** (1) Đặt số đó là a × 10 + b. — (2) Tổng hai chữ số là a + b — viết cả hai biểu thức ra cạnh nhau. — (3) Lập bảng a từ 1 đến 9 rồi thử.
 
 ### Bài V.2
-**Đáp số:** a) 4 085 · b) 111 · c) 7 509 · d) 155 · e) 4 557
-**Hướng giải:** Chia các trang thành nhóm theo số chữ số: từ 1 đến 9 có 9 số, mỗi số 1 chữ số; từ 10 đến 99 có 90 số, mỗi số 2 chữ số; từ 100 đến 999 có 900 số, mỗi số 3 chữ số; từ 1 000 trở đi mỗi số 4 chữ số. Nhân rồi cộng.
-**Nhãn tư duy:** TD4, TD6. Điểm chốt: Nhóm cuối cùng thường **không đầy đủ** — phải đếm đúng số trang còn lại.
-**Lỗi thường gặp:** Lấy số trang nhân với số chữ số của trang cuối. Phòng: Kẻ bảng ba cột: khoảng trang – số trang – số chữ số, rồi cộng cột cuối.
-**Gợi ý 3 tầng:** (1) Từ trang 1 đến trang 9 dùng mấy chữ số? — (2) Từ trang 10 đến trang 99 có bao nhiêu trang? — (3) Nhóm cuối cùng có bao nhiêu trang, mỗi trang mấy chữ số?
+**Đáp số:** a) 4 143 kg · b) 41 tạ 43 kg · c) 828 kg, thừa 3 kg · d) 5 xe · e) 20 tạ 72 kg · f) vì phần thóc còn lại vẫn cần thêm một xe nữa để chở
+**Hướng giải:** BẪY — Làm tròn lên khi hỏi số xe ít nhất. Quy hết về một đơn vị rồi mới tính. Với câu hỏi “cần ít nhất bao nhiêu xe”, phần dư vẫn phải có một xe chở, nên **làm tròn lên**.
+**Nhãn tư duy:** TD3, TD6. Điểm chốt: Câu hỏi “ít nhất bao nhiêu xe” luôn **làm tròn lên**.
+**Lỗi thường gặp:** Chia rồi lấy phần nguyên, bỏ quên phần dư vẫn cần một xe. Phòng: Hỏi lại: phần thóc dư có tự bay đi được không?
+**Gợi ý 3 tầng:** (1) Đổi tất cả về ki-lô-gam. — (2) Chia cho sức chở mỗi xe. — (3) Còn dư thì có cần thêm xe không?
 
 ### Bài V.3
-**Đáp số:** a) 2 · b) 2 805 · c) không, dư 6 · d) tổng các số dư là 15, chia 9 dư 6 · e) 6 · f) 3
+**Đáp số:** a) 1 · b) 3 494 · c) không, dư 4 · d) tổng các số dư là 14, chia 5 dư 4 · e) 4 · f) 1
 **Hướng giải:** Số dư của một tổng khi chia cho d bằng số dư của tổng các số dư. Nhờ đó, muốn biết tổng có chia hết cho d không thì chỉ cần cộng các số dư, không cần cộng các số.
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Làm việc với **số dư** thay vì với số — đây là kỹ thuật rút gọn mạnh nhất.
 **Lỗi thường gặp:** Cộng hết cả dãy rồi mới chia, mất thời gian và dễ sai. Phòng: Ghi số dư của từng số ngay dưới số đó rồi cộng dòng số dư.
 **Gợi ý 3 tầng:** (1) Tính số dư của từng số khi chia cho d. — (2) Cộng các số dư lại. — (3) Lấy tổng các số dư chia tiếp cho d.
 
 ### Bài V.4
-**Đáp số:** a) 4 · b) 7 · c) 1 · d) 0 · e) 0 · f) 4
+**Đáp số:** a) 5 · b) 4 · c) 1 · d) 0 · e) 0
 **Hướng giải:** Chữ số tận cùng của tổng và của tích chỉ phụ thuộc chữ số tận cùng của các số tham gia. Che phần đầu, chỉ tính với chữ số cuối.
 **Nhãn tư duy:** TD5, TD2. Điểm chốt: Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu.
 **Lỗi thường gặp:** Tính trọn cả phép tính, vừa lâu vừa dễ sai. Phòng: Lấy tay che phần đầu của hai số, chỉ để lộ chữ số cuối.
 **Gợi ý 3 tầng:** (1) Chữ số tận cùng của mỗi số là gì? — (2) Tính riêng với hai chữ số ấy. — (3) Lấy chữ số tận cùng của kết quả vừa tính.
 
 ### Bài V.5
-**Đáp số:** a) không còn đúng (12 bạn có thể chia đều 1 bạn mỗi tháng) · b) không còn đúng (48 bạn có thể chia đều 4 bạn mỗi tháng) · c) không còn đúng (5 bạn có thể chia đều 1 bạn mỗi tháng) · d) không còn đúng (5 bạn có thể chia đều 1 bạn mỗi tháng) · e) không còn đúng (10 bạn có thể chia đều 2 bạn mỗi tháng)
-**Hướng giải:** Coi mỗi tháng là một “ngăn kéo”, mỗi học sinh là một “đồ vật”. Nếu mỗi ngăn kéo chứa nhiều nhất k − 1 đồ vật thì tổng số đồ vật nhiều nhất là số ngăn × (k − 1). Có nhiều hơn thế thì chắc chắn có một ngăn chứa từ k đồ vật trở lên.
-**Nhãn tư duy:** TD6, TD2. Điểm chốt: Phải gọi tên rõ **ngăn kéo** và **đồ vật** thì lập luận mới chặt.
-**Lỗi thường gặp:** Nói chung chung “vì nhiều người quá nên phải trùng” mà không chỉ ra con số. Phòng: Viết hẳn hai dòng: “Ngăn kéo là …”, “Đồ vật là …”.
-**Gợi ý 3 tầng:** (1) Cái gì đóng vai trò ngăn kéo? — (2) Nếu mỗi ngăn chỉ có k − 1 đồ vật thì tổng cộng nhiều nhất bao nhiêu? — (3) So sánh với số đồ vật thực tế.
+**Đáp số:** a) 1 · 4 · 9 · 16 · 25 · 36 · 49 · b) 49 · c) 1 + 3 + … + 13 = 49 · d) không bao giờ · e) có, là 6 nhân 6 · f) 7
+**Hướng giải:** Lập bảng các số chính phương đầu tiên rồi quan sát hai quy luật: hiệu hai số liên tiếp là dãy số lẻ, và chữ số tận cùng chỉ có thể là 0, 1, 4, 5, 6, 9.
+**Nhãn tư duy:** TD4, TD6. Điểm chốt: Số chính phương **không bao giờ** tận cùng bằng 2, 3, 7, 8.
+**Lỗi thường gặp:** Kết luận một số là chính phương chỉ vì nó “trông đẹp”. Phòng: Kiểm tra chữ số tận cùng trước, sau đó thử khai căn bằng cách nhân thử.
+**Gợi ý 3 tầng:** (1) Viết bảng các số chính phương đầu tiên. — (2) Hiệu hai số chính phương liên tiếp là những số nào? — (3) Chữ số tận cùng của số chính phương có thể là những chữ số nào?
 
 ---
 

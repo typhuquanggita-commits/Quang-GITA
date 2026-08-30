@@ -78,6 +78,7 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 | M5 | Bàn cờ, quân đô-mi-nô, câu hỏi “có thể phủ kín không” | Tô màu, bất biến trên bàn cờ | Tô màu xen kẽ, đếm hai màu, so sánh | Hai ô ở hai góc đối diện của bàn cờ luôn cùng màu. | Phải chứng minh bằng tô màu |
 | M5 | “Chứng tỏ rằng có ít nhất … cùng …” | Đi-rích-lê dạng chứng minh | Đặt tên ngăn kéo và đồ vật, tính ngưỡng | Ngưỡng = số ngăn × (số cần − 1) + 1. | — |
 | M5 | Nhiều câu ngắn, mỗi câu một kỹ thuật khác nhau | Trắc nghiệm đếm nhanh | Nhận dạng kỹ thuật trước, tính sau | Học thuộc bốn công thức: n(n−1):2, a×b, loại×(cần−1)+1, khoảng+1. | Chia 2 và cộng 1 — hai chỗ hay quên nhất |
+| M5 | Đề hỏi **lập được bao nhiêu số** thoả một điều kiện | Ứng dụng sơ đồ (cây, khối, mũi tên) | Chọn hàng bị điều kiện ràng buộc trước, rồi nhân số cách các hàng còn lại | Ba chữ số khác nhau xếp được 6 cách — dùng khi điều kiện rơi vào tổng. | Đếm trùng hai nhánh cho cùng một kết quả |
 
 ---
 
@@ -102,48 +103,43 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 
 Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: đây là dạng bài gì, và dấu hiệu nào cho biết điều đó.
 
-**Đề 1.** Dùng kĩ thuật tô màu để lập luận. Một bàn cờ vuông 8 × 8 ô. Hỏi có tất cả bao nhiêu ô?
+**Đề 1.** Tìm đại lượng không đổi qua mỗi bước. Trên bảng viết các số từ 1 đến 37. Mỗi bước, xoá hai số bất kì và viết thay vào **hiệu** của chúng (số lớn trừ số bé). Sau nhiều bước chỉ còn một số. Số cuối cùng là số chẵn hay số lẻ?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 2.** Tìm đại lượng không đổi qua mỗi bước. Trên bảng viết các số từ 1 đến 14. Mỗi bước, xoá hai số bất kì và viết thay vào **hiệu** của chúng (số lớn trừ số bé). Sau nhiều bước chỉ còn một số. Số cuối cùng là số chẵn hay số lẻ?
+**Đề 2.** Ba bạn Nam, Hà, Bình mỗi bạn thích đúng một môn khác nhau trong ba môn Tiếng Anh, Mĩ thuật, Toán. Biết **Nam thích Tiếng Anh** và **Hà không thích Toán**. Kẻ bảng ba hàng (tên bạn) và ba cột (môn học). Dữ kiện “Nam thích Tiếng Anh” cho phép đánh dấu ✔ vào ô nào?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 3.** Dùng phương pháp giả thiết tạm. Trong sân có 33 chiếc xe đạp và xe ba bánh, đếm được tất cả 81 bánh xe. Hỏi mỗi loại có bao nhiêu chiếc?
+**Đề 3.** Xét trường hợp xấu nhất. Trong một hộp có bi thuộc 3 màu (đỏ, xanh, vàng), mỗi màu có rất nhiều viên. Hỏi phải lấy ra ít nhất bao nhiêu viên (không nhìn) để chắc chắn có 5 viên cùng màu?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 4.** Chú ý mỗi lần cân cho bao nhiêu kết quả. Có 12 đồng tiền giống hệt nhau, trong đó có đúng một đồng nhẹ hơn. Dùng cân đĩa (không quả cân), cần cân ít nhất mấy lần để tìm ra đồng nhẹ?
+**Đề 4.** Cho bốn chữ số **1, 2, 5, 9**. Xét các số có ba chữ số **khác nhau** lập từ bốn chữ số đó. Lập được tất cả bao nhiêu số?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 5.** Bắt buộc kẻ bảng ra giấy. Không được suy luận nhẩm ở bài này. Ba bạn Sơn, Lan và Thảo mỗi bạn học một môn năng khiếu khác nhau trong ba môn: bóng đá, cầu lông và bóng rổ. Biết rằng: Sơn không học bóng rổ và cũng không học bóng đá; Lan không học bóng đá. Hỏi mỗi bạn học môn nào?
+**Đề 5.** Đọc kĩ chữ “và” hay chữ “hoặc”. Có 10 quyển sách Toán và 11 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một quyển Toán và một quyển Tiếng Việt**?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 6.** Lập bảng thử, mỗi dòng một khả năng. Chỉ ghi đáp số sau khi đã thử hết. Có nhiều tờ tiền loại 2 nghìn đồng và loại 5 nghìn đồng. Hỏi có bao nhiêu cách trả đúng 35 nghìn đồng, nếu được dùng cả hai loại hoặc chỉ một loại?
+**Đề 6.** Dùng kĩ thuật tô màu để lập luận. Một bàn cờ vuông 4 × 4 ô. Hỏi có tất cả bao nhiêu ô?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 7.** Tìm cho ra thứ **không đổi** qua mỗi bước. Trên bảng viết các số từ 1 đến 6. Tổng của chúng bằng bao nhiêu?
+**Đề 7.** Kẻ hai bảng riêng: một bảng người – môn, một bảng người – giải. Bốn bạn Bình, Nam, Lan, Sơn mỗi bạn thi một môn khác nhau trong bốn môn Tin, Văn, Toán, Anh và mỗi bạn được một giải khác nhau trong bốn giải nhì, nhất, khuyến khích, ba. Biết rằng: (1) Bình không thi Văn và không thi Toán; (2) Nam không thi Toán và không thi Anh; (3) Sơn thi Anh; (4) bạn thi Tin được giải nhì, bạn thi Văn được giải nhất, và Lan không được giải ba. Hỏi mỗi bạn thi môn gì và được giải gì?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 8.** Xét trường hợp xấu nhất. Trong một hộp có bi thuộc 5 màu (đỏ, xanh, vàng, trắng, tím), mỗi màu có rất nhiều viên. Hỏi phải lấy ra ít nhất bao nhiêu viên (không nhìn) để chắc chắn có 3 viên cùng màu?
+**Đề 8.** Với mỗi câu, viết ra danh sách đã thử rồi mới ghi đáp số. Đáp số có thể gồm nhiều số. Tìm mọi số có hai chữ số vừa chia hết cho 5, vừa có tổng hai chữ số bằng 14.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 9.** Ba bạn Chi, Tuấn, Quân, trong đó đúng một bạn làm vỡ lọ hoa.
-- Chi nói: “Tôi không làm.”
-- Tuấn nói: “Quân làm.”
-- Quân nói: “Tuấn nói dối.”
-
-Biết rằng trong ba bạn chỉ có đúng **một** bạn nói thật. Câu nói của Tuấn và câu nói của Quân có thể cùng đúng được không? Vì sao?
+**Đề 9.** Xét trường hợp xấu nhất, không xét trường hợp may mắn. Có 3 gói kẹo giống hệt nhau, trong đó đúng một gói nhẹ hơn. Dùng cân đĩa không có quả cân, cần cân ít nhất mấy lần để tìm ra gói nhẹ?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 10.** Ba tình huống, cùng một cách đếm. Cho 8 điểm, không có ba điểm nào thẳng hàng. Qua hai điểm bất kì kẻ một đường thẳng. Hỏi kẻ được bao nhiêu đường thẳng?
+**Đề 10.** Vẽ hai vòng tròn giao nhau và điền số vào từng miền. Lớp có 37 học sinh. Có 20 bạn thích môn Toán, 23 bạn thích môn Tiếng Việt, 13 bạn thích cả hai môn. Hỏi bao nhiêu bạn thích ít nhất một trong hai môn?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
@@ -153,16 +149,16 @@ Biết rằng trong ba bạn chỉ có đúng **một** bạn nói thật. Câu 
 
 | # | Dạng bài | Dấu hiệu |
 |:--:|---|---|
-| 1 | Tô màu, bất biến trên bàn cờ | Bàn cờ, quân đô-mi-nô, câu hỏi “có thể phủ kín không” |
-| 2 | Bài toán bất biến | Một quá trình lặp lại nhiều bước, hỏi trạng thái cuối |
-| 3 | Giả thiết tạm hai loại | Hai loại đối tượng, biết tổng số và tổng của một đại lượng phụ |
-| 4 | Cân đĩa, chia ba | Cân đĩa không có quả cân, tìm vật khác biệt |
-| 5 | Lập bảng | Đề ghép **người với việc** và cho một loạt câu khẳng định hoặc phủ định |
-| 6 | Thử chọn | Đề hỏi **có bao nhiêu cách**, và số khả năng đếm được |
-| 7 | Bài toán bất biến | Một quá trình lặp nhiều bước, hỏi trạng thái cuối |
-| 8 | Nguyên lí Đi-rích-lê | Cụm “ít nhất … để chắc chắn …” |
-| 9 | Suy luận nói thật – nói dối | “Chỉ một người nói thật”, các câu nói mâu thuẫn nhau |
-| 10 | Đếm số cặp | “Hai … bất kì”, “mỗi người với tất cả những người còn lại” |
+| 1 | Bài toán bất biến | Một quá trình lặp lại nhiều bước, hỏi trạng thái cuối |
+| 2 | Suy luận loại trừ có bảng | Mỗi người ứng với đúng một đối tượng, đề cho các dữ kiện phủ định |
+| 3 | Nguyên lí Đi-rích-lê | Cụm “ít nhất … để chắc chắn …” |
+| 4 | Đếm số lập được có điều kiện | Bộ chữ số cho trước kèm điều kiện chia hết |
+| 5 | Đếm bằng quy tắc cộng, nhân, bù trừ | Từ khoá “và”, “hoặc”, “cả hai”, “ít nhất một” |
+| 6 | Tô màu, bất biến trên bàn cờ | Bàn cờ, quân đô-mi-nô, câu hỏi “có thể phủ kín không” |
+| 7 | Lập bảng | Đề ghép **hai thuộc tính** cho cùng một nhóm người |
+| 8 | Thử chọn | Đề đòi một số thoả **nhiều điều kiện cùng lúc**, số khả năng hữu hạn |
+| 9 | Cân đĩa, tìm vật khác biệt | Cân đĩa không có quả cân, tìm vật nhẹ hơn |
+| 10 | Nguyên lý bù trừ, sơ đồ Ven | Có cụm “cả hai”, “ít nhất một”, “không … nào” |
 
 ---
 

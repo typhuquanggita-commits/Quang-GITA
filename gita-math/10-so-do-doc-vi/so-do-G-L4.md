@@ -101,43 +101,43 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 
 Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: đây là dạng bài gì, và dấu hiệu nào cho biết điều đó.
 
-**Đề 1.** Với mỗi câu, viết ra danh sách đã thử rồi mới ghi đáp số. Đáp số có thể gồm nhiều số. Tìm mọi số có hai chữ số vừa chia hết cho 5, vừa có tổng hai chữ số bằng 7.
+**Đề 1.** Mỗi ý làm trong 60 giây. Ghi thẳng đáp số, không cần trình bày. Có 5 bạn, mỗi bạn bắt tay với tất cả các bạn còn lại đúng một lần. Có bao nhiêu cái bắt tay?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 2.** Vẽ hai vòng tròn giao nhau và điền số vào từng miền. Lớp có 55 học sinh. Có 30 bạn thích môn Toán, 36 bạn thích môn Tiếng Việt, 13 bạn thích cả hai môn. Hỏi bao nhiêu bạn thích ít nhất một trong hai môn?
+**Đề 2.** Chú ý mỗi lần cân cho bao nhiêu kết quả. Có 9 đồng tiền giống hệt nhau, trong đó có đúng một đồng nhẹ hơn. Dùng cân đĩa (không quả cân), cần cân ít nhất mấy lần để tìm ra đồng nhẹ?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 3.** Ghi rõ thương và số dư trong mọi câu trả lời. Có 53 cái kẹo chia đều cho 9 bạn. Mỗi bạn được mấy cái và còn thừa mấy cái?
+**Đề 3.** Đếm số cách chọn. Có 7 chiếc áo và 4 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 4.** Nêu rõ ngăn kéo là gì, đồ vật là gì. Có 9 học sinh sinh trong 8 tháng khác nhau. Chứng tỏ rằng có ít nhất 2 bạn sinh cùng một tháng. Hỏi nếu bớt đi một bạn thì kết luận đó còn đúng không?
+**Đề 4.** Với mỗi câu, viết ra danh sách đã thử rồi mới ghi đáp số. Đáp số có thể gồm nhiều số. Tìm mọi số có hai chữ số vừa chia hết cho 4, vừa có tổng hai chữ số bằng 11.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 5.** Tìm đại lượng không đổi qua mỗi bước. Trên bảng viết các số từ 1 đến 21. Mỗi bước, xoá hai số bất kì và viết thay vào **hiệu** của chúng (số lớn trừ số bé). Sau nhiều bước chỉ còn một số. Số cuối cùng là số chẵn hay số lẻ?
+**Đề 5.** Ba tình huống, cùng một cách đếm. Một giải đấu có 6 đội, hai đội bất kì đấu với nhau đúng một trận. Hỏi có tất cả bao nhiêu trận?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 6.** Ba bạn Lan, Nam, Dũng mỗi bạn thích đúng một môn khác nhau trong ba môn Tiếng Việt, Tiếng Anh, Mĩ thuật. Biết **Lan thích Tiếng Việt** và **Nam không thích Mĩ thuật**. Kẻ bảng ba hàng (tên bạn) và ba cột (môn học). Dữ kiện “Lan thích Tiếng Việt” cho phép đánh dấu ✔ vào ô nào?
+**Đề 6.** Xét trường hợp xấu nhất, không xét trường hợp may mắn. Có 27 gói kẹo giống hệt nhau, trong đó đúng một gói nhẹ hơn. Dùng cân đĩa không có quả cân, cần cân ít nhất mấy lần để tìm ra gói nhẹ?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 7.** Ba tình huống, cùng một cách đếm. Một giải đấu có 16 đội, hai đội bất kì đấu với nhau đúng một trận. Hỏi có tất cả bao nhiêu trận?
+**Đề 7.** Nêu rõ ngăn kéo là gì, đồ vật là gì. Có 17 học sinh sinh trong 4 tháng khác nhau. Chứng tỏ rằng có ít nhất 5 bạn sinh cùng một tháng. Hỏi nếu bớt đi một bạn thì kết luận đó còn đúng không?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 8.** Xét trường hợp xấu nhất. Trong một hộp có bi thuộc 2 màu (đỏ, xanh), mỗi màu có rất nhiều viên. Hỏi phải lấy ra ít nhất bao nhiêu viên (không nhìn) để chắc chắn có 4 viên cùng màu?
+**Đề 8.** Bắt buộc kẻ bảng ra giấy. Không được suy luận nhẩm ở bài này. Ba bạn Bình, Minh và Tuấn mỗi bạn học một môn năng khiếu khác nhau trong ba môn: hát, múa và đàn. Biết rằng: Bình không học múa và cũng không học đàn; Minh không học đàn. Hỏi mỗi bạn học môn nào?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 9.** Cho bốn chữ số **3, 4, 5, 9**. Xét các số có ba chữ số **khác nhau** lập từ bốn chữ số đó. Lập được tất cả bao nhiêu số?
+**Đề 9.** Ba bạn Lan, Dũng, Hà mỗi bạn thích đúng một môn khác nhau trong ba môn Âm nhạc, Mĩ thuật, Toán. Biết **Lan thích Âm nhạc** và **Dũng không thích Toán**. Kẻ bảng ba hàng (tên bạn) và ba cột (môn học). Dữ kiện “Lan thích Âm nhạc” cho phép đánh dấu ✔ vào ô nào?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 10.** Bắt buộc kẻ bảng ra giấy. Không được suy luận nhẩm ở bài này. Ba bạn Sơn, Đức và An mỗi bạn học một môn năng khiếu khác nhau trong ba môn: tiếng Anh, tin học và mĩ thuật. Biết rằng: Sơn không học tin học và cũng không học mĩ thuật; Đức không học mĩ thuật. Hỏi mỗi bạn học môn nào?
+**Đề 10.** Dùng phương pháp giả thiết tạm. Trong sân có 29 chiếc xe đạp và xe ba bánh, đếm được tất cả 84 bánh xe. Hỏi mỗi loại có bao nhiêu chiếc?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
@@ -147,16 +147,16 @@ Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: 
 
 | # | Dạng bài | Dấu hiệu |
 |:--:|---|---|
-| 1 | Thử chọn | Đề đòi một số thoả **nhiều điều kiện cùng lúc**, số khả năng hữu hạn |
-| 2 | Nguyên lý bù trừ, sơ đồ Ven | Có cụm “cả hai”, “ít nhất một”, “không … nào” |
-| 3 | Chia hết và chia có dư trong tình huống chia phần | “Chia đều cho … bạn”, “còn thừa” |
-| 4 | Đi-rích-lê dạng chứng minh | “Chứng tỏ rằng có ít nhất … cùng …” |
-| 5 | Bài toán bất biến | Một quá trình lặp lại nhiều bước, hỏi trạng thái cuối |
-| 6 | Suy luận loại trừ có bảng | Mỗi người ứng với đúng một đối tượng, đề cho các dữ kiện phủ định |
-| 7 | Đếm số cặp | “Hai … bất kì”, “mỗi người với tất cả những người còn lại” |
-| 8 | Nguyên lí Đi-rích-lê | Cụm “ít nhất … để chắc chắn …” |
-| 9 | Đếm số lập được có điều kiện | Bộ chữ số cho trước kèm điều kiện chia hết |
-| 10 | Lập bảng | Đề ghép **người với việc** và cho một loạt câu khẳng định hoặc phủ định |
+| 1 | Trắc nghiệm đếm nhanh | Nhiều câu ngắn, mỗi câu một kỹ thuật khác nhau |
+| 2 | Cân đĩa, chia ba | Cân đĩa không có quả cân, tìm vật khác biệt |
+| 3 | Quy tắc nhân | Chọn một phần tử từ mỗi nhóm để ghép thành một bộ |
+| 4 | Thử chọn | Đề đòi một số thoả **nhiều điều kiện cùng lúc**, số khả năng hữu hạn |
+| 5 | Đếm số cặp | “Hai … bất kì”, “mỗi người với tất cả những người còn lại” |
+| 6 | Cân đĩa, tìm vật khác biệt | Cân đĩa không có quả cân, tìm vật nhẹ hơn |
+| 7 | Đi-rích-lê dạng chứng minh | “Chứng tỏ rằng có ít nhất … cùng …” |
+| 8 | Lập bảng | Đề ghép **người với việc** và cho một loạt câu khẳng định hoặc phủ định |
+| 9 | Suy luận loại trừ có bảng | Mỗi người ứng với đúng một đối tượng, đề cho các dữ kiện phủ định |
+| 10 | Giả thiết tạm hai loại | Hai loại đối tượng, biết tổng số và tổng của một đại lượng phụ |
 
 ---
 

@@ -226,17 +226,7 @@ d) Hình hộp chữ nhật có đáy 20 cm × 18 cm, chiều cao 4 cm. Tính di
 
 ## PHẦN IV — VẬN DỤNG CAO · Mức M4 — Vận dụng cao · 25 phút · 25 điểm
 
-### Bài 1. (5 điểm) Diện tích thay đổi khi kích thước thay đổi
-
-Vẽ hình minh hoạ phần tăng thêm.
-
-a) Hình chữ nhật dài 15 cm, rộng 6 cm. Nếu tăng chiều dài thêm 3 cm (giữ nguyên chiều rộng) thì diện tích tăng thêm bao nhiêu?
-b) Hình chữ nhật dài 32 cm, rộng 31 cm. Nếu tăng cả chiều dài và chiều rộng thêm 15 cm thì diện tích tăng thêm bao nhiêu?
-c) Hình chữ nhật dài 19 cm, rộng 9 cm. Nếu tăng cả chiều dài và chiều rộng thêm 13 cm thì diện tích tăng thêm bao nhiêu?
-d) Hình chữ nhật dài 10 cm, rộng 7 cm. Nếu tăng cả chiều dài và chiều rộng thêm 3 cm thì diện tích tăng thêm bao nhiêu?
-e) Hình chữ nhật dài 38 cm, rộng 19 cm. Nếu tăng cả chiều dài và chiều rộng thêm 14 cm thì diện tích tăng thêm bao nhiêu?
-
-### Bài 2. (5 điểm) Khối lập phương sơn màu
+### Bài 1. (5 điểm) Khối lập phương sơn màu
 
 Tưởng tượng khối lớn và xét theo vị trí: góc, cạnh, mặt, trong lõi.
 
@@ -247,93 +237,106 @@ d) Có bao nhiêu khối nhỏ được sơn 1 mặt?
 e) Có bao nhiêu khối nhỏ không được sơn mặt nào?
 f) Cộng bốn loại trên lại có bằng tổng số khối nhỏ không?
 
-### Bài 3. (5 điểm) Hình chữ nhật — tổng hợp chu vi, diện tích và chuyển động
+### Bài 2. (5 điểm) Diện tích thay đổi khi kích thước thay đổi
 
-Bài nhiều ý nối tiếp, ý sau dùng kết quả ý trước.
+Vẽ hình minh hoạ phần tăng thêm.
 
-a) Hình chữ nhật có chiều dài 37 m, chiều rộng 21 m. Tính chu vi.
-b) Tính diện tích hình chữ nhật đó.
-c) Một người đi bộ quanh hình chữ nhật ấy với vận tốc 2 m/giây. Hỏi đi hết một vòng mất bao nhiêu giây?
-d) Nếu tăng chiều dài thêm 6 m thì diện tích tăng thêm bao nhiêu?
-e) Khi đó chu vi tăng thêm bao nhiêu mét?
-f) Nếu tăng cả chiều dài và chiều rộng thêm 6 m thì diện tích mới bằng bao nhiêu?
-g) Diện tích tăng thêm khi tăng cả hai chiều bằng bao nhiêu?
+a) Hình chữ nhật dài 19 cm, rộng 9 cm. Nếu tăng cả chiều dài và chiều rộng thêm 13 cm thì diện tích tăng thêm bao nhiêu?
+b) Hình chữ nhật dài 10 cm, rộng 7 cm. Nếu tăng cả chiều dài và chiều rộng thêm 3 cm thì diện tích tăng thêm bao nhiêu?
+c) Hình chữ nhật dài 38 cm, rộng 19 cm. Nếu tăng cả chiều dài và chiều rộng thêm 14 cm thì diện tích tăng thêm bao nhiêu?
+d) Hình chữ nhật dài 39 cm, rộng 29 cm. Nếu tăng cả chiều dài và chiều rộng thêm 6 cm thì diện tích tăng thêm bao nhiêu?
+e) Hình chữ nhật dài 15 cm, rộng 12 cm. Nếu tăng cả chiều dài và chiều rộng thêm 14 cm thì diện tích tăng thêm bao nhiêu?
 
-### Bài 4. (5 điểm) Nhận ra thừa số 0 để tính tức thì
+### Bài 3. (5 điểm) Cân đĩa và số lần cân ít nhất
 
-Tính bằng cách nhanh nhất.
+Xét trường hợp xấu nhất, không xét trường hợp may mắn.
 
-a) (59 × 35 − 35 × 59) × 45
-b) 17 × 75 × (36 − 36)
-c) (26 × 73 − 73 × 26) × 60
-d) 70 × 40 × (63 − 63)
-e) (85 × 83 − 83 × 85) × 20
-f) (41 × 97 − 97 × 41) × 55
+a) Có 9 gói kẹo giống hệt nhau, trong đó đúng một gói nhẹ hơn. Dùng cân đĩa không có quả cân, cần cân ít nhất mấy lần để tìm ra gói nhẹ?
+b) Một lần cân bằng cân đĩa cho mấy kết quả khác nhau?
+c) Vì thế mỗi lần cân nên chia số gói thành mấy phần?
+d) Sau lần cân thứ nhất, số gói còn phải xét nhiều nhất là bao nhiêu?
+e) Biết Nam nặng hơn Tuấn, Tuấn nặng hơn Bình. Ai nhẹ nhất?
+f) Với ba bạn ấy, cần cân ít nhất mấy lần để xếp thứ tự từ nhẹ đến nặng?
 
-### Bài 5. (5 điểm) Tỉ số diện tích hai tam giác chung chiều cao
+### Bài 4. (5 điểm) Tỉ số diện tích hai tam giác chung chiều cao
 
 Dùng nhận xét về chiều cao chung.
 
 a) Tam giác ABC có diện tích 159 cm². Điểm M nằm trên cạnh BC sao cho BM gấp 2 phần và MC gấp 1 phần bằng nhau. Tính diện tích tam giác ABM.
-b) Tam giác ABC có diện tích 528 cm². Điểm M nằm trên cạnh BC sao cho BM gấp 5 phần và MC gấp 6 phần bằng nhau. Tính diện tích tam giác ABM.
-c) Tam giác ABC có diện tích 396 cm². Điểm M nằm trên cạnh BC sao cho BM gấp 4 phần và MC gấp 5 phần bằng nhau. Tính diện tích tam giác ABM.
-d) Tam giác ABC có diện tích 114 cm². Điểm M nằm trên cạnh BC sao cho BM gấp 4 phần và MC gấp 2 phần bằng nhau. Tính diện tích tam giác ABM.
-e) Tam giác ABC có diện tích 336 cm². Điểm M nằm trên cạnh BC sao cho BM gấp 6 phần và MC gấp 2 phần bằng nhau. Tính diện tích tam giác ABM.
+b) Tam giác ABC có diện tích 192 cm². Điểm M nằm trên cạnh BC sao cho BM gấp 4 phần và MC gấp 2 phần bằng nhau. Tính diện tích tam giác ABM.
+c) Tam giác ABC có diện tích 294 cm². Điểm M nằm trên cạnh BC sao cho BM gấp 2 phần và MC gấp 5 phần bằng nhau. Tính diện tích tam giác ABM.
+d) Tam giác ABC có diện tích 275 cm². Điểm M nằm trên cạnh BC sao cho BM gấp 1 phần và MC gấp 4 phần bằng nhau. Tính diện tích tam giác ABM.
+e) Tam giác ABC có diện tích 224 cm². Điểm M nằm trên cạnh BC sao cho BM gấp 2 phần và MC gấp 6 phần bằng nhau. Tính diện tích tam giác ABM.
+f) Tam giác ABC có diện tích 98 cm². Điểm M nằm trên cạnh BC sao cho BM gấp 3 phần và MC gấp 4 phần bằng nhau. Tính diện tích tam giác ABM.
+
+### Bài 5. (5 điểm) Hình chữ nhật — tổng hợp chu vi, diện tích và chuyển động
+
+Bài nhiều ý nối tiếp, ý sau dùng kết quả ý trước.
+
+a) Hình chữ nhật có chiều dài 13 m, chiều rộng 12 m. Tính chu vi.
+b) Tính diện tích hình chữ nhật đó.
+c) Một người đi bộ quanh hình chữ nhật ấy với vận tốc 2 m/giây. Hỏi đi hết một vòng mất bao nhiêu giây?
+d) Nếu tăng chiều dài thêm 9 m thì diện tích tăng thêm bao nhiêu?
+e) Khi đó chu vi tăng thêm bao nhiêu mét?
+f) Nếu tăng cả chiều dài và chiều rộng thêm 9 m thì diện tích mới bằng bao nhiêu?
+g) Diện tích tăng thêm khi tăng cả hai chiều bằng bao nhiêu?
 
 ---
 
 ## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
 
-### Bài 1. (3 điểm) Diện tích và chu vi khi kích thước thay đổi — dạng đề chuyên
+### Bài 1. (3 điểm) Tam giác chung chiều cao — tỉ số diện tích bằng tỉ số đáy
 
-Trả lời bằng lập luận tỉ lệ, hạn chế tính số lớn.
+Vẽ hình trước khi tính. Ghi rõ hai tam giác nào chung chiều cao.
 
-a) Hình chữ nhật có chiều dài 35 cm, chiều rộng 16 cm. Tính diện tích.
-b) Gấp chiều dài lên 2 lần, giữ nguyên chiều rộng. Diện tích mới gấp mấy lần?
-c) Gấp cả hai chiều lên 2 lần. Diện tích mới gấp mấy lần diện tích cũ?
-d) Diện tích mới khi gấp cả hai chiều bằng bao nhiêu?
-e) Chu vi mới khi gấp cả hai chiều gấp mấy lần chu vi cũ?
-f) Nếu giảm chiều rộng đi 5 cm và tăng chiều dài thêm 5 cm thì diện tích mới bằng bao nhiêu?
-g) Diện tích khi đó tăng hay giảm so với ban đầu, và chênh bao nhiêu?
+a) Tam giác ABC có điểm M nằm trên cạnh BC sao cho BM bằng 4 phần 5 MC. Biết diện tích tam giác ABM là 160 cm², tính diện tích tam giác AMC và diện tích tam giác ABC.
+b) Tam giác ABC có điểm M nằm trên cạnh BC sao cho BM bằng 2 phần 5 MC. Biết diện tích tam giác ABM là 90 cm², tính diện tích tam giác AMC và diện tích tam giác ABC.
+c) Tam giác ABC có điểm M nằm trên cạnh BC sao cho BM bằng 3 phần 4 MC. Biết diện tích tam giác ABM là 48 cm², tính diện tích tam giác AMC và diện tích tam giác ABC.
+d) Tam giác ABC có điểm M nằm trên cạnh BC sao cho BM bằng 2 phần 3 MC. Biết diện tích tam giác ABM là 24 cm², tính diện tích tam giác AMC và diện tích tam giác ABC.
 
-### Bài 2. (3 điểm) Cắt và ghép hình — chu vi thay đổi thế nào
+### Bài 2. (3 điểm) Cắt, ghép hình và tỉ số diện tích
 
-Chú ý các cạnh bị ghép vào bên trong.
+Vẽ hình và tô phần cần tính trước khi làm.
 
-a) Ghép 5 hình vuông cạnh 19 cm thành một hàng ngang. Tính chu vi hình chữ nhật thu được.
-b) Ghép 9 hình vuông cạnh 15 cm thành một hình vuông lớn. Tính chu vi hình vuông lớn.
-c) Ghép 3 hình vuông cạnh 18 cm thành một hàng ngang. Tính chu vi hình chữ nhật thu được.
-d) Ghép 9 hình vuông cạnh 16 cm thành một hình vuông lớn. Tính chu vi hình vuông lớn.
-e) Cắt một hình vuông cạnh 30 cm thành hai hình chữ nhật bằng nhau. Tổng chu vi hai hình chữ nhật đó bằng bao nhiêu?
+a) Hình chữ nhật có chiều dài 11 cm, chiều rộng 10 cm. Tính diện tích.
+b) Cắt hình ấy thành 2 phần bằng nhau. Mỗi phần có diện tích bao nhiêu?
+c) Nối trung điểm hai cạnh dài lại, hình bị chia thành hai phần. Mỗi phần có diện tích bao nhiêu?
+d) Nối một đỉnh với trung điểm cạnh đối diện, được một tam giác. Diện tích tam giác ấy bằng bao nhiêu phần diện tích hình chữ nhật?
+e) Diện tích tam giác ấy bằng bao nhiêu xăng-ti-mét vuông?
+f) Nếu ghép hai hình chữ nhật ấy theo chiều rộng thì hình mới có diện tích và chu vi bằng bao nhiêu?
 
 ### Bài 3. (3 điểm) Diện tích phần tô màu
 
 Phân tích hình thành hiệu của các hình quen thuộc.
 
-a) Một hình tròn bán kính 15 cm nội tiếp trong một hình vuông (hình tròn tiếp xúc cả bốn cạnh). Tính diện tích phần hình vuông nằm ngoài hình tròn (lấy π = 3,14).
-b) Hai hình tròn đồng tâm có bán kính 14 cm và 2 cm. Tính diện tích phần nằm giữa hai đường tròn (lấy π = 3,14).
-c) Một hình vuông cạnh 10 cm. Tính diện tích hình tròn có đường kính bằng cạnh hình vuông đó (lấy π = 3,14).
-d) Một hình tròn bán kính 3 cm nội tiếp trong một hình vuông (hình tròn tiếp xúc cả bốn cạnh). Tính diện tích phần hình vuông nằm ngoài hình tròn (lấy π = 3,14).
+a) Hai hình tròn đồng tâm có bán kính 3 cm và 1 cm. Tính diện tích phần nằm giữa hai đường tròn (lấy π = 3,14).
+b) Một hình vuông cạnh 8 cm. Tính diện tích hình tròn có đường kính bằng cạnh hình vuông đó (lấy π = 3,14).
+c) Một hình tròn bán kính 20 cm nội tiếp trong một hình vuông (hình tròn tiếp xúc cả bốn cạnh). Tính diện tích phần hình vuông nằm ngoài hình tròn (lấy π = 3,14).
+d) Một hình tròn bán kính 16 cm nội tiếp trong một hình vuông (hình tròn tiếp xúc cả bốn cạnh). Tính diện tích phần hình vuông nằm ngoài hình tròn (lấy π = 3,14).
+e) Hai hình tròn đồng tâm có bán kính 8 cm và 4 cm. Tính diện tích phần nằm giữa hai đường tròn (lấy π = 3,14).
 
-### Bài 4. (3 điểm) Tam giác chung chiều cao — tỉ số diện tích bằng tỉ số đáy
+### Bài 4. (3 điểm) Dãy có hiệu tăng đều
 
-Vẽ hình trước khi tính. Ghi rõ hai tam giác nào chung chiều cao.
+Dãy số bắt đầu bằng 1; hiệu giữa hai số hạng liên tiếp lần lượt là 4, 8, 12, 16, … (mỗi hiệu hơn hiệu trước 4 đơn vị).
 
-a) Tam giác ABC có điểm M nằm trên cạnh BC sao cho BM bằng 1 phần 5 MC. Biết diện tích tam giác ABM là 45 cm², tính diện tích tam giác AMC và diện tích tam giác ABC.
-b) Tam giác ABC có điểm M nằm trên cạnh BC sao cho BM bằng 2 MC. Biết diện tích tam giác ABM là 120 cm², tính diện tích tam giác AMC và diện tích tam giác ABC.
-c) Tam giác ABC có điểm M nằm trên cạnh BC sao cho BM bằng 4 phần 3 MC. Biết diện tích tam giác ABM là 120 cm², tính diện tích tam giác AMC và diện tích tam giác ABC.
-d) Tam giác ABC có điểm M nằm trên cạnh BC sao cho BM bằng 1 phần 2 MC. Biết diện tích tam giác ABM là 20 cm², tính diện tích tam giác AMC và diện tích tam giác ABC.
+a) Viết bốn số hạng đầu của dãy.
+b) Số hạng thứ 6 là số nào?
+c) Số hạng thứ 10 là số nào?
+d) Hiệu giữa số hạng thứ 10 và số hạng thứ 9 bằng bao nhiêu?
+e) Dãy các hiệu của dãy trên có phải dãy cách đều không? Khoảng cách bằng bao nhiêu?
+f) Tổng của bốn số hạng đầu bằng bao nhiêu?
 
-### Bài 5. (3 điểm) Đại lượng khối lượng — đổi đơn vị và chia phần
+### Bài 5. (3 điểm) Diện tích và chu vi khi kích thước thay đổi — dạng đề chuyên
 
-Đổi hết về ki-lô-gam trước khi tính.
+Trả lời bằng lập luận tỉ lệ, hạn chế tính số lớn.
 
-a) Một kho chứa 9 tấn 3 tạ 67 kg thóc. Đổi ra ki-lô-gam.
-b) Số thóc ấy nặng bao nhiêu tạ và bao nhiêu ki-lô-gam?
-c) Chở đều bằng 5 xe thì mỗi xe chở bao nhiêu ki-lô-gam, còn thừa bao nhiêu?
-d) Nếu mỗi xe chỉ chở được 1 tấn thì cần ít nhất bao nhiêu xe?
-e) Bán 4 683 kg thì còn lại bao nhiêu tạ và ki-lô-gam?
-f) Vì sao ở ý d phải làm tròn lên chứ không làm tròn xuống?
+a) Hình chữ nhật có chiều dài 22 cm, chiều rộng 15 cm. Tính diện tích.
+b) Gấp chiều dài lên 3 lần, giữ nguyên chiều rộng. Diện tích mới gấp mấy lần?
+c) Gấp cả hai chiều lên 3 lần. Diện tích mới gấp mấy lần diện tích cũ?
+d) Diện tích mới khi gấp cả hai chiều bằng bao nhiêu?
+e) Chu vi mới khi gấp cả hai chiều gấp mấy lần chu vi cũ?
+f) Nếu giảm chiều rộng đi 2 cm và tăng chiều dài thêm 2 cm thì diện tích mới bằng bao nhiêu?
+g) Diện tích khi đó tăng hay giảm so với ban đầu, và chênh bao nhiêu?
 
 ---
 
@@ -432,74 +435,74 @@ f) Vì sao ở ý d phải làm tròn lên chứ không làm tròn xuống?
 **Lỗi thường gặp:** Cộng thiếu một mặt đáy khi tính diện tích toàn phần. Phòng: Đếm đủ 6 mặt của hình hộp trước khi cộng.
 
 ### Bài IV.1
-**Đáp số:** a) 18 cm² · b) 1 170 cm² · c) 533 cm² · d) 60 cm² · e) 994 cm²
-**Hướng giải:** BẪY — Phần tăng gồm ba mảnh. Tăng một chiều thêm k đơn vị thì diện tích tăng thêm đúng một hình chữ nhật có kích thước k × chiều còn lại. Tăng cả hai chiều thì phần tăng gồm ba mảnh: hai dải và một hình vuông ở góc — nên **không** bằng tích của hai phần tăng.
-**Nhãn tư duy:** TD3, TD6. Điểm chốt: Tăng cả hai chiều thì phần tăng gồm **ba mảnh**, không phải một.
-**Lỗi thường gặp:** Nhân hai lượng tăng với nhau rồi coi đó là phần diện tích tăng thêm. Phòng: Vẽ hình chữ nhật cũ nằm trong hình mới, tô phần dôi ra.
-**Gợi ý 3 tầng:** (1) Vẽ hình cũ và hình mới chồng lên nhau. — (2) Phần dôi ra gồm mấy mảnh? — (3) Tính diện tích từng mảnh rồi cộng.
-
-### Bài IV.2
 **Đáp số:** a) 216 · b) 8 · c) 48 · d) 96 · e) 64 · f) có, 8 + 48 + 96 + 64 = 216
 **Hướng giải:** BẪY — Đếm trùng khối ở đỉnh và ở cạnh. Phân loại khối nhỏ theo **vị trí**: ở đỉnh sơn 3 mặt, ở cạnh sơn 2 mặt, ở giữa mặt sơn 1 mặt, ở trong lõi không sơn. Bốn loại cộng lại phải đúng bằng tổng số khối — đó là cách tự kiểm tra.
 **Nhãn tư duy:** TD6, TD4. Điểm chốt: Phân loại theo vị trí, và **cộng bốn loại lại để thử**.
 **Lỗi thường gặp:** Đếm cả khối ở đỉnh vào nhóm khối ở cạnh, thành ra đếm trùng. Phòng: Trừ hai đầu mỗi cạnh khi đếm khối sơn 2 mặt.
 **Gợi ý 3 tầng:** (1) Khối ở đỉnh có mấy mặt lộ ra ngoài? — (2) Mỗi cạnh có bao nhiêu khối không nằm ở đỉnh? — (3) Cộng bốn loại lại xem có bằng tổng số khối không.
 
+### Bài IV.2
+**Đáp số:** a) 533 cm² · b) 60 cm² · c) 994 cm² · d) 444 cm² · e) 574 cm²
+**Hướng giải:** BẪY — Phần tăng gồm ba mảnh. Tăng một chiều thêm k đơn vị thì diện tích tăng thêm đúng một hình chữ nhật có kích thước k × chiều còn lại. Tăng cả hai chiều thì phần tăng gồm ba mảnh: hai dải và một hình vuông ở góc — nên **không** bằng tích của hai phần tăng.
+**Nhãn tư duy:** TD3, TD6. Điểm chốt: Tăng cả hai chiều thì phần tăng gồm **ba mảnh**, không phải một.
+**Lỗi thường gặp:** Nhân hai lượng tăng với nhau rồi coi đó là phần diện tích tăng thêm. Phòng: Vẽ hình chữ nhật cũ nằm trong hình mới, tô phần dôi ra.
+**Gợi ý 3 tầng:** (1) Vẽ hình cũ và hình mới chồng lên nhau. — (2) Phần dôi ra gồm mấy mảnh? — (3) Tính diện tích từng mảnh rồi cộng.
+
 ### Bài IV.3
-**Đáp số:** a) 116 m · b) 777 m² · c) 58 giây · d) 126 m² · e) 12 m · f) 1 161 m² · g) 384 m²
-**Hướng giải:** BẪY — Phần tăng gồm ba mảnh. Đi một vòng quanh hình là đi hết **chu vi**. Tăng một chiều thì phần diện tích dôi ra là một hình chữ nhật có kích thước bằng phần tăng nhân chiều còn lại. Tăng cả hai chiều thì phần dôi gồm **ba mảnh**.
-**Nhãn tư duy:** TD3, TD6. Điểm chốt: Tăng cả hai chiều thì phần dôi ra **không phải** tích của hai phần tăng.
-**Lỗi thường gặp:** Nhân hai lượng tăng với nhau rồi coi đó là diện tích tăng thêm. Phòng: Vẽ hình cũ nằm trong hình mới rồi tô phần dôi ra.
-**Gợi ý 3 tầng:** (1) Đi một vòng là đi hết đại lượng nào? — (2) Phần diện tích dôi ra có hình dạng gì? — (3) Tăng cả hai chiều thì phần dôi gồm mấy mảnh?
+**Đáp số:** a) 2 lần · b) 3 kết quả: nghiêng trái, nghiêng phải, thăng bằng · c) 3 phần · d) 3 · e) Bình · f) 2 lần
+**Hướng giải:** BẪY — Chia ba chứ không chia đôi. Mỗi lần cân bằng cân đĩa cho ba kết quả, nên chia ba chứ không chia đôi. Sau k lần cân phân biệt được nhiều nhất 3 nhân với chính nó k lần vật. Luôn lập luận theo **trường hợp xấu nhất**.
+**Nhãn tư duy:** TD6, TD2. Điểm chốt: Cân đĩa cho **ba** kết quả nên chia ba, không chia đôi.
+**Lỗi thường gặp:** Chia đôi như tìm kiếm thông thường nên cần nhiều lần cân hơn mức cần thiết. Phòng: Nhớ ba kết quả: nghiêng trái, nghiêng phải, thăng bằng.
+**Gợi ý 3 tầng:** (1) Một lần cân cho mấy kết quả? — (2) Vậy nên chia số gói thành mấy phần? — (3) Sau mỗi lần cân còn lại nhiều nhất bao nhiêu gói?
 
 ### Bài IV.4
-**Đáp số:** a) 0 · b) 0 · c) 0 · d) 0 · e) 0 · f) 0
-**Hướng giải:** BẪY — Biểu thức lớn nhưng kết quả bằng 0. Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu. Vì vậy phải quan sát toàn bộ biểu thức trước khi tính, tìm cụm nào có giá trị bằng 0.
-**Nhãn tư duy:** TD5, TD6. Điểm chốt: Quét tìm **cụm bằng 0** trước; thấy rồi thì viết đáp số ngay.
-**Lỗi thường gặp:** Lao vào nhân từng cặp số lớn rồi mới phát hiện kết quả bằng 0. Phòng: Đọc hết biểu thức một lượt, khoanh các cụm giống nhau bị trừ cho nhau.
-**Gợi ý 3 tầng:** (1) Có cụm nào trong ngoặc bằng 0 không? — (2) Có hai cụm giống hệt nhau bị trừ cho nhau không? — (3) Tích có một thừa số bằng 0 thì bằng bao nhiêu?
-
-### Bài IV.5
-**Đáp số:** a) 106 cm² · b) 240 cm² · c) 176 cm² · d) 76 cm² · e) 252 cm²
+**Đáp số:** a) 106 cm² · b) 128 cm² · c) 84 cm² · d) 55 cm² · e) 56 cm² · f) 42 cm²
 **Hướng giải:** Hai tam giác ABM và ACM có **chung chiều cao** hạ từ A xuống BC. Diện tích của chúng tỉ lệ thuận với hai đáy BM và MC. Vì vậy diện tích tam giác ABM bằng diện tích tam giác ABC nhân với tỉ số BM trên BC.
 **Nhãn tư duy:** TD6, TD3. Điểm chốt: Chung chiều cao thì diện tích **tỉ lệ với đáy** — không cần biết chiều cao là bao nhiêu.
 **Lỗi thường gặp:** Đi tìm chiều cao cụ thể trong khi đề không cho. Phòng: Đọc lại: hai tam giác có chung đỉnh nào, chung chiều cao xuống cạnh nào?
 **Gợi ý 3 tầng:** (1) Hai tam giác có chung đỉnh nào? — (2) Chiều cao hạ từ đỉnh đó xuống BC có chung không? — (3) Diện tích tỉ lệ thuận với đáy.
 
+### Bài IV.5
+**Đáp số:** a) 50 m · b) 156 m² · c) 25 giây · d) 108 m² · e) 18 m · f) 462 m² · g) 306 m²
+**Hướng giải:** BẪY — Phần tăng gồm ba mảnh. Đi một vòng quanh hình là đi hết **chu vi**. Tăng một chiều thì phần diện tích dôi ra là một hình chữ nhật có kích thước bằng phần tăng nhân chiều còn lại. Tăng cả hai chiều thì phần dôi gồm **ba mảnh**.
+**Nhãn tư duy:** TD3, TD6. Điểm chốt: Tăng cả hai chiều thì phần dôi ra **không phải** tích của hai phần tăng.
+**Lỗi thường gặp:** Nhân hai lượng tăng với nhau rồi coi đó là diện tích tăng thêm. Phòng: Vẽ hình cũ nằm trong hình mới rồi tô phần dôi ra.
+**Gợi ý 3 tầng:** (1) Đi một vòng là đi hết đại lượng nào? — (2) Phần diện tích dôi ra có hình dạng gì? — (3) Tăng cả hai chiều thì phần dôi gồm mấy mảnh?
+
 ### Bài V.1
-**Đáp số:** a) 560 cm² · b) 2 lần · c) 4 lần · d) 2 240 cm² · e) 2 lần · f) 440 cm² · g) giảm 120 cm²
-**Hướng giải:** Diện tích là **tích** hai chiều nên gấp cả hai chiều lên k lần thì diện tích gấp k × k lần. Chu vi là **tổng** nên chỉ gấp k lần. Khi một chiều tăng và chiều kia giảm cùng một lượng, phải tính ra mới biết diện tích tăng hay giảm.
-**Nhãn tư duy:** TD6, TD3. Điểm chốt: Diện tích gấp **k × k** lần, chu vi chỉ gấp **k** lần.
-**Lỗi thường gặp:** Cho rằng gấp đôi hai chiều thì diện tích cũng chỉ gấp đôi. Phòng: Thử với hình 1 × 1 và 2 × 2 để thấy diện tích gấp 4 lần.
-**Gợi ý 3 tầng:** (1) Diện tích là tích hay tổng hai chiều? — (2) Gấp mỗi chiều lên k lần thì tích gấp mấy lần? — (3) Chu vi là tổng nên gấp bao nhiêu lần?
+**Đáp số:** a) AMC = 200 cm²; ABC = 360 cm² · b) AMC = 225 cm²; ABC = 315 cm² · c) AMC = 64 cm²; ABC = 112 cm² · d) AMC = 36 cm²; ABC = 60 cm²
+**Hướng giải:** Tìm hai tam giác **chung một đỉnh** và có hai đáy nằm trên cùng một đường thẳng. Khi ấy tỉ số diện tích bằng tỉ số hai đáy, và từ diện tích suy ra được độ dài hoặc ngược lại.
+**Nhãn tư duy:** TD4, TD6. Điểm chốt: Điều kiện bắt buộc là **chung chiều cao**. Thiếu điều kiện ấy thì tỉ số diện tích không còn bằng tỉ số đáy.
+**Lỗi thường gặp:** Đem so hai tam giác không chung đỉnh, hoặc hai đáy không cùng nằm trên một đường thẳng. Phòng: Chỉ vào đỉnh chung và vào đường thẳng chứa hai đáy trước khi lập tỉ số.
+**Gợi ý 3 tầng:** (1) Hai tam giác ấy có chung đỉnh nào không? — (2) Hai đáy của chúng có cùng nằm trên một đường thẳng không? — (3) Nếu có thì tỉ số diện tích bằng đúng tỉ số hai đáy.
 
 ### Bài V.2
-**Đáp số:** a) 228 cm · b) 180 cm · c) 144 cm · d) 192 cm · e) 180 cm
-**Hướng giải:** Khi ghép hai hình lại, các cạnh dán vào nhau **không còn nằm trên đường bao** nên không tính vào chu vi. Ngược lại, khi cắt một hình thành hai phần thì xuất hiện thêm hai cạnh mới trên đường bao, nên tổng chu vi tăng lên đúng hai lần đường cắt.
-**Nhãn tư duy:** TD6, TD3. Điểm chốt: Diện tích giữ nguyên khi cắt ghép, nhưng **chu vi thay đổi**.
-**Lỗi thường gặp:** Cộng chu vi các hình nhỏ lại rồi coi đó là chu vi hình ghép. Phòng: Tô đậm đường bao của hình mới rồi mới tính.
-**Gợi ý 3 tầng:** (1) Vẽ hình sau khi ghép hoặc cắt. — (2) Đường bao của hình mới gồm những cạnh nào? — (3) Cạnh nào bị dán vào trong thì không tính.
+**Đáp số:** a) 110 cm² · b) 55 cm² · c) 55 cm² · d) 1 phần 4 · e) 27,5 cm² · f) diện tích 220 cm², chu vi 62 cm
+**Hướng giải:** Diện tích cộng được khi ghép hình, **chu vi thì không**. Tam giác có đáy bằng nửa một cạnh và chiều cao bằng cạnh kia thì diện tích bằng một phần tư hình chữ nhật.
+**Nhãn tư duy:** TD6, TD3. Điểm chốt: Ghép hình: **diện tích cộng, chu vi không cộng**.
+**Lỗi thường gặp:** Cộng chu vi hai hình nhỏ lại thành chu vi hình ghép. Phòng: Tô đậm đường bao của hình mới rồi mới tính chu vi.
+**Gợi ý 3 tầng:** (1) Tam giác ấy có đáy và chiều cao bằng bao nhiêu? — (2) Diện tích tam giác bằng đáy nhân chiều cao chia 2. — (3) So với diện tích hình chữ nhật thì bằng mấy phần?
 
 ### Bài V.3
-**Đáp số:** a) 193,5 cm² · b) 602,88 cm² · c) 78,5 cm² · d) 7,74 cm²
+**Đáp số:** a) 25,12 cm² · b) 50,24 cm² · c) 344 cm² · d) 220,16 cm² · e) 150,72 cm²
 **Hướng giải:** Diện tích phần tô màu = diện tích hình lớn − diện tích hình bị khoét. Bước quan trọng nhất là nhận ra hình lớn và hình bị khoét là những hình nào, và tìm đúng kích thước của chúng từ dữ kiện đề cho.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Đọc quan hệ hình học để suy ra kích thước: hình tròn nội tiếp hình vuông thì **đường kính bằng cạnh hình vuông**.
 **Lỗi thường gặp:** Lấy bán kính hình tròn làm cạnh hình vuông. Phòng: Vẽ lại hình, ghi số đo lên hình trước khi tính.
 **Gợi ý 3 tầng:** (1) Phần tô màu là hiệu của những hình nào? — (2) Kích thước của hình lớn suy từ đâu? — (3) Tính từng diện tích rồi trừ.
 
 ### Bài V.4
-**Đáp số:** a) AMC = 225 cm²; ABC = 270 cm² · b) AMC = 60 cm²; ABC = 180 cm² · c) AMC = 90 cm²; ABC = 210 cm² · d) AMC = 40 cm²; ABC = 60 cm²
-**Hướng giải:** Tìm hai tam giác **chung một đỉnh** và có hai đáy nằm trên cùng một đường thẳng. Khi ấy tỉ số diện tích bằng tỉ số hai đáy, và từ diện tích suy ra được độ dài hoặc ngược lại.
-**Nhãn tư duy:** TD4, TD6. Điểm chốt: Điều kiện bắt buộc là **chung chiều cao**. Thiếu điều kiện ấy thì tỉ số diện tích không còn bằng tỉ số đáy.
-**Lỗi thường gặp:** Đem so hai tam giác không chung đỉnh, hoặc hai đáy không cùng nằm trên một đường thẳng. Phòng: Chỉ vào đỉnh chung và vào đường thẳng chứa hai đáy trước khi lập tỉ số.
-**Gợi ý 3 tầng:** (1) Hai tam giác ấy có chung đỉnh nào không? — (2) Hai đáy của chúng có cùng nằm trên một đường thẳng không? — (3) Nếu có thì tỉ số diện tích bằng đúng tỉ số hai đáy.
+**Đáp số:** a) 1, 5, 13, 25 · b) 61 · c) 181 · d) 36 · e) có, khoảng cách 4 · f) 44
+**Hướng giải:** Đây là dãy có **hiệu bậc hai đều**. Số hạng thứ n bằng số hạng đầu cộng với tổng của (n − 1) hiệu đầu tiên; các hiệu ấy lập thành dãy cách đều nên tổng của chúng tính được bằng công thức tổng dãy cách đều.
+**Nhãn tư duy:** TD4, TD6. Điểm chốt: Số hạng thứ n = số đầu + **tổng (n − 1) hiệu đầu tiên**.
+**Lỗi thường gặp:** Cộng n hiệu thay vì (n − 1) hiệu. Phòng: Kiểm chứng với n = 2: chỉ cộng đúng một hiệu.
+**Gợi ý 3 tầng:** (1) Từ số hạng đầu tới số hạng thứ n phải cộng bao nhiêu hiệu? — (2) Các hiệu đó lập thành dãy gì? — (3) Tính tổng các hiệu bằng công thức tổng dãy cách đều.
 
 ### Bài V.5
-**Đáp số:** a) 9 367 kg · b) 93 tạ 67 kg · c) 1 873 kg, thừa 2 kg · d) 10 xe · e) 46 tạ 84 kg · f) vì phần thóc còn lại vẫn cần thêm một xe nữa để chở
-**Hướng giải:** Quy hết về một đơn vị rồi mới tính. Với câu hỏi “cần ít nhất bao nhiêu xe”, phần dư vẫn phải có một xe chở, nên **làm tròn lên**.
-**Nhãn tư duy:** TD3, TD6. Điểm chốt: Câu hỏi “ít nhất bao nhiêu xe” luôn **làm tròn lên**.
-**Lỗi thường gặp:** Chia rồi lấy phần nguyên, bỏ quên phần dư vẫn cần một xe. Phòng: Hỏi lại: phần thóc dư có tự bay đi được không?
-**Gợi ý 3 tầng:** (1) Đổi tất cả về ki-lô-gam. — (2) Chia cho sức chở mỗi xe. — (3) Còn dư thì có cần thêm xe không?
+**Đáp số:** a) 330 cm² · b) 3 lần · c) 9 lần · d) 2 970 cm² · e) 3 lần · f) 312 cm² · g) giảm 18 cm²
+**Hướng giải:** Diện tích là **tích** hai chiều nên gấp cả hai chiều lên k lần thì diện tích gấp k × k lần. Chu vi là **tổng** nên chỉ gấp k lần. Khi một chiều tăng và chiều kia giảm cùng một lượng, phải tính ra mới biết diện tích tăng hay giảm.
+**Nhãn tư duy:** TD6, TD3. Điểm chốt: Diện tích gấp **k × k** lần, chu vi chỉ gấp **k** lần.
+**Lỗi thường gặp:** Cho rằng gấp đôi hai chiều thì diện tích cũng chỉ gấp đôi. Phòng: Thử với hình 1 × 1 và 2 × 2 để thấy diện tích gấp 4 lần.
+**Gợi ý 3 tầng:** (1) Diện tích là tích hay tổng hai chiều? — (2) Gấp mỗi chiều lên k lần thì tích gấp mấy lần? — (3) Chu vi là tổng nên gấp bao nhiêu lần?
 
 ---
 

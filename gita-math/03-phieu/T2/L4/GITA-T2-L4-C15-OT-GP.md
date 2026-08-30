@@ -55,10 +55,10 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần IV**
 
 - **Bài IV.1** — a) 24 · b) 6 · c) 6 · d) 12 · e) 987 và 578 · f) 1 565
-- **Bài IV.2** — a) 43 quyển · b) 13 quyển · c) 21 quyển · d) 25 quyển · e) 87 quyển · f) 140 quyển
-- **Bài IV.3** — a) 3 lần · b) 3 kết quả: nghiêng trái, nghiêng phải, thăng bằng · c) 3 phần · d) 9 · e) Hà · f) 2 lần
-- **Bài IV.4** — a) Vy học đàn; Chi học múa; Trang học hát · b) Hà học bóng đá; Minh học cầu lông; Chi học bóng rổ · c) Lan học cờ vua; Dũng học bơi; Đức học vẽ · d) Minh học mĩ thuật; Vy học tiếng Anh; Chi học tin học · e) Vy học tiếng Anh; Trang học tin học; Lan học mĩ thuật
-- **Bài IV.5** — a) lẻ · b) 465 · c) giảm đi 2 lần số bé · d) không thay đổi · e) tính chẵn lẻ của tổng các số trên bảng · f) không
+- **Bài IV.2** — a) 130 m · b) 924 m² · c) 32,5 giây · d) 126 m² · e) 12 m · f) 1 350 m² · g) 426 m²
+- **Bài IV.3** — a) 3 lần · b) 3 kết quả: nghiêng trái, nghiêng phải, thăng bằng · c) 3 phần · d) 9 · e) Tuấn · f) 2 lần
+- **Bài IV.4** — a) Dũng học tiếng Anh; Phúc học mĩ thuật; Khánh học tin học · b) Chi học hát; Yến học đàn; Hùng học múa · c) Đức học tiếng Anh; Dũng học mĩ thuật; Quân học tin học · d) Vy học đàn; Chi học múa; Trang học hát
+- **Bài IV.5** — a) lẻ · b) 105 · c) giảm đi 2 lần số bé · d) không thay đổi · e) tính chẵn lẻ của tổng các số trên bảng · f) không
 
 **Phần V**
 
@@ -416,27 +416,29 @@ Kết quả: **24**.
 
 *Điểm chốt:* Có ràng buộc ở hàng nào thì **chọn hàng đó trước**.
 
-### Bài IV.2 — Chuyển bớt để hai phần bằng nhau
+### Bài IV.2 — Hình chữ nhật — tổng hợp chu vi, diện tích và chuyển động
 
-> **BẪY — Hiệu thay đổi gấp đôi số chuyển.**
+> **BẪY — Phần tăng gồm ba mảnh.**
 
 **Các bước giải**
 
-Xét ý a: Đội Một có 129 quyển sách, nhóm Sao Mai có 43 quyển. Hỏi phải chuyển bao nhiêu quyển từ đội Một sang nhóm Sao Mai để số sách hai tổ bằng nhau?
+Bước 1 — chu vi: (44 + 21) × 2 = 130 (m).
 
-Đọc vị: đây là dạng **Chuyển đổi giữa hai đại lượng, tổng không đổi**; dấu hiệu là “Chuyển … từ bên này sang bên kia”.
+Bước 2 — diện tích: 44 × 21 = 924 (m²).
 
-Kiến thức phải dùng: Bất biến tổng, biến thiên hiệu.
+Bước 3 — đi một vòng chính là đi hết chu vi: 130 : 4 = 32,5 (giây).
 
-Cách làm: Xét đại lượng không đổi (tổng) và đại lượng đổi gấp đôi (hiệu).
+Bước 4 — tăng chiều dài thêm 6 m thì phần dôi ra là một hình chữ nhật 6 m × 21 m, diện tích 126 (m²).
 
-Lối tắt: Sau khi chuyển, mỗi bên bằng nửa tổng — tính nửa tổng rồi trừ là ra ngay.
+Đáp số ý a: **130 m**.
 
-Kết quả: **43 quyển**.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Đi một vòng quanh hình là đi hết **chu vi**. Tăng một chiều thì phần diện tích dôi ra là một hình chữ nhật có kích thước bằng phần tăng nhân chiều còn lại. Tăng cả hai chiều thì phần dôi gồm **ba mảnh**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Khi chuyển k đơn vị từ bên nhiều sang bên ít, bên nhiều giảm k còn bên ít tăng k, nên hiệu giảm đi **2k**. Muốn hai bên bằng nhau thì hiệu phải về 0, vậy k = hiệu : 2.
+*Điểm chốt:* Tăng cả hai chiều thì phần dôi ra **không phải** tích của hai phần tăng.
 
-*Điểm chốt:* Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển.
+*Muốn khó hơn:* Giảm một chiều và tăng chiều kia cùng một lượng — diện tích đổi thế nào?
+
+*Phải chắc trước khi làm bài này:* Công thức chu vi, diện tích hình chữ nhật và quan hệ s = v × t.
 
 ### Bài IV.3 — Cân đĩa và số lần cân ít nhất
 
@@ -468,15 +470,15 @@ Lặp lại cách ấy, sau 3 lần thì còn đúng một gói.
 
 **Các bước giải**
 
-Kẻ bảng ba dòng (Vy, Chi, Trang) và ba cột (hát, múa, đàn). Mỗi ô ghi ✓ nếu chắc chắn đúng, × nếu chắc chắn sai.
+Kẻ bảng ba dòng (Dũng, Phúc, Khánh) và ba cột (tiếng Anh, tin học, mĩ thuật). Mỗi ô ghi ✓ nếu chắc chắn đúng, × nếu chắc chắn sai.
 
-Manh mối thứ nhất cho hai dấu ×: dòng Vy bị gạch ở cột múa và cột hát.
+Manh mối thứ nhất cho hai dấu ×: dòng Dũng bị gạch ở cột mĩ thuật và cột tin học.
 
-Dòng Vy chỉ còn một ô trống, nên ô ấy là ✓: **Vy học đàn**. Đây là bước hay bị quên tiếp theo — đã có ✓ thì phải gạch × cho cả **cột** đàn ở hai dòng còn lại.
+Dòng Dũng chỉ còn một ô trống, nên ô ấy là ✓: **Dũng học tiếng Anh**. Đây là bước hay bị quên tiếp theo — đã có ✓ thì phải gạch × cho cả **cột** tiếng Anh ở hai dòng còn lại.
 
-Manh mối thứ hai: dòng Chi bị gạch ở cột hát. Cột đàn cũng đã gạch, nên dòng Chi chỉ còn một ô: **Chi học múa**.
+Manh mối thứ hai: dòng Phúc bị gạch ở cột tin học. Cột tiếng Anh cũng đã gạch, nên dòng Phúc chỉ còn một ô: **Phúc học mĩ thuật**.
 
-Còn lại **Trang học hát**. Thử lại cả hai manh mối đều đúng.
+Còn lại **Khánh học tin học**. Thử lại cả hai manh mối đều đúng.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Mỗi dòng một người, mỗi cột một khả năng. Đánh × cho điều chắc chắn sai. Dòng nào chỉ còn một ô trống thì ô ấy là ✓ — và ngay sau đó phải gạch × cho cả cột chứa ô ấy.
 
@@ -490,7 +492,7 @@ Còn lại **Trang học hát**. Thử lại cả hai manh mối đều đúng.
 
 **Các bước giải**
 
-Xét ý a: Trên bảng viết các số từ 1 đến 30. Mỗi bước, xoá hai số bất kì và viết thay vào **hiệu** của chúng (số lớn trừ số bé). Sau nhiều bước chỉ còn một số. Số cuối cùng là số chẵn hay số lẻ?
+Xét ý a: Trên bảng viết các số từ 1 đến 14. Mỗi bước, xoá hai số bất kì và viết thay vào **hiệu** của chúng (số lớn trừ số bé). Sau nhiều bước chỉ còn một số. Số cuối cùng là số chẵn hay số lẻ?
 
 Đọc vị: đây là dạng **Bài toán bất biến**; dấu hiệu là Một quá trình lặp lại nhiều bước, hỏi trạng thái cuối.
 
@@ -630,10 +632,10 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.4 | Bài toán hiệu – tỉ | Tỉ số, sơ đồ đoạn thẳng | Đề cho **hiệu** và **tỉ số** | Sơ đồ → hiệu số phần → giá trị một phần | Hiệu luôn chia hết cho hiệu số phần — dùng để kiểm tra đã đọc đúng tỉ số chưa. | thư viện: 113 kg, cửa hàng: 678 kg · hợp tác xã: 176 kg, kho A: 352 kg · kho B: 150 kg, hợp tác xã: 225 kg · xưởng: 128 kg, trang trại: 448 kg |
 | III.5 | Tổng – tỉ, hiệu – tỉ dạng ẩn | Tỉ số, sơ đồ đoạn thẳng, dịch lời văn thành số | Đề mô tả vòng thay vì cho số: “nếu … thì …”, “chia thành … phần” | Dịch dữ kiện ẩn thành số rồi áp dạng chuẩn | Kẻ sẵn ba dòng Tổng – Hiệu – Tỉ số, điền được hai dòng là giải được. | kho A: 24 kg, hợp tác xã: 32 kg · cửa hàng: 9 kg, xưởng: 45 kg · 168 kg · kho A: 117 kg, trang trại: 195 kg |
 | IV.1 | Đếm số lập được có điều kiện | Quy tắc nhân, dấu hiệu chia hết | Bộ chữ số cho trước kèm điều kiện chia hết | Chọn hàng bị ràng buộc trước rồi nhân số cách các hàng còn lại | Số chia hết cho 3 nhận diện qua tổng ba chữ số được chọn — xét theo bộ ba. | 24 · 6 · 6 · 12… |
-| IV.2 | Chuyển đổi giữa hai đại lượng, tổng không đổi | Bất biến tổng, biến thiên hiệu | “Chuyển … từ bên này sang bên kia” | Xét đại lượng không đổi (tổng) và đại lượng đổi gấp đôi (hiệu) | Sau khi chuyển, mỗi bên bằng nửa tổng — tính nửa tổng rồi trừ là ra ngay. | 43 quyển · 13 quyển · 21 quyển · 25 quyển… |
+| IV.2 | Hình chữ nhật tổng hợp | Chu vi, diện tích hình chữ nhật; s = v × t | Một hình nhưng nhiều câu hỏi nối tiếp | Tính chu vi và diện tích trước, dùng lại cho các ý sau | Chu vi tăng đúng 2 lần phần tăng, dù tăng chiều nào. | 130 m · 924 m² · 32,5 giây · 126 m²… |
 | IV.3 | Cân đĩa, tìm vật khác biệt | Lập luận trường hợp xấu nhất; chia nhóm ba | Cân đĩa không có quả cân, tìm vật nhẹ hơn | Chia ba phần mỗi lần cân | 3 gói → 1 lần; 9 gói → 2 lần; 27 gói → 3 lần. | 3 lần · 3 kết quả: nghiêng trái, nghiêng phải, thăng bằng · 3 phần · 9… |
-| IV.4 | Lập bảng | Suy luận loại trừ; đọc hiểu câu phủ định | Đề ghép **người với việc** và cho một loạt câu khẳng định hoặc phủ định | Kẻ bảng hai chiều, đánh × và ✓, mỗi ✓ kéo theo cả dòng cả cột | Bắt đầu từ người bị loại nhiều khả năng nhất — dòng ấy chốt được sớm nhất. | Vy học đàn; Chi học múa; Trang học hát · Hà học bóng đá; Minh học cầu lông; Chi học bóng rổ · Lan học cờ vua; Dũng học bơi; Đức học vẽ · Minh học mĩ thuật; Vy học tiếng Anh; Chi học tin học… |
-| IV.5 | Bài toán bất biến | Tính chẵn lẻ, đại lượng bất biến | Một quá trình lặp lại nhiều bước, hỏi trạng thái cuối | Tìm đại lượng không đổi rồi so trạng thái đầu với trạng thái cuối | Thử với n nhỏ (n = 3, 4) để đoán, rồi chứng minh bằng bất biến. | lẻ · 465 · giảm đi 2 lần số bé · không thay đổi… |
+| IV.4 | Lập bảng | Suy luận loại trừ; đọc hiểu câu phủ định | Đề ghép **người với việc** và cho một loạt câu khẳng định hoặc phủ định | Kẻ bảng hai chiều, đánh × và ✓, mỗi ✓ kéo theo cả dòng cả cột | Bắt đầu từ người bị loại nhiều khả năng nhất — dòng ấy chốt được sớm nhất. | Dũng học tiếng Anh; Phúc học mĩ thuật; Khánh học tin học · Chi học hát; Yến học đàn; Hùng học múa · Đức học tiếng Anh; Dũng học mĩ thuật; Quân học tin học · Vy học đàn; Chi học múa; Trang học hát |
+| IV.5 | Bài toán bất biến | Tính chẵn lẻ, đại lượng bất biến | Một quá trình lặp lại nhiều bước, hỏi trạng thái cuối | Tìm đại lượng không đổi rồi so trạng thái đầu với trạng thái cuối | Thử với n nhỏ (n = 3, 4) để đoán, rồi chứng minh bằng bất biến. | lẻ · 105 · giảm đi 2 lần số bé · không thay đổi… |
 | V.1 | Trắc nghiệm đếm nhanh | Đếm cặp, quy tắc nhân, ngăn kéo, trồng cây, chu kì 7 | Nhiều câu ngắn, mỗi câu một kỹ thuật khác nhau | Nhận dạng kỹ thuật trước, tính sau | Học thuộc bốn công thức: n(n−1):2, a×b, loại×(cần−1)+1, khoảng+1. | Trắc nghiệm đếm nhanh · Đếm cặp, quy tắc nhân, ngăn kéo, trồng cây, chu kì 7 · Nhiều câu ngắn, mỗi câu một kỹ thuật khác nhau · Nhận dạng kỹ thuật trước, tính sau… |
 | V.2 | Thử chọn | Dấu hiệu chia hết; cấu tạo số có hai chữ số | Đề đòi một số thoả **nhiều điều kiện cùng lúc**, số khả năng hữu hạn | Thu hẹp bằng điều kiện chặt nhất rồi thử từng khả năng còn lại | Tổng hai chữ số cố định thì chỉ có tối đa mười số — liệt kê rất nhanh. | Thử chọn · Dấu hiệu chia hết; cấu tạo số có hai chữ số · Đề đòi một số thoả **nhiều điều kiện cùng lúc**, số khả năng hữu hạn · Thu hẹp bằng điều kiện chặt nhất rồi thử từng khả năng còn lại… |
 | V.3 | Đếm số lập được có điều kiện | Quy tắc nhân, dấu hiệu chia hết | Bộ chữ số cho trước kèm điều kiện chia hết | Chọn hàng bị ràng buộc trước rồi nhân số cách các hàng còn lại | Số chia hết cho 3 nhận diện qua tổng ba chữ số được chọn — xét theo bộ ba. | Đếm số lập được có điều kiện · Quy tắc nhân, dấu hiệu chia hết · Bộ chữ số cho trước kèm điều kiện chia hết · Chọn hàng bị ràng buộc trước rồi nhân số cách các hàng còn lại… |
@@ -662,7 +664,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.4 | TD3, TD2 | Chia cho **hiệu số phần**, không phải tổng số phần. |
 | III.5 | TD2, TD6 | Dịch xong dữ kiện ẩn thì bài trở lại **đúng dạng chuẩn**. |
 | IV.1 | TD4, TD6 | Có ràng buộc ở hàng nào thì **chọn hàng đó trước**. |
-| IV.2 | TD3, TD6 | Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển. |
+| IV.2 | TD3, TD6 | Tăng cả hai chiều thì phần dôi ra **không phải** tích của hai phần tăng. |
 | IV.3 | TD6, TD2 | Cân đĩa cho **ba** kết quả nên chia ba, không chia đôi. |
 | IV.4 | TD3, TD4 | Đặt được một ✓ thì **cả dòng và cả cột** còn lại đều thành ×. Bỏ bước gạch cột là chỗ bài bị tắc giữa chừng. |
 | IV.5 | TD6, TD2 | Tìm đại lượng **không đổi** qua mỗi bước là chìa khoá của cả lớp bài này. |
@@ -696,7 +698,7 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 | III.4 | Dùng nhầm công thức của tổng – tỉ cho bài hiệu – tỉ. | Đọc kĩ: đề cho “tổng” hay cho “nhiều hơn”? Ghi rõ ra trước khi vẽ. |
 | III.5 | Lao vào tính khi chưa xác định được tổng, hiệu hay tỉ số. | Viết ba dòng trước khi tính: Tổng = … ; Hiệu = … ; Tỉ số = … ; dòng nào chưa biết thì để trống và đi tìm. |
 | IV.1 | Chọn hàng trăm trước rồi mới xét điều kiện tận cùng, dẫn đến đếm trùng hoặc sót. | Viết rõ thứ tự chọn hàng trước khi nhân các số cách. |
-| IV.2 | Chuyển đúng bằng hiệu hai bên nên bên ít lại thành bên nhiều. | Thử lại: sau khi chuyển, cộng trừ ra hai số rồi so xem có bằng nhau không. |
+| IV.2 | Nhân hai lượng tăng với nhau rồi coi đó là diện tích tăng thêm. | Vẽ hình cũ nằm trong hình mới rồi tô phần dôi ra. |
 | IV.3 | Chia đôi như tìm kiếm thông thường nên cần nhiều lần cân hơn mức cần thiết. | Nhớ ba kết quả: nghiêng trái, nghiêng phải, thăng bằng. |
 | IV.4 | Đánh ✓ rồi đi tiếp luôn, không gạch × cho phần còn lại của cột. | Sau mỗi lần đặt ✓, dừng lại gạch đủ dòng và cột rồi mới đọc manh mối kế. |
 | IV.5 | Thử mò vài trường hợp rồi kết luận, không chứng minh được cho mọi cách làm. | Sau khi đoán, hãy kiểm tra: đại lượng đó thay đổi thế nào sau **một** bước? |
@@ -728,7 +730,7 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 **Bài III.4** — (1) Đề cho tổng hay cho hiệu? — (2) Vẽ sơ đồ, phần dôi ra ứng với hiệu. — (3) Hiệu chia cho hiệu số phần ra giá trị một phần.
 **Bài III.5** — (1) Đề đã cho tổng chưa? Cho hiệu chưa? Cho tỉ số chưa? — (2) Câu nào trong đề đang mô tả cái còn thiếu? — (3) Dịch câu đó thành một con số rồi giải như bài chuẩn.
 **Bài IV.1** — (1) Điều kiện của đề ràng buộc hàng nào? — (2) Chọn hàng bị ràng buộc trước tiên. — (3) Nhớ loại trường hợp chữ số 0 đứng ở hàng trăm.
-**Bài IV.2** — (1) Hiện tại hai bên hơn kém nhau bao nhiêu? — (2) Chuyển 1 quyển thì hiệu giảm mấy quyển? — (3) Muốn hiệu về 0 thì phải chuyển bao nhiêu?
+**Bài IV.2** — (1) Đi một vòng là đi hết đại lượng nào? — (2) Phần diện tích dôi ra có hình dạng gì? — (3) Tăng cả hai chiều thì phần dôi gồm mấy mảnh?
 **Bài IV.3** — (1) Một lần cân cho mấy kết quả? — (2) Vậy nên chia số gói thành mấy phần? — (3) Sau mỗi lần cân còn lại nhiều nhất bao nhiêu gói?
 **Bài IV.4** — (1) Kẻ bảng ba dòng ba cột trước đã. — (2) Manh mối nào cho biết chắc chắn một ô là sai? — (3) Dòng nào chỉ còn một ô trống thì ô ấy chính là đáp án của dòng ấy.
 **Bài IV.5** — (1) Sau mỗi bước, tổng các số trên bảng thay đổi bao nhiêu? — (2) Lượng thay đổi đó là số chẵn hay số lẻ? — (3) Vậy tính chẵn lẻ của tổng có đổi không?
@@ -762,7 +764,7 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | III.4 | Số lớn hơn số bé 24, số bé bằng 1 phần 3 số lớn. Tìm hai số. | 12 và 36 |
 | III.5 | Hai kho có 120 tấn, kho A bằng 1 phần 3 kho B. Mỗi kho bao nhiêu tấn? | 30 và 90 |
 | IV.1 | Từ 1, 2, 3, 4 lập được bao nhiêu số có ba chữ số khác nhau? | 24 |
-| IV.2 | Tổ Một có 30 quyển, tổ Hai có 20 quyển. Chuyển mấy quyển để bằng nhau? | 5 quyển |
+| IV.2 | Hình chữ nhật 10 m × 5 m, tăng chiều dài 3 m. Diện tích tăng bao nhiêu? | 15 m² |
 | IV.3 | Có 9 gói kẹo, một gói nhẹ hơn. Cần cân mấy lần? | 2 lần |
 | IV.4 | An, Bình, Chi học ba môn bơi, vẽ, hát. An không học bơi và không học vẽ. Bình không học hát. Hỏi mỗi bạn học môn nào? | An học hát; Bình học vẽ; Chi học bơi |
 | IV.5 | Viết các số 1 đến 4, mỗi bước thay hai số bằng hiệu. Số cuối chẵn hay lẻ? | chẵn |

@@ -92,43 +92,43 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 
 Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: đây là dạng bài gì, và dấu hiệu nào cho biết điều đó.
 
-**Đề 1.** Chú ý các cạnh bị ghép vào bên trong. Ghép 5 hình vuông cạnh 10 cm thành một hàng ngang. Tính chu vi hình chữ nhật thu được.
+**Đề 1.** Vẽ hình và kẻ lưới ra nháp. Một hình chữ nhật 8 cm × 4 cm được phủ kín bằng các hình vuông cạnh 1 cm. Cần bao nhiêu hình vuông?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 2.** Đếm có hệ thống, nêu cách đếm. Từ một đỉnh của tam giác lớn kẻ 4 đoạn thẳng tới cạnh đối diện. Có tất cả bao nhiêu tam giác trong hình?
+**Đề 2.** Đọc kĩ xem bài hỏi chu vi hay diện tích. Một nền nhà hình chữ nhật dài 24 dm, rộng 9 dm, lát bằng gạch vuông cạnh 5 dm. Hỏi cần bao nhiêu viên gạch?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 3.** Bài nhiều ý nối tiếp, ý sau dùng kết quả ý trước. Hình chữ nhật có chiều dài 16 m, chiều rộng 11 m. Tính chu vi.
+**Đề 3.** Vẽ hình và tô phần cần tính trước khi làm. Hình chữ nhật có chiều dài 11 cm, chiều rộng 9 cm. Tính diện tích.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 4.** Làm ngược từ công thức. Hình chữ nhật có diện tích 78 cm², chiều rộng 6 cm. Tính chiều dài.
+**Đề 4.** Đếm có hệ thống, nêu cách đếm. Từ một đỉnh của tam giác lớn kẻ 5 đoạn thẳng tới cạnh đối diện. Có tất cả bao nhiêu tam giác trong hình?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 5.** Vẽ hình và tô phần cần tính trước khi làm. Hình chữ nhật có chiều dài 9 cm, chiều rộng 5 cm. Tính diện tích.
+**Đề 5.** Vẽ hình minh hoạ phần tăng thêm. Hình chữ nhật dài 22 cm, rộng 14 cm. Nếu tăng cả chiều dài và chiều rộng thêm 8 cm thì diện tích tăng thêm bao nhiêu?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 6.** Tính theo yêu cầu, ghi rõ đơn vị. Hình chữ nhật có chiều dài 53 cm, chiều rộng 51 cm. Tính chu vi.
+**Đề 6.** Vẽ hình tròn và ghi kí hiệu lên hình. Hình tròn A có bán kính 11 cm, hình tròn B có đường kính 32 cm. Hình nào lớn hơn?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 7.** Vẽ hình minh hoạ phần tăng thêm. Hình chữ nhật dài 49 cm, rộng 42 cm. Nếu tăng chiều dài thêm 11 cm (giữ nguyên chiều rộng) thì diện tích tăng thêm bao nhiêu?
+**Đề 7.** Tính theo yêu cầu, ghi rõ đơn vị. Hình chữ nhật có chiều dài 35 cm, chiều rộng 23 cm. Tính diện tích.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 8.** Dùng ê ke và thước đo góc để kiểm chứng. Góc 30° so với góc vuông thì lớn hơn, bé hơn hay bằng?
+**Đề 8.** Đếm có hệ thống, không đếm mò. Lưới ô vuông gồm 3 hàng và 2 cột ô vuông nhỏ. Có tất cả bao nhiêu ô vuông nhỏ?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 9.** Đọc kĩ xem bài hỏi chu vi hay diện tích. Một mảnh vườn hình chữ nhật dài 35 m, rộng 31 m. Người ta rào xung quanh mảnh vườn. Hỏi cần bao nhiêu mét rào?
+**Đề 9.** Dùng ê ke và thước đo góc để kiểm chứng. Hình chữ nhật có mấy cặp cạnh song song và mấy cặp cạnh vuông góc?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 10.** Vẽ hình tròn và ghi kí hiệu lên hình. Hình tròn có đường kính 34 cm. Bán kính dài bao nhiêu?
+**Đề 10.** Làm ngược từ công thức. Hình chữ nhật có chu vi 98 cm, chiều dài 27 cm. Tính chiều rộng.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
@@ -138,16 +138,16 @@ Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: 
 
 | # | Dạng bài | Dấu hiệu |
 |:--:|---|---|
-| 1 | Cắt ghép hình, biến thiên chu vi | Từ khoá “ghép”, “cắt thành”, “xếp thành” |
-| 2 | Đếm hình bằng quy tắc chọn hai điểm | Hình có nhiều đoạn kẻ từ cùng một đỉnh, hoặc nhiều điểm trên một đường |
-| 3 | Hình chữ nhật tổng hợp | Một hình nhưng nhiều câu hỏi nối tiếp |
-| 4 | Tìm kích thước từ chu vi, diện tích | Cho chu vi hoặc diện tích và một kích thước |
-| 5 | Cắt ghép hình, tỉ số diện tích | “Cắt thành … phần”, “nối trung điểm”, “ghép hai hình” |
-| 6 | Chu vi, diện tích hình cơ bản | Cho chiều dài, chiều rộng hoặc cạnh |
-| 7 | Biến thiên diện tích theo kích thước | “Tăng chiều dài thêm …”, “gấp đôi chiều …” |
-| 8 | Nhận biết và phân loại góc | Đề cho số đo góc hoặc hỏi về cạnh của hình |
-| 9 | Chu vi, diện tích trong tình huống thực tế | Từ khoá “rào xung quanh”, “lát gạch”, “trồng cây quanh” |
-| 10 | Nhận biết hình tròn và các yếu tố | Đề nhắc tâm, bán kính, đường kính |
+| 1 | Phủ hình, chia hình | “Phủ kín bằng các hình vuông cạnh …”, “chia thành … phần bằng nhau” |
+| 2 | Chu vi, diện tích trong tình huống thực tế | Từ khoá “rào xung quanh”, “lát gạch”, “trồng cây quanh” |
+| 3 | Cắt ghép hình, tỉ số diện tích | “Cắt thành … phần”, “nối trung điểm”, “ghép hai hình” |
+| 4 | Đếm hình bằng quy tắc chọn hai điểm | Hình có nhiều đoạn kẻ từ cùng một đỉnh, hoặc nhiều điểm trên một đường |
+| 5 | Biến thiên diện tích theo kích thước | “Tăng chiều dài thêm …”, “gấp đôi chiều …” |
+| 6 | Nhận biết hình tròn và các yếu tố | Đề nhắc tâm, bán kính, đường kính |
+| 7 | Chu vi, diện tích hình cơ bản | Cho chiều dài, chiều rộng hoặc cạnh |
+| 8 | Đếm hình trong lưới | Hình vẽ là lưới ô vuông đều |
+| 9 | Nhận biết và phân loại góc | Đề cho số đo góc hoặc hỏi về cạnh của hình |
+| 10 | Tìm kích thước từ chu vi, diện tích | Cho chu vi hoặc diện tích và một kích thước |
 
 ---
 

@@ -100,43 +100,43 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 
 Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: đây là dạng bài gì, và dấu hiệu nào cho biết điều đó.
 
-**Đề 1.** Vẽ hình trước khi tính. Ghi rõ hai tam giác nào chung chiều cao. Tam giác ABC có điểm M nằm trên cạnh BC sao cho BM bằng 1 phần 3 MC. Biết diện tích tam giác ABM là 30 cm², tính diện tích tam giác AMC và diện tích tam giác ABC.
+**Đề 1.** Bài nhiều ý nối tiếp, ý sau dùng kết quả ý trước. Hình chữ nhật có chiều dài 17 m, chiều rộng 14 m. Tính chu vi.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 2.** Chú ý các cạnh bị ghép vào bên trong. Ghép 4 hình vuông cạnh 18 cm thành một hình vuông lớn. Tính chu vi hình vuông lớn.
+**Đề 2.** Đếm có hệ thống, nêu cách đếm. Từ một đỉnh của tam giác lớn kẻ 4 đoạn thẳng tới cạnh đối diện. Có tất cả bao nhiêu tam giác trong hình?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 3.** Ghi rõ đơn vị: cm² cho diện tích, cm³ cho thể tích. Hình hộp chữ nhật có đáy 7 cm × 12 cm, chiều cao 4 cm. Tính diện tích toàn phần.
+**Đề 3.** Vẽ hình tròn và ghi kí hiệu lên hình. Hình tròn có đường kính 72 cm. Bán kính dài bao nhiêu?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 4.** Vẽ hình và tô phần cần tính trước khi làm. Hình chữ nhật có chiều dài 8 cm, chiều rộng 4 cm. Tính diện tích.
+**Đề 4.** Áp dụng đúng công thức từng hình. Hình bình hành có đáy 13 cm, chiều cao 21 cm. Tính diện tích.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 5.** Áp dụng đúng công thức từng hình. Hình tam giác có đáy 8 cm, chiều cao 25 cm. Tính diện tích.
+**Đề 5.** Vẽ hình minh hoạ phần tăng thêm. Hình chữ nhật dài 24 cm, rộng 6 cm. Nếu tăng cả chiều dài và chiều rộng thêm 7 cm thì diện tích tăng thêm bao nhiêu?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 6.** Trả lời bằng lập luận tỉ lệ, hạn chế tính số lớn. Hình chữ nhật có chiều dài 13 cm, chiều rộng 10 cm. Tính diện tích.
+**Đề 6.** Vẽ hình trước khi tính. Ghi rõ hai tam giác nào chung chiều cao. Tam giác ABC có điểm M nằm trên cạnh BC sao cho BM bằng 1 phần 2 MC. Biết diện tích tam giác ABM là 112 cm², tính diện tích tam giác AMC và diện tích tam giác ABC.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 7.** Tưởng tượng khối lớn và xét theo vị trí: góc, cạnh, mặt, trong lõi. Một khối lập phương lớn ghép từ 5 × 5 × 5 khối lập phương nhỏ. Hỏi có tất cả bao nhiêu khối nhỏ?
+**Đề 7.** Đếm có hệ thống, không đếm mò. Lưới ô vuông gồm 5 hàng và 4 cột ô vuông nhỏ. Có tất cả bao nhiêu ô vuông nhỏ?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 8.** Lấy π = 3,14. Ghi rõ đơn vị. Hình tròn có bán kính 30 cm. Tính chu vi (lấy π = 3,14).
+**Đề 8.** Dùng ê ke và thước đo góc để kiểm chứng. Hình chữ nhật có mấy cặp cạnh song song và mấy cặp cạnh vuông góc?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 9.** Phân tích hình thành hiệu của các hình quen thuộc. Hai hình tròn đồng tâm có bán kính 16 cm và 5 cm. Tính diện tích phần nằm giữa hai đường tròn (lấy π = 3,14).
+**Đề 9.** Tính theo yêu cầu, ghi rõ đơn vị. Hình chữ nhật có chiều dài 20 cm, chiều rộng 15 cm. Tính chu vi.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 10.** Đọc kĩ xem bài hỏi chu vi hay diện tích. Một mảnh đất hình chữ nhật dài 44 m, rộng 26 m. Người ta trồng cây quanh mảnh đất, hai cây liền nhau cách nhau 4 m. Hỏi cần bao nhiêu cây?
+**Đề 10.** Phân tích hình thành hiệu của các hình quen thuộc. Hai hình tròn đồng tâm có bán kính 8 cm và 7 cm. Tính diện tích phần nằm giữa hai đường tròn (lấy π = 3,14).
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
@@ -146,16 +146,16 @@ Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: 
 
 | # | Dạng bài | Dấu hiệu |
 |:--:|---|---|
-| 1 | Phương pháp diện tích | Hình bị chia thành nhiều phần, đề cho diện tích một phần và tỉ số hai đoạn trên cùng một cạnh |
-| 2 | Cắt ghép hình, biến thiên chu vi | Từ khoá “ghép”, “cắt thành”, “xếp thành” |
-| 3 | Hình hộp chữ nhật, hình lập phương | Đề cho ba kích thước hoặc cạnh hình lập phương |
-| 4 | Cắt ghép hình, tỉ số diện tích | “Cắt thành … phần”, “nối trung điểm”, “ghép hai hình” |
-| 5 | Diện tích các hình phẳng cơ bản | Đề cho đáy và chiều cao, hoặc hai đường chéo |
-| 6 | Biến thiên diện tích và chu vi theo tỉ lệ | “Gấp … lần”, “tăng … cm rồi giảm … cm” |
-| 7 | Khối lập phương sơn màu | “Ghép từ … khối nhỏ”, “sơn mặt ngoài” |
-| 8 | Chu vi, diện tích hình tròn | Đề cho bán kính hoặc đường kính |
-| 9 | Diện tích phần tô màu | Hình gồm nhiều hình lồng nhau, hỏi phần còn lại |
-| 10 | Chu vi, diện tích trong tình huống thực tế | Từ khoá “rào xung quanh”, “lát gạch”, “trồng cây quanh” |
+| 1 | Hình chữ nhật tổng hợp | Một hình nhưng nhiều câu hỏi nối tiếp |
+| 2 | Đếm hình bằng quy tắc chọn hai điểm | Hình có nhiều đoạn kẻ từ cùng một đỉnh, hoặc nhiều điểm trên một đường |
+| 3 | Nhận biết hình tròn và các yếu tố | Đề nhắc tâm, bán kính, đường kính |
+| 4 | Diện tích các hình phẳng cơ bản | Đề cho đáy và chiều cao, hoặc hai đường chéo |
+| 5 | Biến thiên diện tích theo kích thước | “Tăng chiều dài thêm …”, “gấp đôi chiều …” |
+| 6 | Phương pháp diện tích | Hình bị chia thành nhiều phần, đề cho diện tích một phần và tỉ số hai đoạn trên cùng một cạnh |
+| 7 | Đếm hình trong lưới | Hình vẽ là lưới ô vuông đều |
+| 8 | Nhận biết và phân loại góc | Đề cho số đo góc hoặc hỏi về cạnh của hình |
+| 9 | Chu vi, diện tích hình cơ bản | Cho chiều dài, chiều rộng hoặc cạnh |
+| 10 | Diện tích phần tô màu | Hình gồm nhiều hình lồng nhau, hỏi phần còn lại |
 
 ---
 

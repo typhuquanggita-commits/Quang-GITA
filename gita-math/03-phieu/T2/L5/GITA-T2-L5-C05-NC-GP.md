@@ -54,19 +54,19 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần IV**
 
-- **Bài IV.1** — a) 164 cm² · b) 51 cm² · c) 84 cm² · d) 60 cm² · e) 112 cm²
-- **Bài IV.2** — a) 216 cm² · b) 2 lần · c) 555 cm² · d) 306 cm² · e) 36 cm²
-- **Bài IV.3** — a) một quyển vở: 9 000 đồng; một chiếc bút: 18 000 đồng · b) một chiếc thước: 5 000 đồng; một hộp hộp màu: 15 000 đồng · c) một hộp hộp màu: 6 000 đồng; một quyển vở: 18 000 đồng · d) một chiếc bút: 11 000 đồng; một chiếc cặp: 33 000 đồng · e) một chiếc bút: 6 000 đồng; một quyển sách: 18 000 đồng
-- **Bài IV.4** — a) 88 m · b) 435 m² · c) 44 giây · d) 75 m² · e) 10 m · f) 680 m² · g) 245 m²
-- **Bài IV.5** — a) 216 · b) 8 · c) 48 · d) 96 · e) 64 · f) có, 8 + 48 + 96 + 64 = 216
+- **Bài IV.1** — a) 125 · b) 8 · c) 36 · d) 54 · e) 27 · f) có, 8 + 36 + 54 + 27 = 125
+- **Bài IV.2** — a) 179 200 đồng · b) 432 000 đồng · c) 486 000 đồng · d) 168 000 đồng · e) 108 000 đồng
+- **Bài IV.3** — a) 182 m · b) 1 860 m² · c) 45,5 giây · d) 186 m² · e) 12 m · f) 2 442 m² · g) 582 m²
+- **Bài IV.4** — a) 2 lần · b) 2 lần · c) 142 cm² · d) 240 cm² · e) 138 cm²
+- **Bài IV.5** — a) 210 cm² · b) 20 cm² · c) 53 cm² · d) 13 cm²
 
 **Phần V**
 
 - **Bài V.1** — a) 3, 7, 15, 27 · b) 63 · c) 183 · d) 36 · e) có, khoảng cách 4 · f) 52
-- **Bài V.2** — a) 192 cm · b) 96 cm · c) 150 cm · d) 204 cm · e) 72 cm
-- **Bài V.3** — a) 408 cm² · b) 2 lần · c) 4 lần · d) 1 632 cm² · e) 2 lần · f) 378 cm² · g) giảm 30 cm²
-- **Bài V.4** — a) AMC = 96 cm²; ABC = 168 cm² · b) AMC = 375 cm²; ABC = 450 cm² · c) AMC = 72 cm²; ABC = 216 cm² · d) AMC = 32 cm²; ABC = 96 cm²
-- **Bài V.5** — a) 90 cm² · b) 45 cm² · c) 45 cm² · d) 1 phần 4 · e) 22,5 cm² · f) diện tích 180 cm², chu vi 54 cm
+- **Bài V.2** — a) 75,36 cm² · b) 530,66 cm² · c) 123,84 cm² · d) 30,96 cm² · e) 706,5 cm²
+- **Bài V.3** — a) 117 cm² · b) 2 lần · c) 4 lần · d) 468 cm² · e) 2 lần · f) 105 cm² · g) giảm 12 cm²
+- **Bài V.4** — a) AMC = 117 cm²; ABC = 273 cm² · b) AMC = 192 cm²; ABC = 240 cm² · c) AMC = 64 cm²; ABC = 96 cm² · d) AMC = 125 cm²; ABC = 225 cm² · e) AMC = 150 cm²; ABC = 270 cm²
+- **Bài V.5** — a) 88 cm · b) 96 cm · c) 432 cm · d) 96 cm
 
 ---
 
@@ -376,87 +376,69 @@ Kết quả: **6**.
 
 *Điểm chốt:* Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu của số.
 
-### Bài IV.1 — Tỉ số diện tích hai tam giác chung chiều cao
+### Bài IV.1 — Khối lập phương sơn màu
+
+> **BẪY — Đếm trùng khối ở đỉnh và ở cạnh.**
 
 **Các bước giải**
 
-Xét ý a: Tam giác ABC có diện tích 287 cm². Điểm M nằm trên cạnh BC sao cho BM gấp 4 phần và MC gấp 3 phần bằng nhau. Tính diện tích tam giác ABM.
+Khối lớn gồm 5 × 5 × 5 = 125 khối nhỏ.
 
-Đọc vị: đây là dạng **Tỉ số diện tích tam giác**; dấu hiệu là Hai tam giác chung đỉnh, đáy nằm trên cùng một đường thẳng.
+Khối ở **đỉnh** được sơn 3 mặt: hình lập phương có 8 đỉnh nên có 8 khối.
 
-Kiến thức phải dùng: Diện tích tam giác, tỉ lệ thuận.
+Khối ở **cạnh** (không tính hai đầu) được sơn 2 mặt: mỗi cạnh có 3 khối, có 12 cạnh nên 36 khối.
 
-Cách làm: Chia diện tích theo tỉ số hai đáy.
+Khối ở **giữa mặt** được sơn 1 mặt: mỗi mặt có 3 × 3 = 9 khối, có 6 mặt nên 54 khối.
 
-Lối tắt: Tỉ số diện tích bằng tỉ số đáy — chia tổng theo tỉ số như bài tổng – tỉ.
+Khối **trong lõi** không được sơn: 3 × 3 × 3 = 27 khối.
 
-Kết quả: **164 cm²**.
+Thử lại: 8 + 36 + 54 + 27 = 125 ✓
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Hai tam giác ABM và ACM có **chung chiều cao** hạ từ A xuống BC. Diện tích của chúng tỉ lệ thuận với hai đáy BM và MC. Vì vậy diện tích tam giác ABM bằng diện tích tam giác ABC nhân với tỉ số BM trên BC.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Phân loại khối nhỏ theo **vị trí**: ở đỉnh sơn 3 mặt, ở cạnh sơn 2 mặt, ở giữa mặt sơn 1 mặt, ở trong lõi không sơn. Bốn loại cộng lại phải đúng bằng tổng số khối — đó là cách tự kiểm tra.
 
-*Điểm chốt:* Chung chiều cao thì diện tích **tỉ lệ với đáy** — không cần biết chiều cao là bao nhiêu.
+*Điểm chốt:* Phân loại theo vị trí, và **cộng bốn loại lại để thử**.
 
-### Bài IV.2 — Diện tích thay đổi khi kích thước thay đổi
+*Muốn khó hơn:* Chỉ sơn bốn mặt bên, không sơn hai mặt đáy — đếm lại từng loại.
+
+*Phải chắc trước khi làm bài này:* Thể tích hình lập phương và cách đếm có phân loại.
+
+### Bài IV.2 — Giá sau khuyến mãi
+
+> **BẪY — Cộng hai lần giảm giá thành một.**
+
+**Các bước giải**
+
+Cẩn thận: giảm 30% rồi giảm tiếp 20% **không** bằng giảm 50%, vì lần giảm sau tính trên giá đã giảm chứ không trên giá gốc.
+
+Sau lần giảm thứ nhất, giá còn 70% giá niêm yết: 320 000 : 100 × 70 = 224 000 (đồng).
+
+Lần giảm thứ hai tính trên 224 000 đồng, còn lại 80%: 224 000 : 100 × 80 = 179 200 (đồng).
+
+Giá cuối cùng là **179 200 đồng**. Nếu cộng gộp hai lần giảm thành 50% thì ra 160 000 đồng — sai 19 200 đồng.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Giảm a% thì còn (100 − a)% của giá đang xét. Giảm hai lần liên tiếp thì lần sau tính trên giá đã giảm, nên phải làm hai bước chứ không cộng hai phần trăm lại.
+
+*Điểm chốt:* Giảm 20% rồi giảm tiếp 10% **không** bằng giảm 30%.
+
+*Muốn khó hơn:* Hỏi ngược: biết giá cuối và hai mức giảm, tìm giá niêm yết.
+
+*Phải chắc trước khi làm bài này:* Tìm a% của một số và phép nhân chia với số tròn nghìn.
+
+### Bài IV.3 — Hình chữ nhật — tổng hợp chu vi, diện tích và chuyển động
 
 > **BẪY — Phần tăng gồm ba mảnh.**
 
 **Các bước giải**
 
-Xét ý a: Hình chữ nhật dài 49 cm, rộng 18 cm. Nếu tăng chiều dài thêm 12 cm (giữ nguyên chiều rộng) thì diện tích tăng thêm bao nhiêu?
+Bước 1 — chu vi: (60 + 31) × 2 = 182 (m).
 
-Đọc vị: đây là dạng **Biến thiên diện tích theo kích thước**; dấu hiệu là “Tăng chiều dài thêm …”, “gấp đôi chiều …”.
+Bước 2 — diện tích: 60 × 31 = 1 860 (m²).
 
-Kiến thức phải dùng: Diện tích hình chữ nhật, phân tích hình.
+Bước 3 — đi một vòng chính là đi hết chu vi: 182 : 4 = 45,5 (giây).
 
-Cách làm: Vẽ hình chồng, tách phần dôi ra thành các mảnh chữ nhật.
+Bước 4 — tăng chiều dài thêm 6 m thì phần dôi ra là một hình chữ nhật 6 m × 31 m, diện tích 186 (m²).
 
-Lối tắt: Gấp đôi một chiều thì diện tích gấp đôi; gấp đôi cả hai chiều thì gấp bốn.
-
-Kết quả: **216 cm²**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Tăng một chiều thêm k đơn vị thì diện tích tăng thêm đúng một hình chữ nhật có kích thước k × chiều còn lại. Tăng cả hai chiều thì phần tăng gồm ba mảnh: hai dải và một hình vuông ở góc — nên **không** bằng tích của hai phần tăng.
-
-*Điểm chốt:* Tăng cả hai chiều thì phần tăng gồm **ba mảnh**, không phải một.
-
-### Bài IV.3 — Đổi hết về một loại rồi giải
-
-> **BẪY — Quên đổi ngược lại.**
-
-**Các bước giải**
-
-Chọn vở làm loại chuẩn vì nó rẻ hơn, rồi **đổi hết** bút về vở.
-
-6 chiếc bút đổi được: 6 × 2 = 12 (quyển vở).
-
-Vậy số tiền ấy mua được tất cả: 12 + 10 = 22 (quyển vở).
-
-Giá một quyển vở: 198 000 : 22 = 9 000 (đồng).
-
-Đổi ngược lại — đây là bước hay bị quên. Giá một chiếc bút: 9 000 × 2 = **18 000 đồng**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Chọn loại **giá nhỏ hơn** làm chuẩn, đổi mọi loại còn lại về nó. Bài trở thành bài chia đơn giản. Giải xong nhớ đổi ngược về đại lượng đề hỏi.
-
-*Điểm chốt:* Đổi xong phải đổi ngược lại — đề hỏi cả hai giá, không chỉ một.
-
-*Muốn khó hơn:* Cho quan hệ đổi ngang giữa **ba** loại để phải đổi hai lần liên tiếp.
-
-*Phải chắc trước khi làm bài này:* Quan hệ gấp – kém và phép chia hết.
-
-### Bài IV.4 — Hình chữ nhật — tổng hợp chu vi, diện tích và chuyển động
-
-> **BẪY — Phần tăng gồm ba mảnh.**
-
-**Các bước giải**
-
-Bước 1 — chu vi: (29 + 15) × 2 = 88 (m).
-
-Bước 2 — diện tích: 29 × 15 = 435 (m²).
-
-Bước 3 — đi một vòng chính là đi hết chu vi: 88 : 2 = 44 (giây).
-
-Bước 4 — tăng chiều dài thêm 5 m thì phần dôi ra là một hình chữ nhật 5 m × 15 m, diện tích 75 (m²).
-
-Đáp số ý a: **88 m**.
+Đáp số ý a: **182 m**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Đi một vòng quanh hình là đi hết **chu vi**. Tăng một chiều thì phần diện tích dôi ra là một hình chữ nhật có kích thước bằng phần tăng nhân chiều còn lại. Tăng cả hai chiều thì phần dôi gồm **ba mảnh**.
 
@@ -466,31 +448,47 @@ Bước 4 — tăng chiều dài thêm 5 m thì phần dôi ra là một hình c
 
 *Phải chắc trước khi làm bài này:* Công thức chu vi, diện tích hình chữ nhật và quan hệ s = v × t.
 
-### Bài IV.5 — Khối lập phương sơn màu
+### Bài IV.4 — Diện tích thay đổi khi kích thước thay đổi
 
-> **BẪY — Đếm trùng khối ở đỉnh và ở cạnh.**
+> **BẪY — Phần tăng gồm ba mảnh.**
 
 **Các bước giải**
 
-Khối lớn gồm 6 × 6 × 6 = 216 khối nhỏ.
+Xét ý a: Hình chữ nhật dài 24 cm, rộng 14 cm. Nếu gấp đôi chiều dài và giữ nguyên chiều rộng thì diện tích mới gấp mấy lần diện tích cũ?
 
-Khối ở **đỉnh** được sơn 3 mặt: hình lập phương có 8 đỉnh nên có 8 khối.
+Đọc vị: đây là dạng **Biến thiên diện tích theo kích thước**; dấu hiệu là “Tăng chiều dài thêm …”, “gấp đôi chiều …”.
 
-Khối ở **cạnh** (không tính hai đầu) được sơn 2 mặt: mỗi cạnh có 4 khối, có 12 cạnh nên 48 khối.
+Kiến thức phải dùng: Diện tích hình chữ nhật, phân tích hình.
 
-Khối ở **giữa mặt** được sơn 1 mặt: mỗi mặt có 4 × 4 = 16 khối, có 6 mặt nên 96 khối.
+Cách làm: Vẽ hình chồng, tách phần dôi ra thành các mảnh chữ nhật.
 
-Khối **trong lõi** không được sơn: 4 × 4 × 4 = 64 khối.
+Lối tắt: Gấp đôi một chiều thì diện tích gấp đôi; gấp đôi cả hai chiều thì gấp bốn.
 
-Thử lại: 8 + 48 + 96 + 64 = 216 ✓
+Kết quả: **2 lần**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Phân loại khối nhỏ theo **vị trí**: ở đỉnh sơn 3 mặt, ở cạnh sơn 2 mặt, ở giữa mặt sơn 1 mặt, ở trong lõi không sơn. Bốn loại cộng lại phải đúng bằng tổng số khối — đó là cách tự kiểm tra.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Tăng một chiều thêm k đơn vị thì diện tích tăng thêm đúng một hình chữ nhật có kích thước k × chiều còn lại. Tăng cả hai chiều thì phần tăng gồm ba mảnh: hai dải và một hình vuông ở góc — nên **không** bằng tích của hai phần tăng.
 
-*Điểm chốt:* Phân loại theo vị trí, và **cộng bốn loại lại để thử**.
+*Điểm chốt:* Tăng cả hai chiều thì phần tăng gồm **ba mảnh**, không phải một.
 
-*Muốn khó hơn:* Chỉ sơn bốn mặt bên, không sơn hai mặt đáy — đếm lại từng loại.
+### Bài IV.5 — Tỉ số diện tích hai tam giác chung chiều cao
 
-*Phải chắc trước khi làm bài này:* Thể tích hình lập phương và cách đếm có phân loại.
+**Các bước giải**
+
+Xét ý a: Tam giác ABC có diện tích 385 cm². Điểm M nằm trên cạnh BC sao cho BM gấp 6 phần và MC gấp 5 phần bằng nhau. Tính diện tích tam giác ABM.
+
+Đọc vị: đây là dạng **Tỉ số diện tích tam giác**; dấu hiệu là Hai tam giác chung đỉnh, đáy nằm trên cùng một đường thẳng.
+
+Kiến thức phải dùng: Diện tích tam giác, tỉ lệ thuận.
+
+Cách làm: Chia diện tích theo tỉ số hai đáy.
+
+Lối tắt: Tỉ số diện tích bằng tỉ số đáy — chia tổng theo tỉ số như bài tổng – tỉ.
+
+Kết quả: **210 cm²**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Hai tam giác ABM và ACM có **chung chiều cao** hạ từ A xuống BC. Diện tích của chúng tỉ lệ thuận với hai đáy BM và MC. Vì vậy diện tích tam giác ABM bằng diện tích tam giác ABC nhân với tỉ số BM trên BC.
+
+*Điểm chốt:* Chung chiều cao thì diện tích **tỉ lệ với đáy** — không cần biết chiều cao là bao nhiêu.
 
 ### Bài V.1 — Dãy có hiệu tăng đều
 
@@ -512,37 +510,37 @@ Kết quả: **3, 7, 15, 27**.
 
 *Điểm chốt:* Số hạng thứ n = số đầu + **tổng (n − 1) hiệu đầu tiên**.
 
-### Bài V.2 — Cắt và ghép hình — chu vi thay đổi thế nào
+### Bài V.2 — Diện tích phần tô màu
 
 **Các bước giải**
 
-Xét ý a: Cắt một hình vuông cạnh 32 cm thành hai hình chữ nhật bằng nhau. Tổng chu vi hai hình chữ nhật đó bằng bao nhiêu?
+Xét ý a: Hai hình tròn đồng tâm có bán kính 5 cm và 1 cm. Tính diện tích phần nằm giữa hai đường tròn (lấy π = 3,14).
 
-Đọc vị: đây là dạng **Cắt ghép hình, biến thiên chu vi**; dấu hiệu là Từ khoá “ghép”, “cắt thành”, “xếp thành”.
+Đọc vị: đây là dạng **Diện tích phần tô màu**; dấu hiệu là Hình gồm nhiều hình lồng nhau, hỏi phần còn lại.
 
-Kiến thức phải dùng: Chu vi, đường bao của hình.
+Kiến thức phải dùng: Diện tích hình tròn, hình vuông; phép trừ diện tích.
 
-Cách làm: Xác định đường bao mới rồi cộng độ dài.
+Cách làm: Tách thành hiệu các hình cơ bản.
 
-Lối tắt: Mỗi nhát cắt làm tổng chu vi tăng thêm hai lần chiều dài nhát cắt.
+Lối tắt: Hình tròn nội tiếp hình vuông chiếm khoảng 78,5% diện tích hình vuông.
 
-Kết quả: **192 cm**.
+Kết quả: **75,36 cm²**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Khi ghép hai hình lại, các cạnh dán vào nhau **không còn nằm trên đường bao** nên không tính vào chu vi. Ngược lại, khi cắt một hình thành hai phần thì xuất hiện thêm hai cạnh mới trên đường bao, nên tổng chu vi tăng lên đúng hai lần đường cắt.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Diện tích phần tô màu = diện tích hình lớn − diện tích hình bị khoét. Bước quan trọng nhất là nhận ra hình lớn và hình bị khoét là những hình nào, và tìm đúng kích thước của chúng từ dữ kiện đề cho.
 
-*Điểm chốt:* Diện tích giữ nguyên khi cắt ghép, nhưng **chu vi thay đổi**.
+*Điểm chốt:* Đọc quan hệ hình học để suy ra kích thước: hình tròn nội tiếp hình vuông thì **đường kính bằng cạnh hình vuông**.
 
 ### Bài V.3 — Diện tích và chu vi khi kích thước thay đổi — dạng đề chuyên
 
 **Các bước giải**
 
-Diện tích ban đầu: 24 × 17 = 408 (cm²).
+Diện tích ban đầu: 13 × 9 = 117 (cm²).
 
 Gấp một chiều lên 2 lần thì diện tích gấp 2 lần, vì chiều kia giữ nguyên.
 
 Gấp cả hai chiều lên 2 lần thì diện tích gấp 2 × 2 = 4 lần.
 
-Diện tích mới: 408 × 4 = 1 632 (cm²).
+Diện tích mới: 117 × 4 = 468 (cm²).
 
 Chu vi chỉ gấp 2 lần, vì chu vi là tổng độ dài chứ không phải tích.
 
@@ -564,11 +562,11 @@ Hai tam giác ABM và AMC **chung đỉnh A** và có đáy BM, MC cùng nằm t
 
 Hai tam giác chung chiều cao thì tỉ số diện tích bằng đúng tỉ số hai đáy. Đây là toàn bộ nội dung của phương pháp diện tích.
 
-BM : MC = 3 : 4, nên diện tích ABM : diện tích AMC = 3 : 4.
+BM : MC = 4 : 3, nên diện tích ABM : diện tích AMC = 4 : 3.
 
-Diện tích AMC = 72 : 3 × 4 = 96 (cm²).
+Diện tích AMC = 156 : 4 × 3 = 117 (cm²).
 
-Diện tích ABC = 72 + 96 = **168 cm²**.
+Diện tích ABC = 156 + 117 = **273 cm²**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Tìm hai tam giác **chung một đỉnh** và có hai đáy nằm trên cùng một đường thẳng. Khi ấy tỉ số diện tích bằng tỉ số hai đáy, và từ diện tích suy ra được độ dài hoặc ngược lại.
 
@@ -578,29 +576,25 @@ Diện tích ABC = 72 + 96 = **168 cm²**.
 
 *Phải chắc trước khi làm bài này:* Công thức diện tích tam giác và cách rút gọn tỉ số.
 
-### Bài V.5 — Cắt, ghép hình và tỉ số diện tích
+### Bài V.5 — Cắt và ghép hình — chu vi thay đổi thế nào
 
 **Các bước giải**
 
-Diện tích hình chữ nhật: 15 × 6 = 90 (cm²).
+Xét ý a: Ghép 3 hình vuông cạnh 11 cm thành một hàng ngang. Tính chu vi hình chữ nhật thu được.
 
-Nối một đỉnh với trung điểm cạnh đối diện được một tam giác có đáy bằng nửa cạnh và chiều cao bằng cạnh kia.
+Đọc vị: đây là dạng **Cắt ghép hình, biến thiên chu vi**; dấu hiệu là Từ khoá “ghép”, “cắt thành”, “xếp thành”.
 
-Diện tích tam giác = đáy × chiều cao : 2, tức bằng (nửa cạnh × cạnh kia) : 2 = **một phần tư** diện tích hình chữ nhật.
+Kiến thức phải dùng: Chu vi, đường bao của hình.
 
-Cụ thể: 90 : 4 = 22,5 (cm²).
+Cách làm: Xác định đường bao mới rồi cộng độ dài.
 
-Ghép hai hình theo chiều rộng: diện tích cộng lại, nhưng chu vi thì không cộng vì hai cạnh dán vào trong.
+Lối tắt: Mỗi nhát cắt làm tổng chu vi tăng thêm hai lần chiều dài nhát cắt.
 
-Đáp số ý d: **một phần tư**.
+Kết quả: **88 cm**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Diện tích cộng được khi ghép hình, **chu vi thì không**. Tam giác có đáy bằng nửa một cạnh và chiều cao bằng cạnh kia thì diện tích bằng một phần tư hình chữ nhật.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Khi ghép hai hình lại, các cạnh dán vào nhau **không còn nằm trên đường bao** nên không tính vào chu vi. Ngược lại, khi cắt một hình thành hai phần thì xuất hiện thêm hai cạnh mới trên đường bao, nên tổng chu vi tăng lên đúng hai lần đường cắt.
 
-*Điểm chốt:* Ghép hình: **diện tích cộng, chu vi không cộng**.
-
-*Muốn khó hơn:* Nối hai trung điểm của hai cạnh kề — tỉ số diện tích bằng bao nhiêu?
-
-*Phải chắc trước khi làm bài này:* Diện tích hình chữ nhật và tam giác; khái niệm trung điểm.
+*Điểm chốt:* Diện tích giữ nguyên khi cắt ghép, nhưng **chu vi thay đổi**.
 
 ---
 
@@ -625,16 +619,16 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.3 | Chia tỉ lệ nhiều phần; bài toán trộn | Tỉ số, chia theo tỉ lệ, nhân với đơn giá | “Tỉ lệ với … , … , …” hoặc “trộn … với …” | Tổng số phần → giá trị một phần → nhân | Tổng luôn chia hết cho tổng số phần; không chia hết là đọc sai tỉ lệ. | 480 000 đồng · 100 · 125 · 100 cây · 620 000 đồng · 32 · 16 · 40 cây |
 | III.4 | Hình hộp chữ nhật, hình lập phương | Công thức thể tích, diện tích xung quanh, toàn phần | Đề cho ba kích thước hoặc cạnh hình lập phương | Xác định loại diện tích cần tính, đếm đủ số mặt | Hình lập phương cạnh a: toàn phần 6 × a × a, thể tích a × a × a. | thể tích 125 cm³, diện tích toàn phần 150 cm² · 132 cm² · 224 cm³ · 404 cm²… |
 | III.5 | Tìm chữ số tận cùng của một phép tính | Tính chất chữ số tận cùng | Câu hỏi chỉ hỏi “chữ số tận cùng”, không hỏi kết quả | Rút gọn về chữ số tận cùng rồi tính | Với phép trừ, nếu chữ số cuối của số bị trừ nhỏ hơn thì mượn 10 rồi trừ. | 6 · 7 · 0 · 7 |
-| IV.1 | Tỉ số diện tích tam giác | Diện tích tam giác, tỉ lệ thuận | Hai tam giác chung đỉnh, đáy nằm trên cùng một đường thẳng | Chia diện tích theo tỉ số hai đáy | Tỉ số diện tích bằng tỉ số đáy — chia tổng theo tỉ số như bài tổng – tỉ. | 164 cm² · 51 cm² · 84 cm² · 60 cm²… |
-| IV.2 | Biến thiên diện tích theo kích thước | Diện tích hình chữ nhật, phân tích hình | “Tăng chiều dài thêm …”, “gấp đôi chiều …” | Vẽ hình chồng, tách phần dôi ra thành các mảnh chữ nhật | Gấp đôi một chiều thì diện tích gấp đôi; gấp đôi cả hai chiều thì gấp bốn. | 216 cm² · 2 lần · 555 cm² · 306 cm²… |
-| IV.3 | Phương pháp thay thế | Quan hệ gấp – kém; phép nhân, phép chia | Đề cho **quan hệ đổi ngang** giữa hai loại cùng một tổng chung | Quy hết về loại chuẩn, giải, rồi đổi ngược | Tổng số cái sau khi đổi bằng số loại rẻ cộng số loại đắt nhân hệ số. | một quyển vở: 9 000 đồng; một chiếc bút: 18 000 đồng · một chiếc thước: 5 000 đồng; một hộp hộp màu: 15 000 đồng · một hộp hộp màu: 6 000 đồng; một quyển vở: 18 000 đồng · một chiếc bút: 11 000 đồng; một chiếc cặp: 33 000 đồng… |
-| IV.4 | Hình chữ nhật tổng hợp | Chu vi, diện tích hình chữ nhật; s = v × t | Một hình nhưng nhiều câu hỏi nối tiếp | Tính chu vi và diện tích trước, dùng lại cho các ý sau | Chu vi tăng đúng 2 lần phần tăng, dù tăng chiều nào. | 88 m · 435 m² · 44 giây · 75 m²… |
-| IV.5 | Khối lập phương sơn màu | Cấu tạo hình lập phương: 8 đỉnh, 12 cạnh, 6 mặt | “Ghép từ … khối nhỏ”, “sơn mặt ngoài” | Phân loại theo vị trí rồi đếm từng loại | Số khối không sơn luôn là (n − 2) nhân ba lần chính nó. | 216 · 8 · 48 · 96… |
+| IV.1 | Khối lập phương sơn màu | Cấu tạo hình lập phương: 8 đỉnh, 12 cạnh, 6 mặt | “Ghép từ … khối nhỏ”, “sơn mặt ngoài” | Phân loại theo vị trí rồi đếm từng loại | Số khối không sơn luôn là (n − 2) nhân ba lần chính nó. | 125 · 8 · 36 · 54… |
+| IV.2 | Bài toán giảm giá và khuyến mãi | Tỉ số phần trăm; tìm giá trị phần trăm của một số | Đề nhắc **giảm giá**, **khuyến mãi**, và có thể giảm nhiều lần | Mỗi lần giảm nhân với (100 − a) rồi chia 100, làm lần lượt | Giảm 20% rồi 10% tương đương còn 80% × 90% = 72% giá gốc. | 179 200 đồng · 432 000 đồng · 486 000 đồng · 168 000 đồng… |
+| IV.3 | Hình chữ nhật tổng hợp | Chu vi, diện tích hình chữ nhật; s = v × t | Một hình nhưng nhiều câu hỏi nối tiếp | Tính chu vi và diện tích trước, dùng lại cho các ý sau | Chu vi tăng đúng 2 lần phần tăng, dù tăng chiều nào. | 182 m · 1 860 m² · 45,5 giây · 186 m²… |
+| IV.4 | Biến thiên diện tích theo kích thước | Diện tích hình chữ nhật, phân tích hình | “Tăng chiều dài thêm …”, “gấp đôi chiều …” | Vẽ hình chồng, tách phần dôi ra thành các mảnh chữ nhật | Gấp đôi một chiều thì diện tích gấp đôi; gấp đôi cả hai chiều thì gấp bốn. | 2 lần · 2 lần · 142 cm² · 240 cm²… |
+| IV.5 | Tỉ số diện tích tam giác | Diện tích tam giác, tỉ lệ thuận | Hai tam giác chung đỉnh, đáy nằm trên cùng một đường thẳng | Chia diện tích theo tỉ số hai đáy | Tỉ số diện tích bằng tỉ số đáy — chia tổng theo tỉ số như bài tổng – tỉ. | 210 cm² · 20 cm² · 53 cm² · 13 cm² |
 | V.1 | Dãy có hiệu tăng đều (hiệu bậc hai) | Dãy hiệu, tổng dãy cách đều | Hiệu giữa các số hạng tăng đều đặn | Lập dãy hiệu, tính tổng hiệu, cộng vào số hạng đầu | Với hiệu 1, 2, 3, … thì số hạng thứ n = số đầu + (n − 1) × n : 2. | 3, 7, 15, 27 · 63 · 183 · 36… |
-| V.2 | Cắt ghép hình, biến thiên chu vi | Chu vi, đường bao của hình | Từ khoá “ghép”, “cắt thành”, “xếp thành” | Xác định đường bao mới rồi cộng độ dài | Mỗi nhát cắt làm tổng chu vi tăng thêm hai lần chiều dài nhát cắt. | 192 cm · 96 cm · 150 cm · 204 cm… |
-| V.3 | Biến thiên diện tích và chu vi theo tỉ lệ | Diện tích, chu vi hình chữ nhật; tỉ lệ | “Gấp … lần”, “tăng … cm rồi giảm … cm” | Lập luận trên tỉ lệ trước, chỉ tính số khi cần | Tăng một chiều và giảm chiều kia cùng một lượng thì diện tích luôn **giảm**, trừ khi hai chiều ban đầu chênh nhau đúng lượng ấy. | 408 cm² · 2 lần · 4 lần · 1 632 cm²… |
-| V.4 | Phương pháp diện tích | Diện tích tam giác; tỉ số; tam giác chung chiều cao | Hình bị chia thành nhiều phần, đề cho diện tích một phần và tỉ số hai đoạn trên cùng một cạnh | Lập tỉ số diện tích bằng tỉ số hai đáy của hai tam giác chung chiều cao | Không cần biết chiều cao là bao nhiêu — nó tự triệt tiêu trong tỉ số. | AMC = 96 cm²; ABC = 168 cm² · AMC = 375 cm²; ABC = 450 cm² · AMC = 72 cm²; ABC = 216 cm² · AMC = 32 cm²; ABC = 96 cm² |
-| V.5 | Cắt ghép hình, tỉ số diện tích | Diện tích hình chữ nhật, tam giác; đường bao | “Cắt thành … phần”, “nối trung điểm”, “ghép hai hình” | Vẽ hình, xác định đáy và chiều cao, so tỉ số | Tam giác nối một đỉnh với trung điểm cạnh đối diện luôn bằng một phần tư. | 90 cm² · 45 cm² · 45 cm² · 1 phần 4… |
+| V.2 | Diện tích phần tô màu | Diện tích hình tròn, hình vuông; phép trừ diện tích | Hình gồm nhiều hình lồng nhau, hỏi phần còn lại | Tách thành hiệu các hình cơ bản | Hình tròn nội tiếp hình vuông chiếm khoảng 78,5% diện tích hình vuông. | 75,36 cm² · 530,66 cm² · 123,84 cm² · 30,96 cm²… |
+| V.3 | Biến thiên diện tích và chu vi theo tỉ lệ | Diện tích, chu vi hình chữ nhật; tỉ lệ | “Gấp … lần”, “tăng … cm rồi giảm … cm” | Lập luận trên tỉ lệ trước, chỉ tính số khi cần | Tăng một chiều và giảm chiều kia cùng một lượng thì diện tích luôn **giảm**, trừ khi hai chiều ban đầu chênh nhau đúng lượng ấy. | 117 cm² · 2 lần · 4 lần · 468 cm²… |
+| V.4 | Phương pháp diện tích | Diện tích tam giác; tỉ số; tam giác chung chiều cao | Hình bị chia thành nhiều phần, đề cho diện tích một phần và tỉ số hai đoạn trên cùng một cạnh | Lập tỉ số diện tích bằng tỉ số hai đáy của hai tam giác chung chiều cao | Không cần biết chiều cao là bao nhiêu — nó tự triệt tiêu trong tỉ số. | AMC = 117 cm²; ABC = 273 cm² · AMC = 192 cm²; ABC = 240 cm² · AMC = 64 cm²; ABC = 96 cm² · AMC = 125 cm²; ABC = 225 cm²… |
+| V.5 | Cắt ghép hình, biến thiên chu vi | Chu vi, đường bao của hình | Từ khoá “ghép”, “cắt thành”, “xếp thành” | Xác định đường bao mới rồi cộng độ dài | Mỗi nhát cắt làm tổng chu vi tăng thêm hai lần chiều dài nhát cắt. | 88 cm · 96 cm · 432 cm · 96 cm |
 
 ---
 
@@ -657,16 +651,16 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.3 | TD3, TD2 | Chia cho **tổng số phần**, không chia cho số đại lượng. |
 | III.4 | TD1, TD3 | Diện tích **xung quanh** không tính hai mặt đáy; **toàn phần** thì có. |
 | III.5 | TD5, TD2 | Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu của số. |
-| IV.1 | TD6, TD3 | Chung chiều cao thì diện tích **tỉ lệ với đáy** — không cần biết chiều cao là bao nhiêu. |
-| IV.2 | TD3, TD6 | Tăng cả hai chiều thì phần tăng gồm **ba mảnh**, không phải một. |
-| IV.3 | TD2, TD5 | Đổi xong phải đổi ngược lại — đề hỏi cả hai giá, không chỉ một. |
-| IV.4 | TD3, TD6 | Tăng cả hai chiều thì phần dôi ra **không phải** tích của hai phần tăng. |
-| IV.5 | TD6, TD4 | Phân loại theo vị trí, và **cộng bốn loại lại để thử**. |
+| IV.1 | TD6, TD4 | Phân loại theo vị trí, và **cộng bốn loại lại để thử**. |
+| IV.2 | TD2, TD5 | Giảm 20% rồi giảm tiếp 10% **không** bằng giảm 30%. |
+| IV.3 | TD3, TD6 | Tăng cả hai chiều thì phần dôi ra **không phải** tích của hai phần tăng. |
+| IV.4 | TD3, TD6 | Tăng cả hai chiều thì phần tăng gồm **ba mảnh**, không phải một. |
+| IV.5 | TD6, TD3 | Chung chiều cao thì diện tích **tỉ lệ với đáy** — không cần biết chiều cao là bao nhiêu. |
 | V.1 | TD4, TD6 | Số hạng thứ n = số đầu + **tổng (n − 1) hiệu đầu tiên**. |
-| V.2 | TD6, TD3 | Diện tích giữ nguyên khi cắt ghép, nhưng **chu vi thay đổi**. |
+| V.2 | TD3, TD6 | Đọc quan hệ hình học để suy ra kích thước: hình tròn nội tiếp hình vuông thì **đường kính bằng cạnh hình vuông**. |
 | V.3 | TD6, TD3 | Diện tích gấp **k × k** lần, chu vi chỉ gấp **k** lần. |
 | V.4 | TD4, TD6 | Điều kiện bắt buộc là **chung chiều cao**. Thiếu điều kiện ấy thì tỉ số diện tích không còn bằng tỉ số đáy. |
-| V.5 | TD6, TD3 | Ghép hình: **diện tích cộng, chu vi không cộng**. |
+| V.5 | TD6, TD3 | Diện tích giữ nguyên khi cắt ghép, nhưng **chu vi thay đổi**. |
 
 ---
 
@@ -691,16 +685,16 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 | III.3 | Chia tổng cho 3 vì thấy có ba tổ. | Đếm số phần trên sơ đồ trước khi chia. |
 | III.4 | Cộng thiếu một mặt đáy khi tính diện tích toàn phần. | Đếm đủ 6 mặt của hình hộp trước khi cộng. |
 | III.5 | Tính trọn cả phép tính, vừa lâu vừa dễ sai. | Che phần đầu của hai số, chỉ để lộ chữ số cuối cùng. |
-| IV.1 | Đi tìm chiều cao cụ thể trong khi đề không cho. | Đọc lại: hai tam giác có chung đỉnh nào, chung chiều cao xuống cạnh nào? |
-| IV.2 | Nhân hai lượng tăng với nhau rồi coi đó là phần diện tích tăng thêm. | Vẽ hình chữ nhật cũ nằm trong hình mới, tô phần dôi ra. |
-| IV.3 | Tính ra giá loại chuẩn rồi dừng, quên nhân lên cho loại kia. | Gạch chân câu hỏi cuối trước khi tính, để biết đề hỏi mấy đại lượng. |
-| IV.4 | Nhân hai lượng tăng với nhau rồi coi đó là diện tích tăng thêm. | Vẽ hình cũ nằm trong hình mới rồi tô phần dôi ra. |
-| IV.5 | Đếm cả khối ở đỉnh vào nhóm khối ở cạnh, thành ra đếm trùng. | Trừ hai đầu mỗi cạnh khi đếm khối sơn 2 mặt. |
+| IV.1 | Đếm cả khối ở đỉnh vào nhóm khối ở cạnh, thành ra đếm trùng. | Trừ hai đầu mỗi cạnh khi đếm khối sơn 2 mặt. |
+| IV.2 | Cộng hai lần giảm giá thành một lần rồi tính một phép. | Viết ra giá sau lần giảm thứ nhất trước khi làm lần thứ hai. |
+| IV.3 | Nhân hai lượng tăng với nhau rồi coi đó là diện tích tăng thêm. | Vẽ hình cũ nằm trong hình mới rồi tô phần dôi ra. |
+| IV.4 | Nhân hai lượng tăng với nhau rồi coi đó là phần diện tích tăng thêm. | Vẽ hình chữ nhật cũ nằm trong hình mới, tô phần dôi ra. |
+| IV.5 | Đi tìm chiều cao cụ thể trong khi đề không cho. | Đọc lại: hai tam giác có chung đỉnh nào, chung chiều cao xuống cạnh nào? |
 | V.1 | Cộng n hiệu thay vì (n − 1) hiệu. | Kiểm chứng với n = 2: chỉ cộng đúng một hiệu. |
-| V.2 | Cộng chu vi các hình nhỏ lại rồi coi đó là chu vi hình ghép. | Tô đậm đường bao của hình mới rồi mới tính. |
+| V.2 | Lấy bán kính hình tròn làm cạnh hình vuông. | Vẽ lại hình, ghi số đo lên hình trước khi tính. |
 | V.3 | Cho rằng gấp đôi hai chiều thì diện tích cũng chỉ gấp đôi. | Thử với hình 1 × 1 và 2 × 2 để thấy diện tích gấp 4 lần. |
 | V.4 | Đem so hai tam giác không chung đỉnh, hoặc hai đáy không cùng nằm trên một đường thẳng. | Chỉ vào đỉnh chung và vào đường thẳng chứa hai đáy trước khi lập tỉ số. |
-| V.5 | Cộng chu vi hai hình nhỏ lại thành chu vi hình ghép. | Tô đậm đường bao của hình mới rồi mới tính chu vi. |
+| V.5 | Cộng chu vi các hình nhỏ lại rồi coi đó là chu vi hình ghép. | Tô đậm đường bao của hình mới rồi mới tính. |
 
 ---
 
@@ -723,16 +717,16 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 **Bài III.3** — (1) Vẽ ba đoạn thẳng theo đúng số phần. — (2) Tổng cộng có bao nhiêu phần bằng nhau? — (3) Một phần bằng bao nhiêu?
 **Bài III.4** — (1) Chu vi đáy bằng bao nhiêu? — (2) Diện tích xung quanh = chu vi đáy × chiều cao. — (3) Toàn phần thì cộng thêm hai mặt đáy.
 **Bài III.5** — (1) Chữ số tận cùng của mỗi số là chữ số nào? — (2) Thực hiện phép tính với riêng hai chữ số tận cùng đó. — (3) Lấy chữ số tận cùng của kết quả vừa tính.
-**Bài IV.1** — (1) Hai tam giác có chung đỉnh nào? — (2) Chiều cao hạ từ đỉnh đó xuống BC có chung không? — (3) Diện tích tỉ lệ thuận với đáy.
-**Bài IV.2** — (1) Vẽ hình cũ và hình mới chồng lên nhau. — (2) Phần dôi ra gồm mấy mảnh? — (3) Tính diện tích từng mảnh rồi cộng.
-**Bài IV.3** — (1) Một cái loại đắt bằng mấy cái loại rẻ? — (2) Nếu đổi hết về loại rẻ thì tất cả là bao nhiêu cái? — (3) Chia tổng tiền cho số ấy, rồi nhân ngược lên cho loại đắt.
-**Bài IV.4** — (1) Đi một vòng là đi hết đại lượng nào? — (2) Phần diện tích dôi ra có hình dạng gì? — (3) Tăng cả hai chiều thì phần dôi gồm mấy mảnh?
-**Bài IV.5** — (1) Khối ở đỉnh có mấy mặt lộ ra ngoài? — (2) Mỗi cạnh có bao nhiêu khối không nằm ở đỉnh? — (3) Cộng bốn loại lại xem có bằng tổng số khối không.
+**Bài IV.1** — (1) Khối ở đỉnh có mấy mặt lộ ra ngoài? — (2) Mỗi cạnh có bao nhiêu khối không nằm ở đỉnh? — (3) Cộng bốn loại lại xem có bằng tổng số khối không.
+**Bài IV.2** — (1) Sau lần giảm thứ nhất còn bao nhiêu phần trăm giá niêm yết? — (2) Lần giảm thứ hai tính trên giá nào? — (3) Làm hai bước, đừng cộng gộp hai phần trăm.
+**Bài IV.3** — (1) Đi một vòng là đi hết đại lượng nào? — (2) Phần diện tích dôi ra có hình dạng gì? — (3) Tăng cả hai chiều thì phần dôi gồm mấy mảnh?
+**Bài IV.4** — (1) Vẽ hình cũ và hình mới chồng lên nhau. — (2) Phần dôi ra gồm mấy mảnh? — (3) Tính diện tích từng mảnh rồi cộng.
+**Bài IV.5** — (1) Hai tam giác có chung đỉnh nào? — (2) Chiều cao hạ từ đỉnh đó xuống BC có chung không? — (3) Diện tích tỉ lệ thuận với đáy.
 **Bài V.1** — (1) Từ số hạng đầu tới số hạng thứ n phải cộng bao nhiêu hiệu? — (2) Các hiệu đó lập thành dãy gì? — (3) Tính tổng các hiệu bằng công thức tổng dãy cách đều.
-**Bài V.2** — (1) Vẽ hình sau khi ghép hoặc cắt. — (2) Đường bao của hình mới gồm những cạnh nào? — (3) Cạnh nào bị dán vào trong thì không tính.
+**Bài V.2** — (1) Phần tô màu là hiệu của những hình nào? — (2) Kích thước của hình lớn suy từ đâu? — (3) Tính từng diện tích rồi trừ.
 **Bài V.3** — (1) Diện tích là tích hay tổng hai chiều? — (2) Gấp mỗi chiều lên k lần thì tích gấp mấy lần? — (3) Chu vi là tổng nên gấp bao nhiêu lần?
 **Bài V.4** — (1) Hai tam giác ấy có chung đỉnh nào không? — (2) Hai đáy của chúng có cùng nằm trên một đường thẳng không? — (3) Nếu có thì tỉ số diện tích bằng đúng tỉ số hai đáy.
-**Bài V.5** — (1) Tam giác ấy có đáy và chiều cao bằng bao nhiêu? — (2) Diện tích tam giác bằng đáy nhân chiều cao chia 2. — (3) So với diện tích hình chữ nhật thì bằng mấy phần?
+**Bài V.5** — (1) Vẽ hình sau khi ghép hoặc cắt. — (2) Đường bao của hình mới gồm những cạnh nào? — (3) Cạnh nào bị dán vào trong thì không tính.
 
 ---
 
@@ -757,16 +751,16 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | III.3 | Chia 120 cây theo tỉ lệ 1 : 2 : 3. Mỗi phần bao nhiêu cây? | 20, 40, 60 |
 | III.4 | Hình lập phương cạnh 4 cm. Thể tích bằng bao nhiêu? | 64 cm³ |
 | III.5 | Tích 137 × 46 có chữ số tận cùng là chữ số nào? | 2 |
-| IV.1 | Tam giác ABC diện tích 30 cm², M trên BC với BM = MC. Diện tích ABM bằng bao nhiêu? | 15 cm² |
-| IV.2 | Hình chữ nhật 10 cm × 5 cm, tăng chiều dài thêm 3 cm. Diện tích tăng bao nhiêu? | 15 cm² |
-| IV.3 | Mua 4 quyển sách và 6 quyển vở hết 216 000 đồng. Một quyển sách bằng giá 3 quyển vở. Tính giá một quyển vở. | 12 000 đồng |
-| IV.4 | Hình chữ nhật 10 m × 5 m, tăng chiều dài 3 m. Diện tích tăng bao nhiêu? | 15 m² |
-| IV.5 | Khối 3 × 3 × 3 sơn ngoài, có mấy khối không được sơn? | 1 khối |
+| IV.1 | Khối 3 × 3 × 3 sơn ngoài, có mấy khối không được sơn? | 1 khối |
+| IV.2 | Áo giá 300 000 đồng, giảm 20% rồi giảm tiếp 10%. Giá cuối là bao nhiêu? | 216 000 đồng |
+| IV.3 | Hình chữ nhật 10 m × 5 m, tăng chiều dài 3 m. Diện tích tăng bao nhiêu? | 15 m² |
+| IV.4 | Hình chữ nhật 10 cm × 5 cm, tăng chiều dài thêm 3 cm. Diện tích tăng bao nhiêu? | 15 cm² |
+| IV.5 | Tam giác ABC diện tích 30 cm², M trên BC với BM = MC. Diện tích ABM bằng bao nhiêu? | 15 cm² |
 | V.1 | Dãy 1, 2, 4, 7, 11, … số hạng thứ 8 là số nào? | 29 |
-| V.2 | Ghép 3 hình vuông cạnh 4 cm thành hàng. Chu vi hình chữ nhật là bao nhiêu? | 32 cm |
+| V.2 | Hình tròn bán kính 5 cm nội tiếp hình vuông. Diện tích phần ngoài hình tròn bằng bao nhiêu? | 21,5 cm² |
 | V.3 | Gấp đôi cả hai chiều thì diện tích gấp mấy lần? | 4 lần |
 | V.4 | Tam giác ABC có M trên BC với BM = 1/2 MC. Diện tích ABM là 12 cm². Tính diện tích ABC. | 36 cm² |
-| V.5 | Hình chữ nhật 8 cm × 6 cm, nối một đỉnh với trung điểm cạnh đối diện. Diện tích tam giác bằng bao nhiêu? | 12 cm² |
+| V.5 | Ghép 3 hình vuông cạnh 4 cm thành hàng. Chu vi hình chữ nhật là bao nhiêu? | 32 cm |
 
 ---
 

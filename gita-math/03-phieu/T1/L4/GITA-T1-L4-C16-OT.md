@@ -225,49 +225,51 @@ e) Trang trại chứa nhiều hơn xưởng 138 kg thóc. Số thóc ở xưở
 
 Tính giá trị biểu thức, rút gọn kết quả.
 
-a) 2 phần 3 × 1 + 2 phần 3 × 5 phần 9
-b) 9 phần 11 : 5 phần 6 + 1 phần 4
+a) 7 phần 4 : 8 phần 9 + 7 phần 6
+b) 1 phần 2 : 1 phần 2 + 1 phần 13
 c) (5 phần 7 + 5 phần 3) × 1
 d) 3 phần 5 × 11 phần 9 + 3 phần 5 × 4 phần 5
 
-### Bài 2. (5 điểm) Tính nhanh tổng nhiều tích có thừa số chung
+### Bài 2. (5 điểm) Nhận ra thừa số 0 để tính tức thì
 
-Tính tổng mỗi biểu thức.
+Tính bằng cách nhanh nhất.
 
-a) 5 × 1 + 5 × 2 + 5 × 3 + … + 5 × 25
-b) 2 × 1 + 2 × 2 + 2 × 3 + … + 2 × 20
-c) 2 × 1 + 2 × 2 + 2 × 3 + … + 2 × 50
-d) 9 × 1 + 9 × 2 + 9 × 3 + … + 9 × 10
+a) 87 × 77 + 87 × 51 − 87 × (77 + 51)
+b) 41 × 83 + 41 × 28 − 41 × (83 + 28)
+c) 16 × 94 × (67 − 67)
+d) 82 × 25 + 82 × 90 − 82 × (25 + 90)
 
 ### Bài 3. (5 điểm) Bài toán đại lượng nhiều bước
 
 Trình bày lời giải có câu trả lời.
 
-a) Một cửa hàng có 10 thùng sữa, mỗi thùng 20 lít. Cửa hàng đã bán 8 thùng. Hỏi cửa hàng còn lại bao nhiêu lít sữa?
-b) Một cửa hàng có 10 thùng sữa, mỗi thùng 12 lít. Cửa hàng đã bán 9 thùng. Hỏi cửa hàng còn lại bao nhiêu lít sữa?
-c) Một cửa hàng có 6 thùng sữa, mỗi thùng 15 lít. Cửa hàng đã bán 2 thùng. Hỏi cửa hàng còn lại bao nhiêu lít sữa?
-d) Một cửa hàng có 14 thùng nước, mỗi thùng 24 lít. Cửa hàng đã bán 6 thùng. Hỏi cửa hàng còn lại bao nhiêu lít nước?
+a) Một cửa hàng có 13 thùng sữa, mỗi thùng 15 lít. Cửa hàng đã bán 8 thùng. Hỏi cửa hàng còn lại bao nhiêu lít sữa?
+b) Một cửa hàng có 19 thùng sữa, mỗi thùng 15 lít. Cửa hàng đã bán 2 thùng. Hỏi cửa hàng còn lại bao nhiêu lít sữa?
+c) Một cửa hàng có 16 thùng dầu, mỗi thùng 12 lít. Cửa hàng đã bán 4 thùng. Hỏi cửa hàng còn lại bao nhiêu lít dầu?
+d) Một cửa hàng có 19 thùng nước, mỗi thùng 18 lít. Cửa hàng đã bán 11 thùng. Hỏi cửa hàng còn lại bao nhiêu lít nước?
 e) Một cửa hàng có 12 thùng nước mắm, mỗi thùng 25 lít. Cửa hàng đã bán 10 thùng. Hỏi cửa hàng còn lại bao nhiêu lít nước mắm?
 
-### Bài 4. (5 điểm) Tìm x khi x xuất hiện ở cả hai vế
+### Bài 4. (5 điểm) Tính nhanh tổng nhiều tích có thừa số chung
+
+Tính tổng mỗi biểu thức.
+
+a) 9 × 1 + 9 × 2 + 9 × 3 + … + 9 × 25
+b) 3 × 1 + 3 × 2 + 3 × 3 + … + 3 × 50
+c) 4 × 1 + 4 × 2 + 4 × 3 + … + 4 × 25
+d) 8 × 1 + 8 × 2 + 8 × 3 + … + 8 × 25
+e) 4 × 1 + 4 × 2 + 4 × 3 + … + 4 × 10
+f) 8 × 1 + 8 × 2 + 8 × 3 + … + 8 × 25
+
+### Bài 5. (5 điểm) Tìm x khi x xuất hiện ở cả hai vế
 
 Tìm x. Gợi ý: so sánh số lần x ở hai vế.
 
-a) x × 8 + 46 = x × 9
-b) x × 4 + 26 = x × 6
-c) x × 3 + 220 = x × 8
-d) x × 7 + 24 = x × 8
-e) x × 4 + 415 = x × 9
-f) x × 2 + 236 = x × 6
-
-### Bài 5. (5 điểm) Nhận ra thừa số 0 để tính tức thì
-
-Tính bằng cách nhanh nhất.
-
-a) (78 × 55 − 55 × 78) × 48
-b) (23 × 96 − 96 × 23) × 37
-c) (18 × 31 − 31 × 18) × 95
-d) (82 × 17 − 17 × 82) × 79
+a) x × 4 + 425 = x × 9
+b) x × 2 + 236 = x × 6
+c) x × 6 + 6 = x × 7
+d) x × 3 + 82 = x × 5
+e) x × 2 + 102 = x × 4
+f) x × 2 + 534 = x × 8
 
 ---
 
@@ -435,39 +437,39 @@ f) Cột 6 — Kết quả?
 **Lỗi thường gặp:** Dùng nhầm công thức của tổng – tỉ cho bài hiệu – tỉ. Phòng: Đọc kĩ: đề cho “tổng” hay cho “nhiều hơn”? Ghi rõ ra trước khi vẽ.
 
 ### Bài IV.1
-**Đáp số:** a) 28 phần 27 · b) 271 phần 220 · c) 50 phần 21 · d) 91 phần 75
+**Đáp số:** a) 301 phần 96 · b) 14 phần 13 · c) 50 phần 21 · d) 91 phần 75
 **Hướng giải:** Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều.
 **Lỗi thường gặp:** Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. Phòng: Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Biểu thức có dấu ngoặc không? — (2) Có thừa số chung ở hai tích không? — (3) Làm nhân chia trước, cộng trừ sau.
 
 ### Bài IV.2
-**Đáp số:** a) 1 625 · b) 420 · c) 2 550 · d) 495
-**Hướng giải:** Tất cả các tích đều có chung một thừa số. Đặt thừa số chung ra ngoài, trong ngoặc còn tổng của dãy số tự nhiên liên tiếp — dùng công thức tổng dãy cách đều để tính.
-**Nhãn tư duy:** TD3, TD4. Điểm chốt: Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
-**Lỗi thường gặp:** Nhân từng tích rồi cộng dồn, rất dài và dễ sai. Phòng: Viết lại biểu thức dưới dạng a × (1 + 2 + … + n) trước khi tính.
-**Gợi ý 3 tầng:** (1) Các tích có thừa số nào giống nhau? — (2) Đặt thừa số đó ra ngoài dấu ngoặc. — (3) Tổng trong ngoặc là dãy số cách đều — tính bằng công thức.
+**Đáp số:** a) 0 · b) 0 · c) 0 · d) 0
+**Hướng giải:** BẪY — Biểu thức lớn nhưng kết quả bằng 0. Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu. Vì vậy phải quan sát toàn bộ biểu thức trước khi tính, tìm cụm nào có giá trị bằng 0.
+**Nhãn tư duy:** TD5, TD6. Điểm chốt: Quét tìm **cụm bằng 0** trước; thấy rồi thì viết đáp số ngay.
+**Lỗi thường gặp:** Lao vào nhân từng cặp số lớn rồi mới phát hiện kết quả bằng 0. Phòng: Đọc hết biểu thức một lượt, khoanh các cụm giống nhau bị trừ cho nhau.
+**Gợi ý 3 tầng:** (1) Có cụm nào trong ngoặc bằng 0 không? — (2) Có hai cụm giống hệt nhau bị trừ cho nhau không? — (3) Tích có một thừa số bằng 0 thì bằng bao nhiêu?
 
 ### Bài IV.3
-**Đáp số:** a) 40 lít · b) 12 lít · c) 60 lít · d) 192 lít · e) 50 lít
+**Đáp số:** a) 75 lít · b) 255 lít · c) 144 lít · d) 144 lít · e) 50 lít
 **Hướng giải:** Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
 **Lỗi thường gặp:** Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. Phòng: Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng.
 **Gợi ý 3 tầng:** (1) Còn lại bao nhiêu thùng? — (2) Mỗi thùng bao nhiêu lít? — (3) Nhân hai kết quả đó.
 
 ### Bài IV.4
-**Đáp số:** a) x = 46 · b) x = 13 · c) x = 44 · d) x = 24 · e) x = 83 · f) x = 59
+**Đáp số:** a) 2 925 · b) 3 825 · c) 1 300 · d) 2 600 · e) 220 · f) 2 600
+**Hướng giải:** Tất cả các tích đều có chung một thừa số. Đặt thừa số chung ra ngoài, trong ngoặc còn tổng của dãy số tự nhiên liên tiếp — dùng công thức tổng dãy cách đều để tính.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
+**Lỗi thường gặp:** Nhân từng tích rồi cộng dồn, rất dài và dễ sai. Phòng: Viết lại biểu thức dưới dạng a × (1 + 2 + … + n) trước khi tính.
+**Gợi ý 3 tầng:** (1) Các tích có thừa số nào giống nhau? — (2) Đặt thừa số đó ra ngoài dấu ngoặc. — (3) Tổng trong ngoặc là dãy số cách đều — tính bằng công thức.
+
+### Bài IV.5
+**Đáp số:** a) x = 85 · b) x = 59 · c) x = 6 · d) x = 41 · e) x = 51 · f) x = 89
 **Hướng giải:** Vế phải có nhiều x hơn vế trái. Bớt đi ở cả hai vế số lần x của vế ít hơn, phần chênh lệch số lần x ở vế phải chính bằng số hạng còn lại ở vế trái. Từ đó tìm x bằng một phép chia.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Lấy **hiệu số lần x** giữa hai vế, rồi chia số đã biết cho hiệu đó.
 **Lỗi thường gặp:** Chuyển vế nhưng quên đổi dấu, hoặc trừ nhầm số lần x. Phòng: Vẽ sơ đồ đoạn thẳng: vế trái mấy đoạn x, vế phải mấy đoạn x.
 **Gợi ý 3 tầng:** (1) Vế trái có mấy lần x? Vế phải có mấy lần x? — (2) Vế phải hơn vế trái mấy lần x? — (3) Phần hơn đó ứng với số nào đã biết?
-
-### Bài IV.5
-**Đáp số:** a) 0 · b) 0 · c) 0 · d) 0
-**Hướng giải:** BẪY — Biểu thức lớn nhưng kết quả bằng 0. Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu. Vì vậy phải quan sát toàn bộ biểu thức trước khi tính, tìm cụm nào có giá trị bằng 0.
-**Nhãn tư duy:** TD5, TD6. Điểm chốt: Quét tìm **cụm bằng 0** trước; thấy rồi thì viết đáp số ngay.
-**Lỗi thường gặp:** Lao vào nhân từng cặp số lớn rồi mới phát hiện kết quả bằng 0. Phòng: Đọc hết biểu thức một lượt, khoanh các cụm giống nhau bị trừ cho nhau.
-**Gợi ý 3 tầng:** (1) Có cụm nào trong ngoặc bằng 0 không? — (2) Có hai cụm giống hệt nhau bị trừ cho nhau không? — (3) Tích có một thừa số bằng 0 thì bằng bao nhiêu?
 
 ### Bài V.1
 **Đáp số:** a) Tổng dãy số cách đều · b) Công thức tổng dãy cách đều · c) Dãy cộng có dấu … và các số cách đều nhau · d) Đếm số số hạng rồi áp công thức tổng · e) Ghép cặp đầu – cuối: mọi cặp đều có cùng tổng, chỉ cần nhân với số cặp. · f) 420 · 14 950 · 6 375 · 325…

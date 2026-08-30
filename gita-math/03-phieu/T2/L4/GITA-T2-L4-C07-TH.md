@@ -257,83 +257,78 @@ d) Một số có ba chữ số, nếu xoá chữ số hàng trăm thì được
 e) Đổi chỗ chữ số hàng trăm và chữ số hàng đơn vị của số 401 ta được số mới. Hiệu hai số bằng bao nhiêu?
 f) Đổi chỗ chữ số hàng trăm và chữ số hàng đơn vị của số 746 ta được số mới. Hiệu hai số bằng bao nhiêu?
 
-### Bài 4. (5 điểm) Ghép người với môn bằng bảng đúng – sai
+### Bài 4. (5 điểm) Tính tiền vé cho cả gia đình
 
-Bắt buộc kẻ bảng ra giấy. Không được suy luận nhẩm ở bài này.
+Trước khi tính, gạch chân câu hỏi và khoanh tròn dữ kiện **không** dùng tới.
 
-a) Ba bạn Vy, Ngọc và Quân mỗi bạn học một môn năng khiếu khác nhau trong ba môn: tiếng Anh, tin học và mĩ thuật. Biết rằng: Vy không học tin học và cũng không học mĩ thuật; Ngọc không học mĩ thuật. Hỏi mỗi bạn học môn nào?
-b) Ba bạn Thảo, Vy và Sơn mỗi bạn học một môn năng khiếu khác nhau trong ba môn: hát, múa và đàn. Biết rằng: Thảo không học múa và cũng không học đàn; Vy không học đàn. Hỏi mỗi bạn học môn nào?
-c) Ba bạn Dũng, Hà và Sơn mỗi bạn học một môn năng khiếu khác nhau trong ba môn: bóng đá, cầu lông và bóng rổ. Biết rằng: Dũng không học bóng đá và cũng không học bóng rổ; Hà không học bóng rổ. Hỏi mỗi bạn học môn nào?
-d) Ba bạn Minh, Quân và Thảo mỗi bạn học một môn năng khiếu khác nhau trong ba môn: bóng đá, cầu lông và bóng rổ. Biết rằng: Minh không học cầu lông và cũng không học bóng rổ; Quân không học bóng rổ. Hỏi mỗi bạn học môn nào?
-e) Ba bạn Minh, Quân và Chi mỗi bạn học một môn năng khiếu khác nhau trong ba môn: bơi, cờ vua và vẽ. Biết rằng: Minh không học cờ vua và cũng không học bơi; Quân không học bơi. Hỏi mỗi bạn học môn nào?
+a) Một gia đình gồm 4 người lớn và 4 trẻ em đi tham quan cách nhà 37 km. Vé người lớn 120 000 đồng, vé trẻ em bằng nửa vé người lớn. Hỏi cả gia đình mua vé hết bao nhiêu tiền?
+b) Một gia đình gồm 4 người lớn và 4 trẻ em đi tham quan cách nhà 153 km. Vé người lớn 120 000 đồng, vé trẻ em bằng nửa vé người lớn. Hỏi cả gia đình mua vé hết bao nhiêu tiền?
+c) Một gia đình gồm 5 người lớn và 3 trẻ em đi tham quan cách nhà 149 km. Vé người lớn 90 000 đồng, vé trẻ em bằng nửa vé người lớn. Hỏi cả gia đình mua vé hết bao nhiêu tiền?
+d) Một gia đình gồm 4 người lớn và 3 trẻ em đi tham quan cách nhà 176 km. Vé người lớn 70 000 đồng, vé trẻ em bằng nửa vé người lớn. Hỏi cả gia đình mua vé hết bao nhiêu tiền?
+e) Một gia đình gồm 3 người lớn và 5 trẻ em đi tham quan cách nhà 87 km. Vé người lớn 100 000 đồng, vé trẻ em bằng nửa vé người lớn. Hỏi cả gia đình mua vé hết bao nhiêu tiền?
 
 ### Bài 5. (5 điểm) Tìm số theo hai điều kiện chia có dư
 
 Tìm số bé nhất thoả mãn.
 
-a) Tìm số bé nhất không quá 300 chia cho 6 dư 5 và chia cho 9 dư 3.
-b) Tìm số bé nhất không quá 200 chia cho 5 dư 1 và chia cho 4 dư 1.
-c) Tìm số bé nhất không quá 300 chia cho 9 dư 5 và chia cho 5 dư 3.
-d) Tìm số bé nhất không quá 500 chia cho 7 dư 3 và chia cho 5 dư 1.
-e) Tìm số bé nhất không quá 200 chia cho 5 dư 2 và chia cho 9 dư 3.
-f) Tìm số bé nhất không quá 300 chia cho 9 dư 8 và chia cho 3 dư 1.
+a) Tìm số bé nhất không quá 500 chia cho 7 dư 2 và chia cho 8 dư 7.
+b) Tìm số bé nhất không quá 200 chia cho 4 dư 2 và chia cho 5 dư 3.
+c) Tìm số bé nhất không quá 200 chia cho 6 dư 2 và chia cho 5 dư 3.
+d) Tìm số bé nhất không quá 500 chia cho 3 dư 2 và chia cho 7 dư 4.
 
 ---
 
 ## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
 
-### Bài 1. (3 điểm) Số dư của tổng — lập luận không cần tính hết
+### Bài 1. (3 điểm) Chữ số tận cùng của tổng và tích
+
+Không tính hết phép tính, chỉ tìm chữ số tận cùng.
+
+a) Tích 46 × 209 có chữ số tận cùng là chữ số nào?
+b) Tổng 973 + 929 có chữ số tận cùng là chữ số nào?
+c) Tích 417 × 879 × 6 có chữ số tận cùng là chữ số nào?
+d) Tích 131 × 691 × 5 có chữ số tận cùng là chữ số nào?
+e) Tích 496 × 914 có chữ số tận cùng là chữ số nào?
+
+### Bài 2. (3 điểm) Kĩ thuật tách – bù để tính và so sánh
+
+Tính hoặc so sánh bằng cách khéo nhất, không tính hết.
+
+a) 774 × 9 − 773 × 9
+b) 594 × 12 − 593 × 12
+c) 522 × 524 … 523 × 523
+d) 182 × 34 − 181 × 34
+
+### Bài 3. (3 điểm) Quan hệ giữa một số và tổng các chữ số của nó
+
+Trình bày lập luận đầy đủ.
+
+a) Số có hai chữ số 68 gấp tổng hai chữ số của nó bao nhiêu lần? (viết dưới dạng thương và số dư)
+b) Số có hai chữ số 68 gấp tổng hai chữ số của nó bao nhiêu lần? (viết dưới dạng thương và số dư)
+c) Tìm số có hai chữ số biết số đó bằng 7 lần tổng hai chữ số của nó và chữ số hàng chục là 2.
+d) Số có hai chữ số 77 gấp tổng hai chữ số của nó bao nhiêu lần? (viết dưới dạng thương và số dư)
+
+### Bài 4. (3 điểm) Số chính phương — làm quen theo hướng đề thi
+
+Số chính phương là số bằng tích của một số tự nhiên với chính nó.
+
+a) Viết 11 số chính phương đầu tiên.
+b) Số chính phương thứ 11 là số nào?
+c) Tổng của n số lẻ đầu tiên là một số chính phương — kiểm chứng với n = 11.
+d) Một số chính phương có thể tận cùng bằng 2, 3, 7 hoặc 8 không?
+e) Số 9 có phải số chính phương không? Nếu có, nó là bình phương của số nào?
+f) Trong các số từ 1 đến 121 có bao nhiêu số chính phương?
+
+### Bài 5. (3 điểm) Số dư của tổng — lập luận không cần tính hết
 
 Dùng tính chất số dư, hạn chế tính toán.
 
-a) Dãy số: 197, 495, 875. Có bao nhiêu số trong dãy chia hết cho 5?
+a) Dãy số: 596, 753, 795, 906, 991. Có bao nhiêu số trong dãy chia hết cho 5?
 b) Tổng của dãy bằng bao nhiêu?
 c) Tổng đó có chia hết cho 5 không?
 d) Số dư khi chia tổng cho 5 bằng tổng các số dư của từng số hạng chia cho 5 rồi lại chia cho 5 — hãy kiểm chứng bằng số cụ thể.
 e) Cần bớt ở tổng ít nhất bao nhiêu đơn vị để tổng chia hết cho 5?
 f) Cần thêm vào tổng ít nhất bao nhiêu đơn vị để tổng chia hết cho 5?
-
-### Bài 2. (3 điểm) Quan hệ giữa một số và tổng các chữ số của nó
-
-Trình bày lập luận đầy đủ.
-
-a) Tìm số có hai chữ số biết số đó bằng 9 lần tổng hai chữ số của nó và chữ số hàng chục là 8.
-b) Số có hai chữ số 64 gấp tổng hai chữ số của nó bao nhiêu lần? (viết dưới dạng thương và số dư)
-c) Số có hai chữ số 87 gấp tổng hai chữ số của nó bao nhiêu lần? (viết dưới dạng thương và số dư)
-d) Số có hai chữ số 71 gấp tổng hai chữ số của nó bao nhiêu lần? (viết dưới dạng thương và số dư)
-e) Số có hai chữ số 83 gấp tổng hai chữ số của nó bao nhiêu lần? (viết dưới dạng thương và số dư)
-
-### Bài 3. (3 điểm) Số chính phương — làm quen theo hướng đề thi
-
-Số chính phương là số bằng tích của một số tự nhiên với chính nó.
-
-a) Viết 6 số chính phương đầu tiên.
-b) Số chính phương thứ 6 là số nào?
-c) Tổng của n số lẻ đầu tiên là một số chính phương — kiểm chứng với n = 6.
-d) Một số chính phương có thể tận cùng bằng 2, 3, 7 hoặc 8 không?
-e) Số 25 có phải số chính phương không? Nếu có, nó là bình phương của số nào?
-f) Trong các số từ 1 đến 36 có bao nhiêu số chính phương?
-
-### Bài 4. (3 điểm) Dãy số lặp lại theo chu kì
-
-Cho dãy lặp lại vô hạn theo nhóm: 7, 5, 4, 9, 3, 2, 6, 7, 5, 4, 9, 3, 2, 6, 7, …
-
-a) Số hạng thứ 216 của dãy là số nào?
-b) Số hạng thứ 309 của dãy là số nào?
-c) Số hạng thứ 354 của dãy là số nào?
-d) Số hạng thứ 457 của dãy là số nào?
-e) Tổng 200 số hạng đầu tiên bằng bao nhiêu?
-
-### Bài 5. (3 điểm) Chữ số tận cùng của tổng và tích
-
-Không tính hết phép tính, chỉ tìm chữ số tận cùng.
-
-a) Tích 476 × 455 × 5 có chữ số tận cùng là chữ số nào?
-b) Tổng 478 + 563 có chữ số tận cùng là chữ số nào?
-c) Tích 330 × 220 có chữ số tận cùng là chữ số nào?
-d) Tích 344 × 24 × 2 có chữ số tận cùng là chữ số nào?
-e) Tích 217 × 50 có chữ số tận cùng là chữ số nào?
-f) Tổng 349 + 681 có chữ số tận cùng là chữ số nào?
 
 ---
 
@@ -453,53 +448,53 @@ f) Tổng 349 + 681 có chữ số tận cùng là chữ số nào?
 **Gợi ý 3 tầng:** (1) Viết số theo cấu tạo a × 100 + b × 10 + c. — (2) Viết số mới cũng theo cấu tạo như vậy. — (3) Trừ hai biểu thức, các phần giống nhau triệt tiêu.
 
 ### Bài IV.4
-**Đáp số:** a) Vy học tiếng Anh; Ngọc học tin học; Quân học mĩ thuật · b) Thảo học hát; Vy học múa; Sơn học đàn · c) Dũng học cầu lông; Hà học bóng đá; Sơn học bóng rổ · d) Minh học bóng đá; Quân học cầu lông; Thảo học bóng rổ · e) Minh học vẽ; Quân học cờ vua; Chi học bơi
-**Hướng giải:** BẪY — Đánh dấu đúng mà quên gạch phần còn lại. Mỗi dòng một người, mỗi cột một khả năng. Đánh × cho điều chắc chắn sai. Dòng nào chỉ còn một ô trống thì ô ấy là ✓ — và ngay sau đó phải gạch × cho cả cột chứa ô ấy.
-**Nhãn tư duy:** TD3, TD4. Điểm chốt: Đặt được một ✓ thì **cả dòng và cả cột** còn lại đều thành ×. Bỏ bước gạch cột là chỗ bài bị tắc giữa chừng.
-**Lỗi thường gặp:** Đánh ✓ rồi đi tiếp luôn, không gạch × cho phần còn lại của cột. Phòng: Sau mỗi lần đặt ✓, dừng lại gạch đủ dòng và cột rồi mới đọc manh mối kế.
-**Gợi ý 3 tầng:** (1) Kẻ bảng ba dòng ba cột trước đã. — (2) Manh mối nào cho biết chắc chắn một ô là sai? — (3) Dòng nào chỉ còn một ô trống thì ô ấy chính là đáp án của dòng ấy.
+**Đáp số:** a) 720 000 đồng · b) 720 000 đồng · c) 585 000 đồng · d) 385 000 đồng · e) 550 000 đồng
+**Hướng giải:** BẪY — Dùng cả dữ kiện thừa. Tìm giá vé trẻ em trước, rồi tính riêng từng loại vé, cuối cùng mới cộng. Mỗi câu đều có một dữ kiện không dùng tới — nhận ra nó là một phần của bài.
+**Nhãn tư duy:** TD2, TD3. Điểm chốt: Đề thật luôn có dữ kiện thừa. Dùng nhầm nó là mất trọn bài.
+**Lỗi thường gặp:** Đem quãng đường vào phép tính tiền vé. Phòng: Gạch chân câu hỏi cuối trước khi nhìn các con số.
+**Gợi ý 3 tầng:** (1) Đề hỏi cái gì? Gạch chân câu hỏi. — (2) Trong các con số đề cho, con số nào không liên quan tới câu hỏi? — (3) Tính giá vé trẻ em trước rồi mới cộng hai loại vé.
 
 ### Bài IV.5
-**Đáp số:** a) không có số nào · b) 1 · c) 23 · d) 31 · e) 12 · f) không có số nào
+**Đáp số:** a) 23 · b) 18 · c) 8 · d) 11
 **Hướng giải:** Liệt kê các số thoả điều kiện thứ nhất — chúng lập thành dãy cách đều khoảng cách bằng số chia thứ nhất. Đi dọc dãy đó, thử điều kiện thứ hai, gặp số đầu tiên thoả mãn thì dừng.
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Chỉ **đi dọc một dãy** rồi thử điều kiện còn lại, không thử tất cả số.
 **Lỗi thường gặp:** Thử từng số từ 1 trở đi nên quá lâu và dễ bỏ sót. Phòng: Viết dãy số thoả điều kiện thứ nhất trước, rồi mới lọc.
 **Gợi ý 3 tầng:** (1) Viết vài số chia cho số thứ nhất dư đúng như đề. — (2) Chúng cách đều nhau bao nhiêu đơn vị? — (3) Đi dọc dãy đó và kiểm tra điều kiện thứ hai.
 
 ### Bài V.1
-**Đáp số:** a) 2 · b) 1 567 · c) không, dư 2 · d) tổng các số dư là 2, chia 5 dư 2 · e) 2 · f) 3
-**Hướng giải:** Số dư của một tổng khi chia cho d bằng số dư của tổng các số dư. Nhờ đó, muốn biết tổng có chia hết cho d không thì chỉ cần cộng các số dư, không cần cộng các số.
-**Nhãn tư duy:** TD2, TD6. Điểm chốt: Làm việc với **số dư** thay vì với số — đây là kỹ thuật rút gọn mạnh nhất.
-**Lỗi thường gặp:** Cộng hết cả dãy rồi mới chia, mất thời gian và dễ sai. Phòng: Ghi số dư của từng số ngay dưới số đó rồi cộng dòng số dư.
-**Gợi ý 3 tầng:** (1) Tính số dư của từng số khi chia cho d. — (2) Cộng các số dư lại. — (3) Lấy tổng các số dư chia tiếp cho d.
+**Đáp số:** a) 4 · b) 2 · c) 8 · d) 5 · e) 4
+**Hướng giải:** Chữ số tận cùng của tổng và của tích chỉ phụ thuộc chữ số tận cùng của các số tham gia. Che phần đầu, chỉ tính với chữ số cuối.
+**Nhãn tư duy:** TD5, TD2. Điểm chốt: Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu.
+**Lỗi thường gặp:** Tính trọn cả phép tính, vừa lâu vừa dễ sai. Phòng: Lấy tay che phần đầu của hai số, chỉ để lộ chữ số cuối.
+**Gợi ý 3 tầng:** (1) Chữ số tận cùng của mỗi số là gì? — (2) Tính riêng với hai chữ số ấy. — (3) Lấy chữ số tận cùng của kết quả vừa tính.
 
 ### Bài V.2
-**Đáp số:** a) 81 · b) 6 dư 4 · c) 5 dư 12 · d) 8 dư 7 · e) 7 dư 6
+**Đáp số:** a) 9 · b) 12 · c) < · d) 34
+**Hướng giải:** Khi hai tích có các thừa số gần nhau, viết chúng theo cùng một số gốc rồi so phần chênh lệch. Khi hai tích cùng một thừa số, hiệu của chúng bằng thừa số chung nhân với hiệu hai thừa số kia.
+**Nhãn tư duy:** TD5, TD6. Điểm chốt: Đưa mọi số về **cùng một số gốc** rồi mới so hoặc trừ.
+**Lỗi thường gặp:** Nhân hết ra rồi mới so sánh — số lớn, dễ sai và mất thời gian. Phòng: Viết mỗi thừa số dưới dạng “số gốc cộng hoặc trừ mấy đơn vị”.
+**Gợi ý 3 tầng:** (1) Hai tích có thừa số nào giống nhau không? — (2) Viết các thừa số theo cùng một số gốc. — (3) Hiệu hai tích cùng thừa số chung bằng thừa số chung nhân hiệu hai thừa số kia.
+
+### Bài V.3
+**Đáp số:** a) 4 dư 12 · b) 4 dư 12 · c) 21 · d) 5 dư 7
 **Hướng giải:** Viết số có hai chữ số là a × 10 + b, tổng hai chữ số là a + b. So sánh hai biểu thức để tìm quan hệ; chú ý a chạy từ 1 đến 9 và b chạy từ 0 đến 9 nên số trường hợp là hữu hạn, có thể lập bảng.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Khi ẩn chỉ nhận hữu hạn giá trị, **lập bảng** là phương pháp chắc chắn nhất.
 **Lỗi thường gặp:** Chia bừa mà không kiểm tra điều kiện chia hết nên nhận đáp số không nguyên. Phòng: Kiểm tra lại đáp số bằng cách thay ngược vào đề.
 **Gợi ý 3 tầng:** (1) Đặt số đó là a × 10 + b. — (2) Tổng hai chữ số là a + b — viết cả hai biểu thức ra cạnh nhau. — (3) Lập bảng a từ 1 đến 9 rồi thử.
 
-### Bài V.3
-**Đáp số:** a) 1 · 4 · 9 · 16 · 25 · 36 · b) 36 · c) 1 + 3 + … + 11 = 36 · d) không bao giờ · e) có, là 5 nhân 5 · f) 6
+### Bài V.4
+**Đáp số:** a) 1 · 4 · 9 · 16 · 25 · 36 · 49 · 64 · 81 · 100 · 121 · b) 121 · c) 1 + 3 + … + 21 = 121 · d) không bao giờ · e) có, là 3 nhân 3 · f) 11
 **Hướng giải:** Lập bảng các số chính phương đầu tiên rồi quan sát hai quy luật: hiệu hai số liên tiếp là dãy số lẻ, và chữ số tận cùng chỉ có thể là 0, 1, 4, 5, 6, 9.
 **Nhãn tư duy:** TD4, TD6. Điểm chốt: Số chính phương **không bao giờ** tận cùng bằng 2, 3, 7, 8.
 **Lỗi thường gặp:** Kết luận một số là chính phương chỉ vì nó “trông đẹp”. Phòng: Kiểm tra chữ số tận cùng trước, sau đó thử khai căn bằng cách nhân thử.
 **Gợi ý 3 tầng:** (1) Viết bảng các số chính phương đầu tiên. — (2) Hiệu hai số chính phương liên tiếp là những số nào? — (3) Chữ số tận cùng của số chính phương có thể là những chữ số nào?
 
-### Bài V.4
-**Đáp số:** a) 2 · b) 7 · c) 9 · d) 5 · e) 1 033
-**Hướng giải:** Dãy lặp lại theo chu kì độ dài k. Muốn tìm số hạng thứ n, lấy n chia cho k: số dư cho biết vị trí trong chu kì (dư 0 ứng với phần tử cuối chu kì). Muốn tính tổng n số hạng đầu, lấy tổng một chu kì nhân số chu kì đầy đủ rồi cộng phần dư.
-**Nhãn tư duy:** TD4, TD6. Điểm chốt: Số dư **0** ứng với phần tử **cuối** chu kì, không phải phần tử đầu.
-**Lỗi thường gặp:** Lấy số dư 0 rồi lấy phần tử đầu tiên của chu kì. Phòng: Kiểm chứng bằng một vị trí nhỏ đã biết trước khi làm vị trí lớn.
-**Gợi ý 3 tầng:** (1) Chu kì của dãy dài bao nhiêu số hạng? — (2) Chia vị trí cần tìm cho độ dài chu kì. — (3) Số dư cho biết vị trí trong chu kì; dư 0 là phần tử cuối.
-
 ### Bài V.5
-**Đáp số:** a) 0 · b) 1 · c) 0 · d) 2 · e) 0 · f) 0
-**Hướng giải:** Chữ số tận cùng của tổng và của tích chỉ phụ thuộc chữ số tận cùng của các số tham gia. Che phần đầu, chỉ tính với chữ số cuối.
-**Nhãn tư duy:** TD5, TD2. Điểm chốt: Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu.
-**Lỗi thường gặp:** Tính trọn cả phép tính, vừa lâu vừa dễ sai. Phòng: Lấy tay che phần đầu của hai số, chỉ để lộ chữ số cuối.
-**Gợi ý 3 tầng:** (1) Chữ số tận cùng của mỗi số là gì? — (2) Tính riêng với hai chữ số ấy. — (3) Lấy chữ số tận cùng của kết quả vừa tính.
+**Đáp số:** a) 1 · b) 4 041 · c) không, dư 1 · d) tổng các số dư là 6, chia 5 dư 1 · e) 1 · f) 4
+**Hướng giải:** Số dư của một tổng khi chia cho d bằng số dư của tổng các số dư. Nhờ đó, muốn biết tổng có chia hết cho d không thì chỉ cần cộng các số dư, không cần cộng các số.
+**Nhãn tư duy:** TD2, TD6. Điểm chốt: Làm việc với **số dư** thay vì với số — đây là kỹ thuật rút gọn mạnh nhất.
+**Lỗi thường gặp:** Cộng hết cả dãy rồi mới chia, mất thời gian và dễ sai. Phòng: Ghi số dư của từng số ngay dưới số đó rồi cộng dòng số dư.
+**Gợi ý 3 tầng:** (1) Tính số dư của từng số khi chia cho d. — (2) Cộng các số dư lại. — (3) Lấy tổng các số dư chia tiếp cho d.
 
 ---
 

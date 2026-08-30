@@ -42,10 +42,10 @@ Phiếu lời giải và phân tích chuyên sâu đi kèm: `GITA-T2-L5-MOC-GK2-
 Họ và tên: ......................................... Lớp: ......... Điểm: ......../100
 
 > **KIẾN THỨC NỀN CỦA CHƯƠNG**
-> 1. Chu vi, đường bao của hình
-> 2. Quy tắc nhân, quy tắc cộng trong phép đếm
-> 3. Diện tích tam giác; tỉ số; tam giác chung chiều cao
-> 4. Công thức tổng – hiệu, sơ đồ đoạn thẳng
+> 1. Trung bình cộng của dãy cách đều; tổng – tỉ
+> 2. Dãy cách đều, cấu tạo số
+> 3. Lập luận trường hợp xấu nhất, chia nhóm
+> 4. Tỉ số phần trăm
 
 ---
 
@@ -225,109 +225,103 @@ d) Một chuyến tàu khởi hành lúc 8 giờ 40 phút và đi hết 6 giờ 
 
 Bắt buộc kẻ bảng ra giấy. Không được suy luận nhẩm ở bài này.
 
-a) Ba bạn Phúc, Minh và Tuấn mỗi bạn học một môn năng khiếu khác nhau trong ba môn: hát, múa và đàn. Biết rằng: Phúc không học đàn và cũng không học múa; Minh không học múa. Hỏi mỗi bạn học môn nào?
-b) Ba bạn Dũng, Trang và Hùng mỗi bạn học một môn năng khiếu khác nhau trong ba môn: bơi, cờ vua và vẽ. Biết rằng: Dũng không học bơi và cũng không học cờ vua; Trang không học cờ vua. Hỏi mỗi bạn học môn nào?
-c) Ba bạn Quân, Đức và Khánh mỗi bạn học một môn năng khiếu khác nhau trong ba môn: tiếng Anh, tin học và mĩ thuật. Biết rằng: Quân không học tin học và cũng không học mĩ thuật; Đức không học mĩ thuật. Hỏi mỗi bạn học môn nào?
-d) Ba bạn Hùng, Đức và Bình mỗi bạn học một môn năng khiếu khác nhau trong ba môn: hát, múa và đàn. Biết rằng: Hùng không học múa và cũng không học hát; Đức không học hát. Hỏi mỗi bạn học môn nào?
+a) Ba bạn Hùng, Đức và Bình mỗi bạn học một môn năng khiếu khác nhau trong ba môn: hát, múa và đàn. Biết rằng: Hùng không học múa và cũng không học hát; Đức không học hát. Hỏi mỗi bạn học môn nào?
+b) Ba bạn Khánh, Bình và Hùng mỗi bạn học một môn năng khiếu khác nhau trong ba môn: bóng đá, cầu lông và bóng rổ. Biết rằng: Khánh không học bóng đá và cũng không học bóng rổ; Bình không học bóng rổ. Hỏi mỗi bạn học môn nào?
+c) Ba bạn Bình, Lan và Phúc mỗi bạn học một môn năng khiếu khác nhau trong ba môn: tiếng Anh, tin học và mĩ thuật. Biết rằng: Bình không học mĩ thuật và cũng không học tiếng Anh; Lan không học tiếng Anh. Hỏi mỗi bạn học môn nào?
+d) Ba bạn Minh, Chi và Dũng mỗi bạn học một môn năng khiếu khác nhau trong ba môn: bóng đá, cầu lông và bóng rổ. Biết rằng: Minh không học cầu lông và cũng không học bóng rổ; Chi không học bóng rổ. Hỏi mỗi bạn học môn nào?
 
-### Bài 2. (5 điểm) Diện tích thay đổi khi kích thước thay đổi
+### Bài 2. (5 điểm) Khối lập phương sơn màu
 
-Vẽ hình minh hoạ phần tăng thêm.
+Tưởng tượng khối lớn và xét theo vị trí: góc, cạnh, mặt, trong lõi.
 
-a) Hình chữ nhật dài 47 cm, rộng 6 cm. Nếu tăng chiều dài thêm 12 cm (giữ nguyên chiều rộng) thì diện tích tăng thêm bao nhiêu?
-b) Hình chữ nhật dài 46 cm, rộng 44 cm. Nếu tăng cả chiều dài và chiều rộng thêm 12 cm thì diện tích tăng thêm bao nhiêu?
-c) Hình chữ nhật dài 31 cm, rộng 7 cm. Nếu tăng chiều dài thêm 8 cm (giữ nguyên chiều rộng) thì diện tích tăng thêm bao nhiêu?
-d) Hình chữ nhật dài 20 cm, rộng 14 cm. Nếu gấp đôi chiều dài và giữ nguyên chiều rộng thì diện tích mới gấp mấy lần diện tích cũ?
-e) Hình chữ nhật dài 39 cm, rộng 27 cm. Nếu gấp đôi chiều dài và giữ nguyên chiều rộng thì diện tích mới gấp mấy lần diện tích cũ?
-f) Hình chữ nhật dài 28 cm, rộng 11 cm. Nếu tăng chiều dài thêm 3 cm (giữ nguyên chiều rộng) thì diện tích tăng thêm bao nhiêu?
+a) Một khối lập phương lớn ghép từ 3 × 3 × 3 khối lập phương nhỏ. Hỏi có tất cả bao nhiêu khối nhỏ?
+b) Sơn toàn bộ mặt ngoài khối lớn. Có bao nhiêu khối nhỏ được sơn 3 mặt?
+c) Có bao nhiêu khối nhỏ được sơn 2 mặt?
+d) Có bao nhiêu khối nhỏ được sơn 1 mặt?
+e) Có bao nhiêu khối nhỏ không được sơn mặt nào?
+f) Cộng bốn loại trên lại có bằng tổng số khối nhỏ không?
 
-### Bài 3. (5 điểm) Bài toán làm chung một công việc
+### Bài 3. (5 điểm) Hai lần mua hàng — khử một loại
 
-Coi cả công việc là 1 đơn vị.
+Viết hai lần mua thành hai dòng thẳng cột nhau rồi mới trừ.
 
-a) Người thứ nhất làm một mình xong công việc trong 8 giờ, người thứ hai làm một mình xong trong 20 giờ. Nếu hai người cùng làm thì sau bao lâu xong công việc?
-b) Người thứ nhất làm một mình xong công việc trong 4 giờ, người thứ hai làm một mình xong trong 8 giờ. Nếu hai người cùng làm thì sau bao lâu xong công việc?
-c) Người thứ nhất làm một mình xong công việc trong 8 giờ, người thứ hai làm một mình xong trong 2 giờ. Nếu hai người cùng làm thì sau bao lâu xong công việc?
-d) Người thứ nhất làm một mình xong công việc trong 4 giờ, người thứ hai làm một mình xong trong 3 giờ. Nếu hai người cùng làm thì sau bao lâu xong công việc?
-e) Người thứ nhất làm một mình xong công việc trong 3 giờ, người thứ hai làm một mình xong trong 4 giờ. Nếu hai người cùng làm thì sau bao lâu xong công việc?
-f) Người thứ nhất làm một mình xong công việc trong 5 giờ, người thứ hai làm một mình xong trong 12 giờ. Nếu hai người cùng làm thì sau bao lâu xong công việc?
+a) Lần thứ nhất mua 3 kg thóc và 6 kg gạo hết 267 000 đồng. Lần thứ hai mua 3 kg thóc và 9 kg gạo hết 375 000 đồng. Tính giá một kg gạo và một kg thóc.
+b) Lần thứ nhất mua 3 kg phân bón và 5 kg xi măng hết 214 000 đồng. Lần thứ hai mua 3 kg phân bón và 9 kg xi măng hết 306 000 đồng. Tính giá một kg xi măng và một kg phân bón.
+c) Lần thứ nhất mua 6 kg xi măng và 2 kg gạo hết 156 000 đồng. Lần thứ hai mua 6 kg xi măng và 6 kg gạo hết 312 000 đồng. Tính giá một kg gạo và một kg xi măng.
+d) Lần thứ nhất mua 6 kg đường và 5 kg gạo hết 248 000 đồng. Lần thứ hai mua 6 kg đường và 7 kg gạo hết 280 000 đồng. Tính giá một kg gạo và một kg đường.
 
 ### Bài 4. (5 điểm) Ước, bội, ước chung lớn nhất, bội chung nhỏ nhất
 
 Trình bày cách tìm, không chỉ ghi đáp số.
 
-a) Tìm ước chung lớn nhất của 56 và 53.
-b) Tìm bội chung nhỏ nhất của 63 và 64.
-c) Số 23 có bao nhiêu ước? Kể ra.
-d) Tìm bội chung nhỏ nhất của 22 và 68.
-e) Tìm ước chung lớn nhất của 17 và 72.
-f) Tìm ước chung lớn nhất của 85 và 56.
+a) Số 60 có bao nhiêu ước? Kể ra.
+b) Tìm ước chung lớn nhất của 79 và 68.
+c) Tìm ước chung lớn nhất của 23 và 71.
+d) Tìm ước chung lớn nhất của 38 và 46.
 
-### Bài 5. (5 điểm) Biểu thức nhiều phép tính với phân số
+### Bài 5. (5 điểm) Lọc số hạng theo điều kiện chia hết
 
-Tính giá trị biểu thức, rút gọn kết quả.
+Cho dãy 11, 17, 23, …, 1 775.
 
-a) 1 phần 4 : 9 phần 13 + 1 phần 9
-b) 4 phần 3 × 2 phần 15 + 4 phần 3 × 2 phần 7
-c) 2 × 2 + 2 × 1
-d) 1 : 3 phần 11 + 3 phần 4
+a) Dãy có bao nhiêu số hạng?
+b) Số hạng cuối là số nào?
+c) Trong dãy có bao nhiêu số chia hết cho 10?
+d) Trong dãy có bao nhiêu số chẵn?
+e) Tổng các số chẵn trong dãy bằng bao nhiêu?
+f) Tổng cả dãy bằng bao nhiêu?
 
 ---
 
 ## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
 
-### Bài 1. (3 điểm) Diện tích phần tô màu
+### Bài 1. (3 điểm) Cắt và ghép hình — chu vi thay đổi thế nào
 
-Phân tích hình thành hiệu của các hình quen thuộc.
+Chú ý các cạnh bị ghép vào bên trong.
 
-a) Một hình vuông cạnh 18 cm. Tính diện tích hình tròn có đường kính bằng cạnh hình vuông đó (lấy π = 3,14).
-b) Hai hình tròn đồng tâm có bán kính 6 cm và 1 cm. Tính diện tích phần nằm giữa hai đường tròn (lấy π = 3,14).
-c) Một hình tròn bán kính 5 cm nội tiếp trong một hình vuông (hình tròn tiếp xúc cả bốn cạnh). Tính diện tích phần hình vuông nằm ngoài hình tròn (lấy π = 3,14).
-d) Hai hình tròn đồng tâm có bán kính 9 cm và 6 cm. Tính diện tích phần nằm giữa hai đường tròn (lấy π = 3,14).
-e) Một hình vuông cạnh 36 cm. Tính diện tích hình tròn có đường kính bằng cạnh hình vuông đó (lấy π = 3,14).
+a) Ghép 25 hình vuông cạnh 4 cm thành một hình vuông lớn. Tính chu vi hình vuông lớn.
+b) Ghép 2 hình vuông cạnh 20 cm thành một hàng ngang. Tính chu vi hình chữ nhật thu được.
+c) Cắt một hình vuông cạnh 10 cm thành hai hình chữ nhật bằng nhau. Tổng chu vi hai hình chữ nhật đó bằng bao nhiêu?
+d) Cắt một hình vuông cạnh 22 cm thành hai hình chữ nhật bằng nhau. Tổng chu vi hai hình chữ nhật đó bằng bao nhiêu?
 
-### Bài 2. (3 điểm) Tổng nhiều số có ràng buộc — dạng đề thi
+### Bài 2. (3 điểm) Lên dốc, xuống dốc — vận tốc trung bình
 
-Bài mô phỏng phần tự luận của đề thi chất lượng cao.
+Tính riêng thời gian từng đoạn trước, tuyệt đối không cộng hai vận tốc rồi chia đôi.
 
-a) Ba số có tổng 240. Số thứ hai hơn số thứ nhất 9, số thứ ba hơn số thứ hai 9. Tìm số thứ hai.
-b) Tìm số thứ nhất.
-c) Tìm số thứ ba.
-d) Vì sao số thứ hai bằng tổng ba số chia cho 3?
-e) Hai số khác có tổng 224 và số bé bằng 3 phần 5 số lớn. Tìm số bé.
-f) Tìm số lớn.
-g) Hiệu hai số đó bằng bao nhiêu?
+a) Một người đi xe đạp lên dốc dài 24 km với vận tốc 8 km/giờ, rồi xuống dốc chính con dốc ấy với vận tốc 24 km/giờ. Tính vận tốc trung bình của cả lượt đi và lượt về.
+b) Một người đi xe đạp lên dốc dài 36 km với vận tốc 12 km/giờ, rồi xuống dốc chính con dốc ấy với vận tốc 36 km/giờ. Tính vận tốc trung bình của cả lượt đi và lượt về.
+c) Một người đi xe đạp lên dốc dài 18 km với vận tốc 9 km/giờ, rồi xuống dốc chính con dốc ấy với vận tốc 18 km/giờ. Tính vận tốc trung bình của cả lượt đi và lượt về.
+d) Một người đi xe đạp lên dốc dài 36 km với vận tốc 9 km/giờ, rồi xuống dốc chính con dốc ấy với vận tốc 18 km/giờ. Tính vận tốc trung bình của cả lượt đi và lượt về.
 
-### Bài 3. (3 điểm) Số dư của tổng — lập luận không cần tính hết
+### Bài 3. (3 điểm) Đếm chữ số dùng để đánh số trang
 
-Dùng tính chất số dư, hạn chế tính toán.
+Tính số chữ số cần dùng.
 
-a) Dãy số: 337, 395, 829, 986. Có bao nhiêu số trong dãy chia hết cho 3?
-b) Tổng của dãy bằng bao nhiêu?
-c) Tổng đó có chia hết cho 3 không?
-d) Số dư khi chia tổng cho 3 bằng tổng các số dư của từng số hạng chia cho 3 rồi lại chia cho 3 — hãy kiểm chứng bằng số cụ thể.
-e) Cần bớt ở tổng ít nhất bao nhiêu đơn vị để tổng chia hết cho 3?
-f) Cần thêm vào tổng ít nhất bao nhiêu đơn vị để tổng chia hết cho 3?
+a) Một quyển sách có 2 453 trang, đánh số trang từ 1. Phải dùng tất cả bao nhiêu chữ số?
+b) Một quyển sách có 78 trang, đánh số trang từ 1. Phải dùng tất cả bao nhiêu chữ số?
+c) Một quyển sách có 228 trang, đánh số trang từ 1. Phải dùng tất cả bao nhiêu chữ số?
+d) Một quyển sách có 1 716 trang, đánh số trang từ 1. Phải dùng tất cả bao nhiêu chữ số?
+e) Một quyển sách có 1 741 trang, đánh số trang từ 1. Phải dùng tất cả bao nhiêu chữ số?
 
-### Bài 4. (3 điểm) Mua bán có chiết khấu và thuế
+### Bài 4. (3 điểm) Tô màu và phủ bàn cờ
 
-Bài mô phỏng câu hỏi thực tế của đề đánh giá năng lực.
+Dùng kĩ thuật tô màu để lập luận.
 
-a) Một món hàng niêm yết 200 000 đồng, được chiết khấu 5%. Giá sau chiết khấu là bao nhiêu?
-b) Sau đó cộng thêm thuế 5% tính trên giá đã chiết khấu. Giá phải trả là bao nhiêu?
-c) So với giá niêm yết, người mua trả nhiều hơn hay ít hơn, chênh bao nhiêu đồng?
-d) Mua 2 món như thế thì phải trả bao nhiêu tiền?
-e) Nếu cửa hàng cộng thuế trước rồi mới chiết khấu thì giá cuối có đổi không?
-f) Chiết khấu 5% nghĩa là còn lại bao nhiêu phần trăm giá niêm yết?
+a) Một bàn cờ vuông 7 × 7 ô. Hỏi có tất cả bao nhiêu ô?
+b) Tô màu xen kẽ đen trắng như bàn cờ vua thì có bao nhiêu ô đen?
+c) Một quân đô-mi-nô phủ đúng 2 ô liền nhau. Có thể phủ kín cả bàn cờ 7 × 7 bằng các quân đô-mi-nô không?
+d) Mỗi quân đô-mi-nô luôn phủ mấy ô đen và mấy ô trắng?
+e) Nếu bỏ đi hai ô ở hai góc đối diện của bàn cờ 7 × 7 (hai ô này cùng màu) thì còn phủ kín được không?
+f) Đại lượng bất biến dùng ở đây là gì?
 
-### Bài 5. (3 điểm) Hai lần thay đổi phần trăm liên tiếp
+### Bài 5. (3 điểm) Bán hai lần theo phân số, tìm số ban đầu
 
-Chú ý mỗi lần tính phần trăm trên giá nào.
+Trước khi tính, gạch chân xem mỗi phân số lấy trên số nào.
 
-a) Một món hàng giá 1 000 000 đồng. Lần đầu tăng giá 10%, sau đó lần hai giảm giá 10% (so với giá vừa tăng). Hỏi giá cuối cùng là bao nhiêu và so với giá ban đầu thì tăng hay giảm?
-b) Một món hàng giá 100 000 đồng. Lần đầu tăng giá 50%, sau đó lần hai giảm giá 50% (so với giá vừa tăng). Hỏi giá cuối cùng là bao nhiêu và so với giá ban đầu thì tăng hay giảm?
-c) Một món hàng giá 1 000 000 đồng. Lần đầu tăng giá 10%, sau đó lần hai giảm giá 20% (so với giá vừa tăng). Hỏi giá cuối cùng là bao nhiêu và so với giá ban đầu thì tăng hay giảm?
-d) Một món hàng giá 500 000 đồng. Lần đầu tăng giá 20%, sau đó lần hai giảm giá 50% (so với giá vừa tăng). Hỏi giá cuối cùng là bao nhiêu và so với giá ban đầu thì tăng hay giảm?
+a) Một rổ cam. Lần thứ nhất bán 1 phần 2 số cam trong rổ. Lần thứ hai bán 1 phần 4 **số cam còn lại sau lần thứ nhất**. Cuối cùng trong rổ còn 15 quả. Hỏi lúc đầu rổ có bao nhiêu quả cam?
+b) Một rổ cam. Lần thứ nhất bán 1 phần 3 số cam trong rổ. Lần thứ hai bán 1 phần 2 **số cam còn lại sau lần thứ nhất**. Cuối cùng trong rổ còn 19 quả. Hỏi lúc đầu rổ có bao nhiêu quả cam?
+c) Một rổ cam. Lần thứ nhất bán 1 phần 2 số cam trong rổ. Lần thứ hai bán 1 phần 4 **số cam còn lại sau lần thứ nhất**. Cuối cùng trong rổ còn 18 quả. Hỏi lúc đầu rổ có bao nhiêu quả cam?
+d) Một rổ cam. Lần thứ nhất bán 1 phần 3 số cam trong rổ. Lần thứ hai bán 1 phần 2 **số cam còn lại sau lần thứ nhất**. Cuối cùng trong rổ còn 13 quả. Hỏi lúc đầu rổ có bao nhiêu quả cam?
+e) Một rổ cam. Lần thứ nhất bán 1 phần 3 số cam trong rổ. Lần thứ hai bán 1 phần 3 **số cam còn lại sau lần thứ nhất**. Cuối cùng trong rổ còn 12 quả. Hỏi lúc đầu rổ có bao nhiêu quả cam?
 
 ---
 
@@ -426,74 +420,74 @@ d) Một món hàng giá 500 000 đồng. Lần đầu tăng giá 20%, sau đó 
 **Lỗi thường gặp:** Cộng phần phút thành hơn 60 mà quên đổi thành giờ. Phòng: Kiểm tra phần phút của đáp số phải bé hơn 60.
 
 ### Bài IV.1
-**Đáp số:** a) Phúc học hát; Minh học đàn; Tuấn học múa · b) Dũng học vẽ; Trang học bơi; Hùng học cờ vua · c) Quân học tiếng Anh; Đức học tin học; Khánh học mĩ thuật · d) Hùng học đàn; Đức học múa; Bình học hát
+**Đáp số:** a) Hùng học đàn; Đức học múa; Bình học hát · b) Khánh học cầu lông; Bình học bóng đá; Hùng học bóng rổ · c) Bình học tin học; Lan học mĩ thuật; Phúc học tiếng Anh · d) Minh học bóng đá; Chi học cầu lông; Dũng học bóng rổ
 **Hướng giải:** BẪY — Đánh dấu đúng mà quên gạch phần còn lại. Mỗi dòng một người, mỗi cột một khả năng. Đánh × cho điều chắc chắn sai. Dòng nào chỉ còn một ô trống thì ô ấy là ✓ — và ngay sau đó phải gạch × cho cả cột chứa ô ấy.
 **Nhãn tư duy:** TD3, TD4. Điểm chốt: Đặt được một ✓ thì **cả dòng và cả cột** còn lại đều thành ×. Bỏ bước gạch cột là chỗ bài bị tắc giữa chừng.
 **Lỗi thường gặp:** Đánh ✓ rồi đi tiếp luôn, không gạch × cho phần còn lại của cột. Phòng: Sau mỗi lần đặt ✓, dừng lại gạch đủ dòng và cột rồi mới đọc manh mối kế.
 **Gợi ý 3 tầng:** (1) Kẻ bảng ba dòng ba cột trước đã. — (2) Manh mối nào cho biết chắc chắn một ô là sai? — (3) Dòng nào chỉ còn một ô trống thì ô ấy chính là đáp án của dòng ấy.
 
 ### Bài IV.2
-**Đáp số:** a) 72 cm² · b) 1 224 cm² · c) 56 cm² · d) 2 lần · e) 2 lần · f) 33 cm²
-**Hướng giải:** BẪY — Phần tăng gồm ba mảnh. Tăng một chiều thêm k đơn vị thì diện tích tăng thêm đúng một hình chữ nhật có kích thước k × chiều còn lại. Tăng cả hai chiều thì phần tăng gồm ba mảnh: hai dải và một hình vuông ở góc — nên **không** bằng tích của hai phần tăng.
-**Nhãn tư duy:** TD3, TD6. Điểm chốt: Tăng cả hai chiều thì phần tăng gồm **ba mảnh**, không phải một.
-**Lỗi thường gặp:** Nhân hai lượng tăng với nhau rồi coi đó là phần diện tích tăng thêm. Phòng: Vẽ hình chữ nhật cũ nằm trong hình mới, tô phần dôi ra.
-**Gợi ý 3 tầng:** (1) Vẽ hình cũ và hình mới chồng lên nhau. — (2) Phần dôi ra gồm mấy mảnh? — (3) Tính diện tích từng mảnh rồi cộng.
+**Đáp số:** a) 27 · b) 8 · c) 12 · d) 6 · e) 1 · f) có, 8 + 12 + 6 + 1 = 27
+**Hướng giải:** BẪY — Đếm trùng khối ở đỉnh và ở cạnh. Phân loại khối nhỏ theo **vị trí**: ở đỉnh sơn 3 mặt, ở cạnh sơn 2 mặt, ở giữa mặt sơn 1 mặt, ở trong lõi không sơn. Bốn loại cộng lại phải đúng bằng tổng số khối — đó là cách tự kiểm tra.
+**Nhãn tư duy:** TD6, TD4. Điểm chốt: Phân loại theo vị trí, và **cộng bốn loại lại để thử**.
+**Lỗi thường gặp:** Đếm cả khối ở đỉnh vào nhóm khối ở cạnh, thành ra đếm trùng. Phòng: Trừ hai đầu mỗi cạnh khi đếm khối sơn 2 mặt.
+**Gợi ý 3 tầng:** (1) Khối ở đỉnh có mấy mặt lộ ra ngoài? — (2) Mỗi cạnh có bao nhiêu khối không nằm ở đỉnh? — (3) Cộng bốn loại lại xem có bằng tổng số khối không.
 
 ### Bài IV.3
-**Đáp số:** a) 40 phần 7 giờ · b) 2 giờ 40 phút · c) 1 giờ 36 phút · d) 12 phần 7 giờ · e) 12 phần 7 giờ · f) 60 phần 17 giờ
-**Hướng giải:** BẪY — Cộng thời gian thay vì cộng năng suất. Coi cả công việc là 1. Người làm xong trong a giờ thì mỗi giờ làm được 1 phần a công việc. Cùng làm thì mỗi giờ cả hai làm được tổng hai phân số đó. Thời gian làm chung = 1 chia cho năng suất chung.
-**Nhãn tư duy:** TD3, TD6. Điểm chốt: Cộng **năng suất mỗi giờ**, tuyệt đối không cộng thời gian.
-**Lỗi thường gặp:** Cộng hai khoảng thời gian rồi chia đôi. Phòng: Luôn viết dòng “Mỗi giờ người thứ nhất làm được … công việc” trước.
-**Gợi ý 3 tầng:** (1) Mỗi giờ người thứ nhất làm được mấy phần công việc? — (2) Mỗi giờ cả hai làm được mấy phần? — (3) Lấy 1 chia cho phần làm được trong một giờ.
+**Đáp số:** a) một kg gạo: 36 000 đồng; một kg thóc: 17 000 đồng · b) một kg xi măng: 23 000 đồng; một kg phân bón: 33 000 đồng · c) một kg gạo: 39 000 đồng; một kg xi măng: 13 000 đồng · d) một kg gạo: 16 000 đồng; một kg đường: 28 000 đồng
+**Hướng giải:** BẪY — Chưa cân bằng đã trừ. Tìm loại hàng có **số lượng bằng nhau ở cả hai lần** rồi trừ hai dòng cho nhau — loại ấy tự triệt tiêu. Nếu chưa lần nào bằng nhau thì nhân cả hai dòng lên cho bằng đã.
+**Nhãn tư duy:** TD2, TD5. Điểm chốt: Chỉ được trừ khi số lượng của loại cần khử đã bằng nhau ở hai dòng.
+**Lỗi thường gặp:** Trừ ngay khi hai dòng còn khác nhau ở cả hai loại — khử hụt, ra sai. Phòng: Viết hai dòng thẳng cột, khoanh tròn loại có số lượng bằng nhau.
+**Gợi ý 3 tầng:** (1) Loại hàng nào mua số lượng như nhau ở cả hai lần? — (2) Lần hai mua thêm bao nhiêu và trả thêm bao nhiêu tiền? — (3) Chia tiền trả thêm cho lượng mua thêm là ra giá một đơn vị.
 
 ### Bài IV.4
-**Đáp số:** a) 1 · b) 4 032 · c) 2 ước: 1, 23 · d) 748 · e) 1 · f) 1
+**Đáp số:** a) 12 ước: 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60 · b) 1 · c) 1 · d) 2
 **Hướng giải:** Tìm ước bằng cách thử chia lần lượt từ 1 đến số đó, chỉ cần thử tới căn của số vì các ước đi theo cặp. Ước chung lớn nhất tìm bằng cách liệt kê ước chung rồi chọn số lớn nhất. Bội chung nhỏ nhất bằng tích hai số chia cho ước chung lớn nhất.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Các ước luôn đi thành **cặp** nhân với nhau bằng chính số đó.
 **Lỗi thường gặp:** Liệt kê thiếu ước lớn vì chỉ thử vài số nhỏ. Phòng: Cứ tìm được một ước nhỏ thì viết ngay ước lớn đi kèm với nó.
 **Gợi ý 3 tầng:** (1) Thử chia lần lượt cho 1, 2, 3, … — (2) Mỗi ước tìm được đi kèm một ước nữa: số đó chia cho ước vừa tìm. — (3) Dừng lại khi hai ước trong cặp gặp nhau.
 
 ### Bài IV.5
-**Đáp số:** a) 17 phần 36 · b) 176 phần 315 · c) 6 · d) 53 phần 12
-**Hướng giải:** Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
-**Nhãn tư duy:** TD3, TD5. Điểm chốt: Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều.
-**Lỗi thường gặp:** Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. Phòng: Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút.
-**Gợi ý 3 tầng:** (1) Biểu thức có dấu ngoặc không? — (2) Có thừa số chung ở hai tích không? — (3) Làm nhân chia trước, cộng trừ sau.
+**Đáp số:** a) 295 · b) 1 775 · c) 0 · d) 0 · e) 0 · f) 263 435
+**Hướng giải:** Các số hạng thoả thêm một điều kiện chia hết cũng lập thành một dãy cách đều mới, có khoảng cách là bội chung nhỏ nhất của khoảng cách cũ và số chia. Tìm số hạng đầu tiên thoả điều kiện rồi đếm trên dãy mới.
+**Nhãn tư duy:** TD4, TD2. Điểm chốt: Dãy con cũng **cách đều**, chỉ khác khoảng cách.
+**Lỗi thường gặp:** Duyệt từng số hạng để đếm — không kịp khi dãy dài hàng trăm số. Phòng: Tìm số hạng đầu tiên thoả điều kiện rồi xác định khoảng cách mới.
+**Gợi ý 3 tầng:** (1) Số hạng nào đầu tiên thoả điều kiện? — (2) Số hạng tiếp theo thoả điều kiện cách nó bao nhiêu? — (3) Dãy con cũng cách đều — dùng công thức đếm.
 
 ### Bài V.1
-**Đáp số:** a) 254,34 cm² · b) 109,9 cm² · c) 21,5 cm² · d) 141,3 cm² · e) 1 017,36 cm²
-**Hướng giải:** BẪY — Quan hệ giữa bán kính và cạnh. Diện tích phần tô màu = diện tích hình lớn − diện tích hình bị khoét. Bước quan trọng nhất là nhận ra hình lớn và hình bị khoét là những hình nào, và tìm đúng kích thước của chúng từ dữ kiện đề cho.
-**Nhãn tư duy:** TD3, TD6. Điểm chốt: Đọc quan hệ hình học để suy ra kích thước: hình tròn nội tiếp hình vuông thì **đường kính bằng cạnh hình vuông**.
-**Lỗi thường gặp:** Lấy bán kính hình tròn làm cạnh hình vuông. Phòng: Vẽ lại hình, ghi số đo lên hình trước khi tính.
-**Gợi ý 3 tầng:** (1) Phần tô màu là hiệu của những hình nào? — (2) Kích thước của hình lớn suy từ đâu? — (3) Tính từng diện tích rồi trừ.
+**Đáp số:** a) 80 cm · b) 120 cm · c) 60 cm · d) 132 cm
+**Hướng giải:** BẪY — Chu vi không cộng như diện tích. Khi ghép hai hình lại, các cạnh dán vào nhau **không còn nằm trên đường bao** nên không tính vào chu vi. Ngược lại, khi cắt một hình thành hai phần thì xuất hiện thêm hai cạnh mới trên đường bao, nên tổng chu vi tăng lên đúng hai lần đường cắt.
+**Nhãn tư duy:** TD6, TD3. Điểm chốt: Diện tích giữ nguyên khi cắt ghép, nhưng **chu vi thay đổi**.
+**Lỗi thường gặp:** Cộng chu vi các hình nhỏ lại rồi coi đó là chu vi hình ghép. Phòng: Tô đậm đường bao của hình mới rồi mới tính.
+**Gợi ý 3 tầng:** (1) Vẽ hình sau khi ghép hoặc cắt. — (2) Đường bao của hình mới gồm những cạnh nào? — (3) Cạnh nào bị dán vào trong thì không tính.
 
 ### Bài V.2
-**Đáp số:** a) 80 · b) 71 · c) 89 · d) vì ba số cách đều nên số ở giữa là trung bình cộng · e) 84 · f) 140 · g) 56
-**Hướng giải:** Với một số lẻ các số cách đều, số ở giữa chính là trung bình cộng — tìm nó trước rồi suy ra hai số kia. Phần sau là bài tổng – tỉ chuẩn: tổng số phần rồi giá trị một phần.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
-**Lỗi thường gặp:** Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. Phòng: Nhìn ra “cách đều” trước khi đặt bút.
-**Gợi ý 3 tầng:** (1) Ba số này có cách đều nhau không? — (2) Với ba số cách đều, số nào bằng trung bình cộng? — (3) Tìm số giữa trước rồi lùi và tiến ra hai số kia.
+**Đáp số:** a) 12 km/giờ · b) 18 km/giờ · c) 12 km/giờ · d) 12 km/giờ
+**Hướng giải:** Vận tốc trung bình luôn bằng **tổng quãng đường chia tổng thời gian**, không bao giờ bằng trung bình cộng của các vận tốc. Vì đoạn đi chậm mất nhiều thời gian hơn nên nó kéo trung bình xuống.
+**Nhãn tư duy:** TD2, TD6. Điểm chốt: Vận tốc trung bình luôn **nhỏ hơn** trung bình cộng hai vận tốc. Ra lớn hơn hoặc bằng là chắc chắn sai.
+**Lỗi thường gặp:** Lấy (vận tốc lên + vận tốc xuống) : 2. Phòng: Sau khi tính xong, so đáp số với trung bình cộng — phải nhỏ hơn.
+**Gợi ý 3 tầng:** (1) Đi lên và đi xuống, đoạn nào mất nhiều thời gian hơn? — (2) Tính riêng thời gian mỗi đoạn. — (3) Vận tốc trung bình = tổng quãng đường : tổng thời gian.
 
 ### Bài V.3
-**Đáp số:** a) 0 · b) 2 547 · c) có · d) tổng các số dư là 6, chia 3 dư 0 · e) 0 · f) 0
-**Hướng giải:** Số dư của một tổng khi chia cho d bằng số dư của tổng các số dư. Nhờ đó, muốn biết tổng có chia hết cho d không thì chỉ cần cộng các số dư, không cần cộng các số.
-**Nhãn tư duy:** TD2, TD6. Điểm chốt: Làm việc với **số dư** thay vì với số — đây là kỹ thuật rút gọn mạnh nhất.
-**Lỗi thường gặp:** Cộng hết cả dãy rồi mới chia, mất thời gian và dễ sai. Phòng: Ghi số dư của từng số ngay dưới số đó rồi cộng dòng số dư.
-**Gợi ý 3 tầng:** (1) Tính số dư của từng số khi chia cho d. — (2) Cộng các số dư lại. — (3) Lấy tổng các số dư chia tiếp cho d.
+**Đáp số:** a) 8 705 · b) 147 · c) 576 · d) 5 757 · e) 5 857
+**Hướng giải:** Chia các trang thành nhóm theo số chữ số: từ 1 đến 9 có 9 số, mỗi số 1 chữ số; từ 10 đến 99 có 90 số, mỗi số 2 chữ số; từ 100 đến 999 có 900 số, mỗi số 3 chữ số; từ 1 000 trở đi mỗi số 4 chữ số. Nhân rồi cộng.
+**Nhãn tư duy:** TD4, TD6. Điểm chốt: Nhóm cuối cùng thường **không đầy đủ** — phải đếm đúng số trang còn lại.
+**Lỗi thường gặp:** Lấy số trang nhân với số chữ số của trang cuối. Phòng: Kẻ bảng ba cột: khoảng trang – số trang – số chữ số, rồi cộng cột cuối.
+**Gợi ý 3 tầng:** (1) Từ trang 1 đến trang 9 dùng mấy chữ số? — (2) Từ trang 10 đến trang 99 có bao nhiêu trang? — (3) Nhóm cuối cùng có bao nhiêu trang, mỗi trang mấy chữ số?
 
 ### Bài V.4
-**Đáp số:** a) 190 000 đồng · b) 199 500 đồng · c) ít hơn 500 đồng · d) 399 000 đồng · e) không đổi, vì nhân hai lần theo cùng hai tỉ lệ · f) 95%
-**Hướng giải:** Mỗi lần tính phần trăm phải xác định lại **mốc 100%**. Chiết khấu tính trên giá niêm yết; thuế tính trên giá đã chiết khấu. Vì cả hai đều là phép nhân với một tỉ lệ nên đổi thứ tự không làm đổi kết quả.
-**Nhãn tư duy:** TD6, TD2. Điểm chốt: Mốc 100% **đổi sau mỗi bước** — đây là bẫy hay gặp nhất.
-**Lỗi thường gặp:** Tính thuế trên giá niêm yết thay vì trên giá đã chiết khấu. Phòng: Viết ba dòng: giá niêm yết, giá sau chiết khấu, giá phải trả.
-**Gợi ý 3 tầng:** (1) Chiết khấu tính trên giá nào? — (2) Sau chiết khấu còn bao nhiêu phần trăm? — (3) Thuế tính trên giá nào?
+**Đáp số:** a) 49 · b) 25 · c) không, vì số ô là số lẻ · d) 1 ô đen và 1 ô trắng · e) không, vì số ô còn lại là số lẻ · f) hiệu giữa số ô đen và số ô trắng chưa bị phủ
+**Hướng giải:** Tô bàn cờ xen kẽ hai màu. Mỗi quân đô-mi-nô, dù đặt ngang hay dọc, luôn phủ đúng **một ô mỗi màu**. Vì vậy nếu phủ kín được thì số ô đen phải bằng số ô trắng. Hai ô ở hai góc đối diện của bàn cờ luôn **cùng màu**, bỏ chúng đi làm hai màu lệch nhau 2 ô, nên không thể phủ kín.
+**Nhãn tư duy:** TD6, TD2. Điểm chốt: Tô màu biến bài toán hình thành bài toán **đếm** — đó là toàn bộ ý tưởng.
+**Lỗi thường gặp:** Thử xếp bằng tay rồi kết luận “không xếp được” mà không chứng minh. Phòng: Luôn tô màu và đếm hai màu trước khi kết luận.
+**Gợi ý 3 tầng:** (1) Tô bàn cờ xen kẽ hai màu. — (2) Một quân đô-mi-nô phủ mấy ô mỗi màu? — (3) So sánh số ô của hai màu sau khi bỏ ô.
 
 ### Bài V.5
-**Đáp số:** a) 990 000 đồng, giảm 10 000 đồng · b) 75 000 đồng, giảm 25 000 đồng · c) 880 000 đồng, giảm 120 000 đồng · d) 300 000 đồng, giảm 200 000 đồng
-**Hướng giải:** Lần thứ hai tính phần trăm trên **giá mới** chứ không phải giá ban đầu. Vì vậy tăng p% rồi giảm p% **không** đưa về giá cũ. Phải tính lần lượt từng bước, ghi rõ giá sau mỗi lần.
-**Nhãn tư duy:** TD6, TD2. Điểm chốt: Mốc 100% **thay đổi** sau mỗi lần — đây là bẫy kinh điển.
-**Lỗi thường gặp:** Cộng trừ hai số phần trăm rồi áp một lần vào giá ban đầu. Phòng: Viết ba dòng: giá ban đầu, giá sau lần 1, giá sau lần 2.
-**Gợi ý 3 tầng:** (1) Giá sau lần tăng thứ nhất là bao nhiêu? — (2) Lần giảm thứ hai tính phần trăm trên giá nào? — (3) So sánh giá cuối với giá ban đầu.
+**Đáp số:** a) 40 quả · b) 57 quả · c) 48 quả · d) 39 quả · e) 27 quả
+**Hướng giải:** Đi ngược từ số cuối. Ở mỗi bước, số hiện có ứng với phần còn lại sau khi bán, nên nhân với mẫu rồi chia cho phần còn lại. Tính xong bắt buộc thử lại theo chiều xuôi.
+**Nhãn tư duy:** TD3, TD5, TD6. Điểm chốt: Phân số của lần sau lấy trên **phần còn lại**, không lấy trên số ban đầu. Đây là bẫy chính của cả dạng bài.
+**Lỗi thường gặp:** Lấy cả hai phân số trên số ban đầu rồi cộng lại. Phòng: Thử lại theo chiều xuôi — bài này luôn thử lại được.
+**Gợi ý 3 tầng:** (1) Sau lần hai còn lại mấy phần mấy của số trước lần hai? — (2) Từ đó tính ngược ra số cam trước lần hai. — (3) Làm y như vậy một lần nữa để ra số ban đầu.
 
 ---
 

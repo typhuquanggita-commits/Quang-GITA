@@ -220,53 +220,58 @@ e) Lớp 5A có 32 học sinh. Có 16 em học bơi, 23 em học bóng rổ, tro
 
 ## PHẦN IV — BÀI PHÂN HOÁ · Mức M4 — Vận dụng cao · 20 phút · 25 điểm
 
-### Bài 1. (5 điểm) Số nguyên tố và hợp số
+### Bài 1. (5 điểm) Thêm, bớt, đổi chỗ chữ số
 
-Trả lời và nêu căn cứ.
+Phân tích số theo cấu tạo rồi trả lời.
 
-a) Số 12 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
-b) Số 99 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
-c) Số 118 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
-d) Số 174 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
-e) Số 189 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
-f) Số 191 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
+a) Viết thêm chữ số 1 vào bên trái số 635 thì được số mới. Số mới hơn số ban đầu bao nhiêu đơn vị?
+b) Viết thêm chữ số 1 vào bên trái số 644 thì được số mới. Số mới hơn số ban đầu bao nhiêu đơn vị?
+c) Một số có ba chữ số, nếu xoá chữ số hàng trăm thì được số mới kém số ban đầu 600 đơn vị. Tìm số ban đầu, biết chữ số hàng chục là 0 và chữ số hàng đơn vị là 5.
+d) Đổi chỗ chữ số hàng trăm và chữ số hàng đơn vị của số 227 ta được số mới. Hiệu hai số bằng bao nhiêu?
 
 ### Bài 2. (5 điểm) Tìm số theo hai điều kiện chia có dư
 
 Tìm số bé nhất thoả mãn.
 
-a) Tìm số bé nhất không quá 300 chia cho 5 dư 3 và chia cho 9 dư 5.
-b) Tìm số bé nhất không quá 200 chia cho 5 dư 3 và chia cho 8 dư 6.
-c) Tìm số bé nhất không quá 300 chia cho 5 dư 1 và chia cho 3 dư 1.
-d) Tìm số bé nhất không quá 500 chia cho 9 dư 8 và chia cho 8 dư 4.
+a) Tìm số bé nhất không quá 200 chia cho 6 dư 1 và chia cho 7 dư 5.
+b) Tìm số bé nhất không quá 200 chia cho 7 dư 6 và chia cho 5 dư 2.
+c) Tìm số bé nhất không quá 500 chia cho 6 dư 5 và chia cho 7 dư 4.
+d) Tìm số bé nhất không quá 300 chia cho 9 dư 3 và chia cho 8 dư 4.
+e) Tìm số bé nhất không quá 300 chia cho 3 dư 2 và chia cho 8 dư 6.
 
-### Bài 3. (5 điểm) Thêm, bớt, đổi chỗ chữ số
+### Bài 3. (5 điểm) Số nguyên tố và hợp số
 
-Phân tích số theo cấu tạo rồi trả lời.
+Trả lời và nêu căn cứ.
 
-a) Viết thêm chữ số 1 vào bên trái số 919 thì được số mới. Số mới hơn số ban đầu bao nhiêu đơn vị?
-b) Đổi chỗ chữ số hàng trăm và chữ số hàng đơn vị của số 327 ta được số mới. Hiệu hai số bằng bao nhiêu?
-c) Một số có ba chữ số, nếu xoá chữ số hàng trăm thì được số mới kém số ban đầu 900 đơn vị. Tìm số ban đầu, biết chữ số hàng chục là 7 và chữ số hàng đơn vị là 8.
-d) Đổi chỗ chữ số hàng trăm và chữ số hàng đơn vị của số 850 ta được số mới. Hiệu hai số bằng bao nhiêu?
+a) Số 50 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
+b) Số 77 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
+c) Số 115 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
+d) Số 122 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
+e) Số 125 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
+f) Số 131 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
+g) Số 163 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
+h) Số 166 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
 
-### Bài 4. (5 điểm) Đặt chữ thay chữ số rồi lập luận
-
-Câu nào cũng phải viết cấu tạo số ra trước khi tính.
-
-a) Tìm mọi số có hai chữ số mà số đó bằng 9 lần tổng hai chữ số của nó.
-b) Số có hai chữ số ab. Khi đổi chỗ hai chữ số thì được số mới nhỏ hơn số cũ 45 đơn vị, và tổng hai chữ số bằng 13. Tìm số ab.
-c) Tìm mọi số có hai chữ số mà số đó bằng 4 lần tổng hai chữ số của nó.
-d) Số có hai chữ số ab. Khi đổi chỗ hai chữ số thì được số mới nhỏ hơn số cũ 36 đơn vị, và tổng hai chữ số bằng 12. Tìm số ab.
-e) Tìm mọi số có hai chữ số mà số đó bằng 7 lần tổng hai chữ số của nó.
-
-### Bài 5. (5 điểm) Ghép người với môn bằng bảng đúng – sai
+### Bài 4. (5 điểm) Ghép người với môn bằng bảng đúng – sai
 
 Bắt buộc kẻ bảng ra giấy. Không được suy luận nhẩm ở bài này.
 
-a) Ba bạn Ngọc, Quân và Trang mỗi bạn học một môn năng khiếu khác nhau trong ba môn: bóng đá, cầu lông và bóng rổ. Biết rằng: Ngọc không học cầu lông và cũng không học bóng đá; Quân không học bóng đá. Hỏi mỗi bạn học môn nào?
-b) Ba bạn Khánh, Phúc và Dũng mỗi bạn học một môn năng khiếu khác nhau trong ba môn: bóng đá, cầu lông và bóng rổ. Biết rằng: Khánh không học cầu lông và cũng không học bóng đá; Phúc không học bóng đá. Hỏi mỗi bạn học môn nào?
-c) Ba bạn Thảo, Vy và Ngọc mỗi bạn học một môn năng khiếu khác nhau trong ba môn: hát, múa và đàn. Biết rằng: Thảo không học múa và cũng không học đàn; Vy không học đàn. Hỏi mỗi bạn học môn nào?
-d) Ba bạn Dũng, Trang và Quân mỗi bạn học một môn năng khiếu khác nhau trong ba môn: bơi, cờ vua và vẽ. Biết rằng: Dũng không học bơi và cũng không học cờ vua; Trang không học cờ vua. Hỏi mỗi bạn học môn nào?
+a) Ba bạn Quân, Trang và Nam mỗi bạn học một môn năng khiếu khác nhau trong ba môn: bóng đá, cầu lông và bóng rổ. Biết rằng: Quân không học bóng rổ và cũng không học bóng đá; Trang không học bóng đá. Hỏi mỗi bạn học môn nào?
+b) Ba bạn Ngọc, Vy và Đức mỗi bạn học một môn năng khiếu khác nhau trong ba môn: tiếng Anh, tin học và mĩ thuật. Biết rằng: Ngọc không học tin học và cũng không học mĩ thuật; Vy không học mĩ thuật. Hỏi mỗi bạn học môn nào?
+c) Ba bạn Minh, Bình và Thảo mỗi bạn học một môn năng khiếu khác nhau trong ba môn: tiếng Anh, tin học và mĩ thuật. Biết rằng: Minh không học tin học và cũng không học mĩ thuật; Bình không học mĩ thuật. Hỏi mỗi bạn học môn nào?
+d) Ba bạn Dũng, Vy và Khánh mỗi bạn học một môn năng khiếu khác nhau trong ba môn: hát, múa và đàn. Biết rằng: Dũng không học múa và cũng không học đàn; Vy không học đàn. Hỏi mỗi bạn học môn nào?
+e) Ba bạn An, Phúc và Khánh mỗi bạn học một môn năng khiếu khác nhau trong ba môn: bơi, cờ vua và vẽ. Biết rằng: An không học cờ vua và cũng không học vẽ; Phúc không học vẽ. Hỏi mỗi bạn học môn nào?
+
+### Bài 5. (5 điểm) Đặt chữ thay chữ số rồi lập luận
+
+Câu nào cũng phải viết cấu tạo số ra trước khi tính.
+
+a) Tìm mọi số có hai chữ số mà số đó bằng 6 lần tổng hai chữ số của nó.
+b) Số có hai chữ số ab. Khi đổi chỗ hai chữ số thì được số mới nhỏ hơn số cũ 9 đơn vị, và tổng hai chữ số bằng 13. Tìm số ab.
+c) Tìm mọi số có hai chữ số mà số đó bằng 3 lần tổng hai chữ số của nó.
+d) Số có hai chữ số ab. Khi đổi chỗ hai chữ số thì được số mới nhỏ hơn số cũ 18 đơn vị, và tổng hai chữ số bằng 12. Tìm số ab.
+e) Số có hai chữ số ab. Khi đổi chỗ hai chữ số thì được số mới nhỏ hơn số cũ 36 đơn vị, và tổng hai chữ số bằng 12. Tìm số ab.
+f) Tìm mọi số có hai chữ số mà số đó bằng 7 lần tổng hai chữ số của nó.
 
 ---
 
@@ -434,39 +439,39 @@ f) Cột 6 — Kết quả?
 **Lỗi thường gặp:** Lấy tổng trừ đi tổng hai con số đề cho mà không cộng lại phần chung. Phòng: Vẽ hình trước, điền phần giữa trước, rồi mới điền hai bên.
 
 ### Bài IV.1
-**Đáp số:** a) hợp số (ví dụ ước 2) · b) hợp số (ví dụ ước 3) · c) hợp số (ví dụ ước 2) · d) hợp số (ví dụ ước 2) · e) hợp số (ví dụ ước 3) · f) số nguyên tố
-**Hướng giải:** BẪY — 91, 121, 143 trông như số nguyên tố nhưng không phải. Số nguyên tố chỉ có đúng hai ước là 1 và chính nó. Để kiểm tra, thử chia lần lượt cho 2, 3, 5, 7, 11… và chỉ cần thử đến khi thương bé hơn hoặc bằng số chia là dừng được.
-**Nhãn tư duy:** TD2. Điểm chốt: Chỉ cần thử các **số nguyên tố nhỏ**, không phải thử mọi số.
-**Lỗi thường gặp:** Thử chia cho mọi số từ 2 đến số đó nên mất thời gian, hoặc kết luận vội. Phòng: Thử theo thứ tự 2, 3, 5, 7, 11, 13 và dừng đúng lúc.
-**Gợi ý 3 tầng:** (1) Số đó có chia hết cho 2 hay 5 không? — (2) Cộng các chữ số xem có chia hết cho 3 không. — (3) Thử tiếp 7, 11, 13; dừng khi thương bé hơn số chia.
+**Đáp số:** a) 1 000 · b) 1 000 · c) 605 · d) 495
+**Hướng giải:** BẪY — Bên trái hay bên phải. Viết số có ba chữ số dạng **a × 100 + b × 10 + c**. Xoá chữ số hàng trăm là bớt đi a × 100. Viết thêm chữ số 1 vào bên trái một số có ba chữ số là cộng thêm 1 000. Đổi chỗ hàng trăm với hàng đơn vị làm số thay đổi 99 lần hiệu hai chữ số đó.
+**Nhãn tư duy:** TD3, TD2. Điểm chốt: Thêm chữ số vào **bên trái** là cộng thêm; thêm vào **bên phải** là nhân 10 rồi cộng.
+**Lỗi thường gặp:** Nhầm “viết thêm bên trái” thành “viết thêm bên phải”. Phòng: Viết cả số cũ và số mới ra rồi mới so sánh.
+**Gợi ý 3 tầng:** (1) Viết số theo cấu tạo a × 100 + b × 10 + c. — (2) Viết số mới cũng theo cấu tạo như vậy. — (3) Trừ hai biểu thức, các phần giống nhau triệt tiêu.
 
 ### Bài IV.2
-**Đáp số:** a) 23 · b) 38 · c) 1 · d) 44
+**Đáp số:** a) 19 · b) 27 · c) 11 · d) 12 · e) 14
 **Hướng giải:** Liệt kê các số thoả điều kiện thứ nhất — chúng lập thành dãy cách đều khoảng cách bằng số chia thứ nhất. Đi dọc dãy đó, thử điều kiện thứ hai, gặp số đầu tiên thoả mãn thì dừng.
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Chỉ **đi dọc một dãy** rồi thử điều kiện còn lại, không thử tất cả số.
 **Lỗi thường gặp:** Thử từng số từ 1 trở đi nên quá lâu và dễ bỏ sót. Phòng: Viết dãy số thoả điều kiện thứ nhất trước, rồi mới lọc.
 **Gợi ý 3 tầng:** (1) Viết vài số chia cho số thứ nhất dư đúng như đề. — (2) Chúng cách đều nhau bao nhiêu đơn vị? — (3) Đi dọc dãy đó và kiểm tra điều kiện thứ hai.
 
 ### Bài IV.3
-**Đáp số:** a) 1 000 · b) 396 · c) 978 · d) 792
-**Hướng giải:** BẪY — Bên trái hay bên phải. Viết số có ba chữ số dạng **a × 100 + b × 10 + c**. Xoá chữ số hàng trăm là bớt đi a × 100. Viết thêm chữ số 1 vào bên trái một số có ba chữ số là cộng thêm 1 000. Đổi chỗ hàng trăm với hàng đơn vị làm số thay đổi 99 lần hiệu hai chữ số đó.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Thêm chữ số vào **bên trái** là cộng thêm; thêm vào **bên phải** là nhân 10 rồi cộng.
-**Lỗi thường gặp:** Nhầm “viết thêm bên trái” thành “viết thêm bên phải”. Phòng: Viết cả số cũ và số mới ra rồi mới so sánh.
-**Gợi ý 3 tầng:** (1) Viết số theo cấu tạo a × 100 + b × 10 + c. — (2) Viết số mới cũng theo cấu tạo như vậy. — (3) Trừ hai biểu thức, các phần giống nhau triệt tiêu.
+**Đáp số:** a) hợp số (ví dụ ước 2) · b) hợp số (ví dụ ước 7) · c) hợp số (ví dụ ước 5) · d) hợp số (ví dụ ước 2) · e) hợp số (ví dụ ước 5) · f) số nguyên tố · g) số nguyên tố · h) hợp số (ví dụ ước 2)
+**Hướng giải:** BẪY — 91, 121, 143 trông như số nguyên tố nhưng không phải. Số nguyên tố chỉ có đúng hai ước là 1 và chính nó. Để kiểm tra, thử chia lần lượt cho 2, 3, 5, 7, 11… và chỉ cần thử đến khi thương bé hơn hoặc bằng số chia là dừng được.
+**Nhãn tư duy:** TD2. Điểm chốt: Chỉ cần thử các **số nguyên tố nhỏ**, không phải thử mọi số.
+**Lỗi thường gặp:** Thử chia cho mọi số từ 2 đến số đó nên mất thời gian, hoặc kết luận vội. Phòng: Thử theo thứ tự 2, 3, 5, 7, 11, 13 và dừng đúng lúc.
+**Gợi ý 3 tầng:** (1) Số đó có chia hết cho 2 hay 5 không? — (2) Cộng các chữ số xem có chia hết cho 3 không. — (3) Thử tiếp 7, 11, 13; dừng khi thương bé hơn số chia.
 
 ### Bài IV.4
-**Đáp số:** a) 81 · b) 94 · c) 12, 24, 36, 48 · d) 84 · e) 21, 42, 63, 84
-**Hướng giải:** BẪY — Quên chữ số hàng cao nhất khác 0. Viết số theo cấu tạo: số có hai chữ số ab bằng a × 10 + b. Thay vào điều kiện đề cho rồi rút gọn — thường ra một quan hệ rất gọn giữa a và b.
-**Nhãn tư duy:** TD1, TD4. Điểm chốt: Chữ số hàng cao nhất **khác 0**, và mọi chữ số chỉ nhận giá trị từ 0 đến 9. Hai ràng buộc này thường là chỗ loại bớt đáp số.
-**Lỗi thường gặp:** Tính ra a bằng 0 rồi vẫn nhận, hoặc để một chữ số vượt quá 9. Phòng: Viết sẵn hai dòng ràng buộc lên đầu bài giải rồi mới tính.
-**Gợi ý 3 tầng:** (1) Số có hai chữ số ab viết theo cấu tạo là gì? — (2) Thay cấu tạo ấy vào điều kiện đề cho, rồi rút gọn. — (3) Kiểm lại: chữ số hàng chục có khác 0 không?
-
-### Bài IV.5
-**Đáp số:** a) Ngọc học bóng rổ; Quân học cầu lông; Trang học bóng đá · b) Khánh học bóng rổ; Phúc học cầu lông; Dũng học bóng đá · c) Thảo học hát; Vy học múa; Ngọc học đàn · d) Dũng học vẽ; Trang học bơi; Quân học cờ vua
+**Đáp số:** a) Quân học cầu lông; Trang học bóng rổ; Nam học bóng đá · b) Ngọc học tiếng Anh; Vy học tin học; Đức học mĩ thuật · c) Minh học tiếng Anh; Bình học tin học; Thảo học mĩ thuật · d) Dũng học hát; Vy học múa; Khánh học đàn · e) An học bơi; Phúc học cờ vua; Khánh học vẽ
 **Hướng giải:** BẪY — Đánh dấu đúng mà quên gạch phần còn lại. Mỗi dòng một người, mỗi cột một khả năng. Đánh × cho điều chắc chắn sai. Dòng nào chỉ còn một ô trống thì ô ấy là ✓ — và ngay sau đó phải gạch × cho cả cột chứa ô ấy.
 **Nhãn tư duy:** TD3, TD4. Điểm chốt: Đặt được một ✓ thì **cả dòng và cả cột** còn lại đều thành ×. Bỏ bước gạch cột là chỗ bài bị tắc giữa chừng.
 **Lỗi thường gặp:** Đánh ✓ rồi đi tiếp luôn, không gạch × cho phần còn lại của cột. Phòng: Sau mỗi lần đặt ✓, dừng lại gạch đủ dòng và cột rồi mới đọc manh mối kế.
 **Gợi ý 3 tầng:** (1) Kẻ bảng ba dòng ba cột trước đã. — (2) Manh mối nào cho biết chắc chắn một ô là sai? — (3) Dòng nào chỉ còn một ô trống thì ô ấy chính là đáp án của dòng ấy.
+
+### Bài IV.5
+**Đáp số:** a) 54 · b) 76 · c) 27 · d) 75 · e) 84 · f) 21, 42, 63, 84
+**Hướng giải:** BẪY — Quên chữ số hàng cao nhất khác 0. Viết số theo cấu tạo: số có hai chữ số ab bằng a × 10 + b. Thay vào điều kiện đề cho rồi rút gọn — thường ra một quan hệ rất gọn giữa a và b.
+**Nhãn tư duy:** TD1, TD4. Điểm chốt: Chữ số hàng cao nhất **khác 0**, và mọi chữ số chỉ nhận giá trị từ 0 đến 9. Hai ràng buộc này thường là chỗ loại bớt đáp số.
+**Lỗi thường gặp:** Tính ra a bằng 0 rồi vẫn nhận, hoặc để một chữ số vượt quá 9. Phòng: Viết sẵn hai dòng ràng buộc lên đầu bài giải rồi mới tính.
+**Gợi ý 3 tầng:** (1) Số có hai chữ số ab viết theo cấu tạo là gì? — (2) Thay cấu tạo ấy vào điều kiện đề cho, rồi rút gọn. — (3) Kiểm lại: chữ số hàng chục có khác 0 không?
 
 ### Bài V.1
 **Đáp số:** a) So sánh hai số tự nhiên · b) Thứ tự trong tập số tự nhiên · c) Dấu … giữa hai số, yêu cầu điền <, >, = · d) Đếm chữ số → so từng hàng từ trái sang phải · e) Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. · f) < · > · < · <…

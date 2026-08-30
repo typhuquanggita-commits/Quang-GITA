@@ -43,10 +43,10 @@ Phiếu lời giải và phân tích chuyên sâu đi kèm: `GITA-T1-L5-C04-NC-G
 Họ và tên: ......................................... Lớp: ......... Điểm: ......../100
 
 > **KIẾN THỨC NỀN CỦA CHƯƠNG**
-> 1. Tách phân số thành hiệu, phép trừ phân số
-> 2. Nhân một số với một tổng, một hiệu
-> 3. Tính chất nhân với 0, phép trừ hai số bằng nhau
-> 4. Kĩ thuật đặt tính, nhớ và mượn
+> 1. Cộng phân số cùng mẫu, phân số đảo ngược
+> 2. Tính chất phép tính với số thập phân
+> 3. Nhân một số với một tổng, một hiệu
+> 4. Kĩ thuật đặt tính nhân, chia
 
 ---
 
@@ -226,107 +226,109 @@ f) (x × 9 − 6) × 3 = 2 169
 
 Tính tổng mỗi biểu thức.
 
-a) 4 × 1 + 4 × 2 + 4 × 3 + … + 4 × 10
-b) 9 × 1 + 9 × 2 + 9 × 3 + … + 9 × 25
-c) 4 × 1 + 4 × 2 + 4 × 3 + … + 4 × 25
-d) 4 × 1 + 4 × 2 + 4 × 3 + … + 4 × 20
+a) 2 × 1 + 2 × 2 + 2 × 3 + … + 2 × 10
+b) 7 × 1 + 7 × 2 + 7 × 3 + … + 7 × 25
+c) 8 × 1 + 8 × 2 + 8 × 3 + … + 8 × 20
+d) 9 × 1 + 9 × 2 + 9 × 3 + … + 9 × 25
 
-### Bài 2. (5 điểm) Tìm x khi x xuất hiện ở cả hai vế
+### Bài 2. (5 điểm) Tổng, trung bình cộng của dãy cách đều
 
-Tìm x. Gợi ý: so sánh số lần x ở hai vế.
+Một dãy cách đều có 20 số hạng, khoảng cách 2 đơn vị, số hạng cuối là 100.
 
-a) x × 2 + 355 = x × 7
-b) x × 4 + 192 = x × 8
-c) x × 3 + 234 = x × 9
-d) x × 5 + 56 = x × 7
-e) x × 2 + 357 = x × 9
-f) x × 2 + 40 = x × 3
+a) Số hạng đầu của dãy là số nào?
+b) Số hạng cuối của dãy là số nào?
+c) Tổng của dãy bằng bao nhiêu?
+d) Trung bình cộng của dãy bằng bao nhiêu?
+e) Tổng của số hạng đầu và số hạng cuối bằng bao nhiêu?
+f) Tổng của số hạng thứ hai và số hạng áp chót bằng bao nhiêu?
 
 ### Bài 3. (5 điểm) Tính nhanh với số thập phân
 
 Tính bằng cách thuận tiện nhất.
 
-a) 8,5 × 5 + 8,5 × 5
-b) 3,2 × 9 + 3,2 × 1
-c) 8,9 + 10 + 1,1
-d) 5,7 × 4 × 25
-e) 9,9 × 7 + 9,9 × 3
-f) 9,4 + 28 + 0,6
+a) 5,4 × 4 × 25
+b) 1,7 × 4 × 25
+c) 1,1 × 5 + 1,1 × 5
+d) 3,2 × 9 + 3,2 × 1
+e) 8,9 + 10 + 1,1
+f) 5,7 × 4 × 25
 
-### Bài 4. (5 điểm) Nhận ra thừa số 0 để tính tức thì
+### Bài 4. (5 điểm) Tìm x khi x xuất hiện ở cả hai vế
+
+Tìm x. Gợi ý: so sánh số lần x ở hai vế.
+
+a) x × 7 + 42 = x × 8
+b) x × 4 + 24 = x × 8
+c) x × 4 + 64 = x × 5
+d) x × 8 + 45 = x × 9
+e) x × 6 + 261 = x × 9
+f) x × 4 + 252 = x × 7
+
+### Bài 5. (5 điểm) Nhận ra thừa số 0 để tính tức thì
 
 Tính bằng cách nhanh nhất.
 
-a) 31 × 70 × (99 − 99)
-b) (36 × 51 − 51 × 36) × 99
-c) 69 × 93 + 69 × 67 − 69 × (93 + 67)
-d) 48 × 90 × (53 − 53)
-e) 43 × 77 × (29 − 29)
-
-### Bài 5. (5 điểm) Biểu thức nhiều phép tính với phân số
-
-Tính giá trị biểu thức, rút gọn kết quả.
-
-a) (8 phần 13 + 7 phần 12) × 5 phần 8
-b) (12 phần 11 + 1) × 3 phần 8
-c) (4 phần 5 + 1) × 4 phần 13
-d) (1 phần 2 + 6 phần 7) × 6 phần 7
+a) 77 × 29 × (11 − 11)
+b) (99 × 69 − 69 × 99) × 94
+c) 66 × 44 + 66 × 22 − 66 × (44 + 22)
+d) 34 × 42 × (65 − 65)
+e) 12 × 40 × (41 − 41)
 
 ---
 
 ## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
 
-### Bài 1. (3 điểm) Tam giác chung chiều cao — tỉ số diện tích bằng tỉ số đáy
+### Bài 1. (3 điểm) Bán hai lần theo phân số, tìm số ban đầu
 
-Vẽ hình trước khi tính. Ghi rõ hai tam giác nào chung chiều cao.
+Trước khi tính, gạch chân xem mỗi phân số lấy trên số nào.
 
-a) Tam giác ABC có điểm M nằm trên cạnh BC sao cho BM bằng 2 phần 3 MC. Biết diện tích tam giác ABM là 24 cm², tính diện tích tam giác AMC và diện tích tam giác ABC.
-b) Tam giác ABC có điểm M nằm trên cạnh BC sao cho BM bằng 1 phần 4 MC. Biết diện tích tam giác ABM là 56 cm², tính diện tích tam giác AMC và diện tích tam giác ABC.
-c) Tam giác ABC có điểm M nằm trên cạnh BC sao cho BM bằng 4 phần 3 MC. Biết diện tích tam giác ABM là 72 cm², tính diện tích tam giác AMC và diện tích tam giác ABC.
-d) Tam giác ABC có điểm M nằm trên cạnh BC sao cho BM bằng 1 phần 4 MC. Biết diện tích tam giác ABM là 72 cm², tính diện tích tam giác AMC và diện tích tam giác ABC.
+a) Một rổ cam. Lần thứ nhất bán 1 phần 2 số cam trong rổ. Lần thứ hai bán 1 phần 3 **số cam còn lại sau lần thứ nhất**. Cuối cùng trong rổ còn 8 quả. Hỏi lúc đầu rổ có bao nhiêu quả cam?
+b) Một rổ cam. Lần thứ nhất bán 1 phần 2 số cam trong rổ. Lần thứ hai bán 1 phần 2 **số cam còn lại sau lần thứ nhất**. Cuối cùng trong rổ còn 20 quả. Hỏi lúc đầu rổ có bao nhiêu quả cam?
+c) Một rổ cam. Lần thứ nhất bán 1 phần 2 số cam trong rổ. Lần thứ hai bán 1 phần 4 **số cam còn lại sau lần thứ nhất**. Cuối cùng trong rổ còn 21 quả. Hỏi lúc đầu rổ có bao nhiêu quả cam?
+d) Một rổ cam. Lần thứ nhất bán 1 phần 3 số cam trong rổ. Lần thứ hai bán 1 phần 2 **số cam còn lại sau lần thứ nhất**. Cuối cùng trong rổ còn 4 quả. Hỏi lúc đầu rổ có bao nhiêu quả cam?
 
-### Bài 2. (3 điểm) Đại lượng khối lượng — đổi đơn vị và chia phần
+### Bài 2. (3 điểm) Tổng dãy phân số khử liên tiếp
 
-Đổi hết về ki-lô-gam trước khi tính.
+Tính tổng mỗi dãy.
 
-a) Một kho chứa 6 tấn 6 tạ 48 kg thóc. Đổi ra ki-lô-gam.
-b) Số thóc ấy nặng bao nhiêu tạ và bao nhiêu ki-lô-gam?
-c) Chở đều bằng 5 xe thì mỗi xe chở bao nhiêu ki-lô-gam, còn thừa bao nhiêu?
-d) Nếu mỗi xe chỉ chở được 1 tấn thì cần ít nhất bao nhiêu xe?
-e) Bán 3 324 kg thì còn lại bao nhiêu tạ và ki-lô-gam?
-f) Vì sao ở ý d phải làm tròn lên chứ không làm tròn xuống?
+a) 1 phần 2 + 1 phần 6 + 1 phần 12 + … + 1 phần 72
+b) 1 phần 2 + 1 phần 6 + 1 phần 12 + … + 1 phần 90
+c) 1 phần 2 + 1 phần 6 + 1 phần 12 + … + 1 phần 42
+d) 1 phần 2 + 1 phần 6 + 1 phần 12 + … + 1 phần 30
+e) 1 phần 2 + 1 phần 6 + 1 phần 12 + … + 1 phần 30
+f) 1 phần 2 + 1 phần 6 + 1 phần 12 + … + 1 phần 110
 
 ### Bài 3. (3 điểm) Kĩ thuật tách – bù để tính và so sánh
 
 Tính hoặc so sánh bằng cách khéo nhất, không tính hết.
 
-a) 980 × 22 − 979 × 22
-b) 573 × 31 − 572 × 31
-c) 839 × 11 − 838 × 11
-d) 351 × 353 … 352 × 352
-e) 506 × 26 − 505 × 26
-f) 336 × 338 … 337 × 337
+a) (475 + 32) × 32 − 475 × 32
+b) 422 × 21 − 421 × 21
+c) 758 × 22 − 757 × 22
+d) 573 × 31 − 572 × 31
+e) 839 × 11 − 838 × 11
+f) 351 × 353 … 352 × 352
 
-### Bài 4. (3 điểm) Tổng dãy phân số khử liên tiếp
-
-Tính tổng mỗi dãy.
-
-a) 1 phần 2 + 1 phần 6 + 1 phần 12 + … + 1 phần 90
-b) 1 phần 2 + 1 phần 6 + 1 phần 12 + … + 1 phần 42
-c) 1 phần 2 + 1 phần 6 + 1 phần 12 + … + 1 phần 156
-d) 1 phần 2 + 1 phần 6 + 1 phần 12 + … + 1 phần 90
-e) 1 phần 2 + 1 phần 6 + 1 phần 12 + … + 1 phần 156
-f) 1 phần 2 + 1 phần 6 + 1 phần 12 + … + 1 phần 30
-
-### Bài 5. (3 điểm) Tổng dãy cộng trừ xen kẽ
+### Bài 4. (3 điểm) Tổng dãy cộng trừ xen kẽ
 
 Tính giá trị mỗi biểu thức.
 
-a) 1 − 2 + 3 − 4 + 5 − 6 + … − 20
-b) 1 − 2 + 3 − 4 + 5 − 6 + … − 10
-c) 1 − 2 + 3 − 4 + 5 − 6 + … − 10
-d) 1 − 2 + 3 − 4 + 5 − 6 + … − 20
-e) 1 − 2 + 3 − 4 + 5 − 6 + … − 20
+a) 1 − 2 + 3 − 4 + 5 − 6 + … − 100
+b) 1 − 2 + 3 − 4 + 5 − 6 + … − 20
+c) 1 − 2 + 3 − 4 + 5 − 6 + … − 100
+d) 1 − 2 + 3 − 4 + 5 − 6 + … − 10
+e) 1 − 2 + 3 − 4 + 5 − 6 + … − 100
+
+### Bài 5. (3 điểm) Dãy phân số dạng n phần (n + 1)
+
+Quan sát phần bù tới 1 để so sánh.
+
+a) Viết bốn phân số đầu của dãy.
+b) Phân số thứ 8 của dãy là phân số nào?
+c) Các phân số của dãy này lớn hơn hay bé hơn 1?
+d) Dãy này tăng dần hay giảm dần?
+e) Vì sao dãy tăng dần?
+f) Phân số thứ 8 còn thiếu bao nhiêu nữa thì bằng 1?
 
 ---
 
@@ -425,74 +427,74 @@ e) 1 − 2 + 3 − 4 + 5 − 6 + … − 20
 **Lỗi thường gặp:** Nhân phá ngoặc sai dấu, hoặc gỡ phép trong ngoặc trước. Phòng: Ghi rõ từng bước trên một dòng riêng, mỗi dòng chỉ khác dòng trên một phép.
 
 ### Bài IV.1
-**Đáp số:** a) 220 · b) 2 925 · c) 1 300 · d) 840
+**Đáp số:** a) 110 · b) 2 275 · c) 1 680 · d) 2 925
 **Hướng giải:** Tất cả các tích đều có chung một thừa số. Đặt thừa số chung ra ngoài, trong ngoặc còn tổng của dãy số tự nhiên liên tiếp — dùng công thức tổng dãy cách đều để tính.
 **Nhãn tư duy:** TD3, TD4. Điểm chốt: Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
 **Lỗi thường gặp:** Nhân từng tích rồi cộng dồn, rất dài và dễ sai. Phòng: Viết lại biểu thức dưới dạng a × (1 + 2 + … + n) trước khi tính.
 **Gợi ý 3 tầng:** (1) Các tích có thừa số nào giống nhau? — (2) Đặt thừa số đó ra ngoài dấu ngoặc. — (3) Tổng trong ngoặc là dãy số cách đều — tính bằng công thức.
 
 ### Bài IV.2
-**Đáp số:** a) x = 71 · b) x = 48 · c) x = 39 · d) x = 28 · e) x = 51 · f) x = 40
-**Hướng giải:** Vế phải có nhiều x hơn vế trái. Bớt đi ở cả hai vế số lần x của vế ít hơn, phần chênh lệch số lần x ở vế phải chính bằng số hạng còn lại ở vế trái. Từ đó tìm x bằng một phép chia.
-**Nhãn tư duy:** TD3, TD6. Điểm chốt: Lấy **hiệu số lần x** giữa hai vế, rồi chia số đã biết cho hiệu đó.
-**Lỗi thường gặp:** Chuyển vế nhưng quên đổi dấu, hoặc trừ nhầm số lần x. Phòng: Vẽ sơ đồ đoạn thẳng: vế trái mấy đoạn x, vế phải mấy đoạn x.
-**Gợi ý 3 tầng:** (1) Vế trái có mấy lần x? Vế phải có mấy lần x? — (2) Vế phải hơn vế trái mấy lần x? — (3) Phần hơn đó ứng với số nào đã biết?
+**Đáp số:** a) 62 · b) 100 · c) 1 620 · d) 81 · e) 162 · f) 162
+**Hướng giải:** Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
+**Nhãn tư duy:** TD4, TD3. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
+**Lỗi thường gặp:** Tính tổng rồi chia — dài hơn và dễ sai khi số hạng nhiều. Phòng: Nhớ tính chất trung bình cộng để kiểm tra chéo kết quả tổng.
+**Gợi ý 3 tầng:** (1) Từ số hạng cuối lùi về số hạng đầu qua mấy khoảng? — (2) Trung bình cộng bằng nửa tổng của hai số hạng ở hai đầu. — (3) Tổng bằng trung bình cộng nhân số số hạng.
 
 ### Bài IV.3
-**Đáp số:** a) 85 · b) 32 · c) 20 · d) 570 · e) 99 · f) 38
+**Đáp số:** a) 540 · b) 170 · c) 11 · d) 32 · e) 20 · f) 570
 **Hướng giải:** BẪY — Vị trí dấu phẩy ở kết quả. Các tính chất giao hoán, kết hợp, nhân với một tổng đúng cả với số thập phân. Ghép cặp cộng lại tròn chục, ghép cặp nhân lại tròn trăm, đặt thừa số chung ra ngoài.
 **Nhãn tư duy:** TD5, TD3. Điểm chốt: Dấu phẩy không làm thay đổi các tính chất — cách làm giống hệt số tự nhiên.
 **Lỗi thường gặp:** Đặt dấu phẩy sai vị trí ở kết quả cuối. Phòng: Ước lượng độ lớn kết quả trước, dùng nó kiểm tra vị trí dấu phẩy.
 **Gợi ý 3 tầng:** (1) Có cặp nào cộng lại tròn chục không? — (2) Có thừa số chung ở hai tích không? — (3) Ước lượng kết quả trước để đặt đúng dấu phẩy.
 
 ### Bài IV.4
+**Đáp số:** a) x = 42 · b) x = 6 · c) x = 64 · d) x = 45 · e) x = 87 · f) x = 84
+**Hướng giải:** Vế phải có nhiều x hơn vế trái. Bớt đi ở cả hai vế số lần x của vế ít hơn, phần chênh lệch số lần x ở vế phải chính bằng số hạng còn lại ở vế trái. Từ đó tìm x bằng một phép chia.
+**Nhãn tư duy:** TD3, TD6. Điểm chốt: Lấy **hiệu số lần x** giữa hai vế, rồi chia số đã biết cho hiệu đó.
+**Lỗi thường gặp:** Chuyển vế nhưng quên đổi dấu, hoặc trừ nhầm số lần x. Phòng: Vẽ sơ đồ đoạn thẳng: vế trái mấy đoạn x, vế phải mấy đoạn x.
+**Gợi ý 3 tầng:** (1) Vế trái có mấy lần x? Vế phải có mấy lần x? — (2) Vế phải hơn vế trái mấy lần x? — (3) Phần hơn đó ứng với số nào đã biết?
+
+### Bài IV.5
 **Đáp số:** a) 0 · b) 0 · c) 0 · d) 0 · e) 0
 **Hướng giải:** BẪY — Biểu thức lớn nhưng kết quả bằng 0. Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu. Vì vậy phải quan sát toàn bộ biểu thức trước khi tính, tìm cụm nào có giá trị bằng 0.
 **Nhãn tư duy:** TD5, TD6. Điểm chốt: Quét tìm **cụm bằng 0** trước; thấy rồi thì viết đáp số ngay.
 **Lỗi thường gặp:** Lao vào nhân từng cặp số lớn rồi mới phát hiện kết quả bằng 0. Phòng: Đọc hết biểu thức một lượt, khoanh các cụm giống nhau bị trừ cho nhau.
 **Gợi ý 3 tầng:** (1) Có cụm nào trong ngoặc bằng 0 không? — (2) Có hai cụm giống hệt nhau bị trừ cho nhau không? — (3) Tích có một thừa số bằng 0 thì bằng bao nhiêu?
 
-### Bài IV.5
-**Đáp số:** a) 935 phần 1 248 · b) 69 phần 88 · c) 36 phần 65 · d) 57 phần 49
-**Hướng giải:** Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
-**Nhãn tư duy:** TD3, TD5. Điểm chốt: Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều.
-**Lỗi thường gặp:** Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. Phòng: Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút.
-**Gợi ý 3 tầng:** (1) Biểu thức có dấu ngoặc không? — (2) Có thừa số chung ở hai tích không? — (3) Làm nhân chia trước, cộng trừ sau.
-
 ### Bài V.1
-**Đáp số:** a) AMC = 36 cm²; ABC = 60 cm² · b) AMC = 224 cm²; ABC = 280 cm² · c) AMC = 54 cm²; ABC = 126 cm² · d) AMC = 288 cm²; ABC = 360 cm²
-**Hướng giải:** BẪY — So hai tam giác không chung chiều cao. Tìm hai tam giác **chung một đỉnh** và có hai đáy nằm trên cùng một đường thẳng. Khi ấy tỉ số diện tích bằng tỉ số hai đáy, và từ diện tích suy ra được độ dài hoặc ngược lại.
-**Nhãn tư duy:** TD4, TD6. Điểm chốt: Điều kiện bắt buộc là **chung chiều cao**. Thiếu điều kiện ấy thì tỉ số diện tích không còn bằng tỉ số đáy.
-**Lỗi thường gặp:** Đem so hai tam giác không chung đỉnh, hoặc hai đáy không cùng nằm trên một đường thẳng. Phòng: Chỉ vào đỉnh chung và vào đường thẳng chứa hai đáy trước khi lập tỉ số.
-**Gợi ý 3 tầng:** (1) Hai tam giác ấy có chung đỉnh nào không? — (2) Hai đáy của chúng có cùng nằm trên một đường thẳng không? — (3) Nếu có thì tỉ số diện tích bằng đúng tỉ số hai đáy.
+**Đáp số:** a) 24 quả · b) 80 quả · c) 56 quả · d) 12 quả
+**Hướng giải:** BẪY — Lấy phân số trên số ban đầu thay vì trên phần còn lại. Đi ngược từ số cuối. Ở mỗi bước, số hiện có ứng với phần còn lại sau khi bán, nên nhân với mẫu rồi chia cho phần còn lại. Tính xong bắt buộc thử lại theo chiều xuôi.
+**Nhãn tư duy:** TD3, TD5, TD6. Điểm chốt: Phân số của lần sau lấy trên **phần còn lại**, không lấy trên số ban đầu. Đây là bẫy chính của cả dạng bài.
+**Lỗi thường gặp:** Lấy cả hai phân số trên số ban đầu rồi cộng lại. Phòng: Thử lại theo chiều xuôi — bài này luôn thử lại được.
+**Gợi ý 3 tầng:** (1) Sau lần hai còn lại mấy phần mấy của số trước lần hai? — (2) Từ đó tính ngược ra số cam trước lần hai. — (3) Làm y như vậy một lần nữa để ra số ban đầu.
 
 ### Bài V.2
-**Đáp số:** a) 6 648 kg · b) 66 tạ 48 kg · c) 1 329 kg, thừa 3 kg · d) 7 xe · e) 33 tạ 24 kg · f) vì phần thóc còn lại vẫn cần thêm một xe nữa để chở
-**Hướng giải:** BẪY — Làm tròn lên khi hỏi số xe ít nhất. Quy hết về một đơn vị rồi mới tính. Với câu hỏi “cần ít nhất bao nhiêu xe”, phần dư vẫn phải có một xe chở, nên **làm tròn lên**.
-**Nhãn tư duy:** TD3, TD6. Điểm chốt: Câu hỏi “ít nhất bao nhiêu xe” luôn **làm tròn lên**.
-**Lỗi thường gặp:** Chia rồi lấy phần nguyên, bỏ quên phần dư vẫn cần một xe. Phòng: Hỏi lại: phần thóc dư có tự bay đi được không?
-**Gợi ý 3 tầng:** (1) Đổi tất cả về ki-lô-gam. — (2) Chia cho sức chở mỗi xe. — (3) Còn dư thì có cần thêm xe không?
-
-### Bài V.3
-**Đáp số:** a) 22 · b) 31 · c) 11 · d) < · e) 26 · f) <
-**Hướng giải:** Khi hai tích có các thừa số gần nhau, viết chúng theo cùng một số gốc rồi so phần chênh lệch. Khi hai tích cùng một thừa số, hiệu của chúng bằng thừa số chung nhân với hiệu hai thừa số kia.
-**Nhãn tư duy:** TD5, TD6. Điểm chốt: Đưa mọi số về **cùng một số gốc** rồi mới so hoặc trừ.
-**Lỗi thường gặp:** Nhân hết ra rồi mới so sánh — số lớn, dễ sai và mất thời gian. Phòng: Viết mỗi thừa số dưới dạng “số gốc cộng hoặc trừ mấy đơn vị”.
-**Gợi ý 3 tầng:** (1) Hai tích có thừa số nào giống nhau không? — (2) Viết các thừa số theo cùng một số gốc. — (3) Hiệu hai tích cùng thừa số chung bằng thừa số chung nhân hiệu hai thừa số kia.
-
-### Bài V.4
-**Đáp số:** a) 9 phần 10 · b) 6 phần 7 · c) 12 phần 13 · d) 9 phần 10 · e) 12 phần 13 · f) 5 phần 6
+**Đáp số:** a) 8 phần 9 · b) 9 phần 10 · c) 6 phần 7 · d) 5 phần 6 · e) 5 phần 6 · f) 10 phần 11
 **Hướng giải:** Mỗi mẫu số là tích của hai số tự nhiên liên tiếp: 2 = 1 × 2, 6 = 2 × 3, 12 = 3 × 4… Mỗi phân số dạng 1 phần (n × (n + 1)) tách được thành 1 phần n trừ 1 phần (n + 1). Khi cộng cả dãy, các phần giữa khử hết nhau, chỉ còn số hạng đầu và số hạng cuối.
 **Nhãn tư duy:** TD4, TD6. Điểm chốt: Tách mỗi phân số thành **hiệu hai phân số** rồi để chúng khử nhau.
 **Lỗi thường gặp:** Quy đồng cả dãy — mẫu số chung khổng lồ, không làm nổi. Phòng: Viết ba số hạng đầu dưới dạng hiệu để thấy quy luật khử trước khi viết cả dãy.
 **Gợi ý 3 tầng:** (1) Phân tích các mẫu số thành tích hai số liên tiếp. — (2) Tách 1 phần (n × (n + 1)) thành hiệu hai phân số. — (3) Viết cả dãy thành hiệu rồi xem phần nào khử nhau.
 
-### Bài V.5
-**Đáp số:** a) -10 · b) -5 · c) -5 · d) -10 · e) -10
+### Bài V.3
+**Đáp số:** a) 1 024 · b) 21 · c) 22 · d) 31 · e) 11 · f) <
+**Hướng giải:** BẪY — Hai tích trông bằng nhau nhưng không bằng. Khi hai tích có các thừa số gần nhau, viết chúng theo cùng một số gốc rồi so phần chênh lệch. Khi hai tích cùng một thừa số, hiệu của chúng bằng thừa số chung nhân với hiệu hai thừa số kia.
+**Nhãn tư duy:** TD5, TD6. Điểm chốt: Đưa mọi số về **cùng một số gốc** rồi mới so hoặc trừ.
+**Lỗi thường gặp:** Nhân hết ra rồi mới so sánh — số lớn, dễ sai và mất thời gian. Phòng: Viết mỗi thừa số dưới dạng “số gốc cộng hoặc trừ mấy đơn vị”.
+**Gợi ý 3 tầng:** (1) Hai tích có thừa số nào giống nhau không? — (2) Viết các thừa số theo cùng một số gốc. — (3) Hiệu hai tích cùng thừa số chung bằng thừa số chung nhân hiệu hai thừa số kia.
+
+### Bài V.4
+**Đáp số:** a) -50 · b) -10 · c) -50 · d) -5 · e) -50
 **Hướng giải:** Ghép hai số hạng liền nhau thành từng cặp: 1 − 2 = −1, 3 − 4 = −1… Mỗi cặp có giá trị như nhau. Đếm số cặp rồi nhân; nếu số số hạng lẻ thì còn dư một số hạng cuối cùng phải cộng thêm.
 **Nhãn tư duy:** TD4, TD6. Điểm chốt: Ghép cặp từ **đầu dãy**; số số hạng lẻ thì luôn dư đúng một số hạng cuối.
 **Lỗi thường gặp:** Ghép cặp nhưng quên số hạng lẻ còn thừa ở cuối. Phòng: Đếm số số hạng trước, xác định chẵn hay lẻ rồi mới ghép cặp.
 **Gợi ý 3 tầng:** (1) Dãy có bao nhiêu số hạng? — (2) Ghép hai số hạng liền nhau, mỗi cặp bằng bao nhiêu? — (3) Số số hạng là chẵn hay lẻ? Có số hạng nào lẻ ra không?
+
+### Bài V.5
+**Đáp số:** a) 1 phần 2 · 2 phần 3 · 3 phần 4 · 4 phần 5 · b) 8 phần 9 · c) đều bé hơn 1 · d) tăng dần · e) vì phần bù tới 1 là 1 phần (n + 1) càng lúc càng bé · f) 1 phần 9
+**Hướng giải:** Phân số dạng n phần (n + 1) luôn bé hơn 1 và còn thiếu đúng 1 phần (n + 1) nữa thì bằng 1. Phần thiếu càng bé thì phân số càng lớn — đó là kỹ thuật **so sánh bằng phần bù**.
+**Nhãn tư duy:** TD6, TD5. Điểm chốt: Phần bù **bé hơn** nghĩa là phân số **lớn hơn**.
+**Lỗi thường gặp:** So phần bù rồi kết luận cùng chiều với phần bù. Phòng: Nghĩ tới chiếc bánh: thiếu ít hơn thì phần đang có nhiều hơn.
+**Gợi ý 3 tầng:** (1) Mỗi phân số còn thiếu bao nhiêu nữa thì bằng 1? — (2) Phần thiếu ấy thay đổi thế nào khi n tăng? — (3) Thiếu ít hơn thì phân số lớn hơn.
 
 ---
 

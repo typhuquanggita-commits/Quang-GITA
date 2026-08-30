@@ -86,43 +86,43 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 
 Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: đây là dạng bài gì, và dấu hiệu nào cho biết điều đó.
 
-**Đề 1.** Trình bày lời giải có câu trả lời cho từng bước. Một cửa hàng có 15 bao gạo, mỗi bao 40 kg. Giá mỗi ki-lô-gam là 18 000 đồng. Bán hết số gạo ấy được bao nhiêu tiền?
+**Đề 1.** Đổi hết về phút rồi tính, cuối cùng mới đổi lại giờ và phút. Buổi học bắt đầu lúc 9 giờ 30 phút. Mỗi tiết 45 phút, nghỉ giữa hai tiết 10 phút. Học 4 tiết thì tan lúc mấy giờ?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 2.** Kẻ một bảng lịch nhỏ ra nháp rồi trả lời. Tháng 6 năm 2030 có bao nhiêu ngày?
+**Đề 2.** Trình bày lời giải có câu trả lời cho từng bước. Một cửa hàng có 17 bao gạo, mỗi bao 40 kg. Giá mỗi ki-lô-gam là 15 000 đồng. Bán hết số gạo ấy được bao nhiêu tiền?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 3.** Điền vào chỗ chấm. 5 866 kg = … tấn … tạ … kg
+**Đề 3.** Ghi rõ đơn vị đồng ở mọi kết quả. Mua 3 quyển vở, mỗi quyển 8 000 đồng. Hết bao nhiêu tiền?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 4.** Suy nghĩ theo số lần chứa. Một chiếc cân đĩa chỉ có các quả cân loại 100 g. Muốn cân một vật nặng 200 g thì cần bao nhiêu quả cân như thế?
+**Đề 4.** Điền số hoặc dấu thích hợp. 10 l 472 ml = … ml
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 5.** Đổi hết về phút rồi tính, cuối cùng mới đổi lại giờ và phút. Buổi học bắt đầu lúc 7 giờ 0 phút. Mỗi tiết 45 phút, nghỉ giữa hai tiết 15 phút. Học 2 tiết thì tan lúc mấy giờ?
+**Đề 5.** Điền vào chỗ chấm. 1 713 kg = … tấn … tạ … kg
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 6.** Điền số hoặc dấu thích hợp. 8 l 895 ml = … ml
+**Đề 6.** Điền số thích hợp. 63 kg = … g
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 7.** Ghi kết quả theo giờ và phút. Bây giờ là 1 giờ 45 phút. Sau 40 phút nữa là mấy giờ?
+**Đề 7.** Điền kết quả, viết dạng giờ và phút. 5 giờ 23 phút − 27 phút = … (viết dạng giờ và phút)
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 8.** Điền số thích hợp. 67 km = … m
+**Đề 8.** Trình bày lời giải cho từng bước. Có 9 gói kẹo, mỗi gói 500 g. Lấy ra 3 gói. Hỏi số kẹo còn lại nặng bao nhiêu gam?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 9.** Điền kết quả, viết dạng giờ và phút. 8 giờ 49 phút − 31 phút = … (viết dạng giờ và phút)
+**Đề 9.** Ghi kết quả theo giờ và phút. 8 giờ 35 phút = … phút
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 10.** Điền số thích hợp vào chỗ chấm. 78 kg = … g
+**Đề 10.** Điền số thích hợp vào chỗ chấm. 16 kg = … g
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
@@ -132,15 +132,15 @@ Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: 
 
 | # | Dạng bài | Dấu hiệu |
 |:--:|---|---|
-| 1 | Bài toán đại lượng nhiều bước | Cho số nhóm, giá trị mỗi nhóm và một thao tác thêm bớt |
-| 2 | Lịch, tháng, năm nhuận | Đề nhắc tới ngày, tháng, thứ trong tuần |
-| 3 | Số đo có nhiều đơn vị | Số đo viết dưới dạng “… tấn … tạ … kg” |
-| 4 | Bài toán cân, chia hết | Cân đĩa với một loại quả cân |
-| 5 | Thời gian biểu, cộng thời gian | Có nhiều tiết học và thời gian nghỉ giữa các tiết |
-| 6 | Đổi và so sánh đơn vị dung tích | Có chữ l, ml trong đề |
-| 7 | Tính thời gian trong ngày | Có chữ “giờ”, “phút”, “sau … phút nữa” |
-| 8 | Đổi đơn vị đo | Hai đơn vị khác nhau nối bởi dấu … |
-| 9 | Đổi và tính toán với đơn vị thời gian | Số đo có chữ “giờ”, “phút”, “giây” |
+| 1 | Thời gian biểu, cộng thời gian | Có nhiều tiết học và thời gian nghỉ giữa các tiết |
+| 2 | Bài toán đại lượng nhiều bước | Cho số nhóm, giá trị mỗi nhóm và một thao tác thêm bớt |
+| 3 | Bài toán tiền tệ hai bước | “Đưa … đồng”, “trả lại”, “đổi ra tờ …” |
+| 4 | Đổi và so sánh đơn vị dung tích | Có chữ l, ml trong đề |
+| 5 | Số đo có nhiều đơn vị | Số đo viết dưới dạng “… tấn … tạ … kg” |
+| 6 | Đổi đơn vị đo | Hai đơn vị khác nhau nối bởi dấu … |
+| 7 | Đổi và tính toán với đơn vị thời gian | Số đo có chữ “giờ”, “phút”, “giây” |
+| 8 | Bài toán đại lượng hai bước | Cho số nhóm, khối lượng mỗi nhóm, số nhóm đã lấy |
+| 9 | Tính thời gian trong ngày | Có chữ “giờ”, “phút”, “sau … phút nữa” |
 | 10 | Đổi đơn vị đo | Dấu … giữa hai đơn vị khác nhau |
 
 ---

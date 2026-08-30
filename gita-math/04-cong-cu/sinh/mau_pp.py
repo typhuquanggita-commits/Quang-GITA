@@ -831,3 +831,563 @@ def pp_g_m4_02(rng, lop):
         mo_rong="Thêm bạn thứ tư và môn thứ tư, cùng một manh mối dạng “bạn X học "
                 "môn mà bạn Y không học”.",
         chuan_bi="Đọc hiểu câu phủ định và cách kẻ bảng hai chiều.")
+
+
+# ═══════════════════════════════════════════════════════════════════
+#  MỨC M5 — CHỖ PHÂN HOÁ HỌC SINH GIỎI
+#
+#  Mỗi mẫu dưới đây **ghép hai phương pháp** vào một bài. Đó đúng là hình dạng
+#  của câu chốt trong đề thi vào lớp 6 trường chuyên: không có bài nào chỉ đòi
+#  một thủ pháp, mà luôn đòi nhận ra thủ pháp thứ nhất, dùng nó để rút gọn, rồi
+#  mới thấy thủ pháp thứ hai. Học sinh thuộc từng phương pháp rời vẫn tắc ở đây
+#  nếu chưa bao giờ luyện việc nối hai phương pháp lại.
+# ═══════════════════════════════════════════════════════════════════
+
+@dang_ky("PP-A-M5-01", "A", "M5", lop=(5,),
+         tu_khoa=("dùng chữ thay số", "thử chọn", "số có ba chữ số", "chữ thay số"),
+         dang_bai=("Dùng chữ thay số", "Thử chọn",
+                   "Tìm số có ba chữ số thoả nhiều điều kiện"),
+         bay="Bỏ sót nghiệm hoặc nhận nghiệm có chữ số hàng trăm bằng 0")
+def pp_a_m5_01(rng, lop):
+    """Ghép dùng chữ thay số với thử chọn — số có ba chữ số, ba điều kiện."""
+    y, buoc = [], []
+    for k in range(rng.randint(4, 5)):
+        t = rng.randint(9, 20)                 # tổng ba chữ số
+        d = rng.choice([3, 4, 6, 9])           # chia hết cho d
+        ds = [n for n in range(100, 1000)
+              if sum(map(int, str(n))) == t and n % d == 0
+              and int(str(n)[0]) > int(str(n)[2])]
+        while not ds:
+            t = rng.randint(9, 20)
+            d = rng.choice([3, 4, 6, 9])
+            ds = [n for n in range(100, 1000)
+                  if sum(map(int, str(n))) == t and n % d == 0
+                  and int(str(n)[0]) > int(str(n)[2])]
+        de = (f"Tìm mọi số có ba chữ số abc thoả cả ba điều kiện: tổng ba chữ số "
+              f"bằng {sv(t)}; số đó chia hết cho {sv(d)}; chữ số hàng trăm lớn hơn "
+              f"chữ số hàng đơn vị.")
+        dap = ", ".join(sv(n) for n in ds[:8]) + ("…" if len(ds) > 8 else "")
+        if k == 0:
+            buoc = [
+                "Bài này đòi **hai phương pháp nối nhau**. Một mình thử chọn thì "
+                "phải xét 900 số — quá nhiều. Một mình dùng chữ thay số thì ra "
+                "quan hệ nhưng chưa ra số. Phải dùng cả hai.",
+                f"Dùng chữ thay số trước: viết abc = a × 100 + b × 10 + c. Điều "
+                f"kiện tổng chữ số bằng {sv(t)} cho a + b + c = {sv(t)}.",
+                f"Điều kiện chia hết cho {sv(d)} kết hợp với tổng chữ số "
+                f"{sv(t)} thu hẹp mạnh danh sách — chỉ còn các số mà tổng chữ số "
+                f"vừa bằng {sv(t)} vừa thoả dấu hiệu chia hết.",
+                "Bây giờ mới thử chọn trên danh sách đã ngắn, và lọc nốt bằng "
+                "điều kiện thứ ba a > c.",
+                f"Kết quả: **{dap}** — tất cả {sv(len(ds))} số. Nhớ kiểm a khác 0 "
+                f"vì a là chữ số hàng trăm.",
+            ]
+        y.append((de, dap))
+    return Bai(
+        tieu_de="Tìm số có ba chữ số thoả ba điều kiện",
+        dan="Ghi rõ đã dùng điều kiện nào để thu hẹp trước. Đáp số thường gồm "
+            "nhiều số.",
+        y=y, giai_mau=buoc,
+        huong_giai="Viết cấu tạo số theo chữ để đọc ra quan hệ giữa các chữ số, "
+                   "rồi dùng điều kiện chặt nhất thu hẹp danh sách trước khi thử. "
+                   "Thử chọn mà không thu hẹp trước là phải xét gần một nghìn số.",
+        td=["TD1", "TD3", "TD4"],
+        diem_chot="Ghép hai phương pháp theo đúng thứ tự: **rút gọn trước, thử sau**.",
+        loi="Thử luôn từ 100 đến 999, hết giờ mà chưa xong.",
+        phong="Trước khi thử, tự hỏi điều kiện nào cho ít khả năng nhất.",
+        goi_y=("Viết cấu tạo số abc theo chữ.",
+               "Trong ba điều kiện, điều kiện nào cho ít số nhất?",
+               "Lọc bằng điều kiện ấy rồi mới thử hai điều kiện còn lại."),
+        pt_dang="Dùng chữ thay số kết hợp thử chọn",
+        pt_kien_thuc="Cấu tạo thập phân; dấu hiệu chia hết; đếm có hệ thống",
+        pt_du_lieu="Đề đòi một số thoả **ba điều kiện trở lên** trên các chữ số",
+        pt_phuong_phap="Dùng chữ thay số để rút gọn, rồi thử chọn trên danh sách đã ngắn",
+        pt_nhanh="Tổng ba chữ số cố định thì dấu hiệu chia hết cho 3 và 9 kiểm được ngay "
+                 "trên tổng ấy, không cần chia thử từng số.",
+        tuong_tu=("Tìm số có ba chữ số chia hết cho 9, tổng ba chữ số bằng 18, "
+                  "chữ số hàng trăm lớn hơn hàng đơn vị.",
+                  "Gồm nhiều số, chẳng hạn 981, 972, 963"),
+        mo_rong="Thêm điều kiện chữ số hàng chục là số chẵn, để phải lọc bốn lần.",
+        chuan_bi="Cấu tạo số có ba chữ số và dấu hiệu chia hết cho 3, 4, 9.")
+
+
+@dang_ky("PP-D-M5-03", "D", "M5", lop=(5,),
+         tu_khoa=("giả thiết tạm", "thay thế", "ba loại", "phương pháp thế"),
+         dang_bai=("Phương pháp thay thế", "Giả thiết tạm",
+                   "Bài toán ba loại vật có quan hệ đổi ngang"),
+         thuc_te=True, bay="Đổi xong quên đổi ngược đủ cả ba loại")
+def pp_d_m5_03(rng, lop):
+    """Ghép thay thế với giả thiết tạm — ba loại vật, hai quan hệ đổi ngang."""
+    y, buoc = [], []
+    for k in range(rng.randint(4, 5)):
+        k1 = rng.randint(2, 4)          # 1 loại vừa = k1 loại nhỏ
+        k2 = rng.randint(2, 3)          # 1 loại lớn = k2 loại vừa
+        n_lon, n_vua, n_nho = (rng.randint(2, 5), rng.randint(3, 7),
+                               rng.randint(4, 10))
+        gia_nho = rng.randrange(2, 12) * 1000
+        tong_nho = n_lon * k1 * k2 + n_vua * k1 + n_nho
+        tong = tong_nho * gia_nho
+        de = (f"Mua {sv(n_lon)} hộp lớn, {sv(n_vua)} hộp vừa và {sv(n_nho)} hộp nhỏ "
+              f"hết {sv(tong)} đồng. Biết một hộp vừa bằng giá {sv(k1)} hộp nhỏ, "
+              f"và một hộp lớn bằng giá {sv(k2)} hộp vừa. Tính giá mỗi loại hộp.")
+        dap = (f"nhỏ {sv(gia_nho)} đồng; vừa {sv(k1 * gia_nho)} đồng; "
+               f"lớn {sv(k1 * k2 * gia_nho)} đồng")
+        if k == 0:
+            buoc = [
+                "Ba loại và hai quan hệ đổi ngang. Quy tắc: **đổi hết về loại nhỏ "
+                "nhất**, vì mọi quan hệ đều dẫn được về nó.",
+                f"Một hộp lớn = {sv(k2)} hộp vừa = {sv(k2)} × {sv(k1)} = "
+                f"{sv(k1 * k2)} hộp nhỏ.",
+                f"Đổi cả đơn hàng về hộp nhỏ: {sv(n_lon)} × {sv(k1 * k2)} + "
+                f"{sv(n_vua)} × {sv(k1)} + {sv(n_nho)} = {sv(tong_nho)} (hộp nhỏ).",
+                f"Giá một hộp nhỏ: {sv(tong)} : {sv(tong_nho)} = {sv(gia_nho)} (đồng).",
+                f"Đổi ngược **đủ cả hai loại còn lại** — đây là chỗ hay sót: hộp "
+                f"vừa {sv(gia_nho)} × {sv(k1)} = {sv(k1 * gia_nho)} đồng; hộp lớn "
+                f"{sv(k1 * gia_nho)} × {sv(k2)} = **{sv(k1 * k2 * gia_nho)} đồng**.",
+            ]
+        y.append((de, dap))
+    return Bai(
+        tieu_de="Ba loại hộp, hai quan hệ đổi ngang",
+        dan="Ghi rõ đã chọn loại nào làm chuẩn, và đổi ngược đủ cả ba loại.",
+        y=y, giai_mau=buoc,
+        huong_giai="Nối hai quan hệ đổi ngang lại để đưa loại lớn nhất về loại nhỏ "
+                   "nhất, rồi quy cả đơn hàng về loại nhỏ. Giải xong đổi ngược "
+                   "theo đúng thứ tự ngược lại.",
+        td=["TD2", "TD5", "TD6"],
+        diem_chot="Nối hai quan hệ là phép **nhân**, không phải phép cộng: một lớn "
+                  "bằng k₁ × k₂ nhỏ, không phải k₁ + k₂ nhỏ.",
+        loi="Cộng hai hệ số đổi ngang, hoặc chỉ đổi ngược một loại rồi dừng.",
+        phong="Vẽ ba mức thành ba tầng, ghi hệ số trên mỗi mũi tên.",
+        goi_y=("Một hộp lớn bằng bao nhiêu hộp nhỏ?",
+               "Đổi cả đơn hàng về hộp nhỏ thì được bao nhiêu hộp?",
+               "Đề hỏi giá mấy loại? Đổi ngược đủ chừng ấy loại."),
+        pt_dang="Phương pháp thay thế",
+        pt_kien_thuc="Quan hệ gấp – kém bắc cầu; nhân, chia",
+        pt_du_lieu="Đề cho **ba loại** và **hai quan hệ đổi ngang** nối tiếp nhau",
+        pt_phuong_phap="Bắc cầu hai quan hệ, quy hết về loại nhỏ nhất, giải, rồi đổi ngược",
+        pt_nhanh="Hệ số từ loại lớn về loại nhỏ là tích của hai hệ số trung gian.",
+        tuong_tu=("Mua 2 hộp lớn, 3 hộp vừa, 4 hộp nhỏ hết 260 000 đồng. Một hộp vừa "
+                  "bằng 2 hộp nhỏ, một hộp lớn bằng 3 hộp vừa. Tính giá hộp nhỏ.",
+                  "10 000 đồng"),
+        mo_rong="Thêm loại thứ tư để phải bắc cầu ba lần.",
+        chuan_bi="Quan hệ gấp – kém và phép chia hết.")
+
+
+@dang_ky("PP-B-M5-01", "B", "M5", lop=(5,),
+         tu_khoa=("tính ngược", "ngược từ cuối", "phân số", "sơ đồ mũi tên"),
+         dang_bai=("Tính ngược từ cuối", "Bài toán chia phần còn lại",
+                   "Bài toán tìm số ban đầu qua nhiều lần chia"),
+         bay="Lấy phân số trên số ban đầu thay vì trên phần còn lại")
+def pp_b_m5_01(rng, lop):
+    """Ghép tính ngược từ cuối với phân số — bài chia phần còn lại kinh điển."""
+    y, buoc = [], []
+    for k in range(rng.randint(4, 5)):
+        # Dựng ngược từ số cuối để mọi bước đều chia hết.
+        con = rng.randint(3, 20)
+        m1, m2 = rng.choice([(2, 2), (2, 3), (3, 2), (3, 3), (2, 4)])
+        b2 = con * m2 // (m2 - 1) if (con * m2) % (m2 - 1) == 0 else None
+        if b2 is None:
+            con = (m2 - 1) * rng.randint(2, 8)
+            b2 = con * m2 // (m2 - 1)
+        b1 = b2 * m1 // (m1 - 1) if (b2 * m1) % (m1 - 1) == 0 else None
+        if b1 is None:
+            b2 = (m1 - 1) * ((b2 // (m1 - 1)) + 1)
+            con = b2 * (m2 - 1) // m2
+            b1 = b2 * m1 // (m1 - 1)
+        de = (f"Một rổ cam. Lần thứ nhất bán {ps(__import__('fractions').Fraction(1, m1))} "
+              f"số cam trong rổ. Lần thứ hai bán "
+              f"{ps(__import__('fractions').Fraction(1, m2))} **số cam còn lại sau "
+              f"lần thứ nhất**. Cuối cùng trong rổ còn {sv(con)} quả. Hỏi lúc đầu "
+              f"rổ có bao nhiêu quả cam?")
+        dap = f"{sv(b1)} quả"
+        if k == 0:
+            buoc = [
+                f"Chỗ bẫy nằm ngay ở đề: lần hai bán một phần {sv(m2)} của **số "
+                f"còn lại**, không phải của số ban đầu. Đọc sót chữ ấy là sai cả bài.",
+                f"Đi ngược từ cuối. Sau lần hai còn {sv(con)} quả, mà lần hai bán "
+                f"một phần {sv(m2)} nên {sv(con)} quả ứng với {sv(m2 - 1)} phần "
+                f"{sv(m2)} số cam trước lần hai.",
+                f"Số cam trước lần hai: {sv(con)} : {sv(m2 - 1)} × {sv(m2)} = "
+                f"{sv(b2)} (quả).",
+                f"Tương tự, {sv(b2)} quả ứng với {sv(m1 - 1)} phần {sv(m1)} số cam "
+                f"ban đầu.",
+                f"Số cam ban đầu: {sv(b2)} : {sv(m1 - 1)} × {sv(m1)} = "
+                f"**{sv(b1)} quả**. Thử lại xuôi để chắc chắn.",
+            ]
+        y.append((de, dap))
+    return Bai(
+        tieu_de="Bán hai lần theo phân số, tìm số ban đầu",
+        dan="Trước khi tính, gạch chân xem mỗi phân số lấy trên số nào.",
+        y=y, giai_mau=buoc,
+        huong_giai="Đi ngược từ số cuối. Ở mỗi bước, số hiện có ứng với phần còn "
+                   "lại sau khi bán, nên nhân với mẫu rồi chia cho phần còn lại. "
+                   "Tính xong bắt buộc thử lại theo chiều xuôi.",
+        td=["TD3", "TD5", "TD6"],
+        diem_chot="Phân số của lần sau lấy trên **phần còn lại**, không lấy trên "
+                  "số ban đầu. Đây là bẫy chính của cả dạng bài.",
+        loi="Lấy cả hai phân số trên số ban đầu rồi cộng lại.",
+        phong="Thử lại theo chiều xuôi — bài này luôn thử lại được.",
+        goi_y=("Sau lần hai còn lại mấy phần mấy của số trước lần hai?",
+               "Từ đó tính ngược ra số cam trước lần hai.",
+               "Làm y như vậy một lần nữa để ra số ban đầu."),
+        pt_dang="Tính ngược từ cuối",
+        pt_kien_thuc="Phân số của một số; phép chia; tính ngược",
+        pt_du_lieu="Đề bán hoặc dùng nhiều lần, lần sau lấy trên **phần còn lại**",
+        pt_phuong_phap="Đi ngược từ số cuối, mỗi bước nhân mẫu chia cho phần còn lại",
+        pt_nhanh="Bán một phần m thì còn (m − 1) phần m — nhân ngược bằng "
+                 "m : (m − 1) cho mỗi lần.",
+        tuong_tu=("Bán 1/2 số cam, rồi bán 1/3 số còn lại, cuối cùng còn 10 quả. "
+                  "Lúc đầu có bao nhiêu quả?",
+                  "30 quả"),
+        mo_rong="Thêm lần bán thứ ba, hoặc cho lần cuối bán thêm một số quả lẻ.",
+        chuan_bi="Tìm phân số của một số và bài toán tính ngược một bước.")
+
+
+@dang_ky("PP-G-M5-01", "G", "M5", lop=(5,),
+         tu_khoa=("lập bảng", "suy luận", "bảng đúng sai", "xét trường hợp"),
+         dang_bai=("Lập bảng", "Xét trường hợp",
+                   "Bài toán ghép bốn người với bốn thuộc tính"),
+         bay="Xét thiếu trường hợp khi manh mối không chốt được ngay")
+def pp_g_m5_01(rng, lop):
+    """Ghép lập bảng với xét trường hợp — bốn người, hai thuộc tính."""
+    y, buoc = [], []
+    MON = ("Toán", "Văn", "Anh", "Tin")
+    GIAI = ("nhất", "nhì", "ba", "khuyến khích")
+    for k in range(rng.randint(4, 5)):
+        ng = rng.sample(TEN, 4)
+        mon = rng.sample(MON, 4)
+        giai = rng.sample(GIAI, 4)
+        xm = dict(zip(ng, mon))
+        xg = dict(zip(ng, giai))
+        # Bốn manh mối đủ chốt duy nhất: hai phủ định môn, một nối môn với giải,
+        # một phủ định giải.
+        de = (f"Bốn bạn {', '.join(ng)} mỗi bạn thi một môn khác nhau trong bốn môn "
+              f"{', '.join(mon)} và mỗi bạn được một giải khác nhau trong bốn giải "
+              f"{', '.join(giai)}. Biết rằng: "
+              f"(1) {ng[0]} không thi {xm[ng[1]]} và không thi {xm[ng[2]]}; "
+              f"(2) {ng[1]} không thi {xm[ng[2]]} và không thi {xm[ng[3]]}; "
+              f"(3) {ng[3]} thi {xm[ng[3]]}; "
+              f"(4) bạn thi {xm[ng[0]]} được giải {xg[ng[0]]}, bạn thi {xm[ng[1]]} "
+              f"được giải {xg[ng[1]]}, và {ng[2]} không được giải {xg[ng[3]]}. "
+              f"Hỏi mỗi bạn thi môn gì và được giải gì?")
+        dap = "; ".join(f"{n} thi {xm[n]} được giải {xg[n]}" for n in ng)
+        if k == 0:
+            buoc = [
+                "Bài hai tầng: vừa ghép người với môn, vừa ghép người với giải. "
+                "Kẻ **hai bảng** chứ đừng cố nhét vào một bảng.",
+                f"Bảng môn — manh mối (3) cho ngay một dấu ✓: {ng[3]} thi "
+                f"{xm[ng[3]]}. Gạch × cả dòng {ng[3]} và cả cột {xm[ng[3]]}.",
+                f"Manh mối (1) gạch hai ô của dòng {ng[0]}; cùng với cột vừa gạch, "
+                f"dòng {ng[0]} chỉ còn một ô: {ng[0]} thi {xm[ng[0]]}.",
+                f"Manh mối (2) làm tương tự cho {ng[1]}, còn lại {ng[2]} nhận môn "
+                f"cuối cùng.",
+                f"Sang bảng giải: manh mối (4) nối môn với giải, mà môn thì vừa "
+                f"biết, nên suy được giải của {ng[0]} và {ng[1]}. Hai người còn "
+                f"lại chỉ còn hai giải; manh mối cuối loại một khả năng, ra duy nhất.",
+                f"Kết quả: **{dap}**.",
+            ]
+        y.append((de, dap))
+    return Bai(
+        tieu_de="Bốn bạn, bốn môn, bốn giải",
+        dan="Kẻ hai bảng riêng: một bảng người – môn, một bảng người – giải.",
+        y=y, giai_mau=buoc,
+        huong_giai="Bài hai tầng thì kẻ hai bảng và giải tầng nào chốt được trước. "
+                   "Kết quả tầng một trở thành manh mối cho tầng hai. Khi một tầng "
+                   "còn hai khả năng ngang nhau thì xét cả hai trường hợp rồi loại.",
+        td=["TD3", "TD4", "TD6"],
+        diem_chot="Giải xong bảng thứ nhất mới có đủ dữ kiện cho bảng thứ hai — "
+                  "không cố giải song song hai bảng cùng lúc.",
+        loi="Nhét cả hai tầng vào một bảng rồi rối, hoặc bỏ sót một trường hợp.",
+        phong="Mỗi lần đặt ✓ thì gạch đủ dòng và cột trước khi đọc manh mối kế.",
+        goi_y=("Manh mối nào cho biết chắc chắn một ô là đúng?",
+               "Giải xong bảng môn thì bảng giải có thêm dữ kiện gì?",
+               "Nếu còn hai khả năng thì xét cả hai rồi loại bằng manh mối cuối."),
+        pt_dang="Lập bảng",
+        pt_kien_thuc="Suy luận loại trừ hai tầng; xét trường hợp",
+        pt_du_lieu="Đề ghép **hai thuộc tính** cho cùng một nhóm người",
+        pt_phuong_phap="Kẻ hai bảng, giải tầng chốt được trước, dùng kết quả làm "
+                       "manh mối cho tầng sau",
+        pt_nhanh="Manh mối dạng khẳng định luôn dùng trước manh mối dạng phủ định.",
+        tuong_tu=("Ba bạn thi ba môn và được ba giải. An không thi Toán; bạn thi "
+                  "Toán được giải nhất; Bình không được giải nhất. Suy ra ai thi gì.",
+                  "Chi thi Toán được giải nhất; An và Bình nhận hai môn còn lại"),
+        mo_rong="Thêm tầng thứ ba — trường của mỗi bạn — để phải kẻ ba bảng.",
+        chuan_bi="Bảng đúng – sai một tầng và cách đọc câu phủ định.")
+
+
+@dang_ky("PP-H-M5-01", "H", "M5", lop=(5,),
+         tu_khoa=("biểu đồ ven", "ba vòng tròn", "bù trừ", "đếm không trùng"),
+         dang_bai=("Biểu đồ Ven", "Nguyên lý bù trừ ba nhóm",
+                   "Bài toán đếm ba nhóm có phần chung"),
+         thuc_te=True, bay="Trừ hai lần phần chung của cả ba nhóm")
+def pp_h_m5_01(rng, lop):
+    """Biểu đồ Ven ba vòng — nguyên lý bù trừ."""
+    y, buoc = [], []
+    for k in range(rng.randint(4, 5)):
+        abc = rng.randint(2, 6)                    # cả ba
+        ab, bc, ca = (rng.randint(3, 9) for _ in range(3))   # đúng hai (ngoài abc)
+        a, b, c = (rng.randint(4, 14) for _ in range(3))     # chỉ một
+        ngoai = rng.randint(0, 5)
+        tong = a + b + c + ab + bc + ca + abc + ngoai
+        A, B, C = a + ab + ca + abc, b + ab + bc + abc, c + bc + ca + abc
+        m1, m2, m3 = rng.sample(["bơi", "vẽ", "cờ vua", "hát", "bóng rổ"], 3)
+        de = (f"Lớp có {sv(tong)} học sinh. Có {sv(A)} em học {m1}, {sv(B)} em học "
+              f"{m2}, {sv(C)} em học {m3}. Có {sv(ab + abc)} em học cả {m1} và "
+              f"{m2}, {sv(bc + abc)} em học cả {m2} và {m3}, {sv(ca + abc)} em học "
+              f"cả {m1} và {m3}, và {sv(abc)} em học cả ba môn. Hỏi có bao nhiêu em "
+              f"không học môn nào?")
+        dap = f"{sv(ngoai)} em"
+        if k == 0:
+            it_nhat = A + B + C - (ab + abc) - (bc + abc) - (ca + abc) + abc
+            buoc = [
+                "Ba vòng tròn chồng nhau. Cộng thẳng ba nhóm thì mỗi phần chung "
+                "đôi bị đếm hai lần, còn phần chung cả ba bị đếm **ba lần**.",
+                f"Trừ ba phần chung đôi: {sv(A)} + {sv(B)} + {sv(C)} − "
+                f"{sv(ab + abc)} − {sv(bc + abc)} − {sv(ca + abc)} = "
+                f"{sv(A + B + C - (ab + abc) - (bc + abc) - (ca + abc))}.",
+                f"Nhưng phần chung cả ba lúc đầu bị đếm 3 lần, vừa rồi bị trừ 3 "
+                f"lần, thành ra mất hẳn. Phải **cộng lại một lần**: "
+                f"+ {sv(abc)} = {sv(it_nhat)} em học ít nhất một môn.",
+                f"Số em không học môn nào: {sv(tong)} − {sv(it_nhat)} = "
+                f"**{sv(ngoai)} em**.",
+            ]
+        y.append((de, dap))
+    return Bai(
+        tieu_de="Ba nhóm có phần chung — nguyên lý bù trừ",
+        dan="Vẽ ba vòng tròn và điền từ **phần giữa** ra ngoài.",
+        y=y, giai_mau=buoc,
+        huong_giai="Cộng ba nhóm, trừ ba phần chung đôi, rồi **cộng lại** phần "
+                   "chung cả ba. Lý do cộng lại: phần ấy bị đếm ba lần rồi bị trừ "
+                   "ba lần nên biến mất hẳn.",
+        td=["TD2", "TD4", "TD6"],
+        diem_chot="Dấu của phần chung cả ba là **cộng**, không phải trừ. Đây là "
+                  "chỗ sai nhiều nhất của cả dạng bài.",
+        loi="Trừ luôn phần chung cả ba lần nữa, ra thiếu.",
+        phong="Điền số vào hình từ phần giữa ra ngoài rồi cộng bảy phần — cách này "
+              "không cần nhớ công thức và không sai dấu được.",
+        goi_y=("Vẽ ba vòng tròn, điền số em học cả ba môn vào phần giữa trước.",
+               "Từ đó tính phần chỉ chung đúng hai môn.",
+               "Cộng bảy phần lại rồi lấy sĩ số trừ đi."),
+        pt_dang="Biểu đồ Ven",
+        pt_kien_thuc="Đếm không trùng lặp; nguyên lý bù trừ",
+        pt_du_lieu="Đề cho **ba nhóm**, ba phần chung đôi và một phần chung cả ba",
+        pt_phuong_phap="Cộng ba nhóm, trừ ba phần chung đôi, cộng lại phần chung cả ba",
+        pt_nhanh="Điền hình từ giữa ra ngoài thì chỉ còn phép cộng bảy số, không "
+                 "phải nhớ dấu của công thức.",
+        tuong_tu=("Lớp 40 em: 20 học bơi, 18 học vẽ, 15 học hát, 8 học bơi và vẽ, "
+                  "6 học vẽ và hát, 5 học bơi và hát, 3 học cả ba. Bao nhiêu em "
+                  "không học môn nào?",
+                  "3 em"),
+        mo_rong="Hỏi ngược: cho số em không học môn nào, tìm số em học cả ba.",
+        chuan_bi="Biểu đồ Ven hai vòng và phép cộng trừ nhiều số hạng.")
+
+
+@dang_ky("PP-G-M5-02", "G", "M5", lop=(5,),
+         tu_khoa=("sơ đồ cây", "đếm số cách", "xét trường hợp", "đếm có điều kiện"),
+         dang_bai=("Ứng dụng sơ đồ (cây, khối, mũi tên)", "Xét trường hợp",
+                   "Bài toán đếm số cách có điều kiện"),
+         bay="Đếm trùng hai nhánh cho cùng một kết quả")
+def pp_g_m5_02(rng, lop):
+    """Sơ đồ cây kết hợp xét trường hợp — đếm số có điều kiện."""
+    y, buoc = [], []
+    for k in range(rng.randint(4, 5)):
+        bo = sorted(rng.sample([1, 2, 3, 4, 5, 6, 7, 8, 9], rng.randint(4, 5)))
+        dk = rng.choice(["chan", "le", "chia3"])
+        ten_dk = {"chan": "số chẵn", "le": "số lẻ", "chia3": "số chia hết cho 3"}[dk]
+        ds = []
+        for x in bo:
+            for z in bo:
+                for w in bo:
+                    if x == z or z == w or x == w:
+                        continue
+                    n = 100 * x + 10 * z + w
+                    if ((dk == "chan" and n % 2 == 0)
+                            or (dk == "le" and n % 2 == 1)
+                            or (dk == "chia3" and n % 3 == 0)):
+                        ds.append(n)
+        de = (f"Từ các chữ số {', '.join(sv(x) for x in bo)}, lập được bao nhiêu "
+              f"{ten_dk} có ba chữ số **khác nhau**?")
+        dap = f"{sv(len(ds))} số"
+        if k == 0:
+            if dk == "chan":
+                cuoi = [x for x in bo if x % 2 == 0]
+                gt = (f"Điều kiện rơi vào **chữ số hàng đơn vị**: phải chẵn. Trong "
+                      f"bộ đã cho có {sv(len(cuoi))} chữ số chẵn — "
+                      f"{', '.join(sv(x) for x in cuoi)}.")
+                cach = (f"Chọn hàng đơn vị trước ({sv(len(cuoi))} cách), rồi hàng "
+                        f"trăm ({sv(len(bo) - 1)} cách vì phải khác), rồi hàng chục "
+                        f"({sv(len(bo) - 2)} cách).")
+            elif dk == "le":
+                cuoi = [x for x in bo if x % 2 == 1]
+                gt = (f"Điều kiện rơi vào **chữ số hàng đơn vị**: phải lẻ. Trong bộ "
+                      f"đã cho có {sv(len(cuoi))} chữ số lẻ.")
+                cach = (f"Chọn hàng đơn vị trước ({sv(len(cuoi))} cách), rồi hai "
+                        f"hàng còn lại.")
+            else:
+                gt = ("Điều kiện chia hết cho 3 rơi vào **tổng ba chữ số**, không "
+                      "rơi vào một hàng nào. Vì vậy không chọn theo hàng được, mà "
+                      "phải xét từng bộ ba chữ số có tổng chia hết cho 3.")
+                cach = ("Liệt kê các bộ ba chữ số thoả điều kiện tổng, mỗi bộ cho "
+                        "6 số vì ba chữ số khác nhau xếp được 6 cách.")
+            buoc = [
+                "Vẽ sơ đồ cây ba tầng: hàng trăm, hàng chục, hàng đơn vị. Nhưng "
+                "**đừng vẽ hết** — hãy xem điều kiện rơi vào tầng nào trước đã.",
+                gt, cach,
+                "Chữ số phải khác nhau nên mỗi tầng sau ít đi một lựa chọn — đây "
+                "là chỗ khác với bài đếm không có điều kiện khác nhau.",
+                f"Đếm hết được **{dap}**.",
+            ]
+        y.append((de, dap))
+    return Bai(
+        tieu_de="Đếm số có ba chữ số khác nhau, thoả một điều kiện",
+        dan="Trước khi đếm, xác định điều kiện rơi vào hàng nào.",
+        y=y, giai_mau=buoc,
+        huong_giai="Xem điều kiện ràng buộc hàng nào thì **chọn hàng ấy trước**, "
+                   "rồi mới chọn các hàng còn lại. Điều kiện rơi vào tổng chữ số "
+                   "thì không chọn theo hàng được, phải xét theo bộ.",
+        td=["TD3", "TD4", "TD6"],
+        diem_chot="Thứ tự chọn quyết định bài dễ hay khó. Chọn hàng bị ràng buộc "
+                  "trước là mẹo lớn nhất của cả dạng đếm.",
+        loi="Chọn hàng trăm trước rồi mới xét điều kiện ở hàng đơn vị, thành ra "
+            "phải chia trường hợp rối rắm.",
+        phong="Vẽ hai tầng đầu của sơ đồ cây để kiểm lại cách đếm trước khi nhân.",
+        goi_y=("Điều kiện của đề ràng buộc hàng nào?",
+               "Chọn hàng ấy trước thì còn bao nhiêu cách cho hai hàng kia?",
+               "Nhớ trừ đi vì ba chữ số phải khác nhau."),
+        pt_dang="Ứng dụng sơ đồ (cây, khối, mũi tên)",
+        pt_kien_thuc="Đếm có hệ thống; dấu hiệu chia hết; cấu tạo số",
+        pt_du_lieu="Đề hỏi **lập được bao nhiêu số** thoả một điều kiện",
+        pt_phuong_phap="Chọn hàng bị điều kiện ràng buộc trước, rồi nhân số cách các hàng còn lại",
+        pt_nhanh="Ba chữ số khác nhau xếp được 6 cách — dùng khi điều kiện rơi vào tổng.",
+        tuong_tu=("Từ các chữ số 1, 2, 3, 4 lập được bao nhiêu số chẵn có ba chữ "
+                  "số khác nhau?",
+                  "12 số"),
+        mo_rong="Đổi thành số có bốn chữ số, hoặc cho phép chữ số lặp lại.",
+        chuan_bi="Quy tắc nhân trong đếm và dấu hiệu chia hết cho 2, 3.")
+
+
+@dang_ky("PP-D-M5-04", "D", "M5", lop=(5,),
+         tu_khoa=("sơ đồ đoạn thẳng", "ba đại lượng", "tỉ số ẩn", "tổng tỉ"),
+         dang_bai=("Sơ đồ đoạn thẳng", "Chia tỉ lệ",
+                   "Bài toán ba đại lượng có tỉ số bắc cầu"),
+         bay="Không quy ba tỉ số về cùng một đơn vị phần")
+def pp_d_m5_04(rng, lop):
+    """Sơ đồ đoạn thẳng mức M5 — ba đại lượng, tỉ số bắc cầu."""
+    y, buoc = [], []
+    for k in range(rng.randint(4, 5)):
+        p, q = rng.randint(2, 4), rng.randint(2, 4)     # B = p×A, C = q×B
+        mot_phan = rng.randrange(4, 40)
+        A = mot_phan
+        B, C = p * A, p * q * A
+        tong = A + B + C
+        t1, t2, t3 = rng.sample(TO_DOI, 3)
+        de = (f"Ba đội trồng được tất cả {sv(tong)} cây. Biết {t2} trồng gấp "
+              f"{sv(p)} lần {t1}, và {t3} trồng gấp {sv(q)} lần {t2}. Hỏi mỗi đội "
+              f"trồng được bao nhiêu cây?")
+        dap = f"{t1}: {sv(A)} cây; {t2}: {sv(B)} cây; {t3}: {sv(C)} cây"
+        if k == 0:
+            buoc = [
+                f"Vẽ sơ đồ đoạn thẳng, nhưng phải **quy cả ba về cùng một loại "
+                f"phần** trước đã. Lấy {t1} làm một phần.",
+                f"{t2} gấp {sv(p)} lần {t1} nên {t2} là {sv(p)} phần.",
+                f"{t3} gấp {sv(q)} lần {t2}, mà {t2} là {sv(p)} phần, nên {t3} là "
+                f"{sv(p)} × {sv(q)} = {sv(p * q)} phần — **nhân chứ không cộng**.",
+                f"Tổng số phần: 1 + {sv(p)} + {sv(p * q)} = {sv(1 + p + p * q)} (phần).",
+                f"Một phần: {sv(tong)} : {sv(1 + p + p * q)} = {sv(A)} (cây). "
+                f"Từ đó {t2} = {sv(B)} cây, {t3} = **{sv(C)} cây**.",
+            ]
+        y.append((de, dap))
+    return Bai(
+        tieu_de="Ba đại lượng, tỉ số bắc cầu",
+        dan="Vẽ sơ đồ ba đoạn thẳng, ghi rõ mỗi đoạn mấy phần.",
+        y=y, giai_mau=buoc,
+        huong_giai="Chọn đại lượng nhỏ nhất làm một phần, rồi quy hai đại lượng "
+                   "kia về cùng loại phần ấy. Tỉ số bắc cầu thì **nhân** hai hệ số, "
+                   "không cộng. Đếm tổng số phần trên sơ đồ rồi mới chia.",
+        td=["TD1", "TD2", "TD5"],
+        diem_chot="Gấp p lần rồi gấp tiếp q lần là gấp p × q lần, không phải "
+                  "gấp p + q lần.",
+        loi="Cộng hai hệ số, ra tổng số phần sai và cả ba đáp số cùng sai.",
+        phong="Vẽ xong đếm lại số phần trên hình trước khi chia.",
+        goi_y=("Lấy đội nào làm một phần thì gọn nhất?",
+               "Đội thứ ba gấp mấy lần đội thứ nhất?",
+               "Cộng đủ ba số phần rồi mới chia tổng số cây."),
+        pt_dang="Sơ đồ đoạn thẳng",
+        pt_kien_thuc="Tỉ số; chia tỉ lệ; quan hệ gấp bắc cầu",
+        pt_du_lieu="Đề cho **ba đại lượng** nối nhau bằng hai quan hệ gấp",
+        pt_phuong_phap="Quy cả ba về cùng loại phần, nhân hệ số bắc cầu, rồi chia tỉ lệ",
+        pt_nhanh="Tổng số phần bằng 1 + p + p × q — tính thẳng, không cần vẽ lại.",
+        tuong_tu=("Ba đội trồng 78 cây. Đội Hai gấp 2 lần đội Một, đội Ba gấp 3 lần "
+                  "đội Hai. Mỗi đội trồng mấy cây?",
+                  "Đội Một 6 cây, đội Hai 12 cây, đội Ba 36 cây"),
+        mo_rong="Đổi một quan hệ gấp thành quan hệ hơn kém một số cây cụ thể.",
+        chuan_bi="Sơ đồ đoạn thẳng cho hai đại lượng và bài tổng – tỉ.")
+
+
+@dang_ky("PP-D-M5-05", "D", "M5", lop=(5,),
+         tu_khoa=("rút về đơn vị", "tỉ lệ nghịch", "công việc chung", "vòi nước"),
+         dang_bai=("Rút về đơn vị", "Bài toán công việc chung",
+                   "Bài toán tỉ lệ nghịch nâng cao"),
+         thuc_te=True, bay="Dùng tỉ lệ thuận cho bài tỉ lệ nghịch")
+def pp_d_m5_05(rng, lop):
+    """Rút về đơn vị mức M5 — công việc chung, tỉ lệ nghịch."""
+    y, buoc = [], []
+    for k, kieu in enumerate(luan_phien(rng, ["chung", "nghich"], rng.randint(4, 5))):
+        if kieu == "chung":
+            a, b = rng.choice([(4, 12), (6, 12), (3, 6), (6, 3), (8, 8), (5, 20),
+                               (10, 15), (12, 4)])
+            from fractions import Fraction as F
+            chung = F(1, a) + F(1, b)
+            t = 1 / chung
+            de = (f"Vòi thứ nhất chảy một mình thì đầy bể sau {sv(a)} giờ. Vòi thứ "
+                  f"hai chảy một mình thì đầy bể sau {sv(b)} giờ. Hỏi mở cả hai vòi "
+                  f"cùng lúc thì sau bao lâu đầy bể?")
+            dap = f"{sv(t.numerator)} giờ" if t.denominator == 1 else f"{ps(t)} giờ"
+            if k == 0:
+                buoc = [
+                    "Không được cộng hai khoảng thời gian, cũng không được lấy "
+                    "trung bình. Phải **rút về đơn vị**: xét trong một giờ.",
+                    f"Một giờ vòi thứ nhất chảy được {ps(F(1, a))} bể.",
+                    f"Một giờ vòi thứ hai chảy được {ps(F(1, b))} bể.",
+                    f"Một giờ cả hai vòi chảy được {ps(F(1, a))} + {ps(F(1, b))} = "
+                    f"{ps(chung)} (bể).",
+                    f"Thời gian đầy bể: 1 : {ps(chung)} = **{dap}**.",
+                ]
+        else:
+            n1 = rng.randint(3, 12)
+            ngay1 = rng.randint(4, 20)
+            tong = n1 * ngay1
+            n2 = next((x for x in range(2, 25) if x != n1 and tong % x == 0), n1 + 1)
+            de = (f"{sv(n1)} người làm xong một công việc trong {sv(ngay1)} ngày. "
+                  f"Hỏi {sv(n2)} người làm xong công việc ấy trong bao nhiêu ngày, "
+                  f"biết sức làm của mỗi người như nhau?")
+            dap = f"{sv(tong // n2)} ngày"
+        y.append((de, dap))
+    return Bai(
+        tieu_de="Công việc chung và tỉ lệ nghịch",
+        dan="Câu nào cũng phải quy về **một đơn vị thời gian** hoặc **một người** "
+            "trước khi tính.",
+        y=y, giai_mau=buoc,
+        huong_giai="Với bài vòi nước, xét lượng chảy trong một giờ rồi cộng lại. "
+                   "Với bài số người, xét tổng số ngày công. Cả hai đều là rút về "
+                   "đơn vị, chỉ khác đơn vị được chọn.",
+        td=["TD2", "TD5", "TD6"],
+        diem_chot="Càng nhiều người thì càng **ít** ngày — đây là tỉ lệ nghịch, "
+                  "nhân chia ngược với tỉ lệ thuận.",
+        loi="Cộng hai khoảng thời gian của hai vòi, hoặc nhân thẳng số người với "
+            "số ngày theo kiểu tỉ lệ thuận.",
+        phong="Kiểm bằng lẽ thường: thêm người thì đáp số phải nhỏ đi.",
+        goi_y=("Trong một giờ, mỗi vòi chảy được mấy phần bể?",
+               "Cả hai vòi trong một giờ chảy được mấy phần bể?",
+               "Lấy 1 chia cho phần ấy là ra thời gian."),
+        pt_dang="Rút về đơn vị",
+        pt_kien_thuc="Phân số; tỉ lệ nghịch; tổng số ngày công",
+        pt_du_lieu="Đề cho **thời gian làm một mình** của từng bên, hoặc số người "
+                   "và số ngày",
+        pt_phuong_phap="Quy về một đơn vị — một giờ hoặc một người — rồi cộng và chia",
+        pt_nhanh="Hai vòi cùng chảy thì thời gian chung = a × b : (a + b).",
+        tuong_tu=("Vòi một đầy bể trong 6 giờ, vòi hai trong 3 giờ. Mở cả hai thì "
+                  "bao lâu đầy bể?",
+                  "2 giờ"),
+        mo_rong="Thêm một vòi tháo nước ở đáy để phải trừ thay vì cộng.",
+        chuan_bi="Cộng phân số khác mẫu và khái niệm tỉ lệ nghịch.")

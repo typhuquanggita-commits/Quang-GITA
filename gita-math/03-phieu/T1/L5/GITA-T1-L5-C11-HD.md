@@ -60,9 +60,9 @@ Học thuộc theo cặp **dạng bài – công thức**, không học rời.
 | 7 | Số đo có nhiều đơn vị | Bảng đơn vị khối lượng |
 | 8 | Đổi đơn vị đo | Bảng đơn vị đo độ dài, khối lượng |
 | 9 | Tính thời điểm trong ngày | Quan hệ giờ – phút, phép chia có dư |
-| 10 | Vận tốc trung bình | Công thức vận tốc; trung bình cộng có trọng số |
+| 10 | Bài toán tỉ lệ bản đồ | Tỉ lệ; bảng đơn vị đo độ dài |
 | 11 | Đại lượng khối lượng, chia phần và làm tròn lên | Bảng đơn vị khối lượng; phép chia có dư |
-| 12 | Tỉ lệ nghịch, so sánh hai phương án | Đại lượng tỉ lệ nghịch, tổng số ngày công |
+| 12 | Vận tốc trung bình | Công thức vận tốc; trung bình cộng có trọng số |
 | 13 | Bài toán đại lượng có lời văn | Nhân, chia số tự nhiên; đổi đơn vị khối lượng |
 
 ---
@@ -96,9 +96,9 @@ Trước khi tra bảng, đi qua cây quyết định đọc vị của nhóm ch
 | Số đo có nhiều đơn vị | Số đo viết dưới dạng “… tấn … tạ … kg” | Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư | Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ. |
 | Đổi đơn vị đo | Dấu … giữa hai đơn vị khác nhau | Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10 | Số bậc chính là số chữ số 0 phải thêm vào (hoặc bớt đi). |
 | Tính thời điểm trong ngày | Cho thời điểm bắt đầu và khoảng thời gian | Quy về phút, cộng trừ, đổi lại | Cộng tròn giờ trước rồi cộng phần phút lẻ sau. |
-| Vận tốc trung bình | Hai chặng có vận tốc khác nhau | Tính tổng quãng đường, tổng thời gian rồi chia | Kiểm tra: vận tốc trung bình luôn nằm giữa hai vận tốc đã cho. |
+| Bài toán tỉ lệ bản đồ | Đề cho **tỉ lệ dạng 1 : n** cùng một khoảng cách đo trên giấy hoặc ngoài thực tế | Nhân hoặc chia cho mẫu tỉ lệ, rồi đổi đơn vị theo câu hỏi | Tỉ lệ 1 : 100 000 thì 1 cm trên bản đồ đúng bằng 1 km thật. |
 | Đại lượng khối lượng, chia phần và làm tròn lên | Số đo nhiều đơn vị; câu hỏi “ít nhất bao nhiêu” | Quy về một đơn vị, chia, xét phần dư | 1 tấn = 1 000 kg nên chia cho 1 000 là bớt ba chữ số 0. |
-| Tỉ lệ nghịch, so sánh hai phương án | Thay đổi số người, hỏi thay đổi thời gian | Bám vào tổng số ngày công không đổi | Số người tăng gấp k lần thì số ngày giảm còn 1 phần k. |
+| Vận tốc trung bình | Hai chặng có vận tốc khác nhau | Tính tổng quãng đường, tổng thời gian rồi chia | Kiểm tra: vận tốc trung bình luôn nằm giữa hai vận tốc đã cho. |
 | Bài toán đại lượng có lời văn | Đơn vị trong câu hỏi khác đơn vị trong dữ kiện | Tính theo đơn vị dữ kiện rồi đổi ở bước cuối | 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ. |
 
 ---
@@ -136,8 +136,8 @@ Trả lời được ngay trong 10 giây thì đánh ✔. Phải nghĩ lâu thì
 - [ ] **16.** Em nhớ công thức: Bảng đơn vị đo độ dài, khối lượng?
 - [ ] **17.** Em nêu được dấu hiệu nhận biết của dạng “Tính thời điểm trong ngày” chứ?
 - [ ] **18.** Em nhớ công thức: Quan hệ giờ – phút, phép chia có dư?
-- [ ] **19.** Em nêu được dấu hiệu nhận biết của dạng “Vận tốc trung bình” chứ?
-- [ ] **20.** Em nhớ công thức: Công thức vận tốc; trung bình cộng có trọng số?
+- [ ] **19.** Em nêu được dấu hiệu nhận biết của dạng “Bài toán tỉ lệ bản đồ” chứ?
+- [ ] **20.** Em nhớ công thức: Tỉ lệ; bảng đơn vị đo độ dài?
 
 **Chuẩn đạt:** ✔ từ 18/20 câu trở lên.
 
@@ -158,9 +158,9 @@ Trả lời được ngay trong 10 giây thì đánh ✔. Phải nghĩ lâu thì
 | 7 | Cộng thẳng các số đứng trước những đơn vị khác nhau. | Viết mỗi thành phần thành số ki-lô-gam ngay bên dưới rồi mới cộng. |
 | 8 | Đổi ngược chiều nên nhân thành chia. | Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay. |
 | 9 | Cộng phần phút thành hơn 60 mà quên đổi thành giờ. | Kiểm tra phần phút của đáp số phải bé hơn 60. |
-| 10 | Cộng hai vận tốc rồi chia đôi trong mọi trường hợp. | Luôn viết hai dòng: tổng quãng đường = … ; tổng thời gian = … rồi mới chia. |
+| 10 | Trả lời con số xăng-ti-mét nhưng ghi đơn vị là ki-lô-mét. | Viết đơn vị bên cạnh mọi con số trong bài giải, kể cả bước trung gian. |
 | 11 | Chia rồi lấy phần nguyên, bỏ quên phần dư vẫn cần một xe. | Hỏi lại: phần thóc dư có tự bay đi được không? |
-| 12 | Trừ thẳng số người rồi lấy hiệu làm số ngày rút ngắn. | Viết rõ: tổng ngày công = … ; số ngày mới = … ; sớm hơn = … . |
+| 12 | Cộng hai vận tốc rồi chia đôi trong mọi trường hợp. | Luôn viết hai dòng: tổng quãng đường = … ; tổng thời gian = … rồi mới chia. |
 | 13 | Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. | Khoanh tròn đơn vị trong câu hỏi trước khi đặt bút. |
 
 ---

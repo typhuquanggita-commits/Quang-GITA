@@ -101,43 +101,43 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 
 Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: đây là dạng bài gì, và dấu hiệu nào cho biết điều đó.
 
-**Đề 1.** Số chính phương là số bằng tích của một số tự nhiên với chính nó. Viết 4 số chính phương đầu tiên.
+**Đề 1.** Số chính phương là số bằng tích của một số tự nhiên với chính nó. Viết 10 số chính phương đầu tiên.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 2.** Câu nào cũng phải viết cấu tạo số ra trước khi tính. Số có hai chữ số ab. Khi đổi chỗ hai chữ số thì được số mới nhỏ hơn số cũ 9 đơn vị, và tổng hai chữ số bằng 17. Tìm số ab.
+**Đề 2.** Phân tích số theo cấu tạo rồi trả lời. Đổi chỗ chữ số hàng trăm và chữ số hàng đơn vị của số 427 ta được số mới. Hiệu hai số bằng bao nhiêu?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 3.** Dùng tính chất số dư, hạn chế tính toán. Dãy số: 125, 317, 486. Có bao nhiêu số trong dãy chia hết cho 9?
+**Đề 3.** Với mỗi ý, tìm số theo yêu cầu. Tổng của 3 số tự nhiên liên tiếp bằng 72. Tìm số bé nhất trong 3 số đó.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 4.** Trả lời ngắn gọn từng câu. Số 175 957 là số chẵn hay số lẻ?
+**Đề 4.** Thực hiện phép chia, ghi rõ thương và số dư. 174 168 : 20 = ? (dư ?)
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 5.** Đếm số lượng, không cần liệt kê. Có bao nhiêu số chia hết cho 3 từ 119 đến 524?
+**Đề 5.** Câu nào cũng phải viết cấu tạo số ra trước khi tính. Tìm mọi số có hai chữ số mà số đó bằng 3 lần tổng hai chữ số của nó.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 6.** Trình bày lời giải ngắn gọn cho từng ý. Tìm số có hai chữ số, biết tổng hai chữ số bằng 9 và chữ số hàng chục hơn chữ số hàng đơn vị 9 đơn vị.
+**Đề 6.** Trả lời gọn, có thể dùng dãy cách đều. Có bao nhiêu số từ 260 đến 843 vừa chia hết cho 2 vừa chia hết cho 5? Số bé nhất trong đó là số nào?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 7.** Không đặt tính chia, hãy dùng dấu hiệu chia hết. Số 736 có chia hết cho 5 không? Vì sao?
+**Đề 7.** Cho ba chữ số **0, 5, 8**. Lập các số có ba chữ số khác nhau từ ba chữ số này. Viết tất cả các số lập được (theo thứ tự từ bé đến lớn).
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 8.** Cho số **357 559**. Chữ số ở hàng **trăm nghìn** của số 357 559 là chữ số nào, và nó có giá trị bằng bao nhiêu?
+**Đề 8.** Trình bày lời giải ngắn gọn cho từng ý. Tìm số có hai chữ số, biết tổng hai chữ số bằng 5 và chữ số hàng chục hơn chữ số hàng đơn vị 5 đơn vị.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 9.** Với mỗi câu, tìm **tất cả** các chữ số thoả mãn. Tìm tất cả chữ số thay cho dấu * để số 67*4 chia hết cho 3.
+**Đề 9.** Trả lời ngắn gọn từng câu. Số liền sau của 52 072 là số nào?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 10.** Thực hiện phép chia, ghi rõ thương và số dư. 6 398 : 3 = ? (dư ?)
+**Đề 10.** Dùng tính chất số dư, hạn chế tính toán. Dãy số: 497, 651, 938. Có bao nhiêu số trong dãy chia hết cho 5?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
@@ -148,15 +148,15 @@ Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: 
 | # | Dạng bài | Dấu hiệu |
 |:--:|---|---|
 | 1 | Số chính phương | Có cụm “bình phương”, “nhân với chính nó”, “số chính phương” |
-| 2 | Dùng chữ thay số | Đề viết số bằng chữ hoặc bằng dấu sao và cho quan hệ giữa các chữ số |
-| 3 | Xét số dư của tổng | Đề hỏi chia hết hay số dư của một tổng dài |
-| 4 | Nhận biết chẵn – lẻ và số liền kề | Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” |
-| 5 | Đếm số hạng của dãy cách đều theo điều kiện chia hết | Cụm “có bao nhiêu số … từ … đến …” |
-| 6 | Tìm số theo điều kiện của các chữ số | Đề cho quan hệ giữa các chữ số chứ không cho số |
-| 7 | Kiểm tra chia hết bằng dấu hiệu | Câu hỏi “có chia hết cho … không” |
-| 8 | Xác định chữ số và giá trị chữ số theo hàng | Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” |
-| 9 | Điền chữ số theo điều kiện chia hết | Số có ô trống hoặc dấu *, kèm điều kiện chia hết |
-| 10 | Phép chia có dư | Đề yêu cầu ghi cả thương và số dư |
+| 2 | Biến đổi số bằng cách thêm, bớt, đổi chỗ chữ số | Đề nói “xoá chữ số”, “viết thêm chữ số”, “đổi chỗ” |
+| 3 | Dãy số tự nhiên liên tiếp có tổng cho trước | Cụm “… số tự nhiên liên tiếp có tổng bằng …” |
+| 4 | Phép chia có dư | Đề yêu cầu ghi cả thương và số dư |
+| 5 | Dùng chữ thay số | Đề viết số bằng chữ hoặc bằng dấu sao và cho quan hệ giữa các chữ số |
+| 6 | Đếm số chia hết đồng thời cho nhiều số | Cụm “vừa chia hết cho … vừa chia hết cho …” |
+| 7 | Lập số và đếm số lập được từ một bộ chữ số | Đề cho một bộ chữ số và yêu cầu lập số |
+| 8 | Tìm số theo điều kiện của các chữ số | Đề cho quan hệ giữa các chữ số chứ không cho số |
+| 9 | Nhận biết chẵn – lẻ và số liền kề | Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” |
+| 10 | Xét số dư của tổng | Đề hỏi chia hết hay số dư của một tổng dài |
 
 ---
 

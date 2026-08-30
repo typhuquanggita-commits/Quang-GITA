@@ -45,123 +45,121 @@ Họ và tên: ......................................... Lớp: ......... Điể
 > 1. Nhân, trừ; đại lượng cùng loại
 > 2. Bảng đơn vị đo, so sánh số tự nhiên
 > 3. Số ngày các tháng, năm nhuận, thế kỉ
-> 4. Công thức vận tốc; trung bình cộng có trọng số
+> 4. Tỉ lệ; bảng đơn vị đo độ dài
 
 ---
 
 ## PHẦN I — NHẬN BIẾT · Mức M1 — Nhận biết · 12 phút · 15 điểm
 
-### Bài 1. (3 điểm) Đơn vị đo thời gian: giờ và phút
-
-Điền kết quả, viết dạng giờ và phút.
-
-a) 570 phút = … giờ … phút
-b) 1 giờ 21 phút = … phút
-c) 9 giờ 58 phút − 66 phút = … (viết dạng giờ và phút)
-d) 8 giờ 33 phút + 79 phút = … (viết dạng giờ và phút)
-
-### Bài 2. (3 điểm) Đổi đơn vị đo độ dài và khối lượng
-
-Điền số thích hợp vào chỗ chấm.
-
-a) 44 km = … cm
-b) 58 tấn = … hg
-c) 63 tạ = … g
-d) 48 m = … cm
-e) 69 hm = … dm
-
-### Bài 3. (3 điểm) Đổi đơn vị đo diện tích
+### Bài 1. (3 điểm) Đổi đơn vị đo diện tích
 
 Điền số thích hợp.
 
-a) 32 ha = … m²
-b) 47 ha = … m²
-c) 78 dm² = … cm²
-d) 8 ha = … dm²
-e) 36 m² = … dm²
+a) 90 km² = … ha
+b) 33 dm² = … cm²
+c) 69 ha = … m²
+d) 75 km² = … ha
 
-### Bài 4. (3 điểm) Đổi số đo khối lượng có nhiều đơn vị
+### Bài 2. (3 điểm) Đổi số đo khối lượng có nhiều đơn vị
 
 Điền vào chỗ chấm.
 
-a) 3 671 kg = … tấn … tạ … kg
-b) 446 kg = … tấn … tạ … kg
-c) 4 062 kg = … tấn … tạ … kg
-d) 90 kg = … kg
-e) 5 tấn 9 tạ 65 kg = … kg
-f) 2 tấn 7 tạ 95 kg = … kg
-g) 3 364 kg = … tấn … tạ … kg
+a) 3 tấn 5 tạ 22 kg = … kg
+b) 4 tấn 6 tạ 50 kg = … kg
+c) 3 tấn 8 tạ 12 kg = … kg
+d) 5 tấn 79 kg = … kg
+e) 3 tấn 3 tạ 64 kg = … kg
+f) 2 086 kg = … tấn … tạ … kg
 
-### Bài 5. (3 điểm) Ôn tập số tự nhiên: đọc, viết, so sánh, làm tròn
+### Bài 3. (3 điểm) Đơn vị đo thời gian: giờ và phút
 
-Trả lời nhanh, mỗi ý không quá 20 giây.
+Điền kết quả, viết dạng giờ và phút.
 
-a) Làm tròn 9 726 333 đến hàng nghìn.
-b) 4 883 811 … 4 879 261
-c) Số liền trước và số liền sau của 3 268 155 là những số nào?
-d) Chữ số hàng đơn vị của số 2 517 912 có giá trị bằng bao nhiêu?
-e) 6 580 671 … 6 585 210
-f) Làm tròn 1 047 580 đến hàng trăm.
-g) Chữ số hàng chục nghìn của số 6 166 130 có giá trị bằng bao nhiêu?
-h) Số liền trước và số liền sau của 9 703 541 là những số nào?
+a) 9 giờ 19 phút + 147 phút = … (viết dạng giờ và phút)
+b) 5 giờ 48 phút = … phút
+c) 7 giờ 34 phút − 290 phút = … (viết dạng giờ và phút)
+d) 496 phút = … giờ … phút
+
+### Bài 4. (3 điểm) Số thập phân: hàng, so sánh, đổi từ phân số
+
+Chú ý dấu phẩy và các hàng sau dấu phẩy.
+
+a) Viết phân số 674 phần 1 000 dưới dạng số thập phân.
+b) Trong số 580,959, chữ số ở hàng phần mười là chữ số nào?
+c) 844,966 … 845,365
+d) 929,506 … 926,22
+e) Trong số 207,505, chữ số ở hàng phần mười là chữ số nào?
+f) Viết phân số 949 phần 1 000 dưới dạng số thập phân.
+g) Trong số 570,932, chữ số ở hàng phần mười là chữ số nào?
+
+### Bài 5. (3 điểm) Đổi đơn vị đo độ dài và khối lượng
+
+Điền số thích hợp vào chỗ chấm.
+
+a) 67 tạ = … g
+b) 76 m = … dm
+c) 17 dam = … m
+d) 78 tạ = … hg
+e) 52 km = … hm
+f) 89 yến = … hg
+g) 9 dm = … cm
+h) 77 tạ = … yến
 
 ---
 
 ## PHẦN II — THÔNG HIỂU · Mức M2 — Thông hiểu · 15 phút · 20 điểm
 
-### Bài 1. (4 điểm) Diện tích hình thang
-
-Áp dụng công thức, ghi rõ đơn vị.
-
-a) Hình thang có đáy lớn 23 cm, đáy bé 4 cm, chiều cao 20 cm. Tính diện tích.
-b) Hình thang có đáy lớn 12 cm, đáy bé 5 cm, chiều cao 16 cm. Tính diện tích.
-c) Hình thang có đáy lớn 33 cm, đáy bé 20 cm, chiều cao 18 cm. Tính diện tích.
-d) Hình thang có đáy lớn 24 cm, đáy bé 19 cm, chiều cao 22 cm. Tính diện tích.
-e) Hình thang có đáy lớn 34 cm, đáy bé 24 cm, chiều cao 17 cm. Tính diện tích.
-f) Hình thang có đáy lớn 27 cm, đáy bé 16 cm, chiều cao 28 cm. Tính diện tích.
-
-### Bài 2. (4 điểm) Lịch, thế kỉ, năm nhuận
+### Bài 1. (4 điểm) Lịch, thế kỉ, năm nhuận
 
 Trả lời ngắn gọn.
 
-a) Tháng 1 năm 2059 có bao nhiêu ngày?
-b) Năm 1966 có phải năm nhuận không?
-c) Năm 1892 thuộc thế kỉ thứ mấy?
-d) 51 ngày bằng bao nhiêu tuần lễ và mấy ngày?
-e) Năm 2039 thuộc thế kỉ thứ mấy?
+a) Tháng 3 năm 2001 có bao nhiêu ngày?
+b) Năm 2094 thuộc thế kỉ thứ mấy?
+c) 37 ngày bằng bao nhiêu tuần lễ và mấy ngày?
+d) Năm 2038 có phải năm nhuận không?
 
-### Bài 3. (4 điểm) Đơn vị đo diện tích
-
-Điền số thích hợp vào chỗ chấm.
-
-a) 150 000 m² = … hm²
-b) 76 km² = … ha
-c) 82 ha = … m²
-d) 28 hm² = … dam²
-e) 6 100 m² = … dam²
-f) 34 hm² = … m²
-g) 1 000 ha = … km²
-h) 75 hm² = … dam²
-
-### Bài 4. (4 điểm) Tính toán với số đo đại lượng
+### Bài 2. (4 điểm) Tính toán với số đo đại lượng
 
 Đổi về cùng đơn vị rồi tính.
 
-a) 28 m 89 cm × 2 = … cm
-b) 6 kg 347 g − 173 g = … g
-c) 15 960 cm : 8 = … cm
-d) 10 m 95 cm × 2 = … cm
-e) 39 m 25 cm + 525 cm = … cm
-f) 8 m 22 cm × 4 = … cm
+a) 12 551 cm : 7 = … cm
+b) 31 kg 470 g − 235 g = … g
+c) 6 kg 717 g − 358 g = … g
+d) 24 m 49 cm × 9 = … cm
+e) 38 m 8 cm + 108 cm = … cm
+f) 39 m 25 cm + 525 cm = … cm
 
-### Bài 5. (4 điểm) So sánh hai số đo khác đơn vị
+### Bài 3. (4 điểm) So sánh hai số đo khác đơn vị
 
 Điền dấu <, >, = thích hợp.
 
-a) 38 tạ … 3 314 kg
-b) 26 dm … 7 118 hm
-c) 77 cm² … 6 404 m²
-d) 13 dm² … 2 359 km²
+a) 78 ha … 3 455 dm²
+b) 61 m … 4 225 dm
+c) 10 tấn … 7 210 yến
+d) 82 hg … 5 814 g
+e) 87 dm² … 8 520 m²
+f) 11 km … 3 962 dam
+g) 29 m … 4 465 cm
+
+### Bài 4. (4 điểm) Bốn phép tính với số thập phân
+
+Đặt tính rồi tính.
+
+a) 208,47 : 3
+b) 99,67 − 69,2
+c) 21,74 + 72,9
+d) 46,58 × 6
+e) 3,71 + 68,3
+
+### Bài 5. (4 điểm) Đơn vị đo diện tích
+
+Điền số thích hợp vào chỗ chấm.
+
+a) 66 km² = … ha
+b) 5 700 dam² = … hm²
+c) 490 000 m² = … hm²
+d) 520 000 m² = … ha
+e) 7 dam² = … m²
 
 ---
 
@@ -226,106 +224,109 @@ f) 9 dm³ = … lít
 
 Áp dụng đúng công thức cho từng câu.
 
-a) Một người đi với vận tốc 12 km/giờ trong 4 giờ. Tính quãng đường đi được.
-b) Một người đi quãng đường 24 km với vận tốc 4 km/giờ. Tính thời gian đi.
-c) Một người đi 24 km hết 6 giờ. Tính vận tốc.
-d) Một người đi với vận tốc 36 km/giờ trong 2 giờ. Tính quãng đường đi được.
-e) Một người đi quãng đường 300 km với vận tốc 60 km/giờ. Tính thời gian đi.
+a) Một người đi quãng đường 100 km với vận tốc 50 km/giờ. Tính thời gian đi.
+b) Một người đi với vận tốc 45 km/giờ trong 5 giờ. Tính quãng đường đi được.
+c) Một người đi 20 km hết 5 giờ. Tính vận tốc.
+d) Một người đi quãng đường 90 km với vận tốc 45 km/giờ. Tính thời gian đi.
+e) Một người đi 40 km hết 2 giờ. Tính vận tốc.
+f) Một người đi với vận tốc 30 km/giờ trong 2 giờ. Tính quãng đường đi được.
+g) Một người đi với vận tốc 12 km/giờ trong 2 giờ. Tính quãng đường đi được.
 
 ### Bài 2. (5 điểm) Bài toán đại lượng nhiều bước
 
 Trình bày lời giải có câu trả lời.
 
-a) Một cửa hàng có 6 thùng nước, mỗi thùng 18 lít. Cửa hàng đã bán 2 thùng. Hỏi cửa hàng còn lại bao nhiêu lít nước?
-b) Một cửa hàng có 6 thùng sữa, mỗi thùng 15 lít. Cửa hàng đã bán 2 thùng. Hỏi cửa hàng còn lại bao nhiêu lít sữa?
-c) Một cửa hàng có 7 thùng nước, mỗi thùng 15 lít. Cửa hàng đã bán 6 thùng. Hỏi cửa hàng còn lại bao nhiêu lít nước?
-d) Một cửa hàng có 15 thùng sữa, mỗi thùng 24 lít. Cửa hàng đã bán 3 thùng. Hỏi cửa hàng còn lại bao nhiêu lít sữa?
-e) Một cửa hàng có 7 thùng sữa, mỗi thùng 18 lít. Cửa hàng đã bán 2 thùng. Hỏi cửa hàng còn lại bao nhiêu lít sữa?
-f) Một cửa hàng có 7 thùng sữa, mỗi thùng 25 lít. Cửa hàng đã bán 2 thùng. Hỏi cửa hàng còn lại bao nhiêu lít sữa?
+a) Một cửa hàng có 7 thùng nước, mỗi thùng 15 lít. Cửa hàng đã bán 6 thùng. Hỏi cửa hàng còn lại bao nhiêu lít nước?
+b) Một cửa hàng có 15 thùng sữa, mỗi thùng 24 lít. Cửa hàng đã bán 3 thùng. Hỏi cửa hàng còn lại bao nhiêu lít sữa?
+c) Một cửa hàng có 7 thùng sữa, mỗi thùng 18 lít. Cửa hàng đã bán 2 thùng. Hỏi cửa hàng còn lại bao nhiêu lít sữa?
+d) Một cửa hàng có 7 thùng sữa, mỗi thùng 25 lít. Cửa hàng đã bán 2 thùng. Hỏi cửa hàng còn lại bao nhiêu lít sữa?
+e) Một cửa hàng có 4 thùng nước mắm, mỗi thùng 20 lít. Cửa hàng đã bán 2 thùng. Hỏi cửa hàng còn lại bao nhiêu lít nước mắm?
 
-### Bài 3. (5 điểm) Nhận ra thừa số 0 để tính tức thì
-
-Tính bằng cách nhanh nhất.
-
-a) 65 × 76 × (38 − 38)
-b) (93 × 54 − 54 × 93) × 91
-c) (56 × 49 − 49 × 56) × 41
-d) (25 × 15 − 15 × 25) × 69
-
-### Bài 4. (5 điểm) Thể tích bể nước trong thực tế
+### Bài 3. (5 điểm) Thể tích bể nước trong thực tế
 
 Ghi rõ đơn vị: mét khối hay lít.
 
-a) Bể đáy 3 m × 7 m, cao 6 m, đang có nước cao 2 m. Phải đổ thêm bao nhiêu mét khối nước nữa thì đầy bể?
-b) Một bể nước dạng hình hộp chữ nhật có chiều dài 9 m, chiều rộng 5 m, chiều cao 6 m. Hỏi bể chứa đầy được bao nhiêu lít nước?
-c) Bể hình hộp chữ nhật đáy 8 m × 8 m đang chứa nước cao 6 m. Hỏi trong bể có bao nhiêu mét khối nước?
-d) Một bể nước dạng hình hộp chữ nhật có chiều dài 8 m, chiều rộng 7 m, chiều cao 4 m. Hỏi bể chứa đầy được bao nhiêu lít nước?
+a) Bể đáy 7 m × 7 m, cao 4 m, đang có nước cao 1 m. Phải đổ thêm bao nhiêu mét khối nước nữa thì đầy bể?
+b) Bể hình hộp chữ nhật đáy 8 m × 8 m đang chứa nước cao 1 m. Hỏi trong bể có bao nhiêu mét khối nước?
+c) Một bể nước dạng hình hộp chữ nhật có chiều dài 9 m, chiều rộng 4 m, chiều cao 3 m. Hỏi bể chứa đầy được bao nhiêu lít nước?
+d) Bể đáy 4 m × 2 m, cao 6 m, đang có nước cao 5 m. Phải đổ thêm bao nhiêu mét khối nước nữa thì đầy bể?
+e) Bể hình hộp chữ nhật đáy 3 m × 8 m đang chứa nước cao 1 m. Hỏi trong bể có bao nhiêu mét khối nước?
+f) Một bể nước dạng hình hộp chữ nhật có chiều dài 9 m, chiều rộng 5 m, chiều cao 6 m. Hỏi bể chứa đầy được bao nhiêu lít nước?
 
-### Bài 5. (5 điểm) Diện tích thay đổi khi kích thước thay đổi
+### Bài 4. (5 điểm) Tỉ lệ bản đồ
 
-Vẽ hình minh hoạ phần tăng thêm.
+Câu nào cũng ghi rõ đang đổi từ đơn vị nào sang đơn vị nào.
 
-a) Hình chữ nhật dài 14 cm, rộng 12 cm. Nếu tăng chiều dài thêm 8 cm (giữ nguyên chiều rộng) thì diện tích tăng thêm bao nhiêu?
-b) Hình chữ nhật dài 9 cm, rộng 8 cm. Nếu tăng cả chiều dài và chiều rộng thêm 12 cm thì diện tích tăng thêm bao nhiêu?
-c) Hình chữ nhật dài 37 cm, rộng 10 cm. Nếu tăng cả chiều dài và chiều rộng thêm 12 cm thì diện tích tăng thêm bao nhiêu?
-d) Hình chữ nhật dài 50 cm, rộng 5 cm. Nếu tăng cả chiều dài và chiều rộng thêm 2 cm thì diện tích tăng thêm bao nhiêu?
-e) Hình chữ nhật dài 34 cm, rộng 10 cm. Nếu tăng chiều dài thêm 14 cm (giữ nguyên chiều rộng) thì diện tích tăng thêm bao nhiêu?
+a) Khoảng cách thật từ xã Đông đến xã Đoài là 59 km. Hỏi trên bản đồ tỉ lệ 1 : 100 000 thì khoảng cách ấy dài bao nhiêu xăng-ti-mét?
+b) Trên bản đồ tỉ lệ 1 : 1 000 000, khoảng cách từ trường đến nhà văn hoá xã đo được 5 cm. Hỏi khoảng cách thật là bao nhiêu ki-lô-mét?
+c) Khoảng cách thật từ trường đến nhà văn hoá xã là 60 km. Hỏi trên bản đồ tỉ lệ 1 : 1 000 000 thì khoảng cách ấy dài bao nhiêu xăng-ti-mét?
+d) Trên bản đồ tỉ lệ 1 : 1 000 000, khoảng cách từ trường đến nhà văn hoá xã đo được 12 cm. Hỏi khoảng cách thật là bao nhiêu ki-lô-mét?
+e) Khoảng cách thật từ cầu Trắng đến trạm y tế là 13 km. Hỏi trên bản đồ tỉ lệ 1 : 100 000 thì khoảng cách ấy dài bao nhiêu xăng-ti-mét?
+
+### Bài 5. (5 điểm) Nhận ra thừa số 0 để tính tức thì
+
+Tính bằng cách nhanh nhất.
+
+a) 61 × 97 × (52 − 52)
+b) 18 × 71 × (32 − 32)
+c) (90 × 43 − 43 × 90) × 88
+d) 91 × 32 × (14 − 14)
 
 ---
 
 ## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
 
-### Bài 1. (3 điểm) Cắt, ghép hình và tỉ số diện tích
+### Bài 1. (3 điểm) Tỉ lệ nghịch — so sánh hai phương án
 
-Vẽ hình và tô phần cần tính trước khi làm.
+Tính rồi so sánh hai phương án.
 
-a) Hình chữ nhật có chiều dài 13 cm, chiều rộng 11 cm. Tính diện tích.
-b) Cắt hình ấy thành 2 phần bằng nhau. Mỗi phần có diện tích bao nhiêu?
-c) Nối trung điểm hai cạnh dài lại, hình bị chia thành hai phần. Mỗi phần có diện tích bao nhiêu?
-d) Nối một đỉnh với trung điểm cạnh đối diện, được một tam giác. Diện tích tam giác ấy bằng bao nhiêu phần diện tích hình chữ nhật?
-e) Diện tích tam giác ấy bằng bao nhiêu xăng-ti-mét vuông?
-f) Nếu ghép hai hình chữ nhật ấy theo chiều rộng thì hình mới có diện tích và chu vi bằng bao nhiêu?
+a) 7 người làm xong một công việc trong 15 ngày. Nếu có thêm 5 người nữa (làm khoẻ như nhau) thì công việc đó hoàn thành sớm hơn bao nhiêu ngày?
+b) 8 người làm xong một công việc trong 13 ngày. Nếu có thêm 7 người nữa (làm khoẻ như nhau) thì công việc đó hoàn thành sớm hơn bao nhiêu ngày?
+c) 8 người làm xong một công việc trong 11 ngày. Nếu có thêm 7 người nữa (làm khoẻ như nhau) thì công việc đó hoàn thành sớm hơn bao nhiêu ngày?
+d) 9 người làm xong một công việc trong 14 ngày. Nếu có thêm 8 người nữa (làm khoẻ như nhau) thì công việc đó hoàn thành sớm hơn bao nhiêu ngày?
+e) 12 người làm xong một công việc trong 10 ngày. Nếu có thêm 3 người nữa (làm khoẻ như nhau) thì công việc đó hoàn thành sớm hơn bao nhiêu ngày?
 
 ### Bài 2. (3 điểm) Vận tốc trung bình trên cả quãng đường
 
 Chú ý: vận tốc trung bình không phải trung bình cộng hai vận tốc.
 
-a) Một người đi 3 giờ đầu với vận tốc 15 km/giờ, 1 giờ sau với vận tốc 60 km/giờ. Tính vận tốc trung bình trên cả quãng đường.
-b) Một người đi 1 giờ đầu với vận tốc 30 km/giờ, 2 giờ sau với vận tốc 20 km/giờ. Tính vận tốc trung bình trên cả quãng đường.
-c) Một người đi 3 giờ đầu với vận tốc 10 km/giờ, 2 giờ sau với vận tốc 20 km/giờ. Tính vận tốc trung bình trên cả quãng đường.
-d) Một người đi 2 giờ đầu với vận tốc 10 km/giờ, 1 giờ sau với vận tốc 20 km/giờ. Tính vận tốc trung bình trên cả quãng đường.
+a) Một người đi 1 giờ đầu với vận tốc 12 km/giờ, 1 giờ sau với vận tốc 40 km/giờ. Tính vận tốc trung bình trên cả quãng đường.
+b) Một người đi 2 giờ đầu với vận tốc 10 km/giờ, 2 giờ sau với vận tốc 40 km/giờ. Tính vận tốc trung bình trên cả quãng đường.
+c) Một người đi 1 giờ đầu với vận tốc 15 km/giờ, 1 giờ sau với vận tốc 24 km/giờ. Tính vận tốc trung bình trên cả quãng đường.
+d) Một người đi 1 giờ đầu với vận tốc 10 km/giờ, 1 giờ sau với vận tốc 24 km/giờ. Tính vận tốc trung bình trên cả quãng đường.
 
-### Bài 3. (3 điểm) Mua bán có chiết khấu và thuế
-
-Bài mô phỏng câu hỏi thực tế của đề đánh giá năng lực.
-
-a) Một món hàng niêm yết 200 000 đồng, được chiết khấu 15%. Giá sau chiết khấu là bao nhiêu?
-b) Sau đó cộng thêm thuế 10% tính trên giá đã chiết khấu. Giá phải trả là bao nhiêu?
-c) So với giá niêm yết, người mua trả nhiều hơn hay ít hơn, chênh bao nhiêu đồng?
-d) Mua 6 món như thế thì phải trả bao nhiêu tiền?
-e) Nếu cửa hàng cộng thuế trước rồi mới chiết khấu thì giá cuối có đổi không?
-f) Chiết khấu 15% nghĩa là còn lại bao nhiêu phần trăm giá niêm yết?
-
-### Bài 4. (3 điểm) Tỉ lệ nghịch — so sánh hai phương án
-
-Tính rồi so sánh hai phương án.
-
-a) 3 người làm xong một công việc trong 16 ngày. Nếu có thêm 5 người nữa (làm khoẻ như nhau) thì công việc đó hoàn thành sớm hơn bao nhiêu ngày?
-b) 7 người làm xong một công việc trong 14 ngày. Nếu có thêm 5 người nữa (làm khoẻ như nhau) thì công việc đó hoàn thành sớm hơn bao nhiêu ngày?
-c) 8 người làm xong một công việc trong 12 ngày. Nếu có thêm 6 người nữa (làm khoẻ như nhau) thì công việc đó hoàn thành sớm hơn bao nhiêu ngày?
-d) 7 người làm xong một công việc trong 16 ngày. Nếu có thêm 6 người nữa (làm khoẻ như nhau) thì công việc đó hoàn thành sớm hơn bao nhiêu ngày?
-e) 6 người làm xong một công việc trong 16 ngày. Nếu có thêm 7 người nữa (làm khoẻ như nhau) thì công việc đó hoàn thành sớm hơn bao nhiêu ngày?
-
-### Bài 5. (3 điểm) Đại lượng khối lượng — đổi đơn vị và chia phần
+### Bài 3. (3 điểm) Đại lượng khối lượng — đổi đơn vị và chia phần
 
 Đổi hết về ki-lô-gam trước khi tính.
 
-a) Một kho chứa 7 tấn 8 tạ 85 kg thóc. Đổi ra ki-lô-gam.
+a) Một kho chứa 5 tấn 4 tạ 32 kg thóc. Đổi ra ki-lô-gam.
 b) Số thóc ấy nặng bao nhiêu tạ và bao nhiêu ki-lô-gam?
-c) Chở đều bằng 2 xe thì mỗi xe chở bao nhiêu ki-lô-gam, còn thừa bao nhiêu?
+c) Chở đều bằng 5 xe thì mỗi xe chở bao nhiêu ki-lô-gam, còn thừa bao nhiêu?
 d) Nếu mỗi xe chỉ chở được 1 tấn thì cần ít nhất bao nhiêu xe?
-e) Bán 3 942 kg thì còn lại bao nhiêu tạ và ki-lô-gam?
+e) Bán 2 716 kg thì còn lại bao nhiêu tạ và ki-lô-gam?
 f) Vì sao ở ý d phải làm tròn lên chứ không làm tròn xuống?
+
+### Bài 4. (3 điểm) Mua bán có chiết khấu và thuế
+
+Bài mô phỏng câu hỏi thực tế của đề đánh giá năng lực.
+
+a) Một món hàng niêm yết 400 000 đồng, được chiết khấu 20%. Giá sau chiết khấu là bao nhiêu?
+b) Sau đó cộng thêm thuế 8% tính trên giá đã chiết khấu. Giá phải trả là bao nhiêu?
+c) So với giá niêm yết, người mua trả nhiều hơn hay ít hơn, chênh bao nhiêu đồng?
+d) Mua 6 món như thế thì phải trả bao nhiêu tiền?
+e) Nếu cửa hàng cộng thuế trước rồi mới chiết khấu thì giá cuối có đổi không?
+f) Chiết khấu 20% nghĩa là còn lại bao nhiêu phần trăm giá niêm yết?
+
+### Bài 5. (3 điểm) Dung dịch và nồng độ phần trăm
+
+Luôn tách rõ hai đại lượng: lượng chất tan và khối lượng dung dịch.
+
+a) Có 500 g nước muối chứa 10% muối. Trong đó có bao nhiêu gam muối?
+b) Trong đó có bao nhiêu gam nước?
+c) Đổ thêm 300 g nước vào. Khối lượng dung dịch mới là bao nhiêu?
+d) Lượng muối có thay đổi không?
+e) Nồng độ muối của dung dịch mới bằng bao nhiêu phần trăm?
+f) Nếu thay vì đổ nước, ta bỏ thêm 10 g muối vào dung dịch ban đầu thì nồng độ mới bằng bao nhiêu phần trăm?
 
 ---
 
@@ -334,64 +335,64 @@ f) Vì sao ở ý d phải làm tròn lên chứ không làm tròn xuống?
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài I.1
-**Đáp số:** a) 9 giờ 30 phút · b) 81 · c) 8 giờ 52 phút · d) 9 giờ 52 phút
-**Hướng giải:** 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
-**Lỗi thường gặp:** Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. Phòng: Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không.
-
-### Bài I.2
-**Đáp số:** a) 4 400 000 · b) 580 000 · c) 6 300 000 · d) 4 800 · e) 69 000
-**Hướng giải:** Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
-**Nhãn tư duy:** TD1. Điểm chốt: Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
-**Lỗi thường gặp:** Đổi ngược chiều nên nhân thành chia. Phòng: Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.
-
-### Bài I.3
-**Đáp số:** a) 320 000 · b) 470 000 · c) 7 800 · d) 8 000 000 · e) 3 600
+**Đáp số:** a) 9 000 · b) 3 300 · c) 690 000 · d) 7 500
 **Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần** (chứ không phải 10 lần như đơn vị độ dài), vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc.
 **Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết bảng đơn vị diện tích riêng, ghi rõ “×100” giữa hai bậc.
 
-### Bài I.4
-**Đáp số:** a) 3 tấn 6 tạ 71 kg · b) 4 tạ 46 kg · c) 4 tấn 62 kg · d) 90 · e) 5 965 · f) 2 795 · g) 3 tấn 3 tạ 64 kg
+### Bài I.2
+**Đáp số:** a) 3 522 · b) 4 650 · c) 3 812 · d) 5 079 · e) 3 364 · f) 2 tấn 86 kg
 **Hướng giải:** 1 tấn = 10 tạ = 1 000 kg; 1 tạ = 100 kg; 1 yến = 10 kg. Đổi tất cả về ki-lô-gam rồi cộng lại; hoặc ngược lại, chia dần từ đơn vị lớn xuống đơn vị bé và lấy phần dư.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Đổi hết về **một đơn vị chung** trước khi cộng.
 **Lỗi thường gặp:** Cộng thẳng các số đứng trước những đơn vị khác nhau. Phòng: Viết mỗi thành phần thành số ki-lô-gam ngay bên dưới rồi mới cộng.
 
+### Bài I.3
+**Đáp số:** a) 11 giờ 46 phút · b) 348 · c) 2 giờ 44 phút · d) 8 giờ 16 phút
+**Hướng giải:** 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
+**Lỗi thường gặp:** Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. Phòng: Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không.
+
+### Bài I.4
+**Đáp số:** a) 0,674 · b) 9 · c) < · d) > · e) 5 · f) 0,949 · g) 9
+**Hướng giải:** Sau dấu phẩy lần lượt là hàng phần mười, phần trăm, phần nghìn. So sánh số thập phân: so phần nguyên trước; phần nguyên bằng nhau thì so lần lượt hàng phần mười, phần trăm, phần nghìn. Phân số có mẫu là 10, 100, 1 000 đổi được thẳng sang số thập phân.
+**Nhãn tư duy:** TD1, TD2. Điểm chốt: So sánh theo **hàng**, không so theo số chữ số sau dấu phẩy.
+**Lỗi thường gặp:** Cho rằng số có nhiều chữ số sau dấu phẩy hơn thì lớn hơn. Phòng: Viết thêm chữ số 0 vào cuối để hai số có cùng số chữ số thập phân rồi mới so.
+
 ### Bài I.5
-**Đáp số:** a) 9 726 000 · b) > · c) 3 268 154 và 3 268 156 · d) 2 · e) < · f) 1 047 600 · g) 60 000 · h) 9 703 540 và 9 703 542
-**Hướng giải:** So sánh: số nhiều chữ số hơn thì lớn hơn; bằng số chữ số thì so từng hàng từ trái sang phải. Làm tròn: nhìn chữ số ở hàng **liền sau** hàng cần làm tròn.
-**Nhãn tư duy:** TD1, TD5. Điểm chốt: So sánh đi từ **trái sang phải**, làm tròn nhìn **một chữ số liền sau**.
-**Lỗi thường gặp:** So sánh từ hàng đơn vị; hoặc làm tròn nhìn nhầm sang chính hàng cần làm tròn. Phòng: Gạch một nét ngăn ngay sau hàng cần làm tròn.
+**Đáp số:** a) 6 700 000 · b) 760 · c) 170 · d) 78 000 · e) 520 · f) 8 900 · g) 90 · h) 770
+**Hướng giải:** Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
+**Nhãn tư duy:** TD1. Điểm chốt: Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
+**Lỗi thường gặp:** Đổi ngược chiều nên nhân thành chia. Phòng: Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.
 
 ### Bài II.1
-**Đáp số:** a) 270 cm² · b) 136 cm² · c) 477 cm² · d) 473 cm² · e) 493 cm² · f) 602 cm²
-**Hướng giải:** Diện tích hình thang = (đáy lớn + đáy bé) × chiều cao : 2. Cách nhớ: ghép hai hình thang bằng nhau thành một hình bình hành có đáy bằng tổng hai đáy, nên phải chia đôi.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng **hai đáy** trước rồi mới nhân chiều cao và chia 2.
-**Lỗi thường gặp:** Nhân riêng từng đáy với chiều cao rồi cộng, quên chia 2. Phòng: Viết công thức đầy đủ ra trước khi thay số.
-
-### Bài II.2
-**Đáp số:** a) 31 · b) không · c) XIX · d) 7 tuần 2 ngày · e) XXI
+**Đáp số:** a) 31 · b) XXI · c) 5 tuần 2 ngày · d) không
 **Hướng giải:** Các tháng 1, 3, 5, 7, 8, 10, 12 có 31 ngày; các tháng 4, 6, 9, 11 có 30 ngày; tháng 2 có 28 ngày, năm nhuận có 29 ngày. Năm nhuận là năm chia hết cho 4, riêng năm tròn trăm thì phải chia hết cho 400. Thế kỉ thứ n gồm các năm từ (n − 1) × 100 + 1 đến n × 100.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Năm tròn trăm chỉ nhuận khi chia hết cho **400** (1900 không nhuận, 2000 có nhuận).
 **Lỗi thường gặp:** Coi mọi năm chia hết cho 4 đều là năm nhuận. Phòng: Gặp năm tròn trăm thì kiểm tra thêm điều kiện chia hết cho 400.
 
-### Bài II.3
-**Đáp số:** a) 15 · b) 7 600 · c) 820 000 · d) 2 800 · e) 61 · f) 340 000 · g) 10 · h) 7 500
-**Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần**, vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
-**Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc, không phải 10 lần.
-**Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết riêng bảng đơn vị diện tích, ghi rõ “× 100” giữa hai bậc liền nhau.
-
-### Bài II.4
-**Đáp số:** a) 5 778 · b) 6 174 · c) 1 995 · d) 2 190 · e) 4 450 · f) 3 288
+### Bài II.2
+**Đáp số:** a) 1 793 · b) 31 235 · c) 6 359 · d) 22 041 · e) 3 916 · f) 4 450
 **Hướng giải:** Chỉ cộng, trừ được các số đo **cùng đơn vị**. Bước đầu tiên luôn là đổi tất cả về đơn vị mà đề yêu cầu ở kết quả, sau đó tính như với số tự nhiên rồi ghi kèm đơn vị.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của **kết quả** quyết định ta đổi về đơn vị nào.
 **Lỗi thường gặp:** Cộng số mét với số xăng-ti-mét mà chưa đổi. Phòng: Gạch chân đơn vị ở chỗ chấm rồi đổi mọi số hạng về đơn vị đó.
 
-### Bài II.5
-**Đáp số:** a) > · b) < · c) < · d) <
+### Bài II.3
+**Đáp số:** a) > · b) < · c) < · d) > · e) < · f) < · g) <
 **Hướng giải:** Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.
+
+### Bài II.4
+**Đáp số:** a) 69,49 · b) 30,47 · c) 94,64 · d) 279,48 · e) 72,01
+**Hướng giải:** Cộng, trừ số thập phân: viết các dấu phẩy **thẳng cột** rồi tính như số tự nhiên, đặt dấu phẩy ở kết quả thẳng cột với các dấu phẩy trên. Nhân số thập phân với số tự nhiên: nhân như số tự nhiên rồi đếm số chữ số thập phân của thừa số để đặt dấu phẩy.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng trừ thì **thẳng dấu phẩy**; nhân thì **đếm chữ số thập phân**.
+**Lỗi thường gặp:** Nhân xong đặt dấu phẩy thẳng cột như phép cộng. Phòng: Đếm số chữ số sau dấu phẩy ngay khi viết đề bài.
+
+### Bài II.5
+**Đáp số:** a) 6 600 · b) 57 · c) 49 · d) 52 · e) 700
+**Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần**, vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
+**Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc, không phải 10 lần.
+**Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết riêng bảng đơn vị diện tích, ghi rõ “× 100” giữa hai bậc liền nhau.
 
 ### Bài III.1
 **Đáp số:** a) 10 giờ 32 phút · b) 19 giờ 14 phút · c) 14 giờ 48 phút · d) 8 giờ 27 phút · e) 11 giờ 49 phút
@@ -424,74 +425,74 @@ f) Vì sao ở ý d phải làm tròn lên chứ không làm tròn xuống?
 **Lỗi thường gặp:** Đổi như đơn vị diện tích, chỉ nhân 100. Phòng: Nhớ dãy 10 – 100 – 1 000 ứng với độ dài – diện tích – thể tích.
 
 ### Bài IV.1
-**Đáp số:** a) 48 km · b) 6 giờ · c) 4 km/giờ · d) 72 km · e) 5 giờ
+**Đáp số:** a) 2 giờ · b) 225 km · c) 4 km/giờ · d) 2 giờ · e) 20 km/giờ · f) 60 km · g) 24 km
 **Hướng giải:** BẪY — Đơn vị thời gian. s = v × t; v = s : t; t = s : v. Đơn vị phải khớp: vận tốc km/giờ đi với quãng đường km và thời gian giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng còn lại.
 **Lỗi thường gặp:** Vận tốc tính bằng km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
 **Gợi ý 3 tầng:** (1) Đề cho hai đại lượng nào và hỏi đại lượng nào? — (2) Viết công thức tương ứng. — (3) Kiểm tra đơn vị có khớp nhau không.
 
 ### Bài IV.2
-**Đáp số:** a) 72 lít · b) 60 lít · c) 15 lít · d) 288 lít · e) 90 lít · f) 125 lít
+**Đáp số:** a) 15 lít · b) 288 lít · c) 90 lít · d) 125 lít · e) 40 lít
 **Hướng giải:** Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
 **Lỗi thường gặp:** Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. Phòng: Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng.
 **Gợi ý 3 tầng:** (1) Còn lại bao nhiêu thùng? — (2) Mỗi thùng bao nhiêu lít? — (3) Nhân hai kết quả đó.
 
 ### Bài IV.3
+**Đáp số:** a) 147 m³ · b) 64 m³ · c) 108 000 lít · d) 8 m³ · e) 24 m³ · f) 270 000 lít
+**Hướng giải:** BẪY — Mực nước, không phải chiều cao bể. Thể tích hình hộp chữ nhật bằng dài × rộng × cao. Khi bể chưa đầy, chiều cao dùng để tính là **mực nước**, không phải chiều cao bể. 1 m³ = 1 000 lít.
+**Nhãn tư duy:** TD3, TD2. Điểm chốt: Chiều cao trong công thức là **mực nước thực tế**.
+**Lỗi thường gặp:** Lấy chiều cao bể để tính lượng nước đang có. Phòng: Vẽ mặt cắt của bể và tô phần nước trước khi tính.
+**Gợi ý 3 tầng:** (1) Diện tích đáy bể bằng bao nhiêu? — (2) Chiều cao cần dùng là chiều cao bể hay mực nước? — (3) Nhân diện tích đáy với chiều cao ấy.
+
+### Bài IV.4
+**Đáp số:** a) 59 cm · b) 50 km · c) 6 cm · d) 120 km · e) 13 cm
+**Hướng giải:** BẪY — Quên đổi đơn vị sau khi nhân. Tỉ lệ 1 : n nghĩa là 1 cm trên bản đồ ứng với n cm thật. Đi từ bản đồ ra thực tế thì **nhân** với n; đi ngược lại thì **chia**. Cả hai chiều đều phải đổi đơn vị ở bước cuối.
+**Nhãn tư duy:** TD2, TD5. Điểm chốt: Nhân xong ra xăng-ti-mét, mà đề hỏi ki-lô-mét. 1 km = 100 000 cm.
+**Lỗi thường gặp:** Trả lời con số xăng-ti-mét nhưng ghi đơn vị là ki-lô-mét. Phòng: Viết đơn vị bên cạnh mọi con số trong bài giải, kể cả bước trung gian.
+**Gợi ý 3 tầng:** (1) Tỉ lệ 1 : n nghĩa là 1 cm trên bản đồ bằng bao nhiêu cm thật? — (2) Nhân xong thì con số ấy đang là đơn vị gì? — (3) Đề hỏi đơn vị gì? Đổi về đúng đơn vị ấy.
+
+### Bài IV.5
 **Đáp số:** a) 0 · b) 0 · c) 0 · d) 0
 **Hướng giải:** BẪY — Biểu thức lớn nhưng kết quả bằng 0. Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu. Vì vậy phải quan sát toàn bộ biểu thức trước khi tính, tìm cụm nào có giá trị bằng 0.
 **Nhãn tư duy:** TD5, TD6. Điểm chốt: Quét tìm **cụm bằng 0** trước; thấy rồi thì viết đáp số ngay.
 **Lỗi thường gặp:** Lao vào nhân từng cặp số lớn rồi mới phát hiện kết quả bằng 0. Phòng: Đọc hết biểu thức một lượt, khoanh các cụm giống nhau bị trừ cho nhau.
 **Gợi ý 3 tầng:** (1) Có cụm nào trong ngoặc bằng 0 không? — (2) Có hai cụm giống hệt nhau bị trừ cho nhau không? — (3) Tích có một thừa số bằng 0 thì bằng bao nhiêu?
 
-### Bài IV.4
-**Đáp số:** a) 84 m³ · b) 270 000 lít · c) 384 m³ · d) 224 000 lít
-**Hướng giải:** BẪY — Mực nước, không phải chiều cao bể. Thể tích hình hộp chữ nhật bằng dài × rộng × cao. Khi bể chưa đầy, chiều cao dùng để tính là **mực nước**, không phải chiều cao bể. 1 m³ = 1 000 lít.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Chiều cao trong công thức là **mực nước thực tế**.
-**Lỗi thường gặp:** Lấy chiều cao bể để tính lượng nước đang có. Phòng: Vẽ mặt cắt của bể và tô phần nước trước khi tính.
-**Gợi ý 3 tầng:** (1) Diện tích đáy bể bằng bao nhiêu? — (2) Chiều cao cần dùng là chiều cao bể hay mực nước? — (3) Nhân diện tích đáy với chiều cao ấy.
-
-### Bài IV.5
-**Đáp số:** a) 96 cm² · b) 348 cm² · c) 708 cm² · d) 114 cm² · e) 140 cm²
-**Hướng giải:** BẪY — Phần tăng gồm ba mảnh. Tăng một chiều thêm k đơn vị thì diện tích tăng thêm đúng một hình chữ nhật có kích thước k × chiều còn lại. Tăng cả hai chiều thì phần tăng gồm ba mảnh: hai dải và một hình vuông ở góc — nên **không** bằng tích của hai phần tăng.
-**Nhãn tư duy:** TD3, TD6. Điểm chốt: Tăng cả hai chiều thì phần tăng gồm **ba mảnh**, không phải một.
-**Lỗi thường gặp:** Nhân hai lượng tăng với nhau rồi coi đó là phần diện tích tăng thêm. Phòng: Vẽ hình chữ nhật cũ nằm trong hình mới, tô phần dôi ra.
-**Gợi ý 3 tầng:** (1) Vẽ hình cũ và hình mới chồng lên nhau. — (2) Phần dôi ra gồm mấy mảnh? — (3) Tính diện tích từng mảnh rồi cộng.
-
 ### Bài V.1
-**Đáp số:** a) 143 cm² · b) 71,5 cm² · c) 71,5 cm² · d) 1 phần 4 · e) 35,75 cm² · f) diện tích 286 cm², chu vi 70 cm
-**Hướng giải:** Diện tích cộng được khi ghép hình, **chu vi thì không**. Tam giác có đáy bằng nửa một cạnh và chiều cao bằng cạnh kia thì diện tích bằng một phần tư hình chữ nhật.
-**Nhãn tư duy:** TD6, TD3. Điểm chốt: Ghép hình: **diện tích cộng, chu vi không cộng**.
-**Lỗi thường gặp:** Cộng chu vi hai hình nhỏ lại thành chu vi hình ghép. Phòng: Tô đậm đường bao của hình mới rồi mới tính chu vi.
-**Gợi ý 3 tầng:** (1) Tam giác ấy có đáy và chiều cao bằng bao nhiêu? — (2) Diện tích tam giác bằng đáy nhân chiều cao chia 2. — (3) So với diện tích hình chữ nhật thì bằng mấy phần?
+**Đáp số:** a) 6,25 ngày · b) 6,07 ngày · c) 5,13 ngày · d) 6,59 ngày · e) 2 ngày
+**Hướng giải:** Tổng số ngày công không đổi: số người × số ngày. Tính tổng số ngày công, chia cho số người mới ra số ngày mới, rồi lấy số ngày cũ trừ số ngày mới để biết sớm hơn bao nhiêu.
+**Nhãn tư duy:** TD6, TD3. Điểm chốt: Đại lượng bất biến ở đây là **tổng số ngày công**.
+**Lỗi thường gặp:** Trừ thẳng số người rồi lấy hiệu làm số ngày rút ngắn. Phòng: Viết rõ: tổng ngày công = … ; số ngày mới = … ; sớm hơn = … .
+**Gợi ý 3 tầng:** (1) Tổng số ngày công là bao nhiêu? — (2) Với số người mới thì cần bao nhiêu ngày? — (3) Lấy số ngày cũ trừ số ngày mới.
 
 ### Bài V.2
-**Đáp số:** a) 26,25 km/giờ · b) 23,33 km/giờ · c) 14 km/giờ · d) 13,33 km/giờ
+**Đáp số:** a) 26 km/giờ · b) 25 km/giờ · c) 19,5 km/giờ · d) 17 km/giờ
 **Hướng giải:** Vận tốc trung bình = **tổng quãng đường : tổng thời gian**. Phải tính riêng quãng đường của từng chặng rồi cộng lại, sau đó chia cho tổng thời gian.
 **Nhãn tư duy:** TD6, TD2. Điểm chốt: Chỉ khi hai chặng **cùng thời gian** thì vận tốc trung bình mới bằng trung bình cộng hai vận tốc.
 **Lỗi thường gặp:** Cộng hai vận tốc rồi chia đôi trong mọi trường hợp. Phòng: Luôn viết hai dòng: tổng quãng đường = … ; tổng thời gian = … rồi mới chia.
 **Gợi ý 3 tầng:** (1) Chặng thứ nhất đi được bao nhiêu ki-lô-mét? — (2) Chặng thứ hai đi được bao nhiêu? — (3) Lấy tổng quãng đường chia tổng thời gian.
 
 ### Bài V.3
-**Đáp số:** a) 170 000 đồng · b) 187 000 đồng · c) ít hơn 13 000 đồng · d) 1 122 000 đồng · e) không đổi, vì nhân hai lần theo cùng hai tỉ lệ · f) 85%
+**Đáp số:** a) 5 432 kg · b) 54 tạ 32 kg · c) 1 086 kg, thừa 2 kg · d) 6 xe · e) 27 tạ 16 kg · f) vì phần thóc còn lại vẫn cần thêm một xe nữa để chở
+**Hướng giải:** Quy hết về một đơn vị rồi mới tính. Với câu hỏi “cần ít nhất bao nhiêu xe”, phần dư vẫn phải có một xe chở, nên **làm tròn lên**.
+**Nhãn tư duy:** TD3, TD6. Điểm chốt: Câu hỏi “ít nhất bao nhiêu xe” luôn **làm tròn lên**.
+**Lỗi thường gặp:** Chia rồi lấy phần nguyên, bỏ quên phần dư vẫn cần một xe. Phòng: Hỏi lại: phần thóc dư có tự bay đi được không?
+**Gợi ý 3 tầng:** (1) Đổi tất cả về ki-lô-gam. — (2) Chia cho sức chở mỗi xe. — (3) Còn dư thì có cần thêm xe không?
+
+### Bài V.4
+**Đáp số:** a) 320 000 đồng · b) 345 600 đồng · c) ít hơn 54 400 đồng · d) 2 073 600 đồng · e) không đổi, vì nhân hai lần theo cùng hai tỉ lệ · f) 80%
 **Hướng giải:** Mỗi lần tính phần trăm phải xác định lại **mốc 100%**. Chiết khấu tính trên giá niêm yết; thuế tính trên giá đã chiết khấu. Vì cả hai đều là phép nhân với một tỉ lệ nên đổi thứ tự không làm đổi kết quả.
 **Nhãn tư duy:** TD6, TD2. Điểm chốt: Mốc 100% **đổi sau mỗi bước** — đây là bẫy hay gặp nhất.
 **Lỗi thường gặp:** Tính thuế trên giá niêm yết thay vì trên giá đã chiết khấu. Phòng: Viết ba dòng: giá niêm yết, giá sau chiết khấu, giá phải trả.
 **Gợi ý 3 tầng:** (1) Chiết khấu tính trên giá nào? — (2) Sau chiết khấu còn bao nhiêu phần trăm? — (3) Thuế tính trên giá nào?
 
-### Bài V.4
-**Đáp số:** a) 10 ngày · b) 5,83 ngày · c) 5,14 ngày · d) 7,38 ngày · e) 8,62 ngày
-**Hướng giải:** Tổng số ngày công không đổi: số người × số ngày. Tính tổng số ngày công, chia cho số người mới ra số ngày mới, rồi lấy số ngày cũ trừ số ngày mới để biết sớm hơn bao nhiêu.
-**Nhãn tư duy:** TD6, TD3. Điểm chốt: Đại lượng bất biến ở đây là **tổng số ngày công**.
-**Lỗi thường gặp:** Trừ thẳng số người rồi lấy hiệu làm số ngày rút ngắn. Phòng: Viết rõ: tổng ngày công = … ; số ngày mới = … ; sớm hơn = … .
-**Gợi ý 3 tầng:** (1) Tổng số ngày công là bao nhiêu? — (2) Với số người mới thì cần bao nhiêu ngày? — (3) Lấy số ngày cũ trừ số ngày mới.
-
 ### Bài V.5
-**Đáp số:** a) 7 885 kg · b) 78 tạ 85 kg · c) 3 942 kg, thừa 1 kg · d) 8 xe · e) 39 tạ 43 kg · f) vì phần thóc còn lại vẫn cần thêm một xe nữa để chở
-**Hướng giải:** Quy hết về một đơn vị rồi mới tính. Với câu hỏi “cần ít nhất bao nhiêu xe”, phần dư vẫn phải có một xe chở, nên **làm tròn lên**.
-**Nhãn tư duy:** TD3, TD6. Điểm chốt: Câu hỏi “ít nhất bao nhiêu xe” luôn **làm tròn lên**.
-**Lỗi thường gặp:** Chia rồi lấy phần nguyên, bỏ quên phần dư vẫn cần một xe. Phòng: Hỏi lại: phần thóc dư có tự bay đi được không?
-**Gợi ý 3 tầng:** (1) Đổi tất cả về ki-lô-gam. — (2) Chia cho sức chở mỗi xe. — (3) Còn dư thì có cần thêm xe không?
+**Đáp số:** a) 50 g · b) 450 g · c) 800 g · d) không đổi, vẫn là 50 g · e) 6,25% · f) 11,76%
+**Hướng giải:** Nồng độ phần trăm bằng lượng chất tan chia khối lượng dung dịch rồi nhân 100. Đổ thêm nước thì tử số giữ nguyên, mẫu số tăng, nên nồng độ giảm. Bỏ thêm muối thì **cả tử và mẫu cùng tăng**.
+**Nhãn tư duy:** TD6, TD3. Điểm chốt: Đổ thêm nước: **lượng muối không đổi**. Bỏ thêm muối: cả hai cùng đổi.
+**Lỗi thường gặp:** Khi bỏ thêm muối thì chỉ cộng vào tử số mà quên cộng vào mẫu số. Phòng: Kẻ bảng hai dòng: lượng muối và khối lượng dung dịch, cập nhật sau mỗi thao tác.
+**Gợi ý 3 tầng:** (1) Lượng muối ban đầu bằng bao nhiêu? — (2) Đổ thêm nước thì lượng muối có đổi không? — (3) Nồng độ = lượng muối chia khối lượng dung dịch rồi nhân 100.
 
 ---
 

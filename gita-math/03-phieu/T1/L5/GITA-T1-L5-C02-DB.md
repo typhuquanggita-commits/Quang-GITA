@@ -43,8 +43,8 @@ Phiếu lời giải và phân tích chuyên sâu đi kèm: `GITA-T1-L5-C02-DB-G
 Họ và tên: ......................................... Lớp: ......... Điểm: ......../100
 
 > **KIẾN THỨC NỀN CỦA CHƯƠNG**
-> 1. Bảng đơn vị đo diện tích
-> 2. Bảng đơn vị thể tích; quan hệ dm³ – lít
+> 1. Bảng đơn vị thể tích; quan hệ dm³ – lít
+> 2. Đại lượng tỉ lệ nghịch, tổng số ngày công
 > 3. Quan hệ giờ – phút – giây
 > 4. Công thức s = v × t
 
@@ -82,7 +82,7 @@ e) Dạng bài thứ 5 của chương?
 
 Với mỗi dạng bài dưới đây, điền cột **Dấu hiệu nhận biết** của bảng.
 
-a) Dạng “Tỉ lệ nghịch, so sánh hai phương án” — dấu hiệu nhận biết?
+a) Dạng “Phần trăm nhiều bước trong mua bán” — dấu hiệu nhận biết?
 b) Dạng “Đổi đơn vị diện tích” — dấu hiệu nhận biết?
 c) Dạng “Bốn phép tính với số đo” — dấu hiệu nhận biết?
 d) Dạng “So sánh số đo đại lượng” — dấu hiệu nhận biết?
@@ -95,7 +95,7 @@ Với mỗi dạng bài dưới đây, điền cột **Phương pháp áp dụng
 a) Dạng “Bốn phép tính với số đo” — phương pháp áp dụng?
 b) Dạng “So sánh số đo đại lượng” — phương pháp áp dụng?
 c) Dạng “Bài toán đại lượng có lời văn” — phương pháp áp dụng?
-d) Dạng “Vận tốc trung bình” — phương pháp áp dụng?
+d) Dạng “Tỉ lệ nghịch, so sánh hai phương án” — phương pháp áp dụng?
 e) Dạng “Đổi đơn vị thể tích, dung tích” — phương pháp áp dụng?
 
 ### Bài 4. (2 điểm) Điền cột “Kiến thức phải thuộc”
@@ -103,7 +103,7 @@ e) Dạng “Đổi đơn vị thể tích, dung tích” — phương pháp áp
 Với mỗi dạng bài dưới đây, điền cột **Kiến thức phải thuộc** của bảng.
 
 a) Dạng “Bài toán đại lượng có lời văn” — kiến thức phải thuộc?
-b) Dạng “Vận tốc trung bình” — kiến thức phải thuộc?
+b) Dạng “Tỉ lệ nghịch, so sánh hai phương án” — kiến thức phải thuộc?
 c) Dạng “Đổi đơn vị thể tích, dung tích” — kiến thức phải thuộc?
 d) Dạng “Ba dạng cơ bản của chuyển động đều” — kiến thức phải thuộc?
 e) Dạng “Bài toán đại lượng nhiều bước” — kiến thức phải thuộc?
@@ -293,7 +293,7 @@ f) Ba tổ trồng được 84 cây. Số cây tổ Một, tổ Hai, tổ Ba t�
 
 ### Bài 1. (4 điểm) Đọc vị đề số 1
 
-**Đề:** Điền số thích hợp vào chỗ chấm. 2 hm² = … m²
+**Đề:** Điền số thích hợp vào chỗ chấm. 7 600 m² = … dam²
 
 a) Đề này thuộc dạng bài nào?
 b) Dấu hiệu nào giúp em nhận ra?
@@ -304,7 +304,7 @@ f) Lỗi nào dễ mắc ở đề này?
 
 ### Bài 2. (4 điểm) Đọc vị đề số 2
 
-**Đề:** Điền dấu <, >, = thích hợp. 85 cm² … 58 m²
+**Đề:** Điền dấu <, >, = thích hợp. 14 km² … 1 030 ha
 
 a) Đề này thuộc dạng bài nào?
 b) Dấu hiệu nào giúp em nhận ra?
@@ -315,7 +315,7 @@ f) Lỗi nào dễ mắc ở đề này?
 
 ### Bài 3. (4 điểm) Đọc vị đề số 3
 
-**Đề:** Chú ý: vận tốc trung bình không phải trung bình cộng hai vận tốc. Một người đi 2 giờ đầu với vận tốc 30 km/giờ, 2 giờ sau với vận tốc 60 km/giờ. Tính vận tốc trung bình trên cả quãng đường.
+**Đề:** Tính rồi so sánh hai phương án. 7 người làm xong một công việc trong 11 ngày. Nếu có thêm 7 người nữa (làm khoẻ như nhau) thì công việc đó hoàn thành sớm hơn bao nhiêu ngày?
 
 a) Đề này thuộc dạng bài nào?
 b) Dấu hiệu nào giúp em nhận ra?
@@ -326,7 +326,7 @@ f) Lỗi nào dễ mắc ở đề này?
 
 ### Bài 4. (4 điểm) Đọc vị đề số 4
 
-**Đề:** Áp dụng đúng công thức cho từng câu. Một người đi quãng đường 360 km với vận tốc 60 km/giờ. Tính thời gian đi.
+**Đề:** Áp dụng đúng công thức cho từng câu. Một người đi quãng đường 120 km với vận tốc 20 km/giờ. Tính thời gian đi.
 
 a) Đề này thuộc dạng bài nào?
 b) Dấu hiệu nào giúp em nhận ra?
@@ -337,7 +337,7 @@ f) Lỗi nào dễ mắc ở đề này?
 
 ### Bài 5. (4 điểm) Đọc vị đề số 5
 
-**Đề:** Điền kết quả, viết dạng giờ và phút. 311 phút = … giờ … phút
+**Đề:** Điền kết quả, viết dạng giờ và phút. 9 giờ 32 phút − 281 phút = … (viết dạng giờ và phút)
 
 a) Đề này thuộc dạng bài nào?
 b) Dấu hiệu nào giúp em nhận ra?
@@ -359,19 +359,19 @@ f) Lỗi nào dễ mắc ở đề này?
 **Lỗi thường gặp:** Kể thiếu dạng bài. Phòng: Đếm số dạng rồi mới kể; kể xong đếm lại.
 
 ### Bài A.2
-**Đáp số:** a) Thay đổi số người, hỏi thay đổi thời gian · b) Đơn vị có mũ hai, hoặc ha, km² · c) Các số hạng có đơn vị khác nhau trong cùng một phép tính · d) Hai vế có đơn vị khác nhau · e) Đơn vị trong câu hỏi khác đơn vị trong dữ kiện
+**Đáp số:** a) Có cả “chiết khấu” và “thuế” trong một bài · b) Đơn vị có mũ hai, hoặc ha, km² · c) Các số hạng có đơn vị khác nhau trong cùng một phép tính · d) Hai vế có đơn vị khác nhau · e) Đơn vị trong câu hỏi khác đơn vị trong dữ kiện
 **Hướng giải:** Cột “Dấu hiệu nhận biết” lấy từ bảng phân tích chuyên sâu của các phiếu đã học. Điền xong, đọc ngang từng hàng để thấy mạch từ đề bài tới lời giải.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Bảng chỉ có giá trị khi **đọc ngang được từng hàng**.
 **Lỗi thường gặp:** Điền từng cột rời rạc, không đối chiếu ngang. Phòng: Điền xong thì đọc lại theo hàng, mỗi hàng phải thành một câu có nghĩa.
 
 ### Bài A.3
-**Đáp số:** a) Đổi về đơn vị của kết quả rồi tính · b) Đổi về cùng đơn vị rồi so sánh · c) Tính theo đơn vị dữ kiện rồi đổi ở bước cuối · d) Tính tổng quãng đường, tổng thời gian rồi chia · e) Đếm bậc rồi nhân, chia 1 000
+**Đáp số:** a) Đổi về đơn vị của kết quả rồi tính · b) Đổi về cùng đơn vị rồi so sánh · c) Tính theo đơn vị dữ kiện rồi đổi ở bước cuối · d) Bám vào tổng số ngày công không đổi · e) Đếm bậc rồi nhân, chia 1 000
 **Hướng giải:** Cột “Phương pháp áp dụng” lấy từ bảng phân tích chuyên sâu của các phiếu đã học. Điền xong, đọc ngang từng hàng để thấy mạch từ đề bài tới lời giải.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Bảng chỉ có giá trị khi **đọc ngang được từng hàng**.
 **Lỗi thường gặp:** Điền từng cột rời rạc, không đối chiếu ngang. Phòng: Điền xong thì đọc lại theo hàng, mỗi hàng phải thành một câu có nghĩa.
 
 ### Bài A.4
-**Đáp số:** a) Nhân, chia số tự nhiên; đổi đơn vị khối lượng · b) Công thức vận tốc; trung bình cộng có trọng số · c) Bảng đơn vị thể tích; quan hệ dm³ – lít · d) Công thức s = v × t · e) Nhân, trừ; đại lượng cùng loại
+**Đáp số:** a) Nhân, chia số tự nhiên; đổi đơn vị khối lượng · b) Đại lượng tỉ lệ nghịch, tổng số ngày công · c) Bảng đơn vị thể tích; quan hệ dm³ – lít · d) Công thức s = v × t · e) Nhân, trừ; đại lượng cùng loại
 **Hướng giải:** Cột “Kiến thức phải thuộc” lấy từ bảng phân tích chuyên sâu của các phiếu đã học. Điền xong, đọc ngang từng hàng để thấy mạch từ đề bài tới lời giải.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Bảng chỉ có giá trị khi **đọc ngang được từng hàng**.
 **Lỗi thường gặp:** Điền từng cột rời rạc, không đối chiếu ngang. Phòng: Điền xong thì đọc lại theo hàng, mỗi hàng phải thành một câu có nghĩa.
@@ -492,10 +492,10 @@ f) Lỗi nào dễ mắc ở đề này?
 **Gợi ý 3 tầng:** (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
 
 ### Bài E.3
-**Đáp số:** a) Vận tốc trung bình · b) Hai chặng có vận tốc khác nhau · c) Công thức vận tốc; trung bình cộng có trọng số · d) Tính tổng quãng đường, tổng thời gian rồi chia · e) Kiểm tra: vận tốc trung bình luôn nằm giữa hai vận tốc đã cho. · f) Cộng hai vận tốc rồi chia đôi trong mọi trường hợp.
+**Đáp số:** a) Tỉ lệ nghịch, so sánh hai phương án · b) Thay đổi số người, hỏi thay đổi thời gian · c) Đại lượng tỉ lệ nghịch, tổng số ngày công · d) Bám vào tổng số ngày công không đổi · e) Số người tăng gấp k lần thì số ngày giảm còn 1 phần k. · f) Trừ thẳng số người rồi lấy hiệu làm số ngày rút ngắn.
 **Hướng giải:** Đọc vị là trả lời năm câu hỏi theo thứ tự: dạng gì → dấu hiệu nào → kiến thức nào → phương pháp nào → có lối tắt không. Chỉ khi trả lời xong năm câu ấy mới bắt đầu tính.
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**.
-**Lỗi thường gặp:** Cộng hai vận tốc rồi chia đôi trong mọi trường hợp. Phòng: Luôn viết hai dòng: tổng quãng đường = … ; tổng thời gian = … rồi mới chia.
+**Lỗi thường gặp:** Trừ thẳng số người rồi lấy hiệu làm số ngày rút ngắn. Phòng: Viết rõ: tổng ngày công = … ; số ngày mới = … ; sớm hơn = … .
 **Gợi ý 3 tầng:** (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
 
 ### Bài E.4

@@ -43,10 +43,10 @@ Phiếu lời giải và phân tích chuyên sâu đi kèm: `GITA-T2-L4-C09-LT-G
 Họ và tên: ......................................... Lớp: ......... Điểm: ......../100
 
 > **KIẾN THỨC NỀN CỦA CHƯƠNG**
-> 1. Tỉ lệ, đổi đơn vị đo độ dài
-> 2. Trung bình cộng của dãy cách đều; tổng – tỉ
-> 3. Quan hệ tổng – số lượng – trung bình cộng
-> 4. Đại lượng tỉ lệ thuận
+> 1. Tỉ số, sơ đồ đoạn thẳng, dịch lời văn thành số
+> 2. Phương pháp giả thiết tạm
+> 3. Đại lượng tỉ lệ thuận
+> 4. Tỉ lệ, đổi đơn vị đo độ dài
 
 ---
 

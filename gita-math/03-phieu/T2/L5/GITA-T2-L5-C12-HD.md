@@ -55,14 +55,14 @@ Học thuộc theo cặp **dạng bài – công thức**, không học rời.
 |---:|---|---|
 | 1 | Tô màu, bất biến trên bàn cờ | Kĩ thuật tô màu, bất biến, tính chẵn lẻ |
 | 2 | Đi-rích-lê dạng chứng minh | Nguyên lí ngăn kéo |
-| 3 | Trắc nghiệm đếm nhanh | Đếm cặp, quy tắc nhân, ngăn kéo, trồng cây, chu kì 7 |
+| 3 | Ứng dụng sơ đồ (cây, khối, mũi tên) | Đếm có hệ thống; dấu hiệu chia hết; cấu tạo số |
 | 4 | Quy tắc nhân | Quy tắc nhân, quy tắc cộng trong phép đếm |
 | 5 | Bài toán bất biến | Tính chẵn lẻ, đại lượng bất biến |
 | 6 | Cân đĩa, chia ba | Lập luận trường hợp xấu nhất, chia nhóm |
 | 7 | Thử chọn | Dấu hiệu chia hết; cấu tạo số có hai chữ số |
 | 8 | Nguyên lý bù trừ, sơ đồ Ven | Đếm có phần chung; sơ đồ Ven |
 | 9 | Giả thiết tạm hai loại | Phương pháp giả thiết tạm |
-| 10 | Bài toán bất biến | Tính chẵn lẻ; tổng dãy số tự nhiên liên tiếp |
+| 10 | Lập bảng | Suy luận loại trừ hai tầng; xét trường hợp |
 | 11 | Lập bảng | Suy luận loại trừ; đọc hiểu câu phủ định |
 | 12 | Nguyên lí Đi-rích-lê | Nguyên lí ngăn kéo, lập luận trường hợp xấu nhất |
 | 13 | Bài toán trồng cây, chia đoạn | Quan hệ số điểm – số khoảng |
@@ -96,14 +96,14 @@ Trước khi tra bảng, đi qua cây quyết định đọc vị của nhóm ch
 |---|---|---|---|
 | Tô màu, bất biến trên bàn cờ | Bàn cờ, quân đô-mi-nô, câu hỏi “có thể phủ kín không” | Tô màu xen kẽ, đếm hai màu, so sánh | Hai ô ở hai góc đối diện của bàn cờ luôn cùng màu. |
 | Đi-rích-lê dạng chứng minh | “Chứng tỏ rằng có ít nhất … cùng …” | Đặt tên ngăn kéo và đồ vật, tính ngưỡng | Ngưỡng = số ngăn × (số cần − 1) + 1. |
-| Trắc nghiệm đếm nhanh | Nhiều câu ngắn, mỗi câu một kỹ thuật khác nhau | Nhận dạng kỹ thuật trước, tính sau | Học thuộc bốn công thức: n(n−1):2, a×b, loại×(cần−1)+1, khoảng+1. |
+| Ứng dụng sơ đồ (cây, khối, mũi tên) | Đề hỏi **lập được bao nhiêu số** thoả một điều kiện | Chọn hàng bị điều kiện ràng buộc trước, rồi nhân số cách các hàng còn lại | Ba chữ số khác nhau xếp được 6 cách — dùng khi điều kiện rơi vào tổng. |
 | Quy tắc nhân | Chọn một phần tử từ mỗi nhóm để ghép thành một bộ | Nhân số cách của các bước liên tiếp | Vẽ sơ đồ cây với hai ba nhánh đầu để thấy rõ phép nhân. |
 | Bài toán bất biến | Một quá trình lặp lại nhiều bước, hỏi trạng thái cuối | Tìm đại lượng không đổi rồi so trạng thái đầu với trạng thái cuối | Thử với n nhỏ (n = 3, 4) để đoán, rồi chứng minh bằng bất biến. |
 | Cân đĩa, chia ba | Cân đĩa không có quả cân, tìm vật khác biệt | Chia ba phần bằng nhau mỗi lần cân | 3 đồng → 1 lần; 9 đồng → 2 lần; 27 đồng → 3 lần. |
 | Thử chọn | Đề đòi một số thoả **nhiều điều kiện cùng lúc**, số khả năng hữu hạn | Thu hẹp bằng điều kiện chặt nhất rồi thử từng khả năng còn lại | Tổng hai chữ số cố định thì chỉ có tối đa mười số — liệt kê rất nhanh. |
 | Nguyên lý bù trừ, sơ đồ Ven | Có cụm “cả hai”, “ít nhất một”, “không … nào” | Vẽ Ven, điền miền giữa trước, trừ dần ra | Số thích ít nhất một môn = A + B − cả hai. |
 | Giả thiết tạm hai loại | Hai loại đối tượng, biết tổng số và tổng của một đại lượng phụ | Giả sử đồng nhất → tính chênh → chia cho hiệu đơn vị | Kiểm tra ngay: số bánh phải nằm giữa tổng × (số bánh ít nhất) và tổng × (số bánh nhiều nhất). |
-| Lập bảng | Đề ghép **người với việc** và cho một loạt câu khẳng định hoặc phủ định | Kẻ bảng hai chiều, đánh × và ✓, mỗi ✓ kéo theo cả dòng cả cột | Bắt đầu từ người bị loại nhiều khả năng nhất — dòng ấy chốt được sớm nhất. |
+| Lập bảng | Đề ghép **hai thuộc tính** cho cùng một nhóm người | Kẻ hai bảng, giải tầng chốt được trước, dùng kết quả làm manh mối cho tầng sau | Manh mối dạng khẳng định luôn dùng trước manh mối dạng phủ định. |
 | Nguyên lí Đi-rích-lê | Cụm “ít nhất … để chắc chắn …” | Dựng tình huống xấu nhất rồi cộng 1 | Công thức: số loại × (số cần − 1) + 1. |
 | Bài toán trồng cây, chia đoạn | “Trồng cây”, “cột điện”, “quanh hồ”, “cưa thành đoạn” | Tính số khoảng rồi chọn công thức theo trường hợp | Khép kín thì số cây bằng đúng số khoảng — không cộng, không trừ. |
 | Suy luận loại trừ có bảng | Mỗi người ứng với đúng một đối tượng, đề cho các dữ kiện phủ định | Kẻ bảng, đánh dấu, lan toả theo hàng và cột | Bắt đầu từ dữ kiện khẳng định (“thích”, “là”) trước dữ kiện phủ định. |
@@ -129,8 +129,8 @@ Trả lời được ngay trong 10 giây thì đánh ✔. Phải nghĩ lâu thì
 - [ ] **2.** Em nhớ công thức: Kĩ thuật tô màu, bất biến, tính chẵn lẻ?
 - [ ] **3.** Em nêu được dấu hiệu nhận biết của dạng “Đi-rích-lê dạng chứng minh” chứ?
 - [ ] **4.** Em nhớ công thức: Nguyên lí ngăn kéo?
-- [ ] **5.** Em nêu được dấu hiệu nhận biết của dạng “Trắc nghiệm đếm nhanh” chứ?
-- [ ] **6.** Em nhớ công thức: Đếm cặp, quy tắc nhân, ngăn kéo, trồng cây, chu kì 7?
+- [ ] **5.** Em nêu được dấu hiệu nhận biết của dạng “Ứng dụng sơ đồ (cây, khối, mũi tên)” chứ?
+- [ ] **6.** Em nhớ công thức: Đếm có hệ thống; dấu hiệu chia hết; cấu tạo số?
 - [ ] **7.** Em nêu được dấu hiệu nhận biết của dạng “Quy tắc nhân” chứ?
 - [ ] **8.** Em nhớ công thức: Quy tắc nhân, quy tắc cộng trong phép đếm?
 - [ ] **9.** Em nêu được dấu hiệu nhận biết của dạng “Bài toán bất biến” chứ?
@@ -143,8 +143,8 @@ Trả lời được ngay trong 10 giây thì đánh ✔. Phải nghĩ lâu thì
 - [ ] **16.** Em nhớ công thức: Đếm có phần chung; sơ đồ Ven?
 - [ ] **17.** Em nêu được dấu hiệu nhận biết của dạng “Giả thiết tạm hai loại” chứ?
 - [ ] **18.** Em nhớ công thức: Phương pháp giả thiết tạm?
-- [ ] **19.** Em nêu được dấu hiệu nhận biết của dạng “Bài toán bất biến” chứ?
-- [ ] **20.** Em nhớ công thức: Tính chẵn lẻ; tổng dãy số tự nhiên liên tiếp?
+- [ ] **19.** Em nêu được dấu hiệu nhận biết của dạng “Lập bảng” chứ?
+- [ ] **20.** Em nhớ công thức: Suy luận loại trừ hai tầng; xét trường hợp?
 
 **Chuẩn đạt:** ✔ từ 18/20 câu trở lên.
 
@@ -158,14 +158,14 @@ Trả lời được ngay trong 10 giây thì đánh ✔. Phải nghĩ lâu thì
 |---:|---|---|
 | 1 | Thử xếp bằng tay rồi kết luận “không xếp được” mà không chứng minh. | Luôn tô màu và đếm hai màu trước khi kết luận. |
 | 2 | Nói chung chung “vì nhiều người quá nên phải trùng” mà không chỉ ra con số. | Viết hẳn hai dòng: “Ngăn kéo là …”, “Đồ vật là …”. |
-| 3 | Đếm cặp mà quên chia 2; “chắc chắn có” mà quên cộng 1. | Trước mỗi ý, viết một chữ tắt cho kỹ thuật: cặp, nhân, xấu nhất, khoảng. |
+| 3 | Chọn hàng trăm trước rồi mới xét điều kiện ở hàng đơn vị, thành ra phải chia trường hợp rối rắm. | Vẽ hai tầng đầu của sơ đồ cây để kiểm lại cách đếm trước khi nhân. |
 | 4 | Cộng số áo với số quần. | Tự hỏi: chọn xong áo đã đủ một bộ chưa? Chưa đủ thì phải nhân. |
 | 5 | Thử mò vài trường hợp rồi kết luận, không chứng minh được cho mọi cách làm. | Sau khi đoán, hãy kiểm tra: đại lượng đó thay đổi thế nào sau **một** bước? |
 | 6 | Chia đôi như tìm kiếm thông thường nên cần nhiều lần cân hơn mức cần thiết. | Nhớ ba kết quả: nghiêng trái, nghiêng phải, thăng bằng. |
 | 7 | Tìm được một số thoả rồi dừng, bỏ sót các đáp số còn lại. | Viết danh sách ra giấy và gạch bỏ từng số, đừng thử nhẩm trong đầu. |
 | 8 | Cộng thẳng hai nhóm rồi coi đó là số bạn thích ít nhất một môn. | Vẽ sơ đồ Ven, ghi số vào từng miền rồi cộng lại kiểm tra với sĩ số. |
 | 9 | Chia số bánh thiếu cho số bánh của loại nhiều hơn. | Thử lại: nhân ngược ra tổng số bánh, phải khớp với đề. |
-| 10 | Thử vài trường hợp rồi kết luận, không chứng minh được cho mọi cách làm. | Sau khi đoán, kiểm tra: đại lượng đó đổi thế nào sau **một** bước? |
+| 10 | Nhét cả hai tầng vào một bảng rồi rối, hoặc bỏ sót một trường hợp. | Mỗi lần đặt ✓ thì gạch đủ dòng và cột trước khi đọc manh mối kế. |
 | 11 | Đánh ✓ rồi đi tiếp luôn, không gạch × cho phần còn lại của cột. | Sau mỗi lần đặt ✓, dừng lại gạch đủ dòng và cột rồi mới đọc manh mối kế. |
 | 12 | Nhân số màu với số viên cần rồi lấy luôn kết quả đó. | Viết rõ câu “Xấu nhất là mỗi màu lấy được … viên mà vẫn chưa đủ”. |
 | 13 | Máy móc cộng 1 cho mọi trường hợp. | Vẽ hình ba khoảng, đếm tay rồi mới áp dụng cho số lớn. |

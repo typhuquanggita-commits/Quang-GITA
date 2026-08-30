@@ -87,43 +87,43 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 
 Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: đây là dạng bài gì, và dấu hiệu nào cho biết điều đó.
 
-**Đề 1.** Tính giá trị của mỗi biểu thức. 204 : 3 − 6
+**Đề 1.** Tính bằng cách thuận tiện nhất. 2 × 160 × 0
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 2.** Tính bằng cách thuận tiện nhất. 291 + 51 − 51
+**Đề 2.** Đặt tính rồi tính. 8 343 : 9
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 3.** Tìm x. x : 8 = 14
+**Đề 3.** Tìm x, trình bày từng bước. 87 − x = 81
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 4.** Đặt tính rồi tính. 765 × 6
+**Đề 4.** Tính giá trị của mỗi biểu thức. (39 + 2) × 7
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 5.** Ghép cặp rồi tính. 1 + 2 + 3 + … + 25
+**Đề 5.** Tính tổng mỗi dãy bằng cách ghép cặp. 1 + 2 + 3 + … + 20
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 6.** Tính giá trị của mỗi biểu thức. 16 + 7 × 7
+**Đề 6.** Đặt tính rồi tính. 949 − 368
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 7.** Tính bằng cách thuận tiện nhất. 85 + 166 + 15
+**Đề 7.** Tìm x. x − 4 = 40
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 8.** Nêu rõ cách tách trước khi tính. 93 + 7 + 16
+**Đề 8.** Tính giá trị của mỗi biểu thức. (58 + 7) × 7
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 9.** Đặt tính rồi tính. 5 208 : 8
+**Đề 9.** Đặt tính rồi tính. 3 732 : 4
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 10.** Đặt tính rồi tính. 701 + 706
+**Đề 10.** Ghép cặp rồi tính. 5 + 10 + 15 + … + 125
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
@@ -133,16 +133,16 @@ Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: 
 
 | # | Dạng bài | Dấu hiệu |
 |:--:|---|---|
-| 1 | Tính giá trị biểu thức | Biểu thức nhiều phép tính, có thể có ngoặc |
-| 2 | Tính nhanh biểu thức đơn giản | Biểu thức có cặp tròn trăm, có số 0, có cặp cộng rồi trừ |
-| 3 | Tìm x trong phép tính một bước | Có chữ x đứng trong một phép tính |
-| 4 | Nhân, chia số tự nhiên | Yêu cầu “đặt tính rồi tính” với phép nhân, chia |
-| 5 | Tổng dãy số cách đều | Dãy cộng dài có dấu … |
-| 6 | Tính giá trị biểu thức số | Biểu thức có nhiều phép tính, có thể có ngoặc |
-| 7 | Tính nhanh tổng nhiều số hạng | Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm |
-| 8 | Nhân nhẩm nhờ tách thừa số | Thừa số là 9, 11, 19, 21… |
+| 1 | Tính nhanh biểu thức đơn giản | Biểu thức có cặp tròn trăm, có số 0, có cặp cộng rồi trừ |
+| 2 | Nhân, chia số tự nhiên | Yêu cầu “đặt tính rồi tính” với phép nhân, chia |
+| 3 | Tìm x hai bước | x nằm trong một cụm có hai phép tính |
+| 4 | Tính giá trị biểu thức | Biểu thức nhiều phép tính, có thể có ngoặc |
+| 5 | Tổng dãy số tự nhiên liên tiếp | Dãy cộng dài có dấu … |
+| 6 | Cộng, trừ số tự nhiên | Yêu cầu “đặt tính rồi tính” |
+| 7 | Tìm x trong phép tính một bước | Có chữ x đứng trong một phép tính |
+| 8 | Tính giá trị biểu thức số | Biểu thức có nhiều phép tính, có thể có ngoặc |
 | 9 | Nhân, chia với số có một chữ số | Số bị chia có hai hoặc ba chữ số, số chia một chữ số |
-| 10 | Cộng, trừ số tự nhiên | Yêu cầu “đặt tính rồi tính” |
+| 10 | Tổng dãy số cách đều | Dãy cộng dài có dấu … |
 
 ---
 

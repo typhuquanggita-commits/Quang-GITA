@@ -54,19 +54,19 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần IV**
 
-- **Bài IV.1** — a) 3 cách · b) 3 cách · c) 5 cách · d) 8 cách · e) 4 cách
-- **Bài IV.2** — a) 7 · b) 7 · c) 11 · d) 13 · e) 17
-- **Bài IV.3** — a) 263 phần 440 · b) 122 phần 63 · c) 19 phần 45 · d) 15 phần 14 · e) 4 phần 5
-- **Bài IV.4** — a) 110 · b) 339 · c) 11 · d) 55 · e) 9 570 · f) 19 305
-- **Bài IV.5** — a) 10 phần 7 giờ · b) 2 giờ · c) 30 phần 17 giờ · d) 60 phần 13 giờ · e) 60 phần 23 giờ · f) 3 giờ 45 phút
+- **Bài IV.1** — a) Ngọc học vẽ; Đức học cờ vua; Hùng học bơi · b) Phúc học cầu lông; Trang học bóng đá; Ngọc học bóng rổ · c) Trang học bóng đá; Chi học cầu lông; Lan học bóng rổ · d) Hà học cầu lông; Sơn học bóng đá; An học bóng rổ
+- **Bài IV.2** — a) số nguyên tố · b) hợp số (ví dụ ước 3) · c) hợp số (ví dụ ước 3) · d) hợp số (ví dụ ước 3) · e) hợp số (ví dụ ước 2)
+- **Bài IV.3** — a) 337 500 đồng · b) 216 000 đồng · c) 612 000 đồng · d) 179 200 đồng
+- **Bài IV.4** — a) 299 · b) 2 092 · c) 150 · d) 150 · e) 157 350 · f) 313 651
+- **Bài IV.5** — a) xuôi dòng 112 km; ngược dòng 80 km · b) vận tốc thực 28 km/giờ; dòng nước 5 km/giờ · c) xuôi dòng 155 km; ngược dòng 125 km · d) vận tốc thực 20 km/giờ; dòng nước 5 km/giờ
 
 **Phần V**
 
-- **Bài V.1** — a) 7 · b) 7 · c) 6 · d) 9 · e) 8 · f) 7
-- **Bài V.2** — a) 1 phần 2 · 2 phần 3 · 3 phần 4 · 4 phần 5 · b) 12 phần 13 · c) đều bé hơn 1 · d) tăng dần · e) vì phần bù tới 1 là 1 phần (n + 1) càng lúc càng bé · f) 1 phần 13
-- **Bài V.3** — a) 3, 5, 9, 15 · b) 33 · c) 93 · d) 18 · e) có, khoảng cách 2 · f) 32
-- **Bài V.4** — a) 15 · b) không thay đổi · c) 15 · d) giảm đi 2 lần số bé — luôn là một số chẵn · e) không thay đổi · f) lẻ · g) không
-- **Bài V.5** — a) 120 cm · b) 56 cm · c) 144 cm · d) 42 cm · e) 182 cm · f) 84 cm
+- **Bài V.1** — a) 6 dư 8 · b) 70 · c) 6 dư 1 · d) 12 · e) 54 · f) 5 dư 3
+- **Bài V.2** — a) 0 em · b) 3 em · c) 3 em · d) 0 em · e) 0 em
+- **Bài V.3** — a) 4, 6, 10, 16 · b) 34 · c) 94 · d) 18 · e) có, khoảng cách 2 · f) 36
+- **Bài V.4** — a) 325 · b) không thay đổi · c) 325 · d) giảm đi 2 lần số bé — luôn là một số chẵn · e) không thay đổi · f) lẻ · g) không
+- **Bài V.5** — a) nhỏ 5 000 đồng; vừa 15 000 đồng; lớn 45 000 đồng · b) nhỏ 2 000 đồng; vừa 6 000 đồng; lớn 12 000 đồng · c) nhỏ 2 000 đồng; vừa 6 000 đồng; lớn 12 000 đồng · d) nhỏ 7 000 đồng; vừa 21 000 đồng; lớn 63 000 đồng · e) nhỏ 10 000 đồng; vừa 40 000 đồng; lớn 120 000 đồng
 
 ---
 
@@ -376,69 +376,73 @@ Kết quả: **tổ Ba: 333 cây, nhóm Sao Mai: 555 cây**.
 
 *Điểm chốt:* Phải tính **tổng số phần** trước khi chia.
 
-### Bài IV.1 — Đếm số cách trả tiền bằng hai loại mệnh giá
+### Bài IV.1 — Ghép người với môn bằng bảng đúng – sai
 
-> **BẪY — Xét thiếu trường hợp.**
-
-**Các bước giải**
-
-Gọi số tờ loại 5 nghìn là ẩn để thử, vì loại này giá trị lớn nên số cách ít hơn — thử ít lần hơn.
-
-Số tờ loại 5 nghìn nhiều nhất có thể là 25 : 5 = 5 tờ.
-
-Thử lần lượt số tờ loại 5 nghìn từ 0 tới 5. Mỗi lần lấy 25 trừ đi phần đã trả, xem phần còn lại có chia hết cho 2 không.
-
-Các cách hợp lệ đầu tiên: 0 tờ 2 nghìn và 5 tờ 5 nghìn; 5 tờ 2 nghìn và 3 tờ 5 nghìn; 10 tờ 2 nghìn và 1 tờ 5 nghìn.
-
-Đếm hết được **3 cách**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Chọn loại tiền **mệnh giá lớn** làm ẩn để thử, vì nó cho ít khả năng hơn. Với mỗi khả năng, kiểm phần còn lại có chia hết cho mệnh giá kia không.
-
-*Điểm chốt:* Phải thử từ 0 tờ, không được bỏ qua trường hợp chỉ dùng một loại.
-
-*Muốn khó hơn:* Thêm loại tiền thứ ba để học sinh phải thử hai tầng lồng nhau.
-
-*Phải chắc trước khi làm bài này:* Phép chia có dư và cách kẻ bảng liệt kê.
-
-### Bài IV.2 — Tìm số theo hai điều kiện chia có dư
+> **BẪY — Đánh dấu đúng mà quên gạch phần còn lại.**
 
 **Các bước giải**
 
-Xét ý a: Tìm số bé nhất không quá 500 chia cho 5 dư 2 và chia cho 9 dư 7.
+Kẻ bảng ba dòng (Ngọc, Đức, Hùng) và ba cột (bơi, cờ vua, vẽ). Mỗi ô ghi ✓ nếu chắc chắn đúng, × nếu chắc chắn sai.
 
-Đọc vị: đây là dạng **Tìm số thoả nhiều điều kiện chia có dư**; dấu hiệu là Hai điều kiện “chia cho … dư …” đi cùng nhau.
+Manh mối thứ nhất cho hai dấu ×: dòng Ngọc bị gạch ở cột cờ vua và cột bơi.
 
-Kiến thức phải dùng: Phép chia có dư, dãy cách đều.
+Dòng Ngọc chỉ còn một ô trống, nên ô ấy là ✓: **Ngọc học vẽ**. Đây là bước hay bị quên tiếp theo — đã có ✓ thì phải gạch × cho cả **cột** vẽ ở hai dòng còn lại.
 
-Cách làm: Lập dãy theo điều kiện chặt hơn rồi lọc theo điều kiện còn lại.
+Manh mối thứ hai: dòng Đức bị gạch ở cột bơi. Cột vẽ cũng đã gạch, nên dòng Đức chỉ còn một ô: **Đức học cờ vua**.
 
-Lối tắt: Chọn điều kiện có số chia **lớn hơn** để lập dãy — dãy thưa hơn nên thử nhanh hơn.
+Còn lại **Hùng học bơi**. Thử lại cả hai manh mối đều đúng.
 
-Kết quả: **7**.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Mỗi dòng một người, mỗi cột một khả năng. Đánh × cho điều chắc chắn sai. Dòng nào chỉ còn một ô trống thì ô ấy là ✓ — và ngay sau đó phải gạch × cho cả cột chứa ô ấy.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Liệt kê các số thoả điều kiện thứ nhất — chúng lập thành dãy cách đều khoảng cách bằng số chia thứ nhất. Đi dọc dãy đó, thử điều kiện thứ hai, gặp số đầu tiên thoả mãn thì dừng.
+*Điểm chốt:* Đặt được một ✓ thì **cả dòng và cả cột** còn lại đều thành ×. Bỏ bước gạch cột là chỗ bài bị tắc giữa chừng.
 
-*Điểm chốt:* Chỉ **đi dọc một dãy** rồi thử điều kiện còn lại, không thử tất cả số.
+*Muốn khó hơn:* Thêm bạn thứ tư và môn thứ tư, cùng một manh mối dạng “bạn X học môn mà bạn Y không học”.
 
-### Bài IV.3 — Biểu thức nhiều phép tính với phân số
+*Phải chắc trước khi làm bài này:* Đọc hiểu câu phủ định và cách kẻ bảng hai chiều.
+
+### Bài IV.2 — Số nguyên tố và hợp số
+
+> **BẪY — 91, 121, 143 trông như số nguyên tố nhưng không phải.**
 
 **Các bước giải**
 
-Xét ý a: 5 phần 11 : 8 phần 7 + 1 phần 5
+Xét ý a: Số 73 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra một ước khác 1 và khác chính nó.
 
-Đọc vị: đây là dạng **Biểu thức phân số nhiều phép tính**; dấu hiệu là Biểu thức gồm nhiều phân số và nhiều phép tính.
+Đọc vị: đây là dạng **Nhận biết số nguyên tố, hợp số**; dấu hiệu là Câu hỏi “là số nguyên tố hay hợp số”.
 
-Kiến thức phải dùng: Thứ tự thực hiện phép tính, tính chất phân phối.
+Kiến thức phải dùng: Định nghĩa số nguyên tố, dấu hiệu chia hết.
 
-Cách làm: Quan sát rút gọn trước, sau đó theo thứ tự thực hiện.
+Cách làm: Thử chia theo dãy số nguyên tố tăng dần, dừng đúng ngưỡng.
 
-Lối tắt: Rút gọn chéo tử với mẫu trước khi nhân.
+Lối tắt: Loại ngay các số chẵn lớn hơn 2 và các số tận cùng bằng 5 lớn hơn 5.
 
-Kết quả: **263 phần 440**.
+Kết quả: **số nguyên tố**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Số nguyên tố chỉ có đúng hai ước là 1 và chính nó. Để kiểm tra, thử chia lần lượt cho 2, 3, 5, 7, 11… và chỉ cần thử đến khi thương bé hơn hoặc bằng số chia là dừng được.
 
-*Điểm chốt:* Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều.
+*Điểm chốt:* Chỉ cần thử các **số nguyên tố nhỏ**, không phải thử mọi số.
+
+### Bài IV.3 — Giá sau khuyến mãi
+
+> **BẪY — Cộng hai lần giảm giá thành một.**
+
+**Các bước giải**
+
+Cẩn thận: giảm 10% rồi giảm tiếp 25% **không** bằng giảm 35%, vì lần giảm sau tính trên giá đã giảm chứ không trên giá gốc.
+
+Sau lần giảm thứ nhất, giá còn 90% giá niêm yết: 320 000 : 100 × 90 = 288 000 (đồng).
+
+Lần giảm thứ hai tính trên 288 000 đồng, còn lại 75%: 288 000 : 100 × 75 = 216 000 (đồng).
+
+Giá cuối cùng là **216 000 đồng**. Nếu cộng gộp hai lần giảm thành 35% thì ra 208 000 đồng — sai 8 000 đồng.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Giảm a% thì còn (100 − a)% của giá đang xét. Giảm hai lần liên tiếp thì lần sau tính trên giá đã giảm, nên phải làm hai bước chứ không cộng hai phần trăm lại.
+
+*Điểm chốt:* Giảm 20% rồi giảm tiếp 10% **không** bằng giảm 30%.
+
+*Muốn khó hơn:* Hỏi ngược: biết giá cuối và hai mức giảm, tìm giá niêm yết.
+
+*Phải chắc trước khi làm bài này:* Tìm a% của một số và phép nhân chia với số tròn nghìn.
 
 ### Bài IV.4 — Lọc số hạng theo điều kiện chia hết
 
@@ -454,85 +458,75 @@ Cách làm: Xác định dãy con cách đều rồi đếm, tính tổng.
 
 Lối tắt: Nếu khoảng cách của dãy gốc đã chia hết cho số chia thì hoặc tất cả, hoặc không số hạng nào thoả điều kiện.
 
-Kết quả: **110**.
+Kết quả: **299**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Các số hạng thoả thêm một điều kiện chia hết cũng lập thành một dãy cách đều mới, có khoảng cách là bội chung nhỏ nhất của khoảng cách cũ và số chia. Tìm số hạng đầu tiên thoả điều kiện rồi đếm trên dãy mới.
 
 *Điểm chốt:* Dãy con cũng **cách đều**, chỉ khác khoảng cách.
 
-### Bài IV.5 — Hai vòi nước, hai người cùng làm
+### Bài IV.5 — Chuyển động trên dòng nước
 
-> **BẪY — Cộng thời gian thay vì cộng năng suất.**
-
-**Các bước giải**
-
-Coi cả bể là 1 đơn vị công việc.
-
-Bước 1 — mỗi giờ vòi thứ nhất chảy được 1 phần 5 bể, vòi thứ hai chảy được 1 phần 2 bể.
-
-Bước 2 — mỗi giờ cả hai vòi chảy được 1 phần 5 + 1 phần 2 = 7 phần 10 bể.
-
-Bước 3 — thời gian đầy bể: 1 : 7 phần 10 = 10 phần 7 giờ = 10 phần 7 giờ.
-
-Kiểm tra nhanh: kết quả phải bé hơn 2 giờ ✓
-
-Đáp số: **10 phần 7 giờ**.
-
-**Cách nghĩ chung cho mọi bài cùng dạng.** Không cộng thời gian, mà cộng **năng suất một giờ**. Người xong trong a giờ thì mỗi giờ làm được 1 phần a công việc. Thời gian làm chung bằng 1 chia cho tổng năng suất.
-
-*Điểm chốt:* Cộng **năng suất**, tuyệt đối không cộng thời gian.
-
-*Muốn khó hơn:* Thêm vòi thứ ba tháo nước ra, năng suất mang dấu trừ.
-
-*Phải chắc trước khi làm bài này:* Cộng phân số khác mẫu và chia một số cho một phân số.
-
-### Bài V.1 — Chữ số tận cùng của tích nhiều thừa số giống nhau
-
-> **BẪY — Số dư 0 ứng với vị trí cuối chu kì.**
+> **BẪY — Nhầm vận tốc thực với vận tốc xuôi dòng.**
 
 **Các bước giải**
 
-Xét ý a: Tích của 57 thừa số đều bằng 7 có chữ số tận cùng là chữ số nào?
+Hai công thức phải thuộc: vận tốc xuôi dòng = vận tốc thực + vận tốc dòng; vận tốc ngược dòng = vận tốc thực − vận tốc dòng.
 
-Đọc vị: đây là dạng **Chữ số tận cùng của luỹ thừa**; dấu hiệu là Tích nhiều thừa số giống nhau, số thừa số lớn.
+Vận tốc xuôi dòng: 24 + 4 = 28 (km/giờ).
 
-Kiến thức phải dùng: Tính tuần hoàn của chữ số tận cùng.
+Vận tốc ngược dòng: 24 − 4 = 20 (km/giờ).
 
-Cách làm: Tìm chu kì rồi chia lấy dư để định vị.
+Quãng đường xuôi dòng: 28 × 4 = 112 (km).
 
-Lối tắt: Chữ số 0, 1, 5, 6 giữ nguyên tận cùng ở mọi số thừa số.
+Quãng đường ngược dòng: 20 × 4 = **80 km**.
 
-Kết quả: **7**.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Xuôi dòng thì dòng nước đẩy thêm nên cộng; ngược dòng thì dòng nước cản lại nên trừ. Biết cả hai vận tốc xuôi và ngược thì đây chính là bài tổng – hiệu: vận tốc thực là nửa tổng, vận tốc dòng là nửa hiệu.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Viết chữ số tận cùng của các tích 1 thừa số, 2 thừa số, 3 thừa số… Dãy chữ số tận cùng lặp lại tuần hoàn với chu kì không quá 4. Lấy số thừa số chia cho độ dài chu kì, số dư cho biết vị trí trong chu kì.
+*Điểm chốt:* Vận tốc thực là vận tốc khi nước lặng — không bằng vận tốc xuôi dòng, cũng không bằng vận tốc ngược dòng.
 
-*Điểm chốt:* Chu kì lặp lại của chữ số tận cùng dài **không quá 4**.
+*Muốn khó hơn:* Cho thêm một vật trôi tự do theo dòng để học sinh nhận ra vật ấy đi đúng bằng vận tốc dòng nước.
 
-### Bài V.2 — Dãy phân số dạng n phần (n + 1)
+*Phải chắc trước khi làm bài này:* Ba công thức vận tốc – quãng đường – thời gian và bài tổng – hiệu.
 
-> **BẪY — Chiều của phần bù.**
+### Bài V.1 — Quan hệ giữa một số và tổng các chữ số của nó
 
 **Các bước giải**
 
-Bốn phân số đầu: 1 phần 2 · 2 phần 3 · 3 phần 4 · 4 phần 5.
+Xét ý a: Số có hai chữ số 74 gấp tổng hai chữ số của nó bao nhiêu lần? (viết dưới dạng thương và số dư)
 
-Phân số thứ n có tử là n và mẫu là n + 1.
+Đọc vị: đây là dạng **Số và tổng chữ số của nó**; dấu hiệu là Đề liên hệ số với tổng các chữ số của chính nó.
 
-Phân số thứ 12 là 12 phần 13.
+Kiến thức phải dùng: Cấu tạo thập phân, phép chia có dư.
 
-Mỗi phân số còn thiếu đúng 1 phần (n + 1) nữa thì bằng 1.
+Cách làm: Đặt ẩn cho chữ số, viết hai biểu thức, lập bảng thử.
 
-Phần thiếu ấy càng lúc càng bé, nên dãy **tăng dần**.
+Lối tắt: a × 10 + b − (a + b) = 9 × a — hiệu luôn là bội của 9.
 
-Đáp số ý b: **12 phần 13**.
+Kết quả: **6 dư 8**.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Phân số dạng n phần (n + 1) luôn bé hơn 1 và còn thiếu đúng 1 phần (n + 1) nữa thì bằng 1. Phần thiếu càng bé thì phân số càng lớn — đó là kỹ thuật **so sánh bằng phần bù**.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Viết số có hai chữ số là a × 10 + b, tổng hai chữ số là a + b. So sánh hai biểu thức để tìm quan hệ; chú ý a chạy từ 1 đến 9 và b chạy từ 0 đến 9 nên số trường hợp là hữu hạn, có thể lập bảng.
 
-*Điểm chốt:* Phần bù **bé hơn** nghĩa là phân số **lớn hơn**.
+*Điểm chốt:* Khi ẩn chỉ nhận hữu hạn giá trị, **lập bảng** là phương pháp chắc chắn nhất.
 
-*Muốn khó hơn:* Dãy 1 phần 2, 2 phần 3, 3 phần 4 … nhân tất cả lại bằng bao nhiêu?
+### Bài V.2 — Ba nhóm có phần chung — nguyên lý bù trừ
 
-*Phải chắc trước khi làm bài này:* So sánh phân số và phép trừ phân số.
+**Các bước giải**
+
+Ba vòng tròn chồng nhau. Cộng thẳng ba nhóm thì mỗi phần chung đôi bị đếm hai lần, còn phần chung cả ba bị đếm **ba lần**.
+
+Trừ ba phần chung đôi: 20 + 16 + 23 − 7 − 7 − 5 = 40.
+
+Nhưng phần chung cả ba lúc đầu bị đếm 3 lần, vừa rồi bị trừ 3 lần, thành ra mất hẳn. Phải **cộng lại một lần**: + 2 = 42 em học ít nhất một môn.
+
+Số em không học môn nào: 42 − 42 = **0 em**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Cộng ba nhóm, trừ ba phần chung đôi, rồi **cộng lại** phần chung cả ba. Lý do cộng lại: phần ấy bị đếm ba lần rồi bị trừ ba lần nên biến mất hẳn.
+
+*Điểm chốt:* Dấu của phần chung cả ba là **cộng**, không phải trừ. Đây là chỗ sai nhiều nhất của cả dạng bài.
+
+*Muốn khó hơn:* Hỏi ngược: cho số em không học môn nào, tìm số em học cả ba.
+
+*Phải chắc trước khi làm bài này:* Biểu đồ Ven hai vòng và phép cộng trừ nhiều số hạng.
 
 ### Bài V.3 — Dãy có hiệu tăng đều
 
@@ -548,7 +542,7 @@ Cách làm: Lập dãy hiệu, tính tổng hiệu, cộng vào số hạng đ�
 
 Lối tắt: Với hiệu 1, 2, 3, … thì số hạng thứ n = số đầu + (n − 1) × n : 2.
 
-Kết quả: **3, 5, 9, 15**.
+Kết quả: **4, 6, 10, 16**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Đây là dãy có **hiệu bậc hai đều**. Số hạng thứ n bằng số hạng đầu cộng với tổng của (n − 1) hiệu đầu tiên; các hiệu ấy lập thành dãy cách đều nên tổng của chúng tính được bằng công thức tổng dãy cách đều.
 
@@ -558,15 +552,15 @@ Kết quả: **3, 5, 9, 15**.
 
 **Các bước giải**
 
-Tổng ban đầu: 1 + 2 + … + 5 = (5 × 6) : 2 = 15.
+Tổng ban đầu: 1 + 2 + … + 25 = (25 × 26) : 2 = 325.
 
-Thay hai số a và b bằng a + b: tổng **không đổi**, nên số cuối cùng chính là 15.
+Thay hai số a và b bằng a + b: tổng **không đổi**, nên số cuối cùng chính là 325.
 
 Thay hai số a và b (a ≥ b) bằng a − b: tổng giảm đi 2 × b — luôn chẵn.
 
 Giảm đi một số chẵn thì tính chẵn lẻ của tổng giữ nguyên.
 
-Tổng ban đầu 15 là số lẻ, nên số cuối cùng cũng là số lẻ.
+Tổng ban đầu 325 là số lẻ, nên số cuối cùng cũng là số lẻ.
 
 Đáp số ý f: **số lẻ**.
 
@@ -578,25 +572,27 @@ Tổng ban đầu 15 là số lẻ, nên số cuối cùng cũng là số lẻ.
 
 *Phải chắc trước khi làm bài này:* Tổng dãy số tự nhiên liên tiếp và khái niệm chẵn lẻ.
 
-### Bài V.5 — Cắt và ghép hình — chu vi thay đổi thế nào
+### Bài V.5 — Ba loại hộp, hai quan hệ đổi ngang
 
 **Các bước giải**
 
-Xét ý a: Ghép 25 hình vuông cạnh 6 cm thành một hình vuông lớn. Tính chu vi hình vuông lớn.
+Ba loại và hai quan hệ đổi ngang. Quy tắc: **đổi hết về loại nhỏ nhất**, vì mọi quan hệ đều dẫn được về nó.
 
-Đọc vị: đây là dạng **Cắt ghép hình, biến thiên chu vi**; dấu hiệu là Từ khoá “ghép”, “cắt thành”, “xếp thành”.
+Một hộp lớn = 3 hộp vừa = 3 × 3 = 9 hộp nhỏ.
 
-Kiến thức phải dùng: Chu vi, đường bao của hình.
+Đổi cả đơn hàng về hộp nhỏ: 4 × 9 + 7 × 3 + 10 = 67 (hộp nhỏ).
 
-Cách làm: Xác định đường bao mới rồi cộng độ dài.
+Giá một hộp nhỏ: 335 000 : 67 = 5 000 (đồng).
 
-Lối tắt: Mỗi nhát cắt làm tổng chu vi tăng thêm hai lần chiều dài nhát cắt.
+Đổi ngược **đủ cả hai loại còn lại** — đây là chỗ hay sót: hộp vừa 5 000 × 3 = 15 000 đồng; hộp lớn 15 000 × 3 = **45 000 đồng**.
 
-Kết quả: **120 cm**.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Nối hai quan hệ đổi ngang lại để đưa loại lớn nhất về loại nhỏ nhất, rồi quy cả đơn hàng về loại nhỏ. Giải xong đổi ngược theo đúng thứ tự ngược lại.
 
-**Cách nghĩ chung cho mọi bài cùng dạng.** Khi ghép hai hình lại, các cạnh dán vào nhau **không còn nằm trên đường bao** nên không tính vào chu vi. Ngược lại, khi cắt một hình thành hai phần thì xuất hiện thêm hai cạnh mới trên đường bao, nên tổng chu vi tăng lên đúng hai lần đường cắt.
+*Điểm chốt:* Nối hai quan hệ là phép **nhân**, không phải phép cộng: một lớn bằng k₁ × k₂ nhỏ, không phải k₁ + k₂ nhỏ.
 
-*Điểm chốt:* Diện tích giữ nguyên khi cắt ghép, nhưng **chu vi thay đổi**.
+*Muốn khó hơn:* Thêm loại thứ tư để phải bắc cầu ba lần.
+
+*Phải chắc trước khi làm bài này:* Quan hệ gấp – kém và phép chia hết.
 
 ---
 
@@ -621,16 +617,16 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.3 | Dãy số tự nhiên liên tiếp có tổng cho trước | Trung bình cộng, dãy cách đều | Cụm “… số tự nhiên liên tiếp có tổng bằng …” | Tìm số giữa bằng phép chia rồi suy ra hai đầu dãy | Tổng của n số liên tiếp (n lẻ) luôn chia hết cho n. | 389 · 237 · 486 · 182… |
 | III.4 | Biểu đồ Ven | Phép cộng, phép trừ; đếm không trùng lặp | Đề cho số người của từng nhóm **và** số người thuộc cả hai nhóm | Vẽ hai vòng tròn, điền phần chung trước rồi mới trừ ra phần riêng | Số người ít nhất một nhóm = nhóm A + nhóm B − phần chung. | 3 em · 5 em · 4 em · 5 em… |
 | III.5 | Bài toán tổng – tỉ | Tỉ số, sơ đồ đoạn thẳng, chia theo tỉ lệ | Đề cho **tổng** và **tỉ số** (phân số hoặc “gấp … lần”) | Sơ đồ phần bằng nhau → giá trị một phần → nhân | Tổng luôn chia hết cho tổng số phần — nếu không chia hết là đọc sai tỉ số. | tổ Ba: 333 cây, nhóm Sao Mai: 555 cây · nhóm Sao Mai: 232 cây, tổ Một: 406 cây · đội Hai: 164 cây, tổ Một: 246 cây · tổ Một: 168 cây, nhóm Hoa Phượng: 336 cây… |
-| IV.1 | Thử chọn | Phép chia hết; đếm có hệ thống | Đề hỏi **có bao nhiêu cách**, và số khả năng đếm được | Chọn ẩn cho ít khả năng nhất, thử từ 0 và loại dần | Chỉ cần thử các giá trị làm phần còn lại chia hết cho mệnh giá kia. | 3 cách · 3 cách · 5 cách · 8 cách… |
-| IV.2 | Tìm số thoả nhiều điều kiện chia có dư | Phép chia có dư, dãy cách đều | Hai điều kiện “chia cho … dư …” đi cùng nhau | Lập dãy theo điều kiện chặt hơn rồi lọc theo điều kiện còn lại | Chọn điều kiện có số chia **lớn hơn** để lập dãy — dãy thưa hơn nên thử nhanh hơn. | 7 · 7 · 11 · 13… |
-| IV.3 | Biểu thức phân số nhiều phép tính | Thứ tự thực hiện phép tính, tính chất phân phối | Biểu thức gồm nhiều phân số và nhiều phép tính | Quan sát rút gọn trước, sau đó theo thứ tự thực hiện | Rút gọn chéo tử với mẫu trước khi nhân. | 263 phần 440 · 122 phần 63 · 19 phần 45 · 15 phần 14… |
-| IV.4 | Đếm và tính tổng dãy con thoả điều kiện chia hết | Dãy cách đều, bội chung nhỏ nhất | Đề hỏi riêng các số chẵn, số chia hết cho … trong một dãy | Xác định dãy con cách đều rồi đếm, tính tổng | Nếu khoảng cách của dãy gốc đã chia hết cho số chia thì hoặc tất cả, hoặc không số hạng nào thoả điều kiện. | 110 · 339 · 11 · 55… |
-| IV.5 | Công việc chung | Năng suất, cộng và chia phân số | “Làm một mình trong … giờ” đi cùng “cùng làm” | Quy công việc về 1, cộng năng suất, lấy nghịch đảo | Thời gian làm chung luôn **bé hơn** thời gian của người nhanh nhất — dùng để loại đáp số sai ngay lập tức. | 10 phần 7 giờ · 2 giờ · 30 phần 17 giờ · 60 phần 13 giờ… |
-| V.1 | Chữ số tận cùng của luỹ thừa | Tính tuần hoàn của chữ số tận cùng | Tích nhiều thừa số giống nhau, số thừa số lớn | Tìm chu kì rồi chia lấy dư để định vị | Chữ số 0, 1, 5, 6 giữ nguyên tận cùng ở mọi số thừa số. | 7 · 7 · 6 · 9… |
-| V.2 | Dãy phân số, so sánh bằng phần bù | Phần bù tới 1; quy luật dãy phân số | Tử và mẫu hơn kém nhau đúng 1 đơn vị | Xét phần bù tới 1 rồi so sánh | n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. | 1 phần 2 · 2 phần 3 · 3 phần 4 · 4 phần 5 · 12 phần 13 · đều bé hơn 1 · tăng dần… |
-| V.3 | Dãy có hiệu tăng đều (hiệu bậc hai) | Dãy hiệu, tổng dãy cách đều | Hiệu giữa các số hạng tăng đều đặn | Lập dãy hiệu, tính tổng hiệu, cộng vào số hạng đầu | Với hiệu 1, 2, 3, … thì số hạng thứ n = số đầu + (n − 1) × n : 2. | 3, 5, 9, 15 · 33 · 93 · 18… |
-| V.4 | Bài toán bất biến | Tính chẵn lẻ; tổng dãy số tự nhiên liên tiếp | Một quá trình lặp nhiều bước, hỏi trạng thái cuối | Tìm đại lượng không đổi rồi so hai đầu quá trình | Thử với n nhỏ (n = 3, 4) để đoán, rồi chứng minh bằng bất biến. | 15 · không thay đổi · 15 · giảm đi 2 lần số bé — luôn là một số chẵn… |
-| V.5 | Cắt ghép hình, biến thiên chu vi | Chu vi, đường bao của hình | Từ khoá “ghép”, “cắt thành”, “xếp thành” | Xác định đường bao mới rồi cộng độ dài | Mỗi nhát cắt làm tổng chu vi tăng thêm hai lần chiều dài nhát cắt. | 120 cm · 56 cm · 144 cm · 42 cm… |
+| IV.1 | Lập bảng | Suy luận loại trừ; đọc hiểu câu phủ định | Đề ghép **người với việc** và cho một loạt câu khẳng định hoặc phủ định | Kẻ bảng hai chiều, đánh × và ✓, mỗi ✓ kéo theo cả dòng cả cột | Bắt đầu từ người bị loại nhiều khả năng nhất — dòng ấy chốt được sớm nhất. | Ngọc học vẽ; Đức học cờ vua; Hùng học bơi · Phúc học cầu lông; Trang học bóng đá; Ngọc học bóng rổ · Trang học bóng đá; Chi học cầu lông; Lan học bóng rổ · Hà học cầu lông; Sơn học bóng đá; An học bóng rổ |
+| IV.2 | Nhận biết số nguyên tố, hợp số | Định nghĩa số nguyên tố, dấu hiệu chia hết | Câu hỏi “là số nguyên tố hay hợp số” | Thử chia theo dãy số nguyên tố tăng dần, dừng đúng ngưỡng | Loại ngay các số chẵn lớn hơn 2 và các số tận cùng bằng 5 lớn hơn 5. | số nguyên tố · hợp số (ví dụ ước 3) · hợp số (ví dụ ước 3) · hợp số (ví dụ ước 3)… |
+| IV.3 | Bài toán giảm giá và khuyến mãi | Tỉ số phần trăm; tìm giá trị phần trăm của một số | Đề nhắc **giảm giá**, **khuyến mãi**, và có thể giảm nhiều lần | Mỗi lần giảm nhân với (100 − a) rồi chia 100, làm lần lượt | Giảm 20% rồi 10% tương đương còn 80% × 90% = 72% giá gốc. | 337 500 đồng · 216 000 đồng · 612 000 đồng · 179 200 đồng |
+| IV.4 | Đếm và tính tổng dãy con thoả điều kiện chia hết | Dãy cách đều, bội chung nhỏ nhất | Đề hỏi riêng các số chẵn, số chia hết cho … trong một dãy | Xác định dãy con cách đều rồi đếm, tính tổng | Nếu khoảng cách của dãy gốc đã chia hết cho số chia thì hoặc tất cả, hoặc không số hạng nào thoả điều kiện. | 299 · 2 092 · 150 · 150… |
+| IV.5 | Chuyển động trên dòng nước | Vận tốc – quãng đường – thời gian; tổng – hiệu | Đề nhắc **dòng nước**, **xuôi dòng**, **ngược dòng**, ca nô hay thuyền | Áp hai công thức xuôi – ngược; biết cả hai thì quy về tổng – hiệu | Vận tốc dòng nước = (vận tốc xuôi − vận tốc ngược) : 2. | xuôi dòng 112 km; ngược dòng 80 km · vận tốc thực 28 km/giờ; dòng nước 5 km/giờ · xuôi dòng 155 km; ngược dòng 125 km · vận tốc thực 20 km/giờ; dòng nước 5 km/giờ |
+| V.1 | Số và tổng chữ số của nó | Cấu tạo thập phân, phép chia có dư | Đề liên hệ số với tổng các chữ số của chính nó | Đặt ẩn cho chữ số, viết hai biểu thức, lập bảng thử | a × 10 + b − (a + b) = 9 × a — hiệu luôn là bội của 9. | 6 dư 8 · 70 · 6 dư 1 · 12… |
+| V.2 | Biểu đồ Ven | Đếm không trùng lặp; nguyên lý bù trừ | Đề cho **ba nhóm**, ba phần chung đôi và một phần chung cả ba | Cộng ba nhóm, trừ ba phần chung đôi, cộng lại phần chung cả ba | Điền hình từ giữa ra ngoài thì chỉ còn phép cộng bảy số, không phải nhớ dấu của công thức. | 0 em · 3 em · 3 em · 0 em… |
+| V.3 | Dãy có hiệu tăng đều (hiệu bậc hai) | Dãy hiệu, tổng dãy cách đều | Hiệu giữa các số hạng tăng đều đặn | Lập dãy hiệu, tính tổng hiệu, cộng vào số hạng đầu | Với hiệu 1, 2, 3, … thì số hạng thứ n = số đầu + (n − 1) × n : 2. | 4, 6, 10, 16 · 34 · 94 · 18… |
+| V.4 | Bài toán bất biến | Tính chẵn lẻ; tổng dãy số tự nhiên liên tiếp | Một quá trình lặp nhiều bước, hỏi trạng thái cuối | Tìm đại lượng không đổi rồi so hai đầu quá trình | Thử với n nhỏ (n = 3, 4) để đoán, rồi chứng minh bằng bất biến. | 325 · không thay đổi · 325 · giảm đi 2 lần số bé — luôn là một số chẵn… |
+| V.5 | Phương pháp thay thế | Quan hệ gấp – kém bắc cầu; nhân, chia | Đề cho **ba loại** và **hai quan hệ đổi ngang** nối tiếp nhau | Bắc cầu hai quan hệ, quy hết về loại nhỏ nhất, giải, rồi đổi ngược | Hệ số từ loại lớn về loại nhỏ là tích của hai hệ số trung gian. | nhỏ 5 000 đồng; vừa 15 000 đồng; lớn 45 000 đồng · nhỏ 2 000 đồng; vừa 6 000 đồng; lớn 12 000 đồng · nhỏ 2 000 đồng; vừa 6 000 đồng; lớn 12 000 đồng · nhỏ 7 000 đồng; vừa 21 000 đồng; lớn 63 000 đồng… |
 
 ---
 
@@ -653,16 +649,16 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.3 | TD3, TD4 | Với số lượng lẻ thì **số giữa = tổng : số lượng** — đó là chìa khoá. |
 | III.4 | TD2, TD4 | Con số đề cho cho mỗi môn **đã bao gồm** những em học cả hai. Cộng thẳng hai con số ấy là đếm phần chung hai lần. |
 | III.5 | TD3, TD2 | Phải tính **tổng số phần** trước khi chia. |
-| IV.1 | TD3, TD4 | Phải thử từ 0 tờ, không được bỏ qua trường hợp chỉ dùng một loại. |
-| IV.2 | TD2, TD6 | Chỉ **đi dọc một dãy** rồi thử điều kiện còn lại, không thử tất cả số. |
-| IV.3 | TD3, TD5 | Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều. |
+| IV.1 | TD3, TD4 | Đặt được một ✓ thì **cả dòng và cả cột** còn lại đều thành ×. Bỏ bước gạch cột là chỗ bài bị tắc giữa chừng. |
+| IV.2 | TD2 | Chỉ cần thử các **số nguyên tố nhỏ**, không phải thử mọi số. |
+| IV.3 | TD2, TD5 | Giảm 20% rồi giảm tiếp 10% **không** bằng giảm 30%. |
 | IV.4 | TD4, TD2 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
-| IV.5 | TD3, TD6 | Cộng **năng suất**, tuyệt đối không cộng thời gian. |
-| V.1 | TD4, TD6 | Chu kì lặp lại của chữ số tận cùng dài **không quá 4**. |
-| V.2 | TD6, TD5 | Phần bù **bé hơn** nghĩa là phân số **lớn hơn**. |
+| IV.5 | TD2, TD5 | Vận tốc thực là vận tốc khi nước lặng — không bằng vận tốc xuôi dòng, cũng không bằng vận tốc ngược dòng. |
+| V.1 | TD3, TD6 | Khi ẩn chỉ nhận hữu hạn giá trị, **lập bảng** là phương pháp chắc chắn nhất. |
+| V.2 | TD2, TD4, TD6 | Dấu của phần chung cả ba là **cộng**, không phải trừ. Đây là chỗ sai nhiều nhất của cả dạng bài. |
 | V.3 | TD4, TD6 | Số hạng thứ n = số đầu + **tổng (n − 1) hiệu đầu tiên**. |
 | V.4 | TD6, TD2 | Tìm đại lượng **bất biến** rồi so trạng thái đầu với trạng thái cuối. |
-| V.5 | TD6, TD3 | Diện tích giữ nguyên khi cắt ghép, nhưng **chu vi thay đổi**. |
+| V.5 | TD2, TD5, TD6 | Nối hai quan hệ là phép **nhân**, không phải phép cộng: một lớn bằng k₁ × k₂ nhỏ, không phải k₁ + k₂ nhỏ. |
 
 ---
 
@@ -687,16 +683,16 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 | III.3 | Lấy tổng chia cho số lượng rồi nhận luôn kết quả là số bé nhất. | Vẽ dãy số ra, đánh dấu vị trí số giữa trước khi lùi về số đầu. |
 | III.4 | Lấy tổng trừ đi tổng hai con số đề cho mà không cộng lại phần chung. | Vẽ hình trước, điền phần giữa trước, rồi mới điền hai bên. |
 | III.5 | Chia tổng cho một trong hai số của tỉ số thay vì cho tổng số phần. | Vẽ sơ đồ, đếm tổng số đoạn nhỏ trên cả hai đoạn thẳng. |
-| IV.1 | Bắt đầu thử từ 1 tờ, làm mất trường hợp không dùng loại ấy. | Kẻ bảng hai cột và điền từ 0 trở đi, đừng nhảy cóc. |
-| IV.2 | Thử từng số từ 1 trở đi nên quá lâu và dễ bỏ sót. | Viết dãy số thoả điều kiện thứ nhất trước, rồi mới lọc. |
-| IV.3 | Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. | Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút. |
+| IV.1 | Đánh ✓ rồi đi tiếp luôn, không gạch × cho phần còn lại của cột. | Sau mỗi lần đặt ✓, dừng lại gạch đủ dòng và cột rồi mới đọc manh mối kế. |
+| IV.2 | Thử chia cho mọi số từ 2 đến số đó nên mất thời gian, hoặc kết luận vội. | Thử theo thứ tự 2, 3, 5, 7, 11, 13 và dừng đúng lúc. |
+| IV.3 | Cộng hai lần giảm giá thành một lần rồi tính một phép. | Viết ra giá sau lần giảm thứ nhất trước khi làm lần thứ hai. |
 | IV.4 | Duyệt từng số hạng để đếm — không kịp khi dãy dài hàng trăm số. | Tìm số hạng đầu tiên thoả điều kiện rồi xác định khoảng cách mới. |
-| IV.5 | Cộng hai khoảng thời gian rồi chia đôi. | Luôn viết dòng “Mỗi giờ vòi thứ nhất chảy được … bể” trước. |
-| V.1 | Chia lấy dư rồi quên rằng số dư 0 ứng với **số cuối** của chu kì. | Đánh số vị trí trong chu kì từ 1, và quy ước dư 0 là vị trí cuối. |
-| V.2 | So phần bù rồi kết luận cùng chiều với phần bù. | Nghĩ tới chiếc bánh: thiếu ít hơn thì phần đang có nhiều hơn. |
+| IV.5 | Lấy vận tốc xuôi dòng làm vận tốc thực rồi cộng thêm vận tốc dòng lần nữa. | Viết ba đại lượng thành ba dòng riêng, đặt tên rõ trước khi tính. |
+| V.1 | Chia bừa mà không kiểm tra điều kiện chia hết nên nhận đáp số không nguyên. | Kiểm tra lại đáp số bằng cách thay ngược vào đề. |
+| V.2 | Trừ luôn phần chung cả ba lần nữa, ra thiếu. | Điền số vào hình từ phần giữa ra ngoài rồi cộng bảy phần — cách này không cần nhớ công thức và không sai dấu được. |
 | V.3 | Cộng n hiệu thay vì (n − 1) hiệu. | Kiểm chứng với n = 2: chỉ cộng đúng một hiệu. |
 | V.4 | Thử vài trường hợp rồi kết luận, không chứng minh được cho mọi cách làm. | Sau khi đoán, kiểm tra: đại lượng đó đổi thế nào sau **một** bước? |
-| V.5 | Cộng chu vi các hình nhỏ lại rồi coi đó là chu vi hình ghép. | Tô đậm đường bao của hình mới rồi mới tính. |
+| V.5 | Cộng hai hệ số đổi ngang, hoặc chỉ đổi ngược một loại rồi dừng. | Vẽ ba mức thành ba tầng, ghi hệ số trên mỗi mũi tên. |
 
 ---
 
@@ -719,16 +715,16 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 **Bài III.3** — (1) Số lượng số hạng là số chẵn hay lẻ? — (2) Với số lượng lẻ, số ở giữa bằng tổng chia số lượng. — (3) Từ số giữa lùi về đầu dãy mấy đơn vị?
 **Bài III.4** — (1) Bao nhiêu em học cả hai môn? Điền số ấy vào phần chồng nhau. — (2) Vậy chỉ học riêng mỗi môn là bao nhiêu em? — (3) Cộng ba phần rồi lấy sĩ số lớp trừ đi.
 **Bài III.5** — (1) Vẽ đại lượng thứ nhất mấy phần, thứ hai mấy phần? — (2) Tổng cộng có bao nhiêu phần bằng nhau? — (3) Một phần bằng bao nhiêu?
-**Bài IV.1** — (1) Nên chọn loại tiền nào làm ẩn để phải thử ít lần hơn? — (2) Nhiều nhất có thể dùng bao nhiêu tờ loại ấy? — (3) Thử từ 0 tờ trở đi, mỗi lần kiểm phần còn lại có chia hết không.
-**Bài IV.2** — (1) Viết vài số chia cho số thứ nhất dư đúng như đề. — (2) Chúng cách đều nhau bao nhiêu đơn vị? — (3) Đi dọc dãy đó và kiểm tra điều kiện thứ hai.
-**Bài IV.3** — (1) Biểu thức có dấu ngoặc không? — (2) Có thừa số chung ở hai tích không? — (3) Làm nhân chia trước, cộng trừ sau.
+**Bài IV.1** — (1) Kẻ bảng ba dòng ba cột trước đã. — (2) Manh mối nào cho biết chắc chắn một ô là sai? — (3) Dòng nào chỉ còn một ô trống thì ô ấy chính là đáp án của dòng ấy.
+**Bài IV.2** — (1) Số đó có chia hết cho 2 hay 5 không? — (2) Cộng các chữ số xem có chia hết cho 3 không. — (3) Thử tiếp 7, 11, 13; dừng khi thương bé hơn số chia.
+**Bài IV.3** — (1) Sau lần giảm thứ nhất còn bao nhiêu phần trăm giá niêm yết? — (2) Lần giảm thứ hai tính trên giá nào? — (3) Làm hai bước, đừng cộng gộp hai phần trăm.
 **Bài IV.4** — (1) Số hạng nào đầu tiên thoả điều kiện? — (2) Số hạng tiếp theo thoả điều kiện cách nó bao nhiêu? — (3) Dãy con cũng cách đều — dùng công thức đếm.
-**Bài IV.5** — (1) Mỗi giờ vòi thứ nhất chảy được mấy phần bể? — (2) Mỗi giờ cả hai vòi chảy được mấy phần bể? — (3) Lấy 1 chia cho phần chảy được trong một giờ.
-**Bài V.1** — (1) Viết chữ số tận cùng của vài tích đầu tiên. — (2) Dãy đó lặp lại sau mấy bước? — (3) Chia số thừa số cho độ dài chu kì và xét số dư.
-**Bài V.2** — (1) Mỗi phân số còn thiếu bao nhiêu nữa thì bằng 1? — (2) Phần thiếu ấy thay đổi thế nào khi n tăng? — (3) Thiếu ít hơn thì phân số lớn hơn.
+**Bài IV.5** — (1) Xuôi dòng thì nước đẩy thêm hay cản lại? — (2) Vận tốc xuôi dòng bằng vận tốc thực cộng gì? — (3) Biết cả xuôi và ngược thì đây là bài tổng – hiệu.
+**Bài V.1** — (1) Đặt số đó là a × 10 + b. — (2) Tổng hai chữ số là a + b — viết cả hai biểu thức ra cạnh nhau. — (3) Lập bảng a từ 1 đến 9 rồi thử.
+**Bài V.2** — (1) Vẽ ba vòng tròn, điền số em học cả ba môn vào phần giữa trước. — (2) Từ đó tính phần chỉ chung đúng hai môn. — (3) Cộng bảy phần lại rồi lấy sĩ số trừ đi.
 **Bài V.3** — (1) Từ số hạng đầu tới số hạng thứ n phải cộng bao nhiêu hiệu? — (2) Các hiệu đó lập thành dãy gì? — (3) Tính tổng các hiệu bằng công thức tổng dãy cách đều.
 **Bài V.4** — (1) Sau mỗi bước, tổng các số trên bảng đổi bao nhiêu? — (2) Lượng thay đổi ấy là số chẵn hay số lẻ? — (3) Vậy tính chẵn lẻ của tổng có đổi không?
-**Bài V.5** — (1) Vẽ hình sau khi ghép hoặc cắt. — (2) Đường bao của hình mới gồm những cạnh nào? — (3) Cạnh nào bị dán vào trong thì không tính.
+**Bài V.5** — (1) Một hộp lớn bằng bao nhiêu hộp nhỏ? — (2) Đổi cả đơn hàng về hộp nhỏ thì được bao nhiêu hộp? — (3) Đề hỏi giá mấy loại? Đổi ngược đủ chừng ấy loại.
 
 ---
 
@@ -753,16 +749,16 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | III.3 | Tổng của 5 số tự nhiên liên tiếp bằng 100. Số bé nhất là số nào? | 18 |
 | III.4 | Lớp có 40 em, 25 em học vẽ, 20 em học hát, 10 em học cả hai. Bao nhiêu em không học môn nào? | 5 em |
 | III.5 | Hai tổ trồng 120 cây, số cây tổ Một bằng 1 phần 2 tổ Hai. Mỗi tổ trồng mấy cây? | 40 và 80 |
-| IV.1 | Có bao nhiêu cách trả 20 nghìn bằng tờ 2 nghìn và tờ 5 nghìn? | 3 cách |
-| IV.2 | Tìm số bé nhất chia cho 5 dư 2 và chia cho 3 dư 1. | 7 |
-| IV.3 | Tính: (1 phần 2 + 1 phần 3) × 6 phần 5 | 1 |
+| IV.1 | An, Bình, Chi học ba môn bơi, vẽ, hát. An không học bơi và không học vẽ. Bình không học hát. Hỏi mỗi bạn học môn nào? | An học hát; Bình học vẽ; Chi học bơi |
+| IV.2 | Số 91 là số nguyên tố hay hợp số? | hợp số (91 = 7 × 13) |
+| IV.3 | Áo giá 300 000 đồng, giảm 20% rồi giảm tiếp 10%. Giá cuối là bao nhiêu? | 216 000 đồng |
 | IV.4 | Dãy 1, 4, 7, …, 100 có bao nhiêu số chẵn? | 17 |
-| IV.5 | Vòi một đầy bể trong 4 giờ, vòi hai trong 6 giờ. Cả hai vòi mấy giờ đầy? | 2 giờ 24 phút |
-| V.1 | Tích của 20 thừa số đều bằng 3 có chữ số tận cùng là chữ số nào? | 1 |
-| V.2 | So sánh 5 phần 6 và 7 phần 8. | 5 phần 6 < 7 phần 8 |
+| IV.5 | Ca nô xuôi dòng 24 km/giờ, ngược dòng 18 km/giờ. Tính vận tốc dòng nước. | 3 km/giờ |
+| V.1 | Số 27 gấp mấy lần tổng hai chữ số của nó? | 3 lần |
+| V.2 | Lớp 40 em: 20 học bơi, 18 học vẽ, 15 học hát, 8 học bơi và vẽ, 6 học vẽ và hát, 5 học bơi và hát, 3 học cả ba. Bao nhiêu em không học môn nào? | 3 em |
 | V.3 | Dãy 1, 2, 4, 7, 11, … số hạng thứ 8 là số nào? | 29 |
 | V.4 | Viết các số 1 đến 4, mỗi bước thay hai số bằng hiệu. Số cuối chẵn hay lẻ? | chẵn |
-| V.5 | Ghép 3 hình vuông cạnh 4 cm thành hàng. Chu vi hình chữ nhật là bao nhiêu? | 32 cm |
+| V.5 | Mua 2 hộp lớn, 3 hộp vừa, 4 hộp nhỏ hết 260 000 đồng. Một hộp vừa bằng 2 hộp nhỏ, một hộp lớn bằng 3 hộp vừa. Tính giá hộp nhỏ. | 10 000 đồng |
 
 ---
 

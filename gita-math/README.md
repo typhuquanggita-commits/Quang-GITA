@@ -17,11 +17,12 @@ chuyên vào các trường top đầu Hà Nội.
 | Phiếu Lời giải & Phân tích chuyên sâu | 600 | `03-phieu/` |
 | Phiếu Hướng dẫn ôn chắc chuyên đề | 96 | `03-phieu/` |
 | Phiếu ôn tập mốc · Đề thi mốc · Đề đánh giá năng lực | 12 · 120 · 30 | `07-de-thi/` |
+| — trong đó đã biên soạn đủ đề, đáp án, bảng phân tích | **162 / 162** | |
 | Bản đồ kiến thức theo kỳ | 9 | `06-ban-do-kien-thuc/` |
 | Bộ test đầu vào bốn trục | 3 | `08-test-dau-vao/` |
 | Sơ đồ đọc vị đề bài | 24 | `10-so-do-doc-vi/` |
 | Lộ trình học 34 tuần | 6 | `05-lo-trinh/` |
-| **Tổng tài liệu** | **1488** | |
+| **Tổng tài liệu** | **1500** | |
 
 **Cấu trúc bất biến của mọi phiếu học:** 90 phút · thang 100 · 5 phần × 5 bài ×
 4–10 ý · 115–170 ý một phiếu.
@@ -36,18 +37,23 @@ Mỗi buổi kèm một phiếu `GP` lời giải; mỗi cụm có một phiếu
 
 Kho được dựng bằng **bộ sinh nội dung** (`04-cong-cu/sinh/` và `04-cong-cu/lap/`) theo
 một nguyên tắc bất di bất dịch: **mọi đáp số do mã tính ra, không do người gõ**. Thư
-viện có **241 mẫu bài** phủ kín 8 nhóm chuyên đề × 5 mức × 3 lớp — cả 120 ô đều có từ
+viện có **254 mẫu bài** phủ kín 8 nhóm chuyên đề × 5 mức × 3 lớp — cả 120 ô đều có từ
 hai mẫu trở lên, và **538/538 dạng bài** của ngân hàng đều có mẫu khớp. Mỗi mẫu tự chọn
 số liệu, tự tính đáp số, và mang sẵn hướng giải, nhãn tư duy, lỗi thường gặp, gợi ý ba
 tầng, sáu cột bảng phân tích chuyên sâu và một bài tương tự.
 
-Kho được xây theo **hai trục vuông góc nhau**. Trục nội dung — *bài này nói về cái gì*
+Kho được xây theo **ba trục vuông góc nhau**. Trục nội dung — *bài này nói về cái gì*
 — là tám nhóm chuyên đề và 538 dạng bài. Trục phương pháp — *bài này giải bằng thủ
 pháp gì* — là **16 phương pháp giải toán tiểu học** ghi ở `04-cong-cu/data/phuong_phap.py`:
 sơ đồ đoạn thẳng, rút về đơn vị, chia tỉ lệ, thử chọn, khử, giả thiết tạm, thay thế,
 Đi-rích-lê, diện tích, tính ngược từ cuối, sơ đồ cây, dùng chữ thay số, lập bảng, biểu
 đồ Ven, suy luận, xét trường hợp. Một học sinh thuộc hết dạng bài vẫn tắc trước đề lạ
 nếu chưa từng được gọi tên thủ pháp mà đề ấy đòi, nên kiểm định cưỡng chế cả hai trục.
+
+Trục thứ ba là **bối cảnh thực tế Việt Nam** (`04-cong-cu/sinh/mau_tt.py`): tiền điện
+bậc thang, lãi suất tiết kiệm, khuyến mãi nhiều lần, tỉ lệ bản đồ, giá vé có dữ kiện
+thừa. Đề đánh giá năng lực vào lớp 6 đang chuyển sang các tình huống này rất nhanh, và
+một học sinh làm được bài “tìm x” vẫn tắc khi phải đọc một hoá đơn tiền điện.
 
 Phiếu `GP` không chỉ trả đáp số: mỗi bài có mục **Các bước giải** đi từ đọc vị dấu hiệu
 → kiến thức phải dùng → cách làm → lối tắt → kết quả, rồi tới **cách nghĩ chung cho mọi
@@ -98,7 +104,7 @@ Vì vậy có thêm một bản thứ hai: **website tĩnh công khai**, cùng k
 kết xuất thành HTML thật, để đưa lên tên miền của Học viện.
 
 ```
-python3 04-cong-cu/build_site.py     →  2 003 trang · 85 MB
+python3 04-cong-cu/build_site.py     →  2 169 trang · 80 MB
 python3 04-cong-cu/kiem_toan_seo.py  →  SẠCH LỖI · 28 hạng mục đạt
 ```
 
@@ -106,6 +112,7 @@ python3 04-cong-cu/kiem_toan_seo.py  →  SẠCH LỖI · 28 hạng mục đạt
 |---|---:|---|
 | Trang **dạng bài** | 538 | Trang chủ lực. Mỗi dạng có ví dụ có số thật, lời giải từng bước, bảng dấu hiệu đọc vị và bài tự luyện |
 | Trang phiếu và lời giải | 1 200 | Hai phần đầu mở, phần sau khai báo thu phí trung thực |
+| Trang **đề thi** | 166 | 162 đề công khai trọn vẹn kèm đáp án và bảng phân tích, cộng bốn trang trụ |
 | Trang chuyên đề · nhóm · lớp | 123 | Trụ chủ đề, dẫn uy tín xuống trang dạng bài |
 | Sơ đồ đọc vị · lộ trình · thi vào 6 | 39 | Ba khoảng trống đối thủ chưa làm |
 | Hướng dẫn ôn chắc | 96 | |
@@ -128,7 +135,7 @@ gita-math/
 │   ├── data/             Nguồn dữ liệu duy nhất: nhóm chuyên đề, cụm, loại phiếu,
 │   │                     ngân hàng 540 dạng bài, 16 phương pháp giải, bản đồ,
 │   │                     đề thi, phân quyền, bản đồ từ khoá tìm kiếm
-│   ├── sinh/             Thư viện 241 mẫu bài tự tính đáp số, theo tám nhóm
+│   ├── sinh/             Thư viện 254 mẫu bài tự tính đáp số, theo tám nhóm
 │   ├── lap/              Bộ lắp mẫu bài thành phiếu, phiếu GP và phiếu HD
 │   └── templates/        Khuôn phiếu và quy trình biên soạn một cụm
 ├── 05-lo-trinh/          Kế hoạch sản xuất · 6 lộ trình học 34 tuần
@@ -149,13 +156,15 @@ gita-math/
 | `python3 04-cong-cu/build_chuan_phieu.py` | Sinh Chuẩn biên soạn phiếu v2.0 |
 | `python3 04-cong-cu/build_ban_do.py` | Sinh 9 bản đồ kiến thức |
 | `python3 04-cong-cu/build_de_thi.py` | Sinh chỉ mục 162 đề thi |
+| `python3 04-cong-cu/build_de.py` | **Biên soạn trọn 162 đề thi** kèm đáp án và bảng phân tích |
 | `python3 04-cong-cu/build_phan_quyen.py` | Sinh tài liệu phân quyền và bảo mật |
-| `python3 04-cong-cu/kiem_tra_mau.py` | Kiểm định 241 mẫu bài × mọi lớp × 300 hạt giống, đo độ phủ 538 dạng bài và 16 phương pháp |
+| `python3 04-cong-cu/kiem_tra_mau.py` | Kiểm định 254 mẫu bài × mọi lớp × 300 hạt giống, đo độ phủ 538 dạng bài và 16 phương pháp |
 | `python3 04-cong-cu/sinh_kho.py` | **Sinh trọn kho 1 296 tài liệu** (`--ghi-de` để dựng lại) |
 | `python3 04-cong-cu/validate_phieu.py --all` | Kiểm định từng phiếu theo chuẩn v2.0 |
 | `python3 04-cong-cu/build_so_do.py` | Sinh 24 sơ đồ đọc vị đề bài |
 | `python3 04-cong-cu/build_lo_trinh.py` | Sinh 6 lộ trình học 34 tuần |
 | `python3 04-cong-cu/kiem_toan.py` | **Kiểm toán toàn hệ thống — 12 nhóm, 36 hạng mục** |
+| `python3 04-cong-cu/kiem_yeu_cau.py` | **Đối chiếu với từng yêu cầu đã đặt ra — 40 mục** |
 | `python3 04-cong-cu/render_html.py --all` | Kết xuất bản in A4: bản ĐỀ và bản ĐÁP ÁN |
 | `python3 04-cong-cu/build_web_data.py --lop 4` | Đóng gói dữ liệu online cho một khối lớp |
 | `python3 04-cong-cu/build_artifact.py --lop 4` | Ghép thành một trang tự chứa để xuất bản |

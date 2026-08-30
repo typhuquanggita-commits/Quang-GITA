@@ -217,55 +217,58 @@ e) Một cửa hàng có 152 kg gạo. Ngày đầu bán 1 phần 4 số gạo, 
 
 ## PHẦN IV — BÀI PHÂN HOÁ · Mức M4 — Vận dụng cao · 20 phút · 25 điểm
 
-### Bài 1. (5 điểm) Biểu thức nhiều phép tính với phân số
-
-Tính giá trị biểu thức, rút gọn kết quả.
-
-a) 5 phần 8 × 7 phần 4 + 5 phần 8 × 3 phần 4
-b) 1 phần 11 : 3 phần 10 + 5 phần 7
-c) 5 phần 8 : 1 + 7 phần 11
-d) 1 phần 5 × 1 phần 4 + 1 phần 5 × 3 phần 4
-e) 2 × 12 phần 7 + 2 × 7 phần 5
-
-### Bài 2. (5 điểm) Nhận ra thừa số 0 để tính tức thì
+### Bài 1. (5 điểm) Nhận ra thừa số 0 để tính tức thì
 
 Tính bằng cách nhanh nhất.
 
-a) 30 × 22 × (26 − 26)
-b) 11 × 99 + 11 × 19 − 11 × (99 + 19)
-c) 62 × 87 + 62 × 66 − 62 × (87 + 66)
-d) (61 × 76 − 76 × 61) × 22
-e) 21 × 74 + 21 × 12 − 21 × (74 + 12)
+a) (50 × 28 − 28 × 50) × 94
+b) (27 × 76 − 76 × 27) × 27
+c) 88 × 12 × (76 − 76)
+d) (53 × 43 − 43 × 53) × 65
+e) (93 × 99 − 99 × 93) × 87
 
-### Bài 3. (5 điểm) Bài toán trồng cây — bốn trường hợp
+### Bài 2. (5 điểm) Biểu thức nhiều phép tính với phân số
 
-Tính số cây cần trồng trong mỗi trường hợp.
+Tính giá trị biểu thức, rút gọn kết quả.
 
-a) Trồng cây trên đoạn đường dài 176 m, hai cây liền nhau cách nhau 4 m, không trồng ở cả hai đầu. Cần bao nhiêu cây?
-b) Trồng cây quanh một cái ao hình tròn có chu vi 288 m, hai cây liền nhau cách nhau 6 m. Cần bao nhiêu cây?
-c) Trồng cây trên đoạn đường dài 130 m, hai cây liền nhau cách nhau 5 m, chỉ trồng ở một đầu đường. Cần bao nhiêu cây?
-d) Trồng cây suốt một đoạn đường dài 246 m, hai cây liền nhau cách nhau 6 m, trồng cả ở hai đầu đường. Cần bao nhiêu cây?
-e) Trồng cây trên đoạn đường dài 46 m, hai cây liền nhau cách nhau 2 m, không trồng ở cả hai đầu. Cần bao nhiêu cây?
+a) 1 phần 5 × 1 phần 4 + 1 phần 5 × 3 phần 4
+b) 2 × 12 phần 7 + 2 × 7 phần 5
+c) 3 phần 8 : 1 phần 3 + 1 phần 5
+d) 2 × 5 phần 4 + 2 × 5 phần 4
+e) (1 phần 5 + 3 phần 7) × 4 phần 3
+f) 7 phần 13 × 11 phần 7 + 7 phần 13 × 7 phần 15
 
-### Bài 4. (5 điểm) Tính nhanh tổng nhiều tích có thừa số chung
+### Bài 3. (5 điểm) Lọc số hạng theo điều kiện chia hết
 
-Tính tổng mỗi biểu thức.
+Cho dãy 11, 17, 23, …, 1 367.
 
-a) 2 × 1 + 2 × 2 + 2 × 3 + … + 2 × 10
-b) 5 × 1 + 5 × 2 + 5 × 3 + … + 5 × 20
-c) 9 × 1 + 9 × 2 + 9 × 3 + … + 9 × 20
-d) 6 × 1 + 6 × 2 + 6 × 3 + … + 6 × 50
+a) Dãy có bao nhiêu số hạng?
+b) Số hạng cuối là số nào?
+c) Trong dãy có bao nhiêu số chia hết cho 10?
+d) Trong dãy có bao nhiêu số chẵn?
+e) Tổng các số chẵn trong dãy bằng bao nhiêu?
+f) Tổng cả dãy bằng bao nhiêu?
 
-### Bài 5. (5 điểm) Tìm x khi x xuất hiện ở cả hai vế
+### Bài 4. (5 điểm) Tìm x khi x xuất hiện ở cả hai vế
 
 Tìm x. Gợi ý: so sánh số lần x ở hai vế.
 
-a) x × 4 + 15 = x × 7
-b) x × 4 + 22 = x × 5
-c) x × 5 + 86 = x × 7
-d) x × 4 + 153 = x × 7
-e) x × 4 + 147 = x × 7
-f) x × 2 + 80 = x × 6
+a) x × 6 + 258 = x × 9
+b) x × 3 + 146 = x × 5
+c) x × 2 + 15 = x × 3
+d) x × 5 + 124 = x × 9
+e) x × 2 + 260 = x × 6
+f) x × 4 + 45 = x × 5
+
+### Bài 5. (5 điểm) Tính nhanh tổng nhiều tích có thừa số chung
+
+Tính tổng mỗi biểu thức.
+
+a) 7 × 1 + 7 × 2 + 7 × 3 + … + 7 × 20
+b) 4 × 1 + 4 × 2 + 4 × 3 + … + 4 × 25
+c) 7 × 1 + 7 × 2 + 7 × 3 + … + 7 × 25
+d) 4 × 1 + 4 × 2 + 4 × 3 + … + 4 × 25
+e) 2 × 1 + 2 × 2 + 2 × 3 + … + 2 × 10
 
 ---
 
@@ -374,7 +377,7 @@ f) Cột 6 — Kết quả?
 
 ### Bài II.1
 **Đáp số:** a) 200 · b) 31 · c) 200 · d) 140 · e) 60
-**Hướng giải:** Đếm theo từng hàng: đếm số lần chữ số đó đứng ở hàng đơn vị, rồi hàng chục, rồi hàng trăm. Ở mỗi hàng, các số thoả mãn lập thành dãy cách đều, dùng công thức đếm số hạng.
+**Hướng giải:** BẪY — Số 33, 44… chứa hai lần cùng một chữ số. Đếm theo từng hàng: đếm số lần chữ số đó đứng ở hàng đơn vị, rồi hàng chục, rồi hàng trăm. Ở mỗi hàng, các số thoả mãn lập thành dãy cách đều, dùng công thức đếm số hạng.
 **Nhãn tư duy:** TD4, TD6. Điểm chốt: Một số có thể chứa chữ số đó **nhiều lần**; đếm theo hàng thì không sót.
 **Lỗi thường gặp:** Đếm số lượng **số** chứa chữ số đó thay vì số **lần** xuất hiện. Phòng: Kẻ bảng: hàng đơn vị – hàng chục – hàng trăm, đếm riêng rồi cộng.
 
@@ -433,39 +436,39 @@ f) Cột 6 — Kết quả?
 **Lỗi thường gặp:** Lấy cả hai phân số nhân với tổng ban đầu. Phòng: Sau mỗi bước, viết rõ “còn lại … kg” rồi mới sang bước sau.
 
 ### Bài IV.1
-**Đáp số:** a) 25 phần 16 · b) 235 phần 231 · c) 111 phần 88 · d) 1 phần 5 · e) 218 phần 35
-**Hướng giải:** Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
-**Nhãn tư duy:** TD3, TD5. Điểm chốt: Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều.
-**Lỗi thường gặp:** Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. Phòng: Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút.
-**Gợi ý 3 tầng:** (1) Biểu thức có dấu ngoặc không? — (2) Có thừa số chung ở hai tích không? — (3) Làm nhân chia trước, cộng trừ sau.
-
-### Bài IV.2
 **Đáp số:** a) 0 · b) 0 · c) 0 · d) 0 · e) 0
 **Hướng giải:** BẪY — Biểu thức lớn nhưng kết quả bằng 0. Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu. Vì vậy phải quan sát toàn bộ biểu thức trước khi tính, tìm cụm nào có giá trị bằng 0.
 **Nhãn tư duy:** TD5, TD6. Điểm chốt: Quét tìm **cụm bằng 0** trước; thấy rồi thì viết đáp số ngay.
 **Lỗi thường gặp:** Lao vào nhân từng cặp số lớn rồi mới phát hiện kết quả bằng 0. Phòng: Đọc hết biểu thức một lượt, khoanh các cụm giống nhau bị trừ cho nhau.
 **Gợi ý 3 tầng:** (1) Có cụm nào trong ngoặc bằng 0 không? — (2) Có hai cụm giống hệt nhau bị trừ cho nhau không? — (3) Tích có một thừa số bằng 0 thì bằng bao nhiêu?
 
+### Bài IV.2
+**Đáp số:** a) 1 phần 5 · b) 218 phần 35 · c) 53 phần 40 · d) 5 · e) 88 phần 105 · f) 214 phần 195
+**Hướng giải:** Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
+**Nhãn tư duy:** TD3, TD5. Điểm chốt: Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều.
+**Lỗi thường gặp:** Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. Phòng: Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút.
+**Gợi ý 3 tầng:** (1) Biểu thức có dấu ngoặc không? — (2) Có thừa số chung ở hai tích không? — (3) Làm nhân chia trước, cộng trừ sau.
+
 ### Bài IV.3
-**Đáp số:** a) 43 · b) 48 · c) 26 · d) 42 · e) 22
-**Hướng giải:** BẪY — Bốn trường hợp trồng cây khác nhau. Số khoảng = độ dài : khoảng cách. Từ số khoảng suy ra số cây: trồng cả hai đầu thì số cây hơn số khoảng 1; trồng một đầu thì bằng số khoảng; không trồng đầu nào thì kém số khoảng 1; trồng khép kín (quanh ao, quanh sân) thì bằng đúng số khoảng.
-**Nhãn tư duy:** TD3, TD6. Điểm chốt: Đọc kĩ **có trồng ở hai đầu hay không** — bốn trường hợp cho bốn đáp số khác nhau.
-**Lỗi thường gặp:** Máy móc cộng 1 cho mọi trường hợp. Phòng: Vẽ một đoạn ngắn với 3 khoảng để đếm thử trước khi áp dụng.
-**Gợi ý 3 tầng:** (1) Tính số khoảng trước. — (2) Đề có nói trồng ở hai đầu, một đầu, hay khép kín? — (3) Vẽ thử một hình nhỏ để kiểm tra.
+**Đáp số:** a) 227 · b) 1 367 · c) 0 · d) 0 · e) 0 · f) 156 403
+**Hướng giải:** Các số hạng thoả thêm một điều kiện chia hết cũng lập thành một dãy cách đều mới, có khoảng cách là bội chung nhỏ nhất của khoảng cách cũ và số chia. Tìm số hạng đầu tiên thoả điều kiện rồi đếm trên dãy mới.
+**Nhãn tư duy:** TD4, TD2. Điểm chốt: Dãy con cũng **cách đều**, chỉ khác khoảng cách.
+**Lỗi thường gặp:** Duyệt từng số hạng để đếm — không kịp khi dãy dài hàng trăm số. Phòng: Tìm số hạng đầu tiên thoả điều kiện rồi xác định khoảng cách mới.
+**Gợi ý 3 tầng:** (1) Số hạng nào đầu tiên thoả điều kiện? — (2) Số hạng tiếp theo thoả điều kiện cách nó bao nhiêu? — (3) Dãy con cũng cách đều — dùng công thức đếm.
 
 ### Bài IV.4
-**Đáp số:** a) 110 · b) 1 050 · c) 1 890 · d) 7 650
-**Hướng giải:** Tất cả các tích đều có chung một thừa số. Đặt thừa số chung ra ngoài, trong ngoặc còn tổng của dãy số tự nhiên liên tiếp — dùng công thức tổng dãy cách đều để tính.
-**Nhãn tư duy:** TD3, TD4. Điểm chốt: Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
-**Lỗi thường gặp:** Nhân từng tích rồi cộng dồn, rất dài và dễ sai. Phòng: Viết lại biểu thức dưới dạng a × (1 + 2 + … + n) trước khi tính.
-**Gợi ý 3 tầng:** (1) Các tích có thừa số nào giống nhau? — (2) Đặt thừa số đó ra ngoài dấu ngoặc. — (3) Tổng trong ngoặc là dãy số cách đều — tính bằng công thức.
-
-### Bài IV.5
-**Đáp số:** a) x = 5 · b) x = 22 · c) x = 43 · d) x = 51 · e) x = 49 · f) x = 20
+**Đáp số:** a) x = 86 · b) x = 73 · c) x = 15 · d) x = 31 · e) x = 65 · f) x = 45
 **Hướng giải:** Vế phải có nhiều x hơn vế trái. Bớt đi ở cả hai vế số lần x của vế ít hơn, phần chênh lệch số lần x ở vế phải chính bằng số hạng còn lại ở vế trái. Từ đó tìm x bằng một phép chia.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Lấy **hiệu số lần x** giữa hai vế, rồi chia số đã biết cho hiệu đó.
 **Lỗi thường gặp:** Chuyển vế nhưng quên đổi dấu, hoặc trừ nhầm số lần x. Phòng: Vẽ sơ đồ đoạn thẳng: vế trái mấy đoạn x, vế phải mấy đoạn x.
 **Gợi ý 3 tầng:** (1) Vế trái có mấy lần x? Vế phải có mấy lần x? — (2) Vế phải hơn vế trái mấy lần x? — (3) Phần hơn đó ứng với số nào đã biết?
+
+### Bài IV.5
+**Đáp số:** a) 1 470 · b) 1 300 · c) 2 275 · d) 1 300 · e) 110
+**Hướng giải:** Tất cả các tích đều có chung một thừa số. Đặt thừa số chung ra ngoài, trong ngoặc còn tổng của dãy số tự nhiên liên tiếp — dùng công thức tổng dãy cách đều để tính.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
+**Lỗi thường gặp:** Nhân từng tích rồi cộng dồn, rất dài và dễ sai. Phòng: Viết lại biểu thức dưới dạng a × (1 + 2 + … + n) trước khi tính.
+**Gợi ý 3 tầng:** (1) Các tích có thừa số nào giống nhau? — (2) Đặt thừa số đó ra ngoài dấu ngoặc. — (3) Tổng trong ngoặc là dãy số cách đều — tính bằng công thức.
 
 ### Bài V.1
 **Đáp số:** a) Tổng dãy cộng trừ xen kẽ · b) Ghép cặp, tính chất kết hợp · c) Dấu cộng và trừ xen kẽ đều đặn · d) Ghép cặp, đếm số cặp, xử lí phần dư · e) Dãy 1 − 2 + 3 − … với n chẵn bằng −n : 2; với n lẻ bằng (n + 1) : 2. · f) -25 · -50 · -25 · -50…

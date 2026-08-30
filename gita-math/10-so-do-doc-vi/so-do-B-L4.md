@@ -95,43 +95,43 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 
 Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: đây là dạng bài gì, và dấu hiệu nào cho biết điều đó.
 
-**Đề 1.** Tìm x. x − 40 = 297
+**Đề 1.** Tìm x. Gợi ý: so sánh số lần x ở hai vế. x × 4 + 236 = x × 8
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 2.** Tính bằng cách thuận tiện nhất. 79 + 328 + 21
+**Đề 2.** Đặt tính rồi tính. Ước lượng trước để tự kiểm tra. 315 040 − 282 824
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 3.** Tính giá trị mỗi biểu thức. 1 − 2 + 3 − 4 + 5 − 6 + … − 10
+**Đề 3.** Tính bằng cách thuận tiện nhất. 91 × 42 + 91 × 11
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 4.** Đặt tính rồi tính. 403 131 : 83
+**Đề 4.** Vẽ sơ đồ mũi tên trước khi tính. Tính xong phải thử lại theo chiều xuôi. Em nghĩ ra một số. Lấy số ấy nhân với 6, được bao nhiêu thì cộng thêm 14, rồi chia cho 2 thì được 115. Hỏi số em nghĩ ra là số nào?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 5.** Tìm x, trình bày từng bước. (x − 237) × 7 = -980
+**Đề 5.** Tính bằng cách nhanh nhất. (51 × 25 − 25 × 51) × 73
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 6.** Tìm x, trình bày đủ các bước. (x + 20) × 5 − 2 = 173
+**Đề 6.** Tính giá trị mỗi biểu thức. 1 − 2 + 3 − 4 + 5 − 6 + … − 100
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 7.** Tính nhẩm, ghi ngay kết quả. 860 × 1 000
+**Đề 7.** Tìm x, trình bày đủ các bước. (x + 23) × 9 − 2 = 385
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 8.** Đặt tính rồi tính. Ước lượng trước để tự kiểm tra. 95 613 300 : 225
+**Đề 8.** Đặt tính rồi tính. 7 841 × 50
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 9.** Tính bằng cách thuận tiện nhất. 2 840 : 4 : 10
+**Đề 9.** Tính hoặc so sánh bằng cách khéo nhất, không tính hết. 652 × 654 … 653 × 653
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 10.** Vẽ sơ đồ mũi tên trước khi tính. Tính xong phải thử lại theo chiều xuôi. Em nghĩ ra một số. Lấy số ấy nhân với 3, được bao nhiêu thì cộng thêm 32, rồi chia cho 2 thì được 34. Hỏi số em nghĩ ra là số nào?
+**Đề 10.** Tính nhẩm, ghi ngay kết quả. 8 772 × 100
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
@@ -141,16 +141,16 @@ Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: 
 
 | # | Dạng bài | Dấu hiệu |
 |:--:|---|---|
-| 1 | Tìm x trong phép tính một bước | Có chữ x đứng trong một phép tính |
-| 2 | Tính nhanh tổng nhiều số hạng | Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm |
-| 3 | Tổng dãy cộng trừ xen kẽ | Dấu cộng và trừ xen kẽ đều đặn |
-| 4 | Nhân, chia số tự nhiên | Yêu cầu “đặt tính rồi tính” với phép nhân, chia |
-| 5 | Tìm x qua hai bước | x nằm trong một cụm có hai phép tính |
-| 6 | Tìm x nhiều bước có ngoặc | x nằm trong ngoặc, ngoài ngoặc còn phép tính khác |
-| 7 | Nhân, chia nhẩm với số tròn chục, trăm, nghìn | Thừa số hoặc số chia là 10, 100, 1 000 |
-| 8 | Bốn phép tính với số tự nhiên | Yêu cầu “đặt tính rồi tính” |
-| 9 | Tính nhanh tích, thương nhiều bước | Tích có thừa số 25, 125, 50, 20; hoặc chia liên tiếp |
-| 10 | Tính ngược từ cuối | Đề kể một **chuỗi thao tác** rồi cho kết quả cuối, hỏi số ban đầu |
+| 1 | Tìm x xuất hiện hai vế | Chữ x xuất hiện ở cả hai vế của dấu bằng |
+| 2 | Bốn phép tính với số tự nhiên | Yêu cầu “đặt tính rồi tính” |
+| 3 | Tính nhanh nhờ thừa số chung | Hai tích cộng hoặc trừ nhau, có chung một thừa số |
+| 4 | Tính ngược từ cuối | Đề kể một **chuỗi thao tác** rồi cho kết quả cuối, hỏi số ban đầu |
+| 5 | Tính nhanh nhờ thừa số 0 | Trong biểu thức có ngoặc chứa hai số giống nhau trừ nhau |
+| 6 | Tổng dãy cộng trừ xen kẽ | Dấu cộng và trừ xen kẽ đều đặn |
+| 7 | Tìm x nhiều bước có ngoặc | x nằm trong ngoặc, ngoài ngoặc còn phép tính khác |
+| 8 | Nhân, chia số tự nhiên | Yêu cầu “đặt tính rồi tính” với phép nhân, chia |
+| 9 | Tính, so sánh tích bằng kĩ thuật tách – bù | Các thừa số hơn kém nhau rất ít |
+| 10 | Nhân, chia nhẩm với số tròn chục, trăm, nghìn | Thừa số hoặc số chia là 10, 100, 1 000 |
 
 ---
 

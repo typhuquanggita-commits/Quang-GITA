@@ -43,7 +43,7 @@ Phiếu lời giải và phân tích chuyên sâu đi kèm: `GITA-T1-L4-C10-DB-G
 Họ và tên: ......................................... Lớp: ......... Điểm: ......../100
 
 > **KIẾN THỨC NỀN CỦA CHƯƠNG**
-> 1. Tìm phân số của một số
+> 1. Tỉ số, sơ đồ đoạn thẳng, dịch lời văn thành số
 > 2. Tỉ số, sơ đồ đoạn thẳng
 > 3. Bốn phép tính, từ khoá chỉ quan hệ
 > 4. Công thức tổng – hiệu, sơ đồ đoạn thẳng
@@ -91,196 +91,184 @@ f) Dạng bài thứ 6 của chương?
 
 Với mỗi dạng bài dưới đây, điền cột **Dấu hiệu nhận biết** của bảng.
 
-a) Dạng “Ba dạng bài trung bình cộng” — dấu hiệu nhận biết?
-b) Dạng “Tỉ lệ nghịch” — dấu hiệu nhận biết?
-c) Dạng “Tìm trung bình cộng” — dấu hiệu nhận biết?
-d) Dạng “Tổng – tỉ, hiệu – tỉ dạng ẩn” — dấu hiệu nhận biết?
-e) Dạng “Chuyển đổi giữa hai đại lượng, tổng không đổi” — dấu hiệu nhận biết?
+a) Dạng “Bài toán hiệu – tỉ” — dấu hiệu nhận biết?
+b) Dạng “Ba dạng bài trung bình cộng” — dấu hiệu nhận biết?
+c) Dạng “Công việc chung” — dấu hiệu nhận biết?
+d) Dạng “Tìm trung bình cộng” — dấu hiệu nhận biết?
+e) Dạng “Rút về đơn vị” — dấu hiệu nhận biết?
 
 ### Bài 3. (2 điểm) Điền cột “Phương pháp áp dụng”
 
 Với mỗi dạng bài dưới đây, điền cột **Phương pháp áp dụng** của bảng.
 
-a) Dạng “Tìm trung bình cộng” — phương pháp áp dụng?
-b) Dạng “Tổng – tỉ, hiệu – tỉ dạng ẩn” — phương pháp áp dụng?
-c) Dạng “Chuyển đổi giữa hai đại lượng, tổng không đổi” — phương pháp áp dụng?
-d) Dạng “Bài toán hiệu – tỉ” — phương pháp áp dụng?
-e) Dạng “Bài toán tổng – tỉ” — phương pháp áp dụng?
+a) Dạng “Công việc chung” — phương pháp áp dụng?
+b) Dạng “Tìm trung bình cộng” — phương pháp áp dụng?
+c) Dạng “Rút về đơn vị” — phương pháp áp dụng?
+d) Dạng “Bài toán tuổi” — phương pháp áp dụng?
+e) Dạng “Tỉ lệ bản đồ, tỉ lệ xích” — phương pháp áp dụng?
 
 ### Bài 4. (2 điểm) Điền cột “Kiến thức phải thuộc”
 
 Với mỗi dạng bài dưới đây, điền cột **Kiến thức phải thuộc** của bảng.
 
-a) Dạng “Chuyển đổi giữa hai đại lượng, tổng không đổi” — kiến thức phải thuộc?
-b) Dạng “Bài toán hiệu – tỉ” — kiến thức phải thuộc?
-c) Dạng “Bài toán tổng – tỉ” — kiến thức phải thuộc?
-d) Dạng “Công việc chung” — kiến thức phải thuộc?
-e) Dạng “Ba dạng cơ bản của chuyển động đều” — kiến thức phải thuộc?
+a) Dạng “Rút về đơn vị” — kiến thức phải thuộc?
+b) Dạng “Bài toán tuổi” — kiến thức phải thuộc?
+c) Dạng “Tỉ lệ bản đồ, tỉ lệ xích” — kiến thức phải thuộc?
+d) Dạng “Tổng – tỉ, hiệu – tỉ dạng ẩn” — kiến thức phải thuộc?
+e) Dạng “Chuyển đổi giữa hai đại lượng, tổng không đổi” — kiến thức phải thuộc?
 
 ### Bài 5. (2 điểm) Điền cột “Cách xử lý nhanh nhất”
 
 Với mỗi dạng bài dưới đây, điền cột **Cách xử lý nhanh nhất** của bảng.
 
-a) Dạng “Bài toán tổng – tỉ” — cách xử lý nhanh nhất?
-b) Dạng “Công việc chung” — cách xử lý nhanh nhất?
-c) Dạng “Ba dạng cơ bản của chuyển động đều” — cách xử lý nhanh nhất?
-d) Dạng “Bài toán tổng – hiệu” — cách xử lý nhanh nhất?
-e) Dạng “Tổng nhiều số có ràng buộc; tổng – tỉ” — cách xử lý nhanh nhất?
+a) Dạng “Tỉ lệ bản đồ, tỉ lệ xích” — cách xử lý nhanh nhất?
+b) Dạng “Tổng – tỉ, hiệu – tỉ dạng ẩn” — cách xử lý nhanh nhất?
+c) Dạng “Chuyển đổi giữa hai đại lượng, tổng không đổi” — cách xử lý nhanh nhất?
+d) Dạng “Bài toán tổng – tỉ” — cách xử lý nhanh nhất?
+e) Dạng “Tỉ lệ nghịch” — cách xử lý nhanh nhất?
 
 ---
 
 ## PHẦN B — DẠNG 1 – DẠNG 2 · Mức M2 — Thông hiểu · 25 phút · 25 điểm
 
-### Bài 1. (5 điểm) Trung bình cộng trong tình huống thực tế
-
-Giải từng bài toán nhỏ.
-
-a) 5 ngày đầu tuần một cửa hàng bán được lần lượt 65, 69, 60, 82, 79 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
-b) Trung bình mỗi ngày bán được 82 kg gạo. Hỏi 4 ngày bán được tất cả bao nhiêu ki-lô-gam?
-c) 6 ngày đầu tuần một cửa hàng bán được lần lượt 135, 134, 120, 117, 121, 111 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
-d) 5 ngày đầu tuần một cửa hàng bán được lần lượt 300, 296, 311, 291, 297 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
-e) 4 ngày đầu tuần một cửa hàng bán được lần lượt 212, 198, 213, 209 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
-
-### Bài 2. (5 điểm) Đại lượng tỉ lệ nghịch
-
-Giải bằng cách quy về tổng số ngày công.
-
-a) 4 người làm xong một công việc trong 6 ngày. Hỏi 2 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
-b) 4 người làm xong một công việc trong 15 ngày. Hỏi 3 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
-c) 2 người làm xong một công việc trong 24 ngày. Hỏi 6 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
-d) 6 người làm xong một công việc trong 10 ngày. Hỏi 2 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
-
-### Bài 3. (5 điểm) Bài toán tổng – hiệu có lời văn
+### Bài 1. (5 điểm) Bài toán tổng – hiệu có lời văn
 
 Tóm tắt bằng sơ đồ đoạn thẳng rồi giải.
 
-a) Hai lớp 4B và 3A có tất cả 600 quyển sách. Lớp 4B có nhiều hơn lớp 3A 36 quyển. Mỗi lớp có bao nhiêu quyển?
-b) Tổ Một và đội Hai trồng được 400 cây. Tổ Một trồng nhiều hơn đội Hai 86 cây. Mỗi tổ trồng bao nhiêu cây?
-c) Trang trại và xưởng chứa tất cả 410 kg phân bón. Trang trại chứa nhiều hơn xưởng 48 kg. Mỗi nơi chứa bao nhiêu kg?
-d) Đội Hai và tổ Một trồng được 166 cây. Đội Hai trồng nhiều hơn tổ Một 38 cây. Mỗi tổ trồng bao nhiêu cây?
+a) Hai lớp 5B và 5A có tất cả 286 quyển sách. Lớp 5B có nhiều hơn lớp 5A 86 quyển. Mỗi lớp có bao nhiêu quyển?
+b) Hợp tác xã và trang trại chứa tất cả 288 kg muối. Hợp tác xã chứa nhiều hơn trang trại 16 kg. Mỗi nơi chứa bao nhiêu kg?
+c) Đội Một và đội Hai trồng được 836 cây. Đội Một trồng nhiều hơn đội Hai 34 cây. Mỗi tổ trồng bao nhiêu cây?
+d) Tổ Ba và tổ Một trồng được 310 cây. Tổ Ba trồng nhiều hơn tổ Một 14 cây. Mỗi tổ trồng bao nhiêu cây?
+e) Hợp tác xã và kho B chứa tất cả 398 kg xi măng. Hợp tác xã chứa nhiều hơn kho B 62 kg. Mỗi nơi chứa bao nhiêu kg?
+f) Hai lớp 3B và 4B có tất cả 318 quyển sách. Lớp 3B có nhiều hơn lớp 4B 88 quyển. Mỗi lớp có bao nhiêu quyển?
 
-### Bài 4. (5 điểm) Đại lượng tỉ lệ thuận
-
-Giải bằng cách rút về đơn vị hoặc dùng tỉ số.
-
-a) Mua 10 quyển vở hết 780 nghìn đồng. Với 1 482 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
-b) Mua 5 quyển vở hết 385 nghìn đồng. Mua 9 quyển vở như thế hết bao nhiêu nghìn đồng?
-c) Mua 14 quyển vở hết 1 232 nghìn đồng. Mua 24 quyển vở như thế hết bao nhiêu nghìn đồng?
-d) Mua 15 quyển vở hết 555 nghìn đồng. Với 740 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
-
-### Bài 5. (5 điểm) Tỉ lệ bản đồ
+### Bài 2. (5 điểm) Tỉ lệ bản đồ
 
 Chú ý đổi đơn vị ở bước cuối.
 
-a) Trên bản đồ tỉ lệ 1 : 500, một đoạn đường đo được 22 cm. Hỏi đoạn đường đó dài bao nhiêu mét trên thực tế?
-b) Một đoạn đường dài 1 700 m được vẽ trên bản đồ tỉ lệ 1 : 10 000. Trên bản đồ đoạn ấy dài bao nhiêu xăng-ti-mét?
-c) Một đoạn đường dài 90 m được vẽ trên bản đồ tỉ lệ 1 : 500. Trên bản đồ đoạn ấy dài bao nhiêu xăng-ti-mét?
-d) Trên bản đồ tỉ lệ 1 : 2 000, một đoạn đường đo được 28 cm. Hỏi đoạn đường đó dài bao nhiêu mét trên thực tế?
+a) Một đoạn đường dài 500 m được vẽ trên bản đồ tỉ lệ 1 : 10 000. Trên bản đồ đoạn ấy dài bao nhiêu xăng-ti-mét?
+b) Trên bản đồ tỉ lệ 1 : 100, một đoạn đường đo được 25 cm. Hỏi đoạn đường đó dài bao nhiêu mét trên thực tế?
+c) Trên bản đồ tỉ lệ 1 : 10 000, một đoạn đường đo được 8 cm. Hỏi đoạn đường đó dài bao nhiêu mét trên thực tế?
+d) Một đoạn đường dài 240 m được vẽ trên bản đồ tỉ lệ 1 : 1 000. Trên bản đồ đoạn ấy dài bao nhiêu xăng-ti-mét?
+
+### Bài 3. (5 điểm) Đại lượng tỉ lệ thuận
+
+Giải bằng cách rút về đơn vị hoặc dùng tỉ số.
+
+a) Mua 5 quyển vở hết 160 nghìn đồng. Mua 8 quyển vở như thế hết bao nhiêu nghìn đồng?
+b) Mua 6 quyển vở hết 114 nghìn đồng. Với 532 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+c) Mua 14 quyển vở hết 1 008 nghìn đồng. Với 1 296 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
+d) Mua 8 quyển vở hết 704 nghìn đồng. Mua 10 quyển vở như thế hết bao nhiêu nghìn đồng?
+
+### Bài 4. (5 điểm) Trung bình cộng trong tình huống thực tế
+
+Giải từng bài toán nhỏ.
+
+a) 5 ngày đầu tuần một cửa hàng bán được lần lượt 32, 48, 45, 42, 38 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
+b) Trung bình mỗi ngày bán được 191 kg gạo. Hỏi 3 ngày bán được tất cả bao nhiêu ki-lô-gam?
+c) Trung bình mỗi ngày bán được 131 kg gạo. Hỏi 3 ngày bán được tất cả bao nhiêu ki-lô-gam?
+d) Trung bình mỗi ngày bán được 108 kg gạo. Hỏi 5 ngày bán được tất cả bao nhiêu ki-lô-gam?
+e) 3 ngày đầu tuần một cửa hàng bán được lần lượt 190, 203, 207 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
+
+### Bài 5. (5 điểm) Đại lượng tỉ lệ nghịch
+
+Giải bằng cách quy về tổng số ngày công.
+
+a) 4 người làm xong một công việc trong 6 ngày. Hỏi 12 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
+b) 6 người làm xong một công việc trong 20 ngày. Hỏi 2 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
+c) 3 người làm xong một công việc trong 12 ngày. Hỏi 2 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
+d) 6 người làm xong một công việc trong 20 ngày. Hỏi 10 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
+e) 2 người làm xong một công việc trong 18 ngày. Hỏi 6 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
 
 ---
 
 ## PHẦN C — DẠNG 3 – DẠNG 4 · Mức M2 — Thông hiểu · 25 phút · 25 điểm
 
-### Bài 1. (5 điểm) Tính nhanh bằng cách ghép số tròn
+### Bài 1. (5 điểm) Tính tổng dãy số cách đều
 
-Tính bằng cách thuận tiện nhất.
+Tính tổng mỗi dãy.
 
-a) 319 + 58 − 58
-b) 48 + 316 + 52
-c) 49 + 65 + 51 + 35
-d) 80 + 349 + 20
+a) Tính tổng: 8 + 18 + 28 + … + 298
+b) Tính tổng: 20 + 30 + 40 + … + 110
+c) Tính tổng: 9 + 14 + 19 + … + 254
+d) Tính tổng: 19 + 24 + 29 + … + 139
+e) Tính tổng: 3 + 13 + 23 + … + 493
 
-### Bài 2. (5 điểm) Bài toán nói thật – nói dối
+### Bài 2. (5 điểm) So sánh hai số đo khác đơn vị
 
-Ba bạn Đức, Vy, Ngọc, trong đó đúng một bạn làm vỡ lọ hoa.
-- Đức nói: “Tôi không làm.”
-- Vy nói: “Ngọc làm.”
-- Ngọc nói: “Vy nói dối.”
+Điền dấu <, >, = thích hợp.
 
-Biết rằng trong ba bạn chỉ có đúng **một** bạn nói thật.
+a) 32 km² … 8 369 cm²
+b) 26 mm … 6 992 hm
+c) 77 tạ … 6 003 tấn
+d) 90 m … 3 975 dam
+e) 76 tấn … 4 848 yến
 
-a) Câu nói của Vy và câu nói của Ngọc có thể cùng đúng được không? Vì sao?
-b) Hai câu đó có thể cùng sai được không?
-c) Vậy trong hai bạn Vy và Ngọc có đúng mấy bạn nói thật?
-d) Đề cho biết cả ba bạn chỉ có một bạn nói thật. Suy ra Đức nói thật hay nói dối?
-e) Câu của Đức là “Tôi không làm.” Câu đó sai thì điều gì đúng?
-f) Ai là người làm vỡ lọ hoa?
+### Bài 3. (5 điểm) Đơn vị đo diện tích
 
-### Bài 3. (5 điểm) Hình tròn: tâm, bán kính, đường kính
+Điền số thích hợp vào chỗ chấm.
 
-Vẽ hình tròn và ghi kí hiệu lên hình.
+a) 560 000 cm² = … m²
+b) 84 dm² = … cm²
+c) 67 m² = … dm²
+d) 86 dm² = … cm²
+e) 90 m² = … cm²
 
-a) Hình tròn có đường kính 38 cm. Bán kính dài bao nhiêu?
-b) Hình tròn A có bán kính 38 cm, hình tròn B có đường kính 80 cm. Hình nào lớn hơn?
-c) Hình tròn có bán kính 19 cm. Đường kính dài bao nhiêu?
-d) Hình tròn có đường kính 72 cm. Bán kính dài bao nhiêu?
+### Bài 4. (5 điểm) Tính toán với số đo đại lượng
 
-### Bài 4. (5 điểm) Lịch, thế kỉ, năm nhuận
+Đổi về cùng đơn vị rồi tính.
 
-Trả lời ngắn gọn.
+a) 19 kg 682 g − 341 g = … g
+b) 3 512 cm : 8 = … cm
+c) 20 kg 894 g − 447 g = … g
+d) 8 kg 523 g − 261 g = … g
+e) 9 kg 568 g − 284 g = … g
+f) 30 m 73 cm + 773 cm = … cm
 
-a) Tháng 3 năm 1917 có bao nhiêu ngày?
-b) Năm 2073 thuộc thế kỉ thứ mấy?
-c) Năm 1896 có phải năm nhuận không?
-d) 37 ngày bằng bao nhiêu tuần lễ và mấy ngày?
-e) 51 ngày bằng bao nhiêu tuần lễ và mấy ngày?
+### Bài 5. (5 điểm) Tìm x qua hai bước
 
-### Bài 5. (5 điểm) Đếm số hạng của dãy cách đều
+Tìm x, trình bày từng bước.
 
-Tính số số hạng của mỗi dãy.
-
-a) Dãy 29, 36, 43, …, 897 có bao nhiêu số hạng?
-b) Dãy 26, 33, 40, …, 901 có bao nhiêu số hạng?
-c) Dãy 18, 20, 22, …, 64 có bao nhiêu số hạng?
-d) Dãy 25, 32, 39, …, 886 có bao nhiêu số hạng?
-e) Dãy 17, 27, 37, …, 107 có bao nhiêu số hạng?
+a) x × 9 + 266 = 464
+b) (x − 128) × 7 = 497
+c) x × 6 − 293 = 139
+d) x × 10 + 203 = 1 133
+e) 544 − x × 4 = 72
+f) (x − 44) × 3 = -72
 
 ---
 
 ## PHẦN D — DẠNG 5 – DẠNG 6 VÀ DẠNG PHỐI HỢP · Mức M3 — Vận dụng · 20 phút · 20 điểm
 
-### Bài 1. (4 điểm) Tổng của các số tự nhiên liên tiếp
-
-Với mỗi ý, tìm số theo yêu cầu.
-
-a) Tổng của 9 số tự nhiên liên tiếp bằng 2 610. Tìm số bé nhất trong 9 số đó.
-b) Tổng của 9 số tự nhiên liên tiếp bằng 3 069. Tìm số bé nhất trong 9 số đó.
-c) Tổng của 3 số tự nhiên liên tiếp bằng 1 068. Tìm số bé nhất trong 3 số đó.
-d) Tổng của 9 số tự nhiên liên tiếp bằng 639. Tìm số bé nhất trong 9 số đó.
-e) Tổng của 5 số tự nhiên liên tiếp bằng 1 165. Tìm số bé nhất trong 5 số đó.
-f) Tổng của 9 số tự nhiên liên tiếp bằng 612. Tìm số bé nhất trong 9 số đó.
-
-### Bài 2. (4 điểm) Tìm hai số khi biết hiệu và tỉ số
+### Bài 1. (4 điểm) Tìm hai số khi biết tổng và tỉ số
 
 Vẽ sơ đồ đoạn thẳng rồi giải.
 
-a) Xưởng chứa nhiều hơn kho A 237 kg muối. Số muối ở kho A bằng 2 phần 5 số muối ở xưởng. Mỗi nơi chứa bao nhiêu kg?
-b) Cửa hàng chứa nhiều hơn trang trại 59 kg đường. Số đường ở trang trại bằng 4 phần 5 số đường ở cửa hàng. Mỗi nơi chứa bao nhiêu kg?
-c) Kho B chứa nhiều hơn cửa hàng 90 kg thóc. Số thóc ở cửa hàng bằng 1 phần 3 số thóc ở kho B. Mỗi nơi chứa bao nhiêu kg?
-d) Trang trại chứa nhiều hơn thư viện 112 kg gạo. Số gạo ở thư viện bằng 5 phần 6 số gạo ở trang trại. Mỗi nơi chứa bao nhiêu kg?
-e) Kho A chứa nhiều hơn trang trại 168 kg muối. Số muối ở trang trại bằng 1 phần 7 số muối ở kho A. Mỗi nơi chứa bao nhiêu kg?
-f) Trang trại chứa nhiều hơn hợp tác xã 315 kg xi măng. Số xi măng ở hợp tác xã bằng 1 phần 6 số xi măng ở trang trại. Mỗi nơi chứa bao nhiêu kg?
+a) Đội Một và đội Hai trồng được tất cả 800 cây. Số cây của đội Một bằng 2 phần 3 số cây của đội Hai. Mỗi tổ trồng được bao nhiêu cây?
+b) Tổ Ba và nhóm Hoa Phượng trồng được tất cả 76 cây. Số cây của tổ Ba bằng 1 phần 3 số cây của nhóm Hoa Phượng. Mỗi tổ trồng được bao nhiêu cây?
+c) Nhóm Hoa Phượng và tổ Hai trồng được tất cả 220 cây. Số cây của nhóm Hoa Phượng bằng 3 phần 7 số cây của tổ Hai. Mỗi tổ trồng được bao nhiêu cây?
+d) Đội Một và đội Hai trồng được tất cả 1 232 cây. Số cây của đội Một bằng 5 phần 6 số cây của đội Hai. Mỗi tổ trồng được bao nhiêu cây?
 
-### Bài 3. (4 điểm) Tìm hai số khi biết tổng và tỉ số
+### Bài 2. (4 điểm) Tìm số bằng cách thử và loại
 
-Vẽ sơ đồ đoạn thẳng rồi giải.
+Với mỗi câu, viết ra danh sách đã thử rồi mới ghi đáp số. Đáp số có thể gồm nhiều số.
 
-a) Nhóm Hoa Phượng và tổ Ba trồng được tất cả 245 cây. Số cây của nhóm Hoa Phượng bằng 1 phần 6 số cây của tổ Ba. Mỗi tổ trồng được bao nhiêu cây?
-b) Nhóm Hoa Phượng và tổ Một trồng được tất cả 1 034 cây. Số cây của nhóm Hoa Phượng bằng 5 phần 6 số cây của tổ Một. Mỗi tổ trồng được bao nhiêu cây?
-c) Tổ Một và nhóm Hoa Phượng trồng được tất cả 189 cây. Số cây của tổ Một bằng 1 phần 2 số cây của nhóm Hoa Phượng. Mỗi tổ trồng được bao nhiêu cây?
-d) Tổ Hai và đội Một trồng được tất cả 840 cây. Số cây của tổ Hai bằng 3 phần 4 số cây của đội Một. Mỗi tổ trồng được bao nhiêu cây?
-e) Nhóm Sao Mai và đội Một trồng được tất cả 72 cây. Số cây của nhóm Sao Mai bằng 3 phần 5 số cây của đội Một. Mỗi tổ trồng được bao nhiêu cây?
+a) Tìm mọi số có hai chữ số vừa chia hết cho 5, vừa có tổng hai chữ số bằng 7.
+b) Tìm mọi số có hai chữ số vừa chia hết cho 4, vừa có tổng hai chữ số bằng 10.
+c) Tìm mọi số có hai chữ số vừa chia hết cho 5, vừa có tổng hai chữ số bằng 9.
+d) Tìm mọi số có hai chữ số vừa chia hết cho 6, vừa có tổng hai chữ số bằng 15.
 
-### Bài 4. (4 điểm) Tổng – tỉ, hiệu – tỉ khi một dữ kiện bị giấu
+### Bài 3. (4 điểm) Tổng – tỉ, hiệu – tỉ khi một dữ kiện bị giấu
 
 Việc đầu tiên là gọi tên dữ kiện bị giấu.
 
-a) Cửa hàng chứa 32 kg phân bón. Nếu cửa hàng nhận thêm 48 kg thì bằng số phân bón ở kho B. Hỏi cả hai nơi chứa bao nhiêu kg?
-b) Xưởng và hợp tác xã chứa tất cả 49 kg muối. Nếu chia số muối ở xưởng thành 2 phần bằng nhau thì số muối ở hợp tác xã bằng 5 phần như thế. Mỗi nơi chứa bao nhiêu kg?
-c) Số phân bón ở hợp tác xã bằng 2 số phân bón ở cửa hàng. Nếu chuyển 99 kg từ hợp tác xã sang cửa hàng thì hợp tác xã vẫn còn nhiều hơn. Biết hợp tác xã hơn cửa hàng 99 kg, tìm số phân bón mỗi nơi.
-d) Kho A và trang trại chứa tất cả 96 kg thóc. Nếu chia số thóc ở kho A thành 3 phần bằng nhau thì số thóc ở trang trại bằng 5 phần như thế. Mỗi nơi chứa bao nhiêu kg?
+a) Xưởng và trang trại chứa tất cả 119 kg thóc. Nếu chia số thóc ở xưởng thành 1 phần bằng nhau thì số thóc ở trang trại bằng 6 phần như thế. Mỗi nơi chứa bao nhiêu kg?
+b) Số muối ở trang trại bằng 3 phần 2 số muối ở xưởng. Nếu chuyển 10 kg từ trang trại sang xưởng thì trang trại vẫn còn nhiều hơn. Biết trang trại hơn xưởng 20 kg, tìm số muối mỗi nơi.
+c) Xưởng chứa 14 kg muối. Nếu xưởng nhận thêm 21 kg thì bằng số muối ở hợp tác xã. Hỏi cả hai nơi chứa bao nhiêu kg?
+d) Cửa hàng và hợp tác xã chứa tất cả 297 kg phân bón. Nếu chia số phân bón ở cửa hàng thành 3 phần bằng nhau thì số phân bón ở hợp tác xã bằng 6 phần như thế. Mỗi nơi chứa bao nhiêu kg?
+e) Kho A chứa 36 kg thóc. Nếu kho A nhận thêm 24 kg thì bằng số thóc ở trang trại. Hỏi cả hai nơi chứa bao nhiêu kg?
 
-### Bài 5. (4 điểm) Bài toán về tuổi
+### Bài 4. (4 điểm) Bài toán về tuổi
 
 Chú ý điều gì thay đổi và điều gì không đổi theo thời gian.
 
@@ -291,13 +279,22 @@ d) Hiện nay bố 24 tuổi, con 6 tuổi. Cách đây 3 năm, bố hơn con ba
 e) Tuổi bố gấp 4 lần tuổi con. Tổng số tuổi của hai bố con là 50 tuổi. Tính tuổi mỗi người.
 f) Tuổi bố gấp 5 lần tuổi con. Tổng số tuổi của hai bố con là 36 tuổi. Tính tuổi mỗi người.
 
+### Bài 5. (4 điểm) Tìm hai số khi biết hiệu và tỉ số
+
+Vẽ sơ đồ đoạn thẳng rồi giải.
+
+a) Trang trại chứa nhiều hơn hợp tác xã 51 kg muối. Số muối ở hợp tác xã bằng 1 phần 4 số muối ở trang trại. Mỗi nơi chứa bao nhiêu kg?
+b) Trang trại chứa nhiều hơn thư viện 37 kg phân bón. Số phân bón ở thư viện bằng 1 phần 2 số phân bón ở trang trại. Mỗi nơi chứa bao nhiêu kg?
+c) Trang trại chứa nhiều hơn kho A 72 kg thóc. Số thóc ở kho A bằng 2 phần 3 số thóc ở trang trại. Mỗi nơi chứa bao nhiêu kg?
+d) Thư viện chứa nhiều hơn cửa hàng 67 kg xi măng. Số xi măng ở cửa hàng bằng 1 phần 2 số xi măng ở thư viện. Mỗi nơi chứa bao nhiêu kg?
+
 ---
 
 ## PHẦN E — ĐỌC VỊ ĐỀ BÀI · Mức M3 — Vận dụng · 10 phút · 20 điểm
 
 ### Bài 1. (4 điểm) Đọc vị đề số 1
 
-**Đề:** Giải bằng cách quy về tổng số ngày công. 2 người làm xong một công việc trong 60 ngày. Hỏi 4 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
+**Đề:** Giải từng bài toán nhỏ. Trung bình mỗi ngày bán được 153 kg gạo. Hỏi 3 ngày bán được tất cả bao nhiêu ki-lô-gam?
 
 a) Đề này thuộc dạng bài nào?
 b) Dấu hiệu nào giúp em nhận ra?
@@ -308,7 +305,7 @@ f) Lỗi nào dễ mắc ở đề này?
 
 ### Bài 2. (4 điểm) Đọc vị đề số 2
 
-**Đề:** Việc đầu tiên là gọi tên dữ kiện bị giấu. Hợp tác xã chứa 33 kg đường. Nếu hợp tác xã nhận thêm 33 kg thì bằng số đường ở xưởng. Hỏi cả hai nơi chứa bao nhiêu kg?
+**Đề:** Tính trung bình cộng. Tìm trung bình cộng của 2 số: 82, 88.
 
 a) Đề này thuộc dạng bài nào?
 b) Dấu hiệu nào giúp em nhận ra?
@@ -319,7 +316,7 @@ f) Lỗi nào dễ mắc ở đề này?
 
 ### Bài 3. (4 điểm) Đọc vị đề số 3
 
-**Đề:** Vẽ sơ đồ đoạn thẳng rồi giải. Trang trại chứa nhiều hơn thư viện 176 kg muối. Số muối ở thư viện bằng 1 phần 3 số muối ở trang trại. Mỗi nơi chứa bao nhiêu kg?
+**Đề:** Chú ý điều gì thay đổi và điều gì không đổi theo thời gian. Tuổi bố gấp 4 lần tuổi con. Tổng số tuổi của hai bố con là 65 tuổi. Tính tuổi mỗi người.
 
 a) Đề này thuộc dạng bài nào?
 b) Dấu hiệu nào giúp em nhận ra?
@@ -330,7 +327,7 @@ f) Lỗi nào dễ mắc ở đề này?
 
 ### Bài 4. (4 điểm) Đọc vị đề số 4
 
-**Đề:** Coi cả công việc là 1 đơn vị. Vòi thứ nhất chảy một mình đầy bể trong 2 giờ, vòi thứ hai chảy một mình đầy bể trong 8 giờ. Mở cả hai vòi thì sau bao lâu đầy bể?
+**Đề:** Việc đầu tiên là gọi tên dữ kiện bị giấu. Kho A chứa 16 kg muối. Nếu kho A nhận thêm 32 kg thì bằng số muối ở cửa hàng. Hỏi cả hai nơi chứa bao nhiêu kg?
 
 a) Đề này thuộc dạng bài nào?
 b) Dấu hiệu nào giúp em nhận ra?
@@ -341,7 +338,7 @@ f) Lỗi nào dễ mắc ở đề này?
 
 ### Bài 5. (4 điểm) Đọc vị đề số 5
 
-**Đề:** Tìm hai số trong mỗi trường hợp. Tổng hai số là 1 704, hiệu hai số là 548. Tìm hai số đó.
+**Đề:** Vẽ sơ đồ đoạn thẳng rồi giải. Đội Một và tổ Một trồng được tất cả 243 cây. Số cây của đội Một bằng 2 phần 7 số cây của tổ Một. Mỗi tổ trồng được bao nhiêu cây?
 
 a) Đề này thuộc dạng bài nào?
 b) Dấu hiệu nào giúp em nhận ra?
@@ -363,157 +360,157 @@ f) Lỗi nào dễ mắc ở đề này?
 **Lỗi thường gặp:** Kể thiếu dạng bài. Phòng: Đếm số dạng rồi mới kể; kể xong đếm lại.
 
 ### Bài A.2
-**Đáp số:** a) Cụm “trung bình mỗi …” · b) Số người tăng thì thời gian giảm · c) Từ khoá “trung bình cộng”, “trung bình mỗi …” · d) Đề mô tả vòng thay vì cho số: “nếu … thì …”, “chia thành … phần” · e) “Chuyển … từ bên này sang bên kia”
+**Đáp số:** a) Đề cho **hiệu** và **tỉ số** · b) Cụm “trung bình mỗi …” · c) “Làm một mình trong … giờ” đi cùng “cùng làm” · d) Từ khoá “trung bình cộng”, “trung bình mỗi …” · e) Cho giá trị của một nhóm, hỏi giá trị của nhóm khác cùng loại
 **Hướng giải:** Cột “Dấu hiệu nhận biết” lấy từ bảng phân tích chuyên sâu của các phiếu đã học. Điền xong, đọc ngang từng hàng để thấy mạch từ đề bài tới lời giải.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Bảng chỉ có giá trị khi **đọc ngang được từng hàng**.
 **Lỗi thường gặp:** Điền từng cột rời rạc, không đối chiếu ngang. Phòng: Điền xong thì đọc lại theo hàng, mỗi hàng phải thành một câu có nghĩa.
 
 ### Bài A.3
-**Đáp số:** a) Tổng chia số lượng · b) Dịch dữ kiện ẩn thành số rồi áp dạng chuẩn · c) Xét đại lượng không đổi (tổng) và đại lượng đổi gấp đôi (hiệu) · d) Sơ đồ → hiệu số phần → giá trị một phần · e) Sơ đồ phần bằng nhau → giá trị một phần → nhân
+**Đáp số:** a) Quy công việc về 1, cộng năng suất, lấy nghịch đảo · b) Tổng chia số lượng · c) Chia để rút về một đơn vị rồi nhân · d) Kẻ bảng thời gian, bám vào hiệu tuổi không đổi · e) Nhân hoặc chia theo tỉ lệ rồi đổi đơn vị
 **Hướng giải:** Cột “Phương pháp áp dụng” lấy từ bảng phân tích chuyên sâu của các phiếu đã học. Điền xong, đọc ngang từng hàng để thấy mạch từ đề bài tới lời giải.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Bảng chỉ có giá trị khi **đọc ngang được từng hàng**.
 **Lỗi thường gặp:** Điền từng cột rời rạc, không đối chiếu ngang. Phòng: Điền xong thì đọc lại theo hàng, mỗi hàng phải thành một câu có nghĩa.
 
 ### Bài A.4
-**Đáp số:** a) Bất biến tổng, biến thiên hiệu · b) Tỉ số, sơ đồ đoạn thẳng · c) Tỉ số, sơ đồ đoạn thẳng, chia theo tỉ lệ · d) Năng suất, cộng và chia phân số · e) s = v × t
+**Đáp số:** a) Đại lượng tỉ lệ thuận, phép chia và phép nhân · b) Bất biến hiệu số tuổi, tổng – hiệu, tổng – tỉ · c) Tỉ lệ, đổi đơn vị đo độ dài · d) Tỉ số, sơ đồ đoạn thẳng, dịch lời văn thành số · e) Bất biến tổng, biến thiên hiệu
 **Hướng giải:** Cột “Kiến thức phải thuộc” lấy từ bảng phân tích chuyên sâu của các phiếu đã học. Điền xong, đọc ngang từng hàng để thấy mạch từ đề bài tới lời giải.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Bảng chỉ có giá trị khi **đọc ngang được từng hàng**.
 **Lỗi thường gặp:** Điền từng cột rời rạc, không đối chiếu ngang. Phòng: Điền xong thì đọc lại theo hàng, mỗi hàng phải thành một câu có nghĩa.
 
 ### Bài A.5
-**Đáp số:** a) Tổng luôn chia hết cho tổng số phần — nếu không chia hết là đọc sai tỉ số. · b) Thời gian làm chung luôn **bé hơn** thời gian của người nhanh nhất — dùng để loại đáp số sai ngay lập tức. · c) Vẽ tam giác: s ở trên, v và t ở dưới; che đại lượng cần tìm là ra công thức. · d) Số lớn và số bé luôn có trung bình cộng bằng nửa tổng. · e) Tổng ba số cách đều luôn chia hết cho 3.
+**Đáp số:** a) Tỉ lệ 1 : 1 000 thì 1 cm bản đồ đúng bằng 10 m thật. · b) Kẻ sẵn ba dòng Tổng – Hiệu – Tỉ số, điền được hai dòng là giải được. · c) Sau khi chuyển, mỗi bên bằng nửa tổng — tính nửa tổng rồi trừ là ra ngay. · d) Tổng luôn chia hết cho tổng số phần — nếu không chia hết là đọc sai tỉ số. · e) Số người gấp đôi thì số ngày giảm một nửa — nhẩm được ngay khi tỉ số đẹp.
 **Hướng giải:** Cột “Cách xử lý nhanh nhất” lấy từ bảng phân tích chuyên sâu của các phiếu đã học. Điền xong, đọc ngang từng hàng để thấy mạch từ đề bài tới lời giải.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Bảng chỉ có giá trị khi **đọc ngang được từng hàng**.
 **Lỗi thường gặp:** Điền từng cột rời rạc, không đối chiếu ngang. Phòng: Điền xong thì đọc lại theo hàng, mỗi hàng phải thành một câu có nghĩa.
 
 ### Bài B.1
-**Đáp số:** a) 71 kg · b) 328 kg · c) 123 kg · d) 299 kg · e) 208 kg
-**Hướng giải:** Ba dạng ngược nhau: biết các số tìm trung bình cộng (cộng rồi chia); biết trung bình cộng tìm tổng (nhân); biết trung bình cộng và một số số hạng, tìm số hạng còn thiếu (lấy tổng trừ đi các số đã biết).
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Từ trung bình cộng luôn tìm được **tổng** trước, rồi mới tính tiếp.
-**Lỗi thường gặp:** Đi tìm ngay số còn thiếu mà chưa tính tổng. Phòng: Bước đầu tiên luôn viết: “Tổng = trung bình cộng × số ngày”.
-
-### Bài B.2
-**Đáp số:** a) 12 ngày · b) 20 ngày · c) 8 ngày · d) 30 ngày
-**Hướng giải:** Tổng số ngày công là không đổi: số người × số ngày = hằng số. Tính tổng số ngày công trước, rồi chia cho số người mới để ra số ngày mới.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Càng nhiều người thì càng **ít** ngày — đại lượng biến đổi **ngược chiều**.
-**Lỗi thường gặp:** Nhân chia như tỉ lệ thuận nên càng nhiều người lại càng lâu. Phòng: Ước lượng trước: kết quả phải lớn hơn hay bé hơn số ngày ban đầu?
-
-### Bài B.3
-**Đáp số:** a) 4B: 318 quyển, 3A: 282 quyển · b) tổ Một: 243 cây, đội Hai: 157 cây · c) trang trại: 229 kg, xưởng: 181 kg · d) đội Hai: 102 cây, tổ Một: 64 cây
+**Đáp số:** a) 5B: 186 quyển, 5A: 100 quyển · b) hợp tác xã: 152 kg, trang trại: 136 kg · c) đội Một: 435 cây, đội Hai: 401 cây · d) tổ Ba: 162 cây, tổ Một: 148 cây · e) hợp tác xã: 230 kg, kho B: 168 kg · f) 3B: 203 quyển, 4B: 115 quyển
 **Hướng giải:** Đọc đề, xác định đâu là **tổng**, đâu là **hiệu**. Vẽ sơ đồ hai đoạn thẳng. Số lớn = (tổng + hiệu) : 2; số bé = tổng − số lớn.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Cụm “có tất cả” cho **tổng**; cụm “nhiều hơn” cho **hiệu**.
 **Lỗi thường gặp:** Nhầm hiệu thành tổng khi đề diễn đạt vòng vo. Phòng: Ghi riêng ra hai dòng: Tổng = … ; Hiệu = … trước khi tính.
 
-### Bài B.4
-**Đáp số:** a) 19 quyển · b) 693 nghìn đồng · c) 2 112 nghìn đồng · d) 20 quyển
-**Hướng giải:** Số vở tăng bao nhiêu lần thì số tiền tăng bấy nhiêu lần. Có hai cách: rút về đơn vị (tìm giá một quyển rồi nhân) hoặc dùng tỉ số (số vở mới gấp mấy lần số vở cũ thì tiền cũng gấp bấy nhiêu lần).
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Hai đại lượng **cùng tăng, cùng giảm** thì tỉ lệ thuận.
-**Lỗi thường gặp:** Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch. Phòng: Tự hỏi: mua nhiều hơn thì trả nhiều hơn hay ít hơn?
-
-### Bài B.5
-**Đáp số:** a) 110 m · b) 17 cm · c) 18 cm · d) 560 m
+### Bài B.2
+**Đáp số:** a) 5 cm · b) 25 m · c) 800 m · d) 24 cm
 **Hướng giải:** Tỉ lệ 1 : n nghĩa là 1 đơn vị trên bản đồ ứng với n đơn vị thật, **cùng một loại đơn vị**. Từ bản đồ ra thật thì nhân với n; từ thật về bản đồ thì chia cho n. Đổi đơn vị chỉ làm ở bước cuối.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Nhân hay chia với n trước, **đổi đơn vị sau** — làm ngược là rối.
 **Lỗi thường gặp:** Đổi mét sang xăng-ti-mét ngay từ đầu rồi lại nhân tỉ lệ một lần nữa. Phòng: Viết rõ một dòng: “1 cm bản đồ = … cm thật” trước khi tính.
 
+### Bài B.3
+**Đáp số:** a) 256 nghìn đồng · b) 28 quyển · c) 18 quyển · d) 880 nghìn đồng
+**Hướng giải:** Số vở tăng bao nhiêu lần thì số tiền tăng bấy nhiêu lần. Có hai cách: rút về đơn vị (tìm giá một quyển rồi nhân) hoặc dùng tỉ số (số vở mới gấp mấy lần số vở cũ thì tiền cũng gấp bấy nhiêu lần).
+**Nhãn tư duy:** TD2, TD3. Điểm chốt: Hai đại lượng **cùng tăng, cùng giảm** thì tỉ lệ thuận.
+**Lỗi thường gặp:** Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch. Phòng: Tự hỏi: mua nhiều hơn thì trả nhiều hơn hay ít hơn?
+
+### Bài B.4
+**Đáp số:** a) 41 kg · b) 573 kg · c) 393 kg · d) 540 kg · e) 200 kg
+**Hướng giải:** Ba dạng ngược nhau: biết các số tìm trung bình cộng (cộng rồi chia); biết trung bình cộng tìm tổng (nhân); biết trung bình cộng và một số số hạng, tìm số hạng còn thiếu (lấy tổng trừ đi các số đã biết).
+**Nhãn tư duy:** TD2, TD3. Điểm chốt: Từ trung bình cộng luôn tìm được **tổng** trước, rồi mới tính tiếp.
+**Lỗi thường gặp:** Đi tìm ngay số còn thiếu mà chưa tính tổng. Phòng: Bước đầu tiên luôn viết: “Tổng = trung bình cộng × số ngày”.
+
+### Bài B.5
+**Đáp số:** a) 2 ngày · b) 60 ngày · c) 18 ngày · d) 12 ngày · e) 6 ngày
+**Hướng giải:** Tổng số ngày công là không đổi: số người × số ngày = hằng số. Tính tổng số ngày công trước, rồi chia cho số người mới để ra số ngày mới.
+**Nhãn tư duy:** TD2, TD3. Điểm chốt: Càng nhiều người thì càng **ít** ngày — đại lượng biến đổi **ngược chiều**.
+**Lỗi thường gặp:** Nhân chia như tỉ lệ thuận nên càng nhiều người lại càng lâu. Phòng: Ước lượng trước: kết quả phải lớn hơn hay bé hơn số ngày ban đầu?
+
 ### Bài C.1
-**Đáp số:** a) 319 · b) 416 · c) 200 · d) 449
-**Hướng giải:** Dùng tính chất giao hoán và kết hợp của phép cộng để đổi chỗ, nhóm những số cộng lại thành số tròn chục, tròn trăm rồi mới cộng phần còn lại.
-**Nhãn tư duy:** TD5, TD3. Điểm chốt: Tìm **cặp cộng tròn 100** trước khi cộng theo thứ tự.
-**Lỗi thường gặp:** Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. Phòng: Đọc lướt cả dãy, khoanh tròn cặp số cộng lại tròn chục, tròn trăm.
+**Đáp số:** a) 4 590 · b) 650 · c) 6 575 · d) 1 975 · e) 12 400
+**Hướng giải:** Đếm số số hạng trước. Sau đó ghép số đầu với số cuối, số thứ hai với số áp chót…, mỗi cặp có tổng bằng nhau. Tổng = (đầu + cuối) × số số hạng : 2.
+**Nhãn tư duy:** TD4, TD5. Điểm chốt: Chia cho 2 ở cuối vì mỗi số hạng đã được **đếm hai lần** khi ghép cặp.
+**Lỗi thường gặp:** Quên chia 2, kết quả gấp đôi đáp số đúng. Phòng: Kiểm tra bằng dãy ngắn: 1 + 2 + 3 = 6, công thức phải cho đúng 6.
 
 ### Bài C.2
-**Đáp số:** a) không, vì hai câu phủ định nhau · b) không, vì chúng phủ định nhau · c) đúng một bạn · d) nói dối · e) Đức chính là người làm vỡ lọ hoa · f) Đức
-**Hướng giải:** Tìm hai câu nói **phủ định nhau**: trong hai câu đó chắc chắn có đúng một câu đúng. Vì cả ba chỉ có một câu đúng, câu đúng ấy nằm trong cặp phủ định, nên câu còn lại (của người thứ ba) là sai. Đọc nội dung câu sai đó để kết luận.
-**Nhãn tư duy:** TD2, TD6. Điểm chốt: Cặp câu **phủ định nhau** luôn có đúng một câu đúng — đó là điểm tựa.
-**Lỗi thường gặp:** Thử từng người một cách rời rạc mà không dùng ràng buộc tổng số câu nói thật. Phòng: Đánh số các câu nói, ghi rõ câu nào phủ định câu nào.
+**Đáp số:** a) > · b) < · c) < · d) < · e) >
+**Hướng giải:** Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
+**Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
+**Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.
 
 ### Bài C.3
-**Đáp số:** a) 19 cm · b) B · c) 38 cm · d) 36 cm
-**Hướng giải:** Mọi bán kính của một hình tròn đều bằng nhau. Đường kính đi qua tâm và bằng **hai lần** bán kính. Muốn so sánh hai hình tròn thì đưa về cùng một đại lượng: cùng bán kính hoặc cùng đường kính.
-**Nhãn tư duy:** TD1, TD2. Điểm chốt: So sánh phải **cùng loại đại lượng** — bán kính với bán kính.
-**Lỗi thường gặp:** So bán kính của hình này với đường kính của hình kia. Phòng: Đổi hết về bán kính trước khi so sánh.
+**Đáp số:** a) 56 · b) 8 400 · c) 6 700 · d) 8 600 · e) 900 000
+**Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần**, vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
+**Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc, không phải 10 lần.
+**Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết riêng bảng đơn vị diện tích, ghi rõ “× 100” giữa hai bậc liền nhau.
 
 ### Bài C.4
-**Đáp số:** a) 31 · b) XXI · c) có · d) 5 tuần 2 ngày · e) 7 tuần 2 ngày
-**Hướng giải:** Các tháng 1, 3, 5, 7, 8, 10, 12 có 31 ngày; các tháng 4, 6, 9, 11 có 30 ngày; tháng 2 có 28 ngày, năm nhuận có 29 ngày. Năm nhuận là năm chia hết cho 4, riêng năm tròn trăm thì phải chia hết cho 400. Thế kỉ thứ n gồm các năm từ (n − 1) × 100 + 1 đến n × 100.
-**Nhãn tư duy:** TD1, TD2. Điểm chốt: Năm tròn trăm chỉ nhuận khi chia hết cho **400** (1900 không nhuận, 2000 có nhuận).
-**Lỗi thường gặp:** Coi mọi năm chia hết cho 4 đều là năm nhuận. Phòng: Gặp năm tròn trăm thì kiểm tra thêm điều kiện chia hết cho 400.
+**Đáp số:** a) 19 341 · b) 439 · c) 20 447 · d) 8 262 · e) 9 284 · f) 3 846
+**Hướng giải:** Chỉ cộng, trừ được các số đo **cùng đơn vị**. Bước đầu tiên luôn là đổi tất cả về đơn vị mà đề yêu cầu ở kết quả, sau đó tính như với số tự nhiên rồi ghi kèm đơn vị.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của **kết quả** quyết định ta đổi về đơn vị nào.
+**Lỗi thường gặp:** Cộng số mét với số xăng-ti-mét mà chưa đổi. Phòng: Gạch chân đơn vị ở chỗ chấm rồi đổi mọi số hạng về đơn vị đó.
 
 ### Bài C.5
-**Đáp số:** a) 125 · b) 126 · c) 24 · d) 124 · e) 10
-**Hướng giải:** Số số hạng = (số hạng cuối − số hạng đầu) : khoảng cách + 1. Phần chia cho biết số khoảng, cộng 1 để đổi từ số khoảng sang số số hạng.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Số khoảng luôn **ít hơn số số hạng đúng 1**.
-**Lỗi thường gặp:** Quên cộng 1 nên thiếu một số hạng. Phòng: Thử với dãy ngắn (3 số hạng) để kiểm chứng công thức.
+**Đáp số:** a) x = 22 · b) x = 199 · c) x = 72 · d) x = 93 · e) x = 118 · f) x = 20
+**Hướng giải:** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, sau đó mới tìm x bên trong cụm. Làm ngược lại thứ tự thực hiện phép tính.
+**Nhãn tư duy:** TD3. Điểm chốt: Đi **ngược** thứ tự thực hiện: phép ngoài cùng gỡ trước.
+**Lỗi thường gặp:** Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. Phòng: Khoanh tròn cụm chứa x rồi coi cả cụm là một số.
 
 ### Bài D.1
-**Đáp số:** a) 286 · b) 337 · c) 355 · d) 67 · e) 231 · f) 64
-**Hướng giải:** Với một số **lẻ** các số tự nhiên liên tiếp, số ở giữa chính là trung bình cộng: số giữa = tổng : số lượng. Số bé nhất bằng số giữa trừ đi một nửa số lượng còn lại.
-**Nhãn tư duy:** TD3, TD4. Điểm chốt: Với số lượng lẻ thì **số giữa = tổng : số lượng** — đó là chìa khoá.
-**Lỗi thường gặp:** Lấy tổng chia cho số lượng rồi nhận luôn kết quả là số bé nhất. Phòng: Vẽ dãy số ra, đánh dấu vị trí số giữa trước khi lùi về số đầu.
-**Gợi ý 3 tầng:** (1) Số lượng số hạng là số chẵn hay lẻ? — (2) Với số lượng lẻ, số ở giữa bằng tổng chia số lượng. — (3) Từ số giữa lùi về đầu dãy mấy đơn vị?
-
-### Bài D.2
-**Đáp số:** a) kho A: 158 kg, xưởng: 395 kg · b) trang trại: 236 kg, cửa hàng: 295 kg · c) cửa hàng: 45 kg, kho B: 135 kg · d) thư viện: 560 kg, trang trại: 672 kg · e) trang trại: 28 kg, kho A: 196 kg · f) hợp tác xã: 63 kg, trang trại: 378 kg
-**Hướng giải:** BẪY — Hiệu số phần chứ không phải tổng số phần. Hiệu số phần = số phần lớn − số phần bé. Giá trị một phần = hiệu : hiệu số phần. Sau đó nhân với số phần của từng đại lượng.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Chia cho **hiệu số phần**, không phải tổng số phần.
-**Lỗi thường gặp:** Dùng nhầm công thức của tổng – tỉ cho bài hiệu – tỉ. Phòng: Đọc kĩ: đề cho “tổng” hay cho “nhiều hơn”? Ghi rõ ra trước khi vẽ.
-**Gợi ý 3 tầng:** (1) Đề cho tổng hay cho hiệu? — (2) Vẽ sơ đồ, phần dôi ra ứng với hiệu. — (3) Hiệu chia cho hiệu số phần ra giá trị một phần.
-
-### Bài D.3
-**Đáp số:** a) nhóm Hoa Phượng: 35 cây, tổ Ba: 210 cây · b) nhóm Hoa Phượng: 470 cây, tổ Một: 564 cây · c) tổ Một: 63 cây, nhóm Hoa Phượng: 126 cây · d) tổ Hai: 360 cây, đội Một: 480 cây · e) nhóm Sao Mai: 27 cây, đội Một: 45 cây
+**Đáp số:** a) đội Một: 320 cây, đội Hai: 480 cây · b) tổ Ba: 19 cây, nhóm Hoa Phượng: 57 cây · c) nhóm Hoa Phượng: 66 cây, tổ Hai: 154 cây · d) đội Một: 560 cây, đội Hai: 672 cây
 **Hướng giải:** Tỉ số cho biết số phần bằng nhau của mỗi đại lượng. Tổng số phần = số phần thứ nhất + số phần thứ hai. Giá trị một phần = tổng : tổng số phần. Nhân giá trị một phần với số phần của từng đại lượng.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Phải tính **tổng số phần** trước khi chia.
 **Lỗi thường gặp:** Chia tổng cho một trong hai số của tỉ số thay vì cho tổng số phần. Phòng: Vẽ sơ đồ, đếm tổng số đoạn nhỏ trên cả hai đoạn thẳng.
 **Gợi ý 3 tầng:** (1) Vẽ đại lượng thứ nhất mấy phần, thứ hai mấy phần? — (2) Tổng cộng có bao nhiêu phần bằng nhau? — (3) Một phần bằng bao nhiêu?
 
-### Bài D.4
-**Đáp số:** a) 112 kg · b) xưởng: 14 kg, hợp tác xã: 35 kg · c) cửa hàng: 99 kg, hợp tác xã: 198 kg · d) kho A: 36 kg, trang trại: 60 kg
+### Bài D.2
+**Đáp số:** a) 25, 70 · b) 28, 64 · c) 45, 90 · d) 78, 96
+**Hướng giải:** BẪY — Dừng ở đáp số đầu tiên. Chọn điều kiện cho ít khả năng nhất để liệt kê trước, rồi mới đem điều kiện còn lại ra thử. Làm ngược thứ tự ấy thì phải thử gấp nhiều lần.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Phải xét **hết** danh sách. Bài thử chọn thường có hơn một đáp số.
+**Lỗi thường gặp:** Tìm được một số thoả rồi dừng, bỏ sót các đáp số còn lại. Phòng: Viết danh sách ra giấy và gạch bỏ từng số, đừng thử nhẩm trong đầu.
+**Gợi ý 3 tầng:** (1) Trong hai điều kiện, điều kiện nào cho ít số hơn? — (2) Liệt kê hết các số thoả điều kiện ấy. — (3) Thử từng số với điều kiện còn lại, đừng dừng sớm.
+
+### Bài D.3
+**Đáp số:** a) xưởng: 17 kg, trang trại: 102 kg · b) xưởng: 40 kg, trang trại: 60 kg · c) 49 kg · d) cửa hàng: 99 kg, hợp tác xã: 198 kg · e) 96 kg
 **Hướng giải:** BẪY — Dữ kiện bị giấu sau một câu mô tả. Đề không cho thẳng tổng, hiệu hay tỉ số mà mô tả vòng. Bước bắt buộc đầu tiên: **dịch câu mô tả thành một con số** rồi mới vẽ sơ đồ và giải như bài chuẩn.
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Dịch xong dữ kiện ẩn thì bài trở lại **đúng dạng chuẩn**.
 **Lỗi thường gặp:** Lao vào tính khi chưa xác định được tổng, hiệu hay tỉ số. Phòng: Viết ba dòng trước khi tính: Tổng = … ; Hiệu = … ; Tỉ số = … ; dòng nào chưa biết thì để trống và đi tìm.
 **Gợi ý 3 tầng:** (1) Đề đã cho tổng chưa? Cho hiệu chưa? Cho tỉ số chưa? — (2) Câu nào trong đề đang mô tả cái còn thiếu? — (3) Dịch câu đó thành một con số rồi giải như bài chuẩn.
 
-### Bài D.5
+### Bài D.4
 **Đáp số:** a) 36 tuổi · b) bố 30 tuổi, con 10 tuổi · c) 16 tuổi · d) 18 tuổi · e) bố 40 tuổi, con 10 tuổi · f) bố 30 tuổi, con 6 tuổi
 **Hướng giải:** BẪY — Hiệu số tuổi không đổi. **Hiệu số tuổi của hai người không bao giờ thay đổi.** Còn tổng số tuổi thì mỗi năm tăng thêm đúng bằng số người. Tỉ số tuổi thì thay đổi theo từng năm.
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Hiệu tuổi là đại lượng **bất biến** — chìa khoá của mọi bài toán tuổi.
 **Lỗi thường gặp:** Cộng thêm số năm vào cả hiệu số tuổi. Phòng: Kẻ bảng ba dòng: trước kia – hiện nay – sau này, ghi rõ tuổi từng người.
 **Gợi ý 3 tầng:** (1) Sau mỗi năm, mỗi người tăng thêm mấy tuổi? — (2) Hiệu số tuổi có thay đổi không? — (3) Tổng số tuổi hai người tăng thêm bao nhiêu sau mỗi năm?
 
+### Bài D.5
+**Đáp số:** a) hợp tác xã: 17 kg, trang trại: 68 kg · b) thư viện: 37 kg, trang trại: 74 kg · c) kho A: 144 kg, trang trại: 216 kg · d) cửa hàng: 67 kg, thư viện: 134 kg
+**Hướng giải:** BẪY — Hiệu số phần chứ không phải tổng số phần. Hiệu số phần = số phần lớn − số phần bé. Giá trị một phần = hiệu : hiệu số phần. Sau đó nhân với số phần của từng đại lượng.
+**Nhãn tư duy:** TD3, TD2. Điểm chốt: Chia cho **hiệu số phần**, không phải tổng số phần.
+**Lỗi thường gặp:** Dùng nhầm công thức của tổng – tỉ cho bài hiệu – tỉ. Phòng: Đọc kĩ: đề cho “tổng” hay cho “nhiều hơn”? Ghi rõ ra trước khi vẽ.
+**Gợi ý 3 tầng:** (1) Đề cho tổng hay cho hiệu? — (2) Vẽ sơ đồ, phần dôi ra ứng với hiệu. — (3) Hiệu chia cho hiệu số phần ra giá trị một phần.
+
 ### Bài E.1
-**Đáp số:** a) Tỉ lệ nghịch · b) Số người tăng thì thời gian giảm · c) Đại lượng tỉ lệ nghịch, tổng số ngày công · d) Quy về tổng số ngày công rồi chia · e) Số người gấp đôi thì số ngày giảm một nửa — nhẩm được ngay khi tỉ số đẹp. · f) Nhân chia như tỉ lệ thuận nên càng nhiều người lại càng lâu.
+**Đáp số:** a) Ba dạng bài trung bình cộng · b) Cụm “trung bình mỗi …” · c) Quan hệ tổng – số lượng – trung bình cộng · d) Đi qua tổng làm trung gian · e) Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng. · f) Đi tìm ngay số còn thiếu mà chưa tính tổng.
 **Hướng giải:** Đọc vị là trả lời năm câu hỏi theo thứ tự: dạng gì → dấu hiệu nào → kiến thức nào → phương pháp nào → có lối tắt không. Chỉ khi trả lời xong năm câu ấy mới bắt đầu tính.
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**.
-**Lỗi thường gặp:** Nhân chia như tỉ lệ thuận nên càng nhiều người lại càng lâu. Phòng: Ước lượng trước: kết quả phải lớn hơn hay bé hơn số ngày ban đầu?
+**Lỗi thường gặp:** Đi tìm ngay số còn thiếu mà chưa tính tổng. Phòng: Bước đầu tiên luôn viết: “Tổng = trung bình cộng × số ngày”.
 **Gợi ý 3 tầng:** (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
 
 ### Bài E.2
+**Đáp số:** a) Tìm trung bình cộng · b) Từ khoá “trung bình cộng”, “trung bình mỗi …” · c) Định nghĩa trung bình cộng · d) Tổng chia số lượng · e) Ước lượng: trung bình cộng luôn nằm giữa số bé nhất và số lớn nhất. · f) Đếm sai số lượng số hạng nên chia nhầm.
+**Hướng giải:** Đọc vị là trả lời năm câu hỏi theo thứ tự: dạng gì → dấu hiệu nào → kiến thức nào → phương pháp nào → có lối tắt không. Chỉ khi trả lời xong năm câu ấy mới bắt đầu tính.
+**Nhãn tư duy:** TD2, TD6. Điểm chốt: Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**.
+**Lỗi thường gặp:** Đếm sai số lượng số hạng nên chia nhầm. Phòng: Đánh số thứ tự từng số trước khi cộng.
+**Gợi ý 3 tầng:** (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
+
+### Bài E.3
+**Đáp số:** a) Bài toán tuổi · b) Xuất hiện mốc thời gian: hiện nay, sau … năm, cách đây … năm · c) Bất biến hiệu số tuổi, tổng – hiệu, tổng – tỉ · d) Kẻ bảng thời gian, bám vào hiệu tuổi không đổi · e) Tổng tuổi của n người sau k năm tăng thêm đúng n × k. · f) Cộng thêm số năm vào cả hiệu số tuổi.
+**Hướng giải:** Đọc vị là trả lời năm câu hỏi theo thứ tự: dạng gì → dấu hiệu nào → kiến thức nào → phương pháp nào → có lối tắt không. Chỉ khi trả lời xong năm câu ấy mới bắt đầu tính.
+**Nhãn tư duy:** TD2, TD6. Điểm chốt: Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**.
+**Lỗi thường gặp:** Cộng thêm số năm vào cả hiệu số tuổi. Phòng: Kẻ bảng ba dòng: trước kia – hiện nay – sau này, ghi rõ tuổi từng người.
+**Gợi ý 3 tầng:** (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
+
+### Bài E.4
 **Đáp số:** a) Tổng – tỉ, hiệu – tỉ dạng ẩn · b) Đề mô tả vòng thay vì cho số: “nếu … thì …”, “chia thành … phần” · c) Tỉ số, sơ đồ đoạn thẳng, dịch lời văn thành số · d) Dịch dữ kiện ẩn thành số rồi áp dạng chuẩn · e) Kẻ sẵn ba dòng Tổng – Hiệu – Tỉ số, điền được hai dòng là giải được. · f) Lao vào tính khi chưa xác định được tổng, hiệu hay tỉ số.
 **Hướng giải:** Đọc vị là trả lời năm câu hỏi theo thứ tự: dạng gì → dấu hiệu nào → kiến thức nào → phương pháp nào → có lối tắt không. Chỉ khi trả lời xong năm câu ấy mới bắt đầu tính.
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**.
 **Lỗi thường gặp:** Lao vào tính khi chưa xác định được tổng, hiệu hay tỉ số. Phòng: Viết ba dòng trước khi tính: Tổng = … ; Hiệu = … ; Tỉ số = … ; dòng nào chưa biết thì để trống và đi tìm.
 **Gợi ý 3 tầng:** (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
 
-### Bài E.3
-**Đáp số:** a) Bài toán hiệu – tỉ · b) Đề cho **hiệu** và **tỉ số** · c) Tỉ số, sơ đồ đoạn thẳng · d) Sơ đồ → hiệu số phần → giá trị một phần · e) Hiệu luôn chia hết cho hiệu số phần — dùng để kiểm tra đã đọc đúng tỉ số chưa. · f) Dùng nhầm công thức của tổng – tỉ cho bài hiệu – tỉ.
-**Hướng giải:** Đọc vị là trả lời năm câu hỏi theo thứ tự: dạng gì → dấu hiệu nào → kiến thức nào → phương pháp nào → có lối tắt không. Chỉ khi trả lời xong năm câu ấy mới bắt đầu tính.
-**Nhãn tư duy:** TD2, TD6. Điểm chốt: Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**.
-**Lỗi thường gặp:** Dùng nhầm công thức của tổng – tỉ cho bài hiệu – tỉ. Phòng: Đọc kĩ: đề cho “tổng” hay cho “nhiều hơn”? Ghi rõ ra trước khi vẽ.
-**Gợi ý 3 tầng:** (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
-
-### Bài E.4
-**Đáp số:** a) Công việc chung · b) “Làm một mình trong … giờ” đi cùng “cùng làm” · c) Năng suất, cộng và chia phân số · d) Quy công việc về 1, cộng năng suất, lấy nghịch đảo · e) Thời gian làm chung luôn **bé hơn** thời gian của người nhanh nhất — dùng để loại đáp số sai ngay lập tức. · f) Cộng hai khoảng thời gian rồi chia đôi.
-**Hướng giải:** Đọc vị là trả lời năm câu hỏi theo thứ tự: dạng gì → dấu hiệu nào → kiến thức nào → phương pháp nào → có lối tắt không. Chỉ khi trả lời xong năm câu ấy mới bắt đầu tính.
-**Nhãn tư duy:** TD2, TD6. Điểm chốt: Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**.
-**Lỗi thường gặp:** Cộng hai khoảng thời gian rồi chia đôi. Phòng: Luôn viết dòng “Mỗi giờ vòi thứ nhất chảy được … bể” trước.
-**Gợi ý 3 tầng:** (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
-
 ### Bài E.5
-**Đáp số:** a) Bài toán tổng – hiệu · b) Đề cho **tổng** và **hiệu** của hai số · c) Công thức tổng – hiệu, sơ đồ đoạn thẳng · d) Vẽ sơ đồ, đưa về hai phần bằng nhau · e) Số lớn và số bé luôn có trung bình cộng bằng nửa tổng. · f) Lấy (tổng + hiệu) : 2 rồi gọi đó là số bé.
+**Đáp số:** a) Bài toán tổng – tỉ · b) Đề cho **tổng** và **tỉ số** (phân số hoặc “gấp … lần”) · c) Tỉ số, sơ đồ đoạn thẳng, chia theo tỉ lệ · d) Sơ đồ phần bằng nhau → giá trị một phần → nhân · e) Tổng luôn chia hết cho tổng số phần — nếu không chia hết là đọc sai tỉ số. · f) Chia tổng cho một trong hai số của tỉ số thay vì cho tổng số phần.
 **Hướng giải:** Đọc vị là trả lời năm câu hỏi theo thứ tự: dạng gì → dấu hiệu nào → kiến thức nào → phương pháp nào → có lối tắt không. Chỉ khi trả lời xong năm câu ấy mới bắt đầu tính.
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**.
-**Lỗi thường gặp:** Lấy (tổng + hiệu) : 2 rồi gọi đó là số bé. Phòng: Vẽ sơ đồ đoạn thẳng trước, đoạn dài hơn luôn là số lớn.
+**Lỗi thường gặp:** Chia tổng cho một trong hai số của tỉ số thay vì cho tổng số phần. Phòng: Vẽ sơ đồ, đếm tổng số đoạn nhỏ trên cả hai đoạn thẳng.
 **Gợi ý 3 tầng:** (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
 
 ---

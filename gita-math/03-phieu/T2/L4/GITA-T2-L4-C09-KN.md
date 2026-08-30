@@ -42,67 +42,66 @@ Phiếu lời giải và phân tích chuyên sâu đi kèm: `GITA-T2-L4-C09-KN-G
 Họ và tên: ......................................... Lớp: ......... Điểm: ......../100
 
 > **KIẾN THỨC NỀN CỦA CHƯƠNG**
-> 1. s = v × t
-> 2. Phương pháp giả thiết tạm
-> 3. Công thức tổng – hiệu, sơ đồ đoạn thẳng
-> 4. Bất biến tổng, biến thiên hiệu
+> 1. Bất biến hiệu số tuổi, tổng – hiệu, tổng – tỉ
+> 2. Tỉ lệ, đổi đơn vị đo độ dài
+> 3. Trung bình cộng của dãy cách đều; tổng – tỉ
+> 4. Đại lượng tỉ lệ thuận
 
 ---
 
 ## PHẦN A — CỦNG CỐ NỀN — 30 CÂU TỐC ĐỘ · Mức M1 — Nhận biết · 20 phút · 25 điểm
 
-### Bài 1. (5 điểm) Bài toán rút về đơn vị
-
-Giải bằng phương pháp rút về đơn vị.
-
-a) 9 bao gạo nặng 297 kg. Hỏi 19 bao như thế nặng bao nhiêu kg?
-b) 6 bao phân bón nặng 174 kg. Hỏi 20 bao như thế nặng bao nhiêu kg?
-c) 4 bao đường nặng 96 kg. Hỏi 15 bao như thế nặng bao nhiêu kg?
-d) 5 bao gạo nặng 20 kg. Hỏi 18 bao như thế nặng bao nhiêu kg?
-e) 7 bao đường nặng 406 kg. Hỏi 9 bao như thế nặng bao nhiêu kg?
-
-### Bài 2. (5 điểm) Tìm trung bình cộng của nhiều số
-
-Tính trung bình cộng.
-
-a) Tìm trung bình cộng của 5 số: 88, 91, 92, 80, 94.
-b) Tìm trung bình cộng của 3 số: 43, 42, 41.
-c) Tìm trung bình cộng của 2 số: 20, 36.
-d) Tìm trung bình cộng của 4 số: 92, 91, 86, 91.
-
-### Bài 3. (5 điểm) Nhiều hơn – ít hơn, gấp – kém
+### Bài 1. (5 điểm) Nhiều hơn – ít hơn, gấp – kém
 
 Đọc kĩ rồi trả lời từng câu.
 
-a) An có 84 quyển vở, số vở của Yến kém 4 lần số vở của An. Yến có bao nhiêu quyển vở?
-b) An có 34 quyển vở, Yến có ít hơn An 24 quyển. Yến có bao nhiêu quyển vở?
-c) An có 11 quyển vở, Yến có số vở gấp 3 lần An. Yến có bao nhiêu quyển vở?
-d) An có 49 quyển vở, Yến có nhiều hơn An 16 quyển. Yến có bao nhiêu quyển vở?
-e) An có 225 quyển vở, số vở của Yến kém 5 lần số vở của An. Yến có bao nhiêu quyển vở?
-f) An có 71 quyển vở, Yến có ít hơn An 21 quyển. Yến có bao nhiêu quyển vở?
+a) Hùng có 36 quyển vở, Yến có số vở gấp 6 lần Hùng. Yến có bao nhiêu quyển vở?
+b) Hùng có 115 quyển vở, số vở của Yến kém 5 lần số vở của Hùng. Yến có bao nhiêu quyển vở?
+c) Hùng có 51 quyển vở, Yến có ít hơn Hùng 13 quyển. Yến có bao nhiêu quyển vở?
+d) Hùng có 33 quyển vở, Yến có nhiều hơn Hùng 10 quyển. Yến có bao nhiêu quyển vở?
+e) Hùng có 42 quyển vở, số vở của Yến kém 6 lần số vở của Hùng. Yến có bao nhiêu quyển vở?
+f) Hùng có 85 quyển vở, Yến có ít hơn Hùng 30 quyển. Yến có bao nhiêu quyển vở?
+
+### Bài 2. (5 điểm) Quãng đường – vận tốc – thời gian
+
+Ghi rõ đơn vị của từng đại lượng.
+
+a) Một người đi 135 km hết 3 giờ. Tính vận tốc.
+b) Một người đi xe đạp với vận tốc 20 km/giờ trong 4 giờ. Tính quãng đường đi được.
+c) Một người đi quãng đường 80 km với vận tốc 40 km/giờ. Tính thời gian đi.
+d) Một người đi 240 km hết 6 giờ. Tính vận tốc.
+e) Một người đi quãng đường 150 km với vận tốc 30 km/giờ. Tính thời gian đi.
+
+### Bài 3. (5 điểm) Bài toán rút về đơn vị
+
+Giải bằng phương pháp rút về đơn vị.
+
+a) 5 bao xi măng nặng 40 kg. Hỏi 5 bao như thế nặng bao nhiêu kg?
+b) 7 bao gạo nặng 140 kg. Hỏi 4 bao như thế nặng bao nhiêu kg?
+c) 12 bao gạo nặng 60 kg. Hỏi 19 bao như thế nặng bao nhiêu kg?
+d) 3 bao xi măng nặng 93 kg. Hỏi 11 bao như thế nặng bao nhiêu kg?
 
 ### Bài 4. (5 điểm) Tìm hai số khi biết tổng và hiệu
 
 Tìm hai số trong mỗi trường hợp.
 
-a) Tổng hai số là 762, hiệu hai số là 68. Tìm hai số đó.
-b) Tổng hai số là 1 056, hiệu hai số là 184. Tìm hai số đó.
-c) Tổng hai số là 1 332, hiệu hai số là 6. Tìm hai số đó.
-d) Tổng hai số là 1 692, hiệu hai số là 340. Tìm hai số đó.
-e) Tổng hai số là 776, hiệu hai số là 56. Tìm hai số đó.
-f) Tổng hai số là 920, hiệu hai số là 80. Tìm hai số đó.
-g) Tổng hai số là 110, hiệu hai số là 22. Tìm hai số đó.
+a) Tổng hai số là 586, hiệu hai số là 120. Tìm hai số đó.
+b) Tổng hai số là 1 370, hiệu hai số là 268. Tìm hai số đó.
+c) Tổng hai số là 656, hiệu hai số là 6. Tìm hai số đó.
+d) Tổng hai số là 1 158, hiệu hai số là 380. Tìm hai số đó.
+e) Tổng hai số là 324, hiệu hai số là 58. Tìm hai số đó.
+f) Tổng hai số là 116, hiệu hai số là 12. Tìm hai số đó.
+g) Tổng hai số là 1 040, hiệu hai số là 124. Tìm hai số đó.
 
-### Bài 5. (5 điểm) Quãng đường – vận tốc – thời gian
+### Bài 5. (5 điểm) Tìm trung bình cộng của nhiều số
 
-Ghi rõ đơn vị của từng đại lượng.
+Tính trung bình cộng.
 
-a) Một người đi 250 km hết 5 giờ. Tính vận tốc.
-b) Một người đi xe đạp với vận tốc 4 km/giờ trong 4 giờ. Tính quãng đường đi được.
-c) Một người đi quãng đường 40 km với vận tốc 20 km/giờ. Tính thời gian đi.
-d) Một người đi xe đạp với vận tốc 60 km/giờ trong 6 giờ. Tính quãng đường đi được.
-e) Một người đi 240 km hết 4 giờ. Tính vận tốc.
-f) Một người đi quãng đường 80 km với vận tốc 40 km/giờ. Tính thời gian đi.
+a) Tìm trung bình cộng của 4 số: 56, 70, 71, 51.
+b) Tìm trung bình cộng của 5 số: 209, 188, 187, 205, 206.
+c) Tìm trung bình cộng của 2 số: 94, 110.
+d) Tìm trung bình cộng của 3 số: 100, 95, 93.
+e) Tìm trung bình cộng của 4 số: 114, 131, 111, 132.
 
 ---
 
@@ -148,7 +147,7 @@ b) Lỗi: Đổi mét sang xăng-ti-mét ngay từ đầu rồi lại nhân tỉ
 c) Lỗi: Đi tìm ngay số còn thiếu mà chưa tính tổng. — cách phòng?
 d) Lỗi: Lấy hiệu hai tỉ số nhân với tổng ban đầu. — cách phòng?
 e) Lỗi: Chia số chân thiếu cho 4 thay vì cho hiệu số chân của hai loài. — cách phòng?
-f) Lỗi: Lao vào tính khi chưa xác định được tổng, hiệu hay tỉ số. — cách phòng?
+f) Lỗi: Cộng hai khoảng thời gian rồi chia đôi. — cách phòng?
 
 ### Bài 5. (3 điểm) Tự chấm bài theo thang điểm
 
@@ -248,7 +247,7 @@ c) Nhánh con 3 — lỗi hay mắc?
 d) Ghi thêm: kiến thức phải thuộc?
 e) Ghi thêm: cách xử lý nhanh nhất?
 
-### Bài 4. (5 điểm) Nhánh 3 — Tổng – tỉ, hiệu – tỉ dạng ẩn
+### Bài 4. (5 điểm) Nhánh 3 — Công việc chung
 
 Điền ba nhánh con bắt buộc của nhánh này.
 
@@ -334,34 +333,34 @@ f) Mẹo nhanh em sẽ tặng lớp?
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài A.1
-**Đáp số:** a) 627 · b) 580 · c) 360 · d) 72 · e) 522
-**Hướng giải:** Bước 1 — rút về đơn vị: tìm giá trị của **một** đơn vị bằng phép chia. Bước 2: nhân giá trị một đơn vị với số đơn vị cần tìm.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Bước rút về đơn vị luôn là phép **chia**, và phải làm trước.
-**Lỗi thường gặp:** Nhân ngay hai số đã cho mà bỏ qua bước chia. Phòng: Viết rõ câu “Một bao nặng … kg” trước khi làm bước hai.
-
-### Bài A.2
-**Đáp số:** a) 89 · b) 42 · c) 28 · d) 90
-**Hướng giải:** Trung bình cộng của nhiều số bằng tổng các số đó chia cho số lượng các số. Cộng cho hết rồi mới chia, không chia từng số một.
-**Nhãn tư duy:** TD1. Điểm chốt: Chia cho **số lượng số hạng**, không phải chia cho một số bất kì.
-**Lỗi thường gặp:** Đếm sai số lượng số hạng nên chia nhầm. Phòng: Đánh số thứ tự từng số trước khi cộng.
-
-### Bài A.3
-**Đáp số:** a) 21 · b) 10 · c) 33 · d) 65 · e) 45 · f) 50
+**Đáp số:** a) 216 · b) 23 · c) 38 · d) 43 · e) 7 · f) 55
 **Hướng giải:** BẪY — Gấp và kém dùng hai phép tính ngược nhau. “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
 
+### Bài A.2
+**Đáp số:** a) 45 km/giờ · b) 80 km · c) 2 giờ · d) 40 km/giờ · e) 5 giờ
+**Hướng giải:** BẪY — Đơn vị thời gian. Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng kia.
+**Lỗi thường gặp:** Vận tốc km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
+
+### Bài A.3
+**Đáp số:** a) 40 · b) 80 · c) 95 · d) 341
+**Hướng giải:** Bước 1 — rút về đơn vị: tìm giá trị của **một** đơn vị bằng phép chia. Bước 2: nhân giá trị một đơn vị với số đơn vị cần tìm.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Bước rút về đơn vị luôn là phép **chia**, và phải làm trước.
+**Lỗi thường gặp:** Nhân ngay hai số đã cho mà bỏ qua bước chia. Phòng: Viết rõ câu “Một bao nặng … kg” trước khi làm bước hai.
+
 ### Bài A.4
-**Đáp số:** a) số lớn 415, số bé 347 · b) số lớn 620, số bé 436 · c) số lớn 669, số bé 663 · d) số lớn 1 016, số bé 676 · e) số lớn 416, số bé 360 · f) số lớn 500, số bé 420 · g) số lớn 66, số bé 44
+**Đáp số:** a) số lớn 353, số bé 233 · b) số lớn 819, số bé 551 · c) số lớn 331, số bé 325 · d) số lớn 769, số bé 389 · e) số lớn 191, số bé 133 · f) số lớn 64, số bé 52 · g) số lớn 582, số bé 458
 **Hướng giải:** Số lớn = (tổng + hiệu) : 2. Số bé = (tổng − hiệu) : 2. Cách hiểu: vẽ hai đoạn thẳng, đoạn dài hơn phần hiệu; bớt phần hiệu đi thì hai đoạn bằng nhau, mỗi đoạn là số bé.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng hiệu ra **số lớn**, trừ hiệu ra **số bé** — nhớ đúng chiều.
 **Lỗi thường gặp:** Lấy (tổng + hiệu) : 2 rồi gọi đó là số bé. Phòng: Vẽ sơ đồ đoạn thẳng trước, đoạn dài hơn luôn là số lớn.
 
 ### Bài A.5
-**Đáp số:** a) 50 km/giờ · b) 16 km · c) 2 giờ · d) 360 km · e) 60 km/giờ · f) 2 giờ
-**Hướng giải:** BẪY — Đơn vị thời gian. Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng kia.
-**Lỗi thường gặp:** Vận tốc km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
+**Đáp số:** a) 62 · b) 199 · c) 102 · d) 96 · e) 122
+**Hướng giải:** Trung bình cộng của nhiều số bằng tổng các số đó chia cho số lượng các số. Cộng cho hết rồi mới chia, không chia từng số một.
+**Nhãn tư duy:** TD1. Điểm chốt: Chia cho **số lượng số hạng**, không phải chia cho một số bất kì.
+**Lỗi thường gặp:** Đếm sai số lượng số hạng nên chia nhầm. Phòng: Đánh số thứ tự từng số trước khi cộng.
 
 ### Bài B.1
 **Đáp số:** a) câu lời giải nêu rõ đang tìm đại lượng nào · b) phép tính, viết đủ dấu và đủ đơn vị · c) kết quả kèm đơn vị · d) câu đáp số · e) một phần tư số điểm của bài
@@ -382,7 +381,7 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Lỗi thường gặp:** Ghi diện tích bằng cm thay vì cm². Phòng: Trước khi viết đáp số, hỏi: đại lượng này đo bằng gì?
 
 ### Bài B.4
-**Đáp số:** a) Vẽ sơ đồ đoạn thẳng trước, đoạn dài hơn luôn là số lớn. · b) Viết rõ một dòng: “1 cm bản đồ = … cm thật” trước khi tính. · c) Bước đầu tiên luôn viết: “Tổng = trung bình cộng × số ngày”. · d) Viết rõ ba dòng: số bé, số lớn cũ, số lớn mới. · e) Thử lại: nhân ngược ra tổng số chân xem có khớp không. · f) Viết ba dòng trước khi tính: Tổng = … ; Hiệu = … ; Tỉ số = … ; dòng nào chưa biết thì để trống và đi tìm.
+**Đáp số:** a) Vẽ sơ đồ đoạn thẳng trước, đoạn dài hơn luôn là số lớn. · b) Viết rõ một dòng: “1 cm bản đồ = … cm thật” trước khi tính. · c) Bước đầu tiên luôn viết: “Tổng = trung bình cộng × số ngày”. · d) Viết rõ ba dòng: số bé, số lớn cũ, số lớn mới. · e) Thử lại: nhân ngược ra tổng số chân xem có khớp không. · f) Luôn viết dòng “Mỗi giờ vòi thứ nhất chảy được … bể” trước.
 **Hướng giải:** Mỗi lỗi đều có một cách phòng cụ thể, làm được ngay trong lúc làm bài. Chép cả cặp lỗi – cách phòng vào sổ lỗi.
 **Nhãn tư duy:** TD2. Điểm chốt: Sổ lỗi chỉ có ích khi ghi **cả cách phòng**, không chỉ ghi lỗi.
 **Lỗi thường gặp:** Ghi lỗi vào sổ nhưng không ghi cách phòng nên lần sau vẫn sai. Phòng: Mỗi dòng sổ lỗi bắt buộc có hai cột: lỗi và cách phòng.
@@ -445,10 +444,10 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài D.4
-**Đáp số:** a) Đề mô tả vòng thay vì cho số: “nếu … thì …”, “chia thành … phần” · b) Dịch dữ kiện ẩn thành số rồi áp dạng chuẩn · c) Lao vào tính khi chưa xác định được tổng, hiệu hay tỉ số. · d) Tỉ số, sơ đồ đoạn thẳng, dịch lời văn thành số · e) Kẻ sẵn ba dòng Tổng – Hiệu – Tỉ số, điền được hai dòng là giải được.
+**Đáp số:** a) “Làm một mình trong … giờ” đi cùng “cùng làm” · b) Quy công việc về 1, cộng năng suất, lấy nghịch đảo · c) Cộng hai khoảng thời gian rồi chia đôi. · d) Năng suất, cộng và chia phân số · e) Thời gian làm chung luôn **bé hơn** thời gian của người nhanh nhất — dùng để loại đáp số sai ngay lập tức.
 **Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
-**Nhãn tư duy:** TD2, TD6. Điểm chốt: Dịch xong dữ kiện ẩn thì bài trở lại **đúng dạng chuẩn**.
-**Lỗi thường gặp:** Lao vào tính khi chưa xác định được tổng, hiệu hay tỉ số. Phòng: Viết ba dòng trước khi tính: Tổng = … ; Hiệu = … ; Tỉ số = … ; dòng nào chưa biết thì để trống và đi tìm.
+**Nhãn tư duy:** TD3, TD6. Điểm chốt: Cộng **năng suất**, tuyệt đối không cộng thời gian.
+**Lỗi thường gặp:** Cộng hai khoảng thời gian rồi chia đôi. Phòng: Luôn viết dòng “Mỗi giờ vòi thứ nhất chảy được … bể” trước.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài D.5

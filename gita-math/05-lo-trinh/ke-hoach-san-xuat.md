@@ -17,7 +17,7 @@
 | Phiếu Lời giải & Phân tích chuyên sâu | 600 | đủ, đạt kiểm định |
 | Phiếu Hướng dẫn ôn chắc chuyên đề | 96 | đủ, đạt kiểm định |
 | **Cộng trong `03-phieu/`** | **1 296** | **1 296 / 1 296 đạt** |
-| Phiếu ôn tập mốc · đề thi mốc · đề đánh giá năng lực | 12 · 120 · 30 | chỉ mục đủ, 3 đề mẫu đã soạn |
+| Phiếu ôn tập mốc · đề thi mốc · đề đánh giá năng lực | 12 · 120 · 30 | **đủ 162, đã biên soạn đủ đề, đáp án và bảng phân tích** |
 | Bản đồ kiến thức | 9 | đủ |
 | Bộ test đầu vào bốn trục | 3 | đủ |
 | Sơ đồ đọc vị đề bài (8 nhóm × 3 lớp) | 24 | đủ |
@@ -31,13 +31,15 @@ Kiểm định: `validate_phieu.py --all` → **0 lỗi**. Kiểm toán: `kiem_t
 Kho không được gõ tay mà được **sinh bằng mã**, theo một nguyên tắc bất di bất dịch:
 **mọi đáp số do máy tính ra, không do người gõ.** Người biên soạn viết lời dẫn, hướng
 giải, lỗi thường gặp, gợi ý ba tầng và sáu cột bảng phân tích — tất cả đóng gói trong
-**241 mẫu bài** phủ kín 8 nhóm chuyên đề × 5 mức × 3 lớp. Cả 120 ô (lớp × nhóm × mức)
+**254 mẫu bài** phủ kín 8 nhóm chuyên đề × 5 mức × 3 lớp. Cả 120 ô (lớp × nhóm × mức)
 đều có từ hai mẫu trở lên, và cả **538 dạng bài** của ngân hàng đều có mẫu khớp.
 
 | Lớp phần mềm | Nơi để | Việc |
 |---|---|---|
 | Khung mẫu bài | `04-cong-cu/sinh/khung.py` | định dạng số Việt Nam, bối cảnh, đối tượng `Bai`, `Mau` |
-| Thư viện mẫu | `04-cong-cu/sinh/mau_*.py` | 241 mẫu, mỗi mẫu tự chọn số liệu và tự tính đáp số |
+| Thư viện mẫu | `04-cong-cu/sinh/mau_*.py` | 254 mẫu, mỗi mẫu tự chọn số liệu và tự tính đáp số |
+| Bộ lắp đề thi | `04-cong-cu/lap/de.py` | ba họ đề ON, MOC, NL với ma trận mức độ riêng |
+| Bộ sinh đề thi | `04-cong-cu/build_de.py` | 162 đề kèm đáp án và bảng phân tích sau thi |
 | Bảng phương pháp giải | `04-cong-cu/data/phuong_phap.py` | 16 phương pháp — trục thứ hai của chương trình |
 | Bộ chọn mẫu | `04-cong-cu/lap/chon.py` | chọn năm mẫu cho một phần, ưu tiên khớp dạng bài của cụm |
 | Phần có cấu trúc | `04-cong-cu/lap/meta.py` | sơ đồ tư duy, bảng dạng bài, đọc vị, kỹ năng, thuyết trình |
@@ -68,6 +70,7 @@ tiến độ của lớp. Đó là phần việc của chủ biên.
 | 4 | 96 phiếu `HD` hướng dẫn ôn chắc | 96 | học viên tự ôn theo phiếu này khi không có giáo viên |
 | 5 | 288 phiếu `LT` `DB` `KN` | 288 | nội dung nền, ít rủi ro hơn |
 | 6 | 600 phiếu `GP` | 600 | sinh cùng hạt giống với phiếu học, duyệt sau cùng |
+| 7 | 162 đề thi | 162 | duyệt trước mỗi mùa thi; ưu tiên bản `D01` của từng mốc |
 
 **Định mức đề nghị:** một chủ biên duyệt 8 phiếu một buổi 3 giờ. Vòng 1 đến vòng 4 (312
 tài liệu) hết khoảng 39 buổi; chia cho 4 chủ biên là **10 buổi mỗi người**.
@@ -89,7 +92,7 @@ Khi phân vân một phiếu sinh tự động đã đủ chất lượng chưa,
 
 ## 5. MỞ RỘNG THƯ VIỆN MẪU
 
-Thư viện 241 mẫu là **tài sản gốc** của hệ thống: thêm một mẫu tốt là nâng chất lượng
+Thư viện 254 mẫu là **tài sản gốc** của hệ thống: thêm một mẫu tốt là nâng chất lượng
 hàng chục phiếu cùng lúc. Không còn ô trống và không còn dạng bài nào chưa phủ, nên
 việc mở rộng từ đây là **làm dày chỗ mỏng**, không phải vá chỗ thủng.
 
